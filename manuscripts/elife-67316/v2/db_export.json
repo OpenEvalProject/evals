@@ -1,0 +1,1816 @@
+{
+  "submission": {
+    "id": "1c06b297-2bf3-4eca-ba58-9a0111cc3978",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:39:27.408893Z",
+    "updated_at": "2025-12-03T08:39:27.408893Z"
+  },
+  "content": [
+    {
+      "id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "submission_id": "1c06b297-2bf3-4eca-ba58-9a0111cc3978",
+      "content_type": "manuscript",
+      "content_text": "# Spatial modulation of individual behaviors enables an ordered structure of diverse phenotypes during bacterial group migration\n\n## Authors\n\n- Yang Bai<sup>1</sup> ([ORCID: 0000-0001-9976-2686](https://orcid.org/0000-0001-9976-2686))\n- Caiyun He<sup>1</sup>\n- Pan Chu<sup>1</sup>\n- Junjiajia Long<sup>3</sup>\n- Xuefei Li<sup>1</sup>\n- Xiongfei Fu<sup>1</sup> ([ORCID: 0000-0003-3657-8296](https://orcid.org/0000-0003-3657-8296)) \u2020\n\n### Affiliations\n\n1. CAS Key Laboratory for Quantitative Engineering Biology, Guangdong Provincial Key Laboratory of Synthetic Genomics, Shenzhen Institute of Synthetic Biology, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences Shenzhen China\n2. University of Chinese Academy of Sciences Beijing China\n3. Yale University, Department of Physics New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCoordination of diverse individuals often requires sophisticated communications and high-order computational abilities. Microbial populations can exhibit diverse individualistic behaviors, and yet can engage in collective migratory patterns with a spatially sorted arrangement of phenotypes. However, it is unclear how such spatially sorted patterns emerge from diverse individuals without complex computational abilities. Here, by investigating the single-cell trajectories during group migration, we discovered that, despite the constant migrating speed of a group, the drift velocities of individual bacteria decrease from the back to the front. With a Langevin-type modeling framework, we showed that this decreasing profile of drift velocities implies the spatial modulation of individual run-and-tumble random motions, and enables the bacterial population to migrate as a pushed wave front. Theoretical analysis and stochastic simulations further predicted that the pushed wave front can help a diverse population to stay in a tight group, while diverse individuals perform the same type of mean reverting processes around centers orderly aligned by their chemotactic abilities. This mechanism about the emergence of orderly collective migration from diverse individuals is experimentally demonstrated by titration of bacterial chemoreceptor abundance. These results reveal a simple computational principle for emergent ordered behaviors from heterogeneous individuals.\n\n## Introduction\n\nCollective group migration, as an important class of coordinated behaviors, is ubiquitous in living systems, such as navigation, foraging, and range expansion (Krause et al., 2002; Partridge, 1982; Sumpter, 2010). In the presence of individual heterogeneity, the migrating group often exhibits spatially ordered arrangements of phenotypes (Krause et al., 2002; Parrish and Edelstein-Keshet, 1999; Partridge, 1982; Sumpter, 2010). In animal group migration, individual behavioral abilities (e.g., directional sensitivity) would result in social hierarchy, which further drives the spatial arrangement in a coordinated group (Couzin et al., 2005). At the same time, spatial arrangements can lead to different costs and benefits for the individuals participating in the group migration (Krause, 1994; Parrish and Edelstein-Keshet, 1999; Partridge, 1982). Participating individuals must follow disciplinary rules to organize themselves into coordinated patterns while on the move, which requires complex computational abilities to interact with the group and the environment (Couzin and Krause, 2003; Couzin et al., 2002; Vicsek and Zafeiris, 2012). Therefore, understanding how individuals of different phenotypes determine their location in the group is an essential prerequisite to uncover the organization principles of collective populations.\n\nThe chemotactic microbe, Escherichia coli, provides a simple model to address the emergence of collective decision-making among diverse population, as it can exhibit both individualistic behaviors (Dufour et al., 2016; Frankel et al., 2014; Kussell and Leibler, 2005; Waite et al., 2016; Waite et al., 2018) and collective migratory patterns (Adler, 1966a; Fu et al., 2018; Keller and Segel, 1971a, Wolfe and Berg, 1989). Individual cells perform run-and-tumble random motions by spontaneously switching the rotating direction of flagella (Berg, 2004; Berg and Brown, 1972). These cells can facilitate the chemotaxis pathway to control the switching frequency to bias their motions toward their favorable direction along the chemoattractant gradient, where the efficiency to climb the gradient is defined as the chemotactic ability ($\u03c7$) (Celani and Vergassola, 2010; Dufour et al., 2014; de Gennes, 2004; Si et al., 2012). In addition, the chemotactic abilities of individual cells exhibit substantial phenotypic heterogeneity even for the clonal bacterial population, which diversifies the chemotactic response to identical signals (Spudich and Koshland, 1976; Waite et al., 2016; Waite et al., 2018). Despite the stochastic solitary behavior and variations in phenotypic ability, the E. coli population can migrate as a coherent group by following a self-generated attractant gradient, via consumption of the whole population (Adler, 1966a; Saragosti et al., 2011; Wolfe and Berg, 1989). The migratory group form a stable pattern of phenotypes sorted by their chemotactic abilities (Figure 1A), which is believed to maintain phenotypic diversity in the group (Fu et al., 2018; Waite et al., 2018). Although a previous study showed that behavior modulation helps migrating bacteria to maintain a consistent group (Saragosti et al., 2011), how individuals with phenotypic variations manage to determine their relative positions in the group remains to be determined.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67316/elife-67316-fig1-v2.jpg)\n\n**Figure 1.:** (A) Bacterial population of diverse phenotypes sorted according to their chemotactic abilities (increasing from light green to dark green) during collective migration following the self-generated attractant gradient (brown color). Meanwhile, individual cells perform run-and-tumble random motions biased toward the migration direction. Scale bar reflects 0.1 mm. (B) Bacterial density profile $\u03c1z$ is stable (black solid line) in the moving coordinate $z=x\u00a0\u2212\u00a0V_{G}t$. Where the width, represented by the black dashed-dotted line, is defined by two times the standard deviation of the bacterial relative position ($2\\sigma,$ black dashed line). The instantaneous velocity ($V_{I}z$) (blue solid line) is uniform and is equal to the average group velocity $V_{G}$ (blue dashed line). This observation was independent of the sampling time interval (Appendix 1\u2014figure 2). (C) Sample runs of bacteria aligned by their initial positions (black dots) from the three regions (defined by colored regions in B) showed that cells at the back of the group tended to run forward, compared with cells in other regions. b, m, and f stand for the back, middle, and front of the migration group, respectively. Scale bar reflects 5 \u00b5m. (D) The exponential distributions of forward runs (solid lines) and backward runs (dashed lines) suggested the increasing efficiency of runs from the back to the front. (E) The mean run length in different directions confirmed the increasing efficiency of runs. (F) The expected drift velocity $V_{D}(z)=\\frac{\u27e8l_{R}(z)\u22c5cos\u2061\\theta_{R}(z)\u00a0\u27e9}{\u27e8\\tau_{R}(z)+\\tau_{T}(z)\u27e9}$ (black solid line) decreased from the back to the front, and is linearly fitted by $V_{D}(z)\u2248-rz+V_{D0}$ , with $r=0.05min^{\u22121}$ and $V_{D0}=0.17mm\u22c5min^{\u22121}$ . $V_{D}$ (z) crossing with the average group velocity $V_{G}$ (black dashed line), implied that bacteria perform mean reversion motions. The $V_{D}(z)$ profile was cut to present the majority of cells (~90%) ($\\pm1.65\\sigma$). (G) The time evolution of the average position ($z$, solid lines) of cells starting from the back, middle, and front of the migration group (color code was defined in B) confirmed the reversion behavior. Shaded area represents the s.e.m. of more than 450 cells (see Materials and methods). Analytically, the OU-type model predicted that $z=C_{0}e^{-rt}-V_{D0}-V_{G}/r$ (dashed lines), where $C_{0}$ can be fitted by the starting position (see supplementary text). In panels B, F, and G, the shaded area represents the s.e.m. of three biological replicates. The spatial bin size was 240 \u00b5m .\n\nHere, we analyzed single-cell trajectories of bacterial run-and-tumble motions in the chemotactic migration group (see Materials and methods). We found that the expected drift velocity of individual cells decreased from the back to the front. Such a spatial profile modulates cells to behave as mean reverting processes relative to the entire group, that is, cells effectively tend to revert their direction of runs toward the mean position of the group. Using an Ornstein-Uhlenbeck (OU)-type model, we demonstrated that the mean reversion behavior is a result of a pushed wave, where the driving force decreases from the back to the front of the group. Cells of different phenotypes are imposed to the same type of driving force, of which the strength is coupled with their chemotactic abilities. As a result, the pushed wave front, driven by the spatially structured force, can maintain more diverse individuals in the migratory group. By theoretical analysis and stochastic simulations, we also discovered that the balanced locations of diverse phenotypes are spatially ordered by their chemotaxis abilities. Further simulations and experiments with cells of titrated chemoreceptor abundance demonstrated that this spatial modulation of individual behavior enables the ordering of bacteria with diverse chemotaxis abilities. Therefore, although the high-order computational abilities are not available to simple organisms, the spatial modulation of stochastic behaviors at the individual level reveals novel decision-making capabilities at the population level.\n\n## Results\n\n### The drift velocity of individual cells during group migration exhibits a spatially structured profile\n\nTo directly investigate the ordering mechanism in a coherent migration group, we quantified the stochastic behaviors of bacterial run-and-tumble motions relative to the stable migrating group. To achieve this, we employed a microfluidic device that generated a stable propagating band of bacteria, as previously reported (Fu et al., 2018; Saragosti et al., 2011). Using aspartate (Asp) as the only chemoattractant to drive the migration of E. coli, we tracked a small fraction of fluorescent bacteria (JCY1) as representatives of the non-fluorescent wild-type cells (RP437) (see Materials and methods, Appendix 1\u2014figure 1, Video 1). Because the group velocity $V_{G}=\u2329\u0394x_{i}(t)/\u0394t\u232a$ was constant over time, $V_{G}\u223c3.0\\mum/s$ (Appendix 1\u2014figure 2), we were able to map the tracks to a moving coordinate $z=x\u00a0\u2212\u00a0V_{G}t$.\n\n![Video 1.](https://cdn.elifesciences.org/articles/67316/elife-67316-video1.mp4.jpg)\n\n**Video 1.:** Each dot represents a bacterium captured under microscope. Lines represent typical tracks. The colors of tracks from light green to dark green represent the mean positions of the tracks from the back to the front of the migrating group.\n\nWith the shifted tracks, we calculated the key statistics of the single-cell behaviors. We first checked that the average instantaneous velocity, $V_{I}(z)=\u27e8\u0394x_{i}(z)/\u0394t\u27e9$, was constant along the density profile $\u03c1(z)$ (Figure 1B). This result confirmed that the group migrates coherently. Then, we identified all the run states and tumble states of individual trajectories using a previously described computer assistant program (Dufour et al., 2016; Waite et al., 2016), to ensure that the tracks are separated into successive tumble-and-run events (see Materials and methods). Comparing the sample events initiated from the back (b), middle (m), and front (f) of the migration group, we observed that the runs in the front were longer but distributed more uniformly in terms of the directionality, whereas the runs in the back were shorter but more oriented toward the group migration direction (Figure 1C, Appendix 1\u2014figure 3A, B). Quantitatively, the statistics of run length (and duration) displayed exponential distributions with the means for the direction of group migration longer than those for the opposite direction (Figure 1D, Appendix 1\u2014figure 3C). The angular distribution of the run length confirmed the difference in directionality between cells in different spatial locations (Figure 1E, Appendix 1\u2014figure 3D). We also confirmed that cells in the back showed greater directional persistence toward the migration direction (Appendix 1\u2014figure 4A\u2013C), as (Saragosti et al., 2011) reported previously. All these results suggested that the bacteria in the back run more effectively toward the direction of group migration than those in the front.\n\nTo quantify the spatial extent of the drift efficiency, we defined the expected drift velocity $V_{D}\u2261\\frac{\u27e8l_{R}\u22c5cos\u2061\\theta_{R}\u00a0\u27e9}{\u27e8\\tau_{R}+\\tau_{T}\u27e9}$ , by the projection of the average run length along the migration direction over the average duration of runs and tumbles (Dufour et al., 2014). This quantity reflects the effective run speed of run-and-tumble events that start running on a given location relative to the group. The drift velocity was found to decrease from the back to the front, crossing the group velocity $V_{G}$ in the middle of the group (Figure 1F). This particular trend of $V_{D}z$ suggests a mean reverting behavior of bacteria in the group: the cells at the back drift faster than the group ($V_{D}>V_{G}$), enabling the cells to catch up with the group; at the same time, the cells in the front drift slower than the group ($V_{D}<V_{G}$), causing them to slow down and fall back (Figure 1G). Such mean reverting process also results in sub-diffusion of individuals relative to the group (Appendix 1\u2014figure 3F), for which the mean square displacement (MSD) is constrained over time (Appendix 1\u2014figure 3G). The slope of the spatial extent of $V_{D}(z)$, $\u2212r\u00a0=\u22120.05min^{\u22121}$ , quantifies the speed at which individuals revert to its center.\n\nWe noted that the spatial profile of the expected drift velocity $V_{D}(z)$ was different from the instantaneous velocity $V_{I}z$ . This is because the instantaneous velocity $V_{I}z$ defines the average speed of cells in a given time interval $dt$, which reflects the positional shift of a group of cells at a given position. However, the expected drift velocity $V_{D}(z)$ defines the average speed of run-and-tumble events that start tumbling at a given position. Since the run duration is explicitly modulated by the gradient of chemoattractant $gz$ and is dependent on the chemotactic ability $\u03c7$ , $V_{D}(z)=\u03c7gz$ represents the drift velocity driven by the external stimuli (Celani and Vergassola, 2010; de Gennes, 2004; Dufour et al., 2014; Si et al., 2012).\n\n### The decreasing drift velocity implies a pushed wave front of group migration\n\nTo understand how the spatially structured profile of the drift velocity $V_{D}$ impacts on the group migration, we first adopted a Langevin-type model that describes bacterial motions as an active Brownian particle driven by the expected drift velocity $V_{D}$ and a random force: $dx=V_{D}dt+\u03f5dW$ (Berg, 2004). In this model, the run-and-tumble random motions are considered as a Gaussian random force $\u03f5dW$, while the cell motions are imposed to a deterministic force $V_{D}$ (Rosen, 1973; Rosen, 1974). The strength of Gaussian noise can be estimated by the effective diffusion coefficient $\u03f5=\\sqrt{2D}$ , while the drift velocity is determined by the product of the perceived gradient $gz$ and the chemotactic ability $\u03c7$, $V_{D}=\u03c7gz$ . Such a stochastic description of bacterial motions has been proven equivalent to the classic Keller-Segel (KS) model that described the population dynamics of bacterial chemotactic group migration (Keller and Segel, 1971a, Rosen, 1973). In the moving coordinate, $z=x\u00a0\u2212\u00a0V_{G}t$ , this Langevin-type model specifies that $dz=V_{D}(z)dt-V_{G}dt+\u03f5dW$. Thereby, the cell motions relative to the migrating group are modulated by two effective forces: one generated by $V_{D}(z)$, which pushes the cells to catch up with the wave; and another generated by $-V_{G}$ , which drags the cells to fall behind the wave. These two \u2018forces\u2019 constrain the random motions of individuals in an effective potential well $Uz$ (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67316/elife-67316-fig2-v2.jpg)\n\n**Figure 2.:** (A) Illustration of the Langevin-type model where the migrating bacteria are modeled by active particles under a deterministic decreasing driving force and a stochastic force. These forces allow the particles to form collective migration. On the moving coordinate of the migration group, active particles are bounded in a potential well generated by the driving force and the motion relative to the moving group ($-V_{G}$). (B) The perceived gradient $g(z)$ (blue line) is deduced from $S(z)$, which is further calculated from the experimentally measured density profile (Appendix 1\u2014figure 4D). This gradient profile was then transformed to a moving gradient $gx,t=gz+V_{G}t$, and applied in the simulations of different active particles following Langevin dynamics. A linear fit of $g(z)$ around $z=0$ is plotted (dashed blue line) and is applied to the Ornstein-Uhlenbeck (OU)-type model. (C) Particles migrate collectively with a moving gradient, while they are located in ordered locations according to their phenotype $\u03c7_{i}$ (green lines). Colors from light to dark represent increasing $\u03c7$. (D) The effective potential wells generated by the effective force ($\u03c7g(z)$) are spatially ordered. Circles present the minimum of the potential wells. (E) The peak positions (cross) and the mean positions (circles) increase with $\u03c7$. These were predicted by the OU-type model (Equation S15) (black line). The width of the density profile is defined by two times the standard deviation of all cells ($2\\sigma$), which decreases with $\u03c7$, which was consistent with the prediction of Equation S18 (blue line). (F\u2013H) Group migration of mixed phenotypes under decreasing, invariant, and increasing gradient. Simulations were performed in one dimension (1D) with the chemotaxis ability of the group following a Gaussian distribution with a mean of 0.11 mm2 min\u22121 and a variation of 0.02 mm2 min\u22121 (Appendix 1\u2014figure 5C). The force field used in the simulation followed the linearized force field, as in Equation 1, while $g_{1}>0$ in F, $g_{1}=0$ in G, and $g_{1}<0$ in H. All force fields were set as moving with velocity $V_{G}$ . The dashed line in G represents a group with a single phenotype of $\u03c7=0.11mm^{2}min^{\u22121}$. Insert plots represent the wave front in the moving coordinate after 10 min of simulation. The width of the moving group, defined by the standard deviation of all particles, converges under decreasing gradient (F) while it diverges in cases of G and H.\n\nTo estimate the spatial profile of the effective driven force $V_{D}(z)$, we analyzed the KS model with moving ansatz (supplementary text). Assuming the density profile $\u03c1z$ directly measured from experiments (Figure 1B), we can deduce the chemoattractant concentration profile $S(z)$ (Appendix 1\u2014figure 4D), as well as the perceived gradient $gz$ (Figure 2B). Since the perceived gradient $gz$ is almost linear in the main part of the wave profile, we approximated it by $gz\u2248g_{0}+g_{1}z$ (Figure 2B, dashed line), which allows us to transform the stochastic model to an OU-type equation:\n\n$$\ndz=\u03c7g_{1}zdt+\u03c7g_{0}-V_{G}dt+\u03f5dW\n$$\n\nBy this simplified model, we obtained a clear picture how individual behaviors are regulated relative to the group: cells are imposed to a driving force linearly dependent on their relative positions in the group, $F(z)=\u03c7g_{1}z+\u03c7g_{0}-V_{G}$ . This suggests that the random motions of bacteria are constrained in a parabolic moving potential well, $Uz=\\frac{1}{2}\u03c7g_{1}z^{2}+\u03c7g_{0}-V_{G}z+U_{0}$ (Figure 2A), where $U_{0}$ is set by $U\u221e=0$. The position that minimizes $Uz$ is also the balanced position, $z_{0}=-\\frac{g_{0}}{g_{1}}-\\frac{V_{G}}{\u03c7g_{1}}$ , where the driving force is null $F(z_{0})=0$. Behind the balanced position, cells experience a pushed force to catch up the group. Cells would start to fall back once they exceed the balanced position, where the driving force becomes negative. Therefore, the decreasing profile of the driving force enable cells to perform mean reverting behaviors around the balanced position. In addition, the expected rate that cells tend to revert back to the balanced position is defined by the slope of the spatially dependent driving force, $r=\u03c7g_{1}$ (Figure 2B).\n\nGiven the knowledge of individual behaviors, we studied the spatial distribution of population on the group migration. The OU model (Equation 1) which describes the single-cell stochastic motions has an equivalent form, known as the Fokker-Planck equation (Equation S19) which describes the spatial-temporal dynamics of cell density distribution. This population model provides a traveling wave solution with the mean position around $z_{0}$ and standard deviation $\\sigma=\\frac{\u03f5}{\\sqrt{2 \u03c7 g_{1}}}$ .\n\nFrom the solution, we noted that the effective driving force, as well as the drift velocity, has a negative slope ($g_{1}<0$). The decreasing profile of the drift velocity suggests that the leading front of the group migrates as a pushed wave front (Gandhi et al., 2016; van Saarloos, 2003). As a key feature of the pushed wave, the leading front of the group drops parabolically, which is much faster than that of diffusion front. This further leads to a tight density profile of group migration for a single phenotype population.\n\n### The pushed wave front results ordered pattern of phenotypes\n\nTo address whether this pushed wave front still holds in presence of phenotypic diversity, we further examined the above analysis with cells of diverse chemotactic abilities $\u03c7_{i}$ imposed to the same moving perceived gradient $gz$ (Figure 2B). Given a monotonically decreasing profile of perceived gradient $gz$ , the driving force that each phenotypic individual experiences exhibits the same spatial dependency with the slopes depend on the intrinsic phenotypic properties of each phenotype $r_{i}=\u03c7_{i}g_{1}$ . This monotonic dependency means that the balanced positions $z_{0}$ of the diverse phenotypes are orderly arranged. By the stochastic Langevin-type model with phenotypic diversity in chemotactic ability, we first confirmed that each phenotypic population migrates at a constant speed $V_{G}$ , following the moving gradient $gz$ (see supplementary text). The density profiles of cells with different $\u03c7_{i}$ follow the same shape but are spatially orderly aligned (Figure 2C). Under the same moving gradient $g(z)$, the driving force $\u03c7_{i}g(z)$ is phenotype-dependent, so that the bottom position of the potential well, $z_{0,i}=-\\frac{g_{0}}{g_{1}}-\\frac{V_{G}}{\u03c7_{i}g_{1}}$, is also spatially arranged according to $\u03c7_{i}$ (Figure 2D). As predicted by the OU model, the balanced positions $z_{0,i}$ of different phenotypes increase with their chemotactic abilities $\u03c7_{i}$ (Figure 2E, black line), while the standard deviation ($\\sigma_{i}$) of the density profiles decreases with $\u03c7_{i}$ (Figure 2E, blue line). We also confirmed the ordered structure of phenotypes by a particle-based model of the Langevin-type dynamics coupled with chemoattractant consumption (Appendix 1\u2014figure 5). Therefore, under the spatially decreasing driving force, cells with phenotypic diversity perform the same type of mean reverting processes with spatially ordered mean positions.\n\nThe spatial order of phenotypes does not directly promise a compact group migration with phenotypic diversity. By close examination of the density profile, we found that each phenotypic subpopulation propagates as a pushed wave front. We further calculated the total density profile of the entire migratory group with Gaussian distribution of chemotactic abilities under a decreasing linear gradient. Simulation reveals a pushed wave front for the combination of these subpopulations with different chemotactic abilities (Figure 2F, insert). In addition, we checked that the width of the entire group maintains in a converged width over long time, suggesting that the pushed wave profile enables the migratory population with diversity to keep in a tight shape (Figure 2F).\n\nWe examined the migration profiles under other forms of perceived gradient $gz$ : a constant perceived gradient and a spatially increasing perceived gradient. In the first case, individual bacteria of identical phenotype follow the diffusion process relative to the group, where the standard deviation of the population increasing with time by $\\sigma=2\\sqrt{Dt}$ (Figure 2G, dashed line). Each phenotype subpopulation is expected to have a constant drift velocity over space. However, as the drift velocity would vary by the chemotactic ability, each subpopulation migrates in different group speeds, suggesting a compact group migration of diverse population cannot be maintained in a constant perceived gradient (Figure 2G). In the latter case, when imposed to a spatially increasing driving force (a pulled wave, by definition), individual cells display super-diffusion processes. The density profile easily diverges in this case (Figure 2H). Therefore, we concluded that the pushed wave front, driven by a decreasing shape of driving force, enables a spatially ordered and compact pattern of phenotypes while on the move.\n\n### Spatially ordered individual behaviors predicted by agent-based simulation\n\nAlthough the simplified OU-type model (Equation1) represents a key aspect of the ordering mechanism of phenotypes, it does not detail the signaling processes of bacterial chemotaxis, such as receptor amplification, adaptation, and motor responses (Sumpter, 2010), and it cannot predict bacterial run-and-tumble behavior. To consolidate the proposed mechanism underlying the emergence of spatial orders from the individual random motions, we further performed agent-based simulations integrated with the chemotactic pathway, multi-flagella competition, and boundary effect in three dimensions (3D) (Dufour et al., 2014; Jiang et al., 2010; Sneddon et al., 2012). In the agent-based model, the attractant dynamics governed by diffusion and bacterial consumption is described by a reaction-diffusion equation (Equation S2) as previous multiscale models (Erban and Othmer, 2005; Xue and Othmer, 2009). We constructed a population with multiple phenotypes defined by different chemotactic abilities $\u03c7_{i}$ , where $\u03c7_{i}$ was varied by changing the receptor gain $N$ (for details, see supplementary text). Since the receptor gain $N$ only affects the amplification factor by which a cell responds to the gradient, the variation in bacterial motility $\u03f5$ is unchanged. As a result, a dense band of migrating cells that follow a self-generated moving chemoattractant gradient via consumption were recaptured as experiments (Appendix 1\u2014figure 6A). The phenotypes were spatially ordered as $\u03c7$ varies (Appendix 1\u2014figure 6B), and the velocity profile of each phenotype decreases from the back to front (Appendix 1\u2014figure 6C) as predicted by the OU-type model.\n\nTo better analyze the simulations, we simplified the simulation with a non-consumable attractant profile $Sz$ moving with constant speed $V_{G}$ (Appendix 1\u2014figure 4D). Using this simplified model, we first checked that the mean positions of the density profiles of cells with different receptor gains $N$, as well as their peaks, were orderly aligned with respect to chemotactic ability $\u03c7_{i}$ .\n\nAs an important advantage of the agent-based simulations, the model allowed us to analyze single-cell behavior during the ordered group migrations. For each phenotype $i$, the expected drift velocity $V_{D,i}z$ decreased along the density profile (Figure 3A). Consistent with the ordered structure of the density profiles, the intersection between $V_{D,i}z$ and $V_{G}$ exhibited the same order of chemotactic ability $\u03c7_{i}$ (Appendix 1\u2014figure 7). As the reversion rate $r_{i}=\\frac{dV_{D,i}z}{dz}$ showed a positive correlation to $\u03c7_{i}$ , cells with lower receptor gain $N$ (resulting in a smaller $\u03c7$) experienced a weaker reverting force toward the center (Figure 3A insert). Thus, the effective moving potential, $U_{i}z$ , which constrains the cells around the mean positions sorted by their chemotactic abilities, becomes flat for cells with lower chemotaxis ability $\u03c7$ (Figure 3B; Long, 2019). As a result, cells of each phenotype perform sub-diffusion, whereby the MSD along the migration coordinate relative to the group was bound at a level negatively correlated to $\u03c7$ (Figure 3C). The width of the density distribution, as an effect of the reversion force, decreased with the reversion rate, as an approximate linear function. Using this agent-based model, we further obtained similar results for populations of different $\u03c7_{i}$ through adaptation time $\\tau$, or basal CheY protein level $Y_{p0}$ , which determined the basic tumble bias $TB_{0}$ (Dufour et al., 2014; Jiang et al., 2010; Sneddon et al., 2012; Appendix 1\u2014figure 8).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67316/elife-67316-fig3-v2.jpg)\n\n**Figure 3.:** (A) The expected drift velocity $V_{D}z$ of simulated bacteria decreased from the back to the front of the migration group, where the chemotactic ability $\u03c7$ ranged from 0.2 to 0.35 mm2min-1 , which was consistent with the experimental results shown in Figure 1F. The intersections between the $V_{D}$ curves with the preset group velocity $V_{G}$ (black dashed line) shifted toward the back of the migration group as $\u03c7$ decreased (circles). The different colors of the lines and circles correspond to different chemotactic abilities $\u03c7$, as shown in the legend. The same color coding also applies to (B\u2013D). (B) The reversion rate $r_{i}=|dV_{D,i}(z)/dz|$ increased with chemotactic ability. (C) The effective potential well calculated by $U_{i}z=\\int_{z}^{+\u221e}V_{d,i}(z)dz$. Positions of the potential minimum $z_{min}$ are marked as circles. As illustrated, for a lower chemotaxis ability $\u03c7$, the potential well is shallower and $z_{min}$ shifts toward the back of the migration group. (D) The width of the density profile (measured by $2\\sigma$, see Figure 1B) decreases with the reversion rate $r_{i}$ as well as the chemotaxis ability $\u03c7_{i}$ . The mean square displacement (MSD) of bacteria (insert, solid lines) is bound to $2\\sigma_{i}^{2}$ (insert, dashed lines) (see supplementary text). In panel (A, C), curves were cut to present the majority of cells (90%) ($z_{min}\\pm1.65\\sigma_{i}$). More details on the results of this simulation are presented in Appendix 1\u2014figure 7.\n\n### Experiments with titrated phenotypes confirm ordered behavior modulation\n\nTo verify the model predictions on the individual behaviors of different phenotypes, we experimentally measured the trajectories of cells with different chemotactic abilities during the group migration. Specifically, we altered the chemotaxis abilities of cells by titrating the expression level of Tar, which is under the control of a small molecule inducer aTc (Sourjik and Berg, 2004; Zheng et al., 2016) (see Materials and methods and Figure 4A). The variations in the expression of Tar would lead to different receptor gains in response to the Asp gradient (Adler, 1966b; Adler, 1969; Sumpter, 2010), but the tumble bias and growth rate would not change. Using the migration speed of the bacterial range expansion to quantify the chemotaxis ability of the titrated strains, we found that the chemotaxis ability increases with aTc concentration (see Materials and methods and Appendix 1\u2014figure 9).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67316/elife-67316-fig4-v2.jpg)\n\n**Figure 4.:** (A) Genetic circuit of the Tar-titratable strain. In the experiments, the expression level of Tar (a chemoattractant receptor protein) was titrated by the concentration of external inducer (aTc). The chemotactic ability $\u03c7$ of bacteria was then determined by the expression level of Tar (Adler, 1969). (B) The expected drift velocity $V_{D,i}z$ of the Tar-titratable strain JCY20 (colored solid line) was spatially modulated and decreased from the back to the front of the migration group and intersected with a group migration velocity $V_{G}\u22480.15mm/min$ (black dashed line). The linear fit of $V_{D,i}z$ (colored dashed lines) intersected with $V_{G}$ at positions (circles) determined by the corresponding Tar expression level. Colors from dark to light green corresponded to inducer (aTc) concentrations of $[1,\u00a03,\u00a06,\u00a020]ng/mL$. The black shaded area of $V_{G}$ represents the s.d. of four experiments, while the colored shaded area of the $V_{D}$ curves presents the s.e.m. of the counted runs. (C) In the experiment, the positions of the $V_{D,i}(z)\u2212V_{G}$  intersections (circles, illustrated in B), together with the peaks (stars, illustrated in the insert figure), and the average positions (diamond) of the bacterial density profiles, all shifted toward the front of the migration group for strains with higher Tar expression levels, which had higher chemotactic abilities and migrated faster on agar plates (x-axis, see Materials and methods; Appendix 1\u2014figure 9). The related density profiles (PDF) were shown in the insert plot and the color coding of lines/symbols in both panels C and D was the same as that in B. (D) The width of density profiles ($2\\sigma$) of Tar-titrated bacteria decreased with the reversion rate $r$.\n\nThe Tar-titrated cells labeled with yellow fluorescent protein (YFP; strain JCY20) were added to the wild-type population at a ratio of 1 in 400. Within the wild-type population, 1 in 50 cells was labeled with red fluorescent protein (RFP) (strain JCY2). As the Tar-titrated strain constituted a small portion of the pre-mixed population, we considered that the density profile of the population would be invariant to different levels of induction of Tar. The premixed population could generate collective group migration, similar to the wild-type population (Appendix 1\u2014figure 9). The trajectories of the YFP-labeled cells were tracked to represent the behavior of cells with different chemotactic abilities, while the profile of wild-type cells with RFP was also measured to characterize the density distribution of the entire migratory population.\n\nBy comparing the statistics of cells with different Tar expression levels, we found that the expected drift velocity $V_{D,i}(z)$ followed the same decreasing pattern from back to front (Figure 4B). More importantly, as the Tar expression level (chemotactic ability) increased, the slope of the decreasing pattern increased, which was consistent with the model prediction shown in Figure 3A. The intersections between $V_{D,i}(z)$ and $V_{G}$ , as well as the peak positions and mean positions of each Tar-titrated density profile (Figure 4C), shifted toward the front as the chemotactic ability increased (as measured by the migration rate on agar plates; Cremer et al., 2019; Liu et al., 2019). The $V_{D}$ cross point was always behind the peak position and the mean position (Figure 4C), suggesting that cells were leaking behind. Moreover, the width of each Tar-titrated density profile (defined by $2\\sigma_{i}$) decreased as the reversion rate $r_{i}$ increased (Figure 4D), consistent with the model results in Figure 3C. Thus, as the OU-type model predicts, the width of the density profile is controlled by the reversion rate determined by the chemotactic ability $\u03c7_{i}$ .\n\n## Discussion\n\nIn summary, coordinated behaviors with ordered spatial arrangements of phenotypes are abundant in a wide range of biological and human-engineered systems, and are believed to involve elaborate control mechanisms. For animal migrations, it is challenging to characterize simultaneously the computational strategy and behavior at the individual level so as to avoid averaging out phenotypic diversity, and the emergent behavior at the population level (Couzin et al., 2005; Couzin et al., 2002; Vicsek and Zafeiris, 2012). For bacterial chemotactic migration, cells with different phenotypes are spatially aligned based on their chemotactic abilities. This observation was explained as a self-consistent result with the decreasing profile of attractant predicted by KS model (Fu et al., 2018). In this study, we demonstrated that the collective consumption of attractant by bacterial group generates a spatial structure of individual drift velocity along the migrating group profile. Such a spatial profile of drift velocity results a pushed wave front on population level, and maintains diverse phenotypes in a compact migration group. Moreover, this pushed wave front enables spatial modulation of individuals to perform mean reverting random motions around centers sequentially aligned by their chemotactic abilities, thereby giving rise to a spatially ordered pattern. Therefore, we demonstrated that the population order could emerge among diverse individuals that following the same rule of behavioral modulation.\n\nThis strategy of self-organization does not require sophisticated communications (Curatolo et al., 2020; Karig et al., 2018; Liu et al., 2011; Payne et al., 2013) nor other hydrodynamic interactions (Chen et al., 2017; Drescher et al., 2011; Zhang et al., 2010) among individuals. Our observation of the decreasing drift velocity can imply the effective perceived gradient that cells experience. We believe that this spatial profile is mainly contributed by the consumption of the chemoattractant. By using a Tar-only strain (UU1624) (Gosink et al., 2006), we demonstrated that the mutant could also generate a stable group migration in our experimental condition similar to the wild-type strain (Appendix 1\u2014figure 9G). This further suggests that the secretion of self-attractants is unlikely a necessary condition of collective group migration (Cremer et al., 2019; Fu et al., 2018; Keller and Segel, 1971a), although there are doubts about the existence of self-attractants in high density (Budrene and Berg, 1995).\n\nThe spatially dependent drift velocity provides a structured driving force of a migration group, resulting a pushed wave front. Pushed and pulled waves are determined by the spatial distribution of the spreading velocity of a propagation front (van Saarloos, 2003; Figure 2F\u2013H). The properties of pushed and pulled waves have been discussed in growth-driven range expansion (Birzu et al., 2018; Erm and Phillips, 2020; Gandhi et al., 2016), where the wave type is determined by density-dependent growth rates. A prominent example of pulled wave is known as the Fisher wave (Fisher, 1937), where the population expansion is driven by constant diffusion and logistic growth of individuals. However, in such biological systems, the spatial dependence of front speeds is hardly quantified in experiments. Here, by direct measurement of drift velocity on single-cell level, we identified the chemotactic migration group of bacteria as a pushed wave. This chemotaxis system would provide a unique multi-scale model to study further details of pushed wave.\n\nThe spatially decreasing profile of driving force does not only cause an ordered pattern of phenotypes, but also results a pushed wave front that enables a negative feedback control on the propagating speed. This further allows a compact density profile for heterogenous population to migrate at the collective level. The advantageous to keep diversity in the pushed wave front was also reported in the growth-driven range expansion system (Birzu et al., 2018). Our study revealed that, other than spatial regulation of fitness, the direct modulation of individual drift velocity in space could also maintain diversity in range expansion.\n\nDetailed analysis of the spatial structured driving force could also provide the limits of phenotype that is allowed in the group. In the migratory group, the same rule of behavioral modulation applied to cells with different phenotypes, such that the random motions of cells were bound by moving potential wells whose basins were sequentially aligned. However, it is noteworthy that cells could skip the potential wells from the back because the \u2018driving force\u2019 decreased again at the far back of the group (Long, 2019). This results in leakage of cells in the migratory group (Holz and Chen, 1978; Novickcohen and Segel, 1984; Scribner et al., 1974). Phenotypes with weaker chemotactic abilities were located at the back of the group, where the effective potential well was shallower (Figure 3C), allowing for more chances to skip. Thus, such collective migration selects bacteria with higher chemotactic abilities (Liu et al., 2021; Liu et al., 2019).\n\nThe simple computational principle of behavioral modulation to allocate different phenotypes in the collective group is likely not limited to sensing the self-generated signal by consumption of attractant. A prominent example of trail-following migration (Couzin and Krause, 2003; Helbing et al., 1997) and a typical class of collective behavior is represented by a modified Langevin-type model, where individuals tracing the accumulated signal secreted by all participants (Equation S20) can reproduce similar spatial-temporal dynamics of behavioral modulation, as well as ordered arrangements of phenotypes in the migratory group (Appendix 1\u2014figure 10). Thus, this mechanism of matching individual abilities by the signal strength might provide an explanation of how other higher organisms organize ordered structures during group migration.\n\n## Materials and methods\n\n### Strains\n\nThe wild-type strain E. coli (RP437) and its mutants were used in this study, where all plasmids were kindly provided by Dr Chenli Liu. Specifically, the Tar-titratable strain was constructed by recombineering according to previous research (Zheng et al., 2016). Specifically, the DNA cassette of the Ptet-tetR-tar feedback loop was amplified and inserted into the chromosomal attB site by recombineering with the aid of plasmid pSim5. The tar gene at the native locus was seamlessly replaced with the aph gene by using the same recombineering protocol. To color-code the strains, we use plasmids with chloramphenicol-resistant gene carrying yfp under constitutive promoter (for JCY1 strain) and pLambda-driven mRFP1 plasmids maintained by kanamycin (for JCY2). To color-code Tar-titratable strain (JCY20), a plasmid carrying yfp chloramphenicol-resistant gene was transformed into constructed Tar-titratable strain. The tar-only strain (UU1624) was modified from RP734 and was kindly provided by Prof. Johan Sandy Parkinson.\n\n### Media and growth conditions\n\nFor bacterial culture, the M9 supplemented medium was used. The preparation of the M9 supplemented medium follows the recipe in previous study (Fu et al., 2018): 1\u00d7M9 salts, supplemented with 0.4% (v/v) glycerol, 0.1% (w/v) casamino acids, 1.0 mM  magnesium sulfate, and 0.05% (w/v) polyvinylpyrrolidone-40. 1\u00d7M9 salts were prepared to be 5\u00d7M9 salts stock solution: 33.9 g/L  Na2HPO4, 15 g/L  KH2PO4, 2.5 g/L  NaCl, 5.0 g/L  NH4Cl.\n\nFor migration experiments in the micro-channel, the M9 motility buffer was used. The recipe was:1\u00d7M9 salts, supplemented with 0.4% (v/v) glycerol, 1.0 mM magnesium sulfate, and 0.05% (w/v) polyvinylpyrrolidone-40, 0.1 mM  EDTA, 0.01 mM methionine, and supplemented with 200 \u00b5M  aspartic acid.\n\nFor the migration rate measurements, the M9 amino acid medium with 0.2% (w/v) agar was used to prepare swim plate (Liu et al., 2019). The recipe was: 1\u00d7 M9 salts, supplemented with 0.4% (v/v) glycerol, 1\u00d7 amino acid, 200 \u00b5M aspartic acid, 1.0 mM magnesium sulfate, and 0.05% (w/v) polyvinylpyrrolidone-40. 1\u00d7 amino acid were prepared to be 5\u00d7 amino acid stock solution: 4 mM alanine, 26 mM arginine (HCl), 0.5 mM cysteine (HCl\u00b7H2O), 3.3 mM glutamic acid (K salt), 3 mM glutamine, 4 mM glycine, 1 mM histidine (HCl\u00b7H2O), 2 mM isoleucine, 4 mM leucine,  lysine, 1 mM methionine, 2 mM phenylalanine, 2 mM proline,  threonine, 0.5 mM tryptophane, 1 mM tyrosine, 3 mM valine. All experiments were carried out at 30\u00b0C. Plasmids were maintained by 50 \u00b5g/mL kanamycin or 25 \u00b5g/mL chloramphenicol.\n\n### Sample preparation\n\nThe bacteria from frozen stock were streaked onto the standard Luria-Bertani agar plate with 2% (w/v) agar and cultured at 37\u00b0C overnight. Three to five separate colonies were picked and inoculated in 2 mL M9 supplemented medium for overnight culture with corresponding antibiotics to maintain plasmids. The overnight culture was diluted by 1:100 into 2 mL M9 supplemented medium the next morning. For Tar titration strains, related aTc were added in this step. When the culture OD600 reaches 0.2\u20130.25, it was then diluted into pre-warmed 15 mL M9 supplemented medium so that the final OD600 was about 0.05 (Liu et al., 2019; Zheng et al., 2020; Zheng et al., 2016).\n\nBacteria were washed with the M9 motility buffer and were re-suspended in fresh M9 motility buffer to concentrate cell density at OD600 about 1.0. Then, the wild-type strain and fluorescent strain were mixed with ratio of 400:1 before loaded in the microfluidic chamber (Fu et al., 2018; Saragosti et al., 2011). For Tar titration experiments, the wild-type strain (RP437) was mixed with two fluorescent strains (JCY2 and JCY20) by 400:8:1.\n\n### Microfabrication\n\nThe microfluidic devices were fabricated with the same protocol and the same design as previous research (Bai et al., 2018; Fu et al., 2018), except that the capillary channel was designed longer than that of previous ones. The size of the main channel was 20 mm\u00d70.6 mm\u00d7 0.02 mm and only one gate at the end of the channel was kept (Appendix 1\u2014figure 1A).\n\n### Band formation\n\nFluorescent cells were mixed with non-fluorescent cells by 1:400 for cell tracking in the dense band. Sample of mixed cells with density OD600 \u22481.0 was gently loaded into the microfluidic device and then the device was spun for 15 min at 3000 rpm  in a 30\u00b0C environmental room so that almost 100,000-150,000 cells were placed to the end of the channel. After spinning, the microfluidic device was placed on an inverted microscope (Nikon Ti-E) equipped with a custom environmental chamber set to 50% humidity and 30\u00b0C.\n\n### Imaging\n\nThe microscope and its automated stage were controlled by a custom MATLAB script via the \u03bcManager interface (Edelstein et al., 2014; Fu et al., 2018). About 30 min after the sample loading, a 4\u00d7 objective (Nikon CFI Plan Fluor DL4X F, NA 0.13, WD 16.4 mm , PhL) was placed in the wave front for imaging. The fluorescent bacteria, seen as randomly picked samples of the migrating group, were captured continuously with frame rate of 9 fps in 10 min until they leave the view. Typical tracks are longer than 300 s. Time-lapsed images were acquired by a ZYLA 4.2MP Plus CL10 camera (2048 \u00d7 2048 arrays of 6.5 \u00b5m\u00d76.5 \u00b5m pixels) at 9 frames/s (fps) . An LED illuminator (0034R-X-Cite 110LED) and an EYFP block (Chroma 49003; Ex: ET500/X 20, Em: ET535/30 m) compose the lightening system.\n\nFor the Tar titration experiments, the channel was first scanned with 10\u00d7 objective (CFI Plan Fluor DL 10\u00d7 A, NA 0.30, WD 15.2 mm, PH-1) enlighten by an LED illuminator (0034R-X-Cite 110LED) through the RFP block (Chroma 49005, Ex: ET545/X 30, Em: ET620/60 m) and EYFP block channels for seven neighbored views around the migration group. These images were further combined to two large pictures of the RFP strains and YFP strains. The channel was scanned twice, respectively before and after the 10 min tracking of fluorescent Tar-titrated cells.\n\n### Track extraction and state assignment\n\nThe acquired movie was first analyzed with the U-track software package to identify bacteria and to get their trajectories (Jaqaman et al., 2008). Then the tracks were labeled by run state and tumble state by a custom MATLAB package (Waite et al., 2016) using a previously described clustering algorithm (Dufour et al., 2016).\n\n### Track analysis\n\nThe group velocity $V_{G}$ was calculated by averaging the frame-to-frame velocity ($dt\u22480.11s$) over all tracks and all time. The cell number for the first frame over a spatial bin of $\u0394x=60\\mum$ and a channel section a=12,000 \u00b5m2 were calculated to get the density profile $\u03c1x,t=0=\\frac{\\sumix,t}{a\u22c5dx}$ . The peak position of the first frame ($x_{peak}t=0$) was then determined by the maximum of $\u03c1(x,t=0)$. The position of each bacterium ($x_{i}(t)$) was transformed to moving coordinate position $z_{i}$ by the group velocity $V_{G}$ and origin of the axis on the density peak by $z_{i}=x_{i}t-V_{G}t-x_{peak}t=0$ . Given the relative position of each cell, we recalculated the density profile in moving coordinate $\u03c1z=\\frac{\\sumiz}{a\u22c5dx}$ . The width of the density profile was defined by two times the standard deviation of relative positions $2\\sigma=2\\sqrt{\\frac{1}{n-1}\\sum_{i=1}^{n}z_{i}-\u2329z\u232a^{2} }$ . The spatial distribution of the instantaneous velocities $\u2329V_{I}z\u232a$ was calculated by averaging the velocity in spatial bin of $\u0394z=240\\mum$.\n\nA tumble-run event is the minimal element of bacterial behavior. The typical spatial scale of a tumble-run event is about 20 \u03bcm, which is much smaller than the spatial bin size chosen in this study (240 \u00b5m). The spatial distributions of run time $\u2329\\tau_{R}z\u232a$, tumble time $\u2329\\tau_{T}z\u232a$, and run length $\u2329l_{R}z\u232a$ were calculated by averaging the related values of all the events with tumbling position ($z_{T}$) located in each spatial bin ($z$). As the displacement of tumble is small, the tumbling position is approximately the starting position of runs. For each tumble-run event, we have the vector linking starting position and end position of the run. The running angle $\\theta_{R}$ is then defined by the angle between run direction and the group migration direction. One can easily deduce all the other quantities with the formulations in Table 1.\n\n**Table 1.**\n Summary of quantities.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Quantities</th>\n      <th>Definition</th>\n      <th>Formulations</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>VG</td>\n      <td>Group velocity</td>\n      <td>VG=\u2329dxdt\u232a</td>\n    </tr>\n    <tr>\n      <td>z</td>\n      <td>Moving coordinate</td>\n      <td>z=x-VGt</td>\n    </tr>\n    <tr>\n      <td>VIz</td>\n      <td>Instantaneous velocity</td>\n      <td>VIz=\u2329dxzdt\u232a</td>\n    </tr>\n    <tr>\n      <td>VDz</td>\n      <td>Expected drift velocity</td>\n      <td>VD(z)=\u27e8LR(z)\u22c5cos\u2061\u03b8R(z)\u00a0\u27e9\u27e8\u03c4R(z)+\u03c4T(z)\u27e9</td>\n    </tr>\n    <tr>\n      <td>\u03c1z</td>\n      <td>Cell density</td>\n      <td>\u03c1z=\u2211iza\u22c5\u0394z</td>\n    </tr>\n    <tr>\n      <td>Sz</td>\n      <td>Chemoattractant concentration</td>\n      <td>-VGdSdz=Ds\u22022S\u2202z2-k\u03c1</td>\n    </tr>\n    <tr>\n      <td>gz</td>\n      <td>Perceived gradient</td>\n      <td>g(z)=dln\u00a0(1+S(z)/Koff1+S(z)/Kon)\u00a0dz</td>\n    </tr>\n  </tbody>\n</table>\n\n### Growth rate and migration rate measurement\n\nGrowth rates of Tar-titrated strains were calculated from exponential fitting ($R^{2}>0.99$) over measured curves of cell density (OD600) with respect to time. A 250 mL flask with 20 mL M9 supplement medium were used. All measurements were performed in a vibrator of rotation rate of 150 rpm at 30 \u00b0C. OD600 was measured by a spectrophotometer reader every 25 min. Each strain has been measured for at least three times.\n\nThe semi-solid agar plate was illuminated from bottom by a circular white LED array with a light box as described previously (Liu et al., 2011; Liu et al., 2019; Wolfe and Berg, 1989) and was imaged at each 2 hr by a camera located on the top. As bacteria swimming in the plate forms \u2018Adler ring\u2019, we used the first maximal cell density from the edge to define the moving edge of bacterial chemotaxis. The migration rate was then calculated from a linear fit over the data of edge positions in respect to time ($R^{2}>0.99$).\n\n### Models and simulations\n\nDetails of the theoretical models and numerical simulations were presented in the appendix notes. In which, the Langevin equation was deduced and solved numerically with a particle-based simulation; the approximated OU-type equation and its traveling wave solution were deduced; an agent-based simulation of bacterial with chemotaxis pathway was performed following previous works (Dufour et al., 2014; Jiang et al., 2010; Sneddon et al., 2012).\n",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "6a13d693-c537-4623-81be-8aefe0d68a02",
+      "submission_id": "1c06b297-2bf3-4eca-ba58-9a0111cc3978",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Agnese Seminara, University of Genoa Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67316.sa1](https://doi.org/10.7554/eLife.67316.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors present a study on the cohesion maintenance of E. coli during collective migration in a self-generated gradient. They performed experiments and complemented the study with a predictive model and simulation to understand how bacteria with different phenotype are able to move as a cohesive group and how the individual bacterium defines its own position within the group. Particularly interesting aspects of the study are the use of titration of behavior with chemoreceptor abundance and the use of potential wells to model the attraction of bacteria to the center of their cohesive group. This approach will be of interest to physicists and biologists interested in collective motility and migration.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Spatial modulation of individual behaviors enables collective decision-making during bacterial group migration\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that your work will not be considered further for publication by eLife.\n\nIn this paper, Bai et al. investigate through experiments and agent-based modelling how cohesion is maintained in bacterial waves on chemotactic landscapes created by nutrient consumption. The manuscript confirms that the behavior of individuals is modulated in such a way that makes cells converge towards the center of the group. Behavioral modulation in different phenotypes ensures an ordered spatial arrangement of the phenotypes. All reviewers appreciate the careful experiments and data analysis as well as the introduction of a number of technical advancements (e.g. the titration of behavior with the chemo receptor abundance, and the formalization of bacterial attraction as a potential well). However, the main results appear to confirm previous findings (Saragosti et al. 2011, Fu et al. 2018). Thus, the level of insight provided by the analysis is not sufficient to grant publication in eLife.\n\nReviewer #1:\n\nIn this paper, Bai et al. investigate in experiments and simulations how cohesion is maintained in chemotactic travelling waves of bacteria. These waves emerge from the bacterial population consuming an attractant, thus carving a gradient which they follow chemotactically. This paper builds up on previous work of some of the authors (Fu et al., Nat Commun 2018), which found that in these waves bacteria with varying degree of chemotactic sensitivity organize spatially in the band, which allows for its cohesiveness despite varying phenotypes. The authors investigate here an additional element for the cohesiveness of the wave: because the sharpness of the gradient increases from the front to the back of the wave, 'late' cells catch up via a stronger chemotactic response, and front cells slow down via a weaker one. This had been already postulated in earlier work on the phenomenon (Saragosti et al. PNAS 2011), but here the authors investigate how this applies to cells with varying chemotactic sensitivity. They also performed agent-based simulations of the cells behavior in the gradient and developed a model of the motion in the gradient. The latter maps the spatial dependence of the gradient steepness onto an effective travelling potential which keeps the cells together in a group as the gradient and the wave propagate. Importantly, the effective potential is predicted to be tighter for cells with higher chemotactic sensitivity, in agreement with the cell behavior they observe in experiments where the chemotactic sensitivity is artificially modulated. This suggests that weakly chemotactic cells are more weakly bound to the group and have a higher chance of being left behind. This last part is interesting in the context of range extension in semi-solid agar, where bacteria are known to be spatially organized and selected according to their chemotactic motility (Ni et al., Cell reports 2017, Liu et al. Nature 2019).\n\nThis paper builds its strengths on the extensive experimental characterization of the system and a variety of modeling approaches and makes a fairly convincing case for the way of understanding the mechanism of cohesion maintenance they propose.\n\nFrom a methodological perspective, only a few points need to be addressed:\n\nControl experiments need to quantify the cell-to-cell variability of the induction level of Tar by tetracycline.\n\nChemical attraction to cues released by other cells is a well-documented way to create cohesive large scale structures in E. coli (Budrene and Berg Nature 1995, Park et al. PNAS 2003, Jani et al. Microbiology 2017, Laganenka et al. Nat commun 2016). The cohesion of the wave have never been analyzed in this optic, despite being a possible alternative explanation to the gradient shape. Since the authors main claim is about the wave cohesion, they should provide evidence that such an explanation can be ruled out or considered secondary.\n\nPossible effects of physical interactions between cells on the chemotactic response are not accounted for. The consequences should be better discussed, because they are known to influence chemotactic motility at the densities encountered in the present experiments (Colin et al. Nat commun 2019).\n\nAdditionally, the paper could better emphasize the new results and separate them from the confirmations of previous results.\n\n1. I would highly recommend a thorough correction of the English language. Although some parts are quite fine and require only minor fix, others can be very hard to read and understand. Even when the English is fine, streamlining the presentation of the results could also improve the read considerably.\n\n2. The discussion and the abstract are the places to better separate between confirmation of previous results and new finding, to emphasize the new findings.\n\n3. For the possible effect of chemical cues, simulations or experiments in a Tar-only strain could be good tests.\n\n4. The maximal density in the peak seems to be about 1% volume fraction (10^10 cells/mL, Figure 1) in the experiments. At these densities, chemotaxis is known to be affected by physical interaction between cells (Colin et al. Nat commun 2019). I would suggest additional simulation were \\chi is modulated according to local density following (Colin et al. Nat commun 2019) to test whether an effect is present.\n\n5. I would suggest to explain why agent based simulations are necessary (memory effects, etc) after the particle based simulation.\n\n6. L216 it would be a good idea to explain the conceptual difference between VD(z) and VI(z)(=VG), and why they differ, since this is central to the analysis, and might not be obvious to all readers.\n\nReviewer #2:\n\nThe manuscript by Bai et al. explores the single-cell motility dynamics within a chemotactic soliton wave in E. coli. They tracked individual cells and measured their trajectory speed and orientation distributions behind and ahead of the wave. They showed cells behind the wave were moving in a more directed fashion towards the center of the wave compared to cells ahead of the wave. This behavior explains the stability of group migration, as confirmed by numerical simulations.\n\nI do not recommend this manuscript for publication in eLife since it basically reproduces and deepens previous published works. In particular, Saragosti et al. (2011) already provided exactly what the authors claim to do here : \"How individuals with phenotypic and behavioral variations manage to maintain the consistent group performance and determine their relative positions in the group is still a mystery.\" (Line 75-77) (See the last sentences from Saragosti et al. : \"This modulation of the reorientations significantly improves the efficiency of the collective migration. Moreover, these two quantities are spatially modulated along the concentration profile. We recover quantitatively these microscopic and macroscopic observations with a dedicated kinetic model.\")\n\nWhat is novel here is the titration of the behavior with chemo-receptor abundance, but I believe the scope is not wide enough for publication in eLife. I suggest the authors to submit in a more specialized journal.\n\nThe authors should make more explicit what is really new in their work, compared to what is already known. In the present form, it is hard to pinpoint exactly the novelty of this research.\n\nReviewer #3:\n\nThe authors present a study on the collective behaviour of E. coli during migration in a self-generated gradient. Taking into account phenotypic variation within a biological population, they performed experiments and complemented the study with a predictive model used for simulation to understand how bacteria can move as a group and how the individual bacterium defines its own position within the group.\n\nThey observed experimentally that phenotype variation within the bacterial population causes a spatial distribution within the chemotactic band that is not continuous but formed by subpopulations with specific properties such as run length, run duration, angular distribution of trajectories, drift velocity. They attribute this behaviour to the chemotaxis ability, which varies between phenotypes and defines a potential well that anchors each bacterium in its own group. This was proven by the subdiffusive dynamics of the bacteria in each subgroup. Many cases were studied in the experiments and the authors present many controls to clearly demonstrate their hypothesis.\n\nThese are interesting results that prove how a discretised distribution can produce continuous collective behaviour. It presents also an interesting example in the field of active matter about collective behaviour on a large scale that is generated by a different behaviour of individuals on a much smaller scale. However, it is not clear how the subpopulations can be held together in the group. Moreover, a link between bacterial dynamics and the biological necessary mechanism is not clear.\n\nThey formulate a theoretical description based on the classical Keller-Segel model. Langevin dynamics was used to describe bacterial activity in terms of drift velocity for simulation, which agrees very well with experimental observations.\n\nOne can appreciate the interesting results of the study describing Ecoli chemotaxis as a mean-reversion process with an associated potential, but it is not clear to what extent the results can be generalised to all bacteria or rather relate to the strain the authors investigated.\n\n1) In the Results section, lines 93-181, the authors show the results of their experiments, which essentially confirm the results of previous studies in terms of the average speed of the group and the distribution of running length and running duration from back to front within the group, as well as the angular distribution of running length. I have difficulty seeing the differences between this work and the previous studies. In fact, other studies already showed the persistence of the cell migration pathway from the back to the front as well as cells migrating faster in the back and slower in the front.\n\nThe manuscript would benefit greatly from a clear comparison between the authors' results and the previous studies.\n\n2) However, they noted that the tumble bias is constant and not spatially modulated. This is the first difference compared to the previous studies cited, and it would be useful to have a guess or speculation about the physiological significance of this. Is the tumble bias related to the bacterial strain? Shouldn't the tumble bias be a strategy of the organism to scan the environment? Do the authors believe that tumble bias is intrinsic to the system and cannot be influenced by physiological priorities such as receptor occupancy and foraging? In the previous study, tumble bias caused faster migration in the posterior region and slower migration in the anterior region. The authors observed that in their case, the faster migration in the back and slower migration in the front was due to drift speed. How do they explain this difference in these observations?\n\nSuch aspects should be clarified if the authors intend to claim that their outcomes advance the knowledge in the field of bacterial migration otherwise they are rather considering a subcase, a special Ecoli bacteria strain.\n\n3) The authors propose a discretisation of the chemotactic band into subgroups whose dimension is defined by the chemotactic ability with an inverse relationship to the SD \u03b3 of the bacterial distribution. Based on this idea, they suggest that each group represents a potential well. Although the idea is very interesting, it is not entirely clear to me how the bacteria can reverse to the mean of the group just because they rely on the molecular migration pathway. How is the attraction to each group generated? Would it make sense to think about the mechanism of quorum sensing, which Ecoli bacteria are known to use for population sensing? This would also explain how the exit of each group is avoided: the chemotactic ability pulls the bacteria towards the gradient, but the quorum sensing, e.g. a population sensing, drives the mechanism towards the group. This means that the driving force that causes the group to move together is the sum of at least two contributions.\n\n4) Linked to the previous question: How are the different subpopulations kept together? Is a difference in drift velocity within a range between the back and the front sufficient to prevent the entire chemotactic group from disintegrated? Have the authors tested other drift velocity ranges to see if there is a threshold for these group dynamics? What about accounting for a molecular response?\n\n5) In line 360, the authors claim to obtain the same subdiffusive behaviour of the bacteria when the migratory ability is influenced by the adaptation time or the basal CheY protein level. From the supplementary material, one can understand that this was the result of the simulation. For this reason, the authors should be very careful when claiming that they have observed how different proteins influence the modulation of behaviour. It is not clear from the simulation how this result can be clearly attributed to the specific protein CheY. One can choose a different protein and simulate the behaviour and get the same result without having any connection to the biological real state. I suggest that the authors explain more about this point or remove it from the text and just leave it in the supplementary material with a clear explanation about the missing connection with the biology and clarify that this is a speculation.\n\n6) In line 104, the authors explain that the band forms after centrifugation. Their simulation shows that this happens after 20 min. What about the experiments? Is there consistency between simulation and experiments?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Spatial modulation of individual behaviors enables an ordered structure of diverse phenotypes during bacterial group migration\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe revised manuscript addresses more clearly the novelty of the work. However, some concerns remain over novelty and new concepts introduced within the revision.\n\nEssential revisions:\n\n1) One main novelty the authors claim with respect to Fu et al. is they propose a mechanism for the ordering. Please clarify whether this is different from the mechanism proposed by Fu et al.\n\n2) Explain that the wave travels because of attractant consumption. Verify with numerical simulations that the ordering persists even when the gradient is continuously modified by consumption.\n\n3) Clarify what a pushed wave precisely is.\n\nPlease address all other points raised by the individual referees as you see fit.\n\nReviewer #1:\n\nIn their appeal, the authors have rewritten the text to make it significantly clearer and put the work better in context with previous publications. They also addressed my technical concerns. The main reason for rejection was however the lack of sufficient novelty. The two main points of the paper are:\n\n1) Bringing evidence of a mechanism of wave coherence at fixed chemotactic sensitivity by an increased drift of the late cells and a reduced drift for the early ones thanks to the shape of the gradient, which the authors called mean-reversion or now pushed wave-front. This mechanism was already heavily suggested by the results of Saragosti et al. 2011 and proposed as a mechanism in that paper. On this point, I acknowledge that the presentation and analysis of the cell behavior in this paper does a better and more thorough job at demonstrating the phenomenon than the previous one, and the authors do show that this coherence holds for different values of the chemotactic sensitivity. It however remains that the results simply confirm the previously inferred mechanism, using the same experimental technique.\n\n2) Explaining how spatial ordering allows the reconciliation of phenotypic variability and a coherent wave-front. On this point, I do not think the authors bring any new information compared to Fu et al. (2018). For instance, the mechanism for spatial ordering of the mean position of the various spatial phenotypes is already very well illustrated by Figure 3a of that paper.\n\nThe authors also reemphasized the importance of the gradient shape in maintaining the coherence of the wave. Here, and contrary to Fu 2018, they however systematically took the gradient shape as a given during simulations and did not investigate its emergence from consumption by the heterogeneous population. This diminishes the interest of the paper by this much.\n\nAll in all, I maintain my appreciation that this is technically a work of quality but its findings still remain fairly incremental, and I think it could be best suited for a more specialist journal.\n\nReviewer #2:\n\nIn the revised version of the manuscript, the authors satisfactorily added significant pieces of data to the whole story. They explained why their work differs from previously published data (Saragosti at all, 2011).\n\nThey improved the logical flow of the text (presentation of tracking data, stochastic modeling, agent-based modeling, titration), which now better pinpoints what is novel. They added a stochastic model to better understand the mechanisms underlying group migration.\n\nTherefore, I recommend this manuscript for publication in eLife, provided that the authors can answer the following point.\n\nCould the authors explain what a pushed wave is? Pushed wave/pulled wave have a clear meaning in the context of traveling waves (FKPP reaction and variants). Briefly, a pulled wave is when the per capita growth rate is the highest at the edge of the front. A pushed wave is when the per capita growth rate is the highest behind the front. Here, cells move but do not divide. This should be clarified.\n\nReviewer #3:\n\nIn this new version of the manuscript, authors Bai et al. offer a rewording of the text that greatly improves the understanding of their study.\n\nThey provide a new abstract that helps to explain the innovation of their results and their relevance to the biological event of cell migration.\n\nThey expand the text by adding details about their experiments, how they confirm the theoretical model and how these can improve our knowledge on collective motion of bacteria. They explain why their results are able to answer the open questions left by the studies of Saragosti 2011 and Fu 2018. In this way they discuss the differences between their study and the previous ones.\n\nOverall, the text and the improved figures allow one to appreciate the originality of her study. Specially on the following points:\n\n1) The analysis at the level of the individual cell and how individual behaviour can lead to collective migratory behaviour;\n\n2) The importance of decreasing drift velocity within the chemotactic band for the collective migration of bacteria as a group;\n\n3) The coexistence of phenotypic variability within the same migratory population and the formulation of the potential well hypothesis to explain group cohesion;\n\n5) The adequacy of the titrated phenotype control experiment, which may also suggest a possible molecular pathway involved in the process.\n\nThe new version is able to convey the importance of the study, which is robust from an experimental point of view, with several control experiments that leave no doubt about the hypothesis that the authors draw from their observations and that are used to confirm their theoretical model. All the concerns I expressed were satisfactorily addressed.\n\nI would suggest improving the text further so that some repetitions and mistakes are removed to make it more easy to read, and then I would suggest the manuscript for publication.\n",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44054b78-c7eb-43e3-bf38-e36c8a5c2549",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C1",
+      "claim": "Microbial populations can exhibit diverse individualistic behaviors and yet can engage in collective migratory patterns with a spatially sorted arrangement of phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial populations can exhibit diverse individualistic behaviors, and yet can engage in collective migratory patterns with a spatially sorted arrangement of phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about microbial populations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "91e7db3b-ec64-4d60-ad47-6059f12d5cd8",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C2",
+      "claim": "The drift velocities of individual bacteria decrease from the back to the front during group migration, despite the constant migrating speed of the group.",
+      "claim_type": "EXPLICIT",
+      "source": "despite the constant migrating speed of a group, the drift velocities of individual bacteria decrease from the back to the front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "368e6d91-d788-40e5-8bf0-13437a7c8d7d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C3",
+      "claim": "The decreasing profile of drift velocities implies the spatial modulation of individual run-and-tumble random motions.",
+      "claim_type": "EXPLICIT",
+      "source": "we showed that this decreasing profile of drift velocities implies the spatial modulation of individual run-and-tumble random motions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from Langevin-type modeling framework analysis as stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "6a785080-e1dc-4b91-a95e-8cf280c3a1d0",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C4",
+      "claim": "The spatial modulation of individual run-and-tumble random motions enables the bacterial population to migrate as a pushed wave front.",
+      "claim_type": "EXPLICIT",
+      "source": "this decreasing profile of drift velocities implies the spatial modulation of individual run-and-tumble random motions, and enables the bacterial population to migrate as a pushed wave front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the Langevin-type modeling framework stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "00d11e28-bf15-4d63-a8ec-d9b97f9247d8",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C5",
+      "claim": "The pushed wave front can help a diverse population to stay in a tight group.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical analysis and stochastic simulations further predicted that the pushed wave front can help a diverse population to stay in a tight group",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is predicted by theoretical analysis and stochastic simulations as stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "2fb914ca-16ee-427c-b4a0-0cfa1a647528",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C6",
+      "claim": "Diverse individuals perform the same type of mean reverting processes around centers orderly aligned by their chemotactic abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "while diverse individuals perform the same type of mean reverting processes around centers orderly aligned by their chemotactic abilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is predicted by theoretical analysis and stochastic simulations as stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "18f81842-929a-4d03-8615-295f29fda073",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C7",
+      "claim": "The mechanism about the emergence of orderly collective migration from diverse individuals is experimentally demonstrated by titration of bacterial chemoreceptor abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism about the emergence of orderly collective migration from diverse individuals is experimentally demonstrated by titration of bacterial chemoreceptor abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "3621e65b-87a3-44b5-b99e-0465ad6303a2",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C8",
+      "claim": "Collective group migration is ubiquitous in living systems, such as navigation, foraging, and range expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Collective group migration, as an important class of coordinated behaviors, is ubiquitous in living systems, such as navigation, foraging, and range expansion (Krause et al., 2002; Partridge, 1982; Sumpter, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "88058d7e-b954-48ae-bf90-0d33a18ffac1",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C9",
+      "claim": "In the presence of individual heterogeneity, the migrating group often exhibits spatially ordered arrangements of phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of individual heterogeneity, the migrating group often exhibits spatially ordered arrangements of phenotypes (Krause et al., 2002; Parrish and Edelstein-Keshet, 1999; Partridge, 1982; Sumpter, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "f1c57e78-160c-4165-bb3a-038909470d61",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C10",
+      "claim": "In animal group migration, individual behavioral abilities would result in social hierarchy, which further drives the spatial arrangement in a coordinated group.",
+      "claim_type": "EXPLICIT",
+      "source": "In animal group migration, individual behavioral abilities (e.g., directional sensitivity) would result in social hierarchy, which further drives the spatial arrangement in a coordinated group (Couzin et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "c13b1c39-d58a-463e-8e29-fb877601f6e4",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C11",
+      "claim": "Spatial arrangements can lead to different costs and benefits for the individuals participating in the group migration.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, spatial arrangements can lead to different costs and benefits for the individuals participating in the group migration (Krause, 1994; Parrish and Edelstein-Keshet, 1999; Partridge, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "404f79f5-95cb-4816-8efd-66efb8e24af9",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C12",
+      "claim": "Participating individuals must follow disciplinary rules to organize themselves into coordinated patterns while on the move, which requires complex computational abilities to interact with the group and the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Participating individuals must follow disciplinary rules to organize themselves into coordinated patterns while on the move, which requires complex computational abilities to interact with the group and the environment (Couzin and Krause, 2003; Couzin et al., 2002; Vicsek and Zafeiris, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "69e8165b-5419-4c3c-99dc-ff10686924c4",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C13",
+      "claim": "Escherichia coli can exhibit both individualistic behaviors and collective migratory patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemotactic microbe, Escherichia coli, provides a simple model to address the emergence of collective decision-making among diverse population, as it can exhibit both individualistic behaviors (Dufour et al., 2016; Frankel et al., 2014; Kussell and Leibler, 2005; Waite et al., 2016; Waite et al., 2018) and collective migratory patterns (Adler, 1966a; Fu et al., 2018; Keller and Segel, 1971a, Wolfe and Berg, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "f4462deb-63c1-4467-aa52-7713fcac96ae",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C14",
+      "claim": "Individual E. coli cells perform run-and-tumble random motions by spontaneously switching the rotating direction of flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual cells perform run-and-tumble random motions by spontaneously switching the rotating direction of flagella (Berg, 2004; Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "3b3dca48-f526-4836-b797-8b441a02d30c",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C15",
+      "claim": "E. coli cells can facilitate the chemotaxis pathway to control the switching frequency to bias their motions toward their favorable direction along the chemoattractant gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells can facilitate the chemotaxis pathway to control the switching frequency to bias their motions toward their favorable direction along the chemoattractant gradient, where the efficiency to climb the gradient is defined as the chemotactic ability (\u03c7) (Celani and Vergassola, 2010; Dufour et al., 2014; de Gennes, 2004; Si et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "4d6fe339-c5a7-4b10-9cc2-e8cb572e6734",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C16",
+      "claim": "The chemotactic abilities of individual cells exhibit substantial phenotypic heterogeneity even for the clonal bacterial population.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the chemotactic abilities of individual cells exhibit substantial phenotypic heterogeneity even for the clonal bacterial population, which diversifies the chemotactic response to identical signals (Spudich and Koshland, 1976; Waite et al., 2016; Waite et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "3fe30062-1319-48f5-bfc6-2ae833e64982",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C17",
+      "claim": "The E. coli population can migrate as a coherent group by following a self-generated attractant gradient, via consumption of the whole population.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the stochastic solitary behavior and variations in phenotypic ability, the E. coli population can migrate as a coherent group by following a self-generated attractant gradient, via consumption of the whole population (Adler, 1966a; Saragosti et al., 2011; Wolfe and Berg, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "abd5d597-5b05-4bc5-9505-f776f19a7537",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C18",
+      "claim": "The migratory group forms a stable pattern of phenotypes sorted by their chemotactic abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "The migratory group form a stable pattern of phenotypes sorted by their chemotactic abilities (Figure 1A), which is believed to maintain phenotypic diversity in the group (Fu et al., 2018; Waite et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "237d2c3d-27da-43fb-a226-f51701a122ef",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C19",
+      "claim": "Behavior modulation helps migrating bacteria to maintain a consistent group.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a previous study showed that behavior modulation helps migrating bacteria to maintain a consistent group (Saragosti et al., 2011), how individuals with phenotypic variations manage to determine their relative positions in the group remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "ae34e5b4-b626-45d0-9ba0-f134c1b3d035",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C20",
+      "claim": "The bacterial density profile is stable in the moving coordinate z=x\u2212VGt.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial density profile \u03c1z is stable (black solid line) in the moving coordinate z=x \u2212 VGt.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "0cc13496-6b3f-428c-9f4d-fae24465e50f",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C22",
+      "claim": "Cells at the back of the group tended to run forward, compared with cells in other regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample runs of bacteria aligned by their initial positions (black dots) from the three regions (defined by colored regions in B) showed that cells at the back of the group tended to run forward, compared with cells in other regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "81bef76e-6d4e-497e-9431-f7b522b0e5df",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C23",
+      "claim": "The exponential distributions of forward runs and backward runs suggested the increasing efficiency of runs from the back to the front.",
+      "claim_type": "EXPLICIT",
+      "source": "The exponential distributions of forward runs (solid lines) and backward runs (dashed lines) suggested the increasing efficiency of runs from the back to the front.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "98db9ec9-430b-44d4-ac96-2389605ab5c3",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C25",
+      "claim": "VD(z) crossing with the average group velocity VG implied that bacteria perform mean reversion motions.",
+      "claim_type": "EXPLICIT",
+      "source": "VD (z) crossing with the average group velocity VG (black dashed line), implied that bacteria perform mean reversion motions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F and is an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "2196ffb1-795c-44cc-8cce-08c8967bb06f",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C26",
+      "claim": "The time evolution of the average position of cells starting from the back, middle, and front of the migration group confirmed the reversion behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The time evolution of the average position (z, solid lines) of cells starting from the back, middle, and front of the migration group (color code was defined in B) confirmed the reversion behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1G with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "e9838be5-5194-48c7-b2d3-2062dde8b55f",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C28",
+      "claim": "The group velocity VG was constant over time, VG\u223c3.0\u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the group velocity VG=\u3008\u0394xi(t)/\u0394t\u3009 was constant over time, VG\u223c3.0\u03bcm/s (Appendix 1\u2014figure 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data in Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "32934f8d-2ab8-4af4-b579-96a540cc1b3e",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C29",
+      "claim": "The average instantaneous velocity, VI(z)=\u27e8\u0394xi(z)/\u0394t\u27e9, was constant along the density profile \u03c1(z).",
+      "claim_type": "EXPLICIT",
+      "source": "We first checked that the average instantaneous velocity, VI(z)=\u27e8\u0394xi(z)/\u0394t\u27e9, was constant along the density profile \u03c1(z) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "696cb72f-f7bb-4c1d-a0f0-1fccd268fc43",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C30",
+      "claim": "The runs in the front were longer but distributed more uniformly in terms of the directionality, whereas the runs in the back were shorter but more oriented toward the group migration direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the sample events initiated from the back (b), middle (m), and front (f) of the migration group, we observed that the runs in the front were longer but distributed more uniformly in terms of the directionality, whereas the runs in the back were shorter but more oriented toward the group migration direction (Figure 1C, Appendix 1\u2014figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1C and Appendix 1\u2014figure 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "471ed3c0-57b5-4a7f-bfb6-1006e1dc58f9",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C31",
+      "claim": "The statistics of run length (and duration) displayed exponential distributions with the means for the direction of group migration longer than those for the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, the statistics of run length (and duration) displayed exponential distributions with the means for the direction of group migration longer than those for the opposite direction (Figure 1D, Appendix 1\u2014figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1D and Appendix 1\u2014figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "0bba0c1a-4583-45ec-aef9-4e15eeaa7c46",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C32",
+      "claim": "Cells in the back showed greater directional persistence toward the migration direction.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that cells in the back showed greater directional persistence toward the migration direction (Appendix 1\u2014figure 4A\u2013C), as (Saragosti et al., 2011) reported previously.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section, shown in Appendix 1\u2014figure 4A\u2013C, and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "a712273c-a1af-47f6-a075-a2a4812aa31a",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C33",
+      "claim": "The bacteria in the back run more effectively toward the direction of group migration than those in the front.",
+      "claim_type": "EXPLICIT",
+      "source": "All these results suggested that the bacteria in the back run more effectively toward the direction of group migration than those in the front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental observations in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "756c5a4a-5391-4fb1-9226-ddc999ac6cec",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C34",
+      "claim": "The mean reverting behavior results in sub-diffusion of individuals relative to the group.",
+      "claim_type": "EXPLICIT",
+      "source": "Such mean reverting process also results in sub-diffusion of individuals relative to the group (Appendix 1\u2014figure 3F), for which the mean square displacement (MSD) is constrained over time (Appendix 1\u2014figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Appendix 1\u2014figure 3F and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "df772bfa-4d0f-4644-a1b1-d4bbf88ac37f",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C36",
+      "claim": "The expected drift velocity VD(z) represents the drift velocity driven by the external stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the run duration is explicitly modulated by the gradient of chemoattractant gz and is dependent on the chemotactic ability \u03c7 , VD(z)=\u03c7gz represents the drift velocity driven by the external stimuli (Celani and Vergassola, 2010; de Gennes, 2004; Dufour et al., 2014; Si et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "aa2d48ee-d72a-4c14-bb0d-4d94a5ce9b4d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C37",
+      "claim": "The Langevin-type model describes bacterial motions as an active Brownian particle driven by the expected drift velocity VD and a random force: dx=VDdt+\u03f5dW.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand how the spatially structured profile of the drift velocity VD impacts on the group migration, we first adopted a Langevin-type model that describes bacterial motions as an active Brownian particle driven by the expected drift velocity VD and a random force: dx=VDdt+\u03f5dW (Berg, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "ade3d283-e781-42ad-a275-791355dd5a4f",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C38",
+      "claim": "The stochastic description of bacterial motions has been proven equivalent to the classic Keller-Segel (KS) model that described the population dynamics of bacterial chemotactic group migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a stochastic description of bacterial motions has been proven equivalent to the classic Keller-Segel (KS) model that described the population dynamics of bacterial chemotactic group migration (Keller and Segel, 1971a, Rosen, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "8c050d09-e552-4362-8c39-035ce4b21d8d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C40",
+      "claim": "These two 'forces' constrain the random motions of individuals in an effective potential well U(z).",
+      "claim_type": "EXPLICIT",
+      "source": "These two 'forces' constrain the random motions of individuals in an effective potential well Uz (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and illustrated in Figure 2A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "8e94ddf2-687f-4f98-891b-266007e0f077",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C41",
+      "claim": "The perceived gradient g(z) is deduced from S(z), which is further calculated from the experimentally measured density profile.",
+      "claim_type": "EXPLICIT",
+      "source": "The perceived gradient g(z) (blue line) is deduced from S(z), which is further calculated from the experimentally measured density profile (Appendix 1\u2014figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 2 caption and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "625fb592-5790-4c88-9e18-00f7f34b91ad",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C42",
+      "claim": "The perceived gradient g(z) is almost linear in the main part of the wave profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the perceived gradient gz is almost linear in the main part of the wave profile, we approximated it by gz\u2248g0+g1z (Figure 2B, dashed line)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "d50d4dac-5a58-4400-8b9b-21ccfd6e8baf",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C47",
+      "claim": "Behind the balanced position, cells experience a pushed force to catch up the group.",
+      "claim_type": "EXPLICIT",
+      "source": "Behind the balanced position, cells experience a pushed force to catch up the group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "b1db6624-bb9f-4c6f-84eb-88f7f53da877",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C48",
+      "claim": "Cells would start to fall back once they exceed the balanced position, where the driving force becomes negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells would start to fall back once they exceed the balanced position, where the driving force becomes negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "b8263985-0d08-452f-9b43-a06335c6714c",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C49",
+      "claim": "The decreasing profile of the driving force enables cells to perform mean reverting behaviors around the balanced position.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the decreasing profile of the driving force enable cells to perform mean reverting behaviors around the balanced position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "24f51ea8-9be6-44e5-af23-b2f3c8215e2c",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C50",
+      "claim": "The expected rate that cells tend to revert back to the balanced position is defined by the slope of the spatially dependent driving force, r=\u03c7g1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the expected rate that cells tend to revert back to the balanced position is defined by the slope of the spatially dependent driving force, r=\u03c7g1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "7aa77667-fc87-4396-ac3e-bbfa8af5c515",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C51",
+      "claim": "The OU model has an equivalent form, known as the Fokker-Planck equation (Equation S19) which describes the spatial-temporal dynamics of cell density distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The OU model (Equation 1) which describes the single-cell stochastic motions has an equivalent form, known as the Fokker-Planck equation (Equation S19) which describes the spatial-temporal dynamics of cell density distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a mathematical relationship.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "b8c57a2a-36ef-4ff2-8ef0-2306c3f4ca21",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C53",
+      "claim": "The effective driving force has a negative slope (g1<0).",
+      "claim_type": "EXPLICIT",
+      "source": "From the solution, we noted that the effective driving force, as well as the drift velocity, has a negative slope (g1<0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation from the model solution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "5b944fd2-40e6-4e8e-92d2-abfcd87fcde2",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C54",
+      "claim": "The decreasing profile of the drift velocity suggests that the leading front of the group migrates as a pushed wave front.",
+      "claim_type": "EXPLICIT",
+      "source": "The decreasing profile of the drift velocity suggests that the leading front of the group migrates as a pushed wave front (Gandhi et al., 2016; van Saarloos, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "eb0b9c69-d20b-415f-812a-9d9323886e51",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C55",
+      "claim": "As a key feature of the pushed wave, the leading front of the group drops parabolically, which is much faster than that of diffusion front.",
+      "claim_type": "EXPLICIT",
+      "source": "As a key feature of the pushed wave, the leading front of the group drops parabolically, which is much faster than that of diffusion front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a characteristic of pushed waves.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "24f4ed98-d7f9-44bf-a23a-f98a578a1c16",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C56",
+      "claim": "The pushed wave leads to a tight density profile of group migration for a single phenotype population.",
+      "claim_type": "EXPLICIT",
+      "source": "This further leads to a tight density profile of group migration for a single phenotype population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a consequence of the pushed wave.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "78fce1ad-5534-4188-943c-eb0dc43ac7e9",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C57",
+      "claim": "Given a monotonically decreasing profile of perceived gradient g(z), the driving force that each phenotypic individual experiences exhibits the same spatial dependency with the slopes depend on the intrinsic phenotypic properties of each phenotype ri=\u03c7ig1.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a monotonically decreasing profile of perceived gradient gz , the driving force that each phenotypic individual experiences exhibits the same spatial dependency with the slopes depend on the intrinsic phenotypic properties of each phenotype ri=\u03c7ig1 .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an extension of the model to diverse phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "4706eb9f-7179-44c7-a5cb-68706faa68b5",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C58",
+      "claim": "The balanced positions z0 of the diverse phenotypes are orderly arranged.",
+      "claim_type": "EXPLICIT",
+      "source": "This monotonic dependency means that the balanced positions z0 of the diverse phenotypes are orderly arranged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a consequence of the monotonic dependency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "18ead87c-bda4-4f7e-b85e-08b01d5b614e",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C59",
+      "claim": "Each phenotypic population migrates at a constant speed VG, following the moving gradient g(z).",
+      "claim_type": "EXPLICIT",
+      "source": "By the stochastic Langevin-type model with phenotypic diversity in chemotactic ability, we first confirmed that each phenotypic population migrates at a constant speed VG , following the moving gradient gz (see supplementary text).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by supplementary text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "09901737-7381-4955-8c14-d7f3a0ce8fab",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C60",
+      "claim": "The density profiles of cells with different \u03c7i follow the same shape but are spatially orderly aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "The density profiles of cells with different \u03c7i follow the same shape but are spatially orderly aligned (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "9cd2d88a-4a7c-4878-ae93-5183c50273aa",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C62",
+      "claim": "The balanced positions z0,i of different phenotypes increase with their chemotactic abilities \u03c7i.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the OU model, the balanced positions z0,i of different phenotypes increase with their chemotactic abilities \u03c7i (Figure 2E, black line)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "80086de9-1a38-477b-b252-dc40447163c9",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C63",
+      "claim": "The standard deviation (\u03c3i) of the density profiles decreases with \u03c7i.",
+      "claim_type": "EXPLICIT",
+      "source": "while the standard deviation (\u03c3i) of the density profiles decreases with \u03c7i (Figure 2E, blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "13554504-c8ee-439f-9ee3-8502b2de3963",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C64",
+      "claim": "Under the spatially decreasing driving force, cells with phenotypic diversity perform the same type of mean reverting processes with spatially ordered mean positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, under the spatially decreasing driving force, cells with phenotypic diversity perform the same type of mean reverting processes with spatially ordered mean positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "4a3e6604-cfab-4904-90f2-d77be1a2204a",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C65",
+      "claim": "Each phenotypic subpopulation propagates as a pushed wave front.",
+      "claim_type": "EXPLICIT",
+      "source": "By close examination of the density profile, we found that each phenotypic subpopulation propagates as a pushed wave front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "10d19c58-1bd9-48f0-b387-097dbe99dc66",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C66",
+      "claim": "Simulation reveals a pushed wave front for the combination of these subpopulations with different chemotactic abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "We further calculated the total density profile of the entire migratory group with Gaussian distribution of chemotactic abilities under a decreasing linear gradient. Simulation reveals a pushed wave front for the combination of these subpopulations with different chemotactic abilities (Figure 2F, insert).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2F insert.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "ca855c20-6304-4e86-af16-0b494367fc6c",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C67",
+      "claim": "The width of the entire group maintains in a converged width over long time, suggesting that the pushed wave profile enables the migratory population with diversity to keep in a tight shape.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we checked that the width of the entire group maintains in a converged width over long time, suggesting that the pushed wave profile enables the migratory population with diversity to keep in a tight shape (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "74c30cc9-1d40-44b6-817f-0d1325173847",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C69",
+      "claim": "Under a constant perceived gradient, each subpopulation migrates in different group speeds, suggesting a compact group migration of diverse population cannot be maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the drift velocity would vary by the chemotactic ability, each subpopulation migrates in different group speeds, suggesting a compact group migration of diverse population cannot be maintained in a constant perceived gradient (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2G.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "ec1aefb0-4c37-4bf4-b414-7b07b63b18aa",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C70",
+      "claim": "When imposed to a spatially increasing driving force (a pulled wave), individual cells display super-diffusion processes and the density profile easily diverges.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter case, when imposed to a spatially increasing driving force (a pulled wave, by definition), individual cells display super-diffusion processes. The density profile easily diverges in this case (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2H.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "a434c9f2-a117-4c2c-95f8-c95c38e01532",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C71",
+      "claim": "The pushed wave front, driven by a decreasing shape of driving force, enables a spatially ordered and compact pattern of phenotypes while on the move.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we concluded that the pushed wave front, driven by a decreasing shape of driving force, enables a spatially ordered and compact pattern of phenotypes while on the move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the model comparisons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "13c61912-3fb9-4e04-a359-b7c6df18c02e",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C72",
+      "claim": "A dense band of migrating cells that follow a self-generated moving chemoattractant gradient via consumption were recaptured as experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, a dense band of migrating cells that follow a self-generated moving chemoattractant gradient via consumption were recaptured as experiments (Appendix 1\u2014figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Appendix 1\u2014figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "81af5ef6-fc21-44a7-8958-a8df1d1602a7",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C73",
+      "claim": "The phenotypes were spatially ordered as \u03c7 varies.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypes were spatially ordered as \u03c7 varies (Appendix 1\u2014figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Appendix 1\u2014figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "1ddc7d6c-a141-4e89-a08c-abb721ae4412",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C74",
+      "claim": "The velocity profile of each phenotype decreases from the back to front as predicted by the OU-type model.",
+      "claim_type": "EXPLICIT",
+      "source": "and the velocity profile of each phenotype decreases from the back to front (Appendix 1\u2014figure 6C) as predicted by the OU-type model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Appendix 1\u2014figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "a33919c7-f9a5-474a-98bc-00edb4f94ba7",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C79",
+      "claim": "Cells of each phenotype perform sub-diffusion, whereby the MSD along the migration coordinate relative to the group was bound at a level negatively correlated to \u03c7.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, cells of each phenotype perform sub-diffusion, whereby the MSD along the migration coordinate relative to the group was bound at a level negatively correlated to \u03c7 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "e144f178-26e9-44ab-ab96-393d28d9bf37",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C80",
+      "claim": "The width of the density distribution decreased with the reversion rate, as an approximate linear function.",
+      "claim_type": "EXPLICIT",
+      "source": "The width of the density distribution, as an effect of the reversion force, decreased with the reversion rate, as an approximate linear function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "48f570fe-c724-4422-808e-865776bc690d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C81",
+      "claim": "The chemotaxis ability of bacteria was determined by the expression level of Tar.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiments, the expression level of Tar (a chemoattractant receptor protein) was titrated by the concentration of external inducer (aTc). The chemotactic ability \u03c7 of bacteria was then determined by the expression level of Tar (Adler, 1969).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 4 caption and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "e48a878f-0fb0-4dd5-955e-2b1bfb64e277",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C82",
+      "claim": "The chemotaxis ability increases with aTc concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the migration speed of the bacterial range expansion to quantify the chemotaxis ability of the titrated strains, we found that the chemotaxis ability increases with aTc concentration (see Materials and methods and Appendix 1\u2014figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Appendix 1\u2014figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "65677780-0c88-4740-9da0-60fa16ccc092",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C84",
+      "claim": "As the Tar expression level (chemotactic ability) increased, the slope of the decreasing pattern increased.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, as the Tar expression level (chemotactic ability) increased, the slope of the decreasing pattern increased, which was consistent with the model prediction shown in Figure 3A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and compared with model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "100a7b6b-275a-4dca-ad46-96ad983d3b42",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C85",
+      "claim": "The intersections between VD,i(z) and VG, as well as the peak positions and mean positions of each Tar-titrated density profile, shifted toward the front as the chemotactic ability increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The intersections between VD,i(z) and VG , as well as the peak positions and mean positions of each Tar-titrated density profile (Figure 4C), shifted toward the front as the chemotactic ability increased (as measured by the migration rate on agar plates; Cremer et al., 2019; Liu et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "0782f344-7fd5-4dfb-b02e-910ad6fe9341",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C86",
+      "claim": "The VD cross point was always behind the peak position and the mean position, suggesting that cells were leaking behind.",
+      "claim_type": "EXPLICIT",
+      "source": "The VD cross point was always behind the peak position and the mean position (Figure 4C), suggesting that cells were leaking behind.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "3817020d-f4ea-4822-85e2-a0e562f1f07d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C87",
+      "claim": "The width of each Tar-titrated density profile (defined by 2\u03c3i) decreased as the reversion rate ri increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the width of each Tar-titrated density profile (defined by 2\u03c3i) decreased as the reversion rate ri increased (Figure 4D), consistent with the model results in Figure 3C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "c3c27dd4-ac51-4044-be57-9233a261587c",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C88",
+      "claim": "The width of the density profile is controlled by the reversion rate determined by the chemotactic ability \u03c7i.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as the OU-type model predicts, the width of the density profile is controlled by the reversion rate determined by the chemotactic ability \u03c7i .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "76ecb7e3-cc93-4f6f-b89c-b2326069bb2f",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C89",
+      "claim": "The collective consumption of attractant by bacterial group generates a spatial structure of individual drift velocity along the migrating group profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrated that the collective consumption of attractant by bacterial group generates a spatial structure of individual drift velocity along the migrating group profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "437468e2-c2fc-4e49-9d30-c1f42d71d65d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C90",
+      "claim": "Such a spatial profile of drift velocity results a pushed wave front on population level, and maintains diverse phenotypes in a compact migration group.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a spatial profile of drift velocity results a pushed wave front on population level, and maintains diverse phenotypes in a compact migration group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "790d0420-ce95-40c2-a968-9faa6778aeec",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C91",
+      "claim": "This pushed wave front enables spatial modulation of individuals to perform mean reverting random motions around centers sequentially aligned by their chemotactic abilities, thereby giving rise to a spatially ordered pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this pushed wave front enables spatial modulation of individuals to perform mean reverting random motions around centers sequentially aligned by their chemotactic abilities, thereby giving rise to a spatially ordered pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "a4c8fdb2-5490-4314-a8c4-8cf665c5177b",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C92",
+      "claim": "The population order could emerge among diverse individuals that following the same rule of behavioral modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we demonstrated that the population order could emerge among diverse individuals that following the same rule of behavioral modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "17f26eaa-204a-481b-805a-771bb441ec98",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C93",
+      "claim": "This strategy of self-organization does not require sophisticated communications nor other hydrodynamic interactions among individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy of self-organization does not require sophisticated communications (Curatolo et al., 2020; Karig et al., 2018; Liu et al., 2011; Payne et al., 2013) nor other hydrodynamic interactions (Chen et al., 2017; Drescher et al., 2011; Zhang et al., 2010) among individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "ff85c188-d5e7-45ad-b922-6e1882d4ec9d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C94",
+      "claim": "The observation of the decreasing drift velocity can imply the effective perceived gradient that cells experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation of the decreasing drift velocity can imply the effective perceived gradient that cells experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "b7ed01ee-d65b-4ff9-ba1a-dcadc9f2b519",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C95",
+      "claim": "The spatial profile of drift velocity is mainly contributed by the consumption of the chemoattractant.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that this spatial profile is mainly contributed by the consumption of the chemoattractant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "80d5a855-6080-4269-b60d-78d491ae390a",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C96",
+      "claim": "The Tar-only strain (UU1624) could generate a stable group migration in the experimental condition similar to the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a Tar-only strain (UU1624) (Gosink et al., 2006), we demonstrated that the mutant could also generate a stable group migration in our experimental condition similar to the wild-type strain (Appendix 1\u2014figure 9G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and shown in Appendix 1\u2014figure 9G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "3ab75f36-98b9-4ca5-8d59-493f98e010d1",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C97",
+      "claim": "The secretion of self-attractants is unlikely a necessary condition of collective group migration.",
+      "claim_type": "EXPLICIT",
+      "source": "This further suggests that the secretion of self-attractants is unlikely a necessary condition of collective group migration (Cremer et al., 2019; Fu et al., 2018; Keller and Segel, 1971a), although there are doubts about the existence of self-attractants in high density (Budrene and Berg, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "b82ff557-8ff4-41c5-b8da-d90f93d7306c",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C98",
+      "claim": "The spatially dependent drift velocity provides a structured driving force of a migration group, resulting a pushed wave front.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatially dependent drift velocity provides a structured driving force of a migration group, resulting a pushed wave front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "c01962ba-a25b-49fe-9bcb-471244fa6560",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C99",
+      "claim": "Pushed and pulled waves are determined by the spatial distribution of the spreading velocity of a propagation front.",
+      "claim_type": "EXPLICIT",
+      "source": "Pushed and pulled waves are determined by the spatial distribution of the spreading velocity of a propagation front (van Saarloos, 2003; Figure 2F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "f88df602-e273-4541-acd9-1efb8fbe570f",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C100",
+      "claim": "By direct measurement of drift velocity on single-cell level, we identified the chemotactic migration group of bacteria as a pushed wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by direct measurement of drift velocity on single-cell level, we identified the chemotactic migration group of bacteria as a pushed wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "53a28428-9299-4a21-8869-70c47f2290ea",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C101",
+      "claim": "The spatially decreasing profile of driving force does not only cause an ordered pattern of phenotypes, but also results a pushed wave front that enables a negative feedback control on the propagating speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatially decreasing profile of driving force does not only cause an ordered pattern of phenotypes, but also results a pushed wave front that enables a negative feedback control on the propagating speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "0385cd90-b8b1-4d48-8b2f-1a6e0cbe928d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C102",
+      "claim": "This further allows a compact density profile for heterogenous population to migrate at the collective level.",
+      "claim_type": "EXPLICIT",
+      "source": "This further allows a compact density profile for heterogenous population to migrate at the collective level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "9157ca3c-b24a-478e-a173-3ecb9b47f24d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C103",
+      "claim": "The advantageous to keep diversity in the pushed wave front was also reported in the growth-driven range expansion system.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantageous to keep diversity in the pushed wave front was also reported in the growth-driven range expansion system (Birzu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "7d5d1c41-5906-4d99-8fd0-1d13e51c356d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C104",
+      "claim": "The direct modulation of individual drift velocity in space could also maintain diversity in range expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study revealed that, other than spatial regulation of fitness, the direct modulation of individual drift velocity in space could also maintain diversity in range expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "22e98c0b-e91f-40a0-a633-916e85874d06",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C105",
+      "claim": "Cells could skip the potential wells from the back because the 'driving force' decreased again at the far back of the group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is noteworthy that cells could skip the potential wells from the back because the 'driving force' decreased again at the far back of the group (Long, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "93f69353-a4ae-4732-9486-23f7933c04da",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C106",
+      "claim": "This results in leakage of cells in the migratory group.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in leakage of cells in the migratory group (Holz and Chen, 1978; Novickcohen and Segel, 1984; Scribner et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "5c379515-c906-4875-8212-1e3afecb0e46",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C107",
+      "claim": "Phenotypes with weaker chemotactic abilities were located at the back of the group, where the effective potential well was shallower, allowing for more chances to skip.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypes with weaker chemotactic abilities were located at the back of the group, where the effective potential well was shallower (Figure 3C), allowing for more chances to skip.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and shown in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "88a8183b-520c-4ad1-b1e4-c4631921e143",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C108",
+      "claim": "Such collective migration selects bacteria with higher chemotactic abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, such collective migration selects bacteria with higher chemotactic abilities (Liu et al., 2021; Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "fa9f8d2d-2794-42b2-8f99-2a87c85f8877",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C109",
+      "claim": "The simple computational principle of behavioral modulation to allocate different phenotypes in the collective group is likely not limited to sensing the self-generated signal by consumption of attractant.",
+      "claim_type": "EXPLICIT",
+      "source": "The simple computational principle of behavioral modulation to allocate different phenotypes in the collective group is likely not limited to sensing the self-generated signal by consumption of attractant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "cb9ecc92-23a2-4f57-89bd-33d222b19545",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C110",
+      "claim": "Individuals tracing the accumulated signal secreted by all participants can reproduce similar spatial-temporal dynamics of behavioral modulation, as well as ordered arrangements of phenotypes in the migratory group.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent example of trail-following migration (Couzin and Krause, 2003; Helbing et al., 1997) and a typical class of collective behavior is represented by a modified Langevin-type model, where individuals tracing the accumulated signal secreted by all participants (Equation S20) can reproduce similar spatial-temporal dynamics of behavioral modulation, as well as ordered arrangements of phenotypes in the migratory group (Appendix 1\u2014figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and shown in Appendix 1\u2014figure 10.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "b09b0b81-a801-4f1a-9916-606c63dbb5b1",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "claim_id": "C111",
+      "claim": "This mechanism of matching individual abilities by the signal strength might provide an explanation of how other higher organisms organize ordered structures during group migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this mechanism of matching individual abilities by the signal strength might provide an explanation of how other higher organisms organize ordered structures during group migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Individual bacteria exhibit spatially structured drift velocities during group migration, with cells at the back running more effectively toward the migration direction than those at the front, resulting in mean-reverting behavior and sub-diffusion relative to the group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20-C34 collectively provide strong experimental evidence from single-cell tracking (Figure 1) showing that drift velocity decreases from back to front, cells exhibit position-dependent run characteristics, and perform mean-reverting motions. The data includes density profiles, velocity measurements, run length distributions, and trajectory analysis that converge on this central finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "52dc0fff-e487-4d13-868e-686484e8128a",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The decreasing drift velocity profile implies spatial modulation of run-and-tumble motions and enables the bacterial population to migrate as a pushed wave front, as demonstrated through Langevin-type and Ornstein-Uhlenbeck modeling frameworks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C56 establish the theoretical framework linking experimental observations to pushed wave dynamics. The OU model (C37-C51) provides mathematical justification for how decreasing drift velocity creates an effective potential well that constrains individual motions. The identification as a pushed wave (C53-C56) is supported by both model predictions and consistency with experimental data, though direct experimental validation of the parabolic front profile would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "ba0d823d-6596-45c3-99f5-2d005e3e5731",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The pushed wave front enables diverse phenotypes to stay in a tight group while performing mean-reverting processes around centers orderly aligned by their chemotactic abilities, as predicted by theoretical analysis and simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C67 demonstrate through OU model analysis and simulations (Figure 2C-F) that phenotypes with different chemotactic abilities \u03c7 maintain spatial order with balanced positions increasing with \u03c7 and density profile widths decreasing with \u03c7. The convergence of group width over time (C67) provides key evidence that the pushed wave maintains population cohesion despite diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "6786c3bf-85b8-4e73-9967-9928b16f9578",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Compact group migration of diverse populations cannot be maintained under constant or increasing perceived gradients; only the pushed wave front driven by decreasing driving force enables spatially ordered and compact phenotype patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 use comparative simulations (Figure 2G-H) to demonstrate that alternative gradient profiles fail to maintain group cohesion. Under constant gradient, subpopulations migrate at different speeds; under increasing gradient, super-diffusion causes divergence. This negative control strengthens the conclusion that the decreasing gradient is necessary for the observed ordered migration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Experimental titration of bacterial chemoreceptor (Tar) abundance demonstrates that cells with higher chemotactic ability exhibit steeper drift velocity slopes, shift toward the front of the migration group, and have narrower density profiles, confirming the predicted mechanism of ordered collective migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C81-C88 provide direct experimental validation using Tar-titrated strains (Figure 4). The systematic variation in aTc concentration produces predictable changes in spatial positioning, drift velocity slopes, and density profile widths that match model predictions. The consistency between experimental measurements and theoretical predictions (C84, C87) strongly supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "cbe6714c-ee7a-4f74-ad21-a421cf98c171",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Agent-based simulations incorporating chemotactic pathway details, multi-flagella competition, and 3D boundary effects recapitulate experimental observations of dense migrating bands with spatially ordered phenotypes and decreasing velocity profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C80 demonstrate that more detailed agent-based models (Appendix 1 figures 6-7, Figure 3) reproduce key experimental findings including spatial ordering, velocity profiles, and sub-diffusion behavior. The agreement between simplified OU models and detailed agent-based simulations strengthens confidence in the theoretical framework, though the manuscript notes these simulations are in supplementary materials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Collective consumption of attractant generates spatial structure in individual drift velocity, resulting in a pushed wave front that maintains diverse phenotypes through behavioral modulation without requiring sophisticated communications or hydrodynamic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C95 synthesize the main findings in the Discussion. The conclusion that consumption drives the spatial gradient structure (C89, C95) is supported by the experimental system design and model assumptions, though C95 is explicitly labeled as speculation. The claim that sophisticated communication is not required (C93) is reasonable given the demonstrated mechanism, but alternative explanations involving cell-cell interactions have not been explicitly ruled out experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "819c4a50-4c64-4c80-998b-4e2c957eb0a2",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A Tar-only mutant strain generates stable group migration similar to wild-type, suggesting that secretion of self-attractants is unlikely a necessary condition for collective group migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 provide experimental evidence (Appendix 1 figure 9G) that the Tar-only strain UU1624 exhibits similar migration behavior to wild-type. This supports the interpretation that consumption of externally provided attractant, rather than self-secreted attractants, drives the observed dynamics. However, the claim is appropriately cautious ('unlikely a necessary condition') given that this is a single mutant test.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Direct single-cell measurement identifies bacterial chemotactic migration as a pushed wave, which provides negative feedback control on propagating speed and allows compact migration of heterogeneous populations, similar to mechanisms in growth-driven range expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C104 contextualize the findings within the broader literature on pushed/pulled waves. The identification as a pushed wave (C100) is supported by the drift velocity measurements. The comparison to growth-driven systems (C103-C104) appropriately positions this work as revealing an alternative mechanism for maintaining diversity. The claims about negative feedback (C101) and compact migration (C102) follow logically from the established pushed wave dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "a10a60a2-16c3-40df-ba07-92df731f0b8d",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cells can skip potential wells from the back where driving force decreases, resulting in cell leakage that selectively retains bacteria with higher chemotactic abilities in the migratory group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108 explain an important limitation of the system - that weaker phenotypes are more likely to be lost from the group. This is supported by the observation that potential wells are shallower at the back (Figure 3C) and citations to prior work on cell leakage. The selective pressure for higher chemotactic ability (C108) is a logical consequence, though direct experimental demonstration of this selection over multiple generations is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "da38b178-6e2e-48f8-a716-b996338f9ffb",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The computational principle of behavioral modulation may extend beyond consumption-based gradients to trail-following migration, potentially explaining ordered structures in higher organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C111 propose broader applicability of the mechanism through a modified Langevin model for trail-following (Appendix 1 figure 10). While the simulation shows similar dynamics can emerge, these claims are explicitly speculative ('likely not limited', 'might provide an explanation'). No experimental validation in other systems is provided, and the generalization to higher organisms with more complex cognitive abilities requires substantial additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    },
+    {
+      "id": "d565cb22-dd1b-442a-9760-4ca6820d7a25",
+      "content_id": "b4e733bf-b977-43b3-96b6-cb02d324b066",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context establishing that collective migration with spatial ordering is widespread in biological systems, E. coli exhibits both individual and collective behaviors, and the mechanism by which phenotypic variations determine spatial positions remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C19 provide literature-supported background establishing the biological context and knowledge gaps. These claims are well-cited and accurately represent prior work on collective behavior in animals (C8-C12) and bacterial chemotaxis (C13-C19). The framing appropriately motivates the study by identifying that while spatial ordering is known, the individual-level mechanisms were not understood.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:27.408893Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "91e7db3b-ec64-4d60-ad47-6059f12d5cd8",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "ae34e5b4-b626-45d0-9ba0-f134c1b3d035",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "0cc13496-6b3f-428c-9f4d-fae24465e50f",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "81bef76e-6d4e-497e-9431-f7b522b0e5df",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "98db9ec9-430b-44d4-ac96-2389605ab5c3",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "2196ffb1-795c-44cc-8cce-08c8967bb06f",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "e9838be5-5194-48c7-b2d3-2062dde8b55f",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "32934f8d-2ab8-4af4-b579-96a540cc1b3e",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "696cb72f-f7bb-4c1d-a0f0-1fccd268fc43",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "471ed3c0-57b5-4a7f-bfb6-1006e1dc58f9",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "0bba0c1a-4583-45ec-aef9-4e15eeaa7c46",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "a712273c-a1af-47f6-a075-a2a4812aa31a",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "756c5a4a-5391-4fb1-9226-ddc999ac6cec",
+      "result_id": "0c6136b2-5f6f-474d-b186-26e3d45ff15b"
+    },
+    {
+      "claim_id": "368e6d91-d788-40e5-8bf0-13437a7c8d7d",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "6a785080-e1dc-4b91-a95e-8cf280c3a1d0",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "df772bfa-4d0f-4644-a1b1-d4bbf88ac37f",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "aa2d48ee-d72a-4c14-bb0d-4d94a5ce9b4d",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "ade3d283-e781-42ad-a275-791355dd5a4f",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "8c050d09-e552-4362-8c39-035ce4b21d8d",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "8e94ddf2-687f-4f98-891b-266007e0f077",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "625fb592-5790-4c88-9e18-00f7f34b91ad",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "d50d4dac-5a58-4400-8b9b-21ccfd6e8baf",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "b1db6624-bb9f-4c6f-84eb-88f7f53da877",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "b8263985-0d08-452f-9b43-a06335c6714c",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "24f51ea8-9be6-44e5-af23-b2f3c8215e2c",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "7aa77667-fc87-4396-ac3e-bbfa8af5c515",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "b8c57a2a-36ef-4ff2-8ef0-2306c3f4ca21",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "5b944fd2-40e6-4e8e-92d2-abfcd87fcde2",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "eb0b9c69-d20b-415f-812a-9d9323886e51",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "24f4ed98-d7f9-44bf-a23a-f98a578a1c16",
+      "result_id": "52dc0fff-e487-4d13-868e-686484e8128a"
+    },
+    {
+      "claim_id": "00d11e28-bf15-4d63-a8ec-d9b97f9247d8",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "2fb914ca-16ee-427c-b4a0-0cfa1a647528",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "78fce1ad-5534-4188-943c-eb0dc43ac7e9",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "4706eb9f-7179-44c7-a5cb-68706faa68b5",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "18ead87c-bda4-4f7e-b85e-08b01d5b614e",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "09901737-7381-4955-8c14-d7f3a0ce8fab",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "9cd2d88a-4a7c-4878-ae93-5183c50273aa",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "80086de9-1a38-477b-b252-dc40447163c9",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "13554504-c8ee-439f-9ee3-8502b2de3963",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "4a3e6604-cfab-4904-90f2-d77be1a2204a",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "10d19c58-1bd9-48f0-b387-097dbe99dc66",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "ca855c20-6304-4e86-af16-0b494367fc6c",
+      "result_id": "ba0d823d-6596-45c3-99f5-2d005e3e5731"
+    },
+    {
+      "claim_id": "74c30cc9-1d40-44b6-817f-0d1325173847",
+      "result_id": "6786c3bf-85b8-4e73-9967-9928b16f9578"
+    },
+    {
+      "claim_id": "ec1aefb0-4c37-4bf4-b414-7b07b63b18aa",
+      "result_id": "6786c3bf-85b8-4e73-9967-9928b16f9578"
+    },
+    {
+      "claim_id": "a434c9f2-a117-4c2c-95f8-c95c38e01532",
+      "result_id": "6786c3bf-85b8-4e73-9967-9928b16f9578"
+    },
+    {
+      "claim_id": "18f81842-929a-4d03-8615-295f29fda073",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "48f570fe-c724-4422-808e-865776bc690d",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "e48a878f-0fb0-4dd5-955e-2b1bfb64e277",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "65677780-0c88-4740-9da0-60fa16ccc092",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "100a7b6b-275a-4dca-ad46-96ad983d3b42",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "0782f344-7fd5-4dfb-b02e-910ad6fe9341",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "3817020d-f4ea-4822-85e2-a0e562f1f07d",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "c3c27dd4-ac51-4044-be57-9233a261587c",
+      "result_id": "50e3a5f3-f9df-4809-aa9c-0927f84b75ef"
+    },
+    {
+      "claim_id": "13c61912-3fb9-4e04-a359-b7c6df18c02e",
+      "result_id": "cbe6714c-ee7a-4f74-ad21-a421cf98c171"
+    },
+    {
+      "claim_id": "81af5ef6-fc21-44a7-8958-a8df1d1602a7",
+      "result_id": "cbe6714c-ee7a-4f74-ad21-a421cf98c171"
+    },
+    {
+      "claim_id": "1ddc7d6c-a141-4e89-a08c-abb721ae4412",
+      "result_id": "cbe6714c-ee7a-4f74-ad21-a421cf98c171"
+    },
+    {
+      "claim_id": "a33919c7-f9a5-474a-98bc-00edb4f94ba7",
+      "result_id": "cbe6714c-ee7a-4f74-ad21-a421cf98c171"
+    },
+    {
+      "claim_id": "e144f178-26e9-44ab-ab96-393d28d9bf37",
+      "result_id": "cbe6714c-ee7a-4f74-ad21-a421cf98c171"
+    },
+    {
+      "claim_id": "76ecb7e3-cc93-4f6f-b89c-b2326069bb2f",
+      "result_id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb"
+    },
+    {
+      "claim_id": "437468e2-c2fc-4e49-9d30-c1f42d71d65d",
+      "result_id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb"
+    },
+    {
+      "claim_id": "790d0420-ce95-40c2-a968-9faa6778aeec",
+      "result_id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb"
+    },
+    {
+      "claim_id": "a4c8fdb2-5490-4314-a8c4-8cf665c5177b",
+      "result_id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb"
+    },
+    {
+      "claim_id": "17f26eaa-204a-481b-805a-771bb441ec98",
+      "result_id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb"
+    },
+    {
+      "claim_id": "ff85c188-d5e7-45ad-b922-6e1882d4ec9d",
+      "result_id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb"
+    },
+    {
+      "claim_id": "b7ed01ee-d65b-4ff9-ba1a-dcadc9f2b519",
+      "result_id": "ff82b9df-a796-4f64-8f26-b6b86cca48eb"
+    },
+    {
+      "claim_id": "80d5a855-6080-4269-b60d-78d491ae390a",
+      "result_id": "819c4a50-4c64-4c80-998b-4e2c957eb0a2"
+    },
+    {
+      "claim_id": "3ab75f36-98b9-4ca5-8d59-493f98e010d1",
+      "result_id": "819c4a50-4c64-4c80-998b-4e2c957eb0a2"
+    },
+    {
+      "claim_id": "b82ff557-8ff4-41c5-b8da-d90f93d7306c",
+      "result_id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd"
+    },
+    {
+      "claim_id": "c01962ba-a25b-49fe-9bcb-471244fa6560",
+      "result_id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd"
+    },
+    {
+      "claim_id": "f88df602-e273-4541-acd9-1efb8fbe570f",
+      "result_id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd"
+    },
+    {
+      "claim_id": "53a28428-9299-4a21-8869-70c47f2290ea",
+      "result_id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd"
+    },
+    {
+      "claim_id": "0385cd90-b8b1-4d48-8b2f-1a6e0cbe928d",
+      "result_id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd"
+    },
+    {
+      "claim_id": "9157ca3c-b24a-478e-a173-3ecb9b47f24d",
+      "result_id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd"
+    },
+    {
+      "claim_id": "7d5d1c41-5906-4d99-8fd0-1d13e51c356d",
+      "result_id": "3bf1305c-d32c-4e37-a672-b5d6380d4edd"
+    },
+    {
+      "claim_id": "22e98c0b-e91f-40a0-a633-916e85874d06",
+      "result_id": "a10a60a2-16c3-40df-ba07-92df731f0b8d"
+    },
+    {
+      "claim_id": "93f69353-a4ae-4732-9486-23f7933c04da",
+      "result_id": "a10a60a2-16c3-40df-ba07-92df731f0b8d"
+    },
+    {
+      "claim_id": "5c379515-c906-4875-8212-1e3afecb0e46",
+      "result_id": "a10a60a2-16c3-40df-ba07-92df731f0b8d"
+    },
+    {
+      "claim_id": "88a8183b-520c-4ad1-b1e4-c4631921e143",
+      "result_id": "a10a60a2-16c3-40df-ba07-92df731f0b8d"
+    },
+    {
+      "claim_id": "fa9f8d2d-2794-42b2-8f99-2a87c85f8877",
+      "result_id": "da38b178-6e2e-48f8-a716-b996338f9ffb"
+    },
+    {
+      "claim_id": "cb9ecc92-23a2-4f57-89bd-33d222b19545",
+      "result_id": "da38b178-6e2e-48f8-a716-b996338f9ffb"
+    },
+    {
+      "claim_id": "b09b0b81-a801-4f1a-9916-606c63dbb5b1",
+      "result_id": "da38b178-6e2e-48f8-a716-b996338f9ffb"
+    },
+    {
+      "claim_id": "44054b78-c7eb-43e3-bf38-e36c8a5c2549",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "3621e65b-87a3-44b5-b99e-0465ad6303a2",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "88058d7e-b954-48ae-bf90-0d33a18ffac1",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "f1c57e78-160c-4165-bb3a-038909470d61",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "c13b1c39-d58a-463e-8e29-fb877601f6e4",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "404f79f5-95cb-4816-8efd-66efb8e24af9",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "69e8165b-5419-4c3c-99dc-ff10686924c4",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "f4462deb-63c1-4467-aa52-7713fcac96ae",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "3b3dca48-f526-4836-b797-8b441a02d30c",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "4d6fe339-c5a7-4b10-9cc2-e8cb572e6734",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "3fe30062-1319-48f5-bfc6-2ae833e64982",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "abd5d597-5b05-4bc5-9505-f776f19a7537",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    },
+    {
+      "claim_id": "237d2c3d-27da-43fb-a226-f51701a122ef",
+      "result_id": "d565cb22-dd1b-442a-9760-4ca6820d7a25"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In H3N2 viruses from 2005-2014, phylogenetic tree similarity between vRNA segments varies widely, with PB1-PA showing the highest similarity (RF=6, CID=0.25) and robust parallel evolution observed between PB1, PA, NP, and NA segments. Surprisingly, PB2 showed highest similarity with NA rather than with other polymerase subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 provide consistent evidence from multiple distance metrics (RF and CID) showing specific patterns of vRNA segment relationships. The data are well-supported by Figure 2 with appropriate statistical thresholds established via null distributions. The unexpected PB2-NA relationship is clearly documented and reproducible across metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C4",
+      "C73"
+    ],
+    "result": "Phylogenetic relationships between vRNA segments in H3N2 viruses are largely conserved across two time periods (1995-2004 and 2005-2014), with tree distances showing positive correlation between time periods and only the NS segment showing statistical differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate temporal conservation through positive correlation (Figure 3B) and statistical comparison showing only NS differences. However, the authors acknowledge NS trees have consistently low bootstrap support, which weakens interpretation of NS-related findings. The overall conclusion of conservation is well-supported for other segments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C3",
+      "C72"
+    ],
+    "result": "Parallel evolution between vRNA segments differs significantly between H1N1 and H3N2 subtypes, with tree distances from H1N1 viruses showing either modest negative correlation or no correlation with H3N2 viruses from either time period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by linear regression analyses (Figures 4B-C, 5\u2014figure supplement 3) showing lack of correlation between subtypes. This demonstrates subtype-specific vRNA relationships, though the biological mechanisms underlying these differences remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C5",
+      "C51"
+    ],
+    "result": "Intersegmental relationships diverged significantly between pre-pandemic (2000-2008) and post-pandemic (2010-2018) H1N1 lineages, with specific shifts including displacement of PB1-NP parallel evolution by PB1-NA coevolution and increased coevolution of M and NS with HA and NA in post-pandemic viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 document specific changes in vRNA relationships between H1N1 lineages with statistical support (Figure 5C). The authors appropriately note that some findings may be affected by weaker bootstrap support in post-pandemic H1N1 trees, but the overall pattern of divergence is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C59",
+      "C60",
+      "C61",
+      "C6",
+      "C74"
+    ],
+    "result": "Parallel evolution between vRNA segments cannot be attributed solely to protein-coding mutations, as several vRNA segment pairs (including PB2-NA) show significantly greater gene tree similarity than protein tree similarity, suggesting RNA-RNA interactions drive some evolutionary relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 are supported by systematic comparison of gene vs protein tree distances (Figure 6). The observation that some pairs lie significantly below the identity line provides evidence for protein-independent evolution. However, alternative explanations like purifying selection are acknowledged but not definitively ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C8",
+      "C75"
+    ],
+    "result": "PB2 and NA vRNA segments preferentially colocalize at the nuclear periphery during H3N2 virus infection, with PB2-NA vRNP complexes enriched over NA-NS or PB2-NS complexes within 300 nm of the nucleus, validating the phylogenetic prediction of RNA-RNA interactions between these segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by quantitative microscopy data (Figure 7D) showing statistically significant enrichment of PB2-NA colocalization (p<0.05). The experimental design appropriately focuses on perinuclear regions where assembly intermediates form. This provides direct experimental validation of the phylogenetic predictions, though causality between colocalization and evolutionary constraint is inferred rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C7",
+      "C80",
+      "C81"
+    ],
+    "result": "RNA-RNA interactions, in addition to protein interactions, are drivers of parallel evolution between vRNA segments in seasonal human influenza viruses, with implications for understanding selective assembly mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C7, C80-C81 represent the main conclusions integrating phylogenetic and experimental evidence. The conclusion is well-supported by the combination of protein-independent tree similarity patterns and experimental validation of PB2-NA colocalization. However, the mechanistic link between RNA interactions and evolutionary constraint remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "A clustering approach using 97% sequence identity cutoff was developed to select representative strains that produce phylogenetic trees with improved bootstrap support, though NS trees remained largely unsupported regardless of cutoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C87-C89 describe methodological decisions that are clearly justified. The 97% cutoff balanced cluster number with bootstrap support. The persistent lack of NS tree support is acknowledged as a limitation and appropriately affects interpretation of NS-related findings throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Statistical thresholds for tree similarity were established using null distributions of randomly generated trees, with 95% confidence intervals of RF=15.3 for 12-leaf trees (H3N2) and RF=8.6 for 9-leaf trees (H1N1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 and C17-C19 describe the statistical framework using Robinson-Foulds distance and establish appropriate null distributions (Figure 2\u2014figure supplement 3). This provides a rigorous basis for determining which tree similarities are unlikely to occur by chance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C21",
+      "C28",
+      "C29"
+    ],
+    "result": "The phylogenetic tree similarity approach successfully captures known protein-protein interactions, as demonstrated by high similarity between PB1 and PA trees (RF=6), which encode interacting polymerase subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C21, C28-C29 demonstrate that the method can detect expected relationships based on known protein interactions. This serves as a positive control validating the approach, though it is a relatively straightforward validation of an established relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C85",
+      "C86"
+    ],
+    "result": "Whole cytoplasmic analysis of H3N2-infected A549 cells at 8 hours post-infection revealed that the majority of cytoplasmic foci contained all three vRNA segments (PB2, NA, NS) analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C85-C86 describe experimental observations from FISH-IF microscopy. The finding is clearly stated and supported by Figure 7C, though the authors appropriately note this likely represents heterogeneity in assembly stages and is less informative than the perinuclear analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In protein tree analysis of H3N2 viruses, HA and NA showed the greatest parallel evolution and were the only vRNA pair lying significantly above the identity line when comparing gene and protein distances, supporting known epistatic interactions between these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 confirm expected HA-NA protein coevolution, which is well-established in the literature. This serves as another validation of the approach but represents confirmation of known biology rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C37"
+    ],
+    "result": "Relationships between PB1, PA, NP, and NA are enriched over other segments in H3N2 viruses and conserved over time, suggesting these may represent core assembly relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C37 summarize a key pattern observed in H3N2 viruses. This is well-supported by the data in Figures 2-3 and network analyses, representing a novel finding about conserved vRNA relationships in H3N2 viruses.",
+    "result_type": "MAJOR"
+  }
+]

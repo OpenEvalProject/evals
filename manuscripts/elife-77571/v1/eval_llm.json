@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C137",
+      "C138"
+    ],
+    "result": "The study analyzed resting-state EEG data from 2,529 participants aged 5-22 years from the HBN dataset and validated findings in an independent preregistered sample of 369 participants aged 6-22 years. Both datasets underwent standardized preprocessing and spectral analysis of eyes-closed EEG recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C115-C124, C137-C138 collectively describe a well-documented experimental design with large sample sizes, standardized methods, and independent validation. The preregistration (C137) and detailed methodological descriptions provide strong support for the study design and data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C49",
+      "C56",
+      "C57"
+    ],
+    "result": "Total alpha power decreased with age (b=-0.31, CI=[-0.38,-0.24]), replicating well-documented findings. The age effect on individualized alpha power (accounting for IAF changes) showed an effect size three times larger than canonical alpha power, indicating that canonical frequency bands underestimate developmental changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31, C49, C56-C57 provide converging evidence from statistical analyses showing age-related decreases in total alpha power with appropriate effect sizes and confidence intervals. The comparison between individualized and canonical measures (C56) strengthens the methodological validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C62",
+      "C108"
+    ],
+    "result": "When controlling for the aperiodic signal component, aperiodic-adjusted alpha power significantly increased with age (b=0.23, CI=[0.16, 0.30]). This finding was consistent across the main HBN sample, the healthy subsample, and the independent validation dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, C62, C108 demonstrate robust age-related increases in aperiodic-adjusted alpha power with consistent replication across multiple samples and preregistered validation. The statistical evidence with confidence intervals and cross-sample consistency strongly support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C42",
+      "C63",
+      "C64",
+      "C112"
+    ],
+    "result": "Relative alpha power showed a significant age-related increase in the large HBN sample (b=0.14, CI=[0.06, 0.22]) but failed to reach significance in smaller samples (validation dataset and healthy subsample), indicating potential false-negative risk in typical sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33, C42, C63-C64, C112 provide evidence that relative alpha power effects are sample-size dependent. The failure to replicate in smaller samples (C42, C63) combined with statistical evidence from the large sample (C33) supports the conclusion about statistical power limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C34",
+      "C35"
+    ],
+    "result": "Both the aperiodic intercept (b=-0.54, CI=[-0.61,-0.48]) and slope (b=-0.44, CI=[-0.51,-0.38]) significantly decreased with increasing age during brain maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C34-C35 present clear statistical evidence with appropriate confidence intervals for age-related decreases in both aperiodic parameters. The effect sizes and statistical significance support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C38",
+      "C39",
+      "C66"
+    ],
+    "result": "The aperiodic intercept and slope were highly correlated with each other (r=0.89) and with total alpha power (intercept: r=0.83, slope: r=0.63), while showing much weaker correlations with aperiodic-adjusted alpha power (intercept: r=0.33, slope: r=0.35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C38-C39, C66 provide specific correlation coefficients demonstrating the strong relationship between aperiodic components and total alpha power versus the weaker relationship with aperiodic-adjusted measures. These correlational analyses support the confounding interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C61",
+      "C65"
+    ],
+    "result": "Aperiodic-adjusted and relative alpha power showed weaker associations with aperiodic indices compared to total alpha power, but relative alpha power underestimated maturational changes (b=0.14) compared to aperiodic-adjusted alpha power (b=0.23). The authors recommend preferring aperiodic-adjusted alpha power for developmental studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C61, C65 provide comparative statistical evidence showing that aperiodic-adjusted alpha power captures larger developmental effects than relative alpha power. The recommendation (C65) is supported by the empirical comparison and simulation studies referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C111"
+    ],
+    "result": "The study challenges previous interpretations that total alpha power decreases reflect synaptic pruning, proposing instead that synaptic elimination relates to decreases in the aperiodic intercept rather than periodic alpha power. Changes in total alpha power are driven primarily by aperiodic signal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C67-C70, C111 present a reinterpretation of previous findings based on the decomposition analysis. The high correlations between total alpha power and aperiodic components (C66-C67) combined with the opposite age trajectories of total versus aperiodic-adjusted alpha power support this reinterpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C44",
+      "C71",
+      "C72",
+      "C73",
+      "C113"
+    ],
+    "result": "Aperiodic-adjusted alpha power showed significant positive associations with white matter integrity of both left and right thalamic radiations, even after controlling for age and total intracranial volume. This relationship was not observed for total alpha power, suggesting that increased aperiodic-adjusted alpha power reflects development of thalamocortical connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C44, C71-C73, C113 provide converging evidence from DTI analyses showing specific associations between aperiodic-adjusted alpha power and thalamocortical connectivity. The control for age and intracranial volume (C73) and the absence of effects for total alpha power (C44) strengthen the specificity of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "No significant associations were found between thalamic volume and any alpha power measures after controlling for age and total intracranial volume. The authors speculate that alpha power changes relate to improved thalamocortical connectivity rather than anatomical changes in the thalamus itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C75-C77 report null findings for thalamic volume with appropriate statistical controls. The speculation (C76-C77) is clearly identified as such and is reasonable given the positive connectivity findings. The null result is appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C47",
+      "C48",
+      "C83",
+      "C85",
+      "C114"
+    ],
+    "result": "Both relative and aperiodic-adjusted alpha power showed significant positive associations with Flanker task performance (measuring attentional control) after controlling for age and gender. Total alpha power showed a smaller effect that did not survive multiple comparison correction, suggesting that increased thalamic control of cortical alpha power is linked to improved attentional performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C47-C48, C83, C85, C114 provide behavioral validation with appropriate statistical controls. The differential effects across alpha power measures (C48) and the convergence with the thalamocortical connectivity findings support the functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C43"
+    ],
+    "result": "Females showed overall less power in total, relative, and aperiodic-adjusted alpha and lower aperiodic intercept and slope in the HBN sample, but these gender effects did not replicate in the validation sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36 and C43 present contradictory findings across samples. While gender effects were observed in the large HBN sample (C36), they failed to replicate in the validation sample (C43), raising questions about the generalizability of these effects. The inconsistency prevents a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Despite the large proportion of participants with psychiatric diagnoses in the samples, categorical diagnosis did not show significant effects on oscillatory or aperiodic parameters in either dataset. Control analyses using only healthy subsamples showed results consistent with the full samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C100-C104 address a potential confound and demonstrate through multiple approaches (categorical predictors, healthy subsample analyses) that psychiatric diagnoses do not substantially affect the main findings. The consistency across analyses supports this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C74"
+    ],
+    "result": "No significant associations were found between aperiodic intercept/slope and thalamic radiations, and total alpha power showed no significant relation to anatomical thalamic measures, suggesting total alpha power is confounded by aperiodic components or non-neurophysiological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C74 report null findings that are interpretable in the context of the positive findings for aperiodic-adjusted alpha power. The pattern of results (positive for aperiodic-adjusted, null for total and aperiodic components) supports the interpretation about confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Post hoc simulations demonstrated that changes in power in other frequency bands and changes in the aperiodic signal can induce changes in relative alpha power even when true oscillatory alpha power remains constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 describe simulation results that support the methodological concerns about relative alpha power. While the simulations are referenced as being in the appendix, they provide important validation for the interpretation of empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "The study demonstrates that accounting for alpha peak frequency and aperiodic signal components is essential for assessing age-related changes in spectral power during brain maturation. Significant aperiodic variation during childhood and adolescence confounds earlier work, and canonical frequency bands render age-related changes in IAF and power inseparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107, C109-C110 present overarching conclusions supported by the multiple specific findings throughout the study. The decomposition approach reveals confounds in previous methods and provides explanations for ambiguous prior results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study employed rigorous methods including individualized alpha frequency determination (7-14 Hz search window), specparam algorithm for spectral decomposition (mean R\u00b2=0.9943), parieto-occipital electrode cluster analysis, and Bayesian generalized linear models with appropriate multiple comparison corrections (\u03b1=0.0083, 99.17% CIs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 describe methodological details that are well-documented and appropriate. The high model fit (C128), justified electrode selection (C129), and proper statistical corrections (C131) support the validity of the analytical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The decrease in aperiodic intercept may reflect either non-neural changes (skull thickening) or reduced parieto-occipital spiking activity related to synaptic pruning (40% of synapses eliminated in striate cortex). However, MEG studies showing similar effects argue against the skull thickness explanation. An alternative explanation is that intercept decreases result from the high correlation with slope flattening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C91 present multiple competing explanations for the aperiodic intercept decrease. While the MEG evidence (C87) argues against skull thickness, and synaptic pruning is supported by citations (C89-C90), the alternative mathematical explanation (C91) complicates interpretation. The authors appropriately acknowledge uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The flattening of the aperiodic slope may reflect increases in neural noise during brain development, related to changes in excitation-inhibition balance and more asynchronous neural activation. While this seems contradictory to aging research linking neural noise to cognitive decline, increased neural noise may have beneficial effects during brain maturation by enhancing functional network potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C99 present a speculative interpretation with supporting citations but acknowledge the apparent contradiction with aging research (C97). The proposed beneficial role of neural noise in development (C98-C99) is plausible but requires additional validation. The interpretation is clearly marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The observed increase in individual alpha frequency (IAF) during brain maturation may represent the neurophysiological correlate of increased speed of information processing, which has been linked to better sensorimotor abilities, memory performance, and reaction times. This may relate to developmental increases in myelination and axon size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 synthesize previous literature (C50-C53) with the current findings to propose a mechanistic interpretation (C54-C55). The interpretation is well-supported by multiple citations and represents a reasonable integration of the IAF findings with known developmental changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Thalamocortical connectivity has been linked to attention and working memory performance across the lifespan (aging and infancy), and these cognitive functions are associated with alpha oscillation amplitude. The findings suggest that maturational increases in thalamic regulation of cortical alpha power may relate to improvements in attentional performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 integrate previous literature (C78-C81) with the current findings to support a functional interpretation (C82). The convergence of evidence from different age groups and the link between alpha power and attention provide reasonable support for this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "DTI data was processed using FSL 6.0.4 with the DESIGNER pipeline, and automated fiber-tract quantification (AFQ) was used to extract fractional anisotropy values along thalamic radiations. T1-weighted scans were preprocessed with FreeSurfer 6.0.0 for volumetric segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 describe standard neuroimaging preprocessing methods with appropriate software versions and established pipelines. The methods are well-documented and appropriate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The Flanker task from the NIH Toolbox Cognition Battery was used to measure inhibitory control and visual selective attention, requiring participants to focus on a central stimulus while suppressing information from surrounding congruent or incongruent stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 describe a well-established behavioral task with appropriate citation. The task description is accurate and the measure is appropriate for assessing attentional performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The introduction establishes that childhood and adolescence involve fundamental neural reorganization, that conventional alpha power measures are confounded by multiple factors requiring decomposition into periodic and aperiodic components, and that previous studies on aperiodic-adjusted alpha power during development have yielded inconsistent results. No prior studies have examined the relationship between thalamic maturation and alpha power during this developmental period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C30 provide comprehensive background from established literature with appropriate citations. The claims accurately represent prior work and identify gaps in knowledge that motivate the current study. The literature review is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Relative alpha power should be preferred over total alpha power because total alpha power is more dependent on non-neurophysiological changes such as skull thickness and skin conductivity and is consequently less reliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 represents established methodological knowledge supported by citations to previous work. However, this recommendation is superseded by the study's own findings showing that aperiodic-adjusted alpha power is preferable to both total and relative measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Contrary to findings based on total alpha power, aperiodic-adjusted individualized alpha power increased during brain maturation and is likely related to increased thalamocortical connectivity, with functional links to improved attentional performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 synthesizes the major findings of the study. This summary conclusion is well-supported by the convergence of evidence from EEG analyses (C32, C62), DTI findings (C44, C71-C73), and behavioral correlations (C47, C83).",
+    "result_type": "MAJOR"
+  }
+]

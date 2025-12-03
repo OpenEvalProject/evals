@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Correcting for cell cycle dynamics and post-transcriptional noise significantly alters transcriptional parameter estimates. Cell cycle correction decreases promoter switching rates and initiation rate while increasing the fraction of active time and burst size (C5-C7). Additional correction for post-transcriptional noise further increases burst size and substantially reduces parameter estimation errors (C8-C9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are supported by experimental data comparing parameter estimates from merged vs. cell-cycle-specific data and mature vs. nascent mRNA distributions. The findings are quantified and validated through comparison with live-cell imaging autocorrelation functions (C10, C74-C75), providing strong convergent evidence for the impact of these corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Synthetic data analysis demonstrates that nascent mRNA inference is more accurate than mature mRNA inference, especially in the presence of external noise. With 5% external noise, nascent mRNA provides more accurate estimates for 64% of parameter sets, increasing to 91% with 10% external noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by systematic synthetic data analysis across 789 parameter sets. The findings are quantified and show a clear trend of improved accuracy with nascent data as noise increases, validating the theoretical advantage of using nascent mRNA for parameter inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cell segmentation methods significantly impact transcriptional parameter estimates from mature mRNA data. Segmentation 1 resulted in missed spots and underestimation of mean and variance (C54), while the two methods yielded similar burst frequency estimates but considerably different estimates for other parameters (C55), with segmentation 1 suggesting ~20% ON time versus segmentation 2 suggesting ~50% ON time (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are directly supported by experimental comparison of two independent segmentation tools shown in Figure 3. The quantitative differences in parameter estimates demonstrate the sensitivity of inference to technical processing choices, highlighting an important source of potential bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C69",
+      "C70"
+    ],
+    "result": "Merged data versus cell-cycle-specific data yield dramatically different transcriptional parameter estimates. Merged data suggests the gene is ON 50% of the time with small burst sizes (C60), while cell-cycle-specific data indicates ~80% ON time with large burst sizes (C61). Fano factors are consistently larger for merged data (C69), leading to the conclusion that ignoring cell cycle phase causes overestimation of OFF time and Fano factor (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C69-C70 are supported by experimental data from four independent datasets analyzing both mature and nascent mRNA. The consistency of findings across data types and the validation through autocorrelation function comparison with live-cell data (C74-C75) provide strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Using mature mRNA data instead of nascent mRNA data leads to underestimation of burst size and higher parameter variability. Burst size estimates were 2.6-fold, 2.6-fold, and 1.1-fold lower for merged, G1, and G2 data respectively when using mature mRNA (C71). Parameter variability was ~2.5-fold lower for nascent data (C72), likely because nascent data lacks post-transcriptional noise (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by direct quantitative comparison of parameter estimates from mature and nascent mRNA data across four independent datasets. The explanation that nascent data avoids post-transcriptional noise (C73) is a reasonable inference consistent with the biological nature of nascent versus mature mRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Cell-cycle-specific parameter estimates produce autocorrelation functions (ACFs) that better match live-cell data compared to merged data estimates. The sum of squared residuals was consistently smaller for cell-cycle-specific estimates across all four datasets (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by quantitative comparison shown in Figures 4d-e. This validation against independent live-cell measurements provides strong evidence that cell-cycle-specific inference yields more accurate parameter estimates, as ACF comparison tests the dynamic predictions of the inferred parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C77",
+      "C91"
+    ],
+    "result": "Gene dosage compensation occurs upon DNA replication through regulation of burst frequency. From mature mRNA data, \u03c3_on and \u03c1 decreased by 65% and 21% respectively upon replication (C65). From nascent data, \u03c3_on and f_ON decreased by 41% and 5% respectively (C77). The conclusion that dosage compensation involves burst frequency regulation remained consistent across correction methods (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C77, C91 are supported by quantitative comparison of G1 and G2 parameter estimates from both mature and nascent mRNA data. The consistency of burst frequency reduction across data types and the citation of similar findings in mammalian cells (C66) strengthen this conclusion. However, the exact mechanism and magnitude differ between mature and nascent data analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The fusion method for correcting experimental artifacts in nascent mRNA data produces more reliable parameter estimates than the rejection method or uncorrected data. The rejection method yielded worse ACF fits despite good histogram fits (C85), while the fusion method better captured the zero bin peak (C87) and reduced ACF residuals for all datasets (C88), leading to the conclusion that nascent cell-cycle-specific data corrected by fusion is optimal (C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C85, C87-C89 are supported by systematic comparison of correction methods validated against live-cell ACF data. The fusion method's superiority is demonstrated through both distribution fitting quality and ACF agreement. The identification of the artifact source (C82-C83) and the validation approach are methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "The optimal parameter estimates indicate GAL10 exhibits long ON times of 75 seconds with large bursts of ~50 RNAs (C92-C93), suggesting the gene is approaching maximal expression (C95). The ON time exceeds the single transcript residence time of 47 seconds, meaning polymerases from early in a burst leave before the burst completes (C97-C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C95, C97-C98 are supported by the optimal parameter estimates from fusion-corrected, cell-cycle-specific nascent data (Figure 6d). The inference about maximal expression (C95) is reasonable given the high active fraction (0.78) and the known high expression of GAL10 (C96). The temporal comparison (C97-C98) is a straightforward calculation from the estimated parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Approximately 90% of detected cytoplasmic spots had intensities within 0.5-1.5\u00d7 median (C50), indicating minimal spot overlap. However, mature mRNA counts were lower than expected from nascent counts (C51), likely because PP7 loops destabilize GAL10 RNA causing faster turnover (C52), as changes in 5' UTR affect degradation machinery recognition (C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by experimental data analysis (Figure 4a) and citations to previous studies. The spot intensity distribution analysis (C50) provides evidence against overlapping spots as a confound. The explanation for lower mature counts (C52-C53) is a reasonable inference supported by multiple citations documenting similar effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C81"
+    ],
+    "result": "Mean mRNA numbers in G2 cells were larger than in G1 cells (C58), with nascent mRNA signal intensity 1.7-fold higher in G2 than G1 (C81), indicating only partial dosage compensation rather than complete compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C81 are directly supported by experimental measurements shown in Figures 3f and 4c. The 1.7-fold increase is less than the expected 2-fold from gene copy doubling, supporting the partial compensation conclusion. This is consistent with the mechanistic findings about burst frequency reduction (C65, C77).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C102"
+    ],
+    "result": "Simulations using parameters from corrected nascent smFISH data produce autocorrelation functions agreeing with live-cell imaging (C10), demonstrating that reasonable estimates matching live-cell measurements can be obtained from nascent mRNA distributions accounting for cell cycle phase (C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C102 are supported by the ACF comparison results shown throughout the paper, particularly Figures 4d-e and 6c. This validation against independent live-cell measurements provides strong evidence for the overall methodology and conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The telegraph model is commonly used to estimate transcriptional rates from mature mRNA distributions (C1, C21), but has limitations including the assumption of one gene copy (C4, C18) and first-order reactions (C19), while mature mRNA fluctuations are affected by post-transcriptional processes (C3), making parameter estimates questionable (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C16-C22 describe established knowledge about the telegraph model and its application, supported by multiple citations. These claims provide the scientific context and motivation for the study. The statement about questionable reliability (C22) is an inference that the entire study validates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Nascent mRNA directly reflects transcription (C29-C30) and requires the delay telegraph model due to non-first-order removal kinetics (C31-C32, C104). The model assumes uniform Pol II distribution along genes (C106-C107), and for PP7-GAL10, fluorescence intensity follows a trapezoidal pulse pattern (C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C103-C107 describe the nascent mRNA measurement approach and mathematical modeling framework, supported by citations and confirmed by simulations (C107). These claims establish the methodological foundation for nascent mRNA analysis and are well-supported by prior work and the authors' simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Transcriptional bursting has been observed for over 40 years (C11-C12) with mechanisms still under investigation (C13). Live-cell imaging enables burst visualization but is challenging (C14-C15). Recent telegraph model extensions have investigated various factors affecting mRNA fluctuations including promoter states, polymerase dynamics, cell-to-cell variability, replication, nuclear export, and cell cycle duration (C23-C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15, C23-C28 provide literature context supported by multiple citations. These claims establish the state of the field and identify gaps that motivate the current study. All statements are properly attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cell cycle effects on transcription are important (C33), but cell-cycle-specific parameter estimation from nascent mRNA has rarely been reported (C34), and studies don't compare nascent and mature mRNA estimates from the same experiment (C35-C36). Nascent mRNA distributions are more technically challenging to acquire and analyze than mature mRNA (C37-C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 identify gaps in the literature and technical challenges, supported by citations. These claims establish the novelty and importance of the current study's comparative approach. The statements about what is lacking in the literature are verifiable from the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Four independent smFISH datasets were obtained from diploid yeast with PP7-GAL10 (C49, C108), grown in galactose media and processed with standard smFISH protocols (C109). Total cell numbers were 2510, 6411, 4592, and 3181 (C110), with G1 cells numbering 766, 2111, 1495, 904 and G2 cells numbering 683, 1657, 1209, 1143 after classification (C111).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C108-C111 describe the experimental design and sample sizes. These are straightforward factual statements about the data collection that are verifiable from the methods section and data availability statement. The sample sizes are adequate for the statistical analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C94",
+      "C96"
+    ],
+    "result": "The findings are consistent with prior studies showing dosage compensation in budding yeast (C80) and large burst sizes in mammalian cells (C94). GAL10 is one of the most highly expressed yeast genes (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C94, C96 place the findings in context of prior literature. C80 and C94 are supported by citations, while C96 is stated as established knowledge about GAL10. These contextual claims help interpret the significance of the results.",
+    "result_type": "MINOR"
+  }
+]

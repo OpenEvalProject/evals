@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Hydra vulgaris is characterized as an emerging model organism for neuroscience with a diffuse nervous system composed of endodermal and ectodermal networks, featuring nerve rings in oral (hypostomal) and aboral (peduncle) regions with distinct neuronal cell types and lower turnover rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C12 collectively establish Hydra's anatomical and molecular characteristics as a model organism. The claims are well-supported by citations to prior work (C5, C6, C7, C12), anatomical descriptions (C8, C9), and single-cell RNA sequencing data (C10, C11, C12) shown in Figure 1. These foundational claims provide context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The microfluidic mechanical stimulation system delivers localized force with most mechanical displacement concentrated within ~250 \u00b5m of the valve center, with negligible displacement beyond 750 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by quantitative tracking of 222 neurons during stimulation (Figure 2\u2014figure supplement 1). The measurements show spatial distribution of mechanical force with statistical confidence intervals (95% CI), demonstrating the locality of the stimulus. This technical validation is essential for interpreting subsequent mechanosensory experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Mechanical stimulation generates calcium signals in neurons throughout the body, with striking co-activation of peduncle nerve ring neurons appearing as single spikes (contraction pulses) or volleys (contraction bursts), and the peduncle ROI faithfully represents individual neuron activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe the basic neural response to mechanical stimulation, supported by calcium imaging data (Figure 2b, Videos 2-3, Figure 2\u2014figure supplement 2). The validation that large ROI measurements correlate with individual neuron tracking (C17-C18) is important for justifying the analysis approach used throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C66"
+    ],
+    "result": "Hydra's mechanosensory response probability depends on stimulus intensity, with strong stimuli (20-25 psi) producing 5\u00d7 higher response probability than spontaneous activity, while weak stimuli (5 psi) produce no response. Strong stimulation increases single-pulse contractions and entrains contraction frequency to match the 31 s inter-stimulus interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24, C66 establish the stimulus-response relationship with quantitative data from N=3 animals per condition (Figure 2e-h). Statistical comparisons are provided with means, SEMs, and significance values. The psychometric function and temporal patterning changes are well-documented, though the sample size is modest (N=3 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The aboral end of Hydra shows lower mechanosensory sensitivity than the mid-body region (response probability 0.1 vs 0.42), independent of animal size, though the same motor program is initiated regardless of stimulation location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate regional differences in mechanosensitivity supported by experiments at different body locations (Figure 2\u2014figure supplement 7). The control for animal size (C26) addresses a potential confound. However, the claim about the \"same motor program\" (C27) is somewhat qualitative and based on observation rather than detailed quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The mechanosensory response is mediated by electrically coupled cells rather than passive calcium diffusion, as evidenced by fast response times (~0.5 s) that are inconsistent with theoretical diffusion times (~100 s) and fast propagation of calcium activity throughout the endoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 present a mechanistic argument supported by response time measurements (Figure 2\u2014figure supplement 8) and theoretical calculations. The comparison between observed response times (0.1-0.6 s) and calculated diffusion times (~100 s) provides strong evidence against passive diffusion. Citation to aneural Hydra studies (C30) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The 6-12 hr recovery period after resection allows wound closure and initial regeneration events but is insufficient for neuronal regeneration (which requires 30-72 hr), as confirmed by qPCR showing loss of specific neuronal cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 establish the experimental timeline for resection studies with supporting citations and qPCR validation (Figure 3\u2014figure supplement 1-2). The qPCR data directly confirms loss of specific neuronal subtypes, addressing a critical control for the resection experiments. The timeline is well-justified by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C70"
+    ],
+    "result": "The aboral peduncle nerve ring is not required for mechanosensory responses or spontaneous contractions, as footless animals show similar response magnitudes and probabilities to whole animals despite removal of this highly active neural network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C70 present a surprising finding supported by quantitative comparisons between footless and whole animals (N=8 for 20 min stimulation, N=3 for 60 min; Figure 3b-c, Figure 3\u2014figure supplement 3). Statistical analysis includes effect sizes (Cohen's d, Cliff's delta) and p-values. This challenges the expected role of the peduncle network based on its correlation with contractions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Removal of the oral hypostome and tentacles (headless Hydra) significantly reduces both mechanosensory response probability (>2\u00d7 lower) and spontaneous contraction probability (>3\u00d7 lower) compared to whole animals, though responses remain significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate the importance of the oral network with quantitative data (N=8 for 20 min, N=3 for 60 min; Figure 3b-c, Figure 3\u2014figure supplement 3). Statistical comparisons show significant reductions with effect sizes. The finding that headless animals retain some response capability is important for understanding network organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Longitudinally bisected animals (removing ~50% of tissue while preserving oral and aboral neuronal subtypes) show intermediate responses between whole and headless animals, demonstrating that the reduced response in headless animals depends on specific neuronal types removed rather than injury per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide an important control for the resection experiments (N=8 for 20 min, N=3 for 60 min; Figure 3, Figure 3\u2014figure supplement 3). The comparison between bisected and headless animals (C44-C45) addresses the alternative explanation that tissue damage causes reduced responses. The inference about network integrity (C47) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C68"
+    ],
+    "result": "Body column animals lacking both oral and aboral nerve rings show the most dramatically reduced mechanosensory responses, with the lowest magnitude increase upon stimulation despite showing significant increases compared to spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C68 demonstrate the cumulative effect of removing both regional networks (N=6 for 20 min, N=3 for 60 min; Figure 3b-c, Figure 3\u2014figure supplement 3-4). The control showing no temporal increase in non-stimulated animals (C51, Figure 3\u2014figure supplement 4) is important for ruling out time-dependent effects. Statistical analysis includes effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C67",
+      "C69",
+      "C77",
+      "C78"
+    ],
+    "result": "Mechanosensory and spontaneous behaviors are regulated by neural ensembles localized to oral and aboral regions that work together in compensatory roles, with sufficient functional redundancy that removal of one region is tolerated, while the body column retains minimal processing capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C67, C69, C77-C78 synthesize the resection experiments into a model of network organization. The conclusions are well-supported by the pattern of results across different resection conditions. However, these are higher-level interpretations that involve inference beyond the direct measurements. The concept of \"compensatory roles\" (C69) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C79"
+    ],
+    "result": "At least two independent neuronal networks mediate mechanosensory responses: contraction burst (CB) neurons showing fast responses (<1 s) throughout the body, and mechanically responsive (MR) neurons in the oral region showing slower responses (~10 s after stimulation) without spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59, C63-C64, C79 identify distinct neuronal networks through single-neuron tracking and correlation analysis (N=3 Hydra; Figure 4). The temporal differences between CB and MR neurons are clear in the data. The identification is based on correlation analysis and stimulus-aligned activity patterns. However, the sample size is small (N=3) and the number of tracked neurons per animal is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Localized touch produces increased calcium activity in both peduncle neurons and endodermal epitheliomuscular cells, associated with body contractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 summarizes the basic observation supported by calcium imaging in both neuronal (Figure 2) and muscle (Figure 3) transgenic lines, with validation from simultaneous electrophysiology (Figure 2\u2014figure supplement 4). This is a well-established finding that integrates multiple experimental approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "MR neurons may consist of ec4 neurons, the only neuronal subtype in the oral end with unknown function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is explicitly speculative (\"It is possible that...\") and based only on anatomical location matching between MR neurons and ec4 neurons. No direct evidence (e.g., cell-type-specific markers, genetic manipulation) is provided to test this hypothesis. This remains an interesting but unvalidated speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The peduncle nerve ring may coordinate body contractions by enhancing neural signals to epithelial cells and may function as motor neurons, supported by calcium propagation from foot to hypostome and reduced contraction duration in body column animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 propose functional roles for the peduncle network. While C72 provides some supporting data (4 s reduction in contraction duration; Figure 3\u2014figure supplement 5) and C73 cites prior work on calcium propagation, claims C71 and C74 are explicitly speculative. The evidence is suggestive but indirect, and alternative explanations are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "A proposed model suggests the hypostome serves as an integration point where sensory and motor information converge, with information then communicated to the peduncle for amplification and coordinated whole-body control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 present a conceptual model based on the experimental findings. While the model is consistent with the data (oral region importance, peduncle correlation with contractions), it involves significant inference beyond direct measurements. The model is explicitly presented as a proposal (\"we propose\") and lacks direct evidence for information flow pathways or the specific roles of \"integration\" and \"amplification.\"",
+    "result_type": "MAJOR"
+  }
+]

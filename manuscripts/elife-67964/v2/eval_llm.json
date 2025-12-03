@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C95",
+      "C96",
+      "C97",
+      "C186",
+      "C187"
+    ],
+    "result": "In yeast, Mediator associates strongly with enhancers but transiently with promoters (lacking the kinase module), whereas in metazoans (human, mouse, fly), Mediator with its kinase module stably associates with promoters but not with activator-binding sites at enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C60-C66, C74-C80, C81, C95-C97, C186-C187 collectively demonstrate species-specific differences in Mediator localization through ChIP-seq data analysis (Figures 1A-C, 2B, 4A). The data show distinct peak locations and distance measurements confirming Mediator associates with promoters (not activator sites) in metazoans, contrasting with yeast behavior. The presence of the kinase module at metazoan promoters is directly supported by ChIP-seq data (C81, Figures 1B-C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C179",
+      "C199"
+    ],
+    "result": "Yeast and metazoans differ fundamentally in the nature of the dynamic bridge of Mediator between activators and Pol II and in the composition of stable inactive PIC-like entities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C179, C199 represent inferences drawn from the observed differences in Mediator behavior documented in the previous result. The inference is well-supported by the comprehensive ChIP-seq data showing contrasting Mediator localization patterns and kinase module association across species, providing a mechanistic explanation for functional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C211",
+      "C212"
+    ],
+    "result": "TAF:TBP occupancy ratios vary considerably among mammalian promoters, indicating TFIID is not monolithic and multiple forms of TBP affect initiation at different gene classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C134-C138, C211-C212 are supported by ChIP-seq data showing variable Taf1:TBP ratios (Pearson = 0.64-0.78) with ~20% of promoters having low Taf1 occupancy (Figures 6, 6C). Gene ontology enrichment for different TAF:TBP ratio groups (C136-C138, C212) demonstrates these variations are not experimental error but reflect biological differences in PIC composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C123",
+      "C124",
+      "C215",
+      "C218"
+    ],
+    "result": "TFIID in Drosophila uniquely shows well-defined binding peaks ~60 bp downstream of TBP, consistent with downstream promoter elements important in that species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C123-C124, C215, C218 are supported by ChIP-seq data (Figure 6A) showing TAF1/TAF2 peaks downstream of TBP in flies but not in yeast or mammals. The connection to downstream promoter elements (DPE, MTE) is supported by cited literature (C124) and represents a reasonable inference linking binding patterns to known promoter architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C156",
+      "C157",
+      "C159",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Taf7 and Med26 interact near the Pol II pause region downstream of the PIC in gene-specific patterns, with Taf7 showing downstream peaks at chromatin organization genes and Med26 at ribosome biogenesis/translation genes, often not co-localizing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C148-C174 are supported by extensive ChIP-seq data (Figures 7, 8) showing: (1) Taf7 downstream peaks in K562/hESC cells (C153-C154, Figure 7E-F), (2) Med26 bimodal distribution (C166-C168, Figure 8A-B), (3) gene-specific enrichment patterns (C159, C169-C170), and (4) complex non-overlapping patterns (C172-C174, Figure 8C). The moderate correlation between Taf7 and Taf1 (Pearson = 0.5, C151) and differential binding at non-coding RNAs (C152) further support distinct behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Mediator and PIC component levels show strong but not strict correlation at mammalian promoters (Pearson 0.65-0.74), with cell line-specific gene categories showing relatively elevated Mediator levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by correlation analysis (Figure 3A) showing strong but imperfect correlations between Med1, Pol II, and TBP. Gene ontology enrichment for promoters with high Mediator:PIC ratios (C88-C90) demonstrates biological significance of the variations, distinguishing them from experimental noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The vast majority of mammalian enhancers have low or non-detectable Mediator levels, with only the top 10,000 enhancers showing Mediator occupancy comparable to promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C92-C94 are supported by median occupancy analysis (Figure 2A) showing dramatically lower Mediator at all enhancers versus top 10,000 enhancers or promoters. Strong correlations between Mediator, Cdk7, and Pol II at enhancers (R=0.6-0.7, C92-C93, Figure 3B) indicate that where Mediator is present at enhancers, it co-localizes with PIC components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117"
+    ],
+    "result": "Pol II occupancy at promoters (primarily at pause sites) strongly correlates with TBP levels (Pearson = 0.8), indicating paused Pol II levels are linked to PIC levels and premature termination is not a major regulatory mechanism at most genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114, C116-C117 are supported by correlation analysis (Figure 5A-D) showing very strong Pol II:TBP correlation (0.8) and even stronger correlation with S5-phosphorylated Pol II (0.87, C113). The lower correlation with S2-phosphorylated Pol II (0.67, C114) and relationship between pausing index and TBP occupancy (C116-C117, Figure 5D) support the inference about pause regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C142",
+      "C143"
+    ],
+    "result": "Taf2:TBP ratios in Drosophila and Taf7:TBP ratios in S. pombe vary significantly across genes with functional enrichment patterns, resembling the TFIID-dependent (housekeeping) versus TFIID-independent (developmental) gene distinction observed in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132, C142-C143 are supported by ChIP-seq data showing variable Taf2:TBP ratios in flies (Figure 6B) and strong Taf7:TBP correlation in S. pombe (Pearson = 0.7, Figure 7A). Gene ontology enrichment for high versus low ratios (C130-C131, C143) demonstrates biological significance and parallels with yeast TFIID dependency patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Some Drosophila promoters show discordant Med1 and Med30 occupancy with gene ontology enrichment, suggesting distinct Mediator subcomplexes or conformations at specific gene classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by ChIP-seq data (Figure 4B, Figure 4\u2014figure supplement 1) showing genes with high Med1/low Med30 or vice versa, with each group showing GO enrichment. This provides evidence for heterogeneous Mediator composition, though the alternative explanation of differential crosslinking efficiency cannot be definitively ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The kinase module associates with most mammalian promoters in correlation with Med1, but is depleted at specific gene classes in certain cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by ChIP-seq data (Figures 1D, 1\u2014figure supplement 1B) showing strong correlation between kinase module subunits (Cdk8, Med12) and Med1 at most promoters, with documented exceptions at translation/ribosome genes in HCT116, chromatin organization in MOLM-14, and histone genes in mouse V6.5 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C195",
+      "C197",
+      "C198"
+    ],
+    "result": "The presence of the kinase module at metazoan promoters suggests a stable, non-functional PIC-like entity, with TFIIH-mediated phosphorylation being relatively slow/inefficient compared to yeast, though the active PIC may still be short-lived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C195, C197-C198 represent speculative inferences about PIC dynamics based on the observed kinase module presence. While the inference is logical given that kinase-containing Mediator cannot interact with Pol II in vitro (C194, supported by citations), direct evidence for PIC lifetime or TFIIH kinetics in metazoans is lacking. The claims are reasonable hypotheses requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C193"
+    ],
+    "result": "The stable association of Mediator with promoters (not enhancers) in metazoans explains why Mediator associates with fewer enhancers than promoters, why Mediator at enhancers requires GTFs, and why enhancer transcription is less efficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C190, C193 represent inferences connecting the observed Mediator localization patterns to functional consequences. These inferences are well-supported by the data showing low Mediator at most enhancers (C70-C73), co-localization with GTFs when present (C92-C94), and the mechanistic requirement for promoter elements to stabilize Mediator-containing PICs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C101",
+      "C178",
+      "C214"
+    ],
+    "result": "Species-specific differences in PIC structure and function likely affect transcriptional regulation, with potential implications for tissue-specific Mediator and TFIID functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17, C101, C178, C214 are speculative statements about functional implications and future directions. While the speculation is reasonable given the documented structural differences, these claims lack direct experimental support for the proposed regulatory consequences. They represent hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

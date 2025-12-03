@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study characterizes two primary GBM cell lines (E26 and E28) harboring EGFR-containing ecDNA with distinct deletions. E26 ecDNA harbor EGFRvIII (exon 2-7 deletion) and E28 have a subpopulation with EGFR exon 7-14 deletion, confirmed by WGS and DNA FISH. E26 has more ecDNA per cell than E28, with ~10% of E26 metaphases showing HSRs. Both lines show 3-6 copies of chromosome 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are well-supported by WGS analysis using AmpliconArchitect (Figure 1A), DNA FISH on metaphase spreads (Figures 1B-E), and quantification showing significant differences in ecDNA copy number between cell lines (p=0.008). The characterization is comprehensive with multiple orthogonal methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C109",
+      "C110"
+    ],
+    "result": "ecDNA are distributed more centrally in the nucleus compared to endogenous chromosomal EGFR loci. In NSCs, EGFR signal is highest at the nuclear periphery (p<0.0001). This peripheral preference is reduced in E28 (p=0.012) and lost in E26 (p=0.06), suggesting ecDNA freed from chromosome 7 constraints can access more central nuclear regions consistent with active transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53, C109-C110 are supported by quantitative radial distribution analysis (Figure 1F-G, Figure 1-supplement 1) with appropriate statistical testing across multiple nuclei (n=66 NSC, 59 E26, 64 E28). The interpretation is consistent with prior literature on nuclear organization and is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C106"
+    ],
+    "result": "EGFR-containing ecDNA do not cluster together at functionally relevant distances (~200 nm) in E26 and E28 GBM cell lines. Distance analysis shows mean shortest interprobe distances >500 nm, single shortest distances of 0.24-0.25 \u03bcm, and Ripley's K function analysis reveals no significant clustering at <300 nm, with only occasional clustering at \u2265400 nm (E26) or \u2265700 nm (E28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34, C56-C61, C106 are strongly supported by multiple quantitative analyses including cumulative frequency distributions (Figure 2B), distance measurements (Figure 2-supplement 1B-E), and rigorous 3D Ripley's K function analysis with 10,000 null simulations and appropriate multiple testing correction (Benjamini-Hochberg, FDR=0.05). Analysis was repeated with smaller spot sizes (150 nm) to control for resolution limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C80"
+    ],
+    "result": "Analysis of E25 cells with two distinct ecDNA populations (CDK4 and PDGFRA) shows no systematic clustering at <200 nm. Mean shortest interprobe distances were >1 \u03bcm, no CDK4-CDK4 or PDGFRA-PDGFRA pairs were <200 nm apart, and only 0.39-0.77% of foci showed CDK4-PDGFRA distances <200 nm. Ripley's K analysis confirmed no significant clustering at <300 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72, C80 are well-supported by comprehensive analysis of dual-ecDNA cell line E25 using distance measurements (Figure 3B, Figure 3-supplement 1C-D) and Ripley's K function (Figure 3D). The use of two distinct oncogene markers controls for potential under-detection of clustering due to resolution limits. Analysis was repeated with 150 nm spot size confirming results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In E20 cells harboring CDK4 and PDGFRA ecDNA, the majority of metaphase spreads show separate ecDNAs, but ~10% show colocalization indicating ecDNA with both oncogenes. In interphase, most nuclei (22/24) show no clustering at <300 nm. The 8.3% showing clustering at 100-200 nm likely represent cells with both oncogenes on the same ecDNA, and 16.7% show CDK4 doublets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by metaphase analysis (Figure 3-supplement 2) and interphase Ripley's K analysis (Figure 3I). The interpretation that close clustering represents ecDNA with both oncogenes is reasonable given concordance between metaphase and interphase frequencies. However, the sample size is modest (n=24 nuclei).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Nascent EGFR RNA FISH shows more frequent transcription foci in ecDNA-harboring cell lines than NSCs, with E26 > E28. Ripley's K analysis of nascent transcription sites in E26 shows no clustering at <400 nm, suggesting actively transcribing ecDNA do not colocalize more than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by nascent RNA FISH data (Figure 4-supplement 1A-B) and Ripley's K analysis (Figure 4A-B, n=11 nuclei). The use of nascent RNA FISH to detect active transcription sites is appropriate. However, the analysis is limited to E26 cells and the sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C107"
+    ],
+    "result": "ecDNA do not colocalize with large RNA PolII (RPB1) foci. Large RPB1 foci are sparse (few per nucleus), show no correlation with EGFR foci number, and mean shortest distances between EGFR and RPB1 foci are routinely >1 \u03bcm with no instances <200 nm. Similar results were obtained with DNA FISH, RNA FISH, and a POLR2G-mCherry knock-in reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35, C85-C91, C107 are well-supported by multiple approaches: immunofluorescence for RPB1 (Figure 4C-F), nascent RNA FISH (Figure 4-supplement 1D-F), and POLR2G-mCherry knock-in (Figure 4-supplement 1G-I). The use of multiple PolII markers and both DNA/RNA FISH strengthens the conclusion. Distance measurements are quantitative with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C92",
+      "C93"
+    ],
+    "result": "Cells with EGFR-containing ecDNA have increased EGFR expression at both mRNA and protein levels, correlating with ecDNA copy number. Flow cytometry shows highest EGFR levels in E26 > E28 > NSC. FACS-sorted EGFR-high cells have significantly more EGFR DNA foci than EGFR-low cells in both E26 and E28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36, C92-C93 are supported by flow cytometry with EGF-647 ligand (Figure 5-supplement 1A-B) and DNA FISH on FACS-sorted populations (Figure 5-supplement 1C-E, p<0.0001). The correlation between ecDNA copy number and protein expression is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Transcription per gene copy is similar between ecDNA and endogenous chromosomal EGFR. RNA:DNA FISH ratio analysis shows no correlation with ecDNA proportion in E26 or E28. RNA-seq/WGS SNP analysis shows RNA:DNA ratios ~1 (max 1.05). Copy-number normalized RNA counts are not significantly different between chromosomal (exons 2-7) and ecDNA (exons 1, 8-28) EGFR in both E26 and GBM39 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C37, C95-C98, C100-C103 are supported by multiple orthogonal approaches: RNA:DNA FISH (Figure 5A-C), SNP allele frequency analysis (Figure 5D-E), and exon-level RNA-seq analysis (Figure 5F-G). The use of EGFRvIII deletion to distinguish chromosomal vs ecDNA transcripts is elegant. Analysis of independent GBM39 data strengthens conclusions. Statistical tests are appropriate (Mann-Whitney, Spearman correlation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C38",
+      "C104",
+      "C108",
+      "C119",
+      "C120"
+    ],
+    "result": "Increased copy number of ecDNA, rather than enhanced transcriptional efficiency or spatial clustering, primarily drives high oncogene expression in GBM stem cells. This conclusion integrates findings that ecDNA do not cluster with each other or with transcriptional hubs, and that per-copy transcription efficiency is similar between ecDNA and chromosomal loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C38, C104, C108, C119-C120 represent the main conclusion synthesizing multiple lines of evidence: lack of ecDNA clustering (C5, C34, C56-C61), lack of colocalization with PolII hubs (C85-C91), and similar per-copy transcriptional efficiency (C95-C103). The conclusion is well-supported by the data, though it contrasts with some prior literature. The authors appropriately discuss potential reasons for differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C105",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Prior studies have reported ecDNA clustering into 'hubs' in established cancer cell lines including HK359 and GBM39 GBM cells, with clustering expected at ~200 nm distances. The current findings may reflect different ecDNA characteristics in primary vs established cell lines, including differences in ecDNA size and oncogene copy number per ecDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C105, C111-C113 accurately represent prior literature with appropriate citations (Hung et al., 2021; Yi et al., 2021; Sabari et al., 2018). The discussion of potential differences between primary and established cell lines is reasonable speculation supported by cited structural differences in ecDNA from other cell lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C46",
+      "C94",
+      "C114",
+      "C115",
+      "C117",
+      "C118"
+    ],
+    "result": "Background claims about GBM biology, ecDNA characteristics, and prior hypotheses about ecDNA function are presented, drawing from established literature. These include ecDNA prevalence in cancer, their role in oncogene amplification, chromatin accessibility, and prior proposals about ecDNA clustering and transcriptional hubs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C33, C46, C94, C114-C115, C117-C118 are background/context claims appropriately supported by citations to prior literature. These establish the rationale for the current study and are not primary findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "The study tests the hypothesis that ecDNA copy number, size, and chromatin accessibility facilitate clustering and colocalization with transcriptional hubs, using super-resolution imaging and quantitative analysis of GBM stem cells with distinct ecDNA species (EGFR, CDK4, PDGFRA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 accurately describe the hypothesis being tested and the experimental approach. The methods are appropriate for addressing the hypothesis, including 3D super-resolution imaging, multiple cell lines with different ecDNA populations, and rigorous quantitative spatial analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The study acknowledges it cannot exclude the existence of smaller, sub-diffraction limit transcriptional hubs associated with ecDNA that would not be detected by their imaging approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is an appropriate acknowledgment of technical limitations. Super-resolution microscopy has ~120 nm resolution, so structures smaller than this could be missed. This is a reasonable caveat to the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "SNP allele frequencies in the amplicon region were >80% in GBM samples, consistent with amplification derived from one parental allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by SNP analysis shown in Figure 5-supplement 1F. The interpretation that high allele frequencies indicate single-allele origin of amplification is reasonable and standard in the field.",
+    "result_type": "MINOR"
+  }
+]

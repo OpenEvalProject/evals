@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The PAG is an obligatory gate for vocalization in mammals, receiving context-dependent forebrain inputs, but the synaptic mechanisms through which forebrain neurons interact with the PAG vocal gating circuit remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the PAG's role in vocalization through extensive prior literature citations. C7 clearly identifies the knowledge gap that motivates the current study. C8 provides context about PAG functional heterogeneity. These claims appropriately frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Transsynaptic tracing from PAG-USV neurons and GABAergic PAG neurons revealed monosynaptic inputs from the preoptic hypothalamus (POA) and amygdala (AmgC/M and CeA), with the majority of these inputs being GABAergic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C14, and C15 present anatomical tracing data with specific quantification (~84% POA neurons GABAergic, ~98% AmgC/M/CeA neurons GABAergic) supported by in situ hybridization shown in Figure 1. The experimental approach using CANE tagging and rabies tracing is well-established. However, C11 notes tracing was only performed in males, which limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Optogenetic activation of POAPAG neurons, which are predominantly GABAergic and express Esr1, is sufficient to elicit USV production in both male and female mice in the absence of social cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C22 report successful USV elicitation with specific success rates (6/8 males, 3/4 females for POAPAG; 4/5 males, 3/4 females for Esr1+ POA). C19 provides appropriate GFP control showing no USVs (N=5), and C23 shows VGlut2+ POA neurons don't elicit USVs (N=3). The molecular characterization (C21: 278/319 neurons Esr1+) is well-quantified. Sample sizes are modest but adequate for optogenetic proof-of-principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "GABAergic POA neurons act via their synapses in the caudolateral PAG to promote USV production, as demonstrated by terminal stimulation experiments and anatomical specificity controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C25 shows terminal stimulation in PAG elicits USVs (1/2 males, 4/6 females), though success rates are lower than soma stimulation. C27 and C28 provide important negative controls showing VTA terminals and VMH-PAG neurons don't elicit USVs. However, C26 notes escape behavior in 4/8 animals during PAG terminal stimulation, suggesting potential off-target effects from viral spread. This caveat somewhat weakens the conclusion but doesn't invalidate it given the negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Activation of POAPAG neurons elicits USVs without positive reinforcement or recruitment of other courtship behaviors like mounting or locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Place preference data (C30-C32) show POAPAG activation drives slightly negative preference (PP=0.39\u00b10.07, N=7) while VTA terminals drive positive preference (PP=0.59\u00b10.06, N=4), demonstrating the vocal effect is dissociable from reward. C33-C34 show no mounting or overt locomotion with stimulation parameters that elicit USVs. These controls effectively rule out alternative explanations for USV production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Optogenetic activation of POA neurons elicits USVs with longer latencies (minimum 664.5\u00b1320.9 ms, mean 1782.6\u00b1407.6 ms) than PAG-USV neuron activation, and USV bouts often outlast stimulation duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C36-C37 provide quantitative latency comparisons showing POA stimulation produces longer latencies than direct PAG-USV activation (23.4\u00b18.6 ms minimum), consistent with POA being upstream. C39 documents that USV bouts outlast stimulation, contrasting with tight temporal coupling seen with PAG-USV activation (C40). C41 offers reasonable speculation about activity transformation. The data support a hierarchical circuit organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Optogenetically elicited USVs are largely acoustically similar to female-directed USVs, though a subset differs by being louder with greater frequency bandwidth, as revealed by VAE analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The VAE analysis (C42-C52) provides sophisticated acoustic characterization. C45-C46 show statistically significant differences between optogenetic and natural USVs (p<0.01, Wilcoxon test; p=0.003 vs. controls, Mann-Whitney), but C49 notes only 20% of condition information is predictable, indicating substantial overlap. C50-C51 identify specific acoustic differences (louder, greater bandwidth) that are consistent across mice (cosine similarity=0.50, p<1e-5). The analysis appropriately acknowledges both similarities and differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "AAV-retro-Cre virus selectively labels AmgC/M neurons but not CeA neurons projecting to the PAG, despite both populations being labeled by rabies tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C53-C55 document an important technical observation about differential viral tropism. C54 provides appropriate control using Ai14 reporter mice to confirm the labeling pattern isn't due to mistargeting. This finding is well-controlled and explains why subsequent experiments focus on AmgC/M rather than CeA, though it represents a limitation in comprehensively studying all amygdala inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Optogenetic activation of GABAergic AmgC/M-PAG neurons immediately and reversibly suppresses USV production during courtship without eliciting USVs in isolated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C57 shows robust USV suppression during courtship (N=8 mice), with C58 documenting temporal specificity and rebound. C56 establishes these neurons don't elicit USVs when activated in isolation. C59-C61 confirm the effect with GABAergic-specific targeting (N=4 mice) and terminal stimulation (N=3/3 mice). The convergent evidence from multiple approaches strongly supports the suppressive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "AmgC/M-PAG neuron activation selectively suppresses USVs without inducing fear, aversion, or disrupting non-vocal courtship behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C62 documents continued following and sniffing during stimulation with no change in male-female distance. C63 provides statistical comparison to multiple controls (no laser, GFP, dummy ferrule) showing specific effect on USVs (p<0.01 during laser, p>0.05 post-laser, two-way ANOVA). C64 shows no negative place preference. These controls effectively rule out general behavioral state changes and support vocal-specific suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "POAPAG and AmgC/M-PAG neurons project to dopaminergic regions (VTA, SNc, retrorubral area) and show reciprocal connectivity, with overlapping terminal fields in the caudolateral PAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 describe anatomical projections revealed by intersectional labeling. The observations are clearly documented in Figure 2\u2014figure supplement 3. While these anatomical findings are descriptive, they provide important context for understanding the broader circuit organization and potential interactions between POAPAG and AmgC/M-PAG populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "AmgC/M-PAG neurons make direct GABAergic inhibitory synapses onto PAG-USV neurons, as demonstrated by optogenetic-assisted circuit mapping in brain slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C70 reports IPSCs in 16/29 PAG-USV neurons (mean 180.3 pA) with optogenetic stimulation of AmgC/M terminals. C71 shows complete abolition by gabazine, confirming GABAergic transmission. C72 notes no EPSCs at chloride reversal potential. The slice physiology experiments use appropriate pharmacology (TTX/4AP to isolate monosynaptic connections) and provide direct evidence for the proposed inhibitory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "POAPAG neurons primarily act through disinhibition by directly inhibiting GABAergic PAG interneurons, which in turn inhibit PAG-USV neurons, rather than directly inhibiting PAG-USV neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C74-C76 show POAPAG terminals evoke IPSCs in 26/36 GABAergic PAG neurons (mean 328.8 pA), blocked by gabazine. C77-C78 confirm GABAergic PAG neurons inhibit PAG-USV neurons (13/16 cells, mean 579.9 pA). Critically, C79-C80 show POAPAG terminals rarely connect to PAG-USV neurons (1/23), supporting disinhibition. The circuit mapping is systematic and the disinhibitory mechanism is well-supported, though the low connection probability in slices (C80) has acknowledged caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Two populations of forebrain GABAergic neurons\u2014POAPAG neurons that promote vocalization via disinhibition and AmgC/M-PAG neurons that suppress vocalization via direct inhibition\u2014exert opposing control over the PAG vocal gating circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates the major findings. C82-C86 recap the behavioral effects, C87-C88 summarize the circuit mechanisms with reference to Figure 7. The opposing effects are well-documented through optogenetics, the synaptic mechanisms are demonstrated through slice physiology, and the acoustic analysis shows optogenetic USVs are largely natural. C89's claim of novelty appears justified given the comprehensive characterization of synaptic mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Sex differences in vocal behavior may result from differential POAPAG activity levels in males versus females, though POAPAG neurons in both sexes can equally drive USV production when strongly activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C90-C91 document sex differences in natural vocalization rates (females produce ~1/5 of USVs in courtship, vocalize less to female partners). C93 shows similar optogenetic efficacy in both sexes. However, C92's speculation about differential POAPAG activity lacks direct evidence\u2014no measurements of natural POAPAG activity in males vs. females are presented. The hypothesis is reasonable but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Male and female brains contain latent circuits for sex-typical behaviors that can be unmasked by artificial neural activation, with potential contributions from sex differences in POA neuron density, synaptic organization, and gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C94-C95 offer speculation about mechanisms underlying sex differences, citing relevant literature on POA sexual dimorphism. However, these claims are entirely speculative in the context of the current study\u2014no experiments directly test these mechanisms. The speculation is well-grounded in prior literature but represents future work rather than supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Optogenetic activation of POAPAG or Esr1+ POA neurons does not elicit mounting behavior, potentially due to lower stimulation intensity compared to prior studies or differential thresholds for vocal versus mounting behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C97 clearly documents absence of mounting (N=7 POAPAG-ChR2, N=4 POA-Esr1-ChR2 mice tested), contrasting with C96's citation of prior work. C98-C99 offer reasonable speculation about methodological differences (3-5 mW, 10-20 Hz vs. 10 mW, 40 Hz in Wei et al. 2018). The negative result is appropriately reported and discussed, though C100's speculation about projection-defined subsets remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "POAPAG neurons likely promote USV production during later stages of courtship, with other upstream populations potentially controlling early-phase courtship USVs, based on ablation studies showing altered acoustic features but maintained USV numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C101-C102 cite prior ablation studies showing differential effects on USVs versus mounting. C103-C105 offer interpretation about temporal dynamics of courtship vocalization. However, the current study doesn't directly test when POAPAG neurons are active during natural courtship or manipulate them in a temporally-specific manner during courtship. The interpretation is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The acoustic similarity between optogenetically elicited and natural USVs supports a model where PAG-USV neurons gate vocalization without directly patterning acoustic content, though unusual optogenetic USVs may result from stronger-than-natural PAG activation or context differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C106 summarizes the acoustic overlap documented in the VAE analysis. C107 draws a reasonable inference about PAG-USV function based on acoustic data. C108-C109 offer plausible speculation about why some optogenetic USVs differ, with C110 citing supporting evidence from prior work (Chabout et al. 2015) about context-dependent acoustic features. The interpretation is well-reasoned though partly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The AmgC/M-to-PAG pathway provides a monosynaptic substrate for rapid vocalization suppression, potentially functioning to suppress vocalizations in risky behavioral contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C111 summarizes the demonstrated monosynaptic inhibitory connection. C112 draws a reasonable inference about functional capability for rapid suppression. C113 offers plausible speculation about ecological function, though this remains untested. The circuit mechanism is well-established, but the proposed ecological function is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Disinhibitory circuit motifs in the PAG, including the POAPAG-to-PAG-USV pathway, may provide a failsafe mechanism for regulating behaviorally costly actions like vocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C115 appropriately contextualizes the findings within established PAG circuit principles, citing prior work on disinhibition in freezing, grooming, and antinociception. C116 summarizes the circuit model supported by the data. C117 offers reasonable speculation about functional significance. The circuit mechanism is well-demonstrated, though the 'failsafe' interpretation is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The PAG integrates diverse forebrain inputs to gate vocalization in a context-appropriate manner, with implications for understanding human vocal control including speech.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C118 references the anatomical tracing data showing multiple forebrain inputs (Figure 1\u2014source data 1, supplements 1-4). C119 draws a reasonable inference about integrative function. C120-C122 appropriately contextualize the findings' broader significance. The anatomical observations support the integration claim, though functional testing of other inputs remains future work.",
+    "result_type": "MINOR"
+  }
+]

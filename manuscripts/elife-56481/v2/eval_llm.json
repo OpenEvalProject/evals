@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study collected EEG data from 16 normal-hearing subjects using a 64-channel BioSemi ActiveTwo system at 8196 Hz while they listened to two competing speakers (four Dutch stories narrated by three male Flemish speakers) and were instructed to attend to one particular speaker. The experiment consisted of eight 6-minute trials with dichotic or HRTF-filtered presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C38 provide a comprehensive description of the experimental setup, including subject population, recording equipment, stimulus characteristics, and trial structure. These methodological details are clearly stated and internally consistent, providing adequate documentation of the data collection procedure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "EEG data was preprocessed using bandpass filtering (1-9 Hz for linear models, 1-32 Hz for CNN), downsampling (20 Hz for linear, 128 Hz for CNN), MWF-based artifact removal, and subject-specific normalization. Data was divided into training, validation, and test sets using sliding windows with 50% overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 describe the preprocessing pipeline with appropriate citations for key methodological choices (C40, C41, C43). The different preprocessing parameters for CNN vs. linear models are justified by prior work. The methodology is sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The proposed CNN architecture consists of a convolutional layer with five 64\u00d717 spatio-temporal filters (130 ms width), ReLu activation, average pooling over time, two fully connected layers (5 neurons with sigmoid, then 2 output neurons), and cross-entropy loss. The network has approximately 5500 parameters and was implemented in MATLAB 2016b with MatConvNet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 provide a complete architectural description of the CNN model. The filter width optimization (C49) is based on validation set performance. The architecture is relatively simple and appropriate for the dataset size, though the justification for specific design choices (e.g., 5 filters, specific layer sizes) is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The CNN was trained using a subject-specific approach with data from all subjects (including test subject but different trials) as regularization. A leave-one-story+speaker-out cross-validation scheme was used, retaining only two folds where speakers never appeared in both training and test sets. Training used mini-batch SGD with learning rate 0.09, momentum 0.9, step decay schedule, batch size 20, and weight decay regularization for 100 epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C70 describe a rigorous training methodology with appropriate cross-validation to prevent overfitting to specific stories or speakers (C60-C62). Hyperparameters were determined by grid search (C70). The approach is well-justified, though the limitation to only 2 folds (C61) reduces the amount of usable data and may impact generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "A linear stimulus reconstruction baseline model was implemented using spatio-temporal filtering with 250 ms delay, least-squares regression, and powerlaw subbands envelope extraction. The linear model was trained only on subject-specific data (unlike the CNN) and could not be evaluated at 0.13 s windows due to its 0.25 s kernel width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77, C80 describe the baseline model with appropriate citations (C72, C74). The different training approaches (C76) and fundamental differences between models (C77) are acknowledged. However, C77's claim that comparison should be treated with care is important\u2014the models use different preprocessing and have fundamentally different capabilities, limiting direct comparability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "At 1 s decision windows, the CNN achieved significantly higher median accuracy (80.8%) compared to the linear model (58.1%) with W=3, p<0.001. At 10 s windows, the CNN achieved 85.1% vs. 75.7% for linear (W=16, p=0.0203). The CNN showed higher median accuracy but larger intersubject variability at both window lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 report the primary performance comparison with appropriate statistical tests (Wilcoxon signed-rank). The results are supported by Figure 2. However, two subjects were excluded for <50% accuracy (C82), which may bias results positively. The increased intersubject variability (C81) is concerning and inadequately explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The CNN achieved a median MESD of 0.819 s compared to 22.6 s for the linear model (W=105, p<0.001). This extremely low MESD results from the CNN maintaining 68.7% median accuracy at 0.13 s windows, and the MESD metric typically selecting optimal operation points at short decision windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 report MESD results with appropriate statistics and cite the metric's definition (C91). The dramatic improvement is supported by Figure 3. However, C90 notes a caveat that the MESD metric assumes independent decisions, which may not hold for very short windows (<1 s), potentially underestimating actual switch time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Window length significantly affects decoding accuracy for both models (CNN: df=96, p<0.001; Linear: df=94, p<0.001). However, the CNN shows much less degradation with shorter windows: from 10s to 1s, CNN accuracy decreases only 4.3% (85.1% to 80.8%) while linear decreases 17.6% (75.7% to 58.1%). At 0.25s, CNN achieves 74.0% vs. 53.4% for linear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C111-C113 demonstrate a key advantage of the CNN using appropriate mixed-effects modeling and are supported by Figure 4. The CNN's robustness to short windows is a major finding. However, the explanation (C114-C115) for why this occurs is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Analysis of CNN filter weights shows the network primarily uses information from the beta frequency band, with activations concentrated in frontal and temporal regions (slightly stronger on the right side). These findings align with prior work showing beta band involvement in selective attention and frontal channel importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 provide interpretability analysis supported by Figures 5-6 and citations to consistent prior work (C95, C98, C99). However, the interpretation is limited: the authors acknowledge that backward decoder coefficients don't necessarily indicate neural response strength (text after C99), and they cannot exclude non-brain sources like eye movements (C117).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Using data from all trials with per-trial MWF filtering yields 92.8% accuracy vs. 80.8% for leave-one-story+speaker-out (W=91, p=0.0134), but without MWF there's no significant difference (W=48, p=0.8077). This demonstrates that per-trial data-driven preprocessing creates trial-specific fingerprints that enable overfitting, requiring trial-independent preprocessing for valid results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103, C118-C120 reveal an important methodological finding about preprocessing-induced overfitting, supported by Figure 7. The statistical tests are appropriate. This is a valuable contribution showing that common preprocessing approaches can invalidate results with spatio-temporal decoders. The recommendation (C119-C120) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Subject-independent decoding (leave-one-subject-out) results in significantly decreased accuracy from 80.8% to 69.3% at 1s windows (W=14, p=0.0134). Surprisingly, one subject performed better when excluded from training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 demonstrate that subject-specific training provides significant benefit, supported by Figure 8 and appropriate statistics. The anomalous subject (C105) is interesting but unexplained. The 11.5% accuracy decrease suggests subject-specific features are important, though 69.3% median accuracy for subject-independent decoding is still reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C92",
+      "C109",
+      "C110",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Two subjects had <50% accuracy at 10s windows and were excluded from analysis. The CNN shows high intersubject variability, with poorly performing subjects doing better on stories 3-4 (which were excluded from testing). The CNN achieves MESD \u22645s for 11/16 subjects (8 subjects <1s), but one subject has MESD of 33.4s and two have infinite MESD, indicating intersubject variability remains a challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C92, C109-C110, C127-C128, C131-C133 honestly report substantial intersubject variability and failure cases. The exclusion of 2/16 subjects (C82) is concerning and may inflate reported performance. The story-dependent performance (C92, C110) suggests potential overfitting despite cross-validation efforts. This variability is a significant limitation for practical applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The CNN significantly outperforms both the linear baseline and prior entropy-based direction classification methods, achieving 81% median accuracy at 1s windows and an unprecedented MESD of 0.819s, enabling robust neuro-steered volume control with acceptable latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 summarize the main findings with comparison to prior work (C107 cites Lu et al., 2018). The results represent a substantial advance in detection speed. However, the comparison to Lu et al. 2018 may not be entirely fair as different datasets and methods were used, and the high intersubject variability (C109, C133) tempers enthusiasm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors hypothesize that the CNN's superior performance at short windows is because it directly decodes attention locus without relating neural activity to speech envelopes, avoiding the need for long-window correlation computations. Potential information sources include spatial brain activity patterns, but also possibly eye gaze or muscle activity reflected in EEG, which cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C117 provide speculative explanations for the CNN's performance that are not directly tested. The hypothesis about why the CNN performs better (C114-C115) is plausible but unverified. Critically, C117 acknowledges that non-brain sources cannot be excluded despite control experiments, which is a major limitation in interpreting what the CNN actually decodes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors hypothesize that observed variability is due to small dataset size and that the network needs more examples to generalize better. With more data, more complex CNN architectures would become feasible. Future improvements could include soft probabilistic decisions and LSTM extensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C125 are speculative suggestions for future work without supporting evidence. While plausible, the small dataset hypothesis (C121-C122) is not tested. The suggestions for architectural improvements (C123-C125) are reasonable but speculative. These represent future directions rather than supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "For practical hearing aid applications, the CNN could steer beamformers toward attention direction without requiring clean speech envelopes. However, multiple issues require investigation including hearing loss effects, acoustic circumstances, attention switching mechanisms, computational complexity reduction, CNN pruning, and electrode reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C139 discuss potential applications and required future work with appropriate citations (C136, C138, C139). However, these are speculative regarding practical implementation. The suggestion that the CNN could work without clean envelopes (C134) is promising but untested in realistic noisy conditions. The list of required investigations (C136-C139) is comprehensive but highlights how far the work is from practical deployment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Beyond hearing aid applications, fast and accurate attention detection could enable measurement of subject compliance with attention instructions and allow tracking attention in almost real-time for studying attention dynamics and its interplay with eye gaze, speech intelligibility, and cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C142 speculate about research applications without supporting evidence. While the fast detection speed could enable these applications, they are not demonstrated in this work. The suggestions are reasonable but represent potential future uses rather than validated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The introduction establishes that humans can selectively attend to one speaker in multi-speaker scenarios (cocktail party problem), that EEG can decode attended speaker, but that short-window classification remains challenging. Prior work shows CNNs are effective for EEG classification and that attention direction is neurally encoded, particularly in alpha and beta bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide background context with appropriate citations throughout. These establish the scientific foundation and motivation for the study. The claims about prior work are properly attributed and the challenge of short-window decoding (C3, C20-C21) is well-documented. Some claims are speculative (C13, C25) but appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

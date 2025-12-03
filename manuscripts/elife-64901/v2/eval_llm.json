@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C89",
+      "C90"
+    ],
+    "result": "A new label-free quantitative phase imaging (QPI) method based on z-stacks of bright-field images was developed and validated for measuring intracellular density in fission yeast. The method determined that wild-type S. pombe cells have a mean dry-mass density of 282 \u00b1 16 mg/mL and buoyant-mass density of 1.108 \u00b1 0.005 g/mL, with a narrow coefficient of variation (CV = 0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C25, C26, C27, C89, and C90 collectively establish the development and validation of the QPI method with specific quantitative measurements. The method is described in detail in the Materials and Methods section, calibrated using BSA standards (C25, Figure 1B), and validated against complementary techniques (SMR, holography). The reported density values are consistent across multiple measurement approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Fission yeast cells maintain dry-mass density in a narrow distribution (CV ~6%) and exhibit homeostatic behavior, as evidenced by an inverse correlation between initial density and density change during the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C28, C29, C124, C125, and C126 demonstrate density homeostasis through both population-level statistics (narrow CV) and single-cell dynamics (inverse correlation in Figure 1D). The homeostatic interpretation is supported by the quantitative correlation data showing that cells with higher initial density tend to decrease in density and vice versa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C31",
+      "C32",
+      "C41",
+      "C42",
+      "C92"
+    ],
+    "result": "Intracellular density varies systematically during the cell cycle over a range of ~10%: decreasing ~5% during G2 phase, increasing during mitosis and cytokinesis, and dropping rapidly (~5%) at cell birth within a 5-minute window around cell separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C7, C31, C32, C41, C42, and C92 describe consistent cell cycle-dependent density variations supported by time-lapse QPI measurements (Figure 2C, 2F). The quantitative measurements are reproducible across individual cells and validated by complementary SMR measurements (C35, C36). The rapid density drop at cell birth is mechanistically linked to volume expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C45",
+      "C46",
+      "C93",
+      "C103",
+      "C104",
+      "C132"
+    ],
+    "result": "Dry mass accumulates continuously and exponentially throughout the cell cycle without obvious transitions, as evidenced by steady mass increase and constant normalized growth rate (1/M dM/dt).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C45, C46, C93, C103, C104, and C132 establish exponential mass growth through multiple lines of evidence: visual inspection of mass curves (Figure 2D), comparison of exponential vs. linear fits (Figure 2G), and analysis of normalized growth rates (Figure 2\u2014figure supplement 3A). This finding is consistent with prior studies cited in C103 and C104.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C11",
+      "C34",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C66",
+      "C95"
+    ],
+    "result": "Density variations during the cell cycle arise predominantly from cell-cycle-dependent modulation of volume expansion rather than changes in biosynthesis rate. Mass synthesis continues at a constant relative rate while volume growth varies, with density increasing when volume growth slows (mitosis/cytokinesis) and decreasing when volume growth outpaces biosynthesis (G2 phase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C11, C34, C43, C44, C47, C48, C49, C52, C66, and C95 present a coherent mechanistic model supported by the observation that mass grows exponentially while volume growth varies. The model is further validated by cell cycle arrest experiments (C50-C58) showing that prolonged G2 leads to further density decrease and prolonged mitosis/cytokinesis leads to density increase, consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C64",
+      "C96",
+      "C98"
+    ],
+    "result": "Cell-cycle arrests at specific stages exacerbate density changes: prolonged G2 arrest (cdc25-22) leads to greater density decrease (~8% vs. ~5% in wild-type), while extended mitotic (cut7-446) or cytokinetic (cdc16-116) arrest leads to greater density increases (7% and 20-30%, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C50, C51, C52, C53, C54, C55, C57, C58, C64, C96, and C98 demonstrate that cell cycle perturbations exacerbate density changes in the predicted direction. The experiments with temperature-sensitive mutants (Figures 3, 4) provide quantitative evidence that biosynthesis continues during arrests while volume growth is altered, supporting the mechanistic model. The absence of density oscillations during prolonged G2 (C51) argues against alternative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C99"
+    ],
+    "result": "Inhibition of volume growth with latrunculin A is sufficient to increase intracellular density by ~20% after 1 hour, regardless of cell-cycle stage, though mass accumulation is slower and more variable than during normal growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C61, C62, C63, C65, and C99 demonstrate that blocking volume growth directly causes density increase (Figure 5). The observation that mass accumulation is slower during latrunculin A treatment (C62) is appropriately noted and interpreted as possible slowdown in biosynthesis or increased degradation (C63). This result supports the model that density is regulated through volume growth modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "Fission yeast cells exhibit spatially heterogeneous density patterns with growing cell ends appearing less dense than non-growing ends. The mean density difference between old and new ends is ~15 mg/mL (~5% of mean density), with the slower-growing new end typically denser than the faster-growing old end. These gradients are stable and do not require active growth or F-actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C67, C68, C69, C70, C71, C72, C73, C74, C76, and C77 establish spatial density gradients through QPI measurements (Figure 6) validated by FITC staining (C74). The correlation between tip growth and local density is demonstrated quantitatively (Figure 6C), and control experiments with latrunculin A (C75, C138, C139) show that gradients persist without active growth, supporting their stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Intracellular density differences established during interphase are propagated through cell division and correlate with density differences between progeny daughter cells after cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 demonstrate inheritance of density patterns through time-lapse imaging (Figure 6D, E). The correlation between mother cell density gradients and daughter cell density differences provides quantitative support for this observation. This finding suggests that density variations have functional consequences across generations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C118",
+      "C121",
+      "C141",
+      "C142"
+    ],
+    "result": "Density differences between daughter cell compartments are strongly coupled to intracellular osmotic pressure, as evidenced by septal bending. In mid2\u0394 cells, 97% (62/64) of bent septa bent away from the higher-density compartment, with a mean maximum density difference of 16 \u00b1 5%. Septal bending occurs for density differences as low as 5-10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, C82, C83, C84, C85, C86, C87, C88, C118, C121, C141, and C142 establish a quantitative relationship between density differences and mechanical consequences (septal bending). The high correlation (97%) between density difference and bending direction (Figure 7) provides strong evidence for the coupling between density and osmotic pressure. The observation that bending occurs at 5-10% density differences suggests physiological relevance for the observed cell cycle variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SMR measurements revealed a mean buoyant density of 1.108 \u00b1 0.005 g/mL for fission yeast, with lower buoyant densities in intermediate-sized cells. Relative changes in buoyant density are smaller than changes in dry-mass density because dry-mass density accounts for only a fraction of buoyant density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C37, and C38 provide complementary validation of QPI measurements using an independent technique (SMR). The cell-size dependence of buoyant density (C36, Figure 2E) is consistent with QPI observations of cell cycle-dependent density changes. The explanation for the difference in magnitude between buoyant and dry-mass density changes (C37, C38) is physically sound and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C94",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Fission yeast density measurements are comparable to other organisms, and density regulation patterns differ across cell types. Unlike fission yeast, budding yeast does not show density increases during cell cycle arrests, and human cells show different timing of density changes during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C94, C105, C106, C107, C108, and C109 appropriately contextualize the findings within the broader literature. The comparisons are properly cited and highlight both similarities (comparable absolute densities) and differences (cell cycle patterns) across organisms. This comparative analysis strengthens the interpretation of the fission yeast results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "In fission yeast, mass is more closely coupled with surface area than volume, especially when septum surface area is included. The surface area to mass (SA/M) ratio varies by only ~5%, showing less variation than the volume to mass ratio. However, latrunculin A experiments demonstrate that mass accumulation and surface area growth can be uncoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C111, C133, C134, and C135 analyze the relationship between mass, volume, and surface area (Figure 2\u2014figure supplement 3). The observation that SA/M varies less than density is quantitatively supported, and the caveat that these can be uncoupled (C111) is appropriately noted based on experimental evidence. This analysis provides insight into potential mechanisms of growth coordination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Any perturbation affecting cell-cycle progression or growth is likely to alter density dynamics. Cell-cycle arrests, commonly used to synchronize cells, not only affect cell-cycle progression and cell size but also cause changes in intracellular density with potentially broader physiological consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C101, and C102 draw appropriate general conclusions from the experimental findings. The inference that perturbations affecting cell cycle or growth will alter density (C100) is well-supported by the arrest experiments. The cautionary note about cell cycle arrests (C102) is a valid implication of the findings, though the specific downstream physiological consequences remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "The observed density changes of 5-20% could have profound consequences for cellular biochemistry, macromolecular crowding, and cytoplasmic physical properties. Density may affect pressure through colloid osmotic pressure associated with macromolecular crowding and water displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116, C117, C119, and C120 propose potential consequences of density changes, but these remain largely speculative. While the magnitude of density changes is well-established and the proposed mechanisms are plausible and properly cited, direct experimental evidence linking the observed density changes to specific biochemical or biophysical consequences is limited. The septal bending experiments (C118, C121) provide some support, but broader functional consequences require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The increase of density at cell division may provide mechanical force through increased turgor pressure to facilitate cell-cell separation and bulging of the cell wall, and may affect the distribution of mechanical stresses during other cell-cycle stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122 and C123 are explicitly speculative (\"We speculate...\") and lack direct experimental validation. While the speculation is reasonable given the observed density increase during cytokinesis and the demonstrated coupling between density and pressure (septal bending), the specific functional role in cell separation and the effects on mechanical stress distribution remain hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C128"
+    ],
+    "result": "The tight distribution of densities suggests homeostatic mechanisms maintain density levels, possibly through regulation of volume growth rates or tuning of biosynthesis rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125, C127, and C128 appropriately infer the existence of homeostatic mechanisms from the narrow density distribution and the inverse correlation between initial density and density change. The proposed mechanisms (volume growth regulation, biosynthesis tuning) are properly cited and represent reasonable hypotheses, though C128 is noted as speculative. The homeostatic behavior is well-supported by the data in Figure 1D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C39",
+      "C40",
+      "C56",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background knowledge and prior work establish that intracellular density affects cellular processes, that density changes occur in various physiological contexts, and that fission yeast is a suitable model organism with well-characterized cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C24, C39, C40, C56, C112-C115 provide appropriate background context from the literature. These claims are properly cited and establish the biological significance of density regulation, the suitability of fission yeast as a model system, and relevant prior observations. This background appropriately motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C30",
+      "C131"
+    ],
+    "result": "Cell density distributions are similar across different growth temperatures (25\u00b0C and 30\u00b0C) and after temperature shifts, varying by less than 10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C131 demonstrate robustness of density regulation across temperature conditions (Figure 1\u2014figure supplement 1C). This observation supports the generality of the findings and suggests that density homeostasis is maintained across physiological temperature ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "The coefficient of variation of density at each specific cell-cycle stage (<5%) is slightly lower than across the entire population (6%), supporting that some population-wide variation arises from cell cycle-dependent density variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 provides a quantitative analysis showing that cell cycle stage contributes to population-level density variation (Figure 1\u2014figure supplement 1B). This observation is consistent with the finding of systematic cell cycle-dependent density changes and helps explain the sources of density variation in the population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The new cell end is wider than the old end, with the average old end width ~0.15 \u03bcm smaller than new ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136 and C137 document a morphological difference between cell ends (Figure 6\u2014figure supplement 1A). This observation is important for interpreting QPI measurements, as width differences could potentially affect phase shift measurements. The control analysis constraining measurements to cells with similar widths (C73) addresses this potential confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Density gradients persist in latrunculin A-treated cells and FITC staining confirms spatial gradients in protein/RNA distribution, with higher intensity at the new end than the old end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138, C139, and C140 provide validation of spatial density gradients through complementary approaches. The persistence of gradients without F-actin or active growth (Figure 6\u2014figure supplement 1C) demonstrates their stability, and FITC staining (Figure 6\u2014figure supplement 2) confirms that the QPI-detected gradients correspond to differences in biomolecule distribution.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript provides background on Nsp1 as a pathogenicity factor in \u03b1- and \u03b2-coronaviruses, describing its role in suppressing host gene expression, promoting mRNA degradation, mediating immune evasion, and its structural characteristics. These claims establish the biological and therapeutic context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34 are well-supported by cited literature and represent established knowledge about Nsp1 function, structure, and importance. These background claims provide appropriate context and are not novel findings of this manuscript but are accurately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Two putative binding pocket regions were identified on Nsp1N using computational pocket detection algorithms (DoGSiteScorer and Fpocket): a pocket-like structure between the \u03b2-barrel and \u03b1-helix, and a shallow groove-like region on the opposite side of the \u03b2-barrel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by computational analysis using two independent pocket detection algorithms showing consistent results (Figure 2). The structural descriptions are clearly documented and provide the foundation for subsequent MD simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51"
+    ],
+    "result": "Unbiased MD simulations of Nsp1N revealed that pocket 1 has an average volume of 410\u00b1150 \u00c5\u00b3, significantly larger than predicted from the crystal structure (217 \u00c5\u00b3), indicating partial crypticity. Pocket 2 has a volume of 240\u00b1114 \u00c5\u00b3, consistent with crystal structure predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C51 are well-supported by 1-\u03bcs MD simulation data with RMSD analysis confirming system stability (Figure 3). The volume calculations are quantitative and the comparison between simulation and crystal structure provides strong evidence for pocket 1's partial crypticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "SWISH enhanced sampling simulations revealed two additional cryptic pockets (pocket 3 and pocket 4) on the exterior of the \u03b2-barrel, with average volumes of 268\u00b1115 \u00c5\u00b3 and 169\u00b1120 \u00c5\u00b3, respectively. These pockets were absent in crystal structures and unbiased MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by SWISH simulation data (6 replicas of 500 ns each) with volume analysis (Figure 4). The cryptic nature is well-established by the absence of these pockets in both crystal structures and unbiased MD simulations, demonstrating the value of enhanced sampling methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FTDyn and FTMap computational solvent mapping identified 107 consensus clusters on Nsp1N, with 50 clusters mapped to pocket 1 (corresponding to highest binding energy) and 50 clusters in the vicinity of pockets 2, 3, and 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by FTDyn/FTMap analysis of 11 representative MD conformations (Figure 5). The distribution of consensus clusters provides computational validation of pocket druggability, though the method is predictive rather than experimental.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Fragment screening by X-ray crystallography identified one fragment (2E10) binding to pocket 1 out of 59 tested fragments. Fragment 2E10 binds with KD = 15.1\u00b15.7 mM (MST), establishes hydrophobic interactions with multiple residues, and forms a hydrogen bond with Lys125, but does not stabilize Nsp1N in thermal shift assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are well-supported by crystallographic data (Figure 6), MST measurements, and TSA results (Table 2). The low hit rate (1/59) is explained by crystal packing analysis (C68). The KD value indicates weak but measurable binding appropriate for a fragment, and the lack of thermal stabilization is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C89"
+    ],
+    "result": "Crystal packing analysis revealed that crystallographic contacts limit the accessibility of predicted pockets during fragment soaking experiments, explaining the low hit rate from fragment screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C89 are supported by detailed crystal packing analysis (Figure 7) showing that neighboring Nsp1 molecules in the crystal lattice occlude key hotspots identified by FTMap. This provides a rational explanation for the experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Two Nsp1FL-RNA complex models (A and B) were generated by protein-RNA docking, showing that Nsp1FL binds to diametrically opposite positions on SL1. In model A, residues Arg124, Lys125, Asn126, Asp9, and Lys11 interact with viral RNA, with pocket 1 positioned close to the Nsp1FL-RNA interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by HADDOCK docking and 500-ns MD simulations (Figure 8). Both models capture experimentally validated contacts, though model A shows greater stability. The identification of key interacting residues is well-documented, though the models are computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C93"
+    ],
+    "result": "Structural comparison between fragment-bound and RNA-bound states shows that fragment binding to pocket 1 causes reorientation of key residues (Glu10, Lys11, Arg99, Arg124, Asn126), which could diminish Nsp1-mRNA interaction by interfering with crucial interactions between Nsp1 and 5'-UTR SL1 (particularly R124 and K125).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 and C93 are supported by structural superposition analysis (Figure 8B) and are consistent with cited mutagenesis studies (C77). The inference that fragment binding could disrupt RNA interaction is logical based on residue reorientation, though direct experimental validation of disruption is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C92",
+      "C94"
+    ],
+    "result": "The authors propose that ligand binding to pocket 1 could affect Nsp1 C-terminus dynamics, interfere with viral RNA SL1 interaction, disrupt the Nsp1-mRNA complex, and lower Nsp1 affinity for the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C50, C92, and C94 are speculative inferences based on structural proximity and residue involvement. While the structural analysis is sound and supported by mutagenesis data (C77), direct experimental evidence demonstrating these functional effects is lacking. These represent hypotheses requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In full-length Nsp1, the C-terminal domain affects pocket 1 accessibility, reducing its volume to approximately 200 \u00c5\u00b3. However, pocket 1 remains accessible for fragment binding in solution, as confirmed by comparable KD values for fragment 2E10 binding to Nsp1N (15.1\u00b15.7 mM) and Nsp1FL (15.7\u00b111.6 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by MD simulations of Nsp1FL (3 replicas of 1 \u03bcs), volume analysis (Figure 8\u2014supplement 3), docking studies, and MST measurements (Figure 6\u2014supplement 2). The comparable KD values within error provide experimental validation that the C-terminal domain does not prevent fragment binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "Phylogenetic analysis of 283 Nsp1N sequences from \u03b1- and \u03b2-CoVs shows that SARS-CoV-2 Nsp1 shares 86-93% sequence identity with selected homologues (SARS-CoV-1, BatCoV HKU3, RaTG13). All important pocket residues are conserved, and SWISH simulations confirm that all four pockets are conserved across these homologues, suggesting that ligands could target corresponding pockets in different \u03b2-CoVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 and C91 are well-supported by phylogenetic analysis (Figure 9A), sequence alignment (Figure 9B, Table 3), and SWISH simulations of homologous proteins (Figure 9C). The conservation analysis is thorough and the inference about cross-species druggability is reasonable, though experimental validation in homologues is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C35",
+      "C38",
+      "C88",
+      "C90"
+    ],
+    "result": "The study reveals druggable and partially cryptic pockets in Nsp1 through a combination of MD simulations, SWISH enhanced sampling, fragment screening, and X-ray crystallography. These represent the first fragment-bound SARS-CoV-2 Nsp1 crystal structures and establish Nsp1 as a valuable drug target with potential for pan-coronavirus inhibitor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12, C35, C38, C88, and C90 represent the main conclusions of the study and are well-supported by the integrated computational and experimental data. The novelty claim (C38) is appropriately qualified by citing a concurrent study from the same group. The inference about drug development potential (C35, C12) is reasonable but represents future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Prior mutagenesis studies showed that mutation of Arg99, Arg124, and Lys125 to Ala compromised Nsp1 binding to the 40S ribosomal subunit and increased dissociation constants with purified ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by appropriate citation (Mendez et al., 2021) and provides important functional context for interpreting the structural findings regarding fragment binding effects on these residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The N-terminal core region of Nsp1 (Nsp1N) shows predominantly small superficial cavities, complicating drug design efforts. Very few studies have explored Nsp1 for structure-based drug discovery, with only one prior study reporting ligand binding to the C-terminal domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by structural observations and appropriate citations, establishing the challenge and novelty of the current work. These claims provide important context for the significance of discovering druggable pockets.",
+    "result_type": "MINOR"
+  }
+]

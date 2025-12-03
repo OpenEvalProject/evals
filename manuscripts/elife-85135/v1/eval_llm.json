@@ -1,0 +1,542 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "A dual reporter H9 hESC line was generated with SOX2::EGFP labeling progenitors and hSYN1::dTomato labeling neurons. Brain organoids generated from this line showed appropriate expression patterns with EGFP in the ventricular zone (VZ) and dTomato in neuronal regions, including some double-positive cells indicative of transitional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide converging evidence from genetic engineering (C2, C3), immunostaining (C5, C6), and marker analysis (C8, C9) that the dual reporter system functions as intended. The genotyping data (Figure 1\u2014figure supplement 1A-B) and immunostaining images (Figures 1B, 1\u2014figure supplement 1D, 2A-D) support the proper expression of reporters in expected cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "FACS sorting of organoids at days 40, 60, 90, and 120 successfully isolated EGFP+ progenitors and dTomato+ neurons. RNA-seq and PCA analysis confirmed that sorted populations showed appropriate transcriptomic signatures with separation by cell class (PC1) and developmental stage (PC2), with minimal batch effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by FACS data (Figure 1\u2014figure supplement 3A) and PCA analysis (Figure 1\u2014figure supplement 4A-B). The clustering patterns and loading scores demonstrate successful isolation of distinct cell populations with expected transcriptomic profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Mass spectrometry detected 6740 proteins from sorted cell populations. The proteome segregated by cell class similar to the transcriptome, though age-related segregation was less pronounced, potentially due to technical limitations of TMT-labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by proteomics data and PCA (Figure 1\u2014figure supplement 4C-D). The acknowledgment of technical limitations (C17) with appropriate citations (Savitski et al., 2013; Searle and Yergey, 2020) demonstrates appropriate interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The dual reporter system accurately recapitulated endogenous gene expression patterns. SOX2::EGFP+ cells encompassed all cortical progenitor types with appropriate temporal dynamics, while hSYN1::dTomato+ cells included excitatory neurons of all cortical layers with expected sequential expression of deep-layer before upper-layer markers. The organoids showed dorsal telencephalic identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 are supported by expression analysis (Figures 1C-E) showing concordance between reporter and endogenous gene expression, appropriate marker expression for different progenitor and neuronal subtypes, and confirmation of dorsal telencephalic fate. The temporal patterns match expected developmental trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The double-positive cell population showed intermediate marker expression at days 40 and 60, consistent with a transitional state. At days 90 and 120, this population showed mixed expression including progenitor, outer radial glia, gliogenic, and neuronal markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by marker expression analysis (Figure 1\u2014figure supplement 5A) and PCA results (Figure 1\u2014figure supplement 3B). The interpretation of transitional states is reasonable given the intermediate expression patterns, though the mixed nature at later stages suggests heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Tissue dissociation and FACS resulted in loss of extracellular matrix proteins, cell adhesion proteins, and markers for astrocytes and choroid plexus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by comparative proteomics analysis (Figure 1\u2014figure supplement 6A-B) showing significant depletion of specific protein classes. This is an expected consequence of the dissociation procedure and is appropriately documented as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Limited correlation was observed between absolute mRNA and protein levels. Before normalization, 80% of variation in combined datasets was explained by omics method rather than biological factors. After z-score normalization, data grouped by cell class and developmental age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by correlation analysis (Figure 1\u2014figure supplement 7A) and PCA before and after normalization (Figure 1\u2014figure supplement 7B, Figures 1F-G). The citation of previous work (Schwanh\u00e4usser et al., 2011) provides context for the limited RNA-protein correlation. The normalization strategy is appropriate and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Regression modeling and hierarchical clustering of the integrated dataset identified 3368 genes classified into nine expression modules. Genes that failed to cluster (2310) or fit (736) were enriched in housekeeping genes including proteasome, spliceosome, and RNA polymerase components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by the statistical analysis pipeline using maSigPro (Nueda et al., 2014) and clustering results (Figures 2A-B, Figure 1\u2014figure supplement 7C-F). The enrichment analysis of unclustered genes (Figure 1\u2014figure supplement 7F) appropriately characterizes these as housekeeping genes with constitutive expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Modules 1 and 2 showed higher expression in progenitors across all timepoints and were enriched in DNA replication and cell activation genes, respectively. Module 2 expression increased with time, consistent with enrichment of outer radial glia markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by expression patterns (Figure 2B) and GO enrichment analysis (Figure 2C, Figure 2\u2014figure supplement 1A-B). The temporal increase in module 2 and its association with outer radial glia markers provides biological coherence to the clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Modules 7, 8, and 9 showed higher expression in neurons across all timepoints. Module 7 was enriched in mitochondrial respiration genes, consistent with the metabolic shift during neurogenesis. Modules 8 and 9 were enriched in axonal and synaptic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by expression patterns (Figure 2B) and GO enrichment (Figure 2C, Figure 2\u2014figure supplement 1A-B). The citation of Iwata and Vanderhaeghen, 2021 for the metabolic shift provides appropriate context. The enrichment patterns are consistent with neuronal differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "In cell class-specific 'C' modules (1, 2, 7, 8, 9), global relative expression of RNA and protein followed similar trends, suggesting regulation via cell class-specific transcription or transcript retention/decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the coherent RNA-protein trends observed in Figure 2B for these modules. The interpretation of transcriptional or RNA stability mechanisms is reasonable given the parallel changes, though additional experiments would be needed to distinguish between these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Module 4 showed decreasing expression over time with similar RNA trends in progenitors and neurons, but higher protein levels in progenitors. This module includes early fate specification genes like FEZF2 and glycolysis-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by expression patterns (Figure 2B) and gene composition analysis. The RNA-protein discordance suggests differential translation or protein stability. The inclusion of FEZF2 and glycolysis genes is consistent with early progenitor functions, supported by citation of Iwata and Vanderhaeghen, 2021.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Module 6 genes showed increased expression at later stages with similar RNA trends but higher protein levels in neurons, suggesting less efficient translation or reduced protein stability in progenitors. This module includes upper-layer fate regulators SATB2 and CUX2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by expression patterns (Figure 2B) showing RNA-protein discordance. The interpretation of differential translation efficiency or protein stability is reasonable. The inclusion of SATB2 and CUX2 is consistent with upper-layer neuronal specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Module 3 genes showed higher transcript levels in progenitors than neurons, but similar protein levels between cell classes. This module is enriched in translational machinery proteins including ribosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by expression patterns (Figure 2B) and GO enrichment (Figure 2C, Figure 2\u2014figure supplement 1A-B). The RNA-protein discordance is striking and suggests posttranscriptional regulation of the translational machinery itself, which becomes a major focus of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Module 5 genes showed opposite RNA-protein patterns in progenitors and neurons, with increasing RNA levels over time (higher in late neurons) but higher protein levels in progenitors (especially early stages). This module is enriched in RNA-binding proteins and ribosome biogenesis factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by expression patterns (Figure 2B) and GO enrichment (Figure 2C, Figure 2\u2014figure supplement 1A-B). The complex RNA-protein relationship suggests sophisticated posttranscriptional regulation of RNA processing machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Cell class-specific 'C' modules showed higher correlation between relative RNA and protein abundance than 'T' and 'A' modules with broader expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by correlation analysis (Figure 2\u2014figure supplement 2B). This observation reinforces that cell class-specific genes are primarily regulated at the transcriptional level, while genes with broader expression patterns involve more posttranscriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Modules 1 and 9 showed high numbers of significantly enriched/depleted RBP motifs in 3'UTRs, with reciprocal relationships between progenitor and neuronal modules. RBFOX1 motifs were enriched in neuronal module 9, while ELAVL family motifs were enriched in progenitor modules 1 and 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by RBP motif enrichment analysis (Figures 3B-C, Figure 3\u2014source data 1). The citations of Lee et al., 2016 for RBFOX1 and Garc\u00eda-Dom\u00ednguez et al., 2011 for ELAVL1 provide functional context. The reciprocal enrichment patterns suggest coordinated posttranscriptional regulation of cell class-specific genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Modules 6 and 8 showed significantly higher density of miRNA-binding sites in 3'UTRs. SATB2, a module 6 member, is regulated by miR-541 and miR-92a/b binding to its 3'UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by miRNA-binding site analysis (Figure 3\u2014figure supplement 1C). The citation of Martins et al., 2021 for SATB2 regulation provides experimental validation of the predicted miRNA regulation. This suggests miRNA-mediated control of fate regulators and neuronal genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Module 3 transcripts were shorter in CDS, 5'UTRs, and 3'UTRs with higher minimum free energy (less stable secondary structures) compared to other modules. Modules 8 and 9 had longer UTRs with lower MFE in 5'UTRs (more stable structures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by transcript feature analysis (Figure 3\u2014figure supplement 1D-I). The structural differences between modules suggest distinct regulatory mechanisms, with module 3's simpler structure potentially facilitating constitutive expression of translational machinery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Genes in 'C' modules have weaker Kozak context scores suggesting reduced translational initiation rates, while 'A' modules have the highest Kozak scores. Previous studies show neurons are enriched for longer genes susceptible to differential transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by Kozak score analysis (Figure 3D) and multiple citations (Gabel et al., 2015; King et al., 2013; McCoy et al., 2018; Miura et al., 2013; Sugino et al., 2014). The weaker Kozak scores in 'C' modules suggest additional translational control mechanisms may be important for cell class-specific expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Modules 3, 4, and 5 showed reduced numbers of predicted uORFs, suggesting limited role of uORF-mediated regulation compared to 'C' modules. uORFs can significantly reduce translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by uORF analysis (Figure 3E) and citation of Barbosa et al., 2013. The reduced uORF presence in modules 3-5 is consistent with their need for efficient translation (module 3) or alternative regulatory mechanisms (modules 4-5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Module 6 3'UTRs are enriched in AU-rich elements that promote context-dependent mRNA decay or stability. Module 9 has significantly fewer AU-rich elements, consistent with depletion of ELAV-like family binding motifs, which are major AU-rich sequence binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by AU-element analysis (Figure 3\u2014figure supplement 1J) and citations (Otsuka et al., 2019; Ma et al., 1997). The correlation between AU-element content and ELAV motif enrichment provides internal consistency to the regulatory feature analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Module 3 is enriched in ribosomal proteins and translation initiation factors containing the 5'TOP motif in their 5'UTR. 5'TOP transcripts were relatively more abundant in progenitors than neurons, with the effect most striking at day 40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by gene composition analysis (Figures 3F-G, Figure 3\u2014source data 3) and expression patterns (Figure 3H). The citations (Cockman et al., 2020; Philippe et al., 2020; Yamashita et al., 2008) establish the 5'TOP motif identity. This observation sets up the major finding of the paper regarding 5'TOP regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "RNA-FISH showed high RPL5 and RPL11 transcript levels in the progenitor-rich VZ and low levels in neuron-rich regions of 40-day organoids. However, protein levels showed no detectable difference between regions. This RNA-protein discordance was validated in sparsely labeled organoids and confirmed in human fetal brain scRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by RNA-FISH (Figure 4A), immunostaining (Figure 4B), quantification in sparsely labeled organoids (Figure 4\u2014figure supplement 1C-E), and analysis of published fetal data (Figure 4\u2014figure supplement 1F, Eze et al., 2021). The convergence of evidence from multiple approaches and validation in vivo strongly supports the RNA-protein discordance for 5'TOP genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A 5'TOP reporter showed lower tagBFP protein yield in progenitors (SOX2+) compared to a non-5'TOP reporter, while neurons (TUJ1+) showed tendency toward higher expression with the 5'TOP reporter. This effect was consistent across H9 and Rozh-5 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by flow cytometry analysis of reporter organoids (Figures 4D-E, Figure 4\u2014figure supplement 3D-E). The consistent observation across multiple cell lines and experiments strengthens the conclusion that the 5'TOP motif reduces protein yield specifically in progenitors. However, the effect in neurons is described as a \"tendency,\" suggesting it may be less robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "5'TOP RNAs localize to stress granules during cellular stress. Sodium arsenite-treated organoids showed more and brighter G3BP1-positive puncta than controls. Control organoids showed weak G3BP1 puncta particularly in the VZ, but did not show generally high phospho-EIF2 levels, indicating absence of acute stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by immunostaining and quantification (Figure 4\u2014figure supplement 4A-F) and citations (Cockman et al., 2020; Damgaard and Lykke-Andersen, 2011; Wilbertz et al., 2019). The presence of G3BP1 puncta without elevated phospho-EIF2 suggests physiological stress granule-like structures rather than acute stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "RPL5 and RPL11 transcripts localize to G3BP1-mScarlet positive stress granule-like structures in the VZ, with similar FISH signal intensity in granules and cytoplasm. In sodium arsenite-treated organoids, these transcripts were strongly enriched in G3BP1-positive granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by RNA-FISH with G3BP1-mScarlet reporter (Figures 4F-G, Figure 4\u2014figure supplement 5A-D) and citations (Damgaard and Lykke-Andersen, 2011; Wilbertz et al., 2019). The similar intensity in granules vs. cytoplasm in control conditions suggests partial sequestration rather than complete translational block, which is an important mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "5'TOP RNAs are more stable in progenitors than neurons, with the difference most prominent at day 40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by relative stability analysis using exonic/intronic read ratios (Figure 4\u2014figure supplement 6A-B). The REMBRANDTS method (Alkallas et al., 2017) is appropriate for estimating RNA stability from RNA-seq data. The increased stability in progenitors is consistent with the observed RNA-protein discordance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The mTOR pathway is a major regulator of 5'TOP translation. Phospho-4E-BP1 showed uniform distribution indicating generally active mTOR signaling, while phospho-S6 showed enrichment outside the VZ in neuronal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by immunostaining (Figure 5\u2014figure supplement 1A-B) and citations (Cockman et al., 2020; Andrews et al., 2020; Eze et al., 2021). The differential distribution of mTOR pathway markers suggests spatial regulation of mTOR activity, with lower activity in early progenitors (VZ) consistent with reduced 5'TOP translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "TSC2-/- organoids showed significantly higher pS6 signal in the VZ, indicating mTOR overactivation. Polysome profiling revealed increased 5'TOP transcripts in high-polysome fractions and increased high-polysome/monosome ratio in TSC2-/- organoids. RPL5 and RPL11 protein levels were increased in the VZ of TSC2-/- organoids without changes in RNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by immunostaining (Figure 5B, Figure 5\u2014figure supplement 1G), polysome profiling (Figures 5E-F), and RNA-FISH/immunostaining (Figure 5G, Figure 5\u2014figure supplement 3A-D). The convergence of evidence from mTOR activity markers, ribosome association, and protein levels in multiple cell lines (H9 and Rozh-5) strongly supports mTOR-mediated regulation of 5'TOP translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Genes with higher translation in TSC2-/- organoids were enriched in modules 4, 7, and 9, while genes with lower translation were enriched in progenitor-specific modules 1 and 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by overrepresentation analysis (Figure 5\u2014figure supplement 4A). The enrichment of neuronal modules (7, 9) in highly translated genes and progenitor modules (1, 2) in less translated genes suggests that mTOR overactivation shifts the translational program toward differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "TSC2-/- organoids showed reduced EGFP+ (progenitor) fraction and increased dTomato+ (neuron) fraction, with increased dTomato:EGFP ratio indicative of increased differentiation. Precocious occurrence of glial marker S100B was observed in TSC2-/- tissue at day 40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by flow cytometry (Figure 5\u2014figure supplement 4D) and immunostaining (Figure 5\u2014figure supplement 4E). The shift in cell population ratios and precocious gliogenesis are consistent with the polysome profiling data showing increased translation of differentiation markers. This demonstrates functional consequences of dysregulated 5'TOP translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "5'TOP transcripts skip global translational inhibition during mitosis but are first to be inhibited during stress. The energetic state and UPR pathway can impact stress granule formation and neurogenesis. Translational regulation of 5'TOP transcripts plays roles in Drosophila germline stem cell differentiation and mouse adult neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by appropriate citations (Park et al., 2016; Cockman et al., 2020; Fonseca et al., 2014; Meyuhas and Kahan, 2015; Wang et al., 2022; Laguesse et al., 2015; Esk et al., 2020; Pa\u0219ca et al., 2019; Martin et al., 2022; Baser et al., 2019). These claims provide important context from the literature supporting the biological relevance of 5'TOP regulation in development and stress responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Ribosome availability is a critical factor for translating mRNAs with complex 5'UTRs. Reduced ribosome biogenesis is indicated in early mouse corticogenesis, with gradual reduction in translational efficiency of 5'TOP genes and ribosome availability at mid-gestation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by appropriate citations (Hetman and Slomnicki, 2019; Chau et al., 2018; Harnett et al., 2021). These claims provide important context from mouse studies that parallel the findings in human organoids, strengthening the biological significance of the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The mTOR pathway's role in progenitor proliferation and neuronal function is well documented. Early radial glia show lower mTOR activity in human organoids, consistent with reports from mouse, 2D cultures, and human fetal transcriptome. Outer radial glia exhibit higher mTOR activity in fetal tissue and organoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by the authors' data (Figure 5\u2014figure supplement 1B) and appropriate citations (Switon et al., 2017; Blair et al., 2018; Blair et al., 2017; Chau et al., 2018; Eze et al., 2021; Andrews et al., 2020). The convergence of evidence across multiple systems and developmental stages supports stage- and cell type-specific mTOR regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Mutations in mTOR pathway-related genes are associated with tuberous sclerosis, focal cortical dysplasia, and megalencephaly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by citation of Crino, 2016. This provides important clinical context for the relevance of mTOR pathway regulation in cortical development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "The integrated dataset describes cell class- and developmental stage-specific gene expression at RNA and protein levels and is available as an R-based Shiny app. This is the first integration of RNA and protein datasets for human corticogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by the availability of the Shiny app (https://organoid.multiomics.vbc.ac.at) and the authors' statement of novelty. The integration of transcriptomics and proteomics across multiple timepoints and cell types represents a significant resource for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The gene regulation of SATB2 observed during mouse corticogenesis also holds true in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by the authors' dataset and citation of Harnett et al., 2021. The conservation of SATB2 regulation between mouse and human demonstrates the translational relevance of the dataset and validates the organoid model.",
+    "result_type": "MINOR"
+  }
+]

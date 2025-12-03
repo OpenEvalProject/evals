@@ -1,0 +1,138 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors developed and validated a computational model of cardiac fibroblast mechanotransduction consisting of 109 nodes and 174 reactions. The model correctly predicted qualitative changes in protein secretion in 81.8% (63/77) of simulations and activation of signaling intermediates in 80.5% (33/41) of simulations when compared to independent experimental studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 and C41-C43 collectively demonstrate successful model development and validation. The model structure is clearly defined (C10, C11, C12), validation methodology is rigorous with independent literature sources (C42), and prediction accuracy exceeds 80% for both outputs and intermediates (C13, C14). The validation approach using separate literature and appropriate tension parameters (C43) strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The model predicts extensive mechano-chemo interactions where mechanical tension amplifies, dampens, or reverses fibroblast responses to biochemical stimuli. At moderate tension levels (0.5), 56.7% of node AUCs were altered, while at high tension (0.9), 60.4% were altered. Moderate tension primarily amplified responses (51.8% of nodes), while high tension dampened responses (56.4% of nodes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 provide comprehensive computational evidence for mechano-chemo interactions with quantitative metrics (C17, C18) and mechanistic explanations (C21, C22). The analysis includes statistical validation (Table 1 referenced in text) and specific examples with mechanistic basis (C21, C22, C23). The 5% threshold for defining interactions is justified by prior work, though the biological significance of this computational threshold could be questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Network perturbation analysis revealed tension-dependent influential mechanisms. At low tension, knockdowns produced minimal effects. At medium tension, AT1R knockdown showed broad inhibition (35.9% \u00b1 5.4% reduction). At high tension, NOX, ROS, AP1, and JNK emerged as top influencers, mediating 80.6% \u00b1 4.3% reduction in MAPK pathways and 30.9% \u00b1 8.9% reduction in procollagen expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 demonstrate systematic perturbation analysis across tension conditions with quantitative results. The findings are internally consistent and supported by computational data in Figure 4. However, these are purely computational predictions without experimental validation, which limits confidence in the biological relevance of the specific quantitative values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The model successfully predicted effects of current post-MI therapeutics (ARB and ARB-NEPi combinations) on fibroblast behavior, matching experimental findings from von Lueder et al. 2015 and Burke et al. 2019. The model confirmed synergistic inhibition of \u03b1SMA, collagen I, and periostin by ARB-NEPi combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 demonstrate successful validation against independent experimental studies of clinically relevant drugs. The model predictions qualitatively match published experimental results (Figure 5A-B), providing evidence that the model captures relevant biology. However, the validation is qualitative rather than quantitative, and parameter choices for simulating drug effects (Table 2) involve assumptions that could affect predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A computational screen of 23,544 combinatory drug perturbations identified 13 mechano-adaptive drug combinations that adapt matrix expression to regional tension. These primarily targeted IL6 and Akt/mTOR pathways (8 of 13 treatments). Experimental validation of six combinations showed four had statistically significant mechano-adaptive effects on collagen content (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present a major finding with both computational predictions and experimental validation. The computational screen is comprehensive (C29, C30), identifies specific pathways (C32), and importantly includes experimental validation (C33) showing 4/6 predictions were confirmed. The experimental validation using human cardiac fibroblasts on variable stiffness substrates (C46-C50) provides strong support, though the 67% validation rate (4/6) suggests some limitations in predictive accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The introduction establishes the clinical context and biological background for cardiac fibrosis post-MI, including epidemiology, current therapeutics, the role of fibroblasts, and the importance of both biochemical and biomechanical factors in regulating fibroblast behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide background context supported by appropriate citations to prior literature. These claims establish the rationale for the study but do not present new findings. All claims are properly attributed to cited sources (Benjamin 2019, Shah et al. 2017, Ponikowski et al. 2016, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The discussion contextualizes findings within prior experimental literature, citing evidence for mechano-chemo crosstalk mechanisms including CREB activation effects, TGF\u03b21 synergy with tension, IL1 context-dependent regulation, NOX/ROS pathway importance, and risks of global anti-fibrotic therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 appropriately cite and interpret prior experimental literature to support the model predictions. These claims provide important context but represent interpretation of existing literature rather than new findings. All claims are properly attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The experimental validation used primary human ventricular cardiac fibroblasts cultured on variable stiffness plates (8 kPa vs 64 kPa) with seven treatment conditions, three biological replicates, and five technical replicates per condition, totaling 210 images analyzed for collagen content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 describe the experimental methods used for validation. The experimental design is appropriate with biological and technical replicates (C50), variable stiffness substrates to test mechanical effects (C47), and primary human cells (C46). The methods are clearly described and support the validation results in C33.",
+    "result_type": "MINOR"
+  }
+]

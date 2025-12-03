@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C23",
+      "C24"
+    ],
+    "result": "During awake hippocampal ripples, neocortical membrane voltage in superficial layers shows fast post-ripple hyperpolarization, contrasting sharply with sleep where depolarization dominates. This hyperpolarization is strongest and fastest in aRSC, consistent across all six animals, and is preceded by pre-ripple voltage elevation also strongest in aRSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C23-C24 provide converging evidence from voltage imaging across multiple animals (n=6) showing consistent post-ripple hyperpolarization strongest in aRSC, with statistical support from bootstrap distributions and repeated-measure ANOVA. The contrast with sleep data (C15) is supported by comparison with prior published work and figure supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Glutamate signal in neocortical superficial layers shows pre-ripple reduction followed by post-ripple elevation across all imaged regions. Regional variation exists with BC, Aud, and V2M showing highest amplitude and earliest onset, while aRSC shows lowest amplitude, steepest slope, and latest onset of glutamate elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by glutamate imaging data (n=4 iGlu-Ras mice) with statistical analysis including repeated-measure ANOVA and bootstrap distributions showing significant regional differences. The findings are internally consistent and reference appropriate figure supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Two-photon calcium imaging reveals two equally sized subpopulations of aRSC excitatory neurons with opposite peri-ripple modulation: one elevated and one suppressed during/after ripples. These subpopulations show inverse pre-ripple modulation patterns. Deconvolved analysis shows 8.46%\u00b13% of neurons are significantly modulated, with 81.08%\u00b18.91% being up-modulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by two-photon calcium imaging data (n=11 mice) with k-means clustering analysis and statistical validation via shuffling procedures. The findings are consistent with prior work (C36) and include appropriate quantification of modulated neurons with statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Singular value decomposition of glutamate activity reveals two distinct components: a dominant positive modulation (component 1, explaining 83.11%\u00b16.75% variance) present globally, and a negative modulation (components 2-100) specific to aRSC. The timing of the negative component matches voltage hyperpolarization in aRSC, while the positive component timing matches calcium activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C45-C46 are supported by SVD analysis of glutamate imaging data showing mathematically decomposed components with distinct spatial and temporal patterns. The timing correspondence between negative glutamate component and voltage activity (C43) and between positive component and calcium activity (C45) provides internal validation. Correlation analysis (C46) further supports the functional significance of the negative component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C33",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Ensemble-wise correlation analysis reveals enhanced coordination (~0-100 ms window) between hippocampal MUA and aRSC voltage activity, but not with aRSC glutamate activity or somatosensory regions. The correlation peaks at (75,75) ms when both signals are decreasing, with HPC MUA preceding aRSC voltage by <70 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C33, C56-C58 are supported by correlation analysis across VSFP animals (n=6) with cluster-based significance testing and asymmetry index analysis. The specificity to aRSC voltage (not glutamate or other regions) and the temporal relationship are quantitatively characterized with appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C75"
+    ],
+    "result": "Layer-dependent differences in glutamatergic modulation exist, with the onset of negatively modulated glutamate signal occurring significantly earlier in EMX (all layers) than Ras (superficial layers) mice, suggesting deep pyramidal neurons receive glutamatergic modulation earlier than superficial neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by comparison between iGlu-EMX (n=4) and iGlu-Ras (n=4) mice with statistical testing (two-sided ranksum test, p=0.0286). The inference about layer-dependent timing (C75) is appropriately cautious and based on the differential expression patterns of the indicators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Post-ripple hyperpolarization in aRSC shows no significant correlation with ripple amplitude or duration. However, bundled ripples show larger pre-ripple depolarization and delayed post-ripple hyperpolarization compared to single ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by correlation analysis and comparison of single vs bundled ripples with appropriate figure supplements. The negative findings (C18-C19) are appropriately reported with statistical testing, and the bundled ripple differences (C20-C21) are documented with references to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Ripple power is highest before aRSC voltage troughs but not after peaks. Prior work shows only 1/33 aRSC neurons exhibited up/down-state transitions, with 10/30 showing post-ripple hyperpolarization and modest modulation (~20% of up/down-state range), suggesting post-ripple aRSC hyperpolarization is not necessarily due to awake down-states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 combine current triggered-averaging analysis (C50-C51) with appropriate citation of prior work (C52-C54, Chambers et al. 2022) to draw a reasonable inference (C55). The logic connecting the observations to the conclusion is sound, though the inference is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Under urethane anesthesia (sleep-like state), ensemble-wise correlation analysis reveals no significant correlation between HPC MUA and aRSC voltage activity, contrasting with the awake state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by correlation analysis under anesthesia with reference to figure supplement. This provides important state-dependent context for the awake findings, though sample size details are not fully specified in the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Mean peri-awake-SWR glutamate concentration shows delayed elevation rather than reduction. The iGluSnFR sensor has a rise-to-half-peak-time of ~15 ms, constraining interpretation of timing delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by glutamate imaging data and technical specifications of the sensor from cited literature (Marvin et al., 2013). This provides important context for interpreting the timing of glutamate signals relative to other measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The negatively modulated glutamate component is present only in aRSC, yet voltage reduction occurs in all recorded regions, supporting the hypothesis of peri-awake-SWR inhibition throughout neocortex. Overall, inhibition is more pronounced in peri-ripple neocortical activity during awake than sleep states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 represent key inferences from the SVD analysis and overall study findings. The logic is sound: if only aRSC shows negative glutamate modulation but all regions show voltage reduction, inhibition must be present more broadly. This conclusion integrates multiple lines of evidence from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study's main findings show state-dependent differences in peri-ripple neocortical activity: awake state shows dominant deactivation in voltage and activation in glutamate (especially in aRSC), with two subpopulations of neurons showing opposite modulation. These differences might underlie functional differences between sleep and awake ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the study's primary conclusions as stated in the abstract. These are well-supported by the detailed experimental findings (voltage imaging, glutamate imaging, calcium imaging) documented in other claim groups. The speculation about functional implications (C5) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C47"
+    ],
+    "result": "The reduction of voltage in aRSC could be due to reduction of excitatory glutamatergic input, and glutamate activity could potentially be a multiplex of separate components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44 and C47 are speculative interpretations (marked as SPECULATION/INFERENCE in evidence_type). While the timing match between negative glutamate and voltage signals (C43) provides circumstantial support, these remain hypotheses requiring direct experimental validation. The SVD analysis demonstrates mathematical decomposition but does not prove biological multiplexing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Multiple potential sources of excitatory and inhibitory inputs to aRSC during peri-ripple periods are proposed: indirect hippocampal input through intermediate neocortical regions, self-excitation, subcortical motion-generation structures, long-range inhibitory projections from CA1, and feed-forward inhibition from CA1 or gRSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C68 are speculative interpretations based on anatomical connectivity and timing observations. While plausible and grounded in cited anatomical studies, these remain hypotheses without direct experimental validation in this study. The authors appropriately use cautious language ('plausible', 'potential source').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Peri-ripple inhibition may enhance awake replay fidelity by increasing signal-to-noise ratio through suppressing non-mnemonic neuronal populations during mnemonic replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is speculative, building on cited prior work about replay fidelity differences (C73) but without direct experimental evidence linking inhibition to fidelity in this study. This represents a reasonable hypothesis for future testing but is not demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study employed multiple transgenic mouse lines with appropriate imaging modalities: VSFP mice (n=6 male) for voltage, iGlu-Ras mice (n=4 female) for superficial glutamate, iGlu-EMX mice (n=4 male) for all-layer glutamate, and Thy1-GCaMP6s mice (n=11 female) for calcium imaging. Ripples with EMG activity within \u00b1500 ms were excluded (28.47%\u00b115.76%), and animals showed movement after but not before ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 describe methodological details that are clearly documented. However, there is a notable sex imbalance across experimental groups that is not discussed, which could be a confounding factor. The EMG-based exclusion criteria are appropriate and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background context establishes that hippocampal-neocortical interactions around ripples are important for memory, with state-dependent functions (sleep consolidation vs awake planning/retrieval). Slow oscillations are nearly absent during wakefulness, and prior work shows higher proportion of suppressed neurons around awake vs sleep ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide literature context supported by appropriate citations. These establish the scientific background and motivation for the study. C1 and C2 include some speculation about functional differences, but this is appropriate for framing the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior work documents peri-ripple modulation across multiple brain regions, with suppression reported in mPFC and gRSC during awake ripples. Thalamic contributions are unlikely given suppression of thalamic neurons and axons during awake ripples. Awake replay fidelity exceeds sleep replay fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C69-C73 appropriately cite prior literature to contextualize findings. The inference about thalamic contributions (C70) is reasonable given the cited evidence. These claims provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Pre-ripple larger depolarization might signal the occurrence of bundled ripples, similar to observations during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 is speculative, drawing an analogy to sleep findings. While the observation of larger pre-ripple depolarization for bundled ripples is supported (C20), the functional interpretation as a 'signal' requires additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

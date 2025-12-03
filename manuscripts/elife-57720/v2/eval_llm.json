@@ -1,0 +1,475 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study identified 2747 SUMOylation sites in 775 proteins during meiotic prophase I in budding yeast, representing a substantial expansion over previous work which identified 244 targets and 257 sites in vegetative yeast. Individual time-point samples identified between 505-553 target proteins and 1147-1362 sites, with 1866 of 2414 sites assigned with high confidence (localization probability \u22650.96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37-C41 are directly supported by mass spectrometry data presented in the manuscript. The numbers are specific, reproducible across replicates (r \u2265 0.8 Pearson correlations, C35), and represent a major advance over prior work (C38-C39). The high localization probabilities (C41) indicate robust site assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "SUMOylation sites predominantly cluster in disordered protein regions and only a minority (14.26%) conform to the canonical consensus motif \u03c8-K-x-E/D. Sites tend to cluster within proteins (47% probability of adjacent sites being <5 residues apart), are depleted from globular/buried/transmembrane regions, and are enriched in moderately disordered regions. GPS-SUMO software predicted less than 19% of identified sites even at low stringency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-C48 are well-supported by computational analysis of the identified sites (Figure 2D-H). The structural predictions and motif analysis are appropriate for the data type. The poor performance of prediction software (C45) validates the empirical approach and highlights the value of the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "Execution-point analysis using auxin-induced degradation of the SUMO E1 enzyme (Aos1-AID) at different meiotic stages revealed distinct temporal requirements for SUMOylation. Degradation at different timepoints showed: (1) S-phase delay and division block when degraded 30 min after meiotic entry; (2) DSB formation block (~2 hr) and complete crossover/division block when degraded after cdc7-as release; (3) defects in JM formation timing, JM resolution, synapsis, and de-synapsis when degraded post-DSB, with 70% reduction in crossovers and 48% reduction in non-crossovers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70, C75 are supported by multiple complementary assays including Western blots confirming protein degradation (Figure 3B-C, supplements), FACS analysis (C62), Southern blots for recombination intermediates (C63-C68), and immunofluorescence for synapsis (C69). The execution-point strategy is well-designed with appropriate controls (no auxin conditions). The phenotypes are quantified and show clear differences between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Late-stage degradation of Aos1-AID (condition 4, during pachytene exit) allowed efficient meiotic divisions, suggesting de novo SUMOylation is not essential for MI and MII. However, Uba2-AID degradation at this stage caused reproducible MI delay and reduced spore viability (74% vs 93%). Both Aos1-AID and Uba2-AID degradation caused ~30 min delays in JM resolution and crossover formation, with ~18% reduction in final crossover levels, accompanied by delayed de-synapsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by data in Figure 3K-M and supplements. The distinction between Aos1-AID and Uba2-AID effects (C72) is interesting and appropriately noted. The quantification of delays and reductions is specific and supported by the data. The inference about non-essentiality for divisions (C71) is reasonable given efficient division in Aos1-AID but should be tempered by the Uba2-AID results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SUMO itself (Smt3) was the fifth largest contributor to total LFQ signal intensity, with all nine lysines identified as acceptor sites. K15 was the dominant SUMO chain linkage followed by K11 and K19, consistent with chains linked via the N-terminal extension. SUMO chains increased sharply after DSB formation and peaked in pachytene, with dynamics closely matching those of the prominent substrate Ecm11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are directly supported by mass spectrometry data (Figure 4B-C, 4L). The identification of all nine lysines as acceptor sites is comprehensive. The K15 dominance and temporal dynamics are clearly shown in the figures. The correlation with Ecm11 dynamics (C81) is supported by prior work (citation) and the current LFQ data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Ubc9 was the largest single contributor to total LFQ signal intensity, with 15/17 lysines identified as SUMO acceptor sites. K153 accounted for the vast majority of signal (365-fold higher than the next site). K153-SUMO inhibits conjugase activity and enhances chain formation (prior work), is particularly important for SC formation in meiosis, and showed high levels in G0, a drop in S phase, then increase at SC formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are well-supported by mass spectrometry data (Figure 4C) and prior functional studies (C85-C86, citations provided). The 365-fold enrichment of K153 (C84) is striking and validates prior functional work. The temporal dynamics (C87) are clearly shown and biologically interpretable in the context of SC formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Twenty-seven acceptor sites (57% of all lysines) were identified on Uba2, the catalytic subunit of the E1 enzyme. Four prominent sites (K172, 229, 273, 277) showed ~4-fold higher intensities. K172 (or adjacent K167/168) lies in the crossover loop involved in conformational changes and is predicted to be inhibitory. K273 and K277 lie proximal to the adenylate in the closed conformation and are also predicted to be inhibitory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by mass spectrometry data (Figure 4D-E) and structural analysis. The extensive SUMOylation of the E1 enzyme itself is notable. The structural predictions (C90-C91) are reasonable inferences based on known E1 structure (citation provided) and site locations, though functional validation would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Three of four known yeast SUMO E3s (Siz1, Siz2, Zip3) were modified in meiosis with diverse SUMOylation profiles. Siz1 SUMOylation (dominated by K648) was high in G0/S-phase, dipped during DSB formation, then returned. Ecm11 can be targeted by both Siz1 and Siz2. Siz2 (five sites) showed low SUMOylation during S phase but rose after DSB formation with a large increase during crossover formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by mass spectrometry data (Figure 4F-H) and prior work on E3-substrate relationships (C95, citation). The distinct temporal profiles of different E3s suggest specialized functions at different meiotic stages. The absence of Mms21 detection is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "Seventeen acceptor sites were mapped in the meiosis-specific E3 ligase Zip3, scattered throughout the coiled-coil and tail, but K441 accounted for almost 90% of total intensity. K441 appears to be part of a compound modification motif (441-KRSNSTQ-447) that includes a Mec1/Tel1 consensus site (S/T-Q), with phosphorylation potentially priming SUMOylation. Prior work showed these S/T-Q sites are required for Zip3 accumulation at recombination sites and crossover function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C104 are supported by mass spectrometry data (Figure 4I) and prior functional studies (C104, citation). The compound modification motif hypothesis (C102) is a reasonable inference supported by detection of co-modified peptides (~2/3 of peptides). The speculation about K441-SUMO as a downstream effector (C105) is appropriately tentative but logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Thirty-two acceptor sites were mapped across the N-terminal region of the SUMO isopeptidase Ulp1, excluded from the C-terminal catalytic domain. Most sites locate in overlapping regions required for nuclear pore tethering (144-346) and substrate specificity (1-417). Ulp1-SUMO signal dipped around DSB formation but increased with synapsis, suggesting global changes in de-SUMOylation at these times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by mass spectrometry data (Figure 4J) and prior structural/functional studies (citations). The exclusion of sites from the catalytic domain is notable and appropriate. The inference about global de-SUMOylation changes (C109) is reasonable based on the temporal dynamics but remains somewhat speculative without direct measurement of de-SUMOylation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Ubiquitin itself was SUMOylated on six lysines that are also sites for ubiquitin chain formation (K6, 11, 27, 29, 48, 63). K48 and K11 were most abundant followed by K27. K48 SUMOylation peaked during DSB formation then dipped, potentially modulating proteasome targeting. This observation corroborates evidence for mixed ubiquitin-SUMO chains with potential for novel signaling functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by mass spectrometry data (Figure 4K) and prior work on mixed chains (C117, citations). The SUMOylation of ubiquitin at chain-forming lysines is striking. The speculation about proteasome targeting modulation (C116) is reasonable but requires functional validation. The method's specificity for SUMO vs ubiquitin (C34) strengthens confidence in these identifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Mapping SUMOylation sites onto the six SMC proteins revealed strong bias for modification of coiled-coil regions. Helical projections showed most sites are solvent exposed and unlikely to alter underlying coiled-coil structures. Given this general propensity and similar SUMOylation profiles, SUMOylation of all SMC proteins may have a common function, such as competing/synergizing with acetylation to regulate SMC coiled-coil interactions or influencing folding at the elbow region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by mass spectrometry data and structural analysis (Figure 5A, supplements 1-3). The solvent exposure analysis (C121) is appropriate and well-executed. The speculation about common function (C122) is reasonable given the shared localization pattern but remains hypothetical. The cited mechanisms (acetylation competition, elbow folding) are plausible based on prior work (citations) but require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "All meiotic cohesin components were SUMOylated on multiple sites: Smc1 (16), Smc3 (14), Pds5 (6), Irr1/Scc3 (3), Rec8 (16). SUMOylation was largely undetectable in G0 despite non-meiotic specificity of most components. Rec8-SUMO increased rapidly by S-phase and remained high. Smc1/Smc3 SUMOylation was less intense, with low S-phase levels but large increases after DSB formation. These profiles are consonant with essential roles in cohesion establishment during S phase but also point to later roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by mass spectrometry data (Figure 5B-C). The temporal dynamics are clearly shown and biologically interpretable. The inference about S-phase roles (C127) is supported by prior work in mitotic cells (citation) and the current dynamics. The suggestion of later roles is reasonable given the post-DSB increases but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "All condensin subunits were SUMOylated in meiosis, with the kleisin Brn1 most intense. Ten sites were mapped in Brn1 with K628 predominating, which has potential to influence Ycg1 interaction. Unlike cohesin, significant condensin SUMOylation was detected in G0 and increased steeply after DSB formation. Brn1's modification profile resembles SC formation proteins (Zip1, Zip3, Ecm11, Gmc2) unlike Rec8 which resembles axis proteins, consistent with later loading and function of condensin in meiotic prophase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are supported by mass spectrometry data (Figure 5D). The K628 predominance and potential Ycg1 interaction (C129) is supported by structural work (citation). The profile comparisons (C131) are appropriate and the inference about later condensin function (C132) is reasonable based on the dynamics and prior knowledge, though direct functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Thirty-two conjugation sites were identified in Red1, with 20 clustering in a broad domain (492-702) surrounding a lysine-rich patch important for Red1 SUMOylation, SC assembly, and crossover interference. Sites overlap regions interacting with Mec3/Ddc1 (9-1-1 clamp components) and two SIMs mediating Zip1 interaction. Additional sites were located at the Red1 closure motif (bound by Hop1) and in the C-terminal coiled-coil mediating Red1 oligomerization, suggesting SUMO may influence all aspects of Red1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are supported by mass spectrometry data (Figure 5J) and prior functional/structural studies (citations). The comprehensive site mapping across functional domains is impressive. The inference that SUMO influences all Red1 functions (C142) is reasonable given the site distribution but remains somewhat speculative without systematic functional analysis of individual sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Twenty of 21 Ecm11 conjugation sites mapped to the unstructured N-terminal region, but K5 SUMOylation was over four orders of magnitude more intense than any other site. K5 was previously shown to be responsible for most Ecm11 SUMOylation and is essential for function. Twenty-three sites were mapped in Zip1 including clusters at boundaries between the helical core and disordered termini. Site locations point to possible roles in Zip1 zipper-like lattice self-assembly. A C-terminal cluster overlaps with a Red1-interaction region including a SIM required for Zip1-Red1 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 are supported by mass spectrometry data (Figure 5M-N) and prior functional studies (C149, citations). The >10,000-fold enrichment of Ecm11-K5 (C148) is striking and validates prior functional work, demonstrating the value of LFQ analysis. The inferences about Zip1 functions (C152-C155) are reasonable based on site locations and prior work (citations) but remain somewhat speculative without direct functional validation. The overall conclusion (C156) appropriately summarizes these possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Two key regulatory DSB factors, Spp1 and Mer2, were SUMOylated at multiple sites. Sharp SUMOylation peaks for both were observed at the DSB time point, suggesting roles in initiating homologous recombination. The 13 SUMO sites in Mer2 do not overlap with known phosphorylation sites, suggesting parallel regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 are supported by mass spectrometry data (Figure 6B). The temporal correlation with DSB formation is clear and the inference about roles in HR initiation (C159) is reasonable. The observation about non-overlapping phosphorylation sites (C160) is interesting and suggests independent regulatory inputs, though functional validation would strengthen this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The SUMOylation profiles of Rad52 and its paralog Rad59 were tightly matched, rising at DSB formation, continuing during strand invasion, then rising again during crossover formation. Rfa1 (RPA large subunit) was SUMOylated at five sites (K68, 170, 180, 411, 427), with four sites enhancing DNA-damage checkpoint signaling in vegetative cells by strengthening Sgs1 interaction. Rfa1-SUMO levels were low until the strand invasion timepoint, then increased dramatically and remained high, arguing against an early role in Dmc1/Rad51 assembly and suggesting D-loop associated Rfa1 becomes SUMOylated to regulate post-invasion steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 are supported by mass spectrometry data (Figure 6C-D) and prior functional studies (C166, citation). The temporal dynamics are clearly shown. The inference about Rfa1 function (C168) is reasonable based on the late timing of SUMOylation but remains somewhat speculative. The argument against early Dmc1/Rad51 assembly roles is logical but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Both Sgs1 and Top3, but not Rmi1, were SUMOylated during meiosis. Sgs1-SUMO rose dramatically with strand exchange and rose again during crossover formation. Contrary to inferences that modification in vegetative cells occurs primarily at three consensus sites (K175, 621, 831), meiotic SUMOylation occurred at six non- and partial-consensus sites dominated by K26. K26 and K35 lie in the Top3-interaction domain and may influence their interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C179 are supported by mass spectrometry data (Figure 6G-H) and comparison to prior work (C178, citation). The difference between meiotic and mitotic site usage (C178) is interesting and suggests context-dependent regulation. The inference about Top3 interaction (C179) is reasonable based on domain localization but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The four core histones, H2A.Z, linker histone H1, and centromeric histone Cse4 were SUMOylated in meiosis. Many mapped sites are also targets of other lysine modifications suggesting antagonistic relationships, but specific examples of obligate co-modification with phosphorylation or acetylation were found, pointing to cooperative interactions. For H2A, K123 SUMOylation was only observed with T125 or S128 phosphorylation (Hta1) or always with S128 phosphorylation (Hta2), suggesting phospho-dependent SUMOylation of K123 but not K126. Both K123 and K126 SUMOylation appeared at S-phase onset, increased with DSB formation, and persisted throughout prophase, suggesting a compound role in S-phase and/or recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C187 are supported by mass spectrometry data (Figure 7A-C) and prior work on H2A phosphorylation (C186, citation). The obligate co-modification observations (C183-C185) are particularly strong evidence for phospho-dependent SUMOylation. The inference about compound roles (C187) is reasonable but remains somewhat speculative without functional validation of the co-modified forms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C190",
+      "C191"
+    ],
+    "result": "K123 was the most prominent H2B SUMOylation site, climbing in intensity throughout prophase I. The authors suggest H2B K123 SUMOylation may compete with ubiquitylation to down-regulate H3-K4 methylation and thereby repress middle meiotic genes and attenuate DSB formation in later stages of meiotic prophase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C190 is supported by mass spectrometry data (Figure 7D) showing clear temporal dynamics. However, claim C191 is speculative, based on known roles of K123 ubiquitylation in H3-K4 methylation but without direct evidence that SUMOylation competes with ubiquitylation or affects H3-K4 methylation levels. Functional experiments testing this hypothesis are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "SUMOylation of H4 at K5, 16, and 20 was always coincident with acetylation. The most abundantly SUMOylated H4 site, K77, showed a distinct transient peak in S-phase and DSB timepoints. The authors suggest K77/79 SUMOylation may facilitate replication of transcriptionally repressed regions of the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C194 are supported by mass spectrometry data (Figure 7A, F) showing obligate co-modification and distinct temporal dynamics. The speculation about K77/79 function (C195) is reasonable given the S-phase timing and known roles of K77/79 acetylation in silencing (citation) but remains hypothetical without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Linker histone H1 was extensively SUMOylated with levels increasing throughout meiosis. Two of the highest intensity SUMO sites (K131, K133) were always present on peptides co-modified with phosphorylation at S129, a CDK site. These observations point to a cooperative function for SUMO and phosphorylation in regulating H1 dynamics on meiotic chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C197 are supported by mass spectrometry data (Figure 7G) showing extensive SUMOylation and obligate co-modification. The inference about cooperative function (C198) is reasonable based on the co-modification pattern but remains somewhat speculative without functional studies demonstrating the biological consequences of this regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C55",
+      "C56"
+    ],
+    "result": "High-quality biological replicates were obtained (r \u2265 0.8 Pearson correlations) for quantitative analysis. Dual digestion with LysC and LysC+GluC increased protein identification by 11% and site mapping by 27%. Western blot validation of selected conjugates generally matched proteomics profiles, implying inferred dynamics reflect changes in target SUMOylation rather than simply protein levels. Red1 was a notable exception where SUMOylation levels appeared constant with changes reflecting total protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C55-C56 address methodological quality and validation. The high correlation between replicates (C35, Figure 2\u2014supplement 1A) demonstrates reproducibility. The dual digestion benefit (C36) is clearly quantified. The Western blot validation (C55, Figure 2\u2014supplement 2) strengthens confidence in the LFQ dynamics, and the Red1 exception (C56) is appropriately noted and explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Strains were engineered to express 6His-Smt3-I96K from the native SMT3 locus. The construct is functional as reflected by 96% spore viability and normal meiotic timing/efficiency. The method unambiguously distinguishes SUMO from ubiquitin conjugation sites because LysC (\u00b1GluC) digestion does not yield a di-glycine remnant for ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe key methodological innovations. The strain construction (C32) is well-documented with citations. Functionality is demonstrated by spore viability and meiotic progression data (C33, Figure 1B-D). The specificity for SUMO vs ubiquitin (C34) is critical and well-supported by prior work (citations) and the method design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cumulative site intensities have predictive value for identifying functionally important sites, exemplified by higher intensities of sites with known physiological roles in Ubc9 (K153) and Ecm11 (K5). Different sites within a single target can have distinct SUMOylation dynamics (e.g., H4-K77 vs other H4 sites). Different targets show radically different SUMOylation dynamics, but hierarchical analysis rendered clusters of functionally related and physically interacting proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe analytical insights from the LFQ data. The predictive value (C50) is validated by known functional sites (citations). The site-specific (C51, Figure 7F) and target-specific (C52, Figure 2J) dynamics are clearly shown. The hierarchical clustering (C53, Figure 2K-N) appropriately identifies biologically meaningful groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Gene ontology analysis showed strong enrichment for nuclear processes, especially chromosome metabolism and ribosome biogenesis. Cytosolic processes were enriched due to glycolytic enzymes and carbohydrate metabolism. Membrane-associated processes were underrepresented, possibly reflecting low expression, hydrophobicity, and lower Lys-C cutting site density. Network analysis revealed large clusters of physically interacting proteins consistent with group SUMOylation. Almost all 40S and 60S ribosome subunits were SUMOylated (84 proteins, 527 sites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe GO and network analysis results (Figure 2\u2014supplements 1B-C, 3). The enrichments are clearly shown and biologically interpretable. The explanation for membrane protein underrepresentation (C59) is reasonable and appropriately caveated. The ribosome SUMOylation (C61) is striking and well-documented. The group SUMOylation paradigm (C60) is supported by prior work (citations) and the current network analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Standard meiotic time-courses have poor temporal resolution of meiotic prophase I events. To improve synchrony, the authors employed the Berchowitz method using copper-inducible IME1 expression for meiotic entry and estradiol-inducible NDT80 for pachytene exit. Cell samples were harvested at six timepoints capturing key transitions of meiotic prophase I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the experimental design for achieving high synchrony. The rationale (C24) is clear. The methods (C25-C27) are well-established (citations) and appropriately applied. The timepoint selection (C28) is well-justified and documented (Figure 1A-D, supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Three major impediments to SUMO proteomics were addressed: (i) proteases are hyper-activated in meiotic cells; (ii) SUMOylation stoichiometry is typically very low (the 'SUMO paradox'); (iii) the native branched SUMO remnant from trypsin digestion (K-\u03b5-GGIQE) is not amenable to efficient MS-based identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe technical challenges that motivated the methodological approach. All three challenges are well-established in the literature (citations provided) and appropriately addressed by the experimental design (denaturing conditions, affinity purification, LysC digestion).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C9",
+      "C202"
+    ],
+    "result": "The study concludes that SUMO plays diverse and unanticipated roles in regulating meiotic chromosome metabolism, orchestrating the elaborate events of meiosis to faithfully produce haploid gametes. SUMOylation regulates all levels of chromosome organization and each step of meiotic prophase I, with functions in S-phase, recombination initiation, chromosome synapsis, and crossing over. The dataset marks a breakthrough for the field, providing a rich resource for functional analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C6, C9, C202 represent summary conclusions. These are well-supported by the comprehensive proteomics data (C2, C37), the execution-point analysis (C62-C75), and the identification of SUMOylated proteins in all relevant functional categories. The characterization as a 'breakthrough' (C202) is justified by the scale and quality of the dataset compared to prior work.",
+    "result_type": "MAJOR"
+  }
+]

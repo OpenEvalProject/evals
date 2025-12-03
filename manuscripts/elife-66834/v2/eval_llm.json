@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "OIL-PCR is a novel method that combines bacterial isolation, lysis, and fusion PCR into a single streamlined emulsion-based reaction. The method uses Ready-Lyse Lysozyme incorporated into the fusion PCR master mix, requires BSA for compatibility, and can be performed in a 96-well format using standard laboratory equipment without microfluidics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C50 collectively describe the technical development and optimization of OIL-PCR. The method is well-documented with experimental validation shown in supplementary figures (C41, C43, C50), demonstrating compatibility of lysozyme with PCR, emulsion stability, and optimization of reaction conditions. The procedural steps are clearly described and supported by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A TaqMan qPCR assay was developed to determine optimal cell input concentration for OIL-PCR, establishing that 400 cells/\u03bcl or 40,000 cells per reaction prevents non-specific gene fusions. The emulsion was confirmed to be highly stable with no detectable coalescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 describe the optimization of cell input concentration with experimental validation shown in Figure 1\u2014figure supplement 3b. The TaqMan assay provides quantitative evidence for the optimal concentration, and coalescence testing confirms emulsion stability. The approach is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Nycodenz density gradient centrifugation was used to purify bacterial cells from environmental samples, and dsDNase treatment was applied to remove extracellular DNA. The dsDNase treatment has the potential to increase cell input tenfold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe sample preparation methods with appropriate citations (C58, C59) and experimental validation (C62, Figure 1\u2014figure supplement 3c). The Nycodenz purification and dsDNase treatment are established techniques appropriately applied to address contamination concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C28"
+    ],
+    "result": "OIL-PCR demonstrated high accuracy (97.8-99.2%) in spike-in experiments with E. coli at 0.1% abundance (~20 cells) in environmental stool samples, showing sensitivity to detect low-abundant species. Accuracy remained high (97%) even at 10% abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C28 are supported by experimental data shown in Figure 1b from spike-in experiments across three different stool samples. The quantitative accuracy measurements with technical replicates provide strong evidence for the method's sensitivity and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Lysozyme treatment significantly increased OTU recovery in chicken stool, particularly for Firmicutes, Bacteroidetes, and Cyanobacteria, with 14 taxonomic groups significantly enriched. In human stool, lysozyme enriched Firmicutes and Lachnospiraceae. dsDNase and heat inactivation had no significant effect on OTU recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by statistical analysis (Welch's t-test with FDR correction) and rarefaction curves shown in Figures 1c, 1\u2014figure supplement 5, and 1\u2014figure supplement 6. The analysis appropriately uses multiple technical replicates and proper statistical corrections. No taxonomic groups were depleted, addressing potential bias concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "OTU recovery from OIL-PCR was significantly lower than standard 16S sequencing at the same sampling depth, but this was due to subsampling bias rather than failure to capture taxa. Combining technical replicates increased OTU counts, leading to the recommendation to perform OIL-PCR in replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by experimental data in Figure 1\u2014figure supplement 7 showing that combining replicates increases OTU recovery. The interpretation that subsampling bias (not method failure) causes reduced OTU counts is supported by the observation that combining input Nycodenz sequencing did not show the same up-shift pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C123",
+      "C124"
+    ],
+    "result": "OIL-PCR was automated using a liquid handling robot to process up to 48 samples simultaneously in 96-well format. The method can be multiplexed to target at least three genes per reaction, increasing throughput at least threefold to 144 gene-sample association tests per batch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77, C123-C124 describe automation and multiplexing capabilities supported by experimental validation using TaqMan assays (Figure 1\u2014figure supplement 3d). The throughput calculation (48 samples \u00d7 3 genes = 144 tests) is straightforward arithmetic based on demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C93"
+    ],
+    "result": "OIL-PCR confirmed the association of three beta-lactamase genes (blaTEM, blaCTX-M, blaSHV) with Klebsiella pneumoniae in patient samples, matching previous metagenomic and Hi-C sequencing results. blaTEM and blaCTX-M were on an 80 kb plasmid, while blaSHV was on the K. pneumoniae genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84, C93 are supported by OIL-PCR experimental data (Figure 2c,d) that confirms previous findings from Kent et al., 2020. The concordance between OIL-PCR and independent Hi-C/metagenomic data provides strong validation of the method's accuracy for known associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C94",
+      "C95",
+      "C100"
+    ],
+    "result": "OIL-PCR detected novel associations between three beta-lactamase genes and two low-abundance commensal genera: Romboutsia (strongly in T2 and T3) and Agathobacter (lesser extent in T1). Tn3-like transposon genes showed identical association patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C94-C95, C100 describe novel findings supported by OIL-PCR data (Figure 2c,d). The detection of Tn3 transposon genes with identical patterns (C100) provides internal validation. However, the biological interpretation (gene transfer vs. physical association) required additional experiments to resolve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C126"
+    ],
+    "result": "OIL-PCR detected unexpected beta-lactamase variants (blaLEN, blaOXY) due to permissive primer annealing, including blaOXY with a mismatch one base from the 3' end. This permissive annealing is advantageous as it allows detection of unknown variants while off-target products are filtered during nested PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91, C126 describe an unexpected finding (blaOXY amplification) with a reasonable hypothesis (C89) about permissive annealing. The interpretation that this is advantageous (C90) is supported by the nested PCR filtering mechanism (C91) shown in Figure 1\u2014figure supplement 1. The observation is well-documented though the mechanism remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Romboutsia-specific OIL-PCR confirmed blaTEM presence only in timepoints T2 and T3, not T1. Metagenomic analysis identified the species as R. timonensis and revealed two strains at T1, with only one persisting through T2 and T3. The persistent strain was likely present but below detection at T1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C101-C110 are supported by Romboutsia-specific OIL-PCR (Figure 3b) and detailed metagenomic strain analysis using AMPHORA markers (Figure 3c,d). The inference that the persistent strain was present at T1 (C108) is well-supported by high sequence identity (>99% in 24/30 genes, C107) and abundance data (C109-C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "OIL-PCR targeting species-specific marker genes demonstrated that Klebsiella and Romboutsia 16S sequences fused to each other's marker genes, indicating physical association rather than horizontal gene transfer. This represents a novel physical association between K. pneumoniae and R. timonensis developing after timepoint 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe experiments using species-specific primers (Figure 2\u2014figure supplement 1) that provide compelling evidence for physical association. The reciprocal detection of marker gene fusions (Klebsiella markers fused to Romboutsia 16S and vice versa) is strong evidence against horizontal gene transfer. The conclusion is well-supported by multiple independent OIL-PCR experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Sequence analysis of the 80 kb Klebsiella plasmid revealed it contains an origin of transfer but lacks genes for self-transfer, requiring a helper plasmid for mobilization. blaSHV was on the Klebsiella genome without nearby mobilizable elements, limiting transfer potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are based on sequence analysis of metagenomic assemblies. The analysis appropriately identifies the presence of origin of transfer and absence of transfer machinery genes. This provides important context for interpreting the OIL-PCR results and supports the conclusion that physical association rather than gene transfer explains the Romboutsia findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C139"
+    ],
+    "result": "OIL-PCR can detect and distinguish between two types of ecologically important interactions: mobilization of ARG-containing plasmids and physical associations between bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119, C139 represent conclusions about OIL-PCR capabilities demonstrated through the patient sample experiments. The ability to distinguish between gene transfer and physical association was shown by using species-specific marker genes (C112-C114), providing strong evidence for this capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Citrobacter brakii, which differs from Klebsiella by only one 16S base pair, was initially clustered with Klebsiella but upon closer inspection showed association with the three genes only in timepoints 2 and 3. A distinct Escherichia blaTEM variant was detected at T2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe limitations and refinements of the analysis. The detection of C. brakii upon closer inspection demonstrates that higher resolution is possible with manual curation. The Escherichia detection provides additional validation of the method's ability to distinguish variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C128",
+      "C129"
+    ],
+    "result": "OIL-PCR is practical and accessible with low startup costs compared to other methods, though current reagent costs (~$15/100 \u03bcl reaction) are inflated by high Phusion polymerase and magnetic bead usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C128-C129 provide practical assessment of the method's accessibility and costs. The cost estimate is specific and the comparison to other methods (low startup cost) is reasonable given the lack of specialized equipment requirements demonstrated throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Future optimizations could reduce Phusion polymerase usage, replace purification steps with exonuclease I treatment, and increase cell input 10-fold with dsDNase pretreatment to improve sensitivity without sacrificing accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C133 are suggestions for future optimization. While C132 is supported by experimental data (Figure 1\u2014figure supplement 3c), C130-C131 are speculative. The confidence in C133 is based on combining C132 with C63-C64, but this represents untested optimization rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C92",
+      "C127",
+      "C134",
+      "C137",
+      "C142",
+      "C143",
+      "C144",
+      "C146"
+    ],
+    "result": "OIL-PCR has potential applications including: targeting more than three genes per reaction, designing broad-range degenerate primers, pre-screening with qPCR, identifying hosts of mobile genetic elements and viral genomes, detecting cross-feeding bacteria, identifying bacteria involved in nutrient cycling, and developing single-cell sequencing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125, C92, C127, C134, C137, C142-C144, C146 are speculations about future applications. While some are reasonable extensions (C125, C127), others are more speculative (C142, C146). These represent potential rather than demonstrated capabilities and would require additional validation.",
+    "result_type": "MINOR"
+  }
+]

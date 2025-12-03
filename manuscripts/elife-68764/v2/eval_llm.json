@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes background knowledge about bacterial pathogens, the microbiome, and colonization resistance. Claims C1-C4 describe the dual role of bacteria in human health: as pathogens causing disease burden (C1) and as beneficial microbiota supporting health (C2), with specific mechanisms like colonization resistance (C3) exemplified by C. difficile inhibition (C4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by multiple citations to published literature and represent established knowledge in the field. They provide appropriate context for the modeling work but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Antibiotic use can destabilize the microbiome, leading to dysbiosis (C5) characterized by reduced bacterial diversity, impaired immunity, and loss of colonization resistance (C6). This dysbiosis can result in elevated resistance gene expression, increased horizontal gene transfer, and ecological release of subdominant ARB (C7), with particular relevance in healthcare settings (C8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations to published research and represent established understanding of antibiotic-microbiome interactions. They provide essential background for the modeling framework but are not original findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Most epidemiological models use single-species strain competition frameworks (C9-C10) which remain important (C11-C12), but contemporary work has not evaluated between-species competition (C13) despite its potential importance for ARB like ESBL-producing Enterobacteriaceae (C14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize the state of the modeling literature with appropriate citations and identify a clear gap (C13) that motivates the current work. The assessment of the literature appears accurate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "In the strain competition model, when PR is fully resistant (rR=1), prevalence increases monotonically with antibiotic exposure (C15). With partial resistance (0<rR<1), selection peaks at intermediate exposure due to trade-offs (C16). R0 increases with antibiotic use for highly resistant PR but decreases for sensitive PR (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by model results shown in referenced figures and represent logical consequences of the strain competition framework. The mathematical relationships are clearly derived from the model structure and parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors formalize three microbiome-pathogen interactions: colonization resistance (\u03b5) reducing pathogen transmission (C18), resource competition (\u03b7) reducing pathogen clearance during dysbiosis (C19), and ecological release (\u03d5) increasing endogenous acquisition during dysbiosis (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the core conceptual framework of the model, supported by citations and formalized mathematically. The three interactions are clearly defined and mechanistically justified, though their quantification relies on expert elicitation rather than empirical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Microbiome competition creates trade-offs in antibiotic selection: PR prevalence and R0 increase monotonically with exposure when fully resistant (C21), but can peak at intermediate exposure with partial resistance (C22). Multiple simultaneous interactions amplify both protection and selection pressure (C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by model results in referenced figures and represent key theoretical predictions of the microbiome competition framework. The trade-off mechanism is clearly demonstrated through the model dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Increasing within-host HGT rates drive increasing PR prevalence regardless of other interactions (C24). HGT-driven gains in CR result from symmetric declines in CS, requiring both sufficient donors and recipients (C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by model results in Figure 4. Claim C25 is a logical inference from the model structure but depends on specific modeling assumptions about HGT symmetry that may not hold universally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Simulations of four pathogens showed C. difficile had highest prevalence (C28), MRSA highest resistance rate (C29), ESBL-EC highest incidence (C30), while CP-KP had lowest values overall (C31) but showed greatest hospital enrichment (5.4-fold increase, C32). Hospital resistance rates exceeded community rates for strain-competing pathogens (C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by simulation results shown in Figure 6 and referenced appendix figures. The quantitative estimates include appropriate uncertainty intervals from Monte Carlo simulations. Results appear consistent with the model structure and parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Patient-to-patient transmission was the primary MRSA acquisition route (C34), while endogenous acquisition dominated for enteric pathogens (C35). HGT accounted for 8.7% (<0.01-49.7%) of ESBL-EC acquisitions (C36) and 2.1% (<0.01-22.8%) of CP-KP acquisitions (C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by simulation results, though the very wide uncertainty intervals for HGT (C36-C37) reflect substantial parameter uncertainty. The distinction between transmission-dominated (MRSA) and endogenous-dominated (enteric) acquisition is consistent with the model structure and biological expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Sensitivity analysis identified community prevalence and endogenous acquisition as strongest positive drivers of hospital prevalence (C38), with admission/discharge and microbiome recovery as strongest negative drivers (C39). For resistance rates, community prevalence, endogenous acquisition, and antibiotic clearance had strongest positive impacts (C40), while admission/discharge and competing strain acquisition had strongest negative impacts (C41). Prevalence but not resistance rates were sensitive to microbiome parameters (C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by multivariate sensitivity analysis using PRCCs. The finding that microbiome parameters affect prevalence but not resistance rates (C42) is particularly important for understanding different forces of selection and is well-supported by the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Contact precautions were highly effective for MRSA (C43), intermediately effective for C. difficile (C44), and minimally effective for ESBL-EC and CP-KP (C45). Impact on resistance rates was modest (2-4% for MRSA, C46). Microbiome simulations predicted lower efficacy than single-species models (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by intervention simulation results shown in Figure 7 and appendix figures. The pathogen-specific differences in efficacy are consistent with the relative importance of transmission vs. endogenous acquisition for each pathogen. The comparison between model types (C47) is particularly valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Antibiotic stewardship substantially reduced nosocomial incidence for all pathogens, but only in microbiome simulations (C48). Stewardship reduced incidence through all routes including HGT (C49), with median reductions of 20% (CP-KP), 18% (C. difficile), 15% (ESBL-EC), and 10% (MRSA) under intermediate compliance (C50). Single-species simulations predicted negligible efficacy (C51). Stewardship substantially impacted resistance rates, with similar outcomes across model types (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are strongly supported by simulation results in Figure 7 and appendix figures. The critical finding that stewardship efficacy depends on including microbiome interactions (C48, C51) is a major result with important implications for modeling and policy. The quantitative estimates include appropriate uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Microbiome recovery therapy was potentially highly effective but with variable efficacy across compliance levels (C53). It was most effective against C. difficile, similarly effective against ESBL-EC and CP-KP, and least effective against MRSA (C54). It reduced incidence through all routes but had no clear impact on resistance rates (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by simulation results in Figure 7 and appendix figures. The pathogen-specific differences in efficacy are consistent with the relative importance of microbiome interactions for each pathogen. However, this intervention is theoretical and lacks empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Simulation results were broadly consistent with literature when microbiome interactions were included (C56), including transmission importance for MRSA (C57) and endogenous acquisition for enteric ARB (C58). Contact precautions efficacy matched clinical trials (C59). Stewardship efficacy matched meta-analysis findings (C60-C62), with same rank order and similar mean efficacy for most pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims demonstrate model validation through comparison with published studies and meta-analyses. The consistency between simulations and empirical findings (particularly C60-C62) strengthens confidence in the model, though the authors appropriately note greater uncertainty in meta-analysis estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Excluding microbiome interactions predicted negligible stewardship efficacy for incidence (C63). Microbiome competition had large impact on incidence but little impact on resistance rates (C64), explaining similar stewardship efficacy for resistance across model types (C65). Strain competition explains relative strain dynamics while microbiome interactions explain how antibiotic use favors ARB incidence (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize key findings about different forces of selection and their epidemiological consequences. The distinction between impacts on incidence vs. resistance rates (C64) is well-supported by results across both theoretical and applied models. Claim C66 represents an important conceptual insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Microbiome population structure is inherently stable, depending on host factors rather than transmission (C67). Despite compositional diversity, functional redundancy means colonization resistance is shared across healthy hosts (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations and justify the modeling approach of treating microbiome stability as a host trait rather than a traditional colonization process. This conceptual framework is important for the model but represents established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Fecal microbiota transplantation is used for recurrent C. difficile (C69) and under investigation for Enterobacteriaceae decolonization (C70), but has non-negligible risks (C71). DAV132 preserves intestinal microbiota while maintaining systemic antibiotic exposure (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations to clinical literature and provide context for microbiome-targeted interventions. They represent established clinical knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MRSA, C. difficile, and ESBL-producing Enterobacteriaceae are leading causes of healthcare-associated infection (C73), while carbapenemase-producing Enterobacteriaceae are emerging threats (C74). Antibiotic stewardship is a core public health component (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations and establish the public health importance of the pathogens studied. They provide essential context but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Different antibiotics vary in target organisms and pharmacodynamic properties (C76), affecting bacterial exposure in different niches (C77). Asymmetric impacts on commensal and pathogenic bacteria can drive selection for ARB with consequences for resistance dynamics and stewardship efficacy (C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 represent established pharmacological knowledge supported by citations. Claim C78 is an inference from simulation results and represents an important conclusion about antibiotic-specific selection pressures, though it requires empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Antibiotics that both disrupt microbiota and clear sensitive strains select more strongly for resistance (C79). Higher pathogen clearance rates (\u03b8C) increase resistance rates with modest prevalence effects (C80), while higher microbiome disruption (\u03b8m) increases prevalence with modest resistance effects (C81). Resistance rate impacts increase with higher rR (C82), while prevalence impacts increase with stronger microbiome interactions (C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by model results in Figure 3 and appendix figures. They represent important theoretical predictions about how different antibiotic properties drive different epidemiological outcomes. The asymmetric effects on prevalence vs. resistance rates are particularly insightful.",
+    "result_type": "MAJOR"
+  }
+]

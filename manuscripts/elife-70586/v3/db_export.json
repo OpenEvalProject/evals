@@ -1,0 +1,1436 @@
+{
+  "submission": {
+    "id": "44f3a404-8b5c-4354-b764-1b0129afe4b7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:13:55.404122Z",
+    "updated_at": "2025-12-03T11:13:55.404122Z"
+  },
+  "content": [
+    {
+      "id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "submission_id": "44f3a404-8b5c-4354-b764-1b0129afe4b7",
+      "content_type": "manuscript",
+      "content_text": "# A dentate gyrus-CA3 inhibitory circuit promotes evolution of hippocampal-cortical ensembles during memory consolidation\n\n## Authors\n\n- Hannah Twarkowski<sup>1</sup> ([ORCID: 0000-0002-4349-8924](https://orcid.org/0000-0002-4349-8924))\n- Victor Steininger<sup>1</sup>\n- Min Jae Kim<sup>1</sup>\n- Amar Sahay<sup>1</sup> ([ORCID: 0000-0003-0677-1693](https://orcid.org/0000-0003-0677-1693)) \u2020\n\n### Affiliations\n\n1. Center for Regenerative Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n2. Harvard Stem Cell Institute Cambridge United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))\n3. Department of Psychiatry, Massachusetts General Hospital, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n4. BROAD Institute of Harvard and MIT Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMemories encoded in the dentate gyrus (DG) \u2012 CA3 circuit of the hippocampus are routed from CA1 to anterior cingulate cortex (ACC) for consolidation. Although CA1 parvalbumin inhibitory neurons (PV INs) orchestrate hippocampal-cortical communication, we know less about CA3 PV INs or DG \u2012 CA3 principal neuron \u2012 IN circuit mechanisms that contribute to evolution of hippocampal-cortical ensembles during memory consolidation. Using viral genetics to selectively mimic and boost an endogenous learning-dependent circuit mechanism, DG cell recruitment of CA3 PV INs and feed-forward inhibition (FFI) in CA3, in combination with longitudinal in vivo calcium imaging, we demonstrate that FFI facilitates formation and maintenance of context-associated neuronal ensembles in CA1. Increasing FFI in DG \u2012 CA3 promoted context specificity of neuronal ensembles in ACC over time and enhanced long-term contextual fear memory. In vivo LFP recordings in mice with increased FFI in DG \u2012 CA3 identified enhanced CA1 sharp-wave ripple \u2012 ACC spindle coupling as a potential network mechanism facilitating memory consolidation. Our findings illuminate how FFI in DG \u2012 CA3 dictates evolution of ensemble properties in CA1 and ACC during memory consolidation and suggest a teacher-like function for hippocampal CA1 in stabilization and re-organization of cortical representations.\n\n## Introduction\n\nThe hippocampus plays a critical role in the formation of new episodic memories by generating conjunctive representations of experiences and transferring these representations to neocortical sites for memory storage or consolidation (Frankland and Bontempi, 2005; McClelland et al., 1995; Peyrache et al., 2009; Squire, 2004; Wilson and McNaughton, 1994). Highly processed sensory information underlying experiences are encoded in the dentate gyrus (DG) \u2012 CA3 circuit as distinct or updated representations of prior experiences and subsequently, routed out of CA1 to prefrontal cortical sites such as the anterior cingulate cortex (ACC) for consolidation. Following learning, prefrontal cortical neuronal ensembles are thought to undergo time-dependent refinement and re-organization as memories transition from recent to remote configurations and become more generalized (DeNardo et al., 2019; Frankland and Bontempi, 2005; Frankland et al., 2004; Maviel et al., 2004; McClelland et al., 1995; Morrissey et al., 2017; Takehara-Nishiuchi and McNaughton, 2008; Wiltgen et al., 2010; Winocur et al., 2010). The hippocampus is theorized to play a continuous, potentially instructive role in transformation of memories from conjunctive, context-rich representations to semantic, gist-like structures (Goode et al., 2020; Nadel and Moscovitch, 1997; Teyler and DiScenna, 1986; Tonegawa et al., 2018; Winocur et al., 2010; Winocur et al., 2007). Indeed, a growing body of experimental evidence not only supports a sustained role for the hippocampus in remote memory retrieval (Goshen et al., 2011; Vetere et al., 2021) but also in dictating the extent to which remote memories retain contextual details of the original experience (Guo et al., 2018; Koolschijn et al., 2019; Tompary and Davachi, 2017).\n\nInvestigations into neural circuit mechanisms mediating memory consolidation has identified key roles for principal cells and inhibitory neurons in mediating hippocampal-cortical communication. Specifically, genetic silencing of engram-bearing dentate granule neurons post training was shown to impair the maturation of context-specific neuronal ensembles in prefrontal cortex (Kitamura et al., 2017). Chronic genetic inhibition of CA3 outputs impaired high-frequency network oscillations such as sharp-wave ripples, experience-related firing patterns in CA1 and long-term contextual fear memory (Nakashiba et al., 2009). Parvalbumin inhibitory neurons (PV INs) in CA1 are the most extensively studied with regard to their roles in memory consolidation. CA1 PV INs have been shown to orchestrate synchronous activation of principal neurons, promote sharp-wave ripples (SWR), and facilitate hippocampal-cortical communication through increased sharp-wave ripple \u2012 spindle coupling in CA1 \u2012 ACC networks (Buzs\u00e1ki, 2015; \u00c7aliskan et al., 2016; Gan et al., 2016; Ognjanovski et al., 2017; Stark et al., 2014; Xia et al., 2017). Chemogenetic inhibition of PV INs in CA1 or in ACC following training inhibited consolidation of contextual fear memory (Ognjanovski et al., 2017; Xia et al., 2017). Together, these observations begin to highlight the contribution of principal neurons and INs in CA1 and ACC in memory consolidation. However, we know significantly much less about the contributions of principal neurons \u2012 IN circuits in DG \u2012 CA3, let alone how PV INs in CA3 govern the evolution of neuronal ensembles in downstream CA1 \u2012 ACC networks over time.\n\nDentate granule cell recruitment of feed-forward inhibition (FFI) onto CA3 is temporarily enhanced following learning and is one inhibitory circuit mechanism linked to memory consolidation (Guo et al., 2018; Ruediger et al., 2012; Ruediger et al., 2011). In previous work, we found that viral mediated selective enhancement of dentate granule cell recruitment of PV INs in CA3 increased inhibition onto CA3 and enhanced strength and precision of remote memories (Guo et al., 2018). Using genetic ensemble-tagging approaches and immediate-early gene expression, we found that increasing FFI in DG \u2012 CA3 conferred context-specific reactivation of neuronal ensembles in hippocampal \u2012 ACC \u2012 basolateral amygdala networks at remote timepoints. Furthermore, we found that maintenance of engram-bearing cell connectivity with PV INs prevented the time-dependent decay of the hippocampal engram thereby suggesting a link between maintenance of the hippocampal memory trace and remote memory precision (Guo et al., 2018). As with new findings, we were motivated to investigate how FFI in DG \u2012 CA3 impacts ongoing neuronal activity, maintenance and specificity of neuronal ensembles in hippocampal-cortical networks during memory consolidation. In this study, we sought to address this goal by combining viral genetics to selectively enhance FFI in DG \u2012 CA3 and longitudinal in vivo 1 photon calcium imaging and in vivo electrophysiology to record ensemble properties in CA1 and ACC over time. We found that enhancing FFI facilitates the formation and maintenance of context-associated neuronal ensembles in CA1. Stable and precise CA1 ensembles, in turn, promoted acquisition of context-specific neuronal ensembles in ACC at remote timepoint and enhanced long-term contextual fear memory. Furthermore, using simultaneous LFP recordings we found enhanced ripple-spindle coupling thus demonstrating a direct role for DG \u2012 CA3 FFI in enhancing hippocampal-cortical communication. Our findings illuminate how FFI in DG \u2012 CA3 dictates evolution of ensemble properties in CA1 and ACC during memory consolidation and suggest a teacher-like function for hippocampal CA1 in stabilization and re-organization of cortical representations.\n\n## Results\n\n### Viral enhancement of FFI in DG \u2012 CA3 increases PV IN perisomatic contacts onto CA3 principal neurons\n\nTo begin to understand how FFI in DG \u2012 CA3 contributes to evolution of ensemble properties during memory consolidation, we leveraged our recent discovery of a learning-regulated molecular brake of dentate granule cell connectivity with stratum lucidum PV INs in CA3. Viral downregulation of the cytoskeletal protein, Ablim3, in the DG (using validated shRNA vs. non-target scrambled NT) resulted in increased dentate granule cell mossy fiber contacts with PV INs and an increase in PV IN puncta or contacts with CA3. Consistently, ex vivo electrophysiological recordings showed that these anatomical changes in FFI connectivity resulted in increased feed-forward inhibition onto CA3 (Guo et al., 2018) (schematized in Figure 1a). We injected mice with lenti-shNT or lenti-shRNA in the DG and quantified PV puncta, an anatomical marker for PV-mediated inhibition, in CA3, CA1 and ACC 2 weeks past injection. As previously shown (Guo et al., 2018), we found an increase in PV puncta in CA3 in shRNA injected mice [Two-tailed Mann-Whitney: p = 0.029, n = 4]. Consistent with prior reports (Soltesz and Losonczy, 2018), we found a significantly higher number of PV puncta in the deeper layer of CA1 compared to the superficial layer [Two-way repeated measures ANOVA, layer x virus effect: N.S.: main virus effect N.S., main layer effect p < 0.0001, n = 4]. Our manipulation did not affect PV puncta in CA1 or ACC [ACC: Two-tailed Mann-Whitney test: N.S., n = 4] (Figure 1b). Together, these data demonstrate that our viral manipulation increases FFI onto CA3 without affecting PV IN \u2012 principal neuron anatomical contacts in CA1 or ACC.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig1-v3.jpg)\n\n**Figure 1.:** (a) Simplified wiring diagram of hippocampal-cortical circuits supporting memory consolidation. Highlighted is the DG-PV IN-CA3 inhibitory microcircuit. Dentate granule cell (DGC) projections (Mossy fibers, MF) synapse onto pyramidal neurons in CA3 and also release glutamate directly onto stratum lucidum PV-positive interneurons (PV INs, red) through filopodia that emanate from mossy fiber terminals (MFTs, gray). Injection of lenti-shRNA into dentate gyrus (DG) increased MFT filopodia onto PV INs. In response to increased DGC excitatory drive PV INs elaborate inhibitory synaptic contacts in CA3 and feed-forward inhibition onto CA3 neurons (feed-forward inhibition, FFI). Pyramidal neurons in CA3 project to CA1 that sends projections to multiple brain regions such as the anterior cingulate cortex (ACC). (b) Quantification and representative images of PV puncta (white arrows) in CA3 (left), the deeper and superficial layer of CA1 (middle) and ACC (right) per ROI (1000 \u03bcm2, scale bar: 10 \u00b5m) in behaviorally na\u00efve mice 2 weeks post injection (left panel, scale bar: 500 \u00b5m). Images show representative examples of ROIs from shNT (left) and shRNA (right) injected mice. Arrows indicate PV puncta example. Bar graphs represent mean \u00b1 SEM. Scatter represent individual mice. Injection of lenti-shRNA significantly increased PV puncta in CA3 [Two-tailed Mann-Whitney: p = 0.029, n = 4] but not in CA1 [Two-way repeated measures ANOVA, layer x virus effect p = 0.583: virus main effect p = 0.752, layer main effect: p < 0.0001]; or ACC [Two-tailed Mann-Whitney test: p = 0.886, n = 4]. In CA1, a significant difference was found between layers. (c) Schematic workflow and example of virus injection and lens implantation for calcium imaging. Mice received unilateral injection of AAV1.CaMKII.GCaMP6f.WPRES.SV40 (GCaMP6f, left panel) in the region of interest and bilateral injection of lenti-shNT or lenti-shRNA virus (mCherry, right panel) in the hilus of dorsal DG. In CA1 implanted mice, the injections were separated by 3 days to allow for best targeting and expression. Scale bar: 500 \u00b5m. (d) Sketch of behavior paradigm. Prior to behavioral testing and calcium imaging, mice were handled and habituated to the microscope and baseline (BL) environment. Each recording day began with a BL recording followed by a test with at least 2 hr between each session. On days with multiple test sessions (recall), the order of context (context A or context C) was counterbalanced. BL = Baseline, ctx A = context A, ctx C = context C. (e) Example raw traces of changes is calcium extracted with CNMF-E. Each line represents one neuron in the field of view. The lower trace shows examples of calcium events (red line) extracted from a raw trace.\n\n### Increasing FFI in DG \u2012 CA3 promotes foot-shock associated neuronal responses in CA1 and ACC during memory encoding\n\nTo investigate how enhancing FFI in DG \u2012 CA3 prior to learning influences CA1 and ACC ensemble activity during acquisition and recall of recent and remote memories, we performed calcium imaging in a cohort of mice in a contextual fear conditioning paradigm (Figure 1d\u2013e). We delivered lentiviruses shRNA (shRNA) or non-target shRNA (shNT) into the DG in combination with viral expression of the genetically encoded calcium indicator GCaMP6f in CA1 or ACC (Figure 1c). Two weeks following bilateral viral injections in DG (lenti-shNT or control mice vs. shRNA or experimental mice) and unilateral injections into CA1 or ACC (AAV1.CamKII.GCaMP6f), we recorded neuronal activity (calcium transients) using miniaturized endoscopes in CA1 or ACC (see example Videos 1\u20134). We performed recordings at same day baseline (BL), during contextual fear conditioning in the training context, context A, and during recall in context A and a distinct, neutral context (context C) at recent (day 1) and remote timepoints (day 16).\n\n![Video 1.](https://cdn.elifesciences.org/articles/70586/elife-70586-video1.mp4.jpg)\n\n**Video 1.:** Normalized (dF/F) calcium signals acquired during a 6-min baseline recording. This example video was spatially (4 x) and temporally (2 x) downsampled.\n\n![Video 2.](https://cdn.elifesciences.org/articles/70586/elife-70586-video2.mp4.jpg)\n\n**Video 2.:** Normalized (dF/F) calcium signals acquired during a 6-min baseline recording. This example video was spatially (4 x) and temporally (2 x) downsampled.\n\n![Video 3.](https://cdn.elifesciences.org/articles/70586/elife-70586-video3.mp4.jpg)\n\n**Video 3.:** Normalized (dF/F) calcium signals acquired during a 6-min baseline recording. This example video was spatially (4 x) and temporally (2 x) downsampled.\n\n![Video 4.](https://cdn.elifesciences.org/articles/70586/elife-70586-video4.mp4.jpg)\n\n**Video 4.:** Normalized (dF/F) calcium signals acquired during a 6-min baseline recording. This example video was spatially (4 x) and temporally (2 x) downsampled.\n\nOn day 0, control and experimental groups of mice were trained to associate context A with foot-shocks. Behavioral analysis of freezing levels revealed that both groups of mice responded similarly to foot-shocks in the training context A (Figure 2a and c). Consistent with prior work (Jimenez et al., 2020; Pan et al., 2020), our recordings of calcium transients during contextual fear conditioning revealed a subset of neurons in both CA1 and ACC that exhibited significant elevation in activity in response to foot-shocks (Foot-shock responsive neurons or FSR neurons) in both groups of mice [Two-tailed paired t-test, ACC shNT preFS vs postFS: p = 0.004, n = 5, ACC shRNA preFS vs postFS: p = 0.013, n = 5, CA1 shNT preFS vs postFS: p = 0.007, n = 5, CA1 shRNA preFS vs postFS: p = 0.024, n = 5](Figure 2b, d and e). However, the fraction of FSR neurons in ACC was significantly increased in the shRNA group compared to shNT group [Two-tailed unpaired t-test with Welch\u2019s correction, p = 0.043, n = 5] (Figure 2f, Figure 2\u2014figure supplement 1a). Further analysis of FSR neurons revealed that the increase in FSR neuron activity in CA1 and ACC was accompanied by an increase in co-activity of these neurons i.e. increase in number of FSR correlated pairs [Two-tailed paired t-test, ACC shNT: p = 0.021, n = 5, ACC shRNA: N.S., n = 5, CA1 shNT: p = 0.021, n = 5, CA1 shRNA: p = 0.001, n = 5] (Figure 2g\u2013h and Figure 2\u2014figure supplement 1b). Note, this was not seen in ACC for shRNA group presumably because of high activity levels prior to foot-shocks. Shuffled data indicate that the increase in correlated pairs was mostly due to increased number of calcium events upon foot-shock. Additionally, the shRNA mice exhibited a significantly higher increase in correlated neurons in CA1 mice [Two-tailed unpaired t-test with Welch\u2019s correction, p = 0.044, n = 5] (Figure 2\u2014figure supplement 1b). We did not detect increased co-activity of FSR with nonFSR neurons in CA1 or ACC [One-sample t-test against 0; ACC shNT: N.S, n = 5, ACC shRNA: N.S., n = 5, CA1 shNT: N.S., n = 5 mice, CA1 shRNA: N.S. n = 5]. Finally, we performed the same analysis on the same day baseline recording as a control recording that did not include a foot-shock. We found a similar number of neurons that altered their activity similar to FSR neurons (shamFSR) in control mice (Figure 2\u2014figure supplement 1c) while the shRNA group showed significantly less shamFSR neurons in ACC compared to FSR neurons found during the training session [Two-tailed paired t-test, ACC shNT: N.S., shRNA: p = 0.021]. There was no overall increase in event rate or correlated pairs in shamFSR neurons in either group or brain region (Figure 2\u2014figure supplement 1d-e) [Paired t-test, event rate (d), ACC, shNT, N.S, p = 5, shRNA, N.S., n = 5; CA1, shNT, N.S., n = 5; shRNA, N.S., n = 5; correlated pairs (e), CA1, shNT, N.S., n = 5, shRNA, N.S., n = 5; CA1, shNT, N.S., n = 5, shRNA, N.S., n = 5].\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig2-v3.jpg)\n\n**Figure 2.:** (a) Schematic of time point in behavioral paradigm of the presented data (context A on training day with three foot-shocks (FS) applied at 180, 240, and 360 s). (b) schematic of analysis window for neuronal activity before FS (preFS) and after FS (postFS) presented in panels e, g and h. (c) Quantification of FS response behavior measured as freezing in percentage of one minute time bins. All experimental groups showed a similar increase in freezing upon the FS training in context A with no main treatment effect [upper panel, ACC: Two-way repeated measures ANOVA, time x treatment effect p = 0.702: time main effect p < 0.0001, treatment main effect = 0.796, n = 5; lower panel CA1: time x treatment effect p = 0.838, time main effect p < 0.0001, treatment main effect = 0.49, n = 5 shNT, n = 6 shRNA]. (d) Example heatmap of z-scored neuronal activity (calcium events) in CA1 (shNT) across time in context A grouped by neuronal activity (foot-shock responsive, FSR; non-foot-shock responsive, nFSR). Colorbar represents SD (z-scored to first 180 s of the recording). (e) Neuronal activity of FSR neurons increased significantly after the FS was applied in all experimental groups. Neuronal activity was z-scored (over the first 180 s in context A) and averaged over the three foot-shocks using a 30 s window as preFS or postFS condition (see sketch in panel b) [Two-tailed paired t-test, ACC shNT preFS vs postFS: p = 0.004 (upper left); ACC shRNA preFS vs postFS: p = 0.013 (upper right), CA1 shNT preFS vs postFS: p = 0.007 (lower left), CA1 shRNA preFS vs postFS: p = 0.024 (lower right), n = 5]. (f) Number of FSR and nFSR neurons in each experimental group. In ACC, lenti-shRNA injection increased the number of FSR neurons (ACC, shNT, FSR, mean = 40.24, SEM = 4.06, nFSR, mean = 59.77, SEM = 4.06; ACC shRNA, FSR, mean = 57.43, SEM = 5.73, nFSR, mean = 42.57, SEM = 5.73; CA1, shNT, FSR, mean = 43.79, SEM = 4.35; nFSR, mean = 56.21, SEM = 4.35; shRNA, FSR, mean = 41.90, SEM = 3.47, nFSR, mean = 58.10, SEM = 3.47) (see also Figure 2\u2014figure supplement 1 for bar graphs of FSR and statistical analysis. (g) Example heatmap of pairwise correlation between neuronal pairs in CA1 before the FS (preFS, lower triangle) and after the FS (postFS, upper triangle) from one shNT injected mouse.). Colorbar represents correlation coefficient. (h) Number of correlated pairs (> mean + 2 SD from a shuffled control) among FSR neurons as percentage of all possible pairs of FSR neurons. All experimental groups, except ACC shRNA, showed an increase in the percentage of correlated pairs after the foot-shock. [Two-tailed paired t-test, ACC shNT: p = 0.021 (upper left), ACC shRNA: p = 0.141 (upper right), CA1 shNT: p = 0.021 (lower left), CA1 shRNA: p = 0.001 (lower right), n = 5]. (i) Graphic summary of findings presented in this panel. In both ACC and CA1, learning, in form of experiencing a foot-shock in context A, induced the formation of a neural ensemble among FSR neurons by increasing co-activity. Increased FFI facilitated this effect in both brain regions with a higher number of FSR neurons in ACC and a stronger increase in correlated pairs in CA1 (see also Figure 2\u2014figure supplement 1). Throughout, statistical data are represented as mean \u00b1 SEM, *p < 0.05, **p < 0.01, ***p < 0.001, n represents number of mice.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Quantification of FSR neurons in ACC (upper panel) and CA1 (lower panel). In ACC, shRNA mice showed significantly more FSR compared to shNT mice [Two-tailed unpaired t-test with Welch\u2019s correction, p = 0.043, n = 5] while there was no difference in CA1 [Two-tailed unpaired t-test with Welch\u2019s correction p = 0.743, n = 5]. (b) Change in correlated pairs [postFS \u2013 preFS] within FSR neurons (left panels) and across FSR and nFSR neurons. In CA1, the increase of correlated pairs within FSR neurons was significantly higher in shRNA mice compared to shNT mice [Two-tailed unpaired t-test with Welch\u2019s correction, p = 0.044, n = 5] while there was no difference in ACC [Two-tailed unpaired t-test with Welch\u2019s correction p = 0.980, n = 5]. In both brain regions, there is no change in correlation between pairs of FSR and nFSR neurons (upper and lower right panel) [One-sample t-test against 0; ACC shNT: p = 0.186; ACC shRNA: p = 0.204 (upper right), CA1 shNT: p = 0.382, CA1 shRNA: p = 0.698, (lower right), n = 5]. Throughout, statistical data are represented as mean \u00b1 SEM, *p < 0.05, **p < 0.01, ***p < 0.001, n represents number of mice. (c) Number of shamFSR neurons found in baseline recording on the training day. shamFSRs were identified using the same approach as training day (activity change around foot-shock time points). Number of shamFSRs did not differ between treatment groups. [Unpaired t-test with Welch\u2019s correction, ACC, p = 0.702, n = 5; CA1, p = 0.09, n = 5]. middle and right panel: comparison of numbers of shamFSR neurons during baseline and FSR neurons during training. In ACC, shRNA mice showed significantly more FSR neurons compared to shamFSR neurons [paired t-test with Welch\u2019s correction, shNT, p = 0.473, n = 5; shRNA, p = 0.021, n = 5]. (d-e) Analysis of shamFSR neurons for change in event rate (d) and correlated pairs (e) upon time points similar to foot-shock time points. No change in event rate or correlated pairs for detected in shamFSR neurons in any group [Paired t-test, event rate (d), ACC, shNT, p = 0.089, p = 5, shRNA, p = 0.075, n = 5; CA1, shNT, p = 0.118, n = 5; shRNA, p = 0.122, n = 5; correlated pairs (e), CA1, shNT, p = 0.063, n = 5, shRNA, p = 0.38, n = 5; CA1, shNT, p = 0.088, n = 5, shRNA, p = 0.086, n = 5].\n\nTogether these data suggest that increased DG \u2012 CA3 FFI facilitates foot-shock-induced neuronal responses and FSR ensemble-like activity in CA1 and ACC through increased recruitment of FSRs and synchronous activity of FSRs (Figure 2i).\n\n### FFI in DG \u2012 CA3 facilitates emergence of training context-specific ensembles in CA1 and ACC following learning\n\nWe next asked how increasing FFI modifies CA1 and ACC ensemble properties during recent recall of contextual fear memory. One day following fear conditioning, mice were returned to the conditioned context A and a novel, neutral distinct context C (Figure 1a, d and Figure 3a). Behavioral analysis revealed that both shRNA and shNT groups exhibited high levels of discrimination of the two contexts and showed similar levels of freezing in training context A and negligible levels of freezing in context C [Two-way repeated measures ANOVA, treatment x time effect N.S., time main effect p = 0.014; treatment main effect N.S.; n = 10, pooled ACC and CA1 mice. see Figure 3\u2014figure supplement 3c for separate ACC and CA1 data] (Figure 3b). In context A, we observed synchronous activity, a learning-induced network property (Gonzalez et al., 2019; Liu et al., 2017; Modi et al., 2014; Rajasethupathy et al., 2015), suggestive of a context-associated ensemble in CA1. Specifically, both virus groups showed increased numbers of correlated neurons compared to baseline levels only in context A and not in the novel, distinct neutral context C (yet non-significant in shRNA mice) [one sample t-test against 1 (BL), context A, shNT: p = 0.003, n = 5, shRNA: N.S. (strong trend, p = 0.055), n = 5; context C: shNT: N.S., n = 5, shRNA: N.S., n = 5] (Figure 3c\u2013d). Additionally, in context A, the shRNA group also showed a significant increase in number of correlated pairs in ACC indicative of emergence of a training context-associated ensemble in ACC [one sample t-test against 1 (BL), context A, ACC, shNT: N.S., shRNA: p = 0.018, n = 5] (Figure 3c\u2013d) but we did not detect a difference between virus groups [two tailed unpaired student\u2019s t-test with welch correction for ACC context A: p = N .S, n = 5]. Using CellReg (Sheintuch et al., 2017) to register neurons across sessions, we found no reactivation of FSR neurons among the correlated pairs of neurons identified in CA1 in the recall session [shNT: mean: 0.0 S.E.M. 0; shRNA: mean 0.0, S.E.M, 0] (data not shown). We controlled for the possible effect of locomotion on neuronal activity by quantifying the time mice moved in each context and found no correlation between the number of correlated neuronal pairs and the time mice moved in the respective context [Pearson\u2019s correlation, ACC context A, R2 = 0.19, p = 0.196, ACC context C: R2 = 0.00, p = 0.935, CA1 context A: R2 = 0.09, p = 0.376, CA1 context C: R2 = 0.04, p = 0.599, n = 5 mice per group] (Figure 3\u2014figure supplement 1a-d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig3-v3.jpg)\n\n**Figure 3.:** (a) Schematic of time point in behavioral paradigm of the presented data. (b) Quantification of discrimination ratio as relative difference in freezing in context A and context C (upper panel) and freezing time in context A (lower left) and context C (lower right). ACC and CA1 mice were grouped together by virus. One day after training, all mice discriminated between context A and C with no difference between treatment groups [Two-way repeated measures ANOVA, treatment x time effect p = 0.434, time main effect p = 0.014; treatment main effect p = 0.232; n = 10]. (c) Raster plot of calcium events over time in context A and context C after registering neurons across sessions. Each row corresponds to a neuron, x-axis corresponds to time in each context. Colored squares indicate the context the recording was acquired in. Empty rows in one context mean that the neuron was not active in this context. (d) Quantification of number of correlated pairs across all neurons per context. Context-specific neuronal pairs were analyzed by normalizing the correlated pairs to the baseline level recorded in the same day baseline recording (dotted line in graph). Heatmaps right to the graph show correlation values of example neurons in context A (lower triangle) and context C (upper triangle). In each graph, the upper heatmap shows an example of a lenti-shNT injected, the lower heatmap of a lenti-shRNA injected mouse. In CA1, lenti-shNT and lenti-shRNA injected mice showed a higher number of correlated pairs compared to baseline in context A (yet non-significant in shRNA mice) but not in the new context C [one sample t-test against 1, context A, shNT: p = 0.003, shRNA: p = 0.055, context C: shNT: p = 0.089, shRNA: p = 0.574, n = 5] with no difference between groups [Unpaired t-test with Welch\u2019s correction, context A: p = 0.889, n = 5, context C: p = 0.147, n = 5]. In ACC, lenti-shRNA injected mice showed a significantly higher number of correlated pairs in context A compared to baseline [one sample t-test against 1, context A, shNT: p = 0.188, shRNA: p = 0.018; context C: shNT: p = 0.368, shRNA: p = 0.073, n = 5] yet no difference was found between groups [Unpaired t-test with Welch\u2019s correction, context A: p = 0.120, n = 5, context C: p = 0.403, n = 5]. (e) Raster plot of calcium events over time in context A and context C after registering neurons across sessions (same as in panel c). Each row corresponds to a neuron. The square marks neurons that were active in both contexts (A&C neurons). (f) Normalized activity of A&C neurons. Heatmaps show activity of example neurons in context A (left side) and context C (right side) in the first 180 s per context for better visualization. In each graph, the upper heatmap shows an example of a lenti-shNT injected, the lower heatmap of a lenti-shRNA injected mouse. A&C neurons showed a significantly higher activity in context C compared to context A in CA1 but not in ACC [one sample t-test against 0, ACC, shNT: p = 0.399, shRNA: p = 0.65; CA1, shNT: p = 0.007, shRNA: p = 0.048, n = 5]. (g) Example spatial maps of neurons (white circles) in context A and context C with green circles indicating neurons that were registered to be active in both sessions (A&C neurons). (h) Quantification of A&C neurons using normalized jaccard similarity index. In CA1, lenti-shRNA injected mice showed significantly less A&C neurons compared to lenti-shNT injected mice [Unpaired t-test with Welch\u2019s correction, p = 0.048, n = 5]. No difference was found in ACC [Unpaired t-test with Welch\u2019s correction, p = 0.284, n = 5]. (i) Schematic of time point in behavioral paradigm of the presented data. (j) Quantification of discrimination ratio (see b for details). Sixteen days after foot-shock training in context A, both treatment groups discriminated between A and C. Lenti-shRNA injected mice showed a significantly higher discrimination ratio compared to lenti-shNT injected mice [Two-way repeated measures ANOVA, treatment x time effect p = 0.993, time main effect p = 0.412, treatment main effect: p = 0.028, n = 10, pooled CA1 and ACC mice]. (k) Quantification of number of correlated pairs across all neurons at day 16. Same presentation as in panel d. In CA1, both virus groups maintained an increased number of correlated neurons in context A compared to baseline [One-sample t-test against 1, context A, shNT, p = 0.006; shRNA, p = 0.04; n = 5]. Lenti-shNT mice showed a significantly lower number of correlated pairs compared to day 1 [comparison not shown, paired t-test with Welch\u2019s correction, p = 0.041, n = 5]. In context C, shRNA mice showed a similarly increased number of correlated neurons compared to baseline as in context A [One-sample t-test against 1, context C, shNT, p = 0.973; shRNA, p = 0.026; n = 5] with a significant difference between groups [Unpaired t-test with Welch\u2019s correction, p = 0.0423, n = 5]. In ACC, no difference was found between contexts [One-sample t-test against 1, context A, shNT, p = 0.444; shRNA, p = 0.285; context C, shNT, p = 0.609, shRNA, p = 0.803, n = 5]. (l) Normalized activity of A&C neurons (see f). In CA1, A&C neurons showed a significantly higher activity in context C compared to context A in shRNA mice [one sample t-test against 0, shNT: p = 0.824, shRNA: p = 0.012, n = 5]. No difference was found in ACC [one sample t-test against 0, shNT: p = 0.148, shRNA: p = 0.784, n = 5]. (m) Quantification of A&C neurons (see h). In ACC, lenti-shRNA injected mice showed significantly less A&C neurons compared to lenti-shNT injected mice [Unpaired t-test with Welch\u2019s correction, p = 0.028, n = 5]. No difference was found in CA1 [Unpaired t-test with Welch\u2019s correction, p = 0.340, n = 5]. (n) Quantification of A&C neurons that formed correlated pairs with any other neurons in shNT (grey graphs) and shRNA (blue graphs) injected mice during recent (left panel) and remote (right panel) recall. In CA1, lenti-shRNA injected mice showed fewer A&C neurons among the correlated pairs compared to lenti-shNT injected mice during remote recall [A&C neurons, recent, ACC, shNT 42.97 \u00b1 8.37, shRNA 39.07 \u00b1 5.93,CA1, shNT, 27.03 \u00b1 8.23, shRNA, 30.64 \u00b1 4.65; remote, ACC, shNT 33.59 \u00b1 11.82, shRNA, 36.34 \u00b1 12.14, CA1, shNT, 52.26 \u00b1 4.80, shRNA, 28.55 \u00b1 6.17; mean \u00b1 SEM] (see Figure 3\u2014figure supplement 1 for statistical analysis).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Schematic of time point in behavioral paradigm of the presented data (context A and context C on day one after foot-shock training in context A). (b) Quantification of moving ratio as relative time in percentage of one minute time bins. In both ACC and CA1, no difference was found between virus groups [Two-way repeated measures ANOVA, ACC: virus x time effect p = 0.554, time main effect p = 0.08, virus main effect p = 0.571; CA1: virus x time effect p = 0.958, time main effect p = 0.142, virus main effect p = 0.856, n = 5]. (c) Schematic of time point in behavioral paradigm of the presented data (context A and context C on day 1 and day 16 after foot-shock training in context A). (d) Number of correlated pairs in percentage of all possible pairs (all neurons active in the context) against the time mice were moving in the respective context. We found no correlation between the number of correlated pairs and the time mice were moving. Pearson\u2019s R2 and p-values are noted in brackets. (e,g) Schematic of time point in behavioral paradigm of the presented data (context A and context C on day 16 after foot-shock training in context A). (f,h) Quantification of A&C neurons that formed correlated pairs with other neurons (A&C neurons or context neurons) in ACC and CA1 (see also Figure 3n) during recent (f) and remote (h) recall. In CA1, lenti-shRNA injected mice showed significantly less A&C neurons among the correlated pairs than shNT injected mice [Unpaired t-test with Welch\u2019s correction, p = 0.017, n = 5] at the remote time point. (i) Schematic of time point in behavioral paradigm of the presented data (context A and context C on day one after foot-shock training in context A). (j) Neuronal activity in form of normalized (to same day baseline) calcium event rate on day one after foot-shock training (in context A) in both context A and context C. All neurons active in the respective context were included in this dataset. In CA1, the average event rate was higher in context C compared to context A in both virus groups (left and right lower panel) [Two-way ANOVA with repeated measures, CA1, shNT: context x time effect p < 0.0001, time main effect p = 0.007, context main effect p = 0.028, n = 5, shRNA,: context x time effect p < 0.0001, time main effect p = 0.012, context main effect p = 0.029, n = 5]. No difference between contexts was found in ACC [Two-way ANOVA with repeated measures, shNT: context x time effect p < 0.0001, time main effect p = 0.001, context main effect p = 0.216, shRNA: context x time p < 0.0001, time main effect p = 0.156, context main effect p = 0.957 n = 5]. (k) Schematic of time point in behavioral paradigm of the presented data (context A and context C on day 16 after foot-shock training in context A). (l) Neuronal activity in form of normalized (to same day baseline) calcium event rate on day 16 after foot-shock training (in context A) in both context A and context C. All neurons active in the respective context were included in this dataset. There was no context effect in any experimental group [Two-way ANOVA with repeated measures, ACC, shNT: context x time effect p = 0.456, time main effect p = 0.321, context main effect p = 0.839; shRNA: context x time effect p = 0.863, time main effect p = 0.446, context main effect p = 0.73, n = 5; CA1, shNT: context x time effect p < 0.0001, time main effect p = 0.0004, context main effect p = 0.953, shRNA: context x time effect p < 0.0001, time main effect p = 0.005, context main effect p = 0.603, n = 5].\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Example distributions of spatial correlation generated with CellReg (Sheintuch et al., 2017) on spatial maps from each experimental group using probabilistic modeling. The green and red numbers indicate the certainty of each model (same cell model, green; different cell model, red). All groups showed a bimodal distribution though the distributions and thresholds differed between ACC (upper panels) and CA1 (lower panels) but not between treatment groups within each brain region (left and right panels). (b) Plot of registration certainty (green numbers in example a) against the normalized number of A&C neurons (normalized jaccard similarity index) on day 1 and day 16. There was no significant correlation between the certainty of cell registration and the number of A&C neurons (Pearson\u2019s R2 and p-values are noted in brackets). (c) Quantification of A&C neurons using a fixed threshold for spatial correlation of 0.85. The effects found in Figure 3 were similar to those found using a fixed threshold [Unpaired t-test with Welch\u2019s correction, day 1, ACC: p = 0.35, CA1 p = 0.05; day 16, ACC p = 0.044, CA1 p = 0.567; n = 5].\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** No difference between groups was found in any analysis [Two-way repeated measures ANOVA; (a) time x brain region effect, p = 0.995, main brain region effect, p = 0.109, main time effect: p = 0.002, n = 5; (b) time x brain region effect, p = 0.647, main brain region effect, p = 0.868, main time effect: p = 0.019, n = 5; (c) time x brain region effect, p = 0.978, main brain region effect, p = 0.443, main time effect: 0.443, n = 5; (d) time x brain region effect, p = 0.849, main brain region effect, p = 0.969, main time effect: p = 0.68; n = 5;].\n\nAnalysis of constituent cell properties within recorded cell populations revealed that the majority of neurons were active in only one context with a small subset (CA1, shNT 15.4 \u00b1 1.9, shRNA 14.1 \u00b1 2.2; ACC, shNT 23.7 \u00b1 2.4, shRNA 14.5 \u00b1 4.6; percentage of A&C neurons expressed as mean \u00b1 S.E.M) of neurons active in both contexts (hereafter referred to as \u2018A&C neurons\u2019) (Figure 3e\u2013h). We used a normalized jaccard similarity index (Ahmed et al., 2020), which corrects for differences in number of overall recorded neurons per session to calculate the average number of A&C neurons per day. Neurons in CA1 (including A&C neurons) showed higher activity i.e. rate of calcium transients in context C relative to context A [Two-way ANOVA with repeated measures, CA1, shNT: context x time effect p < 0.0001, time main effect p = 0.007, context main effect p = 0.028, n = 5; shRNA,: context x time effect p < 0.0001, time main effect p = 0.012, context main effect p = 0.029, n = 5] [A&C neurons: one sample t-test against 0, CA1, shNT: p = 0.007, shRNA: p = 0.048, n = 5] suggestive of a novelty response (Figure 3\u2014figure supplement 1i-j, Figure 3f). In contrast to the training session, higher neuronal activity in context C was not accompanied by increased number of correlated pairs. Interestingly, the shRNA group showed significantly fewer A&C neurons in CA1 indicating that increasing FFI in DG \u2012 CA3 reduced the number of neurons that were active in both contexts [Two-tailed unpaired t-test with Welch\u2019s correction, p = 0.048, n = 5] (Figure 3h).\n\nThus, early stages of memory consolidation are characterized by increased co-activity of neurons within CA1 as also observed previously (Ognjanovski et al., 2017) and FSR neurons found during encoding do not appear to participate in CA1 context-specific ensembles at recent recall. Furthermore, increasing FFI in DG \u2012 CA3 facilitated the emergence of training context-specific ensembles in CA1 and ACC suggestive of increased SWR \u2012 spindle coupling between CA1 \u2012 ACC during memory consolidation (Maingret et al., 2016; Ognjanovski et al., 2017; Steadman et al., 2020; Xia et al., 2017).\n\n### FFI in DG \u2012 CA3 promotes stability and context specificity of CA1 \u2012 ACC ensembles at remote timepoint\n\nNeuronal ensembles are thought to re-organize over time in the ACC as memories transition from a recent to a remote state. To determine how FFI in DG \u2012 CA3 influences properties of neuronal ensembles over time, we returned mice to the conditioned context A or neutral context C at 16 days following training and recorded neural activity in CA1 and ACC and measured freezing behavior (Figure 3i and j). Behavioral analysis revealed that the shRNA group exhibited significantly higher levels of discrimination between the two contexts than the shNT group [Two-way repeated measures ANOVA, treatment x time effect N.S., treatment main effect: p = 0.028, n = 10, see Figure 3\u2014figure supplement 3d for comparison of ACC and CA1] (Figure 3j). Both groups of mice maintained an increase in correlated pairs in CA1 during recall in context A (two-tailed unpaired student\u2019s t-test with Welch's correction, N .S., n = 5), however the shRNA group did not exhibit a significant decrease in correlated pairs from day 1 to day 16 as seen for shNT group (Two-tailed paired t-test, shNT p = 0.041, shRNA: N.S. n = 5, comparison not shown). Furthermore, the shRNA group showed increased co-activity in context C [One-sample t-test against 1 (baseline, BL), context A, shNT, p = 0.006; shRNA, p = 0.04; context C, shNT p = N .S.; shRNA, p = 0.026; n = 5;] that was significantly higher compared to shNT group in context C [two-tailed unpaired student\u2019s t-test with welch correction, p = 0.042, n = 5] (Figure 3k).\n\nNext, we analyzed A&C neurons in CA1 and ACC. We found that the A&C neurons in CA1 in the shRNA group exhibited higher activity (rate of calcium events) in context C relative to context A [one sample t-test against 0, shNT: N.S., shRNA: p = 0.012, n = 5] (Figure 3l). This elevation in activity was peculiar to A&C neurons in shRNA group and was not detected in the overall activity of CA1 neurons in each context as seen on day 1 [Two-way ANOVA with repeated measures, CA1, shNT, context x time effect p,0.0001, context main effect N.S., time main effect: p = 0.0004, shRNA, context x time effect p < 0.0001, context main effect N.S., time main effect p = 0.005, n = 5] (Figure 3\u2014figure supplement 1k-l). Furthermore, the shRNA group showed significantly fewer A&C neurons among all correlated pairs of neurons in CA1 compared to the shNT group [two-tailed unpaired t-test with Welch\u2019s correction, p = 0.017, n = 5; A&C neurons, recent, ACC, shNT 42.97 \u00b1 8.37, shRNA 39.07 \u00b1 5.93,CA1, shNT, 27.03 \u00b1 8.23, shRNA, 30.64 \u00b1 4.65; remote, ACC, shNT 33.59 \u00b1 11.82, shRNA, 36.34 \u00b1 12.14, CA1, shNT, 52.26 \u00b1 4.80, shRNA, 28.55 \u00b1 6.17; mean \u00b1 SEM] (Figure 3n and Figure 3\u2014figure supplement 1g-h). While there was no difference in the number of A&C neurons between virus groups in CA1 [two tailed unpaired t-test with Welch\u2019s correction, N.S., n = 5], the shRNA group showed significantly fewer A&C neurons in ACC indicating that fewer neurons were active in both contexts C [two-tailed unpaired t-test with Welch\u2019s correction, p = 0.028, n = 5] (Figure 3m). The control group showed an increase in the number of A&C neurons over time (Two-way repeated measures ANOVA, treatment x time effect p = 0.017, Sidak\u2019s multiple comparison test day 1 vs day 16, shNT p = 0.039, shRNA p = 0.405, comparison not shown).\n\nGiven that identification of A&C neurons may vary based on the approach used to register cells (Sheintuch et al., 2017), we tested if the certainty of registration or the method of registration accounted for the virus-mediated effects that we found. We found no significant correlation between the registration certainty of the mice included in this study and the number of A&C neurons that could explain our virus-mediated effects (Pearson\u2019s correlation, shNT, ACC, R2 = 0.09, p = 0.41, n = 10, shNT, CA1, R2 = 0.05, p = 0.520, n = 10, shRNA, ACC, R2 = 0.036, p = 0.600, n = 10, shRNA, CA1, R2 = 0.029, p = 0.638, n = 10) (Figure 3\u2014figure supplement 2a-b). When we used a fixed threshold, instead of a probability model, to register cells across sessions, we were able to reproduce the virus-mediated differences seen in CA1 at a recent time point as well as in ACC at the remote timepoint demonstrating the robustness of our findings (Figure 3\u2014figure supplement 2c).\n\nTogether, these data suggest that increasing FFI in DG \u2012 CA3 prevents time-dependent decay of training context-associated ensemble in CA1, promotes formation of a neutral context-associated ensemble in CA1 and emergence of context-specific ensembles in ACC.\n\n### A&C neuron activity in CA1 is sufficient to accurately predict context\n\nOur analysis of CA1 and ACC ensembles at recent and remote timepoints suggests a sequential establishment of context-specific ensembles in CA1 followed by formation of context-specific ensembles in ACC at remote timepoint. While the majority of neurons were found to be only active in one context, our data suggest that the activity of A&C neurons in CA1 may also convey context-specific information. (Figure 3f and l). Therefore, we asked whether the activity of A&C neurons in CA1 is sufficient for a decoder to predict context. A support vector machine trained on time-binned events (5 s) in A&C neurons in CA1 performed better than shuffled data (see example distribution in Figure 4a). At the recent time point, day 1, calcium events in A&C neurons in both groups were sufficient to reliably predict context [Mann Whitney test, N .S., n = 4; One-sample t-test against 50 (chance level), shNT, p = 0.012, shRNA, p = 0.005, n = 4]. The shRNA group maintained a similarly high level of information in the A&C neurons as we were able to predict the context with similar accuracy at the remote time point [One-sample t-test against 50 (chance level), shRNA, p = 0.008, n = 4]. In contrast, decoder trained on shNT mice showed a reduction in prediction accuracy for the remote time point resulting in significantly less prediction accuracy in shNT mice compared to shRNA mice [Mann Whitney test, p = 0.029, n = 4] (Figure 4b). Nonetheless, the prediction accuracy in shNT mice maintained a significant-above-chance performance despite the fact that A&C neurons did not show an elevation in activity at the remote time point (Figure 3l) [One-sample t-test against 50, shNT, p = 0.003, n = 4] (Figure 4b) supporting that both activity levels and synchronous firing are likely determinants of context specificity. We further tested if the decoder accuracy correlated with the ability of mice to discriminate between the two contexts. We found a positive correlation between these two parameters indicating that A&C neurons may indeed serve to guide context-associated behavioral responses [Pearson\u2019s correlation, shNT: R2 = 0.579, p = 0.028, n = 8, shRNA R2 = 0.577, p = 0.028, n = 8].\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig4-v3.jpg)\n\n**Figure 4.:** (a) A support vector machine was trained to classify the context based on neuronal activity of CA1 A&C neurons. A distribution of prediction accuracy was created with 1,000 randomized datasets of shuffled event times (shuffled). Graphs show an example distribution of an shNT-injected (left) and an shRNA-injected mouse (right) recent recall (day 1). Lines in graph indicate the mean (solid, gray) and two standard deviations from the mean (dashed, gray). The solid line (black) indicates the decoder accuracy of the true data from the respective mouse. (b) Summary of prediction accuracy (within subject) for day 1 and day 16. On day 1, the accuracy to predict the context based on A&C neuron\u2019s activity was above chance (also see shuffled data in panel a) [One-sample t-test against 50 (chance level)], shNT, p = 0.012, shRNA, p = 0.005, n = 4 (only mice with >50 A&C neurons were included to avoid overfitting) with no difference between the treatment groups [Mann Whitney test, p = 0.486, n = 4]. This was maintained on day 16 [One-sample t-test against 50 (chance level), shNT, p = 0.003, shRNA, p = 0.008, n = 4] with a significantly higher accuracy in lenti-shRNA injected mice [Mann Whitney test, p = 0.029, n = 4]. (c) Accuracy of the decoder correlates positively with the discrimination ratio found in mice during recall (day 1 and day 16) in both groups. Pearson\u2019s R2 value is shown in brackets. [Pearson\u2019s correlation, shNT p = 0.028, shRNA = 0.028, n = 4 per group].\n\n### Enhancing FFI in DG \u2012 CA3 promotes cross-region communication in CA1 \u2012 ACC network\n\nOur findings that enhancing FFI in DG \u2012 CA3 FFI facilitated the formation of context associated neuronal ensembles in both CA1 and ACC strongly suggest a role for increased hippocampal-cortical communication. To directly test this hypothesis, we performed simultaneous recordings of local field potentials (LFP) in CA1 and ACC using custom made tetrodes in mice following viral shNT/shRNA injections into the DG (Figure 5a). We analyzed ripples in CA1 and spindles in ACC during slow-wave sleep (SWS) as extensive work has implicated ripple \u2012 spindle coupling in memory consolidation (Battaglia et al., 2004; Maingret et al., 2016; Sirota et al., 2003; Xia et al., 2017). Recordings were performed in a familiar context before and after foot-shock training in context A (Figure 5b). All mice showed similar duration of SWS (Figure 5\u2014figure supplement 1a) [Two-way repeated measures ANOVA, treatment x time effect, N.S., main treatment effect, N.S., main time effect, N.S, n = 5 per group].\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig5-v3.jpg)\n\n**Figure 5.:** (a) Schematic of surgical procedure and histology of tetrodes in CA1 and ACC (white arrows). (b) Recording paradigm and example traces. Local field potentials (LFPs) were recorded before and after mice were trained in context A. Raw traces obtained from LFP recordings from ACC (red) and CA1 (blue). Gray boxes indicate time points magnified in filtered examples below. Magnified signals were filtered for ripples (CA1, blue) and spindles (ACC, red) during slow-wave sleep (SWS). Magnified examples are not aligned temporally. (c) Coupled ripples (% of all ripples) during pre-Training recordings. shRNA mice showed significantly more coupled ripples compared to shNT mice [Unpaired Student\u2019s t-test, p = 0.049, n = 5 per group]. (d-e) Ripple occurrence (ripples/sec) and spindle occurrence (Spindles/sec) during pre-Training recordings. No difference was found between virus groups. [Unpaired Student\u2019s t-test, ripples/sec: p = 0.633, n = 5 per group; spindles/sec: p = 0.466, n = 5 per group]. (f\u2013h) Effect of training on coupled ripples, ripple occurrence and spindle occurrence. Plots show pairwise comparison of pre-Training (same data as c-e) with post-Training recordings. shNT mice (left panel) show increased coupled ripples (f) following learning [Paired Student\u2019s t-test, p = 0.019, n = 5; shRNA mice: p = 0.881, n = 5] and increased couple occurrence (g) [Paired Student\u2019s t-test, p = 0.031, n = 5; shRNA mice: p = 0.621, n = 5]. No difference is found in spindle occurrence following learning (h) in either group [Paired Student\u2019s t-test, p = 0.109, n = 5; shRNA mice: p = 0.623, n = 5].\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Time in SWS during LFP recordings. [Two-way ANOVA with repeated measures, virus x time effect, p = 0.505, main virus effect, p = 0.959, main time effect, p = 0.917, n = 5 per group]. (b) Total number of ripples detected per recording [Two-way ANOVA with repeated measures, virus x time effect, p = 0.247, main virus effect, p = 0.589, main time effect, p = 0.069, n = 5 per group]. (c) total number of spindles detected per recording [Two-way ANOVA with repeated measures, virus x time effect, p = 0.774, main virus effect, p = 0.335, main time effect, p = 0.548, n = 5 per group]. (d) Example of mean traces of filtered spindle (upper) and ripple (lower) aligned to event peak. (e) Spectrogram of unfiltered mean spindles (upper) and ripples (lower) calculated within the relevant frequencies and time windows. (f) Spectrum of unfiltered mean spindles (upper) and ripples (lower).\n\nIn learning na\u00efve shRNA-injected mice, we found significantly more ripples that co-occur with spindles (coupled ripples) compared to control mice (Figure 5c, Two-tailed unpaired student\u2019s t-test with Welch\u2019s correction, p = 0.049, n = 5 per group). This was not due to an increase in ripple or spindle occurrence (Figure 5d\u2013e) [Two-tailed unpaired student\u2019s t-test with Welch\u2019s correction, ripples/sec: N.S., n = 5 per group, spindles/sec, N.S., n = 5]. The number of overall detected ripple or spindle events did also not differ between groups (Figure 5\u2014figure supplement 1b,c) [total number of spindles: Two-way repeated measures ANOVA, treatment x time effect, N.S., main treatment effect, N.S., main time effect, N.S., n = 5 per group; total number of ripples: Two-way repeated measures ANOVA, treatment x time effect, N.S., main treatment effect, N.S., main time effect, N.S., n = 5 per group].\n\nWe next quantified the effect of contextual fear learning on ripple \u2012 spindle coupling. We recorded LFPs 15 minutes after mice were returned to the familiar context from training context. In line with previous studies, we found an increase in coupled ripples in control mice (Maingret et al., 2016; Xia et al., 2017) [Paired Student\u2019s t-test, p = 0.019, n = 5] to a similar level as seen in naive shRNA-injected mice (Figure 5f). Thus, our viral manipulation promotes the reorganization of neuronal activity patterns in downstream CA1 ACC that naturally occurs following learning. While training induced an increase in overall ripple occurrence (ripple/sec, Figure 5g) in control mice [Paired Student\u2019s t-test, p = 0.031, n = 5], this was not seen in shRNA mice [Paired Student\u2019s t-test, N.S., n = 5].\n\n### Formation, stabilization and specificity of context-associated ensembles\n\nOur longitudinal imaging studies reveal evolving dynamics of ensemble properties in CA1 \u2012 ACC networks underlying recent and remote memories and demonstrate how enhancing FFI in DG \u2012 CA3 impacts these properties to promote memory consolidation. Learning induced the formation of neuronal ensembles of foot-shock-responsive neurons in both ACC and CA1 and enhanced FFI potentiated this property in CA1. During early stages of memory consolidation (recall of recent memory), we observed the emergence of training context-associated ensembles (increased numbers of co-active neurons) in both CA1 and ACC. Increasing FFI in DG \u2012 CA3 prior to learning promoted emergence of training context-associated ensemble in ACC suggestive of increased CA1 \u2012 ACC communication (Figure 6a). Additionally, we observed a FFI dependent reduction in the number of neurons active in both training and neutral contexts in CA1 (Figure 6b, top) reflecting increased specificity of neuronal ensembles. At remote recall, we observed that FFI in DG \u2012 CA3 prevented time-dependent decay of the training context-associated ensemble and promoted acquisition (or maintenance since it may have emerged prior to test at remote timepoint) of a neutral context specific ensemble in CA1 (Figure 6a and b). Within the ACC, and not evident at the recent timepoint, we observed a FFI dependent reduction in the number of neurons active in both training and neutral contexts (Figure 6b, bottom). Electrophysiological recordings suggest that increasing FFI in DG \u2012 CA3 induced learning-dependent enhancement in network synchrony in CA1 \u2012 ACC in behaviorally na\u00efve mice (Figure 6c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70586/elife-70586-fig6-v3.jpg)\n\n**Figure 6.:** (a\u2013b) Graphic summary of current findings. Learning induced the formation of neuronal ensembles of foot-shock-responsive neurons in both ACC and CA1 and FFI potentiated this property in CA1. During early stages of memory consolidation (recall of recent memory), we observed the emergence of training context-associated ensembles (increased numbers of co-active neurons) in both CA1 and ACC. Increasing FFI in DG-CA3 promoted emergence of training context-associated ensemble in ACC and increased CA1-ACC communication (c). Additionally, we observed a FFI dependent reduction in the number of neurons active in both training and neutral contexts in CA1 (a, top) reflecting increased specificity of neuronal ensembles. At remote recall, we observed that FFI in DG-CA3 prevented time-dependent decay of the training context-associated ensemble and promoted acquisition (or maintenance since it may have emerged prior to test at remote timepoint) of a neutral context specific ensemble in CA1 (a, b). Within the ACC, and not evident at the recent timepoint, we observed a FFI dependent reduction in the number of neurons active in both training and neutral contexts (b, bottom).\n\n## Discussion\n\nThe DG \u2012 CA3 circuit contributes to encoding of episodic memories conjunctive representations that relate people, objects, events with the spatial and temporal contexts in which they occur. This is thought to be accomplished in DG \u2012 CA3 by integration of processed sensory information about our external world channeled from higher order cortices (perirhinal, postrhinal) via the entorhinal cortex and by decreasing interference between similar representations (Hainmueller and Bartos, 2020). Distinct or updated detail-rich contextual representations in CA3 are transferred to CA1 enroute to prefrontal cortical sites (ACC, infralimbic and prelimbic) for memory consolidation. PV INs in CA1 and ACC are thought to mediate learning-induced synchronization of neuronal activity to stabilize memory ensembles and channel information across different regions (Buzs\u00e1ki, 2015; \u00c7aliskan et al., 2016; Dupret et al., 2013; Fern\u00e1ndez-Ruiz et al., 2021; Gan et al., 2016; Ognjanovski et al., 2017; Stark et al., 2014; Xia et al., 2017) We know much less about how PV INs in DG \u2012 CA3 contribute to these ensemble dynamics during memory consolidation.\n\nTo address this gap in our knowledge, we deployed a previously characterized molecular tool to increase dentate granule cell recruitment of PV IN mediated perisomatic inhibition onto CA3 in a way that mimics learning induced modifications of dentate granule cell \u2012 PV IN \u2012 CA3 connectivity (Guo et al., 2018). By combining this molecular approach to enhance FFI in DG \u2012 CA3 with longitudinal calcium imaging of neuronal ensembles, we identified PV INs in DG \u2012 CA3 as critical arbiters of ensemble stabilization and specificity in CA1 \u2012 ACC networks during memory consolidation. Furthermore, we provide direct evidence for a role of PV INs in the DG \u2012 CA3 circuit in promoting hippocampal-cortical communication. Our approach affords a unique opportunity to understand how a defined inhibitory connectivity motif (dentate granule cell \u2012 PV IN \u2012 CA3), rather than PV INs in CA3 per se, contributes to evolving ensemble properties underlying memory consolidation. While optogenetic or chemogenetic manipulations of PV INs (in CA1) have illuminated their roles in regulation of synchronous activity and in SWR \u2012 spindle coupling, these manipulations target PV INs rather than a circuit motif in a wiring diagram and as such, do not address input-specific recruitment of PV INs in these processes. Here, we interpret our data on stability and specificity of ensembles in CA1 and ACC during memory consolidation through the lens of this inhibitory circuit motif in DG \u2012 CA3.\n\nWe found synchronous activity of principal neurons (captured in correlated pairs) indicative of neuronal ensembles in CA1 and ACC during training, recent and remote recall (Gonzalez et al., 2019; Liu et al., 2017; Modi et al., 2014; Rajasethupathy et al., 2015). In contrast to a prior report on FSR neurons in ventral CA1 that project to the basolateral amygdala (Jimenez et al., 2020), we did not observe recruitment of FSR neurons into training context-associated ensembles in CA1 during recent recall. This differential contribution of dorsal and ventral hippocampal FSR neurons to context-associated ensembles may reflect output connectivity (basolateral amygdala vs. other downstream circuits) and distinct roles of dorsal and ventral hippocampus in encoding spatial and non-spatial information (Chockanathan and Padmanabhan, 2021; Fanselow and Dong, 2010; Strange et al., 2014).\n\nOur data demonstrate that increased FFI in DG \u2012 CA3 promotes neuronal ensembles in both CA1 and ACC. Following contextual fear learning, we observed emergence of training context-associated ensembles in CA1 in both groups of mice but only mice with increased FFI in DG \u2012 CA3 exhibited a learning-induced ensemble associated with the training context in the ACC. Analysis of neuronal ensembles during remote recall demonstrated that increasing FFI in DG \u2012 CA3 prevented the decay of training context associated ensemble and promoted the emergence of a neutral context associated ensemble in CA1.\n\nIt is thought that the DG \u2012 CA3 \u2012 CA1 \u2012 ACC network undergoes changes in synaptic weights following learning that likely result in inter-regional ensembles. During memory consolidation, those neuronal representations are reorganized and strengthened potentially through re-activation during sharp-wave ripples and transferred to cortical regions by coupling between ripples and cortical spindles (Cheng and Frank, 2008; Hwaun and Colgin, 2019; Maingret et al., 2016; Makino et al., 2019; Sasaki et al., 2018; Xia et al., 2017). Our manipulation is restricted to the DG \u2012 CA3 circuit and thus strongly implicates FFI in DG \u2012 CA3 in formation and maintenance of CA1 and ACC ensembles. Previous work showed that increasing FFI in DG \u2012 CA3 decreases overlap between two context-associated ensembles in CA3 (Guo et al., 2018). We predict that increasing granule cell recruitment of perisomatic inhibition onto CA3 neurons imposes a sparser activity regimen from DG to CA3 thereby reducing the likelihood of recruitment of the same CA3 neurons to distinct ensembles during learning (Csicsvari et al., 2000; de la Prida et al., 2006; G\u00f3mez-Oc\u00e1diz et al., 2021; Mori et al., 2007; Neubrandt et al., 2017; Sasaki et al., 2018; Torborg et al., 2010). In turn, assemblies of CA3 neurons encoding different contexts entrain activity of downstream ensembles of CA1 principal neurons (Choi et al., 2018; Csicsvari et al., 2000; de la Prida et al., 2006). Distinct ensembles in CA1 recruit local PV INs to synchronize their activity and form SWRs (Choi et al., 2018; Csicsvari and Dupret, 2014; Gan et al., 2016; Malerba et al., 2017; Ognjanovski et al., 2017; Stark et al., 2014). CA3 neurons that encode novel spatial information were shown to be more likely active during SWR in CA1 suggesting that interregional maps may be strengthened during consolidation (Hwaun and Colgin, 2019). PV INs have been implicated to regulate fidelity of spike transfer (i.e. in form of coordinated spiking or burst firing of excitatory neurons) (Lamsa et al., 2005; Mori et al., 2007). Increased FFI inhibition may thus not only enhance sparseness but facilitate activation of CA3 ensembles resulting in improved memory consolidation in the DG \u2012 CA3 \u2012 CA1 circuit. Consequently, these changes in network properties of DG \u2012 CA3 \u2012 CA1 facilitate transfer of information to ACC via SWR \u2012 spindle coupling for memory consolidation (Maingret et al., 2016; Xia et al., 2017). Our findings of enhanced SWR \u2012 spindle coupling in mice with increased FFI in DG \u2012 CA3 provide direct evidence for such facilitated information transfer across the CA1 \u2012 ACC network.\n\nImportantly, feedforward inhibition in DG \u2012 CA3 synapses is naturally enhanced for several hours following learning (see Ruediger et al., 2011; Guo et al., 2018). By leveraging a molecular tool to enhance FFI prior to learning, we were able to reconfigure DG \u2012 CA3 circuitry in a learning permissive state. This is perhaps why behaviorally na\u00efve mice with increased FFI in DG \u2012 CA3 exhibit increased ripple-spindle coupling prior to learning.\n\nIncreasing FFI in DG \u2012 CA3 also enhanced specificity of context-associated ensembles in CA1 and ACC. Previous studies demonstrated that subsets of neurons are shared across ensembles when mice experience two distinct environments proximal in time (Cai et al., 2016; Rubin et al., 2015). We found a reduction in the number of neurons active in both contexts (A&C neurons) in ACC and a smaller proportion of A&C neurons within context-associated neuronal ensembles in CA1 at remote recall. These A&C neurons may function as \u201cschema\u201d neurons in that they represent shared features (statistical regularities) across ensembles and facilitate the formation of new context-associated ensembles (Abdou et al., 2018; McKenzie et al., 2014; McKenzie et al., 2013; Tse et al., 2007). Increased neuronal excitability has been shown to bias recruitment of neurons into ensembles (Yiu et al., 2014; Zhou et al., 2009). Higher activity of A&C neurons (observed upon exposure to context C) may bias their allocation into the ensemble associated with the new context while maintaining context-specific activity through synaptic connectivity (Abdou et al., 2018; Gava et al., 2021). Indeed, we can train a decoder on activity of A&C neurons to predict context. The decoder accuracy positively correlated with the mice\u2019 ability to discriminate contexts which indicates that these neurons are behaviorally relevant. Computational modeling has suggested that CA1 balances abstraction of statistical regularities across memories mediated by the temporoammonic pathway (EC \u2192 CA1) with encoding of detail-rich distinct contextual representations conveyed through the trisynaptic EC \u2192 DG \u2192 CA3 \u2192 CA1 circuit (Schapiro et al., 2017). Our data supports this model since we observe a reduction in neurons encoding overlapping features (A&C neurons) in CA1 (this study) when we increase FFI in DG \u2012 CA3 and reduce interference between context associated ensembles in CA3 (Allegra et al., 2020; Guo et al., 2018; Koolschijn et al., 2019; Leutgeb et al., 2004). Thus, our manipulation biases the trade-off in CA1 towards generation of context-specific ensembles in CA1 over generation of schema. While shifting this balance in healthy animals may come at a cost, reversing reductions in FFI in DG \u2012 CA3 found during aging or Alzheimer\u2019s disease may represent a strategy to restore memory consolidation (Guo et al., 2018; Viana da Silva et al., 2019, Twarkowski and Sahay unpublished observations).\n\nOur data builds on foundational theories (McClelland et al., 1995; Nadel and Moscovitch, 1997; Teyler and DiScenna, 1986; Winocur et al., 2010; Winocur et al., 2007) to suggest a continuous role for CA1 in playing an instructive teacher-like role in governing re-organization of ensembles in ACC during memory consolidation. During memory consolidation, conjunctive representations are thought to be transformed into more schema like or gist-like structures necessary for cognitive flexibility and new learning. However, the extent to which memories retain details may be determined by the hippocampus. Increasing FFI in DG \u2012 CA3 appears to facilitate re-organization of ensembles in ACC and decrease the number of A&C neurons (potentially, schema neurons) at the remote timepoint. Although in this study\u2019s experimental design, our behavioral analysis did not capture time-dependent generalization of the contextual fear memory, mice with increased FFI in DG \u2012 CA3 exhibited significantly greater long-term memory than controls. We infer from our data that stabilization of training-context associated ensembles in CA1 over time governs a toggle switch in the ACC that determines the extent to which memories may retain details over time. Such an interpretation is consistent with hippocampal indexing theory in that the maintenance of the hippocampal index for an experience permits access to details of the original experience stored in distributed neocortical sites (Besnard and Sahay, 2016; Goode et al., 2020; Koolschijn et al., 2019; Teyler and DiScenna, 1986).\n\nA major challenge in neuroscience is to assign functional significance to circuit motifs in wiring diagrams. Here, we build on our past work to demonstrate how the identification of learning-induced molecular regulators of connectivity may illuminate the relationship between a DGC \u2012 PV IN \u2012 CA3 circuit motif with emergent network properties during memory consolidation. The discovery of other molecular specifiers of principal neuron-inhibitory neuron connectivity in combination with a \u2018bottom-up synapse to systems approach\u2019 as conveyed here is likely to generate new fundamental insights into the physiological relevance of distinct hippocampal inhibitory circuit motifs in memory processing. It is plausible that connectivity re-engineering strategies such as that described in this study harbor potential to enhance memory consolidation in aging and in mouse models of Alzheimer\u2019s disease (McAvoy and Sahay, 2017).\n\n## Materials and methods\n\n### Animal care\n\nAll mice were group housed in a 12 hr (7 am to 7 pm) light/dark cycle at room temperature with ad libitum access to food and water. After surgery, mice were split into pairs and housed with a divider to protect the implant without single housing mice. Male, 2\u20133 months old C57Bl6/J mice were obtained from Jackson Laboratories. All animals were handled, and experiments were conducted in accordance with procedures approved by the Institutional Animal Care and Use Committee at the Massachusetts General Hospital in accordance with NIH guidelines (IACUC 2011N000084).\n\nLenti virus production lenti-shNT and lenti-shRNA virus were generated in the lab using previously described pLLX-shRNA lentiviral vectors (Guo et al., 2018) or a similar lentivirus U6-based shRNA knockdown vector from VectorBuilder. Expression of GFP or mCherry under the ubiquitin C promoter allowed to monitor the efficiency of transfection and infection both during virus production as well as in in vivo experiments. HEK293T cells were transfected with lentiviral vector and packaging plasmids, VSVG and \u03948.9, as described previously (Guo et al., 2018; Lois et al., 2002) to generate lenti-virus stock solutions. We used Lenti-X GoStix Plus (Takara Bio USA) to quantify the titer of each virus batch used in this study. The generated virus was further validated both in vitro by infection HEK293T cells and in vivo by injection into the hippocampus of 2\u20133 month old male C57BL6 mice. All virus stock solutions used in this study ranged from 200 to 300 ng/ml p24. Virus aliquots were stored at \u201380 \u00b0C for a maximum of 12 month and not reused (no freeze-thaw cycle).\n\n### Virus injections and stereotactic surgeries\n\nPrior to surgery mice received an injection of carprofen (5 mg/kg, subcutaneously, Patterson Veterinary Supply). Mice were anaesthetized with ketamine and xylazine (10 mg/mL and 1.6 mg/mL, intraperitoneally, Patterson Veterinary Supply) and placed at a planar angle in a stereotaxic frame (Stoelting). Eyes were protected with Puralube (Dechra). After exposing the skull, craniotomies above the target site for injections were created using a Foredom K.1070 High Speed Rotary Micromotor Kit. The injection was performed with a hamilton microsyringe (Hamilton, Neuros Syringe 7001) that was slowly lowered into the target location. For virus validation and calcium imaging of ACC neurons, bilateral lenti-virus injections into the DG were performed using following coordinates: \u20131.9 mm (AP),\u00b11.35 mm (ML), \u20132.2 mm (DV) relative to bregma. For calcium imaging of CA1 neurons, we used an angle to access DG without damaging overlaying CA1. We adjusted the manipulator arm to an angle of \u201320\u00b0 and used the following coordinates: \u20131.1 mm (AP),\u00b11.4 mm (ML), \u20132.3 mm (DV) relative to bregma. A total of 0.5 \u00b5l virus solution (non diluted) was injected per hemisphere.\n\nThe calcium indicator GCaMP6f was unilaterally injected using an AAV1.CaMKII.GCaMP6f.WPRES.SV40 virus (Penn Vector Core) in either ACC ( + 1.0 mm (AP), \u20130.35 mm (ML), \u22122.0/\u20131.6 (DV)) or CA1 (\u20131.9 mm (AP), \u20131.4 mm (ML), \u20131.6 mm (DV)). For ACC, we spread the injection across two depths to achieve a better distribution of the virus. A total of 0.5 \u00b5l at a 1:5 dilution was injected. Mice that underwent calcium imaging in CA1, received first the GCaMP6f injection in CA1 and 3 days later the angled lenti-virus injection into the DG. Mice with ACC imaging received both injections on the same day. At least 10 min after injection, needles were removed, and the skin incision closed with coated vicryl sutures (Ethicon US LLC). Mice received a daily injection of carprofen (5 mg/kg, subcutaneously, Patterson Veterinary Supply) for 3 days following surgery.\n\nMice that underwent electrophysiological recordings received injection of lentivirus into the dDG as described above 1 week prior to implantation of electrodes. Custom made tetrodes (California Fine Wire Company, StablOhm 675, 0.003 inches) were implanted into ACC (AP: + 1.0, ML: \u20130.35, DV: \u20131.8) and CA1 (AP: \u20131.8, ML: \u20131.2 and \u20131.4 (2 tetrodes), DV: \u20131.6) for simultaneous recordings of local field potentials. Craniotomies were performed at the respective locations, the dura was perforated and the tetrodes slowly lowered into the tissue relative to bregma. A reference electrode (single wire) was placed in the cerebellum. A ground screw and an additional screw were implanted in the left hemisphere (Basi Bioanalytical Systems). Tetrodes and screws were fixed to the skull with superglue and dental cement (Stoelting).\n\n### Lens implantation\n\nAt least one week after the last virus injection, mice were implanted with a GRIN lens (0.5 mm \u00d8 x 4 mm in ACC, 1 mm \u00d8 x 4 mm in CA1). We applied the same analgesia and anesthesia strategy as described above. Mice were placed in the stereotaxic frame and fixed at a planar angle. The skull was exposed, and a craniotomy created above the target site (ACC: + 0.9 mm (AP), \u20130.3 mm (ML), \u20131.3 mm (DV); CA1 \u20131.85 mm (AP), \u20131.35 mm (ML), \u20131.4 mm (DV)). In addition, we created two small craniotomies to insert anchor screws (Basi Bioanalytical Systems). For CA1, we removed the overlaying cortex, as described Kinsky et al., 2020 using blunt needles of decreasing diameter (25ga to 31ga, SAI Infusion Technologies) attached to a vacuum pump while constantly applying cooled, sterile saline. A microscope (Nikon SMZ800) was placed above the stereotaxic frame to allow visual control of the procedure. Once the cortex was removed and possible bleeding stopped with gelfoam (Pfizer), the lens was attached to a custom-made lens holder and slowly lowered into the craniotomy. Coordinates for the lens were referenced to bregma. For ACC, no aspiration was performed. Instead, we inserted a 30ga needle at the ACC coordinates (AP & ML) and slowly lowered it \u20131.0 mm DV into the cortex to open the track for the lens. After 10 min the needle was slowly removed and the GRIN lens, attached to a custom-made holder, inserted into ACC. Once the lens in either brain region was inserted, the gap between lens and skull was sealed with superglue before the lens was cemented to the skull with dental cement (Stoelting). A thin layer of blackened dental cement (by adding nail polish to the cement) was applied as final layer to shield the lens from light. The remaining part of the lens was covered with Kwik-cast sealant (World Precision Instruments).\n\nOne week following the lens implant, mice were placed back in the stereotaxic frame as described above. The Kwik-cast sealant was removed from the lens and possible residues cleaned off with lens paper. A baseplate was attached to the microscope (Inscopix) and positioned above the lens. The field of view (FoV) was visualized with nVista HD software (Inscopix) and the microscope carefully adjusted to be parallel to the lens surface. The microscope was lifted towards the best possible visualization of vasculature and putative neurons (approx. 200\u2013250 \u00b5m above the focus of the lens surface). Before applying the dental cement, the microscope was raised another 50 \u00b5m. The baseplate was firmly attached to the previous implant with dental cement and a final layer of blackened cement was again applied to shield the lens from light. Once the cement hardened, we removed the microscope and attached a baseplate cover (Inscopix).\n\n### Behavioral testing\n\nMice were tested in a series of behavioral paradigms while calcium imaging was performed. Videos were acquired with a CCD camera (OMRON SENTECH) at 30 frames/second. Prior to any experiment, mice were allowed to rest in a quiet holding area for at least 1 hr. Each day, mice would first undergo a 6 min recording in a familiar context (Makrolon cage with bedding, baseline recording). After 2 hr mice were tested in an open field arena (OF) Plexiglas box, 41 \u00d7 41 cm (Kinder Scientific) for 15 min (day \u20133), an elevated plus maze (gray taped Plexiglass, 16cm x 5 cm arms with two open arms and two arms with vertical walls 1 m above ground) for 6 min (day \u20132) and a contextual fear conditioning paradigm (day \u20131 to day 16). For the contextual fear paradigms, we used two different contexts. Context A consisted of a squared conditioning chamber (18 \u00d7 18 \u00d7 30 cm) with two metal and two clear walls and a stainless-steel grid floor (Coulbourn Instruments). Context C consisted of a round, white coated paper bucket with blue stripes (18 \u00d8 x 30 cm). Each recording was performed for 6 min. Mice were pre-exposed to context A without a foot-shock on day-1 (preA). One day later, mice were re-introduced to context A and received three foot-shocks (2 s, 0.75mA) at 180 s, 240 s and 300 s (training day, day 0). The next day, mice were tested in context A and 2 hr later in context C (day 1). The order of context was counterbalance to avoid procedural learning. This was repeated 10 days (day 10) and 16 days after training in context A (day 16).\n\nMice with tetrode implants were recorded in a familiar context (Makrolon cage with bedding) 24 hr before and 15 min after receiving foot-shocks in context A (same parameters as above). Each recording session lasted 2 hours.\n\n### Quantification of behavior\n\nBehavioral videos were exported as AVI from Freezeframe (Actimetrics) and analyzed with Ethovision 15 (Noldus). Freezing behavior was quantified using the activity feature that is based on changes in pixel and therefore more robust against artefacts from the cable. Moving was measured as motion of the body center point.\n\n### Calcium imaging acquisition\n\nMice were allowed to recover at least a week before being handled. Once mice were recovered, they were handled using the tunnel handling approach (see https://www.nc3rs.org.uk/mouse-handling-poster) and habituated to the microscope. All recordings were performed using nVista HD (Inscopix). Prior to recording sessions, mice were tested for sufficient calcium signal in the FoV, a reference image was taken, and the LED intensity tested to be optimal for recording. The LED intensity for each animal was maintained throughout the experiment. During the behavior paradigm, the microscope (nVista2, Inscopix) was attached to the baseplate and, when necessary, the FoV adjusted to match the reference image. Average number of recorded neurons per mouse and session were as follow: CA1: shNT mean:137, S.E.M. 15, shRNA mean:161, S.E.M. 20, ACC: shNT mean:89, S.E.M 21, shRNA mean: 68, S.E.M 21. Videos were recorded at 20 frames/s and a resolution of 1440 \u00d7 1280 pixels. We used a TTL-pulse to align the onset of behavioral and calcium video recording.\n\n### LFP eecordings\n\nSimultaneous LFP recordings were performed using OpenEphys software and acquisition board (https://open-ephys.github.io). Signals were amplified with a 16 channel headstage that included an accelerometer (Intan, RHD 2132). During recordings, signals were sampled at 30,000 Hz and bandpass filtered between 0.1 and 6000 Hz. Only mice with stable LFP signals in both CA1 and ACC and low noise level were included in the study.\n\n### Perfusion and histology\n\nMice were perfused with 4% PFA after completion of the behavioral paradigm. Brains were stored overnight in 4% PFA at 4 \u00b0C before being placed in 30% sucrose solution for 3 days at 4 \u00b0C. Brains were embedded in Optimal Cutting Temperature medium (OCT, Fisher HealthCare) and stored at \u201380 \u00b0C. Histological coronal sections (35 \u00b5m) were generated with a Leica cryostat (Leica) and stored in PBS with 0.01% sodium azide at 4 \u00b0C. Sections were immunohistologically stained as follow: Free floating sections were washed in PBS triton (0.3%) and unspecific binding sides blocked with blocking buffer (10% Normal Donkey Serum in PBS 0.3% Triton) for 2 hr at room temperature. Sections were further incubated with primary antibodies (as specified below) diluted in PBS 0.3% triton overnight at 4 \u00b0C. The next day, sections were washed three times (10 min) in PBS and incubated with secondary antibodies (as specified below) diluted in PBS for 2 hr at room temperature.\n\nTo validate the expression of the lenti-virus in all mice included in this study, we stained sections using antibodies against the fluochrome expressed by the lenti-virus (GFP or mCherry). A total of 4 mice across all groups were excluded from this study due to insufficient lenti-virus expression.\n\nTo quantify the effect of lenti-virus injection on inhibition, we used PV puncta as a histological marker as demonstrated previously (see Guo et al). See table for primary antibody details. We used alexa-fluor secondary antibodies (donkey, Jackson Immuno Research, 1:500 dilution) targeted against the host of the primary antibody.\n\n<table>\n  <thead>\n    <tr>\n      <th>Target</th>\n      <th>Antibody (primary)</th>\n      <th>Fluor of 2nd AB</th>\n      <th>Purpose</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GFP</td>\n      <td>Chicken anti-GFP (Aves, GFP-1020, 1:2000)</td>\n      <td>488</td>\n      <td>Label lenti-virus expression</td>\n    </tr>\n    <tr>\n      <td>mCherry</td>\n      <td>Rabbit anti-RFP (Rockland, 600-401-379, 1:200)</td>\n      <td>Cy3</td>\n      <td>Label lenti-virus expression</td>\n    </tr>\n    <tr>\n      <td>Parvalbumin</td>\n      <td>Mouse anti-PV (EMD Millipore, MAB 1572, 1:2000)</td>\n      <td>Cy5</td>\n      <td>Quantify PV puncta</td>\n    </tr>\n  </tbody>\n</table>\n\n### PV quantification\n\nWe quantified the level of PV puncta in dorsal CA3, dorsal CA1 and ACC. For that, we used a confocal microscope (Leica TCS SP8) with 60 x oil objective to generate high-resolution images. Images were acquired using a sequence to reduce cross-talk. We imaged 18 ROIs per mouse (three brain sections, 3 ROIs per hemisection). We used a zoom of 4 x for CA3, and 2 x for CA1 and ACC. Images were blinded with ImageJ randomizer macro (macro by Tiago Ferreira) and scored manually. In CA1, we distinguished between superficial and deep layer by drawing a 20 \u00b5m deep square from either the upper (deep layer) or lower (superficial) border of dense DAPI signal.\n\n### Calcium video processing\n\nVideos were decompressed and preprocessed with Inscopix Data Processing Software (Inscopix) using the motion correction and temporal down sampling to 10 Hz. Preprocessed videos were exported as TIFF and further analyzed with MATLAB 2018a (Mathworks).\n\n### Spatial and temporal calcium signal extraction\n\nWe used CNMF-E (Zhou et al., 2018) to extract spatial and temporal traces of individual neurons. We developed a MATLAB based code to further filter the extracted traces from CNMF-E to ensure, to the best of our ability in larger data sets, that our analysis is free from artefacts such as noise. We did so by removing: (1) possible false positive neurons based on contour features, (2) possible false positive (noisy) calcium events, (3) neurons with low activity after removing noisy events, (4) low signal neurons with high overlapping neighbor neurons.\n\nWe removed elongated shapes using the polygeom function. If the inertia ratio was larger than 5, we rejected the neuron to exclude possible dendrites or blood vessels or visually distorted neurons. Furthermore, we removed neurons with rough contours that likely stemmed from background fluorescence using a simple linear classifier. The roughness, called compacity in this case, is calculated as:\n\n$$\nC=\\frac{P^{2}}{4\\piA}\n$$\n\nwhere C is the compacity, P the perimeter and A the area of the neuron. The compacity threshold was empirically determined at 35. While CNMF-E includes a criteria to restrict overlap of neurons, we still found a small set of highly overlapping neurons in our extractions. To avoid a time-costly re-iteration of CNMF-E, we included this part of the CNMF-E approach into our pipeline. We identified candidate pairs with close proximity using an empirically tested threshold of 36 pixels between the center of each neuron. The overlap was then calculated as follow:\n\n$$\noverlap= \\frac{1}{2} \\frac{Area_{N_{1}\u2229N_{2 }}}{Area_{N_{1}}} + \\frac{Area_{N_{1}\u2229N_{2 }}}{Area_{N_{2}}}\n$$\n\nwhere $Area_{N_{1}\u2229N_{2}}$ is the overlap area between the two neurons 1 and 2 and AreaN1 and AreaN2 the number of pixels of neurons 1 and 2, respectively. The area of neurons and the overlap area were calculated using the polyshape function. If neurons overlapped more than 50%, the neuron with lower PNR was removed.\n\nTo remove noisy calcium events, we used a 2-step approach. First, we extracted the timestamp of possible calcium events (event-candidates) using the findpeak function on the raw fluorescence traces and the denoised traces from CNMF-E (neuron.C_raw, neuron.C). A peak was defined by an amplitude of at least 3 SD from baseline noise, a minimum distance between two peaks of 15 frames (1.5 second) and a minimum duration of 3 frames (300ms). We further extracted 8 features of the event-candidates from both the raw and denoised fluorescence traces based on the findpeak function: Peak-to-noise ratio (PNR), Width-to-Height ratio, Peak prominence, Pearson correlation between peaks in the raw and denoised traces, and local PNR of the event candidate in the raw trace. For the local PNR, we calculated the standard deviation of the baseline in the vicinity of the peak rather than the overall recording baseline. We performed a PCA (pca function) on those eight parameters for dimension reduction to extract the components of these parameters that could be best used for classification. To reliable identify and remove calcium events that we considered noisy, we then trained a quadratic Bayesian classifier (fitcdiscr) on manually classified calcium peaks. After removing noise calcium events, neurons with low activity were removed using a linear classifier\n\n$$\nN_{peaks}+2\\timesH_{max}\u22123>0\n$$\n\nwhere Npeaks is the neuron\u2019s number of calcium events within one calcium recording and Hmax the relative height of the maximal calcium peak. We updated the CNMF-E output (neuron.A, neuron.C and neuron.C raw) to remove all neurons indicated by our pipeline and generated a file with calcium event times (sparse time series) for each neuron matching CNMF-E indexes. The updated data set was used for all further analysis presented in the figures.\n\n### Correlated pairs\n\nWe calculated the correlation of calcium events between neurons using the xcorr function on time series data. We added a 200 ms frame around the calcium event (Barbera et al., 2016). We generated a distribution of correlation using temporally shuffled calcium event timeseries and calculated a threshold (mean + 2 SD) based on this distribution. Correlated pairs were defined as pairs with a correlation above this threshold. For analysis of foot-shock induced changes in cross-correlated pairs, we only included 30 s extracts of the preFS and postFS time series data (see Figure 2). To compare numbers of correlated pairs across sessions (e.g. between context A and context C), we normalized the number of correlated pairs to the number of correlated pairs found in the same day baseline (CCpairs ctx A / CCpairs baseline).\n\n### FSR neurons\n\nTo identify FSR neurons, we z-scored the calcium activity (calcium events) of each neuron to its time-binned (5 s) activity (calcium events) prior to the foot-shock (Pan et al., 2020). Neurons that increased their activity above 2SD during or after any foot-shock were classified as FSR neurons. To further quantify the foot-shock response we used 30 s timebin before and after the foot-shock (preFS vs postFS) and calculated the normalized activity before and after each foot-shock. We use the average of all three foot-shocks (preFS vs postFS) to quantify the overall effect of foot-shock training on those cells, which is why the average postFS response can be smaller than the initial threshold of 2SD [threshold to qualify as FSR]. To test for re-activated FSR within the population of correlated neurons during recall, we used the following criteria (1) the cell is matched across 2 days that is the cell was active during training and day one recall (in at least one context), (2) it was identified as FSR cell during training, (3) it is correlated with another cell during recall. This is independent of the correlated partner (other cell in pair does not have to fulfill these criteria).\n\n### Identification of A&C neurons\n\nWe used CellReg (Sheintuch et al., 2017) to register neurons across different sessions (contexts and days). Spatial maps of neuronal contours were extracted by reshaping the spatial CNMF-E output (neuron.A) and down sampled 4 x for faster processing. We used two different approaches to calculate a threshold for same neurons and different neurons, one is the probabilistic approach based on the distribution of our data and the other is a fixed threshold (see Sheintuch et al., 2017 for details). For all our recordings, spatial correlation was more reliable than centroid distance. We experienced that sessions with larger inter-session intervals (i.e. day 1 and day 16) were less accurate registered using the probabilistic approach than sessions that occurred closely in time. Therefore, we used the probabilistic approach only on sessions that were maximally 24 hr apart (training day and day 1; day 10; day16, data in main figures). To ensure that our findings were not driven by the cell registration approach, we also registered neurons using a fixed spatial correlation threshold of 0.85 as that was the average threshold we obtained in the probabilistic approach. This further allowed us to register neurons across all sessions (training day to day 16) as shown in the figure supplements. A&C neurons were defined as neurons that were active in both sessions (session A and session C) on the same day.\n\nGitHub: https://github.com/HannahTwarkowski/DG_CA3_FFI_consolidation (Twarkowski, 2021 copy archived at swh:1:rev:f7353d1b9385cda731a943a2415da69875b5d05a).\n\n### Quantification of A&C neurons\n\nThe number of A&C neurons was expressed as normalized jaccard similarity index (Ahmed et al., 2020)\n\n$$\nJA,C=|\\frac{| A \u2229C | }{| A \u222aC |}\n$$\n\nwith A = neurons in session A, C = neurons in session C. The jaccard similarity index describes the number of A&C neurons relative to the total number of neurons active in A and C. The number of A&C neurons however can be biased by the total number of neurons active during one session. Given that then pool of neurons that we record from is limited, recordings with larger number of neurons are stochastically more likely to contain A&C neurons than recordings with smaller number of neurons. To correct for this bias, we generated a distribution of 1000 jaccard similarity indices by randomizing neuronal indexes while keeping the number of active neurons recorded per session. The jaccard index was then z-scored to that distribution. Furthermore, z-scored indices were normalized to their minimum and maximum to allow cross object comparison.\n\n### Decoding context\n\nWe trained a support vector using the MATLAB statistics and machine learning toolbox. To avoid overfitting, we only included mice that had at least 50 A&C neurons per day. Instead of withholding testing data, we used 10fold cross-validation to train and test our data. The decoder was based on time binned (5 s) calcium event time series with averaged events per time bin of A&C neurons for both sessions. Thus, we obtained 72 vectors per context with the length of all A&C neuron reflecting each neuron\u2019s activity at a given time point. We used the decoder to test for differences between these vectors that could predict the context. For all mice, we generated 1000 shuffled data set of randomized calcium event time (maintaining the same number of total calcium events/neuron and neurons) to train the decoder and test prediction certainty. All randomized data sets resulted in chance level of prediction.\n\n### Ripple and spindle detection\n\nAnalysis of LFP signals was performed offline using Matlab 2020b (Mathworks). One channel for each region was selected and used for analysis. LFP signals were downsampled to 1250 Hz and analyzed using the FMA toolbox (Zugaro, 2018). Accelerometer data were used to determine states of immobility with the function QuietPeriods. LFP power was visualized using MTspectrum to control for possible contamination of the signal with electrical noise that would interfere with sharp-wave ripple detection. BrainStates function was used to determine sleep states using ACC and CA1 LFP as well as accelerometer data. Only slow-wave sleep episodes were further analyzed.\n\nCA1 ripples were detected using FindRipples on bandpass filtered CA1 LFP traces (100\u2013250 Hz). Signals that exceeded 3 SD at the beginning/end and 5 SD at the peak with a minimum duration of 50ms and a maximum duration of 100ms were classified as ripples. Detected ripple events that were less than 20ms apart were merged. Occurrence rate was calculated as the total number of ripples divided by the total time in SWS.\n\nACC spindles were detected using FindSpindles function on bandpass filtered ACC LFP traces (12\u201315 Hz). Signals that exceeded 2.5 SD for a minimum duration of 200ms and a maximum of 2000ms were classified as spindles. Occurrence rate was calculated as the total number of spindles divided by the total time in SWS.\n\nCoupled Ripples were defined as ripples that occured within a 1 s window (\u00b10.5 s) around the center of a spindle using the function RippleStats and an edited version of RippleStats to extract time stamps for onset, offset and center of the respective signal. Analysis was also performed using a smaller window of 0.5 s (\u00b10.25 s) with similar results (data not shown).\n\n### Statistics\n\nStatistical tests were performed with GraphPad Prism v9 (Graphpad Software). We used non-parametric tests for sample sizes smaller than 5. For data sets with at least 5 mice, we used two-tailed students t-test (with Welch correction for unpaired data), one sample t-test (against 0, 1 or 50, see Supplementary file 1 and figures for details) or two-way ANOVA with repeated measures and Sidak\u2019s multiple comparison test when appropriate. For all tests, significance was set at < 0.05. Individual data points reflect the average per mouse. Number of mice per group are indicated by n. All tests were performed using two-tailed settings. Details for all statistical analysis are provided in Supplementary file 1.\n",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "3a6ee935-9174-4523-ab51-dadd10f6f511",
+      "submission_id": "44f3a404-8b5c-4354-b764-1b0129afe4b7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Denise Cai, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70586.sa0](https://doi.org/10.7554/eLife.70586.sa0)\n\nThis paper will be of interest to scientists across systems neuroscience or to those interested in how one component of a neural circuit contributes to downstream functions longitudinally. The techniques used in this paper allowed the authors to characterize how increasing feed forward inhibition in the dentate gyrus-CA3 hippocampal circuit impacts the formation and maintenance of context-specific ensembles in CA1 and the anterior cingulate cortex without directly stimulating the circuit.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Denise Cai, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70586.sa1](https://doi.org/10.7554/eLife.70586.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A dentate gyrus-CA3 inhibitory circuit promotes evolution of hippocampal-cortical ensembles during memory consolidation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Liset Menendez de la Prida (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers unanimously found this manuscript on feedforward inhibition of the CA3-DG circuit and memory processing to be of interest to the neuroscience community. However, all reviewers noted serious concerns that dampened their enthusiasm for supporting publication of the current version at eLife. Reviewers felt that the current experimental results and analyses did not fully support the main claims made in the manuscript. If the authors can address the main concerns listed below, we would be willing to consider a revised version of the manuscript.\n\n1) All three reviewers asked for substantial additional analyses and additional control groups for proper comparisons. Please see the detailed suggested analyses in the individual reviews below.\n\n2) Additional data is needed to support the authors' conclusion that there is a direct relationship between the manipulation of DG-CA3 FFI and the network activity changes in CA1 and ACC, as well as the behavioral improvement.\n\nWe know addressing these two concerns requires a substantial amount of additional work so if you do not think you will be able to fully address these concerns, you may want to consider submitting this work elsewhere.\n\nReviewer #1 (Recommendations for the authors):\n\n1. For all statistical tests, the degree of freedom and factor values should be reported.\n\n2. There are some differences between ACC and CA1 groups in terms of the order of viral manipulations. Why? Useful to discuss whether and how this can influence results.\n\n3. I found the last section of results and associated figure panels very useful to summarize results. However, I feel they would read better at Discussion. Importantly, for explanatory sketches in Figure 2i and 4c,d, the authors should note their correlation analyses only inform about the % of correlated pairs, not about connectivity strengths. Hence thin and thicker lines are not reflecting data. Also, in Figure 2i and 4c, the basal condition may better reflect data in 1g regarding more % of active neurons in CA1 shRNA\n\n4. Is there any difference between center/periphery exploratory preferences between groups or any other potential confounding factor which could explain activity differences better than the experimental manipulations?\n\n5. The authors should declare the number of foot-shock responding (FSR) cells in each analysis block and test whether there are differences between groups. For some analyses, the number of cells could be too small so that they may require some specific randomization tests to reinforce conclusion (e.g., randomly picking of similar small number of not-FSR cells).\n\n6. The authors refer to ACC-CA1 correlations or CA1-ACC networks several times but this is not formally examined (ACC and CA1 imaging is independent therefore there are no formal cross-region comparisons in this paper).\n\n7. The authors refer to effects of increased SWR-spindle coupling between CA1-ACC in Results section, which reads rather speculative.\n\n8. Regarding conclusions and physiological relevance, the authors may need to discuss why enhanced feedforward inhibition at DG-CA3 synapses is not naturally established given the beneficial effect in context discrimination.\n\nReviewer #2 (Recommendations for the authors):\n\n1) Throughout the manuscript, the authors claim that there is a significant increase in context A specific correlated pairs in CA1 when FFI was increased (Figure 3d, bottom panel), however this is not supported by the statistical data. Performing one-sample t-tests on each group is not statistically sound, and the authors report 0.055 as a seemingly significant effect (despite explicitly setting 0.05 as their \u03b1) and yet do not report p-values for other effects that seem close to significant by eye. This general approach does not seem valid. Furthermore, the broader interpretations of this paper (e.g. the teacher-like function of CA1) rely on this point being significant, so should be corrected to reflect that this is a trend rather than a statistically significant effect or additional experiments should be added to increase the power of the comparison.\n\n2) Relatedly, there appears to be more variability in the shRNA group compared to what is seen in the controls, especially in measurements from CA1 (e.g. Figure 3d, 3k). Is it possible that this variability might be explained by variable levels of viral transfection? What steps were taken to ensure viral expression was comparable among all animals included in the experiments?\n\n3) The claims that shRNA increases CA1 activity and correlated firing relative to ACC is not justified (Figure 1g,h). There is no rationale for this specific comparison and the entire rest of the paper compares the shNT and shRNA groups. There needs to be a strong rationale for this analysis or the comparisons should be between experimental groups, which the authors report as not significant for activity.\n\n4) When comparing FSR cells, the increase in correlated pairs likely reflects higher activity since the cells are selected by having higher activity post-shock. The authors acknowledge this on p4: \"Shuffled data indicate that the increase in correlated pairs was mostly due to increased number of calcium events.\" Yet this acknowledgement is not considered when the authors draw interpretations from their data and no data is presented showing how activity levels influence the correlated pairs. Any conclusions based on correlated pairs need to clarify how activity levels contributed to the synchronized firing.\n\n5) The lack of a non-shock control group makes it difficult to interpret how selecting for foot shock responsive cells is influencing the data. Perhaps the authors could use baseline data to do a similar analysis to see how much selection bias is driving the findings of Figure 2.\n\n6) It is unclear why calculations of correlated pairs are normalized to baseline in Figure 3, but not in Figure 2. In Figure 2, the primary finding that shRNA group increases the number of correlated pairs would seemingly go away if normalized to preFS levels (presumably similar to baseline). This variability makes it difficult to interpret the normalized values since there is clearly substantial variability in the baseline numbers. Perhaps reporting raw correlated pair numbers or adding new subjects would be more clear.\n\n7) Figures 2i and 4c-d show schematics summarizing the data, but don't seem to represent the data related to correlation accurately. For example, in Figure 2h the authors show that there is an increase in the percentage of neuronal pairs that are co-active in CA1 in both the shNT and shRNA groups, and that this is increase in the number of co-active pairs is more extreme in the shRNA group (Supplementary Figure 1b). The schematic, however, implies that the strength of the correlation between co-active pairs is increased, which does not appear to have been tested.\n\n8) Page 5 173 \u2013 \"Using CellReg (Sheintuch et al., 2017) to register neurons across sessions, we found no reactivation of FSR neurons among the correlated pairs of neurons identified in CA1 in the recall session [shNT: mean: 0.0 S.E.M. 0; shRNA: mean 0.0, S.E.M, 0] (data not shown).\" Does this mean that to reach this criterion both of the correlated cells would have to be matched across sessions and then again be correlated during recall? Please clarify this statement.\n\n9) Figure 2f and 3n show pie charts without individual animal information. These are not very interpretable and should be replaced by graphs that showed animal by animal variability.\n\n10) Page 5 \u2013 \"We controlled for the possible effect of locomotion on neuronal activity by quantifying the time mice moved in each context and found no correlation between the number of correlated neuronal pairs and the time mice moved in the respective context [Pearson's R2, ACC context A, 0.19, ACC context C: 0.00, CA1 context A: 0.09, CA1 context C: 0.04, n=5 mice per group] (Supplementary Figure 2a-d).\" Please add p-values as R2 values are a bit ambiguous.\n\n11) The authors should consider that the increased activity in CA1 A&C neurons in context C may be driven by locomotion rather than novelty (Figure 3f and Supplemental Figure 2d).\n\nReviewer #3 (Recommendations for the authors):\n\n1) To follow up on my comment 1), I think it would be useful to quantify the impact of the manipulation on CA3 activity in vivo. This can be done using electrophysiology or imaging. If this is beyond the scope of this study, an indirect read-out of CA3 activity could be obtained through a sharp wave ripple analysis in CA1, which would provide an independent indicator of how intrahippocampal information processing in vivo is changed by the manipulation.\n\n2) It would be helpful to illustrate at the beginning of the paper how a calcium event is defined. For example, the data in figure 1g appear to show that the activity patterns in CA1 have been changed when increasing DG-CA3 FFI. The frequency is increased, but there is also an increase in \"double-peak transients\". How exactly are these handled by the analysis? Along the same lines, it would be helpful to clarify the y axis label 'event rate [SD]'? The term rate implies frequency, but if I understand it correctly, the analysis mixes amplitude and frequency, correct? Including some raw data would, I think, help understand how the analysis impacts the findings of the paper.\n\n3) The graphics in Figure 1i and Figure 4c are misleading. There is no indication in the data about the strength of the correlation; the data presented only show that the fraction of correlated FSR neuron pairs is increased after footshock, not that there is a change in the correlation strength. If I understand Figure 2h correctly, there seems to be roughly a doubling in the fraction of correlated pairs in all groups, except for the shNT/ACC group showing a 4-5 times increase in the fraction of correlated pairs.\n",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "be3a34fe-4def-49ed-a446-def50643f1bc",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C1",
+      "claim": "Memories encoded in the dentate gyrus (DG) \u2013 CA3 circuit of the hippocampus are routed from CA1 to anterior cingulate cortex (ACC) for consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Memories encoded in the dentate gyrus (DG) \u2012 CA3 circuit of the hippocampus are routed from CA1 to anterior cingulate cortex (ACC) for consolidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that draws on established understanding of memory consolidation pathways in the hippocampal-cortical network.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "c5fbe824-48eb-440a-b6c6-7eec8c35ab8b",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C2",
+      "claim": "CA1 parvalbumin inhibitory neurons (PV INs) orchestrate hippocampal-cortical communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CA1 parvalbumin inhibitory neurons (PV INs) orchestrate hippocampal-cortical communication, we know less about CA3 PV INs or DG \u2012 CA3 principal neuron \u2012 IN circuit mechanisms that contribute to evolution of hippocampal-cortical ensembles during memory consolidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior research on CA1 PV INs and their role in hippocampal-cortical communication.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "15bc9fc8-72ca-4bf4-bb44-00a6522a1c9e",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C3",
+      "claim": "FFI facilitates formation and maintenance of context-associated neuronal ensembles in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using viral genetics to selectively mimic and boost an endogenous learning-dependent circuit mechanism, DG cell recruitment of CA3 PV INs and feed-forward inhibition (FFI) in CA3, in combination with longitudinal in vivo calcium imaging, we demonstrate that FFI facilitates formation and maintenance of context-associated neuronal ensembles in CA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from longitudinal calcium imaging experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "809caf04-1fcc-47c0-ab42-f9dba10642b8",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C4",
+      "claim": "Increasing FFI in DG \u2013 CA3 promoted context specificity of neuronal ensembles in ACC over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing FFI in DG \u2012 CA3 promoted context specificity of neuronal ensembles in ACC over time and enhanced long-term contextual fear memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on calcium imaging data showing ensemble properties in ACC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "f5437e71-40a0-4fa8-a0e6-b0403dcb3a07",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C5",
+      "claim": "Increasing FFI in DG \u2013 CA3 enhanced long-term contextual fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing FFI in DG \u2012 CA3 promoted context specificity of neuronal ensembles in ACC over time and enhanced long-term contextual fear memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on behavioral data from contextual fear conditioning experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "789f2344-4177-4c5c-aa0c-b22a13ce3f73",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C6",
+      "claim": "Enhanced CA1 sharp-wave ripple \u2013 ACC spindle coupling is a potential network mechanism facilitating memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo LFP recordings in mice with increased FFI in DG \u2012 CA3 identified enhanced CA1 sharp-wave ripple \u2012 ACC spindle coupling as a potential network mechanism facilitating memory consolidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on in vivo LFP recordings showing enhanced ripple-spindle coupling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "e1996c96-5598-42a5-b848-577f205d2d37",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C7",
+      "claim": "The hippocampus plays a critical role in the formation of new episodic memories by generating conjunctive representations of experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus plays a critical role in the formation of new episodic memories by generating conjunctive representations of experiences and transferring these representations to neocortical sites for memory storage or consolidation (Frankland and Bontempi, 2005; McClelland et al., 1995; Peyrache et al., 2009; Squire, 2004; Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research on hippocampal function in memory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "1581a03a-2eea-4054-95ec-15fda23d3380",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C8",
+      "claim": "Prefrontal cortical neuronal ensembles undergo time-dependent refinement and re-organization as memories transition from recent to remote configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "Following learning, prefrontal cortical neuronal ensembles are thought to undergo time-dependent refinement and re-organization as memories transition from recent to remote configurations and become more generalized (DeNardo et al., 2019; Frankland and Bontempi, 2005; Frankland et al., 2004; Maviel et al., 2004; McClelland et al., 1995; Morrissey et al., 2017; Takehara-Nishiuchi and McNaughton, 2008; Wiltgen et al., 2010; Winocur et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research on memory consolidation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "84a728c6-078b-4bf4-be1f-a385729e7924",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C9",
+      "claim": "The hippocampus plays a sustained role in remote memory retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a growing body of experimental evidence not only supports a sustained role for the hippocampus in remote memory retrieval (Goshen et al., 2011; Vetere et al., 2021) but also in dictating the extent to which remote memories retain contextual details of the original experience (Guo et al., 2018; Koolschijn et al., 2019; Tompary and Davachi, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "dceed574-540a-41b4-a236-be25446469e0",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C10",
+      "claim": "Genetic silencing of engram-bearing dentate granule neurons post training impaired the maturation of context-specific neuronal ensembles in prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, genetic silencing of engram-bearing dentate granule neurons post training was shown to impair the maturation of context-specific neuronal ensembles in prefrontal cortex (Kitamura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "e2788d73-d139-467b-8d19-3936847cfb46",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C11",
+      "claim": "Chronic genetic inhibition of CA3 outputs impaired high-frequency network oscillations such as sharp-wave ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic genetic inhibition of CA3 outputs impaired high-frequency network oscillations such as sharp-wave ripples, experience-related firing patterns in CA1 and long-term contextual fear memory (Nakashiba et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "643b0ee7-548b-46ec-8fff-d70b1b570498",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C12",
+      "claim": "CA1 PV INs promote sharp-wave ripples (SWR) and facilitate hippocampal-cortical communication through increased sharp-wave ripple \u2013 spindle coupling in CA1 \u2013 ACC networks.",
+      "claim_type": "EXPLICIT",
+      "source": "CA1 PV INs have been shown to orchestrate synchronous activation of principal neurons, promote sharp-wave ripples (SWR), and facilitate hippocampal-cortical communication through increased sharp-wave ripple \u2012 spindle coupling in CA1 \u2012 ACC networks (Buzs\u00e1ki, 2015; \u00c7aliskan et al., 2016; Gan et al., 2016; Ognjanovski et al., 2017; Stark et al., 2014; Xia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "daa2dde5-b468-4f4c-97e3-40c45f725b76",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C13",
+      "claim": "Chemogenetic inhibition of PV INs in CA1 or in ACC following training inhibited consolidation of contextual fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemogenetic inhibition of PV INs in CA1 or in ACC following training inhibited consolidation of contextual fear memory (Ognjanovski et al., 2017; Xia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "5f0415de-1356-4dc3-8f8e-a9d593ff14ae",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C14",
+      "claim": "Dentate granule cell recruitment of feed-forward inhibition (FFI) onto CA3 is temporarily enhanced following learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Dentate granule cell recruitment of feed-forward inhibition (FFI) onto CA3 is temporarily enhanced following learning and is one inhibitory circuit mechanism linked to memory consolidation (Guo et al., 2018; Ruediger et al., 2012; Ruediger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "b308ce61-6c12-404b-9def-747638dbc07c",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C15",
+      "claim": "Viral mediated selective enhancement of dentate granule cell recruitment of PV INs in CA3 increased inhibition onto CA3 and enhanced strength and precision of remote memories.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work, we found that viral mediated selective enhancement of dentate granule cell recruitment of PV INs in CA3 increased inhibition onto CA3 and enhanced strength and precision of remote memories (Guo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "3d44d693-9cca-42e8-8b33-8a1f35b16441",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C16",
+      "claim": "Increasing FFI in DG \u2013 CA3 conferred context-specific reactivation of neuronal ensembles in hippocampal \u2013 ACC \u2013 basolateral amygdala networks at remote timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genetic ensemble-tagging approaches and immediate-early gene expression, we found that increasing FFI in DG \u2012 CA3 conferred context-specific reactivation of neuronal ensembles in hippocampal \u2012 ACC \u2012 basolateral amygdala networks at remote timepoints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior work by the authors using genetic ensemble-tagging approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "dff5d4cf-aa57-4837-b2fe-d6b391161063",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C17",
+      "claim": "Maintenance of engram-bearing cell connectivity with PV INs prevented the time-dependent decay of the hippocampal engram.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that maintenance of engram-bearing cell connectivity with PV INs prevented the time-dependent decay of the hippocampal engram thereby suggesting a link between maintenance of the hippocampal memory trace and remote memory precision (Guo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "a7a89e14-0f33-45a7-b0ae-9160a634ca49",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C18",
+      "claim": "Injection of lenti-shRNA into dentate gyrus increased MFT filopodia onto PV INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of lenti-shRNA into dentate gyrus (DG) increased MFT filopodia onto PV INs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure legend and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "6da46253-f0e2-4e04-92d4-8e6965522a04",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C19",
+      "claim": "Injection of lenti-shRNA significantly increased PV puncta in CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of lenti-shRNA significantly increased PV puncta in CA3 [Two-tailed Mann-Whitney: p = 0.029, n = 4] but not in CA1 [Two-way repeated measures ANOVA, layer x virus effect p = 0.583: virus main effect p = 0.752, layer main effect: p < 0.0001]; or ACC [Two-tailed Mann-Whitney test: p = 0.886, n = 4].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 1b with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "61c18810-7656-44b0-8c23-03e99d8f1b4a",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C20",
+      "claim": "There is a significantly higher number of PV puncta in the deeper layer of CA1 compared to the superficial layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior reports (Soltesz and Losonczy, 2018), we found a significantly higher number of PV puncta in the deeper layer of CA1 compared to the superficial layer [Two-way repeated measures ANOVA, layer x virus effect: N.S.: main virus effect N.S., main layer effect p < 0.0001, n = 4].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantification data and a citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "9ea798be-169b-42d9-8e94-ae9be7aec003",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C21",
+      "claim": "The viral manipulation did not affect PV puncta in CA1 or ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our manipulation did not affect PV puncta in CA1 or ACC [ACC: Two-tailed Mann-Whitney test: N.S., n = 4] (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "ea1d1b10-4a89-418e-839c-4a3d516580b2",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C22",
+      "claim": "Both groups of mice responded similarly to foot-shocks in the training context A.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral analysis of freezing levels revealed that both groups of mice responded similarly to foot-shocks in the training context A (Figure 2a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "2e1db76c-fd74-4634-b436-6e3dfede42aa",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C23",
+      "claim": "A subset of neurons in both CA1 and ACC exhibited significant elevation in activity in response to foot-shocks (Foot-shock responsive neurons or FSR neurons) in both groups of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior work (Jimenez et al., 2020; Pan et al., 2020), our recordings of calcium transients during contextual fear conditioning revealed a subset of neurons in both CA1 and ACC that exhibited significant elevation in activity in response to foot-shocks (Foot-shock responsive neurons or FSR neurons) in both groups of mice [Two-tailed paired t-test, ACC shNT preFS vs postFS: p = 0.004, n = 5, ACC shRNA preFS vs postFS: p = 0.013, n = 5, CA1 shNT preFS vs postFS: p = 0.007, n = 5, CA1 shRNA preFS vs postFS: p = 0.024, n = 5](Figure 2b, d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data with statistical analysis and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "90657067-09db-4417-b886-b7fb064b889e",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C24",
+      "claim": "The fraction of FSR neurons in ACC was significantly increased in the shRNA group compared to shNT group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fraction of FSR neurons in ACC was significantly increased in the shRNA group compared to shNT group [Two-tailed unpaired t-test with Welch's correction, p = 0.043, n = 5] (Figure 2f, Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "09744aa9-f30e-4d20-922c-8bf3a989cd63",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C25",
+      "claim": "The increase in FSR neuron activity in CA1 and ACC was accompanied by an increase in co-activity of these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of FSR neurons revealed that the increase in FSR neuron activity in CA1 and ACC was accompanied by an increase in co-activity of these neurons i.e. increase in number of FSR correlated pairs [Two-tailed paired t-test, ACC shNT: p = 0.021, n = 5, ACC shRNA: N.S., n = 5, CA1 shNT: p = 0.021, n = 5, CA1 shRNA: p = 0.001, n = 5] (Figure 2g\u2013h and Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "73714604-d9f2-48ac-902d-5984d07639ee",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C26",
+      "claim": "The shRNA mice exhibited a significantly higher increase in correlated neurons in CA1 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the shRNA mice exhibited a significantly higher increase in correlated neurons in CA1 mice [Two-tailed unpaired t-test with Welch's correction, p = 0.044, n = 5] (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "3f58e241-85b2-4fd4-8a4d-d82ee219935d",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C27",
+      "claim": "Both shRNA and shNT groups exhibited high levels of discrimination of the two contexts one day following fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral analysis revealed that both shRNA and shNT groups exhibited high levels of discrimination of the two contexts and showed similar levels of freezing in training context A and negligible levels of freezing in context C [Two-way repeated measures ANOVA, treatment x time effect N.S., time main effect p = 0.014; treatment main effect N.S.; n = 10, pooled ACC and CA1 mice. see Figure 3\u2014figure supplement 3c for separate ACC and CA1 data] (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "60d5fd5a-0837-49f2-aafa-e2abf2232337",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C28",
+      "claim": "Both virus groups showed increased numbers of correlated neurons compared to baseline levels only in context A and not in the novel, distinct neutral context C.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, both virus groups showed increased numbers of correlated neurons compared to baseline levels only in context A and not in the novel, distinct neutral context C (yet non-significant in shRNA mice) [one sample t-test against 1 (BL), context A, shNT: p = 0.003, n = 5, shRNA: N.S. (strong trend, p = 0.055), n = 5; context C: shNT: N.S., n = 5, shRNA: N.S., n = 5] (Figure 3c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "08f60845-d260-49fd-9a5f-9307df236431",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C29",
+      "claim": "The shRNA group showed a significant increase in number of correlated pairs in ACC in context A indicative of emergence of a training context-associated ensemble in ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in context A, the shRNA group also showed a significant increase in number of correlated pairs in ACC indicative of emergence of a training context-associated ensemble in ACC [one sample t-test against 1 (BL), context A, ACC, shNT: N.S., shRNA: p = 0.018, n = 5] (Figure 3c\u2013d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "0dcac310-656b-40cc-b9c7-eadb1de0dced",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C30",
+      "claim": "There was no reactivation of FSR neurons among the correlated pairs of neurons identified in CA1 in the recall session.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CellReg (Sheintuch et al., 2017) to register neurons across sessions, we found no reactivation of FSR neurons among the correlated pairs of neurons identified in CA1 in the recall session [shNT: mean: 0.0 S.E.M. 0; shRNA: mean 0.0, S.E.M, 0] (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on cell registration analysis across sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "b6f7ab31-2a4c-4396-bbbb-d13a985c36fa",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C31",
+      "claim": "There was no correlation between the number of correlated neuronal pairs and the time mice moved in the respective context.",
+      "claim_type": "EXPLICIT",
+      "source": "We controlled for the possible effect of locomotion on neuronal activity by quantifying the time mice moved in each context and found no correlation between the number of correlated neuronal pairs and the time mice moved in the respective context [Pearson's correlation, ACC context A, R2 = 0.19, p = 0.196, ACC context C: R2 = 0.00, p = 0.935, CA1 context A: R2 = 0.09, p = 0.376, CA1 context C: R2 = 0.04, p = 0.599, n = 5 mice per group] (Figure 3\u2014figure supplement 1a-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis between locomotion and neuronal activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "a5ecaf4a-16bd-4633-840a-5aea62cbb63c",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C32",
+      "claim": "Neurons in CA1 showed higher activity in context C relative to context A.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in CA1 (including A&C neurons) showed higher activity i.e. rate of calcium transients in context C relative to context A [Two-way ANOVA with repeated measures, CA1, shNT: context x time effect p < 0.0001, time main effect p = 0.007, context main effect p = 0.028, n = 5; shRNA,: context x time effect p < 0.0001, time main effect p = 0.012, context main effect p = 0.029, n = 5] [A&C neurons: one sample t-test against 0, CA1, shNT: p = 0.007, shRNA: p = 0.048, n = 5] suggestive of a novelty response (Figure 3\u2014figure supplement 1i-j, Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "1faa55d3-d48b-46ac-855d-c2468fd74a57",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C33",
+      "claim": "The shRNA group showed significantly fewer A&C neurons in CA1 indicating that increasing FFI in DG \u2013 CA3 reduced the number of neurons that were active in both contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the shRNA group showed significantly fewer A&C neurons in CA1 indicating that increasing FFI in DG \u2012 CA3 reduced the number of neurons that were active in both contexts [Two-tailed unpaired t-test with Welch's correction, p = 0.048, n = 5] (Figure 3h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of A&C neurons with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "7cc320ca-6836-4a1c-9498-9cd055d73c09",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C34",
+      "claim": "The shRNA group exhibited significantly higher levels of discrimination between the two contexts than the shNT group at 16 days following training.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral analysis revealed that the shRNA group exhibited significantly higher levels of discrimination between the two contexts than the shNT group [Two-way repeated measures ANOVA, treatment x time effect N.S., treatment main effect: p = 0.028, n = 10, see Figure 3\u2014figure supplement 3d for comparison of ACC and CA1] (Figure 3j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "dfc58478-9e1e-491a-95c1-2fdfe3885f79",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C35",
+      "claim": "Both groups of mice maintained an increase in correlated pairs in CA1 during recall in context A at day 16.",
+      "claim_type": "EXPLICIT",
+      "source": "Both groups of mice maintained an increase in correlated pairs in CA1 during recall in context A (two-tailed unpaired student's t-test with Welch's correction, N .S., n = 5), however the shRNA group did not exhibit a significant decrease in correlated pairs from day 1 to day 16 as seen for shNT group (Two-tailed paired t-test, shNT p = 0.041, shRNA: N.S. n = 5, comparison not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "84c54894-4484-4789-867f-1fefe8ee74f6",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C36",
+      "claim": "The shRNA group showed increased co-activity in context C at day 16 that was significantly higher compared to shNT group.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shRNA group showed increased co-activity in context C [One-sample t-test against 1 (baseline, BL), context A, shNT, p = 0.006; shRNA, p = 0.04; context C, shNT p = N .S.; shRNA, p = 0.026; n = 5;] that was significantly higher compared to shNT group in context C [two-tailed unpaired student's t-test with welch correction, p = 0.042, n = 5] (Figure 3k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "aff96ba8-601e-45b1-981c-f3dd6a9c097c",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C37",
+      "claim": "The A&C neurons in CA1 in the shRNA group exhibited higher activity in context C relative to context A at day 16.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the A&C neurons in CA1 in the shRNA group exhibited higher activity (rate of calcium events) in context C relative to context A [one sample t-test against 0, shNT: N.S., shRNA: p = 0.012, n = 5] (Figure 3l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "6d6bbde5-7d53-4b3f-8880-7e84845b3b00",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C38",
+      "claim": "The shRNA group showed significantly fewer A&C neurons among all correlated pairs of neurons in CA1 compared to the shNT group at remote recall.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shRNA group showed significantly fewer A&C neurons among all correlated pairs of neurons in CA1 compared to the shNT group [two-tailed unpaired t-test with Welch's correction, p = 0.017, n = 5; A&C neurons, recent, ACC, shNT 42.97 \u00b1 8.37, shRNA 39.07 \u00b1 5.93,CA1, shNT, 27.03 \u00b1 8.23, shRNA, 30.64 \u00b1 4.65; remote, ACC, shNT 33.59 \u00b1 11.82, shRNA, 36.34 \u00b1 12.14, CA1, shNT, 52.26 \u00b1 4.80, shRNA, 28.55 \u00b1 6.17; mean \u00b1 SEM] (Figure 3n and Figure 3\u2014figure supplement 1g-h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "a1130e47-11db-41fc-b62c-5d0be35ae0ff",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C39",
+      "claim": "The shRNA group showed significantly fewer A&C neurons in ACC at day 16 indicating that fewer neurons were active in both contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was no difference in the number of A&C neurons between virus groups in CA1 [two tailed unpaired t-test with Welch's correction, N.S., n = 5], the shRNA group showed significantly fewer A&C neurons in ACC indicating that fewer neurons were active in both contexts C [two-tailed unpaired t-test with Welch's correction, p = 0.028, n = 5] (Figure 3m).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "0c090c6c-3fe5-4a65-82be-725177365de2",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C40",
+      "claim": "A support vector machine trained on time-binned events in A&C neurons in CA1 performed better than shuffled data.",
+      "claim_type": "EXPLICIT",
+      "source": "A support vector machine trained on time-binned events (5 s) in A&C neurons in CA1 performed better than shuffled data (see example distribution in Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by machine learning analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "3e226a7f-306a-424f-bb51-87e4d71f289a",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C41",
+      "claim": "At the recent time point, day 1, calcium events in A&C neurons in both groups were sufficient to reliably predict context.",
+      "claim_type": "EXPLICIT",
+      "source": "At the recent time point, day 1, calcium events in A&C neurons in both groups were sufficient to reliably predict context [Mann Whitney test, N .S., n = 4; One-sample t-test against 50 (chance level), shNT, p = 0.012, shRNA, p = 0.005, n = 4].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by decoder analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "f4d2323d-9c84-41b5-9487-1e64cbe93ff5",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C42",
+      "claim": "The shRNA group maintained a similarly high level of information in the A&C neurons at the remote time point.",
+      "claim_type": "EXPLICIT",
+      "source": "The shRNA group maintained a similarly high level of information in the A&C neurons as we were able to predict the context with similar accuracy at the remote time point [One-sample t-test against 50 (chance level), shRNA, p = 0.008, n = 4].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by decoder analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "53269287-b3c2-41c5-8e9a-eae53e80dcb6",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C43",
+      "claim": "Decoder trained on shNT mice showed a reduction in prediction accuracy for the remote time point resulting in significantly less prediction accuracy in shNT mice compared to shRNA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, decoder trained on shNT mice showed a reduction in prediction accuracy for the remote time point resulting in significantly less prediction accuracy in shNT mice compared to shRNA mice [Mann Whitney test, p = 0.029, n = 4] (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by decoder analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "87781f1b-d92f-40d0-9080-52347df2b243",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C44",
+      "claim": "There was a positive correlation between decoder accuracy and the ability of mice to discriminate between the two contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested if the decoder accuracy correlated with the ability of mice to discriminate between the two contexts. We found a positive correlation between these two parameters indicating that A&C neurons may indeed serve to guide context-associated behavioral responses [Pearson's correlation, shNT: R2 = 0.579, p = 0.028, n = 8, shRNA R2 = 0.577, p = 0.028, n = 8].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis between decoder accuracy and behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "8f16ad96-db74-48b2-9343-57c4a05e6345",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C45",
+      "claim": "In learning na\u00efve shRNA-injected mice, there were significantly more ripples that co-occur with spindles (coupled ripples) compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In learning na\u00efve shRNA-injected mice, we found significantly more ripples that co-occur with spindles (coupled ripples) compared to control mice (Figure 5c, Two-tailed unpaired student's t-test with Welch's correction, p = 0.049, n = 5 per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LFP recording data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "eab1e5b7-02e9-4edb-bda0-7fc2336bf07b",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C46",
+      "claim": "The increase in coupled ripples in na\u00efve shRNA mice was not due to an increase in ripple or spindle occurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not due to an increase in ripple or spindle occurrence (Figure 5d\u2013e) [Two-tailed unpaired student's t-test with Welch's correction, ripples/sec: N.S., n = 5 per group, spindles/sec, N.S., n = 5].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of ripple and spindle occurrence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "4134b5a2-083c-41bc-8f7e-e1bcfdf00d8f",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C47",
+      "claim": "There was an increase in coupled ripples in control mice following contextual fear learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies, we found an increase in coupled ripples in control mice (Maingret et al., 2016; Xia et al., 2017) [Paired Student's t-test, p = 0.019, n = 5] to a similar level as seen in naive shRNA-injected mice (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LFP recording data with statistical analysis and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "94b96873-0a13-4192-9542-a64df7af3551",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C48",
+      "claim": "Training induced an increase in overall ripple occurrence in control mice but not in shRNA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While training induced an increase in overall ripple occurrence (ripple/sec, Figure 5g) in control mice [Paired Student's t-test, p = 0.031, n = 5], this was not seen in shRNA mice [Paired Student's t-test, N.S., n = 5].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of ripple occurrence with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "af5528fc-d98f-4c2b-a1ac-897aae207009",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C49",
+      "claim": "Increasing FFI in DG \u2013 CA3 prevents time-dependent decay of training context-associated ensemble in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "At remote recall, we observed that FFI in DG \u2012 CA3 prevented time-dependent decay of the training context-associated ensemble and promoted acquisition (or maintenance since it may have emerged prior to test at remote timepoint) of a neutral context specific ensemble in CA1 (Figure 6a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary finding based on the longitudinal calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "7fc81743-b053-428a-8366-fe6d9471a3e0",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C50",
+      "claim": "Increasing FFI in DG \u2013 CA3 promoted acquisition of a neutral context specific ensemble in CA1 at remote timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "At remote recall, we observed that FFI in DG \u2012 CA3 prevented time-dependent decay of the training context-associated ensemble and promoted acquisition (or maintenance since it may have emerged prior to test at remote timepoint) of a neutral context specific ensemble in CA1 (Figure 6a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary finding based on the longitudinal calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "cf20d344-5bf2-4d22-82fb-1d35a6db0737",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C51",
+      "claim": "There was a FFI dependent reduction in the number of neurons active in both training and neutral contexts in ACC at remote timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the ACC, and not evident at the recent timepoint, we observed a FFI dependent reduction in the number of neurons active in both training and neutral contexts (Figure 6b, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary finding based on the longitudinal calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "ed87e743-5152-4080-9ec3-e83926081cb8",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C52",
+      "claim": "Increasing FFI in DG \u2013 CA3 induced learning-dependent enhancement in network synchrony in CA1 \u2013 ACC in behaviorally na\u00efve mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological recordings suggest that increasing FFI in DG \u2012 CA3 induced learning-dependent enhancement in network synchrony in CA1 \u2012 ACC in behaviorally na\u00efve mice (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary finding based on the LFP recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "abe79053-3290-4064-920c-c3ba4c71a96a",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C53",
+      "claim": "The DG \u2013 CA3 circuit contributes to encoding of episodic memories conjunctive representations that relate people, objects, events with the spatial and temporal contexts in which they occur.",
+      "claim_type": "EXPLICIT",
+      "source": "The DG \u2012 CA3 circuit contributes to encoding of episodic memories conjunctive representations that relate people, objects, events with the spatial and temporal contexts in which they occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the function of the DG-CA3 circuit based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "a79076d6-efc8-469f-a0f9-25eaa7d4dc91",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C54",
+      "claim": "PV INs in CA1 and ACC are thought to mediate learning-induced synchronization of neuronal activity to stabilize memory ensembles and channel information across different regions.",
+      "claim_type": "EXPLICIT",
+      "source": "PV INs in CA1 and ACC are thought to mediate learning-induced synchronization of neuronal activity to stabilize memory ensembles and channel information across different regions (Buzs\u00e1ki, 2015; \u00c7aliskan et al., 2016; Dupret et al., 2013; Fern\u00e1ndez-Ruiz et al., 2021; Gan et al., 2016; Ognjanovski et al., 2017; Stark et al., 2014; Xia et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "e067ffa9-38a1-4d20-ba3e-fd52dba56b3c",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C55",
+      "claim": "FSR neurons found during encoding do not appear to participate in CA1 context-specific ensembles at recent recall.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, early stages of memory consolidation are characterized by increased co-activity of neurons within CA1 as also observed previously (Ognjanovski et al., 2017) and FSR neurons found during encoding do not appear to participate in CA1 context-specific ensembles at recent recall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis of FSR neurons and context-associated ensembles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "35d50e47-4e43-4bd7-9ec1-017dcda3483e",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C56",
+      "claim": "Increasing FFI in DG \u2013 CA3 facilitated the emergence of training context-specific ensembles in CA1 and ACC suggestive of increased SWR \u2013 spindle coupling between CA1 \u2013 ACC during memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, increasing FFI in DG \u2012 CA3 facilitated the emergence of training context-specific ensembles in CA1 and ACC suggestive of increased SWR \u2012 spindle coupling between CA1 \u2012 ACC during memory consolidation (Maingret et al., 2016; Ognjanovski et al., 2017; Steadman et al., 2020; Xia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings with citations to prior work on SWR-spindle coupling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "6b812508-3b6d-4c64-9825-ee10cb9c19b9",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C57",
+      "claim": "Increasing granule cell recruitment of perisomatic inhibition onto CA3 neurons imposes a sparser activity regimen from DG to CA3.",
+      "claim_type": "IMPLICIT",
+      "source": "We predict that increasing granule cell recruitment of perisomatic inhibition onto CA3 neurons imposes a sparser activity regimen from DG to CA3 thereby reducing the likelihood of recruitment of the same CA3 neurons to distinct ensembles during learning (Csicsvari et al., 2000; de la Prida et al., 2006; G\u00f3mez-Oc\u00e1diz et al., 2021; Mori et al., 2007; Neubrandt et al., 2017; Sasaki et al., 2018; Torborg et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the manipulation and prior research on sparse coding.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "180b6a79-55a1-40ae-be3b-83ebc96f25e1",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C58",
+      "claim": "Assemblies of CA3 neurons encoding different contexts entrain activity of downstream ensembles of CA1 principal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, assemblies of CA3 neurons encoding different contexts entrain activity of downstream ensembles of CA1 principal neurons (Choi et al., 2018; Csicsvari et al., 2000; de la Prida et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "869a1c65-a121-42ad-8045-0dd25fc4aaae",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C59",
+      "claim": "Distinct ensembles in CA1 recruit local PV INs to synchronize their activity and form SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct ensembles in CA1 recruit local PV INs to synchronize their activity and form SWRs (Choi et al., 2018; Csicsvari and Dupret, 2014; Gan et al., 2016; Malerba et al., 2017; Ognjanovski et al., 2017; Stark et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "e9694d78-67af-4ec5-af80-9291c9cbfc58",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C60",
+      "claim": "CA3 neurons that encode novel spatial information were shown to be more likely active during SWR in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "CA3 neurons that encode novel spatial information were shown to be more likely active during SWR in CA1 suggesting that interregional maps may be strengthened during consolidation (Hwaun and Colgin, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "61832d29-0ebf-47dd-a9b8-6932a778adc1",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C61",
+      "claim": "PV INs have been implicated to regulate fidelity of spike transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "PV INs have been implicated to regulate fidelity of spike transfer (i.e. in form of coordinated spiking or burst firing of excitatory neurons) (Lamsa et al., 2005; Mori et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "39a9f400-97f3-46a1-89e2-b37d6a5e74c0",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C62",
+      "claim": "Feedforward inhibition in DG \u2013 CA3 synapses is naturally enhanced for several hours following learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, feedforward inhibition in DG \u2012 CA3 synapses is naturally enhanced for several hours following learning (see Ruediger et al., 2011; Guo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "7e33d0c3-ab83-4c2c-9aca-6c4ca71cb480",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C63",
+      "claim": "A&C neurons may function as 'schema' neurons in that they represent shared features across ensembles and facilitate the formation of new context-associated ensembles.",
+      "claim_type": "IMPLICIT",
+      "source": "These A&C neurons may function as \"schema\" neurons in that they represent shared features (statistical regularities) across ensembles and facilitate the formation of new context-associated ensembles (Abdou et al., 2018; McKenzie et al., 2014; McKenzie et al., 2013; Tse et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the function of A&C neurons based on prior research on schema neurons.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "7b983368-9fc8-4cfc-a3c2-e1b86def1c66",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C64",
+      "claim": "Increased neuronal excitability has been shown to bias recruitment of neurons into ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased neuronal excitability has been shown to bias recruitment of neurons into ensembles (Yiu et al., 2014; Zhou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "c297ef1d-742b-4188-b8e8-097c6e07739f",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C65",
+      "claim": "CA1 balances abstraction of statistical regularities across memories mediated by the temporoammonic pathway with encoding of detail-rich distinct contextual representations conveyed through the trisynaptic EC \u2192 DG \u2192 CA3 \u2192 CA1 circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling has suggested that CA1 balances abstraction of statistical regularities across memories mediated by the temporoammonic pathway (EC \u2192 CA1) with encoding of detail-rich distinct contextual representations conveyed through the trisynaptic EC \u2192 DG \u2192 CA3 \u2192 CA1 circuit (Schapiro et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to computational modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "895850c1-8791-45e4-8669-b796e9af3a05",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C66",
+      "claim": "The manipulation biases the trade-off in CA1 towards generation of context-specific ensembles over generation of schema.",
+      "claim_type": "IMPLICIT",
+      "source": "Our data supports this model since we observe a reduction in neurons encoding overlapping features (A&C neurons) in CA1 (this study) when we increase FFI in DG \u2012 CA3 and reduce interference between context associated ensembles in CA3 (Allegra et al., 2020; Guo et al., 2018; Koolschijn et al., 2019; Leutgeb et al., 2004). Thus, our manipulation biases the trade-off in CA1 towards generation of context-specific ensembles in CA1 over generation of schema.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data in the context of computational models and prior research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "7e98f526-ccb7-44f2-b4cf-df9ef1211c80",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C67",
+      "claim": "Reversing reductions in FFI in DG \u2013 CA3 found during aging or Alzheimer's disease may represent a strategy to restore memory consolidation.",
+      "claim_type": "IMPLICIT",
+      "source": "While shifting this balance in healthy animals may come at a cost, reversing reductions in FFI in DG \u2012 CA3 found during aging or Alzheimer's disease may represent a strategy to restore memory consolidation (Guo et al., 2018; Viana da Silva et al., 2019, Twarkowski and Sahay unpublished observations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic applications based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "3918f85d-b871-4e7f-a8a7-c5f0f520071b",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C68",
+      "claim": "CA1 plays an instructive teacher-like role in governing re-organization of ensembles in ACC during memory consolidation.",
+      "claim_type": "IMPLICIT",
+      "source": "Our data builds on foundational theories (McClelland et al., 1995; Nadel and Moscovitch, 1997; Teyler and DiScenna, 1986; Winocur et al., 2010; Winocur et al., 2007) to suggest a continuous role for CA1 in playing an instructive teacher-like role in governing re-organization of ensembles in ACC during memory consolidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of foundational theories.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "1bd181df-6762-496d-9fe4-19292336ab9b",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C69",
+      "claim": "Stabilization of training-context associated ensembles in CA1 over time governs a toggle switch in the ACC that determines the extent to which memories may retain details over time.",
+      "claim_type": "IMPLICIT",
+      "source": "We infer from our data that stabilization of training-context associated ensembles in CA1 over time governs a toggle switch in the ACC that determines the extent to which memories may retain details over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data about the relationship between CA1 and ACC ensembles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "a26b0555-a620-4379-aecc-70e20729aa34",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "claim_id": "C70",
+      "claim": "The maintenance of the hippocampal index for an experience permits access to details of the original experience stored in distributed neocortical sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an interpretation is consistent with hippocampal indexing theory in that the maintenance of the hippocampal index for an experience permits access to details of the original experience stored in distributed neocortical sites (Besnard and Sahay, 2016; Goode et al., 2020; Koolschijn et al., 2019; Teyler and DiScenna, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to hippocampal indexing theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e825609c-62a1-4800-bee9-512da7efe9d9",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Viral manipulation (lenti-shRNA injection into DG) selectively increases PV puncta in CA3 but not in CA1 or ACC, confirming anatomical specificity of the FFI enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 provide converging anatomical evidence that the viral manipulation specifically increases PV inhibitory contacts in CA3 (C19, p=0.029) without affecting CA1 or ACC (C21). The data include appropriate statistical tests and controls, supporting the specificity of the manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "e518e4b8-218e-45d1-8687-edffce6e400c",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During fear conditioning, both groups show foot-shock responsive (FSR) neurons in CA1 and ACC, but the shRNA group exhibits more FSR neurons in ACC and stronger FSR co-activity in CA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 demonstrate that while both groups respond to foot-shocks (C22, C23), the FFI manipulation enhances FSR recruitment in ACC (C24, p=0.043) and FSR co-activity in CA1 (C26, p=0.044). Statistical tests are appropriate and data are consistent across measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "a49a8246-936f-44f6-bb97-25147b6a728c",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At recent recall (day 1), both groups discriminate contexts, but FFI enhancement promotes context-associated ensembles in ACC and reduces overlap (A&C neurons) in CA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 show that at day 1, both groups discriminate contexts (C27), but shRNA mice show enhanced context-specific ensembles in ACC (C29, p=0.018) and fewer A&C neurons in CA1 (C33, p=0.048). The control for locomotion effects (C31) strengthens the interpretation. Statistical tests are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "f90db146-17af-4f21-b85d-fc7126a1e2f1",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "At remote recall (day 16), FFI enhancement maintains CA1 ensembles, promotes context-specific ensembles in both contexts, and reduces A&C neurons in ACC, correlating with enhanced behavioral discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 demonstrate that at day 16, shRNA mice show better discrimination (C34, p=0.028), maintained CA1 ensembles (C35), context-specific activity in context C (C36, p=0.042), and fewer A&C neurons in ACC (C39, p=0.028). The data support ensemble stabilization and specificity over time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "553af046-d558-42e7-8ea2-5f1a8c35d567",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A support vector machine decoder trained on A&C neuron activity in CA1 can predict context, with shRNA mice maintaining high prediction accuracy at remote timepoints that correlates with behavioral discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 show that A&C neurons encode context information (C40-C42), with shRNA mice maintaining higher decoder accuracy at day 16 (C43, p=0.029). The positive correlation with behavioral discrimination (C44, R\u00b2=0.577-0.579, p=0.028) supports functional relevance. However, the small sample size (n=4) for decoder analysis is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "c0d7e5aa-44a4-4d71-8d20-0e489d0249de",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FFI enhancement increases CA1-ACC ripple-spindle coupling in naive mice to levels similar to those induced by learning in control mice, without increasing ripple or spindle occurrence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 demonstrate that naive shRNA mice show increased ripple-spindle coupling (C45, p=0.049) without changes in ripple or spindle rates (C46), mimicking the learning-induced increase in controls (C47, p=0.019). This provides direct evidence for enhanced hippocampal-cortical communication. Statistical tests are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "75d07a7e-e9c1-476d-b20e-697ec1386588",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FFI in DG-CA3 facilitates formation and maintenance of context-associated ensembles in CA1, promotes context specificity in ACC over time, enhances long-term memory, and increases ripple-spindle coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 represent the main findings of the study, which are supported by the detailed experimental results in claims C18-C48. The calcium imaging data (C3, C4), behavioral data (C5), and electrophysiology data (C6) converge to support these conclusions. However, C6 is labeled as 'potential mechanism' indicating some interpretive inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "5aeb814f-3471-471b-aef2-0f583d2bdebb",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Summary findings indicate that FFI prevents decay of training context ensembles in CA1, promotes neutral context ensembles in CA1, reduces A&C neurons in ACC at remote timepoints, and enhances CA1-ACC synchrony in naive mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are summary statements of the longitudinal imaging and electrophysiology findings. These are well-supported by the detailed data in claims C27-C48, providing an integrated view of how FFI affects ensemble dynamics during consolidation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "b579be7c-6174-4475-9977-e616af0f57fd",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FSR neurons do not participate in CA1 context-specific ensembles at recent recall, and FFI facilitates emergence of context-specific ensembles suggestive of increased SWR-spindle coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by cell registration analysis (C30) showing no FSR reactivation. Claim C56 integrates the ensemble findings with prior literature on SWR-spindle coupling. Both are reasonable interpretations of the data, though C56 involves some inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "511345de-3d7e-46ab-9982-255e360fc28f",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mechanistic interpretation: FFI imposes sparse coding in DG-CA3, which propagates to CA1 ensembles that recruit PV INs to form SWRs, with FFI naturally enhanced after learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 provide mechanistic context based on prior literature (C58-C62 are citations) and predictions from the current manipulation (C57). While C57 is speculative, it is grounded in established principles of sparse coding and the authors' prior work (C62). This represents a reasonable mechanistic framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "7a9b6ed6-d3c0-4cff-a4b5-fe5c48d4f15d",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A&C neurons may function as schema neurons representing shared features, with FFI biasing CA1 toward context-specific ensembles over schema generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 interpret the A&C neuron findings in the context of schema theory and computational models. The reduction in A&C neurons with FFI (C33, C38, C39) supports the interpretation that FFI biases toward specificity (C66). The schema interpretation (C63) is speculative but grounded in prior literature (citations in C63-C65).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "4c8b75e0-aaad-430b-bf6d-d7709ee7e50a",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Reversing FFI reductions in aging or Alzheimer's disease may restore memory consolidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is explicitly speculative about therapeutic applications. While it cites prior work on FFI reductions in disease, the current study does not test this hypothesis. This represents future work rather than a supported finding from the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "c375caf5-b4bc-4925-b644-dbf590c3414b",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CA1 plays an instructive role in ACC ensemble reorganization during consolidation, with CA1 ensemble stabilization governing a toggle switch in ACC that determines memory detail retention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 represent high-level interpretations of the data in the context of memory consolidation theories. The sequential emergence of ensembles (CA1 then ACC) and the correlation between CA1 stability and ACC specificity support these interpretations. However, these are inferences from correlational data rather than direct causal demonstrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    },
+    {
+      "id": "c627ec75-26af-4a49-b429-0bf0114ebd31",
+      "content_id": "7a6ff3d7-5874-4c4e-9247-3e84165a7b3b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and prior work establishing the role of hippocampal-cortical circuits in memory consolidation, including the authors' previous findings on FFI enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C17, C53-C54 represent established knowledge and prior work cited in the introduction and discussion. These are appropriately cited and provide context for the current study. C15-C17 specifically reference the authors' prior work that motivated the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:13:55.404122Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a7a89e14-0f33-45a7-b0ae-9160a634ca49",
+      "result_id": "e825609c-62a1-4800-bee9-512da7efe9d9"
+    },
+    {
+      "claim_id": "6da46253-f0e2-4e04-92d4-8e6965522a04",
+      "result_id": "e825609c-62a1-4800-bee9-512da7efe9d9"
+    },
+    {
+      "claim_id": "61c18810-7656-44b0-8c23-03e99d8f1b4a",
+      "result_id": "e825609c-62a1-4800-bee9-512da7efe9d9"
+    },
+    {
+      "claim_id": "9ea798be-169b-42d9-8e94-ae9be7aec003",
+      "result_id": "e825609c-62a1-4800-bee9-512da7efe9d9"
+    },
+    {
+      "claim_id": "ea1d1b10-4a89-418e-839c-4a3d516580b2",
+      "result_id": "e518e4b8-218e-45d1-8687-edffce6e400c"
+    },
+    {
+      "claim_id": "2e1db76c-fd74-4634-b436-6e3dfede42aa",
+      "result_id": "e518e4b8-218e-45d1-8687-edffce6e400c"
+    },
+    {
+      "claim_id": "90657067-09db-4417-b886-b7fb064b889e",
+      "result_id": "e518e4b8-218e-45d1-8687-edffce6e400c"
+    },
+    {
+      "claim_id": "09744aa9-f30e-4d20-922c-8bf3a989cd63",
+      "result_id": "e518e4b8-218e-45d1-8687-edffce6e400c"
+    },
+    {
+      "claim_id": "73714604-d9f2-48ac-902d-5984d07639ee",
+      "result_id": "e518e4b8-218e-45d1-8687-edffce6e400c"
+    },
+    {
+      "claim_id": "3f58e241-85b2-4fd4-8a4d-d82ee219935d",
+      "result_id": "a49a8246-936f-44f6-bb97-25147b6a728c"
+    },
+    {
+      "claim_id": "60d5fd5a-0837-49f2-aafa-e2abf2232337",
+      "result_id": "a49a8246-936f-44f6-bb97-25147b6a728c"
+    },
+    {
+      "claim_id": "08f60845-d260-49fd-9a5f-9307df236431",
+      "result_id": "a49a8246-936f-44f6-bb97-25147b6a728c"
+    },
+    {
+      "claim_id": "0dcac310-656b-40cc-b9c7-eadb1de0dced",
+      "result_id": "a49a8246-936f-44f6-bb97-25147b6a728c"
+    },
+    {
+      "claim_id": "b6f7ab31-2a4c-4396-bbbb-d13a985c36fa",
+      "result_id": "a49a8246-936f-44f6-bb97-25147b6a728c"
+    },
+    {
+      "claim_id": "a5ecaf4a-16bd-4633-840a-5aea62cbb63c",
+      "result_id": "a49a8246-936f-44f6-bb97-25147b6a728c"
+    },
+    {
+      "claim_id": "1faa55d3-d48b-46ac-855d-c2468fd74a57",
+      "result_id": "a49a8246-936f-44f6-bb97-25147b6a728c"
+    },
+    {
+      "claim_id": "7cc320ca-6836-4a1c-9498-9cd055d73c09",
+      "result_id": "f90db146-17af-4f21-b85d-fc7126a1e2f1"
+    },
+    {
+      "claim_id": "dfc58478-9e1e-491a-95c1-2fdfe3885f79",
+      "result_id": "f90db146-17af-4f21-b85d-fc7126a1e2f1"
+    },
+    {
+      "claim_id": "84c54894-4484-4789-867f-1fefe8ee74f6",
+      "result_id": "f90db146-17af-4f21-b85d-fc7126a1e2f1"
+    },
+    {
+      "claim_id": "aff96ba8-601e-45b1-981c-f3dd6a9c097c",
+      "result_id": "f90db146-17af-4f21-b85d-fc7126a1e2f1"
+    },
+    {
+      "claim_id": "6d6bbde5-7d53-4b3f-8880-7e84845b3b00",
+      "result_id": "f90db146-17af-4f21-b85d-fc7126a1e2f1"
+    },
+    {
+      "claim_id": "a1130e47-11db-41fc-b62c-5d0be35ae0ff",
+      "result_id": "f90db146-17af-4f21-b85d-fc7126a1e2f1"
+    },
+    {
+      "claim_id": "0c090c6c-3fe5-4a65-82be-725177365de2",
+      "result_id": "553af046-d558-42e7-8ea2-5f1a8c35d567"
+    },
+    {
+      "claim_id": "3e226a7f-306a-424f-bb51-87e4d71f289a",
+      "result_id": "553af046-d558-42e7-8ea2-5f1a8c35d567"
+    },
+    {
+      "claim_id": "f4d2323d-9c84-41b5-9487-1e64cbe93ff5",
+      "result_id": "553af046-d558-42e7-8ea2-5f1a8c35d567"
+    },
+    {
+      "claim_id": "53269287-b3c2-41c5-8e9a-eae53e80dcb6",
+      "result_id": "553af046-d558-42e7-8ea2-5f1a8c35d567"
+    },
+    {
+      "claim_id": "87781f1b-d92f-40d0-9080-52347df2b243",
+      "result_id": "553af046-d558-42e7-8ea2-5f1a8c35d567"
+    },
+    {
+      "claim_id": "8f16ad96-db74-48b2-9343-57c4a05e6345",
+      "result_id": "c0d7e5aa-44a4-4d71-8d20-0e489d0249de"
+    },
+    {
+      "claim_id": "eab1e5b7-02e9-4edb-bda0-7fc2336bf07b",
+      "result_id": "c0d7e5aa-44a4-4d71-8d20-0e489d0249de"
+    },
+    {
+      "claim_id": "4134b5a2-083c-41bc-8f7e-e1bcfdf00d8f",
+      "result_id": "c0d7e5aa-44a4-4d71-8d20-0e489d0249de"
+    },
+    {
+      "claim_id": "94b96873-0a13-4192-9542-a64df7af3551",
+      "result_id": "c0d7e5aa-44a4-4d71-8d20-0e489d0249de"
+    },
+    {
+      "claim_id": "15bc9fc8-72ca-4bf4-bb44-00a6522a1c9e",
+      "result_id": "75d07a7e-e9c1-476d-b20e-697ec1386588"
+    },
+    {
+      "claim_id": "809caf04-1fcc-47c0-ab42-f9dba10642b8",
+      "result_id": "75d07a7e-e9c1-476d-b20e-697ec1386588"
+    },
+    {
+      "claim_id": "f5437e71-40a0-4fa8-a0e6-b0403dcb3a07",
+      "result_id": "75d07a7e-e9c1-476d-b20e-697ec1386588"
+    },
+    {
+      "claim_id": "789f2344-4177-4c5c-aa0c-b22a13ce3f73",
+      "result_id": "75d07a7e-e9c1-476d-b20e-697ec1386588"
+    },
+    {
+      "claim_id": "af5528fc-d98f-4c2b-a1ac-897aae207009",
+      "result_id": "5aeb814f-3471-471b-aef2-0f583d2bdebb"
+    },
+    {
+      "claim_id": "7fc81743-b053-428a-8366-fe6d9471a3e0",
+      "result_id": "5aeb814f-3471-471b-aef2-0f583d2bdebb"
+    },
+    {
+      "claim_id": "cf20d344-5bf2-4d22-82fb-1d35a6db0737",
+      "result_id": "5aeb814f-3471-471b-aef2-0f583d2bdebb"
+    },
+    {
+      "claim_id": "ed87e743-5152-4080-9ec3-e83926081cb8",
+      "result_id": "5aeb814f-3471-471b-aef2-0f583d2bdebb"
+    },
+    {
+      "claim_id": "e067ffa9-38a1-4d20-ba3e-fd52dba56b3c",
+      "result_id": "b579be7c-6174-4475-9977-e616af0f57fd"
+    },
+    {
+      "claim_id": "35d50e47-4e43-4bd7-9ec1-017dcda3483e",
+      "result_id": "b579be7c-6174-4475-9977-e616af0f57fd"
+    },
+    {
+      "claim_id": "6b812508-3b6d-4c64-9825-ee10cb9c19b9",
+      "result_id": "511345de-3d7e-46ab-9982-255e360fc28f"
+    },
+    {
+      "claim_id": "180b6a79-55a1-40ae-be3b-83ebc96f25e1",
+      "result_id": "511345de-3d7e-46ab-9982-255e360fc28f"
+    },
+    {
+      "claim_id": "869a1c65-a121-42ad-8045-0dd25fc4aaae",
+      "result_id": "511345de-3d7e-46ab-9982-255e360fc28f"
+    },
+    {
+      "claim_id": "e9694d78-67af-4ec5-af80-9291c9cbfc58",
+      "result_id": "511345de-3d7e-46ab-9982-255e360fc28f"
+    },
+    {
+      "claim_id": "61832d29-0ebf-47dd-a9b8-6932a778adc1",
+      "result_id": "511345de-3d7e-46ab-9982-255e360fc28f"
+    },
+    {
+      "claim_id": "39a9f400-97f3-46a1-89e2-b37d6a5e74c0",
+      "result_id": "511345de-3d7e-46ab-9982-255e360fc28f"
+    },
+    {
+      "claim_id": "7e33d0c3-ab83-4c2c-9aca-6c4ca71cb480",
+      "result_id": "7a9b6ed6-d3c0-4cff-a4b5-fe5c48d4f15d"
+    },
+    {
+      "claim_id": "7b983368-9fc8-4cfc-a3c2-e1b86def1c66",
+      "result_id": "7a9b6ed6-d3c0-4cff-a4b5-fe5c48d4f15d"
+    },
+    {
+      "claim_id": "c297ef1d-742b-4188-b8e8-097c6e07739f",
+      "result_id": "7a9b6ed6-d3c0-4cff-a4b5-fe5c48d4f15d"
+    },
+    {
+      "claim_id": "895850c1-8791-45e4-8669-b796e9af3a05",
+      "result_id": "7a9b6ed6-d3c0-4cff-a4b5-fe5c48d4f15d"
+    },
+    {
+      "claim_id": "7e98f526-ccb7-44f2-b4cf-df9ef1211c80",
+      "result_id": "4c8b75e0-aaad-430b-bf6d-d7709ee7e50a"
+    },
+    {
+      "claim_id": "3918f85d-b871-4e7f-a8a7-c5f0f520071b",
+      "result_id": "c375caf5-b4bc-4925-b644-dbf590c3414b"
+    },
+    {
+      "claim_id": "1bd181df-6762-496d-9fe4-19292336ab9b",
+      "result_id": "c375caf5-b4bc-4925-b644-dbf590c3414b"
+    },
+    {
+      "claim_id": "a26b0555-a620-4379-aecc-70e20729aa34",
+      "result_id": "c375caf5-b4bc-4925-b644-dbf590c3414b"
+    },
+    {
+      "claim_id": "be3a34fe-4def-49ed-a446-def50643f1bc",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "c5fbe824-48eb-440a-b6c6-7eec8c35ab8b",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "e1996c96-5598-42a5-b848-577f205d2d37",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "1581a03a-2eea-4054-95ec-15fda23d3380",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "84a728c6-078b-4bf4-be1f-a385729e7924",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "dceed574-540a-41b4-a236-be25446469e0",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "e2788d73-d139-467b-8d19-3936847cfb46",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "643b0ee7-548b-46ec-8fff-d70b1b570498",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "daa2dde5-b468-4f4c-97e3-40c45f725b76",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "5f0415de-1356-4dc3-8f8e-a9d593ff14ae",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "b308ce61-6c12-404b-9def-747638dbc07c",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "3d44d693-9cca-42e8-8b33-8a1f35b16441",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "dff5d4cf-aa57-4837-b2fe-d6b391161063",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "abe79053-3290-4064-920c-c3ba4c71a96a",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    },
+    {
+      "claim_id": "a79076d6-efc8-469f-a0f9-25eaa7d4dc91",
+      "result_id": "c627ec75-26af-4a49-b429-0bf0114ebd31"
+    }
+  ],
+  "comparisons": []
+}

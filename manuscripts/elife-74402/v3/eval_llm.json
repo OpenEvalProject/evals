@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study recruited 248 participants online, excluded 56 based on performance criteria, resulting in a final sample of 192 participants (37% male, mean age 33.92 years). The sample had adequate power (>99% for main effects, >80% for anxiety correlations) and good representation of psychopathological symptoms, with excluded participants not differing on psychopathology measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C74-C85 provide comprehensive documentation of recruitment, exclusion criteria, sample characteristics, power analysis, and validation that excluded participants did not differ on key measures. The exclusion criteria are well-justified based on task comprehension, and the final sample characteristics are clearly reported with appropriate statistical comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The multigoal pursuit task consisted of 160 trials divided into reward-rich and punishment-rich blocks, where participants chose between two actions to obtain features with drifting probabilities. Both actual and counterfactual outcomes were presented, and the task design required continuous learning of both action-feature and feature-value associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C89-C93 collectively describe the task design with clear specifications of trial structure, block manipulation, and key design features. The task is well-characterized and differs from prior paradigms in requiring continuous learning of changing associations, as noted in C93.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C7"
+    ],
+    "result": "Participants demonstrated less flexibility in avoiding punishment compared to pursuing reward, persisting in avoiding previously punished features even when instructed to seek reward, and showing no significant downregulation of avoidance when punishment goals were less abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C7 present the core behavioral finding consistently across abstract and results. These claims are supported by the computational modeling results (C13-C18, C28-C39) and the parameter analyses (C36-C39) showing differential strategy use for reward vs. punishment goals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Participants employed three computational strategies: model-based (MB) learning for flexible goal pursuit, model-free (MF) learning based on experienced outcomes, and a novel 'goal perseveration' (GP) strategy that learns feature probabilities but uses them inflexibly. GP was used more for punishment avoidance, while MB was used more for reward seeking and flexibly increased for more abundant reward goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 describe the three identified strategies and their differential use. These are supported by the simulation results (C20-C27), regression analyses (C28-C32), and model comparison results (C33-C35). The computational modeling provides converging evidence for these distinct strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Simulations of artificial agents demonstrated unique behavioral signatures for each strategy on goal-switch trials: MB agents' behavior depends on current goal, MF agents' behavior depends on previous goal, and GP agents avoid punishment features regardless of current or previous goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 describe simulation results that establish the theoretical predictions for each strategy. These predictions are clearly demonstrated in Figure 2A and provide the foundation for identifying these strategies in empirical data (C28-C32).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Simulations showed that MB strategy earned significantly more reward than other strategies (40% more than GP), with the advantage due to frequent goal switching (41.8% of trials). MF strategy earned the least reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 report simulation results shown in Figure 3A that establish the relative performance of different strategies. These results justify why the task incentivizes MB control and provide context for understanding why participants might use different strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Bayesian regression analysis revealed that participants used MB control for both reward seeking (mode=-0.52) and punishment avoidance (mode=0.12, trending), with larger MB effects for reward than punishment (mode=0.41). MF strategy was used for both reward and punishment without valence differences. GP was used significantly more for punishment avoidance (mode=0.33) than reward seeking (mode=-0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 report the mechanism-agnostic regression results with specific parameter estimates and confidence intervals. These findings are clearly presented in Figure 2C-D and provide initial evidence for the differential use of strategies, which is later confirmed by the full computational modeling (C33-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Model comparison showed that allowing MB utilization to adjust based on goal abundance improved fit (\u0394BIC=-175.95), adding MF strategy improved fit (\u0394BIC=-896.72), and adding GP strategy further improved fit (\u0394BIC=-243.73), with the combined MBRR+MF+GP model providing the best account of the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 report the stepwise model comparison results shown in Figure 4A. The BIC differences clearly demonstrate that each component (resource-rational MB, MF, and GP) explains unique variance in participant behavior. The model comparison is rigorous and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Parameter analysis from the winning model showed individuals relied significantly more on MB strategy for reward seeking than punishment avoidance (p<0.001), relied more on GP for punishment avoidance than reward seeking (p=0.026), were sensitive to reward goal abundance (mean=0.50, p<0.001) but not punishment goal abundance (mean=-0.13, p=0.13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 report the key parameter estimates from the winning computational model with appropriate statistical tests. These results are shown in Figures 4B-C and directly support the main conclusion about differential flexibility in reward vs. punishment goals. The use of nonparametric tests is appropriate given the non-independence of hierarchically estimated parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C50",
+      "C51"
+    ],
+    "result": "Simulations of a hybrid GP+MB agent showed that perseverating on punishment avoidance while adaptively engaging reward information performs as well as pure MB in avoiding punishment but results in suboptimal reward seeking, producing false positives during reward seeking while avoiding missed punishment avoidance opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C50-C51 describe simulation results shown in Figures 3B-C that illustrate the consequences of the GP strategy. These simulations provide important context for understanding why participants might use GP for punishment avoidance and what the trade-offs are.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C19",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Exploratory analyses found preliminary evidence that chronic worry was associated with greater reliance on GP for punishment avoidance (\u03b2=3.14, p=0.04 when controlling for covariates), with no significant relationships between other forms of psychopathology (OCD, somatic anxiety) and punishment avoidance strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C19, C40-C43 report exploratory findings linking worry to GP punishment avoidance. While the controlled analysis (C42) shows a significant effect (p=0.04), the authors explicitly note this is preliminary evidence, the effect does not survive Bonferroni correction (p=0.08), and requires replication in larger, hypothesis-driven studies. The bivariate relationship (C41) was not significant (p=0.16), raising concerns about the robustness of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors propose that GP represents a strategic, resource-rational approximation to MB control that saves computational resources while maintaining reasonable performance. This interpretation aligns with evolutionary perspectives on threat avoidance and distinct neural mechanisms for approach vs. avoidance behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C49 and C52-C57 present theoretical interpretations of the GP strategy. While these interpretations are plausible and well-reasoned, they remain speculative (as indicated by evidence_type including SPECULATION and INFERENCE). The resource-rationality framework provides a useful lens, but direct evidence for computational cost savings or evolutionary optimality is not provided. These are valuable theoretical contributions but require further empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors suggest that inflexibility in punishment avoidance in chronic worry may unify known effects of worry on threat processing, going beyond prior findings of intact MB control in anxiety by demonstrating that multigoal conflict may be necessary to reveal how task structure knowledge is used in anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C62 present interpretations connecting the findings to prior anxiety literature. While these interpretations are well-grounded in cited research (C59-C61), they remain speculative given the preliminary nature of the worry findings (C41-C42). The proposal that multigoal conflict is necessary to reveal anxiety-related differences (C62) is an interesting hypothesis but requires direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors acknowledge that differences in reward vs. punishment sensitivity could partially explain strategy differences, but argue this cannot fully account for the observed pattern since punishment avoidance was greater for GP while reward seeking was greater for MB, and reward features had greater net impact across both goal-oriented strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 present a limitation and counterargument. The authors appropriately acknowledge the confound (C65) but provide reasonable evidence that it cannot fully explain the results (C66-C67). However, the possibility that outcome sensitivity differences could cause strategy shifts (C68) remains a limitation that could be addressed in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Psychopathology was assessed using validated questionnaires: Penn State Worry Questionnaire for chronic worry, Mood and Anxiety Symptom Questionnaire for anxious arousal, and Obsessive Compulsive Inventory-Revised for OCD symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 document the psychopathology assessment methods with appropriate citations to validated instruments. This is standard methodology for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Models were fit using hierarchical iterative importance sampling, with successful parameter recovery (correlations >0.58, average 0.79) and perfect model recovery (10/10 times) compared to the next-best model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 document the model-fitting procedure and validation. The parameter recovery (C95) and model recovery (C96) results shown in Figure 4\u2014figure supplement 2 demonstrate that the experimental design and fitting procedure can reliably distinguish between the tested models and recover their parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors cite prior literature suggesting that people may devote more resources to punishment avoidance due to loss aversion, that anxious individuals learn more quickly from punishment than reward, and that anxiety is associated with failing to terminate threat-related planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 accurately represent cited prior research that motivates the current study. These claims provide appropriate context for the research questions, though they are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors discuss how their findings relate to prior research on anxiety and approach-avoidance conflict, termination vs. initiation failures in worry, domain-specificity of OCD avoidance, and the low representation of somatic anxiety in their sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C70-C73 appropriately contextualize the findings within prior literature and acknowledge limitations. The discussion of the low somatic anxiety representation (C72) is an important caveat for interpreting the null findings with this measure.",
+    "result_type": "MINOR"
+  }
+]

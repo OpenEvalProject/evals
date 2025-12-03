@@ -1,0 +1,1884 @@
+{
+  "submission": {
+    "id": "d956a252-0ce9-4f0b-8017-31db67397c60",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:02:02.095255Z",
+    "updated_at": "2025-12-03T11:02:02.095255Z"
+  },
+  "content": [
+    {
+      "id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "submission_id": "d956a252-0ce9-4f0b-8017-31db67397c60",
+      "content_type": "manuscript",
+      "content_text": "# Different computations over the same inputs produce selective behavior in algorithmic brain networks\n\n## Authors\n\n- Katarzyna Jaworska<sup>1</sup> ([ORCID: 0000-0001-6482-1498](https://orcid.org/0000-0001-6482-1498))\n- Yuening Yan<sup>1</sup> ([ORCID: 0000-0003-4027-2687](https://orcid.org/0000-0003-4027-2687))\n- Nicola J van Rijsbergen<sup>2</sup>\n- Robin AA Ince<sup>1</sup> ([ORCID: 0000-0001-8427-0507](https://orcid.org/0000-0001-8427-0507))\n- Philippe G Schyns<sup>1</sup> ([ORCID: 0000-0002-8542-7489](https://orcid.org/0000-0002-8542-7489)) \u2020\n\n### Affiliations\n\n1. School of Psychology and Neuroscience, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))\n2. Department of Psychology, Edge Hill University Ormskirk United Kingdom ([ROR:028ndzd53](https://ror.org/028ndzd53))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA key challenge in neuroimaging remains to understand where, when, and now particularly how human brain networks compute over sensory inputs to achieve behavior. To study such dynamic algorithms from mass neural signals, we recorded the magnetoencephalographic (MEG) activity of participants who resolved the classic XOR, OR, and AND functions as overt behavioral tasks (N = 10 participants/task, N-of-1 replications). Each function requires a different computation over the same inputs to produce the task-specific behavioral outputs. In each task, we found that source-localized MEG activity progresses through four computational stages identified within individual participants: (1) initial contralateral representation of each visual input in occipital cortex, (2) a joint linearly combined representation of both inputs in midline occipital cortex and right fusiform gyrus, followed by (3) nonlinear task-dependent input integration in temporal-parietal cortex, and finally (4) behavioral response representation in postcentral gyrus. We demonstrate the specific dynamics of each computation at the level of individual sources. The spatiotemporal patterns of the first two computations are similar across the three tasks; the last two computations are task specific. Our results therefore reveal where, when, and how dynamic network algorithms perform different computations over the same inputs to produce different behaviors.\n\n## Introduction\n\nExtensive studies revealed that the primate visual system comprises the ventral and dorsal pathways, with specific anatomical and functional hierarchical organization (Van Essen et al., 1992; Kravitz et al., 2013). These pathways compute over the high-dimensional visual input, starting separately in each hemisphere with contralateral detection of simple, small features with small receptive fields, that are then hierarchically integrated into more complex, broader receptive field features (Bugatus et al., 2017; Hubel and Wiesel, 1962; Kay et al., 2015), leading to the integrated face, object, and scene features (DiCarlo and Cox, 2007; Grill-Spector and Weiner, 2014; Kriegeskorte et al., 2008; Sigala and Logothetis, 2002) that are compared with memory to produce behavior (Zhan et al., 2019b; Wyart et al., 2012; Ratcliff et al., 2009; Alamia and VanRullen, 2019). This flow of information reverses when the same pathways predict the top-down input from memory (Friston, 2008; Linde-Domingo et al., 2019; Engel et al., 2001).\n\nThere is broad agreement that such a bidirectional hierarchical architecture supports much of the information processing that subtends everyday face, object, and scene recognition. However, despite considerable progress, we have yet to understand where, when, and how specific algorithmic computations in the pathways dynamically represent and transform the visual input into integrated features to produce behavior (Kriegeskorte and Douglas, 2018; Naselaris et al., 2011; Wu et al., 2006) and vice versa, when reversing the flow in the hierarchy, to predict a cascade of features from complex to simpler ones. Furthermore, it is unclear that such an algorithmic understanding can be achieved with current analytical approaches to neuroimaging, even in simple tasks (Jonas and Kording, 2017). Here, we achieved such systems-level algorithmic understanding with magnetoencephalographic (MEG) measurements, in the context of well-defined visual inputs and tasks.\n\nWe framed this broad problem using the classic logical functions XOR, AND, and OR, in which different algorithms are required to produce correct responses from the same input stimuli (see these input-output relationships in Figures 1 and 2). XOR is famously a nonlinearly separable function, whereas AND or OR is linearly separable, implying nonlinear vs. linear transformations of the same inputs in the considered architectures (Minsky and Papert, 2017; Rumelhart et al., 1986; Gidon et al., 2020) (see Figures 1A and 2). We aimed to reverse engineer the different stages of linear and nonlinear computations in brain networks that implement the algorithms (O\u2019Reilly and Mars, 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig1-v1.jpg)\n\n**Figure 1.:** (A) Hypotheses and schematic hierarchical brain network in the XOR task. Stimuli consisted of the image of a face wearing glasses, with dark (\u20181\u2019, \u2018on\u2019) and clear (\u20180\u2019, \u2018off\u2019) left and right lenses serving as inputs, for a total of four input classes for XOR behavioral decisions. (B) Four hierarchical stages of computations. Each colored curve shows the average (N = 10 participants) time course of the maximum across sources that: (1) linearly discriminates in its magnetoencephalographic (MEG) activity the \u2018on\u2019 vs. \u2018off\u2019 state of the left (Lin, blue) and right (Lin, orange) inputs (weighted distance pattern), (2) linearly discriminates both inputs (LinBoth, magenta) (weighted distance pattern), (3) nonlinearly integrates both inputs with the XOR task pattern (NonLin, green) (weighted XOR pattern metric) and (4) nonlinearly integrates both inputs with the XOR task pattern and with amplitude variations that relate to reaction time (RT) (mutual information, MI (MEG; RT)) (yellow). Colored brains localize the regions where these computations start (onset times for left and right) or peak (peak latencies for both, XOR and RT) (p<0.05) familywise error rate corrected with a permutation test, (see Methods, Linear vs. Nonlinear Representations; Representation Patterns). Dots report the onset time of computation (1) and (2) and the peak time of computation (3) and (4) in each participant. See Table 2 and Figure 1\u2014figure supplement 2 for individual participant replications of each computation in the same brain regions and time windows.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Number of computation stages. Results of k-means analysis, with k = 1...20, with sum of squared error of each k (plain curve) and distance of the plain curve from straightline (dashed curve). We selected the k with furthest distance (elbow method). At stage 0, there is no computation. At stage 1, LinLeft (blue) and LinRight (orange) dominate. At stage 2, LinBoth (magenta) dominates. At stages 3 and 4 the task-specific NonLin XOR, AND, and OR (green) dominate. Color intensity reflects the frequency of participants performing this computation in this stage and source. (B) Similarity of computation stages across XOR, AND, and OR. We computed pairwise similarities between the four computation stages of each task, as the percentage of sources that shared the same computation (either LinLeft, LinRight, BothLin, NonLin XOR, AND, or OR) across pairs of stages. Similarity is high between stages 1 and 2 across the three tasks (color-coded brains show the sources with intersecting computations across the three tasks), whereas the NonLin stages 3 and 4 are task specific. (C) Generalization of stages of computation in XOR from face to Gabor stimuli. Using the similarity metric again, we demonstrate the generalization of the three participants (P1, P2, P3) who resolved XOR with Gabor stimuli (Figure 1\u2014figure supplement 3), showing similarity of their stages 1 and 2 with those of the face stimuli, and similarity of stages 3 and 4 only with the XOR face stage.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Gray curves correspond to the individual participants\u2019 time courses of the individual source Lin (left and right), LinBoth, NonLin, and NonLin&RT, in the XOR, AND, and OR tasks. Only significant (familywise error rates p=0.05) time points are shown, other time points are set to 0. The colored lines correspond to the data of one exemplar participant used in Figure 3 (XOR) and 3 (AND and OR). Tick marks on each colored line correspond to the seven time-steps of the dynamic unfolding of each computation.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Stimuli. In three participants, we presented two spatially separated Gabor and phase-opposed Gabor patches. Participants responded when the two patches had the same vs. different colors with different keyboard keys (an XOR task). Gabors were presented in four randomly chosen orientations, spanning in total 11 \u00d7 11 deg of visual angle (the inner edges of each Gabor were located ~5.7 deg of visual angle away from the centrally presented fixation cross). Gabor inputs were simultaneously presented on the screen for 150ms. (B) Four hierarchical stages of computations. Each plot shows the maximum within participant of source-level (1) linear discrimination of each Gabor input Lin (blue and orange), (2) linear discrimination of both input, Linboth (magenta), (3) nonlinear integration of both inputs, NonLin (green) with the XOR task pattern, and (4) with amplitude variations that relate to reaction time (RT) NonLin&RT (yellow). (C) Colored brains localize the regions where these computations start. The brackets report the per participant onset times (for Lin, left and right) and peak latencies (for LinBoth, NonLin XOR, and XOR&RT), and averaged across participants in the colored brains.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig2-v1.jpg)\n\n**Figure 2.:** Each colored curve averages (N = 10 participants) the time courses of the maximum across sources that: (1) linearly discriminates (weighted distance pattern) in its magnetoencephalographic activity the \u2018on\u2019 vs. \u2018off\u2019 state of the left (blue) and right (orange) inputs, (2) linearly discriminates both inputs (magenta), (3) nonlinearly integrates both inputs with the respective task pattern and (4) nonlinearly integrates both inputs with the respective task pattern and with amplitude variations that relates to reaction time (RT) (yellow). Colored brains localize the regions where these computations start (onset times for left and right) or peak (peak latencies for LinBoth, NonLin, and RT) p<0.05 familywise error rates corrected with a permutation test, see Methods, Linear vs. Nonlinear Representations; Representation Patterns. Dots report the onset time of computation (1) and (2), and the peak time of computation (3) and (4) in each participant. See Table 2 and Figure 1\u2014figure supplement 2 for individual participant replication of each computation in the same brain regions and time windows. Single source plots in each task develop the data of one typical observer, where the green and yellow computations (cf. color-coded sources in the glass brain) differ between AND, OR, and XOR (see Figure 3 for caption).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Using the same face stimuli as in the main experiment, we presented either the right or the left input as gray for the first 1000ms following stimulus onset. The other input was either clear or dark. After 1000ms, the gray input changed into either clear or dark. Participants waited until the gray input changed and then responded according to the logic gate task: XOR (N = 5, top), AND (N = 4, middle), and OR (N = 5, bottom) (two participants were excluded under the same criteria as the main experiment). Linear representation of the first input started around 80ms poststimulus (with a ~100ms peak; or around \u2013900ms with respect to second lens presentation). The second input was linearly represented from ~100ms with a peak at ~120ms (blue, orange, and magenta time courses). Averaged time courses of the Lin and NonLin computations across individual participants (see Figure 2\u2014figure supplement 2) replicated the results of Figure 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Gray curves correspond to the individual participants\u2019 time courses of the individual source Lin (left and right), LinBoth, NonLin, and NonLin&RT, in the XOR, AND, and OR tasks, with 0ms corresponding to the time point when the second input is revealed (i.e. when the gray lens turns clear or dark, Figure 2\u2014figure supplement 1). The colored lines correspond to the mean across participants.\n\nTo do so, we simultaneously presented the inputs laterally within the visual field (a pair of sunglasses on a face, with dark \u2018on\u2019 vs. clear \u2018off\u2019 lenses representing the binary inputs, Figure 1A) so that occipital cortex initially represented each separately and contralaterally (i.e. in analogy to a network model that takes in two distinct inputs, see Figure 1A, here with left vs. right input projected in right vs. left occipital cortex; see Methods, Stimuli). Our analyses of the ensuing computations in the networks of individual participants systematically revealed four distinct stages that represent and transform the same inputs to produce different task-specific behavior. The first two stages of linear computations similarly represent the two inputs across the XOR, AND, and OR tasks. The last two stages of nonlinear computations differently represent the same inputs in a task-dependent manner (N = 10 participants per task, each analyzed separately to provide an independent replication; we further replicated the key results in different participants, using opposite-phase Gabor patches and also with sequentially presented inputs) (Little and Smith, 2018; Ince et al., 2021; Naselaris et al., 2021; Smith and Little, 2018). A video (Figure 1\u2014video 1) visualizes the key results in one typical participant, with four stages of computation in the brain between stimulus and behavior schematized in a network model, and examples of the different color-coded source-level dynamic computations on the same inputs that comprise each stage. We advise watching (Figure 1\u2014video 1) stage by stage, to complement the presentation of the main results below.\n\n## Results\n\nStarting with behavior, Table 1 shows that participants were both accurate and fast in all tasks, with no significant task differences on average accuracy and reaction times (RT), measured with independent sample t-tests. We reconstructed the dynamic neural representation of the inputs of each participant from concurrently measured, source modeled MEG activity (see Methods, MEG Data Acquisition, Source Reconstruction).\n\n**Table 1.**\n Mean behavioral accuracy and median reaction times in XOR, AND, and OR, 95% percentile bootstrap confidence interval shown in brackets.All pairwise comparisons, p>0.05.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Accuracy</th>\n      <th>Reaction time</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>XOR</td>\n      <td>98.5% [97, 99]</td>\n      <td>499ms [461, 557]</td>\n    </tr>\n    <tr>\n      <td>AND</td>\n      <td>99% [98.6, 99.5]</td>\n      <td>457ms [393, 505]</td>\n    </tr>\n    <tr>\n      <td>OR</td>\n      <td>99.3% [99.2, 99.5]</td>\n      <td>490ms [439, 541]</td>\n    </tr>\n  </tbody>\n</table>\n\nTo simplify presentation, henceforth we use vector notation to denote the state of the two inputs and, for example, write left input \u2018on\u2019, right input \u2018off\u2019 as [1,0]. To preview the analysis and key results, for each source and every 4ms we fit linear models to explain the 2D MEG magnetic vector field activity in terms of the two presented binary inputs, with and without a nonlinear interaction term between them. The interaction term captures the nonlinear integration of the two inputs on this MEG source and time point\u2014i.e., when source response to [1,1] differs from the sum of the responses to [1,0] and [0,1]. Additional metrics quantified how the 2D MEG responses match the response pattern expected in each task (see Methods, Representational Patterns). Our analyses reveal that individual MEG source responses reflect changing representations of the visual inputs in the brain, revealing four different stages of neural computations that lead to behavior in each task (see Methods, Linear vs. Nonlinear Representations, Representation Patterns and Figure 1\u2014video 1).\n\n### Four systems-level stages of computation link stimulus to behavior\n\nFirst, we performed a data-driven clustering analysis that delivered four stages of computation in the XOR, AND, and OR tasks (see Methods, Clustering the Stages of Computation and Figure 1\u2014figure supplement 1). Figure 1B (XOR) and Figure 2 (AND and OR) show the time course of these four stages averaged across the 10 participants of each task (Figure 1\u2014figure supplement 2 shows the results of each individual participant). Each task shows a similar dynamic unfolding: the first two stages represent and linearly discriminate the visual inputs; the third and fourth stages nonlinearly integrate them in a task-specific manner, revealing the solution of each task in the responses of individual MEG sources. The network model of Figure 1A schematizes these stages. Specifically, we show:\n\nIn Figures 1 and 2, colored sources shown in glass brain localize the regions where each color-coded computation onsets or peaks (cf. dashed lines) in different time windows poststimulus. Table 2 shows independent replications of each computation within these regions and time windows, in at least 9/10 participants. We also replicated each color-coded computation at the level of individual participants, using Gabor inputs in XOR (Figure 1\u2014figure supplement 3) and a sequential presentation of the inputs in XOR, AND, and OR (Figure 2\u2014figure supplements 1 and 2). Finally, we show that the four stages of computations generalize stage by stage in the XOR from face stimuli to Gabor stimuli (see Figure 1\u2014figure supplement 1).\n\n**Table 2.**\n Number of individual participant replications of the four color-coded computations, within the same region and time window.Lin, left and right occipital sources [74\u2013117ms]; LinBoth, occipital midline and right fusiform gyrus [74\u2013117ms]; NonLin, XOR: parietal [261\u2013273ms], AND: temporal-parietal [246\u2013304ms], OR: temporal-parietal [261\u2013304ms]; RT, postcentral gyrus [386\u2013398ms]. Bayesian population prevalence (Ince et al., 2021) of 9/10 = 0.89 [0.61 0.99]; 10/10 = 1 [0.75 1] (MAP [95% HPDI]).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Lin</th>\n      <th>LinBoth</th>\n      <th>NonLin</th>\n      <th>NonLin&amp;RT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>XOR</td>\n      <td>10/10</td>\n      <td>10/10</td>\n      <td>9/10 (parietal)</td>\n      <td>9/10</td>\n    </tr>\n    <tr>\n      <td>AND</td>\n      <td>10/10</td>\n      <td>10/10</td>\n      <td>10/10</td>\n      <td>9/10</td>\n    </tr>\n    <tr>\n      <td>OR</td>\n      <td>10/10</td>\n      <td>10/10</td>\n      <td>10/10</td>\n      <td>10/10</td>\n    </tr>\n  </tbody>\n</table>\n\n### Detailed dynamic unfolding of each computation at single source level\n\nWe next detail the dynamic unfolding of each color-coded computation on single sources, using an exemplar XOR participant (highlighted with colored curves in Figure 1\u2014figure supplement 2, XOR, also reported in Figure 1\u2014video 1). The selected sources maximize the metric of each computation\u2014i.e., Lin: onset; LinBoth, NonLin, NonLin&RT: peak. The glass brain in Figure 3A locates the selected sources and color codes them by type of computation. The subpanels visualize the dynamic response trajectories of each source to the same four stimuli (representing the \u2018on\u2019 vs. \u2018off\u2019 combinatorics of the two inputs) over 72ms, with a 12ms timestep resolution (those indicated with triangle markers in Figure 1\u2014figure supplement 2 and Figure 1\u2014video 1). To preview the results, different source response trajectories to the same inputs detail the neural implementation of the different color-coded computations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig3-v1.jpg)\n\n**Figure 3.:** (A) Localized sources. Color-coded source localized in the top glass brain illustrates each color-coded computations in each scatter plot. Legend. Axes of the scatter plots represent the 2D source magnetic field response. Small dots are single-trial source responses; larger dots their averages for each color-coded stimulus class, dynamically reported over seven timesteps (cf. legend) corresponding to the seven triangular markers in Figure 1\u2014figure supplement 2, XOR. Increasing dot sizes, saturations, and connecting lines denote increasing timesteps of the dynamic trajectory. (B) Right occipital. The light blue discrimination line indicates the linear (LinLeft) computation that this source represents at the seventh timestep (cf. adjacent scatter for the distribution of individual trials at this time). Inset vector diagram provides a geometric interpretation of the linear computations. Using stimulus [0,0] as the origin: blue arrow illustrates source response to stimulus [0,1] (blue disk); red arrow shows source responses to [1,0] (red disk); gray disk illustrates linear summation of these vectors (opaque lines); black disk is the observed mean response to stimulus [1,1]. (C) Left occipital. Same caption for orange LinRight computation. (D) Right midline occipital and (E) right fusiform gyrus. Same caption for magenta LinBoth computation. (F) Right parietal and (G) postcentral gyrus. Same caption for green XOR nonlinear computations. Green vector shows discrepant nonlinear observed response to stimulus [1,1] and linear sum of responses to [0,1] and [1,0].\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** In each task, for each participant, we computed the single-trial relationship between variations of MEG source amplitude at each time point and RT, computed as mutual information (MI) (< RT; MEGt>). Left plots show the average of significant MI (p<0.05, corrected). Right plots show the number of participants with significant MI in each source and time point. In each task, stage 4 postcentral gyrus (and to some extent frontal regions) source activity relates to behavioral RTs.\n\nTo illustrate, we start with the light blue right occipital source (Figure 3A). Its Lin computation (see Legend and Figure 3B) develops over seven time-steps (from 2 to 74ms) to linearly discriminate the \u2018on\u2019 (dark) vs. \u2018off\u2019 (clear) state of the left input (see schematic in the bottom left quadrant). The plot shows how 2D source activity progressively separates left lens \u2018on\u2019 trials (red and gray stimuli, see blue line in schematic) from left lens \u2018off\u2019 trials (blue and black stimuli). The adjacent scatter (upper right quadrant) shows the source response to individual trials at 74ms (final plotted time point). The vector diagram (lower right quadrant) confirms that the linear addition of the vector responses [0, 1] and [1, 0] (gray point, sum of blue and red vector) is close to the actual source response to [1, 1] (black point). The left occipital source (orange, Figure 3A,C) reflects a similar unfolding for the linear discrimination of the right input \u2018on\u2019 vs. \u2018off\u2019 state. Again, the response is close to the linear sum of the responses to each individual input.\n\nThe second computation (LinBoth, magenta) that linearly and jointly represents the \u2018on\u2019 vs. \u2018off\u2019 state of both inputs takes two distinct forms. In midline occipital sources (Figure 3A,D), all four stimuli are equally spread out in the quadrants of the source response space (i.e. all inputs are equally discriminated). In contrast, the right fusiform gyrus source (Figure 3A,E) discriminates the [1,0] and [0,1] stimuli with an opposite activity, whereas the [1,1] (black dot) and [0,0] (gray dot) stimuli are less discriminated. The vector diagrams of the two LinBoth examples confirm that the joint response to [1,1] is indeed the sum of [1,0] and [0,1] responses. Interestingly, the two LinBoth discriminations illustrate a progression toward an XOR representation. The first LinBoth midline occipital source (Figure 3D) discriminates equally each input in the quadrants of its 2D response. In contrast, the amplitude response of the LinBoth right fusiform gyrus source (Figure 3E) can linearly discriminate the XOR responses, but only if a nonlinear operation was added (i.e. drawing a circle that separates the two \u2018same\u2019 black and gray stimuli near the origin in the 2D source response space from the two \u2018different\u2019 blue and red stimuli). So, the right fusiform gyrus LinBoth stage likely represents an important intermediate step toward the computation of XOR. We will see next that the green computation adds the nonlinear computation.\n\nThe third and most critical computation that starts distinguishing the task (NonLin, green) occurs when the parietal source (Figure 3A, F) nonlinearly represents the XOR solution for behavior, with \u2018same\u2019 vs. \u2018different\u2019 stimuli discriminated at 254ms. Like LinBoth in right fusiform gyrus, this representation has black dot [1,1] and gray dot [0,0] responses close together, but with two crucial differences. First, the red and blue vectors (lower right quadrant) now point in the same direction, rather than in opposite directions, as happens in right Fusiform Gyrus LinBoth. Such different source-level responses to the same [1,0] and [0,1] stimuli likely reflect different activities of the neural populations in the regions where the two sources are located. In parietal source NonLin, responses to [1,0] and [0,1] stimuli are magnetic fields with the same dipole orientation, suggesting that the same pattern of cortical activity (i.e. the same neural population) responds to both stimuli. In right fusiform gyrus source LinBoth (Figure 3A, E), responses to [1,0] and [0,1] are magnetic fields with different dipole directions, suggesting that different neural populations within the region modeled by the source respond to each stimulus. Second, the representation of [1,1] (black dot) is now nonlinear (green vector), pointing away from the sum of the red and blue vectors of the individual inputs. Following this nonlinear transformation, the XOR outputs are now linearly decodable in the 2D MEG response space.\n\nFinally, the fourth stage on a postcentral gyrus source (Figure 3A, G, NonLin&RT, yellow) also nonlinearly represents the stimuli, also allowing linear readout of the XOR task outputs at 386ms. In addition, this source activity now relates trial by trial to behavioral RTs. Figure 3\u2014figure supplement 1 shows that this last postcentral gyrus fourth stage (also in frontal regions) primarily relates to behavioral RTs.\n\nFigure 2 shows that the key differences in the AND and OR tasks are at the third and fourth stages, where the temporal-parietal (green) and postcentral gyrus (yellow) sources represent AND and OR solutions for task behavior. The earlier stages linearly represent the two inputs, with light blue and orange Lin, magenta LinBoth discriminating the four stimuli as in XOR participants (see Figure 1\u2014figure supplement 2 for individual replications, prevalence = 1 [0.75 1], MAP [96% HPDI], Ince et al., 2021). In NonLin and NonLin&RT stages, the representation is nonlinear and reflects the task (cf. vector diagrams inset, bottom right quadrant). In AND, the task output is linearly separable in the 2D MEG response space: the black [1,1] response is further from the other stimulus classes than they are from each other, see Methods, Representational Patterns. In OR, the task outputs are also linearly separable, with the gray [0,0] stimulus class represented apart from the other ones. This shows how these later post-200ms computational stages involve nonlinear task-specific stimulus representations in ventral (NonLin) and parietal (NonLin, NonLin&RT) areas.\n\n## Discussion\n\nHere, we addressed the challenge of understanding where, when, and how the brain dynamically implements different algorithmic computations over sensory inputs. We tightly controlled behavior using the simple logical functions XOR, OR, and AND as tasks that require different computations over the same tightly controlled binary inputs. Our analyses revealed, at the level of individual MEG sources, four main stages of computation that dynamically unfold from ~60 to 400 ms poststimulus. The first computation linearly discriminates the \u2018on\u2019 vs. \u2018off\u2019 state of each input in contral-lateral occipital cortex ~60ms poststimulus. This is followed by the linear discrimination of both inputs on occipital and ventral sources ~100ms, followed by the nonlinear integration of both inputs, revealing the XOR, AND, or OR task solution in 2D source response space in the parietal-temporal regions ~260ms, and finally the nonlinear integration with RT-related activity in postcentral gyrus ~400ms. These four stages are common to XOR, AND, and OR, with the main task-related changes occurring in the latter two nonlinear stages. Notably, we performed all statistical analyses leading to these results within each individual participant, controlling the familywise error rate (FWER) over all considered sources and time points. By treating each participant as an N-of-1 study, 10 participants per task provide 10 independent replications of the experiment. We replicated the four computational stages in at least 9/10 participants (and in two further replication experiments with similarly high prevalence), providing strong evidence that a majority of individuals in the population sampled and tested in the same way would show the same effects (Ince et al., 2021).\n\n### Reverse engineering systems-level algorithms\n\nOur systems-level approach aims to reverse engineer, from mass brain signals, the hierarchy of brain computations that represent and transform sensory inputs to produce behavior\u2014i.e., the brain\u2019s algorithm of the behavioral task. The four stages of computation that we systematically found in each individual participant and tasks meet the five key properties of an algorithm: (1) the inputs were specified as the four possible combinations of two binary inputs; (2) the output responses were also specified as the responses of the logical functions XOR, OR, and AND; (3) the algorithms were definite in each task, with a sequence of two characterized Lin and two NonLin computations that transformed the same inputs into the task-specific outputs; the algorithms were also (4) effective in the brain, in the sense that they only relied on brain resources, and (5) finite in processing time, producing behavior with ~450\u2013500ms.\n\nNote that reverse engineering a systems-level algorithm at the granularity of MEG brain measures does not preclude the existence of different compositions of algorithms at lower levels of granularity of individual neurons that together implement the higher-level algorithm (much like the lower granularity algorithms of machine language implement the higher-level algorithms of C++). Rather, such systems-level analysis provides constraints on where (the brain regions) and when (the specific time windows) specific computations take place, enabling targeted studies of the algorithmic \u2018how\u2019 across modalities and granularities of brain measures. Jonas and Kording, 2017 used a related systems-level approach to understand the hierarchy of computations of a microprocessor and concluded that there was risk that analytic approaches in neuroimaging could fall short of producing a meaningful algorithmic understanding of neural activity. We could do so here because we adhered to the main properties of an algorithm: our explicit behavioral tasks (i.e. XOR, OR, and AND) require an implementation of a specific computation on simple (i.e. fully characterized) binary inputs to achieve behavior. We could therefore trace the dynamic representations of the inputs into the 2D space of MEG activity to understand the stages of representation underlying the computation (i.e. Lin, LinBoth, and task-specific NonLin). Such descriptive models of an algorithm enable explicit testing of the different stages of the computation hierarchy. For example, by manipulating the timing or nature of the presented stimuli, or by targeting causal interventions (e.g. magnetic stimulation, or stimulus manipulations) at specific brain regions and peristimulus times.\n\n### Generalization to naturalistic categorization tasks\n\nGeneralizing from our case study of the algorithms underlying the simple XOR, AND, and OR functions to more naturalistic face, object, and scene categorization tasks will incur many challenges that we can frame in the context of the properties of an algorithm detailed above.\n\nA key challenge is that the task-relevant features of real-world faces, objects, and scenes, may be completely different for different behaviors and participants, effectively changing the inputs to the algorithm. Unfortunately, task- or participant-specific features are generally not considered in studies of neural representation, processing, and categorization. Their understanding remains a similar challenge for deep convolutional neural network research, including instances when these are used as models of the brain. Specifically, a key property of an algorithm is that we specify its inputs as precisely as possible. In real-world categorizations, this implies understanding which specific features of the complex images are task relevant for each particular participant performing each specific behavioral task. Furthermore, specification of the outputs is another key property of an algorithm. Passive viewing, or one-back tasks do not provide this specification. For example, from the same face, the feature of a smiling mouth feature will be used to overtly respond \u2018happy\u2019, but the forehead wrinkles to respond \u201845 years of age\u2019; from the same car picture, its specific shape to respond \u2018New Beetle\u2019, but the front tyre shape to respond \u2018flat tyre\u2019; or the specific roof tiles to respond \u2018Chrysler building\u2019 but the density of buildings on the horizon to respond \u2018city\u2019; and so forth. Relatedly, experts vs. novices will use different features to classify the same pictures of the 35 different subtypes of sparrows that exist in North America. Such relative perceptual expertise and associated features generally characterize the relationship between visual cognition and outside world stimuli. Then, to infer the hierarchical stages of computation from the brain measures, we can start tracing the dynamic representation of these specific task-relevant input features, when we have formally characterized them, between stimulus onset and explicit output task behavior, as we did here. Different modalities or granularities of brain measures (e.g. M/EEG, 3/7T fMRI, NIRS vs. single electrodes (Gidon et al., 2020) and electrode arrays) will likely provide complementary understandings (e.g. timing vs. location) of the computations in different brain regions. And when we finally have a model of the computation hierarchy (even initially a descriptive model), we can test its key properties.\n\nTo conclude, we reverse engineered four stages of dynamic algorithmic computations over the same sensory inputs that produce different behaviors in the brain. We could do so because we explicitly controlled the input features and the explicit tasks that each individual participant was instructed to resolve while we modeled their brain response with MEG source level activity. Therefore, our results and methodology pave the way to study algorithmic computations when the stimuli and tasks are more complex (e.g. face, object, and scene and their explicit categorizations) but well controlled (e.g. with generative systems rather than uncontrolled 2D images), as they are in any algorithm.\n\n## Materials and methods\n\n### Participants\n\nWe recruited 35 participants (all right handed; 24 women). All reported normal or corrected-to-normal vision and gave written informed consent to participate in the experiment and for their data to be anonymously published. We conducted the study according to the British Psychological Society ethics guidelines and was approved by the ethics committee at the College of Medical, Veterinary and Life Sciences, University of Glasgow.\n\n### Stimuli\n\nWe synthesized an average face using a generative photorealistic 3D face model (Yu et al., 2012; Zhan et al., 2019a) to which we added glasses with an image editing program (Adobe Photoshop). Black and clear lenses produced four different input conditions corresponding to four classes of logical inputs: (1) both clear, in vector notation [0,0], (2) left clear/right dark, [0,1]; (3) left dark/right clear [1,0]; and (4) both dark, [1,1]. The edges of the left and the right lens were 0.5 deg of visual angle away from the centrally presented fixation cross.\n\n### Task procedure\n\nEach trial began with a central fixation cross displayed for a randomly chosen duration (between 500 and 1000ms), immediately followed by one of the four stimulus classes described above and displayed for 150ms. We instructed participants to maintain fixation on each trial, to pay attention to the left and the right lenses and to respond as quickly and accurately as possible by pressing one of two keys ascribed to each response choice with the index or middle fingers of their right hand. Responses were \u2018same\u2019 vs. \u2018different\u2019 in the XOR task; \u2018both dark\u2019 vs. \u2018otherwise\u2018 in AND; or \u2018at least one dark\u2019 vs. \u2018otherwise\u2019 in OR. Participants were randomly allocated to one of the three tasks.\n\nStimuli were presented in blocks of 80 trials, with random intertrial interval of [800\u20131300ms] and randomized stimulus order in each block. Participants completed a total of 20\u201324 blocks split across 2\u20133 single day sessions, with short breaks between blocks. Each session lasted 2.5\u20133hr. We selected this recording time and number of trials based on sensitivity of MEG for within-participant whole brain corrected feature representation in previous experiments using face stimuli (Zhan et al., 2019b; Ince et al., 2015). We focus on within-participant inference in which each participant serves as an independent replication of the experiment. Inferring population prevalence of effects is less sensitive to the number of participants and more sensitive to the amount of data collected per participant (Ince et al., 2021). Note that the 5\u20139hr of scanning time per participant we employ ( >200hr scanning in total for the 30 participants in the main experiment) is far higher than typical standards in the field in which N = 30 participants might be scanned for 45min each (total scanning time~22hr).\n\n### MEG data acquisition and preprocessing\n\nWe recorded the participants\u2019 MEG activity using a 248-magnetometer whole-head system (MAGNES 3600 WH, 4D Neuroimaing) at a 1017 Hz sampling rate. We discarded each participant\u2019s runs with more than 0.6 cm head movement measured with prerun vs. postrun head position recordings. Participants were excluded if the number of trials remaining after preprocessing (eye movement artifact rejection and rejecting runs for excessive head motion) was less than 700. We excluded five participants resulting in a final sample sizes of N = 30 (10 per task). Mean head movement (averaged across blocks) across participants was 0.3 cm (min = 0.12, max = 0.44).\n\nWe performed analyses with Fieldtrip (Oostenveld et al., 2011) in MATLAB, according to recommended guidelines (Gross et al., 2013). We high-pass filtered the data at 0.5 Hz (fifth order two-pass Butterworth IIR filter), filtered for line noise (notch filter in frequency space), and denoised via a Principtal Component Analysis (PCA) projection of the reference channels. We identified noisy channels, jumps, muscle, and other signal artifacts using a combination of automated techniques and visual inspection. The median number of trials for subsequent analyses was 1064 (min = 701, max = 1361).\n\nNext, we epoched the data into trial windows ([\u2212500 to 1000ms]) around stimulus onset, low-pass filtered the data at 45 Hz (third order two-pass Butterworth IIR filter), resampled to 256 Hz, and decomposed using Independent Component Analysis (ICA), separately for each participant. We identified and projected out of the data the ICA sources corresponding to heartbeat and eye blinks or movements (2\u20134 components per participant).\n\n### Source reconstruction\n\nFor each participant, we coregistered their structural MRI scan with their head shape recorded on the first session and warped to standardized MNI coordinate space (Gross, 2019). Using brain surfaces segmented from individual warped MRI, we then prepared a realistic single-shell head model. Next, we low-pass filtered the clean dataset at 40 Hz, re-epoched the data between \u2013100 and 400ms around stimulus onset, demeaned using a prestimulus baseline, and computed covariance across the entire epoch. Using average sensor positions across good runs (i.e. where head movement was <0.6 cm, see above), and a 6 mm uniform grid warped to standardized MNI space, we then computed the forward model, keeping the two orientations of MEG activity. We computed the Linearly Constrained Minimum Variance beamformer (Hillebrand and Barnes, 2005) solution with parameters \u2018lambda = 6%\u2019 and \u2018fixedori = no\u2019. The resulting inverse filter applied to the sensor space MEG activity enabled reconstruction of the single-trial 2D MEG magnetic field vector (i.e. dipole with amplitude and direction) activity time courses on 12,773 grid points. Using a Talairaih-Daemon atlas, we excluded all cerebellar and noncortical sources and performed the statistical analyses on the remaining 5107 cortical grid points.\n\n### Linear vs. nonlinear representations\n\n#### Linear representation\n\nEvery 4ms time point between \u2013100 and 400ms poststimulus, we computed independent multivariate linear regressions to model the dynamic representation of the state of each input (i.e. 0, clear lens vs. 1, dark lens) into the 2D MEG responses of each source. We computed three linear models covering each input separately (Left, L and right, R) and additively.\n\n$$\ny=\\beta_{0}+ \\beta_{1}L\n$$\n\n\n\n$$\ny=\\beta_{0}+ \\beta_{1}R\n$$\n\n\n\n$$\ny=\\beta_{0}+ \\beta_{1}L+\\beta_{2}R\n$$\n\nWe fitted each model with ordinary least squares, resulting in beta coefficients for the intercept and slope. We quantified the fit in the 2D response space of the source with a multivariate R2 that quantifies multivariate variance as the determinant of the covariance matrix:\n\n$$\nR^{2}=1\u2212\\frac{|(y\u2212y^)^{T}\u00a0(y\u2212y^)|}{|(y\u2212y\u00af)^{T}\u00a0(y\u2212y\u00af)|}\n$$\n\nwhere $y,\u00a0y\u00af,y^$ are the 2D source data, their mean, and model predictions respectively. This linear modeling produced a time course of R2 values per source with 4ms resolution.\n\nTo control the FWER over all considered time points and sources, we computed a nonparametric statistical threshold with the method of maximum statistics (Groppe et al., 2011). Specifically, on each of 100 permutations we randomly shuffled input state (\u2018on\u2019 vs. \u2018off\u2019) across the experimental trials, repeated the linear modeling and R2 computation explained above, and extracted the maximum R2 across all sources and time points. This produced a distribution of 100 maximum R2 values, of which we used the 95th percentile as statistical threshold (FWER p<0.05).\n\n#### Nonlinear representation\n\nA fourth model considered, for each source and time point the nonlinear interaction term between the left and Right inputs.\n\n$$\ny=\\beta_{0}+ \\beta_{1}L+\\beta_{2}R\n$$\n\n\n\n$$\ny=\\beta_{0}+ \\beta_{1}L+\\beta_{2}R+\\beta_{3}L x R\n$$\n\nA log-likelihood ratio (LLR) tested whether the added interaction term significantly improved model fit (p<0.05), FDR corrected over time points and sources (Groppe et al., 2011; Benjamini and Yekutieli, 2001).\n\n### Representation patterns\n\nLinear and nonlinear representations of the two inputs into 2D source activity could form a variety of different patterns. To ensure that these patterns corresponded to expectations (e.g. of an XOR solution), we applied two further computations at each source and time point. First, we computed the pairwise Mahalanobis distances as detailed below between the color-coded 2D distributions of single trial MEG activity in response to each input class (see Figure 3). To do so, we averaged the covariance matrices of each pair of input conditions and multiplied the inverse average covariance by the difference of the condition means:\n\n$$\ndist=\\mu1- \\mu2^{T}*C^{-1}*(\\mu1- \\mu2)\n$$\n\nThen, we quantified the geometric relationships between the two-dimensional centroids of the source responses to each input class. We did so by combining the pairwise distances in the way that quantifies the expected representational pattern (see Figure 4, right):\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73651/elife-73651-fig4-v1.jpg)\n\n**Figure 4.:** Note: the face stimulus was artificially synthesized and so does not belong to any real person.\n\nWe tested the statistical significance of each pattern with permutation testing, using again the method of maximum statistics. Over 25 permutations, at each source and time point, we randomly shuffled input \u2018on\u2019 and \u2018off\u2019, repeated the above distance calculations, computed the maximum differences, and used the 95th percentiles of these maxima as thresholds (FWER p<0.05, corrected).\n\nFinally, we weighted the significant XOR, AND, and OR representation patterns (see above) with the significant R2 for linear representation patterns of the left or right input (see Methods, Linear Representation) or with the significant nonlinear LLR test statistic (see Methods, Nonlinear Representation).\n\n### Localization of representation patterns\n\nWe quantified the temporal dynamics of the four stages of information processing in individual participants as follows. For early representation of the left and right lenses, we computed representation onsets as the first significant time point of R2. For early representation of both lenses, we computed its R2 peak time. Finally, for XOR, AND, and OR nonlinear representations, we also selected the peak times of the respective representation task pattern distance measure. For each state, we then computed time stamps as median across observers and extracted the sourcewise representation averaged across participants at the corresponding time stamp. We plotted these sources back onto glass brains in Figure 1C using Nilearn (Abraham et al., 2014).\n\n### Clustering of the computation stages\n\nTo compute the number of computation stages that characterize the whole information processing, we applied a data-driven clustering analysis (k-means) on the 5107 \u00d7 102 (source \u00d7 time points) space separately in XOR, AND, and OR tasks as follows:\n\n#### Step 1\n\nFirst, we transformed each participant\u2019s MEG data into the main computation that each source performs at each time point, by assigning to each source the computation (i.e. LinLeft, LinRight, LinBoth, XOR, AND, or OR) with highest representation pattern score at this time point (relative to the participant\u2019s distribution across all sources and time points). This produced a source \u00d7 time matrix of strongest source-level computations for this participant. Examination of the data revealed strong regularities of the computations performed in different time windows (e.g. LinLeft early on), though each computation could be performed across slightly different sources of the same region across participants (e.g. right occipital cortex). Across participants, we therefore computed the modal computation at each source and time point, producing one group-level computation matrix per task that we then clustered over time, rather than over source \u00d7 time, as we next explain.\n\n#### Step 2\n\nIn the task-specific computation matrix, we summed at each time point the number of sources that performed each computation (out of six, LinLeft, LinRight, LinBoth, XOR, AND, and OR). The resulting 6 (computations) \u00d7 102 time points matrix represented the total brain volume of each computation over time in the task.\n\n#### Step 3\n\nWe k-means clustered (k = 1\u201320, repeating 1000 times) each computation matrix from step 2, using the 102 time points as samples and selected k as the elbow of the within-cluster sums of point-to-centroid distances metric\u2014i.e., as the furthest point from straight line between k = 1\u201320. In the XOR, AND, and OR tasks, different clusters therefore represent different stages of the full process over time, with different brain volumes of source-level computations (i.e. LinLeft, LinRight, LinBoth, XOR, AND and OR).\n\nFigure 1\u2014figure supplement 1A shows that the XOR, AND, and OR tasks all had k = 5 as a good solution. First, a stage 0, before any computation starts, and then four distinct timed stages with different brain volumes of LinLeft, LinRight, LinBoth, XOR, AND, and OR computations. To visualize each stage, we used the onset time of stages 0, 1, and 2 and the central time point of stages 3 and 4. In each stage, we color coded at voxel level in the small brains the most frequent computation across participants (i.e. LinLeft, LinRight, LinBoth, XOR, AND, and OR).\n\n### Similarity of computation stages across tasks and stimuli\n\nTo test whether the XOR, AND, and OR tasks share stages of computation, we computed the percentage of sources that perform the same computations across any pair of stages. This produced a 12 (3 tasks \u00d7 4 stages)-by-12 similarity matrix that compares each stage in each task with all other stages in all other tasks. Figure 1\u2014figure supplement 1B reveals that stage 1 (LinLeft and LinRight, cyan and orange) and stage 2 (LinBoth, magenta) are similar across all tasks, whereas stages 3 and 4 (i.e. NonLin, green; NonLin & RT, yellow) are specific to each task.\n\nTo test the generalization of computation stages between face and Gabor stimuli, we computed the similarity matrix between the group-level stages in XOR, AND, and OR tasks with faces and the individual participant\u2019s (N = 3) stages in XOR with Gabor stimuli (computed as explained with steps 1\u20133 above, but here within participant). Figure 1\u2014figure supplement 1B shows, for each Gabor participant, that their first two linear stages do indeed generalize to the first two linear stages of XOR, AND, and OR faces, whereas their third and fourth NonLinear stages only generalize to the third and fourth stages of XOR faces.\n\n### Information theoretic analyses\n\nWe used information theory to quantify the association between RTs and MEG activity, as MI (<RT; MEGt>), splitting RTs into four equiprobable bins and using continuous MEG (on all sources and time points). To this end, we used Gaussian-Copula mutual information Ince et al., 2017 on all sources and time points. We assessed statistical significance with a permutation test (p<0.05). Figure 3\u2014figure supplement 1 shows the source \u00d7 time point average MI and its prevalence across 10 participants in each task.\n",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "edf42a43-aaa2-42ba-97e0-f8d15780191a",
+      "submission_id": "d956a252-0ce9-4f0b-8017-31db67397c60",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Huan Luo, https://ror.org/02v51f717 Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73651.sa0](https://doi.org/10.7554/eLife.73651.sa0)\n\nHow does the brain implement basic logical computations (AND, OR, XOR) regardless of stimulus types? This is one of the most fundamental questions in cognitive neuroscience. This MEG study, by combining interesting experimental paradigms and sophisticated signal analyses, demonstrates four serial neural components in different brain regions that correspond to four system-level computations, respectively.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Huan Luo, https://ror.org/02v51f717 Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73651.sa1](https://doi.org/10.7554/eLife.73651.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Different computations over the same inputs produce selective behavior in algorithmic brain networks\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Chris Baker as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Testing the representational generalization across stimulus set. In principle, the logical computation should be independent of the stimuli and would engage similar four-step neural computation in the brain for many types of stimuli. Although the authors demonstrate similar decoding temporal course and patterns for grating and serially presented stimuli (in supplementary materials), it is important to perform a generalization analysis across different stimuli. Specifically, the classifier obtained for face stimuli in the main experiment could be used to decode computations performed over grating stimuli (data in supplementary materials), for example.\n\n2) Clarifying the temporal relationship of the four components and why their alignment over time still supports the four-step conclusion. Moreover, the 3nd component also shows early onset activation. How to reconcile the results with the 4-step computation view? Please see details in the first two comments raised by Reviewer 2.\n\n3) Adding analyses to test alternative computational steps, e.g., 3 system-level, 2 system-level for comparison, and clarifying why the proposed 4-step is the best model to characterize the whole process.\n\n4) The behavioral relevance analysis was only performed on the fourth component. What about the first three components which should in principle be related to behavioral performance as well? More generally, is there any neural signature that is related to behavior for both linear and nonlinear calculations?\n\n5) The authors should collect new data or at least address the possibility of the involvement of eye movement in the four levels of computation.\n\nReviewer #1:\n\nThis work by Jaworska et al. examined the spatiotemporal correlates of logical computations over the same stimuli in the human brain using MEG recordings. They revealed four neural components that occur in different brain regions and at varied latencies, corresponding to four system-level computations respectively.\n\nOverall, it is an important study addressing the most fundamental question in cognitive neuroscience, that is, how, where and when do the basic logic computations (AND, OR, XOR) occur in the brain? The study used advanced analysis approaches to address the thorny question and the results are impressively clean and robust and have been replicated for different stimulus sets and conditions.\n\nMy major concern is the representational generalization across different stimuli. Specifically, the logical computation (AND, OR, XOR) in principle should be independent of the employed stimuli (face, gratings, etc.) and would thus engage similar neural computation in the brain for different types of stimuli. Therefore, it is important to confirm that the observed logical computation components could be generalized across different stimulus setting (representational generalization across stimuli).\n\n1) If my understanding is correct, the logical computation (AND, OR, XOR) should be independent of the stimuli and therefore would engage similar four-step neural computation in the brain for other types of stimuli. Although the authors demonstrate similar decoding temporal course and patterns for grating and serially presented stimuli (in supplementary materials), I think it is important to perform a generalization analysis across different stimuli. Specifically, we would expect that the classifier obtained for face stimuli could be used to decode computations performed over grating stimuli, for example.\n\n2) I am curious how could the authors make sure that the logical computation (based on the binary classification on four types of stimuli) are the genuine calculation in the brain, since it is completely defined in terms of the experimenter's terminology and the subjects might use different strategy. Have the authors considered other alternative computation over the same inputs? Or put in another way, how could the current results be incorporated into or account for previous findings?\n\n3) The last component is interesting and shows behavioral correlates, which is important evidence. If my understanding is correct, that component only applies to nonlinear integration in combination with RT. What about the behaviorally related linear computation? Is there a general behaviorally related neural component that is related to both linear and nonlinear computation?\n\nReviewer #2:\n\nHow our brain dynamically represents and transforms the same visual input into integrated features to produce different behavior remains unclear. To study the dynamic algorithms from mass neural signals, the authors recorded the MEG activity of participants who resolved the classic XOR, OR, and AND behavioral tasks. Using linear and nonlinear representations, they found that source-localized MEG activity progresses through four systems-level computations identified within individual participants. The first two computations similarly represent the inputs across the three tasks; the last two differently represent the inputs in a task-dependent manner. The topic is interesting and timely. The study is elegantly designed and the data statistics are highly significant.\n\nTo study the dynamic algorithms from mass neural signals, the authors recorded the MEG activity of participants who resolved the classic XOR, OR, and AND behavioral tasks. Using linear and nonlinear representations, they found that source-localized MEG activity progresses through four systems-level computations identified within individual participants. The first two computations similarly represent the inputs across the three tasks; the last two differently represent the inputs in a task-dependent manner. The topic is interesting and timely. The study is elegantly designed and the data statistics are highly significant. I have some comments listed as below.\n\n1. For each task, the authors proposed the 4 systems-level stages of computation link stimulus to behavior (the first two stages represent and linearly discriminate the visual inputs; the third and fourth stages nonlinearly integrate them in a task-specific manner), according to the different onsets from post-stimulus (~60, 100, 260, and 400ms for each stages, respectively). However, the time window of the first stage (Lin) is the same as the second stage (LinBoth), namely, 74-117ms. This was also reflected very well in the results from Figure 1B, the \"Lin\" and \"LinBoth\" computations have almost the same onsets and peaks, particularly, the peak of the blue line (first stage, Lin) looks like much latter than the magenta line (second stage, LinBoth). I am confused that how the authors distinguished these two stages when they had the same time window and why the authors proposed they were the two different stages rather than the same stage during their computations. More generally, the authors should offer more evidence for the 4 systems-level stages of computation, for example, whether it explained their results better than the 3 systems-level stages or 2 systems-level stages of computation.\n\n2. Similar to the first point, for the results in Figure 3, there were several significant peak values in the very early time window (0-60ms) for the third stage (\"NonLin\"). However, the author only focused on the late time window (~260ms) for this stage. How to reconcile these early peaks (early effects) of the third (late) stage?\n\n3. The behavior data and decoding performance lacked in the first three systems-level computations. Functional inferences based on hypothetical computations of MEG data are not convincing.\n\n4. I would like to suggest the authors collect eye movement data to address whether eye movements are a possible confound for the difference between the four systems-level computations.\n\n5. The legend descriptions are too long and confusing, like figure 2. I would like to suggest the authors label small figures in one figure to make the legend easier to understand by readers.\n",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b96ec9ff-521d-4776-bb55-9d6ba5ab74ae",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C1",
+      "claim": "The study recorded magnetoencephalographic (MEG) activity of participants who resolved XOR, OR, and AND functions as overt behavioral tasks with N = 10 participants per task.",
+      "claim_type": "EXPLICIT",
+      "source": "we recorded the magnetoencephalographic (MEG) activity of participants who resolved the classic XOR, OR, and AND functions as overt behavioral tasks (N = 10 participants/task, N-of-1 replications)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the experimental design with specific sample sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "b51732fe-ab72-401d-92f6-74ba9505245e",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C2",
+      "claim": "Source-localized MEG activity progresses through four computational stages in each task.",
+      "claim_type": "EXPLICIT",
+      "source": "In each task, we found that source-localized MEG activity progresses through four computational stages identified within individual participants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "16f47fb6-9368-4f78-889b-ffc8d691adca",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C3",
+      "claim": "The first computational stage involves initial contralateral representation of each visual input in occipital cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) initial contralateral representation of each visual input in occipital cortex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as one of the four identified computational stages from the MEG data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "355db1fd-af04-450b-89cf-2a46c163d2cb",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C4",
+      "claim": "The second computational stage involves a joint linearly combined representation of both inputs in midline occipital cortex and right fusiform gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) a joint linearly combined representation of both inputs in midline occipital cortex and right fusiform gyrus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as the second of four computational stages identified from MEG data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "94e4f229-2dc6-493b-b39e-8217d84878fe",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C5",
+      "claim": "The third computational stage involves nonlinear task-dependent input integration in temporal-parietal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) nonlinear task-dependent input integration in temporal-parietal cortex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as the third computational stage identified from MEG data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "c2785b66-2ca9-40d5-bcd3-2655a387cecb",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C6",
+      "claim": "The fourth computational stage involves behavioral response representation in postcentral gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) behavioral response representation in postcentral gyrus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as the fourth computational stage identified from MEG data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "932ea6ac-57e4-4323-8a47-22d8e5c0fefc",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C7",
+      "claim": "The spatiotemporal patterns of the first two computations are similar across the three tasks (XOR, AND, OR).",
+      "claim_type": "EXPLICIT",
+      "source": "The spatiotemporal patterns of the first two computations are similar across the three tasks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from comparing the computational stages across tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "ba818fcd-1280-4e4c-a8f2-6d3f52a73b58",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C8",
+      "claim": "The last two computations are task specific.",
+      "claim_type": "EXPLICIT",
+      "source": "the last two computations are task specific",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding distinguishing later computational stages from earlier ones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "0970c2d4-2f73-463d-a8f6-1ae6dd79d117",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C9",
+      "claim": "The primate visual system comprises the ventral and dorsal pathways with specific anatomical and functional hierarchical organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive studies revealed that the primate visual system comprises the ventral and dorsal pathways, with specific anatomical and functional hierarchical organization (Van Essen et al., 1992; Kravitz et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "cf046648-46d4-4693-ad7c-e148ce8ee742",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C10",
+      "claim": "Visual pathways compute over high-dimensional visual input starting with contralateral detection of simple, small features with small receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways compute over the high-dimensional visual input, starting separately in each hemisphere with contralateral detection of simple, small features with small receptive fields",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established knowledge about visual processing pathways.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "273828b6-66cf-4297-8001-adc3d725db3b",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C11",
+      "claim": "Simple features are hierarchically integrated into more complex, broader receptive field features in visual pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "that are then hierarchically integrated into more complex, broader receptive field features (Bugatus et al., 2017; Hubel and Wiesel, 1962; Kay et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on visual processing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "0a207511-e212-4282-b51b-c43f319dd52f",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C12",
+      "claim": "Visual processing leads to integrated face, object, and scene features that are compared with memory to produce behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "leading to the integrated face, object, and scene features (DiCarlo and Cox, 2007; Grill-Spector and Weiner, 2014; Kriegeskorte et al., 2008; Sigala and Logothetis, 2002) that are compared with memory to produce behavior (Zhan et al., 2019b; Wyart et al., 2012; Ratcliff et al., 2009; Alamia and VanRullen, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "27b49c8f-1490-4ea8-bf2a-87b8f8bb9203",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C13",
+      "claim": "The flow of information reverses when the same pathways predict the top-down input from memory.",
+      "claim_type": "EXPLICIT",
+      "source": "This flow of information reverses when the same pathways predict the top-down input from memory (Friston, 2008; Linde-Domingo et al., 2019; Engel et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on predictive processing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "440ece93-1139-411e-a14e-4eddc629f9bf",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C14",
+      "claim": "XOR is a nonlinearly separable function.",
+      "claim_type": "EXPLICIT",
+      "source": "XOR is famously a nonlinearly separable function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established mathematical knowledge about the XOR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "d043cf50-e2be-4f84-ba04-04b8e76b1b68",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C15",
+      "claim": "AND and OR are linearly separable functions.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas AND or OR is linearly separable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established mathematical knowledge about AND and OR functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "d02a60f1-43b1-4e55-b871-374e336e0c25",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C16",
+      "claim": "XOR, AND, and OR functions imply nonlinear vs. linear transformations of the same inputs in the considered architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "implying nonlinear vs. linear transformations of the same inputs in the considered architectures (Minsky and Papert, 2017; Rumelhart et al., 1986; Gidon et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to foundational work on neural network architectures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "e5d63113-1108-49b3-b583-9cbb370f1a70",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C17",
+      "claim": "The study recruited 35 participants, all right handed, with 24 women.",
+      "claim_type": "EXPLICIT",
+      "source": "We recruited 35 participants (all right handed; 24 women)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant sample in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "b6e339e5-af2a-4ac4-98e2-abb5c3336737",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C18",
+      "claim": "All participants reported normal or corrected-to-normal vision.",
+      "claim_type": "EXPLICIT",
+      "source": "All reported normal or corrected-to-normal vision",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes participant inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "13a509a0-29d2-4922-b3fd-146e565190ad",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C19",
+      "claim": "The study was approved by the ethics committee at the College of Medical, Veterinary and Life Sciences, University of Glasgow.",
+      "claim_type": "EXPLICIT",
+      "source": "was approved by the ethics committee at the College of Medical, Veterinary and Life Sciences, University of Glasgow",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "0a36baab-ab6f-4152-9b27-c47f698b4019",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C20",
+      "claim": "An average face was synthesized using a generative photorealistic 3D face model.",
+      "claim_type": "EXPLICIT",
+      "source": "We synthesized an average face using a generative photorealistic 3D face model (Yu et al., 2012; Zhan et al., 2019a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus generation method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "b9616c1a-1110-4544-be9e-2faa44207e5d",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C21",
+      "claim": "Black and clear lenses on glasses produced four different input conditions corresponding to four classes of logical inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Black and clear lenses produced four different input conditions corresponding to four classes of logical inputs: (1) both clear, in vector notation [0,0], (2) left clear/right dark, [0,1]; (3) left dark/right clear [1,0]; and (4) both dark, [1,1]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental stimulus design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "82d552f6-30c4-48ba-94fd-46abef1520d0",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C22",
+      "claim": "The edges of the left and right lens were 0.5 deg of visual angle away from the centrally presented fixation cross.",
+      "claim_type": "EXPLICIT",
+      "source": "The edges of the left and the right lens were 0.5 deg of visual angle away from the centrally presented fixation cross",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the spatial parameters of stimulus presentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "4a48f3c9-7b7c-4120-b28d-812ab0b28bbb",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C23",
+      "claim": "Each trial began with a central fixation cross displayed for a randomly chosen duration between 500 and 1000ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Each trial began with a central fixation cross displayed for a randomly chosen duration (between 500 and 1000ms)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the trial structure in the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "c2dfcf17-03a5-4de5-a03d-934a9c3beb9d",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C24",
+      "claim": "Stimuli were displayed for 150ms.",
+      "claim_type": "EXPLICIT",
+      "source": "immediately followed by one of the four stimulus classes described above and displayed for 150ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the stimulus presentation duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "2e5707cc-1b70-4886-bb59-286aa364ec9f",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C25",
+      "claim": "Participants responded by pressing one of two keys with the index or middle fingers of their right hand.",
+      "claim_type": "EXPLICIT",
+      "source": "to respond as quickly and accurately as possible by pressing one of two keys ascribed to each response choice with the index or middle fingers of their right hand",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the response method in the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "12b1d760-0d32-4a2d-b872-c331c8cccb78",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C26",
+      "claim": "Responses were 'same' vs. 'different' in the XOR task.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses were 'same' vs. 'different' in the XOR task",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the response options for the XOR task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "c6c36b10-f972-4657-a3d5-d6813188e8b4",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C27",
+      "claim": "Responses were 'both dark' vs. 'otherwise' in the AND task.",
+      "claim_type": "EXPLICIT",
+      "source": "'both dark' vs. 'otherwise' in AND",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the response options for the AND task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "20b5afbf-676f-4d6f-9e97-3a2670cb4b07",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C28",
+      "claim": "Responses were 'at least one dark' vs. 'otherwise' in the OR task.",
+      "claim_type": "EXPLICIT",
+      "source": "or 'at least one dark' vs. 'otherwise' in OR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the response options for the OR task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "f4ab660a-2d55-4c02-bd46-c10b38cb4953",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C29",
+      "claim": "Stimuli were presented in blocks of 80 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli were presented in blocks of 80 trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental block structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "9f23b0fe-dec9-4077-be9a-c4a1d18f216c",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C30",
+      "claim": "Participants completed a total of 20\u201324 blocks split across 2\u20133 single day sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants completed a total of 20\u201324 blocks split across 2\u20133 single day sessions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the total experimental duration and structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "05419a84-8099-402a-b02e-a11c60a5d5e2",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C31",
+      "claim": "Each session lasted 2.5\u20133hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Each session lasted 2.5\u20133hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the duration of each experimental session.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "09051559-4abe-473d-bd5b-010868288224",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C32",
+      "claim": "MEG activity was recorded using a 248-magnetometer whole-head system at a 1017 Hz sampling rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the participants' MEG activity using a 248-magnetometer whole-head system (MAGNES 3600 WH, 4D Neuroimaing) at a 1017 Hz sampling rate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MEG recording equipment and parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "e6d5de31-578c-4cf2-a9a4-1d0eac538576",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C33",
+      "claim": "Participants were excluded if the number of trials remaining after preprocessing was less than 700.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were excluded if the number of trials remaining after preprocessing (eye movement artifact rejection and rejecting runs for excessive head motion) was less than 700",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "bd024a5f-4144-479a-b0a5-4a79a3d7153a",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C34",
+      "claim": "Five participants were excluded resulting in a final sample size of N = 30 (10 per task).",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded five participants resulting in a final sample sizes of N = 30 (10 per task)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the final sample size after exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "256b161a-a966-4998-b815-4eed1bb42f61",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C35",
+      "claim": "Mean head movement averaged across blocks across participants was 0.3 cm (min = 0.12, max = 0.44).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean head movement (averaged across blocks) across participants was 0.3 cm (min = 0.12, max = 0.44)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a quality control metric for the MEG recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "1aabbec1-367c-4361-b00c-8343f2a30b92",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C36",
+      "claim": "The median number of trials for subsequent analyses was 1064 (min = 701, max = 1361).",
+      "claim_type": "EXPLICIT",
+      "source": "The median number of trials for subsequent analyses was 1064 (min = 701, max = 1361)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the number of trials included in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "b7f2dc8c-4770-46ab-97a2-f506d3a70f2a",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C37",
+      "claim": "Participants were accurate in all tasks with mean accuracy of 98.5% [97, 99] for XOR, 99% [98.6, 99.5] for AND, and 99.3% [99.2, 99.5] for OR.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 shows that participants were both accurate and fast in all tasks",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 1 presents behavioral accuracy data for all three tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "41043cc1-1f65-4279-91e1-5aee6aded45f",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C38",
+      "claim": "Median reaction times were 499ms [461, 557] for XOR, 457ms [393, 505] for AND, and 490ms [439, 541] for OR.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 shows that participants were both accurate and fast in all tasks",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 1 presents reaction time data for all three tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "3f700779-8bf3-40b7-b748-cbaa0a43879a",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C39",
+      "claim": "There were no significant task differences on average accuracy and reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "with no significant task differences on average accuracy and reaction times (RT), measured with independent sample t-tests",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the result of statistical comparisons between tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "a3c2bbdf-4350-4944-bf01-4b0959fa29b0",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C40",
+      "claim": "Linear representation of each input starts in contralateral occipital cortex around 60ms poststimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The first computation linearly discriminates the 'on' vs. 'off' state of each input in contral-lateral occipital cortex ~60ms poststimulus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding about the timing and location of the first computational stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "3e61abe9-6819-4a08-8e3a-cc64fad134c7",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C41",
+      "claim": "Linear discrimination of both inputs occurs on occipital and ventral sources around 100ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is followed by the linear discrimination of both inputs on occipital and ventral sources ~100ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding about the timing and location of the second computational stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "27b4ebdf-da1e-4f7a-a299-531d8de8f959",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C42",
+      "claim": "Nonlinear integration of both inputs revealing the task solution occurs in parietal-temporal regions around 260ms.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by the nonlinear integration of both inputs, revealing the XOR, AND, or OR task solution in 2D source response space in the parietal-temporal regions ~260ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding about the timing and location of the third computational stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "1cde5d6c-dad0-4849-a0aa-5f39ef188ad6",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C43",
+      "claim": "Nonlinear integration with RT-related activity occurs in postcentral gyrus around 400ms.",
+      "claim_type": "EXPLICIT",
+      "source": "and finally the nonlinear integration with RT-related activity in postcentral gyrus ~400ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding about the timing and location of the fourth computational stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "fed2ab5f-b4cb-4968-a633-f13ed300e811",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C44",
+      "claim": "The four stages are common to XOR, AND, and OR, with the main task-related changes occurring in the latter two nonlinear stages.",
+      "claim_type": "EXPLICIT",
+      "source": "These four stages are common to XOR, AND, and OR, with the main task-related changes occurring in the latter two nonlinear stages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding about similarities and differences across tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "ad5c7586-ac5b-41af-8b74-5ea15a03b4cd",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C45",
+      "claim": "All statistical analyses were performed within each individual participant, controlling the familywise error rate over all considered sources and time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we performed all statistical analyses leading to these results within each individual participant, controlling the familywise error rate (FWER) over all considered sources and time points",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "5fe18fbf-df00-45b6-970d-ba3f186d3d29",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C46",
+      "claim": "Each participant was treated as an N-of-1 study, with 10 participants per task providing 10 independent replications of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "By treating each participant as an N-of-1 study, 10 participants per task provide 10 independent replications of the experiment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the replication approach used in the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "e7e617af-fe23-4273-88ef-3c6f5ff806ad",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C47",
+      "claim": "The four computational stages were replicated in at least 9/10 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We replicated the four computational stages in at least 9/10 participants (and in two further replication experiments with similarly high prevalence)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the replication rate across participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "9c077076-cd78-4ce4-b5aa-9c8e5f065bce",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C48",
+      "claim": "The Bayesian population prevalence of 9/10 replications is 0.89 [0.61 0.99].",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian population prevalence (Ince et al., 2021) of 9/10 = 0.89 [0.61 0.99]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 provides the Bayesian population prevalence estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "9776dd05-4626-4bf5-88d9-049ac4a0f046",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C49",
+      "claim": "The Bayesian population prevalence of 10/10 replications is 1 [0.75 1].",
+      "claim_type": "EXPLICIT",
+      "source": "10/10 = 1 [0.75 1] (MAP [95% HPDI])",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 provides the Bayesian population prevalence estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "20ff605e-beb9-4ffe-92bd-3455e743787a",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C50",
+      "claim": "Lin computation (left and right occipital sources) occurred in the time window 74\u2013117ms and replicated in 10/10 participants for all three tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Lin, left and right occipital sources [74\u2013117ms]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 shows the replication of Lin computation across participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "c020f094-b9c2-48ab-b470-bf8665c3c6db",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C51",
+      "claim": "LinBoth computation (occipital midline and right fusiform gyrus) occurred in the time window 74\u2013117ms and replicated in 10/10 participants for all three tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "LinBoth, occipital midline and right fusiform gyrus [74\u2013117ms]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 shows the replication of LinBoth computation across participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "c404e886-7e9d-468f-8c1b-44e532fc2399",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C52",
+      "claim": "NonLin computation in XOR occurred in parietal regions at 261\u2013273ms and replicated in 9/10 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "NonLin, XOR: parietal [261\u2013273ms]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 shows the replication of NonLin computation in XOR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "eab444e7-6cd0-453d-bf27-6371ecb3d6ba",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C53",
+      "claim": "NonLin computation in AND occurred in temporal-parietal regions at 246\u2013304ms and replicated in 10/10 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "AND: temporal-parietal [246\u2013304ms]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 shows the replication of NonLin computation in AND.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "b99f18fd-896b-4075-988a-da1e88e9437d",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C54",
+      "claim": "NonLin computation in OR occurred in temporal-parietal regions at 261\u2013304ms and replicated in 10/10 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "OR: temporal-parietal [261\u2013304ms]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 shows the replication of NonLin computation in OR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "40f12b70-0b7c-4d1f-a509-5d2b10d7cc95",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C55",
+      "claim": "RT-related computation in postcentral gyrus occurred at 386\u2013398ms and replicated in 9/10 participants for XOR and AND, and 10/10 for OR.",
+      "claim_type": "EXPLICIT",
+      "source": "RT, postcentral gyrus [386\u2013398ms]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 2 shows the replication of RT-related computation across tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "30dc5b28-ccc9-4de5-ae7b-f7a57c52b286",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C56",
+      "claim": "In right occipital source, the linear addition of vector responses [0,1] and [1,0] is close to the actual source response to [1,1].",
+      "claim_type": "EXPLICIT",
+      "source": "The vector diagram (lower right quadrant) confirms that the linear addition of the vector responses [0, 1] and [1, 0] (gray point, sum of blue and red vector) is close to the actual source response to [1, 1] (black point)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the linear nature of the computation in right occipital cortex based on vector analysis of MEG responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "17b22c9f-1ba8-463e-8e9b-d331975c76e6",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C57",
+      "claim": "In midline occipital LinBoth sources, all four stimuli are equally spread out in the quadrants of the source response space.",
+      "claim_type": "EXPLICIT",
+      "source": "In midline occipital sources (Figure 3A,D), all four stimuli are equally spread out in the quadrants of the source response space (i.e. all inputs are equally discriminated)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the pattern of responses in midline occipital sources as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "0ae6a56d-6d37-4ebf-bcc8-b97e9efbff16",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C58",
+      "claim": "In right fusiform gyrus LinBoth source, the [1,0] and [0,1] stimuli are discriminated with opposite activity, whereas [1,1] and [0,0] stimuli are less discriminated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the right fusiform gyrus source (Figure 3A,E) discriminates the [1,0] and [0,1] stimuli with an opposite activity, whereas the [1,1] (black dot) and [0,0] (gray dot) stimuli are less discriminated",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the pattern of responses in right fusiform gyrus as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "1be497fe-ca14-41ab-9b0a-1bdca7f205ad",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C59",
+      "claim": "The right fusiform gyrus LinBoth stage likely represents an important intermediate step toward the computation of XOR.",
+      "claim_type": "EXPLICIT",
+      "source": "So, the right fusiform gyrus LinBoth stage likely represents an important intermediate step toward the computation of XOR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observed response patterns in right fusiform gyrus.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "9d4ac629-107a-453c-8ce5-0cc823ff09c4",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C60",
+      "claim": "In parietal NonLin source for XOR, responses to [1,0] and [0,1] stimuli are magnetic fields with the same dipole orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In parietal source NonLin, responses to [1,0] and [0,1] stimuli are magnetic fields with the same dipole orientation, suggesting that the same pattern of cortical activity (i.e. the same neural population) responds to both stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MEG response pattern in parietal cortex and infers the underlying neural population activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "9ff825f1-588c-473c-8ea0-a24498e8b95c",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C61",
+      "claim": "In right fusiform gyrus LinBoth source, responses to [1,0] and [0,1] are magnetic fields with different dipole directions, suggesting different neural populations respond to each stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In right fusiform gyrus source LinBoth (Figure 3A, E), responses to [1,0] and [0,1] are magnetic fields with different dipole directions, suggesting that different neural populations within the region modeled by the source respond to each stimulus",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the MEG response pattern and infers the underlying neural population activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "66ac7f82-5782-4cc5-bb1a-52d6c298eb10",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C62",
+      "claim": "In parietal NonLin source for XOR, the representation of [1,1] is nonlinear, pointing away from the sum of the individual input responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the representation of [1,1] (black dot) is now nonlinear (green vector), pointing away from the sum of the red and blue vectors of the individual inputs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nonlinear nature of the computation based on vector analysis of MEG responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "6f86f984-a931-4d9a-a1f9-0a44092c8c74",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C63",
+      "claim": "Following nonlinear transformation in parietal cortex, the XOR outputs are linearly decodable in the 2D MEG response space.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this nonlinear transformation, the XOR outputs are now linearly decodable in the 2D MEG response space",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the consequence of the nonlinear transformation for task output representation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "736eae28-756e-465b-99ff-7fc19ecb9281",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C64",
+      "claim": "Postcentral gyrus source activity relates trial by trial to behavioral reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this source activity now relates trial by trial to behavioral RTs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between MEG activity and behavior in the fourth computational stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "7a792030-cd38-4f6a-8dbc-f80792d04a05",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C65",
+      "claim": "Stage 4 postcentral gyrus and frontal regions source activity primarily relates to behavioral reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3\u2014figure supplement 1 shows that this last postcentral gyrus fourth stage (also in frontal regions) primarily relates to behavioral RTs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3\u2014figure supplement 1 shows the relationship between source activity and RT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "aba142f3-b969-4689-a0d4-180b72bdec44",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C66",
+      "claim": "In AND task, the task output is linearly separable in the 2D MEG response space with the [1,1] response further from other stimulus classes.",
+      "claim_type": "EXPLICIT",
+      "source": "In AND, the task output is linearly separable in the 2D MEG response space: the black [1,1] response is further from the other stimulus classes than they are from each other",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pattern of responses in AND task NonLin stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "12bca471-e61f-4d45-b8a7-eb194bd67354",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C67",
+      "claim": "In OR task, the task outputs are linearly separable with the [0,0] stimulus class represented apart from the other ones.",
+      "claim_type": "EXPLICIT",
+      "source": "In OR, the task outputs are also linearly separable, with the gray [0,0] stimulus class represented apart from the other ones",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pattern of responses in OR task NonLin stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "a07c139b-bafd-4c50-9d65-87372de0f646",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C68",
+      "claim": "Later post-200ms computational stages involve nonlinear task-specific stimulus representations in ventral and parietal areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows how these later post-200ms computational stages involve nonlinear task-specific stimulus representations in ventral (NonLin) and parietal (NonLin, NonLin&RT) areas",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the findings about later computational stages across tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "be93597e-d251-443d-ba72-e18b8fc90bde",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C69",
+      "claim": "The systems-level approach aims to reverse engineer the hierarchy of brain computations that represent and transform sensory inputs to produce behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systems-level approach aims to reverse engineer, from mass brain signals, the hierarchy of brain computations that represent and transform sensory inputs to produce behavior\u2014i.e., the brain's algorithm of the behavioral task",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the conceptual framework and goal of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "1260eb08-85f8-45b5-a851-39322f116e39",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C70",
+      "claim": "The four stages of computation meet the five key properties of an algorithm: specified inputs, specified outputs, definite sequence, effectiveness in the brain, and finite processing time.",
+      "claim_type": "EXPLICIT",
+      "source": "The four stages of computation that we systematically found in each individual participant and tasks meet the five key properties of an algorithm: (1) the inputs were specified as the four possible combinations of two binary inputs; (2) the output responses were also specified as the responses of the logical functions XOR, OR, and AND; (3) the algorithms were definite in each task, with a sequence of two characterized Lin and two NonLin computations that transformed the same inputs into the task-specific outputs; the algorithms were also (4) effective in the brain, in the sense that they only relied on brain resources, and (5) finite in processing time, producing behavior with ~450\u2013500ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This argues that the identified computational stages constitute an algorithm based on formal properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "095c49ad-18c3-421d-8f5a-4290a9a51dd8",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C71",
+      "claim": "Reverse engineering a systems-level algorithm at the granularity of MEG brain measures does not preclude the existence of different compositions of algorithms at lower levels of granularity.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that reverse engineering a systems-level algorithm at the granularity of MEG brain measures does not preclude the existence of different compositions of algorithms at lower levels of granularity of individual neurons that together implement the higher-level algorithm (much like the lower granularity algorithms of machine language implement the higher-level algorithms of C++)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This discusses the relationship between different levels of algorithmic description.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "d2095fb1-9b43-46b8-a0d1-b7913d4f5dbd",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C72",
+      "claim": "Systems-level analysis provides constraints on where and when specific computations take place, enabling targeted studies across modalities and granularities of brain measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, such systems-level analysis provides constraints on where (the brain regions) and when (the specific time windows) specific computations take place, enabling targeted studies of the algorithmic 'how' across modalities and granularities of brain measures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This discusses the utility of the systems-level approach for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "dbe339df-52d7-412f-905c-a19df15ab62d",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C73",
+      "claim": "A key challenge in generalizing to naturalistic categorization tasks is that task-relevant features may be completely different for different behaviors and participants.",
+      "claim_type": "EXPLICIT",
+      "source": "A key challenge is that the task-relevant features of real-world faces, objects, and scenes, may be completely different for different behaviors and participants, effectively changing the inputs to the algorithm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This discusses challenges in extending the approach to more complex tasks.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "3120471a-803d-44de-8ff0-f658e67ac617",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C74",
+      "claim": "Task- or participant-specific features are generally not considered in studies of neural representation, processing, and categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, task- or participant-specific features are generally not considered in studies of neural representation, processing, and categorization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This critiques current approaches in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "92275b96-7fc4-49c9-a25c-47a7122dc01d",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C75",
+      "claim": "Understanding task- or participant-specific features remains a challenge for deep convolutional neural network research.",
+      "claim_type": "EXPLICIT",
+      "source": "Their understanding remains a similar challenge for deep convolutional neural network research, including instances when these are used as models of the brain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This discusses limitations of current computational models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "d2b3924a-b254-4850-8644-90d57196558a",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C76",
+      "claim": "Different modalities or granularities of brain measures will likely provide complementary understandings of computations in different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Different modalities or granularities of brain measures (e.g. M/EEG, 3/7T fMRI, NIRS vs. single electrodes (Gidon et al., 2020) and electrode arrays) will likely provide complementary understandings (e.g. timing vs. location) of the computations in different brain regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculates about future research directions using different measurement techniques.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "0e9888db-306d-41b2-9564-9ffd110121af",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C77",
+      "claim": "Data-driven clustering analysis delivered four stages of computation in the XOR, AND, and OR tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we performed a data-driven clustering analysis that delivered four stages of computation in the XOR, AND, and OR tasks (see Methods, Clustering the Stages of Computation and Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analytical approach used to identify computational stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "cbc355bd-de4a-4be1-b5bf-30a5c78fe213",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C78",
+      "claim": "K-means clustering with k = 5 was selected as a good solution for XOR, AND, and OR tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1\u2014figure supplement 1A shows that the XOR, AND, and OR tasks all had k = 5 as a good solution",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1A shows the results of k-means clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "629c9490-1d24-4104-b19f-fda6cece54c5",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C79",
+      "claim": "The five clusters include a stage 0 before any computation starts, and then four distinct timed stages with different brain volumes of computations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a stage 0, before any computation starts, and then four distinct timed stages with different brain volumes of LinLeft, LinRight, LinBoth, XOR, AND, and OR computations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the clustering results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "7f32eed0-a236-44ef-8945-7050faf80d1f",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C80",
+      "claim": "Stage 1 (LinLeft and LinRight) and stage 2 (LinBoth) are similar across all tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1\u2014figure supplement 1B reveals that stage 1 (LinLeft and LinRight, cyan and orange) and stage 2 (LinBoth, magenta) are similar across all tasks",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B shows the similarity analysis across tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "20d70287-d31a-4f2d-8665-c57bc93f42b6",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C81",
+      "claim": "Stages 3 and 4 (NonLin and NonLin & RT) are specific to each task.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas stages 3 and 4 (i.e. NonLin, green; NonLin & RT, yellow) are specific to each task",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B shows the task-specificity of later stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "cb69b3df-444c-4260-ae14-7594ca3f8ea5",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C82",
+      "claim": "The first two linear stages of XOR with Gabor stimuli generalize to the first two linear stages of XOR, AND, and OR with face stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1\u2014figure supplement 1B shows, for each Gabor participant, that their first two linear stages do indeed generalize to the first two linear stages of XOR, AND, and OR faces",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B shows the generalization analysis between stimulus types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "c3108321-89ad-4f48-be68-e6c0fd9f9da6",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C83",
+      "claim": "The third and fourth NonLinear stages of XOR with Gabor stimuli only generalize to the third and fourth stages of XOR with face stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas their third and fourth NonLinear stages only generalize to the third and fourth stages of XOR faces",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B shows the task-specific generalization of later stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "ad971f13-cc4e-4634-8246-b3856352554e",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C84",
+      "claim": "Three participants resolved XOR with Gabor stimuli showing similar stages of computation as with face stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate the generalization of the three participants (P1, P2, P3) who resolved XOR with Gabor stimuli (Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 3 shows the replication with Gabor stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "b081e7a1-28ef-4d65-b008-70b82a8dcfe8",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C85",
+      "claim": "In the sequential presentation experiment, linear representation of the first input started around 80ms poststimulus with a peak around 100ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear representation of the first input started around 80ms poststimulus (with a ~100ms peak; or around \u2013900ms with respect to second lens presentation)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 1 shows the results of the sequential presentation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "65831c0a-e557-4a26-8d15-f085655a7dae",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C86",
+      "claim": "In the sequential presentation experiment, the second input was linearly represented from around 100ms with a peak at around 120ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The second input was linearly represented from ~100ms with a peak at ~120ms (blue, orange, and magenta time courses)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 1 shows the timing of second input representation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "58140c01-52c2-412e-8c70-b67de065ed83",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C87",
+      "claim": "The sequential presentation experiment replicated the results of the simultaneous presentation experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged time courses of the Lin and NonLin computations across individual participants (see Figure 2\u2014figure supplement 2) replicated the results of Figure 1",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 2 shows the replication of computational stages with sequential presentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "bc0712a4-dab4-433d-8391-cb1ef8540f84",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C88",
+      "claim": "Multivariate R\u00b2 was used to quantify the fit of linear models in the 2D response space of each source.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the fit in the 2D response space of the source with a multivariate R2 that quantifies multivariate variance as the determinant of the covariance matrix",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical metric used to assess linear model fit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "510a4ba6-109e-4661-aa94-d7a21ae793af",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C89",
+      "claim": "A log-likelihood ratio test was used to determine whether the nonlinear interaction term significantly improved model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "A log-likelihood ratio (LLR) tested whether the added interaction term significantly improved model fit (p<0.05), FDR corrected over time points and sources (Groppe et al., 2011; Benjamini and Yekutieli, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical test used to assess nonlinear representations with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "ca01cbf8-4426-4c33-a265-f087b53a04db",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C90",
+      "claim": "Pairwise Mahalanobis distances were computed between the 2D distributions of single trial MEG activity in response to each input class.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we computed the pairwise Mahalanobis distances as detailed below between the color-coded 2D distributions of single trial MEG activity in response to each input class (see Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distance metric used to characterize representation patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "6785fa72-67a2-4449-a443-41c6bca8d179",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C91",
+      "claim": "Gaussian-Copula mutual information was used to quantify the association between reaction times and MEG activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We used information theory to quantify the association between RTs and MEG activity, as MI (<RT; MEGt>), splitting RTs into four equiprobable bins and using continuous MEG (on all sources and time points). To this end, we used Gaussian-Copula mutual information Ince et al., 2017 on all sources and time points",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the information theoretic method used to relate MEG activity to behavior with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "76a88c1f-3b5a-4d55-a366-6d5d9b1a8812",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C92",
+      "claim": "Source reconstruction was performed using a Linearly Constrained Minimum Variance beamformer with parameters 'lambda = 6%' and 'fixedori = no'.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed the Linearly Constrained Minimum Variance beamformer (Hillebrand and Barnes, 2005) solution with parameters 'lambda = 6%' and 'fixedori = no'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source reconstruction method with specific parameters and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "16859008-3923-44d8-9408-d7bed39b2a87",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C93",
+      "claim": "Statistical analyses were performed on 5107 cortical grid points after excluding cerebellar and noncortical sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Talairaih-Daemon atlas, we excluded all cerebellar and noncortical sources and performed the statistical analyses on the remaining 5107 cortical grid points",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial extent of the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "5a6ef642-20da-4ccb-81ce-d6e352e45eda",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "claim_id": "C94",
+      "claim": "Nonparametric statistical thresholds were computed using the method of maximum statistics to control familywise error rate.",
+      "claim_type": "EXPLICIT",
+      "source": "To control the FWER over all considered time points and sources, we computed a nonparametric statistical threshold with the method of maximum statistics (Groppe et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the multiple comparisons correction method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "542ed70f-952f-4b14-9967-90a06c607c39",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 35 participants and recorded MEG activity during XOR, AND, and OR tasks, with 10 participants per task after exclusions based on data quality criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C17, C32-C36 provide comprehensive methodological details including recruitment (35 participants), exclusion criteria (< 700 trials after preprocessing), final sample (N=30, 10 per task), and quality metrics (head movement, trial counts). The methods are clearly documented with appropriate quality control measures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "728a3682-e006-4c7e-a3c2-432fa461b83b",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The experimental design used face stimuli with glasses having clear or dark lenses to represent binary inputs, presented for 150ms, with participants making task-specific binary responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C31 provide detailed stimulus and task specifications including stimulus generation, presentation parameters (150ms duration, spatial positioning), response methods, and experimental structure (80 trials/block, 20-24 blocks across 2-3 sessions). The design is well-documented and appropriate for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "34f6c3c0-f354-4286-9910-2bbb4c4d9302",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Participants performed all three tasks with high accuracy (>98%) and similar reaction times (~450-500ms) across tasks, with no significant differences between tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 report behavioral performance with specific accuracy and RT values including confidence intervals. Statistical comparisons (independent sample t-tests) showed no significant differences between tasks. The high accuracy indicates participants understood and could perform all tasks effectively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "79814f5f-4313-4075-8811-e9ea75ac654f",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MEG source activity progresses through four computational stages: (1) contralateral linear representation of each input in occipital cortex (~60ms), (2) joint linear representation in midline occipital and right fusiform gyrus (~100ms), (3) nonlinear task-dependent integration in temporal-parietal cortex (~260ms), and (4) response representation in postcentral gyrus (~400ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6 and C40-C44 describe the four-stage computational architecture with specific timing and anatomical localization. These findings are supported by the analytical methods (C77-C94) and replicated across participants (C45-C55). The progression from linear to nonlinear computations is consistent with the computational requirements of the tasks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "5ed46350-e716-4d71-9e32-a4c44b036df2",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The first two computational stages (linear representations) are similar across XOR, AND, and OR tasks, while the latter two stages (nonlinear integrations) are task-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C44, C80-C81 establish the key distinction between task-general early processing and task-specific later processing. This is supported by clustering analysis (C77-C79) and similarity analysis (Figure 1\u2014figure supplement 1B). The finding is critical for understanding how the brain implements different computations over identical inputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The four computational stages replicated in at least 9/10 participants within the same brain regions and time windows, with Bayesian population prevalence estimates of 0.89-1.0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C55 document the replication approach (N-of-1 studies with FWER control) and replication rates. Table 2 shows 9-10/10 participants replicated each computation in the specified regions and time windows. The Bayesian prevalence estimates provide strong evidence for population-level effects. This rigorous replication approach is a major strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Detailed analysis of individual sources reveals the progression from linear to nonlinear representations, with right fusiform gyrus showing an intermediate representation that facilitates the nonlinear XOR computation in parietal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 provide detailed characterization of response patterns at individual sources using vector analysis. The progression from linear summation (C56) through intermediate representations (C57-C59) to nonlinear integration (C60-C63) is well-documented with specific examples. However, some interpretations about neural populations (C60-C61) are inferences from MEG dipole patterns rather than direct measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "914a05f0-de78-4306-8ecf-bd2af7ed0ff1",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The fourth computational stage in postcentral gyrus shows trial-by-trial correlation with behavioral reaction times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 report the relationship between MEG activity and RT using mutual information analysis (C91). Figure 3\u2014figure supplement 1 shows this relationship is specific to postcentral gyrus and frontal regions in the fourth stage. The analysis appropriately uses information theory to quantify the association.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "8fca9660-c9ea-48bf-95c5-665a5d19b76a",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In AND and OR tasks, the nonlinear stages produce linearly separable representations of task outputs, contrasting with XOR which requires nonlinear separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 describe how the nonlinear stages differ between tasks, with AND and OR producing linearly separable outputs while XOR requires nonlinear transformation. This is consistent with the mathematical properties of these functions (C14-C16) and supported by the representation pattern analysis (C88-C90).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "980787fa-b8f0-4cab-ba93-1fecbf9bdb9f",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Data-driven k-means clustering identified five stages (including a baseline stage 0) with k=5 selected as optimal, revealing task-general early stages and task-specific later stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 describe the clustering analysis that objectively identified the computational stages. The elbow method for selecting k=5 is appropriate, and the results are consistent across all three tasks. This data-driven approach validates the four-stage model, though the specific choice of k could be sensitive to methodological details not fully reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "5db4b7a4-f2e9-4089-b044-d1213579a6fa",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The computational stages generalize across stimulus types (faces vs. Gabors) and presentation modes (simultaneous vs. sequential), with early linear stages generalizing across tasks but later nonlinear stages remaining task-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 report two replication experiments using different stimuli (Gabor patches) and presentation modes (sequential). The generalization of early stages across tasks and stimuli, but task-specificity of later stages, strengthens the main findings. However, the Gabor replication used only 3 participants, limiting statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The analytical approach used multivariate R\u00b2 for linear models, log-likelihood ratio tests for nonlinearity, Mahalanobis distances for representation patterns, and Gaussian-Copula mutual information for RT relationships, with appropriate multiple comparisons corrections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C94 document the statistical methods including multivariate modeling, nonlinearity testing, distance metrics, and information theory. The use of maximum statistics for FWER control (C94) and FDR correction (C89) is appropriate. The methods are well-cited and suitable for the data type, though some implementation details (e.g., number of permutations varies: 100 for linear, 25 for patterns) could be better justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "be7325eb-9860-4256-9c3b-8bb18d4c0868",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The systems-level approach successfully reverse-engineered brain algorithms by identifying computational stages that meet the five key properties of an algorithm: specified inputs, specified outputs, definite sequence, effectiveness in the brain, and finite processing time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 argue that the identified stages constitute an algorithm at the systems level. The five properties (C70) are well-defined and the data support each criterion. The discussion appropriately acknowledges that this systems-level algorithm does not preclude different implementations at finer granularities (C71) and provides constraints for future studies (C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "388b3269-a41e-45c0-aeb1-9c7524cc9db9",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Generalization to naturalistic tasks faces challenges including task- and participant-specific features, which are not typically considered in current neuroscience and deep learning research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C76 discuss limitations and future directions. While the challenges identified are reasonable, these are speculative statements about generalization rather than tested results. The critique of current approaches (C74-C75) is a general knowledge claim that may oversimplify the field. The suggestion about complementary modalities (C76) is reasonable but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "1db65841-b2d8-4837-8bd9-1fd49ea1a1e3",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work established that visual pathways hierarchically process information from simple contralateral features to complex integrated representations, with bidirectional information flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 summarize established knowledge about visual processing pathways, supported by appropriate citations to foundational work. These claims provide necessary background context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    },
+    {
+      "id": "c40d94a6-a9ef-467c-a270-7a0ac2ecb9e6",
+      "content_id": "db56e94b-84c1-4942-b4aa-9ee4a9f847da",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "XOR is a nonlinearly separable function while AND and OR are linearly separable, implying different computational requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 state well-established mathematical properties of logical functions, supported by citations to foundational work (Minsky & Papert, Rumelhart et al.). This provides the theoretical motivation for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:02.095255Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b96ec9ff-521d-4776-bb55-9d6ba5ab74ae",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "e5d63113-1108-49b3-b583-9cbb370f1a70",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "b6e339e5-af2a-4ac4-98e2-abb5c3336737",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "13a509a0-29d2-4922-b3fd-146e565190ad",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "09051559-4abe-473d-bd5b-010868288224",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "e6d5de31-578c-4cf2-a9a4-1d0eac538576",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "bd024a5f-4144-479a-b0a5-4a79a3d7153a",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "256b161a-a966-4998-b815-4eed1bb42f61",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "1aabbec1-367c-4361-b00c-8343f2a30b92",
+      "result_id": "542ed70f-952f-4b14-9967-90a06c607c39"
+    },
+    {
+      "claim_id": "0a36baab-ab6f-4152-9b27-c47f698b4019",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "b9616c1a-1110-4544-be9e-2faa44207e5d",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "82d552f6-30c4-48ba-94fd-46abef1520d0",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "4a48f3c9-7b7c-4120-b28d-812ab0b28bbb",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "c2dfcf17-03a5-4de5-a03d-934a9c3beb9d",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "2e5707cc-1b70-4886-bb59-286aa364ec9f",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "12b1d760-0d32-4a2d-b872-c331c8cccb78",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "c6c36b10-f972-4657-a3d5-d6813188e8b4",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "20b5afbf-676f-4d6f-9e97-3a2670cb4b07",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "f4ab660a-2d55-4c02-bd46-c10b38cb4953",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "9f23b0fe-dec9-4077-be9a-c4a1d18f216c",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "05419a84-8099-402a-b02e-a11c60a5d5e2",
+      "result_id": "728a3682-e006-4c7e-a3c2-432fa461b83b"
+    },
+    {
+      "claim_id": "b7f2dc8c-4770-46ab-97a2-f506d3a70f2a",
+      "result_id": "34f6c3c0-f354-4286-9910-2bbb4c4d9302"
+    },
+    {
+      "claim_id": "41043cc1-1f65-4279-91e1-5aee6aded45f",
+      "result_id": "34f6c3c0-f354-4286-9910-2bbb4c4d9302"
+    },
+    {
+      "claim_id": "3f700779-8bf3-40b7-b748-cbaa0a43879a",
+      "result_id": "34f6c3c0-f354-4286-9910-2bbb4c4d9302"
+    },
+    {
+      "claim_id": "b51732fe-ab72-401d-92f6-74ba9505245e",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "16f47fb6-9368-4f78-889b-ffc8d691adca",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "355db1fd-af04-450b-89cf-2a46c163d2cb",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "94e4f229-2dc6-493b-b39e-8217d84878fe",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "c2785b66-2ca9-40d5-bcd3-2655a387cecb",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "a3c2bbdf-4350-4944-bf01-4b0959fa29b0",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "3e61abe9-6819-4a08-8e3a-cc64fad134c7",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "27b4ebdf-da1e-4f7a-a299-531d8de8f959",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "1cde5d6c-dad0-4849-a0aa-5f39ef188ad6",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "fed2ab5f-b4cb-4968-a633-f13ed300e811",
+      "result_id": "79814f5f-4313-4075-8811-e9ea75ac654f"
+    },
+    {
+      "claim_id": "932ea6ac-57e4-4323-8a47-22d8e5c0fefc",
+      "result_id": "5ed46350-e716-4d71-9e32-a4c44b036df2"
+    },
+    {
+      "claim_id": "ba818fcd-1280-4e4c-a8f2-6d3f52a73b58",
+      "result_id": "5ed46350-e716-4d71-9e32-a4c44b036df2"
+    },
+    {
+      "claim_id": "fed2ab5f-b4cb-4968-a633-f13ed300e811",
+      "result_id": "5ed46350-e716-4d71-9e32-a4c44b036df2"
+    },
+    {
+      "claim_id": "7f32eed0-a236-44ef-8945-7050faf80d1f",
+      "result_id": "5ed46350-e716-4d71-9e32-a4c44b036df2"
+    },
+    {
+      "claim_id": "20d70287-d31a-4f2d-8665-c57bc93f42b6",
+      "result_id": "5ed46350-e716-4d71-9e32-a4c44b036df2"
+    },
+    {
+      "claim_id": "ad5c7586-ac5b-41af-8b74-5ea15a03b4cd",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "5fe18fbf-df00-45b6-970d-ba3f186d3d29",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "e7e617af-fe23-4273-88ef-3c6f5ff806ad",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "9c077076-cd78-4ce4-b5aa-9c8e5f065bce",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "9776dd05-4626-4bf5-88d9-049ac4a0f046",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "20ff605e-beb9-4ffe-92bd-3455e743787a",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "c020f094-b9c2-48ab-b470-bf8665c3c6db",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "c404e886-7e9d-468f-8c1b-44e532fc2399",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "eab444e7-6cd0-453d-bf27-6371ecb3d6ba",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "b99f18fd-896b-4075-988a-da1e88e9437d",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "40f12b70-0b7c-4d1f-a509-5d2b10d7cc95",
+      "result_id": "6b962337-b1e4-4da6-a207-b2be9f2ca1fa"
+    },
+    {
+      "claim_id": "30dc5b28-ccc9-4de5-ae7b-f7a57c52b286",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "17b22c9f-1ba8-463e-8e9b-d331975c76e6",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "0ae6a56d-6d37-4ebf-bcc8-b97e9efbff16",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "1be497fe-ca14-41ab-9b0a-1bdca7f205ad",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "9d4ac629-107a-453c-8ce5-0cc823ff09c4",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "9ff825f1-588c-473c-8ea0-a24498e8b95c",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "66ac7f82-5782-4cc5-bb1a-52d6c298eb10",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "6f86f984-a931-4d9a-a1f9-0a44092c8c74",
+      "result_id": "f86b96ff-7dcd-474f-b79b-15a9e7e22fda"
+    },
+    {
+      "claim_id": "736eae28-756e-465b-99ff-7fc19ecb9281",
+      "result_id": "914a05f0-de78-4306-8ecf-bd2af7ed0ff1"
+    },
+    {
+      "claim_id": "7a792030-cd38-4f6a-8dbc-f80792d04a05",
+      "result_id": "914a05f0-de78-4306-8ecf-bd2af7ed0ff1"
+    },
+    {
+      "claim_id": "aba142f3-b969-4689-a0d4-180b72bdec44",
+      "result_id": "8fca9660-c9ea-48bf-95c5-665a5d19b76a"
+    },
+    {
+      "claim_id": "12bca471-e61f-4d45-b8a7-eb194bd67354",
+      "result_id": "8fca9660-c9ea-48bf-95c5-665a5d19b76a"
+    },
+    {
+      "claim_id": "a07c139b-bafd-4c50-9d65-87372de0f646",
+      "result_id": "8fca9660-c9ea-48bf-95c5-665a5d19b76a"
+    },
+    {
+      "claim_id": "0e9888db-306d-41b2-9564-9ffd110121af",
+      "result_id": "980787fa-b8f0-4cab-ba93-1fecbf9bdb9f"
+    },
+    {
+      "claim_id": "cbc355bd-de4a-4be1-b5bf-30a5c78fe213",
+      "result_id": "980787fa-b8f0-4cab-ba93-1fecbf9bdb9f"
+    },
+    {
+      "claim_id": "629c9490-1d24-4104-b19f-fda6cece54c5",
+      "result_id": "980787fa-b8f0-4cab-ba93-1fecbf9bdb9f"
+    },
+    {
+      "claim_id": "7f32eed0-a236-44ef-8945-7050faf80d1f",
+      "result_id": "980787fa-b8f0-4cab-ba93-1fecbf9bdb9f"
+    },
+    {
+      "claim_id": "20d70287-d31a-4f2d-8665-c57bc93f42b6",
+      "result_id": "980787fa-b8f0-4cab-ba93-1fecbf9bdb9f"
+    },
+    {
+      "claim_id": "cb69b3df-444c-4260-ae14-7594ca3f8ea5",
+      "result_id": "5db4b7a4-f2e9-4089-b044-d1213579a6fa"
+    },
+    {
+      "claim_id": "c3108321-89ad-4f48-be68-e6c0fd9f9da6",
+      "result_id": "5db4b7a4-f2e9-4089-b044-d1213579a6fa"
+    },
+    {
+      "claim_id": "ad971f13-cc4e-4634-8246-b3856352554e",
+      "result_id": "5db4b7a4-f2e9-4089-b044-d1213579a6fa"
+    },
+    {
+      "claim_id": "b081e7a1-28ef-4d65-b008-70b82a8dcfe8",
+      "result_id": "5db4b7a4-f2e9-4089-b044-d1213579a6fa"
+    },
+    {
+      "claim_id": "65831c0a-e557-4a26-8d15-f085655a7dae",
+      "result_id": "5db4b7a4-f2e9-4089-b044-d1213579a6fa"
+    },
+    {
+      "claim_id": "58140c01-52c2-412e-8c70-b67de065ed83",
+      "result_id": "5db4b7a4-f2e9-4089-b044-d1213579a6fa"
+    },
+    {
+      "claim_id": "bc0712a4-dab4-433d-8391-cb1ef8540f84",
+      "result_id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5"
+    },
+    {
+      "claim_id": "510a4ba6-109e-4661-aa94-d7a21ae793af",
+      "result_id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5"
+    },
+    {
+      "claim_id": "ca01cbf8-4426-4c33-a265-f087b53a04db",
+      "result_id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5"
+    },
+    {
+      "claim_id": "6785fa72-67a2-4449-a443-41c6bca8d179",
+      "result_id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5"
+    },
+    {
+      "claim_id": "76a88c1f-3b5a-4d55-a366-6d5d9b1a8812",
+      "result_id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5"
+    },
+    {
+      "claim_id": "16859008-3923-44d8-9408-d7bed39b2a87",
+      "result_id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5"
+    },
+    {
+      "claim_id": "5a6ef642-20da-4ccb-81ce-d6e352e45eda",
+      "result_id": "f50ffbe4-bd92-4bdc-a665-9366503aa0f5"
+    },
+    {
+      "claim_id": "be93597e-d251-443d-ba72-e18b8fc90bde",
+      "result_id": "be7325eb-9860-4256-9c3b-8bb18d4c0868"
+    },
+    {
+      "claim_id": "1260eb08-85f8-45b5-a851-39322f116e39",
+      "result_id": "be7325eb-9860-4256-9c3b-8bb18d4c0868"
+    },
+    {
+      "claim_id": "095c49ad-18c3-421d-8f5a-4290a9a51dd8",
+      "result_id": "be7325eb-9860-4256-9c3b-8bb18d4c0868"
+    },
+    {
+      "claim_id": "d2095fb1-9b43-46b8-a0d1-b7913d4f5dbd",
+      "result_id": "be7325eb-9860-4256-9c3b-8bb18d4c0868"
+    },
+    {
+      "claim_id": "dbe339df-52d7-412f-905c-a19df15ab62d",
+      "result_id": "388b3269-a41e-45c0-aeb1-9c7524cc9db9"
+    },
+    {
+      "claim_id": "3120471a-803d-44de-8ff0-f658e67ac617",
+      "result_id": "388b3269-a41e-45c0-aeb1-9c7524cc9db9"
+    },
+    {
+      "claim_id": "92275b96-7fc4-49c9-a25c-47a7122dc01d",
+      "result_id": "388b3269-a41e-45c0-aeb1-9c7524cc9db9"
+    },
+    {
+      "claim_id": "d2b3924a-b254-4850-8644-90d57196558a",
+      "result_id": "388b3269-a41e-45c0-aeb1-9c7524cc9db9"
+    },
+    {
+      "claim_id": "0970c2d4-2f73-463d-a8f6-1ae6dd79d117",
+      "result_id": "1db65841-b2d8-4837-8bd9-1fd49ea1a1e3"
+    },
+    {
+      "claim_id": "cf046648-46d4-4693-ad7c-e148ce8ee742",
+      "result_id": "1db65841-b2d8-4837-8bd9-1fd49ea1a1e3"
+    },
+    {
+      "claim_id": "273828b6-66cf-4297-8001-adc3d725db3b",
+      "result_id": "1db65841-b2d8-4837-8bd9-1fd49ea1a1e3"
+    },
+    {
+      "claim_id": "0a207511-e212-4282-b51b-c43f319dd52f",
+      "result_id": "1db65841-b2d8-4837-8bd9-1fd49ea1a1e3"
+    },
+    {
+      "claim_id": "27b49c8f-1490-4ea8-bf2a-87b8f8bb9203",
+      "result_id": "1db65841-b2d8-4837-8bd9-1fd49ea1a1e3"
+    },
+    {
+      "claim_id": "440ece93-1139-411e-a14e-4eddc629f9bf",
+      "result_id": "c40d94a6-a9ef-467c-a270-7a0ac2ecb9e6"
+    },
+    {
+      "claim_id": "d043cf50-e2be-4f84-ba04-04b8e76b1b68",
+      "result_id": "c40d94a6-a9ef-467c-a270-7a0ac2ecb9e6"
+    },
+    {
+      "claim_id": "d02a60f1-43b1-4e55-b871-374e336e0c25",
+      "result_id": "c40d94a6-a9ef-467c-a270-7a0ac2ecb9e6"
+    }
+  ],
+  "comparisons": []
+}

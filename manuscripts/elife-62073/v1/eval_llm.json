@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C42",
+      "C43",
+      "C53",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors developed a mathematical model (Model 2) that predicts cortical temperature in mice with 91% variance explained and RMS error of 0.26\u00b0C. The model incorporates three factors: sleep-wake sequence (74% variance), circadian time (9% variance), and prior wake prevalence (43% variance), with shared variance among factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C34-C35, C42-C43, C53, C61-C62 provide consistent quantitative results showing progressive model improvement from Model 0 (r=0.91, RMS=0.36\u00b0C) through Model 1 (r=0.95, RMS=0.28\u00b0C) to Model 2 (r=0.96, RMS=0.26\u00b0C). The variance decomposition is explicitly reported with appropriate statistical measures. The iterative model development with optimization is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C92"
+    ],
+    "result": "Variance decomposition analysis reveals that sleep-wake state accounts for 74% of total variance (42% unique), prior wake prevalence accounts for 43% (12% unique), and circadian factors account for 9% (2% unique), with substantial shared variance (27% between sleep-wake and prior wake prevalence).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 and C92 provide a complete and internally consistent variance decomposition that sums appropriately. The analysis properly accounts for shared variance among factors, addressing prior methodological criticisms (C101). The unique vs. shared variance distinction is clearly quantified and the percentages are mathematically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model successfully predicts brain temperature in an independent cohort of mice using median parameters from the training set, achieving correlation coefficients of 0.93-0.95 and RMS error of 0.34\u00b0C after adjustment for baseline differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C75-C80 demonstrate robust model generalization to independent data. The prediction performance (r=0.93-0.95) is comparable to the training set performance (r=0.96), and the authors appropriately address the higher initial RMS error (0.48\u00b0C) by accounting for systematic baseline differences. The comparison across Models 0, 1, and 2 shows progressive improvement in prediction accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C54",
+      "C55",
+      "C56",
+      "C65",
+      "C66",
+      "C67",
+      "C94"
+    ],
+    "result": "The model identifies 'prior wake prevalence' as a novel factor modulating brain temperature asymptotes, with optimal parameters of a 3-4 hour window, 1.4-1.5 hour lag, and scaling factor of 1.0-1.2\u00b0C, representing a fivefold larger modulation than circadian effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C54-C56, C65-C67, C94 describe a novel finding with specific optimized parameters. The prior wake prevalence factor substantially improved model fit (C53: r=0.95, RMS=0.28\u00b0C) and is quantitatively characterized. However, the physiological mechanism remains speculative (acknowledged in Discussion), and the biological interpretation of the 1.4-1.5 hour delay is uncertain. The finding is data-driven and reproducible but mechanistically unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C63",
+      "C64",
+      "C83",
+      "C84",
+      "C93",
+      "C97",
+      "C108",
+      "C109"
+    ],
+    "result": "Circadian factors contribute minimally (9% total, 2% unique) to brain temperature variance, with amplitude of 0.19\u00b0C and trough at ZT5.37. The observed circadian rhythmicity in brain temperature is primarily driven by circadian sleep-wake distribution rather than direct circadian modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C63-C64, C83-C84, C93, C97, C108-C109 consistently show small circadian contribution. The finding is supported by comparison to prior rat studies (C83) showing similar amplitudes (0.13-0.21\u00b0C) under different photoperiods. However, the interpretation that circadian rhythmicity is 'driven primarily by sleep-wake distribution' (C109) is somewhat circular since sleep-wake is itself circadianly regulated. The claim conflates direct vs. indirect circadian effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Brain temperature changes during sleep-wake transitions occur with time constants in the range of minutes, with slower increases during wakefulness (median 0.33 hr = 20 min in Model 0; 13 min in Model 2) than decreases during NREM sleep (median 0.23 hr = 14 min in Model 0; 7 min in Model 2), consistent with blood acting as a heat sink.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C87-C91 provide consistent time constant estimates across models. The asymmetry (slower heating than cooling) is observed in 9/11 mice (C44) and is mechanistically interpreted via blood perfusion acting as a heat sink (C90-C91), supported by citation to prior work. The time constants changed between Model 0 and Model 2 due to changes in asymptote ranges (C57-C60), which is appropriately explained. The physiological interpretation is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C81",
+      "C82"
+    ],
+    "result": "Brain temperature in mice exhibits a dynamic range of ~3\u00b0C across the full experiment, but at any given time fluctuates within a ~2\u00b0C homeostatically defended range (defined by model asymptotes) that varies with behavior without eliciting thermoregulatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C81-C82 describe the temperature range observations. The 3\u00b0C total range vs. 2\u00b0C instantaneous range is clearly stated and the interpretation as a 'homeostatically defended range' is supported by citations (C82: Parmeggiani et al., 1975; Satinoff, 1983). However, the claim that temperature varies 'without eliciting a thermoregulatory response' within this range is an inference from the model fit rather than direct measurement of thermoregulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Incorporating circadian modulation alone (without prior wake prevalence) improved overall fit slightly (RMS error 0.32\u00b0C) but did not eliminate periodicity in baseline residuals and resulted in poorer fit during sleep deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe an intermediate model iteration that was ultimately rejected. The quantitative results are clearly stated and supported by Figure 1-figure supplement 1 (C52). This demonstrates appropriate model development process, showing that circadian modulation alone was insufficient. The finding motivated inclusion of the prior wake prevalence factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "When prior wake prevalence was added (Model 1), all parameters from Model 0 changed significantly (p\u22640.002): the lower asymptote increased, the inter-asymptote range decreased from 3.1\u00b0C to 2.0\u00b0C, and time constants shortened substantially to 0.18 hr (wake/REM) and 0.13 hr (NREM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 report statistically significant parameter changes with appropriate statistical test (rANOVA, F(2,10)\u22659.98, p\u22640.002). The parameter interdependence is mechanistically explained: shorter time constants compensate for reduced asymptote range to maintain similar temperature change rates. The simultaneous optimization of all parameters addresses prior methodological criticisms (C101).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Wakefulness and REM sleep are associated with increases in brain temperature, while NREM sleep is associated with decreases. Wakefulness and REM sleep can be considered opposite to NREM sleep in brain temperature dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C39-C41 describe well-established relationships supported by multiple citations to prior work (Hayward and Baker, 1969; Ob\u00e1l et al., 1985; Franken et al., 1992a; Hoekstra et al., 2019). These are foundational observations that motivate the model structure. The characterization of wake/REM as 'opposite' to NREM (C39) is a simplification used in the model but is supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The current mouse model differs from the prior rat model in several ways: both asymptotes are now optimized (not taken from data), separate time constants are used for increases vs. decreases, no post-SD down-regulation is observed in mice, but circadian amplitude is similar (~0.19\u00b0C). Time constants are faster in mice than rats (0.13-0.18 hr vs. 0.47 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 provide appropriate comparison to prior work (Franken et al., 1992b). The methodological improvements are clearly stated (C95-C96) and address prior limitations. The species differences in time constants (C100) and absence of post-SD down-regulation in mice (C99) are documented. The similar circadian amplitude across species (C97) supports the circadian interpretation. The comparison is thorough and appropriately critical of prior methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The authors address prior criticism about sequential factor evaluation potentially overestimating early factors by simultaneously optimizing all parameters and assessing shared variance. Performance at 4-second resolution yielded correlations similar to hourly values, refuting criticism about temporal averaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 directly address methodological criticisms from prior work (Witting and Mirmiran, 1997; Heller et al., 2011). The simultaneous optimization approach and variance decomposition (C68-C74) properly account for shared variance. The high-resolution analysis (C102) demonstrates that the strong relationship is not an artifact of temporal averaging. These methodological improvements strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The model has limitations: parameters may need optimization for different ambient temperatures, and the current version cannot capture temperature increases from intense activity (wheel running) or activating stimuli because wakefulness is treated as uniform. The model could be expanded to accommodate these factors with additional data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 appropriately acknowledge model limitations. The ambient temperature limitation (C103-C104) is reasonable given that experiments were conducted at constant 25\u00b0C. The inability to model activity-related temperature increases (C105) is a genuine limitation supported by citations. The statement that the model 'could be easily expanded' (C106) is somewhat speculative but reasonable. These are honest limitations that do not undermine the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Body and brain temperatures change in parallel in rodents at coarse timescales, suggesting similar governing rules, but behave differently at fine timescales (e.g., body temperature does not increase during REM sleep). Under extreme conditions, brain and body temperatures can deviate considerably, suggesting different regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 are supported by appropriate citations (Blessing, 2018; Ootsuka et al., 2009; Alf\u00f6ldi et al., 1990; Obermeyer et al., 1991; Baud et al., 2013). The distinction between coarse and fine timescale behavior is important for understanding model applicability to body temperature. The inference about different regulatory mechanisms (C115) is reasonable based on the cited evidence of deviations under extreme conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C123"
+    ],
+    "result": "The model has potential applications: isolating direct drug effects on brain temperature from sleep-wake effects, and examining associations between brain temperature dynamics and cognitive performance. Brain temperature in humans might be driven by sleep-wake distribution, similar to mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C119 describe reasonable applications supported by citations, but these are prospective rather than demonstrated. Claim C123 (brain temperature in humans driven by sleep-wake distribution) is speculative, based on extrapolation from rodent studies (C121-C122) and limited human data (C120). The speculation is reasonable but requires empirical validation. These represent potential future applications rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Brain temperature has neurobiological and clinical importance. Physiological temperature fluctuations (33-37\u00b0C in rodents) affect channel kinetics, neurotransmitter reuptake, synaptic currents, neuronal firing rates, and synchronization. Neuronal activity is a main determinant of brain temperature, creating bidirectional effects. Clinically, brain temperature increases in stroke/head injury and is therapeutically lowered to protect against hypoxic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C18 provide background context supported by appropriate citations to established literature. These are well-accepted facts that motivate the study but are not novel findings. The bidirectional relationship (C15) is a reasonable inference from the cited evidence. This background appropriately establishes the importance of understanding brain temperature dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Brain temperature results from the balance of heat production (determined by metabolism) and heat dissipation (determined by blood flow and brain-to-blood temperature gradient). During NREM sleep, blood flow increases relative to oxygen consumption, and body temperature is actively down-regulated through peripheral vasodilation, increasing the brain-to-blood temperature gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C24-C27 describe established physiological principles supported by appropriate citations (Hayward and Baker, 1969; McAvoy et al., 2019; Szymusiak, 2018). These provide the mechanistic framework for understanding the model. The explanation of increased heat dissipation during NREM sleep (C24-C27) is well-supported and explains the observed temperature decreases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior work showed sleep-wake distribution explains 84% of brain temperature variance in rats and mice. However, this analysis was criticized for using hourly intervals, ignoring locomotion, and sequential factor assessment. Recent studies found locomotor activity and circadian factors contribute negligibly to brain temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C2, C30-C33 accurately summarize prior work and criticisms, supported by appropriate citations (Franken et al., 1992b; Hoekstra et al., 2019; Heller et al., 2011; Witting and Mirmiran, 1997; Shirey et al., 2015; Baker et al., 2005). This provides context for the current study's methodological improvements. The authors appropriately acknowledge criticisms and address them in the current work (C101-C102).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Up-regulation of brain temperature during sustained wakefulness was previously reported under conditions of sleep deprivation spanning several weeks. NREM sleep onset is associated with active down-regulation of brain temperature involving peripheral vasodilation and decreased neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by appropriate citations (Obermeyer et al., 1991; Glotzbach and Heller, 1976). These provide context for the prior wake prevalence finding (C36) and the physiological mechanisms underlying temperature changes. The distinction between long-term SD effects (C85) and the transient effects observed here is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study used 11 male C57BL6/J mice (7 WT, 4 Cirbp KO) aged 10-15 weeks, housed individually under 12:12 hr light-dark cycle at 25\u00b0C. Brain temperature was measured by thermistor on visual cortex at 4-second resolution. The 96-hour protocol included 2 baseline days, 6-hour sleep deprivation, and 2 recovery periods. Experiments were ethically approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 describe the experimental methods. The sample size (n=11) is modest but adequate for the modeling approach. The inclusion of KO mice is appropriate since they showed no differences (C125). The experimental design with baseline, SD, and recovery periods is well-suited for model development and testing. Methods are clearly described with appropriate citations (C128, C130) and ethical approval (C131).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "The model confirms the profound influence of sleep-wake state on brain temperature and can differentiate between thermoregulatory and sleep-wake-driven effects in experiments affecting both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is a high-level conclusion supported by the model's high accuracy (91% variance explained, C3) and the large contribution of sleep-wake state (74%, C4). The ability to 'differentiate' effects is supported by the variance decomposition approach and successful prediction in independent data (C7). However, this application has not been empirically demonstrated in the manuscript, only proposed as a potential use.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Temperature rhythms are generally considered direct circadian outputs. One human study reported similar temperature dynamics to mice. In rodents, locomotor activity and NREM sleep depth have minimal association with brain temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107, C120-C122 provide context from prior literature, supported by appropriate citations (Refinetti and Menaker, 1992; Landolt et al., 1995; Shirey et al., 2015; Hoekstra et al., 2019; Franken et al., 1991; Tobler et al., 1994). These support the model's assumptions and potential applicability to humans, though the human data are limited (C120). The minimal contribution of locomotor activity and sleep depth justifies their exclusion from the model.",
+    "result_type": "MINOR"
+  }
+]

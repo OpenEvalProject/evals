@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C41",
+      "C47",
+      "C49",
+      "C50",
+      "C60",
+      "C87"
+    ],
+    "result": "Many double-opponent (DO) cells integrate chromatic signals across their receptive fields linearly, similar to how simple cells integrate luminance signals. White noise NLIs and isoresponse NLIs for DO and simple cells were statistically indistinguishable (p=0.99 and p=0.14, respectively), and both cell types were more linear than other spatially opponent (OSO) neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39, C41, C47, C49, C50, C60, and C87 collectively demonstrate that DO cells and simple cells exhibit similar degrees of linearity in spatial integration. The statistical analyses (white noise NLI comparison p=0.99, isoresponse NLI comparison p=0.14) provide strong quantitative support. Multiple independent methods (white noise analysis, isoresponse measurements) converge on the same conclusion, strengthening the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C48",
+      "C83"
+    ],
+    "result": "Some V1 neurons, particularly OSO cells, integrate chromatic signals nonlinearly. OSO cells had significantly higher NLIs than DO and simple cells (median isoresponse NLI=0.2822, p=0.02), demonstrating that linear integration is not universal in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C46, C48, and C83 establish that nonlinear integration exists in V1, particularly in OSO cells. The statistical evidence (p=0.02) and visual data (curved isoresponse contours in Figure 3C) support this conclusion. This result complements the main finding about linear DO cells by demonstrating heterogeneity in V1 spatial integration mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C53",
+      "C54",
+      "C61"
+    ],
+    "result": "DO cells and simple cells combine signals linearly within individual RF subfields, while OSO cells show nonlinear within-subfield integration. The nonlinearity of OSO cells cannot be explained by a model of linear subfields combined nonlinearly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, C53, C54, and C61 demonstrate that the linearity of DO and simple cells extends to individual subfields (median within-subfield NLI for DO=-0.0003, simple=-0.0016, OSO=0.0047, p<0.0001). This rules out a specific alternative model and provides mechanistic insight into where nonlinearities arise in OSO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C57"
+    ],
+    "result": "S-cone weight correlates with isoresponse NLI (r=0.23, p=0.02) but not with white noise NLI or within-subfield NLI, suggesting S-cone inputs contribute to nonlinearity in spatial integration across the full display gamut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, and C57 establish a specific relationship between S-cone input and nonlinearity. The correlation is statistically significant (p=0.02) and selective (not present for other NLI measures), consistent with prior work (C57). However, the correlation is modest (r=0.23), indicating S-cone input is only one factor contributing to nonlinearity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C35",
+      "C75",
+      "C76"
+    ],
+    "result": "The study analyzed 98 V1 neurons from two macaque monkeys using a three-phase experimental protocol involving pixel white noise, customized hyperpixel white noise, and closed-loop isoresponse measurements with full-color stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C31, C35, C75, and C76 describe the experimental approach. The methods are clearly documented and appropriate for the research question. The use of full-color stimuli modulating all three cone types (C75) and customized stimuli based on individual neuron RFs (C76) represents a methodological advance over prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The two subfields of DO and simple cells showed complementary spectral sensitivities, with Pearson correlations of r=-0.94\u00b10.11 for simple cells and r=-0.76\u00b10.23 for DO cells between background-subtracted RGB intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 establish the spatial opponency of the studied neurons. The high negative correlations provide quantitative validation of the cell classification approach. This is a quality control result confirming that the neurons studied have the expected properties of spatially opponent cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C40"
+    ],
+    "result": "White noise NLIs differed significantly across cell types (p=0.02, Kruskal-Wallis test), with DO and simple cells having lower NLIs than OSO cells (p<0.05, Mann-Whitney U-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C40 provide statistical evidence for differences in linearity across cell types using the white noise method. The statistical tests are appropriate and the results are clear. This complements the isoresponse measurements and provides converging evidence from an independent method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Isoresponse NLIs and white noise NLIs were positively correlated (r=0.30, p=0.001), with the correlation driven primarily by OSO cells (r=0.41, p=0.004) rather than DO or simple cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 establish a relationship between two measures of nonlinearity. The correlation is statistically significant but modest, and the cell-type-specific analysis reveals that the two methods capture overlapping but distinct aspects of nonlinearity. The authors appropriately note potential confounds (nonstationarity, procedural differences).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Eye movements during fixation were small (average SD=0.13\u00b0, max=0.18\u00b0) and did not vary significantly across cell types or correlate with isoresponse NLI, indicating they did not substantively affect the main conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 address a potential confound. The quantitative analysis of eye movements and their lack of correlation with the main results (C91, C92) provides reassurance that the findings are not artifacts of eye movements. The authors appropriately acknowledge modest effects while concluding they don't affect main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C73"
+    ],
+    "result": "The functional similarity between DO cells and simple cells suggests they may share common underlying circuitry and extends prior findings by demonstrating linearity through simultaneous stimulation of distinct RF subfields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5 and C73 make interpretive statements about circuitry and relationship to prior work. While the functional similarity is well-established by the data, the inference about shared circuitry (C5) is speculative. The claim about extending prior work (C73) is reasonable but the novelty depends on interpretation of what constitutes 'direct demonstration' of linearity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Cell classification criteria based on PC1 and cone weights separated neurons into DO, simple, and OSO categories, though these may represent a continuum rather than discrete types, and some classification ambiguity exists across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C86 describe the cell classification approach and acknowledge its limitations. The authors appropriately recognize that DO and OSO cells may lie on a continuum (C80, C81) and that classification criteria differ across studies (C85). However, the extent to which classification ambiguity affects the main conclusions is unclear, though supplementary analyses (Figure 3\u2014figure supplement 5) suggest robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors speculate that some complex cells receive input from both simple and DO cells, which would make them sensitive to both color and luminance, consistent with prior observations about color-sensitive complex cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 and C111-C116 present speculative models about complex cell inputs. While these speculations are consistent with some prior observations (C106, C107), they are not directly tested in this study. The authors appropriately present these as speculations and discuss alternative possibilities (C111, C113), but no new data directly support these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123",
+      "C125",
+      "C129"
+    ],
+    "result": "The authors speculate that color and stereopsis processing in V1 have unappreciated parallels, with DO and simple cells serving as analogous building blocks to binocular simple cells, potentially implementing a color energy calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120, C121, C123, C125, and C129 present speculative analogies between color and stereopsis processing. While the analogy is intellectually interesting and the linear integration of DO cells provides a foundation for such models, these claims are entirely speculative and not tested in the current study. The speculation is clearly labeled as such by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors speculate that linear spatial integration in simple and DO cells could be implemented via spectrally matched push-pull inhibition, though S-cone signals complicate this explanation due to asymmetries in S-cone ON and OFF pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C100 present speculative circuit models. While the speculation is informed by prior work on push-pull inhibition and S-cone pathway asymmetries (C99), the proposed mechanisms are not directly tested. The authors appropriately acknowledge that S-cone signals 'defy this simple explanation' (C98), indicating awareness of the model's limitations.",
+    "result_type": "MINOR"
+  }
+]

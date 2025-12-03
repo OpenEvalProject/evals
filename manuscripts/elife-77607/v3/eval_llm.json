@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C30",
+      "C32",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C58",
+      "C64",
+      "C65"
+    ],
+    "result": "The mimivirus genome is packaged within a ~30-nm diameter helical protein shell composed of two GMC-type oxidoreductases (qu_946 and qu_143), arranged in 5- or 6-start left-handed helices with DNA strands lining the interior. Cryo-EM analysis achieved 3.3-3.7 \u00c5 resolution structures showing the protein shell and DNA organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C30, C32, C43-C45, C48-C51, C58, C64-C65 provide converging evidence from cryo-EM (3.3-3.7 \u00c5 resolution), cryo-ET, and proteomics (three biological replicates) demonstrating the helical protein shell structure, its GMC oxidoreductase composition, and the 5- or 6-start helical DNA arrangement. The structural data is internally consistent and well-documented with appropriate resolution metrics and validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DNA presence in the genomic fiber was confirmed by agarose gel electrophoresis and cryo-EM bubblegram analysis, with the fiber showing unusual radiation resistance (600-900 e\u207b/\u00c5\u00b2) compared to naked DNA in bacteriophages (~30-40 e\u207b/\u00c5\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 provide complementary biochemical (gel electrophoresis) and biophysical (bubblegram) evidence for DNA presence. The radiation resistance data (C39-C41) is quantitative and compared to appropriate controls from cited literature, supporting the nucleoprotein nature of the structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The GMC oxidoreductases that compose the genomic fiber also form the capsid fibrils, representing a dual function for the same proteins. Proteomic analysis revealed N-terminal truncation in the genomic fiber form, suggesting proteolytic maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54-C57 are supported by comparative proteomics showing differential sequence coverage between virions and genomic fiber (C54), with substantial N-terminal under-representation in the fiber. The dual function is unexpected but well-documented through citations (C52) and proteomic data. The inference about proteolytic maturation (C55) is reasonable given the observed truncation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C46",
+      "C47",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Three distinct conformational states of the genomic fiber were identified: compact (Cl1), intermediate (Cl2), and relaxed (Cl3), with DNA becoming detached in relaxed states and large electron-dense structures visible in the lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C46-C47, C66-C68 describe conformational heterogeneity observed through 2D classification and cryo-ET. The computational clustering (C42) and tomographic observations (C66-C68) provide consistent evidence for multiple states. The speculation about extraction artifacts (C47) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The protein-DNA interactions involve specific charged and polar residues (D82, E321, K344, K685, R324, H343 in qu_946; N80, K319, K342, R322, Y687 in qu_143), with DNA strands interspersed between dimers from different helical strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe protein-DNA contacts based on structural analysis at 3.3-3.7 \u00c5 resolution. The identification of specific interacting residues is appropriate for this resolution, though the use of \"might involve\" (C71-C72) appropriately acknowledges uncertainty in precise contact assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Volume calculations indicate the 1.2 Mb genome (extending ~400 \u03bcm in B-form) must be folded at least five times to fit within the ~40-\u03bcm-long genomic fiber that can be accommodated in the ~340-nm diameter nucleoid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 present geometric calculations based on known DNA parameters and measured dimensions. The calculations are straightforward and internally consistent, leading to the logical conclusion that the genome must be folded multiple times (C77). The math appears sound for the stated assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Proteomic analysis identified RNA polymerase subunits (Rpb1, Rpb2, Rpb3/11, Rpb5, RpbN, Rpb9), oxidative stress proteins, and other genome-associated proteins in the genomic fiber, with significant enrichment (8-fold for qu_245, >500-fold for qu_946) compared to intact virions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C84-C87 are based on quantitative MS proteomics from three biological replicates. The enrichment calculations (C86-C87) and depletion of capsid proteins (C84-C85) provide internal validation. The identification of RNA polymerase subunits is particularly significant for the functional model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Macromolecules resembling poxvirus RNA polymerase were observed by negative staining EM near unwinding fibers and on DNA strands, suggesting RNA polymerase may occupy the fiber lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 are based on morphological similarity in negative staining EM, which has limited resolution and can introduce artifacts. While the observation is intriguing and consistent with the proteomic data, the identification is speculative (\"resembling,\" \"might correspond\") and would require higher-resolution confirmation or additional validation methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The N-terminal region of qu_946 contains cysteines (C51) positioned to form disulfide bridges between monomers, and FAD cofactor density is visible in the 3.3-\u00c5 map, suggesting the oxidoreductase may be enzymatically active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe structural features observed in high-resolution (3.3 \u00c5) cryo-EM maps. The cysteine positioning (C60) and FAD density (C62-C63) are appropriate observations for this resolution. However, the inference about enzyme activity (C62) is speculative and would require biochemical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The ~9-nm-wide central channel can accommodate RNA polymerase, which may be positioned on early gene promoters and sterically locked in the compact form, becoming active upon helix relaxation to initiate transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C99-C103 present a mechanistic model for genome packaging and transcription initiation. While the channel dimensions (C8, C99) are measured, the proposed mechanism (C100-C103) is highly speculative without direct experimental evidence. The model is plausible and consistent with the data, but requires functional validation through additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C97",
+      "C98",
+      "C107",
+      "C110"
+    ],
+    "result": "The genomic fiber organization represents an evolutionary strategy for packaging and protecting the genome in a transcription-ready state, with GMC oxidoreductases potentially providing oxidative stress protection during phagocytosis, and requiring active, energy-dependent assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C97-C98, C107, C110 present evolutionary and functional interpretations that are speculative. While the structural findings are solid, the proposed functions (oxidative stress protection, transcription-ready state, energy-dependent assembly) lack direct experimental support and represent hypotheses requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C95",
+      "C96",
+      "C104"
+    ],
+    "result": "The mimivirus genomic fiber structure resembles the APBV1 archaeal virus nucleocapsid and is conceptually similar to dsRNA viruses that package genomes with replication machinery, representing a nucleocapsid bundled within the nucleoid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C95-C96, C104 make comparative structural observations that are appropriate given the cited similarities. The comparison to APBV1 (C78, C95) is based on structural resemblance, while the conceptual comparison to dsRNA viruses (C104) highlights functional parallels. These are reasonable interpretations of the structural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "This represents the first description of genome organization in a giant virus and may be shared by other Mimiviridae members and potentially other cytoplasmic dsDNA viruses like poxviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 asserts novelty based on knowledge of the field, which appears reasonable. However, claims C111-C112 are speculative extrapolations without direct evidence from other viruses. The M4 strain observation (C56-C57) suggests variability even within mimivirus, questioning the generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C113"
+    ],
+    "result": "The parsimonious use of GMC oxidoreductases in two functionally unrelated structures (capsid fibrils and genomic fiber) is unexpected for a giant virus encoding ~1000 proteins and raises questions about evolutionary pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C113 make interpretive statements about the unexpected nature of protein multifunctionality in a large-genome virus. This is a valid observation based on the dual-function finding (C5, C52) and knowledge of giant virus genomic capacity. The evolutionary question is appropriate given the unusual finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background information on mimivirus and giant viruses, including their discovery, diversity, unique features, virion structure, infection mechanism, and the prior state of knowledge about genome packaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C29 provide background context supported by appropriate citations to established literature. These claims accurately represent prior knowledge and set the stage for the current work. The citations appear appropriate and the statements are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A protocol was developed for in vitro capsid opening that releases genomic fibers while avoiding harsh conditions that denature the structure (heat, acidic treatment), with all opened capsids releasing fibers showing various conformational states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe methodological development supported by experimental observations. The protocol optimization (C34) and universal fiber release (C36) are important controls. The observation of conformational heterogeneity (C35) is consistent with the later structural analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C105",
+      "C106"
+    ],
+    "result": "Comparison of DNA packaging strategies across different virus types and cellular organisms, including archaeal filamentous viruses, eukaryotic chromatin, Marseilleviridae nucleosomes, and dsRNA viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94, C105-C106 provide comparative context supported by appropriate citations. These comparisons help position the mimivirus findings within the broader landscape of genome packaging strategies. The citations appear appropriate and the comparisons are reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C53"
+    ],
+    "result": "Gene expression timing during mimivirus infection, with RNA polymerase subunits expressed from 1 hr post-infection and GMC oxidoreductases, kinesin, and chromosome condensation regulators expressed after 5 hr until cycle end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C53 describe temporal gene expression patterns based on knowledge of mimivirus infection. While not directly demonstrated in this study, these are established facts from prior work that provide context for the proteomic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The mimivirus virion has a 'Russian doll' architecture with icosahedral capsids covered by glycosylated fibrils, two internal membranes, and the genomic fiber folded in the nucleoid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 provides a summary description of the overall virion architecture integrating the current findings with prior knowledge. This is an appropriate synthesis of the structural hierarchy revealed by this and previous studies.",
+    "result_type": "MINOR"
+  }
+]

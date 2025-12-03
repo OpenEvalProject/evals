@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C100"
+    ],
+    "result": "ER stress in the soma, rather than only in the germline, drives the induction of aberrant cells within the gonad. This is demonstrated by the observation that tfg-1 RNAi treatment resulted in increased levels of aberrant somatic-like cells in the gonads of wild-type animals but not in rrf-1 mutants, which have compromised somatic RNAi but intact germline RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C100 are well-supported by experimental data showing that rrf-1 mutants (with compromised somatic RNAi) do not show increased GED upon tfg-1 RNAi treatment, while wild-type animals do. This provides strong evidence that ER stress in somatic tissues, not just the germline, is required for GED induction. The experimental design appropriately uses the rrf-1 mutant as a tool to distinguish somatic from germline effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C101"
+    ],
+    "result": "Neuronal IRE-1 is sufficient to induce GED. Rescue of ire-1 expression in the soma and neurons, but not in muscles or intestine, increased levels of aberrant somatic-like cells in the gonads upon ER stress. Furthermore, overexpression of ire-1 in neurons induced high GED levels even in the absence of ER stress, suggesting that active IRE-1 signaling in neurons, rather than neuronal ER stress per se, promotes GED formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 and C101 are supported by tissue-specific rescue experiments showing that neuronal ire-1 expression is sufficient for GED induction, while muscle and intestinal expression are not. The overexpression experiments (C40-C42) provide additional evidence that neuronal IRE-1 activation, independent of ER stress, can induce GED. The experimental design with multiple tissue-specific promoters and appropriate controls strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C102"
+    ],
+    "result": "ER stress-induced GED is dictated by specific sensory and glutamatergic neurons. Rescue of ire-1 expression in sensory neurons (Pche-12::ire-1) or glutamatergic neurons (Peat-4::ire-1) resulted in high levels of ectopic somatic cells upon ER stress, whereas expression in dopaminergic, GABAergic, or ASI/ASJ neurons did not. The relevant neurons are likely the overlapping subset of sensory and glutamatergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C102 are supported by systematic tissue-specific rescue experiments with multiple neuronal promoters. The observation that both che-12 and eat-4 promoter-driven expression can restore GED, while other neuronal subtypes cannot, provides strong evidence for the specificity of the neuronal circuit. The inference about the overlapping subset (C102) is reasonable given the promoter expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The neuropeptide FLP-6 produced by the ASE sensory neuron is a negative regulator of GED. flp-6 mutants and flp-6 RNAi-treated animals displayed high levels of ectopic somatic cells in the gonads in the absence of ER stress. ASE-deficient che-1 mutants, but not ASG-deficient lin-11 mutants, showed high GED levels. Rescue of flp-6 expression specifically in ASE, but not in ADF, suppressed GED in flp-6(-) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 and C105-C109 are well-supported by multiple lines of evidence: genetic loss-of-function (flp-6 mutants), RNAi knockdown, cell-specific rescue experiments, and reporter expression. The specificity of ASE-produced FLP-6 is demonstrated by the differential effects of ASE vs. ADF expression. The conclusion that FLP-6 is a negative regulator of GED is strongly supported by the observation that its loss induces GED even without ER stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C111",
+      "C112"
+    ],
+    "result": "flp-6 acts in parallel or downstream to ire-1 to regulate GED. flp-6 deficiency induced GED independently of ire-1, as flp-6(-); ire-1(-) double mutants exhibited high levels of abnormal nuclei similar to flp-6(-) single mutants. Additionally, IRE-1 is not hyperactivated in flp-6-deficient animals, as the ER stress reporter Phsp-4::gfp was not increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C111, and C112 are supported by genetic epistasis analysis showing that flp-6 deficiency induces GED even in ire-1 mutants, and by reporter assays showing no increase in ER stress in flp-6-deficient animals. This provides strong evidence that flp-6 acts independently of or downstream from ire-1, rather than upstream. The experimental design appropriately uses both genetic and molecular approaches to establish the pathway relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C113"
+    ],
+    "result": "ire-1 decreases FLP-6 levels post-transcriptionally. flp-6 transcript levels were significantly reduced in xbp-1 mutants and in animals overexpressing ire-1 in ASE neurons. ER stress (TM treatment) significantly reduced the fluorescence levels of the flp-6 translational reporter in an ire-1-dependent manner, while transcriptional reporters were not affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C113 are supported by multiple complementary approaches: qRT-PCR showing reduced transcript levels, translational reporter assays showing ire-1-dependent reduction, and transcriptional reporter assays showing no change. The combination of these approaches provides strong evidence for post-transcriptional regulation. However, the reduction in transcript levels (C54-C55) appears to contradict the claim of purely post-transcriptional regulation, suggesting some transcriptional component may also be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C114",
+      "C115"
+    ],
+    "result": "flp-6 is a direct RIDD substrate. Purified recombinant human IRE-1\u03b1 cleaves in vitro-transcribed flp-6 RNA in a manner blocked by the IRE-1 ribonuclease inhibitor 4\u03bc8C. In flp-6(biu100) mutants with a disrupted stem-loop structure, flp-6 transcript levels were not reduced by ER stress, and ER stress did not induce GED. This indicates that the stem-loop motif in the flp-6 transcript is critical for ER stress-induced GED induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C114-C115 are strongly supported by in vitro cleavage assays, CRISPR-generated stem-loop mutants, and functional assays showing loss of ER stress-induced GED in stem-loop mutants. The use of purified recombinant IRE-1 and the specific inhibitor 4\u03bc8C provides strong evidence for direct cleavage. The stem-loop mutant experiments elegantly demonstrate the functional importance of this structure in vivo. This represents the first demonstration of a RIDD substrate in C. elegans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Both the kinase and ribonuclease activities of IRE-1 are required for ER stress-induced GED, and IRE-1 expression specifically in the ASE neuron is sufficient. Treatment with ER stress failed to increase GED in kinase-dead (wy782) and ribonuclease-dead (wy762) ire-1 mutants. Rescue of ire-1 expression in ASE (Pche-1::ire-1), but not in ASG (Pops-1::ire-1), restored ER stress-induced GED.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by experiments with catalytically inactive ire-1 mutants and cell-specific rescue experiments. The requirement for both kinase and ribonuclease activities is consistent with the RIDD mechanism, where kinase activity is required for ribonuclease activation. The ASE-specific rescue provides strong evidence that this is the critical site of IRE-1 action, consistent with ASE being the source of FLP-6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C116"
+    ],
+    "result": "The AIY interneuron acts in a common pathway with flp-6 to control GED. Histamine-induced inactivation of AIY resulted in high levels of abnormal nuclei in the gonads, while inactivation of AIA, AIB, and RIA did not. flp-6 RNAi did not additively increase GED levels in AIY-inactivated animals, suggesting they act in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C116 are supported by optogenetic inactivation experiments and epistasis analysis. The specificity of the AIY effect among multiple interneurons tested provides strong evidence for its role. The lack of additive effects between flp-6 and AIY deficiency supports the conclusion that they act in a common pathway. The experimental design appropriately uses histamine-gated chloride channels for inducible neuronal silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C117"
+    ],
+    "result": "mex-3 deficiency promotes GED via an independent pathway from the AIY-flp-6 pathway. Animals deficient in both flp-6 and mex-3 showed additive increases in GED, suggesting that mex-3 acts through a separate mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C117 are supported by epistasis analysis showing additive effects between flp-6 and mex-3 deficiency. This contrasts with the non-additive effects between flp-6 and AIY deficiency, providing evidence for distinct pathways. The experimental design appropriately uses genetic interactions to dissect pathway relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "AIY communicates via acetylcholine to regulate GED. cha-1 and unc-17 mutants, which are defective in acetylcholine synthesis and transport respectively, had high levels of ectopic somatic cells upon gld-1 and ced-3 RNAi treatment. Expression of cha-1 or unc-17 under the AIY-specific Pttx-3 promoter suppressed these high GED levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by genetic loss-of-function experiments and cell-specific rescue. The use of two independent mutants affecting different steps in acetylcholine signaling (synthesis and transport) strengthens the conclusion. The AIY-specific rescue provides strong evidence that acetylcholine signaling from AIY is critical for GED regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C118"
+    ],
+    "result": "HSN acts in a common pathway with flp-6 to regulate GED. All HSN deficiency and migration mutants had high levels of ectopic somatic cells in their gonads. flp-6 deletion did not further increase GED levels in HSN-defective animals, suggesting they act in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C118 are supported by analysis of multiple HSN-defective mutants and epistasis analysis. The consistency across multiple independent HSN mutants (deficiency and migration defects) strengthens the conclusion. The lack of additive effects between flp-6 and HSN deficiency supports the conclusion that they act in a common pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "HSN produces serotonin to prevent GED, and serotonin acts specifically in the context of the ASE-AIY-HSN-germline circuit. Serotonin synthesis mutants (tph-1 and bas-1) had high GED levels, while HSN-related neuropeptide mutants did not. Exogenous serotonin supplementation suppressed GED in tfg-1- or flp-6-deficient animals but not in mex-3-deficient animals. Individual serotonin receptor mutants did not show high GED, suggesting redundancy or involvement of other receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C119-C122 are supported by genetic analysis of serotonin synthesis mutants, pharmacological rescue with exogenous serotonin, and analysis of receptor mutants. The specificity of serotonin's effect (suppressing GED in flp-6/tfg-1 but not mex-3 backgrounds) provides strong evidence for its role in the specific circuit. The lack of phenotype in individual receptor mutants suggests redundancy, which is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "tph-1 deficiency specifically in HSN, but not in other serotonin-producing neurons, results in high levels of ectopic somatic-like cells in the gonads. This was demonstrated using Cre-Lox-specific knockout of tph-1 in different serotonin-producing neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by cell-specific knockout experiments showing that only HSN-specific loss of tph-1 induces GED, while loss in ADF or ASG does not. This provides strong evidence for the spatial specificity of serotonin signaling in this circuit and demonstrates that the site of serotonin production is critical for its function in GED regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C123",
+      "C124"
+    ],
+    "result": "The ASE-AIY-HSN neurons establish a neuronal circuit whose integrity prevents ectopic differentiation of the germline into somatic cells. Abnormal expression of the neuronal reporter Punc-119::gfp was observed within the tumorous gonads of gld-1 RNAi-treated animals with a perturbed ASE-AIY-HSN-germline circuit, confirming that the abnormal nuclei are indeed differentiated somatic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C123, and C124 are supported by reporter expression experiments showing that cells with abnormal nuclei in animals with perturbed circuits express somatic markers. This provides direct evidence that the abnormal nuclei represent ectopically differentiated somatic cells, not just abnormal germ cells. The consistency of this observation across multiple circuit perturbations (ASE, AIY, HSN, flp-6, cha-1, tph-1 defects) strongly supports the conclusion that these neurons form a functional circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "flp-6 deficiency suppresses the germline tumor in gld-1-deficient animals. Lifespan shortening was significantly suppressed in flp-6 mutants treated with gld-1 RNAi, and flp-6 deficiency resulted in a significant decrease in paralysis of tumorous animals compared to wild-type animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by lifespan analysis and paralysis assays showing that flp-6 deficiency improves both lifespan and healthspan in animals with germline tumors. The statistical analysis (Log rank test for lifespan, Cochran-Mantel-Haenszel test for paralysis) is appropriate. These results demonstrate the functional significance of GED induction in tumor suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "This work represents the first demonstration of a RIDD substrate in C. elegans and the first evidence that neuronal circuits can be disrupted by RIDD to affect tumor progression by regulating cross-tissue communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by the comprehensive demonstration that flp-6 is a RIDD substrate (in vitro cleavage, stem-loop dependence, ire-1-dependent degradation) and that this RIDD-mediated regulation disrupts a neuronal circuit controlling germline differentiation. While these are claims about novelty rather than experimental findings, they are well-supported by the data presented and represent significant conceptual advances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "IRE-1 signaling in ASI is not sufficient for ER stress-induced GED, suggesting that the signaling pathways regulating ER stress-induced GED and apoptosis are distinct. This is based on the observation that ire-1 expression under ASI-specific promoters (Pdaf-28 or Pdaf-7) did not restore ER stress-induced GED.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by negative results from ASI-specific rescue experiments. While negative results require careful interpretation, the contrast with positive results from ASE-specific rescue and the consistency with previous findings about ASI's role in apoptosis (not GED) support these conclusions. The inference about distinct pathways is reasonable given the differential tissue requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "FLP-6 may act locally through synaptic transmission rather than distally as a hormone. This is inferred from the observation that FLP-6 production by different sensory neurons (ASE vs. ADF) leads to distinct phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is an inference based on the differential effects of FLP-6 expression in different neurons. While this is a reasonable hypothesis, the evidence is indirect and alternative explanations (such as differential expression levels or post-translational processing) have not been ruled out. Direct evidence for local vs. systemic action (such as measuring FLP-6 levels in different compartments or testing the effects of FLP-6 overexpression in non-producing cells) would be needed to definitively support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Under physiological conditions, the identified circuit may prevent precocious differentiation of germline cells prior to fertilization, and targeting neuronal circuits or the RNase activity of IRE1 may be useful as therapeutic interventions for tumor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126 are speculative statements about potential physiological roles and therapeutic applications. While these are reasonable hypotheses based on the findings, they are not directly tested in this study. The speculation about physiological function (C125) is plausible but would require testing in non-tumorous backgrounds. The therapeutic speculation (C126) is even more distant from the current data, as it would require validation in mammalian systems and human tumors.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C90"
+    ],
+    "result": "The Vaccine Impact Modelling Consortium (VIMC) was established in 2016 and consists of 21 independent research groups providing estimates across 112 LMICs for 10 pathogens using 21 mathematical models. This represents the largest assessment of vaccine impact before COVID-19-related disruptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C58-C61, and C90 provide consistent descriptive information about the VIMC structure, scope, and significance. The claims are explicitly stated with appropriate citations and represent the foundational context of the study. The 112 countries represent 99% of measles mortality in under-5s and 96% of total deaths for multiple pathogens, supporting the claim of largest assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C112",
+      "C113"
+    ],
+    "result": "Vaccination activities over 2000-2030 are estimated to avert 97 million deaths (95%CrI[80, 120]) and 5100 million DALYs (95%CrI[4100, 6300]), with 50 million deaths and 2700 million DALYs averted during 2000-2019, and 47 million deaths and 2300 million DALYs averted during 2020-2030.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C17-C18, C112-C113 present the primary quantitative findings with credible intervals from the modeling analysis. The estimates are internally consistent (50M + 47M \u2248 97M deaths) and are supported by the 21-model ensemble approach described in C58. The results are presented with appropriate uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Measles vaccination has the largest impact (47M deaths, 3100M DALYs averted 2000-2030), followed by HepB (29M deaths, 1000M DALYs), HPV (6.6M deaths, 140M DALYs), YF (5.6M deaths, 210M DALYs), Hib (4.1M deaths, 280M DALYs), PCV (2.8M deaths, 190M DALYs), rubella (1.2M deaths, 86M DALYs), rotavirus (0.84M deaths, 46M DALYs), MenA (0.62M deaths, 36M DALYs), and JE (0.23M deaths, 24M DALYs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C41 provide pathogen-specific impact estimates with credible intervals, referenced to Figure 2 and Table 3. The estimates sum appropriately to the total impact (C14, C17) and are supported by the multi-model ensemble approach. The wide credible intervals for some pathogens (e.g., YF, Hib) appropriately reflect modeling uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Per 1000 fully vaccinated persons (FVPs), HPV has the highest impact on deaths averted (12 deaths), followed by HepB (7.7 deaths) and measles (6.5 deaths). Measles has the highest impact on DALYs averted per 1000 FVPs (420 DALYs). Overall, 4.2 deaths and 220 DALYs are averted per 1000 FVPs for 2000-2030.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C114-C119 present normalized impact metrics that allow comparison across pathogens with different coverage levels. The per-FVP metrics are mathematically consistent with the absolute numbers in C22-C41 and provide important context for vaccine efficiency. The explanation that measles affects children under-5 (C86) supports the high DALY impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "For children under-5 born 2000-2030, 52 million deaths (95%CrI[41, 69]) and 3400 million DALYs (95%CrI[2700, 4600]) are estimated to be averted, with 33 million deaths and 2100 million DALYs averted for 2000-2019 cohorts. Per 1000 FVPs, 2.8 deaths and 190 DALYs are averted in under-5s for 2000-2030 cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C120-C127 present birth cohort analysis for under-5 children with appropriate uncertainty quantification. The methodology accounts for double counting (C50-C51, C89) with minimal impact (1.07% for under-5s). The focus on under-5s is justified given that Hib, measles, Rota, rubella, and PCV mortality is concentrated in this age group (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C88",
+      "C89"
+    ],
+    "result": "Double counting adjustment has a proportional impact of 2.36% (95% CI[2.00%, 2.83%]) for all cohorts and 1.07% (95% CI[0.90%, 1.32%]) for children under-5. Double counting is not adjusted when attributing impact by year of vaccination but is accounted for in calendar year and birth cohort analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C88-C89 describe the double counting methodology with appropriate confidence intervals. The small magnitude of adjustment (1-2%) supports the authors' decision not to adjust for year-of-vaccination analyses. The methodological transparency is appropriate, though the conceptual justification for when to adjust could be clearer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The Global Vaccine Action Plan (GVAP) target for 2011-2020 was to avert 24-26 million deaths. The study estimates 23 million deaths (95%CrI[19, 27]) averted over 2011-2019, increasing to 26 million (95%CrI[21, 31]) over 2011-2020 without COVID-19 disruptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 compare study estimates to GVAP targets with appropriate citations (WHO 2013). The estimates suggest the target would be met if 2020 proceeded without COVID-19 disruption. The comparison is valid though limited to 94 countries in GVAP vs 112 in this study, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Improvements in vaccination coverage led to declining deaths across 112 countries, with burden disproportionately in the WHO African region. Mortality patterns vary by pathogen: Hib, measles, Rota, rubella, and PCV affect primarily children under-5; HepB and HPV affect those over 40; YF, MenA, and JE affect those under 30 due to age-acquired immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe epidemiological patterns supported by Figure 1 and Appendix figures. The age-specific mortality patterns are consistent with known disease natural history and are important for interpreting the DALY calculations. The explanation for YF, MenA, and JE (natural immunity with age) is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study used standardized data sources: WUENIC for historical RI coverage (1980-2018), Gavi repository for campaign coverage (2000-2018), Gavi forecasts for future coverage (2019-2030), and UNWPP 2019 for demographics (2000-2100). Future RI assumes 1% annual increase to 90% (95% for MCV1); no campaigns assumed post-2030. Each model provided 200 parameter samples with matched sampling across scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C79-C81 describe data sources and methodological assumptions with appropriate citations. The standardization across models strengthens the analysis. The assumption of no campaigns post-2030 is conservative and clearly stated. The matched parameter sampling (C81) is critical for valid comparison between scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "DALYs are calculated as the sum of years of life lost (YLLs) and years lived with disability (YLDs), with no discounting or weighting applied. For rubella, only congenital rubella syndrome (CRS) burden was included, with models differing on stillbirth inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe DALY calculation methodology. The decision not to discount or weight is clearly stated and represents a methodological choice (alternative to WHO's previous 3% discounting). The limitation to CRS for rubella is appropriate given the focus on severe outcomes, though the inconsistency in stillbirth inclusion across models introduces uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Most measles mortality reduction is attributable to routine MCV1 (not directly Gavi-funded). Measles vaccination averts large numbers of DALYs because mortality is focused in children under-5. HepB has fewer YLLs (deaths in those over 40) but higher YLDs due to morbidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide important contextual interpretations of the results. C85 is an inference from the data about attribution to MCV1 vs MCV2/campaigns. C86-C87 correctly explain why measles has high DALYs per death (young age) while HepB has lower DALYs per death (older age, more morbidity). These interpretations are consistent with the DALY calculation methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "There is substantial variation in modeling approaches due to pathogen dynamics and inherent uncertainties. Models vary from static cohort to transmission-dynamic types, in complexity (e.g., age effects), and in calibration/validation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 acknowledge important methodological heterogeneity across the 21 models. This variation is both a strength (captures structural uncertainty) and limitation (makes interpretation complex). The use of multiple models per pathogen (C58) helps address this, though the method for combining models could be more explicitly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Previous VIMC work (Li et al., 2019) estimated 69 million deaths averted over 2000-2030 across 98 LMICs, with 120 million deaths averted over lifetimes of 2000-2030 birth cohorts. WHO estimates immunization prevents 2-3 million deaths annually; Ehreth 2003 estimated 3 million deaths averted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 provide context from prior work with appropriate citations. The current study's estimate of 97M deaths (C14) is higher than the previous 69M, which the authors attribute to expanded country coverage (112 vs 98), updated models, and coverage changes. The comparison to WHO and Ehreth estimates provides external validation of magnitude.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "WHO launched the Expanded Programme on Immunisation (EPI) in 1974 for universal vaccine access. Gavi was created in 2000 and by 2019 had helped immunize 822 million children through routine programs and provided 1.1 billion campaign vaccinations. Despite progress, 15.2 million children in Gavi-supported countries remain under-immunized with DTP3, including 10.6 million zero-dose children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 provide historical and current context with appropriate citations. The statistics on under-immunization (C56-C57) highlight the gap between current coverage and universal access goals, motivating the study's focus on vaccine impact. These are descriptive claims supported by cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "COVID-19, first reported December 2019, has affected vaccination and healthcare worldwide. NPIs may reduce transmission of some pathogens (e.g., bacterial meningitis) but risk building up susceptible populations for outbreak-prone diseases like measles, though catch-up activities may prevent this. Gavi estimated 13.5 million missed vaccinations by April 2020; studies suggest benefits of continuing vaccination outweigh risks and that disease-specific factors affect disruption impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 and C73-C78 discuss COVID-19 context with appropriate citations. The authors appropriately acknowledge that their pre-COVID projections (2020-2030) may not reflect actual outcomes. The cited studies (Abbas et al., Gaythorpe et al., Chandir et al.) provide evidence for the complex effects of pandemic disruption. This contextualizes the study's limitations without undermining its value as a pre-pandemic baseline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Table 1 details pathogen-specific vaccination schedules, introduction periods, and endemic countries. Schedules vary from single infant doses (JE, MenA, YF) to multi-dose regimens (HepB: birth + 3 infant doses; Hib, PCV: 3 infant doses; measles, rubella: 2 doses). Some vaccines were introduced later: HPV (2014-2030), JE (2005-2030), MenA (2010-2030), PCV (2009-2030), Rota (2006-2030). JE, MenA, and YF are endemic in 17, 26, and 36 countries respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C111 describe vaccination program details from Table 1. These are factual descriptions of the input data used in the models. The variation in schedules, timing, and geographic scope is important context for interpreting the pathogen-specific results. The data sources are cited (WUENIC, Gavi) in C62-C64.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "VIMC is jointly funded by Gavi, the Vaccine Alliance, and the Bill and Melinda Gates Foundation (grant OPP1157270/INV-009125).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 states funding sources with grant numbers. This is a factual statement from the funding section. The potential conflict of interest (Gavi both funds and is subject of the research) is partially addressed by noting two Gavi coauthors but stating funders had no role in study design or analysis.",
+    "result_type": "MINOR"
+  }
+]

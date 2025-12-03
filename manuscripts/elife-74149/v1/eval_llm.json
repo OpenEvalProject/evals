@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C88",
+      "C89"
+    ],
+    "result": "Computational modeling revealed that untreated participants learned more from received pain than avoided pain. Model 2 with separate learning rates for pain and no-pain outcomes outperformed Model 1 with a single learning rate across all treatment groups, with the placebo group showing higher learning rates for pain (\u03b1_pain median=0.72) than no-pain (\u03b1_no-pain median=0.32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C57-C60 provide converging evidence from model comparison (WAIC differences >150) and parameter estimates showing asymmetric learning rates in the placebo group. This finding was replicated in an independent dataset (C89), strengthening the conclusion. The hierarchical Bayesian modeling approach with proper convergence diagnostics (C179) supports the reliability of these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C64",
+      "C95",
+      "C9",
+      "C10"
+    ],
+    "result": "Both levodopa (100 mg) and naltrexone (50 mg) selectively increased learning rates for avoided pain, negating the learning asymmetry observed in the placebo group. In both drug groups, learning rates for pain and no-pain outcomes became similar (levodopa: both ~0.66; naltrexone: 0.72 vs 0.76), while learning rates for received pain remained unchanged compared to placebo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C64 are supported by Bayesian posterior distributions showing 99.7% (levodopa) and 99.9% (naltrexone) of difference distributions above zero for \u03b1_no-pain, while only 34% and 49% for \u03b1_pain. The parameter-recovery analysis (C73-C75) ruled out artifactual explanations. However, the mechanism remains unclear given null fMRI findings (C7, C87), and the counterintuitive naltrexone effect (C103) contradicts animal literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C109",
+      "C110"
+    ],
+    "result": "fMRI analyses revealed spatially distinct neural encoding of pain-specific and no-pain-specific prediction errors. Pain-specific prediction errors were encoded in subcortical and limbic regions (brainstem, insula, amygdala, rostral ACC), while no-pain-specific prediction errors were encoded in frontoparietal cortical regions (supplementary motor cortex, parietal cortex, somatosensory cortex, dlPFC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C78-C86 provide consistent evidence from multiple fMRI contrasts (FDR q<0.05 corrected) and conjunction analyses that controlled for general sensitivity to expected pain probability. The functional interpretation (C109-C110) is supported by citations linking these regions to emotional/affective vs. cognitive processing. However, signal dropout in ventral prefrontal cortex (C130-C131) and lack of physiological noise correction (C132-C133) are acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C116",
+      "C117",
+      "C118",
+      "C124",
+      "C126",
+      "C127"
+    ],
+    "result": "No effects of levodopa or naltrexone on neural encoding of prediction errors were detected in whole-brain FDR-corrected fMRI analyses, despite the drugs' effects on behavioral learning rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 and C87 report null findings that are inconsistent with the behavioral drug effects (C3-C4). The authors acknowledge multiple possible explanations (C116-C118, C124): insufficient statistical power (24-26 per group, between-subjects design), individual differences in drug response, or genuine dissociation between BOLD signal and neuromodulator activity. Without a manipulation check (C126), it's impossible to determine whether null findings reflect true absence of effects, insufficient power, or methodological limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C43",
+      "C44",
+      "C71",
+      "C104",
+      "C105",
+      "C75"
+    ],
+    "result": "Pharmacological manipulations did not affect model-independent performance measures (number of pain outcomes, switching frequencies) or subjective state, but both drugs increased choice stochasticity (lower \u03b2 parameter). Data simulation showed these computational effects canceled each other out at the behavioral level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C43-C44 report null effects on basic performance measures with appropriate statistics (F-tests, p>0.05). The increased stochasticity (C71, C104) is supported by posterior distributions (98.8% and 98.1% of difference distributions below zero). Critically, parameter-recovery (C105) and simulation analyses (C75) demonstrated these are genuine computational effects rather than artifacts, explaining why behavioral measures showed no drug effects despite changes in learning parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "No-pain prediction errors were not represented in ventral striatum (unlike reward prediction errors), but instead showed frontoparietal activation possibly reflecting increased attention rather than reward-like processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 reports absence of striatal activation for no-pain outcomes with appropriate citations to reward literature. The alternative interpretation (C112) is speculative but reasonable. However, C114 acknowledges a critical confound: pain outcomes involved sensory change while no-pain outcomes did not, which could explain the differential neural responses independent of learning system differences. This task design limitation undermines strong conclusions about the nature of safety learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C55"
+    ],
+    "result": "Participants showed expected behavioral patterns: switching more after pain (46.6%) than no-pain (5.4%) outcomes, with effects decaying exponentially over trials, and faster reaction times for no-pain/stay choices (729 ms) compared to pain-related choices (778-795 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C55 report basic behavioral findings with strong statistical support (t(82)=18.6, p<0.001, Cohen's d=2.0 for switching; p<0.001, d>2.2 for 1-trial-back effects). These serve as manipulation checks confirming participants engaged appropriately with the task. The RT findings (C55) provide additional evidence for differential processing of pain vs. no-pain outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C45",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The study included 83 participants (26-29 per treatment group) for behavioral analyses and 74 participants (24-26 per group) for fMRI analyses after exclusions, using a double-blind, randomized, between-subject design with a pain-avoidance learning task involving 144 trials with probabilistically varying pain outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C46-C47, C147-C152 describe the study design and sample with appropriate detail. Sample size was justified based on previous pharmacological fMRI studies. Exclusion criteria were pre-specified and reasonable (thermode failure, poor performance, excessive motion). The between-subjects design is acknowledged as a limitation for statistical power but was justified to avoid carryover effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C170",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Hierarchical Bayesian modeling with MCMC sampling (4 chains, 5000 samples each, 1000 burn-in, thinning by 5) achieved convergence (Rhat<1.1) and models were compared using WAIC, with lower values indicating better out-of-sample predictive accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C182 describe appropriate computational methods with sufficient detail for reproducibility. The hierarchical Bayesian approach is well-suited for this design, allowing individual differences while estimating group-level effects. Convergence diagnostics (C179) and model comparison metrics (C180-C182) follow best practices. The use of hBayesDM package (C173) with citations provides transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "fMRI analyses used trial-specific expected pain probabilities from the winning model as parametric modulators in GLMs, modeling only the first second of outcome periods when prediction errors are triggered, with robust regression at the second level and FDR q<0.05 correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C184 and C189-C193 describe standard fMRI analysis procedures. Using mean learning-rate parameters across participants (C184) is justified by citations to previous studies and ensures consistent regressors. Modeling only the first second of outcomes (C190) is theoretically motivated. The statistical thresholding (C193) is appropriately conservative for whole-brain analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Parameter-recovery analysis confirmed the modeling procedure could correctly recover simulated parameters, and simulated datasets reproduced similar model-independent performance measures in drug vs. placebo groups despite different underlying parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe critical validation analyses that rule out the possibility that observed drug effects on parameters are artifacts of the optimization procedure. This addresses a key concern about the tradeoff between learning rates and choice stochasticity. The simulation results explain why behavioral measures showed no drug effects despite computational differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C103"
+    ],
+    "result": "Naltrexone likely did not affect pain sensitivity during the learning task, as there were no effects on pain ratings immediately prior to the task and previous studies suggest opioid antagonists rarely affect experimental pain perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 provides indirect evidence (no effect on pre-task pain ratings, C44) and cites previous literature (C129) showing opioid antagonists rarely affect experimental pain. However, pain ratings were not collected during the actual learning task, which is acknowledged as a limitation. The counterintuitive naltrexone effect (C103) remains unexplained and contradicts animal fear-extinction literature, suggesting the mechanism is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "fMRI data suffered from signal dropout in ventral prefrontal cortex and lacked physiological noise correction, though these limitations are unlikely to have produced false positives due to jittered timing and orthogonalized regressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 transparently acknowledge methodological limitations with appropriate citations. The reasoning about why these limitations are unlikely to cause false positives (C134-C135) is sound: physiological noise frequencies differ from task timing, jittered ISIs prevent synchronization, and parametric modulators were orthogonalized. However, these limitations may have reduced sensitivity, particularly in brainstem regions (C133).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C144"
+    ],
+    "result": "The combined results suggest human pain-avoidance learning is supported by separate threat- and safety-learning systems, with dopamine and endogenous opioids specifically regulating learning from successfully avoided pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C144 represent the main conclusions integrating behavioral modeling (asymmetric learning rates, separate systems), pharmacology (selective drug effects on avoided pain), and neuroimaging (distinct brain regions). The evidence for separate systems is strong from modeling and fMRI. However, the mechanistic claims about dopamine and opioids are weakened by null fMRI drug effects and the unexplained naltrexone findings, making the neuromodulatory conclusions more tentative than stated.",
+    "result_type": "MAJOR"
+  }
+]

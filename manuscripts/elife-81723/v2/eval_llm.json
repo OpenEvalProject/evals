@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A systematic RNAi screen of 18 nuclear hormone receptors (NHRs) in adult Drosophila identified EcR and E75 as the most significant regulators of sleep, with knockdown reducing sleep more dramatically in glia than in neurons, and ecdysone-responsive NHRs showing greater sleep effects than non-responsive ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16-C21, C23-C25 collectively demonstrate a well-designed genetic screen with appropriate controls (GS and UAS controls), multiple RNAi lines, and quantitative sleep measurements. The data show consistent effects across replicates with statistical significance, and the finding that glial knockdown produces stronger phenotypes than neuronal knockdown is robustly supported by the quantitative data (C19: ~460 min vs ~707 min sleep).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Adult-specific knockdown of EcR or E75 in neurons or glia reduces sleep by fragmenting it (shorter bout lengths, more bouts), with effects confirmed using multiple temporal control systems (GeneSwitch, TARGET) and multiple independent RNAi lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 provide strong evidence through sleep architecture analysis and multiple genetic control systems. The use of both GeneSwitch (RU486-inducible) and TARGET (temperature-sensitive Gal80) systems to restrict knockdown to adults addresses developmental confounds. Multiple independent RNAi lines (C31) and the ecdysone importer EcI (C32) showing similar phenotypes strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C96"
+    ],
+    "result": "Glial EcR is required for circadian locomotor rhythms, with 90% of glial EcR knockdown flies becoming arrhythmic in constant darkness compared to 50% of neuronal knockdown flies, representing a more severe phenotype than previously reported for neuronal EcR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, and C96 demonstrate a clear circadian phenotype with quantitative assessment of rhythmicity. The comparison between neuronal and glial knockdown is direct and shows a substantial difference (50% vs 90% arrhythmic). The citation to Kumar et al., 2014 provides appropriate context, though the claim of novelty should be tempered by the acknowledgment that previous work hinted at glial involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Overexpression of EcR in neurons or glia does not increase total sleep but causes a phase shift at dusk in glial overexpression, suggesting that EcR effects on sleep are primarily through glia and may be ligand-limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 show appropriate negative controls and suggest mechanistic insights. The lack of sleep increase with overexpression (C35) contrasts with the knockdown phenotype and is interpreted reasonably as potential ligand limitation. The phase shift in glial overexpression (C36) provides additional evidence for glial-specific effects. However, the interpretation of ligand limitation is speculative and would benefit from direct ecdysone measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Exogenous ecdysone (20E) promotes sleep and rescues starvation-induced sleep loss without affecting ecdysone-responsive gene expression in the brain. Glial, but not neuronal, EcR is required for the sleep-promoting effects of exogenous ecdysone, and starvation and glial ecdysone signaling independently regulate sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C46 present complex interactions between ecdysone, starvation, and sleep. While C39-C40 are well-supported by data and prior work (Ishimoto and Kitamoto, 2010), the interpretation of independent regulation (C46) is based on additive effects that could have alternative explanations. The claim that neuronal ecdysone signaling is dispensable (C44) is weakened by the authors' own acknowledgment that Repo-GS controls also don't respond to 20E, preventing definitive conclusions about glial necessity. The rebound sleep observation (C42) is interesting but complicates the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Heat shock-induced sleep is not affected by EcR knockdown in neurons or glia, suggesting specificity of ecdysone signaling to certain stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 provides an important negative control showing that EcR is not required for all stress-induced sleep changes. This specificity strengthens the overall conclusions about ecdysone's role in sleep regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C4",
+      "C83"
+    ],
+    "result": "Ecdysone synthesis genes have minimal expression in the fly brain, and peripheral ecdysone levels are higher at ZT14 than ZT2. E75 expression peaks at ZT12 in the head but not periphery, and the brain shows greater E75 response to injected 20E at night (ZT18) than day (ZT6), suggesting ecdysone enters the brain more at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C48-C52, C4, and C83 attempt to establish circadian regulation and peripheral origin of ecdysone. While the single-cell sequencing data (C3, C83) supports minimal brain synthesis, the ELISA data (C48) shows no significant cycling in the brain despite peripheral cycling. The differential E75 response to injection (C51-C52) is interesting but the normalization approach (brain change/body change) may not adequately control for injection variability or differential metabolism. The conclusion that ecdysone \"enters the brain more at night\" (C4, C52) is an inference that could have alternative explanations such as differential receptor sensitivity or E75 transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "EcR is broadly expressed in the adult fly brain but predominantly localizes to cortex glia, as demonstrated by antibody staining that is greatly diminished with glial but not neuronal EcR knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53-C56 provide clear immunohistochemical evidence for EcR localization. The use of knockdown to validate antibody specificity (C54-C55) is appropriate, and co-staining with cortex glia markers (C53) strengthens the localization claim. The mention of BBB expression without shown data (C56) is a minor weakness but doesn't undermine the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "EcR functions specifically in adult cortex glia to affect sleep, as demonstrated by subglial driver experiments showing sleep reduction only with cortex glia-specific knockdown (GMR77A03, NP2222) and not with BBB, ensheathing, or astrocyte glia drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C62 systematically map EcR function to cortex glia using multiple drivers. The developmental lethality with most drivers (C57) is noted appropriately. The use of TARGET system (C60) to restrict knockdown to adults strengthens the conclusion. The negative results with other glial subtypes (C61-C62) provide important specificity controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Overexpression of EcR in surface glia (9-137 Gal4) increases sleep and resistance to sleep deprivation, but this effect is developmental rather than adult-specific as shown by lack of phenotype when overexpression is restricted to adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 show an interesting developmental effect of EcR in surface glia. The use of TubGal80 to restrict expression to adults (C65) appropriately distinguishes developmental from adult effects. However, the authors correctly note this may be non-physiological due to the strong driver, limiting the biological interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Ecdysone treatment mobilizes lipid droplets (LDs) in cortex and ensheathing glia, reducing LD size without affecting count, while glial EcR knockdown increases LD count, demonstrating bidirectional regulation of glial lipid metabolism by ecdysone signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C66-C70 provide clear evidence for ecdysone's effects on lipid metabolism using BODIPY staining. The bidirectional effects (ecdysone feeding reduces LD size, EcR knockdown increases LD count) strengthen the causal relationship. The appropriate controls (UAS flies with RU treatment showing no effect, C70) support specificity. The quantification methods are described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C71",
+      "C72",
+      "C73",
+      "C11",
+      "C107"
+    ],
+    "result": "The sleep-promoting effects of exogenous ecdysone are abolished in lsd-2 mutant flies (which are deficient in lipid accumulation), while these flies remain responsive to the sleep-promoting drug gaboxadol, indicating that ecdysone modulates sleep through lipid metabolism in cortex glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C71-C73, C11, and C107 provide strong genetic evidence linking ecdysone's sleep effects to lipid metabolism. The lsd-2 mutant experiment is well-controlled with the gaboxadol positive control (C72) demonstrating that the lack of ecdysone response is not due to general inability to sleep. This, combined with the bidirectional LD effects, strongly supports the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C22",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background claims establishing that steroid hormones are lipophilic and can enter the brain, that ecdysone is the major steroid hormone in Drosophila with roles in development and adult functions, and that nearly half of NHRs are expressed in adult fly brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C15, C22, C75-C82 provide appropriate background context supported by citations to established literature. These are primarily knowledge claims that frame the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Neuronal but not glial knockdown of Hr51 (unfulfilled) causes arrhythmicity without affecting sleep amount, validating the screen's ability to detect known circadian regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides important validation of the screening approach by recapitulating a known result (Beuchle et al., 2012) and showing appropriate cell-type specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims about Drosophila glial cell types, their functions in sleep and metabolism, and their roles in circadian rhythms, providing context for why cortex glia are relevant for ecdysone's effects on sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C95, C97-C98 provide comprehensive background on glial biology supported by appropriate citations. These contextualize the findings within the broader literature on glia and sleep.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Discussion claims placing the findings in broader context: glia as targets of steroid hormone signaling for sleep regulation, bidirectional relationships between sleep and lipids across species, and potential conservation of mechanisms in mammals through Reverb (E75 ortholog).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C99-C106 appropriately discuss the implications and context of the findings with relevant citations. These are interpretive claims that connect the specific findings to broader biological principles.",
+    "result_type": "MINOR"
+  }
+]

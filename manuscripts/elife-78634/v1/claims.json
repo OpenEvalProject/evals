@@ -1,0 +1,1375 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The median-effect equation has been widely used to describe the dose-response relationship and identify compounds that activate or inhibit specific disease targets in contemporary drug discovery.",
+    "claim_type": "EXPLICIT",
+    "source": "The median-effect equation has been widely used to describe the dose-response relationship and identify compounds that activate or inhibit specific disease targets in contemporary drug discovery.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the widespread use of the median-effect equation in drug discovery, representing established practice in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Experimental data often contain extreme responses, which may significantly impair the estimation accuracy and impede valid quantitative assessment in the standard estimation procedure.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the experimental data often contain extreme responses, which may significantly impair the estimation accuracy and impede valid quantitative assessment in the standard estimation procedure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation studies and examples presented in the manuscript showing the impact of extreme values on estimation accuracy.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The proposed robust beta regression approach consistently provides robust estimation for the median-effect equation, particularly when there are extreme outcome observations.",
+    "claim_type": "EXPLICIT",
+    "source": "Substantive simulation studies under various scenarios demonstrate solid evidence that the proposed approach consistently provides robust estimation for the median-effect equation, particularly when there are extreme outcome observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is directly supported by simulation studies presented in the Results section and Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The proposed approach provides a narrower confidence interval, suggesting a higher power in statistical testing.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, simulation studies illustrate that the proposed approach also provides a narrower confidence interval, suggesting a higher power in statistical testing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation results shown in Figure 4 and Appendix tables comparing confidence interval widths.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The median-effect equation is a fundamental method established based on the pharmacological principle of mass-action law.",
+    "claim_type": "EXPLICIT",
+    "source": "It is a fundamental method established based on the pharmacological principle of mass-action law (Chou, 1976).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Chou, 1976, establishing the theoretical foundation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The median-effect equation has been used extensively to analyze in vitro experimental data and evaluate the potency of related drugs.",
+    "claim_type": "EXPLICIT",
+    "source": "As the common link for many biomedical systems, it has been used extensively to analyze in vitro experimental data and evaluate the potency of related drugs (Chou and Talalay, 1984; Chou and Rideout, 1991; Greco et al., 1995; Lee and Kong, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations documenting extensive use of the method.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "It is common to observe extreme values of (un)affected cell fraction that is close to the response of either 0 or 100% in the analytic dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Without knowing the true dose-effect curve during the experimental design and data collection, it is common to observe extreme values of (un)affected cell fraction that is close to the response of either 0 or 100% in the analytic dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on practical experience and knowledge of experimental data characteristics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The standard estimation approach based on linear regression after logit transformation could suffer badly from poor estimation when extreme values are present.",
+    "claim_type": "EXPLICIT",
+    "source": "The standard estimation approach, often based on a linear regression model after a logit transformation (Roell et al., 2017; Gadagkar and Call, 2015), could suffer badly from poor estimation in such situations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations and demonstrated in Figure 1.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "A small change in one extreme data point (from 0.005 to 1e-6) leads to obvious departure between the estimated curve by linear regression model and the true curve.",
+    "claim_type": "EXPLICIT",
+    "source": "The leftmost data point is changed from 0.005 to 1e-6, referring to a small white noise that cannot be visually recognized. The change leads to the obvious departure between the estimated curve by linear regression model (dotted) and the true curve (solid), which demonstrates that standard regression is sensitive to extreme values.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 1 with specific data manipulation and visual comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The response at the true IC50 from the linear regression estimated curve is only 22%, while the estimated IC50 corresponds to 70% fraction of cell affected, representing a substantive 20% inflation in estimation error.",
+    "claim_type": "EXPLICIT",
+    "source": "The response at the true IC50 (dotdashed, vertical, left) is only 22% from the estimated curve; the estimated IC50 (dotdashed, vertical, right) corresponds to the 70% fraction of cell affected, effecting a substantive 20% inflation (50% ->70%) in estimation error.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This specific quantitative result is shown in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The estimated curve by beta regression model is almost overlapped with the true curve, showing that BRM is much more robust to extreme values.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the estimated curve by beta regression model (dashed) is almost overlapped with the true curve (solid), which shows that BRM is much more robust to extreme values.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated visually in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "A meaningful drug concentration could consist of high inhibition (>90%) or low cell viability (<10%) in cancer research.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, a meaningful drug concentration could consist of high inhibition (>90%) or low cell viability (<10%) in cancer research.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on domain knowledge about cancer research practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Deleting extreme values could not eliminate the estimation bias, but only impaired the efficiency of interval estimation with wider nominal 95% confidence intervals and harmed the estimation accuracy with worse coverage probabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "As illustrated in Figure 2, deleting the extreme values couldn't eliminate the estimation bias, but only impaired the efficiency of interval estimation with wider nominal 95% confidence intervals (C.I.) and harmed the estimation accuracy with worse coverage probabilities.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulation results shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "It is dubious to apply the constant error variance assumption in dose-response estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, it is dubious to apply the constant error variance, a default assumption in standard linear regression modeling, in dose-response estimation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on theoretical considerations and empirical observations about dose-response data characteristics.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Many dose-response data have indicated either a constant variance before logit transformation or a positive correlation with drug dose.",
+    "claim_type": "EXPLICIT",
+    "source": "As an assumption can be examined with repeated measures, many dose-response data have indicated either a constant variance before logit transformation or a positive correlation with drug dose.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on empirical observations from dose-response data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "It is incongruous to apply linear regression if the assumption is violated due to error heteroscedasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "It is incongruous to apply linear regression if the assumption is violated due to error heteroscedasticity (Schmidheiny, 2009; Williams et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to statistical literature on regression assumptions.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The proposed method to estimate the median-effect equation is established in the robust beta regression framework, which takes the beta law to account for non-normality and heteroskedasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "The proposed method to estimate the median-effect equation is established in the robust beta regression framework, which not only takes the beta law to account for non-normality and heteroskedasticity (Ferrari and Cribari-Neto, 2004), but also minimizes the average density power divergence (DPD) using a tuning parameter (Ghosh, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodological approach with supporting citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The proposed method minimizes the average density power divergence (DPD) using a tuning parameter.",
+    "claim_type": "EXPLICIT",
+    "source": "The proposed method to estimate the median-effect equation is established in the robust beta regression framework, which not only takes the beta law to account for non-normality and heteroskedasticity (Ferrari and Cribari-Neto, 2004), but also minimizes the average density power divergence (DPD) using a tuning parameter (Ghosh, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Ghosh, 2019.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "A data-driven approach is applied to optimize the tuning parameter, which further compensates for the lack of robustness against outliers.",
+    "claim_type": "EXPLICIT",
+    "source": "We apply a data-driven approach to optimizing the tuning parameter, which further compensates for the lack of robustness against outliers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological innovation in the proposed approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The robust beta regression framework was compared with linear regression models in either standard normal distribution error or heavy-tailed t distribution error with 3 degrees of freedom in simulation studies.",
+    "claim_type": "EXPLICIT",
+    "source": "In the simulation studies, we compare the robust beta regression framework with linear regression models either in the standard normal distribution error, or in the heavy-tailed t distribution error with 3 degrees of freedom hopefully to downweigh the influence of extreme observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the simulation study design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Results from simulation studies under various scenarios confirm that the proposed approach consistently gives robust estimation for the median-effect equation.",
+    "claim_type": "EXPLICIT",
+    "source": "Results from simulation studies under various scenarios confirm that the proposed approach consistently gives robust estimation for the median-effect equation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation results presented in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The Hill coefficient signifies the sigmoidicity of the curve.",
+    "claim_type": "EXPLICIT",
+    "source": "Particularly, we examine two important measures for drug binding affinity: the Hill coefficient, which signifies the sigmoidicity of the curve, and the overall effect, indicated by dose concentration for a specified (e.g. 50%) response (Shen et al., 2008; Sampah et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The overall effect is indicated by dose concentration for a specified (e.g. 50%) response.",
+    "claim_type": "EXPLICIT",
+    "source": "Particularly, we examine two important measures for drug binding affinity: the Hill coefficient, which signifies the sigmoidicity of the curve, and the overall effect, indicated by dose concentration for a specified (e.g. 50%) response (Shen et al., 2008; Sampah et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "When there are extreme outcome observations, the improvement of robust beta regression in estimation accuracy could be substantial.",
+    "claim_type": "EXPLICIT",
+    "source": "When there are extreme outcome observations, the improvement of robust beta regression in estimation accuracy could be substantial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation results and examples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The proposed approach provides a narrower confidence interval, which suggests a higher efficiency to achieve better power in statistical testing even without acquiring additional experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, simulation studies further illustrate that the proposed approach provides a narrower confidence interval, which in turn suggests a higher efficiency to achieve better power in statistical testing even without acquiring additional experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation results showing confidence interval widths.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "REAP is developed based on the Shiny package of R language.",
+    "claim_type": "EXPLICIT",
+    "source": "The analyses are implemented using the freely accessible web-based application REAP, developed based on the Shiny package of R language, with which research scientists could conveniently upload their drug experiment dataset and perform the data analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation of the tool.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "REAP is established in an agile modeling framework under the parameterization of the beta law to describe a continuous response variable with values in a standard unit interval (0,1).",
+    "claim_type": "EXPLICIT",
+    "source": "It is established in an agile modeling framework under the parameterization of the beta law to describe a continuous response variable with values in a standard unit interval (0.1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mathematical framework of REAP.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "REAP exploits the minimum density power divergence estimators (MDPDE) for dose-response estimation, with the tuning parameter optimized by a data-driven method.",
+    "claim_type": "EXPLICIT",
+    "source": "We further exploited a robust estimation method of the beta regression, named the minimum density power divergence estimators (MDPDE) (Ghosh, 2019), for dose-response estimation, with the tuning parameter optimized by a data-driven method (Ribeiro and Ferrari, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the estimation method with supporting citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "REAP allows users to specify the target effect level, rather than fixed at the common median effect (i.e., 50%), in dose estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "A special feature of REAP is that it conveniently allows the users to specify the target effect level, rather than fixed at the common median effect (i.e., 50%), in dose estimation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the REAP tool.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "REAP enables hypothesis testing for comparisons of effect estimations, slopes and models.",
+    "claim_type": "EXPLICIT",
+    "source": "We also enable hypothesis testing for comparisons of effect estimations, slopes and models (i.e. comparing both intercepts and slopes; see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the REAP tool.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "REAP is freely available and accessible at https://xinying-fang.shinyapps.io/REAP/.",
+    "claim_type": "EXPLICIT",
+    "source": "The open-sourced REAP is freely available and accessible at https://xinying-fang.shinyapps.io/REAP/.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides the access information for the tool.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "When there are extreme outcome observations, the robust beta regression manages much lower bias and root-mean-square error (RMSE) for point estimates and better coverage probability for interval estimates than the linear regression model with normal distribution error.",
+    "claim_type": "EXPLICIT",
+    "source": "Particularly, when there are extreme outcome observations, the robust beta regression manages much lower bias and root-mean-square error (RMSE) for point estimates and better coverage probability for interval estimates than the linear regression model with normal distribution error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation results in Figure 4 and Appendix 1\u2014table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "For data without extreme values, the performance of robust beta regression and linear regression is comparable in bias, RMSE and coverage probability, but the linear regression model has much wider 95% CIs.",
+    "claim_type": "EXPLICIT",
+    "source": "For data without extreme values, their performance is comparable in bias, RMSE and coverage probability, but the linear regression model has much wider 95% CIs (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by simulation results shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The wider 95% CIs from linear regression occur across all the scenarios, indicating higher estimation efficiency of the robust beta regression approach.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the wider 95% CIs occur across all the scenarios, indicating higher estimation efficiency of the robust beta regression approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from simulation results across multiple scenarios.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The heavy-tailed linear regression model demonstrates improved bias and RMSE in point estimation from the standard linear regression, but the nominal 95% CIs are significantly underestimated with coverage probability below 50% in most cases.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the heavy-tailed linear regression model demonstrates improved bias and RMSE in point estimation from the standard linear regression, but the nominal 95% CIs are significantly underestimated with coverage probability below 50% in most cases (Appendix 1\u2014table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by simulation results in Appendix 1\u2014table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The heavy-tailed linear regression model cannot maintain consistently robust and statistically efficient estimations.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the heavy-tailed linear regression model, although sometimes provides good point estimations, cannot maintain consistently robust and statistically efficient estimations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the simulation results showing poor coverage probabilities.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The robust beta regression model is the most robust and stable in estimating the median-effect equation with reliable performance in both point estimations and 95% CI coverage probabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the robust beta regression model is the most robust and stable in estimating the median-effect equation with reliable performance in both point estimations and 95% CI coverage probabilities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion based on simulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Similar results are obtained consistently with data simulated using beta error terms, which induces heteroscedasticity at different dose levels.",
+    "claim_type": "EXPLICIT",
+    "source": "In parallel, similar results are obtained consistently with data simulated using beta error terms, which induces heteroscedasticity (smaller variation on the two ends and bigger in the middle) at different dose levels (Appendix 1\u2014figure 1, Appendix 1\u2014table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by additional simulation results in Appendix 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The result comparisons between the seven-dose set and the six-dose set with the largest or smallest dose eliminated display the potential worse influence of deleting extreme values directly in modeling dose-response using linear regression.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the result comparisons between the seven-dose set and the six-dose set with the largest or smallest dose eliminated display the potential worse influence of deleting extreme values directly in modeling dose-response using linear regression, which further notarizes the robustness and efficiency of the proposed robust beta regression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on simulation comparisons shown in Figure 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The simulation study suggests that the robust beta regression model produces well-calibrated dose-response curves while being more robust and powerful than the standard regression model and the heavy-tailed linear regression model in estimating the median effect equation.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the simulation study suggests that the robust beta regression model produces well-calibrated dose-response curves while being more robust and powerful than the standard regression model and the heavy-tailed linear regression model in estimating the median effect equation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion based on all simulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The B-cell lymphoma data was originally from a study on using auranofin in treating B-cell lymphomas such as relapsed or refractory mantle cell lymphoma (MCL).",
+    "claim_type": "EXPLICIT",
+    "source": "The data was originally from a study on using a drug called auranofin in treating B-cell lymphomas such as relapsed or refractory mantle cell lymphoma (MCL) (Wang et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the source of the example data with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Auranofin is an FDA-approved treatment of rheumatoid arthritis.",
+    "claim_type": "EXPLICIT",
+    "source": "As an FDA-approved treatment of rheumatoid arthritis, auranofin targets thioredoxin reductase-1 (Txnrd1), and was repurposed as a potential antitumor drug to effectively induce DNA damage, reactive oxygen species (ROS) production, cell growth inhibition, and apoptosis in aggressive B-cell lymphomas, especially in TP53-mutated or PTEN-deleted lymphomas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is factual information about the drug's FDA approval status.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Auranofin targets thioredoxin reductase-1 (Txnrd1).",
+    "claim_type": "EXPLICIT",
+    "source": "As an FDA-approved treatment of rheumatoid arthritis, auranofin targets thioredoxin reductase-1 (Txnrd1), and was repurposed as a potential antitumor drug to effectively induce DNA damage, reactive oxygen species (ROS) production, cell growth inhibition, and apoptosis in aggressive B-cell lymphomas, especially in TP53-mutated or PTEN-deleted lymphomas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the cited study (Wang et al., 2019).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Auranofin was repurposed as a potential antitumor drug to effectively induce DNA damage, reactive oxygen species (ROS) production, cell growth inhibition, and apoptosis in aggressive B-cell lymphomas, especially in TP53-mutated or PTEN-deleted lymphomas.",
+    "claim_type": "EXPLICIT",
+    "source": "As an FDA-approved treatment of rheumatoid arthritis, auranofin targets thioredoxin reductase-1 (Txnrd1), and was repurposed as a potential antitumor drug to effectively induce DNA damage, reactive oxygen species (ROS) production, cell growth inhibition, and apoptosis in aggressive B-cell lymphomas, especially in TP53-mutated or PTEN-deleted lymphomas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the cited study (Wang et al., 2019).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "In the auranofin experiment, the effect was evaluated in six MCL cell lines (Z-138, JVM-2, Mino, Maver-1, Jeko-1, and Jeko-R) with auranofin in concentrations ranging from 0 to 5 \u03bcM for 72 hr.",
+    "claim_type": "EXPLICIT",
+    "source": "In the experiment, the effect of auranofin was evaluated in six MCL cell lines (Z-138, JVM-2, Mino, Maver-1, Jeko-1, and Jeko-R) with auranofin in concentrations ranging from 0 to 5 \u03bcM for 72 hr and tested cell viability using a luminescent assay.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design from the cited study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The sample variance of error from repeated measurements decreased with the increase of auranofin concentrations in the B-cell lymphoma experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "The interval bars of observed dose-response in Figure 5 show that the sample variance of error from repeated measurements decreased with the increase of auranofin concentrations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed from the data shown in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The test for homogeneity (p-value <0.0001) suggests distinct dose-response between cell lines in the auranofin experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "The test for homogeneity (p-value <0.0001) suggests distinct dose-response between cell lines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical test result from the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "At the beginning of 2020, COVID-19 broke out at an unprecedented pace internationally, but there were limited therapeutic options for treating this disease.",
+    "claim_type": "EXPLICIT",
+    "source": "At the beginning of 2020, COVID-19 broke out at an unprecedented pace internationally, but there were limited therapeutic options for treating this disease.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-known historical fact about the COVID-19 pandemic.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Many compounds and their combinations were rapidly tested in vitro against the SARS-CoV-2 virus to identify potentially effective treatments and prioritize clinical investigation.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, many compounds and their combinations were rapidly tested in vitro against the SARS-CoV-2 virus to identify potentially effective treatments and prioritize clinical investigation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the research response to COVID-19.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The benchmark compound collection in the SARS-CoV-2 data consists of five known antivirals, including remdesivir, E64d (aloxistatin), chloroquine, calpain Inhibitor IV and hydroxychloroquine.",
+    "claim_type": "EXPLICIT",
+    "source": "In the data (Bobrowski et al., 2021), the benchmark compound collection consists of five known antivirals, including remdesivir, E64d (aloxistatin), chloroquine, calpain Inhibitor IV and hydroxychloroquine.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data from the cited study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The in vitro experiment for SARS-CoV-2 was performed using the same biological batch of SARS-CoV-2 virus and conducted in biosafety level-3.",
+    "claim_type": "EXPLICIT",
+    "source": "The in vitro experiment was performed using the same biological batch of SARS-CoV-2 virus and conducted in biosafety level-3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental conditions from the cited study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "In the original publication, the dose-response curves were fitted by linear regression, which could yield inconclusive estimation for hydroxychloroquine.",
+    "claim_type": "EXPLICIT",
+    "source": "In the original publication (Bobrowski et al., 2021), the dose-response curves were fitted by linear regression, which could yield inconclusive estimation (e.g. hydroxychloroquine in Figure 1G of Bobrowski et al., 2021), while the estimated inhibition tends to exceed 1 when concentration is larger than 10 \u00b5M.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critique of the original analysis method with reference to specific results.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "REAP gives reasonable estimation for the dose-response curves of SARS-CoV-2 antivirals.",
+    "claim_type": "EXPLICIT",
+    "source": "REAP gives reasonable estimation for the dose-response curves (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The hypothesis testing results show that at least one slope estimation is different from other antivirals (p-value = 0.0003) in the SARS-CoV-2 data.",
+    "claim_type": "EXPLICIT",
+    "source": "The hypothesis testing results show that at least one slope estimation is different from other antivirals (p-value = 0.0003) and at least one EC50 estimation is different from others (p-value = 0.003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical test result from the REAP analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "At least one EC50 estimation is different from others (p-value = 0.003) in the SARS-CoV-2 data.",
+    "claim_type": "EXPLICIT",
+    "source": "The hypothesis testing results show that at least one slope estimation is different from other antivirals (p-value = 0.0003) and at least one EC50 estimation is different from others (p-value = 0.003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical test result from the REAP analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Calpain Inhibitor IV shows a higher potency than other agents including hydroxychloroquine (p-value = 0.0038).",
+    "claim_type": "EXPLICIT",
+    "source": "Calpain Inhibitor IV shows a higher potency than other agents including hydroxychloroquine (p-value = 0.0038, Appendix 1\u2014table 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical comparison result from the REAP analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Quantifying the potency of a compelling substance is always a central topic in life sciences.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantifying the potency of a compelling substance is always a central topic in life sciences (Schindler, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the field supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Potency quantification is a vital component of research in pharmacology, but also prevalent in the fields of toxicology, environmental science, agrochemistry, and medicine.",
+    "claim_type": "EXPLICIT",
+    "source": "It is a vital component of research in pharmacology, but also prevalent in the fields of toxicology, environmental science, agrochemistry, and medicine, among many others.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is general knowledge about the applications of potency quantification.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The description of dose-response curves can provide the initial toxicological risk assessment.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, the description of dose-response curves can provide the initial toxicological risk assessment (National Research Council, 2007), and guide in silico modeling of toxic doses to humans and the environment (Blaauboer et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to relevant literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Dose-response curves can guide in silico modeling of toxic doses to humans and the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, the description of dose-response curves can provide the initial toxicological risk assessment (National Research Council, 2007), and guide in silico modeling of toxic doses to humans and the environment (Blaauboer et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Blaauboer et al., 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Based on proper identification of dose-response relationship from in vitro assays, studies can successfully predict systemic toxicological effects in vivo without additional in silico modelling.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on proper identification of dose-response relationship from in vitro assays, studies can successfully predict systemic toxicological effects in vivo without additional in silico modelling (Groothuis et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Groothuis et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "In the illustrative example, the estimated IC50 dose effects the 70% fraction of cell affected, while the estimated response at the true IC50 dose is only 22%.",
+    "claim_type": "EXPLICIT",
+    "source": "In the illustrative example (Figure 1), the estimated IC50 dose indeed effects the 70% fraction of cell affected, while the estimated response at the true IC50 dose is only 22%.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "A small (<0.5%) single measurement error could engender a profound impact on the assessment of drug potency and determination of synergy in drug combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "Such a large discrepancy is sourced by a small (<0.5%) single measurement error, which is common and inevitable in any regular in vivo experiment, but could engender a profound impact on the assessment of drug potency and determination of synergy in drug combinations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the example shown in Figure 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The modeling strategy of deleting extreme values is futile to improve the poor performance of standard regression model, but may further impair the estimation efficiency and accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the modeling strategy of deleting those extreme values (e.g. Figure 2, or 6noL and 6 noS datasets in Figure 4 and Appendix 1\u2014figure 1) is futile to improve the poor performance of standard regression model, but may further impair the estimation efficiency and accuracy.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by simulation results in Figures 2 and 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Deleting extreme values fails to reduce bias but only introduces larger uncertainty in estimation of dose concentration, especially at extreme responses (e.g. IC90).",
+    "claim_type": "EXPLICIT",
+    "source": "In general, it fails to reduce bias but only introduces larger uncertainty in estimation of dose concentration, especially at extreme responses (e.g. IC90).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from simulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "A heavy-tailed error distribution may help to stabilize the point estimation, but the interval estimation could be largely under-estimated with poor coverage probabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, a heavy-tailed error distribution may help to stabilize the point estimation, but the interval estimation could be largely under-estimated with poor coverage probabilities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on simulation results for heavy-tailed linear regression.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "REAP has substantial advantages over existing methods by reducing the impact of random errors due to implicit variations in the experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "It has substantial advantages over existing methods by reducing the impact of random errors due to implicit variations in the experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim based on simulation and example results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "This is the first time that beta regression is introduced to dose-response estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "To our best knowledge, it is also for the first time that beta regression is introduced to dose-response estimation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about novelty based on the authors' knowledge of the literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The underlying modified robust beta regression model estimated by the data-driven tuning parameter is resilient to estimation bias caused by extreme observations.",
+    "claim_type": "EXPLICIT",
+    "source": "The underlying modified robust beta regression model estimated by the data-driven tuning parameter is resilient to estimation bias caused by extreme observations, which is a routinely encountered situation for deficient dose-response estimation using the standard estimation approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation results throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The proposed approach is efficient in quantitative characterization of dose-response curves with narrower confidence intervals for key estimators.",
+    "claim_type": "EXPLICIT",
+    "source": "The proposed approach is also efficient in quantitative characterization of dose-response curves with narrower confidence intervals for key estimators.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation results showing confidence interval widths.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "REAP can simultaneously model the data heterogeneity with a dose-dependent precision component.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, REAP can simultaneously model the data heterogeneity with a dose-dependent precision component (Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in the B-cell lymphoma example (Figure 5).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "REAP is different from other dose-response methods, in which a vector of weights have to be (possibly mis-)specified externally.",
+    "claim_type": "EXPLICIT",
+    "source": "It is simply different from other dose-response methods, in which a vector of weights have to be (possibly mis-)specified externally.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with other methods based on methodological differences.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "REAP is an open-source and user-friendly platform, developed for diverse non-computational scientists for hands-on wet-laboratory data analysis in regular use.",
+    "claim_type": "EXPLICIT",
+    "source": "REAP is an open-source and user-friendly platform, developed for diverse non-computational scientists for hands-on wet-laboratory data analysis in regular use, and can be hosted within R shiny environment under Windows, Linux, and Mac systems or deployed in Docker available as a web server.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design and accessibility of REAP.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "REAP can be hosted within R shiny environment under Windows, Linux, and Mac systems or deployed in Docker available as a web server.",
+    "claim_type": "EXPLICIT",
+    "source": "REAP is an open-source and user-friendly platform, developed for diverse non-computational scientists for hands-on wet-laboratory data analysis in regular use, and can be hosted within R shiny environment under Windows, Linux, and Mac systems or deployed in Docker available as a web server.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical deployment options for REAP.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The proposed method and the developed REAP App allow for the robust and efficient estimation and accounting for outliers, making it fitted particularly in a high-throughput setting.",
+    "claim_type": "EXPLICIT",
+    "source": "The proposed method and the developed REAP App allow for the robust and efficient estimation and accounting for outliers as well, making it fitted particularly in a high-throughput setting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about potential applications based on the method's properties.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Exposure time is an important factor ultimately affecting the dose-response as the result of a complex and dynamic cascade of events.",
+    "claim_type": "EXPLICIT",
+    "source": "As the result of a complex and dynamic cascade of events, exposure time is another important factor ultimately affecting the dose-response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on general knowledge about dose-response relationships.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The proposed modeling framework can be naturally extended to model time-dependent cytotoxicity while controlling for fixed or random effects.",
+    "claim_type": "EXPLICIT",
+    "source": "For in vitro experiments measured at different time points in a choice of cell-lines and expressed by a variety of assays (Byrne and Maher, 2019), the proposed modeling framework can be naturally extended to model time-dependent cytotoxicity while controlling for fixed or random effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about potential extensions of the method.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The application of robust and efficient dose-response estimation can be integrated into methods to identify drug interaction effect.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the application of robust and efficient dose-response estimation can be integrated into methods to identify drug interaction effect (Lee and Kong, 2009; Lee et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about potential applications with supporting citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Multi-agent combination therapies demonstrate great advantages in improving therapeutic efficacy and revolutionize patient outcomes in a wide range of diseases.",
+    "claim_type": "EXPLICIT",
+    "source": "There is a venerable history that multi-agent combination therapies demonstrate great advantages in improving therapeutic efficacy and revolutionize patient outcomes in a wide range of diseases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on general knowledge about combination therapies.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Robust and efficient estimation of the dose-response curve would be crucial in investigation of adequate drug combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "Robust and efficient estimation of the dose-response curve would be crucial in investigation of adequate drug combinations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the importance of the method for drug combination studies.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The current modeling framework can be naturally adapted for other dose-response functions like probit (via cumulative normal distribution) and Weibull model.",
+    "claim_type": "EXPLICIT",
+    "source": "While in specific scenarios other laws may be considered more suitable to describe the biomedical systems, the current modeling framework can be naturally adapted for other dose-response functions like probit (via cumulative normal distribution) and Weibull model (Christensen, 1984), or any other continuous distribution functions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the flexibility of the modeling framework with citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The median-effect equation to characterize pharmacological activity assumes the compound can affect all the cells.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the median-effect equation to characterize pharmacological activity assumes the compound can affect all the cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about an assumption of the median-effect equation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "A compound that cannot reach high binding affinity will yield an over-conservative estimation for median effective dose of a drug.",
+    "claim_type": "EXPLICIT",
+    "source": "From a quantitative perspective, a compound that cannot reach high binding affinity will yield an over-conservative estimation for median effective dose of a drug.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the consequences of limited binding affinity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "If the maximal effects of candidate compounds are different and the aim is to accurately model the dose-response curve, the Emax model could be a better choice.",
+    "claim_type": "EXPLICIT",
+    "source": "If it is a concern that the maximal effects of candidate compounds are different and the aim is to accurately model the dose-response curve, the Emax model could be a better choice (Lee et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation for an alternative model with citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The robust beta regression approach in REAP cannot handle values equal or less than 0, or equal or greater than 1.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the robust beta regression approach in REAP cannot handle values equal or less than 0, or equal or greater than 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a limitation of the beta distribution.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "A sequential data truncation algorithm was developed in REAP to overcome the limitation of the conventional transformation (y * (n\u22121)+0.5) / n.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we developed a sequential data truncation algorithm in REAP to overcome the limitation of the conventional transformation (y * (n\u22121)+0.5) / n, which could be too rough in dose-response curve estimation particularly when the sample size n for each group is relatively small.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological development to address a limitation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The conventional transformation (y * (n\u22121)+0.5) / n could be too rough in dose-response curve estimation particularly when the sample size n for each group is relatively small.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we developed a sequential data truncation algorithm in REAP to overcome the limitation of the conventional transformation (y * (n\u22121)+0.5) / n, which could be too rough in dose-response curve estimation particularly when the sample size n for each group is relatively small.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critique of existing transformation methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The truncation algorithm has been empirically validated using simulated data.",
+    "claim_type": "EXPLICIT",
+    "source": "Although empirically we have validated it using simulated data, the algorithm could be improved by future work to retain information more efficiently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes validation work performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "A good modeling strategy must effectively characterize the nature of the observed dose-response pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, a good modeling strategy must effectively characterize the nature of the observed dose-response pattern (Lyles et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general principle supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Rapid advances in novel drug development and considerable deficiency in modeling data with extreme values offer an appealing opportunity for next-generation quantitative approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Rapid advances in novel drug development and considerable deficiency in modeling data with extreme values offer an appealing opportunity for next-generation quantitative approaches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the context and motivation for the work.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "REAP provides a great tolerance for points with extreme values, solid support for accurate and efficient dose-response curve estimation, and useful reference to the future development of methodology in drug investigation.",
+    "claim_type": "EXPLICIT",
+    "source": "Experimental conditions and candidate drug potency could inevitably vary in practice, but REAP provides a great tolerance for points with extreme values, solid support for accurate and efficient dose-response curve estimation, and useful reference to the future development of methodology in drug investigation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim about the contributions of REAP based on the results presented.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Beta regression is resistant to extreme values and provides reliable estimations.",
+    "claim_type": "EXPLICIT",
+    "source": "Beta regression is resistant to extreme values and provides reliable estimations (Figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The beta density can take on a variety of shapes to account for non-normality and skewness.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared with the standard approach, which applies a non-linear transformation in the response for an approximation to the normal distribution, the beta density can take on a variety of shapes to account for non-normality and skewness (Smithson and Verkuilen, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a property of the beta distribution supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "An empirical study showed that beta regression provided the best estimation among several alternatives in the presence of heteroskedasticity and asymmetry.",
+    "claim_type": "EXPLICIT",
+    "source": "In the presence of heteroskedasticity and asymmetry, two common problems frequently observed in limited range continuous response data, an empirical study showed that the beta regression provided the best estimation among several alternatives (Kieschnick and McCullough, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to an empirical study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Standard beta regression could still be sensitive against outliers because its inference is based on the maximum likelihood estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "The standard beta regression potentially could still be sensitive against outliers because its inference is based on the maximum likelihood estimation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical limitation of standard beta regression.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The recommended \u03b1 in MDPDE is around 0.3 to 0.4.",
+    "claim_type": "EXPLICIT",
+    "source": "The recommended \u03b1 is around 0.3 to 0.4, but simply assigning a fixed \u03b1 in [0.3, 0.4] is not applicable in many cases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation from the MDPDE literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "A data-driven method was adopted to identify the optimal \u03b1 instead of using a fixed value.",
+    "claim_type": "EXPLICIT",
+    "source": "Here we adopted a data-driven method (Ribeiro and Ferrari, 2020) to identify the optimal \u03b1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological choice with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The width of the constructed confidence interval from the proposed approach was narrower than that from a linear regression model, suggesting higher statistical power.",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, the width of the constructed confidence interval was narrower than that from a linear regression model, suggesting that our approach is more efficient with a higher statistical power (Appendix 1\u2014tables 1 and 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by simulation results in Appendix tables.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "In the beta regression framework, statistical comparison can be conducted by first comparing independent fits for each curve with a global fit that shares the common parameters among different groups.",
+    "claim_type": "EXPLICIT",
+    "source": "In the beta regression framework, the statistical comparison can be conducted by first comparing independent fits for each curve with a global fit that shares the common parameters among different groups.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the statistical testing approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The likelihood ratio test can be applied to examine whether the same Hill coefficient or one dose-response curve can adequately fit all the data.",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequently, the likelihood ratio test can be applied to examine whether the same Hill coefficient or one dose-response curve can adequately fit all the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the statistical testing method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "An F test is used to assess whether median effect doses are the same in different groups.",
+    "claim_type": "EXPLICIT",
+    "source": "The only exception is to assess whether median effect doses are the same in different groups, while an F test is used for the single parameter testing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the statistical testing method for a specific comparison.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "If the global test for potency shows a significant p-value, a pairwise comparison can be conducted using two-sided t-test for the ordered groups with Benjamini-Hochberg correction for multiplicity.",
+    "claim_type": "EXPLICIT",
+    "source": "If the global test for potency shows a significant p-value, a pairwise comparison can be conducted using two-sided t-test for the ordered groups with Benjamini-Hochberg correction for multiplicity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the post-hoc testing procedure.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors developed a low-cost standalone home-cage system enabling naive mice to learn voluntary head-fixation (>1 hr/day) for 2 months without human supervision. The system uses pneumatic pistons with kinematic depressions for reproducible head positioning (displacements <15 \u03bcm) and a critical self-release mechanism that allows mice to terminate head-fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 provide strong quantitative evidence: 37/39 mice (95%) learned head-fixation in 7\u00b14.8 days, achieving 69\u00b132.4 min/day fixation duration with high spatial reproducibility. The critical importance of self-release is demonstrated by control experiments (C53-C55) showing complete failure without this feature. The technical implementation is well-documented with measurements validating the design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C129"
+    ],
+    "result": "Mice successfully learned a tactile decision task with short-term memory in automated home-cage training with similar success rates (87% vs 91%) but faster timeline than manual training (19.3\u00b17.2 vs 27.1\u00b116.3 days to criterion). Home-cage mice performed more trials per day (547\u00b1205 vs 377\u00b130 trials) while requiring similar total trial numbers to reach criterion performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 provide direct quantitative comparisons with appropriate statistical tests (Chi-square for success rates, t-tests for trial numbers and days). The whisker-trimming control (C62) confirms sensory dependence. However, the comparison has limitations: manual training involved different experimenters and potential variability in training protocols, though the similar total trial numbers (C67, p=0.39) suggest comparable learning efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Logistic regression modeling revealed that mice in both automated and manual training used similar behavioral strategies during learning: initially relying on choice history (repeating previous actions) during early training, then transitioning to stimulus-guided choices as performance improved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by systematic logistic regression analysis with cross-validation (Figure 4). The model appropriately accounts for trial history and uses bootstrap statistics to assess regressor significance. The finding that similar percentages of mice in both training conditions relied on the same regressors (C72) provides strong evidence for comparable learning strategies. The analysis is methodologically sound with proper controls including shuffled data baselines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mice robustly learned contingency reversals in the home-cage system, consistently acquiring new sensorimotor mappings across multiple reversals. Initial task acquisition speed correlated with reversal learning speed (r=0.88, p<0.05), suggesting individual differences in learning capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by behavioral data from 8 mice across multiple reversals (Figure 5). The correlation analysis (C77) is appropriately conducted though with modest sample size (n=6). The demonstration that this previously difficult behavior (C42) can be achieved in automated training is significant, though the claim about difficulty in manual training is based on general knowledge rather than direct comparison data in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Home-cage testing revealed behavioral signatures of motivation: body weight correlated with head-fixation frequency, inter-fixation intervals increased after errors and during contingency reversals, yet mice maintained consistent choice strategies across motivational states as shown by logistic regression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C90 provide converging evidence for motivational dynamics. The correlation between body weight and head-fixations (C81) and increased inter-fixation intervals after errors (C85, p<0.001) are well-supported. The finding that choice strategies remain consistent despite motivational changes (C89-C90) is demonstrated through appropriate logistic regression comparisons. However, some interpretations (C82-C83, C86) involve inferences about internal states that cannot be directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "A fiber-free optogenetic method using red light through intact skull effectively manipulated cortical activity, silencing >70% of pyramidal neuron spikes across a wide power range (0.3-8.2 mW/mm\u00b2). Photoinhibition of vS1 and ALM in home-cage experiments produced behavioral deficits matching those from manual experiments and previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C107 are strongly supported by electrophysiology data (Figure 7) and behavioral experiments with appropriate controls (GFP-only, C100). The comparison between home-cage and manual testing (C104-C105) validates the approach. The behavioral effects match expected patterns from previous literature (C95, C99). However, the effect sizes in ALM were smaller than previous studies (acknowledged in C160-C165), likely due to incomplete silencing, which is a limitation but doesn't invalidate the screening utility of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C141"
+    ],
+    "result": "High-throughput optogenetic mapping revealed differential involvement of striatal subregions in tactile decision-making: dorsolateral striatum perturbation produced large deficits during sample and delay epochs, while anterior and posterior striatum showed minimal effects. Superior colliculus photoinhibition produced delay-epoch specific deficits similar to ALM, suggesting both regions contribute to decision maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C126 demonstrate successful application of the workflow to map subcortical regions. The differential effects across striatal subregions (C114-C117) are supported by behavioral data with appropriate statistics. Electrophysiology validation (C109-C113, C119-C120) confirms effective neural modulation. The comparison between SC and ALM effects (C124-C125) is logical. However, the interpretation is limited by incomplete silencing and spatial specificity issues acknowledged in the discussion (C157-C165). The result successfully demonstrates the screening capability of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C99",
+      "C104",
+      "C105"
+    ],
+    "result": "Optogenetic loss-of-function experiments demonstrated that behaviors learned through automated home-cage training engaged the same cortical regions (vS1 and ALM) as those identified in manual training, with comparable effect patterns and magnitudes across testing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C99, C104-C105 provide direct experimental validation comparing home-cage and manual testing in the same mice. The similar behavioral deficit patterns across conditions (Figure 7I-K) and comparable effect sizes across light doses (Figure 7\u2014supplement 2B) support the conclusion. This addresses a critical validation question about whether automated training produces behaviorally equivalent learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The integrated workflow overcomes bottlenecks of manual training and serial optogenetic testing by enabling parallel, high-throughput experiments. The system requires only one surgery per mouse and minimal supervision thereafter, allowing dozens of mice to be tested simultaneously across different brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C137 summarize the overall contribution. The workflow's advantages are demonstrated throughout the manuscript: automated training matches or exceeds manual training (C129, C131), parallel testing capability is shown (C132), and the fiber-free optogenetic method eliminates manual tethering (C133-C134). The claim about enabling rapid surveys (C137) is somewhat speculative but supported by the proof-of-concept experiments. The practical demonstration of testing multiple cohorts validates the high-throughput capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Automated training enables quantitative analysis of task learning strategies through continuous behavioral tracking and reveals motivational signatures in self-initiated behavior through inter-fixation interval analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 highlight methodological advantages of the automated system. The logistic regression analysis (C142, Figure 4) demonstrates quantitative learning assessment, and the inter-fixation interval analysis (C143, Figure 6) reveals motivational dynamics. Both are well-supported by data, though these represent secondary benefits rather than primary contributions of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The dorsolateral striatal subregion targeted in this study overlaps with regions previously implicated in licking motor control and receives input from both ALM and barrel cortex. However, the data cannot yet resolve whether behavioral effects result from perturbing the ventrolateral striatal region or a distinct subregion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C158 attempt to interpret the striatal findings in relation to previous anatomical and functional studies. While the anatomical comparisons (C153-C155) are supported by citations, the authors appropriately acknowledge uncertainty (C157) about the precise functional interpretation. The call for more systematic mapping (C158) indicates this result raises questions rather than definitively answering them. The spatial resolution of the current approach is insufficient for precise localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "A limitation of the current workflow is interpreting effect sizes from photostimulation, as partial behavioral effects could result from either incomplete silencing or partial involvement of a brain region. The workflow is best used as a discovery platform to identify regions for detailed follow-up analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C167 provide an honest assessment of the method's limitations. The comparison between current and previous ALM studies (C160-C163) demonstrates smaller effect sizes attributable to lower light intensity and incomplete coverage (C164). The acknowledgment that manipulations alone cannot fully elucidate function (C166) is appropriate. The proposed use as a discovery platform (C167) is a reasonable conclusion given these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Previous automated systems required manual interventions for neurophysiology apparatus coupling and were limited to simple tasks with short training durations. The current workflow enables prolonged head-fixation (>1 hour/day for 2 months) supporting extended training in difficult tasks and continuous optogenetic testing, with potential compatibility for imaging applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 contextualize the work relative to previous automated systems. The characterization of previous limitations (C145-C146) is supported by citations and comparison data (Supplementary file 1). The demonstration of prolonged training (C147) is well-documented throughout the manuscript. The claim about imaging compatibility (C148) is a reasonable inference based on head-fixation stability data (Figure 2I) but remains to be experimentally validated.",
+    "result_type": "MINOR"
+  }
+]

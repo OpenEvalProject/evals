@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C94",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors developed syndRomics, an open-source R package that implements visualization tools (syndromic plot, heatmap, barmap), permutation-based significance testing for component selection and interpretation, and bootstrapping methods for assessing component stability in PCA-based syndromic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C12-C14, C94, C100-C103 collectively describe the package's core functionalities with appropriate technical detail. The implementation is documented with code availability (C100), dependencies (C101), and the two major functional categories (C102-C103). The package addresses a stated gap in the literature (C11) with methods supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The syndRomics package implements a permutation test for variance accounted for (VAF) to determine the number of significant principal components, with default settings of 1000 permutations. In the first case study with 10,000 permutations, the first three PCs were significantly different from random (PC1: 32.9%, PC2: 18.3%, PC3: 9.8% variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C48 describe the permutation test methodology with appropriate citations (C37-C38, C43-C44) and provide specific results from the case study (C47-C48). The choice of default parameters is justified by simulation studies (C43-C45), and the statistical test results are clearly reported with appropriate significance thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The package implements permutation tests for loadings and communalities using the permV method (permuting one variable at a time), which showed better statistical power than permD. In the first case study, all variables were significantly represented by the three PCs, with significance thresholds of |0.21|, |0.25|, and |0.4| for PC1, PC2, and PC3 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 describe the permutation testing approach for variable contributions with appropriate citations (C53-C56) and specific results from the case study (C57-C59). The varying thresholds across PCs are explained by the principle that lower-variance PCs contain more noise (C59), which is supported by citation. The FDR correction approach is appropriately referenced (C55-C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C110",
+      "C114",
+      "C119",
+      "C120"
+    ],
+    "result": "The package implements bootstrap resampling (default 1000 samples) with Procrustes rotation to assess component stability. In the first case study, original loadings were close to bootstrapped averages with narrow confidence intervals for high-value loadings, and similarity metrics indicated stable components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 and C110, C114, C119-C120 describe the bootstrap methodology with appropriate citations (C62, C114, C119) and provide interpretations of results from the case study (C64-C66). The use of Procrustes rotation to address PCA indeterminacies is properly justified (C119). The default parameter choice (C120) is reasonable, though computational considerations are noted (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C67"
+    ],
+    "result": "The first case study data contained 16.9% missing values classified as MNAR based on experimental design knowledge and statistical testing. Multiple imputation (50 datasets) was used, and stability analysis showed high component similarity and narrow confidence intervals, indicating acceptable impact of imputation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 and C67 describe appropriate handling of missing data with proper classification (C27-C30), justified methodology (C28, C31), and validation of the imputation approach (C67). The MCAR test rejection (C30) appropriately ruled out listwise deletion. The stability analysis (C67) provides evidence that the imputation did not substantially bias results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The second case study analyzed 586 subjects from TRACK-TBI with 26 mixed-type variables (continuous, nominal, ordinal) and 21.2% missingness (MNAR). Nonlinear PCA identified 6 significant PCs, with the first three explaining 25.6%, 10.6%, and 9.8% of variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 provide appropriate description of the second case study data source (C68-C69), data characteristics (C70, C72), preprocessing decisions (C73), and results (C74-C76). The use of nonlinear PCA for mixed-type data (C71) is methodologically appropriate. The exclusion of a variable with 61.7% missingness (C73) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PC1 in the second case study loaded highly on genetic variants (SNP_DRD2: -0.677, SNP_ANKK1_Gly318AR: 0.661) and neuropsychological outcomes (CVLT measures). Despite relatively low stability to multiple imputation, bootstrapped loadings were stable and the pattern was validated by prior literature linking these genetic variants to CVLT performance after TBI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe PC1 results with specific loading values (C77), appropriate interpretation (C78), acknowledgment of stability limitations (C79), and literature validation (C80-C81). The tension between imputation instability (C79) and bootstrap stability (C80) is appropriately noted, and the biological interpretation is supported by multiple citations (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PC2 in the second case study showed positive loadings on imaging findings and negative loadings on GOSE scores at 3 and 6 months, with high stability to both resampling and multiple imputation. This pattern was interpreted as a 'TBI severity' surrogate, consistent with prior analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe PC2 with clear loading patterns (C82), strong stability evidence (C83), and biologically plausible interpretation supported by citation (C84). The interpretation as 'TBI severity' is appropriately qualified as a possibility ('might be interpreted') and is consistent with the loading pattern described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "PC3 in the second case study showed instability with most loadings non-significant by permutation test and high variance to multiple imputation, leading the authors to conclude it cannot be interpreted with certainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 appropriately acknowledges the limitations of PC3 based on both permutation testing and stability analysis. The authors' decision not to interpret this component demonstrates appropriate scientific caution when faced with unstable results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The syndromic plot visualization consists of a central triangle showing VAF with radial arrows for variables above a threshold, where arrow width and color saturation represent loading magnitude and color represents direction. Alternative visualizations (heatmap, barmap) display all variables and can show confidence intervals from resampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 provide clear descriptions of the visualization methods with appropriate detail. The syndromic plot design (C104-C106) is properly attributed to prior work (C104), and the utility of different plot types is explained (C107-C108). These are implementation details that support the package's usability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The package implements four component similarity metrics: congruence coefficient (CC, range 0-1, threshold 0.9 for good matching), Pearson's r, RMSE (0 indicates perfect match), and Cattell's s index (range -1 to 1, centered at 0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 describe the similarity metrics with appropriate mathematical definitions and interpretation guidelines. The 0.9 threshold for CC is properly cited (C125). These metrics are standard approaches for assessing component stability, and their inclusion enhances the package's analytical capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors argue that biomedical data analysis remains largely univariate, which limits interpretation of disease complexity, increases false-positive risk through multiple testing, and misses relationships between variables. Multivariate approaches can address these limitations while reducing multiple testing burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C6, and C86-C91 present a coherent argument about limitations of univariate analysis supported by appropriate citations (C87, C90). The logical progression from problem identification (C1, C5-C6) to proposed solution (C86, C90-C91) is clear. However, these are primarily conceptual/motivational claims rather than empirical results from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors define 'syndromics' as an analytical framework using PCA and related multivariate statistics to detect disease patterns as common factors from variable relationships. PCA generates uncorrelated principal components ordered by variance explained, and syndromic analysis aims to reveal interactions in complex pathophysiological niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C7-C10, C92-C93 provide appropriate background and definitions with citations (C3, C7, C9). These establish the conceptual framework for the work. The definitions are standard and properly attributed. Claim C93 about future impact is speculative but appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The first case study used 159 rats from ODC-SCI:26 with 18 motor outcome variables at 6 weeks post-injury. The authors discuss general considerations for PCA application including handling mixed-type data, missing data, variable scaling, and avoiding bias from stratifying factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 appropriately describe the data source (C15-C17) and provide methodological guidance (C18-C23) with appropriate citations (C19, C21). These are primarily descriptive and methodological considerations rather than novel findings. The recommendations are reasonable and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors note that PCs with lower eigenvalues have higher chance of representing noise, and there is no single rule for determining how many PCs to keep. Common methods include the Scree test and eigenvalue >1 rule, though simulations show the latter is less robust than resampling approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 provide appropriate background on component selection methods with citations (C32, C34-C36). This contextualizes the package's permutation-based approach. The comparative performance statement (C36) is properly supported by citation. These are review/background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors use standardized loadings (interpretable as Pearson's r) and communalities (global variable impact) for component interpretation. They note that arbitrary loading thresholds from psychology may not apply to biomedical research, and suggest resampling strategies might reduce subjective biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe the interpretation metrics with appropriate citation (C49) and acknowledge uncertainty about threshold applicability (C51). The suggestion about reducing bias (C52) is appropriately qualified as speculative ('might reduce'). These are methodological considerations rather than empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors define component stability as sensitivity to experimental variation and describe three PCA indeterminacy issues: sign reflection (sign changes in loadings), component translocation (position changes), and rotation indeterminacy (different rotations of solutions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C116-C118 provide appropriate definitions of stability concepts and technical issues in PCA resampling. These are established concepts in the PCA literature and are accurately described. The definitions support understanding of the stability analysis methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors suggest future extensions including integration with other PCA packages, additional bootstrapping/permutation algorithms, investigation of imputation requirements for stable pattern detection, extension to other multivariate tools, and sample size planning applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C99 are all speculative statements about potential future work ('might', 'could', 'may'). While these are reasonable suggestions supported by citations where applicable (C96), they represent aspirations rather than current capabilities or validated results. These do not constitute findings from the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "The authors claim there is very limited information in the literature to guide applied biomedical researchers about PCA implementation and interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C11 is an assessment of the literature that is difficult to verify without systematic review. While the authors may be correct that guidance specifically for biomedical applications is limited, extensive PCA literature exists in statistics and other fields. This claim provides motivation for the work but is not empirically demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The authors state that disease components can be used as multivariate outcomes or predictors in subsequent analyses and can help mitigate multicollinearity, overfitting, and multiple testing issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 describe established uses of PCs with appropriate citations. These are well-known properties of PCA in the statistical literature. The claims accurately represent prior work but do not constitute novel findings from the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors explain that rejecting the null hypothesis in the permutation test indicates a PC is generated from true signal rather than noise, and note that the minimum detectable p-value depends on the number of permutations (e.g., P=10 gives minimum p=0.09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide appropriate explanation of permutation test interpretation (C40) and mathematical properties of p-value calculation (C41-C42). The example calculation (C42) correctly demonstrates the relationship. These are methodological explanations rather than empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The permut_pc_test() function implements permutation testing for VAF, loadings, or communalities using either permD (all variables permuted concomitantly) or permV (one variable at a time with Procrustes rotation for loadings). Confidence intervals are calculated using percentiles of the permuted distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C111-C113 describe the implementation details of the permutation testing function with appropriate citations (C111, C113). These are technical specifications that support reproducibility. The distinction between permD and permV methods is clearly explained with figure references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C121"
+    ],
+    "result": "The pc_stability() function can optionally compute component similarity metrics, and the authors note that setting bootstrap samples too high may unnecessarily increase computing time with little gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115 and C121 describe optional functionality and computational considerations. The computational trade-off (C121) is supported by figure reference showing simulation results. These are practical implementation details that guide appropriate use of the package.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "For the second case study, nonlinear PCA was performed using the princals() function with nominal restriction scaling and 3-degree polynomial transformations. MCAR testing used TestMCARNormality(), and multiple imputation used predictive mean matching with m=50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 provide specific methodological details with appropriate citations (C129-C130). These are clear descriptions of the analytical approach for the second case study. The parameter choices (e.g., 3 degrees, m=50) are stated but not extensively justified.",
+    "result_type": "MINOR"
+  }
+]

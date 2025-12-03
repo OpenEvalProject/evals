@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript reviews prior literature on olfactory processing, establishing that odor molecules activate multiple receptor types through broad ligand-receptor binding, leading to nonlinear summation at multiple processing stages including receptor antagonism/enhancement, saturation, and inhibitory interactions in the olfactory bulb and piriform cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 are all citation-based claims from prior literature that establish the background context. These are appropriately cited and represent established knowledge in the field. The authors correctly summarize prior work showing widespread nonlinear summation in olfactory processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Using two-photon imaging of GCaMP6f-expressing M/T cells in Tbx21Cre::Ai95D mice under anesthesia, the authors characterized glomerular activity patterns and found that methyl butyrate (MB) responses overlap most with ethyl butyrate (EB) response patterns, with masking index correlating with behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C78-C80 describe the initial characterization experiments. The use of Tbx21Cre::Ai95D mice is well-established (C78), and the masking index analysis (C17, C79, C80) is supported by Figure 1C-E showing quantitative overlap measurements from 4 fields of view in 4 mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The olfactometer was validated to deliver stable odor concentrations with linear summation of ionization levels, and imaging of M/T cells under anesthesia revealed that 39.0% exhibited nonlinear summation (71/182 ROIs), with 35.7% showing sublinear summation (65/182 ROIs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 describe methodological validation and baseline measurements. The photoionization detector validation (C18, Figure 2A-C) demonstrates proper olfactometer function. The quantification of nonlinear summation (C19-C20) is supported by specific numbers from 182 ROIs across 7 fields of view from 4 mice, providing adequate sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mice learned to discriminate EB from other single odors within ~200 trials (80% accuracy), then performed mixture detection at 90.2\u00b11.3% accuracy initially but made odor-specific errors on MB-containing trials (lick preference 0.74\u00b10.04 vs 0.93 for other odors, p=0.0035). With training, performance on MB trials improved, demonstrating mice can learn accurate target detection in binary mixtures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe behavioral training results with appropriate statistics. Sample size (n=7 mice) is adequate for behavioral experiments. Statistical testing (one-way ANOVA, p=0.0035) supports the odor-specific difficulty with MB. The progression from initial errors to accurate performance is clearly documented in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "M/T cells in behaving mice summed mixture responses more linearly than in anesthetized mice, particularly in the early phase (first 1s). Anesthetized mice showed median fractional deviation of -0.39 (sublinear), while behaving mice showed -0.12 (P=3.83\u00d710\u207b\u00b9\u2070). Somatic responses were more linear than apical dendrites in early phase, suggesting dampened early responses underlie reduced suppression. Linearization was not permanently imprinted by learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 present the core finding comparing awake vs anesthetized conditions. Statistical comparison (Kolmogorov-Smirnov test, P=3.83\u00d710\u207b\u00b9\u2070) with adequate sample sizes (202 ROIs behaving, 103 ROIs anesthetized) strongly supports the difference. The temporal analysis (C28, Figure 4G) and soma vs dendrite comparison (C29, Figure 4-supplement 1) provide mechanistic insight. The claim about learning (C32) is supported by comparing trained and anesthetized conditions from the same mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "M/T cell responses in behaving mice were smaller and more variable than in anesthetized mice, with lower within-class correlation. However, across-class patterns were substantially less correlated in behaving mice, suggesting better discriminability. Discriminability index analysis showed anesthetized mice performed better initially, but behaving mice performed equally well later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 characterize response variability and discriminability. The correlation analysis (Figure 5A-B) quantitatively supports reduced within-class and across-class correlations. The discriminability index (C37, Figure 5C) shows temporal evolution with appropriate analysis methods. The interpretation that lower across-class correlation improves discriminability (C36) is reasonable but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SVM decoding showed M/T cells from behaving and anesthetized mice performed similarly in the first 1s (above chance at 0.67s vs 1.12s), but behaving mice outperformed in the late phase (median accuracy 0.70 vs 0.58, p=0.027). When trained on single odors and tested on mixtures, behaving mice again performed better late (0.64 vs 0.55, p=0.065 n.s.). Decoder accuracy did not strictly depend on linearity of summation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present SVM decoding results with appropriate statistical testing (Mann-Whitney U test). Sample sizes are adequate (13 fields of view/6 mice behaving; 8 fields of view/4 mice anesthetized). The key finding that decoder performance doesn't correlate with linearity (C41, Figure 6-supplement 2) is well-supported and represents an important insight. The p=0.065 for C40 is marginally non-significant but the trend is noted appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In na\u00efve awake mice (engaged and disengaged), EB and MB responses summed equally linearly regardless of engagement level, indicating linearity doesn't depend on behavioral state or learning. However, SVM performance showed state-dependence: ability to analyze mixtures based on single-odor training was particularly poor for disengaged mice. Decoder performed most accurately in late phase across all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 address the role of learning and engagement. The finding that linearity is similar across conditions (C43-C44, Figure 6-supplement 1) with adequate sample sizes (17 sessions/6 mice engaged; 14 sessions/4 mice disengaged) supports the conclusion that learning doesn't affect linearity. The state-dependent decoder performance (C45, Figure 6C-F) demonstrates engagement matters for mixture analysis despite similar linearity, reinforcing the decoupling of linearity and discriminability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C59",
+      "C60",
+      "C75"
+    ],
+    "result": "Simulation of normalizing sublinearity showed it was particularly detrimental to discriminability in anesthetized data around 2s post-onset, but had less effect on behaving mice data even in late stages when sublinearity was widespread. This suggests functional consequences of nonlinear summation depend on circumstances like pattern decorrelation, and that dampened responses in awake animals maintain responses in linear range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C58-C60, C75 describe simulation results (Figure 7). The simulation approach is clearly described in methods and appropriately tests the isolated effect of sublinearity. The differential impact on anesthetized vs behaving data (Figure 7C-E) supports the interpretation that decorrelation matters. However, the simulation makes simplifying assumptions (adding Gaussian noise, using a specific normalization function) that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "The study demonstrates that mixture summation is more linear in awake mice due to dampened responses, and that mixture representations in the olfactory bulb are highly state-dependent and evolve over time. Despite smaller and more variable responses, behaving mice showed good discriminability. Learning to perform the task was not accompanied by more linear summation, and analytical perception may not strictly correlate with linearity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C72-C74, C76-C77 represent the main conclusions synthesizing multiple results. These are well-supported by the collective evidence from imaging experiments comparing awake vs anesthetized (C25-C27), trained vs na\u00efve (C43-C44), and decoding analyses (C38-C42, C54-C57). The conclusions appropriately acknowledge the complexity and avoid overstating causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The finding that signal summation is more linear in awake mice contrasts with many previous anesthetized studies showing widespread suppressive interactions. Analysis indicates discriminability doesn't correlate strictly with linearity: behavioral improvement wasn't accompanied by more linear summation, decoder accuracy time course doesn't follow linearity, and decoder performance peaked when responses were most sublinear in behaving mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 contextualize findings relative to prior work and establish the key insight about decoupling of linearity and discriminability. The contrast with prior literature (C53) is appropriately cited. The evidence for decoupling (C54-C57) comes from multiple complementary analyses (training effects, temporal dynamics, correlation with linearity) making this conclusion robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The manuscript discusses that decorrelated response patterns may play a crucial role in enhancing classifier performance, that animals make accurate decisions within ~771ms, and that the piriform cortex (or anterior olfactory nucleus for tufted cells) may be involved in learned mixture representations through feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are appropriately cited interpretations and contextualizations. C61 cites relevant literature on decorrelation. C62 provides a specific behavioral measurement. C63-C64 discuss potential mechanisms with appropriate citations, though these remain hypothetical and would require further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The discussion reviews literature on mixture perception showing that mixtures have different qualities than components, untrained subjects struggle with ~30-component mixtures, even perfumers can only identify ~5 components in unfamiliar mixtures, and that extensive training improves target detection ability. The authors speculate that OB mechanisms may reach limits with complex mixtures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 provide discussion context from prior literature with appropriate citations (Weiss et al. 2012, Poupon et al. 2018, Laing and Glemarec 1992, Rokni et al. 2014, Ilc et al. 2016). C71 is appropriately speculative about limitations. These claims contextualize the binary mixture results within broader mixture perception literature.",
+    "result_type": "MINOR"
+  }
+]

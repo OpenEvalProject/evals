@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C39",
+      "C40"
+    ],
+    "result": "PD-1 preferentially recruits SHP2 over SHP1, while BTLA preferentially recruits SHP1 over SHP2 in T cells. Co-immunoprecipitation experiments show that upon stimulation, PD-1 becomes tyrosine phosphorylated and recruits SHP2 but not SHP1 in a time-dependent manner, whereas BTLA recruits both SHP1 and SHP2 with a clear preference for SHP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29, C30, C39, and C40 are strongly supported by co-IP data in Figures 1A and 1B, which clearly demonstrate differential recruitment patterns. The data are consistent with prior literature (Okazaki et al., 2001; Yokosuka et al., 2012; Celis-Gutierrez et al., 2019; Mintz et al., 2019; Xu et al., 2020) and show reproducible, time-dependent recruitment patterns with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C41",
+      "C42"
+    ],
+    "result": "SHP2, but not SHP1, is functionally required for PD-1 inhibitory activity in T cells. Deletion of SHP2 markedly decreases PD-1's inhibitory function as measured by IL-2 secretion in response to pembrolizumab, while SHP1 deletion has no significant effect. The magnitude of pembrolizumab effects in SHP1/2 double knockout cells is statistically indistinguishable from SHP2 single knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C41, and C42 are well-supported by functional IL-2 ELISA data in Figure 1C showing dose-dependent pembrolizumab responses across multiple knockout cell lines. The statistical analysis is appropriate (two-way ANOVA), with clear significance levels indicated. The data are consistent with prior work (Xu et al., 2020) and demonstrate that SHP2 is the functionally relevant phosphatase for PD-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ITSM is the dominant docking site for SHP2 recruitment to PD-1, but ITIM also contributes to optimal SHP2 recruitment. The ITSM mutant (PD-1YF) fails to recruit SHP2, while the ITIM mutant (PD-1FY) recruits significantly less SHP2 than wild-type PD-1 (p=0.0306), as shown by both co-IP and TIRF microscopy assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by convergent evidence from co-IP (Figure 2A) and TIRF imaging (Figure 2B) experiments. The data show clear differences between mutants with appropriate statistical analysis. The finding that ITIM contributes to optimal SHP2 recruitment refines prior literature that emphasized ITSM as the sole docking site, providing a more nuanced understanding of the bivalent interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "PD-1 and SHP1/SHP2 interact via a bivalent, parallel mode involving both SH2 domains. SPR measurements show that SHP2-cSH2 strongly prefers PD-1-ITSM (Kd=0.10 \u03bcM) over PD-1-ITIM (Kd=1.4 \u03bcM), while SHP1-cSH2 exhibits very weak affinity to PD-1-ITSM (Kd=1.7 \u03bcM) and no detectable binding to PD-1-ITIM. Free energy calculations and single-molecule imaging support the parallel mode as energetically favorable, with mutation of either ITIM or ITSM strongly reducing binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49-C58 are well-supported by multiple complementary approaches: SPR binding data (Figure 3A), free energy calculations (Supplementary files 2-3), and single-molecule imaging (Figure 3\u2014figure supplement 1F). The SPR data provide quantitative Kd values with appropriate controls and replicates. The convergence of biophysical, computational, and single-molecule data strongly supports the bivalent parallel binding model. The weak SHP1-cSH2:PD-1-ITSM interaction explains PD-1's preference for SHP2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The C-terminal SH2 domain (cSH2) is the major determinant of PD-1's preference for SHP2 over SHP1. SHP2-cSH2 displays 17-fold higher affinity to PD-1-ITSM compared to SHP1-cSH2. Domain-swapping experiments show that replacing SHP1-cSH2 with SHP2-cSH2 is sufficient to enable PD-1:SHP1 association in T cells, as demonstrated by both TIRF microscopy and co-IP assays. PD-1 phosphorylation inversely correlates with SHP1 variant recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C59-C64 are strongly supported by SPR data (Figure 3B) showing quantitative affinity differences, structural analysis (Figure 4A) identifying non-conserved residues, and functional domain-swapping experiments (Figures 4B and 4C) in intact cells. The inverse correlation between PD-1 phosphorylation and phosphatase recruitment (C63) provides additional validation that recruited phosphatases are active. The convergence of biophysical and cellular data makes this a robust conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Both ITIM (Y257) and ITSM (Y282) are necessary for BTLA to recruit SHP1 and SHP2, while the non-ITIM/ITSM tyrosines (Y226, Y243) are dispensable. Mutation of either ITIM or ITSM tyrosine abolishes binding of both SHP1 and SHP2 to BTLA, indicating that both SH2 domains of SHP1 and SHP2 are required for BTLA recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are well-supported by systematic mutagenesis and co-IP experiments (Figure 5, Figure 5\u2014figure supplement 1). The data show clear abolition of binding when either ITIM or ITSM is mutated, while mutations of Y226 or Y243 have no effect. This demonstrates a more stringent bivalent requirement for BTLA compared to PD-1, consistent with the claim that ITIM and ITSM play more balanced roles in BTLA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "BTLA primarily utilizes its ITIM to prefer SHP1 over SHP2 via the N-terminal SH2 domain (nSH2). SPR data show that SHP1-nSH2 exhibits high affinity to BTLA-ITIM (Kd=0.064 \u03bcM), 13-fold higher than SHP1-cSH2 to BTLA-ITSM (Kd=0.86 \u03bcM), and 4-fold higher than SHP1-nSH2 to PD-1-ITIM (Kd=0.27 \u03bcM). Both BTLA:SHP1 and BTLA:SHP2 interactions occur in a parallel mode, but the relative contributions of ITIM and ITSM in BTLA are opposite to those in PD-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C70-C76 are strongly supported by comprehensive SPR measurements (Figure 6A) providing quantitative Kd values for all relevant interactions. The data clearly demonstrate that BTLA-ITIM is the major docking site, particularly for SHP1-nSH2, which contrasts with PD-1 where ITSM dominates. The high-affinity BTLA-ITIM:SHP1-nSH2 interaction provides a molecular explanation for BTLA's preference for SHP1. The parallel binding mode is supported by the preference patterns of nSH2 and cSH2 domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SHP1 discriminates BTLA from PD-1 based on their ITIMs. Swapping PD-1-ITIM with BTLA-ITIM is sufficient to induce PD-1:SHP1 interaction in T cells, as shown by both co-IP and TIRF microscopy. Reciprocally, replacing BTLA-ITIM with PD-1-ITIM markedly decreases SHP1 recruitment to BTLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are well-supported by bidirectional ITIM-swapping experiments using both co-IP (Figure 7B, Figure 7\u2014figure supplement 2) and TIRF microscopy (Figure 7C). The experiments are performed in both wild-type and SHP2 KO backgrounds to eliminate potential SHP2 competition. The reciprocal nature of the swapping experiments (PD-1 with BTLA-ITIM gains SHP1 binding; BTLA with PD-1-ITIM loses SHP1 binding) provides strong evidence for the ITIM as the discriminating element.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The glycine at pY+1 position of PD-1-ITIM de-emphasizes SHP1 recruitment, and substitution with alanine is sufficient to induce PD-1:SHP1 interaction. Among single-point mutations converting PD-1-ITIM residues to BTLA-ITIM residues, G224A recruits the most SHP1, though less than the full BTLA-ITIM swap. Other residues within BTLA-ITIM also contribute to SHP1 binding to some extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C81-C85 are supported by systematic single-residue mutagenesis experiments using both co-IP (Figure 8B) and TIRF microscopy (Figure 8C). The data clearly show that G224A is the most effective single mutation for inducing SHP1 recruitment, with statistical significance (p=0.000016 compared to full BTLA-ITIM swap). The experiments are well-controlled with appropriate negative (PD-1WT) and positive (PD-1BTLA-ITIM) controls. The finding that G224A is necessary but not sufficient indicates additional contributions from other residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Alanine is conserved at the pY+1 position of ITIM in several SHP1-recruiting inhibitory receptors including Siglec6, Siglec9, CD300LF, VSTM4, and SIRP\u03b1. Swapping PD-1-ITIM with the ITIMs from these receptors significantly increases SHP1 recruitment to PD-1 immunoprecipitates and microclusters compared to PD-1WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 are supported by sequence alignment data (Figure 8\u2014figure supplement 1B) showing conservation of alanine at pY+1, and functional validation through ITIM-swapping experiments (Figures 8E and 8F). The data demonstrate that ITIMs from multiple SHP1-recruiting receptors can confer SHP1-binding ability to PD-1, supporting the generalizability of the pY+1 alanine requirement. The experiments include appropriate citations to prior literature establishing these receptors as SHP1 recruiters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SHP1 recruitment exhibits a bell-shaped dependence on the molecular volume of the pY+1 residue of ITIM, with optimal recruitment by medium-sized nonpolar residues (alanine, valine, leucine, isoleucine). Structural modeling reveals a hydrophobic pocket in SHP1-nSH2 that coordinates the pY+1 side chain. Mutagenesis screening shows that medium-sized nonpolar residues (G224A/V/L/I) but not bulky (G224F/W) or polar/charged residues (G224S/T/K/D) promote PD-1:SHP1 association. These mutations also enhance PD-1-mediated inhibition of IL-2 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C88-C95 are strongly supported by convergent evidence from structural modeling (Figures 9A and 9B), comprehensive mutagenesis screening (Figure 9C), quantitative analysis showing bell-shaped dependence (Figure 9D), and functional validation through IL-2 ELISA (Figure 9E). The structural model is based on homology to a published structure (PDB: 6ROY), and the mutagenesis data systematically test residues of varying size, polarity, and charge. The bell-shaped curve peaking at leucine/isoleucine provides strong support for the hydrophobic pocket model. The functional data confirm biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Human PD-1 is unique in having a glycine at the pY+1 position of its ITIM, which inhibits SHP1 recruitment. A medium-sized nonpolar residue at pY+1 position is a defining feature of a SHP1-docking site, specifically for the nSH2 domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by sequence alignment data (Figure 8\u2014figure supplement 1B) showing PD-1 as the only ITIM with glycine at pY+1, and by the comprehensive mutagenesis and functional data in Figures 8 and 9. The claim synthesizes multiple lines of evidence to establish a general principle about SHP1-docking sites. The uniqueness of PD-1's glycine is well-documented, and the functional consequences are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C15",
+      "C17",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on inhibitory receptor signaling: Inhibitory receptors recruit SHP1/SHP2 phosphatases through phosphotyrosine-based ITIM and ITSM motifs. SHP1 and SHP2 are structurally similar tandem-SH2-containing cytoplasmic phosphatases that serve as key effectors for inhibitory immunoreceptors. Once phosphorylated, ITIM and ITSM act as docking sites for the SH2 domains of SHP1/SHP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, C11, C12, C15, C17, C26, and C27 represent well-established background knowledge in the field, supported by appropriate citations to foundational literature. These claims provide necessary context for the study but do not represent novel findings. They are accurately stated and properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on clinical and therapeutic relevance: Dysregulation of SHP1/SHP2 contributes to human pathologies including cancer. SHP2 inhibitors are in clinical trials. Inhibitory receptors operate as immune checkpoints that can be subverted by cancers. PD-1 blockade antibodies show clinical activity, and there is interest in targeting other inhibitory receptors or SHP1/SHP2 to overcome resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C16, C18-C25 provide clinical and therapeutic context supported by appropriate citations. These are accurate statements of established knowledge about the therapeutic relevance of the research area. They motivate the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C33",
+      "C37",
+      "C38"
+    ],
+    "result": "Additional mechanistic background: ITSM in some receptors interacts with SH2D1A and SH2D1B adaptors. Fc\u03b3IIRB recruits SHIP rather than SHP1/SHP2. SHP1 and SHP2 undergo complex regulation due to intramolecular contacts and reportedly dephosphorylate their docking sites within receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C33, C37, and C38 provide additional mechanistic context supported by appropriate citations (Cannons et al., 2011; Ono et al., 1997; Hof et al., 1998; P\u00e1dua et al., 2018; Yang et al., 2003; Goyette et al., 2017; Hui et al., 2017; Yokosuka et al., 2012). These claims establish the complexity of SHP1/SHP2 regulation and the diversity of inhibitory receptor signaling mechanisms, providing important context for why full-length protein studies in cells are necessary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Knowledge gaps motivating the study: SHP1 and SHP2 can potentially interact with dual phosphorylated receptors in multiple modes (monovalent, bivalent parallel, or antiparallel). No structures exist for dual phosphorylated PD-1 or BTLA with SHP1/SHP2. Binding assays using isolated SH2 domains likely do not reflect full-length protein behavior in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 accurately identify knowledge gaps that motivate the current study. C34 is a logical inference about possible binding modes based on structural features. C35 is a verifiable statement about the absence of structural data. C36 is a reasonable inference based on the known complexity of SHP1/SHP2 regulation (C37). These claims effectively justify the experimental approaches used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C107",
+      "C103"
+    ],
+    "result": "Supporting observations on SH2 domain differences: SHP1-cSH2 and SHP2-cSH2 exhibit 51.9% amino acid identity, with several residues involved in PD-1-ITSM:SHP2-cSH2 interactions altered in SHP1-cSH2. PECAM1, which prefers SHP2 over SHP1, has a polar threonine at pY+1 of its ITIM. SH2 binding is contributed by both pY and flanking residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C107, and C103 provide supporting structural and sequence information. C97 is based on sequence analysis and structural comparison (Figure 4A). C107 is supported by knowledge of PECAM1 sequence and citations (Jackson et al., 1997; Sagawa et al., 1997), providing an example consistent with the pY+1 model. C103 is established knowledge (Kuriyan and Cowburn, 1997; Pawson, 1995). These claims support the main findings but are not primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Discussion of bivalent binding mechanisms: At least 32 human receptors contain tandem ITIMs/ITSMs, which favor bivalent interactions with SHP1/SHP2. Mathematical modeling predicts that bivalent binding produces stable complexes through avidity effects. In BTLA and PD-1, ITIM and ITSM are separated by 25 residues, a conserved distance that may allow simultaneous engagement. Free energy calculations suggest parallel mode as most stable for both receptors. Most ITIM/ITSM receptors have ITIM N-terminal to ITSM, which might favor parallel binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114, C119-C124 synthesize observations about bivalent binding mechanisms, supported by data in Supplementary file 4, free energy calculations (Supplementary file 2), and citations to mathematical modeling (Diestler and Knapp, 2008; Zhou and Gilson, 2009) and prior experimental work (Watanabe et al., 2003; Riley, 2009; Marasco et al., 2020; Jackson et al., 1997). These claims provide important mechanistic context and generalize findings beyond PD-1 and BTLA, but represent synthesis and interpretation rather than primary experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Discussion of PD-1:SHP2 binding stoichiometry: The bivalent binding mode appears less strict for PD-1 since ITIM mutants retain some SHP2 binding. Prior studies suggest SHP2 may crosslink two PD-1 molecules at ITSM, while other studies indicate ITIM contributes to SHP2 recruitment. The current study supports the 1:1 bivalent mode as dominant based on co-IP, microcluster enrichment, and single-molecule assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 discuss the stoichiometry of PD-1:SHP2 interaction, reconciling current findings with prior literature. C115-C117 accurately cite prior work (Chemnitz et al., 2004; Okazaki et al., 2001; Patsoukis et al., 2020; Peled et al., 2018; Yokosuka et al., 2012; Marasco et al., 2020). C118 is supported by data in Figures 2 and 3\u2014figure supplement 1. This represents important clarification of the binding mode but is interpretive rather than a primary experimental result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C108",
+      "C109",
+      "C110",
+      "C125",
+      "C126"
+    ],
+    "result": "Speculative discussion and broader implications: The differing cSH2 domains might enable SHP1/SHP2 recruitment to distinct signalosomes with distinct outcomes. Receptors that stably recruit SHP1 must contain a strong nSH2 docking site. A stronger ITIM might more efficiently release SHP1/SHP2 autoinhibition. This may explain SHP1's inability to compensate for PD-1 function in SHP2-deficient cells. ITSM is the 'dominant hand' of PD-1 while ITIM is the 'dominant hand' of BTLA. The physiological significance of parallel binding is unclear but might increase PTPase domain reach or avoid steric clashes. SHP2 acts as both positive and negative regulator while SHP1 is primarily a negative regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C98-C102, C108-C110, C125, and C126 represent speculative discussion and broader implications. While these claims are reasonable inferences based on the data and prior literature, they are explicitly speculative (using terms like 'might,' 'may,' 'likely,' 'unclear') and lack direct experimental validation in this study. C100 is supported by data in Figure 1C and prior work (Xu et al., 2020). C101 and C102 are reasonable syntheses of the findings. C126 is established knowledge (Lorenz, 2009; Poole and Jones, 2005). These claims represent important interpretations but require further experimental validation.",
+    "result_type": "MINOR"
+  }
+]

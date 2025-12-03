@@ -1,0 +1,512 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Kazrin is a vertebrate protein with multiple isoforms that has been previously characterized in various contexts including skin differentiation, cell adhesion, apoptosis, and developmental processes. The protein associates with various cellular structures and interacts with multiple binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 are all supported by citations to prior published work. These claims establish the background knowledge about kazrin from the literature and are appropriately referenced. This represents a comprehensive literature review of kazrin's known functions and properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors generated kazrin knockout MEFs using CRISPR-Cas9 and established inducible cell lines expressing GFP or GFP-kazrin C at controlled levels using a lentiviral system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C36-C39 describe the generation of the experimental system and are supported by data in Figure 1\u2014figure supplement 2. The immunoblot data confirm successful knockout and demonstrate controlled expression levels of the rescue constructs at physiological (low) and moderate levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Kazrin depletion causes accumulation of peripheral early endosomes and delays transfer of endocytosed transferrin to the juxtanuclear recycling endosome region, without affecting endocytic internalization. This defect is rescued by re-expression of GFP-kazrin C but not GFP alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C40-C50 are well-supported by microscopy and quantification data in Figure 1 and supplements. The data show consistent phenotypes across multiple assays (transferrin localization, EEA1 distribution, recycling kinetics) with appropriate controls and rescue experiments. Statistical significance is demonstrated with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In Cos7 cells, shRNA-mediated kazrin depletion increased intracellular transferrin signal and caused peripheral scattering of transferrin-labeled endosomes without inhibiting endocytic internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by data in Figure 1\u2014figure supplement 1. The observations in Cos7 cells are consistent with the more detailed MEF experiments and provide initial evidence for kazrin's role in post-internalization trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Kazrin depletion significantly reduces cell migration speed through Matrigel, which is rescued by GFP-kazrin C re-expression. Increased migration persistency in kazKO cells was not rescued and may be a secondary effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by migration tracking data in Figure 2A-B and Figure 2\u2014figure supplement 1. The migration speed defect is statistically significant and specifically rescued by kazrin C. The speculation about increased persistency (C56) being a secondary effect is appropriately qualified and referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Kazrin knockout cells show a significant delay in cell separation after cytokinesis, which is restored by GFP-kazrin C expression, consistent with a role in the abscission step that depends on the long recycling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by time-lapse imaging data in Figure 2C-D and Video 2. The cytokinesis delay is statistically significant and specifically rescued by kazrin C expression. The connection to the long recycling pathway is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Endogenous kazrin co-fractionates with early endosome markers (EEA1, EHD proteins) in the lightest gradient fractions, with partial co-fractionation with VPS35 but not with recycling endosome or Golgi markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by subcellular fractionation data in Figure 3A and Figure 3\u2014figure supplement 1. The fractionation pattern is consistent across WT MEFs and mIMCD3 cells, providing strong evidence for kazrin's association with early endosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "GFP-kazrin C specifically interacts with \u03b3-adaptin (AP-1 component), clathrin, and EHD proteins, but not with VPS35, EEA1, GGA2, or AP-2, indicating selective binding to machinery involved in early-to-recycling endosome traffic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by immunoprecipitation data in Figure 3B. The selective interaction pattern is clearly demonstrated with appropriate negative controls. The inference about machinery specificity (C71) is well-supported by the data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Kazrin C directly interacts with EHD1, EHD3, the clathrin heavy chain terminal domain, and the \u03b3-adaptin ear, as demonstrated by pull-down assays with purified components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by in vitro pull-down data in Figure 3C using purified recombinant proteins. These experiments demonstrate direct binding without cellular cofactors, strengthening the interaction data from cell lysates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The C-terminal region of kazrin C (predicted IDR) binds EHD proteins and AP-1 complex, while the N-terminus does not. This contrasts with previously identified N-terminal binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by domain mapping pull-down experiments in Figure 3D-E and co-immunoprecipitation data in Figure 3\u2014figure supplement 2. The domain specificity is clearly demonstrated and appropriately contrasted with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Purified kazrin C interacts with PI3P (an early endosome-enriched lipid) through its C-terminal poly-Lys stretch, previously proposed as a nuclear localization signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by lipid overlay and liposome pelleting assays in Figure 3F-G. The requirement for the poly-Lys stretch is demonstrated by mutation analysis. The connection to PI3P enrichment on early endosomes is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The predicted kazrin C IDR has multiple binding sites for early endosome components and may be required for early endosome recruitment and function in endosomal traffic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are reasonable inferences from the interaction data (C75-C82). The speculation (C84) is appropriately qualified with 'might be required' and is tested in subsequent experiments (C85-C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The C-terminal predicted IDR of kazrin C is required for membrane association, as GFP-kazrin C associates with the microsomal fraction while GFP and GFP-kazrin C-Nt are mostly cytosolic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by subcellular fractionation data in Figure 4A-B. The differential localization of full-length versus truncated constructs provides strong evidence for the C-terminal domain's role in membrane recruitment. The speculation in C87 is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "GFP-kazrin C localizes to the nucleus and cell-cell contacts, specifically co-localizing with adherens junction components (N-cadherin, \u03b2-catenin, p120-catenin) but not with desmosomal components (desmoglein).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by immunofluorescence data in Figure 4\u2014figure supplement 2. The localization patterns are consistent with prior literature and demonstrate selective association with adherens junctions versus desmosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "GFP-kazrin C forms small foci that associate with transferrin-labeled endosomes and EHD-labeled structures, while GFP-kazrin C-Nt shows mostly cytosolic staining with fewer and less-associated foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by high-resolution microscopy data in Figure 4C-E, Figure 4\u2014figure supplement 3-4, and Videos 3-5. The 3D reconstruction analyses provide strong evidence for the association of kazrin C with endosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "GFP-kazrin C, but not GFP-kazrin C-Nt, significantly increases juxtanuclear enrichment of transferrin in kazKO cells, demonstrating that the C-terminal IDR is functionally required for kazrin's role in endosomal trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by microscopy and quantification data in Figure 4F-G. This functional rescue experiment directly tests the requirement for the C-terminal domain and provides strong evidence for its necessity in kazrin's trafficking function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "GFP-kazrin C accumulates in bright pericentriolar foci that co-localize with pericentrin and exhibit dynamic movement, reminiscent of pericentriolar satellites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 are supported by microscopy data in Figure 5A-B and Figure 5\u2014figure supplement 1 with Videos 6-7. The pericentriolar localization is clearly demonstrated, and the comparison to pericentriolar satellites is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Treatment with nocodazole or ciliobrevin disrupts the juxtanuclear localization of both GFP-kazrin C and early endosomes, demonstrating that dynein-dependent microtubule transport is required for kazrin's pericentriolar localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by drug treatment experiments in Figure 5C-F. The concomitant dispersal of kazrin and early endosomes upon microtubule or dynein inhibition provides strong evidence for the dependence on dynein-mediated transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Kazrin C shares significant sequence homology with known dynein/dynactin adaptors BICDR1 (23.3% identity, 57.3% similarity) and hook3 (19.6% identity, 61.3% similarity), suggesting it may function as a dynein/dynactin adaptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by sequence alignment data in Figure 5G and LALIGN analysis. The homology levels are comparable to those between known adaptors, providing bioinformatic support for kazrin's potential role as a dynein/dynactin adaptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "GFP-kazrin C co-immunoprecipitates with dynactin (p150-glued), dynein heavy chain, and kinesin-1, but not with tubulin, indicating direct or indirect interactions with motor complexes that are not mediated by microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are supported by immunoprecipitation data in Figure 5H. The interaction with both minus-end (dynein) and plus-end (kinesin-1) motors is consistent with other dynein/dynactin adaptors, and the lack of tubulin co-IP argues against indirect microtubule-mediated interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Kazrin C directly interacts with the dynactin complex through both its N- and C-terminal halves, suggesting multiple contact points with different dynactin components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by pull-down experiments with purified components in Figure 5I. The use of purified pig dynactin complex and bacterially-expressed kazrin demonstrates direct binding, and the domain mapping suggests multiple interaction sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Kazrin C specifically interacts with dynein light intermediate chain 1 (LIC1), and endogenous kazrin co-immunoprecipitates with the dynactin complex in MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by pull-down data with purified components (Figure 5J) and endogenous co-immunoprecipitation (Figure 5K). The LIC1 specificity is consistent with other dynein/dynactin adaptors and is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "A GFP-kazrin C fusion with a mitochondrial targeting domain (GFP-kazrin C-MTD) significantly increases pericentriolar accumulation of mitochondria, while GFP-kazrin C or GFP alone do not, demonstrating kazrin's ability to promote dynein-dependent cargo transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by microscopy data in Figure 5\u2014figure supplement 2. This gain-of-function experiment provides functional evidence that kazrin can recruit dynein/dynactin to promote retrograde transport of heterologous cargo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Early endosomes in WT cells exhibit long-range trajectories (~5 \u03bcm) followed by confined movements, while kazKO cells show significantly reduced trajectory lengths, suggesting reduced motor association or processivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 are supported by live-cell imaging and trajectory analysis in Figure 6A-B, Figure 6\u2014figure supplement 1, and Videos 8-10. The quantitative analysis of trajectory lengths provides strong evidence for impaired long-range transport in the absence of kazrin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The maximum instantaneous velocities of retrograde endosome trajectories (>1 \u03bcm), which are mainly dynein-dependent, are significantly lower in kazKO cells compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by velocity analysis in Figure 6C and Videos 8-10. The reduced velocities specifically for retrograde (dynein-dependent) trajectories provide direct evidence for kazrin's role in promoting dynein-mediated transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Expression of GFP-kazrin C, but not GFP-kazrin C-Nt or GFP alone, rescues the endosome motility defects in kazKO cells, demonstrating that the C-terminal endosomal binding region is required for kazrin's function in retrograde transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by rescue experiments in Figure 6A-C, Figure 6\u2014figure supplement 2, and Videos 11-14. The structure-function analysis demonstrates that both the N-terminal (dynein-binding) and C-terminal (endosome-binding) domains are required for function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "Kazrin plays a primary role in endosomal recycling through the long pathway by promoting dynein/dynactin-dependent retrograde transport of early endosomes or EE-derived transport intermediates to recycling endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 represent the main conclusion of the paper, integrating evidence from trafficking assays (C22-C50), protein interactions (C60-C121), and motility analyses (C124-C133). The conclusion is well-supported by the comprehensive experimental data, though the exact nature of the transported cargo (intact EEs vs. derived intermediates) remains to be fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The discussion contextualizes kazrin's function within current models of endosomal trafficking, including EE maturation, tubular transport intermediates, microtubule-dependent transport, and the roles of different motor complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C144 are all appropriately cited to the literature and provide context for interpreting the experimental results. These claims represent accurate summaries of current knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors compare kazrin's interactome and function to other dynein/dynactin adaptors (hook proteins, FIP3-RAB11), noting similarities and differences that suggest kazrin specifically promotes EE-to-RE transport rather than EE-to-LE transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C153 provide appropriate comparisons to related proteins in the literature. The distinctions drawn between kazrin and hook proteins or FIP3-RAB11 are supported by the experimental data and cited literature, helping to position kazrin's specific function within the broader context of endosomal trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors propose alternative mechanistic models for how kazrin might function, including stabilizing dynein/dynactin and linking it to endosomes, or promoting kinesin-1-dependent transport of dynein/dynactin to the cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C157 are appropriately qualified as speculative ('might'). While the data support kazrin's interaction with both dynein/dynactin and endosomes, the precise molecular mechanism remains to be determined. Additional experiments would be needed to distinguish between these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The authors propose that kazrin's role in endocytic recycling might explain developmental phenotypes observed upon kazrin depletion, including altered cell adhesion and EMT defects, potentially through defective recycling of cadherins and other adhesion molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 connect the current findings to prior developmental studies. The speculation is appropriately qualified and supported by relevant citations. Claim C160-C161 about E-cadherin levels in Xenopus is particularly well-supported by cited data showing that the effect can be reversed by inhibiting endocytic uptake.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The authors note that kazrin is vertebrate-specific and speculate that vertebrates may have evolved specialized trafficking machinery to regulate adhesion complexes, making kazrin a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C164 about kazrin's vertebrate-specific expression and the evolution of cadherins/desmosomes are appropriately cited. Claims C165-C166 are clearly presented as speculation about evolutionary implications and therapeutic potential, which is appropriate for a discussion section.",
+    "result_type": "MINOR"
+  }
+]

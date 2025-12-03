@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "RNA sequencing identified distinct temporal waves and modular organization of gene expression during Stentor regeneration. The study found 4811 differentially expressed genes (~10% of genome) across three regeneration paradigms: 4323 genes in sucrose-shocked cells, 1020 in posterior half-cells, and 229 in anterior half-cells. Comparative analysis revealed distinct modules corresponding to oral apparatus regeneration, posterior holdfast regeneration, and wound recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C22-C26 collectively establish the transcriptomic approach and key quantitative findings. The modular organization is supported by Venn diagram analysis (Figure 1C) and distinct gene expression patterns across regeneration paradigms. Sample sizes (n=4 replicates, ~20 cells per timepoint) and statistical methods (Sleuth with natural splines) are appropriate for RNAseq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Centriole and cilia genes show temporally coordinated expression during oral apparatus regeneration. Centriole biogenesis genes (including SAS6, POC1, CEP76) peak in clusters 2-3 (1.5-2 hours), coinciding with basal body formation. Motile cilia genes (dynein arms, radial spokes, dynein regulatory complex) peak later in clusters 3-4 (2-5 hours), correlating with ciliary assembly and coordination of beating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C40 demonstrate strong temporal correlation between gene expression timing and known morphological events from prior microscopy studies (C28, C40 cite Paulin and Bussey 1971). The sequential expression of centriole genes before cilia genes (C39) is biologically consistent with the assembly process. Expression patterns are validated by comparison with Chlamydomonas (C98-C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C75"
+    ],
+    "result": "Sequential gene expression during regeneration follows a cascade mechanism rather than a production schedule. Cycloheximide treatment revealed that only 5% (21/431) of oral apparatus-specific genes are unaffected by translation inhibition, with the majority in early cluster 2. Later clusters (4-5) show dramatic loss of expression when translation is blocked, indicating dependency on early gene products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C49-C52, and C75 provide strong evidence for cascade organization through cycloheximide experiments. The differential effect on early versus late clusters (C51-C52) supports the cascade model over direct triggering. However, the study does not rule out mixed mechanisms or identify the specific early gene products triggering later waves, suggesting followup work is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "E2F transcription factor is an early-expressed regulator required for completion but not initiation of oral apparatus regeneration. E2F is upregulated even with cycloheximide treatment and has 13 predicted targets (10 in cluster 2). RNAi knockdown shows normal primordium formation at 4 hours but failure to progress at later timepoints (8+ hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 establish E2F's role through multiple lines of evidence: early expression (C56), predicted targets with appropriate timing (C57-C59), and functional validation via RNAi (C63-C64). The phenotype (C65) resembles nuclear removal experiments from prior work. Statistical significance is reported for RNAi experiments (Figure 5K, p<0.0001). The activating function inference (C61) is supported by target distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Pumilio RNA-binding protein is required for proper oral apparatus size scaling during regeneration. Five Pumilio orthologs show differential expression, with 34 predicted targets clustering at 120 and 300 minutes. RNAi of SteCoe_27339 causes regeneration of abnormally small oral apparatus (most common defect) and other morphological abnormalities, with no effect on pre-shocked cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 and C112-C123 establish Pumilio's role through phylogenetic validation (C113-C114), target identification (C67, C115), and functional analysis (C71-C72, C120-C123). The size-scaling phenotype is reproducible across multiple experiments (C123). However, the mechanism by which Pumilio controls size remains unclear, and the speculation about signaling pathway regulation (C118) requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Bisection-specific gene expression reflects cellular recovery from wounding rather than wound closure itself. Upregulated genes peak at 120-240 minutes, long after membrane sealing (100-1000 seconds). The module includes ammonium transporters and carbonic anhydrase, suggesting restoration of intracellular pH as a key recovery function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 and C109-C111 establish the wound recovery interpretation through timing analysis (C43-C45 cite Zhang et al. 2021) and functional gene annotation (C46-C48). The pH restoration hypothesis (C48, C110) is reasonable given the acidic pond water environment and known roles of these proteins in animals (C47, C109). However, direct pH measurements during regeneration would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Regeneration in Stentor represents a collection of distinct, part-specific processes rather than a single master program. The general regeneration module contains the fewest genes, suggesting regeneration is a composite of distinct expression modules specific for individual cellular structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by the comparative transcriptomic data showing distinct modules (C7) and the small size of the general regeneration module relative to structure-specific modules. This conclusion is consistent with the Venn diagram analysis (Figure 1C) and the identification of separate modules for oral apparatus, tail, and wound response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C85",
+      "C86"
+    ],
+    "result": "Oral apparatus regeneration in bisected cells may utilize pre-existing protein pools rather than new synthesis for ciliary assembly. Almost no motile ciliary machinery genes are differentially expressed in the oral apparatus-specific module, contrasting with extensive ciliary gene expression in sucrose-shocked cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 is well-supported by the data, but the mechanistic explanations (C85-C86) are speculative. The size-scaling hypothesis (C86) is interesting but lacks direct evidence. Alternative explanations (e.g., post-transcriptional regulation, different timing windows) are not fully explored. Direct protein measurements or pulse-chase experiments would be needed to validate the protein re-utilization hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Tail regeneration involves minimal transcriptional changes (13 upregulated genes) dominated by EF hand proteins. Gene upregulation occurs after structural regeneration is complete (120+ minutes), suggesting replenishment of protein pools rather than de novo assembly requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 establish the tail regeneration program through gene counts (C101), timing analysis (C103), and functional annotation (C105-C106 cite prior structural studies). The interpretation that upregulation occurs post-assembly (C104) is consistent with prior observations that holdfast regenerates in enucleated cells (C102). However, the speculation about protein pool replenishment (C104) lacks direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cell cycle machinery may be co-opted to regulate regeneration timing, though alternative explanations exist. Morphological similarities between regeneration and division, combined with cell cycle gene expression, suggest possible regulatory co-option. However, micronuclear mitosis during regeneration provides an alternative explanation for cell cycle gene upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 present competing hypotheses without definitive resolution. The morphological similarity (C77) and gene expression data support co-option, but the micronuclear mitosis alternative (C78, citing Guttes and Guttes 1959) is equally plausible. The study does not provide experiments to distinguish between these mechanisms. This represents an important area for future investigation but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Clusters 2-3 likely contain undiscovered factors for centriole biogenesis and positioning. Known centriole/cilia proteins from proteomics (173/215) correspond to upregulated genes. Specific hypotheses include LRRC45 for basal body organization, ciliopathy genes for cilia specification, and GAS2 for membranelle alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 provides validation through proteomics correlation, but claims C80-C84 are speculative predictions. The LRRC45 timing hypothesis (C82) is reasonable but untested. The ciliopathy gene hypothesis (C83) and GAS2 hypothesis (C84) lack functional validation. These represent testable predictions for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Conserved developmental regulators like Pumilio suggest deep conservation of morphogenetic mechanisms between single-celled and multi-celled organisms. The identification of Pumilio and other conserved regulatory genes during Stentor regeneration indicates potential shared molecular mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C90 are supported by the identification of conserved regulators (Pumilio, E2F) with functional roles in regeneration. However, the broader conclusion about conservation requires caution - the study shows limited overlap with animal regeneration programs (planaria, zebrafish comparisons show ~19% overlap, near chance levels). The conservation may be at the level of individual regulatory proteins rather than entire pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The study employed appropriate methods for RNAseq analysis including cell culture, regeneration induction, RNA extraction, library preparation, sequencing, and bioinformatic analysis. Key parameters include 4 replicates per timepoint, ~20 cells per sample, paired-end 100bp sequencing, Trinity assembly, Kallisto quantification, and Sleuth differential expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C149 document the experimental methods. The approach is generally sound with appropriate replication (C130), validated tools (Trimmomatic, Trinity, Kallisto, Sleuth), and proper statistical methods (natural splines, q-value thresholds). However, some details are missing: no mention of random seeds for stochastic algorithms, limited information on batch effects, and no explicit statement about data normalization procedures beyond Kallisto's built-in methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background information establishes Stentor coeruleus as a model system for single-cell regeneration. The oral apparatus can be induced to shed and regenerate through reproducible morphological steps requiring transcription. Bisected cells regenerate missing structures, with each half retaining sufficient genetic material due to the polyploid macronucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide essential background from prior literature (multiple citations to Tartar 1961, Morgan 1901, and others). These are well-established facts about Stentor biology that provide context for the current study. The claims accurately represent prior knowledge and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Morphological staging of regeneration provides temporal landmarks for gene expression analysis. Key events include membranellar band shedding (t=0), basal body formation (1 hour), first cilia visible (3 hours), and complete regeneration (8 hours). Bisected cells show similar timing and morphological progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 describe morphological observations that validate the timing of molecular events. These observations are consistent with prior microscopy studies (cited in C28, C40) and provide essential context for interpreting gene expression timing. The correlation between morphology and gene expression (C97) strengthens the biological interpretation of the transcriptomic data.",
+    "result_type": "MINOR"
+  }
+]

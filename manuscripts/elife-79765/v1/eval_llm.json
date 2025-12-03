@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C132"
+    ],
+    "result": "The circadian clock in Neurospora crassa maintains robust molecular timekeeping during long-term glucose starvation (40 hr at 0.01% glucose), despite drastic alterations in clock component stoichiometry and phosphorylation. Specifically, WC-1 and WC-2 protein levels decreased to ~15% and ~20% of initial levels respectively, while FRQ protein levels remained constant but showed hyperphosphorylation. Despite these changes, FRQ protein oscillated with similar period and phase in both standard and starvation conditions, and clock-controlled genes (ccg-2, fluffy) maintained rhythmic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C33, C36-C40, C45-C49, C54-C55, and C132 are well-supported by Western blot data (Figures 1B, 1E, 1F), qPCR time course data (Figure 1G), and densitometry analysis (Figure 1\u2014figure supplement 1A). The data consistently show maintained clock oscillation despite altered protein stoichiometry and phosphorylation states. Multiple independent measurements (protein levels, RNA levels, oscillation parameters) converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C50"
+    ],
+    "result": "Despite significantly reduced WCC protein levels during starvation, frq RNA levels remained compensated (similar between standard and starvation conditions in constant light), and RNA stability was unchanged. This suggests a compensatory mechanism maintains WCC transcriptional activity despite reduced protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C50 are supported by qPCR data (Figure 1C, 1D) showing similar frq, wc-1, and wc-2 RNA levels under standard and starvation conditions, and similar RNA decay kinetics after light-dark transfer. The inference that WCC activity is maintained (C50) is reasonable given the maintained RNA levels despite drastically reduced protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C133"
+    ],
+    "result": "Glucose starvation causes differential subcellular redistribution of clock proteins: WC proteins are virtually absent from the cytosol of starved cells while nuclear concentrations remain similar to control cells. In contrast, FRQ distribution remains predominantly cytosolic and unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C133 are supported by subcellular fractionation data (Figure 2B) showing clear differences in WC protein distribution between cytosolic and nuclear fractions under starvation versus standard conditions. The data are consistent with previous literature (C59) and provide a mechanistic insight into how clock function is maintained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The light-induced initial increase of RNA levels for frq, wc-1, and al-2 was lower in starved compared to non-starved cultures, while steady-state expression after light adaptation was similar. This suggests reduced light-inducible WCC pool or photoreceptor function during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by qPCR data (Figure 2A) showing differential kinetics of light induction between standard and starvation conditions. The inference about reduced photoreceptor function (C58) is reasonable given the kinetic differences, though the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In the frq9 mutant (lacking functional FRQ), starvation decreased frq9 RNA levels while wt frq RNA remained unchanged, resulting in similar promoter activity between strains during starvation. WC-1 levels did not change significantly in frq9 during starvation, while WC-2 was moderately reduced. This suggests FRQ-mediated processes contribute to compensation of frq levels at different glucose availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by qPCR data (Figure 3A) and Western blot data (Figure 3B) comparing wt and frq9 responses to starvation. The inference about FRQ-mediated compensation (C64) is reasonable given the differential responses between strains, though the specific mechanism is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The frq\u0394FCD1-2 mutant (impaired FRQ-CK1a interaction) still displayed electrophoretic mobility shift upon starvation, and frq RNA remained compensated. However, glucose-dependent WCC level changes were slightly affected. This indicates stable CK1a recruitment to FRQ is not essential for starvation-induced FRQ hyperphosphorylation or frq RNA compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by Western blot and qPCR data (Figure 3C) showing maintained FRQ phosphorylation shift and frq RNA compensation in the frq\u0394FCD1-2 mutant. The conclusion that CK1a recruitment is not essential for these responses is well-supported, though the slight effect on WCC levels suggests some involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C175"
+    ],
+    "result": "In the mcb mutant (constitutively active PKA), glucose deprivation did not reduce WC-1 or WC-2 levels, and frq RNA became elevated under starvation. This indicates PKA plays a significant role in transducing starvation signals to the circadian clock and coordinating starvation-induced changes in the molecular oscillator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 and C175 are supported by Western blot and qPCR data (Figure 3D) showing altered starvation response in the mcb mutant. The conclusion that PKA is a significant transducer of starvation signals is well-supported by the complete absence of typical starvation responses in this mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C167"
+    ],
+    "result": "In the qa-gsk mutant (GSK-depleted), WC levels were reduced upon starvation (even more than wt), but FRQ did not become hyperphosphorylated and frq RNA levels moderately decreased. This indicates GSK supports FRQ hyperphosphorylation during starvation, but this modification is not sufficient to impact WCC levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 and C167 are supported by Western blot and qPCR data (Figure 3E) showing differential responses in the qa-gsk mutant. The conclusion that GSK is required for FRQ hyperphosphorylation but not WCC reduction is well-supported by the dissociation of these two phenotypes in the mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C165"
+    ],
+    "result": "Starvation decreases PP2A activity in Neurospora to levels characteristic of the rgb-1 mutant (lacking a PP2A regulatory subunit). In rgb-1, WC protein levels were not reduced during starvation, indicating PP2A affects the glucose-dependent change in clock component stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, C91, C92, and C165 are supported by PP2A activity assay data (Figure 3F) and Western blot data (Figure 3G) from the rgb-1 mutant. The conclusion that PP2A is required for starvation-induced WCC reduction is well-supported by the maintained WCC levels in rgb-1 during starvation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C32",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "RNA-seq analysis revealed that long-term glucose starvation affected >20% of coding genes, with the transcriptomic response highly dependent on WC-1. Over 1300 genes displayed different responses to starvation in wt versus \u0394wc-1, with the WCC affecting expression of genes involved in carbohydrate, amino acid, and fatty acid metabolism. The lack of WCC resulted in a shift from downregulation of amino acid synthesis to upregulation of amino acid catabolism and downregulation of fatty acid synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C32, C93-C105, C138-C140 are supported by comprehensive RNA-seq data (Figures 4A-D, Table 1, supplementary figures) and GO/KEGG pathway analysis. The data show clear strain-specific differences in transcriptomic responses to starvation. qRT-PCR validation (Figure 4\u2014figure supplement 7, C109) confirms the reliability of the RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C34",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C128"
+    ],
+    "result": "Wild-type Neurospora recovers faster from starvation than clock mutants (frq10, \u0394wc-1) upon glucose resupply, as measured by dry weight increase in both light-dark cycles and constant darkness, and by growth rates on race tubes. Starved wt cultures formed small satellite colonies that may facilitate growth reinitiation. This indicates a functional clock facilitates recovery from starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C34, C110-C118, and C128 are supported by multiple growth recovery experiments (Figures 5B-D, Figure 5\u2014figure supplement 1) showing consistently faster recovery in wt compared to clock mutants across different assay conditions. The visual observation of satellite colonies (C110, C111) provides additional phenotypic evidence, though the functional significance is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C137"
+    ],
+    "result": "The high-capacity glucose transporter glt-1 showed proper adaptation to glucose levels in wt (higher in 2% glucose, lower in starvation, increasing upon glucose resupply) but aberrant expression in \u0394wc-1 and frq10 (upregulated during starvation, decreased or unchanged upon glucose addition). This indicates the WCC is crucial for adaptation of glucose transport to nutrient levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 and C137 are supported by RNA-seq data (Figure 5E) and qPCR data (Figure 5F) showing clear differences in glt-1 expression patterns between wt and clock mutants. The conclusion that WCC is crucial for glucose transporter adaptation is well-supported by the consistent aberrant expression in both clock mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C90",
+      "C151"
+    ],
+    "result": "Increased turnover of WC-1 may be partially responsible for low WCC levels in starved cells, as suggested by cycloheximide chase experiments. The delayed dephosphorylation of WC-2 in starved cells can be a consequence of decreased PP2A activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C90, and C151 are supported by cycloheximide chase experiments (Figure 1\u2014figure supplement 1B) showing reduced WC-1 stability during starvation and delayed WC-2 dephosphorylation. The inferences are reasonable given the data, though the mechanisms are not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C163",
+      "C164",
+      "C171",
+      "C176",
+      "C177"
+    ],
+    "result": "The authors propose a model where hyperphosphorylation of FRQ during starvation weakens inhibitory feedback on WCC (compensating for reduced transcription/translation) but also leads to faster WCC degradation. PKA acts as a main coordinator of clock adaptation to nutrient conditions, with reduced PKA activity during starvation ensuring preserved WCC transcriptional activity. Multiple signaling pathways (PKA, PP2A, GSK) ensure frq expression and oscillation remain nutrient-compensated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C159, C163-C164, C171, C176-C177 represent a mechanistic model that integrates the experimental findings. While the model is consistent with the data (particularly the mutant analyses), many aspects are speculative (marked as SPECULATION in evidence_type). Key mechanistic details remain unclear: whether FRQ is a direct GSK substrate (C168), whether CK1-independent mechanisms phosphorylate FRQ (C159), and the precise molecular mechanisms of compensation. The model provides a useful framework but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims about circadian clock function, TTFL mechanisms, clock-metabolism interactions, and the Neurospora clock system are established knowledge supported by citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C31 represent established knowledge in the field, supported by appropriate citations. These provide necessary context for the current work and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C35",
+      "C51",
+      "C52",
+      "C53",
+      "C95",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C129",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C136",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Various supporting claims about clock flexibility, fitness impacts, specific gene responses, and comparisons to other organisms. These include both data-supported findings (ccg-2/fluffy oscillation, RNA-seq validation, melanin synthesis genes) and broader contextual/interpretive statements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C35, C51-C53, C95, C106-C109, C129-C131, C134-C136, C141-C148 are a mixture of data-supported findings and interpretive conclusions. The data-supported claims (C51-C53, C106, C109) are well-validated. The interpretive claims (C10-C11, C35, C134-C135, C147-C148) are reasonable inferences from the experimental data, though some aspects are speculative. The comparative claims (C141-C145) are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C71",
+      "C72",
+      "C77",
+      "C78",
+      "C85",
+      "C86",
+      "C89",
+      "C119",
+      "C120",
+      "C161",
+      "C162",
+      "C166",
+      "C168",
+      "C169",
+      "C170",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Background claims about kinase/phosphatase functions (PKA, PP2A, GSK, CK1a) and glucose transport mechanisms, supported by citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C71-C72, C77-C78, C85-C86, C89, C119-C120, C161-C162, C166, C168-C170, C172-C174 represent established knowledge about signaling pathways and glucose transport, appropriately supported by citations. These provide necessary mechanistic context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "Starvation triggers characteristic changes in the activity of signaling routes (PKA, PP2A, GSK) that affect basic components of the circadian clock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is a summary conclusion supported by the comprehensive mutant analysis data (Figures 3D-G) showing altered clock responses in mcb, qa-gsk, and rgb-1 mutants. This integrative conclusion is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  }
+]

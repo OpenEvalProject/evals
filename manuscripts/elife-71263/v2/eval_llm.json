@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript reviews prior work on neural circuit properties relevant to sensory processing, including fast perception, EI co-tuning, short-term plasticity, recurrent excitation, Hebbian assemblies, persistent activity, transient responses, and balanced amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 accurately summarize established findings from the cited literature. These are background claims supported by appropriate citations to experimental and theoretical studies. The characterization of balanced amplification as linear (C14-C15) is accurate and sets up the motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C66",
+      "C67",
+      "C105",
+      "C106",
+      "C107",
+      "C112"
+    ],
+    "result": "The study introduces Nonlinear Transient Amplification (NTA), a mechanism combining supralinear activation functions, recurrent excitation, and short-term plasticity that generates transient onset responses with better stimulus encoding than steady-state activity, while settling into inhibition-stabilized states and avoiding persistent activity when combined with EI co-tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22, C66-C67, C105-C107, and C112 collectively define and characterize NTA based on analytical and numerical results presented throughout the manuscript. The mechanism is demonstrated through rate-based models (Figures 1-5), analytical derivations (Materials and methods), and spiking network simulations (Figure 6). The key properties are consistently shown across multiple model configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C29",
+      "C18"
+    ],
+    "result": "In supralinear networks with negative determinant det(J), external stimulation above a critical threshold causes the system to transition from stable to unstable dynamics, a behavior distinct from linear networks where stability is input-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C28-C29, and C18 are supported by analytical derivations in Materials and methods and demonstrated in Figure 1C-E. The phase portraits (Figure 1D) clearly show the disappearance of fixed points during stimulation, and the characteristic function analysis (Figure 1E) provides the mathematical basis for this transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C115"
+    ],
+    "result": "Spike-frequency adaptation (SFA) cannot stabilize run-away excitation at a stable fixed point; weak SFA fails to prevent instability while strong SFA produces oscillatory dynamics rather than stable steady states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C115 are supported by simulations (Figure 2A, Figure 2\u2014figure supplement 1) and analytical proofs in Materials and methods. The analytical derivation shows that strong SFA creates a stable limit cycle rather than a stable fixed point, which is demonstrated numerically and consistent with prior work (van Vreeswijk and Hansel, 2001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Short-term plasticity (both E-to-E STD and E-to-I STF) can re-stabilize ensemble dynamics after transient amplification, creating stable high-activity fixed points that require inhibition (for E-to-I STF) or can exist without it (for E-to-E STD), while preserving the ability to amplify stimuli during the onset phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are demonstrated through simulations (Figure 2B, 2E) and analytical analysis of the three-dimensional dynamical system (Materials and methods). The characteristic function analysis (Figure 2D) provides intuitive understanding of how STP changes network stability. The distinction between E-to-E STD and E-to-I STF is clearly shown and analytically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C108",
+      "C109",
+      "C125"
+    ],
+    "result": "NTA provides orders of magnitude larger amplification than linear networks and SSNs without STP, operates nonlinearly with a critical threshold that can be arbitrarily low with sufficiently strong recurrent connections, and achieves much larger amplification than balanced amplification due to the switch in dynamical state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C108-C109, and C125 are supported by Figure 2\u2014figure supplement 2 (showing threshold behavior), Figure 1F (showing parameter dependence), and Figure 2\u2014figure supplement 3 (comparing amplification across mechanisms). The analytical framework in Materials and methods provides the theoretical basis for these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Networks with STP can transition from non-ISN to ISN states during stimulation in a parameter-dependent manner, with the paradoxical effect serving as a sufficient but not necessary condition for ISN in E-to-E STD networks, while in E-to-I STF networks the paradoxical effect and ISN imply each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 are supported by analytical derivations (Materials and methods, Appendix 2-3), simulations showing ISN index changes (Figure 2F, Figure 2\u2014figure supplement 5), and experimental tests of the paradoxical effect (Figure 2H, Figure 2\u2014figure supplement 6). The distinction between E-to-E STD and E-to-I STF is rigorously proven analytically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In models with capped firing rates, STP (but not SFA) prevents persistent activity and produces transient onset responses comparable to uncapped models, with all findings qualitatively similar in realistic spiking neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are demonstrated through simulations with rate caps (Figure 2\u2014figure supplement 9) and spiking networks (Figure 2\u2014figure supplement 10). The results show that the key properties of NTA are preserved across different model implementations, strengthening the generality of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C21",
+      "C107",
+      "C136",
+      "C141"
+    ],
+    "result": "EI co-tuning broadens the parameter regime for uni-stability compared to global inhibition, preventing multi-stable attractor dynamics and persistent activity while still permitting NTA, though with somewhat weaker amplification than global inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77, C21, C107, C136, and C141 are supported by analytical derivations (Materials and methods) showing broader uni-stability regimes (Figure 3C), simulations demonstrating the difference between multi-stable and uni-stable dynamics (Figure 3B), and comparisons of amplification strength (Figure 3\u2014figure supplement 1). The analytical proof extends to arbitrary numbers of ensembles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "NTA's onset responses provide better pattern completion and maintain stimulus selectivity compared to fixed point activity, with the quality of both depending on recurrent excitatory tuning strength (\u03b2), and these findings hold for both E-to-E STD and E-to-I STF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C80, C82-C83, C85-C88 are supported by simulations in rate-based networks (Figure 4B-F) and confirmed for E-to-I STF (Figure 4\u2014figure supplement 2). The Association index and distance to decision boundary metrics provide quantitative measures of pattern completion and selectivity. The parameter sweep over \u03b2 (Figure 4E-F) demonstrates the importance of recurrent excitatory tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In morphing experiments, recurrent excitation plays an important role in selective amplification, with onset responses providing better pattern separation than fixed points for ambiguous stimuli, while fixed points better separate pure stimuli, and these findings hold for both E-to-E STD and E-to-I STF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92, C95-C97 are supported by morphing experiments (Figure 5) showing how activity varies with stimulus ambiguity parameter p. The distance to decision boundary (Figure 5D-E) and Separation index (Figure 5\u2014figure supplement 1) quantify the differential performance of onset vs. fixed point for different stimulus types. Results are confirmed for E-to-I STF (Figure 5\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In spiking neural networks, NTA produces pronounced transient onset responses with better stimulus separation than fixed points, weak rotational dynamics consistent with experiments, and strong pattern completion during the onset phase, preserving all key characteristics of the rate-based models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 are demonstrated through spiking network simulations (Figure 6). The ensemble activity measurements (Figure 6B-C), PCA visualization (Figure 6D), and pattern completion analysis (Figure 6E, Figure 6\u2014figure supplement 1) show that NTA properties are preserved in more realistic models, strengthening the biological plausibility of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C116",
+      "C117"
+    ],
+    "result": "The present work generalizes prior work by Loebel and Tsodyks (2002) to both E-to-E STD and E-to-I STF, provides in-depth characterization of amplification, pattern completion, and inhibition-stabilization properties, explores EI co-tuning interactions with NTA, and contrasts NTA with alternative mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114, C116-C117 accurately describe the contributions of the present study relative to prior work. The manuscript systematically analyzes both forms of STP (Figures 2-6), characterizes ISN properties (Figure 2F-H, Appendices 2-3), examines co-tuning (Figure 3), and compares with balanced amplification and other mechanisms (Discussion).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127"
+    ],
+    "result": "Balanced amplification is a well-studied linear mechanism relying on non-normality that lacks activation thresholds, while NTA is nonlinear with thresholds and relies on STP; after transient amplification NTA settles into ISN states compatible with SSN theory; both mechanisms could co-exist in biological networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124, C126-C127 accurately characterize balanced amplification based on cited literature and contrast it with NTA based on the study's findings. The comparison is supported by Figure 2\u2014figure supplement 3 showing amplification differences. The statement about potential co-existence (C127) is appropriately framed as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The main conclusions about stabilization mechanisms hold in networks with det(J)>0 with delayed/slow inhibition; NTA shares properties with network criticality (synchronous activation, STP tuning to critical states) but differs in that transitions to supercritical dynamics occur in a controlled, stimulus-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by simulations (Figure 2\u2014figure supplement 11) and appropriate citations to criticality literature (Plenz and Thiagarajan, 2007; Levina et al., 2007). The comparison with criticality is conceptually sound and appropriately qualified as sharing some but not all properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The requirement for recurrent co-tuned inhibition in NTA is similar to semi-balanced networks, though semi-balanced network theory has only been applied to steady-state dynamics; EI co-tuning features in several models supporting various functions including stability, efficient coding, novelty detection, and robustness to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 accurately characterize related theoretical work with appropriate citations. The comparison to semi-balanced networks (Baker et al., 2020) is conceptually appropriate, and the statement about its limitations (C138) is factually correct. The summary of EI co-tuning functions (C139-C140) is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "NTA is consistent with multiple experimental findings: transient shifts to supercritical states (Shew et al., 2015), strong recurrent excitatory connectivity between similarly tuned neurons, critical stimulus strength for ensemble activation linked to perceptual thresholds, uni-stable sensory networks, better encoding in onset responses, coactivity-based information representation, and ubiquitous EI co-tuning in sensory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C148 appropriately connect the model predictions to experimental findings with proper citations. Each connection is plausible and well-justified. The claims are appropriately framed as consistency with experiments rather than direct validation, which is appropriate for a theoretical/computational study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The model makes several simplifying assumptions (fixed inhibitory input, limited to few ensembles) motivated by experimental observations, but simulations suggest main findings remain valid with feedforward inhibition present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 accurately describe modeling assumptions and their justifications. The statement about robustness to feedforward inhibition (C152-C153) is supported by Figure 1\u2014figure supplement 1 and Figure 2\u2014figure supplement 12. The acknowledgment of limitations (C154) is appropriate and honest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The study makes several testable predictions: temporal differences in synaptic transmission may preserve selectivity; ensembles can transition from non-ISN to ISN states (testable via paradoxical effect); onset activity provides better encoding and correlates with fixed point activity; NTA produces weak rotational dynamics distinct from non-normal amplification mechanisms; strong NTA is likely most prevalent in sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C165 present reasonable predictions and speculations based on the model. The predictions about ISN transitions (C156-C158) are well-grounded in the analytical results. The predictions about dynamics signatures (C159-C162) follow logically from the model structure. The speculation about prevalence in sensory systems (C164-C165) is appropriately qualified and reasonable given the model properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The theoretical framework derives from minimal assumptions (nonlinear transfer function, recurrent excitation, STP), reveals functional benefits of STP and EI co-tuning found in sensory circuits, suggests transient onset responses are ideally suited for coactivity-based encoding, and provides testable predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 accurately summarize the study's approach and contributions. The framework is indeed based on minimal, biologically plausible assumptions. The functional benefits of STP and co-tuning are demonstrated throughout the manuscript. The conclusion about onset responses (C168) is well-supported by the pattern completion and selectivity analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "A critical activation threshold offers a possible explanation for sensory perception experiments showing threshold behavior; following transient amplification, ensemble dynamics are inhibition-stabilized, rendering the model compatible with existing SSN work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 appropriately connect model properties to experimental observations and existing theory. C110 is framed as speculation with appropriate citations. C111 is well-supported by the ISN analysis (Figure 2F-H) and analytical derivations, with appropriate citations to SSN literature.",
+    "result_type": "MINOR"
+  }
+]

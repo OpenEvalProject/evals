@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript establishes the biological and empirical context for studying polygenic adaptation, arguing that it is ubiquitous based on evidence from artificial selection, human evolution, and GWAS studies, while noting methodological challenges in detecting it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 collectively provide a well-supported literature review establishing the prevalence of polygenic adaptation (C1-C7), evidence from human evolution (C8-C10), GWAS findings (C11-C13), and methodological challenges (C14-C16). These claims are appropriately cited and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript reviews prior theoretical work on polygenic adaptation, highlighting that Lande's model assumes normality and constant variance, that Barton and Turelli extended this to higher moments, and that infinite population models differ fundamentally from finite populations where drift affects allele frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 accurately describe prior theoretical work with appropriate citations (C19-C21) and correctly identify the key limitation that infinite population models (C22) differ from finite populations where drift is important (C23-C24). This provides essential motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "The manuscript derives that the phenotypic response to a shift in optimum depends on changes to the 2nd and 3rd central moments of the phenotypic distribution, with Lande's approximation holding when genetic variance is dominated by small/moderate effect loci, but deviating when large effect loci contribute substantially, leading to a two-phase dynamic with a rapid phase followed by a prolonged quasi-static phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C43 present the core theoretical results on phenotypic dynamics, supported by mathematical derivations (Equation 3), simulations (Figure 2), and analytical approximations. The distinction between Lande and non-Lande cases is well-justified theoretically and empirically validated. The two-phase dynamic (C40-C43) follows logically from the behavior of the central moments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60",
+      "C64",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "During the rapid phase, directional selection differentially affects aligned versus opposing alleles, with an allele's contribution to phenotypic change proportional to its contribution to variance before the shift. Moderate and large effect alleles make the greatest per-site contributions, while moderate effect alleles experience the greatest frequency changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C109 describe the rapid phase dynamics with strong theoretical support (Equations 10-13) and simulation validation (Figure 4). The proportionality between variance contribution and phenotypic change (C59-C60, C107) is a key finding derived analytically and confirmed empirically. The differential contributions by effect size (C108-C109) follow logically from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C78",
+      "C110",
+      "C111"
+    ],
+    "result": "Over the long term, small frequency differences from the rapid phase translate into small differences in fixation probabilities, with prolonged weak directional selection amplifying these differences in the non-Lande case. This process involves massive turnover where transient contributions of large effect alleles are supplanted by fixed moderate and small effect alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C111 describe the equilibration phase dynamics with theoretical derivations (Equations 14-28) and simulation support (Figures 5-6). The turnover in genetic architecture (C111) is a major finding well-supported by both analytical approximations and simulations. The distinction between Lande and non-Lande cases (C67-C68, C78) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The genetic basis of adaptation undergoes dramatic turnover during equilibration, with the long-term contribution of low-frequency large effect alleles diminished relative to their short-term contribution, while moderate effect alleles at higher initial frequencies have amplified long-term contributions. This occurs because large effect alleles start at low frequencies due to strong stabilizing selection and are unlikely to exceed a critical frequency threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 detail the mechanisms of genetic turnover with strong support from linear approximations (Equations 19-28) and simulations (Figure 6, Appendix figures). The critical frequency concept (C89-C90) and its dependence on effect size (C91-C92) are well-justified theoretically and empirically. The role of stabilizing selection in shaping these dynamics (C93) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97",
+      "C124",
+      "C125",
+      "C130"
+    ],
+    "result": "While long-term adaptation arises from an excess of aligned fixations, this excess is typically small relative to equilibrium fixation rates. For large effect sizes, nearly all fixations are aligned, but most phenotypic change comes from small and moderate effect alleles. The number of aligned and opposing fixations are typically nearly equal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C130 characterize fixation patterns with strong empirical support from simulations (Figure 7). The finding that fixation excesses are modest (C94, C97) yet sufficient for adaptation is well-demonstrated. The near-equality of aligned and opposing fixations (C130) is a key result with important implications, clearly shown in Figure 7A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study finds that Lande's prediction of exponential approach to the new optimum is accurate when the trait is sufficiently polygenic, the shift is not too large, and genetic variance is dominated by small/moderate effect loci. When large effect loci contribute markedly, a pronounced quasi-static phase follows the initial rapid change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 summarize the main findings regarding Lande's approximation, with C100-C101 accurately describing prior work and C102-C103 presenting the key results of this study. These findings are well-supported by theoretical analysis (Equations 3-6) and extensive simulations (Figure 2, Appendix figures 26-27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The finding that large effect alleles almost never sweep to fixation appears to contradict previous studies, but these discrepancies are explained by earlier work considering parameter ranges that violate the assumptions of this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 address an apparent contradiction with prior literature. The explanation (C114) is reasonable and supported by specific examples of how previous studies violated the current assumptions (discussed in detail in the Discussion). This reconciliation strengthens rather than weakens the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The manuscript speculates that pleiotropy, linkage disequilibrium, and demographic changes may affect polygenic adaptation but expects the main features of the dynamics to remain intact, with short-term contributions proportional to variance contributions and long-term contributions arising from differential fixation probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C121 are explicitly speculative (C115-C116, C121) about factors not included in the model. While the predictions about robustness (C119-C121) are reasonable extrapolations from the current findings, they remain untested hypotheses requiring future work. The claims appropriately acknowledge these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Polygenic adaptation is predicted to have minor effects on neutral diversity patterns at any given time point because it introduces only small changes to allele frequencies at individual loci. In contrast, long-term stabilizing selection may substantially affect neutral diversity through background selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 present implications for neutral diversity patterns, logically derived from the finding that frequency changes are small (C123) and fixation trajectories are drawn out (C125). The contrast with stabilizing selection (C127-C128) is well-reasoned. These are inferences from the model results rather than direct findings, but they are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The study argues that for polygenic adaptation, focusing on individual adaptive fixations may be uninformative because fixed alleles are largely a random draw from many contributing alleles and aligned/opposing fixations are nearly equal in number. Instead, identifying traits under selection promises more important insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 present important implications for studying human adaptation, logically following from the findings about fixation patterns (C130-C131) and the stochastic nature of which alleles fix (C131). The philosophical conclusion (C132) and recommendation (C133-C134) are well-justified by the results, though they represent interpretations rather than direct findings.",
+    "result_type": "MAJOR"
+  }
+]

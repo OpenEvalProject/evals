@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C30",
+      "C31"
+    ],
+    "result": "CAMT-1 is required for proper oxygen (O2) responses in C. elegans. Forward genetic screening identified camt-1 mutants with defective aggregation behavior. Multiple camt-1 alleles (db973, ok515, and CG-1 domain mutants) showed hyperactivity at 7% O2 and reduced arousal at 21% O2, which were rescued by wild-type camt-1 transgenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C16-C20, C30-C31 provide converging evidence from genetic screens, multiple independent alleles, rescue experiments, and domain-specific mutations. The phenotypes are consistent across different mutant alleles and are rescued by wild-type transgenes, strongly supporting the conclusion that CAMT-1 is essential for O2 responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CAMT-1 has conserved CAMTA domain architecture and is broadly expressed in the C. elegans nervous system. The protein contains characteristic domains (CG-1, IPT/TIG, ANKs, CaMBD, IQ motifs, NLS/NES) and is expressed in sensory neurons, motor neurons, URX O2-sensing neurons, and RMG interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by sequence analysis, functional reporter constructs that rescue mutant phenotypes, and imaging data showing expression patterns. The domain architecture is consistent with known CAMTA proteins across species, and the expression pattern is documented with functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "CAMT-1 is required for multiple C. elegans behaviors beyond O2 responses, including CO2 avoidance and chemotaxis to salts and odorants. camt-1 mutants showed abnormal \u03a9-turns in response to CO2 and reduced chemotaxis toward NaCl, benzaldehyde, and diacetyl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by behavioral assays showing defects in multiple sensory modalities (CO2, salt, odorants) that are rescued by wild-type camt-1. The pleiotropic behavioral phenotypes are consistent with broad neuronal expression and support a general role in nervous system function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CAMT-1 acts in multiple neurons to regulate O2 responses. Cell-specific rescue experiments showed that CAMT-1 expression in RMG interneurons rescued 21% O2 responses but not 7% O2 responses, while pan-neuronal expression rescued both phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by cell-specific rescue experiments showing differential rescue patterns. The data indicate CAMT-1 functions in multiple neuronal types, though the incomplete rescue with cell-specific expression suggests complex circuit requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "CAMT-1 can function post-developmentally in adults to regulate O2 responses. Heat-shock-induced expression of CAMT-1 in L4/young adult animals partially rescued behavioral defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by heat-shock induction experiments showing partial rescue when CAMT-1 is expressed in late larval/young adult stages. The partial rescue suggests both developmental and acute functions, though the incomplete rescue indicates developmental requirements may also exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CAMT-1 dampens Ca2+ responses in sensory neurons. camt-1 mutants showed elevated baseline and stimulus-evoked Ca2+ levels in URX, BAG, and AFD neurons, while CAMT-1 overexpression reduced Ca2+ responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by Ca2+ imaging experiments using Yellow Cameleon and TN-XL sensors showing bidirectional effects: loss of CAMT-1 increases Ca2+ responses while overexpression decreases them. The use of two different Ca2+ sensors strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "RNA-seq profiling of four neuron types revealed that cmd-1 (calmodulin) was one of only two genes consistently downregulated in camt-1 mutants across all neuronal types. CaM mRNA levels were reduced 2.5-4 fold in camt-1 mutants. Most other gene expression changes appear to be secondary to altered Ca2+ signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by RNA-seq data from multiple neuronal types (4-10 biological replicates) and genetic epistasis experiments using gcy-35; gcy-36 mutants to distinguish direct from indirect effects. The consistency across multiple neuron types and the epistasis analysis strengthen the conclusion that cmd-1 is a direct target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C81"
+    ],
+    "result": "Supplementing neuronal CaM expression rescues camt-1 mutant phenotypes. Pan-neuronal expression of CMD-1 rescued O2 responses, chemotaxis defects, and Ca2+ hyperexcitability in camt-1 mutants, indicating that reduced CaM levels account for camt-1 phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C54, C81 are strongly supported by rescue experiments showing that neuronal CaM supplementation rescues multiple behavioral and physiological phenotypes. The dose-dependent effects (different transgenic lines) and rescue of both behavioral and Ca2+ imaging phenotypes provide strong evidence that reduced CaM is the primary cause of camt-1 defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C95",
+      "C96"
+    ],
+    "result": "CAMTA regulation of CaM expression is conserved in Drosophila. Two independent dCAMTA mutant alleles (tes2 and cro) showed approximately 2-fold reductions in CaM mRNA and protein levels in fly heads and reduced CaM immunostaining in photoreceptor rhabdomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62, C95-C96 are supported by qPCR, Western blot, and immunostaining data from two independent Drosophila CAMTA mutant alleles. The consistency across multiple assays and alleles, combined with the C. elegans data, strongly supports evolutionary conservation of CAMTA regulation of CaM expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C93"
+    ],
+    "result": "ChIP-seq analysis identified cmd-1 as a major direct target of CAMT-1. CAMT-1 binds to multiple sites (peaks A, B, C) in the cmd-1 promoter region at approximately 6.3 kb, 4.8 kb, and 2.2 kb upstream of the translation start site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C93 are supported by ChIP-seq experiments with appropriate controls (mock pulldown and input). The identification of cmd-1 at the top of enriched loci and the presence of multiple binding peaks provide strong evidence for direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C82"
+    ],
+    "result": "Deleting CAMT-1 binding sites in the cmd-1 promoter phenocopies camt-1 loss-of-function. A strain (db1278) with deletions at all three ChIP-seq peaks showed aggregation defects, O2 response defects, and chemotaxis defects similar to camt-1 mutants, which were rescued by neuronal CaM supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C82 are strongly supported by CRISPR-generated promoter deletion strains showing that removal of CAMT-1 binding sites phenocopies camt-1 mutants and is rescued by CaM supplementation. The redundancy of binding sites (single or double deletions had no effect) and rescue by CaM provide compelling evidence for direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "CAMT-1 may mediate negative feedback regulation of CaM expression. Overexpressing CaM reduced expression from a cmd-1 promoter reporter, and this repression required intact IQ domains in CAMT-1. However, IQ domain mutants showed normal O2 responses, suggesting this feedback may not operate under physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C77, C109-C110, C112 show evidence for CaM-mediated negative feedback using reporter assays and IQ domain mutants. However, the lack of behavioral phenotype in IQ mutants (C73-C74) raises questions about physiological relevance. The authors acknowledge this uncertainty, suggesting native CaM levels may not be high enough to trigger feedback. Additional experiments are needed to determine if this mechanism operates under normal conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C96",
+      "C114"
+    ],
+    "result": "CAMTA is a general and conserved regulator of neuronal CaM expression. CAMT-1 stimulates CaM expression in multiple C. elegans neuron types and is expressed throughout the nervous system. The regulation is conserved in Drosophila, suggesting a general mechanism across Metazoa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C83-C84, C96, C114 are supported by RNA-seq data from four different neuron types, broad neuronal expression patterns, and conservation in Drosophila. The consistency across multiple neuron types and species provides strong evidence for a general regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Neural function is sensitive to small changes in CaM transcription. A 2.5-4 fold reduction in CaM mRNA in camt-1 mutants was associated with striking alterations in stimulus-evoked Ca2+ responses, suggesting CaM levels provide a sensitive regulatory point for neural physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by the correlation between modest CaM mRNA reductions (RNA-seq) and dramatic Ca2+ response alterations (imaging). However, the mechanism linking reduced CaM to altered Ca2+ responses is not fully elucidated. The authors discuss multiple possible mechanisms (buffering, feedback loops, ion channel regulation) but do not definitively establish which predominates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Most gene expression changes in O2 sensors in camt-1 mutants are secondary to altered Ca2+ signaling rather than direct CAMT-1 regulation. Comparison with gcy-35; gcy-36 mutants (which lack O2-evoked Ca2+ responses) showed that most differentially expressed genes were Ca2+-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by genetic epistasis experiments comparing gene expression in npr-1; camt-1 versus gcy-35; gcy-36; npr-1; camt-1 backgrounds. The dramatic reduction in differentially expressed genes (from 2370 to 108) when Ca2+ signaling is abolished provides strong evidence that most changes are Ca2+-dependent rather than direct CAMT-1 targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The photoresponse termination defects in Drosophila CAMTA mutants may reflect reduced CaM levels. Both dCAMTA mutants and a CaM promoter mutant show similar photoresponse defects, and dCAMTA mutants have reduced CaM in photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C102 suggest a connection between dCAMTA, CaM levels, and photoresponse termination based on phenotypic similarity and reduced CaM in dCAMTA mutants. However, this is correlative evidence. The authors appropriately note this is speculative (C102) and suggest rescue experiments with CaM supplementation would be needed to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Behavioral defects in mammalian CAMTA1 mutants may be associated with reduced CaM expression. Mouse and human CAMTA1 mutants show pleiotropic neurological phenotypes including memory defects and neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 extrapolate from the C. elegans and Drosophila findings to suggest mammalian CAMTA1 phenotypes may involve CaM regulation. However, this is speculative (C105 explicitly states 'raises the possibility'). No direct evidence is provided that mammalian CAMTA1 regulates CaM expression or that CaM supplementation would rescue mammalian phenotypes. This represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Both CAMTA2 overexpression and CaM overexpression in mouse heart induce cardiac hypertrophy, suggesting a potential mechanistic connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 note phenotypic similarity between CAMTA2 and CaM overexpression in mouse heart, both causing hypertrophy. However, this is correlative evidence from prior literature. No experiments are presented to test whether CAMTA2-induced hypertrophy requires or involves increased CaM expression. This represents a hypothesis rather than demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Modulating CAMT-1 levels can alter neural excitability, circuit function, and behavior, potentially providing a mechanism to regulate these processes in response to upstream signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by the experimental data showing that both loss and gain of CAMT-1 function alter Ca2+ responses and behavior. However, C116 is explicitly speculative regarding regulation by upstream signals, as no experiments identify what signals regulate CAMTA activity. The demonstrated ability to modulate neural function is supported, but the regulatory mechanism remains hypothetical.",
+    "result_type": "MAJOR"
+  }
+]

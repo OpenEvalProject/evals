@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The rate compensation model predicts that cold-adapted enzymes exhibit enhanced catalysis compared to warm-adapted enzymes when assayed at common temperatures. This model has informed physical models of enzyme catalysis, bioprospecting strategies, and structural interpretations linking flexibility to catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C12-C18 accurately describe the prevailing hypothesis in the field, supported by appropriate citations to prior literature. This represents a fair characterization of the existing paradigm that the authors seek to test. The claims are properly attributed to prior work rather than presented as the authors' findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C72",
+      "C73",
+      "C6",
+      "C44",
+      "C78",
+      "C79"
+    ],
+    "result": "Analysis of 2223 enzyme reactions (7086 kcat values from 815 organisms spanning 1-83\u00b0C) reveals no general enrichment of faster catalysis in cold-adapted enzymes. The distribution of rate ratios (kcold/kwarm) shows nearly equal numbers of reactions with ratios >1 (n=1142) and <1 (n=1082), with median 1.1-fold [95% CI: 1.00-1.22]. This distribution is statistically indistinguishable from a control of variants at identical TGrowth (p=0.21, Mann-Whitney U test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C21-C28, C44, C72-C73 provide strong evidence against widespread rate compensation through large sample size (n=2223 reactions), appropriate statistical testing (Mann-Whitney U), and a well-designed control (same TGrowth variants). The confidence intervals overlap 1.0, the p-value shows no significant difference from control, and supplementary analyses (different assay temperatures, TGrowth ranges) support the conclusion. The suggestion that prior conclusions arose from small sample size (C78, n=28) or confirmation bias (C79) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C74",
+      "C75"
+    ],
+    "result": "Only two reactions (triose-phosphate isomerase with G3P and cutinase with 4-NPB) showed significant positive association with TGrowth after Bonferroni correction (p<5.3\u00d710\u207b\u2075, n=951 reactions). Analysis of kcat/KM yielded similar results with median rate ratio 0.93-fold [95% CI: 0.78-1.12] for 953 reactions, indistinguishable from control (p=0.80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C74-C75 demonstrate appropriate multiple testing correction (Bonferroni) and consistent results across different kinetic parameters (kcat and kcat/KM). The finding that only 2/951 reactions show significant positive correlation (opposite to prediction) strengthens the conclusion against widespread rate compensation. Statistical methods are rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C77"
+    ],
+    "result": "Experimental analysis of 20 KSI variants (20-75% sequence identity, TGrowth 15-46\u00b0C) reveals that TGrowth accounts for minimal rate variation (R\u00b2=0.01, mrate=-0.006, p=0.02) despite an 80-fold range in kcat. KSI variants with the prevalent cold-adapted residue D103/E103 were not uniformly faster than S103 variants, and one of the fastest variants contained the stabilizing S103 residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C30-C39, C62-C65, C70-C71, C77 provide experimental validation with appropriate controls (CD spectra showing proper folding at assay temperature, C34). The low R\u00b2 value (0.01) convincingly demonstrates that TGrowth explains little variance despite statistical significance (p=0.02), likely due to large sample size. The observation that S103 variants can be fast (C37) challenges simple interpretations. Multiple replicates and varied enzyme concentrations strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C76"
+    ],
+    "result": "Analysis of 433 wild-type protein variants from ProThermDB reveals significant correlation between melting temperature (Tm) and TGrowth (R\u00b2=0.43, p=2\u00d710\u207b\u2075\u2074). Among 43 protein families with multiple variants, 39 showed higher Tm in warm-adapted variants (median fold change 0.81 [95% CI: 0.70-0.85]).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C40-C43, C76 demonstrate strong statistical evidence for stability compensation (R\u00b2=0.43 vs. R\u00b2=0.01 for rate), with highly significant p-value and appropriate use of existing database (ProThermDB). The contrast between stability and rate correlations with TGrowth is compelling. However, the analysis relies on literature data quality and may have publication bias toward well-studied, stable proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C45",
+      "C46"
+    ],
+    "result": "Temperature exerts weaker selection pressure on enzyme rate constants than stability, with evolutionary forces other than temperature responsible for the majority of enzymatic rate constant variation. In KSI specifically, stability rather than rate appears to be the dominant driving force underlying temperature adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C45-C46 represent reasonable inferences from the comparative analysis showing strong stability-TGrowth correlation (R\u00b2=0.43) versus weak rate-TGrowth correlation (R\u00b2=0.01). The conclusion is logically consistent with the data presented. However, this remains an inference about evolutionary selection pressure rather than direct measurement of fitness effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiple mechanisms may explain why optimal enzyme rates differ from maximal rates, including: most enzymes operate below diffusional limits (C47), rate optimization via gene/isoform expression or cellular conditions (C49-C51), metabolic coordination requirements (C52), selective pressure on rate-limiting steps only (C53), and evolutionary accessibility constraints (C54). Rate compensation may be more probable in closely related species in similar environments (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 provide well-cited alternative explanations for the absence of rate compensation. Each mechanism is supported by appropriate literature citations. These represent plausible hypotheses rather than tested conclusions from this study. The speculation about closely related species (C55) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Protein stability may be under stronger selection than rate because: (1) unfolding temperature dependence may exert larger driving force than rate temperature dependence (C56), (2) misfolded proteins have deleterious fitness effects requiring energetically costly clearance (C57-C58), and (3) adaptive paths toward stability may be more abundant and accessible than paths toward rate enhancement (C59-C60), with 158,184 temperature-varying positions identified across 1005 enzyme families (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 provide mechanistic rationale for stronger stability selection, supported by appropriate citations. The thermodynamic argument (C56) is logical given the data. Claims about misfolding costs (C57-C58) and pathway accessibility (C59-C60) are well-supported by literature. However, these remain inferences about evolutionary mechanisms rather than direct experimental tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "While flexibility has been proposed to mechanistically link rate and stability, most enzyme motions are not coupled to the reaction coordinate (C67). The absence of widespread rate compensation despite observed stability compensation is consistent with this perspective and with prior examples of enzyme stabilization without detrimental rate effects (C68-C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide a mechanistic framework consistent with the data, supported by citations to prior examples (C69). The argument that uncoupled motions explain differential selection on stability vs. rate is logical. However, this remains an interpretive framework rather than direct experimental evidence for motion coupling in the studied enzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20"
+    ],
+    "result": "Cold temperature is prevalent across the biosphere and slows chemical reaction rates (C1). The study of cold adaptation has potential to provide insights into enzyme catalysis (C19) and has motivated bioprospecting for industrial biocatalysts (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19-C20 provide appropriate context and motivation for the study. C1 represents established physical chemistry knowledge. C19 is appropriately framed as potential rather than demonstrated. C20 accurately describes practical applications that motivated prior work. These are well-supported contextual claims.",
+    "result_type": "MINOR"
+  }
+]

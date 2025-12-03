@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Meta-analysis of four RNA-seq studies reveals minimal overlap in novel imprinted gene candidates, with only 11.5% (36/313) of genes identified across all studies. Known imprinted genes show 35% overlap across studies, while novel genes show only 2.7% overlap, with 82.7% of novel genes unique to single studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide quantitative overlap data from the meta-analysis with specific percentages and gene counts. The data consistently demonstrate poor reproducibility of novel gene calls across studies compared to known imprinted genes, supporting the conclusion that many novel calls may be false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Reanalysis of three datasets using the same ISoLDE pipeline shows that experimental design and analysis methods greatly influence allele-specific expression calling. Overlap between original studies and ISoLDE ranges from 45-73% for known genes but is much lower for novel genes, with datasets lacking biological replicates showing inflated false positive rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C25-C34 provide systematic reanalysis data showing variable overlap between methods and highlighting the impact of biological replicates. The quantitative comparisons across tissues and datasets support the conclusion that methodology substantially affects gene calling, though the inference about replicates (C27) relies on comparison rather than direct experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Novel imprinted gene candidates show predominantly weak expression biases (50-60% from preferred allele), with 73.1% of novel genes in this category, compared to known imprinted genes where 77.3% show strong biases (90-100%). Class-3 genes near known imprinted regions show a bimodal distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 provide detailed quantitative analysis of expression bias distributions across gene classes. The bimodal distribution and clear differences between known and novel genes are well-documented with specific percentages. This analysis is critical for understanding the nature of putative imprinting and is supported by Figure 3A data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The direction of ICR methylation influences expression bias patterns: weakly biased genes (81% of Class-3, 100% of known <70% biased) are preferentially expressed from the methylated ICR chromosome, while strongly biased genes (80% of Class-3, 54% of known >70% biased) are expressed from the unmethylated ICR chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present a clear mechanistic pattern linking ICR methylation status to expression bias strength and direction. The quantitative data show consistent trends across gene classes, and this is further supported by promoter methylation and histone modification analysis (Figure 3D), providing mechanistic insight into weak biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Weakly biased Class-3 genes are predominantly located at the periphery of imprinted domains (83% of peripheral genes show <70% bias), while strongly biased Class-3 genes tend to be flanked by known imprinted genes (87% show >70% bias). Most highly biased flanked genes map to two domains: 14 between Ndn and Snrpn on chromosome 7, and 5 downstream of Meg3 on chromosome 12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide clear positional analysis with specific percentages and genomic locations. The data demonstrate a spatial relationship between bias strength and position within imprinted clusters, supported by Figure 4A-D. This spatial pattern provides important context for understanding weak biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Deletion of the IG-DMR demonstrates that weak biases at cluster peripheries are ICR-regulated. Dync1h1 shows biallelic expression in both wildtype and IG-DMR deletion mice, while Wars and Wdr25 show weak paternal bias in wildtype that is significantly reduced upon IG-DMR deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 present genetic validation using an ICR deletion model. The experimental data (Figure 4E) clearly demonstrate differential effects on peripheral genes, with statistical significance indicated. This provides direct evidence that peripheral weak biases are ICR-dependent, supporting the mechanistic interpretation in C52.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Experimental validation of Class-1 genes by pyrosequencing reveals that only 1 of 8 tested genes (Nhlrc1) shows consistent parental bias across postnatal brain tissues. Nhlrc1 lies near a germline DMR and Zfp57 binding site, with tissue-specific DMR retention correlating with expression bias (retained in cerebellum with bias, lost in liver without bias).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 provide systematic validation data for Class-1 genes with clear quantitative results. The correlation between DMR retention and expression bias for Nhlrc1 is well-documented with bisulfite sequencing data (Figure 5B-C), providing mechanistic support. The low validation rate (1/8) supports the conclusion of high false positive rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Validation of 15 Class-2 genes shows that 4 had insufficient expression, 6 were biallelic, 2 showed brain-specific bias (Pcdhb12 and Wnk4), and 3 showed weak maternal bias specifically in placenta (Vat1, Rtn3, Pla2g16). Pcdhb12 shows consistent maternal bias across all postnatal tissues tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide comprehensive validation results for Class-2 genes with clear categorization of outcomes. The data in Table 1 and Figure 5D-E support these findings. The tissue-specific nature of some biases and the presence of placenta-specific imprinting are well-documented, though the overall validation rate remains low.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Class-3 genes show higher validation rates than Class-1/2 genes, with 9 of 20 validated in somatic tissues. Several genes show temporal dynamics: Tpx2 validates only at P60, Smim17 bias decreases from P7 (64.7%) to P60 (56.7%), and Wdr25 shows bias only in P60 hypothalamus. Bcl2l1 and Ago2 validate across all neural tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 document validation results for Class-3 genes with detailed temporal and spatial patterns. The 45% validation rate (9/20) is substantially higher than Class-1/2 genes. The temporal dynamics are well-documented in Table 1 and supplementary figures, demonstrating that weak biases can be developmentally regulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Slc25a29 shows strong maternal bias in placenta (81.1%) that is independent of the IG-DMR, as demonstrated by unchanged bias in both maternal and paternal IG-DMR deletion heterozygotes compared to wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 present a specific case of placental imprinting with genetic validation. The strong bias (81.1%) and IG-DMR independence are clearly demonstrated in Figure 6B and 6G, indicating an alternative imprinting mechanism for this gene in placenta.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C73",
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "Comprehensive validation experiments demonstrate that most novel imprinted gene candidates are artefactual, with only 2 of 23 Class-1/2 genes validating in multiple tissues. Strain bias affects more genes (22 genes in \u22652 tissues) than parental bias (16 genes in \u22651 tissue), and validated Class-1/2 genes show only weak biases (<60:40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C73, C75, C77, C78 synthesize validation results showing high false positive rates and predominance of strain effects. The quantitative comparison of strain vs. parental bias (C75) and the observation that no validated Class-1/2 genes exceed 60:40 bias (C78) are well-supported by Table 1 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C76"
+    ],
+    "result": "The number of biological replicates substantially influences false positive rates, with datasets having 1-2 replicates (Datasets A and E) showing higher false positive rates than those with >6 replicates (Datasets B and C). Genes called by multiple studies show higher validation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C76 identify important methodological factors affecting reproducibility. While C74's inference about replicates is based on comparison rather than direct manipulation, the pattern is consistent across datasets. C76's observation about multi-study overlap is supported by validation data, though the sample size is small (n=2 genes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The authors propose defining 'canonical imprinting' as genes expressed predominantly (>70%) from one allele in a parent-of-origin manner in at least one tissue, under control of a germline-established differentially methylated ICR, with expression returning to biallelic upon ICR perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 present a proposed definition based on the authors' analysis. The 70% threshold is justified by reference to prior work (Andergassen et al., 2017) and is consistent with the bimodal distribution observed. The definition integrates expression bias, mechanism, and functional validation criteria, though it represents a proposal rather than an empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Analysis reveals that parental bias strength correlates with position within imprinted clusters, with stronger biases for genes within clusters than at peripheries. Weak Class-3 genes show preferential repression on the unmethylated ICR chromosome where repressive histone marks regulate known imprinted genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 describe spatial and epigenetic patterns observed in the data. The positional relationship is well-documented in Figure 4, and the histone modification analysis (Figure 3D) supports the mechanistic interpretation, though the causal relationship is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Of 60 tissue samples tested for Pcdhb12, 54 showed maternal bias and only 6 showed paternal bias, indicating non-random bias despite the gene's known stochastic monoallelic expression pattern in individual neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 provides quantitative data showing significant deviation from random expectation (90% vs. 50% expected). This observation is important for interpreting weak biases in the context of stochastic monoallelic expression, though single-cell analysis would be needed to definitively distinguish population vs. cellular-level bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The study concludes that genomic imprinting is not as widespread as recent RNA-seq studies have claimed, but weak parent-of-origin biases do exist at the periphery of known imprinted clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 represent the main conclusions synthesizing all validation and analysis results. The conclusion that imprinting is less widespread is strongly supported by low validation rates (C5, C77). The existence of peripheral weak biases is supported by Class-3 validation data (C63) and mechanistic studies (C50-C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that approximately 150 imprinted genes have been identified in mice and humans with roles in development and disease, that imprinting is regulated by germline DMRs protected by Zfp57/Zfp445, and that genes are organized in clusters controlled by ICRs, with both canonical (DNA methylation) and non-canonical (H3K27me3) mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C16 present established background knowledge supported by appropriate citations. These provide necessary context for the study but represent prior knowledge rather than new findings. The citations to primary literature and reviews support these well-established concepts in the imprinting field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18"
+    ],
+    "result": "Recent RNA-seq studies have reported a threefold increase in putative imprinted genes, including a 2010 report of ~1300 new brain imprinted genes that was subsequently shown to contain multiple false positives, highlighting the need for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C18 provide historical context for the current study, documenting the expansion of reported imprinted genes and prior concerns about false positives. These are supported by appropriate citations (Gregg et al., 2010; DeVeale et al., 2012) and motivate the current meta-analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Analysis of genomic features reveals oocyte-methylated gDMRs in validated novel clusters: three in the Prdx5-Pla2g16 region and two overlapping Wnk4. The Pcdhb cluster shows stochastic monoallelic expression with each neuron expressing two isoforms from each parental chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe genomic features of validated regions, supported by citations to prior work (Kobayashi et al., 2012; Hirayama and Yagi, 2017). These provide mechanistic context for understanding validated biases, though they represent integration of prior knowledge with current findings rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior studies have shown that imprinted regions can have parental-origin-specific 3D chromatin architecture, and that some weak canonically imprinted genes (Th, Bcl2l1) show functional consequences including behavioral phenotypes and parent-of-origin-dependent deletion effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 cite prior work demonstrating that weak biases can have functional significance. These are appropriately cited (Murrell et al., 2004; Tan et al., 2021; Bonthuis et al., 2015; Perez et al., 2015) and provide important context for interpreting the functional relevance of validated weak biases, though they represent prior findings rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The study concludes that validated weak novel genes are predominantly located at the periphery of known imprinted domains and may be affected by local allele- and tissue-specific chromatin conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 synthesize findings about Class-3 gene validation and position. C7 is well-supported by validation data (C63, C46), while C8 represents a mechanistic interpretation supported by ICR deletion experiments (C50-C52) and chromatin architecture literature (C85), though direct 3D chromatin analysis of these specific genes was not performed.",
+    "result_type": "MAJOR"
+  }
+]

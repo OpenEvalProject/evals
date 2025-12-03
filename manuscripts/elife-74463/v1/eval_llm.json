@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Two independent datasets were collected: Study 1 (discovery dataset, n=48) and Study 2 (independent test dataset, n=74), both consisting of healthy, right-handed participants with similar age distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 provide clear descriptions of the sample characteristics for both studies. The sample sizes, demographics, and exclusion criteria are explicitly stated, providing adequate documentation of the study populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C82",
+      "C94"
+    ],
+    "result": "Capsaicin application induced sustained pain that increased rapidly and then decreased gradually over approximately 20 minutes, with pain differences between capsaicin and control conditions becoming nonsignificant toward the end of the scan, though individual time courses showed some variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C82, and C94 collectively describe the behavioral pain response pattern. The claims are supported by statistical tests (paired t-tests, Bayes factors) and are consistent with previous literature using oral capsaicin. The acknowledgment of individual variability (C25) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "During sustained pain, four main brain communities were identified, with Community 2 (somatomotor-dominant) showing the most prominent expansion in the capsaicin condition compared to control, driven by integration of frontoparietal and subcortical regions, forming an extended 'pain supersystem'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 describe the consensus community detection results comparing capsaicin versus control conditions. The findings are supported by community detection analysis (Figure 2), network decomposition, and permutation tests (C33). The replication of the 'pain supersystem' finding (C35) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Over the course of sustained pain from early to late periods, brain network communities underwent dynamic reconfiguration: the somatomotor-dominant community (Community 2) decreased in size, a separate frontoparietal-dominant community (Community 6) emerged, and the cerebellum-dominant community (Community 4) expanded its connections to subcortical and brainstem regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C50 describe temporal changes in brain community structure during sustained pain. The findings are supported by community detection analysis across time periods (Figure 3), permutation tests (C50), and are consistent with known pain circuits (C44-C45). The interpretation regarding cerebellar pain modulation (C47) is appropriately qualified as 'less investigated'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A module allegiance-based SVM classifier achieved 98% accuracy in discriminating capsaicin from control conditions, revealing that sustained pain is characterized by segregation within the somatomotor network (specifically between ventral tongue area and dorsal regions) and integration between the tongue somatomotor area and subcortical/frontoparietal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 describe the SVM classification results and important network features. The high classification accuracy (C51) is supported by appropriate statistical testing (binomial test, p=3.48\u00d710\u207b\u00b9\u00b3). The identification of somatotopy-specific segregation (C57-C58) provides novel insights not visible in group-level analysis (C55-C56), and is validated through seed-based allegiance analysis (C60-C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A PCR model based on module allegiance patterns significantly predicted pain ratings (r=0.29, p=7.27\u00d710\u207b\u2076), revealing that high pain levels are associated with frontoparietal-somatomotor integration and dissociation from cerebellar regions, while pain decrease is characterized by weakening of frontoparietal-somatomotor connections and strengthening of cerebellum-frontoparietal-subcortical connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C74 describe the PCR prediction model results. The prediction performance is statistically significant and validated through nested cross-validation (C63). The thresholded model analysis (C64-C66) and seed-based allegiance maps (C67-C71) provide mechanistic insights. However, the moderate effect size (r=0.29) and reliance on liberal thresholds for some findings (C65) suggest some limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The SVM and PCR models maintained significant prediction performance after controlling for head motion and physiological responses, and showed specificity to pain by not responding to nonpainful aversive conditions (bitter taste and aversive odor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe specificity analyses. The models showed significant performance after controlling for confounds (C75), though with reduced accuracy (89% vs 98% for SVM). The lack of response to bitter taste (PCR: r=0.05, p=0.41) and marginal response to aversive odor (PCR: r=0.12, p=0.06) support pain specificity (C76-C77), though the SVM showed above-chance classification for these conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Both the SVM classifier (81% accuracy, p=6.22\u00d710\u207b\u2078) and PCR model (r=0.32, p=1.20\u00d710\u207b\u2077) showed significant generalization to an independent test dataset (Study 2, n=74), demonstrating the robustness and generalizability of the brain network features identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe independent validation results. Both models showed significant performance on the independent dataset, with the PCR model actually showing slightly improved performance (r=0.32 vs 0.29 in training). This provides strong evidence for the generalizability of the findings, though the reduced SVM accuracy (81% vs 98%) suggests some overfitting in the discovery dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Individual-level module allegiance-based predictive modeling provided complementary insights to group-level consensus community analysis, revealing fine-grained functional anatomy that would be obscured by group averaging, and allowing direct prediction of pain ratings and testing of model generalizability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 discuss methodological advantages of the predictive modeling approach. The claims are supported by the demonstration of features visible only in individual-level analysis (e.g., somatomotor segregation, C55-C56) and successful independent validation (C78-C79). The arguments are logical and supported by citations to relevant literature (C86-C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Pain is constructed through complex interactions among multiple brain systems involving sensory, affective, cognitive, and motivational processes, with the relative contribution of each component changing over time, particularly as pain becomes chronic. Understanding whole-brain network features that predict pain fluctuations is crucial for understanding why pain naturally decreases in some cases but not others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 establish the background and rationale for the study. These claims are well-supported by citations to established literature and represent accepted knowledge in pain neuroscience. The identification of the knowledge gap (C2) and the importance of the research question (C17) provide appropriate motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Capsaicin-induced tonic orofacial pain serves as a valid experimental model of clinical pain, showing similar network-level brain representations and the ability to generalize to chronic back pain, though with some differences in temporal patterns (consistent rise-and-fall vs. idiosyncratic fluctuations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C90-C95 discuss the validity and limitations of the experimental model. The claims are supported by citations to previous literature (C80, C90-C91, C95) and acknowledge important differences between experimental and clinical pain (C93-C94). The authors appropriately qualify their conclusions about generalizability (C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The findings are consistent with multiple theoretical frameworks and previous empirical studies, including the global workspace theory, fear-avoidance and motivation-decision models, and studies showing modular reorganization in chronic pain and somatotopy-specific connectivity changes. The cerebellum's role in pain modulation, though consistently observed, remains incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C110 contextualize the findings within existing literature and theory. The claims appropriately cite relevant studies and acknowledge areas of uncertainty (C110). The integration with theoretical frameworks (C103-C105) and previous empirical findings (C96, C106-C108) strengthens the interpretation, while acknowledging the need for further investigation of cerebellar function (C109-C110).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "During early sustained pain, orofacial somatomotor areas segregated from other somatosensory regions and integrated with subcortical and frontoparietal regions to form an extended pain network. As pain decreased, these subcortical and frontoparietal regions separated from the somatomotor network and connected to cerebellar regions. Machine-learning models based on these network features significantly predicted pain changes across two independent datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 summarize the main findings from the abstract. These claims are supported by the detailed analyses presented in the results section (community detection, predictive modeling, and independent validation). The findings are internally consistent and supported by appropriate statistical tests and visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The capsaicin-induced tonic pain paradigm is particularly suitable for identifying reliable brain network features across different pain periods (initiation to remission), addressing challenges in clinical fMRI studies related to small variance and heterogeneity of pain trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 discuss the advantages of the experimental paradigm. C83 is an inference about the suitability of the paradigm, supported by the successful characterization of temporal dynamics in the study. C84 accurately describes known challenges in clinical pain research. Together, these claims provide appropriate justification for the methodological approach.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C63",
+      "C64"
+    ],
+    "result": "Cancer cells consistently express more genes (higher gene counts) than normal cells across all 10 scRNA-seq datasets analyzed. This imbalance persists when normal cells are separated into different populations, though cancer-associated cells (CAF, TAM, TEC) show gene counts comparable to malignant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 provide strong statistical evidence (p < 2.2e-16) with visual support from Figure 1A and supplementary figures. The finding is consistent across multiple datasets, cancer types, and technological platforms (C65). Claims C63-C64 provide citation support for the biological interpretation linking gene counts to differentiation status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "ssGSEA and GSVA show systematic bias in cancer scRNA-seq data, reporting disproportionately more upregulated than downregulated gene sets (25% vs 6% and 23% vs 5%, respectively), while single-cell methods report balanced proportions (9% vs 12%). This bias correlates with gene set size for ssGSEA/GSVA but not for single-cell methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are well-supported by data across 10 datasets with consistent patterns shown in Figure 1B-C. The observation that the bias disappears in cell types with high gene counts (C13) strengthens the interpretation that gene count differences drive the bias. The correlation analysis (C14-C15) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In a cell cycle signature scoring example, ssGSEA incorrectly assigns significantly higher scores to non-cycling cancer cells compared to non-cycling normal cells (p < 2.2e-16), while single-cell methods correctly show no difference between these groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 provide a concrete example with statistical support and validation using Seurat cell cycle prediction and KI67 expression (Figure 1D). This demonstrates the practical consequences of the bias identified in the previous result, showing that ssGSEA produces biologically implausible results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In gold standard sensitivity tests with simulated gene sets, all methods perform similarly for upregulated gene sets (50% detection at 80% noise), but ssGSEA shows substantially worse performance for downregulated gene sets (30% detection at 80% noise vs 70-80% for single-cell methods, and only 85% detection even without noise).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe a well-designed simulation experiment with controlled noise levels. The results are supported by Figure 2A-B and supplementary figures. The finding that gene set size has negligible impact while noise level matters (C22-C23) validates the experimental design. The asymmetric performance of ssGSEA for up vs down gene sets is consistent with the bias observed in real data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In downsampling specificity tests where no differential gene sets are expected, AUCell and JASMINE show high specificity (detecting 7.5%/1.2% and 4%/1% false up/down sets), while SCSE overestimates downregulated sets in some datasets (25.4%) and ssGSEA grossly overestimates both (11% and 46%). Single-cell methods show stable coefficient of variance, while ssGSEA shows increased CV in three datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 describe a clever null experiment where downsampled cells are compared to originals, so no differences should be detected. The results clearly demonstrate specificity differences between methods, with ssGSEA showing poor specificity. The CV analysis (C33-C34) provides additional evidence of instability. Figure 2C and supplementary figures support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "When comparing single-cell methods against consensus calls (gene sets identified by at least 2 methods), JASMINE shows the best alignment in most datasets, while AUCell has lower accuracy particularly for downregulated gene sets and higher false positive rates. All three methods show comparable sensitivity, and SCSE and JASMINE show better correlation across datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by Figure 2D and supplementary figures showing accuracy, sensitivity, specificity, and correlation analyses. The consensus approach is reasonable though not a true gold standard. The speculation about AUCell's design for marker signatures (C36) is appropriately qualified. The correlation analysis (C39) provides mechanistic insight into the accuracy differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Computational efficiency testing shows SCSE is fastest, JASMINE is second fastest but requires memory similar to ssGSEA, and AUCell is slightly faster than ssGSEA but requires the most memory. Performance is robust across signature sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by computational benchmarking data in Figure 2\u2014figure supplement 5. The testing methodology is described (2000 cells, 50 iterations, same hardware). This provides practical information for method selection, though the specific hardware configuration may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "GSVA is substantially slower than other methods (>3 days for one dataset with 200 threads) and produces outputs highly consistent with ssGSEA, leading to its exclusion from subsequent analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by computational testing and Figure 1\u2014figure supplement 3 showing correlation with ssGSEA. The decision to drop GSVA is justified by the combination of slow speed and redundancy with ssGSEA. This is a reasonable methodological decision for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Varying downsampling rates from 20% to 80% causes ssGSEA's pattern of deregulated gene sets to shift systematically from more upregulated to more downregulated gene sets, strongly associating dropout rates with ssGSEA scoring bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by Figure 3A and supplementary figures showing the systematic shift across multiple datasets. This dose-response relationship strengthens the causal interpretation that dropouts drive the bias. However, C45 involves inference from the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A simulation with a dummy expression profile demonstrates that dropouts can cause ssGSEA scores to change in unintended ways. When a signature gene enters the dropout zone, scores can be either inflated or deflated depending on the gene's rank position relative to the dropout boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 describe a mechanistic simulation that explains how ssGSEA's ranking algorithm interacts with dropouts. The simulation is simple but illustrative, showing that dropouts are sufficient to cause scoring artifacts. Figure 3B visualizes the effect. The code is available for reproduction, enhancing credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Single-cell-based methods (AUCell, SCSE, JASMINE) are more robust than bulk-sample-based methods (ssGSEA, GSVA) for scRNA-seq data because they account for dropouts by focusing on expressed genes. AUCell uses AUC enrichment among top genes, SCSE uses normalized total expression, and JASMINE combines enrichment with average expression of detected genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 synthesize the study's findings and provide mechanistic explanations. C50-C51 are well-supported by the cumulative evidence from all experiments. C52-C55 accurately describe the methods' algorithms. C56 is a reasonable inference about design intent. These claims effectively summarize the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Among single-cell methods, JASMINE and SCSE show better concordance with each other, and JASMINE outperforms SCSE in downsampling tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by the benchmarking results shown in Figures 2 and supplementary figures, particularly the correlation analyses and downsampling experiments. This provides guidance for method selection among single-cell approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study concludes that dropouts in scRNA-seq are associated with cell states and identities (not just technical artifacts), and tools that fail to account for dropouts may generate misleading results. Cellular context should be considered when benchmarking methods, especially when bulk-sample-based methods are involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide context and broader implications. C59-C60 are supported by citations. C61-C62 are reasonable inferences from the study's findings. These claims appropriately frame the study's significance and limitations, though they represent interpretations rather than direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study methodology involved collecting 10 scRNA-seq datasets across different cancer types and platforms, using 7503 gene sets from MSigDB (\u226520 genes), normalizing with Seurat's regularized negative binomial regression, and defining Cohen's d thresholds (>1 for upregulated, <-1 for downregulated). MAST was used to identify differentially expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 describe the study methodology. These are straightforward methodological descriptions supported by the Methods section. The approaches are generally appropriate, though the Cohen's d threshold choice (C68) is somewhat arbitrary. The use of MAST (C71-C72) is appropriate given its explicit accounting for dropout rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "JASMINE calculates scores by combining two components: (1) approximate mean using gene ranks among expressed genes, and (2) enrichment of signature genes in expressed genes. These are scaled to 0-1 and averaged. The rank-based mean is robust to normalization methods and minimizes dropout effects by using only detected genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe the JASMINE algorithm developed by the authors. The mathematical formulation is provided in the Methods section. C75-C76 involve inferences about the method's properties that are reasonable given the algorithm design. The method appears sound, though independent validation would strengthen confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establish that scRNA-seq is a powerful technology for studying tissues, gene signatures can interrogate cell properties, scRNA-seq has high dropout rates (opposite of gene counts), gene counts associate with differentiation status, and cancer cells exhibit stem-cell-like properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context supported by citations to prior work (Noureen et al. 2021a, Hicks et al. 2018, Gulati et al. 2020, Malta et al. 2018). These are established facts in the field that motivate the study. The claims are appropriately cited and provide necessary context.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TCDD exposure at 1nM and 10nM doses comparably increases HaCaT cell proliferation and upregulates AHR in transformed colonies (TF-1 and TF-10). Both transformed cell lines form xenograft tumors, with TF-1 producing less differentiated primitive squamous cell tumors and TF-10 producing more differentiated stratified squamous epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are well-supported by experimental data including proliferation assays (Figure 1A), immunoblots (Figure 1B), xenograft formation (Figure 1\u2014figure supplement 1A), and histological analysis (Figure 1C). The characterization of tumor differentiation status is based on pathological evaluation of H&E stained sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "TF-1 cells exhibit fine-tuned Drp1 repression characterized by elevated Drp1 protein with ~10-fold suppressed S616 phosphorylation. These cells maintain an enriched subpopulation with moderately reduced [Fusion5] (40-80) and moderately elevated [Fission] (0.15-0.4), representing smaller fused mitochondrial networks. This is associated with lower mitochondrial transmembrane potential and wider regulation of mitochondrial potential per unit mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are strongly supported by immunoblot data (Figure 1D), mitochondrial matrix continuity assays (Figure 1\u2014figure supplement 1D), quantitative mitochondrial shape metrics (Figure 1E), and TMRE flow cytometry (Figure 1F). The bivariate analysis of [Fission] and [Fusion5] metrics provides quantitative evidence for the intermediate mitochondrial morphology state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "TF-1 cells demonstrate significantly higher in vitro proliferation rates, form larger spheroids, and have double the abundance of self-renewing/proliferating cells compared to TF-10 (1 in 376 vs 1 in 603). Both transformed populations show one order of magnitude higher stem cell frequency than Parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are well-supported by proliferation assays (Figure 1G), spheroid formation assays (Figure 1H), and ELDA statistical analysis (Figure 1I). Claim C48 is speculative but reasonably grounded in cited literature about Drp1's role in differentiation. The quantitative differences in stem cell frequency are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "scRNA-seq analysis reveals six clusters in Parental, TF-1, and TF-10 populations. TF-1 exhibits marked expansion of Cluster 3 and reduction of Cluster 5, with >3-fold upregulation of stem/progenitor markers KRT15, SOX2, and SOX4 across all TF-1 clusters. Cluster 5 shows reduced mtDNA gene expression, while Cluster 4 shows >8-fold upregulation of OASL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 are supported by comprehensive scRNA-seq data including UMAP clustering (Figure 2A), violin plots of marker gene expression (Figure 2B), and supplementary analyses (Figure 2\u2014figure supplement 1). The cluster distributions and marker gene expression patterns are quantitatively documented with appropriate statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Cluster 3 (SloCycl-K15-hi) in TF-1 cells shows dramatic downregulation of cell cycle genes, extremely low levels of major cyclins (especially in TF-1), and markedly reduced PCNA. This cluster has upregulation of Keratin and Signaling pathway genes, including HES1 which maintains quiescence, suggesting active maintenance of a slow-cycling state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C73 are well-supported by GSEA analysis (Figure 2C), gene expression violin plots (Figure 2D), and supplementary data (Figure 2\u2014figure supplement 1E). The inference that Cluster 3 represents slow-cycling cells is logically sound based on the gene expression profile showing low cyclins, low PCNA, and high HES1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Trajectory analysis shows a developmental path from G2-M through S-Histones-hi and Cytokine clusters, bifurcating into SloCycl-K15-hi or mtDNA-lo clusters. TF-1 cells preferentially reside in SloCycl-K15-hi (G0/G1) rather than mtDNA-lo, with >5-fold G1 to S reciprocity between these clusters. This altered cell cycle regulation may involve attenuation of CDK1-driven Drp1(S616) phosphorylation due to reduced CCNB1/CDK1 in late S phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 are supported by Slingshot trajectory analysis (Figure 2\u2014figure supplement 1F), cell cycle scoring (Figure 2E-G), and gene expression data (Figure 2D). The mechanistic inference connecting reduced CCNB1/CDK1 to reduced Drp1 phosphorylation (C85) is reasonable given known CDK1 function, though it remains correlative rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C98",
+      "C99",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "TF-1 cells exhibit marked elevation of Sox2 protein and elevated Krt15 protein. Approximately 26% of TF-1 cells maintain low pDrp1(S616), high Sox2, and high Krt15. Cyclin E1 levels are particularly elevated in TF-1 cells with preferential nuclear accumulation. Elevated Sox2 is sustained in ~38% of TF-1 cells with lower pCyclinE(T-62), and Cyclin E shows no degradation within 2 hours in TF-1 cells compared to marked degradation in Parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C104 are well-supported by immunoblot data (Figure 3A, 3D), immunostaining co-expression analyses (Figure 3B, 3C, 3G), nuclear/cytosolic ratio quantification (Figure 3E, 3F), and cycloheximide chase assays (Figure 3\u2014figure supplement 1B). The inference that elevated Sox2 is sustained by attenuated Cyclin E degradation is reasonable but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Drp1-S616A overexpression maintains reduced pDrp1-S616 levels and attenuates mitochondrial fission/fusion changes compared to Drp1-WT. In TF-1 cells, Drp1-S616A maintains ~5-fold higher abundance of Sox2hi subpopulations and markedly lower mitochondrial membrane potential compared to Drp1-WT. These effects are specific to TF-1 cells and not observed in Parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C114 are supported by immunostaining analyses (Figure 3H, 3I), mitochondrial shape metrics (Figure 3\u2014figure supplement 1C), and TMRE flow cytometry (Figure 3J). The differential effects between Parental and TF-1 cells are clearly demonstrated. However, the mechanistic connection between pDrp1-S616 reduction and Sox2 elevation remains correlative rather than causally proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Weak Drp1 knockdown markedly elevates Krt15 while strong knockdown does so only modestly. Both knockdowns elevate Sox2 and cause nuclear Cyclin E accumulation. Weak Drp1 knockdown accelerates TCDD-driven transformation earlier than control, while strong knockdown prevents transformation. The optimal transformation occurs at ~50% Drp1 reduction. This acceleration does not involve modulation of mitochondrial potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C131 are well-supported by immunoblot data (Figure 4A), immunostaining (Figure 4B, 4C), transformation assays (Figure 4D, 4G), ELDA analysis (Figure 4F), TMRE flow cytometry (Figure 4H), and regression analysis (Figure 4\u2014figure supplement 1A). The 'goldilocks' effect is clearly demonstrated with quantitative dose-response data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Strong Drp1 knockdown maintains ~77% cells in hyperfused state while weak knockdown maintains only ~38% in hyperfused state, enriching ~45% of cells with moderately increased [Fission] and decreased [Fusion5]. These cells harbor mitochondrial fragments within tubular networks, have lower mitochondrial number and total length, and only ~7% have >80% mitochondrial length in the longest element (vs ~40% in strong knockdown). This represents smaller networks of fused mitochondria with reduced mitochondrial content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C139 are strongly supported by quantitative mitochondrial shape analysis using [Fission] and [Fusion] metrics (Figure 4I, 4J, 4K) and microscopy examination (Figure 4\u2014figure supplement 1B). The bivariate analyses provide robust quantitative evidence for the intermediate mitochondrial morphology state maintained by weak Drp1 knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Weak Drp1 knockdown modulates a smaller gene set to a smaller degree than strong knockdown. KRT15, KRT13, KRT4, KRT5 are upregulated in weak knockdown but downregulated in strong knockdown. Strong knockdown shows upregulation of mitochondrial proteins involved in energetics, redox, and biogenesis, consistent with decreased mitochondrial content in weak knockdown. Elevated ribosomal and protein synthesis genes in strong knockdown may sustain mitochondrial protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C148 are supported by scRNA-seq analyses (Figure 5A, 5B, Figure 5\u2014figure supplement 1B, 1C, Figure 5\u2014figure supplement 2). Claim C149 is speculative but reasonably grounded in the data and cited literature on retrograde signaling. The opposite effects on keratin genes between weak and strong knockdown are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Weak Drp1 knockdown exhibits expansion of SloCycl-K15-hi cluster and reduction of Cytokine and mtDNA-lo clusters similar to TF-1 (albeit to lesser degree), establishing a stem/progenitor cell-like gene expression profile. Strong knockdown shows opposite trends with marked reduction of SloCycl-K15-hi cluster, dramatic suppression of KRT15 and other keratin genes, higher G2-M score, reduced S score, perturbed G1 to S reciprocity, and elevated Cyclin D2 with reduced PCNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C158 are well-supported by scRNA-seq cluster distribution analysis (Figure 5C), cell cycle analysis (Figure 5D, Figure 5\u2014figure supplement 1G), and gene expression data (Figure 5E, Figure 5\u2014figure supplement 1F). The similarity between weak Drp1 knockdown and TF-1 cluster profiles provides strong evidence for the stem/progenitor-like state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Fine-tuned Drp1 repression primes a slow cycling 'stem/progenitor-like [CyclinEhi-Sox2hi-Krt15hi] state' characterized by small networks of fused mitochondria. This state accelerates neoplastic transformation when maintained by reduced Drp1 protein levels, while being sustained by reducing Drp1 S-616 phosphorylation that modulates mitochondrial potential. More complete Drp1 reduction prevents transformation, establishing a 'goldilocks' level of Drp1 repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C4-C10, C159-C161) integrate findings from multiple experimental approaches including scRNA-seq, mitochondrial shape analysis, immunoblotting, transformation assays, and genetic manipulations. The 'goldilocks' concept is well-supported by dose-response data showing optimal transformation at intermediate Drp1 levels. The distinction between protein level reduction and phosphorylation reduction effects is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background knowledge establishing that Drp1 is the master regulator of mitochondrial fission opposed by Mitofusins and Opa1-driven fusion. Drp1 repression supports stemness in certain contexts while complete ablation prevents transformation. Enhanced mitochondrial fusion can sustain stemness or drive immortalization depending on context. A balance of fission and fusion may be critical for stem cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 represent established knowledge from cited literature and authors' previous work. These are appropriately cited and provide necessary context for the current study. The speculation in C20 and C27 is reasonable given the cited evidence, though it remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C59",
+      "C64",
+      "C68",
+      "C72",
+      "C75",
+      "C87",
+      "C88",
+      "C89",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C101",
+      "C122",
+      "C123"
+    ],
+    "result": "Established knowledge about marker genes and regulatory mechanisms: KRT15 is an epidermal stem cell marker; SOX2 and SOX4 are neoplastic stem cell markers for skin carcinomas; PCNA peaks in early S phase and is reduced in quiescent cells; HES1 maintains quiescence; Sox2 expression is influenced by G1 cyclins including Cyclin E whose degradation is regulated by mitochondria; Drp1 repression elevates Cyclin E; Sox2 and Cyclin E are important for transformation; Krt15-hi cells give rise to skin carcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C123 represent established knowledge appropriately cited from published literature. These provide necessary biological context for interpreting the experimental findings. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C115",
+      "C116",
+      "C140",
+      "C141"
+    ],
+    "result": "Summary conclusions and mechanistic inferences: The Drp1-repressed TF-1 population maintains an expanded slow-cycling subpopulation with high stem/progenitor markers, sustained by fine-tuning Drp1 via S-616 phosphorylation reduction. Cell-cycle-dependent reduction of Cyclin B1/CDK1 likely reduces Drp1-S616 phosphorylation. Drp1 overexpression alone doesn't support stem markers, suggesting Drp1 needs initial repression followed by activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C115 are well-supported summary conclusions from multiple experiments. Claims C116, C140, C141 involve mechanistic inferences that are reasonable given the data and known biology, though they remain correlative rather than causally proven. The logic connecting reduced CCNB1/CDK1 to reduced Drp1 phosphorylation is sound given known CDK1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Speculative mechanistic proposals and future directions: Fine-tuned Drp1 repression may involve sustaining nuanced redox environments; the CyclinEhi state may allow rapid transition from quiescence to proliferation; such transitions may involve further mitochondrial fission activation that would be prevented by complete Drp1 repression; regulated Drp1 activity changes can potentially maintain stem cell properties; bodily stresses causing mild Drp1 repression could make tissues susceptible to transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C169 are explicitly speculative (using terms like 'may,' 'speculate,' 'would reveal') and represent reasonable hypotheses for future investigation. While grounded in the current findings and cited literature, these remain untested proposals. They appropriately identify areas requiring further validation, particularly in vivo studies.",
+    "result_type": "MINOR"
+  }
+]

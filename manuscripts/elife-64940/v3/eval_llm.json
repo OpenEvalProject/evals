@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C29",
+      "C35",
+      "C36"
+    ],
+    "result": "DIPPER is a comprehensive IVD proteomic resource comprising 94 genome-wide profiles from 17 individuals, including high-resolution spatial proteomes from young (16M) and aged (57M) cadaveric spines. The dataset detected 3,100 proteins total, with a median of 654 proteins per profile for young samples and 829 for aged samples, including 418 matrisome proteins and 2,682 non-matrisome proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, C29, C35, and C36 collectively describe the DIPPER resource with specific quantitative data. The numbers of profiles, individuals, and proteins detected are explicitly stated with methodological details provided in the Materials and Methods section. The data quality is demonstrated through multiple validation approaches including PCA, ANOVA, and comparison with transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MRI characterization showed young discs (L3/4, L4/5, L5/S1) were non-degenerated with Schneiderman score of 1, well-hydrated NP, and no structural abnormalities. Aged discs exhibited irregular endplates, annular tears at L3/4 and L4/5, and regional variations in NP hydration. No scoliosis was detected in either cadaveric individual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 describe MRI phenotyping of the cadaveric samples with specific scores and observations referenced to figures. The characterization is essential for establishing the young discs as healthy reference points and documenting age-related changes. The observations are consistent with established IDD pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Core-matrisome protein expression levels were significantly higher in young discs (median 30.74) compared to aged discs (median 29.72, p=6.4\u00d710\u207b\u00b2\u00b9). The levels of ECM proteins decline with aging in all disc compartments, consistent with the concept that ECM synthesis does not sufficiently counterbalance degradation with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 present statistically significant findings with appropriate p-values and are supported by citation to prior work (Silagi et al., 2018). The interpretation is consistent with established understanding of IVD aging. However, the study is cross-sectional with n=2 individuals (one young, one aged), which limits generalizability despite statistical significance within the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Histone concentrations, used as a proxy for cellularity, increased from inner to outer disc compartments and showed highly significant decrease in aged versus young discs across all compartments (Wilcoxon p=5.6\u00d710\u207b\u2074). GAPDH and ACTA2 were significantly correlated (PCC=0.794, p=9.3\u00d710\u207b\u2079) and both co-expressed with histone subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present a novel approach to assess cellularity using histone quantification with appropriate statistical tests and significant p-values. The correlation analyses support the validity of using these proteins as cellularity markers. The findings are consistent with known age-related cellular decline in IVD (Rodriguez et al., 2011; Sakai et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PCA of the spatial proteome showed PC1 and PC2 explained 65.5% of variance (39.9% and 25.6% respectively). Support vector machine analysis demonstrated PC1 distinguished age groups, PC2 separated inner compartments from OAF, and PC3 (5.0% variance) distinguished disc level L5/S1 from upper lumbar levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe PCA results with specific variance percentages and machine learning validation. The analysis appropriately uses 507 proteins selected to minimize missing values with imputation strategy described. The findings are visualized in Figure 2 and represent valid dimensionality reduction of the proteomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ANOVA revealed that in young discs, compartment was the dominant phenotype explaining variance across all protein categories. In aged discs, compartment remained relevant for non-matrisome proteins and collagen, but disc level and direction became influential for other categories. In combined young and aged samples, age was the dominant phenotype for matrisome categories while compartment explained variance in non-matrisome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 present ANOVA results that appropriately partition variance across phenotypic factors. The findings are biologically interpretable and consistent with expected IVD biology (young discs maintain compartment-specific composition; aged discs show disruption with mechanical loading variations). The analysis is referenced to Figure 2\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A variable set of 671 DEPs was identified in young discs, organized into four modules (Y1-Y4). Module Y1 (NP signature) contains NP markers including KRT19, CD109, KRT8, CHRD, CHRDL2, SCUBE1, and CLEC3B. Module Y2 was enriched for ECM organization (FDR q=8.8\u00d710\u207b\u00b2\u2074), Y3 for smooth muscle contraction (FDR q=8.96\u00d710\u207b\u00b9\u2079), and Y4 for innate immune system (FDR q=2.93\u00d710\u207b\u00b2\u2070).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe differential expression analysis with appropriate statistical thresholds (FDR<0.05) and functional enrichment with highly significant q-values. The modules are visualized in heatmaps and show biologically coherent patterns. The identification of both known and novel markers strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Inner disc regions were enriched in specific collagens (COL3A1, COL5A1, COL5A2, COL11A2), matrillin (MATN3), and ECM synthesis/remodeling proteins. OAF was enriched with different collagens (COL1A1, COL6A1/2/3, COL12A1, COL14A1), basement membrane proteins, SLRPs (BGN, DCN, FMOD, OGN, PRELP), and tenomodulin (TNMD), which was exclusively expressed in 9 of 12 young OAF profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe compartment-specific protein enrichment patterns that are biologically coherent with known IVD structure. The exclusive expression of TNMD in OAF is consistent with the tendon/ligament-like nature of the AF. The findings are supported by differential expression analysis and referenced to figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "A constant set of 245 proteins detected in >50% of young profiles represents the baseline proteome. This includes known markers COL2A1, ACAN, and A2M detected in all 33 young profiles, along with CHAD, HAPLN1, VCAN, HTRA1, CRTAC1, and CLU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 define a constant set using a reasonable detection frequency threshold. The inclusion of well-established IVD markers (COL2A1, ACAN, A2M) validates the approach. This represents a useful reference set for IVD biology, though the threshold choice (>50%) is somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In aged discs, 100 proteins were expressed higher in OAF (similar to young discs), but only 9 proteins were significantly higher in inner regions (versus 55 in young discs). Typical NP markers (KRT8/19, CD109, CHRD, CHRDL2) were not detectable as DEPs in aged discs. The aged OAF retained 55% of young OAF proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 demonstrate dramatic loss of NP-specific protein signatures with aging through quantitative comparison. The findings are consistent with known IVD degeneration pathology and support the hypothesis that changes initiate in the inner disc. The data are presented in Figure 4 with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "In aged OAF, 45 proteins were classified under 'responses to stress' (FDR q=1.86\u00d710\u207b\u2077), suggesting cells are responding to changing mechanical loading and stress factors. Progressive changes indicate inner disc compartments become more similar to OAF with aging, with greatest changes in inner regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 present enrichment analysis with significant FDR values and provide biological interpretation consistent with IVD biomechanics. The convergence of inner and outer disc proteomes is supported by multiple lines of evidence including DEP analysis and module patterns. The interpretation is reasonable though based on cross-sectional comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Comparison of all young versus aged samples identified 169 DEPs (104 higher in young, 65 higher in aged). GO analysis showed structural integrity as the most important property of young discs, which is lost with aging. 75% of downregulated DEPs were from inner regions (only 17% from OAF), and 65% of upregulated DEPs were from inner regions (only 18.4% from OAF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 present comprehensive age-related changes with appropriate statistical analysis and GO term enrichment. The disproportionate contribution of inner disc regions to both up- and down-regulated proteins strongly supports the hypothesis that degeneration initiates centrally. The findings are visualized in Figure 5 with detailed supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Inhibitors of WNT (DKK3, FRZB) and antagonists of BMP/TGF\u03b2 (CD109, CHRDL2, DCN, FMOD, INHBA, THBS1) signaling were decreased or absent in aged inner regions, consistent with reported upregulation of these pathways in IDD. Hedgehog signaling targets (HHIPL2, SCUBE1) were also reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 identify specific signaling pathway changes supported by citations to prior IDD and osteoarthritis literature (Hiyama et al., 2010; Leijten et al., 2013; Rajesh and Dahia, 2018). The findings are consistent across proteome and transcriptome data. This represents a mechanistic insight into IVD degeneration pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Module M6 is enriched for complement pathway (FDR q=4.9\u00d710\u207b\u00b9\u2074) and angiogenesis (q=2.3\u00d710\u207b\u00b3) proteins, all highly expressed in aged inner disc regions. M6 contains macrophage marker CD14, suggesting blood presence in aged inner disc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76 present enrichment analysis with significant FDR values and identify blood-related proteins in aged inner disc. However, the interpretation of blood presence is speculative as contamination cannot be excluded (acknowledged by authors). While consistent with some reports (Maseda et al., 2016), it contradicts others (Nerlich et al., 2007). The finding requires validation with additional methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Transcriptome PCA showed PC1 captured age/state variations and PC2 captured compartment differences, similar to proteome PCA (65.0% variance). DEG analysis identified 88 genes differing between young AF and NP, 11 between aged AF and NP, 45 between young and aged AF, and 216 between young and aged NP (greatest difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 demonstrate concordance between transcriptome and proteome data from independent samples. The similar PCA patterns and DEG/DEP overlap validate both datasets. The greatest changes in NP with aging are consistent across both data types. The transcriptome provides additional low-abundance markers not detected in proteome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "SILAC analysis showed newly synthesized proteins in aged/degenerated samples were about half that of young samples. Of 68 high-abundant non-matrisome proteins in young NP absent in aged NP, 28 were ribosomal proteins, suggesting reduced translational activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 present dynamic proteome data showing reduced protein synthesis with aging. The identification of ribosomal proteins as a major component of the difference provides mechanistic insight. The findings are consistent with reduced cellularity observed in static proteome. However, sample size is limited (n=4 young, n=1 aged).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "TAILS degradome analysis identified 123 and 84 cleaved proteins in AF and NP respectively. Hierarchical clustering showed two young samples (136, 141) clustered together in both compartments. Trauma sample AGD143 (53M, no IDD diagnosis) clustered with clinically diagnosed aged samples in both AF and NP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 present degradome data showing increased protein cleavage in aged samples. The clustering of the trauma sample with aged samples suggests age-related changes occur even without clinical IDD diagnosis. The findings complement the static and SILAC proteome data. Sample size is modest (n=2 young, n=4 aged).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C87",
+      "C88"
+    ],
+    "result": "Machine learning identified a 'hydration matrisome' of 85 ECM proteins correlated with MRI intensity. A LASSO regression model trained on aged discs predicted young disc MRI intensities with PCC=0.689 (p=8.9\u00d710\u207b\u2076, Spearman=0.776). Predicted intensities showed smooth monotonic decrease from NP to IAF, then sudden drop to OAF (ROC AUC=0.996 between IAF and OAF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C87, C88 present a novel machine learning approach linking proteome to MRI phenotype with significant correlation. The cross-validation (training on aged, testing on young) strengthens the findings. The high ROC AUC demonstrates clear compartment distinction. However, the model is based on n=2 individuals and requires validation in larger cohorts. The authors acknowledge predicted intensities may be more faithful than actual MRI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "IVD degeneration is most common in the lumbar region, affects up to 80% of the world's population at some point in life, and involves multiple interacting factors including genetics, aging, and mechanical stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 present established background information supported by appropriate citations (Saleem et al., 2013; Teraguchi et al., 2014; Rubin, 2007; Munir et al., 2018). These are well-accepted facts in the IVD field and provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims describe IVD structure (three compartments: NP, AF, endplates), cellular composition (notochordal cells replaced by chondrocyte-like cells), avascularity with diffusion-based nutrition, age-related cellular decline, reduced NP hydration as IDD hallmark, T2-weighted MRI as diagnostic gold standard, ECM composition dictating mechanical properties, compartment-specific ECM synthesis, matrisome definition, NP fibrosis with aging, matrix stiffness effects on cells, and genetic risk factors in matrisome genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C20 present established IVD biology supported by appropriate citations to peer-reviewed literature. These provide necessary background and context for interpreting the study findings. All claims are consistent with current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior work limitations include: limited transcriptomic studies on human/animal discs identifying markers like CD24, KRT8, KRT19 in young NP and COL1A1, COL12A1 in AF; transcriptome-proteome discordance preventing accurate protein prediction from mRNA; animal model studies that may not translate to humans; human proteomic studies showing fibrotic changes but limited in protein numbers and spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 accurately summarize prior work and its limitations, supported by appropriate citations. The authors correctly identify gaps in the literature that their study addresses: limited spatial resolution, small numbers of proteins, lack of dynamic proteome data, and transcriptome-proteome discordance. This provides strong justification for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C37",
+      "C51"
+    ],
+    "result": "The aged OAF had the highest number of detected proteins (average 1156), followed by young OAF (average 818). The detected proteome of young discs accounts for 9.2% of the human proteome (1883 of 20,368 UniProt proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C51 present quantitative results from the proteomic analysis. The higher protein detection in aged OAF may reflect increased heterogeneity or cellular responses to stress. The 9.2% coverage of human proteome is substantial for a tissue-specific study. The data are presented in figures with appropriate references.",
+    "result_type": "MINOR"
+  }
+]

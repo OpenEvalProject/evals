@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors argue that understanding multidrug resistance (MDR) evolution requires understanding linkage disequilibrium (LD) dynamics, a concept extensively studied in population genetics but rarely applied to MDR. They propose recasting the MDR evolution problem as understanding the dynamics of LD (D), since whenever D\u22600, understanding single drug resistance in isolation is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C5-C7 establish the motivation and conceptual framework. The mathematical relationship fAB = fA\u00b7fB + D (C3-C5) logically demonstrates why LD is central to MDR. The extensive population genetics literature on LD (C6) and its limited application to MDR (C7) are well-supported by citations, establishing both the theoretical foundation and the gap this work addresses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C15"
+    ],
+    "result": "The authors develop an epidemiological model with specific assumptions: instantaneous and complete treatment, superinfection with probability \u03c3 where strains compete equally, no prolonged coinfection, and multiplicative costs generating epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 clearly state model assumptions that are standard in epidemiological modeling and supported by citations (C11). Claim C15 about multiplicative costs generating epistasis is demonstrated in the Materials and methods section. These are clearly stated modeling choices that define the scope of the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors derive and analyze population-level LD dynamics (Equation 4), showing that drug B treatment affects drug A resistance dynamics through epistasis and indirect selection mediated by LD. Migration generates LD when resistance frequencies differ between populations, with effects depending on infection density ratios. Population LD magnitude is maximized at intermediate migration rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C29 describe results derived from mathematical analysis of Equations (3) and (4). The mathematical derivations appear sound, with results following logically from the model structure. The non-monotonic relationship between migration rate and LD magnitude (C29) is demonstrated in Figure 2 and explained mechanistically through competing effects of migration on LD generation versus frequency homogenization. Standard population genetics results (C21, C24) are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C39"
+    ],
+    "result": "The authors show that metapopulation LD (DM) can exist without population LD and vice versa, that more productive populations disproportionately affect resistance dynamics, and that metapopulation LD magnitude decreases with migration rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C35, and C39 follow from the mathematical decomposition DM = D\u0304 + cov(fA, fB) (Equation 5) and analysis of Equations (6) and (7). The relationship between metapopulation and population LD is well-established in population genetics (C33 cites appropriate references). The effects of productivity heterogeneity (C35) and migration (C39) on metapopulation dynamics are demonstrated mathematically and shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors reanalyze results from Lehtinen et al. 2019, showing that equilibrium MDR patterns require mechanisms maintaining resistance diversity and correlations between selection coefficients. With additive costs, variation in duration of carriage can generate MDR through effects on susceptible density, but this is neither necessary (transmissibility variation works similarly) nor sufficient (requires transmission costs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 provide a reanalysis of prior work using the LD framework. The logical argument that correlations between selection coefficients are necessary for equilibrium LD (C44) follows from Equation (3). The analysis of additive versus multiplicative costs and the role of susceptible density is demonstrated in Figure 3 with appropriate simulations. The authors correctly identify that their analysis differs from Lehtinen et al. 2019 by using additive rather than multiplicative costs, and they discuss this distinction in detail in Materials and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors observe significant serotype LD in S. pneumoniae surveillance data that is inconsistent with equilibrium predictions. They propose that long-term transient dynamics coupled with epistasis could explain this pattern, and demonstrate this mechanism through simulations showing prolonged but transient LD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 presents empirical observation from surveillance data (Figure 4). The inconsistency with equilibrium predictions (C50) follows from the mathematical analysis. The transient dynamics explanation (C51-C52) is demonstrated through simulations in Figure 5 showing how epistasis can generate serotype LD during transients. The general conclusion about caution in interpreting surveillance data (C53) is a reasonable inference from the analysis. However, this remains one possible explanation among others the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors analyze drug prescription strategies, showing that negative LD (from population-specific drug deployment) improves treatment success by reducing MDR, while positive LD (from mixing/combination) increases treatment failure. Drug cycling creates a trade-off: frequent rotation delays MDR but promotes single resistance, while infrequent rotation delays single resistance but promotes MDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 present analysis of prescription strategies with clear logical reasoning about treatment implications (C54-C55) and mathematical demonstration of how different strategies affect LD (C56-C60, shown in Figures 6-7). The trade-off between single and multidrug resistance (C61-C62) follows logically from the model structure and is supported by citation to Wilson and Yoshimura 1994. The analysis appropriately notes that prior work largely ignored MDR consequences (C64), though the optimal strategy depends on how success/failure is defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors argue that the LD perspective provides advantages over typical approaches to MDR modeling: it simplifies intractable models, provides insight into transient dynamics that invasion analysis cannot capture, and reveals that controlling single drug resistance has important consequences for MDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present methodological arguments about the value of the LD perspective. The observation that prior work neglected MDR (C64, C66) is supported by citations. The claim about model intractability (C67) is a reasonable general observation. The utility for transient dynamics (C68) is demonstrated through the S. pneumoniae analysis (Figure 5). The conclusion about not considering single resistance in isolation (C65) follows from the analyses presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors emphasize that metapopulation structure alone can generate MDR without epistasis, that structure is often hidden in natural populations, and that population and metapopulation LD can differ in magnitude or even sign. When MDR is due to structure rather than epistasis, population-specific drug prescription can reduce MDR prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 synthesize key insights from the analysis. The ability of structure alone to generate LD (C69) is demonstrated mathematically and supported by population genetics citations. The observation about hidden structure (C70) is supported by citation. The relationship between population and metapopulation LD (C71-C72) follows from Equation (5) and is shown in Figure 5. The prescription strategy implication (C73) follows from the analysis and is shown in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors acknowledge that their deterministic analysis neglects stochasticity, which can play important roles in multilocus dynamics through genetic drift, Hill-Robertson effects, and genetic background effects. They note that little work has connected these population genetics results to evolutionary epidemiology, identifying this as an area for future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 acknowledge limitations and identify future directions. The importance of stochasticity in multilocus dynamics (C74-C78) is well-established in population genetics and appropriately cited. The observation that these effects have not been well-integrated into evolutionary epidemiology (C79) is reasonable. The call for future work (C80) is appropriate given the limitation. This is a fair and balanced discussion of what the current deterministic framework cannot address.",
+    "result_type": "MINOR"
+  }
+]

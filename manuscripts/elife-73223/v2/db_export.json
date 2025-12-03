@@ -1,0 +1,2285 @@
+{
+  "submission": {
+    "id": "54d83476-3df6-4bc5-8005-d0331e9ce3ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:57:55.293208Z",
+    "updated_at": "2025-12-03T12:57:55.293208Z"
+  },
+  "content": [
+    {
+      "id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "submission_id": "54d83476-3df6-4bc5-8005-d0331e9ce3ca",
+      "content_type": "manuscript",
+      "content_text": "# CREB5 reprograms FOXA1 nuclear interactions to promote resistance to androgen receptor-targeting therapies\n\n## Authors\n\n- Justin H Hwang<sup>1</sup> ([ORCID: 0000-0003-1686-7103](https://orcid.org/0000-0003-1686-7103)) \u2020\n- Rand Arafeh<sup>3</sup>\n- Ji-Heui Seo<sup>3</sup> ([ORCID: 0000-0002-7280-3334](https://orcid.org/0000-0002-7280-3334))\n- Sylvan C Baca<sup>3</sup>\n- Megan Ludwig<sup>6</sup>\n- Taylor E Arnoff<sup>7</sup>\n- Lydia Sawyer<sup>3</sup>\n- Camden Richter<sup>3</sup>\n- Sydney Tape<sup>2</sup>\n- Hannah E Bergom<sup>2</sup>\n- Sean McSweeney<sup>2</sup> ([ORCID: 0000-0002-7682-2073](https://orcid.org/0000-0002-7682-2073))\n- Jonathan P Rennhack<sup>3</sup>\n- Sarah A Klingenberg<sup>2</sup>\n- Alexander TM Cheung<sup>4</sup>\n- Jason Kwon<sup>3</sup>\n- Jonathan So<sup>3</sup>\n- Steven Kregel<sup>9</sup>\n- Eliezer M Van Allen<sup>3</sup>\n- Justin M Drake<sup>1</sup>\n- Matthew L Freedman<sup>3</sup>\n- William C Hahn<sup>3</sup> ([ORCID: 0000-0003-2840-9791](https://orcid.org/0000-0003-2840-9791)) \u2020\n\n### Affiliations\n\n1. Masonic Cancer Center, University of Minnesota-Twin Cities Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n2. Department of Medicine, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n3. Department of Medical Oncology, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))\n4. Broad Institute of MIT and Harvard, Cambridge Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))\n5. Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n6. Department of Pharmacology, University of Minnesota-Twin Cities Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n7. Warren Alpert Medical School of Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))\n8. Grossman School of Medicine, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n9. Department of Cancer Biology, Loyola University Chicago Maywood United States ([ROR:04b6x2g63](https://ror.org/04b6x2g63))\n10. Department of Pharmacology and Urology, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetastatic castration-resistant prostate cancers (mCRPCs) are treated with therapies that antagonize the androgen receptor (AR). Nearly all patients develop resistance to AR-targeted therapies (ARTs). Our previous work identified CREB5 as an upregulated target gene in human mCRPC that promoted resistance to all clinically approved ART. The mechanisms by which CREB5 promotes progression of mCRPC or other cancers remains elusive. Integrating ChIP-seq and rapid immunoprecipitation and mass spectroscopy of endogenous proteins, we report that cells overexpressing CREB5 demonstrate extensive reprogramming of nuclear protein\u2013protein interactions in response to the ART agent enzalutamide. Specifically, CREB5 physically interacts with AR, the pioneering actor FOXA1, and other known co-factors of AR and FOXA1 at transcription regulatory elements recently found to be active in mCRPC patients. We identified a subset of CREB5/FOXA1 co-interacting nuclear factors that have critical functions for AR transcription (GRHL2, HOXB13) while others (TBX3, NFIC) regulated cell viability and ART resistance and were amplified or overexpressed in mCRPC. Upon examining the nuclear protein interactions and the impact of CREB5 expression on the mCRPC patient transcriptome, we found that CREB5 was associated with Wnt signaling and epithelial to mesenchymal transitions, implicating these pathways in CREB5/FOXA1-mediated ART resistance. Overall, these observations define the molecular interactions among CREB5, FOXA1, and pathways that promote ART resistance.\n\n## Introduction\n\nThe androgen receptor (AR) plays a fundamental role in the development and function of the prostate. AR transcriptional activity is required for the initiation and progression of prostate cancer and remains critical in metastatic castration-resistant prostate cancer (mCRPC) (Abida et al., 2019; Armenia et al., 2018; Grasso et al., 2012; He et al., 2021; Robinson et al., 2015). The standard of care for patients with mCRPC is androgen deprivation therapy (ADT) and AR-targeted therapies (ARTs). While ADT and ART initially induce responses and lengthen the survival of mCRPC patients, intrinsic or acquired resistance continues to be a substantial clinical obstacle. With limited treatment options, better mechanistic understanding of the targets that drive resistant disease is urgently needed.\n\nSeveral lines of evidence indicate that mCRPC may acquire resistance to ART through multiple mechanisms. Recent studies of mCRPC patients resistant to second-generation ART and ADT have identified that a subset of the resistant mCRPC harbor AR genomic alterations through mutations, copy number gain, enhancer amplification, as well as increased resistant transcript variants (ARV7) (Bubley and Balk, 2017; Henzler et al., 2016; Takeda et al., 2018; Viswanathan et al., 2018). Other clinical and functional studies together demonstrate that resistance also occurs through mechanisms, including upregulation of cell cycle genes (Comstock et al., 2013; Han et al., 2017) and/or the proto-oncogene MYC (Abida et al., 2019; Armenia et al., 2018; Bernard et al., 2003; Grasso et al., 2012; Robinson et al., 2015; Sharma et al., 2013). In addition, selective activation of pathways such as epithelial to mesenchymal transition (EMT), TGF\u03b2 and Wnt has been recently identified from profiling mCRPC patient become resistant to second-generation ART or ADT (Alumkal et al., 2020; He et al., 2021).\n\nRecent mechanistic studies have begun to elucidate how dysregulated epigenomic and transcriptomic processes drive disease pathogenesis and progression. AR activity in prostate tissue is regulated by AR co-factors such as HOXB13 and FOXA1 at AR binding sites (ARBs) (Pomerantz et al., 2015; Pomerantz et al., 2020). ChIP-seq experiments have demonstrated that FOXA1, a co-factor with both pioneering and transcription functions, binds to distinct sites and has different protein interactions that is dependent on the disease stage and pathological phenotype (Baca et al., 2021; Pomerantz et al., 2015; Pomerantz et al., 2020). Recent studies indicate that genomic alterations of FOXA1 promote ART resistance (Adams et al., 2019; Baca et al., 2021; Parolia et al., 2019; Shah and Brown, 2019). We have shown that FOXA1 function remains functionally relevant even as mCRPC differentiate into aggressive variants that no longer require AR signaling, such as neuroendocrine prostate cancer (Baca et al., 2021). We have previously demonstrated that the transcriptional factor cAMP-responsive element binding protein 5 (CREB5) promoted resistance to FDA-approved ART, enzalutamide, darolutamide and apalutamide (Hwang et al., 2019). CREB5 has also been associated with progression of cancers, including ovarian, colorectal, and breast (Bhardwaj et al., 2017; He et al., 2017; Moln\u00e1r et al., 2018; Qi and Ding, 2014). However, the molecular mechanisms by which CREB5 promotes resistance in mCRPC or general tumorigenesis remains unclear.\n\nHere, we utilized ChIP-seq and rapid immunoprecipitation and mass spectrometry of endogenous proteins (RIME) experiments to resolve the CREB5-associated transcriptional targets and molecular interactions. These CREB5 transcriptional co-factors are potential therapeutic targets to perturb CREB5 signaling in cancers that upregulate its activity.\n\n## Results\n\n### CREB5 drives a resistance response to enzalutamide and androgen deprivation\n\nWe previously performed a large-scale screen to identify genes involved in ADT and ART resistance through overexpression of 17,255 open reading frames (ORFs) in LNCaP cells, an AR-dependent prostate cancer cell line (Hwang et al., 2019). We and others functionally validated several genes that drive ADT/ART resistance (FGFs, CDK4/6, MDM4, CREB5) in cell lines or mCRPC patients (Bluemn et al., 2017; Comstock et al., 2013; Elmarakeby et al., 2020; Han et al., 2017; Hwang et al., 2019). Here, we sought to interrogate the molecular mechanisms specifically associated with resistance to ADT and the clinically used ART, enzalutamide. Specifically, we identified ORFs that when overexpressed only promoted cell survival in the presence of ADT/ART and not in standard cultures. Upon re-examining the data, we found that unlike in ADT/ART, overexpression of CREB5 reduced viability (Z = \u20131.3) in standard cultures (Figure 1A). The Z-scores, which represent relative proliferation effects compared to all 17,255 ORFs, exhibited robust differentials when comparing the treated arm in comparison to the control arm (Z = +14.5 and \u20131.3). This observation contrasted to other genes that mediate resistance to ART, such as CDK4 or CDK6, which promoted cell fitness regardless of treatment conditions. At genome scale, many ORFs had preferential fitness effects when considering the differential Z-score of the treated and standard conditions. Among ORFs, CREB5 had the greatest differential viability effect after low androgen and enzalutamide treatment (Supplementary file 1, Table 1). Overall, these observations prompted us to pursue a deeper interrogation of binding properties of CREB5 to understand specific molecular interactions that promote resistance to ART.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig1-v2.jpg)\n\n**Figure 1.:** (A) Analysis of enzalutamide resistance genes in LNCaP cells based on a genome-scale screen, including 17,255 open reading frames (ORFs). Z-scores are displayed for the experimental arms conducted in either standard culture (FCS, x-axis) or treatment (enzalutamide +CSS, y-axis) conditions. CREB5 and other enzalutamide -specific hits (Z > 3) and their proliferation scores are highlighted in red. (B) A model that depicts changes in chromatin -associated interactions of CREB5 that occur post enzalutamide treatment. Bottom,: CREB5 ChIP-seq data is presented in accordance to three categories of CREB5 binding behavior. Categories are grouped by significant changes by enzalutamide treatments. (C) GIGGLE analyses predicts transcription factors that are CREB5-bound based on the ChIP-seq experiments as categorized in B. (D) Rapid immunoprecipitation and mass spectroscopy of endogenous proteins (RIME) experiments were performed to identify CREB5 interaction profiles in control or enzalutamide -treated cultures. The common proteins identified by both RIME and GIGGLE are highlighted for the retained and gained groups.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cell viability was determined with standard error of the mean displayed (left). The degree of AR suppression is shown in immunoblots (right). V5 indicates expression of CREB5 or luciferase and tubulin is a loading control.\n\n### Dynamic CREB5 nuclear interactions are associated with the ART resistance response\n\nWe next determined the CREB5 cistrome as well as other regulatory proteins critical to the ART-resistant phenotype by identifying features that were either \u2018retained\u2019 or \u2018gained\u2019 upon ART treatments. In LNCaP cells overexpressing V5-tagged CREB5 or luciferase and cultured in either standard media or media containing enzalutamide, we analyzed differential interactions of CREB5 at regulatory elements through ChIP-seq or with other proteins through RIME. We first examined CREB5 binding sites pre- and post-enzalutamide treatments by performing CREB5 ChIP-seq. CREB5 overexpression induced a robust differential phenotype (Figure 1B), in which lost (n = 5392), retained (n = 12,432), or gained (n = 12,144) CREB5 binding sites were tallied in the enzalutamide condition compared to the pretreatment condition. To nominate other candidate trans-acting factors that bind within the three defined categories, we used the GIGGLE, an analytical approach that compares collection of sequences from ChIP-seq experiments with over 10,000 experiments from the ENCODE ChIP-seq database and nominates the transcription factors with highly similar binding profiles (Layer et al., 2018). We observed that the elements in which CREB5 retained or gained sites were statistically significantly enriched of other nuclear proteins in which ChIP-seq had been performed in prostate cancer cell lines. This included binding elements (AR, FOXA1, HOXB13) that we previously demonstrated through ChIP-seq experiments (Figure 1C). In addition, we also identify that retained or gained sequences nominated well-studied regulators or co-factors of AR such as GRHL2 (Paltoglou et al., 2017), EP300 (Yu et al., 2020), and SMARCA4 (Launonen et al., 2021; Marshall et al., 2003). In confirmation of previous findings, the genetic ablation of AR or FOXA1 reduced viability of CREB5-overexpressing cells (Figure 1\u2014figure supplement 1; Hwang et al., 2019). These observations suggested that CREB5 bound critical regulators of prostate cancer biology to drive ART resistance.\n\nRIME has been used as a tool to study transcription co-factors interactions in hormone-regulated cancer cells (Glont et al., 2019; Mohammed et al., 2016). To build upon the predictions of CREB5 binding by GIGGLE, we directly examined CREB5 nuclear interactions via RIME. As part of the RIME analysis, we included only the unique peptides that bound CREB5 after subtraction of all proteins precipitated by the V5 antibody or luciferase in cell lysates (Supplementary file 1, Table 2). When we compared the analyzed RIME binding profiles of the control to the enzalutamide-treated conditions, analogous to the ChIP-seq experiments, we found the CREB5-bound unique peptides also segregated into lost (n = 77), retained (n = 222), and gained groups (n = 207) (Figure 1D). To consider key factors in the retained or gained groups that associate with resistance, we integrated the results derived from GIGGLE and RIME. From this, we found both approaches nominated known AR interactions (EP300, FOXA1, and GRHL2). Overall, these parallel approaches demonstrate that CREB5 binding dynamically responds to ART treatment. Moreover, the retained or gained RIME interactions indicate CREB5 may interact with distinct sets of co-factors, some of which are AR associated, to promote ART resistance.\n\n### CREB5-FOXA1 interactions converge in ART resistance\n\nIn LNCaP cells, we comprehensively compared CREB5 and FOXA1 protein interactions using RIME. In prior work in LNCaP cells, we found that overexpressing CREB3, a related CREB family member, conferred significantly weaker resistance to enzalutamide, and therefore serves as a useful control to understand CREB5 functions in resistance (Hwang et al., 2019). We used RIME to target overexpressed V5-tagged CREB5, luciferase, or CREB3 upon treating cells with enzalutamide. We optimized experimental conditions to consistently observe unique peptides representing CREB5, CREB3, and FOXA1. On average, we detected 8, 23, and 14 unique peptides that respectively mapped to CREB5, CREB3, and FOXA1 (Supplementary file 1, Table 3). RIME interaction profiles were subsequently constructed for each targeted protein based on the visualization of the counts of all detected unique peptides that were bound. The overall RIME profiles of CREB5 and FOXA1 were compared and exhibited a positive correlation (R = 0.394), while those of CREB3 with either CREB5 or FOXA1 lacked correlation (R = 0.0332, \u20130.0498) (Figure 2A). At the peptide level, we found that CREB5 and FOXA1 shared a total of 504 protein interactions at chromatin, and of these 504, 335 did not interact with CREB3. While almost three times the number of CREB3 peptides were detected relative to CREB5, CREB3 and FOXA1 shared only 83 unique interactions (Figure 2B). These observations nominated CREB5/FOXA1-specific protein\u2013protein interactions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig2-v2.jpg)\n\n**Figure 2.:** (A) RIME analysis depicting the interaction profiles of FOXA1 (greay), CREB5 (red), and CREB3 (blue). Proteins that interact with FOXA1 and CREB5 are also shown. The Pearson correlation coefficients (R) are shownn. (B) Venn diagram depicting unique peptide interactions that are either independent or shared between CREB5 (red), CREB3 (blue), and FOXA1 (greay). Peptides identified to be induced by enzalutamide are highlighted as Retained/Gained. (C) ChIP-seq experiments were used to examine CREB5 and FOXA1 interactions in LNCaP cells with or without enzalutamide treatments. The Venn diagram depicts total binding sites in each condition and the overlapping sites and percentage of shared transcription regulatory elements. (D) CREB5 -bound sites are analyzed and represented as AR binding sites (ARBS) observed in clinical samples. This includes ARBS exclusive in normal (NARBS), tumor (TARBS), mCRPC (metARBS), all tissues (UARBS), as well as all non -ARBS (OTHER). E. CREB5 -bound ARBs are further classified and depicted as % of FOXA1 sites observed in mCRPC (y-axis). The colors represent the overall percentage of FOXA1 sites while the black represents non -FOXA1 sites.\n\nAs an orthogonal approach to RIME, we sought to examine ChIP-seq interactions of CREB5-FOXA1. We first examined the overlap of CREB5 and FOXA1 at transcription regulatory elements with and without ART. By analyzing ChIP-seq experiments that targeted either CREB5 or FOXA1, we found that regardless of ART, CREB5 and FOXA1 shared a strong degree of interactions as more than 90% of CREB5-bound sites were FOXA1 bound (Figure 2C). Pomerantz et al. have recently demonstrated that AR binding sites are reprogrammed during tumorigenesis and progression (Pomerantz et al., 2015; Pomerantz et al., 2020). Since CREB5 promoted ART-resistant activity, we anticipated CREB5 interactions at ARBs would be enriched in tumor-specific binding sites. When considering the subset of ARBs specific to progression, CREB5 indeed bound ARBs in prostate cancer (12.7%) or mCRPC (8.6%) tissue at higher rates as compared to normal prostate ARBs (0.2%) (Figure 2D). Unlike ARBs, FOXA1 binding was less dynamic and the binding sites were relatively ubiquitous in prostate tissue. Almost all CREB5-bound sites were also observed in mCRPCs and were FOXA1 bound (Figure 2E). Taken together these observations demonstrate that CREB5 and FOXA1 engage a similar subset of proteins in cells with ART resistance and these interactions are enriched at ARBs or FOXA1 binding sites in mCRPC.\n\n### CREB5-interacting co-factors are associated with ART resistance\n\nTo define which CREB5-specific interactions are required to drive ART resistance, we used CREB5 mutants to interrogate these interactions. Based on sequence alignment, the B-Zip and L-Zip domains are highly homologous in CREB and ATF family members (Figure 3A) and regulate binding to DNA- and CREB co-factors (Dwarki et al., 1990; Luo et al., 2012). Within the B-Zip and L-Zip domains, several leucine residues regulate transcriptional activity and heterodimerization with the transcription factors JUN and FOS in vitro (Fuchs and Ronai, 1999; Nomura et al., 1993). We engineered CREB5 point mutants that would emulate these structural perturbations by disrupting binding at chromatin (R396E), CRTCs (K405A and K406A), and JUN/FOS (L431P and L434P). We expressed these CREB5 variants in LNCaP cells (Figure 3B) and found that despite robust expression of L431P and L434P CREB5, cells expressing these mutants proliferated similarly to cells expressing luciferase controls in cell doubling assays performed in low androgen media containing enzalutamide (Figure 3B), indicating L431P and L434P CREB5 lacked interactions critical for ART resistance.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig3-v2.jpg)\n\n**Figure 3.:** (A) Alignment of CREB5 sequence with ATF2, ATF7, and CREB3, highlighting the DNA binding domains (blue), CRCT2 binding domains (red), and JUN/ATF binding domains (yellow). (B) Population doubling (y-axis) of LNCaP cells overexpressing wild-type CREB5 variants (red), CREB5 JUN/FOS-binding mutants (purple), and a luciferase negative control (green) in 10 \u03bcM enzalutamide. V5 expression represents V5-tagged CREB5 protein levels. Actin is a loading control. (C) Rapid immunoprecipitation and mass spectroscopy of endogenous proteins (RIME) analysis depicting the interaction profiles of wild-type CREB5 (red), CREB5 L434P (orange), and CREB3 (blue). CREB5 interactions that were reduced, retained, or gained upon enzalutamide treatments are depicted. The Pearson correlation coefficients (R) are shown. (D) A heatmap depicts the RIME interactions of luciferase control, wild-type CREB5, L434P CREB5, and CREB3. Several canonical AR co-factors (AR, FOXA1, HOXB13) interact with both CREB5 and CREB5 L434P and are shown.\n\nTo identify functional interactions specific to wild-type CREB5, we performed RIME in LNCaP cells overexpressing V5-tagged CREB5, CREB5 L434P, or luciferase (Supplementary file 1, Table 4). At approximately the same average peptide counts of CREB5 (8) and L434 CREB5 (7.5), we found a striking correlation between the interaction profiles of CREB5 and CREB5 L434P (R = 0.834). This observation indicated that this CREB5 mutant binds the same proteins as the L434P mutant. In parallel, we failed to find a correlation between CREB3 and wild-type CREB5 (R = \u22120.0581) (Figure 3C). The limited changes in the L434P CREB5 RIME profile highlighted a subset of differential protein interactions associated with the ART-resistant phenotype. When examining the interactions of wild-type and L434P CREB5, we found smaller differences between AR, FOXA1, and HOXB13 (Figure 3D). Outside of AR co-factors, we detected unique peptide signals at comparable levels with AR, FOXA1, and HOXB13, including NFIC, TBX3 (Figure 3D). We detected peptides from these proteins preferentially in cells expressing wild-type CREB5 as compared to L434P or CREB3. We note that we also found peptides from LBD1 and DNMT1, but further evaluation showed that these proteins did not exhibit as strong a difference in AR-expressing prostate cancer cells, and we therefore concentrated on NFIC and TBX3, which also interacted with FOXA1 in our other RIME experiments (Supplementary file 1 Table 3). These observations identified candidate CREB5 interactors, specifically NFIC and TBX3, that may be essential in ART resistance.\n\n### TBX3 and NFIC are critical for AR-positive prostate cancer cells and ART resistance\n\nTo examine the relative contribution of TBX3 and NFIC to cell viability, we analyzed genome-scale RNAi screens performed in eight prostate cancer cell lines as a part of Project Achilles 2.20.1 (Cowley et al., 2014; Shalem et al., 2014; Tsherniak et al., 2017). We found that in AR-positive cell lines (Figure 4A, left) TBX3 and NFIC exhibited a pattern of cell line dependencies as observed for FOXA1. When examining AR-negative cell lines (Figure 4A, right), we found that TBX3 exhibited no clear dependency, while NFIC exhibited modest dependency as compared to FOXA1. This close correlation of TBX3 and NFIC dependency with that observed for FOXA1 supports the conclusion that TBX3 and NFIC regulate prostate cancer cell viability in the AR setting. Furthermore, upon computing the average dependency scores in DEMETER, we found that NFIC and TBX3 ranked among the strongest dependencies in these prostate cancer cell lines while exhibiting limited overall dependency in the other 495 cell lines (Figure 4B). The relative dependencies of NFIC and TBX3 were comparable to the strongest gene dependencies, such as FOXA1 and HOXB13, found in previous studies (Pomerantz et al., 2015).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig4-v2.jpg)\n\n**Figure 4.:** (A) Analysis of genome-scale RNAi screening data ranking the average dependency of 16,869 genes (x-axis) in androgen receptor (AR)-positive (Lleft) and AR-negative (Rrightt.) prostate cancer cell lines (Project Achilles 2.20.1). Average DEMETER score (y-axis) indicates the dependency correlations of FOXA1 and CREB5-interacting proteins. A negative DEMTER score indicates gene dependency in these specific PC cell lines. (B) Average ranks and percentiles based on DEMETER dependency scores are shown for selected genes in AR-positive, AR-negative, and non-PC cell lines. (C). shRNA was utilized to deplete experimental (NFIC, TBX3), negative (GFP) or positive controls (FOXA1) genes in LNCaP cells overexpressing CREB5. The overall cell numbers are depicted post -perturbation. A representative immunoblots depicts depletion of proteins from the proliferation experiments. Tubulin was used as a loading control. The relative depletion is quantified based on the average of all experiments after normalizing to tubulin. (D) CRISPR-Cas9 was utilized to deplete experimental (NFIC, TBX3), negative (GFP) or positive controls (FOXA1) genes in LNCaP cells that spontaneously developed resistance to enzalutamide. The overall cell numbers are depicted post -perturbation. A representative immunoblots depicts depletion of proteins from (C, upper panel) in proliferation experiments. Tubulin was used as a loading control. The relative depletion is quantified based on the average of all experiments after normalizing to tubulin. (E) ChIP-seq data from NFIC and TBX3 was analyzed to predict interaction with CREB5 or FOXA1 motifs. Enriched motifs, the targeted cell lines, and significance levels are depicted.\n\nTo further examine if TBX3 and NFIC were critical in models that exhibit ART resistance, we first performed RNAi-mediated gene depletion experiments in CREB5-overexpressing LNCaP cells in cultures exposed to enzalutamide (Figure 4C). We found that suppression of TBX3 or NFIC using two shRNAs, as compared to a negative control (GFP), reduced the viability of CREB5-overexpressing LNCaP cells to the same extent as two positive control shRNAs that targeted FOXA1. This observation indicates that TBX3 and NFIC, like FOXA1, are required for optimal viability of CREB5 cells in the presence of enzalutamide. We also performed CRISPR-Cas9-mediated gene depletion experiments in a cell line model that spontaneously acquired enzalutamide resistance (Kregel et al., 2016). In this cell line, we expressed three distinct sgRNAs that depleted FOXA1 or two sgRNAs that ablated TBX3 or NFIC, and we found that the sgRNAs against FOXA1, TBX3, or NFIC all reduced protein levels and decreased viability (Figure 4D). We next examined if TBX3 or NFIC interacted with the key CREB5 co-factor FOXA1 in ChIP-seq experiments performed as part of the Encode project (Consortium, 2012). Based on motif enrichment analyses of the TBX3 or NFIC binding sites, we observed statistically significant enrichment of FOXA1 binding motifs identified in experiments on breast or prostate cancer cell lines (Figure 4E). Like CREB5, NFIC also bound B-Zip motifs.\n\nGiven their role in regulating FOXA1 functions, we further examined the landscape of TBX3 and NFIC dysregulation in prostate cancer studies using whole-exome sequencing and whole transcriptome sequencing data from cBioPortal (Cerami et al., 2012; Gao et al., 2013) based on the 209 mCRPC samples collected by Stand Up 2 Cancer/Prostate Cancer Foundation (SU2C/PCF) (Abida et al., 2019). We found that TBX3 and NFIC genomic amplifications together represented up to 13.3% of prostate cancers, in which notably higher amplification rates were observed in mCRPC studies as opposed to those sampling primary prostate cancer (Figure 5A). Upon examining expression and amplification data mCRPC samples (Abida et al., 2019), we found that TBX3, NFIC, and FOXA1 were amplified or overexpressed in 7, 3, and 7% of mCRPC samples, respectively (Figure 5B). Of the 209 samples with expression data, we found a robust positive correlation between FOXA1 with TBX3 (Spearman\u2019s correlation: 0.416; q-value: 1.48e-7) or NFIC (Spearman\u2019s correlation: 0.536; q-value: 4.34e-15) (Figure 5C). Together, we found TBX3 and NFIC were nuclear proteins associated with CREB5, FOXA1, and functionally impacted prostate cancer cell viability and ART resistance even absent of CREB5. In addition, they interacted specifically at FOXA1 motifs in cell lines, are amplified or overexpressed in prostate cancer patients, and their expression is associated with that of FOXA1 in mCRPC.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig5-v2.jpg)\n\n**Figure 5.:** (A) The genomic amplification rates of TBX3 and NFIC are examined in various prostate cancer studies. (B) In one metastatic castration-resistant prostate cancer (mCRPC) study, the rates of TBX3, NFIC, and FOXA1 gains are depicted. (C and D). The expression of TBX and NFIC are compared in one mCRPC study in which the regression line, Spearman\u2019s correlation coefficients, and q-values are depicted.\n\n### CREB5 regulates ART-resistant pathways in cell lines and mCRPC patients\n\nTo determine signaling functions of CREB5, we determined transcriptome expression patterns that were statistically associated with CREB5 expression in both cell lines and in mCRPC patients (Figure 6A). Of the proteins that commonly interacted with CREB5, we utilized Enrichr (Chen et al., 2013; Kuleshov et al., 2016) to perform pathway enrichment analysis on the 335 proteins that bound both CREB5 and FOXA1 in our RIME profiling analysis. Based on the top 10 statistically significant signatures, we found that these 335 interactions associated with AR, cell cycle, as well as Notch, Wnt, and SMAD/TGF\u03b2 pathways (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig6-v2.jpg)\n\n**Figure 6.:** (A) A workflow of the informatics analysis of CREB5 using in vitro and metastatic castration-resistant prostate cancer (mCRPC) data. (B) Spectrum of shared CREB5 and FOXA1 protein interactions identified by rapid immunoprecipitation and mass spectroscopy of endogenous proteins (RIME) are analyzed. The enriched pathways and statistical significance are presented for specific pathways. (C) Gene Set Enrichment Analysis (GSEA) analysis of RNA-seq data from CREB5 or luciferase overexpressing androgen receptor (AR)-positive (LNCaP and LAPC-4) and AR-negative (PC3, DU145) prostate cancer cells. (D) Based on RNA-seq from clinical mCRPC, Spearman\u2019s correlation coefficients compare CREB5 expression with EMT, beta\u03b2-catenin, and G2/M signaling. Correlation coefficient values (Rho, \u03c3, x-axis) for CREB5 against each gene, as represented by a single dot, and the statistical significance (negative log of p-value, y-axis) areis displayed. Pp-vValue is marked (red dotted line).\n\nTo evaluate these findings, we collected mRNA from luciferase or CREB5-overexpressing prostate cancer cells, including the AR-dependent LNCaP and LAPC-4 cells, as well as the AR-negative PC3 and DU145 cells. We then used GSEA to identify pathways associated with CREB5 these cell lines (Figure 6C). We found that CREB5 overexpression was significantly associated with enrichment of signaling pathways EMT and \u03b2-catenin, the Wnt transcription effector in the AR-positive LNCaP and LAPC4 cells, but not in the AR-negative cell lines PC3 and DU145. In clinical mCRPC samples, we analyzed RNA-sequencing datasets from the SU2C/PCF mCRPC cohort (n = 209) (Abida et al., 2019). We computed the Spearman\u2019s correlation coefficient for CREB5 expression against each transcriptional target gene in the EMT, \u03b2-catenin, and cell cycle signatures. In mCRPC, we found that CREB5 expression was correlated with the expression of similar signaling programs we found in vitro, including EMT (Alumkal et al., 2020; He et al., 2021) and \u03b2-catenin (Isaacsson Velho et al., 2020; Lee et al., 2015; Murillo-Garz\u00f3n and Kypta, 2017; Figure 6D). Together, the CREB5-associated nuclear protein interactions in cells and transcripts in mCRPC provide insights into the specific ART-resistant pathways that are activated by this transcription factor, showing the role CREB5 plays in regulating EMT and \u03b2-catenin signaling genes.\n\n## Discussion\n\nWe and others have demonstrated that transcription regulators, such as FOXA1, promote prostate cancer progression and resistance to ART and ADT. Our work identified other molecular events associated with transition towards resistance to second-generation ART and ADT. We did so by identifying reprogramming events associated with overexpressed CREB5, which exhibited shifts in binding at transcription regulatory elements as well as interaction with co-factors when cells were challenged with enzalutamide. In promoting proliferation in ART, CREB5 exhibited a strong degree of interaction with known AR transcription machinery, including FOXA1, HOXB13, and GRHL2, as well as novel prostate cancer regulators TBX3 and NFIC. The robust convergence of CREB5-FOXA1 function was observed through binding of transcription regulatory elements and interactions among nuclear proteins. The factors TBX3 and NFIC interacted with CREB5 but required an intact B/L-Zip domain. TBX3 and NFIC, two nuclear factors that are amplified or overexpressed in mCRPC, were vulnerabilities in other prostate cancer models, including ones that were ART resistant, and bound to FOXA1 transcription regulatory elements. Informatics modeling of the CREB5 activity through protein interactions and mCRPC transcription patterns indicated that CREB5 is associated with pathways found in patients resistant to enzalutamide (Alumkal et al., 2020; He et al., 2021). Altogether, our study indicates that the dynamic binding properties of CREB5 mediate assembly of essential factors to AR and FOXA1 to promote resistant transcripts (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/73223/elife-73223-fig7-v2.jpg)\n\nFOXA1 functions as an oncogenic pioneering and transcription factor in cancers, including prostate and breast (Gerhardt et al., 2012; Nakshatri and Badve, 2009; Shah and Brown, 2019). FOXA1 is a critical dependency in prostate cancer cell line models (Pomerantz et al., 2015), including those that transdifferentiate into AR-agnostic, neuroendocrine-like features (Baca et al., 2021). Prior studies have broadly examined the binding patterns of FOXA1 with transcription regulatory elements in normal prostate tissue, primary prostate cancer, mCRPC, and neuroendocrine prostate cancers (Baca et al., 2021; Pomerantz et al., 2015; Pomerantz et al., 2020), demonstrating transcriptional programs associated with prostate in development, tumor progression, and drug resistance. Although EMT is associated with neuroendocrine prostate cancers (Beltran et al., 2016), AR-expressing mCRPCs that become enzalutamide resistance also show expression of EMT markers (Alumkal et al., 2020; He et al., 2021). Together, the work presented herein demonstrates that the interactions of CREB5 and FOXA1 act as one mechanism that promotes EMT signaling in AR-positive-resistant cells.\n\nWe also found that TBX3 and NFIC interacted and correlated with FOXA1 in the setting of ART resistance based on RIME experiments and gene expression profile analyses of mCRPC samples. Independent of CREB5 and FOXA1, TBX3 expression has been shown to be required for viability of breast cancer cells (Amir et al., 2016; Krstic et al., 2016). In addition, NFI factors, NFIA/B/C/X, have previously been shown to interact with FOXA1 to promote the transcription of AR target genes (Grabowska et al., 2014). Future studies that examine FOXA1 interactions in parallel through ChIP-seq and RIME are necessary to elucidate context-specific functions. In particular, it would be useful to characterize the universal subset of FOXA1 interactions in prostate cancer tumorigenesis as well as molecular changes associated with mutated forms of FOXA1 (Adams et al., 2019; Parolia et al., 2019).\n\nStudies have identified increases in CREB5 as a marker for metastasis in ovarian, breast, and colorectal cancers (Bhardwaj et al., 2017; He et al., 2017; Moln\u00e1r et al., 2018; Qi and Ding, 2014). Functionally, Bardwaj et al. have identified CREB5 transcripts as a repressed target of miRNA-29c, a tumor-suppressive miRNA lost in the triple-negative subtype of breast cancer (Bhardwaj et al., 2017). Forced overexpression of CREB5 promoted cell cycle and colony formation in this study. Altogether, these studies implicate pro-tumor CREB5 functions in cancers. While other CREB family members (Welti et al., 2021) have been associated with therapy resistance in advanced prostate cancer, the differential RIME interaction profiles displayed by these two family member proteins, CREB5 and CREB3, exhibited dichotomous behavior with respect to binding of nuclear proteins in cancer cells. This suggests that the oncogenic roles of CREB5 and other CREB family members may be distinct and mediated through their structurally different N-terminal domains. As another key observation, we also find that experimental conditions, including cell culture and drug treatment, dramatically influenced CREB5 molecular interactions.\n\nOur findings also support that transcription regulators may act as effective therapeutic targets in mCRPC. As examples, TBX3 and NFCI have been previously detected in large-scale proteomic approaches that interrogated prostate cancer tissue (Sinha et al., 2019). This study demonstrates that they have key regulatory roles in prostate cancer cell viability and ART resistance. Antagonizing nuclear or transcription factors has been efficacious in recent examples, as inhibitors against EP300, an AR interacting protein, were efficacious in prostate cancer models (Jin et al., 2017; Lasko et al., 2017; Welti et al., 2021). In regulating a pro-tumorigenic role in mCRPC, CREB5 require additional factors (Supplementary file 1, Tables 2\u20134), including JUN/ATF and SWI/SNF complex. While we have previously discussed that CREB5 functions differ from other CREB or ATF family members (Hwang et al., 2019), the context of how CREB5 interacts with CREB or ATF factors, such as potential hetero-dimerization at open regions of chromatin, still requires further resolution through biochemical approaches. Of bound SWI/SNF family members, we have previously discussed SMARCB1 as recurrent mutation in mCRPC (Armenia et al., 2018), and its loss as a biomarker in malignant pediatric tumors (Hong et al., 2019; Howard et al., 2019). How CREB5 interacts with other chromatin remodeling complexes in ART resistance is an additional research direction that could improve our understanding of transcription processes that could act as targets in therapy-resistant mCRPC.\n\nIn summary, our observations implicate CREB5 as a driver of mCRPC. At the molecular level, our findings depict a complex model of therapy resistance that occurs in the nucleus of tumor cells that permits the activation of oncogenic signaling pathways. Furthering the understanding of these underlying changes may inform of additional research avenues and precision strategies for advanced cancer patients that depend on CREB5.\n\n## Materials and methods\n\n### Genome-scale ORF screen analysis\n\nWe analyzed a published genome-scale ORF screen performed in LNCaP cells (Hwang et al., 2019). Specifically, we compared the experimental arms conducted in control media (FCS) with androgens and androgen stripped media (CSS) containing enzalutamide. Z-scores represent the relative effects of each ORF on cell proliferation after 25 days in culture.\n\n### Rapid immunoprecipitation mass spectrometry of endogenous proteins (RIME)\n\nUpon preparation of cells in each experimental arm, two replicates of 50 million cells each were fixed in 1% formaldehyde for 10 min. Reactions were terminated in 0.125 M glycine for 5 min. Cells were subsequently collected and lysed at 4\u00b0C in RIPA buffer (Cell Signaling Technology, 13202S) containing protease inhibitor cocktail (Roche, 11836145001). Cells were then sonicated with a Covaris sonicator to yield DNA fragments averaging around 3000 nucleotides. To target V5-tagged CREB5, CREB5 L434P, or CREB5, 20 \u03bcL of V5 antibody (Cell Signaling Technology, 58613) was added to the supernatant. To target FOXA1, each sample was incubated with 20 \u03bcL of two FOXA1 antibodies against distinct epitopes (Abcam, ab23738, and Cell Signaling Technology, 58613). Samples were incubated with gentle mixing at 4\u00b0C overnight. The following morning, RIPA buffer was used to wash Protein A magnetic beads (Life Technologies, 88846) five times, and the beads were then resuspended into the original volume. 50 \u03bcL of the bead mixture was added to each sample and incubated for 2 hr at 4\u00b0C. Each sample was then washed five times with 300 \u03bcL of RIPA buffer, followed by five times with 300 \u03bcL of ammonium bicarbonate (50 \u03bcM), and finally resuspended in 50 \u03bcL of ammonium bicarbonate (50 \u03bcM). These samples on the beads were then sent for proteomic analysis at the Taplin Mass Spectrometry Facility at Harvard Medical School. Upon obtaining mapped reads, only unique peptides of proteins were considered for subsequent analysis. Beads were subjected to trypsin digestion procedure (Shevchenko et al., 1996), then washed and dehydrated with acetonitrile for 10 min followed by removal of acetonitrile. The beads were then completely dried in a speed-vac. Rehydration of the beads was with 50 mM ammonium bicarbonate solution containing 12.5 ng/\u00b5L modified sequencing-grade trypsin (Promega, Madison, WI) at 4\u00b0C. After 45 min, the excess trypsin solution was removed and replaced with 50 mM ammonium bicarbonate solution to just cover the gel pieces. Samples were then placed in a 37\u00b0C room overnight. Peptides were later extracted by removing the ammonium bicarbonate solution, followed by one wash with a solution containing 50% acetonitrile and 1% formic acid. The extracts were then dried in a speed-vac (~1 hr). The samples were then stored at 4\u00b0C until analysis. On the day of analysis, the samples were reconstituted in 5\u201310 \u00b5L of HPLC solvent A (2.5% acetonitrile, 0.1% formic acid). A nano-scale reverse-phase HPLC capillary column was created by packing 2.6 \u00b5m C18 spherical silica beads into a fused silica capillary (100\u00b5m inner diameter \u00d7 ~30cm length) with a flame-drawn tip (Peng and Gygi, 2001). After equilibrating the column, each sample was loaded via a Famos auto sampler (LC Packings, San Francisco, CA) onto the column. A gradient was formed and peptides were eluted with increasing concentrations of solvent B (97.5% acetonitrile, 0.1% formic acid). As peptides eluted, they were subjected to electrospray ionization and then entered into an LTQ Orbitrap Velos Pro ion-trap mass spectrometer (Thermo Fisher Scientific, Waltham, MA). Peptides were detected, isolated, and fragmented to produce a tandem mass spectrum of specific fragment ions for each peptide. Peptide sequences (and hence protein identity) were determined by matching protein databases with the acquired fragmentation pattern by the software program, Sequest (Thermo Fisher Scientific) (Eng et al., 1994). All databases include a reversed version of all the sequences, and the data was filtered to between a 1 and 2% peptide false discovery rate.\n\n### Population doubling\n\n100~200k cells were plated in 12-well plates in either control media (FCS) or low androgen media (CSS) with 10 \u03bcM of enzalutamide. Cell counts and relative cell viability were determined after 7 days using a Vi-Cell. Original cell counts were subtracted before doubling was computed.\n\n### Generation of CREB5 point mutants\n\nA pDNR221 CREB5 plasmid was used as a backbone for point mutagenesis. Per the five point mutants, forward and reverse primers were designed to mutagenize nucleotides of CREB5 to reflect the corresponding changes in protein sequence. Primers were designed with primerX (http://www.bioinformatics.org/primerx). Detailed reaction conditions were followed according to a QuikChange II Site-Directed Mutagenesis Kit (Agilent, 2005230). The mutant clones were each sequenced to confirm their identities before subsequent use in recombination reactions. LR Clonase II (Invitrogen, 11791-020) was used to catalyze the recombination reactions to insert each mutated CREB5 ORF into a puromycin-resistant lentiviral pLX307 vector. Positive clones were then sequenced to confirm the identity of the resulting mutant vectors used for further experimentation.\n\n### CRISPR-Cas9 experiments\n\nTo generates sgRNAs, oligos were cloned into a pXPR_003 vector as previously cited (Hwang et al., 2019). Blasticidin-resistant Cas9-positive LNCaP enzalutamide-resistant cells were cultured in 10 \u03bcg/mL blasticidin (Thermo Fisher Scientific, NC9016621) for 72 hr to select for cells with optimal Cas9 activity. One million cells were seeded in parallel in 6-well plates and infected with lentiviruses expressing puromycin-resistant sgRNAs targeting FOXA1, TBX3, NFIC, or GFP control. After 48 hr, cells were counted and seeded, using a Vi-Cell, in FCS media with 20 \u03bcM enzalutamide at a density of 20,000 cells per well in 6-well plate for a proliferation assay. After 24 hr, cells were subjected to puromycin selection for 3 days. 7 days later, cells were counted again with a Vi-Cell to assess viability, representing a total of 12 days. The target sequences against GFP were AGCTGGACGGCGACGTAAA (sgGFP1) and GCCACAAGTTCAGC GTGTCG (sgGFP2). The target sequences against FOXA1 were GTTGGACGGC GCGTACGCCA (sgFOXA1-1), GTAGTAGCTGTTCCAGTCGC (sgFOXA1-2), and ACTGCGCCCCCCATA AGCTC (sgFOXA1-4). The target sequences against TBX3 were GAAAAGGTGAGCCTTGACCG (sgTBX3-1) and GCTCTTACAATGTGGAACCG (sgTBX3-2). The target sequences against NFIC were ACGGCCACGCCAATGTGGTG (sgNFIC-1) and GCTGAGCATCACCGGCAAGA (sgNFIC-2).\n\n### shRNA experiments\n\nLentiviruses expressing shRNAs for AR, FOXA1, TBX3, NFIC, or GFP were used to infect LNCaP cells grown in FCS media. Between 48 and 72 hr post infection, protein lysates were collected to determine the extent of suppression. After confirming suppression, respective cells were counted and directly seeded for proliferation experiments. All shRNA constructs were acquired from the Broad Institute Genetic Perturbation Platform (https://portals.broadinstitute.org/gpp/public/). The target sequence against GFP was ACAACAGCCACAACGTCTATA (sgGFP). The target sequences against AR were GAGCGTGGACTTTCCGGAAAT (shAR1), GATGTCTTCTGCCTGTTATAA (shAR2), and CGCGACTACTACAACTTTCCA (shAR3). The target sequences against FOXA1 were TCTAGTTTGTGGAGGGTTATT (shFOXA1-1) and GCGTACTACCAAGGTGTGTAT (shFOXA1-2). The target sequences against TBX3 were GCATACCAGAATGATAAGATA (shTBX3-2) and GCTGCTGATGACTGTCGTTAT (shTBX3-3). The target sequences against NFIC were GATGGACAAGTCACCATTCAA (shNFIC-2) and CCCGGTGAAGAAGACAGAGAT (shNFIC-4).\n\n### RNA-seq experiments\n\nFor RNA-seq experiments, AR-positive (LNCaP, LAPC-4) cells and AR-negative (PC3, DU145) cells expressing either luciferase or CREB5 were cultured in FCS media. For RNA-seq experiments, library preparations, quality control, and sequencing on a HiSeq2500 (Illumina) were performed and analyzed by the Dana-Farber Molecular Biology core facility based on prior studies (Hwang et al., 2019).\n\n### Immunoblotting\n\nCells were lysed using 2\u00d7\u2009sample buffer (62.5 mM Tris pH 6.8, 2% SDS, 10% glycerol, Coomassie dye) and freshly added 4% \u03b2-mercaptoethanol. Lysed cells were scraped, transferred into a 1.5\u2009mL microcentrifuge tube, sonicated for 15 s, and boiled at 95\u00b0C for 10 min. Proteins were resolved in NuPAGE 4\u201312% Bis-Tris Protein gels (Thermo Fisher Scientific) and run with NuPAGE MOPS SDS Running Buffer (Thermo Fisher Scientific, NP0001). Proteins were transferred to nitrocellulose membranes using an iBlot apparatus (Thermo Fisher Scientific). Membranes were blocked in Odyssey Blocking Buffer (LI-COR Biosciences, 927-70010) for 1 hr at room temperature, and membranes were then cut and incubated in primary antibodies diluted in Odyssey Blocking Buffer at 4\u00b0C overnight. The following morning, membranes were washed with phosphate-buffered saline, 0.1% Tween (PBST) and incubated with fluorescent anti-rabbit or anti-mouse secondary antibodies at a dilution of 1:5000 (Thermo Fisher Scientific, NC9401842 [rabbit] and NC0046410 [mouse]) for 1 hr at room temperature. Membranes were again washed with PBST and then imaged using an Odyssey Imaging System (LI-COR Biosciences). Primary antibodies used include V5 (Cell Signaling Technology, 13202S), \u03b2-actin (Cell Signaling Technology, 8457L), FOXA1 (Cell Signaling, 58613), TBX3 (Life Technologies, 424800), NFIC (Abcam, ab245597), and tubulin (Cell Signaling, 3873S).\n\n### Overlap analysis of CREB5 binding sites\n\nBed files containing peak summit locations determined by MACS2 from CREB5 ChIP-seq data were intersected with the indicated datasets using BEDtools v2.27.1 (Quinlan and Hall, 2010). To assess overlap with FOXA1 binding sites, FOXA1 ChIP-seq datasets from 23 prostate adenocarcinoma patient-derived xenografts (Nguyen et al., 2017) and tissue (Pomerantz et al., 2015; Pomerantz et al., 2020) were merged to create a FOXA1 union peak set. To assess overlap of CREB5 binding and various sets of AR binding sites, we first created a union set of CREB5 peaks that were present with or without enzalutamide treatment. This CREB5 peak set was intersected with the indicated AR peaks sets (Figure 2B) from Pomerantz et al., 2015 and Pomerantz et al., 2020. The percentages of each class of AR+CREB5+peaks were assessed for overlap with the union set of FOXA1 peaks in Figure 2C.\n\n### Project Achilles 2.20.1 analysis\n\nOf the total of 503 cell lines, we analyzed a published genome-scale RNAi screen of eight prostate cancer cell lines (Cowley et al., 2014; Shalem et al., 2014; Tsherniak et al., 2017) whereby we averaged the dependency for each gene. Cell lines included NCIH660 (NEPC-like), PC3 and DU145 (AR negative), 22RV1 (expressing an AR V7 splice variant), LNCaP, VCaP, and MDAPCA2B (AR positive and dependent), and PRECLH (normal immortalized prostate epithelium).\n\n### Motif enrichment analysis\n\nKnown motifs enriched in TBX3 and NFIC ChIP-seq data from HepG2 cells (GEO: GSM2825557, GSM2902642) compared to a whole-genome background were identified with Homer version 4.17 (Heinz et al., 2010). Selected examples from the most significantly enriched known motifs are shown (Figure 4D).\n\n### Expression association analysis of CREB5 in mCRPC\n\nWe analyzed RNA-sequencing data from an updated combined cohort of men with mCRPC from multiple institutions comprising the SU2C/PCF Prostate Cancer Dream Team (Abida et al., 2019). RNA-seq data, normalized in units of transcripts per million (TPM), was available from 208 patients. Expression data was previously examined and adjusted for batch effects using ComBat (Johnson et al., 2007) via the R Bioconductor package \u2018sva\u2019 (Leek et al., 2012), V3.22.0. The Spearman correlations were determined for CREB5 against all detectable transcripts in these samples. This profile of association was further examined with focus on CREB5 and its association with genes in the indicated pathways using predefined MSigDB signatures.\n\n### Cell lines and authentication\n\nThe cell lines used in this study were directly ordered from American Type Culture Collection (ATCC) or identities have been confirmed through their STR profiling analyses. None of the cell lines we have used are frequently misidentified by standards of the International Cell Line Authentication Committee. Micoplasma contamination was routinely tested using MycoAlert (LT07-118, Lonza).\n",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "98a19271-be7e-4f9c-a4b2-e7f1b8039862",
+      "submission_id": "54d83476-3df6-4bc5-8005-d0331e9ce3ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Charles L Sawyers, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73223.sa0](https://doi.org/10.7554/eLife.73223.sa0)\n\nBuilding on your earlier work implicating CREB5 in resistance to androgen receptor (AR) inhibition, you have now defined the CREB5 interactome in this setting, revealing physical interaction with AR, with the pioneer transcription factor FOXA1, and with other known co-interacting nuclear factors such as TBX3 and NFIC. Collectively, this work strengthens our understanding of how dysregulated epigenomic and transcriptomic processes drive disease pathogenesis and progression.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Charles L Sawyers, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73223.sa1](https://doi.org/10.7554/eLife.73223.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"CREB5 reprograms nuclear interactions to promote resistance to androgen receptor targeting therapies\" for peer review at eLife. Your article is being evaluated by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation is being overseen by Kathryn Cheah as the Senior Editor.\n\nWhile both reviewers appreciate the work that went into defining the CREB5 cistrome and interactome, you will see two major concerns have been raised.\n\n1. Reviewer 1 wants to understand whether CREB5 confers ART resistance by working through AR, by restoring/reshaping its function, versus a lineage plasticity model as suggested by enrichment of EMT/TGF-\u03b2 signatures. This would require further experiments in CREB5 wild-type vs overexpression models and ideally other prostate models beyond LNCaP to address questions of generalizability.\n\n2. Reviewer 2 raises concerns about the underlying premise of CREB5/AR biology based on literature data showing that CREB5 is an AR-repressed gene.\n\nReviewer #1:\n\nPreviously, these authors identified CREB5 overexpression as a mechanism that drives enzalutamide resistance, which they reported in eLife. In this paper, the authors use ChIP-seq and RIME to further characterize CREB5 in this context. The main findings are co-association/overlap of motifs and protein interactions with AR and FOXA1. Through mutagenesis of the known FOS/JUN interaction motif in CREB5 followed by addition RIME, the authors identify NFIC and TBX3 as additional interaction partners associated with enzalutamide resistance. Analysis of Achilles data and an enzalutamide-resistant LNCaP subline suggest dependencies in prostate cancer lines, similar to those seen with FOXA1. This work further develops the previously published CREB5 story and provides useful datasets on CREB5 binding sites and protein interaction partners, but the overall novelty and impact are limited.\n\nSpecific comments\n\n1. The enrichment for signatures of EMT and TGF-\u03b2 (Figure 5) is puzzling since lineage shifts of this type (away from luminal) is generally associated with loss of AR dependency. Yet the ChIP-seq and interactome data point to AR, FOXA1, etc as the primary drivers of CREB5 biology. How do the authors reconcile these findings? Does enzalutamide resistance mediated by CREB5 still require AR? (i.e., what happens with genetic ablation of AR?)\n\n2. Figure 4B shows that both TBX3 and NFIC are required for cell viability in the LNCaP cells that spontaneously developed resistance to enzalutamide. This is the major novelty in the work but is only addressed in this one experiment. At a minimum, the authors should test the function of TBX3 and NFIC in a CREB5 overexpressing cell line because that is the biological context in which the screens were done. As with their earlier paper, it would also be more persuasive to conduct these experiments in vivo (e.g. using xenograft models) to show that TBX3 and NFIC are important regulators for castration + enzalutamide resistance. The in vivo experiment would also be a better context to address the potential lineage changes such as EMT (see comment #1).\n\n3. Figure 4A plots the dependency results in prostate cancer cell lines from Project Achilles, noting that TBX3 and NFIC both score. Are all of these lines AR-positive? What about widely used AR-negative lines like PC3 and DU145? Also, how do TBX3 and NFIC score in a pan cancer analysis? And what are the results from DepMap?\n\n4. In figure 3D, LDB1 and DNMT1 are another two proteins that have reduced binding with CREB5 mutants comparing with wildtype CREB5. The authors ignored these two proteins and focused on NFIC and TBX3. Why not examine all four? Do LDB1 and DNMT1 also play a role in ART resistance?\n\n5. For the CREB5 binding proteins identified using RIME, especially the ART reprogrammed protein-protein interactions, the results would be more convincing if the authors could provide a few validations using co-immunoprecipitation (co-IP).\n\n6. In my opinion, the title \"CREB5 reprograms nuclear interactions to promote resistance to androgen receptor targeting therapies\" seems a bit misleading. The experiments and analysis focus on the effects of CREB5 in the presence of ART, which is already known to have a major impact on protein interactions and chromatin landscape.\n\nThe work needs to clarify whether the effects of CREB5 overexpression and the dependencies on TBX3 and NIFC are restricted to AR-positive/AR-dependent models.\n\nReviewer #2:\n\nThis reviewer acknowledges the tremendous effort that went into producing high-quality OMIC data. The authors were likely unaware that CREB5 was an AR target gene and if they confirm it to be so in their model system they will have to reformulate their hypothesis and completely rewrite the paper. Further, there are no data presented in this paper that shows that CREB5 is causally involved in processes that confer resistance to enzalutamide. They need to validate he results of the OMICs approaches with such studies.\n\n1. The apparent goal of the ORF screen (described in figure 1) was to identify factors whose involvement in PCa pathobiology was dependent on ENZ. However, a quick review of several published RNAseq datasets indicates that CREB5 is highly downregulated in PCa cells (normal and malignant) treated with R1881, Enz or Bicalutamide (its also downregulated by agonist activated progesterone receptor in several systems). Have the authors considered that they may have identified a gene (CREB5) that is AR repressed that is important for AR action and that the protein is not specifically related to ENZ/ADT resistance but is required for AR action? The potential involvement of CREB in AR action more broadly needs to be probed, but this reviewer suspects that when explored further the authors will find that the protein is not involved in resistance-dependent reprogramming of the AR cistrome per se.\n\n2. Given that CREB5 is highly downregulated in cells treated with R1881, Enz or Bicalutamide one interpretation of the authors findings is that overexpression of CREB5 bypasses this regulatory pathway but that should impact the activity of both agonists and antagonists. Thus, the authors need to consider that they may have identified a gene (CREB5) that is AR repressed that its reduced expression is important for AR action and that dysregulation of the expression of this protein is not specifically related to ENZ/ADT resistance? To support their specific hypothesis the authors would have to show that CREB5 overexpression has no effect on R1881 dependent transcription. Otherwise the focus of the paper must change completely to consider a more \"physiological\" role for CREB5 in AR action.\n\n3. The appearance of FOXA1 GRHL2, FOXA1 et at CREB5 binding sites is interesting but the requirement for AR in these studies is not demonstrated.\n\n4. In designing the screen the assumption is made that CSS is just FBS \"without androgens\" which is not the case. FBS +/- enz would seem to be a more relevant model to look for important mediators of resistance (enz is not very active in this scenario but that is another story!). Further, if androgens suppress CREB5 (as has been demonstrated) and this is required for proliferation then overexpression of CREB5 would bypass this regulation and thus would explain the results observed in FBS (inhibition of proliferation).\n\n5. If CREB5 downregulation is required for normal AR function then it is hard to explain the dependencies highlighted in DEPMAP. Unless its overexpression prevents the repression/downregulation of proliferation that occurs in PCa cancer cells as androgen levels rise.\n",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a0277fba-812b-4f35-97fb-f4d1d1a882a7",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C1",
+      "claim": "Metastatic castration-resistant prostate cancers (mCRPCs) are treated with therapies that antagonize the androgen receptor (AR).",
+      "claim_type": "EXPLICIT",
+      "source": "Metastatic castration-resistant prostate cancers (mCRPCs) are treated with therapies that antagonize the androgen receptor (AR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about mCRPC treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "72edd389-783c-4f03-a4e9-0833f52b72c0",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C2",
+      "claim": "Nearly all patients develop resistance to AR-targeted therapies (ARTs).",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all patients develop resistance to AR-targeted therapies (ARTs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about treatment resistance in mCRPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "2cb2a20e-69a1-4c75-b257-aeb5f1da64f2",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C3",
+      "claim": "CREB5 was identified as an upregulated target gene in human mCRPC that promoted resistance to all clinically approved ART.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work identified CREB5 as an upregulated target gene in human mCRPC that promoted resistance to all clinically approved ART.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous work by the authors (Hwang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "e39931e1-44ce-49ec-bf99-f231e660b76c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C4",
+      "claim": "Cells overexpressing CREB5 demonstrate extensive reprogramming of nuclear protein\u2013protein interactions in response to the ART agent enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating ChIP-seq and rapid immunoprecipitation and mass spectroscopy of endogenous proteins, we report that cells overexpressing CREB5 demonstrate extensive reprogramming of nuclear protein\u2013protein interactions in response to the ART agent enzalutamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and RIME experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "217f829a-ffe5-46ee-8de5-ffbc987de53e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C5",
+      "claim": "CREB5 physically interacts with AR, the pioneering factor FOXA1, and other known co-factors of AR and FOXA1 at transcription regulatory elements recently found to be active in mCRPC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, CREB5 physically interacts with AR, the pioneering actor FOXA1, and other known co-factors of AR and FOXA1 at transcription regulatory elements recently found to be active in mCRPC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and RIME experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "22733e90-b35e-4c9b-949a-96332c1e5b17",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C6",
+      "claim": "GRHL2 and HOXB13 are CREB5/FOXA1 co-interacting nuclear factors that have critical functions for AR transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a subset of CREB5/FOXA1 co-interacting nuclear factors that have critical functions for AR transcription (GRHL2, HOXB13)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data and functional validation experiments in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "7aa30be6-2902-4f36-9a42-b97dc24e9e6e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C7",
+      "claim": "TBX3 and NFIC are CREB5/FOXA1 co-interacting nuclear factors that regulated cell viability and ART resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a subset of CREB5/FOXA1 co-interacting nuclear factors that have critical functions for AR transcription (GRHL2, HOXB13) while others (TBX3, NFIC) regulated cell viability and ART resistance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data and functional validation experiments in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "504acb97-637c-4f9f-aafc-1dbfe3c7044f",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C8",
+      "claim": "TBX3 and NFIC were amplified or overexpressed in mCRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a subset of CREB5/FOXA1 co-interacting nuclear factors that have critical functions for AR transcription (GRHL2, HOXB13) while others (TBX3, NFIC) regulated cell viability and ART resistance and were amplified or overexpressed in mCRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of genomic and expression data from mCRPC patient samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "8cfb93ab-84df-4e1d-87ea-3b9c6541d989",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C9",
+      "claim": "CREB5 was associated with Wnt signaling and epithelial to mesenchymal transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon examining the nuclear protein interactions and the impact of CREB5 expression on the mCRPC patient transcriptome, we found that CREB5 was associated with Wnt signaling and epithelial to mesenchymal transitions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pathway enrichment analysis of RIME data and gene expression correlation analysis in mCRPC samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "d06bdfd7-379b-49de-8816-0b35f7fdb562",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C10",
+      "claim": "Wnt signaling and epithelial to mesenchymal transitions are implicated in CREB5/FOXA1-mediated ART resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon examining the nuclear protein interactions and the impact of CREB5 expression on the mCRPC patient transcriptome, we found that CREB5 was associated with Wnt signaling and epithelial to mesenchymal transitions, implicating these pathways in CREB5/FOXA1-mediated ART resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the association of CREB5 with these pathways and its role in ART resistance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "fd73d217-6e88-422c-80e9-69b750b04354",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C11",
+      "claim": "The androgen receptor (AR) plays a fundamental role in the development and function of the prostate.",
+      "claim_type": "EXPLICIT",
+      "source": "The androgen receptor (AR) plays a fundamental role in the development and function of the prostate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about AR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "cb50cb83-a513-40c2-bd9f-5f8aada7290b",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C12",
+      "claim": "AR transcriptional activity is required for the initiation and progression of prostate cancer and remains critical in metastatic castration-resistant prostate cancer (mCRPC).",
+      "claim_type": "EXPLICIT",
+      "source": "AR transcriptional activity is required for the initiation and progression of prostate cancer and remains critical in metastatic castration-resistant prostate cancer (mCRPC) (Abida et al., 2019; Armenia et al., 2018; Grasso et al., 2012; He et al., 2021; Robinson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "667fe0f5-eb8a-4ba2-bb6f-73328a3765f8",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C13",
+      "claim": "The standard of care for patients with mCRPC is androgen deprivation therapy (ADT) and AR-targeted therapies (ARTs).",
+      "claim_type": "EXPLICIT",
+      "source": "The standard of care for patients with mCRPC is androgen deprivation therapy (ADT) and AR-targeted therapies (ARTs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about mCRPC treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "41df1b4b-3b8f-45fd-8adb-4c3293e4737d",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C14",
+      "claim": "ADT and ART initially induce responses and lengthen the survival of mCRPC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "While ADT and ART initially induce responses and lengthen the survival of mCRPC patients, intrinsic or acquired resistance continues to be a substantial clinical obstacle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about treatment response in mCRPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "fd62d739-1fd8-47ea-ac49-847004783062",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C15",
+      "claim": "Intrinsic or acquired resistance to ADT and ART continues to be a substantial clinical obstacle.",
+      "claim_type": "EXPLICIT",
+      "source": "While ADT and ART initially induce responses and lengthen the survival of mCRPC patients, intrinsic or acquired resistance continues to be a substantial clinical obstacle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about treatment resistance in mCRPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "f0551c28-1df0-43ed-9379-c8fb521cd975",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C16",
+      "claim": "A subset of resistant mCRPC harbor AR genomic alterations through mutations, copy number gain, enhancer amplification, as well as increased resistant transcript variants (ARV7).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies of mCRPC patients resistant to second-generation ART and ADT have identified that a subset of the resistant mCRPC harbor AR genomic alterations through mutations, copy number gain, enhancer amplification, as well as increased resistant transcript variants (ARV7) (Bubley and Balk, 2017; Henzler et al., 2016; Takeda et al., 2018; Viswanathan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "c8a2439b-f7fc-416b-abae-c24fe01705bc",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C17",
+      "claim": "Resistance to ART also occurs through mechanisms including upregulation of cell cycle genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Other clinical and functional studies together demonstrate that resistance also occurs through mechanisms, including upregulation of cell cycle genes (Comstock et al., 2013; Han et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "beed0c78-ba3f-4a59-947a-775339939dfb",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C18",
+      "claim": "Resistance to ART also occurs through upregulation of the proto-oncogene MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Other clinical and functional studies together demonstrate that resistance also occurs through mechanisms, including upregulation of cell cycle genes (Comstock et al., 2013; Han et al., 2017) and/or the proto-oncogene MYC (Abida et al., 2019; Armenia et al., 2018; Bernard et al., 2003; Grasso et al., 2012; Robinson et al., 2015; Sharma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "5bfc0cca-6066-401a-bf07-d1617f07f4f9",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C19",
+      "claim": "Selective activation of pathways such as epithelial to mesenchymal transition (EMT), TGF\u03b2 and Wnt has been recently identified from profiling mCRPC patients that became resistant to second-generation ART or ADT.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, selective activation of pathways such as epithelial to mesenchymal transition (EMT), TGF\u03b2 and Wnt has been recently identified from profiling mCRPC patient become resistant to second-generation ART or ADT (Alumkal et al., 2020; He et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "31783c7b-33ee-4121-9bba-60cd2839f49a",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C20",
+      "claim": "AR activity in prostate tissue is regulated by AR co-factors such as HOXB13 and FOXA1 at AR binding sites (ARBs).",
+      "claim_type": "EXPLICIT",
+      "source": "AR activity in prostate tissue is regulated by AR co-factors such as HOXB13 and FOXA1 at AR binding sites (ARBs) (Pomerantz et al., 2015; Pomerantz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "b7ffdf14-fa8b-4f88-bff8-d83067e17654",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C21",
+      "claim": "FOXA1 is a co-factor with both pioneering and transcription functions.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq experiments have demonstrated that FOXA1, a co-factor with both pioneering and transcription functions, binds to distinct sites and has different protein interactions that is dependent on the disease stage and pathological phenotype (Baca et al., 2021; Pomerantz et al., 2015; Pomerantz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "9661dd34-1791-4e19-8faf-19775c30172e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C22",
+      "claim": "FOXA1 binds to distinct sites and has different protein interactions that is dependent on the disease stage and pathological phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq experiments have demonstrated that FOXA1, a co-factor with both pioneering and transcription functions, binds to distinct sites and has different protein interactions that is dependent on the disease stage and pathological phenotype (Baca et al., 2021; Pomerantz et al., 2015; Pomerantz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "83d6b3a6-8ea9-4dc1-b4d0-9d2e6c706640",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C23",
+      "claim": "Genomic alterations of FOXA1 promote ART resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies indicate that genomic alterations of FOXA1 promote ART resistance (Adams et al., 2019; Baca et al., 2021; Parolia et al., 2019; Shah and Brown, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "31faa57c-2712-4f16-9311-2d712f2969f6",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C24",
+      "claim": "FOXA1 function remains functionally relevant even as mCRPC differentiate into aggressive variants that no longer require AR signaling, such as neuroendocrine prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that FOXA1 function remains functionally relevant even as mCRPC differentiate into aggressive variants that no longer require AR signaling, such as neuroendocrine prostate cancer (Baca et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "67dd1a56-0fd8-46a1-9370-579e603c3b8b",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C25",
+      "claim": "The transcriptional factor cAMP-responsive element binding protein 5 (CREB5) promoted resistance to FDA-approved ART, enzalutamide, darolutamide and apalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that the transcriptional factor cAMP-responsive element binding protein 5 (CREB5) promoted resistance to FDA-approved ART, enzalutamide, darolutamide and apalutamide (Hwang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "e979eeaa-f534-4eb3-a1cb-dd8ff3934cbc",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C26",
+      "claim": "CREB5 has been associated with progression of ovarian, colorectal, and breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "CREB5 has also been associated with progression of cancers, including ovarian, colorectal, and breast (Bhardwaj et al., 2017; He et al., 2017; Moln\u00e1r et al., 2018; Qi and Ding, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "350ace1c-8e6e-4099-92f5-86acb3ab7702",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C27",
+      "claim": "The molecular mechanisms by which CREB5 promotes resistance in mCRPC or general tumorigenesis remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the molecular mechanisms by which CREB5 promotes resistance in mCRPC or general tumorigenesis remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "1184f72f-f685-4e89-a377-8942be41dc02",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C28",
+      "claim": "Overexpression of CREB5 reduced viability (Z = \u20131.3) in standard cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon re-examining the data, we found that unlike in ADT/ART, overexpression of CREB5 reduced viability (Z = \u20131.3) in standard cultures (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from a genome-scale screen shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "88860aca-d092-4d3f-9a57-e7547756b2ed",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C29",
+      "claim": "CREB5 overexpression exhibited robust differential Z-scores when comparing the treated arm (Z = +14.5) to the control arm (Z = \u20131.3).",
+      "claim_type": "EXPLICIT",
+      "source": "The Z-scores, which represent relative proliferation effects compared to all 17,255 ORFs, exhibited robust differentials when comparing the treated arm in comparison to the control arm (Z = +14.5 and \u20131.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from a genome-scale screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "1244b3e6-f25d-4859-9dc2-f47d6f364f37",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C30",
+      "claim": "CDK4 or CDK6 promoted cell fitness regardless of treatment conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation contrasted to other genes that mediate resistance to ART, such as CDK4 or CDK6, which promoted cell fitness regardless of treatment conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from a genome-scale screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "7c16a3a0-c7bf-4085-93ba-0808e1f5acb6",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C31",
+      "claim": "CREB5 had the greatest differential viability effect after low androgen and enzalutamide treatment among ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among ORFs, CREB5 had the greatest differential viability effect after low androgen and enzalutamide treatment (Supplementary file 1, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from a genome-scale screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "cbec7176-2b5d-42b6-bf27-9fc23ae5813d",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C32",
+      "claim": "CREB5 binding sites segregated into lost (n = 5392), retained (n = 12,432), or gained (n = 12,144) categories in the enzalutamide condition compared to the pretreatment condition.",
+      "claim_type": "EXPLICIT",
+      "source": "CREB5 overexpression induced a robust differential phenotype (Figure 1B), in which lost (n = 5392), retained (n = 12,432), or gained (n = 12,144) CREB5 binding sites were tallied in the enzalutamide condition compared to the pretreatment condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "ca969849-1a23-4e21-9f72-f99a5a2a424c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C33",
+      "claim": "The elements in which CREB5 retained or gained sites were statistically significantly enriched of other nuclear proteins including AR, FOXA1, and HOXB13.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the elements in which CREB5 retained or gained sites were statistically significantly enriched of other nuclear proteins in which ChIP-seq had been performed in prostate cancer cell lines. This included binding elements (AR, FOXA1, HOXB13) that we previously demonstrated through ChIP-seq experiments (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GIGGLE analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "edd64693-2c80-4534-a695-f0d354314642",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C34",
+      "claim": "Retained or gained sequences nominated well-studied regulators or co-factors of AR such as GRHL2, EP300, and SMARCA4.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also identify that retained or gained sequences nominated well-studied regulators or co-factors of AR such as GRHL2 (Paltoglou et al., 2017), EP300 (Yu et al., 2020), and SMARCA4 (Launonen et al., 2021; Marshall et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GIGGLE analysis and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "3aad75b0-7061-45b6-9959-8b000431cc73",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C35",
+      "claim": "Genetic ablation of AR or FOXA1 reduced viability of CREB5-overexpressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In confirmation of previous findings, the genetic ablation of AR or FOXA1 reduced viability of CREB5-overexpressing cells (Figure 1\u2014figure supplement 1; Hwang et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1 and a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "287829a4-8e6e-4b8c-9fe3-6008d2ecf52f",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C36",
+      "claim": "CREB5-bound unique peptides segregated into lost (n = 77), retained (n = 222), and gained groups (n = 207) when comparing control to enzalutamide-treated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the analyzed RIME binding profiles of the control to the enzalutamide-treated conditions, analogous to the ChIP-seq experiments, we found the CREB5-bound unique peptides also segregated into lost (n = 77), retained (n = 222), and gained groups (n = 207) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIME data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "391af5ac-68e1-46c6-a8fb-6ba3c8731868",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C37",
+      "claim": "Both GIGGLE and RIME approaches nominated known AR interactions including EP300, FOXA1, and GRHL2.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, we found both approaches nominated known AR interactions (EP300, FOXA1, and GRHL2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GIGGLE and RIME data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "d6764f28-d871-4822-b9aa-eaab244f9c9a",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C38",
+      "claim": "CREB5 binding dynamically responds to ART treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these parallel approaches demonstrate that CREB5 binding dynamically responds to ART treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ChIP-seq and RIME data showing changes in CREB5 binding and interactions upon enzalutamide treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "da9b0764-11c6-4dbe-8a0c-3116588ae4ed",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C39",
+      "claim": "The retained or gained RIME interactions indicate CREB5 may interact with distinct sets of co-factors, some of which are AR associated, to promote ART resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the retained or gained RIME interactions indicate CREB5 may interact with distinct sets of co-factors, some of which are AR associated, to promote ART resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on RIME data showing retained and gained interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "35592419-84bb-4c90-8157-9c24ffd0f5b4",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C40",
+      "claim": "Overexpressing CREB3 conferred significantly weaker resistance to enzalutamide compared to CREB5.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior work in LNCaP cells, we found that overexpressing CREB3, a related CREB family member, conferred significantly weaker resistance to enzalutamide, and therefore serves as a useful control to understand CREB5 functions in resistance (Hwang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "4cec0ef1-15f8-473f-b6ce-98a2b716f960",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C41",
+      "claim": "The overall RIME profiles of CREB5 and FOXA1 exhibited a positive correlation (R = 0.394).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall RIME profiles of CREB5 and FOXA1 were compared and exhibited a positive correlation (R = 0.394), while those of CREB3 with either CREB5 or FOXA1 lacked correlation (R = 0.0332, \u20130.0498) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIME data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "ca646152-70f0-40f2-91cc-5303684961cf",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C42",
+      "claim": "The RIME profiles of CREB3 with either CREB5 or FOXA1 lacked correlation (R = 0.0332, \u20130.0498).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall RIME profiles of CREB5 and FOXA1 were compared and exhibited a positive correlation (R = 0.394), while those of CREB3 with either CREB5 or FOXA1 lacked correlation (R = 0.0332, \u20130.0498) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIME data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "b86258ba-5242-43ba-a63d-3f748bbb38b0",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C43",
+      "claim": "CREB5 and FOXA1 shared a total of 504 protein interactions at chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "At the peptide level, we found that CREB5 and FOXA1 shared a total of 504 protein interactions at chromatin, and of these 504, 335 did not interact with CREB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "84d332ec-6695-44e3-87d9-2258c831bd69",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C44",
+      "claim": "Of the 504 shared CREB5 and FOXA1 protein interactions, 335 did not interact with CREB3.",
+      "claim_type": "EXPLICIT",
+      "source": "At the peptide level, we found that CREB5 and FOXA1 shared a total of 504 protein interactions at chromatin, and of these 504, 335 did not interact with CREB3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "ac18bce4-28ba-4a50-af6b-25c851bfa25f",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C45",
+      "claim": "CREB3 and FOXA1 shared only 83 unique interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While almost three times the number of CREB3 peptides were detected relative to CREB5, CREB3 and FOXA1 shared only 83 unique interactions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIME data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "c595c263-6c78-4b3d-b607-a4ece0438f22",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C46",
+      "claim": "Regardless of ART, more than 90% of CREB5-bound sites were FOXA1 bound.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing ChIP-seq experiments that targeted either CREB5 or FOXA1, we found that regardless of ART, CREB5 and FOXA1 shared a strong degree of interactions as more than 90% of CREB5-bound sites were FOXA1 bound (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "b4b272a8-7f32-4573-89a7-1d04cadb7d34",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C47",
+      "claim": "AR binding sites are reprogrammed during tumorigenesis and progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Pomerantz et al. have recently demonstrated that AR binding sites are reprogrammed during tumorigenesis and progression (Pomerantz et al., 2015; Pomerantz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "53e02171-6514-4aa3-bcfe-84986c8e4784",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C48",
+      "claim": "CREB5 bound ARBs in prostate cancer (12.7%) or mCRPC (8.6%) tissue at higher rates as compared to normal prostate ARBs (0.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the subset of ARBs specific to progression, CREB5 indeed bound ARBs in prostate cancer (12.7%) or mCRPC (8.6%) tissue at higher rates as compared to normal prostate ARBs (0.2%) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "89b9cd8b-2dc2-49ba-a84c-fc82b17cd806",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C49",
+      "claim": "Almost all CREB5-bound sites were also observed in mCRPCs and were FOXA1 bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all CREB5-bound sites were also observed in mCRPCs and were FOXA1 bound (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "4f685187-4230-4cbd-86a5-d1f97eb64148",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C50",
+      "claim": "CREB5 and FOXA1 engage a similar subset of proteins in cells with ART resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these observations demonstrate that CREB5 and FOXA1 engage a similar subset of proteins in cells with ART resistance and these interactions are enriched at ARBs or FOXA1 binding sites in mCRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on RIME and ChIP-seq data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "091ab671-cd1a-4dbe-a625-c296bc2e8a1c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C51",
+      "claim": "CREB5 and FOXA1 interactions are enriched at ARBs or FOXA1 binding sites in mCRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these observations demonstrate that CREB5 and FOXA1 engage a similar subset of proteins in cells with ART resistance and these interactions are enriched at ARBs or FOXA1 binding sites in mCRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "f1762fe9-71cc-4051-bceb-a479110ee7e1",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C52",
+      "claim": "The B-Zip and L-Zip domains are highly homologous in CREB and ATF family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on sequence alignment, the B-Zip and L-Zip domains are highly homologous in CREB and ATF family members (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "5860d49a-0634-4ffe-b8a1-8dfecd7c61af",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C53",
+      "claim": "The B-Zip and L-Zip domains regulate binding to DNA- and CREB co-factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on sequence alignment, the B-Zip and L-Zip domains are highly homologous in CREB and ATF family members (Figure 3A) and regulate binding to DNA- and CREB co-factors (Dwarki et al., 1990; Luo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "316adb61-5d5b-4698-a0cb-aafc8152d0d0",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C54",
+      "claim": "Several leucine residues within the B-Zip and L-Zip domains regulate transcriptional activity and heterodimerization with the transcription factors JUN and FOS in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the B-Zip and L-Zip domains, several leucine residues regulate transcriptional activity and heterodimerization with the transcription factors JUN and FOS in vitro (Fuchs and Ronai, 1999; Nomura et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "60ec4964-6a4c-4982-9e3c-d8d8045558c3",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C55",
+      "claim": "Cells expressing L431P and L434P CREB5 mutants proliferated similarly to cells expressing luciferase controls in cell doubling assays performed in low androgen media containing enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed these CREB5 variants in LNCaP cells (Figure 3B) and found that despite robust expression of L431P and L434P CREB5, cells expressing these mutants proliferated similarly to cells expressing luciferase controls in cell doubling assays performed in low androgen media containing enzalutamide (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "89638621-0b39-4e16-b5be-1f9bbb5b2f83",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C56",
+      "claim": "L431P and L434P CREB5 mutants lacked interactions critical for ART resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed these CREB5 variants in LNCaP cells (Figure 3B) and found that despite robust expression of L431P and L434P CREB5, cells expressing these mutants proliferated similarly to cells expressing luciferase controls in cell doubling assays performed in low androgen media containing enzalutamide (Figure 3B), indicating L431P and L434P CREB5 lacked interactions critical for ART resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of proliferation advantage in cells expressing these mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "435e7ff6-77af-41c3-9c8a-311049aa141b",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C57",
+      "claim": "There was a striking correlation between the interaction profiles of CREB5 and CREB5 L434P (R = 0.834).",
+      "claim_type": "EXPLICIT",
+      "source": "At approximately the same average peptide counts of CREB5 (8) and L434 CREB5 (7.5), we found a striking correlation between the interaction profiles of CREB5 and CREB5 L434P (R = 0.834).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "c069752c-03ae-43e8-8085-13ac2d2b06cf",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C58",
+      "claim": "The L434P mutant binds the same proteins as wild-type CREB5.",
+      "claim_type": "EXPLICIT",
+      "source": "At approximately the same average peptide counts of CREB5 (8) and L434 CREB5 (7.5), we found a striking correlation between the interaction profiles of CREB5 and CREB5 L434P (R = 0.834). This observation indicated that this CREB5 mutant binds the same proteins as the L434P mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high correlation between CREB5 and L434P RIME profiles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "14c99bb4-acb7-496e-a0b2-28cb2e59fe56",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C59",
+      "claim": "There was no correlation between CREB3 and wild-type CREB5 (R = \u22120.0581).",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we failed to find a correlation between CREB3 and wild-type CREB5 (R = \u22120.0581) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIME data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "6943fc49-f943-4f7a-991b-df93bb87b9f2",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C60",
+      "claim": "Smaller differences were found between wild-type and L434P CREB5 for AR, FOXA1, and HOXB13 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "When examining the interactions of wild-type and L434P CREB5, we found smaller differences between AR, FOXA1, and HOXB13 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIME data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "47c9330e-d873-49d3-b781-3d073c0aed8c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C61",
+      "claim": "NFIC and TBX3 peptides were detected preferentially in cells expressing wild-type CREB5 as compared to L434P or CREB3.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside of AR co-factors, we detected unique peptide signals at comparable levels with AR, FOXA1, and HOXB13, including NFIC, TBX3 (Figure 3D). We detected peptides from these proteins preferentially in cells expressing wild-type CREB5 as compared to L434P or CREB3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIME data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "8cfdb00c-f6c3-463c-8696-830970610dda",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C62",
+      "claim": "In AR-positive cell lines, TBX3 and NFIC exhibited a pattern of cell line dependencies as observed for FOXA1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in AR-positive cell lines (Figure 4A, left) TBX3 and NFIC exhibited a pattern of cell line dependencies as observed for FOXA1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of genome-scale RNAi screens shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "cf425393-ae86-488a-829e-ecb30c9640a1",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C63",
+      "claim": "In AR-negative cell lines, TBX3 exhibited no clear dependency, while NFIC exhibited modest dependency as compared to FOXA1.",
+      "claim_type": "EXPLICIT",
+      "source": "When examining AR-negative cell lines (Figure 4A, right), we found that TBX3 exhibited no clear dependency, while NFIC exhibited modest dependency as compared to FOXA1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of genome-scale RNAi screens shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "b69a8af9-8d1b-4f51-af6c-49246d72275d",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C64",
+      "claim": "TBX3 and NFIC regulate prostate cancer cell viability in the AR setting.",
+      "claim_type": "EXPLICIT",
+      "source": "This close correlation of TBX3 and NFIC dependency with that observed for FOXA1 supports the conclusion that TBX3 and NFIC regulate prostate cancer cell viability in the AR setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation of TBX3 and NFIC dependency with FOXA1 in AR-positive cell lines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "2138ae84-722c-4105-b0d0-04735a658264",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C65",
+      "claim": "NFIC and TBX3 ranked among the strongest dependencies in prostate cancer cell lines while exhibiting limited overall dependency in other 495 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, upon computing the average dependency scores in DEMETER, we found that NFIC and TBX3 ranked among the strongest dependencies in these prostate cancer cell lines while exhibiting limited overall dependency in the other 495 cell lines (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of DEMETER dependency scores shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "e1da08ad-fe22-492d-bb8f-06f4748679da",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C66",
+      "claim": "The relative dependencies of NFIC and TBX3 were comparable to the strongest gene dependencies, such as FOXA1 and HOXB13.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative dependencies of NFIC and TBX3 were comparable to the strongest gene dependencies, such as FOXA1 and HOXB13, found in previous studies (Pomerantz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of DEMETER dependency scores and a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "261d7857-5d90-4f3e-99e1-9b1acc53083b",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C67",
+      "claim": "Suppression of TBX3 or NFIC using two shRNAs reduced the viability of CREB5-overexpressing LNCaP cells to the same extent as two positive control shRNAs that targeted FOXA1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that suppression of TBX3 or NFIC using two shRNAs, as compared to a negative control (GFP), reduced the viability of CREB5-overexpressing LNCaP cells to the same extent as two positive control shRNAs that targeted FOXA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAi-mediated gene depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "9ca6dda2-6b78-4ea5-837a-0c20c9059a5f",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C68",
+      "claim": "TBX3 and NFIC are required for optimal viability of CREB5 cells in the presence of enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that TBX3 and NFIC, like FOXA1, are required for optimal viability of CREB5 cells in the presence of enzalutamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on RNAi-mediated gene depletion experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "29e0bf6b-e948-4b72-bdf1-13a20bc0f02c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C69",
+      "claim": "sgRNAs against FOXA1, TBX3, or NFIC all reduced protein levels and decreased viability in a cell line model that spontaneously acquired enzalutamide resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cell line, we expressed three distinct sgRNAs that depleted FOXA1 or two sgRNAs that ablated TBX3 or NFIC, and we found that the sgRNAs against FOXA1, TBX3, or NFIC all reduced protein levels and decreased viability (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CRISPR-Cas9-mediated gene depletion experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "2e611fe5-779b-4b85-beb1-413aaa12de70",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C70",
+      "claim": "There was statistically significant enrichment of FOXA1 binding motifs in TBX3 or NFIC binding sites identified in experiments on breast or prostate cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on motif enrichment analyses of the TBX3 or NFIC binding sites, we observed statistically significant enrichment of FOXA1 binding motifs identified in experiments on breast or prostate cancer cell lines (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motif enrichment analysis of ChIP-seq data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "5c456f45-151e-4ec1-9dfc-61ba9ec70d1f",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C71",
+      "claim": "NFIC also bound B-Zip motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Like CREB5, NFIC also bound B-Zip motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif enrichment analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "70559ac5-91af-4d2c-b8a7-7842b39950d4",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C72",
+      "claim": "TBX3 and NFIC genomic amplifications together represented up to 13.3% of prostate cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TBX3 and NFIC genomic amplifications together represented up to 13.3% of prostate cancers, in which notably higher amplification rates were observed in mCRPC studies as opposed to those sampling primary prostate cancer (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of genomic data from cBioPortal shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "d7351ce5-39e5-4429-8a66-b8f0ce7c10ba",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C73",
+      "claim": "Higher amplification rates of TBX3 and NFIC were observed in mCRPC studies as opposed to those sampling primary prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TBX3 and NFIC genomic amplifications together represented up to 13.3% of prostate cancers, in which notably higher amplification rates were observed in mCRPC studies as opposed to those sampling primary prostate cancer (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of genomic data from cBioPortal shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "faf59a64-8df4-49ca-854c-11f60985d51c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C74",
+      "claim": "TBX3, NFIC, and FOXA1 were amplified or overexpressed in 7, 3, and 7% of mCRPC samples, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon examining expression and amplification data mCRPC samples (Abida et al., 2019), we found that TBX3, NFIC, and FOXA1 were amplified or overexpressed in 7, 3, and 7% of mCRPC samples, respectively (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of genomic and expression data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "e94b63c5-d637-43c2-bf00-7cddd94721de",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C75",
+      "claim": "There was a robust positive correlation between FOXA1 with TBX3 (Spearman's correlation: 0.416; q-value: 1.48e-7).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 209 samples with expression data, we found a robust positive correlation between FOXA1 with TBX3 (Spearman's correlation: 0.416; q-value: 1.48e-7) or NFIC (Spearman's correlation: 0.536; q-value: 4.34e-15) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of expression data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "ab1c150f-95d3-4557-a4cf-0d41defba539",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C76",
+      "claim": "There was a robust positive correlation between FOXA1 with NFIC (Spearman's correlation: 0.536; q-value: 4.34e-15).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 209 samples with expression data, we found a robust positive correlation between FOXA1 with TBX3 (Spearman's correlation: 0.416; q-value: 1.48e-7) or NFIC (Spearman's correlation: 0.536; q-value: 4.34e-15) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of expression data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "c45e3c31-440e-4ff0-8166-44e86f6b3cc1",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C77",
+      "claim": "TBX3 and NFIC were nuclear proteins associated with CREB5, FOXA1, and functionally impacted prostate cancer cell viability and ART resistance even absent of CREB5.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, we found TBX3 and NFIC were nuclear proteins associated with CREB5, FOXA1, and functionally impacted prostate cancer cell viability and ART resistance even absent of CREB5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on RIME data, functional experiments, and genomic analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "50b897f2-e03a-4f58-a3ac-567ab9cdc1ce",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C78",
+      "claim": "TBX3 and NFIC interacted specifically at FOXA1 motifs in cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, they interacted specifically at FOXA1 motifs in cell lines, are amplified or overexpressed in prostate cancer patients, and their expression is associated with that of FOXA1 in mCRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif enrichment analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "99d0616a-7f5e-4375-a125-f01602411b70",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C79",
+      "claim": "TBX3 and NFIC are amplified or overexpressed in prostate cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, they interacted specifically at FOXA1 motifs in cell lines, are amplified or overexpressed in prostate cancer patients, and their expression is associated with that of FOXA1 in mCRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of genomic and expression data from patient samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "9c14c4f8-6677-40bb-9232-c0093f6ef0b0",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C80",
+      "claim": "The expression of TBX3 and NFIC is associated with that of FOXA1 in mCRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, they interacted specifically at FOXA1 motifs in cell lines, are amplified or overexpressed in prostate cancer patients, and their expression is associated with that of FOXA1 in mCRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis of expression data from mCRPC samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "797d1be5-7408-4076-8d81-8cb1c3c2341f",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C81",
+      "claim": "The 335 proteins that bound both CREB5 and FOXA1 associated with AR, cell cycle, as well as Notch, Wnt, and SMAD/TGF\u03b2 pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the top 10 statistically significant signatures, we found that these 335 interactions associated with AR, cell cycle, as well as Notch, Wnt, and SMAD/TGF\u03b2 pathways (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pathway enrichment analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "06de27a2-67be-41c7-b630-d429f0800d33",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C82",
+      "claim": "CREB5 overexpression was significantly associated with enrichment of signaling pathways EMT and \u03b2-catenin in the AR-positive LNCaP and LAPC4 cells, but not in the AR-negative cell lines PC3 and DU145.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CREB5 overexpression was significantly associated with enrichment of signaling pathways EMT and \u03b2-catenin, the Wnt transcription effector in the AR-positive LNCaP and LAPC4 cells, but not in the AR-negative cell lines PC3 and DU145.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GSEA analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "8be47c1c-9f42-4a8d-a932-c81b95141b3b",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C83",
+      "claim": "In clinical mCRPC samples, CREB5 expression was correlated with the expression of EMT and \u03b2-catenin signaling programs.",
+      "claim_type": "EXPLICIT",
+      "source": "In mCRPC, we found that CREB5 expression was correlated with the expression of similar signaling programs we found in vitro, including EMT (Alumkal et al., 2020; He et al., 2021) and \u03b2-catenin (Isaacsson Velho et al., 2020; Lee et al., 2015; Murillo-Garz\u00f3n and Kypta, 2017; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis of RNA-seq data from mCRPC samples shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "a9fb6213-46f4-4bec-964d-83bb9c803e69",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C84",
+      "claim": "The CREB5-associated nuclear protein interactions in cells and transcripts in mCRPC provide insights into the specific ART-resistant pathways that are activated by this transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the CREB5-associated nuclear protein interactions in cells and transcripts in mCRPC provide insights into the specific ART-resistant pathways that are activated by this transcription factor, showing the role CREB5 plays in regulating EMT and \u03b2-catenin signaling genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on RIME data, pathway enrichment analysis, and gene expression correlation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "607c734a-768f-41c4-9bfc-b2e13fa2f99c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C85",
+      "claim": "CREB5 plays a role in regulating EMT and \u03b2-catenin signaling genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the CREB5-associated nuclear protein interactions in cells and transcripts in mCRPC provide insights into the specific ART-resistant pathways that are activated by this transcription factor, showing the role CREB5 plays in regulating EMT and \u03b2-catenin signaling genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on pathway enrichment analysis and gene expression correlation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "b8dc1c3c-ad4a-4b3f-9758-19244a736a93",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C86",
+      "claim": "FOXA1 promotes prostate cancer progression and resistance to ART and ADT.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have demonstrated that transcription regulators, such as FOXA1, promote prostate cancer progression and resistance to ART and ADT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies and the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "fe59101a-ec48-4e7d-8b19-95df74481c6e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C87",
+      "claim": "Overexpressed CREB5 exhibited shifts in binding at transcription regulatory elements as well as interaction with co-factors when cells were challenged with enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work identified other molecular events associated with transition towards resistance to second-generation ART and ADT. We did so by identifying reprogramming events associated with overexpressed CREB5, which exhibited shifts in binding at transcription regulatory elements as well as interaction with co-factors when cells were challenged with enzalutamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and RIME data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "80fb8d42-b3c5-4c63-baae-e4d9ad6cb0fa",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C88",
+      "claim": "In promoting proliferation in ART, CREB5 exhibited a strong degree of interaction with known AR transcription machinery, including FOXA1, HOXB13, and GRHL2, as well as novel prostate cancer regulators TBX3 and NFIC.",
+      "claim_type": "EXPLICIT",
+      "source": "In promoting proliferation in ART, CREB5 exhibited a strong degree of interaction with known AR transcription machinery, including FOXA1, HOXB13, and GRHL2, as well as novel prostate cancer regulators TBX3 and NFIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "93431f47-bf3c-4d80-a70c-93ee62478053",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C89",
+      "claim": "The robust convergence of CREB5-FOXA1 function was observed through binding of transcription regulatory elements and interactions among nuclear proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The robust convergence of CREB5-FOXA1 function was observed through binding of transcription regulatory elements and interactions among nuclear proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and RIME data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "84af13b0-8481-431c-afb3-65381cdc7dc5",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C90",
+      "claim": "TBX3 and NFIC interacted with CREB5 but required an intact B/L-Zip domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The factors TBX3 and NFIC interacted with CREB5 but required an intact B/L-Zip domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data comparing wild-type and mutant CREB5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "a32a091d-6808-4f4a-a778-2b86be5e6155",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C91",
+      "claim": "TBX3 and NFIC, two nuclear factors that are amplified or overexpressed in mCRPC, were vulnerabilities in other prostate cancer models, including ones that were ART resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "TBX3 and NFIC, two nuclear factors that are amplified or overexpressed in mCRPC, were vulnerabilities in other prostate cancer models, including ones that were ART resistant, and bound to FOXA1 transcription regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional experiments and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "b7343290-3e80-40ff-bb14-b9d12b6e0bd1",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C92",
+      "claim": "TBX3 and NFIC bound to FOXA1 transcription regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "TBX3 and NFIC, two nuclear factors that are amplified or overexpressed in mCRPC, were vulnerabilities in other prostate cancer models, including ones that were ART resistant, and bound to FOXA1 transcription regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif enrichment analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "d852267a-e076-4903-9e66-c5815d924328",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C93",
+      "claim": "Informatics modeling of the CREB5 activity through protein interactions and mCRPC transcription patterns indicated that CREB5 is associated with pathways found in patients resistant to enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Informatics modeling of the CREB5 activity through protein interactions and mCRPC transcription patterns indicated that CREB5 is associated with pathways found in patients resistant to enzalutamide (Alumkal et al., 2020; He et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pathway enrichment analysis and gene expression correlation analysis, as well as cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "cfcfe9c1-a6e5-400a-9267-be7135017830",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C94",
+      "claim": "The dynamic binding properties of CREB5 mediate assembly of essential factors to AR and FOXA1 to promote resistant transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our study indicates that the dynamic binding properties of CREB5 mediate assembly of essential factors to AR and FOXA1 to promote resistant transcripts (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on ChIP-seq, RIME, and functional data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "eaf5a10e-8049-4eac-8dd3-f0329ddd5306",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C95",
+      "claim": "FOXA1 functions as an oncogenic pioneering and transcription factor in cancers, including prostate and breast.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXA1 functions as an oncogenic pioneering and transcription factor in cancers, including prostate and breast (Gerhardt et al., 2012; Nakshatri and Badve, 2009; Shah and Brown, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "2865fcb6-97a1-47e8-b10a-c901c8e31e06",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C96",
+      "claim": "FOXA1 is a critical dependency in prostate cancer cell line models.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXA1 is a critical dependency in prostate cancer cell line models (Pomerantz et al., 2015), including those that transdifferentiate into AR-agnostic, neuroendocrine-like features (Baca et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "c5b94699-9a0c-4523-b3c8-d3a4aad33df8",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C97",
+      "claim": "FOXA1 is a critical dependency in prostate cancer cell line models that transdifferentiate into AR-agnostic, neuroendocrine-like features.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXA1 is a critical dependency in prostate cancer cell line models (Pomerantz et al., 2015), including those that transdifferentiate into AR-agnostic, neuroendocrine-like features (Baca et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "10842c06-39ec-4802-879e-492b13d44d1e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C98",
+      "claim": "EMT is associated with neuroendocrine prostate cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EMT is associated with neuroendocrine prostate cancers (Beltran et al., 2016), AR-expressing mCRPCs that become enzalutamide resistance also show expression of EMT markers (Alumkal et al., 2020; He et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "0d4c93de-3f6b-4753-a2c6-0dff67e3f5a0",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C99",
+      "claim": "AR-expressing mCRPCs that become enzalutamide resistant also show expression of EMT markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EMT is associated with neuroendocrine prostate cancers (Beltran et al., 2016), AR-expressing mCRPCs that become enzalutamide resistance also show expression of EMT markers (Alumkal et al., 2020; He et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "27ee1d18-235f-4be6-bfcc-75540f5fe0b1",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C100",
+      "claim": "The interactions of CREB5 and FOXA1 act as one mechanism that promotes EMT signaling in AR-positive-resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the work presented herein demonstrates that the interactions of CREB5 and FOXA1 act as one mechanism that promotes EMT signaling in AR-positive-resistant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in the manuscript showing CREB5-FOXA1 interactions and association with EMT pathways.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "90bcb960-cad7-4755-b9f3-5885b4e12ed3",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C101",
+      "claim": "TBX3 and NFIC interacted and correlated with FOXA1 in the setting of ART resistance based on RIME experiments and gene expression profile analyses of mCRPC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that TBX3 and NFIC interacted and correlated with FOXA1 in the setting of ART resistance based on RIME experiments and gene expression profile analyses of mCRPC samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data and gene expression correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "29c8cba8-8884-4775-9888-758278b49d7f",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C102",
+      "claim": "TBX3 expression has been shown to be required for viability of breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of CREB5 and FOXA1, TBX3 expression has been shown to be required for viability of breast cancer cells (Amir et al., 2016; Krstic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "7f3a219f-8050-4fca-b877-026bb1ef55b5",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C103",
+      "claim": "NFI factors, NFIA/B/C/X, have previously been shown to interact with FOXA1 to promote the transcription of AR target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NFI factors, NFIA/B/C/X, have previously been shown to interact with FOXA1 to promote the transcription of AR target genes (Grabowska et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "94dde1c6-deb0-4ea9-bb9a-c956795d281a",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C104",
+      "claim": "Studies have identified increases in CREB5 as a marker for metastasis in ovarian, breast, and colorectal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have identified increases in CREB5 as a marker for metastasis in ovarian, breast, and colorectal cancers (Bhardwaj et al., 2017; He et al., 2017; Moln\u00e1r et al., 2018; Qi and Ding, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "e7c08b79-bf57-497e-a89e-e318fbf1ac46",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C105",
+      "claim": "Bardwaj et al. have identified CREB5 transcripts as a repressed target of miRNA-29c, a tumor-suppressive miRNA lost in the triple-negative subtype of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, Bardwaj et al. have identified CREB5 transcripts as a repressed target of miRNA-29c, a tumor-suppressive miRNA lost in the triple-negative subtype of breast cancer (Bhardwaj et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "d1a06b4b-7b7c-48b3-8c5b-019152bde4ff",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C106",
+      "claim": "Forced overexpression of CREB5 promoted cell cycle and colony formation in triple-negative breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Forced overexpression of CREB5 promoted cell cycle and colony formation in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study (Bhardwaj et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "4ce6dd7d-6ca1-45ed-90eb-89d593023e52",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C107",
+      "claim": "Other CREB family members have been associated with therapy resistance in advanced prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "While other CREB family members (Welti et al., 2021) have been associated with therapy resistance in advanced prostate cancer, the differential RIME interaction profiles displayed by these two family member proteins, CREB5 and CREB3, exhibited dichotomous behavior with respect to binding of nuclear proteins in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "b8905d39-8e47-4484-b359-25d3079729aa",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C108",
+      "claim": "The differential RIME interaction profiles displayed by CREB5 and CREB3 exhibited dichotomous behavior with respect to binding of nuclear proteins in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While other CREB family members (Welti et al., 2021) have been associated with therapy resistance in advanced prostate cancer, the differential RIME interaction profiles displayed by these two family member proteins, CREB5 and CREB3, exhibited dichotomous behavior with respect to binding of nuclear proteins in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "2a7189bf-8bef-4cd2-934a-24213046abab",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C109",
+      "claim": "The oncogenic roles of CREB5 and other CREB family members may be distinct and mediated through their structurally different N-terminal domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the oncogenic roles of CREB5 and other CREB family members may be distinct and mediated through their structurally different N-terminal domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed differences in RIME profiles between CREB5 and CREB3.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "635b3878-90b6-4003-b487-5bd843a62e2a",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C110",
+      "claim": "Experimental conditions, including cell culture and drug treatment, dramatically influenced CREB5 molecular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As another key observation, we also find that experimental conditions, including cell culture and drug treatment, dramatically influenced CREB5 molecular interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and RIME data showing changes in CREB5 binding and interactions under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "19b3811c-0833-4bf5-a124-62abb305fe0e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C111",
+      "claim": "TBX3 and NFCI have been previously detected in large-scale proteomic approaches that interrogated prostate cancer tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As examples, TBX3 and NFCI have been previously detected in large-scale proteomic approaches that interrogated prostate cancer tissue (Sinha et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "81043d16-3024-4825-a3a1-9a439466541b",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C112",
+      "claim": "TBX3 and NFCI have key regulatory roles in prostate cancer cell viability and ART resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This study demonstrates that they have key regulatory roles in prostate cancer cell viability and ART resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "d0ddebde-1115-4e89-92be-5670661a4ee3",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C113",
+      "claim": "Inhibitors against EP300, an AR interacting protein, were efficacious in prostate cancer models.",
+      "claim_type": "EXPLICIT",
+      "source": "Antagonizing nuclear or transcription factors has been efficacious in recent examples, as inhibitors against EP300, an AR interacting protein, were efficacious in prostate cancer models (Jin et al., 2017; Lasko et al., 2017; Welti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "dc376268-6273-4f57-82fc-97f4ebff8e4a",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C114",
+      "claim": "In regulating a pro-tumorigenic role in mCRPC, CREB5 requires additional factors including JUN/ATF and SWI/SNF complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In regulating a pro-tumorigenic role in mCRPC, CREB5 require additional factors (Supplementary file 1, Tables 2\u20134), including JUN/ATF and SWI/SNF complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RIME data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "039ca033-63e8-4888-b4e4-0fec40cbfd24",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C115",
+      "claim": "SMARCB1 is a recurrent mutation in mCRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Of bound SWI/SNF family members, we have previously discussed SMARCB1 as recurrent mutation in mCRPC (Armenia et al., 2018), and its loss as a biomarker in malignant pediatric tumors (Hong et al., 2019; Howard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "5f882e07-e90d-41df-8389-4c152817d6d2",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C116",
+      "claim": "Loss of SMARCB1 is a biomarker in malignant pediatric tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Of bound SWI/SNF family members, we have previously discussed SMARCB1 as recurrent mutation in mCRPC (Armenia et al., 2018), and its loss as a biomarker in malignant pediatric tumors (Hong et al., 2019; Howard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "0308477b-4bab-4cde-99fc-ae53af1a461d",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "claim_id": "C117",
+      "claim": "CREB5 is a driver of mCRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our observations implicate CREB5 as a driver of mCRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in the manuscript showing CREB5's role in ART resistance and its interactions with key transcription factors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0b0d27bc-c037-44c9-986a-cf95b75b886a",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CREB5 overexpression exhibits a unique differential viability effect in prostate cancer cells, reducing viability in standard culture (Z = \u22121.3) but promoting resistance in enzalutamide-treated conditions (Z = +14.5), representing the greatest differential effect among 17,255 ORFs tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 collectively demonstrate CREB5's context-dependent effects through genome-scale screening data. The differential Z-scores are clearly reported and contrast with constitutive pro-survival genes like CDK4/CDK6, providing strong evidence for CREB5's specific role in treatment resistance rather than general proliferation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "85e46308-a8f4-40c8-bca1-223d321cf8cf",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CREB5 binding sites and protein interactions undergo extensive reprogramming in response to enzalutamide treatment, with binding sites segregating into lost, retained, and gained categories, and retained/gained sites enriched for AR co-factors including FOXA1, HOXB13, GRHL2, EP300, and SMARCA4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32-C34, C36-C39 are supported by convergent ChIP-seq and RIME data showing dynamic CREB5 binding changes upon enzalutamide treatment. Both orthogonal approaches (GIGGLE analysis of ChIP-seq and RIME) independently nominate the same AR-associated factors, strengthening the conclusion of treatment-induced reprogramming.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CREB5 and FOXA1 exhibit extensive convergence in their nuclear interactions and chromatin binding patterns, with >90% of CREB5-bound sites also bound by FOXA1, 504 shared protein interactions, and preferential CREB5 binding at tumor-specific and mCRPC-specific AR binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35, C41-C46, C48-C51 are well-supported by multiple lines of evidence including RIME correlation data (R=0.394), ChIP-seq overlap analysis, and functional validation showing AR/FOXA1 depletion reduces CREB5 cell viability. The convergence is demonstrated through both protein interaction and genomic binding data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "2b4052d5-8987-48fd-9a39-68663a9c8efa",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CREB5's B-Zip and L-Zip domains are critical for ART resistance, as L431P and L434P mutants lose resistance function despite maintaining most protein interactions (R=0.834 correlation with wild-type), with differential binding of NFIC and TBX3 distinguishing functional from non-functional CREB5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C61 and C90 are supported by structure-function analysis combining sequence alignment, mutagenesis, proliferation assays, and RIME profiling. The high correlation (R=0.834) between wild-type and L434P mutant interactions, yet loss of resistance phenotype, effectively identifies specific interactions (NFIC, TBX3) critical for function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TBX3 and NFIC are CREB5/FOXA1 co-interacting factors that regulate prostate cancer cell viability and ART resistance in AR-positive contexts, ranking among the strongest dependencies in prostate cancer cell lines and binding at FOXA1 motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C62-C71, C77-C78, C91-C92 are supported by convergent evidence from RIME identification, Project Achilles dependency analysis, functional validation via RNAi and CRISPR in multiple models, and ChIP-seq motif enrichment. The AR-context specificity is demonstrated by differential dependencies in AR-positive vs AR-negative cell lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TBX3 and NFIC are amplified or overexpressed in mCRPC patient samples (7% and 3% respectively), with higher rates in metastatic versus primary disease, and their expression significantly correlates with FOXA1 expression (Spearman's \u03c1=0.416 and 0.536, q<1.5e-7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C72-C76, C79-C80 are supported by analysis of genomic and transcriptomic data from multiple mCRPC cohorts via cBioPortal. The statistical significance of expression correlations is strong (q-values <1.5e-7), and the enrichment in metastatic disease supports clinical relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CREB5 is associated with EMT and Wnt/\u03b2-catenin signaling pathways through both nuclear protein interactions (335 CREB5/FOXA1 shared proteins enriched for these pathways) and transcriptional programs in AR-positive cell lines and mCRPC patient samples, implicating these pathways in CREB5/FOXA1-mediated ART resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C81-C85, C93, C100 are supported by pathway enrichment analysis of RIME data, GSEA of RNA-seq from cell lines showing AR-context specificity, and correlation analysis in mCRPC patient transcriptomes. The convergence across in vitro and clinical data strengthens the pathway associations, though mechanistic causality requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "f25759e1-a062-482c-839c-1fb7ef2edf59",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CREB5 exhibits dynamic binding properties that mediate assembly of essential factors to AR and FOXA1 to promote resistant transcripts, with experimental conditions including drug treatment dramatically influencing CREB5 molecular interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89, C94, C110, C117 represent integrative conclusions supported by the collective ChIP-seq, RIME, and functional data. The dynamic nature is demonstrated by the lost/retained/gained categorization of binding sites and interactions, and the mechanistic model is consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "1b004279-f291-427e-8095-58c6e072681e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "mCRPC is treated with AR-targeted therapies, but nearly all patients develop resistance, representing a substantial clinical obstacle despite initial responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C15 represent established clinical and biological knowledge about mCRPC treatment and resistance, appropriately cited and providing necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "44027f54-b855-4ec2-b211-dd28b36335cb",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CREB5 was previously identified as promoting resistance to all clinically approved ARTs in mCRPC, but the molecular mechanisms remained unclear prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25, C27 appropriately reference prior work (Hwang et al., 2019) and establish the knowledge gap addressed by the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "3ef1b960-ecd5-43b0-a708-aba539d6da65",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple mechanisms of ART resistance have been identified in mCRPC including AR alterations, cell cycle gene upregulation, MYC upregulation, EMT/TGF\u03b2/Wnt pathway activation, and FOXA1 genomic alterations, with FOXA1 remaining relevant even in AR-independent disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C24 appropriately cite prior literature establishing the landscape of resistance mechanisms and FOXA1 biology, providing essential context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "baeaf493-f901-4657-af62-426818c10545",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CREB5 has been associated with progression and metastasis in ovarian, colorectal, and breast cancers, including as a target of tumor-suppressive miRNA-29c in triple-negative breast cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C104-C106 appropriately cite prior literature on CREB5 in other cancer types, supporting the broader relevance of CREB5 as an oncogenic factor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "0a991a99-6251-460f-b63e-3c7363da8811",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CREB3, a related CREB family member, confers significantly weaker resistance to enzalutamide and lacks correlation in RIME profiles with either CREB5 or FOXA1 (R=0.0332 and -0.0498).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C42, C59 establish CREB3 as an appropriate negative control, supported by prior functional data and current RIME profiling showing lack of correlation with CREB5/FOXA1 interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "bfa98d54-ed9b-41d6-bd97-5f1c6911f5cf",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "FOXA1 functions as an oncogenic pioneering factor in prostate and breast cancers, is a critical dependency in prostate cancer models including those with neuroendocrine features, and EMT is associated with both neuroendocrine and enzalutamide-resistant AR-expressing mCRPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C95-C99 appropriately cite established literature on FOXA1 biology and EMT in prostate cancer, providing context for interpreting CREB5-FOXA1 interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "8491c6c7-96e3-477d-b312-1019e654d03e",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FOXA1 promotes prostate cancer progression and ART resistance, TBX3 is required for breast cancer cell viability, and NFI factors interact with FOXA1 to promote AR target gene transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C101-C103 cite prior literature establishing roles for FOXA1, TBX3, and NFI factors, supporting the biological plausibility of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "abb86232-ed88-4a52-a31b-10518b34896c",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Other CREB family members have been associated with therapy resistance in prostate cancer, but CREB5 and CREB3 exhibit dichotomous RIME interaction profiles, suggesting distinct oncogenic roles potentially mediated through structurally different N-terminal domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C107-C108 are supported by cited literature and RIME data, but C109 is explicitly speculative about N-terminal domain roles. The differential RIME profiles are demonstrated, but the mechanistic explanation remains hypothetical without direct structural or biochemical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    },
+    {
+      "id": "4531ab9d-7d3a-4cd7-aa1a-d4ce2c5d0892",
+      "content_id": "95185c95-d10b-4749-b415-e6038ebedb6e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "TBX3 and NFIC have been detected in proteomic studies of prostate cancer tissue, EP300 inhibitors show efficacy in prostate cancer models, CREB5 requires JUN/ATF and SWI/SNF complex factors, and SMARCB1 is recurrently mutated in mCRPC and lost in pediatric tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C116 appropriately cite prior literature and reference supplementary RIME data, providing context for therapeutic implications and additional CREB5 interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:57:55.293208Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1184f72f-f685-4e89-a377-8942be41dc02",
+      "result_id": "0b0d27bc-c037-44c9-986a-cf95b75b886a"
+    },
+    {
+      "claim_id": "88860aca-d092-4d3f-9a57-e7547756b2ed",
+      "result_id": "0b0d27bc-c037-44c9-986a-cf95b75b886a"
+    },
+    {
+      "claim_id": "1244b3e6-f25d-4859-9dc2-f47d6f364f37",
+      "result_id": "0b0d27bc-c037-44c9-986a-cf95b75b886a"
+    },
+    {
+      "claim_id": "7c16a3a0-c7bf-4085-93ba-0808e1f5acb6",
+      "result_id": "0b0d27bc-c037-44c9-986a-cf95b75b886a"
+    },
+    {
+      "claim_id": "e39931e1-44ce-49ec-bf99-f231e660b76c",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "cbec7176-2b5d-42b6-bf27-9fc23ae5813d",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "ca969849-1a23-4e21-9f72-f99a5a2a424c",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "edd64693-2c80-4534-a695-f0d354314642",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "287829a4-8e6e-4b8c-9fe3-6008d2ecf52f",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "391af5ac-68e1-46c6-a8fb-6ba3c8731868",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "d6764f28-d871-4822-b9aa-eaab244f9c9a",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "da9b0764-11c6-4dbe-8a0c-3116588ae4ed",
+      "result_id": "85e46308-a8f4-40c8-bca1-223d321cf8cf"
+    },
+    {
+      "claim_id": "217f829a-ffe5-46ee-8de5-ffbc987de53e",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "3aad75b0-7061-45b6-9959-8b000431cc73",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "4cec0ef1-15f8-473f-b6ce-98a2b716f960",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "ca646152-70f0-40f2-91cc-5303684961cf",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "b86258ba-5242-43ba-a63d-3f748bbb38b0",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "84d332ec-6695-44e3-87d9-2258c831bd69",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "ac18bce4-28ba-4a50-af6b-25c851bfa25f",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "c595c263-6c78-4b3d-b607-a4ece0438f22",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "53e02171-6514-4aa3-bcfe-84986c8e4784",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "89b9cd8b-2dc2-49ba-a84c-fc82b17cd806",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "4f685187-4230-4cbd-86a5-d1f97eb64148",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "091ab671-cd1a-4dbe-a625-c296bc2e8a1c",
+      "result_id": "3cda2a9c-bb4d-47bc-a6e6-5d9e3ac54318"
+    },
+    {
+      "claim_id": "f1762fe9-71cc-4051-bceb-a479110ee7e1",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "5860d49a-0634-4ffe-b8a1-8dfecd7c61af",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "316adb61-5d5b-4698-a0cb-aafc8152d0d0",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "60ec4964-6a4c-4982-9e3c-d8d8045558c3",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "89638621-0b39-4e16-b5be-1f9bbb5b2f83",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "435e7ff6-77af-41c3-9c8a-311049aa141b",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "c069752c-03ae-43e8-8085-13ac2d2b06cf",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "14c99bb4-acb7-496e-a0b2-28cb2e59fe56",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "6943fc49-f943-4f7a-991b-df93bb87b9f2",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "47c9330e-d873-49d3-b781-3d073c0aed8c",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "84af13b0-8481-431c-afb3-65381cdc7dc5",
+      "result_id": "2b4052d5-8987-48fd-9a39-68663a9c8efa"
+    },
+    {
+      "claim_id": "22733e90-b35e-4c9b-949a-96332c1e5b17",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "7aa30be6-2902-4f36-9a42-b97dc24e9e6e",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "8cfdb00c-f6c3-463c-8696-830970610dda",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "cf425393-ae86-488a-829e-ecb30c9640a1",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "b69a8af9-8d1b-4f51-af6c-49246d72275d",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "2138ae84-722c-4105-b0d0-04735a658264",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "e1da08ad-fe22-492d-bb8f-06f4748679da",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "261d7857-5d90-4f3e-99e1-9b1acc53083b",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "9ca6dda2-6b78-4ea5-837a-0c20c9059a5f",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "29e0bf6b-e948-4b72-bdf1-13a20bc0f02c",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "2e611fe5-779b-4b85-beb1-413aaa12de70",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "5c456f45-151e-4ec1-9dfc-61ba9ec70d1f",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "c45e3c31-440e-4ff0-8166-44e86f6b3cc1",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "50b897f2-e03a-4f58-a3ac-567ab9cdc1ce",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "a32a091d-6808-4f4a-a778-2b86be5e6155",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "b7343290-3e80-40ff-bb14-b9d12b6e0bd1",
+      "result_id": "26f6832c-6699-4a96-ba4d-ac84df84fd9c"
+    },
+    {
+      "claim_id": "504acb97-637c-4f9f-aafc-1dbfe3c7044f",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "70559ac5-91af-4d2c-b8a7-7842b39950d4",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "d7351ce5-39e5-4429-8a66-b8f0ce7c10ba",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "faf59a64-8df4-49ca-854c-11f60985d51c",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "e94b63c5-d637-43c2-bf00-7cddd94721de",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "ab1c150f-95d3-4557-a4cf-0d41defba539",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "99d0616a-7f5e-4375-a125-f01602411b70",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "9c14c4f8-6677-40bb-9232-c0093f6ef0b0",
+      "result_id": "8cfbdf9d-1220-4bcd-b6f3-f1512f40078d"
+    },
+    {
+      "claim_id": "8cfb93ab-84df-4e1d-87ea-3b9c6541d989",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "d06bdfd7-379b-49de-8816-0b35f7fdb562",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "797d1be5-7408-4076-8d81-8cb1c3c2341f",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "06de27a2-67be-41c7-b630-d429f0800d33",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "8be47c1c-9f42-4a8d-a932-c81b95141b3b",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "a9fb6213-46f4-4bec-964d-83bb9c803e69",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "607c734a-768f-41c4-9bfc-b2e13fa2f99c",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "d852267a-e076-4903-9e66-c5815d924328",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "27ee1d18-235f-4be6-bfcc-75540f5fe0b1",
+      "result_id": "41c61f7c-45db-4d42-ac2e-3d3ebcc43743"
+    },
+    {
+      "claim_id": "fe59101a-ec48-4e7d-8b19-95df74481c6e",
+      "result_id": "f25759e1-a062-482c-839c-1fb7ef2edf59"
+    },
+    {
+      "claim_id": "80fb8d42-b3c5-4c63-baae-e4d9ad6cb0fa",
+      "result_id": "f25759e1-a062-482c-839c-1fb7ef2edf59"
+    },
+    {
+      "claim_id": "93431f47-bf3c-4d80-a70c-93ee62478053",
+      "result_id": "f25759e1-a062-482c-839c-1fb7ef2edf59"
+    },
+    {
+      "claim_id": "cfcfe9c1-a6e5-400a-9267-be7135017830",
+      "result_id": "f25759e1-a062-482c-839c-1fb7ef2edf59"
+    },
+    {
+      "claim_id": "635b3878-90b6-4003-b487-5bd843a62e2a",
+      "result_id": "f25759e1-a062-482c-839c-1fb7ef2edf59"
+    },
+    {
+      "claim_id": "0308477b-4bab-4cde-99fc-ae53af1a461d",
+      "result_id": "f25759e1-a062-482c-839c-1fb7ef2edf59"
+    },
+    {
+      "claim_id": "a0277fba-812b-4f35-97fb-f4d1d1a882a7",
+      "result_id": "1b004279-f291-427e-8095-58c6e072681e"
+    },
+    {
+      "claim_id": "72edd389-783c-4f03-a4e9-0833f52b72c0",
+      "result_id": "1b004279-f291-427e-8095-58c6e072681e"
+    },
+    {
+      "claim_id": "fd73d217-6e88-422c-80e9-69b750b04354",
+      "result_id": "1b004279-f291-427e-8095-58c6e072681e"
+    },
+    {
+      "claim_id": "cb50cb83-a513-40c2-bd9f-5f8aada7290b",
+      "result_id": "1b004279-f291-427e-8095-58c6e072681e"
+    },
+    {
+      "claim_id": "667fe0f5-eb8a-4ba2-bb6f-73328a3765f8",
+      "result_id": "1b004279-f291-427e-8095-58c6e072681e"
+    },
+    {
+      "claim_id": "41df1b4b-3b8f-45fd-8adb-4c3293e4737d",
+      "result_id": "1b004279-f291-427e-8095-58c6e072681e"
+    },
+    {
+      "claim_id": "fd62d739-1fd8-47ea-ac49-847004783062",
+      "result_id": "1b004279-f291-427e-8095-58c6e072681e"
+    },
+    {
+      "claim_id": "2cb2a20e-69a1-4c75-b257-aeb5f1da64f2",
+      "result_id": "44027f54-b855-4ec2-b211-dd28b36335cb"
+    },
+    {
+      "claim_id": "67dd1a56-0fd8-46a1-9370-579e603c3b8b",
+      "result_id": "44027f54-b855-4ec2-b211-dd28b36335cb"
+    },
+    {
+      "claim_id": "350ace1c-8e6e-4099-92f5-86acb3ab7702",
+      "result_id": "44027f54-b855-4ec2-b211-dd28b36335cb"
+    },
+    {
+      "claim_id": "f0551c28-1df0-43ed-9379-c8fb521cd975",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "c8a2439b-f7fc-416b-abae-c24fe01705bc",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "beed0c78-ba3f-4a59-947a-775339939dfb",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "5bfc0cca-6066-401a-bf07-d1617f07f4f9",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "31783c7b-33ee-4121-9bba-60cd2839f49a",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "b7ffdf14-fa8b-4f88-bff8-d83067e17654",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "9661dd34-1791-4e19-8faf-19775c30172e",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "83d6b3a6-8ea9-4dc1-b4d0-9d2e6c706640",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "31faa57c-2712-4f16-9311-2d712f2969f6",
+      "result_id": "3ef1b960-ecd5-43b0-a708-aba539d6da65"
+    },
+    {
+      "claim_id": "e979eeaa-f534-4eb3-a1cb-dd8ff3934cbc",
+      "result_id": "baeaf493-f901-4657-af62-426818c10545"
+    },
+    {
+      "claim_id": "94dde1c6-deb0-4ea9-bb9a-c956795d281a",
+      "result_id": "baeaf493-f901-4657-af62-426818c10545"
+    },
+    {
+      "claim_id": "e7c08b79-bf57-497e-a89e-e318fbf1ac46",
+      "result_id": "baeaf493-f901-4657-af62-426818c10545"
+    },
+    {
+      "claim_id": "d1a06b4b-7b7c-48b3-8c5b-019152bde4ff",
+      "result_id": "baeaf493-f901-4657-af62-426818c10545"
+    },
+    {
+      "claim_id": "35592419-84bb-4c90-8157-9c24ffd0f5b4",
+      "result_id": "0a991a99-6251-460f-b63e-3c7363da8811"
+    },
+    {
+      "claim_id": "ca646152-70f0-40f2-91cc-5303684961cf",
+      "result_id": "0a991a99-6251-460f-b63e-3c7363da8811"
+    },
+    {
+      "claim_id": "14c99bb4-acb7-496e-a0b2-28cb2e59fe56",
+      "result_id": "0a991a99-6251-460f-b63e-3c7363da8811"
+    },
+    {
+      "claim_id": "b4b272a8-7f32-4573-89a7-1d04cadb7d34",
+      "result_id": "bfa98d54-ed9b-41d6-bd97-5f1c6911f5cf"
+    },
+    {
+      "claim_id": "eaf5a10e-8049-4eac-8dd3-f0329ddd5306",
+      "result_id": "bfa98d54-ed9b-41d6-bd97-5f1c6911f5cf"
+    },
+    {
+      "claim_id": "2865fcb6-97a1-47e8-b10a-c901c8e31e06",
+      "result_id": "bfa98d54-ed9b-41d6-bd97-5f1c6911f5cf"
+    },
+    {
+      "claim_id": "c5b94699-9a0c-4523-b3c8-d3a4aad33df8",
+      "result_id": "bfa98d54-ed9b-41d6-bd97-5f1c6911f5cf"
+    },
+    {
+      "claim_id": "10842c06-39ec-4802-879e-492b13d44d1e",
+      "result_id": "bfa98d54-ed9b-41d6-bd97-5f1c6911f5cf"
+    },
+    {
+      "claim_id": "0d4c93de-3f6b-4753-a2c6-0dff67e3f5a0",
+      "result_id": "bfa98d54-ed9b-41d6-bd97-5f1c6911f5cf"
+    },
+    {
+      "claim_id": "b8dc1c3c-ad4a-4b3f-9758-19244a736a93",
+      "result_id": "8491c6c7-96e3-477d-b312-1019e654d03e"
+    },
+    {
+      "claim_id": "90bcb960-cad7-4755-b9f3-5885b4e12ed3",
+      "result_id": "8491c6c7-96e3-477d-b312-1019e654d03e"
+    },
+    {
+      "claim_id": "29c8cba8-8884-4775-9888-758278b49d7f",
+      "result_id": "8491c6c7-96e3-477d-b312-1019e654d03e"
+    },
+    {
+      "claim_id": "7f3a219f-8050-4fca-b877-026bb1ef55b5",
+      "result_id": "8491c6c7-96e3-477d-b312-1019e654d03e"
+    },
+    {
+      "claim_id": "4ce6dd7d-6ca1-45ed-90eb-89d593023e52",
+      "result_id": "abb86232-ed88-4a52-a31b-10518b34896c"
+    },
+    {
+      "claim_id": "b8905d39-8e47-4484-b359-25d3079729aa",
+      "result_id": "abb86232-ed88-4a52-a31b-10518b34896c"
+    },
+    {
+      "claim_id": "2a7189bf-8bef-4cd2-934a-24213046abab",
+      "result_id": "abb86232-ed88-4a52-a31b-10518b34896c"
+    },
+    {
+      "claim_id": "19b3811c-0833-4bf5-a124-62abb305fe0e",
+      "result_id": "4531ab9d-7d3a-4cd7-aa1a-d4ce2c5d0892"
+    },
+    {
+      "claim_id": "81043d16-3024-4825-a3a1-9a439466541b",
+      "result_id": "4531ab9d-7d3a-4cd7-aa1a-d4ce2c5d0892"
+    },
+    {
+      "claim_id": "d0ddebde-1115-4e89-92be-5670661a4ee3",
+      "result_id": "4531ab9d-7d3a-4cd7-aa1a-d4ce2c5d0892"
+    },
+    {
+      "claim_id": "dc376268-6273-4f57-82fc-97f4ebff8e4a",
+      "result_id": "4531ab9d-7d3a-4cd7-aa1a-d4ce2c5d0892"
+    },
+    {
+      "claim_id": "039ca033-63e8-4888-b4e4-0fec40cbfd24",
+      "result_id": "4531ab9d-7d3a-4cd7-aa1a-d4ce2c5d0892"
+    },
+    {
+      "claim_id": "5f882e07-e90d-41df-8389-4c152817d6d2",
+      "result_id": "4531ab9d-7d3a-4cd7-aa1a-d4ce2c5d0892"
+    }
+  ],
+  "comparisons": []
+}

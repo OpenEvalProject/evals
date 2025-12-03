@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C45",
+      "C120"
+    ],
+    "result": "Anthracyclines suppress cytokine production independently of ATM. Epirubicin (Epi) treatment leads to dose-dependent decreases in TNF, IL12, IL6, and Cxcl10 in both WT and Atm\u2212/\u2212 macrophages following E. coli challenge, and this effect persists in the presence of ATM inhibitor Ku-55933.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C45, and C120 collectively demonstrate through ELISA data (Figure 1A, 1B, and supplementary figures) that cytokine suppression by anthracyclines occurs in Atm\u2212/\u2212 cells and with ATM inhibitor treatment. The data show consistent dose-dependent effects across genotypes and conditions, with appropriate controls and statistical significance indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C33",
+      "C34"
+    ],
+    "result": "DNA damage induction by anthracyclines varies by compound. Epirubicin and Doxorubicin induce dose-dependent DNA damage (\u03b3H2AX phosphorylation), while Aclarubicin and Doxorubicinone do not induce significant DNA damage at the concentrations tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C33-C34 are supported by \u03b3H2AX phosphorylation assays (Figure 1C, 1E) and comet assays (Figure 1\u2014figure supplement 1C, 1F) showing differential DNA damage profiles. The data clearly distinguish DNA-damaging from non-DNA-damaging anthracyclines with appropriate dose-response curves and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C121",
+      "C46",
+      "C47",
+      "C119",
+      "C122"
+    ],
+    "result": "Cytokine suppression by anthracyclines is uncoupled from DNA damage. Non-DNA-damaging anthracyclines (Acla, Doxo-none, diMe-Doxo) suppress cytokines, while the DNA-damaging drug Etoposide does not, indicating that DNA damage is not required for anti-inflammatory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C43, C46-C47, C119, C121-C122 are well-supported by ELISA and \u03b3H2AX data (Figure 1F-H, supplementary figures) showing that anthracyclines without DNA damage activity still suppress cytokines, while Etoposide (which causes DNA damage) does not. This dissociation is a key finding supported by multiple independent measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "In vivo validation shows that circulating TNF levels are significantly decreased in mice treated with Epi or Acla following E. coli challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by in vivo ELISA data from mouse serum (Figure 2A) showing statistically significant decreases in TNF levels at 8 hours post-challenge. This provides physiological relevance to the in vitro findings, though sample sizes should be verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "RNA-seq analysis reveals that anthracyclines induce specific transcriptional signatures. LPS strongly induces pro-inflammatory genes (455 upregulated, 75 downregulated), while Epi and Acla create partly overlapping but distinct gene expression patterns, with Acla showing stronger repression than Epi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by RNA-seq data (Figure 2B, supplementary figures) showing differential gene expression patterns. The analysis includes appropriate controls, differential expression statistics, and functional enrichment analysis. The data quality and analysis appear sound, though reproducibility details (replicates, batch effects) should be verified in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C63"
+    ],
+    "result": "Anthracyclines specifically downregulate NF-\u03baB target genes. qRT-PCR confirms downregulation of Tnf, Il12, Il6, Cxcl10, and Nfkbia by Epi and Acla, and promoter motif analysis reveals an NF-\u03baB signature in mutually downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C63 are supported by qRT-PCR data (Figure 2C, supplementary figures) and promoter motif analysis. The data show consistent downregulation of NF-\u03baB targets with statistical significance. The specificity for NF-\u03baB is further supported by the lack of effect on interferon-responsive genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Anthracyclines do not affect interferon-responsive gene expression. Ifnb1 transcription is induced by E. coli but not downregulated by Epi or Acla, and IFN\u03b2 secretion is not suppressed, indicating specificity for NF-\u03baB pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by qRT-PCR (Figure 2D, supplementary figures) and ELISA data showing no effect on interferon genes/proteins. This demonstrates pathway specificity and rules out general transcriptional suppression. The controls are appropriate and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Anthracyclines do not significantly affect mRNA stability of NF-\u03baB targets. Tnf mRNA half-life is similar in Epi-treated and untreated BMDMs, indicating transcriptional rather than post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by mRNA stability assay data (Figure 2E) using actinomycin D chase experiments. The data show no significant difference in Tnf mRNA decay rates, supporting a transcriptional mechanism. However, only one gene was tested, which limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RelA is critical for NF-\u03baB-dependent transcription in HEK293 cells. RelA knockout abolishes \u03baB luciferase reporter induction and endogenous TNF gene expression following TNF stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by CRISPR/Cas9 knockout experiments with luciferase reporter and qRT-PCR data (Figure 2\u2014figure supplement 2D-E). The data clearly show loss of NF-\u03baB-dependent transcription in RelA KO cells. However, the use of mixed-clone populations rather than single clones is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Anthracyclines inhibit RelA-induced transcription. Epi, Doxo, and Acla markedly inhibit luciferase reporter expression induced by RelA overexpression, suggesting direct or indirect targeting of RelA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by luciferase reporter assay data (Figure 2F) showing dose-dependent inhibition of RelA-induced transcription by multiple anthracyclines. The data are clear and reproducible, though the mechanism (direct vs. indirect) requires further investigation addressed in later claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Anthracyclines disrupt the I\u03baB\u03b1-RelA feedback loop. Epi treatment causes RelA to remain nuclear despite decreased NF-\u03baB gene expression, profoundly diminishes I\u03baB\u03b1 protein levels throughout the time course, and prevents I\u03baB\u03b1 recovery even with proteasome inhibition, indicating transcriptional suppression of NFKBIA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by immunofluorescence (Figure 3A), Western blot (Figure 3B-C), and proteasome inhibition experiments. The data show sustained nuclear RelA with decreased I\u03baB\u03b1, and the proteasome inhibition experiment rules out increased degradation. The conclusion about breaking the feedback loop is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C118"
+    ],
+    "result": "Anthracyclines reduce RelA and RNA PolII binding to NF-\u03baB target promoters. ChIP experiments show weakened RelA binding to TNF and NFKBIA promoters (but not IFNB1) and compromised PolII recruitment following Epi and Acla treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C118 are supported by ChIP data (Figure 3D-E) showing reduced binding of RelA and PolII to NF-\u03baB target promoters. The data show appropriate controls and specificity (no effect on IFNB1). Statistical significance is indicated for some but not all comparisons, and effect sizes vary, which is acknowledged in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Anthracyclines target the RelA RHD domain. Reporter assays show that Epi inhibits RelA(2-320)-VP16 (containing RHD) but not TET-RelA(286-551) (containing TAD), indicating that Epi compromises RelA activity by targeting the RHD rather than the TAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by domain-mapping experiments using chimeric constructs (Figure 3F). The data clearly show differential effects on RHD vs. TAD constructs, allowing domain localization of the anthracycline effect. The experimental design is appropriate and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Anthracyclines bind to \u03baB-33 DNA with similar affinity. ITC measurements show that two molecules of Epi or Acla bind to the DNA duplex with KD values of 11.4 and 11.7 \u03bcM, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by ITC data (Table 1, Figure 4\u2014figure supplement 1A-B) showing similar binding affinities for Epi and Acla to DNA. The stoichiometry (2:1 drug:DNA) is consistent with the presence of two TG motifs in the sequence. The measurements appear technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "RelA binds tightly to \u03baB-33 DNA with high affinity. ITC shows strong binding with KD of 230 nM, and the interaction is endothermic and entropy-driven (positive \u0394H).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by ITC data (Table 1, Figure 4\u2014figure supplement 1C) showing high-affinity binding consistent with published values. The thermodynamic characterization (endothermic, entropy-driven) is clearly demonstrated. The data quality appears good with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Anthracyclines perturb but do not disrupt RelA-DNA complexes. NMR experiments show chemical shift perturbations and line-broadening in DNA-binding residues upon anthracycline addition, with Epi and Acla having different effects on the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 are supported by NMR data (Figure 5B) showing perturbations in RelA-DNA complexes upon anthracycline addition. The data show that final spectra differ from free RelA, indicating complex perturbation rather than disruption. The differential effects of Epi vs. Acla are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C109",
+      "C110"
+    ],
+    "result": "Anthracyclines bind to RelA through their sugar moieties. STD NMR experiments show that Epi and Acla bind to RelA through their sugar parts, while Doxo-none (lacking the sugar) does not bind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C109-C110 are supported by STD NMR data (Figure 5\u2014figure supplement 1) showing selective saturation transfer to sugar protons. The negative control with Doxo-none strengthens the conclusion. The binding is weak but detectable, consistent with the ITC results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Anthracyclines weaken DNA binding to RelA with altered thermodynamics. DNA binding to RelA pre-incubated with Epi (980 nM) or Acla (740 nM) is weaker than to RelA alone (230 nM), and the thermodynamics change from entropy-driven to enthalpy-driven. Pre-formed DNA-Epi complexes show even weaker binding to RelA (1900 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by ITC data (Table 1, Figure 4\u2014figure supplement 1D-F) showing weakened binding and altered thermodynamics in the presence of anthracyclines. The different effects depending on order of addition provide mechanistic insights. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Direct binding between anthracyclines and RelA is very weak. ITC does not detect binding (likely too weak for the method), and NMR shows no significant backbone amide changes, indicating very weak direct interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by negative ITC results (Table 1) and NMR data (Figure 5\u2014figure supplement 3) showing minimal changes. The authors appropriately acknowledge the limitations of ITC for very weak interactions. The conclusion of weak binding is consistent with the STD NMR data showing interaction through sugar moieties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Structural model of anthracycline-RelA-DNA interactions. Anthracyclines intercalate between TG bases in the \u03baB motif, their sugars interact weakly with RelA, forming a ternary complex. The RelA residues affected localize to the RHD, consistent with reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 integrate multiple lines of evidence (NMR, ITC, STD, reporter assays) into a coherent structural model. The model is consistent with known anthracycline binding preferences and the crystal structure of RelA-DNA. However, this is an inferred model rather than a direct structure determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C111",
+      "C112",
+      "C131",
+      "C132"
+    ],
+    "result": "Summary of main findings: Anthracyclines (Doxorubicin, Daunorubicin, Epirubicin) decrease NF-\u03baB-dependent gene transcription but not interferon-responsive genes in primary mouse macrophages. They disturb RelA-DNA complexes through direct interactions. This anti-inflammatory effect is independent of DNA damage and common to all anthracyclines tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C111-C112, C131-C132 summarize the major findings supported by the comprehensive dataset including RNA-seq, qRT-PCR, ELISA, NMR, ITC, and functional assays. The conclusions are well-supported by converging evidence from multiple experimental approaches. The uncoupling of DNA damage from anti-inflammatory effects is a key novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C113"
+    ],
+    "result": "DNA damage is uncoupled from anti-inflammatory effects. Aclarubicin, Doxorubicinone, and Dimethyl-doxorubicin share anticancer properties but do not induce DNA damage, yet still suppress inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C113 are central to the manuscript's novelty and are well-supported by \u03b3H2AX assays, comet assays, and cytokine measurements showing that non-DNA-damaging anthracyclines retain anti-inflammatory activity. This dissociation is demonstrated with multiple compounds and multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Limitation acknowledged: The structural results do not fully explain why Acla is the strongest regulator of NF-\u03baB transcription. The extra sugars in Acla may contribute but require further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C130 acknowledge a gap in understanding. While Acla shows stronger effects than Epi in functional assays, the structural data do not fully explain this difference. The speculation about extra sugars is reasonable but untested. This represents an area for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C28",
+      "C32",
+      "C36"
+    ],
+    "result": "Control experiments validate experimental conditions. WT and Atm\u2212/\u2212 BMDMs secrete comparable cytokines, Epi shows no cytotoxicity at doses used, and inflammatory challenge does not induce significant extra DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C32, C36 provide important controls showing that observed effects are not due to differential baseline responses, cytotoxicity, or confounding DNA damage from the inflammatory stimulus. These controls are essential for interpreting the main results and are well-documented in supplementary figures.",
+    "result_type": "MINOR"
+  }
+]

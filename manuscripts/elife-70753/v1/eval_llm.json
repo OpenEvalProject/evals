@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study enrolled 40 non-pregnant women (24 with previous sPE, 16 controls) and used stratified random sampling to create training (n=29) and validation (n=11) cohorts. Control groups (preterm vs. term) showed no significant transcriptomic differences (FDR \u22650.05), validating their pooling for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C74-C76 describe the study design and validation of control group homogeneity. The lack of significant differences between preterm and term controls (C74, C75) appropriately justifies pooling these groups. Sample sizes and stratification approach are clearly documented with appropriate statistical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C85"
+    ],
+    "result": "RNA-seq analysis of the training set identified 593 differentially expressed genes (DEGs) between sPE and controls (FDR<0.05, FC\u22651.2), comprising 155 upregulated and 438 downregulated genes. Downregulated genes included decidualization markers (MMP3, PRL, IL-6, IHH) and genes involved in signaling, growth factors, angiogenesis, and immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C85 present the primary transcriptomic findings with appropriate statistical thresholds (FDR<0.05, FC\u22651.2). The identification of 593 DEGs with specific functional categories is supported by the data presented in Figure 1. The predominance of downregulated genes (438 vs. 155) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C87"
+    ],
+    "result": "Comparison of in vitro and in vivo decidualization defects revealed limited overlap (9 genes) between the 129 in vitro DEGs and 593 in vivo DEGs. However, 263 of the 593 in vivo DEGs (44.3%) were expressed by human endometrial stromal cells (hESC) based on single-cell data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C87 describe the comparison between in vitro and in vivo approaches. The modest overlap (9 genes) is appropriately interpreted given the cellular heterogeneity differences between approaches. The identification of 263 hESC-associated genes provides validation that the in vivo signature captures stromal cell biology relevant to decidualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "A refined transcriptomic signature of 120 genes was defined using stricter criteria (FDR<0.05, FC\u22651.4, assigned EntrezID). GO analysis identified 151 enriched biological processes (FDR<0.05) associated with cell cycle, DNA damage response, signaling, motility, extracellular matrix, immune response, and reproductive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe the derivation of the DD fingerprint using more stringent fold-change criteria (FC\u22651.4 vs. 1.2). The GO enrichment analysis with appropriate FDR correction identifies biologically relevant pathways consistent with decidualization biology. The selection criteria and functional enrichment are well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C51",
+      "C52"
+    ],
+    "result": "The 120-gene DD signature effectively segregated sPE from control samples in both training and validation cohorts using PCA and hierarchical clustering. In the validation set, the signature correctly classified 100% of controls and 85.7% of sPE cases (90.9% overall accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C51-C52 demonstrate validation of the DD signature in an independent cohort. The classification performance (85.7% sPE, 100% controls) is reasonable given biological variability. The authors appropriately acknowledge one misclassified sPE sample and discuss potential sources of variability (C88-C90). The validation approach using independent samples strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Network analysis of the 120-gene DD signature revealed 94 endometrial-enriched genes, with 47.9% overlapping ESR1-modulated genes and 45.7% overlapping PGR-associated genes. The protein-protein interaction network showed significant enrichment (p<1.0e-16) with 117 nodes and 361 edges, organized into three functional modules. ESR1 and PGR were highly interconnected hub genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C77-C80 describe comprehensive network analysis linking the DD signature to hormonal regulation. The significant PPI enrichment (p<1.0e-16) and identification of ESR1/PGR as central nodes is well-supported. The overlap with published ESR1 and PGR target genes provides external validation. Network topology analysis using multiple methods (MCC, MNC) strengthens hub gene identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C81"
+    ],
+    "result": "RT-qPCR validation confirmed reduced expression of ESR1 (p<0.05) and PGR (p<0.001) in sPE patients. Isoform-specific analysis revealed significant downregulation of PGR-B (p<0.01) but not PGR-A (p>0.05). Immunofluorescence confirmed reduced ER1 and PR-B protein expression in sPE endometrium, particularly in secretory glands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C81 provide multi-level validation (mRNA and protein) of the key mechanistic finding. The isoform-specific analysis of PGR is particularly valuable, showing selective downregulation of PGR-B. Statistical significance is reported with appropriate p-values. Immunofluorescence provides spatial context showing glandular localization. The convergence of transcriptomic, RT-qPCR, and protein data strongly supports dysregulated hormonal signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The authors propose that low expression of PGR-B and ESR1 drives defective decidualization in sPE by dysregulating progesterone and estrogen signaling, leading to impaired stromal-epithelial crosstalk, stromal cell differentiation, extracellular matrix degradation, immune dysregulation, and endothelial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C65 and C67 present a mechanistic model linking hormonal receptor downregulation to DD. While the model is biologically plausible and supported by the observed gene expression patterns (C62-C65) and literature citations (C56), it remains largely speculative (C54, C55 explicitly stated as hypothesis). The correlative nature of the transcriptomic data cannot establish causality. Functional validation experiments (e.g., receptor knockdown/rescue) would be needed to definitively support this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Comparison with published decidual transcriptomes at delivery showed minimal overlap (1.3-1.7%) with the current late secretory phase signature. In contrast, in vitro DD signatures from hESC showed significant overlap with early pregnancy decidual samples, suggesting that gene expression during active disease differs from the pre-pregnancy decidualization defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 appropriately contextualize the findings by comparing with published data. The minimal overlap with delivery samples (C48) versus significant overlap of in vitro signatures with early pregnancy samples (C49) supports the interpretation that the late secretory phase signature reflects the origin rather than consequence of sPE (C50). This temporal distinction is important for understanding disease etiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude that an endometrial transcriptomic signature persists years after sPE pregnancy and propose it could be leveraged for preconception or early prenatal screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is supported by the data showing persistent transcriptomic differences in non-pregnant women years after sPE. However, C73's proposal for clinical screening is speculative and would require prospective validation studies to assess predictive value, sensitivity, specificity, and clinical utility. The current study is retrospective (women with known sPE history) and cannot establish whether the signature predicts future sPE risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors acknowledge that decidualization is a dynamic process with inter-individual variability, spatial heterogeneity, and sampling variability that may contribute to the one misclassified sample in the validation set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 provide appropriate methodological context and limitations. The acknowledgment of biological variability (C88, C89 with citations) and technical limitations (C90) demonstrates scientific rigor. This discussion appropriately contextualizes the 90.9% classification accuracy and explains potential sources of misclassification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that preeclampsia is a major pregnancy complication characterized by placental insufficiency and deficient trophoblast invasion, with accumulating evidence for decidual contribution to disease etiology through defective decidualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide background context supported by appropriate citations. These establish the clinical significance of sPE (C1-C3), the placental insufficiency model (C4), the role of decidua (C5-C8), and the biology of decidualization (C9-C16). All claims are appropriately referenced to prior literature and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Current sPE biomarkers (sFLT1/PlGF ratio) have limited predictive value and are only effective 4 weeks before symptom onset. Previous work suggests maternal decidual defects contribute to sPE etiology, with hESC from sPE patients showing in vitro decidualization failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C82-C84 establish the clinical need and prior evidence for the current study. The limitations of current biomarkers (C44, C84) are appropriately cited. The authors' previous work (C46) and related literature (C45, C47) provide rationale for investigating decidual contributions to sPE. These claims appropriately motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ESR1 and PGR are coordinated regulators of decidualization, with PGR expression induced by ER1 and inhibited by PR. Hormones act through receptors in epithelium and stroma to promote compartmental crosstalk, with epithelial ER1 regulating stromal decidualization via paracrine mechanisms involving LIF and IHH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe established mechanisms of hormonal regulation in decidualization, all supported by appropriate citations to prior literature. These provide the mechanistic framework for interpreting the observed ESR1 and PGR-B downregulation in sPE. The claims accurately represent published knowledge about hormone receptor signaling in the endometrium.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "TNF is involved in endothelial inflammation and influences the maternal-fetal interface microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 describes the role of TNF with appropriate citations. This provides context for the observed TNF dysregulation in the DD signature and its potential contribution to sPE pathogenesis through endothelial and immune dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The authors suggest that in vivo DD may be induced by lack of expression of a subset of genes, based on the predominance of downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is speculative inference from the observation in C85. While the predominance of downregulated genes (438 vs. 155) is clear, inferring that DD is specifically caused by loss of expression rather than the combined effect of up- and downregulation requires functional validation. The inference is reasonable but remains unproven.",
+    "result_type": "MINOR"
+  }
+]

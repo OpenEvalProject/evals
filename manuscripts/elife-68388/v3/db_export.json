@@ -1,0 +1,1883 @@
+{
+  "submission": {
+    "id": "410e2b45-c07b-437e-a8e4-6460ccfa84ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:30:22.928969Z",
+    "updated_at": "2025-12-03T10:30:22.928969Z"
+  },
+  "content": [
+    {
+      "id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "submission_id": "410e2b45-c07b-437e-a8e4-6460ccfa84ce",
+      "content_type": "manuscript",
+      "content_text": "# Preexisting memory CD4 T cells in na\u00efve individuals confer robust immunity upon hepatitis B vaccination\n\n## Authors\n\n- George Elias<sup>1</sup> ([ORCID: 0000-0001-8419-9544](https://orcid.org/0000-0001-8419-9544)) \u2020\n- Pieter Meysman<sup>2</sup> ([ORCID: 0000-0001-5903-633X](https://orcid.org/0000-0001-5903-633X))\n- Esther Bartholomeus<sup>2</sup>\n- Nicolas De Neuter<sup>2</sup> ([ORCID: 0000-0002-6011-6457](https://orcid.org/0000-0002-6011-6457))\n- Nina Keersmaekers<sup>2</sup>\n- Arvid Suls<sup>2</sup>\n- Hilde Jansens<sup>7</sup>\n- Aisha Souquette<sup>8</sup>\n- Hans De Reu<sup>1</sup>\n- Marie-Paule Emonds<sup>10</sup>\n- Evelien Smits<sup>1</sup>\n- Eva Lion<sup>1</sup>\n- Paul G Thomas<sup>8</sup>\n- Geert Mortier<sup>2</sup>\n- Pierre Van Damme<sup>2</sup>\n- Philippe Beutels<sup>2</sup>\n- Kris Laukens<sup>2</sup>\n- Viggo Van Tendeloo<sup>1</sup>\n- Benson Ogunjimi<sup>2</sup> ([ORCID: 0000-0002-0831-2063](https://orcid.org/0000-0002-0831-2063)) \u2020\n\n### Affiliations\n\n1. Laboratory of Experimental Hematology (LEH), Vaccine and Infectious Disease Institute, University of Antwerp Antwerp Belgium\n2. Antwerp Unit for Data Analysis and Computation in Immunology and Sequencing, University of Antwerp Antwerp Belgium\n3. Adrem Data Lab, Department of Mathematics and Computer Science, University of Antwerp Antwerp Belgium\n4. Biomedical Informatics Research Network Antwerp, University of Antwerp Antwerp Belgium\n5. Department of Medical Genetics, University of Antwerp Antwerp Belgium\n6. Centre for Health Economics Research & Modeling Infectious Diseases, Vaccine & Infectious Disease Institute (VAXINFECTIO), University of Antwerp Antwerp Belgium\n7. Department of Clinical Microbiology, Antwerp University Hospital Antwerp Belgium\n8. Department of Immunology, St. Jude Children's Research Hospital Memphis United States\n9. Center for Cell Therapy and Regenerative Medicine, Antwerp University Hospital Antwerp Belgium\n10. Histocompatibility and Immunogenetic Laboratory, Rode Kruis-Vlaanderen Mechelen Belgium\n11. Centre for the Evaluation of Vaccination (CEV), Vaccine and Infectious Disease Institute, University of Antwerp Antwerp Belgium\n12. Antwerp Center for Translational Immunology and Virology (ACTIV), Vaccine and Infectious Disease Institute, University of Antwerp Antwerp Belgium\n13. Department of Paediatrics, Antwerp University Hospital Antwerp Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntigen recognition through the T cell receptor (TCR) \u03b1\u03b2 heterodimer is one of the primary determinants of the adaptive immune response. Vaccines activate na\u00efve T cells with high specificity to expand and differentiate into memory T cells. However, antigen-specific memory CD4 T cells exist in unexposed antigen-na\u00efve hosts. In this study, we use high-throughput sequencing of memory CD4 TCR\u03b2 repertoire and machine learning to show that individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes elicited earlier and higher antibody titers and mounted a more robust CD4 T cell response to hepatitis B vaccine. In addition, integration of TCR\u03b2 sequence patterns into a hepatitis B epitope-specific annotation model can predict which individuals will have an early and more vigorous vaccine-elicited immunity. Thus, the presence of preexisting memory T cell clonotypes has a significant impact on immunity and can be used to predict immune responses to vaccination.\n\n## Introduction\n\nAntigen recognition through the T cell receptor (TCR) is one of the key determinants of the adaptive immune response (Rudolph et al., 2006). Antigen presentation via major histocompatibility complex (MHC) proteins, together with the right costimulatory and cytokine signals, are responsible for T cell activation (Curtsinger and Mescher, 2010; Esensten et al., 2016). The TCR \u03b1\u03b2 heterodimer binds the peptide-MHC (pMHC) complex and confers the specificity of a T cell to an epitope. A highly diverse TCR repertoire ensures that an effective T cell response can be mounted against pathogen-derived peptides (Turner et al., 2009). High TCR\u03b1\u03b2 diversity is generated through V(D)J recombination at the complementary-determining region 3 (CDR3) of TCR\u03b1 and TCR\u03b2 chains, accompanied with junctional deletions and insertions of nucleotides, further adding to the diversity (Krangel, 2009).\n\nVaccines activate na\u00efve T cells with high specificity to vaccine-derived peptides and induce T cell expansion and differentiation into effective and multifunctional T cells. This is followed by a contraction phase from which surviving cells constitute a long-lived memory T cell pool that allows for a quick and robust T cell response upon a second exposure to the pathogen (Farber et al., 2014). However, previous studies have shown that a prior pathogen encounter is not a prerequisite for the formation of memory T cells and that CD4 T cells with a memory phenotype can be found in antigen-na\u00efve individuals (Su et al., 2013). The existence of memory-like CD4 T cells in na\u00efve individuals (Sewell, 2012) can be explained by molecular mimicry, as the encounter with environmentally derived peptides activates cross-reactive T cells due to the flexible nature of CD4 T cell recognition of the pMHC complex (Wilson et al., 2004). Indeed, work that attempted to replicate the history of human pathogen exposure in mice has shown that sequential infections altered the immunological profile and remodeled the immune response to vaccination (Reese et al., 2016). The existence of memory CD4 T cells specific to vaccine-derived peptides in unexposed individuals might confer an advantage in vaccine-induced immunity. In the present study, we used high-throughput sequencing to profile the memory CD4 TCR\u03b2 repertoire of healthy hepatitis B (HB)-na\u00efve adults before and after administration of an HB vaccine to investigate the impact of preexisting memory CD4 T cells on the immune response to the vaccine. Based on anti-hepatitis B surface (anti-HBs) antibody titers over 365 days, vaccinees were grouped into early-, late-, and non-converters. Our data reveals that individuals with preexisting vaccine-specific CD4 T cell clonotypes in the memory CD4 compartment had earlier emergence of antibodies and mounted a more vigorous CD4 T cell response to the vaccine. Moreover, we identify a set of vaccine-specific TCR\u03b2 sequence patterns which can be used to predict TCR specificity and in turn, which individuals will have an early and more vigorous response to HB vaccine.\n\n## Results\n\n### Vaccinee cohort can be classified into three groups\n\nOut of 34 vaccinees, 21 vaccinees seroconverted (an anti-HBs titer above 10 IU/ml was considered protective; Keating and Noble, 2003) at day 60 and were classified as early-converters; nine vaccinees seroconverted at day 180 or day 365 and were classified as late-converters; remaining four vaccinees had an anti-HBs antibody titer lower than 10 IU/ml at all time points following vaccination and were classified as non-converters (Figure 1 and Figure 1\u2014figure supplement 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig1-v3.jpg)\n\n**Figure 1.:** (A) Hepatitis B (Engerix-B) vaccination and experimental design. (Top) Timeline of vaccination and blood collection. (Bottom) Memory CD4 T cells were magnetically enriched and FACS-sorted from two time points (day 0 and day 60) for TCR\u03b2 repertoire sequencing. Peptide matrix pools were used to map CD4 T cell epitopes of the vaccine from peripheral blood mononuclear cells (PBMCs) collected at day 60 and to select single peptides. After 7 days of in vitro expansion, single peptide-specific and master peptide pool-specific CFSElow CD4 T cells from PBMCs collected at day 60 were FACS-sorted in two technical replicates for TCR\u03b2 repertoire sequencing. PBMCs collected at days 0, 60, 180, and 365 were stimulated with the master peptide pool (HBsAg) and assessed for converse expression of 4-1BB and CD40L by flow cytometry. (B) Vaccinee cohort can be classified into three groups as determined by anti-hepatitis B surface (anti-HBs) titer over four times points. Early-converters seroconverted at day 60, late-converters seroconverted at day 180 or day 365, and non\u2013converters did not have an anti-HBs titer higher than 10 IU/ml at any of the time points.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Anti-hepatitis B surface (anti-HBs) titer of vaccinees over four times points, faceted by groups of early-, late-, and non-converters. An anti-HBs titer above 10 IU/ml was considered protective. Early-converters seroconverted at day 60, late-converters seroconverted at day 180 or day 365, and non\u2013converters did not have an anti-HBs titer higher than 10 IU/ml at any of the time points. (B) Cytomegalovirus (CMV), Epstein-Barr virus (EBV), and herpes simplex virus (HSV) seropositivity in the three groups of the cohort as determined by serum IgG antibodies to CMV, EBV viral-capsid antigen (EBV-VCA), and HSV-1 and -2 using sandwich ELISA. (C) Age of vaccinees per group. Statistical significance was indicated with ns p > 0.05, *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, ****p \u2264 0.0001.\n\nMembers of Herpesviridae family might alter immune responses to vaccines (Furman et al., 2015). We found no significant differences in cytomegalovirus (CMV), Epstein-Barr virus (EBV), or herpes simplex virus (HSV) seropositivity between the three groups in our cohort (Figure 1\u2014figure supplement 1B). Early-converters were slightly younger than late-converters, and non-converters were notably younger than both early- and late-converters (Figure 1\u2014figure supplement 1C).\n\n### Unperturbed diversity in memory CD4 T cell repertoire following vaccination\n\nA genomic DNA-based TCR\u03b2 sequence dataset of memory CD4 T cells isolated from peripheral blood was generated from a cohort of 33 healthy vaccinees (see Materials and methods for details) right before vaccination (day 0) and 60 days after administration of the first dose of HB vaccine (30 days after administration of the second vaccine dose).\n\nBetween 4.54 \u00d7 104 and 3.92 \u00d7 105 productive TCR\u03b2 sequence reads were obtained for each vaccinee at each time point (Figure 2\u2014figure supplement 1A). Between 30,000 and 90,000 unique TCR\u03b2 sequences were sequenced for each vaccinee at each time point (Figure 2\u2014figure supplement 1B). As expected, considering the extremely diverse memory CD4 T cell repertoire (Klarenbeek et al., 2010), less than 20% of the TCR\u03b2 sequences is shared between the time points for each vaccinee (Figure 2\u2014figure supplement 1C).\n\nThe diversity of the memory CD4 T cell repertoire of each vaccinee at the two time points was explored, but neither the breadth of the memory CD4 TCR\u03b2 repertoire nor the Shannon equitability index was found to have been impacted by the vaccine at day 60 (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig2-v3.jpg)\n\n**Figure 2.:** (A) Comparison of the memory CD4 TCR\u03b2 repertoire diversity, as shown by breadth (number of unique TCRs) and entropy (Shannon equitability index) between day 0 and day 60. Indices are available in Figure 2\u2014source data 1. (B) Frequency of unique vaccine-specific TCR\u03b2 sequences out of total sequenced TCR\u03b2 sequences between two time points for all vaccinees colored by group. Frequencies are available in Figure 2\u2014source data 2. (C) Sequenced CD4+ TCR memory repertoire of vaccinee H35 at day 60. Each TCR clonotype is represented by a node. TCRs are connected by an edge if their Hamming distance is one. Only clusters with at least three TCRs are shown. TCR clonotypes in red are the vaccine-specific TCR\u03b2 sequences that were not present prior to vaccination. (D) Frequency of vaccine-specific TCR\u03b2 sequences within memory CD4 T cell repertoire normalized by number of HBsAg-specific TCR\u03b2 sequences found for each vaccinee at time point 60. Frequencies are available in Figure 2\u2014source data 3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatter plot of the DNA-based TCR\u03b2 reads for each vaccinee at each time point. (B) Scatter plot of number of unique TCR\u03b2 amino acid sequences for each vaccinee at each time point, where the shape denotes the response as based on antibody titer. (C) Overview of unique TCR\u03b2 amino acid sequences in the memory CD4 T cell repertoire of each vaccinee. The bottom blue bar denotes those TCR sequences that were found at both time points. The green and red bars denote the number of unique TCR sequences at each time point. The total bar height thus represents the total number of unique memory CD4 T cell clonotypes sequences for a specific vaccinee. (D) Frequency of unique HBsAg-specific TCR\u03b2 sequences out of total sequenced TCR\u03b2 sequences between two time points for all vaccinees colored and faceted by group. (E) Change in frequency (clone read count/total counts) of those HBsAg-specific CD4 T cells present at both time points. The (ns) mark denotes a non-significant paired Wilcoxon signed-rank test (p-value = 0.7577). (F) Receiver operating characteristic (ROC) curve using Rhbs to differentiate between age-matched early-converters and late-converters in a leave-one-out cross-validation at day 0. Age-matching was accomplished retaining only samples in the age range 40\u201355. A Wilcoxon test was used to confirm that there was no difference in age distributions between early- and late-converters (p-value = 0.60, mean EC = 44.5 years, mean LC 45.1 years). Diagonal line denotes a random classifier. Reported is the area under the curve (AUC) and its 95% confidence interval.\n\n### Unique vaccine-specific TCR\u03b2 sequences are trackable within memory CD4 T cell repertoire and increase following vaccination\n\nPeripheral blood mononuclear cells from day 60 were labeled with carboxyfluorescein succinimidyl ester (CFSE), a dye that enables tracking of cell proliferation, and stimulated with a pool of peptides spanning HB surface antigen (HBsAg). After day 7 of in vitro expansion, we sorted CFSElow CD4 T cells (Becattini et al., 2015) and extracted mRNA for quantitative assessment of HBsAg-specific TCR\u03b2 clonotypes by sequencing (see Materials and methods for details). The establishment of a set of vaccine-specific TCRs enables their tracking within memory CD4 T cell repertoires from day 0 to day 60, based on their CDR3\u03b2 amino acid sequences.\n\nWe detected a significant increase in the breadth of HBsAg-specific TCR\u03b2 sequences at day 60 post-vaccination compared to pre-vaccination (mean increase = 107.9%, 95% CI = 62.2\u2013358.5%) (Figure 2B and Figure 2\u2014figure supplement 1D). This increase far exceeded a baseline control of varicella-zoster virus (VZV)-specific TCR\u03b2 sequences established in an identical manner (mean difference = 2.1%, 95% CI = \u22126.6% to 12.4%). The HBsAg-specific increase was found to be significant when compared to this VZV baseline (Wilcoxon p-value 6.3e-05). When considered across the different groups, the increase was found to be significantly different from the VZV baseline for the early-converters (mean = 151.9%, 95% CI = 78.9\u2013342.0%, Wilcoxon Bonferroni-corrected p-value 8.64e-5) and non-converters (mean = 67.6%, 95% CI: 37.6\u201389.7%, Wilcoxon Bonferroni-corrected p-value 0.03), but not for the late-converters (mean = 18.8%, 95% CI = 3.6\u201341.8%, Wilcoxon Bonferroni-corrected p-value 0.257).\n\nAs HBsAg-specific TCR\u03b2 sequences were already detected in the memory CD4 T cell repertoire prior to vaccination, we sought to determine whether the vaccination induced an expansion of those sequences. Based on the frequency of vaccine-specific TCR\u03b2 sequences within the memory CD4 T cell repertoire, the data does not support a vaccine-induced expansion of preexisting vaccine-specific TCR\u03b2 sequences (Figure 2\u2014figure supplement 1E). Thus, although we see a rise in vaccine-specific TCR\u03b2 T cells from day 0 to day 60, this cannot be attributed to an expansion of the vaccine-specific TCR\u03b2 clonotypes found at day 0 but rather the recruitment of new TCR\u03b2 clonotypes, as visualized for one vaccinee in Figure 2C.\n\nIt makes sense to not only look at the difference in vaccine-specific TCR\u03b2 sequences between time points, but also explore whether there are differences in the proportion of HBsAg-specific clones in the memory repertoire between early-converters, late-converters, and non-converters after vaccination. In this case, to allow for a between-vaccinees comparison (in contrast to the within-vaccinees time point comparison), we calculate the overlap coefficient, where HBsAg-specific sequences in the CD4 T cell memory repertoire are normalized by the number of HBsAg-specific TCR\u03b2 found for each vaccinee. From this analysis, it can be concluded that there is a difference in HBsAg-specific TCR\u03b2 at day 60 between the three groups (Figure 2D) (ANOVA p-value = 0.00238). A Wilcoxon test between early-converters and other vaccinees shows a significant p-value of 0.000473, indicating that early-converters have a higher relative frequency of vaccine-specific TCR\u03b2 sequences present in their memory CD4 T cell repertoire at day 60 compared to vaccinees from the two other groups in the cohort.\n\nIn summary, vaccine-specific TCR\u03b2 sequences increased in breadth following vaccination in early-converters and constituted a significantly higher proportion of the memory CD4 T cell compartment post-vaccination.\n\n### HBsAg single peptide-specific TCR\u03b2 identification allows predictive modelling of early-converters prior to vaccination\n\nTo quantify the T cell response at the level of individual peptides that make up the HBsAg, a peptide matrix designed to cover 54 overlapping peptides of the HBsAg was used to extract peptide-specific T cells using a CD40L/CD154 activation-induced marker (AIM) assay (see Materials and methods for details). The top six peptides for each individual were selected for an in vitro peptide-specific CD4 T cell expansion and sorting for TCR sequencing (Supplementary file 2 and Figure 3\u2014figure supplement 1). In this manner, TCR\u03b2 sequences were identified for T cells reactive against 44 single HBsAg peptides. These were not uniformly distributed across the HBsAg amino acid sequence, with the most prominent epitopes covering the regions 1\u201315, 129\u2013144, 149\u2013164, 161\u2013176, 181\u2013200, 213\u2013228. For each of those regions, more than 10 individuals had a strong T cell response and more than 150 unique TCR\u03b2 sequences could be identified (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig3-v3.jpg)\n\n**Figure 3.:** (A) Overview of the detected HBsAg epitope-specific TCR\u03b2 sequences. Each bar corresponds to unique TCR\u03b2 sequences found against a single 15mer HBsAg peptide, with 11 amino acid overlap to each subsequent peptide. Bars in blue denote those epitopes for which 10 or more volunteers had a strong T cell reaction. Motif logos on top of bars denote a sampling of the most common TCR\u03b2 amino acid sequence motifs for those epitopes. (B) Scatter plot with the frequency of predicted HBsAg epitope-specific and bystander TCR\u03b2 sequences at day 60. These make up respectively the numerator and denominator of the HBsAg-predictive ratio, Rhbs. Predictions done as a leave-one-out cross-validation. Each circle represents a vaccinee with the color denoting the response group (blue: early-converter, yellow: late-converter, red: non-converter). (C) HBsAg-predictive ratio, Rhbs, when calculated on the memory CD4 TCR\u03b2 repertoires at day 60. (D) HBsAg-predictive ratio, Rhbs, when calculated on the memory CD4 TCR\u03b2 repertoires at day 0. (E) Receiver operating characteristic (ROC) curve using Rhbs to differentiate between early-converters and late-converters in a leave-one-out cross-validation at day 0. Reported is the area under the curve (AUC) and its 95% confidence interval. Data for B, C, D, and E are available in Figure 3\u2014source data 1. (F) ROC curve using Rhbs to differentiate between age-matched early-converters and late-converters in a leave-one-out cross-validation at day 0. Age-matching was accomplished retaining only samples in the age range 40\u201355. A Wilcoxon test was used to confirm that there was no difference in age distributions between early- and late-converters (p-value = 0.60, mean EC = 44.5 years, mean LC 45.1 years). Diagonal line denotes a random classifier. Reported is the area under the curve (AUC) and its 95% confidence interval.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Shown is the frequency of CFSElow CD4 T cells out of total CD4 T cells for all vaccinees, vaccinees per group and for each vaccinee. Peripheral blood mononuclear cells from day 60 were labeled with carboxyfluorescein succinimidyl ester (CFSE) and stimulated with a pool of peptides spanning hepatitis B (HB) surface antigen (HBsAg) (peptide pool) and single peptides selected based on epitope mapping of the entire antigen (single peptide). After day 7 of in vitro expansion, cells were stained with antibodies to surface markers (CD3, CD4, and CD8) that enable gating on viable CD4 T cells. CFSE intensity was used to identify and sort CFSElow cells for T cell receptor (TCR) repertoire analysis of antigen-specific CD4 T cells.\n\nThese peptide-specific TCR\u03b2 sequences can be utilized in a peptide-TCR interaction classifier to identify other TCR\u03b2 that are likely to react against same HBsAg epitopes, as it has been shown that similar TCR\u03b2 sequences tend to target the same epitopes (De Neuter et al., 2018; Meysman et al., 2019). These classifications were integrated into a model which outputs a ratio Rhbs, which represents the amount of HBsAg epitope-specific TCR sequences in an individual repertoire. The ratio is equal to the breadth of unique predicted HBsAg peptide-specific TCR\u03b2 divided by a normalization term for putative false positive predictions due to bystander activations in the training data set. The memory repertoire at day 60 shows that early-converters tend to have a higher breadth of putative HBsAg peptide-specific TCR\u03b2, while late-converters tend to have relatively more putative false positives as per the normalization term (Figure 3B). The ratio of these two terms Rhbs therefore shows a significant difference between early- and the late-converters at day 60 (one-sided Wilcoxon-test p-value = 0.0313, Figure 3C). Furthermore, searching for HBsAg peptide-specific clonotypes in the memory repertoires prior to vaccination (day 0) results in a Rhbs with a similar difference (one-sided Wilcoxon-test p-value = 0.0010, Figure 3D). In this manner, the presence of HBsAg peptide-specific clonotypes as defined by the ratio Rhbs can be used as a classifier to distinguish early- from late-converters prior to vaccination (Figure 3E), with an area under the curve (AUC) of 0.825 (95% CI: 0.657\u20130.994) in a leave-one-out cross-validation setting. A model in which age-matched vaccinees were included from early- and late-converters returned a similar receiver operating characteristic (ROC) curve, suggesting that this signal is not age-dependent (Figure 3F).\n\nWhile Rhbs is able to differentiate between early- and late-converters, it seems to be worse at distinguishing non-converters. This is mainly due to a single non-converter vaccinee (H21) with a high Rhbs, signifying a high number of putative HBsAg peptide-specific TCR\u03b2 in their memory repertoire.\n\n### Vaccine-specific conventional and regulatory memory CD4 T cells induced in early-converters\n\nAfter showing evidence for the existence of vaccine-specific TCR\u03b2 sequences pre-vaccination and that individuals with a higher number of HBsAg peptide-specific clonotypes had earlier seroconversion, we attempted to link this observation to differences in vaccine-specific CD4 T cells responses using CD4 T cell assays. As TREG cells might suppress vaccine-induced immune responses (Brezar et al., 2016), we used activation markers CD40L (CD154) and 4-1BB (CD137) to help delineate the conventional (TCON) and regulatory (TREG) phenotypes of activated CD4 T cells. In this scheme, after 6 hr of antigen stimulation, CD40L+4-1BB\u2212 can be used as a signature for antigen-specific CD4 TCON cells, as opposed to CD40L\u22124-1BB+ signature for antigen-specific CD4 TREG cells (Elias et al., 2020; Schoenbrunn et al., 2012). Additionally, we added CD25 and CD127 to better identify TREG cells (Liu et al., 2006; Seddiki et al., 2006) and CXCR5 to further distinguish circulatory T follicular helper cells (cTFH) and circulatory T follicular regulatory cells (cTFR) (Bentebibel et al., 2011; Fonseca et al., 2017) (see Figure 4\u2014figure supplement 1 for gating strategy).\n\nUsing the converse expression of CD40L and 4-1BB, CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ CD4 T cells have a CD25lowCD127high and CD25highCD127low phenotype, respectively (Figure 4\u2014figure supplement 2), and validate their use for the distinction of activated TCON and TREG cells as described before (Schoenbrunn et al., 2012).\n\nWe detected a significant increase in the frequency of vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells at day 60 in our cohort (Figure 4A) that correlated positively with the increase in antibody titer between day 0 and day 365 (Figure 4B, Figure 4\u2014figure supplement 3). Upon a closer look, the induction of both signatures of vaccine-specific memory CD4 T cells was only true for early-converters (Figure 4C, see Figure 4\u2014figure supplement 4A for non-converters and Figure 4\u2014figure supplement 4B for vaccine-specific CD4 T cells). Late-converters did not show a detectable memory CD4 T cell response. Although a subset of both early- and late-converters had detectable memory CD4 T cell responses prior to vaccination, we observed no significant differences in the frequencies of CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells between the two groups at day 0 (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig4-v3.jpg)\n\n**Figure 4.:** Peripheral blood mononuclear cells (PBMCs) from vaccinees were stimulated with 2 \u03bcg/ml of the master peptide pool (hepatitis B surface antigen [HBsAg]) and assessed for converse expression of 4-1BB and CD40L by flow cytometry on days 0, 60, 180, and 365. Shown is number of vaccine-specific memory CD4 T cells out of 106 memory CD4 T cells after subtraction of responses in negative control. (A) Aggregate analysis from vaccinees (including early-, late-, and non-converters) showing a peak of vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cell at day 60 (day 60 after first dose of the vaccine and day 30 after second dose), declining thereafter. Shown are numbers of vaccine-specific memory CD4 T cells out of 106 memory CD4 T cells. (B) Correlation between the difference in antibody titer between day 365 and day 0 and vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cell at day 60. (C) Aggregate analysis from early- and late-converter vaccinees showing a significant induction of vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cell in early-converters and lack thereof in late-converters. (D) Aggregate analysis from early- and late-converter vaccinees showing no significant differences in vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cell at day 0. Data for A, B, C, and D are available in Figure 4\u2014source data 1. (E) Receiver operating characteristic (ROC) curves for Rhbs from day 0 data in a leave-one-out cross-validation compared to the frequency of vaccine-specific CD40L+4-1BB\u2212 memory CD4 T cell out of 106 memory CD4 T cells for each vaccinee at time points 60 (area under the curve [AUC] = 0.84), 180 (AUC = 0.56), and 365 (AUC = 0.57). (F) Receiver operating characteristic (ROC) curves for Rhbs from day 0 data in a leave-one-out cross-validation compared to the frequency of vaccine-specific CD40L\u22124-1BB+ memory CD4 T cell out of 106 memory CD4 T cells for each vaccinee at time points 60 (AUC = 0.62), 180 (AUC = 0.56), and 365 (AUC = 0.52). Statistical significance was indicated with ns p > 0.05, *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, ****p \u2264 0.0001 rs, Spearman\u2019s correlation coefficient, \u22121\u2264 rs \u2264 1; rs and p-value by Spearman\u2019s correlation test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Gating strategy started by a lymphocyte gate, followed by gating on viable CD3+CD8\u2212 T cells. Doublets were excluded using doublet discrimination (area against the height of forward scatter pulse) before gating on CD4+ T cells. Next, CD45RA, CXCR5, CD25, and CD127 were used to identify main subsets of CD4 T cells using Boolean gates as specified in the accompanying table. (B) Shown an example of gating for CD154 (CD40L) and CD137 (4-1BB) for cells left unstimulated (left) and cells stimulated with a master peptide pool (right) for an early-converter vaccinee at day 60.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Peripheral blood mononuclear cells (PBMCs) from vaccinees were stimulated with 2 \u03bcg/ml of a pool of peptides of hepatitis B surface antigen (HBsAg) and assessed for converse expression of 4-1BB and CD40L by flow cytometry. (A) CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ CD4 T cells from day 60 were gated on and then overlaid in a contour plots of CD25 versus CD127 to assess TCOV and TREG phenotype. (B) Summary plot of median fluorescence intensity (MFI) of CD25 and CD127 for all vaccinees. Wilcoxon signed-rank with paired analysis; statistical significance was indicated with ****p \u2264 0.0001.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Correlation between the difference in antibody titer between day 365 and day 0 and vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cell at day 60 colored by vaccinee group and labeled with vaccinee ID. rs, Spearman\u2019s correlation coefficient, \u22121\u2264 rs \u2264 1; rs and p-value by Spearman\u2019s correlation test.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Peripheral blood mononuclear cells (PBMCs) from vaccinees were stimulated with 2 \u03bcg/ml of a pool of peptides of hepatitis B surface antigen (HBsAg) and assessed for converse expression of 4-1BB and CD40L by flow cytometry on days 0, 60, 180, and 365. (A) Aggregate analysis from early-, late-, and non-converter vaccinees showing a significant induction of vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cell in early-converters and lack thereof in late and non-converters. Shown are numbers of vaccine-specific memory CD4 T cells out of 106 memory CD4 T cells after subtraction of responses in negative control (see Materials and methods for details). (B) Aggregate analysis from early-, late-, and non-converter vaccinees showing a significant induction of vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ CD4 T cell in early-converters and lack thereof in late and non-converters. Shown are numbers of vaccine-specific CD4 T cells out of 106 CD4 T cells after subtraction of responses in negative control (see Materials and methods for details).\n\nCollectively, flow cytometry data reveal that the expression of CD40L and 4-1BB in our ex vivo assay is consistent with our serological data and reflects the lack of seroconversion at day 60 in late-converters. However, it does not support the existence of more vaccine-specific memory CD4 T cells in early-converters prior to vaccination.\n\n### Predictive capacity of TCR\u03b2 repertoire holds true for CD4 TCON immune response\n\nResponse groups used so far were established based on the dynamics of anti-HBs titers following vaccination. However, response groups can be defined based on the data of antigen specificity from the ex vivo CD4 T cell assay. Thus the frequency of CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells were used to define a low and high response group at three different times points (days 60, 180, and 365). For each time point, the same Rhbs metric was used in a leave-one-out cross-validation as before to differentiate between these novel response group definitions. Results indicate that the Rhbs metric is a good predictor for HBsAg-specific memory CD4 T cells with a TCON signature (but not TREG signature) identified at day 60 post-vaccination (Figure 4E and F). However, the classifier is less performant for the prediction of CD4 T cell response at later time points.\n\n### An expanded subset of 4-1BB+CD45RA\u2212 TREG cells is a prominent feature of late-converters\n\nIn order to detect any distinct signatures of early- and late-converters, we analyzed pre-vaccination flow cytometry data to examine major CD4 T cell subsets: TH, TREG, cTFH, and cTFR cells.\n\nUsing manual gating in which regulatory T cells (TREG) were defined as viable CD3+CD4+CD8\u2212CD25+CD127\u2212CXCR5\u2212 and were further divided into CD45RA+ and CD45RA\u2212 TREG cells, we identified a significantly higher frequency of 4-1BB+ CD45RA\u2212 TREG cells in late-converters compared to early-converters (Figure 5A and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig5-v3.jpg)\n\n**Figure 5.:** Peripheral blood mononuclear cells (PBMCs) from vaccinees at day 0 (prior to vaccination) were phenotyped for expression of markers of TREG. (A) Aggregate analysis of 4-1BB+CD45RA\u2212 TREG within CD45RA\u2212 TREG CD4 T cells in early- and late- and non-converter vaccinees before vaccination. (B) Aggregate analysis of the median fluorescence intensity of 4-1BB in TH, cTFH, TREG, and cTFR cells before vaccination. (C) Aggregate analysis of the median fluorescence intensity of 4-1BB (left panel) and CD25 (right panel) in CD45RA\u2212 TREG and CD45RA+ TREG cells before vaccination. Data for A, B, and C are available in Figure 5\u2014source data 1. (D) Frequency of TREG, CD45RA\u2212 TREG, and CD45RA+ TREG cells within total CD4 T cells in early-, late-, and non-converter vaccinees before vaccination. (E) Composition of TREG compartment as determined by expression of 4-1BB and CD45RA in early-, late-, and non-converter vaccinees before vaccination. Statistical significance was indicated with ns p > 0.05, *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, ****p \u2264 0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68388/elife-68388-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Aggregate analysis of the frequency of 4-1BB+CD45RA\u2212 TREG within CD45RA\u2212 TREG CD4 T cells in early-, late-, and non-converter vaccinees at days 0, 60, 180, and 365. Statistical significance was indicated with ns p > 0.05, *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, ****p \u2264 0.0001.\n\nTREG cells showed higher 4-1BB expression compared to TH, cTFH, and cTFR cells (Figure 5B) and within TREG subset, CD45RA\u2212 TREG cells showed significantly higher expression of 4-1BB, accompanied with a higher expression of CD25, compared to CD45RA+ TREG cells (Figure 5C). In this scheme, CD45RA\u2212 TREG can be divided into 4-1BB+CD25high and 4-1BB-CD25int subsets. It is worth noting here that no differences were detected in the frequency of CD45RA\u2212 or CD45RA+ TREG cells within CD4 T cell compartment between the two groups (Figure 5D), and that it is the composition of TREG compartment that is distinct between the two groups (Figure 5E).\n\nIn summary, an expanded subset of 4-1BB+CD45RA\u2212 TREG cells pre-vaccination is a prominent feature of a delayed and modest immune response to HB vaccine in our cohort.\n\n## Discussion\n\nIn this study, we used high-throughput TCR\u03b2 repertoire profiling and ex vivo T cell assays to characterize memory CD4 T cell repertoires before and after immunization with HB vaccine, an adjuvanted subunit vaccine, and tracked vaccine-specific TCR\u03b2 clonotypes over two time points. As antigen-na\u00efve adults were found to have an unexpected abundance of memory-phenotype CD4 T cells specific to viral antigens (Su and Davis, 2013; Su et al., 2013), we sought to investigate the influence that preexisting memory CD4 T cells can have on vaccine-induced immunity.\n\nCommercially available HBV vaccines produce a robust and long-lasting anti-HBs response, and protection is provided by induction of an anti-HBs (antibody against HBV surface antigen) titer higher than 10 mIU/ml after a complete immunization schedule of three doses (Meireles et al., 2015). However, 5\u201310% of healthy adult vaccinees fail to produce protective titers of anti-HBs and can be classified as non-responders (Meireles et al., 2015). In our cohort, 13 vaccinees did not seroconvert by day 60 (30 days following administration of the second vaccine dose), as determined by antibody titer. Out of this group, nine vaccinees seroconverted by day 180 or day 365, referred to here as late-converters, and four vaccinees did not seroconvert, referred to here as non-converters.\n\nA hallmark of adaptive immunity is a potential for memory immune responses to increase in both magnitude and quality upon repeated exposure to the antigen (Sallusto et al., 2010). Our systems immunology data supports the theory that preexisting memory CD4 T cell TCR\u03b2 sequences specific to HBsAg, the antigenic component of the current HB vaccine, predict which individuals will mount an early and more vigorous immune response to the vaccine as evidenced by a higher fold change in anti-HBs antibody titer and a more significant induction of antigen-specific CD4 T cells. It is postulated that preexisting memory CD4 T cell clonotypes are generated due to the highly degenerate nature of T cell recognition of antigen/MHC and are cross-reactive to environmental antigens (Sewell, 2012). For example, preexisting memory CD4 T cells are well-established in unexposed HIV-seronegative individuals, although at a significantly lower magnitude than HIV-exposed seronegative individuals (Campion et al., 2014; Ritchie et al., 2011), and were likely primed by exposure to environmental triggers or the human microbiome.\n\nWe and others have shown before that the TCR\u03b2 repertoire of CD4 T cells encodes the antigen exposure history of each individual and that antigen-specific TCR\u03b2 sequences could serve to automatically annotate the infection or exposure history (DeWitt et al., 2018; Emerson et al., 2017; De Neuter et al., 2019). In this study, we show that similar principles can be used to study vaccine responsiveness. Specifically, the recruitment of novel vaccine-specific T cell clonotypes into memory compartment following vaccination can be tracked by examining the CD4 memory TCR\u03b2 repertoire over time. While we observed no increase in the frequency of the vaccine-specific memory T cells, as the time point may have missed the peak of the clonal expansion of effector CD4 T cells as was reported before (Blom et al., 2013; Kohler et al., 2012; Pogorelyy et al., 2018), a significant rise in the number of unique vaccine-specific T cell clonotypes was detected. This observation is consistent with earlier studies of T cell immune repertoire that showed that antigen-specific TCR\u03b2 sequences do not always overlap with those sequences that increase in frequency after infection or vaccination (DeWitt et al., 2015). More interestingly, individuals with the earlier and more robust response against the vaccine had a telltale antigen-specific signature in their memory TCR\u03b2 repertoire prior to vaccination, despite the lack of HBsAg antibodies and prior vaccination history.\n\nDetection of this vaccine-specific signature was possible due to the development of a novel predictive model that used epitope-specific TCR\u03b2 sequences from one set of individuals to make predictions about another. This is a non-trivial task as the MHC class II molecules vary between vaccinees, which in turn allows for great variation of the presented epitopes. However, we were able to cover the entire HBsAg and obtained a sufficient sample size to likely cover the most immunoprevalent epitopes. It can be presumed that we do not capture the full HBsAg T cell response, but obtain enough sequences which are representative for the response as a whole. In addition, a correction factor was needed to account for the occurrence of bystander-activated T cells within the original epitope-specific TCR\u03b2 sequences. Indeed, in those vaccinees without an early seroconversion (at day 60), putative vaccine-specific T cells might be induced due to bystander activation. This was supported by predictions using the TCRex tool (Gielis et al., 2019), which matched these TCR sequences to common viral or other epitopes. It is of note that these TCR\u03b2 sequences are matched with CD8 T cell epitopes, while they originate from isolated CD4 T cells. This is likely due to the great similarity between the TCR\u03b2 sequences of CD4 and CD8 T cells as noted in prior research (De Neuter et al., 2018).\n\nHowever, our in vitro antigen-specific data, using an assay that enables discrimination of TCON and TREG cells using the converse expression of the activation markers CD40L and 4-1BB (Frentsch et al., 2005; Schoenbrunn et al., 2012), failed to show a significant difference in preexisting antigen-specific CD4 T cells between early- and late-converters prior to vaccine administration. It is plausible that our activation proteins, CD40L and 4-1BB, might be unsuitable to detect preexisting memory CD4 T cells but this is unlikely as both proteins were used successfully in similar studies (Bacher et al., 2014a; Bacher et al., 2014b).\n\nAnother plausible explanation is that the signal is below the detection limit of the assay and that more sensitive techniques that require pre-enrichment of CD40L+ and 4-1BB+ T cells (using magnetic beads) (Bacher et al., 2013) or cultured ELISpot assay (Reece et al., 2004) are needed to capture preexisting vaccine-specific memory CD4 T cells directly from human peripheral blood. A similar disagreement between B cell receptor clonotype diversity underlying vaccine-induced response and a conventional B cell ELISpot assay was reported before following HB vaccination (Galson et al., 2016).\n\nTREG cells represent about 5\u201310% of human CD4 T cell compartment and are identified by the constitutive surface expression of CD25, also known as IL-2 receptor \u03b1 subunit (IL-2Ra), and the nuclear expression of forkhead family transcription factor 3 (Foxp3), a lineage specification factor of TREG cells (Rudensky, 2011). Regulatory memory T cells play a role in the mitigation of tissue damage induced by effector memory T cells during protective immune responses, resulting in a selective advantage against pathogen-induced immunopathology (Garner-Spitzer et al., 2013; Lanteri et al., 2009; Lin et al., 2018; Lovelace and Maecker, 2018). Several studies have identified CD4 TREG cells with specificity to pathogen-derived peptides in murine models and showed evidence for an induced expansion of TREG cells followed by an emergence and a long-term persistence of TREG cells with a memory phenotype and potent immunosuppressive properties (Lin et al., 2018; Sanchez et al., 2012). Blom et al. reported a significant and transient activation of TREG cells (identified by upregulation of CD38 and Ki67) in humans 10 days after administration of live attenuated yellow fever virus 17D vaccine (Blom et al., 2013). The induction of vaccine-specific TREG cells in our cohort is unexpected and the role it might play in vaccine-induced immunity warrants further investigation.\n\nThe association of an expanded 4-1BB+ CD45RA\u2212 TREG subset with a delayed immune response to HB vaccine was not described before. Miyara et al. showed that blood contains two distinct subsets of stable and suppressive TREG cells: resting TREG, identified as FOXP3lowCD45RA+ CD4 T cells, and activated TREG, identified as FOXP3highCD45RA\u2212 CD4 T cells. They further noted that activated TREG cells constitute a minority subset within cord blood TREG cells and increase gradually with age (Miyara et al., 2009). As activated TREG cells were shown to have an increased expression of proteins indicative of activation, including ICOS and HLA-DR (Booth et al., 2010; Ito et al., 2008; Mason et al., 2015; Miyara et al., 2009; Mohr et al., 2018), it might be the case that an upregulation of 4-1BB is one more feature of this population or a subset thereof. Moreover, TREG cells in mice were shown to modulate TFH formation and germinal center (GC) B cell responses and to diminish antibody production in a CTLA-4 mediated suppression (Wing et al., 2014). Interestingly, CD45RA\u2212 TREG cells were shown to be more rich in preformed CTLA-4 stored in intracellular vesicles compared to CD45RA+ TREG cells (Miyara et al., 2009).\n\n4-1BB was shown to be constitutively expressed by TREG cells (McHugh et al., 2002) and that 4-1BB+ TREG cells are functionally superior to 4-1BB\u2212 TREG cells in both contact-dependent and contact-independent immunosuppression (Kachapati et al., 2012). 4-1BB+ TREG cells are the major producers of the alternatively spliced and soluble isoform of 4-1BB among T cells (Kachapati et al., 2012). 4-1BB was shown before to be preferentially expressed on TREG cells compared with other non-regulatory CD4 T cell subsets (McHugh et al., 2002) and that 4-1BB-costimualtion induces the expansion of TREG cells both in vitro and in vivo (Zheng et al., 2004). Moreover, agonistic anti-4-1BB mAbs have been shown to abrogate T cell-dependent antibody responses in vivo (Mittler et al., 1999) and to ameliorate experimental autoimmune encephalomyelitis by skewing the balance against TH17 differentiation in favor of TREG differentiation (Kim et al., 2011). It is plausible that the expansion 4-1BB+CD45RA\u2212 TREG cells in late-converters is involved in the suppression of GC vaccine-specific TFH cells and the ensuing antibody response in our cohort, but this remains speculative and further research is warranted.\n\nIt is enticing to speculate that the preexisting memory CD4 T cells result from the complex interplay between cellular immunity and the human microbiome. A role for the microbiota in modulating immunity to viral infection was suggested in 1960s (Robinson and Pfeiffer, 2014), and since then we gained better understanding of the impact of the various components of the microbiota including bacteria, fungi, protozoa, archaea, and viruses on the murine and human immune systems (Winkler and Thackray, 2019).\n\nViral clearance of HB virus infection depends on the age of exposure and neonates and young children are less likely to spontaneously clear the virus (Yuen et al., 2018). Han-Hsuan et al. have shown evidence in mice that this age dependency is mediated by gut microbiota that prepare the liver immunity system to clear HBV, possibly via a TLR4 signaling pathway (Chou et al., 2015). In this study, young mice that have not reached an equilibrium in the gut microbiota exhibited prolonged HBsAg persistence, impaired anti-HBs antibody production, and limited Hepatitis B core antigen (HBcAg)-specific IFN\u03b3+ splenocytes. More recently, Tingxin et al. provided evidence for a critical role of the commensal microbiota in supporting the differentiation of GC B cells, through follicular T helper (TFH) cells, to promote the anti-HBV humoral immunity (Wu et al., 2019).\n\nOur study bears some intrinsic limitations. A major drawback is the restricted number of days at which TCR\u03b2 repertoire was profiled, as vaccine-specific perturbations within the repertoire may occur at different time points for early-, late-, and non-converters. Additionally, more in-depth characterization and functional studies on 4-1BB+CD45RA\u2212 TREG cells could have helped shed more light on the role they play in vaccine-induced immunity. Future studies in larger cohorts and with a more comprehensive TCR\u03b2 repertoire profiling and CD4 T cells immunophenotyping are required to validate our findings.\n\nIn conclusion, our analysis of the memory CD4 T cell repertoire has uncovered a role for preexisting memory CD4 T cells in na\u00efve individuals in mounting an earlier and more vigorous immune response to HB vaccine and argue for the utility of pre-vaccination TCR\u03b2 repertoire in the prediction of vaccine-induced immunity. Moreover, we identify a subset of 4-1BB+ memory TREG cells that is expanded in individuals with delayed immune response to the vaccine, which might further explain the heterogeneity of response to HB vaccine.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>CD3-BV510 (SK7) (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 344828</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD3-PerCP (BW264/56) (mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-113-131</td>\n      <td>FACS (1/50 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD4-APC (REA623) (recombinant antibodies, REAfinity)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-113-222</td>\n      <td>FACS (1/50 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD4-APC (RPA-T4) (mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat# 555349</td>\n      <td>FACS (1/5 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD4-PerCP/Cy5.5 (RPA-T4) (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 300530</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD8-VioGreen (REA734) (recombinant antibodies, REAfinity)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-110-684</td>\n      <td>FACS (1/50 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD8-Pacific Orange (3B5) (mouse monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat# MHCD0830</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD8-APC/Cy7 (SK1) (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 344714</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD40L-PE (5C8) (mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-092-289</td>\n      <td>FACS (1/10 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CXCR5-PE-Cy7 (MU5UBEE) (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat# 25-9185-42</td>\n      <td>FACS (7/100 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD45RA-AF488 (HI100) (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 304114</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD45RO-PE (UCHT1) (mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat# 555493</td>\n      <td>FACS (1/5 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD25-BV421 (M-A251) (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 356114</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD127-BV785 (A019D5) (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 351330</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD137-PE (4B4-1) (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat# 309804</td>\n      <td>FACS (1/20 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD154-APC (5C8) (mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-113-603</td>\n      <td>FACS (3/100 per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD40 (HB14) (mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-094-133</td>\n      <td>Assay (1 \u00b5g/ml)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD28 (CD28.2) (mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat# 556620</td>\n      <td>Assay (1 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Single peptides of HBsAg</td>\n      <td>JPT Peptide Technologies</td>\n      <td>Customized</td>\n      <td>54 single peptides</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Peptide matrix pools of HBsAg</td>\n      <td>JPT Peptide Technologies</td>\n      <td>Customized</td>\n      <td>A set of 15 matrix pools each with 7\u20138 peptides</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Master peptide pool of HBsAg</td>\n      <td>JPT Peptide Technologies</td>\n      <td>Customized</td>\n      <td>A pool of 54 single peptides</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CD4 MicroBeads</td>\n      <td>Miltenyi Biotec</td>\n      <td>Cat# 130-045-101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DNA/RNA Shield</td>\n      <td>Zymo Research</td>\n      <td>Cat# R1100-50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quick-DNA Microprep kit</td>\n      <td>Zymo Research</td>\n      <td>Cat# D3020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ImmunoSEQ hsTCRB sequencing kit</td>\n      <td>Adaptive Biotechnologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quick-RNA Microprep kit</td>\n      <td>Zymo Research</td>\n      <td>Cat# R1050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QIAseq Immune Repertoire RNA Library kit</td>\n      <td>Qiagen</td>\n      <td>Cat# 333705</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qubit dsDNA HS Assay</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# Q32854</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo version 10.5.3</td>\n      <td>Tree Star</td>\n      <td>RRID:SCR_002865</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>immunoSEQ analyzer (v2)</td>\n      <td>Adaptive Biotechnologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TCRex web-based</td>\n      <td>(Gielis et al., 2019), https://tcrex.biodatamining.be/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>https://www.r-project.org</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RStudio</td>\n      <td>http://www.rstudio.com/</td>\n      <td>RRID:SCR_000432</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggplot2 (V3.3.2)</td>\n      <td>(Wickham, 2016) https://ggplot2.tidyverse.org/</td>\n      <td>RRID:SCR_014601</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggpubr (V0.2.5)</td>\n      <td>https://CRAN.R-project.org/package=ggpubr</td>\n      <td>RRID:SCR_021139</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>rstatix (0.7.0)</td>\n      <td>https://CRAN.R-project.org/package=rstatix</td>\n      <td>RRID:SCR_021240</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sytox blue</td>\n      <td>Invitrogen</td>\n      <td>Cat# S34857</td>\n      <td>FACS (1/500 per test)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fixable viability dye Zombie NIR</td>\n      <td>BioLegend</td>\n      <td>Cat# 423106</td>\n      <td>FACS (1/50 per test)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Carboxyfluorescein succinimidyl ester (CFSE)</td>\n      <td>Invitrogen</td>\n      <td>Cat# C34554</td>\n      <td>2 \u00b5M staining solution</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Engerix-B</td>\n      <td>GlaxoSmithKline</td>\n      <td></td>\n      <td>20 \u03bcg</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Varicella zoster virus (VZV) lysate</td>\n      <td>Microbix Biosystem</td>\n      <td>Cat# EL-03\u201302</td>\n      <td>Viral lysate, assay (4 \u00b5g/ml)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Human study design and clinical samples\n\nA total of 34 healthy individuals (20-29 years: 10, 30-39 years: 7, 40-49 years: 16, 50+ years: 1) without a history of HBV infection or previous HB vaccination were recruited in this study after obtaining written informed consent. Individuals were vaccinated with an HB vaccine by intramuscular (m. deltoideus) injection (Engerix-B containing 20 \u03bcg dose of alum-adjuvanted HBsAg, GlaxoSmithKline) on days 0 and 30 (and on day 365). At days 0 (pre-vaccination), 60, 180, and 365 (Figure 1A), peripheral blood samples were collected on spray-coated lithium heparin tubes, spray-coated K2EDTA (dipotassium ethylenediamine tetra-acetic acid) tubes, and serum tubes (Becton Dickinson, NJ).\n\n### Peripheral blood mononuclear cells\n\nPeripheral blood mononuclear cells (PBMCs) were isolated by Ficoll-Paque Plus gradient separation (GE Healthcare, Chicago, IL). Cells were stored in 10% dimethyl sulfoxide in fetal bovine serum (Thermo Fisher Scientific, Waltham, MA). After thawing and washing cryopreserved PBMC, cells were cultured in AIM-V medium that contained L-glutamine, streptomycin sulfate at 50 \u00b5g/ml, and gentamicin sulfate at 10 \u00b5g/ml (Thermo Fisher Scientific, Waltham, MA) and supplemented with 5% human serum (One Lambda, Canoga Park, CA).\n\n### Serology and complete blood count\n\nSerum was separated and stored immediately at \u2013 80\u00b0C until time of analysis. Anti-HBs antibody was titrated in serum from day 0, 60, 180, and 365 using Roche Elecsys Anti-HBs antibody assay on an Elecsys 2010 analyzer (Roche, Basel, Switzerland). An anti-HBs titer above 10 IU/ml was considered protective (Keating and Noble, 2003).\n\nSerum IgG antibodies to CMV, EBV viral-capsid antigen, and HSV-1 and -2 were determined using commercially available sandwich ELISA kits in accordance with the manufacturer\u2019s instructions.\n\nA complete blood count including leukocyte differential was run on a hematology analyzer (ABX MICROS 60, Horiba, Kyoto, Japan).\n\n### Sorting of memory CD4 T cells\n\nTotal CD4 T cells were isolated by positive selection using CD4 magnetic microbeads (Miltenyi Biotech, Bergisch Gladbach, Germany). Memory CD4 T cells were sorted after gating on single viable CD3+CD4+CD8\u2212CD45RO+ cells. The following fluorochrome-labeled monoclonal antibodies were used for staining: CD3-PerCP (BW264/56) (Miltenyi Biotech), CD4-APC (RPA-T4), and CD45RO-PE (UCHT1) (both from Becton Dickinson, Franklin Lakes, NJ) and CD8-Pacific Orange (3B5) (from Thermo Fisher Scientific, Waltham, MA). Cells were stained at room temperature for 20 min and sorted with FACSAria II (Becton Dickinson, Franklin Lakes, NJ). Sytox blue (Thermo Fisher Scientific, Waltham, MA) was used to exclude non-viable cells.\n\n### Single peptides, peptide matrix pools, and epitope mapping\n\nA set of 15-mers peptides with an 11-amino acid overlap spanning the 226 amino acids along the small S protein of HBsAg, also designated as small HBs (Shouval, 2003), were synthesized by JPT Peptide Technologies (Berlin, Germany). The set, composed of 54 single peptides (see Supplementary file 1), was used in a matrix-based strategy to map epitopes against which the immune response is directed as described before (Precopio et al., 2008). The matrix layout enables efficient identification of epitopes within the antigen using a minimal number of cells. For this purpose, a matrix of 15 pools, 7 rows, and 8 columns, referred to as peptide matrix, was designed so that each peptide is in exactly one row-pool and one column-pool, thereby allowing for the identification of positive peptides at the intersection of positive pools. Matrix pools that induced a CD4 T cell response (as determined by CD40L/CD154 assay described below) which meets the threshold criteria for a positive response were considered in the deconvolution process. Top six single peptides were considered for peptide-specific T cell expansion and sorting. A master peptide pool is composed of all of the 54 single peptides and was used to identify and sort total vaccine-specific CD4 T cells. Each peptide was used at a final concentration of 2 \u00b5g/ml. VZV lysate was purchased from Microbix Biosystem (Mississauga, Canada).\n\n### Ex vivo T cell stimulation (CD40L/CD154 assay)\n\nThawed PBMCs from each vaccinee were cultured in AIM-V medium that contained L-glutamine, streptomycin sulfate at 50 \u00b5g/ml, and gentamicin sulfate at 10 \u00b5g/ml (GIBCO, Grand Island, NY) and supplemented with 5% human serum (One Lambda, Canoga Park, CA). Cells were stimulated for 6 hr with 2 \u03bcg/ml of each of the 15 peptide matrix pools in the presence of 1 \u00b5g/ml anti-CD40 antibody (HB14) (purchased from Miltenyi Biotec, Bergisch Gladbach, Germany) and 1 \u03bcg/ml anti-CD28 antibody (CD28.2) (purchased from BD Biosciences, Franklin Lakes, NJ).\n\nCells were stained using the following fluorochrome-labeled monoclonal antibodies: CD3-PerCP (BW264/56), CD4-APC (REA623), CD8-VioGreen (REA734), and CD40L-PE (5C8) (purchased from Miltenyi Biotec, Bergisch Gladbach, Germany). Viability dye Sytox blue from Invitrogen (Thermo Fisher Scientific, Waltham, MA) was used to exclude non-viable cells. Data was acquired on FACSAria II using Diva Software, both from BD Biosciences (Franklin Lakes, NJ), and analyzed on FlowJo software version 10.5.3 (Tree Star, Inc, Ashland, OR). Fluorescence-minus-one controls were performed in pilot studies. Gates for CD40L+CD4 T cells were set using cells left unstimulated.\n\n### In vitro T cell expansion and cell sorting\n\nThawed PBMCs were labeled with CFSE (Invitrogen, Carlsbad, CA) and cultured in AIM-V medium that contained L-glutamine, streptomycin sulfate at 50 \u00b5g/ml, and gentamicin sulfate at 10 \u00b5g/ml (GIBCO, Grand Island, NY) and supplemented with 5% human serum (One Lambda, Canoga Park, CA). Cells were stimulated for 7 days with 2 \u00b5g/ml of selected single peptides in addition to the master peptides pool. Cells were also stimulated with 4 \u00b5g/ml of a VZV lysate and used as a baseline control. Cells were stained using the following fluorochrome-labeled monoclonal antibodies: CD3-PerCP (BW264/56), CD4-APC (REA623), and CD8-VioGreen (REA734) (purchased from Miltenyi Biotec, Bergisch Gladbach, Germany). Viability dye Sytox blue from Invitrogen (Thermo Fisher Scientific, Waltham, MA) was used to exclude non-viable cells. Single viable CFSElow CD3+ CD8\u2212 CD4+ T cells were sorted into 96-well PCR plates containing DNA/RNA Shield (Zymo Research, Irvine, CA) using FACSAria II and Diva Software (BD Biosciences, Franklin Lakes, NJ). For each of the selected single peptides, 500 cells were sorted in two technical replicates. For the master peptide pool and VZV lysate, 1000 cells were sorted in two technical replicates. Plates were immediately centrifuged and kept at \u201320\u00b0C before TCR cDNA library preparation and sequencing.\n\n### TCR\u03b2 cDNA library preparation and sequencing of memory CD4 T cells\n\nDNA was extracted from sorted memory CD4 T cells using Quick-DNA Microprep kit (Zymo Research, Irvine, CA). ImmunoSEQ hsTCRB sequencing kit (Adaptive Biotechnologies, Seattle, WA) was used to profile TCR\u03b2 repertoire following the manufacturer\u2019s protocol.\n\nAfter quality control using Fragment Analyzer (Agilent, Santa Clara, CA), libraries were pooled with equal volumes. The concentration of the final pool was measured with the Qubit dsDNA HS Assay kit (Thermo Fisher Scientific, Waltham, MA). The final pool was processed to be sequenced on the Miseq and NextSeq platforms (Illumina, San Diego, CA). Memory CD4 T cells of one of the vaccinees (H42, a non-converter) was not sequenced due to a capacity issue.\n\n### TCR cDNA library preparation and sequencing of CFSElow CD4 T cells\n\nRNA was extracted from each of the two technical replicates of sorted CFSElow CD4 T cells using Quick-RNA Microprep kit (Zymo Research, Irvine, CA). Without measuring the resulting RNA concentration, an RNA-based library preparation was used. The QIAseq Immune Repertoire RNA Library kit (Qiagen, Venlo, The Netherlands) amplifies TCR\u03b1, -\u03b2, -\u03b3, and -\u03b4 chains. After quality control using Fragment Analyzer (Agilent, Santa Clara, CA), concentration was measured with the Qubit dsDNA HS Assay kit (Thermo Fisher Scientific, Waltham, MA) and pools were equimolarly pooled and prepared for sequencing on the NextSeq platform (Illumina, San Diego, CA).\n\n### TCR\u03b2 sequence analysis\n\nTCR\u03b2 clonotypes were identified as previously described (De Neuter et al., 2019) where a unique TCR\u03b2 clonotype is defined as a unique combination of a V gene, CDR3 amino acid sequence, and J gene. All memory CD4 T cell DNA-based TCR\u03b2 sequencing reads were annotated using the immunoSEQ analyzer (v2) from Adaptive Biotechnologies. All small bulk RNA-based TCR sequencing reads were annotated using the MiXCR tool (v3.0.7) from the FASTQ files. As all RNA-based TCR sequencing experiments featured two technical replicates, only those TCR sequences that occurred in both replicates were retained and their counts were summed. Tracking of vaccine-specific TCR\u03b2 clonotypes is based on exact TCR\u03b2 CDR3 amino acid matches to remove any bias introduced by the different VDJ annotation pipelines. Non-HBsAg TCR annotations were done with the TCRex web tool (Gielis et al., 2019) on the July 24, 2019, using version 0.3.0. Breadth of the TCR sequences is defined as the number of unique TCR clonotypes belonging to a given set, divided by the total number of unique clonotypes in a repertoire. Inference of similar epitope binding between two TCR sequences is defined according to the Hamming distance (d) calculated on the CDR3 amino acid sequence with a cutoff c = 1, as supported by prior research where it was shown that it was equivalent to the performance of more complex methods such as TCRdist (Dash et al., 2017) or k-mer clustering when applied to TCR\u03b2 chains only (De Neuter et al., 2018; Valkiers et al., 2021). All scripts used in this analysis are available via GitHub (https://github.com/pmeysman/HepBTCR, copy archived at swh:1:rev:bdda21dde671ac2e424e85bd270efafa719d4cb4, Meysman, 2022).\n\n### Predictive HBs-response model\n\nFrom the single peptide data generated in the epitope mapping experiments, we aimed to create a predictive model to enumerate the HBs response from full TCR\u03b2 repertoire data. This approach allows for predictions that are epitope-specific rather than simply vaccine-specific. This model was applied in a leave-one-out cross-validation so that vaccine-specific TCR\u03b2 sequences from a vaccinee are not used to make predictions for the same vaccinee. While the predictive model is derived from epitope-specific data, it cannot be guaranteed that some of the expanded CD4 T cells detected in the in vitro assay are not due to bystander activation. Vaccine-specific TCR\u03b2 sequences of vaccinees who did not respond to the vaccine at day 60 (late-converters and non-converters) are expected to be more enriched in cells triggered to expand due to bystander activation. Indeed, running the set of vaccine-specific TCR\u03b2 sequences through the TCRex webtool (Gielis et al., 2019) reveals that several TCRs are predicted to be highly similar to those reactive to the CMV NLVPMVATV epitope (enrichment p-value < 0.001 when compared to the TCRex background repertoire) and the Mart-1 variant ELAGIGILTV epitope (p-value < 0.001), which supports the notion that some of these TCR\u03b2 sequences might not be specific to HBsAg. This set of vaccine-specific TCR\u03b2 sequences can thus be used to make predictions about possible TCR\u03b2 sequences due to bystander activation of CD4 T cells, that is, common TCR\u03b2 sequences that might be present as false positives. The final output of the model is thus a ratio, Rhbs, for any repertoire repi describing a set of TCR\u03b2 sequences trepi:\n\n$$\nR_{hbs}(t_{repi})= \\frac{\\sum_{pep=1}^{54}x \\in t_{repi}min_{y \\int_{pep}} dx,y\u00a7amp;lt;c/t_{pep} }{x \\int_{repi}min_{y \\int_{bystander}} dx,y\u00a7amp;lt;c/t_{bystander}}\n$$\n\nwith tpep as the set of TCR\u03b2 sequences occurring in both biological replicates for a single sample and a single peptide (pep) from the HBsAg epitope mapping experiment, and tbystander as the set of TCR\u03b2 sequences occurring in both biological replicates of the master peptide pool in any of the non-responding samples. Thus, the ratio signifies the number of TCR clonotypes predicted to be reactive against one of the HBsAg peptides, normalized by a count of putative false positive predictions from bystander T cells.\n\n### Ex vivo T cell phenotyping of vaccine-specific T cells\n\nThawed PBMCs from each vaccinee were cultured in AIM-V medium that contained L-glutamine, streptomycin sulfate at 50 \u00b5g/ml, and gentamicin sulfate at 10 \u00b5g/ml (GIBCO, Grand Island, NY) and supplemented with 5% human serum (One Lambda, Canoga Park, CA). Cells were stimulated for 6 hr with 2 \u03bcg/ml of a master peptide pool representing the full length of the small surface envelope protein of HB, in the presence of 1 \u00b5g/ml anti-CD40 antibody (HB14) (purchased from Miltenyi Biotec, Bergisch Gladbach, Germany) and 1 \u03bcg/ml anti-CD28 antibody (CD28.2) (purchased from BD Biosciences, Franklin Lakes, NJ). Cells were stained using the following fluorochrome-labeled monoclonal antibodies: CD3-BV510 (SK7), CD4-PerCP/Cy5.5 (RPA-T4), CD8-APC/Cy7 (SK1), CD45RA-AF488 (HI100), CD25-BV421 (M-A251), CD127-BV785 (A019D5), and CD137-PE (4-1BB) (purchased from BioLegend, San Diego, CA), CXCR5 (CD185)-PE-eFluor 610 (MU5UBEE) (from eBioscience, Thermo Fisher Scientific, Waltham, MA) and CD40L-APC (5C8) (purchased from Miltenyi Biotec, Bergisch Gladbach, Germany). Fixable viability dye Zombie NIR from BioLegend (San Diego, CA) was used to exclude non-viable cells. Data was acquired on FACSAria II using Diva Software, both from BD Biosciences (Franklin Lakes, NJ), and analyzed on FlowJo software version 10.5.3 (Tree Star, Inc, Ashland, OR) using gating strategy shown in Figure 4\u2014figure supplement 1A. Fluorescence-minus-one controls were performed in pilot studies. Gates for CD40L+ and 4-1BB+ CD4 T cells (Figure 4\u2014figure supplement 1B) were set using cells left unstimulated (negative control contained DMSO at the same concentration used to solve peptide pools). In order to account for background expression of CD40L and 4-1BB on CD4 T cells, responses in cells left unstimulated were subtracted from the responses to peptides, and when peptides-specific CD40L+ or 4-1BB+ CD4 T cells were not significantly higher than those detected for cells left unstimulated (using one-sided Fisher\u2019s exact test), values were mutated to zero.\n\n### Statistics and data visualization\n\nThe two-sided Fisher\u2019s exact test was used to evaluate the significance of relationship between early/late-converters and CMV, EBV, or HSV seropositivity. For the visualization of marker expression, TCR\u03b2 counts and cell frequencies between time points or groups of vaccinees, ggplot2 (v3.3.2), ggpubr (v0.2.5), and rstatix (v0.7.0) packages in R were used. The Wilcoxon rank sum test and the Wilcoxon signed-rank test were used to compare two or more groups, with unpaired and paired analysis as necessary. Bonferroni correction was applied when multiple comparisons were made. The nonparametric Spearman\u2019s rank-order correlation was used to test for correlation. We used the following convention for symbols indicating statistical significance; ns p > 0.05, *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, ****p \u2264 0.0001.\n",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "605837be-df9a-4fe2-9d6f-1200c8372a83",
+      "submission_id": "410e2b45-c07b-437e-a8e4-6460ccfa84ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68388.sa0](https://doi.org/10.7554/eLife.68388.sa0)\n\nBy using modern high-throughput sequencing this paper demonstrates that the antibody mediated immune responses that are elicited by vaccination are improved by pre-existing memory CD4 T cell responses. The experimental data are an important contribution and would be useful as a data resource for future research. All reviewers agree that the findings are of great interest to the community.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68388.sa1](https://doi.org/10.7554/eLife.68388.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Preexisting memory CD4 T cells in na\u00efve individuals confer robust immunity upon hepatitis B vaccination\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Rob J de Boer (Reviewer #2); William S DeWitt III (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Improve the statistical analysis for comparing the early- and late-converters: The authors compare Shannon entropy for day 60 vs. 0 and claim that the difference is more significant in early converters. The p-value however is marginal and does not support such strong claim, especially after taking into account multiple test correction. Please improve this analysis.\n\n2) Develop a randomization test and a null model to show that the expansion of Ag specific T cells from day 0 to 60 is indeed significant.\n\n3) Discuss how the commonality or differences in HLA types may impact the conclusions of the paper.\n\n4) Since you cross validation is done for the ROC curves, please add error bars to the plots as well.\n\n5) Better clarify the procedure for Rhbs measure. What is the distance d? How is the distance cutoff parameter for epitope based classification is chosen? What are the statistics of bystander and non-bystander sequences? How robust are the results to this exact choice?\n\nIdeally the authors should try more suitable TCR distance models like TCRdist by Dash et al. for this analysis.\n\n6) Clarify the language throughout the manuscript as detailed by reviewer #2.\n\n7) Better clarify the mathematical notations in the manuscript.\n\n8) Improve the code in GitHub.\n\n9) Improve the quality and resolution of the figures.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Please make images properly in pdf \u2013 one can't zoom in and sometimes axis labels are unreadable.\n\n2. Since you are doing cross validation in the ROC curves, please add error bars to the plots as well.\n\n3. Figure 5a: I guess you tried to look for significant difference for all possible cell subsets. Have you corrected the p-value for multiple testing?\n\n4. Given that the a central result of the paper derives from the ratio Rhbs measure, more care must be given to properly explain what you are doing:\n\n5. What is the distance d?\n\n6. How do you set the free parameter c?\n\n7. How many bystander and non-bystander sequences you have?\n\n8. What do you get without the bystander normalisation (only numerator)?\n\n9. Could you explain in more detail how do you select these bystander sequences?\n\n10. Is this bystander normalisation already enough to classify early vs late converters or do you get also information from the numerator?\n\n11. line162: can we understand this from the fact that late converters haven't yet built a proper response at day 60?\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript is not well written and most of the readers will not easily understand what exactly has been done in the various analysis. Most of my review will therefore asking for clarification.\n\nGenerally the language is not very exact. A few examples from page 4:\n\n\"Antigen presentation via major histocompatibility complex (MHC) (encoded by HLA genes), together with the right costimulatory and cytokine signals, are responsible for T cell activation (Curtsinger and Mescher, 2010; Esensten et al., 2016).\"\n\n\u2013 I miss the word proteins after (MHC).\n\nOn line 90 you write \"the highly degenerate nature of the CD4 T cell recognition\" and above you wrote that specificity is imparted.\n\nLine 142: we detected a significant increase in the TCR repertoire Shannon's entropy for early-converters (Figure 2a): this looks like a very minor difference in Figure 2a. Which test was performed and what is the effect size?\n\nLine 143: please explain what you mean by \"less clonal\".\n\nLine 153: measuring CFSE on day 60 and tracking clones from time point 0 to 60 probably means that you search for the clones that dilute CFSE on day 60 in the day 0 repertoires. This is not explained.\n\nLine 156. \"a significant increase in the frequency of unique HBsAg-specific TCR sequences\": what is the frequency of a unique sequence? Its abundance? Why then the \"unique\"? Do you mean \"a significant increase in the abundance of TCR sequences specific for HBsAg peptides\"?\n\nLine 167: \"Thus, although we see a rise in the number of vaccine-specific TCR clonotypes from day 0 to day 60, this cannot be attributed to an expansion of preexisting TCR clonotypes but rather the recruitment of new TCR clonotypes\" I don't see how the number of vaccine-specific TCR clonotypes could have increased by an expansion of preexisting TCR clonotypes.\n\nLine 169: \"rather the recruitment of new TCRB clonotypes (presumably from the na\u00efve T cell compartment): how about memory clonotypes that were not present in the day 0 sample?\n\nLine 200: Unclear sentence: \"These classifications were integrated into a model which outputs a ratio Rhbs for any TCR repertoire representing the amount of HBsAg peptide-specific clonotypes\". Is the ratio Rhbs predicting the fraction of HBsAg peptide-specific clonotypes in a repertoire? Note that ratio, amount and fraction would then have the same meaning.\n\nLine 200-215 is poorly written, e.g.,\n\n\u2013 This model applied to the memory repertoire at day 60 shows.\n\n\u2013 To account for the age variable, a model in which.\u2026.\n\nLine 234-237 Hard to read sentence.\n\nReviewer #3 (Recommendations for the authors):\n\nThere are some mathematical notation issues that make it difficult to understand the discriminative ratio R, as defined on line 591 in the methods. The function d(.,.) was previously defined as a hamming distance between sequences, but in this definition it takes arguments trepi and tpep, each of which is defined as a set of sequences. My interpretation is that {trepi | d(trepi, tpep) < c} means something more like {x \u2208 trepi | min_(y \u2208 tpep) d(x, y) < c}.\n\nThe code on GitHub needs substantial improvements to documentation. I was unable to find the part of the code where the c parameter is set for Rhbs, or where the epitope specific clones are held out for the individual being classified in the LOO procedure. I suggest expanding the readme to detail how to use each script, perhaps with example commands, and where various important methodological details are implemented.\n\nMany figure panels are of such low resolution that axis labels and annotations are illegible.\n\nI would expect that HLA type would strongly influence the inter-individual relevance of the peptide specific TCRs, and the performance of this classifier (especially between individuals with different genetic backgrounds). Can the authors comment on why this wasn't an issue in this study?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"Preexisting memory CD4 T cells in na\u00efve individuals confer robust immunity upon hepatitis B vaccination\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Giulio Isacchini (Reviewer #1); Rob J de Boer (Reviewer #2); William S DeWitt III (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nBy using modern high-throughput sequencing this paper demonstrates the antibody mediated immune responses that are elicited by vaccination are improved by pre-existing memory CD4 T cell responses. The experimental data are an important contribution and would be useful as a data resource for future research. All reviewers agree that the findings are great interest and the revision has addressed all the previous concerns.\n\nEssential revisions:\n\n1) Figure 1\u2014figure supplement 1: early converters subfigure. Comparison between 180 and 365 does not look significant. Is the **** indication in the figure a mistake?\n\nReviewer #1 (Recommendations for the authors):\n\nThe revised manuscript has considerably improved in quality and is ready for publication. The authors have clearly responded to the observations raised by the reviewers. The paper describes an original and important study and is of interest for eLife readers.\n\nReviewer #2 (Recommendations for the authors):\n\nI have read the rebuttal letter and find that the authors have responded well to my suggestions.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors' responses to my comments on their initial submission are very thorough, and all of my concerns have been adequately addressed. They have improved the rigor of several statistical analyses, and clarified presentation of technical aspects that had previously been vague or confusing. They have also improved the open source code repository, adding more clear documentation of where key methods from the paper are implemented.\n\nThe findings of the manuscript are convincing, and the data is a valuable resource. I have no further concerns.\n",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a262cc56-3b46-4fe4-9d01-67765b519c72",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C1",
+      "claim": "Antigen recognition through the T cell receptor (TCR) \u03b1\u03b2 heterodimer is one of the primary determinants of the adaptive immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigen recognition through the T cell receptor (TCR) \u03b1\u03b2 heterodimer is one of the primary determinants of the adaptive immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rudolph et al., 2006 in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "57716ee0-3f57-49e6-b1b2-8258692b4aff",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C2",
+      "claim": "Vaccines activate na\u00efve T cells with high specificity to expand and differentiate into memory T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccines activate na\u00efve T cells with high specificity to expand and differentiate into memory T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about vaccine mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "8e9ded0c-eb3c-4f6c-8157-802878230b84",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C3",
+      "claim": "Antigen-specific memory CD4 T cells exist in unexposed antigen-na\u00efve hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, antigen-specific memory CD4 T cells exist in unexposed antigen-na\u00efve hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Su et al., 2013 and Sewell, 2012 in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "b60d71d5-8aa1-46df-86c5-00fbc5581c98",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C4",
+      "claim": "Individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes elicited earlier antibody titers to hepatitis B vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we use high-throughput sequencing of memory CD4 TCR\u03b2 repertoire and machine learning to show that individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes elicited earlier and higher antibody titers and mounted a more robust CD4 T cell response to hepatitis B vaccine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript, including TCR sequencing and antibody titer measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "556ce172-9e89-4b50-90a4-8d633bcd5070",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C5",
+      "claim": "Individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes elicited higher antibody titers to hepatitis B vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we use high-throughput sequencing of memory CD4 TCR\u03b2 repertoire and machine learning to show that individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes elicited earlier and higher antibody titers and mounted a more robust CD4 T cell response to hepatitis B vaccine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript, including TCR sequencing and antibody titer measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "967aab47-c532-4d3f-b682-2a8ca837d48a",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C6",
+      "claim": "Individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes mounted a more robust CD4 T cell response to hepatitis B vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we use high-throughput sequencing of memory CD4 TCR\u03b2 repertoire and machine learning to show that individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes elicited earlier and higher antibody titers and mounted a more robust CD4 T cell response to hepatitis B vaccine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript, including TCR sequencing and CD4 T cell response measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "9d38edd2-f607-4706-aaad-465c01d8dd37",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C7",
+      "claim": "Integration of TCR\u03b2 sequence patterns into a hepatitis B epitope-specific annotation model can predict which individuals will have an early and more vigorous vaccine-elicited immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, integration of TCR\u03b2 sequence patterns into a hepatitis B epitope-specific annotation model can predict which individuals will have an early and more vigorous vaccine-elicited immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the machine learning model results presented in the manuscript, including ROC curves showing predictive capacity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "3cc859cf-395d-48fc-8610-0ad13958fa11",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C8",
+      "claim": "The presence of preexisting memory T cell clonotypes has a significant impact on immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presence of preexisting memory T cell clonotypes has a significant impact on immunity and can be used to predict immune responses to vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing differences in immune responses between individuals with and without preexisting memory T cell clonotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "3d6c582c-ff15-483c-8833-e5813e8e33e2",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C9",
+      "claim": "The presence of preexisting memory T cell clonotypes can be used to predict immune responses to vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presence of preexisting memory T cell clonotypes has a significant impact on immunity and can be used to predict immune responses to vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the predictive model results showing ability to distinguish early- from late-converters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "afbe2fbe-1064-4154-8b1d-22128abdca4b",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C10",
+      "claim": "The TCR \u03b1\u03b2 heterodimer binds the peptide-MHC (pMHC) complex and confers the specificity of a T cell to an epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "The TCR \u03b1\u03b2 heterodimer binds the peptide-MHC (pMHC) complex and confers the specificity of a T cell to an epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about TCR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "a14399c2-fd21-4946-b627-dd4322d37d05",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C11",
+      "claim": "High TCR\u03b1\u03b2 diversity is generated through V(D)J recombination at the complementary-determining region 3 (CDR3) of TCR\u03b1 and TCR\u03b2 chains.",
+      "claim_type": "EXPLICIT",
+      "source": "High TCR\u03b1\u03b2 diversity is generated through V(D)J recombination at the complementary-determining region 3 (CDR3) of TCR\u03b1 and TCR\u03b2 chains, accompanied with junctional deletions and insertions of nucleotides, further adding to the diversity (Krangel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Krangel, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "73f089e2-d4a4-4c6d-a298-60d8e58efed0",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C12",
+      "claim": "Out of 34 vaccinees, 21 vaccinees seroconverted at day 60 and were classified as early-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 34 vaccinees, 21 vaccinees seroconverted (an anti-HBs titer above 10 IU/ml was considered protective; Keating and Noble, 2003) at day 60 and were classified as early-converters",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1 and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "4f14d6b5-4601-4bde-95b1-c0cf092b1523",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C13",
+      "claim": "Nine vaccinees seroconverted at day 180 or day 365 and were classified as late-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "nine vaccinees seroconverted at day 180 or day 365 and were classified as late-converters",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1 and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "257ee3bf-aae9-4aaf-baba-9c666a429478",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C14",
+      "claim": "Four vaccinees had an anti-HBs antibody titer lower than 10 IU/ml at all time points following vaccination and were classified as non-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "remaining four vaccinees had an anti-HBs antibody titer lower than 10 IU/ml at all time points following vaccination and were classified as non-converters (Figure 1 and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1 and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "c95080d1-b7d6-410e-b9f3-f8982fbcb3a2",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C15",
+      "claim": "An anti-HBs titer above 10 IU/ml was considered protective.",
+      "claim_type": "EXPLICIT",
+      "source": "an anti-HBs titer above 10 IU/ml was considered protective; Keating and Noble, 2003",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Keating and Noble, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "8a35e293-30f2-484a-9ea2-27d94ff768ca",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C16",
+      "claim": "There were no significant differences in cytomegalovirus (CMV), Epstein-Barr virus (EBV), or herpes simplex virus (HSV) seropositivity between the three groups in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant differences in cytomegalovirus (CMV), Epstein-Barr virus (EBV), or herpes simplex virus (HSV) seropositivity between the three groups in our cohort (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "d4cd1494-4eee-4f3b-89c4-e5fdfe1921c5",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C17",
+      "claim": "Early-converters were slightly younger than late-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "Early-converters were slightly younger than late-converters, and non-converters were notably younger than both early- and late-converters (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "eebf5272-fbff-4671-8dfe-ca1cf830760d",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C18",
+      "claim": "Non-converters were notably younger than both early- and late-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "Early-converters were slightly younger than late-converters, and non-converters were notably younger than both early- and late-converters (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "0b0c5de1-593e-4bcb-9ba5-a0eac892f86c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C19",
+      "claim": "Between 4.54 \u00d7 10^4 and 3.92 \u00d7 10^5 productive TCR\u03b2 sequence reads were obtained for each vaccinee at each time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 4.54 \u00d7 104 and 3.92 \u00d7 105 productive TCR\u03b2 sequence reads were obtained for each vaccinee at each time point (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "02547255-c027-4e25-acfb-6f783991826b",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C20",
+      "claim": "Between 30,000 and 90,000 unique TCR\u03b2 sequences were sequenced for each vaccinee at each time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 30,000 and 90,000 unique TCR\u03b2 sequences were sequenced for each vaccinee at each time point (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "af45b7c6-46c5-40b4-9eb8-2da0b8cf5421",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C21",
+      "claim": "Less than 20% of the TCR\u03b2 sequences is shared between the time points for each vaccinee.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, considering the extremely diverse memory CD4 T cell repertoire (Klarenbeek et al., 2010), less than 20% of the TCR\u03b2 sequences is shared between the time points for each vaccinee (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2\u2014figure supplement 1C and citation to Klarenbeek et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "4903f587-6ed1-4dcf-87df-8dcf162e70aa",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C22",
+      "claim": "Neither the breadth of the memory CD4 TCR\u03b2 repertoire nor the Shannon equitability index was found to have been impacted by the vaccine at day 60.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of the memory CD4 T cell repertoire of each vaccinee at the two time points was explored, but neither the breadth of the memory CD4 TCR\u03b2 repertoire nor the Shannon equitability index was found to have been impacted by the vaccine at day 60 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "97d120dd-7ef4-4596-831a-6ff1897bf88e",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C23",
+      "claim": "There was a significant increase in the breadth of HBsAg-specific TCR\u03b2 sequences at day 60 post-vaccination compared to pre-vaccination (mean increase = 107.9%, 95% CI = 62.2\u2013358.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a significant increase in the breadth of HBsAg-specific TCR\u03b2 sequences at day 60 post-vaccination compared to pre-vaccination (mean increase = 107.9%, 95% CI = 62.2\u2013358.5%) (Figure 2B and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2B and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "8093cfe9-dd80-4a01-9636-41e552503373",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C24",
+      "claim": "The HBsAg-specific increase was found to be significant when compared to VZV baseline (Wilcoxon p-value 6.3e-05).",
+      "claim_type": "EXPLICIT",
+      "source": "The HBsAg-specific increase was found to be significant when compared to this VZV baseline (Wilcoxon p-value 6.3e-05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "3c540032-f94b-466c-99ad-cd149c299f72",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C25",
+      "claim": "The increase in HBsAg-specific TCR\u03b2 sequences was found to be significantly different from the VZV baseline for the early-converters (mean = 151.9%, 95% CI = 78.9\u2013342.0%, Wilcoxon Bonferroni-corrected p-value 8.64e-5).",
+      "claim_type": "EXPLICIT",
+      "source": "When considered across the different groups, the increase was found to be significantly different from the VZV baseline for the early-converters (mean = 151.9%, 95% CI = 78.9\u2013342.0%, Wilcoxon Bonferroni-corrected p-value 8.64e-5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "9f6de7da-6184-407f-8b7e-d3adf172b104",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C26",
+      "claim": "The increase in HBsAg-specific TCR\u03b2 sequences was found to be significantly different from the VZV baseline for non-converters (mean = 67.6%, 95% CI: 37.6\u201389.7%, Wilcoxon Bonferroni-corrected p-value 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "and non-converters (mean = 67.6%, 95% CI: 37.6\u201389.7%, Wilcoxon Bonferroni-corrected p-value 0.03)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "36b7f705-d76f-441d-aeaa-f8ed6a10ec3a",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C27",
+      "claim": "The increase in HBsAg-specific TCR\u03b2 sequences was not significantly different from the VZV baseline for the late-converters (mean = 18.8%, 95% CI = 3.6\u201341.8%, Wilcoxon Bonferroni-corrected p-value 0.257).",
+      "claim_type": "EXPLICIT",
+      "source": "but not for the late-converters (mean = 18.8%, 95% CI = 3.6\u201341.8%, Wilcoxon Bonferroni-corrected p-value 0.257).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "7e887ac2-3741-4fd7-9002-a9a5023be200",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C28",
+      "claim": "The data does not support a vaccine-induced expansion of preexisting vaccine-specific TCR\u03b2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the frequency of vaccine-specific TCR\u03b2 sequences within the memory CD4 T cell repertoire, the data does not support a vaccine-induced expansion of preexisting vaccine-specific TCR\u03b2 sequences (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "9005ef2f-e309-4e32-abf8-be47bca9de58",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C29",
+      "claim": "The rise in vaccine-specific TCR\u03b2 T cells from day 0 to day 60 cannot be attributed to an expansion of the vaccine-specific TCR\u03b2 clonotypes found at day 0 but rather the recruitment of new TCR\u03b2 clonotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although we see a rise in vaccine-specific TCR\u03b2 T cells from day 0 to day 60, this cannot be attributed to an expansion of the vaccine-specific TCR\u03b2 clonotypes found at day 0 but rather the recruitment of new TCR\u03b2 clonotypes, as visualized for one vaccinee in Figure 2C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2C and Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "254f3e22-e695-42fb-9be8-01d2261089dd",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C30",
+      "claim": "There is a difference in HBsAg-specific TCR\u03b2 at day 60 between the three groups (ANOVA p-value = 0.00238).",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis, it can be concluded that there is a difference in HBsAg-specific TCR\u03b2 at day 60 between the three groups (Figure 2D) (ANOVA p-value = 0.00238).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2D and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "19d3aa30-a47b-4e4e-902e-3b8528a13e6c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C31",
+      "claim": "Early-converters have a higher relative frequency of vaccine-specific TCR\u03b2 sequences present in their memory CD4 T cell repertoire at day 60 compared to vaccinees from the two other groups in the cohort (Wilcoxon test p-value = 0.000473).",
+      "claim_type": "EXPLICIT",
+      "source": "A Wilcoxon test between early-converters and other vaccinees shows a significant p-value of 0.000473, indicating that early-converters have a higher relative frequency of vaccine-specific TCR\u03b2 sequences present in their memory CD4 T cell repertoire at day 60 compared to vaccinees from the two other groups in the cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "ab9e517a-c24a-4188-b4e2-4194b7cdfafd",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C32",
+      "claim": "Vaccine-specific TCR\u03b2 sequences increased in breadth following vaccination in early-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, vaccine-specific TCR\u03b2 sequences increased in breadth following vaccination in early-converters and constituted a significantly higher proportion of the memory CD4 T cell compartment post-vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 2B and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "93dbd1ae-1462-4f8b-a7a7-f9b58da8ed48",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C33",
+      "claim": "Vaccine-specific TCR\u03b2 sequences constituted a significantly higher proportion of the memory CD4 T cell compartment post-vaccination in early-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, vaccine-specific TCR\u03b2 sequences increased in breadth following vaccination in early-converters and constituted a significantly higher proportion of the memory CD4 T cell compartment post-vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "248c6d72-0b14-49d2-9995-bb1d5d6ec211",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C34",
+      "claim": "TCR\u03b2 sequences were identified for T cells reactive against 44 single HBsAg peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, TCR\u03b2 sequences were identified for T cells reactive against 44 single HBsAg peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the epitope mapping experiments described in the methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "e02a7fa6-584b-4cc2-9907-55fff84f8a90",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C35",
+      "claim": "The most prominent epitopes covering the regions 1\u201315, 129\u2013144, 149\u2013164, 161\u2013176, 181\u2013200, 213\u2013228 had more than 10 individuals with a strong T cell response and more than 150 unique TCR\u03b2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of those regions, more than 10 individuals had a strong T cell response and more than 150 unique TCR\u03b2 sequences could be identified (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "3668ec91-5fe8-4486-a9db-cf29197c3820",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C36",
+      "claim": "The ratio Rhbs shows a significant difference between early- and the late-converters at day 60 (one-sided Wilcoxon-test p-value = 0.0313).",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of these two terms Rhbs therefore shows a significant difference between early- and the late-converters at day 60 (one-sided Wilcoxon-test p-value = 0.0313, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3C and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "779ea8bd-0695-4e01-a6f6-cc090b840e6d",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C37",
+      "claim": "Searching for HBsAg peptide-specific clonotypes in the memory repertoires prior to vaccination (day 0) results in a Rhbs with a significant difference between early- and late-converters (one-sided Wilcoxon-test p-value = 0.0010).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, searching for HBsAg peptide-specific clonotypes in the memory repertoires prior to vaccination (day 0) results in a Rhbs with a similar difference (one-sided Wilcoxon-test p-value = 0.0010, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3D and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "08faf359-c975-464c-b916-60169d0a35d6",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C38",
+      "claim": "The presence of HBsAg peptide-specific clonotypes as defined by the ratio Rhbs can be used as a classifier to distinguish early- from late-converters prior to vaccination with an area under the curve (AUC) of 0.825 (95% CI: 0.657\u20130.994).",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, the presence of HBsAg peptide-specific clonotypes as defined by the ratio Rhbs can be used as a classifier to distinguish early- from late-converters prior to vaccination (Figure 3E), with an area under the curve (AUC) of 0.825 (95% CI: 0.657\u20130.994) in a leave-one-out cross-validation setting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "ca369a89-4015-4db7-a8c0-bb4fd6aad134",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C39",
+      "claim": "A significant increase in the frequency of vaccine-specific CD40L+4-1BB\u2212 memory CD4 T cells at day 60 was detected in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a significant increase in the frequency of vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells at day 60 in our cohort (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "1d0bb988-94a1-4ed0-9488-6b59cf8c0dd3",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C40",
+      "claim": "A significant increase in the frequency of vaccine-specific CD40L\u22124-1BB+ memory CD4 T cells at day 60 was detected in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a significant increase in the frequency of vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells at day 60 in our cohort (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "8d189e68-3c54-443f-84b1-2035419a5565",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C41",
+      "claim": "The frequency of vaccine-specific CD40L+4-1BB\u2212 memory CD4 T cells at day 60 correlated positively with the increase in antibody titer between day 0 and day 365.",
+      "claim_type": "EXPLICIT",
+      "source": "that correlated positively with the increase in antibody titer between day 0 and day 365 (Figure 4B, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "c2d85d86-5aa9-441e-a1b1-3a870799d1f2",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C42",
+      "claim": "The frequency of vaccine-specific CD40L\u22124-1BB+ memory CD4 T cells at day 60 correlated positively with the increase in antibody titer between day 0 and day 365.",
+      "claim_type": "EXPLICIT",
+      "source": "that correlated positively with the increase in antibody titer between day 0 and day 365 (Figure 4B, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "4178dbec-26e1-4a73-af5d-674bf77b97fa",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C43",
+      "claim": "The induction of both signatures of vaccine-specific memory CD4 T cells was only true for early-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon a closer look, the induction of both signatures of vaccine-specific memory CD4 T cells was only true for early-converters (Figure 4C, see Figure 4\u2014figure supplement 4A for non-converters and Figure 4\u2014figure supplement 4B for vaccine-specific CD4 T cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4C and Figure 4\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "efd13f0e-208d-4ad9-bc41-986433dde515",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C44",
+      "claim": "Late-converters did not show a detectable memory CD4 T cell response.",
+      "claim_type": "EXPLICIT",
+      "source": "Late-converters did not show a detectable memory CD4 T cell response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "66372298-ae33-4696-a0e0-e93eb770259f",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C45",
+      "claim": "No significant differences in the frequencies of CD40L+4-1BB\u2212 memory CD4 T cells between early- and late-converters at day 0 were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a subset of both early- and late-converters had detectable memory CD4 T cell responses prior to vaccination, we observed no significant differences in the frequencies of CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells between the two groups at day 0 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "187acb05-4118-4fe6-ad3f-cc0b6037ecc1",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C46",
+      "claim": "No significant differences in the frequencies of CD40L\u22124-1BB+ memory CD4 T cells between early- and late-converters at day 0 were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a subset of both early- and late-converters had detectable memory CD4 T cell responses prior to vaccination, we observed no significant differences in the frequencies of CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells between the two groups at day 0 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "93357cad-43c5-4201-9361-7e4dfe558fe1",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C47",
+      "claim": "The Rhbs metric is a good predictor for HBsAg-specific memory CD4 T cells with a TCON signature identified at day 60 post-vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicate that the Rhbs metric is a good predictor for HBsAg-specific memory CD4 T cells with a TCON signature (but not TREG signature) identified at day 60 post-vaccination (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "4825104f-7a77-4e6a-95ac-ef96b9d3e93f",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C48",
+      "claim": "The Rhbs metric is not a good predictor for HBsAg-specific memory CD4 T cells with a TREG signature identified at day 60 post-vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicate that the Rhbs metric is a good predictor for HBsAg-specific memory CD4 T cells with a TCON signature (but not TREG signature) identified at day 60 post-vaccination (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "1613715c-478f-46a1-a0cd-7910ed0ea80d",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C49",
+      "claim": "The classifier is less performant for the prediction of CD4 T cell response at later time points (days 180 and 365).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the classifier is less performant for the prediction of CD4 T cell response at later time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "e8229dd6-bacd-4a14-b8ae-0ad591bde732",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C50",
+      "claim": "A significantly higher frequency of 4-1BB+ CD45RA\u2212 TREG cells in late-converters compared to early-converters was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Using manual gating in which regulatory T cells (TREG) were defined as viable CD3+CD4+CD8\u2212CD25+CD127\u2212CXCR5\u2212 and were further divided into CD45RA+ and CD45RA\u2212 TREG cells, we identified a significantly higher frequency of 4-1BB+ CD45RA\u2212 TREG cells in late-converters compared to early-converters (Figure 5A and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5A and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "1fbcbb60-e266-42d4-a726-d00a6bdb8847",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C51",
+      "claim": "TREG cells showed higher 4-1BB expression compared to TH, cTFH, and cTFR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TREG cells showed higher 4-1BB expression compared to TH, cTFH, and cTFR cells (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "15494e5f-83c8-4792-8c7b-2d2e9d19e412",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C52",
+      "claim": "Within TREG subset, CD45RA\u2212 TREG cells showed significantly higher expression of 4-1BB compared to CD45RA+ TREG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and within TREG subset, CD45RA\u2212 TREG cells showed significantly higher expression of 4-1BB, accompanied with a higher expression of CD25, compared to CD45RA+ TREG cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "d0e79dbc-dafa-412a-96dd-afc66e135bc0",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C53",
+      "claim": "CD45RA\u2212 TREG cells showed higher expression of CD25 compared to CD45RA+ TREG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and within TREG subset, CD45RA\u2212 TREG cells showed significantly higher expression of 4-1BB, accompanied with a higher expression of CD25, compared to CD45RA+ TREG cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "d0ae1803-f5ba-48fe-8e54-f6640c6d9471",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C54",
+      "claim": "No differences were detected in the frequency of CD45RA\u2212 or CD45RA+ TREG cells within CD4 T cell compartment between early- and late-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting here that no differences were detected in the frequency of CD45RA\u2212 or CD45RA+ TREG cells within CD4 T cell compartment between the two groups (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "71aac781-a9c5-4f88-a230-6a4f5d8ff01c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C55",
+      "claim": "It is the composition of TREG compartment that is distinct between early- and late-converters.",
+      "claim_type": "EXPLICIT",
+      "source": "and that it is the composition of TREG compartment that is distinct between the two groups (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "968e4ca9-75fb-45a7-9bd2-95e8948cae97",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C56",
+      "claim": "An expanded subset of 4-1BB+CD45RA\u2212 TREG cells pre-vaccination is a prominent feature of a delayed and modest immune response to HB vaccine in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, an expanded subset of 4-1BB+CD45RA\u2212 TREG cells pre-vaccination is a prominent feature of a delayed and modest immune response to HB vaccine in our cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5A and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "c6f8d2ee-0b3b-45f6-9e6f-b2d7d083a9ca",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C57",
+      "claim": "Preexisting memory CD4 T cell TCR\u03b2 sequences specific to HBsAg predict which individuals will mount an early and more vigorous immune response to the vaccine as evidenced by a higher fold change in anti-HBs antibody titer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systems immunology data supports the theory that preexisting memory CD4 T cell TCR\u03b2 sequences specific to HBsAg, the antigenic component of the current HB vaccine, predict which individuals will mount an early and more vigorous immune response to the vaccine as evidenced by a higher fold change in anti-HBs antibody titer and a more significant induction of antigen-specific CD4 T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "86d2521c-ef63-40d6-a81b-4a9db105f5ba",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C58",
+      "claim": "Preexisting memory CD4 T cell TCR\u03b2 sequences specific to HBsAg predict which individuals will mount an early and more vigorous immune response to the vaccine as evidenced by a more significant induction of antigen-specific CD4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systems immunology data supports the theory that preexisting memory CD4 T cell TCR\u03b2 sequences specific to HBsAg, the antigenic component of the current HB vaccine, predict which individuals will mount an early and more vigorous immune response to the vaccine as evidenced by a higher fold change in anti-HBs antibody titer and a more significant induction of antigen-specific CD4 T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "ac2c9ecf-f586-475e-9dd7-50001bbfc095",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C59",
+      "claim": "Preexisting memory CD4 T cell clonotypes are generated due to the highly degenerate nature of T cell recognition of antigen/MHC and are cross-reactive to environmental antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "It is postulated that preexisting memory CD4 T cell clonotypes are generated due to the highly degenerate nature of T cell recognition of antigen/MHC and are cross-reactive to environmental antigens (Sewell, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sewell, 2012.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "fe81d64a-f619-410b-920d-81b92bead93a",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C60",
+      "claim": "Preexisting memory CD4 T cells are well-established in unexposed HIV-seronegative individuals, although at a significantly lower magnitude than HIV-exposed seronegative individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, preexisting memory CD4 T cells are well-established in unexposed HIV-seronegative individuals, although at a significantly lower magnitude than HIV-exposed seronegative individuals (Campion et al., 2014; Ritchie et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Campion et al., 2014 and Ritchie et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "358fbbe5-4b38-4e7c-9adf-ba809dd02f47",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C61",
+      "claim": "Preexisting memory CD4 T cells in HIV-seronegative individuals were likely primed by exposure to environmental triggers or the human microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "and were likely primed by exposure to environmental triggers or the human microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the origin of preexisting memory CD4 T cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "a6a2fb6f-f395-4c0b-929d-feffb9c7b8a0",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C62",
+      "claim": "The TCR\u03b2 repertoire of CD4 T cells encodes the antigen exposure history of each individual.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown before that the TCR\u03b2 repertoire of CD4 T cells encodes the antigen exposure history of each individual and that antigen-specific TCR\u03b2 sequences could serve to automatically annotate the infection or exposure history (DeWitt et al., 2018; Emerson et al., 2017; De Neuter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to DeWitt et al., 2018; Emerson et al., 2017; De Neuter et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "66460390-0f8e-4acb-ab86-4458eff05214",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C63",
+      "claim": "Antigen-specific TCR\u03b2 sequences could serve to automatically annotate the infection or exposure history.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown before that the TCR\u03b2 repertoire of CD4 T cells encodes the antigen exposure history of each individual and that antigen-specific TCR\u03b2 sequences could serve to automatically annotate the infection or exposure history (DeWitt et al., 2018; Emerson et al., 2017; De Neuter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to DeWitt et al., 2018; Emerson et al., 2017; De Neuter et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "9f4665bc-6b66-4222-82a2-b76d288b1513",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C64",
+      "claim": "The recruitment of novel vaccine-specific T cell clonotypes into memory compartment following vaccination can be tracked by examining the CD4 memory TCR\u03b2 repertoire over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the recruitment of novel vaccine-specific T cell clonotypes into memory compartment following vaccination can be tracked by examining the CD4 memory TCR\u03b2 repertoire over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "6930ab1a-012e-4ad7-9921-aabe6edba855",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C65",
+      "claim": "No increase in the frequency of the vaccine-specific memory T cells was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed no increase in the frequency of the vaccine-specific memory T cells, as the time point may have missed the peak of the clonal expansion of effector CD4 T cells as was reported before (Blom et al., 2013; Kohler et al., 2012; Pogorelyy et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2\u2014figure supplement 1E and citations to Blom et al., 2013; Kohler et al., 2012; Pogorelyy et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "8774763b-a940-4e74-8f4c-f788a29f1f8b",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C66",
+      "claim": "A significant rise in the number of unique vaccine-specific T cell clonotypes was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "a significant rise in the number of unique vaccine-specific T cell clonotypes was detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "a0636970-bb64-45f0-b9a6-dd401307a87b",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C67",
+      "claim": "Antigen-specific TCR\u03b2 sequences do not always overlap with those sequences that increase in frequency after infection or vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with earlier studies of T cell immune repertoire that showed that antigen-specific TCR\u03b2 sequences do not always overlap with those sequences that increase in frequency after infection or vaccination (DeWitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to DeWitt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "8fac4e03-dc5d-4239-a88c-0c7c54cf215f",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C68",
+      "claim": "Individuals with the earlier and more robust response against the vaccine had a telltale antigen-specific signature in their memory TCR\u03b2 repertoire prior to vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, individuals with the earlier and more robust response against the vaccine had a telltale antigen-specific signature in their memory TCR\u03b2 repertoire prior to vaccination, despite the lack of HBsAg antibodies and prior vaccination history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "d29d2651-f68d-4f7e-9cb7-097d896cd1c7",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C69",
+      "claim": "CD40L+4-1BB\u2212 CD4 T cells have a CD25lowCD127high phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the converse expression of CD40L and 4-1BB, CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ CD4 T cells have a CD25lowCD127high and CD25highCD127low phenotype, respectively (Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "9b429112-55b1-4ada-bfcb-43b140224226",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C70",
+      "claim": "CD40L\u22124-1BB+ CD4 T cells have a CD25highCD127low phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the converse expression of CD40L and 4-1BB, CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ CD4 T cells have a CD25lowCD127high and CD25highCD127low phenotype, respectively (Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "5d227292-eafd-45dc-be46-a54ace55ef2c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C71",
+      "claim": "The converse expression of CD40L and 4-1BB validates their use for the distinction of activated TCON and TREG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and validate their use for the distinction of activated TCON and TREG cells as described before (Schoenbrunn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4\u2014figure supplement 2 and citation to Schoenbrunn et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "bb122b69-6930-488b-88b8-2dd12758ed9b",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C72",
+      "claim": "Commercially available HBV vaccines produce a robust and long-lasting anti-HBs response.",
+      "claim_type": "EXPLICIT",
+      "source": "Commercially available HBV vaccines produce a robust and long-lasting anti-HBs response, and protection is provided by induction of an anti-HBs (antibody against HBV surface antigen) titer higher than 10 mIU/ml after a complete immunization schedule of three doses (Meireles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Meireles et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "e13926b7-ff8b-47d4-ad18-8ad98bbe18cd",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C73",
+      "claim": "5\u201310% of healthy adult vaccinees fail to produce protective titers of anti-HBs and can be classified as non-responders.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 5\u201310% of healthy adult vaccinees fail to produce protective titers of anti-HBs and can be classified as non-responders (Meireles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Meireles et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "2f8ee26e-6d0e-4ecb-b457-526b6ab8302c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C74",
+      "claim": "In the cohort, 13 vaccinees did not seroconvert by day 60.",
+      "claim_type": "EXPLICIT",
+      "source": "In our cohort, 13 vaccinees did not seroconvert by day 60 (30 days following administration of the second vaccine dose), as determined by antibody titer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "f72e680f-a05d-4229-b0cc-cf1706aeabe9",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C75",
+      "claim": "TREG cells represent about 5\u201310% of human CD4 T cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "TREG cells represent about 5\u201310% of human CD4 T cell compartment and are identified by the constitutive surface expression of CD25, also known as IL-2 receptor \u03b1 subunit (IL-2Ra), and the nuclear expression of forkhead family transcription factor 3 (Foxp3), a lineage specification factor of TREG cells (Rudensky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rudensky, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "90d30294-5983-4dc4-b14d-887488e5675c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C76",
+      "claim": "TREG cells are identified by the constitutive surface expression of CD25 and the nuclear expression of Foxp3.",
+      "claim_type": "EXPLICIT",
+      "source": "TREG cells represent about 5\u201310% of human CD4 T cell compartment and are identified by the constitutive surface expression of CD25, also known as IL-2 receptor \u03b1 subunit (IL-2Ra), and the nuclear expression of forkhead family transcription factor 3 (Foxp3), a lineage specification factor of TREG cells (Rudensky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rudensky, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "fcdbdec3-76df-4529-8cf6-99ba1d3a2791",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C77",
+      "claim": "Foxp3 is a lineage specification factor of TREG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TREG cells represent about 5\u201310% of human CD4 T cell compartment and are identified by the constitutive surface expression of CD25, also known as IL-2 receptor \u03b1 subunit (IL-2Ra), and the nuclear expression of forkhead family transcription factor 3 (Foxp3), a lineage specification factor of TREG cells (Rudensky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rudensky, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "c02435c6-a66f-4f7a-a3cd-91616d601be3",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C78",
+      "claim": "Activated TREG cells constitute a minority subset within cord blood TREG cells and increase gradually with age.",
+      "claim_type": "EXPLICIT",
+      "source": "They further noted that activated TREG cells constitute a minority subset within cord blood TREG cells and increase gradually with age (Miyara et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Miyara et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "a53ac222-77a9-4364-afad-ca784bebd9e5",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C79",
+      "claim": "Activated TREG cells have an increased expression of proteins indicative of activation, including ICOS and HLA-DR.",
+      "claim_type": "EXPLICIT",
+      "source": "As activated TREG cells were shown to have an increased expression of proteins indicative of activation, including ICOS and HLA-DR (Booth et al., 2010; Ito et al., 2008; Mason et al., 2015; Miyara et al., 2009; Mohr et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Booth et al., 2010; Ito et al., 2008; Mason et al., 2015; Miyara et al., 2009; Mohr et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "a6fab05b-7ab1-46a6-a219-3e2b8cc5a791",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C80",
+      "claim": "TREG cells in mice modulate TFH formation and germinal center (GC) B cell responses and diminish antibody production in a CTLA-4 mediated suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TREG cells in mice were shown to modulate TFH formation and germinal center (GC) B cell responses and to diminish antibody production in a CTLA-4 mediated suppression (Wing et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wing et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "06d5a60d-204c-49c0-937c-cfeab789f3b9",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C81",
+      "claim": "CD45RA\u2212 TREG cells are more rich in preformed CTLA-4 stored in intracellular vesicles compared to CD45RA+ TREG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CD45RA\u2212 TREG cells were shown to be more rich in preformed CTLA-4 stored in intracellular vesicles compared to CD45RA+ TREG cells (Miyara et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Miyara et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "4182d29e-05c0-430c-a927-996b03afb0af",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C82",
+      "claim": "4-1BB is constitutively expressed by TREG cells.",
+      "claim_type": "EXPLICIT",
+      "source": "4-1BB was shown to be constitutively expressed by TREG cells (McHugh et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McHugh et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "7ee7e5d0-0449-4ce5-a495-5083bdebb8ba",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C83",
+      "claim": "4-1BB+ TREG cells are functionally superior to 4-1BB\u2212 TREG cells in both contact-dependent and contact-independent immunosuppression.",
+      "claim_type": "EXPLICIT",
+      "source": "and that 4-1BB+ TREG cells are functionally superior to 4-1BB\u2212 TREG cells in both contact-dependent and contact-independent immunosuppression (Kachapati et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kachapati et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "c5d002cd-a994-4021-ab8f-fba3cd5bc7f4",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C84",
+      "claim": "4-1BB+ TREG cells are the major producers of the alternatively spliced and soluble isoform of 4-1BB among T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "4-1BB+ TREG cells are the major producers of the alternatively spliced and soluble isoform of 4-1BB among T cells (Kachapati et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kachapati et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "278e855c-c106-4992-988f-4bc9a0f71d33",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C85",
+      "claim": "4-1BB is preferentially expressed on TREG cells compared with other non-regulatory CD4 T cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "4-1BB was shown before to be preferentially expressed on TREG cells compared with other non-regulatory CD4 T cell subsets (McHugh et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McHugh et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "7d6cd7d5-cc69-4d37-8a43-766690a16b7a",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C86",
+      "claim": "4-1BB-costimulation induces the expansion of TREG cells both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "and that 4-1BB-costimualtion induces the expansion of TREG cells both in vitro and in vivo (Zheng et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zheng et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "e4322bd1-b991-4909-bec7-f0fa2c435dee",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C87",
+      "claim": "Agonistic anti-4-1BB mAbs abrogate T cell-dependent antibody responses in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, agonistic anti-4-1BB mAbs have been shown to abrogate T cell-dependent antibody responses in vivo (Mittler et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mittler et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "263b5ccd-f0c5-49df-972d-b0f7869f8a2c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C88",
+      "claim": "Agonistic anti-4-1BB mAbs ameliorate experimental autoimmune encephalomyelitis by skewing the balance against TH17 differentiation in favor of TREG differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and to ameliorate experimental autoimmune encephalomyelitis by skewing the balance against TH17 differentiation in favor of TREG differentiation (Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kim et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "46974162-48f9-4d47-9e47-7bb64170d6eb",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C89",
+      "claim": "A role for the microbiota in modulating immunity to viral infection was suggested in 1960s.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for the microbiota in modulating immunity to viral infection was suggested in 1960s (Robinson and Pfeiffer, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Robinson and Pfeiffer, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "725b2c8b-115f-4b81-9310-6324ddf21803",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C90",
+      "claim": "Young mice that have not reached an equilibrium in the gut microbiota exhibited prolonged HBsAg persistence, impaired anti-HBs antibody production, and limited HBcAg-specific IFN\u03b3+ splenocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, young mice that have not reached an equilibrium in the gut microbiota exhibited prolonged HBsAg persistence, impaired anti-HBs antibody production, and limited Hepatitis B core antigen (HBcAg)-specific IFN\u03b3+ splenocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chou et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "88ce0328-ab89-4146-b259-6d2ffa0b39da",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C91",
+      "claim": "The commensal microbiota plays a critical role in supporting the differentiation of GC B cells, through follicular T helper (TFH) cells, to promote the anti-HBV humoral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Tingxin et al. provided evidence for a critical role of the commensal microbiota in supporting the differentiation of GC B cells, through follicular T helper (TFH) cells, to promote the anti-HBV humoral immunity (Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "2a242659-e8fc-4852-aed9-b05e776ae1ad",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C92",
+      "claim": "A total of 34 healthy individuals without a history of HBV infection or previous HB vaccination were recruited in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34 healthy individuals (20-29 years: 10, 30-39 years: 7, 40-49 years: 16, 50+ years: 1) without a history of HBV infection or previous HB vaccination were recruited in this study after obtaining written informed consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "e90199a4-4e85-41ce-a652-1194db52bf15",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "claim_id": "C93",
+      "claim": "Individuals were vaccinated with Engerix-B containing 20 \u03bcg dose of alum-adjuvanted HBsAg on days 0 and 30.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals were vaccinated with an HB vaccine by intramuscular (m. deltoideus) injection (Engerix-B containing 20 \u03bcg dose of alum-adjuvanted HBsAg, GlaxoSmithKline) on days 0 and 30 (and on day 365).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the vaccination protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "47c6cb29-e251-4c6e-bc3f-5bb6411b17d8",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cohort of 34 vaccinees was classified into three groups based on anti-HBs antibody titers: 21 early-converters (seroconverted at day 60), 9 late-converters (seroconverted at day 180 or 365), and 4 non-converters (did not reach protective titers). A protective titer was defined as >10 IU/ml.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 provide clear classification criteria and counts for the three groups, supported by Figure 1 and Figure 1\u2014figure supplement 1A. The protective threshold is appropriately cited (Keating and Noble, 2003). The classification is straightforward and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "b4adb6a3-6004-461a-87e6-6609fcbf43e8",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "No significant differences in CMV, EBV, or HSV seropositivity were found between the three groups. Early-converters were slightly younger than late-converters, and non-converters were notably younger than both other groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by data in Figure 1\u2014figure supplement 1B and 1C. However, the age differences (C17, C18) raise concerns about potential confounding, as age could influence vaccine response. The authors do perform age-matched analysis later (Figure 3F), which partially addresses this concern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "12ebb7f9-3f76-4dc1-9e57-1f2fafdf9c9c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TCR\u03b2 sequencing of memory CD4 T cells yielded 4.54\u00d710^4 to 3.92\u00d710^5 productive reads and 30,000-90,000 unique sequences per vaccinee per timepoint. Less than 20% of sequences were shared between timepoints. Overall repertoire diversity (breadth and Shannon equitability) was not impacted by vaccination at day 60.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 are supported by Figure 2\u2014figure supplement 1A-C and Figure 2A. The low overlap between timepoints (C21) is expected given CD4 T cell repertoire diversity. The lack of overall repertoire perturbation (C22) is consistent with a focused vaccine response affecting only a small fraction of the repertoire.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HBsAg-specific TCR\u03b2 sequences increased significantly in breadth at day 60 (mean 107.9% increase) compared to VZV baseline control. Early-converters showed the largest increase (151.9%), non-converters showed moderate increase (67.6%), while late-converters showed no significant increase (18.8%). This increase was due to recruitment of new clonotypes rather than expansion of preexisting ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 are well-supported by Figure 2B, 2C, and Figure 2\u2014figure supplement 1D-E. The use of VZV as a negative control (C24) is appropriate. The distinction between breadth increase and frequency expansion (C28, C29) is important and supported by the data. Statistical tests with appropriate corrections are reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "a614486d-cf56-49a2-92d9-8167bf0aec5c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "At day 60, there was a significant difference in HBsAg-specific TCR\u03b2 between groups (ANOVA p=0.00238). Early-converters had a higher relative frequency of vaccine-specific TCR\u03b2 sequences in their memory repertoire compared to other groups (Wilcoxon p=0.000473). Vaccine-specific TCR\u03b2 sequences increased in breadth and constituted a higher proportion of the memory compartment in early-converters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by Figure 2D and statistical analyses. The use of overlap coefficient for between-subject comparison (C30) is appropriate. The findings consistently show early-converters have more robust TCR responses post-vaccination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "6d1c129f-833f-4fb6-96d3-732b832b9183",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TCR\u03b2 sequences were identified for 44 single HBsAg peptides through epitope mapping. Six prominent epitope regions had >10 responding individuals and >150 unique TCR\u03b2 sequences. A predictive ratio (Rhbs) based on these sequences showed significant differences between early- and late-converters at both day 60 (p=0.0313) and day 0 (p=0.0010), and could classify early- vs late-converters prior to vaccination with AUC=0.825.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by Figure 3A-E and detailed methods. The predictive model is innovative and the leave-one-out cross-validation is appropriate. However, the model's performance on non-converters is acknowledged as problematic (one outlier, H21). The AUC of 0.825 indicates good but not excellent predictive power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Vaccine-specific CD40L+4-1BB\u2212 and CD40L\u22124-1BB+ memory CD4 T cells increased significantly at day 60 and correlated positively with antibody titer increase. This induction was only observed in early-converters; late-converters showed no detectable memory CD4 T cell response. No significant differences in these cell frequencies were observed between early- and late-converters at day 0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C46 are supported by Figure 4A-D. However, there is a notable discrepancy: the TCR\u03b2 data (C37, C38) show predictive differences at day 0, but the flow cytometry assay (C45, C46) does not detect differences at day 0. The authors acknowledge this limitation, suggesting the signal may be below detection limits of the flow cytometry assay. This inconsistency weakens the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "2711a67e-9ec0-441d-97c6-795558d872ac",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Rhbs metric from day 0 is a good predictor for HBsAg-specific memory CD4 T cells with TCON signature (CD40L+4-1BB\u2212) at day 60, but not for TREG signature (CD40L\u22124-1BB+). The classifier is less performant for predicting CD4 T cell responses at later timepoints (days 180 and 365).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by Figure 4E-F. The differential predictive capacity for TCON vs TREG signatures is interesting and suggests different mechanisms. The reduced performance at later timepoints is acknowledged and may reflect evolving immune dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Late-converters had a significantly higher frequency of 4-1BB+CD45RA\u2212 TREG cells compared to early-converters prior to vaccination. TREG cells showed higher 4-1BB expression than other CD4 subsets, and CD45RA\u2212 TREG showed higher 4-1BB and CD25 expression than CD45RA+ TREG. The overall frequency of TREG subsets did not differ between groups, but the composition (specifically the 4-1BB+CD45RA\u2212 subset) was distinct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 are supported by Figure 5A-E and Figure 5\u2014figure supplement 1. The finding is novel and potentially important for understanding vaccine non-responsiveness. The characterization is thorough with appropriate markers. However, functional studies demonstrating that these cells actually suppress vaccine responses are lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "dac74b4d-d89f-44b2-971c-4f95d0abf4f0",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CD40L+4-1BB\u2212 CD4 T cells have a CD25low CD127high phenotype, while CD40L\u22124-1BB+ CD4 T cells have a CD25high CD127low phenotype, validating their use for distinguishing activated TCON and TREG cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by Figure 4\u2014figure supplement 2 and citation to Schoenbrunn et al., 2012. This validation is important for interpreting the flow cytometry results and confirms the markers are appropriate for the intended cell populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "25840c43-11d4-478f-a5ef-36330cbbd0b7",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Individuals with preexisting vaccine-reactive memory CD4 T cell clonotypes elicited earlier and higher antibody titers and mounted a more robust CD4 T cell response to hepatitis B vaccine. TCR\u03b2 sequence patterns integrated into an epitope-specific model can predict which individuals will have early and vigorous vaccine-elicited immunity. Preexisting memory T cell clonotypes have significant impact on immunity and can predict vaccine responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 and C57-C58 represent the main conclusions of the study. They are supported by the collective evidence from TCR\u03b2 sequencing (C23-C38), flow cytometry (C39-C46), and predictive modeling (C38, C47). However, the discrepancy between TCR\u03b2 predictions and flow cytometry detection at day 0 (C45-C46) introduces some uncertainty. The predictive model shows good but not perfect performance (AUC=0.825).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "e4b6a157-906b-4684-b71c-a77fa3794309",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Preexisting memory CD4 T cell clonotypes are postulated to be generated through cross-reactivity to environmental antigens due to degenerate T cell recognition. Similar preexisting memory CD4 T cells have been documented in HIV-seronegative individuals, likely primed by environmental triggers or the microbiome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are appropriately cited to prior literature (Sewell 2012; Campion et al. 2014; Ritchie et al. 2011). These are background claims establishing the plausibility of the findings. C59 and C61 are speculative but reasonable hypotheses supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The TCR\u03b2 repertoire encodes antigen exposure history and can annotate infection history. Novel vaccine-specific T cell clonotypes can be tracked in the memory compartment over time. While frequency of vaccine-specific memory T cells did not increase (possibly due to timing), the number of unique vaccine-specific clonotypes increased significantly. Individuals with earlier responses had a telltale antigen-specific signature in their memory TCR\u03b2 repertoire prior to vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 are supported by appropriate citations and the experimental data. The distinction between frequency and breadth (C65-C66) is important and well-explained. The authors appropriately acknowledge that the day 60 timepoint may have missed peak expansion (C65), citing relevant literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "3604015f-2593-4d0c-916d-36add90b678c",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on TREG cells: they represent 5-10% of CD4 T cells, are identified by CD25 and Foxp3 expression, and CD45RA\u2212 TREG are activated cells that increase with age. These cells express activation markers including ICOS, HLA-DR, and 4-1BB. TREG cells can modulate TFH and germinal center responses, and 4-1BB+ TREG are functionally superior suppressors. Agonistic anti-4-1BB antibodies can abrogate antibody responses and promote TREG differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C88 are background information appropriately cited to established literature. These claims provide context for interpreting the TREG findings (C50-C56) and suggest potential mechanisms by which expanded 4-1BB+ TREG might suppress vaccine responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "5dc21175-05e1-46bf-bb29-4c6621598928",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The microbiota has been implicated in modulating immunity to viral infection since the 1960s. Studies in mice show that gut microbiota equilibrium affects HBV clearance and antibody production, and the commensal microbiota supports germinal center B cell differentiation through TFH cells to promote anti-HBV humoral immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 are appropriately cited background information (Robinson and Pfeiffer 2014; Chou et al. 2015; Wu et al. 2019). These claims provide context for potential mechanisms underlying preexisting memory T cells, though the current study does not directly investigate microbiome contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "db004302-dd9d-439c-873a-1ad83ecc7119",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on T cell receptor biology: TCR\u03b1\u03b2 heterodimer recognition of peptide-MHC is a primary determinant of adaptive immunity. Vaccines activate na\u00efve T cells to differentiate into memory cells. However, antigen-specific memory CD4 T cells exist in unexposed hosts. TCR diversity is generated through V(D)J recombination at CDR3 regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C11 are well-established background information appropriately cited to the literature (Rudolph et al. 2006; Su et al. 2013; Sewell 2012; Krangel 2009). These provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "331885ad-31eb-4139-9d7a-fd4ac8e1ef6b",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Commercially available HBV vaccines produce robust anti-HBs responses with protection at titers >10 mIU/ml after three doses. However, 5-10% of healthy adults fail to produce protective titers (non-responders). In this cohort, 13 vaccinees did not seroconvert by day 60.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by citation (Meireles et al. 2015) and the study data. This provides important context for the observed heterogeneity in vaccine responses and justifies the study's focus on understanding differential responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    },
+    {
+      "id": "d8aac27b-4857-482f-9c2a-9988cc2380ec",
+      "content_id": "dacd936d-27ca-483c-a0ef-e072180b317d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Study design: 34 healthy individuals without HBV infection history or prior vaccination were recruited and vaccinated with Engerix-B (20 \u03bcg alum-adjuvanted HBsAg) on days 0 and 30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 describe the study cohort and vaccination protocol. These are straightforward methodological details that are clearly documented. The cohort size is modest (n=34) which may limit statistical power for some analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:30:22.928969Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "73f089e2-d4a4-4c6d-a298-60d8e58efed0",
+      "result_id": "47c6cb29-e251-4c6e-bc3f-5bb6411b17d8"
+    },
+    {
+      "claim_id": "4f14d6b5-4601-4bde-95b1-c0cf092b1523",
+      "result_id": "47c6cb29-e251-4c6e-bc3f-5bb6411b17d8"
+    },
+    {
+      "claim_id": "257ee3bf-aae9-4aaf-baba-9c666a429478",
+      "result_id": "47c6cb29-e251-4c6e-bc3f-5bb6411b17d8"
+    },
+    {
+      "claim_id": "c95080d1-b7d6-410e-b9f3-f8982fbcb3a2",
+      "result_id": "47c6cb29-e251-4c6e-bc3f-5bb6411b17d8"
+    },
+    {
+      "claim_id": "8a35e293-30f2-484a-9ea2-27d94ff768ca",
+      "result_id": "b4adb6a3-6004-461a-87e6-6609fcbf43e8"
+    },
+    {
+      "claim_id": "d4cd1494-4eee-4f3b-89c4-e5fdfe1921c5",
+      "result_id": "b4adb6a3-6004-461a-87e6-6609fcbf43e8"
+    },
+    {
+      "claim_id": "eebf5272-fbff-4671-8dfe-ca1cf830760d",
+      "result_id": "b4adb6a3-6004-461a-87e6-6609fcbf43e8"
+    },
+    {
+      "claim_id": "0b0c5de1-593e-4bcb-9ba5-a0eac892f86c",
+      "result_id": "12ebb7f9-3f76-4dc1-9e57-1f2fafdf9c9c"
+    },
+    {
+      "claim_id": "02547255-c027-4e25-acfb-6f783991826b",
+      "result_id": "12ebb7f9-3f76-4dc1-9e57-1f2fafdf9c9c"
+    },
+    {
+      "claim_id": "af45b7c6-46c5-40b4-9eb8-2da0b8cf5421",
+      "result_id": "12ebb7f9-3f76-4dc1-9e57-1f2fafdf9c9c"
+    },
+    {
+      "claim_id": "4903f587-6ed1-4dcf-87df-8dcf162e70aa",
+      "result_id": "12ebb7f9-3f76-4dc1-9e57-1f2fafdf9c9c"
+    },
+    {
+      "claim_id": "97d120dd-7ef4-4596-831a-6ff1897bf88e",
+      "result_id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614"
+    },
+    {
+      "claim_id": "8093cfe9-dd80-4a01-9636-41e552503373",
+      "result_id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614"
+    },
+    {
+      "claim_id": "3c540032-f94b-466c-99ad-cd149c299f72",
+      "result_id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614"
+    },
+    {
+      "claim_id": "9f6de7da-6184-407f-8b7e-d3adf172b104",
+      "result_id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614"
+    },
+    {
+      "claim_id": "36b7f705-d76f-441d-aeaa-f8ed6a10ec3a",
+      "result_id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614"
+    },
+    {
+      "claim_id": "7e887ac2-3741-4fd7-9002-a9a5023be200",
+      "result_id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614"
+    },
+    {
+      "claim_id": "9005ef2f-e309-4e32-abf8-be47bca9de58",
+      "result_id": "c9cd9210-123f-4d97-b0a5-fa4b19e30614"
+    },
+    {
+      "claim_id": "254f3e22-e695-42fb-9be8-01d2261089dd",
+      "result_id": "a614486d-cf56-49a2-92d9-8167bf0aec5c"
+    },
+    {
+      "claim_id": "19d3aa30-a47b-4e4e-902e-3b8528a13e6c",
+      "result_id": "a614486d-cf56-49a2-92d9-8167bf0aec5c"
+    },
+    {
+      "claim_id": "ab9e517a-c24a-4188-b4e2-4194b7cdfafd",
+      "result_id": "a614486d-cf56-49a2-92d9-8167bf0aec5c"
+    },
+    {
+      "claim_id": "93dbd1ae-1462-4f8b-a7a7-f9b58da8ed48",
+      "result_id": "a614486d-cf56-49a2-92d9-8167bf0aec5c"
+    },
+    {
+      "claim_id": "248c6d72-0b14-49d2-9995-bb1d5d6ec211",
+      "result_id": "6d1c129f-833f-4fb6-96d3-732b832b9183"
+    },
+    {
+      "claim_id": "e02a7fa6-584b-4cc2-9907-55fff84f8a90",
+      "result_id": "6d1c129f-833f-4fb6-96d3-732b832b9183"
+    },
+    {
+      "claim_id": "3668ec91-5fe8-4486-a9db-cf29197c3820",
+      "result_id": "6d1c129f-833f-4fb6-96d3-732b832b9183"
+    },
+    {
+      "claim_id": "779ea8bd-0695-4e01-a6f6-cc090b840e6d",
+      "result_id": "6d1c129f-833f-4fb6-96d3-732b832b9183"
+    },
+    {
+      "claim_id": "08faf359-c975-464c-b916-60169d0a35d6",
+      "result_id": "6d1c129f-833f-4fb6-96d3-732b832b9183"
+    },
+    {
+      "claim_id": "ca369a89-4015-4db7-a8c0-bb4fd6aad134",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "1d0bb988-94a1-4ed0-9488-6b59cf8c0dd3",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "8d189e68-3c54-443f-84b1-2035419a5565",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "c2d85d86-5aa9-441e-a1b1-3a870799d1f2",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "4178dbec-26e1-4a73-af5d-674bf77b97fa",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "efd13f0e-208d-4ad9-bc41-986433dde515",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "66372298-ae33-4696-a0e0-e93eb770259f",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "187acb05-4118-4fe6-ad3f-cc0b6037ecc1",
+      "result_id": "b7c8b132-f8b8-4a25-b0be-b058e194e7d3"
+    },
+    {
+      "claim_id": "93357cad-43c5-4201-9361-7e4dfe558fe1",
+      "result_id": "2711a67e-9ec0-441d-97c6-795558d872ac"
+    },
+    {
+      "claim_id": "4825104f-7a77-4e6a-95ac-ef96b9d3e93f",
+      "result_id": "2711a67e-9ec0-441d-97c6-795558d872ac"
+    },
+    {
+      "claim_id": "1613715c-478f-46a1-a0cd-7910ed0ea80d",
+      "result_id": "2711a67e-9ec0-441d-97c6-795558d872ac"
+    },
+    {
+      "claim_id": "e8229dd6-bacd-4a14-b8ae-0ad591bde732",
+      "result_id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2"
+    },
+    {
+      "claim_id": "1fbcbb60-e266-42d4-a726-d00a6bdb8847",
+      "result_id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2"
+    },
+    {
+      "claim_id": "15494e5f-83c8-4792-8c7b-2d2e9d19e412",
+      "result_id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2"
+    },
+    {
+      "claim_id": "d0e79dbc-dafa-412a-96dd-afc66e135bc0",
+      "result_id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2"
+    },
+    {
+      "claim_id": "d0ae1803-f5ba-48fe-8e54-f6640c6d9471",
+      "result_id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2"
+    },
+    {
+      "claim_id": "71aac781-a9c5-4f88-a230-6a4f5d8ff01c",
+      "result_id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2"
+    },
+    {
+      "claim_id": "968e4ca9-75fb-45a7-9bd2-95e8948cae97",
+      "result_id": "c3b15872-2a67-45fa-aaf8-3c5d22b2f7d2"
+    },
+    {
+      "claim_id": "d29d2651-f68d-4f7e-9cb7-097d896cd1c7",
+      "result_id": "dac74b4d-d89f-44b2-971c-4f95d0abf4f0"
+    },
+    {
+      "claim_id": "9b429112-55b1-4ada-bfcb-43b140224226",
+      "result_id": "dac74b4d-d89f-44b2-971c-4f95d0abf4f0"
+    },
+    {
+      "claim_id": "5d227292-eafd-45dc-be46-a54ace55ef2c",
+      "result_id": "dac74b4d-d89f-44b2-971c-4f95d0abf4f0"
+    },
+    {
+      "claim_id": "b60d71d5-8aa1-46df-86c5-00fbc5581c98",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "556ce172-9e89-4b50-90a4-8d633bcd5070",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "967aab47-c532-4d3f-b682-2a8ca837d48a",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "9d38edd2-f607-4706-aaad-465c01d8dd37",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "3cc859cf-395d-48fc-8610-0ad13958fa11",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "3d6c582c-ff15-483c-8833-e5813e8e33e2",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "c6f8d2ee-0b3b-45f6-9e6f-b2d7d083a9ca",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "86d2521c-ef63-40d6-a81b-4a9db105f5ba",
+      "result_id": "25840c43-11d4-478f-a5ef-36330cbbd0b7"
+    },
+    {
+      "claim_id": "ac2c9ecf-f586-475e-9dd7-50001bbfc095",
+      "result_id": "e4b6a157-906b-4684-b71c-a77fa3794309"
+    },
+    {
+      "claim_id": "fe81d64a-f619-410b-920d-81b92bead93a",
+      "result_id": "e4b6a157-906b-4684-b71c-a77fa3794309"
+    },
+    {
+      "claim_id": "358fbbe5-4b38-4e7c-9adf-ba809dd02f47",
+      "result_id": "e4b6a157-906b-4684-b71c-a77fa3794309"
+    },
+    {
+      "claim_id": "a6a2fb6f-f395-4c0b-929d-feffb9c7b8a0",
+      "result_id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26"
+    },
+    {
+      "claim_id": "66460390-0f8e-4acb-ab86-4458eff05214",
+      "result_id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26"
+    },
+    {
+      "claim_id": "9f4665bc-6b66-4222-82a2-b76d288b1513",
+      "result_id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26"
+    },
+    {
+      "claim_id": "6930ab1a-012e-4ad7-9921-aabe6edba855",
+      "result_id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26"
+    },
+    {
+      "claim_id": "8774763b-a940-4e74-8f4c-f788a29f1f8b",
+      "result_id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26"
+    },
+    {
+      "claim_id": "a0636970-bb64-45f0-b9a6-dd401307a87b",
+      "result_id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26"
+    },
+    {
+      "claim_id": "8fac4e03-dc5d-4239-a88c-0c7c54cf215f",
+      "result_id": "11e4f075-d7c4-425f-b7e6-6d5dd07e1b26"
+    },
+    {
+      "claim_id": "f72e680f-a05d-4229-b0cc-cf1706aeabe9",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "90d30294-5983-4dc4-b14d-887488e5675c",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "fcdbdec3-76df-4529-8cf6-99ba1d3a2791",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "c02435c6-a66f-4f7a-a3cd-91616d601be3",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "a53ac222-77a9-4364-afad-ca784bebd9e5",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "a6fab05b-7ab1-46a6-a219-3e2b8cc5a791",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "06d5a60d-204c-49c0-937c-cfeab789f3b9",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "4182d29e-05c0-430c-a927-996b03afb0af",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "7ee7e5d0-0449-4ce5-a495-5083bdebb8ba",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "c5d002cd-a994-4021-ab8f-fba3cd5bc7f4",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "278e855c-c106-4992-988f-4bc9a0f71d33",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "7d6cd7d5-cc69-4d37-8a43-766690a16b7a",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "e4322bd1-b991-4909-bec7-f0fa2c435dee",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "263b5ccd-f0c5-49df-972d-b0f7869f8a2c",
+      "result_id": "3604015f-2593-4d0c-916d-36add90b678c"
+    },
+    {
+      "claim_id": "46974162-48f9-4d47-9e47-7bb64170d6eb",
+      "result_id": "5dc21175-05e1-46bf-bb29-4c6621598928"
+    },
+    {
+      "claim_id": "725b2c8b-115f-4b81-9310-6324ddf21803",
+      "result_id": "5dc21175-05e1-46bf-bb29-4c6621598928"
+    },
+    {
+      "claim_id": "88ce0328-ab89-4146-b259-6d2ffa0b39da",
+      "result_id": "5dc21175-05e1-46bf-bb29-4c6621598928"
+    },
+    {
+      "claim_id": "a262cc56-3b46-4fe4-9d01-67765b519c72",
+      "result_id": "db004302-dd9d-439c-873a-1ad83ecc7119"
+    },
+    {
+      "claim_id": "57716ee0-3f57-49e6-b1b2-8258692b4aff",
+      "result_id": "db004302-dd9d-439c-873a-1ad83ecc7119"
+    },
+    {
+      "claim_id": "8e9ded0c-eb3c-4f6c-8157-802878230b84",
+      "result_id": "db004302-dd9d-439c-873a-1ad83ecc7119"
+    },
+    {
+      "claim_id": "afbe2fbe-1064-4154-8b1d-22128abdca4b",
+      "result_id": "db004302-dd9d-439c-873a-1ad83ecc7119"
+    },
+    {
+      "claim_id": "a14399c2-fd21-4946-b627-dd4322d37d05",
+      "result_id": "db004302-dd9d-439c-873a-1ad83ecc7119"
+    },
+    {
+      "claim_id": "bb122b69-6930-488b-88b8-2dd12758ed9b",
+      "result_id": "331885ad-31eb-4139-9d7a-fd4ac8e1ef6b"
+    },
+    {
+      "claim_id": "e13926b7-ff8b-47d4-ad18-8ad98bbe18cd",
+      "result_id": "331885ad-31eb-4139-9d7a-fd4ac8e1ef6b"
+    },
+    {
+      "claim_id": "2f8ee26e-6d0e-4ecb-b457-526b6ab8302c",
+      "result_id": "331885ad-31eb-4139-9d7a-fd4ac8e1ef6b"
+    },
+    {
+      "claim_id": "2a242659-e8fc-4852-aed9-b05e776ae1ad",
+      "result_id": "d8aac27b-4857-482f-9c2a-9988cc2380ec"
+    },
+    {
+      "claim_id": "e90199a4-4e85-41ce-a652-1194db52bf15",
+      "result_id": "d8aac27b-4857-482f-9c2a-9988cc2380ec"
+    }
+  ],
+  "comparisons": []
+}

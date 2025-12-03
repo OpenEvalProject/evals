@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Hdc localizes predominantly to photoreceptor terminals in the lamina and medulla, co-localizing with synaptic markers LOVIT and CSP, and is largely absent from the retina. This localization pattern supports the hypothesis that histamine is synthesized directly in axon terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 provide converging immunohistochemical evidence from multiple approaches (endogenous Hdc antibody, tagged Hdc-mCherry) showing terminal-specific localization. The functional rescue by trp-Hdc-mCherry (C26) validates the tagged construct. The control comparison with trp-GFP (C28) demonstrates specificity. The inference (C29) is well-supported by the localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "TADR is required for visual synaptic transmission in photoreceptor neurons but not for neuronal integrity. Loss of tadr function through RNAi or genetic mutation (tadr2) eliminates ERG transients and disrupts phototaxis behavior, which can be rescued by photoreceptor-specific expression of tadr. Importantly, tadr2 mutants show normal neuronal morphology without degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 demonstrate consistent loss-of-function phenotypes using multiple approaches (RNAi with two independent lines, null mutant tadr2) and appropriate controls (tissue-specific knockdown, rescue experiments). The TEM data (C71-C73) convincingly show that the functional defects are not due to neuronal degeneration. The cell-type specificity is well-established by the repo-Gal4 control (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "TADR is a specific histidine transporter that localizes to the plasma membrane and exhibits selective transport activity for histidine with minimal cross-reactivity for other amino acids or histamine metabolites. TADR shows comparable histidine transport activity to the known histidine transporter SLC38A3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 provide comprehensive in vitro characterization using S2 cell uptake assays with appropriate positive and negative controls. The specificity is demonstrated through direct uptake assays for multiple substrates (histidine, histamine, \u03b2-alanine, carcinine) and competition assays with various amino acids. The 3.6-fold increase in histidine uptake (C39) and comparison to SLC38A3 (C40) provide quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C74"
+    ],
+    "result": "TADR is expressed specifically in photoreceptor neurons and localizes primarily to photoreceptor terminals in the lamina and medulla, co-localizing with Hdc. The GFP-tagged TADR knock-in is functional as demonstrated by normal ERG recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 use a GFP-tadr knock-in approach to demonstrate localization, which is validated by functional rescue (C74). The co-localization with Hdc (C50) is critical for the model of local histamine synthesis. The approach is rigorous with appropriate validation of the tagged construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "tadr2 mutants exhibit dramatically reduced histamine levels at photoreceptor terminals and in whole eyes, along with reduced levels of histamine metabolites (carcinine and \u03b2-alanine), without loss of synaptic structures. These biochemical defects can be rescued by photoreceptor-specific expression of TADR, supporting the model that TADR transports histidine into terminals for local histamine synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 provide converging evidence from immunohistochemistry and LC-MS measurements showing reduced histamine and metabolites in tadr2 mutants. The comparison with HdcP217 mutants (C55, C59) provides an important control. The rescue experiments (C62) demonstrate specificity. The TEM data (C54) rules out structural defects as an explanation. The biochemical and physiological phenotypes are logically connected (C63-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The histidine transport function of TADR is essential for visual transmission, as demonstrated by functional rescue of tadr2 mutants with other histidine transporters (CG13248 and human SLC38A3) but not with non-histidine transporters (Slif). The lack of sequence homology between rescuing transporters suggests that histidine transport activity, rather than protein structure, is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 and C82-C87 provide elegant functional validation through heterologous rescue experiments. The differential rescue by CG13248 vs. Slif (C67-C68, C82-C83) correlates with their histidine transport abilities (C65-C66). The rescue by human SLC38A3 (C69, C86), which lacks sequence homology to TADR (C87), strongly supports the conclusion that histidine transport activity is the critical function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "TADR is not the only histidine transporter in Drosophila, as evidenced by residual histamine levels and phototactic behavior in tadr2 mutants compared to Hdc mutants, and by the viability of tadr2 null mutants without growth or cell death phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide quantitative comparisons showing that tadr2 mutants retain some histamine and phototaxis compared to Hdc mutants, suggesting alternative histidine sources. The viability and normal morphology of tadr2 mutants (C89) support this interpretation. However, C90 is speculative about the mechanism of alternative histidine uptake.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The tadr2 null mutant generated in this study does not exhibit the retinal degeneration phenotype reported for the tadr1 missense mutant, suggesting that the degeneration in tadr1 may result from other mutations or neomorphic effects rather than loss of TADR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 document a discrepancy between the current null mutant and a previously reported missense mutant. The substrate specificity data (C79) and normal morphology (C78) support the interpretation that TADR is not required for general amino acid metabolism or cell survival. The speculation about tadr1 (C81) is reasonable given the evidence but remains uncertain without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The tadr2 mutation is a 665 bp deletion that removes exon 4 and parts of exons 3 and 5, resulting in a 244 nt deletion in the spliced mRNA and a frameshift mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 provide molecular characterization of the tadr2 allele through sequencing, confirming it is a null mutation. This is important for interpreting the phenotypic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background and context claims about histamine biosynthesis, neurotransmitter synthesis, and the Drosophila visual system establish the rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C20 are primarily citations to established knowledge and prior work. These provide appropriate context but are not novel findings of this study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Summary claims stating that TADR is a histidine transporter required for visual transmission, that TADR and Hdc localize to terminals, and that tadr mutations reduce histamine and disrupt visual function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 are high-level summary statements that are well-supported by the detailed experimental claims grouped in other results. These represent the main conclusions of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The terminal-specific localization pattern of Hdc suggests that de novo synthesis of neurotransmitters occurs specifically at synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is a reasonable inference from the localization data (C21-C28), though it is somewhat speculative. The localization pattern is consistent with this interpretation, but direct demonstration of local synthesis would require additional experiments (e.g., metabolic labeling).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "TADR belongs to the CAT subfamily of the SLC7 family and is homologous to human SLC7A4 and SLC7A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are based on sequence homology and are supported by citation. This classification is important for understanding TADR's function and evolutionary conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion claims about the broader significance of amino acid transporters in metabolism and potential therapeutic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 are supported by citations and represent established knowledge. Claim C95 is the main conclusion of the study and is well-supported. Claim C96 is speculative about therapeutic applications and lacks direct experimental support, though it is a reasonable extrapolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Model proposing that histidine is transported into photoreceptor terminals by TADR, converted to histamine by Hdc, loaded into vesicles by LOVIT, and released to activate postsynaptic HisClA channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are well-supported by the experimental data in this study. Claims C99-C100 incorporate established knowledge about LOVIT and histaminergic transmission. The model integrates the current findings with prior work in a logical framework.",
+    "result_type": "MAJOR"
+  }
+]

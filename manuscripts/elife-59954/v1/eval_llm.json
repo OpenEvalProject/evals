@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Conduction velocity (CV) restitution shows dependence on pacing cycle length (CL) only at low CL (<200 ms), with the CV restitution curve flattening around CL = 200 ms for all light intensities. At 5 Hz electrical pacing, CV decreases approximately 5% as light intensity increases from 0 to 0.02 mW/mm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by simulation data presented in Figure 1A-B. The CV restitution behavior and light-intensity dependence are clearly demonstrated with appropriate quantification. The findings are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Experimental measurements in intact mouse hearts show a decrease in CV with increasing light intensity, with the reduction being two times greater than in simulations at the highest sub-threshold light intensity (\u22430.15 mW/mm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While experimental data (C33-C34) confirms the qualitative trend of CV decrease with light intensity, the quantitative discrepancy between experiments and simulations (2-fold difference) is substantial and unexplained. The manuscript provides no mechanistic explanation for this discrepancy, and sample sizes are modest (N=4 hearts with 12 trials). This raises questions about model validity or experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Under uniform sub-threshold illumination, spiral waves rotate with a baseline frequency of \u224315.3 Hz with circular core trajectory in the absence of light. The dominant frequency (DF) decreases with increasing light intensity, showing a 26% reduction when light intensity increases from 0 to 0.02 mW/mm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are well-supported by simulation data in Figure 1C-D. The baseline spiral wave characteristics and light-intensity-dependent frequency changes are clearly quantified and demonstrated. The circular trajectory maintenance is also documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Experimental measurements on intact mouse hearts show a decrease in dominant frequency with increasing light intensity, but the reduction is two times less than in simulations at the highest light intensity for intact mouse hearts (0.015 mW/mm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Similar to the CV measurements, the DF experimental data (C39-C40) shows qualitative agreement but quantitative discrepancy with simulations. The 2-fold difference in the opposite direction compared to CV measurements is concerning and unexplained. Sample size is limited (N=2 hearts with 14 trials), and the manuscript provides no discussion of why experimental and simulation results diverge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sub-threshold light stimulation does not alter the general circular shape of the spiral tip trajectory at all light intensities considered, but the core diameter gradually increases with increasing light intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by simulation data shown in Figure 1D. The preservation of circular trajectory shape and the gradual increase in core diameter with light intensity are clearly demonstrated and quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The effects of sub-threshold illumination on spiral wave dynamics are reversible, with the natural rotation frequency of the spiral being restored upon removal of the light stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by voltage timeseries data shown in Figure 1F and 1H from both simulations and experiments. The reversibility is clearly demonstrated by the restoration of baseline frequency after light removal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Sub-threshold illumination causes a light-intensity-dependent increase in cellular resting membrane potentials without triggering action potentials. This shift, combined with diffusive cell-cell coupling, leads to spatial voltage gradients that affect conduction velocity and wavelength, enabling spatiotemporal control of spiral wave dynamics through imposed spatial gradients on cellular recovery states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C24-C28 form a coherent mechanistic explanation supported by simulation data in Figures 2 and 3. The voltage gradient development and its effects on spiral wave drift are well-documented. However, the mechanism linking membrane potential shifts to CV changes (C25) could benefit from more detailed biophysical explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Inhomogeneity can be induced using sub-threshold illumination, causing stationary spiral waves to drift toward regions with high resting membrane potential (high light intensity). The voltage gradients establish over time and impose spatial non-uniformity in refractory periods, with higher light intensity regions displaying longer refractory periods. Spiral waves consistently drift along the direction of longer refractory period (higher light intensity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are well-supported by simulation data in Figure 2. The spatiotemporal evolution of voltage gradients (Figure 2B, E) and the resulting drift behavior are clearly demonstrated. The connection to refractory period heterogeneity (C50-C52) is mechanistically sound and supported by citation to Panfilov 2009.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C87",
+      "C89",
+      "C93",
+      "C101"
+    ],
+    "result": "Spiral waves drift along positive voltage gradients (toward increasing light intensity). The drift velocity depends on the gradient magnitude, with negligible drift at small gradients (<4\u00d710\u2074 mW/mm\u00b3) and effectively increasing drift velocity at higher light intensities. Termination can occur irrespective of initial spiral wave core position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54, C87, C89, C93, C101 are supported by simulation data in Figures 2 and 3. The gradient-dependent drift behavior is well-characterized, and the threshold for effective drift is quantified. The advantage of position-independence (C54) is a logical consequence of the gradient-based mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "With step-like illumination patterns, spiral waves drift from the interface toward illuminated regions, but drift is eventually inhibited as the spiral migrates away from the interface. The drift velocity is initially proportional to the gradient slope at the interface but decreases exponentially with time. At high light intensities, tip speed shows large oscillations. For light intensities >0.015 mW/mm\u00b2, spiral waves settle to stationary state (zero drift velocity) within 2 s, while at lower intensities, drift velocity decreases to small non-zero constant values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C68 are well-supported by detailed simulation data in Figure 3. The exponential decay of drift velocity is quantified with fitted parameters (Table 1), and the light-intensity-dependent behavior is systematically characterized. The oscillatory behavior at high light intensities (C59) is documented but could benefit from mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A single step-like illumination gradient is insufficient to cause spiral wave termination even at the highest light intensities considered. While stepwise illumination attracts the spiral into illuminated areas, core stabilization occurs afterward. A sequence of step-like gradients is needed to continuously attract and drag the spiral toward an inexcitable boundary for termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by simulation results showing limited displacement with single-step illumination (Figure 3F) and successful termination with multi-step protocols (Figure 4). The conclusion that sequential steps are necessary is a logical inference from the observed stabilization behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The multi-step adjusted illumination pattern is faster at effectuating drift-induced termination of spiral waves compared to gradient illumination patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by comparative data in Figure 4E-F showing approximately 4-fold higher drift velocity and greater mean squared displacement for multi-step patterns compared to gradient patterns. The quantitative comparison clearly demonstrates the superiority of the multi-step approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C97",
+      "C100"
+    ],
+    "result": "The current study using a realistic 40-variable ionic model shows similar dynamical behavior to prior work by Biktasheva et al. 2010, but with non-constant drift velocity. The spatial profile of light-induced voltage gradients allows high-speed drift while crossing interfaces, but drift velocity decreases to very small positive values at large distances from the interface. Once the spiral leaves the interface zone of influence, drift either stops or becomes constant parallel to the interface, resulting in comparable displacements at high light intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86, C97, C100 are supported by simulation data and comparison to prior work. The distinction from Biktasheva et al. 2010 (constant vs. non-constant drift velocity) is clearly documented. The mechanistic explanation based on voltage gradient spatial profiles is consistent with the data, though the flattening of displacement at high light intensities (C100) could benefit from more detailed analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C108"
+    ],
+    "result": "Preliminary experiments show sub-threshold illumination affects electrical wave propagation in mouse hearts. The study demonstrates that voltage gradients can be strategically applied to ensure drift-induced termination of spiral waves in optogenetics, proving the validity of optogenetics' potential for studying and controlling spiral wave drift in 2D cardiac tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C108 are supported by the combined simulation and experimental evidence presented throughout the manuscript. The preliminary experimental observation (C1) is validated by systematic computational studies, and the strategic application of voltage gradients (C5) is demonstrated through multiple illumination protocols. The conclusion about optogenetics' potential (C108) is justified by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study postulates that voltage gradients can be strategically applied for drift-induced termination in conventional electrical defibrillation methods. An alternative theory to the critical mass hypothesis is proposed: epicardial light application creates transmural illumination gradients with sub-threshold and supra-threshold regimes. Sub-threshold gradients induce spiral wave drift toward the epicardial surface, protecting internal tissue from hidden electrical activity, which can then be terminated by supra-threshold illumination. This mechanism may also apply to conventional defibrillation where electric fields create transmural depolarization gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C6, C117-C121, C124-C126 represent speculative extensions beyond the presented data. The study only demonstrates 2D simulations with sub-threshold illumination; no 3D transmural simulations or experiments are presented to support the proposed mechanism for optogenetic or conventional defibrillation. The extension to conventional electrical defibrillation (C6, C124-C126) is purely speculative without supporting data. While the hypothesis is plausible and interesting, it requires substantial additional work including 3D modeling, transmural measurements, and validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establishing the clinical context of cardiac arrhythmias, current treatment methods (high-voltage shocks, ATP), their limitations, and the emergence of optogenetics as a tool for studying cardiac arrhythmias. Previous optogenetics studies used supra-threshold stimulation, while sub-threshold regimes remain largely unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C23 are background statements supported by appropriate citations to prior literature. These establish the motivation and context for the current study. The characterization of the knowledge gap regarding sub-threshold optogenetic stimulation (C23) appropriately frames the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Discussion of prior work on spiral wave drift mechanisms, including intrinsic tissue heterogeneity and external perturbations, structural vs. functional heterogeneity, and comparisons to studies in BZ reactions and prior optogenetics work. Light-sensitive BZ reactions are established as the easiest-to-control system for drift studies, with optogenetics expected to hold similar potential for cardiac tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82, C102-C107 appropriately summarize and cite relevant prior work, providing context for interpreting the current results. The comparisons to Biktasheva et al. 2010, Davydov et al. 1988, and Markus et al. 1992 are appropriate and help validate the findings. The expectation about optogenetics' potential (C107) is reasonable based on the analogy to BZ systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C122",
+      "C123"
+    ],
+    "result": "Discussion of optogenetic defibrillation applications, current techniques, limitations due to poor light penetration, existing explanations based on critical mass hypothesis, and relevant prior measurements of light penetration in cardiac tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116, C122-C123 appropriately summarize the current state of optogenetic defibrillation and its limitations. The citations to Bruegmann et al. 2016, Saito et al. 2017, and others provide appropriate context. These claims set up the motivation for the alternative mechanism proposed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Methods description including the computational model (40-variable Bondarenko model with ChR2), numerical methods (4th-order Runge-Kutta, 10\u207b\u2074 ms time step), and experimental protocols for intact mouse heart studies including ethical approvals, transgenic mouse models, perfusion protocols, and measurement techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C137 provide adequate methodological detail for the computational and experimental approaches. The model choice is appropriate and well-established (Bondarenko et al. 2004 with improvements). Ethical approvals are documented. However, some computational details could be more complete (e.g., boundary conditions, domain size specifications, convergence testing). Experimental sample sizes are modest but reported.",
+    "result_type": "MINOR"
+  }
+]

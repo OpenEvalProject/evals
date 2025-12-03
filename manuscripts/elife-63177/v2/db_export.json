@@ -1,0 +1,1799 @@
+{
+  "submission": {
+    "id": "d2909978-a65f-494b-a43b-088b0db1bea2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:24:25.302953Z",
+    "updated_at": "2025-12-03T01:24:25.302953Z"
+  },
+  "content": [
+    {
+      "id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "submission_id": "d2909978-a65f-494b-a43b-088b0db1bea2",
+      "content_type": "manuscript",
+      "content_text": "# Rapid adaptation to malaria facilitated by admixture in the human population of Cabo Verde\n\n## Authors\n\n- Iman Hamid<sup>1</sup> ([ORCID: 0000-0003-2168-9727](https://orcid.org/0000-0003-2168-9727)) \u2020\n- Katharine L Korunes<sup>1</sup> ([ORCID: 0000-0002-2648-4707](https://orcid.org/0000-0002-2648-4707))\n- Sandra Beleza<sup>2</sup>\n- Amy Goldberg<sup>1</sup> ([ORCID: 0000-0001-9306-1539](https://orcid.org/0000-0001-9306-1539)) \u2020\n\n### Affiliations\n\n1. Department of Evolutionary Anthropology, Duke University Durham United States\n2. Department of Genetics and Genome Biology, University of Leicester Leicester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHumans have undergone large migrations over the past hundreds to thousands of years, exposing ourselves to new environments and selective pressures. Yet, evidence of ongoing or recent selection in humans is difficult to detect. Many of these migrations also resulted in gene flow between previously separated populations. These recently admixed populations provide unique opportunities to study rapid evolution in humans. Developing methods based on distributions of local ancestry, we demonstrate that this sort of genetic exchange has facilitated detectable adaptation to a malaria parasite in the admixed population of Cabo Verde within the last ~20 generations. We estimate that the selection coefficient is approximately 0.08, one of the highest inferred in humans. Notably, we show that this strong selection at a single locus has likely affected patterns of ancestry genome-wide, potentially biasing demographic inference. Our study provides evidence of adaptation in a human population on historical timescales.\n\n## Introduction\n\nGenetic studies have demonstrated the important role of adaptation throughout human evolution, including classic examples such as loci underlying pigmentation, and adaptation to high-altitude lifestyles and infectious disease (Sabeti et al., 2002; Ohashi et al., 2004; Lamason et al., 2005; Voight et al., 2006; Norton et al., 2007; Nielsen et al., 2007; Pickrell et al., 2009; Yi et al., 2010; Fumagalli et al., 2011; Grossman et al., 2013; Lachance and Tishkoff, 2013). Yet, we have a limited understanding of adaptation in human populations on historical timescales, that is, during the last tens of generations. The ongoing selective pressures shaping human genomic variation, and how quickly humans can adapt to strong selective pressures, remain unclear. Adaptation on these short timescales is of particular importance because large-scale migrations within the past thousands to hundreds of years have exposed human populations to new environments and diseases, acting as new selective pressures (Hellenthal et al., 2014; Mathias et al., 2016; Busby et al., 2016; Patin et al., 2017; Laso-Jadart et al., 2017; Nielsen et al., 2017; Fernandes et al., 2019).\n\nAdmixture\u2014gene flow between previously diverged populations to form a new population with ancestry from both source populations\u2014provides a particularly rapid opportunity for selection to act in a population by introducing alleles previously adapted in a source population into the admixed population (Huerta-S\u00e1nchez et al., 2014; Jeong et al., 2014; Racimo et al., 2015; Norris et al., 2020). Additionally, in recent human admixture, ancestry contributions from each source population are often large enough to introduce alleles at intermediate frequencies, potentially avoiding loss from drift (Ruiz-Linares et al., 2014; Mathias et al., 2016; Fernandes et al., 2019; Fortes-Lima et al., 2019). More generally, admixture is ubiquitous in human history (Moorjani et al., 2011; Hellenthal et al., 2014; Busby et al., 2015; Triska et al., 2015; Busby et al., 2016; Laso-Jadart et al., 2017; Patin et al., 2017); therefore, understanding the effects of selection in these often understudied populations is essential to the study of human evolution.\n\nThe admixture process may obscure the signals commonly used to detect selection by increasing linkage disequilibrium and changing the distribution of allele frequencies (Lohmueller et al., 2010; Lohmueller et al., 2011; Gravel, 2012; Racimo et al., 2015). Further, common signatures of selection, such as deviation from neutral expectations of the allele frequency spectrum, may not be sensitive to adaptation on the scale of tens of generations (Sabeti et al., 2006; Field et al., 2016). Recent progress has given insights into human adaptation during the past few thousand years by using allele frequency trajectories from ancient DNA (Lindo et al., 2016) or the distribution of singletons in extremely large data\u00a0sets (Field et al., 2016). We focus on admixed populations as an opportunity to detect rapid adaptation using modern populations and moderate sample sizes, allowing broader sets of populations to be studied. That is, within-genome ancestry patterns across multiple nearby loci may be easier to detect than single allele frequency shifts (Tang et al., 2007). Further, ancestry-based methods constrain the timing of potential selection to post-admixture, providing concrete information about the timing of selection, whereas non-ancestry-based summary statistics may detect selection in the source populations.\n\nWe test this concept developing new ancestry-based methods to characterize adaptation to malaria during the\u00a0~20 generations since the founding of the admixed human population of Cabo Verde. The Republic of Cabo Verde is an archipelago off the coast of Senegal and was uninhabited before settlement in\u00a0~1460 by Portuguese colonizers and enslaved peoples from the Senegambian region of West Africa (Fernandes et al., 2003; Beleza et al., 2012; Verdu et al., 2017; Korunes et al., 2020), henceforth referred to as \u2018European\u2019 and \u2018West African\u2019 source populations, respectively. This is approximately 19\u201322 generations ago assuming a 25- to 28-year human generation time (Fenner, 2005). Recent analyses using genetic ancestry information alongside historical data confirmed that admixture in Cabo Verde likely began within the last\u00a0~20 generations (Korunes et al., 2020). In this study, we assume admixture occurred 20 generations ago, and we focus on three major island regions of Cabo Verde: Santiago, Fogo, and the Northwest Cluster (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig1-v2.jpg)\n\n**Figure 1.:** (A) Map of Cabo Verde islands and sample sizes for number of individuals from each island region. (B) The distribution of West African-related local ancestry proportion across the genome by SNP (n\u00a0=\u00a0881,279) by island, with the DARC locus marked by vertical red lines. Local ancestry was estimated using RFMix (see Materials\u00a0and\u00a0methods). The DARC locus is an outlier for high West African-related ancestry in Santiago, but not Fogo or the Northwest Cluster.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The mean is indicated by the solid horizontal line, and dashed horizontal lines represent three standard deviations from the mean. Again, this plot demonstrates Duffy-null (red dot) as the highest value for West African ancestry proportion.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** *indicates significant p-value\u00a0<0.001 for binomial test (see Table 1 for sample sizes and further details).\n\nThe malaria parasites Plasmodium vivax, P. falciparum, and P. malariae have been reported across the islands of Cabo Verde since settlement; recurrent malaria epidemics have primarily occurred in highly populated regions (World Health Organization et al., 2012; DePina et al., 2019). Santiago, which has consistently been the most densely populated of the Cabo Verde islands, has experienced the most substantial burden of malaria transmission since settlement\u00a0~20 generations ago. Personal and historical accounts of malaria incidence within Cabo Verde described the largest and most populous island, Santiago, as the most \u2018sickly\u2019 and \u2018malarious\u2019 (Patterson, 1988). In the last century, malaria epidemics of both P. vivax and P. falciparum have occurred primarily in Santiago (Snow et al., 2012; World Health Organization et al., 2012; Ferreira, 2017; DePina et al., 2018). It is not fully understood why Santiago has sustained a higher burden of malaria than the other Cabo Verdean islands (World Health Organization et al., 2012); however, it may be due to a combination of higher population density, climatic differences between islands, increased migration into Santiago, which has historically served as the main trading port for Cabo Verde, and the suitability of the island for the mosquito vector. The other two island regions we consider share ancestry components with Santiago, but largely lacked the selective pressure of recurrent malaria transmission, providing a unique opportunity to compare related populations with and without malaria as a selective pressure.\n\nWe hypothesized that admixture has facilitated rapid adaptation to the malaria parasite Plasmodium vivax via the malaria-protective Duffy antigen receptor for chemokines (DARC) locus (also known as Atypical Chemokine Receptor 1 [ACKR1]) in Santiago. The protective allele is almost fixed in West African populations and rare elsewhere (Howes et al., 2011; Gething et al., 2012). The malaria parasite P. vivax uses the chemokine receptor encoded by the DARC gene to enter and infect red blood cells. The Duffy-null allele (also known as FY*O, rs2814778) is protective against P. vivax infection via a single nucleotide polymorphism (SNP) that disrupts binding of an erythroid-specific transcription factor in the promoter region (Mercereau-Puijalon and M\u00e9nard, 2010; Gething et al., 2012). Thus, individuals carrying the null allele have reduced expression of Duffy antigens on the surface of the blood cell, protecting against P. vivax infection. Duffy-null is a classic example of strong selection in the human lineage, and it has been estimated to be under one of the strongest selective pressures in human history (Hamblin and Di Rienzo, 2000; Hamblin et al., 2002; Kwiatkowski, 2005; McManus et al., 2017), suggesting it is a plausible selective pressure in Cabo Verde.\n\nInterestingly, this hypothesis goes back to a voyage in 1721 in which Captain Roberts, 1745 reported that a disease in Santiago is \u2018dangerous to strangers\u2019 during the rainy season. Consistent with ancestry-mediated protection from malaria, the record has been interpreted by medical historians to suggest that \u2018foreign visitors and residents of European descent seem to have suffered more than the African and Afro-Portuguese majority\u2019 from malaria in Santiago (Patterson, 1988).\n\nIn this study, we combine ancestry-based summary statistics and simulations to identify and characterize selection at the malaria-protective DARC locus on the island of Santiago during the\u00a0~20 generations since the onset of admixture. Importantly, we also consider the genome-wide consequences of this mode of selection. That is, we find that strong selection at a single locus may shift genome-wide ancestry patterns, with potential to bias demographic inference. The results of this study provide evidence for rapid adaptation in human populations and advance our ability to detect and characterize selection in recently admixed populations.\n\n## Results\n\n### Enrichment of West\u00a0African ancestry at the DARC locus in Santiago\n\nEmpirical studies of selection in admixed populations often look for regions of the genome that deviate from genome-wide patterns of genetic ancestry (Tang et al., 2007; Jin et al., 2012; Jeong et al., 2014; Rishishwar et al., 2015; Triska et al., 2015; Zhou et al., 2016; Busby et al., 2017; Laso-Jadart et al., 2017; Patin et al., 2017; Fernandes et al., 2019; Lopez et al., 2019; Norris et al., 2020; Vicu\u00f1a et al., 2020). Regions of the genome with substantially higher ancestry from one source than present on average in the rest of the genome are hypothesized to be enriched for genes under selection. For an allele at different frequencies in the source populations, selection will increase the frequency of the ancestry on which the adaptive allele occurs at that locus. We tested if the DARC locus was an outlier within the genome for West African ancestry. We estimated local ancestry using the RFMix software (Maples et al., 2013) and calculated the proportion of individuals with West African ancestry at each SNP (see Materials\u00a0and\u00a0methods for details on local ancestry assignment). Figure 1B and Figure 1\u2014figure supplement 1 show the distribution of West African ancestry for over ~880,000 SNPs by island, with the value for the Duffy-null SNP position marked in red. Within Santiago, this locus has the highest frequency of West African ancestry in the population, occurring at 0.834 frequency compared to mean West African ancestry across SNPs for individuals from Santiago of 0.730. In contrast, the DARC locus is not an outlier in its frequency of West African ancestry on the other island regions, occurring at the 75th and 65th percentiles for Fogo and the NW Cluster, respectively. High West African local ancestry proportion at the DARC locus in Santiago is consistent with the expectation that the Duffy-null allele rapidly increased in frequency following admixture, simultaneously increasing the proportion of individuals with West African ancestry at that locus relative to the genome-wide average.\n\nUnder a simple population genetic model, we expect the frequency of a neutral allele in an admixed population to be a linear combination of the allele frequencies in each source population and their relative ancestry contributions. The Duffy-null allele is nearly fixed in the West African source population and largely absent in the European source population; therefore, under neutrality, the expected frequency of the allele in each Cabo Verdean population is approximately equal to the West African ancestry contribution. Using the observed global ancestry proportion inferred with admixture (Alexander and Lange, 2011) as an estimate of the ancestry contribution from West Africa to each island, we found that the Duffy-null allele is at a higher frequency than expected under neutrality for the island of Santiago, but not the other regions of Cabo Verde (Figure 1\u2014figure supplement 2, Table 1, binomial test, Santiago: $p=2.193\\times10^{\u22125}$; Fogo: $p=0.1915$; NW Cluster: $p=0.8172$).\n\n**Table 1.**\n Expected and observed Duffy-null allele frequencies for each island and source population.Expected Duffy-null frequencies are approximated by mean West African global ancestry proportion for each island, calculated using the admixture software.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Population</th>\n      <th>n (sampled individuals)</th>\n      <th>Expected frequency</th>\n      <th>Observed frequency</th>\n      <th>Binomial test p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Santiago</td>\n      <td>172</td>\n      <td>0.737</td>\n      <td>0.834</td>\n      <td>2.193\u00a0\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>Fogo</td>\n      <td>129</td>\n      <td>0.498</td>\n      <td>0.539</td>\n      <td>0.192</td>\n    </tr>\n    <tr>\n      <td>NW Cluster</td>\n      <td>236</td>\n      <td>0.552</td>\n      <td>0.557</td>\n      <td>0.817</td>\n    </tr>\n    <tr>\n      <td>GWD</td>\n      <td>107</td>\n      <td>0.997</td>\n      <td>1.000</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>IBS</td>\n      <td>107</td>\n      <td>0.002</td>\n      <td>0.019</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n### Long, high-frequency West African ancestry tracts span the DARC locus on Santiago\n\nThe distribution of the lengths of ancestry tracts spanning a selected locus can provide information for detecting and characterizing selection beyond single-locus outlier tests. In the case of recent admixture and strong selection, we might generally expect to see a parallel increase in local ancestry proportion in the regions surrounding the beneficial locus because the beneficial allele increases before recombination can break up large surrounding ancestry blocks. This is analogous to the increase in linkage disequilibrium and homozygosity in non-admixed populations (Sabeti et al., 2002; Kim and Nielsen, 2004; Voight et al., 2006). Figure 2A plots ancestry tracts that span the DARC locus for individuals from Santiago. As expected from source population allele frequencies, the Duffy-null allele is contained on all West African ancestry tracts spanning the locus and not found on any European ancestry tracts. Consistent with recent selection, West African ancestry tracts are longer and in higher frequency than European ancestry tracts covering the region. The median West African ancestry tract length spanning the locus is\u00a0~85 Mb, while the median European tract length is\u00a0~39 Mb.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig2-v2.jpg)\n\n**Figure 2.:** (A) The distribution of West African (purple) and European (green) ancestry tract lengths spanning the DARC locus (dashed line). Each horizontal line represents a single chromosome in the population (n\u00a0=\u00a0343, one chromosome was excluded due to having unknown ancestry at the DARC locus). (B) Decay in Ancestry Tract (DAT) as function of absolute distance from the Duffy-null allele for West African (purple) and European (green) ancestry tracts. (C) Mean standardized integrated DAT (iDAT) score for 20 Mb sliding windows (step size\u00a0=\u00a01 Mb), using standardized iDAT for 10,000 random positions across the genome. Horizontal solid gray line indicates mean windowed standardized iDAT score (\u22120.196), and horizontal dashed gray lines indicate three standard deviations from the mean windowed score. The red dot is the most extreme windowed standardized iDAT score (\u22122.602), indicative of a larger area under the curve for West African DAT compared to European DAT. This 20 Mb window contains the Duffy-null SNP.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Solid gray lines indicate mean windowed standardized iDAT score for each island (Fogo, 0.006; NW Cluster, \u22120.024) and dashed gray lines indicate three standard deviations from the mean. Vertical dashed red lines indicate the DARC locus, which is not an outlier for either Fogo or the NW Cluster.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Summary statistics were calculated from a random sample of 172 individuals from each simulated population, matching the number of individuals from Santiago included in our analyses. High population size models correspond to initial N\u00a0=\u00a010,000, low population size (high drift) models correspond to initial N\u00a0=\u00a01000. Exponential growth model corresponds to a rate of 0.05 per generation. Continuous migration refers to 1% total new migrants each generation, at the same proportions as initial admixture contributions for each source population. Vertical red line represents each measure\u2019s observed value for Santiago.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Simulations shown assumed a single pulse of admixture with exponential growth at a rate of 0.05 per generation and an initial population size of N\u00a0=\u00a010,000. Initial admixture contributions were drawn from a uniform distribution from 0.65 to 0.75. Summary statistics were calculated from a random sample of 172 individuals from each simulated population, matching the number of individuals from Santiago included in our analyses. Genetic maps correspond to the population-averaged IMPUTE2 map, Iberian Population in Spain\u00a0(IBS)-specific genetic map, Gambian in Western Division\u00a0(GWD)-specific genetic map, and African American (AA)-specific genetic map. Vertical red line represents each measure\u2019s observed value for Santiago.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Each plot corresponds to number of generations since admixture (10 \u2013 left; 100 \u2013 middle; 1000 \u2013 right). Line and point colors correspond to source population one admixture contribution at $m=0.1$ (gray), $m=0.5$ (yellow), and\u00a0$m=0.9$ (blue). Within each plot, the x-axis shows selection strength for the simulated variant at the Duffy-null position, and the y-axis shows the proportion of Duffy-null iDAT values from the selection simulations that are in the bottom fifth percentile of the simulated neutral Duffy-null iDAT distribution. Notably, iDAT cannot be calculated for variants that are fixed in the population, as was the case for many simulations of older admixture (100 or 1000 generations) and high admixture proportion (m\u00a0=\u00a00.9) and/or stronger selection. This is reflected in the statistic\u2019s performance under these scenarios.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Line and point colors correspond to simulated human chromosome and corresponding size (chr 1 \u2013 green; chr 7 \u2013 blue; chr 15 \u2013 yellow; chr 22 \u2013 gray). X-axis shows DAT cut-off values, and y-axis shows proportion of iDAT values at the simulated variant under selection that are in the bottom fifth percentile of simulated neutral iDAT values.\n\nIn order to test if the observed local ancestry patterns are suggestive of selection beyond genome-wide ancestry proportion, we developed a summary statistic based on the length and frequency of the tract-length surrounding a locus. The integrated Decay in Ancestry Tract (iDAT) score compares the rate of decay of ancestry tract lengths as a function of distance from a site of interest (Figure 2B; see Materials\u00a0and\u00a0methods for details and performance of iDAT statistic under various demographic scenarios). The statistic is analogous to the commonly used integrated haplotype score (iHS) (Voight et al., 2006), but considers local ancestry tracts instead of haplotypes. Negative values for iDAT indicate longer West African ancestry tracts at higher frequencies compared to European ancestry tracts. Positive values indicate longer European ancestry tracts at higher frequencies compared to West African ancestry tracts. Windows that contain multiple extreme values of iDAT provide stronger evidence for recent selection. Figure 2C plots iDAT values along the genome for individuals from Santiago. Values are calculated by averaging over 20 Mb sliding windows (step size of 1 Mb) for 10,000 random standardized iDAT scores. Notably, in Santiago, the DARC gene is contained in the window with the lowest iDAT score in the genome (Figure 2C; window iDAT score\u00a0=\u00a0\u22122.602). iDAT scores near the DARC locus are not outliers in other island regions (Figure 2\u2014figure supplement 1).\n\n### Ancestry-based signatures for Santiago cannot be explained by drift alone\n\nIn order to estimate the expected distribution of ancestry within the population and test if the values of various summary statistics for the DARC locus on Santiago can be explained by drift alone, we conducted neutral simulations in SLiM (Haller and Messer, 2019) (Materials\u00a0and\u00a0methods). We calculated the following five summary statistics for each simulated population: the West African local ancestry proportion at DARC, the variance in the frequency of West African local ancestry across SNPs on chromosome 1, the median and mean West African ancestry tract length containing the Duffy-null allele, and the unstandardized iDAT score for the Duffy-null SNP. The variance in local ancestry along the chromosome provides a non-LD-based measure to capture high frequency and long tracts of West African ancestry using the population-wide measures of local ancestry for each SNP on the chromosome. Studies of demographic history and selection in recently admixed populations often assume constant population size and a single admixture event to simplify simulations. In order to confirm that assumptions about demographic history do not change our expectations, we considered multiple scenarios of population growth, differences in population size, and models of both constant contributions and single admixture events (Table 2). The values for the summary statistics for Santiago generally lie outside our expectations for all models, especially considered jointly (Figure 2\u2014figure supplement 2).\n\n**Table 2.**\n Demographic models used for single-chromosome neutral simulations relevant to Cabo Verde demographic history.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Initial population size (N)</th>\n      <th>Population growth model</th>\n      <th>Population growth rate (per generation)</th>\n      <th>Admixture type</th>\n      <th>Proportion of new migrants (per generation)</th>\n      <th>Scenario number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">1000</td>\n      <td rowspan=\"2\">Constant size</td>\n      <td rowspan=\"2\">-</td>\n      <td>Single-pulse</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Continuous</td>\n      <td>0.01</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Exponential</td>\n      <td rowspan=\"2\">0.05</td>\n      <td>Single-pulse</td>\n      <td>-</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Continuous</td>\n      <td>0.01</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">10,000</td>\n      <td rowspan=\"2\">Constant size</td>\n      <td rowspan=\"2\">-</td>\n      <td>Single-pulse</td>\n      <td>-</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Continuous</td>\n      <td>0.01</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Exponential</td>\n      <td rowspan=\"2\">0.05</td>\n      <td>Single-pulse</td>\n      <td>-</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Continuous</td>\n      <td>0.01</td>\n      <td>8</td>\n    </tr>\n  </tbody>\n</table>\n\nTogether, these summary statistics provide suggestive evidence that the DARC locus has been under positive selection on the island of Santiago since admixture started ~20 generations ago. To formally test this hypothesis, we extended the SWIF(r) framework developed by Sugden et al., 2018. SWIF(r) is a machine learning classification framework that explicitly learns the joint distributions for a set of features and returns a posterior probability of positive selection at a site of interest. It is particularly useful for handling summary statistics that are correlated, such as the length and frequency of ancestry tracts. We trained SWIF(r) using data simulated in SLiM and estimated the posterior probability of positive selection at the DARC locus using the five ancestry-based measures (Materials\u00a0and\u00a0methods). SWIF(r) returned a high posterior probability of positive selection at DARC on Santiago starting 20 generations ago ($P>0.999$).\n\n### Classical haplotype-based signatures of selection not detected at the\u00a0DARC locus\n\nThe haplotype-based statistic, iHS, is often used to detect signatures of recent positive selection and partial selective sweeps (Voight et al., 2006), particularly in non-admixed populations. This statistic has been used as evidence of selection in recently admixed populations (Fernandes et al., 2019; Reynolds et al., 2019; Norris et al., 2020). However, the process of admixture results in the mixture of differentiated allele frequencies and diverged haplotypes, so interpretation of these statistics is difficult and applicability is limited. We demonstrate this by calculating iHS for all SNPs in our data\u00a0set for each island region and performing the common standardization based on allele frequencies, using the software hapbin (Maclean et al., 2015). Figure 3 shows the distribution of absolute standardized iHS values along the genome for each island population, with the Duffy-null SNP indicated by the orange dot and flag. The absolute iHS values for all islands at the Duffy-null SNP are low. That is, the commonly\u00a0used statistic iHS does not detect significant signatures of selection at the Duffy-null SNP position. This analysis, and other summaries of variation that do not account for the allele frequency and LD changes associated with admixture, may be detecting the high diversity in the African source populations rather than post-admixture selection. Without considering the process of admixture, we should be skeptical of the utility of these statistics in recently admixed populations. This emphasizes the importance of new methods that are admixture-aware.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig3-v2.jpg)\n\n**Figure 3.:** iHS was calculated using the hapbin software and standardized using the default method based on allele frequencies. (A) Santiago, (B) Fogo, and (C) NW Cluster. Value for Duffy-null SNP is indicated by orange dot and white label. Duffy-null iHS value is nonsignificant in all island regions.\n\n### Strong selection inferred at the\u00a0DARC locus in Santiago\n\nBeyond identifying selection, inference of the strength of selection is informative about the evolutionary processes shaping human genomes. We used two complementary approaches to infer the strength of selection at the DARC locus. First, we considered a deterministic classical population-genetic model of selection based on the trajectory of allele frequencies over time on a grid of possible dominance and selection coefficients (Materials\u00a0and\u00a0methods). The estimate of the selection coefficient depends on dominance; past studies have modeled Duffy-null as recessive (Hodgson et al., 2014), dominant (Pierron et al., 2018), and additive (McManus et al., 2017) when estimating selection strength in other human populations. Figure 4A plots the selection strength ($s$) as a function of the dominance coefficient ($h$) of the Duffy-null allele for a set of three realistic initial frequencies, assuming 20 generations of constant selection strength. Functional studies suggest that heterozygotes have at least partial protection against P. vivax infection (Cavasini et al., 2007; Sousa et al., 2007; Gething et al., 2012; Kano et al., 2018); while not an exact correlate for population-genetic model parameters, this suggests that the Duffy-null allele is unlikely to be fully recessive or fully dominant. Taking the mean of selection coefficients for $0.2\\leqh\\leq0.8$, we estimate the selection coefficient for each initial frequency, $s_{0.65}=0.106$, $s_{0.70}=0.082$, and $s_{0.75}=0.056$, where $s_{p_{o}}$ is the inferred selection coefficient for initial allele frequency $p_{o}$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig4-v2.jpg)\n\n**Figure 4.:** (A) Pairs of $s$ and $h$ that result in a small difference in final allele frequency calculated under the model and the allele frequency observed in the Santiago genetic data,\u00a0$\u00a0|p_{20}\u2212p_{Duffy}|<0.01$ under a deterministic population genetic model. Colors indicate the initial Duffy-null frequency: $p_{o}=0.65$, black; $p_{o}=0.70$, dark gray; $p_{o}=0.75$, light gray. (B) Approximate Bayesian computation\u00a0(ABC) estimates of the selection coefficient for Duffy-null on Santiago. Shaded gray area shows prior distribution of selection coefficient [$s\u223cU(0,0.2)$]. Dark gray histogram shows posterior distribution for selection coefficient (median = 0.0795), constructed from regression-adjusted values from accepted simulations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Duffy-null allele was modeled as additive (blue; $h=0.5$), dominant (yellow; $h=1$ in SLiM), or recessive (pink; $h=0$ in SLiM). Posterior median estimates for selection coefficient: $s_{rec}=0.052$, $s_{add}=0.0795$, $s_{dom}=0.183$; initial ancestry contribution: $m_{rec}=0.697$, $m_{add}=0.690$, $m_{dom}=0.665$. Prior distributions were $s\u223cU(0,0.2)$ and $m\u223cU(0.1,0.9)$.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Selection coefficient ($RMSE=0.0083$, $R^{2}=0.9785$) and (B) initial West African admixture contribution ($RMSE=0.0090$, $R^{2}=0.9985$).\n\nSecond, we used a simulation and rejection framework, approximate Bayesian computation (ABC), to jointly infer the selection coefficient and initial West African contribution while allowing for drift (Materials\u00a0and\u00a0methods). We used the five ancestry-based summary statistics described previously. We assumed an additive model, a single admixture event, and exponential growth in the population. Taking the median of the posterior distribution as the point estimate for selection coefficient, we estimated $s=0.0795$ (Figure 4B; see Figure 4\u2014figure supplement 1 for estimates of $s$ when modeling Duffy-null as either a dominant or a recessive mutation). This estimate of selection coefficient is consistent with those estimated under the deterministic population-genetic model.\n\n### Selection at a single locus impacts genome-wide ancestry estimates\n\nMean global ancestry proportion is often used as an estimate for initial ancestry contributions for admixed populations (Moreno-Estrada et al., 2013; Hellenthal et al., 2014; Bryc et al., 2015; Mathias et al., 2016; Laso-Jadart et al., 2017; Patin et al., 2017; Fernandes et al., 2019). However, our ABC estimates of the initial contributions from West Africa are lower than the mean ancestry currently observed in Santiago. The median of the posterior of initial contributions from West Africa is 0.690, with the middle 50 percentile of observed values in [0.682,0.697] (Figure 5A). In contrast, the observed mean ancestry in Santiago (Figure 1B) is 0.737. While this particular difference in observed and inferred founding contributions may be due to sampling biases or other neutral processes, it raises the more general question of how strong selection at a single locus may impact genome-wide ancestry patterns. We hypothesized that selection at DARC may have increased the genome-wide West African ancestry proportions in the current population of Santiago.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig5-v2.jpg)\n\n**Figure 5.:** (A) Inferred (dark gray), simulated (white), and observed (red) mean of global ancestry in Santiago over time. The dark gray histogram plots the posterior distribution for initial $(g=1)$ West African ancestry contribution inferred using approximate Bayesian computation\u00a0(ABC) (median, 0.690); the prior distribution [$m\u223cU(0.1,0.9)$] is in light gray. The red line plots the mean global ancestry estimated by admixture from modern genetic data from Santiago, 0.737. The observed global ancestry is higher than most values of the initial contributions inferred in dark gray. The white histogram plots the distribution of West African global ancestry proportion calculated after 20 generations in populations simulated with selection coefficients and initial ancestries drawn from the ABC-inferred values (median, 0.723). The global ancestry calculated after 20 generations of simulated selection (white) more closely matches that observed from Santiago genetic data (red line). (B) West African mean global ancestry proportion calculated for 500 simulated populations after 20 generations under varying single-locus selection coefficients, $s$. We simulated whole autosomes, setting the initial West African ancestry contribution to 0.65. Black circles indicate mean ancestry on chromosome 1 alone. Gray circles indicate mean ancestry on the other autosomes (2\u201322). The increase in ancestry with selection for gray circles demonstrates that selection impacts global ancestry beyond the local effects of the chromosome under selection.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Pink circles indicate West African mean global ancestry after 20 generations versus selection coefficient for whole autosome (22 chromosome) simulations, using a uniform recombination rate within each chromosome. Green triangles represent mean weighted ancestry for chromosome 1 and chromosome 2, with chromosome 2 representing the 92% of the genome that segregates independently from chromosome 1, using a human genetic map for recombination rates. We performed 500 simulations for each model, and all simulations started with West African ancestry contribution of 0.65. The estimated slope and intercept for the two methods of simulating global ancestry are highly similar. ANCOVA results suggest there is a significant effect of selection coefficient on global ancestry: F(1,997)\u00a0=\u00a01.0519 \u00d7\u00a0104, p\u00a0<\u00a02 \u00d7\u00a010\u22126, but there is no significant effect of recombination rate and simulation model on global ancestry estimate after controlling for selection coefficient: F(1,997) = 1.6350\u00a0\u00d7\u00a010\u22121, p\u00a0=\u00a00.686.\n\nTo test the genomic consequences of post-admixture selection at a single locus, we simulated whole human autosomes under a model of exponential growth and a single admixture event with selection at a single locus. We first considered a model based on the history of Santiago, using the posterior distributions of selection coefficient and initial West African ancestry contribution as parameters for the simulations (Materials\u00a0and\u00a0methods). Figure 5A plots the estimated posterior distribution of initial West African contribution in dark gray and the simulated distribution of global ancestry after 20 generations in white. The distribution of global ancestry in the populations simulated with selection (median 0.723, white) is noticeably higher than the initial contributions specified in the simulations (median 0.690, dark gray). This demonstrates that selection at a single locus is a plausible mechanism to increase mean global ancestry in an admixed population under a scenario similar to Santiago.\n\nTo explore the mechanism and relationship between selection strength at a single locus and genome-wide ancestry patterns, we simulated whole autosomes, assuming a single admixture event with initial West African ancestry contribution at 0.65 and selection coefficient varying from 0 to 0.2 at a single locus on chromosome 1. Figure 5B plots the mean ancestry for chromosome\u00a01 and the other 21 autosomes in each simulated population after 20 generations as a function of the selection coefficient at a single locus. Perhaps surprisingly, mean ancestry on chromosomes 2\u201322 also increases with selection strength (gray), indicating that global ancestry increases beyond the contribution of higher ancestry on the selected chromosome alone (black). Together, this evidence suggests that strong selection at the DARC locus over 20 generations may have skewed global ancestry in Santiago and raises potential biases with a statistic that is often used to infer neutral demographic histories.\n\n## Discussion\n\nUsing adaptation to malaria in the admixed population of Cabo Verde as a case study, we have demonstrated that admixture can facilitate adaptation in merely tens of generations in humans. Developing methods to identify and characterize post-admixture selection, we found that this rapid adaptation leaves detectable genomic signatures (Figures 1 and 2), with potential genome-wide consequences (Figure 5). Combining inference under two complementary methods, and under a range of possible dominance coefficients and initial allele frequencies, we estimated selection strength of $s\u22480.08$ for the Duffy-null allele in Santiago (Figure 4). Our estimate is consistent with other studies that\u00a0have inferred the strength of selection for Duffy-null ranging from\u00a0~0.04 (modeled under additive selection) in sub-Saharan African populations (McManus et al., 2017) and\u00a0~0.07 (modeled as recessive) to\u00a0~0.2 (modeled as dominant) in a Malagasy population with admixed African ancestry (Hodgson et al., 2014; Pierron et al., 2018). Our estimated strength of selection for Duffy-null is among the highest inferred for a locus in any human population.\n\nIntrogression of an adaptive allele can facilitate adaptation on short timescales, particularly for traits with large effects from single loci. When ancestry contributions from multiple sources are high, such as is common in recent human admixture, selection post-admixture can be a faster mode of adaptation, similar to selection on standing variation (Hermisson and Pennings, 2005; Hedrick, 2013).\n\nCommonly\u00a0used ancestry outlier approaches have identified candidate regions for admixture-enabled adaptation in many populations; for example, at the HLA and LCT regions in Bantu speaking populations (Patin et al., 2017), the MHC locus in Mexicans (Zhou et al., 2016), and adaptation to high-altitude at EGLN1 and EPAS1 in Tibetans (Jeong et al., 2014). However, results from this framework alone can be difficult to interpret because drift post-admixture may substantially change allele frequencies and the distribution of local ancestry within and between individuals (Bhatia et al., 2014; Belbin et al., 2018; Calfee et al., 2020). Further, recessive deleterious variation masked by heterosis can similarly cause a signal of increased introgressed ancestry, especially in regions of low recombination (Kim et al., 2018). As a result, outlier approaches may have increased rates of false-positive detection of regions under selection. One recent approach modeled local ancestry deviations based on individual-level global ancestry distributions; however, determining a significance threshold for local ancestry deviations remains difficult (Busby et al., 2017). Outlier approaches also discard local haplotype information and are not informative about the selection strength or timing. Instead, we developed a suite of methods to identify and characterize selection post-admixture: the iDAT summary statistic, application of the SWIF(r) framework to estimate the probability a locus is under selection in an admixed population, and an ABC framework to jointly infer selection strength and initial admixture contributions (Materials\u00a0and\u00a0methods).\n\nMethods to detect adaptation driven by alleles introduced through gene flow in human populations have typically focused on ancient admixture between highly diverged populations, often with small contributions from one of the sources (Racimo et al., 2017; Jagoda et al., 2018; Setter et al., 2020). Recent advances leverage patterns of ancestry to consider recent admixture, though perform best for events at least hundreds of generations ago (Svedberg et al., 2020). Instead, we emphasize admixed populations as a model for adaptation on historical timescales, with selection dramatically changing genomic variation within tens of generations. This timescale is important for elucidating human history and has implications for conservation genetics and ecology in other organisms. Additionally, our summary statistic approach can be flexibly applied in a variety of inference methods. For example, our implementation in a likelihood-free ABC framework allows for flexible population history models fit to the population of interest. This approach moves beyond identification of loci under selection, allowing joint inference of selection and population history parameters.\n\nWe apply these methods to characterize post-admixture adaptation in the Cabo Verdean island of Santiago. The Cabo Verdean populations have a number of advantages for identifying and interpreting selection over the last\u00a0~500 years. First, the island geography minimizes within-population structure and provides comparison island populations with shared ancestry components to partially account for demography. Second, historical records give a clear boundary for the earliest onset of selection in the admixed population, based on the initial occupation and admixture in the 1460s (~20 generations in the past). Further, the European and West African source populations have high levels of genetic divergence for human populations, improving local ancestry assignment accuracy. Though errors in phasing or local ancestry assignments are possible and should be considered if applied to other scenarios, it is unlikely that such errors would create signatures as extreme and long\u00a0ranging as we observe in Santiago.\n\nWe inferred that the Duffy-null allele rapidly increased in frequency after admixture as a result of its adaptive resistance to P. vivax infection. While we consider this to be the strongest candidate locus, given the large ancestry tracts, it is possible that selection at other nearby loci is responsible for the observed ancestry patterns. The Duffy-null allele shows extreme geographic differentiation, being nearly fixed in sub-Saharan African populations and mostly absent in non-African populations (Mercereau-Puijalon and M\u00e9nard, 2010; Howes et al., 2011; Gething et al., 2012 ), and multiple populations with ancestry from sub-Saharan Africa show evidence for admixture-enabled adaptation throughout human history at the DARC locus (Hodgson et al., 2014; Triska et al., 2015; Busby et al., 2017; Laso-Jadart et al., 2017; Pierron et al., 2018; Fernandes et al., 2019). Further, the Duffy-null allele has well-characterized functional protection against P. vivax, a malaria parasite with a documented record of recurrent transmission in Santiago since settlement.\n\nWe demonstrated how selection at the DARC locus may have affected patterns of ancestry genome-wide (Figure 5). The initial admixture contributions inferred under our model were lower than those observed in Santiago today, and we confirmed this pattern more generally in simulations. Population-genetic studies often use loci far from potentially selected sites as putatively neutrally\u00a0evolving loci, or treat many dispersed loci as neutral based on the assumption that a few selected sites will not dramatically change genome-wide distributions of summary statistics. However, we found that selection on a single locus may shape patterns of ancestry genome-wide. Individuals with higher genome-wide proportions of ancestry from the source population carrying the beneficial allele are more likely to have a selective advantage in early generations post-admixture as recombination has yet to uncouple global ancestry proportion and the local ancestry of the selected allele (Pierron et al., 2018). The genome-wide consequences of adaptation at a single-locus were previously proposed by Pierron et al., 2018. However, the scale of simulations was limited, and the extent of this effect on the selected chromosome versus the rest of the genome was not explored. Using whole-genome simulations, we demonstrated that selection on an allele on chromosome 1 increases ancestry proportion on chromosomes 2\u201322; that is, the increase in global ancestry is not exclusively owing to an increase in ancestry on the selected chromosome (Figure 5B). We also showed that this effect can be detected over a range of moderate to strong selection coefficients. Finally, we illustrated how this effect may explain the discrepancy in our observed global ancestry and inferred initial admixture contributions for Santiago (Figure 5A). Therefore, since global ancestry is often used to infer initial admixture contributions, these and related demographic inferences may be biased under the common assumption that genome-wide patterns of ancestry reflect demography alone. Importantly, the change in global ancestry will likely have long-term consequences even if adaptation is relaxed. In the absence of negative selection, ancestry is not expected to revert to initial admixture proportions. Instead, drift will not change global ancestry in a specific direction, and the population will evolve neutrally with this new ancestry proportion (Pierron et al., 2018).\n\nDifference in observed and simulated global ancestry may be caused by a variety of statistical and evolutionary processes beyond selection, including sampling, estimation method, demographic model misspecification, different rates of migration over time, or drift. Regions aside from DARC may also have been under selection post-admixture in Santiago and therefore affected the global ancestry patterns. For example, it is possible there are other genetic associations with P. vivax susceptibility; however there are not many published and well-characterized examples (Zimmerman et al., 2013). Further, only mutations with large effects, such as the Duffy-null allele, are likely to show significant allele frequency deviations or ancestry-based signatures of selection in just 20 generations.\n\nWe also observed a cluster of extreme negative iDAT values on chromosome 16 [~chr16: 48,000,000\u201360,000,000] that may be of interest for future study. The 10 annotated genes in this region and associated gene ontology terms are included in Supplementary file 1. A cursory literature search returned no known associations with malarial response in this region, and it is more difficult to draw conclusions on selection history in this region without a prior hypothesis. That said, we note that this region does not show high proportions of West African ancestry compared to the genome-wide distribution (Figure 1\u2014figure supplement 1). The extreme iDAT values in this region may be influenced by its adjacence to the centromere, which may affect the length of ancestry tracts.\n\nGenerally, we suggest that iDAT should be used as one line of evidence alongside other summaries of variation, such as those used in our ABC estimation and expected allele frequency calculations. Moreover, in the case of Duffy-null, we had a strong prior expectation for positive selection for the West African haplotype. Analogous to biallelic selection scenarios, with admixture between two source populations, it is difficult to distinguish between positive selection for one ancestry and negative selection for the other ancestry.\n\nAnother important limitation for ancestry-based methods of detecting selection in admixed populations is that they are best suited for scenarios wherein frequencies of a selected allele differ greatly between source populations, as is the case with Duffy-null. If an allele is present at similar frequencies in the source populations (i.e. regions of low $F_{ST}$ between source populations), selection will likely affect both ancestries in the admixed population similarly. Future studies into the adaptive histories of admixed populations should consider this limitation on the pool of potentially adaptive variants that can be detected using ancestry-based analyses.\n\nThe framework developed here is broadly applicable to detect and characterize selection in other recently admixed human and non-human populations. For most analyses, we assumed a single admixture event 20 generations in the past. The simulation software we use, SLiM, makes it straightforward to consider other models of population history specific to populations of interest for future studies. Further research into the interaction of selection and demography will refine inference. Additionally, while the timing of admixture in Cabo Verde is well documented, our ABC approach may be extended to infer the timing of selection and admixture as well, as the tract length distribution is informative about these parameters (Gravel, 2012; Liang and Nielsen, 2014; Korunes et al., 2020). Indeed, we demonstrated the need to jointly infer selection and demographic histories.\n\n## Materials and methods\n\n### Genetic data and ancestry inference\n\nFor this study, we used SNP array data from Beleza et al., 2013 which included 564 admixed individuals across the island regions of Cabo Verde. From this data\u00a0set, we filtered individuals with greater than 5% missing calls overall or greater than 10% missing calls on a single chromosome. This resulted in removal of one individual with high missingness on chromosome 14 (11.36%). We merged genotypes for the remaining 563 individuals with genotypes from 107 IBS (Iberian Population in Spain) and 107 GWD (Gambian in Western Division \u2013 Mandinka) samples from high-coverage resequencing data released through the International Genome Sample Resource (Clarke et al., 2017; Fairley et al., 2020). Our analyses considered autosomal chromosomes only. We selected biallelic SNPs occurring in both the Cabo Verde samples and the reference samples. The final merged data\u00a0set contained 884,656 autosomal SNPs. Average missingness by SNP was 0.0017.\n\nUsing the 884,656 autosomal SNP data\u00a0set, we performed phasing with SHAPEIT2 using the Phase 3, NCBI build 37 (hg19) reference panel of haplotypes and associated genetic map in IMPUTE2 format (Delaneau et al., 2013). Following the SHAPEIT documentation, we first ran SHAPEIT \u2013check to exclude sites not contained within the reference map, followed by SHAPEIT phasing to yield phased genotypes at 881,279 SNPs. For local ancestry inference, we ran RFMix v1.5 on the phased samples using a two-way admixture model (Maples et al., 2013). We used the RFMix PopPhased program with default window size, the --use-reference-panels-in-EM option, -e\u00a0=\u00a02 (2 EM iterations), and --forward-backward. Ancestry references for European and West African source populations, respectively, were IBS and GWD.\n\nWe observed a low overall proportion of regions within a given individual\u2019s genome assigned as \u2018unknown\u2019 local ancestry by RFMix. The mean and median genome-wide proportion of unknown ancestry in our data\u00a0set were 0.0089 and 0.0083, respectively. Typically, more than 99% of each individual\u2019s genome could be assigned as either West African or European ancestry. Coupled with the fact that there is little historical or genetic evidence of migration from non-West African or non-European populations to Cabo Verde (Carreira, 1983; Verdu et al., 2017; Korunes et al., 2020), we find it is unlikely that individuals in our data\u00a0set have high proportions of recent ancestry from a non-European or non-African source population.\n\nTo validate our phase imputation and RFMix local ancestry calls, we also performed local ancestry assignment using a second method, ELAI, which performs its own independent phasing prior to calling local ancestry (Guan, 2014). We ran ELAI under a two-way admixture model, again using IBS and GWD genotypes as references for the source populations. We set the parameters -mg (number of generations) to 20, -s (EM steps) to 30, -C (upper clusters) to 2, and -c (lower clusters) to 10, based on the 5 \u00d7 C recommendation from the ELAI documentation. The estimates of each individual\u2019s average genome-wide ancestry are highly correlated between ELAI and RFMix (Pearson\u2019s R\u00a0= 0.9964; p < 1 \u00d7 10\u22128).\n\nGlobal ancestry inferred in admixture (Alexander and Lange, 2011) was averaged over 10 independent runs with randomly chosen seeds using supervised cluster mode with the GWD and IBS individuals specified as the reference populations. Our estimates of global ancestry by individual from admixture are consistent with those of RFMix (Pearson\u2019s R\u00a0= 0.9973; p < 1 \u00d7 10\u22128).\n\nThe island of Boa Vista was excluded from analyses due to our small sample from the region (26 individuals), leaving a final set of 537 individuals across the three island regions considered in this study (Santiago: 172, Fogo: 129, NW Cluster: 236; Figure 1A).\n\nLocal ancestry calls can be found at https://doi.org/10.5281/zenodo.4021277.\n\n### iDAT score\n\nIn order to account for global ancestry patterns that contribute to the ancestry tract-length distribution when identifying loci under selection post-admixture, we developed the iDAT score. This statistic quantifies the length and homozygosity of the tract-length distribution by comparing the decay of tract lengths from alternate ancestries at increasing distance from a site of interest.\n\nFirst, we describe the Decay in Ancestry Tract (DAT) feature, which is calculated similar to expected haplotype homozygosity (EHH) (Sabeti et al., 2002), using local ancestry tracts rather than haplotypes. For each source population $i$ we calculate:\n\n$$\nDAT_{i}x=\\frac{n_{x}}{n}^{2},\n$$\n\nwhere $n_{x}$ is the number of ancestry tracts that extend some absolute distance $x$ from a position of interest, and $n$ is the total number of ancestry tracts (extending in either direction) that contain the site of interest. We calculate DAT at increasing distances from the site of interest. Similar to integrated haplotype homozygosity (iHH) (Voight et al., 2006), we then calculate the area under the curve for DAT as a function of distance from the position of interest, producing iDAT (Figure 2B). For this study, we calculated iDAT only for distances where $DAT\\geq0.25$, that is, where at least half of the ancestry tracts extend that absolute distance from the site of interest. We compare the difference in order of magnitude between iDAT for each ancestry, analogous to the integrated haplotype score (iHS), we have,\n\n$$\niDATscore=ln\u2061(\\frac{iDAT_{2}}{iDAT_{1}}),\n$$\n\nwhere iDATi is the iDAT calculated for source population i. The length of ancestry tracts, and therefore the iDAT score, will be influenced by relative ancestry contributions from each source population. So, when possible, we standardized the iDAT score using the empirical distribution of iDAT scores for 10,000 random positions across the genome. In this way, we deviate from the calculation of standardized iHS, which is standardized by the empirical distribution of SNPs with the same allele frequency because the length of haplotypes will be affected by the age of a variant (Voight et al., 2006). In the case of admixed populations, we instead need to account for the effect of global ancestry proportion on ancestry tract lengths, where the majority ancestry will tend to have longer contiguous tracts. We standardized by the genome-wide empirical distribution of iDAT scores, rather than iDAT scores for variants with the same local ancestry proportion, because the variance in local ancestry across the genome can be heavily influenced by drift. That is, to standardize the iDAT score, we calculate\n\n$$\n\\frac{ln\u2061\\frac{iDAT_{2}}{iDAT_{1}}-Eln\u2061\\frac{iDAT_{2}}{iDAT_{1}}}{SDln\u2061\\frac{iDAT_{2}}{iDAT_{1}}}.\n$$\n\nBy standardizing against a genome-wide distribution of iDAT values, we can account for demographic parameters, such as admixture proportions and timing since admixture, that may affect the global iDAT distribution. Single-locus deviations from the genome-wide expectations may then be indicative of selection at that site, and may warrant further study.\n\n### Single-chromosome simulations\n\nWe used SLiM forward simulations with tree-sequence recording to track local ancestry (Haller et al., 2019; Haller and Messer, 2019). We considered eight different demographic scenarios: combinations of initial population size (N\u00a0=\u00a010,000 or N\u00a0=\u00a01000) with either a constant population size or exponential growth at a rate of 0.05 per generation, and either a single pulse of admixture at the start of simulation or continuous admixture at 1% total new migrants per generation (Table 2). The proportion of new migrants from each source population was weighted by the respective initial admixture contributions.\n\nFor each demographic scenario, we generated 1000 simulations of the human chromosome 1. For realistic recombination rates, we used the population-averaged human genetic map provided by IMPUTE2 (Delaneau et al., 2013) (https://mathgen.stats.ox.ac.uk/impute/1000GP_Phase3.html). We simulated admixture from two source populations to form a third admixed population (similar to recipe 17.5 in the SLiM manual) (Haller and Messer, 2016). One source population, representing the West African source population, was fixed for a neutral variant at the same position as the Duffy-null allele (chr1:159174683; GRCh37 coordinates in accordance with genetic map). Because the true West African ancestry contribution is unknown, for neutral simulations this parameter was drawn from a uniform distribution with lower and upper bounds at 0.65 and 0.75, respectively. We simulated the admixed population for 20 generations.\n\nUsing the tree-sequence files output from the SLiM simulations, we calculated the five ancestry-based summary statistics for each simulation: West African local ancestry proportion at DARC, variance in the distribution of West African local ancestry proportion across SNPs along the chromosome, mean and median West African ancestry tract length containing Duffy-null, and unstandardized iDAT score for the Duffy-null variant. We used the unstandardized iDAT score because there is no genome-wide distribution of iDAT scores for single-chromosome simulations. iDAT scores also could not be standardized using the distribution of simulated Duffy-null iDAT scores because each simulation had a different starting admixture proportion.\n\nWe sampled 172 individuals from each simulation and compared the simulated distribution to the observed values of the statistics for the 172 individuals from Santiago (Figure 2\u2014figure supplement 2). The genetic map provided by IMPUTE2 is population-averaged. To determine whether population-specific differences in recombination rate may affect our ancestry-based statistics, we performed the same neutral simulations and comparison to empirical data using one of three genetic maps: GWD or IBS maps from Spence and Song, 2019, or an African American\u00a0(AA) genetic map from Hinch et al., 2011. The expectations for mean and median tract length are affected by population-specific differences in recombination rate; however, because recombination rate affects both ancestries equally, the choice of genetic map does not change the expectation for iDAT score (Figure 2\u2014figure supplement 3). Of note, the AA genetic map contains regions with extremely high recombination rate, resulting in the extreme differentiation in expectation of tract lengths between simulations using this and the other genetic maps, and, in particular, shorter expected tract lengths. Using this map would inflate our estimates of selection strength under the ABC framework; we chose to use the more conservative and general-use IMPUTE2 genetic map for population-averaged recombination rates.\n\nAncestry tracts extend over large proportions of the chromosome at the timescale of interest for this study (~20 generations). Therefore, in this case, fine-scale recombination rate differences are not expected to significantly affect our expectations for ancestry-based statistics.\n\n### Performance of iDAT\n\nThe impact of different population size and migration scenarios on iDAT is summarized in the Materials\u00a0and\u00a0methods, under Single-chromosome simulations (Figure 2\u2014figure supplement 2). These scenarios are relevant for the population history of Cabo Verde. Here, in order to understand the general behavior and applicability of iDAT for future analyses, we extend the scenarios considered beyond those likely to represent Cabo Verdean history. We consider combinations varying the generations since admixture, the selection coefficient, the initial contribution from the source populations, different chromosome lengths for the position of the adaptive allele, and different DAT cut-offs.\n\nFirst, we considered the demographic history of the admixed population. Modifying the single-chromosome simulations described above, we conducted simulations setting the admixture timing to 10, 100, or 1000 generations in the past and admixture contribution from the source population with the adaptive allele to 0.1, 0.5, or 0.9. This source population was fixed for the variant at the Duffy-null position. We assumed a constant population size of N\u00a0=\u00a010,000 and a single-pulse of admixture. For each combination of admixture timing and admixture proportion, we generated 1000 simulations for each selection strength of $s=0$, $s=0.01$, $s=0.05$, or $s=0.1$. This resulted in 36 different scenarios and 36,000 simulations. For each simulation, we calculated iDAT for the variant at the Duffy-null position.\n\nTo interpret iDAT performance under these scenarios, we plot the proportion of Duffy-null iDAT values from the selection simulations that are in the bottom fifth percentile of the respective neutral Duffy-null iDAT distribution (Figure 2\u2014figure supplement 4). We compare within demographic models because admixture proportion has a strong influence on the expectation and possible range of iDAT values. We also note that iDAT values cannot be calculated when an allele has been fixed in a population, as observed in the older admixture scenarios with high selection strength and high starting admixture proportion from the selected ancestry. As such, this statistic may be more useful under recent admixture and selection (i.e., fewer than 100 generations in the past) with substantial admixture contributions from both source populations of interest.\n\nWe next sought to assess how chromosome size and choice of DAT cut-off value affect the expected distribution of iDAT values. For this, we performed simulations of human chromosomes 1 (~250 Mb), 7 (~160 Mb), 15 (~100 Mb), and 22 (~50 Mb), to capture a range of reasonable chromosome sizes. We used the associated IMPUTE2 genetic map for each of these simulations. For consistency across simulations, one source population was fixed for a variant at a position at 80% of the physical length of the chromosome. We again assumed a constant population size at N\u00a0=\u00a010,000 and a single pulse of admixture. Based on the demographic history of Cabo Verde, we assumed the modern-day West African ancestry proportion to be the initial admixture contribution of 0.73 from the source population providing the variant of interest. We simulated the admixed population for 20 generations. We generated 1000 simulations each of neutral ($s=0$) and strong selection scenarios ($s=0.05$). For each simulation, we calculated iDAT for the tracked variant for distances where $DAT\\geq0.25$ (following our main analyses), $DAT\\geq0.125$, $DAT\\geq0.0625$, and $DAT\\geq0.01$. We show the proportion of iDAT values for the simulated variant under selection that are in the bottom fifth percentile of the neutral distribution of iDAT values, for each chromosome size and DAT cut-off (Figure 2\u2014figure supplement 5).\n\nGenerally, on this timescale, selection strength, and admixture proportion, iDAT performs well across chromosome sizes and cut-off values. That said, we note that the cut-off of 0.25 works slightly better for the smallest human chromosome (chr 22), though we emphasize that its performance is not very different from the other cut-off values. Further, using lower cut-offs requires more computation time, and depending on the SNP density of the data\u00a0set, this may be an important consideration. We encourage future studies looking to detect signatures of selection using this statistic on smaller chromosomes or different admixture histories, particularly for non-human populations, to consider testing iDAT performance under their specific model of interest.\n\n### SWIF(r) implementation\n\nWe incorporated ancestry-based summary statistics and admixture simulations into the SWIF(r) framework developed by Sugden et al., 2018. For the simulated training set, we followed the single-chromosome simulation framework described above. We considered a single realistic demographic scenario for training: starting population size N\u00a0=\u00a010,000, exponential growth at a rate of 0.05 per generation, and single-pulse admixture with starting West African ancestry contribution randomly drawn from a uniform distribution from 0.65 to 0.75.\n\nFor simulations with selection at a single locus, we assumed an additive selection model ($h=0.5$). Selection coefficient was randomly drawn from a uniform distribution from 0 to 0.2. We calculated the five ancestry-based summary statistics for each simulation. Under this model, we generated 50,000 neutral simulations and 100 positive selection simulations for training; these training proportions are to reflect a prior probability of selection scenarios at 0.002. Since positive selection is relatively rare compared to neutral scenarios, SWIF(r) calibrates posterior probabilities according to this designated prior probability.\n\nTo validate this extension of SWIF(r), we generated a new set of 1000 neutral simulations and 1000 positive selection simulations. Figure 6 shows a precision-recall plot for a SWIF(r) implementation using the five ancestry-based statistics, a prior positive selection probability of 0.2% (reflecting the training set proportions above), and two classes (neutral or positive selection). Figure 6\u2014figure supplement 1 demonstrates SWIF(r) performance for each class and across values of admixture contribution and selection coefficient. This SWIF(r) implementation had a low rate of false-negative classification of neutral simulations as positive selection scenarios.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig6-v2.jpg)\n\n**Figure 6.:** With our ancestry-based measures, SWIF(r) achieved an area under the curve (AUC) of 0.966, where an AUC of 1 represents a classifier with perfect skill. Horizontal dashed line indicates the no-skill classifier for this data\u00a0set.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63177/elife-63177-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Confusion matrix with threshold P(selection)>0.5. There are no false positives in test set and a high rate of false negatives. (B) Scatterplot of initial admixture contribution vs selection coefficient. Points colored by P(selection) as estimated by SWIF(r). The majority of false-negative classifications (i.e. classifying selection scenarios as neutral) occurred with low starting admixture proportion or low selection strength. If we consider approximate Bayesian computation\u00a0(ABC) estimates for admixture proportion (~0.7) and selection strength (~0.08), Duffy-null on Santiago would sit around the transition from high to low rate of false negatives. SWIF(r) returned high probability for Duffy-null, P(selection)>0.999.\n\n### Inference of selection under a deterministic population-genetic model\n\nTo estimate the selection coefficient for the Duffy-null allele based on the dominance and the allele frequency trajectory over 20 generations, we used a deterministic population-genetic model of selection. We used the following recursion equation (Coop, 2020):\n\n$$\np_{t+1}=p_{t}+\\frac{p_{t}hs+q_{t}s1-h}{1-2p_{t}q_{t}sh-q_{t}^{2}s}p_{t}q_{t},\n$$\n\nwhere $p_{t}$ is the frequency of Duffy-null in a given generation $t$, $q_{t}$ is the frequency of the alternate allele in generation $t$, $s$ is the selection coefficient which is constant over time, and $h$ is the dominance coefficient (0 if Duffy-null is dominant, 1 if recessive, and 0.5 in an additive selective model). We calculated the allele frequency over a grid of values for pairs of $h\\in[0,1]$ and $s\\in[0,0.2]$ in 0.005 and 0.001 increments, respectively. Figure 4A shows the combinations of $h$ and $s$ that produce $|p_{20}\u2212p_{Duffy}|<0.01$, where $p_{20}$ is the calculated frequency of the selected allele after 20 generations and $p_{Duffy}$ is the observed frequency of Duffy-null in Santiago (0.834). Because the true initial allele frequency $p_{o}$ is not known, we performed the analysis for three reasonable starting allele frequencies: $p_{o}=0.65$, $p_{o}=0.70$, and $p_{o}=0.75$.\n\n### Inference of selection coefficient using ABC\n\nWe used an ABC framework with nonlinear regression (neural network) adjustment to jointly estimate the posterior distributions for selection strength acting on the Duffy-null allele and the initial West African ancestry contribution (R package \u2018abc\u2019, with \u2018neuralnet\u2019 method) (Csill\u00e9ry et al., 2012).\n\nWe followed the same simulation framework we previously described for our SWIF(r) positive selection simulations of chromosome 1, with the following demographic scenario for training: starting population size N\u00a0=\u00a010,000, exponential growth at a rate of 0.05 per generation, and single-pulse admixture. We assumed an additive selection model ($h=0.5$). The selection coefficient ($s$) and the initial West African ancestry contribution ($m$) were drawn from uniform prior distributions, $s\u223cU(0,0.2)$ and $m\u223cU(0.1,0.9)$. We generated 10,000 simulations for ABC inference and calculated the five ancestry-based summary statistics for each simulation.\n\nWe chose the tolerance and hidden layer sizes for ABC estimation based on the best combination of $RMSE$ and $R^{2}$ values for leave-one-out cross-validation under different combinations of these hyperparameters. We performed cross-validation for 1000 simulations. Estimation accuracy for this data\u00a0set was similar under a variety of hyperparameter choices. We set the number of units in the hidden layer to \u2018sizenet=2\u2019 and the acceptance rate to \u2018tol=0.05\u2019. For the cross-validation, our estimates of the selection coefficient had an $RMSE=0.0083$ and $R^{2}=0.9785$; our estimates of starting admixture proportion had an $RMSE=0.0090$ and $R^{2}=0.9985$ (Figure 4\u2014figure supplement 2).\n\n### Global ancestry simulations\n\nTo assess how selection at a single locus impacts genome-wide patterns of ancestry, we simulated changes in global ancestry over 20 generations (Figure 5). Whole autosome (22 chromosome) simulations with a realistic recombination map are computationally intensive. Instead, we took two complementary approaches.\n\nFirst, we performed whole autosome simulations (22 independently segregating chromosomes) in SLiM by specifying a 'crossover rate' between chromosomes of 0.5 per generation. We used the total lengths of autosomal chromosomes from the Human Genome Assembly GRCh37.p13 (https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh37.p13). We used a uniform recombination rate within each chromosome of $1\\times10^{-8}$ crossovers per base position per generation. We considered the following demographic scenario: starting population size N\u00a0=\u00a010,000, exponential growth at a rate of 0.05 per generation, and single-pulse admixture. Global ancestry was calculated by taking the mean West African ancestry proportion across the autosome.\n\nSecond, we performed two-chromosome simulations (modeled based on human chromosomes 1 and 2) in order to incorporate a human genetic map for realistic recombination rates. We again used the genetic maps provided by IMPUTE2 for chromosomes 1 and 2. Two-chromosome simulations were performed under the same demographic model as whole autosome simulations. Global ancestry was calculated by taking a weighted mean of ancestry for the two chromosomes, where chromosome 2 represented the contribution for the\u00a0~92% of the genome that segregates independently from chromosome 1.\n\nTo test how selection at a single locus affects global ancestry, we considered both whole autosome simulations and two-chromosome simulations, using a West African ancestry contribution of 0.65 for all simulations in the founding generation. We varied the selection coefficient for the simulated Duffy-null variant on chromosome 1 from 0 to 0.2. We assumed an additive selection model ($h=0.5$). The results are similar across simulation methods (Figure 5\u2014figure supplement 1).\n\nTo determine how our ABC estimates of initial West African ancestry contribution differ from final global ancestry after 20 generations of selection at the Duffy-null locus, we next simulated whole autosomes admixing for 20 generations drawing parameters from the previously inferred posterior distributions of the selection coefficient and initial ancestry contribution. Specifically, we used the paired estimates of selection coefficient and West African admixture contribution from each accepted simulation from the ABC analysis and passed those parameters as input for each whole autosome simulation; this produced a distribution of estimates of global ancestry for populations simulated with realistic selection and initial ancestry contributions (Figure 5A).\n",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "8d87fdfc-cc12-490b-b32c-0d0db21e56bf",
+      "submission_id": "d2909978-a65f-494b-a43b-088b0db1bea2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Molly Przeworski, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63177.sa1](https://doi.org/10.7554/eLife.63177.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper presents a new method for identifying regions of the genome on which natural selection has acted following recent population admixture. The authors apply it and other approaches to document that the Duffy null allele, which confers resistance to the malaria pathogen Plasmodium vivax, has been under strong positive selection in populations of the Cabo Verde of mixed African and European ancestries. The method should be broadly applicable and the specific example is a notable contribution to the understanding of how admixture can enable rapid adaptations\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rapid adaptation to malaria facilitated by admixture in the human population of Cabo Verde\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Bavesh Kana as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Fernando Racimo/Graham Gower (Reviewer #2); George Busby (Reviewer #3).\n\nThe three reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. They all agreed that a finding of selection on Santiago but not the other two islands provides a nice example of parallel selection on malarial resistance in the recent human past, complementing findings for other African locations. Moreover, they appreciated the development of a new statistical approach to detect selection since population mixture. However, there were a number of concerns raised about the test and its application, as well as some other analyses, and a general feeling that more extensive analyses and explorations of the test performance were needed to build a strong case.\n\nSummary:\n\nThis paper reports on selection for the Duffy null allele since humans of African and European ancestry colonized the Cape Verde Islands (~20 generations ago). The Duffy null allele is quasi-fixed in sub-Saharan Africa and confers resistance to P. vivax, which was apparently a stronger selection force on one of three islands (Santiago). The authors also document an effect of selection at one locus on genome-wide ancestry (as previously reported by Pierron et al., 2018, cited).\n\nEssential revisions:\n\n1) The new statistical test and its application\n\ni) Most results in the manuscript rely on the phase imputation and local ancestry assignment described here. However, no discussion is given to how errors in the phase-imputation or local-ancestry assignment might influence results (such as calculation of the DAT and iDAT statistics). If any Cabo Verde individuals carry recent ancestry from non-African and non-European sources, what effect might that have on local-ancestry assignment? Was any attempt made to identify such individuals, or verify that none exist in the dataset?\n\nii) \"[W]e calculated iDAT only for distances where DAT>=0.25\" One wonders if this choice was made for a specific reason---such as to ensure fairer comparisons across differently-sized chromosomes? For instance, if the DARC locus were instead found on chr22, the ancestry-tract-length distributions might be severely truncated. Some more analyses related to the choice of input parameters to the iDAT scores would help make this statistic more widely applicable and robust to other scenarios, beyond the one studied in this paper. A discussion of when this statistic might be more or less appropriate (could it work with older selection scenarios) would also be a nice addition.\n\niii) Does the DARC locus show any other selection signals that are not dependent on local ancestry assignments? If not, that would be a good way to further support the use of the iDAT score (in this paper and future studies), in that it could be particularly sensitive to recent selection signals that might not be picked up by other methods. Are there extended haplotype homozygosity signals in the region as well?\n\niv) Do the authors account for subsequent recent migration from Africa/Europe? Could subsequent pulses of African ancestry explain the observed selection signals? If there has been significant recent migration from Africa into Santiago from Africa, then this will have brought African DARC haplotypes into the population, and driven up the overall West African ancestry proportions. Is this accounted for by the DAT standardisation.\n\nv) There is more African ancestry in general on Santiago c.f. Fogo and the NW Cluster. Indeed, the ancestry proportions on Fogo/NW Cluster are approaching 50/50 African/European. Assuming (as the authors do) that this reflects similar ancestry proportions to the initial source groups, is there power to detect local ancestry change when the ancestries are in roughly similar proportions? Is it possible to delineate what ancestry proportions are best suited to this method? e.g. these power calculations on iHS in Figure 2 from Voight et al., (2006)\n\nvi) How do differences in fine-scale recombination rates between African and European populations affect the test? Perhaps they could define the haplotype length for iDAT in population-specific genetic distance (e.g., using the map from Hinch et al., 2011)?\n\nvii) Are the p-values for iDAT well-calibrated across Fst values? In that regard, and more generally, it would be helpful to see the performance of iDAT for some simulations with real present-day African genomes and European genomes at the estimated starting admixture fractions, in which individuals are mixed and recombination operates in a neutral scenario for 20 generations.\n\nviii) Given the hypothesis that selection should have affected Santiago but not the two other islands, the authors should show that a significant iDAT test is *not* seen for the other two islands.\n\n2) Other targets of selection\n\ni) There are a few other peaks in the selection scan that are not discussed in the text. It would be interesting to see what genes these peaks overlap with and if they have anything to do with the response to malaria; in particular, to explore if the genome-wide ancestry shift is solely due to the DARC locus, or whether other malaria-response alleles could be driving the shift as well.\n\nii) Are the authors able to estimate whether there has been more selection on African ancestry tracts compared to European tracts? For example, if you sum the iDAT values across the genome, are the results +ve, -ve or 0? If it's -ve, might this be additional evidence that African ancestry has been favoured, over and above being around the DARC locus?\n\n3) Effect of ancestry on other chromosomes\n\nThis point is very interesting but hard to understand from what is shown. To see it more clearly, it would be helpful to show the ancestry proportions at Duffy and around it for chromosome 1 versus for the rest of the genome. Moreover, the results of simulations (Figure 4B) are confusing, as it seems counter-intuitive for the effect to be weaker for chr 1 alone than for the whole genome; what might be more readily interpreted is the increase in admixture proportion for chr 1 alone vs for the other 21 autosomes. It would also be important to simulate a single admixture event rather than continuous migration, to evaluate if it would make a difference to the findings.\n\n4) Application of SWIF(r)\n\nIt was unclear from the description if the simulations of sweeps on which they trained were of selection in the right demographic setting (i.e., since admixture at appreciable frequency) or using standard sweep from a new mutation in a constant size, random-mating population. If the latter, then the training set for sweeps is not the right one, and the precision recall not informative about the actual problem (which is to distinguish neutral admixture from admixture followed by selection on an allele of one ancestry). On a more minor note, why train on only 100 sweep simulations?\n\n5) The following paper should be cited and discussed: https://www.biorxiv.org/content/10.1101/205252v2\n",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a85193e7-cb8c-4562-93fe-3664b91b27d4",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C1",
+      "claim": "Cabo Verde was uninhabited before settlement in ~1460 by Portuguese colonizers and enslaved peoples from the Senegambian region of West Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "The Republic of Cabo Verde is an archipelago off the coast of Senegal and was uninhabited before settlement in ~1460 by Portuguese colonizers and enslaved peoples from the Senegambian region of West Africa (Fernandes et al., 2003; Beleza et al., 2012; Verdu et al., 2017; Korunes et al., 2020), henceforth referred to as 'European' and 'West African' source populations, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to historical and genetic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "870cb193-6939-4e49-b2c7-e4fdb5e1299a",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C2",
+      "claim": "Settlement of Cabo Verde occurred approximately 19-22 generations ago assuming a 25- to 28-year human generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "This is approximately 19\u201322 generations ago assuming a 25- to 28-year human generation time (Fenner, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on cited generation time estimate",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "c636e6b9-2ee1-41a4-a1a6-ee409fb67de7",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C3",
+      "claim": "Admixture in Cabo Verde likely began within the last ~20 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent analyses using genetic ancestry information alongside historical data confirmed that admixture in Cabo Verde likely began within the last ~20 generations (Korunes et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent genetic and historical analysis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "0f1e589d-8178-467a-aff9-442598ba1a76",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C4",
+      "claim": "The malaria parasites Plasmodium vivax, P. falciparum, and P. malariae have been reported across the islands of Cabo Verde since settlement.",
+      "claim_type": "EXPLICIT",
+      "source": "The malaria parasites Plasmodium vivax, P. falciparum, and P. malariae have been reported across the islands of Cabo Verde since settlement; recurrent malaria epidemics have primarily occurred in highly populated regions (World Health Organization et al., 2012; DePina et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to WHO and epidemiological reports",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "8f667e61-721a-4b52-8044-34a9be7b23ae",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C5",
+      "claim": "Santiago has experienced the most substantial burden of malaria transmission since settlement ~20 generations ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Santiago, which has consistently been the most densely populated of the Cabo Verde islands, has experienced the most substantial burden of malaria transmission since settlement ~20 generations ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact in the manuscript text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "20490818-1f92-4f84-9e90-915952ea737e",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C6",
+      "claim": "Personal and historical accounts described Santiago as the most 'sickly' and 'malarious' island.",
+      "claim_type": "EXPLICIT",
+      "source": "Personal and historical accounts of malaria incidence within Cabo Verde described the largest and most populous island, Santiago, as the most 'sickly' and 'malarious' (Patterson, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to historical account",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "b6b36442-5dc9-42de-8fd7-b1da00438429",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C7",
+      "claim": "In the last century, malaria epidemics of both P. vivax and P. falciparum have occurred primarily in Santiago.",
+      "claim_type": "EXPLICIT",
+      "source": "In the last century, malaria epidemics of both P. vivax and P. falciparum have occurred primarily in Santiago (Snow et al., 2012; World Health Organization et al., 2012; Ferreira, 2017; DePina et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to epidemiological studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "e3ba5b57-7915-4cb5-9e5e-874866ef2884",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C8",
+      "claim": "The protective Duffy-null allele is almost fixed in West African populations and rare elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "The protective allele is almost fixed in West African populations and rare elsewhere (Howes et al., 2011; Gething et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to population genetic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "23f099d4-61da-4a34-a160-7bb3bf1444ce",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C9",
+      "claim": "The malaria parasite P. vivax uses the chemokine receptor encoded by the DARC gene to enter and infect red blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The malaria parasite P. vivax uses the chemokine receptor encoded by the DARC gene to enter and infect red blood cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established biological mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "ac2ee357-f7bd-4dfd-b37e-91f1ddddaa88",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C10",
+      "claim": "The Duffy-null allele is protective against P. vivax infection via a single nucleotide polymorphism that disrupts binding of an erythroid-specific transcription factor in the promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "The Duffy-null allele (also known as FY*O, rs2814778) is protective against P. vivax infection via a single nucleotide polymorphism (SNP) that disrupts binding of an erythroid-specific transcription factor in the promoter region (Mercereau-Puijalon and M\u00e9nard, 2010; Gething et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to molecular studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "91c0f0e8-aaca-442a-b274-011b801fbd2f",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C11",
+      "claim": "Individuals carrying the Duffy-null allele have reduced expression of Duffy antigens on the surface of the blood cell, protecting against P. vivax infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, individuals carrying the null allele have reduced expression of Duffy antigens on the surface of the blood cell, protecting against P. vivax infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the mechanism described and established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "09871065-e723-40a9-b3de-ebe18aca39db",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C12",
+      "claim": "Duffy-null has been estimated to be under one of the strongest selective pressures in human history.",
+      "claim_type": "EXPLICIT",
+      "source": "Duffy-null is a classic example of strong selection in the human lineage, and it has been estimated to be under one of the strongest selective pressures in human history (Hamblin and Di Rienzo, 2000; Hamblin et al., 2002; Kwiatkowski, 2005; McManus et al., 2017), suggesting it is a plausible selective pressure in Cabo Verde.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to selection studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "e8475700-08cf-42f2-9d17-754918a27373",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C13",
+      "claim": "A 1721 voyage record reported that a disease in Santiago is 'dangerous to strangers' during the rainy season.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this hypothesis goes back to a voyage in 1721 in which Captain Roberts, 1745 reported that a disease in Santiago is 'dangerous to strangers' during the rainy season.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to historical record",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "2aa7178b-b0d8-4fc5-b6cd-81e34462ff7b",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C14",
+      "claim": "Historical records suggest that foreign visitors and residents of European descent suffered more from malaria in Santiago than the African and Afro-Portuguese majority.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with ancestry-mediated protection from malaria, the record has been interpreted by medical historians to suggest that 'foreign visitors and residents of European descent seem to have suffered more than the African and Afro-Portuguese majority' from malaria in Santiago (Patterson, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to historical interpretation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "88bc6d6d-fdbc-4d64-8a85-7f948f3c83a4",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C15",
+      "claim": "The DARC locus has the highest frequency of West African ancestry in Santiago, occurring at 0.834 frequency compared to mean West African ancestry of 0.730.",
+      "claim_type": "EXPLICIT",
+      "source": "Within Santiago, this locus has the highest frequency of West African ancestry in the population, occurring at 0.834 frequency compared to mean West African ancestry across SNPs for individuals from Santiago of 0.730.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from genetic data analyzed in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "a0cbb7aa-3e46-41a3-a084-a8c445c2a436",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C16",
+      "claim": "The DARC locus is not an outlier in its frequency of West African ancestry on Fogo or the NW Cluster, occurring at the 75th and 65th percentiles respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the DARC locus is not an outlier in its frequency of West African ancestry on the other island regions, occurring at the 75th and 65th percentiles for Fogo and the NW Cluster, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from genetic data analyzed in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "6d64ce48-f725-4190-998d-c4f7c9e7d16f",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C17",
+      "claim": "The DARC locus is an outlier for high West African-related ancestry in Santiago, but not Fogo or the Northwest Cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The DARC locus is an outlier for high West African-related ancestry in Santiago, but not Fogo or the Northwest Cluster.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1B and stated in figure caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "bd514c78-2468-43b5-88ef-06e11a8a7dd1",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C18",
+      "claim": "Under neutrality, the expected frequency of the Duffy-null allele in each Cabo Verdean population is approximately equal to the West African ancestry contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The Duffy-null allele is nearly fixed in the West African source population and largely absent in the European source population; therefore, under neutrality, the expected frequency of the allele in each Cabo Verdean population is approximately equal to the West African ancestry contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on population genetic theory and observed source population frequencies",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f02a84ac-a372-42e0-b12e-8a4289e9ced6",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C20",
+      "claim": "The Duffy-null allele is contained on all West African ancestry tracts spanning the DARC locus and not found on any European ancestry tracts.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from source population allele frequencies, the Duffy-null allele is contained on all West African ancestry tracts spanning the locus and not found on any European ancestry tracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in genetic data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "62d9126a-ea6a-4606-af7a-b2d7cf2ef2dd",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C21",
+      "claim": "West African ancestry tracts spanning the DARC locus are longer and in higher frequency than European ancestry tracts covering the region.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent selection, West African ancestry tracts are longer and in higher frequency than European ancestry tracts covering the region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in genetic data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "331fe40a-7833-46c9-8c8e-344d8a993a09",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C22",
+      "claim": "The median West African ancestry tract length spanning the DARC locus is ~85 Mb, while the median European tract length is ~39 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "The median West African ancestry tract length spanning the locus is ~85 Mb, while the median European tract length is ~39 Mb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from genetic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "0ff505c5-fdc0-44f0-ac5d-04a80b18ed76",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C23",
+      "claim": "The DARC gene is contained in the window with the lowest iDAT score in the genome in Santiago (window iDAT score = \u22122.602).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in Santiago, the DARC gene is contained in the window with the lowest iDAT score in the genome (Figure 2C; window iDAT score = \u22122.602).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from genetic data and shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "9f1ff795-ca88-435a-be7f-1220e20e55f7",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C24",
+      "claim": "iDAT scores near the DARC locus are not outliers in other island regions.",
+      "claim_type": "EXPLICIT",
+      "source": "iDAT scores near the DARC locus are not outliers in other island regions (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "93748d1f-05e7-4cc3-9b16-b3e12efb7f47",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C25",
+      "claim": "The values for ancestry-based summary statistics for Santiago lie outside expectations from neutral simulations for all demographic models considered.",
+      "claim_type": "EXPLICIT",
+      "source": "The values for the summary statistics for Santiago generally lie outside our expectations for all models, especially considered jointly (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of observed data to simulation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "9f14ec27-28a4-447d-80ae-c4130819bd6f",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C27",
+      "claim": "The commonly used statistic iHS does not detect significant signatures of selection at the Duffy-null SNP position.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the commonly used statistic iHS does not detect significant signatures of selection at the Duffy-null SNP position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from iHS analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "ce3aa59b-4a56-44c8-ad16-88512aeb1c22",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C28",
+      "claim": "The absolute iHS values for all islands at the Duffy-null SNP are low.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute iHS values for all islands at the Duffy-null SNP are low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "af4b9961-fa76-43f1-8e50-3ea6a019b115",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C31",
+      "claim": "The estimate of selection coefficient from ABC is consistent with those estimated under the deterministic population-genetic model.",
+      "claim_type": "EXPLICIT",
+      "source": "This estimate of selection coefficient is consistent with those estimated under the deterministic population-genetic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of results from two different methods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "0198499e-1fd7-48c2-a08c-f1bf4f30d4c6",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C32",
+      "claim": "The ABC median estimate of initial West African ancestry contribution is 0.690, with the middle 50 percentile in [0.682,0.697].",
+      "claim_type": "EXPLICIT",
+      "source": "The median of the posterior of initial contributions from West Africa is 0.690, with the middle 50 percentile of observed values in [0.682,0.697] (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from ABC inference shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "ba8c2419-1d7b-40e8-9eba-24a4a78ce06c",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C33",
+      "claim": "The observed mean ancestry in Santiago is 0.737.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the observed mean ancestry in Santiago (Figure 1B) is 0.737.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from genetic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "682f90e6-2b56-4c8b-840a-a881e4d9227f",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C34",
+      "claim": "The ABC estimates of initial contributions from West Africa are lower than the mean ancestry currently observed in Santiago.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our ABC estimates of the initial contributions from West Africa are lower than the mean ancestry currently observed in Santiago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of ABC results to observed data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "36caa6ac-c3bd-4425-b50e-270047802dc2",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C35",
+      "claim": "Selection at a single locus on chromosome 1 increases ancestry proportion on chromosomes 2-22.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps surprisingly, mean ancestry on chromosomes 2\u201322 also increases with selection strength (gray), indicating that global ancestry increases beyond the contribution of higher ancestry on the selected chromosome alone (black).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from whole-genome simulations shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "25736e75-07e9-4867-b63a-2f6ab3e4f786",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C36",
+      "claim": "Strong selection at the DARC locus over 20 generations may have skewed global ancestry in Santiago.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this evidence suggests that strong selection at the DARC locus over 20 generations may have skewed global ancestry in Santiago and raises potential biases with a statistic that is often used to infer neutral demographic histories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from simulation results and observed data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "bb79267d-05a9-4511-b863-e6a5a6b0c026",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C37",
+      "claim": "Admixture can facilitate adaptation in merely tens of generations in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Using adaptation to malaria in the admixed population of Cabo Verde as a case study, we have demonstrated that admixture can facilitate adaptation in merely tens of generations in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "90a0a5c6-6eb2-4aee-9fd6-a3845ac780ab",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C39",
+      "claim": "The estimated selection strength is consistent with other studies that inferred selection for Duffy-null ranging from ~0.04 in sub-Saharan African populations to ~0.07-0.2 in a Malagasy population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimate is consistent with other studies that have inferred the strength of selection for Duffy-null ranging from ~0.04 (modeled under additive selection) in sub-Saharan African populations (McManus et al., 2017) and ~0.07 (modeled as recessive) to ~0.2 (modeled as dominant) in a Malagasy population with admixed African ancestry (Hodgson et al., 2014; Pierron et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "6d8a92d5-0b44-4e73-8bfe-cbfaab017b6b",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C40",
+      "claim": "The estimated strength of selection for Duffy-null is among the highest inferred for a locus in any human population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimated strength of selection for Duffy-null is among the highest inferred for a locus in any human population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to broader literature on selection in humans",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "a266b232-7d33-4e10-b282-193a45dcc7f5",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C41",
+      "claim": "Introgression of an adaptive allele can facilitate adaptation on short timescales, particularly for traits with large effects from single loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Introgression of an adaptive allele can facilitate adaptation on short timescales, particularly for traits with large effects from single loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General principle from population genetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "e6cb4664-ab68-464e-8ef3-c9ebb1422483",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C42",
+      "claim": "When ancestry contributions from multiple sources are high, selection post-admixture can be a faster mode of adaptation, similar to selection on standing variation.",
+      "claim_type": "EXPLICIT",
+      "source": "When ancestry contributions from multiple sources are high, such as is common in recent human admixture, selection post-admixture can be a faster mode of adaptation, similar to selection on standing variation (Hermisson and Pennings, 2005; Hedrick, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "9f36d37a-47bc-4d81-9044-c33a70f92d58",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C43",
+      "claim": "Commonly used ancestry outlier approaches have identified candidate regions for admixture-enabled adaptation in many populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly used ancestry outlier approaches have identified candidate regions for admixture-enabled adaptation in many populations; for example, at the HLA and LCT regions in Bantu speaking populations (Patin et al., 2017), the MHC locus in Mexicans (Zhou et al., 2016), and adaptation to high-altitude at EGLN1 and EPAS1 in Tibetans (Jeong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "d23ec433-153a-4bfb-8088-049f284f90f8",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C44",
+      "claim": "Drift post-admixture may substantially change allele frequencies and the distribution of local ancestry within and between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, results from this framework alone can be difficult to interpret because drift post-admixture may substantially change allele frequencies and the distribution of local ancestry within and between individuals (Bhatia et al., 2014; Belbin et al., 2018; Calfee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical and empirical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f56a03e5-5338-4d6f-8942-5301b7d97538",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C45",
+      "claim": "Recessive deleterious variation masked by heterosis can cause a signal of increased introgressed ancestry, especially in regions of low recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, recessive deleterious variation masked by heterosis can similarly cause a signal of increased introgressed ancestry, especially in regions of low recombination (Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "2821cac1-51e2-4744-8ecc-e7aee3c5fd73",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C46",
+      "claim": "Outlier approaches may have increased rates of false-positive detection of regions under selection.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, outlier approaches may have increased rates of false-positive detection of regions under selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the limitations described",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "75690c4f-bc31-4056-bb0f-4585679181c0",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C47",
+      "claim": "The Cabo Verdean populations have high levels of genetic divergence between European and West African source populations, improving local ancestry assignment accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the European and West African source populations have high levels of genetic divergence for human populations, improving local ancestry assignment accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about population divergence and its effect on ancestry inference",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "0fe78eba-ed99-4e40-b615-ff59dc997e3b",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C48",
+      "claim": "The Duffy-null allele shows extreme geographic differentiation, being nearly fixed in sub-Saharan African populations and mostly absent in non-African populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The Duffy-null allele shows extreme geographic differentiation, being nearly fixed in sub-Saharan African populations and mostly absent in non-African populations (Mercereau-Puijalon and M\u00e9nard, 2010; Howes et al., 2011; Gething et al., 2012 ), and multiple populations with ancestry from sub-Saharan Africa show evidence for admixture-enabled adaptation throughout human history at the DARC locus (Hodgson et al., 2014; Triska et al., 2015; Busby et al., 2017; Laso-Jadart et al., 2017; Pierron et al., 2018; Fernandes et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to population genetic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "efb7e361-cb82-4124-b0ba-7573b9e41dd1",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C49",
+      "claim": "The Duffy-null allele has well-characterized functional protection against P. vivax.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the Duffy-null allele has well-characterized functional protection against P. vivax, a malaria parasite with a documented record of recurrent transmission in Santiago since settlement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established from functional studies and epidemiological records",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "2db38a1b-5e45-4375-9156-9520e2c2b2cf",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C50",
+      "claim": "Selection at the DARC locus may have affected patterns of ancestry genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated how selection at the DARC locus may have affected patterns of ancestry genome-wide (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulations shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "d8e69092-db3d-4634-8069-a75d5a08e4ee",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C51",
+      "claim": "Individuals with higher genome-wide proportions of ancestry from the source population carrying the beneficial allele are more likely to have a selective advantage in early generations post-admixture.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with higher genome-wide proportions of ancestry from the source population carrying the beneficial allele are more likely to have a selective advantage in early generations post-admixture as recombination has yet to uncouple global ancestry proportion and the local ancestry of the selected allele (Pierron et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and logical inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "56bd0ef7-0a2d-46b5-9a1d-5563e3112cc2",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C52",
+      "claim": "The genome-wide consequences of adaptation at a single-locus were previously proposed by Pierron et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome-wide consequences of adaptation at a single-locus were previously proposed by Pierron et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "1a867a12-fe26-4da0-b050-8a6d1fc072b9",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C53",
+      "claim": "The scale of simulations in Pierron et al., 2018 was limited, and the extent of the effect on the selected chromosome versus the rest of the genome was not explored.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the scale of simulations was limited, and the extent of this effect on the selected chromosome versus the rest of the genome was not explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critique of prior work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f85c8167-4599-42a7-886b-d8604b29d8c7",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C54",
+      "claim": "Selection on an allele on chromosome 1 increases ancestry proportion on chromosomes 2-22.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-genome simulations, we demonstrated that selection on an allele on chromosome 1 increases ancestry proportion on chromosomes 2\u201322; that is, the increase in global ancestry is not exclusively owing to an increase in ancestry on the selected chromosome (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from whole-genome simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "967f6503-8034-4979-8cd6-e62c7e024888",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C55",
+      "claim": "The effect of selection on global ancestry can be detected over a range of moderate to strong selection coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that this effect can be detected over a range of moderate to strong selection coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations across parameter ranges",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "54c5bc28-3420-439e-b3d0-09cfaed19d2c",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C56",
+      "claim": "Global ancestry is often used to infer initial admixture contributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, since global ancestry is often used to infer initial admixture contributions, these and related demographic inferences may be biased under the common assumption that genome-wide patterns of ancestry reflect demography alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Common practice in population genetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "489372d9-c9a8-4ac0-9a01-f89e57122218",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C57",
+      "claim": "Demographic inferences may be biased under the assumption that genome-wide patterns of ancestry reflect demography alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, since global ancestry is often used to infer initial admixture contributions, these and related demographic inferences may be biased under the common assumption that genome-wide patterns of ancestry reflect demography alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study's findings about selection affecting global ancestry",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "a4f926aa-79f7-41c3-a17b-b62c6fe00841",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C58",
+      "claim": "In the absence of negative selection, ancestry is not expected to revert to initial admixture proportions after selection is relaxed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of negative selection, ancestry is not expected to revert to initial admixture proportions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on population genetic theory",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "49be95e1-33ca-4d07-a884-a41941758f24",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C59",
+      "claim": "After selection is relaxed, the population will evolve neutrally with the new ancestry proportion.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, drift will not change global ancestry in a specific direction, and the population will evolve neutrally with this new ancestry proportion (Pierron et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on population genetic theory and cited work",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "6a3e6cb5-1f56-4ab1-8c27-015136694baf",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C60",
+      "claim": "Difference in observed and simulated global ancestry may be caused by sampling, estimation method, demographic model misspecification, different rates of migration over time, or drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Difference in observed and simulated global ancestry may be caused by a variety of statistical and evolutionary processes beyond selection, including sampling, estimation method, demographic model misspecification, different rates of migration over time, or drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of alternative explanations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f88c1bb5-28d3-4461-be23-82fa4a979f94",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C61",
+      "claim": "Only mutations with large effects, such as the Duffy-null allele, are likely to show significant allele frequency deviations or ancestry-based signatures of selection in just 20 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, only mutations with large effects, such as the Duffy-null allele, are likely to show significant allele frequency deviations or ancestry-based signatures of selection in just 20 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on population genetic theory about detection power",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "8d40bf98-65d9-401d-89b9-4a3a34573ec2",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C62",
+      "claim": "A cluster of extreme negative iDAT values was observed on chromosome 16 [~chr16: 48,000,000\u201360,000,000].",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a cluster of extreme negative iDAT values on chromosome 16 [~chr16: 48,000,000\u201360,000,000] that may be of interest for future study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "fb29f42d-4d92-40d6-b44d-cd140af0020e",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C63",
+      "claim": "The chromosome 16 region with extreme iDAT values does not show high proportions of West African ancestry compared to the genome-wide distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, we note that this region does not show high proportions of West African ancestry compared to the genome-wide distribution (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "de5e5760-f894-4a21-9b0e-ce8a64aa074d",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C64",
+      "claim": "The extreme iDAT values in the chromosome 16 region may be influenced by its adjacence to the centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "The extreme iDAT values in this region may be influenced by its adjacence to the centromere, which may affect the length of ancestry tracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on genomic features",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "7d31a466-fb75-4957-a0ff-d76bd6e9dfd0",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C65",
+      "claim": "iDAT should be used as one line of evidence alongside other summaries of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, we suggest that iDAT should be used as one line of evidence alongside other summaries of variation, such as those used in our ABC estimation and expected allele frequency calculations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recommendation based on methodological considerations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "9cec92ba-20b3-4f68-9eb5-b67478227481",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C66",
+      "claim": "With admixture between two source populations, it is difficult to distinguish between positive selection for one ancestry and negative selection for the other ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous to biallelic selection scenarios, with admixture between two source populations, it is difficult to distinguish between positive selection for one ancestry and negative selection for the other ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological limitation based on population genetic principles",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "9d7d45cc-e8b0-48d6-b971-700b6701d216",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C67",
+      "claim": "Ancestry-based methods are best suited for scenarios wherein frequencies of a selected allele differ greatly between source populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important limitation for ancestry-based methods of detecting selection in admixed populations is that they are best suited for scenarios wherein frequencies of a selected allele differ greatly between source populations, as is the case with Duffy-null.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological limitation discussed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "148c950b-bdfa-46b8-a165-643f9ecd65f9",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C69",
+      "claim": "The framework developed is broadly applicable to detect and characterize selection in other recently admixed human and non-human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework developed here is broadly applicable to detect and characterize selection in other recently admixed human and non-human populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about the generalizability of the methods",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "17ccaf15-af12-4cf5-ae1b-b7e38e0cf780",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C70",
+      "claim": "The ABC approach may be extended to infer the timing of selection and admixture as well, as the tract length distribution is informative about these parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while the timing of admixture in Cabo Verde is well documented, our ABC approach may be extended to infer the timing of selection and admixture as well, as the tract length distribution is informative about these parameters (Gravel, 2012; Liang and Nielsen, 2014; Korunes et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to methodological papers",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "b9df0fdb-e156-4873-9623-633a462aca3e",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C71",
+      "claim": "There is a need to jointly infer selection and demographic histories.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we demonstrated the need to jointly infer selection and demographic histories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "839f1bf9-f5a9-4438-88b3-7bb023b30b86",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C72",
+      "claim": "The study used SNP array data from 564 admixed individuals across the island regions of Cabo Verde.",
+      "claim_type": "EXPLICIT",
+      "source": "For this study, we used SNP array data from Beleza et al., 2013 which included 564 admixed individuals across the island regions of Cabo Verde.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "d21eaa45-a11c-41d2-b4bb-42388ad54163",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C73",
+      "claim": "One individual was removed due to high missingness on chromosome 14 (11.36%).",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in removal of one individual with high missingness on chromosome 14 (11.36%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data filtering step described",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f8d7bf96-a8c6-4c7b-958d-b5b217a09ab6",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C74",
+      "claim": "The final merged data set contained 884,656 autosomal SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The final merged data set contained 884,656 autosomal SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of final data set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "1f002fb8-237e-4999-a2af-813bd090ec8f",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C75",
+      "claim": "Average missingness by SNP was 0.0017.",
+      "claim_type": "EXPLICIT",
+      "source": "Average missingness by SNP was 0.0017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data quality metric",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "452296e6-0fee-41a0-885b-67a747be782d",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C76",
+      "claim": "Phasing with SHAPEIT2 yielded phased genotypes at 881,279 SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the SHAPEIT documentation, we first ran SHAPEIT \u2013check to exclude sites not contained within the reference map, followed by SHAPEIT phasing to yield phased genotypes at 881,279 SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of phasing analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "0e7b81b7-ce6d-4188-9123-5b0c29e1de57",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C77",
+      "claim": "The mean and median genome-wide proportion of unknown ancestry in the data set were 0.0089 and 0.0083, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean and median genome-wide proportion of unknown ancestry in our data set were 0.0089 and 0.0083, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from local ancestry inference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "ab65eacf-9a62-4d2e-b4b1-ad828d16c953",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C78",
+      "claim": "More than 99% of each individual's genome could be assigned as either West African or European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, more than 99% of each individual's genome could be assigned as either West African or European ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from local ancestry inference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "2d8f4cbf-a038-42f0-abfd-8906b50e0ea9",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C79",
+      "claim": "There is little historical or genetic evidence of migration from non-West African or non-European populations to Cabo Verde.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with the fact that there is little historical or genetic evidence of migration from non-West African or non-European populations to Cabo Verde (Carreira, 1983; Verdu et al., 2017; Korunes et al., 2020), we find it is unlikely that individuals in our data set have high proportions of recent ancestry from a non-European or non-African source population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to historical and genetic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "d5285a49-ecde-45f2-8c26-4cb9869fad68",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C80",
+      "claim": "The estimates of each individual's average genome-wide ancestry are highly correlated between ELAI and RFMix (Pearson's R = 0.9964; p < 1 \u00d7 10\u207b\u2078).",
+      "claim_type": "EXPLICIT",
+      "source": "The estimates of each individual's average genome-wide ancestry are highly correlated between ELAI and RFMix (Pearson's R = 0.9964; p < 1 \u00d7 10\u22128).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of two methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "d57f83d4-3683-4fc4-b5ce-495326a99903",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C81",
+      "claim": "Estimates of global ancestry by individual from admixture are consistent with those of RFMix (Pearson's R = 0.9973; p < 1 \u00d7 10\u207b\u2078).",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates of global ancestry by individual from admixture are consistent with those of RFMix (Pearson's R = 0.9973; p < 1 \u00d7 10\u22128).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of two methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "d412c3ae-3e43-47ff-8bdb-f22b075fed4e",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C82",
+      "claim": "The island of Boa Vista was excluded from analyses due to small sample size (26 individuals).",
+      "claim_type": "EXPLICIT",
+      "source": "The island of Boa Vista was excluded from analyses due to our small sample from the region (26 individuals), leaving a final set of 537 individuals across the three island regions considered in this study (Santiago: 172, Fogo: 129, NW Cluster: 236; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data filtering decision",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f5c51e57-cec2-464c-bf4a-33dba2d91d43",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C83",
+      "claim": "The SWIF(r) implementation achieved an area under the curve (AUC) of 0.966.",
+      "claim_type": "EXPLICIT",
+      "source": "With our ancestry-based measures, SWIF(r) achieved an area under the curve (AUC) of 0.966, where an AUC of 1 represents a classifier with perfect skill.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Performance metric from validation shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "1cbc1c4b-77c5-46e8-8c2a-eb1d393c810d",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C84",
+      "claim": "There are no false positives in the SWIF(r) test set.",
+      "claim_type": "EXPLICIT",
+      "source": "There are no false positives in test set and a high rate of false negatives.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from confusion matrix shown in Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f7ccbe0b-a5df-48b7-85a6-23ce1932b265",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "claim_id": "C85",
+      "claim": "The majority of false-negative classifications occurred with low starting admixture proportion or low selection strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of false-negative classifications (i.e. classifying selection scenarios as neutral) occurred with low starting admixture proportion or low selection strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 6\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b0272ca0-8d4f-487e-8c13-65c635f1a035",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cabo Verde was settled approximately 19-22 generations ago (~1460 CE) by Portuguese colonizers and enslaved West Africans, with admixture beginning within the last ~20 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide converging historical and genetic evidence for the timing and composition of Cabo Verde's founding population. The settlement date is supported by multiple historical and genetic studies (C1), the generation time calculation is based on standard demographic parameters (C2), and recent genetic analyses confirm the admixture timing (C3).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "01af86e5-1afa-4a31-a3bc-ac2c4b00b0dd",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Santiago has experienced the most substantial malaria burden among Cabo Verde islands since settlement, with historical and modern epidemiological records documenting recurrent transmission of P. vivax, P. falciparum, and P. malariae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 collectively establish Santiago's unique malaria exposure through multiple lines of evidence: WHO reports documenting parasite presence (C4), population density correlating with transmission (C5), historical accounts describing Santiago as 'malarious' (C6), and modern epidemiological data on recent epidemics (C7). This convergent evidence supports the selective pressure hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "533ce2d0-04ac-4f07-a4b6-3bcd9c4b119a",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Duffy-null allele at the DARC locus provides protection against P. vivax malaria through reduced expression of the chemokine receptor required for parasite entry, is nearly fixed in West African populations, and has been under one of the strongest selective pressures in human history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 establish the biological mechanism and evolutionary significance of Duffy-null. The molecular mechanism (C9-C11) is well-established, the allele frequency distribution (C8) is documented in population genetic studies, and the strength of selection (C12) is supported by multiple citations. This provides strong prior expectation for selection in Cabo Verde.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "3f25d814-8700-46fd-a12e-fe3051928ee4",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Historical records from 1721 suggest ancestry-mediated protection from malaria in Santiago, with European visitors suffering more than the African and Afro-Portuguese majority.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 provide historical support for differential malaria susceptibility by ancestry. While based on historical interpretation rather than direct genetic evidence, the citations to primary historical sources (Captain Roberts, 1745) and medical historical analysis (Patterson, 1988) provide credible documentation of the pattern consistent with Duffy-null protection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "935e7dd7-2414-42d5-830f-f6d5a063e8e3",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The DARC locus shows the highest frequency of West African ancestry (0.834) in Santiago compared to genome-wide mean (0.730), but is not an outlier in Fogo or the Northwest Cluster, deviating from neutral expectations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 demonstrate Santiago-specific enrichment of West African ancestry at DARC through quantitative genetic data. The local ancestry proportion at DARC (C15), comparison to other islands (C16-C17), and deviation from neutral expectations (C18) are all calculated from the genetic data and shown in Figure 1B. The island-specific pattern supports selection in Santiago specifically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "7f414826-c1d3-495c-be92-778d9af8b710",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "West African ancestry tracts spanning the DARC locus are longer (median ~85 Mb) and more frequent than European tracts (median ~39 Mb), with the Duffy-null allele present on all West African tracts and absent from European tracts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 provide tract-length evidence for recent selection at DARC. The perfect association of Duffy-null with West African ancestry (C20) is expected from source population frequencies, while the longer and more frequent West African tracts (C21-C22) are consistent with recent positive selection preventing recombination breakup. The quantitative measurements are derived from genetic data analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "7aff4d53-1392-48b0-8038-38d106c8b557",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The DARC locus has the most extreme (lowest) iDAT score in the Santiago genome (\u22122.602), but iDAT scores near DARC are not outliers in other island regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 demonstrate that the novel iDAT statistic identifies DARC as a genome-wide outlier specifically in Santiago. The calculation is shown in Figure 2C for Santiago and Figure 2\u2014figure supplement 1 for other islands. The island-specific signal strengthens the case for selection at DARC in Santiago while controlling for demographic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "b97015f9-fc9a-47e8-b8a5-c91f4de51a4b",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ancestry-based summary statistics for Santiago lie outside neutral expectations for all demographic models considered, including various population sizes, growth rates, and migration scenarios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 demonstrates robustness of the selection signal across demographic uncertainty. The comparison to eight different demographic scenarios (Table 2) shown in Figure 2\u2014figure supplement 2 indicates that drift alone cannot explain the observed patterns. This strengthens the inference of selection by ruling out neutral demographic explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "8c1c6081-7660-4520-bd6d-c66f524a64cc",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The commonly used haplotype-based statistic iHS does not detect significant signatures of selection at the Duffy-null SNP position, with low absolute iHS values across all islands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 demonstrate the limitation of traditional selection statistics in recently admixed populations. The iHS analysis (Figure 3) shows no significant signal at Duffy-null despite strong evidence from ancestry-based methods. This highlights the importance of admixture-aware methods and validates the authors' methodological approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "1efc9a6d-8a37-4116-9fbc-4b1c0bbeb0c0",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The selection coefficient estimated from ABC (s \u2248 0.08) is consistent with estimates from the deterministic population-genetic model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 demonstrates concordance between two independent inference methods. The consistency between ABC and deterministic approaches (shown in Figure 4) strengthens confidence in the selection coefficient estimate by showing the result is not method-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "4cdc3e47-992a-4cdd-9eac-37723bd84946",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ABC inference estimates initial West African ancestry contribution at 0.690 [0.682, 0.697], which is lower than the currently observed mean ancestry in Santiago of 0.737.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 identify a discrepancy between inferred initial ancestry and observed current ancestry. The ABC posterior (C32, Figure 5A) and observed data (C33) are both well-documented, and the comparison (C34) is straightforward. This discrepancy motivates investigation of selection's genome-wide effects, though alternative explanations exist (see C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "7649dc4f-ebb4-4d6e-97e7-67583c937f57",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Selection at a single locus on chromosome 1 increases West African ancestry proportion on chromosomes 2-22, with the effect detectable over a range of moderate to strong selection coefficients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C54-C55 demonstrate a novel genome-wide consequence of single-locus selection through whole-genome simulations. Figure 5B shows that ancestry increases on unlinked chromosomes, not just the selected chromosome. The effect is robust across selection strengths and simulation methods (Figure 5\u2014figure supplement 1), providing strong computational evidence for this phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "99eca5bb-49fb-463a-9486-d5f2a7a1f0cd",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Strong selection at the DARC locus over 20 generations may have skewed global ancestry in Santiago because individuals with higher genome-wide West African ancestry are more likely to carry the beneficial allele before recombination uncouples global and local ancestry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C50-C51 provide a mechanistic explanation for genome-wide ancestry shifts. The inference is supported by simulation results (Figure 5) and population genetic theory about linkage between global ancestry and selected alleles in early post-admixture generations. The mechanism is cited to prior work (Pierron et al., 2018) but extended with more comprehensive simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "2b12981c-bbe5-4793-9074-b4be0c2d9d98",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Admixture can facilitate adaptation in merely tens of generations in humans, as demonstrated by adaptation to malaria in Cabo Verde.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 represents the main conclusion of the study. It is supported by the convergent evidence from ancestry enrichment (C15-C17), tract length patterns (C20-C22), outlier statistics (C23-C25), selection coefficient inference (C31), and SWIF(r) classification. The ~20 generation timescale is well-documented, and multiple lines of evidence support rapid adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "5418d68e-573a-41b6-9973-b2e53bceb7a2",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The estimated selection strength (s \u2248 0.08) is consistent with other studies of Duffy-null selection (s \u2248 0.04-0.2) and is among the highest inferred for any locus in human populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 contextualize the selection coefficient estimate within the broader literature. The comparison to other studies (C39) shows consistency with independent estimates in different populations, while the claim about being among the strongest selection (C40) is supported by comparison to the broader human selection literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f2ee0d53-9a17-4122-8b8a-7bb9d58d487b",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Global ancestry is often used to infer initial admixture contributions, but demographic inferences may be biased under the assumption that genome-wide ancestry patterns reflect demography alone when strong selection is present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 highlight an important methodological implication. The common practice of using global ancestry for demographic inference (C56) is documented in the literature, and the potential for bias (C57) is demonstrated by the simulation results showing selection affects genome-wide ancestry (C35, C54-C55). This represents an important cautionary finding for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "57e19880-108d-428b-98ef-b0d59f4fac5d",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Introgression of adaptive alleles can facilitate rapid adaptation, particularly for large-effect loci, and when ancestry contributions from multiple sources are high, selection post-admixture can be as fast as selection on standing variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 present established population genetic principles supported by citations to theoretical work (Hermisson and Pennings, 2005; Hedrick, 2013). These principles provide the theoretical framework for understanding rapid adaptation in admixed populations and are well-supported in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "d216d4b6-4537-41a9-8da1-e61b53b56d3f",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Ancestry outlier approaches have identified candidate regions for selection in many populations, but drift, heterosis, and other factors can cause false positives, making results difficult to interpret without additional evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 provide critical context about limitations of ancestry outlier methods. The widespread use (C43) and potential confounders (C44-C45) are supported by multiple citations. The inference about false positive rates (C46) follows logically from the described limitations. This motivates the authors' more comprehensive approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "9c726a34-4a35-4c83-9043-56754bf89665",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The Cabo Verde study system has several advantages: high genetic divergence between source populations improving ancestry inference, extreme frequency differentiation of Duffy-null between populations, and well-characterized functional protection against P. vivax with documented transmission history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 justify why Cabo Verde and DARC are ideal for studying post-admixture selection. The high divergence (C47) aids technical accuracy, the allele frequency distribution (C48) is documented in multiple studies, and the functional mechanism (C49) is well-established. These factors strengthen confidence in the specific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "6900c632-0c56-44cf-bf5e-98659cafe1d5",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The genome-wide consequences of single-locus adaptation were previously proposed by Pierron et al., 2018, but the scale of simulations was limited and the effect on selected versus unselected chromosomes was not explored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 accurately characterize prior work and identify its limitations. The citation to Pierron et al., 2018 (C52) is appropriate, and the critique about limited simulation scale (C53) is fair and motivates the current study's more comprehensive whole-genome simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "2d4c1cee-d15a-448b-980d-d117ed2c377d",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "After selection is relaxed, ancestry is not expected to revert to initial proportions; instead, the population will evolve neutrally with the new ancestry proportion as drift does not change global ancestry in a specific direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe expected evolutionary dynamics based on population genetic theory. The principle that selection-induced ancestry shifts persist (C58) and subsequent neutral evolution (C59) are supported by theory and citation to Pierron et al., 2018. This has important implications for interpreting ancestry patterns in populations with past selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "537133fc-c6ba-47db-8c3d-12af4462b38f",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Differences between observed and simulated global ancestry may be caused by sampling, estimation methods, demographic model misspecification, variable migration rates, or drift, in addition to selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 appropriately acknowledges alternative explanations for the ancestry discrepancy. The authors correctly note that multiple factors could contribute to differences between observed and inferred ancestry, demonstrating appropriate scientific caution about their interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "6425fb46-dabe-4421-b3b7-703e6ec50b41",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Only mutations with large effects, such as Duffy-null, are likely to show significant allele frequency deviations or ancestry-based signatures of selection in just 20 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is based on population genetic theory about detection power over short timescales. The principle that large-effect mutations are more detectable than small-effect mutations over few generations is well-established and explains why Duffy-null is detectable while other selected loci might not be.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "2bfff70c-7584-47c9-a67c-431fda255094",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "A cluster of extreme negative iDAT values was observed on chromosome 16 [~48-60 Mb], but this region does not show high West African ancestry and may be influenced by proximity to the centromere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C64 identify a potential secondary signal but appropriately express uncertainty. The observation (C62) is documented, the lack of ancestry enrichment (C63) is noted, and the centromere hypothesis (C64) is speculative. Without a prior hypothesis or functional candidate, this remains an interesting observation requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "031823ef-a747-4589-b916-dc569ddde942",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "iDAT should be used as one line of evidence alongside other summaries of variation, such as those used in ABC estimation and expected allele frequency calculations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 provides appropriate methodological guidance based on the study's findings. The recommendation to use multiple lines of evidence is supported by the authors' own approach, which combines iDAT with other statistics in the SWIF(r) framework and ABC inference, demonstrating the value of integrating multiple signals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f24eef4f-7829-4fd1-83ad-b08f9a742100",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "With two-way admixture, it is difficult to distinguish positive selection for one ancestry from negative selection for the other, and ancestry-based methods work best when selected allele frequencies differ greatly between source populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 identify important methodological limitations. The difficulty distinguishing positive from negative selection (C66) is a fundamental issue in two-population admixture, and the requirement for large frequency differences (C67) is a logical consequence of how ancestry-based methods work. These are appropriate caveats for interpreting results and applying methods to other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "65258681-2323-42a5-9c6f-5c54ccc44f8d",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "The framework developed is broadly applicable to other admixed populations, can be extended to jointly infer timing of selection and admixture, and demonstrates the need to jointly infer selection and demographic histories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 discuss future applications and extensions. The broad applicability (C69) is reasonable given the general nature of the methods, the extension to timing inference (C70) is supported by citations showing tract lengths are informative about timing, and the need for joint inference (C71) is demonstrated by the study's findings about selection affecting ancestry patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "f09356d0-adc6-4022-9e18-acbb08b70793",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The study used high-quality SNP array data from 537 individuals across three Cabo Verde island regions (Santiago: 172, Fogo: 129, NW Cluster: 236) with 881,279 phased autosomal SNPs, low missingness, high-accuracy local ancestry inference validated across multiple methods, and minimal evidence of non-African/non-European ancestry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C82 describe the data processing pipeline and quality control. The sample sizes (C72, C82), filtering criteria (C73), SNP counts (C74, C76), missingness rates (C75), ancestry inference accuracy (C77-C78), validation across methods (C80-C81), and historical context (C79) are all clearly documented. The high correlation between methods (R > 0.996) and low unknown ancestry (<1%) support data quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    },
+    {
+      "id": "e217e256-8573-4f33-a114-e184b9661dcd",
+      "content_id": "0930baa2-683b-4ed9-9505-e75999569c74",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "The SWIF(r) implementation using ancestry-based statistics achieved high performance (AUC = 0.966) with no false positives but high false negatives, primarily occurring with low admixture proportion or weak selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 document SWIF(r) validation results shown in Figure 6 and supplements. The high AUC (C83) indicates good overall performance, the confusion matrix (C84) shows conservative classification avoiding false positives, and the analysis of false negatives (C85) identifies conditions where detection is difficult. This validates the method for the Santiago application where parameters are favorable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:24:25.302953Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a85193e7-cb8c-4562-93fe-3664b91b27d4",
+      "result_id": "b0272ca0-8d4f-487e-8c13-65c635f1a035"
+    },
+    {
+      "claim_id": "870cb193-6939-4e49-b2c7-e4fdb5e1299a",
+      "result_id": "b0272ca0-8d4f-487e-8c13-65c635f1a035"
+    },
+    {
+      "claim_id": "c636e6b9-2ee1-41a4-a1a6-ee409fb67de7",
+      "result_id": "b0272ca0-8d4f-487e-8c13-65c635f1a035"
+    },
+    {
+      "claim_id": "0f1e589d-8178-467a-aff9-442598ba1a76",
+      "result_id": "01af86e5-1afa-4a31-a3bc-ac2c4b00b0dd"
+    },
+    {
+      "claim_id": "8f667e61-721a-4b52-8044-34a9be7b23ae",
+      "result_id": "01af86e5-1afa-4a31-a3bc-ac2c4b00b0dd"
+    },
+    {
+      "claim_id": "20490818-1f92-4f84-9e90-915952ea737e",
+      "result_id": "01af86e5-1afa-4a31-a3bc-ac2c4b00b0dd"
+    },
+    {
+      "claim_id": "b6b36442-5dc9-42de-8fd7-b1da00438429",
+      "result_id": "01af86e5-1afa-4a31-a3bc-ac2c4b00b0dd"
+    },
+    {
+      "claim_id": "e3ba5b57-7915-4cb5-9e5e-874866ef2884",
+      "result_id": "533ce2d0-04ac-4f07-a4b6-3bcd9c4b119a"
+    },
+    {
+      "claim_id": "23f099d4-61da-4a34-a160-7bb3bf1444ce",
+      "result_id": "533ce2d0-04ac-4f07-a4b6-3bcd9c4b119a"
+    },
+    {
+      "claim_id": "ac2ee357-f7bd-4dfd-b37e-91f1ddddaa88",
+      "result_id": "533ce2d0-04ac-4f07-a4b6-3bcd9c4b119a"
+    },
+    {
+      "claim_id": "91c0f0e8-aaca-442a-b274-011b801fbd2f",
+      "result_id": "533ce2d0-04ac-4f07-a4b6-3bcd9c4b119a"
+    },
+    {
+      "claim_id": "09871065-e723-40a9-b3de-ebe18aca39db",
+      "result_id": "533ce2d0-04ac-4f07-a4b6-3bcd9c4b119a"
+    },
+    {
+      "claim_id": "e8475700-08cf-42f2-9d17-754918a27373",
+      "result_id": "3f25d814-8700-46fd-a12e-fe3051928ee4"
+    },
+    {
+      "claim_id": "2aa7178b-b0d8-4fc5-b6cd-81e34462ff7b",
+      "result_id": "3f25d814-8700-46fd-a12e-fe3051928ee4"
+    },
+    {
+      "claim_id": "88bc6d6d-fdbc-4d64-8a85-7f948f3c83a4",
+      "result_id": "935e7dd7-2414-42d5-830f-f6d5a063e8e3"
+    },
+    {
+      "claim_id": "a0cbb7aa-3e46-41a3-a084-a8c445c2a436",
+      "result_id": "935e7dd7-2414-42d5-830f-f6d5a063e8e3"
+    },
+    {
+      "claim_id": "6d64ce48-f725-4190-998d-c4f7c9e7d16f",
+      "result_id": "935e7dd7-2414-42d5-830f-f6d5a063e8e3"
+    },
+    {
+      "claim_id": "bd514c78-2468-43b5-88ef-06e11a8a7dd1",
+      "result_id": "935e7dd7-2414-42d5-830f-f6d5a063e8e3"
+    },
+    {
+      "claim_id": "f02a84ac-a372-42e0-b12e-8a4289e9ced6",
+      "result_id": "7f414826-c1d3-495c-be92-778d9af8b710"
+    },
+    {
+      "claim_id": "62d9126a-ea6a-4606-af7a-b2d7cf2ef2dd",
+      "result_id": "7f414826-c1d3-495c-be92-778d9af8b710"
+    },
+    {
+      "claim_id": "331fe40a-7833-46c9-8c8e-344d8a993a09",
+      "result_id": "7f414826-c1d3-495c-be92-778d9af8b710"
+    },
+    {
+      "claim_id": "0ff505c5-fdc0-44f0-ac5d-04a80b18ed76",
+      "result_id": "7aff4d53-1392-48b0-8038-38d106c8b557"
+    },
+    {
+      "claim_id": "9f1ff795-ca88-435a-be7f-1220e20e55f7",
+      "result_id": "7aff4d53-1392-48b0-8038-38d106c8b557"
+    },
+    {
+      "claim_id": "93748d1f-05e7-4cc3-9b16-b3e12efb7f47",
+      "result_id": "b97015f9-fc9a-47e8-b8a5-c91f4de51a4b"
+    },
+    {
+      "claim_id": "9f14ec27-28a4-447d-80ae-c4130819bd6f",
+      "result_id": "8c1c6081-7660-4520-bd6d-c66f524a64cc"
+    },
+    {
+      "claim_id": "ce3aa59b-4a56-44c8-ad16-88512aeb1c22",
+      "result_id": "8c1c6081-7660-4520-bd6d-c66f524a64cc"
+    },
+    {
+      "claim_id": "af4b9961-fa76-43f1-8e50-3ea6a019b115",
+      "result_id": "1efc9a6d-8a37-4116-9fbc-4b1c0bbeb0c0"
+    },
+    {
+      "claim_id": "0198499e-1fd7-48c2-a08c-f1bf4f30d4c6",
+      "result_id": "4cdc3e47-992a-4cdd-9eac-37723bd84946"
+    },
+    {
+      "claim_id": "ba8c2419-1d7b-40e8-9eba-24a4a78ce06c",
+      "result_id": "4cdc3e47-992a-4cdd-9eac-37723bd84946"
+    },
+    {
+      "claim_id": "682f90e6-2b56-4c8b-840a-a881e4d9227f",
+      "result_id": "4cdc3e47-992a-4cdd-9eac-37723bd84946"
+    },
+    {
+      "claim_id": "36caa6ac-c3bd-4425-b50e-270047802dc2",
+      "result_id": "7649dc4f-ebb4-4d6e-97e7-67583c937f57"
+    },
+    {
+      "claim_id": "f85c8167-4599-42a7-886b-d8604b29d8c7",
+      "result_id": "7649dc4f-ebb4-4d6e-97e7-67583c937f57"
+    },
+    {
+      "claim_id": "967f6503-8034-4979-8cd6-e62c7e024888",
+      "result_id": "7649dc4f-ebb4-4d6e-97e7-67583c937f57"
+    },
+    {
+      "claim_id": "25736e75-07e9-4867-b63a-2f6ab3e4f786",
+      "result_id": "99eca5bb-49fb-463a-9486-d5f2a7a1f0cd"
+    },
+    {
+      "claim_id": "2db38a1b-5e45-4375-9156-9520e2c2b2cf",
+      "result_id": "99eca5bb-49fb-463a-9486-d5f2a7a1f0cd"
+    },
+    {
+      "claim_id": "d8e69092-db3d-4634-8069-a75d5a08e4ee",
+      "result_id": "99eca5bb-49fb-463a-9486-d5f2a7a1f0cd"
+    },
+    {
+      "claim_id": "bb79267d-05a9-4511-b863-e6a5a6b0c026",
+      "result_id": "2b12981c-bbe5-4793-9074-b4be0c2d9d98"
+    },
+    {
+      "claim_id": "90a0a5c6-6eb2-4aee-9fd6-a3845ac780ab",
+      "result_id": "5418d68e-573a-41b6-9973-b2e53bceb7a2"
+    },
+    {
+      "claim_id": "6d8a92d5-0b44-4e73-8bfe-cbfaab017b6b",
+      "result_id": "5418d68e-573a-41b6-9973-b2e53bceb7a2"
+    },
+    {
+      "claim_id": "54c5bc28-3420-439e-b3d0-09cfaed19d2c",
+      "result_id": "f2ee0d53-9a17-4122-8b8a-7bb9d58d487b"
+    },
+    {
+      "claim_id": "489372d9-c9a8-4ac0-9a01-f89e57122218",
+      "result_id": "f2ee0d53-9a17-4122-8b8a-7bb9d58d487b"
+    },
+    {
+      "claim_id": "a266b232-7d33-4e10-b282-193a45dcc7f5",
+      "result_id": "57e19880-108d-428b-98ef-b0d59f4fac5d"
+    },
+    {
+      "claim_id": "e6cb4664-ab68-464e-8ef3-c9ebb1422483",
+      "result_id": "57e19880-108d-428b-98ef-b0d59f4fac5d"
+    },
+    {
+      "claim_id": "9f36d37a-47bc-4d81-9044-c33a70f92d58",
+      "result_id": "d216d4b6-4537-41a9-8da1-e61b53b56d3f"
+    },
+    {
+      "claim_id": "d23ec433-153a-4bfb-8088-049f284f90f8",
+      "result_id": "d216d4b6-4537-41a9-8da1-e61b53b56d3f"
+    },
+    {
+      "claim_id": "f56a03e5-5338-4d6f-8942-5301b7d97538",
+      "result_id": "d216d4b6-4537-41a9-8da1-e61b53b56d3f"
+    },
+    {
+      "claim_id": "2821cac1-51e2-4744-8ecc-e7aee3c5fd73",
+      "result_id": "d216d4b6-4537-41a9-8da1-e61b53b56d3f"
+    },
+    {
+      "claim_id": "75690c4f-bc31-4056-bb0f-4585679181c0",
+      "result_id": "9c726a34-4a35-4c83-9043-56754bf89665"
+    },
+    {
+      "claim_id": "0fe78eba-ed99-4e40-b615-ff59dc997e3b",
+      "result_id": "9c726a34-4a35-4c83-9043-56754bf89665"
+    },
+    {
+      "claim_id": "efb7e361-cb82-4124-b0ba-7573b9e41dd1",
+      "result_id": "9c726a34-4a35-4c83-9043-56754bf89665"
+    },
+    {
+      "claim_id": "56bd0ef7-0a2d-46b5-9a1d-5563e3112cc2",
+      "result_id": "6900c632-0c56-44cf-bf5e-98659cafe1d5"
+    },
+    {
+      "claim_id": "1a867a12-fe26-4da0-b050-8a6d1fc072b9",
+      "result_id": "6900c632-0c56-44cf-bf5e-98659cafe1d5"
+    },
+    {
+      "claim_id": "a4f926aa-79f7-41c3-a17b-b62c6fe00841",
+      "result_id": "2d4c1cee-d15a-448b-980d-d117ed2c377d"
+    },
+    {
+      "claim_id": "49be95e1-33ca-4d07-a884-a41941758f24",
+      "result_id": "2d4c1cee-d15a-448b-980d-d117ed2c377d"
+    },
+    {
+      "claim_id": "6a3e6cb5-1f56-4ab1-8c27-015136694baf",
+      "result_id": "537133fc-c6ba-47db-8c3d-12af4462b38f"
+    },
+    {
+      "claim_id": "f88c1bb5-28d3-4461-be23-82fa4a979f94",
+      "result_id": "6425fb46-dabe-4421-b3b7-703e6ec50b41"
+    },
+    {
+      "claim_id": "8d40bf98-65d9-401d-89b9-4a3a34573ec2",
+      "result_id": "2bfff70c-7584-47c9-a67c-431fda255094"
+    },
+    {
+      "claim_id": "fb29f42d-4d92-40d6-b44d-cd140af0020e",
+      "result_id": "2bfff70c-7584-47c9-a67c-431fda255094"
+    },
+    {
+      "claim_id": "de5e5760-f894-4a21-9b0e-ce8a64aa074d",
+      "result_id": "2bfff70c-7584-47c9-a67c-431fda255094"
+    },
+    {
+      "claim_id": "7d31a466-fb75-4957-a0ff-d76bd6e9dfd0",
+      "result_id": "031823ef-a747-4589-b916-dc569ddde942"
+    },
+    {
+      "claim_id": "9cec92ba-20b3-4f68-9eb5-b67478227481",
+      "result_id": "f24eef4f-7829-4fd1-83ad-b08f9a742100"
+    },
+    {
+      "claim_id": "9d7d45cc-e8b0-48d6-b971-700b6701d216",
+      "result_id": "f24eef4f-7829-4fd1-83ad-b08f9a742100"
+    },
+    {
+      "claim_id": "148c950b-bdfa-46b8-a165-643f9ecd65f9",
+      "result_id": "65258681-2323-42a5-9c6f-5c54ccc44f8d"
+    },
+    {
+      "claim_id": "17ccaf15-af12-4cf5-ae1b-b7e38e0cf780",
+      "result_id": "65258681-2323-42a5-9c6f-5c54ccc44f8d"
+    },
+    {
+      "claim_id": "b9df0fdb-e156-4873-9623-633a462aca3e",
+      "result_id": "65258681-2323-42a5-9c6f-5c54ccc44f8d"
+    },
+    {
+      "claim_id": "839f1bf9-f5a9-4438-88b3-7bb023b30b86",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "d21eaa45-a11c-41d2-b4bb-42388ad54163",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "f8d7bf96-a8c6-4c7b-958d-b5b217a09ab6",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "1f002fb8-237e-4999-a2af-813bd090ec8f",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "452296e6-0fee-41a0-885b-67a747be782d",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "0e7b81b7-ce6d-4188-9123-5b0c29e1de57",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "ab65eacf-9a62-4d2e-b4b1-ad828d16c953",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "2d8f4cbf-a038-42f0-abfd-8906b50e0ea9",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "d5285a49-ecde-45f2-8c26-4cb9869fad68",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "d57f83d4-3683-4fc4-b5ce-495326a99903",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "d412c3ae-3e43-47ff-8bdb-f22b075fed4e",
+      "result_id": "f09356d0-adc6-4022-9e18-acbb08b70793"
+    },
+    {
+      "claim_id": "f5c51e57-cec2-464c-bf4a-33dba2d91d43",
+      "result_id": "e217e256-8573-4f33-a114-e184b9661dcd"
+    },
+    {
+      "claim_id": "1cbc1c4b-77c5-46e8-8c2a-eb1d393c810d",
+      "result_id": "e217e256-8573-4f33-a114-e184b9661dcd"
+    },
+    {
+      "claim_id": "f7ccbe0b-a5df-48b7-85a6-23ce1932b265",
+      "result_id": "e217e256-8573-4f33-a114-e184b9661dcd"
+    }
+  ],
+  "comparisons": []
+}

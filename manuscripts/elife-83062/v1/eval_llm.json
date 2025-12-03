@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "Multiple polarity kinases (Pom1, Kin1, Shk1, and Pck1) collectively regulate Cdc15 phosphorylation status in vivo. Individual kinase inhibition produces modest changes in Cdc15 phosphorylation, but combined inhibition of all four kinases results in Cdc15 phosphorylation approaching that of the Cdc15-22A mutant, indicating these kinases are responsible for the bulk of Cdc15 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 provide converging evidence from kinase inhibition experiments using analog-sensitive mutants and deletion strains. The data show additive effects of kinase inhibition on Cdc15 SDS-PAGE mobility (Figures 1B-I), supporting the conclusion that multiple kinases collectively regulate Cdc15 phosphorylation. The identification of Pck1 as a fourth kinase extends prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In vitro kinase assays demonstrate that Pck1 can directly phosphorylate Cdc15, and sequential phosphorylation experiments reveal a complex pattern where the four kinases (Pom1, Kin1, Shk1, Pck1) target both shared and unique sites on Cdc15C. Pre-phosphorylation by one kinase generally reduces subsequent phosphorylation by others, except for Kin1 and Pck1 which do not affect each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by in vitro kinase assays with radioactive ATP (Figure 2). The sequential phosphorylation experiments provide direct biochemical evidence for site overlap and independence. The experimental design with appropriate controls (kinase removal, substrate fragments) strengthens the conclusions about phosphorylation site relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Mass spectrometry and tryptic phosphopeptide mapping identified specific phosphorylation sites targeted by each kinase: Kin1 phosphorylates 5 sites, Shk1 phosphorylates 11 sites, and Pck1 has a single major site (S668), all within the IDR. Multiple sites are shared among kinases, though three kinases also phosphorylate unique sites, and alanine substitution of identified sites prevents phosphorylation by the respective kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by mass spectrometry data (Figure 3A, supplementary figures) and validated by alanine substitution experiments (Figures 3B-D). The combination of MS identification and functional validation through mutagenesis provides strong evidence for site assignments. The phosphopeptide mapping provides additional orthogonal confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C96",
+      "C97"
+    ],
+    "result": "The Cdc15-31A mutant, in which 31 identified phosphorylation sites are replaced with alanine, shows significantly increased electrophoretic mobility compared to wildtype but remains phosphorylated after phosphatase treatment. This suggests the total number of Cdc15 phosphorylation sites is closer to 35 than the 74 previously reported, and indicates additional unidentified kinase(s) contribute to Cdc15 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C96-C97 are supported by gel mobility data (Figure 3E) and phosphatase treatment experiments. The reasoning about the total number of sites being closer to 35 is logical given the near-complete mobility shift of Cdc15-31A. However, the conclusion relies on gel mobility as a proxy for phosphorylation state, which is semi-quantitative. The inference about additional kinases is reasonable given residual phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C102"
+    ],
+    "result": "The Cdc15-31A phosphomutant localizes more strongly to the cytokinetic ring than wildtype Cdc15, recruits more myosin II (Rlc1) to the CR, and exhibits shorter maturation and constriction periods during cytokinesis. These findings indicate that preventing Cdc15 phosphorylation speeds up cytokinesis, consistent with increased myosin II recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 and C102 are supported by quantitative fluorescence microscopy (Figures 4A-B) and time-lapse imaging (Figures 4C-D). The measurements show statistically significant differences with appropriate sample sizes (n\u226521-29 cells, N=3). The interpretation linking increased Cdc15-31A and Rlc1 levels to faster cytokinesis is logical and supported by prior literature (Calvert et al., 2011).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Inhibition of any of the four kinases (Pom1, Kin1, Shk1, Pck1) increases the ratio of Cdc15 plasma membrane to cytoplasmic localization during interphase, with the highest increase observed when Pom1, Shk1, and Kin1 are all inhibited. The extent of increased membrane localization correlates with the percentage of tip septa formed in mid1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by quantitative fluorescence microscopy (Figure 5A, n\u226597 cells) and tip septation assays (Figure 5\u2014figure supplement 2A). The correlation between membrane localization and tip septation provides functional validation. Statistical analysis using one-way ANOVA with appropriate multiple comparison correction strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The percentage of cortical Cdc15 localization increases with the number of phosphosites mutated to alanine, with a significant jump between the 11A and 22A mutants. Analysis suggests that a threshold of dephosphorylation, rather than loss of specific sites, triggers a change in Cdc15 protein conformation and membrane binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by quantitative microscopy of phosphomutants (Figures 5B-C, n\u226565-97 cells). The threshold model is a reasonable interpretation of the data showing non-linear increases in membrane localization. However, the conclusion about conformational change is inferred rather than directly demonstrated, though it is consistent with the simulation data presented later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Coarse-grained molecular dynamics simulations predict that in the dephosphorylated state, the IDRs of a Cdc15 dimer prefer to interact with each other, but progressive phosphorylation weakens this preference and drives the IDRs toward the F-BAR tips. Simulations also show that IDRs and SH3 domains make contacts with F-BAR tips, and phosphorylation inhibits Cdc15 by potentially blocking end-to-end oligomerization and weakening plasma membrane avidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by coarse-grained simulations using the HPS model (Figure 6B-C, 10 independent simulations per condition). The simulations show clear structural transitions with phosphorylation. The use of two different starting configurations (IDRs apart vs. together) that converge to similar equilibrium states strengthens confidence in the results. However, these are computational predictions that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Simulations of the isolated Cdc15 IDR show that the dephosphorylated IDR is relatively collapsed and undergoes progressive expansion with increased phosphorylation. The expansion is commensurate with net charge added by phosphorylation and agrees with theoretical predictions from the Das and Pappu diagram of states. The phosphorylation-induced change in radius of gyration is maximal near room temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by single-chain IDR simulations (Figure 6E-F) and temperature-dependent analysis (Figure 6\u2014figure supplement 4). The agreement with the Das and Pappu theoretical framework provides external validation. The simulations used both HPS and KH D models, showing consistent trends. The temperature dependence analysis adds mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In vitro phase separation assays demonstrate that dephosphorylated Cdc15-IDR-SH3 forms droplets in a protein and salt concentration-dependent manner, but phosphorylated Cdc15-IDR-SH3 does not undergo phase separation. The droplets exhibit liquid-like properties including fusion events, FRAP recovery, and homogeneous incorporation of Cdc15. Similar results are observed on supported lipid bilayers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by comprehensive in vitro phase separation assays (Figure 7). Phase diagrams systematically vary protein and salt concentrations. FRAP analysis (n=10 droplets, N=3) demonstrates dynamics. The use of both solution and membrane-bound assays strengthens the conclusions. Appropriate controls (phosphorylated vs. dephosphorylated) clearly demonstrate phosphorylation-dependent phase separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Dephosphorylated Cdc15-IDR-SH3 droplets specifically recruit binding partners Fic1 and Pxl1 peptide, with droplets containing all three components when combined. Negative controls demonstrate specificity: recombinant mCherry does not incorporate into droplets, and Fic1 does not incorporate into droplets with the Cdc15-IDR-SH3 (W903S) mutant that prevents Fic1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by multi-component phase separation assays (Figure 8). The inclusion of appropriate negative controls (mCherry, W903S mutant) demonstrates specificity of recruitment. The experiments show that recruitment only occurs when Cdc15 is dephosphorylated, linking phase separation to phosphorylation state. The controls are well-designed and strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Full-length dephosphorylated Cdc15-E30K,E152K (an oligomerization mutant) can recruit its binding partners (Fic1, Pxl1 peptide, Cdc12 peptide) into phase-separated droplets, with 84% of droplets containing at least three components. This recruitment does not occur if Cdc15 remains phosphorylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by phase separation assays with full-length Cdc15 (Figure 9). The use of the E30K,E152K mutant to prevent extensive F-BAR oligomerization is a clever experimental design that allows assessment of full-length protein behavior. The quantification of multi-component droplets provides strong evidence for partner recruitment. The phosphorylation-dependence is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In cells, Cdc15 phosphomutants form cortical puncta or condensates during interphase, with the number and size increasing significantly in the 22A and 31A mutants. These condensates are dynamic and undergo apparent fission and fusion events, suggesting liquid-like properties. In cdc15-31A cells, Fic1 and Rlc1 are recruited into these interphase condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by live-cell imaging (Figure 10, n\u226510 cells, N=3). The quantification of condensate number and size shows statistically significant differences. Time-lapse imaging demonstrates dynamics (fusion/fission events). The recruitment of binding partners in cells parallels the in vitro observations, providing important validation. However, the liquid-like properties are inferred from apparent fusion/fission rather than directly measured (e.g., by FRAP in cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The four kinases target distinct but overlapping cohorts of Cdc15 phosphorylation sites, and the number of sites correlates with each kinase's ability to influence Cdc15 plasma membrane localization. There is little cooperativity or antagonism among the kinases, and the total charge added or removed from the IDR is the most significant regulatory factor. A threshold of phosphorylation must be reached to elicit major changes in IDR organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C98-C101 integrate findings from multiple experiments (site mapping, localization assays, simulations). The correlation between site number and membrane localization is supported by data in Figures 3 and 5. The threshold model is supported by both experimental (Figure 5B) and simulation data (Figure 6). The conclusion about charge being the key regulatory factor is well-supported by the simulation results showing commensurate expansion with charge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C92",
+      "C93",
+      "C94",
+      "C106"
+    ],
+    "result": "The study proposes an integrated model where progressive phosphorylation by multiple kinases drives IDR separation, antagonizes Cdc15 phase separation and condensate formation on the plasma membrane, and prevents premature cytokinetic ring assembly. Dephosphorylation allows Cdc15 to condense on the membrane, scaffold CR components, and recruit binding partners. This multi-kinase system ensures CR assembly occurs only at the proper place and time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 and C92-C94, C106 represent the main integrated conclusions of the study. These are well-supported by converging evidence from in vivo kinase inhibition, in vitro phosphorylation assays, site mapping, simulations, phase separation assays, and cell biology experiments. The model logically integrates all major findings. However, some aspects remain correlative (e.g., the direct link between IDR separation in simulations and phase separation inhibition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Re-phosphorylation of Cdc15 is not required for CR constriction or cell separation, and Cdc15 need not be removed from the membrane to allow cytokinesis to proceed. Rather, the phosphorylation of Cdc15 helps prevent incorrect division site placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by the observation that cdc15-31A cells complete cytokinesis successfully (Figure 4) and by tip septation assays showing increased ectopic septation when kinases are inhibited (Figure 5\u2014figure supplement 2). This challenges previous assumptions about the necessity of Cdc15 re-phosphorylation during cytokinesis and reframes the role of phosphorylation as primarily spatial regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The work suggests phase separation as a mechanism involved in cytokinetic ring assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by the demonstration of Cdc15 phase separation in vitro (Figure 7), recruitment of binding partners into droplets (Figures 8-9), and formation of dynamic condensates in cells (Figure 10). However, this remains a suggested mechanism rather than definitively proven, as direct demonstration that phase separation is required for CR assembly in vivo would require additional experiments (e.g., mutations that specifically disrupt phase separation without affecting other Cdc15 functions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C35",
+      "C75",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The manuscript provides extensive background on Cdc15 structure, function, and regulation, as well as the broader context of cytokinetic ring assembly in fission yeast. This includes established knowledge about Cdc15 domains, binding partners, phosphorylation by polarity kinases, and the role of Mid1 in CR assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C15-C27, C35, C75, and C107-C115 represent background knowledge and prior work that is appropriately cited. These claims establish the context for the current study and are supported by the cited literature. The authors accurately represent prior findings and appropriately distinguish between established knowledge and their new contributions.",
+    "result_type": "MINOR"
+  }
+]

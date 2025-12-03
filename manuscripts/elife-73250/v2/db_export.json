@@ -1,0 +1,1297 @@
+{
+  "submission": {
+    "id": "9161fb63-80d9-4832-85cc-14d2f41a7a20",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:31:14.309007Z",
+    "updated_at": "2025-12-03T09:31:14.309007Z"
+  },
+  "content": [
+    {
+      "id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "submission_id": "9161fb63-80d9-4832-85cc-14d2f41a7a20",
+      "content_type": "manuscript",
+      "content_text": "# The population genetics of collateral resistance and sensitivity\n\n## Authors\n\n- Sarah M Ardell<sup>1</sup> ([ORCID: 0000-0001-6665-2739](https://orcid.org/0000-0001-6665-2739))\n- Sergey Kryazhimskiy<sup>1</sup> ([ORCID: 0000-0001-9128-8705](https://orcid.org/0000-0001-9128-8705)) \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences, University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nResistance mutations against one drug can elicit collateral sensitivity against other drugs. Multi-drug treatments exploiting such trade-offs can help slow down the evolution of resistance. However, if mutations with diverse collateral effects are available, a treated population may evolve either collateral sensitivity or collateral resistance. How to design treatments robust to such uncertainty is unclear. We show that many resistance mutations in Escherichia coli against various antibiotics indeed have diverse collateral effects. We propose to characterize such diversity with a joint distribution of fitness effects (JDFE) and develop a theory for describing and predicting collateral evolution based on simple statistics of the JDFE. We show how to robustly rank drug pairs to minimize the risk of collateral resistance and how to estimate JDFEs. In addition to practical applications, these results have implications for our understanding of evolution in variable environments.\n\n## Introduction\n\nThe spread of resistance against most antibiotics and the difficulties in developing new ones has sparked considerable interest in using drug combinations and sequential drug treatments to treat bacterial infections, as well as cancers (P\u00e1l et al., 2015). Treatments where the drugs are chosen so that resistance against one of them causes the pathogen or cancer population to become sensitive to the other\u2014a phenomenon known as collateral sensitivity\u2014can eliminate the population before multi-drug resistance emerges (P\u00e1l et al., 2015; Pluchino et al., 2012).\n\nThe success of a multi-drug treatment hinges on knowing which drugs select for collateral sensitivity against which other drugs. This information is obtained empirically by exposing bacterial and cancer-cell populations to drugs and observing the evolutionary outcomes (Roemhild et al., 2020; Jensen et al., 1997; Imamovic and Sommer, 2013; L\u00e1z\u00e1r et al., 2018; Maltas and Wood, 2019; Batra et al., 2021; Sanz-Garc\u00eda et al., 2020; Schenk et al., 2015; L\u00e1z\u00e1r et al., 2013; Barbosa et al., 2019; Hernando-Amado et al., 2020; Kim et al., 2014; Jahn et al., 2021; Kavanaugh et al., 2020; Laborda et al., 2021; Oz et al., 2014; Munck et al., 2014). Prior studies have largely focused on various empirical questions related to the evolution of collateral sensitivity and resistance, such as identifying their genetic basis (L\u00e1z\u00e1r et al., 2014; Roemhild et al., 2020; Maltas and Wood, 2019; Hernando-Amado et al., 2020; Kavanaugh et al., 2020; Laborda et al., 2021), understanding how collateral outcomes depend on treatment design (e.g. sequential versus combination) (L\u00e1z\u00e1r et al., 2014; Munck et al., 2014; Bergstrom et al., 2004; Batra et al., 2021; Sanz-Garc\u00eda et al., 2020; Schenk et al., 2015; L\u00e1z\u00e1r et al., 2013; Kim et al., 2014; Jahn et al., 2021), or testing whether collateral sensitivity is an evolutionarily stable outcome (Barbosa et al., 2019). However, one important feature of these experimental studies has received little attention, namely, the fact that different experiments often produce collateral sensitivity profiles that are inconsistent with each other (e.g. Imamovic and Sommer, 2013; Oz et al., 2014; Barbosa et al., 2017; Maltas and Wood, 2019). Some inconsistencies can be explained by the fact that resistance mutations vary between bacterial strains, drug dosages, etc. (Mira et al., 2015; Barbosa et al., 2017; Das et al., 2020; Pinheiro et al., 2021; Card et al., 2021; Gjini and Wood, 2021). However, wide variation in collateral outcomes is observed even between replicate populations (Oz et al., 2014; Barbosa et al., 2017; Maltas and Wood, 2019; Nichol et al., 2019). This variation suggests that bacteria and cancers have access to multiple resistance mutations with diverse collateral effects and that replicate populations accumulate different resistance mutations due to the intrinsic randomness of the evolutionary process (Jerison et al., 2020; Nichol et al., 2019). However, the diversity of collateral effects among resistance mutations has rarely if ever been systematically measured. Moreover, few existing approaches for designing robust multi-drug treatments have modelled this mutational diversity explicitly within the population genetics context (Nichol et al., 2019; Maltas and Wood, 2019). Yet, a theory grounded in population genetics could help us understand how the expected collateral outcomes and the uncertainty around these expectations depend on evolutionary parameters and how these expectations and uncertainties change over time.\n\nHere, we develop such a theory. Collateral sensitivity and resistance are specific examples of the more general evolutionary phenomenon, pleiotropy, which refers to any situation when one mutation affects multiple phenotypes (Wagner and Zhang, 2011; Paaby and Rockman, 2013). In case of drug resistance evolution, the direct effect of resistance mutations is to increase fitness in the presence of one drug (the \u2018home\u2019 environment). In addition, they may also provide pleiotropic gains or losses in fitness in the presence of other drugs (the \u2018non-home\u2019 environments) leading to collateral resistance or sensitivity, respectively.\n\nClassical theoretical work on pleiotropy has been done in the field of quantitative genetics (Lande and Arnold, 1983; Rose, 1982; Barton, 1990; Slatkin and Frank, 1990; Jones et al., 2003; Johnson and Barton, 2005). In these models, primarily developed to understand how polygenic traits respond to selection in sexual populations, pleiotropy manifests itself as a correlated temporal change in multiple traits in a given environment. The question of how new strongly beneficial mutations that accumulate in asexual populations evolving in one environment affect its fitness in future environments is outside of the scope of these models.\n\nThe pleiotropic consequences of adaptation have also been explored in various \u2018fitness landscape\u2019 models (e.g. Connallon and Clark, 2015; Martin and Lenormand, 2015; Harmand et al., 2017; Wang and Dai, 2019; Maltas et al., 2021; Nichol et al., 2019; Tikhonov et al., 2020). In particular, Nichol et al., 2019 specifically addressed the problem of diversity of collateral resistance/sensitivity outcomes in the context of a combinatorially complete fitness landscapes of four mutations in the TEM \u03b2-lactamase gene. They found that different in silico populations adapting to the same antibiotic often arrive at different fitness peaks which results in different levels of collateral resistance/sensitivity against other drugs. They observed qualitatively similar variability in the collateral outcomes among replicate populations of the bacterium Escherichia coli evolving in the presence of cefotaxime (CTX), although it is unclear whether different populations indeed arrived at different fitness peaks. In general, the fitness landscape approach helps us understand how evolutionary trajectories and outcomes depend on the global structure of the underlying fitness landscape. However, applying this approach in practice is challenging because the global structure of fitness landscapes is unknown and notoriously difficult to estimate, even in controlled laboratory conditions.\n\nHere, we take a different approach which is agnostic with respect to the global structure of the fitness landscape. Instead, we assume only the knowledge of the so-called joint distribution of fitness effects (JDFE), that is, the probability that a new mutation has a certain pair of fitness effects in the home and non-home environments (Jerison et al., 2014; Martin and Lenormand, 2015; Bono et al., 2017). The JDFE is a natural extension of the DFE, the distribution of fitness effects of new mutations, often used in modeling evolution in a single environment (King, 1972; Ohta, 1987; Orr, 2003; Kassen and Bataillon, 2006; Eyre-Walker and Keightley, 2007; Martin and Lenormand, 2008; MacLean and Buckling, 2009; Kryazhimskiy et al., 2009; Levy et al., 2015). Like the DFE, the JDFE is a local property of the fitness landscape which means that it can be, at least in principle, estimated by using a variety of modern high-throughput techniques (e.g. Qian et al., 2012; van Opijnen et al., 2009; Chevereau et al., 2015; Levy et al., 2015; Blundell et al., 2019; Aggeli et al., 2021). The downside of this approach is that the JDFE can change over time as the population traverses the fitness landscape (Good et al., 2017; Venkataram et al., 2020; Aggeli et al., 2021). However, in the context of collateral drug resistance and sensitivity, we are primarily interested in short time scales over which the JDFE can be reasonably expected to stay approximately constant.\n\nThe rest of the paper is structured as follows. First, we use previously published data to demonstrate that E. coli has access to drug resistance mutations with diverse collateral effects. This implies that, rather than treating collateral effects as deterministic properties of drug pairs, we should think of them probabilistically, in terms of the respective JDFEs. We then show that a naive intuition about how the JDFE determines pleiotropic outcomes of evolution can sometimes fail, and a mathematical model is therefore required. We develop such a model, which reveals two key \u2018pleiotropy statistics\u2019 of the JDFE that determine the dynamics of fitness in the non-home condition. Our theory makes quantitative predictions in a variety of regimes if the population genetic parameters are known. However, we argue that in the case of drug resistance evolution the more important problem is to robustly order drug pairs in terms of their collateral sensitivity profiles even if the population genetic parameters are unknown. We develop a metric that allows us to do so. Finally, we provide some practical guidance for estimating the pleiotropy statistics of empirical JDFEs in the context of ranking drug pairs.\n\n## Results\n\n### Antibiotic resistance mutations in E. coli have diverse collateral effects\n\nWe begin by demonstrating that the JDFE is a useful concept for modeling the evolution of collateral antibiotic resistance and sensitivity. If all resistance mutations against a given drug had identical pleiotropic effects on the fitness of the organism in the presence of another drug, the dynamics of collateral resistance/sensitivity could be understood without the JDFE concept. On the other hand, if different resistance mutations have different pleiotropic fitness effects, predicting the collateral resistance/sensitivity dynamics requires specifying the probabilities with which mutations with various home and non-home fitness effects arise in the population. The JDFE specifies these probabilities. Therefore, for the JDFE concept to be useful in the context of collateral resistance/sensitivity evolution, we need to show that resistance mutations against common drugs have diverse collateral effects in the presence of other drugs.\n\nTo our knowledge, no data sets are currently publicly available that would allow us to systematically explore the diversity of collateral effects among all resistance mutations against any one drug in any organism. Instead, we examined the fitness effects of 3883 gene knock-out mutations in the bacterium Escherichia coli, measured in the presence of six antibiotics (Chevereau et al., 2015), as well as the fitness effects of 4997 point mutations in the TEM-1 \u03b2-lactamase gene measured in the presence of two antibiotics (Stiffler et al., 2015).\n\nFor four out of six antibiotics used by Chevereau et al., 2015, we find between 12 (0.31 %) and 170 (4.38%) knock-out mutations that provide some level of resistance against at least one of the antibiotics (false discovery rate (FDR) \u223c25%; Figure 1, Figure 1\u2014source data 1; see Materials and methods for details). Plotting on the $x$-axis the fitness effect of each knock-out mutation in the presence of the drug assumed to be applied first (i.e. the home environment) against its effect in the presence of another drug assumed to be applied later (i.e. the non-home environment, $y$-axis), we find mutations in all four quadrants of this plane, for all 12 ordered drug pairs (Figure 1, Figure 1\u2014source data 1). Similarly, we find diverse collateral effects among mutations within a single gene (Figure 1\u2014figure supplement 1; see Materials and methods for details).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig1-v2.jpg)\n\n**Figure 1.:** Data are from Chevereau et al., 2015. Each diagonal panel shows the distribution of fitness effects (DFE) of knock-out mutations in the presence of the corresponding antibiotic (equivalent to Figure 1C in Chevereau et al., 2015). Scale of the $y$-axis in these panels is indicated inside on the right. The estimated measurement noise distributions are shown in red (see Materials and methods for details). Note that some noise distributions are vertically cut-off for visual convenience. The number of identified beneficial mutations (i.e. resistance mutations) and the expected number of false positives (in parenthesis) are shown in the bottom left corner. The list of identified resistance mutations is given in the Figure 1\u2014source data 1. Off-diagonal panels show the fitness effects of knock-out mutations across pairs of drug environments. The $x$-axis shows the fitness in the environment where selection would happen first (i.e., the \u2018home\u2019 environment). Each point corresponds to an individual knock-out mutation. Resistance mutations identified in the home environment are colored according to their collateral effects, as indicated in the legend. The numbers of mutations of each type are shown in the corresponding colors in the bottom left corner of each panel. TET: tetracycline; NIT: nitrofurantoin; MEC: mecillinam; CPR: ciprofloxacin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Fitness effects of single point mutations in the TEM-1 \u03b2-lactamase gene in E. coli in the presence of cefotaxime and ampicillin. Data from Stiffler et al., 2015. Panels show data for different concentrations of ampicillin, as indicated. Fitness is measured as the change in the log ratio of the mutant to wildtype frequency during growth in the presence of the drug. Cefotaxime (CTX) is chosen as the home environment (see Materials and methods for details). Each point represents a single point mutation and is colored by its (collateral) fitness effect in the presence of ampicillin, as indicated in the legend. The numbers of mutations with positive fitness in the presence of cefotaxime with different collateral effects are shown in the lower right corner of each panel.\n\nSince both data sets represent subsets of all resistance mutations, we conclude that E. coli likely have access to resistance mutations with diverse pleiotropic effects, such that a fitness gain in the presence of any one drug can come either with a pleiotropic gain or a pleiotropic loss of fitness in the presence of other drugs. Therefore, the JDFE framework is suitable for modeling the evolution of collateral resistance/sensitivity. In the next section, we formally define a JDFE and probe our intuition for how its shape determines the fitness trajectories in the non-home environment.\n\n### JDFE determines the pleiotropic outcomes of adaptation\n\nFor any genotype $g$ that finds itself in one (\u2018home\u2019) environment and may in the future encounter another \u2018non-home\u2019 environment, we define the JDFE as the probability density $\u03a6_{g}\u2062(\u0394\u2062x,\u0394\u2062y)$ that a new mutation that arises in this genotype has the selection coefficient $\u0394\u2062x$ in the home environment and the selection coefficient $\u0394\u2062y$ in the non-home environment (Jerison et al., 2014). For concreteness, we define the fitness of a genotype as its Malthusian parameter (Crow and Kimura, 1972). So, if the home and non-home fitness of genotype $g$ are $x$ and $y$, respectively, and if this genotype acquires a mutation with selection coefficients $\u0394\u2062x$ and $\u0394\u2062y$, its fitness becomes $x+\u0394\u2062x$ and $y+\u0394\u2062y$. This definition of the JDFE can, of course, be naturally extended to multiple non-home environments. In principle, the JDFE can vary from one genotype to another. However, to develop a basic intuition for how the JDFE determines pleiotropic outcomes, we assume that all genotypes have the same JDFE. We discuss a possible extension to epistatic JDFEs in Appendix 1.\n\nThe JDFE is a complex object. So, we first ask whether some simple and intuitive summary statistics of the JDFE may be sufficient to predict the dynamics of the non-home fitness of a population that is adapting in the home environment. Intuitively, if there is a trade-off between home and non-home fitness, non-home fitness should decline; if the opposite is true, non-home fitness should increase. Canonically, a trade-off occurs when any mutation that improves fitness in one environment decreases it in the other environment and vice versa (Roff and Fairbairn, 2007). Genotypes that experience such \u2018hard\u2019 trade-offs are at the Pareto front (Shoval et al., 2012; Li et al., 2019). For genotypes that are not at the Pareto front, some mutations that are beneficial in the home environment may be beneficial in the non-home environment and others may be deleterious. In this more general case, trade-offs are commonly quantified by the degree of negative correlation between the effects of mutations on fitness in the two environments (Roff and Fairbairn, 2007; Tikhonov et al., 2020). Thus, we might expect that evolution on negatively correlated JDFEs would lead to pleiotropic fitness losses and evolution on positively correlated JDFEs would lead to pleiotropic fitness gains.\n\nTo test this intuition, we generated a family of Gaussian JDFEs that varied, among other things, by their correlation structure (Figure 2; Materials and methods). We then simulated the evolution of an asexual population on these JDFEs using a standard Wright-Fisher model (Materials and methods) and tested whether the trade-off strength, measured by the JDFE\u2019s correlation coefficient, predicts the dynamics of non-home fitness. Figure 2 shows that our naive expectation is incorrect. Positively correlated JDFEs sometimes lead to pleiotropic fitness losses (Figure 2D,I), and negatively correlated JDFEs sometimes lead to pleiotropic fitness gains (Figure 2B,G). Even if we calculate the correlation coefficient only among mutations that are beneficial in the home environment, the pleiotropic outcomes still do not always conform to the naive expectation, as the sign of the correlation remains the same as for the full JDFEs in all these examples.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013E) Contour lines for five Gaussian JDFEs. \u2018\u2018x\u2019\u2019 marks the mean. For all distributions, the standard deviation is 0.1 in both home- and non-home environments. The correlation coefficient \u03c1 is shown in each panel. (F\u2013J) Home and non-home fitness trajectories for the JDFEs shown in the corresponding panels above. Thick lines show the mean, ribbons show \u00b11 standard deviation estimated from 100 replicate simulations. Population size $N=10^{4}$, mutation rate $U=10^{-4}$ ($U_{b}=4.6\\times10^{-5}$).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** See Materials and methods for details.\n\nThere are other properties of the JDFE that we might intuitively expect to be predictive of the pleiotropic outcomes of adaptation. For example, among the JDFEs considered in Figure 2, it is apparent that those with similar relative probability weights in the first and fourth quadrants produce similar pleiotropic outcomes. However, simulations with other JDFE shapes show that even distributions that are similar according to this metric can also result in qualitatively different pleiotropic outcomes (Figure 2\u2014figure supplement 1).\n\nOverall, our simulations show that JDFEs with apparently similar shapes can produce qualitatively different trajectories of pleiotropic fitness changes (e.g. compare Figure 2A, F and B, G or Figure 2D,I and E,J). Conversely, JDFEs with apparently different shapes can result in rather similar pleiotropic outcomes (e.g. compare Figure 2B, G and E, J or Figure 2A,F and D,I). Thus, while the overall shape of the JDFE clearly determines the trajectory of pleiotropic fitness changes, it is not immediately obvious what features of its shape play the most important role, particularly if the JDFE is more complex than a multivariate Gaussian. In other words, even if we have perfect knowledge of the fitness effects of all mutations in multiple environments, converting this knowledge into a qualitative prediction of the expected direction of pleiotropic fitness change (gain or loss) does not appear straightforward. Therefore, we next turn to developing a population genetics model that would allow us to predict not only the direction of pleiotropic fitness change but also the expected rate of this change and the uncertainty around the expectation.\n\n### The population genetics of pleiotropy\n\nTo systematically investigate which properties of the JDFE determine the pleiotropic fitness changes in the non-home environment, we consider a population of size $N$ that evolves on a JDFE in the \u2018strong selection weak mutation\u2019 (SSWM) regime, also known as the \u2018successional mutation\u2019 regime (Orr, 2000; Desai and Fisher, 2007; Kryazhimskiy et al., 2009; Good and Desai, 2015).\n\nWe consider an arbitrary JDFE without epistasis, that is a situation when all genotypes have the same JDFE $\u03a6\u2062(\u0394\u2062x,\u0394\u2062y)$. We explore an extension to JDFEs with a simple form of epistasis in Appendix 1. We assume that mutations arise at rate $U$ per individual per generation. In the SSWM limit, a mutation that arises in the population either instantaneously fixes or instantaneously dies out. Therefore, the population is essentially monomorphic at all times, such that at any time $t$ we can characterize it by its current pair of fitness values $(X_{t},Y_{t})$. If a new mutation with a pair of selection coefficients $(\u0394\u2062x,\u0394\u2062y)$ arises in the population at time $t$, it fixes with probability $\\pi\u2062(\u0394\u2062x)=\\frac{1-e^{-2\u2062\u0394\u2062x}}{1-e^{-2\u2062N\u2062\u0394\u2062x}}$(Kimura, 1962) in which case the population\u2019s fitness transitions to a new pair of values $(X_{t}+\u0394\u2062x,Y_{t}+\u0394\u2062y)$. If the mutation dies out, an event that occurs with probability $1-\\pi\u2062(\u0394\u2062x)$, the population\u2019s fitness does not change. This model specifies a continuous-time two-dimensional Markov process.\n\nIn general, the dynamics of the probability density $p\u2062(x,y,t)$ of observing the random vector $(X_{t},Y_{t})$ at values $(x,y)$ are governed by an integro-differential forward Kolmogorov equation, which is difficult to solve (Materials and methods). However, if most mutations that contribute to adaptation have small effects, these dynamics are well approximated by a diffusion equation which can be solved exactly (Materials and methods). Then $p(x,y,t)$ is a normal distribution with mean vector\n\n$$\nm(t)=(x_{0}y_{0})+(r_{1}r_{2})NU_{b}t\n$$\n\nand variance-covariance matrix\n\n$$\n\\sigma^{2}(t)=(D_{11}D_{12}D_{12}D_{22})NU_{b}t,\n$$\n\nwhere are $r_{1}$ and $r_{2}$, given by Equation 7 and Equation 8 in Materials and methods, are the expected fitness effects in the home and non-home environments for a mutation fixed in the home environment, and $D_{11},D_{12}$, and $D_{22}$, given by Equation 9\u2013Equation 11 in Materials and methods, are the second moments of this distribution. Here, $U_{b}=U\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03a6(\u03be,\u03b7)$ is the total rate of mutations beneficial in the home environment, and $x_{0}$ and $y_{0}$ are the initial values of population\u2019s fitness in the home and non-home environments.\n\nEquation 1 and Equation 2 show that the distribution of population\u2019s fitness at time $t$ in the non-home environment is entirely determined by two parameters, $r_{2}$ and $D_{22}$, which we call the \u2018pleiotropy statistics\u2019 of the JDFE. The expected rate of fitness change in the non-home environment depends on the pleiotropy statistic $r_{2}$, which we refer to as the expected pleiotropic effect. Thus, evolution on a JDFE with a positive $r_{2}$ is expected to result in pleiotropic fitness gains and evolution on a JDFE with a negative $r_{2}$ is expected to result in pleiotropic fitness losses. Equation 2 shows that the variance around this expectation is determined by the pleiotropy variance statistic $D_{22}$. Since both the expectation and the variance change linearly with time (provided $r_{2}\\neq0$), the change in the non-home fitness in any replicate population will eventually have the same sign as $r_{2}$, but the time scale of such convergence depends on the \u2018collateral resistance risk\u2019 statistic $c=r_{2}/\\sqrt{D_{22}}$ (Materials and methods). This observation has important practical implications, and we return to it in the Section \u2018Robust ranking of drug pairs\u2019.\n\nThese theoretical results suggest a simple explanation for the somewhat counter-intuitive observations in Figure 2. We may intuitively believe that evolution on negatively correlated JDFEs should lead to fitness losses in the non-home environment because on such JDFEs mutations with largest fitness benefits in the home environment typically have negative pleiotropic effects. However, such mutations may be too rare to drive adaptation. At the same time, the more common mutations that do typically drive adaptation may have positive pleiotropic effects, in which case the population would on average gain non-home fitness, as in Figure 2B. Our theory shows that to predict the direction of non-home fitness change, the frequency of beneficial mutations with various pleiotropic effects and the strength of these effects need to be weighted by the likelihood that these mutations fix. The expected pleiotropic effect $r_{2}$ accomplishes this weighting.\n\nWe tested the validity of Equation 1 and Equation 2 by simulating evolution in the SSWM regime on 125 Gaussian JDFEs with various parameters (Materials and methods) and found excellent agreement (Figure 3A and B). However, many microbes likely evolve in the \u2018concurrent mutation\u2019 regime, that is, when multiple beneficial mutations segregate in the population simultaneously (Desai and Fisher, 2007; Lang et al., 2013). As expected, our theory fails to quantitatively predict the pleiotropic fitness trajectories when $N\u2062U_{b}\u00a7gt;1$ (Figure 3\u2014figure supplement 1). However, the expected rate of change of non-home fitness and its variances remain surprisingly well correlated with the pleiotropy statistics $r_{2}$ and $D_{22}$ across various JDFEs (Figure 3\u2014figure supplement 1). In other words, we can still use these statistics to correctly predict whether a population would lose or gain fitness in the non-home environment and to order the non-home environments according to their expected pleiotropic fitness changes and variances. We will exploit the utility of such ranking in the next section.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig3-v2.jpg)\n\n**Figure 3.:** Each point corresponds to an ensemble of replicate simulation runs with the same population genetic parameters on one of 125 Gaussian JDFEs (see Figure 3\u2014source data 1 for the JDFE parameters). (A) Expected pleiotropic effect $r_{2}$ versus the scaled slope of the mean rate of non-home fitness change observed in SSWM simulations. (B) Pleiotropic variance $D_{22}$ versus the scaled rate of change in the variance in non-home fitness observed in SSWM simulations. (C, E, G) Expected pleiotropic effect $r_{2}^{*}$ versus the scaled slope of the mean rate of non-home fitness change observed in Wright-Fisher simulations. (D, F, H) Pleiotropic variance $D_{22}^{*}$ versus the scaled rate of change in the variance in non-home fitness observed in Wright-Fisher simulations. (See Figure 3\u2014figure supplement 1 for comparison between simulations and the unadjusted pleiotropy statistics $r_{2}$ and $D_{22}$) 1000 replicate simulations were carried out in the SSWM regime. All Wright-Fisher simulations were carried out with $U=10^{-4}$ and variable $N$, 300 replicate simulations per data point (see Materials and methods for details). In all panels, the gray dashed line represents the identity (slope 1) line, and the solid line of the same color as the points is the linear regression for the displayed points ($R^{2}$ value is shown in each panel; $P\u00a7lt;2\\times10^{-16}$ for all regressions).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Same as Figure 3C-H, but with $r_{2}$ and $D_{22}$ shown on the x-axis.\n\nWe next sought to expand our theory to the concurrent mutation regime. A key characteristic of adaptation in this regime is that mutations whose fitness benefits in the home environment are below a certain \u2018effective neutrality\u2019 threshold are usually outcompeted by superior mutations and therefore fix with lower probabilities than predicted by Kimura\u2019s formula (Schiffels et al., 2011; Good et al., 2012). Good et al., 2012 provide an equation for calculating the fixation probability $\\pi^{*}\u2062(\u0394\u2062x)$ for a mutation with home fitness benefit $\u0394\u2062x$ in the concurrent mutation regime (Equation (6) in Good et al., 2012). Thus, by replacing $2\u2062\u03be$ (the approximate fixation probability in the SSWM regime) in Equation 8 and Equation 11 with $\\pi^{*}\u2062(\u03be)$, we obtain the adjusted pleiotropy statistics $r_{2}^{*}$ and $D_{22}^{*}$ for the concurrent mutation regime (see Materials and methods for details). Note that in contrast to $r_{2}$ and $D_{22}$, the adjusted statistics $r_{2}^{*}$ and $D_{22}^{*}$ depend on the population genetic parameters $N$ and $U_{b}$.\n\nTo test how well these statistics predict the dynamics of fitness in the non-home environment, we simulated evolution on the same 125 JDFEs using the full Wright-Fisher model with a range of population genetic parameters that span the transition from the successional to the concurrent mutation regimes for 1,000 generations. We find that $r_{2}^{*}$ quantitatively predicts the expected rate of non-home fitness change, with a similar accuracy as Good et al., 2012 predict the rate of fitness change in the home environment, as long as $N\u2062U_{b}\u00a7gt;1$ (Figure 3C, E and G; compare with Figure 3\u2014figure supplement 1A,C,E). $D_{22}^{*}$ also predicts the empirically observed variance in non-home fitness trajectories much better than D22, although this relationship is more noisy than between mean fitness and $r_{2}^{*}$ (Figure 3D, F and H; compare with Figure 3\u2014figure supplement 1B,D,F). Some of this noise can be attributed to sampling, as we estimate both the mean and the variance from 300 replicate simulation runs, and the variance estimation is more noisy. Even in the absence of sampling noise however, we do not expect that $D_{22}^{*}$ would predict the non-home fitness variance perfectly because our theory does not account for the autocorrelation in the fitness trajectories that arise in the concurrent mutation regime but not in the successive mutation regime (see Appendix D in Desai and Fisher, 2007). To our knowledge, a rigorous analytical calculation for ensemble variance in fitness even in the home environment is not yet available.\n\nOverall, our theory allows us to quantitatively predict the dynamics of non-home fitness in a range of evolutionary regimes if the JDFE and the population genetic parameters $N$ and $U_{b}$ are known. However, neither the full JDFE nor the population genetic parameters will likely be known in most practical situations, such as designing a drug treatment for a cancer patient. In the next section, we address the question of how to robustly select drug pairs for a sequential treatment, assuming that the pleiotropy statistics $r_{2}$ and $D_{22}$ are known but the population genetic parameters are not. In the Section \u2018Measuring JDFEs\u2019, we provide some guidance on how the JDFE can be measured.\n\n### Robust ranking of drug pairs\n\nConsider a hypothetical scenario where a drug treatment is being designed for a patient with a tumor or a bacterial infection. In selecting a drug, it is desirable to take into account not only the standard medical considerations, such as drug availability, toxicity, etc., but also the possibility that the treatment with this drug will fail due to the evolution of resistance. Therefore, it may be prudent to consider a list of drugs pairs (or higher-order combinations), ranked by the propensity of the first drug in the pair to elicit collateral resistance against the second drug in the pair. All else being equal, the drug deployed first should form a high-ranking pair with at least one other secondary drug. Then, if the treatment with the first drug fails, a second one can be deployed with a minimal risk of collateral resistance. Thus, we set out to develop a metric for ranking drug pairs according to this risk.\n\nClearly, any drug pair with a negative $r_{2}$ is preferable over any drug pair with a positive $r_{2}$, since the evolution in the presence of the first drug in a pair with $r_{2}\u00a7lt;0$ is expected to elicit collateral sensitivity against the second drug in the pair but the opposite is true for drug pairs with $r_{2}\u00a7gt;0$. It is also clear that among two drug pairs with negative $r_{2}$, a pair with a more negative $r_{2}$ and lower $D_{22}$ is preferable over a pair with a less negative $r_{2}$ and higher $D_{22}$ because evolution in the presence of the first drug in the former pair will more reliably lead to stronger collateral sensitivity against the second drug in the pair. The difficulty is in how to compare and rank two drug pairs where one pair has a more negative $r_{2}$ but higher $D_{22}$. Our theory shows that the chance of emergence of collateral resistance monotonically increases with the collateral risk statistic $c=r_{2}/\\sqrt{D_{22}}$ (see Materials and methods). Thus, we propose to rank drug pairs by $c$ from lowest (most negative and therefore most preferred) to highest (least negative or most positive and therefore least preferred).\n\nTo demonstrate the utility of such ranking, consider four hypothetical drug pairs with JDFEs shown in Figure 4A. The similarity between their shapes makes it difficult to predict a priori which one would have the lowest and highest probabilities of collateral resistance. Thus, we rank these JDFEs by their $c$ statistic. To test whether this ranking is accurate with respect to the risk of collateral resistance, we simulate the evolution of a Wright-Fisher population in the presence of the first drug in each pair for 600 generations and estimate the probability that the evolved population has a positive fitness in the presence of the second drug, that is, the probability that it becomes collaterally resistant (Figure 4B). We find that our a priori ranking corresponds perfectly to the ranking according to this probability, evidenced by the consistently higher collateral resistance risk for JDFEs with higher $c$ (Figure 4B). Interestingly, the top ranked JDFE does not have the lowest expected pleiotropic effect $r_{2}$. Nevertheless, the fact that the pleiotropic variance statistic $D_{22}$ for this JDFE is small ensures that the risk of collateral resistance evolution is the lowest. This 1\u20131 rank correlation holds more broadly, for all 125 Gaussian JDFEs and all population genetic parameters considered in the previous section (Figure 4C) as well as for the empirical TEM \u03b2-lactamase JDFEs (Figure 4\u2014figure supplement 1). Overall, we find that we can use the collateral risk statistic $c$ to robustly rank drug pairs according to the risk of collateral resistance evolution, irrespective of the population genetic parameters.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig4-v2.jpg)\n\n**Figure 4.:** (A) Four hypothetical JDFEs, ranked by their $c$ statistic. For all four JDFEs, the mean and the standard deviation in the home environment are $-1\\times10^{-3}$ and $0.01$, respectively. The mean and the standard deviation in the non-home environment are $1\\times10^{-4}$ and $5.1\\times10^{-3}$ (rank 1), $2.6\\times10^{-3}$ and $7.5\\times10^{-3}$ (rank 2), $5.1\\times10^{-3}$ and $7.5\\times10^{-3}$ (rank 3), $7.5\\times10^{-3}$ and $0.01$ (rank 4). Correlation coefficient for all four JDFEs is $-0.9$. (B) Collateral resistance risk over time, measured as the fraction of populations with positive mean fitness in the non-home environment. These fractions are estimated from 1000 replicate Wright-Fisher simulation runs with $N=10^{4}$, $U=10^{-4}$ ($N\u2062U_{b}=0.46$). Colors correspond to the JDFEs in panel A. Numbers indicate the -rank of each JDFE. (C) A priori $c$-rank ($x$-axis) versus the a posteriori rank ($y$-axis) based on the risk of collateral resistance observed in simulations, for all 125 Gaussian JDFEs and all $N\u2062U_{b}$ values shown in Figure 3. Gray dashed line is the identity line. $R^{2}$ values are $0.94,0.81$ and $0.82$ for $N\u2062U_{b}=0.46,4.6$ and $46$, respectively. $P\u00a7lt;10^{-15}$ for all regressions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Same as Figure 1\u2014figure supplement 1 but colored by $c$-rank, as indicated. (B) Home and non-home fitness trajectories for the JDFEs shown in the corresponding panels in A. Notations are as in Figure 2. Population size $N=10^{4}$, mutation rate $U=10^{-4}$. (C) Collateral resistance risk over time estimated from 5000 replicate simulations shown in B. Colors correspond to the ranks in A.\n\n### Measuring JDFEs\n\nSo far, we assumed that the parameters of the JDFE on which the population evolves are known. In reality, they have to be estimated from data, which opens up at least two practically important questions. The first question is experimental. From what types of data can JDFEs be in principle estimated and how good are different types of data for this purpose? We can imagine, for example, that some properties of JDFEs can be estimated from genome sequencing data (Jerison et al., 2020) or from temporally resolved fitness trajectories (Bakerlee et al., 2021). Here, we focus on the most direct way of estimating JDFE parameters, from the measurements of the home and non-home fitness effects of individual mutations. The experimental challenge with this approach is to sample those mutations that will most likely contribute to adaptation in the home environment (see \u2018Discussion\u2019 for an extended discussion of this problem). Below, we propose two potential strategies for such sampling: the Luria-Delbr\u00fcck (LD) method and the barcode lineage tracking (BLT) method. The second question is statistical: how many mutants need to be sampled to reliably rank drug pairs according to the risk of collateral resistance? We evaluate both proposed methods with respect to this property.\n\nThe idea behind the LD method is to expose the population to a given drug at a concentration above the minimum inhibitory concentration (MIC), so that only resistant mutants survive (Pinheiro et al., 2021). This selection is usually done on agar plates, so that individual resistant mutants form colonies and can be isolated. The LD method is relatively easy to implement experimentally, but it is expected to work only if the drug concentration is high enough to kill almost all non-resistant cells. In reality, resistant mutants may be selected at concentrations much lower than MIC (Andersson and Hughes, 2014). Furthermore, mutants selected at different drug concentrations may be genetically and functionally distinct (Lindsey et al., 2013; Pinheiro et al., 2021) and therefore may have statistically different pleiotropic profiles. As a result, mutants sampled with the LD method may not be most relevant for predicting collateral evolution at low drug concentrations, and other sampling methods may be required for isolating weakly beneficial mutations.\n\nIsolating individual weakly beneficial mutations is more difficult because by the time a mutant reaches a detectable frequency in the population it has accumulated multiple additional driver and passenger mutations (Lang et al., 2013; Nguyen Ba et al., 2019), all of which can potentially have collateral effects. One way to isolate many single beneficial mutations from experimental populations is by using the recently developed barcode lineage tracking (BLT) method (Levy et al., 2015; Venkataram et al., 2016). In a BLT experiment, each cell is initially tagged with a unique DNA barcode. As long as there is no recombination or other DNA exchange, any new mutation is permanently linked to one barcode. A new adaptive mutation causes the frequency of the linked barcode to grow, which can be detected by sequencing. By sampling many random mutants and genotyping them at the barcode locus, one can identify mutants from adapted lineages even if they are rare (Venkataram et al., 2016). As a result, BLT allows one to sample mutants soon after they acquire their first driver mutation, before acquiring secondary mutations.\n\nTo evaluate the quality of sampling based on the LD and BLT methods, we consider the following hypothetical experimental setup. $K$ beneficial mutants are sampled from each home environment (with either one of the methods), and their home and non-home fitness $(X_{i},Y_{i})$ are measured for each mutant $i=1,\u2026,K$. Since we are ultimately interested in ranking drug pairs by their risk of collateral resistance, we estimate the collateral risk statistic $c^$ from these fitness data for each drug pair and use $c^$ to rank them (see Materials and methods for details). We compare such a priori ranking of 125 hypothetical drug pairs with Gaussian JDFEs used in previous sections with their a posteriori ranking based on the risk of collateral resistance observed in simulations.\n\nTo model the LD sampling method on a given JDFE, we randomly sample $K$ mutants whose home fitness exceeds a certain cutoff. To model a BLT experiment, we simulate evolution in the home environment and randomly sample $K$ beneficial mutants segregating at generation 250 (see Materials and methods for details). We find that the $c^$-ranking estimated with either LD or BLT methods captures the a posteriori ranking surprisingly well, even when the number of sampled mutants is as low as 10 per drug pair (Figure 5). Given that the JDFEs with adjacent ranks differ in $c$ by a median of only 0.65%, the strong correlations shown in Figure 5 suggest that even very similar JDFEs can be differentiated with moderate sample sizes. As expected, this correlation is further improved upon increased sampling, and it is insensitive to the specific home fitness threshold that we use in the LD method (Figure 5\u2014figure supplement 1). We conclude that estimating JDFE parameters is in principle feasible with a modest experimental effort, at least for the purpose of ranking drug pairs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig5-v2.jpg)\n\n**Figure 5.:** Both panels show correlations between the a priori estimated $c$-rank ($x$-axis) of the 125 Gaussian JDFEs and their a posteriori rank ($y$-axis) based on the risk of collateral resistance observed in simulations (same data as the $y$-axis in Figure 4C for $N\u2062U_{b}=0.46$). (A) The $c$ statistic is estimated using the Luria-Delbr\u00fcck method (see text for details). Cutoff for sampling mutations is $0.5\u2062\\sigma$, where \u03c3 is the standard deviation of the JDFE in the home environment. See Figure 5\u2014figure supplement 1 for other cutoff values. (B) The $c$ statistic is estimated using the barcode lineage tracking method with $N=10^{6}$ and $U=10^{-4}$ (see text and Materials and methods for details). $P\u00a7lt;10^{-6}$ for all regressions.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73250/elife-73250-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Same as Figure 5A, but with different thresholds for sampling mutations, as indicated above each panel (\u03c3 is the standard deviation of the JDFE in the home environment). See Materials and methods for details. $P\u00a7lt;10^{-6}$ for all regressions.\n\n## Discussion\n\nWe have shown that many resistance mutations against multiple drugs in E. coli exhibit a diversity of collateral effects. If this is true more generally, it implies that there is an unavoidable uncertainty in whether any given population would evolve collateral resistance or sensitivity, which could at least in part explain previously observed inconsistencies among experiments. We quantified the diversity of pleiotropic effects of mutations with a joint distribution of fitness effects (JDFE) and developed a population genetic theory for predicting the expected collateral outcomes of evolution and the uncertainty around these expectations. In the successional mutations regime, our theory shows that the average rate at which fitness in the non-home environment is gained or lost during adaptation to the home environment is determined by the pleiotropy statistic $r_{2}$ given by Equation 8. How strongly the non-home fitness in any individual population deviates from this ensemble average is determined by the pleiotropy variance statistic $D_{22}$ given by Equation 11. Importantly, $r_{2}$ and $D_{22}$ are properties of the JDFE alone, that is, they do not depend on the parameters of any specific population. In the concurrent mutations regime, the expected rate of non-home fitness gain or loss and the associated variance are reasonably well predicted by the adjusted pleiotropy statistics $r_{2}^{*}$ and $D_{22}^{*}$. Unlike $r_{2}$ and $D_{22}$, the adjusted statistics depend on the population size $N$ and the rate of beneficial mutations $U_{b}$.\n\nTo quantitatively predict the probability of evolution of collateral drug resistance in practice would require the knowledge of both the JDFE for the focal bacterial or cancer-cell population in the presence of the specific pair of drugs and its in vivo population genetic parameters. Since estimating the latter parameters is very difficult, it appears unlikely that we would be able to quantitatively predict the dynamics of collateral effects, even if JDFEs were known. A more realistic application of our theory is that it allows us to rank drug pairs according to the risk of collateral resistance even when the population genetic parameters are unknown. Such robust ranking can be computed based on the collateral risk statistic $c=r_{2}/\\sqrt{D_{22}}$, a property of the JDFE but not of the evolving population. Drug pairs with positive values of $c$ have a higher chance of eliciting collateral resistance than collateral sensitivity and should be avoided; drug pairs with more negative values of $c$ have a lower risk of collateral resistance evolution than those with less negative values.\n\nWe have validated our theory in silico, but how well it would work in vivo (in the clinic) or even in vitro (in the lab) is as of yet unclear. A direct way to validate the theory empirically would be to estimate JDFEs for a model organism, such as E. coli, in a number of drug pairs, rank these pairs according to our collateral rank statistic and then test this ranking by evolving replicate populations and measuring the empirical distributions of collateral resistance/sensitivity outcomes. To the best of our knowledge, the antibiotic resistance JDFEs among genome-wide mutations have not yet been measured. One could in principle use existing gene knock-out data, such as those obtained by Chevereau et al., 2015 (Figure 1), or the data from deep mutational scanning experiments, such as those obtained by Stiffler et al., 2015 (Figure 1\u2014figure supplement 1), to estimate JDFEs. However, these experiments estimate fitness only for certain subsets of mutations (gene knock-outs or point mutations within a single gene, respectively). Since resistance may arise via other types of mutations (Nichol et al., 2019), these data would give us at best an incomplete picture of actual JDFEs. Our results suggest that JDFEs can be reasonably well estimated by sampling resistance mutants at drug concentrations above MIC or by employing the barcode lineage tracking method.\n\nAnother obstacle is that, even though many researchers have experimentally evolved various microbes in the presence of drugs, most experiments have maintained too few replicate populations to accurately measure the variation in collateral outcomes of evolution. The study by Nichol et al., 2019, with 60 replicates, is a notable exception. In short, a rigorous test of our theory requires new data on the shapes of whole-genome JDFEs as well as higher throughput evolution experiments.\n\nWhat the most effective ways of measuring JDFEs are and whether it will be possible to measure JDFE in vivo are open questions. We speculate that the answers will depend on the shapes of the empirical JDFEs because some shapes may be more difficult to estimate than others. For example, if empirical JDFEs resemble multivariate Gaussian distributions, then we can learn all relevant parameters of such JDFE by sampling a handful of random mutants and measuring their fitness in relevant environments. One can also imagine more complex JDFEs where mutations beneficial in the home environment have a dramatically different distribution of non-home fitness effects than mutations that are deleterious or neutral in the home environment. In this case, very large samples of random mutations would be necessary to correctly predict the pleiotropic outcomes of evolution, so that methods that preferentially sample beneficial mutations may be required. We have considered two such methods, which are experimentally feasible. We have shown that both of them perform extremely well on Gaussian JDFEs in the sense that as few as 10 mutants per drug pair are sufficient to produce largely correct ranking of hypothetical drug pairs. However, it may be difficult to apply these methods in vivo, in which case JDFEs may have to be estimated in the lab, with selection pressures reproducing those in vivo as accurately as possible.\n\nOur model relies on two important simplifications. It describes the evolution of an asexual population where all resistance alleles arise from de novo mutations. In reality, some resistance alleles in bacteria may be transferred horizontally (Sun et al., 2019). Understanding collateral resistance evolution in the presence of horizontal gene transfer events would require incorporating JDFE into other models of evolutionary dynamics (e.g. Neher et al., 2010). Another major simplification is in the assumption that the JDFE stays constant as the population adapts. In reality the JDFE will change over time because of the depletion of the pool of adaptive mutations and because of epistasis (Good et al., 2017; Venkataram et al., 2020). How JDFEs vary among genetic backgrounds is currently unknown. In Appendix 1, we have shown that our main results hold at least in the presence of a simple form of \u2018global\u2019 epistasis. Empirically measuring how JDFEs vary across genotypes and theoretically understanding how such variation affects the evolution of pleiotropic outcomes are important open questions.\n\nWhile we were primarily motivated by the problem of evolution of collateral drug resistance and sensitivity, our theory is applicable more broadly. The shape of JDFE must play a crucial role in determining whether the population evolves toward a generalist or diversifies into multiple specialist ecotypes. Previous literature has viewed this question primarily through the lense of two alternative hypotheses: antagonistic pleiotropy and mutation accumulation (Visher and Boots, 2020). Antagonistic pleiotropy in its strictest sense means that the population is at the Pareto front with respect to the home and non-home fitness, such that any mutation beneficial in the home environment reduces the fitness in the non-home environment (Li et al., 2019). The shape of the Pareto front then determines whether selection would favor specialists or generalists (Levins, 1968; Visher and Boots, 2020). Alternatively, a population can evolve to become a home-environment specialist even in the absence of trade-offs, simply by accumulating mutations that are neutral in the home environment but deleterious in the non-home environment (Kawecki, 1994). More recently, it has been recognized that antagonistic pleiotropy and mutation accumulation are not discrete alternatives but rather extremes of a continuum of models (Bono et al., 2020; Jerison et al., 2014; Jerison et al., 2020). The JDFE provides a mathematical way to describe this continuum. For example, strict antagonistic pleiotropy can be modeled with a JDFE with zero probability weight in the first quadrant and a bulk of probability in the fourth quadrant. A mutation accumulation scenario can be modeled with a \u2018+\u2019-like JDFE where all mutations beneficial in the home environment are neutral in the non-home environment (i.e. concentrated on the $x$-axis) and all or most mutations neutral in the home environment (i.e. those on the $y$-axis) are deleterious in the non-home environment. Our theory shows that in fact all JDFEs with negative r2 lead to loss of fitness in the non-home environment and therefore can potentially promote specialization. While our theory provides this insight, further work is needed to understand how JDFEs govern adaptation to variable environments. This future theoretical work, together with empirical inquiries into the shapes of JDFEs, will not only advance our ability to predict evolution in practical situations, such as drug resistance, but it will also help us better understand the origins of ecological diversity.\n\n## Materials and methods\n\n### Analysis of knock-out and deep mutational scanning data\n\n#### Knock-out data\n\nChevereau et al., 2015 provide growth rate estimates for 3883 gene knock-out mutants of E. coli in the presence of six antibiotics. Our goal is to identify those knock-out mutations that provide resistance against one drug and are also collaterally resistant or collaterally sensitive to another drug. However, it is unclear from these original data alone which mutations have statistically significant beneficial and deleterious effects because no measurement noise estimates are provided. To address this problem, we obtained replicate wild-type growth rate measurements in the presence of antibiotics from Guillaume Chevereau and Tobias Bollenbach (available at https://github.com/ardellsarah/JDFE-project; copy archived at swh:1:rev:e91f2940681269511c6bb9fd4560ccd4a7c4d641, Ardell, 2022). In this additional data set, the wild-type E. coli strain is measured on average 476 times in the presence of each drug. We estimate the wild-type growth rate $r_{WT}$ as the mean of these measurements, and we obtain the selection coefficient for all knock-out mutants as $s_{i}=r_{i}-r_{WT}$. We also obtain the noise distribution $P_{noise}\u2062(s)$ from the replicate wildtype measurements (shown in red in the diagonal panels in Figure 1). Modeling $P_{noise}\u2062(s)$ as normal distributions, we obtain the P-values for each mutation in the presence of each antibiotic.\n\nWe then call any knock-out mutant as resistant against a given drug if its selection coefficient in the presence of that drug exceeds a critical value $s_{\\alpha}^{+}\u00a7gt;0$. We choose $s_{\\alpha}^{+}$ using the Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995) so that the false discovery rate (FDR) among the identified resistant mutants is $\\alpha\u22480.25$. We could not find an $s_{\\alpha}^{+}$ for $\\alpha\u22720.25$ for trimethoprim (TMP) and chloramphenicol (CHL), that is, there were not enough knock-out mutations with positive selection coefficients to reliably distinguish them from measurement errors.\n\nWe apply the same procedure to identify mutations that are collaterally resistant and collaterally sensitive against a second drug among all mutations that are resistant against the first drug, except we aim for FDR $\u22720.10$.\n\n#### Deep mutational scanning data\n\nStiffler et al., 2015 provide estimates of relative fitness for 4997 point mutations in the TEM-1 \u03b2-lactamase gene in the presence of cefotaxime (CTX) and four concentrations of ampicillin (AMP). We estimate the selection coefficients from the reported relative fitness values by changing the logarithm from log10 to natural and dividing it by six, the estimated number of generations that occurred during the 2-hr experiment. The latter is based on the fact that Stiffler et al., 2015 chose AMP concentrations which did not significantly alter the E. coli doubling time, which we assumed to be 20 minutes. We used the same number of generations for CTX.\n\nStiffler et al., 2015 report two replicate measurements per mutant in each concentration of AMP and one measurement per mutant in the presence of CTX. We consider CTX as the home environment and call all mutations with positive measured fitness effects as resistant against CTX. For each such mutation, we use two replicate measurements in each concentration of AMP to estimate its mean fitness effect and the 90% confidence interval around the mean, based on the normal distribution. We call any CTX resistant mutation with the entire confidence interval above (below) zero as collaterally resistant (sensitive) against AMP at that concentration. All remaining CTX resistant mutations are called collaterally neutral.\n\n### Theory\n\n#### Successional mutations regime\n\nWe assume that an asexual population evolves according the Wright-Fisher model in the strong selection weak mutation (SSWM) limit (Orr, 2000; Kryazhimskiy et al., 2009; Good and Desai, 2015), also known as the \u2018successional mutations\u2019 regime (Desai and Fisher, 2007). In this regime, the population remains monomorphic until the arrival of a new mutation that is destined to fix. The waiting time for such new mutation is assumed to be much longer than the time it takes for the mutation to fix, that is, fixation happens almost instantaneously on this time scale, after which point the population is again monomorphic. If the per genome per generation rate of beneficial mutations is $U_{b}$, their typical effect is $s$ and the population size is $N$, the SSWM approximation holds when $N\u2062U_{b}\u226a1/ln\u2061(N\u2062s)$ (Desai and Fisher, 2007).\n\nWe describe our population by a two-dimensional vector of random variables $(X_{t},Y_{t})$, where $X_{t}$ and $Y_{t}$ are the population\u2019s fitness (growth rate or the Malthusian parameter) in the home and non-home environments at generation $t$, respectively. We assume that the fitness vector of the population at the initial time point is known and is $(x_{0},y_{0})$. We are interested in characterizing the joint probability density $p(x,y,t)dxdy=Pr{X_{t}\\in(x,x+dx),Y_{t}\\in(y,y+dy)}$.\n\nWe assume that all genotypes have the same JDFE $\u03a6\u2062(\u0394\u2062x,\u0394\u2062y)$, that is, there is no epistasis. In the exponential growth model, the selection coefficient of a mutation is the difference between the mutant and the ancestor growth rates in the home environment, that is, $\u0394\u2062x$. The probability of fixation of the mutant is given by Kimura\u2019s formula, which we approximate by $2\u2062\u0394\u2062x$ for $\u0394\u2062x\u00a7gt;0$ and zero otherwise (Crow and Kimura, 1972).\n\nIf the total rate of mutations (per genome per generation) is $U$, the rate of mutations beneficial in the home environment is given by $U_{b}=Uf_{b}$ where $f_{b}=\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03a6(\u03be,\u03b7)$ is the fraction of mutations beneficial in the home environment. Once such a mutation arises, its selection coefficients in the home and non-home environments are drawn from the JDFE of mutations beneficial in the home environment $\u03a6_{b}\u2062(\u0394\u2062x,\u0394\u2062y)=\u03a6\u2062(\u0394\u2062x,\u0394\u2062y)/f_{b}$. Then, in the SSWM limit, our population is described by a two-dimensional continuous-time continuous-space Markov chain with the transition rate from state $(x,y)$ to state $(x^{\u2032},y^{\u2032})$ given by\n\n$$\n2NU_{b}Q(x^{\u2032},y^{\u2032}|x,y)={2NU_{b}(x^{\u2032}\u2212x)\u03a6_{b}(x^{\u2032}\u2212x,y^{\u2032}\u2212y)ifx^{\u2032}\u00a7gt;x,0otherwise.\n$$\n\nThe probability distribution $p\u2062(x,y,t)$ satisfies the integro-differential forward Kolmogorov equation (Van Kampen, 1992)\n\n$$\n\\frac{1}{NU_{b}}\\frac{\u2202p}{\u2202t}(x,y,t)=2\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{\u2212\u221e}^{\u221e}d\u03be(p(\u03be,\u03b7,t)Q(x,y|\u03be,\u03b7)\u2212p(x,y,t)Q(\u03be,\u03b7|x,y))\n$$\n\nwith the initial condition\n\n$$\np\u2062(x,y,0)=\\delta\u2062(x-x_{0})\u2062\\delta\u2062(y-y_{0}).\n$$\n\nWhen beneficial mutations with large effects are sufficiently rare, Equation 4 can be approximated by the Fokker-Planck equation (Van Kampen, 1992)\n\n$$\n\\frac{1}{NU_{b}}\\frac{\u2202p}{\u2202t}=\u2212r_{1}\\frac{\u2202p}{\u2202x}\u2212r_{2}\\frac{\u2202p}{\u2202y}+\\frac{D_{11}}{2}\\frac{\u2202^{2}p}{\u2202x^{2}}+D_{12}\\frac{\u2202^{2}p}{\u2202x\u2202y}+\\frac{D_{22}}{2}\\frac{\u2202^{2}p}{\u2202y^{2}},\n$$\n\nwhere\n\n$$\nr_{1}=2\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03be^{2}\u03a6_{b}(\u03be,\u03b7),\n$$\n\n\n\n$$\nr_{2}=2\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03b7\u03be\u03a6_{b}(\u03be,\u03b7)\n$$\n\nare the expected fitness effects in the home and non-home environments for a mutation fixed in the home environment, and\n\n$$\nD_{11}=2\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03be^{3}\u03a6_{b}(\u03be,\u03b7),\n$$\n\n\n\n$$\nD_{12}=2\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03b7\u03be^{2}\u03a6_{b}(\u03be,\u03b7),\n$$\n\n\n\n$$\nD_{22}=2\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03b7^{2}\u03be\u03a6_{b}(\u03be,\u03b7)\n$$\n\nare the second moments of the distribution of the fitness effects of mutations fixed in the home environment. The solution to Equation 6 with the initial condition given by Equation 5 is a multi-variate normal distribution with the mean vector $m(t)$ and the variance-covariance matrix $\\sigma^{2}(t)$ given by Equation 1 and Equation 2.\n\n#### Concurrent mutations regime\n\nThe theory we developed so far for the successional mutations regime breaks down in the concurrent mutations regime, that is, when multiple adaptive mutations segregate in the population simultaneously (Desai and Fisher, 2007). The main effect of competition between segregating adaptive lineages is that many new beneficial mutations arise in relatively low-fitness genetic backgrounds and have almost no chance of surviving competition (Desai and Fisher, 2007; Schiffels et al., 2011; Good et al., 2012). As a result, the fixation probability of a beneficial mutation with selective effect $\u0394\u2062x$ in the home environment is no longer $2\u2062\u0394\u2062x$. Instead, beneficial mutations that provide fitness benefits below a certain threshold $x_{c}$ behave as if they are effectively neutral (i.e. their fixation probability is close to zero), and most adaptation is driven by mutations with benefits above $x_{c}$, where $x_{c}$ depends on the population genetic parameters $N$ and $U_{b}$ as well as the shape of the distribution of fitness effects of beneficial mutations. Good et al., 2012 derived equations that allow us to calculate the effective fixation probability $\\pi^{*}\u2062(\u0394\u2062x;N,U_{b})$ of a beneficial mutation with the fitness benefit $\u0394\u2062x$ in the home environment in the concurrent mutation regime. Thus, to predict the average rate of non-home fitness change, we replace the SSWM fixation probability $2\u2062\u03be$ in Equation 8 with $\\pi^{*}\u2062(\u03be;N,U_{b})$ and obtain the adjusted expected pleiotropic effect. We similarly obtain the adjusted pleiotropic variance statistic\n\n$$\nD_{22}^{\u2217}(N,U_{b})=\\int_{\u2212\u221e}^{\u221e}d\u03b7\\int_{0}^{\u221e}d\u03be\u03b7^{2}\\pi^{\u2217}(\u03be;N,U_{b})\u03a6_{b}(\u03be,\u03b7),\n$$\n\nalthough as discussed in Section \u2018The population genetics of pleiotropy\u2019, we do not expect $D_{22}^{*}$ to capture all of the variation in non-home fitness trajectories.\n\nTo calculate $\\pi^{*}\u2062(\u0394\u2062x;N,U_{b})$ for the Gaussian JDFEs shown in Figure 2, we first substitute Equation (20) in Good et al., 2012 with $\\beta=2$ into Equation 18, 19 in Good et al., 2012 and then numerically solve these equations for $x_{c}$ and $v$ using the FindRoot numerical method in Mathematica. Note that all our Gaussian JDFEs share the same mean and variance in the home environment, so we need to solve these equations only once for each pair of $N$ and $U_{b}$ values. We then substitute the obtained values of $x_{c}$ and $v$ into Equation (4) (9) in Good et al., 2012 and calculate $\\pi^{*}$ by a numerical integration of Equation (6) in Good et al., 2012 in R (available at https://github.com/ardellsarah/JDFE-project).\n\n### Ranking of drug pairs\n\nAccording to Equation 1 and Equation 2, both the expected non-home fitness and its variance change linearly with time, so that at time $t$ the mean is $Z=c\u2062\\sqrt{N\u2062U_{b}\u2062t}$ standard deviations above $y_{0}$ (if $r_{2}\u00a7gt;0$) or below $y_{0}$ (if $r_{2}\u00a7lt;0$), where $c=r_{2}/\\sqrt{D_{22}}$. In other words, if $r_{2}\u00a7gt;0$, the bulk of the non-home fitness distribution eventually shifts above $y_{0}$, and if $r_{2}\u00a7lt;0$, it shifts below $y_{0}$. All else being equal, a larger value of $|c|$ implies faster rate of this shift.\n\nThe interpretation of these observations in terms of collateral resistance/sensitivity is that adaptation in the presence of the first drug will eventually lead to collateral resistance against the second drug if $r_{2}\u00a7gt;0$ and to collateral sensitivity if $r_{2}\u00a7lt;0$. Furthermore, all else being equal, collateral sensitivity evolves faster and the chance of evolving collateral resistance is smaller for drug pairs with more negative $c$ (i.e. larger $|c|$). Thus, we use $c$ to order drug pairs from the most preferred (those with the most negative values of $c$) to least preferred (those with least negative or positive values of $c$).\n\n### Generation of JDFEs\n\n#### Gaussian JDFEs\n\nThe JDFEs in Figure 2 have the following parameters. Mean in the home environment: -0.05. Standard deviation in both home and non-home environments: 0.1. Means in the non-home environment: 0.08, 0.145, 0, -0.145, -0.08 in panels A through E, respectively.\n\nThe JDFEs in Figure 3 have the following parameters. Mean and standard deviation in the home environment: -0.001 and 0.001, respectively. The non-home mean varies between 0.0001 and 0.01. The non-home standard deviation varies between 0.0001 and 0.01. The correlation between home and non-home fitness varies between -0.9 and 0.9, for a total of 125 JDFEs. All parameter values and the resulting pleiotropy statistics for these JDFEs are given in the Figure 3\u2014source data 1.\n\n#### JDFEs with equal probabilities of pleiotropically beneficial and deleterious mutations\n\nAll JDFEs in Figure 2\u2014figure supplement 1 are mixtures of two two-dimensional uncorrelated Gaussian distributions, which have the following parameters. Mean in the home environment: 0.4. Standard deviation in both home and non-home environments: 0.1. Means in the non-home environment: 0.1 and -0.1 in panel A, 0.5 and -0.5 in panel B, 0.17 and -0.5 in panel C, and 0.5 and -0.17 in panel D.\n\n### Simulations\n\nWe carried out two types of simulations, SSWM model simulations and full Wright-Fisher model simulations.\n\n#### Strong selection weak mutation\n\nThe SSWM simulations were carried out using the Gillespie algorithm (Gillespie, 1976), as follows. We initiate the populations with home and non-home fitness values $x_{0}=0$ and $y_{0}=0$. At each iteration, we draw the waiting time until the appearance of the next beneficial mutation from the exponential distribution with the rate parameter $N\u2062U_{b}$ and advance the time by this amount. Then, we draw the selection coefficients $\u0394\u2062x$ and $\u0394\u2062y$ of this mutation in the home- and non-home environment, respectively, from the JDFE (a multivariate normal distribution). With probability $2\u2062\u0394\u2062x$, the mutation fixes in the population. If it does, the fitness of the population is updated accordingly.\n\n#### Wright-Fisher model\n\nWe simulate evolution in the home environment according to the Wright-Fisher model with population size $N$ as follows. We initiate the whole population with a single genotype with fitness $x_{0}=0$ and $y_{0}=0$ in the home and non-home environments. Suppose that at generation $t$, there are $K\u2062(t)$ genotypes, such that genotype $i$ has home- and non-home fitness $X_{i}$ and $Y_{i}$, respectively, and it is present at frequency $f_{i}\u2062(t)\u00a7gt;0$ in the population. We generate the genotype frequencies at generation $t+1$ in three steps. In the reproduction step, we draw random numbers $B_{i}^{\u2032}\u2062(t+1)$, $i=1,\u2026,K\u2062(t)$ from the multinomial distribution with the number of trials $N$ and success probabilities $p_{i}\u2062(t)=f_{i}\u2062(t)+f_{i}\u2062(t)\u2062(X_{i}\u2062(t)-X\u00af\u2062(t)),$ where $X\u00af\u2062(t)=\\sum_{i=1}^{K\u2062(t)}X_{i}\u2062(t)\u2062f_{i}\u2062(t)$ is the mean fitness of the population in the home environment at generation $t$. In the mutation step, we draw a random number $M$ of new mutants from the Poisson distribution with parameter $N\u2062U$, where $U$ is the total per individual per generation mutation rate. We randomly determine the \u2018parent\u2019 genotypes in which each mutation occurs and turn the appropriate numbers of parent individuals into new mutants. We assume that each new mutation creates a new genotype and has fitness effects $\u0394\u2062x$ and $\u0394\u2062y$ in the home and non-home environments. $\u0394\u2062x$ and $\u0394\u2062y$ are drawn randomly from the JDFE $\u03a6\u2062(\u0394\u2062x,\u0394\u2062y)$. We obtain each mutants fitness by adding these values to the parent genotype\u2019s home and non-home fitness values. In the final step, all genotypes that are represented by zero individuals are removed and we are left with $K\u2062(t+1)$ genotypes with $B_{i}\u2062(t+1)\u00a7gt;0$ individuals, $i=1,\u2026,K\u2062(t+1)$. Then we set $f_{i}\u2062(t+1)=B_{i}\u2062(t+1)/N$.\n\n### Sampling beneficial mutants from JDFEs and estimating the collateral risk statistic\n\nWe model the LD sampling method by randomly drawing mutants from the JDFE until the desired number $K$ of mutants whose home fitness exceeds the focal threshold are sampled. We estimate the $c$ statistic from the pairs of home and non-home fitness effects $X_{i}$ and $Y_{i}$ of these $i=1,\u2026,K$ sampled mutants. To do so, we first estimate $r_{2}$ and $D_{22}$ as $r^_{2}=1/K\u2062\\sum_{i=1}^{K}X_{i}\u2062Y_{i}$ and $D^_{22}=1/K\u2062\\sum_{i=1}^{K}X_{i}\u2062Y_{i}^{2}$. We then calculate $c^=r^_{2}/\\sqrt{D^_{22}}$.\n\nFor the BLT sampling method, we simulate the Wright-Fisher model as described above for $N=10^{6}$ and $U=10^{-4}$ for 250 generations. At generation 250, we randomly sample existing beneficial mutants proportional to their frequency in the population without replacement (i.e. the same beneficial mutation is sampled at most once). Sampling more than $\u223c50$ distinct beneficial mutants from a single population becomes difficult because there may simply be not enough such mutants or some of them may be at very low frequencies. Therefore, if the desired number of mutants to sample exceeds 50, we run multiple replicate simulations and sample a maximum of 100 distinct beneficial mutants per replicate until the desired number of mutants is reached. We then estimate the $c$ statistics as with the LD method.\n",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "c671103c-6aab-4981-a864-74cef5be18f0",
+      "submission_id": "9161fb63-80d9-4832-85cc-14d2f41a7a20",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73250.sa0](https://doi.org/10.7554/eLife.73250.sa0)\n\nWhen selecting for one particular trait, it is not uncommon for other traits to change. This is due to pleiotropic mutations that affect multiple characters. Ardell and Kryazhimskiy develop a theoretical framework to predict adaptive trajectories observed in environments other than the one selection is operating in. The effects of adaptation across environments have important implication to antibiotic treatments, where resistance evolution to one antibiotic can alter the susceptibility to other antibiotics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Richard A Neher, University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73250.sa1](https://doi.org/10.7554/eLife.73250.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"The population genetics of pleiotropy, and the evolution of collateral resistance and sensitivity in bacteria\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Richard A Neher as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Joachim Krug (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. However, if you feel you can address the comments as outlined below, we encourage you to resubmit.\n\nThe reviewers agreed that pleiotropy of mutations and the resulting adaptive trajectories across different environment are important topics that are both of theoretical and applied interest. Your theoretical framework predicts fitness trajectories observed in environments other than the one selection is operating in (home env). These trajectories in non-home environments are calculated via integrals over the joint fitness effect distribution weighted by the fixation probability in the home environment. However, your framework assumes strong selection and weak mutation (SSWM) and deviations from this assumption seem to have strong effects. We think that these effects need to be at least partially understood. Furthermore, application to the KO library is a useful proof-of-concept, but the practical relevance of these patterns for understanding collateral sensitivity/resistance is far from obvious.\n\nIn summary, we felt that the manuscript needs to make a more substantiative theoretical advances and/or provide more robust actionable insights into drug resistance evolution to justify publication in eLife. We would be happy to reconsider this manuscript should you be able to make substantive progress towards these issues.\n\nReviewer #1:\n\nArdell and Kryazhimskiy use bacterial KO data in multiple conditions to study the structure of pleiotropy, that is the degree to which a genetic perturbation affects multiple phenotypes, and present a theoretical framework to predict and assess fitness trajectories observed in environments other than the one selection is operating in. The work is thoroughly done and has potentially interesting implications for sequential drug therapy.\n\nThe central object of their framework is the joint distribution of fitness effects of mutations in multiple environments where the distribution is over all mutations in the genome. The dynamics in the space of fitness in multiple environments is then modeled as a random walk (described by a diffusion equation) assuming that mutations sweep separated in time (SSWM). The model and the calculations necessary to arrive at the predictions are simple and transparent. The results quantitatively predict simulation results with the range of validity of SSWM. Outside this range, the model predicts the qualitative behavior, but is quantitatively wrong.\n\n1) My main disappointment with the paper is the inability to quantitatively describe the dynamics outside the SSWM regime. I would expect that the effects of competing mutations or weak selection could be accounted for at least perturbatively. Alternative, one could determine the distribution of the effects of fixed mutations in the \"home\" environment in simulations and use this distribution to predict the dynamics in other environments.\n\n2) My other substantial concern is the question whether anything can be learned about drug resistance evolution or collateral sensitivity/resistance from KO experiments. While some drug resistance evolution involves loss-of-function mutations (e.g. porin losses), it often proceeds via point mutations, up-regulation, or horizontal acquisition. Furthermore, the statistical treatment here requires many mutations to sample the joint effect distribution to give reliable answers. In clinical resistance evolution, the number of mutations observed is often quite small and their effect distributions are wide. The practical relevance of this is therefore far from clear.\n\n3) While the similarity of this work to similar questions in quantitative genetics is discussed in the introduction, I would like to see an extended discussion whether some limits of the model at hand can be described by the quantitative genetics approach.\n\nReviewer #2:\n\nThe authors present a theoretical framework for analysing pleiotropic effects in populations evolving in different environments based on the concept of a joint distribution of fitness effects (JDFE). Simple correlation measures are derived from the JDFE that allow one to predict the evolutionary outcome in the non-home environment. Analytic theory is derived in the SSWM regime and complemented by simulations covering the regime of large mutation supply. A proof-of-concept application to collateral antibiotic resistance and sensitivity in bacteria based on a published data set for knockout strains is presented. Overall, this is an important, systematic contribution to very timely subject that is well suited for publication in eLife.\n\n1. I do not quite share the authors' surprise at the outcomes shown in Figure 1. In fact, there is a simple heuristic that allows one to predict the direction of the fitness change in the non-home environment in all cases: Simply look at the y-coordinate of the tail of the JDFE corresponding to the largest beneficial effects along the x-axis.\n\n2. Along the three rows of panels in Figure 2, there appears to be a systematic but in two cases non-monotonic variation of the slope with the mutation supply NU_b. Do the authors have a (tentative) explanation for this behavior?\n\nReviewer #3:\n\nThe goal of this manuscript--to develop predictive tools for inferring fitness trajectories in new environments--is an important goal and I appreciate the synthesis of theoretical modeling with parameter estimation from empirical mutation studies.\n\nReading through the manuscript, however, I found myself repeatedly wondering whether the stated application of the methods developed here doesn't constitute something of a tautology. This could be a misreading on my end, but I'll explain: the authors state that they have the central goal of predicting whether a population adapting to one environment will lose fitness in another \"non-home\" environment. Yet the parameter estimation they develop and propose for estimating fitness trajectories requires fitness measurements in both the home and non-home environments. If one already has fitness measurements for both home and non-home, how much more information is added by estimating the JDFE? I understand that the authors are estimating the fitness trajectories over time, with the incorporation of population genetic parameters, but again, I was unsure of how much information was added with the JDFE particularly given large discrepancies in the Wright-Fisher models and the decreasing predictive capacity with time. The bottom row of Figure 1 provided perhaps the most convincing evidence of the usefulness of the JDFE, but the unintuitive result was not adequately explored nor explained (see comment below). Also, perhaps an exploration of how the predictions could be extended to unmeasured environments is possible (as in Kinsler et al. 2020)?\n\nFurther specific conceptual comments and suggestions:\n\n1) The authors demonstrate in Figure 1 that JDFEs even with similar shapes produce markedly different fitness trajectories. They argue that the correlation coefficient of the JDFE is not a reliable predictor of fitness trajectories in the home environment. I was struck by this counterintuitive result, and found myself searching for further explanation. Are the authors arguing that the practice of simply looking at the correlation coefficient in tradeoff studies in general is insufficient for predicting the fates of pleiotropic mutations? Either way, it would be helpful to the reader to elaborate on why and under which conditions the discrepancy with the correlation coefficient and fitness trajectories arises.\n\n2) The modeling results throughout the manuscript reveal poor predictive capabilities in Wright-Fisher simulations. For example, the results in figure 2 show substantial discrepancy between the theoretical predictions and the results of the Wright-Fisher simulations. The authors address this only briefly stating that outside of the strong selection, weak mutation model (SSWM) the pleiotropy statistics are only \"statistical predictors\". But the discrepancy was systematic and wide, suggesting rather little insight from the pleiotropy statistics in sequential adaptation scenarios. I could not find discussion of this discrepancy between the SSWM and Wright-Fisher modeling predictions.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The Population Genetics of Collateral Resistance and Sensitivity\" for further consideration by eLife. Your revised article has been evaluated by Meredith Schuman (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved considerably. The reviewers particularly appreciated the more general theoretical results. However, we would like to see a more thorough discussion of previous literature. In particular, the study by Nichol et al. is important prior work that needs to be discussed in greater depth.\n\nIn addition to a more extensive discussion of the literature, we would also like to see, if at all possible, some level of empirical validation of the results beyond the KO data presented so far. The data by Stiffler et al. and Nichol et al. characterize point mutations. Using these data beyond what is currently shown in Figure S1 could be very valuable.\n\nReviewer #2:\n\nThe manuscript has been largely restructured and rewritten, and has improved considerably. The issues that I raised in my previous report have been adequately addressed. As requested in the previous round of reviews, the theory has been generalized beyond the SSWM regime. Moreover, a second data set on resistance mutations in \u03b2-lactamase has been added, and the discussion of the practical applicability of the approach has been extended significantly. As far as I am concerned, the paper can be accepted in its present form.\n\nReviewer #3:\n\nThe authors thoroughly responded to the reviewers' comments and I found the resubmission to be both clearer and to demonstrate greater prediction accuracy in the Wright Fisher simulations. The addition of the section on estimating JDFE parameters from experimental data was a positive addition to the manuscript in that it provides a bridge for experimentalists to implement the methods developed by the authors.\n\nThat being said, as an experimentalist who could potentially implement the proposed modeling in my own work for predicting tradeoffs, I am not yet convinced of the significant advance of the proposed modeling framework for making predictions. Specifically, I found the following two points to present the most significant drawbacks to the manuscript at present:\n\ni) I found the manuscript to lack sufficient discussion of what has been shown before in the field of modeling collateral resistances and how the present manuscript presents a clear advance in light of this work. To the first point, a brief perusal of recent literature on collateral resistance brought me to Nichol et al. 2019 Nature Comm. Ardell et al. reference the Nichol manuscript on line 37 when stating that previous work observes wide variation in collateral outcomes. But Nichol et al. did more than demonstrate variation in collateral outcomes, and instead conducted 60 parallel experimental evolution assays in one antibiotic, measured the probability of collateral resistance/susceptibility and then modeled through SSWM simulations the predicted collateral resistance outcomes for dozens of drug pairs. The present manuscript should explain how its methods/goals/results differ from those of Nichol et al.\n\nMy second point is (ii) the manuscript would be significantly strengthened if it could provide proof-of-concept validations beyond the KO work and the \u03b2-lactamase work. If I understand correctly, the authors perform the drug-ranking experiments with simulated data. I am surprised that the authors cannot find a dataset in which to validate any part of the drug-ranking predictions. This type of validation would be helpful in convincing the reader of the strength of the proposed methods. As a relevant aside, Beyond Figure S1 I couldn't find where the \u0392-lactamase data was used and the basic conclusion stated in the text for S1 regarding variable resistance pleiotropy is already well-established in previous work.\n",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6f3282ad-f438-491c-8a9f-b14f3c4c80cf",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C1",
+      "claim": "Resistance mutations against one drug can elicit collateral sensitivity against other drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance mutations against one drug can elicit collateral sensitivity against other drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known phenomenon that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "ee9cc0cb-9466-47ec-8de2-d117be53c007",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C2",
+      "claim": "Multi-drug treatments exploiting collateral sensitivity trade-offs can help slow down the evolution of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-drug treatments exploiting such trade-offs can help slow down the evolution of resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known principle in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "dcdb0624-6d95-4748-ad26-1119c85ee584",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C3",
+      "claim": "Many resistance mutations in Escherichia coli against various antibiotics have diverse collateral effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that many resistance mutations in Escherichia coli against various antibiotics indeed have diverse collateral effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract and supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "481d6319-2446-4f73-ae46-1c831e903171",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C4",
+      "claim": "Different experiments often produce collateral sensitivity profiles that are inconsistent with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one important feature of these experimental studies has received little attention, namely, the fact that different experiments often produce collateral sensitivity profiles that are inconsistent with each other (e.g. Imamovic and Sommer, 2013; Oz et al., 2014; Barbosa et al., 2017; Maltas and Wood, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies showing inconsistent results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "c78508d1-e12c-4e2f-88ba-f54ba5ff4d51",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C5",
+      "claim": "Wide variation in collateral outcomes is observed even between replicate populations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, wide variation in collateral outcomes is observed even between replicate populations (Oz et al., 2014; Barbosa et al., 2017; Maltas and Wood, 2019; Nichol et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "01493be9-e538-4664-a8c7-995430527955",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C6",
+      "claim": "For four out of six antibiotics used by Chevereau et al., 2015, between 12 (0.31%) and 170 (4.38%) knock-out mutations provide some level of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "For four out of six antibiotics used by Chevereau et al., 2015, we find between 12 (0.31 %) and 170 (4.38%) knock-out mutations that provide some level of resistance against at least one of the antibiotics (false discovery rate (FDR) \u223c25%; Figure 1, Figure 1\u2014source data 1; see Materials and methods for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the authors' analysis of published data, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "6b97b934-973c-4c70-b688-b0946e688457",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C8",
+      "claim": "E. coli likely have access to resistance mutations with diverse pleiotropic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both data sets represent subsets of all resistance mutations, we conclude that E. coli likely have access to resistance mutations with diverse pleiotropic effects, such that a fitness gain in the presence of any one drug can come either with a pleiotropic gain or a pleiotropic loss of fitness in the presence of other drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of two datasets (knock-out and point mutation data).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "26f51324-7ae4-4949-acbf-8f59f718e692",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C9",
+      "claim": "The JDFE framework is suitable for modeling the evolution of collateral resistance/sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the JDFE framework is suitable for modeling the evolution of collateral resistance/sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observed diversity of collateral effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "1dcd9b9c-95d1-4f7d-8249-c1e954189904",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C10",
+      "claim": "Positively correlated JDFEs sometimes lead to pleiotropic fitness losses.",
+      "claim_type": "EXPLICIT",
+      "source": "Positively correlated JDFEs sometimes lead to pleiotropic fitness losses (Figure 2D,I), and negatively correlated JDFEs sometimes lead to pleiotropic fitness gains (Figure 2B,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "447b5adb-253a-4224-ae04-c35868dec3d0",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C11",
+      "claim": "Negatively correlated JDFEs sometimes lead to pleiotropic fitness gains.",
+      "claim_type": "EXPLICIT",
+      "source": "Positively correlated JDFEs sometimes lead to pleiotropic fitness losses (Figure 2D,I), and negatively correlated JDFEs sometimes lead to pleiotropic fitness gains (Figure 2B,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "9b281f8b-ac48-4c03-bf33-8b961f78ee9e",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C12",
+      "claim": "JDFEs with apparently similar shapes can produce qualitatively different trajectories of pleiotropic fitness changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our simulations show that JDFEs with apparently similar shapes can produce qualitatively different trajectories of pleiotropic fitness changes (e.g. compare Figure 2A, F and B, G or Figure 2D,I and E,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "06a96f83-1e34-48ac-9e46-bdf3ab3bead7",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C13",
+      "claim": "JDFEs with apparently different shapes can result in rather similar pleiotropic outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, JDFEs with apparently different shapes can result in rather similar pleiotropic outcomes (e.g. compare Figure 2B, G and E, J or Figure 2A,F and D,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "b518f664-0888-4069-bb3e-66e11b7ae590",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C18",
+      "claim": "The theory's predictions are valid in simulations in the SSWM regime.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the validity of Equation 1 and Equation 2 by simulating evolution in the SSWM regime on 125 Gaussian JDFEs with various parameters (Materials and methods) and found excellent agreement (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is validated through simulations shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "bc423b76-6695-48f8-9210-a0e9acfc838e",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C27",
+      "claim": "The 1-1 rank correlation between c-rank and collateral resistance risk holds for all 125 Gaussian JDFEs and all population genetic parameters considered.",
+      "claim_type": "EXPLICIT",
+      "source": "This 1\u20131 rank correlation holds more broadly, for all 125 Gaussian JDFEs and all population genetic parameters considered in the previous section (Figure 4C) as well as for the empirical TEM \u03b2-lactamase JDFEs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through extensive simulations in Figure 4C and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "f8faaf09-41cc-427f-8b9d-e189df855a8f",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C30",
+      "claim": "The correlation between estimated c-rank and actual collateral resistance risk is improved upon increased sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this correlation is further improved upon increased sampling, and it is insensitive to the specific home fitness threshold that we use in the LD method (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through simulations in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "86915791-840c-497a-847c-c3e955543e5d",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C31",
+      "claim": "Estimating JDFE parameters is in principle feasible with a modest experimental effort, at least for the purpose of ranking drug pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that estimating JDFE parameters is in principle feasible with a modest experimental effort, at least for the purpose of ranking drug pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the simulation results showing good ranking with small sample sizes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "fe9ed8f5-86dd-4b78-bb0c-3b5b6646e4fa",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C32",
+      "claim": "Treatments where drugs are chosen so that resistance against one causes sensitivity to the other can eliminate the population before multi-drug resistance emerges.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatments where the drugs are chosen so that resistance against one of them causes the pathogen or cancer population to become sensitive to the other\u2014a phenomenon known as collateral sensitivity\u2014can eliminate the population before multi-drug resistance emerges (P\u00e1l et al., 2015; Pluchino et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known principle with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "474e926f-84d6-453a-9a47-cfa47522c9b7",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C33",
+      "claim": "The diversity of collateral effects among resistance mutations has rarely if ever been systematically measured.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the diversity of collateral effects among resistance mutations has rarely if ever been systematically measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "550a9ba9-eb81-418d-8386-47faf12fe7a8",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C34",
+      "claim": "Few existing approaches for designing robust multi-drug treatments have modelled mutational diversity explicitly within the population genetics context.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, few existing approaches for designing robust multi-drug treatments have modelled this mutational diversity explicitly within the population genetics context (Nichol et al., 2019; Maltas and Wood, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of the field with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "1371b4b2-2ee5-4dad-80ea-4f89b24935a8",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C35",
+      "claim": "The JDFE is a local property of the fitness landscape which means it can be estimated by using modern high-throughput techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the DFE, the JDFE is a local property of the fitness landscape which means that it can be, at least in principle, estimated by using a variety of modern high-throughput techniques (e.g. Qian et al., 2012; van Opijnen et al., 2009; Chevereau et al., 2015; Levy et al., 2015; Blundell et al., 2019; Aggeli et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of JDFEs with supporting citations to relevant techniques.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "d2da0c68-147b-412d-adaf-0ccbc618c351",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C36",
+      "claim": "The JDFE can change over time as the population traverses the fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "The downside of this approach is that the JDFE can change over time as the population traverses the fitness landscape (Good et al., 2017; Venkataram et al., 2020; Aggeli et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "85d7d68e-08c2-4734-9e9a-4b60b22b4875",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C37",
+      "claim": "In the context of collateral drug resistance and sensitivity, we are primarily interested in short time scales over which the JDFE can be reasonably expected to stay approximately constant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the context of collateral drug resistance and sensitivity, we are primarily interested in short time scales over which the JDFE can be reasonably expected to stay approximately constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the model's assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "354bcd91-9bc3-48cb-abf5-49e57715fbf6",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C38",
+      "claim": "No data sets are currently publicly available that would allow systematic exploration of the diversity of collateral effects among all resistance mutations against any one drug in any organism.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, no data sets are currently publicly available that would allow us to systematically explore the diversity of collateral effects among all resistance mutations against any one drug in any organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about available data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "9249ad02-b395-4b41-89bf-241bfd3050d9",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C39",
+      "claim": "Chevereau et al., 2015 measured fitness effects of 3883 gene knock-out mutations in E. coli in the presence of six antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we examined the fitness effects of 3883 gene knock-out mutations in the bacterium Escherichia coli, measured in the presence of six antibiotics (Chevereau et al., 2015), as well as the fitness effects of 4997 point mutations in the TEM-1 \u03b2-lactamase gene measured in the presence of two antibiotics (Stiffler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "20893ee2-7e45-4b32-8428-25f65c167968",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C40",
+      "claim": "Stiffler et al., 2015 measured fitness effects of 4997 point mutations in the TEM-1 \u03b2-lactamase gene in the presence of two antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we examined the fitness effects of 3883 gene knock-out mutations in the bacterium Escherichia coli, measured in the presence of six antibiotics (Chevereau et al., 2015), as well as the fitness effects of 4997 point mutations in the TEM-1 \u03b2-lactamase gene measured in the presence of two antibiotics (Stiffler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "6bf5da0a-42f2-403c-a43d-82ab70337d51",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C41",
+      "claim": "The JDFE is a natural extension of the DFE (distribution of fitness effects of new mutations).",
+      "claim_type": "EXPLICIT",
+      "source": "The JDFE is a natural extension of the DFE, the distribution of fitness effects of new mutations, often used in modeling evolution in a single environment (King, 1972; Ohta, 1987; Orr, 2003; Kassen and Bataillon, 2006; Eyre-Walker and Keightley, 2007; Martin and Lenormand, 2008; MacLean and Buckling, 2009; Kryazhimskiy et al., 2009; Levy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conceptual relationship with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "6050de53-3edc-4d10-ac47-6fcea0f8b9f4",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C42",
+      "claim": "In the SSWM limit, a mutation that arises in the population either instantaneously fixes or instantaneously dies out.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SSWM limit, a mutation that arises in the population either instantaneously fixes or instantaneously dies out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a defining property of the SSWM model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "586a382e-6d10-4d5f-8ad0-aaa5b22f2823",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C45",
+      "claim": "The dynamics of p(x,y,t) are well approximated by a diffusion equation when most mutations that contribute to adaptation have small effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if most mutations that contribute to adaptation have small effects, these dynamics are well approximated by a diffusion equation which can be solved exactly (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical approximation used in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "a6d46299-1716-4cc3-acfb-fc429ec1c203",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C48",
+      "claim": "Many microbes likely evolve in the 'concurrent mutation' regime, when multiple beneficial mutations segregate in the population simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many microbes likely evolve in the 'concurrent mutation' regime, that is, when multiple beneficial mutations segregate in the population simultaneously (Desai and Fisher, 2007; Lang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known phenomenon with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "2e61da5a-7d0c-4cca-a654-30d7aaec9e61",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C49",
+      "claim": "A key characteristic of adaptation in the concurrent mutation regime is that mutations whose fitness benefits are below a certain 'effective neutrality' threshold fix with lower probabilities than predicted by Kimura's formula.",
+      "claim_type": "EXPLICIT",
+      "source": "A key characteristic of adaptation in this regime is that mutations whose fitness benefits in the home environment are below a certain 'effective neutrality' threshold are usually outcompeted by superior mutations and therefore fix with lower probabilities than predicted by Kimura's formula (Schiffels et al., 2011; Good et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of the concurrent mutation regime with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "9ba01f3f-68ca-4426-9aad-68c29857d308",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C52",
+      "claim": "A rigorous analytical calculation for ensemble variance in fitness even in the home environment is not yet available.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, a rigorous analytical calculation for ensemble variance in fitness even in the home environment is not yet available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of theoretical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "e5ef4903-cc20-4c71-95e2-1be153dafb95",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C56",
+      "claim": "A direct way to validate the theory empirically would be to estimate JDFEs for a model organism in a number of drug pairs, rank these pairs according to the collateral rank statistic, and then test this ranking by evolving replicate populations.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct way to validate the theory empirically would be to estimate JDFEs for a model organism, such as E. coli, in a number of drug pairs, rank these pairs according to our collateral rank statistic and then test this ranking by evolving replicate populations and measuring the empirical distributions of collateral resistance/sensitivity outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed experimental validation strategy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "236bb9a0-1963-4146-84d6-4c3bc19445cb",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C57",
+      "claim": "Antibiotic resistance JDFEs among genome-wide mutations have not yet been measured.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, the antibiotic resistance JDFEs among genome-wide mutations have not yet been measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of empirical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "d5e461af-66f4-46d8-90fa-fd8a93eb7119",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C58",
+      "claim": "Most evolution experiments have maintained too few replicate populations to accurately measure the variation in collateral outcomes of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Another obstacle is that, even though many researchers have experimentally evolved various microbes in the presence of drugs, most experiments have maintained too few replicate populations to accurately measure the variation in collateral outcomes of evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the limitations of existing experimental work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "c74710fb-8a62-4e04-adbb-acc5f0b82113",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C59",
+      "claim": "The study by Nichol et al., 2019, with 60 replicates, is a notable exception to the typical low number of replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "The study by Nichol et al., 2019, with 60 replicates, is a notable exception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to an exceptional study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "a4e481a6-56af-4c56-84c1-5ef2f7c964e0",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C60",
+      "claim": "A rigorous test of the theory requires new data on the shapes of whole-genome JDFEs as well as higher throughput evolution experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, a rigorous test of our theory requires new data on the shapes of whole-genome JDFEs as well as higher throughput evolution experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what is needed to validate the theory.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "fec73b81-f042-4a4c-8774-dba70fdd173a",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C61",
+      "claim": "If empirical JDFEs resemble multivariate Gaussian distributions, then all relevant parameters can be learned by sampling a handful of random mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if empirical JDFEs resemble multivariate Gaussian distributions, then we can learn all relevant parameters of such JDFE by sampling a handful of random mutants and measuring their fitness in relevant environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how JDFE estimation might work in practice.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "1ba45c1f-b68e-46d9-ab1a-34ad9e062e22",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C62",
+      "claim": "The model relies on the simplification that it describes the evolution of an asexual population where all resistance alleles arise from de novo mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model relies on two important simplifications. It describes the evolution of an asexual population where all resistance alleles arise from de novo mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "3f33ebd7-4757-46c2-83ef-64e31442ed8f",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C63",
+      "claim": "Some resistance alleles in bacteria may be transferred horizontally in reality.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, some resistance alleles in bacteria may be transferred horizontally (Sun et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known phenomenon with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "22a0a033-bc05-4f96-a865-31ad8bb3875a",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C64",
+      "claim": "Another major simplification is the assumption that the JDFE stays constant as the population adapts.",
+      "claim_type": "EXPLICIT",
+      "source": "Another major simplification is in the assumption that the JDFE stays constant as the population adapts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "024bde14-155e-433c-bb1b-1c4b70c547f4",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C65",
+      "claim": "In reality the JDFE will change over time because of the depletion of the pool of adaptive mutations and because of epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality the JDFE will change over time because of the depletion of the pool of adaptive mutations and because of epistasis (Good et al., 2017; Venkataram et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known phenomenon with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "bed9375a-8281-4c7c-8102-1daa189e4276",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C66",
+      "claim": "How JDFEs vary among genetic backgrounds is currently unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "How JDFEs vary among genetic backgrounds is currently unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "8f7a3fdf-659c-4afa-8dd8-0f91d55b4066",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C67",
+      "claim": "The main results hold at least in the presence of a simple form of 'global' epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Appendix 1, we have shown that our main results hold at least in the presence of a simple form of 'global' epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an extension of the theory shown in an appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "2d8036c2-0a66-47e7-adbb-a0bb080269fb",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C68",
+      "claim": "The shape of JDFE must play a crucial role in determining whether the population evolves toward a generalist or diversifies into multiple specialist ecotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "While we were primarily motivated by the problem of evolution of collateral drug resistance and sensitivity, our theory is applicable more broadly. The shape of JDFE must play a crucial role in determining whether the population evolves toward a generalist or diversifies into multiple specialist ecotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broader implication of the theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "71c283c3-2a38-410e-8898-acd34ae3b947",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C69",
+      "claim": "Previous literature has viewed the question of generalist vs. specialist evolution primarily through the lens of antagonistic pleiotropy and mutation accumulation hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous literature has viewed this question primarily through the lense of two alternative hypotheses: antagonistic pleiotropy and mutation accumulation (Visher and Boots, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of prior work with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "b7cf0bfd-0822-4dcc-8f97-7e5ebbe52a77",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C70",
+      "claim": "Antagonistic pleiotropy in its strictest sense means that the population is at the Pareto front with respect to home and non-home fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Antagonistic pleiotropy in its strictest sense means that the population is at the Pareto front with respect to the home and non-home fitness, such that any mutation beneficial in the home environment reduces the fitness in the non-home environment (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "11872934-fe02-47e8-90a3-688a7f8d6f74",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C71",
+      "claim": "A population can evolve to become a home-environment specialist even in the absence of trade-offs, simply by accumulating mutations that are neutral in the home environment but deleterious in the non-home environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a population can evolve to become a home-environment specialist even in the absence of trade-offs, simply by accumulating mutations that are neutral in the home environment but deleterious in the non-home environment (Kawecki, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known mechanism with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "14273530-fdab-45ce-a2eb-70f8c1bedf32",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C72",
+      "claim": "Antagonistic pleiotropy and mutation accumulation are not discrete alternatives but rather extremes of a continuum of models.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it has been recognized that antagonistic pleiotropy and mutation accumulation are not discrete alternatives but rather extremes of a continuum of models (Bono et al., 2020; Jerison et al., 2014; Jerison et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recent perspective with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "f63940d7-3db1-49ba-8ffa-60ca1939c6af",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C73",
+      "claim": "The JDFE provides a mathematical way to describe the continuum between antagonistic pleiotropy and mutation accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The JDFE provides a mathematical way to describe this continuum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a contribution of the current work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "9c846f5c-6986-4914-a48f-35ff28bfc87d",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C74",
+      "claim": "All JDFEs with negative r\u2082 lead to loss of fitness in the non-home environment and therefore can potentially promote specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory shows that in fact all JDFEs with negative r2 lead to loss of fitness in the non-home environment and therefore can potentially promote specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "8a72541c-1062-4f7e-a149-a85a432f5256",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C75",
+      "claim": "The LD method is relatively easy to implement experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "The LD method is relatively easy to implement experimentally, but it is expected to work only if the drug concentration is high enough to kill almost all non-resistant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical observation about the LD method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "2c0ab2f2-a1ba-498d-8275-033723708ea9",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C76",
+      "claim": "The LD method is expected to work only if the drug concentration is high enough to kill almost all non-resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LD method is relatively easy to implement experimentally, but it is expected to work only if the drug concentration is high enough to kill almost all non-resistant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the LD method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "331ee7c9-9022-4a8f-8f59-618de3ab54c8",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C77",
+      "claim": "Resistant mutants may be selected at concentrations much lower than MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, resistant mutants may be selected at concentrations much lower than MIC (Andersson and Hughes, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known phenomenon with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "d646588a-7b7c-445e-9946-1b1f6c594b58",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C78",
+      "claim": "Mutants selected at different drug concentrations may be genetically and functionally distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutants selected at different drug concentrations may be genetically and functionally distinct (Lindsey et al., 2013; Pinheiro et al., 2021) and therefore may have statistically different pleiotropic profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known phenomenon with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "396e725c-6c1a-465c-abf2-57c926640c5b",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C79",
+      "claim": "Mutants sampled with the LD method may not be most relevant for predicting collateral evolution at low drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, mutants sampled with the LD method may not be most relevant for predicting collateral evolution at low drug concentrations, and other sampling methods may be required for isolating weakly beneficial mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the LD method inferred from the previous observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "af98fa14-cab9-48c7-b9db-7e834017815a",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C80",
+      "claim": "Isolating individual weakly beneficial mutations is more difficult because by the time a mutant reaches a detectable frequency it has accumulated multiple additional driver and passenger mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolating individual weakly beneficial mutations is more difficult because by the time a mutant reaches a detectable frequency in the population it has accumulated multiple additional driver and passenger mutations (Lang et al., 2013; Nguyen Ba et al., 2019), all of which can potentially have collateral effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "68104e54-12f5-4bdf-a5b8-26449a705b79",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C81",
+      "claim": "BLT allows one to sample mutants soon after they acquire their first driver mutation, before acquiring secondary mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, BLT allows one to sample mutants soon after they acquire their first driver mutation, before acquiring secondary mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the BLT method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "282f88bd-b040-4a3e-8973-b830dae11e8e",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C82",
+      "claim": "In a BLT experiment, each cell is initially tagged with a unique DNA barcode.",
+      "claim_type": "EXPLICIT",
+      "source": "In a BLT experiment, each cell is initially tagged with a unique DNA barcode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the BLT method works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "7d4c2597-3667-4cce-b24f-0a6029b5e38e",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C83",
+      "claim": "As long as there is no recombination or other DNA exchange, any new mutation is permanently linked to one barcode in BLT.",
+      "claim_type": "EXPLICIT",
+      "source": "As long as there is no recombination or other DNA exchange, any new mutation is permanently linked to one barcode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of the BLT method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "fd237447-b740-44cd-90d4-b5fcbb68a8b5",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C84",
+      "claim": "A new adaptive mutation causes the frequency of the linked barcode to grow in BLT, which can be detected by sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "A new adaptive mutation causes the frequency of the linked barcode to grow, which can be detected by sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how adaptive mutations are detected in BLT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "f73ad6ba-f520-4f28-8ef8-39091b71c487",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "claim_id": "C85",
+      "claim": "The correlation between estimated c-rank and actual ranking is insensitive to the specific home fitness threshold used in the LD method.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this correlation is further improved upon increased sampling, and it is insensitive to the specific home fitness threshold that we use in the LD method (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through simulations in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "29ba42d0-3c3c-4b6f-a09c-c836e5cab572",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "E. coli has access to resistance mutations with diverse collateral effects against multiple antibiotics. Analysis of knock-out mutations (Chevereau et al., 2015) and point mutations in TEM-1 \u03b2-lactamase (Stiffler et al., 2015) shows that resistance mutations against one drug can produce collateral resistance, sensitivity, or neutrality against other drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C6, and C8 are well-supported by the reanalysis of two published datasets (C39, C40) shown in Figure 1 and Figure 1\u2014figure supplement 1. The authors identify 12-170 resistance mutations per antibiotic with diverse collateral effects across all four quadrants of fitness space, demonstrating that both collateral resistance and sensitivity are accessible to E. coli populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "67d55091-c02b-4179-88fe-199c8c929cfc",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The joint distribution of fitness effects (JDFE) framework is suitable for modeling collateral resistance/sensitivity evolution. The JDFE extends the single-environment DFE concept to capture the diversity of pleiotropic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C41 logically follow from the demonstrated diversity of collateral effects (C3, C6, C8). The JDFE framework is appropriately motivated as a natural extension of established DFE theory to multi-environment scenarios, with proper citations to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "eed7d592-cc2b-49ce-9f4b-212a94547a2c",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The correlation structure of JDFEs does not reliably predict pleiotropic outcomes. Simulations show that positively correlated JDFEs can lead to fitness losses and negatively correlated JDFEs can lead to fitness gains in non-home environments, and JDFEs with similar shapes can produce different outcomes while different shapes can produce similar outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are directly supported by simulation results in Figure 2, which demonstrate counter-intuitive relationships between JDFE correlation and pleiotropic outcomes. This motivates the need for a more sophisticated theoretical framework beyond simple correlation measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "77cc97d1-243d-4387-a13d-de4ba17640c3",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the strong selection weak mutation (SSWM) regime, the theory predicts that fitness dynamics follow a diffusion equation with mean and variance determined by pleiotropy statistics r\u2082 and D\u2082\u2082. The theory shows excellent agreement with simulations on 125 Gaussian JDFEs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is strongly supported by Figure 3A-B showing excellent quantitative agreement (R\u00b2>0.88) between theoretical predictions (Equations 1-2) and SSWM simulations. The theoretical approximations (C42, C45) are standard in population genetics and appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "db912c13-ed67-428b-b3d2-864054db7f23",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The theory is extended to the concurrent mutation regime using adjusted pleiotropy statistics r\u2082* and D\u2082\u2082* that account for effective neutrality thresholds. While rigorous analytical calculations for variance are unavailable, the adjusted statistics show good correlation with simulation results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The extension to concurrent mutations is supported by Figure 3C-H showing strong correlations (R\u00b2=0.81-0.99 for r\u2082*, R\u00b2=0.84-0.88 for D\u2082\u2082*) between adjusted statistics and Wright-Fisher simulations. The authors appropriately acknowledge limitations (C52) regarding variance predictions due to autocorrelation effects not captured by the theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "9a303b2e-80f4-4f76-9548-ae903edad39d",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The collateral risk statistic c = r\u2082/\u221aD\u2082\u2082 provides a robust ranking of drug pairs according to collateral resistance risk across all population genetic parameters tested. This 1-1 rank correlation holds for 125 Gaussian JDFEs and empirical TEM \u03b2-lactamase JDFEs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is strongly supported by Figure 4C showing high R\u00b2 values (0.82-0.94) between c-rank and empirical collateral resistance risk across different NUb regimes, and Figure 4\u2014figure supplement 1 confirming this for empirical data. This demonstrates the practical utility of the c statistic for ranking drug pairs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "b886910d-6f54-46d1-b637-1a9fc82f17d7",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "JDFE parameters can be estimated with modest experimental effort for the purpose of ranking drug pairs. Both Luria-Delbr\u00fcck and barcode lineage tracking methods show strong correlations between estimated c-ranks and actual collateral resistance risk with as few as 10 sampled mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C31, and C85 are supported by Figure 5 and Figure 5\u2014figure supplement 1 showing that both sampling methods achieve high correlations (R\u00b2>0.6 with 10 mutants, improving with larger samples) between estimated and true rankings. The insensitivity to threshold choice (C85) strengthens the practical applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "ae354c5c-b679-48ab-9fea-fac869c2e02c",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Collateral sensitivity between drugs can be exploited in multi-drug treatments to slow resistance evolution and potentially eliminate populations before multi-drug resistance emerges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C32 represent established knowledge in the field, properly cited to prior work (P\u00e1l et al., 2015; Pluchino et al., 2012). These claims provide appropriate motivation and context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "7ffc93c7-12de-431e-a601-8d4c41d248a7",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior experimental studies show inconsistent collateral sensitivity profiles between experiments and high variation between replicates. The diversity of collateral effects has rarely been systematically measured, and few approaches have modeled this diversity within a population genetics framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C33, and C34 accurately characterize the state of the field with appropriate citations to multiple prior studies. These observations motivate the need for the theoretical framework developed in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "b1f2b0eb-3bbe-4733-a81d-e2c35b946e92",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The JDFE is a local property of the fitness landscape that can be estimated using high-throughput techniques, though it may change over time. For collateral drug resistance, the relevant timescales are short enough that the JDFE can be assumed approximately constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 appropriately characterize the JDFE concept with proper citations and acknowledge its limitations. The justification for constant JDFE assumption (C37) is reasonable for the short-term drug resistance context, though this remains an approximation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "723aac6a-e714-4a1f-bdaf-9d554941ac17",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Comprehensive genome-wide JDFE data for antibiotic resistance are not currently available, and most evolution experiments have too few replicates to measure variation in collateral outcomes. Rigorous empirical validation requires new whole-genome JDFE measurements and higher-throughput evolution experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C57-C60 accurately assess data availability and experimental limitations in the field. The citation to Nichol et al., 2019 (C59) as an exception with 60 replicates is appropriate. These observations correctly identify what is needed for empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "b32122c4-dace-415a-9637-04819e11b664",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model assumes asexual populations with de novo mutations and constant JDFEs, though horizontal gene transfer and epistasis occur in reality. The main results hold under simple 'global' epistasis, but how JDFEs vary among genetic backgrounds is unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 appropriately acknowledge model limitations with proper citations. The extension to global epistasis (C67) in Appendix 1 addresses one limitation. These are honest assessments of model assumptions and their potential violations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "e374de2c-2774-4bb6-8a91-420d986b0350",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The JDFE framework has broader implications for understanding generalist vs. specialist evolution. It provides a mathematical way to describe the continuum between antagonistic pleiotropy and mutation accumulation, showing that all JDFEs with negative r\u2082 can promote specialization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 appropriately extend the theory to broader evolutionary questions with proper citations to relevant literature. The theoretical result (C74) follows logically from the model. This represents a valid broader application of the framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Two methods for sampling beneficial mutations are proposed: Luria-Delbr\u00fcck (LD) method selecting at high drug concentrations, and barcode lineage tracking (BLT) method. The LD method is easier but may miss weakly beneficial mutations selected at lower concentrations, while BLT can sample mutations before they accumulate secondary changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C84 provide appropriate practical guidance for JDFE estimation with proper citations to support limitations and advantages of each method. The descriptions of both methods are accurate and the caveats are appropriately acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    },
+    {
+      "id": "42524f6c-ad55-42c7-8496-e311a661d51e",
+      "content_id": "4183ed6b-f286-4dac-af75-181825a1d119",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Direct empirical validation would require estimating JDFEs, ranking drug pairs by c-statistic, and testing rankings through evolution experiments. If JDFEs are Gaussian, parameters could be learned from a handful of random mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56 and C61 are speculative proposals (evidence_type: SPECULATION) about future validation strategies. While reasonable, these have not been tested empirically. The conditional statement about Gaussian JDFEs (C61) is logical but remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:14.309007Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dcdb0624-6d95-4748-ad26-1119c85ee584",
+      "result_id": "29ba42d0-3c3c-4b6f-a09c-c836e5cab572"
+    },
+    {
+      "claim_id": "01493be9-e538-4664-a8c7-995430527955",
+      "result_id": "29ba42d0-3c3c-4b6f-a09c-c836e5cab572"
+    },
+    {
+      "claim_id": "6b97b934-973c-4c70-b688-b0946e688457",
+      "result_id": "29ba42d0-3c3c-4b6f-a09c-c836e5cab572"
+    },
+    {
+      "claim_id": "9249ad02-b395-4b41-89bf-241bfd3050d9",
+      "result_id": "29ba42d0-3c3c-4b6f-a09c-c836e5cab572"
+    },
+    {
+      "claim_id": "20893ee2-7e45-4b32-8428-25f65c167968",
+      "result_id": "29ba42d0-3c3c-4b6f-a09c-c836e5cab572"
+    },
+    {
+      "claim_id": "26f51324-7ae4-4949-acbf-8f59f718e692",
+      "result_id": "67d55091-c02b-4179-88fe-199c8c929cfc"
+    },
+    {
+      "claim_id": "6bf5da0a-42f2-403c-a43d-82ab70337d51",
+      "result_id": "67d55091-c02b-4179-88fe-199c8c929cfc"
+    },
+    {
+      "claim_id": "1dcd9b9c-95d1-4f7d-8249-c1e954189904",
+      "result_id": "eed7d592-cc2b-49ce-9f4b-212a94547a2c"
+    },
+    {
+      "claim_id": "447b5adb-253a-4224-ae04-c35868dec3d0",
+      "result_id": "eed7d592-cc2b-49ce-9f4b-212a94547a2c"
+    },
+    {
+      "claim_id": "9b281f8b-ac48-4c03-bf33-8b961f78ee9e",
+      "result_id": "eed7d592-cc2b-49ce-9f4b-212a94547a2c"
+    },
+    {
+      "claim_id": "06a96f83-1e34-48ac-9e46-bdf3ab3bead7",
+      "result_id": "eed7d592-cc2b-49ce-9f4b-212a94547a2c"
+    },
+    {
+      "claim_id": "b518f664-0888-4069-bb3e-66e11b7ae590",
+      "result_id": "77cc97d1-243d-4387-a13d-de4ba17640c3"
+    },
+    {
+      "claim_id": "6050de53-3edc-4d10-ac47-6fcea0f8b9f4",
+      "result_id": "77cc97d1-243d-4387-a13d-de4ba17640c3"
+    },
+    {
+      "claim_id": "586a382e-6d10-4d5f-8ad0-aaa5b22f2823",
+      "result_id": "77cc97d1-243d-4387-a13d-de4ba17640c3"
+    },
+    {
+      "claim_id": "a6d46299-1716-4cc3-acfb-fc429ec1c203",
+      "result_id": "db912c13-ed67-428b-b3d2-864054db7f23"
+    },
+    {
+      "claim_id": "2e61da5a-7d0c-4cca-a654-30d7aaec9e61",
+      "result_id": "db912c13-ed67-428b-b3d2-864054db7f23"
+    },
+    {
+      "claim_id": "9ba01f3f-68ca-4426-9aad-68c29857d308",
+      "result_id": "db912c13-ed67-428b-b3d2-864054db7f23"
+    },
+    {
+      "claim_id": "bc423b76-6695-48f8-9210-a0e9acfc838e",
+      "result_id": "9a303b2e-80f4-4f76-9548-ae903edad39d"
+    },
+    {
+      "claim_id": "f8faaf09-41cc-427f-8b9d-e189df855a8f",
+      "result_id": "b886910d-6f54-46d1-b637-1a9fc82f17d7"
+    },
+    {
+      "claim_id": "86915791-840c-497a-847c-c3e955543e5d",
+      "result_id": "b886910d-6f54-46d1-b637-1a9fc82f17d7"
+    },
+    {
+      "claim_id": "f73ad6ba-f520-4f28-8ef8-39091b71c487",
+      "result_id": "b886910d-6f54-46d1-b637-1a9fc82f17d7"
+    },
+    {
+      "claim_id": "6f3282ad-f438-491c-8a9f-b14f3c4c80cf",
+      "result_id": "ae354c5c-b679-48ab-9fea-fac869c2e02c"
+    },
+    {
+      "claim_id": "ee9cc0cb-9466-47ec-8de2-d117be53c007",
+      "result_id": "ae354c5c-b679-48ab-9fea-fac869c2e02c"
+    },
+    {
+      "claim_id": "fe9ed8f5-86dd-4b78-bb0c-3b5b6646e4fa",
+      "result_id": "ae354c5c-b679-48ab-9fea-fac869c2e02c"
+    },
+    {
+      "claim_id": "481d6319-2446-4f73-ae46-1c831e903171",
+      "result_id": "7ffc93c7-12de-431e-a601-8d4c41d248a7"
+    },
+    {
+      "claim_id": "c78508d1-e12c-4e2f-88ba-f54ba5ff4d51",
+      "result_id": "7ffc93c7-12de-431e-a601-8d4c41d248a7"
+    },
+    {
+      "claim_id": "474e926f-84d6-453a-9a47-cfa47522c9b7",
+      "result_id": "7ffc93c7-12de-431e-a601-8d4c41d248a7"
+    },
+    {
+      "claim_id": "550a9ba9-eb81-418d-8386-47faf12fe7a8",
+      "result_id": "7ffc93c7-12de-431e-a601-8d4c41d248a7"
+    },
+    {
+      "claim_id": "1371b4b2-2ee5-4dad-80ea-4f89b24935a8",
+      "result_id": "b1f2b0eb-3bbe-4733-a81d-e2c35b946e92"
+    },
+    {
+      "claim_id": "d2da0c68-147b-412d-adaf-0ccbc618c351",
+      "result_id": "b1f2b0eb-3bbe-4733-a81d-e2c35b946e92"
+    },
+    {
+      "claim_id": "85d7d68e-08c2-4734-9e9a-4b60b22b4875",
+      "result_id": "b1f2b0eb-3bbe-4733-a81d-e2c35b946e92"
+    },
+    {
+      "claim_id": "354bcd91-9bc3-48cb-abf5-49e57715fbf6",
+      "result_id": "723aac6a-e714-4a1f-bdaf-9d554941ac17"
+    },
+    {
+      "claim_id": "236bb9a0-1963-4146-84d6-4c3bc19445cb",
+      "result_id": "723aac6a-e714-4a1f-bdaf-9d554941ac17"
+    },
+    {
+      "claim_id": "d5e461af-66f4-46d8-90fa-fd8a93eb7119",
+      "result_id": "723aac6a-e714-4a1f-bdaf-9d554941ac17"
+    },
+    {
+      "claim_id": "c74710fb-8a62-4e04-adbb-acc5f0b82113",
+      "result_id": "723aac6a-e714-4a1f-bdaf-9d554941ac17"
+    },
+    {
+      "claim_id": "a4e481a6-56af-4c56-84c1-5ef2f7c964e0",
+      "result_id": "723aac6a-e714-4a1f-bdaf-9d554941ac17"
+    },
+    {
+      "claim_id": "1ba45c1f-b68e-46d9-ab1a-34ad9e062e22",
+      "result_id": "b32122c4-dace-415a-9637-04819e11b664"
+    },
+    {
+      "claim_id": "3f33ebd7-4757-46c2-83ef-64e31442ed8f",
+      "result_id": "b32122c4-dace-415a-9637-04819e11b664"
+    },
+    {
+      "claim_id": "22a0a033-bc05-4f96-a865-31ad8bb3875a",
+      "result_id": "b32122c4-dace-415a-9637-04819e11b664"
+    },
+    {
+      "claim_id": "024bde14-155e-433c-bb1b-1c4b70c547f4",
+      "result_id": "b32122c4-dace-415a-9637-04819e11b664"
+    },
+    {
+      "claim_id": "bed9375a-8281-4c7c-8102-1daa189e4276",
+      "result_id": "b32122c4-dace-415a-9637-04819e11b664"
+    },
+    {
+      "claim_id": "8f7a3fdf-659c-4afa-8dd8-0f91d55b4066",
+      "result_id": "b32122c4-dace-415a-9637-04819e11b664"
+    },
+    {
+      "claim_id": "2d8036c2-0a66-47e7-adbb-a0bb080269fb",
+      "result_id": "e374de2c-2774-4bb6-8a91-420d986b0350"
+    },
+    {
+      "claim_id": "71c283c3-2a38-410e-8898-acd34ae3b947",
+      "result_id": "e374de2c-2774-4bb6-8a91-420d986b0350"
+    },
+    {
+      "claim_id": "b7cf0bfd-0822-4dcc-8f97-7e5ebbe52a77",
+      "result_id": "e374de2c-2774-4bb6-8a91-420d986b0350"
+    },
+    {
+      "claim_id": "11872934-fe02-47e8-90a3-688a7f8d6f74",
+      "result_id": "e374de2c-2774-4bb6-8a91-420d986b0350"
+    },
+    {
+      "claim_id": "14273530-fdab-45ce-a2eb-70f8c1bedf32",
+      "result_id": "e374de2c-2774-4bb6-8a91-420d986b0350"
+    },
+    {
+      "claim_id": "f63940d7-3db1-49ba-8ffa-60ca1939c6af",
+      "result_id": "e374de2c-2774-4bb6-8a91-420d986b0350"
+    },
+    {
+      "claim_id": "9c846f5c-6986-4914-a48f-35ff28bfc87d",
+      "result_id": "e374de2c-2774-4bb6-8a91-420d986b0350"
+    },
+    {
+      "claim_id": "8a72541c-1062-4f7e-a149-a85a432f5256",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "2c0ab2f2-a1ba-498d-8275-033723708ea9",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "331ee7c9-9022-4a8f-8f59-618de3ab54c8",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "d646588a-7b7c-445e-9946-1b1f6c594b58",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "396e725c-6c1a-465c-abf2-57c926640c5b",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "af98fa14-cab9-48c7-b9db-7e834017815a",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "68104e54-12f5-4bdf-a5b8-26449a705b79",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "282f88bd-b040-4a3e-8973-b830dae11e8e",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "7d4c2597-3667-4cce-b24f-0a6029b5e38e",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "fd237447-b740-44cd-90d4-b5fcbb68a8b5",
+      "result_id": "f127ba5f-2765-4077-87d8-c9d4c726c3f2"
+    },
+    {
+      "claim_id": "e5ef4903-cc20-4c71-95e2-1be153dafb95",
+      "result_id": "42524f6c-ad55-42c7-8496-e311a661d51e"
+    },
+    {
+      "claim_id": "fec73b81-f042-4a4c-8774-dba70fdd173a",
+      "result_id": "42524f6c-ad55-42c7-8496-e311a661d51e"
+    }
+  ],
+  "comparisons": []
+}

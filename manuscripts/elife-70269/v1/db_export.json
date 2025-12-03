@@ -1,0 +1,1617 @@
+{
+  "submission": {
+    "id": "7f72129d-24f7-4179-9d33-168f40c9f6f2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:29:00.301388Z",
+    "updated_at": "2025-12-03T08:29:00.301388Z"
+  },
+  "content": [
+    {
+      "id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "submission_id": "7f72129d-24f7-4179-9d33-168f40c9f6f2",
+      "content_type": "manuscript",
+      "content_text": "# Electron cryo-tomography reveals the subcellular architecture of growing axons in human brain organoids\n\n## Authors\n\n- Patrick C Hoffmann<sup>1</sup> ([ORCID: 0000-0003-3421-6363](https://orcid.org/0000-0003-3421-6363))\n- Stefano L Giandomenico<sup>1</sup> ([ORCID: 0000-0003-4235-8353](https://orcid.org/0000-0003-4235-8353))\n- Iva Ganeva<sup>1</sup> ([ORCID: 0000-0003-3221-2502](https://orcid.org/0000-0003-3221-2502))\n- Michael R Wozny<sup>1</sup> ([ORCID: 0000-0001-9359-3287](https://orcid.org/0000-0001-9359-3287))\n- Magdalena Sutcliffe<sup>1</sup> ([ORCID: 0000-0001-5853-2331](https://orcid.org/0000-0001-5853-2331))\n- Madeline A Lancaster<sup>1</sup> ([ORCID: 0000-0003-2324-8853](https://orcid.org/0000-0003-2324-8853)) \u2020\n- Wanda Kukulski<sup>1</sup> ([ORCID: 0000-0002-2778-3936](https://orcid.org/0000-0002-2778-3936)) \u2020\n\n### Affiliations\n\n1. MRC Laboratory of Molecular Biology, Francis Crick Avenue Cambridge United Kingdom\n2. Institute of Biochemistry and Molecular Medicine, University of Bern Bern Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring brain development, axons must extend over great distances in a relatively short amount of time. How the subcellular architecture of the growing axon sustains the requirements for such rapid build-up of cellular constituents has remained elusive. Human axons have been particularly poorly accessible to imaging at high resolution in a near-native context. Here, we present a method that combines cryo-correlative light microscopy and electron tomography with human cerebral organoid technology to visualize growing axon tracts. Our data reveal a wealth of structural details on the arrangement of macromolecules, cytoskeletal components, and organelles in elongating axon shafts. In particular, the intricate shape of the endoplasmic reticulum is consistent with its role in fulfilling the high demand for lipid biosynthesis to support growth. Furthermore, the scarcity of ribosomes within the growing shaft suggests limited translational competence during expansion of this compartment. These findings establish our approach as a powerful resource for investigating the ultrastructure of defined neuronal compartments.\n\n## Introduction\n\nMammalian neurons are uniquely specialized cells. With an elaborate tree-like structure and elongated shape, sometimes up to a meter in length in adult humans, they have the highest surface area to volume ratio of any cell in the body (Winkle and Gupton, 2016). Neurons are also extremely polarized, with structurally and functionally distinct axonal and dendritic compartments (Bartlett and Banker, 1984; Bray, 1973). While dendrites receive signals, the axon transmits the electrical signal to downstream targets. It is this directional relay, together with the specific topology of axonal connections and their bundling in defined tracts, that allows for information transfer, and ultimately cognition. The formation of such long-range tracts depends upon the coordinated growth of thousands and even millions of immature axons, often over great distances.\n\nHow the axon achieves such remarkable elongation remains to be determined, but its subcellular architecture is likely to reflect unique requirements for growth. For example, the organelle composition of the developing axon must be such that the neuron, without going through cell division, can undergo size increase rates akin to rapidly dividing cancerous cells (Smith, 2009). How are cellular compartments and the cytoskeleton organized within the rapidly extending axon? Does the subcellular organization provide the means to understand the supply of lipids and proteins, necessary for the increase in axon surface area during growth? These are some of the outstanding questions that nanometer-scale insights could help to address.\n\nThe cellular organization of different neuronal compartments, including the axon, has been studied by electron microscopy (EM) since its earliest days on fixed nervous tissue from rodents (Palay, 1956; Palay and Palade, 1955). Volumetric EM techniques have enabled 3D reconstructions of the arrangement of cells within native nervous tissue (White et al., 1986; Ohyama et al., 2015; Wanner et al., 2016; Zheng et al., 2018). Such large-scale approaches provide \u2018connectomics\u2019 information on the nervous systems of small animals such as nematodes, fly, and fish larvae. Recently, a study of subcellular details in fixed post-mortem human brain slices made use of correlative light and electron microscopy (CLEM) and electron tomography (ET) (Shahmoradian et al., 2019). Although these studies revealed many ultrastructural features, the resolution and interpretability of classical preparation methods are restricted by limited sample preservation.\n\nIn comparison to chemical fixation, high-pressure freezing followed by freeze-substitution was shown to result in improved preservation of mouse nervous tissue, highlighting the importance of cryo-fixation for a more accurate interpretation of ultrastructural details (Korogod et al., 2015). The combination of cryo-fixation with EM imaging at cryogenic temperatures is particularly suited to preserve the fine structure of neuronal cells (Lu\u010di\u0107 et al., 2007; Fern\u00e1ndez-Busnadiego et al., 2010; Zuber et al., 2005). Furthermore, recent methodological advances in cryo-ET and subtomogram averaging have enabled in situ structural studies of protein complexes within their cellular context (O\u2019Reilly et al., 2020; Tegunov et al., 2021; Watanabe et al., 2020; Allegretti et al., 2020). These methods can be applied to mammalian neuronal cell cultures to provide unprecedented views of their macromolecular architecture (Guo et al., 2018; B\u00e4uerlein et al., 2017; Trinkaus et al., 2021; Liu et al., 2020). Nevertheless, it remains challenging to unequivocally identify axons in primary neuronal cultures (Bartlett and Banker, 1984; Bray, 1973) because the cells are dissociated from their tissue context, and therefore exhibit intermixed axons and dendrites. Furthermore, ultrastructural analysis of human axons within the near-native context of cryo-preserved tracts would be invaluable for understanding neurodevelopment, nerve damage, and regeneration (Blanquie and Bradke, 2018).\n\nCerebral organoids provide the opportunity to study aspects of human neuronal physiology within the context of a complex 3D cellular milieu mimicking the architecture of the developing brain (Birey et al., 2017; Lancaster et al., 2017; Quadrato et al., 2017). Recently, we developed an optimized air-liquid interface slice culture paradigm (Giandomenico et al., 2019) that enables long-term culture of cerebral organoids and promotes the establishment of axon tracts, consisting of dozens or, in thicker tracts, even up to thousands of individual axons bundled together, able to form functional connections. While the cell bodies are part of the organoid tissue, corticofugal (deep-layer identity) axon tracts project over long distances of several millimeters from the organoid (Giandomenico et al., 2019), effectively segregating the axons from dendrites and somata. This feature, combined with the ability to derive cerebral organoids from human cells, makes this method a promising route to examining the cell biology and molecular structure of human axons.\n\nHere, we present a workflow that combines air-liquid interface cerebral organoid (ALI-CO) culture with cryo-CLEM to study the subcellular architecture of developing human axons in a context closely mimicking in vivo. Cryo-CLEM offers unambiguous identification of fluorescent cells, or individual cellular compartments, combined with high-resolution cryo-EM imaging of the same, near-natively preserved sample to reveal its underlying molecular structure (Lu\u010di\u010d et al., 2013). We adapted this technology to observe the behavior of growing human axons within tracts in real time followed by electron cryo-tomography (cryo-ET) of the same axons with high structural preservation.\n\n## Results\n\nWe first examined in detail axon growth behaviors of ALI-COs. Thick tracts that exited the ALI-COs stained positive for the pan-axonal marker SMI312 and negative for the dendritic marker MAP2 (Figure 1A and Figure 1\u2014figure supplement 1). This, together with their length and physical distance from neuronal cell bodies within the organoid, consolidated that these tracts comprise almost exclusively axons (Figure 1A and Figure 1\u2014figure supplement 1). To monitor growth, we next expressed a farnesylated membrane-targeted GFP (fGFP) (Lancaster et al., 2017; Giandomenico et al., 2019; Figure 1\u2014figure supplement 2) in a subset of cells within the organoid slices. As a result, tracts contained a mixture of unlabeled and fluorescently labeled axons, which extended rapidly within the tracts (Figure 1B and Figure 1\u2014video 1). We measured the extension speed for individual fluorescently labeled axons over several hours to be an average of 691 nm/min, with a peak pace of nearly 3000 nm/min (Figure 1C). The average speed we observed is comparable to previous reports of chicken dorsal-root ganglia (Ketschek et al., 2007). Intrigued by the dynamicity of axon pathfinding, we sought to establish an approach that would allow us to examine the subcellular organization that underlies this cellular behavior.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig1-v1.jpg)\n\n**Figure 1.:** (A) Immunofluorescence of an air-liquid interface cerebral organoid (ALI-CO) stained for the pan-neuronal marker TUBB3 and the pan-axonal marker SMI312. The box highlights a magnified view of escaping axon tracts. White arrows point to bundles of varying thickness. (B) Representative fluorescence microscopy (FM) images of extending fGFP+ expressing axons. The top panel is the first frame and the bottom panel is the last frame of the 13 hr-long live FM Figure 1\u2014video 1. The images were used to track the axon labeled as number four in C., and the blue line marks the trajectory of its growth throughout the movie. (C) Box and whisker plot of axon extension speed measurements reporting the median, first and third quartiles, minimum and maximum. The individual data points represent the extension speed calculated between two consecutive frames. The measurements were done on 7 axons from three different ALI-COs. The red dashed line indicates the average speed of 691 nm/min, calculated from the shown 7 axons. (D) Schematic preparation of ALI-COs for cryo-CLEM including electron cryo-tomography (cryo-ET). (E) Overlay of fluorescence (GFP) and transmitted light overview images of grids placed around an ALI-CO. Lower magnification image shows day 1. Inset shows axons labeled with fGFP and additional tracts stained with SiR-tubulin immediately prior to cryo-fixation after 11 days of growth on the grid to the left of the ALI-CO, indicated by the orange square. (F) Cryo-FM (top) and cryo-EM (bottom) overview of the blue area indicated on the grid shown in the inset in E. Yellow and red boxes indicate the areas shown in G. and H., respectively. (G and H) Correlated cryo-FM and cryo-ET on two different grid squares. Subpanels I and II: Overlays of cryo-FM and cryo-EM at different zoom levels to identify individual fluorescent axons. Areas in subpanels II correspond to white squares in subpanels I. Subpanels III: Virtual slices through cryo-tomograms acquired at the positions of white squares indicated in subpanels II. Scale bars: 1 mm and 500 \u00b5m (inset) in A., 50 \u00b5m in B., 1 mm and 200 \u00b5m (inset) in E., 100 \u00b5m in F., 5 \u00b5m (I), 2 \u00b5m (II) and 100 nm (III) in G. and H. GFP is shown in green, SIRtubulin in magenta in E \u2013 H.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of the distribution of SMI312 and MAP2 immunofluorescence signal across a neuron and expected staining pattern in the case where dendrites are absent from exiting bundles (bottom). Representative images of four bundles from three different ALI-COs stained for the panaxonal marker SMI312 and the dendritic marker MAP2, single channel heatmaps are reported in the top two rows and the bottom row reports the composite image. The outline of the SMI312 signal is reported on the MAP2 channel marking the surface area of the bundle. The yellow arrows in the left MAP2 panel point to a single spurious neuronal cell body within the axon bundle. The asterisks in the MAP2 panel second from the right mark autofluorescent background speckles. The heatmap reports gray value signal intensity ranging between 0\u201365280. (B) Schematic representation of the distribution of fFusionRed and MAP2 IF signal across a neuron and expected staining pattern in the case where dendrites are absent from exiting bundles (right). Representative image of an escaping bundle from one ALI-CO stained for the plasma membrane marker fFusionRed and the dendritic marker MAP2. The outline of the fFusionRed signal is reported on the MAP2 channel marking the surface area of the tract. The heatmap reports the gray value signal intensity ranging between 0-255. In both A. and B., white dashed lines indicate the outlines of the bundles. Scale bars: 100 \u00b5m in A. and B.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Linear schematics of the plasmid maps of the constructs employed in the study. The SleepingBeauty system was used for transgene expression of the following open reading frames (ORFs) driven by CAG: farnesyl-GFP (fGFP), farnesyl-FusionRed (fFusionRed), N-terminally GFP-tagged ESYT1 (GFP-ESYT1) and C-terminally GFP-tagged human L1 cell adhesion molecule (L1CAM-GFP). The plasmid map for the construct encoding the SB100X transposase under the control of the CAG promoter is shown as well. (B) Electroporation schematic depicting injection of the plasmid solution into ventricles of organoids and electroporation into the progenitor cells in the ventricular zone. After approximately 4\u20135 days organoids were prepared for ALI culture and following an additional 4\u20137 day period at the ALI, EM grids were placed in close proximity to the organoid slices. (C) Representative brightfield image of a cerebral organoid after injection of the Fast Green-containing plasmid solution into the ventricles. (D) GFP signal after micro-injection and electroporation of the membrane-targeted farnesylated GFP (fGFP) construct prior to sectioning. Scale bars: 1 mm C. and 0.5 mm D.\n\nFor this, we developed a procedure to prepare axon tracts for cryo-EM (Figure 1D). We placed coated EM support grids in close proximity to ALI-COs on organotypic cell culture inserts (Figure 1E). The signal of fGFP+ axons was used to track the behavior of axons over time by live fluorescence microscopy (live-FM). We monitored their growth over the course of 11 days (Figure 1E and Figure 1\u2014video 2). Prior to cryo-fixation, in a subset of experiments we applied SiR-tubulin to visualize all tracts on the grid (Figure 1E inset). Grids on which axon tracts approached the center were detached from the organoid slice using a biopsy punch and immediately cryo-fixed by plunge-freezing (Figure 1D). Detachment and plunge-freezing were coordinated between two experimenters who sequentially handled the grids, to keep the time from detachment until completed cryo-fixation as short as possible and within less than 20 s (see Materials and methods). To specifically target fGFP+ axons within tracts by cryo-ET we used cryo-CLEM, imaging each grid both by cryo-fluorescence microscopy (cryo-FM) and cryo-EM (Figure 1F). Fluorescent signals of individual tracts could be correlated to cryo-EM overviews by using landmark features on the grid (Figure 1G,H,I). This allowed us to distinguish fGFP+ axons within the tracts from axons that were positive only for SiR-tubulin (Figure 1G, H,II). We then imaged fGFP+ axons by cryo-ET, targeting specific segments of individual axons within axon tracts (Figure 1G, H,III). This approach allowed us to establish a direct link between cellular behavior observed live and cellular ultrastructure (Figure 2\u2014video 1).\n\nIn our cryo-ET data, cellular structures such as protein assemblies and membranes were preserved to a high level of detail (Figure 2A). We observed unbranched, longitudinally aligned actin filaments, recognizable by their characteristic thickness of 7\u20139 nm and an apparent pitch of 5\u20136 nm (Egelman et al., 1982; Figure 2A, orange arrows). Microtubules revealed their individual protofilaments (Figure 2A, magenta arrows), as well as numerous intraluminal protein densities (Garvalov et al., 2006; Foster et al., 2021a). Microtubule bundles were often so dense as to seemingly pose constraints on microtubule-based transport. We observed mitochondria within these bundles (Figure 2A, green arrows), suggesting that dynamic rearrangements are required to allow sufficient space for vesicles and organelles to pass. We also found filaments of about 10 nm in diameter (Figure 2A, brown arrows). These dimensions match those of neurofilaments (NFs) such as NF-L, NF-M, and NF-H (Malka-Gibor et al., 2017), which serve as signature markers for axons. Our tomograms also revealed coated and uncoated vesicles (Figure 2A, yellow arrows, and Figure 2\u2014figure supplement 1A). Furthermore, we frequently observed large expanses of endoplasmic reticulum (ER) cisternae, which extended into thin membrane tubules tightly associated with microtubules (Figure 2A, cyan arrows). We also observed membrane contact sites between ER-mitochondria and ER-plasma membrane (Figure 2B, white arrows).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cryo-tomograms reveal bundles of unbranched, longitudinally aligned actin filaments, recognizable by actin subunit arrangement (orange arrows), microtubules filled with lumenal densities, microtubule protofilaments (purple arrows), mitochondria (green arrows) embedded in microtubule bundles, potential neurofilaments (brown arrows), vesicles carrying protein cargo (yellow arrow), endoplasmic reticulum (cyan arrows) closely associated with microtubules. Insets show magnified views of the boxed areas. (B) fGFP+ and untransfected axons are found within the same axon tract, allowing direct phenotype comparison. Left panel: Overlay of cryo-FM and cryo-EM overview images. Two right panels: Virtual slices through cryo-tomograms of fGFP+ and control axon. White arrows indicate contacts between ER and mitochondria as well as between ER and plasma membrane, blue arrows indicate cell-cell contacts between different axons. (C) Segmentation model of the fGFP+ axon shown in B., illustrating the complexity of the cellular ultrastructure. Microtubules are shown in magenta, actin filaments in orange, endoplasmic reticulum in cyan, vesicles and other membrane compartments in yellow, mitochondrial membranes in green and the plasma membranes of the fGFP+ axon and neighboring axons in blue and dark blue, respectively. Scale bars: 50 nm (20 nm for insets) in A., 2 \u00b5m in B. left panel and 100 nm in B. right two panels.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Gallery of representative vesicles found in cryo-tomograms of axon shafts. (B) Quantification of the association of vesicles with cytoskeletal elements. (C) Analysis of vesicle diameters, measured along their longest axis (free vesicles: mean = 52.00 nm, SD = 19.42 nm, N = 200; microtubule associated vesicles: mean = 50.92 nm, SD = 16.70 nm, N = 49, and actin associated vesicles: mean = 52.18 nm, SD = 17.84 nm, N = 41). One-way ANOVA was used for statistical analysis: p = 0.9292. Scale bars: 50 nm in A.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Dataset of 22 axon cryo-tomograms from fGFP expressing organoids from three different grid preparations (EMD-13195 and EMPIAR-10806). Overlays between cryo-FM and cryo-EM overviews show all positions of tilt series acquisition within the axon tracts. For all positions, a corresponding virtual slice through the cryo-tomogram is shown. Scale bars: 2 \u00b5m in overviews, 100 nm in virtual tomographic slices.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Dataset of 8 axon cryo-tomograms from L1CAM-GFP expressing organoids from two different grid preparations (EMD-13196 and EMPIAR-10805). Overlays between cryo-FM and cryo-EM and corresponding virtual slices through cryo-tomograms are shown. Scale bars: 2 \u00b5m in overviews, 100 nm in virtual tomographic slices.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Dataset of 10 cryo-tomograms from GFP-ESYT1 expressing organoids from two different grid preparations (EMD-13197 and EMPIAR-10804). Overlays between cryo-FM and cryo-EM and corresponding virtual slices through cryo-tomograms are shown. The cryo-tomograms GFP-ESYT1 TS 7\u201310 contained ribosome-like particles. These areas were positioned at the outer edge of the grid, in closer proximity to cell bodies but also close to a growing end, and corresponded to individual processes rather than tracts (lower left overview). Therefore, these tomograms likely do not represent axon shafts, and were counted as a separate class of other cellular processes, likely dendrites or axon initial segments. Scale bars: 2 \u00b5m in overviews, 100 nm in virtual tomographic slices.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Representative tomographic slices of cell-cell contacts within axonal tracts from fGFP and L1CAM-GFP overexpressing ALI-CO slices. (B) Analysis of the contact site intermembrane distance, measured between the extracellular leaflets of the plasma membranes (fGFP: mean = 5.63 nm, SD = 0.65 nm, N = 25 and L1CAM-GFP: mean = 5.29 nm, SD = 0.58 nm, N = 9). Unpaired t test was used for statistical analysis: p = 0.1718. Scale bars: 100 nm in A.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Tomographic slices of representative ER-plasma membrane contacts observed in axons from fGFP and GFP-ESYT1 expressing ALI-CO slices. ER-plasma membrane contact sites are indicated by yellow arrowheads. Scale bars: 50 nm.\n\nFinally, as each tract contained several axons, our tomograms frequently visualized axon-axon contacts, a unique physiological feature of axons in their normal tissue context (Figure 2B, blue arrows). Because only a subset of cells expressed fGFP, most tracts contained a large proportion of unlabeled, GFP negative axons (Figure 2B, left panel). By this approach, GFP-negative axons could be imaged on the same EM grid (Figure 2B, right panels), simplifying the acquisition of control data as well as making comparison more reliable by removing grid-to-grid variability as a source of unspecific differences. We did not observe any obvious ultrastructural differences between fGFP+ and GFP negative axons (Figure 2\u2014figure supplement 2). To highlight the ultrastructural complexity, we segmented key cellular elements of a fGFP+ axon volume (Figure 2C, bottom panel and Figure 2\u2014video 2).\n\nThe 40 tomograms we collected comprised unlabeled axons as well as axons expressing either fGFP, GFP-tagged human L1 cell adhesion molecule (L1CAM) or GFP-tagged extended-synaptotagmin isoform 1 (ESYT1) (Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplements 2\u20134). We overexpressed L1CAM, which is involved in axon-axon contacts (Siegenthaler et al., 2015), and ESYT1, involved in lipid metabolism (Saheki et al., 2016), as possible modulators of tract formation and axon elongation. Next, we analyzed potential changes in subcellular structure upon L1CAM-GFP or GFP-ESYT1 overexpression (Figure 2\u2014figure supplements 3 and 4). We compared cell-cell contacts formed between individual axons in tracts from ALI-CO slices expressing fGFP with tracts from ALI-CO slices overexpressing the cell adhesion molecule L1CAM. While the separation between plasma membranes of adjacent axons within tracts was remarkably narrow, we found no significant difference between cell-cell contacts from fGFP and L1CAM-GFP overexpressing ALI-COs (fGFP: mean = 5.63 nm, SD = 0.65 nm, N = 25 and L1CAM-GFP: mean = 5.29 nm, SD = 0.58 nm, N = 9) (Figure 2\u2014figure supplement 5). We also compared the occurrence of ER-plasma membrane contact sites in axons from ALI-CO slices expressing fGFP with axons from ALI-CO slices overexpressing the ER-plasma membrane contact site protein GFP-ESYT1 (Fern\u00e1ndez-Busnadiego et al., 2015). The frequency with which we observed such contact sites was similar in both data sets (86 % of fGFP tomograms (N = 22) and 90 % of GFP-ESYT1 tomograms (N = 10) contained at least one instance in which the ER was within approximately 30 nm distance from the plasma membrane) (examples in Figure 2\u2014figure supplement 6). We cannot exclude that there may be subtle unanticipated phenotypes associated with other, specific structures, nor that more severe phenotypes could be masked by the mosaic nature of the bundles, with wild-type axons possibly driving growth of axons expressing the transgene. Nonetheless, the intactness of the subcellular organization suggests that in principle our approach allows one to assess the impact of gene manipulation on cellular ultrastructure without technical knock-on effects.\n\nWe next set out to analyze the observed cellular structures in more detail. For that, we pooled the tomograms of the three data sets. First, we investigated the localization of vesicles (Figure 2A and Figure 2\u2014figure supplement 1A). While most vesicles appeared free in the cytosol, approximately 17 % were associated with microtubules and 14 % with actin (N = 290, Figure 2\u2014figure supplement 1B). The vesicles had mean diameters of about 50 nm (52.00 nm, SD = 19.42 nm, N = 200 for free vesicles; 50.92 nm, SD = 16.70 nm, N = 49 for MT associated vesicles, and 52.18 nm, SD = 17.84 nm, N = 41 for actin associated vesicles) (Figure 2\u2014figure supplement 1C). These sizes are similar to vesicles in axons of mouse dorsal root ganglia neurons (Foster et al., 2021b). Although we did not determine the origin and identity of the vesicles, their distribution suggests that at least a subset could correspond to secretory vesicles (Gumy et al., 2017).\n\nA defining feature of axon identity is the parallel arrangement of bundled microtubules (Burton, 1988; Heidemann et al., 1981). Therefore, we sought to determine the polarity of individual microtubules in tomograms using subtomogram averaging (Figure 3A). We used axial views of each microtubule average to determine the handedness and thus polarity of the microtubule based on the tilt of its protofilaments (Sosa and Chr\u00e9tien, 1998; Figure 3A and B). This analysis showed that the majority of bundles had a uniform, parallel microtubule arrangement, further confirming axon identity (Figure 3C). Because it is difficult to trace the complete length of individual axons on the EM grid and growth was not necessarily uni-directional, we could not unambiguously determine the microtubule orientation relative to the axon leading edge. In total, we analyzed between three and nine microtubules in nine tomograms by subtomogram averaging. While the protofilament tilts could be determined unambiguously in a subset of five axon tomograms (Figure 3C), the number of protofilaments could be determined for 28 individual microtubules. In some cases, the close proximity to other microtubules in larger bundles and the anisotropic resolution of the tomographic data prevented analysis of the protofilament number. We found that the majority of microtubules consisted of 13 protofilaments, while 2 microtubules had 12 protofilaments (N = 28) (Figure 3D and E). Although we cannot exclude that the microtubule organization we observed was influenced or stabilized by labeling with SiR-tubulin in the subset of experiments where this labeling was performed, 13 protofilaments have been suggested before to be the predominant molecular architecture of microtubules in human cells (Watanabe et al., 2020; Chaaban and Brouhard, 2017). We calculated a 3D subtomogram average from 16 of the 13-protofilament microtubules, which revealed the typical 4 nm repeat of individual tubulin subunits along the protofilaments (Figure 3\u2014figure supplement 1; Amos and Klug, 1974; Nogales et al., 1999).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig3-v1.jpg)\n\n**Figure 3.:** (A) Axial views of subtomogram averages reveal the polarity of each microtubule (MT) shown in B. The directionality of the microtubule was determined from the radial tilt of the protofilaments seen in axial views (Sosa and Chr\u00e9tien, 1998). (B) Tomographic slice with six microtubules depicted as differently colored tubes (MT1-MT6) (same tomogram as shown in Figure 2B, \u2018no GFP\u2019 panel). Arrows indicate the viewing direction of the axial views of subtomogram averages shown in A. The -end of each microtubule is indicated, determined by the analysis shown in A. (C) Ratio of parallel microtubules determined by subtomogram averaging in five different axons (6\u20139 individual microtubules per axon). Axon one is depicted in A. and B. (D) Axial view on subtomogram average examples of individual microtubules with 13 protofilaments (left) and with 12 protofilaments (right). (E) Occurrence of microtubules with 12 and 13 protofilaments, determined by individual subtomogram averaging of 28 microtubules as shown in D. (F) Virtual tomographic slice and the corresponding segmentation model of the plasma membrane of two individual axon shafts. Blue and magenta arrows indicate plasma membrane segments visible in the virtual tomographic slice. (G) Plasma membrane (PM) surface area measurements in nm2 normalized to the length in \u00b5m of 14 axon shafts captured in 12 tomograms. (H) The curvature of ER tubules is higher in axon shafts than in HeLa cells. Arrows indicate the shortest distance between the membrane bilayer cross sections. (I) Diameters of the thinnest ER tubules measured in axon shafts and in HeLa cells (82 and 24 measurements, respectively). Welch\u2019s t test was employed for statistical analysis: p < 0.0001. Scale bars: 10 nm in A. and D., 100 nm in B. and F., 50 nm in H.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Three slices through the volume and a surface representation of the 13 protofilament microtubule average, calculated from 5,229 subtomograms from 16 microtubules found in human axon tracts. The orientation of the three shown slices is indicated by the planes in the diagram with corresponding colors. (B) Line profile along a single protofilament of the subtomogram average in A, showing the average pixel grey value over a line width of six pixels, in arbitrary units. The pattern reveals the 4 nm repeat along the protofilament. (C) Fourier Shell Correlation (FSC) curve for the microtubule average. The resolution cutoff at 0.5 is 2.5 nm. Scale bars: 10 nm in A.\n\nThe rapid growth of developing axon tracts must be supported by synthesis of new biomolecules. At average growth rates of 691 nm/min (Figure 1C), the demand of membrane and lipid molecules must be high. Using the plasma membrane as a proxy to estimate the amount of newly synthesized membrane, we segmented the plasma membrane in tomograms and estimated the surface area of individual axon shafts (Figure 3F, see also Materials and methods). Each micrometer of length on average corresponded to approximately 1.24 \u00d7 106 nm2 of plasma membrane area (SD = 7.3 x 105 nm2, N = 14) (Figure 3G). The broad distribution reflects the variability between the thinnest parts of axon shafts and axonal varicosities. Because each \u00b5m2 of membrane contains approximately 5 \u00d7 106 lipids (Alberts et al., 2002), corresponding to five lipid molecules/nm2, we estimated the lipid supply to the plasma membrane required to sustain the average growth rate of an axon as approximately 4.3 \u00d7 106 lipid molecules/min. This massive influx of new phospholipids into the plasma membrane points to a unique requirement for lipid biosynthesis and transfer.\n\nThe ER is the major organelle for lipid biosynthesis. We therefore examined ER ultrastructure to assess whether it may help explain how the unique lipid requirements of the growing axon are supported. Large flattened cisternae (Figure 2B and C) were reminiscent of the ER observed in cultured neurons (Schrod et al., 2018). We further found tubular segments of axonal ER that were remarkably narrow (Figure 3H). At their thinnest outer diameter, the ER tubules in axon shafts measured on average 10.8 nm (SD 2.0 nm, 82 measurements), which is narrower than previously observed in mouse axons (Terasaki, 2018). For comparison we measured the thinnest ER tubules in HeLa cells and found them to be about twice the diameter (20.4 nm, SD 3.2 nm, 24 measurements) (Figure 3H,I). Some of the axonal ER tubules had a local outer diameter of less than 10 nm. Considering that this measurement includes the bilayer thickness, this implies that these ER tubules of human axons contain hardly any lumenal space, likely posing constraints on diffusion of ER proteins. The observation that the ER is depleted of lumen whilst adopting highly curved tubular shapes indicates high local membrane surface-to-ER volume ratios, and suggests that the axonal ER structure may be a consequence of maximized synthesis of lipids, produced to sustain high growth rates during axon lengthening.\n\nWe anticipated the extending axon to require not only lipids but also proteins for maintaining functionality during elongation. We thus examined the presence of protein synthesis machinery in the elongating axon shafts. While it is known that mature axons do not display extensive Nissl bodies, indicating low ribosomal RNA content (Angevine, 2002), we reasoned that developing axons, due to their growth state, could have different protein biosynthesis requirements and hence composition. Furthermore, cellular cryo-ET provides the resolution to detect ribosomes, and to even distinguish between monosomes and polysomes (Brandt et al., 2010), making it a powerful method for direct detection of the protein synthesis machinery. It was therefore noteworthy that we observed a scarcity of potential ribosomes within our tomograms of growing axon shafts. In contrast, we readily identified a large number of ribosomes based on their size, shape and high contrast in tomograms of HeLa cells (Ader et al., 2019) and of other neuronal processes (Figure 4A). In order to assess the occurrence of ribosomes quantitatively, we counted ribosome-like particles, both cytosolic and membrane-bound, and found on average two particles per \u00b5m3 in axon shafts (SD = 3 particles, n = 31 tomograms), 589 particles per \u00b5m3 in other neuronal processes (SD = 344 particles, n = 4 tomograms), and 2314 particles per \u00b5m3 in HeLa cells (SD = 977 particles, n = 5 tomograms) (Figure 4B and Figure 4\u2014figure supplement 1A). The local ribosome concentration in axon shafts is thus less than 3.5 nM, about 1000-fold lower than in HeLa cells. The ribosome-like particles found in tomograms of axon shafts had an average diameter of 26.8 nm (SD = 3.7, N = 27), in agreement with the dimensions of human ribosomes (Figure 4\u2014figure supplement 1B; Anger et al., 2013). 11 of them were in close proximity to ER membrane (Figure 4\u2014figure supplement 1C). Thus, the large amounts of axonal ER had a minute number of ribosomes attached, supporting the idea that the ER has a primary function in lipid metabolism rather than protein synthesis. To validate these findings by an approach that would allow analysis of axons as well as dendrites within the same preparation, we tested for the presence of five distinct ribosomal proteins in neurons from dissociated organoids by immunofluorescence (Figure 4C and Figure 4\u2014figure supplement 2). In agreement with the cryo-ET data, axon shafts identified as SMI312+/MAP2- showed significantly lower ribosomal signal than dendrites (SMI312-/MAP2+) (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig4-v1.jpg)\n\n**Figure 4.:** (A) Examples of ribosomes observed in cryo-tomograms of axon shafts from ALI-COs, of other cellular processes from ALI-COs, and of HeLa cells. The bottom panel shows 0.05 \u00b5m3 cryo-ET volumes, corresponding to the area shown in the upper panel. Positions of all ribosome-like particles observed in that volume are shown as orange spheres. (B) Comparison of the numbers of ribosome-like particles, normalized to the tomographic volume, observed in axon shafts, other processes and HeLa cells. Individual data points represent individual cryo-tomograms (30, 4, and 5 tomograms, respectively). Mann-Whitney tests were employed for statistical analysis: p < 0.0001 (****); p < 0.05(*). (C) Immunofluorescence images of dissociated neurons from organoids reveal low signal for the ribosomal 60 S component RPL8 in axon processes (identified by SMI312+/MAP2- labeling) in comparison to dendrites (identified by SMI312-/MAP2+ labeling). The yellow box outlines the area magnified in the right panel. The top image of the right panel shows the immunofluorescence signal for the ribosomal subunit RPL8. The bottom image shows the SMI312/MAP2/RPL8 composite. The white dashed line depicts the outline of axons and dendrites and was traced based on the MAP2 and SMI312 signal. The image shown is representative of the data used for quantifications shown in D. (D) Quantification of immunofluorescence images of ALI-CO derived dissociated neurons labeled for five distinct ribosomal proteins. The bars report the mean pixel grey value along axons and dendrites (mean \u00b1 SD). Each data point represents a different axon or dendrite. With the exception of quantifications done on the ribosomal protein S6, axons were identified as SMI312+/MAP2- neuronal processes, while dendrites were identified as SMI312-/MAP2+ neuronal processes. Due to antibody incompatibility, in the case of S6, dendrites were identified as MAP2+ processes while axons were identified as GFP+/MAP2- processes. The data pertains to one biological replicate. Mann-Whitney tests were employed for statistical analysis: RPL8, N = 10, p < 0.0001 (****); RPS10, N = 12, p < 0.0001 (****); RPS16, N = 12, p < 0.0001 (****); RPS26, N = 12, p < 0.0001 (****); S6, N = 12, p = 0.0001 (***). Scale bars: 50 nm in A., 20 \u00b5m and 2 \u00b5m in C.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Gallery of ribosome-like particles seen in tomogram slices of developing human axons. Yellow arrows highlight ribosome-like densities. (B) Diameter of ribosome-like particles measured from tomographic slices seen in A. (mean = 26.8 nm, SD = 3.7, N = 27). (C) Quantification of the association of ribosome-like particles with the ER. Scale bars: 25 nm in A.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative immunofluorescence images of dissociated organoid-derived neurons stained for the dendritic marker MAP2, the pan-axonal marker SMI312 and the ribosomal components RPS10, RPS16, and RPS26 used for the quantifications reported in Figure 4D. Boxed in yellow is the region shown at higher magnification in the right panel as the individual ribosomal stain and the composite image. Dashed yellow is the outline of the processes reported on the single channel image of the ribosomal stain. The data highlights how dendrites (MAP2+/SMI312-) are enriched in ribosomal components compared to axons (MAP2-/SMI312+) of comparable thickness. (B) Representative immunofluorescence images of dissociated organoid-derived neurons transduced with Sendai EmGFP and stained for the dendritic marker MAP2 and for the ribosomal components S6. Due to antibody incompatibility, in this case dendrites were identified as MAP2+ processes while axons were identified as GFP+/MAP2- processes. These images were used for the quantifications reported in Figure 4D. Boxed in yellow is the region shown at higher magnification in the bottom panel as the S6 stain (right) and the MAP2-GFP composite stain (left). Dashed in yellow is the outline of the processes reported on the single channel image of the S6 stain. The data highlights how dendrites (MAP2+) are enriched in ribosomal components compared to axons (GFP+/MAP2-) of similar thickness. The data shown in A and B pertains to one biological replicate. Scale bars: 20 \u00b5m in the overview images in A. and B., 2 \u00b5m in the high-magnification inserts.\n\n## Discussion\n\nTo date, cryo-ET studies of neurons have been conducted on rodent primary cells grown on EM grids (Tao et al., 2018; Garvalov et al., 2006; Lu\u010di\u0107 et al., 2007). Such dissociated neurons exhibit a random pattern of neurites, where axons typically grow along dendrites and do not form the directed long-range tracts seen in the context of tissue. Additionally, the growth state of axons and their developmental stage (i.e. axon pathfinding vs. synaptogenesis) in dissociated primary cultures are not always clear. Moreover, cryo-EM of human neurons has so far remained out of reach. We demonstrate that these limitations can be overcome by the combination of human cerebral organoids with cryo-CLEM. Because this approach requires axons to extend from the edge to the center of the grids, most of the analyzed cell areas corresponded to relatively mature pathfinding axons, which had elongated for 1\u20132 mm over the course of 10\u201314 days, during which the axon initial segment, shaft and growth cones have established. Although we cannot exclude that a fraction of the regions imaged by cryo-ET were in the process of retraction or corresponded to axon branches, their position near the grid center indicates they had undergone axonal outgrowth. Thus, this approach allows for visualization of the intracellular landscape of axon shafts, an understudied region of actively growing human axons, unambiguously identified and in an environment that mimics the physiological context of an axon tract.\n\nOur method of combining organoid technology with cryo-ET enabled us to visualize architectural characteristics of growing axon shafts that can help to explain their unique behaviors. The organization of the cytoskeleton, in particular the dense microtubule bundles, likely reflects the importance of mechanical properties, such as rigidity, and of cytoskeletal transport for projection of axons over long distances. Growing axon shafts also appear to contain exclusively smooth ER, similarly to mature nervous tissue depicted in textbook electron micrographs. We observed an intricate ER morphology with extremely narrow tubules, which were half the diameter previously observed in mature mouse axons by serial-section EM (Terasaki, 2018). Such ER morphology with minimal ER lumen volume suggests a role primarily in lipid biosynthesis to provide membrane material. In addition, we observed membrane contact sites between the ER and the plasma membrane, likely representing sites for transfer of newly synthesized lipid molecules, as lipid flux is a major function of membrane contact sites (Levine, 2004; Prinz, 2014). Furthermore, the tight association of the ER with microtubules could reflect attachment needed to pull the ER along the extending axon. Alternatively, this arrangement could represent piercing of ER cisternae by microtubules that grow quickly along the extending axon. These structural features of axonal ER may explain how axons acquire their unique surface area-to-volume ratio through lipid supply during elongation.\n\nQuantification of ribosome occurrence in the axon shaft provides an estimate of the potential for local protein biosynthesis. Previous EM studies have reported clusters of ribosomes in the axon initial segment and growth cones (Bartlett and Banker, 1984; Tennyson, 1970; Yamada et al., 1971; Bunge, 1973; Steward and Ribak, 1986; Koenig et al., 2000). Mature presynaptic termini were shown to harbor ribosomal components, consistent with the presence of a distal ribosome pool, and metabolic labeling experiments demonstrated presynaptic protein synthesis (Hafner et al., 2019; Shigeoka et al., 2016). Within the extending axon shaft, the presence of an active pool of ribosomes is less clear. In contrast to the known hallmarks for identifying pre- and post-synaptic compartments, axon shafts are not easily identified through defining structural features; they can be mistaken for thin dendrites and therefore their ultrastructural features, especially during development, have remained poorly described. Our work demonstrates that the experimental setup described here allows one to confidently ascribe observations to axon shafts and, in principle, other axonal compartments within a neuronal tissue context. Our findings reveal that the shafts of developing axons specifically exhibit low ribosome numbers. Thus, in the early stages of neurodevelopment, during axon pathfinding, the axon shaft differs from dendrites in that it displays reduced ribosome levels.\n\nThese observations complement previous findings of local translation at growth cones and presynaptic termini, and suggest that different regions of the axon can exhibit very different supramolecular landscapes. We therefore propose a refined model in which biological processes in the axon initial segment, the growth cone, and presynaptic termini rely on local translation (Bartlett and Banker, 1984; Yamada et al., 1971; Tennyson, 1970; Bunge, 1973; Steward and Ribak, 1986; Koenig et al., 2000; Hafner et al., 2019; Shigeoka et al., 2016), while the axon shaft during growth is depleted of translational machinery and thus displays limited capacity for new protein synthesis. Furthermore, because protein synthesis in the growth cone was previously shown to be used primarily for navigation and not for extension (Campbell and Holt, 2001), ribosomal depletion along the shaft might represent a mechanism to desensitize this structure to exogenous guidance cues and ensure correct wiring.\n\nOverall, these findings demonstrate that the combination of cryo-CLEM and human cerebral organoid technology is a powerful method to address the cell biology and architecture of its compartments. Conceptually this approach is not limited to axons and could be extended to other organoid-derived cell types as long as the preparation allows sample vitrification. For instance, this methodology could potentially be applied to blood vessel organoids (Wimmer et al., 2019) to study ultrastructural aspects of vasculature development and vasculopathy, since, like neurons, the developing vasculature extends long, thin structures that would be amenable to vitrification in the same manner. Furthermore, a declination of this approach could take advantage of the organoid system to generate defined cell types difficult to isolate from primary samples. For example, one could place neural crest organoids (Foltz et al., 2021) in close proximity to EM grids to capture neural crest cells and study their ultrastructure during migration and differentiation into different neural crest cell derivatives. Such an approach, in combination with thinning of the cells by cryo-focussed ion beam milling (Mahamid et al., 2016), would provide a way to perform cryo-EM studies on physiologically relevant migratory cell types.\n\nIn conclusion, the combination of cerebral organoid technology and cryo-ET provides a window into the architecture of the human axonal compartment. This experimental setup could be extended to other organoid systems. We believe this methodology holds the potential to further our understanding of neuronal development, neurodegeneration and nerve injury.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>H9 hESC</td>\n      <td>DOI:10.1126/science.282.5391.1145</td>\n      <td>hPSCReg ID: WAe009-A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HeLa control</td>\n      <td>other</td>\n      <td></td>\n      <td>Cell line stably expressing Fsp27-GFP from tet-inducible promoter. Obtained from Koini Lim (lab of David Savage).</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAGEN-SB100X</td>\n      <td>DOI:10.1038/nbt.3906</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT2-CAG-fGFP</td>\n      <td>DOI:10.1038/nbt.3906</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT2-CAG-fFusionRed</td>\n      <td>DOI: 10.1038/s41593-019-0350-2</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>EGFP-E-Syt1</td>\n      <td>Addgene</td>\n      <td>66830</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3-hL1</td>\n      <td>Addgene</td>\n      <td>89411</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT2-CAG-GFP-E-Syt1</td>\n      <td>Generated for this study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT2-CAG-hL1CAM-GFP</td>\n      <td>Generated for this study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Gemini X2 HT</td>\n      <td>BTX Harvard Apparatus</td>\n      <td>45\u20132041</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Petri Dish Platinum Electrode for Tissue Chamber Kit 5 mm</td>\n      <td>BTX Harvard Apparatus</td>\n      <td>45\u20130505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Leica VT1000 S</td>\n      <td>Leica Biosystems</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>STEMdiff Cerebral Organoid Kit</td>\n      <td>STEMCELL Technologies</td>\n      <td>08570</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Millicell Cell Culture Insert</td>\n      <td>Sigma Aldrich</td>\n      <td>32011202</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>ACCUMAX cell dissociation reagent</td>\n      <td>Sigma Aldrich</td>\n      <td>A7089</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RPL8 (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>ab169538</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RPS10 (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>ab151550</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RPS16 (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab26159</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RPS26 (Rabbit polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>PA5-65975</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-S6 ribosomal protein (Mouse monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>5548</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-SMI312 (Mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>837904</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-MAP2 (Chicken polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab5392</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CytoTune EmGFP Sendai Virus Fluorescence Reporter</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A16519</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SiR-tubulin</td>\n      <td>Spirochrome</td>\n      <td>SC002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Millicell Cell Culture Insert, 30 mm diameter, hydrophilic PTFE, 0.4 \u00b5m</td>\n      <td>Merck Millipore</td>\n      <td>PICM0RG50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Disposable biopsy punch, 3.5 mm</td>\n      <td>Integra</td>\n      <td>33\u201333</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Aspirator tube assemblies for calibrated microcapillary pipettes</td>\n      <td>Sigma-Aldrich</td>\n      <td>A5177-5EA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Capillary Tubes Glass, 50 \u00b5l volume, 100 mm length</td>\n      <td>Drummond Scientific</td>\n      <td>1-000-0500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>P-2000 micropipette puller</td>\n      <td>Sutter Instrument</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>EM grids, gold, 200 mesh, R 2/2 holey carbon</td>\n      <td>Quantifoil</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>EM grids, gold, 200 mesh, R 3.5/1 holey carbon</td>\n      <td>Quantifoil</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PEET</td>\n      <td>PMID:16917055</td>\n      <td></td>\n      <td>https://bio3d.colorado.edu/PEET/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IMOD</td>\n      <td>PMID:8742726</td>\n      <td></td>\n      <td>http://bio3d.colorado.edu/imod/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>PMID:16182563</td>\n      <td></td>\n      <td>http://bio3d.colorado.edu/SerialEM/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ec-CLEM plugin for Icy</td>\n      <td>PMID:28139674</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>PMID:22930834</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>poly-L-ornithine</td>\n      <td>Sigma Aldrich</td>\n      <td>P4957</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Laminin</td>\n      <td>Sigma Aldrich</td>\n      <td>L2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fibronectin</td>\n      <td>Sigma Aldrich</td>\n      <td>F0895</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell and cerebral organoid culture\n\nThe study employed H9 human embryonic stem cells (Wisconsin International Stem Cell Bank, Wicell Research Institute, WA09 cells), authenticated and confirmed to be mycoplasma-free by the provider, and approved for use in this project by the U.K. Stem Cell Bank Steering Committee. The H9 cells were cultured under feeder free conditions in StemFlex (Thermo Fisher Scientific, A3349401) on Matrigel (Corning, 356230) coated plates and passaged twice a week using 0.7 mM EDTA in sterile D-PBS without Ca2+ and Mg2+. Cerebral organoids were generated and grown using the STEMdiff Cerebral Organoid Kit (Stem Cell Technologies, 08570) according to manufacturer\u2019s guidelines. The HeLa cell line used carried a stably integrated doxycycline-inducible Fsp27-EGFP construct and was authenticated by PCR-single-locus-technology (Eurofins). HeLa cells were grown as an adherent culture in a high-glucose DMEM media containing GlutaMAX (Thermo Fisher Scientific, 31996). The media was further supplemented with 10 % Tet-approved heat-inactivated FBS (Pan Biotech p30-3602), 10 mM HEPES pH 7.2, 0.2 mg/ml Hygromycin B (Invitrogen, 10687010) and 1 x non-essential amino acids solution (Thermo Fisher Scientific, 11140050). Cell lines were routinely tested for mycoplasma infection using the MycoAlert mycoplasma detection kit (Lonza).\n\n### Plasmid construct generation\n\nThe study made use of the Sleeping Beauty transposon system. The constructs pCAGEN-SB100X, pT2-CAG-fGFP plasmid (Addgene #108714) and pT2-CAG-fFusionRed were previously used and described in other studies (Lancaster et al., 2017; Giandomenico et al., 2019). EGFP-E-Syt1 was a gift from Pietro De Camilli (Addgene plasmid # 66830) (Giordano et al., 2013). The construct pT2-CAG-GFP-E-Syt1 was generated by restriction digestion of the EGFP-E-Syt1 (Addgene #66830) and the pT2-CAG-fGFP plasmids with AgeI and MluI. The fragment encoding GFP-E-Syt1-SV40 PolyA was then ligated into the pT2-CAG backbone using T4 ligase. pcDNA3-hL1 was a gift from Fritz Rathjen (Addgene plasmid # 89411). The construct pT2-CAG-hL1CAM-GFP was generated by Gibson assembly on the fragments here described; the pT2-CAG-fGFP vector was linearised by restriction digestion with EcoRI and MluI, the fragment encoding the hL1CAM ORF was PCR amplified from the pcDNA3-hL1 plasmid (Addgene #89411) with primers Fwd: 5\u2019-AACGTGCTGGTTATTGTGCTGTCTCATCATTTTGGCAAAGAAAGATGGTCGTGGCGCT-3\u2019 and Rev: 5\u2019-TACAAGAAAGCTGGGTACCGTTCTAGGGCCACGGCAGGG-3\u2019, the fragment encoding EGFP-SV40 PolyA was PCR amplified from the pcDNA3-hL1 plasmid (Addgene #89411) with primers Fwd: 5\u2019- ACCCTGCCGTGGCCCTAGAACGGTACCCAGCTTTCTTGTACA-3\u2019 and Rev: 5\u2019- CAGCCGGGGCCACTCTCATCAGGAGGGTTCAGCTTACTCAAGAGGCTCGAGTGCAACTATG-3\u2019. The Q5 High-Fidelity 2 x Master Mix (New England Biolabs, M0492S) was used for PCR. The ligation and Gibson assembly products were transformed in TOP10 chemically competent E. coli. Plasmids recovered from bacterial colonies were screened by restriction digestion and the correct products were verified by sequencing.\n\n### Construct expression in organoids\n\nOrganoids were electroporated with expression constructs as previously described (Lancaster et al., 2013; Lancaster et al., 2017; Giandomenico et al., 2019). Briefly, a total of 5 \u00b5l of a 1 \u00b5g/\u00b5l plasmid solution (750 ng/\u00b5l transposon donor plasmid and 250 ng/\u00b5l pCAGEN-SB100X) was injected into the ventricles of 45\u201355 day-old organoids and electroporated using the BTX Gemini X2 HT Electroporation System (BTX, 452008) and 5 mm gap petri dish platinum electrode kit to deliver five square-wave 1 ms pulses of 80 V amplitude with 1 s inter-pulse intervals. Approximately one week after electroporation the organoids were prepared for ALI culture.\n\n### ALI-CO preparation\n\nCerebral organoids aged 45\u201360 days were prepared for ALI culture as previously described (Giandomenico et al., 2019). In brief, organoids were embedded in 3 % low-gelling temperature agarose (Sigma-Aldrich, A9414) in HBSS without Ca2+ and Mg2+ (Thermo Fisher Scientific, 14175095) and sectioned into 300 \u00b5m-thick slices on a Leica VT1000 S Vibrating blade microtome. All surrounding agarose was removed from the tissue and 2\u20133 tissue slices were positioned on each Millicell Cell Culture Insert (Merck Millipore, PICM0RG50) using No.22 scalpels (Swann-Morton, 0508). The slices were incubated for 1\u20132 hr in SSSC medium (0.5 % glucose, 10 % FBS and 1 x Anti-Anti in high glucose DMEM supplemented with Glutamax) and cultured long-term in SFSC medium (1 x B27, 0.5 % glucose, 1 x Glutamax and 1 x Anti-Anti in Neurobasal medium) with daily half-media changes.\n\n### Organoid dissociation and neuronal culture\n\nMature organoids aged between 50 and 80 days were dissociated using ACCUMAX cell dissociation reagent (Sigma Aldrich, A7089) supplemented with 400 \u00b5g/ml DNAse I. For each organoid dissociated, 0.5 ml of dissociation solution were used. Organoids were resuspended in dissociation solution and subject to 4 \u00d7 5 min incubation steps in an incubator at 37 \u00b0 C; after the first 5 min the organoids were resuspended by flicking the tube, after 10 min the organoids displayed a fluffy appearance and were pipetted up and down once, then broken into cell clumps. After 15 min the cell clumps were resuspended by pipetting up and down 3\u20135 times, and then 10 more times after an additional 5 min incubation. Dissociation was stopped by addition of an equal volume of maturation medium (Stem Cell Technologies, 08570). The cell suspension was passed through a 70 \u00b5m nylon cell strainer (Corning, 352350). A small aliquot was taken for a live cell count and the remaining cell suspension was spun down at 300 x g for 5 min. The cell pellet was resuspended in SFSC medium and 50,000 cells were seeded into each well of 8 well Lab-Tek II glass chamber slides (Nunc, 154534) for immunofluorescence preparation. Prior to cell seeding the imaging slide was coated with poly-L-ornithine, Laminin and Fibronectin \u2013 for details on the coating protocol refer to the section \u2018Electron cryo-microscopy (cryo-EM) sample preparation\u2019 of the Materials and Methods.\n\n### Immunofluorescence sample preparation\n\nDissociated neurons were fixed in 4 % PFA for 10 min at room temperature and incubated in permeabilization buffer (4 % donkey serum and 0.25 % Triton-X in PBS without Ca2+ and Mg2+) for one hour at room temperature prior to overnight staining with primary antibodies in blocking buffer (4 % donkey serum and 0.1 % Triton-X in PBS without Ca2+ and Mg2+) at room temperature. Antibodies used in this study with the corresponding dilution factor were: rabbit anti-RPL8 (Abcam, ab169538, 1:200), rabbit anti-RPS10 (Abcam, ab151550, 1:200), rabbit anti-RPS16 (Abcam, ab26159, 1:200), rabbit anti-RPS26 (Thermo Fisher Scientific, PA5-65975, 1:200), Alexa Fluor 647 conjugate mouse anti-S6 ribosomal protein (Cell Signaling Technology, 5548, 1:100), mouse anti-SMI312 (BioLegend, 837904, 1:500), chicken anti-MAP2 (Abcam, ab5392, 1:500). The next day, the slides were washed three times in PBS, followed by a 1 hr incubation at room temperature with 405, 568, and 647 Alexa Fluor conjugate secondary antibodies diluted 1:500 in blocking buffer. After secondary antibody staining, the slides were washed three times in PBS and the coverslips were mounted using ProLong Diamond antifade mountant (Thermo Fisher Scientific, P36961).\n\n### EmGFP Sendai virus transduction and SiR-tubulin labeling\n\nDissociated neuronal cultures used for immunofluorescence staining of ribosomal subunits were fed with 200 \u00b5l of SFSC medium supplemented with CytoTune EmGFP Sendai Fluorescence Reporter (Thermo Fisher Scientific, A16519, 8.1 \u00d7 107 CIU/ml) diluted 1:200. After 3\u20134 days, the cells started displaying EmGFP signal. Approximately 2 weeks after dissociation, cultures produced thin EmGFP+ axons and the cultures were fixed for analysis. SiR-tubulin (Lukinavi\u010dius et al., 2014) was reconstituted in sterile DMSO to a concentration of 1 mM. For staining of ALI-COs SiR-tubulin was diluted to a final concentration of 1 \u00b5M in SFSC medium and applied dropwise to the top of the slice using a controlled oral-suction pipetting apparatus and care was taken not to disturb the grids. After approximately 1 hr at 37 \u00b0C and 5 % CO2 samples were ready for imaging.\n\n### Fluorescence image acquisition and analysis\n\nWidefield fluorescence images were acquired on a Nikon ECLIPSE Ti2 system at 10 x (0.3 NA) and 20 x (0.75 NA) magnification and on an EVOS FL inverted microscope (Thermo Fisher Scientific). Confocal images of SiR-tubulin stained organoids were acquired on a Zeiss LSM 710 upright system at 10 x (0.3 NA) magnification. The time course of fGFP+ axon growth on grids was acquired on a Zeiss LSM 780 confocal microscope using a 10 x (0.3 NA) objective and a pixel size of 830 nm. Samples were incubated at 37 \u00b0C and 5 % CO2 in 35 mm Easy-Grip tissue culture dishes (Corning, 353001). The microscope objective was aligned to the center of the grid and 4 \u00d7 4 tiled-images were acquired approximately every 12 hr. For measurement of axon growth rates, live FM movies of ALI-COs were acquired on a Zeiss LSM 710 and Zeiss LSM 780 inverted microscope using a 10 x (0.3 NA) objective and a pixel size of 1.384 \u00b5m. Samples were incubated at 37 \u00b0C and 5 % CO2 in 35 mm Easy-Grip tissue culture dishes (Corning, 353001) and images were acquired every 12 min. The manual tracking plugin in ImageJ was used to track the position of individual growth cones throughout the movie frames (Fabrice Cordelires, https://imagej.nih.gov/ij/plugins/track/track.html). The time interval was set to 12 min and the x/y calibration to 1.3837 \u00b5m. For immunofluorescence analysis of ribosomal subunit distribution in axons and dendrites, dissociated human neurons were imaged on a Zeiss LSM 780 confocal microscope at 60 x (1.4 NA oil) magnification. The main criterion for fluorescence image acquisition was the presence of both MAP2+/SMI312- dendrites and MAP2-/SMI312+ axons within the field of view. ImageJ was used for analysis and the mean gray value of the ribosomal protein of interest along the length of two axons and two dendrites per image were measured. Axons were identified as SMI312+/MAP2- or, due to antibody incompatibility, in the case of S6 as GFP+/MAP2- processes. Dendrites were identified as MAP2+ processes. The ribosomal proteins imaged include: RPL8, RPS10, RPS16, RPS26, and S6. For each of these targets, the average mean gray value was calculated across axonal and dendritic segments and a Mann-Whitney unpaired two-tailed test was used for statistical comparison between the two groups.\n\n### Electron cryo-microscopy (Cryo-EM) sample preparation\n\nAfter 4\u20137 days, the ALI-COs started to display escaping processes and were thus considered ready for grid placement. Quantifoil R2/2 or R3.5/1 200 mesh Au grids with carbon film (Quantifoil) were coated with 0.01 % poly-L-ornithine solution (Sigma Aldrich, P4957) overnight at 4 \u00b0C. The next day, the grids were further coated with a solution of 10\u201320 \u00b5g/ml Laminin (Sigma Aldrich, L2020) and 0.001 % Fibronectin (Sigma Aldrich, F0895) in ultrapure water at room temperature for 4 hr. Organoid sections were inspected on an EVOS FL inverted microscope (Thermo Fisher Scientific) by brightfield or GFP fluorescence. The grids were placed at sites where single escaping processes could be seen by brightfield or near the fluorescent foci. Cryo-EM grids were blotted with Whatman filter paper grade 1 (GE Healthcare) and placed in direct contact with the edge of the organoid section. Importantly, the edge of the grid was juxtaposed to that of the organoid section, but not covered by it. Growth of the processes could be monitored daily based on GFP fluorescence. In some experiments, after approximately 2 weeks, SiR-tubulin (Spirochrome, CY-SC002) was applied dropwise on top of the grids to visualize all axon tracts. The grids were deemed ready for freezing earliest after 10\u201314 days, or once the axons reached an area within approximately five grid squares distance from the grid center. Immediately prior to plunge-freezing, the grids were hydrated by applying media dropwise using a controlled oral-suction pipetting apparatus and glass capillaries. This step was crucial to reduce desiccation of neuronal processes during blotting of the EM grids. Tracts on EM grids were detached from their cell bodies using a 3.5 mm disposable biopsy punch (Integra, 33\u201333) and immediately collected with an L5 clamp style thin-tip tweezer (Dumont, 72882-D), then backside blotted for 5\u201310 s with Whatman filter paper grade 1 (GE Healthcare) and vitrified in liquid ethane using an in-house built manual plunger. To minimize the time between detachment and cryo-fixation to less than 20 s, the procedure was carried out sequentially by two experimenters that worked next to one another; the first experimenter detached the grids from the organoid slice and handed the grids directly to the second experimenter who performed the blotting and plunge freezing.\n\n### Cryo-fluorescence microscopy (Cryo-FM)\n\nThe grids were screened for ice thickness and fluorescent signals within axon tracts by cryo-FM with the Leica EM cryo-CLEM system. The system was equipped with a HCX PL APO 50 x (0.9 NA) cryo-objective (Leica Microsystems), an Orca Flash 4.0 V2 SCMOS camera (Hamamatsu Photonics), a Sola Light Engine (Lumencor), a L5 filter (Leica) for detection of GFP and a Y5 filter (Leica) for the detection of the SiR-tubulin stain. The microscope stage was cooled to \u2013195 \u00b0C and the room was humidity controlled (below 25 %). A 2.0 \u00d7 2.0 mm montage of each grid was taken of the green (1 s, 30 % intensity), brightfield channel (30 ms, 70), and optionally of the far-red channel (1 s, 30 % intensity). Individual z-stacks of grid squares of interest were acquired in 1 \u00b5m steps to cover the full range of fluorescent signals. Correlation of fluorescent axon tracts on cryo-EM grid square maps was done in Icy using the ec-CLEM plugin (Paul-Gilloteaux et al., 2017) using landmark features and carbon film holes in cryo-FM and cryo-EM images.\n\n### Preparation and focused ion beam (FIB) milling of control HeLa cells\n\nControl HeLa cell samples were prepared as described in Ader et al., 2019. In short, HeLa cells were grown for 24 hr on holey carbon film Au grids (200 mesh, R2/2, Quantifoil), fed with oleic acid and induced with doxycycline for Fsp27-EGFP expression for an unrelated project. Sixteen hr post-induction, HeLa cells were stained for 1 hr with LipidTOX Deep Red dye (Thermo Fisher Scientific, H34477). Subsequently, grids were manually backside blotted with Whatman filter paper grade 1 and immediately vitrified in liquid ethane using an in-house built manual plunger. Thin lamellae were generated by cryo-FIB milling performed with a Scios DualBeam FIB/SEM (FEI) equipped with a Quorum stage (Quorum, PP3010T) in a procedure similar to the one described in Schaffer et al., 2015. Prior to milling, grids were coated with organometallic platinum using a gas injection system for 30 s at 13 mm working distance and 25\u00b0 stage tilt. The electron beam was used for locating the cells of interest at 5 kV and 13 pA beam current and for imaging to check progression of milling at 2 kV and 13 pA beam current. Milling was performed with stepwise reduction of the ion beam current (from 30 kV, 1 nA to 16 kV, 23 pA) while changing the stage tilt as described (Hoffmann et al., 2019). The lamellae with a 10\u00b0 pre-tilt were milled to a final thickness below 300 nm.\n\n### Electron cryo-microscopy (Cryo-EM)\n\nCryo-EM grids were screened on a Tecnai T12 (FEI) with an Orius camera or a Tecnai F20 (FEI) with a Falcon2 detector (FEI) by mapping the central parts of the grids using SerialEM (Mastronarde, 2005) at pixel sizes of 132 nm or 87 nm, respectively. The preservation of axon tracts on individual grids squares was examined on images acquired at pixel sizes of 6.3 nm or 6.0 nm, respectively. Cryo-ET data acquisition was done using SerialEM on a Titan Krios microscope (Thermo Fisher) equipped with a Quantum energy filter and a K2 direct electron detector (Gatan) operated in counting mode. Montaged images of the central part of the grid were acquired in linear mode with 171 nm pixel size. Montages of individual grid squares with axon tracts or lamellae of HeLa cells were taken with 5.1 nm pixel size. These montages were used for correlation to fluorescent axon tracts, based on landmark features using the ec-CLEM plugin (Paul-Gilloteaux et al., 2017) within the Icy software. Tilt series were acquired at areas of interest in low-dose mode from 0\u00b0 to \u00b160\u00b0 using a grouped dose-symmetric tilt scheme with 1\u00b0 increment, a group size of 4 (Hagen et al., 2017), and a pixel size of 3.5 \u00c5 or 3.7 \u00c5; both for the axon tracts and the control HeLa cells. The target dose rate was kept around 4 e-/px/s on the detector. The energy filter slit width was set to 20 eV. Tilt images were acquired as three or four frames with approximately 1 e-/A2 dose per tilt image. The nominal defocus for all tilt series was set to \u20135 \u00b5m. The frames of tilt series images were aligned with IMOD alignframes. The tilt series were aligned in IMOD using patch tracking and then reconstructed at a pixel size of 7.1 \u00c5 or 7.4 \u00c5 as backprojection tomograms with SIRT-like filter corresponding to 10 iterations (Kremer et al., 1996; Mastronarde, 1997). To improve visibility for representation in figures, gaussian filtering was applied to the shown tomographic slices. For analyzing the microtubule polarity by subtomogram averaging, the contrast transfer function was estimated and corrected for by phase flipping in IMOD, and the tomograms were reconstructed by unfiltered backprojection at 7.1 \u00c5 or 7.4 \u00c5 pixel size. Four of the 9 HeLa tomograms used here have been analyzed and published before (Ader et al., 2019 and EMD-4491).\n\n### Image processing and analysis\n\nThe segmentation model shown in Figure 2C and in Figure 2\u2014video 2 was generated using Amira (Thermo Fisher Scientific) and IMOD (Kremer et al., 1996). Membrane surfaces were segmented manually, followed by extensive smoothening and simplification. Microtubules and actin filaments were first modeled as tubes in IMOD and then imported as tubular volumes into Amira. Within the segmented volumes of individual membrane objects and cytoskeleton objects, grey value-thresholding was used for a second segmentation step to eventually depict only high-density voxels within the objects of interest. Note that the segmentation model is inverted along the z-axis relative to the original tomogram. Figure 2\u2014video 1 was generated by first selecting a region of interest in a cryo-ET slice, which is presented in the final movie frame, followed by identifying and aligning images obtained from the previous successive imaging steps of fluorescent live imaging, cryo-FM, and electron tomography. Each acquired image was then used to generate a stack of progressive magnification into the region of interest using an ImageJ macro (zoom_movie_ImageJ_v2) written by Eugene Katrukha and provided through GitHub Gist (Katrukha, 2021). All stacks were then converted and concatenated into a single movie.\n\nThe membrane distance at cell-cell contact sites was measured for a total of 34 contacts, in which the plasma membranes were perpendicular to the x,y plane of the tomogram and contacting each other over a distance of at least 0.5 \u00b5m. 5\u201317 measurements, at a spacing of approximately 100 nm, were taken between the two extracellular leaflets of the plasma membrane bilayers for each contact area. Significance was tested with unpaired t test in Graphpad Prism.\n\nThe occurrence of ER-plasma membrane contact sites was assessed by visual inspection. Wherever the ER was found close to plasma membrane oriented perpendicular to the x,y plane of the tomogram, the distance between the two membranes was measured in IMOD and when it was less than 30 nm, the instance was counted as a membrane contact site. A large part of the plasma membrane however is oriented roughly parallel to the x,y plane of the tomogram and thus not directly visible because of the missing wedge. In these cases, we considered the boundaries between visible cellular material and the void in the top and bottom part of the tomograms to correspond to the surface of the cell. ER which was clearly recognizable less than 30 nm away from this boundary was considered an ER-plasma membrane contact site. Depending on the orientation of the ER membrane, however, the missing wedge affected its visibility as well and rendered the estimation of the distance to the plasma membrane impossible. Therefore, this approach only detects most obvious ER-plasma membrane contact sites.\n\nThe microtubule directionality was determined from the radial tilt of protofilaments in averages from individual microtubules. Points along individual microtubules were clicked along their center to create a contour. Overlapping subvolumes were extracted along each contour and averaged together using a cylindrical mask and one individual subtomogram as a reference in PEET (Nicastro et al., 2006; Heumann et al., 2011). Microtubule directionality was determined from axial views of individual subtomogram averages (Sosa and Chr\u00e9tien, 1998). The number of protofilaments for individual microtubules was determined from axial views of subtomogram averages only when the quality of subtomogram averaging resulted in clear separation of the individual protofilaments. In some cases, analysis of subtomogram averaging was not possible due to the microtubule orientation and the anisotropic resolution of the tomograms, the signal-to-noise ratio of the final tomogram or the proximity to other microtubules within larger bundles. A subtomogram average was generated from overlapping subvolumes of 16 individual 13 protofilament microtubules using a cylindrical mask and the average of an individual microtubule average as a reference in PEET. Fourier shell correlation (FSC) was calculated in PEET using the calcFSC function. The FSC curve was plotted in Graphpad Prism using the resulting values, the frequency shells and the pixel size. A line profile along an individual protofilament of the microtubule average was generated in ImageJ and visualized using Graphpad Prism.\n\nTo measure the plasma membrane surface area of axon shafts, the plasma membrane boundaries of individual axons were segmented in tomograms at bin 10 that were rotated around the x-axis (to see x,z virtual slices). As explained for the analysis of membrane contact site occurrence, due to the missing wedge, the plasma membrane parallel to the x,y plane of the tomogram is not directly visible. However, the reconstructed tomographic volume contains the whole thickness of the cell, hence the boundary between cellular material and void corresponds to the surface of the cell. The surface of the cell is recognizable in the binned x,z virtual slices, and was therefore used as a proxy for the plasma membrane. Axon segments were only analyzed if they were fully contained throughout the tomogram volume. Segmentations and surface area measurements were performed in IMOD. Each measurement was normalized to the individual axon length.\n\nThe ER diameter of the thinnest ER tubules contained in the axon and HeLa datasets were measured in IMOD as the distance between two points on the cytosolic edge of the membrane of each ER tubule. Significance was tested with Welch\u2019s t test in Graphpad Prism.\n\nRibosome-like particles were identified visually on the basis of their size, shape, and contrast in the axon tomograms, in reference to other tomograms of eukaryotic cells that contained polysomes and monosomes. Vesicle and ribosome-like particle diameters were measured along their longest axis, in tomographic slices in IMOD. Multivesicular bodies and organelles larger than 200 nm in diameter were excluded from the vesicle analysis. To better visualize the topographic distribution of the ribosome-like particles, example volumes of 0.05 \u00b5m3 from cytosolic areas of the tomograms are shown in Figure 4a, in which the position of each ribosome-like particle is illustrated by a sphere with 30 nm diameter. \u2018Other processes\u2019 comprised four tomograms containing high numbers of ribosomes. These tomograms were acquired at the edge of the EM grid, which is in close proximity to the cell bodies of the organoid slice and part of isolated processes rather than bundles. Additionally, two of these tomograms were acquired at the ending of a process. For these reasons, we interpreted them as representing cellular processes other than axonal tracts, excluded these four tomograms from the ribosome analysis on axon shafts and instead classified them as \u2018other processes\u2019. The number of ribosome-like particles found within each tomogram was normalized to the tomographic volume. The tomographic volume was estimated from the x,y dimensions of tomograms. The z dimensions were estimated at the tomogram center. Using Avogadro\u2019s number, the average molar concentration of ribosome-like particles within the tomograms of the axon tracts was calculated. Due to the permissive assignment and quantification accounting for their scarcity, it cannot be excluded that some of the ribosome-like particles identified in the axon shaft may actually correspond to other protein complexes. Thus, the calculated concentration in axon shafts is likely an overestimate.\n",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "82c24c7e-a6ee-4648-a682-2ab430e5ad22",
+      "submission_id": "7f72129d-24f7-4179-9d33-168f40c9f6f2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Giulia Zanetti, Institute of Structural and Molecular Biology, Birkbeck, University of London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70269.sa1](https://doi.org/10.7554/eLife.70269.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper will be of interest both to neuroscientists and those developing cryo-electron tomography methods. The authors present an exciting new technique for studying human axons with cryo-tomography, based on extending axons from organoids on to EM grids.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Electron cryo-tomography reveals the molecular architecture of growing axons in human brain organoids\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Provide a thorough comparison with existing methods for in situ structure determination, in particular focussing on comparison with recent literature.\n\n2) Tone down claims of 'molecular' achievements to match the level of insight that is actually provided in the paper. Reviewer 2 suggests to perform subtomogram averaging of ribosomes, this is quite easily done and it would provide evidence for the claimed potential of determining molecular structures with the methodology presented here, so it would be good to include if possible. Also, please include more controlled quantifications throughout, as suggested by reviewer 1.\n\n3) Discuss in more depth how this methodology can be further expanded to systems different from neurons (i.e. other organoids, pathological systems).\n\n4) Reviewer 1 provides a list of specific comments that should be considered in a revised submission.\n\nReviewer #1 (Recommendations for the authors):\n\n1) Regarding the quantification of plasma membrane surface area. The authors present the measurements as absolute, when cryo-tomography data suffers from a missing wedge artefact that makes segmentation of all surfaces of objects highly challenging. How all the membrane surface was accurately segmented should be explained, or it should be discussed if the measurements are intended as best estimates rather than absolute.\n\n2) L1CAM-GFP or ESYT1-GFP overexpression were interesting experiments, but quantitative evidence should be presented to support the conclusion of no differences with GFP wild-types.\n\n3) The paper could benefit from some experimental expansion. Could it be quantified where ribosomes are located relative to other organelles? Although ER minimum dimensions are thin relative to other cells, what about the maximum and average dimensions and quantity? Can ER relationships with different organelles and membrane be quantified? Is there anything different in human neurons compared to rodent ones? Would it be possible to show more vesicle examples, or even quantify the size ranges? Are vesicles associated with particular structures, i.e microtubules?\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript could be supplemented by a comparison with findings from other methods. I am not an expert on axon development, but one might think of data from recent FIB/SEM approaches or from conventional electron microscopy studies, and I am not thinking of the mid-1950s papers that have already been cited here. This would allow even the non-expert to properly appreciate the findings presented.\n\nIn addition, I think it would be appropriate to add some more information. e.g. about the time needed from punching to plunging (page 5. lines 114-116). A related question is how stable the tissue is after punching, or at what point one can expect structural changes.\n\nI also think that the \"molecular\" can be scaled down a bit, i.e. page 5, line 126-146 the only molecular is \"numerous intraluminal particles\" that remain to be investigated here, everything else are easily identifiable structures.\n\nAlso, maybe the authors should rephrase their questions from the introduction or really try to answer them directly in the rest of the manuscript. Right now they are either no answers or very vague answers. I think a little extra work here would definitely strengthen the manuscript.\n\nRegarding \"ribosomes\", I would add a rough subtomogram analysis, which should be straightforward enough.\n\nReviewer #3 (Recommendations for the authors):\n\nAlthough the authors describe a new methodology in this manuscript, but it lacks sufficient novelty and impact for publication in eLife. It will be great if the authors can demonstrate that this technique can be applied to other cell types/tissues or under different physiological or pathological conditions. This will make the work more impactful and not limit it to studying cerebral organoids or neurons.\n",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d51456d0-2507-434b-9e80-f5fbe7d95f68",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C1",
+      "claim": "Thick tracts that exited the ALI-COs stained positive for the pan-axonal marker SMI312 and negative for the dendritic marker MAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thick tracts that exited the ALI-COs stained positive for the pan-axonal marker SMI312 and negative for the dendritic marker MAP2 (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental immunofluorescence data shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "feb2cf1b-6d54-44ad-bae3-0acededaff10",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C2",
+      "claim": "The average extension speed for individual fluorescently labeled axons over several hours was 691 nm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the extension speed for individual fluorescently labeled axons over several hours to be an average of 691 nm/min, with a peak pace of nearly 3000 nm/min (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements from live fluorescence microscopy tracking data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "2318d38e-bab4-4552-a3e5-179598add15f",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C3",
+      "claim": "The peak pace of axon extension was nearly 3000 nm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the extension speed for individual fluorescently labeled axons over several hours to be an average of 691 nm/min, with a peak pace of nearly 3000 nm/min (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements from live fluorescence microscopy tracking data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "2fe6e866-1c55-40e5-bc04-51858cf87896",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C4",
+      "claim": "The average speed of axon extension observed is comparable to previous reports of chicken dorsal-root ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "The average speed we observed is comparable to previous reports of chicken dorsal-root ganglia (Ketschek et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to published literature on chicken dorsal-root ganglia.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "9fc41161-0de1-4f43-b58a-8913eda532e0",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C5",
+      "claim": "Actin filaments in axons are unbranched and longitudinally aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed unbranched, longitudinally aligned actin filaments, recognizable by their characteristic thickness of 7\u20139 nm and an apparent pitch of 5\u20136 nm (Egelman et al., 1982; Figure 2A, orange arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cryo-ET observations shown in Figure 2A and comparison to known structural characteristics from literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "df3c70ca-a28a-4c62-a43e-4807fd20bbff",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C6",
+      "claim": "Actin filaments have a characteristic thickness of 7\u20139 nm and an apparent pitch of 5\u20136 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed unbranched, longitudinally aligned actin filaments, recognizable by their characteristic thickness of 7\u20139 nm and an apparent pitch of 5\u20136 nm (Egelman et al., 1982; Figure 2A, orange arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data and comparison to published structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "0e958546-cd42-4f72-aa18-b09d7603298a",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C7",
+      "claim": "Microtubules revealed their individual protofilaments and numerous intraluminal protein densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules revealed their individual protofilaments (Figure 2A, magenta arrows), as well as numerous intraluminal protein densities (Garvalov et al., 2006; Foster et al., 2021a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cryo-ET observations shown in Figure 2A and comparison to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "a68ab279-0246-46f4-bc52-acf75be7fb3f",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C8",
+      "claim": "Filaments of about 10 nm in diameter were found in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found filaments of about 10 nm in diameter (Figure 2A, brown arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "27ae66a4-3a85-4fbf-ba1f-30919133e236",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C9",
+      "claim": "The 10 nm diameter filaments match the dimensions of neurofilaments such as NF-L, NF-M, and NF-H.",
+      "claim_type": "EXPLICIT",
+      "source": "These dimensions match those of neurofilaments (NFs) such as NF-L, NF-M, and NF-H (Malka-Gibor et al., 2017), which serve as signature markers for axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to published structural data on neurofilaments.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "aaf644bb-420d-441b-92cd-1b6cd214da21",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C10",
+      "claim": "Neurofilaments serve as signature markers for axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These dimensions match those of neurofilaments (NFs) such as NF-L, NF-M, and NF-H (Malka-Gibor et al., 2017), which serve as signature markers for axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "638a7375-0761-4cb6-96d2-389ce411ac03",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C11",
+      "claim": "Large expanses of endoplasmic reticulum (ER) cisternae extended into thin membrane tubules tightly associated with microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we frequently observed large expanses of endoplasmic reticulum (ER) cisternae, which extended into thin membrane tubules tightly associated with microtubules (Figure 2A, cyan arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cryo-ET observations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "e7205bdd-80ff-4232-9314-a92403da36d9",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C12",
+      "claim": "Membrane contact sites between ER-mitochondria and ER-plasma membrane were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed membrane contact sites between ER-mitochondria and ER-plasma membrane (Figure 2B, white arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cryo-ET observations shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "23ce4d26-e09a-48e4-9be0-c2adf5a7ef76",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C13",
+      "claim": "No obvious ultrastructural differences were observed between fGFP+ and GFP negative axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any obvious ultrastructural differences between fGFP+ and GFP negative axons (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative analysis of cryo-ET data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "751e7f14-566f-45dd-9ea8-53aa2a1d16e7",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C14",
+      "claim": "Approximately 17% of vesicles were associated with microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "While most vesicles appeared free in the cytosol, approximately 17 % were associated with microtubules and 14 % with actin (N = 290, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of vesicle localization from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "85da9687-6d64-43ea-8169-f8658561aeb6",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C15",
+      "claim": "Approximately 14% of vesicles were associated with actin.",
+      "claim_type": "EXPLICIT",
+      "source": "While most vesicles appeared free in the cytosol, approximately 17 % were associated with microtubules and 14 % with actin (N = 290, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of vesicle localization from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "12cf80c4-f43f-49f9-846a-a6ae873fab74",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C16",
+      "claim": "Free vesicles had mean diameters of about 52.00 nm (SD = 19.42 nm, N = 200).",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicles had mean diameters of about 50 nm (52.00 nm, SD = 19.42 nm, N = 200 for free vesicles; 50.92 nm, SD = 16.70 nm, N = 49 for MT associated vesicles, and 52.18 nm, SD = 17.84 nm, N = 41 for actin associated vesicles) (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "9a914a26-8c6d-4511-ba86-770b5e045076",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C17",
+      "claim": "Microtubule-associated vesicles had mean diameters of 50.92 nm (SD = 16.70 nm, N = 49).",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicles had mean diameters of about 50 nm (52.00 nm, SD = 19.42 nm, N = 200 for free vesicles; 50.92 nm, SD = 16.70 nm, N = 49 for MT associated vesicles, and 52.18 nm, SD = 17.84 nm, N = 41 for actin associated vesicles) (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "a4c91add-11e8-4a9c-b6ce-0f4d80bd555e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C18",
+      "claim": "Actin-associated vesicles had mean diameters of 52.18 nm (SD = 17.84 nm, N = 41).",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicles had mean diameters of about 50 nm (52.00 nm, SD = 19.42 nm, N = 200 for free vesicles; 50.92 nm, SD = 16.70 nm, N = 49 for MT associated vesicles, and 52.18 nm, SD = 17.84 nm, N = 41 for actin associated vesicles) (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "57faa86e-3d61-4165-b12e-d0101a7caa48",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C19",
+      "claim": "Vesicle sizes in human axons are similar to vesicles in axons of mouse dorsal root ganglia neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These sizes are similar to vesicles in axons of mouse dorsal root ganglia neurons (Foster et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to published data on mouse neurons.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "98ac9560-0176-4b2e-a405-1d6bef751885",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C20",
+      "claim": "The majority of microtubule bundles had a uniform, parallel microtubule arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that the majority of bundles had a uniform, parallel microtubule arrangement, further confirming axon identity (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by subtomogram averaging analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "3485cc0c-38a3-4d6b-b5ff-5910b2bca169",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C21",
+      "claim": "The majority of microtubules consisted of 13 protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of microtubules consisted of 13 protofilaments, while 2 microtubules had 12 protofilaments (N = 28) (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by subtomogram averaging analysis shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "391b1521-cd9c-463a-affa-9e129d5b5332",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C22",
+      "claim": "Two microtubules had 12 protofilaments (N = 28).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of microtubules consisted of 13 protofilaments, while 2 microtubules had 12 protofilaments (N = 28) (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by subtomogram averaging analysis shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "9d81d9b2-5514-4923-a7ee-29a1387a64a2",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C23",
+      "claim": "13 protofilaments have been suggested to be the predominant molecular architecture of microtubules in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot exclude that the microtubule organization we observed was influenced or stabilized by labeling with SiR-tubulin in the subset of experiments where this labeling was performed, 13 protofilaments have been suggested before to be the predominant molecular architecture of microtubules in human cells (Watanabe et al., 2020; Chaaban and Brouhard, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by published literature on microtubule structure in human cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "d5a4c184-bce4-41a1-a600-2108ba9ff56a",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C24",
+      "claim": "The subtomogram average revealed the typical 4 nm repeat of individual tubulin subunits along the protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated a 3D subtomogram average from 16 of the 13-protofilament microtubules, which revealed the typical 4 nm repeat of individual tubulin subunits along the protofilaments (Figure 3\u2014figure supplement 1; Amos and Klug, 1974; Nogales et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by subtomogram averaging data shown in Figure 3\u2014figure supplement 1 and comparison to published structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "f32e5f92-c2f6-4e99-a531-400d1e3e7302",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C25",
+      "claim": "Each micrometer of axon length on average corresponded to approximately 1.24 \u00d7 10^6 nm^2 of plasma membrane area (SD = 7.3 x 10^5 nm^2, N = 14).",
+      "claim_type": "EXPLICIT",
+      "source": "Each micrometer of length on average corresponded to approximately 1.24 \u00d7 106 nm2 of plasma membrane area (SD = 7.3 x 105 nm2, N = 14) (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by segmentation and surface area measurements from cryo-ET data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "41ff8c61-c36f-4a1c-b6a0-18087ef68df5",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C26",
+      "claim": "Each \u00b5m^2 of membrane contains approximately 5 \u00d7 10^6 lipids, corresponding to five lipid molecules/nm^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Because each \u00b5m2 of membrane contains approximately 5 \u00d7 106 lipids (Alberts et al., 2002), corresponding to five lipid molecules/nm2, we estimated the lipid supply to the plasma membrane required to sustain the average growth rate of an axon as approximately 4.3 \u00d7 106 lipid molecules/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "0316e6e2-b912-49b5-920e-eb9ee07ae9a3",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C27",
+      "claim": "The lipid supply to the plasma membrane required to sustain the average growth rate of an axon is approximately 4.3 \u00d7 10^6 lipid molecules/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Because each \u00b5m2 of membrane contains approximately 5 \u00d7 106 lipids (Alberts et al., 2002), corresponding to five lipid molecules/nm2, we estimated the lipid supply to the plasma membrane required to sustain the average growth rate of an axon as approximately 4.3 \u00d7 106 lipid molecules/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calculation based on measured growth rates and membrane area, combined with established knowledge from literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "bfc61b14-b9b0-49a0-968f-f5f78207423d",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C28",
+      "claim": "ER tubules in axon shafts measured on average 10.8 nm (SD 2.0 nm, 82 measurements) at their thinnest outer diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "At their thinnest outer diameter, the ER tubules in axon shafts measured on average 10.8 nm (SD 2.0 nm, 82 measurements), which is narrower than previously observed in mouse axons (Terasaki, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data and comparison to published data on mouse axons.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "38b22689-8ac5-4834-ab3c-6878573e7537",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C29",
+      "claim": "ER tubules in axon shafts are narrower than previously observed in mouse axons.",
+      "claim_type": "EXPLICIT",
+      "source": "At their thinnest outer diameter, the ER tubules in axon shafts measured on average 10.8 nm (SD 2.0 nm, 82 measurements), which is narrower than previously observed in mouse axons (Terasaki, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of measurements from cryo-ET data to published data on mouse axons.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "be74e729-54d6-45bc-9132-4734555a4fc7",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C30",
+      "claim": "The thinnest ER tubules in HeLa cells measured about 20.4 nm (SD 3.2 nm, 24 measurements).",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison we measured the thinnest ER tubules in HeLa cells and found them to be about twice the diameter (20.4 nm, SD 3.2 nm, 24 measurements) (Figure 3H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data of HeLa cells shown in Figure 3H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "c89c797e-80b8-44da-a784-0fd1a4623db4",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C31",
+      "claim": "Some axonal ER tubules had a local outer diameter of less than 10 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the axonal ER tubules had a local outer diameter of less than 10 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "cd143d47-f6a6-44f8-b745-421b98e8db23",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C32",
+      "claim": "Axonal ER tubules contain hardly any lumenal space.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that this measurement includes the bilayer thickness, this implies that these ER tubules of human axons contain hardly any lumenal space, likely posing constraints on diffusion of ER proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from measurements of ER tubule diameter and knowledge of bilayer thickness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "82601f77-418c-4cf3-bbb4-d3d0eb4e22df",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C33",
+      "claim": "The axonal ER structure may be a consequence of maximized synthesis of lipids, produced to sustain high growth rates during axon lengthening.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the ER is depleted of lumen whilst adopting highly curved tubular shapes indicates high local membrane surface-to-ER volume ratios, and suggests that the axonal ER structure may be a consequence of maximized synthesis of lipids, produced to sustain high growth rates during axon lengthening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from observations of ER structure and the high lipid demand for axon growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "1f55500d-178d-45a1-9699-193dd53bafef",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C34",
+      "claim": "A scarcity of potential ribosomes was observed within tomograms of growing axon shafts.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore noteworthy that we observed a scarcity of potential ribosomes within our tomograms of growing axon shafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by visual inspection and quantification of cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "8e1b7e76-ef0d-474f-a167-67c49a772b1f",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C35",
+      "claim": "On average two ribosome-like particles per \u00b5m^3 were found in axon shafts (SD = 3 particles, n = 31 tomograms).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to assess the occurrence of ribosomes quantitatively, we counted ribosome-like particles, both cytosolic and membrane-bound, and found on average two particles per \u00b5m3 in axon shafts (SD = 3 particles, n = 31 tomograms), 589 particles per \u00b5m3 in other neuronal processes (SD = 344 particles, n = 4 tomograms), and 2314 particles per \u00b5m3 in HeLa cells (SD = 977 particles, n = 5 tomograms) (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cryo-ET data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "513d005c-28b6-4653-be30-cc86b7686c59",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C36",
+      "claim": "589 ribosome-like particles per \u00b5m^3 were found in other neuronal processes (SD = 344 particles, n = 4 tomograms).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to assess the occurrence of ribosomes quantitatively, we counted ribosome-like particles, both cytosolic and membrane-bound, and found on average two particles per \u00b5m3 in axon shafts (SD = 3 particles, n = 31 tomograms), 589 particles per \u00b5m3 in other neuronal processes (SD = 344 particles, n = 4 tomograms), and 2314 particles per \u00b5m3 in HeLa cells (SD = 977 particles, n = 5 tomograms) (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cryo-ET data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "6d00c2a3-3793-4a25-bd72-e6c8f96aaa23",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C37",
+      "claim": "2314 ribosome-like particles per \u00b5m^3 were found in HeLa cells (SD = 977 particles, n = 5 tomograms).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to assess the occurrence of ribosomes quantitatively, we counted ribosome-like particles, both cytosolic and membrane-bound, and found on average two particles per \u00b5m3 in axon shafts (SD = 3 particles, n = 31 tomograms), 589 particles per \u00b5m3 in other neuronal processes (SD = 344 particles, n = 4 tomograms), and 2314 particles per \u00b5m3 in HeLa cells (SD = 977 particles, n = 5 tomograms) (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cryo-ET data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "501db66c-1192-4adc-b376-f9662b634da1",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C38",
+      "claim": "The local ribosome concentration in axon shafts is less than 3.5 nM, about 1000-fold lower than in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The local ribosome concentration in axon shafts is thus less than 3.5 nM, about 1000-fold lower than in HeLa cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calculation based on quantitative analysis of ribosome-like particles in cryo-ET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "75c5d6b2-35df-4b8c-9489-7300f975c334",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C39",
+      "claim": "The ribosome-like particles found in tomograms of axon shafts had an average diameter of 26.8 nm (SD = 3.7, N = 27).",
+      "claim_type": "EXPLICIT",
+      "source": "The ribosome-like particles found in tomograms of axon shafts had an average diameter of 26.8 nm (SD = 3.7, N = 27), in agreement with the dimensions of human ribosomes (Figure 4\u2014figure supplement 1B; Anger et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data and comparison to published dimensions of human ribosomes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "b5b6d813-ae95-455d-881f-7404ef016816",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C40",
+      "claim": "11 ribosome-like particles were in close proximity to ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "11 of them were in close proximity to ER membrane (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of cryo-ET data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "01b04b62-ea0a-4460-a895-6b4b19e54d1c",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C41",
+      "claim": "Axon shafts identified as SMI312+/MAP2- showed significantly lower ribosomal signal than dendrites (SMI312-/MAP2+).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the cryo-ET data, axon shafts identified as SMI312+/MAP2- showed significantly lower ribosomal signal than dendrites (SMI312-/MAP2+) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "1673c14d-0637-4a6d-b67a-bf2054f67f99",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C42",
+      "claim": "The large amounts of axonal ER had a minute number of ribosomes attached.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the large amounts of axonal ER had a minute number of ribosomes attached, supporting the idea that the ER has a primary function in lipid metabolism rather than protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of ribosome-like particles in cryo-ET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "f27b4d10-5541-4b03-9989-cf87b09e9caa",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C43",
+      "claim": "The ER has a primary function in lipid metabolism rather than protein synthesis in growing axon shafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the large amounts of axonal ER had a minute number of ribosomes attached, supporting the idea that the ER has a primary function in lipid metabolism rather than protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of extensive ER with few attached ribosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "69277485-ed60-4556-bfdd-c2109769e350",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C44",
+      "claim": "Cryo-ET studies of neurons have been conducted on rodent primary cells grown on EM grids.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, cryo-ET studies of neurons have been conducted on rodent primary cells grown on EM grids (Tao et al., 2018; Garvalov et al., 2006; Lu\u010di\u0107 et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "93e27d54-ebc1-4e17-8747-3e855eb19cba",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C45",
+      "claim": "Dissociated neurons exhibit a random pattern of neurites, where axons typically grow along dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Such dissociated neurons exhibit a random pattern of neurites, where axons typically grow along dendrites and do not form the directed long-range tracts seen in the context of tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about dissociated neuronal cultures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "503001b6-c927-4c3e-afdb-e3aed434ec4a",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C46",
+      "claim": "Cryo-EM of human neurons has so far remained out of reach.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cryo-EM of human neurons has so far remained out of reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the state of the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "e4dc4ce0-ab56-4df1-8b54-779c7e80fa27",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C47",
+      "claim": "The combination of human cerebral organoids with cryo-CLEM overcomes limitations of previous approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that these limitations can be overcome by the combination of human cerebral organoids with cryo-CLEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental approach and results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "79a62ade-7266-4e84-be48-81df0bd2a43e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C48",
+      "claim": "The organization of the cytoskeleton, in particular the dense microtubule bundles, likely reflects the importance of mechanical properties and cytoskeletal transport for projection of axons over long distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The organization of the cytoskeleton, in particular the dense microtubule bundles, likely reflects the importance of mechanical properties, such as rigidity, and of cytoskeletal transport for projection of axons over long distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from observations of cytoskeletal organization in cryo-ET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "066d4751-adea-470f-a0dd-62f0d3640c1e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C49",
+      "claim": "Growing axon shafts contain exclusively smooth ER, similarly to mature nervous tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing axon shafts also appear to contain exclusively smooth ER, similarly to mature nervous tissue depicted in textbook electron micrographs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by observations from cryo-ET data and comparison to established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "fc1bb58e-b22d-42f5-9d77-28c686dd7f00",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C50",
+      "claim": "The tight association of the ER with microtubules could reflect attachment needed to pull the ER along the extending axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the tight association of the ER with microtubules could reflect attachment needed to pull the ER along the extending axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on observations of ER-microtubule association.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "aa2d58e7-26f0-40a7-b777-4db84b231ce2",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C51",
+      "claim": "The tight association of the ER with microtubules could represent piercing of ER cisternae by microtubules that grow quickly along the extending axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, this arrangement could represent piercing of ER cisternae by microtubules that grow quickly along the extending axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing an alternative explanation for ER-microtubule association.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "7c413338-17dc-4955-a279-e234745dc0eb",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C52",
+      "claim": "Previous EM studies have reported clusters of ribosomes in the axon initial segment and growth cones.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous EM studies have reported clusters of ribosomes in the axon initial segment and growth cones (Bartlett and Banker, 1984; Tennyson, 1970; Yamada et al., 1971; Bunge, 1973; Steward and Ribak, 1986; Koenig et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "f45c2bb5-f52e-4188-b43b-cd142c55de02",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C53",
+      "claim": "Mature presynaptic termini harbor ribosomal components, consistent with the presence of a distal ribosome pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature presynaptic termini were shown to harbor ribosomal components, consistent with the presence of a distal ribosome pool, and metabolic labeling experiments demonstrated presynaptic protein synthesis (Hafner et al., 2019; Shigeoka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "a0d0eef9-e07b-4c50-8898-59d23d5520af",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C54",
+      "claim": "Metabolic labeling experiments demonstrated presynaptic protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature presynaptic termini were shown to harbor ribosomal components, consistent with the presence of a distal ribosome pool, and metabolic labeling experiments demonstrated presynaptic protein synthesis (Hafner et al., 2019; Shigeoka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "87f075d8-8420-4ed0-99a5-03b9d413b6b9",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C55",
+      "claim": "The shafts of developing axons specifically exhibit low ribosome numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal that the shafts of developing axons specifically exhibit low ribosome numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of ribosome-like particles in cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "04664f4c-d625-4b6b-a56d-1718fecb50d9",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C56",
+      "claim": "Different regions of the axon can exhibit very different supramolecular landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations complement previous findings of local translation at growth cones and presynaptic termini, and suggest that different regions of the axon can exhibit very different supramolecular landscapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the current findings and previous literature on local translation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "91fad06c-7514-487f-bf45-f25619902a6d",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C57",
+      "claim": "Biological processes in the axon initial segment, the growth cone, and presynaptic termini rely on local translation.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose a refined model in which biological processes in the axon initial segment, the growth cone, and presynaptic termini rely on local translation (Bartlett and Banker, 1984; Yamada et al., 1971; Tennyson, 1970; Bunge, 1973; Steward and Ribak, 1986; Koenig et al., 2000; Hafner et al., 2019; Shigeoka et al., 2016), while the axon shaft during growth is depleted of translational machinery and thus displays limited capacity for new protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on current findings and previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "034d8e49-b47a-4203-9017-223f0aebad3e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C58",
+      "claim": "The axon shaft during growth is depleted of translational machinery and thus displays limited capacity for new protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose a refined model in which biological processes in the axon initial segment, the growth cone, and presynaptic termini rely on local translation (Bartlett and Banker, 1984; Yamada et al., 1971; Tennyson, 1970; Bunge, 1973; Steward and Ribak, 1986; Koenig et al., 2000; Hafner et al., 2019; Shigeoka et al., 2016), while the axon shaft during growth is depleted of translational machinery and thus displays limited capacity for new protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on current findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "3ffaba5d-32c2-4ab8-9814-bcae5dbea8b0",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C59",
+      "claim": "Protein synthesis in the growth cone was previously shown to be used primarily for navigation and not for extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because protein synthesis in the growth cone was previously shown to be used primarily for navigation and not for extension (Campbell and Holt, 2001), ribosomal depletion along the shaft might represent a mechanism to desensitize this structure to exogenous guidance cues and ensure correct wiring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "87c8390d-a919-43ac-8521-946071ea9a9c",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C60",
+      "claim": "Ribosomal depletion along the shaft might represent a mechanism to desensitize this structure to exogenous guidance cues and ensure correct wiring.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because protein synthesis in the growth cone was previously shown to be used primarily for navigation and not for extension (Campbell and Holt, 2001), ribosomal depletion along the shaft might represent a mechanism to desensitize this structure to exogenous guidance cues and ensure correct wiring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a functional interpretation of ribosome depletion.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "d618864d-92a1-4dd9-aaf1-1470adf8c3c5",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C61",
+      "claim": "The combination of cryo-CLEM and human cerebral organoid technology is a powerful method to address the cell biology and architecture of neuronal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings demonstrate that the combination of cryo-CLEM and human cerebral organoid technology is a powerful method to address the cell biology and architecture of its compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental approach and results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "b986b2bc-f222-4d63-aca4-5af9f89eba46",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C62",
+      "claim": "This approach is not limited to axons and could be extended to other organoid-derived cell types as long as the preparation allows sample vitrification.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually this approach is not limited to axons and could be extended to other organoid-derived cell types as long as the preparation allows sample vitrification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing potential extensions of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "ef187bac-870a-4aab-af7c-f17081ed338f",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C63",
+      "claim": "This methodology could potentially be applied to blood vessel organoids to study ultrastructural aspects of vasculature development and vasculopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, this methodology could potentially be applied to blood vessel organoids (Wimmer et al., 2019) to study ultrastructural aspects of vasculature development and vasculopathy, since, like neurons, the developing vasculature extends long, thin structures that would be amenable to vitrification in the same manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a potential application of the methodology.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "99cf0f52-bba1-44c4-ab1c-826ba04f1fe5",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C64",
+      "claim": "One could place neural crest organoids in close proximity to EM grids to capture neural crest cells and study their ultrastructure during migration and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one could place neural crest organoids (Foltz et al., 2021) in close proximity to EM grids to capture neural crest cells and study their ultrastructure during migration and differentiation into different neural crest cell derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a potential application of the methodology.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "a36a6ae6-b99c-4944-b36a-b6cc2f03901d",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C65",
+      "claim": "The combination of cerebral organoid technology and cryo-ET provides a window into the architecture of the human axonal compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the combination of cerebral organoid technology and cryo-ET provides a window into the architecture of the human axonal compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental approach and results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "ac11d0e2-d7d4-4390-a459-89818cf0ee40",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C66",
+      "claim": "This methodology holds the potential to further our understanding of neuronal development, neurodegeneration and nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this methodology holds the potential to further our understanding of neuronal development, neurodegeneration and nerve injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing potential future applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "48b09d82-b662-4d48-9888-41ddbac07cec",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C67",
+      "claim": "High-pressure freezing followed by freeze-substitution results in improved preservation of mouse nervous tissue compared to chemical fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to chemical fixation, high-pressure freezing followed by freeze-substitution was shown to result in improved preservation of mouse nervous tissue, highlighting the importance of cryo-fixation for a more accurate interpretation of ultrastructural details (Korogod et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "754f0e60-95a0-4667-a6b6-d8c6d8f4921c",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C68",
+      "claim": "The combination of cryo-fixation with EM imaging at cryogenic temperatures is particularly suited to preserve the fine structure of neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of cryo-fixation with EM imaging at cryogenic temperatures is particularly suited to preserve the fine structure of neuronal cells (Lu\u010di\u0107 et al., 2007; Fern\u00e1ndez-Busnadiego et al., 2010; Zuber et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "7fe457f9-37a1-4c66-8b37-266af1be6b55",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C69",
+      "claim": "Recent methodological advances in cryo-ET and subtomogram averaging have enabled in situ structural studies of protein complexes within their cellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent methodological advances in cryo-ET and subtomogram averaging have enabled in situ structural studies of protein complexes within their cellular context (O'Reilly et al., 2020; Tegunov et al., 2021; Watanabe et al., 2020; Allegretti et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "59f0a002-a81f-4000-ad1e-e1be53adde2e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C70",
+      "claim": "Cerebral organoids provide the opportunity to study aspects of human neuronal physiology within the context of a complex 3D cellular milieu mimicking the architecture of the developing brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebral organoids provide the opportunity to study aspects of human neuronal physiology within the context of a complex 3D cellular milieu mimicking the architecture of the developing brain (Birey et al., 2017; Lancaster et al., 2017; Quadrato et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "c88dc2a2-9615-4dda-a593-1e09caed6850",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C71",
+      "claim": "An optimized air-liquid interface slice culture paradigm enables long-term culture of cerebral organoids and promotes the establishment of axon tracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we developed an optimized air-liquid interface slice culture paradigm (Giandomenico et al., 2019) that enables long-term culture of cerebral organoids and promotes the establishment of axon tracts, consisting of dozens or, in thicker tracts, even up to thousands of individual axons bundled together, able to form functional connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "1b630403-b0ac-4acb-931d-d233411c312f",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C72",
+      "claim": "Corticofugal axon tracts project over long distances of several millimeters from the organoid.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cell bodies are part of the organoid tissue, corticofugal (deep-layer identity) axon tracts project over long distances of several millimeters from the organoid (Giandomenico et al., 2019), effectively segregating the axons from dendrites and somata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "810c3052-678b-4938-9520-302834416f0e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C73",
+      "claim": "The separation between plasma membranes of adjacent axons within tracts was remarkably narrow.",
+      "claim_type": "EXPLICIT",
+      "source": "While the separation between plasma membranes of adjacent axons within tracts was remarkably narrow, we found no significant difference between cell-cell contacts from fGFP and L1CAM-GFP overexpressing ALI-COs (fGFP: mean = 5.63 nm, SD = 0.65 nm, N = 25 and L1CAM-GFP: mean = 5.29 nm, SD = 0.58 nm, N = 9) (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements from cryo-ET data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "48e77b1a-8811-4d4f-b275-eef78b72f3b6",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C74",
+      "claim": "No significant difference was found between cell-cell contacts from fGFP and L1CAM-GFP overexpressing ALI-COs (fGFP: mean = 5.63 nm, SD = 0.65 nm, N = 25 and L1CAM-GFP: mean = 5.29 nm, SD = 0.58 nm, N = 9).",
+      "claim_type": "EXPLICIT",
+      "source": "While the separation between plasma membranes of adjacent axons within tracts was remarkably narrow, we found no significant difference between cell-cell contacts from fGFP and L1CAM-GFP overexpressing ALI-COs (fGFP: mean = 5.63 nm, SD = 0.65 nm, N = 25 and L1CAM-GFP: mean = 5.29 nm, SD = 0.58 nm, N = 9) (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of measurements from cryo-ET data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "fd1272e6-efc5-4d34-af39-f9becadf746c",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C75",
+      "claim": "86% of fGFP tomograms (N = 22) contained at least one instance in which the ER was within approximately 30 nm distance from the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency with which we observed such contact sites was similar in both data sets (86 % of fGFP tomograms (N = 22) and 90 % of GFP-ESYT1 tomograms (N = 10) contained at least one instance in which the ER was within approximately 30 nm distance from the plasma membrane) (examples in Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of ER-plasma membrane contact sites in cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "1a0e68b2-fde6-4aa6-89b6-574387f1cbdc",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C76",
+      "claim": "90% of GFP-ESYT1 tomograms (N = 10) contained at least one instance in which the ER was within approximately 30 nm distance from the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency with which we observed such contact sites was similar in both data sets (86 % of fGFP tomograms (N = 22) and 90 % of GFP-ESYT1 tomograms (N = 10) contained at least one instance in which the ER was within approximately 30 nm distance from the plasma membrane) (examples in Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of ER-plasma membrane contact sites in cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "e7e98c92-63a1-4b21-8137-0e012583a9bc",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C77",
+      "claim": "Membrane contact sites between the ER and the plasma membrane likely represent sites for transfer of newly synthesized lipid molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed membrane contact sites between the ER and the plasma membrane, likely representing sites for transfer of newly synthesized lipid molecules, as lipid flux is a major function of membrane contact sites (Levine, 2004; Prinz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from observations and supported by citations to published literature on membrane contact site function.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "ee4b95f4-7e90-4a69-8ddd-e1909fb0a997",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C78",
+      "claim": "Lipid flux is a major function of membrane contact sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed membrane contact sites between the ER and the plasma membrane, likely representing sites for transfer of newly synthesized lipid molecules, as lipid flux is a major function of membrane contact sites (Levine, 2004; Prinz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "4e8840cd-3e80-46ab-a6b6-1231257c540a",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "claim_id": "C79",
+      "claim": "The time from detachment until completed cryo-fixation was kept as short as possible and within less than 20 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Detachment and plunge-freezing were coordinated between two experimenters who sequentially handled the grids, to keep the time from detachment until completed cryo-fixation as short as possible and within less than 20 s (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fd6deeda-b269-4ab7-b22f-c078ab686979",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Axon tracts from ALI-COs were identified by SMI312+/MAP2- staining and exhibited rapid growth with an average extension speed of 691 nm/min and peak speeds approaching 3000 nm/min, comparable to chicken dorsal-root ganglia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide converging evidence from immunofluorescence (C1) and live imaging measurements (C2, C3) that axon tracts can be identified and their growth rates quantified. The comparison to published data (C4) provides validation. The measurements are based on direct observation with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "ec1078fc-20c8-4d23-99b2-0ec346746c91",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cryo-ET revealed detailed cytoskeletal and organellar architecture in axon shafts, including unbranched actin filaments (7-9 nm), microtubules with visible protofilaments and intraluminal densities, neurofilaments (~10 nm), extensive ER closely associated with microtubules, and membrane contact sites between ER-mitochondria and ER-plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C12 describe ultrastructural observations from cryo-ET data with measurements consistent with known structural parameters from literature. The identification of structures is based on size, morphology, and comparison to established structural characteristics. The data provide direct visualization of axonal architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "3e6e0e03-1c91-4eb4-af48-8c6b609fb3af",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "No obvious ultrastructural differences were observed between fGFP+ and GFP-negative axons, and cell-cell contacts between adjacent axons were remarkably narrow (~5.3-5.6 nm) with no significant difference between fGFP and L1CAM-GFP overexpressing conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C73, C74 demonstrate that the fluorescent labeling approach does not introduce obvious artifacts and provide quantitative measurements of axon-axon contacts. Statistical testing (unpaired t-test, p=0.1718) supports the lack of significant difference between conditions. Sample sizes are modest (N=25 and N=9) but adequate for the comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "9f8bfac5-1320-43bf-b425-3cd591ed998e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Vesicles in axon shafts had mean diameters around 50-52 nm regardless of association with cytoskeletal elements, with approximately 17% associated with microtubules and 14% with actin. These dimensions are similar to vesicles in mouse dorsal root ganglia neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 provide quantitative analysis of vesicle populations (N=290 total) with measurements of size and cytoskeletal associations. The statistical analysis (one-way ANOVA, p=0.9292) appropriately shows no significant size difference between vesicle populations. Comparison to published mouse data provides validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "c4cfdda6-cc01-4126-9e21-0d8d39bd70c8",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Subtomogram averaging revealed that the majority of microtubule bundles had uniform, parallel arrangement with predominantly 13 protofilaments (26/28 microtubules), consistent with the predominant architecture in human cells, and showing the typical 4 nm tubulin repeat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 describe structural analysis by subtomogram averaging with clear quantification (N=28 microtubules analyzed). The findings are consistent with published literature on human microtubule structure. The authors appropriately note the potential influence of SiR-tubulin labeling as a caveat. The 4 nm repeat observation validates the structural analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "d05b3974-cf72-4a2c-8e9a-e4ea80e9513c",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Based on plasma membrane surface area measurements (1.24 \u00d7 10^6 nm\u00b2/\u03bcm axon length) and established lipid density (5 \u00d7 10^6 lipids/\u03bcm\u00b2), the estimated lipid supply required to sustain average axon growth is approximately 4.3 \u00d7 10^6 lipid molecules/min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 present a calculation based on measured membrane area (N=14, with high variability SD=7.3\u00d710^5) and established lipid density from literature. The calculation is straightforward and mathematically sound. However, the high variability in membrane area measurements and the assumption that all membrane growth occurs at the measured rate introduces uncertainty. The estimate provides a useful order-of-magnitude approximation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "8d20bb67-0cec-4aaa-a4ef-74f6af48c50b",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ER tubules in axon shafts are extremely narrow (mean 10.8 nm outer diameter, some <10 nm), approximately half the diameter of ER in HeLa cells (20.4 nm), containing minimal lumenal space. This structure suggests a role in maximized lipid synthesis to support high growth rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 provide quantitative measurements (82 measurements in axons, 24 in HeLa cells) with statistical comparison (Welch's t-test, p<0.0001). The inference about minimal lumenal space (C32) is reasonable given bilayer thickness. The functional interpretation (C33) is speculative but logically follows from the structural observations and lipid demand calculations. The comparison to mouse axons and HeLa cells provides important context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Growing axon shafts exhibit remarkably low ribosome density (~2 particles/\u03bcm\u00b3, <3.5 nM) compared to other neuronal processes (589/\u03bcm\u00b3) and HeLa cells (2314/\u03bcm\u00b3), with few ribosomes associated with the extensive ER. This suggests the ER functions primarily in lipid metabolism rather than protein synthesis, and that axon shafts have limited translational capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C43 provide extensive quantitative analysis from cryo-ET (31 axon tomograms, 4 other processes, 5 HeLa cells) validated by immunofluorescence for 5 ribosomal proteins (C41). Statistical testing (Mann-Whitney, p<0.0001 for all ribosomal proteins) strongly supports the difference. The authors appropriately note that some particles may not be ribosomes, making their estimate conservative. The functional interpretation (C43) is reasonable given the data, though it remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "a7fdeff1-6e0b-4b3d-b4cc-71f35ba5ee06",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The combination of human cerebral organoid technology with cryo-CLEM overcomes previous limitations of cryo-ET studies on dissociated rodent neurons and provides a powerful method to study the architecture of human axonal compartments in a near-native tissue context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C61, C65 describe the methodological advance and its advantages over prior approaches. The claims are supported by the successful acquisition of high-quality cryo-ET data from identified human axons within tissue-like tracts. The comparison to prior work (C44) is accurate based on citations. The demonstration of the method's capabilities throughout the manuscript validates these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "c0a5a7ab-8d47-46fb-9dfa-554fb1287e53",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The dense microtubule bundles likely reflect mechanical and transport requirements for long-distance axon projection. Growing axon shafts contain exclusively smooth ER, and the tight ER-microtubule association could reflect either attachment for pulling ER along the extending axon or piercing of ER cisternae by rapidly growing microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C51 present interpretations and speculations about functional significance. While C48 and C49 are reasonable inferences from the structural data, C50 and C51 are explicitly speculative alternative hypotheses that cannot be distinguished with the current data. The claims appropriately use cautious language ('likely', 'could reflect', 'alternatively') but lack direct experimental support for the proposed mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "66a78367-1c4e-46f6-9744-76ef69e79568",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings reveal that developing axon shafts specifically exhibit low ribosome numbers, contrasting with previous reports of ribosomes in axon initial segments, growth cones, and presynaptic termini. This supports a refined model where these specialized regions rely on local translation while the axon shaft is depleted of translational machinery during growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 integrate current findings with prior literature to propose a refined spatial model of translation in axons. The current data (C55) strongly support low ribosome numbers in shafts. The prior literature (C52-C54) is appropriately cited. The proposed model (C57-C58) is a reasonable synthesis, though it remains a model requiring further validation. The distinction between axon compartments is an important conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "ab66e584-3728-4144-9517-08f6ecdb6a8a",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Since protein synthesis in growth cones is used primarily for navigation rather than extension, ribosomal depletion along the shaft might desensitize this structure to exogenous guidance cues and ensure correct wiring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 present a speculative functional interpretation. While C59 accurately cites prior work, C60 is a hypothesis about the functional significance of ribosome depletion that lacks direct experimental support. The proposed mechanism is plausible but remains speculative and would require additional experiments to test.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "c8edb8b2-9dfd-4ec5-97c2-e98e06ca12fa",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The approach could potentially be extended to other organoid-derived cell types and systems, including blood vessel organoids and neural crest organoids, and holds potential for understanding neuronal development, neurodegeneration, and nerve injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C64, C66 are speculative proposals for future applications. While the suggestions are reasonable extensions of the demonstrated methodology, they have not been tested. These represent potential future directions rather than established results. The claims appropriately use cautious language ('could potentially', 'holds the potential').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "135364ca-1b53-46a6-922b-14da2266f598",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has established that cryo-fixation provides superior preservation compared to chemical fixation, cryo-ET enables in situ structural studies, cerebral organoids provide a 3D tissue context, and the ALI-CO system promotes formation of long-range axon tracts projecting several millimeters from the organoid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 accurately summarize prior work from the literature and the authors' previous publications. These claims provide important context for the current study and are appropriately supported by citations. The claims about the ALI-CO system (C71-C72) cite the authors' previous work and are validated by the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "94425d20-820d-419d-81d4-be427d6dbf0e",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ER-plasma membrane contact sites were observed with similar frequency in fGFP (86%, N=22) and GFP-ESYT1 (90%, N=10) expressing axons, likely representing sites for transfer of newly synthesized lipids, as lipid flux is a major function of membrane contact sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 provide quantitative observations of membrane contact sites with adequate sample sizes. The functional interpretation (C77) is reasonable and supported by established knowledge about membrane contact sites (C78). The similar frequency between conditions suggests the observations reflect endogenous biology rather than artifacts of ESYT1 overexpression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    },
+    {
+      "id": "9989e614-4b24-4be5-ae0d-3399a58d583a",
+      "content_id": "ebb8afa3-a06f-4aed-8f99-6369edf02c34",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The time from axon tract detachment to completed cryo-fixation was kept within less than 20 seconds through coordinated effort between two experimenters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 describes a critical methodological detail for sample preservation. The rapid freezing time is important for maintaining near-native structure and is supported by the description of the coordinated procedure. The quality of the resulting cryo-ET data validates the effectiveness of this approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:00.301388Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d51456d0-2507-434b-9e80-f5fbe7d95f68",
+      "result_id": "fd6deeda-b269-4ab7-b22f-c078ab686979"
+    },
+    {
+      "claim_id": "feb2cf1b-6d54-44ad-bae3-0acededaff10",
+      "result_id": "fd6deeda-b269-4ab7-b22f-c078ab686979"
+    },
+    {
+      "claim_id": "2318d38e-bab4-4552-a3e5-179598add15f",
+      "result_id": "fd6deeda-b269-4ab7-b22f-c078ab686979"
+    },
+    {
+      "claim_id": "2fe6e866-1c55-40e5-bc04-51858cf87896",
+      "result_id": "fd6deeda-b269-4ab7-b22f-c078ab686979"
+    },
+    {
+      "claim_id": "9fc41161-0de1-4f43-b58a-8913eda532e0",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "df3c70ca-a28a-4c62-a43e-4807fd20bbff",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "0e958546-cd42-4f72-aa18-b09d7603298a",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "a68ab279-0246-46f4-bc52-acf75be7fb3f",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "27ae66a4-3a85-4fbf-ba1f-30919133e236",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "aaf644bb-420d-441b-92cd-1b6cd214da21",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "638a7375-0761-4cb6-96d2-389ce411ac03",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "e7205bdd-80ff-4232-9314-a92403da36d9",
+      "result_id": "ec1078fc-20c8-4d23-99b2-0ec346746c91"
+    },
+    {
+      "claim_id": "23ce4d26-e09a-48e4-9be0-c2adf5a7ef76",
+      "result_id": "3e6e0e03-1c91-4eb4-af48-8c6b609fb3af"
+    },
+    {
+      "claim_id": "810c3052-678b-4938-9520-302834416f0e",
+      "result_id": "3e6e0e03-1c91-4eb4-af48-8c6b609fb3af"
+    },
+    {
+      "claim_id": "48e77b1a-8811-4d4f-b275-eef78b72f3b6",
+      "result_id": "3e6e0e03-1c91-4eb4-af48-8c6b609fb3af"
+    },
+    {
+      "claim_id": "751e7f14-566f-45dd-9ea8-53aa2a1d16e7",
+      "result_id": "9f8bfac5-1320-43bf-b425-3cd591ed998e"
+    },
+    {
+      "claim_id": "85da9687-6d64-43ea-8169-f8658561aeb6",
+      "result_id": "9f8bfac5-1320-43bf-b425-3cd591ed998e"
+    },
+    {
+      "claim_id": "12cf80c4-f43f-49f9-846a-a6ae873fab74",
+      "result_id": "9f8bfac5-1320-43bf-b425-3cd591ed998e"
+    },
+    {
+      "claim_id": "9a914a26-8c6d-4511-ba86-770b5e045076",
+      "result_id": "9f8bfac5-1320-43bf-b425-3cd591ed998e"
+    },
+    {
+      "claim_id": "a4c91add-11e8-4a9c-b6ce-0f4d80bd555e",
+      "result_id": "9f8bfac5-1320-43bf-b425-3cd591ed998e"
+    },
+    {
+      "claim_id": "57faa86e-3d61-4165-b12e-d0101a7caa48",
+      "result_id": "9f8bfac5-1320-43bf-b425-3cd591ed998e"
+    },
+    {
+      "claim_id": "98ac9560-0176-4b2e-a405-1d6bef751885",
+      "result_id": "c4cfdda6-cc01-4126-9e21-0d8d39bd70c8"
+    },
+    {
+      "claim_id": "3485cc0c-38a3-4d6b-b5ff-5910b2bca169",
+      "result_id": "c4cfdda6-cc01-4126-9e21-0d8d39bd70c8"
+    },
+    {
+      "claim_id": "391b1521-cd9c-463a-affa-9e129d5b5332",
+      "result_id": "c4cfdda6-cc01-4126-9e21-0d8d39bd70c8"
+    },
+    {
+      "claim_id": "9d81d9b2-5514-4923-a7ee-29a1387a64a2",
+      "result_id": "c4cfdda6-cc01-4126-9e21-0d8d39bd70c8"
+    },
+    {
+      "claim_id": "d5a4c184-bce4-41a1-a600-2108ba9ff56a",
+      "result_id": "c4cfdda6-cc01-4126-9e21-0d8d39bd70c8"
+    },
+    {
+      "claim_id": "f32e5f92-c2f6-4e99-a531-400d1e3e7302",
+      "result_id": "d05b3974-cf72-4a2c-8e9a-e4ea80e9513c"
+    },
+    {
+      "claim_id": "41ff8c61-c36f-4a1c-b6a0-18087ef68df5",
+      "result_id": "d05b3974-cf72-4a2c-8e9a-e4ea80e9513c"
+    },
+    {
+      "claim_id": "0316e6e2-b912-49b5-920e-eb9ee07ae9a3",
+      "result_id": "d05b3974-cf72-4a2c-8e9a-e4ea80e9513c"
+    },
+    {
+      "claim_id": "bfc61b14-b9b0-49a0-968f-f5f78207423d",
+      "result_id": "8d20bb67-0cec-4aaa-a4ef-74f6af48c50b"
+    },
+    {
+      "claim_id": "38b22689-8ac5-4834-ab3c-6878573e7537",
+      "result_id": "8d20bb67-0cec-4aaa-a4ef-74f6af48c50b"
+    },
+    {
+      "claim_id": "be74e729-54d6-45bc-9132-4734555a4fc7",
+      "result_id": "8d20bb67-0cec-4aaa-a4ef-74f6af48c50b"
+    },
+    {
+      "claim_id": "c89c797e-80b8-44da-a784-0fd1a4623db4",
+      "result_id": "8d20bb67-0cec-4aaa-a4ef-74f6af48c50b"
+    },
+    {
+      "claim_id": "cd143d47-f6a6-44f8-b745-421b98e8db23",
+      "result_id": "8d20bb67-0cec-4aaa-a4ef-74f6af48c50b"
+    },
+    {
+      "claim_id": "82601f77-418c-4cf3-bbb4-d3d0eb4e22df",
+      "result_id": "8d20bb67-0cec-4aaa-a4ef-74f6af48c50b"
+    },
+    {
+      "claim_id": "1f55500d-178d-45a1-9699-193dd53bafef",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "8e1b7e76-ef0d-474f-a167-67c49a772b1f",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "513d005c-28b6-4653-be30-cc86b7686c59",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "6d00c2a3-3793-4a25-bd72-e6c8f96aaa23",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "501db66c-1192-4adc-b376-f9662b634da1",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "75c5d6b2-35df-4b8c-9489-7300f975c334",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "b5b6d813-ae95-455d-881f-7404ef016816",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "01b04b62-ea0a-4460-a895-6b4b19e54d1c",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "1673c14d-0637-4a6d-b67a-bf2054f67f99",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "f27b4d10-5541-4b03-9989-cf87b09e9caa",
+      "result_id": "ed6bf4dc-30d2-40cc-97ab-996e678d7c1a"
+    },
+    {
+      "claim_id": "69277485-ed60-4556-bfdd-c2109769e350",
+      "result_id": "a7fdeff1-6e0b-4b3d-b4cc-71f35ba5ee06"
+    },
+    {
+      "claim_id": "93e27d54-ebc1-4e17-8747-3e855eb19cba",
+      "result_id": "a7fdeff1-6e0b-4b3d-b4cc-71f35ba5ee06"
+    },
+    {
+      "claim_id": "503001b6-c927-4c3e-afdb-e3aed434ec4a",
+      "result_id": "a7fdeff1-6e0b-4b3d-b4cc-71f35ba5ee06"
+    },
+    {
+      "claim_id": "e4dc4ce0-ab56-4df1-8b54-779c7e80fa27",
+      "result_id": "a7fdeff1-6e0b-4b3d-b4cc-71f35ba5ee06"
+    },
+    {
+      "claim_id": "d618864d-92a1-4dd9-aaf1-1470adf8c3c5",
+      "result_id": "a7fdeff1-6e0b-4b3d-b4cc-71f35ba5ee06"
+    },
+    {
+      "claim_id": "a36a6ae6-b99c-4944-b36a-b6cc2f03901d",
+      "result_id": "a7fdeff1-6e0b-4b3d-b4cc-71f35ba5ee06"
+    },
+    {
+      "claim_id": "79a62ade-7266-4e84-be48-81df0bd2a43e",
+      "result_id": "c0a5a7ab-8d47-46fb-9dfa-554fb1287e53"
+    },
+    {
+      "claim_id": "066d4751-adea-470f-a0dd-62f0d3640c1e",
+      "result_id": "c0a5a7ab-8d47-46fb-9dfa-554fb1287e53"
+    },
+    {
+      "claim_id": "fc1bb58e-b22d-42f5-9d77-28c686dd7f00",
+      "result_id": "c0a5a7ab-8d47-46fb-9dfa-554fb1287e53"
+    },
+    {
+      "claim_id": "aa2d58e7-26f0-40a7-b777-4db84b231ce2",
+      "result_id": "c0a5a7ab-8d47-46fb-9dfa-554fb1287e53"
+    },
+    {
+      "claim_id": "7c413338-17dc-4955-a279-e234745dc0eb",
+      "result_id": "66a78367-1c4e-46f6-9744-76ef69e79568"
+    },
+    {
+      "claim_id": "f45c2bb5-f52e-4188-b43b-cd142c55de02",
+      "result_id": "66a78367-1c4e-46f6-9744-76ef69e79568"
+    },
+    {
+      "claim_id": "a0d0eef9-e07b-4c50-8898-59d23d5520af",
+      "result_id": "66a78367-1c4e-46f6-9744-76ef69e79568"
+    },
+    {
+      "claim_id": "87f075d8-8420-4ed0-99a5-03b9d413b6b9",
+      "result_id": "66a78367-1c4e-46f6-9744-76ef69e79568"
+    },
+    {
+      "claim_id": "04664f4c-d625-4b6b-a56d-1718fecb50d9",
+      "result_id": "66a78367-1c4e-46f6-9744-76ef69e79568"
+    },
+    {
+      "claim_id": "91fad06c-7514-487f-bf45-f25619902a6d",
+      "result_id": "66a78367-1c4e-46f6-9744-76ef69e79568"
+    },
+    {
+      "claim_id": "034d8e49-b47a-4203-9017-223f0aebad3e",
+      "result_id": "66a78367-1c4e-46f6-9744-76ef69e79568"
+    },
+    {
+      "claim_id": "3ffaba5d-32c2-4ab8-9814-bcae5dbea8b0",
+      "result_id": "ab66e584-3728-4144-9517-08f6ecdb6a8a"
+    },
+    {
+      "claim_id": "87c8390d-a919-43ac-8521-946071ea9a9c",
+      "result_id": "ab66e584-3728-4144-9517-08f6ecdb6a8a"
+    },
+    {
+      "claim_id": "b986b2bc-f222-4d63-aca4-5af9f89eba46",
+      "result_id": "c8edb8b2-9dfd-4ec5-97c2-e98e06ca12fa"
+    },
+    {
+      "claim_id": "ef187bac-870a-4aab-af7c-f17081ed338f",
+      "result_id": "c8edb8b2-9dfd-4ec5-97c2-e98e06ca12fa"
+    },
+    {
+      "claim_id": "99cf0f52-bba1-44c4-ab1c-826ba04f1fe5",
+      "result_id": "c8edb8b2-9dfd-4ec5-97c2-e98e06ca12fa"
+    },
+    {
+      "claim_id": "ac11d0e2-d7d4-4390-a459-89818cf0ee40",
+      "result_id": "c8edb8b2-9dfd-4ec5-97c2-e98e06ca12fa"
+    },
+    {
+      "claim_id": "48b09d82-b662-4d48-9888-41ddbac07cec",
+      "result_id": "135364ca-1b53-46a6-922b-14da2266f598"
+    },
+    {
+      "claim_id": "754f0e60-95a0-4667-a6b6-d8c6d8f4921c",
+      "result_id": "135364ca-1b53-46a6-922b-14da2266f598"
+    },
+    {
+      "claim_id": "7fe457f9-37a1-4c66-8b37-266af1be6b55",
+      "result_id": "135364ca-1b53-46a6-922b-14da2266f598"
+    },
+    {
+      "claim_id": "59f0a002-a81f-4000-ad1e-e1be53adde2e",
+      "result_id": "135364ca-1b53-46a6-922b-14da2266f598"
+    },
+    {
+      "claim_id": "c88dc2a2-9615-4dda-a593-1e09caed6850",
+      "result_id": "135364ca-1b53-46a6-922b-14da2266f598"
+    },
+    {
+      "claim_id": "1b630403-b0ac-4acb-931d-d233411c312f",
+      "result_id": "135364ca-1b53-46a6-922b-14da2266f598"
+    },
+    {
+      "claim_id": "fd1272e6-efc5-4d34-af39-f9becadf746c",
+      "result_id": "94425d20-820d-419d-81d4-be427d6dbf0e"
+    },
+    {
+      "claim_id": "1a0e68b2-fde6-4aa6-89b6-574387f1cbdc",
+      "result_id": "94425d20-820d-419d-81d4-be427d6dbf0e"
+    },
+    {
+      "claim_id": "e7e98c92-63a1-4b21-8137-0e012583a9bc",
+      "result_id": "94425d20-820d-419d-81d4-be427d6dbf0e"
+    },
+    {
+      "claim_id": "ee4b95f4-7e90-4a69-8ddd-e1909fb0a997",
+      "result_id": "94425d20-820d-419d-81d4-be427d6dbf0e"
+    },
+    {
+      "claim_id": "4e8840cd-3e80-46ab-a6b6-1231257c540a",
+      "result_id": "9989e614-4b24-4be5-ae0d-3399a58d583a"
+    }
+  ],
+  "comparisons": []
+}

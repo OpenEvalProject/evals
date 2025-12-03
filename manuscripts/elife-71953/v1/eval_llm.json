@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14"
+    ],
+    "result": "Aspirin directly affects tumor cell kinetics by reducing cell division rates and increasing cell death rates at physiologically relevant concentrations, as demonstrated in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C14 are consistently supported by the authors' experimental work (Shimura et al., 2020; Zumwalt et al., 2017). The effects are documented with specific fold-changes in Table 1, providing quantitative evidence for these kinetic alterations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A mathematical model incorporating inter-crypt competition is necessary to accurately fit advanced adenoma age-incidence curves; models without competition fail to reproduce epidemiological data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 demonstrate through systematic model fitting that linear models without competition yield unrealistic predictions (zero or excessively steep incidence curves). Claim C4 and C27 show that including competition with carrying capacity parameters resolves this issue and produces good fits across biologically plausible parameter ranges (Figure 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39"
+    ],
+    "result": "Aspirin-induced changes in cellular fitness within experimentally observed ranges can account for the 10-50% reduction in advanced adenoma incidence observed in epidemiological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38, and C39 represent the central conclusion linking experimental kinetic measurements to population-level outcomes. The modeling demonstrates that experimentally measured fitness changes (Table 1) produce predicted risk reductions (0.35-0.80 relative risk, Figure 4d) consistent with epidemiological observations from Chan et al., 2004 (C32, C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The APC inactivation pathway is the predominant route to advanced adenoma formation, determined primarily by crypt fission rates and carrying capacity parameters rather than mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by model analysis shown in Figure 3. The finding that pathway dominance depends on fission rates (not mutation rates) is consistent with Paterson et al., 2020. The model predicts hundreds of APC-/- crypts versus rare KRAS+ crypts, supporting APC pathway predominance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Model predictions for aspirin's dose-dependent protective effect match epidemiological data, with relative risks ranging from 0.35-0.80 for high doses and 0.6-0.9 for intermediate doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 demonstrate quantitative agreement between model predictions (Figure 4d) and Chan et al., 2004 data. The dose-response relationship is preserved across different aspirin doses, with appropriate relative risk ranges for each dose category.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Aspirin's effect on inter-crypt dynamics (fission and death rates) is essential to explain epidemiologically observed risk reductions; intra-crypt effects alone are insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by comparison of model variants (Appendix 1-figure 15). Models with only intra-crypt effects produce minimal risk reduction (few percent), while including inter-crypt dynamics yields substantial reductions consistent with epidemiological data. This is biologically plausible given that crypt dynamics drive disease development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Aspirin's protective effect depends strongly on age at treatment initiation, with greater risk reduction when treatment starts earlier, and protection persists decades after treatment cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are demonstrated in Figure 4. Relative risk varies from ~0.4 (treatment at age 20) to ~0.8 (later treatment). The persistent effect after treatment cessation is a model prediction consistent with the biological mechanism of preventing early mutational events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The ASPREE trial findings of no significant cancer incidence reduction but increased mortality in elderly aspirin users are consistent with model predictions showing diminished protective effects when treatment begins at older ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 appropriately interpret ASPREE trial results in light of the model. The model predicts reduced efficacy with late-age treatment initiation (C35), consistent with ASPREE's null incidence finding (C40). The interpretation is appropriately cautious, noting the model only addresses incidence, not mortality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Aspirin-treated tumors may be more evolved at detection due to increased cell turnover, potentially explaining higher mortality rates and more advanced cancer stages observed in ASPREE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 present theoretical reasoning about tumor evolution under aspirin treatment but are speculative (C44 explicitly marked as speculation). While C45-C46 cite ASPREE data on metastasis and stage 4 cancers supporting this hypothesis, the causal mechanism remains unproven. The model does not simulate post-adenoma tumor evolution, limiting direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The model assumes a two-hit pathway to advanced adenomas involving APC inactivation (loss-of-function, mutation rate 10^-7) and KRAS activation (gain-of-function, mutation rate 10^-9), with specific associations to adenoma stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 describe well-established model assumptions based on colorectal cancer biology. The two-hit hypothesis for tumor suppressors (C17) is standard knowledge. Mutation rates (C18-C19) and genotype-phenotype associations (C20-C22) are appropriately cited from literature. These form a reasonable biological foundation for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The mathematical model tracks six crypt populations defined by APC and KRAS mutational status, allowing flexible ordering of mutational events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 accurately describe the model structure shown in Figure 1. The six-population framework with flexible mutation ordering is clearly defined and appropriately accommodates biological uncertainty about pathway sequences. This is a straightforward methodological description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model uses colonic crypts as the basic unit because crypts contain few stem cells and are likely homogeneous for driver mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 justify the crypt-level modeling approach based on established biology (Nicholson et al., 2018; Humphries and Wright, 2008). The reasoning that few stem cells per crypt leads to clonal homogeneity (C56) is a reasonable inference supported by population genetics principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mutated crypt types have selective advantages and undergo crypt fission at rates reported in literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe model parameters based on literature values (Paterson et al., 2020; Nicholson et al., 2018; Humphries et al., 2013; Baker et al., 2014). These are appropriately cited biological assumptions that parameterize the model with experimentally derived values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Mathematical approximations for adenoma incidence were validated against stochastic Gillespie simulations with excellent agreement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 describes appropriate model validation methodology. Comparing deterministic approximations to stochastic simulations is standard practice for verifying mathematical models. The reported excellent agreement (detailed in Appendix 1) supports the validity of the approximations used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Including adenoma growth phase in simulations (rather than stopping at first type-6 crypt) significantly changed fitted parameter values while maintaining qualitative results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 identifies an important methodological consideration. The finding that including growth dynamics affects quantitative parameter estimates highlights the importance of modeling the complete biological process. This distinguishes the current work from some previous models and improves quantitative accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The model assumes stem cell removal comprises 90% differentiation and 10% apoptosis, with aspirin affecting only the apoptosis component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 describe a specific modeling assumption about how aspirin affects cell death. While the 90/10 split is stated as an assumption, no citation or experimental justification is provided for these specific proportions. This assumption significantly impacts how experimental death rate increases translate to fitness changes (Table 1), but its biological basis is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The model assumes aspirin reduces crypt fission rates and increases crypt death rates based on the biological rationale that these processes are connected to individual cell division and death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe modeling assumptions with partial experimental support. While Fischer et al., 2014 data on sulindac supports the crypt fission assumption (C71), the specific quantitative relationship between cellular and crypt-level parameters (C72-C73) involves biological reasoning rather than direct measurement. The assumptions are plausible but involve extrapolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study used combined advanced adenoma and colorectal cancer incidence data from Brenner et al., 2014, assuming CRC patients had already developed advanced adenomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 describe the epidemiological data source and methodological choices for model fitting. The decision to combine advanced adenoma and CRC incidence (C75) is justified by the adenoma-carcinoma sequence (C76). This is a reasonable approach given the model's focus on advanced adenoma formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Epidemiological studies demonstrate aspirin's protective effect against colorectal cancer and adenomas, with 10-50% incidence reductions depending on dose and duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 summarize established epidemiological findings from multiple cited studies (CAPP2 trial, Chan et al., 2004, and others). These provide the empirical context and target outcomes that the modeling study aims to explain. The claims are appropriately cited and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Colorectal cancer affects about 5% of the US population, and aspirin is a COX-2 inhibiting NSAID.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 provide basic epidemiological and pharmacological background information, appropriately cited (Siegel et al., 2020; Goel et al., 2003). These are established facts providing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Inflammation and microbiome composition may contribute to aspirin's protective effects through microenvironmental mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 acknowledge alternative mechanisms beyond direct cellular effects. These are appropriately cited (Itzkowitz and Yio, 2004; Prizment et al., 2020; Brennan et al., 2021; Zhao et al., 2020) and represent important context. The authors appropriately note these mechanisms are not included in their model but may contribute to observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Aspirin can increase the probability that newly generated tumor cells fail to establish clonal expansion and go extinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 describes a theoretical prediction from previous modeling work (Wodarz et al., 2017). This represents an established theoretical framework that motivates the current study's focus on cellular kinetics and extinction probabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "KRAS is mutated in only about 43% of non-hypermutated colorectal tumors, indicating pathway heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 cites TCGA data (Network, 2012) to acknowledge biological heterogeneity. The authors appropriately note this limitation and explain that their model applies to pathways involving loss-of-function and gain-of-function mutations regardless of specific gene identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Sulindac, a related NSAID, inhibited APC-deficient crypt fission and reduced adenoma numbers in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 cites experimental evidence (Fischer et al., 2014) supporting the biological plausibility of NSAIDs affecting crypt fission dynamics. This provides independent experimental support for a key modeling assumption about aspirin's inter-crypt effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "There is controversy about whether initial KRAS mutations can drive colorectal carcinogenesis or represent evolutionary dead ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 acknowledge conflicting evidence in the literature about KRAS-initiated pathways (Jen et al., 1994; Chan et al., 2003 versus Jass, 2006; Pretlow and Pretlow, 2005). The authors appropriately note this uncertainty and explain how their model accommodates both possibilities through flexible pathway ordering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Chan et al., 2004 reported dose-dependent relative risks for adenoma ranging from 0.80 (0.5-1.5 tablets/week) to 0.49 (>14 tablets/week).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 accurately report specific epidemiological data from Chan et al., 2004 that serves as the primary validation target for model predictions. These are straightforward data citations providing quantitative benchmarks for model evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Aspirin negatively impacts colon organoids from non-neoplastic tissue, particularly reducing transit amplifying cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 cite recent experimental work (Devall et al., 2021) showing aspirin effects on normal tissue organoids. This provides additional experimental context supporting aspirin's direct cellular effects, though the authors acknowledge their model focuses on stem cells while this work emphasizes transit amplifying cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The model calculates probability of producing type-6 crypts by time t and assumes advanced adenomas are detected at a certain size N.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe mathematical model components. These are standard modeling approaches for calculating incidence probabilities and defining detection thresholds. The formulation is appropriately cited (Chou and Wang, 2015) and represents established methodology.",
+    "result_type": "MINOR"
+  }
+]

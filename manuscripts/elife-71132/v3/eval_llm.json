@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors developed a Bayesian image reconstruction framework that operates on natural images, using ISETBio to model the visual encoding from display through cone excitations, with a sparse coding prior learned from ImageNet via ICA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C38-C42, C63-C69 collectively establish the methodological foundation. The framework is explicitly described with implementation details (ISETBio), dataset specification (ImageNet), and modeling assumptions (Poisson noise, ICA-based prior). The integration of likelihood and prior through MAP estimation is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Large variations in L:M cone ratio (10-fold range) have minimal impact on reconstruction error, while S-cone proportion shows a clear optimum at ~10%, consistent with optimal retinal design principles and explained by natural image statistics and chromatic aberrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 present quantitative findings with supporting figures (Figure 4A, 4B). The explanations invoke spatial/chromatic correlations (C7) and chromatic aberrations (C8, C56), with mechanistic reasoning. Claims C54-C55 provide biological context from cited literature. The convergence of computational results with prior analyses (C6) strengthens support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The dependence of reconstruction error on L-cone proportion decreases with increasing chromatic correlation in images, while spatial correlation affects error magnitude but not the shape of the relationship. Natural images exhibit both high spatial and chromatic correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 describe systematic manipulations of image statistics with quantitative results shown in Figure 5. Claim C11 provides the biological context with citations. The synthetic image experiments isolate the role of statistical regularities, directly testing the hypothesis about natural image structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Dichromatic reconstructions retain spatial structure but show distinct color confusion patterns for each dichromacy type, with differences driven by the image prior rather than the likelihood function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 describe qualitative observations from dichromatic simulations. The mechanistic explanation (C13) is supported by the mathematical framework where the original image has equal or higher likelihood, making the prior the determining factor. Figure 6 provides visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C71"
+    ],
+    "result": "At high light intensities, normal and deuteranomalous reconstructions are similar, but at lower intensities, deuteranomalous reconstructions lose chromatic content. Normal mosaics also lose chromatic content at very low light levels, consistent with monochromatic vision in low-light biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe systematic observations across light levels shown in Figure 7. The biological interpretation (C17) is supported by multiple citations. Claim C71 extends the finding to suggest downstream compensation is possible in low-noise regimes. The SNR-dependent behavior is consistent with Poisson noise modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C58",
+      "C59"
+    ],
+    "result": "Reconstruction quality degrades from fovea to periphery, with elongated PSFs introducing directional blur. A trade-off exists between spatial and chromatic vision across eccentricity, with intermediate eccentricities showing desaturation. Optimal blur prevents aliasing, and the prior is critical for peripheral demosaicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 describe eccentricity-dependent effects with supporting figures (Figure 8, supplements). The desaturation observation (C21) is linked to literature on peripheral chromatic sensitivity (C58). Claims C22-C23 provide mechanistic insights from PSF manipulation experiments. The role of the prior (C59) is explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C60"
+    ],
+    "result": "The reconstructions recapitulate spatial aliasing phenomena observed in interferometric experiments, including 'zebra stripes' at ~120 cyc/deg in fovea and orientation reversal in periphery. The model predicts additional chromatic aliasing for achromatic gratings under diffraction-limited conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 cite experimental findings from Williams (1985) and Coletta & Williams (1987). Claims C28-C29 show the model reproduces these phenomena (Figure 9). Claim C30 makes a testable prediction. The consistency between model and psychophysics, accounting for trichromacy, supports the framework's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The reconstruction-based observer shows spatial frequency-chromatic direction interactions in contrast sensitivity: L+M sensitivity is relatively constant, while L-M sensitivity is higher at low frequencies but drops below L+M at high frequencies. These features match human CSFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe quantitative CSF measurements shown in Figure 10B. Claim C35 links these to human psychophysics with citations. The interaction between spatial frequency and chromatic direction emerges from the prior's role, distinguishing this from the Poisson ideal observer (Figure 10A). The correspondence with human data is notable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Natural images occupy a small manifold in image space. The prior serves three roles: regularizing the underdetermined reconstruction, denoising cone excitations, and guiding spatial/spectral demosaicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 articulate the theoretical framework. Claim C43 is well-established in the literature. Claims C44-C46 describe the prior's computational roles, which are demonstrated throughout the results (e.g., Figure 2 shows regularization, Figure 3 shows denoising, Figure 8 shows demosaicing).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The MAP reconstruction has high prior probability and likelihood. The original image has slightly lower likelihood due to noise. MLE creates artifacts by interpreting noise as signal. An infinite set of images in the likelihood null space cannot be distinguished by cone excitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe properties of the reconstruction illustrated in Figure 3. The mathematical framework (likelihood null space) is correctly applied. The observations about MLE artifacts and null space ambiguity follow logically from the model structure. These claims elucidate the interaction between likelihood and prior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C62",
+      "C76",
+      "C78"
+    ],
+    "result": "The Bayesian framework offers modularity (separable likelihood and prior), extends ideal observer analysis to incorporate natural scene statistics, and is widely applicable to experiments involving initial visual encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 state accepted principles with citations. Claims C62, C76, C78 describe the framework's advantages and generality. The modularity is demonstrated throughout by manipulating likelihood (mosaic properties) and prior (image statistics) independently. The broad applicability is supported by the diverse analyses presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model does not account for post-excitation factors (e.g., retinal ganglion cells) or fixational eye movements, which likely contribute additional information loss and could affect visual acuity. Early vision factors can influence chromatic sensitivity through their effect on available information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 explicitly acknowledge model limitations. These are reasonable given the scope (cone excitations only). Claim C73 offers a novel insight about early vision's role in chromatic sensitivity. The limitations are clearly stated and appropriately qualified, with citations supporting the potential effects of omitted factors.",
+    "result_type": "MINOR"
+  }
+]

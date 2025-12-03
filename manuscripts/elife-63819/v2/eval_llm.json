@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C10",
+      "C13",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "EAAT1 and EAAT2 regulate ambient glutamate levels at the MF-UBC synapse. Pharmacological blockade of EAATs with DL-TBOA or TFB-TBOA increases tonic currents in UBCs, with differential effects based on EAAT subtype selectivity indicating both EAAT1 and EAAT2 contribute to glutamate uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C13, C17-C20 provide converging pharmacological evidence using selective EAAT inhibitors showing that blocking EAAT1-2 increases tonic currents. The differential effects of TFB-TBOA (selective for EAAT1-2) versus DL-TBOA (selective for EAAT2-3 at low concentrations) support the conclusion that both transporters contribute to glutamate clearance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Computational modeling predicts ~5 \u00b5M ambient glutamate at the UBC synapse under baseline conditions. The model requires ambient glutamate to fit experimental data and predicts that EAATs reduce but do not eliminate ambient glutamate, leaving ~54% of AMPARs free of agonist at rest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 describe a computational modeling approach that successfully fits experimental data only when ambient glutamate is included (C23-C24). The model predictions are internally consistent and match experimental observations. However, the model relies on simplified assumptions about diffusion and receptor distribution that may not fully capture synaptic complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Ambient glutamate tonically activates mGluR2 receptors in OFF UBCs, reducing spontaneous firing rate. Blocking mGluR2 with LY341495 shifts holding current inward and significantly increases spike rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide direct experimental evidence that mGluR2 antagonism increases firing rate in OFF UBCs (C34, p=0.025, n=5), consistent with tonic mGluR2 activation by ambient glutamate. The effect is specific to OFF UBCs (C33), which express higher levels of mGluR2-GIRK current.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "ON UBCs show a small but significant tonic AMPAR current, while OFF UBCs show no tonic AMPAR current. However, the tonic AMPAR current in ON UBCs does not consistently affect spike rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 report experimental observations with appropriate statistics. The small effect size in ON UBCs (C37, significant but small) and lack of consistent effect on firing (C38) are honestly reported. The differential effects between ON and OFF UBCs are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C77",
+      "C78"
+    ],
+    "result": "Cyclothiazide (CTZ) reveals tonic AMPAR desensitization by ambient glutamate in UBCs but not granule cells. CTZ increases baseline current and enhances evoked EPSC amplitude more than twofold, indicating that ambient glutamate tonically desensitizes AMPARs and constrains synaptic excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C45-C46, C77-C78 provide strong evidence for tonic desensitization. The cell-type specificity (UBCs but not granule cells, C41-C42) argues against presynaptic effects of CTZ. The quantitative measurements (C45: decay constant increased from 265\u00b172 to 416\u00b1110 ms; C78: >2-fold increase in EPSC amplitude) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Ambient glutamate is independent of action potential firing, as TTX does not affect tonic currents in OFF UBCs. In ON UBCs, TTX blocks a persistent Na+ current but not the AMPAR-mediated tonic current, indicating that ambient glutamate arises from spontaneous, spike-independent exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 provide careful controls showing that TTX effects in ON UBCs are due to persistent Na+ currents (C50), not glutamate release. The lack of TTX effect on puff-evoked responses (C51-C52) and the cell-type specificity (C53) support the conclusion that ambient glutamate is from spontaneous exocytosis (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Miniature EPSCs (mEPSCs) in UBCs are rare, small (7.20\u00b13.47 pA), and slow (decay time constants >10-fold longer than granule cells), consistent with AMPARs being displaced from release sites and detecting glutamate via spillover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 provide quantitative characterization of mEPSCs with appropriate statistical comparisons to granule cells (C57-C58, Mann-Whitney tests, p<0.001). The interpretation that AMPARs are displaced from release sites (C60) is consistent with cited literature (Zampini et al., 2016) and the observed properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Bafilomycin-A1 (BafA1) treatment reduces the CTZ-induced tonic current by nearly sixfold, indicating that the majority of ambient glutamate driving the tonic current comes from synaptic vesicles, likely from the MF terminal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 provide experimental evidence that depleting vesicular glutamate with BafA1 reduces the CTZ effect (C62: -4.16\u00b11.64 pA in BafA1 vs -24.3\u00b15.1 pA in control, p=0.002). The use of stellate cells as positive controls (Figure 6\u2014figure supplement 1) validates the BafA1 treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "EAATs isolate UBCs from spillover from neighboring MF terminals. Most UBCs respond to a single MF input under normal conditions, but blocking EAATs with DL-TBOA reveals slow spillover EPSCs from additional inputs, indicating that EAATs restrict ambient glutamate to individual synaptic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide experimental evidence that 7/8 UBCs show all-or-nothing responses to single inputs (C64), but 5/7 show additional slow EPSCs when EAATs are blocked (C65). This supports the conclusion that EAATs prevent cross-talk between glomeruli (C66-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "EAAT activity controls the timing of ON UBC responses to frequency-modulated synaptic input. Blocking EAATs with DL-TBOA shifts the phase of the offset response by 77\u00b0 (214 ms delay), altering the temporal relationship between MF input and UBC output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 provide quantitative analysis of responses to in vivo-like stimulation patterns. The phase shift is statistically significant (C71: p<0.0001, n=9) and represents a substantial delay (C72: 214 ms). This demonstrates functional consequences of EAAT regulation of ambient glutamate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Increased ambient glutamate causes three effects in ON UBCs: (1) steady-state current during stimulation shifts outward, (2) slow EPSC duration lengthens, and (3) fast EPSC amplitudes are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe observed effects of DL-TBOA that are consistent with increased AMPAR desensitization. These effects are cited to previous work (Lu et al., 2017) and are consistent with the tonic desensitization mechanism demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C9",
+      "C74",
+      "C75",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The MF-UBC synapse operates differently from classical glutamatergic synapses, with receptors virtually always exposed to significant glutamate levels that vary in a graded manner. Glutamate persists for hundreds of milliseconds after release, and postsynaptic currents slowly increase and decay in proportion to presynaptic spike frequency in a nonlinear manner governed by EAAT activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C9, C74-C75, C87-C89 synthesize the major findings into a coherent model of synaptic transmission at this synapse. The characterization is supported by the experimental and modeling data presented throughout the manuscript, though some aspects (C7, C89) represent interpretive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C79",
+      "C86",
+      "C91",
+      "C93",
+      "C96"
+    ],
+    "result": "Structural features of the UBC synapse (convoluted dendritic brush, greater distance between release sites and receptors) may contribute to glutamate persistence. Astrocytes could regulate synaptic transmission by controlling EAAT density or activity, potentially altering convergence ratios and coordinating cerebellar learning signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C76, C79, C86, C91, C93, C96 are largely speculative or based on indirect evidence. While the hypotheses are reasonable and supported by citations, they represent interpretations and predictions rather than direct experimental findings. Additional experiments would be needed to test these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C90",
+      "C94",
+      "C95"
+    ],
+    "result": "The manuscript provides context about cerebellar anatomy, receptor pharmacology, and functional implications. MFs are the only glutamatergic terminals in the granular layer, mGluRs and AMPARs have different glutamate affinities, and ON UBCs may code for bidirectional head velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85, C90, C94-C95 provide established knowledge (with appropriate citations) and reasonable functional interpretations based on the experimental findings. The comparison of model predictions with experimental observations (C84) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Experiments used C57BL/6J-TgN(grm2-IL2RA/GFP)1kyo mice aged P21-P35, in which both ON and OFF UBCs are labeled with GFP. Synapses are mature at this age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe the experimental model with appropriate citations. The choice of age range is justified by synaptic maturity (C101), and the mouse line is well-characterized for labeling both UBC subtypes (C99).",
+    "result_type": "MINOR"
+  }
+]

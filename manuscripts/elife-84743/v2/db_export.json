@@ -1,0 +1,2101 @@
+{
+  "submission": {
+    "id": "37416907-b710-4462-ba65-20ecb720066d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:36:35.194638Z",
+    "updated_at": "2025-12-03T20:36:35.194638Z"
+  },
+  "content": [
+    {
+      "id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "submission_id": "37416907-b710-4462-ba65-20ecb720066d",
+      "content_type": "manuscript",
+      "content_text": "# A toxin-mediated policing system in Bacillus optimizes division of labor via penalizing cheater-like nonproducers\n\n## Authors\n\n- Rong Huang<sup>1</sup> ([ORCID: 0000-0003-1347-841X](https://orcid.org/0000-0003-1347-841X))\n- Jiahui Shao<sup>1</sup>\n- Zhihui Xu<sup>1</sup> ([ORCID: 0000-0002-3987-8836](https://orcid.org/0000-0002-3987-8836))\n- Yuqi Chen<sup>1</sup>\n- Yunpeng Liu<sup>2</sup>\n- Dandan Wang<sup>3</sup>\n- Haichao Feng<sup>1</sup>\n- Weibing Xun<sup>1</sup>\n- Qirong Shen<sup>1</sup>\n- Nan Zhang<sup>1</sup> ([ORCID: 0000-0001-8444-7456](https://orcid.org/0000-0001-8444-7456)) \u2020\n- Ruifu Zhang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Jiangsu Provincial Key Lab of Solid Organic Waste Utilization, Jiangsu Collaborative Innovation Center of Solid Organic Wastes, Nanjing Agricultural University Nanjing China ([ROR:05td3s095](https://ror.org/05td3s095))\n2. State Key Laboratory of Efficient Utilization of Arid and Semi-arid Arable Land in Northern China, Institute of Agricultural Resources and Regional Planning, Chinese Academy of Agricultura Sciences Beijing China ([ROR:0313jb750](https://ror.org/0313jb750))\n3. National Engineering Research Center for Efficient Utilization of Soil and Fertilizer Resources, College of Resources and Environment, Shandong Agricultural University Tai\u2019an China ([ROR:02ke8fw32](https://ror.org/02ke8fw32))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDivision of labor, where subpopulations perform complementary tasks simultaneously within an assembly, characterizes major evolutionary transitions of cooperation in certain cases. Currently, the mechanism and significance of mediating the interaction between different cell types during the division of labor, remain largely unknown. Here, we investigated the molecular mechanism and ecological function of a policing system for optimizing the division of labor in Bacillus velezensis SQR9. During biofilm formation, cells differentiated into the extracellular matrix (ECM)-producers and cheater-like nonproducers. ECM-producers were also active in the biosynthesis of genomic island-governed toxic bacillunoic acids (BAs) and self-resistance; while the nonproducers were sensitive to this antibiotic and could be partially eliminated. Spo0A was identified to be the co-regulator for triggering both ECM production and BAs synthesis/immunity. Besides its well-known regulation of ECM secretion, Spo0A activates acetyl-CoA carboxylase to produce malonyl-CoA, which is essential for BAs biosynthesis, thereby stimulating BAs production and self-immunity. Finally, the policing system not only excluded ECM-nonproducing cheater-like individuals but also improved the production of other public goods such as protease and siderophore, consequently, enhancing the population stability and ecological fitness under stress conditions and in the rhizosphere. This study provides insights into our understanding of the maintenance and evolution of microbial cooperation.\n\n## Introduction\n\nCooperative interactions are not restricted to complex, higher organisms, but are also prevalent among microbial communities in many contexts (Kehe et al., 2021; Rakoff-Nahoum et al., 2016; Wenseleers and Ratnieks, 2006). Both natural selection and game theory predict that cooperative systems are vulnerable to non-cooperative cheaters that exploit the benefit, such as public goods including extracellular enzymes (Chen et al., 2019), siderophore (Griffin et al., 2004), or biofilm matrix (Drago\u0161 and Kov\u00e1cs, 2017; Vlamakis et al., 2013) since these selfish individuals enjoy the common resources without paying their cost (Hardin, 1968; Martin et al., 2020; West et al., 2006). Intriguingly, cooperation principally survives cheating during evolutionary history (Travisano and Velicer, 2004), and a couple of mechanisms have been proposed to play significant roles in maintaining cooperation by preventing cheater invasion (\u00d6zkaya et al., 2017; Travisano and Velicer, 2004). These strategies mainly include kin selection/discrimination (\u00d6zkaya et al., 2017; Diggle et al., 2007; McNally et al., 2017), facultative cooperation regulated by a quorum-sensing (QS) system (Allen et al., 2016), or nutrient fitness cost (Sexton and Schuster, 2017), coupling production of public and private goods (Dandekar et al., 2012), punishment of cheating individuals by cooperator-produced antibiotics (Garc\u00eda-Contreras et al., 2015; Wang et al., 2015), partial privatization of public goods under certain conditions (Jin et al., 2018; Otto et al., 2020), and spatial structuring (van Gestel et al., 2014). In general, the emergence of multiple sanction mechanisms is a consequence of natural selection, which suppresses social cheaters and enhances the altruistic behavior, thereby maintaining microbial community stability and improving their adaptation in different niches (\u00d6zkaya et al., 2017).\n\nIn certain cases, microbial cooperation involves the division of labor, where subpopulations of cells are specialized to perform different tasks (Drago\u0161 et al., 2018a; Strassmann and Queller, 2011). Division of labor requires three basic conditions: individuals exhibit different tasks (phenotypic variation); some individuals carry out cooperative tasks that benefit other individuals (cooperation); all individuals gain an inclusive fitness benefit from the interaction (adaptation) (Drago\u0161 et al., 2018b; West and Cooper, 2016). For instance, Bacillus subtilis colony will phenotypically differentiate into surfactin-producing and matrix-producing cells during sliding motility, where the surfactin reduces the friction between cells and their substrate, while the matrix assembles into van Gogh bundles that drive the migration (Jordi et al., 2015). Another typical case is in early-stage biofilms, an extracellular matrix (ECM)-the enclosed multicellular community that sustains bacterial survival in diverse natural environments; it is known that B. subtilis cells can differentiate into motile cells and matrix-producing cells during biofilm formation (Vlamakis et al., 2008; Chai et al., 2008; Shank and Kolter, 2011; L\u00f3pez and Kolter, 2010; L\u00f3pez et al., 2009c; L\u00f3pez et al., 2009a; van Gestel et al., 2015; Vlamakis et al., 2013; Kearns, 2008). The advantage of the division of labor is to efficiently integrate distinct cellular activities, thereby endowing a community with higher fitness than undifferentiated clones (West and Cooper, 2016; Zhang et al., 2016).\n\nImportantly, efficient division of labor relies on elaborate coordination of cell differentiation (Cremer et al., 2019; L\u00f3pez et al., 2009b; Lord et al., 2019). In relative to the subpopulation producing a certain public good (e.g. cells producing ECM during biofilm formation), the nonproducing cells that can also enjoy this common good, actually become the \u2018cheater-like\u2019 individuals to some extent (although they may provide other contributions to the community) (Claessen et al., 2014; Otto et al., 2020; West and Cooper, 2016). Therefore, regulating the proportion of each cell type and alignment of interests, is important for maintaining the stability and fitness of the division of labor (West and Cooper, 2016), while an unbalanced cell differentiation will reduce the population productivity and even cause a collapse of the division of labor (Drago\u0161 et al., 2018a). Despite the knowledge of pathways controlling cell differentiation in microbes, little is known about how the different cell types interact with each other and the fitness consequences of their interaction (van Gestel et al., 2015). Although a few studies have investigated the overlap between public goods production and cell cannibalism (Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c), as well as matrix privatization (Otto et al., 2020) during cell differentiation, the molecular mechanism involved in coordinating the cheater-like individuals in the division of labor, as well as the ecological significance of the policing system in regulating population stability and fitness, remain unclear. Accordingly, lacking these knowledge limits our understanding of cooperation and altruism within microbial social communities.\n\nBacillus velezensis SQR9 (formerly B. amyloliquefaciens SQR9) is a well-studied beneficial rhizobacterium that forms robust and highly structured biofilms on the air-liquid interface and plant roots (Qiu et al., 2014; Xu et al., 2019a; Xu et al., 2013; Cao et al., 2011). Strain SQR9 harbors a novel genomic island 3 (GI3) consisting of four operons, where the second, third, and fourth operons are responsible for the production of the novel branched-chain fatty acids, BAs, while the first operon encodes an ABC transporter to export toxic BAs for self-immunity (Wang et al., 2019). Production of toxic BAs was proved to occur in the subfraction of cells with the self-immunity ability induced by BAs during biofilm formation, where the nonproducing siblings will be lysed by BAs (Huang et al., 2021; Wang et al., 2019). Based on the manifestation that the BA-mediated cannibalism enhanced the biofilm formation of strain SQR9, we hypothesized the ECM and BAs synthesis can be co-regulated to restrain the cheater-like individuals that don\u2019t produce ECM, thereby optimizing the division of labor and altruistic behavior. Using a combination of single-cell tracking techniques, molecular approaches, and ecological evaluation, we demonstrated that ECM and BAs production are coordinated in the same subpopulation by the same regulator during biofilm formation, which enforces punishment of the cheater-like nonproducers to maintain community stabilization; also this genomic island-governed policing system is significant to promote community fitness in various conditions.\n\n## Results\n\n### Coordinated production of ECM and autotoxin BAs punishes cheater-like nonproducers in the B. velezensis SQR9 community\n\nBacillus cells in early-stage biofilms are known to contain specialized groups as motile cells and matrix-producing cells (Kearns, 2008; van Gestel et al., 2015; Vlamakis et al., 2008). We hypothesized that secretion of cannibal toxin BAs can eliminate ECM nonproducers in B. velezensis SQR9 biofilm, and try to determine the subpopulation for ECM (public goods) production and BAs (autotoxin) biosynthesis/BAs-induced self-immunity, as well as their interactions. We fused promoters for genes related to extracellular polysaccharides (EPS) and TasA fibers (two dominant ECM components in Bacillus biofilm Vlamakis et al., 2013) biosynthesis with mCherry, while the promoters for genes related to the autotoxin BAs biosynthesis and the self-immunity with gfp, obtained the transcriptional reporter Peps-mCherry, PtapA-mCherry, PbnaF-gfp, and PbnaAB-gfp, respectively. Their expression patterns were monitored using confocal laser scanning microscopy (CLSM) during the biofilm community formation. Photographs show that expression of the Peps-mCherry, PtapA-mCherry, PbnaF-gfp, and PbnaAB-gfp were all observed in a subpopulation cells of the whole community (Figure 1), which suggests a functional division of labor during biofilm formation; this cell differentiation pattern also indicates the ECM-nonproducers can be recognized as the cheater-like individuals (Otto et al., 2020). Importantly, the overlay of the double fluorescent reporters indicates that ECM and BAs production is generally raised in the same subpopulation (Figure 1; the yellow cells represent co-expression of mCherry and gfp), the flow cytometry also confirms the positive correlation between the two reporters within the picked cells as expected (Figure 1\u2014figure supplement 1), since the self-immunity gene bnaAB was reported to be specifically activated by endogenous BAs (Huang et al., 2021), it was also preferentially expressed in the same subpopulation with ECM-producers (Figure 1, Figure 1\u2014figure supplement 1). These results demonstrate general coordination of ECM production and BAs synthesis/immunity in the same subpopulation of the B. velezensis SQR9 biofilm community.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig1-v2.jpg)\n\n**Figure 1.:** Fluorescence emission patterns of double-labeled strains. Colony cells of different double-labeled strains were visualized using CLSM to monitor the distribution of fluorescence signals from different reporters. Peps-mCherry and PtapA-mCherry were used to indicate cells expressing extracellular polysaccharides (EPS) and TasA fibers production, respectively; PbnaF-gfp and PbnaAB-gfp were used to indicate cells expressing BAs synthesis and self-immunity, respectively. The bar represents 5 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Flow cytometry monitoring the subfractions of extracellular polysaccharides (EPS)-producing cells (Peps-mCherry) and BAs-producing cells (PbnaF-gfp). Peps-mCherry: strain harboring only the Peps-mCherry reporter. PbnaF-gfp: strain harboring only the PbnaF-gfp reporter. Peps-mCherry PbnaF-gfp: double-labeled strain Peps-mCherry PbnaF-gfp. (B) Flow cytometry monitoring the subfractions of TasA-producing cells (PtapA-mCherry) and BAs-producing cells (PbnaF-gfp). PtapA-mCherry: strain harboring only the PtapA-mCherry reporter. PbnaF-gfp: strain harboring only the PbnaF-gfp reporter. PtapA-mCherry PbnaF-gfp: double-labeled strain PtapA-mCherry PbnaF-gfp. (C) Flow cytometry monitoring the subfractions of EPS-producing cells (Peps-mCherry) and immune cells (PbnaAB-gfp). Peps-mCherry: strain harboring only the Peps-mCherry reporter. PbnaAB-gfp: strain harboring only the PbnaAB-gfp reporter. Peps-mCherry PbnaAB-gfp: double-labeled strain Peps-mCherry PbnaAB-gfp. (D) Flow cytometry monitoring the subfractions of TasA-producing cells (PtapA-mCherry) and immune cells (PbnaAB-gfp). PtapA-mCherry: strain harboring only the PtapA-mCherry reporter. PbnaAB-gfp: strain harboring only the PbnaAB-gfp reporter. PtapA-mCherry PbnaAB-gfp: double-labeled strain PtapA-mCherry PbnaAB-gfp. Fluorescence intensity for the GFP channel is presented on the x-axis, and for the mCherry channel is presented on the y-axis. Control: wild-type strain expressing no fluorescence protein. The total cell number observed for each strain was 20,000.\n\nBased on the co-expression pattern, we postulated that the ECM-nonproducing cheater-like cells, synchronously being sensitive to the BAs, could be killed by their siblings that produce both public goods ECM and the autotoxin BAs. Combining propidium iodide (a red-fluorescent dye for labeling dead cells) staining with reporter labeling, we monitored the cell death dynamics during the biofilm formation process in real-time. It was observed that a portion of the cells that didn\u2019t produce public ECM or toxic BAs, or silenced in expression of the self-immunity gene bnaAB (cells without GFP signal), were killed by adjacent corresponding producers during the biofilm development process (Figure 2), while these producers remained alive throughout the incubation (Figure 2\u2014videos 1\u20134); importantly, the number of dead cells adjacent to the producers was significantly higher than that closed to the non-producers (Figure 2\u2014figure supplement 1). This lysis can be attributed to the BAs produced by the gfp-activated cells, as cannibalism of B. velezensis SQR9 was largely dependent on the production of this secondary metabolism (Huang et al., 2021). Taken together, the double-labeling observation and cell death dynamics detection indicate that the subpopulation of ECM and BAs producers selectively punish the nonproducing siblings, depending on a coordinately activated cell-differentiation pathway.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig2-v2.jpg)\n\n**Figure 2.:** The time-lapse experiment for observing the source and distribution of dead cells. Colony cells of different gfp-labeled strains were stained with propidium iodide (PI, a red-fluorescent dye for labeling dead cells) for 15 min, and then visualized by a CLSM to monitor the distribution of fluorescence signal from reporters and the PI dye. \u20180 min\u2019 represents the time point at which cells are alive as shown by the arrow, \u20183 min\u2019 or \u20186 min\u2019 is the time point afterward, and the cells at the arrow die or even break apart. Peps-gfp and PtapA-gfp were used to indicate cells expressing extracellular polysaccharides (EPS) and TasA fibers production, respectively; PbnaF-gfp and PbnaAB-gfp were used to indicate cells expressing BAs synthesis and self-immunity, respectively. The total number of cells is 198 for strain SQR9-Peps-gfp, 71 for strain SQR9-PtasA-gfp, 88 for strain SQR9-PbnaF-gfp, and 162 for strain SQR9-PbnaAB-gfp. The bar represents 5 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The statistical objects were newly emerged dead cells during 3 hr observation. Proportion of dead cells that originated from gfp or non-gfp expressing cells are shown on the left panel, proportion of dead cells around cells that emit (or do not emit) GFP is showed on right panel of each figure. (A) is the proportion of dead cells in biofilm formed by strain SQR9-Peps-gfp. (B) is the proportion of dead cells in biofilm formed by strain SQR9-PtapA-gfp. (C) is the proportion of dead cells in biofilm formed by strain SQR9-PbnaF-gfp. (D) is the proportion of dead cells in biofilm formed by strain SQR9-PbnaAB-gfp. Data are means and standard deviations from three biological replicates, and columns with * are statistically different according to Student\u2019s t-test (p<0.05).\n\n### Spo0A is the co-regulator for triggering ECM production and BAs synthesis/immunity\n\nTo identify the potential co-regulator(s) of ECM production and BAs synthesis/immunity in B. velezensis SQR9, we evaluated the BAs production in an array of mutants that are known to be altered in ECM synthesis (\u0394degU, \u0394comPA, \u0394abrB, \u0394sinI, \u0394sinR, and \u0394spo0A), by measuring their antagonism towards B. velezensis FZB42, a target strain specifically inhibited by BAs but no other antibiotics secreted by SQR9 (Wang et al., 2019). The BAs extract of wild-type SQR9 showed remarkable antagonism to the lawn of strain FZB42 (Figure 3A and B); only \u0394spo0A but no other mutants (all with the equal cell density of the wild-type), revealed a significantly reduced inhibition zone towards FZB42, and the complementary strain generally restored the antagonistic ability (Figure 3A and B). Spo0A is a well-investigated master regulator that governs multiple physiological behaviors in B. subtilis and closely-related species Hamon and Lazazzera, 2001; Molle et al., 2003; Xu et al., 2019b; as expected, the EPS production and biofilm formation was seriously impaired in \u0394spo0A (Figure 3\u2014figure supplement 1). Intriguingly, \u0394spo0A but neither its complementary strain nor the wild-type, can be substantially inhibited by the BAs extract of strain SQR9, while \u0394spo0A was not inhibited by \u0394GI3 that disabled in BAs production (Figure 3C), suggesting Spo0A does participate in the immunity to BAs. In addition, we constructed gfp transcriptional fusions to the promoter of genes involved in ECM production (eps & tapA) and BAs biosynthesis/immunity (bnaF/bnaAB) and discovered that under both liquid culture (Figure 3D) and plate colony conditions (Figure 3\u2014figure supplement 2), their expression level was significantly decreased in \u0394spo0A as compared with the wild-type, which was restored in the complementary strain \u0394spo0A/spo0A. These results suggest that the global regulator Spo0A is the co-regulator for controlling ECM production and BAs biosynthesis/immunity in B. velezensis, which is probably dependent on the transcriptional regulation of certain relevant genes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig3-v2.jpg)\n\n**Figure 3.:** (A) Oxford cup assay. Inhibition of the lawn of B. velezensis FZB42 by the BAs extract of wild-type SQR9, its different mutants altered in ECM production, and complementary strain \u0394spo0A/spo0A. (B) Quantification of inhibition zone. Diameter of the inhibition zones is observed in (A). (C) Oxford cup assay. Sensitivity of wild-type SQR9, \u0394spo0A, and \u0394spo0A/spo0A (as the lawn) to the extracellular extract of SQR9 and its mutant \u0394GI3 that disable BAs synthesis. (D) Quantification of fluorescence in liquid culture. The expression level of eps, tapA, bnaF, and bnaAB in wild-type SQR9, \u0394spo0A, and \u0394spo0A/spo0A, as monitored by using gfp reporters fused to the corresponding promoters. Data are means and standard deviations from three biological replicates. * indicates a significant difference with the Control (SQR9) column as analyzed by Student\u2019s t-test (p<0.05).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Pellicle formation (A) and extracellular polysaccharides (EPS) production (B) by wild-type SQR9, \u0394spo0A, and \u0394spo0A/spo0A. Columns with different letters are statistically different according to the Duncan\u2019s multiple range test (n=3, p<0.05).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Colony fluorescence. Colonies were observed under both bright field and GFP channels, to monitor the fluorescence of Peps-gfp, PtapA-gfp, PbnaF-gfp, and PbnaAB-gfp reporters in different strains. The bar represents 1 mm. (B) Quantification of colony fluorescence. The mean fluorescent intensity of different gfp reporters as observed in (A). Data are means and standard deviations from three biological replicates. Columns with different letters in the same group are statistically different according to the Duncan\u2019s multiple range test (p<0.05).\n\n### Spo0A activates acetyl-CoA carboxylase (ACC) to support BAs synthesis and self-immunity\n\nIn Bacillus, Spo0A governs the regulatory pathway for matrix gene (the eps and tapA-sipW-tasA operons) expression by controlling the activity of the regulators SinR and AbrB (Vlamakis et al., 2013), but how it mediates BAs synthesis and self-immunity remains unknown. We used biolayer interferometry analysis (BLI) for detecting molecular interaction signals between protein and DNA fragments (an increased signal during association and a decreased signal during dissociation). Results showed that the purified protein Spo0A cannot directly bind to the promoter of bnaF, suggesting it doesn\u2019t induce BAs production through direct transcriptional activation (Figure 4\u2014figure supplement 1). Alternatively, Spo0A has been reported to stimulate the expression of accDA that encodes ACC (Diomand\u00e9 et al., 2015; Pedrido et al., 2013), which catalyzes acetyl-CoA to generate malonyl-CoA, an essential precursor for BAs biosynthesis (Figure 4A; Wang et al., 2019); therefore, we postulated accDA may be involved in the regulation of BAs production/immunity by Spo0A. We firstly verified the positive regulation of Spo0A on accDA expression in B. velezensis SQR9 by gfp fusion (Figure 4B, Figure 4\u2014figure supplement 2 ). Since knockout of accDA, the essential gene for fatty acids biosynthesis, significantly impacts bacterial growth, we alternatively constructed a strain in which the original promoter of accDA was replaced by a xylose-inducible promoter (Pxyl), and monitored its BAs synthesis/immunity under different xylose induction conditions. The SQR9-Pxyl-accDA lost the antagonism ability towards target strain FZB42 in the absence of xylose, while the inhibition was significantly enhanced with the induction of xylose in a dose-dependent manner (Figure 4C and D). Since exogenous xylose didn\u2019t influence the suppression of wild-type SQR9 on FZB42 (Figure 4C and D), these results suggest that accDA expression positively contributes to BAs production. Importantly, the SQR9-Pxyl-accDA was proved to be sensitive to SQR9-produced BAs without xylose addition, and the immunity was gradually restored with xylose supplement (Figure 4E, Figure 4\u2014figure supplement 3). The xylose-induced transcription of accDA, also resulted in enhanced expression of genes involved in self-immunity (bnaAB; Figure 4F, for quantitative intensity please see Figure 4F, Figure 4\u2014figure supplement 4A, C), but not BAs synthesis (bnaF; Figure 4F and Figure 4\u2014figure supplement 4B, D), as the AccDA-derived malonyl-CoA accumulation affects BAs production in a post-transcriptional manner. The CLSM photographs and flow cytometry analysis also reveal that the activation of accDA (mCherry fusion) and bnaAB (gfp fusion) was located in the same subpopulation cells (Figure 4\u2014figure supplement 5). Accordingly, these results indicate the positive regulation of Spo0A on BAs production/immunity in B. velezensis SQR9, is strongly dependent on accDA that encodes ACC.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig4-v2.jpg)\n\n**Figure 4.:** (A) Involvement of ACC in the biosynthesis of BAs in B. velezensis SQR9. ACC catalyzes acetyl-CoA to generate malonyl-CoA, which is transformed to malonyl-ACP under the catalyzation of ACP transacylase; then malonyl-ACP and acetyl-CoA are aggregated into a C5 primer, the precursor for BAs synthesis. (B) Quantification of fluorescence in liquid culture. The expression level of accDA in wild-type SQR9, \u0394spo0A, and \u0394spo0A/spo0A, as monitored by using the PaccDA-gfp reporter. (C) Oxford cup assay. Inhibition of the lawn of B. velezensis FZB42 by the BAs extract of wild-type SQR9 and SQR9-Pxyl-accDA, with the addition of different concentrations of xylose (0%, 0.1%, and 0.2%). (D) Quantification of inhibition zone. Diameter of the inhibition zones is observed in (C). (E) Oxford cup assay. Sensitivity of wild-type SQR9 and SQR9-Pxyl-accDA (as the lawn) to the BAs extract of SQR9 (100 \u03bcL (1x) or 200 \u03bcL (2x)), with the addition of different concentrations of xylose (0%, 0.1%, and 0.2%). (F) Colony fluorescence. Expression of bnaF and bnaAB in the colony cells of wild-type SQR9 and SQR9-Pxyl-accDA, with the addition of different concentrations of xylose (0%, 0.1%, and 0.2%). Colonies were observed under both bright fields (BF in the figure) and GFP channel, to monitor the fluorescence of PbnaF-gfp and PbnaAB-gfp reporters in different strains. The bar represents 1 mm. Data are means and standard deviations from three biological replicates. * in (B) indicates a significant difference (p<0.05) with the Control (SQR9) column as analyzed by Student\u2019s t-test; columns with different letters in (D) are statistically different according to Duncan\u2019s multiple range test (\u2018a\u2019 for wild-type SQR9 under different concentrations of xylose and \u2018a'\u2019 for SQR9-Pxyl-accDA; p<0.05).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Different concentrations of Spo0A (100, 250, 500, and 1000 nM) were chosen to test interaction with PbnaF.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Colony fluorescence. Colonies were observed under both bright field and GFP channel, to monitor the fluorescence of PaccDA-gfp in different strains. The bar represents 1 mm. (B) Quantification of colony fluorescence. The mean fluorescent intensity of different gfp reporters is observed in (A). Data are means and standard deviations from three biological replicates. Columns with different letters are statistically different according to the Duncan\u2019s multiple range test (p<0.05).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Sensitivity of wild-type SQR9 and SQR9-Pxyl-accDA (as the lawn) to the BAs extract of SQR9 (100 \u03bcL (1x) or 200 \u03bcL (2x)), with the addition of different concentrations of xylose (0%, 0.1%, and 0.2%). \u20180% xylose,\u2019 \u20180.1% xylose,\u2019 and \u20180.2% xylose\u2019 presented on the x-axis represents a different amount of xylose applied to the liquid culture of strain SQR9-Pxyl-accDA. Data are means and standard deviations from three biological replicates. Columns with different letters are statistically different according to the Duncan\u2019s multiple range test (p<0.05) (\u2018a\u2019 for 1 \u00d7 BAs extract of SQR9 and \u2018a\u2019\u201d for 2 \u00d7 BAs extract of SQR9).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Expression level of bnaAB (A, C) and bnaF (B, D) in the wild-type SQR9 and SQR9-Pxyl-accDA, with the addition of different concentrations of xylose (0%, 0.1%, and 0.2%). (AB) Quantification of colony fluorescence. The mean fluorescent intensity of different gfp reporters corresponds to the colonies shown in Figure 4F. (CD) Quantification of liquid culture fluorescence. The expression level of bnaAB (C) or bnaF (D) in wild-type SQR9 and SQR9-Pxyl-accDA treated with different amounts of xylose. Data are means and standard deviations from three biological replicates. Columns with different letters are statistically different according to the Duncan\u2019s multiple range test (\u2018a\u2019 for SQR9-PbnaAB-gfp or SQR9-PbnaF-gfp under different concentrations of xylose, and \u2018a'\u2019 for SQR9-Pxyl-accDA, PbnaAB-gfp or SQR9-Pxyl-accDA, PbnaF-gfp; p<0.05).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Fluorescence emission patterns of double-labeled strains. Colony cells of different double-labeled strains were visualized using a CLSM to monitor the distribution of fluorescence signal from different reporters. PaccDA-mCherry and PbnaAB-gfp were used to indicate cells expressing ACC and BAs self-immunity, respectively. The bar represents 5 \u03bcm. (B) Quantification of fluorescence emission patterns of this double-labeled strain. Flow cytometry monitoring the subfractions of ACC-producing cells (PaccDA-mCherry) and immune cells (PbnaAB-gfp). PaccDA-mCherry: strain harboring only the PaccDA-mCherry reporter. PbnaAB-gfp: strain harboring only the PbnaAB-gfp reporter. PaccDA-mCherry PbnaAB-gfp: double-labeled strain PaccDA-mCherry PbnaAB-gfp. Fluorescence intensity for the GFP channel is presented on the x-axis, and for the mCherry channel is presented on the y-axis. Control: wild-type strain expressing no fluorescence protein. The total cell number observed for each strain was 20,000.\n\n### The co-regulation policing system optimizes the division of labor and promotes population fitness\n\nHaving illustrated the molecular mechanism of the co-regulation pathway for punishing nonproducing cheater-like cells in B. velezensis SQR9, we wondered about the broad-spectrum ecological significance of this policing system for B. velezensis SQR9 at a community level. We constructed two mutants with disabled sanction mechanism, the \u0394bnaV deficient in BAs synthesis (loss of the punishing weapon) and the SQR9-P43-bnaAB that continually expresses the self-immunity genes (cheater-like individuals cannot be punished by the weapon BAs), both mutants showed similar growth characteristics with the wild-type (Figure 5\u2014figure supplement 1). We first applied flow cytometry analysis to test whether the lack of the policing system (\u0394bnaV and SQR9-P43-bnaAB) impairs the punishment of public goods-nonproducers during biofilm formation. The proportion of matrix-producing cooperators (eps & tapA active cells) in the wild-type community, as well as the average expression level of corresponding genes, were significantly higher than that in the \u0394bnaV or SQR9-P43-bnaAB community (Figure 5A and B), suggesting the division of labor in the two mutants population was significantly different with the wild-type. Consequently, the wild-type established a more vigorous biofilm as compared with the two mutants, as shown by the earlier initial progress, larger maximum biomass, and delayed dispersal process (prolonged stationary phase) (Figure 5C and D). Additionally, the robust biofilm formed by the wild-type also endowed them with stronger resistance against different stresses, including antibiotics, salinity, acid-base, and oxidation (Figure 5D, Figure 5\u2014figure supplement 2 and Figure 5\u2014figure supplement 3). These data indicate the policing system in wild-type SQR9 ameliorates the division of labor during biofilm formation, thereby promoting community fitness.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig5-v2.jpg)\n\n**Figure 5.:** (A) Flow cytometry monitoring the expression of Peps-gfp and PtapA-gfp reporters in wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB. (B) Quantification of (A). The proportion of the active cells (%) and average FITC in wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB, as monitored by Peps-gfp and PtapA-gfp reporters using flow cytometry. (C) Pellicle morphology. Pellicle formation dynamics of wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB in MSgg medium. (D) Quantification of pellicles. Pellicle weight dynamics of wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB in MSgg medium under normal (corresponds to (C)) or stressed conditions (H2O2, tetracycline, or 7% NaCl). (E) Qualitative analysis of protease or siderophore yield. Production of proteases and siderophore by wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB colonies. (F) Root colonization assay. Comparison of root colonization of wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB. Data are means and standard deviations from three biological replicates; columns with different letters are significantly different according to Duncan\u2019s multiple range tests, p<0.05.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Dynamic pellicle formation of wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB in MSgg medium under different stressed conditions.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Dynamic pellicle weight of wild-type SQR9, SQR9\u0394bnaV, and SQR9-P43-bnaAB in MSgg medium under different stressed conditions.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Columns with different letters are statistically different according to the Duncan\u2019s multiple range test (n=3, p<0.05).\n\nBesides the well-known regulation of biofilm matrix production, Spo0A also controls the production of other public goods such as proteases and siderophore (Fujita et al., 2005; Molle et al., 2003); it can be recognized as a critical switch that governs the cell transition from a free-living and fast-growing status (Spo0A-OFF), to a multicellular and cooperative style (Spo0A-ON) (Shank and Kolter, 2011; L\u00f3pez et al., 2009c). Intrinsically, the punishing targets of this policing system are supposed not limited to the cheater-like matrix-nonproducers, but all of the Spo0A-OFF individuals (cells that don\u2019t express the immune genes bnaAB, including protease-nonproducers and siderophore-nonproducers). Therefore, we determined the production of extracellular proteases and siderophore among the three strains, revealing that these public goods were also accumulated more in the wild-type than in these two mutants\u2019 communities (Figure 5E, Figure 5\u2014figure supplement 4). Importantly, the wild-type SQR9 demonstrated significantly stronger root colonization compared with the two mutant strains losing the cheater punishing system (Figure 5F). In summary, the Spo0A governed co-regulation punishment system effectively optimizes the division of labor and altruistic behavior in the B. velezensis population, by excluding the cheater-like nonproducers to a certain degree, consequently improving the population stability and ecological fitness under different conditions.\n\n## Discussion\n\nDivision of labor, where subpopulations perform complementary tasks simultaneously within an assembly, characterizes major evolutionary transitions of cooperation in certain cases (Babak, 2018). Unlike the diverse strategies for preventing obligate cheaters in cooperative systems (\u00d6zkaya et al., 2017; Smith and Schuster, 2019; Travisano and Velicer, 2004), division of labor requires an efficiency benefit and alignment of interests covering different specialized individuals (West and Cooper, 2016). For instance, compared with cells that produce a certain kind of public goods (e.g. ECM or extracellular hydrolases), the subpopulations that don\u2019t perform these tasks (but still share these benefits) become cheater-like individuals, and their proportion needs to be controlled for maintaining community stability and fitness (Martin et al., 2020; West and Cooper, 2016). In the present study, we demonstrated that during biofilm formation, the beneficial rhizobacterium B. velezensis SQR9 engages a policing system that coordinately actives ECM production and autotoxin synthesis/immunity, to punish the cheater-like subpopulation silencing in public goods secretion and restrain their proportion in the community (Figure 6). Importantly, the optimized division of labor not only facilitates ECM accumulation but also contributes to elevated production of other public goods including proteases and siderophore, thereby improving the community fitness under different stressful conditions and in plant rhizosphere (Figure 5), which could be defined as an effective strategy for enhancing cooperation and altruism. The coordination policing system suppresses subpopulation that stays in a fast-growing, motility phase (Spo0A-OFF state), to promote the population to a stationary, resource-mining phase (Spo0A-ON state) when the environment required (Figure 6). Our finding coincides with the phenomenon that Spo0A-dependent toxin killing of Spo0A-OFF cells in B. subtilis enhances biofilm formation and delays sporulation progress, which can be attributed to both eliminating of matrix-nonproducers and releasing of available nutrients (Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c; Huang et al., 2021). It should be noted that the coordination system for optimizing the division of labor is relatively temperate than those for excluding obligate cheaters (\u00d6zkaya et al., 2018; Wang et al., 2015), as only a subpopulation of the cheater-like individuals were killed (Figure 2); we think this scene is a balance between restraining the cheater-like subpopulation and retaining the advantages of cell differentiation (Babak, 2018; Kaern et al., 2005; L\u00f3pez et al., 2009c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84743/elife-84743-fig6-v2.jpg)\n\n**Figure 6.:** In certain conditions (e.g. environmental or self-produced clues, surface attachments, etc.), Bacillus cells can differentiate into Spo0A-ON (~moderate phosphorylated) and Spo0A-OFF (unphosphorylated) subpopulations. The Spo0A-ON subpopulation is cooperators that produce public goods for the community, such as ECM or proteases; simultaneously they express AccDA to produce malonyl-CoA as the precursor for BAs biosynthesis, and the endogenous autotoxin activates immunity-required transporter BnaAB to pump them out. Comparatively, the Spo0A-OFF subpopulation is cheat-like individuals that are silenced in public goods secretion, which are also disabled in malonyl-CoA production and BAs biosynthesis/self-immunity. Consequently, the cooperators-produced BAs can effectively eliminate the cheater-like nonproducers, thereby optimizing the division of labor and enhancing population fitness.\n\nThe molecular working model of the present policing system, being Spo0A simultaneously regulates ECM production and also the toxin-antitoxin system (Figure 6), represents typical co-regulation machinery for mediating microbial social interactions (Dandekar et al., 2012; van Gestel et al., 2015; Wang et al., 2015). The opportunistic pathogen Pseudomonas aeruginosa engages the QS circuit (LasR-LasI and RhlI-RhlR systems) to couple the production of public and private goods for placing a metabolic restraint on cheaters (Dandekar et al., 2012; Whiteley et al., 2017); the P. aeruginosa cooperators can also punish LasR-null social cheaters by producing cyanide, where cooperators acquire immunity from the QS system while cheaters are sensitive to this toxin (Wang et al., 2015; Yan et al., 2019). During biofilm formation and sporulation by B. subtilis, the global regulator Spo0A simultaneously induces the production of matrix and cannibalism toxins (Skf and Sdp); since genes responsible for toxin synthesis and self-immunity are simultaneously expressed, the matrix producers can be resistant to these toxins while the sensitive nonproducers will be selectively penalized (Ellermeier et al., 2006; Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c). In the comparison of B. subtilis and B. velezensis SQR9, the similarity is that the global regulator Spo0A controls the synthesis of the ECM and the cannibalism toxin; the difference lies in the type of cannibalism toxin and its synthesis/regulation pathway. Specifically, the Spo0A-governed policing system in B. velezensis SQR9 is extremely unique: (i) The toxic BAs for punishment are novel antimicrobial fatty acids that firstly identified in strain SQR9, which mediate cannibalism and strongly inhibit the growth of closely related Bacillus strains; also its synthesis is encoded by a horizontal gene transfer (HGT)-acquired genomic island (Wang et al., 2019). (ii) Spo0A doesn\u2019t mediate the BAs production/self-immunity in a direct transcriptional regulation way, but activates AccDA for accumulating the precursor for BAs biosynthesis (a post-transcriptional manner; Figure 4). The accumulated BA precursor may induce the expression of BA synthetase genes; additionally, the self-resistance is mainly induced by intracellular BAs through a two-component system (Huang et al., 2021). Therefore, the foreign genomic island and the indigenous Spo0A regulation pathways, constitute an ingenious coordination system for punishing cheater-like nonproducers and enhancing clonemate cooperation.\n\nRelevant to how such a complex system could evolve, a possible scenario is a gradual evolution through transitional states. Perhaps homogeneous biofilm formation was the ancestral state, where all cells in the community are matrix producers (Khare and Shaulsky, 2006). Thereafter, heterogeneous biofilm raised as cells specialize in motile or matrix-producing subpopulations; it would be favored if the benefit of quickly responding to drop-in nutrients outweighed the cost of having cheater-like nonproducers that reduced the ability to form a biofilm (Hamilton, 1964; Smits et al., 2006; L\u00f3pez et al., 2009c; Joan et al., 2011; West and Cooper, 2016). Furthermore, the heterogeneous biofilm strategy provides the evolutionary context of sanctioning behavior (Acar et al., 2008; L\u00f3pez et al., 2009c; West and Cooper, 2016; Spratt and Lane, 2022). Interestingly, the genomic island responsible for BAs synthesis in B. velezensis SQR9 acquired through HGT, not only acts as a weapon for antagonizing closely related competitors (Wang et al., 2019), but also establishes a policing system for punishing cheater-like individuals within the biofilm community. Considering that bacterial biofilm is a major lifestyle in the natural environment (Hall-Stoodley et al., 2004), the dual ecological benefits probably explain why this large cluster was integrated into the genome of strain SQR9; also this case can provide inspiration for discovering novel molecular regulatory mechanisms and understanding microbial evolution events (Strassmann et al., 2000). Alternatively, this sanction system can work in concert with a privatization strategy to collectively enhance cooperation during biofilm formation (Otto et al., 2020).\n\nIn conclusion, the present study highlights the beneficial rhizobacterium B. velezensis SQR9 engages a policing system that coordinately actives ECM production and autotoxin synthesis/immunity, to penalize the cheater-like subpopulation silencing in public goods secretion, thereby enhancing the division of labor and community fitness. This study provides insights into the molecular mechanism involved in controlling cell differentiation, as well as the ecological roles of the policing system, which deepens our understanding of the maintenance and evolution of microbial cooperation and altruistic behavior.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Bacillus velezensis)</td>\n      <td>SQR9</td>\n      <td>Lab strain</td>\n      <td>CGMCC accession No. 5808</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus velezensis)</td>\n      <td>FZB42</td>\n      <td>Chen et al., 2007</td>\n      <td>BGSC accession no. 10A6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Top 10</td>\n      <td>Invitrogen</td>\n      <td></td>\n      <td>Host for plasmids</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 (DE3)</td>\n      <td>Invitrogen</td>\n      <td></td>\n      <td>For recombinant protein expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pNW33n(plasmid)</td>\n      <td>Zhou et al., 2018</td>\n      <td></td>\n      <td>B. subtilis-E. coli shuttle vector</td>\n    </tr>\n    <tr>\n      <td>Gene (Bacillus velezensis)</td>\n      <td>spo0A</td>\n      <td>GenBank</td>\n      <td>V529_25300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Bacillus velezensis)</td>\n      <td>bnaA</td>\n      <td>GenBank</td>\n      <td>V529_06410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Bacillus velezensis)</td>\n      <td>bnaB</td>\n      <td>GenBank</td>\n      <td>V529_06420</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Bacillus velezensis)</td>\n      <td>bnaV</td>\n      <td>GenBank</td>\n      <td>V529_06620</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo V10</td>\n      <td>FlowJo V10</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SPSS</td>\n      <td>SPSS</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Propidium iodide</td>\n      <td>Invitrogen</td>\n      <td>L7012</td>\n      <td>(20 mM)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains and growth conditions\n\nThe strains and plasmids used in this study are listed in Supplementary file 1a. Bacillus velezensis SQR9 (formerly B. amyloliquefaciens SQR9, China General Microbiology Culture Collection Center (CGMCC) accession no. 5808) was used throughout this study. B. velezensis FZB42 (Bacillus Genetic Stock Center (BGSC) accession no. 10A6) was used to test the BAs production by wild-type SQR9 and its mutants. Escherichia coli TOP 10 (Invitrogen, Shanghai, China) was used as the host for all plasmids. E. coli BL21 (DE3) (Invitrogen, Shanghai, China) was used as the host for recombinant protein expression. All strains were routinely grown at 37 \u00b0C in low-salt Luria-Bertani (LLB) medium (10 g L\u20131 peptone, 5 g L\u20131 yeast extract, 3 g L\u20131 NaCl). For biofilm formation, B. velezensis SQR9 and its mutants were cultivated in MSgg medium (5 mM potassium phosphate, 100 mM morpholine propanesulfonic acid, 2 mM MgCl2, 700 \u03bcM CaCl2, 50 \u03bcM MnCl2, 50 \u03bcM FeCl3, 1 \u03bcM ZnCl2, 2 mM thiamine, 0.5% glycerol, 0.5% glutamate, 50 \u03bcg of tryptophan per milliliter, 50 \u03bcg of phenylalanine per milliliter, and 50 \u03bcg of threonine per milliliter) at 37 \u00b0C (Branda et al., 2001). To collect the fermentation supernatant for antagonism assessment, B. velezensis SQR9 and its mutants were cultured in Landy medium (Landy et al., 1947) containing 20 g L\u20131 glucose and 1 g L\u20131 yeast extract. When necessary, antibiotics were added to the medium at the following final concentrations: zeocin, 20 \u03bcg mL\u20131; spectinomycin, 100 \u03bcg mL\u20131; kanamycin, 30 \u03bcg mL\u20131; ampicillin, 100 \u03bcg mL\u20131; chloramphenicol, 5 \u03bcg mL\u20131 for B. velezensis strains and 12.5 \u03bcg mL\u20131 for E. coli strains; erythromycin, 1 \u03bcg mL\u20131 for B. velezensis strains and 200 \u03bcg mL\u20131 for E. coli strains. The medium was solidified with 2% agar.\n\n### Reporter construction\n\nFor single-labeled strain, the promoter region of the testing gene and gfp fragment were fused through overlap PCR, and this transcriptional fusion was cloned into vector pNW33n using primers listed in Supplementary file 1b. For double-labeled strains, one promoter region was fused with gfp fragment, and the other promoter region was fused with the mCherry fragment. The two fusions were then fused in opposite transcription directions and cloned into vector pNW33n using primers listed in Supplementary file 1b. All constructions were transferred into competent cells of B. velezensis SQR9 and mutants when required.\n\n### Promoter replacement\n\nStrain SQR9-Pxyl-accDA was constructed by replacing the original promoter of accDA (PaccDA) with a xylose-inducible promoter Pxyl. The approximately 800 bp fragments upstream and downstream of the PaccDA region were amplified from the genomic DNA of strain SQR9; the Spcr fragment was amplified from plasmid P7S6 (Feng et al., 2018), and the Pxyl promoter was amplified from the plasmid PWH1510 (Xu et al., 2019a). The four fragments were fused using overlap PCR in the order of the upstream fragment, Spcr, Pxyl, and the downstream fragment. The fusion was transferred into competent cells of B. velezensis SQR9 for generating transformants. Strain SQR9-P43-bnaAB was obtained by replacing the original promoter (PbnaAB) with a constitutive promoter P43. The primers used for constructing the four-fragment fusion are listed in Supplementary file 1b.\n\n### Fluorescence microscopy\n\nCells were inoculated from a fresh pre-culture and grown to mid-exponential growth at 37 \u00b0C in an LLB medium. Bacterial cultures were centrifuged at 4000 \u00d7 g for 5 min, the pellets were washed and suspended in liquid MSgg to reach an OD600 of 1.0. One \u03bcL suspension was placed on a solid MSgg medium and was cultured at 37 \u00b0C for 12 h. Agarose MSgg pads were then inverted on a glass bottom dish (Nest). Cells were imaged using the Leica TCS SP8 microscope with the 63x oil-immersion objective lens. For GFP observation, the excitation wavelength was 488 nm and the emission wavelength was 500~560 nm; for mCherry observation, the excitation wavelength was 587 nm and the emission wavelength was 590~630 nm. Wild-type biofilms containing no fluorescent fusions were analyzed to determine the background fluorescence. The number of cells emitting mCherry, GFP, or both fluorescence was also collected for calculating the proportion; each treatment includes six biological replicates.\n\nFor the time-lapse experiment, after staining with propidium iodide (PI) for 15 min, images of early-stage biofilms on the agarose pad were recorded for 3 hr, with an interval of 3 min. Image acquisitions were also performed with the Leica TCS SP8 microscope with the 63x oil-immersion objective lens. Detectors and filter sets for monitoring of GFP and PI (excitation wavelength of 536 nm and emission wavelength of 608~652 nm) were used.\n\n### Flow cytometry\n\nBiofilms of 16 hr were collected and re-suspended in 1 mL PBS buffer, and single cells were obtained after mild sonication. Cells were centrifuged at 4000 \u00d7 g for 5 min and washed briefly with PBS. For flow cytometry, cells were diluted to 1:100 in PBS and measured on BD FACSCanto II. For GFP fluorescence, the laser excitation was 488 nm and coupled with 500\u2013560 nm.\n\nFor assessment of the double-labeled strains, cells were diluted to 1:100 in PBS and measured on BD FACS Symphony SORP. For GFP fluorescence, the laser excitation was 488 nm coupled with 530/30 and 505LP sequential filters; for mCherry fluorescence, the laser excitation was 561 nm coupled with 610/20 and 600LP sequential filters.\n\nEvery replicate was analyzed for 20,000 events. FlowJo V10 software was used for data analysis and graph creating. Three replicates were analyzed for each treatment.\n\n### Preparation of the BAs extract\n\nThe BAs extract was prepared by thin layer chromatography (TLC). According to a previous study (Wang et al., 2019), the fermentation supernatant of strain SQR9 was separated on a TLC plate, and the inhibition zone on the lawn of strain FZB42 indicated the position of BAs. Then, silica gel powder with BAs was scraped and extracted by MeOH, which was used as the BAs extract.\n\n### Oxford cup assay\n\nInhibition of different SQR9-derived mutants on B. velezensis FZB42 was evaluated by the Oxford cup method. The suspension of strain FZB42 (~106 CFU mL\u20131) was spread onto LLB plates (10 \u00d7 10 cm) to grow as a bacterial lawn. A volume of 100 \u03bcL BAs extract produced by different mutants was injected into an Oxford cup on the lawn of strain FZB42. The plates were placed at 22 \u00b0C until a clear zone formed around the cup, and the inhibition diameter was scored. Each treatment includes three biological replicates.\n\n### BAs-sensitivity assessment\n\nCells were inoculated from a fresh pre-culture and grown to mid-exponential growth at 37 \u00b0C in an LLB medium. Afterward, diluted cell suspension (~106 CFU mL\u20131) was spread onto LLB plates to grow as a bacterial lawn. A volume of 100 \u03bcL BAs extracts from the wild-type SQR9 was injected into an Oxford cup on the lawn. The plates were placed at 22 \u00b0C for observation and determination of the inhibition zone. Each treatment includes three biological replicates.\n\n### Biolayer interferometry (BLI) measurements\n\nTo confirm whether Spo0A can bind PbnaF directly, determination of binding kinetics was performed on an Octet RED96 device (ForteBio, Inc, Menlo Park, US) at 25 \u00b0C with orbital sensor agitation at 1000 rpm. Streptavidin (SA) sensor tips (ForteBio) were used to immobilize 100 nM biotin-labeled PbnaF. Then, a baseline measurement was performed in the buffer PBST (PBS, 0.1% BSA, 0.02% Tween-20) for 300 s. The binding of Spo0A at different concentrations (100 nM, 250 nM, 500 nM, and 1000 nM) to PbnaF was recorded for 600 s followed by monitoring protein dissociation using PBST for another 600 s. The BLI data for each binding event was summarized as an \u2018nm shift\u2019 (the wavelength/spectral shift in nanometers) and KD values were determined by fitting to a 1:1 binding model.\n\n### Promoter activity testing via fluorescence intensity\n\nFor colony fluorescence, cells were inoculated from a pre-culture into a fresh LLB medium and grown at 37 \u00b0C with 170 rpm shaking until OD600 reached 0.5. One \u03bcL of the suspension was inoculated on a solid LLB medium and cultured at 37 \u00b0C. Colony morphology and fluorescence were recorded by the stereoscope. ImageJ software was used to measure GFP intensity. For liquid culture fluorescence, overnight cultures were transferred to a fresh LLB medium. Fluorescence intensity was determined by a microtiter plate reader. Each treatment includes three biological replicates.\n\n### Xylose induction assay\n\nFor the xylose-induced BAs production assay, 30 \u03bcL overnight culture of SQR9-Pxyl-accDA or wild-type SQR9 was transferred respectively into 3 mL fresh LLB liquid with different concentrations of xylose (0%, 0.1%, and 0.2%) and incubated at 37 \u00b0C, 170 rpm for 24 hr. Cell suspensions were adjusted to the same OD600 and were centrifuged at 12,000 \u00d7 g for 1 min. The cell-free supernatant was mixed with MeOH (volume ratio 2:1) to extract BAs. A volume of 100 \u03bcL extract was injected into an Oxford cup on the lawn of strain FZB42 (as described above). The plates were placed at 22 \u00b0C.\n\nFor the xylose-induced self-immunity assay, strain SQR9-Pxyl-accDA was grown in LLB without xylose for 24 hr. The cell suspension was spread onto LLB plates containing different concentrations of xylose (0%, 0.1%, and 0.2%) to grow as the lawn. A volume of 100 \u03bcL (1x) or 200 \u03bcL (2x) BAs extract from the wild-type SQR9 was injected into an Oxford cup on the lawn. The plates were placed at 22 \u00b0C.\n\nFor xylose-induced gene expression assay, cells were inoculated from a pre-culture into fresh LLB medium with different concentrations of xylose (0%, 0.1%, and 0.2%), and were grown at 37 \u00b0C with 170 rpm shaking until OD600 reached 0.5. One \u03bcL of suspension was inoculated on a solid LLB medium and was cultured at 37 \u00b0C, colony morphology and fluorescence were recorded by the stereoscope.\n\nEach treatment in these assays includes three biological replicates.\n\n### Biofilm formation\n\nCells were inoculated from a fresh pre-culture and grown to mid-exponential growth at 37 \u00b0C in an LLB medium. Bacterial cultures were centrifuged at 4000 \u00d7 g for 5 min, the pellets were washed and suspended in MSgg medium to an OD600 of 1.0. For colony observation, 1 \u03bcL of suspension was inoculated on a solid MSgg medium and cultured at 37 \u00b0C, then the colony morphology was recorded by the stereoscope. For pellicle observation, the suspension was inoculated into MSgg medium with a final concentration of 1% in a microtiter plate well, and the cultures were incubated at 37 \u00b0C without shaking.\n\nBesides, the ability of the strain to form biofilm under stress was measured in the 48-well microtiter plate according to the method described above. When required, reagents that simulate stress were supplemented in the MSgg medium before inoculating, including oxidative stress (0.0025% H2O2), salt stress (7% NaCl), acid stress (pH 5), alkaline stress (pH 8), and antibiotic stress (4\u00a0\u00b5g mL\u20131 tetracycline or 20\u00a0\u00b5g mL\u20131 streptomycin). The amount of reagent added was determined according to a concentration gradient in the pre-experiment, and a concentration was chosen to inhibit wild-type growth without killing it. At different stages of biofilm development (initiation, progress, maturity, and dispersal), the MSgg medium underneath the biofilm was carefully removed by pipetting, and then the biofilm was taken and weighed.\n\nEach treatment includes three biological replicates.\n\n### Root colonization assay in hydroponic culture\n\nThe bacterial suspension was inoculated into 1/4 Murashige-Skoog medium to make the final OD600 value to be 0.1, into which sterile cucumber seedlings with three true leaves were immersed. After being cultured with slowly shaking for two days, cells colonized on cucumber roots were determined by plate colony counting. In detail, roots were washed eight times in PBS to remove free and weakly attached bacterial cells. After vortexing for 5 min, until colonized bacteria were detached from roots, 100 \u03bcL of the bacterial suspension was plated onto LLB agar plates for quantification. Each treatment includes three biological replicates.\n\n### Measurement of public goods production\n\nQualitative measurement of proteases production was done by inoculating 1 \u03bcL of bacterial suspension on a solid 2% skim milk medium and cultured at 30 \u00b0C until a transparent zone formed around colonies; quantitative measurements of alkaline protease and neutral protease activity were conducted according to a previous study (Kunitz, 1947). Qualitative and quantitative measurements of siderophore production were based on the universal chemical assay described by Schwyn and Neilands, 1987. Each treatment includes three biological replicates.\n",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "85fbd795-8213-4aaf-9480-e585a293abcd",
+      "submission_id": "37416907-b710-4462-ba65-20ecb720066d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karine A Gibbs, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84743.sa0](https://doi.org/10.7554/eLife.84743.sa0)\n\nThis manuscript reports notable findings regarding the potential for self-policing and a division of labor among biofilm-inhabiting Bacillus cells. Overall, this work is robust in its use of various techniques and provides solid insights into the intersections of well-understood regulatory controls and the suppression of cheaters. Colleagues interested in microbial social interactions should find this study's narrative about the internal mediation of cell differentiation valuable.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karine A Gibbs, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84743.sa1](https://doi.org/10.7554/eLife.84743.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A toxin-mediated policing system in Bacillus optimizes division of labor via penalizing cheater-like nonproducers\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bin Ni (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAddressing the following list of major suggestions is essential for substantiating the manuscript's conclusions. (Note: The reviewing editor has lightly edited the reviewers' statements for clarity.)\n\n1) The microscopy needs additional quantitative analysis.\n\nItem #(1) All of the microscopy needs total cell count numbers.\n\nItem #(2) Although Figure 1 depicts the co-expression pattern of ECM production (eps and tapA) and policing system (bnaF and bnaA) as an individual-level property, it lacks statistical analysis and a spatial correlation test. The authors should provide flow-cytometry data that quantifies the overlap between different subpopulations; with this data, one could understand the cell differentiation pattern from a population perspective.\n\nItem #(3) For the data presented in Figure 1, the authors need a more concrete discussion of methods and could expand upon their existing quantification to improve the understanding of the co-expression of EPS and BA genes. How were cells segmented? What were the thresholds for whether a cell emitted fluorescence, and how was such a threshold chosen? The authors should perform a more sophisticated colocalization/correlation analysis. e.g., if the cells have a high Peps signal, does that correlate with a high PbnaF signal?\n\nItem #(4) In the CLSM photographs (figure supplement 6 and lines 195 \u2013 199), only one frame and no population sizes were provided. Additional frames and population counts are needed.\n\n2) The gfp/mCherry fusions need transcriptional validation. For example, use qPCR to ascertain the relationship between the transcription of the reporter genes and the genes (eps, tapA, etc.) to which they correspond.\n\n3) Figure 2 is not definitive.\n\n#(1) The PI staining microscopy (as shown in Figure 2 and the supplemental videos) does not demonstrate that only non-expressing cells perish. Also, the presented data shows many non-labeled cells without PI; why do some nearby non-gfp-expressing cells remain alive? Consider using a third reporter that is a marker for all living cells (constitutive expression).\n\nQuestion #(2) How do the authors determine whether the PI-stained cells were producers or cheaters before they died based on the data shown in Figure 2? If a Peps-GFP cell dies, I presume it loses its GFP signal? Do the authors identify the cell types before death? Furthermore, in the figure legend, the authors should define what they mean by \"near\" an EPS- producing cell. Is this quantitatively defined?\n\nItem #(3) Figure 2 shows no visual evidence that the distance to producer cells matters. Also, the counts for \"Statistics\" in Figure 2 lack total population sizes, error bars, and statistical analysis; these data are needed to determine whether \"selectively punish\" is an accurate conclusion or whether other cellular factors could also explain the PI-stained cells.\n\n3) The authors need to standardize their measurements of gene expression. Currently, the authors determine gene expression in different ways. For example, in Figure 3D, the ratio between fluorescence intensity and cell density (RFU/OD600) is used to show the transcription of target genes. While in Figure 4F, only RFU is shown but OD600 is ignored. Using only the fluorescence data may not reflect the objective gene expression pattern if the xylose concentrations can affect the growth of wild-type SQR9 or the constructed strains.\n\n4) The spo0A complementation is a partial rescue, most visible in cells with the eps promoter driving gfp expression. The authors need to address this discrepancy and discuss its implications.\n\n5) The data in Figure 4E should be quantified, as similar data are in other figures.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 Figure 2 shows no visual evidence that the distance to producer cells matters. Also, the counts for \"Statistics\" in Figure 2 lack total population sizes, error bars, and statistical analysis; these data are needed to determine whether \"selectively punish\" is an accurate conclusion or whether other cellular factors could also explain the PI-stained cells.\n\n\u2013 In general, the total cell count numbers (in all microscopy) are needed. I could not fully validate the imaging conclusions with the data and images provided.\n\n\u2013 The spo0A complementation is a partial rescue, most visible in cells with the eps promoter driving gfp expression. The authors need to address this discrepancy and discuss its implications.\n\n\u2013 I could not verify the conclusions from the CLSM photographs (figure supplement 6 and lines 195 \u2013 199) as only one frame and no population sizes were provided.\n\n\u2013 B. subtilis is a well-studied organism. It would be helpful for the authors to include how the pathways in this Bacillus strain compare to the known ones in B. subtilis. As written, it seems that accDA might be a direct regulator, but it's not clear from the results shown. (I took away that it's an upstream regulator, but is it indirect?)\n\n\u2013 For all photography, explicitly state that the image represents ## experiments (in the legend).\n\n\u2013 The supplemental videos do not show more than the still images and are not needed for this manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\nAlthough the manuscript is concise and brings a detailed study of social interactions within microbial populations, I nevertheless have a few major concerns. Some of my main concerns would require additional experiments and a re-write of some part of the manuscript.\n\n1) The co-expression pattern of ECM production (eps and tapA) and policing system (bnaF and bnaA) was shown in Figure 1 in an individual-level property, but lacks statistical analysis or spatial correlation test. I suggest authors provide a flow-cytometry data that quantifies the overlap between different subpopulations, thus we can understand the cell differentiation pattern in a population perspective.\n\n2) The gfp/mCherry fusions need a transcriptional validation, such as the correspondence between the transcription of the reporter genes and corresponding genes (eps, tapA, etc.) determined by qPCR.\n\n3) Determination of gene expression are performed in different ways. For example, in Figure 3D, the ratio between fluorescence intensity and cell density (RFU/OD600) is used to show the transcription of target genes. While in Figure 4F, only RFU is shown but OD600 is ignored; if the xylose concentrations can affect the growth of wild-type SQR9 or the constructed strains, using only the fluorescence data may not reflect the objective gene expression pattern.\n\n4) According to the working model raised by the authors, it seems that expression of ECM-related genes (eps and tapA) and BAs-synthesis genes (bnaF) are not directly relevant, since Spo0A enhances ECM production in a transcriptional-regulation pattern but activates BAs biosynthesis in a post-transcriptional manner (by promoting the accumulation of the precursor). Interestingly, the CLSM graph shows that expression of these two sorts of genes is also likely to be overlapped. Authors should discuss or comment on this phenomenon in the manuscript.\n\n5) Line 111-114, one additional sentence is needed here for introducing why the autotoxin system is involved in this scene.\n\n6) Line 261, the reference citation format is incorrect.\n\nThe two references in Table S1 (Chen et al., 2007; Zhou et al., 2017) are missing in the Reference List.\n\n7) Figures need to be standardized, such as font size and initial capitalization in Figure 5D.\n\n8) There are a couple of grammatical and semantic errors in the manuscript. Please carefully go through the manuscript to correct them.\n\nReviewer #3 (Recommendations for the authors):\n\n1. For the data presented in Figure 1, the authors need more concrete discussion of methods and could expand upon their existing quantification to improve the understanding of the co-expression of EPS and BA genes. How were cells segmented? What were the thresholds for whether a cell emitted fluorescence or not, and how was such a threshold chosen? The authors should perform a more sophisticated colocalization/correlation analysis. e.g. if the cells have high Peps signal, does that correlate with high PbnaF signal?\n\n2. For the data presented in Figure 2, how do the authors determine that the PI-stained cells were producers or cheaters before death? If a Peps-GFP cell dies, I presume it loses its GFP signal? Do the authors identify the cell types before death? Furthermore, in the figure legend, the authors should define what they mean by \"near\" an EPS- producing cell. Is this quantitatively defined?\n\n3. The data in Figure 4E should be quantified, as similar data are in other figures.\n",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e8e87ccb-5900-4af2-be14-11b3cdb06721",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C1",
+      "claim": "During biofilm formation in B. velezensis SQR9, cells differentiate into extracellular matrix (ECM)-producers and cheater-like nonproducers.",
+      "claim_type": "EXPLICIT",
+      "source": "During biofilm formation, cells differentiated into the extracellular matrix (ECM)-producers and cheater-like nonproducers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence microscopy showing subpopulation expression patterns of ECM-related genes (Peps-mCherry, PtapA-mCherry) in Figure 1 and flow cytometry data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "0b77c043-6641-41b7-a8cc-0153debd6b00",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C2",
+      "claim": "ECM-producers in B. velezensis SQR9 are active in the biosynthesis of genomic island-governed toxic bacillunoic acids (BAs) and self-resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "ECM-producers were also active in the biosynthesis of genomic island-governed toxic bacillunoic acids (BAs) and self-resistance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by co-expression of ECM reporters (Peps-mCherry, PtapA-mCherry) with BAs synthesis/immunity reporters (PbnaF-gfp, PbnaAB-gfp) in the same subpopulation as shown in Figure 1 and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "ad1c2b38-8436-41f2-a3d6-b0121ce3e13a",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C3",
+      "claim": "Nonproducers in B. velezensis SQR9 are sensitive to bacillunoic acids and can be partially eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "while the nonproducers were sensitive to this antibiotic and could be partially eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by time-lapse microscopy with propidium iodide staining showing cell death of nonproducers adjacent to producers in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "fa1870ea-1ea4-4a39-ba95-075aff29b4cf",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C4",
+      "claim": "Spo0A is the co-regulator for triggering both ECM production and BAs synthesis/immunity in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Spo0A was identified to be the co-regulator for triggering both ECM production and BAs synthesis/immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by mutant analysis showing \u0394spo0A has reduced BAs production, impaired ECM production, and decreased expression of eps, tapA, bnaF, and bnaAB genes as shown in Figure 3 and Figure 3\u2014figure supplement 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "44012f5d-b321-4b65-88c5-1b2df8d243dd",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C5",
+      "claim": "Spo0A activates acetyl-CoA carboxylase to produce malonyl-CoA, which is essential for BAs biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Spo0A activates acetyl-CoA carboxylase to produce malonyl-CoA, which is essential for BAs biosynthesis, thereby stimulating BAs production and self-immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing Spo0A positively regulates accDA expression (Figure 4B, Figure 4\u2014figure supplement 2), and xylose-inducible accDA expression restores BAs production and immunity in a dose-dependent manner (Figure 4C-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "2648d08f-a926-4648-bf05-3a6df8f28d4b",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C6",
+      "claim": "The policing system excludes ECM-nonproducing cheater-like individuals in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "the policing system not only excluded ECM-nonproducing cheater-like individuals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by flow cytometry showing higher proportion of matrix-producing cooperators in wild-type compared to \u0394bnaV and SQR9-P43-bnaAB mutants (Figure 5A-B), and time-lapse microscopy showing selective killing of nonproducers (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "e1dee61f-4020-4dd0-aae0-102f8b02717d",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C7",
+      "claim": "The policing system improves the production of other public goods such as protease and siderophore in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "but also improved the production of other public goods such as protease and siderophore",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qualitative and quantitative assays showing wild-type SQR9 produces more proteases and siderophore compared to \u0394bnaV and SQR9-P43-bnaAB mutants (Figure 5E, Figure 5\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c6855633-408d-45a8-8c01-4946cba0d069",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C8",
+      "claim": "The policing system enhances population stability and ecological fitness under stress conditions in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "consequently, enhancing the population stability and ecological fitness under stress conditions and in the rhizosphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by biofilm formation assays showing wild-type forms more robust biofilms with better stress resistance (antibiotics, salinity, acid-base, oxidation) compared to mutants lacking the policing system (Figure 5C-D, Figure 5\u2014figure supplement 2-3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "9407b7ad-edde-43aa-b21a-3ea8d974eb0f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C9",
+      "claim": "The policing system enhances ecological fitness in the rhizosphere in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "consequently, enhancing the population stability and ecological fitness under stress conditions and in the rhizosphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by root colonization assays showing wild-type SQR9 has significantly stronger root colonization compared to \u0394bnaV and SQR9-P43-bnaAB mutants (Figure 5F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "23002ddc-f74a-4636-829c-959d871b11c2",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C10",
+      "claim": "Expression of Peps-mCherry, PtapA-mCherry, PbnaF-gfp, and PbnaAB-gfp occurs in a subpopulation of cells during biofilm formation in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Photographs show that expression of the Peps-mCherry, PtapA-mCherry, PbnaF-gfp, and PbnaAB-gfp were all observed in a subpopulation cells of the whole community (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly observed in confocal microscopy images in Figure 1 showing heterogeneous fluorescence patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "8c9480d4-81e1-47f5-8ebb-469c558e8250",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C11",
+      "claim": "ECM and BAs production is generally raised in the same subpopulation in B. velezensis SQR9 biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "the overlay of the double fluorescent reporters indicates that ECM and BAs production is generally raised in the same subpopulation (Figure 1; the yellow cells represent co-expression of mCherry and gfp)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by overlay images in Figure 1 showing yellow cells (co-expression of mCherry and gfp) and confirmed by flow cytometry showing positive correlation (Figure 1\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "ae605c5f-4cf6-4aaf-8266-dd767548fb5f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C12",
+      "claim": "Self-immunity gene bnaAB is specifically activated by endogenous BAs in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "since the self-immunity gene bnaAB was reported to be specifically activated by endogenous BAs (Huang et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Huang et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "98153d1f-3377-44e3-96a9-26f38610ae7c",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C13",
+      "claim": "Self-immunity gene bnaAB is preferentially expressed in the same subpopulation with ECM-producers in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "it was also preferentially expressed in the same subpopulation with ECM-producers (Figure 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by co-localization of PbnaAB-gfp with Peps-mCherry and PtapA-mCherry in Figure 1 and flow cytometry data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "3ee40306-546d-4673-800e-693f6eca7afb",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C14",
+      "claim": "Cells that don't produce public ECM or toxic BAs are killed by adjacent producers during biofilm development in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "It was observed that a portion of the cells that didn't produce public ECM or toxic BAs, or silenced in expression of the self-immunity gene bnaAB (cells without GFP signal), were killed by adjacent corresponding producers during the biofilm development process (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by time-lapse microscopy with propidium iodide staining showing cell death dynamics in Figure 2 and Figure 2\u2014videos 1\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "6b63adc9-3664-40fa-b499-61a8404676a8",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C15",
+      "claim": "Producers of ECM and BAs remain alive throughout biofilm incubation in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "while these producers remained alive throughout the incubation (Figure 2\u2014videos 1\u20134)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in time-lapse videos (Figure 2\u2014videos 1\u20134) tracking cell viability over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "56c4ae73-fc11-4bb9-ba8e-39510651b769",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C16",
+      "claim": "The number of dead cells adjacent to producers is significantly higher than that close to non-producers in B. velezensis SQR9 biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "importantly, the number of dead cells adjacent to the producers was significantly higher than that closed to the non-producers (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified in Figure 2\u2014figure supplement 1 showing statistical analysis of dead cell distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "5131ec07-a231-420e-b103-c15362e4150a",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C17",
+      "claim": "Cell lysis in B. velezensis SQR9 biofilms can be attributed to BAs produced by gfp-activated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This lysis can be attributed to the BAs produced by the gfp-activated cells, as cannibalism of B. velezensis SQR9 was largely dependent on the production of this secondary metabolism (Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Huang et al., 2021) demonstrating BAs-dependent cannibalism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "f25c81ba-2d9b-4a03-8280-6ced5b7bba12",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C18",
+      "claim": "Only \u0394spo0A among mutants altered in ECM production shows significantly reduced BAs production in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "only \u0394spo0A but no other mutants (all with the equal cell density of the wild-type), revealed a significantly reduced inhibition zone towards FZB42, and the complementary strain generally restored the antagonistic ability (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Oxford cup assays showing inhibition zones in Figure 3A-B, comparing \u0394degU, \u0394comPA, \u0394abrB, \u0394sinI, \u0394sinR, and \u0394spo0A mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "84f3b9c9-00cf-47cb-9db4-0a1d7feb2bce",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C19",
+      "claim": "Spo0A is a master regulator that governs multiple physiological behaviors in B. subtilis and closely-related species.",
+      "claim_type": "EXPLICIT",
+      "source": "Spo0A is a well-investigated master regulator that governs multiple physiological behaviors in B. subtilis and closely-related species Hamon and Lazazzera, 2001; Molle et al., 2003; Xu et al., 2019b",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Hamon and Lazazzera, 2001; Molle et al., 2003; Xu et al., 2019b).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c0898f05-1fd3-42dd-af8d-4c6d558294f1",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C20",
+      "claim": "EPS production and biofilm formation are seriously impaired in \u0394spo0A mutant of B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "as expected, the EPS production and biofilm formation was seriously impaired in \u0394spo0A (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by pellicle formation and EPS production assays in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "ef837a59-5fed-4555-9761-d958175d54cc",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C21",
+      "claim": "\u0394spo0A can be substantially inhibited by BAs extract of wild-type SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394spo0A but neither its complementary strain nor the wild-type, can be substantially inhibited by the BAs extract of strain SQR9, while \u0394spo0A was not inhibited by \u0394GI3 that disabled in BAs production (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Oxford cup assays in Figure 3C showing sensitivity of different strains to BAs extract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "39b39574-5968-43fb-a13d-005c6503223f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C22",
+      "claim": "Spo0A participates in immunity to BAs in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting Spo0A does participate in the immunity to BAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing \u0394spo0A is sensitive to BAs while wild-type and complementary strain are resistant (Figure 3C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "f200361f-9665-4d7e-9d89-e4c1cb7ac8cf",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C23",
+      "claim": "Expression level of eps, tapA, bnaF, and bnaAB is significantly decreased in \u0394spo0A compared with wild-type B. velezensis SQR9 under liquid culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "under both liquid culture (Figure 3D) and plate colony conditions (Figure 3\u2014figure supplement 2), their expression level was significantly decreased in \u0394spo0A as compared with the wild-type, which was restored in the complementary strain \u0394spo0A/spo0A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by gfp reporter fluorescence measurements in liquid culture (Figure 3D) and on plates (Figure 3\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "5a85dcfa-232d-4194-9ff7-ad4b1dd34527",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C24",
+      "claim": "Expression level of eps, tapA, bnaF, and bnaAB is significantly decreased in \u0394spo0A compared with wild-type B. velezensis SQR9 under plate colony conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "under both liquid culture (Figure 3D) and plate colony conditions (Figure 3\u2014figure supplement 2), their expression level was significantly decreased in \u0394spo0A as compared with the wild-type, which was restored in the complementary strain \u0394spo0A/spo0A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by gfp reporter fluorescence measurements in liquid culture (Figure 3D) and on plates (Figure 3\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c42d4f86-5d6a-4d34-a752-7795d68647a5",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C25",
+      "claim": "Spo0A regulates ECM production and BAs biosynthesis/immunity through transcriptional regulation of relevant genes in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the global regulator Spo0A is the co-regulator for controlling ECM production and BAs biosynthesis/immunity in B. velezensis, which is probably dependent on the transcriptional regulation of certain relevant genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from gene expression data showing Spo0A-dependent changes in eps, tapA, bnaF, and bnaAB expression (Figure 3D, Figure 3\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "3b234d0c-16d5-4740-92b2-278f5c204d8c",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C26",
+      "claim": "Purified protein Spo0A cannot directly bind to the promoter of bnaF in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the purified protein Spo0A cannot directly bind to the promoter of bnaF, suggesting it doesn't induce BAs production through direct transcriptional activation (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by biolayer interferometry analysis showing no binding signal between Spo0A and PbnaF (Figure 4\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "3dd89aa4-2bea-4b9b-9bbe-d3c1c008458f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C27",
+      "claim": "Spo0A stimulates the expression of accDA that encodes acetyl-CoA carboxylase in Bacillus.",
+      "claim_type": "EXPLICIT",
+      "source": "Spo0A has been reported to stimulate the expression of accDA that encodes ACC (Diomand\u00e9 et al., 2015; Pedrido et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Diomand\u00e9 et al., 2015; Pedrido et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "d3803b6a-485d-442d-8135-9a4a7b4cbb0a",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C28",
+      "claim": "Acetyl-CoA carboxylase catalyzes acetyl-CoA to generate malonyl-CoA, an essential precursor for BAs biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "which catalyzes acetyl-CoA to generate malonyl-CoA, an essential precursor for BAs biosynthesis (Figure 4A; Wang et al., 2019)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation (Wang et al., 2019) and illustrated in the biosynthetic pathway diagram in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "2c31ee80-49a0-46c1-b066-f74b47ef26db",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C29",
+      "claim": "Spo0A positively regulates accDA expression in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "We firstly verified the positive regulation of Spo0A on accDA expression in B. velezensis SQR9 by gfp fusion (Figure 4B, Figure 4\u2014figure supplement 2 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by PaccDA-gfp reporter showing reduced fluorescence in \u0394spo0A compared to wild-type (Figure 4B, Figure 4\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "45605c77-6e1e-472f-a617-ec9e34b1846a",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C30",
+      "claim": "SQR9-Pxyl-accDA loses antagonism ability towards target strain FZB42 in the absence of xylose.",
+      "claim_type": "EXPLICIT",
+      "source": "The SQR9-Pxyl-accDA lost the antagonism ability towards target strain FZB42 in the absence of xylose, while the inhibition was significantly enhanced with the induction of xylose in a dose-dependent manner (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Oxford cup assays showing inhibition zones with different xylose concentrations (Figure 4C-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "4523196b-2250-4083-9712-4afd0c526590",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C31",
+      "claim": "Inhibition of FZB42 by SQR9-Pxyl-accDA is significantly enhanced with xylose induction in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The SQR9-Pxyl-accDA lost the antagonism ability towards target strain FZB42 in the absence of xylose, while the inhibition was significantly enhanced with the induction of xylose in a dose-dependent manner (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Oxford cup assays showing increasing inhibition zones with increasing xylose concentrations (Figure 4C-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "1466b315-3101-4866-a198-f131a5b1b1aa",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C32",
+      "claim": "Exogenous xylose does not influence the suppression of wild-type SQR9 on FZB42.",
+      "claim_type": "EXPLICIT",
+      "source": "Since exogenous xylose didn't influence the suppression of wild-type SQR9 on FZB42 (Figure 4C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by control experiments in Figure 4C-D where wild-type SQR9 shows consistent inhibition regardless of xylose concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "b8ac1039-cadf-4670-8755-38a1a9860aad",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C33",
+      "claim": "accDA expression positively contributes to BAs production in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "these results suggest that accDA expression positively contributes to BAs production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from xylose-induction experiments showing dose-dependent restoration of BAs production with accDA expression (Figure 4C-D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "4b2a192b-d450-4025-a6f0-78b4c2847767",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C34",
+      "claim": "SQR9-Pxyl-accDA is sensitive to SQR9-produced BAs without xylose addition.",
+      "claim_type": "EXPLICIT",
+      "source": "the SQR9-Pxyl-accDA was proved to be sensitive to SQR9-produced BAs without xylose addition, and the immunity was gradually restored with xylose supplement (Figure 4E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Oxford cup assays showing inhibition zones on SQR9-Pxyl-accDA lawns without xylose (Figure 4E, Figure 4\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "089413a3-73b6-4218-a334-8a9cc72eb3dc",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C35",
+      "claim": "Immunity to BAs in SQR9-Pxyl-accDA is gradually restored with xylose supplement.",
+      "claim_type": "EXPLICIT",
+      "source": "the SQR9-Pxyl-accDA was proved to be sensitive to SQR9-produced BAs without xylose addition, and the immunity was gradually restored with xylose supplement (Figure 4E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Oxford cup assays showing decreasing inhibition zones with increasing xylose concentrations (Figure 4E, Figure 4\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "9e6a9e77-f04a-448b-a5a9-94431168af18",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C36",
+      "claim": "Xylose-induced transcription of accDA results in enhanced expression of self-immunity gene bnaAB in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "The xylose-induced transcription of accDA, also resulted in enhanced expression of genes involved in self-immunity (bnaAB; Figure 4F, for quantitative intensity please see Figure 4F, Figure 4\u2014figure supplement 4A, C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by colony fluorescence and liquid culture fluorescence measurements showing increased PbnaAB-gfp expression with xylose induction (Figure 4F, Figure 4\u2014figure supplement 4A, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "8dd67fa7-e3ac-4e88-9dfc-d0f643441e58",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C37",
+      "claim": "Xylose-induced transcription of accDA does not result in enhanced expression of BAs synthesis gene bnaF in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "but not BAs synthesis (bnaF; Figure 4F and Figure 4\u2014figure supplement 4B, D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by colony fluorescence and liquid culture fluorescence measurements showing no significant change in PbnaF-gfp expression with xylose induction (Figure 4F, Figure 4\u2014figure supplement 4B, D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "6ac2be80-be55-413c-acdc-e9ceac019d90",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C38",
+      "claim": "AccDA-derived malonyl-CoA accumulation affects BAs production in a post-transcriptional manner in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "as the AccDA-derived malonyl-CoA accumulation affects BAs production in a post-transcriptional manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing accDA induction increases BAs production and immunity but not bnaF transcription (Figure 4C-F).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "b60bd63c-8a02-4f12-9e36-96d7cdd1d954",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C39",
+      "claim": "Activation of accDA and bnaAB is located in the same subpopulation cells in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLSM photographs and flow cytometry analysis also reveal that the activation of accDA (mCherry fusion) and bnaAB (gfp fusion) was located in the same subpopulation cells (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and flow cytometry showing co-localization of PaccDA-mCherry and PbnaAB-gfp (Figure 4\u2014figure supplement 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "d873f113-fbd3-4805-b163-0dd7b59e7619",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C40",
+      "claim": "\u0394bnaV and SQR9-P43-bnaAB mutants show similar growth characteristics with wild-type B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "both mutants showed similar growth characteristics with the wild-type (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by growth curve data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "b8341562-16c8-4708-9e0f-13030bff2c8a",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C41",
+      "claim": "The proportion of matrix-producing cooperators in wild-type B. velezensis SQR9 is significantly higher than in \u0394bnaV or SQR9-P43-bnaAB communities.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of matrix-producing cooperators (eps & tapA active cells) in the wild-type community, as well as the average expression level of corresponding genes, were significantly higher than that in the \u0394bnaV or SQR9-P43-bnaAB community (Figure 5A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by flow cytometry analysis quantifying proportion of active cells and average FITC intensity (Figure 5A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "aeb7be0e-c6a3-4f5d-b9ba-ec04ea75b351",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C42",
+      "claim": "The average expression level of matrix genes in wild-type B. velezensis SQR9 is significantly higher than in \u0394bnaV or SQR9-P43-bnaAB communities.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of matrix-producing cooperators (eps & tapA active cells) in the wild-type community, as well as the average expression level of corresponding genes, were significantly higher than that in the \u0394bnaV or SQR9-P43-bnaAB community (Figure 5A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by flow cytometry analysis quantifying average FITC intensity (Figure 5A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "2403c920-8eb7-4c6d-911d-c77e199337e6",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C43",
+      "claim": "Wild-type B. velezensis SQR9 establishes a more vigorous biofilm compared with \u0394bnaV and SQR9-P43-bnaAB mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the wild-type established a more vigorous biofilm as compared with the two mutants, as shown by the earlier initial progress, larger maximum biomass, and delayed dispersal process (prolonged stationary phase) (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pellicle morphology and weight dynamics measurements (Figure 5C-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "7a328bb5-a55b-46af-8c37-48786bd753cf",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C44",
+      "claim": "Wild-type B. velezensis SQR9 biofilm shows earlier initial progress compared to \u0394bnaV and SQR9-P43-bnaAB mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "as shown by the earlier initial progress, larger maximum biomass, and delayed dispersal process (prolonged stationary phase) (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in pellicle formation dynamics in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "cca67a10-5d30-429f-b240-d19ec6e382da",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C45",
+      "claim": "Wild-type B. velezensis SQR9 biofilm shows larger maximum biomass compared to \u0394bnaV and SQR9-P43-bnaAB mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "as shown by the earlier initial progress, larger maximum biomass, and delayed dispersal process (prolonged stationary phase) (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in pellicle weight dynamics in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "bf486c13-8f77-4e66-8798-83c8ffe01113",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C46",
+      "claim": "Wild-type B. velezensis SQR9 biofilm shows delayed dispersal process (prolonged stationary phase) compared to \u0394bnaV and SQR9-P43-bnaAB mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "as shown by the earlier initial progress, larger maximum biomass, and delayed dispersal process (prolonged stationary phase) (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in pellicle weight dynamics over time in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "2584ca4d-1ea0-4870-9441-2a276615817f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C47",
+      "claim": "Robust biofilm formed by wild-type B. velezensis SQR9 endows stronger resistance against antibiotics compared to mutants lacking the policing system.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the robust biofilm formed by the wild-type also endowed them with stronger resistance against different stresses, including antibiotics, salinity, acid-base, and oxidation (Figure 5D, Figure 5\u2014figure supplement 2 and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by biofilm formation assays under tetracycline and streptomycin stress (Figure 5D, Figure 5\u2014figure supplement 2-3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "0fa360d3-4e1b-471f-a2b4-8dc187c08c51",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C48",
+      "claim": "Robust biofilm formed by wild-type B. velezensis SQR9 endows stronger resistance against salinity compared to mutants lacking the policing system.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the robust biofilm formed by the wild-type also endowed them with stronger resistance against different stresses, including antibiotics, salinity, acid-base, and oxidation (Figure 5D, Figure 5\u2014figure supplement 2 and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by biofilm formation assays under 7% NaCl stress (Figure 5D, Figure 5\u2014figure supplement 2-3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "b8e4442f-b3b4-4567-8a0f-520d00524073",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C49",
+      "claim": "Robust biofilm formed by wild-type B. velezensis SQR9 endows stronger resistance against acid-base stress compared to mutants lacking the policing system.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the robust biofilm formed by the wild-type also endowed them with stronger resistance against different stresses, including antibiotics, salinity, acid-base, and oxidation (Figure 5D, Figure 5\u2014figure supplement 2 and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by biofilm formation assays under pH 5 and pH 8 conditions (Figure 5D, Figure 5\u2014figure supplement 2-3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "79665719-e299-49ac-9613-ad5c7bb69269",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C50",
+      "claim": "Robust biofilm formed by wild-type B. velezensis SQR9 endows stronger resistance against oxidation compared to mutants lacking the policing system.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the robust biofilm formed by the wild-type also endowed them with stronger resistance against different stresses, including antibiotics, salinity, acid-base, and oxidation (Figure 5D, Figure 5\u2014figure supplement 2 and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by biofilm formation assays under H2O2 stress (Figure 5D, Figure 5\u2014figure supplement 2-3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "7eeb8082-9507-4664-9828-a4c12240bb5e",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C51",
+      "claim": "Spo0A controls the production of proteases in Bacillus.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the well-known regulation of biofilm matrix production, Spo0A also controls the production of other public goods such as proteases and siderophore (Fujita et al., 2005; Molle et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Fujita et al., 2005; Molle et al., 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "dbd37932-6423-4883-9235-6d05155821c1",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C52",
+      "claim": "Spo0A controls the production of siderophore in Bacillus.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the well-known regulation of biofilm matrix production, Spo0A also controls the production of other public goods such as proteases and siderophore (Fujita et al., 2005; Molle et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Fujita et al., 2005; Molle et al., 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "f29c28b7-5e47-441c-b3a9-dd218c168dba",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C53",
+      "claim": "Spo0A is a critical switch that governs cell transition from a free-living and fast-growing status (Spo0A-OFF) to a multicellular and cooperative style (Spo0A-ON) in Bacillus.",
+      "claim_type": "EXPLICIT",
+      "source": "it can be recognized as a critical switch that governs the cell transition from a free-living and fast-growing status (Spo0A-OFF), to a multicellular and cooperative style (Spo0A-ON) (Shank and Kolter, 2011; L\u00f3pez et al., 2009c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Shank and Kolter, 2011; L\u00f3pez et al., 2009c).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "5dd4d8ce-9611-42c6-8881-db96af406717",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C54",
+      "claim": "The punishing targets of the policing system in B. velezensis SQR9 are all Spo0A-OFF individuals, including protease-nonproducers and siderophore-nonproducers.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically, the punishing targets of this policing system are supposed not limited to the cheater-like matrix-nonproducers, but all of the Spo0A-OFF individuals (cells that don't express the immune genes bnaAB, including protease-nonproducers and siderophore-nonproducers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the role of Spo0A in controlling multiple public goods and the co-regulation of immunity with public goods production.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "190b8089-99fa-428e-b88d-4ca693dc60bf",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C55",
+      "claim": "Extracellular proteases are accumulated more in wild-type B. velezensis SQR9 than in \u0394bnaV and SQR9-P43-bnaAB mutant communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we determined the production of extracellular proteases and siderophore among the three strains, revealing that these public goods were also accumulated more in the wild-type than in these two mutants' communities (Figure 5E, Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by qualitative and quantitative protease assays (Figure 5E, Figure 5\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "4c0fc764-f1a9-401c-9391-b39e63cdee52",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C56",
+      "claim": "Siderophore is accumulated more in wild-type B. velezensis SQR9 than in \u0394bnaV and SQR9-P43-bnaAB mutant communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we determined the production of extracellular proteases and siderophore among the three strains, revealing that these public goods were also accumulated more in the wild-type than in these two mutants' communities (Figure 5E, Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by qualitative and quantitative siderophore assays (Figure 5E, Figure 5\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "d3dd97c4-1957-4f72-aa8b-c8af91a0e509",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C57",
+      "claim": "Wild-type B. velezensis SQR9 demonstrates significantly stronger root colonization compared with \u0394bnaV and SQR9-P43-bnaAB mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the wild-type SQR9 demonstrated significantly stronger root colonization compared with the two mutant strains losing the cheater punishing system (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by root colonization assays in hydroponic culture (Figure 5F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "cd0d06a7-9298-4005-b8d6-ad3edb9b9cb6",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C58",
+      "claim": "The Spo0A-governed co-regulation punishment system effectively optimizes the division of labor and altruistic behavior in B. velezensis population by excluding cheater-like nonproducers.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the Spo0A governed co-regulation punishment system effectively optimizes the division of labor and altruistic behavior in the B. velezensis population, by excluding the cheater-like nonproducers to a certain degree, consequently improving the population stability and ecological fitness under different conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comprehensive data showing improved biofilm formation, public goods production, stress resistance, and root colonization in wild-type compared to mutants (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "5b425d47-a55c-4528-99c7-bed420eae229",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C59",
+      "claim": "The policing system improves population stability under different conditions in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "consequently improving the population stability and ecological fitness under different conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by biofilm formation dynamics and stress resistance assays (Figure 5C-D, Figure 5\u2014figure supplement 2-3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "cbf8e2e7-cbea-4bc3-9bb4-7c7d3fc31359",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C60",
+      "claim": "Division of labor requires an efficiency benefit and alignment of interests covering different specialized individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "it would be favored if the benefit of quickly responding to drop-in nutrients outweighed the cost of having cheater-like nonproducers that reduced the ability to form a biofilm (Hamilton, 1964; Smits et al., 2006; L\u00f3pez et al., 2009c; Joan et al., 2011; West and Cooper, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical and empirical studies (Hamilton, 1964; Smits et al., 2006; L\u00f3pez et al., 2009c; Joan et al., 2011; West and Cooper, 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "be1313e3-35f0-4e4e-8a32-4cc20d0a6548",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C61",
+      "claim": "The genomic island responsible for BAs synthesis in B. velezensis SQR9 was acquired through horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the genomic island responsible for BAs synthesis in B. velezensis SQR9 acquired through HGT, not only acts as a weapon for antagonizing closely related competitors (Wang et al., 2019), but also establishes a policing system for punishing cheater-like individuals within the biofilm community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as fact with citation to previous work (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c26e85e3-a852-48d2-9b17-58b951e9b1dc",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C62",
+      "claim": "The genomic island for BAs synthesis acts as a weapon for antagonizing closely related competitors in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "the genomic island responsible for BAs synthesis in B. velezensis SQR9 acquired through HGT, not only acts as a weapon for antagonizing closely related competitors (Wang et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "96d51f4e-1401-4f00-964c-6135b6ee170d",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C63",
+      "claim": "The genomic island for BAs synthesis establishes a policing system for punishing cheater-like individuals within the biofilm community in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "but also establishes a policing system for punishing cheater-like individuals within the biofilm community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the comprehensive experimental data in this study showing coordinated ECM and BAs production, selective killing of nonproducers, and improved community fitness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "15ab8926-135e-40f8-950f-67459abd16c1",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C64",
+      "claim": "Bacterial biofilm is a major lifestyle in the natural environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that bacterial biofilm is a major lifestyle in the natural environment (Hall-Stoodley et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Hall-Stoodley et al., 2004).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "22161b59-952b-4e42-b1c1-1dbfdeac0fbb",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C65",
+      "claim": "B. velezensis SQR9 is a beneficial rhizobacterium that forms robust and highly structured biofilms on the air-liquid interface and plant roots.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacillus velezensis SQR9 (formerly B. amyloliquefaciens SQR9) is a well-studied beneficial rhizobacterium that forms robust and highly structured biofilms on the air-liquid interface and plant roots (Qiu et al., 2014; Xu et al., 2019a; Xu et al., 2013; Cao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Qiu et al., 2014; Xu et al., 2019a; Xu et al., 2013; Cao et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c1d01a94-5b02-4e8f-ae1e-dc0f6674f264",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C66",
+      "claim": "Strain SQR9 harbors a novel genomic island 3 (GI3) consisting of four operons.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain SQR9 harbors a novel genomic island 3 (GI3) consisting of four operons, where the second, third, and fourth operons are responsible for the production of the novel branched-chain fatty acids, BAs, while the first operon encodes an ABC transporter to export toxic BAs for self-immunity (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "adf1f96b-4ee4-4cff-83df-d27b55fb1e7c",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C67",
+      "claim": "The second, third, and fourth operons of GI3 are responsible for the production of bacillunoic acids in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "where the second, third, and fourth operons are responsible for the production of the novel branched-chain fatty acids, BAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "1b0c5d40-582d-43c7-97ae-b1d31dec4099",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C68",
+      "claim": "The first operon of GI3 encodes an ABC transporter to export toxic BAs for self-immunity in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "while the first operon encodes an ABC transporter to export toxic BAs for self-immunity (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "a42524a2-0429-4e45-8860-a00849f4a375",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C69",
+      "claim": "Production of toxic BAs occurs in the subfraction of cells with self-immunity ability induced by BAs during biofilm formation in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Production of toxic BAs was proved to occur in the subfraction of cells with the self-immunity ability induced by BAs during biofilm formation, where the nonproducing siblings will be lysed by BAs (Huang et al., 2021; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Huang et al., 2021; Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c9aabfbc-d1e5-4d13-8130-f348878be6a5",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C70",
+      "claim": "Nonproducing siblings are lysed by BAs during biofilm formation in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "where the nonproducing siblings will be lysed by BAs (Huang et al., 2021; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Huang et al., 2021; Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "734fd676-c27f-4adf-b7f6-70299f196e0c",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C71",
+      "claim": "BA-mediated cannibalism enhanced biofilm formation of strain SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the manifestation that the BA-mediated cannibalism enhanced the biofilm formation of strain SQR9",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation that led to the hypothesis of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "dfd8c1d8-cce5-4ec5-a62e-3a082fb8baec",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C72",
+      "claim": "Cooperative interactions are prevalent among microbial communities in many contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperative interactions are not restricted to complex, higher organisms, but are also prevalent among microbial communities in many contexts (Kehe et al., 2021; Rakoff-Nahoum et al., 2016; Wenseleers and Ratnieks, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Kehe et al., 2021; Rakoff-Nahoum et al., 2016; Wenseleers and Ratnieks, 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "67b03387-3df5-426d-8ec8-7ecc3b1d98aa",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C73",
+      "claim": "Cooperative systems are vulnerable to non-cooperative cheaters that exploit public goods.",
+      "claim_type": "EXPLICIT",
+      "source": "Both natural selection and game theory predict that cooperative systems are vulnerable to non-cooperative cheaters that exploit the benefit, such as public goods including extracellular enzymes (Chen et al., 2019), siderophore (Griffin et al., 2004), or biofilm matrix (Drago\u0161 and Kov\u00e1cs, 2017; Vlamakis et al., 2013) since these selfish individuals enjoy the common resources without paying their cost (Hardin, 1968; Martin et al., 2020; West et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical and empirical studies (Chen et al., 2019; Griffin et al., 2004; Drago\u0161 and Kov\u00e1cs, 2017; Vlamakis et al., 2013; Hardin, 1968; Martin et al., 2020; West et al., 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "f87318ca-50fc-49fc-bed1-4e6fd538af48",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C74",
+      "claim": "Cooperation principally survives cheating during evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, cooperation principally survives cheating during evolutionary history (Travisano and Velicer, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Travisano and Velicer, 2004).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "58054708-d2b9-4df8-80c4-15bcc6b02773",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C75",
+      "claim": "Mechanisms for maintaining cooperation include kin selection/discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "These strategies mainly include kin selection/discrimination (\u00d6zkaya et al., 2017; Diggle et al., 2007; McNally et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (\u00d6zkaya et al., 2017; Diggle et al., 2007; McNally et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "b2a8b41b-1d0c-4ce2-81ef-e49ff83d52fe",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C76",
+      "claim": "Mechanisms for maintaining cooperation include facultative cooperation regulated by quorum-sensing systems.",
+      "claim_type": "EXPLICIT",
+      "source": "facultative cooperation regulated by a quorum-sensing (QS) system (Allen et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Allen et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "6e168cac-86f5-48d2-9efd-7bf790fcac13",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C77",
+      "claim": "Mechanisms for maintaining cooperation include nutrient fitness cost.",
+      "claim_type": "EXPLICIT",
+      "source": "or nutrient fitness cost (Sexton and Schuster, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Sexton and Schuster, 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "37aa8428-e782-490f-a920-40cdc861102f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C78",
+      "claim": "Mechanisms for maintaining cooperation include coupling production of public and private goods.",
+      "claim_type": "EXPLICIT",
+      "source": "coupling production of public and private goods (Dandekar et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Dandekar et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "a0ae57d2-682c-491f-b9a7-f56342609551",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C79",
+      "claim": "Mechanisms for maintaining cooperation include punishment of cheating individuals by cooperator-produced antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "punishment of cheating individuals by cooperator-produced antibiotics (Garc\u00eda-Contreras et al., 2015; Wang et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Garc\u00eda-Contreras et al., 2015; Wang et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "ba7e826d-2060-4ba6-b1d8-2a1e0480f1b9",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C80",
+      "claim": "Mechanisms for maintaining cooperation include partial privatization of public goods under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "partial privatization of public goods under certain conditions (Jin et al., 2018; Otto et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Jin et al., 2018; Otto et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "9f658792-96f4-4cf0-8d6f-fa73e3e670a3",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C81",
+      "claim": "Mechanisms for maintaining cooperation include spatial structuring.",
+      "claim_type": "EXPLICIT",
+      "source": "and spatial structuring (van Gestel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (van Gestel et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "0c936384-b11e-48c2-921f-4bbca64b42fa",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C82",
+      "claim": "B. subtilis colony differentiates into surfactin-producing and matrix-producing cells during sliding motility.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Bacillus subtilis colony will phenotypically differentiate into surfactin-producing and matrix-producing cells during sliding motility, where the surfactin reduces the friction between cells and their substrate, while the matrix assembles into van Gogh bundles that drive the migration (Jordi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Jordi et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "8efb2058-54d6-4fb4-8fa5-9d93ccde83a1",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C83",
+      "claim": "B. subtilis cells differentiate into motile cells and matrix-producing cells during biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "it is known that B. subtilis cells can differentiate into motile cells and matrix-producing cells during biofilm formation (Vlamakis et al., 2008; Chai et al., 2008; Shank and Kolter, 2011; L\u00f3pez and Kolter, 2010; L\u00f3pez et al., 2009c; L\u00f3pez et al., 2009a; van Gestel et al., 2015; Vlamakis et al., 2013; Kearns, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple previous studies (Vlamakis et al., 2008; Chai et al., 2008; Shank and Kolter, 2011; L\u00f3pez and Kolter, 2010; L\u00f3pez et al., 2009c; L\u00f3pez et al., 2009a; van Gestel et al., 2015; Vlamakis et al., 2013; Kearns, 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "da97385e-df0c-4782-8a32-106ec368f768",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C84",
+      "claim": "The advantage of division of labor is to efficiently integrate distinct cellular activities, thereby endowing a community with higher fitness than undifferentiated clones.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the division of labor is to efficiently integrate distinct cellular activities, thereby endowing a community with higher fitness than undifferentiated clones (West and Cooper, 2016; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (West and Cooper, 2016; Zhang et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "76ec8631-6104-4baa-80d2-069c702aa23e",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C85",
+      "claim": "Efficient division of labor relies on elaborate coordination of cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, efficient division of labor relies on elaborate coordination of cell differentiation (Cremer et al., 2019; L\u00f3pez et al., 2009b; Lord et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Cremer et al., 2019; L\u00f3pez et al., 2009b; Lord et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "a55c69d9-f854-4bb9-b623-8a5e84fdef49",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C86",
+      "claim": "Nonproducing cells that enjoy public goods become cheater-like individuals in division of labor systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In relative to the subpopulation producing a certain public good (e.g. cells producing ECM during biofilm formation), the nonproducing cells that can also enjoy this common good, actually become the 'cheater-like' individuals to some extent (although they may provide other contributions to the community) (Claessen et al., 2014; Otto et al., 2020; West and Cooper, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Claessen et al., 2014; Otto et al., 2020; West and Cooper, 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "4cd0cdd2-7e3c-4103-9079-ab2170ed0c11",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C87",
+      "claim": "Regulating the proportion of each cell type is important for maintaining the stability and fitness of division of labor.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, regulating the proportion of each cell type and alignment of interests, is important for maintaining the stability and fitness of the division of labor (West and Cooper, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (West and Cooper, 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "7f2e5531-8c96-41a8-a115-f4c0d61f6c42",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C88",
+      "claim": "Unbalanced cell differentiation reduces population productivity and can cause collapse of division of labor.",
+      "claim_type": "EXPLICIT",
+      "source": "while an unbalanced cell differentiation will reduce the population productivity and even cause a collapse of the division of labor (Drago\u0161 et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Drago\u0161 et al., 2018a).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "74e096c2-0cad-4fe8-80bf-f1f0629af79d",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C89",
+      "claim": "The coordination policing system suppresses subpopulation in fast-growing, motility phase (Spo0A-OFF state) to promote population to stationary, resource-mining phase (Spo0A-ON state) when the environment requires.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordination policing system suppresses subpopulation that stays in a fast-growing, motility phase (Spo0A-OFF state), to promote the population to a stationary, resource-mining phase (Spo0A-ON state) when the environment required (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Illustrated in the working model in Figure 6 and supported by experimental data throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "088c9dba-683c-4460-8499-a8ff967657a9",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C90",
+      "claim": "Spo0A-dependent toxin killing of Spo0A-OFF cells in B. subtilis enhances biofilm formation and delays sporulation progress.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding coincides with the phenomenon that Spo0A-dependent toxin killing of Spo0A-OFF cells in B. subtilis enhances biofilm formation and delays sporulation progress, which can be attributed to both eliminating of matrix-nonproducers and releasing of available nutrients (Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c; Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c; Huang et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "1edd244b-5288-4478-bb0a-cceabd9e01ea",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C91",
+      "claim": "The coordination system for optimizing division of labor is relatively temperate compared to systems for excluding obligate cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the coordination system for optimizing the division of labor is relatively temperate than those for excluding obligate cheaters (\u00d6zkaya et al., 2018; Wang et al., 2015), as only a subpopulation of the cheater-like individuals were killed (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse microscopy data showing partial killing of nonproducers (Figure 2) and citations to studies on obligate cheater exclusion (\u00d6zkaya et al., 2018; Wang et al., 2015).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "28009b2d-b2d9-4419-8014-64b7a87c0620",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C92",
+      "claim": "The temperate nature of the policing system represents a balance between restraining cheater-like subpopulation and retaining advantages of cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "we think this scene is a balance between restraining the cheater-like subpopulation and retaining the advantages of cell differentiation (Babak, 2018; Kaern et al., 2005; L\u00f3pez et al., 2009c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the partial killing observed and supported by citations to relevant studies (Babak, 2018; Kaern et al., 2005; L\u00f3pez et al., 2009c).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "cfe79b1d-9295-4b18-8100-08c1db72106f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C93",
+      "claim": "Spo0A simultaneously regulates ECM production and the toxin-antitoxin system in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular working model of the present policing system, being Spo0A simultaneously regulates ECM production and also the toxin-antitoxin system (Figure 6), represents typical co-regulation machinery for mediating microbial social interactions (Dandekar et al., 2012; van Gestel et al., 2015; Wang et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data showing Spo0A regulates both ECM genes and BAs synthesis/immunity (Figure 3, Figure 4) and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "42f90016-0a2f-4469-9e68-e9790447f0f4",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C94",
+      "claim": "P. aeruginosa engages the QS circuit to couple production of public and private goods for placing metabolic restraint on cheaters.",
+      "claim_type": "EXPLICIT",
+      "source": "The opportunistic pathogen Pseudomonas aeruginosa engages the QS circuit (LasR-LasI and RhlI-RhlR systems) to couple the production of public and private goods for placing a metabolic restraint on cheaters (Dandekar et al., 2012; Whiteley et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Dandekar et al., 2012; Whiteley et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "d6423cd9-cd69-422b-ab6b-5df5512550e9",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C95",
+      "claim": "P. aeruginosa cooperators punish LasR-null social cheaters by producing cyanide.",
+      "claim_type": "EXPLICIT",
+      "source": "the P. aeruginosa cooperators can also punish LasR-null social cheaters by producing cyanide, where cooperators acquire immunity from the QS system while cheaters are sensitive to this toxin (Wang et al., 2015; Yan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Wang et al., 2015; Yan et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "559a5467-a7b8-4f04-8241-f350e0d95002",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C96",
+      "claim": "During biofilm formation and sporulation by B. subtilis, Spo0A simultaneously induces production of matrix and cannibalism toxins (Skf and Sdp).",
+      "claim_type": "EXPLICIT",
+      "source": "During biofilm formation and sporulation by B. subtilis, the global regulator Spo0A simultaneously induces the production of matrix and cannibalism toxins (Skf and Sdp); since genes responsible for toxin synthesis and self-immunity are simultaneously expressed, the matrix producers can be resistant to these toxins while the sensitive nonproducers will be selectively penalized (Ellermeier et al., 2006; Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Ellermeier et al., 2006; Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "3fae191d-acb8-4baa-a669-2847a2cc5249",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C97",
+      "claim": "In B. subtilis, matrix producers are resistant to cannibalism toxins while sensitive nonproducers are selectively penalized.",
+      "claim_type": "EXPLICIT",
+      "source": "since genes responsible for toxin synthesis and self-immunity are simultaneously expressed, the matrix producers can be resistant to these toxins while the sensitive nonproducers will be selectively penalized (Ellermeier et al., 2006; Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Ellermeier et al., 2006; Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "fab79054-f5f3-444f-8b24-531e67867f3f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C98",
+      "claim": "The similarity between B. subtilis and B. velezensis SQR9 is that Spo0A controls synthesis of ECM and cannibalism toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the comparison of B. subtilis and B. velezensis SQR9, the similarity is that the global regulator Spo0A controls the synthesis of the ECM and the cannibalism toxin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of findings in this study with previous work on B. subtilis.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "3ba13775-bdb4-4c45-8de4-0b2874fca0a0",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C99",
+      "claim": "The difference between B. subtilis and B. velezensis SQR9 lies in the type of cannibalism toxin and its synthesis/regulation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "the difference lies in the type of cannibalism toxin and its synthesis/regulation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of findings in this study (BAs in SQR9) with previous work on B. subtilis (Skf and Sdp toxins).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c23276ef-c668-49fc-bf2d-39e68940fdab",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C100",
+      "claim": "Toxic BAs for punishment in B. velezensis SQR9 are novel antimicrobial fatty acids that mediate cannibalism and strongly inhibit growth of closely related Bacillus strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The toxic BAs for punishment are novel antimicrobial fatty acids that firstly identified in strain SQR9, which mediate cannibalism and strongly inhibit the growth of closely related Bacillus strains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a characteristic of BAs with implicit reference to previous characterization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "297fc053-ad08-4a8f-8b44-832c50c111a5",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C101",
+      "claim": "BAs synthesis in B. velezensis SQR9 is encoded by a horizontal gene transfer-acquired genomic island.",
+      "claim_type": "EXPLICIT",
+      "source": "also its synthesis is encoded by a horizontal gene transfer (HGT)-acquired genomic island (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "d3abecc5-33a2-4e28-86d3-185d91df032e",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C102",
+      "claim": "Spo0A doesn't mediate BAs production/self-immunity through direct transcriptional regulation in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Spo0A doesn't mediate the BAs production/self-immunity in a direct transcriptional regulation way, but activates AccDA for accumulating the precursor for BAs biosynthesis (a post-transcriptional manner; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BLI showing no direct binding to PbnaF (Figure 4\u2014figure supplement 1) and data showing Spo0A regulates accDA which produces malonyl-CoA precursor (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "3cff74b6-5cc1-474e-a844-572fc2401846",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C103",
+      "claim": "Accumulated BA precursor may induce expression of BA synthetase genes in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulated BA precursor may induce the expression of BA synthetase genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the observation that accDA induction increases BAs production without increasing bnaF transcription.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "312a0df8-dfca-4f6e-bc7e-48c435e5604d",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C104",
+      "claim": "Self-resistance to BAs in B. velezensis SQR9 is mainly induced by intracellular BAs through a two-component system.",
+      "claim_type": "EXPLICIT",
+      "source": "additionally, the self-resistance is mainly induced by intracellular BAs through a two-component system (Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Huang et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "6336b019-d8b8-4195-a07e-625c2936e9b0",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "claim_id": "C105",
+      "claim": "The foreign genomic island and indigenous Spo0A regulation pathways constitute a coordination system for punishing cheater-like nonproducers in B. velezensis SQR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the foreign genomic island and the indigenous Spo0A regulation pathways, constitute an ingenious coordination system for punishing cheater-like nonproducers and enhancing clonemate cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comprehensive experimental data showing integration of HGT-acquired BAs synthesis with native Spo0A regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a891744d-4768-452b-984c-1228aa2b79c6",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During biofilm formation in B. velezensis SQR9, cells differentiate into ECM-producing and nonproducing subpopulations, with ECM production and BAs synthesis/immunity generally co-localized in the same subpopulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10, C11, and C13 are supported by confocal microscopy showing heterogeneous expression patterns of ECM and BAs reporters (Figure 1), overlay images showing co-expression (yellow cells), and flow cytometry confirming positive correlation (Figure 1\u2014figure supplement 1). The data consistently demonstrate cell differentiation and co-regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "dacd3ff5-95fc-4d8a-96c8-26e1be3ccc2d",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ECM-producers are active in BAs biosynthesis and self-immunity, with the self-immunity gene bnaAB specifically activated by endogenous BAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C12 are supported by co-expression data showing ECM reporters with BAs synthesis/immunity reporters in the same subpopulation (Figure 1, Figure 1\u2014figure supplement 1) and citation to previous work (Huang et al., 2021) demonstrating BAs-specific activation of bnaAB. The evidence is consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "63f76c68-829c-443b-b1b8-45ce3bc18e04",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nonproducers of ECM and BAs are selectively killed by adjacent producers during biofilm development, with significantly more dead cells near producers than nonproducers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, C15, C16, and C17 are supported by time-lapse microscopy with propidium iodide staining showing selective cell death dynamics (Figure 2, Figure 2\u2014videos 1\u20134, Figure 2\u2014figure supplement 1). The quantification shows statistically significant differences in dead cell distribution. The attribution to BAs is supported by citation to previous work (Huang et al., 2021).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spo0A is the co-regulator for triggering both ECM production and BAs synthesis/immunity in B. velezensis SQR9, likely through transcriptional regulation of relevant genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18, C20-C25 are supported by comprehensive mutant analysis showing \u0394spo0A has reduced BAs production (Figure 3A-B), impaired ECM production (Figure 3\u2014figure supplement 1), sensitivity to BAs (Figure 3C), and decreased expression of eps, tapA, bnaF, and bnaAB genes (Figure 3D, Figure 3\u2014figure supplement 2). The complementation strain restores these phenotypes, providing strong genetic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spo0A activates acetyl-CoA carboxylase (AccDA) to produce malonyl-CoA, which is essential for BAs biosynthesis, thereby stimulating BAs production and self-immunity in a post-transcriptional manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26-C39, and C102 are supported by multiple lines of evidence: BLI showing no direct Spo0A binding to PbnaF (Figure 4\u2014figure supplement 1), Spo0A-dependent accDA expression (Figure 4B, Figure 4\u2014figure supplement 2), xylose-inducible accDA restoring BAs production and immunity in a dose-dependent manner (Figure 4C-F), and co-localization of accDA and bnaAB expression (Figure 4\u2014figure supplement 5). The post-transcriptional mechanism is inferred from increased BAs production without increased bnaF transcription.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The policing system excludes ECM-nonproducing cheater-like individuals, resulting in higher proportion of matrix-producing cooperators and more vigorous biofilm formation in wild-type compared to mutants lacking the policing system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C41-C46 are supported by flow cytometry showing higher proportion and expression level of matrix-producing cells in wild-type versus \u0394bnaV and SQR9-P43-bnaAB mutants (Figure 5A-B), and pellicle formation assays showing earlier initiation, larger maximum biomass, and delayed dispersal in wild-type (Figure 5C-D). The data consistently demonstrate improved division of labor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "0eca39a0-7ca2-47c8-9f1c-cd25e21c570e",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The policing system improves production of other public goods (proteases and siderophore) by targeting all Spo0A-OFF individuals, not just ECM-nonproducers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C54, C55, and C56 are supported by qualitative and quantitative assays showing wild-type produces more proteases and siderophore than \u0394bnaV and SQR9-P43-bnaAB mutants (Figure 5E, Figure 5\u2014figure supplement 4). The inference that all Spo0A-OFF individuals are targets is logical given Spo0A's role in controlling multiple public goods (C51-C53), though direct experimental evidence for this broader targeting is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "0f7882b7-efb5-42f2-899a-883545e5d4b7",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The policing system enhances population stability and stress resistance under various conditions including antibiotics, salinity, acid-base stress, and oxidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C47-C50, and C59 are supported by biofilm formation assays under multiple stress conditions showing wild-type forms more robust biofilms with better resistance compared to mutants lacking the policing system (Figure 5D, Figure 5\u2014figure supplement 2-3). The data cover a comprehensive range of stressors and show consistent patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "ce798409-0e0b-498d-a44f-a40935891602",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The policing system enhances ecological fitness in the rhizosphere, with wild-type showing significantly stronger root colonization than mutants lacking the system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C57 are supported by root colonization assays in hydroponic culture showing wild-type SQR9 has significantly stronger colonization compared to \u0394bnaV and SQR9-P43-bnaAB mutants (Figure 5F). This provides direct evidence for ecological relevance of the policing system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "50720796-59fd-40b5-ab2c-83acf7848a8f",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Spo0A-governed co-regulation system, integrating the HGT-acquired genomic island with indigenous regulation, effectively optimizes division of labor by excluding cheater-like nonproducers and promoting transition from Spo0A-OFF to Spo0A-ON state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C63, C89, C93, and C105 are supported by the comprehensive experimental data showing coordinated ECM and BAs production (Figure 1), Spo0A regulation of both systems (Figures 3-4), selective killing of nonproducers (Figure 2), and improved community fitness (Figure 5). The integration of HGT-acquired and indigenous pathways is demonstrated by the molecular mechanism. The working model in Figure 6 synthesizes these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "15ac398f-b7b9-4f17-84a3-dff14b769390",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The coordination system for optimizing division of labor is relatively temperate compared to systems for excluding obligate cheaters, representing a balance between restraining cheater-like subpopulation and retaining advantages of cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C92 are supported by time-lapse microscopy showing only partial killing of nonproducers (Figure 2) and citations to studies on obligate cheater exclusion (\u00d6zkaya et al., 2018; Wang et al., 2015). The interpretation as a balance is reasonable given the data, though the optimal proportion of killing is not quantitatively determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "93d9b9a9-7fb5-42ab-8f76-1a3e6ab12616",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Spo0A is a master regulator and critical switch governing cell transition from free-living (Spo0A-OFF) to multicellular cooperative (Spo0A-ON) state, controlling production of multiple public goods including ECM, proteases, and siderophore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C51, C52, and C53 are supported by citations to multiple previous studies establishing Spo0A's role as a master regulator (Hamon and Lazazzera, 2001; Molle et al., 2003; Xu et al., 2019b; Fujita et al., 2005; Shank and Kolter, 2011; L\u00f3pez et al., 2009c). This represents well-established prior knowledge that provides context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "c383a57e-06ec-483f-83fd-02757d581787",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "\u0394bnaV and SQR9-P43-bnaAB mutants show similar growth characteristics with wild-type B. velezensis SQR9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by growth curve data (Figure 5\u2014figure supplement 1) showing no significant differences. This is an important control demonstrating that observed phenotypic differences are not due to general growth defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "b0f1b229-1697-4dbb-b502-f44caeb053fa",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The genomic island GI3 in B. velezensis SQR9, acquired through horizontal gene transfer, encodes the biosynthesis of novel antimicrobial bacillunoic acids and self-immunity machinery, and acts as a weapon for antagonizing competitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C62, C65-C71, C100, and C101 are supported by citations to previous work (Wang et al., 2019; Huang et al., 2021; Qiu et al., 2014; Xu et al., 2019a; Xu et al., 2013; Cao et al., 2011) establishing the genomic island structure, BAs biosynthesis, and antagonistic function. This represents established prior knowledge that provides essential background for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cooperative interactions are prevalent in microbial communities but vulnerable to cheaters, and multiple mechanisms have evolved to maintain cooperation including kin selection, quorum sensing, metabolic constraints, punishment, privatization, and spatial structuring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C81 are supported by extensive citations to previous theoretical and empirical studies. This represents well-established background knowledge in microbial social evolution that provides the conceptual framework for understanding the significance of the policing system described in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Division of labor in bacterial biofilms, where cells differentiate into specialized subpopulations, provides fitness advantages but requires coordination to prevent exploitation by cheater-like nonproducers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 are supported by citations to multiple previous studies on division of labor in Bacillus and other systems (Jordi et al., 2015; Vlamakis et al., 2008; Chai et al., 2008; Shank and Kolter, 2011; L\u00f3pez and Kolter, 2010; L\u00f3pez et al., 2009c; L\u00f3pez et al., 2009a; van Gestel et al., 2015; Vlamakis et al., 2013; Kearns, 2008; West and Cooper, 2016; Zhang et al., 2016; Cremer et al., 2019; L\u00f3pez et al., 2009b; Lord et al., 2019; Claessen et al., 2014; Otto et al., 2020; Drago\u0161 et al., 2018a). This provides essential conceptual background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The policing system in B. velezensis SQR9 is similar to systems in B. subtilis and P. aeruginosa where regulators coordinate public goods production with toxin-antitoxin systems, but differs in the type of toxin and regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90, C94-C99 are supported by citations to previous studies on B. subtilis (Gonz\u00e1lez-Pastor et al., 2003; L\u00f3pez et al., 2009c; Huang et al., 2021; Ellermeier et al., 2006) and P. aeruginosa (Dandekar et al., 2012; Whiteley et al., 2017; Wang et al., 2015; Yan et al., 2019), and comparison with current findings. This contextualizes the novelty of the SQR9 system within the broader framework of microbial policing mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "5c5bf001-1ef7-4062-a520-f5c21e1d8cf3",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Accumulated BA precursor may induce expression of BA synthetase genes, and self-resistance is mainly induced by intracellular BAs through a two-component system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is speculative, based on inference from data showing accDA induction increases BAs production without increasing bnaF transcription. No direct experimental evidence is provided for precursor-mediated induction. Claim C104 is supported by citation to previous work (Huang et al., 2021) but represents prior knowledge rather than a finding of this study. The mechanism of precursor induction requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    },
+    {
+      "id": "337c3769-1847-4b08-b7e9-051a615d9453",
+      "content_id": "74be8010-d7a2-4ce2-86ee-42dbe2be7eb8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Division of labor requires efficiency benefits and alignment of interests, and bacterial biofilm is a major lifestyle in natural environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C64 are supported by citations to previous theoretical and empirical studies (Hamilton, 1964; Smits et al., 2006; L\u00f3pez et al., 2009c; Joan et al., 2011; West and Cooper, 2016; Hall-Stoodley et al., 2004). This represents general background knowledge that motivates the study of policing systems in biofilms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:36:35.194638Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e8e87ccb-5900-4af2-be14-11b3cdb06721",
+      "result_id": "a891744d-4768-452b-984c-1228aa2b79c6"
+    },
+    {
+      "claim_id": "23002ddc-f74a-4636-829c-959d871b11c2",
+      "result_id": "a891744d-4768-452b-984c-1228aa2b79c6"
+    },
+    {
+      "claim_id": "8c9480d4-81e1-47f5-8ebb-469c558e8250",
+      "result_id": "a891744d-4768-452b-984c-1228aa2b79c6"
+    },
+    {
+      "claim_id": "98153d1f-3377-44e3-96a9-26f38610ae7c",
+      "result_id": "a891744d-4768-452b-984c-1228aa2b79c6"
+    },
+    {
+      "claim_id": "0b77c043-6641-41b7-a8cc-0153debd6b00",
+      "result_id": "dacd3ff5-95fc-4d8a-96c8-26e1be3ccc2d"
+    },
+    {
+      "claim_id": "ae605c5f-4cf6-4aaf-8266-dd767548fb5f",
+      "result_id": "dacd3ff5-95fc-4d8a-96c8-26e1be3ccc2d"
+    },
+    {
+      "claim_id": "ad1c2b38-8436-41f2-a3d6-b0121ce3e13a",
+      "result_id": "63f76c68-829c-443b-b1b8-45ce3bc18e04"
+    },
+    {
+      "claim_id": "3ee40306-546d-4673-800e-693f6eca7afb",
+      "result_id": "63f76c68-829c-443b-b1b8-45ce3bc18e04"
+    },
+    {
+      "claim_id": "6b63adc9-3664-40fa-b499-61a8404676a8",
+      "result_id": "63f76c68-829c-443b-b1b8-45ce3bc18e04"
+    },
+    {
+      "claim_id": "56c4ae73-fc11-4bb9-ba8e-39510651b769",
+      "result_id": "63f76c68-829c-443b-b1b8-45ce3bc18e04"
+    },
+    {
+      "claim_id": "5131ec07-a231-420e-b103-c15362e4150a",
+      "result_id": "63f76c68-829c-443b-b1b8-45ce3bc18e04"
+    },
+    {
+      "claim_id": "fa1870ea-1ea4-4a39-ba95-075aff29b4cf",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "f25c81ba-2d9b-4a03-8280-6ced5b7bba12",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "c0898f05-1fd3-42dd-af8d-4c6d558294f1",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "ef837a59-5fed-4555-9761-d958175d54cc",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "39b39574-5968-43fb-a13d-005c6503223f",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "f200361f-9665-4d7e-9d89-e4c1cb7ac8cf",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "5a85dcfa-232d-4194-9ff7-ad4b1dd34527",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "c42d4f86-5d6a-4d34-a752-7795d68647a5",
+      "result_id": "2e79fb9e-4747-4ce2-ba8e-4874f211854d"
+    },
+    {
+      "claim_id": "44012f5d-b321-4b65-88c5-1b2df8d243dd",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "3b234d0c-16d5-4740-92b2-278f5c204d8c",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "3dd89aa4-2bea-4b9b-9bbe-d3c1c008458f",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "d3803b6a-485d-442d-8135-9a4a7b4cbb0a",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "2c31ee80-49a0-46c1-b066-f74b47ef26db",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "45605c77-6e1e-472f-a617-ec9e34b1846a",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "4523196b-2250-4083-9712-4afd0c526590",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "1466b315-3101-4866-a198-f131a5b1b1aa",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "b8ac1039-cadf-4670-8755-38a1a9860aad",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "4b2a192b-d450-4025-a6f0-78b4c2847767",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "089413a3-73b6-4218-a334-8a9cc72eb3dc",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "9e6a9e77-f04a-448b-a5a9-94431168af18",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "8dd67fa7-e3ac-4e88-9dfc-d0f643441e58",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "6ac2be80-be55-413c-acdc-e9ceac019d90",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "b60bd63c-8a02-4f12-9e36-96d7cdd1d954",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "d3abecc5-33a2-4e28-86d3-185d91df032e",
+      "result_id": "e8ef504c-4e50-4699-9ce5-0b85e1a06d66"
+    },
+    {
+      "claim_id": "2648d08f-a926-4648-bf05-3a6df8f28d4b",
+      "result_id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c"
+    },
+    {
+      "claim_id": "b8341562-16c8-4708-9e0f-13030bff2c8a",
+      "result_id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c"
+    },
+    {
+      "claim_id": "aeb7be0e-c6a3-4f5d-b9ba-ec04ea75b351",
+      "result_id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c"
+    },
+    {
+      "claim_id": "2403c920-8eb7-4c6d-911d-c77e199337e6",
+      "result_id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c"
+    },
+    {
+      "claim_id": "7a328bb5-a55b-46af-8c37-48786bd753cf",
+      "result_id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c"
+    },
+    {
+      "claim_id": "cca67a10-5d30-429f-b240-d19ec6e382da",
+      "result_id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c"
+    },
+    {
+      "claim_id": "bf486c13-8f77-4e66-8798-83c8ffe01113",
+      "result_id": "9fea94dd-5c4a-477e-a249-b2c54d50f87c"
+    },
+    {
+      "claim_id": "e1dee61f-4020-4dd0-aae0-102f8b02717d",
+      "result_id": "0eca39a0-7ca2-47c8-9f1c-cd25e21c570e"
+    },
+    {
+      "claim_id": "5dd4d8ce-9611-42c6-8881-db96af406717",
+      "result_id": "0eca39a0-7ca2-47c8-9f1c-cd25e21c570e"
+    },
+    {
+      "claim_id": "190b8089-99fa-428e-b88d-4ca693dc60bf",
+      "result_id": "0eca39a0-7ca2-47c8-9f1c-cd25e21c570e"
+    },
+    {
+      "claim_id": "4c0fc764-f1a9-401c-9391-b39e63cdee52",
+      "result_id": "0eca39a0-7ca2-47c8-9f1c-cd25e21c570e"
+    },
+    {
+      "claim_id": "c6855633-408d-45a8-8c01-4946cba0d069",
+      "result_id": "0f7882b7-efb5-42f2-899a-883545e5d4b7"
+    },
+    {
+      "claim_id": "2584ca4d-1ea0-4870-9441-2a276615817f",
+      "result_id": "0f7882b7-efb5-42f2-899a-883545e5d4b7"
+    },
+    {
+      "claim_id": "0fa360d3-4e1b-471f-a2b4-8dc187c08c51",
+      "result_id": "0f7882b7-efb5-42f2-899a-883545e5d4b7"
+    },
+    {
+      "claim_id": "b8e4442f-b3b4-4567-8a0f-520d00524073",
+      "result_id": "0f7882b7-efb5-42f2-899a-883545e5d4b7"
+    },
+    {
+      "claim_id": "79665719-e299-49ac-9613-ad5c7bb69269",
+      "result_id": "0f7882b7-efb5-42f2-899a-883545e5d4b7"
+    },
+    {
+      "claim_id": "5b425d47-a55c-4528-99c7-bed420eae229",
+      "result_id": "0f7882b7-efb5-42f2-899a-883545e5d4b7"
+    },
+    {
+      "claim_id": "9407b7ad-edde-43aa-b21a-3ea8d974eb0f",
+      "result_id": "ce798409-0e0b-498d-a44f-a40935891602"
+    },
+    {
+      "claim_id": "d3dd97c4-1957-4f72-aa8b-c8af91a0e509",
+      "result_id": "ce798409-0e0b-498d-a44f-a40935891602"
+    },
+    {
+      "claim_id": "cd0d06a7-9298-4005-b8d6-ad3edb9b9cb6",
+      "result_id": "50720796-59fd-40b5-ab2c-83acf7848a8f"
+    },
+    {
+      "claim_id": "96d51f4e-1401-4f00-964c-6135b6ee170d",
+      "result_id": "50720796-59fd-40b5-ab2c-83acf7848a8f"
+    },
+    {
+      "claim_id": "74e096c2-0cad-4fe8-80bf-f1f0629af79d",
+      "result_id": "50720796-59fd-40b5-ab2c-83acf7848a8f"
+    },
+    {
+      "claim_id": "cfe79b1d-9295-4b18-8100-08c1db72106f",
+      "result_id": "50720796-59fd-40b5-ab2c-83acf7848a8f"
+    },
+    {
+      "claim_id": "6336b019-d8b8-4195-a07e-625c2936e9b0",
+      "result_id": "50720796-59fd-40b5-ab2c-83acf7848a8f"
+    },
+    {
+      "claim_id": "1edd244b-5288-4478-bb0a-cceabd9e01ea",
+      "result_id": "15ac398f-b7b9-4f17-84a3-dff14b769390"
+    },
+    {
+      "claim_id": "28009b2d-b2d9-4419-8014-64b7a87c0620",
+      "result_id": "15ac398f-b7b9-4f17-84a3-dff14b769390"
+    },
+    {
+      "claim_id": "84f3b9c9-00cf-47cb-9db4-0a1d7feb2bce",
+      "result_id": "93d9b9a9-7fb5-42ab-8f76-1a3e6ab12616"
+    },
+    {
+      "claim_id": "7eeb8082-9507-4664-9828-a4c12240bb5e",
+      "result_id": "93d9b9a9-7fb5-42ab-8f76-1a3e6ab12616"
+    },
+    {
+      "claim_id": "dbd37932-6423-4883-9235-6d05155821c1",
+      "result_id": "93d9b9a9-7fb5-42ab-8f76-1a3e6ab12616"
+    },
+    {
+      "claim_id": "f29c28b7-5e47-441c-b3a9-dd218c168dba",
+      "result_id": "93d9b9a9-7fb5-42ab-8f76-1a3e6ab12616"
+    },
+    {
+      "claim_id": "d873f113-fbd3-4805-b163-0dd7b59e7619",
+      "result_id": "c383a57e-06ec-483f-83fd-02757d581787"
+    },
+    {
+      "claim_id": "be1313e3-35f0-4e4e-8a32-4cc20d0a6548",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "c26e85e3-a852-48d2-9b17-58b951e9b1dc",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "22161b59-952b-4e42-b1c1-1dbfdeac0fbb",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "c1d01a94-5b02-4e8f-ae1e-dc0f6674f264",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "adf1f96b-4ee4-4cff-83df-d27b55fb1e7c",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "1b0c5d40-582d-43c7-97ae-b1d31dec4099",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "a42524a2-0429-4e45-8860-a00849f4a375",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "c9aabfbc-d1e5-4d13-8130-f348878be6a5",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "734fd676-c27f-4adf-b7f6-70299f196e0c",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "c23276ef-c668-49fc-bf2d-39e68940fdab",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "297fc053-ad08-4a8f-8b44-832c50c111a5",
+      "result_id": "b0f1b229-1697-4dbb-b502-f44caeb053fa"
+    },
+    {
+      "claim_id": "dfd8c1d8-cce5-4ec5-a62e-3a082fb8baec",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "67b03387-3df5-426d-8ec8-7ecc3b1d98aa",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "f87318ca-50fc-49fc-bed1-4e6fd538af48",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "58054708-d2b9-4df8-80c4-15bcc6b02773",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "b2a8b41b-1d0c-4ce2-81ef-e49ff83d52fe",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "6e168cac-86f5-48d2-9efd-7bf790fcac13",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "37aa8428-e782-490f-a920-40cdc861102f",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "a0ae57d2-682c-491f-b9a7-f56342609551",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "ba7e826d-2060-4ba6-b1d8-2a1e0480f1b9",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "9f658792-96f4-4cf0-8d6f-fa73e3e670a3",
+      "result_id": "ba8128cc-a5d7-4103-a9f9-b69f0d92f127"
+    },
+    {
+      "claim_id": "0c936384-b11e-48c2-921f-4bbca64b42fa",
+      "result_id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3"
+    },
+    {
+      "claim_id": "8efb2058-54d6-4fb4-8fa5-9d93ccde83a1",
+      "result_id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3"
+    },
+    {
+      "claim_id": "da97385e-df0c-4782-8a32-106ec368f768",
+      "result_id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3"
+    },
+    {
+      "claim_id": "76ec8631-6104-4baa-80d2-069c702aa23e",
+      "result_id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3"
+    },
+    {
+      "claim_id": "a55c69d9-f854-4bb9-b623-8a5e84fdef49",
+      "result_id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3"
+    },
+    {
+      "claim_id": "4cd0cdd2-7e3c-4103-9079-ab2170ed0c11",
+      "result_id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3"
+    },
+    {
+      "claim_id": "7f2e5531-8c96-41a8-a115-f4c0d61f6c42",
+      "result_id": "26e063bc-8678-40ed-a46b-d32ed19dcdc3"
+    },
+    {
+      "claim_id": "088c9dba-683c-4460-8499-a8ff967657a9",
+      "result_id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a"
+    },
+    {
+      "claim_id": "42f90016-0a2f-4469-9e68-e9790447f0f4",
+      "result_id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a"
+    },
+    {
+      "claim_id": "d6423cd9-cd69-422b-ab6b-5df5512550e9",
+      "result_id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a"
+    },
+    {
+      "claim_id": "559a5467-a7b8-4f04-8241-f350e0d95002",
+      "result_id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a"
+    },
+    {
+      "claim_id": "3fae191d-acb8-4baa-a669-2847a2cc5249",
+      "result_id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a"
+    },
+    {
+      "claim_id": "fab79054-f5f3-444f-8b24-531e67867f3f",
+      "result_id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a"
+    },
+    {
+      "claim_id": "3ba13775-bdb4-4c45-8de4-0b2874fca0a0",
+      "result_id": "4c27ddb3-0879-44f0-87c7-a9bfe162903a"
+    },
+    {
+      "claim_id": "3cff74b6-5cc1-474e-a844-572fc2401846",
+      "result_id": "5c5bf001-1ef7-4062-a520-f5c21e1d8cf3"
+    },
+    {
+      "claim_id": "312a0df8-dfca-4f6e-bc7e-48c435e5604d",
+      "result_id": "5c5bf001-1ef7-4062-a520-f5c21e1d8cf3"
+    },
+    {
+      "claim_id": "cbf8e2e7-cbea-4bc3-9bb4-7c7d3fc31359",
+      "result_id": "337c3769-1847-4b08-b7e9-051a615d9453"
+    },
+    {
+      "claim_id": "15ab8926-135e-40f8-950f-67459abd16c1",
+      "result_id": "337c3769-1847-4b08-b7e9-051a615d9453"
+    }
+  ],
+  "comparisons": []
+}

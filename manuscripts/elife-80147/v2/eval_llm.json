@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Auxin-mediated degradation of Mcd1 in metaphase-arrested cells causes severe disruption of nuclear segregation and chromosome missegregation during anaphase. After 180 min of auxin treatment, 48% of cells remained stuck in anaphase, 35% showed correct segregation, and 20% showed missegregation of chromosome arm tags, with higher error rates for telomeric regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide converging experimental evidence from western blots (C33), microscopy (C34-C35), and quantitative analysis (C36-C38) demonstrating that Mcd1 degradation causes catastrophic segregation defects. The data are internally consistent and support the conclusion (C40) that rapid Mcd1 removal impairs chromatid separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TEV-mediated cleavage of Mcd1 allows bulk nuclear segregation unlike auxin-mediated degradation. TEV cleavage occurs after 60 min, bulk segregation occurs 90-120 min later, and centromeric tags segregate efficiently. The cleaved C-terminal fragment remains stable throughout the timecourse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by western blot and microscopy data (Figure 1\u2014figure supplement 2). The stability of cleaved fragments (C45) and efficient segregation (C43) contrast with the auxin degradation results, providing a key experimental comparison. The conclusion (C44) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "TEV cleavage leaves a glycine residue that is not recognized by the N-rule pathway, resulting in stable Mcd1 fragments that remain associated with Smc3. Both N- and C-terminal fragments co-immunoprecipitate with Smc3, indicating the cohesin tripartite complex remains structurally intact after TEV cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by established knowledge about the N-rule pathway (cited from Varshavsky, 2011). Claims C49-C50 are supported by co-IP data (Figure 2), demonstrating that cleaved fragments remain associated with the cohesin core. The mechanistic explanation is consistent with the observed stability of fragments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Engineered TEV cleavage sites that leave phenylalanine (TEVF) instead of glycine (TEVG) result in rapid degradation of both Mcd1 fragments. TEVF cleavage causes minor delays in anaphase progression and 16% missegregation compared to <5% with TEVG, but both allow bulk nuclear separation (>75% TEVF, >85% TEVG after 120 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by western blot data (Figure 3a-b) showing differential fragment stability and microscopy data (Figure 3c) quantifying segregation fidelity. The experimental design directly tests the hypothesis that fragment degradation affects segregation. The conclusion (C61) is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Hi-C analysis reveals that TEV-cleaved cohesin remains chromatin-bound and maintains partial chromosome organization during anaphase, while auxin-mediated degradation causes complete loss of chromatin-bound Smc3 and severe disruption of chromosome structure. Contact probability analysis shows reduction in the 10-50 kb range is significantly more pronounced in Mcd1-AID than Mcd1-TEVG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by ChIP data (Figure 4a) and Hi-C analysis (Figure 4b-c). The distance law analysis (C66-C67) provides quantitative evidence for differential structural disruption. The conclusions (C68-C69) logically follow from the data and explain the differential segregation phenotypes observed in earlier experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A small pool of cohesin complexes is bound to telophase chromosomes in wild-type cells, enriched at centromeric regions. Smc3-GFP colocalizes with spindle pole body markers, and calibrated ChIP-seq confirms Mcd1 enrichment around centromeres in cdc15-2-arrested cells, with very low binding along chromosome arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by microscopy (Figure 5a) and ChIP-seq data (Figure 5b-c). The convergence of cytological and genomic approaches strengthens the conclusion. The calibrated ChIP-seq with untagged controls (C72) provides appropriate background subtraction, supporting the specificity of centromeric enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cohesin complexes bound to telophase chromosomes play a role in organizing centromeric regions. Hi-C analysis shows that at large scales (>200 kb), cohesin favors cis contacts between centromeres and chromosome arms, but at short distances (<100 kb), cohesin impedes contacts between centromeres and flanking regions. Cohesin depletion also reduces trans-centromere interactions and centromere clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by Hi-C data (Figure 6b-d) showing scale-dependent effects of cohesin on centromeric organization. The pile-up analysis of centromeric contacts provides quantitative evidence for both cis and trans effects. The conclusions (C78, C80) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cohesin plays an active role in organizing the ribosomal DNA (rDNA) region in telophase-arrested cells. Inactivation of cohesin causes decondensation of rDNA signals, decreases contacts between CEN12 and rDNA, and increases contacts between pre- and post-rDNA regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C81-C82 are supported by microscopy (Figure 7a) and Hi-C data (Figure 7b). The rDNA organization changes are consistent with cohesin's known role at this locus. The conclusion (C83) is supported by the combined evidence from centromeric and rDNA analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C104",
+      "C105"
+    ],
+    "result": "Cohesin function extends to the anaphase period when chromatids are segregating in yeast cells. Cohesin maintains the looped organization of segregating chromatids and supports centromere organization, demonstrating important post-metaphase functions critical for faithful genome segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C104-C105 represent the main conclusions of the study, supported by multiple experimental approaches including auxin degradation, TEV cleavage, Hi-C analysis, and ChIP-seq. The convergence of evidence from different experimental systems strongly supports these overarching conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose a mechanistic model where cohesive cohesin topologically embraces DNA while loop-extruding complexes rely on non-topological interactions. TEV-cleaved cohesin likely retains non-topological DNA interactions and maintains extruded loops, explaining modest effects on loop extrusion while disrupting cohesion. Auxin-mediated degradation abolishes both interaction types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C97 are supported by citations to prior work. However, claims C98-C100 are inferred mechanistic explanations rather than directly demonstrated. While the model is consistent with the observed data, the non-topological interactions of TEV-cleaved cohesin are not directly tested. Additional experiments would be needed to confirm this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The manuscript provides extensive background on cohesin structure, function, and regulation in yeast and mammalian cells, including its roles in sister chromatid cohesion, chromosome condensation, loop formation, and the mechanisms of separase-mediated cleavage. This establishes the context for challenging the prevailing view that cohesin function terminates at anaphase onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32, C84-C95, C101-C103 are primarily background claims supported by citations to established literature. These claims accurately represent prior knowledge and provide appropriate context for the current study. The citations appear appropriate and the claims are consistent with the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C91"
+    ],
+    "result": "The prevailing view in the field is that separase cleavage removes all cohesin complexes from chromosomes to initiate anaphase, terminating cohesin function on yeast chromosomes at the anaphase onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C91 accurately represent the prevailing view that the manuscript challenges. This is supported by citation to Nasmyth, 2001 and represents established knowledge in the field. The manuscript's contribution is to challenge and refine this view.",
+    "result_type": "MINOR"
+  }
+]

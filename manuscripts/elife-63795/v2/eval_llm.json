@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MCC exhibits longer population and single-unit spiking timescales (scTAU) compared to LPFC, consistent with previous datasets. Population scTAU was 519\u00b1168 ms for MCC vs. 195\u00b117 ms for LPFC, and median single-unit scTAU was 553 ms for MCC vs. 293 ms for LPFC (p<10\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide converging evidence from population-level and single-unit analyses with appropriate statistical testing (Wilcoxon signed-rank test). The findings replicate previous work (C28), strengthening validity. Sample sizes are adequate (140 MCC, 159 LPFC units) and the method is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A new spike autocorrelogram method was developed to overcome temporal resolution limitations of the spike count method, achieving 91.4% fitting success. Units were classified into FS (putative interneurons) and RS (putative pyramidal cells) based on spike shape clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 identify a methodological limitation and present a solution with high success rate (C37, 91.4%). The cell-type classification (C34-C36) follows established approaches, though the authors acknowledge it's not fully reliable. The methodological improvement is well-justified and quantitatively validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Using the new method, TAU was higher in MCC than LPFC for both cell types, while LAT differed significantly between areas only for RS units (MCC RS: 108.7\u00b164 ms vs. LPFC RS: 51.9\u00b146 ms, p<0.005). TAU and LAT were correlated only in LPFC RS units, suggesting they reflect different dynamical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present comprehensive statistical analyses with appropriate corrections (Blom transformation, Bonferroni). The finding that TAU is independent of firing rate (C38) is important for interpretation. The area\u00d7cell-type interaction for LAT (C40) and selective correlation in LPFC RS (C41) are well-supported by statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TAU values were stable across engage and pause periods (r=0.20, p=3.0e-3), but MCC RS units showed significant modulation with longer TAU during task engagement (MD=1.06, p=3.9e-7). LAT showed no task-dependent modulation, and LPFC temporal signatures were not modulated by engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 demonstrate both stability (C44-C45) and context-dependent modulation (C46-C47) of temporal signatures with appropriate controls for time-on-task effects. Statistical tests are properly corrected (Bonferroni). The dissociation between MCC and LPFC (C49) and between TAU and LAT (C48) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MCC units with different temporal signatures differentially encode task information at different timescales: short TAU units encode feedback (short timescale), while long TAU RS units encode gauge size (long timescale). FS units in MCC showed strong bias toward encoding negative feedback in the first second after feedback onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 establish functional relevance of temporal signatures through time-resolved analyses. The dissociation between short/long TAU populations encoding short/long timescale information (C55-C58) is conceptually coherent. However, the analyses rely on median splits which can be arbitrary, and the interpretation of gauge size as 'long timescale' information (C51) is somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "TAU values in MCC showed an antero-posterior gradient with higher values posteriorly for RS units (ANOVA p=0.041 monkey A, p=0.033 monkey H). This spatial organization corresponded to functional dissociation: anterior units encoded feedback while posterior units encoded gauge size. No such gradient was observed in LPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 demonstrate anatomical organization with statistical support from both monkeys, though the effect in monkey H is weaker (C59). The functional correspondence (C62-C63) strengthens the interpretation. However, the gradient analysis is somewhat coarse and the LPFC negative result (C61) may reflect limited sampling range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Cellular models identified gCAN and gAHP as affecting both LAT and TAU, but could not reproduce monkey temporal signatures. Network model explorations revealed that combined increases in gAHP and gGABA-B (in presence of gCAN) reproduced the shift from LPFC-like to MCC-like temporal signatures with striking precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 follow a logical progression from cellular to network models. The negative result at the cellular level (C69-C70) motivates the network approach. The two-dimensional parameter exploration (C73-C74) is more comprehensive than one-dimensional searches (C71). However, 'striking precision' (C73) is qualitative and the parameter space exploration may not be exhaustive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In network models, gAHP increased LAT and decreased TAU in excitatory neurons with no effect in inhibitory neurons, while gGABA-B decreased LAT in both cell types and increased TAU in an intermediate range. Monkey temporal signatures were robustly reproduced in two large contiguous regions of (gAHP, gGABA-B) parameter space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 provide mechanistic insights with cell-type specificity. The robustness across 'large contiguous regions' (C78) suggests the findings are not parameter-sensitive. However, the claim that gAHP 'decreased' TAU (C75) seems counterintuitive given that higher gAHP in MCC corresponds to higher TAU, requiring careful interpretation of direct vs. network effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The network model was validated against multiple experimental features: spiking statistics matched monkeys, LAT variability in RS vs. FS was reproduced, complex LAT-ISI relationships were captured, and lower firing frequency/input-output gain in MCC excitatory neurons matched experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide multiple lines of model validation beyond the primary fitting targets. The match to independent experimental observations (C82) is particularly strong. However, some validations are qualitative ('similar', 'remarkably well') and quantitative metrics would strengthen the assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Network dynamics in both models and monkeys organized into metastable states detected by HMM. LPFCm states lasted maximally a few hundred milliseconds while MCCm states persisted up to several seconds. Monkey data confirmed this prediction with slower timescale states in MCC vs. LPFC, though model states were globally shorter due to lack of task structure and learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 demonstrate convergence between model predictions and experimental observations. The HMM analysis is appropriate for detecting metastable states. The explanation for shorter model states (C88) is reasonable but somewhat post-hoc. The use of pseudo-populations in monkey data (acknowledged in methods) may affect absolute state duration estimates but should preserve relative differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Long states in MCCm required high gGABA-B (disappeared when lowered to LPFCm levels) but only marginally depended on gAHP. State duration scaled with spatial separation in neural activity space. States segregated clearly in MCCm but were intermingled in LPFCm, a pattern confirmed in monkey data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 systematically dissect the contributions of gGABA-B vs. gAHP through model manipulations. The convergence between model predictions and monkey observations (C97) is compelling. However, the 'marginal' dependence on gAHP (C90) seems to contradict its importance for LAT, suggesting complex interactions. The spatial separation analysis (C93-C98) provides mechanistic insight into state stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Perturbation analysis in MCCm revealed that inhibitory neurons control state transitions: substituting inhibitory neurons scaled with escape/reach probabilities (max 0.89/0.59), with significant impact even at 2% substitution (p=0.24). Excitatory neuron substitution had no such effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 provide strong evidence for inhibitory control through systematic perturbation experiments. The dramatic difference between excitatory and inhibitory perturbations is striking. However, the perturbation method (substituting neural variables from target states) is somewhat artificial and may not reflect physiological mechanisms. The connection to FS encoding of negative feedback (C105) is suggestive but correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Higher TAU in MCC was accounted for by stronger GABA-B levels in the model, consistent with higher GABA-B receptor densities and stronger/slower inhibitory currents in MCC. While excitatory transmission increases TAU, it also decreases LAT, suggesting GABA-B inhibition rather than excitation is the principal determinant of longer timescales in LPFC and MCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 integrate model findings with anatomical/physiological data from literature. The argument against excitatory transmission as primary determinant (C127-C128) is logical but relies on the inability to simultaneously match LAT and TAU. The conclusion is specific to LPFC/MCC and may not generalize to the broader cortical hierarchy where excitatory transmission has been implicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Activity in LPFC and MCC (models and monkeys) was metastable, organized in sequences of quasi-stationary states with activity fluctuating around fixed-point attractors. High GABA-B levels stabilize states by amplifying inhibition heterogeneity and widening attractors. Metastability emerged from synaptic heterogeneity without requiring network clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C143 provide mechanistic explanation for metastability. The distinction from UP/DOWN dynamics (C138) is important. The explanation for longer states in monkeys vs. models (C139) is reasonable but speculative. The emergence from heterogeneity without clustering (C140) is notable but the claim relies on a single citation and may require more extensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "Temporal signatures (TAU, LAT) reflect the underlying temporal organization of neurodynamics into metastable states. State durations (up to >10s) were longer than spiking timescales (<0.5s), reconciling the discrepancy between typical spiking timescales in frontal areas and the functional timescales at which they operate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 provide an integrative interpretation linking temporal signatures to metastable dynamics and functional timescales. The reconciliation of timescale discrepancy (C147) is conceptually important. However, the relationship between autocorrelogram timescales and state durations is complex and the 'non-linear scaling' mentioned in C10 is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18"
+    ],
+    "result": "The study addresses the knowledge gap regarding the mechanistic origin of temporal organization in cortical dynamics and its contribution to cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C18 establish the motivation and context for the study. These are well-supported by the literature and clearly identify an important gap. However, these are background/motivation claims rather than results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on cortical organization: Large-scale cortical networks are anatomically and temporally hierarchical, with increasing timescales from sensory to integrative areas. MCC and LPFC display long timescales, collaborate in performance monitoring and outcome integration, with MCC having higher inhibition and longer timescales than LPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C25 summarize established knowledge from prior work, all supported by appropriate citations. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The biophysical model uniquely combines detailed biophysical constraints on ionic channels, synaptic receptors, and frontal specificities with realistic features of cortical neurodynamics including excitation/inhibition balance and asynchronous irregular regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe model features supported by citations. While the combination may be unique, this is a methodological description rather than a result. The claim of uniqueness is difficult to verify without exhaustive literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Summary and interpretation: LPFC and MCC express distinctive temporal organizations that cannot be captured by population timescale alone. The multidimensional temporal signature approach enabled constraining biophysical models to reveal local determinants of temporal organization that control neurodynamical features underlying executive cognitive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C114 provide high-level summary and interpretation of the study's contributions. These are well-supported by the collective evidence but represent synthesis rather than individual results. The claims appropriately acknowledge the study's methodological and conceptual advances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Discussion of functional relationships: Spiking timescales have been related to persistent activity and reward history, though recent work found no unit-level correlation. MCC units with different temporal signatures contribute to feedback processing (short timescales) vs. outcome history (long timescales), with antero-posterior organization resembling human data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C124 integrate current findings with prior literature. The summary of previous work (C115-C116) is accurate. The functional interpretations (C117-C123) are supported by the data but somewhat speculative. The comparison to human data (C124) is based on a single citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Model predictions and comparisons to literature: Long timescales do not require strong inhibitory-to-inhibitory connections or specific disinhibition but emerge from weight variability without learning. The model predicts higher LAT in MCC from increased AHP-mediated refractoriness, implying lower input-output gains as found empirically. CAN conductance is required and has been observed in rodent frontal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 compare model findings to literature and make predictions. The comparison to alternative mechanisms (C129) is useful but relies on limited citations. The prediction about input-output gains (C131-C132) is validated by experimental data. The CAN requirement (C133-C134) is supported but the rodent-to-primate generalization requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Functional implications and speculation: AHP conductances have diverse computational functions. Metastable states can represent various levels of abstraction. Controlling state itinerancy may support executive functions. GABA-B-mediated long states in MCC may support strategy maintenance and outcome integration, while short states in LPFC may support dynamic coding and rapid decision-making. Local inhibition has dual roles in regulating state stability and transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C163 are largely speculative interpretations (many marked as SPECULATION in evidence_type) about functional implications. While conceptually coherent and supported by citations to related work, these go beyond what the data directly demonstrate. The proposals about functional roles (C150-C157) are plausible but would require additional experiments to validate. The dual role of inhibition (C160) is better supported by the perturbation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Main conclusions: Local ionic and synaptic determinants specify the temporal organization of frontal cortical activity, potentially producing long states in MCC and explaining its contribution to extended behavioral functions. The diversity of spiking timescales across cortical hierarchy reflects local excitability- and inhibition-mediated regulation of metastability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C166 state the main conclusions, which are well-supported by the collective evidence from experimental and modeling work. However, the causal language ('specify', 'produce') is stronger than warranted by the correlational nature of some evidence. The generalization to the broader cortical hierarchy (C166) extends beyond the LPFC/MCC focus of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Speculation that different temporal signatures of RS units could reflect differences in physiology and/or local circuitry determining intrinsic dynamical properties of MCC and LPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is explicitly speculative but well-motivated by the data showing distinct temporal signatures. This speculation is subsequently validated by the modeling work, making it a reasonable intermediate interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "MCC FS neurons encoded negative outcomes immediately after feedback onset, potentially reflecting their involvement in inducing state changes associated with behavioral flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 connect experimental observation (C105) to mechanistic interpretation (C106). The encoding finding is data-supported, but the interpretation about state changes is speculative, though consistent with the perturbation analysis showing inhibitory control of transitions.",
+    "result_type": "MINOR"
+  }
+]

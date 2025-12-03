@@ -1,0 +1,1404 @@
+{
+  "submission": {
+    "id": "4c4dadb9-f7ea-4588-a21c-53010a37f6fc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:52:04.504886Z",
+    "updated_at": "2025-12-03T14:52:04.504886Z"
+  },
+  "content": [
+    {
+      "id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "submission_id": "4c4dadb9-f7ea-4588-a21c-53010a37f6fc",
+      "content_type": "manuscript",
+      "content_text": "# COVID-19 pandemic dynamics in South Africa and epidemiological characteristics of three variants of concern (Beta, Delta, and Omicron)\n\n## Authors\n\n- Wan Yang<sup>1</sup> ([ORCID: 0000-0002-7555-9728](https://orcid.org/0000-0002-7555-9728)) \u2020\n- Jeffrey L Shaman<sup>2</sup> ([ORCID: 0000-0002-7216-7809](https://orcid.org/0000-0002-7216-7809))\n\n### Affiliations\n\n1. Department of Epidemiology, Mailman School of Public Health, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Department of Environmental Health Sciences, Mailman School of Public Health, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSevere acute respiratory syndrome coronavirus 2 (SARS-CoV-2) variants of concern (VOCs) have been key drivers of new coronavirus disease 2019 (COVID-19) pandemic waves. To better understand variant epidemiologic characteristics, here we apply a model-inference system to reconstruct SARS-CoV-2 transmission dynamics in South Africa, a country that has experienced three VOC pandemic waves (i.e. Beta, Delta, and Omicron BA.1) by February 2022. We estimate key epidemiologic quantities in each of the nine South African provinces during March 2020 to February 2022, while accounting for changing detection rates, infection seasonality, nonpharmaceutical interventions, and vaccination. Model validation shows that estimated underlying infection rates and key parameters (e.g. infection-detection rate and infection-fatality risk) are in line with independent epidemiological data and investigations. In addition, retrospective predictions capture pandemic trajectories beyond the model training period. These detailed, validated model-inference estimates thus enable quantification of both the immune erosion potential and transmissibility of three major SARS-CoV-2 VOCs, that is, Beta, Delta, and Omicron BA.1. These findings help elucidate changing COVID-19 dynamics and inform future public health planning.\n\n## Introduction\n\nSince its emergence in late December 2019, the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has spread globally, causing the coronavirus disease 2019 (COVID-19) pandemic (Koelle et al., 2022). In just 2 years, SARS-CoV-2 has caused several pandemic waves in quick succession in many places. Many of these repeated pandemic waves have been driven by new variants of concern (VOCs) or interest (VOIs) that erode prior immunity from either infection or vaccination, increase transmissibility, or a combination of both. However, while laboratory and field studies have provided insights into these epidemiological characteristics, quantifying the extent of immune erosion (or evasion) and changes to transmissibility for each VOC remains challenging.\n\nLike many places, by February 2022 South Africa had experienced four distinct pandemic waves caused by the ancestral SARS-CoV-2 and three VOCs (Beta, Delta, and Omicron BA.1). However, South Africa is also unique in that the country had the earliest surge for two of the five VOCs identified to date \u2013 namely, Beta (Tegally et al., 2021) and Omicron (Viana et al., 2022). To better understand the COVID-19 dynamics in South Africa and variant epidemiological characteristics, here we utilize a model-inference system similar to one developed for study of SARS-CoV-2 VOCs, including the Beta variant in South Africa (Yang and Shaman, 2021c). We use this system to reconstruct SARS-CoV-2 transmission dynamics in each of the nine provinces of South Africa from the pandemic onset during March 2020 to the end of February 2022 while accounting for multiple factors modulating underlying transmission dynamics. We then rigorously validate the model-inference estimates using independent data and retrospective predictions. The validated estimates quantify the immune erosion potential and transmissibility of three major SARS-CoV-2 variants, that is, Beta, Delta, and Omicron (BA.1), in South Africa. Our findings highlight several common characteristics of SARS-CoV-2 VOCs and the need for more proactive planning and preparedness for future VOCs, including development of a universal vaccine that can effectively block SARS-CoV-2 infection as well as prevent severe disease.\n\n## Results\n\n### Model fit and validation\n\nThe model-inference system uses case and death data to reconstruct the transmission dynamics of SARS-CoV-2, while accounting for under-detection of infection, infection seasonality, implemented nonpharmaceutical interventions (NPIs), and vaccination (see Materials and methods). Overall, the model-inference system is able to fit weekly case and death data in each of the nine South African provinces (Figure 1A, Appendix 1\u2014figure 1, and additional discussion in Appendix 1). Additional testing (in particular, for the infection-detection rate) and visual inspections indicate that posterior estimates for the model parameters are consistent with those reported in the literature, or changed over time and/or across provinces in directions as would be expected (see Appendix 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78933/elife-78933-fig1-v1.jpg)\n\n**Figure 1.:** (A) Pandemic dynamics in each of the nine provinces (see legend); dots depict reported weekly numbers of cases and deaths; lines show model mean estimates (in the same color). (B) For validation, model estimated infection rates are compared to seroprevalence measures over time from multiple sero-surveys summarized in The South African COVID-19 Modelling Consortium, 2021. Boxplots depict the estimated distribution for each province (middle bar = mean; edges = 50% CrIs) and whiskers (95% CrIs), summarized over n=100 model-inference runs (500 model replica each, totaling 50,000 model realizations). Red dots show corresponding measurements. Note that reported mortality was high in February 2022 in some provinces (see additional discussion in Appendix 1).\n\nWe then validated the model-inference estimates using three independent datasets. First, we used serology data. We note that early in the pandemic serology data may reflect underlying infection rates but later, due to waning antibody titers and reinfection, likely underestimate infection. Compared to seroprevalence measures taken at multiple time points in each province, our model estimated cumulative infection rates roughly match corresponding serology measures and trends over time; as expected, model estimates were higher than serology measures taken during later months (Figure 1B). Second, compared to hospital admission data, across the nine provinces, model estimated infection numbers were well correlated with numbers of hospitalizations for all four pandemic waves caused by the ancestral, Beta, Delta, and Omicron (BA.1) variants, respectively (r>0.75, Appendix 1\u2014figure 2A\u2013D). Third, model-estimated infection numbers were correlated with age-adjusted excess mortality for both the ancestral and Delta wave (r=0.86 and 0.61, respectively; Appendix 1\u2014figure 2A and C). For the Beta wave, after excluding Western Cape, a province with a very high hospitalization rate but low excess mortality during this wave (Appendix 1\u2014figure 2B), model-estimated infection numbers were also correlated with age-adjusted excess mortality for the remaining provinces (r=0.55; Appendix 1\u2014figure 2B). For the Omicron (BA.1) wave, like many other places, due to prior infection and/or vaccination (Nyberg et al., 2022; Wolter et al., 2022), mortality rates decoupled from infection rates (Appendix 1\u2014figure 2D). Overall, comparisons with the three independent datasets indicate our model-inference estimates align with underlying transmission dynamics.\n\nIn addition, as a fourth model validation, we generated retrospective predictions of the Delta and Omicron (BA.1) waves at two key time points, that is 2 weeks and 1 week, separately, before the observed peak of cases (approximately 3\u20135 weeks before the observed peak of deaths; Figure 2). To accurately predict a pandemic wave caused by a new variant, the model-inference system needs to accurately estimate the background population characteristics (e.g. population susceptibility) before the emergence of the new variant, as well as changes in population susceptibility and transmissibility due to the new variant. This is particularly challenging for South Africa, as the pandemic waves there tended to progress quickly, with cases surging and peaking within 3\u20137 weeks before declining. As a result, often only 1\u20136 weeks of new variant data were available for model-inference before generating the prediction. Despite these challenges, 1\u20132 weeks before the case peak and 3\u20135 weeks before the observed death peak, the model was able to accurately predict the remaining trajectories of cases and deaths in most of the nine provinces for both the Delta and Omicron (BA.1) waves (Figure 2 for the four most populous provinces and Appendix 1\u2014figure 3 for the remainder). These accurate model predictions further validate the model-inference estimates.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78933/elife-78933-fig2-v1.jpg)\n\n**Figure 2.:** Model-inference was trained on cases and deaths data since March 15, 2020 until 2 weeks (1st plot in each panel) or 1 week (2nd plot) before the Delta or Omicron (BA.1) wave (see timing on the x-axis); the model was then integrated forward using the estimates made at the time to predict cases (left panel) and deaths (right panel) for the remaining weeks of each wave. Blue lines and surrounding shades show model fitted cases and deaths for weeks before the prediction (line = median, dark blue area = 50% CrIs, and light blue = 80% CrIs, summarized over n=100 model-inference runs totaling 50,000 model realizations). Red lines show model projected median weekly cases and deaths; surrounding shades show 50% (dark red) and 80% (light red) CIs of the prediction (n = 50,000 model realizations). For comparison, reported cases and deaths for each week are shown by the black dots; however, those to the right of the vertical dash lines (showing the start of each prediction) were not used in the model. For clarity, here we show 80% CIs (instead of 95% CIs, which tend to be wider for longer-term projections) and predictions for the four most populous provinces (Gauteng in A and B; KwaZulu-Natal in C and D; Western Cape in E and F; and Eastern Cape in G and H). Predictions for the other five provinces are shown in Appendix 1\u2014figure 3.\n\n### Pandemic dynamics and key model-inference, using Gauteng province as an example\n\nNext, we use Gauteng, the province with the largest population, as an example to highlight pandemic dynamics in South Africa thus far and develop key model-inference estimates (Figure 3 for Gauteng and Appendix 1\u2014figures 4\u201311 for each of the other eight provinces). Despite lower cases per capita than many other countries, infection numbers in South Africa were likely much higher due to under-detection. For Gauteng, the estimated infection-detection rate during the first pandemic wave was 4.59% (95% CI: 2.62\u20139.77%), and increased slightly to 6.18% (95% CI: 3.29\u201311.11%) and 6.27% (95% CI: 3.44\u201312.39%) during the Beta and Delta waves, respectively (Appendix 1\u2014table 1). These estimates are in line with serology data. In particular, a population-level sero-survey in Gauteng found 68.4% seropositivity among those unvaccinated at the end of the Delta wave (Madhi et al., 2022). Combining the reported cases at that time (~6% of the population size) with undercounting of infections in sero-surveys due to sero-reversions and reinfections suggests that the overall detection rate would be less than 10%.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78933/elife-78933-fig3-v1.jpg)\n\n**Figure 3.:** (A) Observed relative mobility, vaccination rate, and estimated disease seasonal trend, compared to case and death rates over time. Key model-inference estimates are shown for the time-varying effective reproduction number Rt (B), transmissibility RTX (C), population susceptibility (D, shown relative to the population size in percentage), infection-detection rate (E), and infection-fatality risk (F). Grey shaded areas indicate the approximate circulation period for each variant. In (B) \u2013 (F), blue lines and surrounding areas show the estimated mean, 50% (dark) and 95% (light) CrIs; boxes and whiskers show the estimated mean, 50% and 95% CrIs for estimated infection rates. All summary statistics are computed based on n=100 model-inference runs totaling 50,000 model realizations. Note that the transmissibility estimates (RTX in C) have removed the effects of changing population susceptibility, NPIs, and disease seasonality; thus, the trends are more stable than the reproduction number (Rt in B) and reflect changes in variant-specific properties. Also note that infection-fatality risk estimates were based on reported COVID-19 deaths and may not reflect true values due to likely under-reporting of COVID-19 deaths.\n\nUsing our inferred under-detection (Figure 3E), we estimate that 32.83% (95% CI: 15.42\u201357.59%, Appendix 1\u2014table 2) of the population in Gauteng were infected during the first wave, predominantly during winter when more conducive climate conditions and relaxed public health restrictions existed (see the estimated seasonal and mobility trends, Figure 3A). This high infection rate, while with uncertainty, is in line with serology measures taken in Gauteng at the end of the first wave (ranging from 15% to 27% among 6 sero-surveys during November 2020; Figure 1B) and a study showing 30% sero-positivity among participants enrolled in the Novavax NVX-CoV2373 vaccine phase 2a-b trial in South Africa during August \u2013 November 2020 (Shinde et al., 2021).\n\nWith the emergence of Beta, another 21.87% (95% CI: 12.16\u201341.13%) of the population in Gauteng \u2013 including reinfections \u2013 is estimated to have been infected, even though the Beta wave occurred during summer under less conducive climate conditions for transmission (Figure 3A). The model-inference system estimates a large increase in population susceptibility with the surge of Beta (Figure 3D; note population susceptibility is computed as S / N\u00d7100%, where S is the estimated number of susceptible people and N is population size). This dramatic increase in population susceptibility (vs. a likely more gradual change due to waning immunity), to the then predominant Beta variant, suggests Beta likely substantially eroded prior immunity and is consistent with laboratory studies showing low neutralizing ability of convalescent sera against Beta (Garcia-Beltran et al., 2021; Wall et al., 2021). In addition, an increase in transmissibility is also evident for Beta, after accounting for concurrent NPIs and infection seasonality (Figure 3C; note transmissibility is computed as the product of the estimated variant-specific transmission rate and the infectious period; see Materials and methods for detail). Notably, in contrast to the large fluctuation of the time-varying effective reproduction number over time (Rt, Figure 3B), the transmissibility estimates are more stable and reflect changes in variant-specific properties. Further, consistent with in-depth epidemiological findings (Abu-Raddad et al., 2021a), the estimated overall infection-fatality risk for Beta was about twice as high as the ancestral SARS-CoV-2 (0.19% [95% CI: 0.10\u20130.33%] vs. 0.09% [95% CI: 0.05\u20130.20%], Figure 3F and Appendix 1\u2014table 3). Nonetheless, these estimates are based on documented COVID-19 deaths and are likely underestimates.\n\nWith the introduction of Delta, a third pandemic wave occurred in Gauteng during the 2021 winter. The model-inference system estimates a 49.82% (95% CI: 25.22\u201390.79%) attack rate by Delta, despite the large number of infections during the previous two waves. This large attack rate was possible due to the high transmissibility of Delta, as reported in multiple studies (Public Health England, 2021; Allen et al., 2022; Challen et al., 2021; Earnest et al., 2021; V\u00f6hringer et al., 2021), the more conducive winter transmission conditions (Figure 3A), and the immune erosive properties of Delta relative to both the ancestral and Beta variants (Dhar et al., 2021; Liu et al., 2021; de Oliveira and Lessells, 2021).\n\nDue to these large pandemic waves, prior to the detection of Omicron (BA.1) in Gauteng, estimated cumulative infection numbers surpassed the population size (Figure 4B), indicating the large majority of the population had been infected and some more than once. With the rise of Omicron (BA.1), the model-inference system estimates a very large increase in population susceptibility (Figure 3D), as well as an increase in transmissibility (Figure 3C); however, unlike previous waves, the Omicron (BA.1) wave progresses much more quickly, peaking 2\u20133 weeks after initiating marked exponential growth. These estimates suggest that several additional factors may have also contributed to the observed dynamics, including changes to the infection-detection rate (Figure 3E and Appendix 1), a summer seasonality increasingly suppressing transmission as the wave progressed (Figure 3A), as well as a slight change in population mobility suggesting potential behavior changes (Figure 3A). By the end of February 2022, the model-inference system estimates a 44.49% (95% CI: 19.01\u201375.30%) attack rate, with only 4.26% (95% CI: 2.46\u20139.72%) of infections detected as cases, during the Omicron (BA.1) wave in Gauteng. In addition, consistent with the reported 0.3 odds of severe disease compared to Delta infections (Wolter et al., 2022), estimated overall infection-fatality risk during the Omicron (BA.1) wave was about 30% of that during the Delta wave in Gauteng (0.03% [95% CI: 0.02\u20130.06%] vs. 0.11% [95% CI: 0.06\u20130.21%], based on documented COVID-19 deaths; Appendix 1\u2014table 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78933/elife-78933-fig4-v1.jpg)\n\n**Figure 4.:** Heatmaps show (A) Estimated mean infection rates by week (x-axis) and province (y-axis), (B) Estimated mean cumulative infection numbers relative to the population size in each province, and (C) Estimated population susceptibility (to the circulating variant) by week and province. (D) Boxplots in the top row show the estimated distribution of increases in transmissibility for Beta, Delta, and Omicron (BA.1), relative to the Ancestral SARS-CoV-2, for each province (middle bar = median; edges = 50% CIs; and whiskers = 95% CIs; summarized over n=100 model-inference runs); boxplots in the bottom row show, for each variant, the estimated distribution of immune erosion to all adaptive immunity gained from infection and vaccination prior to that variant. Red lines show the mean across all provinces.\n\n### Model inferred epidemiological characteristics across the nine provinces in South Africa\n\nAcross all nine provinces in South Africa, the pandemic timing and intensity varied (Figure 4A\u2013C). In addition to Gauteng, high cumulative infection rates during the first three pandemic waves are also estimated for Western Cape and Northern Cape (Figure 1C\u2013E, Figure 4B and Appendix 1\u2014table 2). Overall, all nine provinces likely experienced three large pandemic waves prior to the growth of Omicron (BA.1); estimated average cumulative infections ranged from 60% of the population in Limpopo to 122% in Northern Cape (Figure 4B). Corroboration for these cumulative infection estimates is derived from mortality data. Excess mortality before the Omicron (BA.1) wave was as high as 0.47% of the South African population by the end of November 2021 (The South African Medical Research Council (SAMRC), 2021), despite the relatively young population (median age: 27.6 years (Anonymous, 2020b) vs. 38.5 years in the US [United States Census Bureau, 2020]) and thus lower expected infection-fatality risk (Levin et al., 2020; O\u2019Driscoll et al., 2021). Assuming an infection-fatality risk of 0.5% (similar to estimates in COVID-19 Forecasting Team, 2022 for South Africa), these excess deaths would convert to a 94% infection rate.\n\nWe then use these model-inference estimates to quantify the immune erosion potential and increase in transmissibility for each VOC. Specifically, the immune erosion (against infection) potential is computed as the ratio of two quantities \u2013 the numerator is the increase of population susceptibility due to a given VOC and the denominator is population immunity (i.e. complement of population susceptibility) at wave onset. The relative increase in transmissibility is also computed as a ratio, that is, the average increase due to a given VOC relative to the ancestral SARS-CoV-2 (see Materials and methods). As population-specific factors contributing to transmissibility (e.g. population density and average contact rate) would be largely cancelled out in the latter ratio, we expect estimates of the VOC transmissibility increase to be generally applicable to different populations. However, prior exposures and vaccinations varied over time and across populations; thus, the level of immune erosion is necessarily estimated relative to the local population immune landscape at the time of the variant surge and should be interpreted accordingly. In addition, this assessment does not distinguish the sources of immunity or partial protection against severe disease; rather, it assesses the overall loss of immune protection against infection for a given VOC.\n\nIn the above context, we estimate that Beta eroded immunity among 63.4% (95% CI: 45.0\u201377.9%) of individuals with prior ancestral SARS-CoV-2 infection and was 34.3% (95% CI: 20.5\u201348.2%) more transmissible than the ancestral SARS-CoV-2. These estimates for Beta are consistent across the nine provinces (Figure 4D, 1st column and Table 1), as well as with our previous estimates using national data for South Africa (Yang and Shaman, 2021c). Additional support for the high immune erosion of Beta is evident from recoverees of ancestral SARS-CoV-2 infection who were enrolled in the Novavax NVX-CoV2373 vaccine phase 2a-b trial (Shinde et al., 2021) and found to have a similar likelihood of COVID-19, mostly due to Beta, compared to those seronegative at enrollment.\n\n**Table 1.**\n Estimated increases in transmissibility and immune erosion potential for Beta, Delta, and Omicron (BA.1).The estimates are expressed in percentage for the median (and 95% CIs). Note that estimated increases in transmissibility for all three variants are relative to the ancestral strain, whereas estimated immune erosion is relative to the composite immunity combining all previous infections and vaccinations accumulated until the surge of the new variant. See main text and Methods for details.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Province</th>\n      <th>Quantity</th>\n      <th>Beta</th>\n      <th>Delta</th>\n      <th>Omicron (BA.1)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">All combined</td>\n      <td>% Increase in transmissibility</td>\n      <td>34.3 (20.5, 48.2)</td>\n      <td>47.5 (28.4, 69.4)</td>\n      <td>94 (73.5, 121.5)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>63.4 (45, 77.9)</td>\n      <td>24.5 (0, 53.2)</td>\n      <td>54.1 (35.8, 70.1)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Gauteng</td>\n      <td>% Increase in transmissibility</td>\n      <td>42.2 (35.6, 48.3)</td>\n      <td>51.8 (44.5, 58.7)</td>\n      <td>112.6 (96.2, 131.8)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>65 (57, 72.2)</td>\n      <td>44.3 (36.4, 54.9)</td>\n      <td>64.1 (56, 74.2)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">KwaZulu-Natal</td>\n      <td>% Increase in transmissibility</td>\n      <td>29.7 (22.9, 36.6)</td>\n      <td>52.5 (44.8, 60.8)</td>\n      <td>90.6 (77.9, 102.4)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>58.1 (48.3, 71.3)</td>\n      <td>17.3 (1.4, 27.6)</td>\n      <td>51.1 (39.3, 58.1)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Western Cape</td>\n      <td>% Increase in transmissibility</td>\n      <td>23.4 (20.2, 27.4)</td>\n      <td>55.2 (48.2, 62.7)</td>\n      <td>86.1 (72.6, 102.6)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>68.9 (62.5, 76.4)</td>\n      <td>41.5 (35.6, 53.5)</td>\n      <td>61 (55.5, 67.3)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Eastern Cape</td>\n      <td>% Increase in transmissibility</td>\n      <td>24.1 (18, 29.7)</td>\n      <td>50.2 (40.5, 57.4)</td>\n      <td>78.4 (67.6, 89.2)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>54.6 (45.1, 61.2)</td>\n      <td>24.2 (15.4, 36.2)</td>\n      <td>45.3 (34.5, 57.2)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Limpopo</td>\n      <td>% Increase in transmissibility</td>\n      <td>32.6 (24.9, 39.8)</td>\n      <td>38.9 (31.5, 50.5)</td>\n      <td>91.8 (82.6, 102.4)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>56.3 (38.4, 76.2)</td>\n      <td>1.8 (0, 21.2)</td>\n      <td>42.1 (33.2, 53.2)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Mpumalanga</td>\n      <td>% Increase in transmissibility</td>\n      <td>31.2 (25.4, 38.6)</td>\n      <td>35.3 (24.9, 48.2)</td>\n      <td>88.6 (72.8, 104.3)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>55.6 (39.8, 70)</td>\n      <td>3.1 (0, 21.7)</td>\n      <td>45.9 (37.7, 55.7)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">North West</td>\n      <td>% Increase in transmissibility</td>\n      <td>43.8 (36.9, 52.1)</td>\n      <td>36.8 (25.6, 47.5)</td>\n      <td>100 (81.7, 121.1)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>67 (58.4, 75.4)</td>\n      <td>12.4 (0.4, 30.5)</td>\n      <td>56.6 (48.2, 68.8)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Free State</td>\n      <td>% Increase in transmissibility</td>\n      <td>42.7 (35, 49.8)</td>\n      <td>43.8 (31.9, 52.1)</td>\n      <td>92.2 (77.4, 106.9)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>70 (64.5, 76.2)</td>\n      <td>27.7 (17.6, 41.6)</td>\n      <td>57 (49.5, 66.6)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Northern Cape</td>\n      <td>% Increase in transmissibility</td>\n      <td>38.6 (32.6, 44.8)</td>\n      <td>63.1 (50.4, 79.2)</td>\n      <td>106 (94.7, 119.6)</td>\n    </tr>\n    <tr>\n      <td>% Immune erosion</td>\n      <td>75 (67.4, 82)</td>\n      <td>47.9 (40.5, 59.1)</td>\n      <td>64 (57.3, 72.6)</td>\n    </tr>\n  </tbody>\n</table>\n\nEstimates for Delta vary across the nine provinces (Figure 4D, 2nd column), given the more diverse population immune landscape among provinces after two pandemic waves. Overall, we estimate that Delta eroded 24.5% (95% CI: 0\u201353.2%) of prior immunity (gained from infection by ancestral SARS-CoV-2 and/or Beta, and/or vaccination) and was 47.5% (95% CI: 28.4\u201369.4%) more transmissible than the ancestral SARS-CoV-2. Consistent with this finding, and in particular the estimated immune erosion, studies have reported a 27.5% reinfection rate during the Delta pandemic wave in Delhi, India (Dhar et al., 2021) and reduced ability of sera from Beta-infection recoverees to neutralize Delta (Liu et al., 2021; de Oliveira and Lessells, 2021).\n\nFor Omicron (BA.1), estimates also vary by province but still consistently point to its higher transmissibility than all previous variants (Figure 4D, 3rd column). Overall, we estimate that Omicron (BA.1) is 94.0% (95% CI: 73.5\u2013121.5%) more transmissible than the ancestral SARS-CoV-2. This estimated transmissibility is higher than Delta and consistent with in vitro and/or ex vivo studies showing Omicron (BA.1) replicates faster within host than Delta (Garcia-Beltran et al., 2022; Hui et al., 2022). In addition, we estimate that Omicron (BA.1) eroded 54.1% (95% CI: 35.8\u201370.1%) of immunity due to all prior infections and vaccination. Importantly, as noted above, the estimate for immune erosion is not directly comparable across variants, as it is relative to the combined population immunity accumulated until the rise of each variant. In the case of Beta, it is immunity accumulated from the first wave via infection by the ancestral SARS-CoV-2. In the case of Omicron (BA.1), it includes immunity from prior infection and re-infection of any of the previously circulating variants as well as vaccination. Thus, the estimate for Omicron (BA.1) may represent a far broader capacity for immune erosion than was evident for Beta. Supporting the suggestion of broad-spectrum immune erosion of Omicron (BA.1), studies have reported low neutralization ability of convalescent sera from infections by all previous variants (R\u00f6ssler et al., 2022; Cele et al., 2022), as well as high attack rates among vaccinees in several Omicron (BA.1) outbreaks (Brandal et al., 2021; Helmsdal et al., 2022).\n\n## Discussion\n\nUsing a comprehensive model-inference system, we have reconstructed the pandemic dynamics in each of the nine provinces of South Africa. Uncertainties exist in our findings, due to incomplete and varying detection of SARS-CoV-2 infections and deaths, changing population behavior and public health interventions, and changing circulating variants. To address these uncertainties, we have validated our estimates using three datasets not used by our model-inference system (i.e. serology, hospitalization, and excess mortality data; Figure 1B and Appendix 1\u2014figure 2) as well as retrospective prediction (Figure 2 and Appendix 1\u2014figure 4). In addition, as detailed in the Results, we have showed that estimated underlying infection rates (Figure 1B and Appendix 1\u2014figure 2) and key parameters (e.g. infection-detection rate and infection-fatality risk) are in line with other independent epidemiological data and investigations. The detailed, validated model-inference estimates thus allow quantification of both the immune erosion potential and transmissibility of three major SARS-CoV-2 VOCs, that is, Beta, Delta, and Omicron (BA.1).\n\nThe relevance of our model-inference estimates to previous studies has been presented in the Results section. Here, we make three additional general observations, drawn from global SARS-CoV-2 dynamics including but not limited to findings in South Africa. First, high prior immunity does not preclude new outbreaks, as neither infection nor current vaccination is sterilizing. As shown in South Africa, even with the high infection rate accumulated from preceding waves, new waves can occur with the emergence or introduction of new variants. Around half of South Africans are estimated to have been infected after the Beta wave (Appendix 1\u2014table 2), yet the Delta variant caused a third large pandemic wave, followed by a fourth wave with comparable infection rates by Omicron BA.1 (Figure 4B, Appendix 1\u2014table 2, and Appendix 1\u2014table 4 for a preliminary assessment of reinfection rates).\n\nSecond, large numbers of hospitalizations and/or deaths can still occur in later waves with large infection surges, even though prior infection may provide partial protection and to some extent temper disease severity. This is evident from the large Delta wave in South Africa, which resulted in 0.2% excess mortality (vs. 0.08% during the first wave and 0.19% during the Beta wave [The South African Medical Research Council (SAMRC), 2021]). More recently, due to the Omicron BA.4/BA.5 subvariants that have been shown to evade prior immunity including from BA.1 infection (Cao et al., 2022; Khan et al., 2022), a fifth wave began in South Africa during May 2022, leading to increases in both cases and hospitalizations (Sarah et al., 2022). Together, the continued transmission and potential severe outcomes highlight the importance of continued preparedness and prompt public health actions as societies learn to live with SARS-CoV-2.\n\nThird, multiple SARS-CoV-2 VOCs/VOIs have emerged in the two years since pandemic inception. It is challenging to predict the frequency and direction of future viral mutation, in particular, the level of immune erosion, changes in transmissibility, and innate severity. Nonetheless, given high exposure and vaccination in many populations, variants capable of eroding a wide spectrum of prior immunity (i.e. from infection by multiple preexisting variants and vaccination) would have a greater chance of causing new major outbreaks. Indeed, except for the Alpha variant, the other four important VOCs (i.e. Beta, Gamma, Delta, and Omicron) all produced some level of immune erosion. In addition, later VOCs, like Delta and Omicron, appear to have been more genetically distinct from previous variants (van der Straten et al., 2022). As a result, they are likely more capable of causing re-infection despite diverse prior exposures and in turn new pandemic waves. Given this pattern, to prepare for future antigenic changes from new variants, development of a universal vaccine that can effectively block SARS-CoV-2 infection in addition to preventing severe disease (e.g. shown in Mao et al., 2022) is urgently needed (Morens et al., 2022).\n\nThe COVID-19 pandemic has caused devastating public health and economic burdens worldwide. Yet SARS-CoV-2 will likely persist in the future. To mitigate its impact, proactive planning and preparedness is paramount.\n\n## Materials and methods\n\n### Data sources and processing\n\nWe used reported COVID-19 case and mortality data to capture transmission dynamics, weather data to estimate infection seasonality, mobility data to represent concurrent NPIs, and vaccination data to account for changes in population susceptibility due to vaccination in the model-inference system. Provincial level COVID-19 case, mortality, and vaccination data were sourced from the Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa (COVID19ZA)(Data Science for Social Impact Research Group at University of Pretoria, 2021). Hourly surface station temperature and relative humidity came from the Integrated Surface Dataset (ISD) maintained by the National Oceanic and Atmospheric Administration (NOAA) and are accessible using the \u2018stationaRy\u2019 R package (Iannone, 2020a; Iannone, 2020b). We computed specific humidity using temperature and relative humidity per the Clausius-Clapeyron Equation (Wallace and Hobbs, 2006). We then aggregated these data for all weather stations in each province with measurements since 2000 and calculated the average for each week of the year during 2000\u20132020.\n\nMobility data were derived from Google Community Mobility Reports (Google Inc, 2020); we aggregated all business-related categories (i.e. retail and recreational, transit stations, and workplaces) in all locations in each province to weekly intervals. For vaccination, provincial vaccination data from the COVID19ZA data repository recorded the total number of vaccine doses administered over time; to obtain a breakdown for numbers of partial (one dose of mRNA vaccine) and full vaccinations (one dose of Janssen vaccine or two doses of mRNA vaccine), separately, we used national vaccination data for South Africa from Our World in Data (Anonymous, 2020a; Mathieu et al., 2021) to apportion the doses each day. In addition, cumulative case data suggested 18,586 new cases on November 23, 2021, whereas the South Africa Department of Health reported 868 (Department of Health Republic of South Africa, 2021a). Thus, for November 23, 2021, we used linear interpolation to fill in estimates for each province on that day and then scaled the estimates such that they sum to 868.\n\n### Model-inference system\n\nThe model-inference system is based on our previous work estimating changes in transmissibility and immune erosion for SARS-CoV-2 VOCs including Alpha, Beta, Gamma, and Delta (Yang and Shaman, 2021c; Yang and Shaman, 2022). Below we describe each component.\n\n#### Epidemic model\n\nThe epidemic model follows an SEIRSV (susceptible-exposed-infectious-recovered-susceptible-vaccination) construct per Equation 1:\n\n$$\n{\\frac{dS}{dt}=\\frac{R}{L_{t}}\u2212\\frac{b_{t}e_{t}m_{t}\\beta_{t}IS}{N}\u2212\\epsilon\u2212v_{1,\u00a0t}\u2212v_{2,t}\\frac{dE}{dt}=\\frac{b_{t}e_{t}m_{t}\\beta_{t}IS}{N}\u2212\\frac{E}{Z_{t}}+\\epsilon\u00a0\\frac{dI}{dt}=\\frac{E}{Z_{t}}\u2212\\frac{I}{D_{t}}\\frac{dR}{dt}=\\frac{I}{D_{t}}\u2212\\frac{R}{L_{t}}+v_{1,\u00a0t}+v_{2,t}\n$$\n\nwhere S, E, I, R are the number of susceptible, exposed (but not yet infectious), infectious, and recovered/immune/deceased individuals; N is the population size; and \u03b5 is the number of travel-imported infections. In addition, the model includes the following key components:\n\n\u00ad\n\n$$\nR_{0}t=[aq^{2}t+bqt+c][\\frac{T_{c}}{Tt}]^{T_{exp}}\n$$\n\n\n\n$$\nb_{t}=\\frac{R_{0}(t)}{R_{0}(t)\u00af}\n$$\n\nIn essence, the seasonality function in Equation 2 assumes that humidity has a bimodal effect on seasonal risk of infection, with both low and high humidity conditions favoring transmission [i.e. the parabola in 1st set of brackets, where q(t) is weekly specific humidity measured by local weather stations]; and this effect is further modulated by temperature, with low temperatures promoting transmission and temperatures above a certain threshold limiting transmission [i.e. 2nd set of brackets, where T(t) is weekly temperature measured by local weather stations and Tc is the threshold]. As SARS-CoV-2 specific parameters (a, b, c, Tc, and Texp in Equation 2) are not available, to estimate its seasonality using Equation 2, as done in Yang and Shaman, 2021c, we use parameters estimated for influenza (Yuan et al., 2021) and scale the weekly outputs [i.e., $R_{0}t$ ] by the annual mean (i.e. $R_{0}\u00af$) per Equation 3. In doing so, the scaled outputs (bt) are no longer specific to influenza; rather, they represent the relative, seasonality-related transmissibility by week, general to viruses sharing similar seasonal responses. As shown in Figure 2A, bt estimates over the year averaged to 1 such that weeks with bt >1 (e.g. during the winter) are more conducive to SARS-CoV-2 transmission, whereas weeks with bt <1 (e.g. during the summer) have less favorable climate conditions for transmission. The estimated relative seasonal trend, bt, is used to adjust the relative transmission rate at time t in Equation 1.\n\n#### Observation model to account for under-detection and delay\n\nUsing the model-simulated number of infections occurring each day, we further computed the number of cases and deaths each week to match with the observations, as done in Yang et al., 2021a. Briefly, we include (1) a time-lag from infectiousness to detection (i.e. an infection being diagnosed as a case), drawn from a gamma distribution with a mean of Td,mean days and a standard deviation of Td, sd days, to account for delays in detection (Appendix 1\u2014table 5); (2) an infection-detection rate (rt), that is the fraction of infections (including subclinical or asymptomatic infections) reported as cases, to account for under-detection; (3) a time-lag from infectiousness to death, drawn from a gamma distribution with a mean of 13\u201315 days and a standard deviation of 10 days; and (4) an infection-fatality risk (IFRt). To compute the model-simulated number of new cases each week, we multiplied the model-simulated number of new infections per day by the infection-detection rate, and further distributed these simulated cases in time per the distribution of time-from-infectiousness-to-detection. Similarly, to compute the model-simulated deaths per week and account for delays in time to death, we multiplied the simulated-infections by the IFR and then distributed these simulated deaths in time per the distribution of time-from-infectious-to-death. We then aggregated these daily numbers to weekly totals to match with the weekly case and mortality data for model-inference. For each week, the infection-detection rate (rt), the infection-fatality risk (IFRt)., and the two time-to-detection parameters (Td, mean and Td, sd) were estimated along with other parameters (see below).\n\n#### Model inference and parameter estimation\n\nThe inference system uses the ensemble adjustment Kalman filter (EAKF [Anderson, 2001]), a Bayesian statistical method, to estimate model state variables (i.e. S, E, I, R from Equation 1) and parameters (i.e. $\\beta_{t}$ , Zt, Dt, Lt, et, from Equation 1 as well as rt, IFRt and other parameters from the observation model). Briefly, the EAKF uses an ensemble of model realizations (n=500 here), each with initial parameters and variables randomly drawn from a prior range (see Appendix 1\u2014table 5). After model initialization, the system integrates the model ensemble forward in time for a week (per Equation 1) to compute the prior distribution for each model state variable and parameter, as well as the model-simulated number of cases and deaths for that week. The system then combines the prior estimates with the observed case and death data for the same week to compute the posterior per Bayes' theorem (Anderson, 2001). During this filtering process, the system updates the posterior distribution of all model variables and parameters for each week. For a further discussion on the filtering process and additional considerations, see the Appendix 1; diagnosis of model posterior estimates for all parameters are also included in the Appendix 1 and Appendix 1\u2014figures 15\u201323.\n\n#### Estimating changes in transmissibility and immune erosion for each variant\n\nAs in Yang and Shaman, 2021c, we computed the variant-specific transmissibility ($R_{TX}$) as the product of the variant-specific transmission rate ($\\beta_{t}$) and infectious period (Dt). Note that Rt, the time-varying effective reproduction number, is defined as $R_{t}=b_{t}e_{t}m_{t}\\beta_{t}D_{t}S/N=b_{t}e_{t}m_{t}R_{TX}S/N.  $ To reduce uncertainty, we averaged transmissibility estimates over the period a particular variant of interest was predominant. To find these predominant periods, we first specified the approximate timing of each pandemic wave in each province based on: (1) when available, genomic surveillance data; specifically, the onsets of the Beta wave in Eastern Cape, Western Cape, KwaZulu-Natal, and Northern Cape, were separately based on the initial detection of Beta in these provinces as reported in Tegally et al., 2021; the onsets of the Delta wave in each of the nine provinces, separately, were based on genomic sequencing data from the Network for Genomic Surveillance South Africa (NGS-SA)(The National Institute for Communicable Diseases (NICD) of the National Health Laboratory (NHLS) on behalf of the Network for Genomics Surveillance in South Africa (NGS-SA), 2021); and (2) when genomic data were not available, we used the week with the lowest case number between two waves. The specified calendar periods are listed in Appendix 1\u2014table 6. During later waves, multiple variants could initially co-circulate before one became predominant. As a result, the estimated transmissibility tended to increase before reaching a plateau (see, e.g. Figure 2C). In addition, in a previous study of the Delta pandemic wave in India (Yang and Shaman, 2022), we also observed that when many had been infected, transmissibility could decrease a couple months after the peak, likely due to increased reinfections for which onward transmission may be reduced. Thus, to obtain a more variant-specific estimate, we computed the average transmissibility ($R_{TX}\u00af$) using the weekly RTX estimates over the 8-week period starting the week prior to the maximal Rtx during each wave; if no maximum existed (e.g. when a new variant is less transmissible), we simply averaged over the entire wave. We then computed the change in transmissibility due to a given variant relative to the ancestral\u2009SARS-CoV-2 as\u2009$\\frac{(R_{TX,variant}\u00af\u2212R_{TX,ancestral}\u00af)}{R_{TX,ancestral}\u00af}\\times100%$.\n\nTo quantify immune erosion, similar to Yang and Shaman, 2021c, we estimated changes in susceptibility over time and computed the change in immunity as \u0394Imm = St+1 \u2013 St +it, where St is the susceptibility at time-t and it is the new infections occurring during each week-t. We sum over all \u0394Imm estimates for a particular location, during each wave, to compute the total change in immunity due to a new variant, $\u03a3\u0394Imm_{v}$. Because filter adjustment could also slightly increase S, to avoid overestimation, here we only included substantial increases (i.e. \u0394Imm per week >0.5% of the total population) when computing changes due to a new variant. As such, we did not further account for smaller susceptibility increases due to waning immunity [for reference, for a population that is 50% immune and a 2-year mean immunity period, 0.5 / (52\u00d72)\u00d7100% = 0.48% of the population would lose immunity during a week due to waning immunity]. We then computed the level of immune erosion as the ratio of $\u03a3\u0394Imm_{v}$ to the model-estimated population immunity prior to the first detection of immune erosion, during each wave. That is, as opposed to having a common reference of prior immunity, here immune erosion for each variant depends on the state of the population immune landscape \u2013that is, combining all prior exposures and vaccinations \u2013 immediately preceding the surge of that variant.\n\nFor all provinces, model-inference was initiated the week starting March 15, 2020 and run continuously until the week starting February 27, 2022. To account for model stochasticity, we repeated the model-inference process 100 times for each province, each with 500 model realizations and summarized the results from all 50,000 model estimates.\n\n### Model validation using independent data\n\nTo compare model estimates with independent observations not assimilated into the model-inference system, we utilized three relevant datasets:\n\n### Model validation using retrospective prediction\n\nAs a fourth model validation, we generated model predictions at 2 or 1 weeks before the week of highest cases for the Delta and Omicron (BA.1) waves, separately, and compared the predicted cases and deaths to reported data unknown to the model. Predicting the peak timing, intensity, and epidemic turnaround requires accurate estimation of model state variables and parameters that determine future epidemic trajectories. This is particularly challenging for South Africa as the pandemic waves tended to progress quickly such that cases surged to a peak in only 3\u20137 weeks. Thus, we chose to generate retrospective predictions 2 and 1 weeks before the peak of cases in order to leverage 1\u20136 weeks of new variant data for estimating epidemiological characteristics. Specifically, for each pandemic wave, we ran the model-inference system until 2 weeks (or 1 week) before the observed peak of cases, halted the inference, and used the population susceptibility and transmissibility of the circulating variant estimated at that time to predict cases and deaths for the remaining weeks (i.e. 10\u201314 weeks into the future). Because the infection detection rate and fatality risk are linked to observations of cases and deaths, changes of these quantities during the prediction period could obscure the underlying infection rate and accuracy of the prediction. Thus, for these two parameters specifically, we used model-inference estimates for corresponding weeks to allow comparison of model-predicted cases and deaths with the data while focusing on testing the accuracy of other key model estimates (e.g. transmissibility of the new variant). As for the model-inference, we repeated each prediction 100 times, each with 500 model realizations and summarized the results from all 50,000 ensemble members.\n\n### Data Availability\n\nAll data used in this study are publicly available as described in the \u201cData sources and processing\u201d section.\n\n### Code availability\n\nAll source code and data necessary for the replication of our results and figures are publicly available at https://github.com/wan-yang/covid_SouthAfrica (copy archived at swh:1:rev:40c0e5ac5ab65005b600a4ca646fec04b0870b81) (Yang, 2022).\n",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "2ab12948-ae85-4986-a659-f23fa4b124ab",
+      "submission_id": "4c4dadb9-f7ea-4588-a21c-53010a37f6fc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dobromir Dimitrov, https://ror.org/007ps6h72 Fred Hutchinson Cancer Center Seattle United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78933.sa0](https://doi.org/10.7554/eLife.78933.sa0)\n\nThis paper proposes a modeling framework that can be used to track the complex behavioral and immunological landscape of the COVID-19 pandemic over multiple surges and variants in South Africa, which has been validated previously for other regions and time periods. This work may be useful for infectious disease modelers, epidemiologists, and public health officials as they navigate the next phase of the pandemic or seek to understand the history of the epidemic in South Africa.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Dobromir Dimitrov, https://ror.org/007ps6h72 Fred Hutchinson Cancer Center Seattle United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78933.sa1](https://doi.org/10.7554/eLife.78933.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"COVID-19 pandemic dynamics in South Africa and epidemiological characteristics of three variants of concern (\u0392, \u0394, and Omicron)\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Bavesh Kana as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Mia Moore (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Authors need to clarify how their modeling analysis supports stated conclusions.\n\n2) The paper will benefit from a more detailed explanation and sensitivity analyses that show how model assumptions influence presented results.\n\n3) The authors should elaborate on the time-dependent results for all hidden parameters estimated as part of the model\n\nReviewer #1 (Recommendations for the authors):\n\n1) Figure 1A is difficult to read but looks like the model underestimates many of the mortality peaks. Authors should discuss this.\n\n2) Figure 1B: unclear what data is shown. y-label suggests it is a ratio of cum. inf over seroprevalence as %. However, this ratio should be >1 yes? Most of the key quantitative metrics used in the paper include cumulative inf. rate, seroprevalence, susceptibility, transmissibility, etc. should be clearly defined to avoid confusion.\n\n3) Using increased susceptibility and immune erosion interchangeably (as in rows 123-126) is troubling if attributed to the properties of different variants only. It should at least partially due to waning immunity, independent of what variants are prevalent. Several studies suggest that waning may not be the same for protection acquired from vaccines or from prior infection. I understand that these effects are not easy to be disentangled but their feasibility needs to be considered.\n\n4) Large attack rate in rows 137-138 is attributed to the high transmissibility of \u0394. What about waning immunity? What is the estimated reinfection rate?\n\n5) Immunity erosion is a key metric reported in the results. What is the mechanism of this erosion? More susceptible, more likely to get a severe infection or something else? Do you assume the same erosion after prior infection and after vaccination? What about waning over time? A more precise definition will help readers.\n\n6) Many assumptions including those in rows 311-315 are critical. Will be nice to show how sensitive the results are to them.\n\n7) Having seasonality in the model is interesting and useful. Authors should elaborate if this is related to proportions of contacts occurring indoors or something else? That will help applicability to other settings.\n\n8) Figure 3E Sharp increase in detection rate during Omicron rate is difficult to believe. Other explanation?\n\n9) Figure 4D The term \"relative change\" here is confusing. Need more precise definitions. For instance, does it mean that \u0392 is ~50% as transmissible as the ancestral or does it mean that \u0392 is ~50% more transmissible than ancestral?\n\n10) Not sure the IFR estimates by province on p. 38 make sense to me. In my view, they should be similar across regions if health systems are comparably effective. Is it assumed different rates for previously infected and/or vaccinated?\n\nReviewer #2 (Recommendations for the authors):\n\nIn general very good work, but I think you need to make the logic that leads from your analysis to your conclusions a little clearer, ie what is it about what you found that makes you view large future waves as possible. I would consider focusing on the long-term trends that you can see, specifically with regard to transmission and susceptibility.\n\nI'm also concerned about the potential lack of identifiability in the fitting scheme with all of these different parameters. In particular, I'm concerned that the drastic changes in infection detection rate may be masking changes elsewhere, in particular during the Omicron wave. I would consider a sensitivity that leaves this variable constant.\n\nTransmissibility and Susceptibility need a more precise definition when introduced. These are assumed to be time-varying parameters or are they derived from other quantities?\n\nFit: Cases and Deaths, Validation: Hospitalization, Excess Deaths, Seroprevalence, retrospective predictions of \u03b4 and omicron waves\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have presented an extremely well-written and comprehensive analysis of the South African COVID-19 pandemic using an intricate epidemiological model. I am having some trouble fully evaluating the model, though, because of the numerous time-dependent variables estimated as part of the fitting process. I would suggest that the authors consider adding in a figure (at least from one example region) showcasing the time-dependent results for all hidden parameters estimated as part of the model (i.e. Zt, Dt, Lt, et, from Equation 1 as well as rt, IFRt and other parameters from the observation model). There is likely to be a high correlation between many of these parameters over time, so such plots would allow for proper diagnosis of the fitting procedure and ensure that all parameters are within the realistic parameter ranges at all times. As a note, it was not clear whether the prior distributions in Table S4 were actual Bayesian prior distributions, or merely the initial range of starting conditions for T0, and it would be helpful to clarify how they integrate with model fitting. Additionally, I suggest that the authors expand their Results section to include additional analyses from these hidden parameters such as how the latent period has changed over time (e.g. there is some evidence that omicron progressed quicker than previous variants) and/or the impact that mobility has had on transmission over time (incorporating the impact of et). Other analyses have found degradation of the relationship between mobility and transmission over time in limited contexts, so it would be useful to compare the current results (e.g. https://www.pnas.org/doi/10.1073/pnas.2111870119)\n\nThe authors use seasonal patterns based on historic climate data from South Africa as a means to modulate COVID-19 transmission, but there doesn't appear to be any reference for the actual climate data for South Africa from the same time period. Are there any data from the modeling time period the authors could use as validation that their assumed seasonal curves match the actual climatic conditions?\n\nThe use of retrospective forecasts is used as a means to validate that the model is accurately capturing transmission, behavioral, and immunological status in the model. While I agree that overall, the 1-2 week forecasts look satisfactory, most forecast hubs are asking for forecasts up to 4 weeks (e.g. covid forecast hub), and accurate forecasts over a longer time horizon would dramatically strengthen the validation of the model estimates. I suggest that the authors attempt 3-4 week forecasts as part of a supplemental analysis to understand the limitations of the model and forecast ability.\n",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8a0bd5c3-65f5-41fb-b704-df3e6bb87af4",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C1",
+      "claim": "South Africa experienced three VOC pandemic waves (Beta, Delta, and Omicron BA.1) by February 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "here we apply a model-inference system to reconstruct SARS-CoV-2 transmission dynamics in South Africa, a country that has experienced three VOC pandemic waves (i.e. Beta, Delta, and Omicron BA.1) by February 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is based on the data analyzed in the study covering March 2020 to February 2022.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "5cd42a49-9fec-44dc-8e95-b695a5aca0df",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C2",
+      "claim": "The model-inference system accounts for changing detection rates, infection seasonality, nonpharmaceutical interventions, and vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate key epidemiologic quantities in each of the nine South African provinces during March 2020 to February 2022, while accounting for changing detection rates, infection seasonality, nonpharmaceutical interventions, and vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methodology section describes these components as part of the model-inference system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "656c5c64-7716-4509-9c45-078241b5b1b6",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C3",
+      "claim": "Model estimated underlying infection rates are in line with independent epidemiological data and investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "Model validation shows that estimated underlying infection rates and key parameters (e.g. infection-detection rate and infection-fatality risk) are in line with independent epidemiological data and investigations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The validation is demonstrated through comparisons with serology, hospitalization, and excess mortality data as shown in Figure 1B and Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "f2369a3b-19f7-48d8-bb85-71b6059b1319",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C4",
+      "claim": "Retrospective predictions capture pandemic trajectories beyond the model training period.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, retrospective predictions capture pandemic trajectories beyond the model training period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2 and Appendix 1\u2014figure 3, showing predictions made 1-2 weeks before case peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "abf8e831-f99f-47c9-9328-3d5127f9b1f8",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C5",
+      "claim": "South Africa had the earliest surge for Beta and Omicron VOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, South Africa is also unique in that the country had the earliest surge for two of the five VOCs identified to date \u2013 namely, Beta (Tegally et al., 2021) and Omicron (Viana et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies documenting the early detection of these variants in South Africa.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "9a8503b2-6d9d-43f5-8c22-0353267ccb2b",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C6",
+      "claim": "The model-inference system is able to fit weekly case and death data in each of the nine South African provinces.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the model-inference system is able to fit weekly case and death data in each of the nine South African provinces (Figure 1A, Appendix 1\u2014figure 1, and additional discussion in Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1A shows the model fit to observed case and death data across all provinces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "5e07c90d-62c0-4327-a893-1b027b002662",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C7",
+      "claim": "Model estimated cumulative infection rates roughly match corresponding serology measures and trends over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to seroprevalence measures taken at multiple time points in each province, our model estimated cumulative infection rates roughly match corresponding serology measures and trends over time; as expected, model estimates were higher than serology measures taken during later months (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B shows the comparison between model estimates and independent seroprevalence data from multiple surveys.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "57914b0d-0b03-4b5f-9817-eef1ef46230d",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C8",
+      "claim": "Model estimated infection numbers were well correlated with numbers of hospitalizations for all four pandemic waves (r>0.75).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, compared to hospital admission data, across the nine provinces, model estimated infection numbers were well correlated with numbers of hospitalizations for all four pandemic waves caused by the ancestral, Beta, Delta, and Omicron (BA.1) variants, respectively (r>0.75, Appendix 1\u2014figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation analysis with independent hospitalization data validates the model estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "d1cbfc5b-1607-4d95-aa35-a5d629eb24d3",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C9",
+      "claim": "Model-estimated infection numbers were correlated with age-adjusted excess mortality for both the ancestral and Delta wave (r=0.86 and 0.61, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Third, model-estimated infection numbers were correlated with age-adjusted excess mortality for both the ancestral and Delta wave (r=0.86 and 0.61, respectively; Appendix 1\u2014figure 2A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation with independent excess mortality data provides validation of model estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "8b14989d-ee91-4eeb-b296-cfcf3691ce56",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C10",
+      "claim": "For the Omicron (BA.1) wave, mortality rates decoupled from infection rates due to prior infection and/or vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Omicron (BA.1) wave, like many other places, due to prior infection and/or vaccination (Nyberg et al., 2022; Wolter et al., 2022), mortality rates decoupled from infection rates (Appendix 1\u2014figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by citations to studies showing reduced severity with Omicron and is consistent with data shown in Appendix 1\u2014figure 2D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "accfe358-1f05-4a8c-8a61-5732239b07be",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C11",
+      "claim": "The model was able to accurately predict the remaining trajectories of cases and deaths in most of the nine provinces for both the Delta and Omicron (BA.1) waves, 1\u20132 weeks before the case peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these challenges, 1\u20132 weeks before the case peak and 3\u20135 weeks before the observed death peak, the model was able to accurately predict the remaining trajectories of cases and deaths in most of the nine provinces for both the Delta and Omicron (BA.1) waves (Figure 2 for the four most populous provinces and Appendix 1\u2014figure 3 for the remainder).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2 and Appendix 1\u2014figure 3 show the retrospective predictions compared to observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "7de8f759-ca5f-45e6-b13c-31b8336dc335",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C12",
+      "claim": "The estimated infection-detection rate during the first pandemic wave in Gauteng was 4.59% (95% CI: 2.62\u20139.77%).",
+      "claim_type": "EXPLICIT",
+      "source": "For Gauteng, the estimated infection-detection rate during the first pandemic wave was 4.59% (95% CI: 2.62\u20139.77%), and increased slightly to 6.18% (95% CI: 3.29\u201311.11%) and 6.27% (95% CI: 3.44\u201312.39%) during the Beta and Delta waves, respectively (Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate based on fitting case and death data while accounting for under-detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "e742e0fd-2c41-4355-aa2c-4adcbdd67f8e",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C13",
+      "claim": "A population-level sero-survey in Gauteng found 68.4% seropositivity among those unvaccinated at the end of the Delta wave.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a population-level sero-survey in Gauteng found 68.4% seropositivity among those unvaccinated at the end of the Delta wave (Madhi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from an independent seroprevalence study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "dd53bebe-9f12-416e-a780-73a0f2427d15",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C14",
+      "claim": "32.83% (95% CI: 15.42\u201357.59%) of the population in Gauteng were infected during the first wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our inferred under-detection (Figure 3E), we estimate that 32.83% (95% CI: 15.42\u201357.59%, Appendix 1\u2014table 2) of the population in Gauteng were infected during the first wave, predominantly during winter when more conducive climate conditions and relaxed public health restrictions existed (see the estimated seasonal and mobility trends, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model-inference estimate based on the infection-detection rate and observed cases, shown in Figure 3 and Appendix 1\u2014table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "24da5239-e0a6-4dd8-bebe-80060b133493",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C15",
+      "claim": "Serology measures taken in Gauteng at the end of the first wave ranged from 15% to 27% among 6 sero-surveys during November 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "This high infection rate, while with uncertainty, is in line with serology measures taken in Gauteng at the end of the first wave (ranging from 15% to 27% among 6 sero-surveys during November 2020; Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on independent seroprevalence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "7b3bb781-007d-481c-b3d5-c0c8bb0b7f8f",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C16",
+      "claim": "A study showed 30% sero-positivity among participants enrolled in the Novavax NVX-CoV2373 vaccine phase 2a-b trial in South Africa during August \u2013 November 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "and a study showing 30% sero-positivity among participants enrolled in the Novavax NVX-CoV2373 vaccine phase 2a-b trial in South Africa during August \u2013 November 2020 (Shinde et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from an independent vaccine trial study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "3b6ed794-d2cb-4906-8c19-a6e213e7d2c2",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C17",
+      "claim": "21.87% (95% CI: 12.16\u201341.13%) of the population in Gauteng were infected during the Beta wave.",
+      "claim_type": "EXPLICIT",
+      "source": "With the emergence of Beta, another 21.87% (95% CI: 12.16\u201341.13%) of the population in Gauteng \u2013 including reinfections \u2013 is estimated to have been infected, even though the Beta wave occurred during summer under less conducive climate conditions for transmission (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model-inference estimate shown in the context of Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "cffa4a8e-b775-41de-b251-9b0a56ce7237",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C18",
+      "claim": "Beta likely substantially eroded prior immunity, consistent with laboratory studies showing low neutralizing ability of convalescent sera against Beta.",
+      "claim_type": "EXPLICIT",
+      "source": "This dramatic increase in population susceptibility (vs. a likely more gradual change due to waning immunity), to the then predominant Beta variant, suggests Beta likely substantially eroded prior immunity and is consistent with laboratory studies showing low neutralizing ability of convalescent sera against Beta (Garcia-Beltran et al., 2021; Wall et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on model estimates of population susceptibility changes and is supported by citations to laboratory studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "d5013617-5a66-4625-9f87-36dfeecebba2",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C19",
+      "claim": "An increase in transmissibility is evident for Beta, after accounting for concurrent NPIs and infection seasonality.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an increase in transmissibility is also evident for Beta, after accounting for concurrent NPIs and infection seasonality (Figure 3C; note transmissibility is computed as the product of the estimated variant-specific transmission rate and the infectious period; see Materials and methods for detail).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C based on model-inference estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "21c54a23-50f9-447d-b221-b57ff2d9be6d",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C20",
+      "claim": "The estimated overall infection-fatality risk for Beta was about twice as high as the ancestral SARS-CoV-2 (0.19% vs. 0.09%).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, consistent with in-depth epidemiological findings (Abu-Raddad et al., 2021a), the estimated overall infection-fatality risk for Beta was about twice as high as the ancestral SARS-CoV-2 (0.19% [95% CI: 0.10\u20130.33%] vs. 0.09% [95% CI: 0.05\u20130.20%], Figure 3F and Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model-inference estimate shown in Figure 3F and Appendix 1\u2014table 3, consistent with cited epidemiological findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "9c10735d-817e-4a4c-9ebf-f4699c7f410e",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C21",
+      "claim": "The model-inference system estimates a 49.82% (95% CI: 25.22\u201390.79%) attack rate by Delta in Gauteng.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-inference system estimates a 49.82% (95% CI: 25.22\u201390.79%) attack rate by Delta, despite the large number of infections during the previous two waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate based on the data and model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "edb6c37d-81ec-49cd-a077-e0429a96a45f",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C22",
+      "claim": "Delta has high transmissibility, as reported in multiple studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This large attack rate was possible due to the high transmissibility of Delta, as reported in multiple studies (Public Health England, 2021; Allen et al., 2022; Challen et al., 2021; Earnest et al., 2021; V\u00f6hringer et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies reporting Delta's high transmissibility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "0c8a88b3-16fb-4b75-8608-ce5edd7cdf40",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C23",
+      "claim": "Delta has immune erosive properties relative to both the ancestral and Beta variants.",
+      "claim_type": "EXPLICIT",
+      "source": "and the immune erosive properties of Delta relative to both the ancestral and Beta variants (Dhar et al., 2021; Liu et al., 2021; de Oliveira and Lessells, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies showing Delta's immune evasion properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "6bd08984-473a-4ceb-8c97-14849e241f66",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C24",
+      "claim": "Prior to the detection of Omicron (BA.1) in Gauteng, estimated cumulative infection numbers surpassed the population size.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to these large pandemic waves, prior to the detection of Omicron (BA.1) in Gauteng, estimated cumulative infection numbers surpassed the population size (Figure 4B), indicating the large majority of the population had been infected and some more than once.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B based on model-inference estimates of cumulative infections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "d19e11b1-72a0-45b7-973a-d8f97cb91107",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C25",
+      "claim": "With the rise of Omicron (BA.1), the model-inference system estimates a very large increase in population susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "With the rise of Omicron (BA.1), the model-inference system estimates a very large increase in population susceptibility (Figure 3D), as well as an increase in transmissibility (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D and 3C based on model-inference estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "ddab1808-ae8b-40f9-b9cb-9f2222e7f980",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C26",
+      "claim": "The Omicron (BA.1) wave progresses much more quickly than previous waves, peaking 2\u20133 weeks after initiating marked exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "however, unlike previous waves, the Omicron (BA.1) wave progresses much more quickly, peaking 2\u20133 weeks after initiating marked exponential growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the data and model estimates of the Omicron wave dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "cfa5cab7-2ea7-403b-864c-abdaec402964",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C27",
+      "claim": "By the end of February 2022, the model-inference system estimates a 44.49% (95% CI: 19.01\u201375.30%) attack rate during the Omicron (BA.1) wave in Gauteng.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of February 2022, the model-inference system estimates a 44.49% (95% CI: 19.01\u201375.30%) attack rate, with only 4.26% (95% CI: 2.46\u20139.72%) of infections detected as cases, during the Omicron (BA.1) wave in Gauteng.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate based on the data through February 2022.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "0263e458-d489-4588-9569-a309cab3af7e",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C28",
+      "claim": "Estimated overall infection-fatality risk during the Omicron (BA.1) wave was about 30% of that during the Delta wave in Gauteng (0.03% vs. 0.11%).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, consistent with the reported 0.3 odds of severe disease compared to Delta infections (Wolter et al., 2022), estimated overall infection-fatality risk during the Omicron (BA.1) wave was about 30% of that during the Delta wave in Gauteng (0.03% [95% CI: 0.02\u20130.06%] vs. 0.11% [95% CI: 0.06\u20130.21%], based on documented COVID-19 deaths; Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate consistent with cited studies on Omicron severity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "79f679b0-36e3-40a2-8a3f-1d3025b7d4c4",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C29",
+      "claim": "Estimated average cumulative infections across the nine provinces ranged from 60% of the population in Limpopo to 122% in Northern Cape before the Omicron (BA.1) wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, all nine provinces likely experienced three large pandemic waves prior to the growth of Omicron (BA.1); estimated average cumulative infections ranged from 60% of the population in Limpopo to 122% in Northern Cape (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B based on model-inference estimates across provinces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "304faa51-41eb-40c3-a2f3-1b2cd398b4f2",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C30",
+      "claim": "Excess mortality before the Omicron (BA.1) wave was as high as 0.47% of the South African population by the end of November 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Excess mortality before the Omicron (BA.1) wave was as high as 0.47% of the South African population by the end of November 2021 (The South African Medical Research Council (SAMRC), 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from an independent excess mortality report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "ea84f5cc-c906-49f8-9294-13bcf08cc63f",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C31",
+      "claim": "South Africa has a relatively young population with a median age of 27.6 years.",
+      "claim_type": "EXPLICIT",
+      "source": "despite the relatively young population (median age: 27.6 years (Anonymous, 2020b) vs. 38.5 years in the US [United States Census Bureau, 2020])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited demographic data comparing South Africa to the US.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "b0e6dc03-ad02-49ef-ac9a-ee874c87c9b1",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C32",
+      "claim": "Beta eroded immunity among 63.4% (95% CI: 45.0\u201377.9%) of individuals with prior ancestral SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In the above context, we estimate that Beta eroded immunity among 63.4% (95% CI: 45.0\u201377.9%) of individuals with prior ancestral SARS-CoV-2 infection and was 34.3% (95% CI: 20.5\u201348.2%) more transmissible than the ancestral SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate based on changes in population susceptibility during the Beta wave.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "ee0c45bc-86a4-40a4-add9-b40b01fafc73",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C33",
+      "claim": "Beta was 34.3% (95% CI: 20.5\u201348.2%) more transmissible than the ancestral SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the above context, we estimate that Beta eroded immunity among 63.4% (95% CI: 45.0\u201377.9%) of individuals with prior ancestral SARS-CoV-2 infection and was 34.3% (95% CI: 20.5\u201348.2%) more transmissible than the ancestral SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate shown in Table 1 and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "6bf06984-2f8b-42f5-bb34-850d6d9c23b0",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C34",
+      "claim": "Estimates for Beta immune erosion and transmissibility are consistent across the nine provinces.",
+      "claim_type": "EXPLICIT",
+      "source": "These estimates for Beta are consistent across the nine provinces (Figure 4D, 1st column and Table 1), as well as with our previous estimates using national data for South Africa (Yang and Shaman, 2021c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D and Table 1, and is consistent with previous work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "5d0c4776-285b-4699-8968-57fda13d338d",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C35",
+      "claim": "Recoverees of ancestral SARS-CoV-2 infection in the Novavax trial had a similar likelihood of COVID-19 (mostly due to Beta) compared to those seronegative at enrollment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional support for the high immune erosion of Beta is evident from recoverees of ancestral SARS-CoV-2 infection who were enrolled in the Novavax NVX-CoV2373 vaccine phase 2a-b trial (Shinde et al., 2021) and found to have a similar likelihood of COVID-19, mostly due to Beta, compared to those seronegative at enrollment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the Novavax vaccine trial study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "92947714-1c98-4bdf-a917-29d38d5c2a18",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C36",
+      "claim": "Delta eroded 24.5% (95% CI: 0\u201353.2%) of prior immunity gained from infection by ancestral SARS-CoV-2 and/or Beta, and/or vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we estimate that Delta eroded 24.5% (95% CI: 0\u201353.2%) of prior immunity (gained from infection by ancestral SARS-CoV-2 and/or Beta, and/or vaccination) and was 47.5% (95% CI: 28.4\u201369.4%) more transmissible than the ancestral SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate based on changes in population susceptibility during the Delta wave.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "cc1c8256-95fb-40b3-86a7-5038398cfb05",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C37",
+      "claim": "Delta was 47.5% (95% CI: 28.4\u201369.4%) more transmissible than the ancestral SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we estimate that Delta eroded 24.5% (95% CI: 0\u201353.2%) of prior immunity (gained from infection by ancestral SARS-CoV-2 and/or Beta, and/or vaccination) and was 47.5% (95% CI: 28.4\u201369.4%) more transmissible than the ancestral SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate shown in Table 1 and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "26408e04-5541-4dd7-ad8d-6f1d1af7c5ea",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C38",
+      "claim": "Studies have reported a 27.5% reinfection rate during the Delta pandemic wave in Delhi, India.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this finding, and in particular the estimated immune erosion, studies have reported a 27.5% reinfection rate during the Delta pandemic wave in Delhi, India (Dhar et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a study on reinfection rates in Delhi.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "f82a6d3d-56f7-4f4a-9b42-d642e645c2e4",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C39",
+      "claim": "Studies have reported reduced ability of sera from Beta-infection recoverees to neutralize Delta.",
+      "claim_type": "EXPLICIT",
+      "source": "and reduced ability of sera from Beta-infection recoverees to neutralize Delta (Liu et al., 2021; de Oliveira and Lessells, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on neutralization capacity against Delta.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "2ffdc09a-e7ea-4887-bc33-fa8b3945f92a",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C40",
+      "claim": "Omicron (BA.1) is 94.0% (95% CI: 73.5\u2013121.5%) more transmissible than the ancestral SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we estimate that Omicron (BA.1) is 94.0% (95% CI: 73.5\u2013121.5%) more transmissible than the ancestral SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate shown in Table 1 and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "fddcf107-6b9b-45e4-9909-1dcb24eaee8e",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C41",
+      "claim": "The estimated transmissibility of Omicron (BA.1) is higher than Delta and consistent with in vitro and/or ex vivo studies showing Omicron (BA.1) replicates faster within host than Delta.",
+      "claim_type": "EXPLICIT",
+      "source": "This estimated transmissibility is higher than Delta and consistent with in vitro and/or ex vivo studies showing Omicron (BA.1) replicates faster within host than Delta (Garcia-Beltran et al., 2022; Hui et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model estimates and is consistent with cited laboratory studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "bb40b865-6f3d-4302-b16b-fec40bba0108",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C42",
+      "claim": "Omicron (BA.1) eroded 54.1% (95% CI: 35.8\u201370.1%) of immunity due to all prior infections and vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we estimate that Omicron (BA.1) eroded 54.1% (95% CI: 35.8\u201370.1%) of immunity due to all prior infections and vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-inference estimate based on changes in population susceptibility during the Omicron wave.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "ab493153-ef94-48f2-b90d-2f67fe8cc258",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C43",
+      "claim": "Studies have reported low neutralization ability of convalescent sera from infections by all previous variants against Omicron (BA.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the suggestion of broad-spectrum immune erosion of Omicron (BA.1), studies have reported low neutralization ability of convalescent sera from infections by all previous variants (R\u00f6ssler et al., 2022; Cele et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on neutralization capacity against Omicron.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "664439ae-352b-4352-92fb-40d9c9e01abe",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C44",
+      "claim": "Studies have reported high attack rates among vaccinees in several Omicron (BA.1) outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as high attack rates among vaccinees in several Omicron (BA.1) outbreaks (Brandal et al., 2021; Helmsdal et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on Omicron outbreaks among vaccinated populations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "52d7fd66-5ed4-4c87-9594-c16f9b5c64dc",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C45",
+      "claim": "The Delta variant caused a third large pandemic wave in South Africa that resulted in 0.2% excess mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "This is evident from the large Delta wave in South Africa, which resulted in 0.2% excess mortality (vs. 0.08% during the first wave and 0.19% during the Beta wave [The South African Medical Research Council (SAMRC), 2021]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from excess mortality data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "974bd945-90a9-438f-9585-b1d6e7a338ae",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C46",
+      "claim": "Omicron BA.4/BA.5 subvariants have been shown to evade prior immunity including from BA.1 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, due to the Omicron BA.4/BA.5 subvariants that have been shown to evade prior immunity including from BA.1 infection (Cao et al., 2022; Khan et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from studies on BA.4/BA.5 immune evasion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "6e1812f0-1073-48b5-b0b2-343e72938147",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C47",
+      "claim": "A fifth wave began in South Africa during May 2022, leading to increases in both cases and hospitalizations.",
+      "claim_type": "EXPLICIT",
+      "source": "a fifth wave began in South Africa during May 2022, leading to increases in both cases and hospitalizations (Sarah et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a report on the fifth wave.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "2540a9b0-a02e-4bf5-a388-38d08f071cf6",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C48",
+      "claim": "Multiple SARS-CoV-2 VOCs/VOIs have emerged in the two years since pandemic inception.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, multiple SARS-CoV-2 VOCs/VOIs have emerged in the two years since pandemic inception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge based on global surveillance data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "683baa6a-4668-49f6-b419-28305efbf042",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C49",
+      "claim": "Except for the Alpha variant, the other four important VOCs (Beta, Gamma, Delta, and Omicron) all produced some level of immune erosion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, except for the Alpha variant, the other four important VOCs (i.e. Beta, Gamma, Delta, and Omicron) all produced some level of immune erosion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model estimates and cited literature on variant characteristics.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "d75d55d5-ec01-44b5-8ae9-5567d1cbb7a4",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C50",
+      "claim": "Later VOCs, like Delta and Omicron, appear to have been more genetically distinct from previous variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, later VOCs, like Delta and Omicron, appear to have been more genetically distinct from previous variants (van der Straten et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a study on genetic distinctiveness of variants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "6768a6ce-9a97-4a3d-9665-cd62eece7e75",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C51",
+      "claim": "Development of a universal vaccine that can effectively block SARS-CoV-2 infection in addition to preventing severe disease is urgently needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this pattern, to prepare for future antigenic changes from new variants, development of a universal vaccine that can effectively block SARS-CoV-2 infection in addition to preventing severe disease (e.g. shown in Mao et al., 2022) is urgently needed (Morens et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings and is supported by citations to relevant studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "c608f7d4-4664-4863-9dff-f1eae5bc39e3",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C52",
+      "claim": "The model uses an SEIRSV (susceptible-exposed-infectious-recovered-susceptible-vaccination) construct.",
+      "claim_type": "EXPLICIT",
+      "source": "The epidemic model follows an SEIRSV (susceptible-exposed-infectious-recovered-susceptible-vaccination) construct per Equation 1:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical structure of the epidemic model used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "9085fb15-77f2-416b-ab4f-2ca4711a473c",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C53",
+      "claim": "The seasonality function assumes that humidity has a bimodal effect on seasonal risk of infection, with both low and high humidity conditions favoring transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, the seasonality function in Equation 2 assumes that humidity has a bimodal effect on seasonal risk of infection, with both low and high humidity conditions favoring transmission [i.e. the parabola in 1st set of brackets, where q(t) is weekly specific humidity measured by local weather stations]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assumptions built into the seasonality model component.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "c7b2094d-31e0-43c9-b6bc-596996fe844d",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C54",
+      "claim": "The seasonality effect is further modulated by temperature, with low temperatures promoting transmission and temperatures above a certain threshold limiting transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "and this effect is further modulated by temperature, with low temperatures promoting transmission and temperatures above a certain threshold limiting transmission [i.e. 2nd set of brackets, where T(t) is weekly temperature measured by local weather stations and Tc is the threshold].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temperature component of the seasonality model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "c8c05a67-b8fa-4a4c-bbed-838e38614b74",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C55",
+      "claim": "The inference system uses the ensemble adjustment Kalman filter (EAKF), a Bayesian statistical method.",
+      "claim_type": "EXPLICIT",
+      "source": "The inference system uses the ensemble adjustment Kalman filter (EAKF [Anderson, 2001]), a Bayesian statistical method, to estimate model state variables (i.e. S, E, I, R from Equation 1) and parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for parameter estimation, with citation to the original method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "802fe649-b999-49fd-94aa-77980d06194c",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C56",
+      "claim": "The EAKF uses an ensemble of 500 model realizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the EAKF uses an ensemble of model realizations (n=500 here), each with initial parameters and variables randomly drawn from a prior range (see Appendix 1\u2014table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific implementation of the EAKF in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "f9e880a7-c8f8-4a12-b9a5-4642bb0eabed",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C57",
+      "claim": "Provincial level COVID-19 case, mortality, and vaccination data were sourced from the Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa (COVID19ZA).",
+      "claim_type": "EXPLICIT",
+      "source": "Provincial level COVID-19 case, mortality, and vaccination data were sourced from the Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa (COVID19ZA)(Data Science for Social Impact Research Group at University of Pretoria, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for the primary epidemiological data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "52a6943a-4360-4f8a-98f3-76f3aa6d14da",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C58",
+      "claim": "Hourly surface station temperature and relative humidity came from the Integrated Surface Dataset (ISD) maintained by NOAA.",
+      "claim_type": "EXPLICIT",
+      "source": "Hourly surface station temperature and relative humidity came from the Integrated Surface Dataset (ISD) maintained by the National Oceanic and Atmospheric Administration (NOAA) and are accessible using the 'stationaRy' R package (Iannone, 2020a; Iannone, 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for weather data used in the seasonality model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "20b1eee0-193d-4d15-b5ef-22014ef91e12",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C59",
+      "claim": "Mobility data were derived from Google Community Mobility Reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobility data were derived from Google Community Mobility Reports (Google Inc, 2020); we aggregated all business-related categories (i.e. retail and recreational, transit stations, and workplaces) in all locations in each province to weekly intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for mobility data used to represent NPIs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "9e8cdadb-864d-4ad4-ac73-da0568389bde",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C60",
+      "claim": "Model-inference was initiated the week starting March 15, 2020 and run continuously until the week starting February 27, 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "For all provinces, model-inference was initiated the week starting March 15, 2020 and run continuously until the week starting February 27, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal scope of the model-inference analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "8bd99f1d-3f71-4eec-be7e-6dce452f52aa",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C61",
+      "claim": "The model-inference process was repeated 100 times for each province, each with 500 model realizations, totaling 50,000 model estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for model stochasticity, we repeated the model-inference process 100 times for each province, each with 500 model realizations and summarized the results from all 50,000 model estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach to quantifying uncertainty in the model estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "710b35fd-52de-45f9-95fc-c6dfe872c13c",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C62",
+      "claim": "High prior immunity does not preclude new outbreaks, as neither infection nor current vaccination is sterilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "First, high prior immunity does not preclude new outbreaks, as neither infection nor current vaccination is sterilizing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation drawn from the findings in South Africa and supported by the data showing repeated waves despite high infection rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "c6979fc6-3eef-4db7-8529-15d6d49f7f5b",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C63",
+      "claim": "Large numbers of hospitalizations and/or deaths can still occur in later waves with large infection surges, even though prior infection may provide partial protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, large numbers of hospitalizations and/or deaths can still occur in later waves with large infection surges, even though prior infection may provide partial protection and to some extent temper disease severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation supported by the data from the Delta wave in South Africa.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "5b4d808b-e31d-4a60-bb65-e205831f4ea3",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "claim_id": "C64",
+      "claim": "Variants capable of eroding a wide spectrum of prior immunity would have a greater chance of causing new major outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, given high exposure and vaccination in many populations, variants capable of eroding a wide spectrum of prior immunity (i.e. from infection by multiple preexisting variants and vaccination) would have a greater chance of causing new major outbreaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed patterns of variant emergence and spread.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b0623767-ced2-4481-9370-8419e89100ec",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model-inference system accurately fits observed case and death data across all nine South African provinces and is validated against three independent datasets: seroprevalence data (with model estimates matching trends and being appropriately higher in later months), hospitalization data (r>0.75 for all four waves), and excess mortality data (r=0.86 and 0.61 for ancestral and Delta waves).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 provide strong convergent validation from multiple independent data sources not used in model training. The model fits the training data well (C6), and the correlations with independent serology (C7), hospitalization (C8), and excess mortality (C9) data are substantial and consistent with expected patterns (e.g., serology underestimating later due to waning). The validation approach is rigorous and appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "ab25adeb-16e0-48b3-895e-0ade14e95164",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During the Omicron (BA.1) wave, mortality rates decoupled from infection rates due to prior infection and/or vaccination, consistent with observations in other locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 is supported by both the model estimates shown in Appendix 1\u2014figure 2D and citations to independent studies (Nyberg et al., 2022; Wolter et al., 2022) documenting reduced severity with Omicron. This decoupling pattern is well-established and the observation is consistent with the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "4c3befb2-611d-4d88-9252-2f54a594b9cf",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model accurately predicted pandemic trajectories for the Delta and Omicron (BA.1) waves in most provinces when predictions were made 1-2 weeks before the case peak and 3-5 weeks before the death peak, demonstrating predictive validity beyond the training period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C4 demonstrate strong predictive validation. The retrospective predictions shown in Figure 2 and Appendix 1\u2014figure 3 capture the remaining wave trajectories accurately despite being made with limited new variant data (1-6 weeks). This is particularly impressive given the rapid progression of waves in South Africa and validates the model's ability to estimate key epidemiological parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "5b03104e-b912-4951-b23d-61fd37b1d622",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In Gauteng, the estimated infection-detection rate during the first wave was 4.59% (95% CI: 2.62-9.77%), leading to an estimated 32.83% (95% CI: 15.42-57.59%) of the population being infected during the first wave. These estimates are consistent with independent seroprevalence data showing 15-27% seropositivity in November 2020 and 30% in a vaccine trial cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 provide internally consistent estimates that align well with independent serological data. The model-estimated cumulative infection rate (C14) is appropriately higher than the seroprevalence measures (C15, C16) taken at the end of the first wave, which is expected due to waning antibodies and the timing of measurements. The wide confidence intervals appropriately reflect uncertainty in under-detection estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "8a20b140-8dc0-45a5-a7a1-6ca74f161df9",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Beta variant caused 21.87% (95% CI: 12.16-41.13%) of Gauteng's population to be infected despite occurring during less favorable summer conditions. Beta substantially eroded prior immunity, showed increased transmissibility after accounting for NPIs and seasonality, and had approximately twice the infection-fatality risk (0.19% vs. 0.09%) compared to ancestral SARS-CoV-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 provide a coherent picture of Beta's epidemiological characteristics. The inference of substantial immune erosion (C18) is supported by both the model estimates of population susceptibility changes and citations to laboratory studies showing low neutralizing ability against Beta. The increased transmissibility (C19) and higher IFR (C20) are consistent with cited epidemiological findings. However, the IFR estimates are acknowledged to be based on documented COVID-19 deaths and likely underestimate true values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "46215366-7cec-4e33-bfca-1c37e1c80c1e",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Delta variant achieved a 49.82% (95% CI: 25.22-90.79%) attack rate in Gauteng despite high prior infection rates, enabled by Delta's high transmissibility and immune erosive properties relative to both ancestral and Beta variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are well-supported by the model estimates and extensive citations to studies documenting Delta's high transmissibility (C22) and immune evasion properties (C23). The high attack rate despite prior waves is plausible given these variant characteristics combined with favorable winter transmission conditions. The wide confidence intervals appropriately reflect uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "898bd90b-9f6d-41cd-8489-d64e090d2479",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior to Omicron (BA.1), cumulative infections in Gauteng exceeded the population size. Omicron caused a very large increase in population susceptibility and transmissibility, progressed rapidly (peaking in 2-3 weeks), achieved a 44.49% (95% CI: 19.01-75.30%) attack rate with only 4.26% detection, and had an infection-fatality risk about 30% of Delta's (0.03% vs. 0.11%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 provide a comprehensive characterization of the Omicron wave. The cumulative infections exceeding population size (C24) indicates widespread reinfection, which is consistent with the large increase in susceptibility (C25). The rapid progression (C26), high attack rate with low detection (C27), and reduced severity (C28, consistent with cited studies) form a coherent picture. The estimates align with independent observations of Omicron's characteristics globally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "52c51ee2-5b62-427e-8566-3f3192090828",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Across all nine provinces, estimated cumulative infections before the Omicron wave ranged from 60% (Limpopo) to 122% (Northern Cape) of the population. This is corroborated by excess mortality of 0.47% of the South African population by November 2021, which is substantial given the relatively young population (median age 27.6 years).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 provide cross-validation between model estimates and independent mortality data. The calculation showing that 0.47% excess mortality with an assumed 0.5% IFR would correspond to ~94% infection rate is consistent with the model estimates. The consideration of South Africa's young population (C31) appropriately contextualizes the mortality burden. The estimates are plausible and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "30a5e1d6-ecca-4052-8eff-4eb1db2ec129",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Beta eroded immunity among 63.4% (95% CI: 45.0-77.9%) of individuals with prior ancestral SARS-CoV-2 infection and was 34.3% (95% CI: 20.5-48.2%) more transmissible than ancestral SARS-CoV-2. These estimates are consistent across all nine provinces and supported by the Novavax trial showing similar COVID-19 likelihood in prior-infected and seronegative participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 provide robust estimates of Beta's characteristics with strong external validation. The consistency across provinces (C34) strengthens confidence in the estimates, and the Novavax trial data (C35) provides independent confirmation of substantial immune erosion. The estimates are also consistent with the authors' previous national-level analysis, adding further support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "6cb99bc7-db81-4248-aba1-1684d79a7802",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Delta eroded 24.5% (95% CI: 0-53.2%) of prior immunity from ancestral SARS-CoV-2, Beta, and/or vaccination, and was 47.5% (95% CI: 28.4-69.4%) more transmissible than ancestral SARS-CoV-2. This is consistent with a 27.5% reinfection rate in Delhi and reduced neutralization of Delta by Beta-convalescent sera.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 provide estimates for Delta with appropriate external validation. The wide confidence interval for immune erosion (0-53.2%) reflects the more diverse immune landscape after two waves. The consistency with reinfection data from Delhi (C38) and neutralization studies (C39) supports the estimates, though the lower bound of 0% for immune erosion suggests substantial uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "397e106f-3c3b-4864-932e-123a07de8eb0",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Omicron (BA.1) was 94.0% (95% CI: 73.5-121.5%) more transmissible than ancestral SARS-CoV-2 (higher than Delta) and eroded 54.1% (95% CI: 35.8-70.1%) of immunity from all prior infections and vaccination. This broad-spectrum immune erosion is supported by studies showing low neutralization by convalescent sera from all previous variants and high attack rates among vaccinees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 provide well-supported estimates for Omicron's characteristics. The higher transmissibility than Delta (C40, C41) is consistent with laboratory studies showing faster replication. The broad immune erosion (C42) is validated by multiple independent studies showing low neutralization across all prior variant exposures (C43) and breakthrough infections in vaccinated populations (C44). The authors appropriately note that immune erosion estimates are relative to the accumulated immunity at the time of each variant's emergence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "8d64db1b-aa50-42a8-8940-570d6a12779d",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "South Africa experienced three VOC pandemic waves (Beta, Delta, and Omicron BA.1) by February 2022, and was unique in having the earliest surge for Beta and Omicron VOCs globally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C5 establish the study context and are well-supported by the data analyzed (March 2020 to February 2022) and citations to studies documenting early detection of Beta and Omicron in South Africa. This is established epidemiological knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "24af3435-3749-464e-bd51-3e3a39a96a5b",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model-inference system uses an SEIRSV construct with an ensemble adjustment Kalman filter (500 realizations) and accounts for changing detection rates, infection seasonality (based on humidity and temperature effects), NPIs, and vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C52-C56 describe the methodological framework. The SEIRSV model structure (C52) and EAKF implementation (C55, C56) are standard approaches. The seasonality model (C53, C54) uses influenza parameters scaled to be virus-agnostic, which is a reasonable approximation given the lack of SARS-CoV-2-specific parameters. The methodology is clearly described and appropriate for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "6f8b47dd-8e19-4538-b544-57194f0b2e32",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study used publicly available data from multiple sources (COVID19ZA repository, NOAA weather data, Google mobility data) covering March 15, 2020 to February 27, 2022, with model-inference repeated 100 times (500 realizations each) to account for stochasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe the data sources and computational approach. All data sources are properly cited and publicly available, supporting reproducibility. The approach of running 100 independent model-inference processes with 500 realizations each (totaling 50,000 estimates) is appropriate for quantifying uncertainty in stochastic models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "d9a36384-f69a-46ed-9ebc-5b63232bab79",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Model validation shows that estimated underlying infection rates and key parameters are in line with independent epidemiological data and investigations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is a summary statement that is supported by the detailed validation results presented in other claim groups (particularly C6-C11). The validation against multiple independent datasets (serology, hospitalization, excess mortality, and retrospective prediction) provides strong support for this overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "187621b6-5c11-4d7e-8e40-95e0a964e2a6",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Delta wave resulted in 0.2% excess mortality in South Africa. Subsequently, Omicron BA.4/BA.5 subvariants that evade BA.1 immunity caused a fifth wave beginning in May 2022 with increases in cases and hospitalizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 provide context for ongoing pandemic dynamics. The excess mortality figure for Delta (C45) is cited from an independent source. The emergence of BA.4/BA.5 and the fifth wave (C46, C47) are supported by citations to studies on immune evasion and surveillance reports. These claims appropriately contextualize the study's findings within the broader pandemic trajectory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "4c6d69d4-16bc-4933-b0e3-3ad55acdee02",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Multiple SARS-CoV-2 VOCs/VOIs have emerged since pandemic inception. Except for Alpha, the other four major VOCs (Beta, Gamma, Delta, and Omicron) all produced some level of immune erosion, with later VOCs like Delta and Omicron being more genetically distinct from previous variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 synthesize findings about variant evolution patterns. The emergence of multiple VOCs (C48) is established knowledge. The pattern of immune erosion across variants (C49) is supported by the model estimates and cited literature. The increasing genetic distinctiveness of later variants (C50) is supported by citation to a comparative genomic study. These claims appropriately generalize from the specific findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "2d7b6b47-5d4f-43d3-8464-236f79ece59c",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "High prior immunity does not preclude new outbreaks as neither infection nor vaccination is sterilizing. Large numbers of hospitalizations and deaths can still occur in later waves despite partial protection from prior infection. Variants capable of eroding a wide spectrum of prior immunity have a greater chance of causing major outbreaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 present general observations drawn from the South African data. The observation that high immunity doesn't prevent outbreaks (C62) is directly demonstrated by the repeated waves despite high cumulative infection rates. The potential for severe outcomes in later waves (C63) is evidenced by the Delta wave mortality. The inference about broad immune erosion enabling major outbreaks (C64) is a reasonable generalization from the observed patterns, though it is somewhat speculative about future dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    },
+    {
+      "id": "4ba170ae-2499-4754-9f9f-f3f4cb9b8b50",
+      "content_id": "8974efc9-4f86-4c6b-a522-7427da6f4d53",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Development of a universal vaccine that can effectively block SARS-CoV-2 infection in addition to preventing severe disease is urgently needed to prepare for future antigenic changes from new variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C51 is a policy recommendation based on the study findings. While the recommendation is reasonable given the demonstrated pattern of immune erosion across variants, it is inherently speculative about future needs and vaccine development feasibility. The claim is supported by citations to relevant studies on universal vaccine approaches, but represents an inference about future directions rather than a direct result of the current analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:04.504886Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9a8503b2-6d9d-43f5-8c22-0353267ccb2b",
+      "result_id": "b0623767-ced2-4481-9370-8419e89100ec"
+    },
+    {
+      "claim_id": "5e07c90d-62c0-4327-a893-1b027b002662",
+      "result_id": "b0623767-ced2-4481-9370-8419e89100ec"
+    },
+    {
+      "claim_id": "57914b0d-0b03-4b5f-9817-eef1ef46230d",
+      "result_id": "b0623767-ced2-4481-9370-8419e89100ec"
+    },
+    {
+      "claim_id": "d1cbfc5b-1607-4d95-aa35-a5d629eb24d3",
+      "result_id": "b0623767-ced2-4481-9370-8419e89100ec"
+    },
+    {
+      "claim_id": "8b14989d-ee91-4eeb-b296-cfcf3691ce56",
+      "result_id": "ab25adeb-16e0-48b3-895e-0ade14e95164"
+    },
+    {
+      "claim_id": "accfe358-1f05-4a8c-8a61-5732239b07be",
+      "result_id": "4c3befb2-611d-4d88-9252-2f54a594b9cf"
+    },
+    {
+      "claim_id": "f2369a3b-19f7-48d8-bb85-71b6059b1319",
+      "result_id": "4c3befb2-611d-4d88-9252-2f54a594b9cf"
+    },
+    {
+      "claim_id": "7de8f759-ca5f-45e6-b13c-31b8336dc335",
+      "result_id": "5b03104e-b912-4951-b23d-61fd37b1d622"
+    },
+    {
+      "claim_id": "e742e0fd-2c41-4355-aa2c-4adcbdd67f8e",
+      "result_id": "5b03104e-b912-4951-b23d-61fd37b1d622"
+    },
+    {
+      "claim_id": "dd53bebe-9f12-416e-a780-73a0f2427d15",
+      "result_id": "5b03104e-b912-4951-b23d-61fd37b1d622"
+    },
+    {
+      "claim_id": "24da5239-e0a6-4dd8-bebe-80060b133493",
+      "result_id": "5b03104e-b912-4951-b23d-61fd37b1d622"
+    },
+    {
+      "claim_id": "7b3bb781-007d-481c-b3d5-c0c8bb0b7f8f",
+      "result_id": "5b03104e-b912-4951-b23d-61fd37b1d622"
+    },
+    {
+      "claim_id": "3b6ed794-d2cb-4906-8c19-a6e213e7d2c2",
+      "result_id": "8a20b140-8dc0-45a5-a7a1-6ca74f161df9"
+    },
+    {
+      "claim_id": "cffa4a8e-b775-41de-b251-9b0a56ce7237",
+      "result_id": "8a20b140-8dc0-45a5-a7a1-6ca74f161df9"
+    },
+    {
+      "claim_id": "d5013617-5a66-4625-9f87-36dfeecebba2",
+      "result_id": "8a20b140-8dc0-45a5-a7a1-6ca74f161df9"
+    },
+    {
+      "claim_id": "21c54a23-50f9-447d-b221-b57ff2d9be6d",
+      "result_id": "8a20b140-8dc0-45a5-a7a1-6ca74f161df9"
+    },
+    {
+      "claim_id": "9c10735d-817e-4a4c-9ebf-f4699c7f410e",
+      "result_id": "46215366-7cec-4e33-bfca-1c37e1c80c1e"
+    },
+    {
+      "claim_id": "edb6c37d-81ec-49cd-a077-e0429a96a45f",
+      "result_id": "46215366-7cec-4e33-bfca-1c37e1c80c1e"
+    },
+    {
+      "claim_id": "0c8a88b3-16fb-4b75-8608-ce5edd7cdf40",
+      "result_id": "46215366-7cec-4e33-bfca-1c37e1c80c1e"
+    },
+    {
+      "claim_id": "6bd08984-473a-4ceb-8c97-14849e241f66",
+      "result_id": "898bd90b-9f6d-41cd-8489-d64e090d2479"
+    },
+    {
+      "claim_id": "d19e11b1-72a0-45b7-973a-d8f97cb91107",
+      "result_id": "898bd90b-9f6d-41cd-8489-d64e090d2479"
+    },
+    {
+      "claim_id": "ddab1808-ae8b-40f9-b9cb-9f2222e7f980",
+      "result_id": "898bd90b-9f6d-41cd-8489-d64e090d2479"
+    },
+    {
+      "claim_id": "cfa5cab7-2ea7-403b-864c-abdaec402964",
+      "result_id": "898bd90b-9f6d-41cd-8489-d64e090d2479"
+    },
+    {
+      "claim_id": "0263e458-d489-4588-9569-a309cab3af7e",
+      "result_id": "898bd90b-9f6d-41cd-8489-d64e090d2479"
+    },
+    {
+      "claim_id": "79f679b0-36e3-40a2-8a3f-1d3025b7d4c4",
+      "result_id": "52c51ee2-5b62-427e-8566-3f3192090828"
+    },
+    {
+      "claim_id": "304faa51-41eb-40c3-a2f3-1b2cd398b4f2",
+      "result_id": "52c51ee2-5b62-427e-8566-3f3192090828"
+    },
+    {
+      "claim_id": "ea84f5cc-c906-49f8-9294-13bcf08cc63f",
+      "result_id": "52c51ee2-5b62-427e-8566-3f3192090828"
+    },
+    {
+      "claim_id": "b0e6dc03-ad02-49ef-ac9a-ee874c87c9b1",
+      "result_id": "30a5e1d6-ecca-4052-8eff-4eb1db2ec129"
+    },
+    {
+      "claim_id": "ee0c45bc-86a4-40a4-add9-b40b01fafc73",
+      "result_id": "30a5e1d6-ecca-4052-8eff-4eb1db2ec129"
+    },
+    {
+      "claim_id": "6bf06984-2f8b-42f5-bb34-850d6d9c23b0",
+      "result_id": "30a5e1d6-ecca-4052-8eff-4eb1db2ec129"
+    },
+    {
+      "claim_id": "5d0c4776-285b-4699-8968-57fda13d338d",
+      "result_id": "30a5e1d6-ecca-4052-8eff-4eb1db2ec129"
+    },
+    {
+      "claim_id": "92947714-1c98-4bdf-a917-29d38d5c2a18",
+      "result_id": "6cb99bc7-db81-4248-aba1-1684d79a7802"
+    },
+    {
+      "claim_id": "cc1c8256-95fb-40b3-86a7-5038398cfb05",
+      "result_id": "6cb99bc7-db81-4248-aba1-1684d79a7802"
+    },
+    {
+      "claim_id": "26408e04-5541-4dd7-ad8d-6f1d1af7c5ea",
+      "result_id": "6cb99bc7-db81-4248-aba1-1684d79a7802"
+    },
+    {
+      "claim_id": "f82a6d3d-56f7-4f4a-9b42-d642e645c2e4",
+      "result_id": "6cb99bc7-db81-4248-aba1-1684d79a7802"
+    },
+    {
+      "claim_id": "2ffdc09a-e7ea-4887-bc33-fa8b3945f92a",
+      "result_id": "397e106f-3c3b-4864-932e-123a07de8eb0"
+    },
+    {
+      "claim_id": "fddcf107-6b9b-45e4-9909-1dcb24eaee8e",
+      "result_id": "397e106f-3c3b-4864-932e-123a07de8eb0"
+    },
+    {
+      "claim_id": "bb40b865-6f3d-4302-b16b-fec40bba0108",
+      "result_id": "397e106f-3c3b-4864-932e-123a07de8eb0"
+    },
+    {
+      "claim_id": "ab493153-ef94-48f2-b90d-2f67fe8cc258",
+      "result_id": "397e106f-3c3b-4864-932e-123a07de8eb0"
+    },
+    {
+      "claim_id": "664439ae-352b-4352-92fb-40d9c9e01abe",
+      "result_id": "397e106f-3c3b-4864-932e-123a07de8eb0"
+    },
+    {
+      "claim_id": "8a0bd5c3-65f5-41fb-b704-df3e6bb87af4",
+      "result_id": "8d64db1b-aa50-42a8-8940-570d6a12779d"
+    },
+    {
+      "claim_id": "abf8e831-f99f-47c9-9328-3d5127f9b1f8",
+      "result_id": "8d64db1b-aa50-42a8-8940-570d6a12779d"
+    },
+    {
+      "claim_id": "5cd42a49-9fec-44dc-8e95-b695a5aca0df",
+      "result_id": "24af3435-3749-464e-bd51-3e3a39a96a5b"
+    },
+    {
+      "claim_id": "c608f7d4-4664-4863-9dff-f1eae5bc39e3",
+      "result_id": "24af3435-3749-464e-bd51-3e3a39a96a5b"
+    },
+    {
+      "claim_id": "9085fb15-77f2-416b-ab4f-2ca4711a473c",
+      "result_id": "24af3435-3749-464e-bd51-3e3a39a96a5b"
+    },
+    {
+      "claim_id": "c7b2094d-31e0-43c9-b6bc-596996fe844d",
+      "result_id": "24af3435-3749-464e-bd51-3e3a39a96a5b"
+    },
+    {
+      "claim_id": "c8c05a67-b8fa-4a4c-bbed-838e38614b74",
+      "result_id": "24af3435-3749-464e-bd51-3e3a39a96a5b"
+    },
+    {
+      "claim_id": "802fe649-b999-49fd-94aa-77980d06194c",
+      "result_id": "24af3435-3749-464e-bd51-3e3a39a96a5b"
+    },
+    {
+      "claim_id": "f9e880a7-c8f8-4a12-b9a5-4642bb0eabed",
+      "result_id": "6f8b47dd-8e19-4538-b544-57194f0b2e32"
+    },
+    {
+      "claim_id": "52a6943a-4360-4f8a-98f3-76f3aa6d14da",
+      "result_id": "6f8b47dd-8e19-4538-b544-57194f0b2e32"
+    },
+    {
+      "claim_id": "20b1eee0-193d-4d15-b5ef-22014ef91e12",
+      "result_id": "6f8b47dd-8e19-4538-b544-57194f0b2e32"
+    },
+    {
+      "claim_id": "9e8cdadb-864d-4ad4-ac73-da0568389bde",
+      "result_id": "6f8b47dd-8e19-4538-b544-57194f0b2e32"
+    },
+    {
+      "claim_id": "8bd99f1d-3f71-4eec-be7e-6dce452f52aa",
+      "result_id": "6f8b47dd-8e19-4538-b544-57194f0b2e32"
+    },
+    {
+      "claim_id": "656c5c64-7716-4509-9c45-078241b5b1b6",
+      "result_id": "d9a36384-f69a-46ed-9ebc-5b63232bab79"
+    },
+    {
+      "claim_id": "52d7fd66-5ed4-4c87-9594-c16f9b5c64dc",
+      "result_id": "187621b6-5c11-4d7e-8e40-95e0a964e2a6"
+    },
+    {
+      "claim_id": "974bd945-90a9-438f-9585-b1d6e7a338ae",
+      "result_id": "187621b6-5c11-4d7e-8e40-95e0a964e2a6"
+    },
+    {
+      "claim_id": "6e1812f0-1073-48b5-b0b2-343e72938147",
+      "result_id": "187621b6-5c11-4d7e-8e40-95e0a964e2a6"
+    },
+    {
+      "claim_id": "2540a9b0-a02e-4bf5-a388-38d08f071cf6",
+      "result_id": "4c6d69d4-16bc-4933-b0e3-3ad55acdee02"
+    },
+    {
+      "claim_id": "683baa6a-4668-49f6-b419-28305efbf042",
+      "result_id": "4c6d69d4-16bc-4933-b0e3-3ad55acdee02"
+    },
+    {
+      "claim_id": "d75d55d5-ec01-44b5-8ae9-5567d1cbb7a4",
+      "result_id": "4c6d69d4-16bc-4933-b0e3-3ad55acdee02"
+    },
+    {
+      "claim_id": "710b35fd-52de-45f9-95fc-c6dfe872c13c",
+      "result_id": "2d7b6b47-5d4f-43d3-8464-236f79ece59c"
+    },
+    {
+      "claim_id": "c6979fc6-3eef-4db7-8529-15d6d49f7f5b",
+      "result_id": "2d7b6b47-5d4f-43d3-8464-236f79ece59c"
+    },
+    {
+      "claim_id": "5b4d808b-e31d-4a60-bb65-e205831f4ea3",
+      "result_id": "2d7b6b47-5d4f-43d3-8464-236f79ece59c"
+    },
+    {
+      "claim_id": "6768a6ce-9a97-4a3d-9665-cd62eece7e75",
+      "result_id": "4ba170ae-2499-4754-9f9f-f3f4cb9b8b50"
+    }
+  ],
+  "comparisons": []
+}

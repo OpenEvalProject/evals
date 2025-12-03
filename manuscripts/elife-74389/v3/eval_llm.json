@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C24",
+      "C26",
+      "C28"
+    ],
+    "result": "High-speed imaging of HL-60 cells reveals fine-scale leading edge fluctuations at sub-second and sub-micron scales, with measurable wavelengths down to ~650 nm and amplitudes down to ~65 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C24, C26, and C28 are well-supported by experimental data shown in Figure 1 and supplementary figures. The segmentation methodology is described in detail, and the measurements are consistent with the resolution limits of the imaging system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Leading edge shape fluctuations relax exponentially in a wavelength-dependent manner consistent with overdamped viscous relaxation, with shorter wavelengths decaying faster and having smaller amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C29-C32 are supported by autocorrelation analysis shown in Figure 1e-h. The exponential fitting is validated against a membrane control simulation with known analytical solutions (Figure 1\u2014figure supplement 3), demonstrating the robustness of the analytical approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The qualitative and quantitative properties of leading edge fluctuations are conserved across cell types, as demonstrated in fish epidermal keratocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by experimental data from keratocytes shown in Figure 1\u2014figure supplement 6, demonstrating similar exponential decay dynamics and wavelength-dependent behavior as observed in HL-60 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A minimal stochastic model of branched actin network growth incorporating only polymerization, depolymerization, branching, and capping successfully recapitulates experimental observations of leading edge stability and fluctuation dynamics without free parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C34-C38, C40-C45 are well-supported by simulation results in Figure 2 and supplementary figures. The model achieves quantitative agreement with experimental measurements using only literature-derived parameters, and robustness is demonstrated through sensitivity analyses (Figure 2\u2014figure supplements 1-3). The lack of free parameters strengthens the predictive power of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The model correctly predicts the effects of Latrunculin B treatment on leading edge fluctuations, with experimental validation showing increased amplitudes at large wavelengths and decreased decay rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by both simulation predictions (Figure 3a-b) and experimental validation (Figure 3c-d). The qualitative and quantitative agreement between model predictions and experimental observations provides strong validation of the model's predictive capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C70"
+    ],
+    "result": "Leading edge stability emerges intrinsically from only two geometric requirements: membrane-proximal branching and lateral filament spreading, with membrane tension and bending rigidity being dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 and C70 are supported by systematic ablation studies shown in Figure 4. The removal of membrane coupling (Figure 4a-e) and filament spreading (Figure 4f-i) demonstrates the necessity and sufficiency of these two elements. The proposed molecular mechanism (Figure 4j) provides a clear mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C68",
+      "C74"
+    ],
+    "result": "Lamellipodial stability naturally emerges from branched actin network geometry without requiring additional regulatory feedback mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C68, and C74 represent the central conclusion of the manuscript, supported by the combined experimental and computational evidence from Figures 1-4. The systematic elimination of model components demonstrates that geometric constraints alone are sufficient for stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C71"
+    ],
+    "result": "The evolutionarily conserved ~70-80\u00b0 Arp2/3 branching angle optimally suppresses actin density fluctuations and leading edge shape fluctuations at fine spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C57-C58, C61-C62, and C71 are supported by systematic simulations varying branching angle shown in Figure 5. The optimal angle emerges from the model without being explicitly programmed, and the effect is most pronounced at the smallest wavelengths resolved by the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Increasing branching angle variability reduces the sharpness of the optimal branching angle and decreases overall noise-suppression capabilities of the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by simulations shown in Figure 5j-q, demonstrating how orientational heritability affects the optimization landscape. The results show that low variability (\u00b12\u00b0) maintains the optimum while high variability (\u00b110\u00b0) eliminates it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Arp2/3-mediated branching is essential for lamellipodial maintenance, with its disruption leading to highly variable leading edge shapes, which the model explains through loss of efficient filament spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by literature citations (C54), experimental observations with CK-666 treatment (C55, Video 6), and mechanistic interpretation from the model (C56). The integration of experimental and theoretical results provides a coherent explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The evolutionarily conserved branching angle that optimizes leading edge stability differs from the angle that optimizes single-filament polymerization velocity, suggesting selection acts at the network level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 compare the optimal angle from this work (~70-80\u00b0) with theoretical predictions for single-filament force production (~90-100\u00b0). While C72 is supported by the comparison, C73 is speculative as it makes an evolutionary claim without direct evidence. The inference is reasonable but would require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background context on actin-based cell migration and lamellipodial structure is established from literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C8 provide established background knowledge supported by appropriate literature citations. These claims accurately represent the current understanding of actin-based motility and lamellipodial biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Previous work has identified multiple potential feedback mechanisms for lamellipodial stability, including membrane tension, curvature-sensing proteins, monomer competition, and force-feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 accurately summarize prior hypotheses from the literature with appropriate citations. These claims establish the context for the current work's novel finding that such feedback mechanisms are not required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C39",
+      "C59",
+      "C60"
+    ],
+    "result": "The Arp2/3 complex mediates a highly conserved ~70\u00b0 branching angle across diverse species, with filament orientations in cells averaging \u00b135\u00b0 relative to the membrane normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C39, C59-C60 are well-supported by extensive literature citations documenting measurements across multiple species and experimental techniques. The consistency of measurements (67-78\u00b0 \u00b1 2-13\u00b0) across diverse contexts supports the claim of evolutionary conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Dendritic branching exhibits autocatalytic growth dynamics and velocity-dependent growth rates that can introduce nonlinearities and hysteresis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by appropriate literature citations describing theoretical and experimental work on actin network dynamics. These claims establish potential sources of instability that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "HL-60 cells form intrinsically lamellar protrusions and can migrate persistently in quasi-2D confinement for minutes to hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by literature citations describing the experimental system. These claims establish the appropriateness of the HL-60 model system for studying lamellipodial dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The observed lamellipodial dynamics in HL-60 cells are phenotypically distinct from and ~100-fold faster than oscillatory protrusion-retraction cycles in slower-moving cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by comparison with literature on fibroblast dynamics. The distinction between the fast fluctuations observed here and slower oscillatory cycles in other cell types is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The measured wavelengths and amplitudes correspond to approximately 25 actin filaments at physiological spacing and 25 monomers along the direction of motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is a reasonable inference based on known physiological parameters from the literature (filament spacing from Svitkina et al., 1997) and the measured values. The calculation provides useful context for interpreting the spatial resolution of the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Actin network geometry is essential for leading edge stability and determines the fundamental limits of lamellipodial shape smoothness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a summary inference well-supported by the combined results from Figures 4-5, demonstrating both the necessity of geometric constraints for stability and the optimization of smoothness by branching angle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The model provides understanding of basic biophysical mechanisms underlying lamellipodial migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is a general summary statement supported by the totality of the modeling results. The model successfully explains multiple aspects of lamellipodial behavior from first principles.",
+    "result_type": "MAJOR"
+  }
+]

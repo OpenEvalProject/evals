@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "DHA inhibits ELIC channel function more effectively than palmitic acid (PA), with an IC50 of 10.6 \u03bcM, causing almost complete inhibition at 50 \u03bcM. DHA reduces peak current, steady-state current, and increases current decay rate without significantly changing the EC50 of cysteamine activation. DHA methyl ester (DHA ME) inhibits ELIC similarly to DHA, indicating the carboxylate headgroup is not required for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9, C88-C90 are well-supported by dose-response curves from patch-clamp recordings (Figure 1) showing concentration-dependent inhibition by DHA (IC50 = 10.6 \u03bcM), weaker inhibition by PA, and similar effects of DHA ME. The lack of EC50 shift (C4) is demonstrated experimentally. Statistical analysis confirms PA effects are weaker than DHA. The findings are consistent with previous reports in GABAAR and nAchR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Coarse-grained molecular dynamics (CGMD) simulations reveal that DHA shows significant enrichment (B = 2.43 \u00b1 0.16) in lipids surrounding ELIC, particularly in two intrasubunit grooves (M3/M4 and M1/M4) in the outer leaflet, while PA shows relative depletion (B = 0.51 \u00b1 0.02). DHA binds to specific sites in the outer leaflet that PA does not strongly interact with.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 are supported by CGMD simulations using the MARTINI model with boundary lipid metrics and two-dimensional radial enhancement calculations (Figure 2). Multiple simulation replicates (n=4) consistently demonstrate DHA enrichment and PA depletion. The localized enrichment patterns in the outer leaflet M3/M4 and M1/M4 grooves are reproducible across replicates (Figure 2 supplements 1-2). The computational approach is well-described with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A novel fatty acid photolabeling reagent, KK-242, containing a trifluoromethylphenyl-diazirine (TPD) group, efficiently labels ELIC (~15% labeling efficiency at 100 \u03bcM) at two non-overlapping sites per subunit and inhibits ELIC peak responses. KK-242 is superior to pacFA (which failed to label ELIC) because TPD can label any amino acid, not just nucleophilic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27, C74-C76 are supported by intact protein mass spectrometry showing KK-242 labels ELIC with one and two adducts per subunit (Figure 3B), while pacFA shows no labeling. Patch-clamp data demonstrate KK-242 inhibits ELIC at 3 and 10 \u03bcM (Figure 3C-D). The TPD advantage is supported by citations to previous work and the observed labeling success. The molecular design approximating PA dimensions (~20 \u00c5) is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "KK-242 photolabels two distinct sites in ELIC: Q264 in M3 and C313/R318 in M4, located on either side of the outer portion of M4. These sites are analogous to phospholipid and DHA binding sites identified in the GLIC crystal structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by tandem mass spectrometry (MS2) analysis showing fragment ions localizing KK-242 to Q264 (M3) and C313/R318 (M4) with high mass accuracy (<10 ppm) (Figure 4A-B). Docking studies show plausible binding poses with the diazirine near photolabeled residues. The structural comparison to GLIC is supported by citation. However, some uncertainty exists due to potential neutral loss of KK-242 in MS2 spectra, though the authors acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DHA causes dose-dependent reduction in KK-242 apparent labeling efficiency of M4 in the presence of cysteamine (~90% reduction at 30 \u03bcM DHA), while PA causes only a small, statistically insignificant reduction. This indicates DHA binds to KK-242 photolabeled sites with higher affinity than PA, and both sites are likely occupied by DHA at 30 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by competition photolabeling experiments analyzed by LC-MS/MS (Figure 4C). Statistical analysis using a linear mixed effects model shows DHA effect is significant (p=0.016), while PA effect is not. The large magnitude of DHA competition (~90%) supports the inference that both sites are occupied (C37). The specificity is further confirmed by patch-clamp showing DHA potency is unaltered by 2 \u03bcM PA (Figure 4 supplement 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DHA preferentially binds to KK-242 photolabeled sites when ELIC is in the agonist-bound state, suggesting DHA inhibits ELIC by stabilizing an agonist-bound non-conducting state. DHA does not reduce KK-242 labeling in the absence of cysteamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by competition photolabeling experiments showing DHA reduces KK-242 labeling in the presence of cysteamine but not in its absence (Figure 4C). The state-dependent binding is clearly demonstrated. The inference that DHA stabilizes an agonist-bound non-conducting state (C39) is reasonable given the lack of EC50 shift and is supported by citation to theoretical framework (Gielen and Corringer, 2018), though the exact state (pre-active vs. desensitized) remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CGMD contact probability analysis reveals that M3 residues have the highest cumulative contact probability with DHA, with A268, G271, and A275 on a single face of M3 (facing M4) showing the highest contacts. R117 and Q264 interact with the DHA headgroup. DHA has higher affinity for outer leaflet sites (M3 and M1) compared to inner leaflet sites and compared to PA across all sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by CGMD contact probability calculations (Figure 5) and density threshold affinity measurements (\u0394G calculations). The M3 face orientation toward M4 is clearly demonstrated. The preferential binding to outer leaflet sites is quantitatively shown with favorable \u0394G for outer leaflet and unfavorable for inner leaflet. PA shows unfavorable interactions at all sites. The slightly higher affinity for M3 over M1 site is noted as not statistically significant, appropriately qualifying the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Hexadecyl-methanethiosulfonate (hMTS) completely modifies R117C and R123C mutants (on C300S/C313S background) but does not modify R286C, R299C, or R301C mutants in the inner leaflet. This differential accessibility is consistent with CGMD showing reduced fatty acid binding in the inner leaflet and POPG enrichment at the inner leaflet site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by intact protein mass spectrometry showing complete modification of R117C and R123C but no modification of inner leaflet arginines (Figure 6A). The consistency with CGMD results (Figures 2, 5C) and POPG affinity analysis (Figure 5 supplement 3) strengthens the interpretation. The explanation that POPG occupancy excludes hMTS/fatty acids from inner leaflet sites is plausible and supported by computational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "hMTS modification of R117C significantly inhibits ELIC channel responses, with peak currents much smaller than control and many patches showing no current. DTT treatment partially reverses this inhibition, suggesting hMTS modification at R117C mimics the inhibitory effect of fatty acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by patch-clamp recordings showing R117C-M has significantly reduced peak currents compared to control and R123C-M (Figure 6B). The R117C mutation alone also reduces currents, but R117C-M is lower still. DTT treatment significantly increases R117C-M currents (p<0.01), supporting reversibility of the disulfide modification. However, substantial variability between patches and incomplete characterization of modification efficiency (~90% by MS with high noise) introduce some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The M3/M4 fatty acid binding site may be conserved in eukaryotic pLGICs, as the equivalent site in the \u03b23 subunit of \u03b11\u03b23 GABAAR is a neurosteroid binding site that mediates neurosteroid inhibition. This site may be a conserved lipid binding site for fatty acids and neurosteroids in pLGICs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60 are speculative extrapolations from the ELIC and GLIC findings to eukaryotic pLGICs. While the citation to neurosteroid binding in GABAAR (C59, Sugasawa et al., 2020) provides some support, direct experimental evidence for fatty acid binding at this site in mammalian pLGICs is lacking. The conservation hypothesis is reasonable but requires validation in eukaryotic channels. The claims are appropriately qualified as speculative by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The polyunsaturated tail of DHA, rather than the carboxylate headgroup, is the primary determinant of DHA binding affinity to the M3/M4 site. DHA tail makes high probability contacts with small hydrophobic residues (A268, G271). A charged interaction between DHA carboxylate and R117 is not critical for DHA binding and effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by CGMD showing tail interactions with hydrophobic residues (Figure 5A, Figure 6 supplement 3) and experimental data showing DHA ME (lacking carboxylate) inhibits similarly to DHA (C6). The R117C mutation does not eliminate DHA sensitivity (C99), supporting C63. Citation to similar effects in GABAAR (C64, Taha et al., 2013) suggests conservation. The inference that the tail is the primary determinant (C62) is logical given PA has the same headgroup but much lower affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Computational modeling using a pLGIC gating model shows that the qualitative effects of fatty acid inhibition in ELIC (decreased peak current and increased current decay rate) can be produced by stabilizing either a pre-active or desensitized state. The model predicts that complete inhibition leads to most channels occupying the stabilized state at steady-state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C104-C105 are supported by computational simulations using the Gielen and Corringer gating model (Figure 6 supplements 4-5). The simulations demonstrate that both pre-active and desensitized state stabilization can reproduce the experimental observations. However, the modeling cannot distinguish which state is actually stabilized, as acknowledged by the authors (C106). The claim is appropriately qualified, and the authors correctly note that structural studies are needed to resolve this ambiguity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Fatty acids may be excluded from inner TMD sites due to anionic phospholipids (which bind with high affinity to inner leaflet sites), and outer leaflet lipids may compete for fatty acid binding to the M3/M4 groove. Cardiolipin or other lipids in mammalian pLGICs could compete for DHA binding and alter inhibition potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 are largely speculative, though supported by some evidence. The exclusion from inner leaflet sites is supported by CGMD showing POPG enrichment (C53) and citations to other channels (C67). The cardiolipin binding to the M3/M4 site is supported by citation to a recent ELIC structure (C69, Kumar et al., 2021) and MD simulations (C70, Sridhar et al., 2021). However, the functional consequences for mammalian pLGICs (C71) remain speculative without direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C110",
+      "C111"
+    ],
+    "result": "The difference in inhibition between DHA and PA appears to be entirely related to different binding affinities for the M3/M4 site. When a hexadecyl group (resembling PA) is covalently introduced to this site via hMTS modification of R117C (100% occupancy), it is as effective as DHA at inhibiting ELIC responses, suggesting PA has lower occupancy than DHA or covalently attached hMTS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C110-C111 are supported by the strong inhibitory effect of R117C-M (Figure 6B) being similar to maximal DHA effect but much stronger than PA effect. The inference that PA has lower occupancy (C111) is logical given the CGMD and competition photolabeling data showing PA has much lower affinity. However, the incomplete characterization of R117C-M modification efficiency and the fact that small DHA-sensitive currents remain introduce some uncertainty about whether the hexadecyl group fully mimics DHA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The limitation of pacFA (preferential labeling of nucleophilic residues by aliphatic diazirines) likely applies to other lipid analogue photolabeling reagents featuring aliphatic diazirines in hydrophobic regions (e.g., PhotoClick-Cholesterol, pacFA ceramide), potentially reducing their utility for identifying lipid binding proteins or sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is a speculative extrapolation from the observed failure of pacFA to label ELIC. While the reasoning is logical based on the known chemistry of aliphatic diazirines (C19) and the success of TPD-containing KK-242, direct experimental evidence for the limitation of other reagents is not provided. The claim is appropriately qualified as speculative, but validation would require testing these other reagents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "DHA inhibits ELIC through specific binding to an M3/M4 intrasubunit site in the agonist-bound state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is the main conclusion of the study and is well-supported by the convergence of multiple lines of evidence: patch-clamp showing DHA inhibition (C1-C9), CGMD showing DHA enrichment at M3/M4 site (C10-C17), photolabeling identifying the M3/M4 site (C28-C33), competition showing DHA binds with high affinity (C34-C38), state-dependent binding (C39-C41), and hMTS modification mimicking DHA effect (C54-C57). The integration of experimental and computational approaches provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C86",
+      "C87"
+    ],
+    "result": "The mechanism of fatty acid inhibition of GABAAR and nAchR is also present in ELIC, as demonstrated by similar qualitative effects. ELIC responses show fast activation followed by slower current decay, and 3 min pre-application with fatty acid is sufficient to equilibrate the patch membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C86-C87 are supported by patch-clamp data showing ELIC responses consistent with previous reports (C86, citations provided) and experimental observations that longer pre-application times do not increase effects (C87). The similarity to GABAAR and nAchR (C91) is inferred from qualitative comparison of effects (no EC50 shift, peak current reduction, DHA>PA potency), which is reasonable but lacks direct mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The C300S/C313S mutant produces slower current decay and larger steady-state currents compared to WT ELIC. The R117C, R117C-M, and R123C-M mutants do not show significantly different rates of current decay or relative steady-state current compared to C300S/C313S control, and all show similar relative reduction of peak current with 30 \u03bcM DHA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by patch-clamp recordings (Figure 6 supplement 2) showing the C300S/C313S mutant effects are consistent with previous reports (citation provided). The lack of significant differences in decay rate and steady-state current among the mutants (C98) and similar DHA sensitivity (C99) are demonstrated experimentally. However, the authors note substantial variability between patches, which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In the GLIC crystal structure, the DHA carboxylate headgroup interacts with R118 but the polyunsaturated tail is mostly unresolved and not interacting significantly with the TMD. The discrepancy between ELIC findings and the GLIC structure may be due to different methodologies or differences in DHA interactions between ELIC and GLIC. In GLIC, DHA co-application with agonist resulted in no change in peak responses but faster current decay, interpreted as desensitized state stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 accurately describe the GLIC crystal structure (C100, Basak et al., 2017) and the functional effects reported in that study (C102-C103). The proposed explanations for discrepancies (C101) are speculative but reasonable. The comparison is important for contextualizing the current findings, though the authors appropriately note the uncertainty about whether the differences reflect methodology or genuine protein-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Fatty acids are major membrane components and modulators of ion channels including pLGICs. PUFAs inhibit neuronal pLGICs (GABAAR, nAchR) more effectively than saturated fatty acids by reducing peak responses. Neuronal PUFAs affect neurodevelopment and cognition, and PUFA content changes dramatically in pathologic conditions. A GLIC crystal structure showed a DHA binding site in the outer TMD. ELIC has been a useful model for investigating lipid and anesthetic modulation of pLGICs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 provide background context and are well-supported by multiple citations to established literature. These claims accurately represent prior knowledge in the field and appropriately set up the rationale for the current study. The citations are relevant and support the stated claims about fatty acid effects on pLGICs, physiological significance, and the utility of ELIC as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The MARTINI coarse-grained model represents four non-hydrogen atoms as a single bead, reducing computational cost and enabling longer timescale simulations by eliminating fast vibrational modes. The cost is lack of atomic resolution and limited protein conformational sampling, but CGMD is useful for sampling protein-lipid interactions due to increased lipid diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 accurately describe the MARTINI coarse-grained model and its advantages/limitations, supported by appropriate citations (Marrink and Tieleman, 2013; Alessandri et al., 2019; D\u00e4mgen and Biggin, 2021; Sharp et al., 2019). The description is accurate and provides necessary methodological context. The authors appropriately acknowledge both the benefits and limitations of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A cluster of three arginines (R286, R299, R301) in the inner interfacial region of ELIC TMD form charged interactions with anionic phospholipids that influence channel responses. Alkyl-MTS modification has been used to examine phospholipid effects in other channels. ELIC in DDM co-purifies with PG from E. coli membranes. Fatty acids modulate Kv channels by interacting with positively charged residues in the voltage-sensor domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C107-C109 provide relevant background and are supported by citations to previous work, including the authors' own prior studies (C96, C108: Tong et al., 2019) and work on other channels (C107, C109). These claims accurately represent prior knowledge and provide context for interpreting the current findings, particularly regarding the inner leaflet arginine cluster and the precedent for alkyl-MTS modification approaches.",
+    "result_type": "MINOR"
+  }
+]

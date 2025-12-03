@@ -1,0 +1,2399 @@
+{
+  "submission": {
+    "id": "6e4d70b0-db9d-4413-a6bf-c9776e652a74",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:28:09.455279Z",
+    "updated_at": "2025-12-03T07:28:09.455279Z"
+  },
+  "content": [
+    {
+      "id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "submission_id": "6e4d70b0-db9d-4413-a6bf-c9776e652a74",
+      "content_type": "manuscript",
+      "content_text": "# In situ cryo-ET structure of phycobilisome\u2013photosystem II supercomplex from red alga\n\n## Authors\n\n- Meijing Li<sup>1</sup> ([ORCID: 0000-0003-3931-7905](https://orcid.org/0000-0003-3931-7905))\n- Jianfei Ma<sup>2</sup> ([ORCID: 0000-0002-2016-2280](https://orcid.org/0000-0002-2016-2280))\n- Xueming Li<sup>1</sup> \u2020\n- Sen-Fang Sui<sup>2</sup> ([ORCID: 0000-0001-5253-2592](https://orcid.org/0000-0001-5253-2592)) \u2020\n\n### Affiliations\n\n1. Key Laboratory for Protein Sciences of Ministry of Education, Beijing Advanced Innovation Center for Structural Biology & Frontier Research Center for Biological Structure, School of Life Sciences, Tsinghua University Beijing China\n2. State Key Laboratory of Membrane Biology, Beijing Advanced Innovation Center for Structural Biology & Frontier Research Center for Biological Structure, School of Life Sciences, Tsinghua University Beijing China\n3. Department of Biology, Southern University of Science and Technology Guangdong China\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhycobilisome (PBS) is the main light-harvesting antenna in cyanobacteria and red algae. How PBS transfers the light energy to photosystem II (PSII) remains to be elucidated. Here we report the in situ structure of the PBS\u2013PSII supercomplex from Porphyridium purpureum UTEX 2757 using cryo-electron tomography and subtomogram averaging. Our work reveals the organized network of hemiellipsoidal PBS with PSII on the thylakoid membrane in the native cellular environment. In the PBS\u2013PSII supercomplex, each PBS interacts with six PSII monomers, of which four directly bind to the PBS, and two bind indirectly. Additional three \u2018connector\u2019 proteins also contribute to the connections between PBS and PSIIs. Two PsbO subunits from adjacent PSII dimers bind with each other, which may promote stabilization of the PBS\u2013PSII supercomplex. By analyzing the interaction interface between PBS and PSII, we reveal that \u03b1LCM and ApcD connect with CP43 of PSII monomer and that \u03b1LCM also interacts with CP47' of the neighboring PSII monomer, suggesting the multiple light energy delivery pathways. The in situ structures illustrate the coupling pattern of PBS and PSII and the arrangement of the PBS\u2013PSII supercomplex on the thylakoid, providing the near-native 3D structural information of the various energy transfer from PBS to PSII.\n\n## Introduction\n\nLife on Earth depends on photosynthesis for the conversion of solar energy to chemical energy. Red algae living in deep water can efficiently use dim and green light that cannot be absorbed by plants (Tschudy, 1934). This ability is mainly due to two primary photosynthetic components: the light-harvesting antenna and the photochemical reaction centers. The primary light-harvesting antenna is the phycobilisome (PBS), which is located on the stromal surface of the thylakoid membrane and captures light energy (Gantt and Conti, 1965; Gantt and Conti, 1966). The two reaction centers, photosystem II (PSII) and photosystem I (PSI), are located in the thylakoid membrane. PBS mainly transfers the light energy to PSII, leading to water splitting (Biggins and Bruce, 1989; Ley and Butler, 1977a). PBS could also directly couple with PSI (Mullineaux, 1992; Su et al., 1992; Kondo et al., 2007; Ueno et al., 2017).\n\nPBSs are composed of chromophore-bearing phycobiliproteins (PBPs) and linker proteins, which further assemble into central core and peripheral rods (Gantt et al., 1976; Zilinskas and Greenwald, 1986). Recently, the cryo-electron microscope (cryo-EM) structures of PBS from red algae at resolutions of 3.5 \u00c5 (Zhang et al., 2017) and 2.82 \u00c5 (Ma et al., 2020). The cryo-EM structure of PBS in red alga Porphyridium purpureum (Ma et al., 2020) shows that the PBS consists of a tricylindrical PBS core, 14 rods (Rod a\u2013Rod g, Rod a\u2019\u2013Rod g\u2019), 8 individual extra PE (\u03b1\u03b2)6 hexamers (Ha\u2013Hd, Ha\u2019\u2013Hd\u2019), and 24 individual extra PE \u03b1 or \u03b2 subunits. The core contains one top cylinder B, composed of two allophycocyanin (APC) (\u03b1\u03b2)3 trimers, and two bottom cylinders (A and A\u2019), each of which is assembled by three APC trimers (A1\u2013A3, A2 and A3 form APC hexamer). The rods consist of phycoerythrin (PE) and phycocyanin (PC) hexamers or only PE hexamers. For example, Rod a is composited of one basal PC hexamer and two distal PE hexamers. Thus, the energy absorbed by Rod transfers unidirectionally from the distal PE to the basal PC, and then funnels to APC in the core, and eventually to the two terminal emitters, including chromophores in the core\u2013membrane linker protein (LCM, also called ApcE) (Capuano et al., 1991; Lundell et al., 1981; Tang et al., 2015) and allophycocyanin D (ApcD) (Glazer and Bryant, 1975; Peng et al., 2014).\n\nPSII is a multi-pigment transmembrane protein complex involved in converting light energy into electrochemical potential energy (Adachi et al., 2008). The X-ray crystal structures of PSII from red alga Cyanidium caldarium (Ago et al., 2016), cyanobacterium Thermosynechococcus elongatus (Nakajima et al., 2018), and the cryo-EM structure of PSII from green alga Chlamydomonas reihardtii (Sheng et al., 2019), the marine diatom Chaetoceros gracilis (Pi et al., 2019), and the higher plants Arabidopsis thaliana (van Bezouwen et al., 2017), Spinacia oleracea (Wei et al., 2016), and Pisum sativum (Su et al., 2017) have revealed the structural basis of energy transfer, electron transfer, and photoprotection within the photosystem. The main subunits of PSII include the reaction center D1, D2 protein, and chlorophyll-a binding proteins, CP43 and CP47. Both CP43 and CP47 subunits have been reported to mediate the energy transfer from PBS to the reaction center (Ueno et al., 2017).\n\nThe structural mechanism of energy transfer from PBS to PSII has been studied for many years. The organization of PBS and PSII on the thylakoid membrane has been studied using ultrathin section (Gantt and Conti, 1965; Wanner and Kost, 1980), freeze-fracture analysis (Lange et al., 1990), negative staining (Arteni et al., 2008; Chang et al., 2015; Folea et al., 2008; Hellmich et al., 2014), atomic force microscopy (Liu et al., 2008), and cryo-electron tomography (cryo-ET) (Levitan et al., 2019; Rast et al., 2019; Wietrzynski et al., 2020). PBSs in red algae are tightly arranged in ordered rows on the thylakoid in most regions and randomly packed in some areas (Arteni et al., 2008; Lange et al., 1990; Liu et al., 2008). PBS arrangement in the two regions is dynamically regulated, varying with the cell\u2019s age, the supply of nutrients, and available light (Arteni et al., 2008; Liu et al., 2008; Sagert and Schubert, 1995). However, the stoichiometric ratio of PBS/PSII in red algae and cyanobacteria remains controversial, ranging from 1:1 to 1:4 (Arteni et al., 2008; Cunningham et al., 1989; Ohki et al., 1987; Takahashi et al., 2009), which likely reflects different growth conditions. Different approaches showed that PBS connects with PSII through ApcD, \u03b1LCM (the \u03b1 domain of LCM), and ApcF (Zhao et al., 1992). In particular, ApcD and \u03b1LCM are well known as terminal emitters for mediating the transfer of energy from PBS to PSII. The negative staining structure of the purified PBS\u2013PSII supercomplex in the Anabaena sp. strain PCC 7120 proposed that \u03b1LCM and ApcF of PBS play important roles in mediating PBS interaction with PSII (Chang et al., 2015). The cross-linking structure of the purified PBS\u2013PSII\u2013PSI megacomplex in the cyanobacteria Synechocystis PCC 6803 identified five interlinks associated with \u03b1LCM and PSII (Liu et al., 2013). However, the organization and precise connection between PBS and PSII in the cellular environment are not fully understood.\n\nIn situ cryo-ET in combination with cryo-focused ion beam (cryo-FIB) milling is currently a powerful approach for directly dissecting macromolecular structures in the unperturbed cellular environment at molecular resolution (Wagner et al., 2020; Watanabe et al., 2020). The obtained structure is complementary to the structure of the isolated complex and reveals elements of the in vivo organization that can never be obtained through structures of the isolated complex, no matter how high the resolution. Here, by using this approach, we identified the native PBS\u2013PSII supercomplex and the double PBS\u2013PSII supercomplex containing two adjacent PBS\u2013PSII supercomplexes at resolutions of 14.3 \u00c5 and 15.6 \u00c5, respectively. These results illustrate the coupling pattern of PBS and PSII and the arrangement of PBS\u2013PSII supercomplexes on the ordered distribution region of the thylakoid membrane, which cannot be determined with other methods. The newly found structural information provides a better understanding of energy transfer from PBS to PSII.\n\n## Results\n\n### Visualization of PBS and PSII on the thylakoid membrane\n\nThe red alga, P. purpureum, was cultured under low-light conditions to mimic its natural habitat (Cunningham et al., 1989) and to increase the population of regularly distributed PBS\u2013PSII supercomplexes (Liu et al., 2008). Cells were harvested in the exponential phase of growth and were immediately vitrified on cryo-EM grids to minimize environmental affection (Ka\u0148a et al., 2014). Cryo-FIB milling was then used to prepare thin lamellae with ~150 nm thickness for cryo-ET data collection. We first imaged the whole cells. The tomogram slice shows that most PBS\u2013PSII supercomplexes are packed in an orderly fashion on the thylakoid membranes (Figure 1\u2014figure supplement 1A). Subsequently, 51 cryo-ET tilt series were collected at higher magnification at the ordered distribution regions for three-dimensional (3D) reconstruction and further sub-tomogram averaging.\n\nConsistent with the conventional transmission electron microscope ultrastructures of other red algae (Gantt and Conti, 1965; Gantt et al., 1968; Tsekos et al., 1996; Wanner and Kost, 1980), PBSs are sandwiched between parallel thylakoid membranes. In the cross-section view, adjacent PBSs were attached to the upper and lower thylakoid membrane in opposite directions (Figure 1A,B,D). In the two orthogonal views, opposite PBSs are stacked into linear rows respectively (Figure 1C,E, Figure 1\u2014figure supplement 1B,C, Video 1, Video 2, Video 3). These PBS rows are arranged in parallel, forming a large two-dimensional pattern covering the thylakoid membrane. In the cross-section view, densities are evident at the bottom of PBSs, which are embedded within the thylakoid membrane. Protrusions are visible on the luminal side (Figure 1A). The features of these densities are consistent with the location and morphology of PSIIs (Ago et al., 2016; Chang et al., 2015; Lange et al., 1990). From this, we can infer that these represent PSIIs. Due to the small size of the extrinsic domain of PSI, we could not distinguish convincing PSI densities in our tomograms.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative tomogram slice in cross-section view. The box represents magnified details of PBS, a PSII dimer, the thylakoid membrane, and the lumen. (B) Spatial mapping of the PBS\u2013PSII supercomplex (purple) and 3D segmentation of the thylakoid membrane (blue). (C\u2013E) The magnified three presents perpendicular views of the organization of PBS\u2013PSII in the thylakoid membrane boxed in (B). Thylakoid membrane, light blue; PBS, gray; Lateral hexamer, green; A1\u2013A2 pair, purple; B1\u2013B2 pair, cyan; C1\u2013C2 pair, yellow; connector 1, coral; connector 2, khaki; connector 3, red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative cross-section view of the whole cell. The PBS\u2013PSII supercomplexes are neatly packed in most regions, while some PBS\u2013PSII supercomplexes are randomly distributed. (B) Representative tomogram XYZ plane in cross-section view shows the longitudinal view of PBS\u2013PSII supercomplex arrays. (C) Representative tomogram XYZ plane in cross-section view shows the grazing view of PBS\u2013PSII supercomplex arrays. The red dashed boxes in (B) and (C) indicate the double PBS\u2013PSII particles used for sub-tomogram averaging. The yellow cross indicates the center of XYZ plane. The scale bars indicate 500 nm in (A), 50 nm in (B) and (C).\n\n![Video 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-video1.mp4.jpg)\n\n**Video 1.:** Related to Figure 1. Scale bar, 100 nm.\n\n![Video 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-video2.mp4.jpg)\n\n**Video 2.:** Related to Figure 1\u2014figure supplement 1B. The color boxes indicate the two types of the tight perforations. Scale bar, 100 nm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/69635/elife-69635-video3.mp4.jpg)\n\n**Video 3.:** Related to Figure 1\u2014figure supplement 1C. Scale bar, 100 nm.\n\nTo verify the PSII densities, we performed sub-tomogram averaging of two adjacent PBS particles on the same linear array (indicated in the red boxes of Figure 1\u2014figure supplement 1B,C) and generated a structure at a resolution of 15.6 \u00c5 (Figure 2A, Figure 2\u2014figure supplement 1A,B). The recently determined 2.82 \u00c5 single-particle PBS (PDB code 6 KGX) (Ma et al., 2020) was well-fitted into our sub-tomogram map (Supplementary file 1), except for the individual extra PE \u03b2 subunit between the Rod e and Rod d' (Figure 2\u2014figure supplement 2A,B). The map\u2019s slice view shows a similar PSII dimer array structure resembling that of the red algae Porphyridium cruentum (Lange et al., 1990; Figure 2\u2014figure supplement 3A,B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-v1.jpg)\n\n**Figure 2.:** (A) The density map of double PBS\u2013PSII structures at a resolution of 15.6 A\u030a, presented in two perpendicular views. The center-to-center distance of two adjacent PBSs is approximately 345 \u00c5. Two random circles indicated by black or red dashed lines mark the six PSII monomers binding with each of the two PBSs. PBS1 is associated with PSII monomer A1, A2. B1, B2, C1, and C'2. PBS2 connects with A'1, A'2, B'1, B'2, C'2, and C\u2019\u20191. The surface threshold is 0.09. (B) The density map of the PBS\u2013PSII supercomplex at a resolution of 14.3 A\u030a fitted with the single-particle model of PBS (EMDB code EMD-9976, PDB code 6 KGX) and X-ray structure of PSII (PDB code 4YUU), presented in two perpendicular views. The lateral hexamer was fitted with the single-particle model of the Rod a distal PE hexamer. The surface threshold is 0.059. (C) The magnified image shows that the two PsbO subunits bind with each other at the interface of the adjacent PSII dimers (Inset). A map of PSII dimers A and B, segmented from (B) with the same surface threshold level. The arrow indicates the binding site.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The \u2018gold-standard\u2019 Fourier shell correlation (FSC) curves calculated between two halves of datasets for the double PBS\u2013PSII supercomplex (15.6 \u00c5), the PBS\u2013PSII supercomplex (14.3 \u00c5), and the PBS\u2013PSII supercomplex after post-processing (13.2 \u00c5). Resolution was estimated at FSC = 0.143 (Indicated with the dashed). (B) Local resolution map of the double PBS\u2013PSII supercomplex map estimated by ResMap using the color scheme shown in the right panel. (C) Local resolution map of the PBS\u2013PSII supercomplex map. (D) Local resolution map of the PBS\u2013PSII supercomplex after post-processing.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A, B) Conformational change of \u03b2-subunit interspersed between Rod e and Rod d'. \u03b2-subunitSPA in green is the model built with the map of single particle analysis, and \u03b2-subunitCryoET in red is the fitting model of the sub-tomogram averaging map. The surface threshold of the sub-tomogram map is 0.065. (C) The magnified bottom view of PSII dimers A and B in the PBS\u2013PSII supercomplex (Surface threshold, 0.059) shows that the two adjacent PsbO subunits (colored in blue) bind with each other. (D) The fitting result of PsbO and PsbO\u2019 shown in the perpendicular view of (C). (E) The electrostatic analysis of the two connecting PsbO subunits. Electrostatic surface potential was calculated with PyMol/APBS and contoured at \u00b15 kT/e.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Overall structure of the double PBS\u2013PSII supercomplex (surface threshold, 0.09). (B) Slice view shows the row of PSII dimers indicated in (A). (C) The overall structure of the PBS\u2013PSII supercomplex (surface threshold, 0.065). The asterisks represent PSII dimer C densities. (D) Slice view shows the luminal protrusions of PSII dimer row indicated in (C), which indicates that PSII dimer C of the PBS\u2013PSII supercomplex connects with PSII dimers A and B in the same way that of the double PBS\u2013PSII supercomplex. (E) Overall structure of the PBS\u2013PSII supercomplex (surface threshold, 0.21) shows the lateral hexamers connect with the bottom PC hexamer of Rod a and the second PE hexamer of Rod e. (F) Top slice view of the PBS\u2013PSII supercomplex shows the lateral hexamers (indicated with arrows) are round discs with stronger densities in the center. (G) Side slice view of (F). (H) The other perpendicular slice view of (F) shows the Ha hexamers indicated with arrowheads have a ring-like structure consisting of (\u03b1\u03b2)3 trimers and a central cavity filled with the N-terminal Pfam00427 domain of linker proteins, which resemble the lateral hexamers in (F). Scale bars, 20 nm.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Sequence homogeneity alignment of each subunit of PSII between P. purpureum (Pp) and C. caldarium (Cc) indicates that most of the subunits are highly conserved. (B) Maximum likelihood (ML) phylogenetic analysis of cyanobacteria, red algae, diatom, green algae, and higher plants based on CP47 (PsbB) protein of PSII. The PSII structures of all the analyzed organisms have been resolved (PDB ID: 6KAD, 5XNM, 5MDX, 1VYK, 6AE9, 4YUU, 5OJ3, 5ZZN, 6JLL, etc.). CP47 of Gloeobacter violaceus is introduced as the outgroup. The software is Mega v5.05 and amino acid substitution model is Jones\u2013Taylor\u2013Thornton model. Bootstrap 1000 is used to compute the consensus tree, and computed distance 0.05 is labeled on the bottom left corner. Red algae Pp and Cc, marked with red rectangle, are more closely related than other phyla, such as cyanobacteria, diatom, green algae, and higher plants. (C) Sequence alignment of the N-terminal CP43 subunit of PSIIs of Pp and Cc.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) The bottom view of the PBS\u2013PSII supercomplex fitting model shows that the face plane of the PSII dimers A and B rotates approximately 14\u00b0 along the PBS core plane. The centers of the two PSII dimers shift approximately 3 nm along the plane of PBS core. (B) The side view of the PSII dimers A and B fitting model shows the center-to-center distance between the PSII dimers A and B is approximately 12.4 nm.\n\nTo find the most likely PSII atomic resolution structure to fit the subtomogram map, we analyzed all of the reported X-ray models in a phylogenetic analysis (Figure 2\u2014figure supplement 4B). PSII from the red algae C. caldarium (PDB code 4YUU) (Ago et al., 2016) is, evolutionarily, most similar to P. purpureum, and almost all the subunits show high homogeneity (ranging from 35% to 100%) with that of P. purpureum (Figure 2\u2014figure supplement 4A,C). We then docked the X-ray model of PSII from C. caldarium into the sub-tomogram map, which shows a high cross-correlation coefficient (all above 80%) between the model and sub-tomogram map (Supplementary file 1). Thus, we further confirmed these densities as PSIIs.\n\n### The overall structure of the PBS\u2013PSII supercomplex\n\nOur sub-tomogram map also reveals a different stoichiometry of PBS and PSII from previous reports (Arteni et al., 2008; Cunningham et al., 1989; Ohki et al., 1987; Takahashi et al., 2009). In the sub-tomogram map, two PBSs (labeled as PBS1 and PBS2) interact with a linear array of PSII dimers (labeled as A, B, C, A', B', C', C\", Figure 2A (left panel), Figure 2\u2014figure supplement 3B). Considering the map contains two PBSs, we named the structure double PBS\u2013PSII supercomplex. After mapping this sub-tomogram map back into the tomogram, we observed long linear arrays of the PBS\u2013PSII supercomplexes on the thylakoid membrane (Figure 1B\u2013E). In this array, the PBS/PSII ratio is 1:6, that is, one PBS with six associated monomeric PSIIs periodically repeated along with the linear array. In the double PBS\u2013PSII map, each PBS is directly anchored to a pair of PSIIs dimers, i.e., PBS1 on the A\u2013B pair and PBS2 on the A\u2019\u2013B\u2019 pair (Figure 2A, right panel). The C' dimer connects the A\u2013B pair to the A\u2019\u2013B\u2019 pair, while the two PSIIs in the C' dimer respectively interact with the lateral disc-like densities on both sides of PBS, which have features of PBS hexamer (discussed later), and thus indirectly attach to PBS1 and PBS2 (Figure 2A). The slice view shown in Figure 2\u2014figure supplement 3B indicates that the PSII dimers are arranged repeatedly in parallel. Thus, C and C\u2019\u2019 should also be the PSII dimer, although their densities are weak. The structure shows PBS1 is associated with PSII monomer A1, A2, B1, B2, C1, and C\u20192, and PBS2 connect with A\u20191, A\u20192, B\u20191, B\u20192, C\u20191, C\u2019\u20192. Therefore, each PBS is associated with six monomeric PSIIs.\n\nTo study the geometry of the PBS\u2013PSII supercomplex, we manually picked 34,380 individual PBSs with the interacting PSIIs particles. These were aligned and averaged into a structure at a higher resolution, 14.3 \u00c5 (Figure 2B, Figure 2\u2014figure supplement 1A,C). In the PBS\u2013PSII map, the PSII dimers (PSII dimers A and B) are clearly shown. With a large threshold, the other two PSIIs corresponding to PSII dimer C in double PBS\u2013PSII are visualized in the map and tomogram slice view (indicated with red stars in Figure 2\u2014figure supplement 3C,D). The distance between the PSII dimers A and B is approximately 12.4 nm, and the face planes of the two PSII dimers make a lateral angle of approximately 14\u00b0 with the plane of the PBS central core. The centers of the two PSII double dimers shift approximately 3 nm along the plane of the PBS central core, which makes the twofold symmetry axes of PBS and 6 PSIIs coincide (Figure 2\u2014figure supplement 5).\n\nThe improved PBS\u2013PSII structure enables us to confirm that PSII dimers A and B bind with each other through a rigid density. By analyzing the fitting results, we suppose the density is most likely contributed by the two adjacent PsbO subunits: one is from the PSII monomer 1 of the PSII dimer A and the other from the PSII monomer 4 of the PSII dimer B (Figure 2, Figure 2\u2014figure supplement 2C\u2013E). However, we are limited by the current resolution and could not exclude that other factors may contribute to the density. The PsbO protein is found in PSII of all oxygenic organisms ranging from cyanobacteria and red algae to higher plants and serves as the manganese-stabilizing protein directly involved in the stability of photosynthetic water-oxidizing complex (Ifuku and Noguchi, 2016; Popelkova and Yocum, 2011). Our results suggest that PsbO could play an additional role in stabilizing adjacent PSII dimers in PSII dimer rows.\n\nTo analyze the lateral densities on both sides of PBS connecting PBS to PSII dimer C, we further improved the resolution of the PBS\u2013PSII supercomplex to 13.2 \u00c5 after post-processing from the 14.3 \u00c5 resolution map (Figure 2\u2014figure supplement 1D). The slice view of the PBS\u2013PSII map shows that the densities are round discs with solid densities in the center (Figure 2\u2014figure supplement 3E\u2013G). These features are reminiscent of the structure of the extra hexamer found in the single-particle cryo-EM structure of P. purpureum PBS. Moreover, the lateral densities are of the same size and shape as the extra hexamer. As all eight extra hexamers in P. purpureum PBS are PE hexamers, we hypothesize that the lateral density could be contributed by a PE hexamer, which is referred to as the lateral hexamer (Figure 2B). Further analysis indicated that the lateral hexamer connects with the bottom hexamer of Rod a and the second hexamer of Rod e, which are the PC and PE hexamers, respectively (Figure 2\u2014figure supplement 3E).\n\n### Interaction pattern between PBS and PSII\n\nIn the PBS\u2013PSII map, extensive interfaces between PBS core and PSII are observed. To better analyze the potential interactions, we docked the atomic models of PBS and PSII into the map and extracted the densities of PBS core cylinders A, A' and PSII dimers A, B (Figure 3A,B; Figure 3\u2014figure supplement 1). ApcD and \u03b1LCM are two well-documented terminal emitter subunits of PBS (Zhao et al., 1992; Zlenko et al., 2019). We observed the interfaces between \u03b1LCM, ApcD, and PSII dimers A, B from the surface clip views (Figure 3, Video 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) A segmentation map of two basal cylinders of the PBS core (labeled as a and a', respectively) and PSII dimers A and B (each monomer is labeled as A1, A2, B1, and B2, respectively). Each basal cylinder consists of three APC trimers, a1, a2, and a3. This map was segmented from the PBS\u2013PSII supercomplex at a surface threshold level of 0.065. (C\u2013F) Surface clip views of the segmented PBS\u2013PSII supercomplex show the details of the interaction between the \u03b1LCM, ApcD, and CP43, CP47. The clip planes were indicated in (A). The surface threshold was 0.065. CP43A1, CP43 of PSII dimer A1; CP47B1, CP47 of PSII dimer B1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** To analyze the connections between PBS and PSII, we extracted the part two densities from the PBS\u2013PSII supercomplex, include PBS core cylinders a, a', PSII dimers A and B. The extraction was acquired by subtracting Part 1 from the PBS\u2013PSII supercomplex.\n\n![Video 4.](https://cdn.elifesciences.org/articles/69635/elife-69635-video4.mp4.jpg)\n\n**Video 4.:** Related to Figure 3.\n\nAs was shown in the proximal and middle clip views, there is a wide interface between \u03b1LCM and CP43 of PSII dimer A1 (CP43A1), as well as a relatively small interface between \u03b1LCM and CP47 of PSII dimer B1 (CP47B1) (Figure 3C\u2013E). These observations suggested the interactions between \u03b1LCM with CP43 and CP47, consistent with the energy transfer from PBS to CP43 and CP47 detected in red algae and cyanobacteria (Ueno et al., 2017). The different sizes of the interface may provide a structural view that energy transfer from PBS to CP43 is the main pathway in red alga (Ueno et al., 2017). The other terminal emitter subunit ApcD was also involved in energy transfer from PBS to PSII (Ashby and Mullineaux, 1999; Calzadilla et al., 2019; Ley and Butler, 1977b). The middle and distal clip views showed an interaction interface between ApcD and CP43A1 (Figure 3E,F), which may mediate the energy transfer from ApcD to PSII.\n\n### Supplementary interactions intermediated by three connector proteins\n\nAfter docking the atomic models of PBS, PSII dimer, and two lateral hexamers into the density map of PBS\u2013PSII supercomplex, we still observed three extra densities that are not occupied by any model. Two of them are associated with the PBS and PSII (Figure 4\u2014figure supplement 1A), and the third one is associated with the lateral hexamer and PSII (Figure 4\u2014figure supplement 1B). Since we could not identify the proteins corresponding to these densities, we temporarily deemed them \u2018connectors\u2019 (connectors 1\u20133; Figure 4, Figure 4\u2014figure supplement 2A\u2013E). Nevertheless, their positions in the map suggest that these proteins likely participate in the formation of the PBS\u2013PSII supercomplex (Figure 4) as well as the assembling of the PBS\u2013PSII array on the thylakoid membrane (Figure 1C\u2013E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig4-v1.jpg)\n\n**Figure 4.:** (A) Overall structure of the PBS\u2013PSII supercomplex (surface threshold of 0.065), highlighting the PBS core, Rod a of PBS, connector 1, and connector 2 between PBS and PSII. (B, C) The magnified clip views of connector 1 show that connector 1 interacts with the \u03b22 subunit of the a3 trimer layer and the CP47, D1, and D2 subunits of PSII monomer B2 (labeled with CP47B2, D1B2, and D2B2, respectively). (D, E) The magnified clip views of connector 2 show that connector 2 mediates the connections between the bottom hexamer of Rod a and D1, D2, and CP47 of PSII monomer B1 (labeled with D1B1, D2B1, and CP47B1, respectively). (F) The overall structure of double PBS\u2013PSII supercomplex (surface threshold = 0.09) highlights the linkage of connector 3 between PBS\u2019s lateral hexamer and PSII\u2019s bridging dimer C shown in Figure 2A. (G, H) The density of connector 3 and its putative connections with PBS\u2019s lateral hexamer and PSII from two perpendicular views. According to the slice view of the PBS\u2013PSII supercomplex, some densities of connector 3 are inserted into the central cavity of the lateral hexamer (Figure 4\u2014figure supplement 2E); this cavity density is not colored here.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) To analyze the density map, we carefully docked the cryo-EM model of PBS, X-ray model of PSII dimer, and two lateral hexamers into the PBS\u2013PSII supercomplex map. Two extra solid densities cannot be assigned (Indicated with black arrows). Both the two densities are associated with the PBS core and with PSII. The surface threshold of the sub-tomogram map is 0.065 (B) In the double PBS\u2013PSII supercomplex, another extra density cannot be assigned (Indicated with a red arrow). The density is associated with the lateral hexamer and PSII. The surface threshold of the sub-tomogram map is 0.09.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** To measure the geometry of the three connectors\u2019 density map, we segmented the densities of connectors 1 and 2 from the PBS\u2013PSII supercomplex with post-processing and that of connector 3 from the double PBS\u2013PSII supercomplex. The PBS\u2013PSII supercomplex (surface threshold of 0.181) was filtered with Gaussian at a width of 3.8. The outcomes are then indicated with three mutually perpendicular views. (A) Segmented map of the PBS\u2013PSII supercomplex. (B) Geometry of connector 1. (C) Geometry of connector 2. (D) Segmented density map of connector 3 from the double PBS\u2013PSII supercomplex (surface threshold = 0.124). (E) Geometric character of connector 3. The small part of connector 3 inserts into the lateral hexamer, and the big part extends outside and connects with PSII.\n\nWe segmented out the three connectors from the PBS\u2013PSII supercomplex map and find that they are all rod-like structures, but different in size (Figure 4\u2014figure supplement 2). The surface clip views of connector 1 show that connector 1 contacts the \u03b22 subunit of the PBS core layer a3 and the CP47 of PSII monomer B2 (CP47B2), as well as D1B2 and D2B2 (Figure 4B,C). Connector 2 is smaller than connector 1 (Figure 4D,E, Figure 4\u2014figure supplement 2A\u2013C). One side of connector 2 interacts with the basal hexamer of Rod a, and the other side with D1B1, D2B1, and CP47B1 in the neighboring PSII monomer B1 (Figure 4D,E). Thus, both connector 1 and connector 2 connect with PBS and PSII, suggesting that they may consolidate the anchor of PBS on PSII dimer.\n\nDifferent from connectors 1 and 2, connector 3 mediates a connection between the lateral hexamer and the bridging PSII dimer C. The density map of connector 3 shows that connector 3 could be divided into one small part and one big part (Figure 4\u2014figure supplement 2D,E). The small part is buried in the lateral hexamer\u2019s central cavity, and the big part extends out to connect with PSII. This structural feature is very similar with the structure of some rod linker proteins, such as LR6 of P. purpureum PBS, with the N-terminal rigid domain occupying the central cavity of a hexamer and the C-terminal region extending out, suggesting that connector 3 might be the linker protein of the lateral hexamer. The structure indicates that the lateral hexamer together with connector 3 stabilizes PBS\u2019s connection with PSII in the interconnected array of the PBS\u2013PSII supercomplex.\n\n## Discussion\n\n### Organization of PBS and PSIIs\n\nPBS is classified into different structural types, including hemidiscoidal (Chang et al., 2015), hemiellipsoidal (Arteni et al., 2008), block type (Zhang et al., 2017), bundle type (Guglielmi et al., 1981) and rod type (Chen et al., 2009). These results in diverse organizational structures between PBS and PSII. Hemidiscoidal PBSs of the Synechocystis strain PCC 6803 and the Anabana sp. strain PCC 7120 are associated with one PSII dimer (Chang et al., 2015; Rast et al., 2019). The rod-like AmPBS is composed of four hexamers and is adjacent to one PSII dimer (Chen et al., 2009; Niedzwiedzki et al., 2019). The hemiellipsoidal PBS connects with monomeric PSII at a ratio from 1:1 to 1:4 (Arteni et al., 2008; Cunningham et al., 1989; Lange et al., 1990; Ohki et al., 1987; Takahashi et al., 2009). Using in situ cryo-ET, our work reports the native PBS\u2013PSII supercomplex structure of red algae. The structure reveals a different ratio (1:6) of hemiellipsoidal PBS and PSII on the native thylakoid membrane (Figure 5A,B). Each PBS directly interacts with two PSII dimers and indirectly interacts with two PSII monomers from two peripheral bridging PSII dimers, forming the interconnected array of the PBS\u2013PSII supercomplex with the support of three unassigned connectors. With 14\u00b0 rotation and 30 \u00c5 shift of PSII dimer pair relative to PBS core, the terminal emitters, ApcD and \u03b1LCM, in the two symmetric a2a3 and a2'a3' hexamers of the core, connect with CP43 of PSII monomers A1 and B2, and CP47 in PSII monomers B1 and A2 (Figure 5). A similar geometry of the PBS\u2013PSII supercomplex was reported in cyanobacteria and red algae possessing hemidiscoidal PBS, suggesting that hemidiscoidal PBSs use the same strategy for energy transfer from PBS to PSII (Arteni et al., 2009; Arteni et al., 2008). This structure also enables the extra lateral hexamers in P. purpureum to associate with PSII monomers C1 and C'2 through connector 3 (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig5-v1.jpg)\n\n**Figure 5.:** (A) The front view of the schematic model of the PBS\u2013PSII supercomplex. For PBS, only core and Rod a are represented for clarity. In the PBS core, a and a' represent the two basal cylinders. Each cylinder consists of three APC trimers. b represents the top cylinder containing two APC trimers. (B) The side view of (A). Each PBS interacts with six PSII monomers: the two basal cylinders a and a' of the PBS core directly connect with PSII monomers A1, A2, B1, and B2. The connections are consolidated by connector 1 and connector 2; the lateral hexamers indirectly interact with the PSII monomers C1 and C'2 in the two peripheral PSII bridging dimers C and C' through connector 3. Two PsbO subunits from the adjacent PSII dimers bind with each other and may promote stabilization of the PBS\u2013PSII supercomplex. The PBS\u2013PSII supercomplexes regularly stack face-to-face into the interconnected arrays, forming the organized network on the thylakoid membrane. (C, D) The detailed connections between PBS and PSII. \u03b1LCM interacts with CP43 and CP47 of PSII monomer, which may provide a way to funnel light energy to the reaction center. ApcD connects with CP43, suggesting another energy transfer way. (D) Highlights the connections of \u03b1LCM - CP43A1, \u03b1LCM\u2013CP47B1, and ApcD\u2013CP43A1. CP43A1, CP43 of PSII dimer A1; CP47B1, CP47 of PSII dimer B1.\n\nIn this work, we focused on the PBS\u2013PSII structures in the ordered distribution regions, where both PBS and PSII are neatly arranged according to a strict stoichiometry of 1:6. Previous research conducting fraction freezing analysis (Lange et al., 1990) has found that the PBS\u2013PSII complexes on random distribution regions could have lower stoichiometry (between 1:1 and 1:4), which are represented as an PSII monomer, dimer, trimer, or double dimer. These observations show the possible diversity of PBS\u2013PSII organization on the thylakoids.\n\n### The connection between PBS and PSIIs\n\nExtensive studies have shown that \u03b1LCM and ApcD are the terminal emitters of the energy coupling between PBS and PSII (Zhao et al., 1992; Zlenko et al., 2019). In our structures, we detailed the connections of \u03b1LCM and ApcD with PSII, which contribute to the energy flows from PBS to PSII (Figure 3). ApcF was also reported to be involved in the energy transfer in cyanobacteria (Calzadilla et al., 2019; Chang et al., 2015). However, we could not find a solid connection between ApcF and PSII. Thus, it is very likely that ApcF only plays an auxiliary role for direct energy transfer to reaction centers in red algae.\n\nAdditionally, these in situ structures reveal that three extra connectors are associated with PSII by the PBS core, Rod a, and the lateral hexamer, respectively. While the current resolution limited additional detailed analysis of the connectors, we attempted to estimate the molecular weights of these connectors at around 30\u201380 kDa according to the size and shape (Figure 4\u2014figure supplement 2).\n\nWe found a class of PSII dimer C (PSII dimer C, C', and C\" in Figure 2A) that does not directly bind to PBS but is closer to the lateral hexamer. Since PSII dimer C can only absorb energy from the independent lateral hexamer instead of the whole PBS through connector 3, they could have fewer bilins feeding into them than the other PSIIs and could become saturated with light at higher intensities. If the PSII dimer C is more sensitive to light intensity than the others, it could be involved in the transition between the ordered distribution region and the random distribution region. The transient absorption spectroscopic measurements and time-resolved fluorescence spectroscopy at low temperatures (77k or 4k) could help confirm this hypothesis.\n\nThe energy transfer from PBS to PSII could follow multiple pathways (Figure 5). The two terminal emitters, \u03b1LCM and ApcD, funnel light energy to PSII by distinct structural connections. The chromophore of \u03b1LCM mediates energy transfer via interaction with CP43 and CP47. In contrast, the chromophore of ApcD is mediated by interactions with CP43. Since connector 2 connects with both the basal PC hexamer of Rod a and CP47 of PSII, we speculate that alternative routes of energy transfer bypassing the PBS core to PSII could exist: connector 2 and connector 3 could mediate the energy flow from the basal hexamer of Rod a to PSII and from lateral hexamer to PSII, respectively. Ueno et al. have reported light energy flows from CP43 to CP47 by energy transfer between the neighboring PSII monomers (Ueno et al., 2017). Our in situ structure reveals that \u03b1LCM transfers energy to CP43 as well as the neighboring CP47, may suggesting that \u03b1LCM provides the modulation activity of energy flow between CP43 and the neighboring CP47. However, it is currently unclear whether the connector proteins play a specific role in the energy transfer between PBS and PSII, and this topic requires further study.\n\n### The perforations and stairs of the thylakoids\n\nIn several tomograms, we observed the thylakoid membrane branching and fusion regions (Figure 6, Video 5). Within the limited thickness of the tomogram, we observed a small area of thylakoid membranes present branching and fusion events (Figure 6A). The two parallel thylakoid membranes are split into two branches. One branch approaches and fuses with another branch from the neighboring thylakoid membrane (Figure 6A,B). The 3D segmentation model shows that the branching and fusing membranes built \u2018stairs\u2019 between two neighboring thylakoid membranes (Figure 6C,D). On the top of the \u2018stairs\u2019 is the large perforation on the thylakoids (Figure 6E). These structures are very similar to the thylakoid membrane architecture in the cyanobacteria Prochlorococcus (Ting et al., 2007), Synechococcus sp. PCC 7942 and Microcoleus sp. reported by Nevo et al., 2007. They also observed perforations as well as branching and fusion of the membranes, which resulted in a highly connected network to allow water-soluble and lipid-soluble molecules to diffuse through the entire membrane network (Nevo et al., 2007). Thus, it is reasonable to deduce that the perforations and stairs of the thylakoid membrane in the red alga might play the same role, although it needs to be further investigated.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig6-v1.jpg)\n\n**Figure 6.:** (A) Typical tomogram slice. The white box indicates the tomogram region shown in Figure 1A; red box represents the membrane branching and fusing area. Scale bar, 100 nm. (B) Sequential slices back and forth through the representative tomogram in the red box area of (A), showing the membrane branches off one membrane and fuse with the neighboring membrane. The black arrow shows the fusion membrane; Red arrow shows the branching event. Scale bars, 50 nm. (C) 3D segmentation model of the red box area of (A) in the absence of the PBS\u2013PSII supercomplexes to show the 3D morphology of the thylakoid. The two-line arrow indicates the membrane stairs. The numbers label different layers of membrane. (D) The clip view of the 3D segmentation model. The clip position is showed in the right panel of (C). The arrows show the membrane stairs. (E) The membrane top view shows the perforation on the top of the membrane stair. Figure accompanied by Video 5.\n\n![Video 5.](https://cdn.elifesciences.org/articles/69635/elife-69635-video5.mp4.jpg)\n\n**Video 5.:** Related to Figure 6A\u2013E. Scale bar, 20 nm.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Porphyridium purpureum)</td>\n      <td>Porphyridium purpureum UTEX 2757</td>\n      <td>https://utex.org/products/utex-lb-2757</td>\n      <td>UTEX Culture Collection of Algae 2,757</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Porphyridium purpureum)</td>\n      <td>uniprot</td>\n      <td>https://www.uniprot.org/uniprot/</td>\n      <td>UP000324585</td>\n      <td>Proteome</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>https://bio3d.colorado.edu/SerialEM/</td>\n      <td>Version 3.1.8</td>\n      <td>Data collection</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>https://www.cgl.ucsf.edu/chimera/</td>\n      <td>Version 10.15</td>\n      <td>Visualization</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Relion</td>\n      <td>https://www3.mrc-lmb.cam.ac.uk/relion/</td>\n      <td>Version 2.1</td>\n      <td>Subtomogram averaging</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IMOD</td>\n      <td>https://bio3d.colorado.edu/imod/index.html</td>\n      <td>Version 4.9</td>\n      <td>Tomogram reconstruction</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TOMO3D</td>\n      <td>https://sites.google.com/site/3dem/imageprocessing/tomo3d</td>\n      <td>Version 2.0</td>\n      <td>Tomogram reconstruction</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>I3</td>\n      <td>https://www.electrontomography.org/</td>\n      <td>Version 0.9.3</td>\n      <td>Subtomogram averaging</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and cryo-EM sample preparation\n\nPorphyridium purpureum (from UTEX Culture Collection of Algae, UTEX 2757) cell was cultured in Bold 1NV:Erdshreiber (1:1) half-seawater medium, bubbled with sterilizing filtered air at 22\u00b0C, under a light\u2013dark periodic ratio of 16 hr:8 hr, with a white light flux of about 37 \u03bcmol photons\u2022m\u22122\u2022s\u22121. Then red algal cells were harvested at about 1.5\u20133.0 months by centrifuge at 6000 g at room temperature for 10 min under dark, and the pellet was washed and re-suspended with fresh half-seawater culture medium under dark.\n\nWe used holy-carbon copper grids (Quantifoil R1.2/1.3, 200 mesh) for the cryo-EM sample preparation. Cryo-EM grids were prepared with Leica EM GP (Leica Company) at 20\u00b0C and 100% humidity. To minimize the environmental affection (Ka\u0148a et al., 2014), we first prepared the plunge freezing equipment. Then red algal cells are harvested and immediately vitrified in the Leica EM GP chamber without light. A drop of 4 \u03bcL culture medium was added to the glow-discharged grids. After being blotted, the grids were plunged into liquid ethane and stored in liquid nitrogen. We prepared four to six grids for each session. Each grid took less than 1 min. Moreover, we covered a layer of foil paper on the cell volume to protect them from the light.\n\n### Cryo-FIB lamella preparation\n\nWith the modified workflow, as Schaffer et al., 2017 reported, cryo-EM grid was first transferred to Helios NanoLab G3 (FEI) system. A layer of Au was sputtered to the surface of cryo-EM sample to increase the conductivity. A layer of protective organometallic platinum was then deposited on the top of the sample with the GIS system. The working distance was 10 mm, and the GIS temperature was set to 46\u00b0C. Ga2+ ion beam was used to milling the cells at a 5\u00b0 stage tilt. The beam current for rough milling was 0.79 nA and gradually decreased to 40 pA. The lamella was finally polished to about 150 nm in thickness with the beam current of 24 pA.\n\n### Cryo-ET data collection\n\nThe cryo-ET data were collected with Titan Kiros Microscopy (Thermo Fischer Scientific) operated at a voltage of 300 kV and equipped with a Cs corrector, GIF quantum energy filter, and K2 Summit direct electron detector (Gatan Inc). All tilt series were recorded from 60\u00b0 to \u201360\u00b0 with SerialEM software (Mastronarde, 2005). The recording state was at a nominal magnification of 33,000\u00d7 in counting mode with a pixel size of 3.421 A\u030a\u2022pixel\u20131. Each stack was exposed for 2.4 s with an exposure time of 0.3 s per frame and recorded as a movie of 8 frames, resulting in the total dose rate of approximately 1.927 electrons per A\u030a2 for each stack. The tomographic tilt series were recorded from \u221250\u00b0 to +66\u00b0 with an increment of 2\u00b0 using the unidirectional strategy. On average, 6 frames were collected for each image resulting in a total dose between 100 e\u2212/\u00c52 and 110 e\u2212/\u00c52 per tilt series. GIF was set to a slit width of 20 eV. The defocus ranged from \u20132.8 \u03bcm to \u20135.5 \u03bcm. MotionCor2 program was used to correct the beam-induced motion (Zheng et al., 2017).\n\n### Cryo-ET reconstruction and sub-tomograms averaging\n\nFifty-one tilt series were aligned with the patch-tracking method in IMOD software (Kremer et al., 1996). The tomograms were reconstructed with TOMO3D scripts (Agulleiro and Fernandez, 2015). The tomograms reconstructed with simultaneous iterative reconstruction technique were used to manually particle-picking. To get high-resolution structures, we performed sub-tomogram averaging. Five thousand and thirty-seven sub-tomograms were firstly picked and aligned with i3 software to generate an initial model (Winkler et al., 2009). Tomograms reconstructed with weighted-back projection were used for further sub-tomogram averaging analysis. Then 75,310 manually picked sub-tomograms were extracted with RELION software (Bharat et al., 2015). CTF correction was estimated with CTFFIND4 (Rohou and Grigorieff, 2015) implemented in RELION. Dose damage compensation was performed with the script provided in the RELION tutorial. The first round of auto-refinement was performed with the binning four sub-tomograms. For the reconstruction of the double PBS\u2013PSII supercomplex, the coordinates of first-round auto-refinement were shifted and carried on another round of 3D classification with global search. The good classes were selected and performed auto-refinement with the binning two sub-tomograms. After refinement, a resolution map at 15.6 A\u030a was achieved. To improve the resolution, we reconstructed the PBS\u2013PSII supercomplex with the refined coordinates and Euler angles obtained in the first round of rough refinement. These sub-tomograms were performed 3D classification without alignment. The good classes were chosen to do another round of auto-refinement with local search at 1.8 degrees. Finally, the sub-tomograms of the PBS\u2013PSII supercomplex without binning were refined to 14.3 A\u030a and postprocessed to 13.2 A\u030a. During the auto-refinement, the datasets were automatically divided into two halves by RELION. The resolution was estimated using the gold-standard Fourier shell correlation with 0.143 criteria by ResMap (Scheres and Chen, 2012).\n\n### Atomic model fitting and analysis\n\nTo analyze the double PBS\u2013PSII and PBS\u2013PSII sub-tomogram averaging maps, the atomic model of PBS built with single particle analysis and crystal model of PSII (PDB code 4YUU) were docked into the sub-tomogram averaging maps with \u2018fit in map\u2019 command in UCSF Chimera (Pettersen et al., 2004). The cross-correlation coefficient results are listed in Supplementary file 1. The geometry of the PBS\u2013PSII supercomplex was measured with the \u2018distance\u2019 and \u2018angles\u2019 command in UCSF Chimera. To analyze the arrangement of the PBS\u2013PSII supercomplex in the thylakoid membrane, the double PBS\u2013PSII and PBS\u2013PSII sub-tomogram averaging maps were re-mapped back into the tomograms with the refined orientations and positions taking use of home-made scripts. The segmentation of the thylakoid membrane was performed with TomoSegMemTV (Martinez-Sanchez et al., 2014), Amira software (FEI Visualization Sciences Group), and UCSF ChimeraX (Pettersen et al., 2021). Segmentation of the subunits of the double PBS\u2013PSII and PBS\u2013PSII supercomplex was conducted in UCSF Chimera with the \u2018Segmentation panel\u2019. The densities of the subunits were then extracted by subtracting other parts with the subtract function. Surface rendering was further colored with the color zone panel.\n",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "bc217f0f-8327-4581-927a-231091284469",
+      "submission_id": "6e4d70b0-db9d-4413-a6bf-c9776e652a74",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew P Carter, MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69635.sa1](https://doi.org/10.7554/eLife.69635.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nInteractions between reaction centres and phycobilisome light-harvesting complexes is crucial for photosynthesis in cyanobacteria and red algae, which between them account for a major fraction of photosynthesis on earth. This work uses in situ cryo-electron tomography to understand those interactions which were previously not amenable to study because they are too labile to survive isolation of the complexes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"In situcryo-ET structure of phycobilisome-photosystem II supercomplex from red alga\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Conrad W Mullineaux (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The reviewers were overall excited by the insights your in-situ cryo-ET analysis gave into the organization of the PBS/PSII complex. However in some places we felt the descriptions of atom level interactions were not justified by the data. In other regions the descriptions are speculative but worth including.\n\nPlease remove the following discussions:\n\n\u2013 Page 4 lines 35-36. The claim of a 45 deg rotation is unsupported by the data and should be removed.\n\n\u2013 Page 7, lines 1-11. This section is too speculative and conclusions are drawn regarding missing residue of a loop which are really not supported by the data.\n\nPlease modify other parts of the manuscript to make it clear that the descriptions are more speculative:\n\n\u2013 Page 7, lines 18-20.\n\n\u2013 Page 8, lines 5-13.\n\n\u2013 Page 8, lines 20-24.\n\n2) The methods section needs more detail to allow readers to understand how the structure were solved. Please see the comments by reviewer 2 below.\n\nReviewer #1:\n\nThis manuscript reports the in-situ structure of the red algal phycobilisome while still bound to the thylakoid membrane. It is a follow-up to the same group's impressive cryo EM structure of the isolated phycobilisome from the same organism (Ma et al. Nature 2020). While the resolution of the current structure is significantly lower than that of the isolated complex, (13+ A vs 2.8 A), it has the advantage of revealing the organization in the membrane, the connections to Photosystem II and additional details of the structure that may be too labile to survive the isolation of the complex.\n\nOverall, I think this is an impressive study. Of particular note is the discovery of the Type C PSII, which I don't think has been previously reported. The emphasis on the excitation energy coupling pathways to PSII is also important new information, although the relatively low resolution of the current structure makes that analysis less certain.\n\nI suggest that the authors emphasize in clearer terms that this is an in-situ structure that is complementary to the structure of the isolated complex and reveals elements of the in vivo organization that can never be obtained through structures of the isolated complex, no matter how high the resolution. I think some readers may not appreciate that point sufficiently, and the current manuscript does not emphasize this critical point.\n\nReviewer #2:\n\nLi et al., report the in situ structure of the phycobilisome (PBS) \u2013 photosystem II (PSII) complex in P. purpureum cells. They prepare cells by cryo-FIB/SEM, and collect cryo-tomograms around thylakoid membrane regions that are decorated by PBS/PSII regular arrays. They then perform subtomogram averaging of PBS pairs and single complexes to obtain structures at resolutions ranging between 13 and 16 A. These allow fitting of available atomic models and analysis of the molecular architecture and interfaces that characterise the complex.\n\nThe authors are able to confirm the overall architecture of PBS which was obtained from previous studies, but also reveal a number of novel features, including unexpected stoichiometry of PBS:PSII, and some uncharacterised interfaces. The results are organised into three main sections:\n\n\u2013 Overall structure of the PBS-PSII supercomplex\n\nHere the authors describe how each unit is composed of a PBS and three PSII dimers, two of which contact PBS directly, and two seem connected through some novel densities (here called 'lateral densities'), which are assigned to extra PBS hexamer. This was not reported before and it might be an interface that is stable only in an in situ context. This section is strong and the conclusions are well justified.\n\n\u2013 Interaction pattern between PBS and PSII\n\nHere the authors utilise the fitted atomic models to analyse interfaces between PBS and the PSII dimers at the molecular level. While the resolution of their subtomogram averaging map is sufficient for rigid body fitting of the relevant structures, I find the analysis here too speculative, particularly when it comes to analysis of subdomains (i.e. the PB-loop and the 33 missing residues, and the 117deg rotation of CP43 N-terminus).\n\nThe claim of two pathways for electron transfer and their description is unsupported by the data.\n\n\u2013 Supplementary interactions intermediated by three connector proteins\n\nHere the authors identify regions of density that cannot be explained with the fitted atomic models, and cautiously assign them to connecting proteins. They then analyse the positions of these connecting proteins and describe the interfaces they bridge. While the discovery of these new densities and the overall description of their contacts is convincing, I feel that again the authors draw conclusions at a level of molecular detail that is too speculative given the resolution.\n\nOverall this is a novel and solid paper with regards to the overall description of PBS/PSII in situ, its stoichiometry and general architecture, which should be of interest to the fields of electron transport and in situ cryo-tomography. However some of the claims are not justified by the data, in particular those that analyse interactions in molecular detail.\n\nComments and recommendations below in no particular order\n\n\u2013 While overall the paper is well written and logically explained, there are several typographical and grammatical errors. Moreover, certain sections are unclear and rephrasing could improve legibility significantly. For example: Page 4, Lines 19-23, Page 5, Lines 27-30, Page 6, Lines 22-32, Page 7 Line 16.\n\n\u2013 It is not clear from the methods if the maps were post-processed in any way, and low-pass filtered at the stated resolution. They should be filtered so as to remove the noisy features visible in the figures.\n\n\u2013 Red boxes in Figure supplement 1B,C: it would be useful to see what is included also along the z direction.\n\n\u2013 Page 4 lines 35-36. The claim of a 45 deg rotation is unsupported by the data and should be removed.\n\n\u2013 I found the nomenclature in Figure 2A a bit confusing, would it not be easier to call subunits A1,A2, B1,B2,C1,C2, A'1,A'2,[\u2026],C'1,C'2?\n\n\u2013 As far as I understand, Figurer 2 shows two different maps in panel A and B. This should be clearly stated in the legend.\n\n\u2013 For general readers some introduction to PBS architecture is required: what are Rod a, Rod b, etc?\n\n\u2013 Page 6, lines 28-32. It is unclear whether the authors claim or not that the extra hexamer is a PE hexamer, as there are some contradictory sentences.\n\n\u2013 There are a series of unsupported claims:\n\n\u2013 Page 7, lines 1-11. This section is too speculative and conclusions are drawn regarding missing residue of a loop which are really not supported by the data.\n\n\u2013 Page 7, lines 18-20. This sentence is not supported by the data. There is also no description in the methods of how the 117 deg angle was derived (flexible fitting?).\n\n\u2013 Page 8, lines 5-13. As above\n\n\u2013 Page 8, lines 20-24. As above\n\nI suggest the authors limit themselves to a general description of which domain interact with each other rather than going into sub-domain or even residue-level considerations. There is value in their description of the architecture and interfaces, if only it would be made in less detailed terms.\n\n\u2013 Page 7, lines 24-28. The basis for the claim are unclear.\n\n\u2013 Re: connector proteins, how were they identified? By difference mapping with the fitted atomic model? This needs to be stated clearly.\n\n\u2013 Many details are missing in the methods (at least those parts I can understand: tomogram collection and subtomogram abveraging). What was the total dose across the tilt series (or tilt increment)? There is no reference at all to ctf: was it corrected (I assume so within relion)? How was it estimated? Was dose damage compensation performed? Was the dataset divided in two halves according to the gold standard? In consequence, are the FSC reported gold standard FSCs?\n\n\u2013 The authors need to add the FSC (and possibly local resolution estimations) as supplementary figures.\n\nReviewer #3:\n\nThe authors were able to convincingly identify a phycobilisome-photosystem II complex in their cryo-electron tomograms of chloroplasts from a red alga, and to obtain high-resolution structural models by sub-tomogram averaging and fitting parts of known structures to the tomographic data. A crucial feature of work is that it reports structures in situ, in intact flash-frozen sections. That's important for 2 reasons. Firstly, the in situ data reveals the larger-scale organisation of the complexes in the membrane, which is crucially important for photosynthetic performance. Secondly, the association between phycobilisomes and reaction centres appears rather plastic and is highly unstable (at least in vitro), raising the possibility of significant artefacts in any preparation of isolated complexes. So, in situ information of this sort is really needed to provide convincing answers. I am not well qualified to judge the technical aspects of the tomographic analysis, but it all looks sound as far as I am able to judge. The manuscript is very well-written and well-presented, and there is an excellent, balanced discussion of the findings.\n",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9b630e4f-17e1-4c20-8585-ff7d7b2764ab",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C1",
+      "claim": "Phycobilisome (PBS) is the main light-harvesting antenna in cyanobacteria and red algae.",
+      "claim_type": "EXPLICIT",
+      "source": "Phycobilisome (PBS) is the main light-harvesting antenna in cyanobacteria and red algae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the function of PBS in these organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "c2dc54fb-d517-435c-8240-b19dbcb98803",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C2",
+      "claim": "The in situ structure of the PBS\u2013PSII supercomplex from Porphyridium purpureum UTEX 2757 was determined using cryo-electron tomography and subtomogram averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the in situ structure of the PBS\u2013PSII supercomplex from Porphyridium purpureum UTEX 2757 using cryo-electron tomography and subtomogram averaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach used to determine the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "cbbd4c38-97ed-4b72-83fd-81abe62d071f",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C3",
+      "claim": "Each PBS interacts with six PSII monomers in the PBS\u2013PSII supercomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PBS\u2013PSII supercomplex, each PBS interacts with six PSII monomers, of which four directly bind to the PBS, and two bind indirectly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "d7d04bc6-212e-4138-926b-65bf114a0c5f",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C4",
+      "claim": "Four PSII monomers directly bind to the PBS and two bind indirectly in the PBS\u2013PSII supercomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PBS\u2013PSII supercomplex, each PBS interacts with six PSII monomers, of which four directly bind to the PBS, and two bind indirectly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the binding pattern observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "1c28117c-9a38-4add-928e-0ed887f75d6d",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C5",
+      "claim": "Three 'connector' proteins contribute to the connections between PBS and PSIIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional three 'connector' proteins also contribute to the connections between PBS and PSIIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies three unassigned connector proteins in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "97ee1e35-88ef-479b-81d5-18bf9166aae9",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C6",
+      "claim": "Two PsbO subunits from adjacent PSII dimers bind with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Two PsbO subunits from adjacent PSII dimers bind with each other, which may promote stabilization of the PBS\u2013PSII supercomplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "d698826f-e8f8-4af8-8558-9f24e111394e",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C7",
+      "claim": "The binding of two PsbO subunits from adjacent PSII dimers may promote stabilization of the PBS\u2013PSII supercomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Two PsbO subunits from adjacent PSII dimers bind with each other, which may promote stabilization of the PBS\u2013PSII supercomplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "0c3b12f7-62b8-4f4e-9f0b-8c8bd19ce636",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C8",
+      "claim": "\u03b1LCM connects with CP43 of PSII monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the interaction interface between PBS and PSII, we reveal that \u03b1LCM and ApcD connect with CP43 of PSII monomer and that \u03b1LCM also interacts with CP47' of the neighboring PSII monomer, suggesting the multiple light energy delivery pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from analysis of the interaction interfaces in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "446f9c53-5fad-4263-92f4-54b3c92fb3f8",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C9",
+      "claim": "ApcD connects with CP43 of PSII monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the interaction interface between PBS and PSII, we reveal that \u03b1LCM and ApcD connect with CP43 of PSII monomer and that \u03b1LCM also interacts with CP47' of the neighboring PSII monomer, suggesting the multiple light energy delivery pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from analysis of the interaction interfaces in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "75d56059-7493-4d46-924f-b3ba98ffcdf0",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C10",
+      "claim": "\u03b1LCM interacts with CP47' of the neighboring PSII monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the interaction interface between PBS and PSII, we reveal that \u03b1LCM and ApcD connect with CP43 of PSII monomer and that \u03b1LCM also interacts with CP47' of the neighboring PSII monomer, suggesting the multiple light energy delivery pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from analysis of the interaction interfaces in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "09bc45a1-6943-49bf-bbb5-058aff90e425",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C11",
+      "claim": "The connections between \u03b1LCM, ApcD, and PSII subunits suggest multiple light energy delivery pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the interaction interface between PBS and PSII, we reveal that \u03b1LCM and ApcD connect with CP43 of PSII monomer and that \u03b1LCM also interacts with CP47' of the neighboring PSII monomer, suggesting the multiple light energy delivery pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed structural connections.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e9290235-3874-4f6f-854b-c1f098cf5c06",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C12",
+      "claim": "Red algae living in deep water can efficiently use dim and green light that cannot be absorbed by plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Red algae living in deep water can efficiently use dim and green light that cannot be absorbed by plants (Tschudy, 1934).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "07a58a8b-de46-4215-bab2-a8aff2c803d5",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C13",
+      "claim": "PBS is located on the stromal surface of the thylakoid membrane and captures light energy.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary light-harvesting antenna is the phycobilisome (PBS), which is located on the stromal surface of the thylakoid membrane and captures light energy (Gantt and Conti, 1965; Gantt and Conti, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "ce5b7d55-fb12-40d7-b319-bcf12bb707e8",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C14",
+      "claim": "PBS mainly transfers the light energy to PSII, leading to water splitting.",
+      "claim_type": "EXPLICIT",
+      "source": "PBS mainly transfers the light energy to PSII, leading to water splitting (Biggins and Bruce, 1989; Ley and Butler, 1977a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "65c8cf1e-567f-4adb-abc4-51fca8e2785e",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C15",
+      "claim": "PBS could also directly couple with PSI.",
+      "claim_type": "EXPLICIT",
+      "source": "PBS could also directly couple with PSI (Mullineaux, 1992; Su et al., 1992; Kondo et al., 2007; Ueno et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "41f0bb04-3a49-4630-8605-560a44ef90fa",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C16",
+      "claim": "PBSs are composed of chromophore-bearing phycobiliproteins (PBPs) and linker proteins, which further assemble into central core and peripheral rods.",
+      "claim_type": "EXPLICIT",
+      "source": "PBSs are composed of chromophore-bearing phycobiliproteins (PBPs) and linker proteins, which further assemble into central core and peripheral rods (Gantt et al., 1976; Zilinskas and Greenwald, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8051665f-b1b4-4859-8d30-9648debc410d",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C17",
+      "claim": "The cryo-EM structure of PBS from red algae has been determined at resolutions of 3.5 \u00c5 and 2.82 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the cryo-electron microscope (cryo-EM) structures of PBS from red algae at resolutions of 3.5 \u00c5 (Zhang et al., 2017) and 2.82 \u00c5 (Ma et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "d83b0762-017d-453f-a289-62a450d40d51",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C18",
+      "claim": "The PBS in Porphyridium purpureum consists of a tricylindrical PBS core, 14 rods, 8 individual extra PE hexamers, and 24 individual extra PE \u03b1 or \u03b2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structure of PBS in red alga Porphyridium purpureum (Ma et al., 2020) shows that the PBS consists of a tricylindrical PBS core, 14 rods (Rod a\u2013Rod g, Rod a'\u2013Rod g'), 8 individual extra PE (\u03b1\u03b2)6 hexamers (Ha\u2013Hd, Ha'\u2013Hd'), and 24 individual extra PE \u03b1 or \u03b2 subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a previous cryo-EM structure cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "aca96e9d-2ffa-439d-931a-77e3fe789cab",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C19",
+      "claim": "The PBS core contains one top cylinder B composed of two allophycocyanin (APC) (\u03b1\u03b2)3 trimers, and two bottom cylinders each assembled by three APC trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The core contains one top cylinder B, composed of two allophycocyanin (APC) (\u03b1\u03b2)3 trimers, and two bottom cylinders (A and A'), each of which is assembled by three APC trimers (A1\u2013A3, A2 and A3 form APC hexamer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural composition of the PBS core based on previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "4cfc655a-eef0-4a12-a9a2-20bcac6d6e35",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C20",
+      "claim": "The rods consist of phycoerythrin (PE) and phycocyanin (PC) hexamers or only PE hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "The rods consist of phycoerythrin (PE) and phycocyanin (PC) hexamers or only PE hexamers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of PBS rods based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "2bac660a-ddd7-4fd2-9b54-54da82217595",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C21",
+      "claim": "Energy absorbed by Rod transfers unidirectionally from the distal PE to the basal PC, and then funnels to APC in the core, and eventually to the two terminal emitters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the energy absorbed by Rod transfers unidirectionally from the distal PE to the basal PC, and then funnels to APC in the core, and eventually to the two terminal emitters, including chromophores in the core\u2013membrane linker protein (LCM, also called ApcE) (Capuano et al., 1991; Lundell et al., 1981; Tang et al., 2015) and allophycocyanin D (ApcD) (Glazer and Bryant, 1975; Peng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the energy transfer pathway supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "b34f4c32-fb59-4328-8e28-ad147e153757",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C22",
+      "claim": "The two terminal emitters in PBS include chromophores in the core\u2013membrane linker protein (LCM, also called ApcE) and allophycocyanin D (ApcD).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the energy absorbed by Rod transfers unidirectionally from the distal PE to the basal PC, and then funnels to APC in the core, and eventually to the two terminal emitters, including chromophores in the core\u2013membrane linker protein (LCM, also called ApcE) (Capuano et al., 1991; Lundell et al., 1981; Tang et al., 2015) and allophycocyanin D (ApcD) (Glazer and Bryant, 1975; Peng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "71a81435-c8b0-44d8-b5d6-7604fd91ecf0",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C23",
+      "claim": "PSII is a multi-pigment transmembrane protein complex involved in converting light energy into electrochemical potential energy.",
+      "claim_type": "EXPLICIT",
+      "source": "PSII is a multi-pigment transmembrane protein complex involved in converting light energy into electrochemical potential energy (Adachi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "97444d33-74a3-439a-ac1e-adcdc81fe7f6",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C24",
+      "claim": "X-ray crystal structures of PSII from red alga Cyanidium caldarium, cyanobacterium Thermosynechococcus elongatus, and cryo-EM structures from various organisms have been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray crystal structures of PSII from red alga Cyanidium caldarium (Ago et al., 2016), cyanobacterium Thermosynechococcus elongatus (Nakajima et al., 2018), and the cryo-EM structure of PSII from green alga Chlamydomonas reihardtii (Sheng et al., 2019), the marine diatom Chaetoceros gracilis (Pi et al., 2019), and the higher plants Arabidopsis thaliana (van Bezouwen et al., 2017), Spinacia oleracea (Wei et al., 2016), and Pisum sativum (Su et al., 2017) have revealed the structural basis of energy transfer, electron transfer, and photoprotection within the photosystem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e24fb100-82c3-43ad-b5b3-e384066b8c17",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C25",
+      "claim": "The main subunits of PSII include the reaction center D1, D2 protein, and chlorophyll-a binding proteins, CP43 and CP47.",
+      "claim_type": "EXPLICIT",
+      "source": "The main subunits of PSII include the reaction center D1, D2 protein, and chlorophyll-a binding proteins, CP43 and CP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PSII structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "6e541171-a370-48c4-9970-6f5e01ec898e",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C26",
+      "claim": "Both CP43 and CP47 subunits have been reported to mediate the energy transfer from PBS to the reaction center.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CP43 and CP47 subunits have been reported to mediate the energy transfer from PBS to the reaction center (Ueno et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8853c73a-c7c4-4185-9ae9-8bda30872ceb",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C27",
+      "claim": "PBSs in red algae are tightly arranged in ordered rows on the thylakoid in most regions and randomly packed in some areas.",
+      "claim_type": "EXPLICIT",
+      "source": "PBSs in red algae are tightly arranged in ordered rows on the thylakoid in most regions and randomly packed in some areas (Arteni et al., 2008; Lange et al., 1990; Liu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "b746e0c1-ca15-4e23-997a-5e06534c68ed",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C28",
+      "claim": "PBS arrangement in the two regions is dynamically regulated, varying with the cell's age, the supply of nutrients, and available light.",
+      "claim_type": "EXPLICIT",
+      "source": "PBS arrangement in the two regions is dynamically regulated, varying with the cell's age, the supply of nutrients, and available light (Arteni et al., 2008; Liu et al., 2008; Sagert and Schubert, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "10f7ac14-4835-4ef8-a5d1-62e79130e11b",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C29",
+      "claim": "The stoichiometric ratio of PBS/PSII in red algae and cyanobacteria remains controversial, ranging from 1:1 to 1:4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the stoichiometric ratio of PBS/PSII in red algae and cyanobacteria remains controversial, ranging from 1:1 to 1:4 (Arteni et al., 2008; Cunningham et al., 1989; Ohki et al., 1987; Takahashi et al., 2009), which likely reflects different growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies showing different ratios.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "371014db-98cd-4c7b-8b0a-bafc5e8c04f5",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C30",
+      "claim": "Different approaches showed that PBS connects with PSII through ApcD, \u03b1LCM, and ApcF.",
+      "claim_type": "EXPLICIT",
+      "source": "Different approaches showed that PBS connects with PSII through ApcD, \u03b1LCM (the \u03b1 domain of LCM), and ApcF (Zhao et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "75b44818-c342-4a99-a8e0-434caf65dcaa",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C31",
+      "claim": "ApcD and \u03b1LCM are well known as terminal emitters for mediating the transfer of energy from PBS to PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, ApcD and \u03b1LCM are well known as terminal emitters for mediating the transfer of energy from PBS to PSII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "83d54a9b-d59c-4923-8436-f1760d3bda35",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C32",
+      "claim": "The negative staining structure of the purified PBS\u2013PSII supercomplex in Anabaena sp. strain PCC 7120 proposed that \u03b1LCM and ApcF of PBS play important roles in mediating PBS interaction with PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative staining structure of the purified PBS\u2013PSII supercomplex in the Anabaena sp. strain PCC 7120 proposed that \u03b1LCM and ApcF of PBS play important roles in mediating PBS interaction with PSII (Chang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "9f71b4eb-b9aa-472f-bd90-1ca14586243c",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C33",
+      "claim": "The cross-linking structure of the purified PBS\u2013PSII\u2013PSI megacomplex in Synechocystis PCC 6803 identified five interlinks associated with \u03b1LCM and PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-linking structure of the purified PBS\u2013PSII\u2013PSI megacomplex in the cyanobacteria Synechocystis PCC 6803 identified five interlinks associated with \u03b1LCM and PSII (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous cross-linking study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "1719e1a7-f39e-4f60-9262-9fc6d5c29717",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C34",
+      "claim": "In situ cryo-ET in combination with cryo-focused ion beam (cryo-FIB) milling is currently a powerful approach for directly dissecting macromolecular structures in the unperturbed cellular environment at molecular resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ cryo-ET in combination with cryo-focused ion beam (cryo-FIB) milling is currently a powerful approach for directly dissecting macromolecular structures in the unperturbed cellular environment at molecular resolution (Wagner et al., 2020; Watanabe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent methodological papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "eecc038d-71a7-4275-b09e-b86e4d34e1b5",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C35",
+      "claim": "The native PBS\u2013PSII supercomplex was identified at a resolution of 14.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by using this approach, we identified the native PBS\u2013PSII supercomplex and the double PBS\u2013PSII supercomplex containing two adjacent PBS\u2013PSII supercomplexes at resolutions of 14.3 \u00c5 and 15.6 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the resolution achieved in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "065d5b49-f293-48f6-9545-3386a422be91",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C36",
+      "claim": "The double PBS\u2013PSII supercomplex containing two adjacent PBS\u2013PSII supercomplexes was identified at a resolution of 15.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by using this approach, we identified the native PBS\u2013PSII supercomplex and the double PBS\u2013PSII supercomplex containing two adjacent PBS\u2013PSII supercomplexes at resolutions of 14.3 \u00c5 and 15.6 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the resolution achieved in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5a290e81-683b-4889-b427-ab2b2aa8fafa",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C37",
+      "claim": "P. purpureum was cultured under low-light conditions to mimic its natural habitat and to increase the population of regularly distributed PBS\u2013PSII supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The red alga, P. purpureum, was cultured under low-light conditions to mimic its natural habitat (Cunningham et al., 1989) and to increase the population of regularly distributed PBS\u2013PSII supercomplexes (Liu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "29fc0e1f-0f3d-47e4-9e6d-0a8ade2f0b2b",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C38",
+      "claim": "Cells were harvested in the exponential phase of growth and were immediately vitrified on cryo-EM grids to minimize environmental affection.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were harvested in the exponential phase of growth and were immediately vitrified on cryo-EM grids to minimize environmental affection (Ka\u0148a et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5810e008-55ad-478c-84f5-f1210a29f4d5",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C39",
+      "claim": "Most PBS\u2013PSII supercomplexes are packed in an orderly fashion on the thylakoid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The tomogram slice shows that most PBS\u2013PSII supercomplexes are packed in an orderly fashion on the thylakoid membranes (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the tomogram data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "08f73791-3f30-41de-bee5-76c12196aab2",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C40",
+      "claim": "PBSs are sandwiched between parallel thylakoid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the conventional transmission electron microscope ultrastructures of other red algae (Gantt and Conti, 1965; Gantt et al., 1968; Tsekos et al., 1996; Wanner and Kost, 1980), PBSs are sandwiched between parallel thylakoid membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is consistent with previous electron microscopy studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "263858a2-f7e2-49fd-8614-f269f4a5fdc9",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C41",
+      "claim": "Adjacent PBSs were attached to the upper and lower thylakoid membrane in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cross-section view, adjacent PBSs were attached to the upper and lower thylakoid membrane in opposite directions (Figure 1A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the tomogram data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "99e4b040-4c23-49b3-8100-10c363edb0b0",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C42",
+      "claim": "Opposite PBSs are stacked into linear rows.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two orthogonal views, opposite PBSs are stacked into linear rows respectively (Figure 1C,E, Figure 1\u2014figure supplement 1B,C, Video 1, Video 2, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the tomogram data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "3a6113f5-943f-4118-9e34-76b50f126bee",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C43",
+      "claim": "PBS rows are arranged in parallel, forming a large two-dimensional pattern covering the thylakoid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These PBS rows are arranged in parallel, forming a large two-dimensional pattern covering the thylakoid membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the tomogram data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "ebaf08d3-95fe-4278-bc60-2e39d7c289eb",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C44",
+      "claim": "Densities evident at the bottom of PBSs are embedded within the thylakoid membrane and represent PSIIs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cross-section view, densities are evident at the bottom of PBSs, which are embedded within the thylakoid membrane. Protrusions are visible on the luminal side (Figure 1A). The features of these densities are consistent with the location and morphology of PSIIs (Ago et al., 2016; Chang et al., 2015; Lange et al., 1990). From this, we can infer that these represent PSIIs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the morphology and location of densities in the tomogram.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5b7ba21d-b06c-4d61-889c-8e82f9a9ff72",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C45",
+      "claim": "The 2.82 \u00c5 single-particle PBS structure was well-fitted into the sub-tomogram map.",
+      "claim_type": "EXPLICIT",
+      "source": "The recently determined 2.82 \u00c5 single-particle PBS (PDB code 6 KGX) (Ma et al., 2020) was well-fitted into our sub-tomogram map (Supplementary file 1), except for the individual extra PE \u03b2 subunit between the Rod e and Rod d' (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the fitting of a previous structure into the current data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "ae3ebb99-0e5c-4e3f-b41f-fa7f5259fda6",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C46",
+      "claim": "The individual extra PE \u03b2 subunit between Rod e and Rod d' did not fit well into the sub-tomogram map.",
+      "claim_type": "EXPLICIT",
+      "source": "The recently determined 2.82 \u00c5 single-particle PBS (PDB code 6 KGX) (Ma et al., 2020) was well-fitted into our sub-tomogram map (Supplementary file 1), except for the individual extra PE \u03b2 subunit between the Rod e and Rod d' (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a discrepancy between the previous structure and the current data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "041f47bb-a59e-4c40-9cea-f5ed2fc17ac4",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C47",
+      "claim": "The map's slice view shows a similar PSII dimer array structure resembling that of the red algae Porphyridium cruentum.",
+      "claim_type": "EXPLICIT",
+      "source": "The map's slice view shows a similar PSII dimer array structure resembling that of the red algae Porphyridium cruentum (Lange et al., 1990; Figure 2\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "987da1af-c8f6-4d18-ad74-a4d108d7185b",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C48",
+      "claim": "PSII from the red algae C. caldarium is evolutionarily most similar to P. purpureum.",
+      "claim_type": "EXPLICIT",
+      "source": "PSII from the red algae C. caldarium (PDB code 4YUU) (Ago et al., 2016) is, evolutionarily, most similar to P. purpureum, and almost all the subunits show high homogeneity (ranging from 35% to 100%) with that of P. purpureum (Figure 2\u2014figure supplement 4A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis and sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "068ec2d0-65e9-49cc-b1eb-f7d47b32bd5a",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C49",
+      "claim": "Almost all the subunits of PSII from C. caldarium show high homogeneity (ranging from 35% to 100%) with that of P. purpureum.",
+      "claim_type": "EXPLICIT",
+      "source": "PSII from the red algae C. caldarium (PDB code 4YUU) (Ago et al., 2016) is, evolutionarily, most similar to P. purpureum, and almost all the subunits show high homogeneity (ranging from 35% to 100%) with that of P. purpureum (Figure 2\u2014figure supplement 4A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "79ac4b74-ff19-4188-a4e9-885a6e42f693",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C50",
+      "claim": "The X-ray model of PSII from C. caldarium shows a high cross-correlation coefficient (all above 80%) with the sub-tomogram map.",
+      "claim_type": "EXPLICIT",
+      "source": "We then docked the X-ray model of PSII from C. caldarium into the sub-tomogram map, which shows a high cross-correlation coefficient (all above 80%) between the model and sub-tomogram map (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality of the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "9cd4e5a8-a958-445e-bb67-4fa86a2e29fd",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C51",
+      "claim": "In the sub-tomogram map, two PBSs interact with a linear array of PSII dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sub-tomogram map, two PBSs (labeled as PBS1 and PBS2) interact with a linear array of PSII dimers (labeled as A, B, C, A', B', C', C\", Figure 2A (left panel), Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the sub-tomogram map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "fcaf5ccd-4226-4dff-bc97-3d66780c7810",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C52",
+      "claim": "The PBS/PSII ratio is 1:6 in the linear array.",
+      "claim_type": "EXPLICIT",
+      "source": "In this array, the PBS/PSII ratio is 1:6, that is, one PBS with six associated monomeric PSIIs periodically repeated along with the linear array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "eb5ec259-a649-4349-899e-a966c84f90cc",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C53",
+      "claim": "Each PBS is directly anchored to a pair of PSIIs dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the double PBS\u2013PSII map, each PBS is directly anchored to a pair of PSIIs dimers, i.e., PBS1 on the A\u2013B pair and PBS2 on the A'\u2013B' pair (Figure 2A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the sub-tomogram map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "3b98933f-6efb-4129-885a-801ce32b45c4",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C54",
+      "claim": "The C' dimer connects the A\u2013B pair to the A'\u2013B' pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The C' dimer connects the A\u2013B pair to the A'\u2013B' pair, while the two PSIIs in the C' dimer respectively interact with the lateral disc-like densities on both sides of PBS, which have features of PBS hexamer (discussed later), and thus indirectly attach to PBS1 and PBS2 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the sub-tomogram map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e9f2ef16-d154-49d3-928b-057beb003f17",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C55",
+      "claim": "The two PSIIs in the C' dimer respectively interact with the lateral disc-like densities on both sides of PBS and thus indirectly attach to PBS1 and PBS2.",
+      "claim_type": "EXPLICIT",
+      "source": "The C' dimer connects the A\u2013B pair to the A'\u2013B' pair, while the two PSIIs in the C' dimer respectively interact with the lateral disc-like densities on both sides of PBS, which have features of PBS hexamer (discussed later), and thus indirectly attach to PBS1 and PBS2 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the sub-tomogram map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e2f31cb8-0d85-494b-a320-94129b208ea1",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C56",
+      "claim": "The distance between the PSII dimers A and B is approximately 12.4 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance between the PSII dimers A and B is approximately 12.4 nm, and the face planes of the two PSII dimers make a lateral angle of approximately 14\u00b0 with the plane of the PBS central core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "4ee13f9f-47d7-40ae-9caa-024d44593a12",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C57",
+      "claim": "The face planes of the two PSII dimers make a lateral angle of approximately 14\u00b0 with the plane of the PBS central core.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance between the PSII dimers A and B is approximately 12.4 nm, and the face planes of the two PSII dimers make a lateral angle of approximately 14\u00b0 with the plane of the PBS central core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5591c4ac-4b5d-4871-a1a2-03d48483c7fd",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C58",
+      "claim": "The centers of the two PSII double dimers shift approximately 3 nm along the plane of the PBS central core.",
+      "claim_type": "EXPLICIT",
+      "source": "The centers of the two PSII double dimers shift approximately 3 nm along the plane of the PBS central core, which makes the twofold symmetry axes of PBS and 6 PSIIs coincide (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "97d365ee-43a0-48de-8ea6-f12ced28bc33",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C59",
+      "claim": "The twofold symmetry axes of PBS and 6 PSIIs coincide due to the 3 nm shift of PSII dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The centers of the two PSII double dimers shift approximately 3 nm along the plane of the PBS central core, which makes the twofold symmetry axes of PBS and 6 PSIIs coincide (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "49a7f4e2-474c-4ba0-bcae-73bf578e2cbc",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C60",
+      "claim": "PSII dimers A and B bind with each other through a rigid density contributed by two adjacent PsbO subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved PBS\u2013PSII structure enables us to confirm that PSII dimers A and B bind with each other through a rigid density. By analyzing the fitting results, we suppose the density is most likely contributed by the two adjacent PsbO subunits: one is from the PSII monomer 1 of the PSII dimer A and the other from the PSII monomer 4 of the PSII dimer B (Figure 2, Figure 2\u2014figure supplement 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the density in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "20ee2779-9618-47af-a69e-ba4d96b6d91c",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C61",
+      "claim": "The current resolution limits the ability to exclude that other factors may contribute to the density between PSII dimers A and B.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we are limited by the current resolution and could not exclude that other factors may contribute to the density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "be76c982-c7b5-4178-bebc-11918dd4a868",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C62",
+      "claim": "PsbO protein is found in PSII of all oxygenic organisms ranging from cyanobacteria and red algae to higher plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The PsbO protein is found in PSII of all oxygenic organisms ranging from cyanobacteria and red algae to higher plants and serves as the manganese-stabilizing protein directly involved in the stability of photosynthetic water-oxidizing complex (Ifuku and Noguchi, 2016; Popelkova and Yocum, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "03346ca6-ac8b-42fa-a94c-ff09bee9352c",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C63",
+      "claim": "PsbO serves as the manganese-stabilizing protein directly involved in the stability of photosynthetic water-oxidizing complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The PsbO protein is found in PSII of all oxygenic organisms ranging from cyanobacteria and red algae to higher plants and serves as the manganese-stabilizing protein directly involved in the stability of photosynthetic water-oxidizing complex (Ifuku and Noguchi, 2016; Popelkova and Yocum, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "2cb2bb06-7b4d-47e8-aca7-1a1de4c744a1",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C64",
+      "claim": "PsbO could play an additional role in stabilizing adjacent PSII dimers in PSII dimer rows.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that PsbO could play an additional role in stabilizing adjacent PSII dimers in PSII dimer rows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "d603b53b-2509-4d05-bd3e-9c1818aa41d7",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C65",
+      "claim": "The resolution of the PBS\u2013PSII supercomplex was improved to 13.2 \u00c5 after post-processing from the 14.3 \u00c5 resolution map.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze the lateral densities on both sides of PBS connecting PBS to PSII dimer C, we further improved the resolution of the PBS\u2013PSII supercomplex to 13.2 \u00c5 after post-processing from the 14.3 \u00c5 resolution map (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data processing and resolution improvement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "12739c64-5fde-4b39-b296-c4ed6730d9b8",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C66",
+      "claim": "The lateral densities are round discs with solid densities in the center.",
+      "claim_type": "EXPLICIT",
+      "source": "The slice view of the PBS\u2013PSII map shows that the densities are round discs with solid densities in the center (Figure 2\u2014figure supplement 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the slice view of the map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "b69beadd-c1d8-4c96-9d8f-8439e7ee6ac2",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C67",
+      "claim": "The lateral densities are of the same size and shape as the extra hexamer found in the single-particle cryo-EM structure of P. purpureum PBS.",
+      "claim_type": "EXPLICIT",
+      "source": "These features are reminiscent of the structure of the extra hexamer found in the single-particle cryo-EM structure of P. purpureum PBS. Moreover, the lateral densities are of the same size and shape as the extra hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a previous structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "ba4e3e85-4ade-415a-9082-29b7878fa30e",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C68",
+      "claim": "The lateral density could be contributed by a PE hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "As all eight extra hexamers in P. purpureum PBS are PE hexamers, we hypothesize that the lateral density could be contributed by a PE hexamer, which is referred to as the lateral hexamer (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the structural features and previous knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "56dbf571-50f7-4a60-8d4b-6857336c2a8f",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C69",
+      "claim": "The lateral hexamer connects with the bottom hexamer of Rod a and the second hexamer of Rod e.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis indicated that the lateral hexamer connects with the bottom hexamer of Rod a and the second hexamer of Rod e, which are the PC and PE hexamers, respectively (Figure 2\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "a0bcf4bd-fc81-4151-800a-340b62da35a1",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C70",
+      "claim": "Extensive interfaces between PBS core and PSII are observed in the PBS\u2013PSII map.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PBS\u2013PSII map, extensive interfaces between PBS core and PSII are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "7e29df80-fe57-4cb5-9fbc-330ca307389b",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C71",
+      "claim": "There is a wide interface between \u03b1LCM and CP43 of PSII dimer A1.",
+      "claim_type": "EXPLICIT",
+      "source": "As was shown in the proximal and middle clip views, there is a wide interface between \u03b1LCM and CP43 of PSII dimer A1 (CP43A1), as well as a relatively small interface between \u03b1LCM and CP47 of PSII dimer B1 (CP47B1) (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the surface clip views of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "57e92cdb-ef42-4709-8295-714fa99ea717",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C72",
+      "claim": "There is a relatively small interface between \u03b1LCM and CP47 of PSII dimer B1.",
+      "claim_type": "EXPLICIT",
+      "source": "As was shown in the proximal and middle clip views, there is a wide interface between \u03b1LCM and CP43 of PSII dimer A1 (CP43A1), as well as a relatively small interface between \u03b1LCM and CP47 of PSII dimer B1 (CP47B1) (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the surface clip views of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "c4ac8287-a778-42ba-a098-27930bc62456",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C73",
+      "claim": "The interactions between \u03b1LCM with CP43 and CP47 are consistent with the energy transfer from PBS to CP43 and CP47 detected in red algae and cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggested the interactions between \u03b1LCM with CP43 and CP47, consistent with the energy transfer from PBS to CP43 and CP47 detected in red algae and cyanobacteria (Ueno et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations and previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "66d83f9c-709f-467c-9673-0eec843fb2e4",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C74",
+      "claim": "The different sizes of the interface may provide a structural view that energy transfer from PBS to CP43 is the main pathway in red alga.",
+      "claim_type": "EXPLICIT",
+      "source": "The different sizes of the interface may provide a structural view that energy transfer from PBS to CP43 is the main pathway in red alga (Ueno et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural observation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "90d8ec65-3fcf-48a7-a299-92b9aa36a9dc",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C75",
+      "claim": "ApcD was involved in energy transfer from PBS to PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "The other terminal emitter subunit ApcD was also involved in energy transfer from PBS to PSII (Ashby and Mullineaux, 1999; Calzadilla et al., 2019; Ley and Butler, 1977b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "a052f87a-80bd-4deb-b9af-6102ced61682",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C76",
+      "claim": "There is an interaction interface between ApcD and CP43A1.",
+      "claim_type": "EXPLICIT",
+      "source": "The middle and distal clip views showed an interaction interface between ApcD and CP43A1 (Figure 3E,F), which may mediate the energy transfer from ApcD to PSII.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the surface clip views of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8d3728f0-b53a-4751-a58d-07c4928fcc89",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C77",
+      "claim": "The interaction interface between ApcD and CP43A1 may mediate the energy transfer from ApcD to PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "The middle and distal clip views showed an interaction interface between ApcD and CP43A1 (Figure 3E,F), which may mediate the energy transfer from ApcD to PSII.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the structural observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "74bed660-9b63-4c06-91be-c67c54c550ea",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C78",
+      "claim": "Three extra densities not occupied by any model were observed after docking atomic models into the PBS\u2013PSII supercomplex map.",
+      "claim_type": "EXPLICIT",
+      "source": "After docking the atomic models of PBS, PSII dimer, and two lateral hexamers into the density map of PBS\u2013PSII supercomplex, we still observed three extra densities that are not occupied by any model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "a9a53ba7-0b2a-496d-81c3-7a2e9baaab5c",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C79",
+      "claim": "Two of the extra densities are associated with the PBS and PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of them are associated with the PBS and PSII (Figure 4\u2014figure supplement 1A), and the third one is associated with the lateral hexamer and PSII (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "b955a0a8-ec1e-4864-bdf0-5cc6056dd637",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C80",
+      "claim": "The third extra density is associated with the lateral hexamer and PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of them are associated with the PBS and PSII (Figure 4\u2014figure supplement 1A), and the third one is associated with the lateral hexamer and PSII (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "38e2b231-8e78-444b-ad5b-62b6ca160fc6",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C81",
+      "claim": "The three extra densities are temporarily deemed 'connectors' (connectors 1\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "Since we could not identify the proteins corresponding to these densities, we temporarily deemed them 'connectors' (connectors 1\u20133; Figure 4, Figure 4\u2014figure supplement 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a naming convention for unidentified densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "b185fa45-e21d-4d48-a724-a1118c58e61d",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C82",
+      "claim": "The positions of the connectors in the map suggest that these proteins likely participate in the formation of the PBS\u2013PSII supercomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, their positions in the map suggest that these proteins likely participate in the formation of the PBS\u2013PSII supercomplex (Figure 4) as well as the assembling of the PBS\u2013PSII array on the thylakoid membrane (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the positions of the densities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8db9cfba-4f2b-4703-b017-7f433c9b1e13",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C83",
+      "claim": "The connectors likely participate in the assembling of the PBS\u2013PSII array on the thylakoid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, their positions in the map suggest that these proteins likely participate in the formation of the PBS\u2013PSII supercomplex (Figure 4) as well as the assembling of the PBS\u2013PSII array on the thylakoid membrane (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the positions of the densities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8cbaae99-84cd-4969-8d95-32c4626dffd6",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C84",
+      "claim": "The three connectors are all rod-like structures, but different in size.",
+      "claim_type": "EXPLICIT",
+      "source": "We segmented out the three connectors from the PBS\u2013PSII supercomplex map and find that they are all rod-like structures, but different in size (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the segmented densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "238c7cb5-1e24-4ad8-8f84-a9eed32de414",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C85",
+      "claim": "Connector 1 contacts the \u03b22 subunit of the PBS core layer a3 and the CP47, D1, and D2 of PSII monomer B2.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface clip views of connector 1 show that connector 1 contacts the \u03b22 subunit of the PBS core layer a3 and the CP47 of PSII monomer B2 (CP47B2), as well as D1B2 and D2B2 (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the surface clip views of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "117f86a9-3cd7-44f3-a69a-c6401b5eab09",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C86",
+      "claim": "Connector 2 is smaller than connector 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Connector 2 is smaller than connector 1 (Figure 4D,E, Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of the sizes of the connectors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "1f48e4e0-db56-4662-be16-b4a3ecaf2acd",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C87",
+      "claim": "One side of connector 2 interacts with the basal hexamer of Rod a, and the other side with D1B1, D2B1, and CP47B1 in the neighboring PSII monomer B1.",
+      "claim_type": "EXPLICIT",
+      "source": "One side of connector 2 interacts with the basal hexamer of Rod a, and the other side with D1B1, D2B1, and CP47B1 in the neighboring PSII monomer B1 (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the surface clip views of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "ab05e024-cc11-4871-8232-19cef79e1ae3",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C88",
+      "claim": "Both connector 1 and connector 2 connect with PBS and PSII, suggesting that they may consolidate the anchor of PBS on PSII dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both connector 1 and connector 2 connect with PBS and PSII, suggesting that they may consolidate the anchor of PBS on PSII dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "2367ea2d-2518-451b-abba-371cbf9d20aa",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C89",
+      "claim": "Connector 3 mediates a connection between the lateral hexamer and the bridging PSII dimer C.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from connectors 1 and 2, connector 3 mediates a connection between the lateral hexamer and the bridging PSII dimer C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "3a7ba115-2a38-44c2-918c-0aeedd05beca",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C90",
+      "claim": "Connector 3 could be divided into one small part and one big part.",
+      "claim_type": "EXPLICIT",
+      "source": "The density map of connector 3 shows that connector 3 could be divided into one small part and one big part (Figure 4\u2014figure supplement 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "c0c66756-4a00-4389-ae11-04756d420706",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C91",
+      "claim": "The small part of connector 3 is buried in the lateral hexamer's central cavity, and the big part extends out to connect with PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "The small part is buried in the lateral hexamer's central cavity, and the big part extends out to connect with PSII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e4f60089-729e-4e2b-b403-6a2c5a624fc1",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C92",
+      "claim": "The structural feature of connector 3 is very similar with the structure of some rod linker proteins, suggesting that connector 3 might be the linker protein of the lateral hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural feature is very similar with the structure of some rod linker proteins, such as LR6 of P. purpureum PBS, with the N-terminal rigid domain occupying the central cavity of a hexamer and the C-terminal region extending out, suggesting that connector 3 might be the linker protein of the lateral hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on structural similarity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "696870f2-b589-4b2a-985d-11d21adbf44c",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C93",
+      "claim": "The lateral hexamer together with connector 3 stabilizes PBS's connection with PSII in the interconnected array of the PBS\u2013PSII supercomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure indicates that the lateral hexamer together with connector 3 stabilizes PBS's connection with PSII in the interconnected array of the PBS\u2013PSII supercomplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "2f994256-b988-426b-a875-058b1db61152",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C94",
+      "claim": "PBS is classified into different structural types, including hemidiscoidal, hemiellipsoidal, block type, bundle type and rod type.",
+      "claim_type": "EXPLICIT",
+      "source": "PBS is classified into different structural types, including hemidiscoidal (Chang et al., 2015), hemiellipsoidal (Arteni et al., 2008), block type (Zhang et al., 2017), bundle type (Guglielmi et al., 1981) and rod type (Chen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "a21682d6-f4f0-429e-8937-435704ac1d3a",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C95",
+      "claim": "Hemidiscoidal PBSs of the Synechocystis strain PCC 6803 and the Anabana sp. strain PCC 7120 are associated with one PSII dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemidiscoidal PBSs of the Synechocystis strain PCC 6803 and the Anabana sp. strain PCC 7120 are associated with one PSII dimer (Chang et al., 2015; Rast et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8a613d86-80f6-4202-b68f-c234f59e460f",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C96",
+      "claim": "The rod-like AmPBS is composed of four hexamers and is adjacent to one PSII dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The rod-like AmPBS is composed of four hexamers and is adjacent to one PSII dimer (Chen et al., 2009; Niedzwiedzki et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "72457287-432a-4bb7-9574-3b4393fca4a6",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C97",
+      "claim": "The hemiellipsoidal PBS connects with monomeric PSII at a ratio from 1:1 to 1:4.",
+      "claim_type": "EXPLICIT",
+      "source": "The hemiellipsoidal PBS connects with monomeric PSII at a ratio from 1:1 to 1:4 (Arteni et al., 2008; Cunningham et al., 1989; Lange et al., 1990; Ohki et al., 1987; Takahashi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "736589d6-8201-4ecb-9133-1f73d34d61b7",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C98",
+      "claim": "The work reports a different ratio (1:6) of hemiellipsoidal PBS and PSII on the native thylakoid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in situ cryo-ET, our work reports the native PBS\u2013PSII supercomplex structure of red algae. The structure reveals a different ratio (1:6) of hemiellipsoidal PBS and PSII on the native thylakoid membrane (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "81fa2bee-b140-47d1-8da2-7d550037e9bb",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C99",
+      "claim": "Each PBS directly interacts with two PSII dimers and indirectly interacts with two PSII monomers from two peripheral bridging PSII dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PBS directly interacts with two PSII dimers and indirectly interacts with two PSII monomers from two peripheral bridging PSII dimers, forming the interconnected array of the PBS\u2013PSII supercomplex with the support of three unassigned connectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "02a420a6-734f-47c5-b725-0d660c9b0fe3",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C100",
+      "claim": "With 14\u00b0 rotation and 30 \u00c5 shift of PSII dimer pair relative to PBS core, the terminal emitters, ApcD and \u03b1LCM, in the two symmetric a2a3 and a2'a3' hexamers of the core, connect with CP43 of PSII monomers A1 and B2, and CP47 in PSII monomers B1 and A2.",
+      "claim_type": "EXPLICIT",
+      "source": "With 14\u00b0 rotation and 30 \u00c5 shift of PSII dimer pair relative to PBS core, the terminal emitters, ApcD and \u03b1LCM, in the two symmetric a2a3 and a2'a3' hexamers of the core, connect with CP43 of PSII monomers A1 and B2, and CP47 in PSII monomers B1 and A2 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "9097b79b-89af-446a-b1ad-b7b2b1c3e41d",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C101",
+      "claim": "A similar geometry of the PBS\u2013PSII supercomplex was reported in cyanobacteria and red algae possessing hemidiscoidal PBS.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar geometry of the PBS\u2013PSII supercomplex was reported in cyanobacteria and red algae possessing hemidiscoidal PBS, suggesting that hemidiscoidal PBSs use the same strategy for energy transfer from PBS to PSII (Arteni et al., 2009; Arteni et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "22a93e31-b638-40d6-981b-89576a01d7f8",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C102",
+      "claim": "Hemidiscoidal PBSs use the same strategy for energy transfer from PBS to PSII as hemiellipsoidal PBS.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar geometry of the PBS\u2013PSII supercomplex was reported in cyanobacteria and red algae possessing hemidiscoidal PBS, suggesting that hemidiscoidal PBSs use the same strategy for energy transfer from PBS to PSII (Arteni et al., 2009; Arteni et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural similarity.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "fadff674-df36-4abc-8876-9c396e49227e",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C103",
+      "claim": "The structure enables the extra lateral hexamers in P. purpureum to associate with PSII monomers C1 and C'2 through connector 3.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure also enables the extra lateral hexamers in P. purpureum to associate with PSII monomers C1 and C'2 through connector 3 (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5f4e8566-2db0-4596-95f4-ce0e7e0be7dc",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C104",
+      "claim": "The work focused on the PBS\u2013PSII structures in the ordered distribution regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we focused on the PBS\u2013PSII structures in the ordered distribution regions, where both PBS and PSII are neatly arranged according to a strict stoichiometry of 1:6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "860dae94-f0ac-4a96-9874-ef4e019e6dc1",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C105",
+      "claim": "Previous research conducting fraction freezing analysis has found that the PBS\u2013PSII complexes on random distribution regions could have lower stoichiometry (between 1:1 and 1:4).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research conducting fraction freezing analysis (Lange et al., 1990) has found that the PBS\u2013PSII complexes on random distribution regions could have lower stoichiometry (between 1:1 and 1:4), which are represented as an PSII monomer, dimer, trimer, or double dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "9f46303a-6771-4984-9b3f-9d3d8d77d324",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C106",
+      "claim": "These observations show the possible diversity of PBS\u2013PSII organization on the thylakoids.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations show the possible diversity of PBS\u2013PSII organization on the thylakoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current and previous observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e185d647-198a-4ab9-8b24-df9d8a8c31e2",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C107",
+      "claim": "Extensive studies have shown that \u03b1LCM and ApcD are the terminal emitters of the energy coupling between PBS and PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive studies have shown that \u03b1LCM and ApcD are the terminal emitters of the energy coupling between PBS and PSII (Zhao et al., 1992; Zlenko et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "d3989bb7-7edf-4985-b5b5-3bf482739b22",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C108",
+      "claim": "The structures detail the connections of \u03b1LCM and ApcD with PSII, which contribute to the energy flows from PBS to PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structures, we detailed the connections of \u03b1LCM and ApcD with PSII, which contribute to the energy flows from PBS to PSII (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "6fd7d6d7-4992-4ca0-a567-15229fd75382",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C109",
+      "claim": "ApcF was reported to be involved in the energy transfer in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "ApcF was also reported to be involved in the energy transfer in cyanobacteria (Calzadilla et al., 2019; Chang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "3429b6b6-3170-4fc8-9462-14a16a5457a6",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C110",
+      "claim": "A solid connection between ApcF and PSII could not be found in the structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we could not find a solid connection between ApcF and PSII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "c9a0d6e8-c8c4-4171-bb4d-118aea1c9153",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C111",
+      "claim": "It is very likely that ApcF only plays an auxiliary role for direct energy transfer to reaction centers in red algae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is very likely that ApcF only plays an auxiliary role for direct energy transfer to reaction centers in red algae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the lack of observed connection.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8467234d-59c7-419c-8c9f-a944933bcf54",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C112",
+      "claim": "The molecular weights of the connectors are estimated at around 30\u201380 kDa according to the size and shape.",
+      "claim_type": "EXPLICIT",
+      "source": "While the current resolution limited additional detailed analysis of the connectors, we attempted to estimate the molecular weights of these connectors at around 30\u201380 kDa according to the size and shape (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimation based on the structural features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e5afbd53-af87-403c-a45b-d2be46fc04ca",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C113",
+      "claim": "PSII dimer C does not directly bind to PBS but is closer to the lateral hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a class of PSII dimer C (PSII dimer C, C', and C\" in Figure 2A) that does not directly bind to PBS but is closer to the lateral hexamer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "14fdb27e-9cfe-4367-88ea-edb8c0391b66",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C114",
+      "claim": "PSII dimer C can only absorb energy from the independent lateral hexamer instead of the whole PBS through connector 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PSII dimer C can only absorb energy from the independent lateral hexamer instead of the whole PBS through connector 3, they could have fewer bilins feeding into them than the other PSIIs and could become saturated with light at higher intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the structural arrangement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "14bbb592-2834-4e76-aed7-53f145625955",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C115",
+      "claim": "PSII dimer C could have fewer bilins feeding into them than the other PSIIs and could become saturated with light at higher intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PSII dimer C can only absorb energy from the independent lateral hexamer instead of the whole PBS through connector 3, they could have fewer bilins feeding into them than the other PSIIs and could become saturated with light at higher intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the structural arrangement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "013ab340-3e57-4808-9c52-ff501bb48bc2",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C116",
+      "claim": "If the PSII dimer C is more sensitive to light intensity than the others, it could be involved in the transition between the ordered distribution region and the random distribution region.",
+      "claim_type": "EXPLICIT",
+      "source": "If the PSII dimer C is more sensitive to light intensity than the others, it could be involved in the transition between the ordered distribution region and the random distribution region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5a8b06e8-651e-4da4-a59e-d46d44647062",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C117",
+      "claim": "The energy transfer from PBS to PSII could follow multiple pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy transfer from PBS to PSII could follow multiple pathways (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "3d9d2358-d483-4c13-b825-8ad3e14ca5ff",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C118",
+      "claim": "The two terminal emitters, \u03b1LCM and ApcD, funnel light energy to PSII by distinct structural connections.",
+      "claim_type": "EXPLICIT",
+      "source": "The two terminal emitters, \u03b1LCM and ApcD, funnel light energy to PSII by distinct structural connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "a6b7e94f-ee64-4764-bd3d-ffa2f5e52493",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C119",
+      "claim": "The chromophore of \u03b1LCM mediates energy transfer via interaction with CP43 and CP47.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromophore of \u03b1LCM mediates energy transfer via interaction with CP43 and CP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "b02fd6b9-a031-43a4-8e8f-a8f06c4fffed",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C120",
+      "claim": "The chromophore of ApcD is mediated by interactions with CP43.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the chromophore of ApcD is mediated by interactions with CP43.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "bf24ed18-a000-4960-9dbd-fcda3a8d57b0",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C121",
+      "claim": "Alternative routes of energy transfer bypassing the PBS core to PSII could exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Since connector 2 connects with both the basal PC hexamer of Rod a and CP47 of PSII, we speculate that alternative routes of energy transfer bypassing the PBS core to PSII could exist: connector 2 and connector 3 could mediate the energy flow from the basal hexamer of Rod a to PSII and from lateral hexamer to PSII, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the structural connections.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "0e7f0f7c-6a57-4990-9f29-9d2c04cdb31a",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C122",
+      "claim": "Connector 2 could mediate the energy flow from the basal hexamer of Rod a to PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "Since connector 2 connects with both the basal PC hexamer of Rod a and CP47 of PSII, we speculate that alternative routes of energy transfer bypassing the PBS core to PSII could exist: connector 2 and connector 3 could mediate the energy flow from the basal hexamer of Rod a to PSII and from lateral hexamer to PSII, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the structural connections.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5aa7c657-a4b8-476e-aa2c-f69d6f71c65b",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C123",
+      "claim": "Connector 3 could mediate the energy flow from lateral hexamer to PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "Since connector 2 connects with both the basal PC hexamer of Rod a and CP47 of PSII, we speculate that alternative routes of energy transfer bypassing the PBS core to PSII could exist: connector 2 and connector 3 could mediate the energy flow from the basal hexamer of Rod a to PSII and from lateral hexamer to PSII, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the structural connections.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "606843b4-738a-48e1-957f-b7e599b1b431",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C124",
+      "claim": "Ueno et al. have reported light energy flows from CP43 to CP47 by energy transfer between the neighboring PSII monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Ueno et al. have reported light energy flows from CP43 to CP47 by energy transfer between the neighboring PSII monomers (Ueno et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "f21b8420-3db8-496b-85d3-9ebda1eed3a6",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C125",
+      "claim": "The in situ structure reveals that \u03b1LCM transfers energy to CP43 as well as the neighboring CP47, which may suggest that \u03b1LCM provides the modulation activity of energy flow between CP43 and the neighboring CP47.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in situ structure reveals that \u03b1LCM transfers energy to CP43 as well as the neighboring CP47, may suggesting that \u03b1LCM provides the modulation activity of energy flow between CP43 and the neighboring CP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the structural observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "87a1a48f-0c6b-427b-beb2-e66f3e20b2c0",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C126",
+      "claim": "It is currently unclear whether the connector proteins play a specific role in the energy transfer between PBS and PSII.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is currently unclear whether the connector proteins play a specific role in the energy transfer between PBS and PSII, and this topic requires further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation and suggests future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "b8696eb1-2ef9-4804-aad4-526fef905c18",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C127",
+      "claim": "Thylakoid membrane branching and fusion regions were observed in several tomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "In several tomograms, we observed the thylakoid membrane branching and fusion regions (Figure 6, Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the tomogram data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "09a86002-8676-4a9d-8269-5f26b7c782aa",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C128",
+      "claim": "The two parallel thylakoid membranes are split into two branches, with one branch approaching and fusing with another branch from the neighboring thylakoid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The two parallel thylakoid membranes are split into two branches. One branch approaches and fuses with another branch from the neighboring thylakoid membrane (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the tomogram data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "ff9a50ea-9d85-462c-a70d-636488ee06ce",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C129",
+      "claim": "The branching and fusing membranes built 'stairs' between two neighboring thylakoid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D segmentation model shows that the branching and fusing membranes built 'stairs' between two neighboring thylakoid membranes (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 3D segmentation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "c257eeb7-015c-43d8-84a3-6b729b1bb0a4",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C130",
+      "claim": "On the top of the 'stairs' is the large perforation on the thylakoids.",
+      "claim_type": "EXPLICIT",
+      "source": "On the top of the 'stairs' is the large perforation on the thylakoids (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 3D segmentation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "6b4a263c-5f59-4647-9454-dafcd8a20786",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C131",
+      "claim": "These structures are very similar to the thylakoid membrane architecture in the cyanobacteria Prochlorococcus, Synechococcus sp. PCC 7942 and Microcoleus sp. reported by Nevo et al., 2007.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures are very similar to the thylakoid membrane architecture in the cyanobacteria Prochlorococcus (Ting et al., 2007), Synechococcus sp. PCC 7942 and Microcoleus sp. reported by Nevo et al., 2007.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "64efd958-d637-4c9a-83b1-339a82146045",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C132",
+      "claim": "Nevo et al. observed perforations as well as branching and fusion of the membranes, which resulted in a highly connected network to allow water-soluble and lipid-soluble molecules to diffuse through the entire membrane network.",
+      "claim_type": "EXPLICIT",
+      "source": "They also observed perforations as well as branching and fusion of the membranes, which resulted in a highly connected network to allow water-soluble and lipid-soluble molecules to diffuse through the entire membrane network (Nevo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "40b3671f-15c8-4828-a253-0bc0660b514d",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C133",
+      "claim": "It is reasonable to deduce that the perforations and stairs of the thylakoid membrane in the red alga might play the same role as in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is reasonable to deduce that the perforations and stairs of the thylakoid membrane in the red alga might play the same role, although it needs to be further investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the structural similarity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "d18acdc2-ecaf-4145-916d-1c3ca16d2d62",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C134",
+      "claim": "The center-to-center distance of two adjacent PBSs is approximately 345 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The center-to-center distance of two adjacent PBSs is approximately 345 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "e3ccc381-5a38-4caf-ad2d-17905a9903a4",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "claim_id": "C135",
+      "claim": "51 cryo-ET tilt series were collected at higher magnification at the ordered distribution regions for 3D reconstruction and further sub-tomogram averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, 51 cryo-ET tilt series were collected at higher magnification at the ordered distribution regions for three-dimensional (3D) reconstruction and further sub-tomogram averaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f4b38771-1774-4037-9ca8-f5b2098b1eb3",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined the in situ structure of the PBS\u2013PSII supercomplex from P. purpureum using cryo-ET and subtomogram averaging, achieving resolutions of 14.3 \u00c5 for the PBS\u2013PSII supercomplex and 15.6 \u00c5 for the double PBS\u2013PSII supercomplex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C35, C36, C37, C38, and C135 collectively describe the methodological approach and achieved resolutions. The experimental design (low-light culture conditions, exponential phase harvest, cryo-FIB milling, data collection) is well-documented, and the reported resolutions are consistent with the FSC curves shown in Figure 2\u2014figure supplement 1A. The methods section provides sufficient detail for reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "f45a9496-504a-41fc-a3ff-f104c421a1c4",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Each PBS interacts with six PSII monomers in a 1:6 stoichiometry, with four PSII monomers directly binding to PBS and two binding indirectly through lateral hexamers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C52, C98, and C99 describe the novel PBS:PSII stoichiometry observed in ordered regions. The structural data (Figures 2A, 5A-B) clearly show this arrangement, which differs from previously reported ratios (1:1 to 1:4, C29, C97). The distinction between direct and indirect binding is supported by the density maps and model fitting (C53-C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Three unidentified 'connector' proteins contribute to PBS-PSII interactions, with connectors 1 and 2 linking PBS core/Rod a to PSII, and connector 3 linking lateral hexamers to PSII dimer C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C93 and C112 describe three connector densities observed in the structure. While the densities are clearly present in the maps (Figure 4) and their positions suggest functional roles (C82-C83), the proteins remain unidentified. The molecular weight estimates (30-80 kDa, C112) are based on density size/shape but lack validation. The speculative nature of their functional roles (C88, C93, C121-C123) and the inability to identify the proteins limit confidence in these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two PsbO subunits from adjacent PSII dimers bind with each other, potentially stabilizing the PBS\u2013PSII supercomplex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C60 describe a density between adjacent PSII dimers attributed to PsbO-PsbO interaction. While the density is observed (Figure 2C, Figure 2\u2014figure supplement 2C-E), the authors acknowledge resolution limitations (C61) that prevent excluding other contributing factors. The proposed stabilization role (C7, C64) is speculative. The electrostatic analysis (Figure 2\u2014figure supplement 2E) supports potential interaction, but higher resolution or additional validation would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "6a09ed1a-1bb2-49a2-98a1-455f75151743",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03b1LCM and ApcD mediate energy transfer from PBS to PSII through distinct structural connections: \u03b1LCM interacts with both CP43 and CP47, while ApcD interacts primarily with CP43, suggesting multiple energy transfer pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11, C71-C77, and C108-C120 describe the interaction interfaces between terminal emitters and PSII subunits. The surface clip views (Figure 3) clearly show these interfaces, with \u03b1LCM having a wide interface with CP43 and smaller interface with CP47 (C71-C72), while ApcD interfaces with CP43 (C76). These observations are consistent with previous energy transfer studies (C73, C107, C124) and provide structural basis for multiple energy transfer pathways (C11, C117-C120).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PBS\u2013PSII supercomplexes are organized in ordered linear arrays on thylakoid membranes, with PBSs sandwiched between parallel membranes and attached in opposite directions, forming a two-dimensional pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 and C51-C59 describe the spatial organization of PBS-PSII on thylakoid membranes. The tomogram data (Figure 1, Videos 1-3) clearly show the ordered arrangement, with measurements of distances (12.4 nm between PSII dimers A-B, C56; 345 \u00c5 between PBS centers, C134) and angles (14\u00b0 rotation, C57; 3 nm shift, C58). The observations are consistent with previous EM studies (C40, C47) and provide quantitative structural details.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "754b9244-430e-4df8-bfe2-0bd7eff5e2c3",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The 2.82 \u00c5 single-particle PBS structure and X-ray PSII structure from C. caldarium fit well into the sub-tomogram maps, validating the identity of the complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 describe model fitting validation. The high cross-correlation coefficients (>80%, C50), phylogenetic analysis showing C. caldarium as most similar to P. purpureum (C48), and high sequence homogeneity (35-100%, C49) support the model fitting. The exception of the PE \u03b2 subunit (C46) is noted and explained by conformational changes (Figure 2\u2014figure supplement 2A-B). This provides confidence in the structural interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lateral PE hexamers connect PBS to bridging PSII dimer C through connector 3, potentially creating a distinct energy transfer pathway with different light saturation properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C69 describe lateral hexamer identification and connections. While the density features (round discs with central density, C66) and size/shape similarity to PE hexamers (C67) support the identification, this remains a hypothesis (C68). The proposed functional consequences (C114-C116) regarding light saturation and involvement in ordered/random region transitions are highly speculative and lack experimental validation. The structural observations are sound, but functional interpretations require additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "18700b92-cb1c-4ef3-8803-5bd92afad810",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The geometry of PBS-PSII interaction (14\u00b0 rotation, 30 \u00c5 shift) positions terminal emitters to connect with specific PSII subunits, similar to hemidiscoidal PBS systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 describe the geometric arrangement enabling energy transfer. The measurements (14\u00b0 rotation, 30 \u00c5 shift, C100) are derived from the structure (Figure 2\u2014figure supplement 5), and the similarity to hemidiscoidal PBS systems (C101) is supported by citations. The inference that similar geometries indicate similar energy transfer strategies (C102) is reasonable given the structural conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "6947fc60-b9e5-4182-bc44-d55ef5712bf9",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ApcF likely plays only an auxiliary role in energy transfer in red algae, as no solid connection between ApcF and PSII was observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C111 address the role of ApcF. While previous studies in cyanobacteria implicate ApcF in energy transfer (C109), the lack of observed connection in this structure (C110) leads to speculation about an auxiliary role (C111). However, absence of evidence is not evidence of absence\u2014the resolution limitations or dynamic nature of the interaction could explain the lack of observed density. This conclusion requires additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "f1d304c8-dc7e-4577-8644-c5266d1f0d8e",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Alternative energy transfer pathways may exist, with connectors 2 and 3 potentially mediating energy flow bypassing the PBS core, and \u03b1LCM potentially modulating energy flow between CP43 and neighboring CP47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C121-C126 propose alternative energy transfer mechanisms based on structural connections. While the structural observations (connector positions, \u03b1LCM interactions) are valid, the functional interpretations are highly speculative (C121-C123, C125). The authors acknowledge uncertainty (C126), and these hypotheses require spectroscopic validation or functional studies to be supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "8072bd15-9d48-4762-a5c4-c27d5329df96",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Thylakoid membranes exhibit branching, fusion, and perforation structures forming 'stairs' between neighboring membranes, similar to cyanobacterial thylakoid architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C127-C133 describe thylakoid membrane architecture. The tomogram data (Figure 6, Video 5) clearly show branching, fusion, and perforation events (C127-C130). The similarity to cyanobacterial structures (C131-C132) is supported by citations. While the functional inference (C133) is speculative, it is reasonable given the structural similarity and is appropriately qualified as requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    },
+    {
+      "id": "5bd08bf7-8506-49fd-a3af-f765df0cb6d5",
+      "content_id": "396f99d7-6e8a-44d6-81b5-3a94167167ba",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study focused on ordered distribution regions with 1:6 stoichiometry, while random distribution regions may exhibit different PBS-PSII stoichiometries (1:1 to 1:4), indicating organizational diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C106 acknowledge the scope and limitations of the study. The focus on ordered regions (C104) is clearly stated, and the existence of different stoichiometries in random regions (C105) is supported by previous literature. The inference about organizational diversity (C106) is reasonable and appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:28:09.455279Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2dc54fb-d517-435c-8240-b19dbcb98803",
+      "result_id": "f4b38771-1774-4037-9ca8-f5b2098b1eb3"
+    },
+    {
+      "claim_id": "eecc038d-71a7-4275-b09e-b86e4d34e1b5",
+      "result_id": "f4b38771-1774-4037-9ca8-f5b2098b1eb3"
+    },
+    {
+      "claim_id": "065d5b49-f293-48f6-9545-3386a422be91",
+      "result_id": "f4b38771-1774-4037-9ca8-f5b2098b1eb3"
+    },
+    {
+      "claim_id": "5a290e81-683b-4889-b427-ab2b2aa8fafa",
+      "result_id": "f4b38771-1774-4037-9ca8-f5b2098b1eb3"
+    },
+    {
+      "claim_id": "29fc0e1f-0f3d-47e4-9e6d-0a8ade2f0b2b",
+      "result_id": "f4b38771-1774-4037-9ca8-f5b2098b1eb3"
+    },
+    {
+      "claim_id": "e3ccc381-5a38-4caf-ad2d-17905a9903a4",
+      "result_id": "f4b38771-1774-4037-9ca8-f5b2098b1eb3"
+    },
+    {
+      "claim_id": "cbbd4c38-97ed-4b72-83fd-81abe62d071f",
+      "result_id": "f45a9496-504a-41fc-a3ff-f104c421a1c4"
+    },
+    {
+      "claim_id": "d7d04bc6-212e-4138-926b-65bf114a0c5f",
+      "result_id": "f45a9496-504a-41fc-a3ff-f104c421a1c4"
+    },
+    {
+      "claim_id": "fcaf5ccd-4226-4dff-bc97-3d66780c7810",
+      "result_id": "f45a9496-504a-41fc-a3ff-f104c421a1c4"
+    },
+    {
+      "claim_id": "736589d6-8201-4ecb-9133-1f73d34d61b7",
+      "result_id": "f45a9496-504a-41fc-a3ff-f104c421a1c4"
+    },
+    {
+      "claim_id": "81fa2bee-b140-47d1-8da2-7d550037e9bb",
+      "result_id": "f45a9496-504a-41fc-a3ff-f104c421a1c4"
+    },
+    {
+      "claim_id": "1c28117c-9a38-4add-928e-0ed887f75d6d",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "74bed660-9b63-4c06-91be-c67c54c550ea",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "a9a53ba7-0b2a-496d-81c3-7a2e9baaab5c",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "b955a0a8-ec1e-4864-bdf0-5cc6056dd637",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "38e2b231-8e78-444b-ad5b-62b6ca160fc6",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "b185fa45-e21d-4d48-a724-a1118c58e61d",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "8db9cfba-4f2b-4703-b017-7f433c9b1e13",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "8cbaae99-84cd-4969-8d95-32c4626dffd6",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "238c7cb5-1e24-4ad8-8f84-a9eed32de414",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "117f86a9-3cd7-44f3-a69a-c6401b5eab09",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "1f48e4e0-db56-4662-be16-b4a3ecaf2acd",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "ab05e024-cc11-4871-8232-19cef79e1ae3",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "2367ea2d-2518-451b-abba-371cbf9d20aa",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "3a7ba115-2a38-44c2-918c-0aeedd05beca",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "c0c66756-4a00-4389-ae11-04756d420706",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "e4f60089-729e-4e2b-b403-6a2c5a624fc1",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "696870f2-b589-4b2a-985d-11d21adbf44c",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "8467234d-59c7-419c-8c9f-a944933bcf54",
+      "result_id": "f53ac420-06da-4e00-8b3e-c5e1984a6fd0"
+    },
+    {
+      "claim_id": "97ee1e35-88ef-479b-81d5-18bf9166aae9",
+      "result_id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56"
+    },
+    {
+      "claim_id": "d698826f-e8f8-4af8-8558-9f24e111394e",
+      "result_id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56"
+    },
+    {
+      "claim_id": "49a7f4e2-474c-4ba0-bcae-73bf578e2cbc",
+      "result_id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56"
+    },
+    {
+      "claim_id": "20ee2779-9618-47af-a69e-ba4d96b6d91c",
+      "result_id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56"
+    },
+    {
+      "claim_id": "be76c982-c7b5-4178-bebc-11918dd4a868",
+      "result_id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56"
+    },
+    {
+      "claim_id": "03346ca6-ac8b-42fa-a94c-ff09bee9352c",
+      "result_id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56"
+    },
+    {
+      "claim_id": "2cb2bb06-7b4d-47e8-aca7-1a1de4c744a1",
+      "result_id": "31a2cb25-0b34-41b9-a44d-64f3f2627d56"
+    },
+    {
+      "claim_id": "0c3b12f7-62b8-4f4e-9f0b-8c8bd19ce636",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "446f9c53-5fad-4263-92f4-54b3c92fb3f8",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "75d56059-7493-4d46-924f-b3ba98ffcdf0",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "09bc45a1-6943-49bf-bbb5-058aff90e425",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "7e29df80-fe57-4cb5-9fbc-330ca307389b",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "57e92cdb-ef42-4709-8295-714fa99ea717",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "c4ac8287-a778-42ba-a098-27930bc62456",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "66d83f9c-709f-467c-9673-0eec843fb2e4",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "a052f87a-80bd-4deb-b9af-6102ced61682",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "8d3728f0-b53a-4751-a58d-07c4928fcc89",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "d3989bb7-7edf-4985-b5b5-3bf482739b22",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "5a8b06e8-651e-4da4-a59e-d46d44647062",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "3d9d2358-d483-4c13-b825-8ad3e14ca5ff",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "a6b7e94f-ee64-4764-bd3d-ffa2f5e52493",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "b02fd6b9-a031-43a4-8e8f-a8f06c4fffed",
+      "result_id": "6a09ed1a-1bb2-49a2-98a1-455f75151743"
+    },
+    {
+      "claim_id": "5810e008-55ad-478c-84f5-f1210a29f4d5",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "08f73791-3f30-41de-bee5-76c12196aab2",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "263858a2-f7e2-49fd-8614-f269f4a5fdc9",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "99e4b040-4c23-49b3-8100-10c363edb0b0",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "3a6113f5-943f-4118-9e34-76b50f126bee",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "ebaf08d3-95fe-4278-bc60-2e39d7c289eb",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "9cd4e5a8-a958-445e-bb67-4fa86a2e29fd",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "eb5ec259-a649-4349-899e-a966c84f90cc",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "3b98933f-6efb-4129-885a-801ce32b45c4",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "e9f2ef16-d154-49d3-928b-057beb003f17",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "e2f31cb8-0d85-494b-a320-94129b208ea1",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "4ee13f9f-47d7-40ae-9caa-024d44593a12",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "5591c4ac-4b5d-4871-a1a2-03d48483c7fd",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "97d365ee-43a0-48de-8ea6-f12ced28bc33",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "d18acdc2-ecaf-4145-916d-1c3ca16d2d62",
+      "result_id": "ca2f12ec-98ea-46c4-bac3-50faf570bce1"
+    },
+    {
+      "claim_id": "5b7ba21d-b06c-4d61-889c-8e82f9a9ff72",
+      "result_id": "754b9244-430e-4df8-bfe2-0bd7eff5e2c3"
+    },
+    {
+      "claim_id": "ae3ebb99-0e5c-4e3f-b41f-fa7f5259fda6",
+      "result_id": "754b9244-430e-4df8-bfe2-0bd7eff5e2c3"
+    },
+    {
+      "claim_id": "041f47bb-a59e-4c40-9cea-f5ed2fc17ac4",
+      "result_id": "754b9244-430e-4df8-bfe2-0bd7eff5e2c3"
+    },
+    {
+      "claim_id": "987da1af-c8f6-4d18-ad74-a4d108d7185b",
+      "result_id": "754b9244-430e-4df8-bfe2-0bd7eff5e2c3"
+    },
+    {
+      "claim_id": "068ec2d0-65e9-49cc-b1eb-f7d47b32bd5a",
+      "result_id": "754b9244-430e-4df8-bfe2-0bd7eff5e2c3"
+    },
+    {
+      "claim_id": "79ac4b74-ff19-4188-a4e9-885a6e42f693",
+      "result_id": "754b9244-430e-4df8-bfe2-0bd7eff5e2c3"
+    },
+    {
+      "claim_id": "d603b53b-2509-4d05-bd3e-9c1818aa41d7",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "12739c64-5fde-4b39-b296-c4ed6730d9b8",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "b69beadd-c1d8-4c96-9d8f-8439e7ee6ac2",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "ba4e3e85-4ade-415a-9082-29b7878fa30e",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "56dbf571-50f7-4a60-8d4b-6857336c2a8f",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "fadff674-df36-4abc-8876-9c396e49227e",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "e5afbd53-af87-403c-a45b-d2be46fc04ca",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "14fdb27e-9cfe-4367-88ea-edb8c0391b66",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "14bbb592-2834-4e76-aed7-53f145625955",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "013ab340-3e57-4808-9c52-ff501bb48bc2",
+      "result_id": "a06dc664-7ed2-42ad-8354-8ebea6438ca5"
+    },
+    {
+      "claim_id": "02a420a6-734f-47c5-b725-0d660c9b0fe3",
+      "result_id": "18700b92-cb1c-4ef3-8803-5bd92afad810"
+    },
+    {
+      "claim_id": "9097b79b-89af-446a-b1ad-b7b2b1c3e41d",
+      "result_id": "18700b92-cb1c-4ef3-8803-5bd92afad810"
+    },
+    {
+      "claim_id": "22a93e31-b638-40d6-981b-89576a01d7f8",
+      "result_id": "18700b92-cb1c-4ef3-8803-5bd92afad810"
+    },
+    {
+      "claim_id": "6fd7d6d7-4992-4ca0-a567-15229fd75382",
+      "result_id": "6947fc60-b9e5-4182-bc44-d55ef5712bf9"
+    },
+    {
+      "claim_id": "3429b6b6-3170-4fc8-9462-14a16a5457a6",
+      "result_id": "6947fc60-b9e5-4182-bc44-d55ef5712bf9"
+    },
+    {
+      "claim_id": "c9a0d6e8-c8c4-4171-bb4d-118aea1c9153",
+      "result_id": "6947fc60-b9e5-4182-bc44-d55ef5712bf9"
+    },
+    {
+      "claim_id": "bf24ed18-a000-4960-9dbd-fcda3a8d57b0",
+      "result_id": "f1d304c8-dc7e-4577-8644-c5266d1f0d8e"
+    },
+    {
+      "claim_id": "0e7f0f7c-6a57-4990-9f29-9d2c04cdb31a",
+      "result_id": "f1d304c8-dc7e-4577-8644-c5266d1f0d8e"
+    },
+    {
+      "claim_id": "5aa7c657-a4b8-476e-aa2c-f69d6f71c65b",
+      "result_id": "f1d304c8-dc7e-4577-8644-c5266d1f0d8e"
+    },
+    {
+      "claim_id": "f21b8420-3db8-496b-85d3-9ebda1eed3a6",
+      "result_id": "f1d304c8-dc7e-4577-8644-c5266d1f0d8e"
+    },
+    {
+      "claim_id": "87a1a48f-0c6b-427b-beb2-e66f3e20b2c0",
+      "result_id": "f1d304c8-dc7e-4577-8644-c5266d1f0d8e"
+    },
+    {
+      "claim_id": "b8696eb1-2ef9-4804-aad4-526fef905c18",
+      "result_id": "8072bd15-9d48-4762-a5c4-c27d5329df96"
+    },
+    {
+      "claim_id": "09a86002-8676-4a9d-8269-5f26b7c782aa",
+      "result_id": "8072bd15-9d48-4762-a5c4-c27d5329df96"
+    },
+    {
+      "claim_id": "ff9a50ea-9d85-462c-a70d-636488ee06ce",
+      "result_id": "8072bd15-9d48-4762-a5c4-c27d5329df96"
+    },
+    {
+      "claim_id": "c257eeb7-015c-43d8-84a3-6b729b1bb0a4",
+      "result_id": "8072bd15-9d48-4762-a5c4-c27d5329df96"
+    },
+    {
+      "claim_id": "6b4a263c-5f59-4647-9454-dafcd8a20786",
+      "result_id": "8072bd15-9d48-4762-a5c4-c27d5329df96"
+    },
+    {
+      "claim_id": "64efd958-d637-4c9a-83b1-339a82146045",
+      "result_id": "8072bd15-9d48-4762-a5c4-c27d5329df96"
+    },
+    {
+      "claim_id": "40b3671f-15c8-4828-a253-0bc0660b514d",
+      "result_id": "8072bd15-9d48-4762-a5c4-c27d5329df96"
+    },
+    {
+      "claim_id": "5f4e8566-2db0-4596-95f4-ce0e7e0be7dc",
+      "result_id": "5bd08bf7-8506-49fd-a3af-f765df0cb6d5"
+    },
+    {
+      "claim_id": "860dae94-f0ac-4a96-9874-ef4e019e6dc1",
+      "result_id": "5bd08bf7-8506-49fd-a3af-f765df0cb6d5"
+    },
+    {
+      "claim_id": "9f46303a-6771-4984-9b3f-9d3d8d77d324",
+      "result_id": "5bd08bf7-8506-49fd-a3af-f765df0cb6d5"
+    }
+  ],
+  "comparisons": []
+}

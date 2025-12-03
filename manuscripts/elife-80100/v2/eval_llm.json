@@ -1,0 +1,563 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "The locus coeruleus (LC) houses the majority of noradrenergic neurons in the brain, sends widespread projections to all major CNS divisions, regulates fundamental functions including fight/flight response, attention control, and sleep/wake cycles, and its dysregulation is implicated in various neuropsychiatric conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10, and C11 are well-established facts about LC function supported by extensive prior research and multiple citations. These represent foundational background knowledge that is not disputed in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "LC/NE neurons are heterogeneous in terms of anatomical projections, morpho-electric profiles, and behavioral functions, with the LC composed of multiple specialized noradrenergic modules that can switch between discrete coding and global broadcast modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by multiple citations to prior research establishing LC heterogeneity and modular organization. This represents established prior work that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The NMDG-based slicing protocol enabled preparation of brainstem slices from adult mice containing numerous healthy LC neurons, allowing simultaneous patch-clamp recordings of up to eight mature LC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 describe the methodological achievement demonstrated in Figure 1A and supported by citations to the slicing protocol. This technical advance is critical for the study but represents a methodological contribution rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "LC/NE neurons exhibit unique electrophysiological properties distinct from hippocampal neurons, including highly depolarized resting membrane potential (-43.0 \u00b1 0.1 mV), spontaneous activity at rest (1.6 \u00b1 0.4 Hz), slower charging with higher input resistance, characteristic pause after first action potentials, and wider action potentials with lower amplitude followed by deep afterhyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by experimental measurements from 289 neurons (C20) and 30 neurons (C21), with data shown in Figures 1B-D. The t-SNE clustering analysis (C25) clearly separates LC neurons from hippocampal neurons, validating the distinct electrophysiological profile.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "LC/NE neurons can be classified into two major morphological types based on somatodendritic shape: fusiform cells (FF) with elongated spindle-shaped soma and 2-3 primary dendrites from opposite poles, and multipolar cells (MP) with triangular/round soma and >3 primary dendrites from any side, with MPs having more profusely branching dendrites around the soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are supported by morphological analysis shown in Figure 2, quantitative measurements of soma bipolarity and dendritic arborization (C32), and machine learning classification achieving 100% accuracy (C33). The classification is validated by multiple independent approaches and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "FFs and MPs differ in axonal organization: most MPs (~80%) have axons originating from the soma with less local axonal arborization and first branching point >400 \u00b5m from origin, while most FFs (~95%) have axons originating from primary dendrites with earlier branching and denser local arborization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are based on morphological observations from 46 reconstructed MPs and 39 reconstructed FFs, shown in Figures 2B, D, G and Figure 2\u2014figure supplements. The sample sizes are adequate and the differences are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "FFs constitute ~38% (250/666) and MPs ~62% (416/666) of total LC/NE neurons, with FFs not evenly distributed across the LC but preferentially localized in certain anatomical positions as evidenced by bimodal distribution of FF proportions across recording sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are based on counting 666 recovered neurons and statistical analysis of FF proportions across recording sets (Figure 2\u2014figure supplement 4). The inference about spatial clustering (C41) is well-supported by the bimodal distribution pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "FFs and MPs exhibit distinct electrophysiological properties: FFs have narrower spikes with larger amplitude, different temporal dynamics, and can sustain higher frequency firing with large suprathreshold depolarizing current injections compared to MPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by electrophysiological measurements comparing FF (n=19-39) and MP (n=37-41) shown in Figures 2H-I and Figure 2\u2014source data 1. Statistical significance is reported (p<0.01-0.05) for the differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "No excitatory synaptic connections or \u03b12AR-mediated hyperpolarization were detected among more than 1500 tested LC neuron pairs, despite prominent spontaneous EPSPs present in potential postsynaptic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are based on systematic testing of >1500 cell pairs with inter-soma distance <150 \u00b5m (Figure 3C-D). The negative result is convincing given the large sample size and presence of spontaneous EPSPs confirming cell viability. However, the authors appropriately note this may be preparation-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sparse electrical connections were identified among adult LC/NE neurons, with 65 of 1503 tested pairs (4.3%) electrically coupled across inter-soma distances of 16-531 \u00b5m, showing bidirectional symmetric coupling with average steady-state coupling coefficient of 0.040\u00b10.028 and largely nonrectifying conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by experimental data from 1503 tested pairs (Figures 3D, 4C-D, F, I). The coupling coefficient measurements (n=65 coupled pairs) and statistical analysis (slope=1.03, p=0.8) support the nonrectifying nature of gap junctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Electrical coupling rate between LC neurons is distance-dependent, with ~12% coupling rate for inter-soma distance <40 \u00b5m that drops quickly as distance increases from 40 \u00b5m, though remains relatively constant from 40-240 \u00b5m before dropping to zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by analysis of coupling rate as a function of inter-soma distance shown in Figure 4E. The biphasic distance dependence with a second small peak around 140 \u00b5m is an interesting observation, though the mechanism is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C120"
+    ],
+    "result": "The electrical coupling rate in juvenile mice (PND 13-21) was 4.8% (8/165), very similar to adults (4.3%), with no significant difference between ages even when controlling for inter-soma distance, indicating electrical coupling in LC may be less subject to developmental change than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C120 are supported by experimental data comparing adult and juvenile mice (Figure 4F). This contradicts prior literature (C17, C115, C119) suggesting age-dependent decline. The sample size for juveniles (n=165 pairs) is adequate, though smaller than adults (n=1503).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Electrical connections in LC neurons are cell-type specific: 8.7% of FF-FF pairs and 5.3% of MP-MP pairs were coupled, while only 0.8% of FF-MP pairs were coupled (p<0.0001). For inter-soma distance <40 \u00b5m, FF-FF coupling rate was 31.4% (11/35), MP-MP was 10.7% (7/65), and FF-MP was 0% (0/55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by systematic analysis of coupling rates by cell type shown in Figures 4G-H. The statistical significance (p<0.0001-0.01) and adequate sample sizes support the conclusion that electrical connections preferentially form between same-type neurons, with FFs more likely to connect than MPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "FF-FF electrical coupling has higher connection strength (higher coupling coefficients) than MP-MP electrical coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by comparison of coupling coefficients shown in Figure 4I with statistical significance (p<0.05). This complements the finding of higher FF-FF coupling rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The vast majority of putative electrical synapses form between dendrites (dendro-dendritic), with only two coupled pairs having dendrite-soma synapses and no soma-soma synapses identified, showing no preferential synaptic location for either FF-FF or MP-MP coupled pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by morphological analysis of coupled pairs shown in Figures 5A-C. The predominance of dendro-dendritic synapses is consistent with prior literature (C129-C130) and the inference about lack of preferential location (C68) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Putative electrical synapses are located on first or second-order dendritic branches, most frequently in the middle of dendritic trees (average 155 \u00b5m from soma), with dendritic distances to the two somata linearly related (r=0.86), and putative synapse number positively correlating with coupling coefficient (r=0.86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by morphological measurements shown in Figures 5D-E, G. The correlations (r=0.86 for both) are strong and statistically significant (p<0.01-0.05), supporting the relationship between synapse location/number and coupling strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C138"
+    ],
+    "result": "Multicell recordings demonstrated that electrical signals from one cell hardly pass to other cells via second-order coupling if they are not electrically coupled in the first order, confirming that gap junctions identified with pairwise patch recordings in LC are first-order connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C138 are supported by experimental observations from multicell recordings (Figure 6A-C example). This is an important validation that addresses a long-standing technical concern about dye-coupling studies (C135-C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In 15 recording sets with more than two electrical connections, coupled pairs often shared the same coupling partner in a chain-like pattern (A\u2194B\u2194C), while two coupled pairs without a sharing partner (A\u2194B, C\u2194D) were rare, suggesting electrically coupled cells tend to cluster together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by experimental observations from multicell recordings shown in Figures 6A-D. The inference about chain-like clustering (C77) is reasonable given the observed patterns, though statistical modeling is needed to confirm this is not random.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "For two electrical connections, the observed chain-like pattern (n=16) was higher than predicted by random connectivity model (n=12.9, 95% CI=[6,21]), while non-chain-like patterns (n=5) were significantly less than predicted (n=11.6, 95% CI=[6,19], p=0.01), with observed cluster index of 3.2 significantly higher than Model 1 prediction of 1.1 (p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by statistical modeling comparing observed data to Model 1 predictions (Figures 6D, 7A). The Monte Carlo simulations with 1000 runs provide robust statistical support for the overrepresentation of chain-like patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cell-type-specific connectivity rules (Model 2) and additional spatial connectivity rules (Model 3) could not explain the overrepresentation of chain-like patterns, with cluster indices predicted by Models 2 and 3 still significantly lower than observed, suggesting an additional chain-like connectivity rule beyond random, spatial, and cell-type-specific rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by statistical modeling results shown in Figures 7A-B. The systematic testing of increasingly complex models strengthens the conclusion that an additional organizing principle is needed. However, the models assume independence of pairwise connections, which the proposed chain-like rule would violate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The most frequent patterns of two electrical connections are FF-FF-FF and MP-MP-MP, while other combinations are rare or absent. For three electrical connections, the chain-like pattern (A\u2194B\u2194C\u2194D) was most frequent, while circular-like and hub cell-like patterns were rarely observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by experimental observations shown in Figures 6D-E. The cell-type specificity of chain patterns is consistent with the homotypic coupling preference, though sample sizes for triple connections are small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "For three electrical connections, the observed ratio of chain-like to non-chain-like patterns was 2, significantly higher than Model 1 prediction of 0.68\u00b10.25 (p=0.001), with all simulations indicating that an additional chain-like rule may apply beyond spatial and cell-type-specific rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are based on statistical modeling shown in Figure 7B. However, the sample size for triple connections is very small (observed: 2 chain-like, 1 non-chain-like), making the statistical inference less robust than for double connections. The p-value is significant but the confidence intervals are wide, and the authors appropriately use cautious language ('may apply').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "This study represents the first multicell patch recordings of a monoamine modulatory system in the brain, allowing examination of how monoaminergic neurons interact at single-cell level for the first time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is a claim about methodological novelty but lacks supporting evidence or citations to verify that no prior multicell recordings of monoamine systems exist. While the technical achievement is impressive, the claim of being 'first' requires more rigorous documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Noradrenergic neurons in the LC can be classified into at least two major morpho-electric cell types, with neurons within each type forming homotypic network modules via gap junctions that may coordinate their input/output to engage in distinct functions within their efferent domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are well-supported by the experimental data on cell classification and cell-type-specific electrical coupling. Claims C92-C93 about functional implications are more speculative, based on inference from spatial distribution and prior literature about projection targets, but represent reasonable interpretations of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C102",
+      "C103"
+    ],
+    "result": "Prior studies indicate that the anterior horn and ventral LC core are dominated by multipolar cells that project to spinal cord, cerebellum, and hypothalamus, while the posterior horn and dorsal LC core are dominated by fusiform cells that project to neocortex and hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 and C102-C103 are supported by citations to prior research (Loughlin et al., 1986; Swanson, 1976; Waterhouse et al., 1983). This represents established prior knowledge used to interpret the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "MPs have longer action potentials with smaller amplitude than FFs, and FFs can sustain higher frequency firing than MPs with large suprathreshold depolarizing current injections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by electrophysiological measurements comparing MP and FF. These represent subtle but significant differences in intrinsic properties between the two cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "While FFs firing narrower spikes suggests they may correspond to 'narrow' units from extracellular recordings and MPs to 'wide' units, there is no consistent evidence supporting this correspondence, with both unit types possibly arising from the same MP type reflecting within-MP functional heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 represent speculative discussion about relating the current cell type classification to prior extracellular recording studies. The authors appropriately note inconsistencies (spatial distribution, firing rates, spike width differences) that argue against simple correspondence, but the alternative hypothesis about MP heterogeneity is also speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "FF cells may correspond to fusiform-shaped cells in the posterior horn/dorsal LC core, MP cells may correspond to multipolar cells in the anterior horn/ventral core, and these two types might form separate LC subnetworks with distinct projection domains performing nonoverlapping functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 are speculative inferences based on morphological similarities to prior anatomical studies. The authors appropriately note difficulty in registering slice recordings to in vivo locations. The functional implications (C106) are reasonable hypotheses but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Only a small subset of monoamine neuron terminals may be specialized for glutamate release, and the current results do not rule out that a subset of noradrenergic terminals makes glutamatergic synapses onto other target regions including spinal cord and parabrachial nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are appropriately cautious interpretations of the negative result for glutamatergic transmission, supported by citations to prior research. This represents reasonable discussion of study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "NE released from individual LC/NE neurons is not sufficient to activate \u03b12AR to evoke detectable inhibition on LC/NE neurons at least in the in vitro preparation, based on testing more than 1500 cell pairs without detecting hyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is a reasonable inference from the negative experimental results (C47) testing >1500 pairs. The authors appropriately limit the conclusion to their in vitro preparation and note that other unknown reasons may contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Recent studies suggest \u03b12AR-mediated lateral inhibition is a frequency-dependent population-wide phenomenon detectable with optogenetic activation of many neurons, and appears to be module-specific rather than nonspecific spatial surround inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by citation to a recent study (Davy et al., 2022). This represents prior work that helps explain why single-cell stimulation did not reveal \u03b12AR-mediated effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "While several previous studies suggested electrical coupling in LC is negligible or absent in adults and decreases with age, the current multicell recordings provide direct demonstration of electrical coupling in mature LC/NE neurons with coupling rate consistent with prior extracellular recording and comparable to other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 represent discussion of how current findings (C116) relate to prior literature. The current data contradict some prior studies (C115, C119) but are consistent with others (C116), representing an important clarification of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Gap junctions generally form between same-type cells in most brain regions, and LC neurons are intricately connected with close neighboring neurons of the same type to constitute cell-type-specific electrical subnetworks, providing a plausible cellular mechanism for prior observations of cell-type-specific LC pairwise correlated firing and ensembles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is supported by citation to prior research. Claims C122-C123 represent well-supported inferences from the experimental data on cell-type-specific coupling, connecting current findings to prior in vivo observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The FF-FF coupling rate is more than threefold higher than MP-MP, suggesting either that MP electrical subnetworks are smaller or that MPs are more heterogeneous, with MP cells in each LC subregion possibly only connecting with MPs in the same subregion to form subregion-specific MP subnetworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is supported by experimental data. Claims C125-C126 are speculative interpretations of the coupling rate difference. The hypothesis about subregion-specific MP subnetworks (C126) is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Close appositions identified under light microscopy can be reliably confirmed as electrical synapses by electron microscopy, with more than 50% of electrically coupled LC pairs having only one putative synapse, almost all occurring between dendrites, consistent with dendro-dendritic synapses being the dominant form across brain regions and localizing further from soma with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 are supported by citations to prior research and morphological analysis of coupled pairs. The predominance of single dendro-dendritic synapses (C128-C129) is consistent with prior literature (C130-C131).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Gap junctions at distal dendritic sites can interact locally with chemical synaptic inputs to drive synchronized spiking, either by promoting synchronized response to specific synaptic inputs or by allowing weak distal gap junction inputs to synchronize somatic action potentials upon common chemical synaptic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 are supported by citations to prior research. This represents established knowledge about how distal gap junctions can promote synchronization despite small somatic coupling potentials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Dye-coupling approaches may provide insight into network organization but neuron clusters could result from second-order coupling that is not discriminable from first-order coupling. Given gap junctions at distal dendrites, somatic membrane potentials are likely highly attenuated by the time they reach post-junctional cells, suggesting gap junctions identified with pairwise recordings should be essentially first-order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 represent reasonable inferences about technical limitations of dye-coupling approaches and the expected attenuation of signals through dendrodendritic gap junctions. This provides important context for interpreting the multicell recording results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "A chain-like pattern of two connections (A\u2194B\u2194C) is overrepresented in the dataset, and revising models with spatial and cell-type-specific rules did not explain this pattern, suggesting an additional chain-like connectivity rule that may be a general wiring principle dictating whole electrically coupled networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are well-supported by statistical modeling (Figures 6D, 7A-B). Claim C142 about generalization to larger networks is more speculative since no four-connection cases were found, but represents a reasonable hypothesis for future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Previous dye-based studies suggest chain-like connectivity rules in many brain regions including LC, with dye injection of single cells labeling maximum of two additional cells if only first-order coupled cells are labeled, and the mesencephalic trigeminal nucleus showing gap junctions between five neurons arranged in a chain-like pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 are supported by citations to prior research. This provides important context showing that chain-like organization may be a general principle, though dye-coupling studies have interpretational limitations (C135).",
+    "result_type": "MINOR"
+  }
+]

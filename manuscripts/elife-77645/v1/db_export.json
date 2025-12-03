@@ -1,0 +1,1663 @@
+{
+  "submission": {
+    "id": "7eb3e49b-afee-4365-bea6-dff00718ecc6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:46:32.568257Z",
+    "updated_at": "2025-12-03T16:46:32.568257Z"
+  },
+  "content": [
+    {
+      "id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "submission_id": "7eb3e49b-afee-4365-bea6-dff00718ecc6",
+      "content_type": "manuscript",
+      "content_text": "# Excitatory and inhibitory D-serine binding to the NMDA receptor\n\n## Authors\n\n- Remy A Yovanno<sup>1</sup> ([ORCID: 0000-0003-3852-6684](https://orcid.org/0000-0003-3852-6684))\n- Tsung Han Chou<sup>2</sup> ([ORCID: 0000-0001-6154-6283](https://orcid.org/0000-0001-6154-6283))\n- Sarah J Brantley<sup>3</sup>\n- Hiro Furukawa<sup>2</sup> ([ORCID: 0000-0001-8296-8426](https://orcid.org/0000-0001-8296-8426))\n- Albert Y Lau<sup>1</sup> ([ORCID: 0000-0002-0967-7558](https://orcid.org/0000-0002-0967-7558)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics and Biophysical Chemistry, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n2. W.M. Keck Structural Biology Laboratory, Cold Spring Harbor Laboratory Cold Spring Harbor United States ([ROR:02qz8b764](https://ror.org/02qz8b764))\n3. Department of Biology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nN-methyl-D-aspartate receptors (NMDARs) uniquely require binding of two different neurotransmitter agonists for synaptic transmission. D-serine and glycine bind to one subunit, GluN1, while glutamate binds to the other, GluN2. These agonists bind to the receptor\u2019s bi-lobed ligand-binding domains (LBDs), which close around the agonist during receptor activation. To better understand the unexplored mechanisms by which D-serine contributes to receptor activation, we performed multi-microsecond molecular dynamics simulations of the GluN1/GluN2A LBD dimer with free D-serine and glutamate agonists. Surprisingly, we observed D-serine binding to both GluN1 and GluN2A LBDs, suggesting that D-serine competes with glutamate for binding to GluN2A. This mechanism is confirmed by our electrophysiology experiments, which show that D-serine is indeed inhibitory at high concentrations. Although free energy calculations indicate that D-serine stabilizes the closed GluN2A LBD, its inhibitory behavior suggests that it either does not remain bound long enough or does not generate sufficient force for ion channel gating. We developed a workflow using pathway similarity analysis to identify groups of residues working together to promote binding. These conformation-dependent pathways were not significantly impacted by the presence of N-linked glycans, which act primarily by interacting with the LBD bottom lobe to stabilize the closed LBD.\n\n## Introduction\n\nThe N-methyl-D-aspartate receptor (NMDAR) is an ionotropic glutamate receptor (iGluR) that uniquely requires the binding of a co-agonist in addition to its primary agonist for activation (Hansen et al., 2021). This heterotetrameric ion channel comprises at least two different subunits, GluN1 (isoforms 1\u20134 a and 1-4b) and GluN2 (subtypes A-D), assembled as a dimer of GluN1/GluN2 heterodimers (Karakas and Furukawa, 2014; Lee et al., 2014). The GluN2 subunit binds the neurotransmitter glutamate, while the GluN1 subunit can either bind the co-agonists glycine or D-serine.\n\nTraditionally, glycine had been considered the major GluN1 agonist (Johnson and Ascher, 1987; Forsythe et al., 1988; Kleckner and Dingledine, 1988), but more recent work has suggested that D-serine may in fact be the dominant co-agonist for synaptic NMDARs in the brain (Papouin et al., 2012). D-serine is synthesized by the enzyme serine racemase expressed in astroglia (Wolosker et al., 1999) and neurons (Miya et al., 2008; Balu et al., 2014) and is released into the postsynapse by the Asc-1 transporter (Rutter et al., 2007; Coyle et al., 2020). D-serine binding to these synaptic NMDARs is responsible for inducing long-term potentiation (LTP), which is critical for memory functions (Henneberger et al., 2010). In addition, recent clinical efforts have indicated that D-serine could be a promising therapeutic for the treatment of neuropsychiatric disorders (Peyrovian et al., 2019; MacKay et al., 2019), most notably schizophrenia (Kantrowitz et al., 2010) and post-traumatic stress disorder (PTSD) (Heresco-Levy et al., 2005). Unlike the more well-studied agonists glutamate and glycine, the role of D-serine is less defined, causing it to be known as the \u2018shape-shifting\u2019 agonist (Coyle et al., 2020) that can adopt different roles in neurotransmission.\n\nEach NMDAR subunit consists of an amino-terminal domain (ATD), a ligand-binding domain (LBD; also called an agonist-binding domain, ABD), a transmembrane domain (TMD), and a disordered cytoplasmic C-terminal domain (Mayer, 2017). The LBDs adopt a bi-lobed clamshell architecture that closes upon agonist binding (Yao et al., 2013; Jespersen et al., 2014). The conformational transitions of the LBDs from open to closed clamshells result in the generation of tension in the LBD-TMD linkers, which in turn facilitates gating of the TMD channel (Tajima et al., 2016; Chou et al., 2020). The ATDs allosterically regulate channel activities in a subtype-dependent manner via distinct interactions with the LBDs (Yuan et al., 2009; Gielen et al., 2009; Karakas et al., 2011; Tajima et al., 2022). Therefore, the LBDs can be considered the fundamental vehicles for driving ligand gating. Previous computational studies of NMDAR LBDs have indicated that glycine binding to the GluN1 LBD and glutamate binding to the GluN2A LBD drives the conformational equilibrium toward the closed LBD (Yao et al., 2013). While crystallographic studies have determined the binding pose of D-serine in the closed GluN1 LBD (Furukawa and Gouaux, 2003), the molecular mechanisms by which D-serine finds its way into and stabilizes NMDAR LBDs are not well understood.\n\nPrevious simulation studies have revealed the mechanisms by which glycine and glutamate diffuse into the LBD binding site (Yu and Lau, 2018). Specifically, they found that glycine binds to the GluN1 subunit by freely diffusing into the binding pocket, where it is trapped by energetically favorable interactions with key binding site residues. Glutamate, on the other hand, was found to contact residues along the protein surface that helped guide itself into its binding pocket, positioning it to interact stably with residues in the binding site. These two binding mechanisms were referred to as \u2018unguided\u2019 and \u2018guided\u2019 diffusion, respectively (Yu et al., 2018). This paradigm established the two extremes by which ligands enter their receptor sites: one in which stable ligand binding only depends upon the identity of the binding site residues and another that also heavily relies on residues outside the binding site to guide the ligand toward its bound pose.\n\nPerforming multi-microsecond molecular dynamics simulations of the glycosylated GluN1/GluN2A LBD dimer, we identified binding mechanisms and residues critical for promoting D-serine binding and stabilization by developing a new binding pathway clustering workflow. Surprisingly, we observed D-serine binding to both GluN1 and GluN2A LBDs. We determined that D-serine binding to GluN2A partially stabilizes the active LBD conformation. Inspired by these simulation results, we determined that D-serine competes with glutamate for binding to GluN2A via a competitive inhibition mechanism using electrophysiology measurements, where D-serine was found to be inhibitory at high concentrations. Since NMDAR LBDs are glycosylated under physiological conditions (Kaniakova et al., 2016), including N-linked glycans in our simulations revealed that glycans primarily regulate the binding process by stabilizing the active LBD. In total, we investigated the molecular components contributing to D-serine binding and stabilization, highlighting the complex components driving neurotransmission.\n\n## Results\n\n### D-serine binding pathways for GluN2A and GluN1 LBDs\n\nIn simulating the GluN1/GluN2A LBD dimer, which is a physiological NMDAR unit, we intended to focus our attention on the mechanisms by which D-serine binds to the GluN1 LBD, the subunit to which D-serine is a potent agonist. However, in our simulations, we also observed a significant number of D-serine binding events involving the GluN2A LBD, an unexpected finding. Full binding includes both ligand association and LBD closure (Lau and Roux, 2011). Here, binding and unbinding refer only to ligand association and dissociation, respectively. We observe D-serine binding and unbinding multiple times throughout the trajectory (Figure 1\u2014source data 2, Figure 2\u2014source data 1). These binding events are primarily made up of guided-diffusion pathways in which D-serine contacts key residues on the LBD surface to help guide it into or out of the binding cleft. In our aggregate ~51 \u03bcs of sampling of the glycosylated GluN1/GluN2A LBD dimer, we identified 99 guided-diffusion pathways for GluN2A and 104 (plus 23 free diffusion events) for GluN1. Due to the stochastic nature of these pathways, we needed to develop a reliable way to identify key features of predominant binding pathways. To address this, we applied pathway similarity analysis (PSA) (Seyler et al., 2015) to quantify the spatial and geometric similarity between pairs of paths (Figure 1A, Video 1). Here, we extend this application to ligand binding pathways by monitoring the change in ligand $C_{\\alpha}$ position throughout each path. This allowed us to cluster paths traversing similar regions of the LBD surface. To aid in describing the different faces of the LBD, we use an order parameter ($\u03be_{1},\u03be_{2}$) defined in previous work (Yao et al., 2013) to describe whether D-serine primarily contacts residues on the $\u03be_{1}$ or $\u03be_{2}$ face of the LBD (Figures 1B and 2A). For GluN2A, cluster analysis revealed four distinct regions of D-serine occupancy. The clusters correspond to the following methods of binding: 1. D-serine approaches the binding pocket from the $\u03be_{2}$ face; 2. D-serine contacts the D1 residues on the $\u03be_{1}$ face; 3. D-serine zigzags between D1 and D2 lobes on the $\u03be_{1}$ face; 4. D-serine primarily contacts residues on the D2 lobe of the $\u03be_{1}$ face (Figure 1C\u2013F). Similarly, for GluN1, cluster analysis revealed four distinct clusters corresponding to similar pathways of binding: 1. D-serine contacts the $\u03be_{2}$ face; 2. D-serine zigzags between D1 and D2 lobes on the $\u03be_{1}$ face; 3. D-serine contacts residues on the N-terminal (top) end of D1 of the $\u03be_{1}$ face; 4. D-serine contacts residues of D1 loop 2 that protrudes from the LBD into solution. We then analyzed the resulting clusters to identify key residues that guide D-serine into the binding site (Figure 2B\u2013E, Video 2). Interestingly, we observed that GluN1 pathways involve fewer interactions between D-serine and D2 residues; most notably, there were fewer contacts with Helix F (Helix E for GluN2A) compared to GluN2A pathways.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of the PSA workflow for quantifying similarity between D-serine binding pathways. (B) 2-dimensional order parameter ($\u03be_{1},\u03be_{2}$) that describes the degree of GluN2A LBD closure. For each of the above (C\u2013F), the left image shows D-serine density, while the right image shows the residues most frequently contacted by D-serine as it enters/leaves the binding site for each cluster. Labeled residues demonstrate \u2265 0.2 fractional occurrence defined relative to the most contacted residue in each cluster, but all residues with \u2265 0.1 fractional occurrence are shown in stick representation (see Figure 1\u2014source data 3). (C) Cluster 1 involves residues of the $\u03be_{2}$ face of the LBD. (D) Cluster 2 involves residues of the $\u03be_{1}$ face of the D1 lobe. (E) In Cluster 3, D-serine zigzags between D1 and D2 lobe residues of the $\u03be_{1}$ face. (F) Cluster 4 primarily involves D2 lobe residues on the $\u03be_{1}$ face.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** This figure supplement relates to Figures 1 and 2. The overlap coefficient was computed for each pair of paths within each cluster for (A) GluN2A and (B) GluN1. The dotted line in each plot indicates the global mean  $\u27e8OC\u27e9$ = 0.557 for GluN2A and  $\u27e8OC\u27e9$ = 0.671 for GluN1. The mean for each cluster was computed for (C) GluN2A and (D) GluN1. For reference, the black solid line indicates the global mean.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** This figure supplement relates to Figures 1 and 2. Sidechain atoms are shown as spheres for (A) GluN2A in teal and (B) GluN1 in magenta and the adjacent domains labeled.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** This figure supplement relates to Figures 1 and 2. The two-dimensional ($\u03be_{1},\u03be_{2}$) order parameter was computed for all frames in binding/unbinding pathways and was plotted as a function of relative density as indicated by the colorbar.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** This figure supplement relates to Figures 1 and 2.\n\n![Video 1.](https://cdn.elifesciences.org/articles/77645/elife-77645-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/77645/elife-77645-video2.mp4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig2-v1.jpg)\n\n**Figure 2.:** (A) 2-dimensional order parameter ($\u03be_{1},\u03be_{2}$) that describes the degree of GluN1 LBD closure. For each of the above (B\u2013E), the left image shows D-serine density, while the right image shows the residues most frequently contacted by D-serine as it enters/leaves the binding site for each cluster. Labeled residues demonstrate \u2265 0.2 fractional occurrence defined relative to the most contacted residue in each cluster, but all residues with \u2265 0.1 fractional occurrence are shown in stick representation (see Figure 2\u2014source data 2). (B) In Cluster 1, D-Serine contacts residues on the $\u03be_{2}$ face of the LBD. (C) Cluster 2 involves interactions with both D1 and D2 residues of the $\u03be_{1}$ face. (D) Cluster 3 involves contacts with residues at the top of the D1 lobe on the $\u03be_{1}$ face. (E) Cluster 4 is defined by interactions with D1 loop 2 that reaches into solution.\n\nTo quantify the extent to which these clusters involve similar residue contacts, we used a pairwise similarity metric called the overlap coefficient (i.e., Szymkiewicz\u2013Simpson coefficient) that describes agreement between sets of residues (Vijaymeena and Kavitha, 2016). Doing so provides a way to determine whether these spatial clusters are mostly made up of random contacts, or whether groups of residues tend to act together to promote binding, allowing us to quantify the extent to which agonist diffusion is \u2018guided\u2019 by contacts along the LBD. For GluN2A, we computed the overlap coefficient for all path pairs in each cluster for comparison with the global mean (global  $OC$ = 0.557) (Figure 1\u2014figure supplement 1A). We found that pathway pairs in three of the four clusters yielded an overlap coefficient greater than the mean of all pairs of paths from all clusters, indicating that pathways in each cluster are made up of specific residue contacts (Figure 1\u2014figure supplement 1C). In contrast, for GluN1, a significant cluster (26 paths) involving interactions with residues on the $\u03be_{2}$ face of the LBD has a cluster mean $OC$ much less than the global mean (global  $OC$ = 0.671), indicating that this cluster primarily comprises random contacts (Figure 1B, Figure 1\u2014figure supplement 1B,D, Figure 1\u2014figure supplement 4). This suggests that D-serine binding to GluN1 may be more diffusion-driven and less guided than to GluN2A. Therefore, we propose that agonist binding mechanisms exist on a spectrum ranging from unguided to guided diffusion. The difference in the specificity of D-serine contacts along binding pathways for GluN2A and GluN1 suggests that the extent to which agonists rely on pathways of guiding residues depends on LBD architecture and not solely upon the identity of the agonist.\n\nMapping important pathway residues onto the intact GluN1/GluN2A NMDAR (PDB ID: 6MMM Jalali-Yazdi et al., 2018) further enriches our understanding of binding pathways by allowing us to determine whether residues in particular pathways are accessible for binding or obscured by other receptor domains and subunits. For GluN2A, access to residues on the extreme of the $\u03be_{2}$ face is slightly restricted by the presence of the GluN1 subunit of the adjacent LBD dimer (Figure 1\u2014figure supplement 2A). However, this interface does not seem to be near the specific residues identified as critical for binding. Even more restricted is access to residues on the $\u03be_{1}$ face of GluN1, which are obscured by GluN2A of the adjacent LBD dimer, including residues identified as critical for binding pathways (Figure 1\u2014figure supplement 2B). This might bias the pathways observed for the intact receptor by forcing the agonist to favor residues on the $\u03be_{2}$ face of the LBD. Since our overlap coefficient analysis of the cluster that corresponds to the $\u03be_{2}$ face of GluN1 identified more non-specific interactions, it is possible that the D-serine mechanism would be biased to favor unguided diffusion. It is also possible that access to residues near the N-terminal end of D1 would be restricted by the R2 lobe of its own ATD.\n\nWe next investigated whether a specific LBD conformational state was favored for successful D-serine binding pathways. We computed our ($\u03be_{1},\u03be_{2}$) order parameter to quantify the degree of closure of the LBDs for all trajectory frames identified as part of binding (and unbinding) pathways and found that ($\u03be_{1},\u03be_{2}$) = (16,14) for GluN2A (Figure 1\u2014figure supplement 3A) and ($\u03be_{1},\u03be_{2}$) = (11,13) for GluN1 (Figure 1\u2014figure supplement 3B). These values correspond to a partially open LBD. The LBD needs to be open enough for the ligand to diffuse into the pocket but closed enough to form some stabilizing interactions with the ligand. However, we notice that the $\u03be_{1}$ is smaller for GluN1, indicating that agonist binding can occur at slightly more closed LBD conformations. GluN1 pathways where ($\u03be_{1},\u03be_{2}$) = (11,13) are mostly in the cluster defined by D-serine interactions with Loop 2, highlighting the role of Loop 2 residues in D-serine binding to GluN1. Overall, these results suggest that the degree of LBD closure does influence the likelihood of successful binding.\n\n### Effects of D-serine binding on the LBD conformational free energy landscapes\n\nSince we did not expect to see D-serine binding to the GluN2A LBD, we needed to determine whether these GluN2A D-serine binding events are able to modulate the GluN2A LBD conformation. Since full LBD closure occurs on multi-microsecond to millisecond timescales (Sinitskiy et al., 2017; Dolino et al., 2016; Rajab et al., 2021), direct observation of such a conformational change was not fully captured from our equilibrium binding trajectories. Instead, to ensure we are sampling the full range of LBD conformations, we performed umbrella sampling free energy molecular dynamics simulations to obtain the conformational free energy landscape of GluN2A bound to D-serine (Figure 3A). We used the order parameter ($\u03be_{1},\u03be_{2}$) (Yao et al., 2013) that captures the opening and closing motion of the LBDs observed in crystal structures of these domains. Since no crystal structure exists for D-serine bound to GluN2A, we identified residues critical for stabilizing the agonist in the closed state by analyzing contacts in lowest-energy (\u22641 kcal mol\u20131) conformers extracted from the 2D PMF computed from umbrella sampling simulations of D-serine bound to the GluN2A LBD (Figure 3\u2014figure supplement 1). For reference, we compared the resulting energy landscape to those previously computed for the apo- and glutamate-bound GluN2A monomers (Figure 3C and D; Yao et al., 2013). In the apo PMF, there is a wide energy minimum that accommodates more open LBD conformations; in contrast, the glutamate-bound PMF exhibits a narrow and steep energy minimum at the closed state. We see that, like glutamate, D-serine stabilizes the closed LBD conformation. The D-serine energy landscape has a global minimum corresponding to ($\u03be_{1},\u03be_{2}$) values of (11, 11.5 \u00c5) and a metastable minimum corresponding to ($\u03be_{1},\u03be_{2}$) values of (15.5, 11.5 \u00c5). The presence of a metastable agonist-bound LBD partially open intermediate suggests that D-serine may not stabilize the closed conformation to the same extent as glutamate and generate sufficient force to control channel gating. We then compared different conformers corresponding to these two states to determine residues critical for agonist stabilization. The primary difference between the residue contacts in conformers of the two states is the prevalence of interactions with Thr-690 (Figure 3\u2014figure supplement 1B), which only contacts D-serine in the more closed state centered at ($\u03be_{1},\u03be_{2}$) = (11, 11.5 \u00c5). This is supported by our binding simulations; although we do not fully sample LBD closure, trajectory frames with low ($\u03be_{1},\u03be_{2}$) values involve contacts with Thr-690. This suggests that Thr-690 is critically involved in promoting full GluN2A LBD closure upon agonist binding.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig3-v1.jpg)\n\n**Figure 3.:** Umbrella sampling molecular dynamics simulations were used to compute the potential of mean force (PMF) along the ($\u03be_{1},\u03be_{2}$) order parameter for (A) D-serine bound to GluN2A, (B) glycine bound to GluN2A, (C) apo GluN2A previously computed in [196], (D) glutamate bound to GluN2A in its crystallographic pose previously computed in [196], (E) glutamate bound to GluN2A in the inverted pose identified in [218], (F) D-serine bound to GluN1, (G) glycine bound to GluN1 previously computed in [196], (H) apo GluN1 previously computed in Yao et al., 2013.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Binding-site residues for D-serine bound to the GluN2A LBD computed from lowest-energy conformers (1 kcal mol\u20131) from umbrella sampling simulations. Residues with >50% contact frequency in the ensemble of lowest-energy conformers are labeled here. (B) D-serine interaction with Thr-690 present in lowest-energy conformers.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The colors of the colorbar correspond to the standard deviation in kcal mol\u20131, which was computed for each window over 10 blocks.\n\nExperimental binding studies have indicated that D-serine may be a more potent GluN1 agonist than glycine (Mustafa et al., 2004). To better understand the molecular mechanism responsible for this difference in agonist potency, we computed the conformational free energy for the D-serine-bound GluN1 LBD (Figure 3F). Compared with the previously computed glycine-bound and apo LBDs (Figure 3G and H; Yao et al., 2013), the presence of D-serine in the binding cleft results in a greater population of conformers in the closed conformation and fewer conformers adopting a more open conformation. Similar to GluN2A Thr-690, GluN1 Asp-732 and (to a lesser extent) Ser-688 help stabilize D-serine in the closed LBD conformation by interacting with the D-serine hydroxyl. For this reason, we propose that D-serine\u2019s high potency is due, at least in part, to its ability to more strongly stabilize a closed LBD through additional interactions with the D2 lobe.\n\n### D-serine and glutamate compete for binding to the GluN2A LBD\n\nSince our simulations revealed that D-serine can enter the GluN2A LBD binding pocket and partially stabilize the active conformation, we hypothesized that D-serine might compete with glutamate for binding to GluN2A. In fact, we observed D-serine binding to GluN2A, even in the presence of glutamate, although glutamate bound more frequently and with longer residence times in the binding site (Figure 1\u2014source data 2, Figure 5\u2014source data 1). Specifically, there are 17 successful associations for glutamate in the 15 \u03bcs glycosylated mixed-agonist trajectory compared with 5 for D-serine, and 75 glutamate binding events compared with 6 D-serine binding events for the non-glycosylated mixed-agonist trajectory. In addition, the average time bound for glutamate was 131 ns (glycosylated) and 236 ns (non-glcyolated) compared with 3 ns (glycosylated) and 56 ns (non-glycosylated) for D-serine. Since increasing the D-serine concentration would increase the frequency of D-serine binding to GluN2A, it is possible that D-serine could function as an inhibitor (competitive antagonist) at high concentrations.\n\nTo probe this behavior experimentally, we measured GluN1-2A NMDAR currents using two-electrode voltage clamp (TEVC) electrophysiology. We observed that at high (~1 mM) D-serine concentrations, NMDAR activity was inhibited (Figure 4A). The inhibition was dependent on glutamate concentrations, implying that the inhibitory effect of D-serine may be competitive (Figure 4B). Furthermore, dose-response curves of glutamate activation were right-shifted in the presence of increasing concentrations of D-serine (Figure 4C). The calculated slope value of the Schild plot at 1.1 \u00b1 0.1 implied that D-serine and glutamate likely compete against each other (Figure 4C). Combined with our simulation results, our electrophysiological data support the hypothesis that D-serine at high concentrations can bind to the GluN2A subunit and compete against glutamate.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative Two-electrode voltage clamp (TEVC) recording on GluN1/GluN2A NMDARs expressing oocytes. The traces show inhibition of the NMDAR current by the GluN1 agonists D-serine (left) and glycine (right) at a high concentration. 6 \u03bcM of glutamate is present throughout the recording. (B) D-serine inhibition at various concentrations of glutamate (1, 3, 10, and 30 \u03bcM). . (C) Glutamate responses at various concentrations of D-serine (0.123, 0.37, 3.33 and 10 mM) (left). Schild plot analysis of D-serine competition against glutamate (right). The calculated slope of the Schild plot was 1.11 \u00b1 0.13 and the intercept was 2.38 \u00b1 0.26. DR stands for dose ratio. (D) D-serine inhibition curves (left) and IC50 values for various pathway residue mutants on GluN1 and GluN2A LBDs (right). The pairwise comparison shows that the changes in IC50 values of the mutants from the wild type are significant. The statistical analysis was done by two-tail t-test where the p values are GluN1a-R694A = 0.0061, GluN1a-R695A = 0.0065, GluN2A-R692A = 4.1 \u00d7 10\u20139, and GluN2A-R695A = 3.3 \u00d7 10\u20135. All experiments were repeated in at least four independent oocytes. Error bars represent the average current \u00b1 SD.\n\nSince a similar inhibitory effect was also observed at high glycine concentrations by TEVC electrophysiology (Figure 4A), we repeated our umbrella sampling simulations with glycine bound to the GluN2A LBD. We see that glycine also favors the closed LBD (Figure 3B). The lowest-energy conformers of GluN2A with glycine are fastened shut by contacts between the N-terminal amine of glycine and Tyr-730. Although glutamate still stabilizes the closed GluN2A LBD to the greatest extent, comparable thermodynamics between different agonists suggest that kinetics of agonist binding and unbinding is a critical driver of agonist-induced activation. The GluN2A LBD likely never closes around glycine because glycine does not remain bound long enough to induce LBD closure.\n\nPrevious binding studies Mayer, 2017 have indicated that glutamate, the primary GluN2A agonist, similarly relies on LBD surface residues to promote binding. To determine whether D-serine and glutamate binding are guided by similar residue contacts, we computed the overlap coefficient between residues in D-serine and glutamate pathways to be 0.964 for the glycosylated GluN2A LBD, corresponding to a significant overlap in agonist occupancy (Figure 5A). This high degree of overlap between glutamate and D-serine pathway residues indicates that they bind through similar mechanisms. To assess the importance of pathway residues for D-serine binding to the LBD dimer, we performed TEVC electrophysiology to obtain D-serine dose-response curves for various pathway mutants for GluN1 and GluN2A (Figure 4D). Notably, the GluN2A mutants Arg692Ala and Arg695Ala showed two to three-fold decreased D-serine inhibition potency. This result suggests that these two GluN2A residues play a role in D-serine inhibition and D-serine guided-diffusion pathways. Since these residues are also involved in glutamate binding pathways, this finding more generally supports the guided-diffusion mechanism by which agonists bind to GluN2A. The absence of this effect on the two GluN1 pathway mutants supports the increased diffusive behavior of D-serine binding to GluN1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig5-v1.jpg)\n\n**Figure 5.:** (A) Overlay of D-serine (teal) and glutamate (gray) density. (B) Residues that distinguish D-serine (teal) from glutamate (gray) binding pathways (see Figure 5\u2014source data 2).\n\nTo determine the extent to which D-serine and glutamate binding are guided by similar residue contacts, we computed the overlap coefficient between residues in D-serine and glutamate pathways to be 0.964 for the glycosylated GluN2A LBD, corresponding to a significant overlap in agonist occupancy (Figure 5A). This high degree of overlap between glutamate and D-serine pathway residues indicates that they bind through similar mechanisms.\n\nDespite similar pathway residues, we identified key residues that distinguish glutamate from D-serine binding pathways (Figure 5B and Figure 5\u2014source data 2). Most of the residues important for D-serine binding, but not for glutamate binding, are located on the $\u03be_{2}$ face of the LBD. Most notably, Glu-413, Tyr-730, Ser-511, and Asp-731 all occur in D-serine binding pathways with a frequency of more than ten times their fractional occurrence in glutamate binding pathways. Due to the locations of these residues (involved in either LBD closure or dimerization), we were unable to experimentally assess their effect on the D-serine inhibition. It is important to note, however, that glutamate does interact with residues on the $\u03be_{2}$ face, but the specific nature of those contacts differs between the two agonists. In contrast, we found that Lys-487 is contacted with significantly greater frequency in glutamate binding pathways. Due to these residues\u2019 close proximity to the binding cleft, it is likely that these residues are responsible for facilitating proper positioning of the agonists in the binding site, based on differences in agonist size and shape.\n\nAn important feature of glutamate binding to GluN2A is its ability to bind in an inverted pose relative to the crystal structure, which we observed in previous simulations (Yu and Lau, 2018; Yu et al., 2018). Since no experimental structure exists for glutamate bound in the inverted pose, we performed umbrella sampling simulations to determine the free energy landscape of the GluN2A LBD with glutamate bound in the inverted pose (Figure 3E). We found that glutamate bound in the inverted pose prevents full LBD closure as predicted in previous work (Yu and Lau, 2018). Specifically, glutamate in the inverted pose stabilizes a conformation centered around ($\u03be_{1},\u03be_{2}$) values of (14, 13 \u00c5). Comparing the low-energy conformers of D-serine and inverted glutamate (\u22641 kcal mol\u20131) with the glutamate-bound crystal structure, we found that D-serine and glutamate are stabilized by the same residues, although there are fewer interactions between Thr-690 and glutamate in the inverted pose, further supporting the importance of this residue for stabilizing the fully closed LBD.\n\n### Kinetic analysis of D-serine binding pathways\n\nWe computed the D-serine association rate constant (kon) for GluN2A and GluN1 LBDs using a method described (Dror et al., 2011) and used in previous iGluR work (Yu et al., 2018) as summarized in the equation below:\n\n$$\nk_{on}=\\frac{N_{b}}{\\sumi\\frac{t_{i}[L_{i}]}{s_{i}}}.\n$$\n\nHere, $N_{b}$ is the number of association events, $t_{i}$ is the time the agonist spends in bulk solvent, $s_{i}$ is the number of identical binding sites, and $L_{i}$ is the concentration of free agonist. One advantage of this approach is the ability to combine simulations performed at various concentrations of free agonist $L_{i}$ . Here, $k_{on}$ is a bulk property and relies on fully sampling the LBD conformational landscape throughout the simulation. However, our binding simulations fail to adequately sample the agonist-bound, closed LBD state. This affects both the number of observed binding events $N_{b}$ and the time the agonist spends in bulk solvent ($t_{i}$). Since this value is most sensitive to the number of identified binding events $N_{b}$ , we computed the $k_{on}$ for different $N_{b}$ values based on the duration of the resulting binding event. This minimizes contributions from extremely short binding events that are unlikely to be functionally relevant. For GluN2A, this results in a D-serine $k_{on}$ with an upper bound of $7.8\\times10^{7}$ M\u20131s\u20131 (all events included) and a lower bound of $1.6\\times10^{7}$ M\u20131s\u20131 (only events with agonist residence times >100 ns were included). For GluN1, the upper bound for $k_{on}$ is $9.0\\times10^{7}$ M\u20131s\u20131 and the lower bound is $7.0\\times10^{6}$ M\u20131s\u20131. Based on these values, it is reasonable to expect that D-serine binds to GluN2A and GluN1 at similar rates. For comparison, the association rate constants computed for glutamate binding to GluN2A with this method range from $4.9\\times10^{7}$ M\u20131s\u20131 to $1.4\\times10^{8}$ M\u20131s\u20131. Similar ranges of D-serine binding rate constants for GluN2A and GluN1 support our data indicating a guided-diffusion mechanism. However, this definition of the association rate constant does not capture the molecular details that produce this bulk behavior.\n\nFor agonist binding mechanisms dominated by guided diffusion, we can monitor how much time the agonist spends (1) in bulk solvent, (2) associated with the LBDs, and (3) docked in the binding cleft (interacting with the conserved arginines Arg-523 for GluN1 or Arg-518 for GluN2A). Transitions between these states can be represented by the following three-step process:\n\n$$\nP+L\u21ccPL_{assoc}\u21ccPL_{docked}.\n$$\n\nHere, the $PL_{assoc}$ state either results in successful binding (represented by pathways) or nonspecific interactions resulting in dissociation. From the clusters of residues that we identified in our pathway similarity analysis, we determined to what extent a particular residue is critical for guiding the agonist into the binding site using a conditional probability-based framework (Figure 1\u2014source data 4, Figure 2\u2014source data 3). For GluN2A, given that a binding event results in successful agonist docking, residues Asp-515, Glu-517, Arg-692, Asn-687, Lys-487, Lys-484, and Ser-689, Lys-488, Ser-511, and Glu-413 are contacted most frequently across all datasets. Given successful D-serine binding, contacts with GluN1 residues Lys-496, Lys-495, Trp-498, Arg-489, and Glu-497 occur in the greatest number of pathways. Slightly less agreement in crucial GluN1 binding residues across datasets further supports a more diffusive/random binding mechanism for D-serine binding to GluN1.\n\nCalculating the number of successful binding events compared with random associations allows us to determine the level of noise present in the binding process. For glycosylated simulations with 19.6 mM D-serine, we observe an average of 1242 \u00b1 31 random GluN2A associations (n=3 simulations) per microsecond (1249 \u00b1 1 for GluN1, n=2 simulations) that fail to result in successful binding. In these same simulations, we observe about 1.2 \u00b1 0.6 successful GluN2A binding events per microsecond (1.0 \u00b1 0.5 for GluN1).\n\nSupporting our guided-diffusion mechanism, we identified residues for which the ratio of successful to random binding was increased. In general, GluN2A LBD residues contacted by the agonist experience 26 \u00b1 2 random associations per microsecond (31 \u00b1 1 for GluN1). For each residue involved in successful D-serine binding pathways, we calculated the percentage of associations resulting in successful binding. For residues important for guided-diffusion pathways, this percentage is >1% (Figure 1\u2014source data 4, Figure 2\u2014source data 3). This allows us to quantify the importance of pathway residues despite a noisy non-specific association signal.\n\n### Role of N-linked glycans in D-serine binding pathways\n\nIn addition to identifying residues that are responsible for agonist specificity in binding pathways, we also explored the effect of the N-linked Man5GlcNAc2 (Man5) glycans (Figure 6\u2014figure supplement 1A) on the residues involved in agonist binding pathways. Previous electrophysiological studies have indicated that glycans function as LBD potentiators (Sinitskiy and Pande, 2017). In our simulations, we observed that near-pocket glycans appear to \u2018reach\u2019 into the binding pocket. This reaching behavior was observed in previous simulations of the glycosylated NMDAR LBDs in which the glycan forms a \u2018cage\u2019 around the binding pocket by forming interactions with the LBD D2 lobe and is believed to be associated with NMDAR potentiation by glycans (Sinitskiy and Pande, 2017). For GluN2A, there are two glycans that are near the binding pocket: N443-Man5 and N444-Man5, both of which can interact with the LBD D2 lobe (Figure 6A). For GluN1, there is a single glycan N491-Man5 that adopts this caged conformation (Figure 6B). To quantify this behavior in our simulations, we developed a general order parameter to describe the relationship between the glycan and the LBD D2 lobe that measured the minimum distance between any glycan heavy atom and any residue on the LBD D2 lobe. From this order parameter, we computed glycan PMFs along the glycan-D2 order parameter for each near-pocket glycan (Figure 6C\u2013E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig6-v1.jpg)\n\n**Figure 6.:** N-linked Man5GlcNAc2 (Man5) glycans (A) N443-Man5 and N444-Man5 for GluN2A and (B) N491-Man5 for GluN1. Glycan conformational energy landscapes for (C) GluN2A N443-Man5, (D) GluN2A N444-Man5, and (E) GluN1 N491-Man5 were obtained by computing the minimum distance between all glycan heavy atoms and D2 lobe residues and binning the distribution from all glycosylated simulation systems. Shaded error regions were computed using a block-averaging scheme described in Methods.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic of the Man5 glycan. (B) Contact network involving the GluN2A N443-Man5 glycan and residues Glu-412 and, Lys-438, (C) Lys-738 and Glu-413, (D) Glu-413,Tyr-730, and Ser-511. (E) Contact network involving the GluN2A N444-Man5 glycan and residues Lys-487 and Asn-687, (F) Lys-487, Arg-692, and Arg-695. (G) Contact network formed between D-serine, the GluN1 N491-Man5 glycan, and Arg-489. (H) Additional GluN1 contact network formed between both GluN1 N491-Man5 and N440-Man5 glycans, residues Arg-489 and Glu-497, and D-serine.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig6-figsupp2-v1.jpg)\n\nWe compared our glycosylated trajectories with an additional 30 \u03bcs of simulations of the non-glycosylated GluN1/GluN2A LBD dimer to identify ways in which the presence of glycans influences binding pathways. Our data indicate that residues on the $\u03be_{2}$ face are contacted more frequently in non-glycosylated simulations, although these residues are important for D-serine binding with and without glycans (Figure 6\u2014source data 1). GluN2A residues Asp-515 and Glu-517, are contacted more frequently in glycosylated systems. The frequency with which D-serine interacts with GluN1 residue Arg-489 in pathways is greater for glycosylated pathways than those without glycans. On average, glycan-mediated D-serine interactions result in slightly longer pathways, suggesting that the presence of glycans slows down the binding process, setting up small kinetic \u2018traps\u2019.\n\nWhen we analyzed glycan behavior in our binding pathways, we found that very few D-serine binding pathways (27% for both GluN2A and GluN1) involve contacts with glycans. While glycan-agonist interactions make up a small percentage of time spent in binding pathways (10% for GluN2A and GluN1 D-serine pathways), patterns in glycan interactions with the agonist as it binds suggest that glycans contribute to binding pathways in a consistent way. The most common glycan-mediated D-serine-LBD interactions for GluN2A involve an interaction network formed by N443-Man5 with Glu-412, Lys-438 (Figure 6\u2014figure supplement 1B), Lys-738, Glu-413 (Figure 6\u2014figure supplement 1C), Tyr-730, and Ser-511 (Figure 6\u2014figure supplement 1D), as D-serine moves into the binding pocket. Another contact network formed by N444-Man5 with Lys-487, Asn-687 (Figure 6\u2014figure supplement 1E), Arg-692, Arg-695, (Figure 6\u2014figure supplement 1F), and Glu-413 (alongside the N443-Man5 glycan). For GluN1, the N491-Man5 glycan interacts with D-serine, trapping it in a network of interactions dominated by Arg-489 (Figure 6\u2014figure supplement 1G). When formed, this contact network functions as a kinetic trap that results in longer binding pathways. Additionally, the N440-Man5 glycan also contacts D-serine as it interacts with Arg-489 and Glu-497 (Figure 6\u2014figure supplement 1H). It is interesting to note that, unlike the glycan-mediated contacts identified for GluN2A, glycan-mediated agonist contacts for GluN1 do not involve D2 lobe residues. These glycan-mediated interactions illustrate how glycan conformation can play a functional role through involvement with agonist binding and LBD conformational dynamics. However, since glycan-mediated interactions are so infrequent, the potentiating effect of glycan-D2 interactions dominates functionally.\n\nWe quantified the dependence of glycan conformation on agonist binding and LBD conformation by comparing glycan PMFs for different LBD conformations. For GluN2A, we found that glycan-D2 interactions occur more readily when the LBD is closed (calculated using a 1-dimensional projection of our LBD order parameter $\u03be_{12}$ , see Methods). This effect was more dramatic for N443-Man5 than for N444-Man5 (Figure 7A and B). A similar relationship was determined for the N491-Man5 glycan of GluN1 (Figure 7C); this is consistent with previous simulations (Sinitskiy and Pande, 2017) that suggest that N491-Man5 acts as a latch that stabilizes LBD closure. No significant relationship between glycan-D2 distance and the presence of an agonist (D-serine, glutamate, or both) in the binding site was observed (Figure 6\u2014figure supplement 2A-C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/77645/elife-77645-fig7-v1.jpg)\n\n## Discussion\n\nHere, we characterized the guided-diffusion mechanism that drives D-serine binding to NMDAR LBDs. Instead of binding solely to the GluN1 LBD, we observed substantial D-serine binding to the GluN2A LBD, a subunit widely accepted to bind to the neurotransmitter glutamate. We showed by electrophysiology that D-serine at high concentration can compete against glutamate at GluN2A, which in turn inhibits the channel activity. In the context of synaptic transmission, our finding implies that D-serine could play a role in modulating the strength of synaptic transmission. The synaptic concentration of glutamate ranges from nanomolar concentrations Chiu and Jahr, 2017 to >1 mM following an action potential (Dzubay and Jahr, 1999). The synaptic concentration of D-serine is unclear, however; the extracellular concentration of D-serine ranges from 5 to 7 \u00b5M (Matsui et al., 1995; Hashimoto et al., 1995). Possible routes for D-serine to enter the synapse include vesicular release by astroglia (Mothet et al., 2005) and transport by Asc-1 (Sason et al., 2017).\n\nFree energy landscapes computed for GluN2A bound to glutamate (Yao et al., 2013), D-serine, and glycine all indicate stabilization of the closed LBD bi-lobe, which is the conformational state required for receptor activation. Agonists that can interact extensively with bottom-lobe residues stabilize this state. Since glutamate does this to the greatest extent, it is likely that D-serine does not generate sufficient force to fully gate the ion channel. Subtle differences in the thermodynamics of agonist stabilization suggest that kinetics further distinguish individual agonists. While glutamate has a slightly higher association rate than D-serine, differences between association rates across agonists and subunits are not drastic. We hypothesize that, in order for agonist binding to result in NMDAR activation, the agonist must remain in the binding site long enough to induce closure\u2014we found that this is largely dependent upon the number and strength of stable contacts the agonist forms with both D1 and D2 lobe residues.\n\nWe determined the role of N-linked glycans in agonist binding and stabilization. Glycans impact agonist binding kinetics less by direct glycan-agonist interactions and more by stabilizing the closed LBD through glycan-D2 interactions. This bias toward LBD closure would increase the agonist residence time and potentiate NMDAR activity.\n\nOur adaptation of pathway similarity analysis allowed us to identify clusters of residues critical for binding agonists. This also allowed us to determine that the presence of pathways depends on the degree of LBD closure. We also observed that D-serine binds to GluN2A using similar pathways and residues as glutamate, while the locations of key D-serine cluster residues for GluN1 are different. Applied more broadly to drug-binding simulations, this method of analyzing binding pathways provides a useful framework for gleaning biological insight from noisy and diffusive binding data.\n\n## Methods\n\n### Equilibrium molecular dynamics simulations\n\nA construct of the GluN1/GluN2A dimer based on crystal structure PDB ID: 2A5T Furukawa et al., 2005 used in our previous study (Yu and Lau, 2018) was used as a starting model. The residue numberings are based on the Uniprot numbering for GRIN1 and GRIN2a entries. Man5GlcNAc2 (Man5) glycans were added using CHARMM-GUI Glycan Reader & Modeler (Jo et al., 2008; Jo et al., 2011; Park et al., 2017; Park et al., 2019) to asparagine residues 440, 471, 491, and 771 of GluN1 and asparagine residues 443 and 444 of GluN2A in accordance with physiologically relevant glycosylation sites (Kaniakova et al., 2016). GluN2A was chosen as the GluN2 subtype both to facilitate comparison with previous simulation studies and because recent evidence has suggested that the GluN2A subtype is the primary subtype at synapses, where D-serine is the dominant co-agonist (Papouin et al., 2012).\n\nAll systems were solvated in a 140 \u00c5 \u00d7110 \u00c5 \u00d7110 \u00c5 orthorhombic water box with ~150 mM NaCl using CHARMM (Brooks et al., 2009). All systems were electrically neutral. All simulations in this work were performed using the CHARMM36 forcefield (MacKerell et al., 1998) and TIP3P water model (Jorgensen et al., 1983). The systems were pre-equilibrated using NAMD 2.13 (Phillips et al., 2005) first using NVT conditions and gradually relaxing backbone-sidechain restraints and then for 15 ns using NPT conditions at a pressure of 1 atm and a temperature of 310 K. The pre-equilibrated systems were then simulated on Anton 2 provided by the Pittsburgh Supercomputer Center (Shaw et al., 2014). A weak center-of-mass restraint of 0.5 kcal mol\u20131 \u00c5\u20132 was applied to GluN2A N, CA, and C atoms of residues 461\u2013463. 507\u2013509, and 523\u2013525 to prevent large protein translational motion. Simulations on Anton 2 were carried out at 310 K with the NPT ensemble and with the weak center-of-mass restraint of 0.3 kcal mol\u20131 \u00c5\u20132 in accordance with previous simulations (Yu et al., 2018). Additional simulation details are provided in Figure 1\u2014source data 1.\n\n### Identification of binding pathways\n\nIdentifying frames in which the ligand is bound in the receptor\u2019s binding pocket provides key information about the ligand\u2019s binding affinity and the bound ensemble; however, it fails to account for the process by which the ligand enters and leaves the binding pocket. In guided diffusion, the residues that guide the ligand into the binding pocket are critical for promoting the bound state. While imposing a simple distance cutoff is sufficient for identifying the fully bound state, identifying the pathways by which the ligand binds is less trivial. Here, we introduce a \u2018binding chains\u2019 paradigm for defining the ligand\u2019s path along the protein. These binding chains are defined from ligand association to dissociation. An association begins when any polar ligand heavy atom comes within 6 \u00c5 of any protein polar heavy atom. The ligand is considered associated until it diffuses beyond 10 \u00c5 from the protein. The resulting chains are then filtered by contact with the selected \u2018docking\u2019 residue(s). Here, we use the conserved arginine residue for each subunit (Arg-523 for GluN1 and Arg-518 for GluN2A) as the essential docking residue. These chains are filtered then split into their \u2018binding\u2019 and \u2018unbinding\u2019 components by a more specific docking criterion. In our case, we require that the NH1 and NH2 atoms of the conserved arginine be within 4 \u00c5 of the ligand carboxyl in accordance with the following scheme:\n\n#### OR\n\nThis scheme accounts for both the crystallographic binding pose (Condition 2) and a \u2018flipped\u2019 ligand orientation (Condition 1). Chains that fail to meet these criteria are discarded. Since binding and unbinding pathways can be considered reversible, we combine them in our analysis, reversing the order of the unbinding pathways so that all pathways have the same directionality. This results in a series of binding pathways we can characterize both geometrically and in terms of key residue interactions.\n\n### Pathway similarity analysis and clustering\n\nPathway similarity analysis (PSA) was applied to each binding pathway by monitoring the agonist position as it binds. PSA involves computing a pairwise distance metric between paths that serves as a measure of geometric similarity (Seyler et al., 2015). The weighted average Hausdorff distance was selected as the path metric because it gave the most geospatially distinct clusters of agonist density around the protein. This weighted average Hausdorff distance was computed for all pairs of paths using the following formula as described in previous work (Seyler et al., 2015) and implemented in the MDAnalysis python package (Michaud-Agrawal et al., 2011; Gowers et al., 2016). The weighted-average Hausdorff distance between two paths $A$ and $B$ can be expressed as:\n\n$$\n\\delta_{H}^{w_{avg}}(A,B)=\\frac{1}{2}[\\frac{1}{|A|}\\delta_{H}^{sum}(A|B)+\\frac{1}{|B|}\\delta_{H}^{sum}(B|A)],\n$$\n\nwhere $A$ and $B$ are the number of frames in paths $A$ and $B$, respectively, and $\\delta_{H}^{sum}$ is the one-sided summed Hausdorff distance from path $A$ to path $B$,\n\n$$\n\\delta_{H}^{sum}(A|B)=\\suma\\inAmin_{b\\inB}d(a,b).\n$$\n\nHere, $da,b$ represents the distance between point $a$ of path $A$ and point $b$ in path $B$. For our system, each point $a$ is the agonist $C_{\\alpha}$ position for a single frame in path $A$, and each point $b$ is the agonist $C_{\\alpha}$ position for a single frame in path $B$. Therefore, $da,b$ represents the Euclidean distance between the agonist $C_{\\alpha}$ \u2019s of points in paths $A$ and $B$. $\\delta_{H}^{sum}(A|B)$ is then computed by summing the shortest distance from each point $a$ in path $A$ to any point $b$ of path $B$ overall points in path $A$. Each of the normalized one-sided sums $\\delta_{H}^{sum}(A|B)$ and $\\delta_{H}^{sum}(B|A)$ is then averaged with equal weights. This does not give more weight to pathways with more frames, thus removing the temporal component from the analysis. Temporal patterns in binding pathways are analyzed for the spatial clusters separately.\n\nThese path pairs were then clustered using hierarchical clustering according to their weighted-average Hausdorff distances with the Ward (minimum variance) linkage criterion as described in previous work (Seyler et al., 2015) and implemented in SciPy (Virtanen et al., 2020). The complete linkage criterion also gave reasonable clustering. This agglomerative metric assigns clusters by successively combining clusters that minimize the sum of squared errors between them. Hierarchical clustering presents an advantage here because it does not assume the number of clusters a priori. Rather, final clusters were selected using the Ward distances showed in the dendrograms (see supplemental) as a guide and by overlaying the ligand occupancy density on the protein to ensure that each cluster represents a distinct spatial region of the protein.\n\n### Quantifying residue similarity with the overlap coefficient (Szymkiewicz\u2013Simpson coefficient)\n\nTo quantify the similarity between two sets of residues $A$ and $B$, the overlap coefficient was computed by dividing the number of overlapping residues between $A$ and $B$ by the size of the smaller set of residues and is illustrated in the equation below (Vijaymeena and Kavitha, 2016):\n\n$$\nOC(A,B)=\\frac{|A\u2229B|}{min(|A|,|B|)}\n$$\n\nScaling the size of the intersection by the smallest set size normalizes the overlap and accounts for the large range in pathway lengths. If $A$ is a subset of $B$, then $OCA,B=1$. This scaling method is appropriate, since these pathways are stochastic and involve a mixture of random residue contacts and \u2018guiding\u2019 residue contacts critical for binding. This would be problematic for the more common Jaccard similarity metric, which scales the intersection by the total size of both sets, where many random contacts increase pathway length and dilute the value of the similarity metric.\n\nThe overlap coefficient was used to quantify the residue overlap between pairs of pathways in each cluster to validate the spatial clustering and determine whether pathways within clusters involve similar residue contacts. In addition, this metric was used to quantify the similarity between residues involved in D-serine and glutamate binding.\n\n### Umbrella sampling\n\nAll-atom models were constructed from monomeric GluN1 (PDB ID: 1PB8 Furukawa and Gouaux, 2003) and GluN2A (based on PDB ID: 2A5S Furukawa et al., 2005). Since no crystal structure of D-serine bound GluN2A exists, LBDs were constructed using MODELLER (Webb and Sali, 2016) to fill in missing residues, and sidechain remodeling was performed on those residues using SCWRL4 (Krivov et al., 2009). D-serine and glycine were modeled into the GluN2A LBD by superimposing the conserved arginine of the 2A5S glutamate-bound crystal structure (Arg-518) with the conserved arginine of the D-serine (1PB8) or glycine (1PB7) bound crystal structure, since there exists no crystal structure of GluN2A bound to these agonists. Bound crystallographic waters in the GluN2A (2A5S) and GluN1 (1PB8) structures were retained in the simulations.\n\nTo generate windows for umbrella sampling, targeted molecular dynamics simulations were performed by \u2018opening\u2019 the closed LBD along the order parameter ($\u03be_{1},\u03be_{2}$) (Yao et al., 2013). Specifically, $\u03be_{1}$ and $\u03be_{2}$ are defined as the center of mass distance between the backbone atoms of the following residue selections: $\u03be_{1}$ is defined by residues 484\u2013485 and 688\u2013689 for GluN1 and residues 485\u2013486 and 689\u2013690 for GluN2A. $\u03be_{2}$ is defined by residues 405\u2013407 and 714\u2013715 for GluN1 and 413\u2013414 and 713\u2013714 for GluN2A. 205 simulation windows were selected at 1 \u00c5 \u00d71 \u00c5 increments. Each window was solvated with a solvent box with dimensions 94 \u00c5 \u00d772 \u00c5 \u00d768 \u00c5 and 150 mM NaCl.\n\nUmbrella sampling simulations were performed by applying a bias of 2 kcal mol\u20131 \u00c5-2 to the ($\u03be_{1},\u03be_{2}$) order parameter to each of the 205 simulation windows. Equilibration was performed in an NVT ensemble by gradually relaxing backbone and sidechain restraints, and production simulations were carried out in an NPT ensemble at 300 K and 1 atm for best comparison with previously computed NMDAR LBD monomers (Yao et al., 2013). To ensure that the agonist does not diffuse out of the binding site, a restraint of 2 kcal mol\u20131 \u00c5\u20132 between the carboxyl group of the agonist and the guanidinium group of the conserved arginine (Arg-523 for GluN1 and Arg-518 for GluN2A) was applied if the distance between these groups exceeded 3.2 \u00c5. Previous work has indicated that these restraints do not affect the results but ensures that only the bound population is sampled (Yao et al., 2013). A weak center-of-mass restraint of 0.5 kcal mol\u20131 \u00c5\u20132 was used applied to the N, CA, and C atoms of residues 461\u2013463, 507\u2013509, and 523\u2013525 for GluN2A and residues 460\u2013462, 512\u2013514, and 528\u2013530 for GluN1 to prevent translational protein motion. Biased trajectories were mathematically unbiased using the weighted histogram analysis method (WHAM) (Kumar et al., 1992; Souaille et al., 2001). 5 ns of production sampling for each window were used to compute the potential of mean force (PMF) for each simulation agonist. Standard deviations of all PMFs were computed by block averaging with ten blocks of trajectory for each window (Grossfield and Zuckerman, 2009).\n\n### Computing energetics of glycan conformational dynamics\n\nTo quantify glycan conformational dynamics, a glycan-D2 order parameter was defined as the minimum distance between the heavy atoms of the glycans near the binding cleft (N491-Man5 for GluN1 and N443-Man5 and N444-Man5 for GluN2A) and the bottom lobe $C_{\\alpha}$ atoms (residues 537\u2013544 and 663\u2013754 for GluN1 and residues 533\u2013539 and 661\u2013757 for GluN2A). One relative PMF was computed for each of the three near-pocket glycans using a window size of 0.2 \u00c5 using all glycosylated datasets. Error for each PMF was quantified using the standard deviation computed by block averaging with five blocks (Figure 3\u2014figure supplement 2A-D). Blocks for which the window is not sampled were omitted from the error calculation; this was only necessary for high glycan distances >20 \u00c5. A 1D projection of the ($\u03be_{1},\u03be_{2}$) order parameter, $\u03be_{12}$ , which averages $\u03be_{1}$ and $\u03be_{2}$ , was used as a single measure of LBD closure for computing glycan PMFs (Yao et al., 2013; Wied et al., 2019; Chin et al., 2020).\n\n### Electrophysiology\n\ncRNA encoding GluN1-4a and GluN2A was injected into defolliculated Xenopus laevis oocytes (0.2\u20130.5 ng total cRNA per oocyte). The oocytes were incubated in recovery medium (50% L-15 medium (Hyclone) buffered by 15 mM Na-HEPES at a final pH of 7.4), supplemented with 100 \u03bcg mL\u22121 streptomycin, and 100 U mL\u22121 penicillin at 18 \u00b0C. Two electrode voltage clamp (TEVC; Axoclamp-2B) recording was performed between 24 and 48 hr after injection using an extracellular solution containing 5 mM HEPES, 100 mM NaCl, 0.3 mM BaCl2, 10 mM Tricine at final pH 7.4 (adjusted with KOH). The current was measured using agarose-tipped microelectrode (0.4\u20130.9 M\u03a9) at the holding potential of \u221260 mV. Maximal response currents were evoked by 100 \u03bcM of D-serine and 100 \u03bcM of L-glutamate. Data was acquired by the program PatchMaster (HEKA) and analyzed by Origin 8 (OriginLab Corp).\n",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "c722a468-54e2-492d-93b5-b54bbbb9aca2",
+      "submission_id": "7eb3e49b-afee-4365-bea6-dff00718ecc6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Janice L Robertson, https://ror.org/01yc7t268 Washington University in St Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77645.sa0](https://doi.org/10.7554/eLife.77645.sa0)\n\nActivation of NMDA receptors requires two co-agonists: Glutamate that binds to the GluN2 subunit and glycine/D-serine that binds to the GluN1 subunit. In the present manuscript, the authors address the interaction of D-serine, which is a less studied co-agonist than glycine, with the GluN1 and GluN2A subunits using molecular simulations as well as electrophysiology experiments. Surprisingly they find that D-serine interacts with the GluN2 subunit, further expanding our molecular understanding of NMDA receptor structure-function. This paper will be of interest to those who study NMDA receptors and ligand-gated ion channels in general.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Janice L Robertson, https://ror.org/01yc7t268 Washington University in St Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77645.sa1](https://doi.org/10.7554/eLife.77645.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Excitatory and inhibitory D-serine binding to the NMDA receptor\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Janice L Robertson as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Yun Lyna Luo (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers thought the manuscript was interesting and the research was carefully conducted. In particular, the discovery of D-serine interaction with GluN2A and its inhibitory effect is a novel result that will be of interest to the broader community. However, some questions remained as to the mechanism and the physiological or pharmacological relevance. The following major revisions are required to clarify these questions.\n\n1) It is unclear to us whether D-serine has the capacity to reach such high concentrations in a physiological or pharmacological setting. Please provide more justification for this, or attenuate the conclusions that this provides a possible therapeutic treatment.\n\n2) Extensive analysis is presented about the association of D-serine and its impact on LBD closure or efficacy. However, differences in agonist potency can be due to the differences in binding affinity and/or efficacy. Stabilization of the closed LBD conformation may indicate a change in efficacy, but affinity (KD) will still play a role in the final potency. The question still remains as to whether the binding affinity of D-serine to the two LBDs is stronger or weaker in comparison with glutamate and glycine. The relative strength of binding may be estimated if multiple associations and dissociation events have been captured in the conventional MD simulations. But it is not really clear whether dissociation events have been observed, and this needs to be clearly presented in the revised manuscript. Alternatively, this can be computed using alchemical free energy calculations or PMF calculations. Finally, an experimental KD should be extracted from the experimental competition data to compare to glutamate binding affinity and provide a reference for the computational analysis.\n\n3) It is proposed that guided-diffusion drives serine binding to its site. This would imply that the residues on this path are necessary, and if mutated, would decrease the association rate and the ability for D-serine to compete with glutamate. Additional electrophysiological experiments or direct binding experiments would be useful in understanding the relevance of guided diffusion in the ligand-binding mechanism of NMDARs.\n\n4) Please clarify what is the non-specific association signal in the MD simulations. Perhaps this has already been addressed in a previous study but should be included here. One option is to analyze the current trajectories and calculate the association event probabilities for a residue on the proposed guided path, compared to a similar residue at another interface that does not lead to the binding site. Alternatively, one could compare the current results with a negative control simulation where the ligand was replaced with a similar amino acid or molecule that has been verified as a non-binder for NMDAR.\n\nReviewer #1 (Recommendations for the authors):\n\nThe following changes are suggested for clarification:\n\n1. The supplementary figure labels do not match the text.\n\nReviewer #2 (Recommendations for the authors):\n\nThe 2D-PMF of apo-state GluN2A LBD (Figure 3 C) only shows one minimum, rather than two states (open vs. closed) separated by a free energy barrier. Some clarification would be helpful for readers to better understand this free energy landscape.\n\nOn page 9 line 186, \"we identified residues critical for stabilizing the agonist in the closed state by analyzing contacts in lowest-energy (<1 kcal/mol) conformers\". More information is needed here or in the method section in terms of how the lowest energy was computed.\n\nOn page 10 line 217, \"In fact, we observed D-serine binding to GluN2A, even in presence of glutamate\" in the bulk solution or in the binding site? This is an important point if the LBD could accommodate glutamate and D-serine at the same time. But this somehow contradicts the competitive binding mechanism. If glutamate is present in the bulk solution during D-serine spontaneous binding simulations, do they have the same bulk concentration? Please clarify.\n\nOn page 10 line 218, \"glutamate bound more frequently than D-serine and with longer residence times in the binding site\" While the raw data is available in the Datasets, the number of binding events and residence time (1/Koff) could be briefly mentioned here to give a more quantitative comparison.\n\nOn page 17 lines 381-382, Figure S7 should be Figure S6?\n\nReviewer #3 (Recommendations for the authors):\n\nI have just some general comments:\n\n1. Just a suggestion but for Figures 1 and 2, it might be nice to have each figure panel indicate what it is showing. For example, above Figure 1C one could have a header 'Xi2 face dominates'. Figure 1D: 'Xi1 face of D1 lobe dominates'. Etc. Right now one must look back and forth between the legend/Results section and figure to discern what specifically is being shown. Again this is just a suggestion.\n\n2. Electrophysiological experiments. The effect of D-serine, as noted by the authors, only occurs at fairly high concentrations especially relative to glutamate. The authors conclude that this reflects competition between glutamate and D-serine for GluN2 binding site. Might D-serine or glycine have alternative effects on receptor function? For example, do not these ligands induce receptor desensitization?\n\n3. Given the fairly high concentrations of D-serine especially relative to glutamate, I am not certain that there would be any physiological or even pharmacological (i.e., D-serine as a drug treatment) impact. Either justify these comments more or attenuate them.\n\n4. The N-glycans simulations are interesting and further expand our molecular insight into agonist/binding site interactions. However, many of the results are shown in Supplemental Material. Also, it would be helpful to have a summary figure of these results. Right now the information is buried in the text and it is hard to discern the conclusion of these experiments without reading and rereading to identify the outcome.\n\nRelated question. Figure 6C-6E. I see how GluN2A N443-Man5 and GluN1 N491-Man5 show an increased PMF more proximal to the D2 lobe. However, do these interactions impact D1:D2 interactions? Cannot this be assayed using the two-dimensional order parameter (Xi1:Xi2)?\n",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "053e5361-0514-419a-b904-006b8f1f3885",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C1",
+      "claim": "N-methyl-D-aspartate receptors (NMDARs) uniquely require binding of two different neurotransmitter agonists for synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "N-methyl-D-aspartate receptors (NMDARs) uniquely require binding of two different neurotransmitter agonists for synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of NMDARs supported by the citation Hansen et al., 2021 in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "8ff8e111-6d7c-470d-9385-22e794e23740",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C2",
+      "claim": "D-serine and glycine bind to the GluN1 subunit of NMDARs.",
+      "claim_type": "EXPLICIT",
+      "source": "D-serine and glycine bind to one subunit, GluN1, while glutamate binds to the other, GluN2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by established knowledge and citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "97e48de5-f5eb-44ed-8e9b-041b9cdeb428",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C3",
+      "claim": "Glutamate binds to the GluN2 subunit of NMDARs.",
+      "claim_type": "EXPLICIT",
+      "source": "D-serine and glycine bind to one subunit, GluN1, while glutamate binds to the other, GluN2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by established knowledge and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "b2b8b766-109d-44b2-932f-7bdb317de6d1",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C4",
+      "claim": "D-serine binds to both GluN1 and GluN2A ligand-binding domains in molecular dynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed D-serine binding to both GluN1 and GluN2A LBDs, suggesting that D-serine competes with glutamate for binding to GluN2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multi-microsecond molecular dynamics simulations performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "b5bad817-3575-47d5-a6d2-c20174568406",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C5",
+      "claim": "D-serine competes with glutamate for binding to GluN2A.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed D-serine binding to both GluN1 and GluN2A LBDs, suggesting that D-serine competes with glutamate for binding to GluN2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from simulation observations and confirmed by electrophysiology experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "8b8160dd-f873-4580-9e37-d406b74503ff",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C6",
+      "claim": "D-serine is inhibitory at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism is confirmed by our electrophysiology experiments, which show that D-serine is indeed inhibitory at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by electrophysiology experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "4433f05f-3046-45ec-a641-b073b0b70d2b",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C7",
+      "claim": "D-serine stabilizes the closed GluN2A LBD conformation according to free energy calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although free energy calculations indicate that D-serine stabilizes the closed GluN2A LBD, its inhibitory behavior suggests that it either does not remain bound long enough or does not generate sufficient force for ion channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on umbrella sampling free energy calculations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "76472459-7e19-41a5-b2d3-04f8b3c9d5aa",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C8",
+      "claim": "D-serine either does not remain bound long enough or does not generate sufficient force for ion channel gating despite stabilizing the closed GluN2A LBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although free energy calculations indicate that D-serine stabilizes the closed GluN2A LBD, its inhibitory behavior suggests that it either does not remain bound long enough or does not generate sufficient force for ion channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the combined simulation and electrophysiology data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "0c568bf8-74a9-4e72-bf87-53af3c226dc3",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C9",
+      "claim": "N-linked glycans primarily regulate NMDAR LBD binding by stabilizing the closed LBD through interactions with the LBD bottom lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "These conformation-dependent pathways were not significantly impacted by the presence of N-linked glycans, which act primarily by interacting with the LBD bottom lobe to stabilize the closed LBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of glycosylated vs non-glycosylated simulations and glycan PMF calculations shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "a328ca60-a6ef-46b4-abac-89fb6e4b7c2c",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C10",
+      "claim": "The NMDAR is a heterotetrameric ion channel comprising at least two different subunits, GluN1 and GluN2, assembled as a dimer of GluN1/GluN2 heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "This heterotetrameric ion channel comprises at least two different subunits, GluN1 (isoforms 1\u20134 a and 1-4b) and GluN2 (subtypes A-D), assembled as a dimer of GluN1/GluN2 heterodimers (Karakas and Furukawa, 2014; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "a0ad3d43-ed68-4d6c-b806-9523399ec629",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C11",
+      "claim": "Glycine had been traditionally considered the major GluN1 agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, glycine had been considered the major GluN1 agonist (Johnson and Ascher, 1987; Forsythe et al., 1988; Kleckner and Dingledine, 1988), but more recent work has suggested that D-serine may in fact be the dominant co-agonist for synaptic NMDARs in the brain (Papouin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by historical citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "2cf524a5-cf77-4ad2-b4e6-279639427fe4",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C12",
+      "claim": "D-serine may be the dominant co-agonist for synaptic NMDARs in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, glycine had been considered the major GluN1 agonist (Johnson and Ascher, 1987; Forsythe et al., 1988; Kleckner and Dingledine, 1988), but more recent work has suggested that D-serine may in fact be the dominant co-agonist for synaptic NMDARs in the brain (Papouin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Papouin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "b861af59-c5b8-458a-97e6-445a64a1446a",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C13",
+      "claim": "D-serine is synthesized by the enzyme serine racemase expressed in astroglia and neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "D-serine is synthesized by the enzyme serine racemase expressed in astroglia (Wolosker et al., 1999) and neurons (Miya et al., 2008; Balu et al., 2014) and is released into the postsynapse by the Asc-1 transporter (Rutter et al., 2007; Coyle et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "cf79e973-9af9-4a38-af20-0100b521223a",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C14",
+      "claim": "D-serine is released into the postsynapse by the Asc-1 transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "D-serine is synthesized by the enzyme serine racemase expressed in astroglia (Wolosker et al., 1999) and neurons (Miya et al., 2008; Balu et al., 2014) and is released into the postsynapse by the Asc-1 transporter (Rutter et al., 2007; Coyle et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "520ea8af-62cd-43f1-a6de-cf17d7d2d90f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C15",
+      "claim": "D-serine binding to synaptic NMDARs is responsible for inducing long-term potentiation (LTP), which is critical for memory functions.",
+      "claim_type": "EXPLICIT",
+      "source": "D-serine binding to these synaptic NMDARs is responsible for inducing long-term potentiation (LTP), which is critical for memory functions (Henneberger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Henneberger et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "cfa45d66-3c8e-430c-b3fc-d54e39fa5859",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C16",
+      "claim": "D-serine could be a promising therapeutic for the treatment of neuropsychiatric disorders including schizophrenia and PTSD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent clinical efforts have indicated that D-serine could be a promising therapeutic for the treatment of neuropsychiatric disorders (Peyrovian et al., 2019; MacKay et al., 2019), most notably schizophrenia (Kantrowitz et al., 2010) and post-traumatic stress disorder (PTSD) (Heresco-Levy et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple clinical study citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "bcb9c5c2-f2b8-4cc5-974f-b84a3529cc99",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C17",
+      "claim": "NMDAR ligand-binding domains adopt a bi-lobed clamshell architecture that closes upon agonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The LBDs adopt a bi-lobed clamshell architecture that closes upon agonist binding (Yao et al., 2013; Jespersen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural and computational studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "1fceaa4d-a122-4d89-9d15-7fb3860caf31",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C18",
+      "claim": "Conformational transitions of the LBDs from open to closed clamshells result in the generation of tension in the LBD-TMD linkers, which facilitates gating of the TMD channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational transitions of the LBDs from open to closed clamshells result in the generation of tension in the LBD-TMD linkers, which in turn facilitates gating of the TMD channel (Tajima et al., 2016; Chou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "3360ec9f-6082-4753-a439-8de9ed2ecdb2",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C19",
+      "claim": "Glycine binding to the GluN1 LBD and glutamate binding to the GluN2A LBD drives the conformational equilibrium toward the closed LBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous computational studies of NMDAR LBDs have indicated that glycine binding to the GluN1 LBD and glutamate binding to the GluN2A LBD drives the conformational equilibrium toward the closed LBD (Yao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "9c7f5d4f-e474-4fbb-88ea-27d1fed5e6ad",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C20",
+      "claim": "The binding pose of D-serine in the closed GluN1 LBD has been determined by crystallographic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While crystallographic studies have determined the binding pose of D-serine in the closed GluN1 LBD (Furukawa and Gouaux, 2003), the molecular mechanisms by which D-serine finds its way into and stabilizes NMDAR LBDs are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "df0fc71f-ce5c-4139-826e-9af7a3ade9dd",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C21",
+      "claim": "Glycine binds to the GluN1 subunit by freely diffusing into the binding pocket through an 'unguided' diffusion mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, they found that glycine binds to the GluN1 subunit by freely diffusing into the binding pocket, where it is trapped by energetically favorable interactions with key binding site residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous simulation studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "d5dd3b87-6d14-4fa7-b2ef-e0e0cb98bbc7",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C22",
+      "claim": "Glutamate binds to GluN2A through a 'guided' diffusion mechanism where it contacts residues along the protein surface that help guide it into the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate, on the other hand, was found to contact residues along the protein surface that helped guide itself into its binding pocket, positioning it to interact stably with residues in the binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous simulation studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "4113ec12-bfeb-4d5d-9730-5675995f9d8a",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C23",
+      "claim": "99 guided-diffusion pathways for D-serine binding to GluN2A were identified in approximately 51 \u03bcs of simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our aggregate ~51 \u03bcs of sampling of the glycosylated GluN1/GluN2A LBD dimer, we identified 99 guided-diffusion pathways for GluN2A and 104 (plus 23 free diffusion events) for GluN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the simulation data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "5fb40ae5-036e-4638-8e3a-b0b29776cba5",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C24",
+      "claim": "104 guided-diffusion pathways plus 23 free diffusion events for D-serine binding to GluN1 were identified in approximately 51 \u03bcs of simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our aggregate ~51 \u03bcs of sampling of the glycosylated GluN1/GluN2A LBD dimer, we identified 99 guided-diffusion pathways for GluN2A and 104 (plus 23 free diffusion events) for GluN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the simulation data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "8e308c75-3349-45c7-9e2a-8e318e6b5fbf",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C25",
+      "claim": "Pathway similarity analysis can be used to quantify the spatial and geometric similarity between pairs of ligand binding paths.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we applied pathway similarity analysis (PSA) (Seyler et al., 2015) to quantify the spatial and geometric similarity between pairs of paths (Figure 1A, Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach applied in this study, with citation to the original method.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "40c2352c-4c0b-4c69-bfeb-7cc99821558f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C26",
+      "claim": "Four distinct spatial clusters of D-serine binding pathways to GluN2A were identified through cluster analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For GluN2A, cluster analysis revealed four distinct regions of D-serine occupancy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C-F and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "4d36718a-0a95-4cdf-82f3-2e3d8ba381cf",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C27",
+      "claim": "Four distinct spatial clusters of D-serine binding pathways to GluN1 were identified through cluster analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for GluN1, cluster analysis revealed four distinct clusters corresponding to similar pathways of binding",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B-E and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "61206b95-873f-4eb6-956a-03897aa56c57",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C28",
+      "claim": "GluN1 pathways involve fewer interactions between D-serine and D2 residues compared to GluN2A pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that GluN1 pathways involve fewer interactions between D-serine and D2 residues; most notably, there were fewer contacts with Helix F (Helix E for GluN2A) compared to GluN2A pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the pathway clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "7c987910-3b7e-487b-982a-5825dd382eea",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C29",
+      "claim": "Three of the four GluN2A pathway clusters have overlap coefficients greater than the global mean, indicating that pathways in each cluster involve specific residue contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pathway pairs in three of the four clusters yielded an overlap coefficient greater than the mean of all pairs of paths from all clusters, indicating that pathways in each cluster are made up of specific residue contacts (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on overlap coefficient analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "dc536828-7046-45f3-aaa5-dd9bba344e5f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C31",
+      "claim": "D-serine binding to GluN1 may be more diffusion-driven and less guided than to GluN2A.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that D-serine binding to GluN1 may be more diffusion-driven and less guided than to GluN2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the overlap coefficient analysis showing more random contacts for GluN1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "e03c45e8-6fb2-4b6e-aeb6-070fe880f87e",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C32",
+      "claim": "Agonist binding mechanisms exist on a spectrum ranging from unguided to guided diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that agonist binding mechanisms exist on a spectrum ranging from unguided to guided diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual interpretation of the pathway analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "f842e235-513d-4b17-a804-3a48f92efe23",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C33",
+      "claim": "The extent to which agonists rely on pathways of guiding residues depends on LBD architecture and not solely upon the identity of the agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in the specificity of D-serine contacts along binding pathways for GluN2A and GluN1 suggests that the extent to which agonists rely on pathways of guiding residues depends on LBD architecture and not solely upon the identity of the agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing D-serine binding to two different subunits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "3b9cdb9f-a07c-4bfc-b3b6-fefedd5bc860",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C38",
+      "claim": "The presence of a metastable agonist-bound LBD partially open intermediate suggests that D-serine may not stabilize the closed conformation to the same extent as glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a metastable agonist-bound LBD partially open intermediate suggests that D-serine may not stabilize the closed conformation to the same extent as glutamate and generate sufficient force to control channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the free energy landscape data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "00fab3f5-9208-4b56-9607-e72d1d005e53",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C39",
+      "claim": "Thr-690 is critically involved in promoting full GluN2A LBD closure upon D-serine binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Thr-690 is critically involved in promoting full GluN2A LBD closure upon agonist binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of conformers from umbrella sampling simulations shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "d0605216-8158-4c96-a977-4097f9683277",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C40",
+      "claim": "D-serine may be a more potent GluN1 agonist than glycine according to experimental binding studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental binding studies have indicated that D-serine may be a more potent GluN1 agonist than glycine (Mustafa et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "4ef4f859-6811-4af7-938e-b6d53d6118d0",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C41",
+      "claim": "D-serine bound to GluN1 results in a greater population of conformers in the closed conformation compared to glycine-bound GluN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the previously computed glycine-bound and apo LBDs (Figure 3G and H; Yao et al., 2013), the presence of D-serine in the binding cleft results in a greater population of conformers in the closed conformation and fewer conformers adopting a more open conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of free energy landscapes in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "c23d6bc1-b81e-471f-b183-7df6b760f4c8",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C42",
+      "claim": "GluN1 Asp-732 and Ser-688 help stabilize D-serine in the closed LBD conformation by interacting with the D-serine hydroxyl.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to GluN2A Thr-690, GluN1 Asp-732 and (to a lesser extent) Ser-688 help stabilize D-serine in the closed LBD conformation by interacting with the D-serine hydroxyl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of umbrella sampling conformers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "8e198a54-60c2-4f30-aa55-19111e1794d7",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C43",
+      "claim": "D-serine's high potency at GluN1 is due, at least in part, to its ability to more strongly stabilize a closed LBD through additional interactions with the D2 lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, we propose that D-serine's high potency is due, at least in part, to its ability to more strongly stabilize a closed LBD through additional interactions with the D2 lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the free energy and structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "32842ffa-bb42-4ee6-8d32-f6f0951093a6",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C44",
+      "claim": "D-serine can bind to GluN2A even in the presence of glutamate, although glutamate binds more frequently and with longer residence times.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we observed D-serine binding to GluN2A, even in the presence of glutamate, although glutamate bound more frequently and with longer residence times in the binding site (Figure 1\u2014source data 2, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of mixed-agonist simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "e6b2e600-bef7-49dd-b84a-9790f2000bc5",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C45",
+      "claim": "In glycosylated mixed-agonist simulations, there are 17 successful glutamate associations compared with 5 for D-serine to GluN2A.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, there are 17 successful associations for glutamate in the 15 \u03bcs glycosylated mixed-agonist trajectory compared with 5 for D-serine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "8e2a388c-3c2a-4a1f-8feb-aa6b1ebb6a9c",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C46",
+      "claim": "The average time bound for glutamate to GluN2A was 131 ns (glycosylated) and 236 ns (non-glycosylated) compared with 3 ns (glycosylated) and 56 ns (non-glycosylated) for D-serine.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the average time bound for glutamate was 131 ns (glycosylated) and 236 ns (non-glcyolated) compared with 3 ns (glycosylated) and 56 ns (non-glycosylated) for D-serine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from simulation trajectory data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "98adaa03-d259-405d-b6dd-8fc69414938f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C47",
+      "claim": "At high (~1 mM) D-serine concentrations, NMDAR activity is inhibited according to TEVC electrophysiology measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that at high (~1 mM) D-serine concentrations, NMDAR activity was inhibited (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental electrophysiology data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "559d3a81-2c8d-4d27-ab8b-39e68c59ada1",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C48",
+      "claim": "The inhibition of NMDAR activity by D-serine is dependent on glutamate concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition was dependent on glutamate concentrations, implying that the inhibitory effect of D-serine may be competitive (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental electrophysiology data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "d5182ea6-5959-4a67-98a5-3a88a6a59ef1",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C49",
+      "claim": "Dose-response curves of glutamate activation are right-shifted in the presence of increasing concentrations of D-serine.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, dose-response curves of glutamate activation were right-shifted in the presence of increasing concentrations of D-serine (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental electrophysiology data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "467dc50a-af77-4853-b509-22e16d2052c7",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C50",
+      "claim": "The calculated slope value of the Schild plot is 1.1 \u00b1 0.1, implying that D-serine and glutamate likely compete against each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The calculated slope value of the Schild plot at 1.1 \u00b1 0.1 implied that D-serine and glutamate likely compete against each other (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Schild plot analysis of electrophysiology data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "e881550c-2746-490c-a7b9-c81ac0c68d19",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C51",
+      "claim": "Glycine at high concentrations also shows an inhibitory effect on NMDAR activity similar to D-serine.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a similar inhibitory effect was also observed at high glycine concentrations by TEVC electrophysiology (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental electrophysiology data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "7f1c87da-df37-40a2-979a-c189074f7d0f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C52",
+      "claim": "Glycine bound to GluN2A favors the closed LBD conformation according to umbrella sampling simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that glycine also favors the closed LBD (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on umbrella sampling simulations shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "6a3db683-b410-48d1-bdbd-2921070de4f9",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C53",
+      "claim": "The lowest-energy conformers of GluN2A with glycine are fastened shut by contacts between the N-terminal amine of glycine and Tyr-730.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest-energy conformers of GluN2A with glycine are fastened shut by contacts between the N-terminal amine of glycine and Tyr-730.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of umbrella sampling conformers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "b2445499-19d1-4094-99cf-c025ea81f8d0",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C54",
+      "claim": "The GluN2A LBD likely never closes around glycine because glycine does not remain bound long enough to induce LBD closure.",
+      "claim_type": "EXPLICIT",
+      "source": "The GluN2A LBD likely never closes around glycine because glycine does not remain bound long enough to induce LBD closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation combining thermodynamic and kinetic considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "5c78ed51-a9fc-4518-8b74-f182436424c3",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C55",
+      "claim": "The overlap coefficient between residues in D-serine and glutamate pathways to GluN2A is 0.964, indicating significant overlap in agonist occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether D-serine and glutamate binding are guided by similar residue contacts, we computed the overlap coefficient between residues in D-serine and glutamate pathways to be 0.964 for the glycosylated GluN2A LBD, corresponding to a significant overlap in agonist occupancy (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from pathway analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "5b4a45c9-27bd-4d4e-bdb2-7459f18c47b2",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C56",
+      "claim": "D-serine and glutamate bind to GluN2A through similar mechanisms based on high overlap in pathway residues.",
+      "claim_type": "EXPLICIT",
+      "source": "This high degree of overlap between glutamate and D-serine pathway residues indicates that they bind through similar mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high overlap coefficient.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "83cb010c-13f8-4f5a-8dc4-b0c898c562b6",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C57",
+      "claim": "GluN2A mutants Arg692Ala and Arg695Ala show two to three-fold decreased D-serine inhibition potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the GluN2A mutants Arg692Ala and Arg695Ala showed two to three-fold decreased D-serine inhibition potency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on TEVC electrophysiology experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "18baa35f-f790-4d53-8e2f-f9b1717fbf21",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C58",
+      "claim": "GluN2A residues Arg-692 and Arg-695 play a role in D-serine inhibition and D-serine guided-diffusion pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that these two GluN2A residues play a role in D-serine inhibition and D-serine guided-diffusion pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutational analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "ddfb3827-5f9b-46a8-b5d0-b85039ce767f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C59",
+      "claim": "The absence of effect on GluN1 pathway mutants supports the increased diffusive behavior of D-serine binding to GluN1.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of this effect on the two GluN1 pathway mutants supports the increased diffusive behavior of D-serine binding to GluN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect in mutational experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "c906dead-f464-4354-82ee-d165a28e9a27",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C61",
+      "claim": "Glutamate can bind to GluN2A in an inverted pose relative to the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "An important feature of glutamate binding to GluN2A is its ability to bind in an inverted pose relative to the crystal structure, which we observed in previous simulations (Yu and Lau, 2018; Yu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous simulation work cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "e267d347-5cb6-4601-aba4-f9c58f527ca0",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C65",
+      "claim": "D-serine binds to GluN2A and GluN1 at similar rates based on calculated association rate constants.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these values, it is reasonable to expect that D-serine binds to GluN2A and GluN1 at similar rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of calculated kon values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "119bc1d7-87f4-467f-a8f7-37b1219427b9",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C67",
+      "claim": "In glycosylated simulations with 19.6 mM D-serine, there are an average of 1242 \u00b1 31 random GluN2A associations per microsecond that fail to result in successful binding.",
+      "claim_type": "EXPLICIT",
+      "source": "For glycosylated simulations with 19.6 mM D-serine, we observe an average of 1242 \u00b1 31 random GluN2A associations (n=3 simulations) per microsecond (1249 \u00b1 1 for GluN1, n=2 simulations) that fail to result in successful binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "bc9e241d-4dc3-40c0-af7a-2d0e526987f8",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C68",
+      "claim": "In glycosylated simulations with 19.6 mM D-serine, there are about 1.2 \u00b1 0.6 successful GluN2A binding events per microsecond.",
+      "claim_type": "EXPLICIT",
+      "source": "In these same simulations, we observe about 1.2 \u00b1 0.6 successful GluN2A binding events per microsecond (1.0 \u00b1 0.5 for GluN1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "666a81b9-4777-40ab-be7d-aee962e07c23",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C69",
+      "claim": "Near-pocket glycans appear to 'reach' into the binding pocket and form a 'cage' around it by forming interactions with the LBD D2 lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, we observed that near-pocket glycans appear to 'reach' into the binding pocket. This reaching behavior was observed in previous simulations of the glycosylated NMDAR LBDs in which the glycan forms a 'cage' around the binding pocket by forming interactions with the LBD D2 lobe and is believed to be associated with NMDAR potentiation by glycans (Sinitskiy and Pande, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in simulations and supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "51ff8870-9dd6-42e6-8c64-82b4b235b398",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C70",
+      "claim": "For GluN2A, there are two glycans near the binding pocket: N443-Man5 and N444-Man5, both of which can interact with the LBD D2 lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "For GluN2A, there are two glycans that are near the binding pocket: N443-Man5 and N444-Man5, both of which can interact with the LBD D2 lobe (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in simulations and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "0e7f9a55-ea66-4d99-94f5-d25a0ea5d313",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C71",
+      "claim": "For GluN1, there is a single glycan N491-Man5 that adopts a caged conformation near the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "For GluN1, there is a single glycan N491-Man5 that adopts this caged conformation (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in simulations and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "67e90c2e-6146-4589-b866-1a94d507889d",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C73",
+      "claim": "GluN2A residues Asp-515 and Glu-517 are contacted more frequently in glycosylated systems.",
+      "claim_type": "EXPLICIT",
+      "source": "GluN2A residues Asp-515 and Glu-517, are contacted more frequently in glycosylated systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of glycosylated and non-glycosylated simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "941ea066-4f45-425d-a9ea-cb1b124c109e",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C74",
+      "claim": "The frequency with which D-serine interacts with GluN1 residue Arg-489 in pathways is greater for glycosylated pathways than those without glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency with which D-serine interacts with GluN1 residue Arg-489 in pathways is greater for glycosylated pathways than those without glycans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of glycosylated and non-glycosylated simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "3605e557-19be-406b-90fa-9916f9803430",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C75",
+      "claim": "Glycan-mediated D-serine interactions result in slightly longer pathways, suggesting that the presence of glycans slows down the binding process.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, glycan-mediated D-serine interactions result in slightly longer pathways, suggesting that the presence of glycans slows down the binding process, setting up small kinetic 'traps'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of pathway lengths in glycosylated vs non-glycosylated simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "0077a35a-cf28-42ba-abfa-27bdc46312ad",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C76",
+      "claim": "Very few D-serine binding pathways (27% for both GluN2A and GluN1) involve contacts with glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyzed glycan behavior in our binding pathways, we found that very few D-serine binding pathways (27% for both GluN2A and GluN1) involve contacts with glycans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from analysis of binding pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "d1faae5f-1e70-46fe-aba8-e638a3cbfffc",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C77",
+      "claim": "Glycan-agonist interactions make up a small percentage of time spent in binding pathways (10% for GluN2A and GluN1 D-serine pathways).",
+      "claim_type": "EXPLICIT",
+      "source": "While glycan-agonist interactions make up a small percentage of time spent in binding pathways (10% for GluN2A and GluN1 D-serine pathways), patterns in glycan interactions with the agonist as it binds suggest that glycans contribute to binding pathways in a consistent way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from analysis of binding pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "ec4cb8c1-09d7-4f04-8b55-2708f68a26ce",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C79",
+      "claim": "The effect of LBD closure on glycan-D2 interactions is more dramatic for N443-Man5 than for N444-Man5.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was more dramatic for N443-Man5 than for N444-Man5 (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of glycan PMFs shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "5c228951-ed49-44ac-9849-ed853d17224e",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C80",
+      "claim": "The N491-Man5 glycan of GluN1 acts as a latch that stabilizes LBD closure.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar relationship was determined for the N491-Man5 glycan of GluN1 (Figure 7C); this is consistent with previous simulations (Sinitskiy and Pande, 2017) that suggest that N491-Man5 acts as a latch that stabilizes LBD closure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on glycan PMF analysis and supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "44f6746c-acae-4e29-9d35-af8ee7248083",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C81",
+      "claim": "No significant relationship between glycan-D2 distance and the presence of an agonist in the binding site was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant relationship between glycan-D2 distance and the presence of an agonist (D-serine, glutamate, or both) in the binding site was observed (Figure 6\u2014figure supplement 2A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of glycan PMFs conditioned on agonist presence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "4b19a726-7245-4c44-b263-e1ad809af79f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C82",
+      "claim": "D-serine could play a role in modulating the strength of synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of synaptic transmission, our finding implies that D-serine could play a role in modulating the strength of synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the competitive inhibition findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "c0a17135-6922-4959-b7e6-ce771e918a04",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C83",
+      "claim": "The synaptic concentration of glutamate ranges from nanomolar concentrations to >1 mM following an action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptic concentration of glutamate ranges from nanomolar concentrations Chiu and Jahr, 2017 to >1 mM following an action potential (Dzubay and Jahr, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "0705897f-3275-4cbe-9dc2-f9b878084db8",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C84",
+      "claim": "The extracellular concentration of D-serine ranges from 5 to 7 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptic concentration of D-serine is unclear, however; the extracellular concentration of D-serine ranges from 5 to 7 \u00b5M (Matsui et al., 1995; Hashimoto et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "40d06693-7b92-44e9-b021-702b1044aa9f",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C85",
+      "claim": "Possible routes for D-serine to enter the synapse include vesicular release by astroglia and transport by Asc-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Possible routes for D-serine to enter the synapse include vesicular release by astroglia (Mothet et al., 2005) and transport by Asc-1 (Sason et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "f821b42c-176a-4bd8-8c75-5f885eaaecc0",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C86",
+      "claim": "In order for agonist binding to result in NMDAR activation, the agonist must remain in the binding site long enough to induce closure.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that, in order for agonist binding to result in NMDAR activation, the agonist must remain in the binding site long enough to induce closure\u2014we found that this is largely dependent upon the number and strength of stable contacts the agonist forms with both D1 and D2 lobe residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis based on the combined simulation and experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "c9f9cf5d-f159-46cf-8eae-b28ff04bb31e",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C87",
+      "claim": "Glycans impact agonist binding kinetics less by direct glycan-agonist interactions and more by stabilizing the closed LBD through glycan-D2 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the role of N-linked glycans in agonist binding and stabilization. Glycans impact agonist binding kinetics less by direct glycan-agonist interactions and more by stabilizing the closed LBD through glycan-D2 interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on analysis of glycan behavior in simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "7dc8253a-92ed-4505-bafc-3f17c8f0ecd3",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C88",
+      "claim": "Pathway similarity analysis can identify clusters of residues critical for binding agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Our adaptation of pathway similarity analysis allowed us to identify clusters of residues critical for binding agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "5a065e51-2c1a-49dd-9f7b-1b09c6be014e",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C89",
+      "claim": "The presence of binding pathways depends on the degree of LBD closure.",
+      "claim_type": "EXPLICIT",
+      "source": "This also allowed us to determine that the presence of pathways depends on the degree of LBD closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of order parameters during binding pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "7897c4aa-31b7-4744-8e08-954ef1039ebd",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C90",
+      "claim": "D-serine binds to GluN2A using similar pathways and residues as glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that D-serine binds to GluN2A using similar pathways and residues as glutamate, while the locations of key D-serine cluster residues for GluN1 are different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on pathway overlap analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "9f1f6eae-3d5c-4758-b68d-b2c0b791a0d4",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C91",
+      "claim": "Man5GlcNAc2 (Man5) glycans were added to asparagine residues 440, 471, 491, and 771 of GluN1 and asparagine residues 443 and 444 of GluN2A in accordance with physiologically relevant glycosylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Man5GlcNAc2 (Man5) glycans were added using CHARMM-GUI Glycan Reader & Modeler (Jo et al., 2008; Jo et al., 2011; Park et al., 2017; Park et al., 2019) to asparagine residues 440, 471, 491, and 771 of GluN1 and asparagine residues 443 and 444 of GluN2A in accordance with physiologically relevant glycosylation sites (Kaniakova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation setup based on experimental glycosylation data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "508adbb0-8f22-4b28-945c-8af5e2532ba2",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C92",
+      "claim": "GluN2A was chosen as the GluN2 subtype because recent evidence suggests it is the primary subtype at synapses where D-serine is the dominant co-agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "GluN2A was chosen as the GluN2 subtype both to facilitate comparison with previous simulation studies and because recent evidence has suggested that the GluN2A subtype is the primary subtype at synapses, where D-serine is the dominant co-agonist (Papouin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This justifies the choice of subtype based on citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "1d695229-ff34-41b8-911a-9c3044b71418",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C93",
+      "claim": "All simulations were performed using the CHARMM36 forcefield and TIP3P water model.",
+      "claim_type": "EXPLICIT",
+      "source": "All simulations in this work were performed using the CHARMM36 forcefield (MacKerell et al., 1998) and TIP3P water model (Jorgensen et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "392f69c2-5a06-43cb-96bb-24002527aaa7",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C94",
+      "claim": "Approximately 51 \u03bcs of aggregate sampling of the glycosylated GluN1/GluN2A LBD dimer was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "In our aggregate ~51 \u03bcs of sampling of the glycosylated GluN1/GluN2A LBD dimer, we identified 99 guided-diffusion pathways for GluN2A and 104 (plus 23 free diffusion events) for GluN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the total simulation time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "5bde049c-861c-46a7-a118-67beb02cedc3",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C95",
+      "claim": "205 simulation windows were selected at 1 \u00c5 \u00d7 1 \u00c5 increments for umbrella sampling simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "205 simulation windows were selected at 1 \u00c5 \u00d71 \u00c5 increments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the umbrella sampling methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "b8a7da58-9399-4119-bcf4-2417597196b1",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C97",
+      "claim": "5 ns of production sampling for each window were used to compute the potential of mean force (PMF) for each simulation agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "5 ns of production sampling for each window were used to compute the potential of mean force (PMF) for each simulation agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the umbrella sampling methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "fc5eb8ce-b95e-4706-a55c-a7d0da0e5d7c",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "claim_id": "C98",
+      "claim": "Maximal response currents in electrophysiology experiments were evoked by 100 \u03bcM of D-serine and 100 \u03bcM of L-glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal response currents were evoked by 100 \u03bcM of D-serine and 100 \u03bcM of L-glutamate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrophysiology experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a807ee25-c904-4824-83ea-969c9e891a81",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "D-serine binds to both GluN1 and GluN2A LBDs through distinct guided-diffusion pathways. Pathway similarity analysis identified four spatial clusters for each subunit, with GluN2A pathways showing more specific residue contacts (guided diffusion) while GluN1 pathways exhibit more diffusive behavior. The extent of guided diffusion depends on LBD architecture rather than agonist identity alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C23-C33 provide converging computational evidence from ~51 \u03bcs of MD simulations. The pathway similarity analysis methodology (C25, C88) is well-established and appropriately applied. The overlap coefficient analysis (C29, C31) quantitatively supports the distinction between guided and diffusive mechanisms. The structural interpretation regarding LBD architecture (C33) is logically derived from comparing the same agonist binding to different subunits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "6d2cc611-1328-4af0-a091-fe7168113043",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "D-serine competitively inhibits NMDAR activity at high concentrations by binding to GluN2A and competing with glutamate. Simulations show D-serine can bind GluN2A with similar pathways to glutamate (overlap coefficient 0.964), though with shorter residence times. Electrophysiology confirms inhibition at ~1 mM D-serine with Schild plot slope of 1.1\u00b10.1, consistent with competitive antagonism. Mutations in pathway residues Arg692Ala and Arg695Ala reduce inhibition potency 2-3 fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C44-C50, C55-C58 provide strong convergent evidence from both computational (C44-C46, C55-C56) and experimental (C47-C50, C57) approaches. The Schild plot analysis (C50) with slope ~1 is the gold standard for demonstrating competitive inhibition. The mutational data (C57-C58) validates the computational pathway predictions. Residence time differences (C46) provide a mechanistic explanation for why D-serine is inhibitory rather than activating at GluN2A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "84fd62b2-9d58-445b-a1b5-4e53ba7c469d",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "D-serine stabilizes the closed LBD conformation for both GluN2A and GluN1 according to free energy calculations, with specific residues (Thr-690 for GluN2A; Asp-732 and Ser-688 for GluN1) critical for stabilization. D-serine shows higher potency at GluN1 than glycine by more strongly stabilizing the closed conformation through additional D2 lobe interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C38-C39, C41-C43 are based on umbrella sampling free energy calculations with appropriate methodology (205 windows, 5 ns production per window per C95, C97). The identification of key stabilizing residues (C39, C42) from analysis of low-energy conformers is methodologically sound. The comparison with glycine (C41) and interpretation of D-serine potency (C43) are well-supported by the PMF data shown in Figure 3. However, C38 notes a metastable intermediate suggesting incomplete stabilization, which is consistent with the inhibitory behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "349cab7d-0976-4e36-8ded-822ce6355be1",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose that D-serine and glycine do not generate sufficient force for ion channel gating at GluN2A because they either do not remain bound long enough or do not stabilize closure sufficiently, despite favorable thermodynamics. Agonist residence time and strength of contacts with D1 and D2 lobes are proposed as critical determinants of activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C54, and C86 are mechanistic hypotheses that attempt to reconcile thermodynamic stabilization with lack of activation. While the logic is reasonable and consistent with the data (short residence times in C46, metastable states in C38), these are speculative interpretations not directly tested. The distinction between thermodynamic stability and kinetic residence time is valid, but the specific mechanism by which this prevents gating requires additional experimental validation such as single-channel recordings or force measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "24ea3146-d093-4982-9718-1e65e5ab7460",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "N-linked glycans primarily regulate NMDAR LBD function by stabilizing the closed LBD through interactions with the D2 lobe rather than through direct glycan-agonist interactions. Glycan-D2 interactions are conformation-dependent, with stronger interactions in closed states. Only 27% of binding pathways involve glycan contacts, and glycan-agonist interactions comprise only 10% of pathway time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C69-C81, C87 are supported by systematic comparison of glycosylated vs non-glycosylated simulations and glycan PMF calculations (Figures 6-7). The quantitative analysis showing low frequency of direct glycan-agonist contacts (C76-C77) combined with conformation-dependent glycan-D2 interactions (C79-C81) provides strong evidence for the proposed mechanism. The finding is consistent with prior work (Sinitskiy and Pande, 2017) cited in C69 and C80. The conclusion (C87) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "6a1be039-d09b-4a87-afdc-d5de3afdfcd7",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Glycine at high concentrations shows inhibitory effects on NMDAR activity similar to D-serine. Umbrella sampling shows glycine bound to GluN2A favors the closed LBD conformation, with lowest-energy conformers stabilized by contacts between glycine's N-terminal amine and Tyr-730.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by both experimental (C51, Figure 4A) and computational (C52-C53, Figure 3B) data. The parallel between glycine and D-serine inhibition strengthens the competitive inhibition mechanism. The structural analysis of glycine-GluN2A interactions (C53) from umbrella sampling conformers is methodologically sound and provides molecular detail for the thermodynamic stabilization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "7da9e4e3-4dd2-41de-a174-ab918d593f91",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "D-serine binds to GluN2A and GluN1 at similar rates based on calculated association rate constants. The binding process involves substantial noise, with ~1242 random associations per microsecond that fail to result in binding, compared to ~1.2 successful binding events per microsecond.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59, C65, C67-C68 involve kinetic rate calculations from MD simulations. While the methodology follows established approaches (Dror et al., 2011), the authors acknowledge limitations: simulations don't fully sample the closed state, affecting both binding event counts and bulk solvent time. The calculated kon values have wide ranges (upper/lower bounds differ by ~5-fold), and the interpretation of similar rates (C65) is qualified as 'reasonable to expect' rather than definitive. The noise analysis (C67-C68) is informative but the functional significance of the signal-to-noise ratio is unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "e81801c0-cb21-43bb-9ac4-9bd4c1b999fa",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Glutamate can bind to GluN2A in an inverted pose relative to the crystal structure, as observed in previous simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by citation to previous simulation work (Yu and Lau, 2018; Yu et al., 2018) and umbrella sampling in the current study (Figure 3E) showing the inverted pose prevents full LBD closure. This is prior established work being confirmed/extended in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims about NMDAR structure, function, and agonist binding mechanisms based on established literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C22 are well-established facts about NMDAR biology supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "17c66618-9c38-4d80-8a8a-40c9805eb0ec",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "D-serine may be a more potent GluN1 agonist than glycine according to experimental binding studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by citation to experimental work (Mustafa et al., 2004) and is consistent with the free energy calculations in the current study (C41). This is prior work being cited to motivate the current analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "0c62e098-e8c6-4c43-be0e-ae3388d63721",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "D-serine could play a role in modulating synaptic transmission strength. Physiological concentrations are discussed: glutamate ranges from nanomolar to >1 mM, extracellular D-serine is 5-7 \u03bcM, with possible synaptic delivery via astroglia or Asc-1 transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is speculative extrapolation from the competitive inhibition findings. Claims C83-C85 cite physiological concentrations from literature, but the actual synaptic D-serine concentration is acknowledged as unclear (C84). The physiological relevance of the inhibitory mechanism depends on whether D-serine reaches millimolar concentrations at synapses, which is not established. This represents reasonable speculation requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    },
+    {
+      "id": "3905364f-5992-4655-93fe-bb11294313b6",
+      "content_id": "fc159092-cef4-4ded-88d1-3e0166b153f1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details of simulation setup and experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C98 describe methods and are supported by appropriate citations and standard practices. The choice of GluN2A subtype (C92) is justified by citation. Simulation parameters (C93-C95, C97) follow established protocols. Electrophysiology conditions (C98) are clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:32.568257Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b2b8b766-109d-44b2-932f-7bdb317de6d1",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "4113ec12-bfeb-4d5d-9730-5675995f9d8a",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "5fb40ae5-036e-4638-8e3a-b0b29776cba5",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "40c2352c-4c0b-4c69-bfeb-7cc99821558f",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "4d36718a-0a95-4cdf-82f3-2e3d8ba381cf",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "8e308c75-3349-45c7-9e2a-8e318e6b5fbf",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "61206b95-873f-4eb6-956a-03897aa56c57",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "7c987910-3b7e-487b-982a-5825dd382eea",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "dc536828-7046-45f3-aaa5-dd9bba344e5f",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "e03c45e8-6fb2-4b6e-aeb6-070fe880f87e",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "f842e235-513d-4b17-a804-3a48f92efe23",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "7dc8253a-92ed-4505-bafc-3f17c8f0ecd3",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "5a065e51-2c1a-49dd-9f7b-1b09c6be014e",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "7897c4aa-31b7-4744-8e08-954ef1039ebd",
+      "result_id": "a807ee25-c904-4824-83ea-969c9e891a81"
+    },
+    {
+      "claim_id": "b5bad817-3575-47d5-a6d2-c20174568406",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "8b8160dd-f873-4580-9e37-d406b74503ff",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "32842ffa-bb42-4ee6-8d32-f6f0951093a6",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "e6b2e600-bef7-49dd-b84a-9790f2000bc5",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "8e2a388c-3c2a-4a1f-8feb-aa6b1ebb6a9c",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "98adaa03-d259-405d-b6dd-8fc69414938f",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "559d3a81-2c8d-4d27-ab8b-39e68c59ada1",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "d5182ea6-5959-4a67-98a5-3a88a6a59ef1",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "467dc50a-af77-4853-b509-22e16d2052c7",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "5c78ed51-a9fc-4518-8b74-f182436424c3",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "5b4a45c9-27bd-4d4e-bdb2-7459f18c47b2",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "83cb010c-13f8-4f5a-8dc4-b0c898c562b6",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "18baa35f-f790-4d53-8e2f-f9b1717fbf21",
+      "result_id": "6d2cc611-1328-4af0-a091-fe7168113043"
+    },
+    {
+      "claim_id": "4433f05f-3046-45ec-a641-b073b0b70d2b",
+      "result_id": "84fd62b2-9d58-445b-a1b5-4e53ba7c469d"
+    },
+    {
+      "claim_id": "3b9cdb9f-a07c-4bfc-b3b6-fefedd5bc860",
+      "result_id": "84fd62b2-9d58-445b-a1b5-4e53ba7c469d"
+    },
+    {
+      "claim_id": "00fab3f5-9208-4b56-9607-e72d1d005e53",
+      "result_id": "84fd62b2-9d58-445b-a1b5-4e53ba7c469d"
+    },
+    {
+      "claim_id": "4ef4f859-6811-4af7-938e-b6d53d6118d0",
+      "result_id": "84fd62b2-9d58-445b-a1b5-4e53ba7c469d"
+    },
+    {
+      "claim_id": "c23d6bc1-b81e-471f-b183-7df6b760f4c8",
+      "result_id": "84fd62b2-9d58-445b-a1b5-4e53ba7c469d"
+    },
+    {
+      "claim_id": "8e198a54-60c2-4f30-aa55-19111e1794d7",
+      "result_id": "84fd62b2-9d58-445b-a1b5-4e53ba7c469d"
+    },
+    {
+      "claim_id": "76472459-7e19-41a5-b2d3-04f8b3c9d5aa",
+      "result_id": "349cab7d-0976-4e36-8ded-822ce6355be1"
+    },
+    {
+      "claim_id": "b2445499-19d1-4094-99cf-c025ea81f8d0",
+      "result_id": "349cab7d-0976-4e36-8ded-822ce6355be1"
+    },
+    {
+      "claim_id": "f821b42c-176a-4bd8-8c75-5f885eaaecc0",
+      "result_id": "349cab7d-0976-4e36-8ded-822ce6355be1"
+    },
+    {
+      "claim_id": "0c568bf8-74a9-4e72-bf87-53af3c226dc3",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "666a81b9-4777-40ab-be7d-aee962e07c23",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "51ff8870-9dd6-42e6-8c64-82b4b235b398",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "0e7f9a55-ea66-4d99-94f5-d25a0ea5d313",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "67e90c2e-6146-4589-b866-1a94d507889d",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "941ea066-4f45-425d-a9ea-cb1b124c109e",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "3605e557-19be-406b-90fa-9916f9803430",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "0077a35a-cf28-42ba-abfa-27bdc46312ad",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "d1faae5f-1e70-46fe-aba8-e638a3cbfffc",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "ec4cb8c1-09d7-4f04-8b55-2708f68a26ce",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "5c228951-ed49-44ac-9849-ed853d17224e",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "44f6746c-acae-4e29-9d35-af8ee7248083",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "c9f9cf5d-f159-46cf-8eae-b28ff04bb31e",
+      "result_id": "24ea3146-d093-4982-9718-1e65e5ab7460"
+    },
+    {
+      "claim_id": "e881550c-2746-490c-a7b9-c81ac0c68d19",
+      "result_id": "6a1be039-d09b-4a87-afdc-d5de3afdfcd7"
+    },
+    {
+      "claim_id": "7f1c87da-df37-40a2-979a-c189074f7d0f",
+      "result_id": "6a1be039-d09b-4a87-afdc-d5de3afdfcd7"
+    },
+    {
+      "claim_id": "6a3db683-b410-48d1-bdbd-2921070de4f9",
+      "result_id": "6a1be039-d09b-4a87-afdc-d5de3afdfcd7"
+    },
+    {
+      "claim_id": "ddfb3827-5f9b-46a8-b5d0-b85039ce767f",
+      "result_id": "7da9e4e3-4dd2-41de-a174-ab918d593f91"
+    },
+    {
+      "claim_id": "e267d347-5cb6-4601-aba4-f9c58f527ca0",
+      "result_id": "7da9e4e3-4dd2-41de-a174-ab918d593f91"
+    },
+    {
+      "claim_id": "119bc1d7-87f4-467f-a8f7-37b1219427b9",
+      "result_id": "7da9e4e3-4dd2-41de-a174-ab918d593f91"
+    },
+    {
+      "claim_id": "bc9e241d-4dc3-40c0-af7a-2d0e526987f8",
+      "result_id": "7da9e4e3-4dd2-41de-a174-ab918d593f91"
+    },
+    {
+      "claim_id": "c906dead-f464-4354-82ee-d165a28e9a27",
+      "result_id": "e81801c0-cb21-43bb-9ac4-9bd4c1b999fa"
+    },
+    {
+      "claim_id": "053e5361-0514-419a-b904-006b8f1f3885",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "8ff8e111-6d7c-470d-9385-22e794e23740",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "97e48de5-f5eb-44ed-8e9b-041b9cdeb428",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "a328ca60-a6ef-46b4-abac-89fb6e4b7c2c",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "a0ad3d43-ed68-4d6c-b806-9523399ec629",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "2cf524a5-cf77-4ad2-b4e6-279639427fe4",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "b861af59-c5b8-458a-97e6-445a64a1446a",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "cf79e973-9af9-4a38-af20-0100b521223a",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "520ea8af-62cd-43f1-a6de-cf17d7d2d90f",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "cfa45d66-3c8e-430c-b3fc-d54e39fa5859",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "bcb9c5c2-f2b8-4cc5-974f-b84a3529cc99",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "1fceaa4d-a122-4d89-9d15-7fb3860caf31",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "3360ec9f-6082-4753-a439-8de9ed2ecdb2",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "9c7f5d4f-e474-4fbb-88ea-27d1fed5e6ad",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "df0fc71f-ce5c-4139-826e-9af7a3ade9dd",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "d5dd3b87-6d14-4fa7-b2ef-e0e0cb98bbc7",
+      "result_id": "d3c7cc13-894a-42f2-abd2-40f1d6a10e21"
+    },
+    {
+      "claim_id": "d0605216-8158-4c96-a977-4097f9683277",
+      "result_id": "17c66618-9c38-4d80-8a8a-40c9805eb0ec"
+    },
+    {
+      "claim_id": "4b19a726-7245-4c44-b263-e1ad809af79f",
+      "result_id": "0c62e098-e8c6-4c43-be0e-ae3388d63721"
+    },
+    {
+      "claim_id": "c0a17135-6922-4959-b7e6-ce771e918a04",
+      "result_id": "0c62e098-e8c6-4c43-be0e-ae3388d63721"
+    },
+    {
+      "claim_id": "0705897f-3275-4cbe-9dc2-f9b878084db8",
+      "result_id": "0c62e098-e8c6-4c43-be0e-ae3388d63721"
+    },
+    {
+      "claim_id": "40d06693-7b92-44e9-b021-702b1044aa9f",
+      "result_id": "0c62e098-e8c6-4c43-be0e-ae3388d63721"
+    },
+    {
+      "claim_id": "9f1f6eae-3d5c-4758-b68d-b2c0b791a0d4",
+      "result_id": "3905364f-5992-4655-93fe-bb11294313b6"
+    },
+    {
+      "claim_id": "508adbb0-8f22-4b28-945c-8af5e2532ba2",
+      "result_id": "3905364f-5992-4655-93fe-bb11294313b6"
+    },
+    {
+      "claim_id": "1d695229-ff34-41b8-911a-9c3044b71418",
+      "result_id": "3905364f-5992-4655-93fe-bb11294313b6"
+    },
+    {
+      "claim_id": "392f69c2-5a06-43cb-96bb-24002527aaa7",
+      "result_id": "3905364f-5992-4655-93fe-bb11294313b6"
+    },
+    {
+      "claim_id": "5bde049c-861c-46a7-a118-67beb02cedc3",
+      "result_id": "3905364f-5992-4655-93fe-bb11294313b6"
+    },
+    {
+      "claim_id": "b8a7da58-9399-4119-bcf4-2417597196b1",
+      "result_id": "3905364f-5992-4655-93fe-bb11294313b6"
+    },
+    {
+      "claim_id": "fc5eb8ce-b95e-4706-a55c-a7d0da0e5d7c",
+      "result_id": "3905364f-5992-4655-93fe-bb11294313b6"
+    }
+  ],
+  "comparisons": []
+}

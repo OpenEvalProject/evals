@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C18",
+      "C32"
+    ],
+    "result": "The authors establish the motivation for their study by noting that while uncertainty representation has been studied in sensory systems during simple perceptual tasks, it remains unclear whether complex cognitive computations like planning and navigation in the hippocampus are supported by probabilistic neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C11, C18, and C32 collectively establish a well-documented knowledge gap in the field. These claims are supported by appropriate citations to prior work and accurately characterize the state of knowledge about uncertainty representation in sensory versus cognitive systems. The motivation is logically sound and sets up the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors review established knowledge about hippocampal theta sequences and existing theoretical frameworks for uncertainty representation, noting that previous studies in constrained binary choice tasks suggested sampling-based representations but did not test alternative coding schemes or generalize to open-field navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C31 provide a comprehensive literature review with appropriate citations. The characterization of prior work on theta sequences (C13-C17), uncertainty coding schemes (C19-C24), and limitations of previous studies (C27-C31) is well-supported by citations and accurately identifies gaps that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C26"
+    ],
+    "result": "The authors propose that the hippocampus performs probabilistic inference in a dynamical model representing temporal dependencies between spatial locations, and they extend existing coding schemes to accommodate dynamic motion trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C26 describe the theoretical framework and methodological contributions of the study. The proposal is clearly stated and the extension of coding schemes to dynamic trajectories is a legitimate theoretical contribution, though C33 is labeled as speculation which is appropriate for a theoretical proposal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors leverage the theoretical insight that uncertainty increases as trajectories proceed into the future during theta cycles to investigate neuronal signatures of uncertainty in hippocampal theta sequences, analyzing a previously published dataset from rats navigating a 2\u00d72 m open arena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 establish the analytical strategy and data source. The theoretical insight (C39-C40, supported by citations) provides a principled basis for the analysis. The use of a published dataset (C42-C43, C46) is appropriate and well-documented. The rationale for focusing on theta sequences (C45) is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Analysis of hippocampal recordings revealed that decoded trajectories during theta sequences started near the animal's location and proceeded forward with increasing deviation and variability, with place fields expanding and decoded position spread increasing from early to late theta phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C58 describe systematic observations from the experimental data with references to specific figures (Figure 2). The findings are quantitative (C50, C53) and show consistent patterns across multiple measures (decoding error, place field size, position spread). The observations are well-documented with appropriate citations to prior work (C52, C54, C56) and supported by data visualizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "Using synthetic data matched to natural movement statistics and accommodating four alternative encoding schemes, the authors demonstrated that increased variability at late theta phases is consistent with encoding trajectories in a dynamical model irrespective of uncertainty representation, as all four schemes showed similar patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 describe the synthetic data generation and key findings. The simulation approach is well-designed with matched kinematics (C63) and appropriate population size (C64). The critical finding (C65-C69) that all four coding schemes produce similar variability patterns is important for interpreting experimental data and is supported by references to multiple figures (Figure 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Testing the product scheme, the authors found that while this scheme predicts decreased firing rate with increasing uncertainty, experimental data showed the opposite pattern with maximal firing rate at the end of theta sequences (highest uncertainty), ruling out the product scheme but remaining consistent with mean, DDC, and sampling schemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 present a clear test of the product scheme. The theoretical prediction (C70-C74, supported by citations and Figure 4) is contrasted with experimental observations (C75-C78, with data from multiple sessions and an independent dataset). The conclusion (C79-C80) logically follows from the mismatch between prediction and observation. This is a well-executed discriminative test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "Testing the DDC scheme by examining decoded standard deviation across theta phases, the authors found no systematic increase in decoded SD from early to late phases in experimental data, ruling out DDC encoding and supporting the conclusion that hippocampal neurons encode individual trajectories rather than entire distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 present another discriminative test. The DDC scheme's prediction (C81-C83) is clearly stated and tested in synthetic data (C86). Experimental results (C87) show no evidence for the predicted pattern across all sessions, leading to the justified conclusion (C90-C91) that DDC is not supported. The analysis is robust, tested with both empirical tuning curves and estimated basis functions (Figure 5, Figure 5\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "To discriminate sampling from mean encoding, the authors developed the excess variability (EV) index, which was negative for mean encoding and positive for sampling in synthetic data, and found consistently positive EV-index values across all experimental recording sessions, supporting random sampling from the posterior distribution of possible trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C104 describe the development and validation of a novel analytical measure. The EV-index is theoretically motivated (C95-C96), validated on synthetic data (C97-C102) with robustness tests, and shows consistent positive values in all experimental sessions (C103). The conclusion (C104) is well-supported by the data and includes appropriate citation to prior work (Gupta et al., 2012). This is a strong result with a well-designed discriminative measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The magnitude of the EV-index in experimental data was substantially larger than in synthetic datasets, but this was not due to multiple spatial maps (most neurons had identical tuning across task phases) or specific goals during planning (no consistent differences between random foraging and goal-directed navigation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 address potential confounds for the high EV-index. The analyses systematically rule out alternative explanations (multiple maps, goal-dependence) with data from Figure 6\u2014figure supplement 2. The conclusions are appropriately cautious and supported by the control analyses, though the larger-than-expected EV-index remains partially unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Analysis of trajectory correlations across theta cycles revealed that the large EV-index is consistent with efficient sampling algorithms that generate anti-correlated samples. The cycling index, validated on synthetic data, was significantly positive in 7 of 8 experimental sessions, indicating that trajectories alternate between different directions relative to the animal's motion trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C120 extend the sampling result to address sampling efficiency. The theoretical framework (C110-C112, with citations) is tested in synthetic data (C113-C116) and experimental data (C118-C120). The cycling index is carefully validated and shows significant effects in most sessions (Figure 7). The conclusion about efficient sampling is well-supported, though one session showed no significant effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The signatures identified to test alternative coding schemes are robust against changes in how distributions of planned trajectories are constructed, as demonstrated using model-free trajectory distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 addresses the generalizability of the findings. The model-free analysis (Figure 7\u2014figure supplement 2) provides important validation that the results do not depend on specific details of the generative model. This strengthens confidence in the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors found no evidence for instantaneous encoding of probability distribution parameters in hippocampal population activity during open-field navigation. Instead, uncertainty was encoded sequentially by sampling motion trajectories randomly and efficiently across theta cycles, demonstrating that the hippocampus represents uncertainty and contributes to optimal planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C36-C38 summarize the main findings. These conclusions are well-supported by the systematic testing of alternative coding schemes (product and DDC ruled out, sampling supported) and the demonstration of efficient sampling. The claim of novelty (C6) is justified given the comprehensive analysis in open-field navigation. However, the claim that this is \"the first\" demonstration should be tempered by acknowledgment of prior work in simpler mazes (C37 confirms previous results).",
+    "result_type": "MAJOR"
+  }
+]

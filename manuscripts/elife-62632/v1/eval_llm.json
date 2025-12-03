@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C28",
+      "C30",
+      "C31",
+      "C80"
+    ],
+    "result": "Kanamycin exposure induces biofilm formation in swarming B. subtilis colonies. When exposed to a spatial gradient of kanamycin, swarming B. subtilis cells halt their expansion near the antibiotic source and subsequently develop prominent wrinkles characteristic of biofilms at a specific distance from the kanamycin disk, accompanied by increased expression of the biofilm matrix operon tapA-sipW-tasA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C24-C25, C28, C30-C31, and C80 collectively demonstrate kanamycin-induced biofilm formation with quantitative measurements of wrinkle wavelength, roughness, distance from antibiotic source, and gene expression. The data show dose-dependent spatial positioning of wrinkles and increased tasA expression (C28), providing converging evidence for the swarm-to-biofilm transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Cell motility plays a fundamental role in kanamycin-induced biofilm formation. The \u0394eps mutant capable of swarming but impaired in biofilm formation showed no wrinkles when exposed to kanamycin, and kanamycin promoted wrinkle formation significantly more in swarming colonies than in non-motile cultures on hard agar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide genetic evidence through the \u0394eps mutant, while C32-C34 provide comparative evidence between motile and non-motile conditions. Together, these claims establish that motility is essential for the kanamycin-induced swarm-to-biofilm transition, distinguishing this phenomenon from static biofilm formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Swarming B. subtilis undergoes a progressive transition from monolayer to multilayer through transient jamming events and formation of dynamic multilayered 'islands'. As surface coverage increases from ~20% to \u226560%, cells exhibit jamming events (~1-2 s duration) where cell speed drops and groups protrude from the monolayer. These jams lead to permanent multilayered islands (~27,000 \u03bcm\u00b2) with fluctuating boundaries where motile cells continuously exchange between layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 provide detailed temporal and spatial characterization of the monolayer-to-multilayer transition with quantitative measurements of surface coverage thresholds, jamming duration, island size, and cell dynamics. The observations are supported by microscopy data showing the progressive nature of the transition and the dynamic, motile character of cells within islands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The spatial pattern of multilayer island formation differs dramatically in the presence versus absence of kanamycin. Without kanamycin, islands emerge simultaneously throughout the plate in a granular pattern (~2000 \u03bcm\u00b2) reminiscent of spinodal decomposition. With kanamycin, well-defined islands emerge within a ~5 mm band near the arrested swarming front and grow anisotropically, resembling binodal phase separation in a gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe distinct spatial patterns of island formation under different conditions, supported by macroscopic imaging data. The comparison to spinodal versus binodal phase separation (C48, C51) provides theoretical context, though these are inferences rather than direct demonstrations of these physical processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The Phr quorum-sensing system is not responsible for the multilayer transition. Both \u0394phrC and \u0394opp mutant strains lacking the Phr quorum-sensing system showed wild-type phenomenology of wrinkled biofilms and island emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by experimental data with quorum-sensing mutants (Figure 3\u2014figure supplement 4). The observation that mutants lacking quorum sensing still form islands and biofilms provides evidence that this particular signaling system is not required for the transition, though other molecular pathways may still be involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C4",
+      "C71"
+    ],
+    "result": "The mechanism of multilayer island formation is compatible with motility-induced phase separation (MIPS). Bacterial jams cluster in the phase space region predicted for MIPS in two-dimensional self-propelled disks, characterized by appropriate surface coverage (\u226560%) and rotational P\u00e9clet number. Jamming events show sudden drops in cell speed consistent with MIPS predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C4, and C71 demonstrate agreement between experimental observations and MIPS theoretical predictions through phase diagram analysis (Figure 4a). The clustering of jams in the predicted MIPS region and the observed speed reduction during jamming provide quantitative support. However, the authors acknowledge using an 'effective' P\u00e9clet number from average velocities rather than individual particle tracking, which may overestimate values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "UV light-induced local cell accumulation can trigger multilayer island formation consistent with MIPS predictions. When a localized region is illuminated, cell density increases significantly (\u03c6 \u2243 0.42 to \u03c6 \u2243 0.7 in 2 min) through accumulation from non-irradiated regions, leading to jams and multilayer islands. Jamming occurs only for cell densities within the range predicted by MIPS theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 provide experimental validation of the MIPS mechanism through controlled manipulation of cell density and speed using UV light. The experiments distinguish between global UV illumination (no island formation) and localized illumination (island formation), demonstrating that local density increase is sufficient to trigger the transition. The phase space trajectories (Figure 4d) support the MIPS interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A physical barrier induces swarm-to-biofilm transition through local cell density increase. Blocking swarm expansion with a physical barrier led to multilayer island formation near the barrier, followed by wrinkle development after 36 hr incubation, accompanied by stronger local expression of tasA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C68-C70 demonstrate that a purely physical perturbation (barrier) can induce the same swarm-to-biofilm transition as chemical stress (kanamycin), supporting the hypothesis that local density increase is the key trigger. The observation of tasA upregulation (C70) links the physical transition to molecular biofilm pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81"
+    ],
+    "result": "Sequential antibiotic administration reduces biofilm formation from swarming colonies. When 200 \u03bcg kanamycin was administered in two doses rather than all at once, wrinkle formation was greatly inhibited, with the effect most evident when the second dose was greater than the first.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C81 present a therapeutic strategy based on the mechanistic insights, supported by experimental data (Figure 6). The sequential dosing approach targets the multilayer region before biofilm completion. However, this is demonstrated only in B. subtilis on agar plates, and clinical applicability remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C78",
+      "C79"
+    ],
+    "result": "The initial stage of stress-induced swarm-to-biofilm transition is underpinned by a biophysical mechanism governed by motility and cell density. The mechanism is based on halting of swarming expansion, which promotes cell accumulation at the front, resulting in MIPS-like multilayered island formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C78-C79 summarize the main mechanistic finding supported by the collective experimental evidence. The biophysical mechanism is demonstrated through multiple stressors (kanamycin, UV, physical barrier) all producing similar multilayer transitions, and the compatibility with MIPS theory provides a unifying physical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Exposing bacterial swarms to stressors may inadvertently increase their resilience by promoting biofilm formation. The authors infer that stressors like kanamycin, physical barriers, or UV light could promote formation of biofilms that are more difficult to eradicate than swarms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is a logical inference from the experimental results showing that multiple stressors induce biofilm formation. This is supported by the established knowledge that biofilms are more stress-tolerant than swarms (C8-C9), though the specific resilience comparison for the induced biofilms versus the original swarms is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C29",
+      "C55",
+      "C60",
+      "C90"
+    ],
+    "result": "Background knowledge from prior literature establishes the context for the study. This includes: multicellular behaviors enhance stress tolerance; biofilms and swarming are ancient forms of bacterial adaptation; biofilms are more stress-tolerant than isolated cells; various stressors can induce biofilms from planktonic cells; MIPS theory predicts spontaneous cluster formation in motile particle systems; and cell-density heterogeneity can lead to biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C18, C23, C29, C55, C60, and C90 represent established knowledge from prior literature, appropriately cited. These provide the scientific foundation and theoretical framework for the current study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors speculate about broader implications and future directions. They suggest the mechanism may be general to other bacterial species, could represent a primitive mechanochemical feedback loop, may offer new treatment strategies, and raise questions about molecular pathways and adaptive capacity limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C92 are explicitly speculative statements about future research directions and broader implications. While these are reasonable extrapolations from the findings, they are not tested in the current work. The speculation about clinical applications (C83, C88) and generality to other species (C82) would require additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

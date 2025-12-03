@@ -1,0 +1,2474 @@
+{
+  "submission": {
+    "id": "2ace867f-b48e-43b7-9628-af051deed0f2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:56:34.152713Z",
+    "updated_at": "2025-12-03T02:56:34.152713Z"
+  },
+  "content": [
+    {
+      "id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "submission_id": "2ace867f-b48e-43b7-9628-af051deed0f2",
+      "content_type": "manuscript",
+      "content_text": "# Bulk flow of cerebrospinal fluid observed in periarterial spaces is not an artifact of injection\n\n## Authors\n\n- Aditya Raghunandan<sup>1</sup> ([ORCID: 0000-0002-1938-0184](https://orcid.org/0000-0002-1938-0184))\n- Antonio Ladron-de-Guevara<sup>2</sup> ([ORCID: 0000-0003-1093-2509](https://orcid.org/0000-0003-1093-2509))\n- Jeffrey Tithof<sup>1</sup> ([ORCID: 0000-0003-2083-0901](https://orcid.org/0000-0003-2083-0901))\n- Humberto Mestre<sup>2</sup> ([ORCID: 0000-0001-5876-5397](https://orcid.org/0000-0001-5876-5397))\n- Ting Du<sup>2</sup>\n- Maiken Nedergaard<sup>2</sup>\n- John H Thomas<sup>1</sup> ([ORCID: 0000-0002-7127-8654](https://orcid.org/0000-0002-7127-8654))\n- Douglas H Kelley<sup>1</sup> ([ORCID: 0000-0001-9658-2954](https://orcid.org/0000-0001-9658-2954)) \u2020\n\n### Affiliations\n\n1. Department of Mechanical Engineering, University of Rochester Rochester United States\n2. Center for Translational Neuromedicine, University of Rochester Medical Center Rochester United States\n3. Department of Mechanical Engineering, University of Minnesota Minneapolis United States\n4. Center for Translational Neuromedicine, University of Copenhagen Rochester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCerebrospinal fluid (CSF) flowing through periarterial spaces is integral to the brain\u2019s mechanism for clearing metabolic waste products. Experiments that track tracer particles injected into the cisterna magna (CM) of mouse brains have shown evidence of pulsatile CSF flow in perivascular spaces surrounding pial arteries, with a bulk flow in the same direction as blood flow. However, the driving mechanism remains elusive. Several studies have suggested that the bulk flow might be an artifact, driven by the injection itself. Here, we address this hypothesis with new in vivo experiments where tracer particles are injected into the CM using a dual-syringe system, with simultaneous injection and withdrawal of equal amounts of fluid. This method produces no net increase in CSF volume and no significant increase in intracranial pressure. Yet, particle-tracking reveals flows that are consistent in all respects with the flows observed in earlier experiments with single-syringe injection.\n\n## Introduction\n\nCerebrospinal fluid (CSF) flowing in perivascular spaces (PVSs) \u2013 annular tunnels that surround the brain\u2019s vasculature -- plays a crucial role in clearing metabolic waste products from the brain (Iliff et al., 2012; Xie et al., 2013). The failure to remove such waste products, including toxic protein species, has been implicated in the etiology of several neurological disorders, including Alzheimer\u2019s disease (Iliff et al., 2012; Peng et al., 2016). Recently, in vivo experiments that combine two-photon microscopy and flow visualization in live mice have used the motion of fluorescent microspheres injected into the cisterna magna (CM) to measure the flow of CSF through the PVSs surrounding pial arteries. These PVSs, sometimes referred to as surface periarterial spaces, are found near the surface of the brain and are continuous with the subarachnoid space. The results show pulsatile flow, in lock-step synchrony with the cardiac cycle and with an average (bulk) flow in the same direction as that of the arterial blood flow (Bedussi et al., 2018; Mestre et al., 2018b). Characterizing the flow, however, is easier than determining its driver. Although arterial pulsation has long been considered as a possible driving mechanism for the bulk flow (Bilston et al., 2003; Hadaczek et al., 2006; Wang and Olbricht, 2011; Iliff et al., 2013; Thomas, 2019; Daversin-Catty et al., 2020), that notion remains controversial (Diem et al., 2017; Kedarasetti et al., 2020a; van Veluw et al., 2020), and other mechanisms are possible.\n\nOne such mechanism is the injection of tracers into the CM, which might cause a pressure gradient that drives a flow in the PVSs of pial arteries (Smith et al., 2017; Smith and Verkman, 2018; Croci et al., 2019;\u00a0Keith Sharp et al., 2019 ; van Veluw et al., 2020; Vinje et al., 2020; Kedarasetti et al., 2020a; Faghih and Keith Sharp, 2021). Injection of CSF tracers is known to raise the intracranial pressure (ICP) by 1\u20133 mmHg (Iliff et al., 2013; Mestre et al., 2020), consistent with the fact that a volume of fluid is being added to the rigid skull (Hladky and Barrand, 2018; Bakker et al., 2019). If that ICP increase is not uniform, the resulting pressure gradient could drive fluid into low-resistance pathways such as PVSs surrounding pial arteries (Faghih and Sharp, 2018; Bedussi et al., 2018). In that case, the bulk flows observed in detail by Mestre et al., 2018b might have been artifacts of the injection. Mestre et al., 2018b showed that the flows did not decay over time, as would be expected if they were injection artifacts, but given that injection artifacts have been suggested in several more recent publications, we decided to test the hypothesis with additional in vivo experiments, essentially identical to the earlier experiments (Mestre et al., 2018b), but employing a new particle-injection method.\n\nThe new injection protocol, illustrated in Figure 1b, employs a dual-syringe system to infuse the tracer particles. In this system, two cannulae connected to synchronized syringe pumps are inserted into the CM; one line injects fluid in which the tracer particles are suspended, while the other line simultaneously withdraws an identical amount of fluid at the same volumetric flow rate. Thus, no net volume of fluid is added to the intracranial compartment, and hence we expect no significant change in ICP. We use two-photon microscopy to visualize the motion of the fluorescent tracer particles and measure the flow in the PVS of the cortical branches of the middle cerebral artery (MCA) using particle tracking velocimetry. We also simultaneously measure changes to ICP while monitoring heart and respiration rates. We compare the flow characteristics measured under the new protocol with those measured previously using the traditional single-injection protocol (Bedussi et al., 2018; Mestre et al., 2018b) (depicted in Figure 1a). (For this comparison, the data from Mestre et al., 2018b analyzed here are from the control mice, not the hypertension mice.) Our new results are consistent in all respects with the previous results. With the new infusion protocol, the flow is again pulsatile in nature, in step with the cardiac cycle, with a net (bulk) flow in the direction of arterial blood flow. We find nearly identical mean flow speeds and other flow characteristics with the new infusion protocol. Our new experiments confirm that the flows we observed in the PVSs of pial arteries in our earlier experiments are natural, not artifacts of the tracer infusion, and provide additional statistical information about these flows.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65958/elife-65958-fig1-v2.jpg)\n\n**Figure 1.:** (a) The single-injection protocol for injection of 10 \u03bcL at 2\u00a0\u03bcL/min and (b) the dual-syringe protocol for simultaneous injection and withdrawal of 20 \u03bcL at 2\u00a0\u03bcL/min.\u00a0The effect of single-injection and dual-syringe tracer infusion upon intracranial pressure (ICP) is shown in (c). The ICP was monitored continuously during injection of cerebrospinal fluid (CSF) tracers into the CM of mice. Injection begins at 60 s, indicated by the vertical dashed line. Single-injection infusion of 10 \u03bcL at a rate of 2 \u03bcL/min resulted in a mild change of \u223c2.5 mmHg in ICP, whereas little or no change in ICP was observed during the simultaneous injection and withdrawal in the dual-syringe protocol. Repeated measures two-way analysis of variance (ANOVA) was performed; interaction p-value < 0.0001; n\u00a0=\u00a05 mice for single-injection and n\u00a0=\u00a06 mice for dual-syringe. The shaded regions above and below the plot lines indicate the standard error of the mean (SEM).\n\n## Results\n\n### Changes in ICP\n\nIn a group of mice, we evaluated the effect of tracer infusion upon ICP. A 30-gauge needle was inserted stereotactically into the right lateral ventricle and connected to a pressure transducer to monitor ICP during CSF tracer injection into the CM, using both the single-injection (n\u00a0=\u00a06 mice) and dual-syringe (n\u00a0=\u00a05) protocols (Figure 1c). In agreement with prior studies using similar single-injection protocols (Iliff et al., 2013; Xie et al., 2013; Mestre et al., 2020), we found that the injection of 10 \u03bcL of CSF tracer into the CM at a rate of 2 \u03bcL/min resulted in a mild elevation of ICP (\u223c2.5 mmHg) that relaxed to baseline values within 5 min of the cessation of injection (Figure 1c). When ICP was measured during the dual-syringe infusion, we observed that the simultaneous injection of the tracer and withdrawal of CSF did not significantly alter ICP (Figure 1c), as expected given the absence of any net change in the volume of fluid in the intracranial CSF compartment. Based on these findings, we conducted intracisternal infusion of fluorescent microspheres into the CM using the dual-syringe protocol to perform particle-tracking studies and determine the characteristics of CSF flow in the absence of any transient elevation of ICP caused by the infusion protocol.\n\n### Flow measurements in PVSs\n\nWe studied the motion of tracer particles infused into the CM with the new dual-syringe protocol (lower panels in Figure 2), and compared it with the motion of tracer particles observed by Mestre et al., 2018b and infused with the single-injection protocol (upper panels in Figure 2), using particle tracking to examine flow of CSF in the PVSs of pial arteries.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65958/elife-65958-fig2-v2.jpg)\n\n**Figure 2.:** The superimposed particle tracks shown in panels (a) and (e) have similar, continuous spatial distributions and show similar sizes of the perivascular spaces. The time-averaged velocity fields shown in panels (b) and (f) both show net flow of fluid in the same direction as the blood flow. The flow-speed distributions plotted in panels (c) and (g) show comparable speeds, with the fastest flow at the center of the imaged periarterial space and the slowest flow near the boundaries. Panels (d) and (h) show average flow-speed profiles across the corresponding colored lines spanning the PVS in panels (c) and (g), smoothed by interpolation. The parabolic-like nature of these velocity profiles is what is expected for viscous flow in an open channel. Scale bars indicate 50 \u03bcm. Figure panels (a,\u00a0b,\u00a0c, and d) reproduced from Figure 1, Mestre et al., 2018a, Nature Communications, published under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/).\n\nThe images were acquired through a sealed cranial window using intravital two-photon microscopy. The cranial window was prepared on the right anterolateral parietal bone to visualize the cortical branches of the MCA, as chosen in previous studies (Bedussi et al., 2018; Mestre et al., 2018b). In the new protocol, the particles appeared in the visualized spaces \u223c300\u00a0s after infusion was complete. This time scale is similar to that in our previous report (Mestre et al., 2018b) of 292\u00a0\u00b1\u00a026\u00a0s, but particle counts were lower than those observed using the single-injection technique (an average 6200 particles for the dual-syringe method vs. 19,800 particles for the single-injection method), likely because some of the injected particles were siphoned into the withdrawal line of the dual-syringe setup. However, a sufficient number of particles made their way into the PVSs to enable rigorous flow measurements (see Figure 2\u2014video 1). Results obtained from the particle tracking analysis are shown in Figure 2. Each of the six experiments using the new protocol lasted at least 10 min. An example of the superimposed particle tracks imaged in an experiment is shown in Figure 2e. The particle tracks are mostly confined to the PVSs surrounding the artery, occasionally crossing from one side of the artery to the other. The distribution of particle tracks is spatially continuous across the width of the imaged PVSs under both infusion methods (Figure 2a; Mestre et al., 2018b and Figure 2e), reaffirming that PVSs along pial arteries are open, rather than porous, spaces (Min Rivas et al., 2020). The direction of the observed fluid flow in the different branches is indicated by the arrows in Figure 2b and Figure 2f. If injection were driving the flow, we would expect to observe dominant directional transport of tracer particles only when using the single-injection method, and little or no transport when using the dual-syringe method. The time-averaged (bulk) flow for both infusion methods is in the same direction as that of the blood flow, providing evidence that CSF flow in PVSs is not caused by the injection. For both infusion methods, we observed no net flow in the direction opposite to that of blood flow, as some recent reports have suggested (Aldea et al., 2019; van Veluw et al., 2020). Figure 2g shows that the average flow speed in the PVSs of pial arteries varies across the PVS, consistent with prior reports (Mestre et al., 2018b) shown in Figure 2c. The velocity profile is parabolic-like (Figure 2d and h); the flow is fastest (\u223c50 \u03bcm/s) at the center of the PVS and slows to zero at the walls. This parabolic-like shape is consistent with laminar, viscous-dominated flow of CSF through an open annular space, and not through a porous medium, indicating that pial periarterial spaces are open (Min Rivas et al., 2020).\n\nFurther analysis of the data obtained from particle tracking demonstrates the close similarity between the flows observed in the two protocols, as shown in Figure 3. A time-history of the measured flows\u00a0\u2014\u00a0quantified by the spatial root-mean-square velocity computed at each instant of time ($V_{rms}$)\u00a0\u2014\u00a0portrays very similar behavior over times much longer than the time it takes for the ICP to return to normal after the infusion (Figure 3a). (The times shown here begin when particles were first seen or when the imaging was started: these times differ by less than 1 min and so do not affect the results significantly.) The pulsatile nature of the flow at small time scales is depicted in Figure 3b\u00a0and\u00a0c. If injection-induced elevated ICP were driving the flow, we would observe large $V_{rms}$ values early in the single-injection experiments, followed by an exponential decay, and we would observe little or no flow in the dual-syringe experiments, in which the ICP remains unchanged. Since we observe very similar trends in the time-history profiles in both infusion protocols, the mechanisms driving the flow are apparently independent of the infusion method.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65958/elife-65958-fig3-v2.jpg)\n\n**Figure 3.:** Panel (a) shows $V_{rms}$ over the course of the velocity measurements for both infusion methods. Repeated measures two-way ANOVA was performed; ns, not significant; n\u00a0=\u00a05 mice for single-injection and n\u00a0=\u00a06 mice for dual-syringe. The solid lines represent the mean value of $V_{rms}$ and the shaded area represents the standard error of the mean within each time bin. The pulsatility of typical measured flows is depicted in panels (b) and (c). Panel (d) shows mean downstream flow speeds and panel (e) shows backflow fractions for the individual experiments, with overall mean values shown as open circles (and bars showing the standard error of the mean). The nearly identical values for the two protocols demonstrate that the flow is independent of the injection method employed. Unpaired Student\u2019s t-test was performed; n\u00a0=\u00a05 or 6 mice per group; ns, not significant; mean \u00b1 SEM.\n\nFigure 3c shows mean flow speeds computed by averaging the downstream velocity component over space and time for each experiment. The overall mean flow speed (open circles) is 15.71\u00a0\u00b1\u00a06.2 m/s for all the single-injection experiments and 17.67\u00a0\u00b1\u00a04.42 for all the dual-syringe experiments, values that differ by less than the standard error of the mean in either set of experiments. Significantly greater differences in mean flow speed are caused by animal-to-animal variations than by changing from single-injection to dual-syringe methods. These values are also nearly identical to the mean speed of 17\u00a0\u00b1\u00a02 reported by Bedussi et al., 2018, from experiments that used a single-injection protocol with a lower injection rate. The mean flow speeds represent the speeds at which tracer particles (or CSF) are transported in the direction of arterial blood flow (downstream), and presumably into the brain. If the observed flows were injection-induced, we would expect faster mean flows with the single-injection method than with the dual-syringe method.\n\nWe also computed a \u2018backflow fraction\u2019 for each experiment, as the fraction of the downstream velocity measurements showing motion in the retrograde direction (opposite that of the blood flow): the results are shown in Figure 3e. An injection-driven flow would exhibit a much smaller backflow fraction. However, the backflow fraction is nearly identical: 0.26\u00a0\u00b1\u00a00.059 for single-injection and 0.24\u00a0\u00b1\u00a00.056 for dual-syringe infusion respectively. As with flow speed, mean values differ by less than the standard error of the mean, so animal-to-animal variations exceed the effects of changing the injection protocol. The nearly identical mean flow speeds and backflow fractions further demonstrate that the observed flows are natural, and not artifacts of the infusion.\n\n### Flows pulse in synchrony with the cardiac cycle\n\nIt has been variously suggested that CSF flow might be driven by the cardiac cycle, the respiratory cycle, or perhaps both (Rennels et al., 1985; Hadaczek et al., 2006; Yamada et al., 2013; Bedussi et al., 2018), with evidence indicating much stronger correlation with the cardiac cycle (Iliff et al., 2013; Mestre et al., 2018b). We used the simultaneous measurements of the electrocardiogram (ECG) and respiration in conjunction with particle tracking to determine the relative importance of the cardiac and respiratory cycles (Santisakultarm et al., 2012), and also to see if there is any difference in these relationships between the two infusion methods (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65958/elife-65958-fig4-v2.jpg)\n\n**Figure 4.:** Panels (a) and (b) show the measured $V_{r\u2062m\u2062s}$ conditionally averaged over the cardiac and respiratory cycles, based on the synchronized measurements of ECG, respiration, and velocity, for the single-injection (a) and the dual-syringe (b) protocols. Panel (c) for single injection and panel (e) for dual syringe both show that the peaks in the ECG are immediately followed by peaks in $V_{r\u2062m\u2062s}$, indicating a strong correlation between heart rate and fluid motion in both injection protocols. No consistent trends are seen when $V_{r\u2062m\u2062s}$ is averaged over the respiratory cycle, as shown in panels (d) and (f). Panels (g) and (h) show the mean and the standard error of the mean of probability density functions of the delay time $\u0394t$ between the peak in the cardiac (cyan) or respiration (green) cycle and the subsequent peak in $V_{r\u2062m\u2062s}$, for single-injection (n\u00a0=\u00a05) and dual-syringe (n\u00a0=\u00a06) methods respectively. Panel (i) shows the average $\u0394t$ between peaks in the cardiac cycle and $V_{r\u2062m\u2062s}$ for both protocols; in both, the peak in $V_{r\u2062m\u2062s}$ typically occurs \u223c0.05 s after the peak in the cardiac cycle. Unpaired Student\u2019s t-test was performed; n\u00a0=\u00a05 or 6 mice per group; ns, not significant; mean \u00b1 SEM. Figure panel (a) reproduced from Figure 3 Mestre et al., 2018b, Nature Communications, published under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/).\n\nWe find that the measured time-dependent components of flow quantities such as $V_{r\u2062m\u2062s}$\u00a0are strongly modulated by the cardiac cycle but only weakly by respiration (Figure 4a; Mestre et al., 2018b and Figure 4b). This strong correlation of the pulsatile component of flow with the heart rate is exhibited under both the single-injection and dual-syringe protocols, as shown in Figure 4c and e, where the peak in the $V_{r\u2062m\u2062s}$ occurs soon after the peak in the cardiac cycle. Probability density functions of $\u0394t$, the delay time between peaks in $V_{r\u2062m\u2062s}$ and cardiac/respiratory cycles, also predict a much greater likelihood of peaks in $V_{r\u2062m\u2062s}$ following the peak in the cardiac cycle (Figure 4g and Figure 4h). We observe nearly identical average delay times of \u223c0.05 s between peaks in $V_{r\u2062m\u2062s}$ and the cardiac cycle for both protocols (Figure 4i). No such correlation is observed when the $V_{r\u2062m\u2062s}$ is conditionally averaged over respiration cycles (Figure 4d and f). These observations corroborate prior reports that the cardiac cycle drives the dominant oscillatory component of CSF flow in the PVSs of pial arteries, unaffected by injection protocol.\n\n## Discussion\n\nHealthy removal of metabolic waste from the brain is believed to occur via circulation of CSF, which enters brain tissue through the PVSs surrounding pial arteries (Rasmussen et al., 2018; Reeves et al., 2020; Nedergaard and Goldman, 2020). Whereas experiments in live mice have shown that fluid is pumped in the direction of blood flow and into brain, perhaps by forces linked to the pulsation of arterial walls, several published papers have hypothesized that the observed flows might instead be artifacts of non-natural elevation of ICP caused by tracer infusion into the CM (Smith et al., 2017; Smith and Verkman, 2018; Croci et al., 2019; Keith Sharp et al., 2019; van Veluw et al., 2020; Vinje et al., 2020; Kedarasetti et al., 2020a; Faghih and Keith Sharp, 2021). In this study, we designed a new infusion protocol that enabled tracer-particle infusion with no net addition of fluid and near-zero changes in ICP. Using two-photon microscopy and particle-tracking velocimetry, we found flows of CSF in the PVSs of the cortical branches of the MCA that are statistically identical to the flows found earlier in the same location using the single-injection protocol (Mestre et al., 2018a). These findings are consistent with the hypothesis that the observed flows in pial PVSs are not driven by tracer infusion.\n\nFurther support for the hypothesis that these flows are not driven by tracer injection comes from their timing. The time that elapses between beginning injecting particles and observing them in pial PVSs is similar with either protocol. If injection were driving flow, we would expect particles to arrive in PVSs more quickly with the single-injection protocol than with the dual-syringe protocol. Moreover, in single-injection experiments, ICP returns to its baseline value within 5 min after injection is complete (Figure 1), but flows continue through the duration of the experiments (1030 min), which would not occur if ICP were the driver. By the same reasoning, if ICP were the driver, flows would not occur at all in dual-syringe experiments, but we again observe flows continuing through the duration of the experiments.\n\nOther characteristics of the flows we observe also support the hypothesis that flows are not driven by tracer injection. If elevated ICP levels create large pressure differences across the brain, these pressure differences should undergo exponential decay because of the brain\u2019s compliance and proclivity to achieve stasis. If this exponential relaxation of ICP were to drive fluid flow, the measurements from particle tracking would reflect this decay, exhibiting fast flows at early times which then gradually subside. However, our measurements show that the mean flow remains nearly constant and similar over periods that are two\u00a0to\u00a0three times longer than the infusion time, for several healthy mice and both infusion protocols (Figure 3a). Variation between the two protocols is similar to animal-to-animal variation. In dual-syringe experiments, we observe flow speeds that are nearly identical to those observed in one earlier, single-injection study (Mestre et al., 2018b), and very close to those in a single-injection study that used injection rates one order of magnitude smaller (Bedussi et al., 2018), again suggesting that injection rate is not the driver. Finally, if the ICP elevation induced by the single-injection protocol\u00a0were\u00a0responsible for the tracer penetration into the brain, then variations associated with arousal state (Xie et al., 2013), anesthesia (Hablitz et al., 2019), blood pressure (Mestre et al., 2018a), and other biological mechanisms would not have occurred.\n\nThough we were able to characterize flow in pial PVSs in great detail using particle tracking, quantifying flow in more distal PVSs, such as those surrounding penetrating arteries and arterioles (including Virchow-Robin spaces), remains a challenge. We found that particles large enough to be tracked individually are apparently sieved and are not transported into such smaller PVSs, consistent with prior studies (Mestre et al., 2018a; Bedussi et al., 2018). Additionally, the limitations in temporal resolution of the current microscopes in the third dimension (z-direction) prevent accurate measurement of CSF flow in PVSs of penetrating arteries and arterioles, which are oriented along that dimension. However, conservation of mass implies that fluid flowing through pial PVSs must continue through whatever regions are contiguous, and we hypothesize that Virchow-Robin spaces are contiguous. That hypothesis, which we hope to test directly in future work, is supported by data collected using several complementary methodologies in mice (Iliff et al., 2012; Mortensen et al., 2019; Koundal et al., 2020) and by recent MRI studies in humans (Ringstad et al., 2017; Ringstad et al., 2018), where tracer (if not particles) is carried into the parenchyma. If that hypothesis holds, it would imply that flow in PVSs surrounding penetrating arterioles (including Virchow-Robin spaces) is not an artifact of injection, either.\n\nSingle-injection experiments do introduce substantial additional fluid into the subarachnoid space. Recent studies have infused 10 \u03bcL at rates of 1\u20132 \u03bcL/min (Bedussi et al., 2018; Mestre et al., 2018b), much greater than the natural CSF production rate (0.1\u20130.3 \u03bcL/min\u00a0[Rudick et al., 1982; Liu et al., 2020]). Given the measurements and reasoning described above, it seems that little or none of the additional fluid flows through pial PVSs. Still, it must flow somewhere, and we speculate that it takes an alternate path. Recent publications have presented evidence of fluid efflux via meningeal lymphatic vessels located around the venous sinuses and at the base of the skull (Louveau et al., 2018; Ahn et al., 2019) and via pathways along cranial and spinal nerves (Ma et al., 2019; Stanton et al., 2021). Attempts to quantify the perivascular and lymphatic transport using radiolabeled tracers and contrast agents for T1 mapping techniques have estimated that around 20% of the tracers injected into the CM is transported into the brain, implying that most of the tracer mass migrates to spine and/or drains into the different efflux routes (Iliff et al., 2012; Lee et al., 2018; Eide et al., 2018). In addition, other studies have reported a correlation between the rate of CSF absorption and the volume of the injection or its effect upon ICP (Boulton et al., 1998; Johnston and Papaiconomou, 2002; Ma et al., 2019). The exact routes of these alternate paths, and the conditions under which they carry substantial amounts of fluid, would both be promising topics for future study. Moreover, since flow in pial PVSs is hardly affected by the injection of large amounts of fluid that passes along alternate paths, the mechanisms driving CSF through pial PVSs may be nearly independent of the mechanisms driving CSF flows elsewhere. Additional study might elucidate the situation.\n\nOur results confirm that the cardiac cycle -- not respiration -- drives the oscillatory component of the observed flows in the PVSs of pial arteries. The peaks of $V_{r\u2062m\u2062s}$ that we measured across specimens, for both infusion protocols, appear shortly after the peaks in the cardiac cycle (Figure 4c\u00a0and\u00a0e), but are not correlated with the respiratory cycle (Figure 4d\u00a0and\u00a0f). Probability density functions show that the delay times between the peaks in the ECG and the peaks in $V_{r\u2062m\u2062s}$ are nearly identical for the two infusion methods (Figure 4g\u00a0and\u00a0h). Although we present compelling evidence that the cardiac cycle drives the purely oscillatory component of the pulsatile flow in pial PVSs, we cannot rule out other natural mechanisms that might be driving the average (bulk) flow, such as CSF production, functional hyperemia (Kedarasetti et al., 2020b), or vasomotion (van Veluw et al., 2020). While our results show that respiration is not a dominant driving force of flow in pial PVSs, the proximal segments of the influx routes along which CSF is transported into the brain, respiration might yet contribute to flow when CSF exits the brain (Kiviniemi et al., 2016). We do conclude, however, that the currently employed methods of tracer infusion are not responsible for the observed flows in pial PVSs.\n\nThe suggested role of arterial pulsatility in perivascular transport and the changes in the properties of the arterial wall in cardiovascular diseases may provide a causal linkage between vascular disorders and protein-aggregation disorders (Nedergaard and Goldman, 2020). For example, hypertension, an established risk factor for Alzheimer\u2019s Disease (correlated with amyloid-\u03b2 accumulation [Gentile et al., 2009; Carnevale et al., 2016]), causes stiffening of the arterial wall, reducing its compliance and pulsatility, and thereby attenuating perivascular flow (Mestre et al., 2018a; Mortensen et al., 2019). These accumulating data suggest that dysfunction in perivascular transport may be one of the key causes of protein mis-aggregation and may provide a novel therapeutic approach to the prevention and treatment of neurodegenerative disease\u00a0(Nedergaard and Goldman, 2020). Our results also have implications for drug delivery to the CNS by bolus intrathecal administration of drugs directly to the CSF. Since we have demonstrated that the methods of tracer injection do not directly affect the measured bulk flows in PVSs, the manipulation of perivascular transport rather than the volume or rate of the bolus intrathecal injection may represent a novel strategy for improving the CNS delivery of intrathecally administered drugs bypassing the blood\u2013brain\u00a0barriers (Plog et al., 2018; Lilius et al., 2019). An improved understanding of the mechanisms that drive CSF flow in the brain remains an important topic for future work.\n\nThe dual-syringe infusion method we have developed avoids increases to the volume of fluid in the skull and does not increase the ICP (Figure 1). Thus, the dual-syringe infusion causes minimal flow and is ideally suited to test whether injection-induced pressure differences could propel the observed periarterial CSF flows. However, implanting a second cannula to withdraw fluid and avoid transient changes to ICP lowers the count of tracer particles injected, and would likewise reduce the amount of fluorescent dye tracer injected. Dual-syringe infusion also adds an additional step to an already complex surgery, thereby reducing the success rate with mouse specimens. The results and reasoning described above support the conclusion that flows in pial periarterial spaces, observed in the present study and in prior efforts that used the single-injection method to infuse tracer (Iliff et al., 2012; Xie et al., 2013; Bedussi et al., 2018; Mestre et al., 2018b), are affected very little or not at all by changing between these infusion methods. Thus, the dual-syringe method is not necessary for future studies that adopt prevalent infusion methods to inject tracer particles or fluorescent dyes and study flows in these proximal CSF influx pathways. However, it may be useful when validating whether new injection parameters affect CSF flow or assessing if flows in other anatomical regions are affected by the addition of extra volume or the transient changes in ICP.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain strain background (Mus musculus, C57BL/6NCrl)</td>\n      <td>Male wild type (WT)</td>\n      <td>Charles River, 027</td>\n      <td>RRID: IMSR_CRL:27</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>RRID: SCR001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 8</td>\n      <td>GraphPad Software</td>\n      <td>RRID: SCR002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>FluoSpheres</td>\n      <td>Invitrogen</td>\n      <td>Cat: #13081</td>\n      <td>Particles are 1.0 \u03bcm in diameter with excitation/emission at 580/605 nm</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Artificial CSF</td>\n      <td>Sigma-Aldrich</td>\n      <td></td>\n      <td>Components in aCSF (concentrations in mM): 126.0 NaCl 3 KCl, 2 MgSO4, 10.0 dextrose, 26.0 NaHCO3, 1.25 NaH2PO4, 2 CaCl2</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals and surgical preparation\n\nAll experiments were approved and conducted in accordance with the relevant guidelines and regulations stipulated by the University Committee on Animal Resources of the University of Rochester Medical Center (Protocol No. 2011-023), certified by Association for Assessment and Accreditation of Laboratory Animal Care. An effort was made to minimize the number of animals used. We used 8- to 12-week-old male C57BL/6 mice acquired from Charles River Laboratories (Wilmington, MA, USA). In all experiments, animals were anesthetized with a combination of ketamine (100 mg/kg) and xylazine (10 mg/kg) administered intraperitoneally. Depth of anesthesia was determined by the pedal reflex test. Once reflexes had ceased, anesthetized mice were fixed in a stereotaxic frame for the surgical procedure, and body temperature was kept at 37\u00b0C with a temperature-controlled warming pad.\n\n### Dual-syringe protocol\n\nFor in vivo imaging, anesthetized mice were fixed in a stereotaxic frame and body temperature was maintained at 37.5\u00b0C with a rectal probe-controlled heated platform (Harvard Apparatus). A cranial window was prepared over the right MCA distribution. The dura was left intact, and the craniotomy ($\u22434mm$\u00a0in diameter) was filled with aCSF, covered with a modified glass coverslip, and sealed with dental acrylic. Afterwards, two 30-gauge needles were inserted into the CM, as previously described (Xavier et al., 2018). Briefly, the dura mater of mice was exposed after blunt dissection of the neck muscles so that a cannula could be implanted into the CM, which is continuous with the subarachnoid space. Using a syringe pump (Harvard Apparatus Pump 11 Elite), red fluorescent polystyrene microspheres (FluoSpheres 1.0 \u03bcm, 580/605 nm, 0.25% solids in aCSF, Invitrogen) were infused up to a total volume of 20 \u03bcL via one of the CM cannulae while CSF was simultaneously withdrawn through the other cannula at an equal rate of 2 \u03bcL/min with a coupled syringe pump.\n\n### ICP measurements\n\nAnesthetized mice were fixed in a stereotaxic frame, and two 30-gauge needles were inserted into the CM, as described above. A third cannula was inserted via a small burr hole into the right lateral ventricle (0.85 mm lateral, 2.10 mm ventral, and 0.22 mm caudal to bregma). Mice were then placed in a prone position. In the first set of experiments, 10 \u03bcL of artificial CSF (aCSF) was injected into the CM at a rate of 2 \u03bcL/min via one of the CM cannulae using a syringe pump (Harvard Apparatus Pump 11 Elite). In the second set of experiments, aCSF was injected at the same rate while withdrawing CSF from the CM\u00a0via the other CM cannula at an equal rate using a coupled syringe pump (Harvard Apparatus Pump 11 Elite). In both experiments, ICP was monitored via the ventricle cannulation connected to a transducer and a pressure monitor (BP-1, World Precision Instruments). ICP was acquired at 1 kHz, digitized, and monitored continuously for the duration of the infusion experiments with a DigiData 1550B digitizer and AxoScope software (Axon Instruments).\n\n### In vivo two-photon laser-scanning microscopy\n\nTwo-photon imaging was performed using a resonant scanner B scope (Thorlabs) with a Chameleon Ultra II laser (Coherent) and a 20\u00d7 water immersion objective (1.0 NA, Olympus). Intravascular FITC-dextran and red microspheres were excited at a 820 nm wavelength and images were acquired at 30 Hz (ThorSync software) simultaneously with physiological recordings (ThorSync software), as previously described (Mestre et al., 2018b). To visualize the vasculature, fluorescein isothiocyanate\u2013dextran (FITC\u2013dextran, 2,000 kDa) was injected intravenously via the femoral vein immediately before imaging. Segments of the MCA were distinguished on the basis of morphology: surface arteries passing superficially to surface veins and exhibiting less branching at superficial cortical depths. ECG and respiratory rate were acquired at 1 kHz and 250 Hz, respectively, using a small-animal physiological monitoring device (Harvard Apparatus). The signals were digitized and recorded with a DigiData 1550A digitizer and AxoScope software (Axon Instruments).\n\n### Image processing\n\nImages with spatial dimensions 512 \u00d7 512 were obtained from two-photon microscopy. Each image is 16-bit with two channels, red and green. The FITC-dextran injected in the vasculature is captured via the green channel while the red channel is used to image the fluorescent microspheres flowing in the PVSs. Image registration via rigid translation is performed on each image in the time series to account for movement by the mouse in the background. The image registration is implemented using an efficient algorithm in MATLAB (Guizar-Sicairos et al., 2008) to an accuracy of 0.2 pixels. Erroneous correlations in the translation are manually corrected by linear interpolation. The translations obtained are sequentially applied to images that are padded with zero-value pixels. This ensures spatial dimension homogeneity across all images without modifying the image resolution. Particles are then detected by applying a minimum intensity threshold to each image. Typically, particles were resolved across 3\u20134 pixels in the image with spatial resolution of 1.29 \u03bcm.\n\n### Particle-tracking velocimetry\n\nThe particles detected in each image were tracked using an automated PTV routine in MATLAB (Kelley and Ouellette, 2011; Ouellette et al., 2006) and can be downloaded from the repository found at Raghunandan, 2021. Briefly, the algorithm locates each particle with a sub-pixel accuracy and obtains a series of particle locations (particle tracks) for the entire duration of the recorded video. Particle velocities were calculated by convolution with a Gaussian smoothing and differentiation kernel. Stagnant particles that have adhered to the wall of the artery or the outer wall of the PVS, and hence no longer track the CSF flow, were masked in each image by subtracting a dynamic background image. This image was different for each frame and was computed by taking the average of 100 frames before and 100 frames after the given image. This method of masking was applied only to the dual-syringe data; the single-injection data used a simpler masking approach with a single background image (Mestre et al., 2018b). Time-averaged flow velocities were obtained by segregating the imaged domain into a 70 \u00d7 70 grid, with a resolution of 7.5 \u00d7 7.5 pixels in each direction. All velocity measurements for a chosen time interval were binned based on their grid position. Average flow speeds were computed using bins with at least 15 measurements. The downstream velocity component was calculated as the dot product $u\u22c5u^_{a\u2062v\u2062g}$, where u is the instantaneous particle velocity and $u^_{a\u2062v\u2062g}$ is the field of unit vectors computed from the time-averaged flow field, in the direction of arterial blood flow.\n\n### Statistical analysis\n\nAll statistical analyses were performed on GraphPad Prism 8 (GraphPad Software). Data in all graphs are plotted as mean \u00b1 standard error of the mean (SEM) over the individual data points and lines from each mouse. Statistical tests were selected after evaluating normality (D\u2019Agostino Pearson omnibus test). When the sample size did not allow for normality testing, both parametric and nonparametric tests were performed and, in all cases, yielded the same result. Sphericity was not assumed; in all repeated measures, two-way ANOVAs and a Geisser-Greenhouse correction were performed. All hypothesis testing was two-tailed and exact p-values were calculated at a 0.05 level of significance and stated in the figure legends.\n",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "9fe98234-1e66-448c-9a21-efd7047f32bd",
+      "submission_id": "2ace867f-b48e-43b7-9628-af051deed0f2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claire Wyart, Institut du Cerveau et la Moelle \u00e9pini\u00e8re, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re, Sorbonne Universit\u00e9s, UPMC Univ Paris 06, Inserm, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65958.sa1](https://doi.org/10.7554/eLife.65958.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe understand that your work brings an important piece of evidence for the field to understand the flow of cerebrospinal fluid observed in periarterial spaces.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Bulk flow of cerebrospinal fluid observed in periarterial spaces is not an artifact of injection\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Per K. Eide (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis work addresses a timely question regarding the scientific controversy about glymphatic function. The glymphatic system was initially described in 2012 using in vivo two-photon imaging of paravascular tracer movement after injection of CSF tracers of variable size to the cisterna magna. The authors describing the glymphatic system have argued that tracer movement is convective, i.e. pressure gradient driven, created by the arterial pressure pulsations. However, the antegrade para-arterial tracer movement observed in vivo using two-photon imaging was suggested to result from an artificial increase in volume and pressure induced by the tracer infusion (about 1-3 mmHg in ICP). The present work further addresses this important methodological issue.\n\nThe authors established a methodology where artificial CSF was injected to cisterna magna via one needle and the same volume withdrawn via another needle, in order to avoid an artificial volume increase. Intracranial pressure was monitored to control for increase in ICP. By doing so, the authors robustly show that the previously reported paravascular flow is not induced by methods of tracer infusion. The study is well-designed and the results are compelling. The flow of fluid in the perivascular spaces occurs in the same direction as the blood flow and the flow appears to be driven by pulsatile blood flow.\n\nEssential revisions:\n\n1) One aspect that the authors need to clarify is the location for particle movement, which is referred to as the \"surface periarterial spaces\". This location should be better explained.\n\n2) Do the authors refer to branches of the medial cerebral artery within the subarachnoid space and surrounded by the arachnoid membrane? I would assume it is difficult to perform measurements within the Virchow-Robin spaces. This aspect should be commented on.\n\n3) To which degree does particle movement paravascular within the subarachnoid space compare with tracer movement within the Virchow-Robin spaces? In humans, intrathecal injection of MRI contrast agent serving as tracer demonstrates tracer enrichment surrounding e.g. the medial cerebral artery, and tracer enriches the arteries within the subarachnoid space in antegrade direction (see Ringstad, Vatnehol and Eide, 2017, Figure 3).\n\n4) Are the present authors assessing particle movement in the same location in mice, i.e. where the arteries reside within the subarachnoid space? Since glymphatic circulation refers to perivascular transport in VR spaces and along basement membrane, the relevance of the present study needs to be addressed.\n\n5) Discussion, first paragraph. It is mentioned that \"several published papers have hypothesized that the observed flows might instead be artifacts of non-natural elevation of ICP caused by tracer infusion into the cisterna magna.\" References are needed.\n\n6) The authors might comment whether this methodology are to be used in future studies when assessing in vivo paravascular tracer movement following tracer injection to cisterna magna.\n\n7) One main open questions of reviewer 2 is simple surprise at how close the results were to the original experiment published by Mestre et al., 2018. In the original experiment, fluid is injected at 2 microL/min, which is a significant increase above the 0.38 microL/min from natural CSF production. Any discussion on the fact that adding 500% more volumetric flow and not show any change in perivascular space flow is helpful. Where did all the extra, injected fluid go?\n",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c88043cf-7f50-4c8a-934d-839232155aaa",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C1",
+      "claim": "Cerebrospinal fluid (CSF) flowing through periarterial spaces is integral to the brain's mechanism for clearing metabolic waste products.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebrospinal fluid (CSF) flowing through periarterial spaces is integral to the brain's mechanism for clearing metabolic waste products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research establishing this role of CSF.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ced244b8-2c03-4a02-b9aa-5af9a56a0260",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C2",
+      "claim": "Experiments that track tracer particles injected into the cisterna magna (CM) of mouse brains have shown evidence of pulsatile CSF flow in perivascular spaces surrounding pial arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments that track tracer particles injected into the cisterna magna (CM) of mouse brains have shown evidence of pulsatile CSF flow in perivascular spaces surrounding pial arteries, with a bulk flow in the same direction as blood flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references experimental observations from prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "62e83acd-c542-4cb3-8bae-edb8a647d8b4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C3",
+      "claim": "CSF flow in periarterial spaces exhibits bulk flow in the same direction as blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments that track tracer particles injected into the cisterna magna (CM) of mouse brains have shown evidence of pulsatile CSF flow in perivascular spaces surrounding pial arteries, with a bulk flow in the same direction as blood flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e2253d99-e1c7-43ab-bfec-6cc074afa63c",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C4",
+      "claim": "Several studies have suggested that the bulk flow might be an artifact, driven by the injection itself.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the driving mechanism remains elusive. Several studies have suggested that the bulk flow might be an artifact, driven by the injection itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies proposing this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "c96a975d-342f-434b-941d-fa93c62c8003",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C5",
+      "claim": "The dual-syringe injection system produces no net increase in CSF volume.",
+      "claim_type": "EXPLICIT",
+      "source": "This method produces no net increase in CSF volume and no significant increase in intracranial pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental method design.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "1ac837c6-e5f8-4630-ad1a-0055b98b0d17",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C6",
+      "claim": "The dual-syringe injection system produces no significant increase in intracranial pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "This method produces no net increase in CSF volume and no significant increase in intracranial pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ICP measurements shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "9e40b28d-2ba8-43c5-9eec-7873b4907c9d",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C7",
+      "claim": "Particle-tracking reveals flows with the dual-syringe system that are consistent in all respects with the flows observed in earlier experiments with single-syringe injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, particle-tracking reveals flows that are consistent in all respects with the flows observed in earlier experiments with single-syringe injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "3ff85f55-c43f-42d0-a68b-4935931a8693",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C8",
+      "claim": "CSF flowing in perivascular spaces plays a crucial role in clearing metabolic waste products from the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebrospinal fluid (CSF) flowing in perivascular spaces (PVSs) \u2013 annular tunnels that surround the brain's vasculature -- plays a crucial role in clearing metabolic waste products from the brain (Iliff et al., 2012; Xie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iliff et al., 2012 and Xie et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7df54cb3-aa4a-4cc8-8410-30b2e81879ff",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C9",
+      "claim": "The failure to remove metabolic waste products, including toxic protein species, has been implicated in the etiology of several neurological disorders, including Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure to remove such waste products, including toxic protein species, has been implicated in the etiology of several neurological disorders, including Alzheimer's disease (Iliff et al., 2012; Peng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iliff et al., 2012 and Peng et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "6f492c7c-096c-4d89-a001-9f5ebda39182",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C10",
+      "claim": "In vivo experiments using two-photon microscopy and flow visualization in live mice have measured CSF flow through PVSs surrounding pial arteries using fluorescent microspheres injected into the cisterna magna.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, in vivo experiments that combine two-photon microscopy and flow visualization in live mice have used the motion of fluorescent microspheres injected into the cisterna magna (CM) to measure the flow of CSF through the PVSs surrounding pial arteries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "550ea093-462e-489e-a494-131c7dfc765f",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C11",
+      "claim": "CSF flow in PVSs surrounding pial arteries shows pulsatile flow in lock-step synchrony with the cardiac cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show pulsatile flow, in lock-step synchrony with the cardiac cycle and with an average (bulk) flow in the same direction as that of the arterial blood flow (Bedussi et al., 2018; Mestre et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bedussi et al., 2018 and Mestre et al., 2018b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "89b80b4e-bdfd-41d8-9cc0-6594bf9d5ec5",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C12",
+      "claim": "Arterial pulsation has long been considered as a possible driving mechanism for the bulk flow in PVSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although arterial pulsation has long been considered as a possible driving mechanism for the bulk flow (Bilston et al., 2003; Hadaczek et al., 2006; Wang and Olbricht, 2011; Iliff et al., 2013; Thomas, 2019; Daversin-Catty et al., 2020), that notion remains controversial (Diem et al., 2017; Kedarasetti et al., 2020a; van Veluw et al., 2020), and other mechanisms are possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies proposing arterial pulsation as a mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "c635b1ea-8730-41cc-aed9-521a10e668e9",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C13",
+      "claim": "The notion that arterial pulsation drives bulk flow in PVSs remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Although arterial pulsation has long been considered as a possible driving mechanism for the bulk flow (Bilston et al., 2003; Hadaczek et al., 2006; Wang and Olbricht, 2011; Iliff et al., 2013; Thomas, 2019; Daversin-Catty et al., 2020), that notion remains controversial (Diem et al., 2017; Kedarasetti et al., 2020a; van Veluw et al., 2020), and other mechanisms are possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies questioning the arterial pulsation mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "0e54b002-3857-4648-bc26-f0b140cfc9f4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C14",
+      "claim": "Injection of tracers into the CM might cause a pressure gradient that drives a flow in the PVSs of pial arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "One such mechanism is the injection of tracers into the CM, which might cause a pressure gradient that drives a flow in the PVSs of pial arteries (Smith et al., 2017; Smith and Verkman, 2018; Croci et al., 2019; Keith Sharp et al., 2019 ; van Veluw et al., 2020; Vinje et al., 2020; Kedarasetti et al., 2020a; Faghih and Keith Sharp, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies proposing injection as a driving mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "294f1c6a-fae4-4fd7-b35d-71656c65242a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C15",
+      "claim": "Injection of CSF tracers is known to raise the intracranial pressure (ICP) by 1\u20133 mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of CSF tracers is known to raise the intracranial pressure (ICP) by 1\u20133 mmHg (Iliff et al., 2013; Mestre et al., 2020), consistent with the fact that a volume of fluid is being added to the rigid skull (Hladky and Barrand, 2018; Bakker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iliff et al., 2013 and Mestre et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "c9b43665-940e-4aa4-9b6b-2165bdede867",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C16",
+      "claim": "The ICP increase from tracer injection is consistent with the fact that a volume of fluid is being added to the rigid skull.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of CSF tracers is known to raise the intracranial pressure (ICP) by 1\u20133 mmHg (Iliff et al., 2013; Mestre et al., 2020), consistent with the fact that a volume of fluid is being added to the rigid skull (Hladky and Barrand, 2018; Bakker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hladky and Barrand, 2018 and Bakker et al., 2019, and is based on physical reasoning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ef3fef6a-3200-4c51-b24f-963e65495d60",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C17",
+      "claim": "If ICP increase is not uniform, the resulting pressure gradient could drive fluid into low-resistance pathways such as PVSs surrounding pial arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "If that ICP increase is not uniform, the resulting pressure gradient could drive fluid into low-resistance pathways such as PVSs surrounding pial arteries (Faghih and Sharp, 2018; Bedussi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and represents a hypothetical mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "804be5a0-3f27-4a2f-8d38-295bcebc7694",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C18",
+      "claim": "Mestre et al., 2018b showed that the flows did not decay over time, as would be expected if they were injection artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Mestre et al., 2018b showed that the flows did not decay over time, as would be expected if they were injection artifacts, but given that injection artifacts have been suggested in several more recent publications, we decided to test the hypothesis with additional in vivo experiments, essentially identical to the earlier experiments (Mestre et al., 2018b), but employing a new particle-injection method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references findings from Mestre et al., 2018b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "9b380b3c-df28-48cb-bfe0-c7c87792aceb",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C19",
+      "claim": "The dual-syringe system employs two cannulae connected to synchronized syringe pumps inserted into the CM.",
+      "claim_type": "EXPLICIT",
+      "source": "The new injection protocol, illustrated in Figure 1b, employs a dual-syringe system to infuse the tracer particles. In this system, two cannulae connected to synchronized syringe pumps are inserted into the CM; one line injects fluid in which the tracer particles are suspended, while the other line simultaneously withdraws an identical amount of fluid at the same volumetric flow rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup and is illustrated in Figure 1b.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "b3711fc8-93a5-460f-b795-4ab5250c413e",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C20",
+      "claim": "In the dual-syringe system, one line injects fluid with tracer particles while the other line simultaneously withdraws an identical amount of fluid at the same volumetric flow rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, two cannulae connected to synchronized syringe pumps are inserted into the CM; one line injects fluid in which the tracer particles are suspended, while the other line simultaneously withdraws an identical amount of fluid at the same volumetric flow rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational principle of the dual-syringe method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "11425edd-5f58-4814-aeb7-5bc628bc7397",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C21",
+      "claim": "With the dual-syringe system, no net volume of fluid is added to the intracranial compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, no net volume of fluid is added to the intracranial compartment, and hence we expect no significant change in ICP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the dual-syringe design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8b54078e-5901-4346-8b09-d34d4c746ba8",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C22",
+      "claim": "With the dual-syringe system, no significant change in ICP is expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, no net volume of fluid is added to the intracranial compartment, and hence we expect no significant change in ICP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the design of the dual-syringe system and is confirmed by data in Figure 1c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "83bef8d2-fc62-4e6d-b737-d36d7f5b0fc2",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C23",
+      "claim": "Two-photon microscopy was used to visualize the motion of fluorescent tracer particles.",
+      "claim_type": "EXPLICIT",
+      "source": "We use two-photon microscopy to visualize the motion of the fluorescent tracer particles and measure the flow in the PVS of the cortical branches of the middle cerebral artery (MCA) using particle tracking velocimetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "b8ab6019-6189-4947-9169-890fc1be2792",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C24",
+      "claim": "Flow in the PVS of the cortical branches of the middle cerebral artery (MCA) was measured using particle tracking velocimetry.",
+      "claim_type": "EXPLICIT",
+      "source": "We use two-photon microscopy to visualize the motion of the fluorescent tracer particles and measure the flow in the PVS of the cortical branches of the middle cerebral artery (MCA) using particle tracking velocimetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d5d6b4a8-f645-4f99-a866-378c7d0ef6c9",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C25",
+      "claim": "Changes to ICP were measured simultaneously with heart and respiration rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We also simultaneously measure changes to ICP while monitoring heart and respiration rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental measurements performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "fd0f7b66-dce1-40e6-a830-513b340764b5",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C26",
+      "claim": "With the new dual-syringe protocol, the flow is pulsatile in nature, in step with the cardiac cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "With the new infusion protocol, the flow is again pulsatile in nature, in step with the cardiac cycle, with a net (bulk) flow in the direction of arterial blood flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "6ee28f0a-d21e-47e6-8cf3-fa6bd18934f2",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C27",
+      "claim": "With the new dual-syringe protocol, there is a net (bulk) flow in the direction of arterial blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "With the new infusion protocol, the flow is again pulsatile in nature, in step with the cardiac cycle, with a net (bulk) flow in the direction of arterial blood flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "cdd02746-b0c1-4b4c-9374-9824b707b8d0",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C28",
+      "claim": "Nearly identical mean flow speeds are found with the new dual-syringe infusion protocol compared to the single-injection protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "We find nearly identical mean flow speeds and other flow characteristics with the new infusion protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "36232198-8e89-441c-baf0-9c920c77b958",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C29",
+      "claim": "The flows observed in the PVSs of pial arteries are natural, not artifacts of the tracer infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new experiments confirm that the flows we observed in the PVSs of pial arteries in our earlier experiments are natural, not artifacts of the tracer infusion, and provide additional statistical information about these flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the comparative data from both injection methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ab4fa23c-6510-4d18-b760-f25e3a480a9c",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C30",
+      "claim": "Single-injection infusion of 10 \u03bcL at a rate of 2 \u03bcL/min resulted in a mild change of \u223c2.5 mmHg in ICP.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-injection infusion of 10 \u03bcL at a rate of 2 \u03bcL/min resulted in a mild change of \u223c2.5 mmHg in ICP, whereas little or no change in ICP was observed during the simultaneous injection and withdrawal in the dual-syringe protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ICP measurements shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "1ecaf33f-f1fa-4aab-8880-affe6b595b03",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C31",
+      "claim": "Little or no change in ICP was observed during the simultaneous injection and withdrawal in the dual-syringe protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-injection infusion of 10 \u03bcL at a rate of 2 \u03bcL/min resulted in a mild change of \u223c2.5 mmHg in ICP, whereas little or no change in ICP was observed during the simultaneous injection and withdrawal in the dual-syringe protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ICP measurements shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d86ecc25-bc36-4dc4-b42b-4cca706e885d",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C32",
+      "claim": "Repeated measures two-way analysis of variance (ANOVA) showed an interaction p-value < 0.0001 for ICP changes between single-injection and dual-syringe protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeated measures two-way analysis of variance (ANOVA) was performed; interaction p-value < 0.0001; n = 5 mice for single-injection and n = 6 mice for dual-syringe.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the ICP measurements shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "0414e61c-fe6c-4679-b0a1-7725a63556bd",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C33",
+      "claim": "The injection of 10 \u03bcL of CSF tracer into the CM at a rate of 2 \u03bcL/min resulted in a mild elevation of ICP (\u223c2.5 mmHg) that relaxed to baseline values within 5 min of the cessation of injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with prior studies using similar single-injection protocols (Iliff et al., 2013; Xie et al., 2013; Mestre et al., 2020), we found that the injection of 10 \u03bcL of CSF tracer into the CM at a rate of 2 \u03bcL/min resulted in a mild elevation of ICP (\u223c2.5 mmHg) that relaxed to baseline values within 5 min of the cessation of injection (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ICP measurements shown in Figure 1c and is consistent with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "24359120-fd31-4d06-a2c0-6ebc604054be",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C34",
+      "claim": "The simultaneous injection of the tracer and withdrawal of CSF did not significantly alter ICP.",
+      "claim_type": "EXPLICIT",
+      "source": "When ICP was measured during the dual-syringe infusion, we observed that the simultaneous injection of the tracer and withdrawal of CSF did not significantly alter ICP (Figure 1c), as expected given the absence of any net change in the volume of fluid in the intracranial CSF compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ICP measurements shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7a630afe-cec8-4e50-93b3-0267c94272b7",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C35",
+      "claim": "The superimposed particle tracks have similar, continuous spatial distributions for both injection protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The superimposed particle tracks shown in panels (a) and (e) have similar, continuous spatial distributions and show similar sizes of the perivascular spaces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual comparison in Figure 2a and 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "99398c60-9a33-4ea2-8926-2f2f69bd4259",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C36",
+      "claim": "The superimposed particle tracks show similar sizes of the perivascular spaces for both injection protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The superimposed particle tracks shown in panels (a) and (e) have similar, continuous spatial distributions and show similar sizes of the perivascular spaces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual comparison in Figure 2a and 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8ddc1227-94f2-432c-ac87-5bd62ce5d3d7",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C37",
+      "claim": "The time-averaged velocity fields show net flow of fluid in the same direction as the blood flow for both injection protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-averaged velocity fields shown in panels (b) and (f) both show net flow of fluid in the same direction as the blood flow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the velocity field data shown in Figure 2b and 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ada25b41-c1cc-456a-a05f-ee8d93aafeba",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C38",
+      "claim": "The flow-speed distributions show comparable speeds for both injection protocols, with the fastest flow at the center of the imaged periarterial space and the slowest flow near the boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "The flow-speed distributions plotted in panels (c) and (g) show comparable speeds, with the fastest flow at the center of the imaged periarterial space and the slowest flow near the boundaries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the flow-speed distribution data shown in Figure 2c and 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "90e02827-845a-4176-8a05-7e8476d52a38",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C39",
+      "claim": "The parabolic-like nature of the velocity profiles is what is expected for viscous flow in an open channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The parabolic-like nature of these velocity profiles is what is expected for viscous flow in an open channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on fluid mechanics theory and is supported by the velocity profiles shown in Figure 2d and 2h.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "765608f9-ef67-4203-999b-72c35c04e9de",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C40",
+      "claim": "Particle counts were lower with the dual-syringe method (an average 6200 particles) compared to the single-injection method (19,800 particles).",
+      "claim_type": "EXPLICIT",
+      "source": "This time scale is similar to that in our previous report (Mestre et al., 2018b) of 292 \u00b1 26 s, but particle counts were lower than those observed using the single-injection technique (an average 6200 particles for the dual-syringe method vs. 19,800 particles for the single-injection method), likely because some of the injected particles were siphoned into the withdrawal line of the dual-syringe setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "490bbf0b-4742-440e-9161-d91ab738c5fa",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C41",
+      "claim": "Some of the injected particles were likely siphoned into the withdrawal line of the dual-syringe setup.",
+      "claim_type": "EXPLICIT",
+      "source": "This time scale is similar to that in our previous report (Mestre et al., 2018b) of 292 \u00b1 26 s, but particle counts were lower than those observed using the single-injection technique (an average 6200 particles for the dual-syringe method vs. 19,800 particles for the single-injection method), likely because some of the injected particles were siphoned into the withdrawal line of the dual-syringe setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the lower particle counts in dual-syringe experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "75f4d5a4-81ed-4564-8a43-81deceaeae61",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C42",
+      "claim": "A sufficient number of particles made their way into the PVSs to enable rigorous flow measurements with the dual-syringe method.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a sufficient number of particles made their way into the PVSs to enable rigorous flow measurements (see Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the successful flow measurements presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "46964479-6250-4749-b9d0-206bdadf7c4a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C43",
+      "claim": "The particle tracks are mostly confined to the PVSs surrounding the artery, occasionally crossing from one side of the artery to the other.",
+      "claim_type": "EXPLICIT",
+      "source": "The particle tracks are mostly confined to the PVSs surrounding the artery, occasionally crossing from one side of the artery to the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the particle tracking data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "45a55bba-6369-4a1e-b573-5e3072d5615c",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C44",
+      "claim": "The distribution of particle tracks is spatially continuous across the width of the imaged PVSs under both infusion methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of particle tracks is spatially continuous across the width of the imaged PVSs under both infusion methods (Figure 2a; Mestre et al., 2018b and Figure 2e), reaffirming that PVSs along pial arteries are open, rather than porous, spaces (Min Rivas et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the particle tracking data in Figure 2a and 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "66bd6653-b487-4da0-9cb2-072a3f0e8e92",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C45",
+      "claim": "PVSs along pial arteries are open, rather than porous, spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of particle tracks is spatially continuous across the width of the imaged PVSs under both infusion methods (Figure 2a; Mestre et al., 2018b and Figure 2e), reaffirming that PVSs along pial arteries are open, rather than porous, spaces (Min Rivas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the particle tracking data and is consistent with Min Rivas et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "1c7aba7b-eeb1-45d7-a8fc-773e8dd07c1e",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C46",
+      "claim": "If injection were driving the flow, we would expect to observe dominant directional transport of tracer particles only when using the single-injection method, and little or no transport when using the dual-syringe method.",
+      "claim_type": "EXPLICIT",
+      "source": "If injection were driving the flow, we would expect to observe dominant directional transport of tracer particles only when using the single-injection method, and little or no transport when using the dual-syringe method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on the injection-artifact hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "fbfc8bcf-0db6-4b3f-b063-f9ab5faef53a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C47",
+      "claim": "The time-averaged (bulk) flow for both infusion methods is in the same direction as that of the blood flow, providing evidence that CSF flow in PVSs is not caused by the injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-averaged (bulk) flow for both infusion methods is in the same direction as that of the blood flow, providing evidence that CSF flow in PVSs is not caused by the injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the velocity field data shown in Figure 2b and 2f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "fe4f9fbc-b81c-4a45-96ce-70907ef6b8e1",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C48",
+      "claim": "No net flow was observed in the direction opposite to that of blood flow with either injection method.",
+      "claim_type": "EXPLICIT",
+      "source": "For both infusion methods, we observed no net flow in the direction opposite to that of blood flow, as some recent reports have suggested (Aldea et al., 2019; van Veluw et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and contrasts with some prior reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8494152b-e10a-4d74-8f52-b2f0aad994e7",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C49",
+      "claim": "The average flow speed in the PVSs of pial arteries varies across the PVS.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2g shows that the average flow speed in the PVSs of pial arteries varies across the PVS, consistent with prior reports (Mestre et al., 2018b) shown in Figure 2c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the flow-speed data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "2056b173-2b2a-44a9-8452-66f709fdf2e0",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C50",
+      "claim": "The velocity profile is parabolic-like, with flow fastest (\u223c50 \u03bcm/s) at the center of the PVS and slowing to zero at the walls.",
+      "claim_type": "EXPLICIT",
+      "source": "The velocity profile is parabolic-like (Figure 2d and h); the flow is fastest (\u223c50 \u03bcm/s) at the center of the PVS and slows to zero at the walls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the velocity profile data shown in Figure 2d and 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "5c9c0bc5-9b5a-4dd5-abec-895bfdb6f9a8",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C51",
+      "claim": "The parabolic-like velocity profile is consistent with laminar, viscous-dominated flow of CSF through an open annular space, and not through a porous medium.",
+      "claim_type": "EXPLICIT",
+      "source": "This parabolic-like shape is consistent with laminar, viscous-dominated flow of CSF through an open annular space, and not through a porous medium, indicating that pial periarterial spaces are open (Min Rivas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on fluid mechanics theory and is supported by the velocity profile data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "cc75a7d6-456d-4a2a-b110-d3ae73ec3f83",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C52",
+      "claim": "Pial periarterial spaces are open.",
+      "claim_type": "EXPLICIT",
+      "source": "This parabolic-like shape is consistent with laminar, viscous-dominated flow of CSF through an open annular space, and not through a porous medium, indicating that pial periarterial spaces are open (Min Rivas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the velocity profile data and is consistent with Min Rivas et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "07bbba53-5262-4251-add8-bbae978a5df8",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C55",
+      "claim": "Very similar trends in the time-history profiles are observed in both infusion protocols, indicating that the mechanisms driving the flow are apparently independent of the infusion method.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we observe very similar trends in the time-history profiles in both infusion protocols, the mechanisms driving the flow are apparently independent of the infusion method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the comparison of time-history data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "98d58887-1ebc-4da7-9c86-51ea26f16d3f",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C56",
+      "claim": "The overall mean flow speed is 15.71 \u00b1 6.2 \u03bcm/s for all the single-injection experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall mean flow speed (open circles) is 15.71 \u00b1 6.2 m/s for all the single-injection experiments and 17.67 \u00b1 4.42 for all the dual-syringe experiments, values that differ by less than the standard error of the mean in either set of experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "cfa27dde-419a-40fd-aac3-02f7778db3a9",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C57",
+      "claim": "The overall mean flow speed is 17.67 \u00b1 4.42 \u03bcm/s for all the dual-syringe experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall mean flow speed (open circles) is 15.71 \u00b1 6.2 m/s for all the single-injection experiments and 17.67 \u00b1 4.42 for all the dual-syringe experiments, values that differ by less than the standard error of the mean in either set of experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "a970a522-fb30-48e6-a335-0ea0027740a6",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C58",
+      "claim": "The mean flow speeds for single-injection and dual-syringe methods differ by less than the standard error of the mean in either set of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall mean flow speed (open circles) is 15.71 \u00b1 6.2 m/s for all the single-injection experiments and 17.67 \u00b1 4.42 for all the dual-syringe experiments, values that differ by less than the standard error of the mean in either set of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical observation from the experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7074d3d2-2d70-4073-a807-bed61b5e1549",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C59",
+      "claim": "Significantly greater differences in mean flow speed are caused by animal-to-animal variations than by changing from single-injection to dual-syringe methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly greater differences in mean flow speed are caused by animal-to-animal variations than by changing from single-injection to dual-syringe methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "1d442cd9-a0c7-4f75-b20c-326e833b9f10",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C60",
+      "claim": "The mean flow speeds are nearly identical to the mean speed of 17 \u00b1 2 \u03bcm/s reported by Bedussi et al., 2018, from experiments that used a single-injection protocol with a lower injection rate.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are also nearly identical to the mean speed of 17 \u00b1 2 reported by Bedussi et al., 2018, from experiments that used a single-injection protocol with a lower injection rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the current results with prior published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "a2b442a4-e294-4cb3-bb0a-fcdc4e88f3f4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C61",
+      "claim": "If the observed flows were injection-induced, we would expect faster mean flows with the single-injection method than with the dual-syringe method.",
+      "claim_type": "EXPLICIT",
+      "source": "If the observed flows were injection-induced, we would expect faster mean flows with the single-injection method than with the dual-syringe method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on the injection-artifact hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "c4497af1-2f9b-46dc-b5f8-90b027a5f9fd",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C62",
+      "claim": "The backflow fraction is 0.26 \u00b1 0.059 for single-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the backflow fraction is nearly identical: 0.26 \u00b1 0.059 for single-injection and 0.24 \u00b1 0.056 for dual-syringe infusion respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "0a001e39-2427-4fb1-9656-3718c835dae4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C63",
+      "claim": "The backflow fraction is 0.24 \u00b1 0.056 for dual-syringe infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the backflow fraction is nearly identical: 0.26 \u00b1 0.059 for single-injection and 0.24 \u00b1 0.056 for dual-syringe infusion respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "c41a5dbd-f289-45db-b1e6-41d68a6668fa",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C64",
+      "claim": "The backflow fraction is nearly identical for single-injection and dual-syringe methods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the backflow fraction is nearly identical: 0.26 \u00b1 0.059 for single-injection and 0.24 \u00b1 0.056 for dual-syringe infusion respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical observation from the experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "54c9fdaa-6213-4c91-84ae-c212bc7bcd9f",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C65",
+      "claim": "An injection-driven flow would exhibit a much smaller backflow fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "An injection-driven flow would exhibit a much smaller backflow fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on the injection-artifact hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d0016c0a-7f87-431a-9971-e9bc3d8da332",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C66",
+      "claim": "The nearly identical mean flow speeds and backflow fractions further demonstrate that the observed flows are natural, and not artifacts of the infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The nearly identical mean flow speeds and backflow fractions further demonstrate that the observed flows are natural, and not artifacts of the infusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "62b37209-60f7-4a54-baf4-a7242a2df3a1",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C67",
+      "claim": "CSF flow might be driven by the cardiac cycle, the respiratory cycle, or perhaps both.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been variously suggested that CSF flow might be driven by the cardiac cycle, the respiratory cycle, or perhaps both (Rennels et al., 1985; Hadaczek et al., 2006; Yamada et al., 2013; Bedussi et al., 2018), with evidence indicating much stronger correlation with the cardiac cycle (Iliff et al., 2013; Mestre et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies proposing these mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "4f0110b8-7960-4442-951b-8cf4aab8a7c5",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C68",
+      "claim": "Evidence indicates much stronger correlation of CSF flow with the cardiac cycle than with the respiratory cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been variously suggested that CSF flow might be driven by the cardiac cycle, the respiratory cycle, or perhaps both (Rennels et al., 1985; Hadaczek et al., 2006; Yamada et al., 2013; Bedussi et al., 2018), with evidence indicating much stronger correlation with the cardiac cycle (Iliff et al., 2013; Mestre et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iliff et al., 2013 and Mestre et al., 2018b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "90e820a8-eefd-4539-bdeb-94da11e72c95",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C75",
+      "claim": "The cardiac cycle drives the dominant oscillatory component of CSF flow in the PVSs of pial arteries, unaffected by injection protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations corroborate prior reports that the cardiac cycle drives the dominant oscillatory component of CSF flow in the PVSs of pial arteries, unaffected by injection protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figure 4 and is consistent with prior reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ba79d606-577d-4e3d-bc17-a624d2a0518b",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C76",
+      "claim": "Healthy removal of metabolic waste from the brain is believed to occur via circulation of CSF, which enters brain tissue through the PVSs surrounding pial arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "Healthy removal of metabolic waste from the brain is believed to occur via circulation of CSF, which enters brain tissue through the PVSs surrounding pial arteries (Rasmussen et al., 2018; Reeves et al., 2020; Nedergaard and Goldman, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rasmussen et al., 2018, Reeves et al., 2020, and Nedergaard and Goldman, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7696bd3a-e605-4387-9780-945ff9a01a0c",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C77",
+      "claim": "Experiments in live mice have shown that fluid is pumped in the direction of blood flow and into brain, perhaps by forces linked to the pulsation of arterial walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas experiments in live mice have shown that fluid is pumped in the direction of blood flow and into brain, perhaps by forces linked to the pulsation of arterial walls, several published papers have hypothesized that the observed flows might instead be artifacts of non-natural elevation of ICP caused by tracer infusion into the CM (Smith et al., 2017; Smith and Verkman, 2018; Croci et al., 2019; Keith Sharp et al., 2019; van Veluw et al., 2020; Vinje et al., 2020; Kedarasetti et al., 2020a; Faghih and Keith Sharp, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations and includes speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "a8993dc2-152e-4a0d-a42b-42a9d02cb056",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C78",
+      "claim": "Several published papers have hypothesized that the observed flows might be artifacts of non-natural elevation of ICP caused by tracer infusion into the CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas experiments in live mice have shown that fluid is pumped in the direction of blood flow and into brain, perhaps by forces linked to the pulsation of arterial walls, several published papers have hypothesized that the observed flows might instead be artifacts of non-natural elevation of ICP caused by tracer infusion into the CM (Smith et al., 2017; Smith and Verkman, 2018; Croci et al., 2019; Keith Sharp et al., 2019; van Veluw et al., 2020; Vinje et al., 2020; Kedarasetti et al., 2020a; Faghih and Keith Sharp, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies proposing this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "333a1aef-adfa-4ce0-b697-8afbb327d6f6",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C79",
+      "claim": "The new dual-syringe infusion protocol enabled tracer-particle infusion with no net addition of fluid and near-zero changes in ICP.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we designed a new infusion protocol that enabled tracer-particle infusion with no net addition of fluid and near-zero changes in ICP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and is supported by the ICP measurements in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "f5899079-e203-49f1-ba68-e48172a80f50",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C80",
+      "claim": "Flows of CSF in the PVSs of the cortical branches of the MCA found with the dual-syringe protocol are statistically identical to the flows found earlier using the single-injection protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Using two-photon microscopy and particle-tracking velocimetry, we found flows of CSF in the PVSs of the cortical branches of the MCA that are statistically identical to the flows found earlier in the same location using the single-injection protocol (Mestre et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d9678b38-75d0-48c6-88a0-9dbb6a986b2c",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C81",
+      "claim": "The findings are consistent with the hypothesis that the observed flows in pial PVSs are not driven by tracer infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the hypothesis that the observed flows in pial PVSs are not driven by tracer infusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ab8fefd6-ece0-4ea6-9fcc-281a4b8b5a22",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C82",
+      "claim": "The time that elapses between beginning injecting particles and observing them in pial PVSs is similar with either protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "The time that elapses between beginning injecting particles and observing them in pial PVSs is similar with either protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "9aacfc8d-b2df-4dc9-8f9f-7e9ee54c2d9a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C83",
+      "claim": "If injection were driving flow, we would expect particles to arrive in PVSs more quickly with the single-injection protocol than with the dual-syringe protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "If injection were driving flow, we would expect particles to arrive in PVSs more quickly with the single-injection protocol than with the dual-syringe protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on the injection-artifact hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "c20ff00b-d35b-43e6-b281-158d63b2d15d",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C84",
+      "claim": "In single-injection experiments, ICP returns to its baseline value within 5 min after injection is complete, but flows continue through the duration of the experiments (10-30 min).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in single-injection experiments, ICP returns to its baseline value within 5 min after injection is complete (Figure 1), but flows continue through the duration of the experiments (1030 min), which would not occur if ICP were the driver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ICP data in Figure 1 and the flow data in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "505f2bec-9970-46ac-9918-050cd5751f57",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C85",
+      "claim": "If ICP were the driver, flows would not occur at all in dual-syringe experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "By the same reasoning, if ICP were the driver, flows would not occur at all in dual-syringe experiments, but we again observe flows continuing through the duration of the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on the injection-artifact hypothesis, contradicted by the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "481acbd6-00ee-4572-b93e-3f1e12a44fab",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C86",
+      "claim": "If elevated ICP levels create large pressure differences across the brain, these pressure differences should undergo exponential decay because of the brain's compliance and proclivity to achieve stasis.",
+      "claim_type": "EXPLICIT",
+      "source": "If elevated ICP levels create large pressure differences across the brain, these pressure differences should undergo exponential decay because of the brain's compliance and proclivity to achieve stasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on physiological knowledge about brain compliance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7e5c9b79-b3cc-4117-885f-7393fe5caa23",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C87",
+      "claim": "If exponential relaxation of ICP were to drive fluid flow, the measurements from particle tracking would reflect this decay, exhibiting fast flows at early times which then gradually subside.",
+      "claim_type": "EXPLICIT",
+      "source": "If this exponential relaxation of ICP were to drive fluid flow, the measurements from particle tracking would reflect this decay, exhibiting fast flows at early times which then gradually subside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on the injection-artifact hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7a1a68ea-1e46-43ec-bd53-b5b4a1904a99",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C88",
+      "claim": "The measurements show that the mean flow remains nearly constant and similar over periods that are two to three times longer than the infusion time, for several healthy mice and both infusion protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our measurements show that the mean flow remains nearly constant and similar over periods that are two to three times longer than the infusion time, for several healthy mice and both infusion protocols (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the time-history data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ab97c08d-fff5-4ad6-88cc-42690b772523",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C89",
+      "claim": "In dual-syringe experiments, flow speeds are nearly identical to those observed in one earlier, single-injection study and very close to those in a single-injection study that used injection rates one order of magnitude smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "In dual-syringe experiments, we observe flow speeds that are nearly identical to those observed in one earlier, single-injection study (Mestre et al., 2018b), and very close to those in a single-injection study that used injection rates one order of magnitude smaller (Bedussi et al., 2018), again suggesting that injection rate is not the driver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with data from Mestre et al., 2018b and Bedussi et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d8c1b132-f5f8-4010-9853-fb099be09e0f",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C90",
+      "claim": "If the ICP elevation induced by the single-injection protocol were responsible for the tracer penetration into the brain, then variations associated with arousal state, anesthesia, blood pressure, and other biological mechanisms would not have occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, if the ICP elevation induced by the single-injection protocol were responsible for the tracer penetration into the brain, then variations associated with arousal state (Xie et al., 2013), anesthesia (Hablitz et al., 2019), blood pressure (Mestre et al., 2018a), and other biological mechanisms would not have occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument based on prior observations cited from multiple studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "df54ea10-fc40-47c1-bd0b-46606ffda8f3",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C91",
+      "claim": "Particles large enough to be tracked individually are apparently sieved and are not transported into smaller PVSs such as those surrounding penetrating arteries and arterioles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that particles large enough to be tracked individually are apparently sieved and are not transported into such smaller PVSs, consistent with prior studies (Mestre et al., 2018a; Bedussi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data and is consistent with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "a19adee5-682d-4427-8382-66e8c331bc74",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C92",
+      "claim": "The limitations in temporal resolution of current microscopes in the third dimension (z-direction) prevent accurate measurement of CSF flow in PVSs of penetrating arteries and arterioles.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the limitations in temporal resolution of the current microscopes in the third dimension (z-direction) prevent accurate measurement of CSF flow in PVSs of penetrating arteries and arterioles, which are oriented along that dimension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical limitation of the experimental methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e21ad693-4da3-40e4-b6f4-d90b7fe5158a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C93",
+      "claim": "Conservation of mass implies that fluid flowing through pial PVSs must continue through whatever regions are contiguous.",
+      "claim_type": "EXPLICIT",
+      "source": "However, conservation of mass implies that fluid flowing through pial PVSs must continue through whatever regions are contiguous, and we hypothesize that Virchow-Robin spaces are contiguous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the physical principle of conservation of mass.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "3c11461e-44f5-4d4d-9d75-bf6bcf109168",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C94",
+      "claim": "The authors hypothesize that Virchow-Robin spaces are contiguous with pial PVSs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, conservation of mass implies that fluid flowing through pial PVSs must continue through whatever regions are contiguous, and we hypothesize that Virchow-Robin spaces are contiguous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d9712090-b381-49b8-b243-6e5d1906d7ef",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C95",
+      "claim": "The hypothesis that Virchow-Robin spaces are contiguous with pial PVSs is supported by data collected using several complementary methodologies in mice and by recent MRI studies in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "That hypothesis, which we hope to test directly in future work, is supported by data collected using several complementary methodologies in mice (Iliff et al., 2012; Mortensen et al., 2019; Koundal et al., 2020) and by recent MRI studies in humans (Ringstad et al., 2017; Ringstad et al., 2018), where tracer (if not particles) is carried into the parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies in mice and humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "969e42fe-e6ae-4d47-8ca5-d90d8cd1ae6f",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C96",
+      "claim": "If Virchow-Robin spaces are contiguous with pial PVSs, it would imply that flow in PVSs surrounding penetrating arterioles (including Virchow-Robin spaces) is not an artifact of injection.",
+      "claim_type": "EXPLICIT",
+      "source": "If that hypothesis holds, it would imply that flow in PVSs surrounding penetrating arterioles (including Virchow-Robin spaces) is not an artifact of injection, either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the hypothesis and the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "729694bf-c4c2-4a88-a6c8-9f09f974fde6",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C97",
+      "claim": "Recent studies have infused 10 \u03bcL at rates of 1\u20132 \u03bcL/min, much greater than the natural CSF production rate (0.1\u20130.3 \u03bcL/min).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have infused 10 \u03bcL at rates of 1\u20132 \u03bcL/min (Bedussi et al., 2018; Mestre et al., 2018b), much greater than the natural CSF production rate (0.1\u20130.3 \u03bcL/min [Rudick et al., 1982; Liu et al., 2020]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "02366be8-650e-4154-9799-b9a60b1885a9",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C98",
+      "claim": "Little or none of the additional fluid from single-injection flows through pial PVSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the measurements and reasoning described above, it seems that little or none of the additional fluid flows through pial PVSs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "1e5b3071-638e-4ebd-9b82-e30ba5ac9cbb",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C99",
+      "claim": "The additional fluid from single-injection must flow somewhere, and the authors speculate that it takes an alternate path.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, it must flow somewhere, and we speculate that it takes an alternate path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "9b34c533-8797-4fda-92d9-3f0858434278",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C100",
+      "claim": "Recent publications have presented evidence of fluid efflux via meningeal lymphatic vessels located around the venous sinuses and at the base of the skull.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent publications have presented evidence of fluid efflux via meningeal lymphatic vessels located around the venous sinuses and at the base of the skull (Louveau et al., 2018; Ahn et al., 2019) and via pathways along cranial and spinal nerves (Ma et al., 2019; Stanton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Louveau et al., 2018 and Ahn et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e4e13f7f-2175-4d96-80d7-32ab07168194",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C101",
+      "claim": "Recent publications have presented evidence of fluid efflux via pathways along cranial and spinal nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent publications have presented evidence of fluid efflux via meningeal lymphatic vessels located around the venous sinuses and at the base of the skull (Louveau et al., 2018; Ahn et al., 2019) and via pathways along cranial and spinal nerves (Ma et al., 2019; Stanton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ma et al., 2019 and Stanton et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8680064c-9545-4fbc-9684-d215e69cbdae",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C102",
+      "claim": "Attempts to quantify perivascular and lymphatic transport using radiolabeled tracers and contrast agents for T1 mapping techniques have estimated that around 20% of the tracers injected into the CM is transported into the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Attempts to quantify the perivascular and lymphatic transport using radiolabeled tracers and contrast agents for T1 mapping techniques have estimated that around 20% of the tracers injected into the CM is transported into the brain, implying that most of the tracer mass migrates to spine and/or drains into the different efflux routes (Iliff et al., 2012; Lee et al., 2018; Eide et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iliff et al., 2012, Lee et al., 2018, and Eide et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "fccf2479-335b-4f4f-84a8-aff17b553a56",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C103",
+      "claim": "Most of the tracer mass migrates to spine and/or drains into different efflux routes.",
+      "claim_type": "EXPLICIT",
+      "source": "Attempts to quantify the perivascular and lymphatic transport using radiolabeled tracers and contrast agents for T1 mapping techniques have estimated that around 20% of the tracers injected into the CM is transported into the brain, implying that most of the tracer mass migrates to spine and/or drains into the different efflux routes (Iliff et al., 2012; Lee et al., 2018; Eide et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited studies showing that only 20% enters the brain.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "2b682dc2-742e-416c-997f-3a54e1e69aa7",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C104",
+      "claim": "Other studies have reported a correlation between the rate of CSF absorption and the volume of the injection or its effect upon ICP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, other studies have reported a correlation between the rate of CSF absorption and the volume of the injection or its effect upon ICP (Boulton et al., 1998; Johnston and Papaiconomou, 2002; Ma et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Boulton et al., 1998, Johnston and Papaiconomou, 2002, and Ma et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "26f6d6cc-a57e-4e05-b75d-960eab54ebbb",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C105",
+      "claim": "Since flow in pial PVSs is hardly affected by the injection of large amounts of fluid that passes along alternate paths, the mechanisms driving CSF through pial PVSs may be nearly independent of the mechanisms driving CSF flows elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since flow in pial PVSs is hardly affected by the injection of large amounts of fluid that passes along alternate paths, the mechanisms driving CSF through pial PVSs may be nearly independent of the mechanisms driving CSF flows elsewhere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "c5b11de7-4f52-4bef-898d-4f42d64835a5",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C106",
+      "claim": "The cardiac cycle -- not respiration -- drives the oscillatory component of the observed flows in the PVSs of pial arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirm that the cardiac cycle -- not respiration -- drives the oscillatory component of the observed flows in the PVSs of pial arteries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8e540e4f-1bc1-4ae5-98b7-565b534deec8",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C110",
+      "claim": "The authors cannot rule out other natural mechanisms that might be driving the average (bulk) flow, such as CSF production, functional hyperemia, or vasomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we present compelling evidence that the cardiac cycle drives the purely oscillatory component of the pulsatile flow in pial PVSs, we cannot rule out other natural mechanisms that might be driving the average (bulk) flow, such as CSF production, functional hyperemia (Kedarasetti et al., 2020b), or vasomotion (van Veluw et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit acknowledgment of alternative mechanisms that have not been ruled out.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ea0ba80d-7b6b-4af0-8b87-f167662dd84d",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C111",
+      "claim": "Respiration is not a dominant driving force of flow in pial PVSs.",
+      "claim_type": "EXPLICIT",
+      "source": "While our results show that respiration is not a dominant driving force of flow in pial PVSs, the proximal segments of the influx routes along which CSF is transported into the brain, respiration might yet contribute to flow when CSF exits the brain (Kiviniemi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e77815d8-4ea9-4dad-bc1e-1992cee03b56",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C112",
+      "claim": "Respiration might contribute to flow when CSF exits the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "While our results show that respiration is not a dominant driving force of flow in pial PVSs, the proximal segments of the influx routes along which CSF is transported into the brain, respiration might yet contribute to flow when CSF exits the brain (Kiviniemi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to Kiviniemi et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "20fc0ecb-0b98-4ba7-b443-00104337d878",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C113",
+      "claim": "The currently employed methods of tracer infusion are not responsible for the observed flows in pial PVSs.",
+      "claim_type": "EXPLICIT",
+      "source": "We do conclude, however, that the currently employed methods of tracer infusion are not responsible for the observed flows in pial PVSs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the comparative experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "80f3a9aa-fa46-41de-9cd1-76c024825d3a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C114",
+      "claim": "The suggested role of arterial pulsatility in perivascular transport and the changes in the properties of the arterial wall in cardiovascular diseases may provide a causal linkage between vascular disorders and protein-aggregation disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The suggested role of arterial pulsatility in perivascular transport and the changes in the properties of the arterial wall in cardiovascular diseases may provide a causal linkage between vascular disorders and protein-aggregation disorders (Nedergaard and Goldman, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to Nedergaard and Goldman, 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ec165265-cdb6-4a0c-ab74-943b5b2da001",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C115",
+      "claim": "Hypertension is an established risk factor for Alzheimer's Disease and is correlated with amyloid-\u03b2 accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, hypertension, an established risk factor for Alzheimer's Disease (correlated with amyloid-\u03b2 accumulation [Gentile et al., 2009; Carnevale et al., 2016]), causes stiffening of the arterial wall, reducing its compliance and pulsatility, and thereby attenuating perivascular flow (Mestre et al., 2018a; Mortensen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gentile et al., 2009 and Carnevale et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e78ed409-22ec-42ca-8d01-a5994ac9b102",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C116",
+      "claim": "Hypertension causes stiffening of the arterial wall, reducing its compliance and pulsatility, and thereby attenuating perivascular flow.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, hypertension, an established risk factor for Alzheimer's Disease (correlated with amyloid-\u03b2 accumulation [Gentile et al., 2009; Carnevale et al., 2016]), causes stiffening of the arterial wall, reducing its compliance and pulsatility, and thereby attenuating perivascular flow (Mestre et al., 2018a; Mortensen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mestre et al., 2018a and Mortensen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "2e66b11f-ce2c-4e4b-a8c9-d675f5f82a4e",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C117",
+      "claim": "Dysfunction in perivascular transport may be one of the key causes of protein mis-aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "These accumulating data suggest that dysfunction in perivascular transport may be one of the key causes of protein mis-aggregation and may provide a novel therapeutic approach to the prevention and treatment of neurodegenerative disease (Nedergaard and Goldman, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to Nedergaard and Goldman, 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "6a0671c5-78f8-4738-ba6e-39f47807a54a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C118",
+      "claim": "Dysfunction in perivascular transport may provide a novel therapeutic approach to the prevention and treatment of neurodegenerative disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These accumulating data suggest that dysfunction in perivascular transport may be one of the key causes of protein mis-aggregation and may provide a novel therapeutic approach to the prevention and treatment of neurodegenerative disease (Nedergaard and Goldman, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to Nedergaard and Goldman, 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "3287e221-c81f-46d9-a0f0-49cabcf9dbe9",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C119",
+      "claim": "The methods of tracer injection do not directly affect the measured bulk flows in PVSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we have demonstrated that the methods of tracer injection do not directly affect the measured bulk flows in PVSs, the manipulation of perivascular transport rather than the volume or rate of the bolus intrathecal injection may represent a novel strategy for improving the CNS delivery of intrathecally administered drugs bypassing the blood\u2013brain barriers (Plog et al., 2018; Lilius et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "5afea8d7-cfbd-4236-acde-bdf27c200c0f",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C120",
+      "claim": "The manipulation of perivascular transport rather than the volume or rate of the bolus intrathecal injection may represent a novel strategy for improving the CNS delivery of intrathecally administered drugs bypassing the blood\u2013brain barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we have demonstrated that the methods of tracer injection do not directly affect the measured bulk flows in PVSs, the manipulation of perivascular transport rather than the volume or rate of the bolus intrathecal injection may represent a novel strategy for improving the CNS delivery of intrathecally administered drugs bypassing the blood\u2013brain barriers (Plog et al., 2018; Lilius et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to Plog et al., 2018 and Lilius et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d3025aba-6488-4947-af66-c6809cf0cec7",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C121",
+      "claim": "The dual-syringe infusion method avoids increases to the volume of fluid in the skull and does not increase the ICP.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual-syringe infusion method we have developed avoids increases to the volume of fluid in the skull and does not increase the ICP (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ICP measurements shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e58b468a-33e5-4f26-a062-5bc556ac5a00",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C122",
+      "claim": "The dual-syringe infusion causes minimal flow and is ideally suited to test whether injection-induced pressure differences could propel the observed periarterial CSF flows.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the dual-syringe infusion causes minimal flow and is ideally suited to test whether injection-induced pressure differences could propel the observed periarterial CSF flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the suitability of the method for testing the hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "cf1e524e-9d07-4ca5-9725-5bb587cc3833",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C123",
+      "claim": "Implanting a second cannula to withdraw fluid and avoid transient changes to ICP lowers the count of tracer particles injected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, implanting a second cannula to withdraw fluid and avoid transient changes to ICP lowers the count of tracer particles injected, and would likewise reduce the amount of fluorescent dye tracer injected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the practical consequences of the dual-syringe method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8319ff22-00c3-4910-b225-6ea656b243b9",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C124",
+      "claim": "Dual-syringe infusion adds an additional step to an already complex surgery, thereby reducing the success rate with mouse specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual-syringe infusion also adds an additional step to an already complex surgery, thereby reducing the success rate with mouse specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the practical challenges of the dual-syringe method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "07c21265-176b-40bf-8cb7-a05f96c538a6",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C125",
+      "claim": "Flows in pial periarterial spaces observed in the present study and in prior efforts that used the single-injection method are affected very little or not at all by changing between these infusion methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The results and reasoning described above support the conclusion that flows in pial periarterial spaces, observed in the present study and in prior efforts that used the single-injection method to infuse tracer (Iliff et al., 2012; Xie et al., 2013; Bedussi et al., 2018; Mestre et al., 2018b), are affected very little or not at all by changing between these infusion methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "07b9a174-e084-4eb3-8ea4-3e4897ae294c",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C126",
+      "claim": "The dual-syringe method is not necessary for future studies that adopt prevalent infusion methods to inject tracer particles or fluorescent dyes and study flows in proximal CSF influx pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the dual-syringe method is not necessary for future studies that adopt prevalent infusion methods to inject tracer particles or fluorescent dyes and study flows in these proximal CSF influx pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "0054328c-fabd-47fb-b139-e86e1982a7f6",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C127",
+      "claim": "The dual-syringe method may be useful when validating whether new injection parameters affect CSF flow or assessing if flows in other anatomical regions are affected by the addition of extra volume or the transient changes in ICP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it may be useful when validating whether new injection parameters affect CSF flow or assessing if flows in other anatomical regions are affected by the addition of extra volume or the transient changes in ICP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation about potential future applications of the dual-syringe method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d37d70a6-1cb7-4167-91ee-6876ed2a3d16",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C128",
+      "claim": "All experiments were approved and conducted in accordance with the relevant guidelines and regulations stipulated by the University Committee on Animal Resources of the University of Rochester Medical Center.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were approved and conducted in accordance with the relevant guidelines and regulations stipulated by the University Committee on Animal Resources of the University of Rochester Medical Center (Protocol No. 2011-023), certified by Association for Assessment and Accreditation of Laboratory Animal Care.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "112f6e1a-400c-45a5-b973-d3419d8efea3",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C129",
+      "claim": "8- to 12-week-old male C57BL/6 mice acquired from Charles River Laboratories were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 8- to 12-week-old male C57BL/6 mice acquired from Charles River Laboratories (Wilmington, MA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "dd167026-6e2a-4ac9-b34d-adc6fde7d771",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C130",
+      "claim": "Animals were anesthetized with a combination of ketamine (100 mg/kg) and xylazine (10 mg/kg) administered intraperitoneally.",
+      "claim_type": "EXPLICIT",
+      "source": "In all experiments, animals were anesthetized with a combination of ketamine (100 mg/kg) and xylazine (10 mg/kg) administered intraperitoneally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the anesthesia protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8c72e793-d743-4fdf-ac34-ad37dd52a497",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C131",
+      "claim": "Red fluorescent polystyrene microspheres (FluoSpheres 1.0 \u03bcm, 580/605 nm, 0.25% solids in aCSF) were infused via one of the CM cannulae.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a syringe pump (Harvard Apparatus Pump 11 Elite), red fluorescent polystyrene microspheres (FluoSpheres 1.0 \u03bcm, 580/605 nm, 0.25% solids in aCSF, Invitrogen) were infused up to a total volume of 20 \u03bcL via one of the CM cannulae while CSF was simultaneously withdrawn through the other cannula at an equal rate of 2 \u03bcL/min with a coupled syringe pump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tracer particles used in the dual-syringe experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d3168b8f-dbc1-4f4f-8414-55c855768af4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C132",
+      "claim": "In the dual-syringe protocol, microspheres were infused up to a total volume of 20 \u03bcL at a rate of 2 \u03bcL/min while CSF was simultaneously withdrawn at an equal rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a syringe pump (Harvard Apparatus Pump 11 Elite), red fluorescent polystyrene microspheres (FluoSpheres 1.0 \u03bcm, 580/605 nm, 0.25% solids in aCSF, Invitrogen) were infused up to a total volume of 20 \u03bcL via one of the CM cannulae while CSF was simultaneously withdrawn through the other cannula at an equal rate of 2 \u03bcL/min with a coupled syringe pump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dual-syringe infusion protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "03a431ae-174c-4eb4-b0e4-8fef027825b6",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C133",
+      "claim": "ICP was acquired at 1 kHz, digitized, and monitored continuously for the duration of the infusion experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "ICP was acquired at 1 kHz, digitized, and monitored continuously for the duration of the infusion experiments with a DigiData 1550B digitizer and AxoScope software (Axon Instruments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ICP measurement methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "3e216297-33dd-4195-8f06-5bf652931a0d",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C134",
+      "claim": "Two-photon imaging was performed using a resonant scanner B scope with a Chameleon Ultra II laser and a 20\u00d7 water immersion objective.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon imaging was performed using a resonant scanner B scope (Thorlabs) with a Chameleon Ultra II laser (Coherent) and a 20\u00d7 water immersion objective (1.0 NA, Olympus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging equipment used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "5c9707c5-0fc3-400e-9a10-3972141ad864",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C135",
+      "claim": "Intravascular FITC-dextran and red microspheres were excited at a 820 nm wavelength and images were acquired at 30 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Intravascular FITC-dextran and red microspheres were excited at a 820 nm wavelength and images were acquired at 30 Hz (ThorSync software) simultaneously with physiological recordings (ThorSync software), as previously described (Mestre et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d07696c0-b963-46fe-8682-f635e200fef4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C136",
+      "claim": "ECG and respiratory rate were acquired at 1 kHz and 250 Hz, respectively, using a small-animal physiological monitoring device.",
+      "claim_type": "EXPLICIT",
+      "source": "ECG and respiratory rate were acquired at 1 kHz and 250 Hz, respectively, using a small-animal physiological monitoring device (Harvard Apparatus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physiological monitoring methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7a6097b1-fc22-4879-9fc6-d4fb49391df0",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C137",
+      "claim": "Images with spatial dimensions 512 \u00d7 512 were obtained from two-photon microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Images with spatial dimensions 512 \u00d7 512 were obtained from two-photon microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image dimensions from the microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "290c8c7d-cf00-4c0a-b56b-9bb3581859ef",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C138",
+      "claim": "Image registration via rigid translation is performed on each image in the time series to account for movement by the mouse in the background.",
+      "claim_type": "EXPLICIT",
+      "source": "Image registration via rigid translation is performed on each image in the time series to account for movement by the mouse in the background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e21cd761-24cb-46cc-84a1-f8f168cbc43f",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C139",
+      "claim": "Particles were detected by applying a minimum intensity threshold to each image.",
+      "claim_type": "EXPLICIT",
+      "source": "Particles are then detected by applying a minimum intensity threshold to each image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the particle detection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "763db917-b025-4974-b4e5-423bcdf385e2",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C140",
+      "claim": "Particles were typically resolved across 3\u20134 pixels in the image with spatial resolution of 1.29 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, particles were resolved across 3\u20134 pixels in the image with spatial resolution of 1.29 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial resolution of particle detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "8b7d0698-e0dd-4532-8cb4-1c64fbb793da",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C141",
+      "claim": "The particles detected in each image were tracked using an automated PTV routine in MATLAB.",
+      "claim_type": "EXPLICIT",
+      "source": "The particles detected in each image were tracked using an automated PTV routine in MATLAB (Kelley and Ouellette, 2011; Ouellette et al., 2006) and can be downloaded from the repository found at Raghunandan, 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the particle tracking methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "f30f3989-fd3e-40f3-a26e-e94e726788df",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C142",
+      "claim": "Particle velocities were calculated by convolution with a Gaussian smoothing and differentiation kernel.",
+      "claim_type": "EXPLICIT",
+      "source": "Particle velocities were calculated by convolution with a Gaussian smoothing and differentiation kernel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the velocity calculation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "7bea49ea-917e-4dde-9cc7-112477b7bc45",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C143",
+      "claim": "Stagnant particles that have adhered to the wall of the artery or the outer wall of the PVS were masked in each image by subtracting a dynamic background image.",
+      "claim_type": "EXPLICIT",
+      "source": "Stagnant particles that have adhered to the wall of the artery or the outer wall of the PVS, and hence no longer track the CSF flow, were masked in each image by subtracting a dynamic background image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for handling stagnant particles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "97ef0f0b-3593-4093-a752-9186c0104e98",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C144",
+      "claim": "Time-averaged flow velocities were obtained by segregating the imaged domain into a 70 \u00d7 70 grid, with a resolution of 7.5 \u00d7 7.5 pixels in each direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-averaged flow velocities were obtained by segregating the imaged domain into a 70 \u00d7 70 grid, with a resolution of 7.5 \u00d7 7.5 pixels in each direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for calculating time-averaged velocities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "df69c86f-2775-41da-9c91-167943f185b7",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C145",
+      "claim": "Average flow speeds were computed using bins with at least 15 measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Average flow speeds were computed using bins with at least 15 measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criteria for computing average flow speeds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "d24d0fa2-31e5-4fa1-82cc-feab257180cd",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C146",
+      "claim": "All statistical analyses were performed on GraphPad Prism 8.",
+      "claim_type": "EXPLICIT",
+      "source": "All statistical analyses were performed on GraphPad Prism 8 (GraphPad Software).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "252b3d19-b22a-4953-89e6-703809929b8d",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C147",
+      "claim": "Statistical tests were selected after evaluating normality using the D'Agostino Pearson omnibus test.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical tests were selected after evaluating normality (D'Agostino Pearson omnibus test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for selecting statistical tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "5a8b810f-a15b-4e0e-be31-24239f660fd3",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C148",
+      "claim": "In all repeated measures, two-way ANOVAs, a Geisser-Greenhouse correction was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphericity was not assumed; in all repeated measures, two-way ANOVAs and a Geisser-Greenhouse correction were performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used for repeated measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e14e7a3b-d424-4164-bcc8-bfa6a19dee7a",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "claim_id": "C149",
+      "claim": "All hypothesis testing was two-tailed and exact p-values were calculated at a 0.05 level of significance.",
+      "claim_type": "EXPLICIT",
+      "source": "All hypothesis testing was two-tailed and exact p-values were calculated at a 0.05 level of significance and stated in the figure legends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical testing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The dual-syringe injection system produces no net increase in CSF volume and no significant increase in intracranial pressure (ICP), while single-injection causes a transient ~2.5 mmHg ICP elevation that returns to baseline within 5 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 provide direct ICP measurements (Figure 1c) showing statistically significant differences (p<0.0001, n=5-6 mice) between methods. The dual-syringe design (C19-C22) logically prevents volume addition, and measurements confirm this expectation. The data quality and statistical analysis are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "db70fa03-cc7a-4f61-b060-60b476af93f4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CSF flow characteristics (particle tracks, velocity profiles, mean speeds, backflow fractions) are statistically identical between single-injection and dual-syringe methods, with mean speeds of 15.71\u00b16.2 \u03bcm/s vs 17.67\u00b14.42 \u03bcm/s respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C64 provide quantitative flow measurements from Figures 2-3 showing no significant differences between methods. The parabolic velocity profiles (C38-C39, C50-C51) are consistent with laminar flow theory. Animal-to-animal variation exceeds method-related variation (C59), strengthening the conclusion. Sample sizes (n=5-6) are modest but adequate for the observed effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "ad08555d-2fa7-4738-8ad2-afac17da25e9",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mean CSF flow remains nearly constant over 10-30 minutes in both protocols, persisting long after ICP returns to baseline in single-injection experiments, contradicting the injection-artifact hypothesis which predicts exponential decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 provide temporal data (Figure 3a) showing sustained flow despite ICP normalization. The reasoning about expected exponential decay (C86-C87) is sound based on brain compliance. Comparison with lower injection rates (C89) further supports that injection rate is not the driver. The logic is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "73d04903-b85d-4795-b558-c7110e060ef8",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CSF flow oscillations are strongly correlated with the cardiac cycle (delay ~0.05s) but not with respiration, consistent across both injection methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C106 are supported by Figure 4 showing clear cardiac correlation and lack of respiratory correlation. The delay time measurements and probability density functions provide quantitative support. This replicates prior findings and extends them to the dual-syringe method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "a56b1bb7-e108-4f19-ae77-5c528c729c84",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The observed bulk CSF flows in pial periarterial spaces are natural physiological phenomena, not artifacts of tracer injection, as demonstrated by identical flow characteristics with and without ICP elevation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the central conclusion, supported by the convergence of multiple lines of evidence: identical flows despite different ICP profiles (C47, C81), temporal persistence (C84-C85), and logical predictions from the artifact hypothesis that are not observed (C46, C61, C65, C83). The reasoning is sound and the data are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "f1b998e1-7500-483e-9872-a4563f832d70",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The dual-syringe method yields lower particle counts (6,200 vs 19,800) likely due to withdrawal siphoning, but sufficient particles reach PVSs for rigorous measurements. The method adds surgical complexity and reduces success rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 acknowledge practical limitations of the dual-syringe method. The lower particle count is a direct observation (C40), the explanation is reasonable (C41), and adequacy for measurements is demonstrated by successful data collection (C42). Claims C123-C124 honestly report methodological challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "24ec74d7-86c4-4a5c-9458-0673d2d68e6c",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Large tracer particles are sieved and do not enter smaller PVSs around penetrating arteries. The authors hypothesize that Virchow-Robin spaces are contiguous with pial PVSs based on conservation of mass and supporting literature, implying flows in deeper structures are also not artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C92 describe experimental limitations. The hypothesis about Virchow-Robin space continuity (C94) is explicitly speculative and supported only by indirect evidence from other studies (C95). The inference about deeper flows (C96) depends on this unproven hypothesis. While the reasoning is logical, direct experimental validation is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In single-injection experiments, most of the injected fluid (~80%) likely takes alternate drainage paths (meningeal lymphatics, cranial/spinal nerves) rather than flowing through pial PVSs, suggesting independent mechanisms for different CSF pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C98 establish that injection rates exceed natural CSF production but little flows through pial PVSs. The speculation about alternate paths (C99) is supported by literature on lymphatic drainage (C100-C101) and tracer distribution studies (C102-C103). However, the inference about independent mechanisms (C105) is speculative and not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "e502a238-667a-4280-bc76-a7a8324bdee4",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While cardiac pulsation drives oscillatory flow, other mechanisms (CSF production, functional hyperemia, vasomotion) cannot be ruled out as drivers of bulk flow. Respiration may contribute to CSF exit from the brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110 and C112 appropriately acknowledge limitations in identifying the bulk flow mechanism. The study definitively rules out injection artifacts and respiration as dominant drivers but correctly notes that other physiological mechanisms remain possible. This honest assessment of what the data can and cannot conclude is scientifically appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "72c9325e-3539-4ea0-ab05-84372a8e4c55",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings have potential implications for understanding links between vascular disorders and neurodegenerative diseases, and for improving intrathecal drug delivery strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C114-C118 and C120 discuss potential translational implications but are explicitly speculative (supported by citations but not tested in this study). While the reasoning is plausible, these represent future research directions rather than established results from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    },
+    {
+      "id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa",
+      "content_id": "6d003b05-5ee4-44eb-ba35-37751362a347",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study employed appropriate experimental methods including two-photon microscopy, particle tracking velocimetry, ICP monitoring, and statistical analyses with proper corrections for repeated measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C149 describe methodological details that are standard and appropriate for this type of study. The imaging parameters (C134-C135), particle tracking algorithms (C141-C145), and statistical methods (C146-C149) are well-established. Ethical approval (C128) and animal details (C129-C130) are properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:34.152713Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c96a975d-342f-434b-941d-fa93c62c8003",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "1ac837c6-e5f8-4630-ad1a-0055b98b0d17",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "9b380b3c-df28-48cb-bfe0-c7c87792aceb",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "b3711fc8-93a5-460f-b795-4ab5250c413e",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "11425edd-5f58-4814-aeb7-5bc628bc7397",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "8b54078e-5901-4346-8b09-d34d4c746ba8",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "ab4fa23c-6510-4d18-b760-f25e3a480a9c",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "1ecaf33f-f1fa-4aab-8880-affe6b595b03",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "d86ecc25-bc36-4dc4-b42b-4cca706e885d",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "0414e61c-fe6c-4679-b0a1-7725a63556bd",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "24359120-fd31-4d06-a2c0-6ebc604054be",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "333a1aef-adfa-4ce0-b697-8afbb327d6f6",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "d3025aba-6488-4947-af66-c6809cf0cec7",
+      "result_id": "2dbd4909-8b46-4e19-bbb4-e27cf29f4272"
+    },
+    {
+      "claim_id": "9e40b28d-2ba8-43c5-9eec-7873b4907c9d",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "fd0f7b66-dce1-40e6-a830-513b340764b5",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "6ee28f0a-d21e-47e6-8cf3-fa6bd18934f2",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "cdd02746-b0c1-4b4c-9374-9824b707b8d0",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "7a630afe-cec8-4e50-93b3-0267c94272b7",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "99398c60-9a33-4ea2-8926-2f2f69bd4259",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "8ddc1227-94f2-432c-ac87-5bd62ce5d3d7",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "ada25b41-c1cc-456a-a05f-ee8d93aafeba",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "90e02827-845a-4176-8a05-7e8476d52a38",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "46964479-6250-4749-b9d0-206bdadf7c4a",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "45a55bba-6369-4a1e-b573-5e3072d5615c",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "66bd6653-b487-4da0-9cb2-072a3f0e8e92",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "fbfc8bcf-0db6-4b3f-b063-f9ab5faef53a",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "fe4f9fbc-b81c-4a45-96ce-70907ef6b8e1",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "8494152b-e10a-4d74-8f52-b2f0aad994e7",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "2056b173-2b2a-44a9-8452-66f709fdf2e0",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "5c9c0bc5-9b5a-4dd5-abec-895bfdb6f9a8",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "cc75a7d6-456d-4a2a-b110-d3ae73ec3f83",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "98d58887-1ebc-4da7-9c86-51ea26f16d3f",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "cfa27dde-419a-40fd-aac3-02f7778db3a9",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "a970a522-fb30-48e6-a335-0ea0027740a6",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "7074d3d2-2d70-4073-a807-bed61b5e1549",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "1d442cd9-a0c7-4f75-b20c-326e833b9f10",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "c4497af1-2f9b-46dc-b5f8-90b027a5f9fd",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "0a001e39-2427-4fb1-9656-3718c835dae4",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "c41a5dbd-f289-45db-b1e6-41d68a6668fa",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "d0016c0a-7f87-431a-9971-e9bc3d8da332",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "f5899079-e203-49f1-ba68-e48172a80f50",
+      "result_id": "db70fa03-cc7a-4f61-b060-60b476af93f4"
+    },
+    {
+      "claim_id": "07bbba53-5262-4251-add8-bbae978a5df8",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "ab8fefd6-ece0-4ea6-9fcc-281a4b8b5a22",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "c20ff00b-d35b-43e6-b281-158d63b2d15d",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "505f2bec-9970-46ac-9918-050cd5751f57",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "481acbd6-00ee-4572-b93e-3f1e12a44fab",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "7e5c9b79-b3cc-4117-885f-7393fe5caa23",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "7a1a68ea-1e46-43ec-bd53-b5b4a1904a99",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "ab97c08d-fff5-4ad6-88cc-42690b772523",
+      "result_id": "ad08555d-2fa7-4738-8ad2-afac17da25e9"
+    },
+    {
+      "claim_id": "fd0f7b66-dce1-40e6-a830-513b340764b5",
+      "result_id": "73d04903-b85d-4795-b558-c7110e060ef8"
+    },
+    {
+      "claim_id": "62b37209-60f7-4a54-baf4-a7242a2df3a1",
+      "result_id": "73d04903-b85d-4795-b558-c7110e060ef8"
+    },
+    {
+      "claim_id": "4f0110b8-7960-4442-951b-8cf4aab8a7c5",
+      "result_id": "73d04903-b85d-4795-b558-c7110e060ef8"
+    },
+    {
+      "claim_id": "90e820a8-eefd-4539-bdeb-94da11e72c95",
+      "result_id": "73d04903-b85d-4795-b558-c7110e060ef8"
+    },
+    {
+      "claim_id": "c5b11de7-4f52-4bef-898d-4f42d64835a5",
+      "result_id": "73d04903-b85d-4795-b558-c7110e060ef8"
+    },
+    {
+      "claim_id": "ea0ba80d-7b6b-4af0-8b87-f167662dd84d",
+      "result_id": "73d04903-b85d-4795-b558-c7110e060ef8"
+    },
+    {
+      "claim_id": "36232198-8e89-441c-baf0-9c920c77b958",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "1c7aba7b-eeb1-45d7-a8fc-773e8dd07c1e",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "fbfc8bcf-0db6-4b3f-b063-f9ab5faef53a",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "a2b442a4-e294-4cb3-bb0a-fcdc4e88f3f4",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "54c9fdaa-6213-4c91-84ae-c212bc7bcd9f",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "d9678b38-75d0-48c6-88a0-9dbb6a986b2c",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "9aacfc8d-b2df-4dc9-8f9f-7e9ee54c2d9a",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "505f2bec-9970-46ac-9918-050cd5751f57",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "20fc0ecb-0b98-4ba7-b443-00104337d878",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "3287e221-c81f-46d9-a0f0-49cabcf9dbe9",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "07c21265-176b-40bf-8cb7-a05f96c538a6",
+      "result_id": "a56b1bb7-e108-4f19-ae77-5c528c729c84"
+    },
+    {
+      "claim_id": "765608f9-ef67-4203-999b-72c35c04e9de",
+      "result_id": "f1b998e1-7500-483e-9872-a4563f832d70"
+    },
+    {
+      "claim_id": "490bbf0b-4742-440e-9161-d91ab738c5fa",
+      "result_id": "f1b998e1-7500-483e-9872-a4563f832d70"
+    },
+    {
+      "claim_id": "75f4d5a4-81ed-4564-8a43-81deceaeae61",
+      "result_id": "f1b998e1-7500-483e-9872-a4563f832d70"
+    },
+    {
+      "claim_id": "cf1e524e-9d07-4ca5-9725-5bb587cc3833",
+      "result_id": "f1b998e1-7500-483e-9872-a4563f832d70"
+    },
+    {
+      "claim_id": "8319ff22-00c3-4910-b225-6ea656b243b9",
+      "result_id": "f1b998e1-7500-483e-9872-a4563f832d70"
+    },
+    {
+      "claim_id": "df54ea10-fc40-47c1-bd0b-46606ffda8f3",
+      "result_id": "24ec74d7-86c4-4a5c-9458-0673d2d68e6c"
+    },
+    {
+      "claim_id": "a19adee5-682d-4427-8382-66e8c331bc74",
+      "result_id": "24ec74d7-86c4-4a5c-9458-0673d2d68e6c"
+    },
+    {
+      "claim_id": "e21ad693-4da3-40e4-b6f4-d90b7fe5158a",
+      "result_id": "24ec74d7-86c4-4a5c-9458-0673d2d68e6c"
+    },
+    {
+      "claim_id": "3c11461e-44f5-4d4d-9d75-bf6bcf109168",
+      "result_id": "24ec74d7-86c4-4a5c-9458-0673d2d68e6c"
+    },
+    {
+      "claim_id": "d9712090-b381-49b8-b243-6e5d1906d7ef",
+      "result_id": "24ec74d7-86c4-4a5c-9458-0673d2d68e6c"
+    },
+    {
+      "claim_id": "969e42fe-e6ae-4d47-8ca5-d90d8cd1ae6f",
+      "result_id": "24ec74d7-86c4-4a5c-9458-0673d2d68e6c"
+    },
+    {
+      "claim_id": "729694bf-c4c2-4a88-a6c8-9f09f974fde6",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "02366be8-650e-4154-9799-b9a60b1885a9",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "1e5b3071-638e-4ebd-9b82-e30ba5ac9cbb",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "9b34c533-8797-4fda-92d9-3f0858434278",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "e4e13f7f-2175-4d96-80d7-32ab07168194",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "8680064c-9545-4fbc-9684-d215e69cbdae",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "fccf2479-335b-4f4f-84a8-aff17b553a56",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "2b682dc2-742e-416c-997f-3a54e1e69aa7",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "26f6d6cc-a57e-4e05-b75d-960eab54ebbb",
+      "result_id": "a5654385-c22a-4a25-b3b8-8e0e04f56c58"
+    },
+    {
+      "claim_id": "8e540e4f-1bc1-4ae5-98b7-565b534deec8",
+      "result_id": "e502a238-667a-4280-bc76-a7a8324bdee4"
+    },
+    {
+      "claim_id": "e77815d8-4ea9-4dad-bc1e-1992cee03b56",
+      "result_id": "e502a238-667a-4280-bc76-a7a8324bdee4"
+    },
+    {
+      "claim_id": "80f3a9aa-fa46-41de-9cd1-76c024825d3a",
+      "result_id": "72c9325e-3539-4ea0-ab05-84372a8e4c55"
+    },
+    {
+      "claim_id": "ec165265-cdb6-4a0c-ab74-943b5b2da001",
+      "result_id": "72c9325e-3539-4ea0-ab05-84372a8e4c55"
+    },
+    {
+      "claim_id": "e78ed409-22ec-42ca-8d01-a5994ac9b102",
+      "result_id": "72c9325e-3539-4ea0-ab05-84372a8e4c55"
+    },
+    {
+      "claim_id": "2e66b11f-ce2c-4e4b-a8c9-d675f5f82a4e",
+      "result_id": "72c9325e-3539-4ea0-ab05-84372a8e4c55"
+    },
+    {
+      "claim_id": "6a0671c5-78f8-4738-ba6e-39f47807a54a",
+      "result_id": "72c9325e-3539-4ea0-ab05-84372a8e4c55"
+    },
+    {
+      "claim_id": "5afea8d7-cfbd-4236-acde-bdf27c200c0f",
+      "result_id": "72c9325e-3539-4ea0-ab05-84372a8e4c55"
+    },
+    {
+      "claim_id": "83bef8d2-fc62-4e6d-b737-d36d7f5b0fc2",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "b8ab6019-6189-4947-9169-890fc1be2792",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "d5d6b4a8-f645-4f99-a866-378c7d0ef6c9",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "d37d70a6-1cb7-4167-91ee-6876ed2a3d16",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "112f6e1a-400c-45a5-b973-d3419d8efea3",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "dd167026-6e2a-4ac9-b34d-adc6fde7d771",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "8c72e793-d743-4fdf-ac34-ad37dd52a497",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "d3168b8f-dbc1-4f4f-8414-55c855768af4",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "03a431ae-174c-4eb4-b0e4-8fef027825b6",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "3e216297-33dd-4195-8f06-5bf652931a0d",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "5c9707c5-0fc3-400e-9a10-3972141ad864",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "d07696c0-b963-46fe-8682-f635e200fef4",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "7a6097b1-fc22-4879-9fc6-d4fb49391df0",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "290c8c7d-cf00-4c0a-b56b-9bb3581859ef",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "e21cd761-24cb-46cc-84a1-f8f168cbc43f",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "763db917-b025-4974-b4e5-423bcdf385e2",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "8b7d0698-e0dd-4532-8cb4-1c64fbb793da",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "f30f3989-fd3e-40f3-a26e-e94e726788df",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "7bea49ea-917e-4dde-9cc7-112477b7bc45",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "97ef0f0b-3593-4093-a752-9186c0104e98",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "df69c86f-2775-41da-9c91-167943f185b7",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "d24d0fa2-31e5-4fa1-82cc-feab257180cd",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "252b3d19-b22a-4953-89e6-703809929b8d",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "5a8b810f-a15b-4e0e-be31-24239f660fd3",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    },
+    {
+      "claim_id": "e14e7a3b-d424-4164-bcc8-bfa6a19dee7a",
+      "result_id": "f7f42709-8c39-45b4-92b5-281bf1ac92fa"
+    }
+  ],
+  "comparisons": []
+}

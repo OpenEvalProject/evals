@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors generated a training dataset of ~150,000 unique ribozyme sequences with measured gene-regulatory activities using FACS-Seq. Three libraries (FACS-Seq 1, 2, and 3) were designed with varying loop sizes and prescreening strategies to enrich for low-activity ribozymes, yielding ~10,000 sequences with near-native (low) gene-regulatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C43 collectively describe the experimental design, library construction, FACS-Seq methodology, and resulting dataset characteristics. The data are well-documented with specific numbers of sequences, activity distributions, and enrichment strategies. The methods are appropriate for generating a diverse training set, and the reported statistics (e.g., 48% high activity, 7% near-native activity) are consistent with the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A convolutional neural network (CNN) model was developed that predicts ribozyme gene-regulatory activity from sequence with high accuracy for simple ribozymes (R\u00b2=0.91 for N4N4) and moderate accuracy for ribozymes with aptamers (R\u00b2=0.27-0.28 for theophylline). The CNN outperformed a lasso regression model across all test cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C25, C44-C49 describe model development and performance metrics. The R\u00b2 values are clearly reported with appropriate test/train splits. The CNN's superior performance over lasso (R\u00b2=0.91 vs 0.82 for simple ribozymes; R\u00b2=0.27 vs 0.08 for theophylline) is well-documented. The model demonstrates robustness across different structural segments (average R\u00b2 difference of 0.18), supporting its utility for prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The CNN model successfully designed ribozyme libraries enriched for low basal gene-regulatory activity across five aptamers. For folinic acid, the designed library achieved 77% low-activity sequences vs. 3% in random libraries (p=1.2\u00d710\u207b\u2079\u00b9). Three other aptamers (theophylline, tetracycline, chloramphenicol) showed significant but more modest enrichment, while neomycin showed minimal enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50-C60 report experimental validation of model-designed libraries. The statistical comparisons using rank-sum tests with highly significant p-values support that designed libraries differ from random libraries. The varying success across aptamers (77% enrichment for folinic acid vs. 0% for neomycin) is honestly reported and demonstrates both the model's capabilities and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model enabled forward design of functional ribozyme switches for four out of five aptamers tested. Tetracycline switches achieved the best performance (median activation ratio 2.8, top switches 4.5-5.8), while folinic acid, theophylline, and neomycin showed more modest activation ratios (1.5-2.0). Chloramphenicol switches showed minimal ligand response (activation ratio 1.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C27, C61-C74 describe individual switch characterization via flow cytometry. The data show clear differences in basal activity and ligand response across aptamers. Statistical significance is reported (p<0.05 to p<0.001), and the authors appropriately note that low basal activity alone is insufficient for switch function\u2014ligand permeability and aptamer-ligand binding characteristics also matter. The 4/5 success rate claim is supported by the data showing significant ligand responses for all except chloramphenicol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Analysis of model predictions revealed a conserved UGGAG motif on loop II present in 1.5% of designed sequences across aptamers, which correlates with low gene-regulatory activity (mean log\u2081\u2080(GFP/mCherry) = -0.27 vs. 0.02 for random). The model also showed aptamer-specific preferences for loop placement and length, and an overall enrichment of purines (83.8%) over pyrimidines (16.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C87 describe post-hoc analysis of model predictions to identify sequence motifs and design preferences. The UGGAG motif is validated against training data showing improved activity. The aptamer-specific preferences (e.g., 100% of neomycin/chloramphenicol on loop I, 75% of folinic acid on loop II) are clearly quantified. The purine enrichment observation is consistent with prior literature (C88), adding biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The neural network model's accuracy declines rapidly when predicting ribozymes with structures that differ from those in the training set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by Figure 4\u2014figure supplement 3C showing decreased R\u00b2 as structural differences increase. This is an important limitation acknowledged by the authors and is consistent with the observation that the model performs better on simple ribozymes (R\u00b2=0.91) than complex aptamer-containing ones (R\u00b2=0.27-0.28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose that differences in switch performance across aptamers are due to ligand-specific properties, particularly membrane permeability. Tetracycline crosses membranes efficiently while folinic acid and chloramphenicol do not, explaining the superior performance of tetracycline switches despite similar basal activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 are interpretations supported by citations but not directly tested in this work. While the correlation between known membrane permeability (from literature) and switch performance is consistent with the data, alternative explanations (e.g., aptamer-ligand binding disruption of cleavage, ligand toxicity) are also mentioned but not distinguished experimentally. The interpretation is plausible but requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The design tool has been made publicly available on GitHub with trained models, code, and instructions, and is designed to run on low computational resources using free, open-source software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe software availability and accessibility. The GitHub repository is cited with a specific commit hash, and the computational requirements are clearly stated. This supports reproducibility and community use of the tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C99"
+    ],
+    "result": "The authors used RNAstructure for secondary structure prediction based on its high accuracy and computational efficiency, and justified their 3D encoding assumptions using crystal structure evidence from the native hammerhead ribozyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C99 describe methodological choices with appropriate citations. RNAstructure's accuracy is supported by citation to Puton et al., 2013, and its speed is quantified. The structural assumption of nucleotides in opposing planes is supported by crystal structure data (Chi et al., 2008), providing a rational basis for the encoding scheme.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C93"
+    ],
+    "result": "Background claims establishing the context for ribozyme switches, prior computational design tools, and the motivation for developing a new tool for the ribozyme platform that functions across diverse organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C23, C93 are background/context claims supported by appropriate citations to prior literature. These establish the scientific context and motivation for the work. The claims about prior tools' performance (e.g., C16: 71% success rate, C18: 63% within 2-fold) and limitations (C22: no tools for cross-organism platforms) are properly attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Machine learning can be applied to RNA sequences to predict gene-regulatory activity, providing the basis for design tools for functional RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is a summary conclusion supported by the collective results showing that the CNN model successfully predicts ribozyme activity (C24-C25, C44-C49) and enables forward design of functional switches (C4-C5, C26-C27, C50-C74). This represents the main contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "A previous study observed a preference for purines in natural hammerhead ribozymes, consistent with the authors' observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a citation to prior work (Hammann et al., 2012) that corroborates the purine enrichment observed in the model's predictions (C87). This provides external validation for the model's learned preferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Certain ligands may not be well-suited as effectors of genetic switches due to cellular toxicity or membrane permeability issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is a general statement supported by citation to Xiang et al., 2019 and is consistent with the observed performance differences across ligands in this study. This provides context for interpreting the variable switch performance.",
+    "result_type": "MINOR"
+  }
+]

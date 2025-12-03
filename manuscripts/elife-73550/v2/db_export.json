@@ -1,0 +1,1710 @@
+{
+  "submission": {
+    "id": "5b9e3b68-6191-4f01-9a99-bc4829c9fa97",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:26:35.790343Z",
+    "updated_at": "2025-12-03T12:26:35.790343Z"
+  },
+  "content": [
+    {
+      "id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "submission_id": "5b9e3b68-6191-4f01-9a99-bc4829c9fa97",
+      "content_type": "manuscript",
+      "content_text": "# Notch controls the cell cycle to define leader versus follower identities during collective cell migration\n\n## Authors\n\n- Zain Alhashem<sup>1</sup> ([ORCID: 0000-0002-8320-3836](https://orcid.org/0000-0002-8320-3836))\n- Dylan Feldner-Busztin<sup>2</sup>\n- Christopher Revell<sup>2</sup> ([ORCID: 0000-0002-9646-2888](https://orcid.org/0000-0002-9646-2888))\n- Macarena Alvarez-Garcillan Portillo<sup>1</sup>\n- Karen Camargo-Sosa<sup>3</sup>\n- Joanna Richardson<sup>1</sup> ([ORCID: 0000-0003-2092-3876](https://orcid.org/0000-0003-2092-3876))\n- Manuel Rocha<sup>4</sup>\n- Anton Gauert<sup>1</sup> ([ORCID: 0000-0002-3013-5374](https://orcid.org/0000-0002-3013-5374))\n- Tatianna Corbeaux<sup>1</sup>\n- Martina Milanetto<sup>5</sup>\n- Francesco Argenton<sup>5</sup> ([ORCID: 0000-0002-0803-8236](https://orcid.org/0000-0002-0803-8236))\n- Natascia Tiso<sup>5</sup> ([ORCID: 0000-0002-5444-9853](https://orcid.org/0000-0002-5444-9853))\n- Robert N Kelsh<sup>3</sup> ([ORCID: 0000-0002-9381-0066](https://orcid.org/0000-0002-9381-0066))\n- Victoria E Prince<sup>4</sup>\n- Katie Bentley<sup>2</sup> \u2020\n- Claudia Linker<sup>1</sup> ([ORCID: 0000-0003-2028-6109](https://orcid.org/0000-0003-2028-6109)) \u2020\n\n### Affiliations\n\n1. Randall Centre for Cell and Molecular Biophysics, Guy's Campus, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n2. Cellular Adaptive Behaviour Lab, Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))\n3. Department of Biology & Biochemistry, University of Bath Bath United Kingdom ([ROR:002h8g185](https://ror.org/002h8g185))\n4. Committee on Development, Regeneration and Stem Cell Biology, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n5. Department of Biology, University of Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))\n6. Department of Organismal Biology and Anatomy, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n7. Department of Informatics, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCoordination of cell proliferation and migration is fundamental for life, and its dysregulation has catastrophic consequences, such as cancer. How cell cycle progression affects migration, and vice versa, remains largely unknown. We address these questions by combining in silico modelling and in vivo experimentation in the zebrafish trunk neural crest (TNC). TNC migrate collectively, forming chains with a leader cell directing the movement of trailing followers. We show that the acquisition of migratory identity is autonomously controlled by Notch signalling in TNC. High Notch activity defines leaders, while low Notch determines followers. Moreover, cell cycle progression is required for TNC migration and is regulated by Notch. Cells with low Notch activity stay longer in G1 and become followers, while leaders with high Notch activity quickly undergo G1/S transition and remain in S-phase longer. In conclusion, TNC migratory identities are defined through the interaction of Notch signalling and cell cycle progression.\n\n## Introduction\n\nThe harmonious coupling of cell proliferation with migration is fundamental for the normal growth and homeostasis of multicellular organisms. A prominent consequence of the dysregulation of these processes is cancer. Uncontrolled cell proliferation leads to primary tumours, and the acquisition of migratory capacities leads to the formation of secondary tumours, the most common cause of cancer deaths. Metastatic cells can migrate collectively, which endows them with more aggressive behaviours (Nagai et al., 2020). Collective cell migration refers to the movement of a group of cells that maintain contact and read guidance cues cooperatively (Rorth, 2009). This mechanism has been studied in several contexts, such as wound healing, angiogenesis, and neural crest (NC) migration. However, how cell proliferation impacts collective cell migration, and vice versa, remains largely unknown. The molecular signals that may couple these two fundamental processes remain equally unclear.\n\nThe NC is a mesenchymal cell population that arises early in development and migrates throughout the body, giving rise to a variety of cell types (neurons, glia, pigment cells, etc.). The NC\u2019s stereotypical migratory behaviour (Gammill and Roffers-Agarwal, 2010) and similarity to metastatic cells (Maguire et al., 2015) make this cell type an ideal model to study the mechanisms of collective cell migration in vivo. Our previous work has shown that zebrafish trunk neural crest (TNC) migrate collectively forming single-file chains (Richardson et al., 2016). One cell at the front of the chain, the leader, is the only cell capable of instructing directionality to the group, while follower cells trail the leader. This division of roles into leaders and followers has been observed in other collectively migrating systems (Theveneau and Linker, 2017). Moreover, histopathological studies from cancer samples and cell lines show clear morphological and molecular differences between the invasive front, leaders, and the lagging cells, followers (Pandya et al., 2017). One outstanding question from these studies is what are the signals that determine leader versus follower migratory identities?\n\nNotch signalling is a cell-cell communication pathway that directly translates receptor activation at the membrane into gene expression changes. Notch receptors are activated by membrane-bound ligands of the Delta/Serrate/Lag2 family. Upon ligand binding, Notch receptors are cleaved by \u03b3-secretases releasing their intracellular domain (NICD). Subsequently, NICD translocates to the nucleus, binds the CBF1/Su(H)/Lag-1 complex, and initiates transcription (Bray, 2016). Among the direct Notch targets are members of the Hes gene family, which encode transcriptional repressors able to antagonise the expression of specific cell fate determinants and Notch ligands, generating a negative feedback loop in which cells with high Notch receptor activity downregulate the expression of Notch ligands, and cannot activate the pathway in their neighbours. Hence, adjacent cells interacting through the Notch pathway typically end up with either low or high levels of Notch activity and adopt distinct fates, a mechanism known as lateral inhibition (Lewis, 1998). Interestingly, Notch signalling has also been implicated in cell migration (Giniger, 1998; Leslie et al., 2007; Timmerman et al., 2004) and promotes invasive behaviours during cancer progression (Reichrath and Reichrath, 2012). Furthermore, lateral inhibition is implicated in the allocation of migratory identities during angiogenesis (Phng and Gerhardt, 2009), trachea formation in Drosophila (Caussinus et al., 2008), and in cell culture (Riahi et al., 2015). Whether Notch signalling plays a similar role in the context of mesenchymal cell migration is unknown. Notch signalling is required for NC induction (Cornell and Eisen, 2005), and its components and activity remain present in migrating NC (Liu et al., 2015; Rios et al., 2011). Nevertheless, the role of Notch during NC migration remains unclear. Cardiac NC are reported to develop normally under lack of Notch signalling (High et al., 2007). However, using different genetic tools, it has been shown that both gain and loss of Notch function led to the lack of NC derivatives (Mead and Yutzey, 2012). Moreover, in Xenopus the loss of Notch effectors leads to aberrant NC migration (Vega\u2010L\u00f3pez et al., 2015).\n\nThe Notch pathway has not only been implicated in cell fate allocation, but it is also important for cell proliferation. Depending on the context, Notch can inhibit or promote cell cycle progression (Campos et al., 2002; Carlson et al., 2008; Devgan et al., 2005; Fang et al., 2017; Georgia et al., 2006; Mammucari et al., 2005; Nguyen et al., 2006; Nicoli et al., 2012; Noseda et al., 2004; Ohnuma et al., 1999; Park et al., 2005; Patel et al., 2016; Rangarajan et al., 2001; Riccio et al., 2008; Zalc et al., 2014). Indeed, Notch target genes include important cell cycle regulators such as CyclinD1, p21 and MYC (Campa et al., 2008; Guo et al., 2009; Joshi et al., 2009; Palomero et al., 2006; Ronchini and Capobianco, 2001).\n\nUsing a combination of in vivo and in silico approaches, we have established that differences in Notch activity between premigratory TNC select the leader cell. Cells with high levels of Notch signalling adopt a leader identity, while cells that lack Notch activity become followers. Our data show that a single progenitor cell in the premigratory area divides asymmetrically, giving rise to a large prospective leader and smaller follower cell. We propose that this original small asymmetry generates differences in Notch activity between TNC that are thereafter enhanced by cell-cell communication through Notch lateral inhibition. Differences in Notch activity in turn drive distinct cell cycle progression patterns and regulate the expression of phox2bb. Leader cells undergo the G1/S transition faster and remain in S-phase for longer than follower cells. Moreover, continuous progression through the cell cycle is required for TNC migration. Taken together, our results support a model in which the interaction between Notch and the cell cycle defines leader and follower migratory behaviours.\n\n## Results\n\n### Notch signalling is required for TNC migration\n\nNC cells are induced at the border of the neural plate early during development. The prospective NC expresses Notch components, and Notch activity is required for NC induction (Cornell and Eisen, 2005). Our analysis reveals that Notch components remain expressed in NC after induction, suggesting that Notch signalling may also be involved in later aspects of NC development (Figure 1\u2014figure supplement 1). Moreover, analysis of the Notch activity reporter line 12xNRE:egpf (Moro et al., 2013) shows that Notch signalling levels vary widely between premigratory TNC (Figure 1), suggesting that Notch may play a role after TNC induction. To explore the role of Notch in TNC development, we first aimed to define the stage at which NC induction becomes independent of Notch signalling. To this end, we treated embryos with the \u03b3-secretase inhibitor DAPT (Richter et al., 2017) and assessed expression of NC marker. Our results showed that Notch inhibition impairs TNC induction up to 11 hours post-fertilization (hpf; Figure 2) and confirmed previous reports that induction of the cranial and vagal NC populations is independent of Notch signalling (Cornell and Eisen, 2000). Next, we analysed the effect of Notch inhibition at 12 hpf on the development of TNC derivatives. We found a reduction in all TNC derivatives (neurons, glia, and pigment cells; Figure 3A\u2013F) upon Notch inhibition, suggesting that Notch activity is important in a process subsequent to induction, yet prior to differentiation. We next explored whether TNC migration is affected by Notch inhibition. Analysis of crestin expression showed a reduction in the number of TNC cell chains formed and in their ventral advance upon DAPT treatment (Figure 3G\u2013J), which likely explains the lack of TNC derivatives at later stages. We then asked whether these results are due to a delay or a halt of migration. To this end, embryos were treated with DAPT from 12 hpf for 6\u201312 hr and processed for crestin expression. Decreased numbers of migratory chains were observed at all timepoints, but as embryos developed new chains were formed, indicating that the blockade of Notch signalling delays TNC migration (Figure 3K). Comparable results were obtained by inhibiting Notch genetically in embryos where the dominant-negative form of Suppressor of Hairless is under the control of a heat shock element (Latimer et al., 2005; hs:dnSu(H); Figure 3L). We reasoned that if Notch inhibition delays the onset of TNC migration, its overactivation might lead to TNC migrating earlier, leading to an increased number of chains. To test this, we induced NICD expression in all tissues by heat shock of hs:Gal4;UAS:NICD embryos (Scheer and Campos-Ortega, 1999). To our surprise, Notch gain of function (GOF) and loss of function (LOF) resulted in almost identical phenotypes, both showing a similar reduction of TNC chain numbers (Figure 3L). Taken together, these results show that precise regulation of Notch signalling levels is required for TNC migration.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig1-v2.jpg)\n\n**Figure 1.:** (A, E) Images of two different Notch reporter 12xNRE:egfp embryos (18 hpf) stained for sox10 (magenta) and GFP (green) RNAs, and nuclei stained with DAPI (blue). (B) Enlargement of the anterior area in (A). (C) Enlargement of the more posterior area in (A). (D) Enlargement of the anterior most posterior area in (A). (F) Enlargement of the outlined area in (E). Anterior to the left, dorsal top. White lines show approximate cell boundaries.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Transversal sections at trunk level of Sox10:GFP embryos showing the expression of (A\u2013C) notch1a, (D\u2013F) dlb (deltaB), (G\u2013I) dld (deltaD), and (J\u2013L) her4. (A), (D), (G), and (J) bright field, (B), (E), (H), and (K) GFP-fluorescence, and (C), (F), (I), and (L) overlay. Dotted black line in the brightfield frames indicates TNC cells seen in the fluorescent image.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig2-v2.jpg)\n\n**Figure 2.:** (A) crestin in situ hybridisation in wildtype (WT) embryo at 18 hpf. (B, C) crestin in situ hybridisation in DAPT-treated embryos: (B) reduced or (C) absent TNC. (D) Quantification of the crestin expression phenotypes upon DAPT treatment (phenotypes: WT, black; reduced, orange; absent, red; 30% epiboly n = 38, 75% epiboly n = 32, 11 hpf n = 35, 12 hpf n = 39). (E\u2013J) In situ hybridisation for neural crest (NC) markers in representative control (DMSO) and DAPT-treated embryos from 12 to 16 hpf. (E, F) crestin (DMSO n = 32, DAPT n = 38), (G, H) foxd3 (DMSO n = 16, DAPT n = 35), and (I, J) sox10 (DMSO n = 27, DAPT n = 29). Anterior to the left, dorsal top.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Glial marker mbp in situ hybridisation upon (A) control (DMSO; n = 15) and (B) DAPT (n = 20) treatment from 12 hpf. (C, D) Neuronal marker bdh in situ hybridisation upon (C) control (DMSO; n = 25) and (D) DAPT (n = 18) treatment from 12 hpf. (E, F) Pigmentation upon (E) control (DMSO; n = 40) and (F) DAPT (n = 52) treatment from 12 hpf. (G, H) Neural crest marker crestin in situ hybridisation upon (G) control (DMSO) and (H) DAPT treatment from 12 to 18 hpf. (I, J) crestin in situ hybridisation upon (I) control (DMSO) and (J) DAPT treatment from 12 to 24 hpf. (K) Quantification of migratory chain formation upon control (DMSO) and DAPT treatment from 12 to 18 hpf (DMSO n = 98; DAPT n = 126), 20 hpf (DMSO n = 111; DAPT n = 109), and 24 hpf (DMSO n = 42; DAPT n = 61). (L) Quantification of migratory chain formation in control (HS:Gal4; n = 516), Notch loss of function (LOF) (HS:dnSu(H); n = 220), and gain of function (GOF) conditions (HS:Gal4xUAS:NICD; n = 142) heat shocked at 11 hpf and analysed at 18 hpf. Mann\u2013Whitney U-test, control vs. LOF ****p<0.0001, control vs. GOF **p=0.0020. Anterior to the left, dorsal top, except in (C, D) anterior left, ventral view. Arrowheads indicate gene expression. All treatments performed from 12 hpf.\n\n### In vivo Notch activity allocates TNC migratory identity\n\nInterestingly, Notch signalling is required during collective migration to define distinct identities (Phng and Gerhardt, 2009; Caussinus et al., 2008; Riahi et al., 2015). To test whether Notch plays a similar role in TNC migration, we performed live-imaging analysis of TNC migration under lack (inhibition and LOF) or overactivation (GOF) of Notch signalling (Figure 4, Figure 4\u2014videos 1 and 2). Our previous work defined a leader as the cell that retains the front position of the chain throughout migration, advancing faster and in a more directional manner than followers (Richardson et al., 2016). Under Notch inhibition (treatment with \u03b3-secretase inhibitor Compound E; Richter et al., 2017), TNC remain motile with a single cell initiating the movement of the chain, but in contrast to control treatment (DMSO) the leader cell is unable to retain the front position and is overtaken by one or several followers (Figure 4A and C, Figure 5A and B, Figure 4\u2014video 1). The overtaking follower cell, in turn, is not always able to retain the front position and can be overtaken by cells further behind in the chain. This loss of group coherence corresponds with a reduction in ventral advance, with most leader cells unable to move beyond the neural tube/notochord boundary (NT/not; Figure 4C, Figure 5A and C). This behaviour leads to an accumulation of cells at the NT/not, where some cells repolarise moving anterior or posteriorly and crossing the somite boundary and, in some cases, joining adjacent chains. Analysis of single-cell tracking showed that under Notch inhibition leader cells also have decreased speed and directionality (Figure 5D and E). Similar results were observed when Notch inhibition was achieved genetically by driving overexpression of dnSu(H) through heat shock in the entire embryo (not shown; hs:dnSu(H) line). Together, these results strongly suggest that upon lack of Notch signalling the TNC population is formed solely by follower cells that are unable to coordinate the movement of the group. Nevertheless, Notch signalling is important for the development of tissues surrounding TNC that act as a substrate for migration, raising the possibility that Notch signalling does not act cell-autonomously in TNC and instead the phenotypes observed are simply the consequence of somite and/or neural tube malformations. However, this appears unlikely as somite development (formation, patterning, and differentiation) and neuron formation are not affected by Notch inhibition at the axial level analysed (Figure 4\u2014figure supplement 1). Next, we directly tested whether Notch signalling is autonomously required in TNC by inhibiting Notch activity exclusively in NC at the time of migration. To this end, we generated a new UAS:dnSu(H) line and crossed it with Sox10:Kalt4 fish (Alhashem et al., 2021). In the resultant embryos, all NC express Gal4 fused to the oestrogen receptor binding region (Gal4-ER) and are fluorescently labelled by nuclear-RFP. Under normal conditions, Gal4-ER is maintained inactive in the cytoplasm, whilst upon addition of tamoxifen, Gal4-ER is translocated to the nucleus activating transcription from the UAS:dnSu(H) transgene (Figure 4\u2014figure supplement 2). We found that autonomous inhibition of Notch signalling in NC phenocopies the chemical inhibition. Leader cells are unable to retain the front position, being overtaken by followers, and ventral advance is reduced with cells accumulating at the NT/not boundary (Figure 4D, Figure 5A\u2013C, Figure 4\u2014video 2). Moreover, leader cells adopt followers\u2019 migratory parameters, showing decreased speed and directionality (Figure 5D and E), confirming that Notch activity is autonomously required in TNC for identity allocation, and suggest that in the absence of Notch signalling a homogenous group of followers is established. In view of these results, we hypothesised that a homogeneous group of leaders would be formed upon Notch overactivation. Using a similar strategy, Notch overactivation was induced in the whole embryo (not shown, hs:Gal4;UAS:NICD; Scheer and Campos-Ortega, 1999), or exclusively in NC (Sox10:Kalt4;UAS:NICD), and migration was analysed by live imaging. Similar results were obtained in both experimental conditions: group coherence is lost, leader cells are overtaken by followers, and ventral advance is impaired (Figure 4F, Figure 5A\u2013C, Figure 4\u2014video 2). Interestingly, in Notch GOF conditions follower cells adopt leaders\u2019 characteristics, moving with increased speed, but all cells in the chain follow less directional trajectories, which hinders the ventral advance of the group (Figure 5D and E), indicating that all cells in the chain migrate as leaders. Next, we tested whether the behavioural changes observed upon Notch alterations were mirrored by molecular changes by using the leader marker phox2bb. In control conditions, phox2bb transcripts are highly enriched in the leader cells from early stages of migration (Figure 6A, B, and G; Alhashem et al., 2022a). Consistent with expectations, upon Notch overactivation phox2bb is expressed by all the cells in the chain (Figure 6C, D, and G), while its expression is absent when Notch is inhibited (Figure 6E\u2013G). These data show that Notch activity controls phox2bb expression and allocates TNC migratory identity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig4-v2.jpg)\n\n**Figure 4.:** (A) Selected frames from in vivo imaging of Sox10:Kalt4 control (DMSO treated) embryos. (B) Selected frames from control simulation with 1:3 leader/follower ratio. (C) Selected frames from in vivo imaging under Notch-inhibited condition, Sox10:Kalt4 embryos treated with CompE. (D) Selected frames from in vivo imaging of Notch loss of function (LOF) condition, Sox10:Kalt4; UAS:dnSu(H) embryos. (E) Selected frames from all followers simulation. (F) Selected frames from in vivo imaging of Notch gain of function (GOF) condition Sox10:Kalt4; UAS:NICD embryos. (G) Selected frames from all leaders simulation. Magenta tracks and green arrowheads indicate leaders; green arrows and cyan tracks follower cells. Asterisks indicate cells crossing somite borders. White line marks dorsal midline. Anterior to the left, dorsal up. Time in minutes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) cb1045 in situ hybridisation upon (A) control (DMSO, n = 23) and (B) DAPT (n = 30) treatment. Arrows indicate segmentation defects. (C, D) myod in situ hybridisation upon (C) control (DMSO, n = 47) and (D) DAPT (n = 45) treatment. (E, F) dld (deltaD) in situ hybridisation upon (E) control (DMSO, n = 25) and (F) DAPT (n = 30) treatment. (G, H) Antibody staining for heavy myosin (F59) upon (G) control (DMSO, n = 37) and (H) DAPT (n = 32) treatment. (I, J) Antibody staining for Znp1 upon (I) control (DMSO, n = 35) and (J) DAPT (n = 42) treatment. (K, L) Antibody staining for acetylated tubulin (Ac Tub) upon (K) control (DMSO, n = 20) and (L) DAPT (n = 27) treatment. Arrowheads indicate the level at which trunk neural crest (TNC) migration was analysed. Anterior to the left, dorsal top.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Diagram of the construct used to generate the UAS:dnSu(H) line. (B) Scheme of protocol used. (C\u2013E) Trunk region of a Sox10:Kalt4;UAS:dnSu(H) embryo treated with tamoxifen from 11 to 24 hpf and immunostained for (C) RFP and (D) myc. (E) overlay. Dotted squares indicate enlargement. (F) Number of embryos expressing the UAS driven transcripts (myc+) after tamoxifen treatment from 11 hpf for different times (15\u2032 n = 20, 30\u2032 n = 27, 45\u2032 n = 25, 1 hr n = 22, 3 hr n = 18, 5 hr n = 20, 24 hr n = 14, 48 hr n = 10).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig5-v2.jpg)\n\n**Figure 5.:** (A) Final position of each cell in model simulations and in vivo experiments under different conditions. In silico results depicted in confined pathway, in vivo data graphed in model embryo, somites contour and dorsal midline (dark grey lines), edge of the premigratory area (dashed lines), and NT/not boundary (light grey lines). Anterior left, dorsal up. (B) Quantification of leader overtaking events in vivo and in silico. Leader overtaken by a single follower is overtaken = 1; leader overtaken by more than one follower cell is overtaken >1. (C) Quantification of the ventral advance of cells in vivo and in silico. (D) Quantification of cell speed in vivo and in silico. (E) Quantification of cell directionality in vivo and in silico. Leader cells in magenta, followers in cyan. Magenta and cyan dashed lines indicate the average values for leaders and followers respectively. Full statistical analysis in Supplementary file 1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig6-v2.jpg)\n\n**Figure 6.:** (A, B) Images of phox2bb expression in control embryos (Sox10:Kalt4). (C, D) Images of phox2bb expression under Notch gain of function (GOF) conditions (Sox10:Kalt4; UAS:NICD embryos). (E, F) Images of phox2bb expression in Notch inhibition conditions (Compound E). Magenta and cyan arrowheads indicate leaders and followers respectively. (G) Quantification of phox2bb expression in control (n = 13), Notch GOF (n = 14), and Notch inhibition conditions (n = 11). Welch\u2019s t-test, Kalt4 control vs. GOF ****p<0.0001, DMSO control vs. inhibition ****p<0.0001.\n\nIn summary, our in vivo and molecular data show that Notch signalling is required autonomously in TNC for migratory identity allocation. TNC with high levels of Notch express phox2bb and become leaders, while cells with low Notch activity migrate as followers. Alterations of Notch signalling lead to a homogeneous TNC group with a single migratory identity that is unable to undergo collective migration. Taken together, these data suggest Notch lateral inhibition as the mechanism responsible for TNC migratory identity acquisition.\n\n### In silico modelling predicts that more than one leader is required for TNC migration\n\nOur in vivo analysis shows that upon both Notch inhibition and overactivation TNC are unable to undergo collective migration due to lack of group coherence. On the other hand, our molecular analysis shows that upon Notch inhibition an all-followers group is established, while Notch overactivation leads to the formation of an all-leaders group. To gain a better understanding of these paradoxical results, we took an in silico approach, developing a discrete element model of TNC migration. Cells were simulated as 2D particles moving into a constrained space and endowed with intrinsic motility. Four variables control cell movement in the model: contact inhibition of locomotion (CIL) and co-attraction (co-A) define movement directionality and group cohesion, while volume exclusion regulates cell overlap, intuitively understood as cell size, while a noise element (zeta) was added to the cell\u2019s trajectory (Figure 7A). A multi-objective scoring system, based on in vivo measurements, was developed to evaluate how close simulations with different underlying mechanisms matched chain behaviours. The scores were (1) chain cohesion, a maximum distance of 57 \u03bcm is allowed between adjacent cells; (2) single file migration for at least 80% of the simulation; (3) followers undergo rearrangements, while (4) leaders retain the front position, and (5) the chain should advance to the end of the migratory path (Figure 7B). Using this analysis and a parsimonious modelling approach, we attempted to match in vivo TNC migration with the simplest form of the model, only adding complexity incrementally in an effort to find the minimal set of predicted mechanisms required. We first simulated chains composed of homogeneous cells and systematically covaried all parameters. We found no parameter combination able to match all scores, confirming our previous findings that cell heterogeneity is required for TNC migration (Figure 7C; Richardson et al., 2016). Evidence from other systems (Astin et al., 2010; Bentley et al., 2014; Parkinson and Edwards, 1978; Theveneau and Mayor, 2013) led us to hypothesise that differences in the CIL response between cells may be at play. Thus, we simulated chains in which only cells of different identities present CIL (Diff CIL; Figure 7A). These simulations match several scores, but chains are unable to reach the end of the migratory path (Figure 7C, Figure 4\u2014video 3). Next, we varied Diff CIL intensity, co-A, and cell size (volume exclusion) for leader cells. Interestingly, the model is only able to recapitulate control conditions when the difference between leaders and follower is maximal for all variables. Nevertheless, it is unable to recapitulate Notch GOF and LOF phenotypes (Figure 7C). Our previous results show that differences in Notch signalling establish migratory identities, suggesting that lateral inhibition may be the mechanism at play. To explore whether different outcomes of lateral inhibition may allow the model to simulate Notch altered conditions (GOF and LOF), different ratios of leader/follower cells were simulated. We first tested a 1:1 ratio, surprisingly this chain architecture over-migrates, moving beyond the end of the pathway (Figure 7C, Figure 4\u2014video 3). Interestingly, we found that several parameter combinations from the 1:2 and 1:3 leader/follower ratios were able to recapitulate in vivo control condition, as well as the loss of group coherence and ventral advance observed in Notch GOF (all leader simulation) and LOF (all follower simulation; Figure 4B, E, and G, Figure 5, Figure 4\u2014video 3). In these simulations, the six parameter combinations that match all in vivo scores had followers at the low setting, while leaders\u2019 CIL intensity took medium or high values, cell size took medium or low values, and co-attraction took all levels. Nevertheless, all these parameter combinations endow the leader with enhanced migratory behaviour.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematics of model parameters. Diff CIL: only leader/follower collisions induce repulsion and change of directionality. Intensity CIL: the leader\u2019s response upon collision is stronger than the follower\u2019s response. Co-A: co-attraction pulls together cells at a distance. Cell size: volume exclusion. (B) Schematics of simulations multi-objective scores. (C) Depiction of parameter space analysis showing the number of parameters sets that fulfilled each score when different variables were tested. One leader refers to chains with a single leader cell. 1:1, 1:2, and 1:3 refer to leader/follower ratios. (D) 3D plot of linear discriminant analysis (LDA). (E) LDA coefficients of in vivo data. A random dataset was used as control. (F) LDA coefficients of in silico data. A random dataset was used as control.\n\nNext, we used a linear discriminant analysis (LDA) to study which of the model parameters bear most weight in the definition of leader and follower identity. LDA is a dimensionality reduction method that projects the data onto a lower dimensional space minimizing the variation within classes (e.g. between leaders) and maximizing the variation between classes (leaders versus followers), allowing the hierarchical ordering of the factors that best explain the class separation. First, we used the in vivo data to determine whether leaders and followers were properly separated by LDA. A visual inspection of the data makes clear that LDA works well to classify migratory identities (Figure 7D). Moreover, the LDA shows that ventral distance is the most important variable separating leaders from followers, with speed and directionality playing a less dominant role (Figure 7E). Next, we used this method to assess the importance of each of the model parameters. CIL intensity appears to be the parameter that most differ between leader and follower cells, while heterogeneity in the other parameters is not essential (Figure 7F). Taken together, the in silico data confirms our previous conclusion that TNC chains are a heterogeneous group. Remarkably, it also predicts CIL intensity to be the most important distinction between leaders and followers. Finally, the model anticipates that TNC chains are formed of leaders and followers in a 1:2 or 1:3 ratio.\n\n### Leader cells arise from the asymmetric division of a progenitor cell\n\nCell size is a prominent characteristic distinguishing leader from follower cells. Leaders are almost twice as big as followers during migration and this difference is evident before migration initiation (Richardson et al., 2016), suggesting that size disparity arises at birth or shortly thereafter. Interestingly, differential cell size emerged as an important parameter in our in silico analysis, contributing to more realistic leader/follower coordination behaviours. To understand the origin of these size differences, we investigated whether leader and follower cells share a common progenitor, and at which point differences in size become apparent. To this end, we imaged FoxD3:mCherry;H2aFVA:H2a-GFP embryos. The FoxD3:mCherry reporter (Hochgreb-H\u00e4gele and Bronner, 2013; Lukoseviciute et al., 2018) labels NC from early stages and allows us to define TNC identity at later stages by their migratory position. Moreover, the nuclear marker H2aFVA:H2a-GFP (Pauls et al., 2001) was used to track single cells and their divisions. Tracking analysis shows that the asymmetric division of a single progenitor cell in each body segment gives rise to a larger cell that becomes a leader (102 \u00b1 20 \u00b5m2), and a smaller sibling that migrates as follower (72 \u00b1 9 \u00b5m2; Figure 8A and B, Figure 8\u2014video 1). In contrast, all other progenitors divide symmetrically, giving rise to two follower cells (87 \u00b1 27 \u00b5m2; Figure 8C and D). We also noticed that the leader progenitors\u2019 divisions are spatially restricted to the anterior quarter of the premigratory area in each segment, while the followers\u2019 progenitor divisions take place across the premigratory area (Figure 8E).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig8-v2.jpg)\n\n**Figure 8.:** (A) Selected frames from in vivo imaging of leaders\u2019 progenitor division in FoxD3:mCherry;H2aFVA:H2a-GFP embryos. (B) Area of leaders\u2019 progenitor daughter cells (n = 9 cells, seven embryos; Mann\u2013Whitney U-test, p=0.0056). (C) Selected frames from in vivo imaging of followers\u2019 progenitor division in FoxD3:mCherry;H2aFVA:H2a-GFP embryos. (D) Area of followers\u2019 progenitor daughter cells (n = 10, four embryos; Mann\u2013Whitney U-test, p>0.9999). (E) Position of progenitors\u2019 divisions on model embryo (leaders n = 9, seven embryos; followers n = 10, four embryos). PM, premigratory area; NT/not, neural tube/notochord boundary. (F) Selected frames showing the D>M division pattern from 16 to 28 hpf in vivo imaging of a Sox10:mG embryo. Blue, before division; yellow and red, after division. Arrow indicates division position. (G) Selected frames showing the M>D division pattern from 16 to 28 hpf in vivo imaging of a Sox10:mG embryo. Labelling as in (F). (H) Quantification of leaders\u2019 (n = 21, seven embryos) and follower\u2019s division patterns (n = 43, seven embryos). Red, M>D; black, D>M. (I) Quantification of division positions (n = 13 leaders, n = 19 followers, seven embryos; Mann\u2013Whitney U-test, p=0.0002). Time in minutes. Leaders in magenta, followers in cyan. Anterior left, dorsal top.\n\nWe then reasoned that leader cells, being bigger, may undergo the next division in a shorter time span than follower cells, and in consequence, mitotic figures would be observed at different, but consistent, positions in their trajectory. Indeed, we found two different patterns of divisions in respect to migration: (1) cells that first Divide and then Migrate (D\u2192M) or (2) cells that first Migrate and then Divide (M\u2192D; Figure 8F and G, Figure 8\u2014video 2). Interestingly, we found that the patterns of cell division correlate with cell identity. Most leader cells divide during migration (M\u2192D: 86%), while the bulk of follower cells divide before migration initiation (D\u2192M: 90%, Figure 8H). These patterns result in leader and follower cells dividing at distinct positions, 74% of leaders divide at the NT/not boundary (65.3 \u00b1 9.6 \u00b5m), while 85% of followers divide mostly within the premigratory area or in the dorsal-most region of the somite (42 \u00b1 12.4 \u00b5m; Figure 8I). Together, these results show that leader cells arise from the asymmetric division of a progenitor. Thereafter, leader and follower cells show distinct locations and patterns of division, suggesting that leaders and followers progress asynchronously through the cell cycle, which may influence their migratory behaviour.\n\n### Cell cycle progression is required for TNC migration\n\nTo test the role of cell cycle progression in TNC migration directly, we used inhibitory drugs. The S-phase inhibitor aphidicolin blocks over 94.7% \u00b1 4.5% of mitotic figures after 3 hr of treatment, while the G2/M inhibitor genistein prevents 90% \u00b1 10% of divisions within 6 hr, but neither treatment affects NC induction (Figure 9\u2014figure supplement 1). Inhibition of cell cycle progression by either of the treatments resulted in reduced numbers of migratory chains and decreased ventral advance (control 19 \u00b1 2, genistein 10 \u00b1 3, aphidicolin 6 \u00b1 2 chains; Figure 9A\u2013H). This result was not due to the loss of cell motility as premigratory TNC cells actively extend protrusions and move along the anteroposterior axis but are unable to migrate ventrally (Figure 9\u2014video 1). Importantly, these effects were not a consequence of cell death or the permanent impairment of motility as TNC reinitiate migration and form new chains upon drug withdrawal (Figure 9G and H), showing that active cell cycle progression is required for migration. Next, we directly analysed TNC cell cycle progression in vivo. To this end, we imaged Sox10:FUCCI embryos (Rajan and Gallik, 2018), in which TNC nuclei are RFP-labelled during G1 and GFP-labelled during S and G2. Tracking analysis shows differential cell cycle progression, with most leader cells initiating migration in S-phase (79%), while followers start movement during G1 (77%; Figure 9I and J, Figure 9\u2014video 2). These results show that cell cycle progression is required for migration and that leader and follower cells initiate movement at different points of the cell cycle, suggesting an intimate connection between cell growth and movement.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig9-v2.jpg)\n\n**Figure 9.:** (A, C, E) crestin in situ hybridisation upon (A) DMSO, (C) genistein, or (E) aphidicolin treatment from 12 to 24 hpf. (B, D, F) Enlargement of areas indicated by boxes in (A, C, E). Dotted line marks NT/not boundary, arrowheads migratory chains, and vertical line the chain length. (G, H) Frequency distribution of migratory chains upon control (DMSO; n = 66), (G) genistein (12 hr pulse, n = 56; 6 hr pulse, n = 67), or (H) aphidicolin (12 hr, n = 64; 3 hr, n = 79). (I) Cell cycle phase at migration initiation for leaders (n = 38, four embryos) and followers (n = 43, four embryos). (J) Selected framed from in vivo imaging of Sox10:FUCCI. Time in minutes. Solid line marks dorsal midline, dotted line marks the premigratory area. Magenta arrowheads indicate leader and its daughters. Cyan arrowheads indicate followers.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A) Confocal images showing nuclei and mitotic figures in control (DMSO) and aphidicolin treated H2aFVA:H2a-GFP embryos. Arrowheads indicate mitotic figures; dashed lines mark the neural tube borders. Dorsal view, anterior to the left. (B) Percentage of mitotic figures in control (DMSO-treated embryos) and embryos treated with different concentrations of cell cycle inhibitors (Kruskal\u2013Wallis test, p<0.0001, aphidicolin n = 20 and genistein n = 32; teniposide p>0.9999, n = 27). (C) Time course of the effect of cell cycle drugs (Kruskal\u2013Wallis test, control vs. 1 hr aphidicolin p=0.0007; control vs. 3 hr, 5 hr, and 7 hr aphidicolin p<0.0001; control vs. 2 hr, 3 hr, and 5 hr genistein p>0.0892; control vs. 6 hr genistein p<0.0001; control n = 62 embryos; aphidicolin 1 hr n = 16, aphidicolin 3 hr n = 15, aphidicolin 5 hr n = 16, aphidicolin 7 hr n = 15; genistein 2 hr n = 15, genistein 3 hr n = 16, genistein 5 hr n = 17, genistein 6 hr n = 16). (D) Quantification of cell cycle recovery times following aphidicolin removal (control n = 21; aphidicolin 8 hr n = 18, aphidicolin 4 + 2 hr wash n = 15, 4 + 3 hr wash n = 15 and 4 + 4 hr wash n = 15 embryos; one-way ANOVA, control vs. 8 hr and 4 + 2 hr wash p<0.0001; control vs. 4 + 3 hr wash and 4 + 4 hr wash p>0.0851). (E, F) Whole-mount in situ hybridisation of the neural crest (NC) marker crestin in 16 hpf embryos upon (E) aphidicolin and (F) DMSO treatment from 12 hpf. Anterior to the left, dorsal top. (G, H) Selected frames of in vivo imaging from Sox10:mG embryos showing cell tracks under (G) control (DMSO) 16\u201328 hpf and (H) aphidicolin 16\u201333 hpf treatment. Solid line indicates the dorsal midline, dashed line the premigratory area; time in minutes. (I) Quantification of the number of trunk neural crest (TNC) cells per three migratory chains under control, Notch gain of function (GOF) and loss of function (LOF) conditions at either 16 hpf (control n = 25 embryos; GOF n = 21; LOF n = 14) and 22\u201324 hpf (control n = 18 embryos; GOF n = 18; LOF n = 9). Brown\u2013Forsythe and Welch\u2019s ANOVA tests, 16 hpf: control vs. GOF p>0.9999, control vs. LOF p=0.9976, GOF vs. LOF p=0.9942; 22\u201324 hpf: control vs. GOF p=0.8985, control vs. LOF p=0.5940, GOF vs. LOF p=0.3892.\n\n### Leader and follower cells progress through the cell cycle at different rates\n\nNext, we studied TNC cell cycle progression in detail. First, we asked whether leaders and followers differ in the total length of their cell cycle. Measurements of the time span between two consecutive mitoses showed no significant differences in the total length of the cell cycle between leaders and followers (13.6 \u00b1 1.2 and 13.3 \u00b1 1.4 hr, respectively; Figure 10B). Next, we examined the length of each phase of the cell cycle by imaging the characteristic nuclear labelling pattern of the PCNA-GFP fusion protein (Leung et al., 2011). Sox10:Kalt4 embryos, in which all NC can be recognised by nuclear RFP expression, were injected with PCNA-GFP mRNA and live imaging was performed. PCNA-GFP shows uniform nuclear GFP labelling during G1, intense fluorescent nuclear puncta characterise the S-phase, these puncta dissipate during G2 restoring homogeneous nuclear fluorescence, at the onset of mitosis PCNA is degraded and TNC are recognised solely by nuclear RFP (Figure 10A, Figure 10\u2014video 1). In these embryos, leader cells initiate migration during S-phase and followers in G1, confirming our FUCCI results and establishing that PCNA overexpression does not introduce artefacts to cell cycle progression (Figure 10\u2014figure supplement 1). Using this tool, we measured the length of the cell cycle phases in TNC. We found striking differences in the time spent in G1- and S-phase between leader and follower cells. Leaders present a short G1 (3.2 \u00b1 0.6 hr) but remain for twice as long in S-phase (8.7 \u00b1 1.3 hr). Followers, on the other hand, present the opposite distribution, remaining for twice as long in G1 (7.4 \u00b1 2.7 hr) than in S-phase (4.6 \u00b1 2.8 hr; Figure 10C and D). No significant differences were observed in the length of G2 (leaders 1.6 \u00b1 0.4 hr; followers 1.5 \u00b1 0.3 hr) or M (leaders 0.6 \u00b1 0.1 hr; followers 0.5 \u00b1 0.1 hr). These data show that leader and follower cells present marked differences in the length of G1- and S-phase, suggesting that cell cycle progression may regulate their migratory behaviour.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig10-v2.jpg)\n\n**Figure 10.:** (A) Selected frames from in vivo imaging of Sox10:Kalt4 embryos from 16 to 28 hpf injected with PCNA-GFP mRNA. White arrow points to cycling cell. Time in minutes. (B) Quantification of the cell cycle total duration in leaders (n = 20, seven embryos) and followers (n = 19, seven embryos; unpaired t-test, p=0.5240). (C) Quantification of the cell cycle phases duration in leaders (G1 n = 45, S n = 44, G2 n = 33 and M n = 32, 11 embryos) and followers (G1 n = 50, S n = 48, G2 n = 33 and M n = 34, 11 embryos). Brown\u2013Forsythe and Welch\u2019s ANOVA tests, G1 p<0.0001, S p<0.0001, G2 p=0.9997, M p=0.9231. (D) Schematic representation of the cell cycle phases durations.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** (A, B) Selected frames of in vivo imaging from Sox10:Kalt4 embryos injected with PCNA-GFP mRNA, showing PCNA localisation in trunk neural crest (TNC). (A) Leader cell initiates migration in S-phase. (B) Follower cell divides before initiating migration in G1. Solid lines indicate embryo dorsal border, dotted lines the somite borders, segmented line the premigratory ventral border. Time in minutes. Anterior to the left, dorsal up. (C) Quantification of the cell cycle phase at which cells initiate migration in PCNA-GFP mRNA injected embryos (leaders n = 22, 10 embryos; followers n = 45, 10 embryos). (D) Quantification of the cell cycle phase at which cells initiate migration in Sox10:FUCCI embryos (leaders n = 38, four embryos; followers n = 43, four embryos).\n\n### Notch signalling regulates TNC cell cycle progression\n\nOur data show that Notch signalling allocates leader and follower identities, cell cycle progression is necessary for TNC migration, and leader and follower cells progress through the cell cycle at different rates. Does Notch signalling regulate cell cycle progression, thus differentiating leader from follower cells? To investigate this question, we measured the total length of the cell cycle and the length of each phase under control and Notch-inhibited conditions. Neither the total cell cycle length (Figure 11A) nor the number of TNC (Figure 9\u2014figure supplement 1) were affected by alterations of Notch signalling. Remarkably, we found significant differences in the length of G1- and S-phase upon Notch inhibition. Leader cells lose their characteristic cell cycle progression pattern and behave as followers, with a long G1 and a short S-phase (Figure 11B). Furthermore, Notch inhibition abolishes the size difference between migratory leader and follower cells, with all cells presenting the average follower\u2019s area (Figure 11C and D). These data show that Notch activity defines TNC migratory identity by regulating cell cycle progression, cells with low Notch activity remain for longer in G1 behaving as followers. Interestingly, we noticed that Notch inhibition also changes the cell cycle behaviour of the followers\u2019 population. While the followers\u2019 average length of cell cycle phases is not altered, the dispersion of this population is significantly reduced, with standard deviations cut almost by half (from 2.7 hr to 1.42 hr for G1 and from 2.8 hr to 1.38 hr for S; Figure 11B). This prompted us to analyse the frequency distribution of cell cycle phases length. In control conditions, leader cells show a normal distribution with a single peak for G1- and S-phase, as expected for a homogeneous population. Followers, on the other hand, present a bimodal distribution, with the smaller peak coinciding with that of leader cells, and accounting for 26% of followers in G1- and 31% in S-phase (Figure 11E and F). Strikingly, these results fulfil the predictions of our in silico model that best recapitulates TNC migration when chains are composed of leaders and followers in a 1:2 or 1:3 ratio. Furthermore, upon Notch inhibition the bimodal distribution of the follower population is lost, with all cells grouped at the major mean (Figure 11G and H). Consistent with these data, closer analysis (at higher magnification) of normal phox2bb expression shows increased expression in followers at position 3 in addition to that in leaders (Figure 11I\u2013N). Taken all together, our data demonstrate that the levels of Notch activity in TNC allocate migratory identity by controlling cell cycle progression and that migratory chains are formed of one leader cell for every three followers.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig11-v2.jpg)\n\n**Figure 11.:** (A) Quantification of the cell cycle total duration under control (DMSO, numbers as in Figure 10B) and Notch inhibition conditions (CompE, leaders n = 17, followers n = 22, eight embryos; one-way ANOVA, p=0.1939). (B) Quantification of the cell cycle phases duration under DMSO (numbers as in Figure 10C) and Notch inhibition conditions CompE, leaders G1 n = 29, S n = 28, G2 n = 25, and M n = 25, seven embryos; followers G1 n = 32, S n = 32, G2 n = 30, and M n = 30, seven embryos; Brown\u2013Forsythe and Welch\u2019s ANOVA tests, all phases G1, S, G2, and M p>0.9999 between leaders and followers. (C) Quantification of cell area ratio (leaders/followers) under DMSO and Notch-inhibited conditions (n as in D; Brown\u2013Forsythe and Welch\u2019s ANOVA tests, DMSO control vs. CompE p= 0.0157). (D) Quantification of cell area under DMSO (leaders n = 26, followers n = 22, six embryos) and CompE conditions (leaders n = 44, followers n = 41, seven embryos). Brown\u2013Forsythe and Welch\u2019s ANOVA tests, DMSO leaders vs. followers p<0.0001, CompE leaders vs. followers p>0.9999. (E, F) Frequency distribution of G1- and S-phases durations in control conditions (DMSO; leaders: G1 n = 45, S n = 44, 11 embryos; followers: G1 n = 50, S n = 48, 11 embryos). (G, H) Frequency distribution of G1- and S-phases durations in Notch inhibition conditions (CompE; leaders: G1 n = 29, S n = 28, seven embryos; followers: G1 n = 32, S n = 32, seven embryos). (I\u2013N) Images of phox2bb expression in 24 hpf Sox10:GFP embryo. (K\u2013N) Enlargements of follower 3 and leader cells in (I, J). Orange dotted lines mark leader and third follower cell outline; white dotted lines mark followers' outline.\n\n## Discussion\n\nCollective migration plays an important role in embryogenesis, wound healing, and cancer. The acquisition of specific migratory identities has proven fundamental to angiogenesis, trachea development in Drosophila, and cancer metastasis. TNC migrate collectively, forming chains with a leader cell at the front of the group that direct the migration, while follower cells form the body of the chain that trails the leaders. TNC leader and follower identities are established before migration initiation and remain fixed thereafter (Richardson et al., 2016). Herein, we have addressed the mechanism that establishes leader and follower identities and can propose the following model (Figure 12): (A) premigratory TNC progenitors arise at the dorsal part of the neural tube. The leader\u2019s progenitor divides asymmetrically, giving rise to a large prospective leader cell and a small sibling that migrates as a follower. Other progenitors divide symmetrically, giving rise to follower cells. (B) Interactions via Notch signalling results in the prospective leader cell accumulating higher levels of Notch activity, which induces phox2bb expression. (C) The combination of high Notch activity and a larger cell size prompts the prospective leader cell to rapidly undergo the G1/S transition, entering S-phase and initiating migration earlier than its follower siblings, which are smaller and initiate migration whilst in G1. (D) Premigratory cells that have not been in contact with the prospective leader cell or that have lost contact with it due to its ventral advance maintain communication with surrounding premigratory TNC through Notch and undergo a new round of leader cell selection. This working model of TNC migration is supported by both our experimental data and our in silico modelling, and provides a useful conceptual framework for future studies to build upon.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/73550/elife-73550-fig12-v2.jpg)\n\n**Figure 12.:** (A) Leader TNC progenitors divide asymmetrically giving rise to a prospective leader cell that is larger than the prospective followers that arise from symmetric divisions. (B) Interactions between TNC through Notch lateral inhibition establish higher levels of Notch activity in the bigger cell, triggering the initiation of S-phase and increased levels of phox2bb expression. (C) Leader cell initiated the chain movement while in S-phase trailed by followers in G1. (D) Loss of the leader contact with premigratory TNC allows for a new round of Notch interaction that establishes a second leader cell.\n\nNotch signalling is a seemingly simple pathway that directly transduces receptor activation into changes in gene expression. Nevertheless, its outcomes in terms of cellular patterning are very diverse, from the generation of gene expression boundaries to temporal oscillations, or from the induction of similar fates in neighbouring cells to forcing adjacent cells into alternative fates. The latter function, known as lateral inhibition, is characterised by an intercellular negative feedback loop regulating the expression of Notch ligands. The activation of the Notch receptor in a \u2018signal-receiving\u2019 cell leads to the downregulation of Notch ligands expression, making it less able to act as a \u2018signal-sending\u2019 cell. The signature 2D patterning outcome of lateral inhibition is a mosaic of signal-sending cells with low Notch activity, surrounded by signal-receiving cells with high Notch levels. This is the case during the selection of sensory organ precursor cells in the epidermis of Drosophila (Lewis, 1998) or the formation of the mosaic of hair cells and supporting cells in the sensory organs of the inner ear (Daudet and \u017bak, 2020). In general, however, lateral inhibition operates among cells subjected to extensive rearrangements and its patterning outcome is not a salt-and-pepper mosaic of cells (Bocci et al., 2020). For example, during angiogenesis, cells with low Notch signalling become tip or leaders, while cells with high Notch activity differentiate as stalk or followers (Phng and Gerhardt, 2009). In this context, leaders are interspersed with various numbers of followers. Several models have been proposed to explain how signal-sending (leader/tip) cells can exert a long-lasting or long-range inhibition on signal-receiving (follower/stalk) cells. These take into account the modulation of Notch signalling that arise from heterogeneity in Notch receptor levels, tension, Notch-regulators, and interaction with other pathways (Bentley and Chakravartula, 2017; Hadjivasiliou et al., 2019; Koon et al., 2018; Kur et al., 2016; Venkatraman et al., 2016). Our data show that TNC deviate from the classical mosaic pattern, forming chains with one leader every two or three followers. Further studies will be required to define whether the aforementioned mechanisms are responsible for this architecture.\n\nIn the case of the TNC, however, the most striking divergence from the classic lateral inhibition model (or indeed angiogenesis) is the fact that the leader cell identity is associated with higher intrinsic Notch activity. In other words, there are more signal-sending cells than signal-receiving cells. This apparent inversion in the ratio of the cell types produced is surprising. Explanation of this conundrum may arise from the fact that Notch lateral inhibition, dynamics and outcomes, can be modulated by \u2018cis-inhibition\u2019, a process whereby Notch ligands cell-autonomously interfere with the activation of Notch receptors (Bray, 2016; del \u00c1lamo et al., 2011). Computational models show that an increase in the strength of cis-inhibition can result in the inversion of the salt-and-pepper pattern (signal-sending to signal-receiving cells ratio), with the production of one cell with high Notch activity for every three cells with low Notch levels (Formosa-Jordan and Iba\u00f1es, 2014), a scenario that is congruent with the leader/follower ratio we observe in TNC. The detailed dynamics of lateral inhibition and whether cis-inhibition is at work in TNC remain to be investigated and will require direct visualisation at the single-cell level of Notch activity in live embryos.\n\nOur data show that active progression through the cell cycle is required for TNC migration. This is consistent with studies in chicken embryos, showing that progression through G1/S is required for TNC delamination, and that NC continue cycling as they migrate (Burstyn-Cohen and Kalcheim, 2002; Th\u00e9veneau et al., 2007). Our data extend these findings by showing that leader and follower cells progress through the cell cycle at different rates. Leader cells, which are larger and more motile, initiate migration in S-phase and spend twice as long in this phase as followers. It is possible that these differences arise from the fact that leaders are larger than followers. It has been shown that the timing of G1/S transition depends on cell size and the dilution of the nuclear retinoblastoma protein (Zatulovskiy and Skotheim, 2020). Due to the larger volume of their cytoplasm, leader cells could be primed for a rapid G1/S phase transition. The initiation of S-phase may in turn enhance leaders\u2019 migratory characteristics through the interaction of cyclins and cyclin/CDK inhibitors (CDKI) with small GTPases. Cyclins B and D have been shown to phosphorylate cytoskeleton regulators, resulting in increased cell migration and tumour invasion (Blethrow et al., 2008; Chen et al., 2020; Chi et al., 2008; Hirota et al., 2000; Li et al., 2006; Manes et al., 2003; Song et al., 2008; Zhong et al., 2010). Furthermore, Rac1 activity, which is required for migration, oscillates during the cell cycle being highest at S-phase when cells are most invasive (Kagawa et al., 2013; Walmod et al., 2004). CDKIs, on the other hand, interact with RhoA- and ROCK-enhancing motility (Bendris et al., 2015; Creff and Besson, 2020; Yoon et al., 2012). Interestingly, enhanced motility increases actin branching, which in turn can accelerate the G1/S transition (Molinie et al., 2019). These factors could therefore generate a positive feedback loop in which slightly larger leader cells are prone to undergo the G1/S transition, in turn the activation of S-phase cyclins and CDKIs may enhance motility, reinforcing S-phase initiation.\n\nOur data also show that TNC cell cycle progression is under the control of Notch signalling. Upon Notch inhibition, all TNC present cell cycle phase lengths typical of follower cells. Notch has been shown to regulate cell cycle in a context-dependent manner. Depending on the cell type, Notch can regulate cell cycle through the transcriptional induction of cyclins A and D, and the inhibition of CDKIs (Campa et al., 2008; Dabral et al., 2016; Ridgway et al., 2006; Rizzo et al., 2008; Rowan et al., 2008). Conversely, cell cycle progression can impact on Notch signalling. Notch activity is enhanced at the G1/S transition, while cells become refractory to Notch during G2/M (Ambros, 1999; Carrieri et al., 2019; Hunter et al., 2016; Nusser-Stein et al., 2012). Hence, the combination of large volumes and higher Notch activity levels could act synergistically to promote leaders\u2019 G1/S transition.\n\nIn this study, we have uncovered new functional interactions between Notch signalling, cell cycle dynamics, and the migratory behaviour of leader and follower cells in the TNC. These complex and intricate interactions, which remain to be fully characterised at a molecular level, could apply to other cell types exhibiting collective migration. For example, studies in cancer cell lines have shown that activation or inhibition of Notch signalling hinders migration, similar to what we observe in TNC (Konen et al., 2017), while the maintenance of collective migration depends on the regulation of cell proliferation during angiogenesis (Costa et al., 2016). In view of our work, it is important to revisit the assumption that migratory phenotypes are in conflict with cell cycle progression (Kohrman and Matus, 2017) and consider the possible implication for cancer therapies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Sox10:mG; Tg(\u20134.9sox10: Hsa.HIST1H2BJ-mCherry-2A-GLYPI-EGFP)</td>\n      <td>Richardson et al., 2016</td>\n      <td>ZDB-TGCONSTRCT-171205-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Sox10:Fucci; Tg(\u20134.9sox10:mAGFP-gmnn-2A-mCherry-cdt1)</td>\n      <td>Rajan and Gallik, 2018</td>\n      <td>ZDB-TGCONSTRCT-190118-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>hs:dnSu(H); vu21Tg (hsp70l:XdnSu(H)-myc)</td>\n      <td>Latimer et al., 2005</td>\n      <td>ZDB-ALT-050519-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>hs:Gal4; kca4Tg Tg(hsp70l:Gal4)1.5kca4 (1)</td>\n      <td>Scheer and Campos-Ortega, 1999</td>\n      <td>ZDB-ALT-020918-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>UAS:NICD; Tg(UAS:myc-Notch1a-intra)kca3Tg</td>\n      <td>Scheer and Campos-Ortega, 1999</td>\n      <td>ZDB-ALT-020918-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Tg(UAS:dnSu(H))</td>\n      <td>This paper</td>\n      <td>Transgenic line details are in materials and methods</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Sox10:Kalt4; Tg(\u20134.9sox10: Hsa.HIST1H2BJ-mCherry-2A-Kalt4ER)</td>\n      <td>Alhashem et al., 2021</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Tg(h2afva:GFP)kca13</td>\n      <td>Pauls et al., 2001</td>\n      <td>ZDB-ALT-071217-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Gt(FoxD3:mCherry)ct110aR</td>\n      <td>Hochgreb-H\u00e4gele and Bronner, 2013; Lukoseviciute et al., 2018</td>\n      <td>ZDB-FISH-150901-9571</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-myosin heavy chain(mouse monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>F59</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-synaptotagmin 2 (mouse monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>Znp1</td>\n      <td>IF (1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-acetylated tubulin (mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Clone 6-11B-1;Cat# MABT868</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-digoxigenin-AP (sheep polyclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 11093274910</td>\n      <td>IF (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (chicken polyclonal)</td>\n      <td>Merck Millipore</td>\n      <td>Cat# 06-896</td>\n      <td>IF (1:750)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RFP (rabbit polyclonal)</td>\n      <td>MBL</td>\n      <td>Cat# PM005</td>\n      <td>IF (1:750)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Myc-Tag (mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Clone 9B11; Cat# 2276S</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (chicken polyclonal)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# A10262</td>\n      <td>IF (1:750)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PCNA-GFP</td>\n      <td>Addgene</td>\n      <td>Cat# 105942</td>\n      <td>Leung et al., 2011</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>UAS:NICD FUAS:NICD R</td>\n      <td>This paper</td>\n      <td>Genotyping primer</td>\n      <td>CATCGCGTCTCAGCCTCACCGGAATCGTTTATTGGTGTCG500 bp band</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>UAS:dnSu(H) FUAS:dnSu(H) R</td>\n      <td>This paper</td>\n      <td>Genotyping primer</td>\n      <td>GCGGTGTGTGTACTTCAGTCTCTCCCCAAACTTCCCTGTC409 bp band</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>hs:dnSu(H) F hs:dnSu(H) R</td>\n      <td>This paper</td>\n      <td>Genotyping primer</td>\n      <td>CGGGCATTTACTTTATGTTGCTGCATTTCTTGCTCACTGTTTC1 kb band</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAscope Multiplex Fluorescent kit</td>\n      <td>Bio-Techne</td>\n      <td>Cat# 320850</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>mMESSAGE mMACHINE SP6 Transcription Kit</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# AM1340</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>In-Fusion HD Cloning Plus</td>\n      <td>Takara</td>\n      <td>Cat# 638910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ProLong Gold Antifade Mountant</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# P10144</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hydroxyurea</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# H8627</td>\n      <td>20 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Aphidicolin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A0781</td>\n      <td>300 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Genistein</td>\n      <td>Calbiochem</td>\n      <td>Cat# 345834</td>\n      <td>100 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Teniposide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# SML0609</td>\n      <td>No effect on cell cycle in zebrafish</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPT</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# D5942-25MG</td>\n      <td>100 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Compound E</td>\n      <td>Abcam</td>\n      <td>Cat# ab142164</td>\n      <td>50 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Tamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# H7904</td>\n      <td>2.5 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 9</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>ImageJ</td>\n      <td>Schindelin et al., 2012</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Resource availability\n\nFurther information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Claudia Linker (claudia.linker@kcl.ac.uk).\n\n### Materials availability\n\nNewly generated materials from this study are available by request from the lead contact, Claudia Linker (claudia.linker@kcl.ac.uk), except for computational tools to be requested from Katie Bentley (katie.bentley@crick.ac.uk).\n\n### Data and code availability\n\nThe model code is accessible at https://github.com/Bentley-Cellular-Adaptive-Behaviour-Lab/NeuralCrestCpp, (copy archived at swh:1:rev:cdf63f3786390fb7905092717456cc69f5657ddc; Alhashem, 2022b). The code used to perform the LDA is accessible in the supplementary files. All numerical data used in the figures are accessible in the supplementary data source file.\n\n### Zebrafish lines and injections\n\nZebrafish were maintained in accordance with UK Home Office regulations UK Animals (Scientific Procedures) Act 1986, amended in 2013 under project licence P70880F4C. Embryos were obtained from the following strains: wild type, AB strain; Sox10:mG, Tg(\u20134.9sox10: Hsa.HIST1H2BJ-mCherry-2A-GLYPI-EGFP); Sox10:Fucci, Tg(\u20134.9sox10:mAGFP-gmnn-2A-mCherry-cdt1); hs:dnSu(H), vu21Tg (hsp70l:XdnSu(H)-myc); hs:Gal4, kca4Tg Tg(hsp70l:Gal4)1.5kca4 (1); UAS:NICD, Tg(UAS:myc-Notch1a-intra)kca3; Sox10:Kalt4, Tg(\u20134.9sox10: Hsa.HIST1H2BJ-mCherry-2A-Kalt4ER); UAS:dnSu(H), Tg(UAS:dnSu(H)-myc); Tg(h2afva:GFP)kca13; 12XNRE:egfp. Embryos were selected based on anatomical/developmental good health and the expression of fluorescent reporters when appropriate, split randomly between experimental groups and maintained at 28.5\u00b0C in E3 medium. Genotyping was performed by PCR of single embryos after imaging when required (UAS:NICD; UAS:dnSu(H); hs:dnSu(H)). Injections were carried at 1\u20134-cell stage with 30 pg of PCNA-GFP mRNA in a volume of 1 nl. mRNA was synthesised from pCS2 + PCNA GFP plasmid, kindly provided by C. Norden (IGC, Portugal), linearised with NotI and transcribed with the SP6 mMessage Machine Kit (Thermo Fisher Scientific, Cat# AM1340).\n\n### Live imaging and tracking\n\nImaging and analysis were carried out as in Alhashem et al., 2021. In short, embryos were mounted in 1% agarose/E3 medium plus 40 \u00b5M Tricaine. Segments 6\u201312 were imaged in lateral views every 5\u2032 from 16 hpf for 16\u201318 hr in an upright PerkinElmer Ultraview Vox system using a \u00d740 water immersion objective. 70 \u03bcm z-stacks with 2 \u03bcm z-steps were obtained. Image stacks were corrected using Correct 3D Drift Fiji and single-cell tracking performed with View5D Fiji plugin. Tracks were displayed using the MTrackJ and Manual Tracking Fiji plugins. Cell area measurements were done in Fiji using the freehand selection tool to draw around cell membranes in 3D stacks using the orientation that best recapitulated the cell morphology (as in Richardson et al., 2016). Cell speed measurements were calculated from 3D tracks using the following formula: ((SQRT((X1-X2)^2+(Y1-Y2)^2+(Z1-Z2)^2))/T)*60, where X, Y, and Z are the physical coordinates and T is the time step between time-lapse frames. Ventral distances were measured in a straight line from dorsal edge of the embryo to the cell position at the end of the movie. Cell directionality measurements were calculated using a previously published Excel macro (Gorelik and Gautreau, 2014). Total duration of the cell cycle was measured between two mitotic events. Cell cycle phase duration were measured using the characteristic nuclear pattern of PCNA-GFP, in movies where only TNC (expressing RFP and GFP) are shown using this custom Fiji macro:\n\nmacro \"Segment Nuclei [s]\" {\ntitle = getTitle();\nrun(\"Split Channels\");\nselectWindow(\"C1-\" + title); //select window with C1 in its name, nuclei should be C1\ngetDimensions(width, height, channelCount, slices, frames);\nrun(\"Subtract Background...\", \"rolling = 200 sliding stack\");\nsetAutoThreshold(\"Default dark\");\nrun(\"Threshold...\");\nsetThreshold(5, 255); //change as appropriate for your cells\nsetOption(\"BlackBackground\", false);\nrun(\"Convert to Mask\", \"method = Default background = Dark\");\nrun(\"Close\");\nrun(\"Fill Holes\", \"stack\");\nrun(\"Despeckle\", \"stack\");\nrun(\"Dilate\", \"stack\");\nrun(\"Dilate\", \"stack\");\n//now go over every frame and slice\nfor(frame = 1; frame \u2264 frames; frame++){\nfor(slice = 1; slice \u2264 slices; slice++){\n selectWindow(\"C1-\" + title);\n setSlice(slice);\n Stack.setFrame(frame);\n run(\"Create Selection\");\nselectWindow(\"C2-\" + title);\n setSlice(slice);\n Stack.setFrame(frame);\n run(\"Restore Selection\");\n \u00a0\u00a0setBackgroundColor(0, 0, 0);\n \u00a0\u00a0run(\"Clear Outside\", \"slice\");\n\n### In situ hybridisation, immunostaining, and sectioning\n\nThe whole-mount in situ hybridisation protocol was adapted from https://wiki.zfin.org/display/prot/Whole-Mount+In+Situ+Hybridization. In short, embryos were fixed overnight (O/N) in 4% paraformaldehyde (PFA), dehydrated in 100% methanol, then rehydrated, digested with proteinase K for different times depending on the stage and pre-hybridised for 2 hr at 65\u00b0C. Riboprobes were added, and embryos incubated at 65\u00b0C O/N. Probes were removed and embryos washed and equilibrated to PBS. Embryos were incubated in blocking solution for 2 hr and in anti-dig antibody O/N (Sigma-Aldrich, Cat# 11093274910), washed 5 \u00d7 30\u2032 and NBT/BCIP colour reaction performed. Riboprobes for notch1a, dlb (deltaB), dld (deltaD), her4, cb1045 were kindly provided by J. Lewis (CRUK); crestin, mbp, bdh, myoD by S. Wilson (UCL, UK). After the in situ colour development, embryos were processed for sections, washed 5 \u00d7 10\u2032 with PBS, embedded in OCT, frozen by dipping the blocks in dry ice-cold 70% ETOH, and sectioned to 12\u201315 \u03bcm using a cryostat. Sections were thawed at room temperature (RT), incubated with blocking solution for 30\u2032 (10% goat serum, 2% BSA, 0.5% Triton, 10 mM sodium azide in PBS) and in anti-GFP antibody ON at 4\u00b0C (Merck Millipore, Cat# 06-896). Sections were washed with PBST 5 \u00d7 5\u2032 (0.5% Triton-PBS) and incubated with secondary antibody for 2 hr at RT, mounted in ProLong Gold Antifade Mountant (Molecular Probes, Cat# P10144) and imaged. Whole-mount antibody staining was performed in embryos fixed for 2 hr in 4% PFA, washed 4 \u00d7 10\u2032, incubated in blocking solution for 2 hr and in primary antibodies O/N at 4\u00b0C (anti-myc, Cell Signaling, Cat# 2276S; F59 and Znp1, Developmental Studies Hybridoma Bank; acetylated tubulin, Sigma-Aldrich, Cat# MABT868). Embryos were washed 5 \u00d7 30\u2032, incubated in secondary antibodies O/N at 4\u00b0C, washed 6 \u00d7 30\u2032, and mounted in 1% agarose for imaging. Imaging of sectioned and whole-mount antibody-stained samples was performed in PerkinElmer Ultraview Vox system.\n\nRNAScope (RNAscope Fluorescent Multiplex Reagent Kit, Cat# 320850) experiments were performed as in Alhashem et al., 2022a. In short, embryos were fixed with 4% PFA O/N at 4\u00b0C and dehydrated in 100% methanol and stored at \u201320\u00b0C until processing. All methanol was removed, and embryos were air dried at RT for 30\u2032, permeabilised with Proteinase Plus for 10\u2032 at RT (provided in kit), washed with PBS-Tween 0.01%, and incubated with probes for egfp and sox10 or phox2bb at 1:100 dilution at 60\u00b0C O/N. Probes were recovered, embryos washed three times with SSCT 0.2\u00d7 for 15\u2032. We followed manufacturer\u2019s instructions for amplification steps AMP 1\u20133 and HRP C1\u2013C4. Opal dyes 520, 570, and 650 (Akoya Biosciences, Cat# FP1487001KT, Cat# FP1488001KT, and Cat# FP1496001KT) were added at 1:3000 dilution followed by HRP blocker. Washes in between steps were performed with SSCT 0.2\u00d7 for 10\u2032 twice. Primary a-GFP-chicken (1:750) and a-RFP-rabbit (1:750; TFS, Cat# A10262, and MBL, Cat# PM005) antibodies diluted in blocking solution (PBS-Tween 0.1%, goat serum 5%, DMSO 1%) were added and incubated O/N at 4\u00b0C. Samples were washed three times in PBS-Tween 0.1% for 1 hr and then incubated in secondary antibodies, a-chicken-Alexa Fluor488 and a-rabbit-Alexa Fluor546 (TFS, Cat# A11039 and Cat# A11010) both in a 1:1000 dilution in blocking solution, for 3 hr at RT. Samples were washed six times with PBS-Tween 0.1% for 30\u2032. For counterstaining, DAPI was added (1:1000) in the third wash (Roche, Cat# 10236276001, 2 mg/ml). Embryos were cleared in 50% glycerol/PBS an mounted in glass-bottom Petri dishes and imaged using Zeiss Laser Scanner Confocal Microscope 880 (405, 488, 514, 561, and 633 lasers).\n\n### Drug treatments and gene expression induction\n\nEmbryos were treated by adding cell cycle inhibitors to the media from 11 hpf and incubated for 3\u201312 hr at 28.5\u00b0C. 20 \u03bcM hydroxyurea (Sigma-Aldrich, Cat# H8627), 300 \u03bcM aphidicolin (Sigma-Aldrich, Cat# A0781), 100 \u03bcM genistein (Calbiochem, Cat# 345834), teniposide (Sigma-Aldrich, Cat# SML0609), or 1% DMSO as control (Sigma-Aldrich, Cat# D8418). Notch signalling was inhibited at 11 hpf by adding 100 \u03bcM DAPT (Sigma-Aldrich, Cat# D5942-25MG) or 50 \u03bcM of Compound E (Abcam, Cat# ab142164). The latter reagent was used to perform live imaging, which is difficult to do with DAPT as it generates an interfering precipitate. 1% DMSO was added as control. Gene expression was induced by addition of 2.5 \u03bcM of tamoxifen (Sigma-Aldrich, Cat#H7904) to the media at 11 hpf of Sox10:Kalt4 embryos, or by heat shock at 11 hpf in hs:Gal4 and hs:dnSu(H) embryos by changing the media to 39\u00b0C E3, followed by 1 hr incubation at this temperature, thereafter embryos were grown at 28.5\u00b0C to the desired stage.\n\n### Generation of UAS:dnSu(H) transgenic line\n\nUsing the Infusion cloning system (Takara), the following construct was inserted into the Ac/Ds vector (Chong-Morrison et al., 2018): 5xUAS sequence (Tol2Kit, http://tol2kit.genetics.utah.edu/index.php/Main_Page) flanked at the 3\u2032 and 5\u2032 ends by rabbit \u03b2-globin intron sequence. At the 3\u2032 end, GFP followed by SV40polyA sequence was cloned to generate the Ac/Ds dUAS:GFP vector. The cmlc2:egfp transgenesis marker (Tol2Kit) was cloned after GFP in the contralateral strand to prevent interaction between the UAS and the cmnl sequences. The Xenopus dnSu(H)-myc sequence (Latimer et al., 2005) was cloned into the Ac/Ds dUAS:GFP vector at the 5\u2032 end of the 5xUAS sequence, followed by the SV40polyA sequence (Figure 4\u2014figure supplement 2). Transgenesis was obtained by injecting Sox10:Kalt4 embryos with 1 nl containing 50 pg of DNA plus 30 pg of Ac transposase mRNA at 1-cell stage. Embryos carrying the transgene were selected by heart GFP expression at 24 hpf. Upon Gal4ER activation by tamoxifen, dnSu(H)-myc protein was readily detected with anti-Myc antibody (Figure 4\u2014figure supplement 2). GFP fluorescence driven by UAS was never observed.\n\n### Statistical analysis\n\nAll graphs and statistical analysis were carried out in GraphPad Prism 9. All numbers in the texts are mean \u00b1 standard deviation. Every sample was tested for normality using the d\u2019Agostino\u2013Pearson, followed by Shapiro\u2013Wilk tests. Samples that passed both tests were compared using either unpaired two-tailed t-test or one-way ANOVA. Those without a normal distribution were compared through a Mann\u2013Whitney U-test, Kruskal\u2013Wallis test, or Brown\u2013Forsythe and Welch\u2019s ANOVA tests. For all analyses, p-values < 0.05 were deemed statistically significant, with ****p<0.0001, ***p<0.001, **p<0.01, and *p<0.05. Full statistical analysis of data in Figure 5 is presented in Supplementary file 1.\n\n### Computational model\n\nThe computational model used in this study is described in Appendix 1.\n\nStandard LDA was carried out using the sklearn package in Python (see supplementary code files).\n",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "59fe02e9-225c-42d4-8e91-814f020b9f5c",
+      "submission_id": "5b9e3b68-6191-4f01-9a99-bc4829c9fa97",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tatjana Piotrowski, https://ror.org/04bgfm609 Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73550.sa0](https://doi.org/10.7554/eLife.73550.sa0)\n\nUsing a combination of in vivo and in silico approaches, the authors have demonstrated how cell-fate decisions are orchestrated at the level of leader vs. follower cells in collective cell migration of trunk neural crest cells. They highlight the role of Notch signaling and cell cycle progression, showing how these traits differ between the leader and follower cells. The findings are of wide interest, as collective cell migration is a fundamental process critical for embryonic development as well as invasion of various cancers.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tatjana Piotrowski, https://ror.org/04bgfm609 Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73550.sa1](https://doi.org/10.7554/eLife.73550.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1f5ec829-195a-4aab-a361-2cfb4bd1ada1",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C1",
+      "claim": "Notch signalling components remain expressed in neural crest after induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals that Notch components remain expressed in NC after induction, suggesting that Notch signalling may also be involved in later aspects of NC development (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data showing expression of Notch components (notch1a, dlb, dld, her4) in migrating neural crest cells, as shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "39d31b3b-5a47-45cf-b874-869710a2791e",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C2",
+      "claim": "Notch signalling levels vary widely between premigratory trunk neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, analysis of the Notch activity reporter line 12xNRE:egpf (Moro et al., 2013) shows that Notch signalling levels vary widely between premigratory TNC (Figure 1), suggesting that Notch may play a role after TNC induction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data from the Notch reporter line 12xNRE:egfp showing variable GFP expression levels in premigratory TNC cells, as shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "90faa9a6-1d54-4d0c-a584-d423c5ada6d6",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C3",
+      "claim": "Notch inhibition impairs trunk neural crest induction up to 11 hours post-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that Notch inhibition impairs TNC induction up to 11 hours post-fertilization (hpf; Figure 2) and confirmed previous reports that induction of the cranial and vagal NC populations is independent of Notch signalling (Cornell and Eisen, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data showing reduced or absent crestin expression in DAPT-treated embryos at different developmental stages, as shown in Figure 2D, and cites previous work by Cornell and Eisen, 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "2886bb3d-bca8-41ce-a22d-c90b7710ef45",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C4",
+      "claim": "Induction of cranial and vagal neural crest populations is independent of Notch signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that Notch inhibition impairs TNC induction up to 11 hours post-fertilization (hpf; Figure 2) and confirmed previous reports that induction of the cranial and vagal NC populations is independent of Notch signalling (Cornell and Eisen, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of previous work by Cornell and Eisen, 2000, and confirmed by the authors' experimental results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "c9c21d62-0d9c-4e1b-98cb-5c6930bca319",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C5",
+      "claim": "Notch inhibition at 12 hpf reduces all trunk neural crest derivatives including neurons, glia, and pigment cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a reduction in all TNC derivatives (neurons, glia, and pigment cells; Figure 3A\u2013F) upon Notch inhibition, suggesting that Notch activity is important in a process subsequent to induction, yet prior to differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data for glial marker mbp, neuronal marker bdh, and pigmentation analysis showing reduced expression/presence upon DAPT treatment, as shown in Figure 3A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "6b6d11fb-b026-44bf-be6f-6447743e76b5",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C6",
+      "claim": "Notch inhibition reduces the number of trunk neural crest cell chains formed and their ventral advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of crestin expression showed a reduction in the number of TNC cell chains formed and in their ventral advance upon DAPT treatment (Figure 3G\u2013J), which likely explains the lack of TNC derivatives at later stages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data showing reduced crestin expression and chain formation upon DAPT treatment, as shown in Figure 3G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "f0746a53-e9c9-41af-ad3d-bde4df579323",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C7",
+      "claim": "Notch signalling blockade delays trunk neural crest migration rather than completely halting it.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, embryos were treated with DAPT from 12 hpf for 6\u201312 hr and processed for crestin expression. Decreased numbers of migratory chains were observed at all timepoints, but as embryos developed new chains were formed, indicating that the blockade of Notch signalling delays TNC migration (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-course analysis showing that new chains form over time despite DAPT treatment, as shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "707240f8-aa4b-4197-b9f3-9643b66eb4cf",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C8",
+      "claim": "Genetic inhibition of Notch using dominant-negative Suppressor of Hairless produces similar migration defects as chemical inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparable results were obtained by inhibiting Notch genetically in embryos where the dominant-negative form of Suppressor of Hairless is under the control of a heat shock element (Latimer et al., 2005; hs:dnSu(H); Figure 3L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of migratory chain formation in hs:dnSu(H) embryos showing similar reduction as DAPT treatment, as shown in Figure 3L, and cites the genetic tool from Latimer et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "c4c85334-39de-4d88-80cf-18ba5b896cd3",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C9",
+      "claim": "Notch gain of function and loss of function result in almost identical phenotypes with similar reduction of trunk neural crest chain numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, Notch gain of function (GOF) and loss of function (LOF) resulted in almost identical phenotypes, both showing a similar reduction of TNC chain numbers (Figure 3L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification data showing similar reduction in chain numbers for both Notch GOF (hs:Gal4;UAS:NICD) and LOF (hs:dnSu(H)) conditions, as shown in Figure 3L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "0fd59861-e40e-4966-b9b2-d62e627b2155",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C10",
+      "claim": "Precise regulation of Notch signalling levels is required for trunk neural crest migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that precise regulation of Notch signalling levels is required for TNC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that both Notch GOF and LOF produce similar migration defects, suggesting that intermediate levels are required.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "c94829ab-81d1-49cb-a069-41d95aefce4a",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C11",
+      "claim": "Under Notch inhibition, trunk neural crest leader cells are unable to retain the front position and are overtaken by followers.",
+      "claim_type": "EXPLICIT",
+      "source": "Under Notch inhibition (treatment with \u03b3-secretase inhibitor Compound E; Richter et al., 2017), TNC remain motile with a single cell initiating the movement of the chain, but in contrast to control treatment (DMSO) the leader cell is unable to retain the front position and is overtaken by one or several followers (Figure 4A and C, Figure 5A and B, Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data showing leader overtaking events in Compound E-treated embryos, as shown in Figure 4C and quantified in Figure 5B, and cites Richter et al., 2017 for the inhibitor.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "a6a912e7-1e0f-44c1-92bd-eb1365dab62d",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C12",
+      "claim": "Notch inhibition leads to reduced ventral advance of trunk neural crest with most leader cells unable to move beyond the neural tube/notochord boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "This loss of group coherence corresponds with a reduction in ventral advance, with most leader cells unable to move beyond the neural tube/notochord boundary (NT/not; Figure 4C, Figure 5A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data and quantification showing reduced ventral distance traveled by cells under Notch inhibition, as shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "ed0cf39e-b142-459c-99a6-fc2a462a7851",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C13",
+      "claim": "Under Notch inhibition, trunk neural crest leader cells have decreased speed and directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of single-cell tracking showed that under Notch inhibition leader cells also have decreased speed and directionality (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell tracking data showing reduced speed and directionality in Notch-inhibited conditions, as shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "2bff82a4-c264-468e-86f9-40605febd263",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C14",
+      "claim": "Somite development and neuron formation are not affected by Notch inhibition at the axial level where trunk neural crest migration was analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this appears unlikely as somite development (formation, patterning, and differentiation) and neuron formation are not affected by Notch inhibition at the axial level analysed (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization and antibody staining data showing normal expression of somite markers (cb1045, myod, F59) and neuronal markers (dld, Znp1, acetylated tubulin) upon DAPT treatment, as shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "54977b71-50c7-4878-8b0a-ed90acd48c32",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C15",
+      "claim": "Autonomous inhibition of Notch signalling in neural crest phenocopies chemical inhibition with leader cells unable to retain front position and reduced ventral advance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that autonomous inhibition of Notch signalling in NC phenocopies the chemical inhibition. Leader cells are unable to retain the front position, being overtaken by followers, and ventral advance is reduced with cells accumulating at the NT/not boundary (Figure 4D, Figure 5A\u2013C, Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data from Sox10:Kalt4;UAS:dnSu(H) embryos treated with tamoxifen showing similar phenotypes to chemical inhibition, as shown in Figure 4D and Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "bce3c7aa-e68a-4d5b-ab52-ed5fe97be3a1",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C16",
+      "claim": "Notch activity is autonomously required in trunk neural crest for identity allocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, leader cells adopt followers' migratory parameters, showing decreased speed and directionality (Figure 5D and E), confirming that Notch activity is autonomously required in TNC for identity allocation, and suggest that in the absence of Notch signalling a homogenous group of followers is established.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell-autonomous Notch inhibition experiments showing that leader cells adopt follower characteristics, as shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "85ea77d2-37e6-47d9-97a0-c7065ee6bcee",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C17",
+      "claim": "In the absence of Notch signalling, a homogenous group of followers is established.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, leader cells adopt followers' migratory parameters, showing decreased speed and directionality (Figure 5D and E), confirming that Notch activity is autonomously required in TNC for identity allocation, and suggest that in the absence of Notch signalling a homogenous group of followers is established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that all cells adopt follower characteristics under Notch inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "62b9dd72-88d9-4cb3-b3a5-cd2807d13aa6",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C18",
+      "claim": "Notch overactivation leads to loss of group coherence, leader overtaking by followers, and impaired ventral advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained in both experimental conditions: group coherence is lost, leader cells are overtaken by followers, and ventral advance is impaired (Figure 4F, Figure 5A\u2013C, Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data from Notch GOF conditions (Sox10:Kalt4;UAS:NICD) showing these phenotypes, as shown in Figure 4F and Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "b3f8eeb0-b632-4b7f-b201-de1d31f28288",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C19",
+      "claim": "In Notch gain of function conditions, follower cells adopt leader characteristics, moving with increased speed but following less directional trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in Notch GOF conditions follower cells adopt leaders' characteristics, moving with increased speed, but all cells in the chain follow less directional trajectories, which hinders the ventral advance of the group (Figure 5D and E), indicating that all cells in the chain migrate as leaders.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell tracking data showing increased speed but reduced directionality in Notch GOF conditions, as shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "5fa97a31-a4cc-4e5c-ad4a-6c8de50cb4a9",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C20",
+      "claim": "In control conditions, phox2bb transcripts are highly enriched in leader cells from early stages of migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In control conditions, phox2bb transcripts are highly enriched in the leader cells from early stages of migration (Figure 6A, B, and G; Alhashem et al., 2022a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAscope data showing phox2bb expression predominantly in leader cells, as shown in Figure 6A, B, and G, and cites Alhashem et al., 2022a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "0a091d94-d510-4211-acd3-ad1aa53a9a42",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C21",
+      "claim": "Upon Notch overactivation, phox2bb is expressed by all cells in the chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with expectations, upon Notch overactivation phox2bb is expressed by all the cells in the chain (Figure 6C, D, and G), while its expression is absent when Notch is inhibited (Figure 6E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAscope data showing phox2bb expression in all cells under Notch GOF conditions, as shown in Figure 6C, D, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "964fc4bb-8b3f-4b1e-b0c8-a53bda5b34de",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C22",
+      "claim": "phox2bb expression is absent when Notch is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with expectations, upon Notch overactivation phox2bb is expressed by all the cells in the chain (Figure 6C, D, and G), while its expression is absent when Notch is inhibited (Figure 6E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAscope data showing absence of phox2bb expression under Notch inhibition, as shown in Figure 6E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "6737f06e-6dc2-4452-8fd8-9ae2a84054b0",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C23",
+      "claim": "Notch activity controls phox2bb expression and allocates trunk neural crest migratory identity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Notch activity controls phox2bb expression and allocates TNC migratory identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined data showing that phox2bb expression correlates with Notch activity levels and migratory identity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "9305ce72-111c-47be-9c1d-7dd8ca628b88",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C24",
+      "claim": "Trunk neural crest with high levels of Notch signalling express phox2bb and become leaders, while cells with low Notch activity migrate as followers.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our in vivo and molecular data show that Notch signalling is required autonomously in TNC for migratory identity allocation. TNC with high levels of Notch express phox2bb and become leaders, while cells with low Notch activity migrate as followers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined data from Notch manipulation experiments and phox2bb expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "f6716583-083d-421c-943f-d30775d4b640",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C25",
+      "claim": "Alterations of Notch signalling lead to a homogeneous trunk neural crest group with a single migratory identity that is unable to undergo collective migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations of Notch signalling lead to a homogeneous TNC group with a single migratory identity that is unable to undergo collective migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that both Notch GOF and LOF produce homogeneous populations (all leaders or all followers) that cannot migrate collectively.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "4ab5ce08-3d1e-4410-a89f-040a56e70549",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C26",
+      "claim": "Notch lateral inhibition is the mechanism responsible for trunk neural crest migratory identity acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest Notch lateral inhibition as the mechanism responsible for TNC migratory identity acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the pattern of Notch activity and the outcomes of Notch manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "178f57c0-5fad-4d5e-81aa-f09eb6365e10",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C27",
+      "claim": "Simulations with homogeneous cells cannot match all in vivo trunk neural crest migration scores, confirming that cell heterogeneity is required.",
+      "claim_type": "EXPLICIT",
+      "source": "We first simulated chains composed of homogeneous cells and systematically covaried all parameters. We found no parameter combination able to match all scores, confirming our previous findings that cell heterogeneity is required for TNC migration (Figure 7C; Richardson et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results showing that homogeneous cell simulations cannot recapitulate in vivo behavior, as shown in Figure 7C, and cites Richardson et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "6fb9d10a-6913-4091-9863-5ec4485872d3",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C28",
+      "claim": "The computational model is only able to recapitulate control conditions when the difference between leaders and followers is maximal for all variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the model is only able to recapitulate control conditions when the difference between leaders and follower is maximal for all variables. Nevertheless, it is unable to recapitulate Notch GOF and LOF phenotypes (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results showing that maximal parameter differences are required to match control conditions, as shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "715f965f-0d0e-4f39-926d-39c14cc15db5",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C29",
+      "claim": "Several parameter combinations from 1:2 and 1:3 leader/follower ratios can recapitulate in vivo control conditions as well as Notch gain and loss of function phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that several parameter combinations from the 1:2 and 1:3 leader/follower ratios were able to recapitulate in vivo control condition, as well as the loss of group coherence and ventral advance observed in Notch GOF (all leader simulation) and LOF (all follower simulation; Figure 4B, E, and G, Figure 5, Figure 4\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results showing that 1:2 and 1:3 ratios can match both control and Notch-altered conditions, as shown in Figure 4B, E, G and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "2709424f-dbee-49bb-9500-1001b4a92d51",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C30",
+      "claim": "In the computational model, CIL intensity is the parameter that most differs between leader and follower cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we used this method to assess the importance of each of the model parameters. CIL intensity appears to be the parameter that most differ between leader and follower cells, while heterogeneity in the other parameters is not essential (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by linear discriminant analysis of the computational model showing CIL intensity as the most important distinguishing parameter, as shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "48239e14-240b-4889-aa55-a471e6e2581b",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C31",
+      "claim": "The computational model predicts that trunk neural crest chains are formed of leaders and followers in a 1:2 or 1:3 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the model anticipates that TNC chains are formed of leaders and followers in a 1:2 or 1:3 ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational modeling results showing that these ratios best recapitulate in vivo behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "8411ccb4-7b98-4b2a-9a1e-d087eaef5934",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C32",
+      "claim": "Leader cells are almost twice as big as follower cells during migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size is a prominent characteristic distinguishing leader from follower cells. Leaders are almost twice as big as followers during migration and this difference is evident before migration initiation (Richardson et al., 2016), suggesting that size disparity arises at birth or shortly thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of Richardson et al., 2016 showing size differences between leaders and followers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "1e19290a-b5d0-4172-a84a-e2f0617d30de",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C33",
+      "claim": "The size difference between leader and follower cells is evident before migration initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size is a prominent characteristic distinguishing leader from follower cells. Leaders are almost twice as big as followers during migration and this difference is evident before migration initiation (Richardson et al., 2016), suggesting that size disparity arises at birth or shortly thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of Richardson et al., 2016 and suggests that size differences arise early.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "3db6dc29-16f6-4ba6-82c1-a50e266f0436",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C34",
+      "claim": "The asymmetric division of a single progenitor cell gives rise to a larger cell that becomes a leader and a smaller sibling that migrates as follower.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking analysis shows that the asymmetric division of a single progenitor cell in each body segment gives rise to a larger cell that becomes a leader (102 \u00b1 20 \u00b5m2), and a smaller sibling that migrates as follower (72 \u00b1 9 \u00b5m2; Figure 8A and B, Figure 8\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging and tracking data showing asymmetric division producing cells of different sizes that adopt different identities, as shown in Figure 8A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "efc1352b-740f-4377-ae2a-b28d1a9ea705",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C35",
+      "claim": "All other progenitors divide symmetrically, giving rise to two follower cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, all other progenitors divide symmetrically, giving rise to two follower cells (87 \u00b1 27 \u00b5m2; Figure 8C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging and tracking data showing symmetric divisions producing cells of similar size that both become followers, as shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "a36f976c-c753-4b7c-b4c2-596c310237dc",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C36",
+      "claim": "Leader progenitor divisions are spatially restricted to the anterior quarter of the premigratory area in each segment.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that the leader progenitors' divisions are spatially restricted to the anterior quarter of the premigratory area in each segment, while the followers' progenitor divisions take place across the premigratory area (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spatial analysis of division positions showing leader progenitors divide in a restricted anterior region, as shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "64716056-5814-4746-ae5e-35396057c402",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C37",
+      "claim": "Follower progenitor divisions take place across the premigratory area.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that the leader progenitors' divisions are spatially restricted to the anterior quarter of the premigratory area in each segment, while the followers' progenitor divisions take place across the premigratory area (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spatial analysis of division positions showing follower progenitors divide throughout the premigratory area, as shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "a3202576-c131-4128-808f-b23d09eb2438",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C38",
+      "claim": "Most leader cells divide during migration (86% follow M\u2192D pattern).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the patterns of cell division correlate with cell identity. Most leader cells divide during migration (M\u2192D: 86%), while the bulk of follower cells divide before migration initiation (D\u2192M: 90%, Figure 8H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of division patterns showing that 86% of leader cells follow the M\u2192D pattern, as shown in Figure 8H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "d0e71db6-654b-4cff-887a-e3fc7e36a684",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C39",
+      "claim": "The bulk of follower cells divide before migration initiation (90% follow D\u2192M pattern).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the patterns of cell division correlate with cell identity. Most leader cells divide during migration (M\u2192D: 86%), while the bulk of follower cells divide before migration initiation (D\u2192M: 90%, Figure 8H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of division patterns showing that 90% of follower cells follow the D\u2192M pattern, as shown in Figure 8H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "3ac52a42-b60c-43dd-9d5c-6268cdb657cd",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C40",
+      "claim": "74% of leader cells divide at the neural tube/notochord boundary (65.3 \u00b1 9.6 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns result in leader and follower cells dividing at distinct positions, 74% of leaders divide at the NT/not boundary (65.3 \u00b1 9.6 \u00b5m), while 85% of followers divide mostly within the premigratory area or in the dorsal-most region of the somite (42 \u00b1 12.4 \u00b5m; Figure 8I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of division positions showing that 74% of leaders divide at the NT/not boundary, as shown in Figure 8I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "22b20150-8b32-40c2-b8e1-f14e61542329",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C41",
+      "claim": "85% of follower cells divide mostly within the premigratory area or in the dorsal-most region of the somite (42 \u00b1 12.4 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns result in leader and follower cells dividing at distinct positions, 74% of leaders divide at the NT/not boundary (65.3 \u00b1 9.6 \u00b5m), while 85% of followers divide mostly within the premigratory area or in the dorsal-most region of the somite (42 \u00b1 12.4 \u00b5m; Figure 8I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of division positions showing that 85% of followers divide in the premigratory area or dorsal somite, as shown in Figure 8I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "b06ee17a-ca2b-4167-9226-51edb4869946",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C42",
+      "claim": "Leader and follower cells progress asynchronously through the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that leader cells arise from the asymmetric division of a progenitor. Thereafter, leader and follower cells show distinct locations and patterns of division, suggesting that leaders and followers progress asynchronously through the cell cycle, which may influence their migratory behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that leaders and followers have different division patterns and locations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "2ab2eaf6-439a-4caf-8602-18c8c546d4c5",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C43",
+      "claim": "The S-phase inhibitor aphidicolin blocks over 94.7% \u00b1 4.5% of mitotic figures after 3 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The S-phase inhibitor aphidicolin blocks over 94.7% \u00b1 4.5% of mitotic figures after 3 hr of treatment, while the G2/M inhibitor genistein prevents 90% \u00b1 10% of divisions within 6 hr, but neither treatment affects NC induction (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of mitotic figures showing that aphidicolin blocks over 94.7% of divisions, as shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "2b31eb44-8a10-465f-88de-cc80cdfbddbf",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C44",
+      "claim": "The G2/M inhibitor genistein prevents 90% \u00b1 10% of divisions within 6 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The S-phase inhibitor aphidicolin blocks over 94.7% \u00b1 4.5% of mitotic figures after 3 hr of treatment, while the G2/M inhibitor genistein prevents 90% \u00b1 10% of divisions within 6 hr, but neither treatment affects NC induction (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of mitotic figures showing that genistein prevents 90% of divisions, as shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "94c6e7b2-3263-402e-82a4-b9f100eee6d8",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C45",
+      "claim": "Neither aphidicolin nor genistein treatment affects neural crest induction.",
+      "claim_type": "EXPLICIT",
+      "source": "The S-phase inhibitor aphidicolin blocks over 94.7% \u00b1 4.5% of mitotic figures after 3 hr of treatment, while the G2/M inhibitor genistein prevents 90% \u00b1 10% of divisions within 6 hr, but neither treatment affects NC induction (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data showing normal crestin expression at 16 hpf after aphidicolin treatment, as shown in Figure 9\u2014figure supplement 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "6828f26d-f4ea-4b3e-b35c-fe7f0183c802",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C46",
+      "claim": "Inhibition of cell cycle progression results in reduced numbers of migratory chains and decreased ventral advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of cell cycle progression by either of the treatments resulted in reduced numbers of migratory chains and decreased ventral advance (control 19 \u00b1 2, genistein 10 \u00b1 3, aphidicolin 6 \u00b1 2 chains; Figure 9A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data and quantification showing reduced chain numbers and ventral advance upon cell cycle inhibition, as shown in Figure 9A-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "cd6e0103-c314-465a-a599-55737b291dcf",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C47",
+      "claim": "Premigratory trunk neural crest cells actively extend protrusions and move along the anteroposterior axis but are unable to migrate ventrally when cell cycle is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was not due to the loss of cell motility as premigratory TNC cells actively extend protrusions and move along the anteroposterior axis but are unable to migrate ventrally (Figure 9\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data showing that cells remain motile but cannot migrate ventrally under cell cycle inhibition, as shown in Figure 9\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "ee382ec3-04ac-4146-b2cd-3827bf003d3e",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C48",
+      "claim": "Trunk neural crest cells reinitiate migration and form new chains upon cell cycle inhibitor withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these effects were not a consequence of cell death or the permanent impairment of motility as TNC reinitiate migration and form new chains upon drug withdrawal (Figure 9G and H), showing that active cell cycle progression is required for migration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification showing recovery of chain formation after drug withdrawal, as shown in Figure 9G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "5c3e2a00-e267-4d35-8e6a-7c60cbb8123a",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C49",
+      "claim": "Active cell cycle progression is required for trunk neural crest migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these effects were not a consequence of cell death or the permanent impairment of motility as TNC reinitiate migration and form new chains upon drug withdrawal (Figure 9G and H), showing that active cell cycle progression is required for migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the observation that cell cycle inhibition blocks migration but cells can recover upon drug withdrawal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "39e34411-3c93-45a8-89f4-ecf833d3d0f1",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C50",
+      "claim": "Most leader cells initiate migration in S-phase (79%).",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking analysis shows differential cell cycle progression, with most leader cells initiating migration in S-phase (79%), while followers start movement during G1 (77%; Figure 9I and J, Figure 9\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of Sox10:FUCCI embryos showing that 79% of leaders initiate migration in S-phase, as shown in Figure 9I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "7f2b1be1-3273-4a8e-828b-c768e7156ca0",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C51",
+      "claim": "Follower cells start movement during G1 (77%).",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking analysis shows differential cell cycle progression, with most leader cells initiating migration in S-phase (79%), while followers start movement during G1 (77%; Figure 9I and J, Figure 9\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of Sox10:FUCCI embryos showing that 77% of followers initiate migration in G1, as shown in Figure 9I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "4d30721e-1977-4dce-8e4e-32fbad6a2fe2",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C52",
+      "claim": "Cell cycle progression is required for migration and leader and follower cells initiate movement at different points of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that cell cycle progression is required for migration and that leader and follower cells initiate movement at different points of the cell cycle, suggesting an intimate connection between cell growth and movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined data from cell cycle inhibition experiments and FUCCI analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "d6030f74-1887-4107-95f5-476e25d052ff",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C53",
+      "claim": "There is no significant difference in the total length of the cell cycle between leaders and followers (13.6 \u00b1 1.2 and 13.3 \u00b1 1.4 hours, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of the time span between two consecutive mitoses showed no significant differences in the total length of the cell cycle between leaders and followers (13.6 \u00b1 1.2 and 13.3 \u00b1 1.4 hr, respectively; Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of cell cycle length showing no significant difference between leaders and followers, as shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "ce440afc-5403-41d6-85b2-61842a5f063d",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C54",
+      "claim": "Leader cells have a short G1 phase (3.2 \u00b1 0.6 hours) but remain for twice as long in S-phase (8.7 \u00b1 1.3 hours).",
+      "claim_type": "EXPLICIT",
+      "source": "We found striking differences in the time spent in G1- and S-phase between leader and follower cells. Leaders present a short G1 (3.2 \u00b1 0.6 hr) but remain for twice as long in S-phase (8.7 \u00b1 1.3 hr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of cell cycle phase lengths using PCNA-GFP showing that leaders have short G1 and long S-phase, as shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "9357d4d4-0509-449d-bb40-305c8aa0e238",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C55",
+      "claim": "Follower cells remain for twice as long in G1 (7.4 \u00b1 2.7 hours) than in S-phase (4.6 \u00b1 2.8 hours).",
+      "claim_type": "EXPLICIT",
+      "source": "Followers, on the other hand, present the opposite distribution, remaining for twice as long in G1 (7.4 \u00b1 2.7 hr) than in S-phase (4.6 \u00b1 2.8 hr; Figure 10C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of cell cycle phase lengths using PCNA-GFP showing that followers have long G1 and short S-phase, as shown in Figure 10C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "b25de8ff-1212-47bf-a917-d172b96fae0f",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C56",
+      "claim": "No significant differences were observed in the length of G2 (leaders 1.6 \u00b1 0.4 hours; followers 1.5 \u00b1 0.3 hours) or M (leaders 0.6 \u00b1 0.1 hours; followers 0.5 \u00b1 0.1 hours) between leaders and followers.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were observed in the length of G2 (leaders 1.6 \u00b1 0.4 hr; followers 1.5 \u00b1 0.3 hr) or M (leaders 0.6 \u00b1 0.1 hr; followers 0.5 \u00b1 0.1 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantification of cell cycle phase lengths showing no significant difference in G2 or M phase between leaders and followers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "16236331-2c1b-4aa6-af28-099291a9c3df",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C57",
+      "claim": "Leader and follower cells present marked differences in the length of G1- and S-phase, suggesting that cell cycle progression may regulate their migratory behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that leader and follower cells present marked differences in the length of G1- and S-phase, suggesting that cell cycle progression may regulate their migratory behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that leaders and followers have different G1 and S-phase lengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "1e7582d9-8407-449a-8797-fd95920670c7",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C58",
+      "claim": "Neither the total cell cycle length nor the number of trunk neural crest cells were affected by alterations of Notch signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this question, we measured the total length of the cell cycle and the length of each phase under control and Notch-inhibited conditions. Neither the total cell cycle length (Figure 11A) nor the number of TNC (Figure 9\u2014figure supplement 1) were affected by alterations of Notch signalling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification showing no significant difference in total cell cycle length or cell number under Notch inhibition, as shown in Figure 11A and Figure 9\u2014figure supplement 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "18ccc6da-924d-4891-b3af-1718477da26e",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C59",
+      "claim": "Upon Notch inhibition, leader cells lose their characteristic cell cycle progression pattern and behave as followers, with a long G1 and a short S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found significant differences in the length of G1- and S-phase upon Notch inhibition. Leader cells lose their characteristic cell cycle progression pattern and behave as followers, with a long G1 and a short S-phase (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of cell cycle phase lengths showing that leaders adopt follower-like G1 and S-phase lengths under Notch inhibition, as shown in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "efa9dd57-f169-44d6-8a64-72c28bf67463",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C60",
+      "claim": "Notch inhibition abolishes the size difference between migratory leader and follower cells, with all cells presenting the average follower's area.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Notch inhibition abolishes the size difference between migratory leader and follower cells, with all cells presenting the average follower's area (Figure 11C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of cell area showing no significant difference between leaders and followers under Notch inhibition, as shown in Figure 11C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "7e9bd56e-2e39-484e-85c9-8dd6d540147b",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C61",
+      "claim": "Notch activity defines trunk neural crest migratory identity by regulating cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Notch activity defines TNC migratory identity by regulating cell cycle progression, cells with low Notch activity remain for longer in G1 behaving as followers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined data showing that Notch inhibition changes cell cycle progression and migratory identity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "1c164e79-f8d3-4a5b-82a8-dd27d1723741",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C62",
+      "claim": "Cells with low Notch activity remain for longer in G1 behaving as followers.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Notch activity defines TNC migratory identity by regulating cell cycle progression, cells with low Notch activity remain for longer in G1 behaving as followers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the observation that Notch inhibition leads to longer G1 phase and follower behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "d285c1a9-dfa8-478b-957f-46b1ce15e185",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C63",
+      "claim": "Notch inhibition reduces the dispersion of the follower population's cell cycle phase lengths, with standard deviations cut almost by half.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed that Notch inhibition also changes the cell cycle behaviour of the followers' population. While the followers' average length of cell cycle phases is not altered, the dispersion of this population is significantly reduced, with standard deviations cut almost by half (from 2.7 hr to 1.42 hr for G1 and from 2.8 hr to 1.38 hr for S; Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification showing reduced standard deviation in follower cell cycle phase lengths under Notch inhibition, as shown in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "56f3626a-8075-4ec3-bccd-5804b76f0317",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C64",
+      "claim": "In control conditions, leader cells show a normal distribution with a single peak for G1- and S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In control conditions, leader cells show a normal distribution with a single peak for G1- and S-phase, as expected for a homogeneous population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by frequency distribution analysis showing a single peak for leaders, as shown in Figure 11E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "ab0124c2-1843-4791-b5f8-56437aa13ddc",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C65",
+      "claim": "In control conditions, follower cells present a bimodal distribution, with the smaller peak coinciding with that of leader cells and accounting for 26% of followers in G1 and 31% in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Followers, on the other hand, present a bimodal distribution, with the smaller peak coinciding with that of leader cells, and accounting for 26% of followers in G1- and 31% in S-phase (Figure 11E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by frequency distribution analysis showing a bimodal distribution for followers with a subset resembling leaders, as shown in Figure 11E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "e8c7a973-a41a-461c-b855-aa22490fd774",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C66",
+      "claim": "The bimodal distribution of follower cells fulfills the predictions of the computational model that best recapitulates trunk neural crest migration when chains are composed of leaders and followers in a 1:2 or 1:3 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, these results fulfil the predictions of our in silico model that best recapitulates TNC migration when chains are composed of leaders and followers in a 1:2 or 1:3 ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that approximately 25-30% of followers have leader-like cell cycle characteristics, consistent with a 1:3 or 1:2 leader:follower ratio.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "42004db1-d84f-4232-8a6b-7bfe7b1c61ce",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C67",
+      "claim": "Upon Notch inhibition, the bimodal distribution of the follower population is lost, with all cells grouped at the major mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, upon Notch inhibition the bimodal distribution of the follower population is lost, with all cells grouped at the major mean (Figure 11G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by frequency distribution analysis showing loss of bimodal distribution under Notch inhibition, as shown in Figure 11G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "5fc7797d-2a77-485f-a163-13a42a53fa64",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C68",
+      "claim": "Closer analysis of normal phox2bb expression shows increased expression in followers at position 3 in addition to that in leaders.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these data, closer analysis (at higher magnification) of normal phox2bb expression shows increased expression in followers at position 3 in addition to that in leaders (Figure 11I\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by high-magnification RNAscope images showing phox2bb expression in the third follower cell, as shown in Figure 11I-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "963ad828-5d58-4030-9b42-07b988443677",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C69",
+      "claim": "The levels of Notch activity in trunk neural crest allocate migratory identity by controlling cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken all together, our data demonstrate that the levels of Notch activity in TNC allocate migratory identity by controlling cell cycle progression and that migratory chains are formed of one leader cell for every three followers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined data from Notch manipulation, cell cycle analysis, and phox2bb expression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "cab1e67f-a1e4-4e80-95c9-13b36bccd4d9",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C70",
+      "claim": "Migratory chains are formed of one leader cell for every three followers.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken all together, our data demonstrate that the levels of Notch activity in TNC allocate migratory identity by controlling cell cycle progression and that migratory chains are formed of one leader cell for every three followers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined data from computational modeling, cell cycle distribution analysis, and phox2bb expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "32e54bdc-0ac1-4a02-88e9-0051c12a31d7",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C71",
+      "claim": "Progression through G1/S is required for trunk neural crest delamination in chicken embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with studies in chicken embryos, showing that progression through G1/S is required for TNC delamination, and that NC continue cycling as they migrate (Burstyn-Cohen and Kalcheim, 2002; Th\u00e9veneau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of previous work by Burstyn-Cohen and Kalcheim, 2002 and Th\u00e9veneau et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "14df57e6-5647-468b-bdfd-3a98c872d803",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C72",
+      "claim": "Neural crest cells continue cycling as they migrate in chicken embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with studies in chicken embryos, showing that progression through G1/S is required for TNC delamination, and that NC continue cycling as they migrate (Burstyn-Cohen and Kalcheim, 2002; Th\u00e9veneau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of previous work by Burstyn-Cohen and Kalcheim, 2002 and Th\u00e9veneau et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "50be7294-6216-4022-a7db-e93518901b74",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C73",
+      "claim": "The timing of G1/S transition depends on cell size and the dilution of the nuclear retinoblastoma protein.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that these differences arise from the fact that leaders are larger than followers. It has been shown that the timing of G1/S transition depends on cell size and the dilution of the nuclear retinoblastoma protein (Zatulovskiy and Skotheim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of Zatulovskiy and Skotheim, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "cbc45f0c-ee0d-4613-ad23-847a739439af",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C74",
+      "claim": "Cyclins B and D phosphorylate cytoskeleton regulators, resulting in increased cell migration and tumour invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclins B and D have been shown to phosphorylate cytoskeleton regulators, resulting in increased cell migration and tumour invasion (Blethrow et al., 2008; Chen et al., 2020; Chi et al., 2008; Hirota et al., 2000; Li et al., 2006; Manes et al., 2003; Song et al., 2008; Zhong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations showing that cyclins can regulate cytoskeleton and migration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "79578661-3f32-4d8f-aef6-e1880d7e1663",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C75",
+      "claim": "Rac1 activity oscillates during the cell cycle being highest at S-phase when cells are most invasive.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Rac1 activity, which is required for migration, oscillates during the cell cycle being highest at S-phase when cells are most invasive (Kagawa et al., 2013; Walmod et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations of Kagawa et al., 2013 and Walmod et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "3aa5fa2d-279d-4389-a8d9-1be2740f77e1",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C76",
+      "claim": "Cyclin-dependent kinase inhibitors interact with RhoA and ROCK, enhancing motility.",
+      "claim_type": "EXPLICIT",
+      "source": "CDKIs, on the other hand, interact with RhoA- and ROCK-enhancing motility (Bendris et al., 2015; Creff and Besson, 2020; Yoon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations of Bendris et al., 2015, Creff and Besson, 2020, and Yoon et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "37f16a81-90ab-4041-b06c-c6a8ceb12a69",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C77",
+      "claim": "Enhanced motility increases actin branching, which in turn can accelerate the G1/S transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, enhanced motility increases actin branching, which in turn can accelerate the G1/S transition (Molinie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of Molinie et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "6e62e5d1-31ba-436c-b838-287677df6fef",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C78",
+      "claim": "Notch can regulate cell cycle through the transcriptional induction of cyclins A and D, and the inhibition of cyclin-dependent kinase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the cell type, Notch can regulate cell cycle through the transcriptional induction of cyclins A and D, and the inhibition of CDKIs (Campa et al., 2008; Dabral et al., 2016; Ridgway et al., 2006; Rizzo et al., 2008; Rowan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations showing Notch regulation of cell cycle components.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "33f2833b-b414-42a1-88f8-6891ff70d34b",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C79",
+      "claim": "Notch activity is enhanced at the G1/S transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cell cycle progression can impact on Notch signalling. Notch activity is enhanced at the G1/S transition, while cells become refractory to Notch during G2/M (Ambros, 1999; Carrieri et al., 2019; Hunter et al., 2016; Nusser-Stein et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations of Ambros, 1999, Carrieri et al., 2019, Hunter et al., 2016, and Nusser-Stein et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "914cd19f-9a5a-45de-bee1-73d3e147942f",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C80",
+      "claim": "Cells become refractory to Notch during G2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cell cycle progression can impact on Notch signalling. Notch activity is enhanced at the G1/S transition, while cells become refractory to Notch during G2/M (Ambros, 1999; Carrieri et al., 2019; Hunter et al., 2016; Nusser-Stein et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations of Ambros, 1999, Carrieri et al., 2019, Hunter et al., 2016, and Nusser-Stein et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "7b612ec7-d77d-44be-bedc-7b3fa0239805",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C81",
+      "claim": "Studies in cancer cell lines have shown that activation or inhibition of Notch signalling hinders migration.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies in cancer cell lines have shown that activation or inhibition of Notch signalling hinders migration, similar to what we observe in TNC (Konen et al., 2017), while the maintenance of collective migration depends on the regulation of cell proliferation during angiogenesis (Costa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of Konen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "2ed25faa-0a23-43e5-a69d-06ed12c539b2",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "claim_id": "C82",
+      "claim": "The maintenance of collective migration depends on the regulation of cell proliferation during angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies in cancer cell lines have shown that activation or inhibition of Notch signalling hinders migration, similar to what we observe in TNC (Konen et al., 2017), while the maintenance of collective migration depends on the regulation of cell proliferation during angiogenesis (Costa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation of Costa et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "01e965c2-b0ff-48f4-ae9e-b0b91fedc367",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Notch signaling components remain expressed in neural crest after induction, with variable levels of Notch activity between premigratory trunk neural crest cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are supported by in situ hybridization data showing expression of Notch components (notch1a, dlb, dld, her4) in migrating neural crest cells (Figure 1\u2014figure supplement 1) and imaging data from the Notch reporter line 12xNRE:egfp showing variable GFP expression levels in premigratory TNC cells (Figure 1). The data directly demonstrate both continued expression and variability in Notch activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "97580de7-e646-4202-8b30-5d2e7c7d6723",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Notch inhibition impairs trunk neural crest induction up to 11 hpf, while cranial and vagal neural crest induction is independent of Notch signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C4 are supported by in situ hybridization data showing reduced or absent crestin expression in DAPT-treated embryos at different developmental stages (Figure 2D) and confirmation of previous work by Cornell and Eisen, 2000. The temporal specificity and population-specific effects are clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "70006462-d274-4769-a3d0-82e97b3ae3e3",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Notch inhibition at 12 hpf reduces trunk neural crest derivatives and migration, delaying rather than completely halting migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are supported by in situ hybridization data showing reduced expression of differentiation markers (mbp, bdh) and pigmentation (Figure 3A-F), reduced chain formation and ventral advance (Figure 3G-J), and time-course analysis showing new chain formation over time despite DAPT treatment (Figure 3K). The data demonstrate both the reduction in derivatives and the delay rather than complete block of migration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "73fd3433-1129-4bbf-a5a3-414616376ae1",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both genetic and chemical Notch inhibition produce similar migration defects, and both gain and loss of Notch function result in similar phenotypes, indicating that precise regulation of Notch signaling levels is required for trunk neural crest migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are supported by quantification showing similar reduction in chain numbers for both chemical (DAPT) and genetic (hs:dnSu(H)) inhibition, as well as for both Notch GOF (hs:Gal4;UAS:NICD) and LOF conditions (Figure 3L). The paradoxical similarity of GOF and LOF phenotypes strongly supports the conclusion that intermediate Notch levels are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "94ee254f-137b-43c1-8af7-91579487cb99",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Under Notch inhibition, trunk neural crest leader cells are unable to retain the front position, show reduced ventral advance, and have decreased speed and directionality, while somite and neuron development remain unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are supported by live imaging data showing leader overtaking events (Figure 4C, Figure 5B), reduced ventral distance (Figure 5C), and quantitative analysis showing reduced speed and directionality (Figure 5D-E). Control experiments showing normal somite and neuronal marker expression (Figure 4\u2014figure supplement 1) rule out indirect effects through tissue environment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "9c1a637e-9c52-49d4-aab8-c26d59b23f59",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell-autonomous inhibition of Notch signaling in neural crest phenocopies chemical inhibition, confirming that Notch activity is autonomously required for identity allocation and that loss of Notch signaling establishes a homogeneous follower population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are supported by live imaging data from Sox10:Kalt4;UAS:dnSu(H) embryos showing similar phenotypes to chemical inhibition (Figure 4D, Figure 5A-C) and quantitative analysis showing that leader cells adopt follower characteristics (Figure 5D-E). The cell-autonomous approach definitively demonstrates that Notch acts within neural crest cells rather than through environmental effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "f9893add-d22b-433e-8857-952b1632edbc",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Notch overactivation leads to loss of group coherence and impaired ventral advance, with follower cells adopting leader characteristics including increased speed but reduced directionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by live imaging data from Notch GOF conditions (Sox10:Kalt4;UAS:NICD) showing loss of coherence and impaired advance (Figure 4F, Figure 5A-C), and quantitative analysis showing increased speed but reduced directionality (Figure 5D-E). The data demonstrate that all cells adopt leader-like behavior under Notch GOF.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "8ca7a3ef-17d5-4e1a-8791-fef61785eb64",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Notch activity controls phox2bb expression and allocates trunk neural crest migratory identity, with high Notch levels leading to phox2bb expression and leader identity, while low Notch activity results in follower identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are supported by RNAscope data showing phox2bb expression predominantly in leader cells under control conditions (Figure 6A-B, G), in all cells under Notch GOF (Figure 6C-D, G), and absent under Notch inhibition (Figure 6E-G). The molecular marker data directly correlates with the behavioral observations and provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "ddcc8b95-e6d4-4804-9732-7f1459bfafd9",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Alterations of Notch signaling lead to homogeneous trunk neural crest populations unable to undergo collective migration, suggesting Notch lateral inhibition as the mechanism for migratory identity acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by the combined data showing that both Notch GOF and LOF produce homogeneous populations (all leaders or all followers) that cannot migrate collectively. However, C26 is somewhat speculative as direct evidence of lateral inhibition mechanism (e.g., ligand-receptor dynamics) is not provided, though the pattern is consistent with lateral inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "84ef84c9-43fe-445a-a555-24d1be99c2de",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Computational modeling demonstrates that cell heterogeneity is required for trunk neural crest migration, with optimal recapitulation of in vivo behavior achieved at 1:2 or 1:3 leader/follower ratios, and CIL intensity as the most important distinguishing parameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by computational modeling results showing that homogeneous cell simulations cannot match in vivo behavior (Figure 7C), that 1:2 and 1:3 ratios best recapitulate control and Notch-altered conditions (Figure 4B, E, G, Figure 5), and that linear discriminant analysis identifies CIL intensity as the most important parameter (Figure 7F). The modeling provides quantitative predictions that are later validated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "f53f9b77-5102-4abb-bf4c-47067df1cbeb",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Leader cells arise from asymmetric division of a single progenitor cell that produces a larger prospective leader and smaller follower, while other progenitors divide symmetrically to produce two follower cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by live imaging and tracking data showing asymmetric division producing cells of different sizes (102\u00b120 vs 72\u00b19 \u03bcm\u00b2) that adopt different identities (Figure 8A-B), and symmetric divisions producing similar-sized cells (87\u00b127 \u03bcm\u00b2) that both become followers (Figure 8C-D). The data directly demonstrate the origin of size differences and identity allocation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Leader and follower progenitors divide at different spatial locations and follow different temporal patterns, with leaders dividing during migration (86% M\u2192D) at the NT/not boundary, while followers divide before migration (90% D\u2192M) in the premigratory area, suggesting asynchronous cell cycle progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 are supported by spatial analysis showing restricted anterior division of leader progenitors (Figure 8E), quantification of division patterns (Figure 8H), and position measurements (Figure 8I). The data demonstrate clear spatial and temporal differences in division patterns between leaders and followers, though the inference of asynchronous cell cycle progression (C42) requires additional validation provided in later claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cell cycle inhibitors effectively block cell division without affecting neural crest induction, and inhibition of cell cycle progression results in reduced migration that is reversible upon drug withdrawal, demonstrating that active cell cycle progression is required for trunk neural crest migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are supported by quantification showing >90% inhibition of mitotic figures (Figure 9\u2014figure supplement 1), normal crestin expression at 16 hpf (Figure 9\u2014figure supplement 1E-F), reduced chain numbers and ventral advance (Figure 9A-H), live imaging showing maintained motility but impaired ventral migration (Figure 9\u2014video 1), and recovery after drug withdrawal (Figure 9G-H). The data demonstrate both the requirement for cell cycle progression and the specificity of the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "61ffb362-d414-4589-95f9-6b7e15ad62fd",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Leader cells initiate migration in S-phase (79%) while follower cells start movement during G1 (77%), demonstrating that cell cycle progression is required for migration and that leaders and followers initiate movement at different cell cycle points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by analysis of Sox10:FUCCI embryos showing differential cell cycle phase at migration initiation (Figure 9I-J). The data directly demonstrate the correlation between cell cycle phase and migration initiation, though the causal relationship is inferred from the combined data with cell cycle inhibition experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "59178e85-6d99-470d-b8f3-df6e3ac22167",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Leader and follower cells have similar total cell cycle length but differ markedly in G1 and S-phase duration, with leaders having short G1 (3.2\u00b10.6 hr) and long S-phase (8.7\u00b11.3 hr), while followers have long G1 (7.4\u00b12.7 hr) and short S-phase (4.6\u00b12.8 hr).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by quantification using PCNA-GFP showing no significant difference in total cell cycle length (Figure 10B) but striking differences in G1 and S-phase lengths (Figure 10C-D). The data provide detailed characterization of cell cycle differences between leaders and followers, though the suggestion that this regulates migratory behavior (C57) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "37ac6b82-2ae5-4792-8750-f1ba35a6a50d",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Notch inhibition does not affect total cell cycle length or cell number but causes leader cells to adopt follower-like cell cycle progression (long G1, short S-phase) and abolishes size differences, demonstrating that Notch activity defines migratory identity by regulating cell cycle progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by quantification showing no change in total cell cycle length (Figure 11A) or cell number (Figure 9\u2014figure supplement 1I), but significant changes in G1 and S-phase lengths (Figure 11B) and cell area (Figure 11C-D) under Notch inhibition. The data demonstrate that Notch regulates cell cycle progression and that this correlates with identity changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "3535fe97-3338-4be2-906b-6da678c3ac76",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Follower cells show a bimodal distribution of cell cycle phase lengths with 26-31% resembling leaders, fulfilling computational model predictions of 1:2 or 1:3 leader/follower ratios, and this bimodal distribution is lost upon Notch inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are supported by quantification showing reduced standard deviation under Notch inhibition (Figure 11B), frequency distribution analysis showing bimodal distribution for followers with a subset resembling leaders (Figure 11E-F), and loss of bimodal distribution under Notch inhibition (Figure 11G-H). The data provide strong support for the computational model predictions and demonstrate heterogeneity within the follower population.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "656dc828-8533-4596-9bbb-1dec97526b49",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "High-magnification analysis reveals phox2bb expression in the third follower cell in addition to leaders, supporting the conclusion that Notch activity allocates migratory identity by controlling cell cycle progression and that migratory chains are formed of one leader for every three followers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by high-magnification RNAscope images showing phox2bb expression in the third follower cell (Figure 11I-N) and the combined data from Notch manipulation, cell cycle analysis, computational modeling, and phox2bb expression patterns. The convergence of multiple lines of evidence strongly supports the 1:3 leader/follower ratio.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    },
+    {
+      "id": "ddfcc188-d62c-4892-9040-8df44df03b85",
+      "content_id": "2f504ed3-0cd7-4e42-a9b8-2706d9fc02db",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work in chicken embryos and other systems demonstrates connections between cell cycle progression and migration, cell size and G1/S transition, cyclins and migration, Rac1 activity and cell cycle, CDKIs and motility, actin branching and G1/S transition, Notch and cell cycle regulation, cell cycle and Notch activity, and Notch/cell cycle effects on migration in cancer and angiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C82 are all supported by appropriate citations to prior work. These claims provide context for the current findings and suggest potential molecular mechanisms, though they do not constitute new findings from this study. The citations appear appropriate and relevant to the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:26:35.790343Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1f5ec829-195a-4aab-a361-2cfb4bd1ada1",
+      "result_id": "01e965c2-b0ff-48f4-ae9e-b0b91fedc367"
+    },
+    {
+      "claim_id": "39d31b3b-5a47-45cf-b874-869710a2791e",
+      "result_id": "01e965c2-b0ff-48f4-ae9e-b0b91fedc367"
+    },
+    {
+      "claim_id": "90faa9a6-1d54-4d0c-a584-d423c5ada6d6",
+      "result_id": "97580de7-e646-4202-8b30-5d2e7c7d6723"
+    },
+    {
+      "claim_id": "2886bb3d-bca8-41ce-a22d-c90b7710ef45",
+      "result_id": "97580de7-e646-4202-8b30-5d2e7c7d6723"
+    },
+    {
+      "claim_id": "c9c21d62-0d9c-4e1b-98cb-5c6930bca319",
+      "result_id": "70006462-d274-4769-a3d0-82e97b3ae3e3"
+    },
+    {
+      "claim_id": "6b6d11fb-b026-44bf-be6f-6447743e76b5",
+      "result_id": "70006462-d274-4769-a3d0-82e97b3ae3e3"
+    },
+    {
+      "claim_id": "f0746a53-e9c9-41af-ad3d-bde4df579323",
+      "result_id": "70006462-d274-4769-a3d0-82e97b3ae3e3"
+    },
+    {
+      "claim_id": "707240f8-aa4b-4197-b9f3-9643b66eb4cf",
+      "result_id": "73fd3433-1129-4bbf-a5a3-414616376ae1"
+    },
+    {
+      "claim_id": "c4c85334-39de-4d88-80cf-18ba5b896cd3",
+      "result_id": "73fd3433-1129-4bbf-a5a3-414616376ae1"
+    },
+    {
+      "claim_id": "0fd59861-e40e-4966-b9b2-d62e627b2155",
+      "result_id": "73fd3433-1129-4bbf-a5a3-414616376ae1"
+    },
+    {
+      "claim_id": "c94829ab-81d1-49cb-a069-41d95aefce4a",
+      "result_id": "94ee254f-137b-43c1-8af7-91579487cb99"
+    },
+    {
+      "claim_id": "a6a912e7-1e0f-44c1-92bd-eb1365dab62d",
+      "result_id": "94ee254f-137b-43c1-8af7-91579487cb99"
+    },
+    {
+      "claim_id": "ed0cf39e-b142-459c-99a6-fc2a462a7851",
+      "result_id": "94ee254f-137b-43c1-8af7-91579487cb99"
+    },
+    {
+      "claim_id": "2bff82a4-c264-468e-86f9-40605febd263",
+      "result_id": "94ee254f-137b-43c1-8af7-91579487cb99"
+    },
+    {
+      "claim_id": "54977b71-50c7-4878-8b0a-ed90acd48c32",
+      "result_id": "9c1a637e-9c52-49d4-aab8-c26d59b23f59"
+    },
+    {
+      "claim_id": "bce3c7aa-e68a-4d5b-ab52-ed5fe97be3a1",
+      "result_id": "9c1a637e-9c52-49d4-aab8-c26d59b23f59"
+    },
+    {
+      "claim_id": "85ea77d2-37e6-47d9-97a0-c7065ee6bcee",
+      "result_id": "9c1a637e-9c52-49d4-aab8-c26d59b23f59"
+    },
+    {
+      "claim_id": "62b9dd72-88d9-4cb3-b3a5-cd2807d13aa6",
+      "result_id": "f9893add-d22b-433e-8857-952b1632edbc"
+    },
+    {
+      "claim_id": "b3f8eeb0-b632-4b7f-b201-de1d31f28288",
+      "result_id": "f9893add-d22b-433e-8857-952b1632edbc"
+    },
+    {
+      "claim_id": "5fa97a31-a4cc-4e5c-ad4a-6c8de50cb4a9",
+      "result_id": "8ca7a3ef-17d5-4e1a-8791-fef61785eb64"
+    },
+    {
+      "claim_id": "0a091d94-d510-4211-acd3-ad1aa53a9a42",
+      "result_id": "8ca7a3ef-17d5-4e1a-8791-fef61785eb64"
+    },
+    {
+      "claim_id": "964fc4bb-8b3f-4b1e-b0c8-a53bda5b34de",
+      "result_id": "8ca7a3ef-17d5-4e1a-8791-fef61785eb64"
+    },
+    {
+      "claim_id": "6737f06e-6dc2-4452-8fd8-9ae2a84054b0",
+      "result_id": "8ca7a3ef-17d5-4e1a-8791-fef61785eb64"
+    },
+    {
+      "claim_id": "9305ce72-111c-47be-9c1d-7dd8ca628b88",
+      "result_id": "8ca7a3ef-17d5-4e1a-8791-fef61785eb64"
+    },
+    {
+      "claim_id": "f6716583-083d-421c-943f-d30775d4b640",
+      "result_id": "ddcc8b95-e6d4-4804-9732-7f1459bfafd9"
+    },
+    {
+      "claim_id": "4ab5ce08-3d1e-4410-a89f-040a56e70549",
+      "result_id": "ddcc8b95-e6d4-4804-9732-7f1459bfafd9"
+    },
+    {
+      "claim_id": "178f57c0-5fad-4d5e-81aa-f09eb6365e10",
+      "result_id": "84ef84c9-43fe-445a-a555-24d1be99c2de"
+    },
+    {
+      "claim_id": "6fb9d10a-6913-4091-9863-5ec4485872d3",
+      "result_id": "84ef84c9-43fe-445a-a555-24d1be99c2de"
+    },
+    {
+      "claim_id": "715f965f-0d0e-4f39-926d-39c14cc15db5",
+      "result_id": "84ef84c9-43fe-445a-a555-24d1be99c2de"
+    },
+    {
+      "claim_id": "2709424f-dbee-49bb-9500-1001b4a92d51",
+      "result_id": "84ef84c9-43fe-445a-a555-24d1be99c2de"
+    },
+    {
+      "claim_id": "48239e14-240b-4889-aa55-a471e6e2581b",
+      "result_id": "84ef84c9-43fe-445a-a555-24d1be99c2de"
+    },
+    {
+      "claim_id": "8411ccb4-7b98-4b2a-9a1e-d087eaef5934",
+      "result_id": "f53f9b77-5102-4abb-bf4c-47067df1cbeb"
+    },
+    {
+      "claim_id": "1e19290a-b5d0-4172-a84a-e2f0617d30de",
+      "result_id": "f53f9b77-5102-4abb-bf4c-47067df1cbeb"
+    },
+    {
+      "claim_id": "3db6dc29-16f6-4ba6-82c1-a50e266f0436",
+      "result_id": "f53f9b77-5102-4abb-bf4c-47067df1cbeb"
+    },
+    {
+      "claim_id": "efc1352b-740f-4377-ae2a-b28d1a9ea705",
+      "result_id": "f53f9b77-5102-4abb-bf4c-47067df1cbeb"
+    },
+    {
+      "claim_id": "a36f976c-c753-4b7c-b4c2-596c310237dc",
+      "result_id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643"
+    },
+    {
+      "claim_id": "64716056-5814-4746-ae5e-35396057c402",
+      "result_id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643"
+    },
+    {
+      "claim_id": "a3202576-c131-4128-808f-b23d09eb2438",
+      "result_id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643"
+    },
+    {
+      "claim_id": "d0e71db6-654b-4cff-887a-e3fc7e36a684",
+      "result_id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643"
+    },
+    {
+      "claim_id": "3ac52a42-b60c-43dd-9d5c-6268cdb657cd",
+      "result_id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643"
+    },
+    {
+      "claim_id": "22b20150-8b32-40c2-b8e1-f14e61542329",
+      "result_id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643"
+    },
+    {
+      "claim_id": "b06ee17a-ca2b-4167-9226-51edb4869946",
+      "result_id": "c84a00c3-efa7-4b3f-9f10-f0fe8ca6d643"
+    },
+    {
+      "claim_id": "2ab2eaf6-439a-4caf-8602-18c8c546d4c5",
+      "result_id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22"
+    },
+    {
+      "claim_id": "2b31eb44-8a10-465f-88de-cc80cdfbddbf",
+      "result_id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22"
+    },
+    {
+      "claim_id": "94c6e7b2-3263-402e-82a4-b9f100eee6d8",
+      "result_id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22"
+    },
+    {
+      "claim_id": "6828f26d-f4ea-4b3e-b35c-fe7f0183c802",
+      "result_id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22"
+    },
+    {
+      "claim_id": "cd6e0103-c314-465a-a599-55737b291dcf",
+      "result_id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22"
+    },
+    {
+      "claim_id": "ee382ec3-04ac-4146-b2cd-3827bf003d3e",
+      "result_id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22"
+    },
+    {
+      "claim_id": "5c3e2a00-e267-4d35-8e6a-7c60cbb8123a",
+      "result_id": "3982653e-60b1-47ce-8dbc-dfee1ae0ba22"
+    },
+    {
+      "claim_id": "39e34411-3c93-45a8-89f4-ecf833d3d0f1",
+      "result_id": "61ffb362-d414-4589-95f9-6b7e15ad62fd"
+    },
+    {
+      "claim_id": "7f2b1be1-3273-4a8e-828b-c768e7156ca0",
+      "result_id": "61ffb362-d414-4589-95f9-6b7e15ad62fd"
+    },
+    {
+      "claim_id": "4d30721e-1977-4dce-8e4e-32fbad6a2fe2",
+      "result_id": "61ffb362-d414-4589-95f9-6b7e15ad62fd"
+    },
+    {
+      "claim_id": "d6030f74-1887-4107-95f5-476e25d052ff",
+      "result_id": "59178e85-6d99-470d-b8f3-df6e3ac22167"
+    },
+    {
+      "claim_id": "ce440afc-5403-41d6-85b2-61842a5f063d",
+      "result_id": "59178e85-6d99-470d-b8f3-df6e3ac22167"
+    },
+    {
+      "claim_id": "9357d4d4-0509-449d-bb40-305c8aa0e238",
+      "result_id": "59178e85-6d99-470d-b8f3-df6e3ac22167"
+    },
+    {
+      "claim_id": "b25de8ff-1212-47bf-a917-d172b96fae0f",
+      "result_id": "59178e85-6d99-470d-b8f3-df6e3ac22167"
+    },
+    {
+      "claim_id": "16236331-2c1b-4aa6-af28-099291a9c3df",
+      "result_id": "59178e85-6d99-470d-b8f3-df6e3ac22167"
+    },
+    {
+      "claim_id": "1e7582d9-8407-449a-8797-fd95920670c7",
+      "result_id": "37ac6b82-2ae5-4792-8750-f1ba35a6a50d"
+    },
+    {
+      "claim_id": "18ccc6da-924d-4891-b3af-1718477da26e",
+      "result_id": "37ac6b82-2ae5-4792-8750-f1ba35a6a50d"
+    },
+    {
+      "claim_id": "efa9dd57-f169-44d6-8a64-72c28bf67463",
+      "result_id": "37ac6b82-2ae5-4792-8750-f1ba35a6a50d"
+    },
+    {
+      "claim_id": "7e9bd56e-2e39-484e-85c9-8dd6d540147b",
+      "result_id": "37ac6b82-2ae5-4792-8750-f1ba35a6a50d"
+    },
+    {
+      "claim_id": "1c164e79-f8d3-4a5b-82a8-dd27d1723741",
+      "result_id": "37ac6b82-2ae5-4792-8750-f1ba35a6a50d"
+    },
+    {
+      "claim_id": "d285c1a9-dfa8-478b-957f-46b1ce15e185",
+      "result_id": "3535fe97-3338-4be2-906b-6da678c3ac76"
+    },
+    {
+      "claim_id": "56f3626a-8075-4ec3-bccd-5804b76f0317",
+      "result_id": "3535fe97-3338-4be2-906b-6da678c3ac76"
+    },
+    {
+      "claim_id": "ab0124c2-1843-4791-b5f8-56437aa13ddc",
+      "result_id": "3535fe97-3338-4be2-906b-6da678c3ac76"
+    },
+    {
+      "claim_id": "e8c7a973-a41a-461c-b855-aa22490fd774",
+      "result_id": "3535fe97-3338-4be2-906b-6da678c3ac76"
+    },
+    {
+      "claim_id": "42004db1-d84f-4232-8a6b-7bfe7b1c61ce",
+      "result_id": "3535fe97-3338-4be2-906b-6da678c3ac76"
+    },
+    {
+      "claim_id": "5fc7797d-2a77-485f-a163-13a42a53fa64",
+      "result_id": "656dc828-8533-4596-9bbb-1dec97526b49"
+    },
+    {
+      "claim_id": "963ad828-5d58-4030-9b42-07b988443677",
+      "result_id": "656dc828-8533-4596-9bbb-1dec97526b49"
+    },
+    {
+      "claim_id": "cab1e67f-a1e4-4e80-95c9-13b36bccd4d9",
+      "result_id": "656dc828-8533-4596-9bbb-1dec97526b49"
+    },
+    {
+      "claim_id": "32e54bdc-0ac1-4a02-88e9-0051c12a31d7",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "14df57e6-5647-468b-bdfd-3a98c872d803",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "50be7294-6216-4022-a7db-e93518901b74",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "cbc45f0c-ee0d-4613-ad23-847a739439af",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "79578661-3f32-4d8f-aef6-e1880d7e1663",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "3aa5fa2d-279d-4389-a8d9-1be2740f77e1",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "37f16a81-90ab-4041-b06c-c6a8ceb12a69",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "6e62e5d1-31ba-436c-b838-287677df6fef",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "33f2833b-b414-42a1-88f8-6891ff70d34b",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "914cd19f-9a5a-45de-bee1-73d3e147942f",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "7b612ec7-d77d-44be-bedc-7b3fa0239805",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    },
+    {
+      "claim_id": "2ed25faa-0a23-43e5-a69d-06ed12c539b2",
+      "result_id": "ddfcc188-d62c-4892-9040-8df44df03b85"
+    }
+  ],
+  "comparisons": []
+}

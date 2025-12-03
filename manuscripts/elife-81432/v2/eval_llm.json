@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C65",
+      "C66"
+    ],
+    "result": "GSDMDNT exhibits distinct, conformation-dependent lipid binding patterns with PI(4,5)P2 and PS. The \u03b21\u2013\u03b22 loop emerges as a focal point for anionic lipid interactions, with aromatic residues anchoring it into the membrane. Binding differs between prepore and pore conformations, particularly in the orientation of the \u03b11 helix and positioning of the \u03b13 helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C28-C35, C38-C39, C65-C66 collectively demonstrate conformation-dependent lipid binding through direct MD simulation observations. The identification of specific residues and structural elements involved in lipid interactions is well-documented in the simulation data and figures. The conformational differences are clearly shown in comparative analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PI(4,5)P2 lipids act as 'double-sided tape' by bridging neighboring GSDMDNT subunits at oligomer interfaces. This bridging is more prevalent in prepore than pore conformations and may facilitate oligomerization by attracting and orienting membrane-bound monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C37, C72-C75 are supported by direct simulation observations showing PI(4,5)P2 simultaneously interacting with neighboring subunits in ~2/3 of interfaces. The mechanistic interpretation of this bridging facilitating oligomerization is a reasonable inference from the simulation data, though it remains speculative without direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C78",
+      "C90"
+    ],
+    "result": "Small GSDMDNT oligomers (monomers through decamers) remain stably membrane-inserted and support water-filled, ion-conducting pores. The \u03b2-sheets curl to form pores with one edge normal to the membrane and the other tilted ~55\u00b0. Ion permeation increases with oligomer size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C53, C78, C90 are directly supported by multi-microsecond MD simulations showing stable insertion and ion permeation for all oligomer sizes. The structural characterization of pore geometry and ion conductance is quantitatively documented in Figure 4. This represents a key finding that small oligomers can form functional pores.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C84",
+      "C85",
+      "C89"
+    ],
+    "result": "Large GSDMDNT arcs (16-27 subunits) experience membrane edge tension of 86 pN that drives pore formation. Lipids recede from the hydrophilic \u03b2-sheet face, creating an open membrane edge. Arcs of 5-16 subunits crack at the center under this tension to form slit-shaped pores, while the 27-mer closes into a circular pore. The \u03b2-sheet remains intact even in highly curved cracked regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C54-C61, C84-C85, C89 are well-supported by simulation data showing lipid recession, edge formation, and arc cracking. The membrane edge tension calculation (86 pN) is quantitatively determined from independent simulations. The differential behavior of different oligomer sizes is systematically documented in Table 1 and Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C82",
+      "C116",
+      "C130"
+    ],
+    "result": "Small oligomeric GSDMDNT pores explain nonselective ion flux during early pyroptosis. These sublytic pores permit water and ion conduction, consistent with experimental observations of ion flux and size exclusion before full pore formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C82, C116, C130 connect simulation observations of ion permeation through small pores to experimental observations of early pyroptotic ion flux. The inference is well-supported by the combination of simulation data (Figure 4G) and cited experimental literature. This provides a mechanistic explanation for previously observed phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C94",
+      "C97"
+    ],
+    "result": "The prepore 33-mer ring remains stably bound to the membrane but deforms it upward into a crown shape. The \u03b2-hairpins unfold within nanoseconds. This membrane deformation is consistent with mechanical stress on the domain that must unravel for pore formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C43, C94, C97 are directly observed in 3.5 \u03bcs simulations. The upward membrane bending is clearly shown in Figure 2B and is even more pronounced in larger membrane systems (Figure 2\u2014figure supplement 1B). The interpretation linking this to insertion mechanics is reasonable though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C44"
+    ],
+    "result": "The pore conformation 33-mer stabilizes a 21.6 nm wide, water-filled pore with an intact \u03b2-sheet lining. The membrane remains flat but is thinned around the hairpin tips because they don't reach the extracellular leaflet headgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44 are directly observed in 5 \u03bcs simulations and clearly shown in Figure 2C-D. The structural characterization is quantitative and the explanation for membrane thinning is mechanistically sound based on hairpin length constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C123",
+      "C125"
+    ],
+    "result": "In simulations starting with a lipid-filled pore, a bicelle-like lipid plug detaches from the hydrophilic \u03b2-sheet interior, tilts, and moves toward the intracellular space. Unlike in PLY simulations, the plug remains flat rather than curling into a vesicle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C123, C125 are directly observed in simulations shown in Figure 3. The comparison to PLY behavior is supported by citation to prior work. The observation provides insight into lipid expulsion mechanisms from gasdermin pores.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C103"
+    ],
+    "result": "In DOPC membranes with lower edge tension (44.3 pN), lipids recede faster and the 16-mer arc cracks in three positions to form a nearly circular pore rather than the slit-shaped pore seen in plasma membrane mimetic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C103 demonstrate membrane composition effects through comparative simulations. The DOPC edge tension value is from cited literature (West et al., 2013). The different pore morphologies in different membranes are directly observed and shown in Figure 5\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Specific residues (K145, Q149, R151) are involved in membrane binding but not pore formation. Simultaneous binding of PI(4,5)P2 to R7, R174, and R178 may kinetically trap a pore-like orientation facilitating \u03b2-hairpin folding, potentially explaining gasdermin preference for multivalent acidic lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C71 combine simulation observations with cited experimental data (C69) and speculation (C70-C71). While the identification of conformation-specific binding residues is supported by simulations, the mechanistic proposals about kinetic trapping and lipid preference are speculative inferences requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C91",
+      "C92"
+    ],
+    "result": "IL-1 family cytokine release requires pores of at least 10 subunits based on steric considerations. The remarkable \u03b2-sheet stability suggests it may stabilize pore oligomers. Small oligomers may fuse to build larger pores, and the upward-tilted \u03b2-sheet edge could guide attachment of new subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C86, C91-C92 mix inference (C83, C86) with speculation (C91-C92). The size requirement for cytokine release is a reasonable inference from structural data. However, the proposals about oligomer fusion and sequential growth are speculative extrapolations from simulation observations without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "GSDMD pore formation follows a concentration-dependent kinetic model. At low GSDMDNT concentrations, small oligomers dominate and insert to form sublytic pores. At high concentrations, full prepore rings form before collective \u03b2-sheet insertion. PI(4,5)P2-rich membranes favor large prepore assemblies. Hairpin folding and membrane insertion occur concertedly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C95-C96, C128-C133 synthesize simulation observations into a comprehensive mechanistic model. The concentration-dependent pathways are reasonable inferences from the stability of different oligomer sizes and kinetic considerations. The model is consistent with cited experimental observations and provides a framework integrating multiple findings, though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "GSDMDNT is 60% more hydrophilic than GSDMA3NT on the pore-facing \u03b2-sheet surface. This difference likely explains why lipids detach from GSDMDNT but not GSDMA3NT oligomers, and may enable GSDMDNT to form sublytic pores that dissipate membrane potential, unlike GSDMA3NT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 compare GSDMDNT to GSDMA3NT using quantitative hydrophobicity analysis (Table 2) and comparison to cited simulation work (Mari et al., 2022). The hydrophobicity calculation is rigorous. The mechanistic interpretation linking hydrophilicity to lipid detachment and sublytic pore formation is a reasonable inference, though C116 is explicitly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Membrane composition, fluidity, and cellular context significantly affect pore assembly. The cholesterol-rich plasma membrane mimetic is stiffer with higher edge tension than typical experimental membranes. Cytoskeletal interactions and solid support in AFM experiments alter lipid diffusion and edge tension. These factors may explain why arcs are abundant experimentally but unstable in simulations above certain sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 discuss limitations and contextual factors affecting the simulations. The biophysical principles (C98-C100) are established knowledge. The membrane properties (C101-C102) are reasonable inferences from composition. The effects of cellular context (C104-C107) are supported by cited literature. The synthesis explaining simulation-experiment differences (C108-C109) is a reasonable inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Comparison to other pore-forming proteins reveals key differences. GSDMA3NT 14-mers break up similarly to GSDMDNT 16-mers, and both show stable pore rings but fragile prepore rings. However, GSDMA3NT 7-mers don't form membrane edges within 4 \u03bcs. PLY monomers are ejected from membranes unlike GSDMDNT, though small PLY oligomers form similar pores. PLY's multi-domain architecture with flexible hinges and longer \u03b2-sheet likely prevent globular domain cracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C122 compare findings to prior simulation work on GSDMA3NT and PLY through citations. The comparisons are well-supported by the cited literature and help contextualize the current findings. The structural explanations for behavioral differences (C120-C122) are reasonable inferences from known architectures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C127"
+    ],
+    "result": "The lipid plug expulsion process agrees with AFM observations of material clearing from pores over time. The plug remaining flat rather than vesiculating is explained by the higher bending rigidity expected for cholesterol-rich membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124, C127 connect simulation observations to experimental data through citations and apply biophysical principles to explain differences from prior simulations. The reasoning is sound and the inferences are well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background context on GSDMD, pyroptosis, and prior structural/experimental work. GSDMD is the effector of pyroptosis, a regulated cell death pathway involving inflammasome activation and caspase cleavage. After cleavage, GSDMDNT binds acidic lipids, oligomerizes, and forms ~30-subunit \u03b2-pores from the inner membrane leaflet. Cryo-EM and AFM studies have resolved pore and prepore structures, with debate over whether insertion occurs from complete rings or growing arcs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C27 provide established background knowledge and cite prior literature appropriately. These are well-supported contextual claims that frame the current work but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C80",
+      "C87",
+      "C88"
+    ],
+    "result": "Comparisons to related experimental observations: PLY prepore oligomers recruit cholesterol; suilysin forms stable 5-subunit arcs; GSDMDNT permits arc growth; AFM shows abundant slit-shaped pores; GSDMDNT pores may dynamically open and close.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C79-C80, C87-C88 cite prior experimental literature to provide context for interpreting the simulation results. These are appropriately cited background claims that support the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "All MD simulations used GROMACS 2020.3 with CHARMM36m forcefield, TIP3P water, and 2 fs timestep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 describes the computational methods. This is clearly stated and represents standard methodology documentation.",
+    "result_type": "MINOR"
+  }
+]

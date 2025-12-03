@@ -1,0 +1,1943 @@
+{
+  "submission": {
+    "id": "b0a5c909-8513-40ee-a5a2-99a71188191a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:14:53.666575Z",
+    "updated_at": "2025-12-03T18:14:53.666575Z"
+  },
+  "content": [
+    {
+      "id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "submission_id": "b0a5c909-8513-40ee-a5a2-99a71188191a",
+      "content_type": "manuscript",
+      "content_text": "# Spatial frequency representation in V2 and V4 of macaque monkey\n\n## Authors\n\n- Ying Zhang<sup>1</sup> ([ORCID: 0000-0001-9631-8280](https://orcid.org/0000-0001-9631-8280))\n- Kenneth E Schriver<sup>1</sup> \u2020\n- Jia Ming Hu<sup>1</sup> ([ORCID: 0000-0002-5306-445X](https://orcid.org/0000-0002-5306-445X)) \u2020\n- Anna Wang Roe<sup>1</sup> ([ORCID: 0000-0003-4146-9705](https://orcid.org/0000-0003-4146-9705)) \u2020\n\n### Affiliations\n\n1. Department of Neurosurgery of the Second Affiliated Hospital, Interdisciplinary Institute of Neuroscience and Technology, School of Medicine, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n2. Key Laboratory of Biomedical Engineering of Ministry of Education, College of Biomedical Engineering and Instrument Science, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n3. MOE Frontier Science Center for Brain Science and Brain-Machine Integration, School of Brain Science and Brain Medicine, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpatial frequency (SF) is an important attribute in the visual scene and is a defining feature of visual processing channels. However, there remain many unsolved questions about how extrastriate areas in primate visual cortex code this fundamental information. Here, using intrinsic signal optical imaging in visual areas of V2 and V4 of macaque monkeys, we quantify the relationship between SF maps and (1) visual topography and (2) color and orientation maps. We find that in orientation regions, low to high SF is mapped orthogonally to orientation; in color regions, which are reported to contain orthogonal axes of color and lightness, low SFs tend to be represented more frequently than high SFs. This supports a population-based SF fluctuation related to the \u2018color/orientation\u2019 organizations. We propose a generalized hypercolumn model across cortical areas, comprised of two orthogonal parameters with additional parameters.\n\n## Introduction\n\nSpatial frequency (SF) selectivity is a fundamental feature encoded in the visual system. Previous studies have shown that the organization of SF selectivity is related to orientation and color maps in the primary visual cortex (V1) and have a high degree of periodicity in both cats (H\u00fcbener et al., 1997; Issa et al., 2000; Shoham et al., 1997; Tootell et al., 1981) and monkeys (Silverman et al., 1989). Studies have consistently shown an orthogonal mapping of SF and orientation, suggesting an efficient arrangement that provides each orientation access to a wide range of SFs (Issa et al., 2000; Nauhaus et al., 2012; Nauhaus et al., 2016; Xu et al., 2007). In contrast, color representation in V1 (the color is represented in patches commonly referred to as 'blobs' in V1) is generally associated with a range of lower SFs (Silverman et al., 1989; Tootell et al., 1988). Thus, in addition to a gradient from high to low of SF representation across eccentricities (Foster et al., 1985; De Valois et al., 1982; Lu et al., 2018; Yu et al., 2010), SF organization is further specified within local distinct functional regions. This systematic architecture in V1 suggests that SF may be a fundamental feature of the cortical \u2018hypercolumn\u2019 (c.f., Silverman et al., 1989: organized cortical modules; H\u00fcbener et al., 1997: \u2018mosaics\u2019 of functional domains for the different properties; Swindale et al., 2000: uniform coverage of cortical maps).\n\nWhether there are systematic associations between SF and other parameters in extrastriate areas, such as V2 and V4, is not known. The traditional view of the V2 hypercolumn comprises the alternating thin-pale-thick-pale stripe cycle (Horton, 1984; Livingstone and Hubel, 1984; Roe and Ts\u2019o, 1995; Tootell et al., 1983). Within thin stripes, surface properties, typically associated with low SF preferences, such as hue maps (Xiao et al., 2003), \u2018brightness\u2019 maps (Roe et al., 2005), and ON/FF maps (Wang et al., 2007) are represented. Within the thick and pale stripes are higher-order orientation maps such as those defined by illusory contours (Ramsden et al., 2001), motion direction maps (Lu et al., 2010), and maps for motion-defined edges (Chen et al., 2016), as well as stereo-defined near-to-far disparity maps (Chen et al., 2008). Neuronal response for features such as texture have also been described (Freeman et al., 2013), but functional organization has not yet been investigated. There is little systematic data relating SF representation in V2 to functional stripes (cf., Gegenfurtner et al., 1996; Levitt et al., 1994; Tootell and Hamilton, 1989) and, despite previous attempts, few studies have demonstrated functional mapping of stripes based on SF alone (Lu and Roe, 2007; Lu et al., 2018).\n\nIn V4, surface and shape information are organized into, for lack of better terminology, \u2018color\u2019 and \u2018orientation\u2019 bands. Within the color bands, maps for hue and for luminance have been described (Tanigawa et al., 2010; Liu et al., 2020; Li et al., 2022). Within orientation bands, there are maps for contrast-defined contours (Hu et al., 2020; Li et al., 2013; Lu et al., 2018; Tang et al., 2020; Tanigawa et al., 2010), disparity-defined contours (Fang et al., 2019), as well as maps for curvature degree and curvature orientation (Hu et al., 2020; Ponce et al., 2017). Despite our growing understanding of functional organization in V4, how SF preference maps (first reported in Lu et al., 2018) relate to other feature maps in V4 remains unknown.\n\nAs part of our investigation into \u2018hypercolumn\u2019 organization in extrastriate cortical areas, we propose a general hypercolumn layout for V2 and V4 that includes SF (cf., Roe et al., 2009; Ts\u2019o et al., 2009). Based on previous results reported in V1 (Foster et al., 1985; Lu et al., 2018; Nauhaus et al., 2012; Nauhaus et al., 2016; Silverman et al., 1989; Tootell et al., 1988; Yu et al., 2010), we predict that in each area (1) the range of SF associations shift with the topographic location of the \u2018hypercolumn\u2019 (Figure 1A), (2) orientation-selective regions (Figure 1B, blue) have a range of low (light gray) to high (dark gray) SF representation; iso-SF contours (purple dashed lines) map orthogonally to iso-orientation contours (green dashed lines), and (3) color-selective regions (Figure 1B, orange) exhibit an association with a range of low SFs (light gray). To address this proposal, we imaged V1, V2, and V4 of macaque monkey via intrinsic signal optical imaging (ISOI) with large cortical fields of view that contained sufficient territory to allow comparisons of functional organization at a range of eccentricities (Figure 2). Quantification of the relationship between SF maps and color and orientation maps in V2 and V4 revealed organizations that generally support our proposal for a hypercolumn architecture.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig1-v2.jpg)\n\n**Figure 1.:** (A) As eccentricity decreases from parafoveal to foveal region, the preferred SF gradually increases (represented as the brightness of the short bar). However, a local region (marked by a rectangle) covers a full range of SF representations in its corresponding topographic locations. This local region can be considered a \u2018hypercolumn.\u2019 (B) Details of structure in a single hypercolumn. In this local region, color domains (orange area) and orientation domains (blue area) exhibit different relationships with SF domains (light gray region: low SF preference domain; dark gray region: high SF preference domain). Orientation maps orthogonally to SF maps (green dashed lines: iso-orientation contours; purple dashed lines: iso-SF contours); an extensive range of SFs are available to each orientation. In comparison, color domains tend to have more spatial overlap with low SF preference domains and avoid overlap with high SF preference domains. In color domains, another orthogonal relationship exists between hue (dotted lines with different colors: iso-hue contours) and brightness (blue dashed lines: iso-brightness contours).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig2-v2.jpg)\n\n**Figure 2.:** (A) Visual stimuli. Top and bottom rows show the black/white and green/red full screen sinusoidal gratings for four different spatial frequencies (SFs) (indicated by the numbers on top, in cycles/deg). Here for demonstration, the stimulus size is set to 2\u00b0. (B) Diagram of imaging site in the right hemisphere. L: lateral; A: anterior. (C) Lower-left visual field. Black dot: fovea. Horizontal (red) and vertical (blue) lines mapped in (D). (D) Schematic mapping of lines in (C) in V4 (corresponding to the orange disc in B). The lateral part of the imaged region corresponds to the foveal region, while the medial part corresponds to the parafoveal region. LS: lunate sulcus; STS: superior temporal sulcus; IOS: inferior occipital sulcus. Red star: estimated foveal location.\n\n## Results\n\n### Overall SF preference across imaged visual cortical areas\n\nImaging a large field of view of the cortex makes it possible to directly compare the response differences between different visual areas (Figure 2). Figure 3 shows the blood vessel maps (A, E) and corresponding SF preference maps (B, F) for two separate cases wherein we imaged regions spanning V1, V2, and V4. The SF preference maps (Figure 3B and F) were generated by calculating the response amplitude of each pixel in these areas for stimuli with six different SFs, each at orientations of 45\u00b0 and 135\u00b0. We found that in both cases, most of the imaged V1 region favored high SF stimuli, while most of the imaged V4 region favored low SF stimuli. To examine the proportion of cortical area dedicated to a single SF preference in each area (V1, V2, and V4), we calculated for each SF a coverage ratio (the area of SF-preferential response divided by the whole area, i.e., V1, V2, or V4, within the field of view). For V1, the coverage ratio peaks at high SF (light gray bars in Figure 3C and G), while for V4, the coverage ratio peaks at low SF (black bars in Figure 3C and G), consistent with previous findings that V4 prefers lower SF than V1 (Lu et al., 2018). The preferred SFs (Figure 3D and H) significantly decrease from V1 to V4 (see Table 1, Kolmogorov\u2013Smirnov test, V1 vs. V4, V2 vs. V4, V1 vs. V2, p<0.001). Our maps, in contrast to earlier studies (Foster et al., 1985; Levitt et al., 1994; Lu and Roe, 2007; Lu et al., 2018; Silverman et al., 1989), directly show the overall SF preference in cortical space.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig3-v2.jpg)\n\n**Figure 3.:** (A, E) Blood vessel map of the imaged region for cases 1 and 2, respectively. V2 and V4 are separated by the lunate sulcus (LS). Red star: estimated foveal location. Scale bar here and in all subsequent figures are 1 mm. (B, F) SF preference maps for cases 1 and 2, respectively. Each SF stimulus contains two orientations, 45\u00ba and 135\u00ba. For each pixel, the preferred SF is defined as the SF corresponding to its strongest response. Different colors represent different SF preferences (see color bar at top). The border between V1 and V2 (defined by ocular dominance image) is indicated by a black dashed line. A, anterior; L, lateral. (C, G) The coverage ratio of SF preference in each visual cortical area (light gray: V1; medium gray: V2; black: V4). (D, H) Mean \u00b1 SD for the preferred SF of all pixels across V1, V2, and V4. ***Kolmogorov\u2013Smirnov test, p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C, G\u2013I) SF preference maps obtained by different orientations (A, H: 45\u00b0 and 135\u00b0; B, H: 45\u00b0; C, I: 135\u00b0). The color bar represents the preferred SF from 0.25 (red) to 4.0 (cyan) cycles/deg. Scale bars here and for all subsequent figures are 1 mm. (D\u2013F, J\u2013L) Preferred SF distribution acquired by different orientations and areas. The orientation factor does not cause significant differences (two-way ANOVA, p>0.05) in the results of the SF preference (SF = 0.25), (4), while the area factor causes significant differences (two-way ANOVA, P<0.05). Two-way ANOVA test. case 1: area difference (V1, V2, V4), p=0.0029 (SF = 0.25 cycles/deg); p=0.0008 (SF = 4 cycles/deg); orientation difference (45 + 135\u00b0, 45\u00b0, 135\u00b0), p=0.057 (SF = 0.25 cycles/deg); p=0.063 (SF = 4 cycles/deg). Case 2: area difference (V1, V2, V4), p=0.040 (SF = 0.25 cycles/deg); p=0.00061 (SF = 4 cycles/deg); orientation difference (45 + 135\u00b0, 45\u00b0, 135\u00b0), p=0.27 (SF = 0.25 cycles/deg); p=0.12 (SF = 4 cycles/deg).\n\n**Table 1.**\n Summary of the preferred spatial frequencies (SFs) in different visual areas.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Preferred SF (mean \u00b1 SD cycles/deg.)</th>\n      <th>V1</th>\n      <th>V2</th>\n      <th>V4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Case 1</td>\n      <td>2.86 \u00b1 1.40N = 147,207</td>\n      <td>2.03 \u00b1 1.51N = 103,377</td>\n      <td>1.23 \u00b1 1.32N = 490,921</td>\n    </tr>\n    <tr>\n      <td>Case 2</td>\n      <td>2.96 \u00b1 1.37N = 194,847</td>\n      <td>2.20 \u00b1 1.52N = 186,288</td>\n      <td>1.15 \u00b1 1.26N = 635,679</td>\n    </tr>\n  </tbody>\n</table>\n\nTo confirm that the use of just two orientations, 45\u00b0 and 135\u00b0, detects a complete picture of SF preference in the imaged area, we compared the SF preference results acquired by different orientations (45\u00b0 + 135\u00b0, 45\u00b0, 135\u00b0) (see Figure 3\u2014figure supplement 1) and did two-way ANOVA analysis (nine values went into the two-way ANOVA, including coverage ratios of high SF regions or low SF regions in V1, V2, and V4 acquired from different orientation comparisons, 45\u00b0, 135\u00b0, 45 + 135\u00b0). We found that, for different orientations, there were no significant differences (two-way ANOVA, p>0.05) in the coverage ratios of high SF preference (SF = 4 cycles/deg) and low SF preference (SF = 0.25 cycles/deg) regions in the imaged area. In contrast, significant differences were found for different visual areas (two-way ANOVA, p<0.05).\n\n### Foveal to parafoveal shift of SF representation in V4\n\nThe large-scale imaging allowed us to capture highly structured maps of functional domains (e.g., orientation and color domains in Figure 4A and B, respectively) and reveal changes to those maps for different SF conditions. Below, we present our results on orientation maps and then color maps.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Combined results generated by superimposing pixels in (D) and (E), respectively. Scale bar, 1 mm. (C) Selective activation centers of the activated orientation domains (blue dots) and color domains (orange dots) under different SF conditions. The dots are the geometric centroid of all corresponding activated regions in V4 (two-tailed t-test, p<0.01). The values indicate the SF used. (D) V4 orientation maps and corresponding activated regions for different SFs. The gratings above the maps indicate the subtraction pair for the maps. Left panel: differential maps in response to 45\u00b0 (black patches) versus 135\u00b0 (white patches); right panel: stimulus-activated orientation-selective regions, only pixels that can distinguish 45\u00b0 (black pixels) from 135\u00b0 (white pixels) are included (two-tailed t-test, p<0.01), numbers in the top-right corner indicate the coverage ratio of activated regions in the imaged V4. Red star: estimated foveal location. (E) Color maps and corresponding activated regions for different SFs, acquired from the same case in panel (A). Gratings above the maps indicate the subtraction pair for the maps. Left panel: differential maps in response to R/G gratings (corresponding to the black patches) versus W/B gratings (corresponding to the white patches). Right panel: activated color preference regions for the stimuli, only pixels showing significantly stronger responses to R/G gratings (black pixels) are included (two-tailed t-test, p<0.01). (F, G) Activated area histograms along the M-L axis generated from (D) and (E), respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Imaging results of cortical responses to gratings with different SFs (indicated on top in each column). Maps generated from response difference of 45\u00b0 gratings minus 135\u00b0 gratings (each row represents results from different cases). LS, lunate sulcus; STS, superior temporal sulcus. (B) Spatial distribution of the geometric center of activated orientation domains with different SFs. Under different SF conditions, the geometric centers of the activated orientation domains were calculated (two-tailed t-test, p<0.01). Light gray: low SF, 0.25\u20130.5 cycles/deg; gray: medium SF, 1\u20132 cycles/deg; dark gray: high SF, 3\u20134 cycles/deg. V1 and V4 activation centers were labeled separately. L, lateral; A, anterior; LS, lunate sulcus; red star, estimated foveal location. Scale bar, 1 mm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Color maps and corresponding activated regions with different SFs. Top panel: differential maps in response to R/G gratings (corresponding to the black patches) versus W/B gratings (corresponding to the white patches); bottom panel: activated regions by the stimuli, only including color pixels (show significantly stronger responses to R/G gratings, two-tailed t-test, p<0.01). (B) Combined results from (A). Pixels in (A) are superimposed. Numbers in the upper-right corner represent the coverage ratio of activated color domains in V4. Orange dots: centers of activated color domains corresponding to different SFs. Red star: estimated foveal location. Scale bar, 1 mm.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Same case as in Figure 4. (A) Matrices of correlation values of orientation maps. (B) Matrices of correlation values of color maps. The imaged V4 regions were divided into two halves: the left half of the region was designated as lateral, the right half was designated as medial, and the correlation value for each half was calculated separately.\n\nIn the imaging results shown in Figure 4D (left panel), we acquired differential orientation maps using six different SFs. We found that the functional map at a specific SF is not always easily ascertained. Gratings with low SFs (e.g., 0.25 cycles/deg, 0.5 cycles/deg) evoked clear selective responses (Figure 4D, thresholded, right panel) in all imaged V4 regions, whereas gratings with high SFs only evoked responses in certain regions, mostly in the lateral part of the cortex (toward foveal representation, red star).\n\nTo quantify this, for each tested SF, we analyzed the spatial distribution of the orientation-selective domains (see Figure 4D right panel, only pixels with significantly differential response to 45\u00b0 vs. 135\u00b0 were included). For each orientation map obtained at a given SF, we defined the \u2018selective activation center\u2019 as the geometric centroid of all significantly activated pixels (Figure 4C, two-tailed t-test, p<0.01). As SF increases, the location of the selective activation center shifts from medial to lateral across the cortex (Figure 4C, blue dots). We confirmed that this remains true for each of the other cases (Figure 4\u2014figure supplement 1, four cases from four hemispheres of three monkeys). Thus, the lack of response in the medial region to high SFs leads to a spatial medial-to-lateral shift of the selective activation center with increasing SF (Figure 4\u2014figure supplement 1B).\n\nWe also examined color maps. Many previous V4 imaging studies employed grating stimuli to obtain color maps. However, most of these studies (Li et al., 2014; Tanigawa et al., 2010) have not addressed how SF affects color selective response. To test this, we recorded cortical responses to red/green isoluminance sinusoidal gratings with six different SFs and compared these responses with those to achromatic stimuli of the same SF (Figure 4E). Color domains that showed significantly stronger responses (two-tailed t-test, p<0.01, N = 30) to red/green stimuli were marked in black (Figure 4E, right panel). Similar to orientation domains, under low SF conditions (<1 cycle/deg), color domains were detected in the medial region of the cortex. At high SF, the color-selective response is no longer easily discernible in the medial region (SF = 3, 4 cycles/deg, Figure 4E, right panel). But in the lateral cortical region, color-selective response was detected regardless of SF. Thus, the activation center of color-selective response also shifted from medial to lateral with increasing SF (Figure 4C, orange dots). In a second case, we obtained similar results (Figure 4\u2014figure supplement 2A) and found the activation center shifted laterally as SF increased (Figure 4\u2014figure supplement 2B). We found that, when only a few SFs are tested, the coverage ratio of the orientation and color domains is underestimated (see white numbers in upper corners in Figure 4A, B, D and E), underscoring the importance of testing a wide range of SFs.\n\nIn addition to extracting the activation centers for different SFs in V4, we also examined the spatial distributions for each SF separately. We plotted the proportion of the activated pixels at different distances from lateral (distance = 0 mm) to medial under different SF conditions (see Figure 4F and G). As reported in previous V4 studies (Tanigawa et al., 2010; Li et al., 2013), orientation domains and color domains tend to separate in space, forming different functional bands. As shown in Figure 4F and G, at distances of 2, 6, 10, and 14 mm, the percentages of activated orientation regions decrease while the percentage of activated color regions increases. We found that for the lateral orientation and color bands (see the two bands < 6 mm), the percentage values were higher for high SFs (blue/cyan lines vs. red/orange lines). In comparison, for the medial orientation and color bands (see the two bands >6 mm), the percentage values were higher for low SFs (red/orange lines vs. blue/cyan lines).\n\nWe found surprisingly that the relative proportions of high to low SF preferences differ for color and orientation. As shown in Figure 5, these proportions differ markedly in foveal vs. parafoveal locations. For each SF, we divided the number of activated pixels in the lateral and the medial parts (see Figure 5\u2014figure supplement 1) by the total number of the activated pixels preferring this SF (pixels selectively activated with a single SF). We found that the proportions of activated pixels in color and orientation domains in the lateral and medial parts of V4 change with SFs in distinct ways. In parafoveal cortex (medial), for both orientation and color domains, the proportion of pixels tends to decrease with increasing SF; in foveal cortex (lateral), for both orientation and color domains, the proportion of pixels increase as SF increases.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig5-v2.jpg)\n\n**Figure 5.:** (A) Demonstration of cortical blood vessel map and the visual areas chosen for analysis. See Figure 5\u2014figure supplement 1 for details. Scale bar, 1 mm. (B, C) The proportions of activated functional domains in the lateral and medial parts of V4 (color: orange, from four experiments in three hemispheres; orientation: blue, from seven experiments in five hemispheres) change according to SFs. Points connected by a line represent results from the same experiment.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Orange area: the chosen lateral and medial parts of V4, as mentioned in Figure 5D and E. L: lateral area (foveal area); M: medial area (parafoveal area). LS: lunate sulcus; STS: superior temporal sulcus. (A\u2013G) Chosen area for activated orientation domains from seven experiments in five hemispheres. (H\u2013K) Chosen area for activated color domains from four experiments in three hemispheres. The scale bars in all panels are 1 mm.\n\nThe exposed areas of V1 are in the lateral region of the hemisphere, corresponding to the eccentricity of 0\u20132\u00b0; here low SFs barely evoke measurable selective orientation responses (Figure 4\u2014figure supplement 1A, left column, cases 1\u20133). The orientation map in the lateral region is only apparent at high SFs (Figure 4\u2014figure supplement 1A, >1 cycle/deg). Although the optimal SF differs between V1 and V4, for both areas, the selective activation center moves from medial to lateral as SF increases (Figure 4\u2014figure supplement 1, cases 1\u20134, dots of different shading correspond to the activation centers at different SFs). In monkey visual cortex, the foveal regions of V1, V2, and V4 are located in the lateral part of the cortex (Gattass et al., 1981; Gattass et al., 1988 see Figure 2D), in agreement with the findings from electrophysiology studies that foveal regions favor high SF (Perry and Cowey, 1985; Schein, 1988; W\u00e4ssle et al., 1989; Wilder et al., 1996).\n\nTo further confirm the spatial relationship of functional maps acquired at different SFs, we calculated the cross-correlation values of these functional maps acquired at different SF conditions. Each response map was divided into two halves: foveal region, the left half close to V4 foveal region; and parafoveal region, the right half away from foveal region. The correlation values of the two halves were calculated separately (Figure 4\u2014figure supplement 3A and B, left matrix: foveal region; right matrix: parafoveal region). For orientation maps (Figure 4\u2014figure supplement 3A), high correlation values (>0.5) appeared in the comparisons among high SF conditions in foveal region. In contrast, high correlation values appeared in the comparisons among low SF conditions in parafoveal region. For color functional maps (Figure 4\u2014figure supplement 3B), higher correlation values were measured under low SF conditions in both foveal and parafoveal regions, while high correlation values appeared only in the foveal region under high SF conditions.\n\nThese differences reflect distinct capabilities of different cortical regions (fovea vs. parafovea). Independent of the type of visual information presented (orientation or color), parafoveal regions tend to process the visual input containing relatively low SF components, while visual input containing high SF components is better processed in foveal regions. In V4, the foveal region is capable of processing visual information with a broad range of SF sensitivity.\n\n### Relationship between SF and orientation maps in V4 and V2\n\nHaving obtained orientation and SF preference maps from the same cortical region, it becomes possible to analyze the spatial relationships between these maps. To identify the regions which are highly selective for orientation, for each pixel, we calculated normalized orientation values (from 0 untuned to 1 highly tuned) and set a threshold of 0.5 or larger (see orientation selectivity maps in Figure 6B and Figure 6\u2014figure supplement 2B; and the selectivity thresholded orientation preference map in Figure 6C). We determined the iso-orientation and iso-SF contours based on the smoothed orientation preference map (see Figure 6A) and SF preference map (see example in Figure 6\u2014figure supplement 1, 18 iso-orientation gradient contours and 5 iso-SF gradient contours). In V2 and V4, the iso-orientation and iso-SF contours that intersected at large angles were found most frequently (see Figure 6G, K and O, Figure 6\u2014figure supplement 2G and K). To demonstrate that the intersection angles are more frequently detected at a large angle, we divided the detected intersection angles into three groups (small: 0\u201330\u00b0; medium: 30\u201360\u00b0; large: 60\u201390\u00b0) and compared the percentage difference among these groups. The results indicate that there are more (percentage value) 60\u201390\u00b0 intersection angles than other kinds of intersection angles in the orientation-selective regions (see white patches in Figure 6F, J and N). The percentage of the large angle group is significantly higher than the small (Wilcoxon rank-sum test, p=1.60 \u00d7 10\u20135, n = 15 from five regions, two V2 regions, and three V4 regions) and medium groups (Wilcoxon rank-sum test, p=1.73 \u00d7 10\u20134). In addition, we compare the distribution between groups with strong orientation selectivity (e.g., Figure 6D\u2013O) and weak orientation selectivity (see Figure 6P\u2013U). The percentage difference in large intersection angle (60\u201390\u00b0) is also significant (strong orientation selectivity group, n = 15 from five regions, two V2 regions, and three V4 regions; weak orientation selectivity group, labeled as '60\u201390\u00b0 Ref.' in Figure 6V, n = 6 from two V4 regions; Wilcoxon rank-sum test, p=0.0057, see Figure 6V).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig6-v2.jpg)\n\n**Figure 6.:** (A) Orientation preference map. Different colors represent different orientation preferences. (B) Orientation selectivity map. The gray scale represents the normalized orientation selectivity (0: no orientation selectivity; 1: strong specific selectivity to one single orientation). (C) Selectivity thresholded orientation preference map (combined result from A and B). Cyan boxes indicate the chosen regions for intersection angle distribution analysis: one V2 region (D\u2013G), two V4 regions (region 1: H\u2013K; region 2: L\u2013O), and two V4 reference regions with weak orientation selectivity (dotted box, V4 Ref1: P\u2013R; V4 Ref2: S\u2013U). (D, H, L, Q, T) Iso-orientation (red lines) and Iso-SF gradient contours (blue lines). (E, I, M, P, S) Selectivity thresholded orientation preference maps corresponding to (D, H, L, Q, T). (F, J, N) Regions (white parts) with high orientation selectivity (normalized orientation selectivity > 0.5) selected for calculating the intersection angle. (G, K, O, R, U) Distributions of intersection angles of the selected regions. The dashed lines indicate the expected value (11.1%) if angles are distributed randomly. (V) Percentage comparison (Wilcoxon rank-sum test) among different angle groups (0\u201330\u00b0, 30\u201360\u00b0, and 60\u201390\u00b0 of strong orientation-selective regions, n=15, and 60\u201390\u00b0 of weak orientation-selective regions: 60\u201390\u00b0 [\u201cRef.\u201d], n=6). Error bar: SD. Scale bars: 1 mm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Data from the same case shown in Figure 6, V4 part 1. (A) Iso-orientation gradient lines and orientation preference map. The values indicate the different iso-orientation gradient contours (5\u00b0, 15\u00b0, 25\u00b0, 35\u00b0, 45\u00b0, 55\u00b0, 65\u00b0, 75\u00b0, 85\u00b0, 95\u00b0, 105\u00b0, 115\u00b0, 125\u00b0, 135\u00b0, 145\u00b0, 155\u00b0, 165\u00b0, 175\u00b0). (B) Iso-SF gradient lines (0.25, 0.5, 1, 2, 3 cycles/deg) and SF preference map. (C) Iso-orientation (red lines) and iso-SF gradient contours (blue lines). Scale bar, 1 mm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Orientation preference maps. (B) Orientation selectivity map. The gray scale represents the normalized orientation selectivity. (C) Orientation preference-selective map. The white region in (A) and (C), and the orange region in (B): blood vessels in the cortical surface. One V2 region (D\u2013G) and one V4 region (H\u2013K) were chosen for intersection angle distribution analysis. (D, H) Iso-orientation (red lines) and iso-SF gradient contours (blue lines). (E, I) Enlarged view of orientation preference-selective map in (C) corresponding to (D, H). (F, J) Regions (white regions) with high orientation selectivity (normalized orientation selectivity > 0.5) for calculating the intersection angle. (G, K) Distributions of intersection angles of the selected regions. Dashed lines indicate the expected value (11.1%) if angles are distributed randomly. Scale bars, 1 mm.\n\n### SF bias in V4 color domains\n\nSince the first report on V4 SF preference domains (Lu et al., 2018), the relationship between V4 SF domains and V4 color domains remains unclear. It should be noted that SF preference domains (i.e., preference for low vs. high, Figure 7B and C) are distinct from SF preference maps (i.e., six-value SF maps, Figure 3B and F), as the domains are determined by statistical analysis (two-tailed t-test, p<0.01) and effectively distinguish high SF from low SF. Here, by comparing cortical responses recorded using high SF stimuli at two orientations: 45\u00b0, 135\u00b0, and low SF stimuli (at the same two orientations), we generated differential SF maps (see Figure 7A). A distinct segregation of light and dark regions is visible in this functional map. The black patches are the regions that prefer high SF to low SF, while the white patches have the opposite preference.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D) Relationship in V4 that high SF domains tend to avoid color domains. (A) Same case as in Figure 4A. Differential SF map in V4 is produced by subtracting the average image of two oriented grating stimuli at a low SF (0.5 cycles/deg) from the corresponding average image at a high SF (3 cycles/deg). The dark patches correspond to regions that prefer higher SF, while the white patches prefer lower SF. (B, C) Overlay of color domains (orange) and SF domains (gray). (B) Low SF domains; (C) high SF domains. Scale bar, 1 mm. (D) The percentage of HSF/LSF (high spatial frequency/low spatial frequency) selectivity regions within color domains was calculated. Unfilled squares represent the results from each case (four cases). Filled squares are the averaged outcomes from the four cases. The mean value is shown on top of the corresponding group. For the other three cases, see Figure 7\u2014figure supplement 1. (E\u2013M) Relationship in V2 that stripe-like distribution of SF preference changes periodically. Data from the same case shown in Figure 3, case 1. (E) Color map. Regions 1 (orange rectangle) and 2 (cyan rectangle) were selected for further analysis in (G\u2013L). In V2, the yellow dashed outlines highlight the color domains. The border between V1 and V2 is indicated by a black dashed line. Scale bar, 1 mm. (F) Differential SF maps produced by subtracting the average image of two oriented grating stimuli at a low SF (0.5 cycles/deg) from the corresponding average image at a high SF (3 cycles/deg). Red dashed outlines: color domains same with those in (E). (G, H) Enlarged color maps from regions 1 and 2. (I, J) Enlarged SF maps from regions 1 and 2. (K, L) Changes of color-selective response (black lines) and SF preference (red lines) along the path parallel to V1/V2 border in V2. (M) Similar to color selective responses in V2, SF preference changes along V1/V2 border.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** SF domains (marked by gray) were the areas with a significant response difference (two-tailed t-test, p<0.01) between low SF conditions (0.25\u20130.5 cycles/deg, 45\u00b0 and 135\u00b0, left panel) and high SF conditions (3\u20136 cycles/deg, 45\u00b0 and 135\u00b0, right panel). Color domains (marked by orange) were superimposed over results based on activated regions (in gray) under different SF conditions. Each row of subplots represents results from different cases. Scale bar: 1 mm.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81794/elife-81794-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A\u2013C) Differential SF maps produced by subtracting the average image of two oriented grating stimuli at a low SF (A, B: 0.5 cycles/deg; C: 0.25 cycles/deg) from the corresponding average image at a higher SF (A: 3 cycles/deg; B: 1.5 cycles/deg; C: 1 cycle/deg). Red star: estimated foveal location. The arrows indicate the high SF preference regions in V2. Scale bar: 1 mm.\n\nWe compared the spatial relationship of color domains with SF domains (Figure 7A\u2013D). Figure 7B shows the low SF preference domains color coded in gray relative to the color domains (orange patches). Similarly, high SF preference domains are color coded in gray relative to the same domains in Figure 7C. In this case, low SF preference domains tend to co-localize with V4 color domains to a greater extent than high SF preference domains (21.3% vs 8.3% of all pixels in color domains).\n\nAdditional examples are shown in Figure 7\u2014figure supplement 1 (three cases from three different hemispheres). In these four cases, we found that the total amount of cortex able to discriminate high SF vs. low SF (high SF plus low SF pixels) is only a small portion of the total V4 area (coverage ratio of high SF preference domains in V4: 3.9% \u00b1 1.5%, mean \u00b1 SD; coverage ratio of low SF preference domains in V4: 6.0% \u00b1 3.7%, mean \u00b1 SD.; coverage ratio: the area of SF domains divided by the imaged area of V4). Although the difference is not statistically significant (four cases, Wilcoxon test, p>0.05), in all cases, we found a great tendency for low SF domains to overlap with color domains (the percentage of high SF preference regions in color domains: 3.9% \u00b1 3.3%; the percentage of low SF preference regions in color domains: 13.3% \u00b1 8.4%, Figure 7D).\n\n### Change of SF preference in V2\n\nPrevious studies in V2 have shown that relying on SF to distinguish different types of stripes (thin, pale, thick) is difficult (Levitt et al., 1994; Lu et al., 2018; Tootell and Hamilton, 1989). However, one study did report a stripe specific SF selectivity (Lu and Roe, 2007). We hypothesize that this controversy is due to the inability of cytochrome oxidase staining to reliably identify stripe type, which functional imaging can securely address. To further explore this, we first examined whether there were measurable SF preference differences in V2. As indicated in the map, the SF preference changed across V2 (same as V2 in Figure 3B, the region between lunate sulcus and V1/V2 border indicated by red arrow). We adopted the same method as Lu (Lu et al., 2018) to obtain a differential SF map (Figure 7F). The low SF preference regions obtained using these two methods (white patches, in the differential SF map, see Figure 7F; red/orange regions, in the colored SF preference map, see Figure 7I and J) are well correlated with color preference domains (red dashed circles in Figure 7F and black patches in Figure 7G and H). In addition, we acquired differential SF maps by subtractions between different SF pairs (see Figure 7\u2014figure supplement 2). For subtraction between high SF (>1 cycle/deg) and low SF (0.5 cycles/deg) conditions, high SF preference domains can be detected in the foveal region (red star, see black patches indicated by red arrows in Figure 7\u2014figure supplement 2A and B). However, for the subtraction between medium SF (1 cycle/deg) and low SF (0.25 cycles/deg) conditions, the relatively high SF preference domains can only be detected in the parafoveal region (see black patches indicated by blue arrows in Figure 7\u2014figure supplement 2C). These results indicate from parafoveal to foveal region, the preferred SF tends to increase gradually.\n\nTo provide an additional illustration of how SF preference varies along V2, we selected V2 regions that exhibited two separated color domains (Figure 7E, regions 1 and 2) and compared the changes of SF preference against color selectivity along the V2 long axis (parallel to the black arrows in Figure 7G and H). Both SF preference (red lines) and color selectivity (black lines) vary along the V1/V2 border (Figure 7G\u2013L). Color selectivity was found in or near low SF preference regions (see also Figure 7F, red dashed circles and white patches in V2); however, not all low SF preference regions exhibited strong color selectivity. Thus, SF preference differences vary uniquely within V2 (see Figure 7M). The differences in SF preference between the regions on the two sides of a thin stripe (see Figure 7K and L, thin stripe location: around the peaks of the black lines) may correlate to the reported two types (medial vs. lateral) of pale stripes in V2 (Felleman et al., 2015).\n\n## Discussion\n\nUsing optical imaging of intrinsic signals in a large area of visual cortex, we were able to simultaneously characterize the functional architecture underlying color, orientation, and SF domains in areas V2 and V4. We found (1) Topography: With respect to topography, the SF population response of V4 orientation and color domains shift systematically with topographic location. To be specific, the geometric centroids of the selective response shift toward foveolar (lateral) parts of the cortex as SF increases. This finding quantifies, at a population level, the gradation of SF preference across the visual field. Interestingly, distinct from V1 fovea, which was selectively responsive to orientations of higher SFs (see Figure 4\u2014figure supplement 1A), the foveal region of V4 was responsive to a broad range of SF from high to low, suggesting greater SF integration at higher cortical levels, even in foveal regions. (2) Orthogonal primary axes: Within V4 and V2, similar to what was previously shown in V1, the gradients of orientation and SF maps tend to be orthogonal to one another. (3) Low SF bias in V4 and V2 color domains: We find there is a tendency for low SF preference domains to overlap with color domains in V4 and V2.\n\n### General organization rules of cortical space\n\nAs mentioned in many previous studies, orthogonal crossings between different cortical maps facilitate the maximum combination of response properties in a local area with columnar organization. This kind of spatial relationship has now been reported in different animals (cat, monkey) and between different functional maps including orientation vs. ocular dominance, orientation vs. SF in cat area 17 (H\u00fcbener et al., 1997); orientation vs. ocular dominance, orientation vs. SF in monkey V1 (Bartfeld and Grinvald, 1992; Nauhaus et al., 2012; Obermayer and Blasdel, 1993); hue vs. lightness in macaque V1 (Li et al., 2022); orientation vs. disparity in macaque V2 (Chen et al., 2008; Ts\u2019o et al., 2009) and, in this study, orientation vs. SF in macaque V2 and V4. These examples suggest that to effectively use cortical space, this orthogonality is established by key visual attributes.\n\nWe suggest that this orthogonality may be a common principle and reveals key parameters specific to each cortical area. Thus, for object structure, orientation and SF are two key parameters; for color, the key parameters are hue and luminance (Li et al., 2022). These combinations ensure a complete representation of basic shape and surface information at each cortical level. Thus, cortical mosaics contain distinct regions of orthogonal feature parameters, as observed in the color and orientation stripes of V2 and the color and orientation bands of V4, and may present for other parameters (e.g., face space, object space) in higher cortical areas.\n\n### Population-selective responses across the cortex\n\nThe ISOI method enables us to study the population-selective responses across a large area of the visual cortex. Consistent with previous findings (Desimone and Schein, 1987; Lu et al., 2018), our results indicate that the majority of V4 regions favor low SF relative to V1 (Figure 3). For both V4 orientation- and color-selective response, there is a tendency for representation to shift to higher SFs from parafovea to fovea (Figure 4 with three supplements, and Figure 5 with one supplement), supporting the inverse relationship between SF preference and retinal eccentricity (Desimone and Schein, 1987; Lu et al., 2018). However, it should be noted that in foveal V4 region, even at low SF, robust orientation- and color-selective responses are detected. This points to an important difference between V1 and V4. That is, foveal representation in V4 may be better organized for processing complex images (e.g., natural scenes) with multiple SF components.\n\n### SF preference organization in V2\n\nWe explored whether SF is spatially organized relative to the stripes in V2. We found that similar to color-selective response, SF preference changes within the exposed V2 area, forming different SF preference patches, which supports a general functional layout for SF coding in the visual system (preference for low SF in V1 blob, V2/V4 low SF domains; preference for high SF in V1 interblob, V2/V4 high SF domains). Based on the resolution of ISOI, we cannot achieve cellular level resolution. We cannot do further analysis in regions containing neurons with complex selectivity (e.g., orientation pinwheel). These tiny structures are best studied with other methods (e.g., two-photon imaging). More evidence and new techniques (e.g., ultra-high-field 7T fMRI) could also be introduced to test whether the SF preference in the entire V2 changes periodically as other features (e.g., color, orientation, direction, disparity).\n\nWhy does SF preference in V2 change in this way? As suggested by modeling V2 retinotopic maps of tree shrews (Sedigh-Sarvestani et al., 2021), in elongated cortical areas such as V2 there tend to be periodic changes in response features across the cortical surface. Another putative functional implication of this periodic distribution is to aid in the integration across features spaces (wiring minimization) via horizontal connections in V2 (Chklovskii et al., 2002; Cowey, 1979; Hubel and Wiesel, 1977; Mitchison, 1991; Koulakov and Chklovskii, 2001).\n\n### Thoughts about the hypercolumn\n\nBased on the above findings, we suggest a nested hierarchy of organizations (see Figure 1). At the scale of visual field representation, there is a broad and downward shifting range of SFs from center to periphery. Within this global SF map lie hypercolumns of repeated orientation and color representation, each of which contains two orthogonally arranged primary parameters. In the \u2018orientation\u2019 regions, SF is systematically and orthogonally mapped in relation to the orientation map (this study); in the \u2018color\u2019 regions, hue and lightness are orthogonally mapped (Li et al., 2022). Analogous to how the primary parameter spaces mapped in each cortical area change from one area to another (e.g., V1: ocular dominance, orientation, color; V2: higher-order orientation, hue, disparity; V4: curvature, 3D shape from shading, hue and lightness, Hu et al., 2020; Srinath et al., 2021; face areas: face maps, Kanwisher et al., 1997, Chang and Tsao, 2017; object areas: object maps, Bao et al., 2020), we hypothesize that subregions of a cortical hypercolumn also organize for different parameters. Thus, while SF is an important primary axis in orientation regions, in color regions which by nature are associated with low SFs, the rationale for a systematic SF map is weakened. One could view the color regions as evolutionary \u2018add-ons,\u2019 which became tacked on to the low end of the SF continuum. It should be noted that the functional maps or regions (e.g., orientation, color) in V2 and V4 are not simple repeats of the functional representation in V1, although here they have the same name (orientation, color). These maps or regions are dedicated to processing different visual information in different visual areas. We suggest the architecture of SF representation, which describes distinct SF representations within orientation and color regions, further extends and supports the view of continued parallel streaming of feature-specific pathways.\n\n## Materials and methods\n\nData was acquired from five hemispheres of three adult macaque monkeys (one male and two female, Macaca mulatta). All procedures were performed in accordance with the National Institutes of Health Guidelines and were approved by the Zhejiang University Institutional Animal Care and Use Committee (approval no. ZJU20200022 and ZJU20200023).\n\n### Animal preparation\n\nChronic optical windows were implanted in contact with the cortex above areas V1, V2, and V4, containing lunate sulcus and superior temporal sulcus as described previously (Hu et al., 2020, also see Figure 2B). The eccentricity of the visual field corresponding to exposed V4 was 0\u20135\u00b0 and for V1/V2 was 0\u20132\u00b0. Following the craniotomy surgery, optical images were acquired in order to generate basic functional maps. Monkeys were artificially ventilated and anesthetized with propofol (induction 5\u201310 mg/kg, maintenance 5\u201310 mg/kg/hr, i.v.) and isoflurane (0.2\u20131.5%). Anesthetic depth was assessed continuously by monitoring heart rate, end-tidal CO2, blood oximetry, and EEG. Rectal temperature was maintained at 38\u00b0C. Animals were paralyzed (vecuronium bromide, induction 0.25 mg/kg, maintenance 0.05\u20130.1 mg/kg/hr, i.v.) and respirated. Pupils were dilated (atropine sulfate 1%) and eyes fitted with contact lenses of appropriate curvature to focus on a stimulus screen 57 cm from the eyes.\n\n### Visual stimuli for optical imaging\n\nVisual stimuli were created using ViSaGe (Cambridge Research Systems Ltd.) and displayed on a calibrated 27-inch monitor (Philips 272G5D) operating at 60 Hz refresh rate. The luminance for white stimuli was 206.52 cd/m2 and black was 0.50 cd/m2. Full-screen visual grating stimuli were used to locate different functional domains. To acquire color maps (Figure 4E, Figure 4\u2014figure supplement 2, Figure 7B, C and E, Figure 7\u2014figure supplement 1), red/green isoluminance (red: CIExyY, 0.662, 0.328, 40; green: CIExyY, 0.320, 0.613, 40) and black-white sine-wave drifting grating stimuli, as shown in Figure 2A, were presented at two different orientations (e.g., 45\u00b0 and 135\u00b0) with various SFs. To acquire orientation maps (differential orientation maps: Figure 4D and Figure 4\u2014figure supplement 1; orientation preference maps: Figure 6A, Figure 6\u2014figure supplement 1A, Figure 6\u2014figure supplement 2A; orientation selectivity map: Figure 6B, Figure 6\u2014figure supplement 2B; selectivity thresholded orientation preference map: Figure 6C, Figure 6\u2014figure supplement 2C) and SF maps (differential SF maps: Figure 7A and F, Figure 7\u2014figure supplement 2; SF preference maps: Figure 3B and F, Figure 3\u2014figure supplement 1A\u2013C, G\u2013I, Figure 6\u2014figure supplement 1B, Figure 7I and J), gratings with different orientations (0\u00b0, 45\u00b0, 90\u00b0, 135\u00b0) and different SFs (0.25, 0.5, 1, 1.5, 3, 4 cycles/deg) were presented. The temporal frequency of the gratings was fixed to 4 Hz, and the corresponding drifting speeds of these SF conditions (0.25, 0.5, 1, 1.5, 3, 4 cycle/deg) are 16, 8, 4, 2.7, 1.3, 1 deg/s. The different directions of motion were randomly interleaved.\n\n### Optical imaging\n\nThe brain was imaged through a glass window mounted in contact with cortex. Images of cortical reflectance changes (intrinsic hemodynamic signals) corresponding to local cortical activity were acquired (Imager 3001, Optical Imaging Inc, German Town, NY) with 630 nm illumination. Image size was 1080 \u00d7 1308 pixels representing 14.4 \u00d7 17.4 or 8.7 \u00d7 10.5 mm field of view. Visual stimuli were presented in a random order. Each stimulus was presented for 3.5\u20134.5 s. Frames were acquired at 4 Hz for 4\u20135 s synchronized to respiration. Visual stimuli were presented 0.5 s after beginning image acquisition. The imaging data were stored in a block fashion. Each block contained the imaging data recorded from the stimulus conditions (presented one time). Each stimulus was presented at least 25 times.\n\n### Data analysis\n\n#### Generation of functional maps\n\nWith the following formula,$\u0394R_{i}=(R_{i1}\u00af\u2212R_{i2}\u00af)\\times\\sqrt{N}/S_{i}$, we assessed the response differences between two comparison groups. $R_{i1}\u00af$ and $R_{i2}\u00af$ are the mean dR/R values ($dR/R=\\frac{R_{9\u2212end}\u2212R_{1\u22123}}{R_{1\u22123}}$, R9-end is the averaged response from frames 9 to the last frame, R1-3 is the averaged response from frames 1\u20133) in the two compared conditions for pixel i, N is the number of trials, and Si is the standard deviation of $(R_{i1}\u2212R_{i2})$. Single condition maps were obtained by comparing the images acquired during stimulus and during a blank.\n\nColor maps were obtained by comparing red/green and white/black grating images, differential SF maps were obtained by comparing high (2\u20136 cycles/deg) and low (0.25\u20130.5 cycles/deg) SF images, and differential orientation maps were obtained by comparing two orthogonal orientation images (45\u00b0 vs. 135\u00b0). Maps were low-pass filtered (Gaussian filter, ~30\u201380 \u03bcm diameter) and low-frequency noise was reduced by convolving a given map with a~1\u20132 mm diameter Gaussian filter and subtracting from the original map. Within a single experimental session, the same filtering parameters were always used to ensure that this filtering procedure did not influence the observed differences. The border between V1 and V2 was determined based on color map: in V1 color response has a blob-like distribution, whereas in V2 color response has a stripe-like distribution.\n\nTo generate SF preference maps (e.g., in Figure 3B and F), for each pixel we compared its activation under different single SF conditions. The preferred SF of each pixel was defined as the SF at which the strongest activation signal (amplitude averaged from frame 10 to frame 20 in each condition) for that pixel was observed. The comparison includes two orientations (45\u00b0 and 135\u00b0); for each orientation, six different SFs, 0.25, 0.5, 1, 1.5, 3, and 4 cycles/deg, were presented. Each pixel in a given SF preference map was assigned a unique color to represent the preferred SF. Orientation preference maps (Figure 6A, Figure 6\u2014figure supplement 2A) were calculated based on single orientation condition maps (four orientations, 0\u00b0, 45\u00b0, 90\u00b0, 135\u00b0), and each pixel was assigned a unique color to represent the preferred orientation (Bosking et al., 1997).\n\n#### Locating the positions of selective activation and determining the activation center\n\nFunctional domains were identified by selecting the pixels with a significant difference in dR/R (two-tailed t-test, p<0.01) under two comparison conditions (see Table 2).\n\n**Table 2.**\n Comparisons used to generate different functional domains.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Comparison</th>\n      <th>Domain type</th>\n      <th>\u0394dR/R criteria</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">RG vs. WB</td>\n      <td>Color</td>\n      <td>&lt;0</td>\n    </tr>\n    <tr>\n      <td>Luminance</td>\n      <td>&gt;0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">0\u00b0 vs. 90\u00b0</td>\n      <td>0\u00b0</td>\n      <td>&lt;0</td>\n    </tr>\n    <tr>\n      <td>90\u00b0</td>\n      <td>&gt;0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">45\u00b0 vs. 135\u00b0</td>\n      <td>45\u00b0</td>\n      <td>&lt;0</td>\n    </tr>\n    <tr>\n      <td>135\u00b0</td>\n      <td>&gt;0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">High SF (\u22652 cycles/deg) vs. low SF (&lt;1.5 cycles/deg)</td>\n      <td>High SF</td>\n      <td>&lt;0</td>\n    </tr>\n    <tr>\n      <td>Low SF</td>\n      <td>&gt;0</td>\n    </tr>\n  </tbody>\n</table>\n\n_SF: spatial frequency._\n\nFor a given activated region, the activation center was defined as the geometric centroid of all significantly activated pixels within the region; for example, the orientation-selective activation center in Figure 4D is the centroid of all the pixels of 45\u00b0 and 135\u00b0 orientation domains under one SF condition and the color activation center in Figure 4E is the centroid of all the pixels of color domains under one SF condition. The overlap between different functional domains was also calculated based on these thus-defined functional domains (see Figure 7B\u2013D, Figure 7\u2014figure supplement 1).\n\n#### Calculating the correlation of pairs of maps\n\nTo quantify the correlation between two functional maps, we isolated the significant responses in the imaged area of V4 (regions that were significantly activated by the visual stimuli, two-tailed t-test, p<0.01) and calculated the cross-correlation values between the maps (Figure 4D and E, right panels) acquired under different SF conditions. To compare the difference between foveal and parafoveal regions, we divided the imaged V4 regions into two halves: the left half of the region was designated as foveal, the right half was designated as parafoveal, and the correlation value for each half was calculated separately.\n\n#### Comparing the spatial relationship between SF and orientation maps\n\nIso-orientation contours (18 contours, 5\u00b0, 15\u00b0, 25\u00b0, 35\u00b0, 45\u00b0, 55\u00b0, 65\u00b0, 75\u00b0, 85\u00b0, 95\u00b0, 105\u00b0, 115\u00b0, 125\u00b0, 135\u00b0, 145\u00b0, 155\u00b0, 165\u00b0, and 175\u00b0) and iso-SF contours (five contours, 0.25, 0.5, 1, 2, and 3 cycles/deg) were drawn based on these smoothed maps using the MATLAB \u2018contour\u2019 function. We quantified the orientation selectivity of each pixel by calculating the vector sum of the responses to the four tested orientations (0\u00b0, 45\u00b0, 90\u00b0, and 135\u00b0). The length of each vector was normalized to a range of 0\u20131 by dividing the largest vector length. We calculated the difference between the two gradients at each intersection within the strong orientation-selective regions (normalized orientation selectivity > 0.5, e.g., Figure 6, V2 and V4 parts) or weak orientation-selective regions (normalized orientation selectivity < 0.5, e.g., Figure 6, V4 refs) to determine the spatial relationship between SF and orientation maps.\n\n#### Characterizing the layout of SF preference in V2\n\nAs reported in previous studies, V2 color-selective response changes periodically along the long axis of V2 (Levitt et al., 1994; Roe and Ts\u2019o, 1995). To characterize the periodic change of SF preference in V2, we chose a region of V2 with clearly identifiable periodic changes in color response (at least two well-separated color domains) for further analysis. We slightly rotated the selected V2 region to align the V1/V2 border horizontally in the cropped small map (see Figure 7G and H). For each of these small maps, we quantified and normalized color selectivity and SF preference for all pixels in the map. The average value for the pixels along each vertical line at different distances from left (distance = 0 mm) to right (distance = 4.5 mm) was then computed and plotted.\n\n#### Calculating the coverage ratio of selective activation\n\nWe first determined the activated orientation and color domains to calculate the proportion of activated regions in a given area. The coverage ratio (e.g., the values at the corners in Figure 4D and E) was calculated by dividing the number of the selectively activated pixels recorded at each SF by the total number of pixels in the given area. To evaluate the weights of the activated pixels at different distances from lateral (distance = 0 mm) to medial (Figure 4F and G), we calculated by dividing the number of the selectively activated pixels along each vertical line at different distances by the total number of activated pixels with the given SF. To evaluate the response weights of V4 lateral and medial parts in different SFs (Figure 5B and C) at each single SF condition, we calculated the ratio of the activated pixels in lateral and medial parts to all the activated pixels for a given SF.\n\nAfter merging all the orientation- and color-selective pixels at different SF conditions (at least three SFs, low: 0.25\u20130.5 cycles/deg; medium: 1\u20132 cycles/deg; and high: 3\u20136 cycles/deg), we obtained the regions representing nearly the entirety of orientation/color domains (see example in Figure 4A and B) and calculated the coverage ratio of the functional domains within the area (values in Figure 4A and B).\n",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "898b1a85-ab67-4fa1-b7bc-91188140aa61",
+      "submission_id": "b0a5c909-8513-40ee-a5a2-99a71188191a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Supratim Ray, https://ror.org/04dese585 Indian Institute of Science Bangalore India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81794.sa0](https://doi.org/10.7554/eLife.81794.sa0)\n\nThis article makes an important contribution to the study of early visual representation in primates by showing that intermediate cortical areas V2 and V4, as well as primary cortical area V1 (previously shown), contain orthogonal maps of orientation and spatial frequency. The authors provide convincing evidence of this fundamental principle of functional mapping across the two-dimensional cortical surface that ensures and optimizes the complete representation of these two coding dimensions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Supratim Ray, https://ror.org/04dese585 Indian Institute of Science Bangalore India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81794.sa1](https://doi.org/10.7554/eLife.81794.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spatial frequency representation in V2 and V4 of macaque monkey\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tirin Moore as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Charles E Connor (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. There are five major claims. First is a replication of lower spatial frequency representation in V4. This is based on two examples shown in Figure 3. The differences look clear but should be analyzed statistically.\n\n2. The second claim is that, on the large scale of the visual field representation in V2 and V4, spatial frequency is mapped from high to low going from fovea to periphery, here estimated as lateral to medial, as in V1. The analysis for this is to plot the geometric centroids of 6 different spatial frequency band responses, for orientation contrasts (Figure 4A) and color contrasts (Figure 4B), and show that they progress in position from lateral to medial for high to low frequencies. This seems like an unusual analysis that obscures most of the original data concerning the relationship of spatial frequency response profiles to the two-dimensional imaging area. And, the centroids do not show a continuous map, but rather a bunching of points except for the extremes. The additional data are 4 supplemental examples with three, different frequency ranges. These data are not analyzed statistically.\n\n3. The third and most important claim is that spatial frequency and orientation are mapped orthogonally (and recursively) in V2 and V4, as seen in Figure 5 and the Figure 5 supplement. Together these figures present two regions in V4 and two regions in V2. If these are the only analyzed regions, the authors need to specify more clearly how they were selected. Presumably, though, other regions were analyzed, and the authors should present results from all analyzable regions, and use statistical analyses to establish significance.\n\n4. The fourth claim is that color-sensitive regions in V4 are more associated with low spatial frequencies. The one significant example (the analysis and statistical tests need to be explained), shown in Figure 6, shows a weak relationship to color for both spatial frequency bands, and the other examples presented in the supplementary are not significant and have even lower absolute relationships. These results, if presented, should be considered inconclusive.\n\n5. The fifth claim is for stripe-like periodicity of spatial frequency representation in V2, related to color tuning. This is supported by ostention to binary maps of spatial frequency tuning in Figure 7 and supplement. Establishing this periodicity would require statistical analysis, and in any case, seems impossible since only a sliver of V2 is visible in these brain surface images, so stripes orthogonal to the V1/V2 boundary (i.e. CO stripes) cannot be distinguished from other patterns of spatial frequency tuning. In fact, Figure 5E and S5I do not appear to have iso-frequency contours biased toward that orientation.\n\n6. I recommend emphasizing the conclusion that spatial frequency and orientation are mapped orthogonally in V2 and V4, and presenting analyses of all analyzable imaged regions, with statistical tests.\n\n7. The analysis of spatial frequency selectivity in V1 vs. V2 vs. V4 should include a statistical test. The authors might consider a newly available explanation for lower frequency tuning in V4, that the predominant fraction of V4 neurons is tuned for 3D shape from shading, which by its nature is low in spatial frequency (Srinath et al., Current Biology, 2021). This tuning is mapped into patches that are intercalated with patches tuned for 2D shapes, and the authors could consider how this 2D/3D mapping relates to the mapping they observe for spatial frequency and orientation.\n\n8. If the authors want to present an analysis of spatial frequency as a function of laterality, a more continuous analysis like marginal response histograms for spatial frequency along the ml axis would be more informative and amenable to statistical analysis.\n\n9. I recommend eliminating the analyses of and claims about color vs. spatial frequency and stripe-like periodicity because the data do not seem adequate for testing the hypotheses.\n\n10. The first concert has to do with the use of just two orientation values, 45 and 135 degrees to form a neutral orientation control condition (a cocktail blank), where (I assume because the details were sketchy) responses are added, and then subtracted from the comparison condition with a different color or spatial frequency. Surely, horizontal and vertical orientation regions of the cortex will not be stimulated, or weakly at best, and it will be harder or impossible to determine the preferences of these regions for other parameters, such as SF or color. If the authors are sure this is not a problem I think it needs to be addressed directly, early on in the paper.\n\n11. The second concern has to do with the distribution of iso-parameter contour intersection angles (e.g. Figures5d and h). The results seem, literally, too good to be true. Previous studies (e.g. Obermeyer and Blasdel, 1993; Hubener et al., 1997) have all shown very much broader distributions. It makes me wonder if the cocktail blank problem above has resulted in some kind of systematic distortion of the SF map, such that the intersection angles are biased (I do not have a more developed perspective on it than that). The second possibility is some kind of numerical error and I would urge the authors to check their code \u2013 e.g. try the same calculation with an OR map from one animal superimposed on an SF map from another and see if the expected random distribution is found.\n\n12. I will add that the finding of decreasing SF preference with increasing distance from the fovea seems unremarkable and I would suggest de-emphasising it as a main result. It is certainly relevant to interpreting the observations of course because SF can only be interpreted with respect to eccentricity. But it is hardly a new or unexpected finding. Also, the fact that color processing is restricted to low SF values is well established in the color literature \u2013 this is probably an unavoidable consequence of the distribution of red and green cones across the retina. Some reference to these long-established results might be made.\n\n13. I found the proposed hypercolumn architecture in Figure 1B very difficult to understand. SFs vary in a continuum, so why are only two levels (low SF and high SF) shown in two different colors? Iso-orientation and Iso-SF lines could have been shown in different colors also (say HSV colors for orientation to show the circular mapping and gray colormap for SF going from low to high). Similar to what has been done for iso-hue and iso-brightness lines in the color region. Perhaps it may be worthwhile to show the same proposed architecture in V1 as well, in which orientation maps form pinwheels and colors are in separate blobs. It was unclear to me how this architecture could have pinwheels/blobs as well.\n\n14. It is not clear to me how the details of the functional maps depend on the choice of stimuli. In single unit studies, typically a large number of orientations and SFs are used to independently map the SF and orientation tuning preferences. In contrast, here only 2 orientations are used in one case to map the color space. Even for mapping the orientation space, only 4 orientations are used. For mapping the color space also, only the hues along the red-green axis are varied (L-M pathway). I understand that some of these choices could be due to the recording modality (imaging), but it would be very useful if the authors could discuss how/if these stimulus choices can affect their results. More details of the stimuli, such as the drift rate of the gratings, and the cie (x,y, Y) coordinates of red and green hues would be useful.\n\n15. Can you show the iso-contour lines for orientation on the orientation maps also as a supplementary figure to see how well the algorithm works? Figure 5A shows iso-orientation lines on the SF map. The iso-SF contours shown in Figure 5B easily correspond to the colors in the SF map shown in 5A, but I had difficulty mapping the orientation. Also, I was wondering whether the way the comparisons are done to get the maps (for example, in Figure 4, the same 4 stimuli are compared in two different ways to get orientation and color maps) can potentially impose some constraints on those maps. I say this because it is striking to me that almost every red and blue line shown in 5C and 5G appears to intersect orthogonally (as also shown in 5D and 5H).\n\n16. To me the orthogonality of SF and Orientation contours in Figure 5 was the most striking result. Can you show how this analysis looks for V1? The supplementary figure also shows only V2 and V4.\n\n17. The claim about periodicity is not well quantified. If the authors wish to make this claim, they need to show the Fourier transform of the activation pattern as a function of space and show clear peaks in the spectrum. Also, the authors can perhaps clarify what is the spatial resolution of the imaging technique itself.\n",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8700cdd8-1444-4a2f-afe0-119ebb1dd49f",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C1",
+      "claim": "Spatial frequency (SF) selectivity is a fundamental feature encoded in the visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial frequency (SF) selectivity is a fundamental feature encoded in the visual system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about SF selectivity being fundamental, supported by the context of the manuscript and established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "33924adf-e1d0-41ca-912f-d78b3e2a0964",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C2",
+      "claim": "The organization of SF selectivity is related to orientation and color maps in the primary visual cortex (V1) and have a high degree of periodicity in both cats and monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the organization of SF selectivity is related to orientation and color maps in the primary visual cortex (V1) and have a high degree of periodicity in both cats (H\u00fcbener et al., 1997; Issa et al., 2000; Shoham et al., 1997; Tootell et al., 1981) and monkeys (Silverman et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2b200115-f5aa-46d9-8734-d97286dc8de1",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C3",
+      "claim": "Studies have consistently shown an orthogonal mapping of SF and orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have consistently shown an orthogonal mapping of SF and orientation, suggesting an efficient arrangement that provides each orientation access to a wide range of SFs (Issa et al., 2000; Nauhaus et al., 2012; Nauhaus et al., 2016; Xu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "cf981c0c-05ca-45a2-96d8-9f44247257cf",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C4",
+      "claim": "Color representation in V1 is generally associated with a range of lower SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, color representation in V1 (the color is represented in patches commonly referred to as 'blobs' in V1) is generally associated with a range of lower SFs (Silverman et al., 1989; Tootell et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "bfef4599-a996-49a4-8ecd-23bae21efe91",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C5",
+      "claim": "There is a gradient from high to low of SF representation across eccentricities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to a gradient from high to low of SF representation across eccentricities (Foster et al., 1985; De Valois et al., 1982; Lu et al., 2018; Yu et al., 2010), SF organization is further specified within local distinct functional regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "3131d052-0d41-497a-8cf4-257927875bd7",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C6",
+      "claim": "The traditional view of the V2 hypercolumn comprises the alternating thin-pale-thick-pale stripe cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The traditional view of the V2 hypercolumn comprises the alternating thin-pale-thick-pale stripe cycle (Horton, 1984; Livingstone and Hubel, 1984; Roe and Ts'o, 1995; Tootell et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "0fca2997-a7ff-41f8-a6b9-a645412b934b",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C7",
+      "claim": "Within thin stripes, surface properties, typically associated with low SF preferences, such as hue maps, 'brightness' maps, and ON/FF maps are represented.",
+      "claim_type": "EXPLICIT",
+      "source": "Within thin stripes, surface properties, typically associated with low SF preferences, such as hue maps (Xiao et al., 2003), 'brightness' maps (Roe et al., 2005), and ON/FF maps (Wang et al., 2007) are represented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "3c148305-6b35-4682-900f-fc53463e0a83",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C8",
+      "claim": "Within the thick and pale stripes are higher-order orientation maps such as those defined by illusory contours, motion direction maps, and maps for motion-defined edges, as well as stereo-defined near-to-far disparity maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the thick and pale stripes are higher-order orientation maps such as those defined by illusory contours (Ramsden et al., 2001), motion direction maps (Lu et al., 2010), and maps for motion-defined edges (Chen et al., 2016), as well as stereo-defined near-to-far disparity maps (Chen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "f5b7dd9a-bcfb-4be8-9edb-5585f5fe73da",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C9",
+      "claim": "There is little systematic data relating SF representation in V2 to functional stripes.",
+      "claim_type": "EXPLICIT",
+      "source": "There is little systematic data relating SF representation in V2 to functional stripes (cf., Gegenfurtner et al., 1996; Levitt et al., 1994; Tootell and Hamilton, 1989) and, despite previous attempts, few studies have demonstrated functional mapping of stripes based on SF alone (Lu and Roe, 2007; Lu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research and acknowledgment of gaps in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2a9404e6-31d5-4dc5-844f-43fcf4040ffa",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C10",
+      "claim": "In V4, surface and shape information are organized into 'color' and 'orientation' bands.",
+      "claim_type": "EXPLICIT",
+      "source": "In V4, surface and shape information are organized into, for lack of better terminology, 'color' and 'orientation' bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about V4 organization, supported by the context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "6e5d05ae-6988-4ba9-875e-d53865c54ad3",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C11",
+      "claim": "Within the color bands, maps for hue and for luminance have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the color bands, maps for hue and for luminance have been described (Tanigawa et al., 2010; Liu et al., 2020; Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2aedb5ba-7a41-453c-8b84-a71bc0e61eab",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C12",
+      "claim": "Within orientation bands, there are maps for contrast-defined contours, disparity-defined contours, as well as maps for curvature degree and curvature orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Within orientation bands, there are maps for contrast-defined contours (Hu et al., 2020; Li et al., 2013; Lu et al., 2018; Tang et al., 2020; Tanigawa et al., 2010), disparity-defined contours (Fang et al., 2019), as well as maps for curvature degree and curvature orientation (Hu et al., 2020; Ponce et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "d027df38-f833-4322-8cdc-3991c53351c0",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C13",
+      "claim": "How SF preference maps relate to other feature maps in V4 remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite our growing understanding of functional organization in V4, how SF preference maps (first reported in Lu et al., 2018) relate to other feature maps in V4 remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gaps in knowledge, supported by the context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "85d831b8-b4c5-4680-897a-2b9fe435cf5b",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C14",
+      "claim": "Most of the imaged V1 region favored high SF stimuli, while most of the imaged V4 region favored low SF stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in both cases, most of the imaged V1 region favored high SF stimuli, while most of the imaged V4 region favored low SF stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "69cdfd57-1b80-4bca-87bf-362399ac23dc",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C15",
+      "claim": "For V1, the coverage ratio peaks at high SF, while for V4, the coverage ratio peaks at low SF.",
+      "claim_type": "EXPLICIT",
+      "source": "For V1, the coverage ratio peaks at high SF (light gray bars in Figure 3C and G), while for V4, the coverage ratio peaks at low SF (black bars in Figure 3C and G), consistent with previous findings that V4 prefers lower SF than V1 (Lu et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures, and is consistent with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "3ff6192e-0ff7-4c23-89bb-624bf3ea621a",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C16",
+      "claim": "The preferred SFs significantly decrease from V1 to V4.",
+      "claim_type": "EXPLICIT",
+      "source": "The preferred SFs (Figure 3D and H) significantly decrease from V1 to V4 (see Table 1, Kolmogorov\u2013Smirnov test, V1 vs. V4, V2 vs. V4, V1 vs. V2, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures, supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "391c9db7-bb17-4046-a2be-d90a75de73d0",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C17",
+      "claim": "Gratings with low SFs evoked clear selective responses in all imaged V4 regions, whereas gratings with high SFs only evoked responses in certain regions, mostly in the lateral part of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the functional map at a specific SF is not always easily ascertained. Gratings with low SFs (e.g., 0.25 cycles/deg, 0.5 cycles/deg) evoked clear selective responses (Figure 4D, thresholded, right panel) in all imaged V4 regions, whereas gratings with high SFs only evoked responses in certain regions, mostly in the lateral part of the cortex (toward foveal representation, red star).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "0acae588-bee1-4354-bb47-39db88c1425e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C18",
+      "claim": "As SF increases, the location of the selective activation center shifts from medial to lateral across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "As SF increases, the location of the selective activation center shifts from medial to lateral across the cortex (Figure 4C, blue dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "cd24069f-f642-418d-af1c-36d237e077a1",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C19",
+      "claim": "The activation center of color-selective response shifted from medial to lateral with increasing SF.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the activation center of color-selective response also shifted from medial to lateral with increasing SF (Figure 4C, orange dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "212d9c2d-7f92-4f78-8499-0d4c17147ef9",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C20",
+      "claim": "When only a few SFs are tested, the coverage ratio of the orientation and color domains is underestimated.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, when only a few SFs are tested, the coverage ratio of the orientation and color domains is underestimated (see white numbers in upper corners in Figure 4A, B, D and E), underscoring the importance of testing a wide range of SFs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "973f3181-5298-4309-8ce1-2cd3b812688a",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C21",
+      "claim": "Orientation domains and color domains tend to separate in space, forming different functional bands.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in previous V4 studies (Tanigawa et al., 2010; Li et al., 2013), orientation domains and color domains tend to separate in space, forming different functional bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "6c82aa9e-9a0f-412a-80a4-7e83c6fd16e1",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C22",
+      "claim": "For the lateral orientation and color bands, the percentage values were higher for high SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for the lateral orientation and color bands (see the two bands < 6 mm), the percentage values were higher for high SFs (blue/cyan lines vs. red/orange lines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "97aeb4ec-82eb-4756-931a-068e2a3eddf4",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C23",
+      "claim": "For the medial orientation and color bands, the percentage values were higher for low SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, for the medial orientation and color bands (see the two bands >6 mm), the percentage values were higher for low SFs (red/orange lines vs. blue/cyan lines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "e5ad2db4-cd6e-485f-a02c-8f15a51fc6f8",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C24",
+      "claim": "The proportions of activated pixels in color and orientation domains in the lateral and medial parts of V4 change with SFs in distinct ways.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the proportions of activated pixels in color and orientation domains in the lateral and medial parts of V4 change with SFs in distinct ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "71428e50-b9e2-4ef3-a9f8-43c8a8860f16",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C25",
+      "claim": "In parafoveal cortex (medial), for both orientation and color domains, the proportion of pixels tends to decrease with increasing SF.",
+      "claim_type": "EXPLICIT",
+      "source": "In parafoveal cortex (medial), for both orientation and color domains, the proportion of pixels tends to decrease with increasing SF; in foveal cortex (lateral), for both orientation and color domains, the proportion of pixels increase as SF increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "7aa730e9-b5fe-43e3-83f3-7174a8f088e7",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C26",
+      "claim": "In foveal cortex (lateral), for both orientation and color domains, the proportion of pixels increase as SF increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In parafoveal cortex (medial), for both orientation and color domains, the proportion of pixels tends to decrease with increasing SF; in foveal cortex (lateral), for both orientation and color domains, the proportion of pixels increase as SF increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "4af4673b-a1ac-4c26-9763-8141876dab6b",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C27",
+      "claim": "The exposed areas of V1 are in the lateral region of the hemisphere, corresponding to the eccentricity of 0\u20132\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The exposed areas of V1 are in the lateral region of the hemisphere, corresponding to the eccentricity of 0\u20132\u00b0; here low SFs barely evoke measurable selective orientation responses (Figure 4\u2014figure supplement 1A, left column, cases 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "6983a62c-4495-430f-bc4d-93e1cadae908",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C28",
+      "claim": "The orientation map in the lateral region is only apparent at high SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation map in the lateral region is only apparent at high SFs (Figure 4\u2014figure supplement 1A, >1 cycle/deg).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "7f88e21c-65f9-477a-b71f-2efa81095871",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C29",
+      "claim": "For both V1 and V4, the selective activation center moves from medial to lateral as SF increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the optimal SF differs between V1 and V4, for both areas, the selective activation center moves from medial to lateral as SF increases (Figure 4\u2014figure supplement 1, cases 1\u20134, dots of different shading correspond to the activation centers at different SFs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "289b3d70-2c82-482a-bea3-16fda4f53a0f",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C30",
+      "claim": "The foveal regions of V1, V2, and V4 are located in the lateral part of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In monkey visual cortex, the foveal regions of V1, V2, and V4 are located in the lateral part of the cortex (Gattass et al., 1981; Gattass et al., 1988 see Figure 2D), in agreement with the findings from electrophysiology studies that foveal regions favor high SF (Perry and Cowey, 1985; Schein, 1988; W\u00e4ssle et al., 1989; Wilder et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "c2c9929b-178e-497b-8d0f-b28757815185",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C31",
+      "claim": "For orientation maps, high correlation values appeared in the comparisons among high SF conditions in foveal region.",
+      "claim_type": "EXPLICIT",
+      "source": "For orientation maps (Figure 4\u2014figure supplement 3A), high correlation values (>0.5) appeared in the comparisons among high SF conditions in foveal region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "c7c191d9-4f8a-40ed-8261-ddb9df8e7055",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C32",
+      "claim": "For orientation maps, high correlation values appeared in the comparisons among low SF conditions in parafoveal region.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, high correlation values appeared in the comparisons among low SF conditions in parafoveal region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "d9aaea52-2c0d-4c2a-85de-6ce3c011417b",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C33",
+      "claim": "For color functional maps, higher correlation values were measured under low SF conditions in both foveal and parafoveal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For color functional maps (Figure 4\u2014figure supplement 3B), higher correlation values were measured under low SF conditions in both foveal and parafoveal regions, while high correlation values appeared only in the foveal region under high SF conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "0dabda83-807e-4049-8089-fbe812576698",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C34",
+      "claim": "Independent of the type of visual information presented (orientation or color), parafoveal regions tend to process the visual input containing relatively low SF components, while visual input containing high SF components is better processed in foveal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences reflect distinct capabilities of different cortical regions (fovea vs. parafovea). Independent of the type of visual information presented (orientation or color), parafoveal regions tend to process the visual input containing relatively low SF components, while visual input containing high SF components is better processed in foveal regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "5c533877-2889-4dbf-bc3b-54130a787a7e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C35",
+      "claim": "In V4, the foveal region is capable of processing visual information with a broad range of SF sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In V4, the foveal region is capable of processing visual information with a broad range of SF sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "d7e6942e-c6f4-4860-9ce1-09f17634d73f",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C36",
+      "claim": "In V2 and V4, the iso-orientation and iso-SF contours that intersected at large angles were found most frequently.",
+      "claim_type": "EXPLICIT",
+      "source": "In V2 and V4, the iso-orientation and iso-SF contours that intersected at large angles were found most frequently (see Figure 6G, K and O, Figure 6\u2014figure supplement 2G and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "95ff7362-3135-4dda-ac4d-041855b0d67f",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C37",
+      "claim": "There are more 60\u201390\u00b0 intersection angles than other kinds of intersection angles in the orientation-selective regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that there are more (percentage value) 60\u201390\u00b0 intersection angles than other kinds of intersection angles in the orientation-selective regions (see white patches in Figure 6F, J and N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "57810064-f96f-4f8f-84da-f40569565bad",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C38",
+      "claim": "The percentage of the large angle group is significantly higher than the small and medium groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of the large angle group is significantly higher than the small (Wilcoxon rank-sum test, p=1.60 \u00d7 10\u20135, n = 15 from five regions, two V2 regions, and three V4 regions) and medium groups (Wilcoxon rank-sum test, p=1.73 \u00d7 10\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript, supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "6e0171ff-0808-4ecb-820d-d3d503f0ad7c",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C39",
+      "claim": "The percentage difference in large intersection angle (60\u201390\u00b0) is significant between groups with strong orientation selectivity and weak orientation selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage difference in large intersection angle (60\u201390\u00b0) is also significant (strong orientation selectivity group, n = 15 from five regions, two V2 regions, and three V4 regions; weak orientation selectivity group, labeled as '60\u201390\u00b0 Ref.' in Figure 6V, n = 6 from two V4 regions; Wilcoxon rank-sum test, p=0.0057, see Figure 6V).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures, supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "79ee6967-d94c-46e7-b8f1-2ccc2094c0e7",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C40",
+      "claim": "Low SF preference domains tend to co-localize with V4 color domains to a greater extent than high SF preference domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, low SF preference domains tend to co-localize with V4 color domains to a greater extent than high SF preference domains (21.3% vs 8.3% of all pixels in color domains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "a861099c-cb35-47a6-8a92-a6c2c81d6c40",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C41",
+      "claim": "The total amount of cortex able to discriminate high SF vs. low SF is only a small portion of the total V4 area.",
+      "claim_type": "EXPLICIT",
+      "source": "In these four cases, we found that the total amount of cortex able to discriminate high SF vs. low SF (high SF plus low SF pixels) is only a small portion of the total V4 area (coverage ratio of high SF preference domains in V4: 3.9% \u00b1 1.5%, mean \u00b1 SD; coverage ratio of low SF preference domains in V4: 6.0% \u00b1 3.7%, mean \u00b1 SD.; coverage ratio: the area of SF domains divided by the imaged area of V4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2f561a61-2268-4960-bd92-b5bbfca2b8ac",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C42",
+      "claim": "In all cases, there is a great tendency for low SF domains to overlap with color domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the difference is not statistically significant (four cases, Wilcoxon test, p>0.05), in all cases, we found a great tendency for low SF domains to overlap with color domains (the percentage of high SF preference regions in color domains: 3.9% \u00b1 3.3%; the percentage of low SF preference regions in color domains: 13.3% \u00b1 8.4%, Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "09184b55-86d0-4923-bff4-cd6a0cbc24de",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C43",
+      "claim": "The SF preference changed across V2.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this controversy is due to the inability of cytochrome oxidase staining to reliably identify stripe type, which functional imaging can securely address. To further explore this, we first examined whether there were measurable SF preference differences in V2. As indicated in the map, the SF preference changed across V2 (same as V2 in Figure 3B, the region between lunate sulcus and V1/V2 border indicated by red arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "29efe3b7-daf6-4a16-aa58-e2017640acb4",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C44",
+      "claim": "The low SF preference regions are well correlated with color preference domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The low SF preference regions obtained using these two methods (white patches, in the differential SF map, see Figure 7F; red/orange regions, in the colored SF preference map, see Figure 7I and J) are well correlated with color preference domains (red dashed circles in Figure 7F and black patches in Figure 7G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "f7ed5448-c5ac-41c5-8657-6a7413d40fa9",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C45",
+      "claim": "For subtraction between high SF and low SF conditions, high SF preference domains can be detected in the foveal region.",
+      "claim_type": "EXPLICIT",
+      "source": "For subtraction between high SF (>1 cycle/deg) and low SF (0.5 cycles/deg) conditions, high SF preference domains can be detected in the foveal region (red star, see black patches indicated by red arrows in Figure 7\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "6b92898e-5a87-4e5c-9342-21927ded41bb",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C46",
+      "claim": "For the subtraction between medium SF and low SF conditions, the relatively high SF preference domains can only be detected in the parafoveal region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the subtraction between medium SF (1 cycle/deg) and low SF (0.25 cycles/deg) conditions, the relatively high SF preference domains can only be detected in the parafoveal region (see black patches indicated by blue arrows in Figure 7\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "a9898dc3-2c5f-4d47-a87e-b7b53af1b1e5",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C47",
+      "claim": "From parafoveal to foveal region, the preferred SF tends to increase gradually.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate from parafoveal to foveal region, the preferred SF tends to increase gradually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "034ff961-4b96-4cb0-aabe-33db9fac66a8",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C48",
+      "claim": "Both SF preference and color selectivity vary along the V1/V2 border.",
+      "claim_type": "EXPLICIT",
+      "source": "Both SF preference (red lines) and color selectivity (black lines) vary along the V1/V2 border (Figure 7G\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2db80bec-a703-4ba2-8441-eeeedc0aeebf",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C49",
+      "claim": "Color selectivity was found in or near low SF preference regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Color selectivity was found in or near low SF preference regions (see also Figure 7F, red dashed circles and white patches in V2); however, not all low SF preference regions exhibited strong color selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "8abbe133-c406-450a-8d44-2463943964e1",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C50",
+      "claim": "SF preference differences vary uniquely within V2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SF preference differences vary uniquely within V2 (see Figure 7M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2b202065-59ae-474f-8fb2-667f61a0f718",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C51",
+      "claim": "The differences in SF preference between the regions on the two sides of a thin stripe may correlate to the reported two types (medial vs. lateral) of pale stripes in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in SF preference between the regions on the two sides of a thin stripe (see Figure 7K and L, thin stripe location: around the peaks of the black lines) may correlate to the reported two types (medial vs. lateral) of pale stripes in V2 (Felleman et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement based on the experimental data and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "42771c8c-5bf0-46cf-9d7a-1445d233e2b5",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C52",
+      "claim": "With respect to topography, the SF population response of V4 orientation and color domains shift systematically with topographic location.",
+      "claim_type": "EXPLICIT",
+      "source": "We found (1) Topography: With respect to topography, the SF population response of V4 orientation and color domains shift systematically with topographic location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "9dcd8a89-8d9d-4a55-8f85-e33d984331cf",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C53",
+      "claim": "The geometric centroids of the selective response shift toward foveolar (lateral) parts of the cortex as SF increases.",
+      "claim_type": "EXPLICIT",
+      "source": "To be specific, the geometric centroids of the selective response shift toward foveolar (lateral) parts of the cortex as SF increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "1fccdc42-ce8b-49b9-8e61-96b4636273d7",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C54",
+      "claim": "The foveal region of V4 was responsive to a broad range of SF from high to low, suggesting greater SF integration at higher cortical levels, even in foveal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, distinct from V1 fovea, which was selectively responsive to orientations of higher SFs (see Figure 4\u2014figure supplement 1A), the foveal region of V4 was responsive to a broad range of SF from high to low, suggesting greater SF integration at higher cortical levels, even in foveal regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data presented in the manuscript and figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "291fc3b8-4e7d-4748-b1e5-a2a0eac1ac95",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C55",
+      "claim": "Within V4 and V2, similar to what was previously shown in V1, the gradients of orientation and SF maps tend to be orthogonal to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Orthogonal primary axes: Within V4 and V2, similar to what was previously shown in V1, the gradients of orientation and SF maps tend to be orthogonal to one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "3f01d7fb-700d-4a70-a93c-d14f7743d603",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C56",
+      "claim": "There is a tendency for low SF preference domains to overlap with color domains in V4 and V2.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Low SF bias in V4 and V2 color domains: We find there is a tendency for low SF preference domains to overlap with color domains in V4 and V2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2860f7c8-4f1a-4df1-9efb-2723c9513701",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C57",
+      "claim": "Orthogonal crossings between different cortical maps facilitate the maximum combination of response properties in a local area with columnar organization.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned in many previous studies, orthogonal crossings between different cortical maps facilitate the maximum combination of response properties in a local area with columnar organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "813a6c33-8dc6-4687-a7e0-0295cd1d08ac",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C58",
+      "claim": "This kind of spatial relationship has now been reported in different animals (cat, monkey) and between different functional maps including orientation vs. ocular dominance, orientation vs. SF in cat area 17; orientation vs. ocular dominance, orientation vs. SF in monkey V1; hue vs. lightness in macaque V1; orientation vs. disparity in macaque V2 and, in this study, orientation vs. SF in macaque V2 and V4.",
+      "claim_type": "EXPLICIT",
+      "source": "This kind of spatial relationship has now been reported in different animals (cat, monkey) and between different functional maps including orientation vs. ocular dominance, orientation vs. SF in cat area 17 (H\u00fcbener et al., 1997); orientation vs. ocular dominance, orientation vs. SF in monkey V1 (Bartfeld and Grinvald, 1992; Nauhaus et al., 2012; Obermayer and Blasdel, 1993); hue vs. lightness in macaque V1 (Li et al., 2022); orientation vs. disparity in macaque V2 (Chen et al., 2008; Ts'o et al., 2009) and, in this study, orientation vs. SF in macaque V2 and V4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research and the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "d911d9d2-08c5-41a3-a353-18103f21da1f",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C59",
+      "claim": "This orthogonality may be a common principle and reveals key parameters specific to each cortical area.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that this orthogonality may be a common principle and reveals key parameters specific to each cortical area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data and previous research.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "f52148b7-82fe-43d0-bc08-4989fe2a2339",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C60",
+      "claim": "For object structure, orientation and SF are two key parameters; for color, the key parameters are hue and luminance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for object structure, orientation and SF are two key parameters; for color, the key parameters are hue and luminance (Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "20e0601c-921a-499e-8506-4dadeb4d6659",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C61",
+      "claim": "These combinations ensure a complete representation of basic shape and surface information at each cortical level.",
+      "claim_type": "EXPLICIT",
+      "source": "These combinations ensure a complete representation of basic shape and surface information at each cortical level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "49d8cd80-27b2-4a46-99da-9cbc997dca53",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C62",
+      "claim": "Cortical mosaics contain distinct regions of orthogonal feature parameters, as observed in the color and orientation stripes of V2 and the color and orientation bands of V4, and may present for other parameters (e.g., face space, object space) in higher cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cortical mosaics contain distinct regions of orthogonal feature parameters, as observed in the color and orientation stripes of V2 and the color and orientation bands of V4, and may present for other parameters (e.g., face space, object space) in higher cortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "b1b22024-2872-4d23-b836-40a6949a285f",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C63",
+      "claim": "The majority of V4 regions favor low SF relative to V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Desimone and Schein, 1987; Lu et al., 2018), our results indicate that the majority of V4 regions favor low SF relative to V1 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures, consistent with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "d5551e8b-833d-4afe-86ed-535986438d83",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C64",
+      "claim": "For both V4 orientation- and color-selective response, there is a tendency for representation to shift to higher SFs from parafovea to fovea.",
+      "claim_type": "EXPLICIT",
+      "source": "For both V4 orientation- and color-selective response, there is a tendency for representation to shift to higher SFs from parafovea to fovea (Figure 4 with three supplements, and Figure 5 with one supplement), supporting the inverse relationship between SF preference and retinal eccentricity (Desimone and Schein, 1987; Lu et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript and figures, supporting previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "bf452659-e86d-4837-9a36-76e06e1f0c09",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C65",
+      "claim": "In foveal V4 region, even at low SF, robust orientation- and color-selective responses are detected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that in foveal V4 region, even at low SF, robust orientation- and color-selective responses are detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "0e30467e-b989-401f-ae44-28af03cf5114",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C66",
+      "claim": "Foveal representation in V4 may be better organized for processing complex images (e.g., natural scenes) with multiple SF components.",
+      "claim_type": "EXPLICIT",
+      "source": "This points to an important difference between V1 and V4. That is, foveal representation in V4 may be better organized for processing complex images (e.g., natural scenes) with multiple SF components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "cdd0bfc1-8663-473f-8499-0c1403a2ea57",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C67",
+      "claim": "SF preference changes within the exposed V2 area, forming different SF preference patches.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that similar to color-selective response, SF preference changes within the exposed V2 area, forming different SF preference patches, which supports a general functional layout for SF coding in the visual system (preference for low SF in V1 blob, V2/V4 low SF domains; preference for high SF in V1 interblob, V2/V4 high SF domains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "4068f496-a9bd-4289-98a3-f27c34f98c3e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C68",
+      "claim": "In elongated cortical areas such as V2 there tend to be periodic changes in response features across the cortical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by modeling V2 retinotopic maps of tree shrews (Sedigh-Sarvestani et al., 2021), in elongated cortical areas such as V2 there tend to be periodic changes in response features across the cortical surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2d3fbd80-601a-4d23-98db-f31fdded88b0",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C69",
+      "claim": "A putative functional implication of this periodic distribution is to aid in the integration across features spaces (wiring minimization) via horizontal connections in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another putative functional implication of this periodic distribution is to aid in the integration across features spaces (wiring minimization) via horizontal connections in V2 (Chklovskii et al., 2002; Cowey, 1979; Hubel and Wiesel, 1977; Mitchison, 1991; Koulakov and Chklovskii, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "86936bd2-9d5f-4e5c-b9f4-939d45a507e4",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C70",
+      "claim": "At the scale of visual field representation, there is a broad and downward shifting range of SFs from center to periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "At the scale of visual field representation, there is a broad and downward shifting range of SFs from center to periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "22551442-3af9-4b62-ace2-e2de4f9edea0",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C71",
+      "claim": "Within this global SF map lie hypercolumns of repeated orientation and color representation, each of which contains two orthogonally arranged primary parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this global SF map lie hypercolumns of repeated orientation and color representation, each of which contains two orthogonally arranged primary parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "3fd8d578-9358-4e7a-af6f-2ddfe20e6289",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C72",
+      "claim": "In the 'orientation' regions, SF is systematically and orthogonally mapped in relation to the orientation map.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'orientation' regions, SF is systematically and orthogonally mapped in relation to the orientation map (this study); in the 'color' regions, hue and lightness are orthogonally mapped (Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "5794861b-fb61-4de4-b4d5-a12677d68292",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C73",
+      "claim": "In the 'color' regions, hue and lightness are orthogonally mapped.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'orientation' regions, SF is systematically and orthogonally mapped in relation to the orientation map (this study); in the 'color' regions, hue and lightness are orthogonally mapped (Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "af5a97f2-71dd-4ff9-a3d3-cd325c805187",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C74",
+      "claim": "The primary parameter spaces mapped in each cortical area change from one area to another.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous to how the primary parameter spaces mapped in each cortical area change from one area to another (e.g., V1: ocular dominance, orientation, color; V2: higher-order orientation, hue, disparity; V4: curvature, 3D shape from shading, hue and lightness, Hu et al., 2020; Srinath et al., 2021; face areas: face maps, Kanwisher et al., 1997, Chang and Tsao, 2017; object areas: object maps, Bao et al., 2020), we hypothesize that subregions of a cortical hypercolumn also organize for different parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "5fbfea74-0de0-4475-8e81-5e3e6574c781",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C75",
+      "claim": "Subregions of a cortical hypercolumn also organize for different parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous to how the primary parameter spaces mapped in each cortical area change from one area to another (e.g., V1: ocular dominance, orientation, color; V2: higher-order orientation, hue, disparity; V4: curvature, 3D shape from shading, hue and lightness, Hu et al., 2020; Srinath et al., 2021; face areas: face maps, Kanwisher et al., 1997, Chang and Tsao, 2017; object areas: object maps, Bao et al., 2020), we hypothesize that subregions of a cortical hypercolumn also organize for different parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2a774e64-d876-4095-8cf8-c65d157100bf",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C76",
+      "claim": "While SF is an important primary axis in orientation regions, in color regions which by nature are associated with low SFs, the rationale for a systematic SF map is weakened.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while SF is an important primary axis in orientation regions, in color regions which by nature are associated with low SFs, the rationale for a systematic SF map is weakened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "9cd92f4e-b8c9-4454-9f59-e3531ef7cf8d",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C77",
+      "claim": "One could view the color regions as evolutionary 'add-ons,' which became tacked on to the low end of the SF continuum.",
+      "claim_type": "EXPLICIT",
+      "source": "One could view the color regions as evolutionary 'add-ons,' which became tacked on to the low end of the SF continuum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "7a284f63-0dfb-4d05-872e-b0e663f00ba8",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C78",
+      "claim": "The functional maps or regions (e.g., orientation, color) in V2 and V4 are not simple repeats of the functional representation in V1, although here they have the same name (orientation, color).",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the functional maps or regions (e.g., orientation, color) in V2 and V4 are not simple repeats of the functional representation in V1, although here they have the same name (orientation, color).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "1f15f37e-6e04-4372-8a47-be00eaa622c5",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C79",
+      "claim": "These maps or regions are dedicated to processing different visual information in different visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "These maps or regions are dedicated to processing different visual information in different visual areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "6602f250-f5e4-4b4f-a0b8-2efdecb8f5aa",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C80",
+      "claim": "The architecture of SF representation, which describes distinct SF representations within orientation and color regions, further extends and supports the view of continued parallel streaming of feature-specific pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest the architecture of SF representation, which describes distinct SF representations within orientation and color regions, further extends and supports the view of continued parallel streaming of feature-specific pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "0b9104f8-79ad-4562-ae14-61503f6b44f6",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C81",
+      "claim": "Data was acquired from five hemispheres of three adult macaque monkeys (one male and two female, Macaca mulatta).",
+      "claim_type": "EXPLICIT",
+      "source": "Data was acquired from five hemispheres of three adult macaque monkeys (one male and two female, Macaca mulatta).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "599c3aae-b9d3-4b9a-b286-310e5403e3c6",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C82",
+      "claim": "All procedures were performed in accordance with the National Institutes of Health Guidelines and were approved by the Zhejiang University Institutional Animal Care and Use Committee (approval no. ZJU20200022 and ZJU20200023).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were performed in accordance with the National Institutes of Health Guidelines and were approved by the Zhejiang University Institutional Animal Care and Use Committee (approval no. ZJU20200022 and ZJU20200023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the ethical approval of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "f01b50b1-8d4b-442c-857a-e8ef6717f5b8",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C83",
+      "claim": "Chronic optical windows were implanted in contact with the cortex above areas V1, V2, and V4, containing lunate sulcus and superior temporal sulcus.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic optical windows were implanted in contact with the cortex above areas V1, V2, and V4, containing lunate sulcus and superior temporal sulcus as described previously (Hu et al., 2020, also see Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "8afb589a-0226-46ac-a289-21fd2d308a5e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C84",
+      "claim": "The eccentricity of the visual field corresponding to exposed V4 was 0\u20135\u00b0 and for V1/V2 was 0\u20132\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The eccentricity of the visual field corresponding to exposed V4 was 0\u20135\u00b0 and for V1/V2 was 0\u20132\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "119b85df-54bc-4cbd-8679-c58f51bd0259",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C85",
+      "claim": "Monkeys were artificially ventilated and anesthetized with propofol (induction 5\u201310 mg/kg, maintenance 5\u201310 mg/kg/hr, i.v.) and isoflurane (0.2\u20131.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Monkeys were artificially ventilated and anesthetized with propofol (induction 5\u201310 mg/kg, maintenance 5\u201310 mg/kg/hr, i.v.) and isoflurane (0.2\u20131.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "4d516a4e-fd67-4404-8e83-9b014f243fc5",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C86",
+      "claim": "Visual stimuli were created using ViSaGe (Cambridge Research Systems Ltd.) and displayed on a calibrated 27-inch monitor (Philips 272G5D) operating at 60 Hz refresh rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual stimuli were created using ViSaGe (Cambridge Research Systems Ltd.) and displayed on a calibrated 27-inch monitor (Philips 272G5D) operating at 60 Hz refresh rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "a49ba5b0-e6d5-4b1d-a6b1-48d21bcea7bc",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C87",
+      "claim": "The luminance for white stimuli was 206.52 cd/m2 and black was 0.50 cd/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The luminance for white stimuli was 206.52 cd/m2 and black was 0.50 cd/m2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "17022cd3-aec9-4ad0-a6b8-b3c1ba123d6f",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C88",
+      "claim": "The temporal frequency of the gratings was fixed to 4 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal frequency of the gratings was fixed to 4 Hz, and the corresponding drifting speeds of these SF conditions (0.25, 0.5, 1, 1.5, 3, 4 cycle/deg) are 16, 8, 4, 2.7, 1.3, 1 deg/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2f4e9775-5180-49a5-9e68-38e7df031d22",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C89",
+      "claim": "Images of cortical reflectance changes (intrinsic hemodynamic signals) corresponding to local cortical activity were acquired (Imager 3001, Optical Imaging Inc, German Town, NY) with 630 nm illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of cortical reflectance changes (intrinsic hemodynamic signals) corresponding to local cortical activity were acquired (Imager 3001, Optical Imaging Inc, German Town, NY) with 630 nm illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "f1271222-4c2e-457f-b12c-fcf351d1248e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C90",
+      "claim": "Image size was 1080 \u00d7 1308 pixels representing 14.4 \u00d7 17.4 or 8.7 \u00d7 10.5 mm field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "Image size was 1080 \u00d7 1308 pixels representing 14.4 \u00d7 17.4 or 8.7 \u00d7 10.5 mm field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "8016678d-f821-4344-8249-35b584d9c81a",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "claim_id": "C91",
+      "claim": "Each stimulus was presented at least 25 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Each stimulus was presented at least 25 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "221a229d-c868-41aa-98db-5cc72493f396",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that spatial frequency (SF) selectivity is a fundamental feature of the visual system, with SF organization related to orientation and color maps in V1, showing orthogonal mapping of SF and orientation, color representation associated with lower SFs, and a gradient of SF representation across eccentricities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately summarize well-established findings from prior research, supported by multiple citations to peer-reviewed studies. These claims provide appropriate context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "8a522801-fec9-4915-b243-4dafe13fadce",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work on V2 organization shows the traditional thin-pale-thick-pale stripe cycle, with thin stripes representing surface properties (hue, brightness, ON/OFF maps) and thick/pale stripes representing higher-order orientation maps, but little systematic data relates SF representation to functional stripes in V2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 accurately represent prior knowledge about V2 organization and identify a gap in the literature regarding SF representation in V2, which is well-supported by citations and provides motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2d73ddb5-84c3-4706-ba89-6eae778be806",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior work on V4 shows organization into color and orientation bands, with color bands containing hue and luminance maps and orientation bands containing maps for various contour types and curvature, but the relationship between SF preference maps and other feature maps in V4 remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 accurately summarize established knowledge about V4 functional organization from prior studies and identify a clear gap regarding SF preference maps, providing strong motivation for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "3c5ee1e8-f907-4d1d-8153-6baa140c90f6",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "V1 regions favor high SF stimuli while V4 regions favor low SF stimuli, with coverage ratios peaking at high SF in V1 and low SF in V4, and preferred SFs significantly decreasing from V1 to V4 (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 present direct observations from imaging data across two cases, supported by statistical analysis (Kolmogorov-Smirnov test) and consistent with previous findings (Lu et al., 2018). The results are clearly demonstrated in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "4bbdfdda-e38a-4eff-837a-1b9c4d70b889",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In V4, low SF gratings evoke responses across all imaged regions while high SF gratings evoke responses primarily in lateral (foveal) cortex, with the selective activation center shifting from medial to lateral as SF increases for both orientation and color domains, a pattern also observed in V1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19, C29 describe consistent observations across multiple cases (Figure 4 and supplements) showing systematic spatial shifts in SF-selective responses. The findings are replicated across animals and visual areas, providing strong evidence for topographic organization of SF preference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "638212e0-d265-4d3c-bc8d-6e12ea808cf2",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Testing only a few spatial frequencies underestimates the coverage ratio of orientation and color domains in V4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is directly supported by the data shown in Figure 4, where coverage ratios increase when more SFs are tested. This is an important methodological finding that validates the study's approach of testing a wide range of SFs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "77dfb185-70ec-43c7-9e70-5af8ea467cb3",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In V4, lateral (foveal) orientation and color bands show higher activation for high SFs, while medial (parafoveal) bands show higher activation for low SFs, with the proportion of activated pixels in both domains changing distinctly with SF across foveal and parafoveal regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 describe systematic differences in SF processing between foveal and parafoveal V4 regions, supported by quantitative analysis shown in Figures 4 and 5. The findings are consistent across multiple experiments and demonstrate regional specialization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "4679bb76-b781-48af-961b-f56aeb8d9785",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In V1, the exposed lateral regions (0-2\u00b0 eccentricity) correspond to foveal representation and show orientation maps only at high SFs, consistent with prior findings that foveal regions favor high SF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28, C30 are supported by imaging data (Figure 4\u2014figure supplement 1) and consistent with established literature on retinotopic organization and SF preferences in V1. The anatomical correspondence is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "f335a1f4-7313-4c55-95a1-846ff646e675",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cross-correlation analysis reveals that orientation maps show high correlation among high SF conditions in foveal regions and among low SF conditions in parafoveal regions, while color maps show higher correlation under low SF conditions in both regions, with high correlation under high SF only in foveal regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 present quantitative correlation analysis (Figure 4\u2014figure supplement 3) that supports the spatial organization of SF preferences. The analysis appropriately uses correlation to assess map similarity across conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "84339b4c-153b-4da5-bb08-395e69edb35b",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Independent of information type (orientation or color), parafoveal regions process visual input with low SF components while foveal regions better process high SF components, with V4 foveal regions capable of processing a broad range of SF sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 represent reasonable inferences from the experimental data showing differential SF processing across cortical regions. The broad SF sensitivity in V4 fovea is supported by the observation of responses across multiple SFs in this region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "502a35c6-26c5-4c9c-970c-befc9164ad36",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In V2 and V4 orientation-selective regions, iso-orientation and iso-SF contours intersect most frequently at large angles (60-90\u00b0), with the percentage of large angle intersections significantly higher than small and medium angle groups (p<0.00002 and p=0.00017) and significantly different from regions with weak orientation selectivity (p=0.0057).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 present a key finding about orthogonal organization of SF and orientation maps, supported by quantitative analysis across multiple regions (n=15) with appropriate statistical tests (Wilcoxon rank-sum test) and control comparisons with weakly selective regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "14f9b772-c3f8-40dd-893f-456f00bd1174",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In V4, low SF preference domains show greater co-localization with color domains (13.3\u00b18.4%) compared to high SF preference domains (3.9\u00b13.3%), though SF-discriminating cortex represents only a small portion of total V4 area (high SF: 3.9\u00b11.5%, low SF: 6.0\u00b13.7%), and while not statistically significant (p>0.05), all cases show a tendency for low SF domains to overlap with color domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C42 describe an interesting trend but acknowledge lack of statistical significance (p>0.05, n=4 cases). The small sample size and lack of significance limit the strength of this conclusion, though the consistent trend across cases is suggestive. Additional data would strengthen this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "dce170dc-1e5d-4f19-b206-75fdf9811863",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SF preference changes across V2, with low SF preference regions correlating with color domains, high SF preference domains detectable in foveal regions, and medium SF preference domains detectable only in parafoveal regions, indicating a gradual increase in preferred SF from parafoveal to foveal regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 describe systematic SF organization in V2 supported by imaging data (Figure 7 and supplements). The correlation with color domains and the gradient of SF preference are demonstrated through multiple analysis methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "67db2436-3ff6-4a8a-992d-002eeb259271",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In V2, both SF preference and color selectivity vary along the V1/V2 border, with color selectivity found in or near low SF preference regions (though not all low SF regions show strong color selectivity), and SF preference differences varying uniquely within V2, potentially correlating with the two types of pale stripes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by quantitative analysis along the V2 border (Figure 7G-M). Claim C51 is appropriately presented as speculative, connecting observations to prior work on pale stripe heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "e1e62ca4-7ac1-4288-b4bf-3e570b0dc201",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The SF population response of V4 orientation and color domains shifts systematically with topographic location, with geometric centroids shifting toward foveolar cortex as SF increases, and V4 foveal regions responsive to a broad range of SFs (unlike V1 fovea), suggesting greater SF integration at higher cortical levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 summarize key findings about topographic organization of SF in V4, supported by data from Figures 4-5. The comparison with V1 and inference about SF integration are reasonable based on the observed differences in SF tuning breadth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "729692c3-ed50-47b5-b81c-38840a3d853e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Within V4 and V2, similar to V1, the gradients of orientation and SF maps tend to be orthogonal to one another.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 summarizes a major finding supported by the intersection angle analysis (C36-C39) showing predominance of 60-90\u00b0 intersections. This extends prior V1 findings to extrastriate areas.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "449d8aa6-1c83-4a61-ac8c-db04d0eda397",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "There is a tendency for low SF preference domains to overlap with color domains in V4 and V2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 summarizes findings from C40-C42 and C44, C49. While the trend is consistent, the lack of statistical significance in V4 (p>0.05) and the qualitative nature of observations in V2 limit the strength of this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "03a00f8d-f505-4320-a8c5-d4b58d7f089e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Orthogonal crossings between cortical maps facilitate maximum combination of response properties in columnar organization, a spatial relationship reported across species and feature maps, suggesting orthogonality may be a common principle revealing key parameters specific to each cortical area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 accurately summarize established principles and prior findings with appropriate citations. Claim C59 presents a reasonable hypothesis based on the accumulated evidence, though it remains speculative regarding generalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "dceb71e3-8996-4e78-8518-8debdb852356",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "For object structure, orientation and SF are two key parameters; for color, the key parameters are hue and luminance, with these combinations ensuring complete representation of basic shape and surface information at each cortical level, and cortical mosaics containing distinct regions of orthogonal feature parameters that may extend to other parameters in higher cortical areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C62 present a theoretical framework based on the current findings and prior work. While the orthogonal organization is demonstrated, the claims about 'complete representation' and extension to higher areas are speculative and would require additional evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "51c21fb1-8c32-4f53-b015-8ab8cd00fcef",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The majority of V4 regions favor low SF relative to V1, with representation shifting to higher SFs from parafovea to fovea for both orientation and color responses, but foveal V4 shows robust responses even at low SF, suggesting V4 foveal representation may be better organized for processing complex images with multiple SF components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are well-supported by the imaging data (Figures 3-5) and consistent with prior findings. Claim C66 presents a reasonable speculation about functional implications based on the observed broad SF tuning in V4 fovea.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "7b40fea8-71a8-4a8e-9e3c-711aa6c111c9",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "SF preference changes within V2 forming different patches, supporting a general functional layout for SF coding, with periodic changes potentially explained by modeling of elongated cortical areas and putatively aiding feature integration via horizontal connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by imaging data. Claims C68-C69 appropriately cite theoretical work to provide potential explanations for the observed organization, though the functional implications remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "2abee145-52d0-41fe-a394-fd98f768ba9e",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "At the visual field scale, there is a broad downward-shifting range of SFs from center to periphery, within which lie hypercolumns of repeated orientation and color representation containing two orthogonally arranged primary parameters: SF mapped orthogonally to orientation in orientation regions, and hue mapped orthogonally to lightness in color regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 summarize the hierarchical organization model supported by the current findings. Claim C73 cites prior work (Li et al., 2022) for the hue-lightness orthogonality. Together these present a coherent organizational framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "df63f8e8-4065-48d9-ae4d-a881832b13da",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Primary parameter spaces mapped in cortical areas change from one area to another, with subregions of cortical hypercolumns organizing for different parameters, such that while SF is an important primary axis in orientation regions, the rationale for systematic SF maps is weakened in color regions associated with low SFs, which could be viewed as evolutionary 'add-ons' to the low end of the SF continuum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 present a hypothesis about hypercolumn organization supported by citations to prior work on different cortical areas. Claims C76-C77 offer speculative interpretations about the organization and evolution of color regions that, while interesting, lack direct experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "d4508987-1d49-4d4f-816a-09246d56b382",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Functional maps in V2 and V4 are not simple repeats of V1 representation but are dedicated to processing different visual information in different areas, with the architecture of SF representation supporting the view of continued parallel streaming of feature-specific pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 state established principles about hierarchical visual processing. Claim C80 presents a reasonable interpretation of how the current findings support parallel processing models, though this remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    },
+    {
+      "id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d",
+      "content_id": "0ed2339d-f325-4541-aaa9-6c66a6e11afc",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The study used intrinsic signal optical imaging in five hemispheres of three macaque monkeys with chronic optical windows over V1, V2, and V4, using calibrated visual stimuli with gratings at six different SFs (0.25-4 cycles/deg) at 4 Hz temporal frequency, with each stimulus presented at least 25 times, following approved animal care protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C91 describe the experimental methods in detail. The methods are clearly described, use appropriate techniques (ISOI), include adequate replication (\u226525 presentations), and follow ethical guidelines. The approach is suitable for addressing the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:14:53.666575Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8700cdd8-1444-4a2f-afe0-119ebb1dd49f",
+      "result_id": "221a229d-c868-41aa-98db-5cc72493f396"
+    },
+    {
+      "claim_id": "33924adf-e1d0-41ca-912f-d78b3e2a0964",
+      "result_id": "221a229d-c868-41aa-98db-5cc72493f396"
+    },
+    {
+      "claim_id": "2b200115-f5aa-46d9-8734-d97286dc8de1",
+      "result_id": "221a229d-c868-41aa-98db-5cc72493f396"
+    },
+    {
+      "claim_id": "cf981c0c-05ca-45a2-96d8-9f44247257cf",
+      "result_id": "221a229d-c868-41aa-98db-5cc72493f396"
+    },
+    {
+      "claim_id": "bfef4599-a996-49a4-8ecd-23bae21efe91",
+      "result_id": "221a229d-c868-41aa-98db-5cc72493f396"
+    },
+    {
+      "claim_id": "3131d052-0d41-497a-8cf4-257927875bd7",
+      "result_id": "8a522801-fec9-4915-b243-4dafe13fadce"
+    },
+    {
+      "claim_id": "0fca2997-a7ff-41f8-a6b9-a645412b934b",
+      "result_id": "8a522801-fec9-4915-b243-4dafe13fadce"
+    },
+    {
+      "claim_id": "3c148305-6b35-4682-900f-fc53463e0a83",
+      "result_id": "8a522801-fec9-4915-b243-4dafe13fadce"
+    },
+    {
+      "claim_id": "f5b7dd9a-bcfb-4be8-9edb-5585f5fe73da",
+      "result_id": "8a522801-fec9-4915-b243-4dafe13fadce"
+    },
+    {
+      "claim_id": "2a9404e6-31d5-4dc5-844f-43fcf4040ffa",
+      "result_id": "2d73ddb5-84c3-4706-ba89-6eae778be806"
+    },
+    {
+      "claim_id": "6e5d05ae-6988-4ba9-875e-d53865c54ad3",
+      "result_id": "2d73ddb5-84c3-4706-ba89-6eae778be806"
+    },
+    {
+      "claim_id": "2aedb5ba-7a41-453c-8b84-a71bc0e61eab",
+      "result_id": "2d73ddb5-84c3-4706-ba89-6eae778be806"
+    },
+    {
+      "claim_id": "d027df38-f833-4322-8cdc-3991c53351c0",
+      "result_id": "2d73ddb5-84c3-4706-ba89-6eae778be806"
+    },
+    {
+      "claim_id": "85d831b8-b4c5-4680-897a-2b9fe435cf5b",
+      "result_id": "3c5ee1e8-f907-4d1d-8153-6baa140c90f6"
+    },
+    {
+      "claim_id": "69cdfd57-1b80-4bca-87bf-362399ac23dc",
+      "result_id": "3c5ee1e8-f907-4d1d-8153-6baa140c90f6"
+    },
+    {
+      "claim_id": "3ff6192e-0ff7-4c23-89bb-624bf3ea621a",
+      "result_id": "3c5ee1e8-f907-4d1d-8153-6baa140c90f6"
+    },
+    {
+      "claim_id": "391c9db7-bb17-4046-a2be-d90a75de73d0",
+      "result_id": "4bbdfdda-e38a-4eff-837a-1b9c4d70b889"
+    },
+    {
+      "claim_id": "0acae588-bee1-4354-bb47-39db88c1425e",
+      "result_id": "4bbdfdda-e38a-4eff-837a-1b9c4d70b889"
+    },
+    {
+      "claim_id": "cd24069f-f642-418d-af1c-36d237e077a1",
+      "result_id": "4bbdfdda-e38a-4eff-837a-1b9c4d70b889"
+    },
+    {
+      "claim_id": "7f88e21c-65f9-477a-b71f-2efa81095871",
+      "result_id": "4bbdfdda-e38a-4eff-837a-1b9c4d70b889"
+    },
+    {
+      "claim_id": "212d9c2d-7f92-4f78-8499-0d4c17147ef9",
+      "result_id": "638212e0-d265-4d3c-bc8d-6e12ea808cf2"
+    },
+    {
+      "claim_id": "6c82aa9e-9a0f-412a-80a4-7e83c6fd16e1",
+      "result_id": "77dfb185-70ec-43c7-9e70-5af8ea467cb3"
+    },
+    {
+      "claim_id": "97aeb4ec-82eb-4756-931a-068e2a3eddf4",
+      "result_id": "77dfb185-70ec-43c7-9e70-5af8ea467cb3"
+    },
+    {
+      "claim_id": "e5ad2db4-cd6e-485f-a02c-8f15a51fc6f8",
+      "result_id": "77dfb185-70ec-43c7-9e70-5af8ea467cb3"
+    },
+    {
+      "claim_id": "71428e50-b9e2-4ef3-a9f8-43c8a8860f16",
+      "result_id": "77dfb185-70ec-43c7-9e70-5af8ea467cb3"
+    },
+    {
+      "claim_id": "7aa730e9-b5fe-43e3-83f3-7174a8f088e7",
+      "result_id": "77dfb185-70ec-43c7-9e70-5af8ea467cb3"
+    },
+    {
+      "claim_id": "4af4673b-a1ac-4c26-9763-8141876dab6b",
+      "result_id": "4679bb76-b781-48af-961b-f56aeb8d9785"
+    },
+    {
+      "claim_id": "6983a62c-4495-430f-bc4d-93e1cadae908",
+      "result_id": "4679bb76-b781-48af-961b-f56aeb8d9785"
+    },
+    {
+      "claim_id": "289b3d70-2c82-482a-bea3-16fda4f53a0f",
+      "result_id": "4679bb76-b781-48af-961b-f56aeb8d9785"
+    },
+    {
+      "claim_id": "c2c9929b-178e-497b-8d0f-b28757815185",
+      "result_id": "f335a1f4-7313-4c55-95a1-846ff646e675"
+    },
+    {
+      "claim_id": "c7c191d9-4f8a-40ed-8261-ddb9df8e7055",
+      "result_id": "f335a1f4-7313-4c55-95a1-846ff646e675"
+    },
+    {
+      "claim_id": "d9aaea52-2c0d-4c2a-85de-6ce3c011417b",
+      "result_id": "f335a1f4-7313-4c55-95a1-846ff646e675"
+    },
+    {
+      "claim_id": "0dabda83-807e-4049-8089-fbe812576698",
+      "result_id": "84339b4c-153b-4da5-bb08-395e69edb35b"
+    },
+    {
+      "claim_id": "5c533877-2889-4dbf-bc3b-54130a787a7e",
+      "result_id": "84339b4c-153b-4da5-bb08-395e69edb35b"
+    },
+    {
+      "claim_id": "d7e6942e-c6f4-4860-9ce1-09f17634d73f",
+      "result_id": "502a35c6-26c5-4c9c-970c-befc9164ad36"
+    },
+    {
+      "claim_id": "95ff7362-3135-4dda-ac4d-041855b0d67f",
+      "result_id": "502a35c6-26c5-4c9c-970c-befc9164ad36"
+    },
+    {
+      "claim_id": "57810064-f96f-4f8f-84da-f40569565bad",
+      "result_id": "502a35c6-26c5-4c9c-970c-befc9164ad36"
+    },
+    {
+      "claim_id": "6e0171ff-0808-4ecb-820d-d3d503f0ad7c",
+      "result_id": "502a35c6-26c5-4c9c-970c-befc9164ad36"
+    },
+    {
+      "claim_id": "79ee6967-d94c-46e7-b8f1-2ccc2094c0e7",
+      "result_id": "14f9b772-c3f8-40dd-893f-456f00bd1174"
+    },
+    {
+      "claim_id": "a861099c-cb35-47a6-8a92-a6c2c81d6c40",
+      "result_id": "14f9b772-c3f8-40dd-893f-456f00bd1174"
+    },
+    {
+      "claim_id": "2f561a61-2268-4960-bd92-b5bbfca2b8ac",
+      "result_id": "14f9b772-c3f8-40dd-893f-456f00bd1174"
+    },
+    {
+      "claim_id": "09184b55-86d0-4923-bff4-cd6a0cbc24de",
+      "result_id": "dce170dc-1e5d-4f19-b206-75fdf9811863"
+    },
+    {
+      "claim_id": "29efe3b7-daf6-4a16-aa58-e2017640acb4",
+      "result_id": "dce170dc-1e5d-4f19-b206-75fdf9811863"
+    },
+    {
+      "claim_id": "f7ed5448-c5ac-41c5-8657-6a7413d40fa9",
+      "result_id": "dce170dc-1e5d-4f19-b206-75fdf9811863"
+    },
+    {
+      "claim_id": "6b92898e-5a87-4e5c-9342-21927ded41bb",
+      "result_id": "dce170dc-1e5d-4f19-b206-75fdf9811863"
+    },
+    {
+      "claim_id": "a9898dc3-2c5f-4d47-a87e-b7b53af1b1e5",
+      "result_id": "dce170dc-1e5d-4f19-b206-75fdf9811863"
+    },
+    {
+      "claim_id": "034ff961-4b96-4cb0-aabe-33db9fac66a8",
+      "result_id": "67db2436-3ff6-4a8a-992d-002eeb259271"
+    },
+    {
+      "claim_id": "2db80bec-a703-4ba2-8441-eeeedc0aeebf",
+      "result_id": "67db2436-3ff6-4a8a-992d-002eeb259271"
+    },
+    {
+      "claim_id": "8abbe133-c406-450a-8d44-2463943964e1",
+      "result_id": "67db2436-3ff6-4a8a-992d-002eeb259271"
+    },
+    {
+      "claim_id": "2b202065-59ae-474f-8fb2-667f61a0f718",
+      "result_id": "67db2436-3ff6-4a8a-992d-002eeb259271"
+    },
+    {
+      "claim_id": "42771c8c-5bf0-46cf-9d7a-1445d233e2b5",
+      "result_id": "e1e62ca4-7ac1-4288-b4bf-3e570b0dc201"
+    },
+    {
+      "claim_id": "9dcd8a89-8d9d-4a55-8f85-e33d984331cf",
+      "result_id": "e1e62ca4-7ac1-4288-b4bf-3e570b0dc201"
+    },
+    {
+      "claim_id": "1fccdc42-ce8b-49b9-8e61-96b4636273d7",
+      "result_id": "e1e62ca4-7ac1-4288-b4bf-3e570b0dc201"
+    },
+    {
+      "claim_id": "291fc3b8-4e7d-4748-b1e5-a2a0eac1ac95",
+      "result_id": "729692c3-ed50-47b5-b81c-38840a3d853e"
+    },
+    {
+      "claim_id": "3f01d7fb-700d-4a70-a93c-d14f7743d603",
+      "result_id": "449d8aa6-1c83-4a61-ac8c-db04d0eda397"
+    },
+    {
+      "claim_id": "2860f7c8-4f1a-4df1-9efb-2723c9513701",
+      "result_id": "03a00f8d-f505-4320-a8c5-d4b58d7f089e"
+    },
+    {
+      "claim_id": "813a6c33-8dc6-4687-a7e0-0295cd1d08ac",
+      "result_id": "03a00f8d-f505-4320-a8c5-d4b58d7f089e"
+    },
+    {
+      "claim_id": "d911d9d2-08c5-41a3-a353-18103f21da1f",
+      "result_id": "03a00f8d-f505-4320-a8c5-d4b58d7f089e"
+    },
+    {
+      "claim_id": "f52148b7-82fe-43d0-bc08-4989fe2a2339",
+      "result_id": "dceb71e3-8996-4e78-8518-8debdb852356"
+    },
+    {
+      "claim_id": "20e0601c-921a-499e-8506-4dadeb4d6659",
+      "result_id": "dceb71e3-8996-4e78-8518-8debdb852356"
+    },
+    {
+      "claim_id": "49d8cd80-27b2-4a46-99da-9cbc997dca53",
+      "result_id": "dceb71e3-8996-4e78-8518-8debdb852356"
+    },
+    {
+      "claim_id": "b1b22024-2872-4d23-b836-40a6949a285f",
+      "result_id": "51c21fb1-8c32-4f53-b015-8ab8cd00fcef"
+    },
+    {
+      "claim_id": "d5551e8b-833d-4afe-86ed-535986438d83",
+      "result_id": "51c21fb1-8c32-4f53-b015-8ab8cd00fcef"
+    },
+    {
+      "claim_id": "bf452659-e86d-4837-9a36-76e06e1f0c09",
+      "result_id": "51c21fb1-8c32-4f53-b015-8ab8cd00fcef"
+    },
+    {
+      "claim_id": "0e30467e-b989-401f-ae44-28af03cf5114",
+      "result_id": "51c21fb1-8c32-4f53-b015-8ab8cd00fcef"
+    },
+    {
+      "claim_id": "cdd0bfc1-8663-473f-8499-0c1403a2ea57",
+      "result_id": "7b40fea8-71a8-4a8e-9e3c-711aa6c111c9"
+    },
+    {
+      "claim_id": "4068f496-a9bd-4289-98a3-f27c34f98c3e",
+      "result_id": "7b40fea8-71a8-4a8e-9e3c-711aa6c111c9"
+    },
+    {
+      "claim_id": "2d3fbd80-601a-4d23-98db-f31fdded88b0",
+      "result_id": "7b40fea8-71a8-4a8e-9e3c-711aa6c111c9"
+    },
+    {
+      "claim_id": "86936bd2-9d5f-4e5c-b9f4-939d45a507e4",
+      "result_id": "2abee145-52d0-41fe-a394-fd98f768ba9e"
+    },
+    {
+      "claim_id": "22551442-3af9-4b62-ace2-e2de4f9edea0",
+      "result_id": "2abee145-52d0-41fe-a394-fd98f768ba9e"
+    },
+    {
+      "claim_id": "3fd8d578-9358-4e7a-af6f-2ddfe20e6289",
+      "result_id": "2abee145-52d0-41fe-a394-fd98f768ba9e"
+    },
+    {
+      "claim_id": "5794861b-fb61-4de4-b4d5-a12677d68292",
+      "result_id": "2abee145-52d0-41fe-a394-fd98f768ba9e"
+    },
+    {
+      "claim_id": "af5a97f2-71dd-4ff9-a3d3-cd325c805187",
+      "result_id": "df63f8e8-4065-48d9-ae4d-a881832b13da"
+    },
+    {
+      "claim_id": "5fbfea74-0de0-4475-8e81-5e3e6574c781",
+      "result_id": "df63f8e8-4065-48d9-ae4d-a881832b13da"
+    },
+    {
+      "claim_id": "2a774e64-d876-4095-8cf8-c65d157100bf",
+      "result_id": "df63f8e8-4065-48d9-ae4d-a881832b13da"
+    },
+    {
+      "claim_id": "9cd92f4e-b8c9-4454-9f59-e3531ef7cf8d",
+      "result_id": "df63f8e8-4065-48d9-ae4d-a881832b13da"
+    },
+    {
+      "claim_id": "7a284f63-0dfb-4d05-872e-b0e663f00ba8",
+      "result_id": "d4508987-1d49-4d4f-816a-09246d56b382"
+    },
+    {
+      "claim_id": "1f15f37e-6e04-4372-8a47-be00eaa622c5",
+      "result_id": "d4508987-1d49-4d4f-816a-09246d56b382"
+    },
+    {
+      "claim_id": "6602f250-f5e4-4b4f-a0b8-2efdecb8f5aa",
+      "result_id": "d4508987-1d49-4d4f-816a-09246d56b382"
+    },
+    {
+      "claim_id": "0b9104f8-79ad-4562-ae14-61503f6b44f6",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "599c3aae-b9d3-4b9a-b286-310e5403e3c6",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "f01b50b1-8d4b-442c-857a-e8ef6717f5b8",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "8afb589a-0226-46ac-a289-21fd2d308a5e",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "119b85df-54bc-4cbd-8679-c58f51bd0259",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "4d516a4e-fd67-4404-8e83-9b014f243fc5",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "a49ba5b0-e6d5-4b1d-a6b1-48d21bcea7bc",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "17022cd3-aec9-4ad0-a6b8-b3c1ba123d6f",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "2f4e9775-5180-49a5-9e68-38e7df031d22",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "f1271222-4c2e-457f-b12c-fcf351d1248e",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    },
+    {
+      "claim_id": "8016678d-f821-4344-8249-35b584d9c81a",
+      "result_id": "ea6d50ec-1882-4ff6-943f-5a329c2ef12d"
+    }
+  ],
+  "comparisons": []
+}

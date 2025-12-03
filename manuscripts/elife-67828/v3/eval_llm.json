@@ -1,0 +1,545 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C52",
+      "C53"
+    ],
+    "result": "Loss of AKAP220 in mice and mIMCD3 cells leads to enhanced primary cilia development, with increased numbers of ciliated cells (3.5-fold in mouse collecting ducts, 8-10-fold in cultured cells) and longer cilia (1.68-fold in mice). This phenotype is observed across multiple model systems including tissue sections, cultured cells, and 3D spheroids, and can be rescued by re-expression of AKAP220.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C43-C46, C48, C52-C53 are strongly supported by quantitative immunofluorescence data from multiple independent experiments in mice (Figure 1C-J), cultured cells (Figure 1K-O), rescue experiments (Figure 1P-U), and spheroids (Figure 1W-Y). The phenotype is consistent across models with appropriate statistical analysis (p<0.0001) and adequate sample sizes. The rescue experiment (C48) provides critical validation that the phenotype is specifically due to AKAP220 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "AKAP150 deletion alone does not affect cilia development in mIMCD3 cells, while AKAP220/150 double knockout cells show enhanced ciliation similar to AKAP220 single knockout, indicating AKAP150 signaling does not support renal ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by immunofluorescence data in Figure 1\u2014figure supplement 2 showing no effect of AKAP150KO alone on ciliation, while double knockout recapitulates the AKAP220KO phenotype. This control experiment appropriately demonstrates specificity for AKAP220 in ciliogenesis regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C65"
+    ],
+    "result": "AKAP220 deletion leads to increased acetylated tubulin levels and reduced HDAC6 protein stability. In AKAP220KO cells, HDAC6 levels are reduced by 50%, and cycloheximide chase experiments show accelerated HDAC6 degradation compared to wild-type, suggesting AKAP220 stabilizes HDAC6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C58-C59, C61-C62, C65 are supported by immunoblot data (Figure 2C-D, I-J) and cycloheximide chase experiments (Figure 2P-Q) from multiple independent experiments (N=4-5). The data consistently show reduced HDAC6 stability in AKAP220KO cells with appropriate quantification and statistical analysis. The conclusion that AKAP220 stabilizes HDAC6 is a reasonable inference from the protein stability data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C67",
+      "C68",
+      "C72"
+    ],
+    "result": "AKAP220 and HDAC6 form complexes in cells as detected by proximity ligation assay, and this interaction is mediated through PP1. Removal of the PP1-interaction motif on AKAP220 negatively impacts HDAC6 association, suggesting PP1 serves as an adaptor bridging HDAC6 to AKAP220.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C67-C68, C72 are supported by PLA data (Figure 2K-O) showing AKAP220/HDAC6 complexes and co-immunoprecipitation data (Figure 3D) showing reduced HDAC6 binding to AKAP220-\u0394PP1. The adaptor function of PP1 is a reasonable mechanistic interpretation supported by the loss-of-function data, though direct binding studies would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Overexpression of wild-type HDAC6 rescues the enhanced ciliation phenotype in AKAP220KO cells, while a catalytically inactive HDAC6 mutant has no effect, demonstrating that HDAC6 enzymatic activity is required for AKAP220-mediated control of ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by rescue experiments in Figure 2R-V showing that active HDAC6 reduces ciliation in AKAP220KO cells while inactive HDAC6 does not. This is a well-designed experiment with appropriate controls that establishes the requirement for HDAC6 catalytic activity in the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C36",
+      "C71",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "AKAP220-associated PP1 mediates enhanced ciliogenesis through changes in HDAC6 stability and actin dynamics. All ciliogenesis and cytoskeletal phenotypes observed in AKAP220KO cells are recapitulated in AKAP220-\u0394PP1 knock-in cells expressing a phosphatase-targeting defective mutant, demonstrating PP1 anchoring is necessary and sufficient for this regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9, C36, C71, C73, C75-C76 are strongly supported by the AKAP220-\u0394PP1 knock-in cell data (Figures 3-4) showing that disruption of PP1 binding alone recapitulates the AKAP220KO phenotype. This elegant genetic approach provides compelling evidence for PP1's role. The claim that PP1 functions as an adaptor (C8) is well-supported by the mechanistic data showing reduced HDAC6 binding and stability in \u0394PP1 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "HDAC6 enzymatic activity is reduced in both AKAP220KO and AKAP220-\u0394PP1 cells compared to wild-type, and this loss of HDAC6 activity correlates with elevated acetylated tubulin and persistence of primary cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by HDAC6 activity assay data (Figure 3P) showing reduced activity in both mutant cell lines. The correlation with cilia persistence is a reasonable inference based on the collective data, though the claim of causation would require additional functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Pharmacological inhibition of HDAC6 with tubacin (2 \u00b5M) increases ciliation 3.2-fold in wild-type mIMCD3 cells, but has no effect in AKAP220KO or AKAP220-\u0394PP1 cells, suggesting the HDAC6-PP1-AKAP220 signaling axis is the intracellular target for tubacin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C80-C84 are supported by tubacin treatment data (Figure 3R-Y, supplement 4) showing differential drug response. However, the conclusion that the AKAP220-PP1-HDAC6 axis is THE intracellular target for tubacin (C84) is speculative. The lack of response in KO cells could reflect that HDAC6 levels are already reduced or that the pathway is already maximally disrupted. Alternative explanations (off-target effects, ceiling effects) are not adequately excluded. The data support that this pathway is involved in tubacin's effects but not that it is the sole or primary target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "AKAP220KO and AKAP220-\u0394PP1 cells show increased nuclear accumulation of acetylated cortactin and dramatic changes in actin cytoskeleton organization, with enhanced accumulation of cortical actin, indicating disruption of AKAP220 signaling impacts actin filament distribution and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by immunofluorescence data (Figure 4A-M) showing altered cortactin acetylation and actin distribution in mutant cells. The quantification using line plot analysis across multiple cells provides robust evidence for the phenotype. The conclusion about actin dynamics is further supported by FRAP data discussed in other claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "FRAP analysis of actin dynamics shows accelerated recovery in AKAP220KO cells (t1/2 = 0.9s) compared to wild-type (t1/2 = 1.6s), while AKAP220-\u0394PP1 cells show intermediate recovery (t1/2 = 1.75s), indicating altered actin turnover dynamics in cells lacking functional AKAP220-PP1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by FRAP data (Figure 4N-R) with adequate sample sizes (n=106-144 cells). The measurements show statistically significant differences in actin recovery kinetics. However, there is an apparent inconsistency: C93 states t1/2 is 1.75s for \u0394PP1 cells representing a 0.85s INCREASE compared to WT, but 1.75s is actually greater than 1.6s (WT), suggesting slower recovery, not faster. This appears to be an error in the text interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Pharmacological modulation of actin dynamics bidirectionally affects ciliation: Cytochalasin D (actin depolymerizer) increases ciliated cells 2.95-fold in wild-type and increases cilia length in AKAP220KO cells, while Jasplakinolide (actin stabilizer) decreases ciliation. This demonstrates that actin dynamics changes underlie the enhanced ciliation in AKAP220 mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by drug treatment experiments (Figure 5) showing opposite effects of actin-depolymerizing and actin-stabilizing drugs on ciliation. The bidirectional pharmacological manipulation provides strong evidence for the role of actin dynamics. The conclusion that actin changes underlie enhanced ciliation in mutants is a reasonable inference, though the causal relationship could be more directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Super-resolution microscopy reveals that cilia in AKAP220KO and AKAP220-\u0394PP1 cells appear retracted with bulbous tips and are 1.6-1.7-fold longer than wild-type. Time-lapse imaging shows these bulbous tips are elongated, flexible cilia that partially retract (coil back) on themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by super-resolution imaging data (Figure 6A-H) and time-lapse imaging (Figure 6\u2014figure supplement 1). The morphological characterization is thorough with both fixed and live-cell imaging. The interpretation that bulbous tips represent coiled cilia is supported by the time-lapse data, though additional structural analysis (e.g., electron microscopy) would provide stronger validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "In kidney-on-a-chip microfluidic culture system, AKAP220-\u0394PP1 organoids develop cilia that are 3.95-fold longer than wild-type, demonstrating the enhanced ciliation phenotype persists in a pseudo-physiological environment with fluid flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by kidney-on-a-chip data (Figure 6I-N) with adequate sample sizes (n=53-73 cilia). This experiment provides important validation that the phenotype occurs in a more physiologically relevant context with fluid flow, strengthening the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "FRAP analysis of Arl13b-GFP in cilia shows increased mobile fraction (22-19% increase) and slower recovery kinetics (t1/2 of 345-362 ms vs 179 ms in WT) in AKAP220KO and AKAP220-\u0394PP1 cilia, suggesting a larger mobile pool of Arl13b trafficking into mutant cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by ciliary FRAP data (Figure 6O-U) with adequate sample sizes (n=60-126 cilia). The measurements show both increased total recovery and slower kinetics, which is interpreted as increased protein trafficking. However, the interpretation (C119) that there is a 'larger mobile pool' is somewhat ambiguous - the data show both more total recovery AND slower kinetics, which could reflect multiple mechanisms including altered barrier function, increased ciliary length, or changes in trafficking machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors propose that cilia in AKAP220KO and AKAP220-\u0394PP1 cells lack an architectural checkpoint (likely an f-actin barrier at the ciliary base) that normally gates protein movement into the cilium, and that AKAP220-associated PP1 participates in maintaining this barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121, C164-C165 are explicitly speculative mechanisms proposed to explain the FRAP data. While the actin barrier hypothesis is plausible and consistent with the data, it is not directly tested. The authors acknowledge this is speculation ('plausible', 'likely candidate'). Direct visualization or functional manipulation of the basal actin barrier would be needed to support this mechanism. The FRAP data are consistent with this model but do not prove it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Tubacin treatment (0.2-1 \u00b5M) reduces cyst size in PKD2-/- kidney organoids, demonstrating that pharmacological inhibition of HDAC6 impacts cystogenesis in a human organoid model of ADPKD. Drug toxicity is evident at higher doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C126-C129 are supported by organoid data (Figure 7C-J) from five independent experiments showing dose-dependent reduction in cyst size with tubacin treatment. The luminescence assay appropriately assesses toxicity. This provides proof-of-concept that HDAC6 inhibition may be therapeutically relevant for PKD, though the mechanism by which cyst size is reduced is not established and may be independent of the ciliogenesis effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C38",
+      "C133",
+      "C134",
+      "C147"
+    ],
+    "result": "The authors conclude that the AKAP220-PP1-HDAC6 pathway is a key effector in primary cilia development and a potential therapeutic target, with AKAP220-binding partners affecting cilia development through cytoskeletal changes at the level of actin polymerization and tubulin acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C38, C133-C134, C147 represent the main conclusions of the study. These are well-supported by the collective experimental data showing: (1) AKAP220 deletion enhances ciliation, (2) this requires PP1 anchoring, (3) HDAC6 stability and activity are reduced, (4) actin and tubulin acetylation are altered, and (5) HDAC6 inhibition reduces cysts in organoids. The pathway identification is solid, though the therapeutic potential (C38) requires further validation in more complex disease models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C138",
+      "C139"
+    ],
+    "result": "Phosphorylation protects HDAC6 from ubiquitination while dephosphorylation favors proteasomal degradation, as established in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C138-C139 are background knowledge claims supported by citation to Ran et al., 2020. These are used to provide mechanistic context for the authors' findings but are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors acknowledge that removal of the KVXF motif may not completely abolish PP1 anchoring to AKAP220, as AKAP220 has three additional secondary PP1 interactive surfaces. They conclude there is reduced (but not absent) PP1-HDAC6 association in AKAP220-\u0394PP1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 represent an important caveat and alternative interpretation of the \u0394PP1 data. The authors appropriately acknowledge that the KVXF mutation may not completely eliminate PP1 binding due to secondary binding sites (supported by citations to Schillace and Scott, 1999; Schillace et al., 2001; Hoermann et al., 2020). The conclusion of 'reduced association' (C146) based on co-IP data (Figure 3D) is more accurate than claiming complete loss of binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims about kidney physiology, chronic kidney disease, ADPKD, primary cilia function, and polycystin mutations establish the biological context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C13-C27 are background knowledge claims supported by appropriate citations. These provide context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims about AKAP function, AKAP220 binding partners, and their roles in renal signaling and ADPKD establish the rationale for investigating AKAP220 in ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 are background knowledge claims supported by appropriate citations. These establish why AKAP220 is a relevant target for study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Prior work from the authors' lab showed that AKAP220 modulates cytoskeletal signaling and that AKAP220KO mice display defects in water homeostasis and AQP2 trafficking linked to disruption of apical actin barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 cite prior work (Logue et al., 2011; Whiting et al., 2016) establishing the foundation for the current study. These are appropriately cited background findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C85",
+      "C86",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C113"
+    ],
+    "result": "Background claims about tubulin acetylation, HDAC6 function, actin regulation of ciliogenesis, and actin barrier function at the ciliary base provide mechanistic context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56, C85-C86, C94-C97, C113 are background knowledge claims supported by appropriate citations. These provide mechanistic context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Background claims about ADPKD pathology, HDAC6's role in cyst growth, polycystin mutations, and PP1's role in polycystin regulation establish the disease relevance of the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125, C149-C152 are background knowledge claims supported by appropriate citations. These establish the clinical relevance of targeting the AKAP220-PP1-HDAC6 pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "While AKAP79/150 has been implicated in renal ciliary signaling, proximity proteomics identify AKAP220 in cilia, and AKAP79/150 knockout does not impact cilia development in mIMCD3 cells or mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 appropriately distinguish AKAP220 from AKAP150 and cite relevant prior work (Choi et al., 2011; May et al., 2020) along with the authors' own data (Figure 1\u2014figure supplement 2) to establish specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors conclude that deacetylation is a fundamental signal termination process checking cilia development, with HDAC6 identified as a driver of cilia disassembly, and demonstrate that HDAC6 overexpression rescues ciliation control in AKAP220KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 combine background knowledge (C136 citing Ran et al., 2015) with the authors' rescue data (C137, Figure 2V) to support the conclusion about deacetylation as a regulatory mechanism (C135). The inference is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors' mechanistic model proposes that AKAP220 is a conventional PP1-targeting subunit using a KVxF motif, and that anchored PP1 functions as an adaptor recruiting HDAC6, with HDAC6 stability compromised in AKAP220KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 combine established knowledge (C140 citing Bollen et al., 2010) with the authors' data (C141-C142 from Figures 2-3) to support the proposed mechanism. The adaptor function is a reasonable inference from the co-IP and stability data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Using AKAP220-\u0394PP1 as a mechanistic probe, the authors identify a non-catalytic adaptor role for PP1 in regulating cytoskeletal events underlying cilia biogenesis, with effects on actin remodeling and cilia morphology attributed to KVXF motif disruption and concomitant effects on HDAC6 location enhancing cortactin acetylation and altering actin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 represent key mechanistic conclusions supported by the AKAP220-\u0394PP1 data (Figures 3-4). The identification of a non-catalytic adaptor function is novel and well-supported by the genetic and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors note that cortactin may contribute to ciliogenesis through complementary mechanisms, that cytoskeletal reorganization is a prelude to cilia extension, and that effects are more pronounced in live cells and kidney-on-a-chip environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are reasonable interpretations and observations. C156 appropriately cites Bershteyn et al., 2010 for alternative cortactin mechanisms. C157 is a general inference. C158 is supported by comparison of data in Figure 6F-N.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Background claims about focal adhesion proteins attaching the basal body to actin, initiation of actin barrier clearing, and the ciliary necklace as a checkpoint provide context for the proposed mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 are background knowledge claims supported by appropriate citations (Drummond et al., 2018; Kim et al., 2015; Casella et al., 1981; Holzinger, 2009; Long and Huang, 2019) that provide mechanistic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The authors discuss the 'cilia paradox' - how cilia can be pro-cystogenic in one context yet anti-cystogenic in another - and note that HDAC6 inhibitors have been used to target cyst size, though mechanisms may be complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 appropriately discuss limitations and complexity in the field, citing relevant literature (Kolb and Nauli, 2008; Lin et al., 2003; Ma et al., 2013; Cebotaru et al., 2016; Yanda et al., 2017). This represents appropriate scientific caution about therapeutic implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The authors discuss that HDAC6 has multiple functions beyond cilia (cell morphology, adhesion, migration, metastasis) that are also sites of AKAP220 action, and propose that tubacin may act at multiple sites including the AKAP220-PP1-HDAC6 axis to impact cyst formation and that targeting anchored-HDAC6 may enhance cilia development while interfering with cystogenic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C175 are largely speculative discussion points about tubacin's mechanism of action and therapeutic potential. While plausible, these hypotheses are not directly tested. C170-C171 cite relevant literature (Boyault et al., 2007; Logue et al., 2011; Wong and Scott, 2004). The proposals in C174-C175 are reasonable but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C176",
+      "C177"
+    ],
+    "result": "The authors note that AKAP-targeting has been used to restrain kinase inhibitors at specific locations and state their intention to develop a precision pharmacology strategy to deliver HDAC6 inhibitors to the ciliary base for treating ciliopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C177 cite prior work on AKAP-targeted drug delivery (Bucko et al., 2019; Bucko et al., 2020) and state future research directions. C177 is a statement of intent rather than a result, but appropriately builds on the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "The authors speculate that AKAP220-PP1 regulation of ciliogenesis may represent a homeostatic mechanism enabling cells to enter mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C148 is explicitly speculative and not tested in this study. While cilia disassembly is required for mitosis, the connection to the AKAP220-PP1-HDAC6 pathway in this context is not demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1588 @@
+{
+  "submission": {
+    "id": "34b7f048-68f7-485e-b300-063802f33f48",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:38:16.104074Z",
+    "updated_at": "2025-12-03T11:38:16.104074Z"
+  },
+  "content": [
+    {
+      "id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "submission_id": "34b7f048-68f7-485e-b300-063802f33f48",
+      "content_type": "manuscript",
+      "content_text": "# Leading edge maintenance in migrating cells is an emergent property of branched actin network growth\n\n## Authors\n\n- Rikki M Garner<sup>1</sup> ([ORCID: 0000-0001-9998-4596](https://orcid.org/0000-0001-9998-4596))\n- Julie A Theriot<sup>2</sup> ([ORCID: 0000-0002-2334-2535](https://orcid.org/0000-0002-2334-2535)) \u2020\n\n### Affiliations\n\n1. Biophysics Program, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Department of Biology, Howard Hughes Medical Institute, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimal cell migration is predominantly driven by the coordinated, yet stochastic, polymerization of thousands of nanometer-scale actin filaments across micron-scale cell leading edges. It remains unclear how such inherently noisy processes generate robust cellular behavior. We employed high-speed imaging of migrating neutrophil-like HL-60 cells to explore the fine-scale shape fluctuations that emerge and relax throughout the process of leading edge maintenance. We then developed a minimal stochastic model of the leading edge that reproduces this stable relaxation behavior. Remarkably, we find lamellipodial stability naturally emerges from the interplay between branched actin network growth and leading edge shape \u2013 with no additional feedback required \u2013 based on a synergy between membrane-proximal branching and lateral spreading of filaments. These results thus demonstrate a novel biological noise-suppression mechanism based entirely on system geometry. Furthermore, our model suggests that the Arp2/3-mediated ~70\u201380\u00b0 branching angle optimally smooths lamellipodial shape, addressing its long-mysterious conservation from protists to mammals.\n\n## Introduction\n\nCell migration driven by actin polymerization plays an essential role in countless organisms spanning the eukaryotic tree of life (Pollard and Cooper, 2009; Fritz-Laylin et al., 2017a; Welch et al., 1997). Across this broad phylogeny, cells have been observed to form a dizzying array of protrusive actin structures, each exhibiting unique physical and biological properties (Svitkina, 2018). In all cases, the fundamental molecular unit of these micron-scale structures is the single actin filament, which polymerizes stochastically by addition of single monomers to push the leading edge membrane forward (Mogilner and Oster, 1996; Peskin et al., 1993; Theriot et al., 1992; Prass et al., 2006). Higher order actin structures, and the biological functions they robustly enable, are therefore mediated by the collective action of thousands of stochastically growing filaments (Svitkina, 2013). It remains an open question how cells control for \u2013 or leverage \u2013 this inherent stochasticity to maintain stable leading edge protrusions over length and time scales more than three orders of magnitude larger than the scales of actin monomer addition (Rafelski and Theriot, 2004; Vavylonis et al., 2005).\n\nPerhaps the archetype of dynamically stable actin structures is the lamellipodium, a flat \u2018leaf-like\u2019 protrusion that is ~200 nm tall, up to 100 \u00b5m wide, and filled with a dense network of dendritically branched actin filaments (Svitkina et al., 1997; Abraham et al., 1999; Laurent et al., 2005; Fritz-Laylin et al., 2017b). Cell types that undergo lamellipodial migration (most notably fish epidermal keratocytes and vertebrate neutrophils) can maintain a single, stable lamellipodium for minutes to hours, allowing the cells to carry out their biological functions (Tsai et al., 2019; Lacayo et al., 2007). For example, in their in vivo role as first responders of the innate immune system, neutrophils must undergo persistent migration over millimeter-scale distances to reach sites of inflammation and infection (de Oliveira et al., 2016; Kolaczkowska and Kubes, 2013). Regardless of the cell type, the origins of this striking stability in the face of stochastic actin filament polymerization remain elusive. It has been widely been assumed for decades that some sort of regulatory or mechanical feedback mechanism must be required for lamellipodial shape stability, with extensive experimental efforts identifying membrane tension (Diz-Mu\u00f1oz et al., 2016; Houk et al., 2012; Mueller et al., 2017; Gauthier et al., 2012; Tsujita et al., 2015; Batchelder et al., 2011; Sens and Plastino, 2015), plasma membrane curvature-sensing proteins (Tsujita et al., 2015; Pipathsouk et al., 2019), a competition for membrane-associated free monomers (Mullins et al., 2018), and force-feedback via directional filament branching (Risca et al., 2012) as potential contributors. The stability of lamellipodia has also been theoretically proposed to depend on the dendritically branched structure of their actin networks, wherein filaments are oriented at an angle relative to the cell\u2019s direction of migration, allowing growing filament tips to spread out laterally along the leading edge as they polymerize (Lacayo et al., 2007; Grimm et al., 2003). Although any acute angle would permit spreading, we note that filament orientation in cells has been experimentally observed to be highly stereotyped, averaging \u00b135\u00b0 relative to the membrane normal (Maly and Borisy, 2001; Verkhovsky et al., 2003) \u2013 approximately one half of the highly evolutionarily-conserved ~70\u00b0 branch angle mediated by the Arp2/3 complex (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008.) In contrast to the proposed stabilizing role of spreading, several other features of lamellipodial actin are known to impart nonlinearities on network growth, which might amplify stochastic fluctuations. For instance, dendritic branching is an autocatalytic process which can lead to explosive growth (Mullins et al., 2018; Carlsson, 2001). In addition, the growth rates of the actin network are dependent on the velocity of the flexible membrane surface it is pushing, in a manner which imparts hysteresis to the system (Mueller et al., 2017; Parekh et al., 2005). How spreading might interact with these complexities \u2013 and the ultimate consequences for maintenance of a stable leading edge \u2013 remains unknown.\n\nSeeking to dissect the origins of lamellipodial stability, we pursued complementary experimental and computational methodologies. First, we performed high-speed, high-resolution microscopy on migrating human neutrophil-like HL-60 cells to monitor their leading edge shape dynamics. In contrast to the remarkable overall lamellipodial stability observed over minutes, high-speed imaging revealed that the leading edge shape is extremely dynamic at shorter time and length scales, constantly undergoing fine-scale fluctuations around the average cell shape. We determined that these shape fluctuations continually dissipate (thereby enabling long time scale lamellipodial maintenance) in a manner quantitatively consistent with viscous relaxation back to the time-averaged leading edge shape. We next developed a minimal stochastic model of branched actin network growth against a flexible membrane, broadly applicable to a wide variety of cell types, that was able to recapitulate the global leading edge stability and fine-scale fluctuation relaxation behavior observed in cells. Our model suggests that the suppression of stochastic fluctuations is an intrinsic, emergent property of collective actin dynamics at the leading edge, as branched network geometry alone is necessary and sufficient to generate lamellipodial stability. Moreover, we find that the evolutionarily-conserved geometry, the ~70\u00b0 branching angle of the Arp2/3 complex, optimally quells shape fluctuations.\n\n## Results\n\n### Fine-scale leading edge shape fluctuations revealed at high spatiotemporal resolution\n\nNeutrophils form lamellipodia that are intrinsically lamellar, maintaining a thin, locally flat sheet of actin even in the absence of support structures like the substrate surface (Fritz-Laylin et al., 2017b). Here, we study the migration of neutrophil-like HL-60 cells (Spellberg et al., 2005) within quasi-two-dimensional confinement between a glass coverslip and an agarose pad overlay (Millius and Weiner, 2009). In addition to serving as an excellent in vitro model for neutrophil surveillance of tissues, this assay allows for easy visualization and quantification of lamellipodial dynamics by restraining the lamellipodium to a single imaging plane. Cells in this type of confinement can migrate persistently, maintaining nearly-constant cell shape, for time scales on the order of minutes to hours (Tsai et al., 2019; Garner et al., 2020). In order to capture leading edge dynamics on time scales more relevant to the stochastic growth of individual filaments, we performed high-speed (20 Hz) imaging of migrating HL-60 cells. These experiments revealed dynamic, fine-scale fluctuations around the average leading edge shape (Figure 1a\u2013c, Video 1, Figure 1\u2014figure supplements 1\u20132, Materials and methods), where local instabilities in the leading edge emerge, grow, and then relax. Notably, these previously-unobserved lamellipodial dynamics are phenotypically distinct from \u2013 and almost 100-fold faster than \u2013 the oscillatory protrusion-retraction cycles seen in other, slower-moving cell types (e.g. fibroblasts) (Giannone et al., 2004; Ryan et al., 2012; Ma et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig1-v3.jpg)\n\n**Figure 1.:** (a\u2013c) Example of leading edge fluctuations extracted from a representative migrating HL-60 cell. (a) Phase contrast microscopy image from the first frame of a movie, overlaid with segmented leading edge shapes from time points increasing from blue to red in 2 s intervals. Top Inset: Magnification of the segmented leading edge between t = 0\u20132 s increasing from blue to red in 50 ms intervals. Bottom Inset: A de-magnified image of the whole cell at the last time point. (b\u2013c) Kymographs of curvature (b) and velocity (c). Note the velocity is always positive, so no part of the leading edge undergoes retraction. (d) Schematic demonstrating a commonly observed trend between fluctuation wavelength and relaxation time. (e) Autocorrelation amplitude (complex magnitude) of the spatial Fourier transform plotted as a function of time offset from a representative cell. Each line corresponds to a different spatial frequency in the range of 0.22\u20130.62 \u00b5m\u20131 (corresponding to a wavelength in the range of 4.5\u20131.6 \u00b5m) in 0.056 \u00b5m\u20131 intervals. (f) Best fit of the autocorrelation data shown in (e) to an exponential decay, fitted out to a drop in amplitude of 2/e. (g\u2013h) Fitted parameters of the autocorrelation averaged over 67 cells. Data from this figure can be found in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Example of image processing and leading edge segmentation for a single cell. (a) Example raw image of a migrating cell. (b) Image of the same cell after aligning the image in the direction of motion of the cell and then cropping the leading edge. (c\u2013f) Segmentation process shown for the example cell, for a single time point. (c) Steps for performing the segmentation, as well as a legend for (d-f). (d-f) Image of the cell (top) and a vertical line scan of the pixel intensity (blue line, bottom) for (d) the raw image, (e) the image smoothed along the vertical direction, and (f) the vertical derivative of the smoothed image. Super-imposed on each plot is the position of maximum intensity (pink dot), the position of steepest negative gradient (orange dot), and the mean of these two positions (black dot), which was used as the segmented leading edge point. The search for these maxima along each line scan was performed in a window around the segmented leading edge position at the previous time point (red line). (g) Kymograph of the segmented leading edge positions for all time points in the video.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** An example of the fine-scale feature selection process for the same cell shown in Figure 1\u2014figure supplement 1. (a,c) Raw leading edge shape (red line), the Loess-smoothed shape (blue line), and the difference between the raw and smoothed shape (green line) for both (a) raw data and (c) de-noised data, to emphasize the ability of background-subtraction to capture fine-scale fluctuation events. (b,d) Green line: The same data as shown in (a,c), with the y-position magnified to show fine-scale shape features. Purple line: The same data after subtracting the time-averaged y-position for each x-position. This subtraction pulls out fluctuations around the average y-position for each x-position. The raw background-subtracted leading edge shapes (panel (b), purple curve) were used in subsequent analysis.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Validation of spatial Fourier mode autocorrelation analysis using analytical theory for simulated membrane dynamics. (a\u2013f) Simulated membrane control exhibiting exponentially decaying fluctuations. (a) Freely fluctuating membrane model schematic. Black lines, membrane; Physical parameters: Fspring, forces between membrane segments; FBM, Brownian forces; Fdrag, viscous drag. (b) Analytical theory for membrane freely fluctuating under Brownian motion: Autocorrelation amplitude <Z(k\u2019,t)Z(k,0) > as a function of wavemode, k, and time, t, is an exponential decay function. Parameters include the Boltzmann constant kB, temperature T, elastic modulus \u03c3, bending modulus \u03ba, and membrane rest length L. (c) Autocorrelation amplitude (complex magnitude) of the spatial Fourier transform plotted as a function of time offset from a representative simulation. Each line corresponds to a different spatial frequency in the range of 0.2\u20130.55 \u00b5m\u20131 (corresponding to a wavelength in the range of 5.0\u20131.8 \u00b5m) in 0.05 \u00b5m\u20131 intervals. (d) Best fit of the autocorrelation data shown in (c) to an exponential decay, fitted out to a drop in amplitude of 2/e. (e\u2013f) Fitted parameters for the same simulation shown in (c\u2013d) showing good agreement with the analytical theory. (g\u2013i) The most obvious features of the curvature kymograph (apparent dominant wavemodes and apparent oscillations) are misleading, and are recovered for a system with (by definition) no dominant or oscillatory modes. In the experimental data, these features are retained following baseline subtraction in the pre-processing step (see Figure 1\u2014figure supplement 2). Curvature kymograph for (g) a simulated membrane, (h) the HL-60 leading edge displayed in Figure 1, and (i) the same HL-60 cell leading edge shown in (h) with curvature fitting performed after baseline-subtraction.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Autocorrelation analysis of HL-60 leading edges shows exponential decay to a noise window at long times. (a\u2013c) Autocorrelation amplitude (complex magnitude) of the spatial Fourier transform plotted as a function of time offset from (a) the simulated membrane control from Figure 1\u2014figure supplement 3, (b) the HL-60 leading edge displayed in Figure 1, and (c) a different HL-60 cell leading edge that was imaged for longer time. Each panel shows the autocorrelation results for a different wavelength, where the color represents the wavelength.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** No new features emerge upon a ~50% increase in span used for background subtraction. (a\u2013b) Autocorrelation analysis results on HL-60 cell leading edges as shown in Figure 1, using either (a) a 7 \u03bcm span or (b) a 10 \u03bcm span to perform background subtraction on the leading edge shape during pre-processing. (A typical cell is ~15\u201320 \u03bcm wide.).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a\u2013c) Example of leading edge fluctuations extracted from a representative migrating fish epidermal keratocyte, plotted as in Figure 1a\u2013c. Note differences in scale for time, x-position, and velocity from the equivalent plots in Figure 1. Segmented leading edges in (a) are still plotted in 2 s time intervals. (d) Autocorrelation amplitude (complex magnitude) of the spatial Fourier transform plotted as a function of time offset from a representative cell, plotted as in Figure 1e. Each line corresponds to a different spatial frequency in the range of 0.19\u20130.52 \u00b5m\u20131 (corresponding to a wavelength in the range of 5.3\u20131.9 \u00b5m) in 0.047 \u00b5m\u20131 intervals. (e) Best fit of the autocorrelation data shown in (d) to an exponential decay, plotted as in Figure 1f. Note differences in scale for time offset and autocorrelation amplitude from the equivalent plot in Figure 1. (f\u2013g) Fitted parameters of the autocorrelation averaged over 16 videos of 12 cells, plotted as in Figure 1g\u2013h.\n\n![Video 1.](https://cdn.elifesciences.org/articles/74389/elife-74389-video1.mp4.jpg)\n\n**Video 1.:** Time lapse video representation of segmentation results shown in Figure 1a.\n\nWe estimate we were able to reliably measure fluctuations with wavelengths as small as ~650 nm, and amplitudes down to ~65 nm, by fitting the phase contrast halo around the leading edge (Figure 1\u2014figure supplements 1\u20132, Materials and methods). These values should approximately correspond to 25 actin filaments at physiological spacing (Svitkina et al., 1997) and 25 actin monomers assembled into a filament lattice along the direction of motion. While our measurements of shape dynamics cannot resolve polymerization events of individual filaments, our results are consistent with the hypothesis that stochasticity in actin growth at the level of monomer addition \u2013 occurring throughout the leading edge actin network \u2013 ultimately manifests as the observed micron-scale leading edge fluctuations. In particular, kymograph analysis of curvature and velocity (Figure 1b\u2013c) showed that relatively long-lived shape fluctuations are formed by the continual time-integration of seemingly uncorrelated and very short-lived (sub-second, sub-micron) velocity fluctuations. Because the average cell shape remains constant over time, there must be some form of feedback acting on leading edge curvature to sustain stable lamellipodial growth. These rich, measurable fine-scale dynamics therefore provide a unique opportunity to directly observe the time-evolution of leading edge maintenance. Taking advantage of our high-precision measurements, we aimed to quantitatively investigate the properties of the observed fluctuations, with the goal of determining the mechanisms by which molecular machinery at the leading edge coordinates the stochastic polymerization of individual actin filaments.\n\n### Lamellipodial stability mediated by viscous relaxation of shape fluctuations\n\nThe relaxation of fine-scale shape fluctuations back to the steady-state leading edge shape is essential for the long time scale stability of lamellipodia. As for any physical system, the nature of this relaxation reflects the system\u2019s underlying physical properties; in this case, the characteristics of \u2013 and interactions between \u2013 actin filaments and the membrane. To provide a framework for exploration of the physical mechanisms underlying stable lamellipodial protrusion, we quantified the relaxation dynamics by performing time-autocorrelation analysis on the leading edge shape (Materials and methods). Applied in this context, this analytical technique calculates the extent to which the lamellipodium contour loses similarity with the shape at previous time points as fluctuations emerge and relax. As most material systems (actively-driven or otherwise) exhibit relaxation behavior with a characteristic wavelength-dependence (e.g. Figure 1d), we performed Fourier decomposition on the leading edge shape to separate out fluctuations at different length scales, and then performed autocorrelation analysis separately on each Fourier mode. We validated our analytical methods using simulations of membrane dynamics, for which there exists a well-established analytical theory (Materials and methods, Figure 1\u2014figure supplement 3), and show that our results are not sensitive to an extension of our analysis to longer length and time scales (Materials and methods, Figure 1\u2014figure supplements 4\u20135). Further, the membrane simulation control nicely demonstrates how visual features of curvature kymographs (e.g. Figure 1b) can be misleading (Materials and methods, Figure 1\u2014figure supplement 3), and motivates the necessity of our more comprehensive technique.\n\nAutocorrelation analysis revealed a monotonic relaxation of shape fluctuations at each wavelength (Figure 1e\u2013f); the decay at every spatial scale is well-fit by an exponential form (Figure 1f), consistent with overdamped viscous relaxation. Importantly, we do not detect any increase in the autocorrelation over time, which would have appeared if there were any sustained, correlated growth of the fluctuations before they decay. This again suggests that the fluctuations arise from uncorrelated stochastic processes, such as fluctuations in actin density. A clear wavelength-dependence is observed, with shorter wavelengths decaying faster and having smaller amplitudes (Figure 1g\u2013h). This general trend is shared by many physical systems with linear elastic constraints, such as idealized membranes (Brown, 2008) and polymers (De Gennes, 2002) freely fluctuating under Brownian motion, but can be contrasted with systems that have a dominant wavelength, as in the case of buckling or wrinkling of materials under compression (Cerda and Mahadevan, 2003). Importantly, these qualitative and quantitative properties of the leading edge fluctuations are not specific to cell type or experimental conditions (e.g. agarose overlay, ECM), as we also observe this phenomenon in fish epidermal keratocytes (Figure 1\u2014figure supplement 6, Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/74389/elife-74389-video2.mp4.jpg)\n\n**Video 2.:** Time lapse video corresponding to the data shown in Figure 1\u2014figure supplement 6a-e.\n\n### Leading edge stability as an emergent property of branched actin growth\n\nThe rich behavior and quantitative nature of our leading edge shape fluctuation data made them ideal for comparison with physical models. In order to understand how molecular-scale actin assembly and biomechanics might give rise to the observed micron-scale shape dynamics, we aimed to reproduce this behavior in a stochastic model of branched actin network growth against a membrane (Figure 2a\u2013c, Video 3, Materials and methods). Previous stochastic models of protrusive actin-based forces largely focused on actin polymerization against rigid obstacles (e.g. the bacterial cell wall for the Listeria comet tail Carlsson, 2001; Carlsson, 2003 or a single, flat membrane segment in models of lamellipodia Mueller et al., 2017). Expanding on this general framework, and in an approach conceptually similar to previous work simulating small (< 2 \u00b5m) patches of a lamellipodium (Schaus et al., 2007; Schaus and Borisy, 2008), we incorporated a two-dimensional leading edge with filaments polymerizing against a flexible membrane, which we modeled as a system of flat membrane segments coupled elastically to each other. The size of the membrane segments was comparable to the spatial resolution of our experimental measurements, allowing us to assay fluctuations over a similar dynamic range of wavelengths. Simulated filaments apply force to the membrane following the classic untethered Brownian ratchet formalism (Mogilner and Oster, 1996), consistent with recent experiments showing that cellular protrusions are formed by largely untethered actin networks (Bisaria et al., 2020). Designed to be as comparable as possible to our experimental data, the model incorporated experimentally measured values from the literature for the membrane tension, membrane bending modulus, and biochemical rate constants (Tables 1\u20132, Mogilner and Oster, 1996; Lieber et al., 2013). As we were specifically interested in identifying biophysical mechanisms regulating leading edge stability, we minimized the model\u2019s biological complexity by including only the core biochemical elements of actin network growth dynamics: polymerization, depolymerization, branching, and capping. All filament nucleation in the model occurs through dendritic branching observed in cells to be mediated by the Arp2/3 complex (Welch et al., 1997; Svitkina et al., 1997), which catalyzes the nucleation of new \u2018daughter\u2019 actin filaments as branches from the sides of pre-existing \u2018mother\u2019 filaments at a characteristic angle of ~70\u00b0 (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008). By simulating individual filament kinetics, the model captures the evolutionary dynamics of the filament network, allowing us to directly test hypothesized mechanisms for the interplay between actin network properties (e.g. filament orientation) and protrusion dynamics (Mogilner and Oster, 1996; Lacayo et al., 2007; Mueller et al., 2017; Grimm et al., 2003; Maly and Borisy, 2001; Schaus et al., 2007; Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig2-v3.jpg)\n\n**Figure 2.:** (a\u2013b) Model schematic. Black lines, membrane; green circles, actin; purple flowers, Arp2/3 complex; blue crescents, capping protein. Rates: kon, polymerization; koff, depolymerization; kbranch, branching; kcap, capping. \u03b8branch, branching angle. dbranch, branching window. Physical parameters: Fspring, forces between membrane segments; FBR, force of filaments on the membrane (Brownian ratchet); Fdrag, viscous drag. (b) Schematic demonstrating filament angle evolution. Filaments growing perpendicular to the leading edge (I) outcompete their progeny (branches), leading to a reduction in filament density; filaments growing at an angle (II and III) make successful progeny. Filaments spreading down a membrane positional gradient (II) are more evolutionarily successful than those spreading up (III). (c) Simulation snapshot: Black lines, membrane; colored lines, filament equilibrium position and shape; gray dots, barbed ends; black dots, capped ends; filament color, x-position of membrane segment filament is pushing (increasing across the x-axis from blue to red). (d-h) For a representative simulation, mean (solid line) and standard deviation (shading) of various membrane and actin filament properties as a function of simulation time. Note for linear filament density (d) lamellipodia are ~10 filament stacks tall along the z-axis, giving mean filament spacing of 10/density, or ~30 nm. (i\u2013l) Autocorrelation analysis and fitting for a representative simulation (i\u2013j) as well as best fit parameters averaged over 40 simulations (k\u2013l). Data from this figure can be found in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A summary of leading edge fluctuations and actin network properties for simulations using the standard timestep (blue), a timestep three-fold larger (green), and a timestep three times smaller (pink). Increasing the temporal discretization (decreasing the timestep) did not affect the simulation results, suggesting this chosen timestep is appropriate to resolve the fastest timescales in the system. (a\u2013b) Fitted leading edge fluctuation parameters plotted as in Figure 5f\u2013g. (c\u2013g) Actin network properties plotted as in Figure 2d\u2013h. (h\u2013l) Histograms of actin network property distributions at steady state (last 90 s of the simulated timepoints in panels c-g). The y-axis corresponds to the probability density per histogram bin width. The sum of the probability density across all bins is equal to one. Histograms with bin widths less than one may have a probability density greater than one.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a\u2013l) A summary of leading edge fluctuations and actin network properties, plotted as in Figure 2\u2014figure supplement 1, for simulations using the standard membrane segment length (blue), a segment size twofold larger (green) and a length 30% smaller (pink). Increasing the spatial discretization (decreasing the segment size) did not significantly change the leading edge properties, suggesting the chosen discretization is sufficient to approximate a continuous membrane.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a\u2013l) A summary of leading edge fluctuations and actin network properties, plotted as in Figure 2\u2014figure supplement 1, for simulations using the standard leading edge length (blue), a length two times smaller (green) and a length twofold larger (pink). Increasing the leading edge length did not change the properties of the fluctuations and actin network.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig3-v3.jpg)\n\n**Figure 3.:** Predicted and experimentally-measured response of the autocorrelation decay fit parameters to drug treatment with Latrunculin B, plotted as in Figure 1g\u2013h. (a\u2013b) Predicted response to a reduction in the free monomer concentration (green, 10 \u00b5M G-actin) compared to the standard concentration used in this work (black, 15 \u00b5M G-actin) \u2013 medians over 40 simulations for each condition. (c\u2013d) Experimentally measured behavior: DMSO control \u2013 medians over 67 cells (same data as plotted in Figure 1g\u2013h). 30 nM Latrunculin B \u2013 medians over 34 cells. Data from this figure can be found in Figure 3\u2014source data 1.\n\n![Video 3.](https://cdn.elifesciences.org/articles/74389/elife-74389-video3.mp4.jpg)\n\n**Video 3.:** Time lapse video representation of simulation results shown in Figure 2c.\n\n**Table 1.**\n Actin network growth parameters.Parameters listed are the default used for the simulations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Notation</th>\n      <th>Meaning</th>\n      <th>Value</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>M</td>\n      <td>Free monomer concentration</td>\n      <td>15 \u00b5M</td>\n      <td>Cooper, 1991; Marchand et al., 1995</td>\n    </tr>\n    <tr>\n      <td>kon</td>\n      <td>Polymerization rate</td>\n      <td>11\u221910\u20133 monomers ms\u20131 \u00b5M\u20131</td>\n      <td>Pollard, 1986</td>\n    </tr>\n    <tr>\n      <td>koff</td>\n      <td>Depolymerization rate</td>\n      <td>10\u20133 monomers ms\u20131</td>\n      <td>Pollard, 1986</td>\n    </tr>\n    <tr>\n      <td>kcap</td>\n      <td>Capping rate</td>\n      <td>3\u221910\u20133 ms\u20131</td>\n      <td>~3\u221910\u20133 \u00b5M\u20131 ms-1 Schafer et al., 1996at 1 \u00b5M capping protein Pollard et al., 2000</td>\n    </tr>\n    <tr>\n      <td>kbranch</td>\n      <td>Branching rate</td>\n      <td>4.5\u221910\u20135 branches ms\u20131 \u00b5M\u20131 nm\u20131</td>\n      <td>50 nm branch spacing Svitkina et al., 1997; Svitkina and Borisy, 1999;Branch rate approximated such that elongation rate / branch rate = 50 nm; kbranch = (kon\u2219M\u2219lm)/(50 nm\u2219M\u2219ybranch)</td>\n    </tr>\n    <tr>\n      <td>ybranch</td>\n      <td>Branching window length</td>\n      <td>15 nm</td>\n      <td>~3\u20135 protein diameters away from the membrane</td>\n    </tr>\n    <tr>\n      <td>\u03b8branch</td>\n      <td>Branching angle</td>\n      <td>70 \u00b1 10\u00b0</td>\n      <td>Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008; Blanchoin et al., 2000; Cai et al., 2008; Svitkina and Borisy, 1999</td>\n    </tr>\n    <tr>\n      <td>lp</td>\n      <td>Actin filament persistence length</td>\n      <td>1 \u00b5m</td>\n      <td>K\u00e4s et al., 1996</td>\n    </tr>\n    <tr>\n      <td>lm</td>\n      <td>Actin monomer length</td>\n      <td>2.7 nm</td>\n      <td>Pollard, 1986</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Physical parameters.Parameters listed are the default used for the simulations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Notation</th>\n      <th>Meaning</th>\n      <th>Value</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>kB</td>\n      <td>Boltzmann constant</td>\n      <td>0.0183 pN nm K\u20131</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>Temperature</td>\n      <td>310.15 K</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>\u03c3</td>\n      <td>Membrane tension</td>\n      <td>0.03 pN nm\u20131</td>\n      <td>Lieber et al., 2013</td>\n    </tr>\n    <tr>\n      <td>\u03ba</td>\n      <td>Membrane bending modulus</td>\n      <td>140 pN nm</td>\n      <td>Lieber et al., 2013</td>\n    </tr>\n    <tr>\n      <td>\u03b7w</td>\n      <td>Viscosity of water at 37 \u00b0C</td>\n      <td>7\u221910\u20137 pN ns nm\u20132</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>\u03b7</td>\n      <td>Effective viscosity at the leading edge</td>\n      <td>3000 \u03b7w</td>\n      <td>~ effective viscosity of micron-scale beads in cytoplasm Wirtz, 2009</td>\n    </tr>\n    <tr>\n      <td>L</td>\n      <td>Leading edge length</td>\n      <td>20 \u00b5m</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>h</td>\n      <td>Leading edge height</td>\n      <td>200 nm</td>\n      <td>Abraham et al., 1999; Laurent et al., 2005; Urban et al., 2010</td>\n    </tr>\n    <tr>\n      <td>\u0394x</td>\n      <td>Membrane segment length</td>\n      <td>100 nm</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>N</td>\n      <td>Number of membrane segments</td>\n      <td>200</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\nTo our great surprise, this very simple model was able to recapitulate stable leading edge fluctuations. Nascent leading edges reach steady state values for filament density, filament length, filament angle, membrane velocity, and (most importantly) membrane fluctuation amplitude within seconds, a biologically realistic time scale (Figure 2d\u2013h). Furthermore, the steady state values obtained are in quantitative agreement with both our own experimental data and previously published measurements, with the model yielding mean values of: 0.3 filaments/nm for filament density (~30 nm filament spacing for a lamellipodium that is 10 filaments tall) (Abraham et al., 1999), ~150 nm for filament length, ~40\u00b0 for filament angle (with respect to the direction of migration), ~0.35 nm/ms for membrane velocity, and ~50 nm for membrane fluctuation amplitude (Svitkina et al., 1997; Maly and Borisy, 2001; Verkhovsky et al., 2003).\n\nAs observed in the experimental measurements, simulated leading edge shape stability is mediated by an exponential decay of shape fluctuations (Figure 2i\u2013j). Furthermore, the minimal model correctly predicts the monotonic trends of fluctuation amplitude and decay time scale with wavelength (Figure 2k\u2013l) in a way that was not sensitive to our choices of simulation time step, membrane segment length, and overall length of the leading edge (Figure 2\u2014figure supplements 1\u20133). It should be noted that the generation of the simulated data in Figure 2k\u2013l did not involve any curve-fitting (and therefore no free parameters that could be fit) to the experimentally measured autocorrelation dynamics in order to parameterize the model. Rather, the simulated fluctuation relaxation behavior, qualitatively reproducing our experimental measurements, emerges directly from the molecular-scale actin growth model, in which all biochemical parameters were estimated from measurements in the existing literature (Tables 1\u20132) \u2013 leaving no free simulation parameters.\n\n### Predicting effects of drug treatment with Latrunculin B\n\nWe were interested in further assaying the predictive power of this minimal stochastic model by determining whether the output of the simulations was congruent with experimental observations under conditions that had not been tested prior to model development. As an example, we elected to test whether the model could correctly predict the response of HL-60 cells to treatment with the drug Latrunculin B, which binds to and sequesters actin monomers. Qualitatively, cells treated with Latrunculin B (Video 4) present with enhanced bleb formation and more variable leading edge shapes, in comparison with cells treated with a DMSO vehicle control (Video 5). In our model, addition of this drug can be simulated by reducing the free monomer concentration, which consequently reduces both the polymerization rate and the branching rate. At low effective doses, subtle but measurable changes to leading edge fluctuations were predicted: specifically, an increase in the amplitudes at large wavelengths, and a decrease in the decay rates across all wavelengths (Figure 3a\u2013b). Our experimental results were consistent with these quantitative predictions; Latrunculin B-treated cells exhibited increased fluctuation amplitudes and decreased fluctuation rates over the predicted ranges (Figure 3c\u2013d).\n\n![Video 4.](https://cdn.elifesciences.org/articles/74389/elife-74389-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/74389/elife-74389-video5.mp4.jpg)\n\n### Geometry as the core determinant of simulated leading edge stability\n\nGiven the success of the model in reproducing experimental results, we next wanted to determine which features of the simulation were responsible for leading edge stability and relaxation of fluctuations. The simplicity of the model allowed us to determine the stability mechanism by process of elimination, selectively removing elements of the model (Materials and methods) and determining whether stability was retained. To assay the importance of membrane tension and bending rigidity, which has been suggested to be a key factor regulating lamellipodial organization (Batchelder et al., 2011; Sens and Plastino, 2015), we simply removed the forces between the membrane segments (Figure 2a, Fspring) from the simulation (Materials and methods). Surprisingly, the coupling between the membrane segments (i.e. the effects of tension and bending at length scales larger than the size of an individual membrane segment) was completely dispensable for leading edge stability (Figure 4a\u2013e).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig4-v3.jpg)\n\n**Figure 4.:** (a\u2013e) Comparison of leading edge properties with and without the coupling of the membrane segments by tension and bending rigidity (no coupling: Fspring = 0 in Figure 2a), plotted as in Figure 2d\u2013h. (f\u2013i) Comparison of leading edge properties with and without the ability of filaments to spread between neighboring membrane segments. (g) A snapshot of the simulation after filament network collapse (defined as a state where at least 25% of the membrane segments have no associated filaments). (f,g,i) Plots made from the same simulation. (h) A histogram of the average time to network collapse over 40 simulations. (j) Schematic representing the proposed molecular mechanism underlying the stability of leading edge shape, with time increasing from I-IV. Data from this figure can be found in Figure 4\u2014source data 1.\n\nFollowing a similar process of elimination, we determined that in fact only two elements were required for stability. First, as reported previously for dendritic actin network polymerization against a single stiff obstacle, it was necessary to constrain branching to occur only within a fixed distance from the leading edge membrane (Figure 2a\u2013b) in order to maintain a steady state actin density (Carlsson, 2001). The molecular motivation for this spatially limited \u2018branching window\u2019 is rooted in that fact that activators of the Arp2/3 complex, which render Arp2/3 competent for actin filament nucleation, are typically membrane-associated proteins (Suetsugu, 2013). Second, we found that stability is inherently tied to the ability of filaments to spread laterally to neighboring membrane segments (Figure 2b II-III, Figure 4f\u2013i). Recall that, because the branched actin network geometry causes filaments to grow, on average, at an angle relative to the membrane normal (Maly and Borisy, 2001; Verkhovsky et al., 2003), polymerizing tips spread laterally along the leading edge (Lacayo et al., 2007; Grimm et al., 2003). Removing filament spreading from the model by fixing filaments to remain associated with their nearest membrane segment at birth (Materials and methods) led to actin density divergence: network regions with low filament density eventually underwent complete depolymerization, while high-density regions continued to accumulate actin (Figure 4f\u2013g).\n\nThese findings lead us to a simple molecular feedback mechanism for leading edge stability, based on a synergy between filament spreading and membrane-proximal branching (Figure 4j): To begin with, regions with initially high filament density come to protrude beyond the average position of the rest of the membrane, representing the emergence of a leading edge shape fluctuation (Figure 4j, I, II). This induces asymmetric filament spreading, where filaments from high-density regions can spread productively into neighboring regions (Figure 2b, II), but filaments spreading from adjacent low-density regions cannot keep up with the fast moving membrane segments (Figure 2b, III), and thus are unproductive (Figure 4j, II, III). In this way, the branched geometry inherent to dendritic actin polymerization, as well as its interaction with the shape of the membrane, naturally encodes leading edge stability (Figure 4j, IV). Thus our results directly demonstrate a \u2018stability-through-spreading\u2019 mechanism that has previously only been assumed in mean-field analytical theories (Lacayo et al., 2007; Grimm et al., 2003). Remarkably, this means that leading edge maintenance is an intrinsic, emergent property of branched actin network growth against a membrane, without requiring any further regulatory governance. Geometrical constraints imposed simply by the nature of membrane-proximal actin branching ensure that any small variations in either local actin filament density or growth rate are inherently self-correcting to regress toward the mean.\n\nOf note, it has previously been shown that Arp2/3-mediated branching is required for lamellipodial formation in a wide variety of cell types; cells with inhibited or depleted Arp2/3 complex exhibit complete disruption of the lamellipodium shape and often switch to a different mode of migration altogether, such as filopodial motility (Fritz-Laylin et al., 2017b; Henson et al., 2015; Wu et al., 2012; Davidson et al., 2018). Indeed, HL-60s treated with the Arp2/3 inhibitor CK-666 have extremely variable leading edge shapes, characterized by long, thin filopodia-like protrusions (Video 6). Our theoretical results provide a mechanistic interpretation for this striking phenomenon, suggesting that the vital lamellipodial maintenance role of Arp2/3-mediated branching stems from its ability to mediate efficient filament spreading and equilibration of actin density fluctuations, purely because the daughter filament always grows at an angle distinct from its mother.\n\n![Video 6.](https://cdn.elifesciences.org/articles/74389/elife-74389-video6.mp4.jpg)\n\n### Optimal suppression of fluctuations by the highly conserved ~70\u00b0 branching angle\n\nGiven the essential contribution of branched network geometry to the stability of the simulated leading edges, we reasoned that variations in the branching geometry alone might have a significant effect on leading edge fluctuations. We therefore performed simulations to determine the effects of changing the average branching angle and branching angle variability on filament orientation, filament density, and leading edge fluctuation fit parameters (Figure 5). In this context, we highlight the distinction between the branching angle, \u03b8br (i.e. the angle of a daughter filament relative to its mother), and the filament angle or orientation, \u03b8f (i.e. the angle of a filament relative to the direction of migration) (Figure 5a, inset). Due to the sterotypical branching angle, \u03b8br, there is a direct correspondence between the orientation, \u03b8fmother, of a mother filament and the orientation, \u03b8fdaughter, she passes on to her daughter branches. Our simulations are thus, in effect, selection assays, as mother filaments compete to stay within the fixed branching window, spawn daughter branches, and thus pass down their angle to their progeny (Maly and Borisy, 2001; Schaus et al., 2007). For example, when filaments are initialized with a random orientation, and the branching angle is fixed (i.e. there is no variability in the branching angle), only a handful of the initial filament angles (\u03b8f) survive until the end of the simulation (Figure 5a). The surviving, successful filament angles are narrowly and symmetrically distributed around one half of the branching angle (Figure 5a\u2013c). This optimal filament angle allows mother and daughter filaments to branch back and forth symmetrically about the membrane normal, such that mother filaments do not out-compete their progeny (as has been described previously) (Maly and Borisy, 2001; Schaus et al., 2007; Schaus and Borisy, 2008; Figure 2b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74389/elife-74389-fig5-v3.jpg)\n\n**Figure 5.:** (a\u2013c) Time course (a) and steady state distribution (b\u2013c) of the filament angle (\u03b8f) for simulations with various branching angle standard deviations (\u0394\u03b8br), (a\u2013b) and means (\u03b8br), (c). Dashed lines represent \u03b8br/2 plus integer multiples of \u03b8br. (d\u2013e) Steady state filament density distribution as a function of the mean branching angle in the context of \u0394\u03b8br=0\u00b0 (d) and \u0394\u03b8br=10\u00b0 (e). (a\u2013b, d\u2013e) Results from a representative simulation for each condition. (c) Data integrated over 40 simulations. (f\u2013q) Predicted response of leading edge fluctuations and filament density variability to changes in the branch angle and branch angle variability, medians over 40 simulations for each condition. Red error bars \u2013 standard error. Color map is identical for panels c-q. (h,l,p) Fitted amplitude as a function of branch angle, where each line represents a different spatial frequency, increasing from 0.2 to 3.2 \u00b5m\u20131 in intervals of 0.5 \u00b5m\u20131. Insets have identical x-axes to main panels. (i,m,q) Standard deviation of the filament density at steady state plotted as a function of branch angle. Note the x- and y-axes limits in (f\u2013g, j\u2013k, n\u2013o) are expanded compared to the equivalent panels in Figures 1\u20143. Data from this figure can be found in Figure 5\u2014source data 1.\n\nIn living cells, branching is mediated by the Arp2/3 complex, which has been experimentally measured to form highly regular and sterotyped branches at ~70\u00b0 (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008). Intriguingly, this protein complex is highly conserved (Welch et al., 1997), with measurements of the branching angle in a wide variety of species, including protists (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008; Blanchoin et al., 2000), yeast (Rouiller et al., 2008), mammals (Rouiller et al., 2008; Blanchoin et al., 2000; Cai et al., 2008), and amphibians (Svitkina and Borisy, 1999), using various experimental techniques (platinum replica electron microscopy, cryo-electron microscopy, and total internal reflection microscopy), all falling within the range of 67\u201378\u00b0 (\u00b1 2\u201313\u00b0). The high degree of conservation hints that this specific angle might carry some functional optimality, but the question has not been addressable experimentally; due to the lack of naturally occuring Arp2/3 variants with a substantially different branching angle, an alternative branching structure would hypothetically have to be designed do novo, presumably by altering the protein interaction interface by which the Arp2/3 complex binds to the side of a mother filament (Volkmann et al., 2001). We thus sought to explore the possible functional significance of this conserved angle using our minimal stochastic model. Excitingly, we found that in simulations with no branch angle variability, a 70\u201380\u00b0 branching angle was optimal for minimizing both actin density fluctuations (Figure 5d and i) and leading edge fluctuation amplitudes for wavelengths smaller than ~2 \u00b5m (Figure 5f and h). These smoothing effects are therefore predicted to be relevant within the experimentally-measurable range of wavelengths (between ~0.7 \u00b5m and ~2 \u00b5m), but are most beneficial for the smallest wavelengths resolved by our simulations (down to ~0.3 \u00b5m) \u2013 closest to the length scales of individual filament polymerization. Overall, these results provide tantalizing mechanistic insight into the long-standing question of why the characteristic branching angle is so ubiquitous.\n\nHeritability of filament orientation (i.e., the extent to which mother filament orientation determines the orientation of the daughters) is set by the degree of variability in the branching angle (which, in turn, reflects the influence of thermal fluctuations). Perhaps unsurprisingly, decreasing this orientational heritability significantly reduces the dependence of fluctuation amplitude and filament density variability on the branching angle (Figure 5j\u2013q), and thereby counteracts the beneficial effect of the optimal angle on leading edge fluctuations. Introducing a branch angle variability of \u00b12\u00b0 (on the lower end of the experimentally-measured values) broadens the range of near-optimal branch angles but maintains the optimum at ~70\u201380\u00b0 (Figure 5j and l), while introducing a variability of \u00b110\u00b0 (on the higher end of the measured range) completely removes the optimum (Figure 5n and p). In both cases, increasing the branch angle variability increases the minimum possible fluctuation amplitude (Figure 5h, l and p \u2013 insets) and filament density variability (Figure 5i, m and q), representing a decrease in the noise-suppression capabilities of the system. Overall, these results provide strong support for the idea that actin network geometry is not only essential for leading edge stability, but also plays a major role in determining the fundamental limits of smoothness in lamellipodial shape.\n\n## Discussion\n\nThe emergence of robust collective behaviors from stochastic elements is an enduring biological mystery which we are only beginning to unravel (Huang et al., 2016; Battich et al., 2015; Chang and Marshall, 2017; Mohapatra et al., 2016; Raj and van Oudenaarden, 2008; Gray et al., 2019; Oates, 2011). The apparent dichotomy in actin-based motility between the random elongation of individual filaments and the stable formation of smooth and persistent higher order actin structures such as lamellipodia exemplifies this enigma, and provides an avenue toward understanding general strategies for noise suppression in biological systems.\n\nIn recent years it has become clear that perturbation-free experiments which examine fluctuations around the mean at steady state (in contrast to probing the change in the mean due to a perturbation) can be a powerful tool for understanding noisy systems (Welf and Danuser, 2014). In this work, application of that principle in combination with high-precision measurements, quantitative analytical techniques, and physical modeling led to the surprising revelation that the suppression of stochastic fluctuations naturally emerges from the interactions between a growing actin network and the leading edge membrane, with no additional feedback required. Our insights into the molecular mechanisms mediating lamellipodial stability were largely enabled by experimentally measuring micron-scale leading edge shape dynamics and comparing them to a molecular-scale actin network growth model that correctly predicts this emergent behavior (as well as many other experimentally-measured features of lamellipodial actin networks). Ultimately, we hope our results inspire future experimental work to directly measure the nanometer-scale interactions predicted by our simulations, which may be accomplished using super-resolution imaging of actin dynamics in vivo or in an in vitro reconstitution of lamellipodial protrusion (i.e. branched polymerization of actin driving the motion of a flexible barrier).\n\nThe model developed in this work provides an understanding of the basic biophysical mechanisms underlying lamellipodial migration. Of course, living cells are home to array of additional complexities which are likely to further modulate leading edge fluctuations and stability, and our model may provide a framework for future exploration of such effects across diverse cell types and experimental conditions. Cells migrating in vivo inevitably experience a much more challenging and dynamic environment, in which additional feedback mechanisms will almost certainly be required for the maintenance of polarized migration. The simplicity and biophysical realism of our modeling framework should make it particularly well-suited for future studies focused on predicting and understanding the effects of additional potential feedback mechanisms, including tethering (Mogilner and Oster, 2003; Soo and Theriot, 2005; Alberts and Odell, 2004; Kuo and McGrath, 2000), a limiting monomer concentration (Mullins et al., 2018), force-dependent branching (Risca et al., 2012; Parekh et al., 2005; Chaudhuri et al., 2007), and regulation by curvature-sensing proteins (Tsujita et al., 2015; Zhao et al., 2011). Further, this computational model might be useful for exploring the effects of various extracellular forces, such as those produced by obstacles or variations in matrix density, or intracellular forces, such as those produced by hydrostatics. We also note that a certain degree of biochemical signaling is implicit in our model in the form of biochemical rate constants that are invariant in time and space; this property relies on signaling networks to maintain uniform gradients of actin-associated molecules (Devreotes et al., 2017). How local biochemical control (or lack thereof) over these rate constants might affect leading edge fluctuations remains an interesting avenue for future investigation, both theoretically and experimentally.\n\nThe defining characteristic and major advance of our model was the explicit inclusion of both the evolutionary dynamics of the actin network and its interaction with the two-dimensional geometry of the leading edge. By selectively removing elements of the model, we determined that lateral filament spreading, combined with a fixed branching window, is indispensable for leading edge stability. This highlights the crucial role in lamellipodial maintenance of the branched structure of actin networks, wherein each daughter filament inherits angular information from its mother. Our further investigations into the evolutionary properties of actin network growth revealed that a ~70\u201380\u00b0 branch angle maximally suppresses fine-scale actin density and leading edge shape fluctuations, showing for the first time that Arp2/3-mediated branching imparts optimal functionality, as was long hypothesized based on strong sequence, structural, and functional conservation throughout the eukaryotic tree of life. It is interesting to note that the evolutionarily-conserved branching angle that we find maximally suppresses leading edge fluctuations appears not to be the same angle that optimizes the polymerization velocity of single filaments \u2013 predicted to be a broad angle closer to ~90\u2013100\u00b0 (and quite load-dependent) in the low-load regime (Mogilner and Oster, 1996). This contrast suggests that evolutionary selection acts at the level of actin network properties, rather than force production by individual filaments.\n\nReturning to the broader question of how noisy biological systems control for stochasticity, we find that stability in the case of lamellipodial dynamics is inherently encoded by the geometry of branched actin network growth. It will be interesting to see whether similar principles hold for other cytoskeletal structures with clear geometric constraints, such as endocytic pits, the cytokinetic ring, and the mitotic spindle.\n\n## Materials and methods\n\n### HL-60 cell culture and differentiation\n\nHL-60 cells were cultured as described previously (Millius and Weiner, 2009; Garner et al., 2020). In brief, cells were maintained at a density of 0.1\u20131 x 105 cells/mL by passaging every 2\u20133 days into fresh RPMI media supplemented with 10% heat-inactivated fetal bovine serum and antibiotics/antimycotics. Supplementation with 1.57% DMSO was used to differentiate the cells into a neutrophil-like state. Cells were subsequently extracted for experiments at 6 days post-differentiation. Our HL-60 cell line was obtained from Orion Weiner\u2019s lab at UCSF, who originally received them from Henry Bourne\u2019s lab at UCSF. The identity of this suspension cell line was confirmed based on the behavior of the cells, including differentiating into a neutrophil-like state upon exposure to DMSO that exhibits characteristic phenotypes for substrate adhesion, rapid migration, and elongated morphology. HL-60s are not listed as a misidentified cell line on the Register of Misidentified Cell Lines. The cell line tested negative to mycoplasma contamination.\n\n### Under-agarose motility assays with HL-60s\n\nDifferentiated HL-60 cells were plated on fibronectin-coated coverslips and then overlaid with a 1% agarose pad containing 1 nM fMLP (to enhance migratory behavior), as described previously (Garner et al., 2020). Microscopy of the migrating cells was performed at 37 \u00b0C, using transmitted light to image phase contrast on an epifluorescence microscope at \u00d7100 magnification (100 \u00d7 1.45 NA Plan Apo oil objective, Nikon MRD31905). A more detailed description of our microscopy system can be found in previous publications (Garner et al., 2020). For treatment with Latrunculin B or CK-666, the drug was embedded into the agarose pad by adding the drug to the unpolymerized agarose pad solution before gelling (at the same time as adding fMLP), such that drug treatment begins when cells are overlaid with the agarose pad and is maintained throughout imaging. Cells were imaged at 45 min post-plating. Drugs were first diluted down to 1000 X in DMSO, then added to the agarose solution at a dilution of 1:1,000 (for a final concentration of 30 nM for Latrunculin B and 100 \u03bcM for CK-666), giving a final DMSO concentration in the pad of 0.1%. Controls were performed by adding 0.1% DMSO to the agarose pad alone.\n\n### Keratocyte isolation and motility assays\n\nKeratocytes were cultured from wild-type zebrafish embryos at 2 days post-fertilization as described previously (Lou et al., 2015). Briefly, zebrafish embryos were collected at 2 days post-fertilization, dechorionated, and anesthetized using tricaine. To dissociate the keratocytes, dechorionated fish were then washed in PBS, incubated in Cell Dissociation Buffer for 30 min at 4 \u00b0C, incubated in a solution of 0.25% trypsin and 1 mM EDTA for ~15 min at 28 \u00b0C, and then incubated in fetal bovine serum to quench the trypsin. From this point on, cells were maintained in antibiotic and antimycotic to deter microbial growth. The keratocyte-rich supernatant was then concentrated by centrifugation at 500 g for 3 min. Keratocytes were then plated on collagen-coated coverslips and incubated at room temperature for ~1 hr to allow cells to adhere. Once adherent, the supernatant was exchanged for imaging media (10% fetal bovine serum in L-15) and allowed to incubate another 15 min at room temperature before imaging. The keratocytes were imaged at 28 \u00b0C under similar conditions as those used for HL-60 cells. Data included in Figure 1\u2014figure supplement 6 represent cells from a single coverslip. Experiments were approved by University of Washington Institutional Animal Care and Use Committee (protocol 4427\u201301).\n\n### Image segmentation\n\nMost segmentation algorithms penalize curvature in the contour in order to reduce the noise in the fitting algorithm (Seroussi et al., 2012). However, this runs the risk of introducing artificial correlations and structure into the data. For example, a spring-like curvature penalty would artificially make fluctuations appear to be stretch-dominated. Therefore, we performed the following custom segmentation algorithm to avoid these potential artifacts (Figure 1\u2014figure supplement 1). Phase contrast time-lapse videos were manually aligned to the direction of motion of the cell, such that each cell migrates up the y-axis on an x-y coordinate system (Figure 1\u2014figure supplement 1a, b). The videos were then cropped to isolate the cell leading edges and exclude the cell body, for easier segmentation. If the cell migrates up the y-axis, this means every image pixel along the x-axis has an associated leading edge position along the y-axis. A leading edge y-position was assigned to each x-axis pixel independently of knowledge about neighboring x-axis pixels, to avoid injecting the artifacts discussed above. A manual segmentation was performed for the first time point in each movie. A custom, automated segmentation algorithm written in MATLAB then performed a line scan of the phase contrast intensity along the y-axis separately for each pixel along the x-axis. For each line scan, the algorithm performs a local search for the leading edge position, constrained to be within a fixed number of pixels from either the manual segmentation (for the first time point) or the previous time point (for subsequent timepoints). The leading edge position is defined as the midpoint between the brightest phase intensity (phase halo) and the point of steepest intensity gradient (transition from phase halo to phase-dense cytoplasm).\n\n### Preparation of the curvature and velocity kymographs\n\nThe curvature and velocity kymographs (Figure 1b\u2013c, Figure 1\u2014figure supplement 3) were prepared using custom MATLAB code. Curvatures are calculated as the inverse radius of the best-fit circle corresponding to a 30 pixel-wide (~1.5 \u00b5m) region about each position. The most prominent fluctuation events seen in the curvature kymographs (Figure 1b, Figure 1\u2014figure supplement 3) somewhat correspond to (but do not exactly match) the length of the fitting window. For example, the simulated and experimental data shown in Figure 1\u2014figure supplement 3 were fit using the same ~1.5 \u00b5m fitting window and have similar apparent \u2018dominant wavemodes\u2019 of ~3 \u03bcm, or twice the fitting window. However, despite being fit with the same fitting window, the simulated data has an observably smaller apparent \u2018dominant wavemode\u2019 than the experimental data. Velocities were calculated as the distance traveled over 250ms (five 50ms timepoints) non-overlapping windows.\n\n### Processing of segmented cell shapes for autocorrelation analysis\n\nKymographs of curvature and velocity such as those shown in Figure 1b\u2013c, while helpful to obtain a qualitative sense of the fluctuation data, are visually dominated by the largest size-scale features of the leading edge. They thus offer an incomplete description of the shape fluctuations (Ma et al., 2018) \u2013 notably de-emphasizing the fine-scale features that are the subject of this study. Further, curvature kymographs emphasize features that are approximately the same size as the fitting window, and fail to pick up fluctuations at different size scales. To perform a quantitative analysis which faithfully captures fluctuations at all size scales, we choose to perform Fourier decomposition on the leading edge shape, and analyze the dynamics of each wavemode separately. As cells migrate, their global leading edge shape undergoes long timescale changes, such as variations in width, large-scale curvature, or slight turning of the cell, which can dominate the Fourier amplitudes and the subsequent autocorrelation signal. As we are most interested in extracting the fine-scale fluctuations, we performed background subtraction on the segmented leading edge shapes (Figure 1\u2014figure supplement 2). To do this, we defined the \u2018background\u2019 leading edge shape as the contour after smoothing (by the lowess method, using a span of 7 \u03bcm). This rather large smoothing window was chosen specifically to preserve fine-scale features. The background-subtracted y-position is thus defined as the difference between the segmented leading edge and its smoothed counterpart. This process removed the large-scale features of the leading edge. We next wanted to remove the long-timescale features of the leading edge, so we also subtracted the time-averaged background-subtracted y-position for each x-pixel. Altogether, these pre-processing steps maintained the features of interest in the curvature kymograph (Figure 1\u2014figure supplement 3). After performing background subtraction, we still needed to control for changes in leading edge width over time. The wavelengths represented in the Fourier transform are defined as \u03bb = L/n, where L is the length of the leading edge, and n is an integer from 0 to one half the number of pixels. If the leading edge length were to vary over time, then so would the wavelengths, making it impossible to track the behavior of a single wavelength fluctuation over time. We thus cropped the dataset along the x-axis to include only pixels which contain the cell for all timepoints in the video, thereby extracting a fixed-length leading edge subset for further analyses.\n\n### Autocorrelation analysis and fitting\n\nAutocorrelation analysis and fitting were performed separately for each cell and simulation. For experimental data, the entire video was analyzed. For simulated data, analysis was only performed on the time points after the simulation had reached steady state, for which we used a conservative cut-off of 10 s (see Figure 2d\u2013h). To separate out fluctuations at different length scales, we first performed a spatial Fourier transform on the leading edge shape. Referencing the coordinate system defined in Figure 2a, the pixels (experiments) or membrane segments (simulations) are equally spaced in the x-direction, allowing us to perform a one-dimensional Fourier transform (MATLAB fft() function, which assumes periodic boundary conditions) on the y-positions of a segmented leading edge for each time point. We then normalize the Fourier transform by a factor of dx/$\\sqrtL$, where dx is the pixel/membrane segment size and L is leading edge length. This normalization preserves the variance and accounts for the pixel size. To measure the fluctuation relaxation, we calculated the time-averaged autocorrelation (An(\u03c4) = < Yn(t+\u03c4)\u2219Yn*(t) > t, using non-overlapping windows in t) of each Fourier mode amplitude. The autocorrelation function extracted from this analysis contains complex elements of the form A = a + ib. We performed all plotting and fitting on the complex magnitude (sqrt (a2 + b2)) of the autocorrelation function, which is most representative of the total autocorrelation.\n\nNote that because we are plotting the complex magnitude (which is always positive), the autocorrelation plots shown in Figures 1e\u2013f ,\u20132i\u2013j are expected to decay to some non-zero background noise window, rather than to zero. Indeed, the membrane simulation control (see Validation of autocorrelation analysis implementation), which is predicted to have a purely exponentially-decaying autocorrelation function, also shows a decay to a noise window at long times (Figure 1\u2014figure supplement 4). We fit each Fourier mode time-autocorrelation to the exponential decay function described in the main text (Figure 1f), fitting ln(|An(\u03c4)|) vs \u03c4 to a line using MATLAB\u2019s polyfit function, to extract fit parameters for each cell and simulation. Each curve was fit out to a drop in the amplitude by a factor of e/2, or at least 10 points. To average fit parameters over many cells, we controlled for cell-to-cell variability in leading edge length by binning the parameters by spatial frequency, and then calculating summary statistics separately for each bin.\n\nThe spatial background subtraction performed on the leading edge shape (discussed in Materials and methods: Processing of segmented cell shapes for autocorrelation analysis) was necessary to extract the fine-scale shape fluctuations studied in this work. This background subtraction is expected to remove fluctuations with wavelengths larger than ~7 \u00b5m (i.e. reduce their amplitude to zero). For this reason, only wavelengths less than 7 \u00b5m are plotted in Figure 1e\u2013h. We note that it is possible that fluctuations with wavelengths less than, but near 7 \u00b5m might also have slightly reduced measured amplitudes (i.e. the shape of the curve in Figure 1g may artificially level off at low spatial frequency). However, any such effect would be performed uniformly in time, and therefore is not expected to affect the measured temporal dynamics (Figure 1h). Indeed, when we extend the span of our background subtraction by ~50% (up to 10 \u03bcm), we find that only the amplitude of the largest mode is altered (slightly increased) and the measured relaxation timescales are not affected (Figure 1\u2014figure supplement 5).\n\n### Validation of autocorrelation analysis implementation\n\nTo validate our autocorrelation method, we analyzed control simulations of a membrane freely fluctuating under Brownian motion in the absence of actin, and showed it recapitulates predictions from analytical theory for this system (Figure 1\u2014figure supplement 3). These simulations were performed exactly as in the leading edge simulations, using the same parameters, but without actin. The equation of motion used for membrane segments in the control simulations, as well as a derivation of the associated autocorrelation function, can be found in Appendix 2.4.4: Choice of timestep. Interestingly, the curvature kymographs of these control simulations exhibit striking visual features reminiscent of instabilities, dominant wavemodes, or oscillations \u2013 and yet such effects are absent from this system by definition (which we confirm quantitatively using our autocorrelation method, Figure 1\u2014figure supplement 3). This suggests that similar features in the experimentally-measured curvature kymograph are also not indicative of instabilities, dominant wavemodes, or oscillations, which we confirmed by autocorrelation analysis.\n\n### Modeling\n\nHere, we briefly describe the geometry and major elements of the model. Please see the Appendix for a detailed description of the model and Tables 1 and 2 for a list of the chosen parameters. A simulated patch of leading edge was modeled by a branched network of actin filaments stochastically polymerizing towards a 2D strip of membrane, subject to periodic boundary conditions. The 2D strip was discretized as membrane segments that are fixed in position along one axis and move only along the direction of motion of the simulated cell. Stochastic, fixed time step Brownian dynamics simulations, implemented with custom MATLAB code, were performed to update the membrane position and actin network properties. Actin network growth evolved from constant rate Poisson processes for polymerization, depolymerization, branching, and capping. Once polymerized, filaments were fixed in position at their branch point of origin (in the lab frame of reference), and did not undergo retrograde flow (i.e. translation of the filament position opposite the direction of migration) or translational diffusion. The membrane strip was subject to forces of bending and stretching, drag from fluid viscosity, as well as the force of actin (Mogilner and Oster, 1996; Peskin et al., 1993; Carlsson, 2001). Filaments apply force to the membrane segments according to the untethered Brownian ratchet formalism (Mogilner and Oster, 1996), in which filament pointed end positions are assumed to be rigidly connected to the network (via their branch point of origin) and their barbed end positions are able to freely fluctuate. As previously, we ignore the possibility of filament buckling due to the fact that lamellipodial filaments exist in a sufficiently low-load, high branch density regime (Mogilner and Oster, 1996), and experimental evidence shows no indication of buckling (Svitkina et al., 1997). We expanded this formalism (which previously only considered filament fluctuations perpendicular to the filament\u2019s long axis) to include all fluctuations of the filament along the filament\u2019s short and long axes. Each filament pushes the membrane segment that spans the growing tip\u2019s x-position. We note that the filament angles used to determine the filament forces on the membrane and presented throughout this work are always calculated relative to the global average direction of motion of the leading edge, rather than the local average membrane normal (a simplifying approximation necessitated by the discrete geometry and motivated by the shallow curvatures exhibited by cell leading edges). Control simulations were run to verify that the leading edge fluctuation behavior described in this work was not dependent on the temporal discretization (i.e. simulations were run with sufficiently small timesteps to resolve the fastest dynamics, Figure 2\u2014figure supplement 1), spatial discretization (i.e. simulations were run with sufficiently short membrane segments to resolve the smallest length scales at which there is significant bending, Figure 2\u2014figure supplement 2), or leading edge length (i.e. the periodic boundary conditions were implemented correctly, such that a simulated small patch of leading edge behaves identically to an equivalently sized portion of a larger simulated patch of leading edge, Figure 2\u2014figure supplement 3). In cases where membrane tension and bending rigidity were removed, these forces were simply not calculated in the simulation (Figure 4a\u2013e). To remove filament spreading, we modified how the filament position was updated upon addition of a monomer in order to maintain the growing filament tip\u2019s x-position. Addition of monomers contributed only to changes in the barbed-end y-position, leaving the x-position intact, while updating the filament length correctly (effectively sliding the pointed end x-position backwards, rather than advancing the barbed end x-position forwards, Figure 4f\u2013i).\n",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "05f245fd-b649-4047-bc60-916ca1bc2e63",
+      "submission_id": "34b7f048-68f7-485e-b300-063802f33f48",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alphee Michelot, Institut de Biologie du D\u00e9veloppement France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74389.sa0](https://doi.org/10.7554/eLife.74389.sa0)\n\nThis paper describes analysis and modeling of leading edge fluctuations in migrating cells driven by a branched Arp2/3 lamellipodial network. A stochastic model shows how branching contributes to shape stability, and reproduces the measured spectrum and dynamics of leading edge fluctuations. Analysis of the model as a function of branching angle suggests that the Arp2/3 branching angle might be selected to smooth lamellipodial shape. This work provides new ideas to a big field of research, including Fourier analysis of leading edge fluctuations.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alphee Michelot, Institut de Biologie du D\u00e9veloppement France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74389.sa1](https://doi.org/10.7554/eLife.74389.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Leading edge maintenance in migrating cells is an emergent property of branched actin network growth\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Alphee Michelot as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The main point raised by Reviewer #2 is closely related to the last point raised by previous Reviewer #3. The reviewer found that the analysis of Figure A1, A2 and A3 in the appeal to the other Journal shows that the red-blue stripe pattern of Figure 1b is indeed not intrinsic to the system. Presumably the features of Figure 1b reflect the length scale over which the curvature was calculated. Thus we agree that you should include the analysis of these figures in the manuscript and discuss these results to clarify these concerns.\n\n2) Some explanations on spatial resolution would help (Reviewer #1). The spatial scales accessible with the experiments and those described in the model are very different. It would be useful to explain to which scales the experimental data remain informative for the understanding of these molecular mechanisms.\n\nReviewer #1 (Recommendations for the authors):\n\nI have only one comment below which should be addressed before publication:\n\nA missing point of this manuscript is the spatial resolution of these experiments based on phase-contrast microscopy. I find hard to believe that measured fluctuations arise from stochasticity in actin growth at the level of monomer addition, as claimed by the authors. This does not necessarily precludes all the conclusions from this study, but these seemingly exaggerated claims do not help readers understand the link between the experimental data and the model.\n\nIn a revised manuscript, I would suggest the authors to add a section addressing this problem of spatial resolution. This section should provide estimates of typical shape fluctuations that the experimental system is capable of detecting (or not), together with estimates of minimal network growth that can be detected. Next, the authors should indicate over which range of parameters their model can be compared with experimental data, and over which range of parameters their model becomes simply predictive.\n\nReviewer #2 (Recommendations for the authors):\n\nTo resolve my concern, the authors could plot the autocorrelation functions in Figure 1e at longer times and calculate Figure 1g using a smoothing length scale sufficiently larger than 7 microns.\n",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4be30927-85f3-4cb3-966d-9c6005a15f4f",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C1",
+      "claim": "Animal cell migration is predominantly driven by the coordinated, yet stochastic, polymerization of thousands of nanometer-scale actin filaments across micron-scale cell leading edges.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal cell migration is predominantly driven by the coordinated, yet stochastic, polymerization of thousands of nanometer-scale actin filaments across micron-scale cell leading edges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the mechanism of cell migration, drawing from established scientific understanding of actin-based motility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "9d9bba44-893d-40d4-b2cc-cf3792feed87",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C2",
+      "claim": "Lamellipodial stability naturally emerges from the interplay between branched actin network growth and leading edge shape with no additional feedback required.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we find lamellipodial stability naturally emerges from the interplay between branched actin network growth and leading edge shape \u2013 with no additional feedback required \u2013 based on a synergy between membrane-proximal branching and lateral spreading of filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational modeling results presented in the manuscript, specifically the findings shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "213defd5-5742-44c0-afa9-e0fbfaf52188",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C3",
+      "claim": "The Arp2/3-mediated ~70\u201380\u00b0 branching angle optimally smooths lamellipodial shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model suggests that the Arp2/3-mediated ~70\u201380\u00b0 branching angle optimally smooths lamellipodial shape, addressing its long-mysterious conservation from protists to mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5, where different branching angles were tested.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "7ce68807-00b6-4827-ae1b-1446b0b1a539",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C4",
+      "claim": "Cell migration driven by actin polymerization plays an essential role in countless organisms spanning the eukaryotic tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell migration driven by actin polymerization plays an essential role in countless organisms spanning the eukaryotic tree of life (Pollard and Cooper, 2009; Fritz-Laylin et al., 2017a; Welch et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "278230d7-8c99-427f-8b61-6580a8597e44",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C5",
+      "claim": "The single actin filament polymerizes stochastically by addition of single monomers to push the leading edge membrane forward.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the fundamental molecular unit of these micron-scale structures is the single actin filament, which polymerizes stochastically by addition of single monomers to push the leading edge membrane forward (Mogilner and Oster, 1996; Peskin et al., 1993; Theriot et al., 1992; Prass et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature describing the mechanism of actin polymerization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "d061ec7c-dd6f-4326-ac0c-966a43685990",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C6",
+      "claim": "The lamellipodium is a flat 'leaf-like' protrusion that is ~200 nm tall, up to 100 \u00b5m wide, and filled with a dense network of dendritically branched actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the archetype of dynamically stable actin structures is the lamellipodium, a flat 'leaf-like' protrusion that is ~200 nm tall, up to 100 \u00b5m wide, and filled with a dense network of dendritically branched actin filaments (Svitkina et al., 1997; Abraham et al., 1999; Laurent et al., 2005; Fritz-Laylin et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature describing lamellipodial structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "5804bb3b-b92b-4ebe-a894-96729e96919b",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C7",
+      "claim": "Cell types that undergo lamellipodial migration can maintain a single, stable lamellipodium for minutes to hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell types that undergo lamellipodial migration (most notably fish epidermal keratocytes and vertebrate neutrophils) can maintain a single, stable lamellipodium for minutes to hours, allowing the cells to carry out their biological functions (Tsai et al., 2019; Lacayo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "ed972ccc-ebab-4fc5-80b4-006e44a38415",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C8",
+      "claim": "Neutrophils must undergo persistent migration over millimeter-scale distances to reach sites of inflammation and infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in their in vivo role as first responders of the innate immune system, neutrophils must undergo persistent migration over millimeter-scale distances to reach sites of inflammation and infection (de Oliveira et al., 2016; Kolaczkowska and Kubes, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature describing neutrophil function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "80b53f12-0d30-4d56-a454-0ad29ba2d65b",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C9",
+      "claim": "Membrane tension has been identified as a potential contributor to lamellipodial shape stability.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely been assumed for decades that some sort of regulatory or mechanical feedback mechanism must be required for lamellipodial shape stability, with extensive experimental efforts identifying membrane tension (Diz-Mu\u00f1oz et al., 2016; Houk et al., 2012; Mueller et al., 2017; Gauthier et al., 2012; Tsujita et al., 2015; Batchelder et al., 2011; Sens and Plastino, 2015), plasma membrane curvature-sensing proteins (Tsujita et al., 2015; Pipathsouk et al., 2019), a competition for membrane-associated free monomers (Mullins et al., 2018), and force-feedback via directional filament branching (Risca et al., 2012) as potential contributors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "f8b5ca5d-a042-440a-ac3b-46d3a0a8b2f6",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C10",
+      "claim": "Plasma membrane curvature-sensing proteins have been identified as potential contributors to lamellipodial shape stability.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely been assumed for decades that some sort of regulatory or mechanical feedback mechanism must be required for lamellipodial shape stability, with extensive experimental efforts identifying membrane tension (Diz-Mu\u00f1oz et al., 2016; Houk et al., 2012; Mueller et al., 2017; Gauthier et al., 2012; Tsujita et al., 2015; Batchelder et al., 2011; Sens and Plastino, 2015), plasma membrane curvature-sensing proteins (Tsujita et al., 2015; Pipathsouk et al., 2019), a competition for membrane-associated free monomers (Mullins et al., 2018), and force-feedback via directional filament branching (Risca et al., 2012) as potential contributors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "986cc372-8780-43a5-8b68-5a13c22a2b94",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C11",
+      "claim": "Competition for membrane-associated free monomers has been identified as a potential contributor to lamellipodial shape stability.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely been assumed for decades that some sort of regulatory or mechanical feedback mechanism must be required for lamellipodial shape stability, with extensive experimental efforts identifying membrane tension (Diz-Mu\u00f1oz et al., 2016; Houk et al., 2012; Mueller et al., 2017; Gauthier et al., 2012; Tsujita et al., 2015; Batchelder et al., 2011; Sens and Plastino, 2015), plasma membrane curvature-sensing proteins (Tsujita et al., 2015; Pipathsouk et al., 2019), a competition for membrane-associated free monomers (Mullins et al., 2018), and force-feedback via directional filament branching (Risca et al., 2012) as potential contributors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "6abff1a1-d62c-4c84-8482-cbe7aa4a62bf",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C12",
+      "claim": "Force-feedback via directional filament branching has been identified as a potential contributor to lamellipodial shape stability.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely been assumed for decades that some sort of regulatory or mechanical feedback mechanism must be required for lamellipodial shape stability, with extensive experimental efforts identifying membrane tension (Diz-Mu\u00f1oz et al., 2016; Houk et al., 2012; Mueller et al., 2017; Gauthier et al., 2012; Tsujita et al., 2015; Batchelder et al., 2011; Sens and Plastino, 2015), plasma membrane curvature-sensing proteins (Tsujita et al., 2015; Pipathsouk et al., 2019), a competition for membrane-associated free monomers (Mullins et al., 2018), and force-feedback via directional filament branching (Risca et al., 2012) as potential contributors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "a9b49bf3-5c6f-4dd2-8708-e7972d72397c",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C13",
+      "claim": "The stability of lamellipodia has been theoretically proposed to depend on the dendritically branched structure of their actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The stability of lamellipodia has also been theoretically proposed to depend on the dendritically branched structure of their actin networks, wherein filaments are oriented at an angle relative to the cell's direction of migration, allowing growing filament tips to spread out laterally along the leading edge as they polymerize (Lacayo et al., 2007; Grimm et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "c721ff7f-7019-4a72-91a6-0600a7f0a4b0",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C14",
+      "claim": "Filament orientation in cells has been experimentally observed to average \u00b135\u00b0 relative to the membrane normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Although any acute angle would permit spreading, we note that filament orientation in cells has been experimentally observed to be highly stereotyped, averaging \u00b135\u00b0 relative to the membrane normal (Maly and Borisy, 2001; Verkhovsky et al., 2003) \u2013 approximately one half of the highly evolutionarily-conserved ~70\u00b0 branch angle mediated by the Arp2/3 complex (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published experimental measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "1a4aebcd-164a-455f-bc72-e260a8961266",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C15",
+      "claim": "The Arp2/3 complex mediates a highly evolutionarily-conserved ~70\u00b0 branch angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Although any acute angle would permit spreading, we note that filament orientation in cells has been experimentally observed to be highly stereotyped, averaging \u00b135\u00b0 relative to the membrane normal (Maly and Borisy, 2001; Verkhovsky et al., 2003) \u2013 approximately one half of the highly evolutionarily-conserved ~70\u00b0 branch angle mediated by the Arp2/3 complex (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "6c31c2af-f271-48a5-9d1a-460f477e513d",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C16",
+      "claim": "Dendritic branching is an autocatalytic process which can lead to explosive growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, dendritic branching is an autocatalytic process which can lead to explosive growth (Mullins et al., 2018; Carlsson, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "3eff6f18-994d-4069-97ea-2f2a1af0d052",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C17",
+      "claim": "The growth rates of the actin network are dependent on the velocity of the flexible membrane surface it is pushing, in a manner which imparts hysteresis to the system.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the growth rates of the actin network are dependent on the velocity of the flexible membrane surface it is pushing, in a manner which imparts hysteresis to the system (Mueller et al., 2017; Parekh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "30bb13d9-c1b4-49d8-a071-ec8cbf92056a",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C18",
+      "claim": "High-speed imaging revealed that the leading edge shape is extremely dynamic at shorter time and length scales, constantly undergoing fine-scale fluctuations around the average cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the remarkable overall lamellipodial stability observed over minutes, high-speed imaging revealed that the leading edge shape is extremely dynamic at shorter time and length scales, constantly undergoing fine-scale fluctuations around the average cell shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "ca90e24d-3d79-4089-87f6-1f8ef19bc606",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C19",
+      "claim": "Shape fluctuations continually dissipate in a manner quantitatively consistent with viscous relaxation back to the time-averaged leading edge shape.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that these shape fluctuations continually dissipate (thereby enabling long time scale lamellipodial maintenance) in a manner quantitatively consistent with viscous relaxation back to the time-averaged leading edge shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the autocorrelation analysis presented in Figure 1e-h.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "e550f0d7-1e69-4fa0-81de-7df7d6787589",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C20",
+      "claim": "The minimal stochastic model of branched actin network growth against a flexible membrane was able to recapitulate the global leading edge stability and fine-scale fluctuation relaxation behavior observed in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We next developed a minimal stochastic model of branched actin network growth against a flexible membrane, broadly applicable to a wide variety of cell types, that was able to recapitulate the global leading edge stability and fine-scale fluctuation relaxation behavior observed in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "30f75abc-aaf6-4e8d-b583-6bca30e36e9e",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C21",
+      "claim": "The suppression of stochastic fluctuations is an intrinsic, emergent property of collective actin dynamics at the leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model suggests that the suppression of stochastic fluctuations is an intrinsic, emergent property of collective actin dynamics at the leading edge, as branched network geometry alone is necessary and sufficient to generate lamellipodial stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results, particularly those shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "38b20f03-73fd-4d4f-b74f-aa19415982b1",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C22",
+      "claim": "Neutrophils form lamellipodia that are intrinsically lamellar, maintaining a thin, locally flat sheet of actin even in the absence of support structures like the substrate surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophils form lamellipodia that are intrinsically lamellar, maintaining a thin, locally flat sheet of actin even in the absence of support structures like the substrate surface (Fritz-Laylin et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "445bd4e2-c355-4ee1-bab3-63566f66aad9",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C23",
+      "claim": "HL-60 cells in quasi-two-dimensional confinement can migrate persistently, maintaining nearly-constant cell shape, for time scales on the order of minutes to hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in this type of confinement can migrate persistently, maintaining nearly-constant cell shape, for time scales on the order of minutes to hours (Tsai et al., 2019; Garner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "d0dce40b-76a5-4ee3-baa0-95c8667bf71a",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C24",
+      "claim": "High-speed (20 Hz) imaging of migrating HL-60 cells revealed dynamic, fine-scale fluctuations around the average leading edge shape.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed dynamic, fine-scale fluctuations around the average leading edge shape (Figure 1a\u2013c, Video 1, Figure 1\u2014figure supplements 1\u20132, Materials and methods), where local instabilities in the leading edge emerge, grow, and then relax.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 1a-c and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "de48d03e-101c-418a-bb7b-32a8a167c778",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C25",
+      "claim": "The lamellipodial dynamics observed in HL-60 cells are phenotypically distinct from and almost 100-fold faster than the oscillatory protrusion-retraction cycles seen in other, slower-moving cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these previously-unobserved lamellipodial dynamics are phenotypically distinct from \u2013 and almost 100-fold faster than \u2013 the oscillatory protrusion-retraction cycles seen in other, slower-moving cell types (e.g. fibroblasts) (Giannone et al., 2004; Ryan et al., 2012; Ma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with published literature on other cell types.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "4ae3dde8-b04a-4057-bc4a-5da1c0dcac5f",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C26",
+      "claim": "Fluctuations with wavelengths as small as ~650 nm and amplitudes down to ~65 nm were reliably measured.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate we were able to reliably measure fluctuations with wavelengths as small as ~650 nm, and amplitudes down to ~65 nm, by fitting the phase contrast halo around the leading edge (Figure 1\u2014figure supplements 1\u20132, Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the segmentation methods described in the Materials and methods section and shown in Figure 1\u2014figure supplements 1\u20132.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "4015310d-bb1c-455b-888e-8744a8a7da07",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C27",
+      "claim": "The measured wavelengths and amplitudes should approximately correspond to 25 actin filaments at physiological spacing and 25 actin monomers assembled into a filament lattice along the direction of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "These values should approximately correspond to 25 actin filaments at physiological spacing (Svitkina et al., 1997) and 25 actin monomers assembled into a filament lattice along the direction of motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the measured values and known physiological parameters from the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "aeb3bb16-4708-42db-8145-2a9761c503bf",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C28",
+      "claim": "Kymograph analysis of curvature and velocity showed that relatively long-lived shape fluctuations are formed by the continual time-integration of seemingly uncorrelated and very short-lived velocity fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, kymograph analysis of curvature and velocity (Figure 1b\u2013c) showed that relatively long-lived shape fluctuations are formed by the continual time-integration of seemingly uncorrelated and very short-lived (sub-second, sub-micron) velocity fluctuations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the kymograph analysis shown in Figure 1b-c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "bd192eea-ac8b-4133-b037-3be420939729",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C29",
+      "claim": "Autocorrelation analysis revealed a monotonic relaxation of shape fluctuations at each wavelength.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocorrelation analysis revealed a monotonic relaxation of shape fluctuations at each wavelength (Figure 1e\u2013f); the decay at every spatial scale is well-fit by an exponential form (Figure 1f), consistent with overdamped viscous relaxation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the autocorrelation analysis shown in Figure 1e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "eca33647-f191-4f0b-92ec-645c0efcdd92",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C30",
+      "claim": "The decay at every spatial scale is well-fit by an exponential form, consistent with overdamped viscous relaxation.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocorrelation analysis revealed a monotonic relaxation of shape fluctuations at each wavelength (Figure 1e\u2013f); the decay at every spatial scale is well-fit by an exponential form (Figure 1f), consistent with overdamped viscous relaxation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the fitting results shown in Figure 1f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "b1272faa-f200-4919-86ab-b6b737cbe75b",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C31",
+      "claim": "No increase in the autocorrelation over time was detected, which would have appeared if there were any sustained, correlated growth of the fluctuations before they decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we do not detect any increase in the autocorrelation over time, which would have appeared if there were any sustained, correlated growth of the fluctuations before they decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the autocorrelation analysis results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "9af1150b-1f91-4972-ab8b-763aa1cdacd9",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C32",
+      "claim": "A clear wavelength-dependence is observed, with shorter wavelengths decaying faster and having smaller amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear wavelength-dependence is observed, with shorter wavelengths decaying faster and having smaller amplitudes (Figure 1g\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1g-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "7e81bb3f-323c-4519-95fd-99f6a1c1983c",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C33",
+      "claim": "The qualitative and quantitative properties of the leading edge fluctuations are not specific to cell type or experimental conditions, as they are also observed in fish epidermal keratocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these qualitative and quantitative properties of the leading edge fluctuations are not specific to cell type or experimental conditions (e.g. agarose overlay, ECM), as we also observe this phenomenon in fish epidermal keratocytes (Figure 1\u2014figure supplement 6, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 1\u2014figure supplement 6 and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "bb7458ef-2640-4c1f-806f-472e8c9fb409",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C34",
+      "claim": "The model incorporated a two-dimensional leading edge with filaments polymerizing against a flexible membrane, modeled as a system of flat membrane segments coupled elastically to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Expanding on this general framework, and in an approach conceptually similar to previous work simulating small (< 2 \u00b5m) patches of a lamellipodium (Schaus et al., 2007; Schaus and Borisy, 2008), we incorporated a two-dimensional leading edge with filaments polymerizing against a flexible membrane, which we modeled as a system of flat membrane segments coupled elastically to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model developed in this work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "dc8051ff-7db8-4507-8205-c5ece2689b60",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C35",
+      "claim": "Simulated filaments apply force to the membrane following the classic untethered Brownian ratchet formalism.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulated filaments apply force to the membrane following the classic untethered Brownian ratchet formalism (Mogilner and Oster, 1996), consistent with recent experiments showing that cellular protrusions are formed by largely untethered actin networks (Bisaria et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a feature of the model and is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "2eb8196c-f40f-4e73-a7e0-635a531d517b",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C36",
+      "claim": "The model incorporated experimentally measured values from the literature for the membrane tension, membrane bending modulus, and biochemical rate constants.",
+      "claim_type": "EXPLICIT",
+      "source": "Designed to be as comparable as possible to our experimental data, the model incorporated experimentally measured values from the literature for the membrane tension, membrane bending modulus, and biochemical rate constants (Tables 1\u20132, Mogilner and Oster, 1996; Lieber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the parameterization of the model using literature values.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "6850a4fb-ee0f-415e-a5a1-d7c7dc5cbb33",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C37",
+      "claim": "The model included only the core biochemical elements of actin network growth dynamics: polymerization, depolymerization, branching, and capping.",
+      "claim_type": "EXPLICIT",
+      "source": "As we were specifically interested in identifying biophysical mechanisms regulating leading edge stability, we minimized the model's biological complexity by including only the core biochemical elements of actin network growth dynamics: polymerization, depolymerization, branching, and capping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the design choices made in developing the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "6b391bb1-d19b-4dec-b47a-453f789046d0",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C38",
+      "claim": "All filament nucleation in the model occurs through dendritic branching mediated by the Arp2/3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "All filament nucleation in the model occurs through dendritic branching observed in cells to be mediated by the Arp2/3 complex (Welch et al., 1997; Svitkina et al., 1997), which catalyzes the nucleation of new 'daughter' actin filaments as branches from the sides of pre-existing 'mother' filaments at a characteristic angle of ~70\u00b0 (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a feature of the model and is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "00c95d07-616f-4839-a117-8f9132ecb1a9",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C39",
+      "claim": "The Arp2/3 complex catalyzes the nucleation of new 'daughter' actin filaments as branches from the sides of pre-existing 'mother' filaments at a characteristic angle of ~70\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "All filament nucleation in the model occurs through dendritic branching observed in cells to be mediated by the Arp2/3 complex (Welch et al., 1997; Svitkina et al., 1997), which catalyzes the nucleation of new 'daughter' actin filaments as branches from the sides of pre-existing 'mother' filaments at a characteristic angle of ~70\u00b0 (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "44de4184-82a7-4e09-9bc6-39267dd6e4ff",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C40",
+      "claim": "The minimal model was able to recapitulate stable leading edge fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "To our great surprise, this very simple model was able to recapitulate stable leading edge fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "7d0f2b0d-d2dc-40e9-803b-34fe8bb590f0",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C41",
+      "claim": "Nascent leading edges reach steady state values for filament density, filament length, filament angle, membrane velocity, and membrane fluctuation amplitude within seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Nascent leading edges reach steady state values for filament density, filament length, filament angle, membrane velocity, and (most importantly) membrane fluctuation amplitude within seconds, a biologically realistic time scale (Figure 2d\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2d-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "53586ad8-206e-4667-9c21-4877b1fce9d6",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C42",
+      "claim": "The steady state values obtained from the model are in quantitative agreement with both experimental data and previously published measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the steady state values obtained are in quantitative agreement with both our own experimental data and previously published measurements, with the model yielding mean values of: 0.3 filaments/nm for filament density (~30 nm filament spacing for a lamellipodium that is 10 filaments tall) (Abraham et al., 1999), ~150 nm for filament length, ~40\u00b0 for filament angle (with respect to the direction of migration), ~0.35 nm/ms for membrane velocity, and ~50 nm for membrane fluctuation amplitude (Svitkina et al., 1997; Maly and Borisy, 2001; Verkhovsky et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of simulation results with experimental data and literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "2134926b-a88d-4480-819e-62c5756e0c8c",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C43",
+      "claim": "Simulated leading edge shape stability is mediated by an exponential decay of shape fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in the experimental measurements, simulated leading edge shape stability is mediated by an exponential decay of shape fluctuations (Figure 2i\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2i-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "6e9f1163-0683-49a5-8680-f5153b4ffbbd",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C44",
+      "claim": "The minimal model correctly predicts the monotonic trends of fluctuation amplitude and decay time scale with wavelength.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the minimal model correctly predicts the monotonic trends of fluctuation amplitude and decay time scale with wavelength (Figure 2k\u2013l) in a way that was not sensitive to our choices of simulation time step, membrane segment length, and overall length of the leading edge (Figure 2\u2014figure supplements 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2k-l and the control simulations shown in Figure 2\u2014figure supplements 1\u20133.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "c8e45330-4020-46e3-afb9-5c52640fa5c0",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C45",
+      "claim": "The simulated fluctuation relaxation behavior emerges directly from the molecular-scale actin growth model, with all biochemical parameters estimated from measurements in the existing literature.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the generation of the simulated data in Figure 2k\u2013l did not involve any curve-fitting (and therefore no free parameters that could be fit) to the experimentally measured autocorrelation dynamics in order to parameterize the model. Rather, the simulated fluctuation relaxation behavior, qualitatively reproducing our experimental measurements, emerges directly from the molecular-scale actin growth model, in which all biochemical parameters were estimated from measurements in the existing literature (Tables 1\u20132) \u2013 leaving no free simulation parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the parameterization approach used in the model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "1406f5db-156b-44c6-b636-1e36c14dd025",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C46",
+      "claim": "Cells treated with Latrunculin B present with enhanced bleb formation and more variable leading edge shapes, in comparison with cells treated with a DMSO vehicle control.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively, cells treated with Latrunculin B (Video 4) present with enhanced bleb formation and more variable leading edge shapes, in comparison with cells treated with a DMSO vehicle control (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental observations shown in Videos 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "c72c336a-6f4f-4810-b7ba-4496d5af35ae",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C47",
+      "claim": "At low effective doses of Latrunculin B, the model predicts an increase in the amplitudes at large wavelengths and a decrease in the decay rates across all wavelengths.",
+      "claim_type": "EXPLICIT",
+      "source": "At low effective doses, subtle but measurable changes to leading edge fluctuations were predicted: specifically, an increase in the amplitudes at large wavelengths, and a decrease in the decay rates across all wavelengths (Figure 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "07f916ce-1922-42d6-b185-bedac875e7c4",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C48",
+      "claim": "Experimental results with Latrunculin B-treated cells were consistent with the quantitative predictions from the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental results were consistent with these quantitative predictions; Latrunculin B-treated cells exhibited increased fluctuation amplitudes and decreased fluctuation rates over the predicted ranges (Figure 3c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 3c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "5e2916c1-fbf0-4367-93c6-e9664e609e52",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C49",
+      "claim": "The coupling between the membrane segments (i.e. the effects of tension and bending at length scales larger than the size of an individual membrane segment) was completely dispensable for leading edge stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the coupling between the membrane segments (i.e. the effects of tension and bending at length scales larger than the size of an individual membrane segment) was completely dispensable for leading edge stability (Figure 4a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 4a-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "42cbc731-dbe1-4d05-aea1-be6679424b80",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C50",
+      "claim": "Only two elements were required for stability: constraining branching to occur only within a fixed distance from the leading edge membrane, and the ability of filaments to spread laterally to neighboring membrane segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a similar process of elimination, we determined that in fact only two elements were required for stability. First, as reported previously for dendritic actin network polymerization against a single stiff obstacle, it was necessary to constrain branching to occur only within a fixed distance from the leading edge membrane (Figure 2a\u2013b) in order to maintain a steady state actin density (Carlsson, 2001). The molecular motivation for this spatially limited 'branching window' is rooted in that fact that activators of the Arp2/3 complex, which render Arp2/3 competent for actin filament nucleation, are typically membrane-associated proteins (Suetsugu, 2013). Second, we found that stability is inherently tied to the ability of filaments to spread laterally to neighboring membrane segments (Figure 2b II-III, Figure 4f\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "50c6d203-f5f7-406c-b393-9295ec762bfe",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C51",
+      "claim": "Removing filament spreading from the model led to actin density divergence: network regions with low filament density eventually underwent complete depolymerization, while high-density regions continued to accumulate actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing filament spreading from the model by fixing filaments to remain associated with their nearest membrane segment at birth (Materials and methods) led to actin density divergence: network regions with low filament density eventually underwent complete depolymerization, while high-density regions continued to accumulate actin (Figure 4f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 4f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "73743107-465d-45f6-bf25-5e6e5a4f141b",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C52",
+      "claim": "Leading edge maintenance is an intrinsic, emergent property of branched actin network growth against a membrane, without requiring any further regulatory governance.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this means that leading edge maintenance is an intrinsic, emergent property of branched actin network growth against a membrane, without requiring any further regulatory governance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the simulation results showing that only branching and spreading are required for stability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "186e80c5-455d-4a32-807c-00cdd8c8af66",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C53",
+      "claim": "Geometrical constraints imposed simply by the nature of membrane-proximal actin branching ensure that any small variations in either local actin filament density or growth rate are inherently self-correcting to regress toward the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Geometrical constraints imposed simply by the nature of membrane-proximal actin branching ensure that any small variations in either local actin filament density or growth rate are inherently self-correcting to regress toward the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the simulation results and the proposed molecular mechanism shown in Figure 4j.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "c144ddf6-706e-42fa-a8cd-3e7c96ba4997",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C54",
+      "claim": "Arp2/3-mediated branching is required for lamellipodial formation in a wide variety of cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, it has previously been shown that Arp2/3-mediated branching is required for lamellipodial formation in a wide variety of cell types; cells with inhibited or depleted Arp2/3 complex exhibit complete disruption of the lamellipodium shape and often switch to a different mode of migration altogether, such as filopodial motility (Fritz-Laylin et al., 2017b; Henson et al., 2015; Wu et al., 2012; Davidson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "dcc01c70-5760-4f00-94fe-6ea77356ba2f",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C55",
+      "claim": "HL-60s treated with the Arp2/3 inhibitor CK-666 have extremely variable leading edge shapes, characterized by long, thin filopodia-like protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, HL-60s treated with the Arp2/3 inhibitor CK-666 have extremely variable leading edge shapes, characterized by long, thin filopodia-like protrusions (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental observations shown in Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "8d747340-17cc-4be0-b6c1-c16f65151f3c",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C56",
+      "claim": "The vital lamellipodial maintenance role of Arp2/3-mediated branching stems from its ability to mediate efficient filament spreading and equilibration of actin density fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical results provide a mechanistic interpretation for this striking phenomenon, suggesting that the vital lamellipodial maintenance role of Arp2/3-mediated branching stems from its ability to mediate efficient filament spreading and equilibration of actin density fluctuations, purely because the daughter filament always grows at an angle distinct from its mother.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "fb240506-02ee-4953-9931-bdac7da85781",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C57",
+      "claim": "When filaments are initialized with a random orientation and the branching angle is fixed, only a handful of the initial filament angles survive until the end of the simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when filaments are initialized with a random orientation, and the branching angle is fixed (i.e. there is no variability in the branching angle), only a handful of the initial filament angles (\u03b8f) survive until the end of the simulation (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "f1850527-114f-46cb-b976-44836c397cdc",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C58",
+      "claim": "The surviving, successful filament angles are narrowly and symmetrically distributed around one half of the branching angle.",
+      "claim_type": "EXPLICIT",
+      "source": "The surviving, successful filament angles are narrowly and symmetrically distributed around one half of the branching angle (Figure 5a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "f45a62da-7a08-4355-a931-1155a83175ff",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C59",
+      "claim": "The Arp2/3 complex is highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, this protein complex is highly conserved (Welch et al., 1997), with measurements of the branching angle in a wide variety of species, including protists (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008; Blanchoin et al., 2000), yeast (Rouiller et al., 2008), mammals (Rouiller et al., 2008; Blanchoin et al., 2000; Cai et al., 2008), and amphibians (Svitkina and Borisy, 1999), using various experimental techniques (platinum replica electron microscopy, cryo-electron microscopy, and total internal reflection microscopy), all falling within the range of 67\u201378\u00b0 (\u00b1 2\u201313\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "60cec36d-b621-4c4d-b5c9-178296bf374d",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C60",
+      "claim": "Measurements of the branching angle in a wide variety of species all fall within the range of 67\u201378\u00b0 (\u00b1 2\u201313\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, this protein complex is highly conserved (Welch et al., 1997), with measurements of the branching angle in a wide variety of species, including protists (Mullins et al., 1998; Volkmann et al., 2001; Rouiller et al., 2008; Blanchoin et al., 2000), yeast (Rouiller et al., 2008), mammals (Rouiller et al., 2008; Blanchoin et al., 2000; Cai et al., 2008), and amphibians (Svitkina and Borisy, 1999), using various experimental techniques (platinum replica electron microscopy, cryo-electron microscopy, and total internal reflection microscopy), all falling within the range of 67\u201378\u00b0 (\u00b1 2\u201313\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "82ba9c1d-4f50-443c-826e-5738afe7bb7b",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C61",
+      "claim": "In simulations with no branch angle variability, a 70\u201380\u00b0 branching angle was optimal for minimizing both actin density fluctuations and leading edge fluctuation amplitudes for wavelengths smaller than ~2 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitingly, we found that in simulations with no branch angle variability, a 70\u201380\u00b0 branching angle was optimal for minimizing both actin density fluctuations (Figure 5d and i) and leading edge fluctuation amplitudes for wavelengths smaller than ~2 \u00b5m (Figure 5f and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5d, f, h, and i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "28618202-dfeb-44e4-acc8-c26c2687f524",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C62",
+      "claim": "The smoothing effects of the optimal branching angle are predicted to be relevant within the experimentally-measurable range of wavelengths (between ~0.7 \u00b5m and ~2 \u00b5m), but are most beneficial for the smallest wavelengths resolved by the simulations (down to ~0.3 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "These smoothing effects are therefore predicted to be relevant within the experimentally-measurable range of wavelengths (between ~0.7 \u00b5m and ~2 \u00b5m), but are most beneficial for the smallest wavelengths resolved by our simulations (down to ~0.3 \u00b5m) \u2013 closest to the length scales of individual filament polymerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "6b929410-54da-44fb-b63f-ffe260f4cf80",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C63",
+      "claim": "Decreasing orientational heritability significantly reduces the dependence of fluctuation amplitude and filament density variability on the branching angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps unsurprisingly, decreasing this orientational heritability significantly reduces the dependence of fluctuation amplitude and filament density variability on the branching angle (Figure 5j\u2013q), and thereby counteracts the beneficial effect of the optimal angle on leading edge fluctuations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5j-q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "f8a5e6b5-b751-403c-9c64-049b16f46ef4",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C64",
+      "claim": "Introducing a branch angle variability of \u00b12\u00b0 broadens the range of near-optimal branch angles but maintains the optimum at ~70\u201380\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing a branch angle variability of \u00b12\u00b0 (on the lower end of the experimentally-measured values) broadens the range of near-optimal branch angles but maintains the optimum at ~70\u201380\u00b0 (Figure 5j and l), while introducing a variability of \u00b110\u00b0 (on the higher end of the measured range) completely removes the optimum (Figure 5n and p).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5j, l, n, and p.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "00032b94-ef12-433e-82b0-5ff6d1acb781",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C65",
+      "claim": "Introducing a branch angle variability of \u00b110\u00b0 completely removes the optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing a branch angle variability of \u00b12\u00b0 (on the lower end of the experimentally-measured values) broadens the range of near-optimal branch angles but maintains the optimum at ~70\u201380\u00b0 (Figure 5j and l), while introducing a variability of \u00b110\u00b0 (on the higher end of the measured range) completely removes the optimum (Figure 5n and p).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5n and p.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "ddebf546-8410-4666-b0a9-50fc98f9dbba",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C66",
+      "claim": "Increasing the branch angle variability increases the minimum possible fluctuation amplitude and filament density variability, representing a decrease in the noise-suppression capabilities of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, increasing the branch angle variability increases the minimum possible fluctuation amplitude (Figure 5h, l and p \u2013 insets) and filament density variability (Figure 5i, m and q), representing a decrease in the noise-suppression capabilities of the system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5h, i, l, m, p, and q.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "36cf375d-c7a1-4f4f-8c6a-dd0fd2d7ad1d",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C67",
+      "claim": "Actin network geometry is not only essential for leading edge stability, but also plays a major role in determining the fundamental limits of smoothness in lamellipodial shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results provide strong support for the idea that actin network geometry is not only essential for leading edge stability, but also plays a major role in determining the fundamental limits of smoothness in lamellipodial shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "0c634648-c913-4428-8314-eb3c4ce8705e",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C68",
+      "claim": "The suppression of stochastic fluctuations naturally emerges from the interactions between a growing actin network and the leading edge membrane, with no additional feedback required.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, application of that principle in combination with high-precision measurements, quantitative analytical techniques, and physical modeling led to the surprising revelation that the suppression of stochastic fluctuations naturally emerges from the interactions between a growing actin network and the leading edge membrane, with no additional feedback required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main finding of the manuscript, supported by the experimental and computational results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "da23d420-3bb1-4d28-9bd6-5770aa3e3122",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C69",
+      "claim": "The model provides an understanding of the basic biophysical mechanisms underlying lamellipodial migration.",
+      "claim_type": "EXPLICIT",
+      "source": "The model developed in this work provides an understanding of the basic biophysical mechanisms underlying lamellipodial migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "f75728a4-a08e-4646-9864-e5741df77bce",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C70",
+      "claim": "Lateral filament spreading, combined with a fixed branching window, is indispensable for leading edge stability.",
+      "claim_type": "EXPLICIT",
+      "source": "By selectively removing elements of the model, we determined that lateral filament spreading, combined with a fixed branching window, is indispensable for leading edge stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "7c973f8d-a270-476c-a9a8-e953e3672a45",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C71",
+      "claim": "A ~70\u201380\u00b0 branch angle maximally suppresses fine-scale actin density and leading edge shape fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our further investigations into the evolutionary properties of actin network growth revealed that a ~70\u201380\u00b0 branch angle maximally suppresses fine-scale actin density and leading edge shape fluctuations, showing for the first time that Arp2/3-mediated branching imparts optimal functionality, as was long hypothesized based on strong sequence, structural, and functional conservation throughout the eukaryotic tree of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "9d42e553-afd7-4bad-afcd-c2c5a99f3572",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C72",
+      "claim": "The evolutionarily-conserved branching angle that maximally suppresses leading edge fluctuations appears not to be the same angle that optimizes the polymerization velocity of single filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the evolutionarily-conserved branching angle that we find maximally suppresses leading edge fluctuations appears not to be the same angle that optimizes the polymerization velocity of single filaments \u2013 predicted to be a broad angle closer to ~90\u2013100\u00b0 (and quite load-dependent) in the low-load regime (Mogilner and Oster, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from comparison of the simulation results with published theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "9ddc44ed-7a34-40eb-8914-2ad508ece319",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C73",
+      "claim": "Evolutionary selection acts at the level of actin network properties, rather than force production by individual filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrast suggests that evolutionary selection acts at the level of actin network properties, rather than force production by individual filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the comparison between optimal angles for different properties.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "a484433f-70fb-4b3d-b1a5-5ac7be6a24dd",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "claim_id": "C74",
+      "claim": "Stability in the case of lamellipodial dynamics is inherently encoded by the geometry of branched actin network growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Returning to the broader question of how noisy biological systems control for stochasticity, we find that stability in the case of lamellipodial dynamics is inherently encoded by the geometry of branched actin network growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "632ca7b0-424c-4f44-9b9a-d32a117209b0",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High-speed imaging of HL-60 cells reveals fine-scale leading edge fluctuations at sub-second and sub-micron scales, with measurable wavelengths down to ~650 nm and amplitudes down to ~65 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C24, C26, and C28 are well-supported by experimental data shown in Figure 1 and supplementary figures. The segmentation methodology is described in detail, and the measurements are consistent with the resolution limits of the imaging system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "cdf86b8d-663f-4001-83a2-7f6e77557c67",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Leading edge shape fluctuations relax exponentially in a wavelength-dependent manner consistent with overdamped viscous relaxation, with shorter wavelengths decaying faster and having smaller amplitudes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C29-C32 are supported by autocorrelation analysis shown in Figure 1e-h. The exponential fitting is validated against a membrane control simulation with known analytical solutions (Figure 1\u2014figure supplement 3), demonstrating the robustness of the analytical approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "adccfbf0-228e-4516-acde-7b582631e777",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The qualitative and quantitative properties of leading edge fluctuations are conserved across cell types, as demonstrated in fish epidermal keratocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by experimental data from keratocytes shown in Figure 1\u2014figure supplement 6, demonstrating similar exponential decay dynamics and wavelength-dependent behavior as observed in HL-60 cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "c2195172-f342-46ae-95e6-49ca367ac5ce",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A minimal stochastic model of branched actin network growth incorporating only polymerization, depolymerization, branching, and capping successfully recapitulates experimental observations of leading edge stability and fluctuation dynamics without free parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C34-C38, C40-C45 are well-supported by simulation results in Figure 2 and supplementary figures. The model achieves quantitative agreement with experimental measurements using only literature-derived parameters, and robustness is demonstrated through sensitivity analyses (Figure 2\u2014figure supplements 1-3). The lack of free parameters strengthens the predictive power of the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "1aae4b8c-6a99-4ce5-ac78-7d2f581369cb",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model correctly predicts the effects of Latrunculin B treatment on leading edge fluctuations, with experimental validation showing increased amplitudes at large wavelengths and decreased decay rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by both simulation predictions (Figure 3a-b) and experimental validation (Figure 3c-d). The qualitative and quantitative agreement between model predictions and experimental observations provides strong validation of the model's predictive capability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "3eae94cb-88cc-4e1a-ba4c-3372cd7cbe99",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Leading edge stability emerges intrinsically from only two geometric requirements: membrane-proximal branching and lateral filament spreading, with membrane tension and bending rigidity being dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 and C70 are supported by systematic ablation studies shown in Figure 4. The removal of membrane coupling (Figure 4a-e) and filament spreading (Figure 4f-i) demonstrates the necessity and sufficiency of these two elements. The proposed molecular mechanism (Figure 4j) provides a clear mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "525ce004-da44-4895-bd26-a1f762c6b321",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lamellipodial stability naturally emerges from branched actin network geometry without requiring additional regulatory feedback mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21, C68, and C74 represent the central conclusion of the manuscript, supported by the combined experimental and computational evidence from Figures 1-4. The systematic elimination of model components demonstrates that geometric constraints alone are sufficient for stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "4d5e2235-94c0-4e04-a5fe-23a0c5f8ddcf",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The evolutionarily conserved ~70-80\u00b0 Arp2/3 branching angle optimally suppresses actin density fluctuations and leading edge shape fluctuations at fine spatial scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C57-C58, C61-C62, and C71 are supported by systematic simulations varying branching angle shown in Figure 5. The optimal angle emerges from the model without being explicitly programmed, and the effect is most pronounced at the smallest wavelengths resolved by the simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "aeb2913f-4d3f-4715-8a9d-4aba2362f392",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Increasing branching angle variability reduces the sharpness of the optimal branching angle and decreases overall noise-suppression capabilities of the system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by simulations shown in Figure 5j-q, demonstrating how orientational heritability affects the optimization landscape. The results show that low variability (\u00b12\u00b0) maintains the optimum while high variability (\u00b110\u00b0) eliminates it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "369881fe-b482-45c0-9fff-d23cff38a712",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Arp2/3-mediated branching is essential for lamellipodial maintenance, with its disruption leading to highly variable leading edge shapes, which the model explains through loss of efficient filament spreading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by literature citations (C54), experimental observations with CK-666 treatment (C55, Video 6), and mechanistic interpretation from the model (C56). The integration of experimental and theoretical results provides a coherent explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "3b124976-4290-422e-b728-d37820639b6d",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The evolutionarily conserved branching angle that optimizes leading edge stability differs from the angle that optimizes single-filament polymerization velocity, suggesting selection acts at the network level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C73 compare the optimal angle from this work (~70-80\u00b0) with theoretical predictions for single-filament force production (~90-100\u00b0). While C72 is supported by the comparison, C73 is speculative as it makes an evolutionary claim without direct evidence. The inference is reasonable but would require additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "d56b18ab-4eab-4036-995d-2b1aca3c506e",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context on actin-based cell migration and lamellipodial structure is established from literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C8 provide established background knowledge supported by appropriate literature citations. These claims accurately represent the current understanding of actin-based motility and lamellipodial biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "b9d10b4b-39a6-4eca-a26f-e66035c5117c",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous work has identified multiple potential feedback mechanisms for lamellipodial stability, including membrane tension, curvature-sensing proteins, monomer competition, and force-feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 accurately summarize prior hypotheses from the literature with appropriate citations. These claims establish the context for the current work's novel finding that such feedback mechanisms are not required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "722c80f4-203b-491e-b01b-187521727c3d",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Arp2/3 complex mediates a highly conserved ~70\u00b0 branching angle across diverse species, with filament orientations in cells averaging \u00b135\u00b0 relative to the membrane normal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15, C39, C59-C60 are well-supported by extensive literature citations documenting measurements across multiple species and experimental techniques. The consistency of measurements (67-78\u00b0 \u00b1 2-13\u00b0) across diverse contexts supports the claim of evolutionary conservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "5c3d7fb7-c615-423d-94b2-7dbaad83e222",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Dendritic branching exhibits autocatalytic growth dynamics and velocity-dependent growth rates that can introduce nonlinearities and hysteresis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by appropriate literature citations describing theoretical and experimental work on actin network dynamics. These claims establish potential sources of instability that the current work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "91b24956-a8dd-4892-b250-154297013e39",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "HL-60 cells form intrinsically lamellar protrusions and can migrate persistently in quasi-2D confinement for minutes to hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by literature citations describing the experimental system. These claims establish the appropriateness of the HL-60 model system for studying lamellipodial dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "ac5169a1-85a9-4a60-be68-77e2666b5ca1",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The observed lamellipodial dynamics in HL-60 cells are phenotypically distinct from and ~100-fold faster than oscillatory protrusion-retraction cycles in slower-moving cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by comparison with literature on fibroblast dynamics. The distinction between the fast fluctuations observed here and slower oscillatory cycles in other cell types is important for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "b09adee3-32f4-4206-bbf3-7f211eb7f3b1",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The measured wavelengths and amplitudes correspond to approximately 25 actin filaments at physiological spacing and 25 monomers along the direction of motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is a reasonable inference based on known physiological parameters from the literature (filament spacing from Svitkina et al., 1997) and the measured values. The calculation provides useful context for interpreting the spatial resolution of the measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "a5c001d5-a770-4384-841c-9b2d482fb7d0",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Actin network geometry is essential for leading edge stability and determines the fundamental limits of lamellipodial shape smoothness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is a summary inference well-supported by the combined results from Figures 4-5, demonstrating both the necessity of geometric constraints for stability and the optimization of smoothness by branching angle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    },
+    {
+      "id": "30453450-7c11-4c23-952d-7d8ec2092970",
+      "content_id": "2b900ab4-9735-4462-afc9-2c98d17e53ef",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The model provides understanding of basic biophysical mechanisms underlying lamellipodial migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is a general summary statement supported by the totality of the modeling results. The model successfully explains multiple aspects of lamellipodial behavior from first principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:38:16.104074Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "30bb13d9-c1b4-49d8-a071-ec8cbf92056a",
+      "result_id": "632ca7b0-424c-4f44-9b9a-d32a117209b0"
+    },
+    {
+      "claim_id": "d0dce40b-76a5-4ee3-baa0-95c8667bf71a",
+      "result_id": "632ca7b0-424c-4f44-9b9a-d32a117209b0"
+    },
+    {
+      "claim_id": "4ae3dde8-b04a-4057-bc4a-5da1c0dcac5f",
+      "result_id": "632ca7b0-424c-4f44-9b9a-d32a117209b0"
+    },
+    {
+      "claim_id": "aeb3bb16-4708-42db-8145-2a9761c503bf",
+      "result_id": "632ca7b0-424c-4f44-9b9a-d32a117209b0"
+    },
+    {
+      "claim_id": "ca90e24d-3d79-4089-87f6-1f8ef19bc606",
+      "result_id": "cdf86b8d-663f-4001-83a2-7f6e77557c67"
+    },
+    {
+      "claim_id": "bd192eea-ac8b-4133-b037-3be420939729",
+      "result_id": "cdf86b8d-663f-4001-83a2-7f6e77557c67"
+    },
+    {
+      "claim_id": "eca33647-f191-4f0b-92ec-645c0efcdd92",
+      "result_id": "cdf86b8d-663f-4001-83a2-7f6e77557c67"
+    },
+    {
+      "claim_id": "b1272faa-f200-4919-86ab-b6b737cbe75b",
+      "result_id": "cdf86b8d-663f-4001-83a2-7f6e77557c67"
+    },
+    {
+      "claim_id": "9af1150b-1f91-4972-ab8b-763aa1cdacd9",
+      "result_id": "cdf86b8d-663f-4001-83a2-7f6e77557c67"
+    },
+    {
+      "claim_id": "7e81bb3f-323c-4519-95fd-99f6a1c1983c",
+      "result_id": "adccfbf0-228e-4516-acde-7b582631e777"
+    },
+    {
+      "claim_id": "e550f0d7-1e69-4fa0-81de-7df7d6787589",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "bb7458ef-2640-4c1f-806f-472e8c9fb409",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "dc8051ff-7db8-4507-8205-c5ece2689b60",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "2eb8196c-f40f-4e73-a7e0-635a531d517b",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "6850a4fb-ee0f-415e-a5a1-d7c7dc5cbb33",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "6b391bb1-d19b-4dec-b47a-453f789046d0",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "44de4184-82a7-4e09-9bc6-39267dd6e4ff",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "7d0f2b0d-d2dc-40e9-803b-34fe8bb590f0",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "53586ad8-206e-4667-9c21-4877b1fce9d6",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "2134926b-a88d-4480-819e-62c5756e0c8c",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "6e9f1163-0683-49a5-8680-f5153b4ffbbd",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "c8e45330-4020-46e3-afb9-5c52640fa5c0",
+      "result_id": "c2195172-f342-46ae-95e6-49ca367ac5ce"
+    },
+    {
+      "claim_id": "1406f5db-156b-44c6-b636-1e36c14dd025",
+      "result_id": "1aae4b8c-6a99-4ce5-ac78-7d2f581369cb"
+    },
+    {
+      "claim_id": "c72c336a-6f4f-4810-b7ba-4496d5af35ae",
+      "result_id": "1aae4b8c-6a99-4ce5-ac78-7d2f581369cb"
+    },
+    {
+      "claim_id": "07f916ce-1922-42d6-b185-bedac875e7c4",
+      "result_id": "1aae4b8c-6a99-4ce5-ac78-7d2f581369cb"
+    },
+    {
+      "claim_id": "5e2916c1-fbf0-4367-93c6-e9664e609e52",
+      "result_id": "3eae94cb-88cc-4e1a-ba4c-3372cd7cbe99"
+    },
+    {
+      "claim_id": "42cbc731-dbe1-4d05-aea1-be6679424b80",
+      "result_id": "3eae94cb-88cc-4e1a-ba4c-3372cd7cbe99"
+    },
+    {
+      "claim_id": "50c6d203-f5f7-406c-b393-9295ec762bfe",
+      "result_id": "3eae94cb-88cc-4e1a-ba4c-3372cd7cbe99"
+    },
+    {
+      "claim_id": "73743107-465d-45f6-bf25-5e6e5a4f141b",
+      "result_id": "3eae94cb-88cc-4e1a-ba4c-3372cd7cbe99"
+    },
+    {
+      "claim_id": "186e80c5-455d-4a32-807c-00cdd8c8af66",
+      "result_id": "3eae94cb-88cc-4e1a-ba4c-3372cd7cbe99"
+    },
+    {
+      "claim_id": "f75728a4-a08e-4646-9864-e5741df77bce",
+      "result_id": "3eae94cb-88cc-4e1a-ba4c-3372cd7cbe99"
+    },
+    {
+      "claim_id": "9d9bba44-893d-40d4-b2cc-cf3792feed87",
+      "result_id": "525ce004-da44-4895-bd26-a1f762c6b321"
+    },
+    {
+      "claim_id": "30f75abc-aaf6-4e8d-b583-6bca30e36e9e",
+      "result_id": "525ce004-da44-4895-bd26-a1f762c6b321"
+    },
+    {
+      "claim_id": "0c634648-c913-4428-8314-eb3c4ce8705e",
+      "result_id": "525ce004-da44-4895-bd26-a1f762c6b321"
+    },
+    {
+      "claim_id": "a484433f-70fb-4b3d-b1a5-5ac7be6a24dd",
+      "result_id": "525ce004-da44-4895-bd26-a1f762c6b321"
+    },
+    {
+      "claim_id": "213defd5-5742-44c0-afa9-e0fbfaf52188",
+      "result_id": "4d5e2235-94c0-4e04-a5fe-23a0c5f8ddcf"
+    },
+    {
+      "claim_id": "fb240506-02ee-4953-9931-bdac7da85781",
+      "result_id": "4d5e2235-94c0-4e04-a5fe-23a0c5f8ddcf"
+    },
+    {
+      "claim_id": "f1850527-114f-46cb-b976-44836c397cdc",
+      "result_id": "4d5e2235-94c0-4e04-a5fe-23a0c5f8ddcf"
+    },
+    {
+      "claim_id": "82ba9c1d-4f50-443c-826e-5738afe7bb7b",
+      "result_id": "4d5e2235-94c0-4e04-a5fe-23a0c5f8ddcf"
+    },
+    {
+      "claim_id": "28618202-dfeb-44e4-acc8-c26c2687f524",
+      "result_id": "4d5e2235-94c0-4e04-a5fe-23a0c5f8ddcf"
+    },
+    {
+      "claim_id": "7c973f8d-a270-476c-a9a8-e953e3672a45",
+      "result_id": "4d5e2235-94c0-4e04-a5fe-23a0c5f8ddcf"
+    },
+    {
+      "claim_id": "6b929410-54da-44fb-b63f-ffe260f4cf80",
+      "result_id": "aeb2913f-4d3f-4715-8a9d-4aba2362f392"
+    },
+    {
+      "claim_id": "f8a5e6b5-b751-403c-9c64-049b16f46ef4",
+      "result_id": "aeb2913f-4d3f-4715-8a9d-4aba2362f392"
+    },
+    {
+      "claim_id": "00032b94-ef12-433e-82b0-5ff6d1acb781",
+      "result_id": "aeb2913f-4d3f-4715-8a9d-4aba2362f392"
+    },
+    {
+      "claim_id": "ddebf546-8410-4666-b0a9-50fc98f9dbba",
+      "result_id": "aeb2913f-4d3f-4715-8a9d-4aba2362f392"
+    },
+    {
+      "claim_id": "c144ddf6-706e-42fa-a8cd-3e7c96ba4997",
+      "result_id": "369881fe-b482-45c0-9fff-d23cff38a712"
+    },
+    {
+      "claim_id": "dcc01c70-5760-4f00-94fe-6ea77356ba2f",
+      "result_id": "369881fe-b482-45c0-9fff-d23cff38a712"
+    },
+    {
+      "claim_id": "8d747340-17cc-4be0-b6c1-c16f65151f3c",
+      "result_id": "369881fe-b482-45c0-9fff-d23cff38a712"
+    },
+    {
+      "claim_id": "9d42e553-afd7-4bad-afcd-c2c5a99f3572",
+      "result_id": "3b124976-4290-422e-b728-d37820639b6d"
+    },
+    {
+      "claim_id": "9ddc44ed-7a34-40eb-8914-2ad508ece319",
+      "result_id": "3b124976-4290-422e-b728-d37820639b6d"
+    },
+    {
+      "claim_id": "4be30927-85f3-4cb3-966d-9c6005a15f4f",
+      "result_id": "d56b18ab-4eab-4036-995d-2b1aca3c506e"
+    },
+    {
+      "claim_id": "7ce68807-00b6-4827-ae1b-1446b0b1a539",
+      "result_id": "d56b18ab-4eab-4036-995d-2b1aca3c506e"
+    },
+    {
+      "claim_id": "278230d7-8c99-427f-8b61-6580a8597e44",
+      "result_id": "d56b18ab-4eab-4036-995d-2b1aca3c506e"
+    },
+    {
+      "claim_id": "d061ec7c-dd6f-4326-ac0c-966a43685990",
+      "result_id": "d56b18ab-4eab-4036-995d-2b1aca3c506e"
+    },
+    {
+      "claim_id": "5804bb3b-b92b-4ebe-a894-96729e96919b",
+      "result_id": "d56b18ab-4eab-4036-995d-2b1aca3c506e"
+    },
+    {
+      "claim_id": "ed972ccc-ebab-4fc5-80b4-006e44a38415",
+      "result_id": "d56b18ab-4eab-4036-995d-2b1aca3c506e"
+    },
+    {
+      "claim_id": "80b53f12-0d30-4d56-a454-0ad29ba2d65b",
+      "result_id": "b9d10b4b-39a6-4eca-a26f-e66035c5117c"
+    },
+    {
+      "claim_id": "f8b5ca5d-a042-440a-ac3b-46d3a0a8b2f6",
+      "result_id": "b9d10b4b-39a6-4eca-a26f-e66035c5117c"
+    },
+    {
+      "claim_id": "986cc372-8780-43a5-8b68-5a13c22a2b94",
+      "result_id": "b9d10b4b-39a6-4eca-a26f-e66035c5117c"
+    },
+    {
+      "claim_id": "6abff1a1-d62c-4c84-8482-cbe7aa4a62bf",
+      "result_id": "b9d10b4b-39a6-4eca-a26f-e66035c5117c"
+    },
+    {
+      "claim_id": "a9b49bf3-5c6f-4dd2-8708-e7972d72397c",
+      "result_id": "b9d10b4b-39a6-4eca-a26f-e66035c5117c"
+    },
+    {
+      "claim_id": "c721ff7f-7019-4a72-91a6-0600a7f0a4b0",
+      "result_id": "722c80f4-203b-491e-b01b-187521727c3d"
+    },
+    {
+      "claim_id": "1a4aebcd-164a-455f-bc72-e260a8961266",
+      "result_id": "722c80f4-203b-491e-b01b-187521727c3d"
+    },
+    {
+      "claim_id": "00c95d07-616f-4839-a117-8f9132ecb1a9",
+      "result_id": "722c80f4-203b-491e-b01b-187521727c3d"
+    },
+    {
+      "claim_id": "f45a62da-7a08-4355-a931-1155a83175ff",
+      "result_id": "722c80f4-203b-491e-b01b-187521727c3d"
+    },
+    {
+      "claim_id": "60cec36d-b621-4c4d-b5c9-178296bf374d",
+      "result_id": "722c80f4-203b-491e-b01b-187521727c3d"
+    },
+    {
+      "claim_id": "6c31c2af-f271-48a5-9d1a-460f477e513d",
+      "result_id": "5c3d7fb7-c615-423d-94b2-7dbaad83e222"
+    },
+    {
+      "claim_id": "3eff6f18-994d-4069-97ea-2f2a1af0d052",
+      "result_id": "5c3d7fb7-c615-423d-94b2-7dbaad83e222"
+    },
+    {
+      "claim_id": "38b20f03-73fd-4d4f-b74f-aa19415982b1",
+      "result_id": "91b24956-a8dd-4892-b250-154297013e39"
+    },
+    {
+      "claim_id": "445bd4e2-c355-4ee1-bab3-63566f66aad9",
+      "result_id": "91b24956-a8dd-4892-b250-154297013e39"
+    },
+    {
+      "claim_id": "de48d03e-101c-418a-bb7b-32a8a167c778",
+      "result_id": "ac5169a1-85a9-4a60-be68-77e2666b5ca1"
+    },
+    {
+      "claim_id": "4015310d-bb1c-455b-888e-8744a8a7da07",
+      "result_id": "b09adee3-32f4-4206-bbf3-7f211eb7f3b1"
+    },
+    {
+      "claim_id": "36cf375d-c7a1-4f4f-8c6a-dd0fd2d7ad1d",
+      "result_id": "a5c001d5-a770-4384-841c-9b2d482fb7d0"
+    },
+    {
+      "claim_id": "da23d420-3bb1-4d28-9bd6-5770aa3e3122",
+      "result_id": "30453450-7c11-4c23-952d-7d8ec2092970"
+    }
+  ],
+  "comparisons": []
+}

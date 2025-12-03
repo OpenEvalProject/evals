@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C38",
+      "C97"
+    ],
+    "result": "Older adults (N=42, mean age 68) performed significantly worse than younger adults (N=36, mean age 21) on the RL-WM task across both learning and test phases, with performance declining with age even within the older adult group. Both groups were cognitively healthy based on RBANS scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral findings are well-supported by multiple converging analyses (learning curves, GLM, test phase performance) with appropriate statistical tests and adequate sample sizes. The within-group age correlation (C97) strengthens the case against cohort effects as the sole explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C44",
+      "C49",
+      "C54",
+      "C75",
+      "C76"
+    ],
+    "result": "Computational modeling revealed that age-related performance deficits are best explained by increased working memory decay (approximately twice as fast in older adults) rather than impairments in reinforcement learning parameters. Older adults did not compensate by reducing WM reliance, amplifying the impact of WM deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hierarchical Bayesian RL-WM model was rigorously validated through model comparison (C40), parameter recovery, and simulation analyses (C54). The finding that WM decay differs substantially while RL parameters show minimal group differences (C49) is supported by credible intervals and posterior predictive checks, providing strong computational evidence for the WM deficit hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C84"
+    ],
+    "result": "Older adults had significantly lower levels of glutamate in prefrontal cortex compared to younger adults, and glutamate (not structural measures) was the primary neural predictor of task performance in a regularized regression model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MRS measurements directly quantified glutamate levels across age groups, and the data-driven model selection approach (cross-validated elastic net regression) appropriately identified glutamate as the key predictor while controlling for structural and other metabolic factors. The finding is supported by appropriate MRS methodology and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C60"
+    ],
+    "result": "Lower prefrontal glutamate levels were correlated with higher working memory decay across individuals (r=-0.52, p<0.001), with this relationship remaining significant after controlling for anatomical and metabolic confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the overall correlation is statistically significant, C88 reveals this relationship is driven primarily by between-group differences, with only a trend-level correlation within the older adult group (r=-0.39, p=0.08). The small sample size for MRS data (N=24 older adults with both measures, C90) limits power to detect within-group effects, making the specificity of the glutamate-WM decay relationship ambiguous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Formal mediation analysis could not confirm that glutamate mediates the relationship between age and working memory decay, likely due to insufficient statistical power (only 24 older adults with both brain and behavioral measurements).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge this negative finding and provide reasonable explanations (small sample size, methodological limitations of mediation analysis with noisy proxy measures). This honest reporting of a failed mediation analysis strengthens the overall credibility of the work, though it limits causal interpretation of the glutamate-WM relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C71",
+      "C104"
+    ],
+    "result": "The authors conclude that lower prefrontal glutamate may contribute to working memory failures and impaired decision-making in older adults, though they appropriately use cautious language ('may contribute', 'could result').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This integrative conclusion is appropriately hedged given the correlational nature of the data and failed mediation analysis. While the pattern of findings is consistent with this interpretation, the cross-sectional design (C95), limited sample size for brain-behavior correlations (C90), and inability to establish mediation (C89) prevent stronger causal claims. The conclusion represents a reasonable inference but requires longitudinal or interventional studies for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Both age groups showed behavioral signatures of RL and WM processes, but working memory deficits specifically underlie age-related impairments in decisions from experience, even when accounting for RL contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GLM analysis (C33) and computational modeling approach successfully dissociated RL and WM contributions, addressing a key methodological concern in the aging literature (C74). The finding that WM deficits explain performance while controlling for RL (C73) is well-supported by the model comparison and parameter estimation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The finding that RL systems are relatively intact in older adults contradicts some prior literature but is consistent with other studies, with discrepancies potentially arising from failure to separate WM and RL contributions in previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately contextualize their findings within mixed prior literature (C80) and offer a reasonable methodological explanation for inconsistencies (C81). The negative learning rate difference (C52) is a secondary finding that conflicts with some prior work, but the authors acknowledge this discrepancy (C79) and the overall pattern supports intact RL with impaired WM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study has important methodological limitations: MRS cannot verify cellular localization of glutamate, and dopamine (relevant to both RL and WM) was not measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriately acknowledged limitations that constrain interpretation. The inability to localize glutamate to synapses (C92) limits mechanistic conclusions, and the absence of dopamine measurements (C93) leaves open alternative explanations for the observed effects, particularly given dopamine's role in both RL and WM (C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The cross-sectional design raises concerns about cohort effects, though the within-group age correlation in older adults argues against cohort effects as the sole explanation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the cross-sectional design limitation (C95) and potential cohort effects (C96), but provide evidence against this alternative explanation through within-group correlations (C97). This balanced assessment strengthens the interpretation while acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The RL-WM model showed systematic deviations from older adults' data in set size 6 learning, where some participants appeared to use selective learning strategies (learning only a subset of stimuli) not captured by the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Posterior predictive checks appropriately identified model misfit (C98), and detailed inspection revealed the behavioral pattern underlying this misfit (C99). The authors offer a reasonable interpretation (C100) while acknowledging this as a limitation. This honest reporting of model limitations is commendable and suggests avenues for future model development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The computational WM decay parameter could reflect multiple underlying mechanisms including failures to prioritize task-relevant information, susceptibility to interference, or retrieval failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge that their computational parameter is agnostic to specific cognitive mechanisms (C77, C78). This is an honest limitation that highlights the need for tasks designed to dissociate these mechanisms. The speculation is appropriately hedged and supported by relevant citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C103"
+    ],
+    "result": "The authors speculate that MRS glutamate measures may reflect synaptic architecture changes and that cognitive decline may accelerate nonlinearly at older ages, but acknowledge these as speculative interpretations requiring future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These speculative claims (C87, C103) are appropriately identified as such and represent reasonable interpretations of the data patterns. The authors do not overstate these as established findings, maintaining appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

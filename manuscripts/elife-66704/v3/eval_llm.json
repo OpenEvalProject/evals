@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors developed a high-content imaging pipeline for neural tube closure in Xenopus, generating ~250,000 observations of apical cell surfaces from over 3,700 cells and ~580,000 observations from over 13,000 individual cell-cell junctions across nine embryos, collected at 1 frame/minute over 1-2 hours. Initial validation showed cells in both anterior and posterior regions generally reduce their apical surface area and increase medial actin intensity as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe the dataset size, imaging parameters, and initial validation results. The dataset scale is clearly stated (C21, C22), and the validation showing expected trends in apical area reduction and actin accumulation (C23) is supported by Figure 2A,B. This provides strong evidence that the imaging pipeline is working as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Anterior and posterior neural ectoderm cells display distinct patterns of apical constriction. In the anterior, the vast majority of cells displayed significant, gradual apical constriction throughout neurulation. In the posterior, fewer cells constricted, many dilated, and constriction was initiated late and proceeded rapidly. Both medial and junctional actin intensity increased over time in both regions, but posterior cells showed significantly more heterogeneous actin accumulation outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe region-specific differences in apical constriction and actin dynamics, supported by quantitative data in Figure 3A-C. The statistical comparisons (Kolmogorov-Smirnov tests) show significant differences between anterior and posterior regions. The data clearly demonstrate distinct temporal and spatial patterns of cell behavior between the two regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "N-cadherin accumulates dramatically at both junctional and medial (free apical surface) regions in the anterior neural plate, closely paralleling actin dynamics. This medial accumulation was confirmed by immunostaining for endogenous N-cadherin and Z-projections showing N-cadherin signal coincident with and basal to apical actin. In contrast, neither junctional nor medial N-cadherin displayed significant accumulation in the posterior neural plate despite robust actin accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe surprising N-cadherin localization patterns supported by multiple lines of evidence: live imaging (Figure 3D-E), immunostaining (Figure 3\u2014figure supplement 1), and Z-projections (Figure 4). The finding of medial N-cadherin accumulation is unexpected but well-documented. The regional differences between anterior and posterior are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors designed sgRNAs targeting the 5' end of shroom3 coding region that effectively mutated the shroom3 locus and elicited anterior neural tube closure defects consistent with prior studies. Critical negative controls showed sgRNA without Cas9 had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe the CRISPR approach and validation. The sgRNA design is shown in Figure 5\u2014figure supplement 1A, mutation is validated by fragment analysis (Figure 5\u2014figure supplement 1B), phenotypes match prior studies (C35 with citations), and appropriate negative controls are included (C36, Figure 5\u2014figure supplement 1C,D). This is rigorous experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Shroom3 crispant cells showed region-specific phenotypes: in the anterior, cells displayed significantly enlarged apical surfaces that worsened over time, with the majority failing to constrict and instead dilating. In the posterior, the majority of crispant cells still strongly constricted, though with a mildly significant defect. The magnitude of these defects reflects the known penetrance of NTDs in anterior versus posterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 describe differential effects of shroom3 loss in anterior versus posterior regions, supported by quantitative data in Figure 5C,D showing statistically significant differences. The correlation with known NTD penetrance (C40) is supported by citations to prior work. The data clearly demonstrate region-specific requirements for Shroom3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In the anterior neural plate, shroom3 crispant cells displayed surprisingly modest effects on actin accumulation\u2014while significantly reduced compared to controls, the majority of crispant cells still increased both medial and junctional actin. In striking contrast, crispant cells showed profound failure to accumulate N-cadherin (both junctional and medial), with the effect more pronounced for medial N-cadherin. This suggests Shroom3 loss uncouples actin and N-cadherin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe a key mechanistic finding supported by quantitative data in Figure 6. The modest actin phenotype (C42-C43) contrasts sharply with the severe N-cadherin phenotype (C44-C45), both supported by statistical tests. The interpretation that Shroom3 uncouples these two systems (C46) is a reasonable inference from the data, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cell-by-cell analysis revealed that control anterior cells showed strong reduction in apical area coupled with increased actin intensity. Shroom3 crispant cells displayed a bimodal distribution of apical area changes (some constricting, others dilating) but still accumulated actin, indicating loss of shroom3 leads to reduced actin accumulation rather than complete loss. N-cadherin showed a different pattern, with crispant cells consistently displaying apical dilation coupled to strong reduction in medial N-cadherin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 provide detailed cell-level analysis supported by 2D density plots in Figure 7A-C. The bimodal distribution of crispant cell behaviors (C48) and the differential effects on actin versus N-cadherin (C49-C51) are clearly shown in the data. This analysis provides important mechanistic insights into how Shroom3 loss affects cell behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Correlation analysis revealed strong negative correlation between apical area and actin intensity in control anterior cells, which was effectively abolished by shroom3 loss. Similarly, strong positive correlation between actin and N-cadherin intensity in controls was severely weakened by shroom3 loss. This suggests shroom3 loss does not prevent actin assembly per se, but rather uncouples medial actomyosin contractility from medial N-cadherin accumulation and thus from effective apical constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe correlation analyses supported by Figure 8A-D with Pearson correlation statistics. The loss of correlations in crispant cells (C53, C55) is statistically significant. The mechanistic interpretation (C56) is a reasonable inference from the correlation data, though it represents a hypothesis that would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In the posterior neural ectoderm, shroom3 crispant cells displayed far milder apical constriction defects than in the anterior. Both junctional and medial actin still accumulated in posterior crispant cells. In striking contrast to the anterior, N-cadherin intensity decreased in both control and crispant posterior cells, and N-cadherin dynamics were essentially unaltered by shroom3 loss in the posterior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe fundamentally different Shroom3 function in posterior versus anterior regions, supported by data in Figures 5D and 9A-E. The mild actin phenotype (C59-C60) and lack of N-cadherin phenotype (C61-C62) in posterior crispants contrasts sharply with anterior phenotypes. This demonstrates region-specific mechanisms of neural tube closure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Correlations between actin localization and apical area were much weaker in posterior control cells than anterior, suggesting mechanistically different apical constriction between regions. Loss of Shroom3 disrupted actin/area correlations in both regions but more strongly in the anterior. No correlation was observed between N-cadherin and apical area in posterior cells. These results suggest changes in apical constriction alone cannot explain Shroom3's role in posterior NTDs, which may instead reflect complex interplay with PCP-dependent convergent extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe correlation analyses (Figure 10A-D) revealing regional differences in mechanisms. The weaker correlations in posterior (C63) and differential effects of Shroom3 loss (C65) are statistically supported. The interpretation about posterior NTDs (C67-C68) is reasonable speculation based on the data and prior literature, though C68 explicitly acknowledges this is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Junction analysis revealed distinct behaviors in anterior versus posterior regions. Anterior junctions showed unbiased shortening, while posterior junctions showed polarized behavior with AP-oriented junctions preferentially shortening. Anterior shroom3 crispants showed robust defects with junctions elongating rather than shortening. Posterior crispants showed barely significant bulk changes, and no effect on T1 transitions (neighbor exchanges), suggesting neighbor exchange does not strictly require Shroom3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 describe junction-level analysis supported by Figure 11 and Figure 11\u2014figure supplement 1. The regional differences (C69, C71) and effects of Shroom3 loss (C70, C74) are statistically supported. The T1 transition analysis (C75-C76) provides important mechanistic insight. The consistency with prior studies (C73) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Detailed analysis of junction orientation revealed that strongly shrinking junctions in control posterior cells were tightly clustered in the AP orientation. In shroom3 crispants, shrinking junctions still dominated the AP quadrant but were spread across wider orientations, and elongating junctions were less polarized. Actin dynamics reflected these behaviors. Loss of shroom3 leads to subtle but significant shifts in polarization of junction behaviors driving convergent extension. Strong clustering of N-cadherin clearance from polarized elongating junctions was significantly diminished in crispants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 describe fine-grained analysis of junction polarization supported by Figure 11C-E,H. The shift in orientation distributions (C78-C79) is statistically significant and consistent with prior mouse data. The interpretation about convergent extension polarization (C81) is well-supported by the data and consistent with known genetic interactions. The N-cadherin clustering result (C82) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors conclude that anterior and posterior neural ectoderm cells undergo apical constriction by different mechanisms. In the anterior, changes in apical area are more strongly correlated with medial than junctional actomyosin, indicating contractility is more likely generated at the medial cell surface. Results are consistent with smaller studies in Xenopus and mice. In the posterior, medial and junctional actin have similar correlations with apical area, suggesting more balanced contractility. N-cadherin accumulates at medial surfaces in the anterior but poorly correlates with apical constriction in the posterior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are summary conclusions supported by the collective data from the study. The regional differences in mechanisms (C83-C84) are supported by correlation analyses. The interpretation about medial contractility (C85) is a reasonable inference from the correlation data. Consistency with prior work (C86) and the N-cadherin findings (C88) are well-documented throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that anterior shroom3 crispant cells fail to constrict more from inability to accumulate N-cadherin at the medial surface than from lack of actomyosin accumulation, suggesting a Shroom3-N-cadherin pathway drives anterior apical constriction. They speculate that medial N-cadherin may contribute to Shroom3-dependent endocytosis of the constricting apical surface, or may act like non-junctional E-cadherin in forming cis-clusters and directing cortical actin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 represent interpretations and speculations about mechanisms. While C89 is a reasonable inference from the data showing stronger N-cadherin than actin phenotypes, C90-C93 are explicitly speculative (noted in evidence_type). These hypotheses are plausible based on cited prior work but lack direct experimental validation in this study. Future experiments are needed to test these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors review prior work establishing that convergent extension elongates hindbrain and spinal cord but not midbrain and forebrain, and that disruption of PCP genes causes posterior but not anterior NTDs, while shroom3 disruption causes highly penetrant anterior but weakly penetrant posterior NTDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 are background claims about prior work, all supported by appropriate citations. These establish the regional specificity of neural tube closure mechanisms and NTD genetics that motivates the current study. The citations appear appropriate and the claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors review that apical constriction is driven by actomyosin contraction, with studies in Drosophila and C. elegans showing integration of junctional and medial actomyosin populations. Similar pulsed medial contractions occur during neural tube closure in frog and chick. Shroom3 is necessary and sufficient for apical constriction and acts via Rho kinase to drive apical actin assembly and myosin contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 review established mechanisms of apical constriction and Shroom3 function, all supported by appropriate citations. These provide important context for the current study's investigation of actomyosin populations and Shroom3 function during neural tube closure. The citations appear appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors review that N-cadherin is essential for apical constriction during neural tube closure in Xenopus, displays genetic interactions with shroom3, and can be disrupted by dominant-negative N-cadherin in MDCK cells. N-cadherin displays cell-autonomous activities, and extra-junctional cadherins at free cell membranes can engage and regulate the actomyosin cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 review prior work on N-cadherin function, all supported by appropriate citations. These establish the importance of N-cadherin in apical constriction and its potential extra-junctional roles, providing important context for the current study's findings about medial N-cadherin accumulation. The citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors review that Shroom3 is expressed throughout the neural plate and has been implicated in convergent extension control. Studies indicate genetic and cell biological interplay between Shroom3 and PCP proteins, with one study directly linking PCP, apical constriction, and convergent extension. Some studies also suggest roles for PCP proteins in apical constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 review prior work on Shroom3 expression and interactions with PCP pathways, all supported by appropriate citations. These establish the complexity of Shroom3 function beyond simple apical constriction and motivate investigation of its role in posterior neural tube closure. The citations appear appropriate.",
+    "result_type": "MINOR"
+  }
+]

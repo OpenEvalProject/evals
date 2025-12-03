@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The 'healthy control' samples from Michalovich et al. used by Mast et al. were predominantly unhealthy, with 52.5% obese, 27.5% active smokers, and 55% asthmatic individuals (only 3/40 truly healthy), and these comorbidities cause pro-coagulant and inflammatory changes that would confound COVID-19 differential expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide quantitative metadata analysis showing the control group composition, supported by Figure 1. Claims C26-C30 document that Michalovich et al. themselves found significant inflammatory and coagulation changes in these comorbid groups. Claims C23-C25 provide population baseline statistics from CDC showing the control group is not representative. The inference that these changes would confound COVID-19 analysis (C67-C68) is well-supported by the documented pro-coagulant effects of these comorbidities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The library preparation methods used by Michalovich et al. (polyA-enriched, rRNA-depleted) and Zhou et al. (total RNA, no enrichment/depletion) are fundamentally incompatible for differential expression analysis, with COVID samples containing 16-80% rRNA versus ~1-2% in controls, invalidating TPM-based normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 document the different library preparation methods from the original publications. Claim C41 provides empirical evidence from re-analysis showing dramatically different rRNA proportions (Figure 2), with C57 quantifying COVID samples at 16-80% rRNA. Claims C32, C43-C44 cite established RNA-seq principles (Zhao et al., 2020; Evans et al., 2018) that TPM normalization requires comparable library compositions. The logical chain from methods \u2192 measured differences \u2192 normalization invalidity is complete and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C58",
+      "C59",
+      "C73"
+    ],
+    "result": "The COVID-19 samples from Zhou et al. had grossly insufficient sequencing depth for differential expression analysis, with 4/9 samples having <10M reads (well below the 30M standard), resulting in 23/35 genes of interest averaging <10 reads and 8 genes having zero reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 establish field standards (30M reads minimum, citing Williams et al., 2014; Sims et al., 2014). Claims C48-C51 provide quantitative analysis of actual read depths from Figure 3, showing 4/9 COVID samples with <10M reads. Claims C53, C58-C59 document the consequences: extremely low or zero read counts for genes of interest. Claim C56 provides a specific example (thrombomodulin: 59.88 vs 8,377.68 raw counts). The combination of high rRNA content (C52) further compromising mRNA coverage strengthens this result. The evidence clearly demonstrates inadequate sequencing depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C74",
+      "C75"
+    ],
+    "result": "Mast et al.'s conclusion that tissue factor is not significantly impacted by SARS-CoV-2 infection contradicts multiple independent studies showing elevated tissue factor in COVID-19 patients, including clinical measurements of circulating microvesicles, autopsy protein expression data, and other RNA-seq analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C60-C61 document Mast et al.'s conclusion that tissue factor is unchanged in COVID-19. Claims C62-C64 cite three independent studies (Rosell et al., 2021; Subrahmanian et al., 2021; FitzGerald et al., 2021) showing tissue factor IS elevated in COVID-19 through different methodologies (circulating microvesicles, autopsy protein expression, RNA-seq). Claim C74 notes field convergence on tissue factor's importance. This direct contradiction between Mast et al. and multiple independent lines of evidence strongly supports the authors' critique that Mast et al.'s analysis is flawed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C71"
+    ],
+    "result": "The authors conclude that the sample set and experimental design in Mast et al. are fundamentally flawed due to incomparable datasets, unsuitable COVID-19 samples, and poor quality control standards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C9-C11, C71) is well-supported by the three major technical flaws documented in the manuscript: inappropriate control group composition (Result 1), incompatible library preparation methods (Result 2), and insufficient sequencing depth (Result 3). Each of these issues independently undermines the validity of Mast et al.'s differential expression analysis, and their combination makes the conclusions unsupportable. The authors provide both theoretical reasoning and empirical re-analysis to support this assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The thrombomodulin (THBD) differential expression reported by Mast et al. (2200% decrease) is based on biased normalization, with raw counts showing 59.88 reads in COVID samples versus 8,377.68 in controls, confounded by 16-80% rRNA content in COVID samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 document Mast et al.'s reported finding. Claim C56 provides the actual raw count data showing the dramatic difference in absolute counts. Claim C57 documents the rRNA contamination that would bias CPM normalization. This specific example effectively illustrates how the combination of low read counts and differential rRNA content produces unreliable normalized values. The evidence directly supports the claim that this particular result is artifactual.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C20"
+    ],
+    "result": "Many results from Mast et al. contradict findings in the broader COVID-19 field, particularly regarding extrinsic coagulation cascade mediated coagulopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 makes the general assertion, while C20 provides specific citations to contradictory studies (Subrahmanian et al., 2021; Rosell et al., 2021; FitzGerald et al., 2021) spanning multiple methodologies. This is further substantiated by the specific tissue factor contradiction documented in Result 4. The convergence of multiple independent studies contradicting Mast et al. supports this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Mast et al. reported data in a normalized format without providing raw reads, raw counts, or quality control metrics, making it difficult for reviewers to identify the underlying problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 document the lack of transparency in Mast et al.'s data reporting. The authors' own experience requiring re-analysis from raw public data to uncover these issues supports C69. The absence of raw data and QC metrics (C70) is a factual observation about what was not included in Mast et al. This lack of transparency is a legitimate methodological criticism that contributed to the flawed analysis passing review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C72"
+    ],
+    "result": "Higher quality COVID-19 BALF RNA-seq datasets were available at the time of Mast et al.'s submission, and the flawed results are being cited by other COVID-19 researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 cites three alternative datasets (Xiong et al., 2020; Liao et al., 2020; Xu et al., 2020) that were available and more appropriate. Claim C72 provides evidence that Mast et al. is being cited (Francischetti et al., 2021), demonstrating real-world impact of the flawed analysis. Both claims are supported by citations and represent valid concerns about scientific practice and literature propagation of errors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C6",
+      "C7",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background description of Mast et al.'s study design and reported findings, including their use of Zhou et al. (COVID samples) and Michalovich et al. (control samples) datasets, and their conclusions about coagulation cascade regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the study being critiqued (Mast et al.) and the source datasets (Zhou et al., Michalovich et al.). They are supported by direct citations to the original publications and represent factual descriptions of published work rather than new findings. These provide necessary context for the critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "As of the manuscript's writing, there had been over 230 million reported SARS-CoV-2 cases and more than 4.7 million deaths since December 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These epidemiological statistics are cited to Dong et al., 2020, which tracks COVID-19 cases. While these numbers are time-dependent and have since increased, they represent accurate context for the manuscript's timeframe and establish the public health importance of accurate COVID-19 research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C37",
+      "C44",
+      "C45",
+      "C75"
+    ],
+    "result": "General principles of RNA-seq methodology and coagulation biology, including that library preparation affects RNA content, rRNA is the predominant cellular RNA species, normalization requires comparable libraries, adequate read depth is required for quantification, and tissue factor initiates the extrinsic coagulation cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in RNA-seq methodology and coagulation biology. They are supported by appropriate citations (Lodish et al., 1999 for rRNA abundance; Evans et al., 2018 for normalization principles) or represent textbook knowledge (tissue factor's role). These foundational principles are necessary for evaluating the technical flaws in Mast et al.",
+    "result_type": "MINOR"
+  }
+]

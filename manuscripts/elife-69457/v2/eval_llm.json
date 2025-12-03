@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "circFL-seq is a novel full-length circRNA sequencing method based on rolling circular reverse transcription (RCRT) and nanopore sequencing. The method was validated by PCR and Sanger sequencing of eight known circRNAs, and when applied to eight libraries from six human cell lines, it produced 30M clean reads and detected 197,252 circRNA isoforms from 162,409 BSJs with high reproducibility (Pearson's r>0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C26 collectively establish the development and initial validation of circFL-seq. The experimental validation (C21-C22), sequencing output (C23), detection results (C24-C25), and reproducibility metrics (C26) provide converging evidence that the method works as described. The high correlation between replicates and successful amplification of known circRNAs support the technical validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "circFL-seq identified circRNAs with diverse structural characteristics: 73.2% were exonic type (99.8% verified in databases), median lengths ranged from 402-618 nt across types, and a notable proportion exceeded 500 nt. Read-through circRNAs contained more exons, while single-exon circRNAs had significantly longer exons than multi-exon circRNAs (p<2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe the structural characterization of detected circRNAs with specific quantitative data and statistical support. The high database verification rate (C28) validates detection accuracy, and the statistical significance of exon length differences (C32) is properly reported. These findings are internally consistent and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "circFL-seq identified 23,267 internal alternative splicing (AS) events from 65,656 high-quality circRNA isoforms, including ES (44.3%), A3SS (28.1%), A5SS (24.1%), and IR (3.5%) events. Experimental validation by Sanger sequencing confirmed 12 of 13 tested AS events from 11 circRNAs, including accurate detection of CDR1as isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 demonstrate circFL-seq's capability for AS detection with quantitative breakdowns (C33-C34) and experimental validation (C37-C39). The high validation rate (12/13 events confirmed) and specific examples like CDR1as provide strong support. The one failed validation (A3SS event) is appropriately reported, adding credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Comparison with RNA-seq showed that circFL-seq achieved >10-fold enrichment of circRNA reads (2.2-8.5% vs 0.15-0.32%) and detected circRNAs >500 nt more effectively (44.4% of circFL-seq isoforms vs 96.3% <500 nt for RNA-seq). High-quality BSJs from circFL-seq showed similar database annotation rates to RNA-seq (78.9% vs 76.7%), though more reads are required for confident ONT-based detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 provide a systematic comparison with RNA-seq using matched samples and enrichment protocols. The >10-fold enrichment (C42) and length distribution differences (C47-C48) are quantitatively supported. The observation that high-quality BSJs show similar validation rates (C44) addresses the initial apparent discrepancy (C43) and leads to the reasonable inference about read depth requirements (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Comparison with isoCirc in HEK293 cells showed circFL-seq produced more full-length reads per raw base (11,791 vs 5,820) but identified fewer isoforms. However, circFL-seq showed higher precision with 75.3% of BSJs annotated in databases vs 43.8% for isoCirc, and all top 100 circFL-seq BSJs were database-annotated compared to 22/100 unsupported for isoCirc. At the isoform level, 87% of common BSJs identified at least one identical isoform between methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide a nuanced comparison with isoCirc showing trade-offs between sensitivity and precision. The higher database annotation rate (C51) and validation of top expressed circRNAs (C52-C53) support circFL-seq's precision. The 87% isoform concordance (C54) and higher AS event detection (C55) are quantitatively documented. The comparison is fair in acknowledging both advantages and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In tissue samples (brain and testis), circFL-seq detected 34,046 known BSJs compared to 79,312 for isoCirc, with isoCirc detecting more low-expression BSJs (38,846 vs 2,511 at read count=1). Comparison with CIRI-long showed circFL-seq's computational pipeline was more sensitive with similar precision for BSJ detection and identified 4.5-12.4\u00d7 more AS events across different types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 extend the method comparison to tissues and CIRI-long. The lower detection in tissues (C56) is reasonably attributed to library number differences (C57), and the computational pipeline comparison (C58-C59) shows clear advantages for AS detection with specific fold-change values. The caveat about needing ground-truth validation (C59) appropriately acknowledges limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "circFL-seq quantification of circRNA BSJs correlated significantly with RNA-seq (Pearson's r=0.41-0.68), with high concordance for fold changes in highly expressed BSJs (r=0.78). circFL-seq detected 89 differentially expressed circRNAs (DECs) between HeLa and SKOV3 cells, 58 overlapping with RNA-seq, and RT-qPCR validation of 16 circRNAs confirmed the quantification accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 demonstrate circFL-seq's quantification capability with correlation statistics and experimental validation. The moderate to strong correlations (C60-C61), overlap in DEC detection (C62), and RT-qPCR concordance (C63) provide converging evidence. The validation includes both total RNA and RNase R-treated samples, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "circFL-seq enabled isoform-level quantification of alternative splicing, identifying 90 transcripts with >0.1 ratio differences between HeLa and SKOV3 cells from 193 isoforms analyzed. RT-qPCR validation of 18 isoforms from 9 circRNA BSJs confirmed both transcript ratios and ratio differences, demonstrating the method's advantage for isoform-level quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 establish circFL-seq's capability for differential isoform analysis. The quantitative approach using transcript ratios (C64), identification of differential isoforms (C65), specific example (C66), and RT-qPCR validation (C67) provide strong support. This represents a clear advantage over RNA-seq, which cannot distinguish circular from linear isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "circFL-seq detected fusion circRNAs (f-circRNAs) by identifying reads mapping to distant loci. Six high-quality f-circRNA isoforms from two fusion genes were identified in MCF7 cells, including GBF1/MACROD2 and PRICKLE2-AS1/PTPRT-AS1 fusions, validated by Sanger sequencing and RNA-seq. RNase R experiments suggested GBF1 to MACROD2 fusion direction and linear RNA production from the fusion gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 demonstrate f-circRNA detection capability with experimental validation. The detection strategy (C68), quantitative results (C69), Sanger sequencing validation (C70), and RNA-seq confirmation (C74) provide strong support. The inference about fusion direction (C72) is reasonably drawn from RNase R experiments, though the linear RNA finding (C71) is somewhat speculative but experimentally supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "circFL-seq comprehensively identifies full-length circRNAs of all sizes (64-2334 nt, >40% >500 nt) compared to short-read sequencing. The RCRT-based approach differs from isoCirc's RCA strategy in producing shorter reads with lower per-read cost but requiring more reads for confident detection. circFL-seq's RG mode identified 56% more circRNAs with <2 circles, and the method showed higher sensitivity for AS detection than isoCirc and CIRI-long.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 provide a comprehensive technical comparison of long-read circRNA methods. The size range data (C75), methodological differences (C76-C82), and performance comparisons (C83-C85) are well-documented. The discussion appropriately acknowledges trade-offs between methods and includes both advantages (C83-C84) and limitations (C82). The caveat about needing ground-truth validation (C85) is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes the biological importance of circRNAs and limitations of existing methods. circRNAs function through multiple mechanisms (miRNA sponges, protein scaffolds, translation) determined by sequence features, but identifying full-length sequences is challenging due to overlap with linear cognates. Short-read sequencing can detect circRNAs but cannot fully reconstruct isoforms, while previous long-read approaches (PacBio, ONT-based methods) have been limited by throughput or cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 establish the scientific context and rationale for the study. These are primarily knowledge claims supported by appropriate citations (C9-C13, C15-C16, C19-C20) and logical inferences about technical limitations (C2, C14, C17). The background appropriately motivates the need for the developed method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C90",
+      "C91"
+    ],
+    "result": "circFL-seq is presented as an effective, affordable, high-throughput method for full-length circRNA sequencing that can be scaled using PromethION with multiplexed libraries to reduce costs to approximately twice that of RNA-seq. The method enables screening of functional circRNAs at the omics scale with applications in alternative splicing analysis and fusion circRNA detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C90-C91 summarize the method's capabilities and potential applications. The quantitative results (C4-C5), comparative advantages (C6), validation concordance (C7), and demonstrated capabilities (C8) support these conclusions. The cost projection (C90) is based on the PromethION application but represents a forward-looking claim. The overall assessment (C91) is reasonable given the demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Intron retention (IR) events increased circRNA length by an average of 289 nt (from 363 to 652 nt), which may influence cellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 provides quantitative data on IR event effects on length, which is supported by the analysis. However, C36's speculation about cellular localization effects is based only on a citation and not directly tested in this study. The length increase is documented, but the functional consequence remains speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Fusion circRNAs (f-circRNAs) play important roles in cancer pathogenesis and are promising biomarkers for liquid biopsy. Current validation methods using divergent primers on known fusion junctions are inefficient and may miss f-circRNAs from unknown fusions. circFL-seq demonstrated high-throughput f-circRNA identification capability in cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 establish the importance of f-circRNA detection and circFL-seq's advantage. The biological importance (C86-C87) is supported by citations, the limitation of current methods (C88) is a reasonable critique, and the demonstrated capability (C89) is supported by the experimental results in claims C68-C74. This represents an important application of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The unique ligation step in isoCirc may introduce false positives by ligating cDNA from residual linear RNA or truncated circRNA cDNA, which is difficult to computationally remove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is a speculation about a potential limitation of isoCirc. While the concern is theoretically reasonable given the ligation-based approach, this claim is not directly tested or demonstrated in the manuscript. The evidence for higher false positive rates in isoCirc (C53) provides some indirect support, but the specific mechanism proposed remains speculative.",
+    "result_type": "MINOR"
+  }
+]

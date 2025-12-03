@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "OpenNeuro is a BRAIN Initiative data archive launched in June 2017 that enables FAIR-compliant sharing of multiple neuroimaging modalities (MRI, EEG, MEG, PET) using the BIDS standard, with all code available as open source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C9-C11, C78, C80-C81 provide consistent descriptive information about OpenNeuro's identity, launch date, supported modalities, use of BIDS, and open-source nature. These are straightforward factual statements about the platform's basic characteristics that are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "As of October 9, 2021, OpenNeuro contains 604 datasets with data from 20,989 participants, showing sustained growth since inception. The repository is dominated by human subjects (95%) and MRI data, with a median dataset size of 23 subjects and 31 datasets exceeding 100 subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C82-C86, C89-C91 present quantitative data about repository contents with specific numbers and dates. Figure 2 and Table 1 are referenced to support these statistics. The data are internally consistent and represent straightforward descriptive statistics of the archive's contents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "OpenNeuro data have been reused in 165 publications (112 journal/conference papers, 42 preprints, 11 other), with 111 datasets reused at least once. These reuse publications have accumulated 1,329 citations, with the most popular dataset appearing in 28 reuses and the most cited reuse having over 500 citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C98-C102, C105-C106 present quantitative data on data reuse derived from systematic Google Scholar searches and manual curation. The methodology is described in C156-C157, which acknowledges this is an underestimate. The numbers are specific and internally consistent, though the search methodology has known limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The reused data represent approximately 21,000 subject visits, which at an estimated cost of $1,000/session translates to nearly $21 million in data reuse value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 present a cost-benefit calculation based on an estimated scanning cost from a cited source (Milham et al., 2018). However, the $1,000/session estimate may not apply uniformly across all modalities and study types in OpenNeuro. The calculation assumes all reused sessions would have required new data collection, which may overestimate value. The methodology for this calculation lacks sufficient detail for verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "OpenNeuro evolved from OpenfMRI, which used ad hoc custom data organization requiring substantial manual curation. This experience motivated development of the BIDS standard through community engagement, which has become a highly successful standard for neuroimaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C27-C34 provide a coherent narrative about the evolution from OpenfMRI to OpenNeuro and the motivation for BIDS development. The authors describe their direct experience with OpenfMRI's limitations (C29-C31) and the community-driven process to create BIDS (C33). Citation support is provided for BIDS (C11, C33-C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "BIDS defines schemas for file/folder organization and metadata, was designed to be easy to adopt, is extensible through community proposals, and has been remarkably successful with tens of thousands of datasets now in the format. All OpenNeuro data must pass BIDS validation at upload, ensuring compliance and maximizing compatibility while minimizing misinterpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42, C44-C47 describe BIDS features and its relationship to OpenNeuro. The validation requirement (C41-C42) is a verifiable technical feature. The claim of 'tens of thousands of datasets' (C44) is supported by the broader BIDS ecosystem beyond OpenNeuro. The benefits described (C45-C46) are logical consequences of standardization, though 'effectively minimizes' is somewhat qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "OpenNeuro implements FAIR principles through: (Findable) dataset metadata, DOIs, ElasticSearch indexing, and schema.org exposure; (Accessible) multiple access methods via standard protocols without authentication; (Interoperable) BIDS standard compliance; (Reusable) CC0 licensing and community standards compliance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 systematically describe how OpenNeuro implements each FAIR principle. These are verifiable technical features of the platform (DOIs, APIs, access methods, licensing). The claims are specific and internally consistent, describing concrete implementation details rather than aspirational goals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "OpenNeuro provides data versioning through DataLad-based 'snapshots' implemented as git tags, allowing unambiguous reporting of data versions and enabling dataset mirrors on GitHub and datasets.datalad.org.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C167-C169 describe the technical implementation of versioning using DataLad, git, and git-annex. These are verifiable technical features with specific implementation details. The use of DataLad is supported by citations (C61, C167) and the git tag implementation (C168) is a concrete technical detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C57"
+    ],
+    "result": "OpenNeuro releases data under CC0 Public Domain Dedication by default, placing no legal restrictions on use, though users are expected to follow community norms for citation. This policy maximizes accessibility to researchers and citizen-scientists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C57 describe OpenNeuro's licensing policy consistently. The CC0 license is a verifiable legal instrument. The expectation of citation (C22) acknowledges community norms without legal enforcement. The rationale (C23) is a stated motivation that is logically consistent with the policy choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "To address re-identification risks from facial reconstruction in MRI data, OpenNeuro requires facial feature removal (defacing) prior to upload, with exceptions for explicit permission. Currently enforced by human curation, with plans for automated detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 describe privacy protection measures with citation support for the re-identification risk (C67-C68) and defacing necessity (C69). The requirement (C70), exceptions (C71), and current enforcement (C72) are policy statements. The future automation plan (C73) is appropriately marked as speculation with citation support for the tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Martins et al. (2021) used OpenNeuro structural MRI data from multiple datasets to identify anatomical patterns common to pain syndromes but distinct from depression, demonstrating how OpenNeuro enables combining smaller datasets to overcome confounds and increase statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe a specific reuse study with citation support (C107-C108). The findings are attributed to the cited work. The interpretation of benefits (C109) is a reasonable inference from this example, though it represents one case study rather than systematic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Esteban et al. (2019) used 40 OpenNeuro datasets to iteratively assess and improve fMRIPrep's robustness. Without OpenNeuro and BIDS, assembling such diverse datasets would require immense effort, whereas OpenNeuro enables automatic download within hours with data ready for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 describe a specific reuse study with citation support. The comparison to alternative approaches (C112-C113) is a reasonable inference about the efficiency gains from standardization, though 'immense efforts' and 'within a number of hours' are somewhat qualitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Bowring et al. (2019) used OpenNeuro datasets to examine how different analysis software impacts fMRI results, finding substantial similarity in unthresholded maps but substantial discordance in thresholded maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 describe a specific reuse study with citation support. The findings are attributed to the cited work and represent a straightforward description of that study's methodology and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Dadi et al. (2020) developed functional atlases using 27 OpenNeuro datasets, with the breadth of datasets ensuring atlas features were not driven by any particular dataset or task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 describe a specific reuse study with citation support. The benefit described (C118) is a reasonable inference about how dataset diversity supports generalizability, though it relies on the cited authors' interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "A key lesson is that community-driven data organization standards are essential for effective sharing. BIDS has enabled easy sharing and reuse, benefits internal lab data management, but conversion to BIDS remains challenging for many researchers, requiring continued tool development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 present lessons learned from the authors' experience. These are subjective assessments based on their observations (C119, C122) rather than systematic evidence. However, they are presented as opinions/lessons rather than empirical findings, which is appropriate for a discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Data sharing success requires an ecosystem of projects. While maximally open sharing is most effective, some researchers face ethical/regulatory barriers to using OpenNeuro, necessitating diverse sharing resources with varying policies to support the broadest possible data sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 present a perspective on the data sharing ecosystem. The recognition of limitations (C127) and need for diversity (C128) is pragmatic and supported by citation (C128). The belief that open sharing is most effective (C126) is stated as opinion rather than proven fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Long-term sustainability is a continual challenge for investigator-initiated repositories due to substantial ongoing costs and typical 3-year federal funding cycles. OpenNeuro benefits from BRAIN Initiative 5-year renewable grants, Amazon Public Datasets support, and is developing a backup plan with Stanford Digital Repository.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 describe sustainability challenges and solutions. The challenges (C131-C133) are general observations supported by citation (C131). The specific funding sources and partnerships (C134-C138) are verifiable facts about OpenNeuro's support structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Future plans include: enhanced metadata linked to standard ontologies for more powerful queries; enabling sharing of derivative/preprocessed data to enhance reuse; and adapting DANDI Hub infrastructure for direct Jupyter notebook access to data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 describe future development plans with appropriate citation support (C139, C142). These are clearly stated as plans/intentions rather than completed work. The expected benefits (C140, C142) are reasonable projections, though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "OpenNeuro data are currently heavily skewed toward MRI (particularly fMRI) due to OpenfMRI seeding and BIDS's MRI-centric origins. However, there has been rapid growth in non-MRI modalities, with over 60 EEG datasets deposited since the 2019 BIDS-EEG standard publication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 describe the current composition and recent trends. C144 is supported by Table 1 data. C145 provides a specific quantitative statement about EEG growth with citation support for the BIDS-EEG standard timing. The claims are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "OpenNeuro contains datasets with notable breadth (BOLD5000: 5000 images; Individual Brain Charting: 24 tasks; Multidomain Task Battery: 26 tasks) and depth (MyConnectome: >100 sessions/individual; Midnight Scan Club: 10 individuals with extensive data).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 describe specific notable datasets with citation support for each. These are factual descriptions of dataset characteristics from published work. The claims illustrate the diversity of data types in OpenNeuro.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "OpenNeuro has partnered with Brainlife.io for cloud-based analysis. Over 400 OpenNeuro datasets are cached on Brainlife, with more than 700 analyses performed in the first 6 months of 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C162 describe the Brainlife partnership with specific quantitative data about cached datasets and usage. These are verifiable facts about the integration between platforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "From May 2020 through April 2021, OpenNeuro distributed 406 terabytes of data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 provides a specific quantitative measure of data distribution over a defined time period. This is a straightforward usage statistic that would be derived from server logs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "OpenNeuro uses a cloud-based containerized architecture built in JavaScript and Python with MongoDB for data storage, hosted on AWS using Kubernetes. Datasets are stored as DataLad repositories on ZFS pools backed by AWS Elastic Block Store.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 describe the technical infrastructure with specific implementation details. These are verifiable technical specifications that are internally consistent and represent standard cloud architecture patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Reuse analyses used Google Scholar searches for 'OpenNeuro' with manual curation, representing underestimates since papers citing 'OpenfMRI' were excluded. Dataset size analyses used DataLad and PyBIDS to obtain metadata for 502 datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 describe the methods for content analyses. The acknowledgment of limitations (C157) demonstrates appropriate methodological transparency. The tools used (C158) are cited and appropriate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Data sharing is essential for reproducibility and maximizing research impact. The FAIR principles formalize requirements for useful data sharing, necessitating common organization standards. OpenNeuro's growth and impact demonstrate the viability of minimally restrictive sharing and the importance of standards like BIDS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8, C146-C150 present general principles about data sharing supported by citation (C7) and logical reasoning. The conclusions about OpenNeuro's demonstration of these principles (C149-C150) are reasonable inferences from the data presented in the manuscript, though somewhat qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Researchers are ethically bound to minimize risks and maximize benefits to participants, requiring data sharing unless risks outweigh benefits. Deidentification addresses privacy risks, with HIPAA providing safe harbor through removal of 18 identifiers. Informed consent should address public sharing and future confidentiality risks. OpenNeuro recommends Open Brain Consent forms, though GDPR data cannot currently be shared due to incompatible data use agreement requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C74-C77 describe ethical and regulatory frameworks with citation support (C63-C64, C75-C76). The HIPAA requirements (C66) are factual. The limitation regarding GDPR (C77) is an honest acknowledgment of current constraints. The recommendations (C74-C75) are appropriately framed as guidance.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "Selfee is a self-supervised CNN that processes video frames end-to-end by stacking three consecutive frames into 'live-frames' and training a SimSiam-style network with data augmentation to extract discriminative, comprehensive representations invariant to shooting conditions, translation, and rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-23, C26-28, C33-34, C36-37 collectively describe the Selfee architecture and training approach with clear methodological details, figures, and experimental validation. The live-frame construction, network architecture (ResNet-50 backbone with MLP projector), and training strategy are well-documented with supporting figures (Figure 1A-B, Figure 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Selfee extracts features that align with human perception of fly courtship behaviors, achieving 72.4% F1 score in k-NN classification and capturing fine-grained features like wing angles and spatial positioning that separate behavioral subtypes on t-SNE visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-44 are supported by Figure 3A-C showing t-SNE clustering of human-annotated behaviors, quantitative classification metrics (72.4% F1 score comparable to human inter-rater agreement of ~70%), and supplementary figures demonstrating feature separation by wing angle and distance. The comparison to human performance (C44) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C98"
+    ],
+    "result": "Selfee features are comparably discriminative to animal-tracking derived features (FlyTracker, JAABA) while requiring no manual key point definition or feature engineering, achieving best performance by Pearson's correlation (0.774) and F1 score (0.629) in comparative evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-48, C98 are supported by Table 1 showing quantitative comparisons across multiple feature types and evaluation metrics. The ablation demonstrates that pure distance-based features can be discriminative but lack abstraction (C47), while Selfee balances discrimination with interpretability without requiring careful feature engineering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C55"
+    ],
+    "result": "Selfee generalizes to mice mating behaviors, achieving 67.4% F1 score with LightGBM classifier when incorporating temporal features, with live-frames proving more discriminative than single frames for highly dynamic behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-50, C55 are supported by Figure 3D-F showing t-SNE separation of five behavior types and quantitative classification results. Table 3 provides ablation evidence that live-frames outperform single frames for mice behaviors. The need for temporal aggregation (81-frame windows) and ensemble methods suggests the task is challenging but the approach is effective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Architectural modifications including group discriminators (CLD loss) and Turbo augmentation significantly improve Selfee performance, preventing mode collapse and enhancing feature discrimination as demonstrated by ablation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-54 are supported by ablation studies in Figure 3\u2014figure supplement 5 and Tables 2-3. The CLD loss prevents catastrophic mode collapse (collapse level near 1.0 without it vs. <0.01 with it), and Turbo augmentation improves F1 scores. The mechanistic explanation for CLD addressing long-tail effects and mode collapse is reasonable given the imbalanced nature of behavioral data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Selfee enables frame-level anomaly detection that identifies ultra-fast (<0.25s) behaviors in CCHa2-R-RB>Kir2.1 flies that are difficult for human observers to detect, using cosine distance with intra-group score correction to reduce false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56-62 are supported by Figure 4A-D showing the anomaly detection methodology and results. The identification of brief tussle behavior in CCHa2-R-RB>Kir2.1 flies (C59-61) is documented with temporal dynamics (Figure 4D) showing sub-second duration. The IAS correction (C58) addresses a methodological challenge with false positives, though the need for this correction suggests the method requires careful tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Selfee discovered that Trh knockout flies exhibit reduced social distance and defensive behavior, validating the anomaly detection with follow-up behavioral assays showing significantly lower kicking rates and shorter inter-fly distances, representing a novel behavioral phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-71 are supported by Figure 4B, E-J showing anomaly detection results and validation experiments. The statistical significance of kicking behavior (p=0.0034, C68) and social distances (C69) provides strong validation. However, the novelty claim (C67) relies on authors' knowledge and may require more thorough literature review. The biological interpretation connecting serotonin to social distance is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C31",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "AR-HMM analysis of Selfee features successfully distinguishes control from CIS-treated mice in open field tests, identifying two behavioral modules with significantly different usage patterns related to wall proximity, consistent with previous observations of anxiety-like behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30-31, C72-78 are supported by Figure 5A-D showing AR-HMM methodology and results. The statistical significance of module usage differences (p=0.00065 and p=0.015 with correction, C75) and consistency with prior work (Ramirez et al., 2015, C76, C78) strengthen the findings. The interpretation linking modules to spatial behavior is validated by tracking data (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "DTW analysis of Selfee features captures long-term behavioral dynamics, revealing delayed courtship in NorpA mutant flies with prolonged latency, demonstrating the method can detect temporal differences beyond single-frame postures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C79-84 are supported by Figure 5E-G showing DTW methodology and results. The prolonged courtship latency in NorpA mutants (p=0.0495, C81) is consistent with prior findings (Markow and Manning, 1980), and the DTW curve below diagonal (C82) correctly indicates delay. The application of DTW to image-derived features rather than traditional numerical measures is novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The complete Selfee pipeline (preprocessing, feature extraction, AR-HMM, DTW, anomaly detection) can evaluate animal behaviors in a purely unsupervised manner without human-defined behaviors or key points, as demonstrated on mice OFT data where results from Selfee embeddings strongly match position-based analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-91 are supported by Figure 6 showing the complete pipeline demonstration. The consistency between Selfee embeddings and position-based DTW (C89, Figure 6C) validates the approach. However, the very low anomaly rate (12 frames, <0.01%, C85) classified as false positives (C86) suggests limited sensitivity for this particular comparison, though this doesn't invalidate the overall pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Selfee achieves zero-shot domain transfer, successfully applying models trained on mice mating behavior to single-animal OFT and achieving 49.6% F1 score on rat social behaviors without retraining, demonstrating cross-species and cross-paradigm generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-113 are supported by experimental results showing successful application to OFT (C110-111) and rat behaviors (C112, Figure 3\u2014figure supplement 4). The 49.6% F1 score for rats is modest but demonstrates meaningful transfer learning. This is a significant practical advantage, though the performance degradation suggests domain-specific training remains beneficial for optimal results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Selfee can be trained on a single RTX 3090 GPU in 8 hours with batch size 256 and accepts standard 2D grayscale video, making it accessible to biology laboratories without specialized hardware like depth cameras or multi-view arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C120-122 provide specific quantitative details about computational requirements that are verifiable from the methods section. The 8-hour training time and 800 fps inference speed represent significant practical advantages over methods requiring 8+ GPUs or TPUs (C107). The accessibility claim (C122) is a reasonable inference from these specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Selfee complements pose estimation methods by handling closely interacting animals where DeepLabCut, FlyTracker, and SLEAP show tracking errors, though Selfee features are less explainable than key points and benefit from animal tracking for interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C99-106 are supported by Figure 1\u2014figure supplement 3 showing tracking failures during close interactions for all three pose estimation methods tested. The complementary nature is well-argued: Selfee handles occlusions (C104) but lacks explainability (C105). The acknowledgment of limitations (C105) and potential for integration (C106) demonstrates balanced assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Selfee has limitations including limited motion capture from 3-frame live-frames, vulnerability to background textures requiring preprocessing in some cases, and potential mode-split from batch-level discrimination without negative samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-117 honestly acknowledge limitations with supporting evidence (Figure 1\u2014figure supplement 1 for texture effects, C116). These are reasonable limitations given the architectural choices. The mode-split issue (C117) is a known challenge in self-supervised learning without negative samples, though the CLD loss partially addresses this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C13"
+    ],
+    "result": "Prior to this work, no end-to-end unsupervised neural network extracted comprehensive features directly from social behavior video frames, and pose estimation methods had not been demonstrated on multiple same-colored animals with intensive interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2 and C13 make assertions about gaps in the literature based on authors' knowledge. While the authors demonstrate their method addresses these gaps, comprehensive verification of these negative claims would require exhaustive literature review. The claims are plausible given the cited limitations of existing methods, but cannot be definitively verified from the manuscript alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Self-supervised learning methods extract features by comparing augmented images, avoiding human bias, achieving invariance to size/orientation/illumination without preprocessing, and producing inherently discriminative features even without negative samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-20 accurately describe properties of self-supervised learning supported by multiple citations (Caron et al., 2020; Chen et al., 2020; Grill et al., 2020; He et al., 2020; Wu et al., 2018). These are well-established principles in the field. However, the claim of 'completely avoiding human biases' (C17) is somewhat overstated, as architectural choices and augmentation strategies still involve human decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Siamese CNNs with cosine similarity provide a rational framework for end-to-end feature extraction that can be flexibly combined with various downstream analyses including t-SNE, k-NN, AR-HMM, and DTW.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-96 are supported by citations (C92) and demonstrated through multiple successful applications in the results. The versatility claim (C95-96) is validated by the diverse downstream analyses presented. The assertions about cosine similarity (C93) and end-to-end training (C94) are standard properties of these architectures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Future improvements could include advanced self-supervised methods like DINO with visual transformers to separate objects from background, extract more explainable representations, and achieve robustness against distractive textures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-119 are speculative suggestions for future work supported by citations (Caron et al., 2021; Naseer et al., 2021). While these are reasonable directions based on recent advances in computer vision, they represent untested hypotheses rather than demonstrated results. The claims are appropriately framed as future possibilities rather than current achievements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Selfee was validated on three model species (flies, mice, rats) with results consistent with manual annotations, animal tracking methods, and biological experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-25 are supported by extensive experimental validation throughout the results section including comparisons to human annotations (Figure 3), animal tracking (Table 1), and biological validation experiments (Figure 4G-J). The multi-species validation strengthens generalizability claims.",
+    "result_type": "MAJOR"
+  }
+]

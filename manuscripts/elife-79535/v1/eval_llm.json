@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C63"
+    ],
+    "result": "Among five tested ANN architectures (linear, nonlinear, CNN-LSTM, convolutional, and deep neural network), only the CNN-LSTM architecture could accurately predict both subthreshold membrane potential dynamics and action potential firing in point neuron models. The CNN-LSTM achieved low error rates for subthreshold predictions and was the only architecture that did not converge to the mean when predicting spiking activity, explaining 78.9\u00b16.7% of variance compared to <5% for other architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C63 provide quantitative evidence from systematic comparisons showing that CNN-LSTM uniquely captures the full dynamic range of neuronal activity. The error rates, variance explained metrics, and comparative performance across architectures are well-documented with specific numerical values and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The CNN-LSTM correctly learned action potential thresholding with high temporal precision (83.94\u00b116.89% precision, 90.94\u00b112.13% recall, 0.24\u00b10.79 ms temporal shift) and maintained stable predictions over extended 25-second simulations without significant deviation from ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide quantitative metrics demonstrating both the accuracy of spike timing and long-term stability of predictions. The precision/recall metrics and temporal shift measurements provide strong evidence for the model's ability to learn thresholding behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The CNN-LSTM generalized to novel input conditions including variable quantal sizes (linear I/V relationship with Pearson's r=0.99), temporal summation patterns, and variable excitation-inhibition ratios. The model correctly reproduced divisive normalization of firing rates (best fit by logistic function, AIC: 905.87\u00b1200.92 vs 983.3\u00b1231.66 for linear models) across different synaptic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 demonstrate generalization through multiple independent tests with quantitative metrics. The correlation coefficients, AIC comparisons, and R\u00b2 values provide strong statistical support for the model's ability to handle previously unobserved conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The CNN-LSTM could be rapidly adapted to account for biophysical alterations through partial retraining. When K+ conductance voltage dependence was shifted \u00b110 mV, the partially retrained models showed good agreement with NEURON simulations with similar deviations from control conditions in both subthreshold regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide quantitative evidence that partial retraining (freezing lower layers, retraining upper layers for 10 min) successfully adapts the model to biophysical changes. The specific deviation measurements across different voltage regimes support the claim of rapid adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The CNN-LSTM accurately predicted ionic current dynamics (IK and INa) with accuracy similar to membrane potential predictions (Pearson's r=0.999 and 0.99 for fitting; variance explained: 15.1\u00b111.6% and 82\u00b16.1%; prediction correlation: 0.85\u00b10.08 and 0.81\u00b10.1 for IK and INa respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 provides comprehensive quantitative metrics demonstrating that the CNN-LSTM can predict multiple features beyond membrane potential. The correlation coefficients and variance explained values are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The CNN-LSTM accurately reproduced nonlinear NMDA receptor dynamics including voltage-dependent response amplitudes, coincidence detection within a \u00b112 ms time window, and firing rate modulation across different NMDA receptor contents (12.42\u00b11.36 Hz for CNN-LSTM vs 12.39\u00b12.3 Hz for NEURON at 100% NMDA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 demonstrate that the CNN-LSTM captures complex nonlinear synaptic mechanisms. The quantitative agreement between CNN-LSTM and NEURON models across multiple NMDA conditions, with specific firing rate measurements, provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The CNN-LSTM accurately modeled multicompartmental L5 pyramidal cells with near-perfect fitting (Pearson's r=0.999) and adequate continuous prediction (68.28\u00b118.97% precision, 66.52\u00b125.37% recall). Analysis of convolutional layer weights revealed that the model assigned independent selectivity filters to each synapse with no bias against distal inputs (Pearson's r=0.06 between weight and somatic amplitude) and correctly distinguished excitatory from inhibitory inputs at the first layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide comprehensive evidence for multicompartmental modeling capability through both performance metrics and mechanistic analysis of learned representations. The weight analysis demonstrates that the model appropriately processes spatially distributed synaptic inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "ANNs were successfully fit to additional cortical pyramidal cell types (layer 2/3, layer 4, and layer 6) from a public database with adequate performance (variance explained: 94.2\u00b114.2%, 74.5\u00b123.5%, 67\u00b114.5%; precision: 86.6\u00b123.1%, 70.1\u00b125.8%, 63.2\u00b133.2%; recall: 90.7\u00b118%, 74.5\u00b125.8%, 63.5\u00b132.7% respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 demonstrates generalizability across cell types with quantitative performance metrics. However, the performance is notably lower for layer 4 and layer 6 cells compared to layer 2/3, suggesting some limitations in the approach's universality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A custom Izhikevich-based ANN layer could reproduce diverse firing patterns and accurately capture input-output characteristics of a fast-spiking NEURON model (Pearson's r=0.982 for current injection, r=0.999 for synaptic inputs with 96.9\u00b10.4% variance explained).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide quantitative evidence that the custom layer approach successfully models firing patterns. The high correlation coefficients and variance explained metrics support the claim, though this represents a hybrid approach rather than pure machine learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "For point neuron simulations, CNN-LSTM showed superior scaling compared to NEURON. While single-cell NEURON simulations were faster without initialization (0.65\u00b10.03s vs 0.72\u00b10.04s for CNN-LSTM on GPU), CNN-LSTM became faster at 50 cells (0.71\u00b10.05s vs 7.45\u00b10.37s) and dramatically faster at 5000 cells (2.97\u00b10.02ms vs 407.2\u00b19ms), with NEURON showing ~148\u00d7 slowdown while CNN-LSTM showed only 4\u00d7 slowdown from single-cell baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide detailed runtime comparisons across different scales with specific measurements. The scaling behavior is well-documented and demonstrates the key computational advantage of the ANN approach for large-scale simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "For detailed L5 pyramidal cell models, CNN-LSTM showed dramatic speedup: single-cell simulations were ~182\u00d7 faster (1.02\u00b10.05s vs 185.5\u00b13.7s without initialization), and the advantage increased to 4-5 orders of magnitude for mid-sized networks (50 cells: 1.19\u00b10.08s vs 5.8\u00d710\u00b3s; 5000 cells: 11.99s vs 6.28\u00d710\u2075s extrapolated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide quantitative runtime comparisons for complex multicompartmental models. The measurements are well-documented, though the 5000-cell NEURON time appears to be extrapolated rather than directly measured, which should be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In a Rett syndrome L5 microcircuit model (150 cells), CNN-LSTM was >9300\u00d7 faster than NEURON (21.153\u00b10.26s vs 54.69hr). Parameter space mapping revealed that both excitatory drive and recurrent connectivity significantly influenced network instability (p<0.001) and stimulus response, while inhibition had negligible effects. Reduced recurrent connectivity observed in Mecp2-null mice (7.8% and 5.3%) yielded more stable networks (54% and 64% stable) than wild-type conditions (34% stable), suggesting reduced connectivity is not causal to seizure generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 demonstrate the practical application of the ANN approach to disease modeling with comprehensive parameter space exploration. The statistical tests (p-values, sample sizes) and quantitative stability measurements support the conclusions, though the interpretation regarding seizure causality (C62) is appropriately framed as a model-based suggestion rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The runtime acceleration is attributed to the parallelized graph-based ANN approach, where multiple cells of the same type are handled on a single computational graph rather than requiring linearly increasing numbers of equations as in traditional approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 provides a mechanistic explanation for the observed speedup that is consistent with the runtime data (C49-C53) and the architectural differences between ANN and traditional approaches. The explanation is logical and supported by the scaling behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The authors claim their CNN-LSTM architecture represents the first ANN implementation that can serve as a viable alternative for biophysically and morphologically realistic neurons in network model environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 makes a priority claim about being 'the first' viable ANN implementation. While the demonstrated capabilities (C5, C6, C39-C44) support that this is a viable implementation, the claim of being 'first' requires comprehensive knowledge of all prior work. The authors cite Beniaguev et al., 2021 as recent related work but claim their approach is the first suitable for network environments. This priority claim is difficult to definitively verify without exhaustive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The CNN-LSTM approach has limitations including training times up to 24 hours and 1 ms temporal discretization that hinders implementation of fast biological phenomena like gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 acknowledge practical limitations of the approach. These are straightforward statements about training time (C67, referenced to Methods) and temporal resolution constraints (C68), which are reasonable given the 1 kHz sampling rate used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes the context and motivation for the work, describing the computational challenges of traditional neuroscience modeling approaches and the potential of machine learning methods. These claims summarize established knowledge about brain modeling, computational limitations, and prior ANN applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C19 provide background context supported by appropriate citations. These are primarily literature review claims establishing the problem space and are well-supported by the cited references. However, C19's claim that 'current ANN solutions are still unfit' may be somewhat dated given the manuscript's own contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Background on Rett syndrome establishes that it is caused by MeCP2 mutations, occurs in ~1:10,000 births, and involves multiple cellular and network alterations including changes in synaptic transmission, morphology, connectivity (39-50% reduction in excitatory synapses), and that excitatory-cell-targeted mutations lead to seizures while inhibitory-cell-targeted mutations do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C70-C72 provide established background on Rett syndrome supported by multiple citations. These claims appropriately summarize prior knowledge that motivates the disease modeling application, though they are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "ANNs have the advantage of not requiring hard-coded rules for neuronal signal processing and can derive main principles of input-output processing while neglecting unimpactful processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe general properties of ANNs supported by citations. These are accurate characterizations of machine learning approaches, though they represent general knowledge rather than specific findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The authors suggest that excitatory synaptic alterations in Rett syndrome affect both general network responses and network stability, which may serve as substrates for cognitive dysfunction and seizures respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is explicitly framed as a suggestion ('our results suggest') and includes speculative language ('may serve as substrates'). While the modeling results (C58-C62) support that excitatory alterations affect network behavior, the connection to specific clinical symptoms (cognitive dysfunction and seizures) is inferential and would require experimental validation. The claim appropriately uses cautious language but represents speculation beyond what the model directly demonstrates.",
+    "result_type": "MAJOR"
+  }
+]

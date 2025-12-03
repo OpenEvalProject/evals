@@ -1,0 +1,1574 @@
+{
+  "submission": {
+    "id": "057ea598-6f04-47a5-8b01-27eb270fc391",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:08:38.253455Z",
+    "updated_at": "2025-12-03T10:08:38.253455Z"
+  },
+  "content": [
+    {
+      "id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "submission_id": "057ea598-6f04-47a5-8b01-27eb270fc391",
+      "content_type": "manuscript",
+      "content_text": "# Recapitulating human cardio-pulmonary co-development using simultaneous multilineage differentiation of pluripotent stem cells\n\n## Authors\n\n- Wai Hoe Ng<sup>1</sup> ([ORCID: 0000-0002-6876-6542](https://orcid.org/0000-0002-6876-6542))\n- Elizabeth K Johnston<sup>1</sup>\n- Jun Jie Tan<sup>2</sup>\n- Jacqueline M Bliley<sup>1</sup>\n- Adam W Feinberg<sup>1</sup>\n- Donna B Stolz<sup>4</sup>\n- Ming Sun<sup>4</sup>\n- Piyumi Wijesekara<sup>1</sup>\n- Finn Hawkins<sup>5</sup>\n- Darrell N Kotton<sup>5</sup> ([ORCID: 0000-0002-9604-8476](https://orcid.org/0000-0002-9604-8476))\n- Xi Ren<sup>1</sup> ([ORCID: 0000-0003-3187-1311](https://orcid.org/0000-0003-3187-1311)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))\n2. Advanced Medical and Dental Institute, Universiti Sains Malaysia Penang Malaysia ([ROR:02rgb2k63](https://ror.org/02rgb2k63))\n3. Department of Materials Science and Engineering, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))\n4. Center for Biologic Imaging, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n5. Center for Regenerative Medicine of Boston University and Boston Medical Center Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe extensive crosstalk between the developing heart and lung is critical to their proper morphogenesis and maturation. However, there remains a lack of models that investigate the critical cardio-pulmonary mutual interaction during human embryogenesis. Here, we reported a novel stepwise strategy for directing the simultaneous induction of both mesoderm-derived cardiac and endoderm-derived lung epithelial lineages within a single differentiation of human-induced pluripotent stem cells (hiPSCs) via temporal specific tuning of WNT and nodal signaling in the absence of exogenous growth factors. Using 3D suspension culture, we established concentric cardio-pulmonary micro-Tissues (\u03bcTs), and expedited alveolar maturation in the presence of cardiac accompaniment. Upon withdrawal of WNT agonist, the cardiac and pulmonary components within each dual-lineage \u03bcT effectively segregated from each other with concurrent initiation of cardiac contraction. We expect that our multilineage differentiation model will offer an experimentally tractable system for investigating human cardio-pulmonary interaction and tissue boundary formation during embryogenesis.\n\n## Introduction\n\nHuman embryogenesis is a highly orchestrated process that requires delicate coordination between organs that originate from different germ layers. As the two main organs within the chest cavity, the mesoderm-derived heart and endoderm-derived lung partake in have extensive mutual interaction that are essential for their proper morphogenesis (Peng et al., 2013; Hoffmann et al., 2009; Arora et al., 2012; Steimle, 2018). During mouse embryonic development, WNT derived from the second heart field induces specification of pulmonary endoderm, which in turn secretes SHH that signals back to the heart and regulates proper atrial septation (Steimle, 2018; Zhou, 2017; Hoffmann et al., 2009). This inter-lineage crosstalk is partly mediated by the multipotent mesodermal progenitors located between the developing heart and lung, which have the potential for lineage contribution to pulmonary endothelium, pulmonary smooth muscle and cardiomyocytes (Peng et al., 2013). However, the extent of translation of findings derived from rodent models to the understanding of developmental interplay between human cardio-pulmonary systems remains unclear. There is, therefore, a critical need for experimentally tractable systems for investigating human cardio-pulmonary co-development during organogenesis.\n\nMuch work has been done for directed differentiation of hiPSCs into either cardiomyocytes (Lian et al., 2012; Mummery et al., 2012; Burridge et al., 2014; Lian et al., 2015; Lee et al., 2017; Kattman et al., 2011), or pulmonary epithelium (Chen et al., 2017; Huang et al., 2013; Jacob et al., 2017; Dye et al., 2015; Gotoh et al., 2014; Wong et al., 2012), both of which often utilize stepwise differentiation strategies that recapitulate key developmental signaling events. To recapitulate cardiogenesis, hiPSCs were sequentially specified into mesoderm, cardiac mesoderm, and then NKX2.5+ cardiac progenitors (Lian et al., 2012; Mummery et al., 2012; Burridge et al., 2014; Lian et al., 2015; Lee et al., 2017; Kattman et al., 2011; Laflamme et al., 2007). For pulmonary induction, hiPSCs went through stages corresponding to definitive endoderm and anterior foregut endoderm, and then became NKX2.1+ lung epithelial progenitors (Chen et al., 2017; Huang et al., 2013; Jacob et al., 2017; Dye et al., 2015; Gotoh et al., 2014; Wong et al., 2012; D\u2019Amour et al., 2005; Longmire et al., 2012). Despite the significant contributions of these models make to the mechanistic understanding of human heart and lung organogenesis, they generally focus on one organ parenchyma at a time. It remains challenging to model and investigate multi-organ co-development within a single differentiation of hiPSCs, especially when the organs of interest are derived from different germ layers, as is the case for the heart and lung.\n\nComparison of existing protocols for single-lineage cardiac and pulmonary differentiation from hiPSCs indicates shared regulators despite their distinct germ-layer origin. Firstly, both endodermal and mesodermal specification is facilitated by the inhibition of insulin and phosphoinositide 3-kinase signaling (Lian et al., 2012; Lian et al., 2013; Mou et al., 2012), and can be induced by a similar set of paracrine factors, including WNT, BMP, and TGF-\u03b2 (Kattman et al., 2011; D\u2019Amour et al., 2005; Loh, 2014). It is the quantitative combination of these signaling that determines endoderm versus mesoderm bifurcation (Kattman et al., 2011; Loh, 2014; Kim, 2015). This is consistent with the shared primitive streak origin of both germ layers during gastrulation (Levak-Svajger and Svajger, 1974; Lawson et al., 1991; Tam and Beddington, 1987). Secondly, WNT inhibition not only facilitates the transition from definitive endoderm to anterior foregut endoderm (Loh, 2014; Spence et al., 2011), but it also promotes cardiac mesoderm emergence (Lian et al., 2012; Willems et al., 2011; Wang et al., 2011; Ren et al., 2011; Tran, 2009). Lastly, retinoic acid (RA) signaling is required for the induction and maturation of both cardiac and pulmonary progenitors (Huang et al., 2013; Jacob et al., 2017; Mou et al., 2012; Chen, 2007; McCauley et al., 2017). These common paracrine regulation of paralleled cardiac and pulmonary specification is consistent with their close spatial coordinates within the embryonic body planning, as demonstrated by shared HOX genes expression and functional requirement (Lufkin et al., 1991; Makki and Capecchi, 2012; Chisaka and Capecchi, 1991).\n\nIn this study, we described a stepwise, growth-factor-free protocol for simultaneous induction of cardiac and pulmonary progenitors from a single culture of hiPSCs. This is accomplished by initial co-induction of mesoderm and definitive endoderm mixture, followed by their concurrent specification into cardiac (NKX2.5+) and lung (NKX2.1+) progenitors, respectively, using the same sets of small molecule cocktails modulating WNT, nodal and TGF-\u03b2 signaling in a temporal specific manner. Using 3D suspension culture with continuing WNT activation, we engineered pulmonary-centered, cardio-pulmonary micro-Tissues (\u03bcTs), and demonstrated the accompanying cardiac lineage as an essential cellular niche that promoted effective alveolar maturation. Finally, following the withdrawal of WNT agonist, each concentric cardio-pulmonary \u03bcT reorganized and ultimately segregated into cardiac-only and pulmonary-only \u03bcTs. This work therefore offers an effective hiPSC-based model for investigating cardio-pulmonary co-development and tissue segregation during human embryogenesis.\n\n## Results\n\n### Simultaneous induction of cardiac and pulmonary progenitors\n\nBuilding on existing protocols on cardiac (Lian et al., 2012; Mummery et al., 2012; Burridge et al., 2014; Lian et al., 2015; Lee et al., 2017; Kattman et al., 2011; Laflamme et al., 2007), and lung (Chen et al., 2017; Huang et al., 2013; Jacob et al., 2017; Dye et al., 2015; Gotoh et al., 2014; D\u2019Amour et al., 2005; Green et al., 2011) differentiation from hiPSCs, a stepwise differentiation strategy was developed to enable simultaneous specification of both lineages within a single culture of hiPSCs. Firstly, a balanced mesodermal and endodermal induction was achieved via fine-tuning of WNT activation in the absence of insulin, activin A, and BMP4 supplementation (Stage-1). Then, a combined inhibition of WNT and TGF-\u03b2 signaling initiated the specification of the co-induced mesoderm and endoderm towards cardiac and pulmonary specification, respectively (Stage-2). Lastly, reactivation of WNT signaling in the presence of retinoic acid (RA) led to concurrent emergence of NKX2.5+ cardiac and NKX2.1+ lung progenitors (Stage-3), which was our main focus in this study.\n\nWNT signaling is required for mesodermal and endodermal specification in dose-dependent manner during embryogenesis as well as hiPSC specification (Lian et al., 2012; Kattman et al., 2011; Paige, 2010; Ng et al., 2008). Using a hiPSC line, BU3 NKX2.1GFP; SFTPCtdTomato (BU3-NGST), we examined the possibility of co-inducing mesodermal and definitive endodermal specification by exclusively modulating WNT signaling using a GSK3\u03b2 inhibitor (CHIR99021, hereafter abbreviated as CHIR) and without the addition of exogenous growth factors (e.g. Activin A and BMP4). BU3-NGST were trypsinized and plated at 150,000 cells/cm2 in mTESR1 medium for 24 hr. BU3-NGST were then treated with different concentrations of CHIR at 4, 7, and 10 \u03bcM for 48 hr in mTESR1 medium, followed by incubation in growth factor-free differentiation medium (based on RPMI1640 and B-27 minus insulin) (Figure 1a). Toward the end of germ layer induction (Stage-1), we detected co-existence of both definitive endodermal (SOX17+) and mesodermal progenitors (MIXL1+ and NCAM1+), as well as the wide-spread expression of pan-mesendoderm marker (MIXL1+) (Figure 1b). In addition, definitive endoderm co-expressed both FOXA2 and SOX17 (Figure 1c). This was further confirmed by flow cytometry analysis CD13 (mesodermal marker) and SOX17 (endodermal marker) (Figure 1\u2014figure supplement 1f-g). This observation was further confirmed by gene expression analysis of FOXA2, SOX17, and NCAM1 (Figure 1d), which together suggests that 7 \u03bcM CHIR drives balanced endoderm and mesoderm induction from hiPSCs, while further elevation of CHIR dosage selectively favors mesodermal specification. This is in line with a study by Martyn et al., 2019 demonstrating that WNT induces formation of primitive streak after 48 hr of treatment and that the newly formed primitive streak cells provide additional endogenous WNT, BMP, and Nodal signaling to further pattern the cells toward mesoderm and endoderm lineage (Martyn et al., 2019), We confirmed that upon 48 hr induction with 7 \u03bcM CHIR, the majority of cells were expressing primitive streak marker (T) and mesendoderm marker (MIXL1), but not pluripotent marker (OCT4) during early germ layer induction (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig1-v2.jpg)\n\n**Figure 1.:** (a) Diagram showing the experimental design (b) Cells following Stage-1 differentiation expressed MIXL1 (Mesendodermal lineage), SOX17 (definitive endoderm), and NCAM1 (mesoderm). Scale bar = 125 \u03bcm. (c) Majority of SOX17 cells were also FOXA2+. Scale bar = 62.5 \u03bcm. (d) Fold change of hiPSCs for FOXA2 (n = 3 each; 4 vs 7, p < 0.001; 7 vs 10, p < 0.001; 4 vs 10, p < 0.001), SOX17 (n = 3 each; 4 vs 7, p < 0.001; 7 vs 10, p < 0.001; 4 vs 10, p = 0.9978) and NCAM1 (n = 3 each; 4 vs 7, p < 0.001; 7 vs 10, p < 0.001; 4 vs 10, p < 0.001). All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. \u2018n\u2019 refers to biological replicates. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Diagram showing the experimental design. (b) Pluripotent marker (OCT4) expression on hiPSCs prior to induction with CHIR. (c) Cells following 48 hr CHIR treatment expressed T (primitive streak), MIXL1 (Mesendodermal lineage) but not pluripotent (OCT4) marker. FACS analysis of cells for (d) T and (e) MIXL1. (f) Schematic diagram showing the experimental design for flow cytometry analysis at the end of Stage-2 co-differentiation. (g) Flow cytometry analysis of endoderm marker (SOX17) and mesodermal marker (CD13) on hiPSCs, cells differentiated from standard protocol with or without Activin A. Scale bar = 125 \u03bcm for 20 X images. Diagram created using BioRender (http://biorender.com/).\n\nTo specify the co-induced mesoderm and endoderm towards cardiac and pulmonary lineages, respectively, Day-4 cells were treated with TGF-\u03b2 inhibitor (A8301) (McCauley et al., 2017; Jacob et al., 2017; Hawkins et al., 2017) and WNT inhibitor (IWP4) (Lian et al., 2012; Huang et al., 2013) for 4 days (Stage-2, Day-5 to Day-8), followed by treatment with a ventralization cocktail consisting of CHIR and RA (essential for lung progenitor specification) for 7 days to Day-15 (Stage 3) (Figure 2a and b; McCauley et al., 2017; Jacob et al., 2017; Hawkins et al., 2017). Consistent with CHIR-dependent germ layer induction (Figure 1), the efficiency of cardio-pulmonary specification was tightly regulated by CHIR dosage. We found that on Day-15, cells pre-exposed to CHIR (7 \u03bcM) during Stage-1 were able to give rise to robust co-induction of both cardiac (NKX2.5+) and pulmonary (NKX2.1+) progenitors (Figure 2c, d and e). In comparison, cells pre-treated with high-CHIR (10 \u03bcM) differentiated mainly into cardiac lineage; while low-CHIR (4 \u03bcM) failed to drive effective differentiation into either lineage (Figure 2c, d and e). FACS analysis confirmed that our protocol enabled effective induction of both NKX2.1+ and NKX2.5+ cells as compared to pulmonary-only or cardiac-only differentiation protocols (Figure 2\u2014figure supplement 1a, b, c). Since NKX2.1 expression can also be found in neural and thyroid tissues, we performed further immunostaining analysis on Day-15 differentiated cells to inspect this possibility. Our results showed the NKX2.1+ cells did not co-express TUJ1/PAX6 (Neural) or PAX8 (Thyroid), suggesting that the specified NKX2.1+ population is of lung fate. Furthermore, no p63-expressing cells were identified, confirming the absence of airway epithelial cell population. At the same stage, NKX2.5+ cells co-expressed cardiac Troponin T (cTnT), suggesting that these cells were being specified towards cardiac lineage.COUPTFII-positive staining was also observed in some of the NKX2.5+ cells, suggesting atrial specification. However, most of the NKX2.5+ cells have yet to specific into downstream cardiac subtypes such as ventricular (MLC2v), endocardium (NFATC), and epicardium (WT1) (Figure 2\u2014figure supplement 1d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic diagram showing the overall differentiation strategy. (b) Immunofluorescence (IF) showing staining of lung (NKX2.1+) and cardiac (NKX2.5+). (c) IF (d,e) and quantitative PCR (qPCR) analysis of the induction of lung and cardiac progenitors on Day-15 of differentiation. (c\u2013e) The effects of different CHIR concentrations during Stage-1 of differentiation. Fold change over hiPSCs (d) NKX2.1 (n = 3 each; 4 vs 7, p < 0.001; 7 vs 10, p < 0.001; 4 vs 10, p = 0.9993) and (e) NKX2.5 (n = 3 each; 4 vs 7, p< 0.001; 7 vs 10, p = 0.0053; 4 vs 10, p < 0.001). (f\u2013h) The effects of different exposure time of CHIR (7 \u00b5M) treatment during the first 2 days of differentiation. qPCR analysis of (g) NKX2.1 (n = 3 each; 24 vs 48, p < 0.001; 48 vs 72, p < 0.001; 24 vs 72, p < 0.001) and (h) NKX2.5 (n = 3 each; 24 vs 48, p < 0.001; 48 vs 72, p = 0.1503; 24 vs 72, p < 0.001). Scale bar = 500 \u03bcm for whole well scan; Scale bar = 125 \u03bcm for 20 X images. All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. \u2018n\u2019 refers to biological replicates. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** FACS analysis of Day-15 cells from (a) cardio-pulmonary, (b) pulmonary, and (c) cardiac differentiation protocol. (d) Day-15 cardio-pulmonary progenitors did not express p63, PAX8, TUJ1, PAX6 markers; NKX2.5 expression colocalized with cTnT, and partially with COUPTFII; and expression of NFATC, WT1 and MLC2v was not detected. Scale bar = 75 \u03bcm for 40 X images.\n\nThe action of CHIR treatment on hiPSC differentiation depends not only on dosage but also the duration of exposure (Kempf et al., 2016; Zhao et al., 2019). We evaluated the efficiency of cardio-pulmonary induction following exposure to CHIR (7 \u00b5M) for different periods (24, 48, and 72 hr), and found that extended CHIR exposure for 48 or 72 hr was required to induce robust cardio-pulmonary programs (Figure 2f). Specifically, CHIR favored cardiac specification with increase in exposure time and plateaued at 48 hr of treatment (Figure 2h); while the induction of pulmonary program peaked at 48 hr of CHIR treatment (Figure 2g) and declined with further extension of the treatment. Based on these observations, for all subsequent experiments, we used 48 hr treatment of CHIR (7 \u00b5M) during Stage-1 of the co-differentiation program. Furthermore, we showed that maintaining hiPSCs in mTESR1 Plus during the initial CHIR treatment appeared to be critical for enabling effective cardio-pulmonary differentiation (Figure 3\u2014figure supplement 1), as compared to using RPMI1640 supplemented with B-27 minus insulin as the basal medium during CHIR treatment.\n\nExogenous activation of nodal, TGF-\u03b2 and BMP signaling during the very initial steps of hiPSC specification has been widely utilized for cardiac (Kattman et al., 2011; Laflamme et al., 2007; Ng et al., 2008) and pulmonary (Huang et al., 2013; Gotoh et al., 2014; Mou et al., 2012; Jacob et al., 2017; Dye et al., 2015) specification from hiPSCs. Here, we investigated how exogenous and endogenous nodal and BMP signaling regulates cardio-pulmonary induction during germ layer induction (Stage-1). Nodal signaling inhibition (using A8301, Day-2 to Day-4) immediately following CHIR treatment terminated both cardiac and pulmonary induction; while nodal activation through Activin A supplementation (Day-2 to Day-4) led to pulmonary-only differentiation (Figure 3a, b and c). This suggests the requirement of endogenous nodal signaling for cardio-pulmonary induction and that high-level nodal activation favors pulmonary instead of cardiac induction. In parallel, BMP inhibition (using DMH-1) during the same time period compromised cardiac induction and mildly reduced pulmonary specification; while exogenous BMP4 supplementation enhanced cardiac induction but inhibited pulmonary specification (Figure 3d, e and f). This indicates that endogenous BMP signaling is primarily required for cardiac induction and that exogenous augmentation of BMP signaling further favors the cardiac lineage at the expense of the pulmonary lineage.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig3-v2.jpg)\n\n**Figure 3.:** IF (a,d) and qPCR (b,c,e,f) analysis of the induction of lung (NKX2.1+) and cardiac (NKX2.5+) progenitors on Day-15 of differentiation (a\u2013c) The effects of exogenous nodal activation (Activin A, 20 ng/mL) or its inhibition (A8301, 1 \u00b5M). Fold change over hiPSCs for (b) NKX2.1 (n = 3 each; Activin A\u2500 /A8301\u2500 vs. Activin A+ /A8301\u2500, p = 0.1939; Activin A\u2500 /A8301\u2500 vs. Activin A\u2500 /A8301+, p < 0.001; Activin A+ /A8301\u2500 vs. Activin A\u2500 /A8301+, p < 0.001) and (c) NKX2.5 (n = 3 each; Activin A\u2500 /A8301\u2500 vs. Activin A+ /A8301\u2500, p < 0.001; Activin A\u2500 /A8301\u2500 vs. Activin A\u2500 /A8301+, p < 0.001; Activin A+ /A8301\u2500 vs. Activin A\u2500 /A8301+, p = 0.8649). (d-f) The effects of exogenous BMP4 (20 ng/mL) or BMP inhibitor (DMH1, 2 \u00b5M). qPCR analysis of (e) NKX2.1 (n = 3 each; BMP4\u2500 /DMH1\u2500 vs. BMP4+ /DMH1\u2500, p < 0.001; BMP4\u2500 /DMH1\u2500 vs. BMP4\u2500 /DMH1+, p < 0.001; BMP4+ /DMH1\u2500 vs. BMP4\u2500 /DMH1+, p < 0.001) and (f) NKX2.5 (n = 3 each; BMP4\u2500 /DMH1\u2500 vs. BMP4+ /DMH1\u2500, p < 0.001; BMP4\u2500 /DMH1\u2500 vs. BMP4\u2500 /DMH1+, p = 0.0044; BMP4+ /DMH1\u2500 vs. BMP4\u2500 /DMH1+, p < 0.001). Scale bar = 500 \u03bcm for whole well scan; Scale bar = 125 \u03bcm for 20 X images. All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. \u2018n\u2019 refers to biological replicates. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cells were induced by CHIR in (a) mTESR1 (b) and RPMI-based medium, followed by representative IF staining of NKX2.1 and NKX2.5 following 15 days of differentiation. Scale bar = 500 \u03bcm for whole well scan; Scale bar = 125 \u03bcm for 20 X images. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Schematic diagram illustrating the experimental design. (b\u2013d) IF staining showing NKX2.1 and NKX2.5 expression on Day-15 of differentiation (b), and the corresponding qPCR analysis of (c) NKX2.1 (n = 3 each; A8301+ /IWP4+ vs. A8301+ /IWP4\u2500, p < 0.001; A8301+ /IWP4+ vs. A8301\u2500 /IWP4+, p < 0.001; A8301+ /IWP4\u2500 vs. A8301\u2500 /IWP4+, p < 0.001) and (d) NKX2.5 (n = 3 each; A8301+ /IWP4+ vs. A8301+ /IWP4\u2500, p < 0.001; A8301+ /IWP4+ vs. A8301\u2500 /IWP4+, p < 0.001; A8301+ /IWP4\u2500 vs. A8301\u2500 /IWP4+, p = 0.9986). Scale bar = 500 \u03bcm for whole well scan; Scale bar = 125 \u03bcm for 20 X images. All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Schematic diagram illustrating the experimental design. (b) IF staining showing NKX2.1 and NKX2.5 expression on Day-15 of differentiation, and the corresponding qPCR analysis of (c) NKX2.1 (n = 3 each; BMP4\u2500 /DMH1\u2500 vs. BMP4+ /DMH1\u2500, p = 0.9737; BMP4\u2500 /DMH1\u2500 vs. BMP4\u2500 /DMH1+, p < 0.01; BMP4+ /DMH1\u2500vs. BMP4\u2500 /DMH1+, p = 0.0128) and (d) NKX2.5 (n = 3 each; BMP4\u2500 /DMH1\u2500 vs. BMP4+ /DMH1\u2500, p = 0.3330; BMP4\u2500 /DMH1\u2500 vs. BMP4\u2500 /DMH1+, p < 0.001; BMP4+ /DMH1\u2500vs. BMP4\u2500 /DMH1+, p < 0.01). Scale bar = 500 \u03bcm for whole well scan; Scale bar = 125 \u03bcm for 20 X images. All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. Diagram created using BioRender (http://biorender.com/).\n\n### Shared signaling for cardio-pulmonary co-differentiation from germ-layer progenitors\n\nIn previous single-lineage hiPSC differentiation studies, TGF-\u03b2 and WNT inhibition is known to promote pulmonary specification from definitive endoderm (Huang et al., 2013; Gotoh et al., 2014; McCauley et al., 2017; Jacob et al., 2017; Hawkins et al., 2017; Dye et al., 2015), as well as the induction of cardiac mesoderm (Lian et al., 2012). Here, we examined how combined inhibition of both TGF-\u03b2 (using A8301) and WNT (using IWP4) during Day-4 to Day-8 (Figure 3\u2014figure supplement 2a) regulates cardio-pulmonary specification from germ-layer progenitors established in Stage-1. We found that combined TGF-\u03b2 and WNT inhibition enhanced both cardiac and pulmonary specification, with TGF-\u03b2 inhibition having a more profound effect on the cardiac lineage (Figure 3\u2014figure supplement 2b,c,d). Our finding suggests shared signaling requirement for lung and heart induction from their respective germ-layer progenitors, which is consistent with their close spatial coordinates within the embryonic body planning (Lufkin et al., 1991; Makki and Capecchi, 2012; Chisaka and Capecchi, 1991).\n\nIn both mouse and human pluripotent stem cell differentiation models, exogenous BMP4 has been shown to be crucial for ventralization of the foregut endoderm to give rise to NKX2.1+ lung progenitors (Huang et al., 2013; Jacob et al., 2017; Serra et al., 2017). Here in our study, we observed effective cardio-pulmonary co-differentiation in the absence of exogenous BMP4 during ventralization (Stage 3) (Figure 2b). To address this discrepancy, we investigated how exogenous introduction of BMP4 during ventralization regulated the emergence of cardiac and pulmonary progenitors (Figure 3\u2014figure supplement 3a). Intriguingly, there was no significant differences observed at protein and gene expression level of NKX2.1 and NKX2.5 comparing ventralization in the presence and absence of exogenous BMP4 (Figure 3\u2014figure supplement 3b,c,d). Nonetheless, endogenous BMP4 was indeed required during this stage of differentiation, as inhibition of BMP4 using DMH1 significantly compromised the induction of both NKX2.1 and NKX2.5 (Figure 3\u2014figure supplement 3b,c,d).\n\n### 3D suspension culture platform for alveolar induction\n\nTo examine whether NKX2.1+ lung progenitors derived from the cardio-pulmonary co-induction protocol (Figure 2a) possess the ability to mature into alveolar type 2 (AT2) epithelial cells, Day-15 cells were trypsinized and re-plated into an ultra-low adhesion plate for 3D suspension culture (Figure 4a), and exposed to alveolar maturation medium containing CHIR, KGF, Dexamethasone, 8-bromoadenosine 3\u2019, 5\u2019-cyclic monophosphate (cAMP activator), and IBMX (CKDCI) (Jacob et al., 2017; Dye et al., 2015; de Carvalho et al., 2019). Upon transition from 2D to 3D suspension culture in CKDCI medium, the co-induced cardio-pulmonary progenitors self-assembled into pulmonary-centered, concentric, dual-lineage \u03bcTs during the overnight culture (Figure 4b). Following 3 days of 3D suspension culture in CKDCI medium, effective AT2 maturation was observed in the cardio-pulmonary \u03bcTs as indicated by robust SFTPCTdTomato fluorescence (Figure 4c) and gene expression (Figure 4\u2014figure supplement 1c). The SFTPCTdTomato fluorescence could sustained up to Day-29 (2 weeks in alveolar maturation medium) (Figure 4\u2014figure supplement 1a,b). As a control, we cultured Day-15 cardio-pulmonary progenitors on top of the transwell insert for air-liquid interface (ALI) culture, on 2D plastic surface for regular submerged culture or embedded in Growth Factor Reduced (GFR) Matrigel, and failed to detect obvious AT2 induction by Day-18 (Figure 4c, Figure 4\u2014figure supplement 2, Figure 4\u2014figure supplement 3). Consistent with the observations using fluorescence reporters, NKX2.1 and SFTPC gene expression was significantly upregulated in 3D suspension culture on Day-18 compared to the starting Day-15 cells or cells following ALI maturation (Figure 4d and e). This may in part be due to the reduction of cardiac progenitor as indicated by significant downregulation of NKX2.5 gene expression (Figure 4f, Figure 4\u2014figure supplement 1d). Our results demonstrated 3D suspension culture as a robust platform to expedite alveolar maturation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic diagram illustrating the Stage-4 maturation protocol involving replating of Day-15 cardiac and pulmonary progenitors onto ultra-low adhesion plate (for 3D suspension culture) or the transwell insert (for ALI culture). (b) Whole mount staining of cardiopulmonary \u03bcT on Day-18, scale bar 75 \u03bcm. (c) Live \u03bcT imaging of NKX2.1GFP and SFTPCTdTomato reporter signals during the first 3 days of maturation (Day-16 \u2013 Day-18). (d-f) qPCR analysis of hiPSC control, Day-15 cells and Day-18 cells (from ALI or suspension culture) for (d) NKX2.1 (n = 3 each; Day-15 vs. ALI, p = 0.9998; Day-15 vs. Suspension, p = 0.0547; ALI vs. Suspension, p = 0.0486), (e) SFTPC (n = 3 each; Day-15 vs. ALI, p = 0.1896; Day-15 vs. Suspension, p < 0.001; ALI vs. Suspension, p < 0.01). (f) NKX2.5 (n = 3 each; Day-15 vs. ALI, p < 0.001; Day-15 vs. Suspension, p = 0.8367; ALI vs. Suspension, p < 0.001). Scale bar = 125 \u03bcm. (g\u2013n) Schematic diagram showing the differentiation procedure without (g) and with (j) Activin A during Stage-1 of differentiation (h, k) Live \u03bcT imaging of NKX2.1GFP and SFTPCTdTomato reporter signals during Day-16 to Day-18. Scale bar = 125 \u03bcm for 10 X images. (i, l) Whole mount staining of \u03bcTs on Day-18. (m\u2013n) qPCR analysis of hiPSC control, Day-15 cells and Day-18 cells (from Activin-free or Activin) for (m) NKX2.1 (n = 3 each; Day-15 (No Activin) vs. Day-18 (No Activin), p < 0.001; Day-15 (Activin) vs Day-18 (Activin), p = 0.0147; Day-15 (No Activin) vs. Day-15 (Activin), p = 0.1316), (n) SFTPC (n = 3 each; Day-15 (No Activin) vs. Day-18 (No Activin), p < 0.001; Day-15 (Activin) vs Day-18 (Activin), p = 0.2417; Day-18 (No Activin) vs. Day-18 (Activin), p < 0.001). All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. Scale bar = 125 \u03bcm. \u2018n\u2019 refers to biological replicates. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Schematic diagram showing the experimental design. (b) Live cell \u03bcTs imaging on the NKX2.1GFP and SFTPCTdTomato reporter signal over time. Scale bar = 125 \u03bcm for 10 X images. (c) qPCR for SFTPC (n = 3 each; Day-15 vs. Day-18, p < 0.001; Day-15 vs. Day-22, p = 0.5569; Day-18 vs. Day-22, p < 0.001). (d) IF of NKX2.1 and NKX2.5 on ALI membrane. Scale bar = 125 \u03bcm for 20 X images. All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Schematic diagram showing the experimental design. (b) Live cell imaging of the NKX2.1GFP and SFTPCTdTomato reporter signal over time. Scale bar = 125 \u03bcm for 10 X images. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) Schematic diagram showing the experimental design. (b) qPCR for NKX2.1 (n = 3 each; Day-18 Suspension vs. Day-18 Matrigel, p = 0.0781), SFTPC (n = 3 each; Day-18 Suspension vs. Day-18 Matrigel, p < 0.001), NKX2.5 (n = 3 each; Day-18 Suspension vs. Day-18 Matrigel, p < 0.001). All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a) Schematic diagram showing the experimental design. (b) Live \u03bcT imaging on the NKX2.1GFP and SFTPCTdTomato reporter signal over time. Scale bar = 125 \u03bcm for 10 X images. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (a) Schematic diagram illustrating the process of cardio-pulmonary co-differentiation, highlighting the adjustment of CHIR concentration during the first 2 days of differentiation. (b) IF staining of mesendoderm, endoderm and mesoderm after Stage-1 differentiation with 7 \u03bcM CHIR. (c,d) IF staining of NKX2.1 and NKX2.5 following 15 days of co-differentiation. Scale bar = 500 \u03bcm for whole well scan; Scale bar = 125 \u03bcm for 20 X images; (e) Confocal imaging of Day-18 \u03bcT. Scale bar = 125 \u03bcm for confocal images. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** No autofluorescence was observed in non-reporter line BU1 on Day-18. Scale bar = 125 \u03bcm.\n\nTo elucidate how the co-induced cardiac lineage modulates the alveolar maturation process, we introduced activin A (20 ng/mL) during germ-layer specification (Figure 4j), which effectively inhibited mesoderm specification and led to pulmonary-only differentiation outcome on Day-15 (Figure 3a and b). In the absence of accompanying cardiac cells, although NKX2.1GFP+ lung progenitors can be robustly induced and maintained, their alveolar maturation (as indicated by SFTPCtdTomato reporter) following 3 days of maturation in 3D suspension culture was dramatically diminished compared to the cardio-pulmonary group (Figure 4g\u2013l). Whole mount imaging of \u03bcTs on Day-18 showed pulmonary-only differentiation mainly comprised NKX2.1+ cells, while cardio-pulmonary \u03bcTs possessed a concentric arrangement of NKX2.1+ cells, surrounded by NKX2.5+ cells (Figure 4i and j). This was further supported by gene expression analysis of NKX2.1 (Figure 4m) and SFTPC (Figure 4n). Further extension of CKDCI maturation period for 2 weeks up to Day-29 in the pulmonary-only group failed to produce AT2 induction to a level comparable to that of the cardio-pulmonary group (Figure 4\u2014figure supplement 4). This suggests that the cardiac lineage can serve as a cellular niche in supporting alveolar maturation.\n\nWe confirmed the reproducibility of our cardio-pulmonary co-induction protocol using another independent hiPSC line (BU1), including effective induction of endodermal and mesodermal mixture on Day-4 (Figure 4\u2014figure supplement 5a,b), induction of pulmonary (NKX2.1) and cardiac (NKX2.5) progenitors on Day-15 (Figure 4\u2014figure supplement 5c,d), and maturation of alveolar type two epithelium (Pro-SFTPC), and cardiac structural markers (cTnT and Sarcomeric Alpha Actinin) on Day-18 \u03bcTs (Figure 4\u2014figure supplement 5e). Further, using BU1 without built-in fluorescence reporters, we also confirmed that the GFP and TdTomato expression observed from BU3-NGST differentiation was not resulted from autofluorescence (Figure 4\u2014figure supplement 6).\n\n### Cardio-pulmonary segregation in the dual-lineage micro-tissue (\u039cT)\n\nSpatial-temporal regulation of WNT is crucial for early cardiac differentiation (Lian et al., 2012; Zhao et al., 2019; Buikema et al., 2020), however, continuous exposure to WNT activation is known to delay contractile maturation of cardiomyocytes (Fan et al., 2018). In parallel, exogenous WNT activation using CHIR is essential for inducing AT2 maturation and its maintenance until the endogenous AT2 niche is established (Jacob et al., 2017; Abdelwahab et al., 2019; Nabhan et al., 2018; Frank et al., 2016). To investigate how CHIR removal regulates cardio-pulmonary maturation following AT2 establishment on Day-18 in 3D suspension culture (Figure 4g), we transitioned the maturation medium from CKDCI to KDCI without CHIR (Figure 5a; Jacob et al., 2017). To our surprise, upon CHIR removal, the cardiac and pulmonary components within each dual-lineage \u03bcT, which was initially arranged in the pulmonary-centered, concentric manner (Figure 5b), effectively reorganized over time and eventually segregated from each other (Figure 5a and b). When Day-15 cardio-pulmonary progenitors were transitioned to suspension culture directly in KDCI medium without CHIR, although they successfully underwent dual-lineage \u03bcT formation and segregation, there was no sign of AT2 maturation, echoing the importance of CHIR during AT2 induction (Figure 5\u2014figure supplement 1; Huang et al., 2013; Jacob et al., 2017; Nabhan et al., 2018; Frank et al., 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig5-v2.jpg)\n\n**Figure 5.:** (a) Schematic diagram illustrating the timeline for the investigation. Scale bar = 125 \u03bcm (b) Histological analysis of cardio-pulmonary \u03bcTs at different stages of segregation. Scale bar = 125 \u03bcm (c) Diagram showing measurement of the total perimeter of GFP+ pulmonary compartment (red color) and its overlapping perimeter with non-GFP compartment (white color) using Image J. Scale bar = 125 \u03bcm (d) Box plot showing percentage overlapping region of GFP+ with non-GFP tissues on Day- 18 (n = 30 each;; CKDCI vs. KDCI, p = 0.3979; CKDCI vs. KDCI+ IWP4; p > 0.9999; CKDCI vs. KDCI+ NSC, p = 0.4293; KDCI vs. KDCI+ IWP4, p = 0.3979; KDCI vs. KDCI+ NSC, p > 0.9999; KDCI+ IWP4 vs. KDCI+ NSC, p = 0.4293), Day-22 (n = 30 each; CKDCI vs. KDCI, p = 0.0077; CKDCI vs. KDCI+ IWP4; p = 0.0112; CKDCI vs. KDCI+ NSC, p < 0.001; KDCI vs. KDCI+ IWP4, p = 0.9994; KDCI vs. KDCI+ NSC, p = 0.8318; KDCI+ IWP4 vs. KDCI+ NSC, p = 0.7674) and Day-25 (n = 30 each; CKDCI vs. KDCI, p < 0.001; CKDCI vs. KDCI+ IWP4; p < 0.001; CKDCI vs. KDCI+ NSC, p < 0.001; KDCI vs. KDCI+ IWP4, p = 0.4271; KDCI vs. KDCI+ NSC, p = 0.7275; KDCI+ IWP4 vs. KDCI+ NSC, p = 0.9623). (e) Histological analysis of cTnT expression on the segregated cardiac and pulmonary \u03bcTs, with co-staining of NKX2.5 and NKX2.1. Scale bar = 125 \u03bcm. All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. \u2018n\u2019 refers to biological replicates. Diagram created using BioRender (http://biorender.com/).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Schematic diagram showing the experimental design. (b) Live \u03bcT imaging on the NKX2.1GFP and SFTPCTdTomato reporter signal over time. Scale bar = 125 \u03bcm for 10 X images. (c) qPCR analysis for NKX2.1 (n = 3 each; Day-15 vs. Day-18 CKDCI, p = 0.1522; Day-15 vs. Day-18 KDCI, p = 0.2912; Day-18 CKDCI vs. Day-18 KDCI, p < 0.05), SFTPC (n = 3 each; Day-15 vs. Day-18 CKDCI, p < 0.001; Day-15 vs. Day-18 KDCI, p > 0.9999; Day-18 CKDCI vs. Day-18 KDCI, p < 0.001). (d) Time-lapse images of \u03bcTs cultured in KDCI medium from Day-16 to Day-23. Scale bar = 125 \u03bcm. (e) Percent overlapping of GFP vs. non-GFP (Day-16 vs. Day-20, p < 0.001; Day-16 vs. Day-23, p < 0.001; Day-20 vs. Day-23, p < 0.001). All data are mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001. Diagram created using BioRender (http://biorender.com/).\n\nTo quantitatively assess this segregation process, we performed time-lapse single-\u03bcT tracking and determined the percentage of overlap between the cardiac and pulmonary tissues by measuring the length of the overlapping border between the GFP+ and non-GFP components and normalizing it by the total perimeter of the GFP+ pulmonary component (Figure 5c). We compared the segregation process in the presence (CKDCI) and absence (KDCI) of CHIR, and found that although cardio-pulmonary segregation took place in both medium conditions, it was significantly expedited by the withdrawal of CHIR (Figure 5d,). To investigate the requirement of endogenous WNT signaling for this segregation process, we introduced inhibitors of canonical (IWP4) and non-canonical (NSC668036, a Dishevelled inhibitor) WNT signaling (Li and Wang, 2018), and did not detect any obvious difference in the segregation process as compared to the control KDCI condition (Figure 5d). In parallel with the cardio-pulmonary segregation, cardiac contraction was observed 7 days following CHIR withdrawal (Video 1). Immunohistochemical analysis demonstrated specific co-expression of NKX2.5 and cardiac troponin T (cTnT) in the segregated cardiac \u03bcT (Figure 5e).\n\n![Video 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-video1.mp4.jpg)\n\n### Cardio-pulmonary \u03bcT maturation\n\nNKX2.1+ has the potential to differentiate into both proximal and distal airway epithelial cells. To characterize the lung epithelial composition in cardio-pulmonary \u03bcTs, we performed whole mount staining on Day-22 \u03bcTs. The induction of AT2 cells were further confirmed by the detection of the presence of lamellar bodies by transmission electron microscopy (Figure 6a) and by the positive immunofluorescence staining of pro-SFTPC+ (Figure 6b) and pro-SFTPB+ (Figure 6\u2014figure supplement 1a). We also observed HOPX+ cells in the \u03bcTs (Figure 6b), and upregulated HOPX gene expression (Figure 6\u2014figure supplement 1b) suggesting the presence of AT1-like cells. S100A4 staining indicated presence of mesenchyme in the \u03bcTs (Figure 6\u2014figure supplement 1c), which may also play an important role in promoting alveologenesis Hawkins et al., 2017. In the meantime, these \u03bcTs did not express markers for proximal airway epithelium such as ciliated cells (FOXJ1) (Figure 6\u2014figure supplement 1d), secretory cells (MUC5AC) (Figure 6\u2014figure supplement 1e) and basal cells (p63) (Figure 6\u2014figure supplement 1f), which can be readily observed in airway \u03bcT engineered from bronchial epithelial cells. In parallel, cardiac elements within the \u03bcTs exhibited the striated pattern as indicated by cTnT and Sarcomeric Alpha Actinin staining (Figure 6c and d). The cardiac contractile function was confirmed via the detection of calcium influx (Video 2), and its gradual reduction with increasing concentrations of Verapamil, a calcium channel blocker (Figure 6e).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig6-v2.jpg)\n\n**Figure 6.:** (a) Lamellar bodies found in cardio-pulmonary \u03bcT. Scale bar = 1 \u03bcm. Cardio-pulmonary \u03bcT expressing (b) Pro-SFTPC and HOPX. Cardio-pulmonary \u03bcT also exhibited striated pattern as indicated by (c) cTnT and (d) Sarcomeric Alpha Actinin. Scale bar = 125 \u03bcm. (e) Calcium imaging of cardiac \u03bcTs following treatment with Verapamil.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67872/elife-67872-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** IF for (a) Pro-SFTPB and (b) HOPX gene expression (n = 3 each; Day-15 vs. Day-18 Suspension, P < 0.01). IF for (c) S100A4. (d) FOXJ1, (e) MUC5AC, and (f) p63. Scale bar = 125 \u03bcm.\n\n![Video 2.](https://cdn.elifesciences.org/articles/67872/elife-67872-video2.mp4.jpg)\n\n## Discussion\n\nHere, we described a novel strategy to model human cardio-pulmonary co-development using multi-lineage hiPSC differentiation. The current study primarily focused on co-induction of cardio-pulmonary progenitor cells, thus establishing the foundation for future investigations of how the crosstalk between these two organ lineages regulates their respective lineage maturation. We demonstrated that upon co-induction of mesoderm and endoderm, a series of shared signaling events were capable of driving simultaneous cardiac and pulmonary specification from their respective germ-layer progenitors. Upon transitioning the co-induced cardiac and pulmonary progenitors to 3D suspension culture, we observed expedited alveolar maturation within 3 days, which was supported by the accompanying cardiac lineage. In 3D suspension culture, each cardio-pulmonary \u03bcT effectively segregates into separate cardiac and pulmonary \u03bcTs, which was partially inhibited by WNT activation. This study therefore delivers an effective in vitro model for studying the mechanistic interplay between the developing heart and lung during human embryogenesis.\n\nThe extensive cardio-pulmonary mutual interaction during organogenesis has been well documented in the mouse model (Peng et al., 2013; Hoffmann et al., 2009; Steimle, 2018); however, the translatability of these findings to human embryogenesis remains elusive due to the lack of proper model systems. Human pluripotent stem cell differentiation has offered an effective means for recapitulating and investigating human organogenesis, and tremendous progress has been made toward directed cardiac or pulmonary specification (Lian et al., 2012; Mummery et al., 2012; Burridge et al., 2014; Lian et al., 2015; Lee et al., 2017; Kattman et al., 2011; Chen et al., 2017; Huang et al., 2013; Jacob et al., 2017; Dye et al., 2015; Gotoh et al., 2014; Wong et al., 2012; Laflamme et al., 2007; D\u2019Amour et al., 2005; Longmire et al., 2012; Lian et al., 2013; Mou et al., 2012; Green et al., 2011). However, almost all existing models have been focusing on one parenchymal lineage at a time, and therefore lack the ability to support the investigation of inter-organ crosstalk. Here, building on the established understanding of signaling events necessary for cardiac and pulmonary induction (Lian et al., 2012; Mummery et al., 2012; Burridge et al., 2014; Lian et al., 2015; Lee et al., 2017; Kattman et al., 2011; Chen et al., 2017; Huang et al., 2013; Jacob et al., 2017; Dye et al., 2015; Gotoh et al., 2014; Wong et al., 2012; Laflamme et al., 2007; D\u2019Amour et al., 2005; Longmire et al., 2012; Lian et al., 2013; Mou et al., 2012; Green et al., 2011), we have developed a robust protocol for the simultaneous co-differentiation of cardiac and pulmonary lineages from hiPSCs. Within our co-differentiation system, unrestricted interaction between cells of both lineages is enabled even before their lineage commitment.\n\nMost current attempts on pulmonary induction from hiPSCs relies on initial nodal activation using growth factor (Activin A) supplementation, which is critical for definitive endoderm specification. Here, we showed that by fine tuning WNT signaling using a small-molecule inhibitor of GSK-3\u03b2 (CHIR), robust induction of endoderm and subsequently lung progenitors can be achieved without any exogenous growth factors. This is consistent with the observation that CHIR was capable of inducing cardiac differentiation in replacement of combined effect of exogenous Activin A and BMP4 (Lian et al., 2012). In addition, Martyn et al., 2019 demonstrated that WNT is sufficient to induce primitive streak, which then creates a gradient of signals (BMP, WNT, Nodal) that could further specify fate towards mesoderm and endoderm lineages (Martyn et al., 2019). Nonetheless, Nodal and BMP signaling remains crucial in mesoderm and endoderm specification, as inhibition of these signals effectively terminated cardio-pulmonary co-induction.\n\nOur study demonstrated the need for endogenous TGF-\u03b2 signaling for effective cardio-pulmonary induction, as well as the critical role of endogenous BMP signaling in cardiogenesis. Furthermore, we found that temporal-specific action of the same set of small molecules regulating TGF-\u03b2 and WNT signaling was capable of simultaneously driving mesoderm-to-cardiac and endoderm-to-pulmonary specification. Moreover, BMP4 has been shown to improve NKX2.1+ lung progenitor specification in both mouse and hiPSCs (Huang et al., 2013; Jacob et al., 2017; Serra et al., 2017). In our system, endogenous instead of exogenous BMP signaling was required during a developmental stage corresponding to foregut ventralization for effective co-emergence of cardiac and pulmonary progenitors. This is in line with the close spatial positioning of the developing heart and lung primordia within embryonic body patterning, which implies their exposure to a similar paracrine microenvironment (Steimle, 2018; Herriges and Morrisey, 2014).\n\nTo achieve alveolarization, NKX2.1+ lung progenitors are usually embedded in extracellular matrices, such as Matrigel and collagen (Jacob et al., 2017; Dye et al., 2015; de Carvalho et al., 2019). Here, we established an effective approach that enabled AT2 cell maturation within 3 days in suspension culture of 3D cell aggregates spontaneously formed from Day-15 cardiac and pulmonary progenitors. We further demonstrated that the presence of accompanying cardiac lineage is critical for robust alveolar induction. This observation is consistent with the recently reported inter-dependence between cardiac and pulmonary lineages during embryogenesis (Steimle, 2018). In the absence of cardiac lineage, NKX2.1+ lung progenitors could not achieve as effective AT2 maturation as what is observed in cardio-pulmonary \u03bcTs. This is again emphasizing that chemical cues derived from heart field also plays a role in lung development (Peng et al., 2013; Steimle, 2018). However, it should be noted that pulmonary mesenchyme could also augment distal lung differentiation, which requires further investigation with the ability to differentiate the participation and contribution of each mesodermal cell lineages (Hawkins et al., 2017; McCulley et al., 2015; Leeman et al., 2019). In addition, the presence of mesoderm-derived stromal cells have also been shown to be essential for effective alveolarization in vivo (Herriges and Morrisey, 2014; Domyan et al., 2011; Rankin et al., 2016) and in vitro (Gotoh et al., 2014; Hawkins et al., 2017). Furthermore, cells of the mesodermal lineage are known to be robust producers of extracellular matrix, which may also contribute to the effective alveolar maturation in the absence of external extracellular matrix support. The ability to enable effective alveolar induction from hiPSC-derived lung progenitors with the convenient of suspension culture also opens the door to large-scale production of alveolar cells, a critical challenge in regenerative medicine applications.\n\nUsing dual-lineage cardio-pulmonary \u03bcTs formed from the co-induced progenitors, we observed a novel process of cardio-pulmonary tissue segregation. The human body cavities are highly crowded spaces, filled with different tissues and organs that are in close contact with each other. It remains enigmatic how inter-organ boundaries are maintained to prevent undesired cell migration or tissue merging. Our cardio-pulmonary tissue segregation model suggests an intrinsic mechanism that effectively establishes a boundary between two distinct parenchymal lineages even when they are initially mingled together. Although no model of collective migration has been described in the context of cardio-pulmonary development, studies in other model systems suggest cell-cell communication and paracrine signaling (e.g. WNT) to be crucial for directed cell migration during development (Ciruna and Rossant, 2001; De Calisto et al., 2005; Carmona-Fontaine et al., 2008). Here, we found that exogenous WNT activation via GSK-3\u03b2 inhibition effectively slowed down the cardio-pulmonary segregation, while inhibition of endogenous WNT (canonical and non-canonical) did not obviously affect the process. In consistence with our observation, it has been shown that the inhibition of non-canonical WNT signaling does not stop collective cell migration but distorting migration direction (Li and Wang, 2018).\n\nDespite the presence of AT1-like cells in cardio-pulmonary \u03bcTs based on HOPX staining (Wang et al., 2018; Frank et al., 2019; Liebler et al., 2016), the organization of these cells remained unlike the thin, flat squamous cells found in the native lung (Yang et al., 2016; Williams, 2003). Although HOPX expression has been observed in cardiomyocytes (Friedman et al., 2018), we did not observe HOPX expression following establishment of cardio-pulmonary progenitors, and the induction of HOPX coincided with alveolar maturation during Day-15 to Day-18. Further study is needed to explore the possibility of obtaining AT1-like cells with a more mature phenotype using multiple markers. Our work demonstrates early emergence of SFTPC-expressing cells as early as Day-18, with CHIR and 3D suspension culture being key driving forces that promote alveologenesis (Huang et al., 2013; Jacob et al., 2017), Removal of CHIR on Day-18 led to a decreased in SFTPC expression on Day-22 (Figure 4\u2014figure supplement 1c), suggesting that the complete alveolar niche was not fully established yet. Future investigation is needed to further clarify components of the supporting alveolar niche as well as its timeline of establishment. In parallel, cardiac contractility of the \u03bcTs was initiated 7 days following removal of CHIR, consistent with previous studies showing that GSK-3\u03b2 inhibition promotes cardiomyocyte proliferation but hinders contraction by affecting myofibrillar architecture (Buikema et al., 2020; Wang et al., 2016; Tseng et al., 2006).\n\nHeart begins to form around gestation week 3, which is the earliest organ to be developed during embryogenesis (Buckingham et al., 2005; Tan and Lewandowski, 2020). Lung development initiates soon afterwards during weeks 4\u20137 (Schittny, 2017). In the present study, we showed that the progenitor cells of both heart and lung can be simultaneously induced following 15 days of co-differentiation from hiPSCs. More comprehensive time-series analysis will be necessary to further delineate the fine temporal relationship between heart and lung lineage specification, which is expected to provide fundamental insights regarding cardio-pulmonary crosstalk during their paralleled organogenesis.\n\nIn conclusion, our work focuses on specification of cardio-pulmonary progenitors that have the potential to further mature into their respective descendent lineages. Further morphological and functional maturation of both cardiac and pulmonary lineages, as well as their crosstalk during this process will require future in-depth investigation. In addition, our work offers a novel model for investigating the molecular and cellular mechanisms underlying human cardio-pulmonary co-development and tissue boundary formation. We also expect this work to be of potential use for studying congenital diseases affecting both cardiovascular and pulmonary systems, such as congenital diaphragmatic hernia.\n\n## Materials and methods\n\n### Materials\n\nDetailed information regarding reagents for culture and differentiation medium was summarized in Supplementary file 1. Reagents, equipment, and probes for quantitative PCR (qPCR) analysis antibodies and reagents for immunofluorescence staining were summarized in Key Resources Table.\n\n### Maintenance of human-induced pluripotent stem cells (HiPSCs)\n\nThe BU3-NGST and BU1 hiPSC lines were obtained as kind gifts from the laboratories of Dr. Darrell Kotton and Dr. Finn Hawkins (Boston University). BU3 hiPSC line was derived from a healthy donor and carries both NKX2.1GFP (NG) and Surfactant protein C (SFTPC)tdTomato (ST) reporters (Jacob et al., 2017; Hawkins et al., 2017). BU1 hiPSC line was also derived from healthy donor but without any reporters. hiPSCs were maintained on Matrigel-coated (ESC-qualified) six-well tissue culture plate with mTESR1 Plus medium with regular medium changed every other day. hiPSCs passaging was performed every 5\u20137 days using ReLESR at a plating ratio of 1:10. All cells used in this study were tested negative for mycoplasma contamination using Universal Mycoplasma Detection Kit (ATCC, 30\u20131012 K).\n\nSimultaneous induction of cardiac and pulmonary progenitors from hiPSCs hiPSCs maintained in mTESR Plus were dissociated into single cells using StemPro Accutase. 150,000 cells/cm2 on hESC-qualified Matrigel-coated 96-well plate, and cultured in mTESR Plus supplemented with 10 \u03bcM Y-27632 (ROCK inhibitor) for 24 hr prior to differentiation. The overall protocol for stepwise cardio-pulmonary co-differentiation was summarized in Supplementary file 1. To induce a balanced mixture of mesodermal and definitive endodermal cells, hiPSCs were first incubated in mTESR Plus medium supplemented with different concentration (4, 7, 10 \u03bcM) of CHIR99021 (GSK3\u03b2 inhibitor) and 10 \u03bcM Y-27632 for 48 hr. This was followed by an additional 48 hr incubation in serum-free differentiation medium consisting of RPMI 1640 supplemented with 2% B-27 minus insulin, 1 x GlutaMAX and 10 \u03bcM Y-27632. In some experiments, Activin A (20 ng/mL), BMP4 (20 ng/mL), A8301 (Nodal or TGF-\u03b2 inhibitor, 1 \u03bcM) or DMH-1 (BMP inhibitor, 2 \u03bcM) were introduced to examine how Nodal and BMP signaling regulated mesodermal and endodermal specification. Differentiation outcomes were assessed by immunostaining and qPCR analysis of mesodermal (NCAM1) and definitive endodermal (SOX17) markers.\n\nFollowing Stage-1, all subsequent differentiation procedures were performed using medium recipes formulated based on RPMI 1640 medium supplemented with 2% B-27 and 1 x GlutaMAX, referred to as \u2018basal medium\u2019. To initiate simultaneous cardiac and pulmonary specification, Day-4 cells were incubated for 4 days in Stage-2 medium, containing basal medium supplemented with 1 \u03bcM A8301, 5 \u03bcM IWP4 and 10 \u03bcM Y-27632. In some experiments, co-differentiation medium without either A8301 or IWP4 was utilized to investigate the impact of inhibition of TGF-\u03b2 and WNT signaling.\n\nFollowing Stage-2, to induce simultaneous specification of both cardiac and lung progenitors, co-differentiating cells were incubated for 7 days in Stage-3 medium containing basal medium supplemented with 3 \u03bcM CHIR99021 and 100 nM Retinoic acid (RA). Green fluorescence of the NKX2.1GFP reporter was examined daily using EVOS FL Auto 2 Imaging System to monitor the emergence of lung progenitors. On Day-15 of co-differentiation, the expression of cardiac (NKX2.5) and lung (NKX2.1) progenitor markers was evaluated by immunofluorescence staining and qPCR.\n\n### Co-maturation of cardio-pulmonary progenitors in air-liquid interface (ALI) culture\n\nOn Day-15 of cardio-pulmonary co-differentiation, cells were dissociated into single cells using TrypLE Express, and re-plated at 500,000\u00a0cells/cm2 onto the apical side of each 24-well Transwell insert (pore size of 0.4 \u03bcm, pre-coated with 1% growth factor-reduced Matrigel) in 100 \u03bcL maturation medium. Basolateral side of the transwell insert was filled with 500 \u03bcL of maturation medium. The maturation medium was basal medium supplemented with 3 \u03bcM CHIR99021, 10 ng/mL Keratinocyte growth factor (KGF), 50 nM Dexamethasone, 0.1 mM 8-bromoadenosine 3\u2019, 5\u2019-cyclic monophosphate (cAMP, AMP-activated protein kinase activator) and 0.1 mM 3-isobutyl-1-methylxanthine (IBMX, PKA activator), which was referred to as CKDCI medium. 10 \u03bcM Y-27632 was added during the initial 24 hrs following re-plating. The next day, all medium on the apical side was removed. 200 \u03bcL of fresh CKDCI medium without Y-27632 was added to the basolateral side to establish ALI culture, and was replaced daily. Red fluorescence from the SFTPCTdTomato reporter was examined daily using EVOS Imaging System to monitor the emergence of alveolar type 2 (AT2) cells. On Day-3 of ALI maturation, Transwell membrane were excised from the insert, and analyzed by qPCR (NKX2.1, SFTPC).\n\n### Co-maturation of cardio-pulmonary \u03bcTs in 3D suspension culture\n\nOn Day-15 of cardio-pulmonary co-differentiation, cells were dissociated into single cells using TrypLE Express. A total of 250,000 cells in 500 \u03bcL CKDCI maturation medium was transferred into each well of 24-well ultra-low adherence plate and cultured with agitation at 125 rpm to form cardio-pulmonary \u03bcTs. 10 \u03bcM Y-27632 was added during the initial 24 hr following re-plating. Following 3 days of culture in CKDCI medium, CHIR99021 was removed and \u03bcT culture was continued in KDCI medium for an additional 7 days. At desired time points of 3D suspension maturation, \u03bcTs were analyzed by histology (NKX2.1, NKX2.5, cTnT) and qPCR analysis (NKX2.1, SFTPC).\n\n### Embedding cardio-pulmonary \u03bcTs in matrigel droplet\n\nOn Day-15 of cardio-pulmonary co-differentiation, cells were dissociated into single cells using TrypLE Express. A total of 5000 cells in 50 \u03bcL Growth Factor Reduced (GFR) Matrigel were dropped on 24-well plate and cultured in CKDCI maturation medium. 10 \u03bcM Y-27632 was added during the initial 24 hr following re-plating. Following 3 days of culture, the Matrigel was dissolved in ice-cold EDTA, and the embedded cells were then recovered for RNA extraction and qPCR analysis of NKX2.1, SFTPC, NKX2.5.\n\n### Airway \u03bcTs\n\nTo generate airway \u03bcTs, 96-well plate was coated with 50 \u03bcL of 40% (v/v) GFR Matrigel diluted in PneumaCult-ALI Maintenance Medium. The normal human bronchial epithelia were resuspended in 40% (v/v) GFR Matrigel in PneumaCult-ALI Maintenance Medium and added to the coated wells. A total of 100 \u03bcL PneumaCult-ALI Maintenance Medium was placed in the wells and changed every other day. Airway \u03bcTs formed were harvested following over 3 weeks of differentiation and fixed for immunostaining.\n\n### Single \u03bcT time-lapse imaging and analysis\n\nTo investigate the segregation of cardio-pulmonary \u03bcTs into their respective cardiac and lung \u03bcTs, following 3 days suspension culture in CKDCI medium in 24-well ultra-low adherence plate, single \u03bcT was transferred into each well in 96-well ultra-low adherence plate and cultured for an additional 7 days. The following medium recipes were examined for cardio-pulmonary segregation: KDCI medium, KDCI medium supplemented with 3 \u03bcM CHIR99021, KDCI medium with 5 \u03bcM IWP4, and KDCI medium with 50 \u03bcM NSC668036. Time-lapse imaging was performed on Day- 18, Day-22, and Day-25 following \u03bcT transfer to monitor the segregation process. The pulmonary compartment within each cardio-pulmonary \u03bcT was tracked based on the NKX2.1GFP reporter. To quantify the segregation between the two compartments within each \u03bcT. Image J was used to measure the overlapping perimeter between GFP+ (pulmonary) and non-GFP (cardiac) compartments, which was then normalized to total perimeter of GFP+ compartments and expressed as the percentage of overlapping.\n\n$$\nPercent overlapping %=\\frac{Overlapping Perimeter of GFP and nonGFP compartments \\mum}{Total Perimeter of GFP organoids \\mum}\\times100%\n$$\n\n### qPCR analysis\n\nTotal RNA was extracted using TRIzol, processed by chloroform extraction, precipitated using 1 volume of absolute isopropanol with 50 \u03bcg/mL of RNase-free glycoblue as carrier, washed with 75% ethanol, air-dried, solubilized in RNase-free water and quantified using NanoDrop 2000 spectrophotometer. cDNA was synthesized via reverse transcription of 1 \u03bcg total RNA with random hexamers and the High-Capacity cDNA Reverse Transcription kit according to manufacturer\u2019s instruction. Real-time qPCR analysis was performed on CFX96 Touch Real-Time PCR Detection System using TaqMan probes. Each reaction mixture was prepared by combining 1 \u03bcL of probe, 10 \u03bcL of TaqMan Master Mix, 1 \u03bcL of cDNA (equivalent to 50 ng), and the final volume was brought up to 20 \u03bcL. The final Ct value was normalized to housekeeping gene (\u03b2-actin), using comparative Ct method. Unless otherwise specified, baseline, defined as fold change = 1, was set as undifferentiated hiPSCs, or if undetected, a cycle number of 40 was assigned to allow fold change calculations (Jacob et al., 2017). List of TaqMan probes was summarized in Key Resources Table.\n\n### Immunofluorescence staining on 2D cell samples\n\nCells were fixed with ice-cold methanol, air-dried, rehydrated with phosphate-buffered saline (PBS), permeabilized with 1% (v/v) Triton X-100, blocked in 1% (w/v) bovine serum albumin in PBS (blocking buffer), incubated with primary antibodies diluted in blocking buffer at 4 \u00b0C overnight, and incubated with corresponding fluorescence-conjugated secondary antibodies in blocking buffer at room temperature (RT) for 45 min. Nuclear counterstain was performed using Hoechst-33342 (1:500) in PBS. Fluorescence images were acquired using EVOS Imaging System. All antibodies used and their respective dilution were summarized in Key Resources Table.\n\n### Histology\n\nThe \u03bcTs were fixed with 4% paraformaldehyde, embedded in HistoGel and then in paraffin. Tissue processing and paraffin embedding was performed in Research Histology Lab of Pitt Biospecimen Core at the University of Pittsburgh Medical Center (UPMC) Shadyside Hospital. Paraffin blocks were sectioned at 5 \u03bcm thickness, transferred onto glass slides, rehydrated by sequential incubation in Histoclear, 100% ethanol, 95% ethanol and distilled water. To unmask antigen, slides were treated with Antigen Unmasking Solution at 95 \u00b0C for 20 min and cooled down to RT. Immunofluorescence staining was performed as described above for 2D cell samples. After the final wash, slides were mounted with DAPI Fluoromount-G, and imaged using EVOS Imaging System. All antibodies used and their respective dilution were summarized in Key Resources Table.\n\n### Flow cytometry\n\nCells were dissociated into single cells via incubation with TrypLE for 15 min. For NKX2.1GFP assessment, approximately 3 \u00d7 105 cells were resuspended in FACS buffer (DPBS with 1% FBS) and incubated with DAPI for 10 min on ice, followed by three washes prior to analysis. For indirect labeling of NKX2.5, cells were first trypsinized and stained with Fixable Violet Dead Cell Stain Kit (Thermo Fisher Scientific) for 10 min on ice. Cells were then fixed with 4% PFA on ice for 20 min, followed by three times washes with 1% BSA in PBS. Cells were permeabilized with 1% Triton X-100 for 20 min, followed by blocking for 30 min prior to adding primary antibody for overnight incubation. Next day, cells were washed three times in 1% BSA in PBS and incubated with fluorophore-conjugated secondary antibody for 1 hr. Following three washes with 1% BSA in PBS, cells were re-suspended in FACS buffer for flow cytometry analysis at Unified Flow Core of Department of Immunology at University of Pittsburgh Medical Center.\n\n### Contraction and calcium signal\n\nTo assess contraction of cardiac \u03bcT, segregated cardiac \u03bcT was stained with 5 \u03bcM of Cal-520 AM (AAT Bioquest, 21130), a calcium indicator dye. The concentration-response of cardiac \u03bcTs to calcium channel blocker (Verapamil) were assessed by treating the \u03bcTs with 0.1, 1, and 10 \u03bcM of Verapamil for 10 min. Calcium imaging (500 frames per second) was performed pre- and post- Verapamil treatment using a Prime 95B Scientific CMOS camera (Photometrics) mounted on an epifluorescent stereomicroscope (Nikon SMZ1000) with a GFP filter and an X-cite Lamp (Excelitas).\n\n### TEM\n\nCardio-pulmonary \u03bcTs were fixed in 2.5% glutaraldehyde in 0.1 M PBS (pH7.4) for at least 1 hr. After three washes in 0.1 M PBS for 10 min each, the \u03bcTs were post fixed in 1% Osmium tetroxide containing 1% potassium ferricyanide at 4 \u00b0C for 1 hr, followed by three washes in 0.1 M PBS for 10 min each. \u03bcTs were dehydrated in graded series of ethanol starting from 30%, 50%, 70%, 90% and finally 100% of ethanol for 10 min each. \u03bcTs were further dehydrated epon for 1 hr at RT. This step was repeated for another three times prior to embedding in pure epon at 37 \u00b0C for 24 hr. Finally, the \u03bcTs were cured for 48 hr at 60 \u00b0C. The presence of lamellar body in cardio-pulmonary \u03bcTs were identified using JEM 1400 Flash TEM.\n\n### Statistics\n\nStatistical methods relevant to each figure were outlined in the accompanying figure legend. At least three biological replicates were performed for each group under comparison. Unless otherwise indicated, unpaired, two-tailed Student\u2019s t tests were applied to comparisons between two groups. For comparisons among three or more groups, one-way ANOVA was performed followed by Tukey multiple comparison tests. Results are displayed as mean \u00b1 SD, with p < 0.05 considered statically significant. n values referred to biologically independent replicates.\n",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "00759c28-f45d-40de-8a93-1f9b9d2543b5",
+      "submission_id": "057ea598-6f04-47a5-8b01-27eb270fc391",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paul W Noble, https://ror.org/02pammg90 Cedars-Sinai Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67872.sa0](https://doi.org/10.7554/eLife.67872.sa0)\n\nThe study responded very well to the expert reviewers and offers new insights into mechanisms regulating differentiation of cardiac and pulmonary stem cells. It will stimulate further investigations into this important field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Paul W Noble, https://ror.org/02pammg90 Cedars-Sinai Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67872.sa1](https://doi.org/10.7554/eLife.67872.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Recapitulate Human Cardio-pulmonary Co-development Using Simultaneous Multilineage Differentiation of hPSCs\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Paul Noble as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Sarah XL Huang (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe authors present a novel idea on simultaneous heart and lung induction from hPSCs. The work has a very good potential to be published in eLife. However, the manuscript in its current form is not publishable. There is consensus that the reproducibility of a given protocol must be demonstrated using multiple hPSC lines. Under COVID situation, the full protocol should be tested using at least another pluripotent cell line. In addition, the work in its current form lacks rigor and complete lineage characterization at key differentiation steps, as described in the review comments. The reviewers are confident that when such data are provided, there is a high possibility that it will support the conclusion of the paper, but the authors should not leave the readers to speculate.\n\nThe overall suggestion is that the authors should revise the manuscript to (1) perform additional thorough characterization of the differentiation culture up to the cardiac and lung progenitor specification stage of the protocol (day 15); (2) give an explicit clarification that progenitor specification is the focus of the current manuscript, and the maturation of cardiac and lung lineages will be investigated in-depth in near future studies. Otherwise, multi-lineage characterization within each of the organ and functional analyses on mature cell types are required for publication. This will take considerable time. (3) Analyses of the data that provide mechanistic insights into how each of the developmental milestones is achieved by the protocol (day 1-15), will greatly increase the impact of the paper.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Expression of lung (NKX2.1) and cardiac (NKX2.5) markers (Figure 1and2) is based on immunofluorescence and RT-PCR, but it remains unclear which percentage of cells expressed these markers, and which expressed neither marker. FACS analysis could have provided such data. This is relevant information for assessing the efficiency of the differentiation protocol (and comparison to those based on separate endoderm and mesoderm induction). Along the same line, it is unclear which percentage of cells ultimately expressed alveolar and cardiac markers in the 3D suspension cultures.\n\n2. The approach to use scaffold-free 3D suspension cultures to create microtissues is not novel in the field of hiPSC and has been used e.g. in studies on cardiac myocyte and endothelial cell development. What was the reason to select this system, also because most alveolar differentiation protocols use Matrigel based organoid cultures?\n\n3. In Figure 3, the authors use activin A to suppress development of cells of the cardiac lineage, and show that these support alveolar type 2 cell maturation. How did the authors check that activin A indeed suppressed development of cardiac cells and thus provide (indirect) evidence for the role of cardiac cells in alveolar development?\n\n4. In Figure 3, the authors show that no alveolar type 2 cells are developed in the ALI culture system. Is there any evidence that this may be explained by loss of cells of the cardiac lineage?\n\n5. Regarding further characterization of alveolar epithelial cells: did the authors also check for markers of type 1 alveolar epithelial cells?\n\n6. Regarding further characterization of cardiac cells/cardiomyocytes: was any attempt made to quantify contraction, and show that this could e.g. be blocked using ca2+ channel blockers such as verapamil? And did they check other markers to show that the cells had developed into more mature heart cells, including other sarcomere markers, but also ion channels etc?\n\n7. To achieve cardiopulmonary segregation as shown in Figure 4, the authors first used CKDCI medium from day 15-18, before switching to KDCI. What happened to alveolar type 2 marker expression upon CHIR withdrawal and segregation (was the alveolar niche fully established at day 18, and was therefore exogenous WNT activation no longer needed?), and was this segregation also observed if cultures were directly switched to KDCI on day 15?\n\nReviewer #2 (Recommendations for the authors):\n\nWhile a potentially very interesting model, much more in depth characterization is required. Each component, as well intervening stages of development should be thoroughly characterized and benchmarked.\n\nReviewer #3 (Recommendations for the authors):\n\nHere are further clarifications to some of the above-mentioned weaknesses, as well as additional suggestions on how the manuscript could be improved to increase the impact of the work.\n\nLines 24-30 of manuscript: the authors reasoned that WNT signaling is required for both mesodermal and endodermal specification. On this basis, the authors explained why they decided to use WNT agonist CHIR for mesoderm and DE co-induction from hiPSC line BU3. To my knowledge, the justification is not supported by lung developmental studies. In other words, the data shows convincing evidence of meso- and endo- dermal induction by the end of stage-1/day 4, however the interpretations provided by the authors are not accurate. A more plausible explanation is that, within the first 48 hours (day 1-2), high dose of WNT agonist CHIR induces primitive streak formation from part of the hiPSCs in culture. Subsequently, the newly formed primitive streak provides endogenous WNT, BMP and Nodal/Activin signaling to pattern the rest of the hiPSCs in culture to form mesoderm and DE by the end of day 4. This alternative mechanistic explanation is supported by evidence from both the existing literature and the authors' own data. Brivanlou's group elegantly demonstrated that activation of WNT signaling solely is sufficient to induce primitive streak from hPSCs. In addition, the dosage of CHIR applied in day 1-2 is way too high to be able to induce endoderm with lung potential. Furthermore, the authors maintain the cells in pluripotent medium mTESR1 for the first 48 hours (lines 48-50 of manuscript), which is critical for the success of the protocol (lines 87-90 of manuscript, suppl Figure 3). This supports my hypothesis that CHIR induces part of the hiPSCs in culture to form primitive streak during the first 48 hours, mTESR1 is required to maintain the remaining hiPS cells in culture in pluripotent state during this stage, before they start meso- and endo-dermal differentiation in day 2-4. Consistently, the data shows that Activin A or BMP inhibition during days 2-4 is detrimental for DE or mesodermal induction. Single cell analysis at 48 hr would be sufficient to prove a mixture of \"primitive streak and pluripotent cells\" profile, which will provide valuable mechanistic insights.\n\nThe whole manuscript is based on the differentiation of a double reporter line derived from one parental hiPSC line BU3. For scientific rigor and assurance, it is necessary to demonstrate efficient co-differentiation of lung and heart from other parental hPSC lines (both reporter and non-reporter) using the combination of time and dosage depicted in the current protocol.\n\nIt is convincing that most of the NKX2-1+ cells are lung fated and NKX2-5+ cells are cardiac fated, however, for scientific rigor and thoroughness, it is necessary to characterize the differentiation culture to exclude contamination of neural (EpCAM-) and thyroid (PAX8+) fated NKX2-1+ cells, and to confirm that all the NKX2-5+ cells co-express other cardiac progenitor markers such as KDR and PdgfR-\u03b1. Based on previous studies, some of the early lung progenitors co-express NKX2-5, therefore the authors must confirm whether NKX2-5+ cells at day 15 and on are NKX2-1- and EpCAM- cells.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Recapitulating Human Cardio-pulmonary Co-development Using Simultaneous Multilineage Differentiation of Pluripotent Stem Cells\" for further consideration by eLife. Your revised article has been evaluated by Paul Noble (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nWhile the manuscript is improved, significant concerns remain that need to be addressed for publication. In particular, reviewer 2 has specific concerns that we would like to see addressed in a revision\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have made important changes and added results of new experiments in this extensively revised manuscript. This has markedly improved the quality of the manuscript, and conclusions are much better supported by the results.\n\nAs a result the revised manuscript is interesting and provides a new and relevant model to study heart and lung development in a dish, and cross-talk between these developing organs.\n\nReviewer #2 (Recommendations for the authors):\n\nIn this manuscript, Ng et al., report on a system where cardiac mesoderm and pulmonary endoderm co-develop from pluripotent stem cells. This is of potential interest, as it could provide an integrated model for the study of human cardiopulmonary development. I still have quite a few concerns, though, which were not fully addressed by the authors.\n\n1. In my first review, I pointed out that the main weakness lies in the lack of thorough characterization of the resulting cells and tissues. This is still the case. The characterization relies almost entirely on reporter gene expression and PCR for the same markers. In Figure 1, representative examples are shown of a limited set of markers. It would be nice to have quantification (and for intracellular flow quantification, analysis of cells not expressing the protein of interest should be used as a control). The qPCR data do shown that these markers are expressed, but they compare something to nothing (i.e. PSCs), so that fold changes will be always be very high. One image of the ultrastructure of type 2 cells is shown now, which is a plus. Overall, this work still does begs the question why the only pulmonary markers observed in this model are basically SFTPC and NKX2.1. Furthermore, type 2 identity has not been further verified with markers such as SFTPB, ABCA3, LAMP2. Another outstanding question for the lung component is whether any pulmonary mesenchyme was generated. This was still not addressed. In this era, at scRNAseq should be performed. This would also address several of my other concerns below.\n\n2. It is still not clear which cardiac cells are generated: ventricular, atrial, endocardium, epicardium, conducting tissue? This is the same comment as in my first review. An experiment with verapamil or some cells expressing \u03b1-actinin, as shown here, do not address this question. Atrial and ventricular cells contract. I would also add that in many PSC differentiation cultures where lineages are not sufficiently rigorously specified, contamination with beating cardiomyocytes is quite typical. This may be the case here. It is also difficult to understand why type 2 cells and unspecified cardiac cells are the only output of this model.\n\n3. In Figure 2-S1d, the nuclear stains for NKX2.5 and NKX2.1 do not seem to align with DAPI. The same is true in Figure 3-S1a, where the higher magnifications for NKX2.1, NKX2.5 and DAPI do not seem to align. The same is true again for Figure 4-S1d, where the pattern of NKX2.1 is not the inverse of that of NK2.5 (no DAPI shown here). Furthermore, there is much more cTNT positivity than NKX2.5 expression in Figure 2-S1d. One would expect the opposite. These potential inconsistencies make the images difficult to interpret.\n\n4. Along the same lines, in Figure 3a and 3d, as well in Figure 3-S1b and Figure 3-S3b (each time lower right panel), there seems to be co-expression of NKX2.1 and NKX2.5. Or is this superposition? Are there cells that express neither marker? This is difficult to evaluate without DAPI images. Also, could it be that in Figure 3-S1, the reduced cardiac and pulmonary differentiation is due to reduced proliferation? Again, without a DAPI image, this is difficult to evaluate.\n\n5. This sentence is unclear: 'This may in part be due to the reduction of cardiac progenitor as indicated by significant downregulation of NKX2.5 gene expression (Figure 4f, Figure 4\u2014figure supplement 1d).' (line 292). According to Figure 4f, there is no downregulation of NKX2.5 in suspension culture.\n\n6. In Figure 4c, which relies entirely on reporters, it would be nice to co-stain for the actual proteins and other markers identifying type 2 cells. I note that in Figure 3c, the fluorescence patterns of the GFP and TdTomato reporters is very different, yet they should both be cytoplasmic. In the reporter studies, it would be good to co-differentiate a non-reporter expressing line as a reporter-negative control for autofluorescence in Figure 4 and its supplements. Figure 4-S1c is apparently not commented on the text.\n\n7. The authors mention in the rebuttal evidence for type 1 cells, as shown by staining for HOPX in a non-reporter line (Figure 4-S5) and in the reporter line (Figure 6b). However, HOPX is not a marker for type 1 cells in humans, and is expressed broadly, including in cardiomyocytes (see, among others, Friedman et al., Cell Stem Cell 2018). In Figure 6b, there does not appear to be much pro-SFTPC, and that seems to be on the outside of the structure, whereas in Figures 4 and 5, the NKX2.1+ cells are on the inside.\n\n8. The authors should not call Act. A 'TGF-\u03b2' signaling. It is a TGF-\u03b2 family ligand, but signals through its own receptors. It recapitulates Nodal signaling in vitro.\n\n9. Finally, there is still no sufficient quantification of differentiation efficiency and yield. NKX2.1, for example is also expressed in the forebrain and in the thyroid. The minimal conditions described typical yield neurectoderm. TUJ1 was examined, but other markers, such as PAX 6 should be included.\n\nRecommendations for the authors\n\nWhile a still potentially interesting model, much more in depth characterization is still required as well. In particular the nature and yield of the output should be better characterized, and figure quality and consistency should be paid attention to.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors addressed most of the questions and concerns raised in the 1st round of review.\n",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31cd52c0-8802-4de4-ba93-8ae3561bcab6",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C1",
+      "claim": "The extensive crosstalk between the developing heart and lung is critical to their proper morphogenesis and maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensive crosstalk between the developing heart and lung is critical to their proper morphogenesis and maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research (Peng et al., 2013; Hoffmann et al., 2009; Arora et al., 2012; Steimle, 2018) in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "a39be05a-3cca-466f-b6ac-0ea4fd9f8cb0",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C2",
+      "claim": "During mouse embryonic development, WNT derived from the second heart field induces specification of pulmonary endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "During mouse embryonic development, WNT derived from the second heart field induces specification of pulmonary endoderm, which in turn secretes SHH that signals back to the heart and regulates proper atrial septation (Steimle, 2018; Zhou, 2017; Hoffmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research (Steimle, 2018; Zhou, 2017; Hoffmann et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "9792cb35-683c-4af9-bce9-300b9090c320",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C3",
+      "claim": "Pulmonary endoderm secretes SHH that signals back to the heart and regulates proper atrial septation.",
+      "claim_type": "EXPLICIT",
+      "source": "During mouse embryonic development, WNT derived from the second heart field induces specification of pulmonary endoderm, which in turn secretes SHH that signals back to the heart and regulates proper atrial septation (Steimle, 2018; Zhou, 2017; Hoffmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research (Steimle, 2018; Zhou, 2017; Hoffmann et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "2bcb27c1-5928-40a5-9cd3-f99879657ff5",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C4",
+      "claim": "Inter-lineage crosstalk between heart and lung is partly mediated by multipotent mesodermal progenitors located between the developing heart and lung.",
+      "claim_type": "EXPLICIT",
+      "source": "This inter-lineage crosstalk is partly mediated by the multipotent mesodermal progenitors located between the developing heart and lung, which have the potential for lineage contribution to pulmonary endothelium, pulmonary smooth muscle and cardiomyocytes (Peng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research (Peng et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "2732898f-d766-4108-9541-0e87908342ce",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C5",
+      "claim": "Multipotent mesodermal progenitors have the potential for lineage contribution to pulmonary endothelium, pulmonary smooth muscle and cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This inter-lineage crosstalk is partly mediated by the multipotent mesodermal progenitors located between the developing heart and lung, which have the potential for lineage contribution to pulmonary endothelium, pulmonary smooth muscle and cardiomyocytes (Peng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research (Peng et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "a79c2e7a-015c-45ff-98cf-7234f39b332c",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C6",
+      "claim": "A stepwise differentiation strategy was developed to enable simultaneous specification of cardiac and pulmonary lineages within a single culture of hiPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on existing protocols on cardiac (Lian et al., 2012; Mummery et al., 2012; Burridge et al., 2014; Lian et al., 2015; Lee et al., 2017; Kattman et al., 2011; Laflamme et al., 2007), and lung (Chen et al., 2017; Huang et al., 2013; Jacob et al., 2017; Dye et al., 2015; Gotoh et al., 2014; D'Amour et al., 2005; Green et al., 2011) differentiation from hiPSCs, a stepwise differentiation strategy was developed to enable simultaneous specification of both lineages within a single culture of hiPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figures 1-3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "963b988d-fa09-4757-b106-a6ad61a6ace4",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C7",
+      "claim": "Balanced mesodermal and endodermal induction was achieved via fine-tuning of WNT activation in the absence of insulin, activin A, and BMP4 supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, a balanced mesodermal and endodermal induction was achieved via fine-tuning of WNT activation in the absence of insulin, activin A, and BMP4 supplementation (Stage-1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "cf2a0b5e-cb59-4c27-8b7c-2776ce01752e",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C8",
+      "claim": "Combined inhibition of WNT and TGF-\u03b2 signaling initiated the specification of co-induced mesoderm and endoderm towards cardiac and pulmonary specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, a combined inhibition of WNT and TGF-\u03b2 signaling initiated the specification of the co-induced mesoderm and endoderm towards cardiac and pulmonary specification, respectively (Stage-2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figures 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "8a6bd38c-d899-4bf1-b345-16bc9a2b6015",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C9",
+      "claim": "Reactivation of WNT signaling in the presence of retinoic acid led to concurrent emergence of NKX2.5+ cardiac and NKX2.1+ lung progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, reactivation of WNT signaling in the presence of retinoic acid (RA) led to concurrent emergence of NKX2.5+ cardiac and NKX2.1+ lung progenitors (Stage-3), which was our main focus in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "dcff08d3-0d19-4e67-aabc-a29148ea144c",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C10",
+      "claim": "7 \u03bcM CHIR drives balanced endoderm and mesoderm induction from hiPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was further confirmed by gene expression analysis of FOXA2, SOX17, and NCAM1 (Figure 1d), which together suggests that 7 \u03bcM CHIR drives balanced endoderm and mesoderm induction from hiPSCs, while further elevation of CHIR dosage selectively favors mesodermal specification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1d and immunofluorescence data in Figure 1b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "d20c260d-76d4-4a48-a86c-24426186acf0",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C11",
+      "claim": "Further elevation of CHIR dosage above 7 \u03bcM selectively favors mesodermal specification.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was further confirmed by gene expression analysis of FOXA2, SOX17, and NCAM1 (Figure 1d), which together suggests that 7 \u03bcM CHIR drives balanced endoderm and mesoderm induction from hiPSCs, while further elevation of CHIR dosage selectively favors mesodermal specification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "a594abf0-2c87-4c79-ae77-d93e15e7ece7",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C12",
+      "claim": "Upon 48 hr induction with 7 \u03bcM CHIR, the majority of cells were expressing primitive streak marker (T) and mesendoderm marker (MIXL1), but not pluripotent marker (OCT4).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that upon 48 hr induction with 7 \u03bcM CHIR, the majority of cells were expressing primitive streak marker (T) and mesendoderm marker (MIXL1), but not pluripotent marker (OCT4) during early germ layer induction (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "1c39e492-e7f2-4e0c-a9ad-ad1d4eadcf71",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C13",
+      "claim": "WNT induces formation of primitive streak after 48 hr of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with a study by Martyn et al., 2019 demonstrating that WNT induces formation of primitive streak after 48 hr of treatment and that the newly formed primitive streak cells provide additional endogenous WNT, BMP, and Nodal signaling to further pattern the cells toward mesoderm and endoderm lineage (Martyn et al., 2019),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research (Martyn et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "b4f25f87-9aa3-4fc9-be93-dee2cb569721",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C14",
+      "claim": "Newly formed primitive streak cells provide additional endogenous WNT, BMP, and Nodal signaling to further pattern the cells toward mesoderm and endoderm lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with a study by Martyn et al., 2019 demonstrating that WNT induces formation of primitive streak after 48 hr of treatment and that the newly formed primitive streak cells provide additional endogenous WNT, BMP, and Nodal signaling to further pattern the cells toward mesoderm and endoderm lineage (Martyn et al., 2019),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research (Martyn et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "39d64602-672b-4c29-a21f-bbc763c88493",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C15",
+      "claim": "Cells pre-exposed to CHIR (7 \u03bcM) during Stage-1 were able to give rise to robust co-induction of both cardiac (NKX2.5+) and pulmonary (NKX2.1+) progenitors on Day-15.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that on Day-15, cells pre-exposed to CHIR (7 \u03bcM) during Stage-1 were able to give rise to robust co-induction of both cardiac (NKX2.5+) and pulmonary (NKX2.1+) progenitors (Figure 2c, d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 2c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "22ce14c9-581a-40e1-a94b-b9095c2b8e12",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C16",
+      "claim": "Cells pre-treated with high-CHIR (10 \u03bcM) differentiated mainly into cardiac lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, cells pre-treated with high-CHIR (10 \u03bcM) differentiated mainly into cardiac lineage; while low-CHIR (4 \u03bcM) failed to drive effective differentiation into either lineage (Figure 2c, d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 2c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "0a36527a-13d6-48df-aacb-d9210a992116",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C17",
+      "claim": "Low-CHIR (4 \u03bcM) failed to drive effective differentiation into either cardiac or pulmonary lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, cells pre-treated with high-CHIR (10 \u03bcM) differentiated mainly into cardiac lineage; while low-CHIR (4 \u03bcM) failed to drive effective differentiation into either lineage (Figure 2c, d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 2c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "55ec6aba-d921-43a0-9ff2-8fd589720bb8",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C18",
+      "claim": "NKX2.1+ cells did not co-express TUJ1/PAX6 (Neural) or PAX8 (Thyroid), suggesting that the specified NKX2.1+ population is of lung fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed the NKX2.1+ cells did not co-express TUJ1/PAX6 (Neural) or PAX8 (Thyroid), suggesting that the specified NKX2.1+ population is of lung fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "69c4086f-00f0-437d-988e-cc381bd3ef62",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C19",
+      "claim": "No p63-expressing cells were identified on Day-15, confirming the absence of airway epithelial cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no p63-expressing cells were identified, confirming the absence of airway epithelial cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "ed130544-c9c5-413a-8fd2-9d722b9cdd2d",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C20",
+      "claim": "NKX2.5+ cells co-expressed cardiac Troponin T (cTnT), suggesting that these cells were being specified towards cardiac lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same stage, NKX2.5+ cells co-expressed cardiac Troponin T (cTnT), suggesting that these cells were being specified towards cardiac lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "8b425061-25f5-4dc6-933c-4670f1617c59",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C21",
+      "claim": "COUPTFII-positive staining was observed in some of the NKX2.5+ cells, suggesting atrial specification.",
+      "claim_type": "EXPLICIT",
+      "source": "COUPTFII-positive staining was also observed in some of the NKX2.5+ cells, suggesting atrial specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "56e8e910-e7ed-4b2b-a176-99b97e4fae1a",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C22",
+      "claim": "Most of the NKX2.5+ cells on Day-15 have yet to specify into downstream cardiac subtypes such as ventricular (MLC2v), endocardium (NFATC), and epicardium (WT1).",
+      "claim_type": "EXPLICIT",
+      "source": "However, most of the NKX2.5+ cells have yet to specific into downstream cardiac subtypes such as ventricular (MLC2v), endocardium (NFATC), and epicardium (WT1) (Figure 2\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "8b069ca7-4a98-4b5b-b2ef-f3f020d68968",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C23",
+      "claim": "Extended CHIR exposure for 48 or 72 hr was required to induce robust cardio-pulmonary programs.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the efficiency of cardio-pulmonary induction following exposure to CHIR (7 \u00b5M) for different periods (24, 48, and 72 hr), and found that extended CHIR exposure for 48 or 72 hr was required to induce robust cardio-pulmonary programs (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2f-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "22c6dd26-792f-43e4-b7f7-fc374e9df87a",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C24",
+      "claim": "CHIR favored cardiac specification with increase in exposure time and plateaued at 48 hr of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, CHIR favored cardiac specification with increase in exposure time and plateaued at 48 hr of treatment (Figure 2h);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "b4cc153a-da1a-41ab-94cc-3c42fcd87782",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C25",
+      "claim": "The induction of pulmonary program peaked at 48 hr of CHIR treatment and declined with further extension of the treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "while the induction of pulmonary program peaked at 48 hr of CHIR treatment (Figure 2g) and declined with further extension of the treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "ce7aaaee-6805-49f1-845d-9da100db90fd",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C26",
+      "claim": "Maintaining hiPSCs in mTESR1 Plus during the initial CHIR treatment appeared to be critical for enabling effective cardio-pulmonary differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we showed that maintaining hiPSCs in mTESR1 Plus during the initial CHIR treatment appeared to be critical for enabling effective cardio-pulmonary differentiation (Figure 3\u2014figure supplement 1), as compared to using RPMI1640 supplemented with B-27 minus insulin as the basal medium during CHIR treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "1683acbf-494a-4928-baec-3ff4b51234f9",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C27",
+      "claim": "Nodal signaling inhibition (using A8301, Day-2 to Day-4) immediately following CHIR treatment terminated both cardiac and pulmonary induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signaling inhibition (using A8301, Day-2 to Day-4) immediately following CHIR treatment terminated both cardiac and pulmonary induction; while nodal activation through Activin A supplementation (Day-2 to Day-4) led to pulmonary-only differentiation (Figure 3a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "2a53132f-d8fc-4012-b35d-ae30f4299a23",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C28",
+      "claim": "Nodal activation through Activin A supplementation (Day-2 to Day-4) led to pulmonary-only differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signaling inhibition (using A8301, Day-2 to Day-4) immediately following CHIR treatment terminated both cardiac and pulmonary induction; while nodal activation through Activin A supplementation (Day-2 to Day-4) led to pulmonary-only differentiation (Figure 3a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "0c3ac782-e651-425f-b588-a60e4f4fb418",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C29",
+      "claim": "Endogenous nodal signaling is required for cardio-pulmonary induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the requirement of endogenous nodal signaling for cardio-pulmonary induction and that high-level nodal activation favors pulmonary instead of cardiac induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that nodal inhibition terminates both cardiac and pulmonary induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "0d7ccb3e-c9e7-45e1-8eb8-c57b8fa74cdf",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C30",
+      "claim": "High-level nodal activation favors pulmonary instead of cardiac induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the requirement of endogenous nodal signaling for cardio-pulmonary induction and that high-level nodal activation favors pulmonary instead of cardiac induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that Activin A supplementation leads to pulmonary-only differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "d9730010-ca50-445d-abca-7ce91d0a1865",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C31",
+      "claim": "BMP inhibition (using DMH-1) during Day-2 to Day-4 compromised cardiac induction and mildly reduced pulmonary specification.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, BMP inhibition (using DMH-1) during the same time period compromised cardiac induction and mildly reduced pulmonary specification; while exogenous BMP4 supplementation enhanced cardiac induction but inhibited pulmonary specification (Figure 3d, e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "c98095be-5850-49e2-abad-3f4cf8d87c1f",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C32",
+      "claim": "Exogenous BMP4 supplementation enhanced cardiac induction but inhibited pulmonary specification.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, BMP inhibition (using DMH-1) during the same time period compromised cardiac induction and mildly reduced pulmonary specification; while exogenous BMP4 supplementation enhanced cardiac induction but inhibited pulmonary specification (Figure 3d, e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "efdd9f9e-8d38-4993-92a7-09baf6174d4b",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C33",
+      "claim": "Endogenous BMP signaling is primarily required for cardiac induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that endogenous BMP signaling is primarily required for cardiac induction and that exogenous augmentation of BMP signaling further favors the cardiac lineage at the expense of the pulmonary lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that BMP inhibition compromises cardiac induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "7776884e-453f-485d-a7e4-7a1f15d60f0a",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C34",
+      "claim": "Exogenous augmentation of BMP signaling further favors the cardiac lineage at the expense of the pulmonary lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that endogenous BMP signaling is primarily required for cardiac induction and that exogenous augmentation of BMP signaling further favors the cardiac lineage at the expense of the pulmonary lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that BMP4 supplementation enhances cardiac induction but inhibits pulmonary specification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "a3f1b0c6-369b-4bbe-8022-11bdb20457ee",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C35",
+      "claim": "Combined TGF-\u03b2 and WNT inhibition enhanced both cardiac and pulmonary specification.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that combined TGF-\u03b2 and WNT inhibition enhanced both cardiac and pulmonary specification, with TGF-\u03b2 inhibition having a more profound effect on the cardiac lineage (Figure 3\u2014figure supplement 2b,c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3\u2014figure supplement 2b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "28dad109-138d-4b4d-9bce-70d35f2cd1d9",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C36",
+      "claim": "TGF-\u03b2 inhibition has a more profound effect on cardiac lineage specification than WNT inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that combined TGF-\u03b2 and WNT inhibition enhanced both cardiac and pulmonary specification, with TGF-\u03b2 inhibition having a more profound effect on the cardiac lineage (Figure 3\u2014figure supplement 2b,c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3\u2014figure supplement 2b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "0ba547b2-7fd7-4f6b-a235-459cdb133bf7",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C37",
+      "claim": "There was no significant differences observed at protein and gene expression level of NKX2.1 and NKX2.5 comparing ventralization in the presence and absence of exogenous BMP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, there was no significant differences observed at protein and gene expression level of NKX2.1 and NKX2.5 comparing ventralization in the presence and absence of exogenous BMP4 (Figure 3\u2014figure supplement 3b,c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3\u2014figure supplement 3b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "8a62148d-f2d5-47f5-be0a-f65ec51c490a",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C38",
+      "claim": "Endogenous BMP4 was required during ventralization stage of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, endogenous BMP4 was indeed required during this stage of differentiation, as inhibition of BMP4 using DMH1 significantly compromised the induction of both NKX2.1 and NKX2.5 (Figure 3\u2014figure supplement 3b,c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3\u2014figure supplement 3b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "2b1bdd9d-a7cf-4726-b6ba-e4ed7f313d58",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C39",
+      "claim": "Inhibition of BMP4 using DMH1 significantly compromised the induction of both NKX2.1 and NKX2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, endogenous BMP4 was indeed required during this stage of differentiation, as inhibition of BMP4 using DMH1 significantly compromised the induction of both NKX2.1 and NKX2.5 (Figure 3\u2014figure supplement 3b,c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data shown in Figure 3\u2014figure supplement 3b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "cc71fb2c-5882-48d7-9b95-0ad4edd33a70",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C40",
+      "claim": "Upon transition from 2D to 3D suspension culture in CKDCI medium, the co-induced cardio-pulmonary progenitors self-assembled into pulmonary-centered, concentric, dual-lineage \u03bcTs during the overnight culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon transition from 2D to 3D suspension culture in CKDCI medium, the co-induced cardio-pulmonary progenitors self-assembled into pulmonary-centered, concentric, dual-lineage \u03bcTs during the overnight culture (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by whole mount staining shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "2cd9a92b-e34d-4417-97d7-d2e9337fb709",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C41",
+      "claim": "Following 3 days of 3D suspension culture in CKDCI medium, effective AT2 maturation was observed in the cardio-pulmonary \u03bcTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 3 days of 3D suspension culture in CKDCI medium, effective AT2 maturation was observed in the cardio-pulmonary \u03bcTs as indicated by robust SFTPCTdTomato fluorescence (Figure 4c) and gene expression (Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence imaging in Figure 4c and qPCR data in Figure 4\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "58851ca6-eee8-4a61-b0b1-329ffc159f18",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C42",
+      "claim": "The SFTPCTdTomato fluorescence could sustained up to Day-29 (2 weeks in alveolar maturation medium).",
+      "claim_type": "EXPLICIT",
+      "source": "The SFTPCTdTomato fluorescence could sustained up to Day-29 (2 weeks in alveolar maturation medium) (Figure 4\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence imaging shown in Figure 4\u2014figure supplement 1a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "d09c9729-e942-4038-8d41-8a6f45ee9b6e",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C43",
+      "claim": "Day-15 cardio-pulmonary progenitors cultured on transwell insert for air-liquid interface (ALI) culture failed to detect obvious AT2 induction by Day-18.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, we cultured Day-15 cardio-pulmonary progenitors on top of the transwell insert for air-liquid interface (ALI) culture, on 2D plastic surface for regular submerged culture or embedded in Growth Factor Reduced (GFR) Matrigel, and failed to detect obvious AT2 induction by Day-18 (Figure 4c, Figure 4\u2014figure supplement 2, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence imaging shown in Figure 4c and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "8577024f-ed94-4741-aa11-084fa0de8ff4",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C44",
+      "claim": "NKX2.1 and SFTPC gene expression was significantly upregulated in 3D suspension culture on Day-18 compared to the starting Day-15 cells or cells following ALI maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observations using fluorescence reporters, NKX2.1 and SFTPC gene expression was significantly upregulated in 3D suspension culture on Day-18 compared to the starting Day-15 cells or cells following ALI maturation (Figure 4d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "e8b40109-e92e-4a2b-ad95-d809e1404ea5",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C45",
+      "claim": "3D suspension culture is a robust platform to expedite alveolar maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrated 3D suspension culture as a robust platform to expedite alveolar maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing effective AT2 maturation in 3D suspension culture compared to other culture methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "3896c3da-98d7-49d6-ace6-231722e0f903",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C46",
+      "claim": "In the absence of accompanying cardiac cells, NKX2.1GFP+ lung progenitors could not achieve as effective AT2 maturation as what is observed in cardio-pulmonary \u03bcTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of accompanying cardiac cells, although NKX2.1GFP+ lung progenitors can be robustly induced and maintained, their alveolar maturation (as indicated by SFTPCtdTomato reporter) following 3 days of maturation in 3D suspension culture was dramatically diminished compared to the cardio-pulmonary group (Figure 4g\u2013l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorescence imaging and qPCR data shown in Figure 4g-n.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "fb897d5f-1fec-424f-b986-a1166475dafa",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C47",
+      "claim": "Cardio-pulmonary \u03bcTs possessed a concentric arrangement of NKX2.1+ cells, surrounded by NKX2.5+ cells on Day-18.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole mount imaging of \u03bcTs on Day-18 showed pulmonary-only differentiation mainly comprised NKX2.1+ cells, while cardio-pulmonary \u03bcTs possessed a concentric arrangement of NKX2.1+ cells, surrounded by NKX2.5+ cells (Figure 4i and j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by whole mount staining shown in Figure 4i-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "22f755a1-7e87-40e0-8079-f42730ca136c",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C48",
+      "claim": "The cardiac lineage can serve as a cellular niche in supporting alveolar maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the cardiac lineage can serve as a cellular niche in supporting alveolar maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that alveolar maturation is diminished in the absence of cardiac cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "997140ab-62f6-4e5a-b5d7-e66480432587",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C49",
+      "claim": "The cardio-pulmonary co-induction protocol is reproducible using another independent hiPSC line (BU1).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the reproducibility of our cardio-pulmonary co-induction protocol using another independent hiPSC line (BU1), including effective induction of endodermal and mesodermal mixture on Day-4 (Figure 4\u2014figure supplement 5a,b), induction of pulmonary (NKX2.1) and cardiac (NKX2.5) progenitors on Day-15 (Figure 4\u2014figure supplement 5c,d), and maturation of alveolar type two epithelium (Pro-SFTPC), and cardiac structural markers (cTnT and Sarcomeric Alpha Actinin) on Day-18 \u03bcTs (Figure 4\u2014figure supplement 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "1446170f-4acc-47b1-a631-316ea06f2464",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C50",
+      "claim": "Upon CHIR removal, the cardiac and pulmonary components within each dual-lineage \u03bcT effectively reorganized over time and eventually segregated from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, upon CHIR removal, the cardiac and pulmonary components within each dual-lineage \u03bcT, which was initially arranged in the pulmonary-centered, concentric manner (Figure 5b), effectively reorganized over time and eventually segregated from each other (Figure 5a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological analysis shown in Figure 5a-b and time-lapse imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "35f1f0bd-f9a8-4540-b149-f8d0c8221c05",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C51",
+      "claim": "Cardio-pulmonary segregation took place in both CKDCI and KDCI medium conditions, but was significantly expedited by the withdrawal of CHIR.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the segregation process in the presence (CKDCI) and absence (KDCI) of CHIR, and found that although cardio-pulmonary segregation took place in both medium conditions, it was significantly expedited by the withdrawal of CHIR (Figure 5d,).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "66d12d55-7d6b-406d-a31d-205640393982",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C52",
+      "claim": "Inhibition of canonical (IWP4) and non-canonical (NSC668036) WNT signaling did not obviously affect the segregation process.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the requirement of endogenous WNT signaling for this segregation process, we introduced inhibitors of canonical (IWP4) and non-canonical (NSC668036, a Dishevelled inhibitor) WNT signaling (Li and Wang, 2018), and did not detect any obvious difference in the segregation process as compared to the control KDCI condition (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "c0743ea0-a8b0-47df-b6da-b56c9f66dbed",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C53",
+      "claim": "Cardiac contraction was observed 7 days following CHIR withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with the cardio-pulmonary segregation, cardiac contraction was observed 7 days following CHIR withdrawal (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by video evidence (Video 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "56327d31-78db-484c-a91d-8c88e5d8463e",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C54",
+      "claim": "Lamellar bodies were detected in cardio-pulmonary \u03bcTs by transmission electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of AT2 cells were further confirmed by the detection of the presence of lamellar bodies by transmission electron microscopy (Figure 6a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TEM imaging shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "01de3f29-f869-48f8-b6fc-dc737ebe0ff6",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C55",
+      "claim": "Cardio-pulmonary \u03bcTs expressed pro-SFTPC+ and pro-SFTPB+ markers.",
+      "claim_type": "EXPLICIT",
+      "source": "and by the positive immunofluorescence staining of pro-SFTPC+ (Figure 6b) and pro-SFTPB+ (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 6b and Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "a5c62784-47f6-48b5-bc42-46f76d6214f0",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C56",
+      "claim": "HOPX+ cells were observed in the \u03bcTs, suggesting the presence of AT1-like cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed HOPX+ cells in the \u03bcTs (Figure 6b), and upregulated HOPX gene expression (Figure 6\u2014figure supplement 1b) suggesting the presence of AT1-like cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data in Figure 6b and qPCR data in Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "9da24ab3-d04d-4897-b5fe-603c8f7ad8bd",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C57",
+      "claim": "S100A4 staining indicated presence of mesenchyme in the \u03bcTs.",
+      "claim_type": "EXPLICIT",
+      "source": "S100A4 staining indicated presence of mesenchyme in the \u03bcTs (Figure 6\u2014figure supplement 1c), which may also play an important role in promoting alveologenesis Hawkins et al., 2017.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 6\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "9df82d65-31aa-44a0-8f18-41f3a1542eed",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C58",
+      "claim": "Cardio-pulmonary \u03bcTs did not express markers for proximal airway epithelium such as ciliated cells (FOXJ1), secretory cells (MUC5AC) and basal cells (p63).",
+      "claim_type": "EXPLICIT",
+      "source": "In the meantime, these \u03bcTs did not express markers for proximal airway epithelium such as ciliated cells (FOXJ1) (Figure 6\u2014figure supplement 1d), secretory cells (MUC5AC) (Figure 6\u2014figure supplement 1e) and basal cells (p63) (Figure 6\u2014figure supplement 1f), which can be readily observed in airway \u03bcT engineered from bronchial epithelial cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 6\u2014figure supplement 1d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "a47136c4-ae22-48a1-ae12-5bc7dae47b23",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C59",
+      "claim": "Cardiac elements within the \u03bcTs exhibited the striated pattern as indicated by cTnT and Sarcomeric Alpha Actinin staining.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, cardiac elements within the \u03bcTs exhibited the striated pattern as indicated by cTnT and Sarcomeric Alpha Actinin staining (Figure 6c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 6c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "0e2f8334-0d6a-4337-9e1e-43e7554aeeac",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C60",
+      "claim": "Cardiac contractile function was confirmed via the detection of calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "The cardiac contractile function was confirmed via the detection of calcium influx (Video 2), and its gradual reduction with increasing concentrations of Verapamil, a calcium channel blocker (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Video 2 and Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "338f69e2-7c35-4fdb-a1e6-5438dbc53c37",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C61",
+      "claim": "Cardiac contractile function showed gradual reduction with increasing concentrations of Verapamil, a calcium channel blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "The cardiac contractile function was confirmed via the detection of calcium influx (Video 2), and its gradual reduction with increasing concentrations of Verapamil, a calcium channel blocker (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "ca9cdd61-5012-4bb4-8247-019fda18947a",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C62",
+      "claim": "Both endodermal and mesodermal specification is facilitated by the inhibition of insulin and phosphoinositide 3-kinase signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, both endodermal and mesodermal specification is facilitated by the inhibition of insulin and phosphoinositide 3-kinase signaling (Lian et al., 2012; Lian et al., 2013; Mou et al., 2012), and can be induced by a similar set of paracrine factors, including WNT, BMP, and TGF-\u03b2 (Kattman et al., 2011; D'Amour et al., 2005; Loh, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "08973255-d62c-4673-ba57-e048176db067",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C63",
+      "claim": "Endodermal and mesodermal specification can be induced by a similar set of paracrine factors, including WNT, BMP, and TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, both endodermal and mesodermal specification is facilitated by the inhibition of insulin and phosphoinositide 3-kinase signaling (Lian et al., 2012; Lian et al., 2013; Mou et al., 2012), and can be induced by a similar set of paracrine factors, including WNT, BMP, and TGF-\u03b2 (Kattman et al., 2011; D'Amour et al., 2005; Loh, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "3799b1da-cb94-47f1-86d7-d2f1b17b2b13",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C64",
+      "claim": "The quantitative combination of WNT, BMP, and TGF-\u03b2 signaling determines endoderm versus mesoderm bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is the quantitative combination of these signaling that determines endoderm versus mesoderm bifurcation (Kattman et al., 2011; Loh, 2014; Kim, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "9aafdc09-824b-467f-b3be-6ccce30bee51",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C65",
+      "claim": "Endoderm and mesoderm share primitive streak origin during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the shared primitive streak origin of both germ layers during gastrulation (Levak-Svajger and Svajger, 1974; Lawson et al., 1991; Tam and Beddington, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "3b04a7c9-9169-4df3-89ae-0fe88a7a70c4",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C66",
+      "claim": "WNT inhibition facilitates the transition from definitive endoderm to anterior foregut endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, WNT inhibition not only facilitates the transition from definitive endoderm to anterior foregut endoderm (Loh, 2014; Spence et al., 2011), but it also promotes cardiac mesoderm emergence (Lian et al., 2012; Willems et al., 2011; Wang et al., 2011; Ren et al., 2011; Tran, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "94ab814d-f401-4071-9d7f-0438bb55ff26",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C67",
+      "claim": "WNT inhibition promotes cardiac mesoderm emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, WNT inhibition not only facilitates the transition from definitive endoderm to anterior foregut endoderm (Loh, 2014; Spence et al., 2011), but it also promotes cardiac mesoderm emergence (Lian et al., 2012; Willems et al., 2011; Wang et al., 2011; Ren et al., 2011; Tran, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "1f56431b-5205-494e-9bb8-438ca2c95759",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C68",
+      "claim": "Retinoic acid (RA) signaling is required for the induction and maturation of both cardiac and pulmonary progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, retinoic acid (RA) signaling is required for the induction and maturation of both cardiac and pulmonary progenitors (Huang et al., 2013; Jacob et al., 2017; Mou et al., 2012; Chen, 2007; McCauley et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "2644ab50-1e4c-4301-9383-e70754435c36",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C69",
+      "claim": "Common paracrine regulation of paralleled cardiac and pulmonary specification is consistent with their close spatial coordinates within the embryonic body planning.",
+      "claim_type": "EXPLICIT",
+      "source": "These common paracrine regulation of paralleled cardiac and pulmonary specification is consistent with their close spatial coordinates within the embryonic body planning, as demonstrated by shared HOX genes expression and functional requirement (Lufkin et al., 1991; Makki and Capecchi, 2012; Chisaka and Capecchi, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "176fa420-e703-4edd-8447-d58b27a68a83",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C70",
+      "claim": "Cardiac and pulmonary development share HOX genes expression and functional requirement.",
+      "claim_type": "EXPLICIT",
+      "source": "These common paracrine regulation of paralleled cardiac and pulmonary specification is consistent with their close spatial coordinates within the embryonic body planning, as demonstrated by shared HOX genes expression and functional requirement (Lufkin et al., 1991; Makki and Capecchi, 2012; Chisaka and Capecchi, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "5b4f6c4e-5d57-4b2f-83af-10560a956d2f",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C71",
+      "claim": "Continuous exposure to WNT activation is known to delay contractile maturation of cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial-temporal regulation of WNT is crucial for early cardiac differentiation (Lian et al., 2012; Zhao et al., 2019; Buikema et al., 2020), however, continuous exposure to WNT activation is known to delay contractile maturation of cardiomyocytes (Fan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research (Fan et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "d875705f-80bf-4371-b8a2-cfb414937586",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C72",
+      "claim": "Exogenous WNT activation using CHIR is essential for inducing AT2 maturation and its maintenance until the endogenous AT2 niche is established.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, exogenous WNT activation using CHIR is essential for inducing AT2 maturation and its maintenance until the endogenous AT2 niche is established (Jacob et al., 2017; Abdelwahab et al., 2019; Nabhan et al., 2018; Frank et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "bab614ed-c1c0-4b7f-9f59-ce73e71fff41",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C73",
+      "claim": "The multilineage differentiation model offers an experimentally tractable system for investigating human cardio-pulmonary interaction and tissue boundary formation during embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that our multilineage differentiation model will offer an experimentally tractable system for investigating human cardio-pulmonary interaction and tissue boundary formation during embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "55c0c955-e88c-4980-b1bb-7b5218fa0a2b",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "claim_id": "C74",
+      "claim": "The model could be useful for studying congenital diseases affecting both cardiovascular and pulmonary systems, such as congenital diaphragmatic hernia.",
+      "claim_type": "EXPLICIT",
+      "source": "We also expect this work to be of potential use for studying congenital diseases affecting both cardiovascular and pulmonary systems, such as congenital diaphragmatic hernia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3326fe75-fc35-4e1e-bd26-b0ab461f26a5",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A stepwise differentiation strategy enables simultaneous specification of cardiac and pulmonary lineages from hiPSCs through three stages: balanced mesoderm/endoderm induction via WNT activation (Stage-1), combined WNT/TGF-\u03b2 inhibition for lineage specification (Stage-2), and WNT reactivation with retinoic acid for concurrent emergence of NKX2.5+ cardiac and NKX2.1+ lung progenitors (Stage-3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 describe the core protocol and are strongly supported by comprehensive experimental data in Figures 1-3, including immunofluorescence, qPCR, and FACS analysis demonstrating successful co-induction of both lineages. The stepwise approach is well-documented with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "df29ce11-ca12-4671-9023-cc5ca86f6950",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optimal cardio-pulmonary co-differentiation requires precise CHIR dosage (7 \u03bcM) and exposure duration (48 hours). Lower concentrations (4 \u03bcM) fail to induce either lineage effectively, while higher concentrations (10 \u03bcM) favor mesodermal specification. Extended exposure beyond 48 hours enhances cardiac specification but reduces pulmonary induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 and C23-C25 are well-supported by dose-response and time-course experiments shown in Figures 1d and 2f-h, with appropriate statistical analysis (n=3, p<0.001). The data clearly demonstrate the dose-dependent and time-dependent effects of CHIR on lineage specification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "96468f67-f137-4d73-95a5-c09419f7ada9",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Day-15 cells pre-exposed to 7 \u03bcM CHIR generate robust co-induction of NKX2.5+ cardiac and NKX2.1+ pulmonary progenitors. The NKX2.1+ population is lung-specific (not neural or thyroid), lacks airway markers (p63-negative), while NKX2.5+ cells co-express cTnT and some show atrial specification (COUPTFII+) but have not yet differentiated into ventricular, endocardial, or epicardial subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C22 are supported by immunofluorescence data in Figure 2c-e and supplementary figures showing appropriate lineage markers. The characterization is thorough with negative controls for alternative NKX2.1+ fates and assessment of cardiac subtype markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "e2f2593b-5fdb-4b0a-bde6-31de3561b493",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Endogenous nodal signaling is required for cardio-pulmonary co-induction, as nodal inhibition (A8301) terminates both lineages. However, high-level nodal activation through exogenous Activin A supplementation drives pulmonary-only differentiation, indicating that nodal signaling levels differentially regulate cardiac versus pulmonary fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by experimental data in Figure 3a-c showing that A8301 blocks both lineages while Activin A promotes only pulmonary differentiation. However, C29-C30 are inferences from the data rather than direct measurements of endogenous signaling levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "e4cdcdee-5b6e-4d79-8d88-68f837c9579b",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Endogenous BMP signaling is primarily required for cardiac induction, as BMP inhibition (DMH-1) compromises cardiac specification and mildly reduces pulmonary induction. Exogenous BMP4 supplementation enhances cardiac induction but inhibits pulmonary specification, demonstrating that BMP signaling levels favor cardiac lineage at the expense of pulmonary lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by data in Figure 3d-f with appropriate statistical analysis. The differential effects of BMP modulation on the two lineages are clearly demonstrated, though C33-C34 represent interpretations of the mechanistic implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "5c1e4fe3-84b5-48ea-968a-4930e8344a7d",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Combined TGF-\u03b2 and WNT inhibition during Stage-2 enhances both cardiac and pulmonary specification, with TGF-\u03b2 inhibition having a more profound effect on cardiac lineage than WNT inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by data in Figure 3\u2014figure supplement 2b-d showing enhanced specification with combined inhibition and differential effects of each inhibitor. Statistical analysis confirms significance (n=3, p<0.001).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "966dcb25-1514-4470-a9ea-989134077536",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "During the ventralization stage (Stage-3), exogenous BMP4 supplementation does not significantly affect NKX2.1 or NKX2.5 expression levels compared to control conditions. However, endogenous BMP4 is required during this stage, as BMP inhibition (DMH1) significantly compromises induction of both cardiac and pulmonary progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by data in Figure 3\u2014figure supplement 3b-d. The finding that exogenous BMP4 has no additional effect while inhibition blocks differentiation suggests endogenous BMP4 is sufficient but necessary during ventralization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "7fab734d-fa2a-4b8e-bf26-8eca6afb1ae8",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Maintaining hiPSCs in mTESR1 Plus medium during initial CHIR treatment is critical for effective cardio-pulmonary differentiation compared to using RPMI1640 supplemented with B-27 minus insulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by immunofluorescence data in Figure 3\u2014figure supplement 1 showing differential outcomes with different basal media. However, the mechanism underlying this requirement is not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "e2b08d19-6c83-4126-b73e-2499a9b135f6",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "3D suspension culture in CKDCI medium enables rapid AT2 maturation within 3 days, as demonstrated by robust SFTPC expression and reporter activity. Co-induced cardio-pulmonary progenitors self-assemble into pulmonary-centered, concentric dual-lineage \u03bcTs. In contrast, ALI culture, 2D submerged culture, or Matrigel embedding fail to induce obvious AT2 differentiation by Day-18.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are strongly supported by fluorescence imaging (Figure 4c), qPCR data (Figure 4d-e), and comparison across multiple culture platforms. The 3D suspension culture platform shows clear superiority for AT2 induction with appropriate controls and statistical validation (n=3, p<0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "000fb42c-74a0-45e0-9254-2230970f2ee5",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The cardiac lineage serves as an essential cellular niche supporting alveolar maturation. In the absence of accompanying cardiac cells (achieved through Activin A treatment), NKX2.1+ lung progenitors show dramatically diminished AT2 maturation compared to cardio-pulmonary \u03bcTs, which possess a concentric arrangement of NKX2.1+ cells surrounded by NKX2.5+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by comparative experiments in Figure 4g-n showing reduced SFTPC expression in pulmonary-only cultures. The spatial organization is documented by whole mount imaging (Figure 4i-j). However, the specific mechanisms by which cardiac cells support alveolar maturation are not elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "3f535f4f-e65c-4007-9752-ec3a2e45d671",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The cardio-pulmonary co-induction protocol is reproducible in an independent hiPSC line (BU1), demonstrating effective endoderm/mesoderm induction, cardiac and pulmonary progenitor specification, and maturation of AT2 and cardiac markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by immunofluorescence data in Figure 4\u2014figure supplement 5 showing successful differentiation in BU1 line. This validation in a second cell line strengthens confidence in the protocol's robustness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "97ec2325-ee08-4418-b94f-1d123cc454a4",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Upon CHIR withdrawal, cardiac and pulmonary components within dual-lineage \u03bcTs reorganize and segregate from their initial concentric arrangement. This segregation occurs in both CKDCI and KDCI conditions but is significantly expedited by CHIR removal. Inhibition of canonical or non-canonical WNT signaling does not obviously affect the segregation process. Cardiac contraction initiates 7 days following CHIR withdrawal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by time-lapse imaging, quantitative analysis (Figure 5d), and video documentation (Video 1). The segregation phenomenon is well-documented with statistical analysis (n=30, p<0.001). However, the molecular mechanisms driving segregation remain unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "bb7a0b05-2612-45b8-bce4-b105d3ebf50a",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cardio-pulmonary \u03bcTs contain mature AT2 cells with lamellar bodies (by TEM) expressing pro-SFTPC and pro-SFTPB, as well as HOPX+ AT1-like cells and S100A4+ mesenchyme. The \u03bcTs lack proximal airway markers including ciliated cells (FOXJ1-), secretory cells (MUC5AC-), and basal cells (p63-).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by TEM imaging (Figure 6a), immunofluorescence (Figure 6b and supplements), and qPCR data. The characterization is comprehensive with appropriate positive controls (airway \u03bcTs) and negative markers to exclude alternative cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "5eda79c0-a48c-4a1b-8256-06a233030b6c",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cardiac elements within \u03bcTs exhibit striated patterns (cTnT+ and Sarcomeric Alpha Actinin+) and demonstrate functional contractility with calcium influx that is dose-dependently inhibited by the calcium channel blocker Verapamil.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by immunofluorescence showing striated patterns (Figure 6c-d) and calcium imaging demonstrating functional contractility with pharmacological validation (Figure 6e, Video 2). The dose-response to Verapamil provides functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "237dafdd-5795-45d1-a7c2-971d6531b0c6",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has established that extensive crosstalk between developing heart and lung is critical for morphogenesis, mediated by signaling pathways (WNT from second heart field induces pulmonary endoderm; pulmonary SHH signals back to regulate atrial septation) and multipotent mesodermal progenitors that can contribute to both cardiac and pulmonary lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately summarize prior research with appropriate citations. These provide context for the current work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "d3380e6e-c10d-4c68-87c8-d658472ad8de",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "WNT induces primitive streak formation after 48 hours, and newly formed primitive streak cells provide additional endogenous WNT, BMP, and Nodal signaling to pattern cells toward mesoderm and endoderm lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 cite prior work (Martyn et al., 2019) to explain the authors' observations. The citation is appropriate and consistent with the observed CHIR effects, though not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Endodermal and mesodermal specification share common regulatory mechanisms including insulin/PI3K inhibition, induction by WNT/BMP/TGF-\u03b2 signaling, WNT inhibition for lineage progression, and retinoic acid requirement. These shared mechanisms are consistent with their primitive streak origin and close spatial positioning during embryogenesis as evidenced by shared HOX gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 accurately summarize established knowledge from prior research with appropriate citations. These provide the conceptual framework justifying the co-differentiation approach but represent background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "6e398583-a386-4c9f-a119-b38dc10b102e",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Continuous WNT activation delays cardiomyocyte contractile maturation, while exogenous WNT activation via CHIR is essential for AT2 maturation and maintenance until endogenous AT2 niche establishment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 cite prior research to explain the temporal WNT requirements observed in the segregation experiments. The citations are appropriate and consistent with the experimental observations of delayed cardiac contraction and AT2 maturation requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    },
+    {
+      "id": "bd57319c-7357-4474-968d-7ce2df76fb2d",
+      "content_id": "ae63ba41-37e0-4d79-b5c4-1b75221c6794",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The multilineage differentiation model offers an experimentally tractable system for investigating human cardio-pulmonary interaction, tissue boundary formation during embryogenesis, and studying congenital diseases affecting both cardiovascular and pulmonary systems such as congenital diaphragmatic hernia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 are speculative statements about potential future applications. While the model shows promise, these applications have not been demonstrated in the current work. The utility for studying disease mechanisms or developmental interactions requires future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:38.253455Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a79c2e7a-015c-45ff-98cf-7234f39b332c",
+      "result_id": "3326fe75-fc35-4e1e-bd26-b0ab461f26a5"
+    },
+    {
+      "claim_id": "963b988d-fa09-4757-b106-a6ad61a6ace4",
+      "result_id": "3326fe75-fc35-4e1e-bd26-b0ab461f26a5"
+    },
+    {
+      "claim_id": "cf2a0b5e-cb59-4c27-8b7c-2776ce01752e",
+      "result_id": "3326fe75-fc35-4e1e-bd26-b0ab461f26a5"
+    },
+    {
+      "claim_id": "8a6bd38c-d899-4bf1-b345-16bc9a2b6015",
+      "result_id": "3326fe75-fc35-4e1e-bd26-b0ab461f26a5"
+    },
+    {
+      "claim_id": "dcff08d3-0d19-4e67-aabc-a29148ea144c",
+      "result_id": "df29ce11-ca12-4671-9023-cc5ca86f6950"
+    },
+    {
+      "claim_id": "d20c260d-76d4-4a48-a86c-24426186acf0",
+      "result_id": "df29ce11-ca12-4671-9023-cc5ca86f6950"
+    },
+    {
+      "claim_id": "a594abf0-2c87-4c79-ae77-d93e15e7ece7",
+      "result_id": "df29ce11-ca12-4671-9023-cc5ca86f6950"
+    },
+    {
+      "claim_id": "8b069ca7-4a98-4b5b-b2ef-f3f020d68968",
+      "result_id": "df29ce11-ca12-4671-9023-cc5ca86f6950"
+    },
+    {
+      "claim_id": "22c6dd26-792f-43e4-b7f7-fc374e9df87a",
+      "result_id": "df29ce11-ca12-4671-9023-cc5ca86f6950"
+    },
+    {
+      "claim_id": "b4cc153a-da1a-41ab-94cc-3c42fcd87782",
+      "result_id": "df29ce11-ca12-4671-9023-cc5ca86f6950"
+    },
+    {
+      "claim_id": "39d64602-672b-4c29-a21f-bbc763c88493",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "22ce14c9-581a-40e1-a94b-b9095c2b8e12",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "0a36527a-13d6-48df-aacb-d9210a992116",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "55ec6aba-d921-43a0-9ff2-8fd589720bb8",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "69c4086f-00f0-437d-988e-cc381bd3ef62",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "ed130544-c9c5-413a-8fd2-9d722b9cdd2d",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "8b425061-25f5-4dc6-933c-4670f1617c59",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "56e8e910-e7ed-4b2b-a176-99b97e4fae1a",
+      "result_id": "96468f67-f137-4d73-95a5-c09419f7ada9"
+    },
+    {
+      "claim_id": "1683acbf-494a-4928-baec-3ff4b51234f9",
+      "result_id": "e2f2593b-5fdb-4b0a-bde6-31de3561b493"
+    },
+    {
+      "claim_id": "2a53132f-d8fc-4012-b35d-ae30f4299a23",
+      "result_id": "e2f2593b-5fdb-4b0a-bde6-31de3561b493"
+    },
+    {
+      "claim_id": "0c3ac782-e651-425f-b588-a60e4f4fb418",
+      "result_id": "e2f2593b-5fdb-4b0a-bde6-31de3561b493"
+    },
+    {
+      "claim_id": "0d7ccb3e-c9e7-45e1-8eb8-c57b8fa74cdf",
+      "result_id": "e2f2593b-5fdb-4b0a-bde6-31de3561b493"
+    },
+    {
+      "claim_id": "d9730010-ca50-445d-abca-7ce91d0a1865",
+      "result_id": "e4cdcdee-5b6e-4d79-8d88-68f837c9579b"
+    },
+    {
+      "claim_id": "c98095be-5850-49e2-abad-3f4cf8d87c1f",
+      "result_id": "e4cdcdee-5b6e-4d79-8d88-68f837c9579b"
+    },
+    {
+      "claim_id": "efdd9f9e-8d38-4993-92a7-09baf6174d4b",
+      "result_id": "e4cdcdee-5b6e-4d79-8d88-68f837c9579b"
+    },
+    {
+      "claim_id": "7776884e-453f-485d-a7e4-7a1f15d60f0a",
+      "result_id": "e4cdcdee-5b6e-4d79-8d88-68f837c9579b"
+    },
+    {
+      "claim_id": "a3f1b0c6-369b-4bbe-8022-11bdb20457ee",
+      "result_id": "5c1e4fe3-84b5-48ea-968a-4930e8344a7d"
+    },
+    {
+      "claim_id": "28dad109-138d-4b4d-9bce-70d35f2cd1d9",
+      "result_id": "5c1e4fe3-84b5-48ea-968a-4930e8344a7d"
+    },
+    {
+      "claim_id": "0ba547b2-7fd7-4f6b-a235-459cdb133bf7",
+      "result_id": "966dcb25-1514-4470-a9ea-989134077536"
+    },
+    {
+      "claim_id": "8a62148d-f2d5-47f5-be0a-f65ec51c490a",
+      "result_id": "966dcb25-1514-4470-a9ea-989134077536"
+    },
+    {
+      "claim_id": "2b1bdd9d-a7cf-4726-b6ba-e4ed7f313d58",
+      "result_id": "966dcb25-1514-4470-a9ea-989134077536"
+    },
+    {
+      "claim_id": "ce7aaaee-6805-49f1-845d-9da100db90fd",
+      "result_id": "7fab734d-fa2a-4b8e-bf26-8eca6afb1ae8"
+    },
+    {
+      "claim_id": "cc71fb2c-5882-48d7-9b95-0ad4edd33a70",
+      "result_id": "e2b08d19-6c83-4126-b73e-2499a9b135f6"
+    },
+    {
+      "claim_id": "2cd9a92b-e34d-4417-97d7-d2e9337fb709",
+      "result_id": "e2b08d19-6c83-4126-b73e-2499a9b135f6"
+    },
+    {
+      "claim_id": "58851ca6-eee8-4a61-b0b1-329ffc159f18",
+      "result_id": "e2b08d19-6c83-4126-b73e-2499a9b135f6"
+    },
+    {
+      "claim_id": "d09c9729-e942-4038-8d41-8a6f45ee9b6e",
+      "result_id": "e2b08d19-6c83-4126-b73e-2499a9b135f6"
+    },
+    {
+      "claim_id": "8577024f-ed94-4741-aa11-084fa0de8ff4",
+      "result_id": "e2b08d19-6c83-4126-b73e-2499a9b135f6"
+    },
+    {
+      "claim_id": "e8b40109-e92e-4a2b-ad95-d809e1404ea5",
+      "result_id": "e2b08d19-6c83-4126-b73e-2499a9b135f6"
+    },
+    {
+      "claim_id": "3896c3da-98d7-49d6-ace6-231722e0f903",
+      "result_id": "000fb42c-74a0-45e0-9254-2230970f2ee5"
+    },
+    {
+      "claim_id": "fb897d5f-1fec-424f-b986-a1166475dafa",
+      "result_id": "000fb42c-74a0-45e0-9254-2230970f2ee5"
+    },
+    {
+      "claim_id": "22f755a1-7e87-40e0-8079-f42730ca136c",
+      "result_id": "000fb42c-74a0-45e0-9254-2230970f2ee5"
+    },
+    {
+      "claim_id": "997140ab-62f6-4e5a-b5d7-e66480432587",
+      "result_id": "3f535f4f-e65c-4007-9752-ec3a2e45d671"
+    },
+    {
+      "claim_id": "1446170f-4acc-47b1-a631-316ea06f2464",
+      "result_id": "97ec2325-ee08-4418-b94f-1d123cc454a4"
+    },
+    {
+      "claim_id": "35f1f0bd-f9a8-4540-b149-f8d0c8221c05",
+      "result_id": "97ec2325-ee08-4418-b94f-1d123cc454a4"
+    },
+    {
+      "claim_id": "66d12d55-7d6b-406d-a31d-205640393982",
+      "result_id": "97ec2325-ee08-4418-b94f-1d123cc454a4"
+    },
+    {
+      "claim_id": "c0743ea0-a8b0-47df-b6da-b56c9f66dbed",
+      "result_id": "97ec2325-ee08-4418-b94f-1d123cc454a4"
+    },
+    {
+      "claim_id": "56327d31-78db-484c-a91d-8c88e5d8463e",
+      "result_id": "bb7a0b05-2612-45b8-bce4-b105d3ebf50a"
+    },
+    {
+      "claim_id": "01de3f29-f869-48f8-b6fc-dc737ebe0ff6",
+      "result_id": "bb7a0b05-2612-45b8-bce4-b105d3ebf50a"
+    },
+    {
+      "claim_id": "a5c62784-47f6-48b5-bc42-46f76d6214f0",
+      "result_id": "bb7a0b05-2612-45b8-bce4-b105d3ebf50a"
+    },
+    {
+      "claim_id": "9da24ab3-d04d-4897-b5fe-603c8f7ad8bd",
+      "result_id": "bb7a0b05-2612-45b8-bce4-b105d3ebf50a"
+    },
+    {
+      "claim_id": "9df82d65-31aa-44a0-8f18-41f3a1542eed",
+      "result_id": "bb7a0b05-2612-45b8-bce4-b105d3ebf50a"
+    },
+    {
+      "claim_id": "a47136c4-ae22-48a1-ae12-5bc7dae47b23",
+      "result_id": "5eda79c0-a48c-4a1b-8256-06a233030b6c"
+    },
+    {
+      "claim_id": "0e2f8334-0d6a-4337-9e1e-43e7554aeeac",
+      "result_id": "5eda79c0-a48c-4a1b-8256-06a233030b6c"
+    },
+    {
+      "claim_id": "338f69e2-7c35-4fdb-a1e6-5438dbc53c37",
+      "result_id": "5eda79c0-a48c-4a1b-8256-06a233030b6c"
+    },
+    {
+      "claim_id": "31cd52c0-8802-4de4-ba93-8ae3561bcab6",
+      "result_id": "237dafdd-5795-45d1-a7c2-971d6531b0c6"
+    },
+    {
+      "claim_id": "a39be05a-3cca-466f-b6ac-0ea4fd9f8cb0",
+      "result_id": "237dafdd-5795-45d1-a7c2-971d6531b0c6"
+    },
+    {
+      "claim_id": "9792cb35-683c-4af9-bce9-300b9090c320",
+      "result_id": "237dafdd-5795-45d1-a7c2-971d6531b0c6"
+    },
+    {
+      "claim_id": "2bcb27c1-5928-40a5-9cd3-f99879657ff5",
+      "result_id": "237dafdd-5795-45d1-a7c2-971d6531b0c6"
+    },
+    {
+      "claim_id": "2732898f-d766-4108-9541-0e87908342ce",
+      "result_id": "237dafdd-5795-45d1-a7c2-971d6531b0c6"
+    },
+    {
+      "claim_id": "1c39e492-e7f2-4e0c-a9ad-ad1d4eadcf71",
+      "result_id": "d3380e6e-c10d-4c68-87c8-d658472ad8de"
+    },
+    {
+      "claim_id": "b4f25f87-9aa3-4fc9-be93-dee2cb569721",
+      "result_id": "d3380e6e-c10d-4c68-87c8-d658472ad8de"
+    },
+    {
+      "claim_id": "ca9cdd61-5012-4bb4-8247-019fda18947a",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "08973255-d62c-4673-ba57-e048176db067",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "3799b1da-cb94-47f1-86d7-d2f1b17b2b13",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "9aafdc09-824b-467f-b3be-6ccce30bee51",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "3b04a7c9-9169-4df3-89ae-0fe88a7a70c4",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "94ab814d-f401-4071-9d7f-0438bb55ff26",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "1f56431b-5205-494e-9bb8-438ca2c95759",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "2644ab50-1e4c-4301-9383-e70754435c36",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "176fa420-e703-4edd-8447-d58b27a68a83",
+      "result_id": "3eb44854-b1b9-4bee-8395-d7f298ea65d2"
+    },
+    {
+      "claim_id": "5b4f6c4e-5d57-4b2f-83af-10560a956d2f",
+      "result_id": "6e398583-a386-4c9f-a119-b38dc10b102e"
+    },
+    {
+      "claim_id": "d875705f-80bf-4371-b8a2-cfb414937586",
+      "result_id": "6e398583-a386-4c9f-a119-b38dc10b102e"
+    },
+    {
+      "claim_id": "bab614ed-c1c0-4b7f-9f59-ce73e71fff41",
+      "result_id": "bd57319c-7357-4474-968d-7ce2df76fb2d"
+    },
+    {
+      "claim_id": "55c0c955-e88c-4980-b1bb-7b5218fa0a2b",
+      "result_id": "bd57319c-7357-4474-968d-7ce2df76fb2d"
+    }
+  ],
+  "comparisons": []
+}

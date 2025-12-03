@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36",
+      "C37",
+      "C44",
+      "C46",
+      "C54",
+      "C162"
+    ],
+    "result": "The developed neural network achieves human-level performance (93.7% accuracy, 91.9% TPR at 5% FPR) for grooming behavior detection across 60+ mouse strains with high visual diversity, matching the 89% inter-annotator agreement observed among human experts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C36, C37, C44, C46, C54, and C162 collectively demonstrate that the neural network achieves performance comparable to human annotators (93.7% vs 89% agreement) across diverse strains. The quantitative metrics are clearly reported with supporting figures, and the comparison to human performance is appropriately justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C164"
+    ],
+    "result": "The study created a large-scale annotated dataset of over 2.6 million frames from 1,253 video clips representing 60 strains, with 94.3% agreement between dual annotators, demonstrating the high cost of achieving stringent performance with neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, C44, and C164 describe the substantial annotation effort required. The dataset size (2,637,363 frames) and annotation agreement (94.3%) are quantitatively reported with supporting figures. The conclusion about high annotation cost is a reasonable inference from the scale of effort described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C165"
+    ],
+    "result": "The neural network outperforms JAABA (93.7% vs 84.9% accuracy) when trained on the same dataset, with performance improving with larger training sets for the neural network but saturating at 10% for JAABA, demonstrating that both a neural network approach and larger datasets are necessary for generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 and C165 provide quantitative comparisons showing the neural network's superior performance. The training set size experiments (C50-C52) support the conclusion about data requirements. However, the JAABA comparison has a limitation: only 20% of training data could be used due to memory constraints (C48), which may not represent JAABA's optimal performance with full computational resources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A consensus approach using 4 models with 8 rotation/reflection transformations (32 predictions per frame) combined with temporal smoothing (46-frame window) improved performance from 0.975 to 0.984 ROC AUC, achieving final accuracy of 93.7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 describe the consensus methodology and quantify the performance improvements. The incremental gains are modest but clearly documented with supporting figures. The optimal temporal smoothing window (46 frames) was empirically determined (C62, Figure 3\u2014figure supplement 3B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Five trained annotators achieved 89.1% average agreement when labeling the same six videos, with misalignment errors accounting for 50% of disagreement duration and 75% of disagreement calls, concordant with prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 quantify inter-annotator agreement and characterize error types. The 89.1% agreement is supported by Figure 1D, and error analysis is shown in Figure 1\u2014figure supplement 1. The comparison to prior work (C37, Kyzar et al., 2011) provides external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C75",
+      "C78",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "Analysis of 1,338 mice (775 C57BL/6J, 563 C57BL/6NJ) identified sex, strain, room of origin, time of day, and season as significant covariates affecting grooming behavior, while age, weight, white noise, and tester were not significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C90 describe a comprehensive covariate analysis with stepwise model selection. Significant effects are reported with p-values (e.g., sex p<2.2\u00d710\u207b\u00b9\u2076, C69-C71). The large sample size (669 hours of data, C68) and systematic testing of multiple factors support the conclusions. However, the study acknowledges these are specific to their testing conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A strain survey of 2,457 mice across 62 strains (51 inbred, 11 F1 hybrids) over 31 months revealed continuous variation in grooming: total time (2-12 min), bout number (10-40), and bout duration (5-50 s), with positive correlations between total time and both bout number and duration, but no relationship between bout number and duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C103 describe the strain survey design and quantitative results. The sample size (2,457 animals, 2,252 hours) is substantial. Correlation patterns are clearly described and supported by Figure 7. The lack of correlation between bout number and duration (C102) is an interesting finding suggesting independent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "K-means clustering identified three grooming pattern types: Type 1 (13 strains, inverted-U pattern with de-escalation), Type 2 (12 strains, sustained high grooming), and Type 3 (30 strains, steady increase), representing broad but continuous classes of grooming behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 describe the clustering analysis and characterize the three pattern types. The analysis is supported by Figure 8 and Figure 8\u2014figure supplement 1. The authors appropriately note these are continuous rather than discrete categories (C110). The biological interpretation (e.g., de-arousal in Type 1, C106-C107) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Wild-derived strains groom significantly more (higher duration and longer bouts) than classical laboratory strains, with 5 of the top 16 grooming strains being wild-derived, suggesting that high grooming in wild-derived strains better represents normal mouse behavior and that low grooming may have been selected for in classical strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 present quantitative comparisons supported by Figure 6 and Figure 6\u2014figure supplement 1, showing significant differences. Claims C115-C117 provide historical context about strain origins with appropriate citations. The conclusion that wild-derived strains represent 'normal' behavior (C118) is reasonable given their greater genetic diversity, but the speculation about selection for low grooming (C119) is appropriately qualified as inference rather than demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "BTBR mice, proposed as an ASD model, show high grooming (12 min vs 5 min for C57BL/6J) with long bouts from early in the assay, belonging to Type 2 pattern; however, this behavior is similar to several other wild-derived and classical strains and is not exceptional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C129 characterize BTBR grooming with appropriate citations to prior work (C120-C121) and quantitative data from the current study (C122-C128). The conclusion that BTBR is not exceptional (C129) is supported by comparisons to other strains. The suggestion to explore other Type 2 strains as ASD models (C130) is speculative but reasonable. This challenges the uniqueness of BTBR as an ASD model based on grooming alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C143",
+      "C146",
+      "C147",
+      "C149",
+      "C176"
+    ],
+    "result": "GWAS analysis of 51 inbred and 11 F1 hybrid strains across 24 phenotypes identified 130 QTL organized into 7 clusters, with heritability ranging 6-68% (22/24 traits >20%), and Sox5 as the most pleiotropic gene (11 phenotype associations), beginning to define the genetic architecture of grooming and open field behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C149 and C176 describe the GWAS methodology and results. The use of GEMMA with LMM to control for population structure (C134) is appropriate. Heritability estimates (C135-C136) are reasonable for behavioral traits with appropriate citations. The identification of 130 QTL (C138) and 7 clusters (C140) is supported by Figure 9. However, the large LD blocks in inbred mice mean QTL contain many genes, limiting resolution. The exclusion of wild-derived strains (C132) is justified but limits genetic diversity captured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "PheWAS analysis of 509 human orthologs identified 8 gene-phenotype modules linking mouse grooming genes to human psychiatric traits (temperament, personality, schizophrenia, bipolar disorder, addiction), with FOXP1 (35 associations) and SOX5 (33 associations) showing high pleiotropy, and module 1 (temperament/personality) ranking highest by modularity (0.103) and median association (5.29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C161 describe the PheWAS methodology and results. The identification of 8 modules (C151) with enrichment for psychiatric traits (C153) is supported by Figure 10. The high pleiotropy of FOXP1 and SOX5 (C154-C155) is notable. Module prioritization using modularity scores and Simes' test (C156) is methodologically sound. However, the cross-species inference assumes conserved gene function, which may not hold for all genes. The PheWAS links are correlational and do not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Grooming bouts were defined as continuous grooming >3 seconds, allowing brief pauses (<10 s) without locomotor activity (motion not exceeding twice body length), following prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 define the grooming bout criteria with appropriate citation to prior work (C64, Kalueff et al., 2010). The definitions are operationally clear and include specific quantitative thresholds. These methodological definitions are essential for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C166"
+    ],
+    "result": "Per-video analysis of 153 validation videos showed that while most were adequately annotated by both the neural network and JAABA, two videos performed poorly with both algorithms due to insufficient visual information, and seven showed drastic improvement with the neural network, indicating that improvement is localized to certain grooming bout types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C166 describe per-video performance analysis supported by Figure 3\u2014figure supplement 2. The identification of failure cases (C56) with manual inspection is appropriate. The observation that improvement is not uniform (C166) is important for understanding the neural network's advantages and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C148"
+    ],
+    "result": "Key pleiotropic genes identified include Sox5 (linked to neuronal differentiation and implicated in Lamb-Shaffer syndrome and ASD) and FoxP1 (linked to striatal function and language regulation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144, C145, and C148 describe the biological functions of key genes with appropriate citations. These connections to neurodevelopmental disorders and brain function provide biological plausibility for the genetic findings. However, the GWAS only identifies associations, not causal relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The authors hypothesize that Type 1 strains use grooming for successful de-arousal, Type 2 strains may have deficiency in de-arousal, and BTBR's Type 2 pattern may indicate hyperarousal or inability to de-arouse, potentially related to altered dopamine function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169-C172 present hypotheses about the functional significance of grooming patterns. While C169 cites prior work on de-arousal behavior and C172 cites work on BTBR arousal states, these remain speculative interpretations not directly tested in this study. The hypotheses are plausible but require additional experiments (e.g., measuring arousal markers, dopamine function) for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The authors speculate that mouse fanciers may have selected for low grooming behavior in classical laboratory strains, as high grooming could have been interpreted as poor condition or indicative of parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C173-C175 present a historical speculation about artificial selection. While the observation of lower grooming in classical vs. wild-derived strains is supported by data, the proposed mechanism is purely speculative without historical records or genetic evidence of selection. This is appropriately presented as a hypothesis ('plausible,' 'could') but remains unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C182",
+      "C183"
+    ],
+    "result": "The authors acknowledge that future research is needed to definitively link mouse genetic variants to altered behavior and that the GWAS results are a starting point requiring functional studies to assign causation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182 and C183 appropriately acknowledge the limitations of the GWAS approach. Association studies identify correlations but do not establish causation. Functional validation through gene manipulation experiments would be required to confirm causal relationships. This is a standard and appropriate caveat for GWAS studies.",
+    "result_type": "MINOR"
+  }
+]

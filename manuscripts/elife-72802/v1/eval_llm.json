@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript establishes the physiological importance of arteriole dynamics in brain function. Brain arterioles dilate in response to neural activity (functional hyperemia), regulate blood pressure (autoregulation), and drive metabolic waste clearance. Deterioration of these processes contributes to neurologic disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by multiple citations to established literature. These claims provide essential background context for the study and are appropriately referenced to prior work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Existing methods for studying vascular dynamics have significant limitations. Current approaches either lack spatiotemporal specificity (pharmacological/systemic manipulations, wide-field ChR2 activation) or have low throughput and off-target effects (intracortical injections).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 accurately describe limitations of existing methods and are supported by appropriate citations. These claims establish the rationale for developing the new optogenetic approach presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "ReaChR is an optimal opsin for two-photon optogenetic control of vasculature. ReaChR exhibits peak two-photon activation at ~1000 nm and can be selectively expressed in vascular smooth muscle cells and pericytes using PDGFR\u03b2-Cre mice with negligible off-target expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by citations and experimental data (Figure 1B). The characterization of ReaChR properties and cell-type specificity provides the foundation for the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Single-photon activation of ReaChR produces rapid, widespread vasoconstriction. A single 100 ms LED pulse caused rapid constriction of pial and penetrating arterioles (up to 300 \u03bcm deep) that relaxed within 30 s. Repeated pulses sustained constriction for over a minute, reducing blood flow to the parenchyma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 are well-supported by experimental data in Figures 2 and 3, including time courses, population averages, and blood flow measurements. The data demonstrate robust and reproducible vasoconstriction with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Two-photon activation provides single-vessel spatial precision. Vasoconstriction occurred only when stimulation spots contacted vessel walls (not at 10 \u03bcm distance). Neighboring arteriole branches (~100 \u03bcm apart) could be constricted independently, and venules did not respond to two-photon activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are strongly supported by experimental data in Figure 4, including difference images, time courses, and population averages. The spatial precision is convincingly demonstrated with appropriate controls showing no off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Laser power affects spatial spread of constriction with defined damage thresholds. A 30-fold power increase (5-150 mW) led to ~3-fold increase in constriction spread (25-75 \u03bcm). Powers >200 mW caused vessel damage, but at routine powers (<200 mW), constrictions were ReaChR-dependent with no effects in control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by systematic power titration experiments (Figure 5) and appropriate controls using YFP-expressing mice. The characterization of power-dependent effects and damage thresholds is important for establishing safe operating parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Axial resolution of two-photon activation depends on laser power and tissue depth. At 115 mW, vessels constricted 25-35% of maximum when stimulated 100 \u03bcm off-target, dropping to ~10% at 150 \u03bcm. Lower powers (20-44 mW) restricted constriction almost exclusively to the stimulation plane. Light scattering in tissue affected axial spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by systematic depth experiments (Figure 6) with appropriate calibration controls (Figure 6\u2014supplement 1). The characterization of axial resolution is thorough and identifies important technical considerations for 3D targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Power titration enables control of penetrating arteriole constriction across cortical depths. Lower powers (20-30 mW) constricted vessels in the stimulation plane with minimal superficial spread. Moderate powers (~70 mW) achieved near-maximal constriction at depth with ~50% superficial constriction. High powers (>150 mW) produced maximal constriction in both planes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by experimental data in Figure 7 showing systematic power-dependent effects across imaging planes. This demonstrates practical control over the spatial extent of vascular manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Microvessel constriction requires prolonged, near-continuous stimulation. Single LED pulses constricted penetrating arterioles (~14%) more than ACT vessels (~5%) or capillaries (~1%). Single two-photon pulses had minimal effect on ACT vessels and capillaries. Continuous line-scan stimulation was necessary to achieve ~10% constriction in capillaries and ACT vessels over 60 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by systematic comparison of stimulation paradigms across vessel types (Figure 8). The data clearly demonstrate differential responsiveness of vessel types and identify stimulation requirements for smaller vessels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "ReaChR produces faster vasoconstriction than ChR2 in arterioles. Capillaries showed similar slow dynamics with both opsins, but ACT vessels and penetrating arterioles exhibited more rapid initial constriction with ReaChR compared to ChR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by direct comparison with prior ChR2 data (Figure 9) with appropriate statistical analysis. This demonstrates the advantage of ReaChR for vascular optogenetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Optogenetic vasoconstriction is achievable in awake animals with similar precision. Both LED and two-photon activation produced robust, spatially precise constrictions in awake mice, though with slightly reduced amplitude and faster recovery compared to anesthetized animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by experimental data in Figure 10 comparing awake and anesthetized conditions. This demonstrates the applicability of the method to physiologically relevant awake preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Optogenetic constriction can modulate sensory-evoked vasodilation. Optogenetic activation produced rapid constriction (0.6 s to 25% peak) compared to slower visual stimulus-evoked dilation (3.4 s). Combining optogenetic pulses with visual stimulation reduced or eliminated sensory-evoked vasodilation depending on stimulus duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by experimental data in Figure 11 showing direct comparison of response kinetics and successful modulation of sensory responses. This demonstrates a key application of the method for dissociating vascular and neural responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ReaChR offers multiple advantages over ChR2 for vascular optogenetics. ReaChR is superior due to higher photocurrent amplitude, better tissue penetration at 1040 nm, and minimal interference with common fluorophore imaging wavelengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by experimental comparisons (Figure 9) and appropriate citations. The advantages are logically inferred from the data and established opsin properties, though C60 is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Localized optogenetic constriction differs from propagating vasodilation in functional hyperemia. Direct smooth muscle activation produced highly localized constriction without propagation, supporting the role of endothelial cells (not smooth muscle) in long-range signal propagation through gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by experimental observations and appropriate citations. C66 is speculative but reasonable. The comparison provides mechanistic insight into vascular signaling pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The optogenetic method enables multiple applications for studying neurovascular physiology and pathophysiology. Potential applications include understanding vascular kinetics, investigating neurovascular coupling, studying vasculo-neuronal coupling, examining metabolic waste clearance, and dissecting mechanisms of impaired vascular responses in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C77 are largely speculative about future applications, though supported by appropriate citations and logical reasoning. While the potential applications are well-justified, they represent proposed future work rather than demonstrated results in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

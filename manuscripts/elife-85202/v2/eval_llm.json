@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors used fast whole brain light field microscopy (LFM) to image pan-neuronally expressed GCaMP in adult Drosophila during behavior. The preparation involved head-fixed flies with legs free to move on a ball substrate. LFM recordings captured neuropil activity at ~5 \u00b5m spatial resolution across various frame rates (5-98 Hz) and GCaMP versions (6s/6m/6f/7s/7f), with no significant difference in R\u00b2 values across frame rates for pan-neuronal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C25, C29-C30 describe the experimental methodology and technical validation. The approach is well-documented with appropriate controls (multiple GCaMP versions, frame rates) and statistical validation showing no frame rate effect on R\u00b2 (C30). The spatial resolution and temporal capabilities are clearly specified and appropriate for the study goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "A global increase in neuronal activity was observed across the brain during walking bouts compared to rest or grooming. The first principal component of whole brain activity strongly correlated with walk, and regional activity analysis showed correlation with walk behavior. Walking behavior explained ~20% of variance (R\u00b2 median = 0.194), with activity correlating primarily with walk duration rather than walk onset/offset. Neuronal activation followed movement bouts with high temporal precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C34, C36-C37 present the core finding of global brain activation during walking. The evidence includes PCA analysis (C32), regional correlation analysis (C33), quantitative variance explained (C36), and temporal precision observations (C34). The R\u00b2 value of ~20% is modest but significant, and the distinction between walk duration vs. onset/offset (C37) strengthens the interpretation. Multiple complementary analyses support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "All brain regions showed significant positive correlation with walking, unlike grooming which activated only ventral regions (AMMC, GNG, IPS, IVLP, SAD). Flailing represented an intermediate state with less consistent activation than walking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C43-C45 describe the spatial specificity of walk-related activation. The contrast with grooming (C38, C44) provides important behavioral specificity, and the flailing comparison (C45) adds context. Statistical significance is stated for all regions during walk (C43), and the regional specificity for grooming is clearly defined. The behavioral comparisons strengthen the interpretation of walk-specific global activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Two different pan-neuronal driver lines (nsyb-Gal4 and GMR57C10-Gal4) were tested to control for expression heterogeneity. Linear modeling showed no significant effect of Gal4 driver on walk correlation, but a small significant effect of GCaMP version was detected, likely reflecting signal-to-noise differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe important control experiments. The use of two independent driver lines (C40) addresses potential expression artifacts. The linear model analysis (C41-C42, Table 1) appropriately accounts for technical variables. The GCaMP version effect is acknowledged and controlled for in subsequent analyses. This represents rigorous experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Visual occlusion experiments (eyes covered with black nail polish) showed similar global activity patterns during walk, indicating visual input is at best a minor contributor to walk-related brain activity. This also suggests the activity is not due to mismatch between actual and predicted visual stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 describe a critical control experiment ruling out visual contributions. The experimental manipulation is clear (visual occlusion), and the result (similar activity pattern) directly addresses the hypothesis. The interpretation that visual input is a minor contributor (C46) and that prediction error is not the mechanism (C47) are both supported by the data. This strengthens the proprioceptive/motor interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Comparison of air-supported versus styrofoam ball substrates revealed a significant difference in global R\u00b2 values, but the spatial distribution of R\u00b2 across brain regions was highly similar (cosine similarity = 0.98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 describe substrate comparison experiments. The significant difference in global R\u00b2 (C48) is acknowledged, with plausible explanations offered (surface material, erratic ball movements). However, the high spatial similarity (C49) indicates the regional pattern is robust across substrates. This validates pooling data for spatial analyses while acknowledging quantitative differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Imaging excitatory (Vglut-Gal4), inhibitory (GAD-Gal4), and cholinergic (Cha-Gal4) neurons showed increased global brain activity during walk. All regions significantly responded to walk for all three genotypes, with high spatial similarity across neuron types (cosine similarity: 0.98-0.99). Both excitatory and inhibitory neurons are activated in most brain regions during walk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate that walk-related activation involves multiple neurotransmitter systems. The use of specific Gal4 lines (C50-C51) provides cell-type specificity. The high cosine similarity values (C52) indicate consistent spatial patterns across neuron types. The finding that both excitatory and inhibitory neurons are activated (C53) is important for understanding circuit mechanisms. The evidence is strong with appropriate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "All neuromodulatory neuron types (dopaminergic, octopaminergic, serotonergic) showed increased activity during walk, but serotonergic neurons were significantly less globally activated than dopaminergic and octopaminergic neurons. Activity maps for aminergic lines were distinctly patterned (cosine similarity: 0.69-0.93), with most regions significantly correlated with walk. The strongest correlation for serotonergic neurons was negative in the AVLP region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 characterize neuromodulatory neuron responses. The comparative analysis across three aminergic systems (C54-C55) is well-supported with statistical testing. The distinct spatial patterns (C56) contrast with the similarity seen for broad neurotransmitter classes. The negative correlation in AVLP for serotonergic neurons (C58) is a specific and novel finding. The evidence includes both global and regional analyses with appropriate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PCA/ICA analysis revealed functional components that matched anatomical structures without blurring boundaries. The AVLP was functionally subdivided into smaller subregions with different activity signatures. Some components spanned multiple brain regions (e.g., PENP-SLP, PENP-CL, WPNb-like), indicating functional connections between ventral neuropils and higher areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe the functional mapping results from PCA/ICA. The correspondence between functional and anatomical boundaries (C59) validates the approach. The AVLP subdivision (C60) demonstrates functional heterogeneity within anatomical regions. Multi-region components (C61-C62) suggest functional networks. The evidence is primarily observational but well-documented with figures. The interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Walk-correlated activity in dopaminergic neurons was found in MB compartments (\u03b33), central complex (PB-DA, EB-DA), and ventral neuropil (WED-DA). For octopaminergic neurons, the OL-PENP component was strongly correlated with walk. For serotonergic neurons, highest R\u00b2 was in AVLP. Most components were positively correlated with walk, with the exception of the AVLPshell component (serotonergic) which was negatively correlated (inhibited) during walk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide detailed spatial mapping of neuromodulatory responses. The dopaminergic findings (C63) are consistent with previous studies (cited). The octopaminergic (C64) and serotonergic (C65) patterns are clearly described. The identification of the inhibited AVLPshell component (C67) is a specific novel finding. The evidence includes both R\u00b2 and coefficient analyses with appropriate statistical testing. Previous literature supports some findings (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Components differentially activated during turning were reproducibly found across flies based on position and morphology, including IPS-Y and LAL-PS. For dopaminergic neurons, turning-correlated components matched the PPM2 cluster neurons (PPM2-LW) projecting to LAL and WED areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe turning-related activity patterns. The reproducibility across flies (C68) strengthens the findings. The identification of specific components (C69) builds on previous work (cited). The matching of dopaminergic components to known PPM2 neurons (C70) demonstrates the power of combining functional and anatomical data. The evidence includes both functional imaging and anatomical correspondence with literature support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of activity timing relative to walk onset (at 30 Hz) revealed that regions around the esophagus (IPS-Y, SPS, M-Omega, WED-DA) and OL-PLP-WED showed activity increases significantly before walk onset. MB compartments and superior neuropil regions (SMP, SLP) showed some pre-walk activity in some trials. Central complex components (PB-EB, EB-DA) were activated at walk onset but not before. The AVLPshell component showed clear decrease in activity at walk onset, while other AVLP components increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe temporal dynamics at walk onset. The analysis is restricted to \u226530 Hz data for temporal precision (appropriate). Statistical testing identifies significant pre-walk activity in specific regions (C71). The distinction between pre-walk, at-onset, and post-onset activation across different brain regions (C71-C76) is well-documented. The AVLPshell inhibition (C76) is particularly clear. The evidence includes trial-averaged data with statistical testing. This temporal analysis is critical for distinguishing motor planning from sensory feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors hypothesized two extreme scenarios for activity origin: top-down (from decision-making areas) or bottom-up (from motor activity/proprioception via VNC to GNG). Component analysis at 30 Hz identified some putative top-down components active before walk onset, but most activity was consistent with a bottom-up scenario. In some trials, activity appeared to progress from GNG to more dorsal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 present hypotheses and interpretations of timing data. The two scenarios (C77-C78) are clearly stated. The interpretation favoring bottom-up (C79) is based on the timing analysis (C71-C76) and is reasonable given that most regions activate at or after walk onset. The observation of spatial progression from GNG (C80) supports this interpretation but is noted to occur only in some trials. The evidence is primarily interpretive but well-grounded in the timing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Comparison of synaptic (sytGCaMP) versus cellular GCaMP showed that sytGCaMP activity was very strong in GNG, AMMC, and AVLP\u2014regions receiving inputs from the VNC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 describes a critical experiment distinguishing synaptic from somatic activity. The strong sytGCaMP signal in VNC input regions (GNG, AMMC, AVLP) supports the bottom-up hypothesis by suggesting axonal input from ascending neurons. The comparison is clear and the interpretation is supported by anatomical knowledge (cited). This experiment provides mechanistic insight into how walk information reaches the brain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Forced walk (treadmill) induced brain-wide activity increases similar to spontaneous walk (cosine similarity: 0.993 for R\u00b2, 0.985 for coefficients across regions; 0.87 and 0.85 across components). Flies with surgically severed brain-VNC connection walked on the treadmill while showing hardly any brain activity, consistent with the hypothesis that the brain is not necessary for forced walk and walking signals originate in the VNC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe the forced walk experiments. The high similarity between spontaneous and forced walk (C82) is well-quantified with cosine similarity metrics. The lesion experiment (C83-C84) is a critical test: severed flies walk but show no brain activity, demonstrating that (1) forced walk doesn't require the brain, and (2) brain activity during walk likely originates from VNC signals. This is strong evidence for the bottom-up model. The experimental design and interpretation are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The similarity between spontaneous and forced walk was observed not only for pan-neuronal data but also for dopaminergic, octopaminergic, and serotonergic neuronal subsets. Confidence intervals overlapped for all brain regions, and cosine similarity was high (TH-DDC: 0.985/0.978, Tdc: 0.96/0.93, Trh: 0.84/0.62 for R\u00b2/coefficients).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 extend the spontaneous vs. forced walk comparison to specific neuron types. The overlapping confidence intervals (C86) and high cosine similarities (C87) support the conclusion that the global state change is similar regardless of walk initiation. The slightly lower similarity for serotonergic neurons (Trh: 0.84/0.62) suggests some differences but still substantial similarity. The evidence is well-quantified and strengthens the bottom-up interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Forced turns elicited different activity signatures from spontaneous turns. Some components switched sign (IPS-Y), while others showed lateralization during forced but not spontaneous turns (PPM2-VI, GNGm, FBcol). The PPM2-LW component showed lateralized activity during spontaneous but not forced turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe differences between spontaneous and forced turning. Unlike walking, turning shows clear differences between spontaneous and forced conditions (C88). The specific examples of sign switching (C89) and differential lateralization (C89-C90) are well-documented. This contrast with the walk results suggests that turning involves more complex top-down control than walking. The evidence is clear and the interpretation is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Most components detected in both spontaneous and forced walk experiments appeared very similar. However, components with activity prior to spontaneous walk were either activated after walk had been triggered in forced walk, or their pre-walk activity was significantly different between conditions (e.g., regions around esophagus, \u03b33 MB compartment, superior medial neuropil).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 describe walk onset dynamics comparing spontaneous and forced conditions. The general similarity (C91) is consistent with C82. The key finding is that pre-walk activity in spontaneous walk is absent or different in forced walk (C92), suggesting these regions may be involved in walk initiation rather than execution. The evidence includes temporal analysis with statistical testing. This distinguishes motor planning from sensory feedback regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C141",
+      "C150",
+      "C166"
+    ],
+    "result": "Based on timing of activation and similarity between spontaneous and forced walk, the authors propose that locomotion activates the brain by sending movement and proprioceptive information from the VNC to specific regions (e.g., GNG), from where it activates all brain regions and neuron classes. The results challenge the assumption that most activity is related to decision-making, top-down motor control, or prediction error, and instead suggest walk itself and somatosensory bottom-up stimuli are largely responsible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C141, C150, C166 present the main model and conclusions. The bottom-up model (C99, C141) is well-supported by: (1) timing analysis showing most regions activate at/after walk onset, (2) similarity between spontaneous and forced walk, (3) sytGCaMP showing strong activity in VNC input regions, (4) lesion experiments showing brain activity requires VNC connection. The challenge to top-down models (C166) is justified by the data. The interpretation that walk itself (not planning/prediction error) drives activity (C150) is supported by the forced walk similarity. This is a well-supported major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors discuss advantages and limitations of light field microscopy: it allows fast frame rates (up to 200 Hz) but signal-to-noise decreases with speed; spatial resolution is inferior to confocal/multiphoton but simultaneous volume capture enables signal unmixing via PCA/ICA; averaging neuropil activity could hide single-neuron heterogeneity; the data complement single-neuron studies by providing network context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide methodological discussion. The technical capabilities and limitations (C100-C102) are accurately stated. The compensation via PCA/ICA (C103) is demonstrated in the results. The acknowledgment that neuropil averaging may hide information (C104) is appropriate. The statement about complementing single-neuron studies (C105) is reasonable. This represents honest and accurate methodological assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "PCA/ICA as an unsupervised approach provided insights into whole brain activity organization but has limitations: it groups correlated voxels and misses complex relationships, wouldn't detect noisy signals or signals with identical spatial patterns. Some component-to-neuron correspondences are speculative, while others matched precisely to known neurons or were the only neuron types in specific Gal4 lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 discuss the PCA/ICA analysis approach. The value of the unsupervised approach (C108) is demonstrated in the results. The acknowledged limitations (C109-C110) are accurate and important. The varying confidence in component-to-neuron matching (C111) is appropriately nuanced, with high confidence for some (e.g., MB compartments for dopamine) and lower for others. This represents appropriate interpretation of the analysis method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Several neurons matched to components were previously implicated in walking or its modulation. EB-DA neurons show strong activity during walk and were previously shown to be involved in ethanol-induced locomotion, sleep regulation, and walk. Dopaminergic MB components recapitulate previous studies. The PB-EB component is consistent with head direction cells receiving movement information during navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 relate findings to previous literature. The EB-DA example (C113) is well-supported with multiple citations and the timing is consistent with Figure 6. The MB dopamine findings (C114) are consistent with cited studies. The PB-EB interpretation (C115) is supported by navigation literature. These comparisons validate the functional mapping approach and place findings in context. The evidence includes both current data and appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C140"
+    ],
+    "result": "Neuromodulatory systems show signatures of ongoing behavior in the adult fly brain. Dopaminergic and octopaminergic neurons are broadly activated during walk, while serotonergic neurons show more complex patterns with AVLP inhibition. The data are consistent with other species and suggest that relationships between neuromodulatory neuron activity and locomotion are broadly conserved across species, despite evolutionary distance between mammals and insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127, C140 summarize neuromodulatory findings and place them in evolutionary context. The patterns for dopamine and octopamine (C125) are supported by the data and consistent with mammalian studies (cited). The complex serotonergic patterns (C126) are well-documented. The conclusion about evolutionary conservation (C127, C140) is reasonable given the parallels with mammalian studies, though it's based on comparison rather than direct evolutionary analysis. The interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The observation that serotonergic neurons in the AVLP are inhibited during walk is consistent with serotonin's role in behavioral inhibition. The AVLP receives input from ascending neurons conveying somatosensory information from the legs, contains descending neurons projecting to the VNC, and shows spatial maps for leg movement. Serotonin inhibition in AVLP could be affecting a sensorimotor loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 interpret the AVLP serotonin inhibition finding. The consistency with behavioral inhibition role (C135) is supported by cited literature. The anatomical context (C136-C138) is well-documented with appropriate citations. The speculation about sensorimotor loop modulation (C139) is reasonable given the anatomy. The interpretation connects the novel finding to established concepts and anatomy. The evidence is strong though the functional interpretation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Recent work by Tuthill and colleagues identified neural substrates in the VNC that receive, process, and relay proprioceptive information from legs to the CNS, providing strong support for proprioception's role in locomotion control. This information is transmitted by ascending neurons from VNC to central brain. A recent study concluded that ascending neurons innervating AVLP and GNG convey behavioral state and self-motion to brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 cite and interpret recent relevant literature. The Tuthill work (C142-C143) on proprioceptive circuits is appropriately cited and interpreted. The pathway description (C144) is accurate. The recent Chen et al. 2023 study (C145) provides complementary evidence supporting the bottom-up model. These citations appropriately place the current findings in the context of recent advances in the field. The interpretation is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "While grooming or forced walk on a treadmill does not require an active brain, lesions of neck connectives dramatically decrease spontaneous walking in locusts, indicating walk initiation can depend on the brain. However, cats with severed spinal cords maintain coordinated walk on treadmills, suggesting coordinated walk mainly depends on central pattern generators in spinal cord/VNC and is largely independent of brain input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 synthesize findings from multiple species. The locust lesion studies (C147) and cat spinal cord studies (C148) are appropriately cited. The interpretation distinguishing walk initiation from execution (C147, C149) is reasonable and consistent with the current findings. The conclusion about central pattern generators (C149) is well-supported by comparative evidence. This provides important context for interpreting the fly results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Several brain components and subregions (e.g., posterior slope) were activated hundreds of milliseconds before walk onset. This activity was delayed in forced walk and started only when the fly had started to move, suggesting a potential role in initiating walk. However, pre-walk activity could also be due to preparatory movements not detected as walk, or represent activity downstream of walk-triggering neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 interpret the pre-walk activity findings. The observation of pre-walk activity (C153) is supported by Figure 6 data. The difference between spontaneous and forced walk (C154) is key evidence for a role in initiation. The alternative interpretations (C155) are appropriately acknowledged. The evidence is strong for the observation, though the functional interpretation remains somewhat uncertain. The authors appropriately present multiple possible interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The concept of 'active sensation' suggests ongoing movement shapes neuronal responses to sensory stimuli, as shown in mouse V1 and fly visual neurons. The data indicate whole brain activity increase is elicited at walk onset and maintained afterwards. Since activity is not larger during forced vs. spontaneous walk, global brain activity does not generally represent a prediction error signal. Movement-specific information reaches the brain and modulates activity widely, potentially serving multiple purposes from sensory-motor uncoupling to learning complex movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C164 discuss functional implications. The active sensation concept (C156-C159) is well-established in cited literature. The temporal dynamics observation (C160) is supported by Figure 6. The argument against prediction error (C161-C162) is logical: if activity represented prediction error, forced walk should show larger responses. The conclusion about movement information modulating brain activity (C163) is well-supported. The speculation about functional roles (C164) is reasonable though not directly tested. The interpretation is well-grounded in the data and literature.",
+    "result_type": "MAJOR"
+  }
+]

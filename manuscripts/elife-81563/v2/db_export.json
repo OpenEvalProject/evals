@@ -1,0 +1,1751 @@
+{
+  "submission": {
+    "id": "3aa9d1f4-cd49-480d-8fd7-54c3a78e3a7e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:31:00.438288Z",
+    "updated_at": "2025-12-03T16:31:00.438288Z"
+  },
+  "content": [
+    {
+      "id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "submission_id": "3aa9d1f4-cd49-480d-8fd7-54c3a78e3a7e",
+      "content_type": "manuscript",
+      "content_text": "# Discrete GPCR-triggered endocytic modes enable \u03b2-arrestins to flexibly regulate cell signaling\n\n## Authors\n\n- Benjamin Barsi-Rhyne<sup>1</sup> ([ORCID: 0000-0002-6610-1766](https://orcid.org/0000-0002-6610-1766))\n- Aashish Manglik<sup>3</sup> ([ORCID: 0000-0002-7173-3741](https://orcid.org/0000-0002-7173-3741)) \u2020\n- Mark von Zastrow<sup>1</sup> ([ORCID: 0000-0003-1375-6926](https://orcid.org/0000-0003-1375-6926)) \u2020\n\n### Affiliations\n\n1. Tetrad Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Department of Psychiatry and Behavioral Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n3. Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n4. Department of Anesthesia and Perioperative Care, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n5. Quantitative Biology Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n6. Department of Cellular and Molecular Pharmacology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\n\u03b2-Arrestins are master regulators of cellular signaling that operate by desensitizing ligand-activated G-protein-coupled receptors (GPCRs) at the plasma membrane and promoting their subsequent endocytosis. The endocytic activity of \u03b2-arrestins is ligand dependent, triggered by GPCR binding, and increasingly recognized to have a multitude of downstream signaling and trafficking consequences that are specifically programmed by the bound GPCR. However, only one biochemical \u2018mode\u2019 for GPCR-mediated triggering of the endocytic activity is presently known \u2013 displacement of the \u03b2-arrestin C-terminus (CT) to expose clathrin-coated pit-binding determinants that are masked in the inactive state. Here, we revise this view by uncovering a second mode of GPCR-triggered endocytic activity that is independent of the \u03b2-arrestin CT and, instead, requires the cytosolic base of the \u03b2-arrestin C-lobe (CLB). We further show each of the discrete endocytic modes is triggered in a receptor-specific manner, with GPCRs that bind \u03b2-arrestin transiently (\u2018class A\u2019) primarily triggering the CLB-dependent mode and GPCRs that bind more stably (\u2018class B\u2019) triggering both the CT and CLB-dependent modes in combination. Moreover, we show that different modes have opposing effects on the net signaling output of receptors \u2013 with the CLB-dependent mode promoting rapid signal desensitization and the CT-dependent mode enabling prolonged signaling. Together, these results fundamentally revise understanding of how \u03b2-arrestins operate as efficient endocytic adaptors while facilitating diversity and flexibility in the control of cell signaling.\n\n## Introduction\n\n\u03b2-Arrestins were named for their ability to desensitize signaling by binding to ligand-activated \u03b2-adrenergic receptors and physically blocking heterotrimeric G protein coupling (Lohse et al., 1990). This function is similar to the \u2018arrest\u2019 of signaling mediated by binding of visual arrestin to the light-activated G-protein-coupled receptor (GPCR) rhodopsin (K\u00fchn and Wilden, 1987), and it has been subsequently generalized to many GPCRs (Benovic, 2021). \u03b2-Arrestins, unlike visual arrestin, have the additional ability to act as endocytic adaptor proteins by associating with clathrin-coated pits (CCPs) after binding to a GPCR (Ferguson et al., 1996; Goodman et al., 1996). This association promotes clustering of GPCR/\u03b2-arrestin complexes on the plasma membrane leading to the subsequent internalization of complexes via clathrin-mediated endocytosis. The prevailing current view is that all GPCRs trigger \u03b2-arrestins\u2019 endocytic activity in the same way, by displacing the \u03b2-arrestin C-terminus (CT) to unmask endocytic determinants contained therein (Figure 1\u2014figure supplement 1a; Milano et al., 2002; Nobles et al., 2007; Shukla et al., 2013; Xiao et al., 2004).\n\nCompelling experimental support for this mode of regulated endocytosis has accumulated over the past 25 years, including the identification of specific clathrin (CHC) and AP2 (AP2\u03b2)-binding elements present in the CT which promote the clustering of GPCR/\u03b2-arrestin complexes in CCPs (Burtey et al., 2007; Edeling et al., 2006; Ferguson et al., 1996; Goodman et al., 1996; Kang et al., 2009; Kim and Benovic, 2002; Krupnick et al., 1997; Laporte et al., 2000; Orsini and Benovic, 1998; Schmid et al., 2006). However, for most of this time, \u03b2-arrestins were thought to regulate signaling only from the cell surface. It is now clear that \u03b2-arrestins are more flexible regulators, and that they have the capacity to promote as well as attenuate signaling from the plasma membrane and endomembranes (Calebiro et al., 2009; DeFea et al., 2000; Feinstein et al., 2013; Ferrandon et al., 2009; Irannejad et al., 2013; McDonald et al., 2000; Terrillon and Bouvier, 2004). Furthermore, it is now also widely recognized that \u03b2-arrestins can have different effects on downstream signaling depending on GPCR-specific differences in the composition, stability, and/or conformation of the complex that they form with GPCRs (Asher et al., 2022; Latorraca et al., 2020; Lee et al., 2016; Mayer et al., 2019; Nobles et al., 2011; Nuber et al., 2016; Yang et al., 2018; Yang et al., 2015). In light of the high level of diversity and flexibility that is presently recognized to exist at the GPCR/\u03b2-arrestin interface, we wondered if release of the \u03b2-arrestin CT is sufficient to explain the diversity of downstream effects conferred by GPCR transit through CCPs.\n\nHere, we show that release of the \u03b2-arrestin CT is only one mode by which GPCR binding can trigger the endocytic activity of \u03b2-arrestins. We resolve a second mode that is clearly distinct from the canonical CT-dependent mode because it does not require the \u03b2-arrestin CT whatsoever. We further show that GPCRs exhibit selectivity in triggering one or the other endocytic mode, and that each mode is differentially coupled to the GPCR/ \u03b2-arrestin interface to produce opposing effects on the net signaling output of receptors.\n\n## Results\n\n### The \u03b2-arrestin CT is dispensable for \u03b22-adrenergic receptor internalization\n\nThe ability of the \u03b2-arrestin CT to associate with CCP components and influence GPCR endocytosis has been clearly established (Burtey et al., 2007; Edeling et al., 2006; Ferguson et al., 1996; Goodman et al., 1996; Kang et al., 2009; Kim and Benovic, 2002; Krupnick et al., 1997; Laporte et al., 2000; Orsini and Benovic, 1998; Schmid et al., 2006). However, to our knowledge, whether the \u03b2-arrestin CT is necessary for GPCR endocytosis has not been explicitly tested. To assess this, we pursued a genetic rescue strategy using CRISPR-engineered cells lacking both \u03b2-arrestins (\u03b2arr1/2 DKO) (O\u2019Hayre et al., 2017) and asked if \u03b2-arrestin-2 (\u03b2arr2) is sufficient to rescue regulated endocytosis of the \u03b22-adrenergic receptor (\u03b22AR), a prototypic \u03b2-arrestin-dependent cargo. We verified that our experiments were carried out in an expression regime in which we confirmed that receptor internalization is phosphorylation dependent (Extended Data, Figure 1g), and began by examining agonist-induced clustering of receptors into CCPs on the plasma membrane as an essential intermediate step in the endocytic mechanism. We verified by total internal reflection fluorescence (TIRF) microscopy that \u03b22ARs localize diffusely on the plasma membrane in \u03b2arr1/2 DKO cells, regardless of whether cells were exposed to the adrenergic agonist isoproterenol (Iso, Figure 1a). However, after expression of recombinant \u03b2arr2 (\u03b2arr2-EGFP), Iso-induced \u03b22ARs to rapidly transition from a diffuse distribution to co-clustering together with \u03b2arr2 in CCPs (Figure 1b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig1-v2.jpg)\n\n**Figure 1.:** Representative live-cell total internal reflection fluorescence (TIRF) microscopy images of \u03b2arr1/2 double knockout HEK293 cells coexpressing clathrin-light-chain-DsRed (magenta) and FLAG-tagged \u03b22AR (blue) with either EGFP (a), \u03b2arr2-EGFP (b), \u03b2 arr2-CCS-EGFP (c), or \u03b2arr2-\u0394CT-EGFP (d) (all in green) and pre- and post-stimulation with 10 \u03bcM isoproterenol (Iso). Scale bars are 5 \u03bcm. (e) Representative fluorescence intensity profiles from line scans shown in insets from a to d. Chevrons indicate colocalization. (f) Percent internalization of FLAG-tagged \u03b22AR coexpressed with either EGFP (black), wild-type \u03b2arr2-EGFP (green), \u03b2arr2-CCS-EGFP (pink), or \u03b2arr2-\u0394CT-EGFP in two clonal lines of \u03b2arr1/2 DKO HEK293 cells at 5- and 30-min post-stimulation with 10 \u03bcM isoproterenol (Iso). Data shown as mean \u00b1 standard deviation (SD) for n = 3 independent experiments. Significance was determined by two-way analysis of variance (ANOVA) (df = 3, F = 24.48) with Tukey\u2019s multiple comparisons test against the negative control (EGFP) for each time point (ns p \u2265 0.05, *p < 0.05, **p < 0.01, ***p < 0.001). Each dot is an average of three technical replicates. All data shown are from three independent experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Canonical model of \u03b2-arrestin desensitization and endocytosis of GPCRs. Representative live-cell total internal reflection fluorescence (TIRF) microscopy images of \u03b2arr2-EGFP (green) (b) or \u03b2arr2-\u0394CT-EGFP (green) (d) with FLAG-tagged \u03b22V2R (blue) and clathrin-light-chain (magenta) pre- and post-stimulation with 10 \u03bcM isoproterenol (Iso). Scale bars represent 5 \u03bcm. Insets correspond to the central area of each cell. (c, e) Normalized fluorescence intensity profiles from yellow lines shown in insets from panels (b) and (d) with colors corresponding to the image labels. (f) Percent internalization of FLAG-tagged \u03b22V2R coexpressed with either EGFP (black), \u03b2arr2-EGFP (green), or \u03b2arr2-\u0394CT-EGFP (purple) after 5- or 30-min treatment with 10 \u03bc\u039c Iso. (g) Normalized internalization of FLAG-tagged \u03b22AR (black) or its phosphorylation site mutant, \u03b22AR-3S (orange), after 5- or 30-min treatment with 10 \u03bcM Iso, and coexpressed with \u03b2arr2-EGFP. (h) Percent internalization of FLAG-\u03b22AR after 30 min of stimulation with 10 \u03bcM Iso, coexpressed with either EGFP (black), \u03b2arr1-EGFP (green), or \u03b2arr1-\u0394CT-EGFP. (i). Percent internalization of FLAG-\u03b22AR after 30 min of treatment with 10 \u03bcM Iso when coexpressed with the indicated \u03b2arr2 construct after siRNA knockdown of clathrin heavy chain or treatment with control siRNA. (j) Representative western blots and a Coomassie stained sodium dodecyl sulfate/polyacrylamide gel electrophoresis (SDS/PAGE) gel of GST-based pull-downs using purified GST-CTD (clathrin terminal domain, residues 1\u2013363) or GST-AP2\u03b2 (\u03b2-appendage of AP2, residues 701\u2013937) and \u03b2arr1/2 DKO lysate from cells expressing either \u03b2arr2-EGFP or \u03b2arr2-\u0394CT-EGFP. GAPDH was used as a loading control for cell lysate. See Figure 1\u2014figure supplement 2 for uncropped images and Figure 1\u2014figure supplement 1\u2014source data 1 for raw images. For (f\u2013i), data are shown as mean \u00b1 standard deviation of n = 3 independent experiments with significance determined by either two-way analysis of variance (ANOVA) (df = 2, F = 15.3) or (df = 1, F = 63.82) with Dunnett\u2019s test for multiple comparisons (f, g, respectively), one-way ANOVA (df = 2, F = 49.81) with Tukey\u2019s test for multiple comparisons (h), or one-way ANOVA (df = 5, F = 54.49) with Sidak\u2019s test for multiple comparisons (i) (ns p \u2265 0.05, *p < 0.05, ***p < 0.001). All data shown are from three independent experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Uncropped Coomassie stained SDS/PAGE gel of GST-AP2\u03b2 and GST-CTD showing input of both proteins and glutathione resin eluate (see Methods). (b) Anti-GFP western blot showing pull-down of \u03b2arr2-EGFP but not of \u03b2arr2-\u0394CT-EGFP. (c) Anti-GAPDH western blot showing similar protein loading of \u03b2arr2-EGFP and \u03b2arr2-\u0394CT-EGFP containing cell lysates. For (b, c), the large dimmer bands in eluate samples with molecular weights between 37 and 50 kDa are non-specifically labeled GST-AP2\u03b2 and GST-CTD. See Figure 1\u2014figure supplement 1j for cropped images and Figure 1\u2014figure supplement 1\u2014source data 1 for raw images. All data shown are representative of three independent experiments.\n\nSurprisingly, genetic rescue of \u03b2arr2-driven clustering was observed even after clathrin and AP2-binding elements in the \u03b2-arrestin CT were disrupted using previously defined point mutations (\u03b2arr2-CCS construct) (Eichel et al., 2018). Confirming this, \u03b2arr2 rescued clustering and internalization after both elements were fully removed by truncation (\u03b2arr2-\u2206CT, truncated after N372) (Figure 1c\u2013e). The latter result was verified in two independent \u03b2arr1/2 DKO cell lines (Figure 1f) and it was not limited to the \u03b22AR (Figure 1\u2014figure supplement 1b\u2013f). Moreover, CT-independent trafficking was not unique to \u03b2-arrestin-2, as a \u03b2-arrestin-1 mutant lacking the CT (\u03b2arr1-\u2206CT, truncated after N375) also promoted Iso-induced \u03b22AR internalization (Figure 1\u2014figure supplement 1h). In all cases, endocytosis is clathrin dependent (Figure 1\u2014figure supplement 1i) and we verified that that removing the CT abrogated the previously identified interactions (Figure 1\u2014figure supplement 1j). Taken together, these observations indicate that the \u03b2-arrestin CT is indeed not required for \u03b2-arrestin to drive clustering of GPCR/\u03b2-arrestin complexes on the cell surface or promote subsequent endocytosis of complexes. As both clustering and endocytosis mediated by \u03b2arr2-\u2206CT remained agonist dependent, these results suggest that \u03b2-arrestins contain additional endocytic determinant(s) capable of mediating GPCR-triggered endocytic activity in the absence of the \u03b2-arrestin CT.\n\n### A discrete endocytic determinant in the \u03b2-arrestin C-lobe\n\nTo investigate the nature of this additional endocytic activity, we took advantage of the fact that visual arrestin (v-arr) naturally fails to support GPCR endocytosis (Moaven et al., 2013) and asked if we could generate a v-arr/\u03b2arr2 chimera that contains the CT of v-arr but retains the ability to promote GPCR endocytosis due to the addition of other \u03b2arr2-derived sequence(s) (Figure 2\u2014figure supplement 1). We tested this using the same genetic rescue strategy. To focus specifically on effects downstream of GPCR binding, we measured internalization using a chimeric mutant receptor (\u03b22V2R chimera) that has higher affinity for binding arrestins than the \u03b22AR (Oakley et al., 2000; Oakley et al., 2001). We were indeed able to generate such a chimeric mutant arrestin construct, here called ChiA, which rescued agonist-induced internalization of receptors nearly as strongly as wild-type \u03b2arr2 despite its entire CT being derived from v-arr (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig2-v2.jpg)\n\n**Figure 2.:** (a) Percent internalization of \u03b22V2R after 30 min of 10 \u03bcM isoproterenol stimulation in \u03b2arr1/2 DKO HEK293s coexpressing the indicated construct (n \u2265 3 independent experiments, line is mean, error bars are standard deviation, each dot is an average of three technical replicates). Representative total internal reflection fluorescence (TIRF) microscopy images of cells expressing \u03b22-adrenergic receptor (\u03b22AR) (blue) and clathrin-light-chain-dsRed (magenta) with either wild-type \u03b2arr2-EGFP (b) or an example of one of the three internalization-defective chimeras, ChiA.10-EGFP (c) pre- and post-stimulation with 10 \u03bcM isoproterenol (Iso). Scale bars are 5 \u03bcm. (d) Plasma membrane recruitment of the indicated EGFP-tagged proteins (see Methods) in response to stimulation with 10 \u03bcM isoproterenol. (e) Maximum clustering index (CI, see Methods) of plasma membrane \u03b22V2R after treatment with 10 \u03bcM Iso. For (d, e), each dot represents an individual cell. Data are shown as mean \u00b1 standard error of the mean (SEM) (n \u2265 9 cells). Significance was determined by ordinary one-way analysis of variance (ANOVA) (df = 5 for both, F = 22.21 and 4.531, respectively) with Dunnett\u2019s multiple comparison test against negative control (EGFP) (ns p \u2265 0.05, *p < 0.05, **p < 0.01, ***p < 0.001). (f) Location of mutations unique to ChiA.9\u201311 (shades of pink and purple) in an active state structure of \u03b2-arrestin-2 (5TV1, green) (Chen et al., 2017) fit to the NTSR1/\u03b2arr1 structure (6UP7, gray) (Huang et al., 2020) (\u03b2arr1 not shown) and the same model rotated and zoomed to the cytoplasmic face of the C-lobe. All data shown are from at least three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Diagram of \u03b2arr2 (gray) and visual arrestin (black) sequences. Visual arrestin sequences swapped into ChiA are gold to make ChiA.1\u201314. Major structural landmarks are labeled for \u03b2arr2. (b) Multiple sequence alignment of visual arrestin (v-arr), \u03b2arr1, and \u03b2arr2 of regions that are necessary for CT-independent endocytic activity of ChiA.9\u201311. \u201c*\u201d indicates a single, fully conserved residue, \u201c:\u201d indicates conservation between residues with strongly similar properties, \u201c.\u201d indicates conservation between residues with weakly similar properties. (c) Multiple sequence alignment of visual arrestin (v-arr), \u03b2arr2, and ChiA. Gold boxes in the v-arr sequence replace gold boxes in the ChiA sequence to make the indicated chimera. ChiA.9, 10, and 11 (red) abolished internalization of the \u03b22V2R.\n\nTo identify sequence(s) responsible for the endocytic activity of this chimeric arrestin protein, we systematically replaced small sections of \u03b2arr2-derived sequence in ChiA to the corresponding sequence in v-arr (ChiA.1\u201314). Of 14 chimeras tested, we found three \u2013 ChiA.9, 10, and 11 \u2013 that failed to rescue internalization (Figure 2a, sequence details are in Figure 2\u2014figure supplement 1). TIRF imaging indicated that all these internalization-defective chimeras were recruited to the plasma membrane in response to Iso addition, and to a similar degree as wild-type \u03b2arr2. However, they localized diffusely and failed to cluster receptors in CCPs. This was evident visually (Figure 2b, c) and quantified by fluorescence intensity measurement (Figure 2d, e). These data suggest that each of the mutations specifically interferes with the clustering and endocytic function of \u03b2-arrestin-2 by preventing accumulation in CCPs, but without affecting receptor-triggered recruitment to the plasma membrane. The endocytosis-blocking mutations mapped to a contiguous region of \u03b2-arrestin-2, located at the cytoplasmic face of the C-lobe and opposite the receptor-binding interface, which we called the \u03b2-arrestin C-lobe base (CLB, Figure 2f).\n\n### The C-lobe determinant is essential for \u03b22AR internalization\n\nWe next investigated the contributions of mutating the CLB or CT on the natural endocytic activity of \u03b2arr2. We focused on the central \u03b2-strand in the CLB of \u03b2arr2 and introduced mutations corresponding to residues present in v-arr (D205S, L208I, L215I, N216P, N218T, and H220A), while leaving the \u03b2arr2 CT unchanged. The resulting mutant construct, \u03b2arr2-CLB, was strongly recruited to the plasma membrane after Iso-induced activation and clustered together with \u03b22AR in CCPs (Figure 3b). When the CLB was mutated in combination with the CT (\u03b2arr2-CLB,\u2206CT mutant), agonist-induced recruitment to the plasma membrane was retained but \u03b2arr2-CLB,\u2206CT was recruited diffusely and failed to promote surface clustering of \u03b22ARs (Figure 3d). More detailed inspection of TIRF microscopy images revealed that mutating either the CLB or CT produced a partial reduction in clustering relative to wild-type \u03b2arr2, whereas clustering was abolished in the double mutant (Figure 3e). We verified this specific effect on clustering using a previously established quantitative metric (Figure 3f, g; Eichel et al., 2018), despite all of the constructs being similarly recruited to the plasma membrane (Figure 3h). We also assessed the ability of scFv30, a protein that recognizes a three-dimensional epitope in active \u03b2arr, to bind our mutants using an engineered split luciferase protein complementation system (NanoBiT, Dixon et al., 2016; Shukla et al., 2013; Shukla et al., 2014; Xiao et al., 2004). All of the \u03b2arr2 constructs robustly bound upon addition of an activating phosphopeptide (V2Rpp), suggesting that the mutants are properly folded (Figure 3\u2014figure supplement 1a).Together, these results indicate that the \u03b2-arrestin CT and CLB promote \u03b22AR clustering in an additive manner. As \u03b2arr2-CLB,\u2206CT failed to cluster at all, the results also indicate that the CT and CLB, together, fully account for the GPCR-triggered clustering activity of \u03b2arr2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig3-v2.jpg)\n\n**Figure 3.:** Representative live-cell total internal reflection fluorescence (TIRF) microscopy images of \u03b2arr1/2 double knockout HEK293s coexpressing clathrin-light-chain-DsRed (magenta) and FLAG-tagged \u03b22AR (blue) with either EGFP-tagged \u03b2arr2 (a), \u03b2 arr2-CLB (b), \u03b2arr2-\u0394CT (c), or \u03b2arr2-CLB,\u0394CT (d) (all in green) pre- and post-stimulation with 10 \u03bcM isoproterenol (Iso). Scale bars represent 5 \u03bcm. EGFP condition not shown (see Figure 1a for example). (e) Zoomed images corresponding to dashed boxes in panels a\u2013d for \u03b2arr2 and \u03b22AR images. Scale bars (red) represent 2.5 \u03bcm. (f) \u03b22AR clustering index (CI, see Methods) pre- and post-stimulation with 10 \u03bcM Iso over 10 min. (g) Max plasma membrane recruitment of the indicated EGFP-tagged proteins in response to treatment with 10 \u03bcM Iso. (h) Max clustering index (CI) of \u03b22AR calculated from within the first 300 s of (f) and normalized to clustering index prior to Iso treatment. For (f\u2013h), data shown as mean \u00b1 standard error of the mean (SEM) (n \u2265 9 cells, represented as dots in g and h). (i) Internalization of \u03b22AR when coexpressed with the indicated EGFP-tagged proteins (n = 3, each dot is an average of three technical replicates) in \u03b2arr1/2 DKO HEK293 cells. (j) Correlation between \u03b22AR clustering and internalization. Solid line is a simple linear regression fit to \u03b2arr2 and \u03b2arr2-CLB,\u0394CT (R2 = 0.69, dashed lines = 95% CI, vertical error = SEM, and horizontal error = std. dev.). For (g\u2013i), significance was determined by ordinary one-way analysis of variance (ANOVA) (df = 4 for all, F = 21.32, 4.828, and 117.6, respectively) with Tukey\u2019s test for multiple comparisons (ns p \u2265 0.05, *p < 0.05, **p < 0.01, ***p < 0.001). All data shown are from at least three independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) NanoBiT complementation of scFv30-LgBiT and \u03b2arr2-SmBiT (or mutants) in \u03b2arr1/2 DKO cell lysate incubated with the indicated concentrations of V2Rpp. Dose\u2013response curves were generated with three-parameter nonlinear fit (R2 = 0.98-0.99). logEC50 \u00b1 95% CI values are \u22125.2 \u00b1 0.1, \u22126.1 \u00b1 0.4, \u22125.0 \u00b1 0.1, and \u22126.1 \u00b1 0.5 for wild type, \u0394CT, CLB, and double mutant, respectively. Data shown as mean \u00b1 standard error of the mean (SEM). (b) Percent \u03b22AR internalization in parental cells when co-expressed with either mApple, \u03b2arr2-mApple, or \u03b2arr2-CLB,\u0394CT-mApple mutant after 30 min of treatment with 10 \u03bcM isoproterenol. (c) Internalization of \u03b22AR after 30 min of stimulation with 10 \u03bcM isoproterenol when coexpressed with either EGFP, EGFP-tagged \u03b2arr1, or the \u03b2arr1 CLB mutant (D204S, S215P, N217T, and H219A) in \u03b2arr1/2 DKO HEK293s. (d) Percent internalization of \u03b22V2R in \u03b2arr1/2 DKO cells when coexpressed with \u03b2arr1 or \u03b2arr1 constructs with the clathrin-binding splice loop removed (334-LLGDLASS-341). (e) Internalization of FLAG-tagged \u03b22AR coexpressed with the indicated construct after 30 min of stimulation with 10 \u03bcM isoproterenol. Data shown as mean \u00b1 standard deviation. For (b\u2013e), significance determined by ordinary one-way analysis of variance (ANOVA) (df = 4, F = 121.5) with Sidak\u2019s multiple comparison test (b), ordinary one-way ANOVA (df = 2, F = 88.87) with Tukey\u2019s multiple comparison test (c), ordinary one-way ANOVA (df = 19, F = 161.7) with Tukey\u2019s multiple comparison test (d), one-way ANOVA (df = 8, F = 75.64) with Dunnett\u2019s multiple comparison test against the negative control (EGFP) (e). All data shown are from at least three independent experiments (n \u2265 3, ns p \u2265 0.05, * p < 0.05, ***p < 0.001). Logos for sequence from both \u03b2arr1 and \u03b2arr2 around N218 in the \u03b2arr2 CLB (f), AP2\u03b2-binding site (g), and clathrin-binding box (gray) (h). Solvent exposed residues (CLB only) are numbered in orange. Amino acids that are critical to function or binding are colored in gray.\n\nDespite the ability of the CT and CLB to promote \u03b22AR clustering to a similar degree (Figure 3g), their effects on the subsequent internalization of receptors differed considerably. Mutating the CT only slightly reduced the ability of \u03b2arr2 to drive internalization of \u03b22ARs, whereas mutating the CLB caused a pronounced reduction \u2013 suppressing the measured internalization of receptors to a level similar to that of the EGFP negative control (Figure 3i). We also found that our double mutant, \u03b2arr2-CLB,\u0394CT, acts as a strong dominant negative when expressed at high levels in parental HEK293 cells containing endogenous \u03b2arr (Figure 3\u2014figure supplement 1b). The corresponding mutations in the CLB of \u03b2arr1 (\u03b2arr1-CLB; D204S, S215P, N217T, H219A; Figure 3\u2014figure supplement 1c) also failed to support \u03b22AR internalization when expressed in DKO cells, indicating that this determinant functions similarly in both \u03b2-arrestins. \u03b2arr1 contains an additional endocytic determinant at an edge of the C-lobe (334-LLGDLASS-341) distinct from the CLB (Kang et al., 2009; Staus et al., 2020), but deleting this sequence did not significantly alter \u03b22V2R internalization (Figure 3\u2014figure supplement 1d). Remarkably, we found that changing a single solvent exposed residue in the CLB to the corresponding residue in visual arrestin, N218T, failed to support \u03b22AR internalization when expressed DKO cells (Figure 3\u2014figure supplement 1e, f). This represents a minor change, suggesting that the CLB may be a highly selective protein interaction surface. Taken together (Figure 3j), these data suggest that both the CLB and CT contribute to the total endocytic activity of \u03b2-arrestin, and each promotes agonist-dependent clustering of receptors on the cell surface. This indicates that, while both the CLB and CT are conserved in \u03b2-arrestins, the CLB is the primary determinant required for the efficient internalization of \u03b22ARs.\n\n### GPCRs differ in the degree to which they utilize each endocytic determinant\n\nTo assess the role of each determinant more broadly, we examined the effect of individually mutating the CT (\u03b2arr2-\u2206CT) or CLB (\u03b2arr2-CLB) on agonist-induced internalization across several \u03b2-arrestin-dependent GPCRs. In an effort to include receptors differing in engagement at the GPCR/\u03b2-arrestin interface, we included three naturally occurring \u2018class A\u2019 GPCRs (\u03b22AR, \u03bc-opioid receptor or \u03bcOR, and \u03ba-opioid receptor or \u03baOR) that associate with \u03b2-arrestins relatively weakly and three \u2018class B\u2019 GPCRs (V2 vasopressin receptor or V2R, M2 muscarinic receptor or M2R, and neurotensin receptor type 1 or NTSR1) that bind \u03b2-arrestins more strongly (Oakley et al., 2000; Oakley et al., 2001). In addition, we included a chimeric GPCR containing the \u03b22AR-derived transmembrane core and V2R-derived cytoplasmic tail (\u03b22V2R) that is widely used as an experimental model of a class B GPCR.\n\nRemoving the \u03b2-arrestin-2 CT had little effect on agonist-induced internalization of the class A GPCRs, but significantly inhibited internalization of the naturally occurring class B GPCRs. By contrast, mutating the CLB inhibited internalization of all receptors tested, although the magnitude of this effect varied depending on the receptor (Figure 4a). Together, these results indicate that both the CT and CLB are broadly utilized endocytic determinants, but that individual GPCRs vary significantly in the degree to which their endocytosis depends on each.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig4-v2.jpg)\n\n**Figure 4.:** (a) Internalization of the CT (black) and CLB (red) mutants normalized to wild-type \u03b2arr2 for each receptor after 30 min of agonist (see Figure 4\u2014figure supplement 1). Each dot is the mean of three independent experiments \u00b1 standard deviation. Shading indicates whether receptors are naturally occurring \u2018class a\u2019 (blue), \u2018class b\u2019 (magenta), or \u2018engineered class b\u2019 (gold). (b) Schematic summarizing the conceptual basis for estimating contributions of the CT and CLB. Contribution of each determinant within \u03b2arr2 is defined by subtracting internalization measured in the negative control (EGFP) from \u03b2arr2, \u03b2arr2-\u0394CT, \u03b2arr2-CLB, and dividing the resulting values by control (EGFP) subtracted wild-type (\u03b2arr2) value. (c) Contribution to total endocytic activity of each determinant plotted as x and y coordinates for each receptor from panel (a). Unity is defined as 100% endocytic activity when individual activities are summed. Dot color corresponds to the typology described for panel (a). All data shown are from three independent experiments that were performed in \u03b2arr1/2 DKO HEK293 cells.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Percent internalization of the indicated receptor after 30 min of stimulation with either 10 \u03bcM dynorphin A-17 (a), 10 \u03bcM DAMGO (b), 10 \u03bcM carbachol (c), 10 \u03bcM neurotensin (d), 1 \u03bcM arginine vasopressin (e), or 10 \u03bcM isoproterenol (f) in \u03b2arr1/2 DKO HEK293 cells. Significance was determined by ordinary one-way analysis of variance (ANOVA) (df = 4 for all, F = 436.6, 33.13, 17.52, 33.88, 25.55, and 60.51, respectively) (ns p \u2265 0.05, *p < 0.05, ** p < 0.01, ***p < 0.001). Data shown as mean \u00b1 standard deviation of three independent experiments.\n\nDespite GPCR-specific differences in reliance on the CT relative to CLB, mutating both the CT and CLB in combination (\u03b2arr2-CLB,\u2206CT) abolished the endocytic activity of \u03b2-arrestin-2 for all the GPCRs (Figure 4\u2014figure supplement 1a\u2013f). This indicates that the CT and CLB are sufficient to fully account for the GPCR-triggered endocytic activity of \u03b2-arrestin-2. Accordingly, we used the effect of mutating each determinant individually to estimate the relative contribution of the other (non-mutated) determinant (Figure 4b).\n\nA roughly linear relationship between the relative contribution of each determinant was observed for all the naturally occurring GPCRs included in our panel, with the contribution of both determinants summing to approximately 100% (Figure 4c). When compared in this way, receptors clustered according to differences in overall stability, as defined by the \u2018class A/B\u2019 classification scheme. The class A GPCRs (\u03b22AR, \u03baOR, \u03bcOR), defined by binding \u03b2-arrestins relatively weakly or transiently, were found to primarily utilize the CLB with little utilization of the CT. The class B GPCRs (V2R, M2R, NTSR1), defined by binding \u03b2-arrestins more strongly or stably, utilized both determinants in an additive manner.\n\nThe \u03b22V2R chimera is considered a class B GPCR due to the V2R-derived cytoplasmic tail conferring enhanced binding to \u03b2-arrestin. This chimeric receptor also utilized both the CLB and CT for endocytosis, providing further support for the concept that the overall strength of GPCR/\u03b2-arrestin-binding impacts the utilization of endocytic determinants. Unlike the other receptors, however, the \u03b22V2R departed from the linear relationship because the estimated contribution of each determinant summed to more than 100%. This suggests that this engineered GPCR can strongly utilize either the CT or CLB for endocytosis in a semi-redundant manner.\n\nWe further noted that, when compared to the \u03b22AR, the \u03b22V2R departed from the unity line primarily due to a stronger ability to use the \u03b2-arrestin CT for endocytosis (Figure 4c). This is interesting because the \u03b22V2R differs from the wild-type \u03b22AR mainly in its tail interaction with \u03b2-arrestin mediated by V2R-derived tail sequence. Relative to the V2R, the \u03b22V2R departed from the linear relationship primarily due to stronger utilization of the \u03b2-arrestin CLB. Moreover, the \u03b22V2R is thought to differ from the wild-type V2R primarily in its core interaction with \u03b2-arrestin. Accordingly, we speculate that GPCRs differ in their ability to utilize the CT or CLB for endocytosis according to differences in the interactions that they make with \u03b2-arrestin through the receptor tail and core, respectively. This is likely an oversimplification considering the diversity of GPCRs \u03b2-arrestins engage. For example, the M2R was similar to other class B GPCRs in the present analysis, but its critical phosphorylation sites reside in the third intracellular loop (Nakata et al., 1994).\n\n### Each endocytic determinant is oppositely coupled to the net signaling output of endogenous \u03b22ARs\n\nHaving observed that differences in the GPCR/\u03b2-arrestin complex affect utilization of the CT relative to CLB, we next asked if each discrete endocytic determinant conversely influences the GPCR/\u03b2-arrestin interaction. To test this, we returned to the \u03b22AR as a prototype and investigated how mutating the CT or CLB affects \u03b22AR/\u03b2arr2 complex formation in living cells.\n\nWe first assessed complex formation using a NanoBiT real-time protein complementation assay. We observed no Iso-dependent response when interaction was measured between \u03b22AR and Nb33, a biosensor that we consider a negative control because it recognizes activated \u03bcOR but not the \u03b22AR (Stoeber et al., 2018). Iso produced a concentration-dependent increase in the interaction between the \u03b22AR and wild-type \u03b2-arrestin-2. Similar results were obtained after mutating the CT and CLB individually or in combination, verifying that neither determinant is required for receptor/\u03b2-arrestin complex formation. However, we noted a trend suggesting additional specificity: Mutating the \u03b2-arrestin-2 CLB (\u03b2arr2-CLB) appeared to decrease the agonist potency (reported as logEC50 \u00b1 95% CI) for recruitment (\u22126.8 \u00b1 0.1), whereas mutating the CT (\u03b2arr2-\u2206CT) increased it when compared to wild type (\u22127.3 \u00b1 0.2 and \u22127.1 \u00b1 0.1, respectively), and mutating both determinants in combination (\u03b2arr2-CLB,\u2206CT) trended toward an intermediate effect (\u22127.1 \u00b1 0.3) (Figure 5a). We also noted that single mutation of the CLB slowed \u03b22AR/\u03b2arr2 association relative to that observed for wild-type protein (Tau95% CI = 81\u2013108 s and 23\u201356, respectively), whereas the double (CLB and CT) mutation produced kinetics indistinguishable from wild type (Tau95% CI = 31\u201337 s, Figure 5b). These results indicate that neither the CT nor CLB is required for \u03b2-arrestin to associate with receptors but suggest that each determinant influences the interaction in different ways.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig5-v2.jpg)\n\n**Figure 5.:** Direct NanoBiT luciferase complementation of \u03b22-adrenergic receptor (\u03b22AR)-LgBiT and SmBiT-tagged: Nb33 (a \u03bcOR receptor-specific nanobody, black), visual arrestin (pink), wild-type \u03b2-arrestin-2 (green), CT mutant (dark purple), CLB mutant (light purple), or double mutant (cyan) measured as an end point across a range of isoproterenol (Iso) concentrations (a) and kinetically (b) pre- and post-stimulation with 10 \u03bcM Iso. Dose\u2013response curves were generated with three-parameter nonlinear fit (R2 = 0.94\u20130.99). (c) Endogenous \u03b22AR cAMP response after stimulation with 10 \u03bcM Iso measured by a genetically encoded fluorescent cAMP biosensor, cADDis, and normalized to the response elicited by simultaneous treatment with 10 \u03bcM forskolin (Fsk) and 300 \u03bcM 3-isobutyl-1-methylxanthine (IBMX). (d) Area under the curve calculated from panel (c). All data are shown as mean \u00b1 standard error of the mean (SEM). from three independent experiments performed in \u03b2arr1/2 DKO HEK293 cells. Significance was determined by an ordinary one-way analysis of variance (ANOVA) (df = 4, F = 112.1) with Tukey\u2019s multiple comparisons test. ns p \u2265 0.05, *p < 0.05, ** p < 0.01, ***p < 0.001. (e) Diagram of proposed model involving two differentially utilized allosteric paths from GPCRs through \u03b2-arrestins to promote endocytosis. Class A GPCRs (blue), exemplified by the \u03b22AR, primarily utilize the CLB to drive endocytosis while Class B GPCRs, exemplified by V2R (magenta) and \u03b22V2R (gold) utilize both determinants. Arrows represent the proposed allosteric paths linking the GPCR/\u03b2-arrestin interface to the \u03b2-arrestin/clathrin-coated pit (CCP) interface, explaining how the CLB-dependent endocytic mode is coupled to rapid desensitization of receptor signaling while the CT-dependent mode enables prolonged signaling.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81563/elife-81563-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Area under the curve (AUC) for the cAMP response elicited by endogenous \u03b22AR after stimulation with 10 \u03bcM isoproterenol in \u03b2arr1/2 DKO HEK293s expressing the indicated construct and normalized to response in cells expressing wild-type \u03b2arr2. Data shown as mean \u00b1 standard error of the mean (SEM). Significance determined by ordinary one-way analysis of variance (ANOVA) (df = 9, F = 13.47) with Dunnett\u2019s multiple comparison test against the negative control (EGFP). (b) Example kinetics of the cAMP response from endogenous \u03b22AR after treatment with 10 \u03bcM Iso in \u03b2arr1/2 DKO HEK293 expressing the negative control (mApple, blue), \u03b2arr2-mApple (red), \u03b2arr2-CLB-mApple (green), and \u03b2arr2-N218T-mApple (dark blue). Data shown as mean \u00b1 standard deviation (n = 3). Kinetics for other mutants are not shown. All data shown are from three independent experiments. (ns p \u2265 0.05, *p < 0.05, ** p < 0.01, ***p < 0.001).\n\nMore pronounced differences were observed when we assessed \u03b22AR/\u03b2-arrestin complex formation functionally by assessing desensitization of the endogenous \u03b22AR-elicited cAMP response. We verified a lack of \u03b2-arrestin-mediated desensitization in \u03b2arr1/2 DKO cells, as indicated by persistently elevated cAMP in the continued presence of agonist, and rescue of desensitization by recombinant wild-type \u03b2arr2 (Figure 5c, d). We also observed rescue of desensitization by the \u03b2arr2-CLB,\u2206CT double mutant construct, despite this construct having no detectable endocytic activity, as well as rescue after single mutation of the \u03b2-arrestin CT. Remarkably, individually mutating the CLB severely impaired the ability of \u03b2arr2 to rescue the desensitization response (Figure 5c, d). Moreover, this signaling effect was phenocopied by making the same single-residue exchange (N218T) in the otherwise wild-type CLB (Figure 5\u2014figure supplement 1a, b). Together, these results suggest that the discrete endocytic determinants in the \u03b2-arrestin CLB and CT, while not known to directly contact the receptor and not essential for GPCR/\u03b2-arrestin complex formation, are each coupled to the receptor/\u03b2-arrestin interface and produce opposing effects on the net signaling output of receptors.\n\n## Discussion\n\nPrior to this work, the ability of GPCRs to trigger the endocytic adaptor activity of \u03b2-arrestin was assumed to rely entirely on release of the \u03b2-arrestin CT. Revising this view, we show that the \u03b2-arrestin CT, while clearly capable of promoting GPCR endocytosis, is not necessary for this process. The CT-independent endocytic activity of \u03b2-arrestin is clearly evident in a \u03b2-arrestin knockout background. However, we note that a previous study using COS-1 cells, which naturally express \u03b2-arrestin at a low level, also reported CT-independent endocytosis (Orsini and Benovic, 1998). We define the CLB as a discrete determinant in \u03b2-arrestin that is critical for the endocytic activity of \u03b2-arrestin, and which can operate in the absence of the CT. We further show that the relative contribution of the \u03b2-arrestin CT and CLB in mediating the endocytic activity of \u03b2-arrestin varies depending on the GPCR bound, with class A receptors primarily dependent on the CLB and class B GPCRs dependent on the CT and CLB to a similar degree. By focusing on the \u03b22AR as a prototypic class A GPCR, we additionally show that the \u03b2-arrestin CT can promote receptor clustering into CCPs despite having little ability to drive the subsequent endocytosis of receptors. Moreover, we show that mutations which selectively disrupt each of the endocytic determinants produce opposing effects on the net signaling output of receptors. In sum, these results support a model in which the endocytic activity of \u03b2-arrestins is triggered flexibly by GPCRs through distinct (CT and CLB-dependent) biochemical modes that differentially attenuate or prolong receptor signaling (Figure 5e).\n\nOnly two \u03b2-arrestins regulate hundreds of GPCRs and it is increasingly clear that \u03b2-arrestins function as highly flexible regulators of GPCR signaling, with the ability to produce a variety of downstream functional effects depending on receptor-specific differences communicated across the GPCR/\u03b2-arrestin interface. The present results extend this concept to flexibility and diversity at the \u03b2-arrestin/CCP interface. Our finding that mutations which disrupt either the CT or CLB produce different effects on endogenous \u03b22AR signaling suggest that each endocytic mode, in addition to being triggered in a GPCR-specific manner, is coupled to opposing effects on the net signaling output of receptors.\n\nBeyond providing new insight into the cell biology of GPCRs and \u03b2-arrestins, we believe that our results have implications for understanding endocytic adaptor functions more generally. The best studied among these is AP2, a protein complex that is essential for CCP nucleation and co-assembles with clathrin. AP2 switches from a \u2018closed\u2019 to \u2018open\u2019 state triggered by the binding of PIP2 and endocytic cargo (Kovtun et al., 2020). \u03b2-Arrestins are structurally distinct from AP2 and also differ functionally, as they are not required for CCP formation and associate with CCPs primarily after assembly (Puthenveedu and von Zastrow, 2006; Santini et al., 2002). Nevertheless, \u03b2-arrestins also switch from \u2018closed\u2019 to \u2018open\u2019 states triggered by binding GPCR cargo and aided, in many cases, by the binding of PIP2 (Gaidarov et al., 1999; Huang et al., 2020; Kang et al., 2014; Shukla et al., 2013). The present results provide evidence that \u03b2-arrestin can switch into more than one active or \u2018open\u2019 state, and do so selectively depending on the GPCR bound. To our knowledge, these findings provide the first example of an endocytic adaptor protein capable of undergoing cargo-specific mode switching. The existence of such a flexible relationship between cargo binding and functional activation of the adaptor protein suggests that adaptor proteins have the capacity to communicate more nuanced information to the CCP than the simple presence or absence of a cognate cargo. In addition, these findings raise multiple new questions about the biochemical and structural basis for the discrete active or \u2018open\u2019 states of \u03b2-arrestin that we resolve here according to functional differences.\n\n### Ideas and speculation\n\nWhile the present results provide strong evidence for the existence of discrete endocytic modes differing in dependence on the \u03b2-arrestin CT and CLB, they leave unresolved the biochemical details of the latter mode. In contrast to the \u03b2-arrestin CT, for which relevant CCP-associated interacting partners are well known, how the \u03b2-arrestin CLB engages CCPs remains to be determined. We show that the discrete function of the CLB depends on engagement with partners other than the clathrin terminal domain and the \u03b2-appendage of AP2, which are key domains interacting with the \u03b2-arrestin CT. We note that many proteins are presently known to bind AP2 or the clathrin terminal domain (Miele et al., 2004; Muenzner et al., 2017; Willox and Royle, 2012). We also note that the relatively understudied C-lobe engages multiple additional proteins and that two of these, PIP5K1A (Jung et al., 2021; Nelson et al., 2008) and PDE4D5 (Baillie et al., 2007; Perry et al., 2002), have binding sites which overlap the CLB and are already known to affect endocytosis and GPCR desensitization. However, neither protein is currently known to be enriched in CCPs, which is presumably required for the CLB to drive GPCR-triggered accumulation in CCPs without the CT as we show. Moreover, the CCP lattice associates with more than 50 additional proteins, some only transiently during CCP maturation, and a number with known regulatory effects (Kirchhausen et al., 2014; Merrifield and Kaksonen, 2014; Mettlen et al., 2018; Traub, 2011). Thus, further study will be required to determine whether and how these proteins, and/or other candidates yet to be identified, mediate the signal modulating and trafficking functions of the CLB delineated here.\n\n## Materials and methods\n\n### Cell culture, expression constructs, and transfections\n\nParental and \u03b2arr1/2 double knockout HEK 293A cell lines, generously provided by Asuka Inouye and Silvio Gutkind (O\u2019Hayre et al., 2017), were cultured in complete growth Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, Life Technologies, 11965118) supplemented with 10% fetal bovine serum (UCSF Cell Culture Facility). Cell cultures were verified to be free of mycoplasma contamination by enzymatic assay (MycoAlert, Lonza, LT07-318). DNA transfections were carried out using Lipofectamine 2000 (Thermo, 11668019) according to the manufacturer\u2019s protocol. Cells were transfected 24\u201348 hr before experiments.\n\nAll receptor constructs were N-terminally FLAG tagged. The human \u03b22AR, V2R, \u03bcOR, and \u03baOR were previously described (Cao et al., 1999; Chu et al., 1997; Tanowitz and von Zastrow, 2003). NTSR1 was a generous gift from Brian Kobilka (Huang et al., 2020). The \u03b22AR\u2013V2R chimera was a generous gift from Marc Caron (Oakley et al., 1999). M2R was previously generated in the lab by James Hislop. The \u03b22AR-3S was previously described (Hausdorff et al., 1991). \u03b22AR-LgBiT was generated by PCR amplification from the LgBiT Expression Vector (Promega) and inserted into PCR linearized FLAG-tagged \u03b22AR using InFusion HD.\n\n\u03b2-Arrestin-2\u2013GFP and \u03b2-arrestin-2\u2013mApple were previously described (Barak et al., 1997; Eichel et al., 2016). \u03b2-Arrestin-2-CCS\u2013EGFP was previously described (Eichel et al., 2018). All EGFP- and mApple-tagged \u03b2arr2 CLB and \u0394CT mutants were generated by PCR amplifying from \u03b2arr2-EGFP and subcloning into EGFP-N1 (ClonTech) or mApple-N1 (Steinbach et al., 2008) using InFusion HD (Takara Bio). Point mutants were generated by site directed mutagenesis PCR to generate linear DNA that was then closed using InFusion HD. \u03b2-Arrestin-2-SmBiT constructs were generated by removing EGFP from \u03b2arr2, \u03b2arr2-\u0394CT, \u03b2arr2-CLB, and \u03b2arr2-\u0394CT,CLB constructs by digestion with ApaI and XbaI followed by insertion of SmBiT by two rounds of PCR followed by InFusion HD.\n\n\u03b2-Arrestin-1\u2013EGFP was generated by PCR amplifying from \u03b2-arrestin-1\u2013mVenus, which was a gift from R. Sunahara (University of California, San Diego), and subcloned into EGFP-N1. All \u03b2arr1 mutants were generated by PCR amplifying from \u03b2arr1-EGFP and subcloning into EGFP-N1 using InFusion HD.\n\nEGFP-tagged visual arrestin (v-arr) was generated by synthesis of bovine visual arrestin (Twist Biosciences) and subcloned into EGFP-N1 using InFusion.\n\nVisual arrestin and \u03b2-arrestin-2 EGFP-tagged chimeras were generated by synthesis of the template chimera, ChiA (Twist Bioscience), and subcloned into EGFP-N1. Subsequent chimeras, ChiA.1\u201314, were generated by PCR and InFusion HD (Takara Bio).\n\nscFv30-LgBiT was generated by PCR amplifying scFv30 from scFv30-YFP, a generous gift Arun Shukla, and LgBiT from LgBiT Expression Vector (Promega) and inserted sequentially into pCDNA3.1 by InFusion HD.\n\nClathrin\u2013dsRed was previously described (Merrifield et al., 2002).\n\nNb33-SmBiT was previously generated in the von Zastrow lab by Joy Li.\n\nGST-tagged clathrin terminal domain (1\u2013363) and the \u03b2-appendage of AP2 (701\u2013937) were generous gifts from Jeffrey Benovic and Harvey McMahon (Kang et al., 2009).\n\nSee Supplementary file 1 for all primers used in this study.\n\n### Live-cell TIRF microscopy imaging\n\nTIRF microscopy was performed at 37\u00b0C using a Nikon Ti-E inverted microscope equipped for through-the-objective TIRF microscopy and outfitted with a temperature-, humidity-, and CO2-controlled chamber (Okolab). Images were obtained with an Apo TIRF \u00d7100, 1.49 numerical aperture objective (Nikon) with solid-state 405, 488, 561, and 647 nm lasers (Keysight Technologies). An Andor iXon DU897 EMCCD camera controlled by NIS-Elements 4.1 software was used to acquire image sequences every 2 s for 10 \u2009min. \u03b2arr1/2 double knockout HEK293s were transfected as indicated according to the manufacturer\u2019s protocol 48 hr before imaging and then plated on poly-L-lysine (0.0001%, Sigma) coated 35-mm glass-bottom culture dishes (MatTek Corporation) 24 hr before imaging. Cells were labeled with monoclonal FLAG antibody (M1) (1:1000, Sigma F-3040) conjugated to Alexa Fluor 647 dye (Life Technologies) for 10 min at 37\u2009\u00b0C before imaging, washed, and imaged live in DMEM without phenol red (UCSF Cell Culture Facility) supplemented with 30 \u2009mM HEPES [N-(2-hydroxyethyl)piperazine-N\u2032-(2-ethanesulfonic acid)], pH 7.4 (UCSF Cell Culture Facility). Cells were treated by bath application of isoproterenol at the indicated time. At least three independent experiments were performed for all live-cell microscopy.\n\n### TIRF microscopy image analysis\n\nQuantitative image analysis was performed on unprocessed images using ImageJ and Fiji software (Schindelin et al., 2012; Schneider et al., 2012). To quantify change in \u03b2-arrestin fluorescence over time in TIRF microscopy images, which was reported as plasma membrane recruitment, fluorescence values were measured over the entire time series in a region of interest (ROI) corresponding to the cell. Fluorescence values of the ROI were normalized to fluorescence values before agonist addition. Minimal bleed-through and photobleaching was verified using single-labeled and untreated samples, respectively. Line scan analysis of receptor, \u03b2-arrestin, or clathrin fluorescence was carried out using the Fiji plot profile function to measure pixel values from the five pixel wide lines shown. Clustering index was determined using the skew statistical measurement applied to fluorescence intensity values of M1-Alexa647 labeled receptor pixels in a ROI corresponding to the cell as has been previously described (Eichel et al., 2018).\n\n### Flow cytometry internalization assays\n\nAll internalization assays were performed with \u03b2arr1/2 DKO HEK293 cells that were transfected in 6 cm dishes according to the manufacturer\u2019s protocol 24 hr before beginning the assay with 1000 ng of GPCR DNA paired with 400\u2013800 ng of \u03b2arr (or one of its mutants) DNA. At least 3 hr before drug treatment, cells were lifted using TrypLE Express (Thermo Scientific), a dissociation reagent that leaves extracellular epitopes intact, resuspended in complete media, transferred to 12-well plates in triplicate, and incubated under standard culture conditions. Cells were then treated with the corresponding agonist (see figure legends) for the indicated period and placed on ice to stop trafficking. Cells were washed once with ice-cold phosphate-buffered saline (PBS) supplemented with 2 mM CaCl2 followed by labeling of FLAG-tagged surface receptors with M1 antibody (Sigma Aldrich, F3040) conjugated to Alexa Fluor 647 (Thermo Scientific) for 30 min at 4 \u00b0C while gently shaking. Surface staining of receptors was measured using a CytoFlex (Beckman Coulter) with gates set for single cells expressing EGFP (see Figure 1\u2014source data 1). Examination of unstimulated cells verified that fluorescence from either EGFP or surface receptors was similar across conditions within each GPCR tested. Percent internalization was calculated by taking the mean M1-647 fluorescence for the agonist treated cells and dividing it by the same measure for the corresponding unstimulated cells, subtracted from one, and multiplied by 100. At least three independent experiments were performed for all internalization assays.\n\n### siRNA transfection\n\nCells were seeded at 30% confluency in a 6 cm dish and transfected overnight with 3 \u03bcl of 20 \u03bcM stocks of either AllStars Negative Control (Qiagen, Germantown, MD; 1027281) or CHC17 (5\u2032- AAGCAATGAGCTGTTTGAAGA-3\u2032) siRNA with RNAiMax Lipofectamine (Invitrogen) according to the manufacturer\u2019s protocol. Media was changed the next day and cells recovered for another 48 hr before experimentation. If DNA transfection was also required, this was done using Lipofectamine 2000 24\u201348 hr before experimentation.\n\n### V2R phosphopeptide\n\nThe V2Rpp peptide (ARGRpTPPpSLGPQDEpSCpTpTApSpSpSLAKDTSS) was obtained by custom peptide synthesis (Tufts University Core Facility).\n\n### Purification of GST-tagged proteins\n\nProduction of GST-clathrin terminal domain and GST-AP2 \u03b2-appendage proteins was initiated by transformation of E. coli BL21 DE3 cells, transformed with either GST fusion protein construct. Starter cultures were grown at 37\u00b0C overnight in Luria Broth and used to inoculate Terrific Broth. Cultures were grown at 37\u00b0C until OD600 reached 0.6 and then induced with 300 \u03bcM isopropyl-1-thio-\u03b2-d-galactopyranoside for 20 hr at 20\u00b0C. Cultures were centrifuged for 30 min at 4000 \u00d7 g and frozen at \u221280\u00b0C. Pellets were resuspended in lysis buffer (50 mM HEPES pH 7.4, 500 mM NaCl, 10 \u03bc\u039c leupeptin, benzonase, and lysozyme) and lysed by sonication. Lysate was clarified by centrifugation at 37,800 \u00d7 g for 30 min at 4\u00b0C and then applied to glutathione agarose (Thermo Fisher, PI16100). Agarose was washed with 20 column volumes of lysis buffer followed by 20 column volumes of wash buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 2 mM dithiothreitol [DTT]) and then protein was eluted by supplementing the wash buffer with 10 mM reduced glutathione. Buffer was exchanged to freeze buffer (20 mM HEPES 7.4, 150 mM NaCl, 2 mM DTT, and 20% glycerol), protein was flash frozen in LN2, and stored at \u221280\u00b0C until use.\n\n### GST pull-downs\n\nPurified GST-tagged protein (1 mg) was diluted to 500 \u03bcL in protein buffer (20 mM HEPES 7.4, 150 mM NaCl, 2 mM DTT), applied to 50 \u03bcl of settled glutathione agarose, batch bound while rotating for 1.5 hr at room temperature, and then washed 3\u00d7 with protein buffer. \u03b2-Arrestin-1/2 double knockout cells transiently expressing either \u03b2arr2-EGFP or \u03b2arr2-\u0394CT-EGFP were harvested from 10 cm dishes, lysed by resuspension in 1 ml of cold lysis buffer (20 mM HEPES [N-(2-hydroxyethyl)piperazine-N\u2032-(2-ethanesulfonic acid)] pH 7.4, 150 mM NaCl, 2 mM DTT [dithiothreitol], 5 mM EDTA [ethylenediaminetetraacetic acid], 1% NP-40) containing Complete Mini, EDTA-free (Roche, Mannheim, Germany; 11836170001) and PhosSTOP (Roche, 04906837001), clarified by centrifugation for 30 min at 17,000 \u00d7 g, and applied to glutathione agarose that was prebound to GST-tagged proteins. All samples were supplemented with 10 \u03bcM V2Rpp and incubated on a rotator for 3 hr at 4\u00b0C. Glutathione agarose was then washed 4\u00d7 with lysis buffer and protein was eluted by application of lysis buffer supplemented with 10 mM reduced glutathione.\n\nProtein samples were prepared for analysis by adding NuPage LDS Sample Buffer (Invitrogen, NP0007) containing 15 mM DTT (Sigma, D0632) and heating at 85\u00b0C for 5 min. Samples were loaded into a NuPAGE 4\u201312% Bis-Tris Protein gels (Invitrogen, NP0335BOX) and either stained with InstantBlue Coomassie (Abcam, ab119211) or transferred to nitrocellulose (Bio-Rad, 162-0112).\n\nAfter transfer onto nitrocellulose, membranes were stained with Ponceau S solution (Sigma, P7170) to check transfer quality. Membranes were washed with TBS to remove the Ponceau S solution before blocking with Odyssey TBS blocking buffer (LI-COR Biosciences, Lincoln, NE; 927-50000). Primary antibodies were used to probe for proteins of interest with the corresponding secondary antibodies. The blots were imaged on an Odyssey Infrared Imaging System (LI-COR Biosciences). Scans of uncropped and unprocessed blots are provided in Figure 1\u2014figure supplement 2.\n\n### NanoBiT complementation\n\n\u03b2-Arrestin-1/2 double knockout HEK293s were plated in 6-well dishes, transfected with \u03b22AR-LgBiT (200 ng per well of a 6-well plate) paired with one of the following: Nb33-EGFP-SmBiT, arr1-SmBiT, \u03b2arr2-SmBiT, \u03b2arr2-\u0394CT-SmBiT, \u03b2arr2-CLB-SmBiT, or \u03b2arr2-CLB,\u0394CT-SmBiT (50 ng per well of a 90% confluent 6-well plate). Twenty-four hours later, cells were lifted with TrpLE Express, resuspended in 37\u00b0C assay buffer (135 mM NaCl, 5 mM KCl, 0.4 mM MgCl2,1.8 mM CaCl2, 20 mM HEPES, and 5 mM d-glucose, adjusted to pH 7.4), and transferred to a white flat bottom 96-well plate in triplicate with 20,000 cells per well. Coelenterazine-H (Thermo Scientific) in assay buffer prewarmed to 37\u00b0C was added to a final concentration of 5 \u03bcM and incubated for at least 5 min before data collection. For kinetic experiments, three time points were collected to establish baseline before vehicle or 10 \u03bcM isoproterenol addition (both of which contained 5 \u03bcM coelenterazine-H). Fold response was calculated by averaging the values across each triplicate and then dividing the isoproterenol treated samples by the corresponding buffer treated samples. For dose\u2013response experiments, isoproterenol was added to the indicated final concentrations in a 37\u00b0C assay buffer and data were collected for 20 min.\n\nFor complementation with scFv30-LgBiT, \u03b2-arrestin-1/2 double knockout HEK293s were plated in 10 cm dishes and transfected the next day with scFv30-LgBiT (3000 ng) paired with one of the following \u03b2arr2-SmBiT, \u03b2arr2-\u0394CT-SmBiT, \u03b2arr2-CLB-SmBiT, or \u03b2arr2-CLB,\u0394CT-SmBiT (1000 ng). After 24 hr, cells were lifted with PBS EDTA, spun down, lysed in 1 ml of buffer (50 mM HEPES 7.4, 150 mM NaCl, 1% NP-40, 5 mM EDTA) containing Complete Mini, EDTA-free (Roche, Mannheim, Germany; 11836170001) and PhosSTOP (Roche, 04906837001), and clarified by centrifugation for 30 min at 17,000 \u00d7 g. Samples were transferred to a 96-well plate in duplicate, followed by addition of the indicated concentration of V2Rpp, and incubated for 15\u201320 min at room temperature. Coelenterazine-H was added to 5 \u03bcM and incubated for 5 min before data were collected on a plate reader (CLARIOStar Plus) for 30 min.\n\nFold response was calculated by averaging the values across each triplicate, or duplicate for scFv30-LgBiT, and then dividing the maximum by the minimum responses within each condition or dose range. Dose\u2013response curves were generated by a three-parameter nonlinear fit and tau values for time series data were determined using a one-phase association, both were calculated in Prism 9. At least three independent experiments were performed for all NanoBiT assays.\n\n### Live-cell cAMP assay\n\n\u03b2-Arrestin-1/2 double knockout HEK293 cells were plated in 6-well plates, transfected with either mApple, \u03b2arr2-mApple, \u03b2arr2-\u0394CT-mApple, \u03b2arr2-CLB-mApple, or \u03b2arr2-CLB,\u0394CT-mApple. The following day, cells were lifted with TrypLE, transduced with CMV cADDis Green Upward cAMP sensor (Montana Molecular) according to the manufacturer\u2019s instructions, and transferred in triplicate at 50,000 cells per well in a black clear bottom 96-well plate (Corning). On the day of the experiment, the media was removed and replaced with 37\u00b0C assay buffer (135 mM NaCl, 5 mM KCl, 0.4 mM MgCl2,1.8 mM CaCl2, 20 mM HEPES, and 5 mM d-glucose, adjusted to pH 7.4) and incubated for 5 min in the prewarmed plate reader (H4 Synergy BioTek). Similar expression of mApple-tagged plasmids was verified by fluorescence with monochromators set to Ex: 568/9.0 and Em: 592/13.5. Next, cADDis fluorescence baseline, and similarity of its expression across conditions, was established by three time points a minute apart using monochromators set to Ex: 500/9.0 and Em: 530/20.0. Isoproterenol was then added to a final concentration of 10 \u03bcM and cADDis fluorescence was measured every minute for the indicated time. At the end of the kinetic run 10 \u03bcM forskolin (Fsk) and 300 \u03bcM 3-isobutyl-1-methylxanthine (IBMX) were added. Percent cAMP response was calculated by subtracting the baseline fluorescence from each time point and then dividing by the max response after Fsk/IBMX addition. No fluorescence bleed through nor significant photobleaching were observed in separate experiments where cells expressing only mApple or cADDis green were measured with the same optical configuration. At least three independent experiments were performed.\n\n### Sequence logos\n\nPSI-BLAST was performed against bovine \u03b2-arrestin-2 protein sequence and iterated until convergence. Protein sequences annotated as \u03b2-arrestin and longer than 300 amino acids were kept while all others were discarded. Aligned regions of interest corresponding to 9 amino acids windows around either the N218 in the C-lobe base, the clathrin-binding motif, or the AP2\u03b2-binding motifs were extracted and were input into a previously logo generator (Crooks et al., 2004).\n\n### Statistical analysis\n\nQuantitative data are expressed as the mean and error bars represent the standard error of the mean (SEM) or standard deviation (SD) unless otherwise indicated. Scatter plots are overlaid with mean and SEM. Determination of statistical significance is described in each figure legend and was calculated using Prism 9.0 (GraphPad Software). *p < 0.05; **p < 0.01; ***p < 0.001 when compared with control, no-treatment, or other conditions. All experiments showing representative data were repeated at least three independent times with similar results. Independent experiments represent biological replicates.\n",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "2cb3a600-348f-43ff-8164-ffafa886a778",
+      "submission_id": "3aa9d1f4-cd49-480d-8fd7-54c3a78e3a7e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81563.sa0](https://doi.org/10.7554/eLife.81563.sa0)\n\nIn the canonical model of G protein-coupled receptor desensitization and endocytosis, the unmasking of the \u03b2-arrestin C-terminus plays a crucial role. Here, Barsi-Rhyne and colleagues revise and extend this fundamental paradigm by showing that there is a second structural region, the \u03b2-arrestin C lobe, that governs GPCR endocytic behavior. Importantly, class A GPCRs that transiently interact with arrestins prefer this new mode while class B GPCRs, which form more stable interactions with arrestins, employ both the canonical and the newly identified endocytic mechanism. Intriguingly, the canonical mode enables prolonged signaling while the new mode promotes rapid desensitization.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81563.sa1](https://doi.org/10.7554/eLife.81563.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Discrete GPCR-triggered endocytic modes enable \u03b2-arrestins to flexibly regulate cell signaling\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Suzanne Pfeffer as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Evi Kostenis (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. It would be important to carry out some experiments to show it is truly CME and not another route.\n\n2. Determine if this region does or does not bind clathrin \u2013 \"\u2026using the Tail deletion should remove all characterised CCV motifs so if it still binds clathrin/AP2, there is the answer. If it doesn't bind but is CME then it must be via something else.\"\n\nReviewer #1 (Recommendations for the authors):\n\nAs high-quality data deserve high-quality presentation, a number of issues should be resolved in revision.\n\n1. Line 34. B-arrestins were named because they preferred b2-adrenergic receptors over rhodopsin, in contrast to visual arrestins. That's where the letter \"b\" came from.\n\n2. Lines 213-215. The text does not agree with the numbers presented. Increased potency means action at lower concentrations, so EC50 of -7.3 means greater potency than EC50 of -6.8.\n\n3. M2 muscarinic receptor was shown to internalize via both caveolae and CCPs. The former route is arrestin-independent (J Biol Chem. 1997 Sep 19;272(38):23682-9), even though M2 binds b-arrestins and is desensitized by them. If that is true, the authors should have observed M2R internalization in b-arrestin1/2 KO cells. Did they?\n\n4. M2R is particularly interesting in another way: this receptor contains phosphorylation sites that arrestins recognize in the 3rd cytoplasmic loop, in contrast to b2AR and other receptors carrying these sites in the C-terminus. The authors should note and discuss this.\n\n5. The effects of disabling clathrin and AP binding sites in b-arrestin CT on GPCR internalization were studied in detail (J Biol Chem. 2002 Aug 23;277(34):30760-8). The authors should compare internalization in the presence of their b-arrestin mutant where both these sites were disabled with that described earlier.\n\n6. There was a report that b-arrestin1 (unlike b-arrestin2) has an additional clathrin-binding site (J Biol Chem. 2009 Oct 23;284(43):29860-72). Did the authors consider or test its role in GPCR internalization?\n\n7. In view of the inability of visual arrestin to promote GPCR internalization, the authors might want to discuss the similarities and differences between available structures of visual arrestin complex with rhodopsin and b-arrestin1 complex with several non-visual GPCRs. This might shed some light on the cross-talk between the receptor-binding surface of arrestins and their opposite cytoplasmic side implied by the data.\n\n8. Some editing is needed. In the abstract, \"that each mode has\" should be \"different modes have\".\n\nReviewer #2 (Recommendations for the authors):\n\nI suggest strengthening the science in the following ways:\n\n1. Improve referencing and explanations of existing published data. These include but are not limited to Using correct PLoS reference of \u0392 ear structure from McMahon lab, not PDB access PMID: 16903783\n\nThis work is based on that from Traub lab published the year before, which is completely omitted \u2013 it must be included PMID: 16516836\n\nInclude referencing of the body of work from Royle lab, Graham/Kelly lab, and Traub/Owen labs on identifying and characterising a wide range of signals that can bind to clathrin PMID: 27813245, PMID: 14981508, PMID: 21939487 WxxW\n\nDiscuss the relationship between Clobe site and Arrestin2L splice loop clathrin binding site \u2013 especially Line144 as this splice loop site is important for Arrestin2L mediated internalisation \u2013 are splice loop and Clobe redundant assuming they are different as they appear to be.\n\n2. Show that the Clobe using internalisation events are mediated by CME \u2013 use inhibitors commonly available (dynasore, pitstop) or dynamin mutation, KD of clathrin. KD of AP2 would also help to show whether AP2 was necessary, which would add further interesting information.\n\n3. Rather than delete the entire Ctail, which is a crude mutation, replace the LIELD and FxxFxxxR sites individually to better define the role of Clobe.\n\n4. Demonstrate what Clobe binds to. As a minimum, biochemical binding to clathrin should be tested as elegantly carried out in Graham/Kelly lab work. Solving a structure if the interaction is with clathrin is not required but would be a nice addition. The Graham/Kelly work shows that very different sequences can bind to the same sites on clathrin terminal domains.\n\nDoing an IP/binding study from cytosol, analysed by mass spec using \u03b2-arrestin 2 and Ctail deleted and Clobe mutated \u03b2-arrestin would probably be very informative.\n\n5. For the benefit of readers, an alignment of arrestins 1,2,3 (vArr, B1Arr, B2Arr) along with the chimera should be shown in a main figure with all relevant sites clearly highlighted.\n\nLine108 list the contiguous residues involved in binding and suggest how a conservative mutation of N to T could produce such a profound effect \u2013 incidentally please confirm the mutant still folded.\n\nLine150 Discuss possible explanation(s) for this data not agreeing with PMID: 16516836 that the Bear FxxFxxxR site is key for concentrating \u0392-adrenergic receptor in CCPs.\n\nReviewer #3 (Recommendations for the authors):\n\nIt is a true pleasure for me to review such elegant work and to suggest some comments to further enhance the paper's impact.\n",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eebc654d-f4e0-4704-b752-8c7b55f8783b",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C1",
+      "claim": "\u03b2-Arrestins desensitize ligand-activated G-protein-coupled receptors (GPCRs) at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Arrestins are master regulators of cellular signaling that operate by desensitizing ligand-activated G-protein-coupled receptors (GPCRs) at the plasma membrane and promoting their subsequent endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known function of \u03b2-arrestins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "d0f144ef-b24a-4391-a77e-602975c0f1de",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C2",
+      "claim": "\u03b2-Arrestins promote endocytosis of ligand-activated GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Arrestins are master regulators of cellular signaling that operate by desensitizing ligand-activated G-protein-coupled receptors (GPCRs) at the plasma membrane and promoting their subsequent endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known function of \u03b2-arrestins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "87b51477-7e39-4b31-a7e8-45505f4b9407",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C3",
+      "claim": "The endocytic activity of \u03b2-arrestins is ligand dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The endocytic activity of \u03b2-arrestins is ligand dependent, triggered by GPCR binding, and increasingly recognized to have a multitude of downstream signaling and trafficking consequences that are specifically programmed by the bound GPCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established property of \u03b2-arrestin endocytic activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "9ddc057e-1485-465c-acf7-b364268bb77c",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C4",
+      "claim": "The endocytic activity of \u03b2-arrestins is triggered by GPCR binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The endocytic activity of \u03b2-arrestins is ligand dependent, triggered by GPCR binding, and increasingly recognized to have a multitude of downstream signaling and trafficking consequences that are specifically programmed by the bound GPCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established property of \u03b2-arrestin endocytic activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "b8764600-a7d0-4e9b-8fed-9c71125aaef2",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C5",
+      "claim": "Only one biochemical 'mode' for GPCR-mediated triggering of endocytic activity was previously known - displacement of the \u03b2-arrestin C-terminus (CT) to expose clathrin-coated pit-binding determinants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only one biochemical 'mode' for GPCR-mediated triggering of the endocytic activity is presently known \u2013 displacement of the \u03b2-arrestin C-terminus (CT) to expose clathrin-coated pit-binding determinants that are masked in the inactive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as the prevailing understanding prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "dd5373c5-e440-4548-9651-7f70d43881e2",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C6",
+      "claim": "A second mode of GPCR-triggered endocytic activity exists that is independent of the \u03b2-arrestin CT.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we revise this view by uncovering a second mode of GPCR-triggered endocytic activity that is independent of the \u03b2-arrestin CT and, instead, requires the cytosolic base of the \u03b2-arrestin C-lobe (CLB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "0d01dad4-1dc5-48b4-b60e-73ae3a82f0f3",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C7",
+      "claim": "The second mode of GPCR-triggered endocytic activity requires the cytosolic base of the \u03b2-arrestin C-lobe (CLB).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we revise this view by uncovering a second mode of GPCR-triggered endocytic activity that is independent of the \u03b2-arrestin CT and, instead, requires the cytosolic base of the \u03b2-arrestin C-lobe (CLB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "6d0d300f-5c3b-41e2-847f-6654338beb56",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C8",
+      "claim": "Class A GPCRs primarily trigger the CLB-dependent endocytic mode.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show each of the discrete endocytic modes is triggered in a receptor-specific manner, with GPCRs that bind \u03b2-arrestin transiently ('class A') primarily triggering the CLB-dependent mode and GPCRs that bind more stably ('class B') triggering both the CT and CLB-dependent modes in combination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "7291a89c-abea-4e73-8c35-d884ec950a8d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C9",
+      "claim": "Class B GPCRs trigger both the CT and CLB-dependent endocytic modes in combination.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show each of the discrete endocytic modes is triggered in a receptor-specific manner, with GPCRs that bind \u03b2-arrestin transiently ('class A') primarily triggering the CLB-dependent mode and GPCRs that bind more stably ('class B') triggering both the CT and CLB-dependent modes in combination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "4f3e7fc4-7cd5-48c6-9396-838ef02d86f2",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C10",
+      "claim": "The CLB-dependent mode promotes rapid signal desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that different modes have opposing effects on the net signaling output of receptors \u2013 with the CLB-dependent mode promoting rapid signal desensitization and the CT-dependent mode enabling prolonged signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "9c403897-baee-482a-b050-d25bdc6c0691",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C11",
+      "claim": "The CT-dependent mode enables prolonged signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that different modes have opposing effects on the net signaling output of receptors \u2013 with the CLB-dependent mode promoting rapid signal desensitization and the CT-dependent mode enabling prolonged signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "d229ba64-fb28-4865-87b2-09e6662fc03a",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C12",
+      "claim": "\u03b2-Arrestins were named for their ability to desensitize signaling by binding to ligand-activated \u03b2-adrenergic receptors and physically blocking heterotrimeric G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Arrestins were named for their ability to desensitize signaling by binding to ligand-activated \u03b2-adrenergic receptors and physically blocking heterotrimeric G protein coupling (Lohse et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the historical context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "d4062a2e-0fc4-42be-92cf-3e70142f1bcf",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C13",
+      "claim": "Visual arrestin mediates 'arrest' of signaling by binding to the light-activated GPCR rhodopsin.",
+      "claim_type": "EXPLICIT",
+      "source": "This function is similar to the 'arrest' of signaling mediated by binding of visual arrestin to the light-activated G-protein-coupled receptor (GPCR) rhodopsin (K\u00fchn and Wilden, 1987), and it has been subsequently generalized to many GPCRs (Benovic, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "28373311-ebbd-4400-bdce-f8f4bb1dcaf0",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C14",
+      "claim": "\u03b2-Arrestins act as endocytic adaptor proteins by associating with clathrin-coated pits (CCPs) after binding to a GPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Arrestins, unlike visual arrestin, have the additional ability to act as endocytic adaptor proteins by associating with clathrin-coated pits (CCPs) after binding to a GPCR (Ferguson et al., 1996; Goodman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "789fb9a5-f818-46a4-9e63-bac064018708",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C15",
+      "claim": "Association of \u03b2-arrestins with CCPs promotes clustering of GPCR/\u03b2-arrestin complexes on the plasma membrane leading to subsequent internalization via clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This association promotes clustering of GPCR/\u03b2-arrestin complexes on the plasma membrane leading to the subsequent internalization of complexes via clathrin-mediated endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an established mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "15e9d9b0-4e09-4ffe-b072-4684671cdb34",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C16",
+      "claim": "The prevailing current view is that all GPCRs trigger \u03b2-arrestins' endocytic activity in the same way, by displacing the \u03b2-arrestin C-terminus (CT) to unmask endocytic determinants.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing current view is that all GPCRs trigger \u03b2-arrestins' endocytic activity in the same way, by displacing the \u03b2-arrestin C-terminus (CT) to unmask endocytic determinants contained therein (Figure 1\u2014figure supplement 1a; Milano et al., 2002; Nobles et al., 2007; Shukla et al., 2013; Xiao et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "73512f58-0c0e-490a-a5f6-064842261bc3",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C17",
+      "claim": "Specific clathrin (CHC) and AP2 (AP2\u03b2)-binding elements are present in the \u03b2-arrestin CT which promote clustering of GPCR/\u03b2-arrestin complexes in CCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compelling experimental support for this mode of regulated endocytosis has accumulated over the past 25 years, including the identification of specific clathrin (CHC) and AP2 (AP2\u03b2)-binding elements present in the CT which promote the clustering of GPCR/\u03b2-arrestin complexes in CCPs (Burtey et al., 2007; Edeling et al., 2006; Ferguson et al., 1996; Goodman et al., 1996; Kang et al., 2009; Kim and Benovic, 2002; Krupnick et al., 1997; Laporte et al., 2000; Orsini and Benovic, 1998; Schmid et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations supporting the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "dd52a2ae-4bd2-4a6d-98cb-fd77ccd8549d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C18",
+      "claim": "\u03b2-Arrestins have the capacity to promote as well as attenuate signaling from the plasma membrane and endomembranes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is now clear that \u03b2-arrestins are more flexible regulators, and that they have the capacity to promote as well as attenuate signaling from the plasma membrane and endomembranes (Calebiro et al., 2009; DeFea et al., 2000; Feinstein et al., 2013; Ferrandon et al., 2009; Irannejad et al., 2013; McDonald et al., 2000; Terrillon and Bouvier, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations supporting the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "1ee49cac-5431-4b4d-9602-9751df342a4e",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C19",
+      "claim": "\u03b2-Arrestins can have different effects on downstream signaling depending on GPCR-specific differences in the composition, stability, and/or conformation of the complex they form with GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is now also widely recognized that \u03b2-arrestins can have different effects on downstream signaling depending on GPCR-specific differences in the composition, stability, and/or conformation of the complex that they form with GPCRs (Asher et al., 2022; Latorraca et al., 2020; Lee et al., 2016; Mayer et al., 2019; Nobles et al., 2011; Nuber et al., 2016; Yang et al., 2018; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations supporting the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "f762517e-4697-41cf-8056-b558935f8737",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C20",
+      "claim": "\u03b22ARs localize diffusely on the plasma membrane in \u03b2arr1/2 DKO cells, regardless of whether cells were exposed to isoproterenol.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified by total internal reflection fluorescence (TIRF) microscopy that \u03b22ARs localize diffusely on the plasma membrane in \u03b2arr1/2 DKO cells, regardless of whether cells were exposed to the adrenergic agonist isoproterenol (Iso, Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TIRF microscopy images in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "c2c43eb0-3d7d-4df0-b40a-a5d180bac404",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C21",
+      "claim": "After expression of recombinant \u03b2arr2-EGFP, isoproterenol induced \u03b22ARs to rapidly transition from a diffuse distribution to co-clustering together with \u03b2arr2 in CCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after expression of recombinant \u03b2arr2 (\u03b2arr2-EGFP), Iso-induced \u03b22ARs to rapidly transition from a diffuse distribution to co-clustering together with \u03b2arr2 in CCPs (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TIRF microscopy images in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "dfdd6897-369c-49e8-a31d-b35ef56d4363",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C22",
+      "claim": "Genetic rescue of \u03b2arr2-driven clustering was observed even after clathrin and AP2-binding elements in the \u03b2-arrestin CT were disrupted using point mutations (\u03b2arr2-CCS construct).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, genetic rescue of \u03b2arr2-driven clustering was observed even after clathrin and AP2-binding elements in the \u03b2-arrestin CT were disrupted using previously defined point mutations (\u03b2arr2-CCS construct) (Eichel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with a citation and supported by data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "e487985d-e324-4865-8a8c-09bb44d65257",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C23",
+      "claim": "\u03b2arr2 rescued clustering and internalization after both clathrin and AP2-binding elements were fully removed by truncation (\u03b2arr2-\u2206CT, truncated after N372).",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming this, \u03b2arr2 rescued clustering and internalization after both elements were fully removed by truncation (\u03b2arr2-\u2206CT, truncated after N372) (Figure 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TIRF microscopy images and quantification in Figure 1c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "abf7576e-3823-4e13-9219-b5b23284db71",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C24",
+      "claim": "The CT-independent trafficking result was verified in two independent \u03b2arr1/2 DKO cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter result was verified in two independent \u03b2arr1/2 DKO cell lines (Figure 1f) and it was not limited to the \u03b22AR (Figure 1\u2014figure supplement 1b\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1f and Figure 1\u2014figure supplement 1b\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "ac181035-0c49-4b38-9cce-afda12d4b14c",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C25",
+      "claim": "CT-independent trafficking was not limited to the \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter result was verified in two independent \u03b2arr1/2 DKO cell lines (Figure 1f) and it was not limited to the \u03b22AR (Figure 1\u2014figure supplement 1b\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 1b\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "a49ed8cc-1959-43c4-b8ec-7a922a8f5985",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C26",
+      "claim": "CT-independent trafficking was not unique to \u03b2-arrestin-2, as a \u03b2-arrestin-1 mutant lacking the CT (\u03b2arr1-\u2206CT, truncated after N375) also promoted Iso-induced \u03b22AR internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CT-independent trafficking was not unique to \u03b2-arrestin-2, as a \u03b2-arrestin-1 mutant lacking the CT (\u03b2arr1-\u2206CT, truncated after N375) also promoted Iso-induced \u03b22AR internalization (Figure 1\u2014figure supplement 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "c9747f31-2373-46b0-b069-80a83e28d7ee",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C27",
+      "claim": "Endocytosis mediated by \u03b2arr2-\u2206CT is clathrin dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, endocytosis is clathrin dependent (Figure 1\u2014figure supplement 1i) and we verified that that removing the CT abrogated the previously identified interactions (Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "ce9b9e93-a53c-40ba-93cd-44acda016d17",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C28",
+      "claim": "Removing the CT abrogated the previously identified interactions between \u03b2-arrestin and clathrin/AP2.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, endocytosis is clathrin dependent (Figure 1\u2014figure supplement 1i) and we verified that that removing the CT abrogated the previously identified interactions (Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "c1cac142-a6e7-4908-9bd1-384e5a5eadf8",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C29",
+      "claim": "The \u03b2-arrestin CT is not required for \u03b2-arrestin to drive clustering of GPCR/\u03b2-arrestin complexes on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations indicate that the \u03b2-arrestin CT is indeed not required for \u03b2-arrestin to drive clustering of GPCR/\u03b2-arrestin complexes on the cell surface or promote subsequent endocytosis of complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "ae6787fa-afd6-4f53-8886-c86b87a6444d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C30",
+      "claim": "The \u03b2-arrestin CT is not required for \u03b2-arrestin to promote subsequent endocytosis of GPCR/\u03b2-arrestin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations indicate that the \u03b2-arrestin CT is indeed not required for \u03b2-arrestin to drive clustering of GPCR/\u03b2-arrestin complexes on the cell surface or promote subsequent endocytosis of complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "5bae918b-f6d3-4dcc-bc4c-47a7731c4821",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C31",
+      "claim": "Both clustering and endocytosis mediated by \u03b2arr2-\u2206CT remained agonist dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "As both clustering and endocytosis mediated by \u03b2arr2-\u2206CT remained agonist dependent, these results suggest that \u03b2-arrestins contain additional endocytic determinant(s) capable of mediating GPCR-triggered endocytic activity in the absence of the \u03b2-arrestin CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "2bf11b66-5d00-435b-99aa-e6fd4e6f3ea5",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C32",
+      "claim": "\u03b2-Arrestins contain additional endocytic determinant(s) capable of mediating GPCR-triggered endocytic activity in the absence of the \u03b2-arrestin CT.",
+      "claim_type": "EXPLICIT",
+      "source": "As both clustering and endocytosis mediated by \u03b2arr2-\u2206CT remained agonist dependent, these results suggest that \u03b2-arrestins contain additional endocytic determinant(s) capable of mediating GPCR-triggered endocytic activity in the absence of the \u03b2-arrestin CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "e0e245b0-3589-479c-b5b4-2ae6593e01ce",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C33",
+      "claim": "Visual arrestin naturally fails to support GPCR endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the nature of this additional endocytic activity, we took advantage of the fact that visual arrestin (v-arr) naturally fails to support GPCR endocytosis (Moaven et al., 2013) and asked if we could generate a v-arr/\u03b2arr2 chimera that contains the CT of v-arr but retains the ability to promote GPCR endocytosis due to the addition of other \u03b2arr2-derived sequence(s) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "1047df77-e298-45cb-886e-7b6be6052d65",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C34",
+      "claim": "A chimeric mutant arrestin construct (ChiA) rescued agonist-induced internalization of receptors nearly as strongly as wild-type \u03b2arr2 despite its entire CT being derived from v-arr.",
+      "claim_type": "EXPLICIT",
+      "source": "We were indeed able to generate such a chimeric mutant arrestin construct, here called ChiA, which rescued agonist-induced internalization of receptors nearly as strongly as wild-type \u03b2arr2 despite its entire CT being derived from v-arr (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "4d67e440-1231-4841-9239-405c738a1b69",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C35",
+      "claim": "Three chimeras (ChiA.9, 10, and 11) failed to rescue internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 14 chimeras tested, we found three \u2013 ChiA.9, 10, and 11 \u2013 that failed to rescue internalization (Figure 2a, sequence details are in Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2a and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "163cae5d-43c7-420b-8e9c-60ee21bd4355",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C36",
+      "claim": "All internalization-defective chimeras (ChiA.9, 10, 11) were recruited to the plasma membrane in response to Iso addition to a similar degree as wild-type \u03b2arr2.",
+      "claim_type": "EXPLICIT",
+      "source": "TIRF imaging indicated that all these internalization-defective chimeras were recruited to the plasma membrane in response to Iso addition, and to a similar degree as wild-type \u03b2arr2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by TIRF imaging data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "c730d838-45e5-44f8-a201-ddbf8e2944e6",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C37",
+      "claim": "Internalization-defective chimeras (ChiA.9, 10, 11) localized diffusely and failed to cluster receptors in CCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they localized diffusely and failed to cluster receptors in CCPs. This was evident visually (Figure 2b, c) and quantified by fluorescence intensity measurement (Figure 2d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TIRF imaging and quantification in Figure 2b-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "010cc947-a84e-478f-b3f9-1bed001c3fa5",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C38",
+      "claim": "Each of the mutations in ChiA.9, 10, 11 specifically interferes with the clustering and endocytic function of \u03b2-arrestin-2 by preventing accumulation in CCPs, but without affecting receptor-triggered recruitment to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that each of the mutations specifically interferes with the clustering and endocytic function of \u03b2-arrestin-2 by preventing accumulation in CCPs, but without affecting receptor-triggered recruitment to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "2ccd87c6-2719-450f-9b17-533af19f9fec",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C39",
+      "claim": "The endocytosis-blocking mutations mapped to a contiguous region of \u03b2-arrestin-2, located at the cytoplasmic face of the C-lobe and opposite the receptor-binding interface, which was called the \u03b2-arrestin C-lobe base (CLB).",
+      "claim_type": "EXPLICIT",
+      "source": "The endocytosis-blocking mutations mapped to a contiguous region of \u03b2-arrestin-2, located at the cytoplasmic face of the C-lobe and opposite the receptor-binding interface, which we called the \u03b2-arrestin C-lobe base (CLB, Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "d4944849-5872-4661-9533-3cd4305df7e0",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C40",
+      "claim": "The \u03b2arr2-CLB mutant was strongly recruited to the plasma membrane after Iso-induced activation and clustered together with \u03b22AR in CCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting mutant construct, \u03b2arr2-CLB, was strongly recruited to the plasma membrane after Iso-induced activation and clustered together with \u03b22AR in CCPs (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TIRF imaging in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "295eadb4-ccc2-4d6a-aff2-a83b84fb8572",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C41",
+      "claim": "When the CLB was mutated in combination with the CT (\u03b2arr2-CLB,\u2206CT mutant), agonist-induced recruitment to the plasma membrane was retained but \u03b2arr2-CLB,\u2206CT was recruited diffusely and failed to promote surface clustering of \u03b22ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "When the CLB was mutated in combination with the CT (\u03b2arr2-CLB,\u2206CT mutant), agonist-induced recruitment to the plasma membrane was retained but \u03b2arr2-CLB,\u2206CT was recruited diffusely and failed to promote surface clustering of \u03b22ARs (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TIRF imaging in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "883e8f25-d6d9-4101-ac5a-d8c0f5ae9a34",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C42",
+      "claim": "Mutating either the CLB or CT produced a partial reduction in clustering relative to wild-type \u03b2arr2, whereas clustering was abolished in the double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "More detailed inspection of TIRF microscopy images revealed that mutating either the CLB or CT produced a partial reduction in clustering relative to wild-type \u03b2arr2, whereas clustering was abolished in the double mutant (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TIRF imaging in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "0d5a6ecc-7b53-468c-9bf8-d3473ce1a93c",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C43",
+      "claim": "All of the \u03b2arr2 constructs robustly bound upon addition of an activating phosphopeptide (V2Rpp), suggesting that the mutants are properly folded.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed the ability of scFv30, a protein that recognizes a three-dimensional epitope in active \u03b2arr, to bind our mutants using an engineered split luciferase protein complementation system (NanoBiT, Dixon et al., 2016; Shukla et al., 2013; Shukla et al., 2014; Xiao et al., 2004). All of the \u03b2arr2 constructs robustly bound upon addition of an activating phosphopeptide (V2Rpp), suggesting that the mutants are properly folded (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by NanoBiT data in Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "80190490-fefa-440b-917c-003327f201d0",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C44",
+      "claim": "The \u03b2-arrestin CT and CLB promote \u03b22AR clustering in an additive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the \u03b2-arrestin CT and CLB promote \u03b22AR clustering in an additive manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "6af88b97-6583-4431-a71d-b16656540b66",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C45",
+      "claim": "The CT and CLB, together, fully account for the GPCR-triggered clustering activity of \u03b2arr2.",
+      "claim_type": "EXPLICIT",
+      "source": "As \u03b2arr2-CLB,\u2206CT failed to cluster at all, the results also indicate that the CT and CLB, together, fully account for the GPCR-triggered clustering activity of \u03b2arr2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "4dd7c147-0085-4670-9107-1dfbc5bbc1dc",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C46",
+      "claim": "Mutating the CT only slightly reduced the ability of \u03b2arr2 to drive internalization of \u03b22ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the ability of the CT and CLB to promote \u03b22AR clustering to a similar degree (Figure 3g), their effects on the subsequent internalization of receptors differed considerably. Mutating the CT only slightly reduced the ability of \u03b2arr2 to drive internalization of \u03b22ARs, whereas mutating the CLB caused a pronounced reduction \u2013 suppressing the measured internalization of receptors to a level similar to that of the EGFP negative control (Figure 3i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "6bdfcb5c-b1b5-4e48-bf92-a4ddc7a394ba",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C47",
+      "claim": "Mutating the CLB caused a pronounced reduction in \u03b22AR internalization \u2013 suppressing the measured internalization of receptors to a level similar to that of the EGFP negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the ability of the CT and CLB to promote \u03b22AR clustering to a similar degree (Figure 3g), their effects on the subsequent internalization of receptors differed considerably. Mutating the CT only slightly reduced the ability of \u03b2arr2 to drive internalization of \u03b22ARs, whereas mutating the CLB caused a pronounced reduction \u2013 suppressing the measured internalization of receptors to a level similar to that of the EGFP negative control (Figure 3i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "99670042-36c2-4f0d-a57f-d43edee9333a",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C48",
+      "claim": "The double mutant \u03b2arr2-CLB,\u0394CT acts as a strong dominant negative when expressed at high levels in parental HEK293 cells containing endogenous \u03b2arr.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that our double mutant, \u03b2arr2-CLB,\u0394CT, acts as a strong dominant negative when expressed at high levels in parental HEK293 cells containing endogenous \u03b2arr (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "f6849161-d5df-4548-826d-26b234bab07d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C49",
+      "claim": "The corresponding mutations in the CLB of \u03b2arr1 (\u03b2arr1-CLB; D204S, S215P, N217T, H219A) failed to support \u03b22AR internalization when expressed in DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mutations in the CLB of \u03b2arr1 (\u03b2arr1-CLB; D204S, S215P, N217T, H219A; Figure 3\u2014figure supplement 1c) also failed to support \u03b22AR internalization when expressed in DKO cells, indicating that this determinant functions similarly in both \u03b2-arrestins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "1254d5e0-6584-4325-9600-5abb5e298957",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C50",
+      "claim": "Deleting the \u03b2arr1 sequence 334-LLGDLASS-341 did not significantly alter \u03b22V2R internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2arr1 contains an additional endocytic determinant at an edge of the C-lobe (334-LLGDLASS-341) distinct from the CLB (Kang et al., 2009; Staus et al., 2020), but deleting this sequence did not significantly alter \u03b22V2R internalization (Figure 3\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "c5724ddb-7228-4fb4-95ee-d65027a2d37a",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C51",
+      "claim": "Changing a single solvent exposed residue in the CLB to the corresponding residue in visual arrestin, N218T, failed to support \u03b22AR internalization when expressed in DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that changing a single solvent exposed residue in the CLB to the corresponding residue in visual arrestin, N218T, failed to support \u03b22AR internalization when expressed DKO cells (Figure 3\u2014figure supplement 1e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3\u2014figure supplement 1e, f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "39b91000-e04c-4e25-bab0-82ee89ce04b7",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C52",
+      "claim": "Both the CLB and CT contribute to the total endocytic activity of \u03b2-arrestin, and each promotes agonist-dependent clustering of receptors on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together (Figure 3j), these data suggest that both the CLB and CT contribute to the total endocytic activity of \u03b2-arrestin, and each promotes agonist-dependent clustering of receptors on the cell surface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data and illustrated in Figure 3j.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "75bce614-c064-496d-b0eb-e3957734b9e5",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C53",
+      "claim": "The CLB is the primary determinant required for the efficient internalization of \u03b22ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that, while both the CLB and CT are conserved in \u03b2-arrestins, the CLB is the primary determinant required for the efficient internalization of \u03b22ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "a5ad6d38-f2d7-4afe-add9-912fe898ca3f",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C54",
+      "claim": "Removing the \u03b2-arrestin-2 CT had little effect on agonist-induced internalization of the class A GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the \u03b2-arrestin-2 CT had little effect on agonist-induced internalization of the class A GPCRs, but significantly inhibited internalization of the naturally occurring class B GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "e0df1312-733e-4906-8d1d-b66f137d6d1c",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C55",
+      "claim": "Removing the \u03b2-arrestin-2 CT significantly inhibited internalization of the naturally occurring class B GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the \u03b2-arrestin-2 CT had little effect on agonist-induced internalization of the class A GPCRs, but significantly inhibited internalization of the naturally occurring class B GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "6af518c4-d17d-4df4-8b72-c9836d936351",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C56",
+      "claim": "Mutating the CLB inhibited internalization of all receptors tested, although the magnitude of this effect varied depending on the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mutating the CLB inhibited internalization of all receptors tested, although the magnitude of this effect varied depending on the receptor (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "ab9dee41-aaf4-469f-86ec-0469a245a10a",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C57",
+      "claim": "Both the CT and CLB are broadly utilized endocytic determinants, but individual GPCRs vary significantly in the degree to which their endocytosis depends on each.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that both the CT and CLB are broadly utilized endocytic determinants, but that individual GPCRs vary significantly in the degree to which their endocytosis depends on each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "687fb4e5-6210-46cb-923f-ed0095750b6d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C58",
+      "claim": "Mutating both the CT and CLB in combination (\u03b2arr2-CLB,\u2206CT) abolished the endocytic activity of \u03b2-arrestin-2 for all the GPCRs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite GPCR-specific differences in reliance on the CT relative to CLB, mutating both the CT and CLB in combination (\u03b2arr2-CLB,\u2206CT) abolished the endocytic activity of \u03b2-arrestin-2 for all the GPCRs (Figure 4\u2014figure supplement 1a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4\u2014figure supplement 1a\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "876ebb8a-b9c6-4457-8120-906a8f5e7dc9",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C59",
+      "claim": "The CT and CLB are sufficient to fully account for the GPCR-triggered endocytic activity of \u03b2-arrestin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the CT and CLB are sufficient to fully account for the GPCR-triggered endocytic activity of \u03b2-arrestin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "ef2e1734-d41f-4aa0-bfe0-ff27fcf555cb",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C60",
+      "claim": "A roughly linear relationship between the relative contribution of each determinant was observed for all the naturally occurring GPCRs included in the panel, with the contribution of both determinants summing to approximately 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "A roughly linear relationship between the relative contribution of each determinant was observed for all the naturally occurring GPCRs included in our panel, with the contribution of both determinants summing to approximately 100% (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "822a5228-4f78-460e-84e7-31f0362c3133",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C61",
+      "claim": "The class A GPCRs (\u03b22AR, \u03baOR, \u03bcOR) primarily utilize the CLB with little utilization of the CT.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared in this way, receptors clustered according to differences in overall stability, as defined by the 'class A/B' classification scheme. The class A GPCRs (\u03b22AR, \u03baOR, \u03bcOR), defined by binding \u03b2-arrestins relatively weakly or transiently, were found to primarily utilize the CLB with little utilization of the CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "e1fed414-c51b-4c20-8225-c8d80884b499",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C62",
+      "claim": "The class B GPCRs (V2R, M2R, NTSR1) utilized both determinants in an additive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The class B GPCRs (V2R, M2R, NTSR1), defined by binding \u03b2-arrestins more strongly or stably, utilized both determinants in an additive manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "0bcd5b8e-69af-481b-b8f5-4e9b36413945",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C63",
+      "claim": "The \u03b22V2R chimera utilized both the CLB and CT for endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b22V2R chimera is considered a class B GPCR due to the V2R-derived cytoplasmic tail conferring enhanced binding to \u03b2-arrestin. This chimeric receptor also utilized both the CLB and CT for endocytosis, providing further support for the concept that the overall strength of GPCR/\u03b2-arrestin-binding impacts the utilization of endocytic determinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "bd521b07-0b68-4ddb-877b-3e9e091f92dd",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C64",
+      "claim": "The \u03b22V2R departed from the linear relationship because the estimated contribution of each determinant summed to more than 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the other receptors, however, the \u03b22V2R departed from the linear relationship because the estimated contribution of each determinant summed to more than 100%. This suggests that this engineered GPCR can strongly utilize either the CT or CLB for endocytosis in a semi-redundant manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "fd7b2b32-c80f-4bd1-83d9-c512e1a29f94",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C65",
+      "claim": "Neither the CT nor CLB is required for receptor/\u03b2-arrestin complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Iso produced a concentration-dependent increase in the interaction between the \u03b22AR and wild-type \u03b2-arrestin-2. Similar results were obtained after mutating the CT and CLB individually or in combination, verifying that neither determinant is required for receptor/\u03b2-arrestin complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by NanoBiT data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "7cf0e91d-dac2-4990-bfd2-e14d1aa8535c",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C66",
+      "claim": "Mutating the \u03b2-arrestin-2 CLB (\u03b2arr2-CLB) appeared to decrease the agonist potency for recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noted a trend suggesting additional specificity: Mutating the \u03b2-arrestin-2 CLB (\u03b2arr2-CLB) appeared to decrease the agonist potency (reported as logEC50 \u00b1 95% CI) for recruitment (\u22126.8 \u00b1 0.1), whereas mutating the CT (\u03b2arr2-\u2206CT) increased it when compared to wild type (\u22127.3 \u00b1 0.2 and \u22127.1 \u00b1 0.1, respectively), and mutating both determinants in combination (\u03b2arr2-CLB,\u2206CT) trended toward an intermediate effect (\u22127.1 \u00b1 0.3) (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by NanoBiT data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "69ab4b0f-e1e0-4f33-b53e-f4dd89bd6760",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C67",
+      "claim": "Mutating the CT (\u03b2arr2-\u2206CT) increased the agonist potency for recruitment when compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noted a trend suggesting additional specificity: Mutating the \u03b2-arrestin-2 CLB (\u03b2arr2-CLB) appeared to decrease the agonist potency (reported as logEC50 \u00b1 95% CI) for recruitment (\u22126.8 \u00b1 0.1), whereas mutating the CT (\u03b2arr2-\u2206CT) increased it when compared to wild type (\u22127.3 \u00b1 0.2 and \u22127.1 \u00b1 0.1, respectively), and mutating both determinants in combination (\u03b2arr2-CLB,\u2206CT) trended toward an intermediate effect (\u22127.1 \u00b1 0.3) (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by NanoBiT data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "825087a1-a252-4f9a-87c6-8f7feba3904d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C68",
+      "claim": "Single mutation of the CLB slowed \u03b22AR/\u03b2arr2 association relative to that observed for wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that single mutation of the CLB slowed \u03b22AR/\u03b2arr2 association relative to that observed for wild-type protein (Tau95% CI = 81\u2013108 s and 23\u201356, respectively), whereas the double (CLB and CT) mutation produced kinetics indistinguishable from wild type (Tau95% CI = 31\u201337 s, Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by NanoBiT kinetic data in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "86dc8882-ae00-4540-984e-59ef2852086f",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C69",
+      "claim": "The double (CLB and CT) mutation produced kinetics indistinguishable from wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that single mutation of the CLB slowed \u03b22AR/\u03b2arr2 association relative to that observed for wild-type protein (Tau95% CI = 81\u2013108 s and 23\u201356, respectively), whereas the double (CLB and CT) mutation produced kinetics indistinguishable from wild type (Tau95% CI = 31\u201337 s, Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by NanoBiT kinetic data in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "d927cf9a-6b82-4559-9561-ce3bb60b557c",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C70",
+      "claim": "Neither the CT nor CLB is required for \u03b2-arrestin to associate with receptors but each determinant influences the interaction in different ways.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that neither the CT nor CLB is required for \u03b2-arrestin to associate with receptors but suggest that each determinant influences the interaction in different ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "1a7c7566-645e-4cf1-9c58-9cdf5fcfc503",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C71",
+      "claim": "A lack of \u03b2-arrestin-mediated desensitization was verified in \u03b2arr1/2 DKO cells, as indicated by persistently elevated cAMP in the continued presence of agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified a lack of \u03b2-arrestin-mediated desensitization in \u03b2arr1/2 DKO cells, as indicated by persistently elevated cAMP in the continued presence of agonist, and rescue of desensitization by recombinant wild-type \u03b2arr2 (Figure 5c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by cAMP assay data in Figure 5c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "790c2748-c28f-4fae-bd2c-4f4d9a93cfc3",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C72",
+      "claim": "Recombinant wild-type \u03b2arr2 rescued desensitization in \u03b2arr1/2 DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified a lack of \u03b2-arrestin-mediated desensitization in \u03b2arr1/2 DKO cells, as indicated by persistently elevated cAMP in the continued presence of agonist, and rescue of desensitization by recombinant wild-type \u03b2arr2 (Figure 5c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by cAMP assay data in Figure 5c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "f6d908bf-55a8-45fa-9fe3-bd663fad7066",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C73",
+      "claim": "The \u03b2arr2-CLB,\u2206CT double mutant construct rescued desensitization, despite this construct having no detectable endocytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed rescue of desensitization by the \u03b2arr2-CLB,\u2206CT double mutant construct, despite this construct having no detectable endocytic activity, as well as rescue after single mutation of the \u03b2-arrestin CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by cAMP assay data in Figure 5c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "87fac0bc-d1d8-4b10-95f8-976539650252",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C74",
+      "claim": "Single mutation of the \u03b2-arrestin CT rescued desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed rescue of desensitization by the \u03b2arr2-CLB,\u2206CT double mutant construct, despite this construct having no detectable endocytic activity, as well as rescue after single mutation of the \u03b2-arrestin CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by cAMP assay data in Figure 5c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "df491ba8-d6b1-471f-854b-21ae6e80938d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C75",
+      "claim": "Individually mutating the CLB severely impaired the ability of \u03b2arr2 to rescue the desensitization response.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, individually mutating the CLB severely impaired the ability of \u03b2arr2 to rescue the desensitization response (Figure 5c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by cAMP assay data in Figure 5c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "71a66fdd-102c-40bd-af4b-446c0872474b",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C76",
+      "claim": "The signaling effect of mutating the CLB was phenocopied by making the same single-residue exchange (N218T) in the otherwise wild-type CLB.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this signaling effect was phenocopied by making the same single-residue exchange (N218T) in the otherwise wild-type CLB (Figure 5\u2014figure supplement 1a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by cAMP assay data in Figure 5\u2014figure supplement 1a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "a527c462-c176-4fb4-8d02-0a7fe0432a83",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C77",
+      "claim": "The discrete endocytic determinants in the \u03b2-arrestin CLB and CT are each coupled to the receptor/\u03b2-arrestin interface and produce opposing effects on the net signaling output of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the discrete endocytic determinants in the \u03b2-arrestin CLB and CT, while not known to directly contact the receptor and not essential for GPCR/\u03b2-arrestin complex formation, are each coupled to the receptor/\u03b2-arrestin interface and produce opposing effects on the net signaling output of receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the text based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "625e2466-8e58-4553-a9d2-7c98667f3e6d",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C78",
+      "claim": "The \u03b2-arrestin CT is not necessary for GPCR endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to this work, the ability of GPCRs to trigger the endocytic adaptor activity of \u03b2-arrestin was assumed to rely entirely on release of the \u03b2-arrestin CT. Revising this view, we show that the \u03b2-arrestin CT, while clearly capable of promoting GPCR endocytosis, is not necessary for this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the discussion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "9f166e64-16fa-4261-86c9-6f5fe5deba78",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C79",
+      "claim": "The CLB is a discrete determinant in \u03b2-arrestin that is critical for the endocytic activity of \u03b2-arrestin, and which can operate in the absence of the CT.",
+      "claim_type": "EXPLICIT",
+      "source": "We define the CLB as a discrete determinant in \u03b2-arrestin that is critical for the endocytic activity of \u03b2-arrestin, and which can operate in the absence of the CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the discussion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "4dac7e18-2784-4f43-8c0b-08689df170e7",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C80",
+      "claim": "The relative contribution of the \u03b2-arrestin CT and CLB in mediating the endocytic activity of \u03b2-arrestin varies depending on the GPCR bound.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that the relative contribution of the \u03b2-arrestin CT and CLB in mediating the endocytic activity of \u03b2-arrestin varies depending on the GPCR bound, with class A receptors primarily dependent on the CLB and class B GPCRs dependent on the CT and CLB to a similar degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the discussion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "b87c9ee9-db2b-439d-b801-6a35419c2dfd",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C81",
+      "claim": "The \u03b2-arrestin CT can promote receptor clustering into CCPs despite having little ability to drive the subsequent endocytosis of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "By focusing on the \u03b22AR as a prototypic class A GPCR, we additionally show that the \u03b2-arrestin CT can promote receptor clustering into CCPs despite having little ability to drive the subsequent endocytosis of receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the discussion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "99e38f81-5488-4074-aeec-2e0413a36d3f",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C82",
+      "claim": "Mutations which selectively disrupt each of the endocytic determinants produce opposing effects on the net signaling output of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that mutations which selectively disrupt each of the endocytic determinants produce opposing effects on the net signaling output of receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the discussion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "d75e1654-9a45-47bf-b145-9e8ad3c9e288",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C83",
+      "claim": "The endocytic activity of \u03b2-arrestins is triggered flexibly by GPCRs through distinct (CT and CLB-dependent) biochemical modes that differentially attenuate or prolong receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, these results support a model in which the endocytic activity of \u03b2-arrestins is triggered flexibly by GPCRs through distinct (CT and CLB-dependent) biochemical modes that differentially attenuate or prolong receptor signaling (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary model proposed in the discussion based on all experimental data and illustrated in Figure 5e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "32f324de-01bc-49c8-87ed-652ff91b0c83",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C84",
+      "claim": "\u03b2-Arrestins function as highly flexible regulators of GPCR signaling, with the ability to produce a variety of downstream functional effects depending on receptor-specific differences communicated across the GPCR/\u03b2-arrestin interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two \u03b2-arrestins regulate hundreds of GPCRs and it is increasingly clear that \u03b2-arrestins function as highly flexible regulators of GPCR signaling, with the ability to produce a variety of downstream functional effects depending on receptor-specific differences communicated across the GPCR/\u03b2-arrestin interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an established concept that the current work extends.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "8bc1580e-4415-4fb2-880a-ea4cb7c33f47",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C85",
+      "claim": "Each endocytic mode, in addition to being triggered in a GPCR-specific manner, is coupled to opposing effects on the net signaling output of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that mutations which disrupt either the CT or CLB produce different effects on endogenous \u03b22AR signaling suggest that each endocytic mode, in addition to being triggered in a GPCR-specific manner, is coupled to opposing effects on the net signaling output of receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the discussion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "e66d8f00-aca3-4a7d-a842-ade6790fb2c6",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C86",
+      "claim": "AP2 switches from a 'closed' to 'open' state triggered by the binding of PIP2 and endocytic cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "The best studied among these is AP2, a protein complex that is essential for CCP nucleation and co-assembles with clathrin. AP2 switches from a 'closed' to 'open' state triggered by the binding of PIP2 and endocytic cargo (Kovtun et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "f5c20864-fb7f-48f1-b24d-d19518e36b73",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C87",
+      "claim": "\u03b2-Arrestins are not required for CCP formation and associate with CCPs primarily after assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Arrestins are structurally distinct from AP2 and also differ functionally, as they are not required for CCP formation and associate with CCPs primarily after assembly (Puthenveedu and von Zastrow, 2006; Santini et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "727efc39-30f5-4ffa-b003-ac4014fb6568",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C88",
+      "claim": "\u03b2-Arrestins switch from 'closed' to 'open' states triggered by binding GPCR cargo and aided, in many cases, by the binding of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, \u03b2-arrestins also switch from 'closed' to 'open' states triggered by binding GPCR cargo and aided, in many cases, by the binding of PIP2 (Gaidarov et al., 1999; Huang et al., 2020; Kang et al., 2014; Shukla et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "ae9f3471-6dba-4991-ab01-1fac33416dcc",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C89",
+      "claim": "\u03b2-Arrestin can switch into more than one active or 'open' state, and do so selectively depending on the GPCR bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results provide evidence that \u03b2-arrestin can switch into more than one active or 'open' state, and do so selectively depending on the GPCR bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the discussion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "f4f03cf0-b784-4825-9878-f0c8913f0b76",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C90",
+      "claim": "These findings provide the first example of an endocytic adaptor protein capable of undergoing cargo-specific mode switching.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, these findings provide the first example of an endocytic adaptor protein capable of undergoing cargo-specific mode switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim stated in the discussion based on the experimental data and comparison to other adaptor proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "27ac9967-fd7d-4027-a749-7bfd93670045",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C91",
+      "claim": "The discrete function of the CLB depends on engagement with partners other than the clathrin terminal domain and the \u03b2-appendage of AP2.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the discrete function of the CLB depends on engagement with partners other than the clathrin terminal domain and the \u03b2-appendage of AP2, which are key domains interacting with the \u03b2-arrestin CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the experimental data showing that the CLB mutant does not bind these domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "506452ab-79af-4b43-ab86-0da50136f97f",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C92",
+      "claim": "PIP5K1A and PDE4D5 have binding sites which overlap the CLB and are already known to affect endocytosis and GPCR desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the relatively understudied C-lobe engages multiple additional proteins and that two of these, PIP5K1A (Jung et al., 2021; Nelson et al., 2008) and PDE4D5 (Baillie et al., 2007; Perry et al., 2002), have binding sites which overlap the CLB and are already known to affect endocytosis and GPCR desensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "1c5697e4-306a-4e5b-b6c7-1f9f2642f6c2",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "claim_id": "C93",
+      "claim": "Neither PIP5K1A nor PDE4D5 is currently known to be enriched in CCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither protein is currently known to be enriched in CCPs, which is presumably required for the CLB to drive GPCR-triggered accumulation in CCPs without the CT as we show.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a limitation of current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3a288043-3567-48fc-89f2-7b876a3c4458",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The \u03b2-arrestin C-terminus (CT) is not required for GPCR endocytosis. \u03b2-arrestin-2 lacking the CT (\u03b2arr2-\u0394CT) rescued agonist-induced clustering and internalization of \u03b22ARs in \u03b2arr1/2 DKO cells. This CT-independent trafficking was verified in two independent cell lines, was not limited to \u03b22AR, and was observed with both \u03b2-arrestin-1 and \u03b2-arrestin-2. The endocytosis remained clathrin-dependent and agonist-dependent, suggesting additional endocytic determinants exist beyond the CT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C32 provide strong converging evidence from multiple experimental approaches (TIRF microscopy, internalization assays, multiple receptors, multiple cell lines, both \u03b2-arrestin isoforms) demonstrating CT-independent endocytosis. The data show that removing the CT does not abolish endocytic activity, contradicting the prevailing model. Controls verify clathrin dependence and loss of CT-clathrin/AP2 interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "38abb9f5-deb8-43be-9cdd-e048dc308326",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A discrete endocytic determinant was identified in the \u03b2-arrestin C-lobe base (CLB). Using visual arrestin/\u03b2-arrestin-2 chimeras, three mutations (ChiA.9, 10, 11) were identified that failed to rescue internalization despite normal plasma membrane recruitment. These mutations mapped to a contiguous region at the cytoplasmic face of the C-lobe, opposite the receptor-binding interface, termed the CLB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 describe a systematic chimera screen that successfully identified a novel endocytic determinant. The approach is sound: using visual arrestin (which lacks endocytic activity) as a scaffold to identify \u03b2-arrestin-2 sequences required for endocytosis. The mapping to a specific structural region (CLB) is supported by the data and structural analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The CLB and CT contribute additively to \u03b2-arrestin endocytic activity, but with different functional consequences. Mutating the CLB (\u03b2arr2-CLB) retained plasma membrane recruitment and partial clustering but severely impaired internalization. The double mutant (\u03b2arr2-CLB,\u0394CT) completely abolished clustering and internalization. While both determinants promote clustering to similar degrees, the CLB is the primary determinant for efficient \u03b22AR internalization. A single residue change (N218T) in the CLB abolished endocytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C53 demonstrate the functional relationship between CLB and CT through systematic mutagenesis. The data show additive effects on clustering but differential effects on internalization, with multiple lines of evidence (TIRF microscopy, quantitative clustering analysis, internalization assays, NanoBiT folding assays). The single-residue mutation (N218T) provides strong evidence for the specificity of the CLB determinant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "7d874b48-0174-48c2-89fe-964ef863f175",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GPCRs differ in their utilization of the CT and CLB endocytic determinants in a receptor-specific manner. Class A GPCRs (\u03b22AR, \u03baOR, \u03bcOR) primarily utilize the CLB with minimal CT dependence, while class B GPCRs (V2R, M2R, NTSR1) utilize both determinants additively. The contributions of CT and CLB sum to approximately 100% for naturally occurring GPCRs, with the double mutant abolishing endocytic activity for all receptors tested. The engineered \u03b22V2R chimera showed semi-redundant utilization of both determinants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C64 demonstrate receptor-specific utilization of endocytic determinants across a panel of GPCRs. The linear relationship between CT and CLB contributions (summing to ~100%) for natural GPCRs provides strong quantitative support. The classification by class A/B binding properties is consistent with known GPCR/\u03b2-arrestin interaction differences. The \u03b22V2R deviation suggests the engineered receptor has altered properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "2706884f-9ac7-40a9-8183-5eb924196cfc",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neither the CT nor CLB is required for \u03b2-arrestin to associate with receptors, but each determinant influences the interaction differently. NanoBiT complementation assays showed that all mutants (\u03b2arr2-CLB, \u03b2arr2-\u0394CT, \u03b2arr2-CLB,\u0394CT) formed complexes with \u03b22AR. However, mutating the CLB decreased agonist potency and slowed association kinetics, while mutating the CT increased agonist potency. The double mutant showed intermediate kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 use NanoBiT complementation to assess GPCR/\u03b2-arrestin complex formation. The data show that complex formation occurs with all mutants, but with subtle differences in potency and kinetics. The opposing effects of CT vs CLB mutations on agonist potency suggest allosteric coupling. However, the trends in potency differences are modest (overlapping confidence intervals) and described as trends rather than statistically significant differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The CLB and CT have opposing effects on receptor signaling. In \u03b2arr1/2 DKO cells, wild-type \u03b2arr2 and the double mutant (\u03b2arr2-CLB,\u0394CT) both rescued desensitization of \u03b22AR-mediated cAMP signaling, as did the CT mutant alone. However, mutating the CLB alone severely impaired desensitization rescue. The single residue N218T mutation phenocopied the CLB mutant effect on signaling. This suggests the CLB promotes rapid desensitization while the CT enables prolonged signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 demonstrate differential coupling of endocytic determinants to signaling outcomes using cAMP biosensor assays. The key finding that the CLB mutant fails to rescue desensitization despite the double mutant succeeding is striking and well-supported. The N218T single-residue phenocopy strengthens the conclusion. This provides functional evidence for opposing roles of the two determinants in signaling regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "67c52319-82fa-4a80-a2a6-bc67a307a1fb",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study revises the prevailing model of \u03b2-arrestin-mediated GPCR endocytosis by demonstrating two distinct biochemical modes: a CT-dependent mode and a CLB-dependent mode. These modes are triggered in a receptor-specific manner (class A GPCRs primarily use CLB; class B GPCRs use both) and have opposing effects on signaling (CLB promotes rapid desensitization; CT enables prolonged signaling). The CT can promote clustering without driving efficient internalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 represent the primary conclusions synthesizing all experimental findings. The evidence from multiple experimental approaches (genetic rescue, chimera mapping, mutagenesis, TIRF microscopy, internalization assays, signaling assays) across multiple receptors converges to support this revised model. The model accounts for receptor-specific differences and provides a mechanistic framework for understanding \u03b2-arrestin functional diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "44c05f67-06fb-445b-8dfb-17f8dfd62c60",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "\u03b2-Arrestins can switch into more than one active state depending on the GPCR bound, representing the first example of cargo-specific mode switching in an endocytic adaptor protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 propose that \u03b2-arrestins undergo cargo-specific conformational changes. This is supported by the differential utilization of CT vs CLB by different GPCRs and the opposing functional consequences. The claim of being the 'first example' of cargo-specific mode switching in endocytic adaptors is a strong comparative claim that relies on knowledge of other adaptor proteins (C86-C88) but is appropriately qualified with 'to our knowledge.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "cfc31dad-167e-41ca-a3ff-0335e43826fd",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The CLB functions through interactions with partners other than clathrin terminal domain and AP2\u03b2-appendage. Potential candidates include PIP5K1A and PDE4D5, which have binding sites overlapping the CLB and are known to affect endocytosis and desensitization, though neither is currently known to be enriched in CCPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 address the mechanism of CLB function. C91 is supported by the GST pull-down data showing loss of clathrin/AP2 binding with \u0394CT mutant. However, C92-C93 are speculative, acknowledging that the proposed binding partners (PIP5K1A, PDE4D5) are not known to be enriched in CCPs, which would be required for the observed CLB-dependent CCP accumulation. The molecular mechanism of CLB function remains unresolved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    },
+    {
+      "id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87",
+      "content_id": "2a5af395-29b4-4204-a49a-95aeedcce86d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background and context claims establishing prior knowledge about \u03b2-arrestin function, GPCR regulation, and the prevailing CT-dependent model of endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C12-C19, C84, C86-C88 represent established knowledge supported by citations to prior literature. These provide necessary context for understanding the significance of the current findings. The claims accurately represent the state of the field prior to this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:00.438288Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd5373c5-e440-4548-9651-7f70d43881e2",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "0d01dad4-1dc5-48b4-b60e-73ae3a82f0f3",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "f762517e-4697-41cf-8056-b558935f8737",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "c2c43eb0-3d7d-4df0-b40a-a5d180bac404",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "dfdd6897-369c-49e8-a31d-b35ef56d4363",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "e487985d-e324-4865-8a8c-09bb44d65257",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "abf7576e-3823-4e13-9219-b5b23284db71",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "ac181035-0c49-4b38-9cce-afda12d4b14c",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "a49ed8cc-1959-43c4-b8ec-7a922a8f5985",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "c9747f31-2373-46b0-b069-80a83e28d7ee",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "ce9b9e93-a53c-40ba-93cd-44acda016d17",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "c1cac142-a6e7-4908-9bd1-384e5a5eadf8",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "ae6787fa-afd6-4f53-8886-c86b87a6444d",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "5bae918b-f6d3-4dcc-bc4c-47a7731c4821",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "2bf11b66-5d00-435b-99aa-e6fd4e6f3ea5",
+      "result_id": "3a288043-3567-48fc-89f2-7b876a3c4458"
+    },
+    {
+      "claim_id": "e0e245b0-3589-479c-b5b4-2ae6593e01ce",
+      "result_id": "38abb9f5-deb8-43be-9cdd-e048dc308326"
+    },
+    {
+      "claim_id": "1047df77-e298-45cb-886e-7b6be6052d65",
+      "result_id": "38abb9f5-deb8-43be-9cdd-e048dc308326"
+    },
+    {
+      "claim_id": "4d67e440-1231-4841-9239-405c738a1b69",
+      "result_id": "38abb9f5-deb8-43be-9cdd-e048dc308326"
+    },
+    {
+      "claim_id": "163cae5d-43c7-420b-8e9c-60ee21bd4355",
+      "result_id": "38abb9f5-deb8-43be-9cdd-e048dc308326"
+    },
+    {
+      "claim_id": "c730d838-45e5-44f8-a201-ddbf8e2944e6",
+      "result_id": "38abb9f5-deb8-43be-9cdd-e048dc308326"
+    },
+    {
+      "claim_id": "010cc947-a84e-478f-b3f9-1bed001c3fa5",
+      "result_id": "38abb9f5-deb8-43be-9cdd-e048dc308326"
+    },
+    {
+      "claim_id": "2ccd87c6-2719-450f-9b17-533af19f9fec",
+      "result_id": "38abb9f5-deb8-43be-9cdd-e048dc308326"
+    },
+    {
+      "claim_id": "d4944849-5872-4661-9533-3cd4305df7e0",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "295eadb4-ccc2-4d6a-aff2-a83b84fb8572",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "883e8f25-d6d9-4101-ac5a-d8c0f5ae9a34",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "0d5a6ecc-7b53-468c-9bf8-d3473ce1a93c",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "80190490-fefa-440b-917c-003327f201d0",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "6af88b97-6583-4431-a71d-b16656540b66",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "4dd7c147-0085-4670-9107-1dfbc5bbc1dc",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "6bdfcb5c-b1b5-4e48-bf92-a4ddc7a394ba",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "99670042-36c2-4f0d-a57f-d43edee9333a",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "f6849161-d5df-4548-826d-26b234bab07d",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "1254d5e0-6584-4325-9600-5abb5e298957",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "c5724ddb-7228-4fb4-95ee-d65027a2d37a",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "39b91000-e04c-4e25-bab0-82ee89ce04b7",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "75bce614-c064-496d-b0eb-e3957734b9e5",
+      "result_id": "696d8046-56b3-4cb5-87c4-ea8f6dc43ff7"
+    },
+    {
+      "claim_id": "a5ad6d38-f2d7-4afe-add9-912fe898ca3f",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "e0df1312-733e-4906-8d1d-b66f137d6d1c",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "6af518c4-d17d-4df4-8b72-c9836d936351",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "ab9dee41-aaf4-469f-86ec-0469a245a10a",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "687fb4e5-6210-46cb-923f-ed0095750b6d",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "876ebb8a-b9c6-4457-8120-906a8f5e7dc9",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "ef2e1734-d41f-4aa0-bfe0-ff27fcf555cb",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "822a5228-4f78-460e-84e7-31f0362c3133",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "e1fed414-c51b-4c20-8225-c8d80884b499",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "0bcd5b8e-69af-481b-b8f5-4e9b36413945",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "bd521b07-0b68-4ddb-877b-3e9e091f92dd",
+      "result_id": "7d874b48-0174-48c2-89fe-964ef863f175"
+    },
+    {
+      "claim_id": "fd7b2b32-c80f-4bd1-83d9-c512e1a29f94",
+      "result_id": "2706884f-9ac7-40a9-8183-5eb924196cfc"
+    },
+    {
+      "claim_id": "7cf0e91d-dac2-4990-bfd2-e14d1aa8535c",
+      "result_id": "2706884f-9ac7-40a9-8183-5eb924196cfc"
+    },
+    {
+      "claim_id": "69ab4b0f-e1e0-4f33-b53e-f4dd89bd6760",
+      "result_id": "2706884f-9ac7-40a9-8183-5eb924196cfc"
+    },
+    {
+      "claim_id": "825087a1-a252-4f9a-87c6-8f7feba3904d",
+      "result_id": "2706884f-9ac7-40a9-8183-5eb924196cfc"
+    },
+    {
+      "claim_id": "86dc8882-ae00-4540-984e-59ef2852086f",
+      "result_id": "2706884f-9ac7-40a9-8183-5eb924196cfc"
+    },
+    {
+      "claim_id": "d927cf9a-6b82-4559-9561-ce3bb60b557c",
+      "result_id": "2706884f-9ac7-40a9-8183-5eb924196cfc"
+    },
+    {
+      "claim_id": "1a7c7566-645e-4cf1-9c58-9cdf5fcfc503",
+      "result_id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd"
+    },
+    {
+      "claim_id": "790c2748-c28f-4fae-bd2c-4f4d9a93cfc3",
+      "result_id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd"
+    },
+    {
+      "claim_id": "f6d908bf-55a8-45fa-9fe3-bd663fad7066",
+      "result_id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd"
+    },
+    {
+      "claim_id": "87fac0bc-d1d8-4b10-95f8-976539650252",
+      "result_id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd"
+    },
+    {
+      "claim_id": "df491ba8-d6b1-471f-854b-21ae6e80938d",
+      "result_id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd"
+    },
+    {
+      "claim_id": "71a66fdd-102c-40bd-af4b-446c0872474b",
+      "result_id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd"
+    },
+    {
+      "claim_id": "a527c462-c176-4fb4-8d02-0a7fe0432a83",
+      "result_id": "b4ce26b3-35fc-45b8-96f5-c435867d40bd"
+    },
+    {
+      "claim_id": "625e2466-8e58-4553-a9d2-7c98667f3e6d",
+      "result_id": "67c52319-82fa-4a80-a2a6-bc67a307a1fb"
+    },
+    {
+      "claim_id": "9f166e64-16fa-4261-86c9-6f5fe5deba78",
+      "result_id": "67c52319-82fa-4a80-a2a6-bc67a307a1fb"
+    },
+    {
+      "claim_id": "4dac7e18-2784-4f43-8c0b-08689df170e7",
+      "result_id": "67c52319-82fa-4a80-a2a6-bc67a307a1fb"
+    },
+    {
+      "claim_id": "b87c9ee9-db2b-439d-b801-6a35419c2dfd",
+      "result_id": "67c52319-82fa-4a80-a2a6-bc67a307a1fb"
+    },
+    {
+      "claim_id": "99e38f81-5488-4074-aeec-2e0413a36d3f",
+      "result_id": "67c52319-82fa-4a80-a2a6-bc67a307a1fb"
+    },
+    {
+      "claim_id": "d75e1654-9a45-47bf-b145-9e8ad3c9e288",
+      "result_id": "67c52319-82fa-4a80-a2a6-bc67a307a1fb"
+    },
+    {
+      "claim_id": "ae9f3471-6dba-4991-ab01-1fac33416dcc",
+      "result_id": "44c05f67-06fb-445b-8dfb-17f8dfd62c60"
+    },
+    {
+      "claim_id": "f4f03cf0-b784-4825-9878-f0c8913f0b76",
+      "result_id": "44c05f67-06fb-445b-8dfb-17f8dfd62c60"
+    },
+    {
+      "claim_id": "27ac9967-fd7d-4027-a749-7bfd93670045",
+      "result_id": "cfc31dad-167e-41ca-a3ff-0335e43826fd"
+    },
+    {
+      "claim_id": "506452ab-79af-4b43-ab86-0da50136f97f",
+      "result_id": "cfc31dad-167e-41ca-a3ff-0335e43826fd"
+    },
+    {
+      "claim_id": "1c5697e4-306a-4e5b-b6c7-1f9f2642f6c2",
+      "result_id": "cfc31dad-167e-41ca-a3ff-0335e43826fd"
+    },
+    {
+      "claim_id": "eebc654d-f4e0-4704-b752-8c7b55f8783b",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "d0f144ef-b24a-4391-a77e-602975c0f1de",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "87b51477-7e39-4b31-a7e8-45505f4b9407",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "9ddc057e-1485-465c-acf7-b364268bb77c",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "b8764600-a7d0-4e9b-8fed-9c71125aaef2",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "d229ba64-fb28-4865-87b2-09e6662fc03a",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "d4062a2e-0fc4-42be-92cf-3e70142f1bcf",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "28373311-ebbd-4400-bdce-f8f4bb1dcaf0",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "789fb9a5-f818-46a4-9e63-bac064018708",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "15e9d9b0-4e09-4ffe-b072-4684671cdb34",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "73512f58-0c0e-490a-a5f6-064842261bc3",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "dd52a2ae-4bd2-4a6d-98cb-fd77ccd8549d",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "1ee49cac-5431-4b4d-9602-9751df342a4e",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "32f324de-01bc-49c8-87ed-652ff91b0c83",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "e66d8f00-aca3-4a7d-a842-ade6790fb2c6",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "f5c20864-fb7f-48f1-b24d-d19518e36b73",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    },
+    {
+      "claim_id": "727efc39-30f5-4ffa-b003-ac4014fb6568",
+      "result_id": "9c0010a2-8a74-42ab-8602-ee8b8c977f87"
+    }
+  ],
+  "comparisons": []
+}

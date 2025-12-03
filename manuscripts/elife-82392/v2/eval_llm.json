@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10"
+    ],
+    "result": "The COVID-19 pandemic has resulted in unprecedented sequencing scale, with SARS-CoV-2 having more sequenced genomes than any other organism, with GISAID surpassing 11 million sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10 establish the unprecedented scale of SARS-CoV-2 sequencing data. These are factual statements about database sizes that are verifiable and represent established knowledge in the field at the time of publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Phylogenetic trees are the fundamental representation for genomic epidemiology, capturing evolutionary history, approximating transmission trees, enabling identification of transmission events and new variants, and when mutation-annotated, revealing parallel/convergent evolution and recurrent mutations of concern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C15 describe well-established principles of phylogenetic analysis in genomic epidemiology, supported by citations (C13) and general knowledge in the field. These represent foundational concepts rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C19",
+      "C31",
+      "C32"
+    ],
+    "result": "Existing web-based phylogenetic visualization tools do not scale to current SARS-CoV-2 dataset sizes due to bottlenecks in tree construction and visualization, with tools like Nextstrain limited to ~4000 sequences and previous approaches constrained by SVG/Canvas rendering technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C19, C31-C32 establish the motivation for Taxonium by documenting limitations of existing tools. These are supported by comparative performance data (C92-C105) and represent accurate characterizations of the field's challenges, though C19 relies on general knowledge rather than systematic benchmarking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Taxonium uses WebGL via DeckGL to enable browser-based exploration of trees with tens of millions of nodes through GPU-accelerated rendering and zoom-dependent sparsification that excludes only overlapping nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C26, C33-C36 describe Taxonium's core technical innovation. The WebGL/DeckGL implementation is documented with citations (C34), and the sparsification algorithm is detailed in Methods. Performance is demonstrated through benchmarking (C93-C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C102"
+    ],
+    "result": "Taxonium supports mutation-annotated trees (MATs) that capture all known genetic variation, enabling users to color trees by genotype at any site and search for mutations in internal nodes with filtering by descendant count\u2014a capability unique among compared tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C27, C46-C49, C102 describe MAT support as a key feature. This is demonstrated in Figures 2-4 and supported by comparative analysis (C102). The claim that MATs capture 'all known genetic variation' (C6, C47) is reasonable given their design but slightly overstated\u2014they capture variation present in the input sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Taxonium operates in three modes: fully client-side (loading trees with millions of nodes but requiring 80 seconds for 5.4M sequences), server-backed (loading in seconds), and desktop application, with client-side mode particularly important for sensitive data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29-C30, C50-C58 describe Taxonium's deployment architecture. Performance measurements are provided (C57: 80s load time, C61: seconds for server mode). The privacy benefit of client-side processing (C51) is a reasonable inference. Technical details about JSONL format and web workers are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The server-backed mode uses a NodeJS/Express backend that pre-loads trees and serves filtered slices on-demand using binary search on y-coordinate sorted nodes, requiring ~5GB RAM for 5.4M sequences and enabling loading in seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64, C119-C121 describe the server architecture with specific technical details and performance metrics. The binary search optimization (C63) and RAM requirements (C120) are concrete specifications. The 'seconds' loading claim (C61) is supported by the comparative analysis showing 31s client-side load (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Browser memory limitations restrict the web client to ~6M nodes on some systems, addressed by a desktop Electron app that uses packaged NodeJS to access full system memory, successfully handling 12.5M sequences on 8GB RAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 identify a limitation and solution. The browser memory constraint (C65-C67) is based on technical knowledge and testing. The desktop app's capability is demonstrated by the 12.5M sequence test (C70), though this is a single data point without details on performance characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The taxoniumtools Python package converts UShER MATs or Newick trees to Taxonium JSONL format using TreeSwift, with optional Chronumental integration and a 'shearing' feature to remove outlier nodes representing likely sequencing errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C122-C126 describe the preprocessing pipeline. Implementation details are provided with citations (TreeSwift: C74, C123). The shearing feature (C125-C126) is described with its rationale, though the characterization of outliers as 'often' representing errors is an inference without quantitative validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cov2Tree provides public access to explore 5.6 million SARS-CoV-2 sequences from the daily-updated UShER tree, with Chronumental-inferred time trees and features for coloring by lineage, country, or genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C76-C80 describe the Cov2Tree application. The data source is documented with citation (C77), and features are demonstrated in figures. The availability at cov2tree.org (C8) is verifiable. This represents a practical application of Taxonium rather than a methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Taxonium analysis of the global SARS-CoV-2 tree reveals heavy enrichment of S:452M/Q mutations within the BA.2 lineage, providing evidence of epistatic interactions between this position and BA.2-defining mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 present a biological finding enabled by Taxonium. The enrichment pattern is shown in Figure 3 (C82). However, the inference of epistasis (C83) from enrichment alone is somewhat speculative\u2014enrichment could also reflect founder effects or sampling bias. The claim is reasonable but would benefit from statistical quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Taxonium has been applied beyond SARS-CoV-2 to: probe transmission clusters, identify convergent mutations creating new ORFs, examine tree reconstruction tools, visualize 2.2M species from NCBI Taxonomy, integrate with Serratus viral RdRP trees, and analyze the 2022 monkeypox outbreak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 document diverse applications of Taxonium, all supported by citations to published work (C84-C86, C89, C91) or verifiable resources (C87-C88, C90). These demonstrate the tool's generalizability beyond its primary SARS-CoV-2 use case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C105"
+    ],
+    "result": "Comparative benchmarking shows Taxonium is the only tool able to fluidly explore the largest trees (5.3M sequences) on consumer hardware, loading in 31s and using 1.7GB RAM, while Archaeopteryx, Empress, iTOL, ETE, and Microreact failed to load or were unresponsive, and Dendroscope loaded in 83s but rendered poorly using all available RAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C101, C105 provide systematic performance comparison. Specific metrics are given for multiple tools with appropriate citations. However, the comparison has limitations: (1) tools were not designed for this scale, (2) 'reasonable time' is subjective (C95, C97), (3) single hardware configuration tested, (4) Phylocanvas.GL showed some capability at 1M nodes (C98). The conclusion (C105) is supported but should acknowledge these caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Taxonium's interface accepts Newick trees with optional metadata, supports coloring by metadata using consistent hashing, enables complex boolean searches with circled results, allows independent X/Y axis zooming (crucial for large trees), and provides a minimap for orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 describe interface features demonstrated in Figure 1 and the application. The color hashing algorithm (C39) ensures consistency. The importance of independent zooming (C43) is a reasonable design inference. All features are verifiable through the figures and described implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "UShER enables larger trees than previously possible through maximum parsimony incremental addition, yielding high-quality topologies for dense sampling, while Chronumental uses stochastic gradient descent to construct chronologies from very large trees, which was not possible with previous approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 describe prior work (UShER, Chronumental) that enables Taxonium's scale. All claims are supported by citations to published work. These establish the ecosystem context but are not contributions of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C107"
+    ],
+    "result": "Taxonium is unique among compared tools in supporting mutation-annotated trees and one of few tools to visualize MATs capturing all sequence diversity in an organism, with time-tree toggling inspired by Auspice (limited to <10,000 tips).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C107 make comparative feature claims. MAT support uniqueness (C102) is supported by the tool comparison. The Auspice limitation (C104) is stated as knowledge. The 'one of few' claim (C107) is appropriately hedged. These accurately position Taxonium in the tool landscape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "SARS-CoV-2 datasets likely preview future data volumes for other organisms given decreasing sequencing costs, and while some tools focus on static publication figures, Taxonium is designed for dynamic exploration, which is often the only way to extract information from very large trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C108-C110 provide context and design philosophy. The future data volume prediction (C106) is reasonable speculation based on trends. The distinction between static and dynamic tools (C108-C109) is valid. The necessity claim (C110) is a reasonable inference but somewhat overstated\u2014other approaches like downsampling can also extract information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Systematic sequencing artifacts can create entire clades with shared errors, and Taxonium provides a 'revertant mutation' search feature to identify branches mutating toward the reference, which in SARS-CoV-2 trees often represent artifacts or reversions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 address data quality challenges. The systematic nature of artifacts (C111) is supported by citations. The revertant mutation feature (C113) is described. However, the interpretation that revertants 'often' represent artifacts (C112) is based on observation without quantitative validation or statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Due to vastly different sampling densities across geographic regions, the number of tips in Cov2Tree regions is not always indicative of outbreak size, and in some cases inferences of migration directionality may be confounded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 acknowledge important limitations of unsampled trees for epidemiological inference. These are reasonable inferences about sampling bias effects, appropriately presented as caveats in the Discussion. The 'in some cases' hedging (C115) is appropriate given the complexity of the issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The Taxonium web client is implemented in React with visualization in heavily modified DeckGL enabling independent X/Y zooming, consuming data from either a local web worker or external API backend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 provide technical implementation details. The React framework (C116), DeckGL modifications (C117), and dual-mode architecture (C118) are documented with code availability. These are verifiable technical specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C17",
+      "C18"
+    ],
+    "result": "New tools were developed for SARS-CoV-2 lineage assignment and trend exploration, with Nextstrain providing one of the most widely-used tools through a pipeline that downsamples sequences, builds trees with iqtree, and assigns chronology with TreeTime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C17-C18 describe the prior tool landscape, all supported by appropriate citations. These establish context but represent background knowledge rather than contributions of this work.",
+    "result_type": "MINOR"
+  }
+]

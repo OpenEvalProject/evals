@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "SARS-CoV-2 infection induces apoptotic cell death in epithelial cell lines and in lung tissues of COVID-19 patients, characterized by caspase-3 and caspase-8 activation, annexin V binding, low cytolysis, and cleaved caspase-3 labeling in infected epithelia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from multiple experimental approaches (immunoblot, flow cytometry, LDH assay, immunofluorescence) across different cell lines (Vero, Calu-3) and patient tissues, all demonstrating apoptotic cell death. The data are consistent with cited prior work and show appropriate controls (UV-AC, F/T).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Macrophages efficiently engulf SARS-CoV-2-infected apoptotic cells containing viable viral particles without significant cytotoxicity to the macrophages, as demonstrated by histological evidence, TCID50 assays, flow cytometry, and confocal microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C17 collectively demonstrate efferocytosis of infected cells using multiple complementary methods (histology, viral quantification, flow cytometry, microscopy). The TCID50 data (C9-C11) confirm viral viability in apoptotic cells, and uptake efficiency is comparable to sterile controls (C14). Macrophage viability data (C16) appropriately controls for cytotoxic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Efferocytosis of SARS-CoV-2-infected apoptotic cells suppresses macrophage anti-inflammatory programming, specifically reducing expression of M2 markers (CCL18, CD206/MRC1, MMP9, PPARG, CD163), and this suppression requires viable virus delivered within apoptotic cells rather than free virus or viral supernatants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30 demonstrate suppression of anti-inflammatory markers through RT-qPCR and flow cytometry across primary and THP-1 macrophages. Critical controls include UV-inactivated virus (C26), free virus (C23-C24, C28), and cell-specific effects (C25). The mechanistic inference that viable virus within corpses is required (C27, C29) is well-supported by the UV-inactivation and supernatant experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Uptake of SARS-CoV-2-infected apoptotic cells induces robust pro-inflammatory cytokine production (IL-6 and IL-1\u03b2) in macrophages, requiring viable virus, phosphatidylserine recognition, internalization, and viral RNA transcription, and this response is specific to SARS-CoV-2 compared to other positive-strand RNA viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C45 demonstrate inflammatory cytokine induction through RT-qPCR, ELISA, and CBA across multiple macrophage types. Key mechanistic controls include: sorted apoptotic vs. necrotic cells (C38), UV/PFA inactivation (C40), Coxsackievirus comparison (C41-C42), annexin V blocking (C43), cytochalasin D (C44), and Remdesivir (C45). The glycine experiment (C39) appropriately controls for secondary necrosis. The partial effect of Remdesivir suggests viral transcription contributes but is not solely responsible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Efferocytosis of SARS-CoV-2-infected apoptotic cells reduces expression of efferocytic receptors (CD36, SRA1, ITGB5, TIM4, MERTK) and impairs continual clearance of additional apoptotic cells by macrophages, through a mechanism independent of viral RNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 demonstrate reduced efferocytic receptor expression (RT-qPCR) and functional impairment of subsequent efferocytosis (two-round uptake assay). The Remdesivir experiment (C51) appropriately distinguishes this mechanism from the inflammatory response. The comparison with direct SARS-CoV-2 infection (C48, C50) provides important context. The two-round efferocytosis assay is well-designed with appropriate fluorescent labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C67"
+    ],
+    "result": "Lung macrophages from severe COVID-19 patients show reduced expression of efferocytic receptors (CD36, MERTK) and efferocytosis-related gene sets, with more pronounced defects in mature anti-inflammatory macrophages and in virus-positive alveolar macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61, C67 integrate histological data (immunofluorescence) with scRNA-seq reanalysis from two independent datasets (Liao et al., 2020; Ren et al., 2021). The gene set enrichment analysis uses appropriate custom gene sets and GO terms. The comparison between virus-positive and virus-negative macrophages (C59) directly supports the in vitro findings. Sample sizes for histology appear adequate (n=6 control, n=4 COVID-19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Dysfunctional efferocytosis of SARS-CoV-2-infected cell corpses switches macrophage responses from anti-inflammatory/tissue repair to pro-inflammatory, providing mechanistic insights for cytokine storm and tissue damage in COVID-19 immunopathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 are summary conclusions integrating the experimental findings. While these involve some inference and speculation about clinical relevance, they are well-supported by the collective experimental data showing both suppressed anti-inflammatory programming and enhanced inflammatory cytokine production. The connection to COVID-19 pathogenesis is strengthened by the patient tissue data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C64",
+      "C65",
+      "C66",
+      "C82",
+      "C85"
+    ],
+    "result": "The observed dysfunctional efferocytosis may contribute to COVID-19 cytokine storm, respiratory complications, secondary bacterial infections, tissue damage accumulation, and autoimmunity through impaired clearance of dead cells and sustained inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46, C64-C66, C82, C85 are explicitly speculative connections between the experimental findings and clinical outcomes. While the experimental data are solid, these claims represent hypotheses about clinical relevance that would require additional validation in patient cohorts or animal models. The authors appropriately use cautious language ('may contribute,' 'could,' 'perhaps').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C18",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "Background claims establishing the scientific context: phosphatidylserine exposure triggers efferocytosis; efferocytosis normally promotes anti-inflammatory macrophage programming; COVID-19 severity involves immune dysfunction; defective efferocytosis causes autoimmunity; and apoptosis is pathogenic in SARS-CoV-2 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C18, C71-C81, C83-C84 are background/context claims supported by appropriate citations to established literature. These provide the scientific foundation for the study but are not novel findings. The citations appear appropriate and the claims are consistent with current scientific understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Therapeutic implications suggesting that targeting dysregulated host responses rather than viral replication may benefit critically ill COVID-19 patients, and that this study provides insights for designing therapeutic approaches targeting innate immunity and macrophage function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88 are speculative statements about therapeutic implications. While they follow logically from the findings, they represent future directions rather than demonstrated results. The suggestion that antivirals may fail in critically ill patients (C86) is particularly speculative and would require clinical validation.",
+    "result_type": "MINOR"
+  }
+]

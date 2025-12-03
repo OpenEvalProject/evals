@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Dynamic tracking reveals that genes cycle continuously on and off the NPC rather than existing in distinct stable populations. Under inducing conditions, HIS4 and INO1 show longer periods of peripheral colocalization, with population-level and single-cell measurements in close agreement, indicating uniform probabilistic behavior across cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36, C48-C51 are well-supported by experimental data in Figure 1, showing kymographs and quantitative analysis of peripheral localization over time. The consistency between population averages and individual cell behavior (C50) provides strong evidence against distinct sub-populations and supports the continuous, dynamic model (C144-C147).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C83",
+      "C84"
+    ],
+    "result": "Interaction with the NPC reduces chromatin sub-diffusion as measured by MSD analysis. This effect is specific to NPC interaction rather than transcriptional activation, as demonstrated by genetic controls separating these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, C39, C65-C68 are supported by MSD data in Figures 2 and 3. The genetic dissection using ino2\u0394 and opi1\u0394 mutants (C83-C84) provides strong evidence that NPC interaction, not transcription, causes reduced mobility. The zip code experiments (C75) further confirm sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "DNA zip codes are sufficient to reposition genes to the nuclear periphery and reduce chromatin mobility. Loss of the NPC protein Nup2 disrupts both localization and the associated reduction in MSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C69-C74 are well-supported by experimental data in Figures 1 and 3. The URA3:GRS1 and URA3:GCN4BS constructs demonstrate sufficiency of zip codes for peripheral localization and reduced MSD. The nup2\u0394 experiments provide strong genetic evidence for NPC dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C153"
+    ],
+    "result": "Fractional Brownian motion (FBM) simulations with \u03b1=0.52 accurately recapitulate nucleoplasmic chromatin sub-diffusion. A modified simulation incorporating transient NPC binding (binding probability 0.9, retention probability 0.95) faithfully reproduces peripheral gene behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C85-C87, C90-C93, C153 are supported by simulation data in Figure 4 showing excellent agreement with experimental MSD (\u03c7\u00b2 sums of 0.001-0.003). The parameter optimization (C91) and quantitative fit metrics (C92-C93) provide strong validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C101",
+      "C102",
+      "C103",
+      "C109",
+      "C110",
+      "C111",
+      "C115"
+    ],
+    "result": "Simulations predict that random sub-diffusion and transient NPC capture are sufficient for peripheral repositioning within ~2 minutes. Experimental validation using \u03b1-factor release and optogenetic recruitment shows velocities, arrival times, and angular deviations consistent with random sub-diffusion rather than directed movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C43, C101-C103, C109-C111, C115 are well-supported by combined simulation and experimental data in Figure 5. The agreement between simulated and experimental velocities, arrival times, and angular deviations provides strong evidence against directed movement. Multiple experimental approaches strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Inter-chromosomal clustering of co-regulated genes leads to coordinated movement and persistent proximity (20-40 seconds). Clustering requires both transcription factors and NPC interaction, as demonstrated by loss of clustering in nup2\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C45, C121-C125, C127, C129-C131 are supported by experimental data in Figure 6. The quantification of clustering lifetimes (C129) and the genetic requirement for Nup2 (C125) provide strong evidence. The consistency across multiple gene pairs strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C46",
+      "C47",
+      "C128",
+      "C134",
+      "C136",
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Simulated NPC interaction alone does not produce inter-chromosomal clustering or coordinated movement observed experimentally. Clustered loci (\u22640.55 \u03bcm apart) show correlated step sizes and angles (R\u00b2\u22650.65), suggesting a distinct physical interaction extending hundreds of nanometers beyond simple NPC binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C46-C47, C128, C134, C136-C137, C139-C143 are supported by combined simulation and experimental data in Figures 6-7. The quantitative correlation analysis (C139) and genetic controls (C140-C141) provide strong evidence that clustering requires additional mechanisms beyond NPC interaction alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "MSD analysis of 11 nucleoplasmic loci and telomeres reveals a hierarchy of mobility: nucleoplasmic loci > tethered telomeres > SPB. Initial MSD shows a non-linear relationship to genomic distance from tethering points, modeled as a hyperbolic curve with half-maximal MSD at ~18 kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by experimental data in Figure 2B-C and Supplementary file 1. The hyperbolic model (C63) is consistent with prior work (citations provided). The systematic comparison across multiple loci provides robust evidence for the distance-dependent effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Myo3 plays a role in peripheral localization of INO1, with deletion causing delayed targeting of URA3:INO1. This effect is specific to the GRS1 zip code and affects initial targeting but not maintenance of peripheral localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by experimental data in Figure 5\u2014figure supplement 1. The specificity to GRS1 (C97), lack of effect with both zip codes (C98), and normal maintenance after Myo3-AID degradation (C99) provide evidence for a role in targeting efficiency rather than stable anchoring.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C154",
+      "C155"
+    ],
+    "result": "Standard FBM simulations in enclosed volumes produce boundary depletion inconsistent with experimental observations. The authors modified the simulation by regenerating noise upon boundary collision, though they acknowledge this violates the fluctuation-dissipation theorem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88, C154 are supported by simulation data (Figure 4\u2014figure supplement 1C) and citation to Vojta et al., 2020. However, C155 acknowledges this is speculative, and the theoretical justification for the regeneration approach is incomplete. The modification produces correct distributions but lacks rigorous physical foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Two experimental systems for rapid peripheral repositioning were developed: \u03b1-factor arrest/release (repositioning in ~15 min) and optogenetic CRY2-CIB1 recruitment (repositioning in ~7.5 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by experimental data in Figure 5C and 5E. The \u03b1-factor mechanism (C104) is supported by citation to Brickner and Brickner, 2010. The optogenetic system (C107) is supported by citation to Benedetti et al., 2018. Both systems show rapid repositioning consistent with simulation predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Angular deviation analysis shows simulations and experimental loci are close to random (\u03b8 ~ \u03c0/2), with positive and negative controls indistinguishable, further supporting random sub-diffusion over directed movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by experimental and simulation data in Figure 5I. The theoretical expectations (C112-C113) are correct, and the experimental measurements (C114) match these predictions for random movement. This provides additional independent evidence against directed movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C135",
+      "C138"
+    ],
+    "result": "Quantitative correlation analysis establishes that uncorrelated movement produces correlation of step sizes ~0 and mean angle difference ~\u03c0/2 (R\u00b2\u22640.1), while perfectly coordinated movement would show correlation ~1 and angle difference ~0. Control loci (URA3, simulations) show no correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133, C135, C138 are supported by theoretical expectations and experimental data in Figure 7. The negative controls (C135, C138) validate the analysis method. The theoretical framework (C132-C133) is sound and provides appropriate benchmarks for interpreting the clustering data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors speculate that dynamic NPC interaction may relate to transcriptional bursting, noting that disrupting GAL1-10 NPC interaction reduces the number of expressing cells without affecting transcript levels per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C150 are supported by citations to prior work. However, C151 is explicitly speculative. While the parallel between dynamic NPC interaction and transcriptional bursting is intriguing, no direct experimental evidence linking these phenomena is presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The simulation timescale (~2 min) is comparable to experimental repositioning, arguing that active mechanisms are unnecessary to explain the observed rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are supported by comparison of simulation (Figure 5A) and experimental data (Figure 5C, E). The agreement in timescales provides evidence against the necessity of active transport, though it does not definitively rule out such mechanisms contributing to repositioning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C159",
+      "C160"
+    ],
+    "result": "The authors propose two speculative mechanisms for Myo3 function: impacting chromatin remodeling/histone-modifying enzymes that regulate TF binding to zip codes, or acting at the NPC to facilitate capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159-C160 are explicitly speculative proposals to explain the Myo3 phenotype. While C159 is supported by analogy to actin (citation to Kapoor et al., 2013), neither mechanism is directly tested. These represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The authors speculate that inter-chromosomal clustering may involve phase separation, drawing parallels to superenhancers and proposing that multivalent interactions between natively unstructured nuclear pore proteins could facilitate conditional phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C172-C176 are largely speculative (C172, C175, C176) or based on prior work about other systems (C173-C174). While the hypothesis is plausible and supported by relevant citations, no direct experimental evidence for phase separation in this clustering context is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C52",
+      "C53",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C94",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Background and context claims about genome organization, NPC-gene interactions, and prior work on clustering and repositioning mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C9-C35, C52-C53, C76-C82, C94, C116-C120, C161-C170) are primarily citations to established prior work or general knowledge statements. They provide appropriate context and are well-supported by the cited literature. These are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

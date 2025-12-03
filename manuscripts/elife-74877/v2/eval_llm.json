@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Nsp1 structure and mechanism of ribosome binding: Nsp1 contains N-terminal and C-terminal domains connected by a linker. The C-terminal helices (Nsp1-C-ter, residues 148-180) bind in the mRNA entry channel of the 40S ribosomal subunit via interactions with 18S rRNA helix h18 and ribosomal proteins uS3 and uS5, blocking mRNA entry and inhibiting host protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14, C16-C21 collectively describe the established structure and mechanism of Nsp1. These are well-supported by cited cryo-EM structural studies and functional data from prior work. The structural features and mechanism are consistent with published literature and provide the foundation for the drug screening approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C51"
+    ],
+    "result": "Nsp1 as a virulence factor: Nsp1 suppresses host immune function, is vital for viral replication, hijacks host translational machinery, and blocks synthesis of immune effectors (IFN-\u03b2, IFN-\u03bb1, interleukin-8), rendering cells incapable of mounting innate immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C22, C23, and C51 describe Nsp1's role in immune suppression and viral pathogenesis. These are well-established findings from prior work, appropriately cited, and provide biological rationale for targeting Nsp1 therapeutically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C57",
+      "C78"
+    ],
+    "result": "Conservation of Nsp1-C-ter: Nsp1 is highly conserved with <3% mutation frequency across SARS-CoV-2 genomes. The C-terminal domain shows even lower mutation frequency, and residues involved in drug binding show minimal mutations in 4,440,705 deposited sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C28, C57, and C78 describe genomic conservation analysis. The data from GISAID database analysis (Figure 1\u2014figure supplement 1D) supports low mutation frequency in drug-binding residues, providing rationale for targeting this region. The large sample size (>4 million sequences) strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Computational drug screening methodology: FDA-approved drugs (1,645 compounds) were screened against Nsp1-C-ter (residues 148-180 from PDB 6ZOJ). Drugs docked to a binding pocket consisting of residues P153, F157, N160, K164, H165, R171, which overlaps with the ribosome-binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C68-C71 describe the computational screening approach. The methodology is clearly described with appropriate structural data sources and binding pocket identification using CASTp. The overlap with the ribosome-binding interface provides mechanistic rationale for potential inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C74",
+      "C75"
+    ],
+    "result": "Montelukast binds specifically to Nsp1-C-ter: Montelukast binds to full-length Nsp1 with KD = 10.8 \u00b1 0.2 \u00b5M but not to Nsp1\u0394C (C-terminal deletion mutant), indicating specific binding to the C-terminal region. This is confirmed by thermal shift assays showing montelukast induces melting temperature changes in Nsp1 but not Nsp1\u0394C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31, C32, C74, C75 demonstrate specific binding to Nsp1-C-ter through multiple orthogonal methods (BLI and NanoDSF). The differential binding to Nsp1 vs Nsp1\u0394C provides strong evidence for C-terminal specificity. Binding affinity is in the low micromolar range with appropriate error bars from replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C35"
+    ],
+    "result": "Saquinavir binds to Nsp1-C-ter: Saquinavir shows binding affinity of 7.5 \u00b1 0.5 \u00b5M to Nsp1-C-ter and causes a \u0394Tm shift of 6.5\u00b0C in thermal stability assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C35 report saquinavir binding parameters measured by BLI and NanoDSF. The data show slightly tighter binding than montelukast and larger thermal shift, supported by experimental data in Figures 1D and 1F with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C36",
+      "C37",
+      "C40",
+      "C76",
+      "C79"
+    ],
+    "result": "Montelukast forms stable complex with Nsp1-C-ter in silico: Molecular dynamics simulations show montelukast forms stable complex with binding energy of -95.8 \u00b1 13.3 kJ/mol, with H-bonds to E148 and L149, and base stacking with F157 and L173. RMSD analysis shows stable binding throughout 500 ns simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, C36, C37, C40, C76, C79 describe computational validation of montelukast binding. Multiple 500 ns MD simulation replicas show stable RMSD, consistent interaction patterns, and favorable binding energy. The computational data complement experimental binding measurements, though binding energy calculations have inherent uncertainties in absolute values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C77"
+    ],
+    "result": "Saquinavir forms complex with Nsp1-C-ter in silico: Molecular dynamics simulations show saquinavir binds with -42.7 \u00b1 5.2 kJ/mol binding energy, forming H-bonds with T151, M174, R175 and base stacking with R171, with stable RMSD throughout simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C40, C77 describe computational analysis of saquinavir binding. The binding energy is notably weaker than montelukast (-42.7 vs -95.8 kJ/mol), which is inconsistent with the tighter experimental KD (7.5 vs 10.8 \u00b5M). This discrepancy raises questions about the computational model accuracy, though RMSD stability is demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C44",
+      "C80"
+    ],
+    "result": "Montelukast rescues Nsp1-mediated translation inhibition: Co-transfection of Nsp1 reduced luciferase activity by ~50%, which was restored in a dose-dependent manner by montelukast. No significant change in FLuc gene expression was observed, indicating rescue occurs at the translational level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42, C44, C80 demonstrate functional rescue of translation inhibition. The luciferase reporter assay (Figure 2A) shows dose-dependent rescue with appropriate controls. The qRT-PCR data (Figure 2C,D) confirms no transcriptional effects, supporting a translation-specific mechanism. Statistical significance is demonstrated with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Saquinavir fails to rescue Nsp1-mediated translation inhibition: Despite binding to Nsp1-C-ter, saquinavir does not rescue luciferase expression in the presence of Nsp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 reports negative result for saquinavir in functional assays (Figure 2B). This is puzzling given saquinavir's tighter binding affinity than montelukast. The authors acknowledge this requires further investigation but provide no mechanistic explanation. The result is clearly demonstrated but highlights a disconnect between binding and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Montelukast shows antiviral activity against SARS-CoV-2: At 10 \u00b5M, montelukast significantly reduced viral spike protein expression, caused ~1-log reduction in viral RNA copy number, and decreased infectious virus titer in both HEK293T-ACE2 and Vero-E6 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C47, C48, C49 demonstrate antiviral activity through multiple orthogonal assays (Western blot, qRT-PCR, plaque assay) in two cell lines. The data in Figure 3A-F show statistically significant reductions with appropriate controls and replicates. The 1-log reduction is modest but consistent across assays. However, the mechanism linking Nsp1 binding to antiviral activity remains incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Saquinavir shows no significant antiviral activity: At 10 \u00b5M, saquinavir did not show significant antiviral effects against SARS-CoV-2 in either HEK293T-ACE2 or Vero-E6 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 reports negative antiviral results for saquinavir (Figure 3\u2014figure supplement 2). This is consistent with the lack of translation rescue (C43) but inconsistent with its binding to Nsp1-C-ter. The disconnect between binding and biological activity is not explained and suggests either off-target effects for montelukast or that binding alone is insufficient for activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Cytotoxicity profile of drugs: Montelukast and saquinavir showed minimal toxicity up to 10 \u00b5M in both HEK293T-ACE2 and Vero-E6 cells, but 20 \u00b5M caused ~80% decrease in Vero-E6 cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 report cytotoxicity data (Figure 3\u2014figure supplement 1). The data support using 10 \u00b5M as the working concentration for antiviral assays. The sharp toxicity increase at 20 \u00b5M in Vero-E6 cells limits the therapeutic window. Appropriate statistical analysis is shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Integrated conclusion on montelukast mechanism: Montelukast binds to Nsp1, rescues Nsp1-mediated translation inhibition, and has antiviral activity against SARS-CoV-2. The rescue of host protein synthesis machinery appears to contribute to antiviral activity, though detailed mechanisms require further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 and C65 synthesize the main findings. While montelukast shows binding, translation rescue, and antiviral activity, the causal link between these observations is not definitively established. The authors appropriately acknowledge that 'further experiments would be essential to figure out detailed mechanism.' Alternative mechanisms (e.g., off-target effects) are not ruled out. The correlation is suggestive but causation is not proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Nsp1-C-ter as druggable target: The C-terminal region of Nsp1 is identified as a druggable target, and montelukast serves as a starting point for designing more potent drug molecules against SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 present the study's translational conclusions. The identification of Nsp1-C-ter as druggable is supported by successful identification of binding molecules with functional activity. However, the modest antiviral effect (~1-log reduction), micromolar binding affinity, and incomplete mechanistic understanding suggest significant optimization would be needed. The conclusion is reasonable but somewhat overstated given the preliminary nature of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "SARS-CoV-2 basic virology: SARS-CoV-2 is an enveloped positive-strand RNA betacoronavirus with ~30 kb genome containing 5'-cap and 3'-poly-A tail, encoding 14 ORFs. ORF1a/1b encode polyproteins cleaved into 16 non-structural proteins (Nsp1-Nsp16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 present established background knowledge about SARS-CoV-2 with appropriate citations. These are well-accepted facts in the field and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C24",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Additional Nsp1 mechanisms: Beyond blocking mRNA entry, Nsp1 induces endonucleolytic cleavage of host RNAs, locks the 40S head domain in closed conformation, competes with eIF3j for uS3 binding, enhances viral mRNA translation via N-terminal domain binding to 5'UTR, and interacts with NXF1-NXT1 to retain cellular mRNAs in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C24, C52-C56 describe additional Nsp1 functions from prior literature with appropriate citations. These provide comprehensive background on Nsp1's multifaceted role in host shutoff but are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C58"
+    ],
+    "result": "Clinical use of screened drugs: Montelukast is a leukotriene receptor antagonist used for asthma, and saquinavir is an anti-retroviral drug used for HIV treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C58 state established clinical uses of the drugs with appropriate citations. This information supports the drug repurposing rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Prior montelukast COVID-19 studies: Montelukast has been suggested for tackling cytokine storms in COVID-19, with hospitalized patients showing fewer clinical deterioration events. Computational studies suggested Mpro inhibition, but experimental studies showed this was a false positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 review prior work on montelukast in COVID-19 context. The citations appropriately acknowledge both supportive clinical observations and the debunking of Mpro inhibition claims. This provides important context that montelukast's mechanism in COVID-19 was previously unclear, supporting the novelty of targeting Nsp1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Experimental methodology details: Nsp1 constructs were cloned into pET28a with N-terminal His-tag. Montelukast and saquinavir showed high clash scores in computational analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 describe methodological details. C72 is standard molecular biology methodology. C73 mentions 'high clash scores' but the meaning and implications are unclear - clash scores typically indicate steric conflicts, which would be unfavorable, yet these drugs were selected for further study. This requires clarification.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C18"
+    ],
+    "result": "Two-photon calcium imaging enables recording from large neuronal populations but produces temporally blurred and noisy observations that are indirectly related to spiking activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C13, C14, C15, and C18 collectively establish well-accepted characteristics of two-photon calcium imaging technology. These are supported by extensive citations and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Existing methods for estimating correlations from two-photon data face significant challenges including temporal blurring bias, sensitivity to spike deconvolution accuracy, and failure to account for non-linear spiking dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16-C23 describe limitations of existing approaches, supported by citations and demonstrated through simulation studies (Figures 2, 3, 5). The manuscript provides both theoretical arguments and empirical evidence for these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C36",
+      "C37"
+    ],
+    "result": "The proposed method directly estimates signal and noise correlations from fluorescence observations without spike deconvolution by using a multi-tier Bayesian model with variational inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25, C27-C29, C36-C37 describe the core methodological contribution. The approach is detailed in Materials and Methods with mathematical formulation, algorithm specification (Algorithm 1), and implementation provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C38",
+      "C105"
+    ],
+    "result": "The proposed estimator has theoretical guarantees on bias and variance performance, with robust performance under limited trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30, C38, C105 are supported by Theorem 1 and detailed proofs in Appendix 2. The theoretical analysis provides formal bounds on estimator performance under specified conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In simulation study 1 with N=8 neurons and L=20 trials, the proposed method achieves the lowest NMSE and leakage compared to Pearson and two-stage methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are directly supported by quantitative results shown in Figure 2A. The performance metrics (NMSE and leakage ratios) clearly demonstrate superiority of the proposed method over existing approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "In simulation study 2 with N=30 neurons under model mismatch (Poisson vs Bernoulli), the proposed method closely follows ground truth with favorable scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by Figure 3 results showing low NMSE and leakage despite intentional model mismatch. This demonstrates robustness and scalability of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In real data study 1 (mouse A1, N=16 neurons), the proposed method reveals distinct signal and noise correlation structures with minimal leakage, while existing methods show significant mixing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by Figure 4 and Table 1, showing statistically significant dissimilarity (p<10^-4) between signal and noise correlations for the proposed method, while other methods fail this test. The Tanimoto dissimilarity metric provides quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Temporal shuffling analysis demonstrates that the proposed method is highly specific to temporal structure, producing negligible correlations on shuffled data, while existing methods fail this specificity test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by Figure 5 and Table 1. The shuffling test provides strong evidence for temporal specificity: Pearson correlations remain unchanged (NMSE=0), two-stage methods show high variability, while the proposed method yields NMSE>1, indicating near-zero correlations on shuffled data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In real data study 2 (spontaneous vs stimulus-driven conditions), only the proposed method detects statistically significant invariance of noise correlations across conditions (p=0.003) and distinction from signal correlations (p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C73-C76 are supported by Table 2 and Figure 6. The statistical tests show only the proposed method achieves significant results, consistent with theoretical expectations. Figure 6D provides qualitative validation showing time-locked activity for high signal correlation pairs and non-time-locked activity for high noise correlation pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C107",
+      "C108"
+    ],
+    "result": "In real data study 3 (mouse A1 layers 2/3 and 4), the proposed method reveals smaller correlation between signal and noise correlations than previously reported, suggesting distinct circuit mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C107-C108 are supported by Figure 7A-B showing notably smaller slopes for the proposed method compared to Pearson correlations. This challenges previous findings (Winkowski and Kanold, 2013) and is attributed to reduced leakage in the proposed estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C109",
+      "C110"
+    ],
+    "result": "Spatial analysis reveals signal correlations show significant negative trends with distance in both layers (steeper for proposed method), while noise correlations show layer-specific patterns: negative trend in layer 2/3 but not layer 4 for the proposed method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C109-C110 are supported by Table 3 and Figure 7C-D with statistical validation (p-values from linear regression). The layer-specific differences in noise correlation spatial trends represent a novel finding distinct from Pearson correlation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Two-dimensional spatial analysis reveals noise correlations are sparser in layer 4 than layer 2/3, with distinct spatial spread patterns and rostrocaudal directionality in layer 4, consistent with known anatomical connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94, C111-C113 are supported by Figure 7E-F and supplements showing spatial spreads, marginal distributions (Figure 7\u2014supplement 1), and angular distributions (Figure 7\u2014supplement 2). The findings are consistent with anatomical studies (Watkins et al., 2014; Meng et al., 2017a,b; Kratz and Manis, 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The proposed method's performance advantages arise from soft probabilistic spike decoding through iterative variational inference and explicit modeling of non-linear stimulus-to-spike mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 provide mechanistic explanation for observed performance gains, supported by the methodological framework and empirical results. The iterative refinement between spike inference and correlation estimation is a key feature of the variational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The proposed method scales favorably to larger populations, requires minimal training data, and provides closed-form posterior approximations enabling confidence interval construction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are supported by demonstration with N=30 neurons (simulation study 2) and the low-complexity update rules described in Materials and Methods. These represent practical advantages of the variational inference framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The method has limitations including the Bernoulli assumption (one spike per frame) and degraded performance at extremely low firing rates/high noise, though it addresses key limitations of conventional estimators even in favorable conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C119-C121 acknowledge limitations honestly. The Bernoulli assumption is partially mitigated by allowing spike magnitudes >1. Performance degradation at low SNR/firing rate is demonstrated in Figure 2\u2014supplements 5-6, but the method still outperforms alternatives in most regimes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Neuronal correlations are categorized into signal correlations (stimulus-locked similarity) and noise correlations (trial-to-trial variability from common inputs), both essential for understanding population coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 establish standard definitions in systems neuroscience, supported by extensive citations. These provide the conceptual foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Existing studies improving correlation estimation either neglect signal correlations or estimate connectivity surrogates rather than correlations directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by citations to relevant prior work (Rupasinghe and Babadi, 2020; Yatsenko et al., 2015; Aitchison et al., 2017; Mishchenko et al., 2011; Soudry et al., 2015; Keeley et al., 2020), establishing the gap addressed by this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The proposed method provides noise correlations invariant across spontaneous and stimulus-driven conditions, corroborates hypotheses about distinct signal/noise structures, and reveals novel spatial trends in mouse A1 layers 2/3 and 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 summarize key findings from real data studies 2 and 3, supported by Figures 6-7 and Tables 2-3. These represent the main biological insights enabled by the improved methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The proposed method provides a robust and scalable alternative to existing approaches with closed-form posterior approximations and low-complexity iterative updates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by the algorithmic framework (Algorithm 1), theoretical analysis (Theorem 1), and empirical validation across multiple studies. The combination of theoretical guarantees and practical performance establishes this as a viable alternative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C124"
+    ],
+    "result": "MATLAB implementation and data are publicly available for reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C124 are statements about data/code availability with specific repository citations (Rupasinghe, 2020; Rupasinghe et al., 2021). This supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Experimental procedures were approved by IACUC, used F1 offspring of CBA/CaJ \u00d7 Thy1-GCaMP6s mice with good hearing, and followed established imaging protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 describe experimental procedures with appropriate ethical approval, justified animal model selection (Frisina et al., 2011), and established protocols (Francis et al., 2018; Liu et al., 2019; Bowen et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Spiking activity is modeled as a Bernoulli process with logistic link function in the proposed generative model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 describes a core component of the forward model, detailed in Materials and Methods with mathematical formulation. This is a standard approach in point process modeling (Truccolo et al., 2005).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The proposed method recovers calcium concentrations by predicting putative spikes in successive windows with magnitudes possibly >1, accommodating rapid firing rate increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by Figure 4\u2014supplement 2 showing the method's handling of high fluorescence activity episodes. This demonstrates practical robustness to model violations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The framework can be extended to incorporate other correlation notions, non-Gaussian structures, time-varying correlations, and non-linear models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 are speculative statements about potential future extensions with citations to relevant methods. While plausible, these extensions have not been implemented or validated.",
+    "result_type": "MINOR"
+  }
+]

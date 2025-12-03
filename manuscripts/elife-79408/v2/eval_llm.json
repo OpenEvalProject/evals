@@ -1,0 +1,473 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript reviews established background knowledge about meiotic recombination, including the formation of the synaptonemal complex (SC), programmed double-strand breaks (DSBs), their repair as crossovers (COs) or non-crossovers (NCOs), and the phenomena of crossover interference and assurance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by appropriate citations to established literature (Page and Hawley 2004; Gray and Cohen 2016; Hunter 2015; Jones and Franklin 2006; Otto and Payseur 2019; Sturtevant 1915; von Diezmann and Rog 2021; Zickler and Kleckner 2016). These claims provide standard background context and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors previously developed an SC-mediated coarsening model where HEI10 diffuses along synapsed bivalents and accumulates at recombination intermediate (RI) sites through a coarsening process, explaining CO interference and assurance in wild-type Arabidopsis. Similar models have been proposed for C. elegans, suggesting conservation of this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 describe prior work by the authors (Morgan et al. 2021) and others (Zhang et al. 2021) that is appropriately cited. These claims establish the foundation for the current work and are supported by published literature. The description of the model mechanism is consistent with the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Evidence from C. elegans and Arabidopsis suggests the SC acts as a conduit for HEI10 diffusion and plays a direct role in mediating crossover patterning. In C. elegans, the SC has liquid-crystal-like properties and ZHP-3 (HEI10 ortholog) can diffuse along it. In Arabidopsis zyp1 mutants lacking the SC, CO interference and assurance are abolished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are well-supported by appropriate citations to published work (Rog et al. 2017; Zhang et al. 2018, 2021; Stauffer et al. 2019; Capilla-P\u00e9rez et al. 2021; France et al. 2021). The inference in C18 about the SC's direct role is reasonable given the experimental evidence from zyp1 mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27"
+    ],
+    "result": "The authors developed a nucleoplasmic coarsening model where HEI10 diffuses through the nucleoplasm rather than along the SC, generating competition between RIs on different bivalents. This model provides a mechanistic explanation for the loss of CO interference and assurance in zyp1 mutants while revealing that these mutants retain constraints on total CO number per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 and C27 describe the key conceptual advance of this work. The nucleoplasmic coarsening model is a logical extension of prior work, supported by citations to related hypotheses in C. elegans (C21: Rog et al. 2017; Zhang et al. 2021, 2018) and Arabidopsis (C22: Durand et al. 2022; Lloyd 2023). The mechanistic explanation (C23, C24) is supported by the modeling results presented in the manuscript (as evidenced by DATA and INFERENCE evidence types).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The nucleoplasmic coarsening model successfully recapitulates experimental observations from zyp1 mutants, including an ~50% increase in class I COs compared to wild-type and ~11% of cells containing univalent chromosomes (indicating loss of CO assurance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by comparison of model simulations with experimental data from Capilla-P\u00e9rez et al. 2021 (C30, C31), shown in Figure 2A and B. The model successfully reproduces both the increased CO number and univalent frequency. C32 provides appropriate biological context for interpreting univalents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Minor discrepancies between model and experimental data are explained by biological factors: lower variance in model outputs is attributed to pooling of multiple mutant lines in experiments (C33-C34), while higher univalent frequency in simulations is explained by the model only simulating class I COs (C35-C38). Univalents are more likely on shorter chromosomes, consistent with experimental observations (C39-C40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide reasonable explanations for model-data discrepancies. The explanations are biologically plausible and supported by appropriate citations (C34: Capilla-P\u00e9rez et al. 2021; C38: Mercier et al. 2005; C40: Durand et al. 2022). The calculation in C38 is mathematically sound, though the authors acknowledge it's a simplified estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The nucleoplasmic coarsening model predicts that CO numbers on individual chromosomes follow a Poisson distribution (with mean proportional to chromosome length), indicating absence of CO interference along individual chromosomes. This is consistent with previous genetic analysis of zyp1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are well-supported. The Poisson distribution prediction (C42) follows logically from the model mechanism (C44) and is consistent with the theoretical expectation for processes occurring at constant probability per unit length (C43, citing Haldane 1931). The prediction is validated by comparison with experimental data (C45, citing Capilla-P\u00e9rez et al. 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Paradoxically, while CO numbers on individual chromosomes follow a Poisson distribution, the total number of COs per cell is significantly underdispersed (sub-Poissonian) in both model simulations (z = -276.85, p<0.001) and experimental data (z = -6.5757, p<0.001). This underdispersion results from global competition for a limited pool of HEI10 combined with regulation of cell-to-cell HEI10 amounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe a key finding. The statistical tests (C47, C48) are appropriate and properly reported with test statistics and p-values. The mechanistic explanation (C49-C50) is consistent with the model design. The robustness of the finding is demonstrated by persistence under altered initial conditions (C51, Figure 2\u2014figure supplement 1). Notably, C48 identifies a previously unreported pattern in published experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The nucleoplasmic coarsening model produces experimentally observed CO numbers within the biologically realistic ~10 hr duration of pachytene in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by simulation results (Figure 2D) and appropriate citation for the pachytene duration (Prusicki et al. 2019). This demonstrates that the model dynamics are consistent with biological timescales, an important validation criterion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The nucleoplasmic coarsening model successfully explains CO patterning in zyp1+HEI10 over-expression lines. Increasing HEI10 levels 3.5-fold in the model produces the observed increase in CO number (mean ~47 COs), but requires additional noise in cellular HEI10 levels (increased standard deviation by ~10-fold) to match the observed variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by comparison with experimental data from Durand et al. 2022 (C53) and model simulations (Figure 2\u2014figure supplement 2). The need for increased noise (C57) is justified by the presence of the HEI10 transgene. Statistical tests confirm the model with increased noise matches experimental variance (C58: F(1,10034) = 0.0982, p=0.754), while the model without increased noise does not (C56: F(1,10034) = 68.602, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors used super-resolution 3D-SIM microscopy and bespoke image analysis to quantify HEI10 foci positions and intensities along late-prophase I chromosomes in wild-type and zyp1a-2/zyp1b-1 mutants (10 cells from 4 wild-type plants, 14 cells from 4 zyp1 mutant plants). Late-HEI10 foci mark class I CO positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe the experimental methods. The approach is appropriate and well-justified (C59 cites Zickler and Kleckner 2016 for the importance of measuring in microns; C60 cites Morgan et al. 2021 for the value of intensity correlations; C62 cites Chelysheva et al. 2012 for HEI10 foci marking COs). Sample sizes (C63) are modest but sufficient for quantitative comparison with simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Imaging revealed that axial elements are tightly juxtaposed in wild-type but only loosely paired in zyp1a-2/zyp1b-1 mutants, with HEI10 foci located between homologous axes at equivalent positions. Early pachytene cells showed more numerous, less bright HEI10 foci than late-prophase I cells in both genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by imaging data (Figure 3A, B for C64-C66; Figure 3\u2014figure supplement 1 for C67) and are consistent with previous studies (citations to Capilla-P\u00e9rez et al. 2021 and France et al. 2021). The observations are consistent with expectations for the coarsening process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Quantitative analysis found an average of 9.0 late-HEI10 foci per cell in wild-type and 18.7 in zyp1a-2/zyp1b-1 mutants. In zyp1 mutants, HEI10 foci distribution was shifted toward more distal (telomeric) positions compared to wild-type, which the nucleoplasmic coarsening model successfully recapitulates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by experimental data (C68-C69 consistent with prior work cited: Capilla-P\u00e9rez et al. 2021; France et al. 2021) and model simulations (Figure 4A). The distal shift (C70) is consistent with previous genetic analysis (Capilla-P\u00e9rez et al. 2021) and is successfully predicted by the model (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The distal bias in CO positioning in zyp1 mutants results from additional initial HEI10 loading near chromosome ends (up to 25% on the most distal 60% of each chromosome), which is lower than in the original SC-mediated model (up to 100% on the most distal 20%). This difference is explained by the absence of SC-mediated coarsening effects that naturally suppress distal COs, though telomere pairing (meiotic bouquet) may contribute to the remaining bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 provide a mechanistic explanation for the distal CO bias. The reasoning is sound: without SC-mediated coarsening (C76), each RI is equally capable of forming a CO, so less end-loading is needed to produce the observed distal bias (C74, C77). The speculation about telomere pairing (C80, citing Varas et al. 2015) is appropriately tentative. The comparison between models (Figure 1\u2014figure supplement 1) supports C74.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Analysis of CO spacing revealed a scarcity of closely spaced COs in wild-type (reflecting CO interference) but a very high frequency of closely spaced COs in zyp1a-2/zyp1b-1 mutants (reflecting absence of interference). The nucleoplasmic coarsening model successfully predicted this pattern without additional parameterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are strongly supported by experimental data (Figure 4B) and model predictions. The wild-type pattern (C81) is consistent with prior work. The zyp1 pattern (C82-C83) provides strong cytological support for previous genetic conclusions (citing Capilla-P\u00e9rez et al. 2021). Importantly, the model prediction (C84) required no additional fitting, demonstrating genuine predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In wild-type Arabidopsis, normalized HEI10 focal intensity is negatively correlated with the number of foci per bivalent, but this correlation is absent in zyp1a-2/zyp1b-1 mutants. This absence is expected from the nucleoplasmic coarsening model and was successfully predicted by simulations without additional parameterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are well-supported. The wild-type correlation (C85-C86) replicates prior findings (Morgan et al. 2021) and is shown in Figure 4C. The absence of correlation in zyp1 mutants (C87) is a novel finding that is mechanistically explained by the model (C88) and successfully predicted by simulations (C89, Figure 4C). This provides strong validation of the nucleoplasmic coarsening mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A combined model incorporating both SC-mediated and nucleoplasm-mediated coarsening (with 90% SC-mediated and 10% nucleoplasm-mediated exchange rates) successfully explains CO patterning in wild-type and HEI10 over-expressing Arabidopsis, retaining CO assurance (<0.2% bivalents with zero COs). This demonstrates that partial HEI10 exchange between SC and nucleoplasm is compatible with the coarsening model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by simulation results (Figure 4\u2014figure supplement 2). The combined model (C92) successfully reproduces wild-type CO patterns while retaining CO assurance (C93). The 4.5-fold HEI10 increase (C95) reproduces over-expressor results. This analysis (C94) demonstrates that the model doesn't require complete SC compartmentalization, which is biologically more realistic given the uncertainty noted in C90.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The coarsening model provides a mechanistic explanation for closely spaced COs observed in Arabidopsis mutants with partial synapsis (axr1, pss1, asy1). In these mutants, wild-type levels of HEI10 loaded onto shorter SC stretches result in increased HEI10 concentration per micron, similar to HEI10 over-expressors, leading to more closely spaced COs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 provide a logical mechanistic explanation for observations in partial synapsis mutants. The observation of closely spaced COs (C96) is well-supported by citations (Duroc et al. 2014; Jahns et al. 2014; Lambing et al. 2020; Pochon et al. 2022). The mechanistic reasoning (C97-C100) is sound and consistent with the model, with appropriate citation to prior work (Morgan et al. 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors imaged 39 cells from three pch2-1 mutant plants using 3D-SIM microscopy. pch2-1 mutants (which compromise SC polymerization) contained an average of 14 SC segments (mean length 5.1 \u03bcm) with 11.1 late-HEI10 foci per cell (0.79 per segment). HEI10 foci were exclusively associated with SC segments, evenly distributed along them, with frequent close spacing. Longer segments had more foci, and single-focus intensity correlated positively with segment length. The maximum SC segment length without HEI10 foci was 9.6 \u03bcm, suggesting ~10 \u03bcm is the minimum length for CO assurance in pch2-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C113 are well-supported by appropriate citations (C101-C102: Bhalla 2023; Lambing et al. 2015; Yang et al. 2022, 2020) and experimental data (C103-C113: Figure 5A-G). The sample size (C103) is reasonable. The observations (C104-C111) are clearly documented in the figures. The inference about minimum segment length for CO assurance (C113) is reasonable based on the maximum observed segment without foci (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The combined coarsening model qualitatively reproduces pch2-1 experimental data, generating 11.0 COs per cell and 0.8 COs per SC segment (similar to experimental means and variances). About 40% of simulated segments had no COs (similar to experiments), occurring due to lack of RIs (22%) or insufficient HEI10 (18%). CO assurance was retained for longer segments (~99.5% of segments >10 \u03bcm had \u22651 CO). The model reproduced CO distribution within segments, spacing between adjacent COs, and positive correlations between CO number/intensity and segment length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C122 are supported by simulation results (Figure 5B-G). The model successfully reproduces multiple aspects of the experimental data (C115-C122), though the authors note the agreement is \"slightly less good\" for pch2-1 than for zyp1 (C114). The mechanistic explanation for zero-CO segments (C117) is reasonable. The quantitative agreement (C115-C116) is good, and the model captures key qualitative patterns (C118-C122).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The work demonstrates that CO patterning in the absence of an SC is consistent with a coarsening model where HEI10 diffuses through the nucleoplasm rather than along the SC. This modified model explains the loss of CO interference and assurance in zyp1 mutants and successfully predicts previously unexplored observations. The SC's critical role is in controlling the spatial compartment through which HEI10 diffuses, a function also proposed in C. elegans. Unlike C. elegans, Arabidopsis can uncouple SC formation from CO formation, making it an excellent system for studying nucleoplasmic coarsening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 summarize the main conclusions. These are well-supported by the combined experimental and modeling results presented throughout the manuscript. The comparison with C. elegans (C127-C128) is appropriately cited (Rog et al. 2017; Zhang et al. 2021, 2018; Colai\u00e1covo et al. 2003; Capilla-P\u00e9rez et al. 2021; France et al. 2021). The overall conclusion (C129) is justified by the comprehensive evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Recent work by Durand et al. (2022) successfully used the coarsening model to explain genetic CO patterning data and hypothesized that nucleoplasmic coarsening could explain zyp1 mutant phenotypes, but unlike the current work, did not explicitly model the dynamics of nucleoplasmic coarsening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 accurately describe related prior work (Durand et al. 2022) and appropriately distinguish it from the current study. The citations are appropriate and the distinction (C132) highlights the novelty of the current work in explicitly modeling nucleoplasmic coarsening dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C133",
+      "C138",
+      "C139",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "zyp1 mutants display a paradoxical pattern: they lose CO interference but retain per-cell constraints on total CO numbers, with Poissonian distributions on individual chromosomes but sub-Poissonian distribution per cell. In the nucleoplasmic coarsening model, the limited HEI10 pool explains this sub-Poissonian distribution. This demonstrates that sub-Poissonian distributions can occur without functional CO interference, cautioning against using distribution patterns alone to infer interference status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133, C138-C139, C141-C143 describe an important conceptual insight. The paradoxical pattern (C133, C138) is supported by the data. The mechanistic explanation (C141) is consistent with the model. The cautionary note (C142-C143) is an important contribution that challenges conventional interpretations. This is well-supported by the demonstration that sub-Poissonian distributions can arise from global HEI10 limitation rather than local interference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "In wild-type cells, CO interference along individual chromosomes regulates total CO numbers, and the combined effect across all chromosome pairs causes global regulation with variance close to the sum of per-chromosome variances. While COs co-vary in some species (leading to broader distributions), recent results suggest CO co-variation is not present in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 provide context for understanding CO number regulation. C134 describes established knowledge. C135 is a reasonable inference from the model mechanism. C136 is appropriately cited (Wang et al. 2019). C137 is supported by citation to Durand et al. 2022. These claims help explain the differences between species and the specific patterns observed in Arabidopsis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "The influence of a limiting trans-acting factor like HEI10 could explain why CO numbers in SC mutants are relatively low but still higher than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 is appropriately attributed to Crismani et al. 2021 and is consistent with the nucleoplasmic coarsening model presented in this work. The explanation is mechanistically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "A combined coarsening model incorporating both nucleoplasmic and SC-mediated coarsening successfully explains CO patterning in wild-type and HEI10 over-expressing Arabidopsis. This combined model likely better reflects biological reality, with the SC promoting HEI10 diffusion along bivalents while allowing some exchange with the nucleoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 are supported by the simulation results (Figure 4\u2014figure supplement 2). The combined model (C144) successfully reproduces experimental patterns. The inference that this better reflects biological reality (C145) is reasonable given the uncertainty about complete SC compartmentalization and is appropriately presented as an anticipation rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The interplay between SC-mediated and nucleoplasmic coarsening could provide a mechanistic explanation for the interchromosomal effect, where structural variations on one chromosome pair lead to increased COs on other pairs. This could occur through redistribution of HEI10 from regions with inhibited RIs to other chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C148 present a speculative hypothesis about the interchromosomal effect. While the hypothesis is mechanistically plausible and appropriately cited (Miller 2020; Termolino et al. 2019), it is not tested in this work. The speculation is clearly marked (C148 has SPECULATION evidence type), but without experimental or modeling validation, this remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "HEI10 coarsening can explain CO patterning in pch2 mutants with partial synapsis. Loading wild-type HEI10 levels onto shorter SC stretches increases HEI10 concentration per micron, similar to HEI10 over-expressors, leading to increased closely spaced COs. The coarsening model could explain CO patterning in various synaptic mutants (axr1, pss1, asy1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 are supported by the pch2-1 experimental and modeling results (C149: Figure 5, citing Lambing et al. 2015). The mechanistic explanation (C150) is consistent with the model and appropriately cited (Morgan et al. 2021). The generalization to other synaptic mutants (C151) is reasonable given the similar phenotypes reported in the literature (Duroc et al. 2014; Jahns et al. 2014; Lambing et al. 2020; Pochon et al. 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The coarsening paradigm can explain numerous aspects of CO control in wild-type and mutant Arabidopsis, including CO placement, frequency, assurance, interference, homeostasis, heterochiasmy, meiotic duration, interchromosomal effects, and HEI10 focal intensity measurements. Given the conserved nature of HEI10 and similar mechanisms in C. elegans, similar mechanisms likely regulate crossover patterning in many sexually reproducing eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 provide a broad summary of the coarsening model's explanatory power. C152-C153 are supported by the comprehensive results presented in this and prior work. C154 is appropriately supported by extensive citations documenting HEI10 conservation (Agarwal and Roeder 2000; Chelysheva et al. 2012; Jantsch et al. 2004; Lake et al. 2015; Qiao et al. 2014; Reynolds et al. 2013) and similar mechanisms in C. elegans (Zhang et al. 2021). The generalization is appropriately tentative (\"likely\").",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1310 @@
+{
+  "submission": {
+    "id": "70c795ce-8914-4562-ba24-ccf703d7e07b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:03:00.321269Z",
+    "updated_at": "2025-12-03T07:03:00.321269Z"
+  },
+  "content": [
+    {
+      "id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "submission_id": "70c795ce-8914-4562-ba24-ccf703d7e07b",
+      "content_type": "manuscript",
+      "content_text": "# Disintegration promotes protospacer integration by the Cas1-Cas2 complex\n\n## Authors\n\n- Chien-Hui Ma<sup>1</sup>\n- Kamyab Javanmardi<sup>1</sup> ([ORCID: 0000-0002-6449-6709](https://orcid.org/0000-0002-6449-6709))\n- Ilya J Finkelstein<sup>1</sup> ([ORCID: 0000-0002-9371-2431](https://orcid.org/0000-0002-9371-2431)) \u2020\n- Makkuni Jayaram<sup>1</sup> ([ORCID: 0000-0001-9640-6264](https://orcid.org/0000-0001-9640-6264)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biosciences and Institute of Cell and Molecular Biology, University of Texas at Austin Austin United States\n2. Center for Systems and Synthetic Biology, University of Texas at Austin Austin United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n\u2018Disintegration\u2019\u2014the reversal of transposon DNA integration at a target site\u2014is regarded as an abortive off-pathway reaction. Here, we challenge this view with a biochemical investigation of the mechanism of protospacer insertion, which is mechanistically analogous to DNA transposition, by the Streptococcus pyogenes Cas1-Cas2 complex. In supercoiled target sites, the predominant outcome is the disintegration of one-ended insertions that fail to complete the second integration event. In linear target sites, one-ended insertions far outnumber complete protospacer insertions. The second insertion event is most often accompanied by the disintegration of the first, mediated either by the 3\u2032-hydroxyl exposed during integration or by water. One-ended integration intermediates may mature into complete spacer insertions via DNA repair pathways that are also involved in transposon mobility. We propose that disintegration-promoted integration is functionally important in the adaptive phase of CRISPR-mediated bacterial immunity, and perhaps in other analogous transposition reactions.\n\n## Introduction\n\nCRISPR-based bacterial immunity uses information from a prior infection stored in the chromosome to target and destroy invading viruses or plasmids. The adaptive phase of this defense system involves the deposition of short pieces of DNA (protospacers) from foreign nucleic acids into the chromosome as spacers\u2014the storage units of immunological memory (Hille et al., 2018; Marraffini, 2015). The CRISPR locus has a (leader-[repeat-spacer]n-repeat) organization, and the long primary transcript derived from it is processed by Cas (CRISPR-associated) and/or host nucleases into mature CRISPR-RNAs (crRNAs) (Barrangou and Marraffini, 2014; Barrangou, 2015; Wiedenheft et al., 2012; Wright et al., 2016). The crRNAs, together with Cas effector protein(s), assemble the interference complex for recognition of invading nucleic acids through concerted protein-nucleic acid and base-pairing interactions followed by their cleavage and destruction.\n\nCRISPR-Cas systems are classified into two broad categories (Brouns et al., 2008; Gasiunas et al., 2012). Class 1 systems employ a multi-protein-RNA interference complex for target recognition, termed Cascade. Class 2 systems utilize RNA-guided target recognition and cleavage by a single protein, that\u00a0is, Cas9 or Cas12. These two classes are further divided into several types and subtypes (Wright et al., 2016; Makarova et al., 2015; Shmakov et al., 2015). Self-targeting is avoided via multiple mechanisms, including recognition of a protospacer adjacent motif (PAM) immediately bordering the crRNA-complementary DNA sequence (Gasiunas et al., 2012; Jiang and Doudna, 2017; Jinek et al., 2012; Elmore et al., 2016; Pyenson and Marraffini, 2017; Smargon et al., 2017; Wang et al., 2019).\n\nAlthough CRISPR-Cas systems differ markedly in the execution of immune defense, the adaptation phase (invading DNA \u2192 pre-spacer \u2192 protospacer \u2192 integrated spacer) is well conserved but still incompletely understood (Amitai and Sorek, 2016; Krupovic et al., 2017). The conserved Cas1 and Cas2 proteins are essential (and sufficient in some systems) to carry out spacer acquisition in vivo (Nu\u00f1ez et al., 2015a; Yosef et al., 2012). In the Escherichia coli (Type I-E) and Enterococcus faecalis (Type II-A) Cas1-Cas2 crystal structures, a pair of Cas1 dimers flank a central Cas2 dimer on either side in a butterfly arrangement, providing a ridge that can accommodate the pre-spacer DNA (that includes the PAM sequence), or the protospacer DNA (that lacks a complete PAM), with splayed out single strand termini (Nu\u00f1ez et al., 2015b; Wang et al., 2015; Xiao et al., 2017). The E. faecalis complex reveals a second ridge that can be occupied by the acceptor DNA, suggesting its integration competence (Xiao et al., 2017). Other Cas proteins, such as Cas4, Csn2, and Cascade/Cas9, may improve spacer acquisition efficiency, while also contributing to the mechanism for discrimination of non-self (pre-spacer) from self (integrated spacer) (Heler et al., 2015; Wei et al., 2015a). In addition, bacterial nucleoid associated proteins such as IHF (integration host factor) assist the integration reaction and enhance target specificity in the E. coli Type I-E system (Nu\u00f1ez et al., 2016). Protospacer generation in the Type I and Type\u00a0II systems involves PAM recognition within the pre-spacer, but also the exclusion of a complete PAM from the protospacer to be integrated (Heler et al., 2015; Wei et al., 2015a).\n\nProtospacer integration is mechanistically analogous to DNA transposition, with terminal 3\u2032-hydroxyls attacking the target phosphodiester bonds at the leader-repeat (L-R) junction on one strand and the repeat-spacer (R-S) junction on the other (Nu\u00f1ez et al., 2015a;\u00a0Figure 1A). These transesterification reactions are carried out by the Cas1 active sites of the Cas1-Cas2 complex. Repair of the intermediate containing the (protospacer)-(repeat) strand fusions completes the reaction with a duplication of the repeat sequence, one copy each on either side of the spacer insert (Figure 1A). The nucleophilic attacks by the 3\u2032-hydroxyls are thought to occur in a stepwise fashion with bending of DNA to facilitate the reaction (Xiao et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig1-v1.jpg)\n\n**Figure 1.:** (A) Illustration of protospacer (PS, green) integration into a minimal CRISPR locus comprised of the leader (L, red), repeat (R, yellow), and spacer (S, blue). The reaction follows the cut-and-paste DNA transposition mechanism with a duplication of the repeat sequence. The 3\u2032-hydroxyls that perform nucleophilic attacks at the L-R junction (top strand) and the R-S junction (bottom strand) are indicated by the split arrowheads. (B) In vitro reactions were performed with a supercoiled acceptor plasmid containing the minimal CRISPR locus (L=11 bp; R=36 bp; S=27 bp). Each strand of the protospacer was 26 nt long (DNA sequence in Figure 2A), with four single-stranded 3\u2032-proximal nucleotides. The products of two-ended (complete) and one-ended (partial) protospacer integration and of protospacer integration-disintegration are diagrammed. Plasmid supercoiling will be reduced if the free DNA end undergoes rotation between integration and disintegration. (C) The target plasmid and the protospacer were reacted with Cas1-Cas2 mixtures in the indicated molar ratios. After 1 hr incubation, reactions were analyzed by agarose gel electrophoresis and ethidium bromide staining. A split view of the top and bottom portions of the gel is presented to show the plasmid and protospacer bands. (D) Reactions similar to those shown in C utilized a Cas1 to Cas2 molar ratio of 2:1 and were analyzed over a time course. (E) The substrate plasmid used for the reactions in (C) and (D) was treated with a sub-optimal amount of Escherichia coli topoisomerase I to follow the pattern of DNA relaxation over time. (F) The T4 ligase reactions (lanes 3\u20137) were performed on the plasmid containing the L-R-S target site nicked with Nb.BtsI (lane 2). The Cas1-Cas2 integration-disintegration reaction (lane 8) utilized the same plasmid in its supercoiled form (lane 1). Reactions were analyzed by gel electrophoresis in the presence of chloroquine (0.4 \u03bcg/ml). The DNA bands from the T4 ligase (lanes 3\u20137) and Cas1-Cas2 (lane 8) reactions are offset by one-half twist/writhe, as indicated by their staggered patterns. N =\u00a0nicked plasmid; PS =\u00a0protospacer;\u00a0SC = supercoiled plasmid; SC-d = supercoiled plasmid dimer .\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The reactions were performed using the same target site-containing supercoiled plasmid substrate as that used for the assays shown in Figure 1. The protospacer was the same as well, except that it contained the Cy5 fluorophore at the 5\u2032-end on both strands. The agarose gel in which the reactions were fractionated was analyzed by fluorography (left panel) and was subsequently stained with ethidium bromide to visualize all DNA bands. Note that there was no fluorescence associated with the supercoiled plasmid or the relaxed plasmid bands. Faint fluorescence was detected in a band that migrates at the position of the nicked plasmid. (B) Reactions utilized the same plasmid as in A (pCRISPR) or one lacking the integration target site (pUC19). (C) Individual components were omitted from the reactions with the pCRISPR plasmid, as indicated. (D) These reactions contained Cas1 and dCas1 (catalytically inactive due to the H205A mutation) in the indicated molar ratios. The molar ratio of (Cas1+dCas1) to Cas2 was maintained at 2:1 in all reactions. (E) Integration-disintegration reactions were performed with Cas1-Cas2 (left panel). The nicked plasmid was ligated in the absence of Cas1-Cas2 using T4 DNA ligase (right panel). The gel was run in the absence of an intercalator and was then stained with ethidium bromide. N = Nicked plasmid; PS =\u00a0protospacer;\u00a0SC = Supercoiled plasmid; SC-d = Supercoiled plasmid dimer. Supplementary\u00a0text\u00a01.\u00a0Nearly all of the protospacer integration events in the target plasmid appear to be one-ended (transfer of only one strand), with integration being rapidly reversed by disintegration to give covalently closed plasmid molecules. Integration-disintegration requires the target site, the protospacer, and the functional Cas1-Cas2 complex. The strand transfer reaction is performed by the Cas1 active site. The nicked strand resulting from protospacer integration is not impeded from rotation before nick closure. As a result, a relaxed distribution of plasmid circles is formed by disintegration.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The image of the gel panel shown in Figure 1F (electrophoresis done in the presence of 0.4 \u03bcg/ml chloroquine) is reproduced here. (B) The densitometric tracings of individual DNA bands in each lane are shown in the panels below. The tracings for lanes 7 and 8 are enlarged, and the centers of their distributions are marked by the dashed lines.\n\nCrystal structures of Cas1, Cas2 proteins and of Cas1-Cas2 complexes (Nu\u00f1ez et al., 2015b; Wang et al., 2015; Xiao et al., 2017; Ka et al., 2018; Ka et al., 2016), as well as cryo-electron microscopy (cryo-EM) structures of Cas1-Cas2-Csn2 complexes (Wilkinson et al., 2019), are consistent with the transposition mechanism of protospacer integration. However, they also raise a number of intriguing questions. Are the adaptation steps\u2014pre-spacer recognition, its processing into protospacer, and protospacer insertion into the CRISPR locus\u2014carried out by the same complex, perhaps in coordination with bacterial helicase/nuclease proteins\u00a0(Amitai and Sorek, 2016; Dillingham and Kowalczykowski, 2008; Levy et al., 2015; Kim et al., 2020)? Or, are processing and insertion performed by separate complexes in spatially and/or temporally distinct steps? Does in vitro integration of a pre-processed protospacer by Cas1-Cas2 fully recapitulate the features of the in vivo reaction?\n\nHere, we probe the mechanism of S. pyogenes (Spy) Cas1-Cas2 catalyzed integration in vitro. We show that partial (one-ended) integration is the most common reaction product. Attempts by Cas1-Cas2 to complete protospacer insertion by the integration of the second strand are most often accompanied by the reversal of integration (disintegration) of the first strand. As a result, complete integration of a protospacer into the target site is exceedingly rare. Nevertheless, the incomplete intermediates formed by disintegration may be rescued via repair pathways known to operate during DNA transposition. We conclude that disintegration is an intermediate step in at least one mode of integration, which may be accomplished by more than one pathway.\n\n## Results\n\n### Protospacer insertion into a nominal CRISPR locus present in a supercoiled plasmid\n\nThe in vitro insertion of a protospacer into a target site by the Spy Cas1-Cas2 proteins (Wright and Doudna, 2016) is inefficient, suggesting that the system may not fully represent the in vivo reaction. It may be limited by missing accessory components or because it is uncoupled from preceding DNA processing steps. We reexamined this reaction using a negatively supercoiled plasmid harboring the target site as \u2018leader-repeat-spacer\u2019 (Figure 1A,B).\n\nThe prominent outcome was the conversion of the supercoiled plasmid into a relaxed distribution (Figure 1C,D). The formation of a spacer integrant joined to the leader-proximal repeat end (L-R) on one strand and the spacer-proximal repeat end on the other (R-S) was barely detectable. Only a fraction of the product migrated as a nicked circle expected for a complete protospacer integration event or semi-integration events at either the L-R or R-S junction (Figure 1C,D). We confirmed the presence of the protospacer in the \u2018nicked\u2019 plasmid band by labeling it with Cy5 (Figure 1\u2014figure supplement 1A). By contrast, the Cy5-labeled protospacer was not inserted into the relaxed plasmid. Supercoil relaxation by Cas1-Cas2 required the CRISPR locus to be present in the target plasmid, and was dependent on the protospacer (Figure 1\u2014figure supplement 1B,C). Optimal reaction occurred at 4:1 and 2:1 molar ratios of Cas1:Cas2, with increasing Cas2 inhibiting the reaction mildly (Figure 1C). These results are consistent with previous biochemical and structural data suggesting (Cas1)4-(Cas2)2 as the active insertion complex, with Cas1 performing the catalytic steps of protospacer strand transfer to the CRISPR locus (Nu\u00f1ez et al., 2015b; Wang et al., 2015;\u00a0Figure 1\u2014figure supplement 1B\u2013D and accompanying Supplementary Text S1).\n\nThe predominance of the relaxed (closed circular) plasmid over the \u2018nicked\u2019 plasmid in the product indicates that the Cas1-Cas2 complex fails to complete protospacer integration in most cases. The major in vitro activity of Cas1-Cas2 is the Sisyphean reversal of semi-integration events (disintegration) mediated by the 3\u2032-hydroxyl exposed next to the integration junction.\n\n### Topological features of the Cas1-Cas2 reaction in supercoiled plasmids\n\nWe employed topological analyses to address potential structural distortions of target DNA induced by Cas1-Cas2 during protospacer integration (Nu\u00f1ez et al., 2015b; Wang et al., 2015; Xiao et al., 2017). We probed linking number changes (\u0394Lks) accompanying Cas1-Cas2-mediated integration-disintegration in a supercoiled target plasmid and T4 ligase-mediated strand closure in the nicked form of the same plasmid with or without bound Cas1-Cas2. Provided the Cas1-Cas2-induced topological stress within a target site is stable throughout the reaction, it will be preserved in the plasmid topoisomers formed by integration-disintegration (Figure 1B,C). In principle, the target topology in a Cas1-Cas2-bound nicked plasmid may also be captured by resealing the nick with DNA ligase.\n\nDNA relaxation by Cas1-Cas2 occurred progressively, although not in a regular stepwise fashion (Figure 1D). The disappearance with time of the faster-migrating bands formed early in the reaction, and the corresponding increase in the more relaxed distribution, is consistent with more than one \u2018semi-integration-disintegration\u2019 event occurring in the same plasmid molecule. The relaxation pattern was distinct from a topoisomerase I-generated ladder (\u0394Lk=+1) (Figure 1E), suggesting that the broken strand goes through multiple rotations before it is resealed.\n\nIntegration-disintegration by Cas1-Cas2 and nick closure by T4 DNA ligase in the absence of Cas1-Cas2 resulted in similar, but not identical, plasmid topoisomer distributions (Figure 1\u2014figure supplement 1E). The slight shift between the centers of the two distributions is consistent with supercoiling strain (writhe or twist) being sequestered by Cas1-Cas2 interaction with DNA. However, the possibility that relaxation by Cas1-Cas2 had not reached equilibrium cannot be ruled out. The relaxed plasmid topoisomers formed by ligation (without bound Cas1-Cas2) reflect differences in twist or writhe in individual DNA molecules due to thermal fluctuations. As the gel fractionation did not include an intercalating agent, the position of a band below the slowest migrating fully relaxed form (\u0394Lk=0) indicates only its absolute deviation from the relaxed state. A molecule with \u0394Lk=+1 (positively supercoiled) and one with \u0394Lk=\u22121 (negatively supercoiled) would show the same migration.\n\nNext, we analyzed the integration-disintegration and nick ligation reactions by separating DNA topoisomers in the presence of chloroquine. Unwinding of the double helix by the intercalator introduces compensatory positive supercoils in covalently closed circular molecules. Each topoisomer is separated from its nearest neighbors (migrating above and below) by one supercoil, the faster migrating one being more positively supercoiled. Strand sealing in the nicked plasmid was performed by T4 ligase without added factors (Figure 1F; lane 3) or after pre-incubation with the indicated Cas proteins and/or the protospacer (Figure 1F; lanes 4\u20137). Nearly identical topoisomer distributions were obtained after ligation in the absence of Cas1-Cas2 (Figure 1F; lane 3) or in the presence of either Cas1-Cas2 (Figure 1F; lane 5) or the catalytically inactive dCas1-Cas2 (Figure 1F; lane 6). Addition of protospacer by itself (Figure 1F; lane 4) or together with dCas1-Cas2 (Figure 1F; lane 7) to the ligase reaction did not alter this distribution. The topoisomer distribution of the Cas1-Cas2 plus protospacer treated supercoiled plasmid (Figure 1F; lane 8) was more negatively supercoiled (\u0394Lk between \u22121 and \u22122) than that obtained from nick closure in the presence of dCas1-Cas2 and protospacer (Figure 1F; lane 7) (Figure 1\u2014figure supplement 2).\n\nThe above results suggest that Cas1-Cas2 either stably constrains local negative supercoiling when bound to a target site in a supercoiled plasmid (without, however, impeding free rotation of the strand nicked by Cas1), or has had insufficient time to effect complete plasmid relaxation. For a target site present in a nicked plasmid, the Cas1-Cas2-induced topological stress is presumably dissipated via the nick before being sealed off by ligation. The observed \u0394Lk between the Cas1-Cas2 relaxed and T4 ligase sealed plasmid distributions (Figure 1F; Figure 1\u2014figure supplement 2) is consistent with the unwinding of a little more than one DNA turn within the target sequence during protospacer integration. This torsional strain may promote the formation of the repair-ready intermediate in which single-stranded repeat sequences flank the inserted protospacer (Figure 1A).\n\n### Protospacer insertion into a linear target: Effects of Csn2 and Cas9 on integration/disintegration\n\nPrevious studies demonstrated the\u00a0semi-integration of a protospacer into a linear DNA target, and indirectly suggested full integration (Wright and Doudna, 2016). The effect of DNA topology on the disintegration reaction could account for the apparent difference in the activities of supercoiled and linear targets in integration. In order to characterize the integration steps in further detail, we turned to reactions with linear substrates (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig2-v1.jpg)\n\n**Figure 2.:** (A) The protospacer sequence, with the double-stranded region underlined, is shown at the top. In the schematics, the protospacer (32P-labeled at the 5\u2032-end; asterisk) and the linear target site are color-coded as in Figure 1. The labeled products of integration at the L-R and R-S junctions are predicted to be 89 nt and 81 nt, respectively. (B\u2013E) Reactions were performed using the indicated proteins, the protospacer labeled on the top or bottom strand and the unlabeled target. For all reactions, Cas1:Cas2 molar ratio was held at 2:1. The numbers above individual lanes against Csn2 or Cas9 indicate their molar ratios to Cas1. In (D and E), the molar ratio of Csn2:Cas1 was 1:1. The reactions were analyzed by electrophoresis in 12% denaturing polyacrylamide gels, and bands were visualized by phosphorimaging. Only the portions of the gel containing the relevant products and the unreacted protospacer are shown here. The markers in lane M are synthetic oligonucleotides identical in sequence to the predicted integration products. IP = integration product;\u00a0PS = protospacer.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Integration reactions containing the indicated proteins were carried out and analyzed as described in Figure 1 and Figure S1. In all reactions, Cas1:Cas2 molar ratio was kept at\u00a02:1. The numbers above the lanes are the molar ratios of Csn2 or Cas9 relative to Cas1. The reactions in (C) contained a\u00a01:1 molar ratio of Cas1:Csn2. N = nicked plasmid; PS =\u00a0protospacer;\u00a0SC = supercoiled plasmid; SC-d = supercoiled plasmid dimer.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The schematics of the protospacer, the linear target, and the predicted products of integration are similar to those in Figure 2. In the nicked target, the nicks were placed three nucleotides from the repeat, within the leader and the spacer on the top and bottom strands, respectively. The leader-repeat and repeat-spacer sequences spanning the nicks (short vertical arrows) are spelled out. The leader, repeat, and spacer bases are in red, yellow, and blue fonts, respectively. The normal target phosphodiester bonds for integration are shown as \u2018p\u2019. The two phosphodiester bonds neighboring each on the 5\u2032 side are indicated by \u2018p\u2019. (B, C) Cas1-Cas2 reactions with the linear (B) and the nicked linear (C) target sites were analyzed as described in Figure 2. Supplementary\u00a0Text S2. The uncharacterized doublet bands migrating above the 81\u00a0nt and 89 nt products could indicate integrations at phosphodiester positions marked as \u2018p\u2019 in the nicked target. The expected product lengths for the upper doublet are 90 nt and 91 nt, and those for the lower doublet are 82 nt and 83 nt. The slightly uneven spacing of the 82 nt and 83 nt bands from the 81 nt band is likely due to the size difference in the additional base(s) they harbor. The 82 nt and 81 nt products differ by an extra \u2018A\u2019 gained from the spacer. The second additional base present in the 83 nt product is the smaller \u2018C\u2019.\u00a0IP = integration product;\u00a0PS =\u00a0protospacer.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The sequences of the native protospacer and the PAM-containing pre-spacer mimics derived from it are shown in the top row. In their schematic representations below, the 5\u2032-end label on the top or bottom strand is shown by the asterisk. The linear target and the integration products formed from the native protospacer are schematically diagrammed. In the sequence of the native protospacer (green font), the double-stranded region is underlined. The additional sequences of the pre-spacer mimics are shown in lower case or in red font. Two overlapping PAM sequences present on the top strand are bracketed. (B\u2013E) Integration assays were performed using the indicated proteins and the protospacer or pre-spacer mimics containing the 5\u2032-end label on the top or bottom strand. Supplementary\u00a0Text S3. In vitro, Cas1-Cas2 reactions lack PAM-specific strand cleavage and orientation-specific strand transfer. In principle, the orientation problem of integration may be circumvented if processing occurs only when two appropriately spaced PAM sequences are recognized on the two strands of the pre-spacer. In this case, insertion in either orientation would give immunity. For a PAM of the type 5\u2032NGG3\u2032, a phage or plasmid genome large enough to be potentially harmful to the host bacterium is likely to contain at least one, and probably several, functional protospacers.\u00a0IP = integration product. M = marker lanes;\u00a0PAM\u00a0=\u00a0protospacer adjacent motif;\u00a0PS =\u00a0protospacer; PSM =\u00a0pre-spacer mimic.\n\nIn accordance with previous findings, we observed insertions of the 5\u2032-end-labeled protospacer at the leader side (L-R junction) (89 nt band) or at the spacer side (R-S junction) (81 nt band) (Figure 2B). L-R and R-S insertions were approximately equally prevalent, although L-R insertions were more abundant at very short time points. This is consistent with semi-integration events initiated at L-R being converted to full-integration events by R-S insertion, as was suggested previously (Wright and Doudna, 2016). However, alternative explanations cannot be ruled out (see below).\n\nUnlike orientation-specific protospacer integration in vivo, in vitro Cas1-Cas2 reactions showed no strand-specificity (Figure 2B). This bias-free insertion of the top or bottom strand from the protospacer was unchanged by the addition of Csn2 or Cas9 or both to the reactions (Figure 2C\u2013E). These proteins, singly or in combination, also failed to stabilize protospacer integrations in the supercoiled plasmid target (Figure 2\u2014figure supplement 1). Instead, they inhibited plasmid relaxation. Inhibition could occur at the level of integration per se or strand rotation during integration-disintegration.\n\nIn order to address whether the products of integration could be stabilized by preventing potential disintegration, we used target sites with nicks placed within the leader and the spacer 3 nt away from the normal integration sites (Figure 2\u2014figure supplement 2). The short 3 nt product (5\u2032GAG-OH3\u2032 or 5\u2032GCA-OH3\u2032) formed during integration would not be stably hydrogen-bonded to the complementary strand and is expected to diffuse away from the reaction center. The increased spacing of the 3\u2032-hydroxyls of the shortened leader or spacer from the integration junction would block or curtail disintegration.\n\nThe nick-containing target yielded, in addition to the 81 nt and 89 nt products expected from the standard linear target (Figure 2\u2014figure supplement 2A,B), product bands migrating slightly higher than each (Figure 2\u2014figure supplement 2A,C). These extra bands, though uncharacterized, are consistent with potential integration events at the two phosphodiester positions between an authentic phosphodiester target and its proximal nick (Supplementary Text S2 in Figure 2\u2014figure supplement 2). The flexibility afforded by the nick could presumably facilitate these aberrant integration events. The amount of the integration product (normal plus aberrant) was increased two- to threefold in comparison to the normal product formed from the target without a nick. Although disintegration by the leader or spacer 3\u2032-hydroxyl is reduced in the nicked target site, water-mediated disintegration could still be an impediment to stable integration (see below). The overall yield of disintegration could thus be limited.\n\nThe similar amounts of L-R and R-S insertion product bands formed in the linear target (Figure 2B\u2013E) may arise from equal and independent one-ended insertions in the same target or in separate targets, or from completion of two-ended insertions within individual targets. A third possibility is that, within an intermediate containing a semi-integrant, integration of the second strand is coupled to the\u00a0disintegration of the first. In this case, the one-ended integrant will oscillate between the L-R and R-S junctions. As a result, the net integration events at L-R and R-S will be equal at a\u00a0steady state. Their absolute amounts would be dictated by how strongly they are destabilized by disintegration under a given set of reaction conditions. The difference between nearly zero and readily detectable integration in supercoiled versus linear targets can be accounted for by this interpretation.\n\n### Cas1-Cas2 activity on pre-spacer mimics carrying the PAM sequence\n\nThe strand cleavage and strand transfer steps of protospacer insertion at the CRISPR locus must engender safeguards against self-targeting of the inserted spacer as well as its non-functional orientation. However, no strand selectivity is seen in the in vitro Cas1-Cas2 reactions with already processed protospacers (Figure 2; see also Figure 3). By coordinating PAM-specific cleavage of a pre-spacer with the\u00a0transfer of this cleaved strand to the L-R junction, the inserted spacer will be in the correct orientation to generate a functional crRNA. To examine this possibility, we tested the integration characteristics of pre-spacer mimics containing the PAM sequence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematics of the native and modified versions of the protospacers (labeled at the 5\u2032-ends on both strands; asterisks) and target sites used for integration assays are shown. (B) The reactions were performed and analyzed as described in Figure 2 (see Figure 3\u2014figure supplement 1 for uncropped gel images). (C) The expected integration products from the various protospacer and target site pairings are summarized. The (T/T)0 designation refers to the unmodified protospacer and target. The observed products from the reactions shown in (B) are in bold green font; those not detected or detected in extremely small amounts are in normal red font. IP = integration product.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The schematic diagrams of the 5\u2032-end-labeled protospacers and target sites are arranged as in Figure 3A. (B) A full view of the source gel for the data for Figure 3B is shown. Phosphorimaging time was extended relative to that in Figure 3B to reveal weak reaction products at the R-S junction, IP(R-S), in the modified targets. For the unmodified protospacer (T/T)0, IP(R-S) was now readily detectable in the (T/T)15 target (72 nt; lane 5). Even weaker R-S reaction was seen in the (T/T)10-target (67 nt; lane 4) and the (T/T)5 target (62 nt; lane 3). Bands for IP(R-S) in the (T/T)15 target were also visible for the (T/-)5-protospacer (77 nt and 72 nt; lane 13) and the (T/-)10-protospacer (82 nt and 72 nt; lane 17). For the (T/-)5-protospacer and the (T/T)5 or (T/T)10-target combinations, IP\u00a0(R-S) was barely above background (67 nt and\u00a062 nt; lane 11, and 72 nt and\u00a067 nt; lane 12). In all reactions with the modified target sites, the L-R junction far outmatched the R-S junction for insertion efficiency. The bands labeled as X,\u00a0Y, and Z are explained in Supplementary\u00a0Text S4 (see below). Unexpected co-migrating sets of bands from reactions of individual protospacers with the modified and unmodified target sites, as well as bands that were independent of Cas1-Cas2, are marked with a \u2018?\u2019 symbol. These were potential contaminants from the oligonucleotides used for protospacer assembly. The incubation mixtures run in lanes C1, 1, and C2 contained the labeled protospacer (PS(T/T)5 in C1; PS(T/T)0 in 1; and PS(T/-)10 in C2) together with the unmodified target (T/T)0 but no Cas1-Cas2. The C1 and C2 control lanes were not included in the gel panels of Figure 3B. Lanes 1\u201317 here correspond to lanes 1\u201317 of Figure 3B. Supplementary\u00a0Text S4. The bands X, Y, and Z were formed only in reactions containing the modified (T/T)n targets and were dependent on Cas1-Cas2. Their relative spacing (depending on the sizes of the protospacer strands) suggests a unique site of insertion common to all the targets. For example, the smallest band X was formed from the native (T/T)oprotospacer (with 26 nt on either strand) in all three of the modified targets, (T/T)5, (T/T)10,\u00a0and (T/T)15 (lanes 3\u20135). The mobility of the fainter band Y formed from the (T/T)5protospacer (with 31 nt strands) was consistent with a 5 nt increase in length compared to X (lanes 7\u20139). With the (T/-)5protospacer (strand lengths of 31 nt and 26 nt), both X and Y were formed (lanes 11\u201313). And with the (T/-)10protospacer (strand lengths of 36 nt and 26 nt), X and Z were formed (lanes 15\u201317), the migration of Z suggesting it to be longer than X and Y by 10 nt and 5 nt, respectively. Taken together, X, Y, and Z appear to be formed by insertions of the 26 nt, 31 nt, and 36 nt protospacer strands, respectively, at the leader-proximal junction between the Tn-insertion and the repeat sequence on the bottom strand. The sizes of the X, Y, and Z bands would then be 47 nt, 52 nt, and 57 nt, respectively, and match their observed gel mobilities. The double-strand/single-strand junction may mimic the DNA conformation organized by Cas1-Cas2 at the L-R or R-S junction to promote protospacer insertion during the native reaction.\u00a0IP = integration product;\u00a0PS =\u00a0protospacer.\n\nThe inclusion of PAM or PAM and its complement in the integration substrates (Figure 2\u2014figure supplement 3A) did not confer strand specificity on reactions with Cas1-Cas2 alone or with added Csn2, Cas9, or both (Figure 2\u2014figure supplement 3B\u2013E). Optimal integration by Cas1-Cas2 occurred with the 26 nt strands of the native protospacer with their 4 nt 3\u2032-overhangs (Figure 2\u2014figure supplement 3B\u2013E; lanes 2). The pre-spacer mimics containing one or both >26 nt strands had reduced integration competence (Figure 2\u2014figure supplement 3B\u2013E; lane 4). Even here, the 26 nt strand with the 4 nt overhang (Figure 2\u2014figure supplement 3C; lane 4) was preferred in integration over the longer 29\u00a0nt PAM-containing strand (Figure 2\u2014figure supplement 3D; lane 4) or the 33 nt PAM complement-containing strand (Figure 2\u2014figure supplement 3E; lane 4). In contrast to the processed protospacer that gave nearly equal integration at L-R and R-S, IP(L-R)\u2248IP(R-S) (Figure 2\u2014figure supplement 3B\u2013E; lane 2), the longer pre-spacer mimics were inhibited in integration at R-S, IP(L-R)>IP(R-S) (Figure 2\u2014figure supplement 3B\u2013E; lane 4). This is the expected outcome if the initial strand transfer occurs at L-R, and a ruler-like mechanism orients the reactive 3\u2032-hydroxyl for the second strand transfer at R-S. This sequential two-step scheme for protospacer integration is consistent with\u00a0the results shown in Figure 3 as well. These reaction features of the pre-spacer mimics were not modulated by Csn2 or Cas9 (Figure 2\u2014figure supplement 3B\u2013E; lanes 6 and 8), although Csn2+Cas9 was inhibitory to integration (Figure 2\u2014figure supplement 3B\u2013E; lane 10).\n\nThere is no evidence for integration accompanying PAM-specific cleavage in our in vitro reactions. In the E. coli CRISPR system, Cas1-Cas2 is apparently sufficient for PAM-specific cleavage in vitro (Wang et al., 2015). By contrast, in the S. pyogenes system, cleavage is attributed to Cas9 or as yet uncharacterized bacterial nuclease(s) (Jakhanwal et al., 2021). The mechanism for generating an integration-proficient and orientation-specific protospacer, which may not be conserved among CRISPR systems, is poorly understood at this time (Supplementary\u00a0Text S3 in Figure 2\u2014figure supplement 3).\n\n### Sequential and coordinated strand transfer during protospacer insertion by Cas1-Cas2\n\nCurrent evidence suggests independent recognition of L-R and R-S junctions by Cas1-Cas2 but initiation of integration at L-R (Wright and Doudna, 2016). We examined the order of strand transfer between the two junctions using modified protospacers and target sites.\n\nThe modified protospacers contained base insertions either in both strands (5\u2032T3\u2032/3\u2032T5\u2032)n or in only one strand (5\u2032T3\u2032/-)n, with no additional changes from the native sequence (Figure 3A). As a result, the length of a modified strand was increased from the normal 26 nt by the number of inserted Ts. However, the 22 bp double-stranded region and the 4 nt 3\u2032-overhangs at either end were retained as in the native protospacer. In the modified target sites, (5\u2032T3\u2032/3\u2032T5\u2032)n insertions replacing a central 16 bp segment of the repeat were flanked on either side by 10 bp each of the leader-proximal and spacer-proximal repeat sequences. Consequently, the repeat lengths varied from 25 nt to 30 nt and 35 nt on each strand in the individual insertion derivatives (compared to 36 nt fully complementary strands in the native target). Based on the results from prior studies (Wright and Doudna, 2016; Wei et al., 2015b), the L-R and R-S junctions of the modified target sites were expected to be integration-competent. Furthermore, the premise that the inherent structural pliability of (T/T)n or (T/-)n would at least partly compensate for changes in the absolute lengths of the Cas1-Cas2 substrates was borne out by the experimental results (Figure 3B,C).\n\nThe native (T/T)0-protospacer as well as the ones carrying T-insertions, (T/T)n or (T/-)n, gave the predicted integration products at the L-R and R-S junctions with the native (T/T)0-target site (Figure 3B; lanes 2, 6, 10, and 14). As the two strands of a (T/-)n-protospacer were unequal in length, their integration at each junction resulted in two products with different gel mobilities (four bands in lanes 10 and 14). For the (T/T)5, (T/T)10,\u00a0and (T/T)15-targets, integration occurred almost exclusively at the L-R junction (Figure 3B; lanes 3\u20135, 7\u20139, 11\u201313, and 15\u201317). The corresponding products at the R-S junction were at or below the levels of detection (Figure 3B; Figure 3\u2014figure supplement 1). Extended phosphorimaging brought to light weak bands shorter than the predicted authentic integration products (Figure 3\u2014figure supplement 1). Although they are not directly relevant to our analysis, their possible origin is considered in Supplementary Text S4 in Figure 3\u2014figure supplement 1.\n\nReactions of the modified protospacers with the modified target sites unveil a strict hierarchy in the choice of the L-R and R-S junctions during protospacer acquisition. Figure 3C differentiates the experimentally observed products from the undetected (or highly underrepresented) potential products. The strong L-R preference could occur at the level of target recognition (which then triggers catalysis) or at the level of catalysis (with no preferential recognition of either the L-R or the R-S junction). Structural snapshots of the E. faecalis Cas1-Cas2 integration complex suggests that, following a stochastic L-R/R-S search, preferential interaction with the L-R junction is established (Wang et al., 2015). Catalysis of the initial one-ended insertion at this target site follows. Within this intermediate, a ruler-like mechanism may be used to promote R-S junction interactions that culminate in the second strand transfer. When the search fails to identify an appropriately positioned R-S, as would be the case with the modified targets, the reaction is limited almost entirely to the L-R junction.\n\n### Protospacer insertion into half-target sites\n\nOne question raised by the results from the modified target substrates is whether the (L-R)-before-(R-S) rule in protospacer strand transfer is manifested only when both these junction sequences are present in cis within a target site. Previous mutational analysis suggests that either the L-R or the R-S junction is used equally well for integration when only one of them is functional (Nu\u00f1ez et al., 2015b; Wang et al., 2015). We now assayed the integration of a protospacer into linear L-R and R-S half-target sites to test R-S functionality in the absence or presence of L-R (Figure 4 and Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig4-v1.jpg)\n\n**Figure 4.:** The protospacer labeled with 32P at its 5\u2032-ends and the linear full- and half-target sites are diagrammed at the top. The minimal L-R or R-S half-site contained 18 bp of the L-proximal or R-proximal repeat sequence, respectively (Figure 4\u2014figure supplement 1). Each half-site is the product of splitting a full-site into two exactly at the center of the 36 bp repeat. Reactions contained the labeled protospacer together with the indicated minimal L-R or R-S half-sites, or half-sites containing longer repeat sequences (+4 or +6 bp) (Figure 4\u2014figure supplement 1), as well as combinations thereof. Reactions were analyzed as described in Figures 2 and 3. The lanes C1 and C2 denote the control reaction with a normal target site containing the full-length repeat. The predicted integration products from the individual and mixed half-target site reactions are listed at the bottom. The experimentally observed products are distinguished from the undetected ones by the bold green and normal red fonts, respectively. IP = integration product;\u00a0PS = protospacer.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The complete sequences of the full- and half-target sites used for the assays shown in Figure 4 are listed. The leader (L), repeat (R), and spacer (S) sequences are shown in red, yellow, and blue fonts, respectively. The sequences present to the left of L are not relevant to the reaction.\n\nIn reactions with the individual L-R and R-S half-sites, insertion products were obtained with either half-site alone (Figure 4; lanes 1\u201314). Consistent with the independent recognition of the L-R and R-S junctions by the Cas1-Cas2 complex, an R-S half-site was co-dominant with the \u2018minimal\u2019 L-R half-site (containing 18 bp of the repeat; Figure 4\u2014figure supplement 1) when both were present in the same reaction (Figure 4; lanes 15\u201318). However, the\u00a0extension of the repeat segment in the minimal L-R half-site by 4 bp, L-R(+4) (Figure 4\u2014figure supplement 1), restored L-R dominance to the same degree as that displayed by the modified full linear targets (Figure 4; lanes\u00a019\u201322). While the insertion product was formed from L-R(+4), none was detected from either the minimal R-S half-site (containing 18 bp of the repeat; Figure 4\u2014figure supplement 1) or the R-S(+6) half-site (containing additional 6 bp of the repeat; Figure 4\u2014figure supplement 1).\n\nThus, the hierarchical dominance of L-R seen in the full-target sites (Figure 3B) is lost when R-S is physically unlinked from the minimal L-R. However, L-R(+4) is dominant over R-S or R-S(+6) even in the absence of linkage. The extent of repeat sequence present adjacent to the L-R junction and/or specific repeat sequences distal to this junction may contribute to the priority in target site recognition and order of strand transfer during spacer acquisition. It is possible that the integration reaction occurs within a Cas1-Cas2 complex harboring a non-covalently dimerized pair of half-sites, (L-R)2, (R-S)2,\u00a0or (L-R)-(R-S), and the L-R(+4) dominance is manifested in this context.\n\n### Apparent integration-disintegration antagonism during spacer acquisition\n\n\u2018Cut-and-paste\u2019 transposition during integration involves an unusually short transposon (the protospacer) and a particularly long target site (the CRISPR repeat). Their nearly matched sizes may partly relieve the steric impediments to insertion posed by DNA persistence length. Nevertheless, the strain within the strand transfer intermediate could potentially trigger disintegration mediated by the 3\u2032-hydroxyl exposed at the leader or spacer end. Disintegration may offer a protective mechanism to prevent off-target integration events that could imperil the integrity of the bacterial genome (Wright and Doudna, 2016). The conformational dynamics of authentic integration at the CRISPR locus may displace the 3\u2032-hydroxyl from the protospacer-repeat junction or misorient it with respect to the scissile phosphate. We investigated how disintegration might influence the second step of protospacer integration by taking advantage of substrates that mimic a semi-integrated protospacer.\n\nThe reactions were carried out in substrates assembled by hybridizing four oligonucleotides to represent semi-integration at the L-R junction (Figure 5A). The 3\u2032-hydroxyl of the unintegrated protospacer strand would serve as the nucleophile for the second integration step. Similarly, the 3\u2032-hydroxyl of the \u2018leader strand\u2019, and potentially water, could provide the nucleophiles for the disintegration reaction. When the 5\u2032-end of the unintegrated protospacer strand was labeled, integration was observed at the R-S junction (81 nt band) (Figure 5A; lanes 2\u20136). The reaction was rapid and was nearly saturated within a minute under the conditions employed. Along with the 81 nt product, a smaller amount of the companion 89 nt product was also formed, whose yield showed a linear increase with time (Figure 5A; lanes 2\u20136). Formation of this minor product suggests that the phosphodiester bond at the L-R junction was restored by 3\u2032-hydroxyl-mediated disintegration in at least a subpopulation of the starting substrate molecules. This junction could then serve as the target site for strand insertion from a disintegrated protospacer. Consistent with this interpretation, labeling the 5\u2032-end of the leader strand revealed the 92 nt product expected for disintegration carried out by the leader 3\u2032-hydroxyl to re-form the L-R junction (Figure 5A; lanes 2\u2032\u22126\u2032). Strikingly, disintegration was more prominent than integration.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematics of semi-integrated protospacers at the L-R junction (top row) and the possible products formed from them by Cas1-Cas2 action (bottom row) are shown. The 32P-label was placed at the 5\u2032-end of the unintegrated protospacer strand or the leader strand to follow the second integration and disintegration events, respectively. (B) Integration of the 32P-labeled protospacer strand at the R-S junction was monitored in the indicated substrates. (C) Disintegration was assayed in the same substrates as in (B), except that the 32P-label was placed at the 5\u2032-end of the integrated protospacer strand. ddC = dideoxy C; DP = disintegration product;\u00a0IP = integration product;\u00a0PS =\u00a0protospacer;\u00a0SIP = semi-integrated protospacer.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The substrates for the standard protospacer integration reaction and those for the second strand transfer or the disintegration reaction from a semi-integrated protospacer are schematically illustrated at the top. The 5\u2032-end label (32P) placed on the protospacer strands (I), the unintegrated strand of a semi-integrated protospacer (II and III), or on the leader strand (IV) is signified by the asterisks. The integration products from a protospacer in a linear target site at the L-R junction (lane 2; 89 nt) and the R-S junction (lane 2; 81 nt) provide the reference frame for interpreting the product bands from the \u2018semi-integrated\u2019 substrates. The primary products from the L-R and R-S semi-integrated substrates were integrations of the second protospacer strand at the R-S junction (lane 4; 81 nt) and the L-R junction (lane 6; 89 nt), respectively. The weaker 89 nt (lane 4) and 81 nt (lane 6) bands are consistent with the reintegration of a protospacer (following its release by disintegration) at the L-R and R-S junctions, respectively. These junctions would be re-formed during disintegration mediated by the 3\u2032-hydroxyls of the leader and spacer strands, respectively. When the 32P-label was present at the 5\u2032-end of the leader strand, the prominent product was the resealed L-R junction (via disintegration) (92 nt; lane 8). The migration of the weaker band below in lane 8 (see also Figure 5A; lanes 2\u2032\u22126\u2032) is consistent with a size of 84 nt (Supplementary\u00a0Text S5 below). Its mobility difference from the 81 nt band (IP[R-S]) was more conspicuous in a longer run geI in which the labeled protospacer and leader strands were run off the gel bottom (lanes 9\u201311). Supplementary\u00a0Text S5. An 84 nt product is expected if the leader strand were to be transferred to the R-S junction on the opposite strand in an aberrant integration-like reaction. This reaction is formally similar to \u2018hairpinning\u2019 carried out by the Rag1-Rag2 recombinase/transposase and the transposases of the cut-and-paste transposons Tn5 and Tn10 (Bhasin et al., 1999; Kennedy et al., 1998; McBlane et al., 1995). Bringing the leader 3\u2032-hydroxyl in proximity to the R-S junction would require considerable distortion of the repeat DNA or its reconfiguration into a cruciform-like structure (Nu\u00f1ez et al., 2015a).\u00a0DP = disintegration product;\u00a0IP = integration product;\u00a0L = leader;\u00a0PS =\u00a0protospacer.\n\nAn unexpected product that migrates slightly slower than the 81 nt band was observed in reactions containing the 5\u2032-end label on the leader strand (Figure 5A; lanes 2\u2032\u22126\u2032). This product, which showed a steady increase with time, suggests the potential utilization of the leader 3\u2032-hydroxyl by Cas1-Cas2 in an integration-like reaction (Figure 5\u2014figure supplement 1 and associated Supplementary\u00a0Text S5). This uncharacterized product has no direct bearing on the possible functional link between integration and disintegration (see below and under \u2018Discussion\u2019).\n\nIn a substrate mimicking semi-integration at the R-S junction, Cas1-Cas2-promoted the second integration step at the L-R junction, yielding the expected 89 nt product (Figure 5\u2014figure supplement 1). Resealing of the R-S junction via disintegration mediated by the 3\u2032-spacer hydroxyl was also evident from the smaller amounts of the 81 nt product formed by the semi-integration of a released protospacer at R-S. Unlike the first strand transfer step, which obeys a strict order during protospacer insertion, the second strand transfer (and subsequent strand transfers) may proceed from L-R to R-S or R-S to L-R with roughly equal efficiency. The prominence of disintegration (DP; 92 nt) and the rapid kinetics of disintegration and the second integration at the R-S junction (IP(R-S); 81 nt) (Figure 5A) suggest that the two events are potentially coupled.\n\n### Water-mediated disintegration of a semi-integrated protospacer\n\nDisintegration from one of the semi-insertion sites (the L-R or the R-S junction) could produce a protospacer that is either free in solution or is concomitantly inserted at the other site. The coupling of integration to disintegration, consistent with their rapid saturation kinetics (Figure 5A), could be promoted by the conformational strain associated with orienting the reactive 3\u2032-hydroxyl for the second transfer step. We wished to test whether preventing the disintegration reaction at the L-R junction in the semi-integrated state would reduce integration at the R-S junction.\n\nWe attempted to block the disintegration competence of the leader strand in the substrate with the protospacer semi-integrated at the L-R junction by placing a terminal 3\u2032-dideoxy nucleotide, or by removing this strand altogether. Neither of these substrate designs eliminated or reduced the extent of integration at the R-S junction (81 nt band in Figure 5B). However, labeling the 5\u2032-end of the protospacer strand integrated at the L-R junction revealed that disintegration occurred even in the absence of the leader strand (Figure 5C).\n\nWater-mediated disintegration in the semi-integrated substrate could potentially assist the integration of the second protospacer strand in a coupled fashion. Disintegration efficiency of water alone (in the absence of the leader strand) was ~40% of that of the 3\u2032-hydroxyl and water combined (in the presence of the leader strand) (Figure 5C, compare lanes 2 and 4). When the leader strand carried a di-deoxy 3\u2032-end, there was some reduction (to ~70%) in water-mediated disintegration (Figure 5C; compare lanes 2\u2032 and 4\u2032), presumably due to steric interference. Such interference could be mitigated if, during a standard reaction, protospacer integration at the L-R junction is accompanied by the displacement or misalignment of the leader 3\u2032-hydroxyl. We note that water is ~50% as competent a nucleophile as the 3\u2032-hydroxyl for disintegration.\n\nThe 3\u2032-hydroxyl-mediated and water-mediated disintegration reactions differ in that the former rejoins L to R (or R to S) whereas the latter leaves open the strand nick between L and R (or R and S). Processing of such a nick by DNA repair enzymes has functional implications in protospacer acquisition (see Discussion).\n\n### Coupling between integration of the second strand and disintegration of the first\n\nTo better appreciate the extent of coupling between integration and disintegration, we modified the design of the semi-integrated state. The rationale was to join the integrated and unintegrated protospacer strands, so that the fate of both could be followed simultaneously.\n\nIn the \u2018trombone\u2019 substrates for testing coupled integration-disintegration (Figure 6; see also Figure 6\u2014figure supplement 1), one protospacer strand was integrated at the L-R junction. Furthermore, the 3\u2032-end of the spacer top strand was tethered to the 5\u2032-end of the unintegrated protospacer strand. Our reasoning that the 30 nt long flexible single-stranded tether (5\u2032T4(CT)10T63\u2032; ~240 \u00c5) should have no (or only minimal) effect on Cas1-Cas2 activity was upheld by experiments. The spacer in these substrates was truncated to contain only 10 bp abutting the repeat. The shortened spacer had no adverse effect on strand transfer of an untethered protospacer from the L-R to the R-S junction (Figure 6A; lanes 2 and 4).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig6-v1.jpg)\n\n**Figure 6.:** Schematics of the substrates used for the individual sets of assays (A\u2013C) are placed above the respective gel panels. The layout of the trombone substrates (B, C) from a perspective of the Cas1-Cas2-protospacer structure is shown in Figure 6\u2014figure supplement 1. (A) Integration reactions were performed in the two substrates that differed only in their spacer lengths. The truncated spacer (10 bp long) lacked the 17 bp distal to the R-S junction. (B, C) The substrate configurations were similar for the two reaction sets, except for the position of the 32P label. In (B), the integrated protospacer strand carried the label at the 5\u2032-end (red asterisk). In (C), one labeled nucleotide (shown by the asterisk) was added to the 3\u2032-end of the bottom strand. DP = disintegration product;\u00a0IP = integration product; IP* = integration product coupled to disintegration; IP** = integration product uncoupled from (but preceded by) disintegration;\u00a0PS = protospacer; PS (T) = protospacer (tethered); LRS (B) = Substrate bottom strand. Lanes 7\u20139 in (C), oligonucleotide length markers.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The schematic representation of a typical trombone substrate (see Figure 6B,C) is reproduced here (L = leader; R = repeat; S = spacer; PS = protospacer). The truncated spacer of the target DNA (containing 10 bp adjacent to the repeat) is linked to the 5\u2032-end of the unintegrated protospacer strand by the 5\u2032T4(CT)10T63\u2032 tether. (B) This idealized structural perspective of (A) shows the Escherichia coli Cas1-Cas2 complex with a bound protospacer DNA (Wang et al., 2015) (PDB 5DLJ), one strand of which is integrated at the L-R junction. The target DNA (color-coded as in A) is an add-on, and its placement with respect to the protospacer is arbitrary. The covalent linkage of the protospacer strand to the repeat DNA at L-R was manipulated using Adobe Illustrator. The single-strand tether between the spacer and the 5\u2032-end of unintegrated protospacer strand in effect covalently connects the two protospacer strands.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The observed reaction products (Figure 6B and C) are schematically illustrated, and the steps involved in their formation are indicated. The unlabeled leader strand is omitted from the figures of the products. The 32P-label (5\u2032-end; red asterisk) in the substrates in (A) is positioned to identify protospacer integration at the R-S junction without its disintegration from the L-R junction. In addition, disintegration of the protospacer from the L-R junction (which may or may not be coupled to integration at the R-S junction) is also reported by these substrates. The labeling position in (B) (one 32P-labeled nucleotide at the 3\u2032-end; asterisk) distinguishes integration events at R-S occurring with or without disintegration at L-R. In principle, disintegration and integration may occur in a concerted or sequential manner. The sequential reaction is reported by the 82 nt labeled product, signifying the initial release of the protospacer strand inserted at L-R and its subsequent insertion at R-S.\n\nThe predicted products of the second integration event in a trombone substrate would differ by 26 nt (the size of the integrated protospacer strand), depending on whether it is associated with disintegration or not. Labeling the 5\u2032-end of the protospacer strand integrated at L-R can only reveal integration at R-S without disintegration at L-R. The size of this product analyzed on a denaturing gel will be 183 nt (26 nt + 26 nt protospacer + 36 nt + 36 nt repeat + 10 nt spacer + 30 nt tether + 11 nt leader + 8 nt extension to leader). If integration at R-S were to be accompanied by disintegration at L-R, the predicted 157 nt product would be invisible as the release of the spacer strand (26 nt) results in the loss of the radioactive label as well. Labeling the 3\u2032-end of the bottom strand containing the R-S junction target site (by adding one \u03b1-32P-labeled nucleotide in a Klenow polymerase reaction) would reveal integration events coupled to disintegration (158 nt) or uncoupled from it (184 nt). Detailed schematic illustrations of the possible products from the 5\u2032- and 3\u2032-end-labeled substrates and their predicted sizes are given in Figure 6\u2014figure supplement 2.\n\nFormation of the 5\u2032-labeled 183 nt product (signifying no disintegration) was weak, though detectable, for the three substrates tested (Figure 6B; lanes 2, 4, and 6; Figure 6\u2014figure supplement 2A). Two of these contained a leader strand (one with a hydroxyl and the other with a deoxy 3\u2032-end), and the third lacked this strand. At the same time, disintegration mediated by the leader 3\u2032-hydroxyl or by water was readily observed (26 nt; Figure 6B; lanes 2, 4, and 6; Figure 6\u2014figure supplement 2A). For all three substrates labeled at the 3\u2032-end, the shorter product (158 nt) exceeded the longer one (184 nt) (Figure 6C; lanes 2, 4, and 6; Figure 6\u2014figure supplement 2B). The difference was eight- to tenfold when the leader strand carried a 3\u2032-hydroxyl (Figure 6C; lane 2) or had a deoxy 3\u2032-end (Figure 6C; lane 4), and >15-fold when the leader strand was absent (Figure 6C; lane 6). The maximum yield of the 158 nt product in the absence of a leader strand suggests that the second integration is more efficient when disintegration is performed by water rather than by the 3\u2032-hydroxyl.\n\nSeveral features of the protospacer strand transfer steps are revealed by the trombone substrates (Figure 6B,C; see also Figure 6\u2014figure supplement 2). First, integration of the second strand without disintegration of the first is quite infrequent. Second, disintegration of a protospacer from the L-R junction followed by its integration at the R-S junction in a two-step process is also rare. The IP(R-S)** band (82 nt; Figure 6C) is the result of such a reaction, namely, insertion of the 26 nt protospacer strand released from the L-R junction into the R-S junction. Thus, integration of the second strand and disintegration of the first are most often concerted events, and two-ended insertion events by the Cas1-Cas2 complex seldom occur in vitro. Finally, water being better at promoting disintegration coupled integration than the 3\u2032-hydroxyl is significant. The strand nick left unsealed during the water-mediated reaction would permit seemingly abortive intermediates to be processed by bacterial DNA repair systems into successful spacer insertion (see Discussion). Thus, paradoxically, disintegration may be an important (but unappreciated) contributing factor in the adaption stage of CRISPR immunity.\n\n## Discussion\n\nCas1-Cas2-mediated adaptation is strongly conserved across CRISPR systems, but is less understood than the much more diverse interference mechanisms (Wiedenheft et al., 2012; Krupovic et al., 2017; Yosef et al., 2012; Jiang and Doudna, 2015; Mohanraju et al., 2016). Our analysis indicates that the integration by Cas1-Cas2 in vitro starts with the insertion of one protospacer strand at the L-R junction, and utilizes a ruler-like mechanism to attempt integration of the second strand at the R-S junction. However, a successful second integration event is most often associated with the\u00a0disintegration of the first one. We propose below plausible models for disintegration-promoted spacer acquisition that are accommodated by well-established DNA transposition mechanisms.\n\nTwo-ended protospacer integration, without intervening disintegration, is conceivable in vivo. A high-order adaptation complex in which Cas1-Cas2 is assisted by additional Cas proteins (e.g., Cas4, Csn2, and\u00a0Cascade/Cas9) and by bacterial factors (e.g., RecBCD and\u00a0AddAb) (Amitai and Sorek, 2016; Nu\u00f1ez et al., 2015a; Yosef et al., 2012; Heler et al., 2015; Wei et al., 2015a; Levy et al., 2015) may deter disintegration by coupling DNA processing to strand transfer without protospacer dissociation. Dynamic remodeling of the complex in conformation and/or subunit stoichiometry, as suggested by Cas1-Cas2-Csn2 cryo-EM structures (Wilkinson et al., 2019), could facilitate the individual reaction steps. However, if a pre-processed protospacer were to escape from the complex, it is still able to complete Cas1-Cas2-catalyzed, and disintegration-promoted, integration.\n\n### From invading DNA to spacer deposition at the CRISPR locus: Variations of a shared DNA transposition theme\n\nAn invading virus/plasmid DNA is processed by bacterial nuclease/helicase complexes into smaller sized fragments (pre-spacers), to be further processed by Cas proteins into protospacers suitable for integration at the CRISPR locus (Amitai and Sorek, 2016; Levy et al., 2015; Kim et al., 2020; Drabavicius et al., 2018; Kieper et al., 2018; Lee et al., 2018; Rollie et al., 2018; Shiimori et al., 2018). The early and subsequent processing events may be coordinated by communication between the Cas proteins and nuclease/helicase proteins. In principle, the action of Cas1-Cas2 (perhaps with the assistance of partner Cas proteins) directly on the invading foreign DNA, or on shorter processed fragments generated from it, may give rise to unexcised protospacers with cleaved single-stranded ends or fully excised free-standing protospacers, both of which would be competent to initiate the integration reaction (Figure 7). These situations would be analogous to replicative and cut-and-paste DNA transposition, respectively (Haniford and Chaconas, 1992; Haniford and Ellis, 2015; Harshey, 2014). In the cut-and-paste mechanism, only limited gap repair DNA synthesis is required to re-establish the native organization of the CRISPR locus, but with the newly acquired spacer (Figure 7). In the replicative mechanism, DNA synthesis is more extensive, and the intermediate is resolved via recombination to yield the same end product as in cut-and-paste transposition (Figure 7). Variations of these themes, combining aspects of replicative and cut-and-paste transpositions may also be envisaged (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig7-v1.jpg)\n\n**Figure 7.:** Two possible schemes for protospacer integration are outlined. The pathway shown at the left is equivalent to replicative DNA transposition. The pre-spacer is nicked at the protospacer 3\u2032-ends, at least one cleavage being adjacent to a PAM sequence (shown by the red dash). The 3\u2032-hydroxyls are then transferred to the leader-repeat (L\u2013R) and repeat-spacer (R\u2013S) junctions of the target site. Replication across L and PS (protospacer) followed by recombination within the duplicated PS completes integration. An alternative mode of processing the strand transfer intermediate involves removal of the pre-spacer DNA flanking PS, and gap repair by limited DNA synthesis and ligation (Figure 7\u2014figure supplement 1). The integration pathway shown at the right follows cut-and-paste DNA transposition. The steps involve excision of PS from the pre-spacer, strand transfer to L-R and R-S junctions, gap repair, and ligation. In either pathway (replicative or cut-and-paste), directing the PAM-adjacent 3\u2032-hydroxyl to the L-R junction will ensure the functional orientation of the inserted spacer.\u00a0PAM, protospacer adjacent motif.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** An integration event may be initiated using the single-stranded ends generated by Cas1 (or Cas9) activity without the protospacer being excised from the pre-spacer DNA (as in replicative transposition; see Figure 7). The flanking DNA is then trimmed by a nuclease such as RecBCD, perhaps with assistance from a flap endonuclease, to generate a structure that resembles the intermediate of cut-and-paste transposition. In effect, the mechanism is \u2018nick-paste-and-trim\u2019. The final integration product is formed by gap-filling replication and ligation. The process would be analogous to the removal of host DNA attached to the ends of the infecting phage Mu genome after it has been partially integrated into the Escherichia coli chromosome (Jang and Harshey, 2015). The red dash within the pre-space denotes the PAM sequence. PAM, protospacer adjacent motif.\n\n### Orientation specificity in protospacer integration\n\nSpacer acquisition exclusively in its functional orientation, that\u00a0is, directed transfer of the DNA end resulting from strand cleavage at PAM to the L-R junction, is easier to imagine in a high-order Cas protein complex capable of both pre-spacer processing and protospacer insertion than in a Cas1-Cas2 complex associated with an already processed protospacer. In vitro, either of the two protospacer strands is equally capable of integration, and coupled cleavage\u00a0transfer is not detectable in DNA substrates that mimic PAM-containing pre-spacers (Figure 2; Figure 2\u2014figure supplement 3). Retention of spacer function even in the absence of orientation specificity in strand transfer is theoretically possible by dual PAM recognition (Supplementary Text S3 in Figure 2\u2014figure supplement 3).\n\n### Cas1-Cas2-mediated integration of a pre-processed protospacer: Assistance from disintegration\n\nIf \u2018normal\u2019 (two-ended) integration by the adaptation complex (Figure 1A; Figure 7) is disrupted after only one protospacer strand has been transferred to the target, salvage pathways may promote the maturation of such intermediates into complete spacer insertions. These pathways may also come into play during the integration of a protospacer that is dissociated from the adaptation complex and is captured by the Cas1-Cas2 complex. Integration under this scenario, which mimics the in vitro system, is expected to be predominantly one-ended. We suggest that disintegration events, which become prominent during the transfer of the second strand, play a central role in the salvage mechanisms.\n\nWater-mediated disintegration of the protospacer at the L-R junction during strand transfer to the R-S junction will produce an intermediate with a gap in the bottom strand and a gap plus nick in the top strand (Figure 8; left). An analogous intermediate with the gap plus nick in the bottom strand may also be formed (Figure 8; right). Here, a protospacer is first transferred to the R-S junction with concomitant 3\u2032-hydroxyl-mediated disintegration from the L-R junction (and restoration of this junction). This is followed by a subsequent integration in the reverse direction, with disintegration at the R-S junction promoted by water. The spacer insertion event can be completed by gap-filling/displacement DNA synthesis followed by ligation (Figure 8). Thus, disintegration reactions mediated by the 3\u2032-hydroxyl and by water are both relevant, though in mechanistically distinct ways, to the rescue of semi-integrated protospacers into fully integrated spacers.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/65763/elife-65763-fig8-v1.jpg)\n\n**Figure 8.:** Integration of the protospacer by Cas1-Cas2 is predominantly one-ended. Following the initial strand transfer to the L-R junction, transfer of the second strand to the R-S junction is associated with disintegration at L-R. Oscillations of the semi-integrated protospacer become possible when disintegration mediated by the 3\u2032-hydroxyl re-forms the L-R or R-S junction at the disintegration site. Disintegration mediated by water during a second strand transfer step will block oscillations. However, the nick between L and R or R and S will be preserved, and can be utilized by DNA repair machineries to complete protospacer insertion. Formation of the repair-suitable intermediate shown at the left is dependent only on water-mediated disintegration, the 3\u2032-hydroxyl-mediated disintegration being dispensable. However, both types of disintegration are required to generate the intermediate shown at the right.\n\n### Disintegration relieves topological stress during protospacer integration\n\nDisintegration is generally viewed as antithetical to the completion of the two-strand transfer events during transposition reactions, which are analogous to protospacer insertion at the CRISPR locus. However, the in vitro Cas1-Cas2 reactions suggest that disintegration can generate DNA ends capable of triggering repair events that convert one-ended strand transfer intermediates into normal insertion products. This mechanism may be especially important when two-ended insertion is impeded by the transposon being considerably shorter than the persistence length of DNA. The strand transfer complex (or post-synaptic complex; PSC) in this case would be under considerable torsional stress. A recent single-molecule FRET analysis suggests that the PSC formed during protospacer integration may be resolved by transcription from the CRISPR leader accompanied by limited DNA replication (Budhathoki et al., 2020). Resolution may also be achieved by replication, although it is argued to be less likely. The lag time in the arrival of a replication fork at the PSC in a slow-growing bacterium may cause disintegration of the protospacer and its potential reintegration in the non-functional orientation. Replication through the unwound repeat and protospacer would produce undesirable double-strand DNA breaks. However, if the integration complex functions as a strand transfer-DNA repair machinery, the DNA ends may remain protected within it to be resolved rapidly (Figure 7; pathway at the left). Precedent exists for the involvement of the replisome in the repair of the strand transfer intermediate formed during the insertion of infecting phage Mu DNA into the E. coli chromosome (Jang and Harshey, 2015).\n\nThe present study demonstrates that an alternative solution to transcription/replication in simplifying PSC topology is the hydrolytic nicking of DNA (disintegration), allowing transposition (integration) to be completed by ensuing DNA repair. An analogy can be drawn to the topological problem of DNA replication. Here, the torsional stress built up ahead of the fork is removed by topoisomerases cutting DNA strands and then resealing them to permit continued fork progression. The transesterification chemistry utilized by these enzymes (Reece and Maxwell, 1991; Vos et al., 2011) ensures strand cutting and repair in rapid succession without net DNA loss or gain. The distinct mechanisms for topology simplification utilized by DNA replication and CRISPR adaptation machineries are consistent with their contrasting biological purposes\u2014maintaining genome integrity versus promoting an orderly genome rearrangement.\n\n### A potential broader role for disintegration in DNA transposition\n\nIn a general sense, disintegration may not be limited to spacer acquisition by CRISPR loci. It may assist the movement of mini-transposons or short orphan transposons that are mobilized by ectopically supplied transposases. Disintegration need not always be counterproductive even during normal transposition, provided the DNA repair machinery is able to recommence the interrupted reaction. The Cas1-Cas2 system highlights the resourcefulness of biological catalysis in repurposing an apparently abortive reaction toward a physiologically meaningful outcome.\n\n## Materials and methods\n\n### Plasmids\n\nProtein expression plasmids and substrate plasmids used for in vitro assays were kindly provided by the Doudna laboratory (Wright and Doudna, 2016).\n\n### Oligonucleotides\n\nOligonucleotides used for the assembly of protospacers and target sites were purchased from IDT (listed in Supplementary file 1). Oligonucleotides >100 bp in length were synthesized as two separate chains and were ligated with the assistance of a short bridging splinter oligonucleotide. The 5\u2032-end was made competent for ligation by phosphorylating it with ATP using T4 polynucleotide kinase.\n\nHybridizations were performed by mixing the requisite oligonucleotides in 20 mM HEPES-NaOH (pH 7.5), 25 mM KCl, and 10 mM MgCl2, immersing the tube containing the mixture in a water bath at 90\u00b0C for 5 min, and letting the bath cool slowly to room temperature. After adding DTT (dithiothreitol) and DMSO (dimethyl sulfoxide) to final concentrations of 1 mM and 10%, respectively, they were immediately used for reactions or stored at \u221220\u00b0C until use (not more than a week).\n\n### Proteins\n\nHis6-tagged proteins, expressed individually as MBP (maltose-binding protein) fusions in E. coli, were purified by affinity chromatography over Ni-sepharose using standard protocols. When desired, MBP was removed by cleavage at a TEV protease target site placed at the fusion junction. MBP-free proteins were purified by Ni-affinity chromatography. Final protein preparations were dialyzed against 20 mM Tris-HCl (pH 7.5), 150 mM KCl (Cas1, Csn2, and Cas9) or 500 mM KCl (Cas2), 1 mM TCEP (Tris(2-carboxyethy)phosphine hydrochloride), and stored at \u221270\u00b0C after addition of 10% glycerol (v/v). There was no difference in the activities between the MBP-fusion and MBP-cleaved forms of Cas1 and Cas2. All data shown here were obtained using the Cas1 and Cas2 fusion proteins. Cas9 and Csn2 were used after the\u00a0removal of MBP.\n\n### Radioactive labeling\n\n5\u2032-end labeling of oligonucleotides was carried out using \u03b3-32P-labeled ATP and T4 DNA ligase. For labeling the 3\u2032-end, the Klenow fill-in reaction was performed in the presence of \u03b1-32P-labeled dATP. A short-oligonucleotide with a 5\u2032 T overhang hybridized to the oligonucleotide being labeled ensured the incorporation of one-labeled A.\n\n### Cas1-Cas2 activities\n\nReactions were performed in 20 mM HEPES-NaOH (pH 7.5), 25 mM KCl, 10 mM MgCl2, I mM DTT, and 10% DMSO (Wright and Doudna, 2016) containing 5% PEG (polyethylene glycol 1500; MilliporeSigma). Incubations were carried out in 20 \u03bcl reaction mixtures at 37\u00b0C for 1 hr in most cases. In time course analyses, incubation periods ranged from 1 min to 2 hr, reactions were stopped by addition of SDS (0.2% final; w/v) and heating to 95\u00b0C for 5 min. Samples were analyzed by electrophoresis in 1.5% agarose gels or 12% denaturing polyacrylamide-urea gels (19:1 crosslinking). In one set of assays probing plasmid topoisomer distributions, 0.4 \u03bcg chloroquine/ml was present in the agarose gel and the running buffer. DNA bands were visualized by ethidium bromide staining, fluorography, or by phosphorimaging depending on the particular assays.\n\nStandard reactions utilizing supercoiled plasmids contained ~10 nM plasmid DNA, ~34 nM Cas1, and ~17 nM Cas2 (2:1 molar ratio of Cas1:Cas2). In reactions containing a mixture of Cas1 and Cas1(H205A) (dCas1), the combined concentration of the two per reaction was kept as ~34 nM. For reactions utilizing 32P-labeled oligonucleotides, the DNA substrate was held at 25 nM with Cas1 and Cas2 at ~68 nM and 34 nM, respectively. Proteins were diluted from stock aliquots to a concentration of 1 \u03bcM in the reaction buffer. Cas1-Cas2 were mixed in the requisite molar ratios and kept on ice for 10 min before addition to reaction mixtures. For some reactions, Cas1-Cas2 pre-incubation on ice included Csn2 or Cas9 or both. The stoichiometry of the additional proteins or deviation from the standard 2:1 molar ratio of Cas1:Cas2 is indicated in the pertinent figures.\n\n### Topoisomerase reactions\n\nA titrated amount of E. coli topoisomerase I was used to obtain partial relaxation of plasmid DNA. Reactions were carried out in the supplier (New England Biolabs) recommended buffer in 30 \u03bcl volumes containing 300 ng supercoiled plasmid DNA per tube. After incubation at 37\u00b0C for varying times, reactions were quenched with SDS (0.2% final; w/v) and heated to 95\u00b0C for 3 min before electrophoresis in 1.5% agarose.\n\n### Ligation of nicked plasmid DNA\n\nPlasmid DNA, nicked at a single site using Nb.BtsI (New England Biolabs), was ligated using T4 DNA ligase and the ligation buffer (obtained from the supplier). Each reaction mixture containing 300 ng nicked plasmid and 200U ligase was incubated for 1 hr at 37\u00b0C before inactivating the enzyme by SDS addition (0.2% final; w/v) and heating to 95\u00b0C for 3 min. Samples were analyzed by electrophoresis in 1.5% agarose.\n\n### Quantification of reaction efficiencies\n\n32P-labeled bands on polyacrylamide gels were detected using a storage phosphor screen (Bio-Rad) at different exposure times to optimize signal detection without saturation of the screen. Scanning was performed using a Typhoon Trio phosphorimager (GE Healthcare), and image analysis was performed using the software Quantity One (Life Sciences Research) and ImageJ (NIH).\n",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "fba99535-0e26-46bd-9c59-48ac75eff105",
+      "submission_id": "70c795ce-8914-4562-ba24-ccf703d7e07b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James M Berger, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65763.sa1](https://doi.org/10.7554/eLife.65763.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nA key step in the acquisition of viral immunity in bacteria by CRISPR systems is the integration of foreign DNA sequences into the host genome. Integration is carried out by a dedicated transposase encoded in the CRISPR array. The current work is of note for highlighting the potential for water-mediated disintegration reactions \u2013 events where the integration of phage DNA into a target site is reversal \u2013 in controlling how DNA is inserted into the chromosome, an event that may be functionally important in the adaptive phase of CRISPR-mediated bacterial immunity.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Disintegration promotes proto-spacer integration by the Cas1-Cas2 complex\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nWe are sorry to say that, after consultation with the reviewers, whose evaluation is detailed below, we have decided that your work will not be considered further for publication by eLife.\n\nSummary:\n\nIn this manuscript, an in vitro Cas1-Cas2 model system is used to study the reaction used to insert foreign DNA elements into a CRISPR array during the adaptive phase of immunity. The authors propose that hydrolysis of one end of the transposon DNA may be the primary mechanism for the insertion of very small DNA elements (which are difficult to bend tightly) that are found for the proto spacer sequences, and that cellular repair pathways are responsible for ligating the CRISPR array back together in vivo. The findings additionally suggest that water-mediated disintegration has an unappreciated role in the generation of CRISPR arrays as part of the bacterial immune response. These hypotheses are intriguing and of potential interest to those in the CRISPR field. However, it is unclear how this in vitro study, which does not monitor the full the reaction (directionality is lost due to the lack of a PAM sequence in the substrate and several required cellular factors are missing), relates to transposition as it occurs in vivo. Overall, this is an interesting study that challenges the current thinking in the field, but it does not present sufficient evidence to establish the physiological significance of the observed effects, thereby limiting its potential broader impact.Reviewer #1:\n\nIn this manuscript Ma and colleagues present a biochemical investigation into integration by the Spy Cas1-Cas2 integrase, a key component of the type II CRISPR immune response. From this work they challenge the view that disintegration (the reverse of integration) only functions as an off-pathway reaction (proof reading) and propose that disintegration-promoted integration is functionally important for integration into CRISPR arrays.\n\nCRISPR integration proceeds through two steps. In the first, one strand of the prespacer (fragment of foreign DNA) is integrated at the leader-repeat (R-L) junction of the CRISPR array. In the second step, the other strand of the prespacer integrates at the repeat-spacer (R-S) junction resulting in a fully integrated prespacer. The authors propose that, in vitro, water-mediated disintegration at the first site (R-L) is concomitant with second site integration (R-S). The authors present good evidence that this is happening in vitro though a series of elegant biochemical experiments using plasmid and oligo substrates.\n\nThis is an intriguing hypothesis but its significance is unclear. As the authors themselves acknowledge it could very well be that disintegration is not required in vivo and that this is an in vitro feature of the reaction. Admittedly, demonstrating that disintegration is important in vivo would be a very difficult task. In addition, the in vitro system used here is only partially reconstituted. The substrates lack a PAM sequence, which is necessary for protospacers to be incorporated in the correct orientation and may help direct the first integration event to the L-R junction. Presumably because of this all the reactions presented do not analyze the orientation of the incorporated prespacer sequence. Cas9 and Csn2 are also absent (as are other potentially required host factors), which are necessary for correct integration in vivo. Any of these missing components could change the behavior of the system with respect to disintegration.\n\nThe authors present a very interesting hypothesis, disintegration is a key step in CRISPR adaptation, but do not test this hypothesis in a meaningful way. This limits the interest of this work for a broad audience.\n\nIn addition to the above I have the following comments/suggestions:\n\nFigure 1: using a plasmid that lacks a CRISPR array is an important control. It is necessary to establish that the integration events being monitored are indeed at the CRISPR array because formation of half-sites at other locations is expected to result in disintegration. It could also be beneficial to include sequence data to map the site of integration in the pCRISPR targets. This has been done before in this system (PMID: 27595346) but would again bolster the conclusions presented here.\n\nOn page 19; the authors state that \"\u2026the kinetic correspondence between disintegration and the second integration reactions suggest that the two events are potentially coupled\". However, the data presented in Figure 5A do not support this conclusion. The extent of second-site integration (the 81 nt band) and first site disintegration (the 92 nt band) do not change over the measured time frame. Both reactions appear to be over at 1 minute, which is also the first time point. Therefore it is impossible to know if both reactions occur at the same rate or if one is faster than the other.\n\nWith the exception of Figure 6, there are no markers, or sequence reaction products, on any of the acrylamide gels presented in the manuscript. It's therefore impossible for the reader to evaluate the size of any of the bands for themselves. This information should be included in any revised manuscript at least at the first instance of a particular sized product.\n\nThe experiments described in Figure S8 lack a Cas1 dead control. It's important to remove the possibility that the observed cleavage pattern results from a contaminating nuclease.\n\nSome of the experiments are difficult to follow. For example it took me a long time to really understand the experiments in Figure 6, which are really elegant experiments but difficult to follow. I worry that this limits the accessibility of this work. I would encourage the authors to reevaluate how experiments are presented such that they are accessible to a broad audience. It would be helpful to not have to refer to a supplemental figure to understand the main figure i.e. the main figures should be self-contained.\n\nReviewer #2:\n\nMa and colleagues have show that when DNA fragments are inserted into a CRISPR array in vitro, single end integrations are the primary products of proto-spacer insertion and double-end insertions are rare. The reason for this outcome is that the second insertion event is accompanied by 3'-OH mediated disintegration or hydrolysis at the initial insertion site. A double-strand break would remain following filling of the repeat sequence gaps in vivo in the case of the hydrolysis products. The authors propose that hydrolysis of one end of the transposon DNA may be the primary mechanism for insertion of very small DNA elements (which will be difficult to bend tightly) as found for the proto spacer sequences and that cellular repair pathways would be responsible for ligating the CRISPR array back together.\n\nThe manuscript is well written and the experiments carefully planned. The findings will be of interest to researchers studying transposition-like mechanisms in a broad range of systems. The experiments focus on analyses of Cas1-Cas2 catalyzed in vitro reactions using cleverly designed DNA substrates, leading to a hypothesis about how the system may work in vivo. The direct conclusions are well supported by the experimental data. The big unanswered question is whether the results obtained with a minimal Cas1-Cas2 system in vitro reflect what happens in the bacterial cell. More proteins are present in the cell that could modify the reaction and the native DNA array structure differs somewhat from what was used here. Overall, the results presented are intriguing, but their relationship to the cellular mechanism of CRISPR array generation is unclear, since it is not yet known whether DNA elements are inserted in vivo in the same way as observed here in vitro.\n\nSpecific comments:\n\nI found the experiment shown in Figure 1F to be difficult to follow from the Figure legend and the text. What reaction(s) were performed for lanes 3-7? The centers of the distributions seem to differ by more than 1 step to me, but I may have misunderstood what is being compared.\n\nFigure 2. What is the evidence that additional product bands differ by 1 and 2 nucleotides for the nicked target? It doesn't look like 3-fold more integration; is this a visual estimate or was quantitation done?\n\nIn the case that the second integration step is coupled to disintegration of the first, the authors state that the two integration products would be equal at steady state. The reason for this conclusion should be explained.\n\nFigure 4 \u2013 the location of the 4-bp additions to the sequences should be shown.\n\nFigure 8 and discussion. Repair of the product of a second site integration followed by a 3'-OH mediated disintegration at the first site would likely not yield the correct CRISPR array structure. Hydrolysis coupled to an eventual second site integration would yield an intermediate that could be repaired to give the correct array structure. Thus, the reversible disintegration reaction involving the 3'-OH doesn't really seem to play a role in the proposed pathway. The simple conclusion that Cas1/2 catalyzed hydrolysis of a phosphodiester may relieve strain and allow productive transposition to occur doesn't get emphasized enough in my opinion.\n",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8f5a14b5-bc53-4ebb-ad1c-ec34b462debf",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C1",
+      "claim": "Disintegration is the reversal of transposon DNA integration at a target site and is regarded as an abortive off-pathway reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "'Disintegration'\u2014the reversal of transposon DNA integration at a target site\u2014is regarded as an abortive off-pathway reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "177508c9-62c9-4b7b-80c3-8bd6b80383e9",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C2",
+      "claim": "Protospacer insertion is mechanistically analogous to DNA transposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we challenge this view with a biochemical investigation of the mechanism of protospacer insertion, which is mechanistically analogous to DNA transposition, by the Streptococcus pyogenes Cas1-Cas2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract as a premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "fbc4c679-9021-483a-8afc-93bf80310805",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C3",
+      "claim": "In supercoiled target sites, the predominant outcome is the disintegration of one-ended insertions that fail to complete the second integration event.",
+      "claim_type": "EXPLICIT",
+      "source": "In supercoiled target sites, the predominant outcome is the disintegration of one-ended insertions that fail to complete the second integration event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "b9cc175c-b521-4d5b-8431-649b1db75260",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C4",
+      "claim": "In linear target sites, one-ended insertions far outnumber complete protospacer insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "In linear target sites, one-ended insertions far outnumber complete protospacer insertions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "e9a6b618-0c36-4311-9981-fd4a66d4ef96",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C5",
+      "claim": "The second insertion event is most often accompanied by the disintegration of the first, mediated either by the 3\u2032-hydroxyl exposed during integration or by water.",
+      "claim_type": "EXPLICIT",
+      "source": "The second insertion event is most often accompanied by the disintegration of the first, mediated either by the 3\u2032-hydroxyl exposed during integration or by water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "3d18d185-675c-4aff-b084-40a3d944c452",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C6",
+      "claim": "One-ended integration intermediates may mature into complete spacer insertions via DNA repair pathways that are also involved in transposon mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "One-ended integration intermediates may mature into complete spacer insertions via DNA repair pathways that are also involved in transposon mobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract based on the experimental findings and mechanistic reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "437af849-e309-48e5-b0d5-0b2e9cde0d2a",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C7",
+      "claim": "Disintegration-promoted integration is functionally important in the adaptive phase of CRISPR-mediated bacterial immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that disintegration-promoted integration is functionally important in the adaptive phase of CRISPR-mediated bacterial immunity, and perhaps in other analogous transposition reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main proposal of the paper based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "10f16d73-3583-4fbc-b143-a9d4dadf8171",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C8",
+      "claim": "CRISPR-based bacterial immunity uses information from a prior infection stored in the chromosome to target and destroy invading viruses or plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-based bacterial immunity uses information from a prior infection stored in the chromosome to target and destroy invading viruses or plasmids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "1c8276b1-9485-49d0-8491-aab2ddf864a5",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C9",
+      "claim": "The adaptive phase of CRISPR defense involves the deposition of short pieces of DNA (protospacers) from foreign nucleic acids into the chromosome as spacers.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptive phase of this defense system involves the deposition of short pieces of DNA (protospacers) from foreign nucleic acids into the chromosome as spacers\u2014the storage units of immunological memory (Hille et al., 2018; Marraffini, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "60eedeb1-5f02-473a-ad84-2b940831b0ec",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C10",
+      "claim": "The CRISPR locus has a (leader-[repeat-spacer]n-repeat) organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR locus has a (leader-[repeat-spacer]n-repeat) organization, and the long primary transcript derived from it is processed by Cas (CRISPR-associated) and/or host nucleases into mature CRISPR-RNAs (crRNAs) (Barrangou and Marraffini, 2014; Barrangou, 2015; Wiedenheft et al., 2012; Wright et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "682e8ce3-96b9-415b-a54f-cda05afb2311",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C11",
+      "claim": "CRISPR-Cas systems are classified into two broad categories: Class 1 systems employ a multi-protein-RNA interference complex (Cascade), and Class 2 systems utilize RNA-guided target recognition and cleavage by a single protein (Cas9 or Cas12).",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-Cas systems are classified into two broad categories (Brouns et al., 2008; Gasiunas et al., 2012). Class 1 systems employ a multi-protein-RNA interference complex for target recognition, termed Cascade. Class 2 systems utilize RNA-guided target recognition and cleavage by a single protein, that is, Cas9 or Cas12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "963a6a7b-aa2f-44cc-b6f7-fb399798c85c",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C12",
+      "claim": "Self-targeting is avoided via multiple mechanisms, including recognition of a protospacer adjacent motif (PAM) immediately bordering the crRNA-complementary DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-targeting is avoided via multiple mechanisms, including recognition of a protospacer adjacent motif (PAM) immediately bordering the crRNA-complementary DNA sequence (Gasiunas et al., 2012; Jiang and Doudna, 2017; Jinek et al., 2012; Elmore et al., 2016; Pyenson and Marraffini, 2017; Smargon et al., 2017; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "ef4428ab-5df0-45cf-89b4-57d2cc0ccd82",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C13",
+      "claim": "The conserved Cas1 and Cas2 proteins are essential (and sufficient in some systems) to carry out spacer acquisition in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved Cas1 and Cas2 proteins are essential (and sufficient in some systems) to carry out spacer acquisition in vivo (Nu\u00f1ez et al., 2015a; Yosef et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "ebebec4f-24a2-4cdc-a2b5-747d530bbfad",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C14",
+      "claim": "In the Escherichia coli (Type I-E) and Enterococcus faecalis (Type II-A) Cas1-Cas2 crystal structures, a pair of Cas1 dimers flank a central Cas2 dimer on either side in a butterfly arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Escherichia coli (Type I-E) and Enterococcus faecalis (Type II-A) Cas1-Cas2 crystal structures, a pair of Cas1 dimers flank a central Cas2 dimer on either side in a butterfly arrangement, providing a ridge that can accommodate the pre-spacer DNA (that includes the PAM sequence), or the protospacer DNA (that lacks a complete PAM), with splayed out single strand termini (Nu\u00f1ez et al., 2015b; Wang et al., 2015; Xiao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "9f54f720-4cb4-46d4-882e-e69563291a3f",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C15",
+      "claim": "Protospacer integration is mechanistically analogous to DNA transposition, with terminal 3\u2032-hydroxyls attacking the target phosphodiester bonds at the leader-repeat (L-R) junction on one strand and the repeat-spacer (R-S) junction on the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Protospacer integration is mechanistically analogous to DNA transposition, with terminal 3\u2032-hydroxyls attacking the target phosphodiester bonds at the leader-repeat (L-R) junction on one strand and the repeat-spacer (R-S) junction on the other (Nu\u00f1ez et al., 2015a; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with citation support and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "8b0b40ba-a913-4b27-9e8a-f79fb4394535",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C16",
+      "claim": "These transesterification reactions are carried out by the Cas1 active sites of the Cas1-Cas2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These transesterification reactions are carried out by the Cas1 active sites of the Cas1-Cas2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "a9439101-4152-41aa-bfc6-bc08c8f02b6a",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C17",
+      "claim": "Repair of the intermediate containing the (protospacer)-(repeat) strand fusions completes the reaction with a duplication of the repeat sequence, one copy each on either side of the spacer insert.",
+      "claim_type": "EXPLICIT",
+      "source": "Repair of the intermediate containing the (protospacer)-(repeat) strand fusions completes the reaction with a duplication of the repeat sequence, one copy each on either side of the spacer insert (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "74da906f-b5c4-4931-b429-d55b5e7a11cd",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C18",
+      "claim": "The prominent outcome of Cas1-Cas2 reaction with supercoiled plasmid was the conversion of the supercoiled plasmid into a relaxed distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The prominent outcome was the conversion of the supercoiled plasmid into a relaxed distribution (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "a731376e-4d0f-4aa5-8b91-44543b896535",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C19",
+      "claim": "The formation of a spacer integrant was barely detectable in supercoiled plasmid reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of a spacer integrant joined to the leader-proximal repeat end (L-R) on one strand and the spacer-proximal repeat end on the other (R-S) was barely detectable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the supercoiled plasmid reactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "07b3a2ec-60cb-41b7-93a3-e94b7195fff7",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C20",
+      "claim": "Supercoil relaxation by Cas1-Cas2 required the CRISPR locus to be present in the target plasmid, and was dependent on the protospacer.",
+      "claim_type": "EXPLICIT",
+      "source": "Supercoil relaxation by Cas1-Cas2 required the CRISPR locus to be present in the target plasmid, and was dependent on the protospacer (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "e519d42f-dd0c-43c1-b83d-b1fcf82a35e9",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C21",
+      "claim": "Optimal reaction occurred at 4:1 and 2:1 molar ratios of Cas1:Cas2, with increasing Cas2 inhibiting the reaction mildly.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal reaction occurred at 4:1 and 2:1 molar ratios of Cas1:Cas2, with increasing Cas2 inhibiting the reaction mildly (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "24e4c957-f8f4-4058-9102-9715fb7fecee",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C22",
+      "claim": "The predominance of the relaxed (closed circular) plasmid over the 'nicked' plasmid in the product indicates that the Cas1-Cas2 complex fails to complete protospacer integration in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominance of the relaxed (closed circular) plasmid over the 'nicked' plasmid in the product indicates that the Cas1-Cas2 complex fails to complete protospacer integration in most cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data from supercoiled plasmid reactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "79680069-e831-4d32-abd7-797a1c9c08f1",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C23",
+      "claim": "The major in vitro activity of Cas1-Cas2 is the Sisyphean reversal of semi-integration events (disintegration) mediated by the 3\u2032-hydroxyl exposed next to the integration junction.",
+      "claim_type": "EXPLICIT",
+      "source": "The major in vitro activity of Cas1-Cas2 is the Sisyphean reversal of semi-integration events (disintegration) mediated by the 3\u2032-hydroxyl exposed next to the integration junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on supercoiled plasmid reactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "98dd451b-b9b1-4e9d-9418-b154960b7b32",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C24",
+      "claim": "DNA relaxation by Cas1-Cas2 occurred progressively, although not in a regular stepwise fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA relaxation by Cas1-Cas2 occurred progressively, although not in a regular stepwise fashion (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from time course data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "a18689a5-9857-44d5-b29e-f54090a6ac1a",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C25",
+      "claim": "The relaxation pattern was distinct from a topoisomerase I-generated ladder (\u0394Lk=+1), suggesting that the broken strand goes through multiple rotations before it is resealed.",
+      "claim_type": "EXPLICIT",
+      "source": "The relaxation pattern was distinct from a topoisomerase I-generated ladder (\u0394Lk=+1) (Figure 1E), suggesting that the broken strand goes through multiple rotations before it is resealed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data comparing Cas1-Cas2 relaxation to topoisomerase I activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "a3f9d5be-5e37-4155-b9ee-a2cda00734f0",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C26",
+      "claim": "The topoisomer distribution of the Cas1-Cas2 plus protospacer treated supercoiled plasmid was more negatively supercoiled (\u0394Lk between \u22121 and \u22122) than that obtained from nick closure in the presence of dCas1-Cas2 and protospacer.",
+      "claim_type": "EXPLICIT",
+      "source": "The topoisomer distribution of the Cas1-Cas2 plus protospacer treated supercoiled plasmid (Figure 1F; lane 8) was more negatively supercoiled (\u0394Lk between \u22121 and \u22122) than that obtained from nick closure in the presence of dCas1-Cas2 and protospacer (Figure 1F; lane 7) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from topological analysis in Figure 1F and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "ab38b09d-d42e-4809-8b0a-d9ebcade96e1",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C27",
+      "claim": "The observed \u0394Lk between the Cas1-Cas2 relaxed and T4 ligase sealed plasmid distributions is consistent with the unwinding of a little more than one DNA turn within the target sequence during protospacer integration.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed \u0394Lk between the Cas1-Cas2 relaxed and T4 ligase sealed plasmid distributions (Figure 1F; Figure 1\u2014figure supplement 2) is consistent with the unwinding of a little more than one DNA turn within the target sequence during protospacer integration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the topological data from Figure 1F and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "6c1b3f54-b3af-4546-9e9a-21727761fff0",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C28",
+      "claim": "L-R and R-S insertions were approximately equally prevalent in linear target sites, although L-R insertions were more abundant at very short time points.",
+      "claim_type": "EXPLICIT",
+      "source": "L-R and R-S insertions were approximately equally prevalent, although L-R insertions were more abundant at very short time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from reactions with linear target sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "1eb83e7c-4d1f-4e2f-9982-8d503cc4abc5",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C29",
+      "claim": "In vitro Cas1-Cas2 reactions showed no strand-specificity in protospacer integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike orientation-specific protospacer integration in vivo, in vitro Cas1-Cas2 reactions showed no strand-specificity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with linear target sites shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "49d9f0de-ac9b-4082-926b-7cdaf4df29fa",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C30",
+      "claim": "Csn2 or Cas9 or both failed to confer strand selectivity on Cas1-Cas2 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias-free insertion of the top or bottom strand from the protospacer was unchanged by the addition of Csn2 or Cas9 or both to the reactions (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with linear target sites shown in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "1f1cc661-70aa-4859-8bfc-0a2918999e21",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C31",
+      "claim": "Csn2 and Cas9, singly or in combination, failed to stabilize protospacer integrations in the supercoiled plasmid target.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins, singly or in combination, also failed to stabilize protospacer integrations in the supercoiled plasmid target (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with supercoiled plasmid targets shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "0302b0ee-d154-49e8-96bb-ef8b393312d5",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C32",
+      "claim": "The amount of the integration product was increased two- to threefold in the nicked target site compared to the normal product formed from the target without a nick.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of the integration product (normal plus aberrant) was increased two- to threefold in comparison to the normal product formed from the target without a nick.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from reactions with nicked target sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "e6fd6d19-00d7-4277-9bcb-f1663c402065",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C33",
+      "claim": "The native protospacer and the ones carrying T-insertions gave the predicted integration products at the L-R and R-S junctions with the native target site.",
+      "claim_type": "EXPLICIT",
+      "source": "The native (T/T)0-protospacer as well as the ones carrying T-insertions, (T/T)n or (T/-)n, gave the predicted integration products at the L-R and R-S junctions with the native (T/T)0-target site (Figure 3B; lanes 2, 6, 10, and 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with modified protospacers and target sites shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "3cc80913-e331-4127-9cf8-7ecba6d21f02",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C34",
+      "claim": "For the modified target sites, integration occurred almost exclusively at the L-R junction.",
+      "claim_type": "EXPLICIT",
+      "source": "For the (T/T)5, (T/T)10, and (T/T)15-targets, integration occurred almost exclusively at the L-R junction (Figure 3B; lanes 3\u20135, 7\u20139, 11\u201313, and 15\u201317).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with modified target sites shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "b859faf4-7eec-4f0e-9f6b-41b287b998a3",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C35",
+      "claim": "Reactions of the modified protospacers with the modified target sites unveil a strict hierarchy in the choice of the L-R and R-S junctions during protospacer acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactions of the modified protospacers with the modified target sites unveil a strict hierarchy in the choice of the L-R and R-S junctions during protospacer acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data with modified substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "d4dc175a-d527-4bbe-9d8c-79d1ba7d6633",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C36",
+      "claim": "An R-S half-site was co-dominant with the 'minimal' L-R half-site when both were present in the same reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the independent recognition of the L-R and R-S junctions by the Cas1-Cas2 complex, an R-S half-site was co-dominant with the 'minimal' L-R half-site (containing 18 bp of the repeat; Figure 4\u2014figure supplement 1) when both were present in the same reaction (Figure 4; lanes 15\u201318).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with half-target sites shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "8a1909db-6fdf-4fe9-b3eb-fa1ee610f59e",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C37",
+      "claim": "The extension of the repeat segment in the minimal L-R half-site by 4 bp restored L-R dominance to the same degree as that displayed by the modified full linear targets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extension of the repeat segment in the minimal L-R half-site by 4 bp, L-R(+4) (Figure 4\u2014figure supplement 1), restored L-R dominance to the same degree as that displayed by the modified full linear targets (Figure 4; lanes 19\u201322).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with half-target sites shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "4cbf02f7-47c9-47fd-9590-71dd6ac42bbc",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C38",
+      "claim": "Cas1-Cas2 promoted the second integration step at the R-S junction in substrates mimicking semi-integration at the L-R junction, yielding the expected 81 nt product.",
+      "claim_type": "EXPLICIT",
+      "source": "When the 5\u2032-end of the unintegrated protospacer strand was labeled, integration was observed at the R-S junction (81 nt band) (Figure 5A; lanes 2\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with semi-integrated substrates shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "e0112877-f45a-4d60-bbbe-b6849012083d",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C39",
+      "claim": "Disintegration was more prominent than integration in semi-integrated substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, disintegration was more prominent than integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from reactions with semi-integrated substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "0acfc24a-6368-45a6-9c58-d3a297c688b3",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C40",
+      "claim": "Neither removing the leader strand nor placing a terminal 3\u2032-dideoxy nucleotide eliminated or reduced the extent of integration at the R-S junction.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted to block the disintegration competence of the leader strand in the substrate with the protospacer semi-integrated at the L-R junction by placing a terminal 3\u2032-dideoxy nucleotide, or by removing this strand altogether. Neither of these substrate designs eliminated or reduced the extent of integration at the R-S junction (81 nt band in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with modified semi-integrated substrates shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "aff84b8b-83b5-4c2d-8744-82495f5b5e21",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C41",
+      "claim": "Disintegration occurred even in the absence of the leader strand.",
+      "claim_type": "EXPLICIT",
+      "source": "However, labeling the 5\u2032-end of the protospacer strand integrated at the L-R junction revealed that disintegration occurred even in the absence of the leader strand (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with modified semi-integrated substrates shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "bb26f57e-f9f3-4b31-ae6c-cf839c28b57e",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C42",
+      "claim": "Water-mediated disintegration efficiency was ~40% of that of the 3\u2032-hydroxyl and water combined.",
+      "claim_type": "EXPLICIT",
+      "source": "Disintegration efficiency of water alone (in the absence of the leader strand) was ~40% of that of the 3\u2032-hydroxyl and water combined (in the presence of the leader strand) (Figure 5C, compare lanes 2 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental finding from reactions with modified semi-integrated substrates shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "c6960e4a-16af-498e-b849-e09e536703dd",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C43",
+      "claim": "Water is ~50% as competent a nucleophile as the 3\u2032-hydroxyl for disintegration.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that water is ~50% as competent a nucleophile as the 3\u2032-hydroxyl for disintegration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on water-mediated disintegration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "165a1994-6df5-4bfb-a320-194b7ff87a40",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C44",
+      "claim": "Formation of the 5\u2032-labeled 183 nt product (signifying no disintegration) was weak, though detectable, for the three trombone substrates tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of the 5\u2032-labeled 183 nt product (signifying no disintegration) was weak, though detectable, for the three substrates tested (Figure 6B; lanes 2, 4, and 6; Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with trombone substrates shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "8c12dd44-0eb4-45f3-8b8d-7283335ba8a9",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C45",
+      "claim": "For all three trombone substrates labeled at the 3\u2032-end, the shorter product (158 nt) exceeded the longer one (184 nt).",
+      "claim_type": "EXPLICIT",
+      "source": "For all three substrates labeled at the 3\u2032-end, the shorter product (158 nt) exceeded the longer one (184 nt) (Figure 6C; lanes 2, 4, and 6; Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from reactions with trombone substrates shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "cc348696-e6ad-4db3-9960-7f6df27799e7",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C46",
+      "claim": "The maximum yield of the 158 nt product in the absence of a leader strand suggests that the second integration is more efficient when disintegration is performed by water rather than by the 3\u2032-hydroxyl.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum yield of the 158 nt product in the absence of a leader strand suggests that the second integration is more efficient when disintegration is performed by water rather than by the 3\u2032-hydroxyl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data from trombone substrate reactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "a7408fda-96c1-4301-8ed3-3c0c9fc1ad29",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C47",
+      "claim": "Integration of the second strand without disintegration of the first is quite infrequent.",
+      "claim_type": "EXPLICIT",
+      "source": "First, integration of the second strand without disintegration of the first is quite infrequent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the trombone substrate experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "45f07011-94ea-4f8f-afa6-53357fd55500",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C48",
+      "claim": "Disintegration of a protospacer from the L-R junction followed by its integration at the R-S junction in a two-step process is rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, disintegration of a protospacer from the L-R junction followed by its integration at the R-S junction in a two-step process is also rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the trombone substrate experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "23010fb5-bf96-42f5-86dc-2c407a696939",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C49",
+      "claim": "Integration of the second strand and disintegration of the first are most often concerted events.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, integration of the second strand and disintegration of the first are most often concerted events, and two-ended insertion events by the Cas1-Cas2 complex seldom occur in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the trombone substrate experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "847805cf-55d3-49d2-9bdd-020bc43d07e3",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C50",
+      "claim": "Water being better at promoting disintegration coupled integration than the 3\u2032-hydroxyl is significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, water being better at promoting disintegration coupled integration than the 3\u2032-hydroxyl is significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the trombone substrate experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "69b6359b-8d14-411f-a705-741666a53032",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C51",
+      "claim": "The strand nick left unsealed during the water-mediated reaction would permit seemingly abortive intermediates to be processed by bacterial DNA repair systems into successful spacer insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "The strand nick left unsealed during the water-mediated reaction would permit seemingly abortive intermediates to be processed by bacterial DNA repair systems into successful spacer insertion (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation and speculation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "c3b7c849-352b-40ad-baa4-df76ab7307d3",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C52",
+      "claim": "Disintegration may be an important (but unappreciated) contributing factor in the adaption stage of CRISPR immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, paradoxically, disintegration may be an important (but unappreciated) contributing factor in the adaption stage of CRISPR immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "d90e89c2-8e3a-42bc-99f6-c852283183ea",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C53",
+      "claim": "The integration by Cas1-Cas2 in vitro starts with the insertion of one protospacer strand at the L-R junction, and utilizes a ruler-like mechanism to attempt integration of the second strand at the R-S junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that the integration by Cas1-Cas2 in vitro starts with the insertion of one protospacer strand at the L-R junction, and utilizes a ruler-like mechanism to attempt integration of the second strand at the R-S junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "8d6ca9cf-777a-4c8c-a768-12ade6bb59bf",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C54",
+      "claim": "A successful second integration event is most often associated with the disintegration of the first one.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a successful second integration event is most often associated with the disintegration of the first one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "d5fa1a12-ab5c-4858-a1bc-f6b60f111ae7",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C55",
+      "claim": "Two-ended protospacer integration, without intervening disintegration, is conceivable in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-ended protospacer integration, without intervening disintegration, is conceivable in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the in vivo mechanism based on the in vitro findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "ee2c67a1-5a02-4343-b5c8-ef8820b4eede",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C56",
+      "claim": "A high-order adaptation complex in which Cas1-Cas2 is assisted by additional Cas proteins and by bacterial factors may deter disintegration by coupling DNA processing to strand transfer without protospacer dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "A high-order adaptation complex in which Cas1-Cas2 is assisted by additional Cas proteins (e.g., Cas4, Csn2, and Cascade/Cas9) and by bacterial factors (e.g., RecBCD and AddAb) (Amitai and Sorek, 2016; Nu\u00f1ez et al., 2015a; Yosef et al., 2012; Heler et al., 2015; Wei et al., 2015a; Levy et al., 2015) may deter disintegration by coupling DNA processing to strand transfer without protospacer dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the in vivo mechanism based on the in vitro findings and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "40809114-16b3-41a5-9952-4a4f9a90c403",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C57",
+      "claim": "Disintegration is generally viewed as antithetical to the completion of the two-strand transfer events during transposition reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Disintegration is generally viewed as antithetical to the completion of the two-strand transfer events during transposition reactions, which are analogous to protospacer insertion at the CRISPR locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "5c9815f7-b365-469b-aa6d-f5ea9bf7a4f6",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C58",
+      "claim": "The in vitro Cas1-Cas2 reactions suggest that disintegration can generate DNA ends capable of triggering repair events that convert one-ended strand transfer intermediates into normal insertion products.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the in vitro Cas1-Cas2 reactions suggest that disintegration can generate DNA ends capable of triggering repair events that convert one-ended strand transfer intermediates into normal insertion products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "016a6081-49e3-40f6-9a6b-b1af0601f9cc",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C59",
+      "claim": "A recent single-molecule FRET analysis suggests that the PSC formed during protospacer integration may be resolved by transcription from the CRISPR leader accompanied by limited DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent single-molecule FRET analysis suggests that the PSC formed during protospacer integration may be resolved by transcription from the CRISPR leader accompanied by limited DNA replication (Budhathoki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited evidence from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "674f3050-a49b-4ca0-8ccb-fd01f4ed5162",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C60",
+      "claim": "If the integration complex functions as a strand transfer-DNA repair machinery, the DNA ends may remain protected within it to be resolved rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the integration complex functions as a strand transfer-DNA repair machinery, the DNA ends may remain protected within it to be resolved rapidly (Figure 7; pathway at the left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation about the mechanism based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "3a2a0e14-d15f-4439-b4a4-ae0820c3fab2",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C61",
+      "claim": "An alternative solution to transcription/replication in simplifying PSC topology is the hydrolytic nicking of DNA (disintegration), allowing transposition (integration) to be completed by ensuing DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study demonstrates that an alternative solution to transcription/replication in simplifying PSC topology is the hydrolytic nicking of DNA (disintegration), allowing transposition (integration) to be completed by ensuing DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "97c42537-6cb6-47e9-84cb-adad69967fed",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C62",
+      "claim": "Disintegration may assist the movement of mini-transposons or short orphan transposons that are mobilized by ectopically supplied transposases.",
+      "claim_type": "EXPLICIT",
+      "source": "In a general sense, disintegration may not be limited to spacer acquisition by CRISPR loci. It may assist the movement of mini-transposons or short orphan transposons that are mobilized by ectopically supplied transposases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "b7c64171-23d1-403f-92b0-22d830f03fe0",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C63",
+      "claim": "Disintegration need not always be counterproductive even during normal transposition, provided the DNA repair machinery is able to recommence the interrupted reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Disintegration need not always be counterproductive even during normal transposition, provided the DNA repair machinery is able to recommence the interrupted reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "c143471e-bb12-492f-b285-8773a59d0d07",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "claim_id": "C64",
+      "claim": "The Cas1-Cas2 system highlights the resourcefulness of biological catalysis in repurposing an apparently abortive reaction toward a physiologically meaningful outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cas1-Cas2 system highlights the resourcefulness of biological catalysis in repurposing an apparently abortive reaction toward a physiologically meaningful outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement summarizing the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In supercoiled plasmid targets, Cas1-Cas2 predominantly catalyzes one-ended protospacer insertions that undergo disintegration, resulting in plasmid relaxation rather than stable integration. The reaction requires the CRISPR locus and protospacer, is optimal at 4:1 or 2:1 Cas1:Cas2 ratios, and produces a relaxed plasmid distribution distinct from topoisomerase I activity, with topological analysis suggesting unwinding of approximately one DNA turn during integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C27 collectively demonstrate through multiple experimental approaches (gel electrophoresis, time courses, topological analysis with chloroquine) that supercoiled plasmids undergo predominantly one-ended integration followed by disintegration. The data in Figures 1C-F and supplements provide converging evidence for the predominance of disintegration over complete integration, with appropriate controls and quantitative topological measurements supporting the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "9ea1baaf-5f8f-4302-a350-d270f8f3b018",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In linear target sites, one-ended insertions at L-R and R-S junctions are approximately equally prevalent and far outnumber complete protospacer insertions. The in vitro Cas1-Cas2 reactions show no strand-specificity, and addition of Csn2 or Cas9 (singly or in combination) fails to confer strand selectivity or stabilize integrations. Nicked target sites show increased integration product formation (2-3 fold) compared to unnicked targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C32 are well-supported by experimental data in Figures 2 and supplements showing equal L-R and R-S insertions in linear targets, lack of strand specificity, and failure of accessory proteins to alter these properties. The nicked target experiments provide additional mechanistic insight. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "b5df145e-b3a5-4a2d-9863-6ae47fc31ca5",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Modified protospacers and target sites with T-insertions reveal a strict hierarchy in junction choice during protospacer acquisition. Native protospacers give predicted products at both L-R and R-S junctions with native targets, but modified targets show almost exclusive integration at the L-R junction, with R-S integration being undetectable or highly underrepresented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by systematic experiments in Figure 3 using modified substrates with varying T-insertions. The data clearly demonstrate L-R dominance in modified targets while maintaining dual junction activity in native targets, revealing the ruler-like mechanism for junction selection. The experimental design appropriately tests the hierarchy hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "db80f315-c9ed-4842-ba7b-ded141d67e68",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Half-target site experiments show that an R-S half-site is co-dominant with a minimal L-R half-site (18 bp repeat) when both are present in the same reaction. However, extending the repeat segment in the minimal L-R half-site by 4 bp restores L-R dominance to the same degree as displayed by modified full linear targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by data in Figure 4 showing that junction dominance depends on repeat length and can be modulated by adding 4 bp to the minimal L-R site. This demonstrates that L-R dominance is not solely dependent on cis-linkage but also on sequence context, providing mechanistic insight into junction recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In semi-integrated substrates mimicking L-R junction integration, the second integration event at the R-S junction is accompanied by prominent disintegration at the L-R junction. Disintegration occurs even when the leader strand is removed or carries a 3'-dideoxy modification, demonstrating water-mediated disintegration. Water-mediated disintegration efficiency is approximately 40% of that achieved by 3'-hydroxyl and water combined, indicating water is approximately 50% as competent a nucleophile as the 3'-hydroxyl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C38-C43 are strongly supported by experiments in Figure 5 using semi-integrated substrates with various modifications. The data clearly demonstrate both 3'-hydroxyl-mediated and water-mediated disintegration through appropriate labeling strategies and substrate designs. Quantitative comparisons between conditions provide robust evidence for the relative efficiencies of the two disintegration mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "acb85d05-bd10-4596-a66a-3c5de8c669bf",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Trombone substrate experiments reveal that integration of the second strand without disintegration of the first is infrequent, and sequential disintegration followed by reintegration is rare. Instead, integration and disintegration are most often concerted events. Water-mediated disintegration promotes more efficient second strand integration than 3'-hydroxyl-mediated disintegration, with the resulting strand nick potentially allowing DNA repair systems to process intermediates into successful spacer insertions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 are supported by sophisticated trombone substrate experiments in Figure 6 that allow simultaneous tracking of both integration and disintegration events through strategic labeling. The data clearly show predominance of the 158 nt product over 184 nt product, indicating coupled integration-disintegration. The mechanistic interpretation linking water-mediated disintegration to DNA repair is logical and consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "68518fce-5574-44ea-b2c1-06ff889098da",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that one-ended integration intermediates may mature into complete spacer insertions via DNA repair pathways, and that disintegration-promoted integration is functionally important in CRISPR adaptation. Water-mediated disintegration leaves strand nicks that can be processed by bacterial DNA repair systems, providing an alternative mechanism for completing spacer insertion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C7, C51, C52, C58, C61 represent speculative proposals about in vivo mechanisms based on in vitro findings. While the in vitro data supporting disintegration are robust, the functional importance in vivo and the role of DNA repair pathways remain hypothetical. No direct evidence is provided that these intermediates are actually processed by repair systems in vivo or that this mechanism is physiologically relevant. This represents an interesting hypothesis requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "86ac2c2b-1db9-4e16-bd69-b635ea48721d",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Integration by Cas1-Cas2 in vitro starts with insertion of one protospacer strand at the L-R junction and utilizes a ruler-like mechanism to attempt integration of the second strand at the R-S junction. However, successful second integration events are most often associated with disintegration of the first insertion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 represent summary conclusions well-supported by the collective experimental evidence from modified substrates (C33-C35), half-sites (C36-C37), semi-integrated substrates (C38-C43), and trombone substrates (C44-C50). The ruler-like mechanism and coupling of second integration to first disintegration are consistently demonstrated across multiple experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "7de05ea1-64f3-4111-990c-358efc162e0a",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that two-ended protospacer integration without intervening disintegration may be conceivable in vivo, potentially facilitated by a high-order adaptation complex containing Cas1-Cas2 assisted by additional Cas proteins and bacterial factors that deter disintegration by coupling DNA processing to strand transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C56 are speculative proposals about potential in vivo mechanisms that could differ from the in vitro observations. While the speculation is reasonable and cites relevant literature about accessory factors, no direct experimental evidence is provided to support these in vivo mechanisms. The proposals serve to reconcile in vitro findings with known in vivo spacer acquisition but remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "e6fca665-5178-4524-88ad-4fb14e620b15",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that disintegration may assist movement of mini-transposons or short orphan transposons, and that disintegration need not always be counterproductive during normal transposition if DNA repair machinery can recommence interrupted reactions. The Cas1-Cas2 system is proposed to highlight biological resourcefulness in repurposing apparently abortive reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C64 represent broad speculative extensions of the findings to other transposition systems without experimental support. While the speculation is intellectually interesting and may stimulate future research, these claims go beyond the data presented and represent hypotheses rather than demonstrated results. No evidence is provided for disintegration roles in other transposition systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "0991cefc-f981-4d68-b1e8-a67052807f6b",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establish that disintegration is generally regarded as an abortive off-pathway reaction, protospacer insertion is mechanistically analogous to DNA transposition, and provide context about CRISPR systems, Cas1-Cas2 structure and function, and the mechanism of protospacer integration involving transesterification reactions at L-R and R-S junctions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C17 represent background knowledge appropriately cited from the literature. These establish the conceptual framework for the study and are well-supported by the cited references. The characterization of disintegration as an abortive reaction (C1) sets up the central challenge to conventional thinking that the paper addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    },
+    {
+      "id": "8d43132b-b15e-451e-a3be-9c6d646a78fa",
+      "content_id": "5672d78a-1979-4558-9d18-c6ebafc71828",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background discussion notes that disintegration is generally viewed as antithetical to completing transposition reactions. A cited single-molecule FRET study suggests PSC resolution by transcription and limited replication. The authors speculate that if the integration complex functions as a strand transfer-DNA repair machinery, DNA ends may remain protected for rapid resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C59-C60 appropriately cite prior work (C59) and provide reasonable speculation (C60) about alternative mechanisms. The citation to Budhathoki et al. 2020 is appropriate, and the speculation about protected DNA ends is consistent with known DNA repair mechanisms, though not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:03:00.321269Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fbc4c679-9021-483a-8afc-93bf80310805",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "74da906f-b5c4-4931-b429-d55b5e7a11cd",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "a731376e-4d0f-4aa5-8b91-44543b896535",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "07b3a2ec-60cb-41b7-93a3-e94b7195fff7",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "e519d42f-dd0c-43c1-b83d-b1fcf82a35e9",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "24e4c957-f8f4-4058-9102-9715fb7fecee",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "79680069-e831-4d32-abd7-797a1c9c08f1",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "98dd451b-b9b1-4e9d-9418-b154960b7b32",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "a18689a5-9857-44d5-b29e-f54090a6ac1a",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "a3f9d5be-5e37-4155-b9ee-a2cda00734f0",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "ab38b09d-d42e-4809-8b0a-d9ebcade96e1",
+      "result_id": "2e509304-b8c2-4917-bd12-f29f9bd90e4f"
+    },
+    {
+      "claim_id": "b9cc175c-b521-4d5b-8431-649b1db75260",
+      "result_id": "9ea1baaf-5f8f-4302-a350-d270f8f3b018"
+    },
+    {
+      "claim_id": "6c1b3f54-b3af-4546-9e9a-21727761fff0",
+      "result_id": "9ea1baaf-5f8f-4302-a350-d270f8f3b018"
+    },
+    {
+      "claim_id": "1eb83e7c-4d1f-4e2f-9982-8d503cc4abc5",
+      "result_id": "9ea1baaf-5f8f-4302-a350-d270f8f3b018"
+    },
+    {
+      "claim_id": "49d9f0de-ac9b-4082-926b-7cdaf4df29fa",
+      "result_id": "9ea1baaf-5f8f-4302-a350-d270f8f3b018"
+    },
+    {
+      "claim_id": "1f1cc661-70aa-4859-8bfc-0a2918999e21",
+      "result_id": "9ea1baaf-5f8f-4302-a350-d270f8f3b018"
+    },
+    {
+      "claim_id": "0302b0ee-d154-49e8-96bb-ef8b393312d5",
+      "result_id": "9ea1baaf-5f8f-4302-a350-d270f8f3b018"
+    },
+    {
+      "claim_id": "e6fd6d19-00d7-4277-9bcb-f1663c402065",
+      "result_id": "b5df145e-b3a5-4a2d-9863-6ae47fc31ca5"
+    },
+    {
+      "claim_id": "3cc80913-e331-4127-9cf8-7ecba6d21f02",
+      "result_id": "b5df145e-b3a5-4a2d-9863-6ae47fc31ca5"
+    },
+    {
+      "claim_id": "b859faf4-7eec-4f0e-9f6b-41b287b998a3",
+      "result_id": "b5df145e-b3a5-4a2d-9863-6ae47fc31ca5"
+    },
+    {
+      "claim_id": "d4dc175a-d527-4bbe-9d8c-79d1ba7d6633",
+      "result_id": "db80f315-c9ed-4842-ba7b-ded141d67e68"
+    },
+    {
+      "claim_id": "8a1909db-6fdf-4fe9-b3eb-fa1ee610f59e",
+      "result_id": "db80f315-c9ed-4842-ba7b-ded141d67e68"
+    },
+    {
+      "claim_id": "e9a6b618-0c36-4311-9981-fd4a66d4ef96",
+      "result_id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752"
+    },
+    {
+      "claim_id": "4cbf02f7-47c9-47fd-9590-71dd6ac42bbc",
+      "result_id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752"
+    },
+    {
+      "claim_id": "e0112877-f45a-4d60-bbbe-b6849012083d",
+      "result_id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752"
+    },
+    {
+      "claim_id": "0acfc24a-6368-45a6-9c58-d3a297c688b3",
+      "result_id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752"
+    },
+    {
+      "claim_id": "aff84b8b-83b5-4c2d-8744-82495f5b5e21",
+      "result_id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752"
+    },
+    {
+      "claim_id": "bb26f57e-f9f3-4b31-ae6c-cf839c28b57e",
+      "result_id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752"
+    },
+    {
+      "claim_id": "c6960e4a-16af-498e-b849-e09e536703dd",
+      "result_id": "e7498a39-898f-4a2a-a0b5-1a5e795ab752"
+    },
+    {
+      "claim_id": "165a1994-6df5-4bfb-a320-194b7ff87a40",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "8c12dd44-0eb4-45f3-8b8d-7283335ba8a9",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "cc348696-e6ad-4db3-9960-7f6df27799e7",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "a7408fda-96c1-4301-8ed3-3c0c9fc1ad29",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "45f07011-94ea-4f8f-afa6-53357fd55500",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "23010fb5-bf96-42f5-86dc-2c407a696939",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "847805cf-55d3-49d2-9bdd-020bc43d07e3",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "69b6359b-8d14-411f-a705-741666a53032",
+      "result_id": "acb85d05-bd10-4596-a66a-3c5de8c669bf"
+    },
+    {
+      "claim_id": "3d18d185-675c-4aff-b084-40a3d944c452",
+      "result_id": "68518fce-5574-44ea-b2c1-06ff889098da"
+    },
+    {
+      "claim_id": "437af849-e309-48e5-b0d5-0b2e9cde0d2a",
+      "result_id": "68518fce-5574-44ea-b2c1-06ff889098da"
+    },
+    {
+      "claim_id": "69b6359b-8d14-411f-a705-741666a53032",
+      "result_id": "68518fce-5574-44ea-b2c1-06ff889098da"
+    },
+    {
+      "claim_id": "c3b7c849-352b-40ad-baa4-df76ab7307d3",
+      "result_id": "68518fce-5574-44ea-b2c1-06ff889098da"
+    },
+    {
+      "claim_id": "5c9815f7-b365-469b-aa6d-f5ea9bf7a4f6",
+      "result_id": "68518fce-5574-44ea-b2c1-06ff889098da"
+    },
+    {
+      "claim_id": "3a2a0e14-d15f-4439-b4a4-ae0820c3fab2",
+      "result_id": "68518fce-5574-44ea-b2c1-06ff889098da"
+    },
+    {
+      "claim_id": "d90e89c2-8e3a-42bc-99f6-c852283183ea",
+      "result_id": "86ac2c2b-1db9-4e16-bd69-b635ea48721d"
+    },
+    {
+      "claim_id": "8d6ca9cf-777a-4c8c-a768-12ade6bb59bf",
+      "result_id": "86ac2c2b-1db9-4e16-bd69-b635ea48721d"
+    },
+    {
+      "claim_id": "d5fa1a12-ab5c-4858-a1bc-f6b60f111ae7",
+      "result_id": "7de05ea1-64f3-4111-990c-358efc162e0a"
+    },
+    {
+      "claim_id": "ee2c67a1-5a02-4343-b5c8-ef8820b4eede",
+      "result_id": "7de05ea1-64f3-4111-990c-358efc162e0a"
+    },
+    {
+      "claim_id": "97c42537-6cb6-47e9-84cb-adad69967fed",
+      "result_id": "e6fca665-5178-4524-88ad-4fb14e620b15"
+    },
+    {
+      "claim_id": "b7c64171-23d1-403f-92b0-22d830f03fe0",
+      "result_id": "e6fca665-5178-4524-88ad-4fb14e620b15"
+    },
+    {
+      "claim_id": "c143471e-bb12-492f-b285-8773a59d0d07",
+      "result_id": "e6fca665-5178-4524-88ad-4fb14e620b15"
+    },
+    {
+      "claim_id": "8f5a14b5-bc53-4ebb-ad1c-ec34b462debf",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "177508c9-62c9-4b7b-80c3-8bd6b80383e9",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "10f16d73-3583-4fbc-b143-a9d4dadf8171",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "1c8276b1-9485-49d0-8491-aab2ddf864a5",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "60eedeb1-5f02-473a-ad84-2b940831b0ec",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "682e8ce3-96b9-415b-a54f-cda05afb2311",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "963a6a7b-aa2f-44cc-b6f7-fb399798c85c",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "ef4428ab-5df0-45cf-89b4-57d2cc0ccd82",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "ebebec4f-24a2-4cdc-a2b5-747d530bbfad",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "9f54f720-4cb4-46d4-882e-e69563291a3f",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "8b0b40ba-a913-4b27-9e8a-f79fb4394535",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "a9439101-4152-41aa-bfc6-bc08c8f02b6a",
+      "result_id": "0991cefc-f981-4d68-b1e8-a67052807f6b"
+    },
+    {
+      "claim_id": "40809114-16b3-41a5-9952-4a4f9a90c403",
+      "result_id": "8d43132b-b15e-451e-a3be-9c6d646a78fa"
+    },
+    {
+      "claim_id": "016a6081-49e3-40f6-9a6b-b1af0601f9cc",
+      "result_id": "8d43132b-b15e-451e-a3be-9c6d646a78fa"
+    },
+    {
+      "claim_id": "674f3050-a49b-4ca0-8ccb-fd01f4ed5162",
+      "result_id": "8d43132b-b15e-451e-a3be-9c6d646a78fa"
+    }
+  ],
+  "comparisons": []
+}

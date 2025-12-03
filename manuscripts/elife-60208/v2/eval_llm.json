@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C98",
+      "C99"
+    ],
+    "result": "The severity of single-capillary occlusion (microstroke) depends on local vascular topology and baseline flow rate. The worst-case scenario (2-in-2-out topology) shows >30% flow reduction two generations away and 70% reduction at generation \u00b11, while the best-case (1-in-1-out) shows only ~15-22% reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C32-C35, C98-C99 provide converging computational evidence from 167 simulations across realistic microvascular networks. The quantitative findings are statistically validated (p<0.001) and show consistent patterns across different topological configurations. The simulation methodology is well-described and appropriate for the research question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C101",
+      "C102"
+    ],
+    "result": "Capillary occlusion reduces tissue perfusion in a volume-dependent manner. For 2-in-2-out MSCs, median inflow reduction is -14% at 0.2 nl volume, dropping to -5.1% at 0.35 nl and approaching 0% at 0.6 nl. Higher baseline flow rates increase the affected tissue volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C101-C102 present quantitative perfusion changes with statistical validation (p=0.005). The analysis box methodology is clearly described and the volume-dependent effects are systematically characterized. The findings logically follow from the simulation framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C60",
+      "C61"
+    ],
+    "result": "Blood flow is redistributed during microstroke with significant reductions in directly connected vessels but increases in parallel vessels. Only ~15-20% of capillaries are parallel, resulting in overall flow reduction. Single-capillary occlusion causes small reductions in many vessels, while multi-capillary occlusion causes larger reductions in fewer vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C60-C61 describe flow redistribution patterns supported by quantitative data from Figures 2g-i and Figure 3. The topological categorization (upstream/downstream, parallel, distant) is well-defined and the findings are internally consistent. The comparison between single and multi-capillary occlusions provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C115"
+    ],
+    "result": "The worst-case topology (2-in-2-out) occurs with low frequency (6-11%), while the best-case (1-in-1-out) represents 43-44% of all capillaries. 1-in-1-out capillaries supply 51-55% of tissue volume, while 2-in-2-out supplies only 4-8%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77, C115 present topological frequency data from comprehensive analysis of two realistic microvascular networks (MVN1 and MVN2). The findings are quantitative, consistent across both networks, and supported by Figure 5. The supplied tissue volume calculations are methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Different capillary topologies may serve distinct functional roles: 2-in-2-out capillaries (higher flow rate, 2.2-2.6\u00d7 that of 1-in-1-out, with 115-297 unique DA-AV paths) may distribute blood, while 1-in-1-out capillaries (37-15 unique paths) may robustly deliver oxygen and nutrients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C81-C82 provide quantitative data on flow rates and path numbers, which are well-supported. However, C79-C80 present functional hypotheses about distinct roles that are speculative and lack direct experimental validation. The inference is reasonable but requires additional evidence (e.g., oxygen transport modeling or in vivo validation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Flow reversals occur predominantly in 2-in-2-out configurations at generation \u00b11 vessels. Flow direction changes are rare in 1-in-1-out capillaries. Complete cessation of flow at generation \u00b11 is rare and occurs only in specific topological configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe flow direction changes supported by Figure 1\u2014figure supplement 2. The findings are consistent with fluid dynamics principles and the specific topological configuration causing cessation (Figure 1\u2014figure supplement 2b) is identified. The rarity of complete cessation is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "RBC flux reduction in the analysis box is larger than flow rate reduction, indicating that single-capillary occlusion affects RBC distribution and may increase risk of local tissue hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is supported by Figure 2\u2014figure supplement 2 showing differential effects on RBC flux vs. flow rate. However, C51's inference about hypoxia risk is speculative without oxygen transport modeling. The authors acknowledge this limitation, noting that tissue pO2 analysis is needed to confirm hypoxia effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Higher baseline flow rate in the occluded capillary increases the spatial extent of flow changes, with larger relative changes at generations \u00b13, \u00b14, \u00b15 (p<0.04) and increased volume showing significant inflow decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by statistical analysis (Figure 2\u2014figure supplement 3) with appropriate paired t-tests. The finding is consistent with fluid dynamics principles and extends the understanding of factors affecting microstroke severity. The main effect of baseline flow rate is statistically significant (F(1,45)=13.97, p<0.001).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Cortical depth does not significantly affect relative flow changes in upstream/downstream capillaries, but MSC position along the capillary path significantly affects inflow changes in the analysis box.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are based on systematic analysis across cortical depths (Figure 2\u2014figure supplement 4) and positions (Figure 2\u2014figure supplement 5). Statistical tests appropriately show no two-way interaction for cortical depth but significant main effect for position (F(1,32)=8.27, p=0.007). The authors note potential confounding by baseline flow rate selection criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Multi-capillary occlusions show increasing flow reduction with number of occluded capillaries (~20% reduction for 9 occlusions in 1.6 nl volume). The number of vessels with flow decrease increases with volume but decreases with more occlusions, indicating flow re-routing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe multi-capillary occlusion effects supported by Figure 3. The sequential occlusion methodology is clearly described and the findings show logical progression. The interpretation of re-routing is consistent with the observed patterns and single-capillary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Arteriole-sided and venule-sided capillaries show spatial proximity: median distance from venule-sided to any vessel is 15-18 \u00b5m, to arteriole-sided is 41-46 \u00b5m (2.73-2.78\u00d7 larger). For 60-68% of venule-sided capillaries, the average AV-factor in 50 \u00b5m spheres is smaller than the capillary's own AV-factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 present quantitative spatial analysis supported by Figure 4. The AV-factor methodology is well-defined and the discretization approach is appropriate. The findings are consistent across both MVN1 and MVN2. However, the authors appropriately note that AV-factor can only be assigned to 60-63% of capillaries due to finite domain size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "MSC type distribution varies along the DA-AV pathway: 1-in-2-out is more frequent on the arterial side, 2-in-1-out toward venules. 93% (MVN1) and 64% (MVN2) of DA-AV paths contain each MSC type at least once, with 2-in-2-out most frequently missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe spatial distribution patterns supported by Figure 5c. The findings are logical given the blood distribution/collection function at arterial/venous ends. The path analysis is comprehensive and the differences between MVN1 and MVN2 are noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Total number of flow paths (139,399 in MVN1) does not change significantly with single or multi-capillary occlusion (p=0.4). Changes in DA-AV-endpoint-pairs are small (~0.2%), suggesting occlusions do not reduce overall connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 present flow path analysis supported by Figure 6b,e and statistical validation. The large number of paths highlights network interconnectivity. The conclusion about maintained overall connectivity is appropriately cautious (C92 uses 'suggest') and supported by the quantitative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "For DA-AV-endpoint-pairs with paths through the MSC (category 1), microstrokes reduce available paths by 25-33% (ratio 0.67-0.75), independent of number of occlusions. Category 2 pairs show no change. This demonstrates local reduction in available paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 describe path reduction analysis supported by Figure 6d,f. The categorization of DA-AV-endpoint-pairs is well-defined (Figure 6c) and the findings are quantitative. The independence from number of occlusions (C95) is an interesting finding. The conclusion (C97) appropriately emphasizes local effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Effects of single-capillary occlusions are spatially constrained: no significant flow reduction beyond 5 generations from MSC, and perfusion drops maximally 10% in 0.3 nl volume for all MSC types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 summarize spatial extent findings that are supported by multiple analyses throughout the results. The quantitative thresholds (5 generations, 10% reduction, 0.3 nl) are clearly stated and consistent with detailed data in Figures 1-2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C110"
+    ],
+    "result": "Single-capillary occlusion does not directly cause tissue damage, as the supplied tissue volume of 1-in-1-out MSC (0.055 nl) is ~15\u00d7 smaller than infarct volume from DA offshoot occlusion (0.8 nl).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 provides quantitative comparison of tissue volumes. However, C111's conclusion that occlusions 'do not directly cause tissue damage' is speculative ('postulate') and based solely on volume comparison without oxygen transport modeling or experimental validation. The authors appropriately frame this as a hypothesis and note it aligns with prior work (Shih et al., 2013).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Single-capillary occlusion strongly impacts local flow field, which may affect A\u03b2 deposition, solute clearance, and increase susceptibility to vessel ruptures or additional occlusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is well-supported by the simulation data. However, C113-C114 present mechanistic hypotheses ('plausible', 'might') about downstream effects that lack direct evidence. The citations to relevant studies (Zhang et al., 2020; Arbel-Ornath et al., 2013; van Veluw et al., 2021) provide context but not validation of these specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C116"
+    ],
+    "result": "The capillary bed offers inherent robustness to single-capillary occlusion, evidenced by low frequency of worst-case topology (8%) and 27% of vessels showing no flow decrease in 0.2 nl volume around MSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 synthesize findings about network robustness. C116 is supported by quantitative data. C117's conclusion is appropriately supported by multiple lines of evidence (topology frequency, flow redistribution, interconnectivity) and citations to prior work on capillary bed topology. The inference is reasonable given the comprehensive analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "For 57% of capillaries, occlusion significantly reduces flow in directly neighboring capillaries, suggesting single-capillary occlusion can initiate a cascade of consecutive disturbances relevant for microinfarct development and pathology progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 provides a quantitative summary supported by the simulation results. However, C124's 'cascade' hypothesis is speculative ('conjecture') and extrapolates beyond the simulation data. While the reduced flow in neighbors provides a mechanistic basis, the cascade progression would require temporal dynamics and biological responses not modeled in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Microinfarcts are linked to pathologies (CAA, AD, dementia), often remain undetected, and range 50 \u00b5m to millimeters in size. Their small size makes quantification challenging and the smallest scale of blood flow disturbance has not been identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C13 establish the background and motivation for the study. These are supported by appropriate citations to prior literature and represent established knowledge in the field. The gap in knowledge (C3) provides clear justification for the computational study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior work has characterized penetrating vessels as 'bottleneck of perfusion', shown DA offshoot occlusion causes 0.8 nl infarcts while capillaries >2 branches from DA show no damage, and demonstrated that single-capillary occlusion causes flow reversals, RBC speed reductions up to 90%, and can affect A\u03b2 plaque formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 summarize prior literature with appropriate citations. These establish the context for the current study and are accurately represented based on the cited sources. The caveat about anesthesia effects (C17) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The finding that baseline flow rate affects microstroke severity agrees with previous in vivo and in silico observations for penetrating vessel occlusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 appropriately contextualizes the current findings within prior literature (Shih et al., 2013; Taylor et al., 2016; Nishimura et al., 2006; Blinder et al., 2013). The comparison is valid and strengthens the interpretation of the simulation results.",
+    "result_type": "MINOR"
+  }
+]

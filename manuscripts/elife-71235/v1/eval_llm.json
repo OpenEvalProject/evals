@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "COVID-19 exhibits extreme variability in patient outcomes, ranging from asymptomatic to fatal, which cannot be fully explained by comorbidities alone, suggesting a genetic component to disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the epidemiological context and motivate the genetic investigation. The claims are supported by appropriate citations (WHO 2021, Vetter et al. 2020, Zhou et al. 2020) and represent well-established knowledge about COVID-19 variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "A Neanderthal-introgressed haplotype on chromosome 3 containing chemokine receptor genes is strongly associated with COVID-19 severity in Europeans (OR=1.88, p=2.7\u00d710\u207b\u2074\u2079), with the core haplotype at highest frequency in South Asians (30%) and evidence of positive selection in that population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 establish prior knowledge about the COVID-19 severity locus. The statistical associations, population frequencies, and selection evidence are well-supported by multiple citations to published GWAS and population genetics studies. This provides essential context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C60"
+    ],
+    "result": "Genome-wide introgression scans in 423 Estonians identified 693 Neanderthal-introgressed segments using Sprime and 493 positively selected segments using U and Q95. The COVID-19 severity haplotype was detected by Sprime but not by U and Q95, indicating it was not under positive selection in Europeans, consistent with its lower frequency (8%) compared to South Asians (30%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 and C60 describe the introgression scanning methodology and results. The methods are standard and appropriately applied. The negative U and Q95 result for the COVID-19 haplotype in Estonians is consistent with population frequency data and prior findings in South Asians, providing coherent evidence for population-specific selection patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "eQTL analysis identified 684 cis-eQTLs from U and Q95 regions with no trans-eQTLs, and 27,342 cis-eQTLs plus 4 trans-eQTLs from Sprime regions in Estonian whole blood samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 report eQTL identification results. The numbers are clearly stated and the analysis uses established eQTLGen data. The finding of trans-eQTLs only in Sprime regions is notable and the results are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introgressed COVID-19 severity region spans ~811 kb (chr3:45,843,242-46,654,616), encompasses 16 genes, ranks in the top 2% for introgression likelihood and top 5% for length among Sprime segments, and contains four major LD blocks (A-D) with minimum pairwise r\u00b2=0.34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 characterize the introgressed segment structure. The genomic coordinates, gene content, ranking statistics, and LD block structure are clearly defined with appropriate references to figures. The extreme length provides additional support for true introgression versus incomplete lineage sorting (C20, citing Huerta-S\u00e1nchez et al. 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "GWAS analysis shows all Sprime alleles in LD block A are significantly associated with COVID-19 severity (median p=2.32\u00d710\u207b\u00b2\u2076, median effect=0.42), 81.2% of block B alleles are significant (median p=1.94\u00d710\u207b\u2079, median effect=0.28), while blocks C and D show no significant associations, suggesting causal variants lie in blocks A or B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 present GWAS association patterns across LD blocks. The statistical values are clearly reported with appropriate significance thresholds (p<5\u00d710\u207b\u2078), effect sizes are provided, and the inference about causal variant location is logical based on the association patterns. Data are referenced to COVID-19 Host Genetics Initiative 2021 and Figure 2B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "All 361 Sprime-identified variants act as cis-eQTLs in whole blood affecting 14 genes including 7 chemokine receptors (CCR1, CCR2, CCR3, CCR5, CCR9, CCRL2, CXCR6). Two trans-eQTLs (rs13063635, rs13098911) on the haplotype have response genes that are 27% and 39% differentially expressed in COVID-19 lung infection experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 connect genetic variants to gene expression. The eQTL data from eQTLGen (V\u00f5sa et al. 2018) is appropriately cited, the chemokine receptor genes are biologically relevant to COVID-19, and the differential expression analysis of trans-eQTL response genes provides functional validation. The percentages and gene lists are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Multiple prior studies have implicated CXCR6, CCR9, SLC6A20, FYCO1, LZTFL1, CCR2, and CCR3 as mediating COVID-19 risk through fine-mapping and TWAS. Expression studies show elevated CCR1 in neutrophils/macrophages and elevated CCR5 in macrophages of critical COVID-19 patients, with CCR1/CCR5 ligands (CCL15, CCL2, CCL3) also overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 summarize prior functional evidence from the literature. Multiple citations support the gene prioritization (Schmiedel et al. 2021, Pairo-Castineira et al. 2021, Kasela et al. 2021, Kousathanas et al. 2022) and expression studies (Chua et al. 2020). This establishes the biological plausibility for focusing on chemokine receptors, particularly CCR1 and CCR5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "eQTL analysis reveals complex regulatory patterns: block A alleles predominantly down-regulate CCR1 (average Z=-12.3), while blocks B and C up-regulate CCR1 (average Z=7.1 and 10.2). For CCR5, alleles in blocks A-C consistently show down-regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe directional eQTL effects across LD blocks. The Z-scores are clearly reported and referenced to Figure 2C. The opposing directional effects for CCR1 across blocks suggest complex regulatory architecture. However, the interpretation is complicated by the fact that these are from healthy whole blood, not infected tissue, which the authors acknowledge in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "613 variants were selected for MPRA testing after filtering for simple repeats, including 293 significantly associated with COVID-19 severity (p<5\u00d710\u207b\u2078) and 15 approaching significance (p<5\u00d710\u207b\u2076). The assay was performed in K562 cells, which can be induced into COVID-19-relevant immune cell types (monocytes, macrophages, neutrophils).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe MPRA experimental design. The variant selection criteria are clearly stated with appropriate filtering (Benson 1999, Tewhey et al. 2016), GWAS significance thresholds are standard, and the K562 cell line choice is justified by its multipotent hematopoietic properties and ability to differentiate into relevant immune cells (supported by citations to Tabilio et al. 1983, Sutherland et al. 1986, Butler and Hirano 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MPRA quality control shows high replicate correlation (Pearson's R>0.999, p<2.2\u00d710\u207b\u00b9\u2076), significant but incomplete correlation between cDNA and plasmid DNA (Pearson's R=0.24, Spearman's \u03c1=0.912, p<2.2\u00d710\u207b\u00b9\u2076), positive control correlation with source MPRA (R=0.59, p=0.0058), and 95% of positive controls vs 14% of negative controls showing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 establish MPRA technical validity. The extremely high replicate correlation demonstrates reproducibility, the cDNA-plasmid correlation pattern is consistent with other MPRAs (Tewhey et al. 2016, Uebbing et al. 2021), positive control validation is significant, and the differential activity rates between positive and negative controls confirm assay specificity. All statistics are clearly reported with references to Figure 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "327 (53%) of 613 tested variants were within active cis-regulatory elements (CREs), with only 17.1% showing log fold change >2. Active CREs are significantly enriched in K562 DNase I Hypersensitivity Sites and poised promoters (OR=8.05, p=0.023) and borderline depleted in heterochromatin (OR=0.73, p=0.072).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 characterize MPRA-identified active sequences. The 53% activity rate is reasonable, the modest effect sizes are consistent with other MPRAs (Tewhey et al. 2016, Ulirsch et al. 2016, Uebbing et al. 2021), and the enrichment analysis using K562 chromatin state data (Ernst and Kellis 2017) provides validation that active CREs correspond to endogenous regulatory regions. Statistical tests and odds ratios are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "20 expression modulating variants (emVars) were identified using stringent criteria (corrected p<0.01), with only 1 emVar showing absolute log fold change >2, consistent with modest effect sizes typical of MPRA studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 report emVar identification. The stringent multiple hypothesis correction threshold (p<0.01) is appropriate, the number identified (20 from 613) is reasonable, and the modest effect sizes are consistent with prior MPRAs (Tewhey et al. 2016, Ulirsch et al. 2016). Results are referenced to Table 1 and multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Four emVars (rs35454877, rs71327024, rs71327057, rs34041956) meet all prioritization criteria: significant COVID-19 GWAS association, eQTL for COVID-19-relevant genes, Hi-C contact with target gene promoters in immune cells, and overlap with immune cell cCREs. Based on eQTL and Hi-C data, rs35454877 likely regulates CCR5 while the other three regulate CCR1. These variants are also associated with monocyte and granulocyte phenotypes and overlap transcription factor ChIP-seq peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe the prioritization of top candidate variants. The multi-criteria approach integrating GWAS, eQTL, Hi-C, and epigenomic data is rigorous and well-justified. The specific variants are clearly identified in Table 1 and Figure 2, their genomic locations relative to the tag SNP rs10490770 are specified, associations with blood cell phenotypes are supported by citation (Astle et al. 2016), and ChIP-seq overlap is documented. The inference about target genes (CCR1 vs CCR5) is based on integration of multiple data types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The archaic allele at rs17713054 increases binding affinity for CEBPB, a transcription factor involved in interleukin signaling. CEBPB binding to this region was independently confirmed in lung-derived cell lines A549 and IMR-90.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 identify an additional variant of interest through TF binding analysis. The CEBPB binding affinity prediction is supported by computational analysis, the biological relevance is established by citation (Poli 1998), and independent ChIP-seq validation in lung cell lines is shown in Figure 2\u2014figure supplement 2. While rs17713054 was not an emVar in K562 cells, the authors appropriately note it warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Reporter assays in mock-infected A549-ACE2 cells show rs71327024 and rs35454877 exhibit significant expression differences between introgressed and non-introgressed alleles, with higher expression from introgressed alleles. Upon SARS-CoV-2 infection, rs71327024 remains significant (1.12-fold increase from introgressed allele), while rs35454877 loses differential expression due to substantial down-regulation of the introgressed allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present key functional validation in a disease-relevant context. The reporter assay design is appropriate, using lung epithelial cells expressing ACE2 and actual SARS-CoV-2 infection. The statistical significance is stated, effect sizes are quantified, and the differential response to infection between variants is clearly documented with reference to Figure 5B. The infection-dependent change in rs35454877 behavior is particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Previously reported tag SNPs for COVID-19 severity (rs10490770, rs35044562, rs11385942) did not show expression modulation potential in the MPRA, suggesting they are likely tagging rather than causative variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 report negative MPRA results for previously cited tag SNPs. The negative findings are clearly stated with appropriate citations to prior studies (COVID-19 Host Genetics Initiative 2021, Zeberg and P\u00e4\u00e4bo 2020, Ellinghaus et al. 2020). The authors appropriately note the caveat that these variants might show activity in other cell types or conditions. This is an important finding that helps refine understanding of causal variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Two emVars (rs34041956, rs71327024) show expression modulation in response to SARS-CoV-2 infection. The introgressed allele at rs71327024 drives increased CCR1 promoter activity during infection, consistent with elevated CCR1 being a molecular symptom of severe COVID-19. The introgressed allele at rs35454877 drives 1.7-fold increased CCR5 promoter activity in uninfected cells but is severely down-regulated upon infection, potentially leaving elevated CCR5 protein levels initially that may increase hyperactive cytokine response risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68 integrate infection-response data with disease mechanisms. The experimental observations (C63, C65, C66) are supported by the reporter assay data. However, the mechanistic interpretations (C67, C68) are speculative, involving inferences about protein levels, timing of responses, and disease mechanisms that are not directly tested. The connection to elevated cytokine levels (C64) is stated as established knowledge but the specific link to these variants requires additional validation. The speculation is reasonable but needs further experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "CCR1 and CCR5 are upregulated in severe COVID-19 relative to moderate cases, yet the top candidate CCR1-regulating emVars show down-regulation in K562 MPRA, and block A alleles act as down-regulating eQTLs in healthy whole blood. The authors hypothesize this reflects differential regulation across cell types and infection states, with these alleles potentially destabilizing CCR1/CCR5 regulatory mechanisms causing decreased expression in some contexts but hyper-expression in others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C73 address an apparent paradox in the data. The upregulation in severe COVID-19 (C69, supported by Chua et al. 2020 and authors' data) contrasts with down-regulation in K562 MPRA (C70) and healthy blood eQTLs (C71). The hypothesis (C72, C73) about context-dependent regulatory destabilization is plausible but speculative. The authors acknowledge this complexity but do not provide direct experimental evidence for the proposed mechanism. This represents an important unresolved question requiring additional cell-type and condition-specific experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Multiple genes at the chromosome 3 locus, including CCR1 and CCR5, show promising evidence for roles in COVID-19 severity mechanisms. The involvement of most genes in the chemokine signaling pathway and evidence of coregulation from eQTL, epigenetic, and expression analyses support the hypothesis that COVID-19 response is modulated in a concerted manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 present the overall conclusions. The evidence for multiple genes being involved is supported by the integration of GWAS, eQTL, Hi-C, epigenomic, expression, and functional data presented throughout the manuscript. The chemokine signaling pathway connection is well-established, and the coregulation evidence from multiple data types is documented. The conclusion is appropriately cautious, stating 'promising evidence' rather than definitive proof, and acknowledging the work of other groups.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C8",
+      "C39",
+      "C40"
+    ],
+    "result": "E. coli has access to resistance mutations with diverse collateral effects against multiple antibiotics. Analysis of knock-out mutations (Chevereau et al., 2015) and point mutations in TEM-1 \u03b2-lactamase (Stiffler et al., 2015) shows that resistance mutations against one drug can produce collateral resistance, sensitivity, or neutrality against other drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C6, and C8 are well-supported by the reanalysis of two published datasets (C39, C40) shown in Figure 1 and Figure 1\u2014figure supplement 1. The authors identify 12-170 resistance mutations per antibiotic with diverse collateral effects across all four quadrants of fitness space, demonstrating that both collateral resistance and sensitivity are accessible to E. coli populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C41"
+    ],
+    "result": "The joint distribution of fitness effects (JDFE) framework is suitable for modeling collateral resistance/sensitivity evolution. The JDFE extends the single-environment DFE concept to capture the diversity of pleiotropic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C41 logically follow from the demonstrated diversity of collateral effects (C3, C6, C8). The JDFE framework is appropriately motivated as a natural extension of established DFE theory to multi-environment scenarios, with proper citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The correlation structure of JDFEs does not reliably predict pleiotropic outcomes. Simulations show that positively correlated JDFEs can lead to fitness losses and negatively correlated JDFEs can lead to fitness gains in non-home environments, and JDFEs with similar shapes can produce different outcomes while different shapes can produce similar outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are directly supported by simulation results in Figure 2, which demonstrate counter-intuitive relationships between JDFE correlation and pleiotropic outcomes. This motivates the need for a more sophisticated theoretical framework beyond simple correlation measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C42",
+      "C45"
+    ],
+    "result": "In the strong selection weak mutation (SSWM) regime, the theory predicts that fitness dynamics follow a diffusion equation with mean and variance determined by pleiotropy statistics r\u2082 and D\u2082\u2082. The theory shows excellent agreement with simulations on 125 Gaussian JDFEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is strongly supported by Figure 3A-B showing excellent quantitative agreement (R\u00b2>0.88) between theoretical predictions (Equations 1-2) and SSWM simulations. The theoretical approximations (C42, C45) are standard in population genetics and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C52"
+    ],
+    "result": "The theory is extended to the concurrent mutation regime using adjusted pleiotropy statistics r\u2082* and D\u2082\u2082* that account for effective neutrality thresholds. While rigorous analytical calculations for variance are unavailable, the adjusted statistics show good correlation with simulation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension to concurrent mutations is supported by Figure 3C-H showing strong correlations (R\u00b2=0.81-0.99 for r\u2082*, R\u00b2=0.84-0.88 for D\u2082\u2082*) between adjusted statistics and Wright-Fisher simulations. The authors appropriately acknowledge limitations (C52) regarding variance predictions due to autocorrelation effects not captured by the theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The collateral risk statistic c = r\u2082/\u221aD\u2082\u2082 provides a robust ranking of drug pairs according to collateral resistance risk across all population genetic parameters tested. This 1-1 rank correlation holds for 125 Gaussian JDFEs and empirical TEM \u03b2-lactamase JDFEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is strongly supported by Figure 4C showing high R\u00b2 values (0.82-0.94) between c-rank and empirical collateral resistance risk across different NUb regimes, and Figure 4\u2014figure supplement 1 confirming this for empirical data. This demonstrates the practical utility of the c statistic for ranking drug pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C85"
+    ],
+    "result": "JDFE parameters can be estimated with modest experimental effort for the purpose of ranking drug pairs. Both Luria-Delbr\u00fcck and barcode lineage tracking methods show strong correlations between estimated c-ranks and actual collateral resistance risk with as few as 10 sampled mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C85 are supported by Figure 5 and Figure 5\u2014figure supplement 1 showing that both sampling methods achieve high correlations (R\u00b2>0.6 with 10 mutants, improving with larger samples) between estimated and true rankings. The insensitivity to threshold choice (C85) strengthens the practical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32"
+    ],
+    "result": "Collateral sensitivity between drugs can be exploited in multi-drug treatments to slow resistance evolution and potentially eliminate populations before multi-drug resistance emerges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C32 represent established knowledge in the field, properly cited to prior work (P\u00e1l et al., 2015; Pluchino et al., 2012). These claims provide appropriate motivation and context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior experimental studies show inconsistent collateral sensitivity profiles between experiments and high variation between replicates. The diversity of collateral effects has rarely been systematically measured, and few approaches have modeled this diversity within a population genetics framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C33, and C34 accurately characterize the state of the field with appropriate citations to multiple prior studies. These observations motivate the need for the theoretical framework developed in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The JDFE is a local property of the fitness landscape that can be estimated using high-throughput techniques, though it may change over time. For collateral drug resistance, the relevant timescales are short enough that the JDFE can be assumed approximately constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 appropriately characterize the JDFE concept with proper citations and acknowledge its limitations. The justification for constant JDFE assumption (C37) is reasonable for the short-term drug resistance context, though this remains an approximation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Comprehensive genome-wide JDFE data for antibiotic resistance are not currently available, and most evolution experiments have too few replicates to measure variation in collateral outcomes. Rigorous empirical validation requires new whole-genome JDFE measurements and higher-throughput evolution experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C57-C60 accurately assess data availability and experimental limitations in the field. The citation to Nichol et al., 2019 (C59) as an exception with 60 replicates is appropriate. These observations correctly identify what is needed for empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The model assumes asexual populations with de novo mutations and constant JDFEs, though horizontal gene transfer and epistasis occur in reality. The main results hold under simple 'global' epistasis, but how JDFEs vary among genetic backgrounds is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 appropriately acknowledge model limitations with proper citations. The extension to global epistasis (C67) in Appendix 1 addresses one limitation. These are honest assessments of model assumptions and their potential violations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The JDFE framework has broader implications for understanding generalist vs. specialist evolution. It provides a mathematical way to describe the continuum between antagonistic pleiotropy and mutation accumulation, showing that all JDFEs with negative r\u2082 can promote specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 appropriately extend the theory to broader evolutionary questions with proper citations to relevant literature. The theoretical result (C74) follows logically from the model. This represents a valid broader application of the framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Two methods for sampling beneficial mutations are proposed: Luria-Delbr\u00fcck (LD) method selecting at high drug concentrations, and barcode lineage tracking (BLT) method. The LD method is easier but may miss weakly beneficial mutations selected at lower concentrations, while BLT can sample mutations before they accumulate secondary changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 provide appropriate practical guidance for JDFE estimation with proper citations to support limitations and advantages of each method. The descriptions of both methods are accurate and the caveats are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C61"
+    ],
+    "result": "Direct empirical validation would require estimating JDFEs, ranking drug pairs by c-statistic, and testing rankings through evolution experiments. If JDFEs are Gaussian, parameters could be learned from a handful of random mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56 and C61 are speculative proposals (evidence_type: SPECULATION) about future validation strategies. While reasonable, these have not been tested empirically. The conditional statement about Gaussian JDFEs (C61) is logical but remains hypothetical.",
+    "result_type": "MINOR"
+  }
+]

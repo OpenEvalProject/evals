@@ -1,0 +1,1931 @@
+{
+  "submission": {
+    "id": "b593af70-67af-4d8a-ae75-7e1bcc79ccbb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:25:13.637130Z",
+    "updated_at": "2025-12-03T06:25:13.637130Z"
+  },
+  "content": [
+    {
+      "id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "submission_id": "b593af70-67af-4d8a-ae75-7e1bcc79ccbb",
+      "content_type": "manuscript",
+      "content_text": "# McsB forms a gated kinase chamber to mark aberrant bacterial proteins for degradation\n\n## Authors\n\n- Bence Hajdusits<sup>1</sup>\n- Marcin J Suskiewicz<sup>1</sup> ([ORCID: 0000-0002-3279-6571](https://orcid.org/0000-0002-3279-6571))\n- Nikolas Hundt<sup>2</sup> ([ORCID: 0000-0001-8217-671X](https://orcid.org/0000-0001-8217-671X))\n- Anton Meinhart<sup>1</sup>\n- Robert Kurzbauer<sup>1</sup>\n- Julia Leodolter<sup>1</sup>\n- Philipp Kukura<sup>2</sup> \u2020\n- Tim Clausen<sup>1</sup> ([ORCID: 0000-0003-1582-6924](https://orcid.org/0000-0003-1582-6924)) \u2020\n\n### Affiliations\n\n1. Research Institute of Molecular Pathology (IMP), Vienna BioCenter Vienna Austria\n2. Physical and Theoretical Chemistry Laboratory, Department of Chemistry, University of Oxford Oxford United Kingdom\n3. Medical University of Vienna Vienna Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn Gram-positive bacteria, the McsB protein arginine kinase is central to protein quality control, labeling aberrant molecules for degradation by the ClpCP protease. Despite its importance for stress response and pathogenicity, it is still elusive how the bacterial degradation labeling is regulated. Here, we delineate the mechanism how McsB targets aberrant proteins during stress conditions. Structural data reveal a self-compartmentalized kinase, in which the active sites are sequestered in a molecular cage. The \u2018closed\u2019 octamer interconverts with other oligomers in a phosphorylation-dependent manner and, unlike these \u2018open\u2019 forms, preferentially labels unfolded proteins. In vivo data show that heat-shock triggers accumulation of higher order oligomers, of which the octameric McsB is essential for surviving stress situations. The interconversion of open and closed oligomers represents a distinct regulatory mechanism of a degradation labeler, allowing the McsB kinase to adapt its potentially dangerous enzyme function to the needs of the bacterial cell.\n\n## Introduction\n\nMicroorganisms have evolved specialized defense mechanisms for coping with adverse environmental changes. Pathogenic bacteria, for example, employ an intricate stress-response and protein quality control (PQC) machinery to counteract proteotoxic stresses imposed by the immune system and adapt to nutritional limitation, oxidative stress, and elevated temperatures (Elharar et al., 2014; M\u00fcller and Weber-Ban, 2019; Raju et al., 2012; Rowley et al., 2006). In Gram-positive pathogens, the repressor CtsR, the protein arginine kinase McsB and the protease ClpC:ClpP constitute the core of the stress-response operon (Derre et al., 1999; Kirstein et al., 2007; Kr\u00fcger and Hecker, 1998). The system comprises both transcriptional and post-transcriptional mechanisms, enabling the rapid expression of heat-shock factors and the elimination of damaged bacterial proteins, respectively. While the former regulatory network of transcription factors has been characterized in detail (Chaturongakul et al., 2011; Schumann, 2003), the equally important process of removing aberrant proteins is less understood. The protein kinase McsB is critical for both processes, as it coordinates stress signaling and protein degradation pathways.\n\nCompared to eukaryotes, bacteria express a broader range of protein-phosphorylating enzymes that target a wider spectrum of amino acid residues (Macek et al., 2019; Mijakovic et al., 2016). McsB is a prominent member of the specialized bacterial kinases and has the unique activity of phosphorylating arginine residues (Fuhrmann et al., 2009). Major substrates of McsB are the two central heat-shock repressors CtsR and HrcA (Schumann, 2003; Schumann, 2016). As shown for CtsR, McsB controls the two transcription factors by phosphorylating arginine residues in their DNA-reading heads, thus promoting their dissociation from DNA and inducing the expression of stress-response genes (Fuhrmann et al., 2009; Schmidt et al., 2014; Trentini et al., 2016). Ultimately, de-repression of CtsR and HrcA leads to an upregulation of potent PQC factors including the McsB kinase itself, the molecular chaperones GroES and GroEL, the disaggregase ClpE and the ClpC:ClpP protease (Gophna and Ron, 2003). Aside from this regulatory role, the phosphoarginine (pArg) mark introduced by McsB has a broader function in the cell, serving as a degradation tag that directs client proteins to the ClpC:ClpP protease (Stannek et al., 2014; Trentini et al., 2016;\u00a0Figure 1\u2014figure supplement 1). Impairment of the pArg-ClpC:ClpP degradation pathway precludes clearance of protein aggregates (Stannek et al., 2014) and limits survival under heat-shock conditions (Trentini et al., 2016). This pArg-mediated housekeeping function is likely to underlie McsB\u2019s pivotal role as a virulence factor, enabling severe human pathogens like Staphylococcus aureus and Listeria monocytogenes to cope with adverse conditions imposed by the host immune system (Singh et al., 2015; Wozniak et al., 2012).\n\nOn a molecular level, the McsB kinase is composed of a specialized phospho-transferase scaffold for arginine phosphorylation and a dimerization domain aligning two subunits (Suskiewicz et al., 2019;\u00a0Figure 1a). In vitro and in vivo data showed that dimer formation is a prerequisite for attaining full kinase activity, most likely by mechanistically coupling the two active sites (Suskiewicz et al., 2019). Although the McsB dimer represents the basic functional unit of the protein arginine kinase, various oligomeric states have been reported, ranging from monomers to dimers and even higher\u00a0order oligomers (Fuhrmann et al., 2009; Jung et al., 2019; Kirstein et al., 2005; Trentini et al., 2016). It is not yet clear, however, whether these different oligomeric states play a role in the bacterial heat shock response. Likewise, the molecular features that enable McsB to recognize and bind protein substrates have not been resolved so far. Conceptually, the pArg mark added by McsB is similar to the eukaryotic poly-ubiquitin tag, serving as a degradation signal for general proteolysis. In eukaryotes, the ubiquitin E3 ligases, which carry out the degradation labeling, are tightly controlled enzymes, where substrate selection and/or ligase activity can be adjusted to specific physiological requirements (Deshaies and Joazeiro, 2009). Given its important role in deciding about the fate of bacterial proteins, the pArg-tagging activity of McsB should be carefully regulated as well. Proteomics data, however, suggest that the McsB arginine kinase is a rather promiscuous enzyme targeting a large set of substrates, without exhibiting any consensus sequence specificity (Elsholz et al., 2012; Junker et al., 2018; Schmidt et al., 2014; Trentini et al., 2014; Trentini et al., 2016). It is thus unclear how the McsB kinase selects for aberrant proteins that need to be degraded and distinguishes these damaged molecules from natively folded proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic picture of the McsB dimer, emphasizing its domain architecture and the location of the catalytic and allosteric sites (PD, phosphotransferase domain; DD, dimerization domain). (b) Size exclusion chromatography (SEC) of recombinant McsBBS and McsBGS. Triangular markers indicate the protein\u00a0size at the peaks. (c) SEC analysis of lysates of heat-shocked and non-heat shocked B. subtilis cell cultures. Comparing the western blots to SDS-PAGE gels of isolated McsB dimer and HOO reveals the different size distributions of McsB under the applied conditions.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Comparison of the ubiquitin-proteasome and pArg-ClpCP degradation pathways that are similarly organized but use distinct degradation signals (orange).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Size exclusion chromatography of recombinant McsBGS showing two dominant peaks (left panel). Secondary SEC runs of the two major peaks (right panel).\n\nConsidering the promiscuity of the McsB kinase and the existence of its different oligomeric states, we studied whether the kinase\u2019s oligomerisation status affects its function as a degradation labeler. Our in vitro and in vivo data show that oligomer conversion is critical to adapt the kinase activity of McsB to its PQC function. We found that the pArg-dependent switch in oligomeric state defines McsB\u2019s substrate specificity and becomes essential during stress situations to efficiently eliminate damaged proteins. In addition to revealing the central phospho switch that regulates degradation labeling in bacteria, our findings highlight the power of combining structural approaches with novel biophysical methodologies, which we anticipate will reveal similarly complex mechanisms in other biological systems.\n\n## Results\n\n### McsB forms higher\u00a0order oligomers in vitro and in vivo\n\nPrevious structure-function studies have been carried out with the Geobacillus stearothermophilus McsB kinase (McsBGS), the prevalent model for protein arginine kinases (Fuhrmann et al., 2013; Fuhrmann et al., 2009; Jung et al., 2019; Suskiewicz et al., 2019). McsBGS exists mainly as a functional dimer in vitro, but is also capable of forming higher\u00a0order oligomers, as suggested by native mass spectrometry (Suskiewicz et al., 2019) and analytical size exclusion chromatography (SEC) data (Figure 1\u2014figure supplement 2). To investigate the biological relevance of the various kinase states, we studied the McsB kinase from Bacillus subtilis (McsBBS), which exhibits 71% sequence identity to McsBGS. After establishing an efficient procedure for recombinant production of McsBBS, we performed analytical SEC runs and observed a comparable distribution of oligomeric states. Whereas the profile of McsBGS consists of a prominent dimeric peak at 80 kDa and higher\u00a0order oligomers (HOOs) with a molecular size of 250\u2013450 kDa, McsBBS mainly consists of large HOOs and exhibits only a minor dimer peak (Figure 1b).\n\nTo explore whether the higher\u00a0order kinase forms might be present in vivo, we analyzed B. subtilis cells grown under normal and heat-shock conditions. After disrupting the bacteria, we applied the cell lysate to a size exclusion chromatography (SEC) column, separating the bacterial proteins according to size. The western blot profiles of the endogenous protein obtained using an McsB antibody were compared with those of recombinant McsBGS (isolated dimer) and McsBBS (enriched in HOOs), serving as our 80 kDa and 400 kDa size standards, respectively. This analysis indicated that endogenous cellular McsBBS forms assemblies of various sizes (Figure 1c). Intriguingly, McsBBS showed different distributions depending on the investigated environmental scenarios. Under standard conditions, the bulk of McsBBS was present as smaller species with sizes comparable to recombinant dimers, whereas heat-shock induced upregulation of markedly larger complexes. The size shift could indicate oligomerization of McsB into species similar to those found for the in vitro reconstituted McsBBS protein. Equally likely, these larger objects could be McsB dimers associated with folded/unfolded substrates, or with substrates whose abundance is up-regulated during heat-shock.\n\nThe presence of McsB in fractions at the SEC column\u2019s void volume might point to the induced formation of larger oligomers of the protein kinase that may be associated with soluble protein aggregates, its preferred substrates in vivo (Trentini et al., 2016). In sum, these data suggest that in the cell, the McsB kinase exists in different complexes, which interconvert in response to changing environmental conditions. We consider it likely that these states include the oligomeric states recapitulated in vitro, but the nature of McsB associations in vivo should be further probed with other techniques in the future.\n\n### McsB from B. subtilis assembles a pArg-stabilized octamer\n\nDespite the polydispersity of the recombinant McsBBS sample, we initiated a structural study of it. For this purpose, we performed secondary SEC runs, enriching the peak fraction of the higher-order oligomers, and subjected this sample to crystallization trials. We obtained crystals diffracting to 2.5 \u00c5 resolution, revealing the atomic structure of the McsBBS octamer (Figure 2a;\u00a0Table 1). The octameric particle represents a tetramer of dimers, with each dimer resembling the reported McsBGS structure in its subunit contacts, domain arrangement and active site organization (Figure 2\u2014figure supplement 1A). The four McsBBS dimers form a molecular cage having the length of one dimer, 110 \u00c5, and a diameter of 80 \u00c5. The phosphorylation chamber has well-defined entrance gates with openings of approximately 25 \u00c5. Potential substrates have to pass the entrance gates in order to reach the active sites, which are buried within the inner chamber (Figure 2b, Video 1). Notably, none of the residues implicated in substrate binding or catalysis is engaged in inter-dimer contacts, suggesting that the internal active sites are functional. Octamer formation proceeds along the extended edge of the brick-shaped McsB dimer, where two clusters of polar residues enclose a small hydrophobic core. From the polar patches, the inner contact site comprises a dense network of hydrogen bonds woven around arginine residue 194. Strikingly, the electron density revealed that Arg194 is phosphorylated at a terminal amine of its guanidinium group (Figure 2c). The pArg194 phospho-guanidinium group is accommodated in a complementarily charged pocket of a neighboring dimer. This pArg receptor site (pR-RS) corresponds to the previously identified pArg binding pocket of McsBGS that enables allosteric stimulation (Suskiewicz et al., 2019;\u00a0Figure 2\u2014figure supplement 1B). In the McsBBS octamer, Arg337*, Arg341*, and Ser285* of the molecular neighbor closely interact with the pArg194 phosphoryl group, whereas Asp338* tightly binds to the positively charged nitrogen of the pArg guanidinium function (Figure 2d). Given these intimate ion-pair and hydrogen-bonding interactions, we presume that the pArg:pR-RS* tethering, established twice between each pair of aligned dimers, is the major interaction stabilizing the McsBBS octamer. Consistent with this, the pArg:pR-RS* contact accounts for half of the inter-dimer interface, which measures 850 \u00c52. In conclusion, structural analysis of the protein arginine kinase from B. subilits revealed the structural organization of the McsB octamer. It assembles into a self-compartmentalized kinase stabilized by the auto-phosphorylated residue pArg194. Although post-translational modifications have often been implicated in regulating oligomerization, the structure of the pArg194-linked McsB octamer represents, to our knowledge, the first atomic visualization of a defined higher-order oligomer that strictly depends on a specific phosphorylation event.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig2-v2.jpg)\n\n**Figure 2.:** (a) Ribbon plot of the McsBBS octamer (side and top views) with alternating dimers colored differently.\u00a0(b) McsB is a self-compartmentalized kinase, as shown in the half-cut surface representation. The location of the active sites within the phosphorylation chamber is highlighted in lilac and the pArg194 clamp in orange. The right panel illustrates the high conservation of the respective active site and interface regions. (c) Orthogonal view into the octamer (cross section indicated), with the pArg194 residue highlighted in orange. The right panel illustrates the binding of pArg194 in a complementary charged pocket of the neighboring subunit (top) and its Fo-Fc omit density calculated at 2.5 \u00c5 resolution and contoured at 3.0 \u03c3 (bottom). (d) Structural details of pArg194 locked by intermolecular contacts to the pR-RS of a neighboring protomer (asterisks indicate residues contributed by the adjacent molecule).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Structural alignment of the functional dimer and (b)\u00a0the pArg binding pocket. The two orthologs are colored differently.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Octameric McsBBS (6TV6)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\"></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td></td>\n      <td>P21212</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td></td>\n      <td>137.79, 147.64, 81.47</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td></td>\n      <td>90, 90, 90</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)a</td>\n      <td></td>\n      <td>49\u20132.5 (2.56\u20132.5)</td>\n    </tr>\n    <tr>\n      <td>Rmeas(I)</td>\n      <td></td>\n      <td>0.146 (1.53)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3 (I)</td>\n      <td></td>\n      <td>13.2 (1.2)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td></td>\n      <td>0.998 (0.561)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td></td>\n      <td>99.8 (99.8)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td></td>\n      <td>6.7 (6.9)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\"></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td></td>\n      <td>49\u20132.5</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td></td>\n      <td>58,139</td>\n    </tr>\n    <tr>\n      <td>Rwork / Rfree</td>\n      <td></td>\n      <td>0.193 / 0.237</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td></td>\n      <td>11,289</td>\n    </tr>\n    <tr>\n      <td>ion</td>\n      <td></td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td></td>\n      <td>117</td>\n    </tr>\n    <tr>\n      <td>B factors</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td></td>\n      <td>55.6</td>\n    </tr>\n    <tr>\n      <td>Ion</td>\n      <td></td>\n      <td>57.7</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td></td>\n      <td>51.4</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td></td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td></td>\n      <td>1.083</td>\n    </tr>\n  </tbody>\n</table>\n\n_aValues in parentheses are for highest-resolution shell._\n\n![Video 1.](https://cdn.elifesciences.org/articles/63505/elife-63505-video1.mp4.jpg)\n\n**Video 1.:** The video introduces the basic building block, the McsB dimer, showing the location of the active site and the pArg clamp. After assembling the McsB octamer, the surface presentation emphasizes the self-compartmentalization of the protein kinase, locking the active sites within a phosphorylation chamber. Narrow entry gates restrict access of substrate allowing the selective degradation labeling of unfolded proteins or protein segments.\n\n### McsB exists in a dynamic equilibrium of monomers, dimers and multi-dimers\n\nTo better understand the change in oligomer distribution of B. subtilis McsB upon heat shock (Figure 1c), we reconstituted the McsBBS system in vitro and characterized the switch mechanism using mass photometry (Young et al., 2018). We first studied the concentration-dependent behavior of McsB. The improved size resolution of mass photometry as compared to SEC revealed various small molecular weight forms including 1-, 2-, 4-, and 6-mers at protein concentrations from 10 to 500 nM, with the monomer and dimer being predominant at low concentrations (Figure 3a). At increasing concentrations, the population shifted toward formation of higher-order oligomers, such as 4-, 6-, and 8-mers. In addition, we observed small amounts of oligomers consisting of 10 and 12 subunits. When we performed mass photometry on the McsBGS orthologue, we observed a less complex protein mixture at lower protein concentrations (Figure 3b). The kinase showed a clear preference to dimerize and started to assemble into higher\u00a0order oligomers only at higher concentrations, of about 50 nM. Please note that the apparent discrepancy in oligomer abundance between SEC and mass photometry is not only due to the different working concentrations. The single-molecule nature of protein quantification with mass photometry also results in different proportions within the size distribution than for the UV absorption signal in SEC. In mass photometry, each oligomer molecule is counted as a single landing event and therefore contributes equally to the height of its respective peak in the mass distribution. In SEC, large oligomers have an absorption signal that is proportionally stronger the more protein subunits they are composed of, making large species appear more prominent in the SEC profile than smaller ones.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig3-v2.jpg)\n\n**Figure 3.:** (a) Distribution of McsBBS oligomers at increasing protein concentrations (10\u2013500 nM). (b) Distribution of McsBGS at increasing protein concentration (10\u2013100 nM). (c) Proposed model of McsB oligomer conversion, with pArg residues represented by colored circles. Structural data are present for dimer and octamer. (d) Mass photometric analysis of the effect of the YwlE phosphatase on McsBBS oligomer conversion. (e) MS data showing that all pArg residues of autophosphorylated McsB are quantitatively removed, except pArg190 and pArg194. The data show the relative number of phosphoarginine PSMs, plotted as mean \u00b1 standard deviation from three technical replicates. For absolute number of PSMs as well as all calculations refer to Source Data File. (f) Mass photometric analysis of the effect of free pArg on McsBBS oligomer conversion. (g) Mass photometric analysis of the R194K mutant, showing selective destabilization of the octamer. Size markers are indicated.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The surface plot shows a half-cut particle (semi-transparent surface), highlighting the burial of residues 190 and 194 in the octameric cage. Other auto-phosphorylated arginine residues shown in Figure 3e are surface exposed and thus accessible to YwlE.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Size exclusion chromatography analysis of the pArg-binding-deficient mutant R337A/D338A that mainly exists as a dimer. Size markers are indicated.\n\nTogether, the single-molecule data demonstrate the co-occurrence of various McsB oligomers in a dynamic, concentration-dependent equilibrium (Figure 3c). Whereas the octamer, as revealed by the crystal structure, represents a defined and rigid arrangement stabilized by pArg194, the remaining oligomers are likely to be more heterogeneous in their intermolecular contacts. In this regard, McsB has been shown to modify numerous arginine residues on its own surface (Elsholz et al., 2012; Schmidt et al., 2014; Trentini et al., 2014; Trentini et al., 2016). Each of these phospho sites could potentially bind to the pArg-binding pocket of an adjacent McsB dimer to mediate oligomerization. In contrast to the caged 8-mer, these loosely linked, irregular McsBBS assemblies should exist as \u2018open\u2019 kinase forms, in which the active sites are freely accessible. The large number of oligomers identified here is unprecedented among protein kinases and points to a complex enzymatic system, regulating the pArg labeling function. Moreover, the overall distribution of McsBBS and McsBGS oligomers suggest that the formation of multi-dimer assemblies is a common property of this kinase class that might be fine-tuned in evolution to match conditions encountered by various bacterial species.\n\n### McsB oligomers interconvert in a pArg-dependent manner\n\nThe crystal structure of McsBBS implies that octamer formation depends on a specific pArg residue, pArg194, which could serve as a phospho-switch controlling protein assembly. To explore the impact of arginine phosphorylation on the stability of the various McsB forms, we incubated the protein samples with YwlE, a pArg-specific phosphatase (Fuhrmann et al., 2013). We used McsBBS at a concentration of 500 nM, where we could observe 2-, 4-, 6-, 8-, and 10-mers. Upon prolonged incubation with the YwlE phosphatase, we found that higher-order oligomers disappeared while, in parallel, the dimer fraction increased (Figure 3d). A notable exception is the McsB octamer, which could not be destabilized by the YwlE phosphatase. These mass photometric data are consistent with the crystal structure of the octamer, where the pArg194 phospho-clamp is deeply buried in the molecular cage and thus inaccessible to YwlE (Figure 3\u2014figure supplement 1). To confirm the specific shielding of pArg194, we performed an MS analysis of the YwlE-treated sample, monitoring the phosphorylation status of every McsB arginine residue individually. In accordance with the crystal structure, all pArg residues, except pArg194 and the adjacent pArg190, were quantitatively dephosphorylated (Figure 3e). The resistance of McsB octamers to dephosphorylation likely also reflects their stability. Each McsB dimer in the octamer is bound to two other molecules and is thus stabilized compared to irregular multi-dimers, where most units are tethered by single pArg:pR-RS linkages. The high stability of the octamer should limit transient dissociation, which might be a prerequisite for dephosphorylation.\n\nTo further explore the stability of the octamer, we analyzed the effect of pArg as a competitive inhibitor of McsB oligomer formation. Given the dynamic interchange of McsB units, we reasoned that free pArg competes with auto-phosphorylated molecules for binding to the pR-RS, thus disturbing the polymerization of McsB dimers. To test this prediction, we incubated auto-phosphorylated McsB with free pArg using concentrations from 0.01 to 5 mM. The addition of pArg selectively destabilized the irregular McsBBS oligomers, as seen for the tetramer and hexamer (Figure 3f). Overall, free pArg shifted the equilibrium toward the isolated monomer and dimer, and to the caged octamer. According to these data, McsB oligomer conversion can be achieved in trans, for example by pArg-labeled products or pArg-carrying effector proteins.\n\nFinally, we tested whether pArg194 stabilized the octamer in a specific manner or, alternatively, induced multimerization of McsB dimers in general. For this purpose, we generated the R194K mutant, which cannot be autophosphorylated at this position. As revealed by mass photometric data, the R194K mutation selectively destabilized the McsB octamer, whereas the relative amounts of open McsB multimers, which can be linked by other pArg sites, were not affected (Figure 3g). Moreover, a SEC analysis revealed that mutating the pArg receptor site (R337A/D338A mutant) resulted in destabilization of McsB multimers, such as 4-, 6-, and 8-mers, leading to an accumulation of the dimeric kinase (Figure 3\u2014figure supplement 2).\n\nTogether, these data indicate that interconversion of McsB oligomers is a pArg-dependent process. Binding of exposed pArg residues to the pR-RS of a molecular neighbor connects McsB dimers to multimers ranging in size from 2- to 12-mers. Among the tethering pArg residues, pArg194 obtains a special role as this phospho residue can promote assembly of the closed octameric cage. In contrast to other higher-order oligomers, the self-compartmentalized octamer persists in the presence of the YwlE phosphatase and pArg-linked effector molecules. We thus presume that in vivo, the interconversion between the different oligomeric states of McsB represents an important function of the PQC kinase.\n\n### McsB dimer and octamer have distinct kinase properties\n\nThe shift in equilibrium between open and closed McsBBS oligomers could represent a functional switch controlling McsB activity. To study the proposed switch in kinase function, we had to reconstitute the octamer and dimer species of the B. subtilis McsBBS and study the two forms separately. Prompted by the mass photometry results, we applied a \u2018nano-molar\u2019 biochemical approach and diluted the McsBBS sample, containing higher-order McsB forms, to a final concentration of 50 nM, thereby favoring the formation of monomers and dimers (Figure 4a). The diluted sample was incubated with the YwlE phosphatase. After dephosphorylating all accessible pArg residues, McsB was concentrated, applied to a SEC column, and the dimeric and octameric kinase separated (Figure 4a, right panel).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig4-v2.jpg)\n\n**Figure 4.:** (a) Outline of preparing dimeric and octameric McsBBS (left panel). The established procedure efficiently reconstituted the two B. subtilis kinase forms, as seen in the SEC profiles of the separated McsBBS samples (right panel). (b) Radiometric 32P kinase assays visualizing the activity of dimeric and octameric McsBBS (1 \u00b5M) against \u03b2-casein (55 \u00b5M). ***p\u2264 0.001; two-tailed unpaired t test. Data are plotted as mean \u00b1 SD (n=3, independent experiments) (c) Radiometric kinase assays using an McsB dilution series. To account for the different enzyme amounts (1000\u201350 nM), assays were incubated for different times (10\u2013200 min).\n\nUsing the isolated McsBBS forms, we performed radiometric assays monitoring phosphorylation of \u03b2-casein, our model substrate. Although the octamer showed residual activity against casein, the activity of the dimer was fourfold higher, revealing the preferential targeting of casein by the McsBBS dimer (Figure 4b). To further confirm these data, we performed a \u2018dilution-series\u2019 kinase assay, in which McsBBS was sequentially diluted from 1000 to 50 nM (Figure 4c). To compensate for the different amounts of the kinase, the reaction times of the enzyme assays were prolonged by the respective factor, ranging from 10 to 200 min. As clearly seen for the casein substrate, McsB gains activity upon dilution. We could only observe substrate phosphorylation when using McsBBS at 50 nM concentration, where oligomers fall apart into dimers (Figure 3a). These data suggest that a change in oligomeric state is directly coupled to a switch in the substrate specificity of the protein kinase.\n\n### The octamer of McsB imposes a substrate filter to the kinase function\n\nBecause the McsBBS dimer and octamer exhibited distinct activities against casein, we next extended our analysis to additional model substrates. We reasoned that the self-compartmentalized octamer may select for small and unfolded proteins, whereas the dimer may function as a promiscuous kinase. To test this hypothesis, we used a set of model proteins differing in size from 10 to 100 kDa, and representing largely folded, partially folded and unfolded proteins. We first investigated relatively small proteins, in the range of range of 12\u201325 kDa, showing different degrees of compactness. Radiometric kinase assays revealed that for v-Myc (bHLHZip domain, 12.5 kDa, largely unfolded), the octamer exhibited a higher phosphorylation activity than the dimer. For ComK repressor (Kre) (B. subtilis transcription factor of 20 kDa, partially unfolded), the octamer and dimer exhibited comparable kinase activities, and for \u03b2-casein (25 kDa, disordered but can oligomerize via interprotein \u03b2-sheets), the dimer had a fourfold higher kinase activity as compared to the octamer (Figure 5a). Of note, it has previously been shown for another protein cage, the 26S proteasome, that only the N- but not the C-terminus of \u03b2-casein can pass through a narrow entry pore (Berko et al., 2012). A similar mechanism for the McsB octamer might explain the inefficient modification of \u03b2-casein by this oligomer compared to the open dimer. We next studied the phosphorylation of a large 100 kDa model protein, UNC-45 from Caenorhabditis elegans. For UNC-45, variants have been developed that differ in size and foldedness and were used to characterize the quality-control E3 ligase UFD-2 (Hellerschmied et al., 2018). Compared to the UNC45wt wild-type protein, the UNC45core mutant just comprises the stably folded core region and lacks the intrinsically unstable UCS domain. The dimeric McsBBS was capable of phosphorylating both UNC45 variants (Figure 5b). In contrast, the octameric kinase preferentially targeted the full-length construct harboring the disordered UCS domain, whereas the labeling of UNC-45core was very inefficient. In fact, when comparing all tested model substrates, the difference in substrate selectivity was most pronounced for the compact UNC45core protein, which was almost exclusively targeted by the McsB dimer. According to these data, the dimer and octamer of the McsB kinase have complementary substrate specificities. Whereas the dimer phosphorylates proteins in a rather unspecific manner, the octamer preferentially targets unfolded proteins that can pass its narrow entrance gates and enter the kinase chamber.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig5-v2.jpg)\n\n**Figure 5.:** (a) Radiometric assays of dimeric and octameric McsBBS (1 \u00b5M) using different model substrates. Quantification of activities of dimer (black) and octamer (orange) after 60 min of incubation highlights the distinct substrate preferences (top, representative gel; bottom, quantification of 32P signal after 60 min, raw data in source data file). Data are plotted as mean \u00b1 SD (n=4, independent reactions). Relative activity as mean \u00b1 SD. (b) (Top) Kinase assay using the model substrate UNC-45 confirms the substrate filtering role of the octameric cage (top, representative gel; bottom, quantification of 32P signal after 60 min, raw data in source data file). Data are plotted as mean \u00b1 SD (n=4, independent reactions). Relative activity as mean \u00b1 SD. (c) Secondary SEC runs of the McsBBS R190A/R194A mutant enriched in either HOOs (higher-order oligomers) or dimers at 20 \u00b5M concentration (d) Radiometric kinase assay of wildtype McsBBS and the McsBBS R190A/R194A mutant enriched in either HOOs (higher\u00a0order oligomers) or dimers (1 \u00b5M) against the folded model protein UNC-45core (top, representative gel; bottom, quantification of 32P signal after 60 min). Data are plotted as mean \u00b1 SD (n=3, independent reactions). Relative activity as mean \u00b1 SD.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Anti-McsB western blot of heat shocked B. subtilis (left) and of defined amounts of recombinant McsB from B. subtilis (right) used for creating a standard curve. Corresponding loading controls are shown below. (b) Standard curve used for estimating McsB levels in vivo (OD600 corrected samples).\n\n### Higher\u00a0order oligomeric McsB represents an auto-activated state\n\nBesides the dimer and the octamer being prominent oligomeric forms of McsB, we next explored the activity of higher-order oligomers (HOOs) comprising 4, 6, 10 and more subunits. We enriched these HOO open forms by selectively destabilizing the caged octamer in the R190A/R194A (RRAA) double mutant (Figure 5c). The design of this mutant was based on the observation that pArg190, similarly to pArg194, was resistant to YwlE phosphatase treatment (Figure 4c) and could support pArg194 in stabilizing the octameric cage. Assaying the kinase function of the RRAA double mutant revealed that the open HOOs efficiently target the folded model protein UNC45core. Importantly, the phosphorylation activity was twofold higher than that of the dimer (Figure 5d). Inherent to the dynamic nature of the open oligomer vs dimer, the HOO fraction also contains dimeric McsB (Figure 5c). Therefore, considering that a sample enriched in HOO particles exhibits significantly elevated activity, the activity of pure HOOs should be markedly higher than that of the dimer (Figure 5d). These data show that the pArg:pR-RS* mediated linkage of McsB subunits exerts a stimulatory effect on kinase activity, which is consistent with the previously described allosteric effect of binding pArg-containing ligands (Suskiewicz et al., 2019). Accordingly, McsB auto-activation should be relevant for both open and closed multi-dimers, accelerating the pArg labeling of client proteins. The fact that McsB oligomerization is immediately coupled with its activation should be an important mechanistic asset of McsB in the cellular PQC system. Of note, we observed that McsB levels strongly upregulated during stress conditions (Figure 5\u2014figure supplement 1), which should favour the formation of higher-order kinase assemblies. Given the ability to undergo multivalent interactions with substrate, we assume that the auto-activated HOO form of McsB is predestined to target protein aggregates.\n\n### McsB octamer formation is crucial for coping with proteotoxic stress conditions\n\nOur in vivo data indicated that McsB oligomers interconvert in a cell-state-specific manner, with higher-order oligomers being enriched under stress conditions (Figure 1b). As suggested by in vitro reconstitution experiments, the induced McsB species should mainly represent the closed octamer, the only higher\u00a0order oligomer that was stable in the presence of YwlE (Figure 3d). Moreover, having characterized the octamer as secured kinase that selectively targets misfolded proteins, we wanted to test the role of this particular McsBBS state in the bacterial stress response. To this end, we analyzed the heat-shock-related phenotype of the R194K mutation that specifically destabilized the McsB octamer, leaving the remaining oligomers intact (Figure 3g). Strikingly, during heat-shock conditions, the survival of mcsB(R194K)-bearing cells was significantly reduced, similar to cells carrying the \u2206mcsB deletion. After a 2 hr incubation at 53\u00b0C, \u2206mcsB and mcsB(R194K) B. subtilis cells suffered severely, as reflected by the strongly reduced number of colony-forming units (CFUs). Whereas 60% wildtype cells survived the imposed heat shock, only 1% to 5% of the \u2206mcsB and mcsB(R194K) mutant cells were thermotolerant (Figure 6a). In order to shed more light onto the mechanisms behind this thermosensitive phenotype of mcsB(R194K) B. subtilis, we investigated the specific activity of the mutant protein McsB R194K (RK) in a radiometric assay. Compared to the wildtype enzyme, RK showed an increased activity (~1.5 times) against our folded model substrate UNC45core (Figure 6\u2014figure supplement 1a). Furthermore, comparing the effect of auto-phosphorylation on the oligomeric distribution between wildtype and RK McsB revealed that dimeric wildtype McsB shifted mostly to the octameric state in the presence of ATP, while this effect was less significant for the RK mutant. Here, the major HOO peak eluted at an apparently smaller molecular size, pointing toward a rapid equilibrium between dimer and open HOO oligomers (Figure 6\u2014figure supplement 1b). In sum, these results indicate that the thermosensitive phenotype of the R194K mutant is likely due to a misbalance in the abundance between open HOO forms and the octameric cage, highlighting the functional importance of the pArg194-mediated switch in oligomeric state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig6-v2.jpg)\n\n**Figure 6.:** (a) In vivo analysis of the R194K McsB oligomerization mutant. Compared to wildtype B. subtilis cells, \u2206mcsB and R194K mutant cells exhibit a strong thermo-sensitive phenotype. ****p\u00a0\u2264 0.0001; one-way ANOVA and Tukey\u2019s multiple comparison test of heat-shocked samples. Data are plotted as mean \u00b1 SD (n=5, biological independent samples). Error bars indicate SD. (b) Proposed model illustrating how McsB protein concentration and YwlE activity shape the distribution of McsB oligomers. pArg phospho marks are indicated by red spheres. As shown below, monomer and dimer are prevalent under non-stress conditions. Presumably, their activity on folded proteins (f) can be reversed by the arginine phosphatase YwlE. Under heat-shock, McsB and other components of the stress response machinery are strongly enriched, favoring formation of octameric particles that selectively target misfolded (uf) proteins.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Radiometric kinase assay comparing wildtype and R194K mutant McsB (1 \u00b5M) against the folded model substrate UNC45core (top). Fold change in activity of R194K mutant at 30- and 60 min relative to mean of wildtype McsB activity (bottom). **p\u2264 0.01; *p\u2264 0.05; multiple t test. Data are plotted as mean \u00b1 SD (n=3, independent reactions). (b) SEC analysis of autophosphorylated dimeric wildtype and R194K McsB (2.5 \u00b5M).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63505/elife-63505-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) In vivo heat shock assay comparing wildtype B. subtilis and the \u0394ywlE mutant. ****p\u00a0\u2264 0.0001; one-way ANOVA and Tukey\u2019s multiple comparison test of heat-shocked samples. Data are plotted as mean \u00b1 SD (n=3, biological independent samples). Each sample was plated two times (technical replicates) resulting in six data points per column. Error bars indicate SD. (b) Anti-McsB western blot analysis of lysate of heat-shocked wildtype and \u0394ywlE B. subtilis cultures separated with size exclusion chromatography (bottom) compared to SDS-PAGE of isolated dimeric and higher\u00a0order McsB (top) serving as size markers.\n\nFinally, due to the strong effect that YwlE had on the various McsB oligomers in vitro (Figure 3d), we also explored the effect of the pArg phosphatase on McsB function and protein quality control in vivo. For this purpose, we generated a \u0394ywlE B. subtilis knockout strain and characterized the effect of the phosphatase deletion on thermotolerance. In fact, the YwlE-deficient bacteria showed a strong thermosensitive phenotype. Deletion of the phosphatase almost fully abolished cell survival during heat-shock conditions (Figure 6\u2014figure supplement 2a). To test whether the in vivo effect is correlated with the functional state of the McsB kinase, we compared the distribution of McsB sizes in wild-type and \u0394ywlE cells exposed to heat shock. However, McsB Western blot profiles looked virtually identical (Figure 6\u2014figure supplement 2b). Considering the subtle differences in elution profiles of YwlE-resistant closed McsB octamers and YwlE-sensitive open forms (Figure 6\u2014figure supplement 1b and Figure 5c), as well as the difficulty of distinguishing between McsB oligomers and McsB:substrate associations, this method might not be sensitive enough to capture differences in McsB oligomerization - especially those in terms of topology (closed vs. open) rather than weight - that would be expected based on the clear in vitro observations presented above (Figure 3d). The altered equilibrium of McsB forms could thus still account for the harmful effect of ywlE deletion. However, it is also possible that the \u0394ywlE phenotype is explained by the direct role of the phosphatase in rescuing pArg-marked proteins that are still functional and should not be degraded by ClpCP. These two mechanisms are not mutually exclusive, and we suppose that YwlE could limit the collateral damage of McsB to the bacterial cell by affecting both the oligomeric state of the kinase \u2013 and thus its substrate specificity \u2013 and directly the duration of the phosphorylation signal on substrates. Overall, the in vivo data suggest that the pArg labeling activity of the caged octamer is critical for the PQC function of McsB.\n\n## Discussion\n\nThe present study examines the regulation of the bacterial PQC factor McsB, a protein arginine kinase marking proteins for degradation by the ClpCP protease (Suskiewicz et al., 2019; Trentini et al., 2016). Our data reveal a distinct targeting mechanism for damaged proteins that is mediated by a controlled, phosphorylation-dependent switch in the oligomeric state of McsB. The complexity we have revealed in the McsB system highlights the power of combining traditional structural approaches with novel biophysical methods. While the crystal structure of the octameric McsB provided the molecular framework for studying the phospho switch that coordinates kinase assembly, mass photometry was crucial for illuminating the heterogeneity of McsB samples and, ultimately, the importance of oligomeric interconversion for function and regulation. McsB is just one example of the many dynamic protein complexes in the cell, most of which exhibit a remarkable versatility in forming functionally distinct assemblies. We thus predict that similar complexity and non-covalent dynamics exist in other biological systems, which are now amenable to the integrative structural and biophysical approaches outlined here.\n\nHow do the new findings impact on the function of McsB in the cell? So far, it has been established that McsB constitutes together with ClpC and ClpP the core of the stress response system in Gram-positive bacteria, as also reflected by the thermosensitive phenotype of \u2206mcsB cells (Figure 6a). In the bacterial PQC system, McsB has to accomplish important tasks. At the onset of the stress response, McsB phosphorylates and inactivates the transcriptional repressors CtsR and HrcA, thereby inducing expression of heat-shock genes, including McsB itself. Our data suggest that the increased levels of McsB lead to the formation of closed octamers (Figure 6b), which we show to be the active kinase species responsible for labeling aberrant proteins for degradation. Likewise, upregulation of McsB also favours the formation of higher-order oligomers with enhanced phosphorylation activity but less selective substrate targeting properties (Figure 5d). Moreover, our findings indicate that the pArg-dependent degradation system is potentially dangerous to the cell and must be controlled by the phosphatase YwlE. By affecting the oligomeric state (and thus specificity) of McsB and directly dephosphorylating substrates, this enzyme could prevent proteins from being unintendedly directed for ClpCP-mediated degradation. Such \u2018watchman\u2019 or \u2018proofreader\u2019 activity seems to be important, when the activated and less selective HOO McsB kinase is enriched during stress situations. Once the stress stimulus ends, the protein levels of McsB decrease to a level where disassembly of the octamer and other HOOs is favored. Under normal conditions monomer and dimer become the predominant McsB species and while the monomer is enzymatically inactive and may provide a cellular pool of activatable McsB units, the dimer is expected to execute the basal housekeeping activity. Overall, these findings highlight the fine balance in PQC factor activity as required for efficient thermotolerance and to cope with adverse environmental conditions. Our data show that degradation labeling is as carefully regulated in bacteria as it is in eukaryotes. In eukaryotes, ubiquitin E3 ligases are under the control of a variety of measures including the use of adaptor proteins, changes in oligomeric composition and intricate conformational switches (Lydeard et al., 2013; Plechanovov\u00e1 et al., 2011; Zheng and Shabek, 2017). Similarly, the McsB kinase exists in open and closed forms with characteristic substrate preferences, allowing rapid adjustment of its E3-like labeling activity in response to proteotoxic stresses.\n\nKey to controlling McsB is the cage-like organization of the octamer it forms. As visualized by a high-resolution crystal structure, the active sites are sequestered in an internal phosphorylation chamber that is only accessible through lateral entry gates. McsB thus belongs to the family of self-compartmentalized PQC factors, featuring a structural organization similar to that in higher-order proteases, such as the proteasome (Groll et al., 2000), ClpP (Wang et al., 1997) and DegP (Krojer et al., 2002). In these complexes, the buried active sites cannot be accessed by natively folded proteins. Intricate gating and activation mechanisms prevent unwanted action on non-cognate proteins, ensuring the tight control of otherwise dangerous proteolytic machines (Dong et al., 2019; Gatsogiannis et al., 2019; Krojer et al., 2008). Similarly, in the McsB octamer, the small size of the entry gate, which is only 25 \u00c5 wide, constitutes a molecular filter favoring the phosphorylation of unstructured polypeptides. Consistent with this, we observed that the caged kinase phosphorylates unfolded proteins in a highly selective and efficient manner. The functional importance of the described McsB phosphorylation chamber is highlighted by the thermosensitive phenotype of the R194K mutation, which impairs octamer stability rather than enzymatic function. To our knowledge, such a strong in vivo phenotype caused by destabilizing a distinct oligomeric state has not been reported for any other PQC factor. We presume that small-molecule compounds blocking octamer formation will abolish the bacterial stress response and cause deleterious effects, as exemplified here for the R194K mutant. Targeting the oligomer conversion of McsB \u2013 which is mediated by a single phosphate group \u2013 thus represents an appealing strategy to develop novel antibiotics, interfering with an essential step in the PQC system of bacterial pathogens.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Bacillus subtilis)</td>\n      <td>McsB from B. subtilis</td>\n      <td>UniProt</td>\n      <td>P37570</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Gene (Geobacillus stearothermophilus)</td>\n      <td>McsB from G. stearothermophilus</td>\n      <td>UniProt</td>\n      <td>P0DMM5</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Gene (Geobacillus stearothermophilus)</td>\n      <td>YwlE from G. stearothermophilus</td>\n      <td>UniProt</td>\n      <td>S0F332</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>Bacillus subtilis, strain 168, WT</td>\n      <td>Lab stock</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>Bacillus subtilis, strain 168, \u0394mcsB</td>\n      <td>Suskiewicz et al., 2019</td>\n      <td>-</td>\n      <td>Markerless genomic mutation</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>Bacillus subtilis, strain 168, R194K</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>Markerless genomic mutation</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>Bacillus subtilis, strain 168, \u0394ywlE</td>\n      <td>Kindly provided by Emmanuelle Charpentier</td>\n      <td>-</td>\n      <td>Markerless genomic mutation</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>McsB from B. subtilis</td>\n      <td>Trentini et al., 2016</td>\n      <td>RRID:Addgene_173905</td>\n      <td>pET-21a plasmid containing mcsB-His6 from B. subtilis</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>McsB from G. stearothermophilus</td>\n      <td>Suskiewicz et al., 2019</td>\n      <td>RRID:Addgene_173906</td>\n      <td>pET-21a plasmid containing mcsB-His6 fromG. stearothermophilus</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>YwlE from G. stearothermophilus</td>\n      <td>Fuhrmann et al., 2013</td>\n      <td>RRID:Addgene_173911</td>\n      <td>pET-21a plasmid containing ywlE-His6 from G. stearothermophilus</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>McsB from B. subtilis R194K</td>\n      <td>This study</td>\n      <td>RRID:Addgene_173907</td>\n      <td>pET-21a plasmid containing mcsB R194K-His6 from B. subtilis</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>McsB from B. subtilis R190A/ R194A</td>\n      <td>This study</td>\n      <td>RRID:Addgene_173908</td>\n      <td>pET-21a plasmid containing mcsB R190A/R194A-His6 from B. subtilis</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>McsB from B. subtilis R337A/ D338A</td>\n      <td>This study</td>\n      <td>RRID:Addgene_173909</td>\n      <td>pET-21a plasmid containing mcsB R337A/ D338A-His6 from B. subtilis</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Kre</td>\n      <td>This study</td>\n      <td>RRID:Addgene_173912</td>\n      <td>pET-21a plasmid containing kre-His6 from B. subtilis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>McsB from B. subtilis</td>\n      <td>This study</td>\n      <td>NP_387966.1</td>\n      <td>C-terminal 6xHis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>McsB from G. stearothermophilus</td>\n      <td>This study</td>\n      <td>WP_033017267.1</td>\n      <td>C-terminal 6xHis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>YwlE from G. stearothermophilus</td>\n      <td>This study</td>\n      <td>WP_033017317.1</td>\n      <td>C-terminal 6xHis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>McsB from B. subtilis R194K</td>\n      <td>This study</td>\n      <td>NP_387966.1:p.Arg194Lys</td>\n      <td>C-terminal 6xHis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>McsB from B. subtilis R190A/ R194A</td>\n      <td>This study</td>\n      <td>NP_387966.1:p.Arg190Ala_ Arg194Ala</td>\n      <td>C-terminal 6xHis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>McsB from B. subtilis R337A/ D338A</td>\n      <td>This study</td>\n      <td>NP_387966.1:p.Arg337Ala_ Asp338Ala</td>\n      <td>C-terminal 6xHis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Kre</td>\n      <td>This study</td>\n      <td>NP_389285.1</td>\n      <td>ComK repressor</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>v-Myc</td>\n      <td>Kindly provided by Konrat lab</td>\n      <td>NP_045935.1:p.Met1_Gln312del</td>\n      <td>bHLHZip domain</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>UNC45 from C. elegans</td>\n      <td>Kindly provided by VBCF (Anita Lehner)</td>\n      <td>NP_497205.1</td>\n      <td>C-terminal StrepII</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>UNC45core</td>\n      <td>Kindly provided by VBCF (Anita Lehner)</td>\n      <td>NP_497205.1:p.Glu522_Glu961del</td>\n      <td>C-terminal StrepII</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>beta-casein</td>\n      <td>SigmaAldrich</td>\n      <td>C6905</td>\n      <td>\u03b2-Casein from bovine milk</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-McsB (Rabbit polyclonal)</td>\n      <td>Suskiewicz et al., 2019</td>\n      <td>-</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-YwlE (Rabbit polyclonal)</td>\n      <td>Fuhrmann et al., 2016</td>\n      <td>-</td>\n      <td>Immuno- depletion (0.1 mg/ml)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pET21-mcsB R337A/D338A-His6_F</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>GCCATTCGAAGAGCGGCTCTCATCAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pET21-mcsB R337A/D338A-His6_R</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>CGCTTCGTTCGGTCGCAAAGCGCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pET21-mcsB R190A/R194A-His6_F</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>TAAATGCAATTATACCGGCAATTAATCAATTAGGCTTAGTTGTTAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pET21-mcsB R190A/R194A-His6_R</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>TTTGCGCAGTTAAAACCAGCGCCGGCAGATGCATCATGACCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pET21-mcsB R194K-His6_F</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>GATTAATTGCCGGTATAATTTTATTTATTTGCCTAGTTAAAACCAGCGCCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pET21-mcsB R194K-His6_R</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>CGGCGCTGGTTTTAACTAGGCAAATAAATAAAATTATACCGGCAATTAATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pMAD- mcsB R194K_F</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>ATTATACCGGCAATTAATCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pMAD- mcsB R194K _R</td>\n      <td>This study</td>\n      <td>-</td>\n      <td>TTTATTTATTTGCCTAGTTAAAACC</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>[gamma-P32] ATP</td>\n      <td>Hartmann Analytics</td>\n      <td>#SRP-501</td>\n      <td>Volume: 250 uCi</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XDS package</td>\n      <td>doi:10.1107/S0907444909047337</td>\n      <td>RRID:SCR_015652</td>\n      <td>https://xds.mr.mpg.de/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHASER</td>\n      <td>doi:10.1107/S0021889807021206</td>\n      <td>RRID:SCR_014219</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>doi:10.1107/S2059798319011471</td>\n      <td>RRID:SCR_014224</td>\n      <td>https://www.phenix-online.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>doi:10.1107/S0907444904019158</td>\n      <td>RRID:SCR_014222</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Molprobity</td>\n      <td>doi:10.1002/pro.3330</td>\n      <td>RRID:SCR_014226</td>\n      <td>http://molprobity.biochem.duke.edu</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>other</td>\n      <td>RRID:SCR_000305</td>\n      <td>https://pymol.org/2/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nFor production of recombinant McsB (B. subtilis and G. stearothermophilus) and the YwlE phosphatase from G. stearothermophilus, we used constructs and procedures described previously (Fuhrmann et al., 2013; Suskiewicz et al., 2019). In general, protein expression was performed in Escherichia coli BL21(DE3) grown in LB-medium supplemented with 50 \u00b5g/ml ampicillin. Cultures expressing McsB from B. subtilis and mutated variants thereof were grown to an OD600 of 1.0 at 37\u00b0C, shifted to 18\u00b0C and expression was induced upon addition of 0.5 mM IPTG. Cells were harvested after overnight expression and the pellet was resuspended in 50 mM Tris-HCl pH 7.5 and 50 mM NaCl. All proteins were purified by Ni-NTA affinity chromatography using a 5 ml HisTrap column (GE Healthcare Life Sciences) equilibrated with 50 mM Tris-HCl pH 7.5 and 150 mM NaCl. Bound proteins were eluted with the equilibration buffer supplemented with 250 mM imidazole. Subsequently, the proteins were loaded on a Superdex 200 16/60 column (GE Healthcare Life Sciences) equilibrated with 20 mM Tris-HCl pH 7.5 and 50 mM NaCl. Proteins were concentrated using 30 kDa cut-off Vivaspin columns (Sartorius) and their concentration was determined by their absorbance at 280 nm.\n\n### Mutagenesis\n\nSite-directed mutagenesis of McsB from B. subtilis expression constructs were performed using the Q5 Site-Directed Mutagenesis Kit (New England BioLabs) following the manufacturer\u2019s procedures. Primers are listed in the Key resources table. The mutation in the mcsB locus was introduced into the chromosome of strain Bacillus subtilis 168 mcsBR194K as described in Suskiewicz et al., 2019, using the mutagenesis primer given in Supplementary Table 2.\n\n### Isolation of dimeric and octameric McsB from B. subtilis\n\nThe wild-type protein was expressed and initially purified as described above. However, after the Ni-NTA purification the McsB protein (5 mg/ml in 15 ml) was dephosphorylated upon addition of 1 \u00b5M of YwlE on ice for 30 min. The sample was loaded on a 6 ml Resource Q column (GE Healthcare Life Sciences) equilibrated with 50 mM HEPES-NaOH pH 7.5 and 50 mM NaCl. Dimeric and octameric McsB were separated in a linear gradient to 500 mM NaCl. Residual YwlE was removed by immuno-depletion using an YwlE antibody (Fuhrmann et al., 2016) immobilized on Protein A Dynabeads (Thermo Scientific). The separated oligomeric species were further purified using a Superdex200 10/30 column equilibrated with 50 mM HEPES-NaOH pH 7.5 and 50 mM KCl.\n\n### Analytical size exclusion chromatography\n\nAnalytical size exclusion chromatography was performed over a Superdex 200 3.2/300 increase column equilibrated with 50 mM HEPES-NaOH pH 7.5, 50 mM KCl using an Ettan LC system (GE Healthcare Life Sciences). Expected molecular masses were calculated based on the separation of the gel filtration standard (Bio-Rad) by the column.\n\n### Radiometric kinase assay\n\nAn aliquot of the McsB kinase (1 \u00b5M) was incubated with 12 \u00b5M substrate at 37\u00b0C in a buffer containing 50 mM HEPES-NaOH pH 7.5, 50 mM KCl, 2% (v/v) glycerol, 10 mM \u03b2-mercaptoethanol, 7.5 mM MgCl2, 5 mM cold ATP, and 50 \u00b5Ci \u03b3\u221232P ATP (Hartmann Analytics). Reactions were quenched at given timepoints upon addition of 5x SDS sample buffer and resolved on a Tris-glycine SDS-PAGE. Gels were dried, exposed to a phosphor imaging plate (BAS-MS 2025, Fuji film) overnight and visualized with a Typhoon Biomolecular imager (GE Healthcare). Quantification was performed by measuring the integrated pixel density of each band using Adobe Photoshop CC.\n\n### Heat-shock assay\n\nA preculture of B. subtilis 168 (wildtype or \u0394ywlE) was grown in LB-medium to stationary phase at 37\u00b0C overnight. Five ml were used to inoculate 25 ml LB-medium and the culture was grown to an OD600 of 0.5 in duplicates. To evoke a heat-shock, one culture was mixed with 25 ml LB-medium at 53\u00b0C and incubated at 53\u00b0C for additional 2 hr. The second culture was mixed with 25 ml of LB-medium at 37\u00b0C and incubated at room temperature for 2 hr. Cells from both cultures were pelleted, flash frozen in liquid nitrogen, thawed, and resuspended in 500 \u00b5L of 50 mM Tris-HCl pH 7.5, 50 mM NaCl supplemented with 250 \u00b5g Lysozyme (Sigma), 5 \u00b5g DNase I (Roche) and 1x complete Protease Inhibitor Cocktail (Roche). The suspensions were sonicated for 2 min on ice. The lysate was cleared by centrifugation, the total protein concentration was adjusted to 1.8 mg/ml using Bradford reagent (Bio-Rad) and 1 ml aliquots were separated over a Superdex 200 16/60 equilibrated with 20 mM Tris-HCl pH 7.5 and 50 mM NaCl. Fractions of 1.5 ml were collected from which proteins within 1 ml were precipitated with 200 \u00b5L cold saturated TCA solution and incubated on ice for around 15 hr. The fractions were washed two times with ice-cold acetone and left drying. Each pellet was resuspended in 30 \u00b5L of SDS-PAGE sample buffer and separated on a 4\u201312% Bis-Tris SDS-PAGE gel (NuPAGE) using 1x MES running buffer (NuPAGE). Immunoblotting was performed using anti-McsB antibody following standard procedures. Standards used during size exclusion chromatography experiments of cell lysates were composed of 71 \u00b5M dimeric McsB G. stearothermophilus (dimer) and 71 \u00b5M oligomeric McsB from B. subtilis purified as described above.\n\n### Cell viability assay\n\nA preculture of each B. subtilis 168 strain (WT vs. \u0394mcsB vs mcsBR194K) was grown from a single colony in LB-medium to stationary phase at 37\u00b0C degrees overnight. 6 ml modified synthetic medium (Antelmann et al., 1997) (50 mM Tris-HCl pH 7.5, 15 mM (NH4)2SO4, 8 mM MgSO4, 27 mM KCl, 7 mM Na-citrate, 0.6 mM KH2PO4, 2 mM CaCl2, 1 \u00b5M FeSO4, 10 \u00b5M MnSO4, 4.5 mM K-glutamate, 0.20% (v/v) glucose, 100 \u00b5M L-Trypthophan) was inoculated with the preculture to an OD600 of 0.05 and grown to 0.4. Each culture was split into halves and one part was transferred to 53\u00b0C to evoke heat stress while the other half was kept at room temperature for 2 hr. After the heat-shock, the cultures were diluted 1:1000 using synthetic medium. 50 \u00b5L of culture were withdrawn and plated on pre-warmed LB-agar plates and colony forming units (CFU) were determined using ImageJ (version 1.47).\n\n### Quantitative western blot assay\n\nA preculture of B. subtilis 168 was grown from a single colony in LB-medium to stationary phase at 37\u00b0C degrees overnight. 80 ml of LB-medium was inoculated with the preculture to an OD600 of 0.05 and grown to around 0.7. Afterwards, the culture was transferred to 50\u00b0C to evoke heat stress for 60 min. Each timepoint (0, 30, and 60 min), 1 ml of culture was collected for the western blot assay and an additional 30 ml was collected for the wet pellet weight determination. The OD600 of each culture was determined and the pellets of the western blot samples were resuspended in 80 \u00b5L B-Per (Thermo Fisher Scientific) complemented with DNaseI (2 \u00b5g/ml), Lysozyme (4 \u00b5g/ml) and 1x of complete Protease Inhibitor cocktail (Roche) and lysed for 15 min at room temperature. All samples were OD600 corrected to 0.7. SDS-PAGE sample buffer was added in a 1:4 ratio to each sample and 15 \u00b5L of each sample was separated on a 12% SDS-PAGE gel (hand-cast/stain-free) using 1x Tris-Glycine running buffer. Immunoblotting was performed using anti-McsB antibody following standard procedures. Intensities were determined by densitometry using ImageJ (version 1.47). The calculations for determining the final McsB concentrations can be found in Figure 5\u2014figure supplement 1\u2014source data 2.\n\n### Crystallization and structure determination\n\nOctameric McsBBS was crystallized in a hanging drop, vapor diffusion setup at 100 mg/ml concentration using 200 mM of Mg acetate as reservoir solution. Crystals were grown at 4\u00b0C and transferred into a solution containing 120 mM Mg acetate and 40% (v/v) PEG400 used as cryo-protectants. After crystals were flash-frozen in liquid nitrogen, X-ray diffraction data were collected at the beamline X06SA at the Swiss Light Source (Villigen-PSI, Switzerland). Diffraction data were processed and scaled using the XDS package (Kabsch, 2010) to a resolution of 2.5 \u00c5. Initial phases were obtained by Molecular Replacement using PHASER (McCoy et al., 2007) and the structure of McsBGS (6FH1) as starting model (Suskiewicz et al., 2019). The model was improved in iterative cycles of manual building using COOT (Emsley and Cowtan, 2004) and refinement with Phenix (Liebschner et al., 2019) omitting 5% of randomly selected reflections for calculation of Rfree. Model quality was monitored using MolProbity (Williams et al., 2018) and the final model exhibited good stereochemistry with 98% of residues in favored regions of the Ramachandran plot and without any outliers.\n\n### Statistical analysis\n\nData analysis and statistical calculations of the cell viability assay and radiometric kinase assay were performed in GraphPad Prism 8. Other data analysis was performed in Excel (Microsoft) if not stated otherwise. Excel (version 2013, Microsoft) was used for graph preparations, and they were further modified in Illustrator (version 2020, Adobe).\n\n### Mass spectrometry of McsB\n\nMcsB from B. subtilis (1 mg/ml) was incubated in triplicates in the presence or absence of 0.2 mg/ml YwlE from G. stearothermophilus in 50 mM Tris-HCl pH 7.5, 50 mM NaCl at 37\u00b0C for 1 hr in a final reaction volume of 100 \u03bcl. Two mM Vanadate (Sodium Orthovanadate, NEB, pre-incubated for ten minutes at 95\u00b0C to dissociate Vanadate oligomers) was added to each reaction to inhibit the YwlE phosphatase. The samples were reduced with 10 mM DTT at 37\u00b0C for 60 min and alkylated with 30 mM methyl methanethiosulfonate (MMTS) at room temperature for 45 min. After addition of MMTS, the pH was immediately adjusted to ~seven by addition of 1 M HEPES-NaOH pH 7.2. Samples were digested with 2.5 \u00b5g of Trypsin Gold (Mass Spectrometry Grade, Promega, solubilized to 1 \u00b5g/\u00b5l in 50 mM Acetic Acid) overnight at 37\u00b0C. Directly after addition of Trypsin, the pH was adjusted as above.\n\nFor LC-MS Analysis, an UltiMate 3000 RSLC nano system was coupled to an Orbitrap FusionLumosTribrid mass spectrometer (Thermo Fisher Scientific). Tryptic peptides were loaded onto a trap column (PepMap C18, 5 mm \u00d7 300 \u03bcm ID, 5 \u03bcm particles, 100 \u00c5 pore size, Thermo Fisher Scientific) at a flow rate of 25 \u03bcL/min using 0.5% acetic acid (pH 4.5 with NH4OH) as mobile phase to prevent pArg hydrolysis during the removal of salts in the precolumn (Schmidt et al., 2014). After 10 min, the trap column was switched in line with the analytical column (PepMap C18, 500 mm \u00d7 75 \u03bcm ID, 2 \u03bcm, 100 \u00c5, Thermo Fisher Scientific). Peptides were eluted by a binary gradient of buffer A and B over a period of 60 min (From 98% A (0.1% (v/v) formic acid) and 2% B (80% (v/v) acetonitrile/0.08% (v/v) formic acid) to 35% B) with a flow rate of 230 nl/min. After electrospray ionization EASY-Spray source (Thermo Fisher Scientific), the MS was operated in data-dependent mode, using a full scan (m/z range 380\u20132000, nominal resolution of 120,000, target value 4x105) followed by MS/MS scans using an Orbitrap resolution of 30,000 with 3 s cycle time (isolation width 1.2 m/z, mass tolerance 10 ppm). Precursor ions selected for fragmentation (excluding charge state 1, 7, 8, >8) were put on a dynamic exclusion list for 10 s and minimum intensity threshold for precursor selection was set to 2x104. Collision Induced Dissociation with 30% normalized collision energy was used for fragmentation. Additionally, the AGC target was set to 2x105 and the maximum injection time was set to 250 ms.\n\nRaw data were extracted using Proteome Discoverer (version 2.3.0.523, Thermo Scientific) and searched with MS Amanda 2.0 (Dorfer et al., 2014) against a combined database of E. coli strain BL21(DE3) UniProt Reference Proteome with common contaminants and the respective sequences of B. subtilis McsB and G. stearothermophilus YwlE added. Methylthio-modification of cysteine was set as a fixed modification. Phosphorylation of serine, threonine, tyrosine, and arginine, oxidation of methionine and deamidation of asparagine and glutamine were set as dynamic modifications. Because tryptic cleavage is impaired at phosphorylated arginine, a maximum of three missed cleavage sites was allowed. The peptide mass deviation was set to five ppm; fragment ion mass deviation to 0.02 Da. MS Amanda score was filtered for >150 and the percolator (K\u00e4ll et al., 2007) was used to filter for PEP < 0.01. All phosphopeptide hits were automatically reanalyzed by phosphoRS (Taus et al., 2011) for reliable phosphorylation site analysis (threshold for localization probability > 90%). Quantitative information of McsB peptide spectrum matches (PSMs) was obtained by spectral counting, summing up all spectra associated with a specific match and applying a scaling factor for each sample to each PSM by adjusting the values to normalized spectral counts and subsequently used to determine the relative pArg phosphopeptide spectral counts. The graph depicts the mean of the normalized triplicate measurements (with standard deviation).\n\n### Mass photometry assay\n\nThe mass photometry experiments were performed on a custom-built iSCAT microscope similar to the one described in Cole et al., 2017; Young et al., 2018 with a 445 nm laser diode (Lasertack). Coverslips were cleaned by sequential bath sonication in H2O, isopropanol and H2O for 5 min each. They were then rinsed with H2O, blow-dried in a nitrogen stream and assembled into flow chambers (Yildiz et al., 2003). Proteins were diluted into McsB Buffer (20 mM Tris-HCl pH 7.5, 50 mM NaCl) and incubated at room temperature for at least 2 hr in the absence or presence of other compounds (e.g.\u00a0free phospho-arginine as stated). The flow chambers were loaded with buffer to find a clean area and the optimal focus position, defined as the z-position with maximum root-mean-square deviation of the signal from the glass surface pattern. Subsequently, 20 \u03bcL of the protein sample were flushed through the flow chamber and landing was recorded at a frame rate of 1 kHz. The videos were saved with two frames averaged and 3 pixels x 3 pixels binned to their mean to give an effective frame rate of 500 Hz and to reduce the file size. The effective pixel size after binning was 70.2 nm.\n\n### Mass photometry data analysis procedure\n\nThe videos of proteins binding to the glass surface were analyzed with the software DiscoverMP (version 2.1.0, Refeyn Ltd). The software detects binding events and determines the respective interferometric scattering contrasts. The user can choose how many frames are averaged for continuous background removal (navg) and can set the thresholds T1 and T2 for the two image filters, which are used to detect the binding events. Filter one is based on T-tests of the pixel intensity fluctuations. As a protein binds to the glass, the pixel intensity changes suddenly. This change is associated with an increase of the filter one score calculated as \u2013ln(p), where p is the p-value of the T-test comparing pixel values at navg frames before and navg frames after the event. The smallest intensity jump amplitude that exceeds random noise fluctuations and is associated with a binding event is controlled by the value of threshold T1. The signatures of the binding events in interferometric images are radially symmetric. Filter two measures the radial symmetry of all pixel neighborhoods of the interferometric images (Loy and Zelinsky, 2003). The lowest symmetry score expected at the center of a peak is defined as threshold T2. Pixel clusters that exceed both thresholds T1 and T2 are used for peak fitting. The amplitude of the peak fit provides an estimate for the interferometric peak contrast. The peak signature (point spread function) is modeled as a superposition of two Sombrero functions multiplied by two Gaussians. The small size of McsB monomers of only 42 kDa made it difficult to detect landing molecules of this species quantitatively above the baseline noise. To determine the optimum filter thresholds (T1 and T2) for the detection of these species and an estimate of the percentage of detected particles, we generated a semi-synthetic movie that used frames from a video recorded with McsB Buffer alone to simulate an experimental background and added simulated point spread functions as landing events that had the expected scattering contrast of a 42 kDa protein (contrast = 2.2 x 10\u22123). The point spread function was modeled as a superposition of two sombrero functions that is convolved with two Gaussian smoothing kernels. This function was the same function used to fit experimental landing events. We then varied navg as well as T1 and T2, ran the analysis procedure, and determined the number of true positive and false positive detections. To determine the maximum number of true positive detections possible at the respective signal-to-noise ratio, we simulated 1000 frames with 100 landing events that were not allowed to overlap closer than 12 pixels spatially and 26 frames temporally. Based on this control simulation, we chose navg = 21, T1 = 1.2 and T2 = 0.15 to process the experimental videos. Using these parameters, the number of true positive detections of monomers in the simulation was 57.2 \u00b1 4.0% (mean \u00b1 standard deviation of 5 simulations) and the number of false positive detections was 12.2 \u00b1 3.0%. For dimers (contrast = 4.3 x 10\u22123), a simulation with the same parameters gave 92.2 \u00b1 3.0% true positive detections and 3.8 \u00b1 1.6% false positive detections. The interferometric scattering contrast was converted into molecular mass by calibration with standard proteins (here: protein A \u2013 42 kDa, alcohol dehydrogenase dimer and tetramer \u2013 73.5 and 147 kDa, \u03b2-amylase dimer and tetramer \u2013 112 and 224 kDa). Their interferometric scattering contrast was plotted as a function of mass and a line was fitted to the resulting graph (Figure 3\u2014source data 3). The slope (5.023 x 10\u22125 kDa\u22121) and intercept (1.261 x 10\u22124) of the calibration line were used to convert contrast into mass according to mass = (contrast \u2012 intercept) / slope.\n",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "e7dd0201-34c8-4772-a9d6-68623bf59136",
+      "submission_id": "b593af70-67af-4d8a-ae75-7e1bcc79ccbb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63505.sa1](https://doi.org/10.7554/eLife.63505.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors describe the regulation of an arginine kinase responsible for regulating bacterial stress response. They demonstrate that while the minimal unit for activity is a dimeric form that couples catalysis and substrate binding, specific substrate recognition is mediated by an octamer (tetramer of dimers) that forms a chamber in which the active site is accessible to only certain substrates \u2013 those with unstructured regions, expected for a quality control response. Octamer formation requires phosphorylation of a specific arginine in the kinase. This is a fascinating mechanism of substrate control that should be of broad interest to readers interested in quality control, specificity and allostery.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"McsB forms a gated kinase chamber to mark aberrant bacterial proteins for degradation\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe experiments are well performed and described. The data, including the in vitro reconstitution experiments with the YwlE phosphatase and the mass spec analysis of the R194K mutant, are convincing that pArg194 is essential for octamer formation, and that the octamer confers specificity for unstructured substrates.\n\nEssential revisions:\n\n1. The R194K data argue that the octamer is important for the stress response. However, given the SEC and mass photometry data, it isn't clear that these experiments demonstrate that only the octamer is stable vs. other species higher than dimer. Can they be sure that the non-octamer oligomers are not important in some other aspect of MscB biology? One can imagine that even a poorly defined but stable oligomer might provide some enhancement of catalytic efficiency simply be enhancing local concentration, for example. Also, are there any estimates available for the cellular concentrations of McsB under normal and stress conditions?\n\n2. Line 374: it is noted that YwlE counteracts McsB autophosphorylation, and the discussion implies that it also regulates octamer formation. Is there evidence for this? What is the phenotype of YwlE knockout? Do they see a different distribution of McsB oligomers in YwlE knockout cells?\n\n3. Figure 1c is not well organized, mainly in that it is not clear which gel/blot at the bottom are the absorbance curves related to. If the absorbance curves in Figure 1c are basically the same as the ones in Figure 1b, it would be simpler to just combine 1b and 1c. \"HOO\" is not defined. Also, the size of the high-order oligomer is smaller than the marker by at least 2 fractions, and there also exists McsB in fractions 2-5, indicating some oligomers of much larger sizes. Are these aggregates?\n\n4. The conclusion that \"the overall distribution of McsBBS and McsBGS oligomers suggest that the formation of multi-dimer assemblies is a common property of this kinase class\" is not well supported by data since McsGS was shown to form mostly dimers.\n\n5. The R194K mutation clearly alters the heat shock response (Figure 6), but is it possible that it diminishes the enzymatic activity of the dimer form as well as oligomerization? The phosphorylation activity of the mutant should be tested.\n\n6. McsB auto-phosphorylates and Figure 4b shows the auto-phosphorylation band after 30-60 min of reaction. Is it possible that dimers are phosphorylated and converted to octamers after 30 min? Can the authors clarify this by checking the oligomer state after reaction?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"McsB forms a gated kinase chamber to mark aberrant bacterial proteins for degradation\" for further consideration by eLife. Your revised article has been evaluated by Volker D\u00f6tsch (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe authors have performed new experiments and responded carefully to the original reviews. Overall the data support the idea that the octamer helps to specify activity toward unstructured substrates, the main take home of the paper. There are, however, a few issues that need to be clarified.\n\n1. Figure 1: HOO (Higher-order oligomer) needs to be defined early in the text and also in the caption to Figure 1.\n\n2. Figure 1c: The two curves are size standards from the different bacterial species, as explained in the text, but this should also be in the caption, which is otherwise very confusing. Critically, the western blot is claimed to show different oligomers of McsB(BS), but this doesn't distinguish between oligomers vs. simply having differently sized substrates bound to it; they clearly don't have the distribution of the recombinant protein shown in gold. In fact, the modest shift in SEC vs. the dimer peak could suggest the latter. In any case, it does not seem to correspond to octamers; these, as these authors note, could be shifted way up when bound to a substrate, but the western blot evidence is not strong. It might be helpful to perform negative stain EM on these fractions.\n\n3. New data on RRAA mutant: In Figure 5c, d it isn't clear what they are using for \"HOO\" \u2013 is it a particular fraction or the entire HOO profile. That is, does this sample still contain dimer? This should be clarified.\n\n4. The \u03b4 ywlE heat shock experiments on cell viability are convincing. The size distribution could not be assessed per Figure 6Sb, but why weren't these done under heat shock conditions \u2013 wouldn't this make the difference more obvious? Also, what are the higher bands ~55kDa in the Figure 6 supplement 2 western blots?\n",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "745b1156-3e0b-49f7-a147-b24b4dd72f2a",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C1",
+      "claim": "McsB is a protein arginine kinase central to protein quality control in Gram-positive bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gram-positive bacteria, the McsB protein arginine kinase is central to protein quality control, labeling aberrant molecules for degradation by the ClpCP protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational claim about McsB's role.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "34ed9acc-01b7-492b-bff4-44cc23bf1743",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C2",
+      "claim": "McsB labels aberrant molecules for degradation by the ClpCP protease.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gram-positive bacteria, the McsB protein arginine kinase is central to protein quality control, labeling aberrant molecules for degradation by the ClpCP protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "3f92e0f9-5c02-4ab0-a4cf-8cf372830bce",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C3",
+      "claim": "McsB is important for stress response and pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its importance for stress response and pathogenicity, it is still elusive how the bacterial degradation labeling is regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "0b0cf0fe-5349-4f83-8cdd-d18150342a1f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C4",
+      "claim": "McsB forms a self-compartmentalized kinase with active sites sequestered in a molecular cage.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural data reveal a self-compartmentalized kinase, in which the active sites are sequestered in a molecular cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the crystal structure presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "47bc3e22-55b4-4960-bddd-660ec801ee1d",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C5",
+      "claim": "The McsB octamer interconverts with other oligomers in a phosphorylation-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'closed' octamer interconverts with other oligomers in a phosphorylation-dependent manner and, unlike these 'open' forms, preferentially labels unfolded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by mass photometry data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "9081ce85-9d75-4919-a458-732a4ed5ed3c",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C6",
+      "claim": "The octameric McsB preferentially labels unfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'closed' octamer interconverts with other oligomers in a phosphorylation-dependent manner and, unlike these 'open' forms, preferentially labels unfolded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by kinase assays in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "39968f3e-6484-4e6f-a023-040796fd5ff5",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C7",
+      "claim": "Heat-shock triggers accumulation of higher order McsB oligomers in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo data show that heat-shock triggers accumulation of higher order oligomers, of which the octameric McsB is essential for surviving stress situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by SEC analysis of B. subtilis lysates in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "9fad7edf-6c00-4c77-a6a5-a4eda7b602a7",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C8",
+      "claim": "The octameric McsB is essential for surviving stress situations.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo data show that heat-shock triggers accumulation of higher order oligomers, of which the octameric McsB is essential for surviving stress situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the R194K mutant phenotype in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "81d729d9-4c66-4666-89ef-f07aa4162187",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C9",
+      "claim": "CtsR, McsB, and ClpC:ClpP constitute the core of the stress-response operon in Gram-positive pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gram-positive pathogens, the repressor CtsR, the protein arginine kinase McsB and the protease ClpC:ClpP constitute the core of the stress-response operon (Derre et al., 1999; Kirstein et al., 2007; Kr\u00fcger and Hecker, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "a140b11b-1fe3-4c3c-a12c-38ba97c1cf22",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C10",
+      "claim": "McsB has the unique activity of phosphorylating arginine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "McsB is a prominent member of the specialized bacterial kinases and has the unique activity of phosphorylating arginine residues (Fuhrmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "d5ec2ccb-85c1-493f-8c29-b89972f6d266",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C11",
+      "claim": "McsB phosphorylates CtsR and HrcA, two central heat-shock repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Major substrates of McsB are the two central heat-shock repressors CtsR and HrcA (Schumann, 2003; Schumann, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "d4764a0e-6b26-4059-a55f-df744f58fa3c",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C12",
+      "claim": "McsB controls CtsR by phosphorylating arginine residues in its DNA-reading head, promoting dissociation from DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown for CtsR, McsB controls the two transcription factors by phosphorylating arginine residues in their DNA-reading heads, thus promoting their dissociation from DNA and inducing the expression of stress-response genes (Fuhrmann et al., 2009; Schmidt et al., 2014; Trentini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "7073d158-9121-40c6-a973-14807637de92",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C13",
+      "claim": "The pArg mark introduced by McsB serves as a degradation tag that directs client proteins to the ClpC:ClpP protease.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from this regulatory role, the phosphoarginine (pArg) mark introduced by McsB has a broader function in the cell, serving as a degradation tag that directs client proteins to the ClpC:ClpP protease (Stannek et al., 2014; Trentini et al., 2016; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with supporting citations and illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "c1960b3c-3685-4052-82e6-199a51b9473b",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C14",
+      "claim": "Impairment of the pArg-ClpC:ClpP degradation pathway precludes clearance of protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairment of the pArg-ClpC:ClpP degradation pathway precludes clearance of protein aggregates (Stannek et al., 2014) and limits survival under heat-shock conditions (Trentini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "f2dc5d32-0a8b-4e66-8a6b-ce90a526c0f4",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C15",
+      "claim": "Impairment of the pArg-ClpC:ClpP degradation pathway limits survival under heat-shock conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairment of the pArg-ClpC:ClpP degradation pathway precludes clearance of protein aggregates (Stannek et al., 2014) and limits survival under heat-shock conditions (Trentini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "29550852-b0da-4303-a077-2841f9fc0ce1",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C16",
+      "claim": "McsB is a virulence factor enabling pathogens like S. aureus and L. monocytogenes to cope with adverse conditions imposed by the host immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "This pArg-mediated housekeeping function is likely to underlie McsB's pivotal role as a virulence factor, enabling severe human pathogens like Staphylococcus aureus and Listeria monocytogenes to cope with adverse conditions imposed by the host immune system (Singh et al., 2015; Wozniak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "dc2e9663-e217-4dbb-afcf-53c46087fe4c",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C17",
+      "claim": "McsB is composed of a specialized phospho-transferase scaffold for arginine phosphorylation and a dimerization domain.",
+      "claim_type": "EXPLICIT",
+      "source": "On a molecular level, the McsB kinase is composed of a specialized phospho-transferase scaffold for arginine phosphorylation and a dimerization domain aligning two subunits (Suskiewicz et al., 2019; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with a supporting citation and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "5ace57c4-d430-4f58-b42f-8c058129dc4a",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C18",
+      "claim": "Dimer formation is a prerequisite for attaining full McsB kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro and in vivo data showed that dimer formation is a prerequisite for attaining full kinase activity, most likely by mechanistically coupling the two active sites (Suskiewicz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "602cd38c-df94-48a1-919b-11007b2b7d59",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C19",
+      "claim": "McsB exists in various oligomeric states ranging from monomers to dimers and higher order oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the McsB dimer represents the basic functional unit of the protein arginine kinase, various oligomeric states have been reported, ranging from monomers to dimers and even higher order oligomers (Fuhrmann et al., 2009; Jung et al., 2019; Kirstein et al., 2005; Trentini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "8bca0769-a125-4a21-a9b4-1ad5b8078fbf",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C20",
+      "claim": "The McsB kinase is a promiscuous enzyme targeting a large set of substrates without exhibiting consensus sequence specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics data, however, suggest that the McsB arginine kinase is a rather promiscuous enzyme targeting a large set of substrates, without exhibiting any consensus sequence specificity (Elsholz et al., 2012; Junker et al., 2018; Schmidt et al., 2014; Trentini et al., 2014; Trentini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "ab14ed1e-f732-4193-adb4-eab60c5c5f8f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C21",
+      "claim": "McsBBS mainly consists of large higher order oligomers and exhibits only a minor dimer peak in SEC analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the profile of McsBGS consists of a prominent dimeric peak at 80 kDa and higher order oligomers (HOOs) with a molecular size of 250\u2013450 kDa, McsBBS mainly consists of large HOOs and exhibits only a minor dimer peak (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "16dccd5c-70da-4ce9-9027-ba6f22dd9df4",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C22",
+      "claim": "Under standard conditions, the bulk of endogenous McsBBS is present as smaller species with sizes comparable to recombinant dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Under standard conditions, the bulk of McsBBS was present as smaller species with sizes comparable to recombinant dimers, whereas heat-shock induced upregulation of markedly larger complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on SEC analysis shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "202e7716-b931-42b9-9bf1-f0719a0225d8",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C23",
+      "claim": "Heat-shock induces upregulation of markedly larger McsB complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under standard conditions, the bulk of McsBBS was present as smaller species with sizes comparable to recombinant dimers, whereas heat-shock induced upregulation of markedly larger complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on SEC analysis shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "f458024a-c865-4281-9cb2-1e1c40918c61",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C24",
+      "claim": "The McsBBS octamer structure was determined at 2.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained crystals diffracting to 2.5 \u00c5 resolution, revealing the atomic structure of the McsBBS octamer (Figure 2a; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "7e008943-e987-45de-bfa8-3a4668601874",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C25",
+      "claim": "The octameric McsB particle represents a tetramer of dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The octameric particle represents a tetramer of dimers, with each dimer resembling the reported McsBGS structure in its subunit contacts, domain arrangement and active site organization (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "7310e67f-7e00-4970-b317-a540c9b27fe9",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C26",
+      "claim": "The four McsBBS dimers form a molecular cage with a length of 110 \u00c5 and a diameter of 80 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The four McsBBS dimers form a molecular cage having the length of one dimer, 110 \u00c5, and a diameter of 80 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "e76bd090-b263-41bd-bcc0-2282a087a039",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C27",
+      "claim": "The phosphorylation chamber has well-defined entrance gates with openings of approximately 25 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylation chamber has well-defined entrance gates with openings of approximately 25 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the crystal structure shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "40950545-21eb-4ca2-ad97-50641ea5667c",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C28",
+      "claim": "Arg194 is phosphorylated at a terminal amine of its guanidinium group in the McsBBS octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the electron density revealed that Arg194 is phosphorylated at a terminal amine of its guanidinium group (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2c with electron density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "bb96b59b-e969-4c7d-b920-e31dd313c341",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C29",
+      "claim": "The pArg194 phospho-guanidinium group is accommodated in a complementarily charged pocket of a neighboring dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The pArg194 phospho-guanidinium group is accommodated in a complementarily charged pocket of a neighboring dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the crystal structure shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "abcba097-7d67-44d0-9987-7b2e0bef27db",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C30",
+      "claim": "Arg337*, Arg341*, and Ser285* of the molecular neighbor closely interact with the pArg194 phosphoryl group.",
+      "claim_type": "EXPLICIT",
+      "source": "In the McsBBS octamer, Arg337*, Arg341*, and Ser285* of the molecular neighbor closely interact with the pArg194 phosphoryl group, whereas Asp338* tightly binds to the positively charged nitrogen of the pArg guanidinium function (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "698ea9d8-f064-4dd9-978a-03ee151a48da",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C31",
+      "claim": "The pArg:pR-RS* tethering is the major interaction stabilizing the McsBBS octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these intimate ion-pair and hydrogen-bonding interactions, we presume that the pArg:pR-RS* tethering, established twice between each pair of aligned dimers, is the major interaction stabilizing the McsBBS octamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "94ff7f59-841e-4d26-8399-0032591c0cdd",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C32",
+      "claim": "The pArg:pR-RS* contact accounts for half of the inter-dimer interface, which measures 850 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the pArg:pR-RS* contact accounts for half of the inter-dimer interface, which measures 850 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "6aeba16c-cce7-44e8-acef-bb7ef926caad",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C33",
+      "claim": "Mass photometry revealed various small molecular weight forms of McsB including 1-, 2-, 4-, and 6-mers at protein concentrations from 10 to 500 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved size resolution of mass photometry as compared to SEC revealed various small molecular weight forms including 1-, 2-, 4-, and 6-mers at protein concentrations from 10 to 500 nM, with the monomer and dimer being predominant at low concentrations (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "4a9bfdcf-3685-4524-8ff7-6d9509ed6ef1",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C34",
+      "claim": "At increasing concentrations, the McsB population shifts toward formation of higher-order oligomers such as 4-, 6-, and 8-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "At increasing concentrations, the population shifted toward formation of higher-order oligomers, such as 4-, 6-, and 8-mers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on mass photometry data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "b8e73700-c481-4f2b-b8a7-a2cdf1ad1ccb",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C35",
+      "claim": "McsBGS shows a clear preference to dimerize and starts to assemble into higher order oligomers only at higher concentrations of about 50 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase showed a clear preference to dimerize and started to assemble into higher order oligomers only at higher concentrations, of about 50 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on mass photometry data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "a23f1db5-38cc-4023-8dd2-2f49be19b5d5",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C36",
+      "claim": "Upon prolonged incubation with the YwlE phosphatase, higher-order McsB oligomers disappeared while the dimer fraction increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon prolonged incubation with the YwlE phosphatase, we found that higher-order oligomers disappeared while, in parallel, the dimer fraction increased (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "8c03d13d-08d8-4350-a899-9c763689b206",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C37",
+      "claim": "The McsB octamer could not be destabilized by the YwlE phosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable exception is the McsB octamer, which could not be destabilized by the YwlE phosphatase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on mass photometry data in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "ea3f488b-dabd-480c-834d-5b2c953bb1e1",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C38",
+      "claim": "All pArg residues except pArg194 and pArg190 were quantitatively dephosphorylated by YwlE treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the crystal structure, all pArg residues, except pArg194 and the adjacent pArg190, were quantitatively dephosphorylated (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3e with MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "2d853a44-966d-4239-a126-c01c7fde2167",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C39",
+      "claim": "Free pArg selectively destabilized the irregular McsBBS oligomers such as the tetramer and hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of pArg selectively destabilized the irregular McsBBS oligomers, as seen for the tetramer and hexamer (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "ddd6c320-9e85-4410-be29-678b0b0e46de",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C40",
+      "claim": "Free pArg shifted the McsB equilibrium toward the isolated monomer and dimer, and to the caged octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, free pArg shifted the equilibrium toward the isolated monomer and dimer, and to the caged octamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on mass photometry data in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "9e4a82d5-3d93-4556-a7e7-54a0c0de2363",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C41",
+      "claim": "The R194K mutation selectively destabilized the McsB octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "As revealed by mass photometric data, the R194K mutation selectively destabilized the McsB octamer, whereas the relative amounts of open McsB multimers, which can be linked by other pArg sites, were not affected (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "d58285db-80b8-4e7b-a4f0-12f2863ca432",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C42",
+      "claim": "Mutating the pArg receptor site (R337A/D338A mutant) resulted in destabilization of McsB multimers, leading to an accumulation of the dimeric kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a SEC analysis revealed that mutating the pArg receptor site (R337A/D338A mutant) resulted in destabilization of McsB multimers, such as 4-, 6-, and 8-mers, leading to an accumulation of the dimeric kinase (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "5638c927-0043-4784-a294-4f11ae0eb685",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C43",
+      "claim": "The octamer showed residual activity against casein, while the activity of the dimer was fourfold higher.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the octamer showed residual activity against casein, the activity of the dimer was fourfold higher, revealing the preferential targeting of casein by the McsBBS dimer (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "331a867d-99ec-4b24-8a88-a9c8baabac78",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C44",
+      "claim": "McsB gains activity against casein upon dilution to 50 nM concentration where oligomers fall apart into dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "As clearly seen for the casein substrate, McsB gains activity upon dilution. We could only observe substrate phosphorylation when using McsBBS at 50 nM concentration, where oligomers fall apart into dimers (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section based on kinase assays in Figure 4c and mass photometry in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "07c42a23-7ef4-46a6-80bc-ea778fa659e8",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C45",
+      "claim": "For v-Myc, the octamer exhibited a higher phosphorylation activity than the dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Radiometric kinase assays revealed that for v-Myc (bHLHZip domain, 12.5 kDa, largely unfolded), the octamer exhibited a higher phosphorylation activity than the dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on kinase assays shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "95b23ff8-4a1b-4ed5-b6b3-ee5c7b77c06f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C46",
+      "claim": "For ComK repressor (Kre), the octamer and dimer exhibited comparable kinase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "For ComK repressor (Kre) (B. subtilis transcription factor of 20 kDa, partially unfolded), the octamer and dimer exhibited comparable kinase activities, and for \u03b2-casein (25 kDa, disordered but can oligomerize via interprotein \u03b2-sheets), the dimer had a fourfold higher kinase activity as compared to the octamer (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "5fc50c6d-231c-4f30-adf7-e9cce9bf2ad9",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C47",
+      "claim": "The dimeric McsBBS was capable of phosphorylating both UNC45wt and UNC45core variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric McsBBS was capable of phosphorylating both UNC45 variants (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "b3fea1ee-9f25-4197-a3a9-40b3f0dd9c8f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C48",
+      "claim": "The octameric kinase preferentially targeted the full-length UNC45 construct harboring the disordered UCS domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the octameric kinase preferentially targeted the full-length construct harboring the disordered UCS domain, whereas the labeling of UNC-45core was very inefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on kinase assays shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "873ea98e-c31a-49f1-b4a5-f109ae86b3f0",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C49",
+      "claim": "The compact UNC45core protein was almost exclusively targeted by the McsB dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when comparing all tested model substrates, the difference in substrate selectivity was most pronounced for the compact UNC45core protein, which was almost exclusively targeted by the McsB dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on kinase assays shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "152256b8-29f7-4234-b414-b9fe659c21ea",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C50",
+      "claim": "The open HOO forms of McsB efficiently target the folded model protein UNC45core.",
+      "claim_type": "EXPLICIT",
+      "source": "Assaying the kinase function of the RRAA double mutant revealed that the open HOOs efficiently target the folded model protein UNC45core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on kinase assays shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "e95a7657-787a-4ce4-900f-11517565d5bb",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C51",
+      "claim": "The phosphorylation activity of open HOOs was twofold higher than that of the dimer against UNC45core.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the phosphorylation activity was twofold higher than that of the dimer (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "24a7babd-5746-4f51-932f-6710fa67da62",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C52",
+      "claim": "McsB levels strongly upregulated during stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we observed that McsB levels strongly upregulated during stress conditions (Figure 5\u2014figure supplement 1), which should favour the formation of higher-order kinase assemblies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "77f97e9e-33d6-4096-9520-840580c70f0b",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C53",
+      "claim": "During heat-shock conditions, the survival of mcsB(R194K)-bearing cells was significantly reduced, similar to cells carrying the \u2206mcsB deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, during heat-shock conditions, the survival of mcsB(R194K)-bearing cells was significantly reduced, similar to cells carrying the \u2206mcsB deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on cell viability assays shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "dc228aa9-5728-45bd-bf2f-39c9dbb4fd07",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C54",
+      "claim": "After a 2 hr incubation at 53\u00b0C, 60% wildtype cells survived the imposed heat shock, while only 1% to 5% of the \u2206mcsB and mcsB(R194K) mutant cells were thermotolerant.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 2 hr incubation at 53\u00b0C, \u2206mcsB and mcsB(R194K) B. subtilis cells suffered severely, as reflected by the strongly reduced number of colony-forming units (CFUs). Whereas 60% wildtype cells survived the imposed heat shock, only 1% to 5% of the \u2206mcsB and mcsB(R194K) mutant cells were thermotolerant (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "655109ec-86b3-4d83-b0da-7f8c6e512e18",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C55",
+      "claim": "McsB R194K showed an increased activity (~1.5 times) against the folded model substrate UNC45core compared to the wildtype enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the wildtype enzyme, RK showed an increased activity (~1.5 times) against our folded model substrate UNC45core (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "493929ce-59ec-4b23-87ec-81e34a2570cf",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C56",
+      "claim": "The YwlE-deficient bacteria showed a strong thermosensitive phenotype, with deletion of the phosphatase almost fully abolishing cell survival during heat-shock conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the YwlE-deficient bacteria showed a strong thermosensitive phenotype. Deletion of the phosphatase almost fully abolished cell survival during heat-shock conditions (Figure 6\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "bec7a50a-f3fe-40e6-bd3b-0c266429114d",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C57",
+      "claim": "The interconversion of open and closed oligomers represents a distinct regulatory mechanism of a degradation labeler.",
+      "claim_type": "EXPLICIT",
+      "source": "The interconversion of open and closed oligomers represents a distinct regulatory mechanism of a degradation labeler, allowing the McsB kinase to adapt its potentially dangerous enzyme function to the needs of the bacterial cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "a78a0b2d-7578-4da4-bc0a-41eeb8f2fed9",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C58",
+      "claim": "The pArg-dependent switch in oligomeric state defines McsB's substrate specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the pArg-dependent switch in oligomeric state defines McsB's substrate specificity and becomes essential during stress situations to efficiently eliminate damaged proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a summary of findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "234cfc16-c939-4f15-8b04-891ff87aa65a",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C59",
+      "claim": "The pArg-dependent switch becomes essential during stress situations to efficiently eliminate damaged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the pArg-dependent switch in oligomeric state defines McsB's substrate specificity and becomes essential during stress situations to efficiently eliminate damaged proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a summary of findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "cb86bfc6-518d-42e8-a60f-6e9e9e632f7f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C60",
+      "claim": "The structure of the pArg194-linked McsB octamer represents the first atomic visualization of a defined higher-order oligomer that strictly depends on a specific phosphorylation event.",
+      "claim_type": "EXPLICIT",
+      "source": "Although post-translational modifications have often been implicated in regulating oligomerization, the structure of the pArg194-linked McsB octamer represents, to our knowledge, the first atomic visualization of a defined higher-order oligomer that strictly depends on a specific phosphorylation event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the structural analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "b2479b32-84cd-4220-90d6-b6ef41ff17a4",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C61",
+      "claim": "The small size of the entry gate (25 \u00c5 wide) constitutes a molecular filter favoring the phosphorylation of unstructured polypeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the McsB octamer, the small size of the entry gate, which is only 25 \u00c5 wide, constitutes a molecular filter favoring the phosphorylation of unstructured polypeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "e8d3d6ab-3c86-484c-a633-8c4a55d5e200",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C62",
+      "claim": "Small-molecule compounds blocking octamer formation will abolish the bacterial stress response and cause deleterious effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We presume that small-molecule compounds blocking octamer formation will abolish the bacterial stress response and cause deleterious effects, as exemplified here for the R194K mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a speculation based on the R194K phenotype.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "df83a432-be6c-48e4-a77a-8699f1851ddc",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C63",
+      "claim": "Targeting the oligomer conversion of McsB represents an appealing strategy to develop novel antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting the oligomer conversion of McsB \u2013 which is mediated by a single phosphate group \u2013 thus represents an appealing strategy to develop novel antibiotics, interfering with an essential step in the PQC system of bacterial pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "2604a549-0348-4cd1-b5a4-86720c551c5d",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C64",
+      "claim": "The increased levels of McsB during stress lead to the formation of closed octamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the increased levels of McsB lead to the formation of closed octamers (Figure 6b), which we show to be the active kinase species responsible for labeling aberrant proteins for degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and illustrated in Figure 6b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "ee2abfa1-fcfc-47c4-8f59-de1ccfcea957",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C65",
+      "claim": "Upregulation of McsB also favours the formation of higher-order oligomers with enhanced phosphorylation activity but less selective substrate targeting properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, upregulation of McsB also favours the formation of higher-order oligomers with enhanced phosphorylation activity but less selective substrate targeting properties (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion based on kinase assays shown in Figure 5d.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "e8434ca4-cc7c-4a15-a55f-a0f7a26750f7",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C66",
+      "claim": "YwlE prevents proteins from being unintendedly directed for ClpCP-mediated degradation by affecting the oligomeric state of McsB and directly dephosphorylating substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "By affecting the oligomeric state (and thus specificity) of McsB and directly dephosphorylating substrates, this enzyme could prevent proteins from being unintendedly directed for ClpCP-mediated degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "669ff742-6e3e-482b-9a13-378a22805155",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C67",
+      "claim": "Under normal conditions, monomer and dimer become the predominant McsB species.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the stress stimulus ends, the protein levels of McsB decrease to a level where disassembly of the octamer and other HOOs is favored. Under normal conditions monomer and dimer become the predominant McsB species and while the monomer is enzymatically inactive and may provide a cellular pool of activatable McsB units, the dimer is expected to execute the basal housekeeping activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "843ef305-e2e6-4351-8913-f7061e7827b3",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C68",
+      "claim": "The monomer is enzymatically inactive and may provide a cellular pool of activatable McsB units.",
+      "claim_type": "EXPLICIT",
+      "source": "Under normal conditions monomer and dimer become the predominant McsB species and while the monomer is enzymatically inactive and may provide a cellular pool of activatable McsB units, the dimer is expected to execute the basal housekeeping activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "9f3631a1-6e2a-4ed9-b094-b278529536ed",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C69",
+      "claim": "The dimer is expected to execute the basal housekeeping activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Under normal conditions monomer and dimer become the predominant McsB species and while the monomer is enzymatically inactive and may provide a cellular pool of activatable McsB units, the dimer is expected to execute the basal housekeeping activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "10d7d933-8ca2-4236-b36f-650cb536f03b",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C70",
+      "claim": "Degradation labeling is as carefully regulated in bacteria as it is in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings highlight the fine balance in PQC factor activity as required for efficient thermotolerance and to cope with adverse environmental conditions. Our data show that degradation labeling is as carefully regulated in bacteria as it is in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "2bab1560-4e11-456c-bec9-2771b973c2bc",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C71",
+      "claim": "McsB belongs to the family of self-compartmentalized PQC factors.",
+      "claim_type": "EXPLICIT",
+      "source": "McsB thus belongs to the family of self-compartmentalized PQC factors, featuring a structural organization similar to that in higher-order proteases, such as the proteasome (Groll et al., 2000), ClpP (Wang et al., 1997) and DegP (Krojer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "70e48756-be52-47d7-8f11-bca4d406917b",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C72",
+      "claim": "The active sites of the McsB octamer are buried within an internal phosphorylation chamber that is only accessible through lateral entry gates.",
+      "claim_type": "EXPLICIT",
+      "source": "As visualized by a high-resolution crystal structure, the active sites are sequestered in an internal phosphorylation chamber that is only accessible through lateral entry gates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "0fb2c45a-baae-4edd-b64e-57ea9a83542e",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C73",
+      "claim": "The caged kinase phosphorylates unfolded proteins in a highly selective and efficient manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we observed that the caged kinase phosphorylates unfolded proteins in a highly selective and efficient manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on kinase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "327f9ffd-4b33-4355-9004-f7d4264b8d0c",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C74",
+      "claim": "The functional importance of the McsB phosphorylation chamber is highlighted by the thermosensitive phenotype of the R194K mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional importance of the described McsB phosphorylation chamber is highlighted by the thermosensitive phenotype of the R194K mutation, which impairs octamer stability rather than enzymatic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "6436a05e-0bd7-4d92-89a4-aa5ebcaf24e1",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C75",
+      "claim": "The R194K mutation impairs octamer stability rather than enzymatic function.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional importance of the described McsB phosphorylation chamber is highlighted by the thermosensitive phenotype of the R194K mutation, which impairs octamer stability rather than enzymatic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "1b8b68ed-def8-48ed-baae-79039142440b",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C76",
+      "claim": "The auto-activated HOO form of McsB is predestined to target protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the ability to undergo multivalent interactions with substrate, we assume that the auto-activated HOO form of McsB is predestined to target protein aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "c023a425-fa59-4360-946a-6fceef71ff77",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C77",
+      "claim": "The pArg:pR-RS* mediated linkage of McsB subunits exerts a stimulatory effect on kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the pArg:pR-RS* mediated linkage of McsB subunits exerts a stimulatory effect on kinase activity, which is consistent with the previously described allosteric effect of binding pArg-containing ligands (Suskiewicz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "b21319ae-2603-4bbd-89af-6c9dd7dfb6c8",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C78",
+      "claim": "McsB auto-activation should be relevant for both open and closed multi-dimers, accelerating the pArg labeling of client proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, McsB auto-activation should be relevant for both open and closed multi-dimers, accelerating the pArg labeling of client proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "ead35684-dc46-4587-964b-0afdd038602f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C79",
+      "claim": "The thermosensitive phenotype of the R194K mutant is likely due to a misbalance in the abundance between open HOO forms and the octameric cage.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, these results indicate that the thermosensitive phenotype of the R194K mutant is likely due to a misbalance in the abundance between open HOO forms and the octameric cage, highlighting the functional importance of the pArg194-mediated switch in oligomeric state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "c31f84fd-00d8-4529-b4f0-60758cd3256d",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C80",
+      "claim": "Each McsB dimer in the octamer is bound to two other molecules and is thus stabilized compared to irregular multi-dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Each McsB dimer in the octamer is bound to two other molecules and is thus stabilized compared to irregular multi-dimers, where most units are tethered by single pArg:pR-RS linkages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "25e56b4d-79f1-4dd0-a536-13957525ae1f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C81",
+      "claim": "The high stability of the octamer should limit transient dissociation, which might be a prerequisite for dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The high stability of the octamer should limit transient dissociation, which might be a prerequisite for dephosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "c5182425-e527-4220-b578-8ceade004d6f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C82",
+      "claim": "McsB oligomer conversion can be achieved in trans by pArg-labeled products or pArg-carrying effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "According to these data, McsB oligomer conversion can be achieved in trans, for example by pArg-labeled products or pArg-carrying effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the pArg competition data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "c89679b6-1ca5-4175-8afb-4941d7021286",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C83",
+      "claim": "Binding of exposed pArg residues to the pR-RS of a molecular neighbor connects McsB dimers to multimers ranging in size from 2- to 12-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that interconversion of McsB oligomers is a pArg-dependent process. Binding of exposed pArg residues to the pR-RS of a molecular neighbor connects McsB dimers to multimers ranging in size from 2- to 12-mers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "14fa4d3a-2901-4975-ba24-624a72e8d9f0",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C84",
+      "claim": "Among the tethering pArg residues, pArg194 obtains a special role as this phospho residue can promote assembly of the closed octameric cage.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the tethering pArg residues, pArg194 obtains a special role as this phospho residue can promote assembly of the closed octameric cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "26e1095e-318d-4092-917f-e725f1519662",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C85",
+      "claim": "The self-compartmentalized octamer persists in the presence of the YwlE phosphatase and pArg-linked effector molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other higher-order oligomers, the self-compartmentalized octamer persists in the presence of the YwlE phosphatase and pArg-linked effector molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "b2fbf209-9192-4ce2-8a08-c1fbdf827991",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C86",
+      "claim": "The interconversion between the different oligomeric states of McsB represents an important function of the PQC kinase in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus presume that in vivo, the interconversion between the different oligomeric states of McsB represents an important function of the PQC kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "1d6d17e2-aa7d-4401-82cb-af624ce51ffd",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C87",
+      "claim": "A change in oligomeric state is directly coupled to a switch in the substrate specificity of the protein kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that a change in oligomeric state is directly coupled to a switch in the substrate specificity of the protein kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the kinase assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "026a428d-23f1-48eb-b2cc-1e323114f5f5",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C88",
+      "claim": "The dimer and octamer of the McsB kinase have complementary substrate specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "According to these data, the dimer and octamer of the McsB kinase have complementary substrate specificities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the kinase assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "7037e631-b88f-416d-a080-9bd173c78d4b",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C89",
+      "claim": "The dimer phosphorylates proteins in a rather unspecific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the dimer phosphorylates proteins in a rather unspecific manner, the octamer preferentially targets unfolded proteins that can pass its narrow entrance gates and enter the kinase chamber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the kinase assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "81ba279d-4274-454a-b444-6f09ddf699e9",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C90",
+      "claim": "The octamer preferentially targets unfolded proteins that can pass its narrow entrance gates and enter the kinase chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the dimer phosphorylates proteins in a rather unspecific manner, the octamer preferentially targets unfolded proteins that can pass its narrow entrance gates and enter the kinase chamber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the kinase assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "e5b6ad67-aac3-4ed9-836c-9a184346fd94",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C91",
+      "claim": "None of the residues implicated in substrate binding or catalysis is engaged in inter-dimer contacts in the octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, none of the residues implicated in substrate binding or catalysis is engaged in inter-dimer contacts, suggesting that the internal active sites are functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the crystal structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "276ecaff-664a-4fe1-9e80-4d819ef6bf05",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C92",
+      "claim": "The internal active sites of the octamer are functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, none of the residues implicated in substrate binding or catalysis is engaged in inter-dimer contacts, suggesting that the internal active sites are functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the crystal structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "3c0eb68b-fad2-42eb-9ac4-e0b0c474f3bc",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C93",
+      "claim": "Potential substrates have to pass the entrance gates in order to reach the active sites buried within the inner chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Potential substrates have to pass the entrance gates in order to reach the active sites, which are buried within the inner chamber (Figure 2b, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and illustrated in Figure 2b and Video 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "b424af60-1575-4593-83e2-18f271338101",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C94",
+      "claim": "The pR-RS corresponds to the previously identified pArg binding pocket of McsBGS that enables allosteric stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This pArg receptor site (pR-RS) corresponds to the previously identified pArg binding pocket of McsBGS that enables allosteric stimulation (Suskiewicz et al., 2019; Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with a supporting citation and shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "866079b6-2899-4377-90fe-4e1a21f7be26",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "claim_id": "C95",
+      "claim": "Asp338* tightly binds to the positively charged nitrogen of the pArg guanidinium function.",
+      "claim_type": "EXPLICIT",
+      "source": "In the McsBBS octamer, Arg337*, Arg341*, and Ser285* of the molecular neighbor closely interact with the pArg194 phosphoryl group, whereas Asp338* tightly binds to the positively charged nitrogen of the pArg guanidinium function (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "McsB forms a self-compartmentalized octamer with active sites sequestered in a molecular cage. The octamer is a tetramer of dimers stabilized by pArg194-mediated interactions, with entrance gates of ~25 \u00c5 and functional internal active sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystal structure at 2.5 \u00c5 resolution (C24) provides direct structural evidence for the octameric cage architecture (C4, C25, C26). The electron density clearly shows pArg194 phosphorylation (C28) and its interactions with neighboring residues (C29, C30), supporting the stabilization mechanism (C31, C32). The structural data demonstrating that catalytic residues are not involved in inter-dimer contacts (C91) supports the inference that internal active sites are functional (C92).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "864679e6-7c3f-45c8-acae-94ba028ee93c",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "McsB oligomers interconvert in a phosphorylation-dependent manner, with pArg194 playing a special role in stabilizing the octamer. Mass photometry reveals concentration-dependent oligomer distributions, and YwlE phosphatase treatment destabilizes most oligomers except the octamer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Mass photometry data (C33, C34, C35) directly demonstrate concentration-dependent oligomer distributions. YwlE treatment experiments (C36, C37) combined with MS analysis (C38) provide strong evidence for phosphorylation-dependent interconversion. The R194K mutation specifically destabilizes the octamer (C41), and the R337A/D338A mutation destabilizes multimers (C42), supporting the pArg194-pR-RS interaction model. The resistance of the octamer to YwlE (C37, C85) is consistent with the structural burial of pArg194.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The octameric and dimeric forms of McsB have complementary substrate specificities. The octamer preferentially targets unfolded proteins, while the dimer phosphorylates proteins more promiscuously. This represents a substrate filtering mechanism mediated by the narrow entrance gates of the octamer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Radiometric kinase assays with multiple substrates (C43, C45, C46, C47, C48, C49) provide direct experimental evidence for differential substrate specificity. The dilution series experiment (C44) demonstrates that activity changes correlate with oligomeric state. The pattern across substrates of varying foldedness is internally consistent and supports the molecular filter hypothesis based on the 25 \u00c5 entrance gates. The complementary specificities (C88, C89, C90) are well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Heat-shock triggers accumulation of higher-order McsB oligomers in vivo, and the octameric form is essential for bacterial survival under stress conditions. McsB levels increase ~8-fold during heat shock, and the R194K mutation that destabilizes the octamer causes a thermosensitive phenotype similar to \u0394mcsB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "SEC analysis of B. subtilis lysates (C7, C22, C23) provides direct in vivo evidence for heat-shock-induced oligomer accumulation. Quantitative Western blot data (C52) demonstrates significant McsB upregulation. The cell viability assays (C53, C54) show that R194K mutant cells have survival rates (1-5%) comparable to \u0394mcsB cells, strongly supporting the functional importance of the octamer. The convergence of in vitro structural/biochemical data with in vivo phenotypic data provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "5f4e87f2-09ec-461a-831c-13afb0a1522e",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Open higher-order oligomers (HOOs) of McsB exhibit enhanced kinase activity compared to dimers. The pArg-mediated linkage of subunits exerts a stimulatory allosteric effect, and HOOs are proposed to target protein aggregates through multivalent interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Kinase assays with the R190A/R194A mutant enriched in open HOOs (C50, C51) demonstrate 2-fold higher activity than dimers against folded substrates. This is consistent with previous reports of allosteric activation by pArg binding (C77). The inference that HOOs target aggregates (C76) is reasonable given their multivalent binding capacity, though direct experimental evidence for aggregate targeting is not provided in the claims. The stimulatory effect is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "129e5074-08b1-4ccf-8446-f97f6433ab5f",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The R194K mutation impairs octamer stability rather than enzymatic function, and the thermosensitive phenotype is due to a misbalance between open HOO forms and the octameric cage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The R194K mutant shows increased activity (~1.5-fold) against folded substrates (C55), indicating that enzymatic function is not impaired. Mass photometry shows selective octamer destabilization (C41, referenced in C75). SEC analysis shows altered oligomer distribution for R194K (Figure 6\u2014supplement 1b, referenced in C79). The convergence of these observations supports the interpretation that the phenotype results from altered oligomer balance rather than loss of catalytic activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "66e3a021-3d3a-4186-adc7-9c7142a5bc0a",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "YwlE phosphatase is essential for thermotolerance, with deletion causing a severe thermosensitive phenotype. YwlE may prevent unintended protein degradation by affecting McsB oligomeric state and directly dephosphorylating substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The \u0394ywlE phenotype (C56) is clearly demonstrated by cell viability assays. However, the mechanistic interpretation (C66) is speculative. The authors note that Western blot profiles of McsB in WT and \u0394ywlE cells look virtually identical (stated in text), suggesting the method may not be sensitive enough to detect oligomer differences. The dual mechanism proposed (affecting oligomer state and dephosphorylating substrates) is plausible but not directly demonstrated in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "6ec784b2-031e-4c7e-80b6-2c4f4f225966",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The interconversion of open and closed McsB oligomers represents a distinct regulatory mechanism that defines substrate specificity and is essential during stress for efficient elimination of damaged proteins. This demonstrates that bacterial degradation labeling is as carefully regulated as in eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion is well-supported by the convergence of multiple lines of evidence: structural data showing the octamer architecture, mass photometry demonstrating phosphorylation-dependent interconversion, kinase assays showing differential substrate specificity, and in vivo data showing the octamer is essential for stress survival. The comparison to eukaryotic regulation (C70) is justified given the demonstrated complexity of the system. This represents a synthesis of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "McsB is a protein arginine kinase central to protein quality control in Gram-positive bacteria, with roles in stress response, pathogenicity, and degradation labeling. It phosphorylates transcriptional repressors and marks proteins for ClpCP-mediated degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established background knowledge supported by multiple citations to prior work. They provide the foundational context for the current study. While not novel findings of this manuscript, they are accurately stated and well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "c5df1d93-f384-480d-83e3-f3f7ae7d2c34",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "McsB is composed of a phosphotransferase domain and dimerization domain, with dimer formation required for full activity. McsB exists in various oligomeric states and is a promiscuous kinase without consensus sequence specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established background from prior structural and functional studies, particularly from work on the G. stearothermophilus ortholog. They are supported by citations and provide important context for understanding the current findings about oligomer interconversion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "8e0c7f11-58f3-4139-95b4-83e2d4b2d127",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "McsBBS mainly consists of large higher-order oligomers in SEC analysis, with only a minor dimer peak, in contrast to McsBGS which shows a prominent dimer peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is directly demonstrated by SEC data in Figure 1b. The observation establishes that the B. subtilis ortholog has a different oligomer distribution than the G. stearothermophilus ortholog, motivating the detailed characterization of McsBBS oligomers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "1be31c9a-75ab-4b0b-938f-810adbf1fca9",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The pArg194-linked McsB octamer represents the first atomic visualization of a defined higher-order oligomer that strictly depends on a specific phosphorylation event.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by the crystal structure showing pArg194 in the inter-dimer interface and the functional data showing that R194K specifically destabilizes the octamer. The novelty claim ('first atomic visualization') is stated with appropriate qualification ('to our knowledge') and is consistent with the structural biology literature on phosphorylation-dependent oligomerization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "51da5da4-ade6-4f61-876c-ec33a463d6ac",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "McsB belongs to the family of self-compartmentalized PQC factors with structural organization similar to proteases like the proteasome and ClpP. The 25 \u00c5 entry gate constitutes a molecular filter favoring unstructured polypeptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparison to other compartmentalized proteases (C71) is supported by citations and is a reasonable inference from the structural data. The molecular filter hypothesis (C61) is well-supported by the combination of structural data (25 \u00c5 gates) and functional data showing preferential activity against unfolded substrates (C73).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "5e2673ac-269e-4b6e-8442-f7f9784e9d56",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Small-molecule compounds blocking octamer formation could abolish bacterial stress response and represent an appealing antibiotic strategy targeting the PQC system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative claims about potential therapeutic applications. While the R194K phenotype (C53, C54) provides proof-of-concept that disrupting octamer formation is deleterious, the leap to small-molecule drug development is speculative. No compounds are tested, and drug development feasibility is not assessed. This represents reasonable speculation for future work but is not experimentally supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "d0945fb3-34a6-47d0-9807-f2d84c314c60",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Upregulation of McsB favors formation of higher-order oligomers with enhanced phosphorylation activity but less selective substrate targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is supported by the combination of data showing McsB upregulation during stress (C52) and kinase assays showing HOOs have higher activity but less selectivity (C50, C51). The inference that upregulation favors HOO formation is reasonable given the concentration-dependent oligomerization demonstrated by mass photometry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "881ad5dd-09a5-4c0b-93ee-be2694197a86",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Under normal conditions, monomers and dimers are the predominant McsB species. The monomer is enzymatically inactive and may provide a cellular pool of activatable units, while the dimer executes basal housekeeping activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The predominance of smaller species under normal conditions is supported by SEC analysis of non-heat-shocked cells (C22). The inference about monomer inactivity (C68) is consistent with prior knowledge about the requirement for dimerization for activity (C18). The proposed roles are reasonable inferences from the data, though direct experimental evidence for the 'activatable pool' function is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "20d93a9a-7d49-4897-9fda-05198344c020",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The functional importance of the McsB phosphorylation chamber is highlighted by the thermosensitive phenotype of the R194K mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a summary statement connecting the structural findings (phosphorylation chamber) with the functional in vivo data (R194K phenotype). It is well-supported by the convergence of structural and phenotypic data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "56f28657-0e2c-4013-9aa5-f558f4c03ec4",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Each McsB dimer in the octamer is bound to two other molecules, providing enhanced stability. The high stability limits transient dissociation and may protect from dephosphorylation. McsB oligomer conversion can be achieved in trans by pArg-labeled products or effector proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural basis for enhanced stability (C80) is clear from the crystal structure. The resistance to YwlE dephosphorylation (C37, C38) supports the protection hypothesis (C81), though the mechanism ('limiting transient dissociation') is somewhat speculative. The trans regulation by free pArg (C82) is directly demonstrated by mass photometry experiments (C39, C40).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    },
+    {
+      "id": "33502bcf-4795-4cfa-af83-b0feb9474256",
+      "content_id": "bc957693-1bab-408e-9055-e679ef6b9d9b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The pArg receptor site (pR-RS) in the octamer corresponds to the previously identified pArg binding pocket that enables allosteric stimulation. Specific residues (Arg337*, Arg341*, Ser285*, Asp338*) mediate the pArg194 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correspondence to the previously identified allosteric site (C94) is supported by structural alignment with the G. stearothermophilus structure and citation. The specific interactions (C95, C30) are directly observed in the crystal structure with clear electron density (C28).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:25:13.637130Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b0cf0fe-5349-4f83-8cdd-d18150342a1f",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "f458024a-c865-4281-9cb2-1e1c40918c61",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "7e008943-e987-45de-bfa8-3a4668601874",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "7310e67f-7e00-4970-b317-a540c9b27fe9",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "e76bd090-b263-41bd-bcc0-2282a087a039",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "40950545-21eb-4ca2-ad97-50641ea5667c",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "bb96b59b-e969-4c7d-b920-e31dd313c341",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "abcba097-7d67-44d0-9987-7b2e0bef27db",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "698ea9d8-f064-4dd9-978a-03ee151a48da",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "94ff7f59-841e-4d26-8399-0032591c0cdd",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "70e48756-be52-47d7-8f11-bca4d406917b",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "e5b6ad67-aac3-4ed9-836c-9a184346fd94",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "276ecaff-664a-4fe1-9e80-4d819ef6bf05",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "3c0eb68b-fad2-42eb-9ac4-e0b0c474f3bc",
+      "result_id": "71b07d59-d1d4-4e5b-b1cb-d74200a20148"
+    },
+    {
+      "claim_id": "47bc3e22-55b4-4960-bddd-660ec801ee1d",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "6aeba16c-cce7-44e8-acef-bb7ef926caad",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "4a9bfdcf-3685-4524-8ff7-6d9509ed6ef1",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "b8e73700-c481-4f2b-b8a7-a2cdf1ad1ccb",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "a23f1db5-38cc-4023-8dd2-2f49be19b5d5",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "8c03d13d-08d8-4350-a899-9c763689b206",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "ea3f488b-dabd-480c-834d-5b2c953bb1e1",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "2d853a44-966d-4239-a126-c01c7fde2167",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "ddd6c320-9e85-4410-be29-678b0b0e46de",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "9e4a82d5-3d93-4556-a7e7-54a0c0de2363",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "d58285db-80b8-4e7b-a4f0-12f2863ca432",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "c89679b6-1ca5-4175-8afb-4941d7021286",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "14fa4d3a-2901-4975-ba24-624a72e8d9f0",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "26e1095e-318d-4092-917f-e725f1519662",
+      "result_id": "864679e6-7c3f-45c8-acae-94ba028ee93c"
+    },
+    {
+      "claim_id": "9081ce85-9d75-4919-a458-732a4ed5ed3c",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "5638c927-0043-4784-a294-4f11ae0eb685",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "331a867d-99ec-4b24-8a88-a9c8baabac78",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "07c42a23-7ef4-46a6-80bc-ea778fa659e8",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "95b23ff8-4a1b-4ed5-b6b3-ee5c7b77c06f",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "5fc50c6d-231c-4f30-adf7-e9cce9bf2ad9",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "b3fea1ee-9f25-4197-a3a9-40b3f0dd9c8f",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "873ea98e-c31a-49f1-b4a5-f109ae86b3f0",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "1d6d17e2-aa7d-4401-82cb-af624ce51ffd",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "026a428d-23f1-48eb-b2cc-1e323114f5f5",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "7037e631-b88f-416d-a080-9bd173c78d4b",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "81ba279d-4274-454a-b444-6f09ddf699e9",
+      "result_id": "f86cff4f-4dc7-48f5-9e2c-b22688fb5dbd"
+    },
+    {
+      "claim_id": "39968f3e-6484-4e6f-a023-040796fd5ff5",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "9fad7edf-6c00-4c77-a6a5-a4eda7b602a7",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "16dccd5c-70da-4ce9-9027-ba6f22dd9df4",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "202e7716-b931-42b9-9bf1-f0719a0225d8",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "24a7babd-5746-4f51-932f-6710fa67da62",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "77f97e9e-33d6-4096-9520-840580c70f0b",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "dc228aa9-5728-45bd-bf2f-39c9dbb4fd07",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "2604a549-0348-4cd1-b5a4-86720c551c5d",
+      "result_id": "ee9d3d86-7171-46fa-96d3-c9f2f49ca8f2"
+    },
+    {
+      "claim_id": "152256b8-29f7-4234-b414-b9fe659c21ea",
+      "result_id": "5f4e87f2-09ec-461a-831c-13afb0a1522e"
+    },
+    {
+      "claim_id": "e95a7657-787a-4ce4-900f-11517565d5bb",
+      "result_id": "5f4e87f2-09ec-461a-831c-13afb0a1522e"
+    },
+    {
+      "claim_id": "1b8b68ed-def8-48ed-baae-79039142440b",
+      "result_id": "5f4e87f2-09ec-461a-831c-13afb0a1522e"
+    },
+    {
+      "claim_id": "c023a425-fa59-4360-946a-6fceef71ff77",
+      "result_id": "5f4e87f2-09ec-461a-831c-13afb0a1522e"
+    },
+    {
+      "claim_id": "b21319ae-2603-4bbd-89af-6c9dd7dfb6c8",
+      "result_id": "5f4e87f2-09ec-461a-831c-13afb0a1522e"
+    },
+    {
+      "claim_id": "655109ec-86b3-4d83-b0da-7f8c6e512e18",
+      "result_id": "129e5074-08b1-4ccf-8446-f97f6433ab5f"
+    },
+    {
+      "claim_id": "6436a05e-0bd7-4d92-89a4-aa5ebcaf24e1",
+      "result_id": "129e5074-08b1-4ccf-8446-f97f6433ab5f"
+    },
+    {
+      "claim_id": "ead35684-dc46-4587-964b-0afdd038602f",
+      "result_id": "129e5074-08b1-4ccf-8446-f97f6433ab5f"
+    },
+    {
+      "claim_id": "493929ce-59ec-4b23-87ec-81e34a2570cf",
+      "result_id": "66e3a021-3d3a-4186-adc7-9c7142a5bc0a"
+    },
+    {
+      "claim_id": "e8434ca4-cc7c-4a15-a55f-a0f7a26750f7",
+      "result_id": "66e3a021-3d3a-4186-adc7-9c7142a5bc0a"
+    },
+    {
+      "claim_id": "bec7a50a-f3fe-40e6-bd3b-0c266429114d",
+      "result_id": "6ec784b2-031e-4c7e-80b6-2c4f4f225966"
+    },
+    {
+      "claim_id": "a78a0b2d-7578-4da4-bc0a-41eeb8f2fed9",
+      "result_id": "6ec784b2-031e-4c7e-80b6-2c4f4f225966"
+    },
+    {
+      "claim_id": "234cfc16-c939-4f15-8b04-891ff87aa65a",
+      "result_id": "6ec784b2-031e-4c7e-80b6-2c4f4f225966"
+    },
+    {
+      "claim_id": "10d7d933-8ca2-4236-b36f-650cb536f03b",
+      "result_id": "6ec784b2-031e-4c7e-80b6-2c4f4f225966"
+    },
+    {
+      "claim_id": "b2fbf209-9192-4ce2-8a08-c1fbdf827991",
+      "result_id": "6ec784b2-031e-4c7e-80b6-2c4f4f225966"
+    },
+    {
+      "claim_id": "745b1156-3e0b-49f7-a147-b24b4dd72f2a",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "34ed9acc-01b7-492b-bff4-44cc23bf1743",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "3f92e0f9-5c02-4ab0-a4cf-8cf372830bce",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "81d729d9-4c66-4666-89ef-f07aa4162187",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "a140b11b-1fe3-4c3c-a12c-38ba97c1cf22",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "d5ec2ccb-85c1-493f-8c29-b89972f6d266",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "d4764a0e-6b26-4059-a55f-df744f58fa3c",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "7073d158-9121-40c6-a973-14807637de92",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "c1960b3c-3685-4052-82e6-199a51b9473b",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "f2dc5d32-0a8b-4e66-8a6b-ce90a526c0f4",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "29550852-b0da-4303-a077-2841f9fc0ce1",
+      "result_id": "2e6ef64e-e892-406f-9a8b-2ccddfc64f09"
+    },
+    {
+      "claim_id": "dc2e9663-e217-4dbb-afcf-53c46087fe4c",
+      "result_id": "c5df1d93-f384-480d-83e3-f3f7ae7d2c34"
+    },
+    {
+      "claim_id": "5ace57c4-d430-4f58-b42f-8c058129dc4a",
+      "result_id": "c5df1d93-f384-480d-83e3-f3f7ae7d2c34"
+    },
+    {
+      "claim_id": "602cd38c-df94-48a1-919b-11007b2b7d59",
+      "result_id": "c5df1d93-f384-480d-83e3-f3f7ae7d2c34"
+    },
+    {
+      "claim_id": "8bca0769-a125-4a21-a9b4-1ad5b8078fbf",
+      "result_id": "c5df1d93-f384-480d-83e3-f3f7ae7d2c34"
+    },
+    {
+      "claim_id": "ab14ed1e-f732-4193-adb4-eab60c5c5f8f",
+      "result_id": "8e0c7f11-58f3-4139-95b4-83e2d4b2d127"
+    },
+    {
+      "claim_id": "cb86bfc6-518d-42e8-a60f-6e9e9e632f7f",
+      "result_id": "1be31c9a-75ab-4b0b-938f-810adbf1fca9"
+    },
+    {
+      "claim_id": "b2479b32-84cd-4220-90d6-b6ef41ff17a4",
+      "result_id": "51da5da4-ade6-4f61-876c-ec33a463d6ac"
+    },
+    {
+      "claim_id": "2bab1560-4e11-456c-bec9-2771b973c2bc",
+      "result_id": "51da5da4-ade6-4f61-876c-ec33a463d6ac"
+    },
+    {
+      "claim_id": "0fb2c45a-baae-4edd-b64e-57ea9a83542e",
+      "result_id": "51da5da4-ade6-4f61-876c-ec33a463d6ac"
+    },
+    {
+      "claim_id": "e8d3d6ab-3c86-484c-a633-8c4a55d5e200",
+      "result_id": "5e2673ac-269e-4b6e-8442-f7f9784e9d56"
+    },
+    {
+      "claim_id": "df83a432-be6c-48e4-a77a-8699f1851ddc",
+      "result_id": "5e2673ac-269e-4b6e-8442-f7f9784e9d56"
+    },
+    {
+      "claim_id": "ee2abfa1-fcfc-47c4-8f59-de1ccfcea957",
+      "result_id": "d0945fb3-34a6-47d0-9807-f2d84c314c60"
+    },
+    {
+      "claim_id": "669ff742-6e3e-482b-9a13-378a22805155",
+      "result_id": "881ad5dd-09a5-4c0b-93ee-be2694197a86"
+    },
+    {
+      "claim_id": "843ef305-e2e6-4351-8913-f7061e7827b3",
+      "result_id": "881ad5dd-09a5-4c0b-93ee-be2694197a86"
+    },
+    {
+      "claim_id": "9f3631a1-6e2a-4ed9-b094-b278529536ed",
+      "result_id": "881ad5dd-09a5-4c0b-93ee-be2694197a86"
+    },
+    {
+      "claim_id": "327f9ffd-4b33-4355-9004-f7d4264b8d0c",
+      "result_id": "20d93a9a-7d49-4897-9fda-05198344c020"
+    },
+    {
+      "claim_id": "c31f84fd-00d8-4529-b4f0-60758cd3256d",
+      "result_id": "56f28657-0e2c-4013-9aa5-f558f4c03ec4"
+    },
+    {
+      "claim_id": "25e56b4d-79f1-4dd0-a536-13957525ae1f",
+      "result_id": "56f28657-0e2c-4013-9aa5-f558f4c03ec4"
+    },
+    {
+      "claim_id": "c5182425-e527-4220-b578-8ceade004d6f",
+      "result_id": "56f28657-0e2c-4013-9aa5-f558f4c03ec4"
+    },
+    {
+      "claim_id": "b424af60-1575-4593-83e2-18f271338101",
+      "result_id": "33502bcf-4795-4cfa-af83-b0feb9474256"
+    },
+    {
+      "claim_id": "866079b6-2899-4377-90fe-4e1a21f7be26",
+      "result_id": "33502bcf-4795-4cfa-af83-b0feb9474256"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Microglial precursors progressively colonize the zebrafish retina from 32 to 54 hpf primarily through migration rather than proliferation. The number of ocular microglial precursors increases from ~5 at 32 hpf to ~31 at 54 hpf. Less than 2% of microglial precursors are in S/G2 phase, and more than 80% do not incorporate BrdU, indicating that colonization depends on cell migration from outside the optic cup rather than local proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C65 are well-supported by quantitative data from confocal imaging (Figure 1B-C), cell cycle marker analysis using mCherry-zGem (Figure 1D-E), and BrdU incorporation assays (Figure 1F-H). The progressive increase in microglial numbers is documented with means and standard deviations, and the low proliferation rate is demonstrated through multiple independent methods. The conclusion that colonization depends on migration is logically derived from the proliferation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Microglial precursors use hyaloid blood vessels as a scaffold to enter the optic cup through the choroid fissure. Time-lapse imaging shows that the first microglial precursors are always associated with ocular hyaloid blood vessels around 30 hpf and move along vessel surfaces. When blood circulation is blocked using tnnt2a morpholinos, blood vessels do not develop fully and the number of ocular microglial precursors is significantly reduced at 36 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C144 are supported by time-lapse imaging data (Figure 2A-B, Videos 2-3) showing microglial precursors associated with and moving along blood vessels, and by loss-of-function experiments using tnnt2a morpholinos (Figure 2C-D) showing significant reduction in microglial numbers when blood circulation is blocked. The conclusion that blood vessels are required for microglial entry is well-supported, though the mechanism (physical scaffold vs. chemoattractant) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C157",
+      "C158"
+    ],
+    "result": "Microglial precursors infiltrate the neural retina preferentially through neurogenic regions after 42 hpf. More than 90% of microglial precursors infiltrate through mCherry-zGem-negative post-mitotic cell regions (7.37% at 42 hpf and 6.13% at 48 hpf infiltrate proliferating regions). Live imaging shows that mfap4-positive microglia preferentially infiltrate ath5:EGFP-positive neurogenic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C158 are supported by quantitative live imaging data using dual transgenic lines (Figure 3A-D). The fraction of microglial precursors infiltrating proliferating vs. neurogenic regions is quantified with specific percentages. The preferential association with neurogenic regions is demonstrated through multiple independent markers (mCherry-zGem and ath5:EGFP). The data strongly support the conclusion that neurogenic state influences microglial infiltration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C88"
+    ],
+    "result": "Neuronal apoptosis is not the major cue for microglial precursor colonization of the retina prior to 54 hpf. The number of microglial precursors did not differ between p53 morphant retinas and control retinas at 48 hpf, whereas microglial colonization of the optic tectum was significantly decreased in p53 morphants at 96 hpf, indicating tissue-specific differences in the role of apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by data from p53 morpholino experiments (Figure 3\u2014figure supplement 3A-D) showing no significant difference in retinal microglial numbers at 48 hpf despite reduced apoptosis, while optic tectum shows the expected reduction. This provides strong evidence that apoptosis is not the primary driver of retinal microglial colonization during the studied timeframe, contrasting with the optic tectum. The tissue-specific comparison strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C159",
+      "C160"
+    ],
+    "result": "Neurogenesis is required for microglial precursor infiltration into the neural retina. In slbp1 mutants with severely delayed retinal neurogenesis, the number of ocular microglial precursors at 48 hpf was 4.67 \u00b1 2.42 compared to 17.60 \u00b1 5.13 in wild-type siblings. The slbp1 mutation does not affect peripheral macrophage specification, indicating the effect is specific to retinal colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C160 are supported by quantitative data from slbp1 mutants (Figure 4A-D) showing significant reduction in ocular microglial precursors, RNAseq data confirming delayed neurogenesis (Figure 4\u2014figure supplement 1), and control experiments showing normal peripheral macrophage numbers. The conclusion that neurogenesis is required for retinal infiltration is well-supported, though the specific mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Overexpression of NICD, which suppresses retinal neurogenesis, significantly reduces the number of ocular microglial precursors at 44 hpf compared to EGFP-only controls. This supports the conclusion that the retinal neurogenic region functions as a gateway for microglial infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by NICD overexpression experiments (Figure 4E-F) showing significant reduction in microglial numbers when neurogenesis is suppressed. The effect is confirmed by validation experiments showing NICD effectively blocks ath5:EGFP expression (Figure 4\u2014figure supplement 7). This provides independent confirmation of the neurogenesis requirement through a gain-of-function approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "RGC differentiation or RGC-mediated IPL formation is required for microglial precursor infiltration into the neural retina. In ath5 morphants where RGC differentiation is specifically inhibited, the timing of first appearance of microglial precursors in the vitreous space was not altered, but the number of ocular microglial precursors was significantly decreased at 49 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by ath5 morpholino experiments (Figure 4G-H, Figure 4\u2014figure supplement 8) showing specific inhibition of RGC differentiation and significant reduction in microglial numbers. The observation that initial entry into the vitreous space is unaffected while infiltration into the neural retina is reduced suggests RGCs specifically facilitate the infiltration step. The data support the conclusion, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C118"
+    ],
+    "result": "Microglial precursors preferentially associate with neurogenic retinal columns. Cell transplantation experiments show that the fraction of microglial precursors associated with wild-type donor columns was significantly higher in slbp1 mutant host retinas than in wild-type hosts (Figure 5C), and trapping efficiency per donor column was significantly higher in mutant hosts (Figure 5D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 are supported by cell transplantation experiments (Figure 5A-D) showing preferential association of microglial precursors with neurogenic wild-type donor columns in proliferative slbp1 mutant host retinas. The quantification of both fraction and trapping efficiency provides robust evidence. This is further confirmed by complementary NICD overexpression experiments (Figure 5E-H) showing reduced association with proliferative columns. The convergent evidence from both approaches strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Microglial precursors are less attracted by retinal columns in which neurogenesis is arrested. In mosaic NICD overexpression experiments, the fraction of microglial precursors associated with EGFP-expressing columns was significantly lower in NICD+EGFP retinas than in EGFP-only controls, and trapping efficiency per column was also significantly lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by mosaic NICD overexpression experiments (Figure 5E-H) showing reduced association of microglial precursors with proliferative NICD-expressing columns compared to neurogenic control columns. This provides complementary evidence to the transplantation experiments and strengthens the conclusion that neurogenic state influences microglial precursor attraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C165"
+    ],
+    "result": "IL34 is required for microglial precursor colonization of the retina, acting upstream of blood vessel- and neurogenesis-mediated guidance. In il34 homozygous mutants, the number of ocular microglial precursors was significantly lower than wild-type siblings at 34 hpf and 48 hpf (almost zero at 34 hpf, no more than two at 48 hpf). However, il34 mRNA expression is comparable in slbp1 mutants and wild-type siblings, indicating IL34 is not linked to neurogenesis-mediated infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C165 are supported by quantitative data from il34 mutants (Figure 6A-B, Figure 6\u2014figure supplement 2) showing severe reduction in microglial numbers at early timepoints, and by qPCR data (Figure 6\u2014figure supplement 3) showing comparable il34 expression in slbp1 mutants and controls. The conclusion that IL34 acts upstream of neurogenesis-mediated guidance is logically derived from the timing and expression data. Retinal differentiation proceeds normally in il34 mutants (Figure 6\u2014figure supplement 1), ruling out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Increased apoptosis in slbp1 mutant retinas does not promote microglial precursor infiltration, confirming that neurogenesis primarily opens the gate for microglial entry. TUNEL assays show apoptosis is increased in slbp1 mutant retinas compared to wild-type siblings, yet microglial colonization is severely reduced, indicating that neurogenesis is the primary determinant of microglial infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C169 are supported by TUNEL data (Figure 4\u2014figure supplement 4) showing increased apoptosis in slbp1 mutants despite reduced microglial colonization. This provides strong evidence that apoptosis alone is insufficient to attract microglial precursors without the neurogenic gateway. The logic is sound: if apoptosis were the primary attractant, increased apoptosis should increase microglial infiltration, but the opposite is observed. This strengthens the conclusion that neurogenesis is the primary determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Cxcl12a-CxcR4 signaling is not involved in microglial colonization defects in slbp1 mutants. Injection of cxcl12a morpholinos at concentrations that effectively induce RGC axon trajectory defects did not affect the number of ocular microglial precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by cxcl12a morpholino experiments (Figure 4\u2014figure supplement 5) showing no effect on microglial numbers despite effective knockdown (confirmed by RGC axon trajectory defects). This rules out Cxcl12a-CxcR4 signaling as a mechanism for the slbp1 phenotype and strengthens the conclusion that neurogenesis itself, rather than specific signaling pathways like Cxcl12a, is the key determinant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Elimination of microglial precursors with pu.1 morpholinos did not affect the rate of retinal neurogenesis or cell differentiation by 72 hpf, indicating that microglial precursors do not regulate retinal development during the studied timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by data from pu.1 morpholino experiments (Figure 4\u2014figure supplement 6) showing normal retinal differentiation despite microglial elimination. This control experiment rules out bidirectional effects and confirms that the observed relationship is unidirectional: neurogenesis affects microglial colonization, but not vice versa during this developmental window.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C150",
+      "C151"
+    ],
+    "result": "Microglial precursor elimination did not affect hyaloid blood vessel formation in zebrafish at least by 48 hpf. Elimination of microglial precursors using pu.1 morpholinos or irf8 mutation did not affect ocular blood vessel formation, contrasting with mammals where microglia facilitate ocular blood vessel development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C150-C151 are supported by data from pu.1 morpholino and irf8 mutant experiments (Figure 2\u2014figure supplement 3) showing normal blood vessel formation despite microglial elimination. This control experiment demonstrates that the relationship between blood vessels and microglial colonization is unidirectional in zebrafish: blood vessels guide microglia, but microglia do not regulate blood vessel formation during this timeframe. The species difference with mammals is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C155"
+    ],
+    "result": "Microglial colonization of the optic tectum shows different dynamics in tnnt2a morphants compared to the retina. The number of microglial precursors in the optic tectum was not significantly different between tnnt2a morphants and controls at 72 hpf, although colonization was enhanced with round morphology at 48 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C155 are supported by data from optic tectum analysis (Figure 2\u2014figure supplement 2) showing tissue-specific differences in the role of blood circulation. The observation that optic tectum colonization is transiently enhanced at 48 hpf but normalizes by 72 hpf, while retinal colonization is persistently reduced, indicates different mechanisms operate in different brain regions. This strengthens the overall conclusion by demonstrating tissue-specific guidance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C81",
+      "C82",
+      "C119",
+      "C120",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C148",
+      "C149",
+      "C152",
+      "C153"
+    ],
+    "result": "The manuscript provides extensive background on microglia biology, zebrafish hematopoiesis, retinal development, and prior work on microglial colonization mechanisms. This includes established knowledge about microglial function, origin from mesoderm, waves of hematopoiesis in zebrafish, retinal structure, blood vessel development, and species-specific differences in microglial-vascular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C153 represent background knowledge and prior work that is appropriately cited and accurately presented. These claims provide essential context for interpreting the new findings but do not constitute novel results from this study. The citations appear appropriate and the knowledge claims are consistent with established understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Microglial precursors show specific spatiotemporal localization patterns during retinal colonization. From 32-36 hpf, mfap4+ cells are mostly in the vitreous space associated with blood vessels. At 42-44 hpf, they start entering the neural retina toward the emerging IPL. By 54 hpf, they are throughout retinal tissue except the OPL. Almost all microglial precursors enter through the choroid fissure, not across the ciliary marginal zone, suggesting functional differences between ocular microglia and peripheral macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C139 are supported by detailed imaging data (Figure 1\u2014figure supplements 2-3) showing the progression of microglial localization over time. The observation that peripheral macrophages do not enter across the ciliary marginal zone is supported by live imaging and is consistent with prior work showing these cells do not enter the retina following rod cell death. The comparison with mouse retinal development provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The manuscript identifies three sequential guidance mechanisms for microglial colonization of the retina: IL34 initiates movement from yolk toward brain and retina, blood vessels guide entry into the optic cup via the choroid fissure, and neurogenic regions facilitate infiltration into the neural retina. These mechanisms function as a series of cues creating an essential path for microglial migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C47 represent the main conclusions synthesizing the individual findings. These summary claims are well-supported by the collective evidence from IL34 mutants, blood vessel perturbation experiments, and neurogenesis manipulation experiments. The sequential model is logically derived from the timing and spatial data. This represents the key conceptual advance of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C154",
+      "C156",
+      "C161",
+      "C162",
+      "C163",
+      "C170"
+    ],
+    "result": "The manuscript identifies several mechanistic questions requiring future investigation, including whether blood vessels function as physical scaffolds or chemoattractant sources, whether the hyaloid artery guides microglial precursors in other vertebrates like mice, the role of blood circulation in optic tectum colonization, and the molecular mechanisms underlying neurogenesis-mediated microglial infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C170 represent speculative hypotheses and statements about future research needs. These are appropriately presented as open questions rather than conclusions. While the hypotheses are reasonable based on the data, they remain untested and therefore cannot be evaluated as supported or unsupported. These represent important directions for future work.",
+    "result_type": "MINOR"
+  }
+]

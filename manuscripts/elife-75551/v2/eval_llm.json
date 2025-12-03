@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work has established that exome sequencing of parent-proband trios has identified numerous deleterious de novo mutations (DNMs) and implicated risk genes for many disorders, with emerging evidence suggesting that risk genes enriched for pathogenic DNMs may be shared across multiple disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10, and C11 are well-supported by multiple citations to established literature on DNM studies. Claims C2 and C12 provide context for shared genetic architecture across disorders, also supported by citations. These claims accurately represent the state of prior knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Current methods for identifying shared risk genes have limitations: they focus only on genes reaching statistical significance in multiple disorders, require large sample sizes, and cannot capture the full landscape of genetic sharing due to polygenicity and incomplete penetrance, with over 1000 haploinsufficient genes estimated to contribute to developmental disorder risk without yet achieving statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13, and C14 accurately characterize current methodological approaches with appropriate citations. Claims C15 and C16 are supported by citations to large-scale studies. Claims C4 and C17 represent logical inferences about the limitations of current methods that follow from the evidence presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28"
+    ],
+    "result": "EncoreDNM is a novel statistical framework that uses a generalized linear mixed-effects model to quantify shared genetic effects between two disorders by leveraging exome-wide, summary-level DNM data, including genes that do not reach statistical significance, while accounting for de novo mutability and technical inconsistencies between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C23 clearly describe the method introduced in the manuscript. Claims C24-C26 and C28 provide the biological and technical rationale for the model design. The method description is clear and the conceptual framework is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Simulation studies demonstrate that EncoreDNM provides unbiased parameter estimates under various settings, achieves 95% confidence interval coverage rates close to the nominal level, shows well-controlled false positive rates, and is robust to exome-wide technical biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 are directly supported by simulation results shown in Figure 2 and supplementary figures. Claims C84-C86 summarize these findings. The simulation study appears comprehensive with multiple parameter settings tested, and the results demonstrate proper statistical calibration of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C68",
+      "C69",
+      "C70",
+      "C90"
+    ],
+    "result": "Comparative simulations show that EncoreDNM maintains well-controlled false positive rates across all settings and achieves greater statistical power than mTADA as enrichment correlation increases, while mTADA produces inflated false positives when DNM counts are small, including identifying significant synonymous DNM correlations for all disorder pairs and between all disorders and controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by simulation results in Figure 3. Claims C68-C70 show that when mTADA was applied to real data, it produced biologically implausible results (significant correlations for synonymous variants and with controls), consistent with the simulation findings. Claim C90 provides interpretation. The comparison is thorough and the evidence for mTADA's inflated false positive rate is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C87"
+    ],
+    "result": "Analysis of real DNM data shows that the mixed-effects Poisson model achieves superior fit compared to simpler fixed-effects models, with negative elevation parameters for LoF variants explained by stringent quality control and potential survival bias, consistent with depletion of LoF DNMs in healthy control trios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by statistical comparison shown in Figure 4 and referenced supplementary tables. Claims C37-C39 provide biologically plausible interpretations supported by citations. Claim C87 summarizes the model comparison results. The likelihood ratio tests provide strong statistical evidence for model improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C95",
+      "C96"
+    ],
+    "result": "Application of EncoreDNM to nine disorders identified 25 significant pairwise enrichment correlations at FDR < 0.05, all positive, with particularly strong correlations in pathogenic variant classes (LoF and Dmis) and disease-relevant genes, no significant correlations with healthy controls, and the number of significant correlations proportional to sample size (Spearman correlation = 0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present specific quantitative results from the analysis shown in Figure 5. Claims C7, C8, C95, and C96 summarize the overall patterns. The results are internally consistent: positive correlations among disorders but not with controls, stronger effects for pathogenic variants, and sample size dependence all support the validity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Highly concordant and significant LoF DNM enrichment was identified among developmental disorder, autism, intellectual disability, and congenital heart disease, consistent with previous reports, and schizophrenia shows highly significant LoF correlations with developmental disorder (p=2.0e-3) and intellectual disability (p=3.7e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by the analysis results and citations to previous studies showing consistency. Claim C48 provides specific statistical results. The consistency with prior literature strengthens confidence in these findings, and the p-values indicate strong statistical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C97"
+    ],
+    "result": "Five genes (CTNNB1, NBEA, POGZ, SPRED2, KMT2C) had LoF DNMs in five different disorders and 21 genes in four disorders; these 26 genes were significantly enriched for 63 GO terms (FDR < 0.05), with chromatin organization (p=7.8e-11) among the most significant, indicating that genes underlying DNM correlations are enriched in pathways involved in chromatin organization, modification, and gene expression regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present specific results from gene-level and pathway enrichment analyses. Claim C97 summarizes the biological interpretation. The GO enrichment analysis provides mechanistic insights into shared genetic architecture. The statistical significance is strong and the biological interpretation is plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CTNNB1, a fundamental component of the canonical Wnt signaling pathway known to confer genetic risk for autism, harbors LoF variants across multiple disorders; additionally, 30 recurrent cross-disorder LoF mutations were identified, including FBXO11 showing two recurrent p.Ser831fs LoF variants in autism and congenital hydrocephalus (p=1.9e-3), a gene previously implicated in intellectual disability and neurodevelopmental disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 provide specific examples of genes with cross-disorder DNMs. The biological context (Wnt signaling, F-box protein function) is supported by citations. Claim C63 provides a specific statistical result for recurrent mutations. These examples illustrate the broader patterns identified in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C98"
+    ],
+    "result": "Gene set-specific analyses identified 11 and 12 disorder pairs with significant enrichment correlations for LoF DNMs in high-pLI and high brain expression (HBE) genes respectively; high-pLI genes showed substantially stronger correlations than low-pLI genes (p=2.3e-6), and HBE genes showed stronger correlations than low brain expression genes (p=8.8e-7), demonstrating that DNM correlations are substantially attenuated in genes with lower expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 present results from gene set-specific analyses shown in Figure 6. Claim C98 summarizes the pattern. The Kolmogorov-Smirnov tests provide statistical evidence for differential correlation strength between gene sets. The results are biologically plausible and strengthen the interpretation that shared genetic effects are concentrated in disease-relevant genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C83"
+    ],
+    "result": "Novel enrichment correlations in HBE genes are consistent with known comorbidities; 9 significant correlations were identified for LoF variants in high heart expression (HHE) genes, though correlation strength did not differ significantly between HHE and low heart expression genes (p=0.846), possibly due to lack of cardiac disorders in the analysis; arrhythmia caused by congenital heart disease is a known risk factor for Tourette disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, and C83 are supported by citations to epidemiological and clinical literature. Claim C80 presents a negative result with a plausible explanation. The consistency with known comorbidities provides external validation for the genetic correlation findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "A similar attenuation of DNM correlations was observed in less pathogenic variant classes (synonymous variants), and DNM enrichment correlations of five disorders were consistent with genetic correlations estimated from GWAS summary statistics (Spearman correlation = 0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 describes the pattern across variant classes, consistent with the expectation that pathogenic variants drive disease associations. Claim C100 provides external validation by comparing DNM-based correlations with GWAS-based genetic correlations, showing good agreement (Spearman correlation = 0.70). This cross-validation strengthens confidence in the DNM correlation estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "EncoreDNM provides statistically powerful and computationally efficient estimation of DNM enrichment correlation and can quantify concordant genetic effects for user-defined variant classes within pre-specified gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by the simulation results showing superior power compared to mTADA and the computational performance measurement (C103). Claim C89 is demonstrated by the gene set-specific analyses performed in the manuscript. The method's capabilities are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The motivation for EncoreDNM draws from GWAS genetic correlation methods that have identified ubiquitous genetic correlations across traits, while mTADA, an existing Bayesian framework for joint DNM analysis, has not had its statistical properties fully characterized, and understanding of the extent and mechanism of DNM sharing across disorders remains incomplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C91-C92 accurately describe prior work on genetic correlation methods and their successes, supported by appropriate citations. Claims C19, C20, C93, and C94 identify gaps in current knowledge that motivate the development of EncoreDNM. This provides appropriate context for the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "EncoreDNM assumes probands from different input studies are independent, and when two studies have overlapping samples, enrichment correlation estimates may be inflated and must be interpreted with caution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 states a model assumption. Claim C102 provides a logical inference about the consequences of violating this assumption. This is an appropriate limitation to acknowledge, though the manuscript does not provide empirical evaluation of the magnitude of inflation under sample overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Methodological details include computational efficiency (10 minutes per disorder pair with 18,000 genes), variant classification procedures using ANNOVAR and MetaSVM, inclusion of 18,454 autosomal protein-coding genes (excluding TTN), and definitions of gene sets based on pLI scores, brain expression, heart expression, and CHD-related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 provide methodological details that are clearly described in the Materials and Methods section. These details are necessary for reproducibility and are appropriately documented. The gene set definitions are based on published resources with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "A previous study suggested significant genetic sharing of intellectual disability and cerebral palsy by overlapping genes harboring rare damaging variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by citation to a previous study. This provides context for interpreting the EncoreDNM results showing correlation between these disorders.",
+    "result_type": "MINOR"
+  }
+]

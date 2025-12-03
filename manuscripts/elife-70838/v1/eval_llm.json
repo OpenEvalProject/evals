@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C64"
+    ],
+    "result": "During prey pursuit, mice maintain the cricket image within a localized retinal region termed the 'functional focus' through behavioral orientation rather than active eye movements. This functional focus is located within the binocular visual field and is maintained by the mouse orienting toward and running directly at the prey.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C15, and C64 provide converging evidence from behavioral tracking (C12-C13), statistical analysis of cricket position distributions (C14), and visual field mapping (C2, C15) that collectively demonstrate prey images consistently fall within a localized functional focus. The behavioral mechanism is well-characterized through trajectory analysis and the absence of compensatory eye movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C65"
+    ],
+    "result": "The functional focus coincides with the region of minimal optic flow in the visual field during pursuit. This overlap occurs because mice run directly toward prey, placing the prey image in the ventro-medial region where optic flow is minimized, thereby reducing motion-induced image blur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, and C40 demonstrate substantial overlap (61-100%) between functional foci and optic flow minima through quantitative analysis. Supporting claims C34-C38 establish the theoretical and empirical basis for optic flow patterns. The behavioral strategy (C40, C65) mechanistically links straight-line pursuit to reduced optic flow, with statistical support from multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C79"
+    ],
+    "result": "The functional focus is located in the dorso-temporal retina and overlaps with the high-density region of Alpha-ON sustained retinal ganglion cells (RGCs). These RGCs possess properties (center-surround receptive fields, rapid response, small dendritic trees with overlapping receptive fields) consistent with tracking small mobile targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 provide quantitative overlap data (35-95% depending on density threshold and eye) with statistical significance (p<0.05). The anatomical correspondence (C4, C43, C79) is supported by eye model projections. RGC properties (C52-C53) are cited from established literature (Bleckert et al., 2014; Dhande et al., 2015), and the functional interpretation (C54, C73) reasonably follows from the spatial and cellular evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C41",
+      "C42",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C81"
+    ],
+    "result": "Eye rotations in all three axes (horizontal, vertical, torsional) combine to stabilize the visual field through the vestibulo-ocular reflex (VOR). Torsional rotations are critical for compensating head pitch, while vertical rotations are essential for compensating head roll. Eye rotations cannot be predicted from head rotations in a single axis but require consideration of all three head rotation axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide quantitative gain measurements with computational validation through axis-freezing experiments (N=168,852 frames, N=3 mice). Claims C74-C76 establish torsional rotation correlations with both pitch (r=-0.72 to 0.58) and roll (r=-0.45 to -0.48). Claim C42 demonstrates improved model performance when using multiple axes. The evidence converges to support the multi-axis VOR mechanism (C41, C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C44",
+      "C45",
+      "C46",
+      "C77",
+      "C82",
+      "C83"
+    ],
+    "result": "The functional foci are located within the region of stable binocular overlap, with inter-ocular alignment maintained at approximately 8-10 degrees through coordinated eye movements. Freezing eye movements significantly increases alignment error by ~54%, demonstrating the importance of VOR-mediated coordination for binocular alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C46, and C77 establish the functional focus location within binocular overlap through probability mapping. Claims C22 and C82 quantify alignment precision (~8-9\u00b0) comparable to V1 receptive field sizes. Claim C23 provides statistical evidence (p<10^-10) that eye movements are necessary for maintaining alignment, with C83 quantifying the 54% increase in error when movements are frozen. The binocular field properties (C44-C45) are supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Mice maintain prey within the functional focus through direct pursuit behavior (running straight toward the target) rather than through compensatory head pitch adjustments, vergence eye movements, or tracking eye movements. During tracking, mice exhibit significantly straighter trajectories than during non-tracking periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 provide statistical evidence (p>0.19) showing no significant changes in head pitch or vergence as mice approach prey. Claims C29-C32 demonstrate significantly straighter trajectories during tracking (p<0.01 for multiple metrics). Claim C24 shows systematic downward shift of cricket position with approach, and C25 infers the absence of compensatory movements. The behavioral mechanism (C33) is well-supported by converging negative and positive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Removing both olfactory and auditory cues approximately doubled cricket capture time compared to removing auditory cues alone, demonstrating that vision is sufficient but less efficient for prey capture when other sensory modalities are masked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 provides statistical evidence (p=0.0471, Wilcoxon rank sum test) with specific values (control: 24.92\u00b116.77s vs. cues removed: 43.51\u00b127.82s) from N=13 control and N=12 experimental trials across N=5 mice. The experimental design appropriately isolates visual guidance, supporting the study's focus on visual pursuit mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C50",
+      "C78"
+    ],
+    "result": "The region of highest overall RGC density is located near the optical axis and directed laterally, which is spatially distinct from the functional focus location. This suggests that total RGC density does not predict functional specialization for prey pursuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C50 cite established anatomical literature (Dr\u00e4ger and Olsen, 1981) for RGC density location. Claim C78 provides quantitative directional data (azimuth: -66.2\u00b16.7\u00b0 and 70.3\u00b14.7\u00b0) showing lateral orientation. Claim C17 appropriately infers the spatial mismatch between total RGC density and functional focus, which is further supported by the eye model projections in Figure 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The temporal retina containing the functional focus projects to brain regions involved in binocular processing (ipsilateral projections, callosal pathway) and prey pursuit (superior colliculus, dLGN/V1). This anatomical organization supports potential roles in stereoscopic depth perception and visually-guided hunting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C55-C58 are well-supported by multiple anatomical and functional studies cited in the text. Claim C49 cites recent evidence (Johnson et al., 2021) that ipsilateral RGC ablation impairs final capture phase. However, claim C48 regarding stereoscopic depth perception is more speculative, appropriately qualified with 'assuming that this form of visual processing is available to and employed by the mouse' and supported by citations to relevant studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Direction-selective retinal ganglion cells show global alignment of their preferred orientations with cardinal directions of optic flow during idealized motion in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is directly cited from Sabbah et al., 2017, an established study on retinal organization. This provides mechanistic support for how the retina may be organized to process optic flow patterns, though it is supporting context rather than a primary finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Torsional eye rotations in freely moving mice are dynamic and correlated with both head pitch and head roll, extending previous findings in rats. Models incorporating both pitch and roll predict torsional rotations better than pitch-alone models (reducing error from ~7\u00b0 to lower values).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 appropriately cites rat literature (Wallace et al., 2013). Claims C61-C62 provide new data on mouse torsional dynamics with correlation coefficients for both pitch and roll. Claim C63 quantifies model improvement when including both axes. The evidence is supported by Figure 4\u2014figure supplement 2 with adequate sample sizes (N=4406 detect and N=13624 track frames from N=3 mice).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The coordinate system registration between environmental digitization and mouse/cricket tracking achieved sub-millimeter accuracy (mean differences <1 mm in all three dimensions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 provides specific quantitative accuracy metrics (x: 0.18\u00b13.1mm, y: 0.07\u00b11.6mm, z: 0.66\u00b11.8mm) based on N=54 fiducial points from three datasets. This technical validation is important for establishing the reliability of the visual field reconstruction method, though it is a methodological detail rather than a primary scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Crickets provided suitable prey targets that could evade capture for extended periods (64.4\u00b139.3s), and TiO2 corneal marks used for torsion tracking did not significantly affect hunting performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 provides descriptive statistics with citation to previous work (Hoy et al., 2016). Claim C85 is supported by Figure 7C showing no significant difference in capture times with TiO2 marks. These are important methodological validations ensuring the experimental manipulations did not confound the behavioral measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Sensitivity analysis of the eye model showed that variations of 10-100 \u03bcm in optical parameters produced maximum deviations of 0.4-2.76 degrees, which would not influence the study's conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 provides quantitative sensitivity analysis with specific parameter variations and resulting angular deviations, supported by Figure 7E. This validation is important for establishing the robustness of the eye model used to project retinal features onto the cornea, though it is a technical validation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Mice possess a large panoramic visual field (~200\u00b0 monocular fields) that is stabilized by VOR-driven eye rotations. The retina contains diverse RGC types with spatially segregated distributions, and retinal subregions are thought to be tuned for specific behavioral tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 are well-established facts from the literature, appropriately cited from multiple sources (Dr\u00e4ger, 1978; Hughes, 1979; Meyer et al., 2020; Baden et al., 2016; Bleckert et al., 2014; etc.). These provide essential background context for the study but are not novel findings. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Experiments used male C57Bl/6J mice aged 2-8 months (21-29g) and crickets with body sizes of 1-2 cm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide basic experimental details stated in Materials and Methods. These are straightforward methodological descriptions that are adequately documented but represent standard reporting rather than findings requiring evaluation.",
+    "result_type": "MINOR"
+  }
+]

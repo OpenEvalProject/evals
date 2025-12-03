@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C61",
+      "C63"
+    ],
+    "result": "The authors developed iSGC, a method that uses machine learning to predict biological labels from compressive stain-free imaging data (diffractive and scattering modalities) without full image reconstruction, achieving microsecond-scale processing times on FPGA hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C20, C61, and C63 collectively describe the core technical approach of iSGC. The method is well-documented with technical specifications (C18, C19, C22), training procedures (C17), and conceptual framework (C63). The compressive imaging approach and real-time processing capability are demonstrated through experimental implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "iSGC successfully classified two similar-sized cell lines (HeLa S3 and MIA PaCa-2) with high accuracy (AUC=0.963, classification accuracy=0.917, sorted purity=97.3%) and processing time of 6.0 \u00b5s per cell, outperforming conventional FSC/SSC-based classification (AUC=0.936\u00b10.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 provide converging evidence from multiple metrics (AUC, accuracy, purity) with appropriate comparisons to conventional methods. The experimental data in Figures 2 and supplements support the quantitative claims. However, the manuscript notes this used only 300 cells per type for training, which is relatively small but appears sufficient for this binary classification task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "iSGC distinguished live, dead, and apoptotic iPSCs with superior performance (AUC=0.998\u00b10.002 for dead vs live, 0.877\u00b10.007 for apoptotic vs live) compared to conventional FSC/BSC methods (AUC=0.973\u00b10.007 and 0.779\u00b10.011), including within conventional gates where apoptotic cells cannot be excluded using FSC/BSC alone (AUC=0.891\u00b10.012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are well-supported by experimental data with appropriate statistical reporting (mean\u00b1SD from 10 trials). The comparison to established knowledge (C27) and conventional methods (C29) strengthens the result. The ability to distinguish apoptotic cells within conventional gates (C30-C31) demonstrates a clear advantage over existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "iSGC classified undifferentiated iPSCs from differentiated cells (NECs and HECs) with high accuracy (AUC=0.929\u00b10.008 and 0.942\u00b10.007, respectively), substantially outperforming FSC/SSC-based classification (AUC=0.856\u00b10.009 and 0.697\u00b10.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide quantitative performance metrics with appropriate statistical reporting. The biological motivation (C32) is well-cited. The substantial improvement over conventional methods, particularly for iPSC vs HEC classification, demonstrates the method's utility for quality control in cell manufacturing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "iSGC classified RPE cells from retinoblastoma cells with very high accuracy (AUC=0.994\u00b10.002), enabling 92% recovery at <1% false positive rate compared to only 52% recovery with FSC/SSC, demonstrating utility for purifying clinical cell products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 provide strong quantitative evidence with appropriate comparisons. The recovery rate analysis (C39) is particularly relevant for practical applications. The choice of RPE cells (C36) is well-motivated by clinical relevance. The substantial difference in recovery rates at low false positive rates is clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "iSGC performed six-way classification of white blood cell subtypes with high accuracy in both intra-donor (F1=0.906\u00b10.003 and 0.906\u00b10.002) and inter-donor (F1=0.901\u00b10.002 and 0.884\u00b10.004) settings, demonstrating model transferability across donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide strong evidence for WBC classification with appropriate statistical reporting. The inter-donor validation (C43) is particularly important for demonstrating generalizability. The clinical motivation (C40-C41) is well-established. However, the manuscript notes limited basophil numbers may have affected performance, and no direct comparison to conventional methods is provided for this multiclass task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "iSGC's advantage over conventional flow cytometry stems from using high-dimensional waveform data (>100 points) rather than scalar FSC/SSC values, enabling classification in high-dimensional space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 provide a clear conceptual explanation supported by the experimental comparisons throughout the manuscript. The consistent superior performance of iSGC over FSC/SSC methods across multiple cell types validates this interpretation. This is a logical inference well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "iSGC shows poor performance when morphological differences between cells are not visually recognizable, as exemplified by the difficulty in distinguishing CD4 and CD8 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 describe limitations based on the authors' experience but lack quantitative data or systematic evaluation. While this is a reasonable limitation given the method's reliance on morphological information, no experimental evidence is provided to support the specific claim about CD4/CD8 T cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "iSGC models demonstrate transferability across samples and robustness over time, supported by self-calibration systems and inter-donor classification results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by the inter-donor WBC classification results (C43) and the technical description of the self-calibration system (C50). The good inter-donor performance provides evidence for model robustness, though long-term stability data are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Molecular staining in flow cytometry has multiple disadvantages including cost, time, spectral limitations, complexity, inconsistency, and potential cellular toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C5-C9 establish the motivation for developing stain-free methods. These are well-supported by citations to prior literature and represent established knowledge in the field. This provides appropriate context for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work on in silico labeling using conventional microscopy sacrifices throughput (~10,000 cells/s for flow cytometry vs slow microscopy), and previous ghost cytometry required fluorescence staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 establish the gap in existing methods that iSGC addresses. These are well-supported by citations and provide clear motivation for the current work. The throughput comparison (C13) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The iSGC concept could potentially be extended to other high-dimensional label-free modalities including holographic measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 are speculative about future extensions. While the conceptual argument is reasonable and holography citations are provided (C53), no experimental evidence is presented. These represent potential future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "iSGC's potential applications include cell manufacturing and diagnostics, with advantages over conventional image-based methods in throughput and ability to use sorted cells downstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 discuss applications supported by the demonstrated results (C4). The throughput advantage is well-established through the microsecond processing times (C22). The ability to sort cells for downstream use is a logical consequence of the flow-based approach, though not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "iSGC can potentially be trained with various ground truth labels including surface markers, genetic reporters, functional assays, or unsupervised clustering when molecular labels are unavailable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60 discuss potential labeling strategies but are largely speculative. While the concepts are reasonable and some are supported by citations (C58-C59), no experimental validation of these alternative labeling approaches is provided. The unsupervised clustering approach (C60) is particularly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "iSGC will find applications in regenerative cell therapy manufacturing and clinical diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is a forward-looking statement about future applications. While the demonstrated results support the technical feasibility, actual clinical implementation would require additional validation, regulatory approval, and demonstration of clinical utility beyond the proof-of-concept experiments presented.",
+    "result_type": "MINOR"
+  }
+]

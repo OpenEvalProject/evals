@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C13",
+      "C75"
+    ],
+    "result": "Slp1 and Slp2 expression in medulla neuroblasts is regulated at the transcriptional level. The authors demonstrate that slp1 and slp2 mRNA expression patterns closely parallel Slp1 and Slp2 protein expression patterns, as shown by fluorescence in situ hybridization and corroborated by scRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C12, C13, and C75 collectively demonstrate through FISH experiments (Figure 1) and scRNA-seq validation that slp1/2 mRNA and protein patterns are parallel, indicating transcriptional regulation. The evidence is direct, reproducible, and supported by multiple methodologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Two redundant enhancers (u8772 220 bp and d5778 850 bp) are necessary and sufficient for Slp1/2 expression in medulla neuroblasts. Individual deletion of either enhancer reduces but does not eliminate Slp1/2 expression, while deletion of both enhancers completely abolishes Slp1/2 expression specifically in medulla neuroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C76-C81 provide strong evidence through reporter assays (Figure 2) and CRISPR deletion experiments demonstrating enhancer redundancy. The double deletion experiment (C16, C17) with appropriate controls (Figure 2D-F'''') confirms necessity and specificity. Sample sizes are adequate (n=11 for double deletion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Ey, Su(H), Scro, and Slp1 binding sites were identified in the slp enhancers through bioinformatic analysis, and mutation of these sites impairs reporter expression. Mutation of Ey or Su(H) sites in the 220 bp enhancer nearly eliminates or completely eliminates GFP expression, while mutation of Scro sites greatly reduces expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C37-C44 demonstrate through systematic mutagenesis (Figures 7-8) that predicted binding sites are functionally important. The approach combines bioinformatics with experimental validation. Quantification (Figure 7H, 8E) shows statistically significant differences (p<0.0001 for most comparisons, n=3-5). The consistency between genetic and mutagenesis experiments strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "The Notch pathway regulates the timing of Slp1/2 expression in medulla neuroblasts. RNAi knockdown of Notch pathway components (Notch, Su(H), Mastermind, Delta) causes delayed Slp2 expression, with Slp2 turning on at the 6th-15th neuroblast instead of the 4th-5th neuroblast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C24 demonstrate through multiple independent RNAi experiments (Figure 4) that Notch signaling regulates Slp timing. Multiple pathway components show consistent phenotypes with adequate sample sizes (n=5-12 clones). The identification of Delta as the relevant ligand (C23-C24) strengthens the mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Notch signaling has both indirect effects through Ey and direct effects on the Ey to Slp transition. Loss of Notch delays Ey expression, and even when Ey is overexpressed in Su(H) mutant clones, the Slp transition remains delayed, indicating a direct role for Notch beyond its effect on Ey.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 demonstrate through careful genetic experiments (Figure 5A-E) that Notch has dual roles. The key experiment (C28) showing that Ey overexpression cannot rescue the Slp delay in Su(H) mutants (n=6) provides strong evidence for a direct role. The counting methodology is clearly described and sample sizes are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Ey is required to initiate Slp expression and is epistatic to both Notch signaling and Scro. Supplying active NICD or overexpressing Scro cannot rescue Slp expression in ey-RNAi clones, demonstrating that Ey provides essential context for Notch and Scro to activate Slp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 establish the epistatic relationship through rescue experiments (Figure 5I-J). The failure of NICD or Scro to rescue Slp in ey-RNAi backgrounds provides clear evidence for the hierarchical relationship. The conclusion (C32) is well-supported by the combined genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Both enhancers respond to Ey and Su(H) in vivo, as demonstrated by loss of reporter expression in ey-RNAi and su(H)-RNAi clones. Slp1/2 are not required to initiate their own expression, as reporter expression is normal in slp loss-of-function clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 validate the enhancers through genetic experiments (Figure 6). The loss of reporter expression in ey-RNAi and su(H)-RNAi clones confirms functional regulation. The slp LOF experiment (C35-C36) with adequate sample sizes (n=16-24) demonstrates no autoregulation at initiation, though the authors appropriately note that GFP perdurance prevents testing maintenance roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Su(H) does not activate slp1/2 expression through the d5778 850 bp enhancer directly. Mutation of Su(H) binding sites in the 850 bp enhancer increases rather than decreases GFP expression in neuroblasts, suggesting Notch signaling activates slp1/2 primarily through the u8772 220 bp enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 demonstrate through mutagenesis (Figure 9) that the 850 bp enhancer responds differently to Su(H) than the 220 bp enhancer. The increased expression upon Su(H) site mutation (statistically significant, p<0.005, n=3) is unexpected but clearly documented. The conclusion that Notch acts primarily through the 220 bp enhancer is well-reasoned given the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "DamID-sequencing confirms in vivo binding of Ey and Su(H) to the identified slp enhancers. Reproducible peaks passing IDR<0.05 were observed at both the u8772 220 bp and d5778 850 bp enhancer regions, with Su(H) peaks more prominent in the 220 bp enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 provide direct biochemical evidence through DamID-seq (Figure 10) with proper replication (n=2 biological replicates) and statistical validation (IDR analysis). The alignment rates are excellent (>97%) and the reproducibility assessment follows ENCODE standards. The observation of Ey binding at the scro locus (C49) provides additional validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C90",
+      "C91"
+    ],
+    "result": "Cell cycle progression is required for Notch signaling and for the precise timing of the Ey to Slp transition. In PCNA-RNAi neuroblasts, Notch signaling is largely lost, Ey expression is reduced, and Slp2 expression is lost or delayed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C90-C91 demonstrate through PCNA-RNAi experiments (Figure 11A-F) that cell cycle arrest affects both Notch signaling and TTF transitions. The loss of E(spl)m\u03b3GFP reporter expression (C50) provides direct evidence for loss of Notch signaling. Sample sizes are adequate (n=5-9) and the phenotypes are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Supplying constitutively active NICD rescues Slp2 expression in cell cycle-arrested neuroblasts, demonstrating that active Notch signaling can substitute for cell cycle progression in the Ey to Slp transition. In wild-type conditions, supplying NICD does not significantly affect transition timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide the key rescue experiment (Figure 11G-J) demonstrating that Notch signaling mediates the cell cycle requirement. The rescue is clear (n=10 clones) and the control showing no effect in wild-type (C55, n=5) indicates Notch is not limiting under normal conditions. This is a critical mechanistic finding linking cell cycle to TTF transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose a model where Ey primes the Notch-responsive enhancer of slp, and after each asymmetric division, Notch signaling enhances Slp expression until it reaches a threshold to repress Ey and complete the transition. This mechanism coordinates TTF transitions with cell cycle progression to generate appropriate numbers of neural progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 present a mechanistic model based on the experimental data. While the model is consistent with the observations and draws on insights from other systems, it remains speculative. The 'priming' concept (C87) and the threshold-based transition (C88) are reasonable interpretations but lack direct experimental validation. The proposed function (C89) is plausible but requires additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Notch signaling may affect multiple temporal transitions beyond Ey to Slp. Loss of Su(H) affects expression of earlier TTFs (Opa) and later TTFs (D, BarH1), though SoxN is not significantly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 demonstrate through Su(H)-RNAi experiments (Figure 5, Figure 5\u2014figure supplement 1) that Notch has broader effects on the TTF cascade. The differential effects on different TTFs (SoxN unaffected, Opa expanded/delayed, D and BarH1 severely delayed) suggest stage-specific roles. Sample sizes are adequate (n=4-6) for these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "DamID-seq analysis reveals that genes related to Notch pathway and cell division cycle are enriched among genes bound by both Ey and Su(H). Genes bound uniquely by Ey or Su(H) show enrichment for different functional categories, suggesting complex regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 present functional annotation analysis of DamID-seq data using DAVID. The enrichment of Notch and cell cycle genes among co-bound genes (C98) is striking and biologically meaningful. The specific examples (C100-C102) provide validation. However, the authors appropriately note these are preliminary findings requiring future validation (C103).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Background on temporal patterning in Drosophila neuroblasts. TTFs form proposed transcriptional cascades in both embryonic VNC and medulla neuroblasts, but direct transcriptional regulation has not been verified in most cases, and additional mechanisms beyond TTF cross-regulation likely exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C8, C56-C61 provide well-established background information supported by multiple citations. These claims accurately represent prior knowledge and identify gaps that the current study addresses. The statements about variable cell cycle requirements (C7-C8, C61) are properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Background on Notch signaling in neuroblasts. Notch signaling plays multiple roles in neuroblast development including maintenance of stemness and control of proliferation modes, but its role in temporal transitions between TTFs has not been investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C63-C70 provide accurate background on Notch signaling mechanisms and roles in neuroblast development, all properly supported by citations. The identification of the knowledge gap (C70) that the current study addresses is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C74",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Background on Slp regulation and enhancer biology. Previous work established that Slp is activated by Ey and represses Ey, and that developmentally regulated genes are often controlled by multiple redundant enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C74, C82-C86 provide relevant background properly supported by citations. The information about enhancer redundancy (C82-C84) provides important context for the authors' findings of two redundant slp enhancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background on medulla neuroblast development. Medulla neuroblasts are generated by a neurogenesis wave and are spatially organized by age, dividing asymmetrically to generate GMCs. Delta is expressed in medulla neuroblasts and GMCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C71-C73 provide essential background on the medulla system. The spatial organization by age (C72) is critical for interpreting the experimental results. The Delta expression pattern (C23) is demonstrated in the current study and is important for understanding the Notch signaling mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "In medulla neuroblasts, Su(H) mutant clones show normal proliferation, but Notch signaling is dependent on cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 provide important observations distinguishing medulla neuroblasts from type II neuroblasts. The observation that Su(H) loss doesn't affect proliferation (C92) but Notch signaling requires cell cycle (C93) is clearly demonstrated in the PCNA-RNAi experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Summary of main findings stated in the abstract. The expression of Slp1/2 is directly regulated by two TTFs and cell-cycle dependent Notch signaling through two cis-regulatory elements, and constitutively active Notch can rescue delayed Slp transition in cell cycle arrested neuroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 accurately summarize the main findings that are supported by the detailed experimental results described in other claim groups. These abstract-level claims are validated by the comprehensive experimental evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "In vertebrate cortex, temporal transitions are not affected by cell cycle arrest when constitutively active Notch is provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 cites prior work (Okamoto et al., 2016) showing similar findings in vertebrates, providing important comparative context for the current study's findings in Drosophila.",
+    "result_type": "MINOR"
+  }
+]

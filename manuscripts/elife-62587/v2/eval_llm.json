@@ -1,0 +1,473 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A chromosome-scale reference genome for C. tropicalis strain NIC58 was assembled, comprising 81.3 Mb in 15 sequences with 21,210 protein-coding genes, along with a draft genome for strain JU1373 containing 20,829 protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C26-C30 describe the genome assembly and annotation results. The assembly metrics (size, number of sequences, gene counts) are clearly stated as direct outputs of the sequencing and assembly pipeline. The methods section provides detailed protocols for assembly, polishing, and annotation, supporting these technical claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "C. tropicalis strains show heritable variation in outcrossing rates, with males exhibiting more variable crossing probability than hermaphrodites, and strains differing in male crossing ability, hermaphrodite crossing ability, equilibrium sex ratio, and spontaneous male production rate. A QTL on the X chromosome explains ~15% of variance in hermaphrodite outcrossing probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25, C56-C58 are supported by mating trial data (Figure 1A-B), statistical analyses (binomial linear models, QTL mapping in Figure 4B), and direct counting of male frequencies. The experimental design includes appropriate replication (22-34 trials per cross for C21-C23, three replicates for C24-C25) and statistical testing. The QTL mapping (C56) uses 118 RILs with appropriate permutation testing for significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "C. tropicalis exhibits very strong population structure globally, with the first three principal components accounting for 89% of genetic variance. African isolates cluster tightly despite spanning >9000 km, the X chromosome shows particularly extreme structuring with essentially two haplotypes (African vs. non-African), and evidence of recent admixture is observed on chromosome V and the mitochondrial genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C48-C55 are supported by PCA analysis of 397,515 SNVs with no missing data (genotype set 2) across 24 isolates (Figure 3B and supplements). The variance explained percentages are directly calculated from PCA, and chromosome-specific analyses provide additional resolution. The geographic clustering patterns are remarkable but well-documented in the data, though the authors appropriately note this is consistent with patterns in other selfing species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C130",
+      "C131"
+    ],
+    "result": "C. tropicalis shows very low genetic diversity genome-wide (median \u03c0 = 3.2 SNV differences per 10 kb window on chromosome centers), is the most genetically homogeneous of the three selfing Caenorhabditis species, but exhibits extreme heterogeneity in diversity distribution with divergent regions covering ~14% of the genome. Variance in diversity is ~8\u00d7 that of C. elegans and >100\u00d7 that of C. briggsae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43, C130-C131 are supported by genome-wide diversity calculations from 794,676 filtered SNVs (Figure 2A). The comparative statistics across species use consistent methods and window sizes. However, the interpretation of divergent regions as potentially under balancing selection (C43) is speculative. The claim about reference mapping failures (C37) is an inference from missing data patterns rather than direct demonstration, though the 37% increase in SNVs from genome alignment (C44) supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Genome-wide nucleotide diversity in C. tropicalis is approximately three times higher than previously reported (median \u03b8w = 0.00097), with mitochondrial diversity higher still (0.0038). Reference-based SNV calling dramatically underestimated diversity at divergent loci, with genome alignment revealing a 37% increase in SNVs and divergence commonly exceeding 10% in 10 kb windows on chromosome arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C44-C47 are supported by comparison of variant calling methods and genome alignment data (Figure 2B). The increase in diversity estimates is attributed to improved sampling and methodology. The missing data analysis (C34-C35) appropriately controls for sequencing depth (r=0.13, p=0.65 correlation). The genome alignment between JU1373 and NIC58 provides direct evidence for the underestimation by reference mapping, though the authors acknowledge this comparison is not directly comparable to the previous study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C185"
+    ],
+    "result": "RIL genotypes revealed strong transmission ratio distortion on chromosomes III (97% JU1373 homozygotes) and V (78% JU1373 homozygotes), with chromosome V showing excess heterozygosity (16% vs. 0.1% expected after 10 selfing generations). During RIL construction, 12.2% of lines did not survive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65, C185 are supported by RIL genotype data from 119 lines (Figure 5A). The observed frequencies are clearly documented, and the comparison to neutral expectations (C62) uses appropriate population genetic theory (1/2^10 = 0.1%). The statistical association between chromosome V heterozygosity and chromosome I genotypes (C63) is supported by Fisher's exact test (p<0.001). The 12.2% line loss (C185) is a direct observation from the RIL construction process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "RILs homozygous for NIC58 alleles at transmission ratio distortion loci showed normal development (93.1-98.3% reaching adulthood), excluding simple mitochondrial-nuclear incompatibility. F2 embryos from NIC58 \u00d7 JU1373 crosses showed lower than expected normal development (41-45% vs. 98-99% for parentals), with widespread developmental arrest including failure to hatch (9%), early larval arrest (39-41%), and late larval arrest (5-9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by developmental assays with appropriate sample sizes (n=151-679 for C66; n=329-1283 for C68-C69). The comparison to parental controls and model predictions provides context for interpreting the arrest proportions. However, the interpretation that arrest reflects two Medea loci plus additional background incompatibilities (C71) is somewhat speculative, as the authors acknowledge multiple possible interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C85"
+    ],
+    "result": "Alleles at transmission ratio distortion loci were transmitted in Mendelian proportions to F2 progeny, indicating postzygotic lethality. The chromosome III locus shows mitochondrial-dependent Medea activity (active in mito-JU1373, inactive in mito-NIC58), while chromosome V shows antagonistic Medea activity with both JU1373 and NIC58 alleles acting as Medea elements, with differential activity across mitochondrial backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79, C85 are supported by F2 genotype-phenotype data from reciprocal crosses (Figure 6A). The Mendelian transmission ratios (C72) demonstrate that distortion occurs post-fertilization. The genotype-specific arrest patterns across mitochondrial backgrounds provide strong evidence for the proposed Medea mechanisms. However, the precise penetrance estimates and the characterization of antagonistic activity rely on interpretation of arrest frequencies, which show some variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Antagonistic haplotypes at chromosome V explain retention of heterozygosity in RILs, as both homozygote classes arrest. JU1373 V homozygotes in mito-NIC58 background produced wild-type progeny, excluding simple mitochondrial-nuclear incompatibility. Differences in arrest by mitochondrial genotype reflect greater NIC58 Medea activity in mito-NIC58 background, likely dependent on additional nuclear background factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by genetic crosses and developmental assays (Figure 6B). The logical inference connecting antagonistic Medeas to heterozygosity retention (C80) is sound given the genetic model. The viability of JU1373 V homozygotes in mito-NIC58 background (C81-C82) provides direct evidence against simple incompatibility. However, the claim about nuclear background factors (C84) is more speculative, based on the association with chromosome I genotypes rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Crosses segregating individual Medea loci demonstrate independent action: chromosome III Medea shows activity only in mito-JU1373 background (68-75% normal development), chromosome V shows antagonistic Medea activity in both backgrounds (52-61% normal development), and all three Medea loci act via maternal effect. Additional background incompatibilities are widespread and diffuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 are supported by developmental assays using RILs with defined genotypes at Medea loci (Figure 7A-B). Sample sizes are adequate (n=163-345 per cross type). The maternal vs. paternal effect tests (C94, Figure 7B) use appropriate crosses with sperm depletion and visible markers. The inference of independent action (C88, C91) is well-supported by crosses with fixed genotypes at one locus. The claim about background incompatibilities (C93) is supported by variability in control crosses but remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The chromosome III Medea was mapped to a ~33 kb interval containing an insertion in JU1373 with eight additional genes compared to NIC58: seven are duplications (six tandem, one from 0.68 Mb away), and one is a novel gene unique to JU1373. Five genes have no homology outside C. tropicalis, and two are homologous to C. elegans genes with NADAR and YbiA-like domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 are supported by genetic mapping using RILs with recombination breakpoints (Figure 7\u2014figure supplement 1) and genome annotation data (Figure 8A). The mapping resolution (~33 kb) is appropriate given the RIL panel size. The gene content differences are directly observed from genome assemblies and annotation. Homology searches provide clear evidence for the novelty of several genes. However, these are candidate genes; the causal genes remain to be functionally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The chromosome V Medea locus lies in a region of high divergence extending beyond the mapped ~69 kb interval. Major structural differences include expansion of F-box genes (3 in NIC58 to 13 in JU1373), duplication of a chk-2 homolog, and tandem duplication of a gene encoding a mitochondrial ubiquinol-cytochrome c oxidoreductase complex protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by genetic mapping (Figure 7\u2014figure supplement 1), divergence data (Figure 5B), and genome annotation (Figure 8B). The structural differences are clearly documented in the genome assemblies. The speculation about the mitochondrial protein accounting for mito-nuclear interactions (C106) is reasonable but not directly tested. The causal genes remain to be identified, so these represent candidate regions rather than confirmed Medea genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The core functional complement of mitochondrial genomes is superficially identical between JU1373 and NIC58, with all 12 protein-coding, 2 ribosomal RNA, and 22 tRNA genes present and intact in both. However, there are 12 missense variants in six core protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by mitochondrial genome annotation using established tools (MITOS2, Prokka) and comparison (Figure 8\u2014figure supplement 1). The gene content is clearly documented. However, the functional significance of the missense variants and other differences is unknown, as acknowledged by the authors. The claim of 'superficial' identity appropriately qualifies that sequence-level differences exist despite similar gene content.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Putative Medea activity is widespread among wild C. tropicalis isolates, with 12 of 13 isolates showing activity in crosses to JU1373d. Activity strength was associated with geographic origin and haplotype at Medea loci. Some isolates showed development rates consistent with three or more Medeas (20-28% normal development). The data suggest JU1373 Medeas may be fixed in Africa but polymorphic elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C117 are supported by developmental assays across multiple wild isolates (Figure 9A) with adequate replication (2-16 plates per cross, median 6). The association between activity, geography, and haplotype (C110) is supported by comparison of developmental data with genotype data (Figure 9B). However, the inferences about geographic distribution (C114-C115) are speculative, based on limited sampling. The claim about additional Medeas (C115) is an inference from arrest levels rather than direct genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Simulations show that high rates of selfing dramatically slow the spread of Medea elements in large populations, with elements failing to increase in frequency during 100 generations at 95% selfing. In small populations, elements at 5% frequency are rapidly fixed under random mating but lost to drift under high selfing. Once at high frequency, selfing hastens fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by simulation results (Figure 10A-B) using a model that incorporates key features of C. tropicalis biology (androdioecy, X-chromosome nondisjunction). The simulations use appropriate parameters (penetrance 0.95, population sizes 1000-20000) and sufficient replication (250 simulations for Figure 10B). The frequency-dependent effects are clearly demonstrated. However, the model makes simplifying assumptions (e.g., fixed selfing rate, no cost to Medea allele) that may not fully capture natural dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "For antagonistic Medeas, intermediate selfing rates cause frequency-dependent selection against the rarer haplotype. Under obligate selfing, alleles are literally neutral (no heterozygotes), while under obligate outcrossing, overdominance in offspring is offset by underdominance in parents, resulting in drift-like dynamics. Selfing reduces Medea load by decreasing heterozygote frequency and inducing positive frequency-dependent selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 are supported by simulations with antagonistic Medeas (Figure 10C, Figure 10\u2014figure supplement 2). The logical explanations for neutral dynamics under extreme mating systems (C124-C125) are sound given the genetic model. The frequency-dependent selection at intermediate selfing rates is clearly demonstrated. However, the simulations assume equal penetrance for antagonistic Medeas; when unequal penetrances are modeled (Figure 10\u2014figure supplement 2D-E), different dynamics emerge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "In patchy environments with exponential growth, group selection is sufficient to generate global changes in allele frequency for antagonistic Medeas. The joint effects of selfing and group selection eliminate the rarer allele most efficiently at intermediate selfing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by simulations incorporating metapopulation structure (Figure 10C). The model appropriately represents the ephemeral habitat patches characteristic of C. tropicalis ecology. However, the simulations are sensitive to parameters (founders per patch, generations per patch, brood size) that are not well-characterized for natural populations. The claim represents a plausible hypothesis but would benefit from empirical validation of parameter values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Outbreeding depression in C. tropicalis is due largely to maternal-effect haplotypes that kill offspring not inheriting them (Medea elements). Three Medea gene-drive systems segregate in the NIC58 \u00d7 JU1373 cross. Medeas impose severe fitness costs on heterozygous mothers, and simulations show selfing limits their spread. Frequent selfing may be a strategy to avoid Medea-mediated outbreeding depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20, C132, C135-C136 represent the major synthesis of the paper. The genetic evidence for Medea elements (C15) is strong, supported by multiple lines of evidence including transmission ratios, genotype-phenotype associations, and reciprocal crosses. The characterization as Medea elements (C16-C17) is appropriate given the maternal-effect, zygotic-antidote genetics. The fitness costs (C18) are clearly demonstrated. However, the causal interpretation that selfing is a strategy to avoid Medeas (C20, C136) is speculative and represents correlation rather than demonstrated causation. The alternative that Medeas evolved in response to selfing is equally plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C31",
+      "C186"
+    ],
+    "result": "C. tropicalis was identified in 2008, has a more restricted range than other selfing Caenorhabditis species (within 25\u00b0 of the Equator), shows extremely low genetic diversity, and exhibits outbreeding depression with poor male mating ability. A comprehensive reference genome was previously lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C31, C186 provide background context supported by appropriate citations to prior work (Kiontke et al. 2011, F\u00e9lix 2020, Gimond et al. 2013). These claims accurately represent the state of knowledge prior to this study. The claim about lacking a reference genome (C2) is a statement about the field at the time of writing and is addressed by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Classical models predict selfing evolves when inbreeding depression reduces reproduction by less than half. Selfing provides reproductive assurance and allows rapid adaptation when traits are determined by maternal and zygotic genotypes, but slows adaptation to new environments by reducing recombination and genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 accurately summarize theoretical literature on selfing evolution, supported by appropriate citations to foundational papers (Lande and Schemske 1985, Baker 1955, Drown and Wade 2014, etc.). These represent established knowledge in the field rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Medea elements have been found in C. elegans but are especially common in C. tropicalis. Recent surveys found regions of high diversity spanning up to 20% of C. elegans and C. briggsae genomes. Balancing selection is a promising hypothesis for hyperdivergent regions, supported by enrichment of environmentally responsive genes in C. elegans, though most divergent regions in C. tropicalis do not carry active Medea factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134, C137-C142 appropriately cite and interpret prior work (Ben-David et al. 2017, 2020; Lee et al. 2020). The comparison to other species provides important context. The inference that most divergent regions don't carry Medeas (C142) is supported by the limited number of Medea loci identified relative to the number of divergent regions, though this could reflect incomplete characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Medea elements reliably spread in randomly mating populations, and two haplotypes swept nearly to fixation in the RIL pedigree. However, in C. tropicalis, strong geographic structure, low outcrossing rates, mitochondrial/nuclear background dependence, and primarily self-fertilization limit Medea spread. The patchy, ephemeral microhabitat provides substrate for group selection. Chromosome V Medeas occur on ancient haplotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C151 synthesize empirical findings with theoretical expectations. The sweep in RILs (C144) is directly observed. The factors limiting spread in nature (C145-C148) are supported by data from this study (population structure, mating rates, genetic interactions) and simulations. The inference about ancient haplotypes (C150) is supported by extreme divergence data (Figures 5, 8). The speculation about evolutionary origins (C151) is appropriately qualified as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The causal genes underlying Medeas remain to be identified but likely include genes unique to the Medea haplotypes, as seen in C. elegans. Mechanisms of translational control in Caenorhabditis germlines may facilitate Medea evolution. High selfing rates may facilitate both antidote-first and toxin-first evolutionary scenarios. The level of divergence suggests sampling from outcrossing ancestors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C161 are largely speculative about Medea evolution and mechanisms. While the speculation is informed by data (gene content differences, divergence levels) and comparison to C. elegans, these represent hypotheses rather than tested conclusions. The claim that causal genes remain unidentified (C152) is accurate. The various evolutionary scenarios (C157-C159) are plausible but not distinguished by current data. These claims appropriately identify important questions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Unlinked modifiers affect Medea activity in C. tropicalis, though whether these evolved as suppressors is unclear. Selection for mitochondrial suppressors may be especially strong for maternal-effect drivers. Crosses between geographically distant isolates typically reveal multiple Medea loci, magnifying outcrossing costs and reducing suppression possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C168 are supported by genetic data showing chromosome I effects on chromosome V Medea (C162) and survey of Medea activity across isolates (C167, Figure 9). The logical argument about mitochondrial suppressors (C164) is sound given inheritance patterns. However, the uncertainty about whether modifiers evolved as suppressors (C163) is appropriately acknowledged. The claim about multiple Medeas magnifying costs (C168) is a logical inference but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Organisms can adapt to gene drive by increasing selfing rates. Selfing Caenorhabditis appear to have purged deleterious variants, can transiently increase male frequency for adaptation, and preserve diversity at ancient haplotypes. C. tropicalis harbors heritable variation in outcrossing rate and shows multiple adaptations promoting selfing over outcrossing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C178 synthesize findings from this study (C174) with prior work on selfing Caenorhabditis (C171-C173, C175-C177). The citations appropriately support the claims about general patterns in selfing species. The synthesis connecting these observations to selection favoring high selfing rates (C178) is a reasonable inference but represents interpretation rather than direct demonstration of causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Selfing is often considered to favor evolution of incompatibilities by reducing recombination. However, incompatibilities in C. tropicalis mostly represent interactions between tightly linked loci in different individuals (mothers and offspring), so outbreeding depression is not mediated by recombination. C. tropicalis can escape incompatibilities by inbreeding, suggesting incompatibility may lead to increased selfing rather than vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C184 present an important conceptual contribution, reversing the typical causal interpretation of the selfing-incompatibility relationship. The characterization of incompatibilities as maternal-offspring interactions at linked loci (C181) is well-supported by the genetic data. The inference that outbreeding depression is not recombination-mediated (C182) follows logically. However, the claim that incompatibility may lead to selfing (C184) is speculative and represents correlation rather than demonstrated causation. The evolutionary sequence remains uncertain.",
+    "result_type": "MAJOR"
+  }
+]

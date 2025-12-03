@@ -1,0 +1,1987 @@
+{
+  "submission": {
+    "id": "7e66b371-50c4-434a-ba4e-a29e544400c2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:07:19.367185Z",
+    "updated_at": "2025-12-03T15:07:19.367185Z"
+  },
+  "content": [
+    {
+      "id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "submission_id": "7e66b371-50c4-434a-ba4e-a29e544400c2",
+      "content_type": "manuscript",
+      "content_text": "# Detecting molecular interactions in live-cell single-molecule imaging with proximity-assisted photoactivation (PAPA)\n\n## Authors\n\n- Thomas GW Graham<sup>1</sup> ([ORCID: 0000-0001-5189-4313](https://orcid.org/0000-0001-5189-4313))\n- John Joseph Ferrie<sup>1</sup>\n- Gina M Dailey<sup>1</sup> ([ORCID: 0000-0002-8988-963X](https://orcid.org/0000-0002-8988-963X))\n- Robert Tjian<sup>1</sup> ([ORCID: 0000-0003-0539-8217](https://orcid.org/0000-0003-0539-8217)) \u2020\n- Xavier Darzacq<sup>1</sup> ([ORCID: 0000-0003-2537-8395](https://orcid.org/0000-0003-2537-8395)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSingle-molecule imaging provides a powerful way to study biochemical processes in live cells, yet it remains challenging to track single molecules while simultaneously detecting their interactions. Here, we describe a novel property of rhodamine dyes, proximity-assisted photoactivation (PAPA), in which one fluorophore (the \u2018sender\u2019) can reactivate a second fluorophore (the \u2018receiver\u2019) from a dark state. PAPA requires proximity between the two fluorophores, yet it operates at a longer average intermolecular distance than F\u00f6rster resonance energy transfer (FRET). We show that PAPA can be used in live cells both to detect protein\u2013protein interactions and to highlight a subpopulation of labeled protein complexes in which two different labels are in proximity. In proof-of-concept experiments, PAPA detected the expected correlation between androgen receptor self-association and chromatin binding at the single-cell level. These results establish a new way in which a photophysical property of fluorophores can be harnessed to study molecular interactions in single-molecule imaging of live cells.\n\n## Introduction\n\nMost proteins function by interacting with other proteins, yet we lack tools to study these potentially transient interactions at single-molecule resolution in live cells. Single-particle tracking (SPT) is a valuable approach for monitoring the motions of individual protein molecules (Chen et al., 2021; Hansen et al., 2018; Heckert et al., 2022; Nguyen et al., 2021), but it does not distinguish compositionally and functionally distinct complexes of the same protein. Two-color SPT can infer interactions between proteins when both partners are so dilute that they can be fully labeled while still resolving single molecules (Asher et al., 2021; Sotolongo Bell\u00f3n et al., 2022; Wilmes et al., 2020). For most proteins, however, detection of single molecules requires sparse labeling, which makes double-labeled complexes exceedingly rare. Single-molecule F\u00f6rster resonance energy transfer (smFRET), though powerful for monitoring intra-molecular conformational changes, is not in general a practical way to detect protein\u2013protein interactions in live cells due to a similar requirement for sparse double-labeling, challenges with spectral crosstalk, and the large size of genetically encoded tags relative to the working distance of FRET (see Appendix 1; Quast and Margeat, 2021). Fluorescence cross-correlation spectroscopy (FCCS) can detect bulk molecular interactions, yet it does not provide spatial trajectories for individual molecules, which are useful for measuring such properties as chromatin residence time and anomalous diffusion (Hansen et al., 2020; Hansen et al., 2017; Izeddin et al., 2014; McSwiggen et al., 2019; Nguyen et al., 2021). Bimolecular fluorescence complementation (BiFC) detects molecular interactions based on the reconstitution of a fluorescent protein or HaloTag from two split halves fused to interacting partners (Ghosh et al., 2000; Hu et al., 2002; Kerppola, 2008; Makhija et al., 2021; Shao et al., 2021). While BiFC can be combined with single-molecule imaging (Mao et al., 2021; Nickerson et al., 2014; Shao et al., 2021), a drawback of this approach is that the extremely strong association of split proteins perturbs the binding equilibrium of their interacting partners (Kerppola, 2008; Kodama and Hu, 2012; Nickerson et al., 2014), making it impossible to accurately measure dynamic interactions.\n\nAn alternative in vitro proximity sensor to smFRET was devised by Bates, Blosser, and Zhuang, who observed that exciting one cyanine dye can reactivate a nearby cyanine dye from a dark state (Bates et al., 2005). Although photoswitching of cyanine dye pairs enabled early implementations of STORM imaging (Rust et al., 2006), its application as a proximity sensor has been limited by the short inter-fluorophore distance required (\u22642 nm), the poor cell permeability of cyanine dyes, and the need for high thiol concentrations and an oxygen-scavenging system (Chen et al., 2016; Geertsema et al., 2015).\n\nTo our knowledge, it has not been reported whether a similar process of reactivation can occur for pairs of non-cyanine dyes. However, many fluorophores\u2014notably rhodamine dyes\u2014can enter a dark state and be directly reactivated by short-wavelength (e.g., 405 nm) light (van de Linde et al., 2011). This phenomenon, which has been employed for direct STORM (dSTORM) imaging in both live and fixed cells (Grimm et al., 2015; Heilemann et al., 2008; Tang et al., 2021), is thought to involve conversion of excited triplet-state fluorophores to reduced species whose absorbance is shifted to shorter wavelengths (Bates et al., 2005; Dempsey et al., 2009; Gidi et al., 2020; Heilemann et al., 2008; van de Linde et al., 2011; Vaughan et al., 2012).\n\nThe development of bright, cell-permeable Janelia Fluor (JF) dyes, based on rhodamine and silicon-rhodamine chemical scaffolds, has transformed single-molecule imaging in live cells (Grimm et al., 2015). Here, we show that Janelia Fluor X 650 (JFX650; Grimm et al., 2021) and similar fluorophores can be reactivated from a dark state by excitation of a nearby fluorophore such as Janelia Fluor 549 (JF549), a phenomenon which we term proximity-assisted photoactivation (PAPA). In contrast to cyanine dye reactivation, PAPA of JF dyes occurs under physiological conditions in live cells and requires neither an oxygen-scavenging system nor exogenous thiols. While PAPA requires proximity between the two fluorophores, its effective distance range extends beyond that of FRET, making it a potentially more versatile interaction sensor.\n\nMost importantly, PAPA provides a new way to detect protein interactions in live cells at single-molecule resolution. We show that PAPA can be used to detect the formation of protein dimers and that it can enrich for double-labeled molecules within defined mixtures, albeit not with perfect selectivity (see \u2018Discussion\u2019 and Appendix 2). As a further proof of concept, we combined SPT with PAPA to analyze the increase in chromatin binding induced by self-association of androgen receptor. By enabling the previously elusive detection of protein\u2013protein interactions, PAPA will provide a new dimension of information in live-cell single-molecule imaging.\n\n## Results\n\n### PAPA of JF dyes\n\nWe fortuitously discovered PAPA while imaging an oligomeric protein labeled with two different JF dyes. U2OS cells expressing Halo-tagged NPM1 (a pentameric nucleolar protein; Heckert et al., 2022) were labeled with a low concentration of Janelia Fluor X 650 HaloTag ligand (JFX650-HTL; Grimm et al., 2021) to track single molecules, together with a higher concentration of Janelia Fluor 549 HaloTag ligand (JF549-HTL) to visualize nucleoli. When we alternately excited JFX650 with red light (639 nm) and JF549 with green light (561 nm), we noticed that some JFX650 molecules that had gone dark during red illumination suddenly reappeared after a brief, 7 ms pulse of green light (green vertical lines in Figure 1ai and green box in Figure 1b, Figure 1\u2014video 1). Consistent with previous work (Grimm et al., 2015), we also observed reactivation of JFX650 by violet light, both with and without JF549-HTL (violet vertical lines in Figure 1ai,ii and violet box in Figure 1b). However, reactivation of JFX650 by green light required co-labeling with JF549 (compare Figure 1ai and ii), implying that reactivation results not from direct absorption of green light by dark-state JFX650 but indirectly due to excitation of JF549. Green illumination of cells labeled with JF549-HTL alone did not produce localizations in the JFX650 channel, demonstrating that this effect is not due to JF549 photochromism (Figure 1aiii).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig1-v3.jpg)\n\n**Figure 1.:** (a) Green and violet light reactivate JFX650 through distinct JF549-dependent and JF549-independent mechanisms. Left column: schematic of NPM1 pentamers in heterozygously tagged NPM1-Halo U2OS cells labeled with JF549 (orange) and/or JFX650 (red). Right column: average number of localizations in the JFX650 channel as a function of frame number. JFX650 molecules were excited with red (639 nm) light, interspersed with 7 ms pulses of violet (405 nm) and green (561 nm) light (violet and green vertical lines). Reactivation of JFX650 by green light required labeling with JF549 (compare black arrows in i and ii). (b) Sample images of a single cell in the JFX650 channel. Leftmost panel: first movie frame prior to fluorophore bleaching/shelving. Green and violet boxes: maximum-intensity projection of all frames immediately before and after green and violet stimulation pulses, showing reactivation of molecules from the dark state. Image dimensions are 24 \u00b5m x 24 \u00b5m. (c) Average fluorescence intensity in the JFX650 channel as a function of frame number in cells expressing a Halo-SNAPf fusion with a flexible linker (top panel; N = 40 cells) or a tandem P2A-T2A self-cleaving peptide between Halo and SNAPf (PT2A; bottom panel; N = 20 cells). Halo was labeled with JF549-HTL and SNAPf with JFX650-STL. Reactivation by violet light pulses (violet lines) occurred in both cases, but reactivation by green light pulses (green lines) was mostly eliminated by the self-cleaving peptide (compare black arrows). Raw intensity traces are displayed without background subtraction.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Shelving/bleaching and reactivation of JFX650 bound to Halo (cyan) and SNAPf (black). Relative fluorescence intensity is plotted on the y-axis, averaged over multiple cells (N = 10 for Halo, N = 14 for SNAPf), and frame number is plotted on the x-axis. The frame rate was 7.48 ms/frame. Fluorescence intensity (with red illumination) declined more rapidly for SNAPf-JFX650 than for Halo-JFX650. Violet pulses of 7 ms at frames 101 and 302 induced greater direct reactivation of JFX650-SNAPf than JFX650-Halo. (b) Reactivation of SNAPf-JFX650 as a function of violet pulse duration. SNAPf-JFX650 intensity was measured three times using 20 frames of 1 ms stroboscopic red illumination: (1) before bleaching/shelving, (2) after bleaching/shelving with 400 frames of non-stroboscopic (7 ms/frame) red illumination, and (3) after reactivation by exposure to violet pulses of varying duration. Percent reactivation was calculated by dividing the increase in intensity due to reactivation by the decrease in intensity due to bleaching/shelving. Solid black curve shows a fit to a single-exponential model. (c, d) Mutual occlusion of green and violet reactivation. (c) Halo-SNAPf-expressing U2OS cells labeled with JFX650-STL and JF549-HTL were imaged with red illumination alternating with unrecorded frames with either no illumination (black curve) or violet/green illumination (violet/green curves). Integrated intensity in the JFX650 channel is plotted on the y-axis and frame number on the x-axis. JFX650 intensity initially declined for all conditions due to bleaching and shelving. A 20-frame (140-ms) pulse of green light was applied after frame 500 (green rectangle). This reactivated JFX650 that had been exposed to red light only but failed to reactivate JFX650 that had been exposed to alternating red and green or red and violet light. (d) Same as (c), but with a 20-frame (140-ms) violet pulse after frame 500. Violet reactivation was strongly reduced by preceding green or violet light exposure. Some violet reactivation was still observed for cells exposed to alternating red and green light (green curve). Although this might indicate the presence of additional dark state(s) that can be reactivated by 405 nm light but not PAPA, it might also reflect incomplete labeling of Halo by JF549 or photobleaching of JF549 by green light.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** U2OS cells expressing Halo-SNAPf-3xNLS were labeled with different SNAP tag ligand (STL) and HaloTag ligand (HTL) fluorophore combinations and imaged with red light alternating with 7-ms pulses of green and violet light. Fluorescence intensity averaged over multiple cells is plotted on the vertical axis and frame number is plotted on the horizontal axis. (a) Tetramethylrhodamine (TMR)-HTL and JFX650-STL. (b) Janelia Fluor X549 (JFX549)-HTL and Janelia Fluor 646 (JF646)-STL. (c) Janelia Fluor 526 (JF526)-HTL and JFX650-STL. (d) JFX650-STL-only control. (e) JF549-only control.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Cells expressing H2B-Halo-SNAPf were labeled sparsely with JFX650 SNAP ligand, such that individual fluorophores could be resolved without photobleaching. Halo was labeled with JF549 (a\u2013c, g) or left unlabeled as a negative control (d\u2013f). Cells were imaged at 7.48 ms/frame with red illumination alternating with 10 frames of 561 nm (a, d), 405 nm (b, e), or no illumination (c, f), indicated by green, violet, and gray vertical lines, respectively. Top panels in (a\u2013f) show the fraction of fluorophores detected in the first frame that were fluorescent in each subsequent frame. Bottom panels in (a\u2013f) are kymographs of all fluorophores detected in the first frame, in which black squares represent the presence of a localization for that molecule and white squares represent the absence of a localization. For visualization, molecules are sorted based on the first pulse in which they reactivated (if at all). DR by 405 nm light above background was observed independent of the presence of JF549 (b, e), while PAPA by 561 nm light was dependent on JF549 (a, d). (g) Montages of single-molecule images in the JF549-Halo/JFX650-SNAPf double-labeled condition. Each square is a 2.2 \u00d7 2.2 \u00b5m (14 \u00d7 14 pixel) region, and the time interval is 7.48 ms between squares. Shelving of each molecule in a reversible dark state occurred stochastically at different frames, as indicated by the orange outlines. A 561 nm pulse between frames 101 and 110 (green arrowhead) induced fluorophore reactivation via PAPA (blue outlines).\n\nBecause double-labeling of NPM1-Halo pentamers is expected to bring JF549 and JFX650 close together (Figure 1ai, right panel), we asked whether proximity of the dyes is required for reactivation. To test this, we expressed fusions of Halo and SNAPf separated by either a short flexible linker (Halo-SNAPf) or a tandem P2A-T2A self-cleaving peptide (Halo-PT2A-SNAPf; Liu et al., 2017) in U2OS cells (Figure 1c); labeled cells with JF549-HTL and JFX650 SNAP tag ligand (JFX650-STL); and imaged JFX650 with red light interspersed with alternating short pulses of violet and green light. While violet reactivation was similar for both constructs, green reactivation was substantially greater for Halo-SNAPf than for Halo-PT2A-SNAPf, implying that proximity of the two dyes facilitates reactivation by green light (Figure 1c). Thus, we term this phenomenon proximity-assisted photoactivation (PAPA). We will call the dye that undergoes reactivation the \u2018receiver\u2019 and the dye whose excitation induces reactivation the \u2018sender.\u2019 Also, we will adopt the terms \u2018shelving\u2019 for conversion of the receiver into the dark state (Bretschneider et al., 2007; Grimm et al., 2015) and \u2018direct reactivation\u2019 (DR) for reactivation by violet light (Dempsey et al., 2009).\n\nConjugating JFX650 to SNAPf instead of Halo led to more efficient shelving in the dark state, as evidenced by a faster decline in fluorescence during red illumination and greater subsequent reactivation by violet light (Figure 1\u2014figure supplement 1a). This accords with the previous observation that JF549 is more photostable when bound to Halo than when bound to SNAP (Presman et al., 2017). Ensemble and single-molecule kinetic measurements indicate that about 10% of JFX650-SNAPf molecules enter the dark state under our experimental conditions and can be reactivated by either DR or PAPA (Figure 1\u2014figure supplements 1b and 3). DR by violet light precluded subsequent PAPA by green light, and vice versa, implying that both wavelengths reactivate the same dark state (Figure 1\u2014figure supplement 1c and d). We tested other fluorophore pairs and found that PAPA occurred when tetramethylrhodamine (TMR), Janelia Fluor X 549 (JFX549), or Janelia Fluor 526 were used as the sender, or when JF646 or JFX646 were used as the receiver (Figure 1\u2014figure supplement 2).\n\n### Distance dependence of PAPA\n\nTo investigate how PAPA depends on sender\u2013receiver distance, we generated fusion transgenes in which Halo and SNAPf were separated by zero, one, three, five, or seven repeats of the titin I91 Ig domain (Scholl et al., 2016). The distance distribution between the two dyes was estimated for each fusion protein by simulating an ensemble of conformations using PyRosetta (Figure 2\u2014figure supplement 1a, b; Chaudhury et al., 2010; Ferrie and Petersson, 2020). U2OS cells were stably transfected with each transgene, and fluorescence-activated cell sorting (FACS) was used to obtain pools of cells with similar low expression levels of each protein (Figure 2\u2014figure supplement 1c and d; see Appendix 3, Supplementary note 1).\n\nCells were labeled with a mixture of JF549-HTL and JFX650-STL and imaged as described above with red light interspersed with alternating pulses of violet light to induce DR and green light to induce PAPA. The ratio of the increase in fluorescence intensity in response to green and violet pulses (the \u2018PAPA/DR ratio\u2019) provides a normalized measure of PAPA efficiency, which corrects for cell-to-cell variability in the labeled protein concentration. For sufficiently short reactivation pulses, the PAPA/DR ratio increased linearly with the green pulse duration (with the violet pulse duration held constant), making it possible to measure relative rate constants by linear fitting (Figure 2a, b, left panel). In parallel, fluorescence lifetime imaging (FLIM) was used to measure FRET between JF549 and JFX650 for the same fusion proteins (Figure 2b, right panel; see Appendix 3, Supplementary note 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig2-v3.jpg)\n\n**Figure 2.:** (a) PAPA/direct reactivation (DR) ratio vs. green pulse duration for Halo-SNAPf fusions with a short, flexible linker or linkers containing different numbers of tandem Ig domains. Curves are linear fits (y = ax). Error bars, \u00b12 * SE. PT2A, tandem P2A-T2A self-cleaving peptide. (b) Left panel: relative rates of reactivation by PAPA (slope of fits in a divided by the slope of the short linker construct). Right panel: FRET efficiency measured using fluorescence lifetime imaging (FLIM).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Four example structures of the Halo-3xIg-SNAPf fusion protein obtained from PyRosetta simulations. Inter-dye distances are indicated for each structure. (b) Cumulative distributions of predicted inter-dye distances from Rosetta simulations, with observed (obs.) and predicted (pred.) F\u00f6rster resonance energy transfer (FRET) values. Predicted FRET efficiency was calculated by averaging EFRET = 1/(1 + (R/R0)6) over all conformations in the ensemble, assuming a theoretical F\u00f6rster radius of R0 = 58 \u00c5 for the JF549-JFX650 pair. (c, d) SDS-PAGE analysis of linker constructs expressed in U2OS cells and labeled with JF549-HTL (c) or JF549-STL (d). The amount of cell lysate loaded in each lane corresponds to 100,000 cells. Lookup table is set between 0 and 3000 counts for (c) and the top image in (d). The bottom image in (d) is the same gel with lookup table set between 0 and 800 counts to highlight faint bands. MW, molecular weight markers in kilodaltons. *, nonspecific bands. \u25ca, unbound dye. A ladder of smaller fragments is present below the full-length protein for the larger linkers; these are predominantly labeled by Halo ligand but not SNAP ligand (see Supplemental Note 1).\n\nAs predicted by our simulations (Figure 2\u2014figure supplement 1b), FRET efficiency between JF549 and JFX650 declined sharply with increasing spacer length, from 0.271 \u00b1 0.010 (95% CI) for the short linker to 0.124 \u00b1 0.006 for a single Ig repeat and 0.020 \u00b1 0.010 for three Ig repeats (Figure 2b, right panel). FRET was essentially undetectable for five or seven Ig repeats and for the PT2A self-cleaving peptide linker (Figure 2b, right panel). In contrast, PAPA was observed for the 3\u00d7, 5\u00d7, and 7\u00d7 Ig linker constructs (Figure 2a and b). The rate of photoactivation by green light declined gradually with increasing linker length yet was distinguishable from the background rate of the PT2A self-cleaving linker. These results indicate that PAPA has a less stringent dependence on average inter-fluorophore distance than FRET.\n\n### Detection of inducible protein\u2013protein interactions using PAPA\n\nBased on the above results, we reasoned that PAPA could be used to detect interaction of two different proteins labeled with SNAPf-JFX650 and Halo-JF549. As a test case, we monitored the rapamycin-inducible interaction of the proteins FRB and FKBP. U2OS cells expressing Halo-FRB and SNAPf-FKBP were labeled with JF549-HTL and JFX650-STL and imaged with alternating green and violet photostimulation as described above (Figure 3a, Figure 3\u2014figure supplement 1a). Addition of rapamycin caused a dramatic increase in the ratio of PAPA (green reactivation) to DR (violet reactivation), consistent with ligand-induced dimerization of Halo-FRB and SNAPf-FKBP bringing together JF549 and JFX650 (Figure 3b and c, Figure 3\u2014figure supplement 1b, Figure 3\u2014video 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig3-v3.jpg)\n\n**Figure 3.:** (a) Halo-FRB was labeled with the sender fluorophore (JF549) and SNAPf-FKBP with the receiver fluorophore (JFX650). After shelving JFX650 with red light, direct reactivation (DR) and PAPA were alternately induced with pulses of violet and green light, respectively. Midway through the experiment, cells were treated with rapamycin (1 \u00b5M final concentration) to induce FRB-FKBP dimerization or with dimethylsulfoxide (DMSO) solvent as a negative control. (b) Ratio of fluorescence increase due to PAPA (green reactivation) and DR (violet reactivation) as a function of time after rapamycin addition. Blue, rapamycin. Brown, DMSO solvent-only control. Individual data points represent single cells; solid lines show a 2-min moving average. (c) Average PAPA/DR ratio before (-) and after (+) addition of rapamycin (Rapa) or DMSO. Total number of cells: 75 before and 74 after rapamycin, 30 before and 30 after DMSO. Error bars, \u00b1 2 * SEM. Statistical significance was calculated using a two-tailed t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Fluorescence image of an SDS-PAGE gel of lysates from a clonal stable U2OS cell line expressing FKBP-SNAPf and FRB-Halo. Amount of lysate loaded in each lane corresponds to approximately 60,000 cells labeled with either JFX650-STL or JFX650-HTL. \u25ca, unbound dye. (b) Total fluorescence of the JFX650 receiver fluorophore as a function of frame number when illuminated with red light alternating with pulses of violet light to induce direct reactivation (DR) and green light to induce PAPA (vertical lines with lightning bolts). The top panel shows the average of cells imaged prior to rapamycin addition (1 \u00b5M final concentration; n = 9), and the bottom panel shows the average of cells imaged between 5 and 15 min after rapamycin addition (n = 15). Fluorescence decreased initially due to bleaching and shelving of JFX650 and recovered upon fluorophore reactivation by green and violet light pulses. PAPA (green reactivation) was low prior to rapamycin addition (top panel) and increased following rapamycin addition (bottom panel). DR (violet reactivation) was observed both before and after rapamycin addition. AU, arbitrary units. Intensity traces are displayed without background subtraction.\n\n### PAPA optically enriches a subset of molecules in defined two-component mixtures\n\nWe next asked whether PAPA can be used to spotlight a subpopulation of receiver molecules close to sender molecules. As a simple test case, we analyzed defined mixtures of two proteins\u2014one labeled with JFX650 only, and a second labeled with both JFX650 and JF549\u2014and investigated whether PAPA could optically enrich the double-labeled component to distinguish its properties in single-molecule imaging.\n\nFirst, we co-expressed SNAPf-tagged histone H2B (SNAPf-H2B), which is predominantly chromatin-bound, along with a Halo-SNAPf fusion with a nuclear localization sequence (Halo-SNAPf-3xNLS), which is mostly unbound (Figure 4a; Hansen et al., 2018; Heckert et al., 2022). Cells were incubated with JFX650-STL and JF549-HTL to label Halo-SNAPf-3xNLS with both JFX650 and JF549 and SNAPf-H2B with JFX650 alone (Figure 4a, Figure 4\u2014figure supplement 1a). JFX650 fluorophores were thoroughly photobleached/shelved using a 10 s pulse of intense red light, after which JFX650 was imaged with red light interspersed with pulses of green and violet light. After localizing and tracking single molecules, we separated trajectories occurring after a green pulse (PAPA trajectories) from those occurring after a violet pulse (DR trajectories) and applied a recently developed Bayesian state array SPT (saSPT) algorithm (Heckert et al., 2022) to infer the underlying distribution of diffusion coefficients for each set of trajectories (its \u2018diffusion spectrum\u2019 for short). As predicted, diffusion spectra revealed two peaks, one corresponding to bound molecules (D = 0.01 \u00b5m2/s, the minimum value in the state array), and one corresponding to freely diffusing molecules (D = 8.3 \u00b5m2/s). PAPA trajectories were enriched for freely diffusing molecules compared to DR trajectories, as expected if PAPA selectively reactivates JF549/JFX650 double-labeled Halo-SNAPf-3xNLS molecules (Figure 4b). Next, PAPA and DR trajectories from individual cells were reanalyzed using a two-state model with bound (D = 0.01 \u00b5m2/s) and free (D = 8.3 \u00b5m2/s) states. Consistent with the ensemble analysis, PAPA trajectories had a lower bound fraction than DR trajectories in every cell (Figure 4c). The same trend is apparent from comparison of particle displacement histograms and raw trajectories (Figure 4\u2014figure supplement 2a, b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig4-v3.jpg)\n\n**Figure 4.:** (a) Left column (a, d, g, j): schematic of different defined mixtures of two labeled proteins, in which one protein is labeled with JFX650 only and the other is labeled with both JFX650 and JF549. In (g) and (j), each subunit of the 60-mer is fused to SNAPf or Halo-SNAPf, though only one label is displayed for clarity. (b) Center column (b, e, h, k): inferred diffusion spectra of PAPA (green-reactivated) and direct reactivation (DR) (violet-reactivated) trajectories pooled from 20 cells (b, e, k) or 10 cells (h). (c) Right column: fraction bound (c, f) or fraction slow-diffusing (i, l) of PAPA and DR trajectories from individual cells, obtained from fits to a two-state model (c, f) or three-state model (i, l). Paired, two-tailed t-tests of the comparisons in (c), (f), (i), and (l) showed all differences to be statistically significant with p=9 \u00d7 10\u20139, 8 \u00d7 10\u20138, 1 \u00d7 10\u20135, and 4 \u00d7 10\u201311, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a, b) Fluorescent SDS-PAGE gels of lysates from stable U2OS cell lines expressing defined two-component mixtures (1\u20134) and one-component controls (5 and 6). Cells were labeled with either JFX650-STL (S) or JFX650-HTL (H) prior to lysis, and each lane was loaded with a volume of lysate corresponding to approximately 60,000 cells. Associated figure panels are listed for each construct. \u25ca, unbound dye.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a, c, e, g) Left panel: schematic of construct tested. Right panel: a random subset of PAPA (green) and direct reactivation (DR) (violet) trajectories from an individual cell. Trajectory centroids are aligned to a grid for visualization, and trajectories are displayed in order of increasing average displacement per step. Black scale bar, 1 \u00b5m. (b, d, f, h) Histograms of single-frame displacements for single-particle trajectories from all cells. Green, PAPA trajectories. Violet, DR trajectories. The sharp drop in frequency near 1 \u00b5m is due to the maximum displacement cutoff used in the particle tracking algorithm.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Individual Halo-SNAPf fusion proteins were labeled with a mixture of JF549-HTL and JFX650-STL, imaged with alternating green and violet photostimulation pulses, and analyzed as in Figure 4. (a\u2013c) Halo-SNAPf-3xNLS. (d\u2013f) Halo-SNAPf-H2B. (g\u2013i) Halo-SNAPf-60-mer. Note that all 60 subunits are fused to Halo-SNAPf, but only a single label is shown for clarity. (j\u2013l) cytoplasmic Halo-SNAPf. (b, e, h, k) Inferred diffusion spectra of PAPA (green-reactivated) and direct reactivation (DR) (violet-reactivated) trajectories pooled from 10 cells. (c, f, i, l) Fraction bound (c, f) or slow-diffusing (i, l) among PAPA and DR trajectories from individual cells, obtained from fits to a two-state (c, f) or three-state (i, l) model. p-Values calculated using a two-sided paired t-test were 0.58 (c), 0.017 (f), 0.071 (i), and 0.77 (l).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Diffusion spectra for proximity-assisted photoactivation (PAPA) and direct reactivation (DR) were modeled as a linear combination of diffusion spectra of the corresponding single components, $P_{model}(D)=p_{1}P_{1}D+(1-p_{1})P_{2}(D)$, where p1 is the proportion of component 1 and 1 - p1 is the proportion of component 2.The MATLAB fminsearch function was used to identify the value of p1 that minimized the Kullback\u2013Leibler divergence between the observed diffusion spectrum, $P_{obs}(D)$, and the model: $P_{KL}(P_{obs}(D)||P_{model}(D))=$$\\sumDP_{obs}(D)log\u2061\\frac{P_{obs}(D)}{P_{model}(D)}=$$\\sumDP_{obs}(D)log\u2061\\frac{P_{obs}(D)}{p_{1}P_{1}(D)+(1\u2212p_{1})P_{2}(D)}$ (a) Diffusion spectra of Halo-SNAPf-3xNLS + H2B-SNAPf (Figure 4b) modeled as a linear combination of DR diffusion spectra of Halo-SNAPf-3xNLS and H2B-Halo-SNAPf (violet curves in Figure 4\u2014figure supplement 3b and e). (b) SNAPf-3xNLS + H2B-Halo-SNAPf (Figure 4e) modeled as a combination of SNAPf-3xNLS (inset, black curve) and H2B-Halo-SNAPf (violet curve in Figure 4\u2014figure supplement 3b). (c) SNAPf-60mer + cytoplasmic Halo-SNAPf (Figure 4h) modeled as a combination of Halo-SNAPf-60mer and cytoplasmic Halo-SNAPf (violet curves in Figure 4\u2014figure supplement 3h and k). (d) Halo-SNAPf-60mer + cytoplasmic SNAPf (Figure 4k) modeled as a combination of Halo-SNAPf-60mer and cytoplasmic Halo-SNAPf (violet curves in Figure 4\u2014figure supplement 3h and k).\n\nTo exclude the possibility that enrichment of unbound molecules arose from a systematic bias in our method, we repeated the experiment with the reciprocal mixture of Halo-SNAPf-H2B and SNAPf-3xNLS (Figure 4d). As expected, the opposite trend was observed: PAPA trajectories were enriched in bound molecules compared to DR trajectories, both across an ensemble of cells and at the single-cell level (Figure 4e and f, Figure 4\u2014figure supplement 2c and d). As a further control, we analyzed cells expressing JF549-HTL/JFX650-STL double-labeled Halo-SNAPf-3xNLS or Halo-SNAPf-H2B alone. As expected, PAPA and DR trajectories displayed virtually identical diffusion spectra for these individual components (Figure 4\u2014figure supplement 3a\u2013f).\n\nTo test whether PAPA can also distinguish a mixture of diffusing components, we co-expressed fast-diffusing cytosolic Halo-SNAPf with a SNAPf-tagged synthetic protein that forms large, slowly diffusing 60-mers (Hsia et al., 2016; Figure 4g). As expected, diffusion spectra had two peaks corresponding to slow-diffusing (SNAPf-60-mer) and fast-diffusing (Halo-SNAPf) components (Figure 4h). Compared to DR trajectories (violet curve), PAPA trajectories (green curve) were strongly enriched in the fast-diffusing subpopulation, consistent with selective reactivation of the double-labeled Halo-SNAPf protein by green light (Figure 4h). The same trend was observed in single-cell reanalysis, displacement histograms, and raw trajectories (Figure 4i, Figure 4\u2014figure supplement 2e and f). The enrichment of the fast-diffusing population was not absolute as a slow-diffusing shoulder peak was still observed among PAPA trajectories (Figure 4h, green curve; see \u2018Discussion\u2019). As before, swapping SNAPf and Halo-SNAPf labels yielded the opposite trend, both at the ensemble and single-cell level (Figure 4j\u2013l, Figure 4\u2014figure supplement 2g and h, Figure 4\u2014video 1). Enrichment of the 60-mer peak by PAPA is especially pronounced in this case (compare green and violet curves in Figure 4k), which may reflect reactivation of a receiver molecule by any of several neighboring sender molecules within a 60-mer.\n\nTo estimate the fold enrichment of double-labeled molecules by PAPA, the curves shown in Figure 4 were fitted to a linear combination of the distributions for individual components. For Halo-SNAPf-3xNLS + SNAPf-H2B, the best fit was obtained for DR trajectories with a mixture of 53% Halo-SNAPf-3xNLS and 47% SNAPf-H2B, while the best fit for PAPA trajectories was obtained with 91% Halo-SNAPf-3xNLS and 9% SNAPf-H2B (Figure 4\u2014figure supplement 4a). The estimated ratio of Halo-SNAPf-3xNLS to SNAPf-H2B thus increases from 0.53/0.47 \u2248 1.1 among DR trajectories to 0.91/0.09 \u2248 10 among PAPA trajectories, an approximately ninefold enrichment of double-labeled molecules by PAPA. Similar calculations showed that PAPA enriched Halo-SNAPf-H2B over SNAPf-3xNLS by 3.7-fold (Figure 4\u2014figure supplement 4b), Halo-SNAPf over SNAPf-60mer by 7.6-fold (Figure 4\u2014figure supplement 4c), and Halo-SNAPf-60mer over SNAPf by 37-fold (Figure 4\u2014figure supplement 4d).\n\nTaken together, these results demonstrate that PAPA can be used to enrich a subpopulation of molecules in which a receiver fluorophore (e.g., JFX650) is in proximity to a sender fluorophore (e.g., JF549), thereby revealing the distinct properties of this subpopulation at both the ensemble and single-cell level. While this enrichment was substantial\u2014between 3.7- and 37-fold for different defined mixtures\u2014it was not absolute, and thus it is crucial not to misinterpret PAPA trajectories as a pure sample of interacting molecules (see \u2018Discussion\u2019 and Appendix 2).\n\n### Distinguishing the properties of androgen receptor monomers and dimers in single cells\n\nAs a proof-of-concept biological application, we tested whether PAPA could be used to detect ligand-induced self-association of mammalian androgen receptor (AR) and distinguish the properties of AR monomers and dimers/oligomers. First, we stably co-expressed SNAPf and Halo fusions of mouse AR in U2OS cells (which express very little endogenous AR [Dellal et al., 2020]), labeled the two proteins with a mixture of JFX650-STL and JF549-HTL (Figure 5\u2014figure supplement 1a), and measured the PAPA/DR ratio by quantifying changes in JFX650 fluorescence intensity in response to alternating green and violet stimulation as described above. As expected, treatment with the androgen dihydrotestosterone (DHT) led to an increase in the ratio of PAPA to DR over the course of several minutes (Figure 5b, Figure 5\u2014figure supplement 1b), consistent with the two fluorophores being brought together by ligand-induced interaction between SNAPf-mAR and Halo-mAR.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig5-v3.jpg)\n\n**Figure 5.:** (a) Schematic of dihydrotestosterone (DHT)-induced dimerization of JF549-Halo-mAR and JFX650-SNAPf-mAR. (b) PAPA/direct reactivation (DR) ratio as a function of time relative DHT addition. (c) Diffusion spectra of PAPA and DR trajectories. (c) Before addition of DHT; N = 55 cells. (d) After addition of DHT to a final concentration of 10 nM; N = 81 cells. Fraction bound was quantified by summing the portion of each curve below D = 0.15 \u00b5m2/s (vertical dashed line).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Fluorescent SDS-PAGE gel of lysates from a clonal stable U2OS cell line expressing SNAPf-mAR and Halo-mAR. Cells were stained with JFX650-STL or JFX650-HTL, and a volume of lysate corresponding to 60,000 cells was loaded per lane. MW, molecular weight in kilodaltons. (b) Ensemble PAPA analysis (see Figure 3\u2014figure supplement 1b legend) of interaction between SNAPf-mAR and Halo-mAR. PAPA signal (green reactivation) increased after addition of dihydrotestosterone (DHT) to a final concentration of 10 nM. Intensity traces are displayed without background subtraction. (c) Fraction bound as a function of time relative DHT addition (vertical dashed line) for PAPA trajectories (green) and direct reactivation (DR) trajectories (violet), based on fits to a two-state model. Each data point corresponds to PAPA or DR trajectories from a single cell. Solid lines show moving averages over 10-min intervals.\n\nNext, we combined PAPA with single-molecule imaging to assess how self-association influences diffusion and chromatin binding by AR. Consistent with previous biochemical and live-cell imaging experiments, addition of DHT caused an increase in the overall bound fraction of AR (Figure 5c and d; Schaufele et al., 2005; van Royen et al., 2007; van Royen et al., 2012). Strikingly, PAPA trajectories had a higher bound fraction than DR trajectories, both before and after addition of DHT (Figure 5c, d). This is consistent with an increase in the affinity of AR for specific DNA sequence motifs upon self-association. Moreover, PAPA revealed that a subset of AR molecules self-associated and bound chromatin with elevated affinity even prior to addition of exogenous androgen. Thus, PAPA can be applied to monitor regulation of a biologically important protein\u2013protein interaction in live cells, discern its effect on chromatin binding, and reveal the existence of molecular subpopulations.\n\n## Discussion\n\nHere, we have described a novel and useful property of rhodamine dyes, PAPA, in which excitation of a \u2018sender\u2019 fluorophore (e.g., JF549) reactivates a nearby \u2018receiver\u2019 fluorophore (e.g., JFX650) from a dark state. By enabling targeted reactivation of receiver fluorophores near a sender fluorophore, PAPA provides a new way to detect molecular interactions in live cells (Figure 6): First, Halo-tagged proteins are labeled with the sender fluorophore and SNAPf-tagged proteins with the receiver fluorophore. Second, cells are illuminated with intense red light to shelve receiver fluorophores in the dark state. Third, alternating pulses of green and violet light are applied to reactivate receiver fluorophores by PAPA and DR, respectively, and these reactivated fluorophores are imaged using red illumination. The ratio of green to violet reactivation provides a measure of protein\u2013protein interaction, while analysis of green-reactivated and violet-reactivated single-particle trajectories makes it possible to compare the overall population of receiver-labeled molecules (violet; DR) to a subpopulation enriched for double-labeled complexes (green; PAPA).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76870/elife-76870-fig6-v3.jpg)\n\n**Figure 6.:** (1) Label a SNAPf-tagged Target protein with a receiver fluorophore (e.g., JFX650) and a Halo-tagged Partner protein with a sender fluorophore (e.g., JF549). (2) Shelve the receiver fluorophore in the dark state using intense 639 nm illumination. Image receiver molecules with 639 nm light while alternately illuminating with (3) pulses of 561 nm light to induce PAPA of receiver-labeled Target molecules in complex with sender-labeled Partner molecules, and (4) pulses of 405 nm light to induce direct reactivation (DR) of receiver fluorophores, independent of proximity to the sender.\n\nWhile the physical mechanism underlying PAPA remains unclear, its more flexible distance dependence than either FRET (Figure 2) or cyanine dye photoswitching (Bates et al., 2005) suggests a distinct process. One speculative hypothesis is that the excited sender reacts with some other molecule in the cell, producing a short-lived chemical species that diffuses a limited distance to react with and reactivate the receiver dark state. However, we cannot exclude an alternative model proposed by Gidi and colleagues for cyanine dye pairs, in which the absorbance spectrum of the receiver dark state has a broad tail toward longer wavelengths, allowing the sender to serve as an \u2018antenna\u2019 that facilitates receiver reactivation via some form of energy transfer (Gidi et al., 2020). Even if such a process had a low quantum yield, the all-or-nothing property of reactivation might make it observable experimentally. PAPA can complement other techniques for monitoring molecular interactions. Although smFRET is useful for measuring distances between fluorophores in vitro, PAPA provides multiple advantages for live-cell imaging: first, PAPA circumvents the trade-off between labeling density and spectral crosstalk inherent in smFRET (see Appendix 1). It is impractical to detect molecular interactions in cells by sparsely labeling both the FRET donor and acceptor, as double-labeled complexes will be vanishingly rare. Attempting to solve this problem by densely labeling either the donor or the acceptor creates the new problem of fluorescence bleed-through from the densely labeled channel, which may be orders of magnitude brighter than signal from the sparsely labeled channel. In PAPA, sender and receiver excitation occur at different times, eliminating fluorescence bleed-through from the sender into the receiver channel. Hence, one interacting partner can be sparsely labeled with the receiver and the other densely labeled with the sender, permitting efficient detection of double-labeled complexes. Second, PAPA has a conveniently longer working distance than FRET (Figure 2), which might be extended further by elongating the linkers between Halo/SNAPf and the protein of interest. Because photoactivation is an all-or-nothing event, a signal can in principle be detected if even a fraction of linker conformations orients the dyes close enough together for PAPA to occur. Unlike single-molecule BiFC, PAPA does not perturb binding equilibria, making it possible to use PAPA to study transient, reversible interactions.\n\nAlthough PAPA significantly enriches for complexes double-labeled with sender and receiver, its selectivity is not perfect (see Appendix 2). A background level of PAPA was still observed when Halo and SNAPf were separated by a self-cleaving peptide tag (Figures 1c and 2a and b), and this cannot be explained either by incomplete cleavage (Figure 2\u2014figure supplement 1c and d) or by direct reactivation of JFX650 by 561 nm light (Figure 1a, Figure 1\u2014figure supplement 2d). Moreover, some \u2018contamination\u2019 of PAPA trajectories with single-labeled molecules was evident in experiments with defined two-component mixtures (e.g., slower-diffusing peak in green curve of Figure 4h). When interpreting PAPA-SPT experiments, it is thus critical to keep in mind that green-reactivated trajectories, although enriched for sender\u2013receiver complexes, will inevitably be contaminated by some level of nonspecific background (see Appendix 2). PAPA provides enrichment\u2014not purification\u2014of double-labeled complexes.\n\nNonspecific background in PAPA-SPT experiments could arise from multiple sources (see Appendix 2): first, even molecules that are not physically associated come into proximity by chance at some rate. Indeed, when JFX650-labeled cells were bathed in high concentrations of free JF549 dye, reactivation by green light occurred in proportion to the JF549 concentration (Appendix 2\u2014figure 1). Nonspecific background is thus expected to be greater when sender-labeled proteins are expressed at high levels. Second, dark-state fluorophores spontaneously reactivate at a low basal rate even without photostimulation (Grimm et al., 2015; Tang et al., 2021). Third, although we chose a time interval between green and violet pulses sufficient to bleach or re-shelve most reactivated fluorophores, it is possible that a small fraction of fluorophores reactivated by a violet pulse survived until the subsequent green pulse. Modeling of these different background contributions will be required to quantify more precisely the characteristics of interacting and noninteracting molecular subpopulations.\n\nNotwithstanding these technical imperfections, PAPA has the potential to open new experimental routes toward understanding the dynamics of protein complexes in live cells. Our results show that PAPA can be used to detect potentially transient protein\u2013protein interactions (Figure 3, Figure 3\u2014figure supplement 1) and to infer the composition of different peaks in single-molecule diffusion spectra (Figure 4, Figure 4\u2014figure supplement 2). A proof-of-concept application to mammalian AR revealed at a single-cell level the relationship between AR self-association and chromatin binding (Figure 5, Figure 5\u2014figure supplement 1). Future applications of PAPA could include measuring differences in the chromatin residence time of different transcriptional subcomplexes, detecting transient interactions mediated by low-complexity domains, or assessing the consequences of posttranslational modifications such as SUMOylation. In principle, a \u2018pulse-chase\u2019 PAPA experiment could be used to measure dissociation and binding kinetics of molecular complexes in live cells by monitoring how the diffusion spectrum of reactivated molecules changes as a function of time after the reactivation pulse. Although this study involved labeled proteins, PAPA could potentially be used to detect interactions between other biomolecules as well. By revealing the distinct features of specific molecular complexes, PAPA will provide a powerful new tool to probe biochemical mechanisms in live cells.\n\n## Methods\n\n### Cell culture\n\nU2OS cells were grown in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) with 4.5 g/l glucose (Thermo Fisher #10566016), 10% fetal bovine serum (FBS), and 100 U/ml penicillin-streptomycin (Thermo Fisher #15140122) at 37\u00b0C and 5% CO2. Phenol red-containing medium was used for propagation of cells, while phenol red-free medium (Thermo Fisher #21063029) was used to minimize fluorescence background in imaging experiments.\n\n### Cloning\n\nIg linkers were subcloned from a previously described plasmid containing repeats of the titin I91 Ig domain, which were codon-shuffled to prevent recombination (Scholl et al., 2016). The various Halo and SNAPf fusion constructs described in this article were generated by PCR and isothermal assembly, and all constructs were completely sequenced before use. Two-component expression plasmids included a codon-shuffled SNAPf-3xNLS-T2A-P2A cassette that was ordered as a gBlock from Integrated DNA Technologies (IDT). All plasmid sequences are available at https://gitlab.com/tgwgraham/papa_paper_plasmids, copy archived at swh:1:rev:984803582c0023a9fe975ec6d41be3d723c2737b; Graham, 2022a.\n\n### Stable transformation of cells and selection of clonal lines\n\nTo generate stable lines by PiggyBac integration, U2OS cells from a confluent 10 cm plate were trypsinized, resuspended in DMEM, and divided between two 15 ml conical tubes. Cells were centrifuged for 2 min at 200 \u00d7 g, and the medium was aspirated and replaced with 100 \u00b5l of Lonza Kit V transfection reagent (82 \u00b5l of Kit V solution and 18 \u00b5l of Supplement I; Cat# VCA-1003) containing 1 \u00b5g of the donor plasmid and 1 \u00b5g of Super PiggyBac transposase plasmid. The cell suspension was transferred to an electroporation cuvette and electroporated using program X-001 on an Amaxa Nucleofector II (Lonza). Cells in the cuvette were mixed with 300 \u00b5l of DMEM, and 100 \u00b5l of the cell suspension was diluted in 10 ml of DMEM in a 10 cm plate. After allowing cells to grow for 1\u20132 days, selection was initiated by adding puromycin to a final concentration of 1 \u00b5g/ml.\n\nTo generate clonal cell lines of Halo-mAR + SNAPf-mAR and FKBP-SNAPf-3xNLS + FRB-Halo-3xNLS, a polyclonal pool of stably transfected cells from a 10 cm plate was labeled with a mixture of 50 nM JF549 SNAP tag ligand and 50 nM JFX650 HaloTag ligand, and FACS was used to sort single cells expressing both proteins into separate wells of a 96-well plate. For pTG800 (3xFlag-Halo-SNAPf-3xNLS-T2A-P2A-H2B-SNAPf-3xNLS), single-cell clones were obtained by limiting dilution into 96-well plates. Polyclonal pools of stably transfected cells were used for the other two-component and one-component experiments in Figure 4 and Figure 4\u2014figure supplements 1\u20134.\n\nFor the experiments in Figure 2 and Figure 2\u2014figure supplement 1, FACS was used to obtain polyclonal pools of U2OS cells expressing a low level of each Halo-linker-SNAPf construct. Confluent 10 cm plates of cells were stained with 50 nM each of JF549-STL and JFX650-HTL, and cells were sorted using the same intensity gate in the JFX650-Halo channel. Cells expressing pTG820 (Halo-3x Ig-SNAPf) and pTG828 (Halo-5x Ig-SNAPf) were sorted on a different day using the intensity of the previously sorted pTG747/U2OS pool to define a gate in the JFX650-Halo channel.\n\n### Visualization of fluorescently labeled proteins by SDS-PAGE\n\nCells in either 10 cm plates or 6-well plates were labeled with 500 nM of the indicated HTL or STL ligand for 1 hr at 37\u00b0C, washed twice with 1\u00d7 PBS, trypsinized, and resuspended in DMEM. Cells were counted using a Countess 3 FL cell counter (Invitrogen), pelleted by centrifugation for 2 min at 200 \u00d7 g, and frozen at \u201380\u00b0C. Lysates were prepared by addition of 1 ml (for 10 cm plates) or 200 \u00b5l (for 6-well plates) of SDS lysis buffer without dye (Cattoglio et al., 2019). Each lysate was passed through a 26-gauge needle 10 times to reduce its viscosity.\n\nCustom 8-well, 1.5 mm combs for SDS-PAGE were 3D-printed using an AnyCubic Photon 3D printer (model files available at https://gitlab.com/tgwgraham/gel-combs; copy archived at swh:1:rev:7d5a083eec963534c1bf54632e5e3fb7606e5518; Graham, 2022b). For the gels in Figure 2\u2014figure supplement 1c and d, samples of cell lysate corresponding to 100,000 cells were separated on a 10% SDS-PAGE gel, which was imaged on a Pharos FX imager (Bio-Rad) using the \u2018low-intensity\u2019 setting in the Cy3 channel. Cell lysate corresponding to 60,000 cells was loaded per lane of the gels in Figure 3\u2014figure supplement 1, Figure 4\u2014figure supplement 1, and Figure 5\u2014figure supplement 1. The gel in Figure 4\u2014figure supplement 1a was imaged on a Pharos FX imager (Bio-Rad) using the \u2018low-intensity\u2019 setting in the Cy5 channel. The gels in Figure 3\u2014figure supplement 1a, Figure 4\u2014figure supplement 1b, and Figure 5\u2014figure supplement 1a were imaged in the 700 nm channel on an Odyssey imager (LI-COR) at 169 \u00b5m resolution with the \u2018medium\u2019 quality setting and a z-offset of 0.5 mm. Precision Plus Protein All Blue Prestained Protein Standards (Bio-Rad #1610373) were used as molecular weight standards for all gels.\n\n### Live-cell single-molecule imaging\n\nOne day prior to imaging, 25 mm No. 1.5H glass coverslips (Marienfeld, #0117650) were immersed in isopropanol, transferred with forceps to 6-well plates, and aspirated thoroughly to remove all traces of isopropanol. Cells were trypsinized, counted using a Countess 3 FL cell counter (Invitrogen), centrifuged for 2 min at 200 \u00d7 g, resuspended in phenol red-free DMEM, and plated at a density of 5 \u00d7 105 cells per well. Just prior to imaging, cells were incubated with Janelia Fluor HaloTag and SNAP tag ligands in phenol red-free DMEM for 15 min at 37\u00b0C, washed twice with 1\u00d7 phosphate-buffered saline, and destained for at least 15 min in phenol red-free DMEM. The following dye concentrations were used for staining:\n\nCoverslips were mounted in a stainless steel Attofluor Cell Chamber (Thermo Fisher #A7816) and covered with 1 ml of phenol red-free DMEM with 10% FBS and penicillin/streptomycin. Cells were imaged using HILO illumination on the microscope described in detail in Hansen et al., 2018. Laser power densities used for imaging were approximately 52 W/cm2 for 405 nm (violet), 100 W/cm2 for 561 nm (green), and 2.3 kW/cm2 for 639 nm (red). Fluorescence emission was filtered through a Semrock 676/37 bandpass filter.\n\nFor the experiments in Appendix 1\u2014figure 1, a Di02-R635 dichroic (Semrock) was used to separate JF549 and JFX650 emission, which were filtered through 593/40 and 676/37 bandpass filters, respectively, and imaged on separate cameras.\n\nCells were imaged at a rate of 7.48 ms/frame. Different experiments employed variations of an illumination sequence with alternating pulses of 639 nm red (R), 561 nm green (G), and 405 nm violet (V) light synchronized to the camera. We use these abbreviations below and indicate the duration of the light pulse in brackets. For instance, \u2018250 R [2 ms]\u2019 denotes 250 frames with a 2 ms pulse of red 639 nm illumination per frame. Red illumination was restricted to one 2 ms stroboscopic pulse per frame in single-molecule tracking to reduce the motion blur of moving molecules (Hansen et al., 2018). The green and violet pulse durations were adjusted in different experiments to maintain a trackable density of localizations after each pulse.\n\n### Analysis of ensemble PAPA experiments\n\nFor ensemble PAPA experiments (Figure 1c, Figure 2a and b, Figure 3b and c, Figure 5b, Figure 1\u2014figure supplements 1\u20132, Figure 3\u2014figure supplement 1b, Figure 5\u2014figure supplement 1b, and Appendix 2\u2014figure 1), custom MATLAB code was used to sum the total intensity of all pixels in the field of view at each frame. Frame-by-frame intensity across multiple movies was averaged to obtain \u2018sawtooth\u2019 plots of intensity vs. frame number (Figure 1c and Figure 1\u2014figure supplement 1a,c,and d, Figure 1\u2014figure supplement 2, Figure 3\u2014figure supplement 1b, and Figure 5\u2014figure supplement 1b). The PAPA/DR ratio was calculated for Figure 2a and b, Figure 3b and c, Figure 5b, and Appendix 2\u2014figure 1 by dividing the mean increase in fluorescence intensity induced by green and violet pulses. For Figure 2a and b, which used an illumination sequence with fewer frames per cycle, the initial green and violet pulse were omitted from the averages to avoid the transient photobleaching/shelving phase at the beginning of each movie.\n\n### Bulk measurement of reactivation kinetics\n\nTo measure direct reactivation of JFX650-SNAPf as a function of 405 nm illumination time (Figure 1\u2014figure supplement 1b), cells expressing Halo-SNAPf-3xNLS (pTG747) were stained with 5 nM JFX650 STL and 50 nM JF549 HTL and imaged at 7.48 ms/frame using a five-phase protocol: (1) 20 frames with 1 ms pulses of 639 nm (intensity measurement before bleaching/shelving), (2) 400 frames with 7 ms pulses of 639 nm (bleaching/shelving), (3) 20 frames with 1 ms pulses of 639 nm (intensity measurement after bleaching/shelving), (4) N frames with 7 ms pulses of 405 nm (reactivation), and (5) 20 frames with 1 ms pulses of 639 nm (intensity measurement after reactivation). The total pixel intensity was summed for all 20 frames in phases (1), (3), and (5), and the fractional reactivation was calculated by subtracting the increase in signal between (3) and (5) by the initial drop in signal between (1) and (3). The number of violet frames in phase 4, N, was varied as indicated by the values on the horizontal axis of Figure 1\u2014figure supplement 1b. The data were fitted to a single-exponential model.\n\n### Single-molecule measurement of reactivation\n\nTo monitor reactivation of single immobilized JFX650 fluorophores, U2OS cells expressing H2B-Halo-SNAPf were labeled for 15 min with 50 pM of JFX650 STL, either with or without 50 nM JF549 HTL. Cells were imaged at 7.48 ms/frame with five cycles of 100 frames of 639 nm illumination, 10 frames of either 561 nm or 405 nm illumination, and another 100 frames of 639 nm illumination. Individual, well-separated JFX650 fluorophores (\u22658 pixels apart) were identified in the first frame of each movie, and each fluorophore was scored as fluorescent in subsequent frames if a localization was detected within 4 pixels of its initial position.\n\n### FLIM-FRET\n\nFluorescence lifetime was measured on a Zeiss LSM 980 confocal microscope equipped with a Becker & Hickl SPC-150NX TCSPC module. Cells were labeled with a mixture of 50 nM JFX650-HTL and 50 nM JF549-STL for 1 hr at 37\u00b0C, or with 50 nM JF549-STL alone as a no-FRET control. After briefly washing twice with 1\u00d7 PBS, cells were destained for at least 15 min prior to imaging. JF549 was excited using a 562 nm laser, and fluorescence emission was filtered through a Semrock 593/40 bandpass filter. Signal was acquired for 10 s over a 256 \u00d7 256 px region centered on each cell nucleus. Raw data were imported into SPCImage (Becker & Hickl) and fitted to a single-exponential model without binning pixels. Decay constants and total fluorescence intensities for each pixel were exported in .csv format. Custom MATLAB code was used to define nuclear masks by intensity thresholding and determine the mean fluorescence lifetime within the nucleus. FRET efficiency was calculated using the formula EFRET = 1 \u2013 \u03c4/\u03c40, where \u03c4 is the fluorescence lifetime of the sample and \u03c40 is the fluorescence lifetime of cells stained with JF549-STL donor only.\n\n### Measuring mutual \u2018occlusion\u2019 of PAPA and DR\n\nTo measure whether PAPA precludes DR and vice versa (Figure 1\u2014figure supplement 1c and d), we first labeled cells expressing Halo-SNAPf-3xNLS (pTG747) with 5 nM JFX650 STL and 50 nM JF549. We then imaged at 7.48 ms/frame in three phases: (1) 500 frames of 639 nm light (7 ms pulses), alternating with unrecorded frames with either no illumination (black curves) or 7 ms pulses of 405 nm (violet curves) or 561 nm (green curves) illumination; (2) 20 frames with 7 ms pulses of 405 nm light (Figure 1\u2014figure supplement 1c) or 561 nm light (Figure 1\u2014figure supplement 1d); and (3) 100 frames of 639 nm light (7 ms pulses). Fluorescence intensity traces were prepared as described in \u2018Analysis of ensemble PAPA experiments\u2018 above.\n\n### Analysis of SPT data\n\nParticles were localized and tracked using the quot package (https://github.com/alecheckert/quot; Heckert, 2022) with default settings. Custom MATLAB code (https://gitlab.com/tgwgraham/papacode_v1; Graham, 2022c) was used to extract all trajectory segments occurring within the first 30 frames after pulses of 405 nm light (DR trajectories) and 561 nm light (PAPA trajectories). PAPA and DR trajectories were then separately analyzed using a Bayesian \u2018fixed-state sampler\u2019 algorithm (https://github.com/alecheckert/spagl; Heckert et al., 2022), which estimates the posterior probability distribution over a fixed array of diffusion coefficients. To allow a side-by-side comparison of the distributions for PAPA and DR trajectories, the same number of trajectories was included in the analysis for each. To this end, trajectories were randomly subsampled without replacement from whichever condition, PAPA or DR, had more trajectories. The fraction bound was calculated in Figure 4c and f and Figure 4\u2014figure supplement 3c and f by reanalyzing the data using a reduced two-state model with diffusion coefficients 0.01 and 8.3 \u00b5m2/s. The fraction slow-diffusing was calculated in Figure 4i and l and Figure 4\u2014figure supplement 3i by fitting to a three-state model with diffusion coefficients 0.01, 2.1, and 13.2 \u00b5m2/s (Figure 4i) or 0.01, 1.3, and 15.8 \u00b5m2/s (Figure 4l, Figure 4\u2014figure supplement 3i). Fraction bound for androgen receptor (Figure 5\u2014figure supplement 1c) was calculated by fitting to a two-state model with diffusion coefficients 0.01 and 4.4 \u00b5m2/s. Diffusion coefficients used in the reduced models correspond to the local maxima of the ensemble distributions (Figures 4b, e, h, k, 5c and d). Displacement histograms in Figure 4\u2014figure supplement 2b,d,f,and h were tabulated using custom code in MATLAB.\n\nA more streamlined and user-friendly Python module for PAPA-SPT analysis, employing an updated version of the SASPT analysis software, will be maintained at https://gitlab.com/tgwgraham/papacode_v2 (copy archived at swh:1:rev:77dbcca3d4ca2833a5d051d495d52444ba34ac27; Graham, 2022a).\n\n### PyRosetta simulations\n\nInter-fluorophore distances were computed from simulated structural ensembles of each linker construct generated using PyRosetta. Crystal structures of Halo (PDB: 6u32), SNAPf (PDB: 6y8p), and titin Ig (PDB: 1tit) were used to model structured regions. Regions lacking density were filled in using RosettaRemodel, and co-crystalized fluorophores bound to Halo and SNAPf were used to estimate inter-fluorophore distance (Huang et al., 2011). After filling in missing residues, each structure was minimized using the FastRelax protocol, and starting structures were generated by concatenating structured regions using linkers corresponding to those used in experimental constructs. Ensembles were generated using an adapted version of the FastFloppyTail method used for sampling disordered protein regions, in which only residues comprising the inter-domain linkers were allowed to move (Ferrie and Petersson, 2020). The adapted version of the FastFloppyTail algorithm features the addition of the BackrubMover, to allow for motion within a large loop present in SNAPf and facilitate more complete sampling (Smith and Kortemme, 2008). After application of the adapted FastFloppyTail protocol, resultant structures were minimized using FastRelax. Each ensemble consisted of 100 structures from which inter-fluorophore distances were computed. Scripts used to generate these ensembles along with the input structures and resultant ensembles can be found at https://github.com/jferrie3/FusionProteinEnsemble, (copy archived at swh:1:rev:9a8ffe946a20d8efb6c4eb531b22dd96e7431e28; Ferrie, 2022).\n",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "d75b1489-5efa-4749-a101-ad003342ad4d",
+      "submission_id": "7e66b371-50c4-434a-ba4e-a29e544400c2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jie Xiao, https://ror.org/00za53h95 Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76870.sa0](https://doi.org/10.7554/eLife.76870.sa0)\n\nThis work develops a new method to probe protein\u2013protein interactions using proximity-assisted photo activation, in which a receiver fluorophore (longer wavelength) can be photoactivated by the excitation of a nearby sender fluorophore (shorter wavelength). This new method is validated through in-depth characterization, comparison with FRET, and application to known systems of protein\u2013protein interactions. It will expand the tool kit for probing protein\u2013protein interactions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jie Xiao, https://ror.org/00za53h95 Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76870.sa1](https://doi.org/10.7554/eLife.76870.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Proximity-assisted photoactivation (PAPA): Detecting molecular interactions in live-cell single-molecule imaging\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: J. Christof M. Gebhardt (Reviewer #2); Helge Ewers (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please provide a side-by-side comparison of PAPA with smFRET for at least one set of experiments conducted in Figures 3, 4, or 5. For example, will the population percentages or diffusion coefficients (bound vs. unbound) detected using the two methods be the same or different? And why?\n\n2) Please address the issue of how one could distinguish PAPA from DR at the level of single-molecule trajectories instead of relying on the statistics of population measurements or PAPA/RA ratios. This characterization could be done by using in vitro single-molecule imaging where the probability of PAPA and DR on the same molecule could be quantified.\n\n3) Please provide a comparison either experimentally or textually of how PAPA detects protein-protein interactions in comparison with BiFC and other commonly used protein FRET sensors.\n\nReviewer #1 (Recommendations for the authors):\n\nAs the new method, PAPA basically benchmarks smFRET in the detection of molecular interactions in live cells, my comments and questions are mainly related to the advantage of PAPA over smFRET.\n\n1. In the introduction, the authors comment that smFRET has proven technically challenging in cells due to the requirement for sparse double-labeling, the large size of genetically encoded tags relative to the working distance of FRET, and the brief observation time (tens of milliseconds) for fast-diffusing complexes. Regarding the requirement for sparse double-labeling, the authors propose that in PAPA, one interacting partner can be sparsely labeled with the receiver and the other densely labeled with the sender, permitting efficient detection of double-labeled complexes. While such labeling strategy can circumvent the tradeoff between labeling density and spectral crosstalk inherent in smFRET, it would increase the unspecific photoactivation in PAPA.\n\n2. PAPA can operate at a longer average intermolecular distance than FRET (Figure 2). While such property may be used to decrease the potential interference from the fusion tag by elongating the linkers between Halo/SNAPf and the protein of interest, it could increase the unspecific photoactivation in PAPA.\n\n3. Regarding \"the brief observation time (tens of milliseconds) for fast-diffusing complexes\" for smFRET, I think the authors need more characterization to demonstrate the advantage of PAPA in single-molecule measurements. Exploring the capacity of PAPA in detecting single molecules would make this work much more valuable: \"Most proteins function by interacting with other proteins, yet we lack tools to study these potentially transient interactions at single-molecule resolution in live cells.\" Characterization of single-molecule detection may be conducted in vitro. In proof-of-concept experiments, PAPA detected the expected correlation between androgen receptor self-association and chromatin binding at the single-cell level. Single-molecule application could be conducted on nuclear pore complexes.\n\n4. Overall, it is important to perform a direct comparison between PAPA and smFRET in protein-protein interaction measurements, including SMT, sub-population, and interaction dynamics. Actually, as PAPA is based on JF549 and JFX650, this pair of dyes not only be used as \"sender\" fluorophore and \"receiver\" fluorophore in PAPA but also be can be used as donor and receptor in smFRET at the same time. Therefore, besides detecting the ratio of green to violet reactivation, FRET signal could be also measured for experiments in Figures 3, 4, and 5, and such comparison is important for reinforcing the advantage of PAPA over smFRET in detecting dynamic protein-protein interactions in live cells, also essential for comparing unspecific activation in PAPA and crosstalk in smFRET.\n\n5. Regarding the physical mechanism underlying PAPA, the authors propose a hypothesis that the excited sender reacts with some other molecule in the cell, producing a short-lived chemical species that diffuses a limited distance to react with and reactivate the receiver dark state. In Supplementary Figure 9, the authors showed that when JFX650-labeled cells were bathed in high concentrations of free JF549 dye, reactivation by green light occurred in proportion to the JF549 concentration. The activation dependence on the concentration of free senders might support the free radical hypotheses.\n\n6. Lastly, as smBiFC is also an important approach for detecting single-molecule protein-protein interaction in live cells, it is necessary to include a few words in the introduction.\n\nReviewer #2 (Recommendations for the authors):\n\nThis is a valuable new method to assess protein-protein interactions in live cells. The paper is easy to read and experiments are performed and described comprehensively.\n\nMethods based on split labels are able to provide comparable single-molecule insight into protein-protein interactions, for example, published in Makhija et al., ACS Chem. Biol, 2021 (https://doi.org/10.1021/acschembio.0c00925) and in particular Shao et al., Communications Biology, 2021 (https://doi.org/10.1038/s42003-021-01896-7).\n\nPlease compare PAPA to these methods and detail advantages and disadvantages of each method.\n\nReviewer #3 (Recommendations for the authors):\n\nOne straightforward experiment that would greatly improve this manuscript: Create and label transmembrane protein-Halo vs transmembrane protein Halo-SNAPf and then I would like to see dual-color video of the single molecules moving in both channels after DR and PAPA, respectively. And a direct quantification of how many molecules are detected in DR ad PAPA. It is a little strange to see a single molecule fluorescence manuscript without any hint of what the data look like.\n",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e4b97780-4e71-4dba-983a-ef9f24b234ef",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C1",
+      "claim": "Single-molecule imaging provides a powerful way to study biochemical processes in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule imaging provides a powerful way to study biochemical processes in live cells, yet it remains challenging to track single molecules while simultaneously detecting their interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the utility of single-molecule imaging, representing established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "50601ca3-915a-4a17-84f6-073abef39995",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C2",
+      "claim": "It remains challenging to track single molecules while simultaneously detecting their interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule imaging provides a powerful way to study biochemical processes in live cells, yet it remains challenging to track single molecules while simultaneously detecting their interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects a known limitation in the field, based on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "5a70c360-606a-4698-8636-1a53068d78e6",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C3",
+      "claim": "Rhodamine dyes exhibit proximity-assisted photoactivation (PAPA), in which one fluorophore (the 'sender') can reactivate a second fluorophore (the 'receiver') from a dark state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a novel property of rhodamine dyes, proximity-assisted photoactivation (PAPA), in which one fluorophore (the 'sender') can reactivate a second fluorophore (the 'receiver') from a dark state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the manuscript, supported by experimental data presented throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "39d3879c-aa14-4d3a-8eed-6f7f8f460cc1",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C4",
+      "claim": "PAPA requires proximity between the two fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "PAPA requires proximity between the two fluorophores, yet it operates at a longer average intermolecular distance than F\u00f6rster resonance energy transfer (FRET).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from linker constructs and self-cleaving peptide experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "b3996b9e-b4c1-4b8a-82af-eeeb91702c81",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C5",
+      "claim": "PAPA operates at a longer average intermolecular distance than F\u00f6rster resonance energy transfer (FRET).",
+      "claim_type": "EXPLICIT",
+      "source": "PAPA requires proximity between the two fluorophores, yet it operates at a longer average intermolecular distance than F\u00f6rster resonance energy transfer (FRET).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing PAPA and FRET efficiency across different linker lengths in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "d02bf324-295d-4c2a-9b00-db20b005c9f0",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C6",
+      "claim": "PAPA can be used in live cells to detect protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that PAPA can be used in live cells both to detect protein\u2013protein interactions and to highlight a subpopulation of labeled protein complexes in which two different labels are in proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally with the FRB-FKBP rapamycin-inducible interaction system in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "2283ea1c-c067-4b14-a33d-c4f436fcd9c8",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C7",
+      "claim": "PAPA can be used to highlight a subpopulation of labeled protein complexes in which two different labels are in proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that PAPA can be used in live cells both to detect protein\u2013protein interactions and to highlight a subpopulation of labeled protein complexes in which two different labels are in proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated with defined two-component mixtures in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "abecab6a-c6d8-4d45-9dc5-51188a513188",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C8",
+      "claim": "PAPA detected the expected correlation between androgen receptor self-association and chromatin binding at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "In proof-of-concept experiments, PAPA detected the expected correlation between androgen receptor self-association and chromatin binding at the single-cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "c156e69b-bdeb-41e0-931c-5a050c8cec15",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C9",
+      "claim": "Single-particle tracking (SPT) is a valuable approach for monitoring the motions of individual protein molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-particle tracking (SPT) is a valuable approach for monitoring the motions of individual protein molecules (Chen et al., 2021; Hansen et al., 2018; Heckert et al., 2022; Nguyen et al., 2021), but it does not distinguish compositionally and functionally distinct complexes of the same protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "12734088-fd17-438a-95a1-604f0587b423",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C10",
+      "claim": "SPT does not distinguish compositionally and functionally distinct complexes of the same protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-particle tracking (SPT) is a valuable approach for monitoring the motions of individual protein molecules (Chen et al., 2021; Hansen et al., 2018; Heckert et al., 2022; Nguyen et al., 2021), but it does not distinguish compositionally and functionally distinct complexes of the same protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of SPT, based on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "bb8a507c-6c2f-4eef-8729-b4365f3ab407",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C11",
+      "claim": "Two-color SPT can infer interactions between proteins when both partners are so dilute that they can be fully labeled while still resolving single molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-color SPT can infer interactions between proteins when both partners are so dilute that they can be fully labeled while still resolving single molecules (Asher et al., 2021; Sotolongo Bell\u00f3n et al., 2022; Wilmes et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "88eb5c26-75d6-40ef-adc3-6011a4b7d405",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C12",
+      "claim": "For most proteins, detection of single molecules requires sparse labeling, which makes double-labeled complexes exceedingly rare.",
+      "claim_type": "EXPLICIT",
+      "source": "For most proteins, however, detection of single molecules requires sparse labeling, which makes double-labeled complexes exceedingly rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference from the requirements of single-molecule imaging and established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "56455688-5150-44cb-9df6-8da15d07b0f0",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C13",
+      "claim": "Single-molecule FRET is not in general a practical way to detect protein\u2013protein interactions in live cells due to a requirement for sparse double-labeling, challenges with spectral crosstalk, and the large size of genetically encoded tags relative to the working distance of FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule F\u00f6rster resonance energy transfer (smFRET), though powerful for monitoring intra-molecular conformational changes, is not in general a practical way to detect protein\u2013protein interactions in live cells due to a similar requirement for sparse double-labeling, challenges with spectral crosstalk, and the large size of genetically encoded tags relative to the working distance of FRET (see Appendix 1; Quast and Margeat, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation and further elaborated in Appendix 1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "2014c397-856f-418b-a7e6-b551b46953c5",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C14",
+      "claim": "Fluorescence cross-correlation spectroscopy (FCCS) can detect bulk molecular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence cross-correlation spectroscopy (FCCS) can detect bulk molecular interactions, yet it does not provide spatial trajectories for individual molecules, which are useful for measuring such properties as chromatin residence time and anomalous diffusion (Hansen et al., 2020; Hansen et al., 2017; Izeddin et al., 2014; McSwiggen et al., 2019; Nguyen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "8b35649e-8506-4281-8418-2787788ae1ef",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C15",
+      "claim": "FCCS does not provide spatial trajectories for individual molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence cross-correlation spectroscopy (FCCS) can detect bulk molecular interactions, yet it does not provide spatial trajectories for individual molecules, which are useful for measuring such properties as chromatin residence time and anomalous diffusion (Hansen et al., 2020; Hansen et al., 2017; Izeddin et al., 2014; McSwiggen et al., 2019; Nguyen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of FCCS based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "d4f7d6d1-db41-4693-bfc2-42b9ea6834f4",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C16",
+      "claim": "Bimolecular fluorescence complementation (BiFC) detects molecular interactions based on the reconstitution of a fluorescent protein or HaloTag from two split halves fused to interacting partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimolecular fluorescence complementation (BiFC) detects molecular interactions based on the reconstitution of a fluorescent protein or HaloTag from two split halves fused to interacting partners (Ghosh et al., 2000; Hu et al., 2002; Kerppola, 2008; Makhija et al., 2021; Shao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "9332db9a-7890-44ff-a15f-b4bda12c29cc",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C17",
+      "claim": "The extremely strong association of split proteins in BiFC perturbs the binding equilibrium of their interacting partners.",
+      "claim_type": "EXPLICIT",
+      "source": "While BiFC can be combined with single-molecule imaging (Mao et al., 2021; Nickerson et al., 2014; Shao et al., 2021), a drawback of this approach is that the extremely strong association of split proteins perturbs the binding equilibrium of their interacting partners (Kerppola, 2008; Kodama and Hu, 2012; Nickerson et al., 2014), making it impossible to accurately measure dynamic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "990cc8b9-b5ea-47fc-917f-044c37609429",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C18",
+      "claim": "The perturbation of binding equilibrium by BiFC makes it impossible to accurately measure dynamic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While BiFC can be combined with single-molecule imaging (Mao et al., 2021; Nickerson et al., 2014; Shao et al., 2021), a drawback of this approach is that the extremely strong association of split proteins perturbs the binding equilibrium of their interacting partners (Kerppola, 2008; Kodama and Hu, 2012; Nickerson et al., 2014), making it impossible to accurately measure dynamic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited literature about BiFC limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "7c1e34ec-77bd-4ad3-8642-6c50932c049e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C19",
+      "claim": "Exciting one cyanine dye can reactivate a nearby cyanine dye from a dark state.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative in vitro proximity sensor to smFRET was devised by Bates, Blosser, and Zhuang, who observed that exciting one cyanine dye can reactivate a nearby cyanine dye from a dark state (Bates et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "a2e5ff5d-4645-4308-8b61-c243d7747061",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C20",
+      "claim": "Photoswitching of cyanine dye pairs enabled early implementations of STORM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Although photoswitching of cyanine dye pairs enabled early implementations of STORM imaging (Rust et al., 2006), its application as a proximity sensor has been limited by the short inter-fluorophore distance required (\u22642 nm), the poor cell permeability of cyanine dyes, and the need for high thiol concentrations and an oxygen-scavenging system (Chen et al., 2016; Geertsema et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "43f541e3-8ccd-42bc-bb21-a95bbe570727",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C21",
+      "claim": "The application of cyanine dye photoswitching as a proximity sensor has been limited by the short inter-fluorophore distance required (\u22642 nm), the poor cell permeability of cyanine dyes, and the need for high thiol concentrations and an oxygen-scavenging system.",
+      "claim_type": "EXPLICIT",
+      "source": "Although photoswitching of cyanine dye pairs enabled early implementations of STORM imaging (Rust et al., 2006), its application as a proximity sensor has been limited by the short inter-fluorophore distance required (\u22642 nm), the poor cell permeability of cyanine dyes, and the need for high thiol concentrations and an oxygen-scavenging system (Chen et al., 2016; Geertsema et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "bc55968e-46c4-490d-a7ba-980a701c879f",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C22",
+      "claim": "Many fluorophores\u2014notably rhodamine dyes\u2014can enter a dark state and be directly reactivated by short-wavelength (e.g., 405 nm) light.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many fluorophores\u2014notably rhodamine dyes\u2014can enter a dark state and be directly reactivated by short-wavelength (e.g., 405 nm) light (van de Linde et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "7b8037bc-7873-4e2b-a114-d9931de91d63",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C23",
+      "claim": "Direct reactivation of rhodamine dyes has been employed for direct STORM (dSTORM) imaging in both live and fixed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, which has been employed for direct STORM (dSTORM) imaging in both live and fixed cells (Grimm et al., 2015; Heilemann et al., 2008; Tang et al., 2021), is thought to involve conversion of excited triplet-state fluorophores to reduced species whose absorbance is shifted to shorter wavelengths (Bates et al., 2005; Dempsey et al., 2009; Gidi et al., 2020; Heilemann et al., 2008; van de Linde et al., 2011; Vaughan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "31e2029e-2f44-4c6a-b72b-b967fe19b882",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C24",
+      "claim": "Direct reactivation of rhodamine dyes is thought to involve conversion of excited triplet-state fluorophores to reduced species whose absorbance is shifted to shorter wavelengths.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, which has been employed for direct STORM (dSTORM) imaging in both live and fixed cells (Grimm et al., 2015; Heilemann et al., 2008; Tang et al., 2021), is thought to involve conversion of excited triplet-state fluorophores to reduced species whose absorbance is shifted to shorter wavelengths (Bates et al., 2005; Dempsey et al., 2009; Gidi et al., 2020; Heilemann et al., 2008; van de Linde et al., 2011; Vaughan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature and represents a mechanistic hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "dd65267a-127b-4d2d-8d2e-3a95420731d6",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C25",
+      "claim": "The development of bright, cell-permeable Janelia Fluor (JF) dyes has transformed single-molecule imaging in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of bright, cell-permeable Janelia Fluor (JF) dyes, based on rhodamine and silicon-rhodamine chemical scaffolds, has transformed single-molecule imaging in live cells (Grimm et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "364c7194-7c85-4a91-b976-55213d3e2b90",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C26",
+      "claim": "Janelia Fluor X 650 (JFX650) can be reactivated from a dark state by excitation of a nearby fluorophore such as Janelia Fluor 549 (JF549).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Janelia Fluor X 650 (JFX650; Grimm et al., 2021) and similar fluorophores can be reactivated from a dark state by excitation of a nearby fluorophore such as Janelia Fluor 549 (JF549), a phenomenon which we term proximity-assisted photoactivation (PAPA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "aa500e7d-e743-4a3d-b839-270d2926fcec",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C27",
+      "claim": "PAPA of JF dyes occurs under physiological conditions in live cells and requires neither an oxygen-scavenging system nor exogenous thiols.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to cyanine dye reactivation, PAPA of JF dyes occurs under physiological conditions in live cells and requires neither an oxygen-scavenging system nor exogenous thiols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental conditions described in the Methods section and demonstrated throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "4ee83113-1d63-49c3-8127-aaa9ea5baa53",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C28",
+      "claim": "PAPA's effective distance range extends beyond that of FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "While PAPA requires proximity between the two fluorophores, its effective distance range extends beyond that of FRET, making it a potentially more versatile interaction sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing PAPA and FRET in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "28852726-a0e1-41b2-8391-00f3a0b32fec",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C29",
+      "claim": "PAPA can be used to detect the formation of protein dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that PAPA can be used to detect the formation of protein dimers and that it can enrich for double-labeled molecules within defined mixtures, albeit not with perfect selectivity (see 'Discussion' and Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally with the FRB-FKBP system in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "98496e1e-6b33-457c-adcb-3774e307b840",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C30",
+      "claim": "PAPA can enrich for double-labeled molecules within defined mixtures, albeit not with perfect selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that PAPA can be used to detect the formation of protein dimers and that it can enrich for double-labeled molecules within defined mixtures, albeit not with perfect selectivity (see 'Discussion' and Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4 with defined two-component mixtures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "adac280e-ac70-4af4-8d42-c352ad98a9f7",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C31",
+      "claim": "PAPA combined with SPT can analyze the increase in chromatin binding induced by self-association of androgen receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "As a further proof of concept, we combined SPT with PAPA to analyze the increase in chromatin binding induced by self-association of androgen receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "938cd8e3-69b2-4596-b84a-17195b8f1c40",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C32",
+      "claim": "Some JFX650 molecules that had gone dark during red illumination suddenly reappeared after a brief, 7 ms pulse of green light.",
+      "claim_type": "EXPLICIT",
+      "source": "When we alternately excited JFX650 with red light (639 nm) and JF549 with green light (561 nm), we noticed that some JFX650 molecules that had gone dark during red illumination suddenly reappeared after a brief, 7 ms pulse of green light (green vertical lines in Figure 1ai and green box in Figure 1b, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1ai and 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "b7be0a2d-3e87-4885-9bac-01d1018a44f5",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C33",
+      "claim": "Reactivation of JFX650 by violet light occurs both with and without JF549-HTL.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Grimm et al., 2015), we also observed reactivation of JFX650 by violet light, both with and without JF549-HTL (violet vertical lines in Figure 1ai,ii and violet box in Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1ai, 1aii, and 1b, and is consistent with cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "dde5d1c5-a5f2-4339-8acc-1b4c1a32965b",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C34",
+      "claim": "Reactivation of JFX650 by green light required co-labeling with JF549.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reactivation of JFX650 by green light required co-labeling with JF549 (compare Figure 1ai and ii), implying that reactivation results not from direct absorption of green light by dark-state JFX650 but indirectly due to excitation of JF549.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of data in Figure 1ai and 1aii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "ab251fd9-e718-4c46-8654-67afe0e3eee5",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C35",
+      "claim": "Reactivation of JFX650 by green light results not from direct absorption of green light by dark-state JFX650 but indirectly due to excitation of JF549.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reactivation of JFX650 by green light required co-labeling with JF549 (compare Figure 1ai and ii), implying that reactivation results not from direct absorption of green light by dark-state JFX650 but indirectly due to excitation of JF549.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation that green reactivation requires JF549.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "8370d1ba-2d0d-4f2b-8dcf-dd6e0a979867",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C36",
+      "claim": "Green illumination of cells labeled with JF549-HTL alone did not produce localizations in the JFX650 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Green illumination of cells labeled with JF549-HTL alone did not produce localizations in the JFX650 channel, demonstrating that this effect is not due to JF549 photochromism (Figure 1aiii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment shown in Figure 1aiii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "8577f8da-f567-4248-ae1d-b38d033cc609",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C37",
+      "claim": "The green reactivation effect is not due to JF549 photochromism.",
+      "claim_type": "EXPLICIT",
+      "source": "Green illumination of cells labeled with JF549-HTL alone did not produce localizations in the JFX650 channel, demonstrating that this effect is not due to JF549 photochromism (Figure 1aiii).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the control experiment in Figure 1aiii.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "8306d572-4210-46c8-a606-d6dd7c12289f",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C38",
+      "claim": "Violet reactivation was similar for both Halo-SNAPf and Halo-PT2A-SNAPf constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "While violet reactivation was similar for both constructs, green reactivation was substantially greater for Halo-SNAPf than for Halo-PT2A-SNAPf, implying that proximity of the two dyes facilitates reactivation by green light (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "f3c45a21-94c0-4f05-a94e-32464cb25557",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C39",
+      "claim": "Green reactivation was substantially greater for Halo-SNAPf than for Halo-PT2A-SNAPf.",
+      "claim_type": "EXPLICIT",
+      "source": "While violet reactivation was similar for both constructs, green reactivation was substantially greater for Halo-SNAPf than for Halo-PT2A-SNAPf, implying that proximity of the two dyes facilitates reactivation by green light (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "17b3e2fc-d0b6-4e24-adb8-7d241a41ebe3",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C40",
+      "claim": "Proximity of the two dyes facilitates reactivation by green light.",
+      "claim_type": "EXPLICIT",
+      "source": "While violet reactivation was similar for both constructs, green reactivation was substantially greater for Halo-SNAPf than for Halo-PT2A-SNAPf, implying that proximity of the two dyes facilitates reactivation by green light (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of linked vs. cleaved constructs in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "d52d1efc-b828-4152-90a1-c5945cbe8f59",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C41",
+      "claim": "Conjugating JFX650 to SNAPf instead of Halo led to more efficient shelving in the dark state.",
+      "claim_type": "EXPLICIT",
+      "source": "Conjugating JFX650 to SNAPf instead of Halo led to more efficient shelving in the dark state, as evidenced by a faster decline in fluorescence during red illumination and greater subsequent reactivation by violet light (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "a6233b66-1c41-4e5b-8179-4aff6a84b7b2",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C42",
+      "claim": "JF549 is more photostable when bound to Halo than when bound to SNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "This accords with the previous observation that JF549 is more photostable when bound to Halo than when bound to SNAP (Presman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "d952d179-b4cf-4fc1-8dc4-f31b2215e5fd",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C43",
+      "claim": "About 10% of JFX650-SNAPf molecules enter the dark state under the experimental conditions and can be reactivated by either DR or PAPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Ensemble and single-molecule kinetic measurements indicate that about 10% of JFX650-SNAPf molecules enter the dark state under our experimental conditions and can be reactivated by either DR or PAPA (Figure 1\u2014figure supplements 1b and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative measurements shown in Figure 1\u2014figure supplements 1b and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "b595ffb6-7a20-4cd0-bb3a-b87889ac86d0",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C44",
+      "claim": "DR by violet light precluded subsequent PAPA by green light, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "DR by violet light precluded subsequent PAPA by green light, and vice versa, implying that both wavelengths reactivate the same dark state (Figure 1\u2014figure supplement 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 1\u2014figure supplement 1c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "1969ef51-d7ac-498a-9b52-d283d7623f68",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C45",
+      "claim": "Both violet and green wavelengths reactivate the same dark state.",
+      "claim_type": "EXPLICIT",
+      "source": "DR by violet light precluded subsequent PAPA by green light, and vice versa, implying that both wavelengths reactivate the same dark state (Figure 1\u2014figure supplement 1c and d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutual occlusion experiment shown in Figure 1\u2014figure supplement 1c and d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "fac9dd74-4255-476f-b551-a60635675166",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C46",
+      "claim": "PAPA occurred when tetramethylrhodamine (TMR), Janelia Fluor X 549 (JFX549), or Janelia Fluor 526 were used as the sender.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested other fluorophore pairs and found that PAPA occurred when tetramethylrhodamine (TMR), Janelia Fluor X 549 (JFX549), or Janelia Fluor 526 were used as the sender, or when JF646 or JFX646 were used as the receiver (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "e9ccff61-3958-4b85-bfbe-2da1a2e98170",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C47",
+      "claim": "PAPA occurred when JF646 or JFX646 were used as the receiver.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested other fluorophore pairs and found that PAPA occurred when tetramethylrhodamine (TMR), Janelia Fluor X 549 (JFX549), or Janelia Fluor 526 were used as the sender, or when JF646 or JFX646 were used as the receiver (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "fb9a9225-a59f-47a3-a223-cd73e6417908",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C48",
+      "claim": "The PAPA/DR ratio provides a normalized measure of PAPA efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of the increase in fluorescence intensity in response to green and violet pulses (the 'PAPA/DR ratio') provides a normalized measure of PAPA efficiency, which corrects for cell-to-cell variability in the labeled protein concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition based on the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "05a458b0-f58c-45fb-9f72-15aa2d957477",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C49",
+      "claim": "For sufficiently short reactivation pulses, the PAPA/DR ratio increased linearly with the green pulse duration.",
+      "claim_type": "EXPLICIT",
+      "source": "For sufficiently short reactivation pulses, the PAPA/DR ratio increased linearly with the green pulse duration (with the violet pulse duration held constant), making it possible to measure relative rate constants by linear fitting (Figure 2a, b, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 2a and 2b (left panel).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "71c1a4a1-659b-4a0b-8d9e-4224d9f9922c",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C50",
+      "claim": "FRET efficiency between JF549 and JFX650 declined sharply with increasing spacer length.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by our simulations (Figure 2\u2014figure supplement 1b), FRET efficiency between JF549 and JFX650 declined sharply with increasing spacer length, from 0.271 \u00b1 0.010 (95% CI) for the short linker to 0.124 \u00b1 0.006 for a single Ig repeat and 0.020 \u00b1 0.010 for three Ig repeats (Figure 2b, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FLIM-FRET measurements shown in Figure 2b (right panel).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "6307eb96-4980-427c-aca9-31ece68a18d2",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C51",
+      "claim": "FRET was essentially undetectable for five or seven Ig repeats and for the PT2A self-cleaving peptide linker.",
+      "claim_type": "EXPLICIT",
+      "source": "FRET was essentially undetectable for five or seven Ig repeats and for the PT2A self-cleaving peptide linker (Figure 2b, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FLIM-FRET measurements shown in Figure 2b (right panel).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "07cd5bae-b48a-43de-a54f-ab25a7c1106e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C52",
+      "claim": "PAPA was observed for the 3\u00d7, 5\u00d7, and 7\u00d7 Ig linker constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PAPA was observed for the 3\u00d7, 5\u00d7, and 7\u00d7 Ig linker constructs (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2a and 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "90dcea82-52a6-4d8a-8d15-9af211aa9a90",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C53",
+      "claim": "The rate of photoactivation by green light declined gradually with increasing linker length yet was distinguishable from the background rate of the PT2A self-cleaving linker.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of photoactivation by green light declined gradually with increasing linker length yet was distinguishable from the background rate of the PT2A self-cleaving linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2a and 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "370bbe77-a8a5-4847-8c56-91afc9d1b95e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C54",
+      "claim": "PAPA has a less stringent dependence on average inter-fluorophore distance than FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that PAPA has a less stringent dependence on average inter-fluorophore distance than FRET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of PAPA and FRET data across different linker lengths in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "f1a57c7a-a162-411f-b212-618b57e70837",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C55",
+      "claim": "Addition of rapamycin caused a dramatic increase in the ratio of PAPA to DR.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of rapamycin caused a dramatic increase in the ratio of PAPA (green reactivation) to DR (violet reactivation), consistent with ligand-induced dimerization of Halo-FRB and SNAPf-FKBP bringing together JF549 and JFX650 (Figure 3b and c, Figure 3\u2014figure supplement 1b, Figure 3\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b, 3c, and Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "d0e13d0b-49a7-4e53-a0f8-176086e6224a",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C56",
+      "claim": "The increase in PAPA/DR ratio upon rapamycin addition is consistent with ligand-induced dimerization of Halo-FRB and SNAPf-FKBP bringing together JF549 and JFX650.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of rapamycin caused a dramatic increase in the ratio of PAPA (green reactivation) to DR (violet reactivation), consistent with ligand-induced dimerization of Halo-FRB and SNAPf-FKBP bringing together JF549 and JFX650 (Figure 3b and c, Figure 3\u2014figure supplement 1b, Figure 3\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known mechanism of rapamycin-induced FRB-FKBP dimerization and the observed increase in PAPA signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "53ff093f-07a7-4e96-984e-5b6fa9ef77b1",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C57",
+      "claim": "PAPA trajectories were enriched for freely diffusing molecules compared to DR trajectories in the Halo-SNAPf-3xNLS + H2B-SNAPf mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "PAPA trajectories were enriched for freely diffusing molecules compared to DR trajectories, as expected if PAPA selectively reactivates JF549/JFX650 double-labeled Halo-SNAPf-3xNLS molecules (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by diffusion spectra shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "0e602835-4126-47bc-bf02-3041719062bd",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C58",
+      "claim": "PAPA trajectories had a lower bound fraction than DR trajectories in every cell for the Halo-SNAPf-3xNLS + H2B-SNAPf mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the ensemble analysis, PAPA trajectories had a lower bound fraction than DR trajectories in every cell (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "775b622a-f4ca-4a70-83d3-8beface1c517",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C59",
+      "claim": "For the SNAPf-3xNLS + Halo-SNAPf-H2B mixture, PAPA trajectories were enriched in bound molecules compared to DR trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the opposite trend was observed: PAPA trajectories were enriched in bound molecules compared to DR trajectories, both across an ensemble of cells and at the single-cell level (Figure 4e and f, Figure 4\u2014figure supplement 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4e, 4f, and Figure 4\u2014figure supplement 2c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "6b942bcc-887b-40e1-8981-e95926881436",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C60",
+      "claim": "PAPA and DR trajectories displayed virtually identical diffusion spectra for double-labeled Halo-SNAPf-3xNLS or Halo-SNAPf-H2B alone.",
+      "claim_type": "EXPLICIT",
+      "source": "As a further control, we analyzed cells expressing JF549-HTL/JFX650-STL double-labeled Halo-SNAPf-3xNLS or Halo-SNAPf-H2B alone. As expected, PAPA and DR trajectories displayed virtually identical diffusion spectra for these individual components (Figure 4\u2014figure supplement 3a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment shown in Figure 4\u2014figure supplement 3a\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "5aec030d-b68d-4f75-ad82-c97e051bc0fa",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C61",
+      "claim": "For the cytosolic Halo-SNAPf + SNAPf-60-mer mixture, PAPA trajectories were strongly enriched in the fast-diffusing subpopulation compared to DR trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to DR trajectories (violet curve), PAPA trajectories (green curve) were strongly enriched in the fast-diffusing subpopulation, consistent with selective reactivation of the double-labeled Halo-SNAPf protein by green light (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by diffusion spectra shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "63a291d3-45ad-4261-b649-13f5a223646e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C62",
+      "claim": "The enrichment of the fast-diffusing population by PAPA was not absolute as a slow-diffusing shoulder peak was still observed among PAPA trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of the fast-diffusing population was not absolute as a slow-diffusing shoulder peak was still observed among PAPA trajectories (Figure 4h, green curve; see 'Discussion').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is evident in the diffusion spectrum shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "ac455668-50de-4274-8bca-3f51b180c789",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C63",
+      "claim": "For Halo-SNAPf-3xNLS + SNAPf-H2B, PAPA enriched double-labeled molecules approximately ninefold.",
+      "claim_type": "EXPLICIT",
+      "source": "For Halo-SNAPf-3xNLS + SNAPf-H2B, the best fit was obtained for DR trajectories with a mixture of 53% Halo-SNAPf-3xNLS and 47% SNAPf-H2B, while the best fit for PAPA trajectories was obtained with 91% Halo-SNAPf-3xNLS and 9% SNAPf-H2B (Figure 4\u2014figure supplement 4a). The estimated ratio of Halo-SNAPf-3xNLS to SNAPf-H2B thus increases from 0.53/0.47 \u2248 1.1 among DR trajectories to 0.91/0.09 \u2248 10 among PAPA trajectories, an approximately ninefold enrichment of double-labeled molecules by PAPA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative modeling of the diffusion spectra shown in Figure 4\u2014figure supplement 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "b3b5d1f4-021d-4a74-a9d8-752fa1be8126",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C64",
+      "claim": "PAPA enriched Halo-SNAPf-H2B over SNAPf-3xNLS by 3.7-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar calculations showed that PAPA enriched Halo-SNAPf-H2B over SNAPf-3xNLS by 3.7-fold (Figure 4\u2014figure supplement 4b), Halo-SNAPf over SNAPf-60mer by 7.6-fold (Figure 4\u2014figure supplement 4c), and Halo-SNAPf-60mer over SNAPf by 37-fold (Figure 4\u2014figure supplement 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative modeling shown in Figure 4\u2014figure supplement 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "85b48123-3fcd-45e9-9865-771dcfde1be0",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C65",
+      "claim": "PAPA enriched Halo-SNAPf over SNAPf-60mer by 7.6-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar calculations showed that PAPA enriched Halo-SNAPf-H2B over SNAPf-3xNLS by 3.7-fold (Figure 4\u2014figure supplement 4b), Halo-SNAPf over SNAPf-60mer by 7.6-fold (Figure 4\u2014figure supplement 4c), and Halo-SNAPf-60mer over SNAPf by 37-fold (Figure 4\u2014figure supplement 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative modeling shown in Figure 4\u2014figure supplement 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "038ba04d-4e3e-4660-91df-0ba4d51cc4e9",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C66",
+      "claim": "PAPA enriched Halo-SNAPf-60mer over SNAPf by 37-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar calculations showed that PAPA enriched Halo-SNAPf-H2B over SNAPf-3xNLS by 3.7-fold (Figure 4\u2014figure supplement 4b), Halo-SNAPf over SNAPf-60mer by 7.6-fold (Figure 4\u2014figure supplement 4c), and Halo-SNAPf-60mer over SNAPf by 37-fold (Figure 4\u2014figure supplement 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative modeling shown in Figure 4\u2014figure supplement 4d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "c80660c4-dfe3-479a-a639-dd986b9cb591",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C67",
+      "claim": "PAPA enrichment was substantial\u2014between 3.7- and 37-fold for different defined mixtures\u2014but was not absolute.",
+      "claim_type": "EXPLICIT",
+      "source": "While this enrichment was substantial\u2014between 3.7- and 37-fold for different defined mixtures\u2014it was not absolute, and thus it is crucial not to misinterpret PAPA trajectories as a pure sample of interacting molecules (see 'Discussion' and Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the quantitative modeling results from Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "6ce7fa51-f300-41da-b7dc-b635dfd41d8d",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C68",
+      "claim": "Treatment with dihydrotestosterone (DHT) led to an increase in the ratio of PAPA to DR for androgen receptor over the course of several minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, treatment with the androgen dihydrotestosterone (DHT) led to an increase in the ratio of PAPA to DR over the course of several minutes (Figure 5b, Figure 5\u2014figure supplement 1b), consistent with the two fluorophores being brought together by ligand-induced interaction between SNAPf-mAR and Halo-mAR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5b and Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "78886865-d1f8-42ba-8d2b-caadeb4af37e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C69",
+      "claim": "The increase in PAPA/DR ratio for androgen receptor upon DHT treatment is consistent with the two fluorophores being brought together by ligand-induced interaction between SNAPf-mAR and Halo-mAR.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, treatment with the androgen dihydrotestosterone (DHT) led to an increase in the ratio of PAPA to DR over the course of several minutes (Figure 5b, Figure 5\u2014figure supplement 1b), consistent with the two fluorophores being brought together by ligand-induced interaction between SNAPf-mAR and Halo-mAR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed increase in PAPA signal and known biology of androgen receptor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "ea07ce11-57ad-4715-82b6-2334f05205c8",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C70",
+      "claim": "Addition of DHT caused an increase in the overall bound fraction of AR.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous biochemical and live-cell imaging experiments, addition of DHT caused an increase in the overall bound fraction of AR (Figure 5c and d; Schaufele et al., 2005; van Royen et al., 2007; van Royen et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5c and 5d, and is consistent with cited previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "04f3eab8-51fa-444b-9587-34cd47d47945",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C71",
+      "claim": "PAPA trajectories had a higher bound fraction than DR trajectories for androgen receptor, both before and after addition of DHT.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, PAPA trajectories had a higher bound fraction than DR trajectories, both before and after addition of DHT (Figure 5c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5c and 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "564e6eda-2606-45c2-b131-1f2b4d9468d4",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C72",
+      "claim": "The higher bound fraction of PAPA trajectories for androgen receptor is consistent with an increase in the affinity of AR for specific DNA sequence motifs upon self-association.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with an increase in the affinity of AR for specific DNA sequence motifs upon self-association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed correlation between PAPA signal (indicating self-association) and chromatin binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "0e3ead79-9d9c-40b0-9e23-552df3bb6ff9",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C73",
+      "claim": "A subset of AR molecules self-associated and bound chromatin with elevated affinity even prior to addition of exogenous androgen.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PAPA revealed that a subset of AR molecules self-associated and bound chromatin with elevated affinity even prior to addition of exogenous androgen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of elevated PAPA signal and bound fraction before DHT addition in Figure 5c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "78d76588-b2c7-49c1-9c8f-601425b52a0d",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C74",
+      "claim": "The physical mechanism underlying PAPA remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While the physical mechanism underlying PAPA remains unclear, its more flexible distance dependence than either FRET (Figure 2) or cyanine dye photoswitching (Bates et al., 2005) suggests a distinct process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of uncertainty about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "e3a2261d-71ee-4c9e-8e3f-2723ec29409e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C75",
+      "claim": "PAPA's more flexible distance dependence than either FRET or cyanine dye photoswitching suggests a distinct process.",
+      "claim_type": "EXPLICIT",
+      "source": "While the physical mechanism underlying PAPA remains unclear, its more flexible distance dependence than either FRET (Figure 2) or cyanine dye photoswitching (Bates et al., 2005) suggests a distinct process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of distance dependencies shown in Figure 2 and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "1dbd721e-110e-4416-9254-dac5185eee39",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C76",
+      "claim": "One speculative hypothesis for PAPA mechanism is that the excited sender reacts with some other molecule in the cell, producing a short-lived chemical species that diffuses a limited distance to react with and reactivate the receiver dark state.",
+      "claim_type": "EXPLICIT",
+      "source": "One speculative hypothesis is that the excited sender reacts with some other molecule in the cell, producing a short-lived chemical species that diffuses a limited distance to react with and reactivate the receiver dark state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "a511f402-4726-48e6-9897-a0ad170d6b88",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C77",
+      "claim": "An alternative model for PAPA is that the absorbance spectrum of the receiver dark state has a broad tail toward longer wavelengths, allowing the sender to serve as an 'antenna' that facilitates receiver reactivation via some form of energy transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot exclude an alternative model proposed by Gidi and colleagues for cyanine dye pairs, in which the absorbance spectrum of the receiver dark state has a broad tail toward longer wavelengths, allowing the sender to serve as an 'antenna' that facilitates receiver reactivation via some form of energy transfer (Gidi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative mechanism based on a model from cited literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "da3534de-5ef0-48f6-bebe-282cbb167cf2",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C78",
+      "claim": "PAPA circumvents the trade-off between labeling density and spectral crosstalk inherent in smFRET.",
+      "claim_type": "EXPLICIT",
+      "source": "Although smFRET is useful for measuring distances between fluorophores in vitro, PAPA provides multiple advantages for live-cell imaging: first, PAPA circumvents the trade-off between labeling density and spectral crosstalk inherent in smFRET (see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal separation of sender and receiver excitation in PAPA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "0ad62e75-871b-479a-ba6f-d3a49d52f6e2",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C79",
+      "claim": "In PAPA, sender and receiver excitation occur at different times, eliminating fluorescence bleed-through from the sender into the receiver channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In PAPA, sender and receiver excitation occur at different times, eliminating fluorescence bleed-through from the sender into the receiver channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental design of PAPA with alternating illumination.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "a4618869-141c-4d39-aca7-38bf60168193",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C80",
+      "claim": "In PAPA, one interacting partner can be sparsely labeled with the receiver and the other densely labeled with the sender, permitting efficient detection of double-labeled complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, one interacting partner can be sparsely labeled with the receiver and the other densely labeled with the sender, permitting efficient detection of double-labeled complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the elimination of spectral crosstalk in PAPA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "f0db4314-44de-4ab2-baf9-dfe136678326",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C81",
+      "claim": "PAPA has a conveniently longer working distance than FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, PAPA has a conveniently longer working distance than FRET (Figure 2), which might be extended further by elongating the linkers between Halo/SNAPf and the protein of interest.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the distance dependence data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "a5da230f-7131-433a-ace7-128703dc20be",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C82",
+      "claim": "PAPA's working distance might be extended further by elongating the linkers between Halo/SNAPf and the protein of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, PAPA has a conveniently longer working distance than FRET (Figure 2), which might be extended further by elongating the linkers between Halo/SNAPf and the protein of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion based on the observed distance dependence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "4481e26e-bc6c-49c6-864b-cd439059508c",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C83",
+      "claim": "Because photoactivation is an all-or-nothing event, a signal can in principle be detected if even a fraction of linker conformations orients the dyes close enough together for PAPA to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Because photoactivation is an all-or-nothing event, a signal can in principle be detected if even a fraction of linker conformations orients the dyes close enough together for PAPA to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the binary nature of photoactivation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "51cb825c-0a2d-4c88-99ea-a91b6456c952",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C84",
+      "claim": "Unlike single-molecule BiFC, PAPA does not perturb binding equilibria.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike single-molecule BiFC, PAPA does not perturb binding equilibria, making it possible to use PAPA to study transient, reversible interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the non-covalent nature of PAPA compared to BiFC.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "81072d8f-d25b-42da-9b51-492928599709",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C85",
+      "claim": "PAPA makes it possible to study transient, reversible interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike single-molecule BiFC, PAPA does not perturb binding equilibria, making it possible to use PAPA to study transient, reversible interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on PAPA not perturbing binding equilibria.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "caa733cb-f9c0-4f12-bde4-2cbec29222ea",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C86",
+      "claim": "PAPA significantly enriches for complexes double-labeled with sender and receiver, but its selectivity is not perfect.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PAPA significantly enriches for complexes double-labeled with sender and receiver, its selectivity is not perfect (see Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the observation of background signal and incomplete enrichment in the defined mixture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "44999dc8-176a-4790-93aa-cdc8dd4a25fd",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C87",
+      "claim": "A background level of PAPA was observed when Halo and SNAPf were separated by a self-cleaving peptide tag.",
+      "claim_type": "EXPLICIT",
+      "source": "A background level of PAPA was still observed when Halo and SNAPf were separated by a self-cleaving peptide tag (Figures 1c and 2a and b), and this cannot be explained either by incomplete cleavage (Figure 2\u2014figure supplement 1c and d) or by direct reactivation of JFX650 by 561 nm light (Figure 1a, Figure 1\u2014figure supplement 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data in Figures 1c, 2a, 2b, and control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "b63b674a-7cee-46f5-87b2-16aa94d4c0f5",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C88",
+      "claim": "The background PAPA signal with self-cleaving peptide cannot be explained by incomplete cleavage or by direct reactivation of JFX650 by 561 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "A background level of PAPA was still observed when Halo and SNAPf were separated by a self-cleaving peptide tag (Figures 1c and 2a and b), and this cannot be explained either by incomplete cleavage (Figure 2\u2014figure supplement 1c and d) or by direct reactivation of JFX650 by 561 nm light (Figure 1a, Figure 1\u2014figure supplement 2d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on control experiments shown in the cited figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "440d9a1c-9b20-4b71-9036-761ebe8f56df",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C89",
+      "claim": "Some 'contamination' of PAPA trajectories with single-labeled molecules was evident in experiments with defined two-component mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, some 'contamination' of PAPA trajectories with single-labeled molecules was evident in experiments with defined two-component mixtures (e.g., slower-diffusing peak in green curve of Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is evident from the diffusion spectra in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "e51589fe-38de-4355-998c-7c9c761dc150",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C90",
+      "claim": "Green-reactivated trajectories, although enriched for sender\u2013receiver complexes, will inevitably be contaminated by some level of nonspecific background.",
+      "claim_type": "EXPLICIT",
+      "source": "When interpreting PAPA-SPT experiments, it is thus critical to keep in mind that green-reactivated trajectories, although enriched for sender\u2013receiver complexes, will inevitably be contaminated by some level of nonspecific background (see Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed incomplete selectivity of PAPA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "3c39cfee-31c5-4f80-a493-916001d4a4e4",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C91",
+      "claim": "PAPA provides enrichment\u2014not purification\u2014of double-labeled complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "PAPA provides enrichment\u2014not purification\u2014of double-labeled complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the observed incomplete selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "d12ef1e9-f75c-46a2-a8fc-36e69eb9ba15",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C92",
+      "claim": "Nonspecific background in PAPA-SPT experiments could arise from molecules that are not physically associated coming into proximity by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonspecific background in PAPA-SPT experiments could arise from multiple sources (see Appendix 2): first, even molecules that are not physically associated come into proximity by chance at some rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed background signal.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "4fdb30de-94a8-43e9-b4e6-23dc4795eeb9",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C93",
+      "claim": "When JFX650-labeled cells were bathed in high concentrations of free JF549 dye, reactivation by green light occurred in proportion to the JF549 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when JFX650-labeled cells were bathed in high concentrations of free JF549 dye, reactivation by green light occurred in proportion to the JF549 concentration (Appendix 2\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 2\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "ef8fb27b-5eac-418d-b551-295a2c5d1423",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C94",
+      "claim": "Nonspecific background is expected to be greater when sender-labeled proteins are expressed at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonspecific background is thus expected to be greater when sender-labeled proteins are expressed at high levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that free dye causes background reactivation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "ef14d137-d099-45a9-9b53-06e4fea52640",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C95",
+      "claim": "Dark-state fluorophores spontaneously reactivate at a low basal rate even without photostimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, dark-state fluorophores spontaneously reactivate at a low basal rate even without photostimulation (Grimm et al., 2015; Tang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "2b0c1887-83f0-49d1-9d66-fe66aa607417",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C96",
+      "claim": "It is possible that a small fraction of fluorophores reactivated by a violet pulse survived until the subsequent green pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, although we chose a time interval between green and violet pulses sufficient to bleach or re-shelve most reactivated fluorophores, it is possible that a small fraction of fluorophores reactivated by a violet pulse survived until the subsequent green pulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for potential background signal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "e4ddceb5-d2c9-42a9-b725-a90e37d0f6aa",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C97",
+      "claim": "Future applications of PAPA could include measuring differences in the chromatin residence time of different transcriptional subcomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Future applications of PAPA could include measuring differences in the chromatin residence time of different transcriptional subcomplexes, detecting transient interactions mediated by low-complexity domains, or assessing the consequences of posttranslational modifications such as SUMOylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "615c7c43-6c76-4b3e-a476-bd30c4ee55ce",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C98",
+      "claim": "Future applications of PAPA could include detecting transient interactions mediated by low-complexity domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Future applications of PAPA could include measuring differences in the chromatin residence time of different transcriptional subcomplexes, detecting transient interactions mediated by low-complexity domains, or assessing the consequences of posttranslational modifications such as SUMOylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "72919480-bb66-495e-a5c8-9f44de1a4ff9",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C99",
+      "claim": "Future applications of PAPA could include assessing the consequences of posttranslational modifications such as SUMOylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Future applications of PAPA could include measuring differences in the chromatin residence time of different transcriptional subcomplexes, detecting transient interactions mediated by low-complexity domains, or assessing the consequences of posttranslational modifications such as SUMOylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "4c7f8123-50f8-4e7b-92cb-8d3c8d11543c",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C100",
+      "claim": "A 'pulse-chase' PAPA experiment could in principle be used to measure dissociation and binding kinetics of molecular complexes in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, a 'pulse-chase' PAPA experiment could be used to measure dissociation and binding kinetics of molecular complexes in live cells by monitoring how the diffusion spectrum of reactivated molecules changes as a function of time after the reactivation pulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for a potential experimental approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "c9c998eb-9056-4e83-8194-02e4051a4f6e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "claim_id": "C101",
+      "claim": "PAPA could potentially be used to detect interactions between other biomolecules besides proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this study involved labeled proteins, PAPA could potentially be used to detect interactions between other biomolecules as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for extending PAPA to other biomolecules.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a874280-c18b-473c-b25f-d68aca0a482e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors discovered that rhodamine dyes exhibit proximity-assisted photoactivation (PAPA), where excitation of JF549 (sender) reactivates JFX650 (receiver) from a dark state. This reactivation by green light requires co-labeling with JF549 and is distinct from direct reactivation by violet light.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C26, C32-C37 collectively establish the discovery of PAPA through direct experimental observations (Figure 1). The requirement for JF549 co-labeling (C34) and control experiments ruling out photochromism (C36-C37) provide strong evidence that green reactivation is mediated by the sender fluorophore rather than direct absorption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "5f5538dc-8082-483c-9f3a-357ce8cd3880",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PAPA requires proximity between sender and receiver fluorophores, as demonstrated by comparing linked (Halo-SNAPf) versus cleaved (Halo-PT2A-SNAPf) constructs. Green reactivation was substantially greater for the linked construct while violet reactivation remained similar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by experimental data in Figure 1c showing differential green reactivation between linked and cleaved constructs. The similar violet reactivation serves as an important control, strengthening the inference that proximity facilitates PAPA (C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PAPA operates at longer average intermolecular distances than FRET. While FRET efficiency declined sharply and became undetectable beyond 3\u00d7 Ig repeats, PAPA was observed for 3\u00d7, 5\u00d7, and 7\u00d7 Ig linker constructs with gradually declining rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 are well-supported by systematic comparison of PAPA and FRET across different linker lengths (Figure 2). The quantitative FLIM-FRET measurements (C50-C51) and linear PAPA rate measurements (C49, C52-C53) provide robust evidence for the less stringent distance dependence of PAPA (C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "ddf9a2fd-501e-44f4-83db-f0ce77835777",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PAPA can detect protein-protein interactions in live cells, as demonstrated by rapamycin-induced FRB-FKBP dimerization. Addition of rapamycin caused a dramatic increase in the PAPA/DR ratio consistent with ligand-induced interaction bringing the fluorophores together.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by experimental data in Figure 3 showing increased PAPA signal upon rapamycin addition. The use of a well-characterized inducible dimerization system and DMSO control strengthen the interpretation that PAPA detects protein interactions (C6, C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "6be56e53-49e7-4053-8d3d-87f5dce1068d",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PAPA enriches for double-labeled protein complexes in defined two-component mixtures, with enrichment ranging from 3.7- to 37-fold depending on the mixture. However, this enrichment is not absolute, with some contamination of PAPA trajectories by single-labeled molecules evident.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C67 are supported by systematic analysis of defined mixtures using diffusion spectra (Figure 4). The quantitative modeling (C63-C66) provides estimates of enrichment, while the observation of incomplete selectivity (C62, C67) is appropriately acknowledged. Control experiments with single components (C60) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "456308b9-3a86-400b-826a-c9cbaed12f92",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PAPA combined with single-particle tracking detected the correlation between androgen receptor self-association and chromatin binding. PAPA trajectories showed higher bound fractions than DR trajectories both before and after DHT addition, revealing that a subset of AR molecules self-associate and bind chromatin with elevated affinity even without exogenous androgen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by experimental data in Figure 5. The increase in PAPA/DR ratio upon DHT treatment (C68-C69) and the consistently higher bound fraction in PAPA trajectories (C71) provide converging evidence. The observation of elevated PAPA signal before DHT addition (C73) represents a novel biological insight enabled by the technique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "7d82869a-ac0e-4e9d-9b80-5912d4e68d6f",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "JFX650 conjugated to SNAPf shows more efficient shelving in the dark state compared to Halo conjugation, with about 10% of JFX650-SNAPf molecules entering the dark state under experimental conditions. This is consistent with JF549 being more photostable when bound to Halo than SNAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C43 are supported by quantitative measurements in Figure 1\u2014figure supplement 1a-b. The consistency with prior literature on differential photostability (C42) strengthens the interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "edf83582-e6ad-4c71-b1f2-b62ccb1827e2",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Direct reactivation by violet light and PAPA by green light are mutually exclusive, implying both wavelengths reactivate the same dark state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by mutual occlusion experiments in Figure 1\u2014figure supplement 1c-d. The experimental design directly tests whether the two reactivation pathways access the same or different dark states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "3a5058df-6f50-4170-900a-bc2534dc877b",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PAPA occurs with multiple fluorophore pairs: TMR, JFX549, or JF526 as sender, and JF646 or JFX646 as receiver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by experimental data in Figure 1\u2014figure supplement 2, demonstrating the generalizability of PAPA beyond the JF549/JFX650 pair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "2b9159cf-b85f-4357-85c2-fdc6d4da9f2e",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The physical mechanism underlying PAPA remains unclear, though its distance dependence suggests a distinct process from FRET or cyanine dye photoswitching. Speculative hypotheses include diffusion of a short-lived reactive species or energy transfer via a broad absorbance tail of the receiver dark state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 appropriately acknowledge uncertainty about the mechanism. While the distinct distance dependence (C75) is supported by data, the proposed mechanisms (C76-C77) are explicitly speculative and lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "846e73d5-548a-445b-b9e0-09fec547464d",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PAPA provides advantages over smFRET for live-cell imaging by circumventing the trade-off between labeling density and spectral crosstalk through temporal separation of sender and receiver excitation, and by operating at longer working distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 are logical inferences supported by the experimental design and distance dependence data (Figure 2). The temporal separation eliminating bleed-through (C79) is inherent to the method, and the longer working distance (C81) is directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "df1c8a7d-99dc-4373-aac3-7b4f99adad37",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PAPA's selectivity is not perfect, with background signal observed even with cleaved constructs and contamination of PAPA trajectories with single-labeled molecules in mixture experiments. PAPA provides enrichment rather than purification of double-labeled complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 are supported by observations in Figures 1c, 2, and 4. The authors appropriately acknowledge these limitations and provide control experiments (C87-C88) ruling out trivial explanations. This honest assessment of limitations strengthens the overall credibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "3ba11155-d2b6-4d2a-9cc6-7453a62209c3",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Nonspecific background in PAPA experiments could arise from multiple sources including random proximity of non-associated molecules, spontaneous reactivation, and survival of violet-reactivated fluorophores. Free JF549 dye causes concentration-dependent background reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is directly supported by experimental data in Appendix 2\u2014figure 1. Claims C92, C94-C96 represent reasonable speculative explanations for observed background, with C95 supported by citations to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "221328e0-42b0-4758-969c-da3c03915f70",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors provide context for PAPA by reviewing limitations of existing single-molecule techniques including SPT, smFRET, FCCS, BiFC, and cyanine dye photoswitching, as well as the development of Janelia Fluor dyes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C25 represent background knowledge and literature review supported by appropriate citations. These establish the scientific context and motivation for developing PAPA as a new proximity detection method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "0a27b43d-9824-49a2-8775-12a39c235acc",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The PAPA/DR ratio provides a normalized measure of PAPA efficiency that corrects for cell-to-cell variability in labeled protein concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 describes a methodological approach that is logically sound. By normalizing green reactivation to violet reactivation, the ratio accounts for differences in receiver fluorophore concentration across cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    },
+    {
+      "id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9",
+      "content_id": "240f8142-2883-43a2-9649-882c31bd246f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors suggest potential extensions and future applications of PAPA including longer working distances with extended linkers, studying transient interactions, measuring chromatin residence times, detecting low-complexity domain interactions, pulse-chase kinetics experiments, and applications to non-protein biomolecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C83, C97-C101 are speculative suggestions for future work. While reasonable based on the demonstrated capabilities of PAPA, these applications have not been experimentally validated and represent hypotheses rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:19.367185Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a70c360-606a-4698-8636-1a53068d78e6",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "364c7194-7c85-4a91-b976-55213d3e2b90",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "938cd8e3-69b2-4596-b84a-17195b8f1c40",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "b7be0a2d-3e87-4885-9bac-01d1018a44f5",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "dde5d1c5-a5f2-4339-8acc-1b4c1a32965b",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "ab251fd9-e718-4c46-8654-67afe0e3eee5",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "8370d1ba-2d0d-4f2b-8dcf-dd6e0a979867",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "8577f8da-f567-4248-ae1d-b38d033cc609",
+      "result_id": "6a874280-c18b-473c-b25f-d68aca0a482e"
+    },
+    {
+      "claim_id": "39d3879c-aa14-4d3a-8eed-6f7f8f460cc1",
+      "result_id": "5f5538dc-8082-483c-9f3a-357ce8cd3880"
+    },
+    {
+      "claim_id": "8306d572-4210-46c8-a606-d6dd7c12289f",
+      "result_id": "5f5538dc-8082-483c-9f3a-357ce8cd3880"
+    },
+    {
+      "claim_id": "f3c45a21-94c0-4f05-a94e-32464cb25557",
+      "result_id": "5f5538dc-8082-483c-9f3a-357ce8cd3880"
+    },
+    {
+      "claim_id": "17b3e2fc-d0b6-4e24-adb8-7d241a41ebe3",
+      "result_id": "5f5538dc-8082-483c-9f3a-357ce8cd3880"
+    },
+    {
+      "claim_id": "b3996b9e-b4c1-4b8a-82af-eeeb91702c81",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "4ee83113-1d63-49c3-8127-aaa9ea5baa53",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "05a458b0-f58c-45fb-9f72-15aa2d957477",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "71c1a4a1-659b-4a0b-8d9e-4224d9f9922c",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "6307eb96-4980-427c-aca9-31ece68a18d2",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "07cd5bae-b48a-43de-a54f-ab25a7c1106e",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "90dcea82-52a6-4d8a-8d15-9af211aa9a90",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "370bbe77-a8a5-4847-8c56-91afc9d1b95e",
+      "result_id": "4a3fdd79-bde8-4fc1-9cef-e4519961a4b0"
+    },
+    {
+      "claim_id": "d02bf324-295d-4c2a-9b00-db20b005c9f0",
+      "result_id": "ddf9a2fd-501e-44f4-83db-f0ce77835777"
+    },
+    {
+      "claim_id": "28852726-a0e1-41b2-8391-00f3a0b32fec",
+      "result_id": "ddf9a2fd-501e-44f4-83db-f0ce77835777"
+    },
+    {
+      "claim_id": "f1a57c7a-a162-411f-b212-618b57e70837",
+      "result_id": "ddf9a2fd-501e-44f4-83db-f0ce77835777"
+    },
+    {
+      "claim_id": "d0e13d0b-49a7-4e53-a0f8-176086e6224a",
+      "result_id": "ddf9a2fd-501e-44f4-83db-f0ce77835777"
+    },
+    {
+      "claim_id": "2283ea1c-c067-4b14-a33d-c4f436fcd9c8",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "98496e1e-6b33-457c-adcb-3774e307b840",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "53ff093f-07a7-4e96-984e-5b6fa9ef77b1",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "0e602835-4126-47bc-bf02-3041719062bd",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "775b622a-f4ca-4a70-83d3-8beface1c517",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "6b942bcc-887b-40e1-8981-e95926881436",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "5aec030d-b68d-4f75-ad82-c97e051bc0fa",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "63a291d3-45ad-4261-b649-13f5a223646e",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "ac455668-50de-4274-8bca-3f51b180c789",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "b3b5d1f4-021d-4a74-a9d8-752fa1be8126",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "85b48123-3fcd-45e9-9865-771dcfde1be0",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "038ba04d-4e3e-4660-91df-0ba4d51cc4e9",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "c80660c4-dfe3-479a-a639-dd986b9cb591",
+      "result_id": "6be56e53-49e7-4053-8d3d-87f5dce1068d"
+    },
+    {
+      "claim_id": "abecab6a-c6d8-4d45-9dc5-51188a513188",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "adac280e-ac70-4af4-8d42-c352ad98a9f7",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "6ce7fa51-f300-41da-b7dc-b635dfd41d8d",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "78886865-d1f8-42ba-8d2b-caadeb4af37e",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "ea07ce11-57ad-4715-82b6-2334f05205c8",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "04f3eab8-51fa-444b-9587-34cd47d47945",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "564e6eda-2606-45c2-b131-1f2b4d9468d4",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "0e3ead79-9d9c-40b0-9e23-552df3bb6ff9",
+      "result_id": "456308b9-3a86-400b-826a-c9cbaed12f92"
+    },
+    {
+      "claim_id": "d52d1efc-b828-4152-90a1-c5945cbe8f59",
+      "result_id": "7d82869a-ac0e-4e9d-9b80-5912d4e68d6f"
+    },
+    {
+      "claim_id": "a6233b66-1c41-4e5b-8179-4aff6a84b7b2",
+      "result_id": "7d82869a-ac0e-4e9d-9b80-5912d4e68d6f"
+    },
+    {
+      "claim_id": "d952d179-b4cf-4fc1-8dc4-f31b2215e5fd",
+      "result_id": "7d82869a-ac0e-4e9d-9b80-5912d4e68d6f"
+    },
+    {
+      "claim_id": "b595ffb6-7a20-4cd0-bb3a-b87889ac86d0",
+      "result_id": "edf83582-e6ad-4c71-b1f2-b62ccb1827e2"
+    },
+    {
+      "claim_id": "1969ef51-d7ac-498a-9b52-d283d7623f68",
+      "result_id": "edf83582-e6ad-4c71-b1f2-b62ccb1827e2"
+    },
+    {
+      "claim_id": "fac9dd74-4255-476f-b551-a60635675166",
+      "result_id": "3a5058df-6f50-4170-900a-bc2534dc877b"
+    },
+    {
+      "claim_id": "e9ccff61-3958-4b85-bfbe-2da1a2e98170",
+      "result_id": "3a5058df-6f50-4170-900a-bc2534dc877b"
+    },
+    {
+      "claim_id": "78d76588-b2c7-49c1-9c8f-601425b52a0d",
+      "result_id": "2b9159cf-b85f-4357-85c2-fdc6d4da9f2e"
+    },
+    {
+      "claim_id": "e3a2261d-71ee-4c9e-8e3f-2723ec29409e",
+      "result_id": "2b9159cf-b85f-4357-85c2-fdc6d4da9f2e"
+    },
+    {
+      "claim_id": "1dbd721e-110e-4416-9254-dac5185eee39",
+      "result_id": "2b9159cf-b85f-4357-85c2-fdc6d4da9f2e"
+    },
+    {
+      "claim_id": "a511f402-4726-48e6-9897-a0ad170d6b88",
+      "result_id": "2b9159cf-b85f-4357-85c2-fdc6d4da9f2e"
+    },
+    {
+      "claim_id": "da3534de-5ef0-48f6-bebe-282cbb167cf2",
+      "result_id": "846e73d5-548a-445b-b9e0-09fec547464d"
+    },
+    {
+      "claim_id": "0ad62e75-871b-479a-ba6f-d3a49d52f6e2",
+      "result_id": "846e73d5-548a-445b-b9e0-09fec547464d"
+    },
+    {
+      "claim_id": "a4618869-141c-4d39-aca7-38bf60168193",
+      "result_id": "846e73d5-548a-445b-b9e0-09fec547464d"
+    },
+    {
+      "claim_id": "f0db4314-44de-4ab2-baf9-dfe136678326",
+      "result_id": "846e73d5-548a-445b-b9e0-09fec547464d"
+    },
+    {
+      "claim_id": "caa733cb-f9c0-4f12-bde4-2cbec29222ea",
+      "result_id": "df1c8a7d-99dc-4373-aac3-7b4f99adad37"
+    },
+    {
+      "claim_id": "44999dc8-176a-4790-93aa-cdc8dd4a25fd",
+      "result_id": "df1c8a7d-99dc-4373-aac3-7b4f99adad37"
+    },
+    {
+      "claim_id": "b63b674a-7cee-46f5-87b2-16aa94d4c0f5",
+      "result_id": "df1c8a7d-99dc-4373-aac3-7b4f99adad37"
+    },
+    {
+      "claim_id": "440d9a1c-9b20-4b71-9036-761ebe8f56df",
+      "result_id": "df1c8a7d-99dc-4373-aac3-7b4f99adad37"
+    },
+    {
+      "claim_id": "e51589fe-38de-4355-998c-7c9c761dc150",
+      "result_id": "df1c8a7d-99dc-4373-aac3-7b4f99adad37"
+    },
+    {
+      "claim_id": "3c39cfee-31c5-4f80-a493-916001d4a4e4",
+      "result_id": "df1c8a7d-99dc-4373-aac3-7b4f99adad37"
+    },
+    {
+      "claim_id": "d12ef1e9-f75c-46a2-a8fc-36e69eb9ba15",
+      "result_id": "3ba11155-d2b6-4d2a-9cc6-7453a62209c3"
+    },
+    {
+      "claim_id": "4fdb30de-94a8-43e9-b4e6-23dc4795eeb9",
+      "result_id": "3ba11155-d2b6-4d2a-9cc6-7453a62209c3"
+    },
+    {
+      "claim_id": "ef8fb27b-5eac-418d-b551-295a2c5d1423",
+      "result_id": "3ba11155-d2b6-4d2a-9cc6-7453a62209c3"
+    },
+    {
+      "claim_id": "ef14d137-d099-45a9-9b53-06e4fea52640",
+      "result_id": "3ba11155-d2b6-4d2a-9cc6-7453a62209c3"
+    },
+    {
+      "claim_id": "2b0c1887-83f0-49d1-9d66-fe66aa607417",
+      "result_id": "3ba11155-d2b6-4d2a-9cc6-7453a62209c3"
+    },
+    {
+      "claim_id": "e4b97780-4e71-4dba-983a-ef9f24b234ef",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "50601ca3-915a-4a17-84f6-073abef39995",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "c156e69b-bdeb-41e0-931c-5a050c8cec15",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "12734088-fd17-438a-95a1-604f0587b423",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "bb8a507c-6c2f-4eef-8729-b4365f3ab407",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "88eb5c26-75d6-40ef-adc3-6011a4b7d405",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "56455688-5150-44cb-9df6-8da15d07b0f0",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "2014c397-856f-418b-a7e6-b551b46953c5",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "8b35649e-8506-4281-8418-2787788ae1ef",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "d4f7d6d1-db41-4693-bfc2-42b9ea6834f4",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "9332db9a-7890-44ff-a15f-b4bda12c29cc",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "990cc8b9-b5ea-47fc-917f-044c37609429",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "7c1e34ec-77bd-4ad3-8642-6c50932c049e",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "a2e5ff5d-4645-4308-8b61-c243d7747061",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "43f541e3-8ccd-42bc-bb21-a95bbe570727",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "bc55968e-46c4-490d-a7ba-980a701c879f",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "7b8037bc-7873-4e2b-a114-d9931de91d63",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "31e2029e-2f44-4c6a-b72b-b967fe19b882",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "dd65267a-127b-4d2d-8d2e-3a95420731d6",
+      "result_id": "221328e0-42b0-4758-969c-da3c03915f70"
+    },
+    {
+      "claim_id": "fb9a9225-a59f-47a3-a223-cd73e6417908",
+      "result_id": "0a27b43d-9824-49a2-8775-12a39c235acc"
+    },
+    {
+      "claim_id": "a5da230f-7131-433a-ace7-128703dc20be",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "4481e26e-bc6c-49c6-864b-cd439059508c",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "51cb825c-0a2d-4c88-99ea-a91b6456c952",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "81072d8f-d25b-42da-9b51-492928599709",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "e4ddceb5-d2c9-42a9-b725-a90e37d0f6aa",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "615c7c43-6c76-4b3e-a476-bd30c4ee55ce",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "72919480-bb66-495e-a5c8-9f44de1a4ff9",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "4c7f8123-50f8-4e7b-92cb-8d3c8d11543c",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    },
+    {
+      "claim_id": "c9c998eb-9056-4e83-8194-02e4051a4f6e",
+      "result_id": "7b90bd57-e6fa-4091-a727-837a1ad9b1c9"
+    }
+  ],
+  "comparisons": []
+}

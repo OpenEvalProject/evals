@@ -1,0 +1,1846 @@
+{
+  "submission": {
+    "id": "5b4eb6be-f689-43c9-b742-b69b4e6b9434",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:30:01.876622Z",
+    "updated_at": "2025-12-03T11:30:01.876622Z"
+  },
+  "content": [
+    {
+      "id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "submission_id": "5b4eb6be-f689-43c9-b742-b69b4e6b9434",
+      "content_type": "manuscript",
+      "content_text": "# Mendelian randomization suggests a bidirectional, causal relationship between physical inactivity and adiposity\n\n## Authors\n\n- Germ\u00e1n D Carrasquilla<sup>1</sup> ([ORCID: 0000-0002-7147-9421](https://orcid.org/0000-0002-7147-9421)) \u2020\n- Mario Garc\u00eda-Ure\u00f1a<sup>1</sup> ([ORCID: 0000-0002-3376-9460](https://orcid.org/0000-0002-3376-9460))\n- Tove Fall<sup>2</sup> ([ORCID: 0000-0003-2071-5866](https://orcid.org/0000-0003-2071-5866))\n- Thorkild IA S\u00f8rensen<sup>1</sup> ([ORCID: 0000-0003-4821-430X](https://orcid.org/0000-0003-4821-430X))\n- Tuomas O Kilpel\u00e4inen<sup>1</sup> ([ORCID: 0000-0002-8349-3028](https://orcid.org/0000-0002-8349-3028))\n\n### Affiliations\n\n1. Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n2. Molecular Epidemiology, Department of Medical Sciences, and Science for Life Laboratory, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))\n3. Department of Public Health, Section of Epidemiology, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhysical inactivity and increased sedentary time are associated with excess weight gain in observational studies. However, some longitudinal studies indicate reverse causality where weight gain leads to physical inactivity and increased sedentary time. As observational studies suffer from reverse causality, it is challenging to assess the true causal directions. Here, we assess the bidirectional causality between physical inactivity, sedentary time, and adiposity by bidirectional Mendelian randomization analysis. We used results from genome-wide association studies for accelerometer-based physical activity and sedentary time in 91,105 individuals and for body mass index (BMI) in 806,834 individuals. We implemented Mendelian randomization using CAUSE method that accounts for pleiotropy and sample overlap using full genome-wide data. We also applied inverse variance-weighted, MR-Egger, weighted median, and weighted mode methods using genome-wide significant variants only. We found evidence of bidirectional causality between sedentary time and BMI: longer sedentary time was causal for higher BMI [beta (95% CI) from CAUSE method: 0.11 (0.02, 0.2), p = 0.02], and higher BMI was causal for longer sedentary time (0.13 (0.08, 0.17), p = 6.3 x 10-4). Our analyses suggest that higher moderate and vigorous physical activity are causal for lower BMI (moderate: \u20130.18 (-0.3,\u20130.05), p = 0.006; vigorous: \u20130.16 (-0.24,\u20130.08), p = 3.8 \u00d7 10-4), but indicate that the association between higher BMI and lower levels of physical activity is due to horizontal pleiotropy. The bidirectional, causal relationship between sedentary time and BMI suggests that decreasing sedentary time is beneficial for weight management, but also that targeting adiposity may lead to additional health benefits by reducing sedentary time.\n\n## Introduction\n\nObesity and physical inactivity are major risk factors for a number of chronic diseases, such as type 2 diabetes, cardiovascular diseases and several types of cancer. Today\u2019s epidemic of obesity and sedentary lifestyle is thus a major burden on public health systems worldwide (GBD 2019 Risk Factors Collaborators, 2020).\n\nMany observational studies suggest that physical inactivity and increased sedentary time are associated with a higher risk of obesity (Lee et al., 2010; Du et al., 2013; Silva et al., 2019; Myers et al., 2017). However, other studies have indicated a reverse effect, where obesity leads to physical inactivity and increased sedentary time (Petersen et al., 2004; Mortensen et al., 2006; Bak et al., 2004; Barone Gibbs et al., 2020; Ekelund et al., 2008; Myers et al., 2017). Furthermore, randomized clinical trials of physical activity interventions have indicated that the causal effects of physical activity on body weight are modest (Church et al., 2009; Rosenkilde et al., 2012; Golubic et al., 2015) compared to the strong inverse relationship between physical activity and body weight observed in cross-sectional epidemiological studies. This suggests that the observational results may be affected by bias, such as reverse causality or confounding by other lifestyle or environmental factors (Schnurr et al., 2021). To date, the causal relationships between physical inactivity, sedentary time and adiposity remain unclear and warrant further investigation. It is important to assess the causal relationship with adiposity separately for physical activity and sedentary time, as individuals can be physically active even if they engaged a substantial part of their time to sedentary behaviors, and vice versa (Panahi and Tremblay, 2018).\n\nMendelian randomization is a powerful method to minimize the influence of reverse causality and confounding on causal estimates derived from observational data. Since genotypes are randomly allocated at conception, genetic alleles associated with physical activity, sedentary behavior, and body mass index (BMI) can be used to assign individuals according to higher or lower mean levels of these exposures in a randomized manner (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70386/elife-70386-fig1-v2.jpg)\n\n**Figure 1.:** Panel A shows Mendelian randomization assumptions when estimating the causal association between a given exposure and outcome: (1) The instruments are associated with the exposure, (2) the instruments do not cause the outcome independently from the exposure (horizontal uncorrelated pleiotropy), and (3) the effects of the exposure on the outcome are not influenced by any confounders (horizontal correlated pleiotropy). Panel B indicates a unidirectional causal effect of physical activity or sedentary time on adiposity, whereas panel C indicates a unidirectional causal effect of adiposity on physical activity or sedentary time. Panel D indicates a bidirectional causal relationship where physical activity or sedentary time has a causal effect on adiposity, but at the same time, adiposity has a causal effect on physical activity or sedentary time. Figure icons were created with BioRender.com.\n\nHere, we aimed to assess the causality between the genetic liability of physical inactivity, sedentary time and BMI by applying bidirectional Mendelian randomization analyses on summary results of accelerometer-based physical activity and sedentary time for 91,105 adults and of BMI for 806,834 adults.\n\n## Results\n\nWe used the Mendelian randomization CAUSE method to take advantage of the full genome-wide summary results (Morrison et al., 2020). We found evidence of causality between higher vigorous and moderate physical activity and lower BMI (p = 3.8 \u00d7 10\u20134 and p = 0.006, respectively), and between more sedentary time and higher BMI (p = 0.02) (Table 1, Figure 2, and Appendix 1\u2014table 1 and Appendix 1\u2014table 2). In absolute units, we approximate that each one hour daily increase in moderate physical activity or decrease in sedentary time causally decreased BMI by 0.27 kg/m2 (~0.8 kg) or 0.14 kg/m2 (~0.4 kg) (Appendix 1\u2014table 3). The median shared effect, which reflects the effect induced by correlated horizontal pleiotropy, ranged from \u20130.01 to 0 for all trait pairs, indicating that there was no bias induced by horizontal pleiotropy. The low q values under the causal model (q = 0.18\u20130.20), which reflect the proportion of variants that show correlated horizontal pleiotropy, also suggested that horizontal pleiotropy was limited. We checked for the existence of possible outlier variants that could have a large effect on the exposure but no effect on the outcome, by producing a scatter plot for CAUSE test statistics on the causal association between BMI and sedentary time (Appendix 1\u2014figure 1). While CAUSE is not sensitive to outliers as such, the existence of outlier variants could provide evidence against the causal model. However, we found no evidence of outlier variants. As we found high shared model q values in our CAUSE analyses (q=0.7-0.9), which may suggest that the genetic effects between the two traits are highly correlated and causality will be difficult to establish, we also assessed the genetic correlation between BMI and sedentary time. However, the genetic correlation analysis suggested only a modest genetic correlation between BMI and sedentary time (rg=0.27), which provides further reassurance that our CAUSE results are valid.\n\n**Table 1.**\n Results for Mendelian randomization analyses using the CAUSE method.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"4\">Causal model better fit for the data</th>\n    </tr>\n    <tr>\n      <th>Direction</th>\n      <th>Median causal effect (95% CI)</th>\n      <th>Median q (CI)</th>\n      <th>P causal vs sharing</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Vigorous PA\u2192 BMI</td>\n      <td>\u20130.16 (-0.24,\u20130.08)</td>\n      <td>0.19 (0, 0.86)</td>\n      <td>3.8 \u00d7 10\u201304</td>\n    </tr>\n    <tr>\n      <td>Moderate PA\u2192 BMI</td>\n      <td>\u20130.18 (-0.3,\u20130.05)</td>\n      <td>0.20 (0.01, 0.86)</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Sedentary time \u2192 BMI</td>\n      <td>0.11 (0.02, 0.20)</td>\n      <td>0.19 (0, 0.86)</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>BMI \u2192 Sedentary time</td>\n      <td>0.13 (0.08, 0.17)</td>\n      <td>0.18 (0, 0.85)</td>\n      <td>6.3 \u00d7 10\u20134</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Sharing model better fit for the data</td>\n    </tr>\n    <tr>\n      <td>Direction</td>\n      <td>Median shared effect (CI)</td>\n      <td>Median q (CI)</td>\n      <td>P causal vs sharing</td>\n    </tr>\n    <tr>\n      <td>BMI \u2192 Vigorous PA</td>\n      <td>\u20130.16 (-0.19,\u20130.14)</td>\n      <td>0.90 (0.77, 0.98)</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>BMI \u2192 Moderate PA</td>\n      <td>\u20130.14 (-0.19,\u20130.11)</td>\n      <td>0.77 (0.55, 0.95)</td>\n      <td>0.31</td>\n    </tr>\n  </tbody>\n</table>\n\n_BMI, Body mass index (BMI); SE, standard error; N SNPs, number of single-nucleotide polymorphism; P, P-value; PA, physical activity; IVW, inverse variance weighted; CI, 95% confidence interval.The results display the data according to the goodness-of-fit for the causal or the sharing model. The median q value indicates the proportion of variants with correlated pleiotropy._\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70386/elife-70386-fig2-v2.jpg)\n\n**Figure 2.:** Median causal estimates for Mendelian randomization analyses using the CAUSE method are shown in the left panel and mean causal estimates from the inverse variance weighted (IVW), weighted median (Wmedian) and weighted mode (Wmode) methods are shown in the right panel after outlier removal and accounting for horizontal pleiotropy. A diamond (\u2662) in the estimate for CAUSE indicates that the sharing model fit the data better than the causal model, that is that the association between the traits was more likely to be explained by horizontal correlated pleiotropy than causality. PA, physical activity; BMI, body mass index. Figure icons were created with BioRender.com.\n\nIn the reverse direction, we found no evidence of a causal effect of BMI on vigorous physical activity (p = 0.35) or moderate physical activity (p = 0.31) using CAUSE (Table 1, Figure 2, and Appendix 1\u2014table 1 and Appendix 1\u2014table 2). However, we found evidence of a causal effect of BMI on more sedentary time (p = 6.3 \u00d7 10\u20134), indicating bidirectional causality between the traits. The median shared effect in the causal association between BMI and sedentary time was zero and the q value was 0.18, suggesting that the causal association between sedentary time and BMI was unlikely to be biased by horizontal pleiotropy. In absolute units, we approximate that each kg/m2 (~3 kg) increase in BMI was causally associated with a 3.5 min increase in sedentary time per day (Appendix 1\u2014table 3).\n\nWe also estimated the causal effects of moderate physical activity, vigorous physical activity and sedentary time on BMI with four commonly used Mendelian randomization methods, including IVW, Egger, weighted median and weighted mode methods. Due to the low number of independent, genome-wide significant loci for vigorous physical activity, moderate physical activity and sedentary time that were present in the GWAS results for BMI, we used a less stringent threshold of p < 5 \u00d7 10\u20137 to identify genetic instruments for these traits, resulting in 5, 3, and 5 independent loci, respectively. The directions of causal estimates were consistent with the findings from CAUSE, but the evidence for causality was weaker (Table 2, Figure 2, Appendix 1, and Appendix 1\u2014table 4). To estimate the causal effect of BMI on moderate physical activity, vigorous physical activity and sedentary time, we used genome-wide significant BMI loci (p < 5 \u00d7 10\u20138) as instruments (n = 57, n = 55 and n = 57, respectively). Again, the directions of causal estimates were consistent with the CAUSE results, but the associations were weaker (Table 2, Figure 2, Appendix 1, and Appendix 1\u2014table 5).\n\n**Table 2.**\n Mendelian randomization results for inverse variance weighted, weighted median, weighted mode, and MR-Egger methods.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Direction</th>\n      <th colspan=\"4\">Vigorous physical activity \u2192 BMI</th>\n      <th colspan=\"4\">Moderate physical activity \u2192 BMI</th>\n      <th colspan=\"4\">Sedentary time \u2192 BMI</th>\n    </tr>\n    <tr>\n      <th>MR method</th>\n      <th>beta</th>\n      <th>SE</th>\n      <th>p-value</th>\n      <th>N SNPs</th>\n      <th>beta</th>\n      <th>SE</th>\n      <th>p-value</th>\n      <th>N SNPs</th>\n      <th>beta</th>\n      <th>SE</th>\n      <th>p-value</th>\n      <th>N SNPs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IVW</td>\n      <td>\u20130.17</td>\n      <td>0.08</td>\n      <td>0.04</td>\n      <td>5</td>\n      <td>\u20130.24</td>\n      <td>0.12</td>\n      <td>0.05</td>\n      <td>3</td>\n      <td>0.11</td>\n      <td>0.08</td>\n      <td>0.16</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>\u20130.18</td>\n      <td>0.10</td>\n      <td>0.08</td>\n      <td>5</td>\n      <td>\u20130.18</td>\n      <td>0.12</td>\n      <td>0.13</td>\n      <td>3</td>\n      <td>0.10</td>\n      <td>0.10</td>\n      <td>0.29</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>\u20130.19</td>\n      <td>0.12</td>\n      <td>0.19</td>\n      <td>5</td>\n      <td>\u20130.14</td>\n      <td>0.15</td>\n      <td>0.43</td>\n      <td>3</td>\n      <td>0.08</td>\n      <td>0.14</td>\n      <td>0.59</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>1.33</td>\n      <td>2.21</td>\n      <td>0.59</td>\n      <td>5</td>\n      <td>0.12</td>\n      <td>0.45</td>\n      <td>0.84</td>\n      <td>3</td>\n      <td>0.49</td>\n      <td>0.36</td>\n      <td>0.26</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Direction</td>\n      <td colspan=\"4\">BMI \u2192 Vigorous physical activity</td>\n      <td colspan=\"4\">BMI \u2192 Moderate physical activity</td>\n      <td colspan=\"4\">BMI \u2192 Sedentary time</td>\n    </tr>\n    <tr>\n      <td>IVW</td>\n      <td>\u20130.07</td>\n      <td>0.02</td>\n      <td>0.01</td>\n      <td>57</td>\n      <td>\u20130.06</td>\n      <td>0.03</td>\n      <td>0.03</td>\n      <td>55</td>\n      <td>0.07</td>\n      <td>0.03</td>\n      <td>0.01</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>Weighted mode</td>\n      <td>\u20130.01</td>\n      <td>0.06</td>\n      <td>0.83</td>\n      <td>57</td>\n      <td>0.02</td>\n      <td>0.06</td>\n      <td>0.68</td>\n      <td>55</td>\n      <td>\u20130.06</td>\n      <td>0.08</td>\n      <td>0.46</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>Weighted median</td>\n      <td>\u20130.04</td>\n      <td>0.03</td>\n      <td>0.27</td>\n      <td>57</td>\n      <td>0.003</td>\n      <td>0.04</td>\n      <td>0.93</td>\n      <td>55</td>\n      <td>0.03</td>\n      <td>0.04</td>\n      <td>0.48</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>MR-Egger</td>\n      <td>0.13</td>\n      <td>0.07</td>\n      <td>0.06</td>\n      <td>57</td>\n      <td>0.16</td>\n      <td>0.07</td>\n      <td>0.04</td>\n      <td>55</td>\n      <td>\u20130.02</td>\n      <td>0.08</td>\n      <td>0.76</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td colspan=\"13\">BMI, Body mass index (BMI); SE, standard error; N SNPs, number of single nucleotide polymorphism; IVW, inverse variance weighted; CI, 95% confidence interval.</td>\n    </tr>\n  </tbody>\n</table>\n\n_The results display the data according to the goodness-of-fit for the causal or the sharing model. The median q value indicates the proportion of variants with correlated pleiotropy. CI, confidence interval; PA, physical activity; BMI, body mass index; P, P-value._\n\nThe results from CAUSE analyses for BFP were consistent with those for BMI, that is there was evidence of a causal effect of higher vigorous and moderate physical activity on lower BFP (p = 1.4 \u00d7 10\u20136 and p = 0.004, respectively), and a causal effect of more sedentary time on higher BFP (p = 0.009) (Figure 2, Appendix 1\u2014table 6 and Appendix 1\u2014table 7, Appendix 1\u2014figure 2). We found no evidence of a causal relationship between physical activity or sedentary time and measures of central adiposity, including WCadjBMI and WHRadjBMI (Figure 2, Appendix 1\u2014table 6 and Appendix 1\u2014table 7, Appendix 1\u2014figure 2).\n\n## Discussion\n\nThe present Mendelian randomization analyses suggest a bidirectional causal relationship between higher sedentary time and higher BMI, implying that decreasing sedentary time is beneficial for weight management, but also that reducing adiposity may lead to additional health benefits by reducing sedentary time. The analyses also suggest there is a causal association between higher levels of physical activity and lower BMI, supporting the view that preventive programs for increasing physical activity and decreasing sedentary time are beneficial for weight management.\n\nBased on the causal effect size in our analysis, we estimated that each 1 hr daily increase in moderate physical activity or 1 hr decrease in sedentary time was associated with a 0.27 kg/m2 (~ 0.8 kg) or 0.14 kg/m2 (~0.4 kg) decrease in BMI or body weight, respectively. Our results also suggest that each 1 kg/m2 (~3 kg) higher BMI increases daily sedentary time by ~3.5 min, but do not suggest a causal effect of BMI on physical activity (Appendix 1 and Appendix 1\u2014table 3). Our results are well in accordance with a previous observational study that aimed to assess the bidirectional relationship between physical activity and weight change during a 10-year period (Barone Gibbs et al., 2020). Examining associations between accelerometer-based activity measures and weight change in 866 men and women, the study suggested a bidirectional relationship where higher sedentary time at baseline increased 10-year weight gain and higher baseline weight was associated with an unfavorable 10-year change in sedentary time. The effect sizes indicated that 1 hr lower sedentary time at baseline was associated with ~0.3 kg decrease in body weight over the 10-year follow up, whereas 3 kg higher baseline body weight was associated with ~2 min increase in sedentary time, closely resembling the causal estimates we observed in the present Mendelian randomization analyses. Our results are also in accordance with randomized clinical trials of physical activity interventions which generally suggest that increasing physical activity leads to a moderate loss of body weight in overweight or obese participants (Church et al., 2009; Rosenkilde et al., 2012; Golubic et al., 2015; Kim et al., 2019; Biddle et al., 2015). Resembling the causal estimates we observed, meta-analyses of randomized clinical trials have suggested weight losses ranging from 0.3 kg to 1.8 kg for various physical activity interventions ranging from 2 to 52 weeks (Twells et al., 2021). However, it is important to note that the causal estimates from Mendelian randomization are not fully comparable to those from randomized clinical trials, because they represent lifelong effects rather than effects lasting a defined length of an intervention, and furthermore, physical activity interventions may operate on body weight through other pathways than those affected by the genotypes. The causal effect of higher adiposity on sedentary time has not been to date assessed in randomized clinical trials, likely due to the ethical and practical limitations of performing such a study.\n\nIn a previous Mendelian randomization analysis of adult populations, evidence for a causal, bidirectional relationship between overall activity levels and higher BMI was observed using the maximum likelihood method, but the results showed evidence of horizontal pleiotropy that could not be fully accounted for and the role of activity intensity level remained unclear (Doherty et al., 2018). Here, using a method that takes advantage of full genome-wide summary results and corrects for sample overlap between the exposure and the outcome traits to maximize statistical power and correct for pleiotropy, we showed that the causal bidirectional relationship is particularly evident for the relationship between sedentary time and adiposity. Our results may also be compared with two independent one-sample Mendelian randomization studies performed in children (Richmond et al., 2014; Schnurr et al., 2018). The first study, including 4296 children at 11 years of age from the United Kingdom, indicated a causal association between higher BMI and lower accelerometer-based moderate and moderate-to-vigorous physical activity and more sedentary time (Richmond et al., 2014). The second study, including 679 children at age 3\u20138 years from Denmark, also indicated that higher BMI is causal for higher accelerometer-based sedentary time, but did not find a causality for moderate or moderate-to-vigorous physical activity (Schnurr et al., 2018). Consistent with the latter study of children, our results indicate a causal effect of BMI on sedentary behavior, but not on physical activity, in adults. The differences between studies could be due to different applied methods, or methodological limitations, such as weak instrument bias when smaller sample sizes are used, which may lead to estimated causal effects towards the observational association. One could also expect differences between children and adults given the distinct patterns by which they engage in physical activity. For example, while physical activity in adults consists of commuting, occupational and structured leisure-time activities, children primarily engage in spontaneous, play-oriented activities. Higher BMI leads to higher perceived exertion during physical activity (Groslambert and Mahon, 2006), which could reduce the natural inclination of children to engage in play-oriented activities, whereas adults exert more conscious control over their daily activities.\n\nThe strengths of the present studies include the use of genome-wide summary results for objectively measured physical activity and sedentary time, which avoided misreporting bias evident for self-reported measures, as well as the use of newly developed Mendelian randomization method that utilizes full genome-wide summary results to improve statistical power, correct for sample overlap, and assess horizontal pleiotropy, successfully applied in recent Mendelian randomization studies (J\u00e4ger et al., 2020; Mitchell et al., 2020). The limitations are that we cannot exclude other sources of bias in the measurement of physical activity and sedentary time that could influence the observed causal estimates, including the observer effect and the limited 7-day period of the measurement, which may not be representative of long-term activity habits. Furthermore, even if we used the largest available data on objectively measured physical activity, the statistical power was limited, as very few genome-wide significant loci have thus far been identified. When larger sample sizes for accelerometer-based physical activity become available, the results should be replicated. The present study is also limited in the fact that the findings are not generalizable across different age-groups or populations. Moreover, further research is needed to investigate causal relationships at various BMI thresholds.\n\nIn conclusion, the present Mendelian randomization analyses indicate a bidirectional causal relationship between higher sedentary time and higher BMI. Thus, decreasing sedentary time is likely to be beneficial for weight management, but reducing adiposity may also lead to additional health benefits by reducing sedentary time. Our analyses also suggest that there is a causal association between higher levels of physical activity and lower BMI, supporting the view that lifelong preventive programs for increasing physical activity and decreasing sedentary time are beneficial for weight management.\n\n## Materials and methods\n\n### Data sources and populations\n\nWe used summary results from the largest published genome-wide association studies (GWAS) of objectively assessed physical activity, sedentary behavior, and BMI in individuals of European ancestry. The physical activity GWAS included up to 91,105 individuals for accelerometer-based vigorous physical activity, moderate physical activity, or sedentary time from the UK Biobank (Klimentidis et al., 2018; Doherty et al., 2018). In these studies, accelerometer was worn continuously for at least 72 hr and up to 7 days. Vigorous physical activity was defined as the fraction of accelerations > 425 milli-gravities, and moderate physical activity was predicted using a machine-learning method for moderate intensity activity time (Doherty et al., 2018). Sedentary time was defined as the time spent in activities with metabolic equivalent of task (MET) \u22641.5 during sitting, lying, or in reclining posture, except for driving and certain non-desk work instances where MET \u22642.5 was applied (Doherty et al., 2018). For BMI, we utilized GWAS results from a meta-analysis of the Genetic Investigation of Anthropometric Traits (GIANT Consortium) and the UK Biobank data, including altogether 806,834 individuals of European ancestry (Pulit et al., 2019). For Mendelian randomization analyses using the inverse variance-weighted (IVW), weighted median, weighted mode, and MR-Egger regression methods, we used only the GIANT Consortium BMI meta-analysis data of 339,224 individuals without the UK Biobank data to avoid sample overlap between the exposure and outcome traits as these methods are sensitive to bias from overlapping samples (Locke et al., 2015).\n\nIn addition to BMI, we assessed causal effects of physical activity and sedentary time on body fat percentage (BFP) and on two measures of central adiposity, including waist circumference and waist-hip ratio adjusted for BMI (WCadjBMI and WHRadjBMI, respectively). GWAS results for BFP were available from an analysis of 454,633 participants of European ancestry in the UK Biobank (Elsworth et al., 2020). GWAS results for WCadjBMI and WHRadjBMI were available from GIANT Consortium meta-analyses of 231,355 and 694,649 individuals of European ancestry, respectively (Justice et al., 2017; Pulit et al., 2019).\n\n### Mendelian randomization using full genome-wide summary results for the exposure trait\n\nOnly few genetic loci have been found to be associated with accelerometer-based moderate physical activity (n = 2), vigorous physical activity (n = 1) or sedentary time (n = 4) at genome-wide significance (p < 5 \u00d7 10\u20138) (Klimentidis et al., 2018; Doherty et al., 2018), and the loci thus provide a limited power to study causal associations with BMI using Mendelian randomization. The recently published Causal Analysis Using Summary Effect Estimates (CAUSE) Mendelian randomization method (Morrison et al., 2020) improves statistical power in such cases, by utilizing full genome-wide summary results instead of genome-wide significant loci only. Furthermore, the CAUSE method is able to correct for sample overlap between the exposure and the outcome trait, which allows using the largest sample sizes available for both traits. CAUSE has also been found to be less prone to identify false positive associations compared to other commonly used Mendelian randomization methods (Burgess et al., 2019; Morrison et al., 2020).\n\nThe CAUSE method calculates the posterior probabilities of the causal effect and the shared (non-causal) effect, where the causal effect reflects the effect of the variants on the outcome trait through the exposure and the shared effect reflects correlated horizontal pleiotropy (Figure 1), that is the effect of the variants on the outcome through confounders. The distinction between a causal effect and correlated horizontal pleiotropy follows the assumption that a causal effect leads to non-zero genetic correlation between the exposure and the outcome where the correlation is driven by all variants associated with the exposure. If only a subset of variants contributes to the genetic correlation between the exposure and the outcome, it is considered the result of correlated horizontal pleiotropy. The CAUSE method also provides an estimate of the proportion of variants that are likely to show correlated horizontal pleiotropy, the q value.\n\nWe used the CAUSE settings and procedures originally recommended by the authors (Morrison et al., 2020), with the exception of q priors that were set to fit the strictest model possible (q_alpha = 1 and q_beta = 2) in order to avoid false positive findings. A thorough explanation of the steps used to perform CAUSE analysis is included in the supplementary text (Appendix 1).\n\n### Mendelian randomization using genome-wide significant loci for the exposure trait\n\nIn addition to the CAUSE method that implements Mendelian randomization analyses using full genome-wide summary results for the exposure trait, we implemented four commonly used Mendelian randomization methods that utilize genome-wide significant loci only: the IVW, MR-Egger, weighted median and weighted mode methods (Appendix 1). We performed sensitivity analyses using Steiger filtering to remove variants that showed stronger association with the outcome than the exposure trait and that were thus not considered suitable as instruments for the exposure trait. To create the genetic instrument for the exposure trait, we only included the lead variants that showed genome-wide significant associations with the trait (p < 5 \u00d7 10\u20138) and with a pairwise linkage disequilibrium (LD) r2 <0.001 with their neighboring variants, in a window of 10,000 kb. Variants that were not available in the outcome trait GWAS were substituted by their LD proxies (r2 >0.8). Palindromic variants (A/T, G/C) were excluded. If less than three genetic variants were identified with these parameters, we used a less stringent p-value threshold of p < 5 \u00d7 10\u20137 to identify enough genetic instruments. In order to assess the strength of the genetic instrument, we obtained F-statistics for each trait. The analyses were performed using the TwoSampleMR package in R and are described in detail in the Appendix 1 (Hemani et al., 2018).\n\nWe estimated heterogeneity across the causal estimates of the SNPs using the Meta R package (Schwarzer et al., 2015). The causal estimates were considered heterogeneous if the p value for Cochran\u2019s Q test was significantly different from zero (p < 0.05) and I2 was above 0.25. We assessed bias introduced by horizontal pleiotropy by implementing the Egger\u2019s intercept test using the TwoSampleMR package in R (Hemani et al., 2018). An Egger\u2019s intercept that deviated significantly from zero (p < 0.05) was considered as evidence of horizontal pleiotropy. We used the Rucker framework (Bowden et al., 2018) to assess whether Egger regression that accounts for horizontal pleiotropy but limits statistical power should be applied instead of the standard IVW model. To visually assess heterogeneity and horizontal pleiotropy, we observed forest plots and funnel plots (Figure 2, Appendix 1\u2014figure 3). To detect individual pleiotropic variants that might bias the results, we applied the RadialMR package in R using an iterative Cochran\u2019s Q method and setting a strict outlier P value threshold of <0.05 (Bowden et al., 2018). The iterative Cochran\u2019s Q, either IVW\u2019s Q or Egger\u2019s Q was chosen depending on Rucker framework results. After removing outlier variants detected with RadialMR, we re-run the Mendelian randomization and sensitivity tests and plots, to make sure that the variants introducing horizontal pleiotropy (Figure 1) had been removed. The analysis plan for this study is described in the supplementary text (Appendix 2).\n\nThe CAUSE method\u2019s median posterior probability of the causal effect cannot be easily transformed to absolute units. To convert the causal estimates to absolute units, we calculated a causal effect with weighted median method using independent variants identified in CAUSE that were not removed by the outlier extraction protocol described above, in order to mimic CAUSE control for correlated and uncorrelated pleiotropy (Appendix 1).\n",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "e14bcc7c-011b-4aa0-8ff0-8914d6f329b4",
+      "submission_id": "5b4eb6be-f689-43c9-b742-b69b4e6b9434",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carlos Isales, https://ror.org/012mef835 Medical College of Georgia at Augusta University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70386.sa0](https://doi.org/10.7554/eLife.70386.sa0)\n\nThis paper is of potential interest to those researchers and clinicians working in the area of physical activity and obesity. The authors have presented strong evidence of a causal relationship between physical activity and higher BMI. The conclusions that have been made are supported by the data and are translationally relevant.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Carlos Isales, https://ror.org/012mef835 Medical College of Georgia at Augusta University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70386.sa1](https://doi.org/10.7554/eLife.70386.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mendelian randomization suggests a bidirectional, causal relationship between physical inactivity and obesity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Y M Dennis Lo as the Senior Editor/Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Xin He (Reviewer #2); Ashley Budu-Aggrey (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) It is mentioned in the abstract and shown in Table 1 that BMI lead to increase in sedentary but not moderate/more vigorous activities. Could the authors explain why it may be the case (one may expect no associations for all or consistent associations for these 3)?\n\n2) The use of BMI is reasonable but did the authors consider other measures of (central) obesity, eg waist circumference, waist-hip ratio, fat % etc., for which GWAS summary data should be available.\n\n3) The no. of SNPs should be presented in table 2.\n\n4) How do the MR estimate in this study compare to effect sizes of physical exercise (or interventions of exercise program) from previous clinical (epidemiology) studies? How does this study support or refute findings from previous works? Please kindly elaborate further.\n\n5) Typo? in the conclusion part: increasing sedentary time is likely to be beneficial for weight management.\n\n6) Supp Text p21 line 471\n\nI don't think the inside assumption can be checked by I-squared (it addresses NOME assumption mainly). Please refer to\n\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC5446088/.\n\n7) It may be useful to visualize the MR analysis with scatter plot of the effect sizes of variants on the exposure (BMI) and outcome (sedentary time). In the plot, the variants can be colored by their contribution to the CAUSE statistics, see Figure 4 of the CAUSE paper. This plot would help show, for example, whether there are outlier variants; or whether the results are largely driven by just a small number of variants.\n\n8) CAUSE is susceptible to false positives when the value of q, a measure of the proportion of shared variants, is high. The authors stated that q is about 0.2, which is pretty small. However, it is unclear if this is q under the causal model or the sharing model. If q is small under the sharing model, the result would be quite convincing. This needs to be clarified.\n\n9) For transparency, it would be useful to make the genetic instruments, the summary data and the scripts used to perform the analysis publicly available. It would be useful to emphasize in the manuscript that it is the causal effect of genetic liability for these traits that have been investigated. In addition, the authors may want to mention that further study would be warranted to investigate causal relationships at various BMI thresholds.\n\nReviewer #1 (Recommendations for the authors):\n\nThe author employed a causal inference method known as Mendelian randomization (MR) to evaluate potential causal relationships between physical activities and obesity. The strengths and part of the limitations are given in the public review part.\n\nHere are my further suggestions/comments for authors' consideration\n\n1) It is mentioned in the abstract and shown in Table 1 that BMI lead to increase in sedentary but not moderate/more vigorous activities. Could the authors explain why it may be the case (one may expect no associations for all or consistent associations for these 3)?\n\n2) The use of BMI is reasonable but did the authors consider other measures of (central) obesity, eg waist circumference, waist-hip ratio, fat % etc. , for which gwas summary data should be available\n\n3) I suggest the no. of snps be presented in table 2\n\n4) How do the MR estimate in this study compare to effect sizes of physical exercise (or interventions of exercise program) from previous clinical (epidemiology) studies? How does this study support or refute findings from previous works? Please kindly elaborate further.\n\n5) typo? in the conclusion part: increasing sedentary time is likely to be beneficial for weight management.\n\n6) Supp Text p21 line 471\n\nI don't think the inside assumption can be checked by I-squared (it addresses NOME assumption mainly). Please refer to\n\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC5446088/.\n\nReviewer #2 (Recommendations for the authors):\n\nNone.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have presented a well written and conclusive study, where strong evidence suggests a causal bidirectional relationship between BMI and physical inactivity.\n\nThe methods used and results presented do support the conclusions that have been claimed in this study.\n\nFor transparency, I would suggest making the genetic instruments, the summary data and the scripts used to perform the analysis publicly available. I would also stress that it is the causal effect of genetic liability for these traits that have been investigated. In addition, the authors may want to mention that further study would be warranted to investigate causal relationships at various BMI thresholds.\n",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "73d97ea6-4eea-4daf-b401-7457815a1617",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C1",
+      "claim": "Obesity and physical inactivity are major risk factors for type 2 diabetes, cardiovascular diseases and several types of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity and physical inactivity are major risk factors for a number of chronic diseases, such as type 2 diabetes, cardiovascular diseases and several types of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about risk factors for chronic diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "44e5c482-e05c-4607-a78e-2405795b977e",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C2",
+      "claim": "The epidemic of obesity and sedentary lifestyle is a major burden on public health systems worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Today's epidemic of obesity and sedentary lifestyle is thus a major burden on public health systems worldwide (GBD 2019 Risk Factors Collaborators, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to GBD 2019 Risk Factors Collaborators, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "9e0ae6fd-02e7-487a-bdb2-f98db6263d76",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C3",
+      "claim": "Physical inactivity and increased sedentary time are associated with a higher risk of obesity according to observational studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Many observational studies suggest that physical inactivity and increased sedentary time are associated with a higher risk of obesity (Lee et al., 2010; Du et al., 2013; Silva et al., 2019; Myers et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to observational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "07d18760-c891-400c-b779-bc4bf113097b",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C4",
+      "claim": "Some studies have indicated a reverse effect where obesity leads to physical inactivity and increased sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies have indicated a reverse effect, where obesity leads to physical inactivity and increased sedentary time (Petersen et al., 2004; Mortensen et al., 2006; Bak et al., 2004; Barone Gibbs et al., 2020; Ekelund et al., 2008; Myers et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies showing reverse causality.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b8915b44-93ff-4c7b-aa2b-2c54d4ea0edc",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C5",
+      "claim": "Randomized clinical trials of physical activity interventions have indicated that the causal effects of physical activity on body weight are modest.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, randomized clinical trials of physical activity interventions have indicated that the causal effects of physical activity on body weight are modest (Church et al., 2009; Rosenkilde et al., 2012; Golubic et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to randomized clinical trials.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "113fc9d5-ca70-4843-9c95-e07f56273ec7",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C6",
+      "claim": "The strong inverse relationship between physical activity and body weight observed in cross-sectional epidemiological studies may be affected by bias such as reverse causality or confounding.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the observational results may be affected by bias, such as reverse causality or confounding by other lifestyle or environmental factors (Schnurr et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing observational studies with RCT results, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "4759f154-d88c-4166-a4a7-b46cad36ecbe",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C7",
+      "claim": "The causal relationships between physical inactivity, sedentary time and adiposity remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the causal relationships between physical inactivity, sedentary time and adiposity remain unclear and warrant further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the conflicting evidence presented in the introduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d6283ca0-67fa-483b-a767-65eaf9ed473e",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C8",
+      "claim": "It is important to assess the causal relationship with adiposity separately for physical activity and sedentary time because individuals can be physically active even if they spend substantial time in sedentary behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to assess the causal relationship with adiposity separately for physical activity and sedentary time, as individuals can be physically active even if they engaged a substantial part of their time to sedentary behaviors, and vice versa (Panahi and Tremblay, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and represents established knowledge about the independence of physical activity and sedentary behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1ce44f3e-cf73-47de-81f1-bdf76c3c5dea",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C9",
+      "claim": "Mendelian randomization is a powerful method to minimize the influence of reverse causality and confounding on causal estimates derived from observational data.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization is a powerful method to minimize the influence of reverse causality and confounding on causal estimates derived from observational data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established methodological knowledge about Mendelian randomization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1134c8dd-54e9-4bf2-8d7c-c339ccfa3b3c",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C10",
+      "claim": "Genotypes are randomly allocated at conception.",
+      "claim_type": "EXPLICIT",
+      "source": "Since genotypes are randomly allocated at conception, genetic alleles associated with physical activity, sedentary behavior, and body mass index (BMI) can be used to assign individuals according to higher or lower mean levels of these exposures in a randomized manner (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is fundamental genetic knowledge underlying Mendelian randomization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "8435de49-4ce2-4396-a74a-16cd3c28837d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C11",
+      "claim": "Genetic alleles associated with physical activity, sedentary behavior, and BMI can be used to assign individuals according to higher or lower mean levels of these exposures in a randomized manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Since genotypes are randomly allocated at conception, genetic alleles associated with physical activity, sedentary behavior, and body mass index (BMI) can be used to assign individuals according to higher or lower mean levels of these exposures in a randomized manner (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the principle of Mendelian randomization, established methodological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "38ed1a66-7b43-48f2-b24d-c714c351e24a",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C12",
+      "claim": "The study used accelerometer-based physical activity and sedentary time data for 91,105 adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we aimed to assess the causality between the genetic liability of physical inactivity, sedentary time and BMI by applying bidirectional Mendelian randomization analyses on summary results of accelerometer-based physical activity and sedentary time for 91,105 adults and of BMI for 806,834 adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "5012d7b8-5bdb-4cad-9e1b-8a84174773eb",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C13",
+      "claim": "The study used BMI data for 806,834 adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we aimed to assess the causality between the genetic liability of physical inactivity, sedentary time and BMI by applying bidirectional Mendelian randomization analyses on summary results of accelerometer-based physical activity and sedentary time for 91,105 adults and of BMI for 806,834 adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "0faf3b97-6062-477d-9f38-1385053e6dba",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C14",
+      "claim": "Higher vigorous physical activity is causal for lower BMI with a beta of -0.16 (95% CI: -0.24, -0.08) and p = 3.8 \u00d7 10-4.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence of causality between higher vigorous and moderate physical activity and lower BMI (p = 3.8 \u00d7 10\u20134 and p = 0.006, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the CAUSE Mendelian randomization analysis presented in the Results section and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "ddac9d45-485e-483b-bac0-e2303e09b102",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C15",
+      "claim": "Higher moderate physical activity is causal for lower BMI with a beta of -0.18 (95% CI: -0.3, -0.05) and p = 0.006.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence of causality between higher vigorous and moderate physical activity and lower BMI (p = 3.8 \u00d7 10\u20134 and p = 0.006, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the CAUSE Mendelian randomization analysis presented in the Results section and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "79815067-4223-450c-a18e-47c60cd06fea",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C16",
+      "claim": "More sedentary time is causal for higher BMI with a beta of 0.11 (95% CI: 0.02, 0.20) and p = 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence of causality between higher vigorous and moderate physical activity and lower BMI (p = 3.8 \u00d7 10\u20134 and p = 0.006, respectively), and between more sedentary time and higher BMI (p = 0.02) (Table 1, Figure 2, and Appendix 1\u2014table 1 and Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the CAUSE Mendelian randomization analysis presented in the Results section, Table 1, and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "41e15923-b5ce-4c36-b9ea-f0911ce028fa",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C17",
+      "claim": "Each one hour daily increase in moderate physical activity causally decreased BMI by approximately 0.27 kg/m2 (~0.8 kg).",
+      "claim_type": "EXPLICIT",
+      "source": "In absolute units, we approximate that each one hour daily increase in moderate physical activity or decrease in sedentary time causally decreased BMI by 0.27 kg/m2 (~0.8 kg) or 0.14 kg/m2 (~0.4 kg) (Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conversion of the causal effect to absolute units based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b0699ed0-32f0-4537-b1e9-f95a62e3c70a",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C18",
+      "claim": "Each one hour daily decrease in sedentary time causally decreased BMI by approximately 0.14 kg/m2 (~0.4 kg).",
+      "claim_type": "EXPLICIT",
+      "source": "In absolute units, we approximate that each one hour daily increase in moderate physical activity or decrease in sedentary time causally decreased BMI by 0.27 kg/m2 (~0.8 kg) or 0.14 kg/m2 (~0.4 kg) (Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conversion of the causal effect to absolute units based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "0046dfd7-de4f-4a5c-b3ac-cc83a9f8dffb",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C19",
+      "claim": "The median shared effect ranged from -0.01 to 0 for all trait pairs, indicating no bias induced by horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The median shared effect, which reflects the effect induced by correlated horizontal pleiotropy, ranged from \u20130.01 to 0 for all trait pairs, indicating that there was no bias induced by horizontal pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the CAUSE analysis results regarding pleiotropy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b5758945-9af3-4a80-86e3-566a2318f08e",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C20",
+      "claim": "The low q values under the causal model (q = 0.18\u20130.20) suggested that horizontal pleiotropy was limited.",
+      "claim_type": "EXPLICIT",
+      "source": "The low q values under the causal model (q = 0.18\u20130.20), which reflect the proportion of variants that show correlated horizontal pleiotropy, also suggested that horizontal pleiotropy was limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the CAUSE analysis q values from the study's results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "2616202e-ab60-4f41-8398-24d56a144f92",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C21",
+      "claim": "No evidence of outlier variants was found in the causal association between BMI and sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "We checked for the existence of possible outlier variants that could have a large effect on the exposure but no effect on the outcome, by producing a scatter plot for CAUSE test statistics on the causal association between BMI and sedentary time (Appendix 1\u2014figure 1). While CAUSE is not sensitive to outliers as such, the existence of outlier variants could provide evidence against the causal model. However, we found no evidence of outlier variants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual inspection of scatter plots from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "dae688a5-0580-42a7-9c12-2c0ad467227d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C22",
+      "claim": "The genetic correlation between BMI and sedentary time is modest (rg=0.27).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the genetic correlation analysis suggested only a modest genetic correlation between BMI and sedentary time (rg=0.27), which provides further reassurance that our CAUSE results are valid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "dba51047-4976-4bcb-8325-42734d0f2297",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C23",
+      "claim": "There is no evidence of a causal effect of BMI on vigorous physical activity (p = 0.35).",
+      "claim_type": "EXPLICIT",
+      "source": "In the reverse direction, we found no evidence of a causal effect of BMI on vigorous physical activity (p = 0.35) or moderate physical activity (p = 0.31) using CAUSE (Table 1, Figure 2, and Appendix 1\u2014table 1 and Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the CAUSE Mendelian randomization analysis in the reverse direction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "6d471b37-e010-453e-8eb8-4427ac033e4e",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C24",
+      "claim": "There is no evidence of a causal effect of BMI on moderate physical activity (p = 0.31).",
+      "claim_type": "EXPLICIT",
+      "source": "In the reverse direction, we found no evidence of a causal effect of BMI on vigorous physical activity (p = 0.35) or moderate physical activity (p = 0.31) using CAUSE (Table 1, Figure 2, and Appendix 1\u2014table 1 and Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the CAUSE Mendelian randomization analysis in the reverse direction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "c5e5292e-128e-4524-bb69-c1fdf20bdc3b",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C25",
+      "claim": "There is evidence of a causal effect of BMI on more sedentary time (p = 6.3 \u00d7 10-4).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found evidence of a causal effect of BMI on more sedentary time (p = 6.3 \u00d7 10\u20134), indicating bidirectional causality between the traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the CAUSE Mendelian randomization analysis showing reverse causality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1eaa0d44-b5f0-4ffb-b35a-cd51e34a5a19",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C26",
+      "claim": "There is bidirectional causality between sedentary time and BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found evidence of a causal effect of BMI on more sedentary time (p = 6.3 \u00d7 10\u20134), indicating bidirectional causality between the traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from finding significant causal effects in both directions between sedentary time and BMI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d104368b-0c95-416c-b635-c995a9c01cc2",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C27",
+      "claim": "Each kg/m2 (~3 kg) increase in BMI is causally associated with a 3.5 min increase in sedentary time per day.",
+      "claim_type": "EXPLICIT",
+      "source": "In absolute units, we approximate that each kg/m2 (~3 kg) increase in BMI was causally associated with a 3.5 min increase in sedentary time per day (Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conversion of the causal effect to absolute units based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "7b09750d-b1b9-49cf-afe8-4d830cb1b1eb",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C28",
+      "claim": "The median shared effect in the causal association between BMI and sedentary time was zero.",
+      "claim_type": "EXPLICIT",
+      "source": "The median shared effect in the causal association between BMI and sedentary time was zero and the q value was 0.18, suggesting that the causal association between sedentary time and BMI was unlikely to be biased by horizontal pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the CAUSE analysis indicating lack of pleiotropy bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "00c47e7c-82c2-4b52-b158-aad0b3901ec5",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C29",
+      "claim": "The q value for the causal association between BMI and sedentary time was 0.18.",
+      "claim_type": "EXPLICIT",
+      "source": "The median shared effect in the causal association between BMI and sedentary time was zero and the q value was 0.18, suggesting that the causal association between sedentary time and BMI was unlikely to be biased by horizontal pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the CAUSE analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "afff3e15-e435-4531-8a16-455e331027e6",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C30",
+      "claim": "The causal association between sedentary time and BMI is unlikely to be biased by horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The median shared effect in the causal association between BMI and sedentary time was zero and the q value was 0.18, suggesting that the causal association between sedentary time and BMI was unlikely to be biased by horizontal pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the median shared effect and q value results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "5e57419b-a637-4723-9076-17e201acc9be",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C31",
+      "claim": "A less stringent threshold of p < 5 \u00d7 10-7 was used to identify genetic instruments for vigorous physical activity, moderate physical activity and sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the low number of independent, genome-wide significant loci for vigorous physical activity, moderate physical activity and sedentary time that were present in the GWAS results for BMI, we used a less stringent threshold of p < 5 \u00d7 10\u20137 to identify genetic instruments for these traits, resulting in 5, 3, and 5 independent loci, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1e0ed464-27f4-4b57-993d-2356c4ba2860",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C32",
+      "claim": "Using the less stringent threshold resulted in 5 independent loci for vigorous physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the low number of independent, genome-wide significant loci for vigorous physical activity, moderate physical activity and sedentary time that were present in the GWAS results for BMI, we used a less stringent threshold of p < 5 \u00d7 10\u20137 to identify genetic instruments for these traits, resulting in 5, 3, and 5 independent loci, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of applying the less stringent threshold in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "c0c90d3e-98b3-4a4a-bc55-6416aff356af",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C33",
+      "claim": "Using the less stringent threshold resulted in 3 independent loci for moderate physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the low number of independent, genome-wide significant loci for vigorous physical activity, moderate physical activity and sedentary time that were present in the GWAS results for BMI, we used a less stringent threshold of p < 5 \u00d7 10\u20137 to identify genetic instruments for these traits, resulting in 5, 3, and 5 independent loci, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of applying the less stringent threshold in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "049839ec-1aae-4603-a08f-7e4d2e7cef6b",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C34",
+      "claim": "Using the less stringent threshold resulted in 5 independent loci for sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the low number of independent, genome-wide significant loci for vigorous physical activity, moderate physical activity and sedentary time that were present in the GWAS results for BMI, we used a less stringent threshold of p < 5 \u00d7 10\u20137 to identify genetic instruments for these traits, resulting in 5, 3, and 5 independent loci, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of applying the less stringent threshold in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "236632b9-598d-47f0-a754-0f691ff058a6",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C35",
+      "claim": "The directions of causal estimates from IVW, Egger, weighted median and weighted mode methods were consistent with the findings from CAUSE, but the evidence for causality was weaker.",
+      "claim_type": "EXPLICIT",
+      "source": "The directions of causal estimates were consistent with the findings from CAUSE, but the evidence for causality was weaker (Table 2, Figure 2, Appendix 1, and Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of results from different Mendelian randomization methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "2b3fcbf1-1eed-4b3d-af4b-18857b0d4dcb",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C36",
+      "claim": "Higher vigorous physical activity is causal for lower body fat percentage (p = 1.4 \u00d7 10-6).",
+      "claim_type": "EXPLICIT",
+      "source": "The results from CAUSE analyses for BFP were consistent with those for BMI, that is there was evidence of a causal effect of higher vigorous and moderate physical activity on lower BFP (p = 1.4 \u00d7 10\u20136 and p = 0.004, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from CAUSE analysis using body fat percentage as the outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b2dd1167-102b-497b-8900-33712fc6df2f",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C37",
+      "claim": "Higher moderate physical activity is causal for lower body fat percentage (p = 0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "The results from CAUSE analyses for BFP were consistent with those for BMI, that is there was evidence of a causal effect of higher vigorous and moderate physical activity on lower BFP (p = 1.4 \u00d7 10\u20136 and p = 0.004, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from CAUSE analysis using body fat percentage as the outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "f9a4d33b-84cd-48bd-b84e-1ddffcc3e680",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C38",
+      "claim": "More sedentary time is causal for higher body fat percentage (p = 0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "The results from CAUSE analyses for BFP were consistent with those for BMI, that is there was evidence of a causal effect of higher vigorous and moderate physical activity on lower BFP (p = 1.4 \u00d7 10\u20136 and p = 0.004, respectively), and a causal effect of more sedentary time on higher BFP (p = 0.009) (Figure 2, Appendix 1\u2014table 6 and Appendix 1\u2014table 7, Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from CAUSE analysis using body fat percentage as the outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "41003d52-82de-4e96-9930-d13f1690f9b7",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C39",
+      "claim": "There is no evidence of a causal relationship between physical activity or sedentary time and waist circumference adjusted for BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence of a causal relationship between physical activity or sedentary time and measures of central adiposity, including WCadjBMI and WHRadjBMI (Figure 2, Appendix 1\u2014table 6 and Appendix 1\u2014table 7, Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from CAUSE analysis using central adiposity measures as outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b083c681-fee6-4f66-8c87-e6ee2929e19b",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C40",
+      "claim": "There is no evidence of a causal relationship between physical activity or sedentary time and waist-hip ratio adjusted for BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence of a causal relationship between physical activity or sedentary time and measures of central adiposity, including WCadjBMI and WHRadjBMI (Figure 2, Appendix 1\u2014table 6 and Appendix 1\u2014table 7, Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from CAUSE analysis using central adiposity measures as outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "14aceb17-1529-467a-919e-4acf89369132",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C41",
+      "claim": "The bidirectional causal relationship between sedentary time and BMI suggests that decreasing sedentary time is beneficial for weight management.",
+      "claim_type": "EXPLICIT",
+      "source": "The present Mendelian randomization analyses suggest a bidirectional causal relationship between higher sedentary time and higher BMI, implying that decreasing sedentary time is beneficial for weight management, but also that reducing adiposity may lead to additional health benefits by reducing sedentary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and implication drawn from the bidirectional causality finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "feba3205-0d67-41c5-83ab-e091711b74ee",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C42",
+      "claim": "Reducing adiposity may lead to additional health benefits by reducing sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "The present Mendelian randomization analyses suggest a bidirectional causal relationship between higher sedentary time and higher BMI, implying that decreasing sedentary time is beneficial for weight management, but also that reducing adiposity may lead to additional health benefits by reducing sedentary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and implication drawn from the bidirectional causality finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "6d6233d6-f454-4d36-8e11-07da28a46992",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C43",
+      "claim": "There is a causal association between higher levels of physical activity and lower BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "The analyses also suggest there is a causal association between higher levels of physical activity and lower BMI, supporting the view that preventive programs for increasing physical activity and decreasing sedentary time are beneficial for weight management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding regarding physical activity and BMI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "2f49b4f0-3a83-480e-a8da-e04d6549decc",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C44",
+      "claim": "Preventive programs for increasing physical activity and decreasing sedentary time are beneficial for weight management.",
+      "claim_type": "EXPLICIT",
+      "source": "The analyses also suggest there is a causal association between higher levels of physical activity and lower BMI, supporting the view that preventive programs for increasing physical activity and decreasing sedentary time are beneficial for weight management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the causal findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "f97542b3-45bd-4ff4-8f71-fe9762aca7f0",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C45",
+      "claim": "A previous observational study found a bidirectional relationship where higher sedentary time at baseline increased 10-year weight gain and higher baseline weight was associated with unfavorable 10-year change in sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are well in accordance with a previous observational study that aimed to assess the bidirectional relationship between physical activity and weight change during a 10-year period (Barone Gibbs et al., 2020). Examining associations between accelerometer-based activity measures and weight change in 866 men and women, the study suggested a bidirectional relationship where higher sedentary time at baseline increased 10-year weight gain and higher baseline weight was associated with an unfavorable 10-year change in sedentary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited observational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "9b5f4fcb-9996-480f-b88d-e56fad314a05",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C46",
+      "claim": "In a previous observational study, 1 hr lower sedentary time at baseline was associated with ~0.3 kg decrease in body weight over 10 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect sizes indicated that 1 hr lower sedentary time at baseline was associated with ~0.3 kg decrease in body weight over the 10-year follow up, whereas 3 kg higher baseline body weight was associated with ~2 min increase in sedentary time, closely resembling the causal estimates we observed in the present Mendelian randomization analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of effect sizes from a cited observational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "7f8fa76f-2388-40cd-8c17-ea9bdebce8fe",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C47",
+      "claim": "In a previous observational study, 3 kg higher baseline body weight was associated with ~2 min increase in sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect sizes indicated that 1 hr lower sedentary time at baseline was associated with ~0.3 kg decrease in body weight over the 10-year follow up, whereas 3 kg higher baseline body weight was associated with ~2 min increase in sedentary time, closely resembling the causal estimates we observed in the present Mendelian randomization analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of effect sizes from a cited observational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "7cd67452-1011-4351-91a9-ae908ed38d70",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C48",
+      "claim": "The results are in accordance with randomized clinical trials of physical activity interventions which generally suggest that increasing physical activity leads to moderate loss of body weight in overweight or obese participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are also in accordance with randomized clinical trials of physical activity interventions which generally suggest that increasing physical activity leads to a moderate loss of body weight in overweight or obese participants (Church et al., 2009; Rosenkilde et al., 2012; Golubic et al., 2015; Kim et al., 2019; Biddle et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with findings from cited randomized clinical trials.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b7ee7340-46c7-49a3-865d-adda17b91062",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C49",
+      "claim": "Meta-analyses of randomized clinical trials have suggested weight losses ranging from 0.3 kg to 1.8 kg for various physical activity interventions ranging from 2 to 52 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Resembling the causal estimates we observed, meta-analyses of randomized clinical trials have suggested weight losses ranging from 0.3 kg to 1.8 kg for various physical activity interventions ranging from 2 to 52 weeks (Twells et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "bb3310fe-a3ab-4a2a-bcd6-6fbd2dafed97",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C50",
+      "claim": "Causal estimates from Mendelian randomization represent lifelong effects rather than effects lasting a defined length of an intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that the causal estimates from Mendelian randomization are not fully comparable to those from randomized clinical trials, because they represent lifelong effects rather than effects lasting a defined length of an intervention, and furthermore, physical activity interventions may operate on body weight through other pathways than those affected by the genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established methodological knowledge about the interpretation of Mendelian randomization results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "60c80dbb-8c46-46b4-9ec8-1cc108cd7e44",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C51",
+      "claim": "Physical activity interventions may operate on body weight through other pathways than those affected by the genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that the causal estimates from Mendelian randomization are not fully comparable to those from randomized clinical trials, because they represent lifelong effects rather than effects lasting a defined length of an intervention, and furthermore, physical activity interventions may operate on body weight through other pathways than those affected by the genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration about the interpretation of Mendelian randomization results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "984bf511-d750-475d-a870-86c84250a6d1",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C52",
+      "claim": "The causal effect of higher adiposity on sedentary time has not been assessed in randomized clinical trials to date, likely due to ethical and practical limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "The causal effect of higher adiposity on sedentary time has not been to date assessed in randomized clinical trials, likely due to the ethical and practical limitations of performing such a study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of certain types of studies with speculation about the reasons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "f89d6823-6733-42da-9e90-55cfd8a36772",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C53",
+      "claim": "A previous Mendelian randomization analysis found evidence for a causal, bidirectional relationship between overall activity levels and higher BMI using the maximum likelihood method.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous Mendelian randomization analysis of adult populations, evidence for a causal, bidirectional relationship between overall activity levels and higher BMI was observed using the maximum likelihood method, but the results showed evidence of horizontal pleiotropy that could not be fully accounted for and the role of activity intensity level remained unclear (Doherty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited Mendelian randomization study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "843d61c6-4e53-435a-b12d-9a3dfedf90df",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C54",
+      "claim": "A previous Mendelian randomization analysis showed evidence of horizontal pleiotropy that could not be fully accounted for.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous Mendelian randomization analysis of adult populations, evidence for a causal, bidirectional relationship between overall activity levels and higher BMI was observed using the maximum likelihood method, but the results showed evidence of horizontal pleiotropy that could not be fully accounted for and the role of activity intensity level remained unclear (Doherty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of limitations from a cited Mendelian randomization study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "f34131dc-bc04-46cc-9a09-244033630a4d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C55",
+      "claim": "A one-sample Mendelian randomization study in 4296 children at 11 years of age from the United Kingdom indicated a causal association between higher BMI and lower accelerometer-based moderate and moderate-to-vigorous physical activity and more sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "The first study, including 4296 children at 11 years of age from the United Kingdom, indicated a causal association between higher BMI and lower accelerometer-based moderate and moderate-to-vigorous physical activity and more sedentary time (Richmond et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited Mendelian randomization study in children.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b293d605-31da-415b-9833-3728fa3bdac1",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C56",
+      "claim": "A one-sample Mendelian randomization study in 679 children at age 3-8 years from Denmark indicated that higher BMI is causal for higher accelerometer-based sedentary time, but did not find causality for moderate or moderate-to-vigorous physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The second study, including 679 children at age 3\u20138 years from Denmark, also indicated that higher BMI is causal for higher accelerometer-based sedentary time, but did not find a causality for moderate or moderate-to-vigorous physical activity (Schnurr et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited Mendelian randomization study in children.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "63c8ed90-aaa3-42ba-9e84-d756e6e034e6",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C57",
+      "claim": "The differences between studies could be due to different applied methods, methodological limitations such as weak instrument bias when smaller sample sizes are used, or differences between children and adults in physical activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences between studies could be due to different applied methods, or methodological limitations, such as weak instrument bias when smaller sample sizes are used, which may lead to estimated causal effects towards the observational association. One could also expect differences between children and adults given the distinct patterns by which they engage in physical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about reasons for differences between studies.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "a240745b-93ae-4d6c-986c-6d21794b36d6",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C58",
+      "claim": "Physical activity in adults consists of commuting, occupational and structured leisure-time activities, while children primarily engage in spontaneous, play-oriented activities.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while physical activity in adults consists of commuting, occupational and structured leisure-time activities, children primarily engage in spontaneous, play-oriented activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about differences in physical activity patterns between adults and children.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1ab88066-bad3-457c-910f-4752bce250ed",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C59",
+      "claim": "Higher BMI leads to higher perceived exertion during physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher BMI leads to higher perceived exertion during physical activity (Groslambert and Mahon, 2006), which could reduce the natural inclination of children to engage in play-oriented activities, whereas adults exert more conscious control over their daily activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Groslambert and Mahon, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "066d0cf9-af2b-46e6-b12d-010cbb4f5cbf",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C60",
+      "claim": "Higher perceived exertion during physical activity could reduce the natural inclination of children to engage in play-oriented activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher BMI leads to higher perceived exertion during physical activity (Groslambert and Mahon, 2006), which could reduce the natural inclination of children to engage in play-oriented activities, whereas adults exert more conscious control over their daily activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how perceived exertion might affect children's physical activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "f78620d4-f48f-47e3-bba3-e368258c929f",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C61",
+      "claim": "Adults exert more conscious control over their daily activities compared to children.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher BMI leads to higher perceived exertion during physical activity (Groslambert and Mahon, 2006), which could reduce the natural inclination of children to engage in play-oriented activities, whereas adults exert more conscious control over their daily activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about behavioral differences between adults and children.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "f59533f9-4ed6-4cce-b4ca-685cc37a0e9d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C62",
+      "claim": "The study used genome-wide summary results for objectively measured physical activity and sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "The strengths of the present studies include the use of genome-wide summary results for objectively measured physical activity and sedentary time, which avoided misreporting bias evident for self-reported measures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological strength of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "130cc2cc-63cc-4580-bebd-fa55e6cc6c63",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C63",
+      "claim": "Objectively measured physical activity and sedentary time avoid misreporting bias evident for self-reported measures.",
+      "claim_type": "EXPLICIT",
+      "source": "The strengths of the present studies include the use of genome-wide summary results for objectively measured physical activity and sedentary time, which avoided misreporting bias evident for self-reported measures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established methodological knowledge about the advantages of objective measures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1de84bd0-bec2-4ba7-91a6-c15de9a6d15c",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C64",
+      "claim": "The study used a newly developed Mendelian randomization method that utilizes full genome-wide summary results to improve statistical power, correct for sample overlap, and assess horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as the use of newly developed Mendelian randomization method that utilizes full genome-wide summary results to improve statistical power, correct for sample overlap, and assess horizontal pleiotropy, successfully applied in recent Mendelian randomization studies (J\u00e4ger et al., 2020; Mitchell et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological strength of the study with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "97f72055-7702-4a7b-ad09-7f2a58e3b4f4",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C65",
+      "claim": "Other sources of bias in the measurement of physical activity and sedentary time cannot be excluded, including the observer effect and the limited 7-day period of measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "The limitations are that we cannot exclude other sources of bias in the measurement of physical activity and sedentary time that could influence the observed causal estimates, including the observer effect and the limited 7-day period of the measurement, which may not be representative of long-term activity habits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d75d998a-5c55-4b0d-86d5-68736801176f",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C66",
+      "claim": "The 7-day measurement period may not be representative of long-term activity habits.",
+      "claim_type": "EXPLICIT",
+      "source": "The limitations are that we cannot exclude other sources of bias in the measurement of physical activity and sedentary time that could influence the observed causal estimates, including the observer effect and the limited 7-day period of the measurement, which may not be representative of long-term activity habits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "9b8d76e2-0806-4c88-a382-298108d39979",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C67",
+      "claim": "Statistical power was limited because very few genome-wide significant loci have been identified for objectively measured physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, even if we used the largest available data on objectively measured physical activity, the statistical power was limited, as very few genome-wide significant loci have thus far been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation based on the current state of genetic research.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "de099427-bf24-474f-bb6f-1135e7dc4a04",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C68",
+      "claim": "The results should be replicated when larger sample sizes for accelerometer-based physical activity become available.",
+      "claim_type": "EXPLICIT",
+      "source": "When larger sample sizes for accelerometer-based physical activity become available, the results should be replicated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d511e29a-0094-44ca-a90b-27ab60558def",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C69",
+      "claim": "The findings are not generalizable across different age-groups or populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study is also limited in the fact that the findings are not generalizable across different age-groups or populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "9529459d-14f2-4cff-9f77-f30ffbd08b30",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C70",
+      "claim": "Further research is needed to investigate causal relationships at various BMI thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, further research is needed to investigate causal relationships at various BMI thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "ac884a1f-576d-457b-9db2-52f0dd715df9",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C71",
+      "claim": "Lifelong preventive programs for increasing physical activity and decreasing sedentary time are beneficial for weight management.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses also suggest that there is a causal association between higher levels of physical activity and lower BMI, supporting the view that lifelong preventive programs for increasing physical activity and decreasing sedentary time are beneficial for weight management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the causal findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "914a56b7-ec92-4566-b2d1-b437dacd7c98",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C72",
+      "claim": "The physical activity GWAS included up to 91,105 individuals from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "The physical activity GWAS included up to 91,105 individuals for accelerometer-based vigorous physical activity, moderate physical activity, or sedentary time from the UK Biobank (Klimentidis et al., 2018; Doherty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "4c4b9b59-7ddb-4875-9841-2d0a2358955c",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C73",
+      "claim": "In the UK Biobank study, accelerometer was worn continuously for at least 72 hr and up to 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, accelerometer was worn continuously for at least 72 hr and up to 7 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement protocol in the source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "33c037e4-2a4c-48eb-b1b2-be37e006d8a6",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C74",
+      "claim": "Vigorous physical activity was defined as the fraction of accelerations > 425 milli-gravities.",
+      "claim_type": "EXPLICIT",
+      "source": "Vigorous physical activity was defined as the fraction of accelerations > 425 milli-gravities, and moderate physical activity was predicted using a machine-learning method for moderate intensity activity time (Doherty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational definition used in the source data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "26080f23-feb1-46db-86e2-f8fb9fc1683a",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C75",
+      "claim": "Moderate physical activity was predicted using a machine-learning method for moderate intensity activity time.",
+      "claim_type": "EXPLICIT",
+      "source": "Vigorous physical activity was defined as the fraction of accelerations > 425 milli-gravities, and moderate physical activity was predicted using a machine-learning method for moderate intensity activity time (Doherty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational definition used in the source data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "71d9ee15-0849-4dee-bb2d-7ec3146fb74c",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C76",
+      "claim": "Sedentary time was defined as the time spent in activities with metabolic equivalent of task (MET) \u22641.5 during sitting, lying, or in reclining posture, except for driving and certain non-desk work instances where MET \u22642.5 was applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Sedentary time was defined as the time spent in activities with metabolic equivalent of task (MET) \u22641.5 during sitting, lying, or in reclining posture, except for driving and certain non-desk work instances where MET \u22642.5 was applied (Doherty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational definition used in the source data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1479927c-7fa5-47ab-90e3-358d07649a5a",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C77",
+      "claim": "For BMI, the study utilized GWAS results from a meta-analysis of the GIANT Consortium and the UK Biobank data, including altogether 806,834 individuals of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "For BMI, we utilized GWAS results from a meta-analysis of the Genetic Investigation of Anthropometric Traits (GIANT Consortium) and the UK Biobank data, including altogether 806,834 individuals of European ancestry (Pulit et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d89d8930-67a1-4067-acd7-e617adf6b661",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C78",
+      "claim": "For IVW, weighted median, weighted mode, and MR-Egger regression methods, only the GIANT Consortium BMI meta-analysis data of 339,224 individuals without the UK Biobank data was used to avoid sample overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "For Mendelian randomization analyses using the inverse variance-weighted (IVW), weighted median, weighted mode, and MR-Egger regression methods, we used only the GIANT Consortium BMI meta-analysis data of 339,224 individuals without the UK Biobank data to avoid sample overlap between the exposure and outcome traits as these methods are sensitive to bias from overlapping samples (Locke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision to avoid bias from sample overlap.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "e434da06-4571-47e8-bfa1-ee9a077f832b",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C79",
+      "claim": "IVW, weighted median, weighted mode, and MR-Egger regression methods are sensitive to bias from overlapping samples.",
+      "claim_type": "EXPLICIT",
+      "source": "For Mendelian randomization analyses using the inverse variance-weighted (IVW), weighted median, weighted mode, and MR-Egger regression methods, we used only the GIANT Consortium BMI meta-analysis data of 339,224 individuals without the UK Biobank data to avoid sample overlap between the exposure and outcome traits as these methods are sensitive to bias from overlapping samples (Locke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established methodological knowledge about these Mendelian randomization methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "2acadef2-6edc-4266-b53d-4153c939b707",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C80",
+      "claim": "GWAS results for body fat percentage were available from an analysis of 454,633 participants of European ancestry in the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS results for BFP were available from an analysis of 454,633 participants of European ancestry in the UK Biobank (Elsworth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b75376bc-a3c8-4e8e-89a5-6dc7a49897f4",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C81",
+      "claim": "GWAS results for waist circumference adjusted for BMI were available from GIANT Consortium meta-analyses of 231,355 individuals of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS results for WCadjBMI and WHRadjBMI were available from GIANT Consortium meta-analyses of 231,355 and 694,649 individuals of European ancestry, respectively (Justice et al., 2017; Pulit et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d2662f68-3a71-45cf-bd3d-bc51947248a7",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C82",
+      "claim": "GWAS results for waist-hip ratio adjusted for BMI were available from GIANT Consortium meta-analyses of 694,649 individuals of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS results for WCadjBMI and WHRadjBMI were available from GIANT Consortium meta-analyses of 231,355 and 694,649 individuals of European ancestry, respectively (Justice et al., 2017; Pulit et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "6937542d-9372-492f-8a38-7d70978f739f",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C83",
+      "claim": "Only few genetic loci have been found to be associated with accelerometer-based moderate physical activity (n = 2), vigorous physical activity (n = 1) or sedentary time (n = 4) at genome-wide significance (p < 5 \u00d7 10-8).",
+      "claim_type": "EXPLICIT",
+      "source": "Only few genetic loci have been found to be associated with accelerometer-based moderate physical activity (n = 2), vigorous physical activity (n = 1) or sedentary time (n = 4) at genome-wide significance (p < 5 \u00d7 10\u20138) (Klimentidis et al., 2018; Doherty et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the state of genetic research on physical activity traits with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "08ceada7-6dea-4301-97a9-8fa9f8fbaf0f",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C84",
+      "claim": "The CAUSE method improves statistical power by utilizing full genome-wide summary results instead of genome-wide significant loci only.",
+      "claim_type": "EXPLICIT",
+      "source": "The recently published Causal Analysis Using Summary Effect Estimates (CAUSE) Mendelian randomization method (Morrison et al., 2020) improves statistical power in such cases, by utilizing full genome-wide summary results instead of genome-wide significant loci only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological advantage of the CAUSE method with supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "106724a9-6385-4ac3-b57d-1ebaa5101987",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C85",
+      "claim": "The CAUSE method is able to correct for sample overlap between the exposure and the outcome trait.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the CAUSE method is able to correct for sample overlap between the exposure and the outcome trait, which allows using the largest sample sizes available for both traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological advantage of the CAUSE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "808e02a8-3099-4d71-bb48-660eb06c54a7",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C86",
+      "claim": "CAUSE has been found to be less prone to identify false positive associations compared to other commonly used Mendelian randomization methods.",
+      "claim_type": "EXPLICIT",
+      "source": "CAUSE has also been found to be less prone to identify false positive associations compared to other commonly used Mendelian randomization methods (Burgess et al., 2019; Morrison et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological advantage of the CAUSE method with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "cc8445dc-8e93-4319-b278-6070e53a905d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C87",
+      "claim": "The CAUSE method calculates the posterior probabilities of the causal effect and the shared (non-causal) effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAUSE method calculates the posterior probabilities of the causal effect and the shared (non-causal) effect, where the causal effect reflects the effect of the variants on the outcome trait through the exposure and the shared effect reflects correlated horizontal pleiotropy (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how the CAUSE method works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "87545b14-b9da-46c0-8271-30305ca9d7d1",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C88",
+      "claim": "In the CAUSE method, the causal effect reflects the effect of the variants on the outcome trait through the exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAUSE method calculates the posterior probabilities of the causal effect and the shared (non-causal) effect, where the causal effect reflects the effect of the variants on the outcome trait through the exposure and the shared effect reflects correlated horizontal pleiotropy (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the interpretation of the causal effect in the CAUSE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "859f36aa-b7f0-487f-8d30-1d9ef9c10a54",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C89",
+      "claim": "In the CAUSE method, the shared effect reflects correlated horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAUSE method calculates the posterior probabilities of the causal effect and the shared (non-causal) effect, where the causal effect reflects the effect of the variants on the outcome trait through the exposure and the shared effect reflects correlated horizontal pleiotropy (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the interpretation of the shared effect in the CAUSE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "baf6e02d-1f8b-4a60-b603-fabed12b2049",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C90",
+      "claim": "According to the CAUSE method, a causal effect leads to non-zero genetic correlation between the exposure and the outcome where the correlation is driven by all variants associated with the exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The distinction between a causal effect and correlated horizontal pleiotropy follows the assumption that a causal effect leads to non-zero genetic correlation between the exposure and the outcome where the correlation is driven by all variants associated with the exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical basis of the CAUSE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "b04ed229-7e2c-4942-8c84-270687c33b2f",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C91",
+      "claim": "According to the CAUSE method, if only a subset of variants contributes to the genetic correlation between the exposure and the outcome, it is considered the result of correlated horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "If only a subset of variants contributes to the genetic correlation between the exposure and the outcome, it is considered the result of correlated horizontal pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical basis of the CAUSE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "4ddff266-8124-427d-8dfd-dfeef04b3bdc",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C92",
+      "claim": "The CAUSE method provides an estimate of the proportion of variants that are likely to show correlated horizontal pleiotropy, the q value.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAUSE method also provides an estimate of the proportion of variants that are likely to show correlated horizontal pleiotropy, the q value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an output of the CAUSE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d2d3382e-99c6-4341-a9e3-e1f69d1dd1bd",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C93",
+      "claim": "The study used CAUSE settings with q priors set to fit the strictest model possible (q_alpha = 1 and q_beta = 2) to avoid false positive findings.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the CAUSE settings and procedures originally recommended by the authors (Morrison et al., 2020), with the exception of q priors that were set to fit the strictest model possible (q_alpha = 1 and q_beta = 2) in order to avoid false positive findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "46576e9d-1a9d-43bc-93ae-b12410b81c60",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C94",
+      "claim": "The association between higher BMI and lower levels of physical activity is due to horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses suggest that higher moderate and vigorous physical activity are causal for lower BMI (moderate: \u20130.18 (-0.3,\u20130.05), p = 0.006; vigorous: \u20130.16 (-0.24,\u20130.08), p = 3.8 \u00d7 10-4), but indicate that the association between higher BMI and lower levels of physical activity is due to horizontal pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the CAUSE analysis showing that the sharing model fit better than the causal model for BMI to physical activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "33916846-2ad9-4587-a627-c51f5ae7f53d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C95",
+      "claim": "Longer sedentary time is causal for higher BMI with a beta of 0.11 (95% CI: 0.02, 0.2) and p = 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence of bidirectional causality between sedentary time and BMI: longer sedentary time was causal for higher BMI [beta (95% CI) from CAUSE method: 0.11 (0.02, 0.2), p = 0.02]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the CAUSE Mendelian randomization analysis presented in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "76ee0f57-4986-4a37-b010-65bf7a5c8997",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C96",
+      "claim": "Higher BMI is causal for longer sedentary time with a beta of 0.13 (95% CI: 0.08, 0.17) and p = 6.3 x 10-4.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence of bidirectional causality between sedentary time and BMI: longer sedentary time was causal for higher BMI [beta (95% CI) from CAUSE method: 0.11 (0.02, 0.2), p = 0.02], and higher BMI was causal for longer sedentary time (0.13 (0.08, 0.17), p = 6.3 x 10-4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the CAUSE Mendelian randomization analysis presented in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "938537ef-1e2e-4872-b444-8cfc5466c5e4",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C97",
+      "claim": "Decreasing sedentary time is beneficial for weight management.",
+      "claim_type": "EXPLICIT",
+      "source": "The bidirectional, causal relationship between sedentary time and BMI suggests that decreasing sedentary time is beneficial for weight management, but also that targeting adiposity may lead to additional health benefits by reducing sedentary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the bidirectional causality finding in the Abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "ac5b41fd-b592-466d-8944-fcad4d74c3dc",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "claim_id": "C98",
+      "claim": "Targeting adiposity may lead to additional health benefits by reducing sedentary time.",
+      "claim_type": "EXPLICIT",
+      "source": "The bidirectional, causal relationship between sedentary time and BMI suggests that decreasing sedentary time is beneficial for weight management, but also that targeting adiposity may lead to additional health benefits by reducing sedentary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the bidirectional causality finding in the Abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "71a098fe-4679-40ff-9aec-4328369f29d7",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Higher vigorous and moderate physical activity are causally associated with lower BMI and body fat percentage. Using the CAUSE method, vigorous physical activity showed a causal effect on BMI (\u03b2=-0.16, p=3.8\u00d710\u207b\u2074) and moderate physical activity showed a causal effect on BMI (\u03b2=-0.18, p=0.006). Similar effects were observed for body fat percentage. The analyses indicated minimal horizontal pleiotropy (median shared effect -0.01 to 0, q values 0.18-0.20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 provide statistically significant causal estimates with appropriate p-values. Claims C19-C22 and C30 demonstrate that pleiotropy was adequately assessed and controlled for using multiple metrics (shared effect, q values, outlier analysis, genetic correlation). Claims C36-C37 show consistency across different adiposity measures. The convergence of evidence supports the causal relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "562af4b6-ca8c-4947-8e74-7887b4d2d347",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "More sedentary time is causally associated with higher BMI and body fat percentage. Using the CAUSE method, sedentary time showed a causal effect on BMI (\u03b2=0.11, p=0.02) and body fat percentage (p=0.009). Each one hour daily decrease in sedentary time causally decreased BMI by approximately 0.14 kg/m\u00b2 (~0.4 kg). Pleiotropy assessment showed minimal bias (median shared effect=0, q=0.18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C95, and C38 provide statistically significant causal estimates across multiple adiposity measures. Claims C28-C29 demonstrate adequate control for horizontal pleiotropy. Claim C18 provides clinically interpretable effect sizes. The evidence consistently supports a causal effect of sedentary time on adiposity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "3bc9c440-6580-411b-b79d-5dbd4b96333c",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "There is bidirectional causality between sedentary time and BMI. Higher BMI causally increases sedentary time (\u03b2=0.13, p=6.3\u00d710\u207b\u2074), with each kg/m\u00b2 (~3 kg) increase in BMI associated with a 3.5 min increase in sedentary time per day. Combined with the reverse direction showing sedentary time increases BMI, this demonstrates bidirectional causality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C96 provide statistically significant evidence for BMI causing increased sedentary time. When combined with claims from Result 2 showing sedentary time causes higher BMI, claims C26-C27 appropriately conclude bidirectional causality. The effect sizes are modest but statistically robust and biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "35de518b-cd97-4b5c-ba08-3e0a7f3858fc",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "There is no causal effect of BMI on physical activity levels (vigorous or moderate). The CAUSE method found no evidence for causality (p=0.35 for vigorous PA, p=0.31 for moderate PA), with the sharing model fitting better than the causal model, indicating that observed associations are due to horizontal pleiotropy rather than causation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 report non-significant p-values and appropriate model comparison results from CAUSE. Claim C94 correctly interprets these findings as indicating horizontal pleiotropy rather than causation. The absence of evidence for causation in this direction, contrasted with significant effects in the opposite direction, is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1dca6ebc-1cd1-4d32-b0e2-959d26aefa6d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Physical activity and sedentary time show no causal relationship with measures of central adiposity (waist circumference and waist-hip ratio adjusted for BMI). CAUSE analyses found no evidence of causal effects on WCadjBMI or WHRadjBMI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 report null findings for central adiposity measures adjusted for BMI. These negative results are appropriately reported and contrast with the positive findings for overall adiposity measures (BMI, body fat percentage), suggesting specificity in the causal relationships. The null findings are supported by the data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1e9af63c-cfe9-4ed5-9968-2069720b29a9",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Due to limited genome-wide significant loci for physical activity traits, a less stringent threshold (p<5\u00d710\u207b\u2077) was used for traditional MR methods, yielding 5, 3, and 5 independent loci for vigorous PA, moderate PA, and sedentary time respectively. Traditional MR methods (IVW, Egger, weighted median, weighted mode) showed directionally consistent but weaker evidence compared to CAUSE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 document a methodological decision necessitated by limited genetic instruments. Claim C35 appropriately compares results across methods. The use of a less stringent threshold is a limitation but is transparently reported. The consistency in direction across methods provides some reassurance, though the weaker evidence with traditional methods may reflect limited statistical power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study utilized large-scale GWAS data including accelerometer-based physical activity and sedentary time data from 91,105 UK Biobank participants and BMI data from 806,834 individuals (GIANT Consortium + UK Biobank). Accelerometers were worn for 72 hours to 7 days. The CAUSE method was used to leverage full genome-wide data while correcting for sample overlap, and traditional MR methods used non-overlapping samples to avoid bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 and C72-C82 comprehensively document the data sources, sample sizes, measurement protocols, and analytical approaches. The use of objective accelerometer measures (C62, C73-C76) and large sample sizes provides strong statistical power. The methodological decision to use non-overlapping samples for traditional MR methods (C78) appropriately addresses known biases. The data sources are well-documented and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "7a4b1205-f200-4480-b163-7fe5017cc724",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The CAUSE method was selected because few genome-wide significant loci exist for physical activity traits (n=1-4), and CAUSE improves statistical power by using full genome-wide summary statistics, corrects for sample overlap, and distinguishes causal effects from correlated horizontal pleiotropy. The method was implemented with strict q priors (q_alpha=1, q_beta=2) to minimize false positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C93 provide detailed methodological justification for using CAUSE. The rationale is sound given the limited number of genome-wide significant variants (C83). Claims C84-C92 accurately describe CAUSE's methodological advantages and theoretical basis. Claim C93 documents a conservative analytical choice to reduce false positives. The methodological approach is well-justified and appropriately implemented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "652eb7d3-6c71-4625-a9b4-5ca992f7d183",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study's findings are consistent with prior observational and interventional research. A 10-year observational study found bidirectional associations with similar effect sizes (1 hr less sedentary time associated with ~0.3 kg weight decrease; 3 kg higher weight associated with ~2 min more sedentary time). Meta-analyses of RCTs show weight losses of 0.3-1.8 kg from physical activity interventions lasting 2-52 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 appropriately contextualize the current findings within prior literature. The effect sizes from the current MR study closely match those from observational studies (C46-C47) and fall within ranges reported in RCT meta-analyses (C49), providing external validation. The consistency across different study designs strengthens confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "d61d765c-447a-4544-b9d1-2f0f99540420",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MR estimates represent lifelong genetic effects and are not directly comparable to time-limited interventions. Physical activity interventions may operate through different pathways than those affected by genetic variants. The causal effect of adiposity on sedentary time has not been tested in RCTs due to ethical and practical limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 appropriately acknowledge important limitations in comparing MR estimates to intervention studies. This is established methodological knowledge about MR interpretation. Claim C52 correctly notes the absence of relevant RCTs and provides plausible reasons. These caveats are important for proper interpretation of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous MR studies showed mixed results. An adult study found bidirectional causality but with uncontrolled pleiotropy. Two pediatric studies showed BMI causes more sedentary time, with inconsistent findings for physical activity. Differences may reflect methodological limitations (weak instrument bias in smaller samples) or genuine age-related differences in how physical activity is engaged (spontaneous play in children vs. structured activities in adults).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C56 accurately summarize prior MR studies, but claims C57-C61 offer speculative explanations for discrepancies. While the speculation is reasonable (weak instrument bias, developmental differences in activity patterns), these remain untested hypotheses. The comparison highlights that the current study addresses pleiotropy more rigorously than prior work, but the reasons for age-related differences remain uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "1d4cd538-450a-4fc8-b095-8402a5404679",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Study limitations include potential measurement bias (observer effect, 7-day measurement period may not represent long-term habits), limited statistical power due to few genome-wide significant loci for physical activity, lack of generalizability across age groups and populations, and need for future research at various BMI thresholds and with larger samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 appropriately acknowledge multiple limitations. The 7-day measurement period (C65-C66) is a genuine limitation of the source data. Limited genetic instruments (C67) is transparently reported and partially addressed through CAUSE methodology. Lack of generalizability (C69) and need for future research (C68, C70) are appropriately cautious. These limitations are honestly reported and do not invalidate the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    },
+    {
+      "id": "16c932ba-dce0-4fb4-b556-8187862f007a",
+      "content_id": "a1bf27da-ee8d-4c95-8e19-56b8134e2e3c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The bidirectional causal relationship between sedentary time and BMI implies that decreasing sedentary time is beneficial for weight management, and that reducing adiposity may lead to additional health benefits by reducing sedentary time. The causal effect of physical activity on BMI supports preventive programs for increasing physical activity and decreasing sedentary time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 and C97-C98 draw reasonable public health implications from the bidirectional causality finding. Claims C44 and C71 appropriately extend the causal findings for physical activity to support preventive interventions. While these are implications rather than direct findings, they are logical extensions of the demonstrated causal relationships and are appropriately qualified as suggestions rather than definitive recommendations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:01.876622Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0faf3b97-6062-477d-9f38-1385053e6dba",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "ddac9d45-485e-483b-bac0-e2303e09b102",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "41e15923-b5ce-4c36-b9ea-f0911ce028fa",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "0046dfd7-de4f-4a5c-b3ac-cc83a9f8dffb",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "b5758945-9af3-4a80-86e3-566a2318f08e",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "2616202e-ab60-4f41-8398-24d56a144f92",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "dae688a5-0580-42a7-9c12-2c0ad467227d",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "afff3e15-e435-4531-8a16-455e331027e6",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "2b3fcbf1-1eed-4b3d-af4b-18857b0d4dcb",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "b2dd1167-102b-497b-8900-33712fc6df2f",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "6d6233d6-f454-4d36-8e11-07da28a46992",
+      "result_id": "71a098fe-4679-40ff-9aec-4328369f29d7"
+    },
+    {
+      "claim_id": "79815067-4223-450c-a18e-47c60cd06fea",
+      "result_id": "562af4b6-ca8c-4947-8e74-7887b4d2d347"
+    },
+    {
+      "claim_id": "b0699ed0-32f0-4537-b1e9-f95a62e3c70a",
+      "result_id": "562af4b6-ca8c-4947-8e74-7887b4d2d347"
+    },
+    {
+      "claim_id": "7b09750d-b1b9-49cf-afe8-4d830cb1b1eb",
+      "result_id": "562af4b6-ca8c-4947-8e74-7887b4d2d347"
+    },
+    {
+      "claim_id": "00c47e7c-82c2-4b52-b158-aad0b3901ec5",
+      "result_id": "562af4b6-ca8c-4947-8e74-7887b4d2d347"
+    },
+    {
+      "claim_id": "f9a4d33b-84cd-48bd-b84e-1ddffcc3e680",
+      "result_id": "562af4b6-ca8c-4947-8e74-7887b4d2d347"
+    },
+    {
+      "claim_id": "33916846-2ad9-4587-a627-c51f5ae7f53d",
+      "result_id": "562af4b6-ca8c-4947-8e74-7887b4d2d347"
+    },
+    {
+      "claim_id": "c5e5292e-128e-4524-bb69-c1fdf20bdc3b",
+      "result_id": "3bc9c440-6580-411b-b79d-5dbd4b96333c"
+    },
+    {
+      "claim_id": "1eaa0d44-b5f0-4ffb-b35a-cd51e34a5a19",
+      "result_id": "3bc9c440-6580-411b-b79d-5dbd4b96333c"
+    },
+    {
+      "claim_id": "d104368b-0c95-416c-b635-c995a9c01cc2",
+      "result_id": "3bc9c440-6580-411b-b79d-5dbd4b96333c"
+    },
+    {
+      "claim_id": "76ee0f57-4986-4a37-b010-65bf7a5c8997",
+      "result_id": "3bc9c440-6580-411b-b79d-5dbd4b96333c"
+    },
+    {
+      "claim_id": "dba51047-4976-4bcb-8325-42734d0f2297",
+      "result_id": "35de518b-cd97-4b5c-ba08-3e0a7f3858fc"
+    },
+    {
+      "claim_id": "6d471b37-e010-453e-8eb8-4427ac033e4e",
+      "result_id": "35de518b-cd97-4b5c-ba08-3e0a7f3858fc"
+    },
+    {
+      "claim_id": "46576e9d-1a9d-43bc-93ae-b12410b81c60",
+      "result_id": "35de518b-cd97-4b5c-ba08-3e0a7f3858fc"
+    },
+    {
+      "claim_id": "41003d52-82de-4e96-9930-d13f1690f9b7",
+      "result_id": "1dca6ebc-1cd1-4d32-b0e2-959d26aefa6d"
+    },
+    {
+      "claim_id": "b083c681-fee6-4f66-8c87-e6ee2929e19b",
+      "result_id": "1dca6ebc-1cd1-4d32-b0e2-959d26aefa6d"
+    },
+    {
+      "claim_id": "5e57419b-a637-4723-9076-17e201acc9be",
+      "result_id": "1e9af63c-cfe9-4ed5-9968-2069720b29a9"
+    },
+    {
+      "claim_id": "1e0ed464-27f4-4b57-993d-2356c4ba2860",
+      "result_id": "1e9af63c-cfe9-4ed5-9968-2069720b29a9"
+    },
+    {
+      "claim_id": "c0c90d3e-98b3-4a4a-bc55-6416aff356af",
+      "result_id": "1e9af63c-cfe9-4ed5-9968-2069720b29a9"
+    },
+    {
+      "claim_id": "049839ec-1aae-4603-a08f-7e4d2e7cef6b",
+      "result_id": "1e9af63c-cfe9-4ed5-9968-2069720b29a9"
+    },
+    {
+      "claim_id": "236632b9-598d-47f0-a754-0f691ff058a6",
+      "result_id": "1e9af63c-cfe9-4ed5-9968-2069720b29a9"
+    },
+    {
+      "claim_id": "38ed1a66-7b43-48f2-b24d-c714c351e24a",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "5012d7b8-5bdb-4cad-9e1b-8a84174773eb",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "f59533f9-4ed6-4cce-b4ca-685cc37a0e9d",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "1de84bd0-bec2-4ba7-91a6-c15de9a6d15c",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "914a56b7-ec92-4566-b2d1-b437dacd7c98",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "4c4b9b59-7ddb-4875-9841-2d0a2358955c",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "33c037e4-2a4c-48eb-b1b2-be37e006d8a6",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "26080f23-feb1-46db-86e2-f8fb9fc1683a",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "71d9ee15-0849-4dee-bb2d-7ec3146fb74c",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "1479927c-7fa5-47ab-90e3-358d07649a5a",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "d89d8930-67a1-4067-acd7-e617adf6b661",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "2acadef2-6edc-4266-b53d-4153c939b707",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "b75376bc-a3c8-4e8e-89a5-6dc7a49897f4",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "d2662f68-3a71-45cf-bd3d-bc51947248a7",
+      "result_id": "597e6c4b-bce9-4136-b1e7-42dd7d01298d"
+    },
+    {
+      "claim_id": "6937542d-9372-492f-8a38-7d70978f739f",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "08ceada7-6dea-4301-97a9-8fa9f8fbaf0f",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "106724a9-6385-4ac3-b57d-1ebaa5101987",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "808e02a8-3099-4d71-bb48-660eb06c54a7",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "cc8445dc-8e93-4319-b278-6070e53a905d",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "87545b14-b9da-46c0-8271-30305ca9d7d1",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "859f36aa-b7f0-487f-8d30-1d9ef9c10a54",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "baf6e02d-1f8b-4a60-b603-fabed12b2049",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "b04ed229-7e2c-4942-8c84-270687c33b2f",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "4ddff266-8124-427d-8dfd-dfeef04b3bdc",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "d2d3382e-99c6-4341-a9e3-e1f69d1dd1bd",
+      "result_id": "7a4b1205-f200-4480-b163-7fe5017cc724"
+    },
+    {
+      "claim_id": "f97542b3-45bd-4ff4-8f71-fe9762aca7f0",
+      "result_id": "652eb7d3-6c71-4625-a9b4-5ca992f7d183"
+    },
+    {
+      "claim_id": "9b5f4fcb-9996-480f-b88d-e56fad314a05",
+      "result_id": "652eb7d3-6c71-4625-a9b4-5ca992f7d183"
+    },
+    {
+      "claim_id": "7f8fa76f-2388-40cd-8c17-ea9bdebce8fe",
+      "result_id": "652eb7d3-6c71-4625-a9b4-5ca992f7d183"
+    },
+    {
+      "claim_id": "7cd67452-1011-4351-91a9-ae908ed38d70",
+      "result_id": "652eb7d3-6c71-4625-a9b4-5ca992f7d183"
+    },
+    {
+      "claim_id": "b7ee7340-46c7-49a3-865d-adda17b91062",
+      "result_id": "652eb7d3-6c71-4625-a9b4-5ca992f7d183"
+    },
+    {
+      "claim_id": "bb3310fe-a3ab-4a2a-bcd6-6fbd2dafed97",
+      "result_id": "d61d765c-447a-4544-b9d1-2f0f99540420"
+    },
+    {
+      "claim_id": "60c80dbb-8c46-46b4-9ec8-1cc108cd7e44",
+      "result_id": "d61d765c-447a-4544-b9d1-2f0f99540420"
+    },
+    {
+      "claim_id": "984bf511-d750-475d-a870-86c84250a6d1",
+      "result_id": "d61d765c-447a-4544-b9d1-2f0f99540420"
+    },
+    {
+      "claim_id": "f89d6823-6733-42da-9e90-55cfd8a36772",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "843d61c6-4e53-435a-b12d-9a3dfedf90df",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "f34131dc-bc04-46cc-9a09-244033630a4d",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "b293d605-31da-415b-9833-3728fa3bdac1",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "63c8ed90-aaa3-42ba-9e84-d756e6e034e6",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "a240745b-93ae-4d6c-986c-6d21794b36d6",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "1ab88066-bad3-457c-910f-4752bce250ed",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "066d0cf9-af2b-46e6-b12d-010cbb4f5cbf",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "f78620d4-f48f-47e3-bba3-e368258c929f",
+      "result_id": "0c204ca3-d5af-43a7-8c31-ae4c708e0372"
+    },
+    {
+      "claim_id": "97f72055-7702-4a7b-ad09-7f2a58e3b4f4",
+      "result_id": "1d4cd538-450a-4fc8-b095-8402a5404679"
+    },
+    {
+      "claim_id": "d75d998a-5c55-4b0d-86d5-68736801176f",
+      "result_id": "1d4cd538-450a-4fc8-b095-8402a5404679"
+    },
+    {
+      "claim_id": "9b8d76e2-0806-4c88-a382-298108d39979",
+      "result_id": "1d4cd538-450a-4fc8-b095-8402a5404679"
+    },
+    {
+      "claim_id": "de099427-bf24-474f-bb6f-1135e7dc4a04",
+      "result_id": "1d4cd538-450a-4fc8-b095-8402a5404679"
+    },
+    {
+      "claim_id": "d511e29a-0094-44ca-a90b-27ab60558def",
+      "result_id": "1d4cd538-450a-4fc8-b095-8402a5404679"
+    },
+    {
+      "claim_id": "9529459d-14f2-4cff-9f77-f30ffbd08b30",
+      "result_id": "1d4cd538-450a-4fc8-b095-8402a5404679"
+    },
+    {
+      "claim_id": "14aceb17-1529-467a-919e-4acf89369132",
+      "result_id": "16c932ba-dce0-4fb4-b556-8187862f007a"
+    },
+    {
+      "claim_id": "feba3205-0d67-41c5-83ab-e091711b74ee",
+      "result_id": "16c932ba-dce0-4fb4-b556-8187862f007a"
+    },
+    {
+      "claim_id": "2f49b4f0-3a83-480e-a8da-e04d6549decc",
+      "result_id": "16c932ba-dce0-4fb4-b556-8187862f007a"
+    },
+    {
+      "claim_id": "ac884a1f-576d-457b-9db2-52f0dd715df9",
+      "result_id": "16c932ba-dce0-4fb4-b556-8187862f007a"
+    },
+    {
+      "claim_id": "938537ef-1e2e-4872-b444-8cfc5466c5e4",
+      "result_id": "16c932ba-dce0-4fb4-b556-8187862f007a"
+    },
+    {
+      "claim_id": "ac5b41fd-b592-466d-8944-fcad4d74c3dc",
+      "result_id": "16c932ba-dce0-4fb4-b556-8187862f007a"
+    }
+  ],
+  "comparisons": []
+}

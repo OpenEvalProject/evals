@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MAC-resistant Gram-negative bacteria primarily form sMAC in human serum. The authors classified 12 E. coli strains into MAC-sensitive (killed in serum), MAC-resistant (survive but activate complement), and complement-resistant (minimal C3b deposition) categories. MAC-resistant strains generated significantly more sMAC (~5-fold) compared to MAC-sensitive strains, and this finding extended to Klebsiella species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C38 provide converging evidence from bacterial viability assays (CFU counts), complement activation markers (C3b deposition, C3a release), and sMAC detection (ELISA) across multiple E. coli strains. The classification into three categories is well-supported by orthogonal measurements. The extension to Klebsiella (C39-C40) strengthens generalizability. Controls with C5 inhibitors confirm complement-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Gram-positive bacteria also form sMAC in serum at levels comparable to MAC-resistant Gram-negative bacteria. Five Gram-positive strains (S. aureus, S. epidermidis, S. agalactiae) generated 3-5-fold more sMAC than MAC-sensitive E. coli MG1655, despite being intrinsically MAC-resistant due to their thick peptidoglycan layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by ELISA data (Figure 2) showing consistent sMAC generation across multiple Gram-positive species. The comparison to MAC-sensitive E. coli provides appropriate context. However, the lack of MAC-sensitive Gram-positive controls (due to intrinsic resistance, C42) limits direct within-species comparison. The mechanistic explanation (C42) is cited knowledge rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "MAC-resistant bacteria convert C5 more potently than MAC-sensitive bacteria. MAC-resistant E. coli strains converted all C5 in serum (Western blot) and generated ~5-fold more C5a (ELISA) compared to MAC-sensitive strains. Gram-positive bacteria showed a similar but smaller increase (~3-fold) in C5a generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by complementary Western blot and ELISA data (Figure 3a-b). The quantitative agreement between C5a increase and sMAC increase (C49) strengthens the conclusion. The smaller increase for Gram-positive bacteria (C51) is noted but not fully explained. One MAC-sensitive strain (547563.1) showed intermediate C5 conversion, suggesting the classification may not be absolute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C106",
+      "C122"
+    ],
+    "result": "Expression of LPS O-antigen on E. coli increases C5 conversion and sMAC release. Using isogenic E. coli strains differing only in O-Ag expression, the authors showed 10-fold increased C5a generation and 3.5-fold increased sMAC release with O-Ag expression, without affecting C3b deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are strongly supported by the isogenic strain comparison (Figure 3c-d), which provides the most direct evidence for O-Ag's role. The observation that C3b deposition is unaffected (C57-C58) is important for ruling out effects on early complement activation. The correlation between O-Ag expression and MAC resistance across multiple strains (C52-C54) provides additional support. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Binding of C8 and C9 triggers release of MAC precursors from MAC-resistant bacteria. Using convertase-labeled bacteria with sequential addition of MAC components, the authors showed that C8 and C9 binding caused 4-fold more C5b6 release from MAC-resistant E. coli compared to MAC-sensitive strains, where C9 prevented C8-induced release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by Western blot and ELISA data (Figure 4) from a well-designed sequential assembly experiment. The differential behavior between MAC-resistant and MAC-sensitive strains upon C8/C9 addition is clear. However, the mechanism of release is not directly demonstrated\u2014the data show correlation with C8/C9 binding but not causation. The observation that C7 prevents C5b6 release (C66) provides important context about the assembly pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Released MAC precursors from bacteria can lyse bystander human erythrocytes in a MAC-dependent manner. Using convertase-labeled bacteria with purified MAC components and unlabeled erythrocytes, MAC-resistant E. coli strains induced bystander lysis that was prevented by C5 inhibitor OmCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by the bystander lysis assay (Figure 5b). The C5 inhibitor control (C74) confirms MAC-dependence. The experimental design appropriately separates MAC assembly on bacteria from effects on bystander cells. However, the assay uses purified components rather than serum, which may not fully reflect physiological conditions. The correspondence with sMAC production (Figure 5\u2014supplement 1) strengthens the link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Serum regulators vitronectin and clusterin prevent bystander lysis by released MAC precursors. Both Vn and Clu inhibited bystander lysis at physiological concentrations without affecting MAC-dependent killing of target bacteria. Clu, but not Vn, prevented C9 polymerization, suggesting different mechanisms of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are well-supported by experimental data (Figure 5c, Figure 5\u2014supplement 2). The specificity controls showing no effect on target bacterial killing (C82-C83, C129) are important. The differential effect on C9 polymerization (C80) provides mechanistic insight. The observation that bystander lysis does not occur in serum (C77, C135) validates the physiological relevance of the regulatory mechanism. This addresses a key question about clinical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C102",
+      "C145",
+      "C148"
+    ],
+    "result": "sMAC released from bacteria is a heterogeneous mixture containing C5b-8, 1-3 copies of C9, and multiple copies of Vn and Clu. Using SEC and LC-MS/MS, the authors showed bacterial sMAC contains on average less C9 (2:1 ratio to C5) than commercial sMAC (3:1 ratio), with the C9 content decreasing in later-eluting fractions for bacterial sMAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 are supported by complementary SEC, BN-PAGE, and LC-MS/MS data (Figure 6). The comparison to commercial sMAC provides important context. The observation of heterogeneity with varying C9 content (C92-C93) is well-documented. However, the increased C6 ratio (C89-C90) is attributed to incomplete separation of monomeric C6, which is a technical limitation rather than a biological finding. The stoichiometry measurements are quantitative and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Activation of serum with S. aureus generates sMAC complexes with 1-3 C9 molecules (average 2) bound to multiple Vn and Clu molecules, with Clu being most abundant. All MAC components were incorporated into hetero-oligomeric complexes with no detectable monomeric components or complexes lacking regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are supported by SEC-MS profiling of serum activated with S. aureus (Figure 7). The complete incorporation of MAC components into complexes (C96-C97) and absence of regulator-free sMAC (C98-C99) are important observations. The stoichiometry determination (C100-C101) is consistent with the E. coli data. This extends the findings to Gram-positive bacteria and demonstrates efficient regulator capture under physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C159",
+      "C160"
+    ],
+    "result": "Detection of sMAC in human serum indicates potent C5 conversion by MAC-resistant bacteria. The authors conclude that sMAC represents an inactivated complex released from MAC-resistant bacteria, providing insight into what sMAC as a biomarker represents during bacterial infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 represent the main conclusion integrating multiple findings. The link between MAC resistance, potent C5 conversion, and sMAC formation is well-supported by the experimental data. The novelty (C105) of directly linking C5 conversion to sMAC detection is valid. However, the clinical relevance (C160) is inferred rather than demonstrated\u2014no patient data are presented. The conclusion is appropriately framed as providing mechanistic insight for future clinical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C119"
+    ],
+    "result": "sMAC is initially formed on the bacterial surface but released as the nascent MAC assembles, with further assembly occurring in solution. The authors propose that release occurs because the nascent MAC cannot properly insert into the cell envelope of MAC-resistant bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by the sequential assembly data (Figure 4) showing release upon C8/C9 binding, combined with MS data (Figures 6-7) showing complexes with multiple C9 molecules. The inference that assembly continues in solution is reasonable given the heterogeneity in C9 content. The mechanistic explanation (C119) is logical given that C8 and C9 are the membrane-inserting components, but direct evidence for impaired insertion is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "Cell envelope constituents, particularly LPS O-Ag in Gram-negative bacteria, can affect C5 conversion. The authors speculate that local C3b density differences might affect C5 convertase activity, though total C3b deposition was comparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is an inference from the O-Ag data, while C109 cites established knowledge about C3b density. However, C110 is explicit speculation without supporting data\u2014the authors acknowledge they cannot exclude this possibility but provide no evidence for local density differences. The mechanism linking O-Ag to increased C5 conversion remains unclear. This represents a knowledge gap rather than a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Multiple copies of Vn and Clu are present in bacterial sMAC, with Clu being most abundant. Clu, but not Vn, inhibits C9 polymerization by trapping terminal C9 in an intermediate conformation, and the regulators efficiently capture all released sMAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151 and C154 are directly supported by MS data (Figures 6-7) and SDS-PAGE (Figure 5\u2014supplement 2a). The mechanism for Clu (C153) is supported by citation to recent structural work rather than data in this study. The inference about efficient capture (C152) is reasonable given the absence of regulator-free complexes, though this is somewhat circular reasoning. The findings are consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "More vitronectin was detected in bacterial sMAC compared to commercial sMAC. The authors speculate this could be due to differences in the target cell activating complement or the serum used, noting that Vn concentration varies between individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C155 is supported by MS data (Figure 6d). However, C156-C157 are explicit speculation about causes without supporting evidence. The citation about Vn variability (C158) provides context but does not explain the observed difference. This is a descriptive observation without mechanistic insight. The difference could also reflect technical factors in commercial sMAC preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Human erythrocytes are sensitive to bystander lysis induced by bacterial complement activation, but under physiological conditions, the molar excess of Vn and Clu over MAC components favors inactivation over bystander cell binding, preventing lysis in healthy donor serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132 and C135 are supported by experimental data (Figure 5). The physiological context (C133-C134) is supported by citation. This extends previous work with chicken erythrocytes to human cells. The logic connecting molar excess to protection is sound. However, the relevance to infection conditions where regulator levels may differ is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C144"
+    ],
+    "result": "The study suggests a potential role for bystander lysis during bacterial infections that merits further investigation. Clu is decreased in infected children, and Vn/Clu polymorphisms that impair sMAC scavenging are associated with hemolytic uremic syndrome and recurrent E. coli infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 are supported by citations to clinical literature. However, these are observations from other studies, not findings from this work. The suggestion for future investigation (C144) is appropriate speculation. The connection between the mechanistic findings and clinical observations is logical but not directly demonstrated. This represents hypothesis generation rather than hypothesis testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Both Gram-negative and Gram-positive bacteria recruit vitronectin to their surface. For Gram-negative bacteria, this is thought to prevent MAC-dependent killing, but the purpose for Gram-positive bacteria remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 are supported by citations to previous literature. These are not findings from this study but rather context from prior work. The knowledge gap for Gram-positive bacteria (C143) is appropriately identified. This provides background for interpreting the findings but does not constitute a result from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C161",
+      "C162"
+    ],
+    "result": "Future clinical studies could determine if sMAC detection in infected patients correlates with potent complement activation and MAC resistance of the causative pathogen, potentially enhancing understanding of complement's role in bacterial infection pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C162 are appropriate suggestions for future research based on the study's findings. These are not results but rather implications and proposed next steps. The suggestions are logical extensions of the mechanistic work. However, they represent speculation about future work rather than supported findings from this study.",
+    "result_type": "MINOR"
+  }
+]

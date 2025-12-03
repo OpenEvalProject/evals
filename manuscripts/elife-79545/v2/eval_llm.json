@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Rats performed an odor-place association task with high accuracy (77.0% \u00b1 1.3%) during electrophysiological recording. Odor sampling duration averaged 0.82\u00b10.02 s and was similar between correct and incorrect trials, with a small but significant increase in sniff rate during odor sampling compared to pre-odor periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging behavioral evidence from 8 rats across 38 sessions. The performance data (C2), sampling duration measurements (C3-C4), and sniff rate analysis (C5) are all supported by appropriate statistical tests and sample sizes, establishing the basic behavioral parameters of the task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "On 95.4% of trials, rats' turn direction away from the odor port matched their ultimate reward choice, occurring on both correct and incorrect trials. This behavioral pattern, combined with velocity changes and rapid movement after odor port disengagement, indicates that the odor sampling period corresponds to decision-making, with decision execution occurring at odor port offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 provide strong statistical evidence (binomial tests with p=0 for correct, p=1.4e-108 for incorrect trials) that turn direction predicts choice. Claims C47-C52 establish the task structure and behavioral dynamics. The inference that odor sampling corresponds to decision-making (C51-C52) is well-supported by the convergence of behavioral observations, though it remains an interpretation rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C53"
+    ],
+    "result": "Beta band (20-30 Hz) power increased significantly during odor sampling across CA1, PFC, and OB, while respiratory rhythm (RR, 7-8 Hz) was prominent but did not increase. Both beta and RR coherence increased significantly between all region pairs during odor sampling, with phase-amplitude coupling observed between the two rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C53 are supported by appropriate statistical tests (Wilcoxon signed-rank tests) across 38 sessions with highly significant p-values. The phase-amplitude coupling analysis (C53) is consistent with previous findings and uses established methods. The distinction between beta power increase and RR presence without increase is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Beta coherence during decision-making was significantly higher than at reward wells and was reduced in air-only control sessions compared to odor-cued sessions. Sharp-wave ripples (SWRs) were rare at the odor port but frequent at reward locations. Beta and RR coherence/power did not differ between correct and incorrect trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 provide important control analyses. The comparison to reward periods (C12) and air-only sessions (C13) strengthen the specificity of beta coherence to odor-cued decision-making. The SWR analysis (C14) rules out a prominent alternative mechanism. The null finding for trial accuracy (C15) is appropriately reported and sets up the subsequent phase-locking analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Single-unit recordings yielded 1,309 CA1 units and 717 PFC units. After filtering for activity criteria, 170 CA1 cells (21%) and 234 PFC cells (50%) were active during odor sampling, with 81% and 79% being task-responsive, respectively. Of task-responsive pyramidal cells, 34% in CA1 and 31% in PFC were choice-selective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide a clear accounting of the single-unit dataset with appropriate filtering criteria. The proportions of task-responsive and choice-selective cells are consistent with previous literature cited in the manuscript. The methods for determining task responsiveness and choice selectivity are clearly described and statistically validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C65",
+      "C66"
+    ],
+    "result": "Choice-selective cells in CA1 and PFC showed anti-correlated selectivity indices between correct and incorrect trials (CA1: r=-0.58, p=1.82e-5; PFC: r=-0.68, p=3.47e-9), indicating these cells code behavioral choice rather than odor identity. CA1 interneurons showed similar anti-correlation (r=-0.80, p=3.4e-8), while PFC interneurons did not (r=-0.38, p=0.278).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 provide strong statistical evidence for anti-correlation using Spearman rank correlation. The interpretation (C65-C66) that cells code choice rather than odor identity is well-justified by the pattern of responses on incorrect trials. The lack of significance for PFC interneurons (C24) is appropriately attributed to low sample size (n=10). This is a key finding distinguishing choice coding from sensory coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "CA1-PFC interneuron pairs showed significant temporal coordination with PFC interneurons leading (p=3.5e-8), as did CA1 pyramidal-PFC interneuron pairs (p=0.0034).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by cross-correlation analysis with appropriate statistical testing (sign rank test). The finding of PFC interneurons leading CA1 is consistent with the interpretation of top-down coordination. However, the manuscript notes high variability in phase offsets across animals, which limits interpretation of directionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Large proportions of CA1 cells were phase-locked to local RR (82% pyramidal, 89% interneurons) and beta (20% pyramidal, 43% interneurons). Few PFC cells locked to local beta, but 11% of CA1 interneurons showed significant cross-regional phase-locking to PFC beta (p=1.7e-20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by Rayleigh Z tests with Bonferroni correction for multiple comparisons. The high proportion of CA1 interneurons locked to both local and cross-regional beta is a key finding. The statistical approach is appropriate, though the manuscript could benefit from reporting effect sizes in addition to significance levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Beta-locked CA1 pyramidal cells, CA1 interneurons, and PFC pyramidal cells exhibited lower mean vector length (phase-locking strength) on incorrect trials compared to correct trials. RR phase-locking showed no relationship to trial accuracy. CA1 interneurons showed decreased cross-regional spike-phase coherence to PFC beta on incorrect trials (p=0.0023).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide critical evidence linking beta phase-locking to behavioral performance. The use of rate-adjusted mean vector length (C29) appropriately controls for firing rate differences. The null finding for RR (C30) strengthens the specificity of the beta effect. The cross-regional coherence finding (C31) is particularly important for the mechanistic interpretation involving CA1 interneurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Neural discrimination times for CA1 and PFC were similar (p=0.68). Using GLM prediction, CA1 ensembles could predict reward choice 0.1 s before decision execution with pyramidal cells alone, improving to 0.2 s when interneurons were included. PFC ensembles predicted choice 0.3 s before execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by PCA-based discrimination analysis and GLM prediction with appropriate cross-validation. The improvement in CA1 prediction with interneuron inclusion (C35) was validated against a cell-number-matched control, strengthening the conclusion. The earlier prediction by PFC (C34) is interesting but the manuscript does not fully explore the implications of this temporal difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Many CA1 (344/585) and PFC (159/288) cells had spatial fields on the track. Odor-active cells were more likely to have spatial fields (CA1: p=0.029; PFC: p=2.7e-5), but field characteristics (width, peak rate, sparsity) did not differ between odor-active and inactive cells. There was no relationship between trajectory selectivity during running and choice selectivity during odor sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by appropriate spatial analyses limited to the 5 animals that ran the full maze. The statistical tests (binomial and rank-sum) are appropriate. The null findings (C38-C39) are important for establishing that decision-making and spatial navigation engage distinct neural representations, though the manuscript could discuss potential confounds such as differences in behavioral state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Using Bayesian decoding, choice identity could be decoded from odor-period ensembles only at the first spatial quintile nearest the odor port, but choice could be accurately decoded at all track positions when using spatially-modulated ensembles from each respective quintile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by Bayesian decoder analysis with appropriate shuffling controls. This finding demonstrates that different ensembles maintain choice information during decision-making versus spatial navigation. The analysis is well-controlled and the interpretation is conservative. However, the manuscript could benefit from discussing the transition between these representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Beta and RR rhythms govern physiological coordination in the OB-CA1-PFC network during odor-place associative memory tasks. CA1-PFC beta coordination is linked to decision accuracy. Task-responsive single units and ensembles discriminate choices and predict behavior. Different ensembles are engaged during decision-making versus decision execution. Overall, rhythmic coordination supports utilization of odor cues for memory-guided decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 represent summary conclusions synthesizing multiple findings. These are well-supported by the convergence of LFP coherence analyses (C8-C15), phase-locking results (C26-C31), single-unit selectivity (C21-C24), ensemble dynamics (C32-C35), and spatial analyses (C36-C41). The conclusions are appropriately cautious and acknowledge the correlational nature of some findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Beta rhythm is not merely a harmonic of RR based on differential power changes and prior literature. While overall beta coherence did not differ between correct and incorrect trials, a subpopulation of phase-locked cells showed stronger beta modulation on correct trials. CA1 interneurons exhibited cross-regional beta coherence and temporal coordination with PFC, suggesting beta rhythms sculpt network activity through interneuron modulation to enable task-related ensemble dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 synthesize key mechanistic interpretations. The distinction between beta and RR (C54) is supported by differential power changes and phase-amplitude coupling. The focus on phase-locked subpopulations rather than overall coherence (C55-C56) is well-justified by the data. The proposed role of CA1 interneurons (C57-C58) is supported by multiple converging lines of evidence (phase-locking, cross-regional coherence, temporal coordination). The overall interpretation (C59) is reasonable but remains somewhat speculative regarding causal mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors speculate that encountering familiar odor stimuli and utilizing associative memory for decisions elicits hippocampal-prefrontal beta engagement. The lack of SWRs during decision-making may reflect prior memory consolidation to neocortex. Beta rhythms mediate odor-cued decision making in addition to coordinating entorhinal-hippocampal networks. Sensory modality-specific rhythms may generally coordinate sensory and cognitive areas for cue-driven mnemonic decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C64 are explicitly speculative interpretations. While these speculations are reasonable given the data and cited literature, they go beyond what is directly demonstrated. The lack of SWRs (C61) is an observation, but the interpretation regarding memory consolidation is speculative. The generalization to other sensory modalities (C64) is interesting but untested. These represent reasonable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The timing of ensemble discrimination preceded choice execution, suggesting neural representations prime cognitive decisions. This may reflect dynamic reactivation of memory engrams. The lack of relationship between CA1-OB coherence and performance may be specific to familiar associations versus learning. Choice-selective activity during decision-making is maintained by different ensembles during spatial navigation, with beta-driven ensembles mediating decision-making and theta-driven spatially modulated activity maintaining choice during running.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C71 are well-supported by the temporal dynamics (C32) and spatial decoding analyses (C40-C41). The interpretation regarding memory engrams (C68) is speculative but reasonable given cited literature. The speculation about learning-dependent effects (C69-C70) appropriately acknowledges limitations of studying only well-trained animals. The distinction between decision-making and spatial navigation ensembles (C71) is a key finding supported by multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Beta and RR cooperatively coordinate the network during odor-cued decision making, with RR potentially coordinating sensory processing and beta coordination key for memory-guided decisions. Entrainment of interneurons to beta is linked to task performance. Rhythmic modulation of interneurons, possibly through common input to CA1-PFC, may temporally organize ensemble responses. Beta oscillations may establish communication in sensory-cognitive networks for cued associative decisions, with phase-modulation indicating a general network state enabling coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 synthesize the mechanistic interpretation. The cooperative coordination interpretation (C72) is supported by phase-locking data showing distinct populations modulated by each rhythm. The differential roles of RR and beta (C73) are supported by the air-session control showing beta but not RR reduction. The role of interneurons (C74-C75) is well-supported by convergent evidence. The general interpretations (C76-C77) are reasonable syntheses, though somewhat speculative regarding causal mechanisms and the nature of the 'network state.'",
+    "result_type": "MAJOR"
+  }
+]

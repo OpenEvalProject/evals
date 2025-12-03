@@ -1,0 +1,2447 @@
+{
+  "submission": {
+    "id": "f3472df6-6a95-4895-b979-8e2c5d83db6e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:11:15.722583Z",
+    "updated_at": "2025-12-03T16:11:15.722583Z"
+  },
+  "content": [
+    {
+      "id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "submission_id": "f3472df6-6a95-4895-b979-8e2c5d83db6e",
+      "content_type": "manuscript",
+      "content_text": "# Molecular mechanism of active Cas7-11 in processing CRISPR RNA and interfering target RNA\n\n## Authors\n\n- Hemant N Goswami<sup>1</sup> ([ORCID: 0000-0003-4807-9187](https://orcid.org/0000-0003-4807-9187))\n- Jay Rai<sup>1</sup>\n- Anuska Das<sup>1</sup>\n- Hong Li<sup>1</sup> ([ORCID: 0000-0003-2046-9861](https://orcid.org/0000-0003-2046-9861)) \u2020\n\n### Affiliations\n\n1. Institute of Molecular Biophysics, Florida State University Tallahassee United States ([ROR:05g3dte14](https://ror.org/05g3dte14))\n2. Department of Chemistry and Biochemistry, Florida State University Tallahassee United States ([ROR:05g3dte14](https://ror.org/05g3dte14))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCas7-11 is a Type III-E CRISPR Cas effector that confers programmable RNA cleavage and has potential applications in RNA interference. Cas7-11 encodes a single polypeptide containing four Cas7- and one Cas11-like segments that obscures the distinction between the multi-subunit Class 1 and the single-subunit Class-2 CRISPR Cas systems. We report a cryo-EM (cryo-electron microscopy) structure of the active Cas7-11 from Desulfonema ishimotonii (DiCas7-11) that reveals the molecular basis for RNA processing and interference activities. DiCas7-11 arranges its Cas7- and Cas11-like domains in an extended form that resembles the backbone made up by four Cas7 and one Cas11 subunits in the multi-subunit enzymes. Unlike the multi-subunit enzymes, however, the backbone of DiCas7-11 contains evolutionarily different Cas7 and Cas11 domains, giving rise to their unique functionality. The first Cas7-like domain nearly engulfs the last 15 direct repeat nucleotides in processing and recognition of the CRISPR RNA, and its free-standing fragment retains most of the activity. Both the second and the third Cas7-like domains mediate target RNA cleavage in a metal-dependent manner. The structure and mutational data indicate that the long variable insertion to the fourth Cas7 domain has little impact on RNA processing or targeting, suggesting the possibility for engineering a compact and programmable RNA interference tool.\n\n## Introduction\n\nThe CRISPR Cas systems confer adaptive immunity to prokaryotic hosts against invading viruses by encoding a range of different CRISPR Cas efforts that interfere with the invader nucleic acids (Makarova et al., 2020). Three types of CRISPR Cas effectors are known to utilize programmable CRISPR RNA (crRNA) to guide cleavage of the complementary target RNA. The multi-subunit Type III effectors, exemplified by the Type III-A (Csm) and the III-B subtypes (Cmr), assemble 4\u20135 Cas7, 2\u20133 Cas11, and 1 Cas10 subunits into a sea horse-shaped helical enzyme (Molina et al., 2020). They cleave the target RNA at a 6-nucleotide (nt) interval within the complementary region that coincides with the evenly spaced Cas7 subunits (Elmore et al., 2016; Samai et al., 2015; Tamulaitis et al., 2014). The Type VI, or Cas13, is a single subunit and substantially smaller effector. Unlike Csm/Cmr, Cas13 employs two higher eukaryotic and prokaryotic nucleotide binding domains in cleaving the target RNA outside the complementary region (Abudayyeh et al., 2016; East-Seletsky et al., 2016). The recently discovered Type III-E effector, Cas7-11 or gRAMP (for giant repeat-associated mysterious protein), is also a single subunit effector with fused Cas7-like and Cas11-like segments (van Beljouw et al., 2021; \u00d6zcan et al., 2021; Figure 1a). Unlike Cas13 but similar to Csm/Cmr, Cas7-11 employs the Cas7-like segments to cleave crRNA-guided target RNA (Figure 1a). Interestingly, whereas Cas13 can distinguish self from foreign RNA by utilizing the 3\u2019 protospacer flanking sequence (PFS) in the target RNA (Meeske and Marraffini, 2018), both Csm/Cmr and Cas7-11 are insensitive to 3\u2019 PFS in cleaving their respective target RNA (van Beljouw et al., 2021; \u00d6zcan et al., 2021). The three effectors also differ in crRNA processing. Csm/Cmr utilize an independent processing endonuclease, Cas6, to result in a mature crRNA containing an 8-nt repeat (5\u2019-tag) linked to the spacer (Carte et al., 2008). By contrast, both Cas13 and Cas7-11 process their own crRNA (East-Seletsky et al., 2016; van Beljouw et al., 2021; \u00d6zcan et al., 2021). Cas7-11 is therefore believed to be a unique Type III CRIPSR-Cas system. Interestingly, Cas7-11 has been demonstrated to form a complex with the caspase-like TPR-CHAT peptidase, suggesting a potential for a viral RNA-induced and protease-mediated antiviral immunity (van Beljouw et al., 2021). Given the known collateral nuclease activities of Cas13 (Abudayyeh et al., 2016; East-Seletsky et al., 2016) and Csm/Cmr (Elmore et al., 2016; Samai et al., 2015; Kazlauskiene et al., 2016), and the complex enzyme composition of Csm/Cmr, Cas7-11 provides a desirable platform to further develop RNA interference and editing tools. To understand the molecular basis for crRNA processing and target interference by Cas7-11, we determined a cryo-electron microscopy (cryo-EM) structure of Desulfonema ishimotonii Cas7-11 (DiCas7-11) at an overall resolution of 2.82 \u00c5 (Figure 1b-c, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Supplementary file 1). DiCas7-11 has been demonstrated to function in programmable RNA cleavage and editing both in vitro and in mammalian cells (van Beljouw et al., 2021; \u00d6zcan et al., 2021). Our structure provides the architecture of the enzyme and the molecular basis for its enzymatic activities.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig1-v2.jpg)\n\n**Figure 1.:** (a) Domain organization of DiCas7-11 and schematic representation of crRNA-target RNA duplexes used in the study. Protein domain and RNA elements are colored differently and labeled. C7L denotes Cas7-like domain and C11L denotes Cas11-like domain. The gray colored nucleotides indicate those included in the constructs but not built due to weak or no density. Dash lines indicate protein regions not built due to weak or no density. The cyan and green colored triangles indicate the precursor crRNA (pre-crRNA) processing and target RNA cleavage sites, respectively. (b) Top, electron potential density map of DiCas7-11-crRNA-target RNA ternary complex shown in two different orientations. Bottom, cartoon representation of DiCas7-11-crRNA-target RNA ternary complex shown the same views as in top panel with corresponding colors representing protein domains and the two RNA strands. The solid spheres in wheat represent Zn atoms. (c) Close-up view of the density for the crRNA (spacer, black; 5\u2019-tag, light pink) and target RNA (red) duplex. RNA nucleotide positions as well as the three cutting sites are indicated as in panel (a).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The peak fraction run on gel in lane 2 is marked with inverted blue triangle on the elution profile and was used for subsequent experiments. Proteins are visualized by Coomassie brilliant blue staining. Bottom, schematic of DiCas7-11-precursor crRNA (pre-crRNA) complex formation, elution profile of DiCas7-11-crRNA binary complex, and gel analysis of the crRNA in the peak fraction by SYBR Gold staining.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Workflow of the cryo-electron microscopy (cryo-EM) image processing and 3D reconstruction of the Desulfonema ishimotonii Cas7-11 (DiCas7-11) ternary complex. The numbers indicate the number of particles while the percent indicates the percent to the total particles for each class. (b) Fourier shell correlations (FSC) of DiCas7-11-crRNA-ternary complex reconstruction, with the FSC cutoff 0.143, marked with a gray line and final resolution. (c) The local resolution of the final density map obtained from ResMap is colored as the color scale bar.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Density for regions of the target and crRNA duplex and the 5\u2019-tag. (b) Superimposed target:crRNA duplex (black and red) with standard A form helices (yellow). (c) Density of the three active sites as indicated. Nucleotide positions are labeled according to the scheme in Figure 1.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) LlCsm overview in three orientations in carton representations. The two left views are oriented exactly the same as those of DiCas7-11 shown in Figure 1. Subunits similar to DiCas7-11 domains and RNA are labeled and colored identically. (b) Superimposed LlCsm (gray) with DiCas7-11 (cyan) in ribbon models in the same three views as in (a). The DiCas7-11 and LlCsm were superimposed by using the C7L.2 domain and Csm2 subunits only that resulted in a root-means-square-difference (r.m.s.d.) of 5.3 \u00c5 for 131 C\u03b1 atoms. The target RNA that can be superimposed have an r.m.s.d. of 0.897 \u00c5 for 60 sugar phosphate backbone atoms. Solid triangles indicate target cleavage sites for LlCsm (gray) and DiCas7-11 (green), respectively. (c) The superimposed crRNA-target RNA duplexes in the DiCas7-11 (black, pink, and red) and LlCsm (gray) complexes, respectively. (d). The four Cas7-like (C7L) domains are superimposed and shown separately in cartoon representations and colored as those in Figure 1. The Cas11-like (C11L) is shown in cartoon representations. Key elements discussed in the text are labels. Boxed structures are the corresponding subunits for C11L and C7L, respectively, from LlCsm (PDB ID: 6XN2).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Protein residues are colored according to the scheme used in Figure 1 that corresponding to respective domains. The black, red, and light pink color boxes denote spacer, repeat, and target RNA. The green and blue colored triangles indicate target RNA and precursor crRNA (pre-crRNA) processing sites, respectively.\n\n## Results and Discussion\n\nThe wild-type DiCas7-11 was incubated with its precursor crRNA (pre-crRNA) and a complementary target RNA under a reactive condition before being made frozen specimen (Figure 1\u2014figure supplement 1). Under this condition, DiCas7-11 successfully processes the pre-crRNA and cleaves the target RNA (Figure 2 and Figure 1\u2014figure supplement 1). The density map resolves most of the DiCas7-11 protein, the crRNA (\u201315 to +19) and the partially cleaved target RNA (+19* to +2*) (Figure 1b-c, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3). The PFS region plus the first base paired nucleotide (+1*) are not observed. The core Cas7-11 assembly is half-moon shaped with four Cas7-like (C7L) domains (C7L.1\u2013C7L.4 from N- to the C-terminus) forming a long ridge and a single Cas11-like domain (C11L) occupying the crescent center. The entire DiCas7-11 complex can be superimposed onto the closely matched homologous Lactococcus lactis Csm (LlCsm) complex (Sridhara et al., 2022) (Type III-A) (Figure 1\u2014figure supplement 4a) with the C7L.1-C7L.4 ridge matching that formed by four Cas7-like (Csm3) subunits and C11L matching the Cas11-like (Csm2) subunit adjacent to Cas10 (Csm1) (Figure 1\u2014figure supplement 4b). The similarity in the bound RNA trajectory at the core between the two complex is striking (Figure 1\u2014figure supplement 4b), suggesting a similar RNA binding apparatus in both complexes. DiCas7-11 lacks the domains equivalent to the Csm4 and the Cas10 (Csm1) subunits and, thus, the functions associated with them. In Csm complexes, Csm4 recognizes and stabilizes the 8-nt 5\u2019-tag derived from the direct repeat whereas Cas10 carries out cyclic oligoadenylate synthesis and ancillary DNA cleavage (Sridhara et al., 2022; You et al., 2019; Jia et al., 2019). Cas10 also secures the 3\u2019 PFS of the cognate target RNA, and thus, plays a role in discrimination of self from foreign RNA (Sridhara et al., 2022; You et al., 2019; Jia et al., 2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig2-v2.jpg)\n\n**Figure 2.:** (a) The mode of Cas7-like domain 1 (C7L.1) and C7L.2 interaction with the processed crRNA nucleotides \u201315 to \u20131 in both cartoon (top) and surface (bottom) representations. Key secondary elements involved in crRNA interaction are labeled. Insets indicate close-up views around U(\u201315)-U(\u201313)-G(\u201313), the C(\u20138)-A(\u20137)-C(\u20136)-G(\u20135) tight RNA turn, and the conserved A(\u201312)-U(\u201311)-G(\u201310)-U(\u20139) tetranucleotide. The catalytic residue His43 for crRNA processing is colored red. Dash lines indicate close polar contacts. (b\u2013c) Top, various pre-crRNA used in processing reactions. Cyan colored triangles and dash lines indicate the pre-crRNA processing sites. Yellow bars indicate the sites of deoxy modification. The control RNA contains the last 14 nucleotides of the repeat plus the spacer. Spacer and repeat are shown in black and pink, respectively. \u2018Csb pre-crRNA\u2019 denotes the pre-crRNA for Candidatus Scalindua broadae Cas7-11. Processed products (P) of pre-crRNA are stained by SYBR Gold and imaged by ChemiDoc MP. Bottom, RNA processing results analyzed on polyacrylamide urea gel for the wild-type (1) and other pre-crRNA (2-8) by the wild-type Desulfonema ishimotonii Cas7-11 (DiCas7-11) (WT), the His43 to alanine mutant (H43A) of DiCas7-11, and the free-standing C7L.1 (fC7L.1). Processing products are indicated by cyan triangles. (d) Target RNA cleavage results analyzed on polyacrylamide urea gel using the wild-type and truncated pre-crRNA in the presence and absence of ethylenediaminetetraacetic acid (EDTA). \u2018Cy3\u2019 denotes the target RNA containing a 5\u2019-Cy3 fluorophore. The cleavage products (P) of the Cy3-labeled target RNA are visualized on ChemiDoc MP using 550 nm as the excitation and 564 nm as the emission wavelength, respectively, and are indicated by green triangles.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Regions of interests described in the main text are marked by asterisks. Desulfonema ishimotonii Cas7-11 (DiCas7-11) is from Desulfonema ishimotonii; CjcCas7-11 is from Candidatus Jettenia caeni; CsbCas7-11 is from Candidatus Scalindua broadae; HsmCas7-11 and SstCas7-11 source organism is unknown.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) SDS-PAGE gel analysis of fC7L.1 in two different concentrations after size exclusion chromatography. Proteins are visualized by Coomassie brilliant blue staining. (b) Native TBE gel analysis of a polyA-containing pre-crRNA (same as substrate 8 in Figure 2c) and a negative control RNA (C) following 30 min incubation with molar excess of fC7L.1. RNA is visualized by SYBR Gold staining.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Two views of the superimposed protein-RNA complexes (0.918 \u00c5 root-means-square-difference (r.m.s.d.) for 8114 atoms) in cartoon representation. Each protein domain and the RNA are labeled. (b) Comparison of the interactions of the first 5\u2019-tag nucleotide with DiCas7-11. G(\u201315) is used in the catalytically inactive complex while the native nucleotide U(\u201315) is used in the catalytically active complex. The close contacts between protein residues and U(\u201315) or G(\u201315) are indicated by red or gray dashed lines, respectively. Note that the catalytic residue for processing, His43, is 2.3 and 4.7 \u00c5 to the leaving 5\u2019-OH of U(\u201315) and G(\u201315), respectively, indicating a cognate interaction in the catalytically active complex at the processing site.\n\nDespite the overall structural similarity between the C7L- and the LlCsm-formed ridge, each C7L differs slightly in protein sequence and folding (Figure 1\u2014figure supplement 4c), which gives rise to their different roles in binding and cleaving RNA. The 34-nt crRNA lies along the C7L ridge with its repeat region spanning C7L.1-C7L.2 and the spacer region covering C7L.3-C7L.4 (Figure 1b-c and Figure 1\u2014figure supplement 3). The first 18 nucleotides of the target RNA (+19* to +2*) remain base paired with the spacer region of the crRNA (Figure 1c, Figure 1\u2014figure supplement 3, and Figure 1\u2014figure supplement 5). The short span of the guide-target region on C7L domains explains the two, instead of four as in LlCsm, sites of target cleavage (van Beljouw et al., 2021; \u00d6zcan et al., 2021).\n\nThe observed structure suggests that the pre-crRNA is processed by the first C7L domain, which yields a mature crRNA containing the last 15 nucleotides of the direct repeat (5\u2019-tag) linked to the programmed spacer (Figure 1c, Figure 2a, and Figure 1\u2014figure supplement 3). To confirm the site of processing, we subjected synthetic pre-crRNA containing 2\u2019-deoxy modification at \u221216,\u201315, or \u201314 position to the processing reaction, respectively, and found that the cleavage products are consistent with the density-derived 15-nt 5\u2019-tag (Figure 2b and Figure 1\u2014figure supplement 3). Strikingly, the sequence identity upstream of U(\u201315) is not important for processing, as those substituted with poly-adenine (polyA) or the previously characterized Candidatus Scalindua broadae (Csb) pre-crRNA are successfully processed by DiCas7-11 (Figure 2c). A well-conserved histidine residue, His43, is immediately next to the leaving 5\u2019-hydroxyl oxygen (2.3 \u00c5) of U(\u201315), suggesting its role in processing. Consistently, His43 to alanine mutation (H43A) abolished pre-crRNA cleavage (Figure 2c). The requirement for His43 without requiring divalent metals in processing suggests that DiCas7-11 employs a general acid-base catalysis mechanism similarly suggested for Cas6 (Li, 2015; Hochstrasser and Doudna, 2015), although detailed roles of His43 and other possible catalytic residues remain to be characterized. In this regard, the histidine-mediated processing reaction may be further assisted by nearby polar residues Tyr55 (4.3 \u00c5 from the leaving 5\u2019-hydroxyl oxygen) and Arg26 (5.1 \u00c5 from the leaving 5\u2019-hydroxyl oxygen). Interestingly, CsbCas7-11 contains threonine in place of His43 and phenylalanine in place of Tyr55, and it does not process its crRNA at position \u201315 (van Beljouw et al., 2021), suggesting that precise processing may not be required for the RNA interference activity.\n\nThe processed 15-nt 5\u2019-tag interacts extensively with C7L.1 and to less extent with C7L.2 (Figure 2a and Figure 1\u2014figure supplement 5). The protein nearly buries the entire 5\u2019-tag and thus precluded it from complete base pairing with a complementary RNA. In general, well-conserved residues form base-specific interactions while non-conserved residues maintain interactions with RNA sugar phosphate backbone. C7L.1 forms a ferredoxin fold (\u03b22\u2191\u03b23\u2193\u03b12\u03b21\u2191\u03b11\u03b24\u2193) highly abundant in CRISPR Cas components (Makarova et al., 2011; Wang and Li, 2012). It uses \u03b11, \u03b22, a long \u03b2-hairpin connecting \u03b22 to \u03b23 (thumb) and a C7L.1-specific insertion loop (finger) to secure the significantly bent 5\u2019-tag, resembling a rope-gripping right hand (Figure 2a and Figure 1\u2014figure supplement 5). The first nucleotide, U(\u201315), forms a hydrogen bond network with a number of residues including the well-conserved His43 (Figure 2a, Figure 1\u2014figure supplement 3, and Figure 1\u2014figure supplement 5). Removal of U(\u201315) did not impact target RNA cleavage (Figure 2d), suggesting the possibility that the U(\u201315)-protein interactions may be important for processing rather than target interference. The most extensive interactions take place at the strictly conserved A(\u201312)-U(\u201311)-G(\u201310)-U(\u20139) tetranucleotide (Figure 2a). Both sidechain as well as mainchain atoms of C7L.1 participate in \u2018reading\u2019 the four RNA bases, and the amino acids involving base-specific contacts (Thr59, Arg62, Arg67, Lys89, Thr92, and Glu93) are well conserved (Figure 2\u2014figure supplement 1). Strikingly, all edges of G(\u201310), the Watson-Crick, the Hoogsteen, and the sugar, are in close contacts with the conserved C7L.1 residues (Figure 2a, Figure 1\u2014figure supplement 5, and Figure 2\u2014figure supplement 1). Downstream of the AUGU tetranucleotide is a tight right-handed helical turn formed by C(\u20138)-A(\u20137)-C(\u20136)-G(\u20135). The turn is stabilized by both base stacking as well as an unusual network of intra-strand polar contacts. The base of G(\u20135) interdigitates those of C(\u20138) and A(\u20137) with the well-conserved Arg35 on top, leaving C(\u20136) protruding into the interior of the protein (Figure 2a, Figure 1\u2014figure supplement 5, and Figure 2\u2014figure supplement 1). Whereas phosphate backbone atoms in A form RNA do not engage in intra-strand contacts, those within the turn mediate numerous interactions (Figure 2a). The strictly conserved G(\u20135) forms the most intra-strand interactions. Its N2 atom contacts the non-bridging oxygen of A(\u20137) while its non-bridging oxygen forms hydrogen bond with 2\u2019-OH of C(\u20138) (Figure 2a). Finally, the 2\u2019-OH of G(\u20135) forms bifurcated contacts with the N7 atom of the strictly conserved A(\u20137) and G(\u20134). The tight and the N+3 interactions involving the C(\u20138)-A(\u20137)-C(\u20136)-G(\u20135) backbone atoms is reminiscent of those within a 310 helix in proteins. Interestingly, the non-conserved 5\u2019-tag nucleotides, A(\u20133), C(\u20136), and C(\u20138) form minimal contacts with the protein, suggesting their minor roles in maintaining protein-RNA interactions (Figure 2a, Figure 1\u2014figure supplement 5, and Figure 2\u2014figure supplement 1). The rest of the 5\u2019-tag is clamped down by the thumb of C7L.1 and \u03b11 of C7L.2 analogously as by two Cas7 subunits in Csm complexes (Sridhara et al., 2022). Consistent with the extensive 5\u2019-tag-protein interactions, removal of either first four or eight 5\u2019-tag nucleotides abolished RNA-guided target cleavage (Figure 2d). The different mode of 5\u2019-tag binding to Cas7-11 from that of Csm explains the lack of a Cas10-like effector as in Csm. Rather, it allosterically activates a different effector, the TPR-CHAT protease, in a 3\u2019 PFS-dependent manner. Though 13 of the 15 5\u2019-tag nucleotides are buried by the protein, the last two, C(\u20131) and A(\u20132), are partially solvent-accessible and can potentially participate in PFS-mediated activation of the TRP-CHAT activity (Hu et al., 2022).\n\nBased on structural observations, we hypothesized that a free-standing C7L.1 (fC7L.1) domain may be sufficient for binding and processing pre-crRNA. We thus created and purified a truncated mutant comprised of residues 1\u2013238 (hereafter fC7L.1 for free C7L.1) (Figure 2\u2014figure supplement 2a). Following 30 min incubation with pre-cRNA, fC7L.1 successfully processed the RNA, albeit at slightly reduced efficiency as compared to wild-type DiCas7-11 (Figure 2c, right). In addition, electrophoretic mobility shift assay shows that fC7L.1 remains bound to the cleaved pre-crRNA specifically (Figure 2\u2014figure supplement 2b), suggesting its potential to be used as a new CRISPR tool for in vivo RNA tracking or purification.\n\nThe spacer region of the crRNA is captured by the rest of the C7L ridge and base paired with the target RNA (Figure 3a). The three base paired regions largely resemble A form helix with some deviations in base-pair tilt (Figure 1\u2014figure supplement 3b). Three of the four C7L domains contain the characteristic \u2018thumb\u2019 that secure the crRNA at two evenly spaced (6-nt) kinks with bases flipped. The duplex bound by C7L.4 creates an extra spacing between the G(+13*)-C(+13) and G(+14*)-C(+14) pairs but no base flipping. Like the multi-subunit Type III effectors, the kinked crRNA-target RNA duplex creates bended sugar-phosphate backbone at the locations that coincide with the sites of cleavage. Both sites are cleaved by Cas7-11 in a metal-dependent manner (Figure 3b and c). Consistent with the previous observation that Type III systems generate 2\u2019,3\u2019-cyclic product in spite of the metal dependence (Hale et al., 2009), the target RNA containing 2\u2019-deoxy modification at A(+4*) (site 1) and C (+10*) (site 2) prevented formation of any cleavage product (Figure 3b and d). Two acidic residues, Asp429 and Asp654, were previously shown to be critical to cleavage at site 1 and site 2, respectively (\u00d6zcan et al., 2021). Satisfactorily, they are found near each corresponding scissile phosphate with the carboxylate oxygen 4.2\u20136.7 \u00c5 from the leaving 5\u2019-oxygen (Figure 3a). At both sites, the phosphodiester bond breakage is further assisted by the near \u2018in-line\u2019 geometry of the nucleophilic 2\u2019-oxygen, the scissile phosphate and the leaving 5\u2019-oxygen (Figure 3a). Two residues from the C11L domain, Arg283 (site 1) and His306 (site 2), where Arg283 is better conserved than His306, are observed to stabilize the attacking nucleotides by stacking on their bases (Figure 3a). Despite the demonstrated dependence on Mg2+ in target cleavage (Figure 3c), no sufficient density is observed that can be assigned to Mg2+ ions. The roles of these protein residues in facilitating metal-dependent phosphodiester bond breakage remains unclear.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig3-v2.jpg)\n\n**Figure 3.:** (a) Recognition of target RNA by the crRNA and Desulfonema ishimotonii Cas7-11 (DiCas7-11). The ferredoxin fold \u03b11 and the thumb hairpin for each of the four Cas7-like (C7L) domains are shown as cartoons and colored as in Figure 1. The quoted \u2018thumb\u2019 indicates the degenerate thumb motif for the C7L.4 domain. Insets show the two target cleavage sites in close-up views. RNA nucleotides and key amino acids are shown in stick models. The three atoms involved in formation of the \u2018in-line\u2019 geometry during phosphodiester bond breakage are labeled and indicated by thick dash lines. The closest of the three atoms to the putative catalytic residues, Asp654 (for site 2) and Asp429 (for site 1), are indicated by a connecting dash line. The close contact between Tyr360 and A(+4*) 2\u2019-hydroxyl oxygen at site 1 and that between Lys754 and A(+9*) 2\u2019-hydroxyl at site 2 are also indicated by dash lines. (b) Schematic of the Cy3-labeled (substrate 1) and other target RNA (substrates 2\u20137) used in cleavage activity assays. Yellow bars mark the locations of the deoxy modification on the target RNA substrate 3. Green colored triangles and dash lines indicate target RNA cleavage sites. (c\u2013f) Target RNA cleavage by DiCas7-11 and its Tyr360 to alanine mutant (Y360A) are analyzed on polyacrylamide urea gel. The cleavage products (P) of the Cy3-labeled target RNA are visualized on ChemiDoc MP using 550 nm as the excitation and 564 nm as the emission wavelength, respectively. Cleavage products (P) of non-Cy3-labeled target RNA are stained by SYBR Gold and imaged by ChemiDoc MP. All cleavage products are indicated by green triangles.\n\nInterestingly in the homologous CsbCas7-11, Asp429 is not conserved and mutation of its equivalent Asp448 and other surrounding residues did not impact site 1 cleavage (van Beljouw et al., 2021). To access possible roles of other residues near site 1 in catalysis, we mutated the well-conserved Tyr360 of C11L given its proximity to A(+4*) (Figure 3a). Surprisingly, we found that Tyr360 is not required for site 1 cleavage (Figure 3b and f), indicating that, at least for DiCas7-11, Asp429 is sufficient in mediating the metal-dependent cleavage.\n\nTo access the length of base pairing required for target cleavage, we further examined the cleavage of a series of truncated target from either the 3\u2019 or the 5\u2019 end. We found that as short of 16 base pairs in total length and 2 base pairs on one flanking end can facilitate RNA cleavage (Figure 3b and e), suggesting that both protein and crRNA:target pairing play significant roles in shaping the target RNA for cleavage.\n\nThough the final atomic model of DiCas7-11 lacks the large insertion to C7L.4 (residues 979\u20131297) due to weak density, focused classification and refinement led to a low-resolution map that matches the AlphaFold-predicted model of the insertion domain (Figure 4a and b). This model indicates that a large majority of the insertion domain is not engaged with any of the features described above and suggests the possibility that it is not essential to RNA-guided target cleavage. To test this hypothesis, we removed residues 1009\u20131220 to create DiCas7-11-\u0394int1. Consistently, we showed that DiCas7-11-\u0394int1 retains almost all RNA-guided target cleavage in an in vitro assay (Figure 4c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81678/elife-81678-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic of domain organization of wild-type and an insertion deletion variant DiCas7-11-\u0394int1. The region removed is colored in purple and numbered. (b) Cartoon representation of DiCas7-11 overlaying with density map resulted from focused classification using a mask around the insertion domain. The insertion structure model is from AlphaFold prediction. (c) Target RNA cleavage by DiCas7-11 (WT) and DiCas7-11-\u0394int1(\u0394int1) are analyzed on a polyacrylamide urea gel. Cleavage products (P) are stained by SYBR Gold and imaged by ChemiDoc MP and are indicated by green triangles.\n\nA structure of catalytically inactive DiCas7-11 (Asp429 and Asp654 to alanine) bound with a slightly modified crRNA (U(\u201315) is replaced by G(\u201315)) recently became available (PDB ID: 7WAH) (Kato et al., 2022). We superimposed the active form of DiCas7-11 bound with the processed native crRNA (this study) to that by Kato et al. (Figure 2\u2014figure supplement 3) and found a close agreement in protein and RNA structures. The superimposed structures resulted in 0.918 \u00c5 root-means-square-difference (r.m.s.d.) for 8114 atoms for protein, 0.691 \u00c5 for 192 backbone atoms of crRNA, and 0.80 \u00c5 for 96 backbone atoms of target, respectively (Figure 2\u2014figure supplement 3a). The target cleavage sites are highly similar despite the protein used by Kato et al., 2022, contains mutated catalytic aspartates. The largest difference, however, is observed in interactions between DiCas7-11 and the first 5\u2019-tag residue between the two structures. In that by Kato et al., G(\u201315), which is non-native, establishes minimal interactions with the protein, whereas in that of the active DiCas7-11, the native U(\u201315) interacts extensively with conserved protein residues (Figure 2a, Figure 1\u2014figure supplement 3, and Figure 2\u2014figure supplement 3b). In addition, whereas catalytic His43 forms a close contact with the 5\u2019-OH leaving group of U(\u201315), it is at a greater distance to G(\u201315) (Figure 2\u2014figure supplement 3b). This result suggests that, though U(\u201315) is nonessential to the architecture and the target-cleavage competency of DiCas7-11, it may be important for efficient processing.\n\nThe structure and complementary biochemical assays show that Cas7-11 has a minimal architecture required for programmable RNA cleavage. The covalent linkage of the homologous units suggests an evolutionary advantage in dedicating Cas7-11 to RNA cleavage. Considering the known collateral RNase activity of Cas13 and the complicated Csm/Cmr systems, Cas7-11 offers a desirable alternative in developing gene regulation tools. While DiCas7-11 has been successfully demonstrated to function in mammalian cells, the efficiency and accuracy remain to be improved. With now the available structures and the accurately mapped processing and target cleavage sites, protein engineering may assist the efforts in designing improved Cas7-11-derived RNA interference platforms. Both fC7L.1 and DiCas7-11-\u0394int1 lend a proof-of-concept for such an effort.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type(species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (species)</td>\n      <td>Escherichia coli NiCo21(DE3)</td>\n      <td>New England Biolabs</td>\n      <td>C2529H</td>\n      <td>Used for proteins expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Sumo-tag-DiCas7-11 expression plasmid</td>\n      <td>\u00d6zcan et al., 2021</td>\n      <td>Addgene:172503</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>His-tag-DiCas7-11 expression plasmid</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Constructed in-house. Protein-encoding sequences are inserted into pACYC-duet-1 cloning vector with BamHI and EcoRI cut sites, T7 promoter, p15A origin, and chloramphenicol resistance</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Cas7-11-\u0394int-1 expression plasmid</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td rowspan=\"2\">Addgene:172503; see Supplementary file 2 for primers</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>fC7L.1 expression plasmid</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cas7-11- \u0394int-1 protein</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td rowspan=\"2\">Expressed and purified in house from E. coli NiCo21(DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>fC7L.1 protein</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ULP1 protease</td>\n      <td>Protein Expression Facility, FSU</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC (v3.3.1)</td>\n      <td>Punjani et al., 2017</td>\n      <td>https://cryosparc.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION 4.0</td>\n      <td>Kimanius et al., 2021</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>Emsley et al., 2010</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>Afonine et al., 2018</td>\n      <td>https://phenix-online.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF ChimeraXUCSF Chimera</td>\n      <td>Pettersen et al., 2021 Pettersen et al., 2004</td>\n      <td>https://www.rbvi.ucsf.edu/chimera/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nTwo DiCas7-11 expression constructs were tested for protein expression. The first one comprises pACYC-duet-1 plasmid inserted with the codon-optimized sequence encoding for DiCas7-11 with an N-terminal his-tag. The second plasmid encodes sumo-tag fused DiCas7-11 (Addgene: 172503). Escherichia coli NiCo21 (DE3) competent cells were transformed with either plasmid used in protein production. A single colony was picked and transferred to 100 mL LB media containing 50 \u03bcg/mL ampicillin and grown for 12 hr at 37\u00b0C before inoculation into 1 L LB culture. The cells were induced at mid-log phase with the addition of 0.5 mM IPTG (isopropyl-\u03b2-D-thiogalactopyranoside) and grown overnight at 16\u00b0C and harvested. Cells were lysed and centrifuged at 4000 rpm for 30 min in buffer A (20 mM Tris pH 8.0, 500 mM NaCl, 5 mM \u03b2-mercaptoethanol, and 5% glycerol) sonicated 10 times on pulse for 20 s with 40 s rest between the pulses. The cell lysate was centrifuged at 16,000 rpm for 1 hr at 4\u00b0C and the resulting supernatant was passed through the pre-equilibrated Ni-NTA resin column. The protein bound resins were washed by 100 mL buffer B (20 mM Tris pH 8.0, 500 mM NaCl, 5 mM \u03b2-mercaptoethanol, 5% glycerol, and 50 mM imidazole) and eluted with buffer C (20 mM Tris pH 8.0, 500 mM NaCl, 5 mM \u03b2-mercaptoethanol, 5% glycerol, and 300 mM imidazole). For the sumo-tagged DiCas7-11, the ULP1 protease was added to the elutant to remove the sumo-tag from DiCas7-11 while dialyzing at 4\u00b0C overnight. The digested protein solution was diluted twofold before being loaded onto a heparin column pre-equilibrated with buffer D (20 mM Tris pH 8.0, 250 mM NaCl, 5 mM \u03b2-mercaptoethanol, and 5% glycerol). The bound protein was eluted with a salt gradient. Pooled fractions were further purified on a gel filtration column in buffer E (20 mM Tris pH 8.0, 500 mM NaCl, 2 mM DTT, and 5% glycerol). The protein containing fractions were pooled, concentrated to 21 mg/mL, aliquoted, and stored at \u201380\u00b0C for future use. We found that the quality of the sumo-tag purified protein is superior to that of the his-tag purified protein and used it in subsequent experiments. The DiCas7-11 mutants, DiCas7-11-\u0394int1 and fC7L.1, were prepared by Q5 \u00d72 master mix mutagenesis kit (New England Biolabs) using primers listed in Supplementary file 2 and purified similarly as the wild-type sumo-tagged DiCas7-11.\n\n### In vitro transcription and purification\n\nFor synthesis of 59-nt pre-crRNA, DNA oligonucleotides appended with T7 promoter sequence were ordered from Eurofins (Supplementary file 2). The complementary oligos, 50 \u03bcM in concentration, were annealed at 95\u00b0C followed by gradual cooling to 25\u00b0C at 1\u00b0C per minute rate. Next, 2.5 \u03bcL of annealing reaction was mixed with a transcription reaction master mix 50 mM Tris pH 8.0, 10 mM DTT 20 mM MgCl2, 0.5 mM NTPs, and 48 \u2009\u03bcg/mL T7 RNA polymerase in a 50 \u03bcL reaction. The in vitro transcription reaction was kept overnight at 37\u00b0C and treated with 2 U of Turbo DNase (Invitrogen) for 1 hr at 37\u00b0C. The final product was purified by Monarch RNA Cleanup kit (New England Biolabs), eluted in water, flash-frozen using liquid nitrogen and stored at \u221280\u00b0C.\n\n### Pre-crRNA processing\n\nFive hundred nM of DiCas7-11 of fC7L.1 was incubated with 500 nM of pre-crRNA at 37\u00b0C for 30 min in a 15 \u03bcL reactions containing \u00d71 processing buffer (40 mM Tris, pH 8.0, 70 mM NaCl). The reactions were stopped by using \u00d72 formamide dye (95% formamide, 0.025% SDS, 0.025% xylene cyanol FF, 0.5 mM EDTA). The samples were heated at 95\u00b0C for 5 min and run on 15% TBE-UREA gels (EC6885BOX, Thermo Fisher Scientific) at RT at 180 V in \u00d71 Tris Borate EDTA (TBE) running buffer. The gels were stained with SYBR Gold II (Invitrogen) stain and scanned by BIO-RAD ChemiDoc MP scanner.\n\n### Target RNA cleavage\n\nThe in vitro target RNA cleavage assays were performed in a cleavage buffer containing 40 mM Tris pH 8.0, 70 mM sodium chloride, 10 mM MgCl2. A binary complex was first prepared by incubating 400 nM Cas7-11 with 500 nM crRNA for 30 min at 37\u00b0C. The resulting samples were then incubated with 500 nM target RNA (5Cy3 labeled or non-labeled) for 1 hr at 37\u00b0C. To test the metal dependence cleavage activity, reaction was supplemented with 16 mM EDTA. The reactions were stopped by using \u00d72 formamide dye (95% formamide, 0.025% SDS, 0.025% xylene cyanol FF, 0.5 mM EDTA). The samples were heated at 95\u00b0C for 5 min and run on 15% TBE-UREA gels (EC6885BOX, Thermo Fisher Scientific) at RT at 180 V in \u00d71 TBE running buffer. The gels were stained with SYBR Gold II (Invitrogen) stain and scanned by Bio-Rad ChemiDoc MP scanner. When Cy3-labeled RNA was used, gels were directly scanned by Bio-Rad ChemiDoc MP scanner.\n\n### Electrophoretic mobility shift assay\n\nFor electrophoretic mobility shift assay, 1 \u00b5M fC7L.1 was separately added with 150 nM of polyA pre-crRNA (pA3) and non-specific RNA in the buffer containing 20 mM Tris pH 7.5, 70 mM NaCl, 5% glycerol, and 25 \u00b5g/mL heparin. The reaction was incubated for 30 min at 37\u00b0C. After the reaction was complete, the samples were mixed with \u00d76 loading dye (B7025S, New England Biolabs) and run on a 10% TBE gel (EC62752BOX, Thermo Fisher Scientific) at 4\u00b0C at 150 V. Gels were stained with SYBR Gold II (Invitrogen) and scanned by Bio-Rad ChemiDoc MP scanner.\n\n### Sample preparation and data collection for cryo-EM studies\n\nTo reconstitute the ternary complex, 400 \u03bcg wild-type DiCas7-11 protein was incubated with 1.5 molar excess of a pre-crRNA in the buffer (30 mM Tris pH 8.0, 60 mM NaCl) at 37\u00b0C for 45 min followed by separation on a Superdex 200 increase 10/300 gel filtration column in the buffer (30 mM HEPES pH 7.5, 180 mM NaCl, 10 mM MgCl2, and 2 mM TCEP). The peak fraction at 0.3 mg/mL determined by UV 280 nm absorbance was collected and further incubated with 2 molar excess target RNA at 37\u00b0C for 10 min before grid preparation. The Cas7-11-crRNA-target RNA sample in 5 \u03bcL volume was added onto glow-discharged 300 mesh Cu R1.2/1.3 holey carbon grids (Quantifoil) with extra layer of carbon (2 nm), blotted for 3 s at 100% humidity using FEI Vitrobot Mark IV. After flash-freezing in liquid ethane, the grids were transferred to liquid nitrogen for storage until cryo-EM imaging.\n\nThe Cas7-11 ternary complex micrographs were collected using EPU software on the Krios G3i cryo TEM (Thermo Fisher Scientific) equipped with Gatan Bioquantum K3 direct electron detector (Gatan) with 15 eV energy filter in a counted super-resolution mode. All 4177 images were collected at a dose rate of 60 e\u2212/\u00c52 with 1e\u2212/\u00c52 per frame in a pixel size of 0.825 \u00c5/pixel. Motion correction was performed in bin 2 using MotionCorr 2 (Zheng et al., 2017) in a wrapper provided in Relion 4.0 (Kimanius et al., 2021) and contrast transfer function parameters were estimated with Gctf (Zhang, 2016) implemented in cryo-SPARC (Punjani et al., 2017). The stack was generated and imported to cryoSPARC for particle picking and 2D classification. The images with bad ice, astigmatism, drift, and poor sample quality were rejected resulting in 4168 images for further processing and particle picking, which resulted in a total of 1,301,452 particles. Several rounds of 2D classification led to 645,053 particles with good quality. RELION-4.0 was used to classify the particles, which led to further reduction of particles to 226,320 based on high-resolution features for reconstruction.\n\n### Model building and refinement\n\nThe DiCas7-11 protein was built from an AlphaFold- (Jumper et al., 2021) predicted structure model using the program COOT (Emsley and Cowtan, 2004). Both the post-processed and local resolution filtered maps were used in building various parts of the model. The final DiCas7-11-crRNA-target RNA complex was refined in PHENIX (Liebschner et al., 2019) to satisfactory stereochemistry and density correlation parameters (Supplementary file 1).\n",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "039c6f4f-4650-4b92-8d0a-995b050ea7fd",
+      "submission_id": "f3472df6-6a95-4895-b979-8e2c5d83db6e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, https://ror.org/051fd9666 Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81678.sa0](https://doi.org/10.7554/eLife.81678.sa0)\n\nThis manuscript is a timely contribution to the CRISPR/Cas field: the mode of function of the type III-E Cas7-11 CRISPR-Cas system. This is an RNA-guided RNA targeting system only characterized last year. In contrast to Cas13 systems, Cas7-11 does not possess collateral damaging activity, hence does not show cytotoxicity when introduced into human cells. These are highly desirable traits in practical applications.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, https://ror.org/051fd9666 Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81678.sa1](https://doi.org/10.7554/eLife.81678.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Molecular Mechanism of Active Cas7-11 in Processing CRISPR RNA and Interfering Target RNA\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Timothy Nilsen as Reviewing Editor and James Manley as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers thought that the work was interesting and in principle appropriate for eLife. Nevertheless, each raised a significant number of concerns regarding the presentation of the work. Please address these concerns as thoroughly as possible. We hope that the concerns can be handled through textual revisions and revision of the figures.\n\nReviewer #1 (Recommendations for the authors):\n\nI have the following points for the authors to address.\n\n1. Comparison with Type III Csm complex \u2013 In page 4, the authors claim \"the similarity in the bound RNA trajectory at the core between the two complex[es] is striking (Supplementary Figure 4)\". However, Figure S4 only showed side-by-side comparison of the complex. There was no superpositioning nor r.m.s.d. value for the readers to evaluate the claims. These need to be provided.\n\n2. \"The first 18 nucleotides of the target RNA (+19* ~ +2*) remain base paired with the spacer region of the crRNA (Figure 1c, Supplementary Figure 3, & Supplementary Figure 5).\" \u2013 What happens to the +1* nucleotide? Is it base paired with the guide? If not, why?\n\n3. Along the same line, the role of the PFS motif in DiCas7-11 should be discussed. While most of the 5\u00b4 handle residues are sequestered, the last two nucleotides are displayed by DiCas7-11. The authors should discuss whether their structural observations in this region agree the biochemical data by Ozcan et al. For example, can the authors define the A-1*, G-2*, and the preceding nucleotides in their density map? Is there any interaction between this region and C-1A-2 in the 5\u00b4 handle?\n\n4. Along the same line, the authors should include a zoom-in view of each guide RNA-target segment. It is hard to tell from viewing Figure 1C whether the guide and target form perfect, distorted, or shearing base pairing in each segment. Suggesting including a supplementary figure showing the zoomed base pairing densities.\n\n5. I suggest the authors to improve the rendering of the EM maps in supplementary figure 3. For the three enzymatic centers, the important H-bonds should be marked with dashed lines, and distances labeled.\n\n6. Page 7, 5\u00b4 handle recognition: as the authors pointed out, not all 15 handle residues are highly conserved among Cas7-11 guide RNAs. Can the authors rationalize the handle nucleotide conservation based on variations in the recognition residues in Cas7-11?\n\n7. Enzymatic mechanism of crRNA biogenesis \u2013 Typically besides His, additional polar residues are involved in assisting the proton shuttering. Are there any such residues conserved among Cas7-11s?\n\n8. Cleavage at site 1 \u2013 I did not quite follow the author's conclusion that because Y360 is not required for site 1 cleavage, D429 is sufficient for mediating the metal-dependent cleavage. Is Y360 the only alternative catalytic residue in this site? Given that site 1 cleavage is metal independent, D429 is unlikely the general acid/base. Did I misunderstand something here?\n\n9. Figure 3c \u2013 No target band, nor cleavage product bands in lanes 4 and 5. Why is that? Are they not labeled? I could not make sense of this panel from reading the text and legend.\n\n10. Figure 3e \u2013 Why isn't substrate 5 cleaved but substrate 7 cleaved. Both results seem surprising.\n\n11. Page 5, first sentence of the 2nd paragraph: how does supplementary Figure 5 support the claim of structural similarity?\n\nReviewer #2 (Recommendations for the authors):\n\n1. I found Figure 2 and 3 (especially 3b-f) difficult to follow due to the lack of description of gel visualization methods and the overuse of \"asterisk\" in the figure legends. The following suggestions may help to reduce such confusion for future readers of this paper:\n\na. In the biochemical experiments, gels were visualized using either SybrGold staining or fluorescence labeling of the target RNA. The visualization method should be clearly stated in the figure legend for each panel containing a gel, to make it easier for the reader to understand the gel.\n\nb. In some cases, the \"target\" label on the left side of the gel is not aligned correctly with all targets shown on the gel (e.g. in Figures 3c, 3e), because targets of multiple sizes were used on the same gel. Please adjust these labels.\n\nc. Please describe which substrates were Cy5 labeled in the figure legend for Figure 3b, and/or describe what the yellow circle at the 5' end of target RNA 1 indicates.\n\nd. Please list the target RNAs in Figure 3b in the order they are shown on gels in panels 3c-f.\n\ne. Please describe the blue stars depicting deoxy positions for RNA target 2 in Figure 3b as \"blue stars\" rather than as asterisks.\n\nf. The use of an asterisk to indicate the labeled target in panel 3d and the spurious RNA in panel 3e is confusing. Could one of these be indicated using a different label? For example, the labeled target RNA could be indicating using the same yellow circle that was used in the cartoon of target RNA 1.\n\n2. Kato et al. described Zinc-finger domains in the Cas7 domains. Is evidence for these domains present in the cryo-EM map obtained in this study? These were not built into the structural model that was provided to reviewers.\n\n3. p. 4 line 15: The authors state that the density map revealed a \"partially cleaved target RNA\" but do not explain their interpretation of the map that led them to conclude that the RNA is partially cleaved. What was this determination based on? As mentioned in the public review, there appears to be little density for the site 1 product. Further discussion of this interpretation should be included in the manuscript.\n\n4. p. 3 line 22: The authors suggest that Cas7-11 may be an \"evolutionary intermediate\" between Class 1 and 2 effectors. This terminology is misleading, as it suggests that Class 1 and 2 effectors are homologous. Please reword this sentence.\n\n5. p. 6 line 6: The authors refer to the catalytic mechanism employed for crRNA processing as an \"RNase A-like mechanism\". A more generic term like \"general acid-base mechanism\" would be more appropriate, as there are likely several differences between RNase A and the Cas7-11 catalytic activity (e.g. there is only one catalytic histidine in the Cas7-11 active site and two in the RNase A active site; it is unclear whether the cyclic phosphate is resolved via hydrolysis by Cas7-11 as it is by RNase A).\n\n6. p. 7 line 2: The authors compare a structure in the crRNA 5' handle to a 3-10 helix of a protein. It is unclear how these are similar, as this region of the RNA has the base of residue -5 stacked between the bases of residues -7 and -8, which is quite a distinct architecture than what would be observed for the side chains of a 3-10 helix. The phrase about the 3-10 helix could be removed.\n\n7. Please use consistent nomenclature for the Csm complex subunits. It would be helpful to a broad audience to describe Csm3 as the Cas7-like subunit and Csm2 as the Cas11-like subunit in the text (p. 4 lines 20-21). Cas10 is referred to as Csm1 at the top of p. 5. Please use the updated nomenclature of Cas10 only. Csm1 could be indicated in parenthesis when first mentioning Cas10.\n\n8. Reference 1 could be updated to the more recent Makarova review (PMID: 31857715).\n\n9. p. 3 line 4: \"efforts\" should be \"effectors\"\n\n10. p. 3 line 11: \"Higher Prokaryotic and Eukaryotic binding domain\" should be \"Higher Eukaryotic and Prokaryotic Nucleotide binding domain\"\n\n11. p. 5 line 8: The reference to Supplementary Figure 5 seems extraneous here.\n\n12. p. 6 line 21: Please cite Figure 2a at the end of this sentence.\n\n13. p. 8 line 18: The authors state that Asp429 is sufficient for mediating metal-dependent cleavage, but the paragraph presents data that target cleavage in this active site is metal independent. This sentence is incongruous with the rest of the paragraph and requires clarification.\n\n14. A general comment regarding the structure figures: The figures are very attractive, but it would be helpful if the side chains of proteins were colored by heteroatom to more readily observe the identity of the residue and potential polar contacts.\n\n15. In Supplementary Figure 1, please indicate which peak was collected for the bottom elution profile.\n\n16. In Supplementary Figure 2, does \"pcts\" stand for \"particles\"? It may be helpful to spell out the whole word, as this is not a standard abbreviation as far as I know.\n\n17. In Supplementary Figure 4, it would be helpful to show Cas7-11 in this figure so that the reader does not need to compare with a separate figure.\n",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "35cd8662-db4c-429f-8d51-a87231f3474d",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C1",
+      "claim": "Cas7-11 is a Type III-E CRISPR Cas effector that confers programmable RNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas7-11 is a Type III-E CRISPR Cas effector that confers programmable RNA cleavage and has potential applications in RNA interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known property of Cas7-11, supported by the broader scientific literature on this system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "667bc2c7-bd62-4fbf-a911-7120af91c98c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C2",
+      "claim": "Cas7-11 has potential applications in RNA interference.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas7-11 is a Type III-E CRISPR Cas effector that confers programmable RNA cleavage and has potential applications in RNA interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications based on the properties of Cas7-11.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "2cbeb54b-d22c-4e23-8749-99fea5d88e38",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C3",
+      "claim": "Cas7-11 encodes a single polypeptide containing four Cas7- and one Cas11-like segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas7-11 encodes a single polypeptide containing four Cas7- and one Cas11-like segments that obscures the distinction between the multi-subunit Class 1 and the single-subunit Class-2 CRISPR Cas systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known structural feature of Cas7-11 from prior characterization.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "01c1d4c6-39b1-4780-86cd-117d9f7900be",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C4",
+      "claim": "The structure of Cas7-11 obscures the distinction between the multi-subunit Class 1 and the single-subunit Class-2 CRISPR Cas systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas7-11 encodes a single polypeptide containing four Cas7- and one Cas11-like segments that obscures the distinction between the multi-subunit Class 1 and the single-subunit Class-2 CRISPR Cas systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural organization of Cas7-11.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "d47b10c8-4634-46cb-9976-7f0d1dca207b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C5",
+      "claim": "A cryo-EM structure of active DiCas7-11 was determined at 2.82 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We report a cryo-EM (cryo-electron microscopy) structure of the active Cas7-11 from Desulfonema ishimotonii (DiCas7-11) that reveals the molecular basis for RNA processing and interference activities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The structure determination is the primary experimental result of this study, with resolution stated in the text and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "ef6afc72-7297-43e5-8ef6-31e6ba83d7b7",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C6",
+      "claim": "DiCas7-11 arranges its Cas7- and Cas11-like domains in an extended form that resembles the backbone made up by four Cas7 and one Cas11 subunits in multi-subunit enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "DiCas7-11 arranges its Cas7- and Cas11-like domains in an extended form that resembles the backbone made up by four Cas7 and one Cas11 subunits in the multi-subunit enzymes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is derived from the cryo-EM structure and comparison with multi-subunit Type III systems, as shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "30b373cb-c8b9-4e4a-b348-f2b7104bb3af",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C7",
+      "claim": "The backbone of DiCas7-11 contains evolutionarily different Cas7 and Cas11 domains compared to multi-subunit enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the multi-subunit enzymes, however, the backbone of DiCas7-11 contains evolutionarily different Cas7 and Cas11 domains, giving rise to their unique functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural and sequence comparisons between DiCas7-11 and multi-subunit Type III systems.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "8324d922-33ee-47ae-b5c9-2a51b2fe473b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C8",
+      "claim": "The first Cas7-like domain nearly engulfs the last 15 direct repeat nucleotides in processing and recognition of the CRISPR RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The first Cas7-like domain nearly engulfs the last 15 direct repeat nucleotides in processing and recognition of the CRISPR RNA, and its free-standing fragment retains most of the activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "917033ce-bc1e-48cf-94be-6021c4f3efb5",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C9",
+      "claim": "A free-standing fragment of the first Cas7-like domain retains most of the RNA processing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The first Cas7-like domain nearly engulfs the last 15 direct repeat nucleotides in processing and recognition of the CRISPR RNA, and its free-standing fragment retains most of the activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2c showing that fC7L.1 can process pre-crRNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "2e5b744b-b044-4721-981b-bb115f588405",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C10",
+      "claim": "Both the second and the third Cas7-like domains mediate target RNA cleavage in a metal-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the second and the third Cas7-like domains mediate target RNA cleavage in a metal-dependent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural analysis (Figure 3a) and biochemical assays showing EDTA inhibition (Figure 3c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "9d423fc4-8f6c-4c0b-84b6-0ba660501aa5",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C11",
+      "claim": "The long variable insertion to the fourth Cas7 domain has little impact on RNA processing or targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and mutational data indicate that the long variable insertion to the fourth Cas7 domain has little impact on RNA processing or targeting, suggesting the possibility for engineering a compact and programmable RNA interference tool.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the DiCas7-11-\u0394int1 deletion mutant retaining activity in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "661e0694-260a-45b3-9bd3-6d1af850508c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C12",
+      "claim": "The insertion domain deletion suggests the possibility for engineering a compact and programmable RNA interference tool.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and mutational data indicate that the long variable insertion to the fourth Cas7 domain has little impact on RNA processing or targeting, suggesting the possibility for engineering a compact and programmable RNA interference tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental observation that the insertion can be deleted without loss of function.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "e5097cf5-0acb-455f-9bb1-645a6022aa8c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C13",
+      "claim": "Type III-A (Csm) and III-B (Cmr) subtypes assemble 4\u20135 Cas7, 2\u20133 Cas11, and 1 Cas10 subunits into a sea horse-shaped helical enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The multi-subunit Type III effectors, exemplified by the Type III-A (Csm) and the III-B subtypes (Cmr), assemble 4\u20135 Cas7, 2\u20133 Cas11, and 1 Cas10 subunits into a sea horse-shaped helical enzyme (Molina et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "afa372ae-b825-48a0-bc5b-8ba591cc56d9",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C14",
+      "claim": "Type III effectors cleave target RNA at a 6-nucleotide interval within the complementary region.",
+      "claim_type": "EXPLICIT",
+      "source": "They cleave the target RNA at a 6-nucleotide (nt) interval within the complementary region that coincides with the evenly spaced Cas7 subunits (Elmore et al., 2016; Samai et al., 2015; Tamulaitis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "c6c58fb6-8885-4727-9ebc-4bf6d55f25dc",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C15",
+      "claim": "Type VI (Cas13) is a single subunit effector that is substantially smaller than Type III effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The Type VI, or Cas13, is a single subunit and substantially smaller effector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Cas13 systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "4d2a2205-539d-4820-ac12-ed6a2a965316",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C16",
+      "claim": "Cas13 employs two higher eukaryotic and prokaryotic nucleotide binding domains in cleaving target RNA outside the complementary region.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Csm/Cmr, Cas13 employs two higher eukaryotic and prokaryotic nucleotide binding domains in cleaving the target RNA outside the complementary region (Abudayyeh et al., 2016; East-Seletsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "17e1b534-bff7-4998-9530-12a51b970e17",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C17",
+      "claim": "Cas7-11 is also known as gRAMP (giant repeat-associated mysterious protein).",
+      "claim_type": "EXPLICIT",
+      "source": "The recently discovered Type III-E effector, Cas7-11 or gRAMP (for giant repeat-associated mysterious protein), is also a single subunit effector with fused Cas7-like and Cas11-like segments (van Beljouw et al., 2021; \u00d6zcan et al., 2021; Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative name for Cas7-11 from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "ccd3d320-472c-4a61-adf9-2652db4e9309",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C18",
+      "claim": "Cas7-11 employs Cas7-like segments to cleave crRNA-guided target RNA, similar to Csm/Cmr but unlike Cas13.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Cas13 but similar to Csm/Cmr, Cas7-11 employs the Cas7-like segments to cleave crRNA-guided target RNA (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from prior characterization cited in the references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "3339e2bf-5139-41e7-af2f-ba7ac65b111c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C19",
+      "claim": "Cas13 can distinguish self from foreign RNA by utilizing the 3' protospacer flanking sequence (PFS) in the target RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas Cas13 can distinguish self from foreign RNA by utilizing the 3' protospacer flanking sequence (PFS) in the target RNA (Meeske and Marraffini, 2018), both Csm/Cmr and Cas7-11 are insensitive to 3' PFS in cleaving their respective target RNA (van Beljouw et al., 2021; \u00d6zcan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "617b3b1d-a755-48b7-bae7-b51743e21eea",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C20",
+      "claim": "Both Csm/Cmr and Cas7-11 are insensitive to 3' PFS in cleaving their respective target RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas Cas13 can distinguish self from foreign RNA by utilizing the 3' protospacer flanking sequence (PFS) in the target RNA (Meeske and Marraffini, 2018), both Csm/Cmr and Cas7-11 are insensitive to 3' PFS in cleaving their respective target RNA (van Beljouw et al., 2021; \u00d6zcan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "7cef4d32-6c93-47be-8181-b43dc11ade8e",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C21",
+      "claim": "Csm/Cmr utilize an independent processing endonuclease, Cas6, to result in a mature crRNA containing an 8-nt repeat (5'-tag) linked to the spacer.",
+      "claim_type": "EXPLICIT",
+      "source": "Csm/Cmr utilize an independent processing endonuclease, Cas6, to result in a mature crRNA containing an 8-nt repeat (5'-tag) linked to the spacer (Carte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "4de9f0aa-7305-49d0-9fc8-204cb014da72",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C22",
+      "claim": "Both Cas13 and Cas7-11 process their own crRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, both Cas13 and Cas7-11 process their own crRNA (East-Seletsky et al., 2016; van Beljouw et al., 2021; \u00d6zcan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "5cfdfce6-abb2-4268-93a6-931af91e84fd",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C23",
+      "claim": "Cas7-11 is believed to be a unique Type III CRISPR-Cas system.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas7-11 is therefore believed to be a unique Type III CRIPSR-Cas system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the distinctive properties of Cas7-11 compared to other Type III systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "521c76d2-24fb-4753-b404-b96200231a9a",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C24",
+      "claim": "Cas7-11 has been demonstrated to form a complex with the caspase-like TPR-CHAT peptidase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Cas7-11 has been demonstrated to form a complex with the caspase-like TPR-CHAT peptidase, suggesting a potential for a viral RNA-induced and protease-mediated antiviral immunity (van Beljouw et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "929a6dbd-3c57-431a-bbe1-4782e6d36d96",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C25",
+      "claim": "The Cas7-11-TPR-CHAT complex suggests a potential for viral RNA-induced and protease-mediated antiviral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Cas7-11 has been demonstrated to form a complex with the caspase-like TPR-CHAT peptidase, suggesting a potential for a viral RNA-induced and protease-mediated antiviral immunity (van Beljouw et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the observed complex formation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "871255cc-4157-43bf-9834-8759a50feb2a",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C26",
+      "claim": "Cas13 has collateral nuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the known collateral nuclease activities of Cas13 (Abudayyeh et al., 2016; East-Seletsky et al., 2016) and Csm/Cmr (Elmore et al., 2016; Samai et al., 2015; Kazlauskiene et al., 2016), and the complex enzyme composition of Csm/Cmr, Cas7-11 provides a desirable platform to further develop RNA interference and editing tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "6894e73e-34a5-45ac-a6a8-07e0ad503d54",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C27",
+      "claim": "Csm/Cmr have collateral nuclease activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the known collateral nuclease activities of Cas13 (Abudayyeh et al., 2016; East-Seletsky et al., 2016) and Csm/Cmr (Elmore et al., 2016; Samai et al., 2015; Kazlauskiene et al., 2016), and the complex enzyme composition of Csm/Cmr, Cas7-11 provides a desirable platform to further develop RNA interference and editing tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "1ec31916-cf4f-40bc-acab-8f0063166d2c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C28",
+      "claim": "Cas7-11 provides a desirable platform to develop RNA interference and editing tools.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the known collateral nuclease activities of Cas13 (Abudayyeh et al., 2016; East-Seletsky et al., 2016) and Csm/Cmr (Elmore et al., 2016; Samai et al., 2015; Kazlauskiene et al., 2016), and the complex enzyme composition of Csm/Cmr, Cas7-11 provides a desirable platform to further develop RNA interference and editing tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the properties of Cas7-11 compared to other systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "fd437f72-d6b6-4372-86d1-1f020c5d038c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C29",
+      "claim": "DiCas7-11 has been demonstrated to function in programmable RNA cleavage and editing both in vitro and in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DiCas7-11 has been demonstrated to function in programmable RNA cleavage and editing both in vitro and in mammalian cells (van Beljouw et al., 2021; \u00d6zcan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "e494180c-4173-4fee-89b4-08eb99a40b2f",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C30",
+      "claim": "The cryo-EM structure of DiCas7-11 was determined at an overall resolution of 2.82 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the molecular basis for crRNA processing and target interference by Cas7-11, we determined a cryo-electron microscopy (cryo-EM) structure of Desulfonema ishimotonii Cas7-11 (DiCas7-11) at an overall resolution of 2.82 \u00c5 (Figure 1b-c, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary experimental result, with resolution shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "dd2de041-7fd5-4f1c-bfda-cff7a05e32d5",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C31",
+      "claim": "The density map resolves most of the DiCas7-11 protein, the crRNA (\u201315 to +19) and the partially cleaved target RNA (+19* to +2*).",
+      "claim_type": "EXPLICIT",
+      "source": "The density map resolves most of the DiCas7-11 protein, the crRNA (\u201315 to +19) and the partially cleaved target RNA (+19* to +2*) (Figure 1b-c, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM density map shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "68442d6c-e8bb-423b-a157-68c77f62fd08",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C32",
+      "claim": "The PFS region plus the first base paired nucleotide (+1*) are not observed in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The PFS region plus the first base paired nucleotide (+1*) are not observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a30ec792-9618-4b8c-849e-4a67c3589165",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C33",
+      "claim": "The core Cas7-11 assembly is half-moon shaped with four Cas7-like (C7L) domains forming a long ridge and a single Cas11-like domain (C11L) occupying the crescent center.",
+      "claim_type": "EXPLICIT",
+      "source": "The core Cas7-11 assembly is half-moon shaped with four Cas7-like (C7L) domains (C7L.1\u2013C7L.4 from N- to the C-terminus) forming a long ridge and a single Cas11-like domain (C11L) occupying the crescent center.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "16e09338-55e7-4620-84f9-b3552e5edd35",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C34",
+      "claim": "The entire DiCas7-11 complex can be superimposed onto the Lactococcus lactis Csm (LlCsm) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire DiCas7-11 complex can be superimposed onto the closely matched homologous Lactococcus lactis Csm (LlCsm) complex (Sridhara et al., 2022) (Type III-A) (Figure 1\u2014figure supplement 4a) with the C7L.1-C7L.4 ridge matching that formed by four Cas7-like (Csm3) subunits and C11L matching the Cas11-like (Csm2) subunit adjacent to Cas10 (Csm1) (Figure 1\u2014figure supplement 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural superposition shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "2cba16fb-9e24-418f-9275-6b2646fa9323",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C35",
+      "claim": "The similarity in the bound RNA trajectory at the core between DiCas7-11 and LlCsm is striking.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in the bound RNA trajectory at the core between the two complex is striking (Figure 1\u2014figure supplement 4b), suggesting a similar RNA binding apparatus in both complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 1\u2014figure supplement 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "3ff47122-4166-4709-9751-79540765af0d",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C36",
+      "claim": "DiCas7-11 and LlCsm have a similar RNA binding apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in the bound RNA trajectory at the core between the two complex is striking (Figure 1\u2014figure supplement 4b), suggesting a similar RNA binding apparatus in both complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural similarity in RNA binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "1c04737a-e456-4eae-a99c-9e15a94399f4",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C37",
+      "claim": "DiCas7-11 lacks the domains equivalent to the Csm4 and the Cas10 (Csm1) subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "DiCas7-11 lacks the domains equivalent to the Csm4 and the Cas10 (Csm1) subunits and, thus, the functions associated with them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison with LlCsm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "ba8f4c6e-954e-4196-8365-65c9f6d311b4",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C38",
+      "claim": "DiCas7-11 lacks the functions associated with Csm4 and Cas10 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "DiCas7-11 lacks the domains equivalent to the Csm4 and the Cas10 (Csm1) subunits and, thus, the functions associated with them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of these structural domains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "ff1607ae-0aaf-4198-893a-cfc3ba984942",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C39",
+      "claim": "In Csm complexes, Csm4 recognizes and stabilizes the 8-nt 5'-tag derived from the direct repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "In Csm complexes, Csm4 recognizes and stabilizes the 8-nt 5'-tag derived from the direct repeat whereas Cas10 carries out cyclic oligoadenylate synthesis and ancillary DNA cleavage (Sridhara et al., 2022; You et al., 2019; Jia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a5957f9c-d925-4c1c-b2ba-e62242152808",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C40",
+      "claim": "Cas10 carries out cyclic oligoadenylate synthesis and ancillary DNA cleavage in Csm complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In Csm complexes, Csm4 recognizes and stabilizes the 8-nt 5'-tag derived from the direct repeat whereas Cas10 carries out cyclic oligoadenylate synthesis and ancillary DNA cleavage (Sridhara et al., 2022; You et al., 2019; Jia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "cc2c0a97-98a1-4367-b1b0-a7206b12fdeb",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C41",
+      "claim": "Cas10 secures the 3' PFS of the cognate target RNA and plays a role in discrimination of self from foreign RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas10 also secures the 3' PFS of the cognate target RNA, and thus, plays a role in discrimination of self from foreign RNA (Sridhara et al., 2022; You et al., 2019; Jia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "62a28941-f529-45e0-8a76-a6070f298c1b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C42",
+      "claim": "Wild-type DiCas7-11 successfully processes pre-crRNA and cleaves target RNA under reactive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this condition, DiCas7-11 successfully processes the pre-crRNA and cleaves the target RNA (Figure 2 and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in the figures showing processing and cleavage products.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "38dea59d-e2cd-45af-85a7-6d065e1da8da",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C43",
+      "claim": "The 34-nt crRNA lies along the C7L ridge with its repeat region spanning C7L.1-C7L.2 and the spacer region covering C7L.3-C7L.4.",
+      "claim_type": "EXPLICIT",
+      "source": "The 34-nt crRNA lies along the C7L ridge with its repeat region spanning C7L.1-C7L.2 and the spacer region covering C7L.3-C7L.4 (Figure 1b-c and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "258abf2b-52ef-438a-b282-b73ef4b3c01b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C44",
+      "claim": "The first 18 nucleotides of the target RNA (+19* to +2*) remain base paired with the spacer region of the crRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The first 18 nucleotides of the target RNA (+19* to +2*) remain base paired with the spacer region of the crRNA (Figure 1c, Figure 1\u2014figure supplement 3, and Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "2a48f33a-ad0e-4526-9ecc-3da3f8397c4a",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C45",
+      "claim": "The short span of the guide-target region on C7L domains explains the two, instead of four as in LlCsm, sites of target cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The short span of the guide-target region on C7L domains explains the two, instead of four as in LlCsm, sites of target cleavage (van Beljouw et al., 2021; \u00d6zcan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural observations and comparison with LlCsm.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "7546c850-9fd9-40ac-8004-318133061eb9",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C46",
+      "claim": "The pre-crRNA is processed by the first C7L domain, yielding a mature crRNA containing the last 15 nucleotides of the direct repeat (5'-tag) linked to the programmed spacer.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed structure suggests that the pre-crRNA is processed by the first C7L domain, which yields a mature crRNA containing the last 15 nucleotides of the direct repeat (5'-tag) linked to the programmed spacer (Figure 1c, Figure 2a, and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structure and confirmed by biochemical assays in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "00101647-cb34-458d-8764-9dee67298d09",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C47",
+      "claim": "Synthetic pre-crRNA containing 2'-deoxy modification at \u221216, \u221215, or \u221214 position confirms cleavage products consistent with a 15-nt 5'-tag.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the site of processing, we subjected synthetic pre-crRNA containing 2'-deoxy modification at \u221216,\u201315, or \u201314 position to the processing reaction, respectively, and found that the cleavage products are consistent with the density-derived 15-nt 5'-tag (Figure 2b and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "0e498f3f-085b-4a33-801a-f5287b4ffcd8",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C48",
+      "claim": "The sequence identity upstream of U(\u201315) is not important for processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the sequence identity upstream of U(\u201315) is not important for processing, as those substituted with poly-adenine (polyA) or the previously characterized Candidatus Scalindua broadae (Csb) pre-crRNA are successfully processed by DiCas7-11 (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a2467bdb-68a5-4956-8f8e-54c52dac2cc9",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C49",
+      "claim": "His43 is immediately next to the leaving 5'-hydroxyl oxygen (2.3 \u00c5) of U(\u201315), suggesting its role in processing.",
+      "claim_type": "EXPLICIT",
+      "source": "A well-conserved histidine residue, His43, is immediately next to the leaving 5'-hydroxyl oxygen (2.3 \u00c5) of U(\u201315), suggesting its role in processing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 2a and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "5d3bcf3f-9024-472a-a1de-fb9aaaad6f20",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C50",
+      "claim": "His43 to alanine mutation (H43A) abolished pre-crRNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, His43 to alanine mutation (H43A) abolished pre-crRNA cleavage (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "5b02e041-e2a1-4f23-b111-5ded98405d64",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C51",
+      "claim": "DiCas7-11 employs a general acid-base catalysis mechanism for processing, similar to Cas6.",
+      "claim_type": "EXPLICIT",
+      "source": "The requirement for His43 without requiring divalent metals in processing suggests that DiCas7-11 employs a general acid-base catalysis mechanism similarly suggested for Cas6 (Li, 2015; Hochstrasser and Doudna, 2015), although detailed roles of His43 and other possible catalytic residues remain to be characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the His43 requirement and comparison with Cas6 mechanism from cited references.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "155528ec-0938-4727-acf4-1f3b0d28972f",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C52",
+      "claim": "The histidine-mediated processing reaction may be further assisted by nearby polar residues Tyr55 and Arg26.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the histidine-mediated processing reaction may be further assisted by nearby polar residues Tyr55 (4.3 \u00c5 from the leaving 5'-hydroxyl oxygen) and Arg26 (5.1 \u00c5 from the leaving 5'-hydroxyl oxygen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the proximity of these residues to the cleavage site.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "c708cd79-cbe5-49c7-975a-b8e9e5199b42",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C53",
+      "claim": "CsbCas7-11 contains threonine in place of His43 and phenylalanine in place of Tyr55.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CsbCas7-11 contains threonine in place of His43 and phenylalanine in place of Tyr55, and it does not process its crRNA at position \u201315 (van Beljouw et al., 2021), suggesting that precise processing may not be required for the RNA interference activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "5ba05ba2-1256-4cee-a568-7ec1d27fc9ef",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C54",
+      "claim": "CsbCas7-11 does not process its crRNA at position \u201315.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CsbCas7-11 contains threonine in place of His43 and phenylalanine in place of Tyr55, and it does not process its crRNA at position \u201315 (van Beljouw et al., 2021), suggesting that precise processing may not be required for the RNA interference activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "8600a984-adfd-40e4-b34f-e7009ad1c053",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C55",
+      "claim": "Precise processing may not be required for RNA interference activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CsbCas7-11 contains threonine in place of His43 and phenylalanine in place of Tyr55, and it does not process its crRNA at position \u201315 (van Beljouw et al., 2021), suggesting that precise processing may not be required for the RNA interference activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation that CsbCas7-11 functions without precise processing.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a8041736-f172-46b1-861d-49e3a426ff0d",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C56",
+      "claim": "The processed 15-nt 5'-tag interacts extensively with C7L.1 and to less extent with C7L.2.",
+      "claim_type": "EXPLICIT",
+      "source": "The processed 15-nt 5'-tag interacts extensively with C7L.1 and to less extent with C7L.2 (Figure 2a and Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "db8f8be3-99f0-4748-b67f-0604a62ff71b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C57",
+      "claim": "The protein nearly buries the entire 5'-tag and thus precluded it from complete base pairing with a complementary RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein nearly buries the entire 5'-tag and thus precluded it from complete base pairing with a complementary RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "4acc0a83-2660-44d8-bd89-3933b1cfec87",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C58",
+      "claim": "Well-conserved residues form base-specific interactions while non-conserved residues maintain interactions with RNA sugar phosphate backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, well-conserved residues form base-specific interactions while non-conserved residues maintain interactions with RNA sugar phosphate backbone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general pattern observed in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "24a880f3-4360-4033-8c4e-da2704cb957c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C59",
+      "claim": "C7L.1 forms a ferredoxin fold (\u03b22\u2191\u03b23\u2193\u03b12\u03b21\u2191\u03b11\u03b24\u2193) highly abundant in CRISPR Cas components.",
+      "claim_type": "EXPLICIT",
+      "source": "C7L.1 forms a ferredoxin fold (\u03b22\u2191\u03b23\u2193\u03b12\u03b21\u2191\u03b11\u03b24\u2193) highly abundant in CRISPR Cas components (Makarova et al., 2011; Wang and Li, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and is established knowledge from the cited references.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "7989031f-ddce-4c10-a9f5-a63acb7f5a30",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C60",
+      "claim": "C7L.1 uses \u03b11, \u03b22, a long \u03b2-hairpin connecting \u03b22 to \u03b23 (thumb) and a C7L.1-specific insertion loop (finger) to secure the significantly bent 5'-tag, resembling a rope-gripping right hand.",
+      "claim_type": "EXPLICIT",
+      "source": "It uses \u03b11, \u03b22, a long \u03b2-hairpin connecting \u03b22 to \u03b23 (thumb) and a C7L.1-specific insertion loop (finger) to secure the significantly bent 5'-tag, resembling a rope-gripping right hand (Figure 2a and Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "28ae6850-8ed7-428d-b546-020da9fb788a",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C61",
+      "claim": "The first nucleotide, U(\u201315), forms a hydrogen bond network with a number of residues including the well-conserved His43.",
+      "claim_type": "EXPLICIT",
+      "source": "The first nucleotide, U(\u201315), forms a hydrogen bond network with a number of residues including the well-conserved His43 (Figure 2a, Figure 1\u2014figure supplement 3, and Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "fa68938a-50ae-4681-8bd5-ac6fad7f2c79",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C62",
+      "claim": "Removal of U(\u201315) did not impact target RNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of U(\u201315) did not impact target RNA cleavage (Figure 2d), suggesting the possibility that the U(\u201315)-protein interactions may be important for processing rather than target interference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "201b0d3e-0253-47a8-8a5f-52a0c613fe4d",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C63",
+      "claim": "The U(\u201315)-protein interactions may be important for processing rather than target interference.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of U(\u201315) did not impact target RNA cleavage (Figure 2d), suggesting the possibility that the U(\u201315)-protein interactions may be important for processing rather than target interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that U(\u201315) removal does not affect cleavage.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "9dea1b49-1472-4037-8f3f-112d51062290",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C64",
+      "claim": "The most extensive interactions take place at the strictly conserved A(\u201312)-U(\u201311)-G(\u201310)-U(\u20139) tetranucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The most extensive interactions take place at the strictly conserved A(\u201312)-U(\u201311)-G(\u201310)-U(\u20139) tetranucleotide (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "da7380e5-0a46-40a6-9200-0f01d587f8e7",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C65",
+      "claim": "Both sidechain and mainchain atoms of C7L.1 participate in 'reading' the four RNA bases of the AUGU tetranucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sidechain as well as mainchain atoms of C7L.1 participate in 'reading' the four RNA bases, and the amino acids involving base-specific contacts (Thr59, Arg62, Arg67, Lys89, Thr92, and Glu93) are well conserved (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure and sequence alignment shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "220a1a81-c627-421f-8cdc-be9f20cc0b94",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C66",
+      "claim": "All edges of G(\u201310) (Watson-Crick, Hoogsteen, and sugar) are in close contacts with conserved C7L.1 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, all edges of G(\u201310), the Watson-Crick, the Hoogsteen, and the sugar, are in close contacts with the conserved C7L.1 residues (Figure 2a, Figure 1\u2014figure supplement 5, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "868648d8-5430-476a-b715-80086de5bc8e",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C67",
+      "claim": "Downstream of the AUGU tetranucleotide is a tight right-handed helical turn formed by C(\u20138)-A(\u20137)-C(\u20136)-G(\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of the AUGU tetranucleotide is a tight right-handed helical turn formed by C(\u20138)-A(\u20137)-C(\u20136)-G(\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "2e8742dd-cd98-4776-aaab-a0b5307650ce",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C68",
+      "claim": "The tight turn is stabilized by both base stacking and an unusual network of intra-strand polar contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The turn is stabilized by both base stacking as well as an unusual network of intra-strand polar contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "f11d7f0c-8f78-4a8f-b331-a6554da2264f",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C69",
+      "claim": "The base of G(\u20135) interdigitates those of C(\u20138) and A(\u20137) with the well-conserved Arg35 on top, leaving C(\u20136) protruding into the interior of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The base of G(\u20135) interdigitates those of C(\u20138) and A(\u20137) with the well-conserved Arg35 on top, leaving C(\u20136) protruding into the interior of the protein (Figure 2a, Figure 1\u2014figure supplement 5, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "cdadd84c-99d1-40e0-8e46-67319bec743d",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C70",
+      "claim": "Phosphate backbone atoms in A form RNA do not engage in intra-strand contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas phosphate backbone atoms in A form RNA do not engage in intra-strand contacts, those within the turn mediate numerous interactions (Figure 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about A-form RNA structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "4a6d38ec-d0e9-41c7-8986-716c8ee33a7f",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C71",
+      "claim": "Phosphate backbone atoms within the tight turn mediate numerous interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas phosphate backbone atoms in A form RNA do not engage in intra-strand contacts, those within the turn mediate numerous interactions (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "0a4bcb4b-5f60-4e5a-a413-07a62089be91",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C72",
+      "claim": "The strictly conserved G(\u20135) forms the most intra-strand interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The strictly conserved G(\u20135) forms the most intra-strand interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "9b340938-6422-4404-88ea-d8c0ea73255e",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C73",
+      "claim": "G(\u20135) N2 atom contacts the non-bridging oxygen of A(\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "Its N2 atom contacts the non-bridging oxygen of A(\u20137) while its non-bridging oxygen forms hydrogen bond with 2'-OH of C(\u20138) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "0cb6dee6-bcad-420e-b46d-22c201bc9c44",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C74",
+      "claim": "G(\u20135) non-bridging oxygen forms hydrogen bond with 2'-OH of C(\u20138).",
+      "claim_type": "EXPLICIT",
+      "source": "Its N2 atom contacts the non-bridging oxygen of A(\u20137) while its non-bridging oxygen forms hydrogen bond with 2'-OH of C(\u20138) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "4fa77bf9-4baf-4169-8e5e-84389b1dfc8a",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C75",
+      "claim": "The 2'-OH of G(\u20135) forms bifurcated contacts with the N7 atom of A(\u20137) and G(\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the 2'-OH of G(\u20135) forms bifurcated contacts with the N7 atom of the strictly conserved A(\u20137) and G(\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "80470eba-e273-4d9f-9fe1-a367e2dddb1c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C76",
+      "claim": "The tight turn and the N+3 interactions involving the C(\u20138)-A(\u20137)-C(\u20136)-G(\u20135) backbone atoms is reminiscent of those within a 310 helix in proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The tight and the N+3 interactions involving the C(\u20138)-A(\u20137)-C(\u20136)-G(\u20135) backbone atoms is reminiscent of those within a 310 helix in proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn from structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "6a7c30fa-89f5-4c3f-9056-bf8aa004491b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C77",
+      "claim": "The non-conserved 5'-tag nucleotides A(\u20133), C(\u20136), and C(\u20138) form minimal contacts with the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the non-conserved 5'-tag nucleotides, A(\u20133), C(\u20136), and C(\u20138) form minimal contacts with the protein, suggesting their minor roles in maintaining protein-RNA interactions (Figure 2a, Figure 1\u2014figure supplement 5, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "65f78d0a-2dc8-42c5-8e1c-2317f11e93b3",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C78",
+      "claim": "Non-conserved 5'-tag nucleotides have minor roles in maintaining protein-RNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the non-conserved 5'-tag nucleotides, A(\u20133), C(\u20136), and C(\u20138) form minimal contacts with the protein, suggesting their minor roles in maintaining protein-RNA interactions (Figure 2a, Figure 1\u2014figure supplement 5, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the minimal contacts observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "465cdf36-7bf8-45fe-a0b8-9a59206212ac",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C79",
+      "claim": "The rest of the 5'-tag is clamped down by the thumb of C7L.1 and \u03b11 of C7L.2 analogously as by two Cas7 subunits in Csm complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The rest of the 5'-tag is clamped down by the thumb of C7L.1 and \u03b11 of C7L.2 analogously as by two Cas7 subunits in Csm complexes (Sridhara et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and compared to Csm complexes from the cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "878b258f-fad3-410a-9fff-08401aff4112",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C80",
+      "claim": "Removal of either first four or eight 5'-tag nucleotides abolished RNA-guided target cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the extensive 5'-tag-protein interactions, removal of either first four or eight 5'-tag nucleotides abolished RNA-guided target cleavage (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "984dfb3f-0168-40f3-994f-52b96ae7603e",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C81",
+      "claim": "The different mode of 5'-tag binding to Cas7-11 from that of Csm explains the lack of a Cas10-like effector as in Csm.",
+      "claim_type": "EXPLICIT",
+      "source": "The different mode of 5'-tag binding to Cas7-11 from that of Csm explains the lack of a Cas10-like effector as in Csm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparison.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "ad6244b5-dc84-49d8-95ca-ae1d99d1b5e9",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C82",
+      "claim": "Cas7-11 allosterically activates the TPR-CHAT protease in a 3' PFS-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, it allosterically activates a different effector, the TPR-CHAT protease, in a 3' PFS-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "d810a751-e879-4c2d-a0c7-bd91af6470e5",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C83",
+      "claim": "The last two 5'-tag nucleotides, C(\u20131) and A(\u20132), are partially solvent-accessible and can potentially participate in PFS-mediated activation of the TRP-CHAT activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Though 13 of the 15 5'-tag nucleotides are buried by the protein, the last two, C(\u20131) and A(\u20132), are partially solvent-accessible and can potentially participate in PFS-mediated activation of the TRP-CHAT activity (Hu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural observations and cited reference.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "e656f84e-4452-4589-8f07-9dc5428e2902",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C84",
+      "claim": "A free-standing C7L.1 (fC7L.1) domain may be sufficient for binding and processing pre-crRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on structural observations, we hypothesized that a free-standing C7L.1 (fC7L.1) domain may be sufficient for binding and processing pre-crRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "7b972b06-7efb-4901-987f-ad497e0ca234",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C85",
+      "claim": "A truncated mutant comprised of residues 1\u2013238 (fC7L.1) was created and purified.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus created and purified a truncated mutant comprised of residues 1\u2013238 (hereafter fC7L.1 for free C7L.1) (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental procedure described in the text and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "eb17e000-ef88-4f8d-876e-92577cb6089c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C86",
+      "claim": "fC7L.1 successfully processed pre-crRNA, albeit at slightly reduced efficiency compared to wild-type DiCas7-11.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 30 min incubation with pre-cRNA, fC7L.1 successfully processed the RNA, albeit at slightly reduced efficiency as compared to wild-type DiCas7-11 (Figure 2c, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "4afaa55e-f23a-4b2f-a14d-8153d003f426",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C87",
+      "claim": "fC7L.1 remains bound to the cleaved pre-crRNA specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, electrophoretic mobility shift assay shows that fC7L.1 remains bound to the cleaved pre-crRNA specifically (Figure 2\u2014figure supplement 2b), suggesting its potential to be used as a new CRISPR tool for in vivo RNA tracking or purification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "2e5b093b-659f-4e8a-99ed-a00533d54d62",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C88",
+      "claim": "fC7L.1 has potential to be used as a new CRISPR tool for in vivo RNA tracking or purification.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, electrophoretic mobility shift assay shows that fC7L.1 remains bound to the cleaved pre-crRNA specifically (Figure 2\u2014figure supplement 2b), suggesting its potential to be used as a new CRISPR tool for in vivo RNA tracking or purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the observed binding activity.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "88eaf919-a08c-41d3-af60-ea8d6ad17f19",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C89",
+      "claim": "The spacer region of the crRNA is captured by the rest of the C7L ridge and base paired with the target RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The spacer region of the crRNA is captured by the rest of the C7L ridge and base paired with the target RNA (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "8d769a36-4ee8-4b45-b7fb-966503f7f9ee",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C90",
+      "claim": "The three base paired regions largely resemble A form helix with some deviations in base-pair tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "The three base paired regions largely resemble A form helix with some deviations in base-pair tilt (Figure 1\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 1\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "0fcf47b2-b8f2-4af5-b248-1b7c4d60179b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C91",
+      "claim": "Three of the four C7L domains contain the characteristic 'thumb' that secure the crRNA at two evenly spaced (6-nt) kinks with bases flipped.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the four C7L domains contain the characteristic 'thumb' that secure the crRNA at two evenly spaced (6-nt) kinks with bases flipped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "442a132e-6bb7-4a2d-9b2b-d815851f8f77",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C92",
+      "claim": "The duplex bound by C7L.4 creates an extra spacing between the G(+13*)-C(+13) and G(+14*)-C(+14) pairs but no base flipping.",
+      "claim_type": "EXPLICIT",
+      "source": "The duplex bound by C7L.4 creates an extra spacing between the G(+13*)-C(+13) and G(+14*)-C(+14) pairs but no base flipping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a3bf045f-c6d9-465b-b24f-66e71a0b3f28",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C93",
+      "claim": "The kinked crRNA-target RNA duplex creates bended sugar-phosphate backbone at the locations that coincide with the sites of cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the multi-subunit Type III effectors, the kinked crRNA-target RNA duplex creates bended sugar-phosphate backbone at the locations that coincide with the sites of cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "e92c7431-93ee-4359-ad56-fe85e30b96d6",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C94",
+      "claim": "Both cleavage sites are cleaved by Cas7-11 in a metal-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sites are cleaved by Cas7-11 in a metal-dependent manner (Figure 3b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3b and c showing EDTA inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "4ef7a6e3-9bac-4c54-9138-311c1a926e3b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C95",
+      "claim": "Type III systems generate 2',3'-cyclic product in spite of metal dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous observation that Type III systems generate 2',3'-cyclic product in spite of the metal dependence (Hale et al., 2009), the target RNA containing 2'-deoxy modification at A(+4*) (site 1) and C (+10*) (site 2) prevented formation of any cleavage product (Figure 3b and d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "cf344835-f143-4b4a-9e5e-b3140b74b310",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C96",
+      "claim": "Target RNA containing 2'-deoxy modification at A(+4*) (site 1) and C(+10*) (site 2) prevented formation of any cleavage product.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous observation that Type III systems generate 2',3'-cyclic product in spite of the metal dependence (Hale et al., 2009), the target RNA containing 2'-deoxy modification at A(+4*) (site 1) and C (+10*) (site 2) prevented formation of any cleavage product (Figure 3b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3b and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "86391e3f-5a91-4e59-afa1-cf2b3c34728d",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C97",
+      "claim": "Asp429 and Asp654 were previously shown to be critical to cleavage at site 1 and site 2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Two acidic residues, Asp429 and Asp654, were previously shown to be critical to cleavage at site 1 and site 2, respectively (\u00d6zcan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "37d65ac3-353b-43d7-8e02-8fda5c3129d9",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C98",
+      "claim": "Asp429 and Asp654 are found near each corresponding scissile phosphate with the carboxylate oxygen 4.2\u20136.7 \u00c5 from the leaving 5'-oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Satisfactorily, they are found near each corresponding scissile phosphate with the carboxylate oxygen 4.2\u20136.7 \u00c5 from the leaving 5'-oxygen (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "9f7c70bd-04d1-43f8-ac18-ecb456785782",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C99",
+      "claim": "At both cleavage sites, the phosphodiester bond breakage is further assisted by the near 'in-line' geometry of the nucleophilic 2'-oxygen, the scissile phosphate and the leaving 5'-oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "At both sites, the phosphodiester bond breakage is further assisted by the near 'in-line' geometry of the nucleophilic 2'-oxygen, the scissile phosphate and the leaving 5'-oxygen (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "e694a942-cd27-4f07-bc36-a80213fefb14",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C100",
+      "claim": "Arg283 (site 1) and His306 (site 2) from the C11L domain stabilize the attacking nucleotides by stacking on their bases.",
+      "claim_type": "EXPLICIT",
+      "source": "Two residues from the C11L domain, Arg283 (site 1) and His306 (site 2), where Arg283 is better conserved than His306, are observed to stabilize the attacking nucleotides by stacking on their bases (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "af9026a7-4849-47cb-8fd1-f40ce8079d88",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C101",
+      "claim": "No sufficient density is observed that can be assigned to Mg2+ ions despite demonstrated dependence on Mg2+ in target cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the demonstrated dependence on Mg2+ in target cleavage (Figure 3c), no sufficient density is observed that can be assigned to Mg2+ ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "d99b037d-75c0-4c8d-a80f-17eeb1307aab",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C102",
+      "claim": "The roles of protein residues in facilitating metal-dependent phosphodiester bond breakage remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The roles of these protein residues in facilitating metal-dependent phosphodiester bond breakage remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current limitation in understanding the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a5cbaa94-8cf9-4238-a221-76d654547e76",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C103",
+      "claim": "In CsbCas7-11, Asp429 is not conserved and mutation of its equivalent Asp448 and other surrounding residues did not impact site 1 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly in the homologous CsbCas7-11, Asp429 is not conserved and mutation of its equivalent Asp448 and other surrounding residues did not impact site 1 cleavage (van Beljouw et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "526255e6-7e65-4f6d-a50a-d686d0fc3063",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C104",
+      "claim": "Tyr360 is not required for site 1 cleavage in DiCas7-11.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that Tyr360 is not required for site 1 cleavage (Figure 3b and f), indicating that, at least for DiCas7-11, Asp429 is sufficient in mediating the metal-dependent cleavage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3b and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "c129d14b-7a1f-4c0f-aed5-f254c82a6b7d",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C105",
+      "claim": "For DiCas7-11, Asp429 is sufficient in mediating the metal-dependent cleavage at site 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that Tyr360 is not required for site 1 cleavage (Figure 3b and f), indicating that, at least for DiCas7-11, Asp429 is sufficient in mediating the metal-dependent cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Tyr360 mutation experiment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "758bb497-4654-48be-a22f-bda8c3b733bb",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C106",
+      "claim": "As short as 16 base pairs in total length and 2 base pairs on one flanking end can facilitate RNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that as short of 16 base pairs in total length and 2 base pairs on one flanking end can facilitate RNA cleavage (Figure 3b and e), suggesting that both protein and crRNA:target pairing play significant roles in shaping the target RNA for cleavage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3b and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "949cb129-7780-467e-b96f-1ce643aea674",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C107",
+      "claim": "Both protein and crRNA:target pairing play significant roles in shaping the target RNA for cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that as short of 16 base pairs in total length and 2 base pairs on one flanking end can facilitate RNA cleavage (Figure 3b and e), suggesting that both protein and crRNA:target pairing play significant roles in shaping the target RNA for cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the truncation experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "c1d5a1b0-c0dd-4cb9-9417-c1e9845e6ca8",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C108",
+      "claim": "Focused classification and refinement led to a low-resolution map that matches the AlphaFold-predicted model of the insertion domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the final atomic model of DiCas7-11 lacks the large insertion to C7L.4 (residues 979\u20131297) due to weak density, focused classification and refinement led to a low-resolution map that matches the AlphaFold-predicted model of the insertion domain (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described as a computational analysis result shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "b7afb297-3e24-429a-8578-e6cee0e68aa3",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C109",
+      "claim": "A large majority of the insertion domain is not engaged with any of the features described for RNA processing or targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "This model indicates that a large majority of the insertion domain is not engaged with any of the features described above and suggests the possibility that it is not essential to RNA-guided target cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "b942d805-0fae-49e2-9c4a-81942ae59210",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C110",
+      "claim": "The insertion domain is possibly not essential to RNA-guided target cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "This model indicates that a large majority of the insertion domain is not engaged with any of the features described above and suggests the possibility that it is not essential to RNA-guided target cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "d6c13e2a-d3e9-4f9a-965d-d61264568b85",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C111",
+      "claim": "DiCas7-11-\u0394int1 (with residues 1009\u20131220 removed) retains almost all RNA-guided target cleavage activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we removed residues 1009\u20131220 to create DiCas7-11-\u0394int1. Consistently, we showed that DiCas7-11-\u0394int1 retains almost all RNA-guided target cleavage in an in vitro assay (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "5580d0c5-a2de-458a-b801-38bfb5e69ddc",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C112",
+      "claim": "A structure of catalytically inactive DiCas7-11 (Asp429 and Asp654 to alanine) bound with a slightly modified crRNA (U(\u201315) replaced by G(\u201315)) is available (PDB ID: 7WAH).",
+      "claim_type": "EXPLICIT",
+      "source": "A structure of catalytically inactive DiCas7-11 (Asp429 and Asp654 to alanine) bound with a slightly modified crRNA (U(\u201315) is replaced by G(\u201315)) recently became available (PDB ID: 7WAH) (Kato et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "437b0ff5-cc83-414d-8409-664b6ea836d2",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C113",
+      "claim": "The active form of DiCas7-11 bound with processed native crRNA shows close agreement in protein and RNA structures with the catalytically inactive form.",
+      "claim_type": "EXPLICIT",
+      "source": "We superimposed the active form of DiCas7-11 bound with the processed native crRNA (this study) to that by Kato et al. (Figure 2\u2014figure supplement 3) and found a close agreement in protein and RNA structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural superposition shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "c6aca215-6711-45f0-84c8-b1b6df8819eb",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C114",
+      "claim": "The superimposed structures resulted in 0.918 \u00c5 r.m.s.d. for 8114 atoms for protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The superimposed structures resulted in 0.918 \u00c5 root-means-square-difference (r.m.s.d.) for 8114 atoms for protein, 0.691 \u00c5 for 192 backbone atoms of crRNA, and 0.80 \u00c5 for 96 backbone atoms of target, respectively (Figure 2\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from structural comparison shown in Figure 2\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "826351c6-edd0-4c99-8834-4fef3ecd451e",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C115",
+      "claim": "The target cleavage sites are highly similar between the active and inactive DiCas7-11 structures despite the mutated catalytic aspartates.",
+      "claim_type": "EXPLICIT",
+      "source": "The target cleavage sites are highly similar despite the protein used by Kato et al., 2022, contains mutated catalytic aspartates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "1947667c-f56e-4a11-a0aa-e5168c4c3146",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C116",
+      "claim": "The largest difference between the two structures is observed in interactions between DiCas7-11 and the first 5'-tag residue.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest difference, however, is observed in interactions between DiCas7-11 and the first 5'-tag residue between the two structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "48cdc050-614c-46f6-9ea0-c2074d96124c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C117",
+      "claim": "In the structure by Kato et al., G(\u201315) (non-native) establishes minimal interactions with the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In that by Kato et al., G(\u201315), which is non-native, establishes minimal interactions with the protein, whereas in that of the active DiCas7-11, the native U(\u201315) interacts extensively with conserved protein residues (Figure 2a, Figure 1\u2014figure supplement 3, and Figure 2\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "e7a33ce6-6b4f-4d04-a285-5f32a0522943",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C118",
+      "claim": "In the active DiCas7-11 structure, the native U(\u201315) interacts extensively with conserved protein residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In that by Kato et al., G(\u201315), which is non-native, establishes minimal interactions with the protein, whereas in that of the active DiCas7-11, the native U(\u201315) interacts extensively with conserved protein residues (Figure 2a, Figure 1\u2014figure supplement 3, and Figure 2\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "580f5e01-5e2c-4eeb-86fb-b59ab46e1c45",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C119",
+      "claim": "Catalytic His43 forms a close contact with the 5'-OH leaving group of U(\u201315) but is at a greater distance to G(\u201315).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, whereas catalytic His43 forms a close contact with the 5'-OH leaving group of U(\u201315), it is at a greater distance to G(\u201315) (Figure 2\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structural comparison shown in Figure 2\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "bd5388e2-5aef-42c3-ad80-6b905f2e1068",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C120",
+      "claim": "Though U(\u201315) is nonessential to the architecture and the target-cleavage competency of DiCas7-11, it may be important for efficient processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that, though U(\u201315) is nonessential to the architecture and the target-cleavage competency of DiCas7-11, it may be important for efficient processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural comparison and biochemical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "6ee24308-4944-4c46-8697-c2938ad4c389",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C121",
+      "claim": "The structure and complementary biochemical assays show that Cas7-11 has a minimal architecture required for programmable RNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and complementary biochemical assays show that Cas7-11 has a minimal architecture required for programmable RNA cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the structural and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "57dc687c-24c5-4016-a810-d77a2f223e55",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C122",
+      "claim": "The covalent linkage of the homologous units suggests an evolutionary advantage in dedicating Cas7-11 to RNA cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The covalent linkage of the homologous units suggests an evolutionary advantage in dedicating Cas7-11 to RNA cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "e9542305-17df-4053-8e9a-a62ce429e8b3",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C123",
+      "claim": "Cas7-11 offers a desirable alternative to Cas13 and Csm/Cmr in developing gene regulation tools.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the known collateral RNase activity of Cas13 and the complicated Csm/Cmr systems, Cas7-11 offers a desirable alternative in developing gene regulation tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on comparison of different CRISPR systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "21a0de38-977e-4340-87e2-2956ab0c1e1a",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C124",
+      "claim": "DiCas7-11 has been successfully demonstrated to function in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While DiCas7-11 has been successfully demonstrated to function in mammalian cells, the efficiency and accuracy remain to be improved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a0d6aeb5-14a1-47b6-a065-aa9e7521e42e",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C125",
+      "claim": "The efficiency and accuracy of DiCas7-11 in mammalian cells remain to be improved.",
+      "claim_type": "EXPLICIT",
+      "source": "While DiCas7-11 has been successfully demonstrated to function in mammalian cells, the efficiency and accuracy remain to be improved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "add8815f-d7c5-49fa-9e94-5bf537aaef4c",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C126",
+      "claim": "Protein engineering may assist efforts in designing improved Cas7-11-derived RNA interference platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "With now the available structures and the accurately mapped processing and target cleavage sites, protein engineering may assist the efforts in designing improved Cas7-11-derived RNA interference platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "0d807f43-c0a6-416c-9cf2-e4a3785cc5f1",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "claim_id": "C127",
+      "claim": "Both fC7L.1 and DiCas7-11-\u0394int1 lend a proof-of-concept for engineering efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Both fC7L.1 and DiCas7-11-\u0394int1 lend a proof-of-concept for such an effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental results with these variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "779c45f7-2dcb-4333-b1d2-dd904ad71f20",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of active DiCas7-11 was determined at 2.82 \u00c5 resolution, revealing a half-moon shaped assembly with four Cas7-like domains forming a ridge and a Cas11-like domain at the center. The structure resolves most of the protein, the crRNA (\u221215 to +19), and partially cleaved target RNA (+19* to +2*), demonstrating that DiCas7-11 successfully processes pre-crRNA and cleaves target RNA under reactive conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30, C31, C33, and C42 are well-supported by the cryo-EM data presented in Figures 1 and 2, with appropriate resolution metrics (FSC curves in Figure 1\u2014figure supplement 2) and clear density maps. The structural observations are directly derived from experimental data with proper validation statistics provided in Supplementary file 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "b5681915-af15-424d-9a76-87c6202bc502",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DiCas7-11 arranges its Cas7- and Cas11-like domains in an extended form resembling the backbone of multi-subunit Type III systems (LlCsm), but contains evolutionarily different domains that give rise to unique functionality. DiCas7-11 lacks domains equivalent to Csm4 and Cas10 subunits and their associated functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C34-C38 are supported by structural superposition data shown in Figure 1\u2014figure supplement 4, demonstrating clear structural homology with LlCsm while highlighting key differences. The r.m.s.d. values and visual comparisons provide quantitative and qualitative support for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The first Cas7-like domain (C7L.1) nearly engulfs the last 15 nucleotides of the direct repeat in processing and recognition of crRNA. His43 is the critical catalytic residue for processing at position \u221215, employing a general acid-base catalysis mechanism. The processed 15-nt 5'-tag interacts extensively with C7L.1 through base-specific and backbone contacts, with the most extensive interactions at the conserved A(\u221212)-U(\u221211)-G(\u221210)-U(\u22129) tetranucleotide and a tight helical turn at C(\u22128)-A(\u22127)-C(\u22126)-G(\u22125).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C46-C81 are strongly supported by structural data in Figure 2a and biochemical validation in Figure 2b-d. The His43 mutation abolishing activity (C50) provides functional validation, and the 2'-deoxy modification experiments (C47) confirm the processing site. The extensive structural details of 5'-tag interactions are directly observable in the high-resolution structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "46db0383-2b44-4a2d-bfd5-e623aea37bdc",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A free-standing fragment of the first Cas7-like domain (fC7L.1, residues 1-238) retains most of the RNA processing activity and remains bound to cleaved pre-crRNA specifically, suggesting potential as a CRISPR tool for in vivo RNA tracking or purification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C84-C87 are supported by experimental data in Figure 2c and Figure 2\u2014figure supplement 2. The fC7L.1 construct successfully processes pre-crRNA (albeit at slightly reduced efficiency) and shows specific binding in EMSA assays. However, C88 is speculative about future applications and requires additional validation in cellular systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The second and third Cas7-like domains mediate target RNA cleavage in a metal-dependent manner at two sites. Asp429 and Asp654 are positioned near the scissile phosphates at sites 1 and 2, respectively. The cleavage mechanism involves in-line geometry and generates 2',3'-cyclic products, though no Mg2+ ions are directly observed in the structure despite demonstrated metal dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C89-C101 are supported by structural data (Figure 3a) and biochemical assays (Figure 3b-c) showing EDTA inhibition and 2'-deoxy modification effects. The positioning of catalytic residues is well-documented. However, C101-C102 acknowledge a limitation: the absence of visible metal ions in the structure despite functional metal dependence creates some mechanistic uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "f0e4275f-1c48-415c-a940-1dbc0108bccb",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In DiCas7-11, Asp429 is sufficient for metal-dependent cleavage at site 1, as Tyr360 mutation does not abolish site 1 cleavage. This contrasts with CsbCas7-11 where the equivalent Asp448 is not conserved and not required for site 1 cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 are supported by mutagenesis data in Figure 3f showing that Y360A retains site 1 cleavage activity, and by comparison with published CsbCas7-11 data (C103). This demonstrates species-specific differences in catalytic mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "29a92199-8af8-4f7e-bfa1-5c00413420a8",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "As few as 16 base pairs total and 2 base pairs on one flanking end can facilitate RNA cleavage, suggesting that both protein and crRNA:target pairing play significant roles in shaping the target RNA for cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 are supported by truncation experiments shown in Figure 3e, demonstrating that minimal base pairing is sufficient for cleavage activity. This provides insight into the minimal requirements for target recognition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "722203ac-fab6-476b-8912-14923c0ee078",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The long variable insertion to the fourth Cas7 domain (residues 979-1297) has little impact on RNA processing or targeting. A deletion mutant (DiCas7-11-\u0394int1) lacking residues 1009-1220 retains almost all RNA-guided target cleavage activity in vitro, suggesting the insertion domain is not essential for core enzymatic functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C108-C111 are supported by focused classification cryo-EM analysis (Figure 4b) showing the insertion domain is not engaged with functional elements, and by biochemical data (Figure 4c) demonstrating that the deletion mutant retains activity. This provides strong evidence for the dispensability of this domain for in vitro activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a27bc8e8-cb9b-4c53-91a2-f359ce831cd5",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The successful deletion of the insertion domain and the functional fC7L.1 fragment suggest the possibility for engineering a compact and programmable RNA interference tool, providing proof-of-concept for engineering efforts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12 and C127 are speculative about future engineering applications. While the in vitro data (C111, C86) support the feasibility, the claims about developing practical tools require additional validation including in vivo testing, optimization of efficiency and specificity, and demonstration of advantages over existing systems. The current data provide proof-of-concept but not full validation of engineered tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "207bb7a1-c547-43df-9118-ad26185fb585",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparison with a recently published catalytically inactive DiCas7-11 structure (PDB: 7WAH) shows close overall agreement (0.918 \u00c5 r.m.s.d. for 8114 atoms), but the largest difference is in interactions with the first 5'-tag residue. The native U(\u221215) in the active structure interacts extensively with conserved residues including His43, while the non-native G(\u221215) in the inactive structure shows minimal interactions, suggesting U(\u221215) may be important for efficient processing but not for overall architecture or target-cleavage competency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C120 are supported by structural superposition data in Figure 2\u2014figure supplement 3, showing quantitative r.m.s.d. values and detailed comparison of the processing site. The interpretation that U(\u221215) is important for processing but not architecture (C120) is consistent with the deletion experiment (C62) showing U(\u221215) removal doesn't affect target cleavage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "36dc5aec-7ce5-41e0-8854-1a064666d8ed",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The 34-nt crRNA lies along the C7L ridge with its repeat region spanning C7L.1-C7L.2 and spacer region covering C7L.3-C7L.4. The first 18 nucleotides of target RNA remain base paired with the spacer region. The short span of the guide-target region on C7L domains explains the two sites of target cleavage, instead of four as in LlCsm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are directly supported by structural observations in Figures 1 and 3, with clear visualization of RNA positioning and comparison to LlCsm. The inference about cleavage site number (C45) is logical given the structural constraints and is consistent with prior biochemical characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "0feadeb9-5680-4e01-a4d0-b83bb339e7cd",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The histidine-mediated processing reaction may be assisted by nearby polar residues Tyr55 and Arg26. CsbCas7-11 contains threonine instead of His43 and phenylalanine instead of Tyr55, and does not process its crRNA at position \u221215, suggesting that precise processing may not be required for RNA interference activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is speculative based on proximity without direct experimental validation. Claims C53-C54 are supported by cited literature, but C55 is an inference that requires additional experimental validation. The connection between CsbCas7-11's lack of precise processing and its functional activity needs more direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "8397bc07-bdf3-4975-b9c4-0b0212648d9b",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cas7-11 allosterically activates the TPR-CHAT protease in a 3' PFS-dependent manner. The last two 5'-tag nucleotides, C(\u22121) and A(\u22122), are partially solvent-accessible and can potentially participate in PFS-mediated activation of TPR-CHAT activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is established from prior work but C83 is speculative. While the structural observation of solvent accessibility is valid, the functional connection to TPR-CHAT activation requires experimental validation. The current structure does not include TPR-CHAT, so the mechanistic link remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "30c83f8b-288d-4906-81a0-842e2b564a1f",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The structure and biochemical assays demonstrate that Cas7-11 has a minimal architecture required for programmable RNA cleavage. The covalent linkage of homologous units suggests an evolutionary advantage in dedicating Cas7-11 to RNA cleavage. Considering the collateral RNase activity of Cas13 and complexity of Csm/Cmr systems, Cas7-11 offers a desirable alternative for developing gene regulation tools, though efficiency and accuracy in mammalian cells remain to be improved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C121 is supported by the comprehensive structural and biochemical data. However, C122-C123 are speculative about evolutionary advantages and comparative utility without direct experimental evidence. Claims C124-C125 acknowledge current limitations based on prior work. Claim C126 is speculative about future applications. The overall assessment requires more direct comparative studies and in vivo validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context on CRISPR-Cas systems: Type III-A/B (Csm/Cmr) are multi-subunit effectors that cleave target RNA at 6-nt intervals. Type VI (Cas13) is a smaller single-subunit effector. Cas7-11 (Type III-E) is a single-subunit effector with fused Cas7-like and Cas11-like segments that employs Cas7-like segments for cleavage, processes its own crRNA, and is insensitive to 3' PFS. Both Cas13 and Csm/Cmr have collateral nuclease activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3, C13-C24, C26-C27, C29, C39-C41 represent established knowledge from cited literature providing context for the current study. These are well-documented facts about CRISPR systems that frame the significance of the DiCas7-11 structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "201d94bb-38b3-443a-9064-79a588d27aed",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculative claims about applications: Cas7-11 has potential applications in RNA interference and provides a desirable platform to develop RNA interference and editing tools. The Cas7-11-TPR-CHAT complex suggests potential for viral RNA-induced and protease-mediated antiviral immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2, C25, and C28 are speculative statements about future applications without direct experimental validation in the current study. While the structural and biochemical characterization provides a foundation, these application claims require additional development and testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    },
+    {
+      "id": "03e34ad9-aaf6-4fd9-b6d0-08deda30af65",
+      "content_id": "31d296d7-f34e-468e-8842-0ba08d044008",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The structure of Cas7-11 obscures the distinction between multi-subunit Class 1 and single-subunit Class 2 CRISPR-Cas systems, making it a unique Type III CRISPR-Cas system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C23 are supported by the structural data showing that DiCas7-11 is a single polypeptide (Class 2-like) but contains multiple Cas7 and Cas11 domains arranged like multi-subunit systems (Class 1-like). This hybrid architecture is clearly demonstrated in the structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:11:15.722583Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d47b10c8-4634-46cb-9976-7f0d1dca207b",
+      "result_id": "779c45f7-2dcb-4333-b1d2-dd904ad71f20"
+    },
+    {
+      "claim_id": "e494180c-4173-4fee-89b4-08eb99a40b2f",
+      "result_id": "779c45f7-2dcb-4333-b1d2-dd904ad71f20"
+    },
+    {
+      "claim_id": "dd2de041-7fd5-4f1c-bfda-cff7a05e32d5",
+      "result_id": "779c45f7-2dcb-4333-b1d2-dd904ad71f20"
+    },
+    {
+      "claim_id": "a30ec792-9618-4b8c-849e-4a67c3589165",
+      "result_id": "779c45f7-2dcb-4333-b1d2-dd904ad71f20"
+    },
+    {
+      "claim_id": "62a28941-f529-45e0-8a76-a6070f298c1b",
+      "result_id": "779c45f7-2dcb-4333-b1d2-dd904ad71f20"
+    },
+    {
+      "claim_id": "ef6afc72-7297-43e5-8ef6-31e6ba83d7b7",
+      "result_id": "b5681915-af15-424d-9a76-87c6202bc502"
+    },
+    {
+      "claim_id": "30b373cb-c8b9-4e4a-b348-f2b7104bb3af",
+      "result_id": "b5681915-af15-424d-9a76-87c6202bc502"
+    },
+    {
+      "claim_id": "16e09338-55e7-4620-84f9-b3552e5edd35",
+      "result_id": "b5681915-af15-424d-9a76-87c6202bc502"
+    },
+    {
+      "claim_id": "2cba16fb-9e24-418f-9275-6b2646fa9323",
+      "result_id": "b5681915-af15-424d-9a76-87c6202bc502"
+    },
+    {
+      "claim_id": "3ff47122-4166-4709-9751-79540765af0d",
+      "result_id": "b5681915-af15-424d-9a76-87c6202bc502"
+    },
+    {
+      "claim_id": "1c04737a-e456-4eae-a99c-9e15a94399f4",
+      "result_id": "b5681915-af15-424d-9a76-87c6202bc502"
+    },
+    {
+      "claim_id": "ba8f4c6e-954e-4196-8365-65c9f6d311b4",
+      "result_id": "b5681915-af15-424d-9a76-87c6202bc502"
+    },
+    {
+      "claim_id": "8324d922-33ee-47ae-b5c9-2a51b2fe473b",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "7546c850-9fd9-40ac-8004-318133061eb9",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "00101647-cb34-458d-8764-9dee67298d09",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "0e498f3f-085b-4a33-801a-f5287b4ffcd8",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "a2467bdb-68a5-4956-8f8e-54c52dac2cc9",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "5d3bcf3f-9024-472a-a1de-fb9aaaad6f20",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "5b02e041-e2a1-4f23-b111-5ded98405d64",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "a8041736-f172-46b1-861d-49e3a426ff0d",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "db8f8be3-99f0-4748-b67f-0604a62ff71b",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "4acc0a83-2660-44d8-bd89-3933b1cfec87",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "24a880f3-4360-4033-8c4e-da2704cb957c",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "7989031f-ddce-4c10-a9f5-a63acb7f5a30",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "28ae6850-8ed7-428d-b546-020da9fb788a",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "fa68938a-50ae-4681-8bd5-ac6fad7f2c79",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "201b0d3e-0253-47a8-8a5f-52a0c613fe4d",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "9dea1b49-1472-4037-8f3f-112d51062290",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "da7380e5-0a46-40a6-9200-0f01d587f8e7",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "220a1a81-c627-421f-8cdc-be9f20cc0b94",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "868648d8-5430-476a-b715-80086de5bc8e",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "2e8742dd-cd98-4776-aaab-a0b5307650ce",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "f11d7f0c-8f78-4a8f-b331-a6554da2264f",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "cdadd84c-99d1-40e0-8e46-67319bec743d",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "4a6d38ec-d0e9-41c7-8986-716c8ee33a7f",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "0a4bcb4b-5f60-4e5a-a413-07a62089be91",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "9b340938-6422-4404-88ea-d8c0ea73255e",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "0cb6dee6-bcad-420e-b46d-22c201bc9c44",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "4fa77bf9-4baf-4169-8e5e-84389b1dfc8a",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "80470eba-e273-4d9f-9fe1-a367e2dddb1c",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "6a7c30fa-89f5-4c3f-9056-bf8aa004491b",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "65f78d0a-2dc8-42c5-8e1c-2317f11e93b3",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "465cdf36-7bf8-45fe-a0b8-9a59206212ac",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "878b258f-fad3-410a-9fff-08401aff4112",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "984dfb3f-0168-40f3-994f-52b96ae7603e",
+      "result_id": "33ef1c97-7079-41c3-a8f0-c125d20af0aa"
+    },
+    {
+      "claim_id": "917033ce-bc1e-48cf-94be-6021c4f3efb5",
+      "result_id": "46db0383-2b44-4a2d-bfd5-e623aea37bdc"
+    },
+    {
+      "claim_id": "e656f84e-4452-4589-8f07-9dc5428e2902",
+      "result_id": "46db0383-2b44-4a2d-bfd5-e623aea37bdc"
+    },
+    {
+      "claim_id": "7b972b06-7efb-4901-987f-ad497e0ca234",
+      "result_id": "46db0383-2b44-4a2d-bfd5-e623aea37bdc"
+    },
+    {
+      "claim_id": "eb17e000-ef88-4f8d-876e-92577cb6089c",
+      "result_id": "46db0383-2b44-4a2d-bfd5-e623aea37bdc"
+    },
+    {
+      "claim_id": "4afaa55e-f23a-4b2f-a14d-8153d003f426",
+      "result_id": "46db0383-2b44-4a2d-bfd5-e623aea37bdc"
+    },
+    {
+      "claim_id": "2e5b093b-659f-4e8a-99ed-a00533d54d62",
+      "result_id": "46db0383-2b44-4a2d-bfd5-e623aea37bdc"
+    },
+    {
+      "claim_id": "2e5b744b-b044-4721-981b-bb115f588405",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "88eaf919-a08c-41d3-af60-ea8d6ad17f19",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "8d769a36-4ee8-4b45-b7fb-966503f7f9ee",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "0fcf47b2-b8f2-4af5-b248-1b7c4d60179b",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "442a132e-6bb7-4a2d-9b2b-d815851f8f77",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "a3bf045f-c6d9-465b-b24f-66e71a0b3f28",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "e92c7431-93ee-4359-ad56-fe85e30b96d6",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "4ef7a6e3-9bac-4c54-9138-311c1a926e3b",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "cf344835-f143-4b4a-9e5e-b3140b74b310",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "86391e3f-5a91-4e59-afa1-cf2b3c34728d",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "37d65ac3-353b-43d7-8e02-8fda5c3129d9",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "9f7c70bd-04d1-43f8-ac18-ecb456785782",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "e694a942-cd27-4f07-bc36-a80213fefb14",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "af9026a7-4849-47cb-8fd1-f40ce8079d88",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "d99b037d-75c0-4c8d-a80f-17eeb1307aab",
+      "result_id": "a857dc8d-7cf9-4c49-8f98-00f2427ca82a"
+    },
+    {
+      "claim_id": "a5cbaa94-8cf9-4238-a221-76d654547e76",
+      "result_id": "f0e4275f-1c48-415c-a940-1dbc0108bccb"
+    },
+    {
+      "claim_id": "526255e6-7e65-4f6d-a50a-d686d0fc3063",
+      "result_id": "f0e4275f-1c48-415c-a940-1dbc0108bccb"
+    },
+    {
+      "claim_id": "c129d14b-7a1f-4c0f-aed5-f254c82a6b7d",
+      "result_id": "f0e4275f-1c48-415c-a940-1dbc0108bccb"
+    },
+    {
+      "claim_id": "758bb497-4654-48be-a22f-bda8c3b733bb",
+      "result_id": "29a92199-8af8-4f7e-bfa1-5c00413420a8"
+    },
+    {
+      "claim_id": "949cb129-7780-467e-b96f-1ce643aea674",
+      "result_id": "29a92199-8af8-4f7e-bfa1-5c00413420a8"
+    },
+    {
+      "claim_id": "9d423fc4-8f6c-4c0b-84b6-0ba660501aa5",
+      "result_id": "722203ac-fab6-476b-8912-14923c0ee078"
+    },
+    {
+      "claim_id": "c1d5a1b0-c0dd-4cb9-9417-c1e9845e6ca8",
+      "result_id": "722203ac-fab6-476b-8912-14923c0ee078"
+    },
+    {
+      "claim_id": "b7afb297-3e24-429a-8578-e6cee0e68aa3",
+      "result_id": "722203ac-fab6-476b-8912-14923c0ee078"
+    },
+    {
+      "claim_id": "b942d805-0fae-49e2-9c4a-81942ae59210",
+      "result_id": "722203ac-fab6-476b-8912-14923c0ee078"
+    },
+    {
+      "claim_id": "d6c13e2a-d3e9-4f9a-965d-d61264568b85",
+      "result_id": "722203ac-fab6-476b-8912-14923c0ee078"
+    },
+    {
+      "claim_id": "661e0694-260a-45b3-9bd3-6d1af850508c",
+      "result_id": "a27bc8e8-cb9b-4c53-91a2-f359ce831cd5"
+    },
+    {
+      "claim_id": "0d807f43-c0a6-416c-9cf2-e4a3785cc5f1",
+      "result_id": "a27bc8e8-cb9b-4c53-91a2-f359ce831cd5"
+    },
+    {
+      "claim_id": "5580d0c5-a2de-458a-b801-38bfb5e69ddc",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "437b0ff5-cc83-414d-8409-664b6ea836d2",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "c6aca215-6711-45f0-84c8-b1b6df8819eb",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "826351c6-edd0-4c99-8834-4fef3ecd451e",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "1947667c-f56e-4a11-a0aa-e5168c4c3146",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "48cdc050-614c-46f6-9ea0-c2074d96124c",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "e7a33ce6-6b4f-4d04-a285-5f32a0522943",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "580f5e01-5e2c-4eeb-86fb-b59ab46e1c45",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "bd5388e2-5aef-42c3-ad80-6b905f2e1068",
+      "result_id": "207bb7a1-c547-43df-9118-ad26185fb585"
+    },
+    {
+      "claim_id": "38dea59d-e2cd-45af-85a7-6d065e1da8da",
+      "result_id": "36dc5aec-7ce5-41e0-8854-1a064666d8ed"
+    },
+    {
+      "claim_id": "258abf2b-52ef-438a-b282-b73ef4b3c01b",
+      "result_id": "36dc5aec-7ce5-41e0-8854-1a064666d8ed"
+    },
+    {
+      "claim_id": "2a48f33a-ad0e-4526-9ecc-3da3f8397c4a",
+      "result_id": "36dc5aec-7ce5-41e0-8854-1a064666d8ed"
+    },
+    {
+      "claim_id": "155528ec-0938-4727-acf4-1f3b0d28972f",
+      "result_id": "0feadeb9-5680-4e01-a4d0-b83bb339e7cd"
+    },
+    {
+      "claim_id": "c708cd79-cbe5-49c7-975a-b8e9e5199b42",
+      "result_id": "0feadeb9-5680-4e01-a4d0-b83bb339e7cd"
+    },
+    {
+      "claim_id": "5ba05ba2-1256-4cee-a568-7ec1d27fc9ef",
+      "result_id": "0feadeb9-5680-4e01-a4d0-b83bb339e7cd"
+    },
+    {
+      "claim_id": "8600a984-adfd-40e4-b34f-e7009ad1c053",
+      "result_id": "0feadeb9-5680-4e01-a4d0-b83bb339e7cd"
+    },
+    {
+      "claim_id": "ad6244b5-dc84-49d8-95ca-ae1d99d1b5e9",
+      "result_id": "8397bc07-bdf3-4975-b9c4-0b0212648d9b"
+    },
+    {
+      "claim_id": "d810a751-e879-4c2d-a0c7-bd91af6470e5",
+      "result_id": "8397bc07-bdf3-4975-b9c4-0b0212648d9b"
+    },
+    {
+      "claim_id": "6ee24308-4944-4c46-8697-c2938ad4c389",
+      "result_id": "30c83f8b-288d-4906-81a0-842e2b564a1f"
+    },
+    {
+      "claim_id": "57dc687c-24c5-4016-a810-d77a2f223e55",
+      "result_id": "30c83f8b-288d-4906-81a0-842e2b564a1f"
+    },
+    {
+      "claim_id": "e9542305-17df-4053-8e9a-a62ce429e8b3",
+      "result_id": "30c83f8b-288d-4906-81a0-842e2b564a1f"
+    },
+    {
+      "claim_id": "21a0de38-977e-4340-87e2-2956ab0c1e1a",
+      "result_id": "30c83f8b-288d-4906-81a0-842e2b564a1f"
+    },
+    {
+      "claim_id": "a0d6aeb5-14a1-47b6-a065-aa9e7521e42e",
+      "result_id": "30c83f8b-288d-4906-81a0-842e2b564a1f"
+    },
+    {
+      "claim_id": "add8815f-d7c5-49fa-9e94-5bf537aaef4c",
+      "result_id": "30c83f8b-288d-4906-81a0-842e2b564a1f"
+    },
+    {
+      "claim_id": "35cd8662-db4c-429f-8d51-a87231f3474d",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "2cbeb54b-d22c-4e23-8749-99fea5d88e38",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "e5097cf5-0acb-455f-9bb1-645a6022aa8c",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "afa372ae-b825-48a0-bc5b-8ba591cc56d9",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "c6c58fb6-8885-4727-9ebc-4bf6d55f25dc",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "4d2a2205-539d-4820-ac12-ed6a2a965316",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "17e1b534-bff7-4998-9530-12a51b970e17",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "ccd3d320-472c-4a61-adf9-2652db4e9309",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "3339e2bf-5139-41e7-af2f-ba7ac65b111c",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "617b3b1d-a755-48b7-bae7-b51743e21eea",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "7cef4d32-6c93-47be-8181-b43dc11ade8e",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "4de9f0aa-7305-49d0-9fc8-204cb014da72",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "5cfdfce6-abb2-4268-93a6-931af91e84fd",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "521c76d2-24fb-4753-b404-b96200231a9a",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "871255cc-4157-43bf-9834-8759a50feb2a",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "6894e73e-34a5-45ac-a6a8-07e0ad503d54",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "fd437f72-d6b6-4372-86d1-1f020c5d038c",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "ff1607ae-0aaf-4198-893a-cfc3ba984942",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "a5957f9c-d925-4c1c-b2ba-e62242152808",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "cc2c0a97-98a1-4367-b1b0-a7206b12fdeb",
+      "result_id": "a57cc33c-fdc3-4d22-8730-5e86dede16b5"
+    },
+    {
+      "claim_id": "667bc2c7-bd62-4fbf-a911-7120af91c98c",
+      "result_id": "201d94bb-38b3-443a-9064-79a588d27aed"
+    },
+    {
+      "claim_id": "929a6dbd-3c57-431a-bbe1-4782e6d36d96",
+      "result_id": "201d94bb-38b3-443a-9064-79a588d27aed"
+    },
+    {
+      "claim_id": "1ec31916-cf4f-40bc-acab-8f0063166d2c",
+      "result_id": "201d94bb-38b3-443a-9064-79a588d27aed"
+    },
+    {
+      "claim_id": "01c1d4c6-39b1-4780-86cd-117d9f7900be",
+      "result_id": "03e34ad9-aaf6-4fd9-b6d0-08deda30af65"
+    },
+    {
+      "claim_id": "5cfdfce6-abb2-4268-93a6-931af91e84fd",
+      "result_id": "03e34ad9-aaf6-4fd9-b6d0-08deda30af65"
+    }
+  ],
+  "comparisons": []
+}

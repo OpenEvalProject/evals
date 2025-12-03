@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study employed a retro-cue orientation WM task where participants retained one of two sequentially presented orientation gratings (>20\u00b0 apart) during a 5-TR delay period. Behavioral performance was high (mean absolute recall error: 12.01\u00b0\u00b10.61\u00b0), with 97% of trials showing recall errors <45\u00b0, indicating participants successfully maintained high-fidelity orientation information for the cued item during the delay period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 collectively establish the experimental paradigm and demonstrate successful task performance. The behavioral data (C27-C28) with quantitative metrics and distribution analysis (Figure 1B) provide strong evidence that participants maintained precise WM representations. The task design appropriately tests the hypothesis by comparing cued vs. uncued items during a delay period\u2014a hallmark of WM (C24).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Representational similarity analysis revealed that stimulus similarity for the cued item was significantly correlated with neural similarity patterns in the aLEC (t(15)=4.29, p=6.48e-04, Cohen's d=1.11) and hippocampal DG/CA3 (t(15)=3.64, p=0.0024, Cohen's d=0.94), but not for the uncued item. This cued-item selectivity was significantly stronger in aLEC-DG/CA3 compared to the amygdala control region (F(1,15)=4.97, p=0.042), suggesting these MTL subregions retain item-specific WM information that allows fine discrimination of similar orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 provide converging statistical evidence from multiple comparisons (cued vs. null, uncued vs. null, cued vs. uncued, MTL vs. amygdala control) with appropriate corrections (Bonferroni) and bootstrap verification. The use of an anatomically adjacent control region (amygdala, C30) strengthens the specificity of findings. Effect sizes are substantial (Cohen's d >0.9), and the pattern of results (significant for cued, null for uncued) supports the interpretation in C38.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Inverted encoding modeling (IEM) demonstrated that reconstructed item-specific information for the cued item during WM retention was significantly above chance in aLEC (t(15)=4.41, p=5.07e-04, Cohen's d=1.14) and DG/CA3 (t(15)=4.73, p=2.68e-04, Cohen's d=1.22), but not for the uncued item. This cued-item information was significantly greater than in the amygdala control (F(1,15)=7.16, p=0.016). The IEM and representational similarity analyses were highly correlated (aLEC: r=0.87, p=0.000012; DG/CA3: r=0.78, p=0.00037), suggesting the MTL can distinguish orientation information at least 20\u00b0 apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 provide complementary evidence using a different analytical approach (IEM vs. RSA), with consistent patterns across methods. The high correlation between methods (C47-C48) validates both approaches despite different assumptions. Statistical evidence is robust with large effect sizes, appropriate corrections, and bootstrap verification. The inference about 20\u00b0 discrimination (C49) is appropriately conservative given the experimental design constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Trial-by-trial analysis linking neural representations to behavior showed that trials with small recall errors (<20\u00b0) yielded significant IEM reconstructions in aLEC-DG/CA3 (t(15)=4.50, p=4.21e-04, Cohen's d=1.16), while larger-error trials (20\u00b0-3SD) did not (t(15)=0.03, p=0.98). The reconstructed WM information quality was significantly better in small-error versus larger-error trials (t(15)=2.45, p=0.027, Cohen's d=0.61), indicating that higher-quality WM representation in the entorhinal-DG/CA3 pathway is associated with better subsequent recall fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 establish a critical brain-behavior relationship. The trial categorization approach (C110-C112) is methodologically sound, using empirical thresholds to separate precise from imprecise recalls while excluding attentional lapses. The resampling procedure (C113-C114) appropriately controls for trial count imbalances. The statistical evidence shows clear dissociation between trial types, though the effect size for the difference (C53, d=0.61) is moderate compared to within-category effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The findings demonstrate that the entorhinal-DG/CA3 circuitry retains item-specific WM information enabling fine discrimination of similar items, with representation quality associated with recall fidelity. These results fill a gap in understanding MTL contributions to item-level WM with minimal task load, are consistent with theories of distributed WM networks, and suggest that pattern separation mechanisms traditionally associated with long-term episodic memory also support WM quality by reducing interference between similar information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 provide appropriate interpretation of the empirical findings (C31-C54) in the context of prior literature. The connection to pattern separation theory (C12-C16, C59-C62) is well-grounded in established literature. However, the mechanistic claims (C61-C63) are somewhat speculative\u2014while conceptually plausible, the current data demonstrate correlation between MTL activity and WM performance but do not directly test pattern separation mechanisms or causal contributions to interference reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study demonstrates that MTL retains item-level WM information even with simple stimuli and minimal task load (effective set size of one), addressing limitations of prior research that either showed MTL activity scaling with load without decodable content or required complex stimuli. The lack of significant findings in some previous studies may reflect insufficient spatial resolution in MTL recordings, as aggregating data across hippocampal subfields attenuates WM information signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 appropriately contextualize the current findings relative to prior work. The prediction and confirmation regarding whole-hippocampus aggregation (C68, Figure 3\u2014supplement 4) provides direct empirical support for the spatial resolution hypothesis. However, the comparison to prior null findings (C67) is somewhat speculative\u2014while plausible, differences could also reflect other methodological factors beyond spatial resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The MTL's contribution to WM does not depend on exceeding capacity limits, cannot be explained by retrieval processes (analysis focused on mid-delay activity), and cannot be attributed solely to perceptual encoding. Time-varying IEM analysis showed comparable information for cued and uncued items early in the trial but selective information for the cued item during mid-delay, demonstrating that the entorhinal-DG/CA3 pathway supports representation of retrospectively selected memory items during short delays\u2014a hallmark of WM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 address alternative explanations systematically. The time-varying analysis (C73-C74, Figure 3\u2014supplement 5) provides critical evidence distinguishing encoding from maintenance, though the authors acknowledge temporal resolution limitations of fMRI. The logic regarding perceptual encoding (C71-C72) is sound\u2014if encoding alone explained results, both items should show equal representation. However, the claim about capacity limits (C69) is somewhat overstated given that only one item was maintained (effective set size of one).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Inter-regional similarity analysis revealed that neural pattern similarity between aLEC-DG/CA3 and the superior parietal lobule (SPL) increased from baseline to WM retention, while similarity between aLEC-DG/CA3 and the amygdala control region did not change. This suggests WM information in the entorhinal-DG/CA3 is similar to that in a well-recognized neocortical WM-related area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide additional evidence for functional similarity between MTL and neocortical WM regions using inter-regional correlation analysis (Figure 2\u2014supplement 2). The baseline normalization procedure appropriately controls for intrinsic similarity. However, correlation of neural patterns does not necessarily indicate identical information content\u2014regions could show similar patterns for different computational reasons. The interpretation (C78) is reasonable but somewhat overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study recruited 16 right-handed participants (21.32\u00b10.73 years, 8 females) with normal vision and no neurological/psychiatric history. Sample size was justified based on prior similar studies. Participants completed 180 trials (10 blocks \u00d7 18 trials) inside a 3T MRI scanner using high-resolution fMRI (1.5\u00d71.5 mm\u00b2 in-plane, 2mm slice thickness, TR=1750ms), with practice trials completed beforehand and distortion correction scans acquired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 describe standard methodological details that are adequately documented. The sample size justification (C85) based on prior work is reasonable, though no formal power analysis is reported. The high-resolution fMRI protocol is appropriate for MTL imaging. However, the sample is relatively small (n=16) and homogeneous (young adults), which may limit generalizability. Gender balance is noted but not analyzed as a potential factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "fMRI data were preprocessed using AFNI with standard steps (despiking, slice timing correction, motion correction, alignment) but without spatial smoothing to avoid artificial autocorrelations. Raw BOLD signals from the middle 3 TRs of the 5-TR delay were extracted and z-scored within runs, then convolved with TENT-like weights (0,1,2,1,0) to maximize mid-delay activity inclusion. This approach factors in 5-6s hemodynamic adjustment and is considered conservative for estimating delay-period activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 describe appropriate preprocessing choices for high-resolution fMRI. The decision to avoid smoothing (C96) is justified for multivariate analyses. The TENT-like weighting approach (C99-C100) is well-established for delay-period analysis, though it does impose assumptions about hemodynamic response timing. The extraction of raw BOLD signals without GLM fitting (C97) is appropriate for the multivariate methods used but limits ability to model nuisance variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "MTL ROIs were defined using an established segmentation algorithm from prior studies, with DG and CA3 combined due to uncertainty in separating their signals in fMRI. Findings were verified using an alternative FreeSurfer segmentation protocol, yielding consistent results, indicating observations are not limited to a specific parcellation procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 describe ROI definition with appropriate validation. The use of established methods (C101) and verification with alternative segmentation (C103, Figure 3\u2014supplement 6) strengthens confidence in anatomical specificity. The decision to combine DG/CA3 (C102) is justified given fMRI resolution limits, though it prevents distinguishing contributions of these functionally distinct subfields. The inference about parcellation-independence (C104) is supported but limited to two methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The IEM method assumes voxel responses are linear summations of 9 idealized orientation channels (half-wave rectified sinusoids). A leave-one-block-out cross-validation routine was used to obtain reliable channel response estimates. A whole-brain searchlight IEM analysis replicated previous findings, confirming data reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 describe the IEM methodology appropriately. The analytical rationale (C105) is well-established in the literature. The model assumptions (C106) are standard for orientation decoding, though the authors appropriately note these don't reflect actual neuronal tuning properties. Cross-validation (C107) is essential for avoiding overfitting. The searchlight replication (C108-C109, Figure 3\u2014supplement 2) provides important validation, though the authors note limitations in capturing MTL signals with spherical searchlights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "For brain-behavior analysis, trials were categorized as small-error (<20\u00b0, 149\u00b13 trials) or larger-error (20\u00b0 to 3SD, 27\u00b13 trials) to capture imprecise recalls while excluding attentional lapses. Trial counts were balanced through resampling (5000 iterations) to obtain unbiased estimates across behavioral trial types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 describe a methodologically sound approach to trial categorization. The 20\u00b0 threshold (C110) is justified by the experimental design (minimum item separation). The 3SD criterion (C111-C112) is a reasonable heuristic for excluding outliers, though somewhat arbitrary. The resampling procedure (C113-C114) appropriately addresses trial count imbalance, which is critical for unbiased comparison. However, the categorization reduces continuous error data to binary categories, potentially losing information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Statistical significance was evaluated using paired-sample t-tests with two-tailed p-values, verified with non-parametric bootstrap statistics (1000 iterations). Multiple comparisons were corrected using Bonferroni correction (\u03b1=0.05), except for pre-defined contrasts (cued vs. uncued).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 describe appropriate statistical procedures. The use of both parametric and non-parametric tests (C115-C116) provides robustness. Bonferroni correction (C117) is conservative and appropriate for the number of comparisons. However, the exception for pre-defined contrasts could be seen as selective\u2014while conceptually justified, it does increase Type I error risk. Effect sizes (Cohen's d) are consistently reported, which is good practice.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Two-photon calcium imaging was performed on zebrafish larvae at 4, 5, 9, and 15 dpf, recording 30 minutes of spontaneous activity followed by evoked responses to 20 repetitions of nine 6\u00b0 spots presented at different visual field positions. The experimental setup, animal husbandry, imaging parameters, and visual stimulation protocol are described in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C80-C87 provide comprehensive methodological details that are internally consistent and appropriately documented. The experimental design is clearly described with specific parameters (imaging frequency, laser power, stimulus timing, etc.), sample sizes are reported, and ethical approval is documented. The methods appear technically sound for calcium imaging in zebrafish.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The correlation between TEA and SA correlation matrices does not change over development, indicating that spontaneous and evoked activity did not become more similar in terms of correlational structure during the developmental period studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by statistical analysis (one-way ANOVA with Bonferroni correction) and Figure 1F. The conclusion that correlational structure does not converge is appropriately drawn from the lack of developmental change in correlation matrix similarity. This directly addresses one of the study's main hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C88",
+      "C89"
+    ],
+    "result": "Neural assemblies were identified using graph theory-based methods during spontaneous and evoked activity. While SA and TEA assemblies showed similar numbers of neurons per assembly and both exhibited posterior shifts in spatial location and tuning over development, SA assemblies had greater spatial coverage and higher tuning variance than TEA assemblies. The overlap in neuronal identity between TEA and SA assemblies was low (~20%) and decreased between 4-5 dpf, remaining stable thereafter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C25 and C88-C89 present a comprehensive analysis of neural assemblies with appropriate statistical support (Figures 2B-I and supplements). The assembly detection method is validated by citation to prior benchmarking work (M\u00f6lter et al., 2018). The findings reveal both similarities (posterior shifts) and differences (spatial coverage, tuning variance, neuronal overlap) between spontaneous and evoked assemblies, supporting the conclusion that these assemblies become progressively less similar despite some parallel developmental trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Evoked activity (EA) patterns showed higher coactivity levels and higher dimensionality than spontaneous activity (SA) or spontaneous-within-evoked (SE) patterns, with these levels remaining robust over development. Pattern similarity between all epoch pairs (EA-SA, EA-SE, SA-SE) decreased over development, and the fraction of EA/SE patterns that cannot be explained by SA space, and EA/SA patterns that cannot be explained by SE space, both increased developmentally. This demonstrates that evoked patterns have higher dimensionality than spontaneous patterns and become geometrically more distant from spontaneous patterns over development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 present the core geometric and dimensionality analyses supported by Figures 3B-G and statistical tests. The use of principal component analysis for dimensionality assessment and projection onto orthogonal complements for geometric distance is mathematically appropriate. The findings directly contradict the hypothesis that spontaneous activity determines the realm of evoked activity (Luczak et al., 2009), providing strong evidence for divergence rather than convergence of these activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C60",
+      "C61"
+    ],
+    "result": "The study concludes that in the larval zebrafish tectum, spontaneous and evoked activity patterns grow more distant as development proceeds, despite some similarities. This suggests that early spontaneous activity may provide useful cues for initial wiring but does not track changing evoked patterns over development, and the results do not support the hypothesis that spontaneous activity evolves to form a Bayesian prior for evoked activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C60-C61 represent the main conclusions of the study, which are well-supported by the convergent evidence from correlation analysis, assembly characterization, and geometric/dimensionality analyses. The interpretation that spontaneous activity does not form a Bayesian prior is justified by the demonstrated divergence rather than convergence of activity patterns. However, C52 contains some speculation about functional implications for wiring development that goes beyond the direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The discussion contextualizes the findings within prior literature, noting that while spontaneous activity in zebrafish tectum and mammalian cortex is high-dimensional, the current results showing higher dimensionality for evoked activity contrast with some prior suggestions. The results align with recent findings that spontaneous activity is orthogonal to evoked patterns. Differences from prior work (Berkes et al., 2011) may relate to the larger number of neurons recorded and inclusion of neurons regardless of tuning strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C50 appropriately cite and discuss relevant prior literature, making reasonable comparisons and contrasts with the current findings. The citations appear accurate in their representation of prior work. The speculative explanations for differences between studies (C49-C50) are appropriately qualified as potential rather than definitive. The ecological relevance of the spot stimuli is well-supported by multiple citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The abstract summarizes that correlations within spontaneous and evoked activity epochs were comparable over development and their neural assemblies refined in similar ways, but the similarity between evoked and spontaneous assemblies and the geometric distance between patterns both decreased over development, with evoked activity showing higher dimensionality at all developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 accurately summarize the main findings presented in the results section. These abstract claims are well-supported by the detailed analyses in the manuscript. The statement about comparable correlations (C55) is supported by C10-C11, similar assembly refinement (C56) by C15-C18, decreased similarity (C57) by C23-C25 and C30, and higher dimensionality (C59) by C26 and C35.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C91"
+    ],
+    "result": "The introduction establishes the background on spontaneous activity in neural development, its role in circuit wiring, and the hypothesis that it could form a Bayesian prior for evoked activity. It identifies a knowledge gap regarding whether spontaneous and evoked activity converge over development at larger scale and in other species beyond the ferret cortex study, motivating the use of larval zebrafish as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C79 and C91 provide appropriate background and motivation for the study through extensive citations to relevant literature. The citations appear accurate in their representation of prior work. The identification of the knowledge gap (C73, C79) appropriately motivates the current study. The justification for using zebrafish as a model system (C74) is well-supported. These claims establish the scientific context and rationale for the experimental work.",
+    "result_type": "MINOR"
+  }
+]

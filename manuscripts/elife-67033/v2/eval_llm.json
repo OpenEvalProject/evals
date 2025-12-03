@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C102"
+    ],
+    "result": "Robust, widespread transcription occurs within minutes of quiescence exit, with ~50% of genes showing significant upregulation by 10 minutes. Pol II is recruited de novo rather than being pre-bound in a paused state, as evidenced by low Pol II occupancy in quiescent cells and rapid CTD phosphorylation within 3 minutes of nutrient repletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C48 provide converging evidence from multiple orthogonal approaches (western blot, nascent RNA-seq, Pol II ChIP-seq, TFIIB ChIP-seq) showing rapid transcriptional activation. The statistical significance (3202 genes, twofold change, p-values mentioned), time-course data, and consistency across methods strongly support this result. The inference about de novo recruitment (C42-C43) is well-justified by the low Pol II occupancy data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "During early quiescence exit (5-10 min), chromatin maintains a repressive state with stable nucleosome positions, modest histone acetylation increases that lag behind transcription, and H3 occupancy patterns more similar to quiescence than to later time points, particularly outside of NDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by H3 ChIP-seq, MNase-seq, and H4ac ChIP-seq data showing that chromatin changes lag behind transcriptional activation. The data are internally consistent and supported by citation to previous work (C54-C55). This establishes the paradox that motivates investigation of RSC's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C111"
+    ],
+    "result": "TFIIS deletion causes quiescence exit defects with G1 arrest, contrasting with its non-essential role in cycling cells, suggesting that cells exiting quiescence rely more heavily on TFIIS to transcribe through repressive chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 present clear FACS data showing the dst1\u0394 phenotype during quiescence exit versus cycling. The interpretation (C111) is speculative but reasonable given the repressive chromatin context. However, this is a supporting observation rather than a central mechanistic finding about RSC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In quiescence, RSC exhibits a distinct binding pattern compared to log cells, localizing to NDRs at the majority of gene promoters rather than to flanking nucleosomes. RSC binding at NDRs in quiescent cells co-localizes with genes that show strong transcription upon exit, and RSC moves from NDRs into gene bodies as transcription increases during exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 are supported by RSC ChIP-seq data across multiple conditions and time points, MNase-seq showing fragile nucleosomes, and co-localization analysis with Pol II. The data clearly demonstrate RSC's quiescence-specific localization pattern. The interpretation that this represents preparation for exit (C72) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RSC depletion causes severe quiescence exit defects including G1 arrest (contrasting with G2/M arrest in cycling cells), global reduction in Pol II occupancy that persists even after 30 minutes, and failure to remove histones from NDRs. Chromatin regulation by RSC is the key contributor to these Pol II occupancy defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 are supported by FACS data, Pol II ChIP-seq, H3 ChIP-seq, and MNase-seq comparing +RSC and -RSC conditions. The data show clear, consistent defects upon RSC depletion. The interpretation (C82) is reasonable but the authors appropriately note (C83) that causality is complex. The auxin degron system is well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C118"
+    ],
+    "result": "RSC re-localization from NDRs into gene bodies during quiescence exit is dependent on Pol II transcription, as demonstrated by inhibition with 1,10-phenanthroline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C118 are supported by RSC ChIP-seq data in the presence of transcription inhibitor. The experiment directly tests the dependence on transcription and shows clear inhibition of RSC movement. This establishes co-transcriptional RSC function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C105",
+      "C128"
+    ],
+    "result": "RSC depletion affects Pol II localization in two ways during early quiescence exit: globally decreased Pol II over genes and sharp accumulation at TSSs. Co-transcriptional movement of RSC facilitates Pol II passage through nucleosomes immediately downstream of TSSs through chromatin regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by Pol II ChIP-seq and H3 ChIP-seq data comparing +RSC and -RSC conditions at early time points. The data clearly show Pol II accumulation at TSSs upon RSC depletion. The mechanistic interpretation (C90, C105, C128) is well-supported by the chromatin defects observed in the absence of RSC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C106"
+    ],
+    "result": "Upon RSC depletion, 864 genes exhibit upstream transcription initiation from ectopic sites, accompanied by loss of canonical NDRs and creation of upstream NDRs. RSC facilitates accurate TSS selection through proper NDR formation, likely a quiescence-specific function given that RSC depletion in cycling cells shows different effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by nascent RNA-seq and MNase-seq data showing upstream transcription and NDR defects upon RSC depletion. The k-means clustering identifies 864 affected genes. The interpretation about TSS selection (C95, C106) is well-supported. The comparison to cycling cells (C96) appropriately cites previous work showing different phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C107",
+      "C133",
+      "C134"
+    ],
+    "result": "RSC depletion leads to aberrant antisense transcription at specific gene clusters (I and IV), accompanied by severe chromatin defects including NDR filling and nucleosome shifts. RSC suppresses antisense transcription indirectly by generating proper NDRs at sense genes, rather than through direct action at antisense start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 are supported by nascent RNA-seq, MNase-seq, and H3 ChIP-seq data showing antisense transcription and chromatin defects upon RSC depletion. The inference that suppression is indirect (C100-C101) is reasonable given the lack of RSC signals at antisense start sites. The mechanism (C134) involving nearby NDRs is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C108"
+    ],
+    "result": "The rapid transcriptional response during quiescence exit is greatly dependent on RSC, which promotes transcription through multiple mechanisms including NDR creation and maintenance. The massive transcriptional response requires highly accurate nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 and C108 represent summary conclusions supported by the collective evidence from RSC depletion experiments showing multiple defects. The interpretation about nucleosome positioning requirements (C108) is well-justified by the data showing that chromatin defects lead to transcriptional defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C127",
+      "C130",
+      "C137",
+      "C139",
+      "C142"
+    ],
+    "result": "Multiple non-mutually exclusive mechanisms may explain RSC's quiescence-specific localization pattern, including hypoacetylation affecting bromodomain binding, acidic patch occlusion by hypoacetylated H4 tails, lack of Pol II activity preventing RSC movement, and reduced ATP levels limiting RSC activity. RSC may be particularly suitable for regulating global transcription during quiescence exit due to its high abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C124 and C127, C130, C137, C139, C142 are explicitly speculative (marked as SPECULATION in evidence_type). While these hypotheses are reasonable and cite supporting literature, they are not directly tested in this study. The authors appropriately present these as possible explanations requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C140"
+    ],
+    "result": "The transcriptional response during quiescence exit is dampened but not eliminated by RSC depletion, with Pol II occupancy globally decreased approximately twofold at 10 minutes. Chromatin structure is crucial for maintaining transcriptome quality during quiescence exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by Pol II ChIP-seq and nascent RNA-seq data upon RSC depletion showing partial but not complete loss of transcription. The interpretation about chromatin's importance (C140) is well-supported by the multiple defects observed upon RSC depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C109",
+      "C110",
+      "C112",
+      "C123",
+      "C125",
+      "C126",
+      "C129",
+      "C135",
+      "C136",
+      "C138",
+      "C141"
+    ],
+    "result": "Background context establishing the biological importance of quiescence, the repressive nature of quiescent chromatin, RSC's known functions in log cells, and the relevance of chromatin remodeling to human disease and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 and C109-C110, C112, C123, C125-C126, C129, C135-C136, C138, C141 represent established knowledge supported by citations to previous literature. These provide necessary context but are not novel findings of this study. The citations appear appropriate and the statements are consistent with the field's understanding.",
+    "result_type": "MINOR"
+  }
+]

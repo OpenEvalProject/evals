@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "NusG functions as an intrinsic termination factor that works cooperatively with NusA to facilitate termination at 88% of 1400 identified intrinsic terminators in B. subtilis. Term-seq was conducted in WT, NusA depletion, \u0394nusG, and double mutant strains, revealing that NusG stimulates termination to a similar extent as NusA (~22% drop in median %T), while loss of both factors results in a drastic 55% drop in median %T. Only 12% of terminators remain independent of both factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C27-C32 provide converging evidence from Term-seq experiments across multiple strains with appropriate controls (C28 confirms NusA depletion by Western blot). The quantitative measurements of termination efficiency (%T) are internally consistent and support the cooperative model. The identification of 1400 terminators (C7, C29) and classification into subpopulations (C32) is well-documented in supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "NusG-dependent terminators have distinct structural features compared to strong independent (SI) terminators: they have weaker predicted hairpins, with terminators requiring both NusA and NusG having the weakest hairpins. NusG-dependent terminators also exhibit stronger enrichment of U residues downstream of the predicted hairpin and have shorter hairpin stems than SI terminators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe computational analyses of terminator sequences with appropriate statistical testing (Mann-Whitney U, Fisher-Pitman permutation tests referenced in C36). The structural characterizations are consistent across multiple subpopulations and supported by Figure 1C-D and supplementary data. The findings logically connect terminator structure to factor dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The NGN domain of NusG is sufficient to recapitulate the stimulatory effect on termination observed in vivo, and this effect can be explained through NusG's role as a pausing factor. In vitro termination assays with yetJ and ktrD terminators showed that full-length NusG and the NGN domain alone produce highly similar termination patterns, while a mutant NGN domain (Y77H/N81S/T82V) lacking pausing activity shows no stimulatory or cooperative effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 present a clear structure-function analysis using appropriate controls (full-length NusG, NGN domain, mutant NGN domain). The mutant domain experiment (C39) provides strong evidence for the mechanistic link between pausing and termination (C40). The in vitro data recapitulate in vivo observations, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "NusG elicits sequence-specific pauses at the ktrD terminator at positions 9, 10, and 11 nt downstream from the predicted hairpin, with some positions serving as both pause sites and termination sites. The NusG-dependent pause motif is sufficient to elicit pausing, and the position is set by the motif. Mutations that alter hairpin length demonstrate that pause duration can be modulated by hairpin strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C48-C50 describe detailed in vitro time-course experiments that distinguish pausing from termination. The mutant ktrD experiments (C48-C50) provide strong mechanistic evidence by showing that the pause motif determines position while hairpin properties affect pause stability. Pause half-lives are quantified with error estimates, supporting the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "NusG effectively stimulates termination in vitro at terminators with 2-4 consecutive A-U base pairs at the bottom of the hairpin stem, and can also stimulate termination at a terminator with a G-U base pair. Termination in vitro consistently occurs 1-3 nt further downstream than the 3' end identified in vivo by Term-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe consistent observations across multiple terminators tested in vitro (yetJ, ktrD, fur, yneF, yxiS). The 1-3 nt discrepancy between in vitro and in vivo POTs (C54) is systematically observed and later explained by exoribonuclease trimming (C76), demonstrating internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Analysis of RNET-seq data reveals that nascent 3' ends at intrinsic terminators are consistently 1-4 nt downstream of steady-state 3' ends identified by Term-seq (82% of 485 analyzed terminators). NusG-dependent terminators are enriched for consecutive terminal A-U/G-U base pairs and exhibit modest distal U-rich tract interruptions compared to strong independent terminators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 integrate published RNET-seq data with current Term-seq data to resolve the discrepancy between in vitro and in vivo POTs. The statistical analysis (Fisher's exact test in C57) appropriately compares terminator subpopulations. The findings reconcile observations from multiple experimental approaches and support the exoribonuclease trimming hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Loss of NusG and/or NusA leads to global misregulation of gene expression in B. subtilis. Loss of NusG affects 143 transcripts (106 increased, 37 decreased), NusA depletion affects 416 transcripts (322 increased, 94 decreased), and combined loss results in misregulation of 28% of all expressed transcripts (728 total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 present differential expression analysis with appropriate statistical methods (DESeq2) and clearly defined cutoffs (FDR 0.005, fold change 4). The cooperative effect on gene expression (C61) parallels the cooperative effect on termination, providing biological validation. Replicate reproducibility is documented (Figure 1\u2014figure supplement 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Loss of NusG results in decreased expression of the motility regulon, with a median 3-fold decrease in motility genes and specific decreases in fla/che operon genes (flgC: 1.7-fold, sigD: 3-fold in \u0394nusG; 2.1-fold and 10-fold in double mutant). This leads to a cascading reduction in \u03c3D-dependent genes, including a 4-fold reduction in hag expression in \u0394nusG and 75-fold in the double mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C65-C70 describe a coherent cascade of gene expression changes with quantitative measurements from RNA-seq data. The progressive reduction from 5' to 3' of the fla/che operon (C69) and the dramatic reduction in hag expression (C70) are consistent with a transcript completion defect. The data support a functional consequence of termination defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C71"
+    ],
+    "result": "Loss of NusG results in flagella and swimming motility defects in B. subtilis, including both a decrease in the frequency of cells producing flagella and a reduced number of flagella per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C71 are supported by both swimming motility assays (Figure 7D) and fluorescence microscopy (Figure 7F). The phenotypic observations are consistent with the gene expression changes in the motility regulon (C62-C70), providing functional validation of the molecular findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C72"
+    ],
+    "result": "Intrinsic (factor-independent) termination is primarily a factor-mediated process in B. subtilis, with only 12% of terminators functioning independently of both NusA and NusG. B. subtilis NusA and NusG likely work together without physical interaction to cooperatively stimulate termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 present major conceptual conclusions supported by the genome-wide Term-seq data (C27, C32). The inference about lack of physical interaction (C72) is based on the absence of the AR2 domain in B. subtilis NusA, which is a reasonable structural argument. The conclusion challenges the traditional view of intrinsic termination as factor-independent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "NusG-dependent pausing is a critical component of NusG-dependent termination. The pause occurs when RNAP incorporates U residues at positions -12, -11, -8, -7, and -6 relative to the 3' end, and likely extends the time frame for terminator hairpin completion before readthrough occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 synthesize in vitro pausing data (C41-C50) with sequence analysis (Figure 5) to propose a mechanistic model. The sequence-specific pause motif (C79) is well-documented, and the structural constraint about U residues at -12 and -11 (C80) is logically sound. The mechanistic interpretation (C78) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A model is proposed where terminators with terminal A-U/G-U base pairs require NusG for pausing, while those with G-C/C-G terminal base pairs depend solely on NusA. The main differentiating feature between terminators requiring both factors versus either factor is hairpin strength, with the most suboptimal terminators requiring both NusG-dependent pausing and NusA-mediated hairpin stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 present a mechanistic model that integrates multiple observations (C33-C34, C52-C53, C74). While the model is consistent with the data, it remains speculative (C83 is marked as SPECULATION). The model makes testable predictions but lacks direct experimental validation of the proposed mechanism. Additional experiments testing specific predictions would strengthen support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Phylogenetic analysis suggests that the ability of NusG to contact the ntDNA strand may be present in a large number of Gram-positive and Gram-negative phyla. Mycobacterial NusG contains the NT dipeptide at the corresponding position, suggesting the NusG-dependent termination mechanism may be conserved across bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C92 present phylogenetic analysis (Figure 9) showing widespread distribution of the NT/HT dipeptide. However, the inference about functional conservation (C92) is speculative, based primarily on sequence similarity and one cited study on mycobacterial NusG (C25, C91). Direct functional evidence in other species would be needed to confirm conservation of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In vitro, NusA is generally the more potent termination factor compared to NusG across six tested terminators. The discrepancy between in vivo and in vitro POTs can be attributed to exoribonuclease trimming of terminated transcripts in vivo, and NusG shifts RNAP to the post-translocation register, potentially functioning as a processivity factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 describe observations from in vitro experiments and provide mechanistic explanations. C74 is supported by multiple figures showing NusA's stronger effect. C75 is well-cited. C76 provides a reasonable explanation for the POT discrepancy, supported by RNET-seq data (C55-C56) and cited precedent in related bacteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "NusG may function as a processivity factor while NusA may serve as an anti-processivity factor in B. subtilis. Modulating the activity of these factors may govern the frequency of fla/che operon transcript completion and regulate the switch between motile and sessile states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 are explicitly marked as speculation in the discussion. While the observations about differential expression of the fla/che operon (C86, Figure 7\u2014figure supplement 2) support these hypotheses, direct evidence for processivity/anti-processivity functions is lacking. These are reasonable hypotheses that require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background knowledge claims establish that NusA and NusG are transcription factors affecting RNA polymerase pausing in B. subtilis, with NusA previously known to function in intrinsic termination while NusG's role was unknown. Prior studies showed NusA can stimulate termination in vitro and in vivo, with 232 NusA-dependent terminators previously identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C15, C18, C21-C26 present established knowledge with appropriate citations. These claims accurately represent prior work and establish the context for the current study. The citations are appropriate and the knowledge claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C45",
+      "C46",
+      "C51",
+      "C64",
+      "C81",
+      "C82",
+      "C86"
+    ],
+    "result": "Background structural and mechanistic knowledge about transcription termination, RNAP structure, and specific operons in B. subtilis is presented, including the composition of intrinsic terminators, NusA and NusG domain structures and binding sites, and characteristics of the fla/che operon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C16-C17, C19-C20, C45-C46, C51, C64, C81-C82, C86 present well-established structural and mechanistic knowledge with appropriate citations. These claims provide necessary background for interpreting the experimental results and are accurately represented from the cited literature.",
+    "result_type": "MINOR"
+  }
+]

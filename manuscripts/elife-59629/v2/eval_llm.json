@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C65",
+      "C113"
+    ],
+    "result": "Tumor suppressor genes are positively selected for inactivating mutations (primarily nonsense and frameshift mutations) during tumor evolution, as demonstrated by significantly higher fractions of nonsense substitutions compared to passenger genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C65, and C113 collectively demonstrate that TSGs show positive selection for inactivating mutations. The 3D scatter plot analyses (Figures 2-4) show TSGs separating from passenger genes with significantly higher fN values and rNSM ratios, providing strong statistical and visual evidence. The method correctly assigns known 'gold standard' TSGs (C66), validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C51",
+      "C112"
+    ],
+    "result": "Oncogenes display dual selection patterns: positive selection for activating missense mutations and negative selection for inactivating nonsense mutations, reflecting their requirement for functional activity in carcinogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C51, and C112 are supported by data showing oncogenes have significantly higher fractions of missense mutations (fM) and lower fractions of nonsense mutations compared to passenger genes (Figures 2-4). The theoretical prediction (C51) is validated by empirical observations, and the method correctly assigns known oncogenes (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C114"
+    ],
+    "result": "A fourth cluster of genes shows strong negative selection during tumor evolution, characterized by high synonymous-to-nonsynonymous mutation ratios (high fS, rSM, rSMN values), suggesting these genes are essential for tumor cell growth and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C114 identify a novel cluster of negatively selected genes distinct from passenger genes, oncogenes, and TSGs (Figures 2-4). The high rSMN values indicate purifying selection. Functional validation of representative genes (C70, C71) confirms their pro-oncogenic roles in cancer hallmarks, supporting the interpretation of tumor essentiality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Fourteen novel candidate tumor suppressor genes (BMPR2, BRD7, ING1, MGA, PRRT2, RASA1, RNF128, SLC16A1, SPRED1, TGIF1, TNRC6B, ZC3H13, ZFP36L2, ZNF750) were identified and validated through functional annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by the selection of genes from the positively selected cluster (high rNSM values) and subsequent literature-based functional validation showing their tumor suppressor roles. The genes were selected using stringent criteria and show mutation patterns consistent with TSGs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Seven novel candidate oncogenes (AURKA, CDK8, IDH3B, MARCH7, RIT1, YAP1, YES1) were identified and validated through functional annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by selection from the cluster showing positive selection for missense mutations and negative selection for nonsense mutations (high rMSN, low rNSM values), with subsequent functional validation confirming oncogenic roles. The approach successfully identifies both known and novel oncogenes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C78",
+      "C79"
+    ],
+    "result": "Twelve negatively selected tumor essential genes (CX3CR1, FOXG1, G6PD, MAPK13, NOVA1, PNCK, SLC16A3, SLC2A1, SLC2A8, TBXA2R, TP73, TRIB2) fulfill tumor-specific pro-oncogenic functions including metabolic reprogramming, invasion, and metastasis, rather than basic cellular functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C78, and C79 are supported by functional annotations showing these genes play specific roles in cancer hallmarks (Table 1). The genes show high rSMN values indicating negative selection. Detailed mechanistic evidence is provided for metabolic genes (SLC2A1, SLC16A3) and invasion/metastasis genes (CX3CR1, TBXA2R), supporting tumor-specific essentiality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cell essentiality (measured by CRISPR scores) does not significantly contribute to purifying selection during tumor evolution, as evidenced by weak correlation (r=0.05345) between rSMN and cell-essentiality scores and minimal overlap with broadly essential genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by statistical analyses (Figure 8) showing very weak positive correlation between purifying selection strength and cell-essentiality scores. Only 6 of 1014 broadly essential genes overlap with negatively selected genes (C76), and CRISPR scores of negatively selected genes are not significantly different from passenger genes (C74), strongly supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "GLUT1 (SLC2A1) is a tumor essential gene under negative selection that is critical for the Warburg effect in cancer cells, with high expression correlating with poor prognosis and knockdown inhibiting tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 provide convergent evidence from multiple studies showing GLUT1's essentiality for tumor metabolism. The gene shows negative selection (high rSMN), and extensive literature citations support its role in aerobic glycolysis (C82, C83), clinical correlations (C84), functional validation (C85), and therapeutic potential (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MCT4 (SLC16A3) is a tumor essential gene under negative selection that is critical for lactate efflux in glycolytic tumor cells, with expression correlating with clinical outcome and knockdown reducing tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 provide strong evidence for MCT4's tumor essentiality through its role in maintaining glycolytic phenotype (C89), functional validation showing knockdown effects (C90, C91), clinical correlations (C92), and therapeutic potential (C93). Multiple independent studies support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ACKR3 is a well-characterized oncogene that shows negative selection and plays a key role in tumor invasion and metastasis, with knockdown or inhibition reducing metastatic spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by ACKR3's presence in Cancer Gene Census Tier 1 (C94), multiple studies demonstrating its role in invasion/metastasis (C95), and functional validation of therapeutic targeting (C96). This exemplifies how some oncogenes show predominantly negative selection patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Selection patterns differ significantly between tumor evolution and organismal evolution: germline mutations show stronger purifying selection overall, while candidate tumor essential genes show significantly stronger negative selection during tumor evolution than organismal evolution, indicating tumor-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by comparative statistical analyses (Figures 9-10) showing significant differences in mutation patterns between germline and somatic contexts. The weak correlation (Pearson's r values 0.02635-0.1127) between selection strengths in the two contexts (C100) and the differential selection of TEGs (C101) strongly support tumor-specific essentiality (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The separation of gene clusters (passenger genes, oncogenes, tumor suppressors, tumor essential genes) is relatively insensitive to transcript-specific differences in mutation probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is supported by comparison of analyses using observed values (Figures 2-4) versus expected values corrected for mutational signatures (Figures 5-7), showing similar cluster patterns. This demonstrates the robustness of the clustering approach and validates that selection signals are not artifacts of mutation bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The clustering approach correctly assigns known 'gold standard' tumor suppressor genes and oncogenes to their respective clusters, validating the methodology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by successful assignment of known TSGs and OGs from Vogelstein et al. 2013 to appropriate clusters based on mutation patterns. This validation against established cancer genes provides strong support for the method's ability to identify novel cancer genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Approximately 5% of tumors lack known driver mutations, and based on the assumption that tumors require 4-5 driver mutations, this suggests about half of cancer driver genes (hundreds of genes) remain to be identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C107, C108, and C109 involve a calculation based on the assumption that known and unknown cancer genes play similar roles (C108). While C48 is supported by citation to Campbell et al. 2020, the inference that half of drivers remain unknown (C108) relies on assumptions about driver mutation requirements and equal detectability that may not hold. The calculation is logical but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Previous genomics-based methods were biased toward identifying positively selected driver genes and neglected the role of negative selection in tumor evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by the authors' critical review of prior literature showing most studies focused on positive selection. The identification of numerous negatively selected genes in the current study that were missed by previous approaches validates this criticism. However, this is primarily a methodological observation rather than a novel biological finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Martincorena et al. concluded that purifying selection is practically absent in tumors because nearly all coding mutations are tolerated, suggesting most genes are dispensable due to diploidy and pathway redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 accurately report the conclusions of Martincorena et al. 2017 as cited. However, the current manuscript's data contradict these conclusions, showing significant negative selection. This represents accurate reporting of prior work that the authors challenge with their own findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "There is a very weak negative correlation (r=-0.03662) between purifying selection strength during organismal evolution (rSMNg) and cell-essentiality scores, indicating cell-level essentiality contributes to but does not fully explain purifying selection during organismal evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C104 are supported by statistical analysis (Figure 11) showing weak negative correlation. This finding parallels the tumor evolution results, suggesting that essentiality measured by CRISPR screens captures only part of the selective pressures operating at the organismal level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The majority of human genes form a central cluster with mutation parameters (fS, fM, fN) close to neutral expectations, consistent with passenger gene status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by 3D scatter plot analyses (Figure 2) showing most genes cluster around expected neutral values. This establishes the baseline against which cancer genes are identified and validates the assumption that most genes do not play significant roles in carcinogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "TTK is a proto-oncogene that may be converted to an oncogene by truncating mutations affecting the C-terminal end downstream of its kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by experimental evidence cited in the manuscript and detailed in Appendix 1. This represents an interesting exception where truncating mutations can activate rather than inactivate a proto-oncogene, though the mechanism is not fully detailed in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The approach reported in this study will promote identification of numerous novel oncogenes, tumor suppressors, and tumor essential genes that may serve as therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is a forward-looking statement supported by the successful identification and validation of multiple novel cancer genes in the current study. The identification of negatively selected tumor essential genes represents a particularly promising avenue for therapeutic targeting, as demonstrated by the GLUT1 and MCT4 examples.",
+    "result_type": "MINOR"
+  }
+]

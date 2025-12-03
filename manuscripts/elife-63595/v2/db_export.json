@@ -1,0 +1,1893 @@
+{
+  "submission": {
+    "id": "67de94de-7cc2-4beb-bb5a-1e8bf028cc04",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:56:34.736584Z",
+    "updated_at": "2025-12-03T01:56:34.736584Z"
+  },
+  "content": [
+    {
+      "id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "submission_id": "67de94de-7cc2-4beb-bb5a-1e8bf028cc04",
+      "content_type": "manuscript",
+      "content_text": "# Foxc1 establishes enhancer accessibility for craniofacial cartilage differentiation\n\n## Authors\n\n- Pengfei Xu<sup>1</sup>\n- Haoze V Yu<sup>1</sup>\n- Kuo-Chang Tseng<sup>1</sup> ([ORCID: 0000-0002-4870-7801](https://orcid.org/0000-0002-4870-7801))\n- Mackenzie Flath<sup>1</sup>\n- Peter Fabian<sup>1</sup>\n- Neil Segil<sup>1</sup> ([ORCID: 0000-0002-0441-2067](https://orcid.org/0000-0002-0441-2067))\n- J Gage Crump<sup>1</sup> ([ORCID: 0000-0002-3209-0026](https://orcid.org/0000-0002-3209-0026)) \u2020\n\n### Affiliations\n\n1. Eli and Edythe Broad Center for Regenerative Medicine, Department of Stem Cell Biology and Regenerative Medicine, Keck School of Medicine, University of Southern California Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe specification of cartilage requires Sox9, a transcription factor with broad roles for organogenesis outside the skeletal system. How Sox9 and other factors gain access to cartilage-specific cis-regulatory regions during skeletal development was unknown. By analyzing chromatin accessibility during the differentiation of neural crest cells into chondrocytes of the zebrafish head, we find that cartilage-associated chromatin accessibility is dynamically established. Cartilage-associated regions that become accessible after neural crest migration are co-enriched for Sox9 and Fox transcription factor binding motifs. In zebrafish lacking Foxc1 paralogs, we find a global decrease in chromatin accessibility in chondrocytes, consistent with a later loss of dorsal facial cartilages. Zebrafish transgenesis assays confirm that many of these Foxc1-dependent elements function as enhancers with region- and stage-specific activity in facial cartilages. These results show that Foxc1 promotes chondrogenesis in the face by establishing chromatin accessibility at a number of cartilage-associated gene enhancers.\n\n## Introduction\n\nCartilage is the first skeletal type to be specified in the vertebrate body, providing important templates for later bone development and providing flexibility at joint surfaces and within the nose, ear, ribs, and larynx. The transcription factor Sox9 is essential for chondrogenic differentiation in all vertebrates examined (Bi et al., 1999; Lefebvre et al., 1997; Mori-Akiyama et al., 2003; Yan et al., 2005), yet it also has widespread roles outside the skeletal system, including the reproductive system, kidney, liver, and skin (Jo et al., 2014). How Sox9 is directed to a chondrogenic program in trunk mesoderm and cranial neural crest-derived cells (CNCCs) has remained unclear. Sox9 is known to directly bind to a number of cis-regulatory elements adjacent to chondrogenic genes, including Col2a1, Col10a1, and Acan (Askary et al., 2015; Dy et al., 2012; Lefebvre et al., 1997; Ohba et al., 2015). It is, however, dispensable for chromatin accessibility at these same elements (Liu et al., 2018), suggesting that\u00a0other unknown factors may first open chromatin at chondrogenic enhancers for later activation by Sox9.\n\nForkhead-domain (Fox) family transcription factors are excellent candidates for establishing chromatin accessibility at chondrogenic enhancers. In the endoderm lineage, HNF3/FoxA binds closed chromatin at enhancers and makes these more accessible (Cirillo et al., 2002). Foxd3 has been similarly proposed to establish chromatin accessibility in the early neural crest lineage (Lukoseviciute et al., 2018). In mouse, loss of Foxc1 results in widespread cartilage and bone defects (Kume et al., 1998), including impaired tracheal and rib cartilages (Hong et al., 1999), loss of calvarial bone due to premature ossification (Rice et al., 2003; Sun et al., 2013; Vivatbutsiri et al., 2008), syngnathia (Inman et al., 2013), and disruption of endochondral bone maturation (Yoshida et al., 2015). In zebrafish, loss of both Foxc1 paralogs (foxc1a and foxc1b) results in severe reductions of dorsal cartilages of the upper face, which are preceded by reduced expression of several Sox9 targets, including col2a1a, acana, matn1, and matn4 (Xu et al., 2018). Chromatin immunoprecipitation followed by deep sequencing (ChIP-Seq) using a Sox9 antibody in dissected mouse rib and nose cartilage revealed enrichment of Fox binding motifs within Sox9-bound cis-regulatory sequences near chondrogenic genes (Ohba et al., 2015). Here, we use profiling of chromatin accessibility in wild-type and mutant zebrafish facial cartilages and find that Foxc1 paralogs are required for accessibility and activity of a number of cartilage enhancers. These findings support a model in which Foxc1 promotes chondrogenesis by establishing selective accessibility of cartilage enhancers in CNCC-derived mesenchyme.\n\n## Results and discussion\n\n### Chromatin accessibility landscape in chondrocytes of the zebrafish face\n\nIn order to identify potential cis-regulatory elements important for facial cartilage development, we performed a genome-wide analysis of chromatin accessibility in chondrocytes from 72 hr post-fertilization (hpf) zebrafish. We labeled chondrocytes by co-expression of sox10:Dsred and col2a1a:GFP transgenes (Figure 1A) and isolated double-positive and control double-negative cells by fluorescence-activated cell sorting (FACS). We then subjected these cells to a modified \u2018micro\u2019 version of the assay for transposase-accessible chromatin followed by next-generation sequencing (\u00b5ATACseq). In order to focus on potential distal cis-regulatory elements, we excluded accessible regions within 1 kb upstream or 0.5 kb downstream of transcription start sites. This analysis yielded 33,679 distal accessible elements, with 5736 elements over-enriched in chondrocytes and 8955 elements under-enriched in chondrocytes (Figure 1B,C). As confirmation of sequence quality, the cartilage-specific R2 enhancer of the Collagen Type II alpha 1 a gene (col2a1a) is enriched in chondrocyte-specific elements (Figure 1\u2014figure supplement 1A). De novo motif analysis of the top 2000 chondrocyte-enriched regions using HOMER\u00a0recovered motifs for Sox, Fox, Nfat, Zfx, and Nkx transcription factor families (Figure 1D; Supplementary file 1A). Sox9 ChIP-Seq of mouse chondrocytes had previously revealed Nfat and Fox motifs as the second and third most co-enriched with Sox motifs (Ohba et al., 2015), and the Nkx motif might reflect the role of Nkx3.2 in cartilage differentiation (Provot et al., 2006). Consensus sequences for Sox, Fox, and Nfat motifs were highly similar between zebrafish and mouse (Figure 1\u2014figure supplement 1B), despite our zebrafish analysis focusing on all accessible regions in facial chondrocytes and mouse analysis focusing on only Sox9-bound regions in rib chondrocytes. These striking motif similarities indicate strong conservation of the cartilage gene regulatory network between fish and mammals, and between the face and rib, and strongly suggest that many of the identified chondrocyte-specific accessible regions in zebrafish likely function as chondrocyte enhancers. In addition, Gene Ontology (GO) analysis of the nearest genes to the chondrocyte-enriched elements revealed cartilage development as one of the top six associated terms (Figure 1E). We also recovered terms for neural crest cell migration and dorsal/ventral pattern formation, likely reflecting retention of enhancer accessibility linked to the neural crest origins and later dorsoventral arch patterning of the precursors of facial cartilage.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig1-v2.jpg)\n\n**Figure 1.:** (A) Confocal image of facial cartilages expressing col2a1a:GFP and sox10:Dsred at 72 hpf. Lateral view with anterior to left. Scale bar\u00a0=\u00a0100 \u03bcm. (B) Venn diagram indicating distal elements with open chromatin accessibility in col2a1a:GFP+; sox10:Dsred+ versus col2a1a:GFP\u2212; sox10:Dsred\u2212\u00a0cells. (C) Peak intensity plots (heatmap) of \u03bcATACseq show differentially enriched open chromatin regions in double-positive versus double-negative cells. (D) The top five transcription factor (TF) motifs recovered from the top 2000 \u03bcATACseq peaks enriched in chondrocytes (after removing redundant motifs). (E) GO analysis of nearest neighbor genes of \u03bcATACseq peaks enriched in chondrocytes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) col2a1a locus showing \u03bcATACseq reads from the indicated experiments. Several regions become accessible in 48 hpf CNCCs and then remain open in chondrocytes at 72 hpf. Boxed region shows the published R2 cartilage enhancer. (B) Comparison of consensus motif sequences recovered from zebrafish \u03bcATACseq peaks enriched in facial chondrocytes (left) and mouse Sox9 ChIP-Seq peaks in rib chondrocytes (right).\n\n### Progressive establishment of cartilage-associated chromatin accessibility\n\nWe next investigated when cartilage-associated chromatin accessibility is established in relation to CNCC development. CNCCs are first specified at\u00a0~10.5 hpf at the border of the neural keel, finish their migration into the pharyngeal arches by\u00a0~20 hpf, and then show the first histological signs of cartilage development in the jaw at\u00a0~52 hpf (Schilling and Kimmel, 1997). CNCC-derived arch ectomesenchyme cells can be uniquely identified by co-expression of fli1a:GFP and sox10:Dsred transgenes at 36 and 48 hpf (Askary et al., 2017), stages just prior to cartilage differentiation (Figure 2A). We therefore performed \u00b5ATACseq on FACS-purified fli1a:GFP+; sox10:Dsred+ cells at these stages. 4915 of 14,623 elements gaining accessibility from 36 to 48 hpf were linked to GO terms including skeletal system development and cartilage development, and were enriched for Sox and Fox transcription factor\u00a0binding motifs. 4323 elements with decreasing accessibility were linked to several GO terms related to cellular migration and enriched for motifs of neural crest-associated transcription factors (Nr2f, Lhx, Olig2, Hox, Ets), consistent with decommissioning of enhancers involved in earlier neural crest migration (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig2-v2.jpg)\n\n**Figure 2.:** (A) Confocal images of CNCCs expressing fli1a:GFP and sox10:Dsred at 36 and 48 hpf. Lateral view with anterior to left. Scale bar\u00a0=\u00a0100 \u03bcm. (B) Peak intensity plots of cartilage-accessible distal elements shown for chondrocytes at 72 hpf and CNCCs at 36 and 48 hpf. Chondrocyte accessible elements are pooled into three categories based on dynamics of chromatin accessibility across stages. (C, E, G) De novo motif enrichment recovered by Homer analysis among the three categories. Top six motifs are shown with associated p\u00a0values after removing redundant motifs. (D, F, H) GO term analysis among the three categories.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Peak intensity plots of \u03bcATACseq show differentially enriched open chromatin regions in 36 hpf and 48 hpf fli1a:GFP+; sox10:Dsred+ CNCCs. (B, C) De novo motif enrichment recovered by Homer analysis for peaks with decreasing (B) and increasing (C) accessibility from 36 to 48 hpf. Top six motifs are shown with associated p values after removing redundant motifs. (D, E) GO term analysis and associated p values for peaks with decreasing (D) and increasing (E) accessibility from 36 to 48 hpf.\n\nTo more specifically understand the timing of cartilage-associated chromatin accessibility, we next analyzed chondrocyte-specific accessible elements from our 72 hpf dataset for their accessibilities at 36 and 48 hpf (Figure 2B). Of the 5,736 elements enriched in chondrocytes at 72 hpf, only 6% (356) had peak accessibility at 36 hpf with no further increase in accessibility by 48 hpf (\u2018Group I\u2019). In contrast, 48% (2741) displayed increased accessibility between 36 and 48 hpf (\u2018Group II\u2019), and 46% (2639) between 48 and 72 hpf (\u2018Group III\u2019). For Group I, de novo motif enrichment revealed predicted binding sites for members of the Nfat, Fox, Lhx, Nr2f, Meis, and Pax families, and significant GO terms included neural crest migration, cell migration in general, and dorsal/ventral pattern formation (Figure 2C,D). Combined with the known involvement of Foxd3 (Montero-Balaguer et al., 2006; Stewart et al., 2006), Lhx6/8 (Denaxa et al., 2009), Nr2f1/2/5 (Barske et al., 2018), Meis2 (Machon et al., 2015), and Pax9 (Nakatomi et al., 2010) in CNCC specification, migration, and dorsal\u2013ventral arch patterning, many Group I elements likely represent retention of cis-regulatory elements involved in the earlier specification, migration, and regional patterning of CNCCs. Group II and Group III elements share many common predicted transcription factor binding motifs, including Sox dimer, Fox, Nfat, and Ap1 motifs previously described for mouse cartilage (Figure 2E,G; Supplementary file 1B; Ohba et al., 2015). An Nkx motif was recovered only for Group II (p=10\u221258, 36% of targets), an Egr motif was enriched for Group II (p=10\u221265, 55% of targets) versus Group III (p=10\u221220, 16% of targets), and a Tead motif was enriched for Group III (p=10\u221263, 36% of targets) versus Group II (p=10\u221220, 3% of targets). GO analysis for linked genes also revealed terms related to skeletal system development (Group II) and cartilage development (Group III), as well as more general terms such as transcription and cell differentiation (Figure 2F,H). We therefore conclude that the majority of chondrocyte-specific elements gain accessibility after pharyngeal arch formation and that transcription factor binding motifs change during cartilage differentiation. For example, enrichment of Nkx motifs in Group II elements might reflect the role of Nkx3.2 in limiting chondrocyte maturation (Provot et al., 2006) and promoting joint formation (Miller et al., 2003), while the preferential enrichment of the Tead motif, which is linked to growth-associated Hippo signaling (Ota and Sasaki, 2008), in Group III elements might reflect the later proliferative expansion of chondrocytes.\n\n### Requirement of Foxc1 for chromatin accessibility at a subset of cartilage elements\n\nWe had previously found that Foxc1 genes are essential for cartilage development in the upper face (Xu et al., 2018), and both our \u00b5ATACseq analysis of zebrafish chondrocytes and published Sox9 ChIP-seq analysis in mouse (Ohba et al., 2015) reveals co-enrichment of Sox and Fox motifs in accessible regions near known cartilage genes. In zebrafish Foxc1 (foxc1a\u2212/\u2212; foxc1b\u2212/\u2212) mutants, cartilages of the upper/dorsal face fail to develop (Xu et al., 2018). In order to isolate the dorsal arch CNCC precursors affected in Foxc1 mutants, we used a pou3f3b:Gal4; UAS:nlsGFP (pou3f3b>GFP) dorsal CNCC transgenic line (Barske et al., 2020) along with the pan-CNCC sox10:Dsred transgenic line. In situ hybridization for foxc1a and foxc1b at 36 hpf showed partial overlap with the pou3f3b>GFP line in the dorsal-intermediate regions of the first and second arches (Figure 3\u2014figure supplement 1A). Consistently, we observed reductions of cartilage in the pou3f3b>GFP domain of mutants at 6 days post-fertilization (dpf), except in the dorsal-most regions (close to the ear) that are pou3f3b>GFP-positive yet foxc1a/foxc1b-negative (Figure 3C,D; Figure 3\u2014figure supplement 1B). As pou3f3b>GFP+; sox10:Dsred+ CNCCs were present at 48 hpf (Figure 3A,B), we performed \u00b5ATACseq on these cells after FACS from Foxc1 mutants and controls at 36 and 48 hpf. A comparison of the 15,781 accessible regions in dorsal CNCCs (pou3f3b>GFP+; sox10:Dsred+) and pan-CNCCs (fli1a:GFP+; sox10:Dsred+) at 36 hpf revealed 79% with similar accessibility, 11% with greater accessibility in dorsal CNCCs, and 10% with greater accessibility in pan-CNCCs (Figure 3\u2014figure supplement 2A). Of 22,323 elements at 48 hpf, 72% were similarly accessible, 10% more accessible in dorsal CNCCs, and 18% more accessible in pan-CNCCs (Figure 3\u2014figure supplement 2B). A comparison of the 5,736 regions with specific accessibility in cartilage at 72 hpf revealed high correlation between dorsal- and pan-CNCCs at 36 hpf, with 96% displaying similar accessibility (r\u00a0=\u00a00.92, Figure 3\u2014figure supplement 3A,C). By 48 hpf, however, we observed notable differences between accessibility of cartilage-specific elements, with 43% displaying greater accessibility in pan-CNCCs and only 0.2% displaying greater accessibility in dorsal CNCCs (r\u00a0=\u00a00.71, Figure 3\u2014figure supplement 3B,D). The decreased accessibility of cartilage-specific elements in dorsal CNCCs at 48 hpf supports previous studies that dorsal chondrocytes develop later than other chondrocytes in the zebrafish face (Barske et al., 2016; Schilling and Kimmel, 1997).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig3-v2.jpg)\n\n**Figure 3.:** (A,B) Confocal images show dorsal CNCCs of the first two arches labeled by sox10:Dsred and pou3f3b:Gal4; UAS:nlsGFP in control and foxc1a\u2013/\u2013; foxc1b\u2013/\u2013\u00a0mutant embryos at 48 hpf. Scale bar\u00a0=\u00a0100 \u03bcm. (C,D) Confocal images show loss of dorsal cartilages in foxc1a\u2013/\u2013; foxc1b\u2013/\u2013\u00a0mutant embryos at 6 dpf. sox10:Dsred+ cartilages are seen in single channels in C\u2019 and D\u2019, with dashed lines highlighting boundaries of dorsal arch and otic cartilage. (E) Peak intensity plots of Group I and Group II elements in control and foxc1a\u2013/\u2013; foxc1b\u2013/\u2013\u00a0mutant embryos. Peaks above the dashed lines are reduced in mutants. (F,G) De novo motif enrichment of Foxc1-dependent and Foxc1-independent Group I and Group II elements. Top six motifs are shown with associated p-values after removing redundant motifs.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A,B) In situ hybridization of foxc1a or foxc1b with pou3f3b:Gal4; UAS:nlsGFP (pou3f3b>GFP, detected by anti-GFP antibody) at 36 hpf. Dashed lines indicate regions of foxc1a or foxc1b expression, carried over to the pou3f3>GFP-only and merged images for reference. Scale bar\u00a0=\u00a0100 \u03bcm. (C) Quantification of pou3f3b>GFP+; sox10:DsRed+ cartilage size in control and foxc1a\u2013/\u2013; foxc1b\u2013/\u2013 mutant embryos at 6 dpf. Units were normalized to one based on the average size of the control cartilage. n indicates number of embryos analyzed. Shown is mean\u00a0\u00b1\u00a0sem, and p value was calculated using Students\u2019 T test (tails\u00a0=\u00a02, type\u00a0=\u00a03).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Venn diagrams and heatmaps show distal accessible elements in \u03bcATACseq data from fli1a:GFP+; sox10:Dsred+ (pan-CNCCs) and pou3f3b>GFP+; sox10:DsRed+ (dorsal CNCCs) at 36 hpf (A) and 48 hpf (B). Numbers list elements unique for each population or shared (center of circles).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A,B) Heatmaps of the 5,736 distal elements with accessibility in 72 hpf chondrocytes. Their accessibility is then plotted according to \u03bcATACseq data from fli1a:GFP+; sox10:Dsred+ (pan-CNCCs) and pou3f3b>GFP+; sox10:Dsred+ (dorsal CNCCs) at 36 hpf (A) and 48 hpf (B). At 36 hpf, 132 peaks were more accessible in pan-CNCCs and 106 peaks more accessible in dorsal CNCCs. At 48 hpf, 2,470 peaks were more accessible in pan-CNCCs and 10 peaks more accessible in dorsal CNCCs. Peaks commonly or not accessible in both data sets are also shown. (C,D) Pearson correlation graphs of the behavior of cartilage-associated distal elements in pan- versus dorsal CNCCs at 36 and 48 hpf. x and y axes represent raw read counts from BAM files, and \u2018r\u2019 is the Pearson correlation coefficient.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Comparison of the chromatin accessibility of Group I and Group II peaks between wild types and FoxC mutant CNCCs. The x-axis represents the log2 fold change value of mutant versus control peaks, and the y-axis represents the \u2212log10 adjusted p values associated with these regions. Peaks above a \u2212log10 adjusted p value of 1 (purple dots) are considered significant. Many more peaks display decreased accessibility at 48 hpf than at 36 hpf in Foxc1 mutants.\n\nAnalysis of cartilage-associated elements in Foxc1 mutants revealed that 10% (120/1221) of elements that have established peak accessibility by 36 hpf (i.e. Group I) and 41% (636/1556) of elements that increase accessibility between 36 and 48 hpf (i.e. Group II) had reduced accessibility in Foxc1 mutants (Figure 3E, Figure 3\u2014figure supplement 4). De novo motif analysis of Foxc1-dependent and Foxc1-independent elements in Group I showed enrichment of Sox (p=10\u221212, p=10\u221276), Tead (p=10\u221214, p=10\u221220), Mtf (p=10\u221212, p=10\u221222), and Ets (p=10\u221212, p=10\u221261) motifs in both (Figure 3F, Supplementary file 1C). Whereas several types of Fox motifs were uncovered in both, a closer analysis revealed enrichment of Foxa2 and Foxd3 motifs only in Foxc1-dependent elements (p=10\u221245, 38% of targets; p=10\u221216, 18% of targets), and a Foxo1 motif only in Foxc1-independent elements (p=10\u221242, 49% of targets). Similarly in Group II elements, a Foxa1 motif was enriched only in Foxc1-dependent elements (p=10\u221259, 38% of targets), and Foxh1 and Foxp1 motifs only in Foxc1-independent elements (p=10\u221222, 22% of targets; p=10\u221219, 7% of targets) (Figure 3G, Supplementary file 1C). Although Foxc1 motifs were not in the database used for motif predictions, the selective presence of Foxa1/2 motifs in Foxc1-dependent elements is consistent with previous reports that the consensus sequence for Foxc1-bound peaks is nearly identical to Foxa1/2 motifs (Wang et al., 2016). Sox motifs were similarly enriched in both Group I and Group II Foxc1-dependent and -independent elements, and Nfat and Zfx motifs in Group II Foxc1-dependent and -independent elements. An Insm (p=10\u221239, 30% of targets) motif was uncovered only in Foxc1-independent Group I elements and an Nkx motif (p=10\u221235, 52% of targets) only in Foxc1-independent Group II elements. Whereas 33% (207/636) of Foxc1-dependent Group II elements had both Sox and Fox predicted motifs, only 16% (151/920) of Foxc1-independent Group II elements had both. These findings suggest that Foxc1-dependent and -independent cartilage elements may be commonly bound by Sox9 but likely differ in co-binding by Foxc1 and additional co-factors. For example, the presence of the Nkx motif only in Foxc1-independent elements suggests that it could be an alternative co-factor for Sox9, in line with the known roles for Nkx3.2 in chondrocyte biology (Provot et al., 2006).\n\n### Validation of Foxc1-dependent cartilage enhancers in zebrafish transgenesis assays\n\nTo verify whether Foxc1-dependent cartilage elements identified by \u00b5ATACseq are chondrogenic enhancers, we tested the ability of individual elements in combination with an E1b minimal promoter to drive cartilage expression of green fluorescent protein (GFP) in zebrafish transgenic assays (Figure 4\u2014figure supplement 1A). We tested 22 Foxc1-dependent Group II elements near 15 different genes, which included elements linked to genes with known cartilage function (ucmab, matn4, matn1, lect1, epyc, col9a1a, col9a3, sox10, acana, foxa3, mia) and others with unknown cartilage function (si:dkey33i1l.4, gas1b, lefty2, slc35d1a) (Supplementary file 2). We observed that 59% (13/22) of elements drove GFP expression in facial chondrocytes at 6 dpf. These included intronic elements within sox10, lect1, col9a3, col9a1a, and slc35d1a; distal 5\u2032 elements near ucmab, epyc, mia, acana, and matn4; a distal 3\u2032 element near gas1b; and a promoter-associated element for lect1. We confirmed cartilage expression in independent stable transgenic lines for all 13 positive elements (Figure 4A; Figure 4\u2014figure supplement 1; Supplementary file 2). Whereas an element in the first intron of sox10 drove uniform cartilage-specific expression, most elements drove expression in specific sub-regions or particular differentiation stages of cartilage. A distal 5\u2032 element of ucmab drove expression in chondrocytes of multiple joints in the zebrafish head, an intronic element of lect1\u00a0drove chondrocyte expression only in the jaw joint and hyomandibular-otic connection, a promoter-associated element of lect1 drove expression more strongly in the hyoid joint and hyomandibular-symplectic connection (though also more broadly in chondrocytes), a distal 5\u2032 element of acana drove restricted expression at the hyoid joint, and a distal 3\u2032 element of gas1b drove restricted expression at the Meckel\u2019s\u2013Meckel\u2019s joint and connection between the hyomandibular cartilage and opercular bone. Reciprocally, elements associated with col9a3, epyc, mia, matn4, and col9a1a were expressed in chondrocytes but generally excluded from joint regions (particularly apparent at the hyoid joint and hyomandibular-symplectic connection). An intronic element for slc35d1a drove expression in both pharyngeal cartilage and muscle. Furthermore, we found that three enhancer transgenes with diverse expression patterns (broad sox10, joint-restricted ucmab, and joint-excluded epyc enhancers) all displayed reduced activity specifically in the dorsal cartilage regions affected in Foxc1 mutants (Figure 4B). We also confirmed by in situ hybridization that four genes linked to Foxc1-dependent enhancers (sox10, lect1, col9a3, epyc) showed reduced expression in cartilage-forming regions of the dorsal arches of Foxc1 mutants (Figure 4C), similar to our previous results for col2a1a, matn1, matn4, and acana (Xu et al., 2018).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig4-v2.jpg)\n\n**Figure 4.:** (A) Genomic regions (gene loci and GRCz10 coordinates listed) for enhancer testing on the left and GFP expression driven by the indicated peaks in stable transgenic zebrafish at 6 dpf on the right. Peaks (p) tested are shown, with Foxc1-dependent regions in purple and Foxc1-independent elements in green. \u03bcATACseq reads are shown in each row, with chondrocyte and non-chondrocyte peaks from 72 hpf embryos. Confocal projections show cartilages of the first two arches in lateral view with anterior to the left. Arrows indicate enriched expression at joint regions, and arrowheads denote relative lack of expression. (B) Confocal projections show selective loss of sox10_p2:EGFP, ucmab_p1:EGFP, and epyc_p1:EGFP transgene expression in the dorsal cartilage domains (dashed outlines) of foxc1a\u2212/\u2212; foxc1b\u2212/\u2212\u00a0mutants at 72 hpf. (C) Confocal projections of in situ hybridization show selective loss of sox10, lect1, col9a3, and epyc in the dorsal cartilage domain (dashed outline) of foxc1a\u2212/\u2212; foxc1b\u2212/\u2212\u00a0mutants at 56 hpf. Numbers indicate proportion of embryos in which the displayed patterns were observed. bh, basihyal; DNCCs, dorsal CNCCs; jj, jaw joint; hj, hyoid joint; hm-op, hyomandibular-opercular joint; hm-otic, hyomandibular-otic junction; hm-sy, hyomandibular-symplectic junction; M-M, Meckel\u2019s\u2013Meckel\u2019s joint. Scale bars\u00a0=\u00a0100 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic of the reporter construct for enhancer testing. Tol2, transposase integration site. E1b, minimal promoter. GFP, green fluorescent protein. pA, polyadenylation sequence. CFP, cerulean fluorescent protein. (B) Snapshots of genomic regions (gene loci and GRCz10 coordinates listed) for enhancer testing. Peaks (p) tested are shown, with Foxc1-dependent regions in purple and Foxc1-independent elements in green. \u03bcATACseq reads are shown in each row for the experiments indicated, with chondrocyte and non-chondrocyte peaks from 72 hpf embryos. DNCCs, dorsal CNCCs. (C) GFP expression (yellow) driven by the indicated peaks in stable transgenic zebrafish at 6 dpf. Confocal projections of the cartilages of the first two arches are shown in lateral view for acan_p1, slc35d1a_p1 and sparc_p1 and ventral view for col9a1a_p1. For acan_p1, sox10:Dsred labels all chondrocytes for reference in magenta. Arrows indicate expression in cartilages. sparc_p1 also drives expression in ligamentocytes and osteoblasts, and slc35d1a_p1 in pharyngeal muscles. (D) Confocal sections of representative embryos injected with enhancer constructs are shown in lateral view at 6 dpf. Mosaic expression in chondrocytes (yellow, arrows) is shown, with DIC (white channel) providing embryo context. Numbers indicate proportion of embryos positive for the co-selectable lens:CFP marker (also on the injected plasmid) in which the displayed patterns were observed. Scale bar\u00a0=\u00a0100 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63595/elife-63595-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Genomic regions (gene loci and GRCz10 coordinates listed) for enhancer testing. Peaks (p) tested are shown in green, and \u03bcATACseq reads are shown in each row. DNCCs, dorsal CNCCs. (B) GFP expression (yellow) driven by the indicated peaks at 36 hpf and 6 dpf. For emx3_p1 and prrx1a_p1, confocal projections of whole arch CNCCs of stable transgenic zebrafish are shown in lateral view at 36 hpf. For satb2-p1, confocal section of representative injected embryo is shown in lateral view at 6 dpf, with DIC providing embryo context in white. Numbers indicate proportion of embryos positive for the co-selectable lens:CFP marker (also on the injected plasmid) in which the displayed patterns were observed. Scale bar\u00a0=\u00a0100 \u03bcm.\n\nTesting of four Foxc1-independent Group II elements revealed two that drove cartilage expression (distal 5\u2032 elements of gas1b and matn4), one that drove cartilage, bone, and ligament expression (distal 5\u2032 element of sparc), and one with no activity (promoter-associated element of sox10) (Figure 4\u2014figure supplement 1). Thus, the majority of tested Foxc1-dependent and -independent Group II elements are equally capable of driving cartilage expression. We also tested five Foxc1-independent Group I elements and found that two showed arch CNCC expression at 36 hpf and minimal cartilage expression at 6 dpf (prrx1a and emx3 elements), one no expression at 36 hpf and ligament expression at 6 dpf (satb2), and two no expression at either stage (prrx1a, cd248a) (Figure 4\u2014figure supplement 2). In contrast, we did not observe 36 hpf arch CNCC expression in any of the 16 Group II elements that drove cartilage expression at 6 dpf. As most of the Group I elements tested had decreased accessibility from 36 to 48 hpf, it seems likely that these elements represent either neural crest elements in the process of decommissioning (e.g. prrx1a and emx3) or elements prefiguring non-cartilage fates (e.g. satb2). Thus, most cartilage enhancers appear to gain accessibility after 36 hpf, with activity of late-opening cartilage enhancers in diverse locations, indicating that global cartilage expression patterns are achieved in part through the summation of enhancers with more restricted activity.\n\n### Conclusion\n\nOur findings indicate that Foxc1 function is required for the accessibility of close to half of chondrocyte enhancers in the zebrafish face. Given expression and function of Foxc1 in diverse cartilages (e.g. limb, rib, tracheal) in mouse, it seems likely that Foxc1 has a similar function in chondrocyte enhancer accessibility throughout the body. The co-enrichment of predicted Sox and Fox binding sites in 33% of chondrocyte enhancers suggests a model in which Foxc1 promotes Sox9 binding to these same enhancers by increasing chromatin accessibility, though this would require direct Sox9 binding studies to validate. However, not all Foxc1-dependent enhancers have predicted Fox binding motifs, which might suggest indirect regulation of chromatin accessibility in at least some cases. In addition, many enhancers do not appear to require Foxc1 activity. It is possible that other members of the Fox family compensate, such as Foxf1/2 in the facial midline (Xu et al., 2018) and Foxa2/3 during later hypertrophic maturation (Ionescu et al., 2012). Alternatively, there may be other co-factors that mediate chondrocyte enhancer accessibility and activation, such as Nkx3.2. We did not detect any obvious differences in the types of enhancer-proximal genes or the patterns and stages associated with Foxc1-dependent versus -independent enhancer activity. Further work will also be needed to understand the mechanism by which Foxc1 promotes chondrocyte enhancer accessibility, and the extent to which this reflects direct binding of Foxc1 to chondrogenic enhancers. Foxc1 lacks a chromatin modifying domain (Yoshida et al., 2015) and therefore would need to interact with a co-factor to directly open chromatin. Foxc1 could also act to maintain open chromatin, as shown for Foxa1 in the liver (Reizel et al., 2020). Given that both Foxc1 and Sox9 have expression in many tissues outside the skeletal system, it will also be important to determine whether additional factors help to further restrict their activity to chondrocyte enhancers within skeletogenic mesenchyme.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>col2a1aBAC:GFPel483</td>\n      <td>PMID:26555055</td>\n      <td>RRID:ZFINID:ZDB-ALT-160204-6</td>\n      <td>Available at ZIRC</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>fli1a:eGFPy1</td>\n      <td>PMID:12167406</td>\n      <td>RRID:ZFINID:ZDB-ALT-011017-8</td>\n      <td>Available at ZIRC</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>sox10:Dsredel10</td>\n      <td>PMID:22589745</td>\n      <td>RRID:ZFINID:ZDB-ALT-120523-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>pou3f3bGal4ff-el79</td>\n      <td>PMID:32958671</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>UAS:nlsGFP;\u03b1-crystallin:Ceruleanel609</td>\n      <td>PMID:32958671</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>foxc1ael543</td>\n      <td>PMID:29777011</td>\n      <td>RRID:ZFINID:ZDB-ALT-190103-11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>foxc1bel620</td>\n      <td>PMID:29777011</td>\n      <td>RRID:ZFINID:ZDB-ALT-190104-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-GFP</td>\n      <td>Torrey Pines Biolabs</td>\n      <td>RRID:AB_10013661</td>\n      <td>Used at 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal anti-rabbit Alexa Fluor 568</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>RRID:AB_143157</td>\n      <td>Used at 1:500</td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish lines\n\nThe Institutional Animal Care and Use Committee of the University of Southern California approved all experiments on zebrafish (Danio rerio) (Protocol #10885). Existing mutant and transgenic lines used in this study include foxc1ael542 and foxc1bel620 (Xu et al., 2018); Tg(sox10:Dsred)el110 and Tg(fli1a:EGFP)y1 (Askary et al., 2017); Tg(col2a1aBAC:GFP)el483 (Paul et al., 2016); and Tg(UAS:nlsGFP;\u03b1-crystallin:Cerulean)el609 and pou3f3bGal4ff-el79 (Barske et al., 2020). For enhancer transgenic lines, we synthesized accessible elements with flanking attB4 and attB1 sequences using IDT gBlocks and cloned these into pDONR-P4-P1R using the Gateway Tol2kit (Invitrogen) to create p5E enhancer constructs (Kwan et al., 2007). We then combined p5E constructs with pME-E1b-GFP, p3E-polyA, and pDestTol2AB2 using LR clonase. Final DNA constructs were microinjected with transposase RNA (30 ng/\u00b5l each) into one cell stage zebrafish embryos. In most cases, multiple independent stable alleles per construct were analyzed in the F1 generation (Supplementary file 2).\n\n### In situ hybridization and immunohistochemistry\n\nIn situ hybridization and immunohistochemistry were performed as described (Xu et al., 2018). In addition to foxc1a and foxc1b probes (Xu et al., 2018), partial cDNAs were PCR-amplified with Phusion High-Fidelity DNA polymerase (New England Biolabs, Ipswich, MA), cloned into pCR_Blunt_II_Topo (ThermoFisher Scientific, Waltham, MA), linearized, and then synthesized with Sp6 or T7 RNA polymerase (Roche Life Sciences, Indianapolis, IN) as specified (Supplementary file 3). For combined in situ hybridization and immunohistochemistry using foxc1a or foxc1b probes, we used rabbit anti-GFP antibody (TP401, Torrey Pines Biolabs, Secaucus, NJ) to detect pou3f3b>GFP followed by goat anti-rabbit secondary antibody (A11008, Invitrogen, Carlsbad, CA).\n\n### Confocal imaging\n\nIn situ hybridization and transgenic embryos were imaged with a Zeiss LSM800 confocal microscope. Maximum-intensity projections are shown for stable transgenic lines, and single representative sections are shown for injected embryos. Image levels were modified consistently across samples in Adobe Photoshop CS6.\n\n### \u00b5ATACseq\n\nWild-type embryos double\u00a0positive for fli1a:EGFP and sox10:Dsred (36 and 48 hpf), or col2a1a:GFP and sox10:Dserd (72 hpf), were sorted under a fluorescent dissecting microscope (Leica M165FC) before dissociation. For Foxc1 mutant analysis, we performed incrosses of pou3f3b:Gal4+/\u2212; UAS:nls-GFP+/\u2212; sox10:Dsred+/\u2212; foxc1a+/\u2212; foxc1b+/\u2212\u00a0fish and then selected for GFP+/Dsred+ embryos on a fluorescent dissecting microscope. Genotyping was then performed on tail lysates collected from individual embryos at 27 hpf. We then pooled foxc1a\u2212/\u2212; foxc1b\u2212/\u2212\u00a0double mutants and separate sibling controls (foxc1a+/\u2212; foxc1b+/+, and foxc1a+/+; foxc1b+/+ embryos) for FACS. To facilitate embryo collection at the 36 hpf time point, embryos were moved at 27 hpf to an incubator set at 22\u00b0C to delay their development such that they reached 36 hpf the following morning. Cell dissociation and FACS were performed as previously described (Askary et al., 2017). Around 5,000 cells of each sample were centrifuged at 500 g for 20 m at 4\u00b0C, and the pellet was suspended with 20 \u03bcL of lysis buffer (10 mM Tris\u2013HCl [pH 7.4], 5 mM MgCl2, 10% DMF, 0.2% N-P40) by pipetting 6\u201310 times to release the nuclei without purification. The cell lysate was then mixed with 30 \u03bcL reaction buffer (10 mM Tris\u2013HCl [pH 7.4], 5 mM MgCl2, 10% DMF, and homemade Tn5 Transposase) by vortexing for 5 s. The reaction was incubated at 37\u00b0C for 20 min, followed by DNA purification using a Qiagen MiniElute kit. Purified DNA fragments were used to construct \u03bcATACseq libraries as previously described (Buenrostro et al., 2013) and sequenced using the NextSeq 500 platform (Illumina) with a minimum of 50 million paired-reads/sample. Two biological replicates of \u03bcATACseq experiments were performed for each condition.\n\n### Data analysis and statistics\n\nThe Encode analysis pipeline (https://github.com/ENCODE-DCC/chip-seq-pipeline) for ATACseq (Davis et al., 2018)\u00a0was used with small modifications. The raw reads were trimmed to 37 bp and aligned to the zebrafish GRCz10 genome assembly by STAR aligner (Dobin et al., 2013). PCR duplicates, and the reads that aligned to \u2018blacklist regions\u2019 (Amemiya et al., 2019), were removed, and then peaks were called by model-based analysis of ChIP-Seq (MACS2) (Zhang et al., 2008), with p=10\u22127 cutoff and disabled dynamic lambda option (--nolambda) for individual replicates. Only peaks common for two biological replicates (Irreproducibility Discovery Rate < 0.1) were kept for further analysis. For visualization, bigwig files were generated from duplicates-removed bam files with bedtools and bedgraphtobigwig, and normalization was based on total read numbers. Heatmaps were generated with deeptools2 (Ram\u00edrez et al., 2016) based on the normalized bigwig signal files. Individual genomic loci were examined by IGV (Broad Institute). For quantitatively comparing the accessibility of distal regulatory elements between two conditions, peaks from two conditions were first merged, and only distal regulatory regions (1 kb upstream or 0.5 kb downstream from the transcription start sites) were kept for comparison. Raw read counts from each replicate were computed using \u2018bedtools multicov\u2019 function (bedtools multicov -bams input.bam -bed peak.bed > count.txt). Raw read count matrices from four replicates (two replicates per condition) were analyzed using DESeq2 package (Love et al., 2014). FDR\u00a0=\u00a00.1 was used as the cut off to filter the peaks that were differentially accessible between two conditions. Volcano plots were generated using ggplot2 package in R. Fold change and adjusted p value were outputs from DESeq2 package in R, which is the same analysis behind the heatmaps in Figure 3. We used a \u2212log10 adjusted p value greater than one as the cutoff for determining significantly changed peaks. HOMER (Heinz et al., 2010) was used to identify de novo motifs and their associated p values. David 6.8 GO analysis was performed on the web interface (https://david.ncifcrf.gov/) based on nearest neighbor genes for all differentially accessible elements. Pearson correlation was calculated using cor() function in R.\n\n### Materials and correspondence\n\nRequests for material should be directed to J. Gage Crump (gcrump@usc.edu).\n",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "ce1cdd02-e247-4d6f-9232-4d1c34a19c1a",
+      "submission_id": "67de94de-7cc2-4beb-bb5a-1e8bf028cc04",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carole LaBonne, Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63595.sa1](https://doi.org/10.7554/eLife.63595.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper examines the role of Foxc1 in mediating chromatin accessibility at specific enhancers to drive craniofacial cartilage development in zebrafish. It shows that cartilage-associated chromatin accessibility is dynamically established in neural crest cells in the zebrafish head, and that cartilage-associated regions that become accessible after neural crest migration are co-enriched for Sox9 and Foxc1 binding motifs. This work includes data sets that should prove valuable to the craniofacial community.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Foxc1 establishes enhancer accessibility for craniofacial cartilage differentiation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kathryn Cheah as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Xu et al. examines the role of Foxc1 in mediating chromatin accessibility at specific enhancers to drive craniofacial cartilage development in zebrafish. Utilizing zebrafish transgenic lines to isolate specific populations of cranial neural crest cells (cNCCs), as well as more differentiated cNCC-derived chondrocytes at later stages of development, the authors perform several different sequencing experiments to identify cis-regulatory regions of accessible chromatin within cartilage specific genes.\n\nEssential revisions:\n\nThe three reviewers agree that the data sets in your submission should prove very useful for the craniofacial community, and as such the study would merit publication as a short report following some revisions. In particular it was felt that some interpretations and conclusions in the paper were not well supported and should be attenuated.\n\n1) The analysis/statistical methods in the paper need to be more detailed. There are no statistical methods clarified in the text or figure legends \u2013 please state what tests were applied, what the multiple sampling correction methods used were, etc.? Analysis methods are overall scarce and challenging to assess.\n\n2) In order to draw the conclusion that Fox-dependent elements are enriched for both Fox and Sox motifs, combinatorial binding analysis needs to be carried out/included.\n\n3) The conclusion that Foxc1 establishes cartilage-specific enhancer accessibility for Sox9's subsequent binding is unsupported by direct data and should be eliminated, and instead should be discussed as one possibility. Alternatively, ChiP data should be included that supports that conclusion.\n\n4) The text should make clear that the Foxc1-dependent peaks could directly or indirectly require Foxc1 \u2013 there are currently no data in the manuscript to support that this is direct.\n\n5) Some data should be included that validates that genes linked to the identified Foxc1-dependent exhancers show changes in expression in Foxc1 mutants \u2013 this could be done using RNA-Seq or qPCR.\n\n6) The conclusion that Foxc1 mutant upper/dorsal face cartilage fails to develop is supported by images suggesting they were reduced relative to controls, but these data need to be quantified. Please also comment on the continued presence of Pou3f3b and Sox10 double-positive cells.\n",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8cca537c-64d6-4dce-a541-689731290e09",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C1",
+      "claim": "Cartilage specification requires Sox9, a transcription factor with broad roles for organogenesis outside the skeletal system.",
+      "claim_type": "EXPLICIT",
+      "source": "The specification of cartilage requires Sox9, a transcription factor with broad roles for organogenesis outside the skeletal system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the introduction's discussion of Sox9's roles in multiple organ systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "9c1e4488-7f23-4a82-ae78-b00067f90220",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C2",
+      "claim": "Cartilage-associated chromatin accessibility is dynamically established during neural crest cell differentiation into chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing chromatin accessibility during the differentiation of neural crest cells into chondrocytes of the zebrafish head, we find that cartilage-associated chromatin accessibility is dynamically established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by \u00b5ATACseq data showing progressive establishment of accessibility at different developmental stages (36, 48, and 72 hpf).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "f63ce994-3713-4d97-8a6c-fedf337482fa",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C3",
+      "claim": "Cartilage-associated regions that become accessible after neural crest migration are co-enriched for Sox9 and Fox transcription factor binding motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cartilage-associated regions that become accessible after neural crest migration are co-enriched for Sox9 and Fox transcription factor binding motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by de novo motif analysis showing Sox and Fox motifs as top enriched motifs in chondrocyte-specific accessible regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "8d137b9f-4f37-413b-ae06-b038af5952b3",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C4",
+      "claim": "In zebrafish lacking Foxc1 paralogs, there is a global decrease in chromatin accessibility in chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish lacking Foxc1 paralogs, we find a global decrease in chromatin accessibility in chondrocytes, consistent with a later loss of dorsal facial cartilages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by \u00b5ATACseq data comparing Foxc1 mutants to controls, showing reduced accessibility at many cartilage-associated elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "2270506e-508a-4a52-bbd6-b98ba2c60f82",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C5",
+      "claim": "Many Foxc1-dependent elements function as enhancers with region- and stage-specific activity in facial cartilages.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish transgenesis assays confirm that many of these Foxc1-dependent elements function as enhancers with region- and stage-specific activity in facial cartilages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transgenic reporter assays showing that 59% (13/22) of tested Foxc1-dependent elements drove GFP expression in facial chondrocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "d321836c-dc53-4a5c-8c1b-7ef60961bb0c",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C6",
+      "claim": "Foxc1 promotes chondrogenesis in the face by establishing chromatin accessibility at cartilage-associated gene enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Foxc1 promotes chondrogenesis in the face by establishing chromatin accessibility at a number of cartilage-associated gene enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by the combination of accessibility data in mutants and enhancer validation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "d23cadac-df33-49b9-816f-f19d4473822c",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C7",
+      "claim": "Sox9 is essential for chondrogenic differentiation in all vertebrates examined.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor Sox9 is essential for chondrogenic differentiation in all vertebrates examined (Bi et al., 1999; Lefebvre et al., 1997; Mori-Akiyama et al., 2003; Yan et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "40eb685b-2dfd-463e-b0ea-5fb5c034a7b0",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C8",
+      "claim": "Sox9 has widespread roles outside the skeletal system, including the reproductive system, kidney, liver, and skin.",
+      "claim_type": "EXPLICIT",
+      "source": "yet it also has widespread roles outside the skeletal system, including the reproductive system, kidney, liver, and skin (Jo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "de0628f8-6419-4ca4-9ead-2df611c2e531",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C9",
+      "claim": "Sox9 directly binds to cis-regulatory elements adjacent to chondrogenic genes including Col2a1, Col10a1, and Acan.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox9 is known to directly bind to a number of cis-regulatory elements adjacent to chondrogenic genes, including Col2a1, Col10a1, and Acan (Askary et al., 2015; Dy et al., 2012; Lefebvre et al., 1997; Ohba et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "35045872-805c-49a3-8836-7e7ae75f12ca",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C10",
+      "claim": "Sox9 is dispensable for chromatin accessibility at chondrogenic enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "It is, however, dispensable for chromatin accessibility at these same elements (Liu et al., 2018), suggesting that other unknown factors may first open chromatin at chondrogenic enhancers for later activation by Sox9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "ac7a606c-c8a6-41e4-a55e-f81405fffcad",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C11",
+      "claim": "HNF3/FoxA binds closed chromatin at enhancers and makes these more accessible in the endoderm lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the endoderm lineage, HNF3/FoxA binds closed chromatin at enhancers and makes these more accessible (Cirillo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cirillo et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "4655213b-8cae-4e8e-9e6c-b9ef715137b9",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C12",
+      "claim": "Foxd3 has been proposed to establish chromatin accessibility in the early neural crest lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxd3 has been similarly proposed to establish chromatin accessibility in the early neural crest lineage (Lukoseviciute et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lukoseviciute et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "1549a21d-dc2e-4b5c-ab6a-f98e6c3f8d87",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C13",
+      "claim": "Loss of Foxc1 in mouse results in widespread cartilage and bone defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse, loss of Foxc1 results in widespread cartilage and bone defects (Kume et al., 1998), including impaired tracheal and rib cartilages (Hong et al., 1999), loss of calvarial bone due to premature ossification (Rice et al., 2003; Sun et al., 2013; Vivatbutsiri et al., 2008), syngnathia (Inman et al., 2013), and disruption of endochondral bone maturation (Yoshida et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "a83c1257-c249-4837-9f77-4915e54a5b75",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C14",
+      "claim": "Loss of both Foxc1 paralogs in zebrafish results in severe reductions of dorsal cartilages of the upper face.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, loss of both Foxc1 paralogs (foxc1a and foxc1b) results in severe reductions of dorsal cartilages of the upper face, which are preceded by reduced expression of several Sox9 targets, including col2a1a, acana, matn1, and matn4 (Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "c0e0ec2b-327b-47fb-9dec-0a702b333b35",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C15",
+      "claim": "Sox9 ChIP-Seq in dissected mouse rib and nose cartilage revealed enrichment of Fox binding motifs within Sox9-bound cis-regulatory sequences near chondrogenic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin immunoprecipitation followed by deep sequencing (ChIP-Seq) using a Sox9 antibody in dissected mouse rib and nose cartilage revealed enrichment of Fox binding motifs within Sox9-bound cis-regulatory sequences near chondrogenic genes (Ohba et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ohba et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "df62de66-df4a-418b-9b15-e379826478c5",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C16",
+      "claim": "The analysis yielded 33,679 distal accessible elements, with 5736 elements over-enriched in chondrocytes and 8955 elements under-enriched in chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis yielded 33,679 distal accessible elements, with 5736 elements over-enriched in chondrocytes and 8955 elements under-enriched in chondrocytes (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "70396a7e-0f0e-4e49-ae1b-208da550c301",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C17",
+      "claim": "The cartilage-specific R2 enhancer of col2a1a is enriched in chondrocyte-specific elements.",
+      "claim_type": "EXPLICIT",
+      "source": "As confirmation of sequence quality, the cartilage-specific R2 enhancer of the Collagen Type II alpha 1 a gene (col2a1a) is enriched in chondrocyte-specific elements (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "0f8477f6-76d4-4060-8432-dc9547c45d25",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C18",
+      "claim": "De novo motif analysis of the top 2000 chondrocyte-enriched regions recovered motifs for Sox, Fox, Nfat, Zfx, and Nkx transcription factor families.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo motif analysis of the top 2000 chondrocyte-enriched regions using HOMER recovered motifs for Sox, Fox, Nfat, Zfx, and Nkx transcription factor families (Figure 1D; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "4a9b49ec-e8dc-4b56-b967-c330c0f79fd1",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C19",
+      "claim": "Consensus sequences for Sox, Fox, and Nfat motifs were highly similar between zebrafish and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus sequences for Sox, Fox, and Nfat motifs were highly similar between zebrafish and mouse (Figure 1\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "4f687193-4b2c-423b-aff3-6f84f0a4a655",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C20",
+      "claim": "Gene Ontology analysis of the nearest genes to the chondrocyte-enriched elements revealed cartilage development as one of the top six associated terms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Gene Ontology (GO) analysis of the nearest genes to the chondrocyte-enriched elements revealed cartilage development as one of the top six associated terms (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "b03dc2e6-a6c6-4c59-9bcf-ba4ebb476bd7",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C21",
+      "claim": "CNCCs are first specified at ~10.5 hpf at the border of the neural keel.",
+      "claim_type": "EXPLICIT",
+      "source": "CNCCs are first specified at ~10.5 hpf at the border of the neural keel, finish their migration into the pharyngeal arches by ~20 hpf, and then show the first histological signs of cartilage development in the jaw at ~52 hpf (Schilling and Kimmel, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schilling and Kimmel, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "b5fe3f80-c873-45cc-b0cb-2555dcba9627",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C22",
+      "claim": "CNCCs finish their migration into the pharyngeal arches by ~20 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "CNCCs are first specified at ~10.5 hpf at the border of the neural keel, finish their migration into the pharyngeal arches by ~20 hpf, and then show the first histological signs of cartilage development in the jaw at ~52 hpf (Schilling and Kimmel, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schilling and Kimmel, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "fbc02a7d-35b8-4581-8149-4f1d8b09fa5a",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C23",
+      "claim": "CNCCs show the first histological signs of cartilage development in the jaw at ~52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "CNCCs are first specified at ~10.5 hpf at the border of the neural keel, finish their migration into the pharyngeal arches by ~20 hpf, and then show the first histological signs of cartilage development in the jaw at ~52 hpf (Schilling and Kimmel, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schilling and Kimmel, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "0b857941-0136-4bed-8db4-2ec5dad9c691",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C24",
+      "claim": "CNCC-derived arch ectomesenchyme cells can be uniquely identified by co-expression of fli1a:GFP and sox10:Dsred transgenes at 36 and 48 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "CNCC-derived arch ectomesenchyme cells can be uniquely identified by co-expression of fli1a:GFP and sox10:Dsred transgenes at 36 and 48 hpf (Askary et al., 2017), stages just prior to cartilage differentiation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Askary et al., 2017 and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "0b7ce2e0-f44f-4a27-be79-67ba6c229367",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C25",
+      "claim": "4915 of 14,623 elements gaining accessibility from 36 to 48 hpf were linked to GO terms including skeletal system development and cartilage development.",
+      "claim_type": "EXPLICIT",
+      "source": "4915 of 14,623 elements gaining accessibility from 36 to 48 hpf were linked to GO terms including skeletal system development and cartilage development, and were enriched for Sox and Fox transcription factor binding motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by the analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "4a0f8662-acc8-46e0-b419-95ed8c911788",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C26",
+      "claim": "Elements gaining accessibility from 36 to 48 hpf were enriched for Sox and Fox transcription factor binding motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "4915 of 14,623 elements gaining accessibility from 36 to 48 hpf were linked to GO terms including skeletal system development and cartilage development, and were enriched for Sox and Fox transcription factor binding motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by motif analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "8ebdc5c6-5ed3-45c6-bdde-318f635bc209",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C27",
+      "claim": "4323 elements with decreasing accessibility from 36 to 48 hpf were linked to GO terms related to cellular migration and enriched for motifs of neural crest-associated transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "4323 elements with decreasing accessibility were linked to several GO terms related to cellular migration and enriched for motifs of neural crest-associated transcription factors (Nr2f, Lhx, Olig2, Hox, Ets), consistent with decommissioning of enhancers involved in earlier neural crest migration (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "cf53bc81-b933-4468-af41-9aef4f1d1bf2",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C28",
+      "claim": "Of the 5,736 elements enriched in chondrocytes at 72 hpf, only 6% (356) had peak accessibility at 36 hpf with no further increase in accessibility by 48 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 5,736 elements enriched in chondrocytes at 72 hpf, only 6% (356) had peak accessibility at 36 hpf with no further increase in accessibility by 48 hpf ('Group I').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "86534260-baf8-45e7-a665-b82ef01a3f9e",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C29",
+      "claim": "48% (2741) of chondrocyte-enriched elements displayed increased accessibility between 36 and 48 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 48% (2741) displayed increased accessibility between 36 and 48 hpf ('Group II'), and 46% (2639) between 48 and 72 hpf ('Group III').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "34c62193-22cd-4ef8-9ca4-74a84e6ca302",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C30",
+      "claim": "46% (2639) of chondrocyte-enriched elements displayed increased accessibility between 48 and 72 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 48% (2741) displayed increased accessibility between 36 and 48 hpf ('Group II'), and 46% (2639) between 48 and 72 hpf ('Group III').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "afe5000c-f61e-441e-b278-33f8dc0b04ca",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C31",
+      "claim": "Group I elements are enriched for predicted binding sites for members of the Nfat, Fox, Lhx, Nr2f, Meis, and Pax families.",
+      "claim_type": "EXPLICIT",
+      "source": "For Group I, de novo motif enrichment revealed predicted binding sites for members of the Nfat, Fox, Lhx, Nr2f, Meis, and Pax families, and significant GO terms included neural crest migration, cell migration in general, and dorsal/ventral pattern formation (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "417cf08c-8585-4e7f-8b11-677ab85e86f2",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C32",
+      "claim": "Group I elements have significant GO terms including neural crest migration, cell migration in general, and dorsal/ventral pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "For Group I, de novo motif enrichment revealed predicted binding sites for members of the Nfat, Fox, Lhx, Nr2f, Meis, and Pax families, and significant GO terms included neural crest migration, cell migration in general, and dorsal/ventral pattern formation (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "5f90786b-bb66-41ac-98db-028e90566688",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C33",
+      "claim": "Group II and Group III elements share common predicted transcription factor binding motifs, including Sox dimer, Fox, Nfat, and Ap1 motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Group II and Group III elements share many common predicted transcription factor binding motifs, including Sox dimer, Fox, Nfat, and Ap1 motifs previously described for mouse cartilage (Figure 2E,G; Supplementary file 1B; Ohba et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 2E and 2G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "92b8563d-ea5d-4fee-bc7a-05dcf5a7bdb4",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C34",
+      "claim": "An Nkx motif was recovered only for Group II elements.",
+      "claim_type": "EXPLICIT",
+      "source": "An Nkx motif was recovered only for Group II (p=10\u221258, 36% of targets)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "f0d93b8c-38b9-485a-b46c-570958a44668",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C35",
+      "claim": "An Egr motif was enriched for Group II versus Group III elements.",
+      "claim_type": "EXPLICIT",
+      "source": "an Egr motif was enriched for Group II (p=10\u221265, 55% of targets) versus Group III (p=10\u221220, 16% of targets)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figures 2E and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "947c6a9d-9124-46ec-841c-acd9ef85dfeb",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C36",
+      "claim": "A Tead motif was enriched for Group III versus Group II elements.",
+      "claim_type": "EXPLICIT",
+      "source": "and a Tead motif was enriched for Group III (p=10\u221263, 36% of targets) versus Group II (p=10\u221220, 3% of targets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figures 2E and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "f96ae904-40f0-438a-9a0e-4c1e11ed9c75",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C37",
+      "claim": "The majority of chondrocyte-specific elements gain accessibility after pharyngeal arch formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the majority of chondrocyte-specific elements gain accessibility after pharyngeal arch formation and that transcription factor binding motifs change during cartilage differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the temporal analysis of accessibility shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "d8c583ab-03f6-41d2-8b24-67223c10e014",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C38",
+      "claim": "Transcription factor binding motifs change during cartilage differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the majority of chondrocyte-specific elements gain accessibility after pharyngeal arch formation and that transcription factor binding motifs change during cartilage differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the different motif enrichments in Group I, II, and III elements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "6e7b0245-4a05-411f-9f5c-65c08c934ffd",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C39",
+      "claim": "In situ hybridization for foxc1a and foxc1b at 36 hpf showed partial overlap with the pou3f3b>GFP line in the dorsal-intermediate regions of the first and second arches.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization for foxc1a and foxc1b at 36 hpf showed partial overlap with the pou3f3b>GFP line in the dorsal-intermediate regions of the first and second arches (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "a5196271-a1c3-4e9b-93bd-1c3b253fdee4",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C40",
+      "claim": "Reductions of cartilage were observed in the pou3f3b>GFP domain of Foxc1 mutants at 6 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we observed reductions of cartilage in the pou3f3b>GFP domain of mutants at 6 days post-fertilization (dpf), except in the dorsal-most regions (close to the ear) that are pou3f3b>GFP-positive yet foxc1a/foxc1b-negative (Figure 3C,D; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 3C,D and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "e7a1d2f1-c591-47c3-bf89-f15599c7dd06",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C41",
+      "claim": "10% (120/1221) of Group I elements had reduced accessibility in Foxc1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cartilage-associated elements in Foxc1 mutants revealed that 10% (120/1221) of elements that have established peak accessibility by 36 hpf (i.e. Group I) and 41% (636/1556) of elements that increase accessibility between 36 and 48 hpf (i.e. Group II) had reduced accessibility in Foxc1 mutants (Figure 3E, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3E and Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "746916dd-7295-439a-ac18-67b854db951d",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C42",
+      "claim": "41% (636/1556) of Group II elements had reduced accessibility in Foxc1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cartilage-associated elements in Foxc1 mutants revealed that 10% (120/1221) of elements that have established peak accessibility by 36 hpf (i.e. Group I) and 41% (636/1556) of elements that increase accessibility between 36 and 48 hpf (i.e. Group II) had reduced accessibility in Foxc1 mutants (Figure 3E, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3E and Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "4f8b64cc-3a28-4a0e-abcf-fad50b309d6f",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C43",
+      "claim": "Foxa2 and Foxd3 motifs were enriched only in Foxc1-dependent Group I elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas several types of Fox motifs were uncovered in both, a closer analysis revealed enrichment of Foxa2 and Foxd3 motifs only in Foxc1-dependent elements (p=10\u221245, 38% of targets; p=10\u221216, 18% of targets), and a Foxo1 motif only in Foxc1-independent elements (p=10\u221242, 49% of targets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "1f6c85ad-5719-4f47-9a13-86ebf539558b",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C44",
+      "claim": "A Foxo1 motif was enriched only in Foxc1-independent Group I elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas several types of Fox motifs were uncovered in both, a closer analysis revealed enrichment of Foxa2 and Foxd3 motifs only in Foxc1-dependent elements (p=10\u221245, 38% of targets; p=10\u221216, 18% of targets), and a Foxo1 motif only in Foxc1-independent elements (p=10\u221242, 49% of targets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "ec34306b-017a-4919-b0de-ae66a87f60dc",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C45",
+      "claim": "A Foxa1 motif was enriched only in Foxc1-dependent Group II elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly in Group II elements, a Foxa1 motif was enriched only in Foxc1-dependent elements (p=10\u221259, 38% of targets), and Foxh1 and Foxp1 motifs only in Foxc1-independent elements (p=10\u221222, 22% of targets; p=10\u221219, 7% of targets) (Figure 3G, Supplementary file 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "a33e49cd-4abb-4d0e-ac4f-085938f257e1",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C46",
+      "claim": "Foxh1 and Foxp1 motifs were enriched only in Foxc1-independent Group II elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly in Group II elements, a Foxa1 motif was enriched only in Foxc1-dependent elements (p=10\u221259, 38% of targets), and Foxh1 and Foxp1 motifs only in Foxc1-independent elements (p=10\u221222, 22% of targets; p=10\u221219, 7% of targets) (Figure 3G, Supplementary file 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "5f428cd0-4eb3-4bc9-954e-410578734aea",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C47",
+      "claim": "The consensus sequence for Foxc1-bound peaks is nearly identical to Foxa1/2 motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Foxc1 motifs were not in the database used for motif predictions, the selective presence of Foxa1/2 motifs in Foxc1-dependent elements is consistent with previous reports that the consensus sequence for Foxc1-bound peaks is nearly identical to Foxa1/2 motifs (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "aa85808c-2d94-4589-bb1c-1b3eb8129519",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C48",
+      "claim": "33% (207/636) of Foxc1-dependent Group II elements had both Sox and Fox predicted motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 33% (207/636) of Foxc1-dependent Group II elements had both Sox and Fox predicted motifs, only 16% (151/920) of Foxc1-independent Group II elements had both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on motif analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "f0b46c89-0633-4a1d-85e6-1a044b353ed9",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C49",
+      "claim": "Only 16% (151/920) of Foxc1-independent Group II elements had both Sox and Fox predicted motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 33% (207/636) of Foxc1-dependent Group II elements had both Sox and Fox predicted motifs, only 16% (151/920) of Foxc1-independent Group II elements had both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on motif analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "be94b8d9-e30a-4ed1-97f1-3ad60b958237",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C50",
+      "claim": "59% (13/22) of tested Foxc1-dependent Group II elements drove GFP expression in facial chondrocytes at 6 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 59% (13/22) of elements drove GFP expression in facial chondrocytes at 6 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by transgenic data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "55c5fc83-00eb-40e2-9270-fb2ccf1b8155",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C51",
+      "claim": "An element in the first intron of sox10 drove uniform cartilage-specific expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas an element in the first intron of sox10 drove uniform cartilage-specific expression, most elements drove expression in specific sub-regions or particular differentiation stages of cartilage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "1bd04a27-0083-4840-8cc2-7bdf9294c8ad",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C52",
+      "claim": "A distal 5\u2032 element of ucmab drove expression in chondrocytes of multiple joints in the zebrafish head.",
+      "claim_type": "EXPLICIT",
+      "source": "A distal 5\u2032 element of ucmab drove expression in chondrocytes of multiple joints in the zebrafish head",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "00fcc408-e72a-47a9-a71c-7f0ad92a14bf",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C53",
+      "claim": "Three enhancer transgenes with diverse expression patterns (broad sox10, joint-restricted ucmab, and joint-excluded epyc enhancers) all displayed reduced activity specifically in the dorsal cartilage regions affected in Foxc1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that three enhancer transgenes with diverse expression patterns (broad sox10, joint-restricted ucmab, and joint-excluded epyc enhancers) all displayed reduced activity specifically in the dorsal cartilage regions affected in Foxc1 mutants (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "0665af76-f543-44ec-8ca0-bbc23705aa89",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C54",
+      "claim": "Four genes linked to Foxc1-dependent enhancers (sox10, lect1, col9a3, epyc) showed reduced expression in cartilage-forming regions of the dorsal arches of Foxc1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed by in situ hybridization that four genes linked to Foxc1-dependent enhancers (sox10, lect1, col9a3, epyc) showed reduced expression in cartilage-forming regions of the dorsal arches of Foxc1 mutants (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "b3305cf1-b065-46a4-b1af-7495b61dc462",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C55",
+      "claim": "Foxc1 function is required for the accessibility of close to half of chondrocyte enhancers in the zebrafish face.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that Foxc1 function is required for the accessibility of close to half of chondrocyte enhancers in the zebrafish face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the finding that 41% of Group II elements had reduced accessibility in Foxc1 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "d3da103e-91a2-4b3b-bf7e-5be7a8e70033",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C56",
+      "claim": "Foxc1 likely has a similar function in chondrocyte enhancer accessibility throughout the body in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Given expression and function of Foxc1 in diverse cartilages (e.g. limb, rib, tracheal) in mouse, it seems likely that Foxc1 has a similar function in chondrocyte enhancer accessibility throughout the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on known Foxc1 expression patterns in mouse.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "51a079ee-7424-4530-bbe8-37871d7e7601",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C57",
+      "claim": "33% of chondrocyte enhancers have co-enrichment of predicted Sox and Fox binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-enrichment of predicted Sox and Fox binding sites in 33% of chondrocyte enhancers suggests a model in which Foxc1 promotes Sox9 binding to these same enhancers by increasing chromatin accessibility, though this would require direct Sox9 binding studies to validate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on motif analysis of Foxc1-dependent Group II elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "a8501a98-32d5-4141-97bb-19dba17784ad",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C58",
+      "claim": "Foxc1 may promote Sox9 binding to enhancers by increasing chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-enrichment of predicted Sox and Fox binding sites in 33% of chondrocyte enhancers suggests a model in which Foxc1 promotes Sox9 binding to these same enhancers by increasing chromatin accessibility, though this would require direct Sox9 binding studies to validate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the co-enrichment of Sox and Fox motifs in Foxc1-dependent elements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "3effcf8b-81e4-4dc1-bb4f-98cc2ab78cda",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C59",
+      "claim": "Not all Foxc1-dependent enhancers have predicted Fox binding motifs.",
+      "claim_type": "IMPLICIT",
+      "source": "However, not all Foxc1-dependent enhancers have predicted Fox binding motifs, which might suggest indirect regulation of chromatin accessibility in at least some cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that only 33% of Foxc1-dependent Group II elements had both Sox and Fox motifs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "3ecfbe4c-c371-42b6-af8a-760cfa017f44",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C60",
+      "claim": "Many enhancers do not appear to require Foxc1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, many enhancers do not appear to require Foxc1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the finding that 59% of Group II elements were Foxc1-independent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "88c91120-2d0d-4715-be26-7986c5992f16",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C61",
+      "claim": "Other members of the Fox family may compensate for Foxc1, such as Foxf1/2 in the facial midline.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that other members of the Fox family compensate, such as Foxf1/2 in the facial midline (Xu et al., 2018) and Foxa2/3 during later hypertrophic maturation (Ionescu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "e762d4fa-370c-485e-8968-6d9351d47ce9",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C62",
+      "claim": "Foxa2/3 may compensate for Foxc1 during later hypertrophic maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that other members of the Fox family compensate, such as Foxf1/2 in the facial midline (Xu et al., 2018) and Foxa2/3 during later hypertrophic maturation (Ionescu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Ionescu et al., 2012.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "c1cd63b0-5c1e-499c-aaee-296028baeb90",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C63",
+      "claim": "There may be other co-factors that mediate chondrocyte enhancer accessibility and activation, such as Nkx3.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, there may be other co-factors that mediate chondrocyte enhancer accessibility and activation, such as Nkx3.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the enrichment of Nkx motifs in Foxc1-independent elements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "5927eeaf-fe17-4f9c-911b-b490a2a9fa92",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C64",
+      "claim": "Foxc1 lacks a chromatin modifying domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxc1 lacks a chromatin modifying domain (Yoshida et al., 2015) and therefore would need to interact with a co-factor to directly open chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yoshida et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "674ef4fb-7d84-4657-94ea-8989b7d2afd7",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C65",
+      "claim": "Foxc1 would need to interact with a co-factor to directly open chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxc1 lacks a chromatin modifying domain (Yoshida et al., 2015) and therefore would need to interact with a co-factor to directly open chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of chromatin modifying domain in Foxc1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "3fdde706-95da-44c4-81aa-0bce6876b95e",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C66",
+      "claim": "Foxc1 could act to maintain open chromatin, as shown for Foxa1 in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxc1 could also act to maintain open chromatin, as shown for Foxa1 in the liver (Reizel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Reizel et al., 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "0a40fc06-2aef-455d-89a4-87517723a324",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C67",
+      "claim": "Both Foxc1 and Sox9 have expression in many tissues outside the skeletal system.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that both Foxc1 and Sox9 have expression in many tissues outside the skeletal system, it will also be important to determine whether additional factors help to further restrict their activity to chondrocyte enhancers within skeletogenic mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "c7f09143-7351-41dd-a0a9-16c098ac8057",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C68",
+      "claim": "Additional factors may help to restrict Foxc1 and Sox9 activity to chondrocyte enhancers within skeletogenic mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that both Foxc1 and Sox9 have expression in many tissues outside the skeletal system, it will also be important to determine whether additional factors help to further restrict their activity to chondrocyte enhancers within skeletogenic mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "52974125-7c35-43de-945d-2257b80b1285",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C69",
+      "claim": "Chondrocytes were labeled by co-expression of sox10:Dsred and col2a1a:GFP transgenes at 72 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We labeled chondrocytes by co-expression of sox10:Dsred and col2a1a:GFP transgenes (Figure 1A) and isolated double-positive and control double-negative cells by fluorescence-activated cell sorting (FACS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "cf5aa6af-9f2f-4a81-8668-b520bc873bd1",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C70",
+      "claim": "Double-positive and control double-negative cells were isolated by fluorescence-activated cell sorting (FACS).",
+      "claim_type": "EXPLICIT",
+      "source": "We labeled chondrocytes by co-expression of sox10:Dsred and col2a1a:GFP transgenes (Figure 1A) and isolated double-positive and control double-negative cells by fluorescence-activated cell sorting (FACS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "ca99598f-2b37-4fc6-be5a-6fd15db7555f",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C71",
+      "claim": "A modified 'micro' version of ATAC-seq (\u00b5ATACseq) was performed on sorted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We then subjected these cells to a modified 'micro' version of the assay for transposase-accessible chromatin followed by next-generation sequencing (\u00b5ATACseq).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "48d799d0-edc9-44e9-8504-f8d1869abc91",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C72",
+      "claim": "Distal accessible elements were defined as regions excluding those within 1 kb upstream or 0.5 kb downstream of transcription start sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to focus on potential distal cis-regulatory elements, we excluded accessible regions within 1 kb upstream or 0.5 kb downstream of transcription start sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "f1f8526f-7b40-45bc-b895-f9c7f84c1e70",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C73",
+      "claim": "Nfat and Fox motifs were the second and third most co-enriched with Sox motifs in Sox9 ChIP-Seq of mouse chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox9 ChIP-Seq of mouse chondrocytes had previously revealed Nfat and Fox motifs as the second and third most co-enriched with Sox motifs (Ohba et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ohba et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "777febb0-10aa-4550-baa0-882506fce9ad",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C74",
+      "claim": "The Nkx motif might reflect the role of Nkx3.2 in cartilage differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Nkx motif might reflect the role of Nkx3.2 in cartilage differentiation (Provot et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Provot et al., 2006.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "33512a22-9321-460d-a86c-79df7fb1d5e9",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C75",
+      "claim": "The striking motif similarities between zebrafish and mouse indicate strong conservation of the cartilage gene regulatory network between fish and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "These striking motif similarities indicate strong conservation of the cartilage gene regulatory network between fish and mammals, and between the face and rib",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity of motifs shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "d2d4b914-1efd-4c98-bd22-5208d44294c8",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C76",
+      "claim": "The striking motif similarities indicate strong conservation of the cartilage gene regulatory network between the face and rib.",
+      "claim_type": "EXPLICIT",
+      "source": "These striking motif similarities indicate strong conservation of the cartilage gene regulatory network between fish and mammals, and between the face and rib",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of zebrafish facial chondrocytes and mouse rib chondrocytes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "c93ed69d-fa9b-4d76-b6a8-59d0eea6988e",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C77",
+      "claim": "Many of the identified chondrocyte-specific accessible regions in zebrafish likely function as chondrocyte enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "and strongly suggest that many of the identified chondrocyte-specific accessible regions in zebrafish likely function as chondrocyte enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on motif similarities and GO term enrichment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "36c2a993-cca4-4273-ba1c-5f016e0fd72a",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C78",
+      "claim": "GO terms for neural crest cell migration and dorsal/ventral pattern formation likely reflect retention of enhancer accessibility linked to the neural crest origins and later dorsoventral arch patterning of the precursors of facial cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "We also recovered terms for neural crest cell migration and dorsal/ventral pattern formation, likely reflecting retention of enhancer accessibility linked to the neural crest origins and later dorsoventral arch patterning of the precursors of facial cartilage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the GO term results shown in Figure 1E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "cf6b4fda-1308-4a2a-b704-d4cc41ec90d2",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C79",
+      "claim": "Enrichment of Nkx motifs in Group II elements might reflect the role of Nkx3.2 in limiting chondrocyte maturation and promoting joint formation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, enrichment of Nkx motifs in Group II elements might reflect the role of Nkx3.2 in limiting chondrocyte maturation (Provot et al., 2006) and promoting joint formation (Miller et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to Provot et al., 2006 and Miller et al., 2003.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "ca0b0d0c-7713-4bad-a703-1b2ffd6e5262",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C80",
+      "claim": "The preferential enrichment of the Tead motif in Group III elements might reflect the later proliferative expansion of chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "while the preferential enrichment of the Tead motif, which is linked to growth-associated Hippo signaling (Ota and Sasaki, 2008), in Group III elements might reflect the later proliferative expansion of chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Ota and Sasaki, 2008.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "c58ec4d6-4372-4148-9c2d-e693c8cba13d",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C81",
+      "claim": "Cartilages of the upper/dorsal face fail to develop in zebrafish Foxc1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish Foxc1 (foxc1a\u2212/\u2212; foxc1b\u2212/\u2212) mutants, cartilages of the upper/dorsal face fail to develop (Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "be3f4b29-579f-4b24-9257-70596b699c70",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C82",
+      "claim": "pou3f3b>GFP+; sox10:Dsred+ CNCCs were present at 48 hpf in Foxc1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As pou3f3b>GFP+; sox10:Dsred+ CNCCs were present at 48 hpf (Figure 3A,B), we performed \u00b5ATACseq on these cells after FACS from Foxc1 mutants and controls at 36 and 48 hpf.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "63a30171-5472-44f4-bb36-4cdf1e8305e1",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C83",
+      "claim": "79% of accessible regions in dorsal CNCCs and pan-CNCCs at 36 hpf had similar accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the 15,781 accessible regions in dorsal CNCCs (pou3f3b>GFP+; sox10:Dsred+) and pan-CNCCs (fli1a:GFP+; sox10:Dsred+) at 36 hpf revealed 79% with similar accessibility, 11% with greater accessibility in dorsal CNCCs, and 10% with greater accessibility in pan-CNCCs (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "b674cca9-1a21-4d36-813b-f5e33711ba13",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C84",
+      "claim": "72% of accessible regions in dorsal CNCCs and pan-CNCCs at 48 hpf had similar accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 22,323 elements at 48 hpf, 72% were similarly accessible, 10% more accessible in dorsal CNCCs, and 18% more accessible in pan-CNCCs (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "9673e9be-5a78-464b-969e-ec932a84e822",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C85",
+      "claim": "96% of cartilage-specific elements displayed similar accessibility between dorsal- and pan-CNCCs at 36 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the 5,736 regions with specific accessibility in cartilage at 72 hpf revealed high correlation between dorsal- and pan-CNCCs at 36 hpf, with 96% displaying similar accessibility (r = 0.92, Figure 3\u2014figure supplement 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 3A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "f91fdc5a-a03f-46e1-9074-3610eee4adc9",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C86",
+      "claim": "43% of cartilage-specific elements displayed greater accessibility in pan-CNCCs at 48 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "By 48 hpf, however, we observed notable differences between accessibility of cartilage-specific elements, with 43% displaying greater accessibility in pan-CNCCs and only 0.2% displaying greater accessibility in dorsal CNCCs (r = 0.71, Figure 3\u2014figure supplement 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "d5dc6eb4-abb5-4a9a-96cd-5f90c5b61453",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C87",
+      "claim": "The decreased accessibility of cartilage-specific elements in dorsal CNCCs at 48 hpf supports that dorsal chondrocytes develop later than other chondrocytes in the zebrafish face.",
+      "claim_type": "EXPLICIT",
+      "source": "The decreased accessibility of cartilage-specific elements in dorsal CNCCs at 48 hpf supports previous studies that dorsal chondrocytes develop later than other chondrocytes in the zebrafish face (Barske et al., 2016; Schilling and Kimmel, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the accessibility data and supported by citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "bd289951-5e45-4e21-be79-9a9843d3ef43",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C88",
+      "claim": "Foxc1-dependent and Foxc1-independent cartilage elements may be commonly bound by Sox9 but likely differ in co-binding by Foxc1 and additional co-factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that Foxc1-dependent and -independent cartilage elements may be commonly bound by Sox9 but likely differ in co-binding by Foxc1 and additional co-factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the motif analysis showing Sox motifs in both groups but different Fox and other motifs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "fac74f77-1c60-42d8-8b4c-483c2c98f842",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C89",
+      "claim": "The presence of the Nkx motif only in Foxc1-independent elements suggests that it could be an alternative co-factor for Sox9.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the presence of the Nkx motif only in Foxc1-independent elements suggests that it could be an alternative co-factor for Sox9, in line with the known roles for Nkx3.2 in chondrocyte biology (Provot et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on motif analysis and supported by citation to Provot et al., 2006.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "75a8543d-663c-4297-8509-7629ad394ec0",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C90",
+      "claim": "22 Foxc1-dependent Group II elements near 15 different genes were tested in zebrafish transgenic assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested 22 Foxc1-dependent Group II elements near 15 different genes, which included elements linked to genes with known cartilage function (ucmab, matn4, matn1, lect1, epyc, col9a1a, col9a3, sox10, acana, foxa3, mia) and others with unknown cartilage function (si:dkey33i1l.4, gas1b, lefty2, slc35d1a) (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "02d6b808-029f-4117-9143-ace3e666a9a4",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C91",
+      "claim": "Cartilage expression was confirmed in independent stable transgenic lines for all 13 positive elements.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed cartilage expression in independent stable transgenic lines for all 13 positive elements (Figure 4A; Figure 4\u2014figure supplement 1; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "5e32a22c-b48a-4d34-84cc-efe0e6ab8b0c",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C92",
+      "claim": "Most cartilage enhancers drove expression in specific sub-regions or particular differentiation stages of cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas an element in the first intron of sox10 drove uniform cartilage-specific expression, most elements drove expression in specific sub-regions or particular differentiation stages of cartilage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by the diverse expression patterns shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "295e63af-49b2-416f-b87d-a118719fe038",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C93",
+      "claim": "Testing of four Foxc1-independent Group II elements revealed two that drove cartilage expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing of four Foxc1-independent Group II elements revealed two that drove cartilage expression (distal 5\u2032 elements of gas1b and matn4), one that drove cartilage, bone, and ligament expression (distal 5\u2032 element of sparc), and one with no activity (promoter-associated element of sox10) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "cd07511d-36f5-430e-954d-c16130d30792",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C94",
+      "claim": "The majority of tested Foxc1-dependent and -independent Group II elements are equally capable of driving cartilage expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the majority of tested Foxc1-dependent and -independent Group II elements are equally capable of driving cartilage expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transgenic assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "fca646e1-3525-4b4d-95c4-17a2f92e91fb",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C95",
+      "claim": "Two tested Foxc1-independent Group I elements showed arch CNCC expression at 36 hpf and minimal cartilage expression at 6 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested five Foxc1-independent Group I elements and found that two showed arch CNCC expression at 36 hpf and minimal cartilage expression at 6 dpf (prrx1a and emx3 elements), one no expression at 36 hpf and ligament expression at 6 dpf (satb2), and two no expression at either stage (prrx1a, cd248a) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "fe1d9a6e-1099-4b16-a46f-4afd3ea5f783",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C96",
+      "claim": "None of the 16 Group II elements that drove cartilage expression at 6 dpf showed 36 hpf arch CNCC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not observe 36 hpf arch CNCC expression in any of the 16 Group II elements that drove cartilage expression at 6 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on the transgenic assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "3172ce7b-8f5e-4392-b08e-b1e99955b38b",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C97",
+      "claim": "Most Group I elements tested likely represent either neural crest elements in the process of decommissioning or elements prefiguring non-cartilage fates.",
+      "claim_type": "EXPLICIT",
+      "source": "As most of the Group I elements tested had decreased accessibility from 36 to 48 hpf, it seems likely that these elements represent either neural crest elements in the process of decommissioning (e.g. prrx1a and emx3) or elements prefiguring non-cartilage fates (e.g. satb2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the accessibility dynamics and expression patterns of Group I elements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "c0b83a2a-6e70-443a-8c80-1a5e9cf0e7e7",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C98",
+      "claim": "Most cartilage enhancers appear to gain accessibility after 36 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, most cartilage enhancers appear to gain accessibility after 36 hpf, with activity of late-opening cartilage enhancers in diverse locations, indicating that global cartilage expression patterns are achieved in part through the summation of enhancers with more restricted activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the temporal accessibility analysis and transgenic assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "a24490c9-8404-4d0f-a776-03d8c8f53e21",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "claim_id": "C99",
+      "claim": "Global cartilage expression patterns are achieved in part through the summation of enhancers with more restricted activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, most cartilage enhancers appear to gain accessibility after 36 hpf, with activity of late-opening cartilage enhancers in diverse locations, indicating that global cartilage expression patterns are achieved in part through the summation of enhancers with more restricted activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the diverse spatial expression patterns of individual enhancers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bdb31c99-a440-4074-9de8-96e4333da3ba",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "\u03bcATACseq analysis of zebrafish facial chondrocytes at 72 hpf identified 33,679 distal accessible elements, with 5,736 elements over-enriched in chondrocytes. De novo motif analysis revealed enrichment for Sox, Fox, Nfat, Zfx, and Nkx transcription factor binding motifs, with high similarity to mouse chondrocyte motifs. GO analysis linked these elements to cartilage development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 and C69-C72 describe the experimental approach and results from \u03bcATACseq analysis. The methodology is clearly described with appropriate controls (double-negative cells), and the results are presented with specific numbers and statistical support. The validation using the known R2 enhancer (C17) provides internal quality control. The motif and GO analyses are standard bioinformatic approaches appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "17e34cbd-6272-4a87-b765-dd2652dab9e9",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cartilage-associated chromatin accessibility is dynamically established during neural crest cell differentiation, with the majority of chondrocyte-specific elements (94%) gaining accessibility after 36 hpf. Three temporal groups were identified with distinct transcription factor binding motif enrichments: Group I (6%, peak at 36 hpf) enriched for neural crest migration-associated motifs; Group II (48%, increasing 36-48 hpf) and Group III (46%, increasing 48-72 hpf) enriched for cartilage-associated Sox, Fox, and Nfat motifs with stage-specific differences in Nkx, Egr, and Tead motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C28-C30, C37-C38 establish the temporal dynamics of accessibility, while C25-C27, C31-C36 characterize the motif enrichments in each group. The data are internally consistent, with clear temporal progression shown in Figure 2B and motif analysis in Figures 2C-G. The percentages sum correctly (6% + 48% + 46% = 100%), and the biological interpretation linking Group I to neural crest migration and Groups II/III to chondrogenesis is well-supported by the motif and GO analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "cf5ce3b9-a8e5-452c-9162-311554875753",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Foxc1 double mutants, 10% of Group I elements and 41% of Group II elements showed reduced chromatin accessibility in dorsal CNCCs. The Foxc1 expression domain overlaps with pou3f3b>GFP+ dorsal CNCCs, and cartilage reductions were observed specifically in this domain at 6 dpf. Comparison of dorsal versus pan-CNCCs revealed that cartilage-specific elements show decreased accessibility in dorsal CNCCs at 48 hpf, consistent with delayed dorsal chondrocyte development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41-C42 present the key quantitative findings on accessibility changes in Foxc1 mutants, supported by \u03bcATACseq data in Figures 3E and 3\u2014figure supplement 4. Claims C39-C40, C82-C87 provide essential context about the spatial expression domain and phenotype. The experimental design appropriately uses the pou3f3b>GFP line to isolate the affected cell population, and the correlation between accessibility changes and cartilage loss is well-documented. The comparison between dorsal and pan-CNCCs (C83-C87) provides important developmental context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Foxc1-dependent and Foxc1-independent elements show distinct transcription factor motif enrichments. Foxc1-dependent Group I elements are enriched for Foxa2 and Foxd3 motifs, while Foxc1-independent Group I elements are enriched for Foxo1 motifs. In Group II, Foxc1-dependent elements are enriched for Foxa1 motifs (consistent with Foxc1 binding specificity), while Foxc1-independent elements are enriched for Foxh1, Foxp1, and Nkx motifs. 33% of Foxc1-dependent Group II elements contain both Sox and Fox motifs versus 16% of Foxc1-independent elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 present motif analysis results with specific p-values and percentages, shown in Figures 3F-G. The differential motif enrichment between Foxc1-dependent and -independent elements is clearly demonstrated. Claim C47 appropriately cites prior work (Wang et al., 2016) to explain why Foxa1/2 motifs serve as proxies for Foxc1 binding. Claims C88-C89 provide reasonable interpretations of these findings, suggesting differential co-factor usage. The statistical support is strong with highly significant p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transgenic reporter assays validated that 59% (13/22) of tested Foxc1-dependent Group II elements function as cartilage enhancers with region- and stage-specific activity patterns. Most enhancers drove expression in specific cartilage sub-regions or differentiation stages rather than uniform expression. Three enhancers with diverse patterns (sox10, ucmab, epyc) all showed reduced activity in dorsal cartilage regions of Foxc1 mutants. Testing of Foxc1-independent Group II elements revealed similar cartilage-driving capability (2/4 elements).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C50-C54, C90-C94 describe the transgenic validation experiments shown in Figure 4. The 59% success rate (13/22) is reasonable for enhancer prediction from accessibility data. The spatial specificity of enhancer activity (C51-C52, C92) is well-documented with confocal images. The key validation that enhancers show reduced activity in Foxc1 mutants (C53-C54) directly links accessibility to function. The comparison with Foxc1-independent elements (C93-C94) provides an important control showing that accessibility changes don't simply reflect general cartilage competence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "edd91f84-e70b-4b5b-b4d9-7da5363ab006",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Foxc1 promotes chondrogenesis in the zebrafish face by establishing chromatin accessibility at cartilage-associated gene enhancers. Foxc1 function is required for accessibility of close to half (41%) of chondrocyte enhancers. The co-enrichment of Sox and Fox binding sites in 33% of Foxc1-dependent enhancers suggests a model where Foxc1 promotes Sox9 binding by increasing chromatin accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6 and C55 represent the main conclusions, which are well-supported by the accessibility and transgenic data (C4, C41-C42, C50-C54). However, claim C58 proposes a mechanistic model that Foxc1 promotes Sox9 binding through increased accessibility. The authors themselves acknowledge this 'would require direct Sox9 binding studies to validate' (C58). Without Sox9 ChIP-seq data in wild-type versus Foxc1 mutants, the proposed mechanism remains speculative. The correlation between Foxc1-dependent accessibility and Sox/Fox motif co-enrichment (C57) is suggestive but not definitive proof of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "3439e799-9685-4a33-ad16-a0624523f43b",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Group I elements tested in transgenic assays showed arch CNCC expression at 36 hpf but minimal cartilage expression at 6 dpf, consistent with their role in neural crest migration rather than cartilage differentiation. In contrast, Group II cartilage enhancers showed no 36 hpf expression but drove cartilage expression at 6 dpf. This indicates that most cartilage enhancers gain accessibility after 36 hpf, and global cartilage expression patterns are achieved through summation of enhancers with restricted spatial activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C99 describe transgenic validation of Group I versus Group II elements shown in Figure 4\u2014figure supplement 2. The temporal and spatial specificity differences between groups are clearly demonstrated. The interpretation that Group I elements represent decommissioning neural crest enhancers (C97) is reasonable given their decreasing accessibility and early expression patterns. The conclusion about modular enhancer architecture (C99) is well-supported by the diverse spatial patterns observed for individual Group II enhancers (C51-C52, C92).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "639126a4-c51e-4a55-ae58-77fbc0e4e5eb",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Motif sequences for Sox, Fox, and Nfat are highly similar between zebrafish facial chondrocytes and mouse rib chondrocytes, indicating strong conservation of the cartilage gene regulatory network between fish and mammals, and between facial and axial cartilages. This suggests that identified chondrocyte-specific accessible regions in zebrafish likely function as chondrocyte enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 draw comparative conclusions based on motif similarity data (C19) shown in Figure 1\u2014figure supplement 1B and prior mouse data (C73). The comparison is appropriate despite differences in experimental approach (whole accessibility in zebrafish vs. Sox9 ChIP-seq in mouse). The conservation argument is strengthened by the functional validation of enhancers in transgenic assays (C50-C54). The inference that accessible regions function as enhancers (C77) is well-supported by both the motif conservation and the 59% validation rate in transgenic assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "a1975c7c-5207-4cc2-bf3b-3d58ae0ff84d",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that Foxc1 likely has similar functions in chondrocyte enhancer accessibility throughout the body in mouse, that other Fox family members (Foxf1/2, Foxa2/3) or co-factors (Nkx3.2) may compensate for Foxc1 in some contexts, that Foxc1 could act to maintain rather than establish open chromatin, and that additional factors may restrict Foxc1/Sox9 activity to chondrocyte enhancers within skeletogenic mesenchyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56, C61-C63, C66, C68 are explicitly speculative statements about future research directions and alternative mechanisms. While these speculations are reasonable given the data (e.g., C61-C62 cite relevant prior work; C63 is motivated by Nkx motif enrichment in Foxc1-independent elements), they are not tested in this study. These represent hypotheses for future investigation rather than supported conclusions. The speculation about Foxc1 maintaining versus establishing accessibility (C66) is particularly important mechanistically but completely untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes relevant background knowledge from prior literature, including Sox9's essential role in chondrogenesis across vertebrates but dispensability for chromatin accessibility, Fox transcription factors' roles in establishing chromatin accessibility in other lineages, Foxc1's requirement for cartilage development in mouse and zebrafish, developmental timing of zebrafish CNCCs, and molecular properties of Foxc1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C15, C21-C24, C64-C65, C67 represent background knowledge appropriately cited from prior literature. These claims establish the rationale for the study and provide essential context. The citations appear appropriate and the claims are consistent with established knowledge in the field. Claim C10 (Sox9 dispensability for accessibility) is particularly important as it motivates the search for other factors like Foxc1. Claim C64 (Foxc1 lacks chromatin modifying domain) is relevant for mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "4e80bd9f-1225-469e-961d-7f06d1f390d1",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Not all Foxc1-dependent enhancers have predicted Fox binding motifs (only 33% have both Sox and Fox motifs), suggesting possible indirect regulation in some cases. Additionally, 59% of Group II elements do not require Foxc1 activity, indicating alternative regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 acknowledge important limitations and complexities in the data. C59 correctly notes that only 33% of Foxc1-dependent elements have both Sox and Fox motifs (from C48), suggesting indirect mechanisms may operate. C60 accurately reflects that the majority (59%) of Group II elements are Foxc1-independent (from C42: 920/1556 = 59%). These observations are important for a balanced interpretation and appropriately temper the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    },
+    {
+      "id": "bb5da6df-1a10-4d95-91a2-78e4a6ecc206",
+      "content_id": "4cf47bf4-c88b-4012-8a08-acb4eafebd9c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors interpret that GO terms for neural crest migration and dorsal/ventral patterning in chondrocyte-enriched elements reflect retention of enhancer accessibility from earlier developmental stages, that Nkx motif enrichment in Group II may reflect Nkx3.2's role in limiting maturation and promoting joint formation, and that Tead motif enrichment in Group III may reflect later proliferative expansion via Hippo signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 provide biological interpretations of the motif and GO analysis results. C78 reasonably interprets the presence of neural crest-associated GO terms (C20, C32) as reflecting developmental history. C79 and C80 connect specific motif enrichments (C34, C36) to known biological functions of the corresponding transcription factors, appropriately citing relevant literature. These interpretations are plausible and help explain the temporal dynamics observed, though they remain correlative rather than mechanistically proven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:56:34.736584Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "df62de66-df4a-418b-9b15-e379826478c5",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "70396a7e-0f0e-4e49-ae1b-208da550c301",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "0f8477f6-76d4-4060-8432-dc9547c45d25",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "4a9b49ec-e8dc-4b56-b967-c330c0f79fd1",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "4f687193-4b2c-423b-aff3-6f84f0a4a655",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "52974125-7c35-43de-945d-2257b80b1285",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "cf5aa6af-9f2f-4a81-8668-b520bc873bd1",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "ca99598f-2b37-4fc6-be5a-6fd15db7555f",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "48d799d0-edc9-44e9-8504-f8d1869abc91",
+      "result_id": "bdb31c99-a440-4074-9de8-96e4333da3ba"
+    },
+    {
+      "claim_id": "9c1e4488-7f23-4a82-ae78-b00067f90220",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "cf53bc81-b933-4468-af41-9aef4f1d1bf2",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "86534260-baf8-45e7-a665-b82ef01a3f9e",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "34c62193-22cd-4ef8-9ca4-74a84e6ca302",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "f96ae904-40f0-438a-9a0e-4c1e11ed9c75",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "d8c583ab-03f6-41d2-8b24-67223c10e014",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "0b7ce2e0-f44f-4a27-be79-67ba6c229367",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "4a0f8662-acc8-46e0-b419-95ed8c911788",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "8ebdc5c6-5ed3-45c6-bdde-318f635bc209",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "afe5000c-f61e-441e-b278-33f8dc0b04ca",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "417cf08c-8585-4e7f-8b11-677ab85e86f2",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "5f90786b-bb66-41ac-98db-028e90566688",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "92b8563d-ea5d-4fee-bc7a-05dcf5a7bdb4",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "f0d93b8c-38b9-485a-b46c-570958a44668",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "947c6a9d-9124-46ec-841c-acd9ef85dfeb",
+      "result_id": "17e34cbd-6272-4a87-b765-dd2652dab9e9"
+    },
+    {
+      "claim_id": "8d137b9f-4f37-413b-ae06-b038af5952b3",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "e7a1d2f1-c591-47c3-bf89-f15599c7dd06",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "746916dd-7295-439a-ac18-67b854db951d",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "6e7b0245-4a05-411f-9f5c-65c08c934ffd",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "a5196271-a1c3-4e9b-93bd-1c3b253fdee4",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "be3f4b29-579f-4b24-9257-70596b699c70",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "63a30171-5472-44f4-bb36-4cdf1e8305e1",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "b674cca9-1a21-4d36-813b-f5e33711ba13",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "9673e9be-5a78-464b-969e-ec932a84e822",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "f91fdc5a-a03f-46e1-9074-3610eee4adc9",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "d5dc6eb4-abb5-4a9a-96cd-5f90c5b61453",
+      "result_id": "cf5ce3b9-a8e5-452c-9162-311554875753"
+    },
+    {
+      "claim_id": "4f8b64cc-3a28-4a0e-abcf-fad50b309d6f",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "1f6c85ad-5719-4f47-9a13-86ebf539558b",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "ec34306b-017a-4919-b0de-ae66a87f60dc",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "a33e49cd-4abb-4d0e-ac4f-085938f257e1",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "5f428cd0-4eb3-4bc9-954e-410578734aea",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "aa85808c-2d94-4589-bb1c-1b3eb8129519",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "f0b46c89-0633-4a1d-85e6-1a044b353ed9",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "bd289951-5e45-4e21-be79-9a9843d3ef43",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "fac74f77-1c60-42d8-8b4c-483c2c98f842",
+      "result_id": "c0c8730a-ca45-42b5-9706-aa8a8acebd73"
+    },
+    {
+      "claim_id": "2270506e-508a-4a52-bbd6-b98ba2c60f82",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "be94b8d9-e30a-4ed1-97f1-3ad60b958237",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "55c5fc83-00eb-40e2-9270-fb2ccf1b8155",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "1bd04a27-0083-4840-8cc2-7bdf9294c8ad",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "00fcc408-e72a-47a9-a71c-7f0ad92a14bf",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "0665af76-f543-44ec-8ca0-bbc23705aa89",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "75a8543d-663c-4297-8509-7629ad394ec0",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "02d6b808-029f-4117-9143-ace3e666a9a4",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "5e32a22c-b48a-4d34-84cc-efe0e6ab8b0c",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "295e63af-49b2-416f-b87d-a118719fe038",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "cd07511d-36f5-430e-954d-c16130d30792",
+      "result_id": "a6418cfe-9570-4600-b219-d74bb0b6a5aa"
+    },
+    {
+      "claim_id": "d321836c-dc53-4a5c-8c1b-7ef60961bb0c",
+      "result_id": "edd91f84-e70b-4b5b-b4d9-7da5363ab006"
+    },
+    {
+      "claim_id": "b3305cf1-b065-46a4-b1af-7495b61dc462",
+      "result_id": "edd91f84-e70b-4b5b-b4d9-7da5363ab006"
+    },
+    {
+      "claim_id": "51a079ee-7424-4530-bbe8-37871d7e7601",
+      "result_id": "edd91f84-e70b-4b5b-b4d9-7da5363ab006"
+    },
+    {
+      "claim_id": "a8501a98-32d5-4141-97bb-19dba17784ad",
+      "result_id": "edd91f84-e70b-4b5b-b4d9-7da5363ab006"
+    },
+    {
+      "claim_id": "fca646e1-3525-4b4d-95c4-17a2f92e91fb",
+      "result_id": "3439e799-9685-4a33-ad16-a0624523f43b"
+    },
+    {
+      "claim_id": "fe1d9a6e-1099-4b16-a46f-4afd3ea5f783",
+      "result_id": "3439e799-9685-4a33-ad16-a0624523f43b"
+    },
+    {
+      "claim_id": "3172ce7b-8f5e-4392-b08e-b1e99955b38b",
+      "result_id": "3439e799-9685-4a33-ad16-a0624523f43b"
+    },
+    {
+      "claim_id": "c0b83a2a-6e70-443a-8c80-1a5e9cf0e7e7",
+      "result_id": "3439e799-9685-4a33-ad16-a0624523f43b"
+    },
+    {
+      "claim_id": "a24490c9-8404-4d0f-a776-03d8c8f53e21",
+      "result_id": "3439e799-9685-4a33-ad16-a0624523f43b"
+    },
+    {
+      "claim_id": "33512a22-9321-460d-a86c-79df7fb1d5e9",
+      "result_id": "639126a4-c51e-4a55-ae58-77fbc0e4e5eb"
+    },
+    {
+      "claim_id": "d2d4b914-1efd-4c98-bd22-5208d44294c8",
+      "result_id": "639126a4-c51e-4a55-ae58-77fbc0e4e5eb"
+    },
+    {
+      "claim_id": "c93ed69d-fa9b-4d76-b6a8-59d0eea6988e",
+      "result_id": "639126a4-c51e-4a55-ae58-77fbc0e4e5eb"
+    },
+    {
+      "claim_id": "4a9b49ec-e8dc-4b56-b967-c330c0f79fd1",
+      "result_id": "639126a4-c51e-4a55-ae58-77fbc0e4e5eb"
+    },
+    {
+      "claim_id": "f1f8526f-7b40-45bc-b895-f9c7f84c1e70",
+      "result_id": "639126a4-c51e-4a55-ae58-77fbc0e4e5eb"
+    },
+    {
+      "claim_id": "d3da103e-91a2-4b3b-bf7e-5be7a8e70033",
+      "result_id": "a1975c7c-5207-4cc2-bf3b-3d58ae0ff84d"
+    },
+    {
+      "claim_id": "88c91120-2d0d-4715-be26-7986c5992f16",
+      "result_id": "a1975c7c-5207-4cc2-bf3b-3d58ae0ff84d"
+    },
+    {
+      "claim_id": "e762d4fa-370c-485e-8968-6d9351d47ce9",
+      "result_id": "a1975c7c-5207-4cc2-bf3b-3d58ae0ff84d"
+    },
+    {
+      "claim_id": "c1cd63b0-5c1e-499c-aaee-296028baeb90",
+      "result_id": "a1975c7c-5207-4cc2-bf3b-3d58ae0ff84d"
+    },
+    {
+      "claim_id": "3fdde706-95da-44c4-81aa-0bce6876b95e",
+      "result_id": "a1975c7c-5207-4cc2-bf3b-3d58ae0ff84d"
+    },
+    {
+      "claim_id": "c7f09143-7351-41dd-a0a9-16c098ac8057",
+      "result_id": "a1975c7c-5207-4cc2-bf3b-3d58ae0ff84d"
+    },
+    {
+      "claim_id": "8cca537c-64d6-4dce-a541-689731290e09",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "d23cadac-df33-49b9-816f-f19d4473822c",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "40eb685b-2dfd-463e-b0ea-5fb5c034a7b0",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "de0628f8-6419-4ca4-9ead-2df611c2e531",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "35045872-805c-49a3-8836-7e7ae75f12ca",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "ac7a606c-c8a6-41e4-a55e-f81405fffcad",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "4655213b-8cae-4e8e-9e6c-b9ef715137b9",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "1549a21d-dc2e-4b5c-ab6a-f98e6c3f8d87",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "a83c1257-c249-4837-9f77-4915e54a5b75",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "c0e0ec2b-327b-47fb-9dec-0a702b333b35",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "b03dc2e6-a6c6-4c59-9bcf-ba4ebb476bd7",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "b5fe3f80-c873-45cc-b0cb-2555dcba9627",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "fbc02a7d-35b8-4581-8149-4f1d8b09fa5a",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "0b857941-0136-4bed-8db4-2ec5dad9c691",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "5927eeaf-fe17-4f9c-911b-b490a2a9fa92",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "674ef4fb-7d84-4657-94ea-8989b7d2afd7",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "0a40fc06-2aef-455d-89a4-87517723a324",
+      "result_id": "6d4fb1c1-e34c-4240-8fca-cf603f9e5434"
+    },
+    {
+      "claim_id": "3effcf8b-81e4-4dc1-bb4f-98cc2ab78cda",
+      "result_id": "4e80bd9f-1225-469e-961d-7f06d1f390d1"
+    },
+    {
+      "claim_id": "3ecfbe4c-c371-42b6-af8a-760cfa017f44",
+      "result_id": "4e80bd9f-1225-469e-961d-7f06d1f390d1"
+    },
+    {
+      "claim_id": "36c2a993-cca4-4273-ba1c-5f016e0fd72a",
+      "result_id": "bb5da6df-1a10-4d95-91a2-78e4a6ecc206"
+    },
+    {
+      "claim_id": "cf6b4fda-1308-4a2a-b704-d4cc41ec90d2",
+      "result_id": "bb5da6df-1a10-4d95-91a2-78e4a6ecc206"
+    },
+    {
+      "claim_id": "ca0b0d0c-7713-4bad-a703-1b2ffd6e5262",
+      "result_id": "bb5da6df-1a10-4d95-91a2-78e4a6ecc206"
+    }
+  ],
+  "comparisons": []
+}

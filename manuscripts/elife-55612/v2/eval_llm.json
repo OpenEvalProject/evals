@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C60"
+    ],
+    "result": "H3K9me3-dependent heterochromatin establishment begins at or before early stage 4 (nuclear cycle 10/11) in D. miranda embryos, earlier than previously observed by cytology. The number of H3K9me3 peaks increases sharply from stage 3 (n=2202) to early stage 4 (n=51,202), with enrichment observed around pericentric regions and subsequent increases through stage 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C52-C54, and C60 are well-supported by ChIP-seq data showing clear H3K9me3 enrichment at early stage 4 and peak calling analysis (Figure 2A-B). The interpretation that heterochromatin establishment starts at or before stage 4 is consistent with the observed enrichment patterns. The data directly contradict prior cytological observations (C38-C39) that placed heterochromatin appearance at late stage 4/cell cycle 13, demonstrating the higher sensitivity of ChIP-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C65"
+    ],
+    "result": "H3K9me3 nucleation sites appear as early as stage 3 over transposable elements and progressively broaden across development, consistent with spreading to neighboring nucleosomes. Nearly 60% of stage 7 peaks already show enrichment at early stage 4, and an additional 27% show enrichment at stage 3. Peak sizes broaden and become less sharp as development progresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C55-C59, and C65 are strongly supported by ChIP-seq data showing early nucleation and progressive broadening (Figures 2C-E, 3B-C). The interpretation of spreading to neighboring nucleosomes is reasonable given the observed broadening pattern, though direct evidence of nucleosome-by-nucleosome spreading is not provided. The quantitative data on peak overlap across stages (C58-C59) is clearly presented in Figure 2E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Stage 3 peaks (n=997 after filtering) show sharp and narrow enrichment (median width 125 bp) around their center, consistent with single nucleosomes, and differ strikingly from peaks at later stages. Control ChIP experiments against H3, H3K4me3, and H4K16ac were used to filter out 1205 non-specific peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C66 are well-supported by data in Figures 2B-C and 3A. The control experiments (C63) strengthen confidence in the specificity of stage 3 peaks. The interpretation that 125 bp peaks represent single nucleosomes (C66) is reasonable given the known ~147 bp DNA wrapping around nucleosomes, though the claim acknowledges this is a suggestion rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113"
+    ],
+    "result": "Early nucleation sites are restricted to specific regions of a small number of recently active retrotransposon families, often appearing over promoter and 5' regions of LTR retrotransposons (e.g., TRAM at 0-300 bp). Only 35 of 235 TE entries (14.8%) overlap with stage 3 peaks, while 189 (80.3%) overlap with early stage 4 peaks. Stage 3 peaks are scattered across the genome rather than concentrated in pericentric regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C67-C69, C73-C74, C103-C105, C107-C110, and C113 are strongly supported by detailed analysis of H3K9me3 enrichment patterns on specific TEs (Figures 5A-G, 3E-F). The data clearly show restricted nucleation at specific TE positions at stage 3 followed by broader enrichment at stage 4. The genomic distribution analysis (Figure 3F) confirms the unexpected scattered distribution of stage 3 peaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75"
+    ],
+    "result": "25.6% (n=256) of stage 3 peaks appear to become depleted of H3K9me3 enrichment over time (temporary peaks). These temporary peaks predominantly overlap microsatellites (71.4%) rather than TEs (3.1%) and are found outside pericentromeric regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 and C75 are supported by data in Figures 3B, D-F, but the authors themselves note uncertainty about whether these represent failed nucleation sites or residual phantom peaks after filtering (C70). The distinct genomic features of temporary peaks (microsatellite enrichment, non-pericentric location) suggest they may be biologically distinct, but without functional validation or additional controls, the interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Early nucleating TEs are strongly associated with abundant maternal piRNAs and show early zygotic transcription. Persistent stage 3 peaks have significantly higher piRNA mapping (median RPM=15.55) compared to the rest of the genome (1.48) and pericentromeric regions without peaks (10.36), while temporary stage 3 peaks have almost no piRNA mapping (median RPM=0). Similar patterns are observed for stage 4 peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C76-C81, C98-C101, and C114-C116 are well-supported by piRNA-seq and RNA-seq data (Figures 3G, 4H, 6A-D). Statistical testing with Wilcoxon rank sum tests shows significant differences (p<2.2e-16). The association between piRNA abundance and early nucleation is clear, though the mechanistic interpretation (C80, C116) is inferential. The RNA-seq data showing early zygotic transcription (C11) is consistent with co-transcriptional silencing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The results support a model of piRNA-associated co-transcriptional silencing but also suggest additional mechanisms for site-restricted H3K9me3 nucleation. Regions with abundant piRNA mapping on TEs do not necessarily correspond to positions of stage 3 peaks, and the amount of piRNA mapping shows little-to-no correlation with H3K9me3 enrichment at any given position along TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C123-C126 are supported by the lack of spatial correlation between piRNA mapping and H3K9me3 enrichment positions (Figures 5D, G, J; 6E; Figure 6\u2014supplement 1). While piRNA abundance at the TE level correlates with early nucleation, the positional mismatch argues against a simple targeting model and supports the need for additional mechanisms. This is a reasonable interpretation of the data, though the specific alternative mechanisms remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The number of H3K9me3 peaks increases drastically from ~1000 at stage 3 to 52,607 at early stage 4. Early stage 4 peaks can be divided into 16,630 'old' peaks (showing enrichment at stage 3) and 35,977 'new' peaks (no prior enrichment). Old peaks are significantly wider (847 bp vs 378 bp) and show secondary peaks indicating spreading to adjacent nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C93 are well-supported by peak calling analysis and characterization (Figures 4A-D, Figure 4\u2014supplements 1-2). The statistical comparison of peak widths (C88) includes appropriate testing (Wilcoxon rank sum test, p<2.2e-16). The observation of secondary peaks around old peaks (C89) and the interpretation of spreading is reasonable, though the mechanism is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Both old and new early stage 4 peaks show decreasing chromatin accessibility over development as measured by ATAC-seq, with old peaks being significantly less accessible across all stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by ATAC-seq data (Figure 4E). The inverse relationship between H3K9me3 enrichment and chromatin accessibility is expected and validates the functional consequence of heterochromatin formation. The statistical significance of differences between old and new peaks is stated but specific p-values are not provided in the claim text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Most stage 4 peaks (84.2%) overlap with annotated TEs, and 82.6% are concentrated at the pericentromere and repeat-rich Y chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by overlap analysis (Figures 4F-G). This represents the expected localization of heterochromatin to repetitive sequences and validates the biological relevance of the identified peaks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Many windows with stage 4 peaks have no piRNAs mapping, and many windows without peaks have high piRNAs mapping, suggesting additional signals beyond piRNAs are at play.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by the distribution shown in Figure 4H. This observation reinforces the conclusion that piRNA abundance alone does not fully explain H3K9me3 targeting patterns, supporting the need for additional mechanisms (C13, C126).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Three TE variants (CR1-1, LOA-3, and Gypsy18) have the most early stage 4 peaks but few stage 3 peaks, suggesting some TEs nucleate heterochromatin earlier than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by data in Figure 5A showing differential timing of nucleation across TE families. This observation is important for understanding the heterogeneity in heterochromatin establishment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The 5' region of TRAM continues to increase in H3K9me3 over development. Nearly all 748 TRAM copies show elevated H3K9me3 enrichment at their 5' region even though only 27 peaks were called there, indicating peak calling substantially underestimates nucleation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by analysis of TRAM insertions (Figure 5E, G). The observation that peak calling is conservative (C112) is important for interpreting the quantitative results and suggests the actual number of nucleation sites is higher than reported peak counts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "piRNA abundance is much more strongly and significantly correlated with H3K9me3 enrichment of TEs at later developmental stages, which could indicate piRNAs facilitate spreading and maturation of H3K9me3-dependent silencing after early nucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is supported by correlation analysis (Figure 6B). The interpretation that piRNAs facilitate spreading is speculative but reasonable given the data. The correlation strengthening over time is clearly shown, though the mechanistic interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "TEs with stage 3 peaks are significantly lower in transcript abundance across all stages but show the highest and earliest increase in transcript abundance. Stage 3 nucleating TEs show a 1.41-fold increase in RNA abundance from stage 2 to stage 4, while most TEs remain unchanged (0.97-fold). TEs with stage 4 peaks show evidence of zygotic transcription between stages 4 and 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by RNA-seq analysis (Figure 6C-D). The data show early nucleating TEs are among the first to be zygotically transcribed, consistent with co-transcriptional silencing models. The fold-change values are specific and appear to be derived from the data, though the statistical significance of the 1.41-fold change is not explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The 5' LTR of TRAM is highly enriched for H3K9me3. 5' truncated TRAM copies lacking the 5' LTR are significantly less enriched for H3K9me3 (1.36-fold difference at stage 7) and tend to be more accessible by ATAC-seq. 3' truncated copies with intact 5' LTR show no diminished enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 are supported by comparison of full-length and truncated TRAM insertions (Figure 7A-D). This provides functional evidence for the importance of 5' nucleation sites. However, the authors note the 1.36-fold difference is likely an underestimate due to cross-mapping between copies. The ATAC-seq differences are marginally significant or insignificant (C131), which weakens but does not invalidate the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The amount of piRNA mapping to TEs is significantly anti-correlated with maternally deposited transcript abundance (r=-0.54, p<2.2e-16). TEs with stage 3 nucleation are significantly overrepresented with lowly expressing TEs (p=1.582e-08) and remain lowly expressed as zygotic transcription increases, indicating early nucleating TEs are among the most repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by correlation and expression analysis (Figure 6C, F). The statistical tests are appropriate and significant. The interpretation that early nucleating TEs are among the most repressed (C135) is reasonable given the data, though it is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Early nucleating TEs are significantly more abundant in both male and female D. miranda genomes. The neo-Y has on average 1.79-fold more early nucleating TEs than the rest of the genome, indicating these TEs have been recently active in the D. miranda lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by copy number analysis (Figure 8A-B). The enrichment on the neo-Y, which formed 1.5 million years ago, provides strong evidence for recent activity. This connects the molecular findings to evolutionary dynamics and explains why these TEs are subject to robust silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "H3K9me3 and H3K9me2 enrichment profiles are very similar and highly correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 is supported by comparison of H3K9me3 and H3K9me2 ChIP-seq from the same embryos (Figure 1\u2014supplement 1). This validates the use of H3K9me3 as a marker for heterochromatin in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C140"
+    ],
+    "result": "Background claims about heterochromatin function, H3K9me3 biology, piRNA pathways, and D. miranda genome characteristics based on established knowledge and cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C42, and C140 represent established knowledge from the literature and are appropriately cited. These provide necessary context for interpreting the novel findings. The citations appear appropriate, though detailed verification of each cited claim is beyond the scope of this evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The D. miranda genome assembly has near end-to-end assemblies including ~30 Mb of pericentromeric heterochromatin and >100 Mb of the neo-Y chromosome assembled into two massive contigs (53.8 and 37.2 Mb). The genome has few simple satellites, allowing ChIP-seq mapping of heterochromatic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 describe the D. miranda genome assembly and are supported by citations to prior work (Mahajan et al., 2018; Wei et al., 2018, 2020) and Figure 1C-D. The quality of the genome assembly is crucial for the validity of the ChIP-seq mapping, and these claims establish that D. miranda is an appropriate system for this study.",
+    "result_type": "MINOR"
+  }
+]

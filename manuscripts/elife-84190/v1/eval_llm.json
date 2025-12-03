@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C34"
+    ],
+    "result": "Greater mouse-eared bats employ two foraging strategies with similar nightly prey captures (25 aerial, 29 ground insects per bat), but with substantially different success rates: 76% for aerial hawking versus 30% for ground gleaning. Attack rates are higher for ground prey (35s between captures) compared to aerial prey (51s between attacks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17, C18, and C34 are well-supported by biologging data from 34 bats with statistical analysis (GLMM, LMM) showing significant differences in success ratios and attack rates between strategies. The data are presented with appropriate statistical tests (p-values reported) and visualized in Figure 1D-G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C41"
+    ],
+    "result": "Ground prey are substantially larger than aerial prey (2.5-20 times by body mass, 20mm vs 7mm length), requiring 3 times more mastication sounds, and despite lower capture success, provide 85% of nightly energy intake due to their larger size and higher nutritional content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C24, C25, C26, and C41 are supported by DNA metabarcoding data (N=54 bats), body length measurements, length-weight regressions, and mastication sound analysis. The 85% energy contribution calculation integrates multiple data sources (prey size, success ratios, caloric values from literature) with appropriate methodology described in Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C7"
+    ],
+    "result": "Gleaning provides 2.3-14 times higher prey profitability (7.4 J/s) compared to aerial hawking (0.5-3.3 J/s), establishing gleaning as a high risk-high gain primary foraging strategy despite lower success rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, C32, and C7 are supported by profitability calculations combining success ratios, search/handling times, and prey body mass estimates (Figure 3F). The profitability metric appropriately integrates multiple measured parameters, though it relies on assumptions about energy expenditure being proportional to time between attacks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C8"
+    ],
+    "result": "Bats tagged on the same night use similar foraging strategies, suggesting environmental factors (weather, ground conditions) influence strategy choice. On nights with more aerial captures, gleaning attack intervals increased by 35s and strategy switching was more frequent, indicating bats switch to aerial hunting when environmental changes reduce gleaning profitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C48, C49, C51, C52, and C8 are supported by statistical analysis (LMM, GLMM) showing night of tagging explains foraging strategy ratios (p<0.01). However, the environmental mechanism is inferred rather than directly measured\u2014actual weather data or prey availability measurements are not provided, limiting causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Gleaning success is habitat-dependent (48% in open fields vs 12% in forests), while aerial hawking success remains consistently high (~76%) regardless of habitat. Bats attacked more prey per bout in fields (26 vs 15 attacks/bout) but performed more foraging bouts in forests (15 vs 8 bouts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C45, C46, and C47 are supported by GPS-tagged bat data (N=7) with statistical analysis (LMM) showing habitat effects on gleaning but not hawking (Figure 2, Supplementary file 1). The sample size is relatively small for GPS-tagged bats, but the statistical approach is appropriate and results are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Bats ingested 60.2-74.9 kJ/night (depending on aerial prey mass estimates), assimilating 30-61 kJ/night (50-82% assimilation rates). The estimated intake (61.4 kJ/night at 82% assimilation) matches predicted field metabolic rate (65.5 kJ/day) from allometric scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C36-C38 integrate prey capture data, body mass estimates, and literature-derived caloric values and assimilation rates. The energy budget calculation is methodologically sound, though it relies on multiple assumptions (assimilation rates from other species, caloric values from literature, prey mass estimates). The match to predicted FMR provides validation, but uncertainty ranges are large.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C43",
+      "C44"
+    ],
+    "result": "Nearly half (47%) of aerial prey captures occurred during commuting rather than dedicated foraging bouts, indicating aerial hawking is a flexible strategy efficient enough to use opportunistically during travel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C43, and C44 are supported by GPS-tagged bat data (N=7) showing movement mode analysis (Figure 2\u2014figure supplement 1). The behavioral classification using first-passage time analysis and Lavielle method is appropriate, though the inference about 'efficiency' is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "DNA metabarcoding revealed bats target 155 Operational Taxonomic Units spanning diverse prey, with approximately 60% occupying aerial niches (36 families) and 40% occupying ground niches (23 families).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are supported by DNA metabarcoding of feces from 54 bats (Figure 3A-B). The methodology follows established protocols (Morini\u00e8re et al., 2016, 2019) with appropriate quality filtering and OTU clustering. However, DNA metabarcoding does not provide quantitative prey consumption data, only presence/absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C35"
+    ],
+    "result": "The high aerial hawking success ratios (76%) for greater mouse-eared bats are comparable to hawking specialist bats, and total nightly prey captures are similar to the similar-sized Rhinopoma microphyllum but lower than smaller bat species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C35 make appropriate comparisons to literature (Rydell et al., 2002; Cvikel et al., 2015; Encarna\u00e7\u00e3o and Dietz, 2006). The comparisons are valid given similar body sizes and methodologies, though direct experimental comparisons were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Individual bats showed wide variation in hunting tactics, attacking 48-280 prey per night despite being selected from the same colony as post-lactating females of similar body mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is directly supported by the range of observed prey attacks across 34 bats (Figures 1 and 2). This highlights important individual variation and the value of continuous recording, though the sources of this variation are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "The study concludes that prey switching matched to environmental dynamics plays a key role in energy intake for specialized predators, with prey availability, size, and hunting success being important drivers of foraging decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C54, C57, and C58 represent integrative conclusions drawn from the collective findings on profitability, success ratios, and environmental influences. These conclusions are well-supported by the data, though the mechanistic understanding of environmental triggers remains incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Tags weighing 11-15% of bat body weight did not substantially impair foraging ability, as demonstrated by laboratory experiments showing similar success ratios with and without tags, and weight loss equal to control bats with lighter VHF transmitters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, and C64 address tagging effects through laboratory validation experiments and comparison to control bats. The evidence suggests minimal impact on foraging success, though the tag weight (11-15%) is at the upper end of recommended limits and statistical models showed tag effects did not explain foraging strategy variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Greater mouse-eared bats chew all prey while flying regardless of capture method, and mastication duration correlates with prey size, as verified in laboratory feeding experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 are supported by laboratory experiments (Figure 3\u2014figure supplement 1) showing the relationship between prey size and mastication duration. This validation is important for the mastication-based prey size estimation method used in the wild data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Gleaning exposes bats to higher predation risk from ground predators and higher injury risk compared to aerial foraging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 is presented as inference with citation to Brandmayr, 2009, but no direct measurements of predation risk or injury rates are provided in this study. The claim is plausible but remains speculative without empirical support from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Aerial hunting served as a valuable supportive strategy for 19 of 34 individuals, contributing 15% of total energy intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by prey capture and energy intake calculations from Figure 1D-E. The 15% contribution is calculated from the energy budget analysis combining prey counts, sizes, and caloric values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The consistently high success ratios and prey capture rates of hawking independent of habitat make aerial hunting a reliable backup strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by data showing habitat-independent hawking success (Figure 2D, F). The characterization as a 'reliable backup strategy' is a reasonable inference from the consistency of hawking performance across conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The authors speculate that foraging flexibility may have allowed bat species to exploit unpredictable food resources and created evolutionary pressure to maintain aerial hawking capabilities in gleaning specialists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55 and C56 are explicitly speculative evolutionary interpretations not directly tested by the current study. While consistent with the findings, these represent hypotheses for future work rather than supported conclusions from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The introduction provides background on optimal foraging theory, bat ecology, and prior observations of foraging flexibility in bats, establishing context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C68-C73 represent background knowledge and theory from cited literature. These are appropriately cited and provide necessary context, though they are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Greater mouse-eared bats are specialized for gleaning with morphological (broad, short wings) and sensory (weak echolocation calls) adaptations, but maintain the ancestral ability for aerial hawking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 describe species characteristics supported by citations (Arlettaz, 1996; Stidsholt et al., 2021) and videos. These represent established knowledge about the study species rather than novel findings, providing important context for interpreting the foraging behavior results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C16",
+      "C59",
+      "C60",
+      "C61",
+      "C65"
+    ],
+    "result": "The study methodology involved tagging 34 female post-lactating bats from Orlova Chuka cave, Bulgaria, during July-August 2017-2019 with two types of biologging tags, plus DNA metabarcoding of feces from 54 additional bats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C59-C61, and C65 describe the study design and are factual statements about methods. The methodology is clearly described with appropriate sample sizes and temporal/spatial scope.",
+    "result_type": "MINOR"
+  }
+]

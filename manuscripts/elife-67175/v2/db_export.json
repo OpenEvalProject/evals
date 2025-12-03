@@ -1,0 +1,2010 @@
+{
+  "submission": {
+    "id": "2e42674a-7865-4dfa-8616-a67c545e7007",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:15:44.189124Z",
+    "updated_at": "2025-12-03T07:15:44.189124Z"
+  },
+  "content": [
+    {
+      "id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "submission_id": "2e42674a-7865-4dfa-8616-a67c545e7007",
+      "content_type": "manuscript",
+      "content_text": "# Environmental fluctuations reshape an unexpected diversity-disturbance relationship in a microbial community\n\n## Authors\n\n- Christopher P Mancuso<sup>1</sup> ([ORCID: 0000-0002-3974-3480](https://orcid.org/0000-0002-3974-3480))\n- Hyunseok Lee<sup>2</sup> ([ORCID: 0000-0003-1554-6228](https://orcid.org/0000-0003-1554-6228))\n- Clare I Abreu<sup>2</sup>\n- Jeff Gore<sup>2</sup> ([ORCID: 0000-0003-4583-8555](https://orcid.org/0000-0003-4583-8555))\n- Ahmad S Khalil<sup>1</sup> ([ORCID: 0000-0002-8214-0546](https://orcid.org/0000-0002-8214-0546)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering and Biological Design Center, Boston University Boston United States\n2. Department of Physics, Massachusetts Institute of Technology Cambridge United States\n3. Wyss Institute for Biologically Inspired Engineering, Harvard University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnvironmental disturbances have long been theorized to play a significant role in shaping the diversity and composition of ecosystems. However, an inability to specify the characteristics of a disturbance experimentally has produced an inconsistent picture of diversity-disturbance relationships (DDRs). Here, using a high-throughput programmable culture system, we subjected a soil-derived bacterial community to dilution disturbance profiles with different intensities (mean dilution rates), applied either constantly or with fluctuations of different frequencies. We observed an unexpected U-shaped relationship between community diversity and disturbance intensity in the absence of fluctuations. Adding fluctuations increased community diversity and erased the U-shape. All our results are well-captured by a Monod consumer resource model, which also explains how U-shaped DDRs emerge via a novel \u2018niche flip\u2019 mechanism. Broadly, our combined experimental and modeling framework demonstrates how distinct features of an environmental disturbance can interact in complex ways to govern ecosystem assembly and offers strategies for reshaping the composition of microbiomes.\n\n## Introduction\n\nBiodiversity is a cornerstone of ecosystem stability and function (Tilman et al., 2014). While it is well\u00a0appreciated that environmental changes influence species diversity in all ecosystems, the exact nature of this critical relationship is unclear. Without a predictive understanding of how ecosystems respond to perturbations, we are poorly prepared for environmental changes of anthropogenic origin, such as rising global temperatures (Hoegh-Guldberg and Bruno, 2010), and unable to design effective and robust interventions in ecosystems, such as microbiomes of medical or agricultural importance (Lemon et al., 2012; Widder et al., 2016). Accordingly, there have been many efforts aimed at understanding the role of environmental disturbances, which are perturbations to the state of an environment. These disturbances are of ecological interest for the impact they have on a community, for example, by bringing about mortality of organisms and a reduction of biomass of a community. Various diversity-disturbance (DDR) relationships have been proposed that draw intuition from observations of natural ecosystems. DDRs describe how community diversity depends on disturbance intensity, which we define as the mean mortality rate imposed by the disturbance over time. A famous example is the Intermediate Disturbance Hypothesis (Connell, 1978; Huston, 1979), in which species diversity peaks at intermediate disturbance intensities (Figure 1a). However, DDRs derived from observational studies of disparate ecosystems and disturbance regimes often have inconsistent results (Mackey and Currie, 2001; Hughes et al., 2007). Earlier assertions that disturbance weakens or interrupts competition (Connell, 1978; Huston, 1979) have been refuted by both theory (Chesson and Huntly, 1997; Fox, 2013) and empirical findings (Violle et al., 2010) that harsher environments instead reinforce dependence on limiting factors. Without a quantitative framework that directly pairs theory and experiment, it has been difficult to determine the source of disagreement between the many conflicting predictions and observations surrounding DDRs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig1-v2.jpg)\n\n**Figure 1.:** (a) Different DDRs have been proposed based on observations of natural ecosystems, including the Intermediate Disturbance Hypothesis in which diversity peaks at intermediate disturbance levels, see depiction. (b) In the laboratory, microbial communities can be cultivated and subjected to varying disturbance intensity levels by tuning the dilution rate in chemostats. (c) A bacterial community exhibits a U-shaped diversity dependence on the disturbance intensity. Samples of a soil-derived bacterial community were grown for 6 days in eVOLVER mini-chemostats at four different dilution rates. Top: Optical density over time quantifies biomass for replicate cultures. Middle: Mean relative abundance of bacterial genera from replicate cultures, determined by 16S sequencing. Mean rank abundance is denoted by order, taxonomic similarity is denoted by color. Bottom: Plotting the endpoint number of species (Amplicon Sequence Variants) vs. dilution rate produces a U-shaped curve, rather than a peaked DDR. Shaded window indicates a one standard deviation confidence interval.\n\nImportantly, the impact of a disturbance on an ecosystem depends on the disturbance characteristics. For example, although some environmental disturbances do not vary over time, many environmental disturbances occur with lower frequencies and introduce fluctuations that drive an ecosystem in and out of different states. The environmental fluctuations associated with a disturbance may in fact stabilize communities by creating temporal niches, similar to seasonal effects (Levins, 1979; Chesson, 1994). Indeed, coexistence can be promoted in a fluctuation-dependent manner due to storage effects (e.g. dormancy in poor conditions) or if species exhibit relative non-linearities in their competitive responses (e.g. differently shaped growth curves) (Chesson, 1994; Letten et al., 2018). Yet, coexistence might also arise from the overall time-averaged disturbance intensity in a fluctuation-independent manner (Chesson and Huntly, 1997; Fox, 2013). To determine whether the effects of disturbance on diversity are truly fluctuation-dependent (Chesson, 2000), a disturbance should ideally be decomposed into distinct components of mean intensity (e.g. time-averaged disturbance magnitude) and frequency (e.g. temporal profile of fluctuations). Indeed, experimental findings (Benedetti-Cecchi et al., 2006; Hall et al., 2012) and theory (Miller et al., 2011) have suggested that diverse DDRs could arise when considering these factors independently. There is therefore a need for comprehensive, controlled studies which pair theory with experimental methods to produce datasets that can deconvolve the effects of intensity and fluctuation.\n\nLaboratory experiments offer a greater degree of control and throughput compared to field studies, particularly for tractable ecosystem models like microbial communities (De Roy et al., 2014). Microbes are easily quantified with next-generation sequencing (Gohl et al., 2016; Bolyen et al., 2019; Callahan et al., 2016; Janssen et al., 2018), and have been widely used in the laboratory to model community assembly (Friedman et al., 2017; Venturelli et al., 2018; Goldford et al., 2018), cross-feeding relationships (Mee et al., 2014), and succession (Chuang et al., 2019). Laboratory models have also linked changes in diversity in response to fluctuating nutrient levels (Sommer, 1985; Grover, 1988) and disturbances such as sonication (Violle et al., 2010), ultraviolet radiation (Gibbons et al., 2016), osmotic pressures (Letten et al., 2018), or toxic compounds (Santillan et al., 2019). Dilution is perhaps the most common choice for a laboratory disturbance, as it causes species-independent mortality and replenishes the system with fresh nutrients, reminiscent of flow in soil, aquatic, or gut microbiomes. Unlike disturbances with indirect biological impacts (such as pH, temperature, or osmolarity disturbances), there is a direct link between the dilution disturbance event (removal of culture volume) and the biological outcome (mortality of community members). In simple batch culture experiments, where cultures remain undisturbed except for a periodic dilution step, coexistence has been observed at intermediate dilution levels (Gibbons et al., 2016; Abreu et al., 2019), although different DDRs arise under different dilution regimes (Hall et al., 2012), suggesting that the dilution parameter space is vastly under-sampled. For more precise tuning of dilution or other parameters, experimentalists have long relied on continuous culture methods (Sommer, 1985; Grover, 1988; Monod, 1950); unfortunately, these systems have traditionally been intractable to large-scale, multidimensional experiments. Recently, we developed eVOLVER, a flexible and automated continuous culture platform that enables independent control over conditions in a large number of mini-bioreactors (Wong et al., 2018; Heins et al., 2019), thus opening up the possibility to explore microbial community dynamics under controlled, multidimensional environmental disturbances. By programming different dilution profiles with eVOLVER, we set out to independently quantify the effects of disturbance intensity (i.e. average dilution rate) and frequency (i.e. temporal profile of dilution rate) on the composition and diversity of microbial communities.\n\n## Results\n\n### Measuring microbial community diversity in constantly applied disturbances reveals a U-shaped relationship\n\nFirst, we sought to measure microbial diversity at various mean disturbance intensities in the absence of fluctuations by culturing a community under different mean dilution rates at the same near-continuous frequency. We cultivated replicate samples of a soil-derived microbiome in separate eVOLVER bioreactor arrays in dilute Nutrient Broth for six days (comprising 20\u201390 generations), during which continuously diluted cultures approached a stable composition (Figure 3\u2014figure supplements 1 and 2). In a chemostat, the flow of media into the vessel is matched by flow of spent media and cells out of the vessel, so disturbance intensity is directly related to dilution rate (Figure 1b). We thus varied the disturbance intensity by varying the dilution rate across the arrays (see Materials and methods, Figure 3\u2014figure supplements 1 and 2). We sampled cultures daily and used 16S sequencing to quantify composition and diversity over time. As expected, we observed decreasing biomass of the cultures at increasing dilution rates (Figure 1c and Figure 3\u2014figure supplement 3). Surprisingly, after quantifying the composition of each culture, we observed a U-shaped diversity-disturbance relationship (Figure 1c), with the number of surviving species at intermediate dilution rate at roughly half of the number at either low or high dilution rate. We were particularly intrigued because a U-shaped relationship between diversity and disturbance intensity does not agree with historical wisdom (Huston, 1979), although U-shaped DDRs have been reported for other disturbance characteristics such as frequency (Miller et al., 2011). Although U-shaped DDRs are uncommon in empirical observations (Mackey and Currie, 2001; Hughes et al., 2007), the conditions under which we observed it were quite straightforward: constantly applied disturbance. Thus, to better understand our observation, we sought a modeling framework in which a U-shaped DDR could emerge from constantly\u00a0applied disturbance, while still capturing other reported DDR shapes.\n\n### A consumer-resource model captures experimentally\u00a0observed DDRs and uncovers a niche-flip mechanism for conditional coexistence\n\nTo develop a theoretical framework for understanding and predicting DDR behavior, we simulated microbial co-cultures in bioreactor conditions. Before examining higher\u00a0order systems, we started by examining the simplest case that could give rise to a U-shaped DDR: a two-species competition where coexistence breaks down at intermediate disturbance levels. This simple system illustrates a sufficient condition that leads to the U-shaped DDR, and extensive analysis on a broader set of conditions is provided in Appendix 1 and 2. To link changes in disturbance intensity to changes in competitive outcomes, we turned to consumer resource models (Tilman, 1982; MacArthur, 1970). In consumer resource models, species growth rates are a function of resource concentrations. Resource depletion rates are in turn a function of species abundances, so species interact by competing for the same limiting resources. The range of resource concentrations that can support growth of a species can be graphically analyzed on a Tilman diagram (Tilman, 1982) by defining a Zero Net Growth Isocline (ZNGI) (Figure 2a). Briefly, the ZNGIs intersect with each axis in the Tilman diagram at c* values, which are the concentration of a particular resource necessary for a species to survive at the specified mortality rate. Similarly, the ZNGIs define the boundary of supplied resource combinations that will support growth of a species. As a population consumes resources, the resource concentrations move from the resource supply point toward the ZNGI, where growth rate is equal to the mortality rate (i.e. disturbance intensity) and the population is at equilibrium. The shape and location of these ZNGIs also predict the outcome of competition, as resource consumption by the population can cause equilibrium resource levels to cross the ZNGI of one species, leading to exclusion by the other (Figure 2a). If the ZNGIs intersect with each other, coexistence is possible. The borders of the coexistence region are invasion boundaries where either species can invade the other; in this region, consumption brings equilibrium resource concentrations towards the intersection of the ZNGIs (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig2-v2.jpg)\n\n**Figure 2.:** (a) The survival of a species in a consumer resource model depends on the supplied resource levels and the mortality rate (i.e. disturbance intensity). A Zero Net Growth Isocline (ZNGI) may be defined for each species at a given disturbance intensity, delineating the range of resource supply levels where growth can meet or exceed the mortality rate. The ZNGIs intersect the axis at c* values, the minimum concentration needed to support growth of a species on a single resource. The outcome of competition depends on the combination of resources supplied, indicated by a supply point. Resources are consumed until reaching equilibrium along the ZNGI of the species requiring the fewest resources to survive at the specified mortality rate, the winner of the competition. Different supply points can be found that support neither species (gray), a single species (green or purple) or both species (black). Invasion boundaries indicate regions where one species can increase in density in the presence of the other, outlining the region of coexistence (maroon). (b) In a consumer resource simulation with 2-species / 2-resources and Monod growth, the outcome of competition at the given supply point (black) depends on disturbance intensity. Both ZNGIs and invasion boundaries flip as disturbance intensity increases. At intermediate disturbance, invasion boundaries align and the coexistence region collapses, reducing diversity relative to low/high disturbance intensities at the black supply point. (c) Left: Monod consumer resource model for growth of species i with additive non-linear growth on each resource. Right: Shannon diversity of randomly generated 10-species communities, after six days of simulated growth on seven resources at varying dilution rates. For each model, mean diversity was computed for 100 randomly initialized communities, across each mean dilution rate, 50 of which are shown as individual traces.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Growth rates calculated using consumer resource models can be used to construct diagrams of competitive outcomes, see Tilman, 1982. (a) Consider Species A and Species B, which each exhibit different resource concentration-dependent growth on Resource 1 or Resource 2. To achieve growth rates equal to this indicated dilution rate, the species require different resource concentrations to survive, called c* values. (b) In a multi-resource environment, the summed growth rate across resources constructs a Zero Net Growth Isocline (ZNGI) which intersects the axes at c* points from the prior panel. ZNGIs define the space of supplied resource that can support a species sufficiently such that its growth meets or exceeds the mortality rate (e.g. dilution rate). The outcome of competition can be predicted by determining whether resource consumption will drive one species to extinction or not. The borders of these different outcomes, termed invasion boundaries in Figure 2, can be identified by calculating a resource consumption vector at the intersection of the ZNGIs. Note that Tilman diagrams may be constructed for any consumer resource model, and the shapes and movement of the ZNGIs will change accordingly.\n\nDisturbance affects the ZNGIs in multiple ways. First, since higher mortality rates require higher growth rates to maintain equilibrium, more resources are required to maintain equilibrium. Accordingly, the ZNGIs shift toward higher resource levels at higher disturbance intensities. Second, for saturating growth models, the growth rate of each species may change relative to each other as resource levels increase. For example, for two species competing for resource 1, species A may outgrow species B at low resource concentrations but not at high concentrations (Figure 2a). Competitive outcomes at low disturbance intensities will depend on the relative growth rates at low resource concentrations, while competitive outcomes at high disturbance intensities will depend on the relative growth rates at high concentrations (Figure 2b). The c* values and ZNGIs will change accordingly for each species. We investigated whether these disturbance-linked differences in competitive outcomes could explain the emergence of U-shaped DDRs. In a competition between two species, a U-shaped DDR can be generated if this coexistence region disappears at intermediate disturbance intensities (Figure 2b). We propose that this is possible if the ZNGIs and invasion boundaries flip as disturbance intensity increases, such that at some intermediate intensity the invasion boundaries align and the coexistence region disappears (Figure 2b). We term this behavior \u2018niche-flip\u2019. Under niche-flip, the winner of competition at a given supply point changes as disturbance intensity varies concomitantly with resource availability.\n\nTo look for conditions under which niche flip emerges, we conducted simulations using Monod growth kinetics (Monod, 1949), a commonly used model for microbial growth with Type II functional response. Here, growth scales with the concentration of resource, but saturates to a maximal growth rate r according to a half-saturation constant K (Figure 2c and Appendix 1). Accordingly, a species with high maximum growth rate r may be outcompeted at low resource levels by a species with a low saturation constant K, such that the outcome of competition varies depending on nutrient levels (and thus dilution rate \u03b4) as described above (Figure 2\u2014figure supplement 1). Theoretical analysis of the Monod model with two species and two resources shows that ZNGIs and invasion boundaries undergo niche-flip as dilution rate increases (Figure 2b). We next asked whether these interactions between pairs of species produced the desired DDRs in a more complex system. We simulated sets of 10 species and seven resources with randomly chosen r and K values, with per-capita growth rates composed of a sum across nutrient-specific growth rates. Excitingly, we found that the Monod consumer resource model recapitulates the U-shaped diversity dependence on disturbance intensity that we observed in our chemostat experiments (Figure 2c). Finally, we emphasize that the illustrated tradeoff is not the only way to obtain niche-flip and U-shaped DDRs (explored further in Appendix 2). To summarize briefly, in the absence of tradeoffs on any one resource, at sufficiently high dilution rates, niche flip and a U-shaped DDR can arise from combinations of two or more resources such that the winner of competition is different at low vs. high equilibrium resource concentrations. In systems of larger numbers of species and resources, niche-flip exclusion events between pairs of species can co-occur, yielding U-shaped DDRs (Appendix 2).\n\n### Other classes of microbial competition model do not produce U-shaped DDRs\n\nWe asked whether niche flip or U-shaped DDRs could emerge from other classes of microbial competition model. We simulated 10-species, 7-resource competitions with linear consumer resource models where the growth of a species increases linearly with resource concentration (Appendix 1). We also simulated 10-species competitions with the Lotka-Volterra model, where the maximal growth rates (r) of different species are reduced depending on the abundance of other species via interaction coefficients (\u03b1) (Appendix 1). Growth rates and interaction coefficients were selected to match the growth rates and diversity of the consumer resource models described above. U-shaped DDRs were not observed for either linear consumer resource or Lotka-Volterra models; instead, diversity generally did not vary with disturbance intensity, even under alternative parameter regimes (Appendix 1\u2014figures 1 and 2). Thus, we concluded that the Monod consumer resource model best captured the U-shaped behavior of our microbial communities under constant disturbance among simple models of competition.\n\n### Experimentally measured growth parameters are consistent with Monod growth\n\nTo confirm that Monod growth is a reasonable choice for modeling our experimental system, we measured how nutrient concentrations affected the growth of bacterial isolates from our community experiments. In 96-well plates, we first measured growth rates at varying concentrations of diluted Nutrient Broth, the same media type used in our eVOLVER experiments. Growth rates varied as a function of nutrient composition and indeed saturated at relevant nutrient concentrations, exhibiting tradeoffs between r and K such that no species had both a fast growth rate and low saturation coefficient (Figure 3\u2014figure supplement 4). Second, as Nutrient Broth is undefined, we repeated the above experiment in carbon-limited M9 minimal media supplemented with varying concentrations of amino acids as a sole carbon source. Although we were unable to fit Monod parameters due to limited growth, we observed that the isolate with highest growth rate varied for different amino acids (Figure 3\u2014figure supplement 4). These two experimental observations provide evidence for Monod growth kinetics under these conditions, and suggest that species could undergo niche-flip to generate U-shaped DDRs under constant disturbance.\n\n### The consumer-resource model predicts fluctuation-dependent changes in DDRs\n\nBoth mean disturbance intensity and fluctuations (e.g. low-frequency discrete disturbance events) are hypothesized to play a role in the assembly of communities, but how these two disturbance components interact to reshape DDRs is unclear. Using our modeling framework, we sought to independently vary these two components, simulating a two-dimensional dilution profile. Specifically, we introduced fluctuations into the model by permitting \u03b4 to vary with time, compressing disturbance into discrete time windows (Figure 3a); this was done while keeping the time-averaged \u03b4 equal, thereby allowing us to vary mean disturbance intensity and frequency independently. The Monod consumer resource simulations predict significantly higher diversity in fluctuating conditions comprised of one or more dilution events per day, with the lowest-frequency (i.e. largest-fluctuation) regime predicted to maintain the most diversity (Figure 3e and Figure 3\u2014figure supplement 5). This is consistent with intuition that fluctuations introduce temporal structure into environments, which may create new niches that promote diversity. Furthermore, the DDR is reshaped entirely \u2013 from U-shaped to largely uniform \u2013 indicating that community composition in the Monod model is conclusively fluctuation-dependent. Notably, neither Lotka-Volterra nor linear consumer resource models predict differences in the DDR between fluctuation frequencies (Appendix 1\u2014figures 1 and 2). The overlap of DDRs of different frequencies indicates that in these models the relevant metric is the time-averaged overall intensity, rather than the frequency, of disturbance (Chesson and Huntly, 1997; Fox, 2013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-v2.jpg)\n\n**Figure 3.:** (a) Fluctuations in a disturbance over time cause fluctuations in biomass, and can be varied independently of the disturbance intensity. In continuous culture, fluctuations are achieved by aggregating dilution into discrete events while keeping mean dilution rate constant per day. (b) Schematic of the eVOLVER DDR64 experiment in which disturbance components (intensity and fluctuation) are varied independently. Samples of a soil-derived bacterial community were continuously cultured for 6 days across 64 eVOLVER bioreactors with varying mean dilution rate and dilution frequency. (c) Optical density traces for culture replicates in each condition show the dependence of biomass on disturbance. (d) Mean relative abundance of bacterial genera from replicate cultures, determined by 16S sequencing. Mean rank abundance is denoted by order, taxonomic similarity is denoted by color (see legend). (e) Mean Shannon diversity across 100 Monod consumer resource model simulations with varying mean dilution rate and dilution frequency show that the dependence of diversity on disturbance is fluctuation-dependent. (f) Mean Shannon diversity of Amplicon Sequence Variants from the DDR64 experiment vs. mean dilution rate and dilution frequencies. As in the simulations, fluctuations increase diversity and eliminate the U-shape. Bars in e and f denote standard error of the mean.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Soil samples were immersed in PBS, then pre-enriched in overnight cultures in 0.1X Nutrient Broth. Post-enrichment cultures were mixed to form the final inoculum. The final inoculum was also frozen for follow-up experiments. (b) Timeline for the DDR64 Experiment. Cultures were sampled daily for plating and sequencing to determine composition. Cultures completed ~20\u201390 generations over 6 days. The 0.1 h\u22121 cultures were carried out for an additional 6 days in order to complete an additional 20 generations, for a total of 40. (c) Timeline and sampling schedule for DDR Washout Experiment. This experiment was started from a frozen sample of the inoculum used in the DDR64 experiment.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Family-level composition of a representative soil sample, supernatant of PBS immersion, pre-enrichment cultures, and final inoculum. Diversity and composition changes over time indicate selection for growth in lab conditions. (b) Composition of negative control sample, positive control mock community sample, and the true composition of the mock community sample. Positive control samples indicate coverage over both Gram-positive and Gram-negative organisms. Negative control sample indicates that the composition of experimental samples is significantly different, as would be expected for samples of sufficient biomass.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Optical density was recorded in each eVOLVER vial over time at ~30 s intervals. Plots from vials in replicate conditions are included on the same axes. Colors used to indicate technical issues in that vial. DDR64 experiment located in columns 1,2,3,5; DDR Washout experiment in columns 4,6,7,8.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (a) Nine isolates from the DDR64 and DDR Washout experiments were grown in a microplate spectrophotometer in dilute Nutrient Broth media (ranging from 0.1X to <0.0016X, plus a water-only negative control). Linear regression on a Lineweaver-Burk plot was used to calculate Monod $r$ and $K$ values. Monod curves generated from those fit values are indicated by solid lines, while triplicate growth measurements are indicated as points. Flattening of growth rate vs. nutrient concentration curves is consistent with saturating growth in Monod model. (b) Scatter plot of Monod $r$ and $r/K$ values indicate that while species vary in Monod $r$ and $K$, these values are uncorrelated. If there were a strong positive correlation between $r$ and $r/K$, this would prevent a U-shaped DDR according to the model. (c) Three isolates from the DDR64 and DDR Washout experiments were grown in M9 media supplemented with 10mM of the indicated amino acid as a sole carbon source. Different isolates had different growth rates on each resource, indicating resource preferences.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Each plot displays species richness after 6 days of simulated growth, mean across 100 communities for varying mean dilution rate and dilution frequency (see legend). Variations on the basic Monod model are discussed in Materials and methods. Richness was defined as the number of species with abundances above the indicated population size threshold at the simulation endpoint. The U-shaped DDR is more distinct at higher thresholds.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Colony forming units (CFU) for endpoint samples plotted against other population size estimates. (a) CFU/mL vs. Optical Density in eVOLVER. (b) CFU/mL vs. Optical Density in eVOLVER, minus biofilm contribution. (c) CFU/mL vs. Optical Density of biofilm (see Figure 3\u2014figure supplement 12). (d) CFU/mL vs. concentration yield of DNA extraction. For all plots, linear regression line is plotted in black, with corresponding R2 values. For optical density plots, a linear relationship (CFU/OD = 8 x 108) color indicates frequency of dilution (see legend). Samples in the 1/d condition group were measured to have much higher CFU/mL, as these cultures reached saturation.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Composition was determined to vary over time across different disturbance intensity and fluctuation levels. Daily samples were taken from soil microbe co-cultures grown in eVOLVER in varying dilution profiles (Materials and methods). Amplicon sequencing on the v4 16S region was performed and analyzed in QIIME 2 to assign genus level taxonomy according to the SILVA 132 database. Each bar depicts the relative abundance of genera in a single sample. Mean rank abundance of a bacterial genus (across all samples) is denoted by order (top to bottom), and taxonomic similarity is denoted by color (see legend).\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Principal coordinate analysis indicates divergence in composition between samples. Ordination was based on Weighted UniFrac distances that were calculated from 16S composition of daily samples in QIIME 2. (a) Samples colored according to day of collection. (b) Samples colored to indicate the dilution frequency of the culture. (c) Samples colored to indicate the mean dilution rate of the culture. The magnitude for each principle coordinate is listed in parentheses.\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp9-v2.jpg)\n\n**Figure 3\u2014figure supplement 9.:** Ordination was based on Weighted UniFrac distances that were calculated from 16S composition of Day 6 samples only in QIIME 2. PERMANOVA testing was used to determine whether distances between cultures grouped by disturbance characteristics were statistically significant. The PERMANOVA significance values (corrected for false discovery rate) are provided above each pair, with q<0.05 being a significant result. (a) Pairwise distances between cultures grouped by the disturbance frequency under which they were grown. Significant differences exist between low-frequency and high-frequency cultures. (b) Pairwise distances between cultures grouped by the mean dilution rate under which they were grown. (c) Principal coordinate analysis of mean composition at Day 6 for the 16 different dilution rate-frequency combinations indicates the contributions of dilution rate and frequency to composition differences. No pairwise distances between dilution rate-frequency combinations were significant by PERMANOVA after correction for false discovery rate from multiple hypotheses (lowest q=0.067), though numerous pairwise distances were found to have p<0.05.\n\n![Figure 3\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp10-v2.jpg)\n\n**Figure 3\u2014figure supplement 10.:** Diversity was calculated from 16S sequencing for each timepoint sample in each vial. (a) The Shannon diversity of 16S ASVs for each vial are indicated by points connected by thin lines. The mean across replicate vials is denoted with a thick line. (b) 16S ASV richness for each vial, plotted as above. Samples with technical issues (e.g. poor sequencing coverage, contamination, see Figure 3\u2014figure supplement 3) were excluded from analysis.\n\n![Figure 3\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp11-v2.jpg)\n\n**Figure 3\u2014figure supplement 11.:** Diversity was calculated using the Day 6 timepoint for all vials in DDR64 and DDR Washout experiments. (a) Shannon diversity of 16S ASVs for each vial, mean across replicates. (b) 16S ASV richness for each vial, mean across replicates. (c) Colony richness, the number of unique colony morphotypes identified on Nutrient Agar plate for each vial, mean across replicates. Note that due to CFU/mL differences, colony richness is deflated in low-density conditions. This effect is pronounced in the constant dilution vials. Bars indicate standard error of the mean. Samples with technical issues (e.g. poor sequencing coverage, contamination, see Figure 3\u2014figure supplement 3) were excluded from analysis.\n\n![Figure 3\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp12-v2.jpg)\n\n**Figure 3\u2014figure supplement 12.:** Biofilm levels were measured by flushing vials with fresh media then measuring optical density in eVOLVER. Vials with higher optical density have more biofilm accumulation. Heatmap depicts mean across replicates. DDR64 experiment data in columns 1,2,3,5 and DDR Washout experiment in columns 4,6,7,8.\n\n![Figure 3\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig3-figsupp13-v2.jpg)\n\n**Figure 3\u2014figure supplement 13.:** Shannon diversity of 16S ASVs for endpoint samples plotted against potential confounding factors. (a) Diversity vs. Optical Density of biofilm (see Figure 3\u2014figure supplement 12). (b) Diversity vs. Optical Density in eVOLVER. (c) Diversity vs. CFU/mL calculated from Nutrient Agar plate. (d) Diversity vs. concentration yield of DNA extraction. For all plots, a linear regression line is plotted in black, with corresponding R2 values. Color indicates frequency of dilution (see legend).\n\n### Experimentally introducing disturbance fluctuations increases community diversity and reshapes DDRs\n\nWe returned to experiments to see whether the U-shaped DDR observed in constant dilution chemostats is reshaped by fluctuations, as predicted by the Monod model. To comprehensively test for fluctuation-dependency, we implemented dilution profiles with 1, 4, or 16 fluctuations per day (alongside the constant dilution conditions) at varying mean dilution rates in an eVOLVER experiment comprised of 64 simultaneous cultures (\u2018DDR64 Experiment\u2019) (Figure 3b). We cultivated replicate samples of the soil-derived microbiome in eVOLVER for 6 days, taking samples every 24 hr to quantify composition (Figure 3\u2014figure supplement 1, Figure 3\u2014source data 1). The specific dilution profiles we programmed were reflected in the optical density traces of each culture over time, showing differences between conditions but close agreement between replicates (Figure 3c and Figure 3\u2014figure supplement 3). Although optical density is a poorly defined population size metric for communities of different compositions, cultures with higher optical densities did tend to have larger population sizes measured by CFU/mL or DNA extraction (Figure 3\u2014figure supplement 6). Based on 16S sequencing (Gohl et al., 2016; Bolyen et al., 2019; Callahan et al., 2016; Janssen et al., 2018), we observed that the genus-level composition of the community varied over time and between conditions (Figure 3d and Figure 3\u2014figure supplements 7 and 8, Figure 3\u2014source data 2). Culture compositions diverged from the initial composition, and while it is difficult to confirm that the endpoint represents true equilibrium (stable composition), the change in composition slows significantly by days 4\u20136, suggesting the endpoint state is approaching equilibrium. Principal Coordinate Analysis revealed that constant dilution conditions and 1/day fluctuations diverged from each other, indicating a clear frequency-dependent effect, with the spread potentially modulated by mean dilution rate (Figure 3\u2014figure supplement 8). PERMANOVA statistical analysis of endpoint compositions confirmed that dilution frequency (but not mean dilution rate) had a significant effect on composition, but not mean dilution rate (Figure 3\u2014figure supplement 9). Despite separation between conditions in PCoA of endpoint compositions (Figure 3\u2014figure supplement 9), PERMANOVA analysis of dilution rate and frequency combinations did not yield significant values after correcting for false discovery rate. Notably, despite starting from a diverse community with hundreds of species, we found resulting compositions to be largely similar between replicates (Figure 3\u2014figure supplements 2 and 7).\n\nWe calculated Shannon diversity for each timepoint (Figure 3\u2014figure supplement 10, Figure 3\u2014source data 1) and found that endpoint diversity trends across disturbance intensity and fluctuation frequency are qualitatively consistent with the Monod consumer resource model in three ways (Figure 3e and f, and Figure 3\u2014figure supplement 11). (1) We observed U-shaped diversity curves in regimes of constant disturbance and small frequent disturbances, in both experiment and simulations. (2) Larger fluctuations preserved higher levels of diversity, and (3) larger fluctuations reshaped the diversity-disturbance curves towards a more uniform relationship. These general results were consistent across different diversity metrics: Shannon diversity of 16S ASVs (Amplicon Sequence Variants), richness of 16S ASVs, and richness of colony morphotypes (Figure 3\u2014figure supplement 11).\n\nTo test the reproducibility of our results, we ran a subsequent and independent 48-vial experiment from frozen inoculum at dilution rates ranging from 0.3 h\u22121 to 1.5 h\u22121 (Figure 3\u2014figure supplements 1 and 3). In overlapping parts of the parameter space, we were able to reproduce the results of the DDR64 experiment (Figure 3\u2014figure supplements 7, 10 and 11). We further used this replicate experiment to extend the parameter space and examine effects at extreme levels of disturbance. However, despite imposing dilution rates that exceed the maximum growth rate of our cultures (Figure 3\u2014figure supplement 4), we did not observe complete washout (Figure 3\u2014figure supplement 3). In principle, cells could escape dilution by forming biofilm or due to incomplete mixing at extreme dilution rates, so we were cautious to draw strong conclusions from this part of the parameter space.\n\nAlthough other measurables varied across the disturbance parameter space, they do not explain the differences in diversity as clearly as the Monod consumer resource model does (Figure 3\u2014figure supplements 6, 12 and 13). For example, we measured differences in biofilm accumulation across the parameter space using optical density measurements in eVOLVER, but these did not correlate with diversity. Similarly, changes in pH, oxygenation, phage, or antimicrobial levels could conceivably be linked to diversity changes and were not measured in this experiment. Notably, modifying the Monod consumer resource model to include asymmetric mortality rates did not qualitatively change the shape of DDRs in simulations (Appendix 1\u2014figure 4), suggesting that our results could be robust to these types of effects. Overall, we found it striking that the model captures the features of our results so well while being relatively simple and non-parameterized.\n\n### The consumer-resource model can produce all major classes of DDRs and is robust to alternative formulations\n\nWe set out to develop a conceptual framework that not only captures our results, but also provides mechanistic intuition about how the characteristics of disturbance, such as frequency, can produce and reshape DDRs more generally. In this case, we demonstrated how a U-shaped DDR emerging under constantly-applied disturbance was reshaped to a more neutral relationship by the addition of low-frequency fluctuations. This framework further identified a niche-flip mechanism as a dominant factor in community assembly under constantly applied disturbance. We next wondered whether this simple model could produce other classes of DDRs observed in nature (Mackey and Currie, 2001), as a path toward identifying the organizational mechanisms in other ecosystems. To explore a wider range of behaviors, we extended the range of simulations to include extreme disturbance intensities that eventually lead to community extinction, and prevented artificial extinction of all species simultaneously by introducing noise into the normalization of growth rates (creating small differences in relative fitness between species). As depicted in a contour plot (Figure 4), we again found that fluctuations reshaped the DDRs to produce complex diversity landscapes. These simulations revealed that a diverse repertoire of DDRs can emerge from the combination of these two disturbance characteristics (intensity and frequency). By exploring subsets of this parameter space, we observed every major class of DDR: positive, negative, neutral, peaked, and U-shaped (Figure 4). Different behaviors can emerge from similar communities maintained under different portions of the disturbance parameter range, or when similar disturbances are applied to communities with different growth parameters. By simply examining these two disturbance characteristics in a systematic way, we developed a unifying framework that can reconcile disparate DDR observations without invoking more complex phenomena.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67175/elife-67175-fig4-v2.jpg)\n\n**Figure 4.:** A simple Monod consumer resource model maps a phase diagram for community diversity by varying distinct characteristics of environmental disturbance (intensity and fluctuation). Diversity varies non-linearly with disturbance intensity under different levels of fluctuation for Type II consumer resource models. Contour plot depicts Shannon diversity results for a Monod consumer resource model simulation as an illustrative example. When varying disturbance intensity at a fixed fluctuation level along the indicated arrows, different DDR classes emerge, as shown in smoothed plots on the right.\n\nTo check how well these behaviors were preserved under variations of the Monod model, we performed simulations in which we (1) modestly varied parameter values, (2) significantly changed parameter distribution assumptions, or (3) changed the functional form of the model altogether. Notably, as detailed below, the U-shaped DDR and frequency-dependence were maintained for nearly all model variations, indicating that disturbance intensity and fluctuations remained important predictive factors of community diversity.\n\nFirst, we made quantitative changes to parameters that did not qualitatively change the relationship between species. In one example, we explored larger relative fitness differences between species by removing growth rate normalization between species, but the U shape and fluctuation-dependent DDR changes were preserved (Appendix 1\u2014figure 3e). In another, we chose parameters in ranges that diverged from experimental conditions and found the model results to be robust to increased simulation length (Appendix 1\u2014figure 3d) and 10-fold increased resource supply (Appendix 1\u2014figure 3b), but not 10-fold decreased resource supply (Appendix 1\u2014figure 3c). At increased number of species and resources, a U-shaped DDR is still observed, although its relative impact on total diversity is reduced (Appendix 1\u2014figure 3i).\n\nSecond, we modified parameters in ways that changed the underlying assumptions about community structure. We found no qualitative changes to model results when including 'specialist' species or eliminating $r$/$K$ tradeoffs with sorted $r$ and $K$ values (Appendix 1\u2014figure 3f and g). However, when we held $K$ constant for all species on each resource, both the U shape and frequency dependence were eliminated (Appendix 1\u2014figure 3h). For a mathematical discussion of the importance of these parameter choices, see Appendix 2.\n\nFinally, we sought to determine whether changing the functional form of the summed Monod model would affect the U shape. First, we employed a non-additive formulation of Monod growth on mixed substrates (Sears and Chesson, 2007); similar U-shaped DDRs and frequency dependence were observed (Appendix 1\u2014figure 4). Next, we incorporated the possibilities of migration or species-specific death rates in different models. These modifications respectively increased or decreased the maximum diversity of the system, but the U-shaped DDR and frequency-dependence were maintained (Appendix 1\u2014figure 4). Again, we found it striking that over a wide range of model variations, disturbance intensity and fluctuations remained important factors shaping the diversity of ecosystems in a predictable manner.\n\n## Discussion\n\nIn this work, advances in automated continuous culture technology and next-generation sequencing enabled laboratory microbial ecology studies to systematically dissect the role of environmental disturbance (intensity and fluctuation) with fine resolution at scale. We found replicable patterns in composition and diversity of a soil-derived microbial community across different disturbance regimes. Notably, we observed an unexpected U-shaped DDR under constant disturbance, and found that adding fluctuations (in the form of low-frequency discrete disturbance events) increased community diversity and reshaped the DDR. All of these results are well captured by the Monod consumer resource model, which subsequently led us to describe and propose a novel niche-flip mechanism for structuring these ecosystems. Taken together, these combined experimental and modeling results (1) provide new insight into how microbial community assembly depends on environmental conditions and (2) demonstrate a role for environmental fluctuations in promoting diversity. Examining the behavior of the Monod model over a broad range of disturbance intensities and frequencies, we see that diverse classes of DDRs (including increasing, decreasing, and peaked) could emerge when only subsets of the parameter space are sampled (Figure 4). Understanding how disturbance intensity and frequency interact is essential for reconciling disparate observations of DDRs under a single quantitative unifying framework (Mackey and Currie, 2001; Hughes et al., 2007; Hall et al., 2012; Miller et al., 2011).\n\nWhile we focused on two characteristics, a number of different temporal features of a disturbance could be considered (Mackey and Currie, 2001; Hall et al., 2012; Miller et al., 2011). In our present work, by focusing on mean disturbance intensity rather than maximum disturbance intensity, we have sampled conditions with a negative correlation between frequency and maximum intensity (e.g. comparing frequent small dilution events to infrequent large dilution events). Furthermore, our definition of constant disturbance may in fact represent the undisturbed state of some ecosystems. For natural ecosystems with constant flow, such as lentic aquatic systems, it may be more accurate to consider a drought disturbance with a sudden reduction in flow rate (with distinct biological outcomes). Performing an experiment in which the maximum flow rate, minimum flow rate, duration at maximum and duration at minimum were all independently varied could help to understand a wider range of disturbance profiles.\n\nWith further study and evaluation of underlying assumptions, the findings of this work may be extended to other systems. Although our experimental results were reproducible (Figure 3\u2014figure supplements 7, 10 and 11), it remains to be seen whether other species and disturbance types (including asymmetric disturbances like toxins or heat shock) behave similarly in experiments. Our simulation findings indicate that the niche-flip mechanism is quite generalizable across varying assumptions and formulations, and thus would predict similar roles for other disturbance types and conditions. Furthermore, the growth saturation feature of the Monod model that enables niche-flip is also characteristic of Type II and III functional responses used in consumer resource models across different scales of ecology. It remains to be seen whether niche-flip mechanisms could arise from non-resource-based models. It is plausible that similar growth tradeoffs arising in response to other disturbance-correlated features could lead to loss of coexistence at intermediate disturbance intensities. Therefore, niche flip could be a more general principle extending beyond relative growth non-linearities explored in this work to systems driven by dynamic abiotic stresses and/or storage effects (Sears and Chesson, 2007; Angert et al., 2009; Usinowicz et al., 2017; Hallinen et al., 2020). We also note however, that these types of disturbances do not share the direct link between environmental change and biological outcome that is characteristic of dilution disturbance, so the impact may be less clear.\n\nBroadly, our results highlight that the structure of ecosystems and their response to perturbation is contextual. We demonstrated that increasing the disturbance intensity can increase, decrease, or have no effect on the diversity of a system. Critically however, we found that under a unifying framework that considers both disturbance intensity and frequency, these relationships become predictable rather than idiosyncratic (Hall et al., 2012; Miller et al., 2011). Intriguingly, these complex ecosystem assembly rules can emerge from temporal structure alone, without invoking other organizing principles, such as spatial structure (Gude et al., 2020) or network structure (e.g. cross-feeding and antagonism) (Mee et al., 2014; Kelsic et al., 2015). While we considered both constant and oscillating temporal patterns of disturbance, additional complexity may arise from temporal patterns that are random or those which change which types of resources available over time. Since complexity can arise from temporal, spatial, and network effects, the relative importance of any one organizing factor is likely ecosystem dependent. If predictable response to perturbation depends on context, then designing predictable interventions to ecosystems (in medicine, agriculture, and conservation) will require the ability to measure and understand the environmental context. With the staggering amount of compositional data being generated with high-throughput sequencing of microbiomes (Thompson et al., 2017), inference of environmental context and design of robust ecological interventions may not be far off.\n\n## Materials and methods\n\n### Preparing inoculum\n\nTwo g of dirt from the Communications Lawn of Boston University (collected on 09/15/2018) was vortexed in 10 mL PBS + 200 \u00b5g/mL cycloheximide, then incubated in the dark at room temperature for 48 hr. For pre-enrichment, 16 eVOLVER vials were prepared with 25 mL of 0.1X Nutrient Broth (NB) media (0.3 g/L yeast extract + 0.5 g/L peptone (Fisherbrand)) with 200 \u00b5g/mL cycloheximide, inoculated with 350 uL of PBS immersion, and grown for 18 hr in eVOLVER at 25\u00b0C. All 16 pre-enrichment cultures were mixed together to form the experiment inoculum. Aliquots in 15% glycerol were stored frozen at \u221280\u00b0C.\n\nRunning eVOLVER Experiments eVOLVER lines were sterilized using 10% bleach and ethanol (Heins et al., 2019; Wong et al., 2018), then autoclaved vials were loaded with 23 mL of 0.1X NB. Each vial was inoculated with 1 mL of inoculum, and grown for 5 h at 25\u00b0C with stirring prior to the first dilution disturbance. eVOLVER was operated in chemostat mode with 0.5 mL bolus size, with dilutions either evenly distributed over time (constant disturbance) or concentrated in fluctuation periods lasting 15 minutes. For these cultures, the flow rate during a fluctuation $\\delta_{f}$ depended on the number of fluctuations per day $f$ and mean dilution rate $\\delta$ according to the following equation: $\\delta_{f}=(24*\\delta)/(0.25*f)$. At the end of each experiment, vials were flushed with media, and 10 optical density measurements were taken in eVOLVER to measure the biofilm levels.\n\nBottles and lines were routinely checked for contamination. This occurred to only a single vial of the experiment, which was excluded from statistical analysis. For the follow-up washout experiment, the glycerol stock inoculum was thawed at room temperature, 1 mL was inoculated into each vial, then the cultures were allowed to grow for 5.7 hr prior to initiating disturbances. For the washout experiment, a software bug caused a few incorrectly executed dilution events; these vials were excluded from statistical analysis. Code required to execute these experiments will be available on Github (https://github.com/khalillab/DDR-eVOLVER-model).\n\n### Sampling cultures\n\nAt each timepoint, a 2 mL culture aliquot was removed from each vial with an extended length pipette tip.\n\nFor plating, 20 \u00b5L of the sample was used for a 10-fold serial dilution series, and 100 uL of diluted cultures at three concentrations were plated on 18 mL Nutrient Broth Agar plates (3 g/L yeast extract, 5 g/L peptone, 15 g/L agar [Fisherbrand]), which were grown at room temperature for 48\u201360 hr, then imaged on an on an Epsom Perfection 550 scanner. Image analysis was performed with the aid of Cellprofiler 3.1.8 (Lamprecht et al., 2007) and Cellprofiler Analyst 2.2.1 Classifier (Bray et al., 2015) tools.\n\nFor DNA extraction, the remainder of the sample was pelleted and frozen at \u221220\u00b0C. 60\u201372 hr after freezing, pellets were lysed at 37\u00b0C for 1 hr in 200 uL of lysozyme buffer (25 mM Tris HCl pH 8.0, 2.5 mM EDTA, 1% Triton X-100 with 20 mg/mL lysozyme (Fisher), prepared fresh daily). Lysates were processed using DNEasy Blood and Tissue Kit according to manufacturer specifications, eluted into 10 mM Tris buffer, and normalized to 5 ng/\u00b5L DNA based on measurements in a Qubit fluorometer.\n\n### Library preparation and sequencing\n\nBriefly, we performed amplicon sequencing of the 16S v4 region based on established protocols (Gohl et al., 2016). Primers prCM543 (TCGTCGGCAGCGTCAGATGTGTATAAGAGAC-AGGTGYCAGCMGCCGCGGTAA) and prCM544 (GTCTCGTGGGCTCGGAGATGTG-TATAAGAGACAGGGACTACNVGGGTWTCTAAT), adapted from EMP515F (Apprill et al., 2015) and EMP806R (Parada et al., 2016) were used to isolate a 290 bp 16S v4 region, using Kapa Hifi ReadyMix polymerase and the following cycling conditions: (i) denaturation: 95\u00b0C for 5 min; (ii) amplification (25 cycles): 98\u00b0C for 20 s, 55\u00b0C for 15 s, 72\u00b0C for 1 m; (iii) elongation: 72\u00b0C for 5 min. For the negative control and biofilm samples, the number of cycles was increased to 35 to amplify from low biomass. Illumina NexteraXT primers (or equivalents) were used to form a final library 427 bp in length, with the following conditions: (i) denaturation: 95\u00b0C for 5 min; (ii) amplification (eight cycles): 98\u00b0C for 20 s, 55\u00b0C for 15 s, 72\u00b0C for 1 m; (iii) elongation: 72\u00b0C for 10 min. DNA was purified with AMPure XP beads or SequalPrep plates, then samples were multiplexed in groups of 192 alongside control samples at a higher fraction, and spiked with PhiX or whole genome DNA libraries to a final concentration of 50% to increase sequence diversity. Library pools were sequenced at the Harvard Biopolymers Facility across five 250 bp paired end MiSeq v2 runs.\n\n### Sequencing analysis\n\nSamples were demultiplexed using the Illumina BaseSpace demultiplexer analysis tool. All subsequent bioinformatic analysis was performed in QIIME2 v2020.2 (Bolyen et al., 2019). Demultiplexed samples were dereplicated using DADA2 sample inference to tabulate Amplicon Sequencing Variants (ASVs) (Callahan et al., 2016). Next, for qualitative description of composition, taxonomy (to the genus level) was assigned to each feature by alignment to the SILVA 132 database (Quast et al., 2013) using the taxa-barplot plugin. For quantitative analysis, samples with technical issues (e.g. contamination, low biomass, poor sequence quality, etc.) were removed and the remaining 698 samples were rarefied to 6840 reads. The fragment-insertion plugin was used to generate a rooted phylogenetic tree using the SEPP algorithm (Janssen et al., 2018). The diversity plugin was used to calculate Shannon diversity, ASV richness, and weighted UniFrac distance (Lozupone et al., 2011), which was used to perform Principle Coordinate Analysis (PCoA) and PERMANOVA analysis.\n\n### Isolating strains\n\nColonies from imaging plates for the inoculum and endpoint timepoints of the DDR64 and follow-up washout experiments were re-struck on NB agar plates, grown overnight in 0.1X NB media, and stored frozen at \u221280\u00b0C in 15% glycerol. Primers prCM215 (CCATTGTAGCACGTG-TGTAGCC) and prCM216 (ACTCCTACGGGAGGCAGC) were used to amplify the v3-v7 16S region for Sanger sequencing and identification.\n\n### Growth characterization of isolates\n\nSeveral strains with different taxonomic background were selected from the collection of isolates for further study. For measurement of r/K values, nine strains were struck onto NB plates, and single colonies were grown to stationary phase overnight at 30\u00b0C, then diluted to an OD600 of 0.001 in triplicate 200 uL cultures in dilute NB media (ranging from 0.1X to <0.0016X, plus a water-only negative control) in 96-well microplates grown in a Tecan spectrophotometer for 36 hr at 30\u00b0C, shaking, with lid on. Growth rates were fit to log transformed OD600 data, Lineweaver-Burke plots were constructed across media concentration, and Monod curves were fit to each species. Three strains that could grow in M9 defined minimal media were selected for characterization on different limiting resources. Strains were struck onto NB plates, and single colonies were grown to stationary phase overnight at 30\u00b0C in carbon-limited M9 supplemented with aspartate, glutamate, or proline, then diluted and grown in microplates as above, with amino acid concentrations ranging from 10 mM to <0.16 mM, plus a no-carbon control. Due to limited growth on these media, optical densities at sub-saturating resource concentrations were below the limit of detection, so only maximum growth rate at 10 mM amino acid was reported.\n\n### Data and materials availability\n\nAll sequencing data is deposited in the Sequence Read Archive (SRA) accessible with a BioProject accession code PRJNA719465. Agar plate images are being deposited on Figshare accessible at https://doi.org/10.6084/m9.figshare.15117558. Computer code used to run eVOLVER experiments and for theoretical modeling is available at https://github.com/khalillab/DDR-eVOLVER-model (copy archived at swh:1:rev:7019f031598169723a5828f3909eba1e199794d2;\u00a0Khalil, 2021). All other datasets required to produce the results in the current study are included as supplemental data.\n",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f310857a-b246-40fc-a075-16c75d343bee",
+      "submission_id": "2e42674a-7865-4dfa-8616-a67c545e7007",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67175.sa1](https://doi.org/10.7554/eLife.67175.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nHow species diversity responds to external perturbations (such as resource influxes and dilutions) is an important ecological question. Using soil microbial communities in devices where perturbations can be introduced in various forms and mathematical modelling, this study nicely illustrates how diversity is influenced by perturbations.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Environmental fluctuations reshape an unexpected diversity-disturbance relationship in a microbial community\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll three reviewers liked the topic and the combination of theory and experiments.\n\nEssential revisions include:\n\n1) Bridge your work with the literature on disturbance ecology literature.\n\n2) Address the point that mortality is both a disturbance event and an outcome in the continuous culture system.\n\n3) Application to systems other than continuous cultures.\n\n4) Analyze compositional data.\n\n5) Address the relevance of tradeoff, especially in more complex communities.\n\nReviewer #1 (Recommendations for the authors):\n\nDuring the presubmission stage, I have already given authors suggestions on how to improve their writing. They have greatly improved the clarity of their writing. As a result, the current version is a pleasure to read. The work is thorough, and nicely combines experiments and modelling.\n\nI have no major critiques. I have one comment: Presumably, when dilution rate increases more, species diversity will drop again as the dilution rate exceeds the maximal growth rates of many species? Authors should perhaps discuss that? Authors did discuss biofilm formation and how species persisted despite high dilution rate. I find this interesting.\n\nFigure 2. I am fairly sure that panel a is mislabeled. Low Resource 1 and high Resource 2: A should win according to the left panels.\n\nReviewer #2 (Recommendations for the authors):\n\nThank you for the opportunity to review this interesting work.\n\nQuestion of application to non-equilibrium systems\n\nWould like to see discussion of how the author's implementation of DDR would apply (or not) to non-equilibrium ecosystems. Or, is this outcome most useful in a context similar to continuous culture? Related, ecosystem disturbances often alter not only the amount of resources available (high/low concentrations), but also the types or number of resources available, potentially shifting competitive advantages to entirely different sets of taxa. A next extension could be to account for those resource dynamics in the modeling.\n\nA philosophical note: One may perceive that the condition of \"constant\" disturbance/mortality with continuous flow is not a disturbance to the continuous culture system, it is the equilibrium condition, analogous to a lentic aquatic system. The flow-through is the \"normal\", the disturbance would be the stoppage of the flow or periodic interruption of it, perhaps in the lentic system as during a mid-summer drought. With this idea, there would be some situations in which the \"constant\" change in the environment is actually the low disturbance intensity, and the periodic change in the environment is intermediate, and abrupt end of environmental change high disturbance. Again, the disturbance is defined relative to the ecosystem of interest \u2013 would be interesting to discuss or at mention how the ecosystem traits may result in the inverse disturbance intensity gradient from what is used here, and how that may impact the outcome/interpretation\n\nThough I understand the importance of simple models for developing quantitative theory, I wonder about the application of this particular U-shaped DDR and modeling approach to more realistic communities that contain more than ~10 taxa. At minimum, suggest to discuss the implications of the DDR and modeling given more diverse communities \u2013 with hundreds to thousands of taxa? Does it still hold?\n\nReviewer #3 (Recommendations for the authors):\n\nHere are some major comments and suggestions to the authors.\n\n1) Diversity in data and theory? The data clearly shows that the U-shape of the diversity-disturbance relationship (DDR) is a robust and reproducible feature of experiments. Moreover, Figure S10 clearly shows that different measures of diversity (richness and Shannon diversity) follow the same patterns for the data. Is this true also for the model?\n\n2) Parameter choice. The authors considered 10 species competing for 7 resources. This choice can support at stationarity at most 7 species. Figure S10 shows that, at least for some conditions, many more \"species\" coexist. Is the particular choice of the number of species in the initial pool and the number of resources important? Does it affect the final results?\n\n3) Importance of the tradeoff (in theory). Figure 2 emphasizes the importance of the tradeoff to see the niche flip. This is also discussed explicitly in the supplement in the two species and two resources case. There it is shown that, for a very high dilution rate, the tradeoff \"across different resources\" can also lead to niche-flip (which is shown in Figure 16c). It is unclear to me, in the end, if the tradeoff matters or not for the niche flip. If it does not matter, what is the essential ingredient? I think that this aspect should be better discussed in the text.\n\n4) \"If we consider an even higher dilution rate, r/K tradeoffs on each resource are no longer required for niche-flip because r/K tradeoffs across different resources can also lead to niche-flip.\" This argument is clear for two species / two resources. But I do not understand what r/K tradeoff across different resources means for more than two resources. Does it mean that it is enough to find a pair of resources such that such a tradeoff exists?\n\n5) Existence of the tradeoff (in data). Figure S7 cannot be used as evidence of the tradeoff. The existence of an \"unoccupied parameter space\" in the top right of the plot is driven only by the presence of one data point with a significantly higher value of r/K. In other words, I do not think that the correlation between r/K and r is statistically significant.\n",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2d20d848-9173-4629-ac8e-cc6cd7ac9b9f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C1",
+      "claim": "Environmental disturbances have long been theorized to play a significant role in shaping the diversity and composition of ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental disturbances have long been theorized to play a significant role in shaping the diversity and composition of ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ecological theory that is widely accepted in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "3eaf7f8f-a222-41ad-8fd6-3fd00cbd8368",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C2",
+      "claim": "An inability to specify the characteristics of a disturbance experimentally has produced an inconsistent picture of diversity-disturbance relationships (DDRs).",
+      "claim_type": "EXPLICIT",
+      "source": "However, an inability to specify the characteristics of a disturbance experimentally has produced an inconsistent picture of diversity-disturbance relationships (DDRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the state of the field and is supported by the context of the research problem being addressed.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "dae49ca8-b5c2-42bb-b1f8-071f258c0895",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C3",
+      "claim": "A soil-derived bacterial community was subjected to dilution disturbance profiles with different intensities using a high-throughput programmable culture system.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a high-throughput programmable culture system, we subjected a soil-derived bacterial community to dilution disturbance profiles with different intensities (mean dilution rates), applied either constantly or with fluctuations of different frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "3721a65a-5e2e-42d7-9025-f79921a9807a",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C4",
+      "claim": "An unexpected U-shaped relationship between community diversity and disturbance intensity was observed in the absence of fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an unexpected U-shaped relationship between community diversity and disturbance intensity in the absence of fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "89af313f-e5df-45e4-bad4-40ffa9d973c9",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C5",
+      "claim": "Adding fluctuations increased community diversity and erased the U-shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding fluctuations increased community diversity and erased the U-shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "62b69c33-a6ff-4b80-b064-668b681efcd3",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C6",
+      "claim": "All experimental results are well-captured by a Monod consumer resource model.",
+      "claim_type": "EXPLICIT",
+      "source": "All our results are well-captured by a Monod consumer resource model, which also explains how U-shaped DDRs emerge via a novel 'niche flip' mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the modeling results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "d5e055c1-4f49-4274-b6a9-6a8dbe811e43",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C7",
+      "claim": "U-shaped DDRs emerge via a novel 'niche flip' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "All our results are well-captured by a Monod consumer resource model, which also explains how U-shaped DDRs emerge via a novel 'niche flip' mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is described and demonstrated through modeling in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "2bb16965-b51e-46fb-b2eb-6e1b25986069",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C8",
+      "claim": "Biodiversity is a cornerstone of ecosystem stability and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Biodiversity is a cornerstone of ecosystem stability and function (Tilman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tilman et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "2b2060e7-82ac-4cf1-97c1-de90f757dbf8",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C9",
+      "claim": "Environmental changes influence species diversity in all ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is well appreciated that environmental changes influence species diversity in all ecosystems, the exact nature of this critical relationship is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ecological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "b0b508c3-6e51-40b1-8951-d566ac0f716f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C10",
+      "claim": "The exact nature of the relationship between environmental changes and species diversity is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is well appreciated that environmental changes influence species diversity in all ecosystems, the exact nature of this critical relationship is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement sets up the research problem and is based on the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "231b27fd-dbed-46da-8197-7e4088f5e0d5",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C11",
+      "claim": "The Intermediate Disturbance Hypothesis proposes that species diversity peaks at intermediate disturbance intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "A famous example is the Intermediate Disturbance Hypothesis (Connell, 1978; Huston, 1979), in which species diversity peaks at intermediate disturbance intensities (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Connell, 1978 and Huston, 1979, and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "46bea89d-1f27-4722-87e2-e63e9628710e",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C12",
+      "claim": "DDRs derived from observational studies of disparate ecosystems and disturbance regimes often have inconsistent results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DDRs derived from observational studies of disparate ecosystems and disturbance regimes often have inconsistent results (Mackey and Currie, 2001; Hughes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mackey and Currie, 2001 and Hughes et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "d28f5b45-4b29-4261-b3fa-5913faf06125",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C13",
+      "claim": "Earlier assertions that disturbance weakens or interrupts competition have been refuted by both theory and empirical findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier assertions that disturbance weakens or interrupts competition (Connell, 1978; Huston, 1979) have been refuted by both theory (Chesson and Huntly, 1997; Fox, 2013) and empirical findings (Violle et al., 2010) that harsher environments instead reinforce dependence on limiting factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to theoretical and empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "6dcb3147-a700-47dd-9151-327e5527a651",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C14",
+      "claim": "Harsher environments reinforce dependence on limiting factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier assertions that disturbance weakens or interrupts competition (Connell, 1978; Huston, 1979) have been refuted by both theory (Chesson and Huntly, 1997; Fox, 2013) and empirical findings (Violle et al., 2010) that harsher environments instead reinforce dependence on limiting factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chesson and Huntly, 1997; Fox, 2013; and Violle et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "89fa5dc7-47dd-4ce1-b52b-f732b3b3f0ce",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C15",
+      "claim": "Environmental fluctuations associated with a disturbance may stabilize communities by creating temporal niches.",
+      "claim_type": "EXPLICIT",
+      "source": "The environmental fluctuations associated with a disturbance may in fact stabilize communities by creating temporal niches, similar to seasonal effects (Levins, 1979; Chesson, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Levins, 1979 and Chesson, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "c8fb9e0a-c8a0-4414-9614-a0fe348fa567",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C16",
+      "claim": "Coexistence can be promoted in a fluctuation-dependent manner due to storage effects or if species exhibit relative non-linearities in their competitive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, coexistence can be promoted in a fluctuation-dependent manner due to storage effects (e.g. dormancy in poor conditions) or if species exhibit relative non-linearities in their competitive responses (e.g. differently shaped growth curves) (Chesson, 1994; Letten et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chesson, 1994 and Letten et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "bfbd436b-0a8d-4d44-b31c-b579722a1b4d",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C17",
+      "claim": "Coexistence might arise from the overall time-averaged disturbance intensity in a fluctuation-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, coexistence might also arise from the overall time-averaged disturbance intensity in a fluctuation-independent manner (Chesson and Huntly, 1997; Fox, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chesson and Huntly, 1997 and Fox, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "25e2120b-e29a-4967-a574-461a17ab9b82",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C18",
+      "claim": "Experimental findings and theory have suggested that diverse DDRs could arise when considering disturbance intensity and frequency independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental findings (Benedetti-Cecchi et al., 2006; Hall et al., 2012) and theory (Miller et al., 2011) have suggested that diverse DDRs could arise when considering these factors independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental and theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "499269b3-29af-4879-aa12-7dd94bf505d2",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C19",
+      "claim": "Microbes are easily quantified with next-generation sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbes are easily quantified with next-generation sequencing (Gohl et al., 2016; Bolyen et al., 2019; Callahan et al., 2016; Janssen et al., 2018), and have been widely used in the laboratory to model community assembly (Friedman et al., 2017; Venturelli et al., 2018; Goldford et al., 2018), cross-feeding relationships (Mee et al., 2014), and succession (Chuang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to sequencing methods and microbial ecology studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "fcf08d6d-69da-4544-9e21-90414b74c673",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C20",
+      "claim": "Dilution is the most common choice for a laboratory disturbance because it causes species-independent mortality and replenishes the system with fresh nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Dilution is perhaps the most common choice for a laboratory disturbance, as it causes species-independent mortality and replenishes the system with fresh nutrients, reminiscent of flow in soil, aquatic, or gut microbiomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental practice in microbial ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "fd924cff-c921-4c41-8614-05e4d34b390e",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C21",
+      "claim": "There is a direct link between the dilution disturbance event (removal of culture volume) and the biological outcome (mortality of community members).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike disturbances with indirect biological impacts (such as pH, temperature, or osmolarity disturbances), there is a direct link between the dilution disturbance event (removal of culture volume) and the biological outcome (mortality of community members).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about the nature of dilution as a disturbance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "e11eed93-8da5-44be-9ae8-660344e3631c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C22",
+      "claim": "Coexistence has been observed at intermediate dilution levels in simple batch culture experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In simple batch culture experiments, where cultures remain undisturbed except for a periodic dilution step, coexistence has been observed at intermediate dilution levels (Gibbons et al., 2016; Abreu et al., 2019), although different DDRs arise under different dilution regimes (Hall et al., 2012), suggesting that the dilution parameter space is vastly under-sampled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gibbons et al., 2016 and Abreu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "7c230992-07cb-42fb-8a57-566aa83065c3",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C23",
+      "claim": "Different DDRs arise under different dilution regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "In simple batch culture experiments, where cultures remain undisturbed except for a periodic dilution step, coexistence has been observed at intermediate dilution levels (Gibbons et al., 2016; Abreu et al., 2019), although different DDRs arise under different dilution regimes (Hall et al., 2012), suggesting that the dilution parameter space is vastly under-sampled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hall et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "982def66-5f77-45dd-a022-3748f3ffcad3",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C24",
+      "claim": "The dilution parameter space is vastly under-sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "In simple batch culture experiments, where cultures remain undisturbed except for a periodic dilution step, coexistence has been observed at intermediate dilution levels (Gibbons et al., 2016; Abreu et al., 2019), although different DDRs arise under different dilution regimes (Hall et al., 2012), suggesting that the dilution parameter space is vastly under-sampled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that different DDRs arise under different regimes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f12d530c-dfe4-469b-924c-bd6461d6db8b",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C25",
+      "claim": "eVOLVER is a flexible and automated continuous culture platform that enables independent control over conditions in a large number of mini-bioreactors.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we developed eVOLVER, a flexible and automated continuous culture platform that enables independent control over conditions in a large number of mini-bioreactors (Wong et al., 2018; Heins et al., 2019), thus opening up the possibility to explore microbial community dynamics under controlled, multidimensional environmental disturbances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wong et al., 2018 and Heins et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "c82529c2-13fa-44ab-8d89-7a013da01f2f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C26",
+      "claim": "Replicate samples of a soil-derived microbiome were cultivated in separate eVOLVER bioreactor arrays in dilute Nutrient Broth for six days.",
+      "claim_type": "EXPLICIT",
+      "source": "We cultivated replicate samples of a soil-derived microbiome in separate eVOLVER bioreactor arrays in dilute Nutrient Broth for six days (comprising 20\u201390 generations), during which continuously diluted cultures approached a stable composition (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure and is supported by data in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "5128684f-9fa1-4c57-91b6-511b751f2046",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C27",
+      "claim": "Continuously diluted cultures approached a stable composition over six days.",
+      "claim_type": "EXPLICIT",
+      "source": "We cultivated replicate samples of a soil-derived microbiome in separate eVOLVER bioreactor arrays in dilute Nutrient Broth for six days (comprising 20\u201390 generations), during which continuously diluted cultures approached a stable composition (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "e36aa680-15bc-42a8-8220-17490c6a3e28",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C28",
+      "claim": "In a chemostat, the flow of media into the vessel is matched by flow of spent media and cells out of the vessel, so disturbance intensity is directly related to dilution rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In a chemostat, the flow of media into the vessel is matched by flow of spent media and cells out of the vessel, so disturbance intensity is directly related to dilution rate (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a fundamental principle of chemostat operation, illustrated in Figure 1b.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "ffdec189-a54f-484d-80c9-880bdc4e543e",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C29",
+      "claim": "Decreasing biomass of the cultures was observed at increasing dilution rates.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed decreasing biomass of the cultures at increasing dilution rates (Figure 1c and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1c and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "e711ac6d-e05a-4654-91e2-35c352bd6289",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C30",
+      "claim": "The number of surviving species at intermediate dilution rate was roughly half of the number at either low or high dilution rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, after quantifying the composition of each culture, we observed a U-shaped diversity-disturbance relationship (Figure 1c), with the number of surviving species at intermediate dilution rate at roughly half of the number at either low or high dilution rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "1628018f-8090-430f-a82c-afa0317359df",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C31",
+      "claim": "U-shaped DDRs are uncommon in empirical observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although U-shaped DDRs are uncommon in empirical observations (Mackey and Currie, 2001; Hughes et al., 2007), the conditions under which we observed it were quite straightforward: constantly applied disturbance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mackey and Currie, 2001 and Hughes et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "c3711e2d-ded8-439f-9b26-7ada8a737584",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C32",
+      "claim": "U-shaped DDRs have been reported for other disturbance characteristics such as frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We were particularly intrigued because a U-shaped relationship between diversity and disturbance intensity does not agree with historical wisdom (Huston, 1979), although U-shaped DDRs have been reported for other disturbance characteristics such as frequency (Miller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Miller et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "39b07787-0149-4db1-9b78-aa9416042d57",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C33",
+      "claim": "In consumer resource models, species growth rates are a function of resource concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In consumer resource models, species growth rates are a function of resource concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of consumer resource models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f5eb8920-c945-4120-97c9-dd94ba6672fd",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C34",
+      "claim": "Resource depletion rates are a function of species abundances in consumer resource models.",
+      "claim_type": "EXPLICIT",
+      "source": "Resource depletion rates are in turn a function of species abundances, so species interact by competing for the same limiting resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of consumer resource models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f2f8b664-ed6e-4090-b3a2-71b0c4285f5c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C35",
+      "claim": "Species interact by competing for the same limiting resources in consumer resource models.",
+      "claim_type": "EXPLICIT",
+      "source": "Resource depletion rates are in turn a function of species abundances, so species interact by competing for the same limiting resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of consumer resource models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f15d6fff-00dd-4fcd-aba4-c1483db27cc5",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C36",
+      "claim": "The ZNGIs intersect with each axis at c* values, which are the concentration of a particular resource necessary for a species to survive at the specified mortality rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the ZNGIs intersect with each axis in the Tilman diagram at c* values, which are the concentration of a particular resource necessary for a species to survive at the specified mortality rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from Tilman diagram analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "eefc8de8-d674-48a6-bc8b-a36bf4116f9c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C37",
+      "claim": "The ZNGIs define the boundary of supplied resource combinations that will support growth of a species.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the ZNGIs define the boundary of supplied resource combinations that will support growth of a species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle of Tilman diagram analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "932d4e1c-2626-4926-bf1f-c2cc65ce37ec",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C38",
+      "claim": "If the ZNGIs intersect with each other, coexistence is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "If the ZNGIs intersect with each other, coexistence is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle of Tilman diagram analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "18f0b758-d620-4f19-ae45-32b7a22575c4",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C39",
+      "claim": "The ZNGIs shift toward higher resource levels at higher disturbance intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "First, since higher mortality rates require higher growth rates to maintain equilibrium, more resources are required to maintain equilibrium. Accordingly, the ZNGIs shift toward higher resource levels at higher disturbance intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the relationship between mortality, growth, and resource requirements.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f22b8aa8-f148-41f5-88d2-092d7aa5015a",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C40",
+      "claim": "For saturating growth models, the growth rate of each species may change relative to each other as resource levels increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, for saturating growth models, the growth rate of each species may change relative to each other as resource levels increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of saturating growth models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "df492c40-057e-4800-8537-0be9e7ca4a1e",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C41",
+      "claim": "A U-shaped DDR can be generated if the coexistence region disappears at intermediate disturbance intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "In a competition between two species, a U-shaped DDR can be generated if this coexistence region disappears at intermediate disturbance intensities (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "63a7ccd9-17a4-4502-a726-3ed2ca73513e",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C42",
+      "claim": "Niche-flip occurs when the ZNGIs and invasion boundaries flip as disturbance intensity increases, such that at some intermediate intensity the invasion boundaries align and the coexistence region disappears.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this is possible if the ZNGIs and invasion boundaries flip as disturbance intensity increases, such that at some intermediate intensity the invasion boundaries align and the coexistence region disappears (Figure 2b). We term this behavior 'niche-flip'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a novel mechanism proposed and demonstrated in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "93cd6b83-5390-4cba-8584-f5e9f4edee59",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C43",
+      "claim": "Under niche-flip, the winner of competition at a given supply point changes as disturbance intensity varies concomitantly with resource availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Under niche-flip, the winner of competition at a given supply point changes as disturbance intensity varies concomitantly with resource availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the niche-flip mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "7b24f386-3beb-4b55-810f-791a9ef6d8ce",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C44",
+      "claim": "In Monod growth kinetics, growth scales with the concentration of resource but saturates to a maximal growth rate r according to a half-saturation constant K.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, growth scales with the concentration of resource, but saturates to a maximal growth rate r according to a half-saturation constant K (Figure 2c and Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of Monod growth kinetics, illustrated in Figure 2c.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "a4aca18b-4e52-4dad-9edb-b06a8eee4c6c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C45",
+      "claim": "A species with high maximum growth rate r may be outcompeted at low resource levels by a species with a low saturation constant K.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, a species with high maximum growth rate r may be outcompeted at low resource levels by a species with a low saturation constant K, such that the outcome of competition varies depending on nutrient levels (and thus dilution rate \u03b4) as described above (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a consequence of Monod growth kinetics, illustrated in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "4693288b-b863-422a-b1d3-0aefb3c572cc",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C46",
+      "claim": "Theoretical analysis of the Monod model with two species and two resources shows that ZNGIs and invasion boundaries undergo niche-flip as dilution rate increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical analysis of the Monod model with two species and two resources shows that ZNGIs and invasion boundaries undergo niche-flip as dilution rate increases (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through theoretical analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "87105756-3b2f-4ea2-97d5-64f6e72ad1a7",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C47",
+      "claim": "The Monod consumer resource model recapitulates the U-shaped diversity dependence on disturbance intensity observed in chemostat experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitingly, we found that the Monod consumer resource model recapitulates the U-shaped diversity dependence on disturbance intensity that we observed in our chemostat experiments (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "4d4f699c-6c4c-45bd-bc1a-aaea3351ab25",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C48",
+      "claim": "In the absence of tradeoffs on any one resource, at sufficiently high dilution rates, niche flip and a U-shaped DDR can arise from combinations of two or more resources such that the winner of competition is different at low vs. high equilibrium resource concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize briefly, in the absence of tradeoffs on any one resource, at sufficiently high dilution rates, niche flip and a U-shaped DDR can arise from combinations of two or more resources such that the winner of competition is different at low vs. high equilibrium resource concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result discussed in Appendix 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "0ee52f01-3c07-4834-9a48-2ccafa188f32",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C49",
+      "claim": "U-shaped DDRs were not observed for either linear consumer resource or Lotka-Volterra models.",
+      "claim_type": "EXPLICIT",
+      "source": "U-shaped DDRs were not observed for either linear consumer resource or Lotka-Volterra models; instead, diversity generally did not vary with disturbance intensity, even under alternative parameter regimes (Appendix 1\u2014figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "458247b6-b573-4120-a3ec-696ed4a02dff",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C50",
+      "claim": "The Monod consumer resource model best captured the U-shaped behavior of microbial communities under constant disturbance among simple models of competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that the Monod consumer resource model best captured the U-shaped behavior of our microbial communities under constant disturbance among simple models of competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing different models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f674f7a1-6f82-47fc-821d-a58e2a25f5ad",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C51",
+      "claim": "Growth rates of bacterial isolates from the community experiments varied as a function of nutrient composition and saturated at relevant nutrient concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rates varied as a function of nutrient composition and indeed saturated at relevant nutrient concentrations, exhibiting tradeoffs between r and K such that no species had both a fast growth rate and low saturation coefficient (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "daf712d7-bf35-4476-a041-a87df3695b6a",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C52",
+      "claim": "Bacterial isolates exhibited tradeoffs between r and K such that no species had both a fast growth rate and low saturation coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rates varied as a function of nutrient composition and indeed saturated at relevant nutrient concentrations, exhibiting tradeoffs between r and K such that no species had both a fast growth rate and low saturation coefficient (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "4f727617-1192-4cd8-b0f1-2b0618447811",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C53",
+      "claim": "The isolate with highest growth rate varied for different amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, as Nutrient Broth is undefined, we repeated the above experiment in carbon-limited M9 minimal media supplemented with varying concentrations of amino acids as a sole carbon source. Although we were unable to fit Monod parameters due to limited growth, we observed that the isolate with highest growth rate varied for different amino acids (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "160f3ad6-c716-4977-9a67-16b64a7d511c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C54",
+      "claim": "Experimental observations provide evidence for Monod growth kinetics under these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These two experimental observations provide evidence for Monod growth kinetics under these conditions, and suggest that species could undergo niche-flip to generate U-shaped DDRs under constant disturbance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations of growth saturation and resource preferences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "b8fba517-e451-4186-8b0f-22669887ee1f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C55",
+      "claim": "The Monod consumer resource simulations predict significantly higher diversity in fluctuating conditions comprised of one or more dilution events per day.",
+      "claim_type": "EXPLICIT",
+      "source": "The Monod consumer resource simulations predict significantly higher diversity in fluctuating conditions comprised of one or more dilution events per day, with the lowest-frequency (i.e. largest-fluctuation) regime predicted to maintain the most diversity (Figure 3e and Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Figure 3e and Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "ccc080fd-0409-491a-b07e-e484229a6bf9",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C56",
+      "claim": "The lowest-frequency (i.e. largest-fluctuation) regime is predicted to maintain the most diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The Monod consumer resource simulations predict significantly higher diversity in fluctuating conditions comprised of one or more dilution events per day, with the lowest-frequency (i.e. largest-fluctuation) regime predicted to maintain the most diversity (Figure 3e and Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Figure 3e and Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "70184bc6-1029-4595-94af-aa309e4792c6",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C57",
+      "claim": "The DDR is reshaped entirely from U-shaped to largely uniform by fluctuations, indicating that community composition in the Monod model is conclusively fluctuation-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the DDR is reshaped entirely \u2013 from U-shaped to largely uniform \u2013 indicating that community composition in the Monod model is conclusively fluctuation-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results showing how fluctuations reshape the DDR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "0354b4ae-9b9b-4c3d-b356-08d57422acd7",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C58",
+      "claim": "Neither Lotka-Volterra nor linear consumer resource models predict differences in the DDR between fluctuation frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, neither Lotka-Volterra nor linear consumer resource models predict differences in the DDR between fluctuation frequencies (Appendix 1\u2014figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "dce82577-090c-49a1-80b6-df5648c09cc9",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C59",
+      "claim": "In Lotka-Volterra and linear consumer resource models, the relevant metric is the time-averaged overall intensity, rather than the frequency, of disturbance.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap of DDRs of different frequencies indicates that in these models the relevant metric is the time-averaged overall intensity, rather than the frequency, of disturbance (Chesson and Huntly, 1997; Fox, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results, supported by citations to Chesson and Huntly, 1997 and Fox, 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "07bce73e-f914-49ab-b18b-10566c4ea039",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C60",
+      "claim": "Replicate samples of the soil-derived microbiome were continuously cultured for 6 days across 64 eVOLVER bioreactors with varying mean dilution rate and dilution frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We cultivated replicate samples of the soil-derived microbiome in eVOLVER for 6 days, taking samples every 24 hr to quantify composition (Figure 3\u2014figure supplement 1, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure for the DDR64 experiment, illustrated in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "1b60bc60-6532-4da2-bfd4-f3633029261b",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C61",
+      "claim": "The specific dilution profiles programmed were reflected in the optical density traces of each culture over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific dilution profiles we programmed were reflected in the optical density traces of each culture over time, showing differences between conditions but close agreement between replicates (Figure 3c and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3c and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "aa896a98-1326-4a7d-978d-2ac4d98c173f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C62",
+      "claim": "Cultures with higher optical densities tended to have larger population sizes measured by CFU/mL or DNA extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although optical density is a poorly defined population size metric for communities of different compositions, cultures with higher optical densities did tend to have larger population sizes measured by CFU/mL or DNA extraction (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "920f9e11-eddb-4a72-bd40-14f7c30c83ea",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C63",
+      "claim": "The genus-level composition of the community varied over time and between conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on 16S sequencing (Gohl et al., 2016; Bolyen et al., 2019; Callahan et al., 2016; Janssen et al., 2018), we observed that the genus-level composition of the community varied over time and between conditions (Figure 3d and Figure 3\u2014figure supplements 7 and 8, Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 3d and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "abaa50c3-90d9-45c5-8116-1b1a3e66d24b",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C64",
+      "claim": "Culture compositions diverged from the initial composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Culture compositions diverged from the initial composition, and while it is difficult to confirm that the endpoint represents true equilibrium (stable composition), the change in composition slows significantly by days 4\u20136, suggesting the endpoint state is approaching equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the sequencing data over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "35c66d05-efaf-4f5f-82a2-942bf0b7f1dc",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C65",
+      "claim": "The change in composition slows significantly by days 4\u20136, suggesting the endpoint state is approaching equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Culture compositions diverged from the initial composition, and while it is difficult to confirm that the endpoint represents true equilibrium (stable composition), the change in composition slows significantly by days 4\u20136, suggesting the endpoint state is approaching equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that composition changes slow over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "4021d9e8-9fe2-4701-acb4-d24a36ece5ff",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C66",
+      "claim": "Principal Coordinate Analysis revealed that constant dilution conditions and 1/day fluctuations diverged from each other, indicating a clear frequency-dependent effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal Coordinate Analysis revealed that constant dilution conditions and 1/day fluctuations diverged from each other, indicating a clear frequency-dependent effect, with the spread potentially modulated by mean dilution rate (Figure 3\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCoA analysis shown in Figure 3\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "54bf01f3-2621-4dae-b34d-461287d5a489",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C67",
+      "claim": "PERMANOVA statistical analysis of endpoint compositions confirmed that dilution frequency had a significant effect on composition.",
+      "claim_type": "EXPLICIT",
+      "source": "PERMANOVA statistical analysis of endpoint compositions confirmed that dilution frequency (but not mean dilution rate) had a significant effect on composition, but not mean dilution rate (Figure 3\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "c65c02f8-ff4d-4b4c-8d80-35d6770e9ea6",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C68",
+      "claim": "Mean dilution rate did not have a significant effect on composition according to PERMANOVA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "PERMANOVA statistical analysis of endpoint compositions confirmed that dilution frequency (but not mean dilution rate) had a significant effect on composition, but not mean dilution rate (Figure 3\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "983f807c-735f-4b9c-ad0c-6cb3ec9e1fca",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C69",
+      "claim": "Resulting compositions were largely similar between replicates despite starting from a diverse community with hundreds of species.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, despite starting from a diverse community with hundreds of species, we found resulting compositions to be largely similar between replicates (Figure 3\u2014figure supplements 2 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplements 2 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "645a3574-080d-4dab-a74a-9091f6c2a05e",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C70",
+      "claim": "Endpoint diversity trends across disturbance intensity and fluctuation frequency are qualitatively consistent with the Monod consumer resource model in three ways: (1) U-shaped diversity curves in regimes of constant disturbance and small frequent disturbances, (2) larger fluctuations preserved higher levels of diversity, and (3) larger fluctuations reshaped the diversity-disturbance curves towards a more uniform relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated Shannon diversity for each timepoint (Figure 3\u2014figure supplement 10, Figure 3\u2014source data 1) and found that endpoint diversity trends across disturbance intensity and fluctuation frequency are qualitatively consistent with the Monod consumer resource model in three ways (Figure 3e and f, and Figure 3\u2014figure supplement 11). (1) We observed U-shaped diversity curves in regimes of constant disturbance and small frequent disturbances, in both experiment and simulations. (2) Larger fluctuations preserved higher levels of diversity, and (3) larger fluctuations reshaped the diversity-disturbance curves towards a more uniform relationship.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3f and modeling results in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "5264d713-8860-49fb-9dee-5f16b21d2d70",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C71",
+      "claim": "General results were consistent across different diversity metrics: Shannon diversity of 16S ASVs, richness of 16S ASVs, and richness of colony morphotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "These general results were consistent across different diversity metrics: Shannon diversity of 16S ASVs (Amplicon Sequence Variants), richness of 16S ASVs, and richness of colony morphotypes (Figure 3\u2014figure supplement 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "3605ae3c-3780-43c0-909b-82df1508f59c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C72",
+      "claim": "A subsequent and independent 48-vial experiment from frozen inoculum reproduced the results of the DDR64 experiment in overlapping parts of the parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the reproducibility of our results, we ran a subsequent and independent 48-vial experiment from frozen inoculum at dilution rates ranging from 0.3 h\u22121 to 1.5 h\u22121 (Figure 3\u2014figure supplements 1 and 3). In overlapping parts of the parameter space, we were able to reproduce the results of the DDR64 experiment (Figure 3\u2014figure supplements 7, 10 and 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from the washout experiment shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "810ae3ad-4e19-4231-a2dd-e962c9d4f9c5",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C73",
+      "claim": "Complete washout was not observed despite imposing dilution rates that exceed the maximum growth rate of the cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite imposing dilution rates that exceed the maximum growth rate of our cultures (Figure 3\u2014figure supplement 4), we did not observe complete washout (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "9b0cd6d8-9043-49c0-8498-698af5c85ae8",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C74",
+      "claim": "Modifying the Monod consumer resource model to include asymmetric mortality rates did not qualitatively change the shape of DDRs in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, modifying the Monod consumer resource model to include asymmetric mortality rates did not qualitatively change the shape of DDRs in simulations (Appendix 1\u2014figure 4), suggesting that our results could be robust to these types of effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "c284167c-1f2b-45a5-8d60-d59893e1d8d7",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C75",
+      "claim": "The model captures the features of experimental results well while being relatively simple and non-parameterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found it striking that the model captures the features of our results so well while being relatively simple and non-parameterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the model's performance relative to its complexity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "1214847d-22eb-4190-b456-b29816f95ac0",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C76",
+      "claim": "A diverse repertoire of DDRs can emerge from the combination of disturbance intensity and frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations revealed that a diverse repertoire of DDRs can emerge from the combination of these two disturbance characteristics (intensity and frequency).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "25257267-260e-417b-b175-3b94c8018ec6",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C77",
+      "claim": "By exploring subsets of the disturbance parameter space, every major class of DDR was observed: positive, negative, neutral, peaked, and U-shaped.",
+      "claim_type": "EXPLICIT",
+      "source": "By exploring subsets of this parameter space, we observed every major class of DDR: positive, negative, neutral, peaked, and U-shaped (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "50625f2a-737a-4656-a810-6e6628e39dcb",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C78",
+      "claim": "Different behaviors can emerge from similar communities maintained under different portions of the disturbance parameter range.",
+      "claim_type": "EXPLICIT",
+      "source": "Different behaviors can emerge from similar communities maintained under different portions of the disturbance parameter range, or when similar disturbances are applied to communities with different growth parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results showing diverse DDRs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "9ca0d200-20c4-4edd-81ec-f957fd76a26c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C79",
+      "claim": "A unifying framework that considers both disturbance intensity and fluctuation can reconcile disparate DDR observations without invoking more complex phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "By simply examining these two disturbance characteristics in a systematic way, we developed a unifying framework that can reconcile disparate DDR observations without invoking more complex phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "3f3aa007-9c08-460b-9a6b-d4c625d3898f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C80",
+      "claim": "The U-shaped DDR and frequency-dependence were maintained for nearly all model variations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, as detailed below, the U-shaped DDR and frequency-dependence were maintained for nearly all model variations, indicating that disturbance intensity and fluctuations remained important predictive factors of community diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the various model variations tested and described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f756380e-c0d1-4530-8b98-00f995677c5a",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C81",
+      "claim": "The U shape and fluctuation-dependent DDR changes were preserved when removing growth rate normalization between species.",
+      "claim_type": "EXPLICIT",
+      "source": "In one example, we explored larger relative fitness differences between species by removing growth rate normalization between species, but the U shape and fluctuation-dependent DDR changes were preserved (Appendix 1\u2014figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "df8fbbcb-8cae-46bd-88e2-2130f9c1a9de",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C82",
+      "claim": "Model results were robust to increased simulation length and 10-fold increased resource supply, but not 10-fold decreased resource supply.",
+      "claim_type": "EXPLICIT",
+      "source": "In another, we chose parameters in ranges that diverged from experimental conditions and found the model results to be robust to increased simulation length (Appendix 1\u2014figure 3d) and 10-fold increased resource supply (Appendix 1\u2014figure 3b), but not 10-fold decreased resource supply (Appendix 1\u2014figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figures 3b, 3c, and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "d6a963a6-efaa-4278-8f65-ca834c7d228f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C83",
+      "claim": "At increased number of species and resources, a U-shaped DDR is still observed, although its relative impact on total diversity is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "At increased number of species and resources, a U-shaped DDR is still observed, although its relative impact on total diversity is reduced (Appendix 1\u2014figure 3i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figure 3i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "9c522cd4-05bf-4efa-b8dd-a2b65f621ef8",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C86",
+      "claim": "A non-additive formulation of Monod growth on mixed substrates produced similar U-shaped DDRs and frequency dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we employed a non-additive formulation of Monod growth on mixed substrates (Sears and Chesson, 2007); similar U-shaped DDRs and frequency dependence were observed (Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "51cd8910-561e-49f7-a702-6c0e263013eb",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C87",
+      "claim": "Incorporating migration or species-specific death rates increased or decreased the maximum diversity of the system, but the U-shaped DDR and frequency-dependence were maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we incorporated the possibilities of migration or species-specific death rates in different models. These modifications respectively increased or decreased the maximum diversity of the system, but the U-shaped DDR and frequency-dependence were maintained (Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "27409141-beee-4a7c-a816-b9cd701d50d0",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C88",
+      "claim": "Over a wide range of model variations, disturbance intensity and fluctuations remained important factors shaping the diversity of ecosystems in a predictable manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, we found it striking that over a wide range of model variations, disturbance intensity and fluctuations remained important factors shaping the diversity of ecosystems in a predictable manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from testing multiple model variations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "1d2e425f-40e2-43ec-bb78-e2ce1a2bc567",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C89",
+      "claim": "Replicable patterns in composition and diversity of a soil-derived microbial community were found across different disturbance regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, advances in automated continuous culture technology and next-generation sequencing enabled laboratory microbial ecology studies to systematically dissect the role of environmental disturbance (intensity and fluctuation) with fine resolution at scale. We found replicable patterns in composition and diversity of a soil-derived microbial community across different disturbance regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "6a708028-212e-4ca7-8b78-fb648a52b61c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C90",
+      "claim": "All experimental results are well captured by the Monod consumer resource model.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these results are well captured by the Monod consumer resource model, which subsequently led us to describe and propose a novel niche-flip mechanism for structuring these ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing experimental and modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "3b99972d-5f1d-4bba-a471-d5f654f025d2",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C91",
+      "claim": "The combined experimental and modeling results provide new insight into how microbial community assembly depends on environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these combined experimental and modeling results (1) provide new insight into how microbial community assembly depends on environmental conditions and (2) demonstrate a role for environmental fluctuations in promoting diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contributions of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "bfc0fce8-9541-4801-8768-c6beb1f69726",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C92",
+      "claim": "The combined experimental and modeling results demonstrate a role for environmental fluctuations in promoting diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these combined experimental and modeling results (1) provide new insight into how microbial community assembly depends on environmental conditions and (2) demonstrate a role for environmental fluctuations in promoting diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contributions of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "85ef28d7-37c0-4e58-8d34-4b3ae2887f6d",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C93",
+      "claim": "Diverse classes of DDRs (including increasing, decreasing, and peaked) could emerge when only subsets of the parameter space are sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the behavior of the Monod model over a broad range of disturbance intensities and frequencies, we see that diverse classes of DDRs (including increasing, decreasing, and peaked) could emerge when only subsets of the parameter space are sampled (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "3ff7a274-a997-4e76-a60a-1b2384fac293",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C94",
+      "claim": "Understanding how disturbance intensity and frequency interact is essential for reconciling disparate observations of DDRs under a single quantitative unifying framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding how disturbance intensity and frequency interact is essential for reconciling disparate observations of DDRs under a single quantitative unifying framework (Mackey and Currie, 2001; Hughes et al., 2007; Hall et al., 2012; Miller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the work, supported by citations to previous studies showing disparate observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "1517c318-9b9e-4d21-8f1e-d05fe9460dc9",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C95",
+      "claim": "The niche-flip mechanism is quite generalizable across varying assumptions and formulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulation findings indicate that the niche-flip mechanism is quite generalizable across varying assumptions and formulations, and thus would predict similar roles for other disturbance types and conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the robustness of the mechanism across model variations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "4b8960ab-1bff-4c6a-95ac-ff9df2b08bd8",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C96",
+      "claim": "The growth saturation feature of the Monod model that enables niche-flip is also characteristic of Type II and III functional responses used in consumer resource models across different scales of ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the growth saturation feature of the Monod model that enables niche-flip is also characteristic of Type II and III functional responses used in consumer resource models across different scales of ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generality of the growth saturation feature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "6c3fa7d6-dda0-4ced-82fc-58659044fee0",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C97",
+      "claim": "Niche flip could be a more general principle extending beyond relative growth non-linearities to systems driven by dynamic abiotic stresses and/or storage effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, niche flip could be a more general principle extending beyond relative growth non-linearities explored in this work to systems driven by dynamic abiotic stresses and/or storage effects (Sears and Chesson, 2007; Angert et al., 2009; Usinowicz et al., 2017; Hallinen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the broader applicability of the niche-flip mechanism, supported by citations to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "768803d0-1e31-4c11-a9fa-d8e08b7fa445",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C98",
+      "claim": "The structure of ecosystems and their response to perturbation is contextual.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, our results highlight that the structure of ecosystems and their response to perturbation is contextual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "9125f72a-c4cb-4a7e-b5be-d9eb15057781",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C99",
+      "claim": "Increasing the disturbance intensity can increase, decrease, or have no effect on the diversity of a system.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that increasing the disturbance intensity can increase, decrease, or have no effect on the diversity of a system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental and modeling results showing different DDR shapes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "31eed16a-954c-496d-bbe3-854c6dab16da",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C100",
+      "claim": "Under a unifying framework that considers both disturbance intensity and frequency, the relationships between disturbance and diversity become predictable rather than idiosyncratic.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically however, we found that under a unifying framework that considers both disturbance intensity and frequency, these relationships become predictable rather than idiosyncratic (Hall et al., 2012; Miller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the work, supported by citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "4b7d2d63-60f4-46e2-b1c2-3b8d14682fa8",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C101",
+      "claim": "Complex ecosystem assembly rules can emerge from temporal structure alone, without invoking other organizing principles such as spatial structure or network structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, these complex ecosystem assembly rules can emerge from temporal structure alone, without invoking other organizing principles, such as spatial structure (Gude et al., 2020) or network structure (e.g. cross-feeding and antagonism) (Mee et al., 2014; Kelsic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the work, supported by citations to studies on other organizing principles.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "ecc479b0-c175-4d06-ad6c-3a85311e0b11",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C102",
+      "claim": "The relative importance of any one organizing factor (temporal, spatial, or network effects) is likely ecosystem dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "While we considered both constant and oscillating temporal patterns of disturbance, additional complexity may arise from temporal patterns that are random or those which change which types of resources available over time. Since complexity can arise from temporal, spatial, and network effects, the relative importance of any one organizing factor is likely ecosystem dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the generality of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "18c8bfc3-0ae6-4958-97e6-6a6fc7cc1f49",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C103",
+      "claim": "Predictable response to perturbation depends on context, so designing predictable interventions to ecosystems will require the ability to measure and understand the environmental context.",
+      "claim_type": "EXPLICIT",
+      "source": "If predictable response to perturbation depends on context, then designing predictable interventions to ecosystems (in medicine, agriculture, and conservation) will require the ability to measure and understand the environmental context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference drawn from the finding that ecosystem response is contextual.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "d12ce7cd-6418-4e81-9467-6877a338df8e",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "claim_id": "C104",
+      "claim": "With the staggering amount of compositional data being generated with high-throughput sequencing of microbiomes, inference of environmental context and design of robust ecological interventions may not be far off.",
+      "claim_type": "EXPLICIT",
+      "source": "With the staggering amount of compositional data being generated with high-throughput sequencing of microbiomes (Thompson et al., 2017), inference of environmental context and design of robust ecological interventions may not be far off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications, supported by a citation to Thompson et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f50ed6e-8d01-4236-af2a-cf4103c46c14",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A U-shaped diversity-disturbance relationship (DDR) was observed under constant dilution disturbance, where diversity at intermediate dilution rates was approximately half that at low or high dilution rates, with decreasing biomass at increasing dilution rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C29, and C30 collectively demonstrate a U-shaped DDR under constant disturbance conditions. The experimental data in Figure 1c shows decreasing biomass with increasing dilution rate (C29) and quantifies the U-shaped diversity pattern (C30), providing strong empirical support for this unexpected finding (C4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "8c713794-bc25-4dff-a397-db9e3aa3ccd7",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Adding fluctuations to the disturbance regime increased community diversity and eliminated the U-shaped DDR, with results consistent across multiple diversity metrics (Shannon diversity, ASV richness, colony morphotype richness).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C70, and C71 are well-supported by experimental data from the DDR64 experiment shown in Figures 3e-f and supplementary figures. The consistency across different diversity metrics (C71) strengthens the conclusion that fluctuations reshape DDRs in a predictable manner.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "d68f25ab-e3e5-48f6-924c-477ef49b1122",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A Monod consumer resource model with saturating growth kinetics successfully recapitulates the experimental U-shaped DDR and outperforms alternative models (linear consumer resource and Lotka-Volterra) in capturing the observed diversity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47, C50, and C90 demonstrate strong agreement between the Monod model predictions and experimental observations. The model comparison (C49-C50) and the qualitative match shown in Figure 2c provide compelling evidence that the Monod model captures key features of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "6ce1f00e-042c-4b0a-9dd5-2471237adaf9",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A novel 'niche-flip' mechanism explains how U-shaped DDRs emerge in the Monod model: as disturbance intensity increases, ZNGIs and invasion boundaries flip such that at intermediate intensities the coexistence region disappears, causing competitive exclusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C41-C43, and C46 describe a mechanistically coherent explanation for U-shaped DDRs. The theoretical analysis shown in Figure 2b demonstrates the niche-flip phenomenon, and the mechanism is logically consistent with Monod growth kinetics. However, direct experimental validation of the mechanism itself (as opposed to its predictions) is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "34423b70-18cc-4a2d-9500-7d792c94d008",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bacterial isolates from the community experiments exhibited growth saturation consistent with Monod kinetics, with r/K tradeoffs and resource-dependent growth preferences, providing experimental support for the modeling assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by growth characterization data in Figure 3\u2014figure supplement 4. The observation of saturating growth curves and r/K tradeoffs (C51-C52) provides evidence for Monod growth kinetics under experimental conditions, though the limited number of isolates tested and inability to fit Monod parameters in minimal media (C53) somewhat limit the strength of this validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "84bf1800-3cdf-4e95-93ed-84a14bac87fb",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Monod consumer resource model simulations predict that fluctuating disturbance conditions maintain significantly higher diversity than constant disturbance, with lowest-frequency (largest-fluctuation) regimes maintaining the most diversity and completely reshaping the DDR from U-shaped to uniform.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by modeling results shown in Figure 3e and supplementary figures. The predictions are clear and quantitative, showing both increased diversity with fluctuations and the reshaping of DDRs. These predictions are subsequently validated experimentally (C70).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "bb050ebd-e0c4-4782-b906-cdba58fc158f",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lotka-Volterra and linear consumer resource models do not predict differences in DDRs between fluctuation frequencies, indicating that in these models the relevant metric is time-averaged disturbance intensity rather than frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by modeling results in Appendix 1\u2014figures 1 and 2. This comparison strengthens the argument that the Monod model's saturating growth kinetics are essential for capturing fluctuation-dependent effects, distinguishing it from alternative modeling frameworks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "16b91cfe-1f95-4c86-b1ff-fc75856d195a",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the DDR64 experiment, 64 replicate bacterial communities were cultured under systematically varied disturbance intensity and frequency conditions, showing reproducible compositional changes over time with high similarity between replicates despite starting from a diverse community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61, C63, and C69 describe the experimental design and reproducibility. The data in Figures 3b-d and supplementary figures demonstrate successful implementation of the experimental design with good reproducibility between replicates, providing a solid foundation for the diversity analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "9bce000f-901d-470e-916b-4dc7d19889c0",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Statistical analysis (PCoA and PERMANOVA) revealed that dilution frequency had a significant effect on community composition, while mean dilution rate did not have a significant effect on composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C68 present statistical results from Figure 3\u2014figure supplement 9. While PERMANOVA confirmed frequency effects (C67), the lack of significant pairwise differences after FDR correction and the non-significant effect of dilution rate (C68) are somewhat inconsistent with the observed U-shaped DDR. The statistical power may be limited, or the composition changes may be more subtle than diversity changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "9bbbe564-da79-4c45-a0d7-48db894e896c",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A subsequent independent 48-vial washout experiment from frozen inoculum reproduced the results of the DDR64 experiment in overlapping parameter space regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by data in supplementary figures showing reproducibility across experiments. This independent replication strengthens confidence in the main findings, though the parameter space tested was limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "594e282e-1614-4585-bb41-787ebf71ae6b",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Complete washout was not observed despite imposing dilution rates exceeding the maximum growth rate of the cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 is supported by data in Figure 3\u2014figure supplement 3, but the authors acknowledge potential confounding factors (biofilm formation, incomplete mixing) that could explain this observation. The result suggests either measurement issues or biological mechanisms (e.g., biofilm refuge) not captured by the simple model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "3ed59efb-e8da-40c3-ad67-3689d7b914cc",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Extended Monod model simulations across a broad range of disturbance intensities and frequencies generate all major classes of DDRs (positive, negative, neutral, peaked, and U-shaped) depending on which subset of parameter space is sampled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 and C93 are supported by modeling results in Figure 4. The contour plot demonstrates that different DDR shapes emerge from different regions of the two-dimensional parameter space, providing a unifying framework for understanding disparate observations in the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "b913a078-be8a-4279-bfd1-c68298ab8048",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The U-shaped DDR and frequency-dependence are robust to numerous model variations including changes in growth rate normalization, simulation length, resource supply levels, number of species/resources, non-additive growth formulations, and inclusion of migration or species-specific death rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83, C86-C87 describe extensive robustness testing shown in Appendix 1 figures. The U-shaped DDR and frequency dependence persist across most variations, though some parameter regimes (e.g., 10-fold decreased resource supply, constant K values) eliminate these features, indicating boundary conditions for the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "53f73136-55ef-4677-ab8d-01523695ec5b",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Modifying the Monod model to include asymmetric mortality rates did not qualitatively change the shape of DDRs, suggesting robustness to differential mortality effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by modeling results in Appendix 1\u2014figure 4. This addresses a potential concern about the assumption of equal mortality rates across species in dilution disturbance, strengthening the applicability of the model to real systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "feaf9e8c-7c8f-47e2-94a1-7790a51a3b54",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Continuously diluted cultures approached stable composition over six days (20-90 generations), with composition changes slowing significantly by days 4-6, suggesting approach to equilibrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26-C27 and C64-C65 describe temporal dynamics supported by data in supplementary figures. While the slowing of compositional change (C65) suggests approach to equilibrium, the authors acknowledge difficulty in confirming true equilibrium (C64). Six days may be insufficient for some conditions to reach stable equilibrium, potentially affecting interpretation of endpoint diversity measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "9b573dfe-7893-4e3b-89db-ea345a5288e3",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The eVOLVER automated continuous culture platform enabled systematic exploration of microbial community dynamics under controlled, multidimensional environmental disturbances with independent control over dilution intensity and frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25, and C26 describe the experimental platform and approach. The successful implementation of 64 parallel cultures with precise control over disturbance profiles (shown in Figure 3c) demonstrates the technical capability, though this is primarily a methodological achievement rather than a biological finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "90dacfef-65b8-4c0b-925b-537f6212af85",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A unifying framework considering both disturbance intensity and frequency can reconcile disparate DDR observations from the literature, making the relationships between disturbance and diversity predictable rather than idiosyncratic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C94, and C100 present the overarching conceptual contribution. The modeling results in Figure 4 demonstrate how different DDR shapes emerge from different regions of parameter space, providing a potential explanation for inconsistent literature findings. However, direct validation against specific literature examples is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "f73dc731-6393-491d-922b-30d1bbb88bd0",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The niche-flip mechanism is generalizable across varying assumptions and formulations, and the growth saturation feature enabling niche-flip is characteristic of Type II and III functional responses used across different scales of ecology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 are supported by the robustness testing (C80-C87) and theoretical considerations. The generality of saturating functional responses in ecology (C96) suggests broad applicability, though empirical testing in other systems is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "ac6b3233-8e16-420b-940c-e29f0d9aa3dc",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Cultures with higher optical densities tended to have larger population sizes measured by CFU/mL or DNA extraction, though optical density is a poorly defined population size metric for communities of different compositions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by correlation data in Figure 3\u2014figure supplement 6. The moderate correlations (R\u00b2 = 0.15-0.54) indicate that OD provides a rough proxy for population size, but the authors appropriately acknowledge its limitations for mixed communities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Environmental disturbances play a significant role in shaping ecosystem diversity, but an inability to experimentally specify disturbance characteristics has produced inconsistent DDR observations, with earlier competition-based theories being refuted by more recent work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C14 establish the background and motivation for the study. These are well-supported by citations to the ecological literature and accurately represent the state of the field, providing appropriate context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "a371280b-a091-4f46-b267-f59eb2f4c5ce",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Environmental fluctuations may stabilize communities through temporal niche creation, with coexistence potentially promoted in either fluctuation-dependent or fluctuation-independent manners, and experimental/theoretical work suggesting diverse DDRs when considering intensity and frequency independently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 summarize prior theoretical and experimental work on fluctuation effects, supported by appropriate citations. This establishes the conceptual framework for distinguishing fluctuation-dependent from fluctuation-independent mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "52463c04-258e-4133-89d1-8ce27ce748a3",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The combined experimental and modeling results provide new insights into how microbial community assembly depends on environmental conditions, demonstrate a role for environmental fluctuations in promoting diversity, and show that complex ecosystem assembly rules can emerge from temporal structure alone without invoking spatial or network structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 and C98-C99, C101 summarize the main contributions of the work. These conclusions are well-supported by the experimental and modeling results, though the claim about temporal structure alone (C101) is somewhat overstated given that resource competition (a form of network interaction) is central to the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    },
+    {
+      "id": "21866be6-4c7e-48f8-9010-690dd3ac9d7b",
+      "content_id": "7b095404-655e-4c76-bf53-f96ca574aefc",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Niche-flip could extend to systems driven by dynamic abiotic stresses and/or storage effects, the relative importance of organizing factors is likely ecosystem-dependent, and with increasing microbiome sequencing data, inference of environmental context and design of ecological interventions may be achievable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97, C102-C104 are speculative statements about future directions and broader implications. While logically reasonable, these claims lack direct empirical support and represent hypotheses for future testing rather than established results from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:15:44.189124Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3721a65a-5e2e-42d7-9025-f79921a9807a",
+      "result_id": "3f50ed6e-8d01-4236-af2a-cf4103c46c14"
+    },
+    {
+      "claim_id": "ffdec189-a54f-484d-80c9-880bdc4e543e",
+      "result_id": "3f50ed6e-8d01-4236-af2a-cf4103c46c14"
+    },
+    {
+      "claim_id": "e711ac6d-e05a-4654-91e2-35c352bd6289",
+      "result_id": "3f50ed6e-8d01-4236-af2a-cf4103c46c14"
+    },
+    {
+      "claim_id": "89af313f-e5df-45e4-bad4-40ffa9d973c9",
+      "result_id": "8c713794-bc25-4dff-a397-db9e3aa3ccd7"
+    },
+    {
+      "claim_id": "645a3574-080d-4dab-a74a-9091f6c2a05e",
+      "result_id": "8c713794-bc25-4dff-a397-db9e3aa3ccd7"
+    },
+    {
+      "claim_id": "5264d713-8860-49fb-9dee-5f16b21d2d70",
+      "result_id": "8c713794-bc25-4dff-a397-db9e3aa3ccd7"
+    },
+    {
+      "claim_id": "62b69c33-a6ff-4b80-b064-668b681efcd3",
+      "result_id": "d68f25ab-e3e5-48f6-924c-477ef49b1122"
+    },
+    {
+      "claim_id": "87105756-3b2f-4ea2-97d5-64f6e72ad1a7",
+      "result_id": "d68f25ab-e3e5-48f6-924c-477ef49b1122"
+    },
+    {
+      "claim_id": "458247b6-b573-4120-a3ec-696ed4a02dff",
+      "result_id": "d68f25ab-e3e5-48f6-924c-477ef49b1122"
+    },
+    {
+      "claim_id": "6a708028-212e-4ca7-8b78-fb648a52b61c",
+      "result_id": "d68f25ab-e3e5-48f6-924c-477ef49b1122"
+    },
+    {
+      "claim_id": "d5e055c1-4f49-4274-b6a9-6a8dbe811e43",
+      "result_id": "6ce1f00e-042c-4b0a-9dd5-2471237adaf9"
+    },
+    {
+      "claim_id": "df492c40-057e-4800-8537-0be9e7ca4a1e",
+      "result_id": "6ce1f00e-042c-4b0a-9dd5-2471237adaf9"
+    },
+    {
+      "claim_id": "63a7ccd9-17a4-4502-a726-3ed2ca73513e",
+      "result_id": "6ce1f00e-042c-4b0a-9dd5-2471237adaf9"
+    },
+    {
+      "claim_id": "93cd6b83-5390-4cba-8584-f5e9f4edee59",
+      "result_id": "6ce1f00e-042c-4b0a-9dd5-2471237adaf9"
+    },
+    {
+      "claim_id": "4693288b-b863-422a-b1d3-0aefb3c572cc",
+      "result_id": "6ce1f00e-042c-4b0a-9dd5-2471237adaf9"
+    },
+    {
+      "claim_id": "f674f7a1-6f82-47fc-821d-a58e2a25f5ad",
+      "result_id": "34423b70-18cc-4a2d-9500-7d792c94d008"
+    },
+    {
+      "claim_id": "daf712d7-bf35-4476-a041-a87df3695b6a",
+      "result_id": "34423b70-18cc-4a2d-9500-7d792c94d008"
+    },
+    {
+      "claim_id": "4f727617-1192-4cd8-b0f1-2b0618447811",
+      "result_id": "34423b70-18cc-4a2d-9500-7d792c94d008"
+    },
+    {
+      "claim_id": "160f3ad6-c716-4977-9a67-16b64a7d511c",
+      "result_id": "34423b70-18cc-4a2d-9500-7d792c94d008"
+    },
+    {
+      "claim_id": "b8fba517-e451-4186-8b0f-22669887ee1f",
+      "result_id": "84bf1800-3cdf-4e95-93ed-84a14bac87fb"
+    },
+    {
+      "claim_id": "ccc080fd-0409-491a-b07e-e484229a6bf9",
+      "result_id": "84bf1800-3cdf-4e95-93ed-84a14bac87fb"
+    },
+    {
+      "claim_id": "70184bc6-1029-4595-94af-aa309e4792c6",
+      "result_id": "84bf1800-3cdf-4e95-93ed-84a14bac87fb"
+    },
+    {
+      "claim_id": "0354b4ae-9b9b-4c3d-b356-08d57422acd7",
+      "result_id": "bb050ebd-e0c4-4782-b906-cdba58fc158f"
+    },
+    {
+      "claim_id": "dce82577-090c-49a1-80b6-df5648c09cc9",
+      "result_id": "bb050ebd-e0c4-4782-b906-cdba58fc158f"
+    },
+    {
+      "claim_id": "07bce73e-f914-49ab-b18b-10566c4ea039",
+      "result_id": "16b91cfe-1f95-4c86-b1ff-fc75856d195a"
+    },
+    {
+      "claim_id": "1b60bc60-6532-4da2-bfd4-f3633029261b",
+      "result_id": "16b91cfe-1f95-4c86-b1ff-fc75856d195a"
+    },
+    {
+      "claim_id": "920f9e11-eddb-4a72-bd40-14f7c30c83ea",
+      "result_id": "16b91cfe-1f95-4c86-b1ff-fc75856d195a"
+    },
+    {
+      "claim_id": "983f807c-735f-4b9c-ad0c-6cb3ec9e1fca",
+      "result_id": "16b91cfe-1f95-4c86-b1ff-fc75856d195a"
+    },
+    {
+      "claim_id": "4021d9e8-9fe2-4701-acb4-d24a36ece5ff",
+      "result_id": "9bce000f-901d-470e-916b-4dc7d19889c0"
+    },
+    {
+      "claim_id": "54bf01f3-2621-4dae-b34d-461287d5a489",
+      "result_id": "9bce000f-901d-470e-916b-4dc7d19889c0"
+    },
+    {
+      "claim_id": "c65c02f8-ff4d-4b4c-8d80-35d6770e9ea6",
+      "result_id": "9bce000f-901d-470e-916b-4dc7d19889c0"
+    },
+    {
+      "claim_id": "3605ae3c-3780-43c0-909b-82df1508f59c",
+      "result_id": "9bbbe564-da79-4c45-a0d7-48db894e896c"
+    },
+    {
+      "claim_id": "810ae3ad-4e19-4231-a2dd-e962c9d4f9c5",
+      "result_id": "594e282e-1614-4585-bb41-787ebf71ae6b"
+    },
+    {
+      "claim_id": "1214847d-22eb-4190-b456-b29816f95ac0",
+      "result_id": "3ed59efb-e8da-40c3-ad67-3689d7b914cc"
+    },
+    {
+      "claim_id": "25257267-260e-417b-b175-3b94c8018ec6",
+      "result_id": "3ed59efb-e8da-40c3-ad67-3689d7b914cc"
+    },
+    {
+      "claim_id": "85ef28d7-37c0-4e58-8d34-4b3ae2887f6d",
+      "result_id": "3ed59efb-e8da-40c3-ad67-3689d7b914cc"
+    },
+    {
+      "claim_id": "3f3aa007-9c08-460b-9a6b-d4c625d3898f",
+      "result_id": "b913a078-be8a-4279-bfd1-c68298ab8048"
+    },
+    {
+      "claim_id": "f756380e-c0d1-4530-8b98-00f995677c5a",
+      "result_id": "b913a078-be8a-4279-bfd1-c68298ab8048"
+    },
+    {
+      "claim_id": "df8fbbcb-8cae-46bd-88e2-2130f9c1a9de",
+      "result_id": "b913a078-be8a-4279-bfd1-c68298ab8048"
+    },
+    {
+      "claim_id": "d6a963a6-efaa-4278-8f65-ca834c7d228f",
+      "result_id": "b913a078-be8a-4279-bfd1-c68298ab8048"
+    },
+    {
+      "claim_id": "9c522cd4-05bf-4efa-b8dd-a2b65f621ef8",
+      "result_id": "b913a078-be8a-4279-bfd1-c68298ab8048"
+    },
+    {
+      "claim_id": "51cd8910-561e-49f7-a702-6c0e263013eb",
+      "result_id": "b913a078-be8a-4279-bfd1-c68298ab8048"
+    },
+    {
+      "claim_id": "9b0cd6d8-9043-49c0-8498-698af5c85ae8",
+      "result_id": "53f73136-55ef-4677-ab8d-01523695ec5b"
+    },
+    {
+      "claim_id": "c82529c2-13fa-44ab-8d89-7a013da01f2f",
+      "result_id": "feaf9e8c-7c8f-47e2-94a1-7790a51a3b54"
+    },
+    {
+      "claim_id": "5128684f-9fa1-4c57-91b6-511b751f2046",
+      "result_id": "feaf9e8c-7c8f-47e2-94a1-7790a51a3b54"
+    },
+    {
+      "claim_id": "abaa50c3-90d9-45c5-8116-1b1a3e66d24b",
+      "result_id": "feaf9e8c-7c8f-47e2-94a1-7790a51a3b54"
+    },
+    {
+      "claim_id": "35c66d05-efaf-4f5f-82a2-942bf0b7f1dc",
+      "result_id": "feaf9e8c-7c8f-47e2-94a1-7790a51a3b54"
+    },
+    {
+      "claim_id": "dae49ca8-b5c2-42bb-b1f8-071f258c0895",
+      "result_id": "9b573dfe-7893-4e3b-89db-ea345a5288e3"
+    },
+    {
+      "claim_id": "f12d530c-dfe4-469b-924c-bd6461d6db8b",
+      "result_id": "9b573dfe-7893-4e3b-89db-ea345a5288e3"
+    },
+    {
+      "claim_id": "c82529c2-13fa-44ab-8d89-7a013da01f2f",
+      "result_id": "9b573dfe-7893-4e3b-89db-ea345a5288e3"
+    },
+    {
+      "claim_id": "9ca0d200-20c4-4edd-81ec-f957fd76a26c",
+      "result_id": "90dacfef-65b8-4c0b-925b-537f6212af85"
+    },
+    {
+      "claim_id": "3ff7a274-a997-4e76-a60a-1b2384fac293",
+      "result_id": "90dacfef-65b8-4c0b-925b-537f6212af85"
+    },
+    {
+      "claim_id": "31eed16a-954c-496d-bbe3-854c6dab16da",
+      "result_id": "90dacfef-65b8-4c0b-925b-537f6212af85"
+    },
+    {
+      "claim_id": "1517c318-9b9e-4d21-8f1e-d05fe9460dc9",
+      "result_id": "f73dc731-6393-491d-922b-30d1bbb88bd0"
+    },
+    {
+      "claim_id": "4b8960ab-1bff-4c6a-95ac-ff9df2b08bd8",
+      "result_id": "f73dc731-6393-491d-922b-30d1bbb88bd0"
+    },
+    {
+      "claim_id": "aa896a98-1326-4a7d-978d-2ac4d98c173f",
+      "result_id": "ac6b3233-8e16-420b-940c-e29f0d9aa3dc"
+    },
+    {
+      "claim_id": "2d20d848-9173-4629-ac8e-cc6cd7ac9b9f",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "3eaf7f8f-a222-41ad-8fd6-3fd00cbd8368",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "2bb16965-b51e-46fb-b2eb-6e1b25986069",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "2b2060e7-82ac-4cf1-97c1-de90f757dbf8",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "b0b508c3-6e51-40b1-8951-d566ac0f716f",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "231b27fd-dbed-46da-8197-7e4088f5e0d5",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "46bea89d-1f27-4722-87e2-e63e9628710e",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "d28f5b45-4b29-4261-b3fa-5913faf06125",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "6dcb3147-a700-47dd-9151-327e5527a651",
+      "result_id": "55d9ad57-e4f2-4c64-9bfd-f08cf0a02435"
+    },
+    {
+      "claim_id": "89fa5dc7-47dd-4ce1-b52b-f732b3b3f0ce",
+      "result_id": "a371280b-a091-4f46-b267-f59eb2f4c5ce"
+    },
+    {
+      "claim_id": "c8fb9e0a-c8a0-4414-9614-a0fe348fa567",
+      "result_id": "a371280b-a091-4f46-b267-f59eb2f4c5ce"
+    },
+    {
+      "claim_id": "bfbd436b-0a8d-4d44-b31c-b579722a1b4d",
+      "result_id": "a371280b-a091-4f46-b267-f59eb2f4c5ce"
+    },
+    {
+      "claim_id": "25e2120b-e29a-4967-a574-461a17ab9b82",
+      "result_id": "a371280b-a091-4f46-b267-f59eb2f4c5ce"
+    },
+    {
+      "claim_id": "3b99972d-5f1d-4bba-a471-d5f654f025d2",
+      "result_id": "52463c04-258e-4133-89d1-8ce27ce748a3"
+    },
+    {
+      "claim_id": "bfc0fce8-9541-4801-8768-c6beb1f69726",
+      "result_id": "52463c04-258e-4133-89d1-8ce27ce748a3"
+    },
+    {
+      "claim_id": "768803d0-1e31-4c11-a9fa-d8e08b7fa445",
+      "result_id": "52463c04-258e-4133-89d1-8ce27ce748a3"
+    },
+    {
+      "claim_id": "9125f72a-c4cb-4a7e-b5be-d9eb15057781",
+      "result_id": "52463c04-258e-4133-89d1-8ce27ce748a3"
+    },
+    {
+      "claim_id": "4b7d2d63-60f4-46e2-b1c2-3b8d14682fa8",
+      "result_id": "52463c04-258e-4133-89d1-8ce27ce748a3"
+    },
+    {
+      "claim_id": "6c3fa7d6-dda0-4ced-82fc-58659044fee0",
+      "result_id": "21866be6-4c7e-48f8-9010-690dd3ac9d7b"
+    },
+    {
+      "claim_id": "ecc479b0-c175-4d06-ad6c-3a85311e0b11",
+      "result_id": "21866be6-4c7e-48f8-9010-690dd3ac9d7b"
+    },
+    {
+      "claim_id": "18c8bfc3-0ae6-4958-97e6-6a6fc7cc1f49",
+      "result_id": "21866be6-4c7e-48f8-9010-690dd3ac9d7b"
+    },
+    {
+      "claim_id": "d12ce7cd-6418-4e81-9467-6877a338df8e",
+      "result_id": "21866be6-4c7e-48f8-9010-690dd3ac9d7b"
+    }
+  ],
+  "comparisons": []
+}

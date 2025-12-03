@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "T6SS3, but not T6SS1, mediates VPRH-independent cell death in BMDMs. Deletion of hns1 resulted in elevated secretion of both VgrG1 and Hcp3 in a T6SS1- and T6SS3-dependent manner, respectively. The \u0394vprh/\u0394hns1 mutant induced rapid cell death (~80% within 3 hours), which was completely abrogated upon genetic inactivation of T6SS3 but not T6SS1, without affecting bacterial growth or motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 provide converging evidence from genetic deletion experiments, secretion assays, and real-time microscopy showing that T6SS3 specifically mediates cell death in BMDMs. The data include appropriate controls (T6SS1 deletion, growth assays, motility assays) and demonstrate specificity of the T6SS3 effect. The complementation experiment (C70-C71) further validates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "T6SS3 induces cell death in BMDMs via an inflammasome-dependent pyroptotic pathway. Addition of inflammasome inhibitors (MCC950 or Vx765) resulted in ~40% reduction in cell death. IL-1\u03b2, Caspase-1, and GSDMD cleavage and secretion were dependent on T6SS3 and were inhibited by inflammasome inhibitors, while TNF\u03b1 secretion remained unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 demonstrate inflammasome involvement through pharmacological inhibition and biochemical markers. The use of two independent inhibitors targeting different steps (MCC950 for ASC oligomerization, Vx765 for Caspase-1) strengthens the conclusion. The TNF\u03b1 control (C63) confirms specificity to inflammasome pathways. However, the ~40% reduction rather than complete abolition suggests additional mechanisms may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74"
+    ],
+    "result": "T6SS3 activates a pyroptotic cell death program mediated directly by the NLRP3 inflammasome. Infection of Nlrp3-/- BMDMs resulted in delayed cell death and ~60% reduction in AUC, while Nlrp1-/- and Mlkl-/- BMDMs showed comparable cell death to WT. IL-1\u03b2, Caspase-1, and GSDMD cleavage and release were abrogated only in Nlrp3-/- BMDMs, with TNF\u03b1 secretion unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C74 provide strong genetic evidence using multiple knockout mouse strains. The specificity for NLRP3 (not NLRP1 or MLKL) is well-demonstrated. The TNF\u03b1 control confirms that NF-\u03baB-dependent priming is intact. The ~60% reduction (rather than complete abolition) in Nlrp3-/- cells suggests NLRP3-independent mechanisms also contribute, which is addressed in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In the absence of GSDMD, T6SS3 induces a compensatory cell death cascade comprising Caspase-1, Caspase-3 (but not Caspase-8), and GSDME. Gsdmd-/- BMDMs showed delayed but significant cell death with comparable IL-1\u03b2 secretion to WT. This alternative cascade still requires NLRP3 inflammasome, as evidenced by absence of cleaved Caspase-1, Caspase-3, and GSDME in Nlrp3-/- BMDMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 demonstrate a novel compensatory pathway using Gsdmd-/- mice. The biochemical evidence (immunoblots) clearly shows activation of Caspase-3 and GSDME in the absence of GSDMD. The requirement for NLRP3 (C80) is well-demonstrated. The absence of Caspase-8 activation distinguishes this from previously reported pathways. This is a significant mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Ats3 is a positive regulator that specifically activates T6SS3 but not T6SS1. Over-expression of Ats3 dramatically induced T6SS3 (elevated Hcp3 secretion) more strongly than hns1 deletion, while T6SS1 activity (VgrG1 secretion) remained unaltered. Ats3 over-expression had no effect on antibacterial activity but induced rapid, T6SS3-dependent, NLRP3-mediated cell death in BMDMs with IL-1\u03b2, Caspase-1, and GSDMD cleavage and release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 establish Ats3 as a specific T6SS3 activator through multiple lines of evidence: bioinformatic prediction, secretion assays, bacterial competition assays, and cell death assays. The specificity for T6SS3 over T6SS1 is well-demonstrated. This provides an important tool to decouple T6SS3 effects from global regulatory changes (hns1 deletion). The complementation experiments (C70-C71) further validate the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "T6SS3-mediated pyroptotic cell death requires phagocytosis and provides a survival advantage to V. proteolyticus. Cytochalasin D (phagocytosis inhibitor) abolished T6SS3-induced pyroptosis in both WT and Nlrp3-/- BMDMs, but did not affect V. parahaemolyticus T3SS1-induced cell death (control). Bacteria with active T6SS3 showed dramatic growth advantage over T6SS3- strains after 3 hr of BMDM infection, but comparable growth in the absence of BMDMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 demonstrate phagocytosis-dependence using cytochalasin D with appropriate controls (V. parahaemolyticus T3SS1). The bacterial survival advantage data (C96-C97) provide functional significance. However, the mechanism by which T6SS3 provides survival advantage (e.g., escape from phagosome, nutrient acquisition) is not determined. The data support the conclusion but leave mechanistic questions for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Tie1 and Tie2 are T6SS3 effectors necessary and sufficient to induce inflammasome-mediated cell death in BMDMs. Both proteins were secreted in a T6SS3-dependent manner. Deletion of both tie1 and tie2 completely abolished cell death and IL-1\u03b2 secretion without affecting T6SS3 functionality, bacterial growth, or motility. Over-expression of Tie1 alone or with Tie2 completely restored cell death, while Tie2 alone showed intermediate effect. Tie1 has a more pronounced effect than Tie2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 provide comprehensive evidence through secretion assays, deletion mutants, and complementation experiments. The bioinformatic analysis (C99) provides context. The genetic experiments clearly demonstrate necessity (deletions abolish phenotype) and sufficiency (complementation restores phenotype). The differential effects of Tie1 vs. Tie2 are well-documented. Controls for T6SS3 function, growth, and motility are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C8",
+      "C123"
+    ],
+    "result": "T6SS3-like gene clusters carrying Tie1/Tie2 homologs are found in other marine bacteria including human pathogens (V. parahaemolyticus, V. vulnificus) and are often adjacent to DNA mobility elements (integrases, transposases), suggesting horizontal gene transfer. These systems likely maintain inflammasome-inducing activity and may contribute to pathogenic potential and emergence of new pathogenic Vibrio strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114, C8, C123 are based on bioinformatic analysis showing similar gene clusters in other bacteria. While the genomic analysis is sound (presence of homologs, proximity to mobility elements), the functional claims (C114: systems maintain inflammasome-inducing activity; C123: contribute to emergence of pathogens) are speculative. No experimental validation of inflammasome activation by these homologous systems is provided. The evolutionary and epidemiological implications require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on T6SS function and anti-eukaryotic potential. T6SS is used by bacteria to deliver toxic effectors into target cells in a contact-dependent manner. Most T6SSs mediate antibacterial activities, while some deliver anti-eukaryotic effectors. The anti-eukaryotic potential of T6SSs remains understudied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C27-C31 provide established background knowledge supported by appropriate citations. These claims accurately represent the current understanding of T6SS biology and set the context for the study. This is standard background material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on innate immunity and inflammasome pathways. The innate immune system uses PRRs to detect PAMPs and DAMPs, leading to inflammasome assembly. Inflammasomes can induce pyroptosis and cytokine secretion through canonical (Caspase-1) and non-canonical (Caspase-11) pathways. The canonical pathway involves NLR family members (NLRP1, NLRP3, NLRC4, AIM2), ASC, Caspase-1, and GSDMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C26 provide comprehensive background on inflammasome biology, supported by appropriate citations. These claims accurately represent established knowledge about innate immunity and pyroptosis mechanisms. This is standard background material that contextualizes the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Background on Vibrio species and V. proteolyticus. Vibrios are marine bacteria including human pathogens that cause gastroenteritis and wound infections, with spread correlating with rising sea temperatures. V. proteolyticus encodes three T6SSs and a pore-forming hemolysin (VPRH), and induces VPRH-independent cell death in primary macrophages but not cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 provide background on Vibrio biology and V. proteolyticus, supported by appropriate citations including prior work by the authors. These claims establish the rationale for studying V. proteolyticus T6SS3 and its potential anti-eukaryotic role. The observation of VPRH-independent cell death (C46) provides the key motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Complementation of tssL3 in trans restored T6SS3 function and all inflammasome-mediated phenotypes. Over-expression of TssL3 had no effect on bacterial growth in MLB media but minor positive effect in DMEM media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide important validation that the observed phenotypes are due to T6SS3 activity rather than polar effects of the deletion. The complementation fully restores the phenotype. The growth data (C72-C73) show that TssL3 over-expression does not significantly impair bacterial fitness, validating the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Discussion of prior work and mechanistic speculation. Two other T6SS effectors (EvpP, TecA) indirectly affect inflammasome activation. IL-1\u03b2 release is ancient and conserved. A recent study reported similar GSDMD compensation via NLRP3 including Caspase-8. The authors propose direct Caspase-3 activation by Caspase-1 and speculate that Tie1/Tie2 targets are upstream of NLRP3, conserved between mammalian cells and marine animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C122 mix established prior work (C115-C118, C120-C121) with speculation about mechanisms (C119, C122). The speculation about direct Caspase-1 to Caspase-3 activation (C119) is reasonable given the absence of Caspase-8 activation, but lacks direct experimental validation. The hypothesis about Tie1/Tie2 targets being upstream of NLRP3 (C122) is logical but untested. These are appropriate discussion points but not demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

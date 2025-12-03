@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "DeepLabCut-Live! achieves low-latency real-time pose estimation with delays as low as 10 ms on GPUs and 30 ms on CPUs, with a forward-prediction module enabling sub-zero latency feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C16 provide specific latency measurements (10 ms GPU, 30 ms CPU, within 15 ms at >100 FPS) supported by experimental data in Figure 3 and Table 2. Claims C4 and C17 demonstrate the forward-prediction module achieving negative latencies (-13 \u00b1 61 ms) in the dog feedback experiment (C75, C76). Claim C5 shows dynamic cropping increases inference speed by 75% (C45). All claims are supported by comprehensive benchmarking data across multiple hardware platforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Inference speed is faster with smaller networks (MobileNetV2-0.35 vs ResNet-50), smaller images, and more powerful GPUs, achieving 152 \u00b1 15 FPS on Titan RTX and 134 \u00b1 9 FPS on GTX 1080 with medium-sized images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by extensive benchmarking data in Figure 2 and Table 1, showing expected performance trends across network architectures, image sizes, and hardware. Claims C39-C40 provide specific measurements that are directly reported in Table 1. The results are consistent with cited prior work (C34) and demonstrate systematic testing across multiple variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Downsizing images to 25% of original size results in minimal accuracy loss (RMSE = 7.59 pixels), but accuracy suffers at 12.5% scale (RMSE = 26.99-70.92 pixels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by experimental data in Figure 2\u2014figure supplement 2, showing systematic testing of accuracy across different image scales (12.5%-150%) and training configurations. The RMSE values are explicitly reported and contextualized relative to mouse body size (~115.7 pixels). The finding that 25% downsizing maintains accuracy while 12.5% does not is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Dynamic cropping increases inference speed by 75% while maintaining tracking accuracy (RMSE = 4.4-5.5 pixels for 50-25 pixel margins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by experimental data in Figure 2\u2014figure supplement 3, showing quantitative measurements of both speed improvements (59.6 \u2192 103.7-110.8 FPS) and accuracy impacts (RMSE values for different margins). The data demonstrates that dynamic cropping with appropriate margins (50-25 pixels) provides substantial speed gains with minimal accuracy loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The number of keypoints in the model has no effect on inference speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by experimental data in Figure 2\u2014figure supplement 4, which shows inference speeds for networks with 1, 7, 13, and 20 keypoints across different image sizes and architectures. This is an important finding for experimental design, demonstrating that users can track many keypoints without speed penalties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "DLC-Live! GUI achieves 10 \u00b1 1 ms latency from frame acquisition to pose estimation on Windows/GTX 1080, with only 0.4 ms additional delay for tongue detection and LED control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by experimental data from the mouse licking task presented in Figure 3 and Table 2. The measurements include frame-to-pose latency (10 \u00b1 1 ms), and the additional processing time for behavior detection and hardware control (0.4 ms, 95% CI: 0.3-0.6 ms). The methodology is clearly described and results are consistent across different hardware configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Bonsai-DLC performance is comparable to DeepLabCut-Live! with 34 ms \u00b1 9.5 ms latency at 30 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by comparative benchmarking data in Figure 4, showing equivalent performance between Bonsai-DLC (C#) and DeepLabCut-Live! (Python) implementations. This demonstrates that inference speed is limited by hardware rather than language interface, and validates the cross-platform portability of the protocol buffer export format.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "GPU load from particle simulations reduces DLC inference speeds, but balanced GPU load allows combining real-time pose estimation with visual environments on the same GPU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by experimental data in Figure 4 showing inference speed degradation with increasing particle counts (GPU load). The finding that balanced GPU load (<50%) maintains inference speeds is important for experimental design, particularly for VR applications. The results are consistent with cited work on visual environments (C91).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Autopilot integration achieves 64.6-161.3 ms latency depending on image size and frame rate, with inference time accounting for 50-70% of total latency and ~25 ms Autopilot overhead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by experimental data in Figure 5, showing systematic testing across image sizes (128\u00d7128 to 512\u00d7416) and frame rates (30-90 FPS). The latency decomposition analysis (C63-C64) demonstrates that inference time is the primary bottleneck. Claim C65 emphasizes affordability ($350 hardware), though this is a design principle rather than a performance metric. The overhead calculation (C66) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Dog feedback experiment achieved 22.4 \u00b1 0.9 FPS with 61 \u00b1 10 ms image-to-pose latency and 59 \u00b1 11 ms image-to-LED latency on Jetson Xavier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by experimental data from the dog rearing detection task. The measurements include both real-time performance (C70-C71) and offline analysis validation (C72: 70 \u00b1 23 ms delay). The consistency between real-time and offline measurements validates the methodology. However, the sample size for LED triggering events is small (N=9 rearing movements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Kalman filter forward-prediction achieved -13 \u00b1 61 ms delay, turning LED on/off 13 ms before the first rearing posture was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 demonstrate sub-zero latency feedback using the Kalman filter predictor in the dog experiment. The negative latency (-13 ms) is supported by experimental data in Figure 6D, comparing predicted trigger times to ideal times from offline analysis. However, the large standard deviation (\u00b161 ms) indicates substantial variability, and the sample size is small (N=9 movements). This represents a proof-of-concept rather than a fully validated system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Kalman filter prediction improves tracking accuracy when predicting up to 20 ms into the future in mouse reaching tasks, but produces larger errors when predicting \u226527.6 ms ahead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by offline analysis of mouse reaching data (150 FPS, n=153,279 frames) presented in Figure 6\u2014figure supplement 1. The cumulative distribution analysis shows that Kalman filter predictions outperform delayed poses for 1-3 frames (6.7-20 ms) but not for 4+ frames (\u226527.6 ms). This provides important guidance on the temporal limits of the forward-prediction approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Kalman filter is more effective at predicting further into the future for slower movements (mouse open field) compared to rapid movements (mouse reaching).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by comparative analysis of mouse open field data (30 FPS, n=2,330 frames) in Figure 6\u2014figure supplement 2. The Kalman filter maintains better performance when predicting 1-3 frames (33-100 ms) ahead in the slower open field task compared to the rapid reaching task. This demonstrates that prediction performance depends on movement dynamics, as expected from the Kalman filter assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "DeepLabCut-Live! achieves 2-3\u00d7 lower latency (11-16 ms) than prior real-time systems (30 ms) on comparable hardware, and equivalent performance (29-35 ms) on laptop CPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 cite prior work reporting 30 ms latencies. Claims C84-C85 provide comparative measurements showing 11-16 ms on GTX 1080 GPU and 29-35 ms on MacBook Pro CPU. The comparison is supported by experimental data in Table 2 and Figure 3. However, the comparison may not be entirely fair as different experimental setups, image sizes, and measurement methodologies could affect the results. The claim of 2-3\u00d7 improvement is valid for the specific configurations tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A model export module using protocol buffer format enables easy sharing and cross-platform deployment of DeepLabCut models without sharing entire projects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C22-C25 describe the protocol buffer export functionality. The implementation is demonstrated through successful integration into Python (DeepLabCut-Live!) and C# (Bonsai) applications (C25, C55). The protocol buffer format is well-established (C23) and the export functionality is documented in the methods. This is a significant software engineering contribution that enables the other results in the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "DeepLabCut-Live! package provides a simple SDK with minimal dependencies for loading models, performing inference, and implementing closed-loop feedback via Processor classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe the DeepLabCut-Live! package architecture and functionality. The design is validated through multiple implementations (DLG, Bonsai, Autopilot) and example code is provided. The Processor class design (C28-C31) is demonstrated in the mouse licking and dog rearing experiments. The flexibility claim (C32) is supported by the variety of hardware integrations shown. This represents a well-designed software architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DLC-Live! GUI provides parallel video acquisition and pose estimation with user-selectable 'Optimize Rate' or 'Optimize Latency' modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe the DLG architecture and modes. The design is validated through benchmarking experiments (Table 2, Figure 3) showing the trade-offs between the two modes. The parallel processing design (C49) enables high frame rates while the mode selection (C50) allows users to optimize for their specific needs. The implementation is clearly documented in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C7"
+    ],
+    "result": "A comprehensive benchmarking suite was developed and openly shared, providing performance metrics for 10 GPUs, 2 integrated systems, and 5 CPUs across different operating systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe the benchmarking suite and data sharing. The comprehensive results are presented in Table 1 and Figure 2, covering a wide range of hardware configurations. The open sharing (C21) with GitHub repository and website (https://deeplabcut.github.io/DLC-inferencespeed-benchmark/) enables community contributions. This is a valuable resource for experimental design and hardware selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DLG benchmarking methodology using pre-recorded videos at original acquisition rates accurately simulates real-time camera performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 describe and justify the benchmarking methodology. The approach is reasonable and the rationale is clearly stated (standardization across platforms, exposure of real delays). However, claim C98 assumes that achieving the desired frame rate makes results 'exactly equivalent' to physical camera performance, which may not account for all real-world factors (e.g., camera-specific delays, driver overhead). The methodology is appropriate for comparative benchmarking but may not capture all aspects of real-time camera operation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Kalman filter was chosen for forward prediction because it requires no training and can be tailored with 2-3 parameters, though performance depends on prediction horizon and movement dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 provide rationale and limitations for the Kalman filter approach. The design choice (C101) is justified by practical considerations. The limitations (C102-C103) are validated by experimental results (C77-C81). The acknowledgment of alternative approaches (C104-C105) and provision of example code demonstrates good scientific practice. This represents a pragmatic engineering solution with clear documentation of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "DeepLabCut is a state-of-the-art pose estimation package that can run at up to 2500 FPS on standard GPUs in offline batch processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 describe prior work on DeepLabCut, supported by citations to published papers (Mathis et al., 2018b, 2020a; Mathis and Warren, 2018). These claims provide context for the current work but are not novel contributions of this manuscript. The 2500 FPS claim refers to offline batch processing, which is distinct from the real-time performance reported in this paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Sub-zero latencies have only been achieved with marked animals, not previously with markerless pose estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by citations to prior work on marked (Sehara et al., 2019) and markerless (Zhao et al., 2019; Forys et al., 2020; \u0160tih et al., 2019; Schweihoff et al., 2019; Privitera et al., 2020) tracking systems. This contextualizes the novelty of achieving sub-zero latency with markerless tracking (C17, C75-C76). However, the claim 'to the best of our knowledge' introduces some uncertainty about the completeness of the literature review.",
+    "result_type": "MINOR"
+  }
+]

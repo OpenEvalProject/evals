@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "TDF mutants (rrd1, rrd2, rid4) are temperature-sensitive Arabidopsis mutants that form fasciated lateral roots at 28\u00b0C but not at 22\u00b0C, with fasciated LRs exhibiting exclusive enlargement of inner tissues. The TDF genes encode negative regulators of cell division important for size restriction of the central zone during early LR primordium formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the basic characterization of TDF mutants through citations to prior work (C1-C3) and logical inference from observed phenotypes (C4). The temperature-dependent fasciation phenotype and tissue-specific enlargement are well-documented in previous publications, providing a solid foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Fasciation of LRs in TDF mutants is caused by excess basal cells detectable as early as stage II of LR development, resulting from expansion of individual primordia rather than fusion of multiple primordia. The first 48 hours following LR induction are critical for this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 and C76-C78 are supported by quantitative morphometric data (Figure 1E, 1H, 1I) showing increased cell numbers and primordium width at 28\u00b0C with appropriate statistical analysis (Kruskal-Wallis test, p>0.3 for density). The timing is corroborated by both current observations and cited previous work, providing convergent evidence for the developmental window of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The TDF genes were identified through positional cloning: RRD1 (At3g25430) encodes a PARN-like protein, while RRD2 (At1g32415) and RID4 (At2g33680) encode PLS-class PPR proteins. The mutations include nonsense mutations (rrd1, rrd2, rid4-1) and a missense mutation (rid4-2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C25 are supported by genetic mapping data (Figure 2\u2014figure supplement 1), complementation tests (Figure 2\u2014figure supplement 2A, E), allelism tests (Figure 2\u2014figure supplement 2D), and sequence analysis (Figure 2A). The molecular characterization is rigorous with appropriate genetic controls, though some functional predictions (C22, C25) remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C6"
+    ],
+    "result": "All TDF proteins localize to mitochondria, with RRD1 and RID4 strongly expressed in apical meristems and lateral root primordia. A small fraction of RRD1 also resides in plastids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C26-C29 are supported by GFP reporter expression data (Figure 2B, 2D, 2E) and colocalization with MitoTracker Orange. The functional GFP constructs were validated by complementation (Figure 2\u2014figure supplement 4A, B), ensuring the fusion proteins are biologically relevant. The dual localization of RRD1 to mitochondria and plastids is documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C7"
+    ],
+    "result": "RRD1 is involved in poly(A) tail removal in mitochondrial mRNAs, with polyadenylated mitochondrial transcripts accumulating in rrd1 in a temperature-dependent manner. Multiple independent assays (microarray, qRT-PCR, CR-RT PCR, RACE-PAT) demonstrate this function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C32-C37 are supported by convergent evidence from multiple experimental approaches: microarray analysis (Figure 3A), qRT-PCR showing selective increase in polyadenylated transcripts (Figure 3B), CR-RT PCR demonstrating increased polyadenylated/non-polyadenylated ratio (Figure 3C), and RACE-PAT showing temperature-dependent accumulation (Figure 3D). The multiple independent methods provide strong support for RRD1's role in deadenylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C90"
+    ],
+    "result": "The recombinant RRD1 protein alone does not have deadenylase activity, lacking three of four catalytic amino acids essential for PARN function, indicating RRD1 requires additional factors for poly(A) tail removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C90 are supported by in vitro enzyme assays (Figure 3\u2014figure supplement 1D, E) and sequence analysis (Figure 3\u2014figure supplement 2) showing absence of critical DEDD catalytic residues. The conclusion that RRD1 requires cofactors is a reasonable inference from the combined biochemical and sequence data, though the identity of these factors remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Introduction of the ags1 mutation (affecting mitochondrial poly(A) polymerase) into rrd1 substantially decreases mitochondrial poly(A)+ transcript levels and significantly alleviates rrd1 phenotypes, demonstrating that accumulation of poly(A)+ mitochondrial transcripts is the primary cause of the rrd1 phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by genetic suppression analysis showing decreased poly(A)+ transcripts (Figure 4A) and phenotypic rescue of LR fasciation and growth defects (Figure 4B, C) in the rrd1 ags1 double mutant. This epistasis experiment provides strong evidence for the causal relationship between poly(A)+ transcript accumulation and the mutant phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C8"
+    ],
+    "result": "RRD2 and RID4 function as C-to-U RNA editing factors in mitochondria, with RRD2 targeting ccb2-71C and ccb3-575C, and RID4 targeting six sites including atp4-395C and multiple ribosomal protein genes. The proteins likely act via direct contact with their target sites based on upstream sequence similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C47-C52 are supported by comprehensive RNA sequencing analysis (Figure 5A, Figure 5\u2014figure supplements 1, 3, 4A) showing complete or near-complete loss of editing at specific sites. The identification of ccb3-575C as an RRD2 target agrees with prior work (C49), and sequence similarity among upstream regions (Figure 5\u2014figure supplement 4B) supports direct binding. The partial editing in rid4-2 (C50) is consistent with its missense mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C115"
+    ],
+    "result": "BN-PAGE analysis revealed substantial loss of complex V (ATP synthase) in rid4 at both 22\u00b0C and 28\u00b0C, likely caused by defective mRNA editing of atp4, while no noticeable differences in mitochondrial protein complexes were found in rrd1 and rrd2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C115 are supported by BN-PAGE data (Figure 5B) showing clear loss of complex V in rid4. The inference that this is due to atp4 editing defects (C54) is reasonable given that atp4 encodes a complex V subunit and its editing is abolished in rid4. The lack of detectable changes in rrd1 and rrd2 is explicitly stated, though this could reflect assay sensitivity limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C97",
+      "C98"
+    ],
+    "result": "Cyt c levels were decreased in rrd2 callus at 28\u00b0C (particularly after longer culture periods) but not at 22\u00b0C, demonstrating RRD2/CWM2's role in cyt c maturation via RNA editing of cyt c biogenesis factors (ccb2 and ccb3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60, C97-C98 are based on immunoblot analysis (Figure 5C-F), but the results show inconsistency: the decrease at 28\u00b0C for 3 days was observed in only 2 of 3 cultures and was not statistically significant overall (C57). The more pronounced effect after 7 days (C59) provides stronger support, but the temperature-dependent nature requires more robust statistical validation. The mechanistic link to ccb2/ccb3 editing is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Treatment of wild-type explants with mitochondrial respiratory inhibitors (rotenone, antimycin A, oligomycin) led to LR fasciation, with antimycin A showing stronger effects at higher temperatures, demonstrating that electron transport chain defects cause the TDF LR phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by pharmacological experiments (Figure 6A-D, Figure 6\u2014figure supplement 1) showing dose-dependent LR fasciation with multiple respiratory inhibitors. The temperature-dependent enhancement with antimycin A (C64) parallels the mutant phenotypes. The use of multiple inhibitors targeting different complexes strengthens the conclusion about electron transport chain involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C119",
+      "C120"
+    ],
+    "result": "The respiratory uncoupler CCCP did not increase LR width despite causing dose-dependent growth inhibition, and the huge reduction in complex V in rid4 does not cause fasciation at permissive temperature, indicating reduced ATP production is unlikely to be the cause of LR fasciation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C119-C120 are supported by CCCP treatment data (Figure 6E, F) and the observation that rid4 shows severe complex V loss at 22\u00b0C without fasciation. This negative result is important for ruling out ATP depletion as the primary mechanism. However, the interpretation assumes CCCP effectively uncouples respiration at the concentrations used, which could be verified with additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C121"
+    ],
+    "result": "The ROS inducer paraquat triggered significant LR fasciation, while the ROS scavenger ascorbate reversed LR broadening induced by both paraquat treatment and the rid4-2 mutation, demonstrating that increased ROS levels (not decreased ATP) act downstream of defective mitochondrial respiration to promote extra cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C121 are supported by pharmacological experiments (Figure 6G, H) showing paraquat-induced fasciation and ascorbate-mediated rescue in both wild-type and rid4-2. The convergent evidence from ROS induction, ROS scavenging, and genetic rescue provides strong support for ROS as the key mediator. However, the specific ROS species and their cellular sources remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Chemical inhibition of auxin polar transport by NPA caused broadened LR primordia, but DR5::GUS expression patterns at early LR induction stages showed no differences between control and paraquat-treated segments, indicating ROS-induced LR fasciation is not caused by impaired auxin gradient formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by NPA treatment results (Figure 6\u2014figure supplement 2) and DR5::GUS reporter analysis (Figure 6I). The differential effects of NPA (enhanced expression throughout) versus paraquat (no change) provide clear evidence that ROS acts through a mechanism distinct from auxin gradient disruption. This is an important negative result that helps define the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Fasciated LR primordia in TDF mutants exhibit specific enlargement of inner tissues marked by SHR expression. The area of SHR expression is established at stage II in the inner layer, and differentiation into two cell layers occurs normally in TDF mutants, with increased cell numbers leading to expansion of SHR-expressing areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 integrate current observations with established knowledge about SHR expression patterns (C80-C81 from Goh et al., 2016). The inference that normal two-layer differentiation occurs with expanded SHR domains (C82-C83) is logical given the cell number data and previous characterization, though direct SHR expression analysis in the current study would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In rrd1, unusually long preprocessed mRNAs do not accumulate, total mitochondrial mRNA levels are not elevated, and RRD1 is not involved in controlling mRNA abundance by promoting degradation. RRD1 plays a distinct role from mtPNPase and is specifically involved in 3' processing of near-matured mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by RACE-PAT data showing mature-length transcripts (Figure 3D) and qRT-PCR showing unchanged total mRNA levels (Figure 3B). The conclusion that RRD1 has a distinct role from mtPNPase in processing near-mature transcripts is a reasonable inference from the data, distinguishing it from the broader degradation function of mtPNPase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "PPR code prediction ranked RID4 highly for atp4-395C, rpl5-58C, and rps4-332C binding, consistent with experimental results. However, the newly identified RRD2 binding site (ccb2-71C) ranked very low, possibly due to RRD2's unusual arrangement of PPR motifs with prevalent SS repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 compare computational predictions with experimental results. The agreement for RID4 targets validates the PPR code approach, while the discrepancy for RRD2 is acknowledged and attributed to its unusual motif arrangement (Figure 2A). This honest assessment of prediction limitations strengthens confidence in the experimental findings and highlights areas for improving computational methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The temperature sensitivity differs among TDF mutants: rrd1 has a C-terminal truncation with partial function at 22\u00b0C and reduced activity at 28\u00b0C; rrd2 and rid4-1 have early stop codons causing complete loss of function, but rrd2 shows temperature-dependent cyt c biogenesis defects while rid4-1 is constitutively impaired. Both mitochondrial impairment and elevated temperature contribute to LR fasciation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C118 integrate mutation analysis (Figure 2A), temperature-dependent phenotypes (Figures 3D, 5C-F), and constitutive defects (Figure 5B) to explain differential temperature sensitivity. The interpretation is well-supported by the data, though the molecular basis for temperature sensitivity in rrd2 (C114) remains speculative. The observation that antimycin A effects are temperature-dependent (C117, Figure 6\u2014figure supplement 1) supports the dual contribution model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study identified an unexpected link between mitochondrial RNA processing and primordial size control at early stages of LR development, mediated by changes in mitochondrial ROS levels. This demonstrates that mitochondrial gene expression not only supports cell proliferation but also participates in restricting cell division for proper organ morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C142-C145 represent the main conclusions of the study, integrating findings from genetic analysis, RNA processing defects, respiratory chain dysfunction, and ROS-mediated signaling. The evidence chain is well-supported: TDF mutations \u2192 RNA processing defects \u2192 respiratory chain impairment \u2192 ROS generation \u2192 excess cell division \u2192 LR fasciation. This represents a novel mechanistic insight into organogenesis control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C133",
+      "C134",
+      "C137"
+    ],
+    "result": "Several mechanistic questions remain unresolved: the exact impact of altered poly(A) status on electron transport in rrd1, the role of apoplastic ROS in LR boundary control, whether mitochondrial disorders affect apoplastic ROS, and the possible involvement of reactive carbonyl species in the TDF phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92, C133-C134, and C137 explicitly acknowledge limitations and uncertainties in the current work. These represent honest assessments of what remains unknown, including the lack of detectable respiratory chain changes in rrd1 (C92, Figure 5B) and unresolved questions about ROS compartmentalization and signaling. These uncertainties do not undermine the main findings but indicate directions for future research.",
+    "result_type": "MINOR"
+  }
+]

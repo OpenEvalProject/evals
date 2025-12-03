@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Single-cell RNA-sequencing of DBA+ sorted murine pancreatic cells identified 16 distinct cell populations comprising 6813 cells, including 2 ductal populations, endothelial cells, fibroblasts, and 12 immune cell clusters, with expected absence of acinar and endocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C15 provide clear methodological and quantitative data from the scRNA-seq experiment. Claims C16-C20 validate the sorting strategy through immunofluorescence and provide reasonable explanations for unexpected cell types. The data quality metrics (transcripts/cell, genes/cell) and clustering results are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Six distinct ductal clusters were identified with cluster 0 being the largest and characterized by upregulation of disease-relevant genes (CFTR, TGFB2, CTNNB1), though discordance between Gmnn RNA and protein expression was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by scRNA-seq data, pathway analysis, and source data. The observation of Gmnn RNA-protein discordance (C28-C29) is validated through histological examination of >1500 human duct cells. The disease relevance claims (C26-C27) are appropriately supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cluster 1 is characterized by upregulation of Rab27b and Ppp1r1b, enrichment in calcium transport pathways, and expression of cancer-related genes, with heterogeneous expression patterns validated in human tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by differential expression analysis and IPA results. The functional context (C33-C34) is appropriately cited. Immunohistochemistry validation (C35-C36) confirms marker expression across duct types and demonstrates heterogeneity in human tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cluster 2 represents a transcriptionally and metabolically inactive duct cell subpopulation characterized by low expression of ductal markers and the lowest average gene and transcript counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are directly supported by gene expression data and quantitative metrics. The interpretation (C39) is reasonable given the low transcriptional activity, though the characterization as 'stable' and 'inactive' is somewhat speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cluster 3 was identified as intrapancreatic bile duct cells based on high expression of cilia biogenesis genes (Foxj1, Cfap44, Tuba1a) and distinct UMAP positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by gene expression analysis and UMAP visualization. The identification is based on established markers of ciliated bile duct cells, making the classification well-founded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Cluster 4 contains pancreatobiliary duct cells characterized by expression of Tgfb3, Dclk1, and a small Dmbt1+Ly6d+ subpopulation, sharing features with both bile and pancreatic ducts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by differential expression analysis and comparison with published biliary epithelial cell markers. The interpretation of cluster 4 as pancreatobiliary cells (C47) is reasonable given the shared molecular features, though this is an inference rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Replicating duct cells comprise 1.65% of all duct cells, confirming that pancreatic duct cells are fairly mitotically inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by quantitative analysis of proliferation markers (Mki67, Cenpf, Cenpe) and are consistent with cited previous reports. The low proliferation rate is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Clusters 0 and 2 show close relationships with only nine significant DEGs, suggesting a shared core gene expression program, with cluster 0 representing 'workhorse' pancreatic duct cells based on upregulation of functional genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by multiple analytical approaches (dendrogram, Pearson's correlation, DEG analysis, IPA). The interpretation of cluster 0 as 'workhorse' cells (C53) is reasonable given the upregulation of functional genes (Cftr, Tuba1a, Kcne3), though this is an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Pancreatobiliary cells show enrichment in genes regulating cell junction assembly compared to cluster 1, while the Dmbt1+Ly6d+ subpopulation shows strong upregulation of xenobiotic metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by pathway analysis and differential expression data. The functional interpretations are appropriately cited and consistent with known biology of biliary epithelial cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Intrapancreatic bile duct cells cluster with hepatic BECs expressing subpopulation B genes, while pancreatobiliary cells cluster with hepatic BECs expressing subpopulation A genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by alignment analysis with published hepatic BEC data. The clustering patterns are clearly demonstrated in the figures and source data, establishing molecular relationships between pancreatic and hepatic biliary cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Distinct ductal subpopulations with marker gene expression patterns similar to adult clusters are evident during pancreas development (E12.5, E14.5, E17.5), and these subpopulations are conserved between C57BL/6J and Swiss Webster mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by analysis of published developmental datasets showing progressive emergence of adult-like expression patterns. The conservation claim (C60) is a reasonable inference based on the Swiss Webster developmental data, though direct comparison would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Murine pancreatic duct clusters show correspondence with human ALK3+ duct subpopulations, though centroacinar/terminal ductal and ducto-acinar cells do not form distinct clusters and appear largely transcriptionally homogenous with other duct cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by AddModuleScore analysis comparing mouse and human datasets. Claims C63-C65 address the absence of distinct centroacinar/terminal ductal clusters, with immunolabeling confirming the presence of these cells despite lack of transcriptional distinctiveness. This is a well-supported negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "RaceID3/StemID2 analysis identified clusters 0 and 2 as having the highest progenitor scores, with variable scores within clusters suggesting distinct differentiation stages, and the progenitor niche is not restricted to a single cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by StemID2 analysis and are consistent with cited previous literature. The interpretation of variable scores as representing differentiation stages (C67) is reasonable, though this is an inference from computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Pseudotime analysis revealed an epithelial-mesenchymal transition axis in pancreatic duct cells, with shifts in xenobiotic metabolism pathways and upregulation of EMT-related pathways, validated by detection of vimentin+, SNAI1+, and fibronectin+ ductal cells in mouse and human pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by Monocle 3 analysis and pathway analysis. The EMT axis is validated through immunofluorescence (C73) in both mouse and human tissue, providing strong support for this finding. The biological interpretation is appropriately contextualized with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Subpopulation markers Spp1, Anxa3, and Gmnn have established roles in progenitor capacity, calcium signaling, and DNA replication control, respectively, and HPDE6c7 cells are an appropriate model for studying normal human pancreatic duct cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are well-supported by citations to published literature. These claims establish the biological context and rationale for functional studies, and the characterization of HPDE6c7 cells is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "SPP1 knockout in HPDE6c7 cells results in dramatic morphological changes with prominent filipodia, increased proliferation, decreased duct function, upregulation of EMT markers, downregulation of mature duct markers, enrichment of developmental pathways, and increased progenitor markers, indicating that loss of OPN leads to dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by multiple complementary approaches including morphological assessment, cell counting, functional assays (carbonic anhydrase), RNA-seq, immunocytochemistry, GSEA, and qPCR. The interpretation of dedifferentiation (C85) is well-supported by the convergent evidence from multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In vivo subcutaneous injection experiments show that HPDE6c7 SPP1 KO cells lose ducto-acinar differentiation capacity but gain potential for endocrine differentiation, with detection of Neurogenin-3+SOX9+, Synaptophysin+Glucagon+, Synaptophysin+C-peptide+, and C-peptide+PDX1+NKX6.1+ cells, indicating SPP1's role in maintaining duct cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C90 are supported by immunofluorescence data from in vivo experiments. However, the subcutaneous injection model (C86) is not a physiological context for pancreatic duct cells, which limits interpretation. The detection of endocrine markers is intriguing but the low frequency and ectopic location raise questions about the biological relevance. Claim C91 is a reasonable interpretation but requires additional validation in more physiological contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Geminin expression is significantly increased in human CP patients and in the PDL mouse model, and conditional deletion of Geminin in Sox9+ pancreatic duct cells leads to acute proliferation increase at day 7 and sustained DNA damage accumulation (\u03b3-H2AX foci) at days 7 and 30, indicating Geminin's role in maintaining genomic stability during CP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by quantitative immunofluorescence in human CP samples (N=5 patients vs N=10 controls) and well-controlled mouse experiments using conditional knockout models. The PDL model is appropriately cited as recapitulating human gallstone pancreatitis. The interpretation (C98) is well-supported by the sustained DNA damage phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The DBA+ lectin sorting strategy also captures endothelial cells, fibroblasts, and immune cells, indicating that a subsequent purification step is required to obtain pure pancreatic duct cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are directly supported by the scRNA-seq data showing multiple non-ductal cell types in the dataset. This is an important methodological finding that impacts interpretation of previous studies using this sorting strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Cluster 0 comprises the largest pancreatic duct subpopulation and may use CFTR-mediated bicarbonate secretion, while distinct subpopulations expressing different pathways may have different predispositions to PDA development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by quantitative data. Claim C102 is a reasonable inference from IPA results supported by citations. Claim C103 is speculative but appropriately presented as a hypothesis rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Despite Spp1 KO mice showing no pancreatic phenotypes, clusters 0 and 2 with strong Spp1 expression show the highest StemID2 scores, and SPP1 loss promotes human duct cell dedifferentiation into trunk progenitor-like cells without favoring redifferentiation to duct or acinar lineages, indicating OPN is required for mature duct cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by cited literature and StemID2 analysis. Claims C106-C109 are interpretations of the experimental data that are well-supported by the convergent evidence from multiple assays, though the in vivo model limitations noted in the previous result apply here as well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "SPP1 plays important roles in pancreatic pathologies including PDA, and IPA analysis suggests that SPP1 loss protects against tumor progression in human pancreatic duct cells (13/14 cancer-related pathways), consistent with published studies showing SPP1 loss ameliorates cancer cell aggressiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110 and C112 are appropriately supported by citations to published literature. Claim C111 is supported by IPA pathway analysis of the RNA-seq data. The interpretation is appropriately cautious, noting that the pathway directionality is 'suggestive' rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Geminin is required when cells divide quickly, and compensatory mechanisms may exist in homeostatic pancreatic duct cells but are insufficient in CP, resulting in DNA damage accumulation via mechanisms distinct from the ATR-CHK1 pathway, suggesting tissue-specific DNA damage sensing mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C116-C117 are appropriately supported by citations. Claim C114 is a reasonable speculation supported by citations about compensatory mechanisms. Claims C115 and C118 are interpretations of the experimental data that are well-supported by the absence of ATR activation and presence of \u03b3-H2AX foci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "An epithelial-mesenchymal transitory axis exists in pancreatic duct subpopulations, and osteopontin regulates this fate decision as well as human duct cell dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims are supported by the detailed experimental evidence presented in the manuscript, including pseudotime analysis, immunofluorescence validation, and extensive functional characterization of SPP1 knockout cells. The convergent evidence from multiple approaches strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Geminin plays a role in accumulation of DNA damage in the setting of chronic pancreatitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This abstract claim is supported by the detailed experimental evidence from human CP samples and the PDL mouse model with conditional Geminin deletion, showing sustained DNA damage accumulation in the absence of Geminin during CP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Pancreatic duct cells can serve as a cell of origin for PDA and are implicated in cystic fibrosis and pancreatitis pathophysiology, with chronic pancreatitis being a risk factor for pancreatic cancer and chronic inflammation causing DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C6-C10) are appropriately supported by citations to published literature and establish the biological context for the study. These are well-established facts in the field.",
+    "result_type": "MINOR"
+  }
+]

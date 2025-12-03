@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C49",
+      "C50"
+    ],
+    "result": "The study developed an automated phenotyping platform using 64 commercially available monitoring cages that continuously measure multiple physiological and behavioral parameters including respiration (every 3 min), body mass, food/water intake, wheel activity, and position (every second). Data are processed into 14 base features in 3-minute bins through a quality-controlled pipeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C30-C33, C49-C50 collectively describe the hardware platform and data processing pipeline. The methodology is clearly documented with specific technical details about measurement frequencies and sensor types, supported by Figure 1A and Materials and Methods descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C22",
+      "C23",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study enrolled 415 female diversity outbred (DO) mice using a staggered design (ages 3-24 months at enrollment) and monitored them for 1 week per month over ~1.5 years, generating 3,143 7-day runs (~60 years of data) spanning ages 6 weeks to 40.5 months. DO mice had a median lifespan of 25 months and maximal lifespan of 41 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, C22-C23, C34-C44 describe the study design and cohort characteristics with specific quantitative details. The staggered enrollment design is well-justified for maintaining statistical power across age groups and controlling for environmental confounders. Data are supported by Figures 1B-E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C52",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C139"
+    ],
+    "result": "Automated phenotyping detected widespread aging-related changes starting in early life: 244 of 309 features (79%) significantly changed with age, exhibiting diverse trajectories (linear, logarithmic, exponential, parabolic). This demonstrates that passive monitoring has sufficient sensitivity to quantify aging across the entire lifespan without challenge-based tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C52, C82-C85, C139 are supported by extensive data showing age-related changes in multiple features starting from young ages (Figure 2G, Supplementary file 1). The diversity of trajectories and early onset of changes directly support the conclusion that challenge-based tasks are not necessary to detect aging. Statistical significance is properly assessed with multiple hypothesis correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Mice exhibited a concave body mass trajectory (gaining weight until 21-24 months, then losing weight) accompanied by significant declines in wheel running, food/water intake, and mass-adjusted energy expenditure. Ambulatory activity increased with age, and these changes did not mirror the body mass trajectory, indicating they are not solely driven by weight changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C56-C57 describe specific aging phenotypes supported by Figure 2B and Figure 2\u2014figure supplement 1A. The observation that different features show distinct trajectories from body mass is important for demonstrating that body mass changes do not explain all aging-related physiological changes. This is further supported by network analysis (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C143",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "A robust hidden Markov model (HMM) was developed to classify each 3-minute time window into one of six behavioral states (Sleep, Rest, Eat, Eat&Drink, Run, Active). The model was trained on 2,689 runs with validation on 471 runs, yielding 6 as the optimal number of states. Old mice spent more time in low-activity states compared to young mice, particularly during the dark phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C143, C191-C193 describe the HMM methodology with appropriate train/validation split and model selection procedures. Claims C60-C64 describe behavioral patterns identified by the HMM, supported by Figures 2C-D and Figure 2\u2014figure supplement 1B-C. The approach allows separation of behavioral changes from physiological changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Old animals showed increased entrainment of feeding behavior to the light cycle compared to young animals: young mice reached peak Eat/Eat&Drink occupancy 1 hour after lights on, while older mice peaked in the hour before lights on. This represents a novel aging-related circadian shift not previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe a specific circadian finding supported by Figure 2D. The authors appropriately note this has not been previously described and provide a plausible mechanistic explanation related to reduced wheel running with age. The finding is clearly demonstrated in the data, though the mechanistic interpretation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Overall sleep duration did not change with age, but sleep became more fragmented: average continuous sleep period duration declined from 1.1 hours in young mice to ~0.6 hours by 9-12 months (a 30-minute reduction), while the number of sleeping periods increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe sleep fragmentation patterns supported by Figure 2E and Supplementary file 1. The finding that total sleep duration remains constant while fragmentation increases is an important distinction that would be missed by coarser temporal analysis. The quantitative details are specific and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Feeding behavior showed consolidation with age: average duration of feeding periods increased while number of feeding periods decreased. This may be explained by increased food spilling in aging mice requiring more time to ingest equal quantities of food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe feeding patterns supported by Figure 2F. The mechanistic explanation citing increased food spilling is appropriately presented as speculative with a supporting citation (Starr and Saito, 2012). The pattern of consolidation contrasts with sleep fragmentation, suggesting different underlying mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "State-conditioned analysis revealed that the decline in mass-adjusted energy expenditure reflects both reduced resting metabolic rate (during Sleep/Rest states) and reduced activity intensity (during Run/Active states). Animals ran more slowly with age, and whole-body water loss rate (VH2O) declined during all states including rest, suggesting altered internal physiology rather than behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 demonstrate the value of state-conditioned analysis for separating behavioral from physiological changes, supported by Figure 2\u2014figure supplement 2B-D. The interpretation that VH2O decline reflects altered body composition is appropriately presented as speculative with supporting citation (Vu et al., 2017). The temporal relationship between VH2O and water intake decline supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Heritability analysis validated the biological relevance of different feature aggregation approaches: 33 features showed significant heritability after filtering, with the four most heritable features (>30% heritability) involving pedestrian locomotion. State- or time-conditioned features often showed higher heritability than overall averages, demonstrating they capture distinct biological information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 describe heritability analysis supported by Figure 2\u2014figure supplement 3A-B. The finding that different aggregation approaches show significant heritability validates the feature engineering strategy. The observation that 52% of heritable features involve pedestrian locomotion suggests strong genetic control of movement. The lack of heritability for mass-adjusted gas measurements is appropriately interpreted as environmental influence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C99"
+    ],
+    "result": "Genetic correlations were stronger than phenotypic correlations on average (median 0.22 vs 0.16) and highly correlated with phenotypic correlations (R\u00b2=0.9), suggesting phenotypic correlations are largely due to shared genetics and that joint analysis of phenotypes could increase genetic mapping power in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C99 describe genetic correlation analysis supported by Figure 2\u2014figure supplement 3C-D. The high correlation between genetic and phenotypic correlations is well-documented with strong statistical support (p=3.12e-196). The suggestion for future joint analysis is appropriately presented as a prospective application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C100",
+      "C101",
+      "C102",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Network connectivity analysis quantified organism-level resilience (negative multivariate mutual information) and found it exhibited an accelerating decline with age that was distinct from individual phenotype trajectories. This emergent property was only detectable by analyzing relationships between phenotypes and qualitatively reflects the accelerating failure rate associated with aging better than individual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C100-C102, C109-C114, C150-C152 describe the resilience analysis supported by Figures 3A, 3D and theoretical framework from Scheffer et al. 2018. The use of negative multivariate mutual information as a resilience metric is theoretically justified. The accelerating decline pattern is clearly shown in Figure 3D and represents a novel finding that individual features do not capture. The claim that this is an emergent property only detectable through network analysis is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Graphical network modeling using sparse precision matrix estimation identified 22 distinct physiological clusters. Different aggregation approaches (ratio-based, state-conditioned, time-of-day) clustered separately, demonstrating they convey different information. Body mass formed an independent cluster with low connectivity to other features, while metabolic rate and high activity were the most densely connected clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108, C147-C149 describe network structure supported by Figures 3A-B and Supplementary file 2. The use of sparse precision matrix estimation and consensus clustering is methodologically sound (C199-C201). The interpretation that clusters represent distinct physiological mechanisms is reasonable. The finding that body mass is largely independent of other features is important for validating the body mass correction approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Inter-cluster resilience declined with age, with increased connectivity observed for the majority of clusters. Intra-cluster resilience also declined with age, but trajectories varied: some clusters showed linear decline while others showed late-life acceleration, suggesting certain physiological domains are more prone to resilience loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 describe cluster-specific resilience patterns supported by Figures 3E-F and Figure 3\u2014figure supplement 1B. The analysis demonstrates that resilience decline is not driven by a few outlying clusters but is a widespread phenomenon. The observation of different trajectories across clusters provides insight into domain-specific aging dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C120",
+      "C121",
+      "C161"
+    ],
+    "result": "The CASPAR (Combined Aging and Survival Prediction of Aging Rate) method was developed to jointly predict chronological age and survival time. The model includes a tunable hyperparameter (\u03c3_\u03b2) that allows balancing between age and survival prediction, explicitly capturing that biological age should correlate with chronological age while deviations should be informative of health status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C120-C121, C161 describe the CASPAR methodology. The approach is theoretically justified and addresses limitations of existing age-only or survival-only models. The mathematical framework is described in Materials and Methods with appropriate detail. The tunable hyperparameter allows exploration of the age-survival trade-off space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C129",
+      "C162",
+      "C163",
+      "C166"
+    ],
+    "result": "CASPAR models with intermediate \u03c3_\u03b2 values (hybrid models) achieved balanced prediction of both chronological age (R\u00b2=0.50) and time to death (R\u00b2=0.20), performing nearly as well as specialized models on each task. The hybrid model's biological age predictions were more strongly correlated with time to death than chronological age itself, suggesting a qualitatively different approach to quantifying biological age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124, C129, C162-C163, C166 describe CASPAR performance supported by Figure 4A-C. The finding that intermediate models achieve reasonable performance on both tasks while specialized models trade off performance is well-documented. The claim that hybrid models represent a qualitatively different approach is supported by the balanced performance. However, the study only includes mice that died (about half the cohort), which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The top 20 features for age, survival, and hybrid models came from multiple clusters and sensors with limited overlap (7 shared features). Features associated with time to death included light-phase activity (suggesting circadian breakdown), while age-associated features included dark-phase activity decline. This limited overlap has been reported in other datasets and demonstrates that aging-related physiological changes are only partially related to mortality risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 describe feature importance patterns supported by Figure 4D and Figure 4\u2014figure supplement 1B-C. The limited overlap between age and mortality predictors is well-documented and appropriately contextualized with citation (Schultz et al., 2020). The interpretations of feature meanings are presented as speculative (\"perhaps indicating\"). The conclusion about the need to balance age and mortality conceptualizations is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "DO mice showed broad body mass distribution (15-60g) with highly significant positive correlation between body mass and unadjusted energy expenditure. Gas-derived measurements (except RQ) were normalized for body mass via linear regression, which removed the positive correlation with body mass while only slightly increasing correlations between gas measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe body mass normalization supported by Figure 1\u2014figure supplement 1C-F. The approach is methodologically sound and the validation that normalization doesn't induce spurious correlations is important. However, the claim that the benefit outweighs the slight increase in correlation (C47) is a judgment call that could be debated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The study has limitations: data are left-truncated and right-censored (not fully longitudinal), the cohort was entirely female (practical necessity due to DO male aggression), and findings may not generalize across sex, strain, and environmental conditions. However, broad patterns like reduced wheel running, metabolic activity, and resilience are expected to generalize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 acknowledge important limitations. The authors appropriately discuss how the staggered design limits full longitudinal analysis and how the female-only cohort limits generalizability. The speculation that broad patterns will generalize (C177) is reasonable but remains to be tested. These limitations are honestly presented and do not invalidate the major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Additional limitations include: the cages cannot measure some health-relevant phenotypes (body posture, coat condition), and the most granular analyses used 3-minute windows despite second-by-second data availability. Future improvements could include video monitoring with machine vision and more sophisticated time series analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C180 acknowledge methodological limitations and suggest future improvements. These are appropriately presented as opportunities for enhancement rather than fatal flaws. The suggestions for video monitoring and finer temporal analysis are reasonable extensions of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C183"
+    ],
+    "result": "The platform advances healthspan assessment in terms of throughput (20 hr/week hands-on time for 256 mice), resolution (monthly measurements vs \u22656-month intervals in previous studies), and physiological scope (309 features across 22 clusters), while reducing the burden of specialized assay procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137, C183 summarize the study's contributions. The throughput advantage is documented (C25), the resolution improvement is supported by comparison to prior work (C24), and the physiological scope is demonstrated throughout. These represent genuine advances over existing approaches, though the female-only cohort and other limitations should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Quality control procedures included: dropping the first 24 hours of data to eliminate acclimation stress, removing 77 runs (2.2%) for being too short, removing 295 runs (8.4%) for having \u226530% outlier timepoints, and censoring outlier datapoints without imputation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C190 describe QC procedures documented in Materials and Methods. The approach is reasonable and transparent. The decision to drop the first 24 hours is empirically justified. The outlier detection using RobustSTL and generalized ESD test is methodologically sound. The lack of imputation is appropriate and avoids introducing artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C194",
+      "C195"
+    ],
+    "result": "The study controlled for exposure to phenotyping cages using ANOVA/multiple linear regression and normalized gas measurements to mean body mass (31g) across all runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C195 describe normalization procedures documented in Materials and Methods. Controlling for cage exposure is important for removing confounding effects. The normalization to mean body mass is a standard approach that allows focus on body mass-independent changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Age-specific phenotype networks were constructed using 3-month age bins with time-varying graphical LASSO, which fits separate models per age bin while penalizing differences between adjacent bins. The nonparanormal covariance estimator was used to handle non-Gaussian features, and consensus clustering with 1000 bootstrap samples identified clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C201 describe network analysis methodology documented in Materials and Methods. The use of time-varying graphical LASSO is appropriate for capturing age-related changes while maintaining smoothness. The nonparanormal approach handles non-Gaussian distributions. The bootstrap consensus clustering provides robust cluster assignments. The methodology is sound and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "Genetic analysis included genotyping all mice with the 143,259-probe GigaMUGA array, filtering to 116,377 markers, inferring founder-of-origin using qtl2, computing heritability using EMMA for 309 phenotypes, and calculating genetic correlations for 45 heritable phenotypes using matrix-variate linear mixed models while controlling for age and cohort effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C206 describe genetic analysis methodology documented in Materials and Methods. The approach is standard for DO mouse analysis. The use of founder-of-origin inference is appropriate for this population. The heritability estimation using EMMA and genetic correlation using matrix-variate models are well-established methods. Controlling for age and cohort effects is important for accurate estimation.",
+    "result_type": "MINOR"
+  }
+]

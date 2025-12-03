@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Behavioral responses to moving ON edges show slight luminance invariance, but L1 calcium responses scale with luminance in the opposite direction to behavior, suggesting L1 contrast responses alone cannot explain ON-motion behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by behavioral data (Figure 1C) and calcium imaging (Figures 1D-E) showing opposite luminance dependencies between L1 responses and behavior. The quantification of slopes demonstrates this mismatch clearly, indicating additional inputs are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "L1 neurons encode both contrast in their transient peak responses and luminance in their sustained responses, distinguishing them from the purely contrast-sensitive L2 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 are well-supported by calcium imaging data (Figure 2A, Figure 2\u2014figure supplement 1) showing distinct transient and sustained components in L1 that correlate with contrast and luminance respectively. Statistical testing (one-way ANOVA) confirms contrast encoding in peak responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "L1 and L2 differ in their contrast encoding properties, with L1 having steeper contrast response functions and dedicating less response range to contrast encoding than L2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by sigmoidal fitting analysis of calcium imaging data (Figure 2B-D) with bootstrapping validation. The quantification of slope and scaling parameters provides clear evidence for differential contrast encoding between L1 and L2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "L1 and L3 both encode luminance in sustained response components with similar mutual information, but L1 shows linear luminance scaling while L3 non-linearly amplifies dim stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by calcium imaging data (Figure 2E-H) including mutual information analysis and non-linearity quantification. The distinction between linear (L1) and non-linear (L3) luminance encoding is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "L1 is a major but not sole input to the ON pathway, with its requirement depending on stimulus conditions such as inter-stimulus interval brightness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by behavioral silencing experiments (Figure 3A-B, Figure 3\u2014figure supplement 1) showing context-dependent effects of L1 silencing. The data clearly demonstrate that L1 silencing has minimal effect with dark intervals but strong effects with bright intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "L1 is sufficient to mediate normal turning behavior to ON edges at all luminances when functionally isolated through ort rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by behavioral rescue data (Figure 3F) showing that L1 ort rescue flies respond indistinguishably from controls at all luminances tested. This demonstrates sufficiency of L1 for ON behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C54"
+    ],
+    "result": "L3 is a functional input to the ON pathway that contributes luminance-dependent information, with particular importance for behavior at low luminances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C53-C54 are supported by L3 silencing (Figure 4A-C) and rescue experiments (Figure 4D-E, I) showing that L3 significantly rescues ON behavior selectively at low luminances. The data demonstrate L3's specialized role in dim light processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "L1 and L3 together account for luminance information in the ON pathway, as flies lacking both neurons underestimate dim stimuli and show luminance-dependent behavioral deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by double silencing experiments (Figure 4F-H) showing that flies lacking both L1 and L3 still respond to ON edges but with altered luminance dependence, underestimating dim stimuli. This demonstrates the combined luminance contribution of these neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "L1 fully rescues turning behavior to ON edges at all luminances in ort rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by rescue efficiency analysis (Figure 4I) showing complete rescue by L1 across all luminances tested. The data clearly demonstrate L1's broad luminance range capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "An unidentified contrast input to the ON pathway exists, as flies lacking both L1 and L3 still respond to moving ON edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by behavioral data (Figure 4F-H) showing residual responses in L1,L3 double-silenced flies. This inference is logical given the incomplete loss of behavior, though the identity of this input remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "L2 provides contrast-sensitive input to the ON pathway, as L1,L2 double silencing completely disrupts ON behavioral responses while single silencing has minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by single and double silencing experiments (Figure 5A-D, Figure 5\u2014figure supplement 1) showing that L2 silencing alone has minimal effect, but L1,L2 double silencing completely abolishes ON responses across contrasts and luminances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "L1 provides a luminance gain to the OFF pathway, as L1 silencing disrupts luminance invariance in OFF-motion behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by behavioral silencing experiments (Figure 6A-B) showing that L1-silenced flies lose luminance invariance for OFF edges, underestimating dim stimuli. This demonstrates L1's contribution to OFF pathway luminance gain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "L1 is sufficient to guide OFF behavior at dim backgrounds, rescuing responses to OFF edges at low luminances in ort rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by L1 ort rescue data (Figure 6C-D) showing rescue of OFF behavior at low luminances. This demonstrates L1's sufficiency for OFF pathway function under the same conditions previously described for L3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "L1, L2, and L3 are all important inputs for both ON and OFF pathways, relevant for visually guided behaviors across luminances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by comprehensive behavioral experiments across both pathways showing contributions of all three lamina neurons. The data from multiple silencing and rescue experiments provide strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Luminance gain control is implemented asymmetrically across ON and OFF pathways, with the OFF pathway requiring either L1 or L3 individually, while the ON pathway requires both L1 and L3 together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by pathway-specific silencing experiments showing differential requirements for luminance invariance. The OFF pathway shows strong deficits with single neuron loss, while ON pathway only shows deficits when both are lost.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "L2 neurons contribute contrast-sensitive information to ON behavior, challenging the previous view that L2 is exclusively an OFF-pathway input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by behavioral experiments (Figure 5) and is consistent with citations to previous work. The double silencing data provide clear evidence for L2's ON pathway contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "L3 makes substantial synaptic connections with ON-selective neurons (Mi9, Mi1) and potentially chromatic pathway neurons (Tm20), supporting its functional role beyond the OFF pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by citations to connectomics data (Takemura et al., 2013; Lin et al., 2016; Strother et al., 2017). These anatomical connections are consistent with the functional data showing L3's ON pathway contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "ON and OFF pathway segregation only truly exists at the level of medulla neurons and direction-selective cells, not at the lamina level where L1, L2, and L3 distribute features to both pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by comprehensive physiological and behavioral data showing that all three lamina neurons contribute to both pathways. This represents a major conceptual revision of the pathway organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "L1 differs from the previous characterization as purely contrast-sensitive, instead showing both transient contrast and sustained luminance components, with contrast amplification relative to photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by calcium imaging data (Figure 2) and comparison with photoreceptor data from cited work (G\u00fcr et al., 2020). The data clearly demonstrate L1's dual encoding properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "L3 shows minimal adaptation and uses its operating range to non-linearly amplify dark luminance values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by calcium imaging data (Figure 2) showing L3's sustained responses and non-linear luminance tuning. The non-linearity analysis clearly demonstrates selective amplification of dim stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The luminance-sensitive L3 channel may have evolved to selectively process low luminance stimuli, and the different linear/non-linear properties of L1 and L3 might increase dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 are speculative interpretations of the data. While the non-linear amplification of dim stimuli by L3 is well-demonstrated, the evolutionary and functional implications are inferred rather than directly tested. Additional experiments would be needed to confirm these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10"
+    ],
+    "result": "Luminance invariance is a general feature of visual systems, with rapid post-receptor gain control mechanisms required because photoreceptor adaptation is insufficient for rapid luminance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10 are supported by citations to established literature on human perception, cat LGN, and Drosophila OFF pathway. These provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C15"
+    ],
+    "result": "Visual systems split information into ON and OFF pathways that show structural and physiological asymmetries, with contrast selectivity arising at specific circuit locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14, C15 are supported by citations to established literature on visual system organization across species. These provide appropriate background for understanding pathway organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous work established L1 as the main ON pathway input and L2/L3 as OFF pathway inputs, with L3 providing luminance-based correction for OFF pathway contrast constancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 accurately represent prior work through appropriate citations (Clark et al., 2011; Joesch et al., 2010; Ketkar et al., 2020). The current study challenges and refines this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Vertebrate retinal bipolar cells show diverse temporal filtering properties and encode both luminance and contrast, facing similar dynamic range challenges as fly lamina neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by appropriate citations to literature on vertebrate retina (Baden et al., 2016; Ichinose et al., 2014; Oesch and Diamond, 2011). These comparisons provide useful context for understanding the fly visual system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The fly visual system has two processing layers (lamina and medulla) between photoreceptors and direction-selective cells, with LMCs and medulla neurons combined being functional equivalents of vertebrate bipolar cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by established knowledge and appropriate citations. The comparison between fly and vertebrate visual systems provides useful evolutionary and functional context, though the equivalence claim (C88) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "ON-motion behavior utilizes luminance gain from L1, L2, and L3 inputs, with each neuron encoding contrast and luminance differently and distributing information asymmetrically across pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 represent the main findings of the study and are supported by comprehensive behavioral and physiological experiments. These claims are well-integrated and represent the core contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The OFF pathway in Drosophila drives luminance-invariant behavior through a luminance gain mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 accurately cite previous work (Ketkar et al., 2020) establishing OFF pathway luminance invariance. This provides essential context for the current study's investigation of ON pathway mechanisms.",
+    "result_type": "MINOR"
+  }
+]

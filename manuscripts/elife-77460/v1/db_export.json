@@ -1,0 +1,1684 @@
+{
+  "submission": {
+    "id": "ff17e97e-d0dd-4297-94e5-cb93d50629ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:45:21.130133Z",
+    "updated_at": "2025-12-03T17:45:21.130133Z"
+  },
+  "content": [
+    {
+      "id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "submission_id": "ff17e97e-d0dd-4297-94e5-cb93d50629ff",
+      "content_type": "manuscript",
+      "content_text": "# Structure of the mitoribosomal small subunit with streptomycin reveals Fe-S clusters and physiological molecules\n\n## Authors\n\n- Yuzuru Itoh<sup>1</sup>\n- Vivek Singh<sup>1</sup> ([ORCID: 0000-0003-4656-3362](https://orcid.org/0000-0003-4656-3362))\n- Anas Khawaja<sup>2</sup> ([ORCID: 0000-0002-9721-7454](https://orcid.org/0000-0002-9721-7454))\n- Andreas Naschberger<sup>1</sup>\n- Minh Duc Nguyen<sup>2</sup> ([ORCID: 0000-0003-2945-9707](https://orcid.org/0000-0003-2945-9707))\n- Joanna Rorbach<sup>2</sup> ([ORCID: 0000-0002-2891-2840](https://orcid.org/0000-0002-2891-2840)) \u2020\n- Alexey Amunts<sup>1</sup> ([ORCID: 0000-0002-5302-1740](https://orcid.org/0000-0002-5302-1740)) \u2020\n\n### Affiliations\n\n1. Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University Stockholm Sweden ([ROR:05f0yaq80](https://ror.org/05f0yaq80))\n2. Department of Medical Biochemistry and Biophysics, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n3. Max Planck Institute Biology of Ageing - Karolinska Institutet Laboratory, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mitoribosome regulates cellular energy production, and its dysfunction is associated with aging. Inhibition of the mitoribosome can be caused by off-target binding of antimicrobial drugs and was shown to be coupled with a bilateral decreased visual acuity. Previously, we reported mitochondria-specific protein aspects of the mitoribosome, and in this article we present a 2.4-\u00c5 resolution structure of the small subunit in a complex with the anti-tuberculosis drug streptomycin that reveals roles of non-protein components. We found iron\u2013sulfur clusters that are coordinated by different mitoribosomal proteins, nicotinamide adenine dinucleotide (NAD) associated with rRNA insertion, and posttranslational modifications. This is the first evidence of inter-protein coordination of iron\u2013sulfur, and the finding of iron\u2013sulfur clusters and NAD as fundamental building blocks of the mitoribosome directly links to mitochondrial disease and aging. We also report details of streptomycin interactions, suggesting that the mitoribosome-bound streptomycin is likely to be in hydrated gem-diol form and can be subjected to other modifications by the cellular milieu. The presented approach of adding antibiotics to cultured cells can be used to define their native structures in a bound form under more physiological conditions, and since streptomycin is a widely used drug for treatment, the newly resolved features can serve as determinants for targeting.\n\n## Introduction\n\nThe human mitoribosome has a distinct structure, it receives mRNAs with involvement of Leucine-rich PPR-motif-containing protein (LRPPRC) and synthesizes 13 respiratory chain proteins delivered to the inner mitochondrial membrane via the OXA1L insertase (Itoh et al., 2021; Singh et al., 2022). Cryo-EM has been instrumental in the structure determination of the mitoribosome, however, the description is currently limited to mitoribosomal proteins, rRNA, and associated factors, whereas important metabolic cofactors of potential therapeutic interest are largely excluded (Aibara et al., 2020). In addition, dysfunction of the human mitoribosome can be caused by the off-target binding of antimicrobials to structured rRNA core that is similar to bacteria, which can lead to clinical symptoms of deafness, neuropathy, and myopathy. However, off-target binding studies are currently not incorporated in pharmaceutical companies\u2019 research and development pipelines. The antimicrobial binding has also been used to suppress glioblastoma stem cell growth (Sighel et al., 2021), suggesting that repurposing of mitoribosome-targeting antibiotics offers a therapeutic option for tumors (Vendramin et al., 2021). Thus, the structure-based design of molecules that bind RNA can be used to optimize physicochemical properties and has the potential of improving pharmacokinetics and potency.\n\nThe aminoglycoside streptomycin targets the ribosomal small subunit (SSU), but the therapy with streptomycin was also shown to be coupled with a bilateral decreased visual acuity with central scotomas and an altered mitochondrial structure (Kogachi et al., 2019). Moreover, patients carrying mitochondrial DNA mutations in the 12S rRNA gene, such as 1555A>G or 1494C>T are more prone to aminoglycoside-induced ototoxicity (Gao et al., 2017). To minimize toxic off-target effects, the approaches based on in silico modeling employing high-resolution single-particle cryo-EM structures can be used. Although the sensitivity of mitoribosomes to antimicrobials has been documented, no detailed structural information elucidating specific molecular interactions is available, thus mechanistic details remain unknown.\n\nTherefore, in this study, we set to solve the structure of complex of streptomycin with the mitoribosomal SSU at a resolution level that can detect cofactors and modifications in order to provide new structural information on potential mitoribosomal constituents. We explored fine structural elements of the antibiotic and determined unique features of the mitoribosome, such as iron\u2013sulfur clusters positioned between different proteins, nicotinamide adenine dinucleotide (NAD), and a new guanosine triphosphate (GTP)-binding site.\n\n## Results\n\n### Structure determination\n\nTo characterize the binding under close to physiological conditions, we added streptomycin to cultured human embryonic kidney 293T (HEK293T) cells at a final concentration of 100 \u03bcg/ml and not to any of the biochemical purification steps. This approach implies that the antimicrobial would have to be imported into mitochondria, and therefore has an advantage over in vitro complex formation (that we performed as a control), as more native inhibitory properties would be preserved. Mitochondria were isolated, and the mitoribosomal SSU was purified in the presence of 5\u2032-guanylyl imidodiphosphate (GMPPNP) and subjected to a cryo-EM analysis. Monosome and large subunit (LSU) particles were removed during 2D classification, and the remaining particles underwent 3D auto-refinement and 3D classification with local angular search with a solvent mask to remove poorly aligned particles. The resolution was further improved by applying contrast transfer function (CTF) refinement including beam-tilt, per-particle defocus, and per-micrograph astigmatism, followed by Bayesian polishing in RELION 3.1 (Zivanov et al., 2020). Particles were then separated into multi-optics groups based on acquisition areas and the date of data collection. A second round of CTF refinement (beam-tilt, trefoil, and fourth-order aberrations, magnification anisotropy, per-particle defocus, per-micrograph astigmatism) was performed, followed by 3D auto-refinement. Finally, to improve the local resolution, local-masked 3D auto-refinements were systematically applied (Figure 1\u2014figure supplement 1).\n\nThe resulting structure of the SSU with bound streptomycin was determined at 2.4 \u00c5 resolution (Figure 1\u2014figure supplement 1 and Table 1). This represents a substantial improvement of the X-ray crystal structures at 3.0\u20133.5 \u00c5 resolution of the in vitro formed complexes of streptomycin with T. thermophilus ribosome (Carter et al., 2000; Demirci et al., 2013), as well as the previous cryo-EM structures at ~3 \u00c5 of the human mitochondrial SSU (Khawaja et al., 2020; Itoh et al., 2022). The higher resolution allowed us to detect a possible modification of the bound streptomycin and previously unknown cofactor components of the mitoribosome (Figure 1). Although compared to bacteria, human mitoribosomal rRNA is known for its substantial reduction in size, we detected and modelled a specific nucleotide insertion C1048 paralleled by a stabilizing tetraamine spermine (SPM) and NAD. Four other cofactors reported in our structure are: two iron\u2013sulfur clusters (2Fe\u20132S), adenosine triphosphate (ATP), and the added GMPPNP. In addition, three protein modifications could be detected from the density.\n\n**Table 1.**\n Cryo-EM collection, processing, model refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection and processing</th>\n      <th>Native SSU:streptomycin complex</th>\n      <th>In vitro formed SSU:streptomycin complex</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Microscope</td>\n      <td>Titan Krios</td>\n      <td>Titan Krios</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td>K2 Summit</td>\n      <td>K3 Summit</td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>165,000</td>\n      <td>105,000</td>\n    </tr>\n    <tr>\n      <td>Voltage [kV]</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Total electron exposure [e\u2212/\u00c52]</td>\n      <td>30\u201332</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Defocus range [\u03bcm]</td>\n      <td>\u22120.2 to \u22123.6</td>\n      <td>\u22120.2 to \u22123.7</td>\n    </tr>\n    <tr>\n      <td>Pixel size [\u00c5]</td>\n      <td>0.83</td>\n      <td>0.846</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C1</td>\n      <td>C1</td>\n    </tr>\n    <tr>\n      <td>Final particle</td>\n      <td>885,199</td>\n      <td>899,952</td>\n    </tr>\n    <tr>\n      <td>Resolution [\u00c5] (overall/body/shoulder/platform/back/tail/head-AP/head-PE/mS39/mtIF3)</td>\n      <td>2.40/\u2013/2.23/2.28/2.29/2.41/2.26/2.39/2.57/2.20</td>\n      <td>2.31/2.28/\u2013/\u2013/\u2013/\u2013/\u2013/\u2013/\u2013</td>\n    </tr>\n    <tr>\n      <td>Map-sharpening B-factor [\u00c52] (overall/shoulder/platform/back/tail/head-AP/head-PE/mS39/mtIF3)</td>\n      <td>\u221253/\u2013/\u221247/\u221249/\u221256/\u221260/\u221252/\u221258/\u221268/\u221254</td>\n      <td>\u221250/\u221249/\u2013/\u2013/\u2013/\u2013/\u2013/\u2013/\u2013</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model composition</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total atoms (non-hydrogen/hydrogen)</td>\n      <td>71,880/59,406</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chains (RNA/protein)</td>\n      <td>1/31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RNA residues (non-modified/m4C, m5C, m5U, m62A)</td>\n      <td>950/1/1/1/2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein residues (non-modified/N-acetylAla/O1-methylisoAsp)</td>\n      <td>5915/2/1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Metal ions (Mg2+/K+/Zn2+)</td>\n      <td>62/21/1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ligands (2Fe\u20132S/ATP/GMPPNP/NAD/spermine/streptomycin)</td>\n      <td>2/1/1/1/1/1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Waters</td>\n      <td>3087</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model to map CC (CCmask/CCbox/CCpeaks/CCvolume)</td>\n      <td>0.90/0.79/0.79/0.88</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution [\u00c5] by model-to-map FSC, threshold 0.50 (masked/unmasked)</td>\n      <td>2.18/2.18</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Average B-factor [\u00c52] (RNA/protein/metal ion and ligand/water)</td>\n      <td>36/48/32/32</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations, bond lengths [\u00c5]/bond angles [\u00b0]</td>\n      <td>0.002/0.408</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Clash score</td>\n      <td>1.39</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers [%]</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot [%] (favored/ allowed/disallowed)</td>\n      <td>98.01/1.95/0.03</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CaBLAM outliers [%]</td>\n      <td>0.71</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C\u03b2 outliers [%]</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>0.87</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>EMRinger score</td>\n      <td>6.16</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PDB/EMDB accession code</td>\n      <td>7P2E/EMD-13170</td>\n      <td>\u2013/EMD-15542</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig1-v1.jpg)\n\n**Figure 1.:** Outlined view indicates the relative positions of identified cofactors and modifications. Cryo-EM densities, models, and surrounding environment are shown for GMPPNP, adenosine triphosphate (ATP), 2Fe\u20132S clusters, protein modifications, spermine, and nicotinamide adenine dinucleotide (NAD).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cryo-EM data processing overview. (B) Binary masks used for local-masked refinements. (C) Density maps from overall refinements, filtered by their nominal resolution without sharpening, colored by local resolution. (D) Fourier shell correlation (FSC) curves of half maps from overall refinement and the local-masked refinements.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Cryo-EM data processing overview, final consensus map, and binary mask on SSU-body used for local-masked refinement. (B) Density maps from overall refinements, filtered by their nominal resolution without sharpening, colored by local resolution. (C) Fourier shell correlation (FSC) curves of half maps from overall refinement and the local-masked refinement.\n\n### Iron\u2013sulfur cluster involved in interactions between mitoribosomal proteins\n\nThe structure contains two iron\u2013sulfur clusters, and their coordination involves mitochondria-specific protein elements (Figure 1, Figure 2A). The positions of both clusters are correlated with rRNA reduction compared to the bacterial counterpart. We identified the clusters in two ordered densities, adjacent to sulfhydryl groups of cysteine residues in four different mitoribosomal proteins (Figure 1). Each of the clusters is composed of four atoms organized in a planar square, with two of the atoms bound by two cysteinyl S atoms of the mitoribosomal proteins. The map shows a weaker density in the center of the planar squares. Such a chemical arrangement corresponds to the 2Fe\u20132S cluster, where iron atoms with bridging sulfur atoms are coordinated by proteins (Beinert et al., 1997). A unique feature of our structure is that both 2Fe\u20132S clusters are coordinated not by the same protein but by two different proteins, which is an unprecedented occurrence in any other known Fe\u2013S systems.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig2-v1.jpg)\n\n**Figure 2.:** (A) Each of the two 2Fe\u20132S clusters is coordinated by mitochondria-specific components (red) from two different proteins. Superposition of 2Fe\u20132S cluster-binding sites in the human mitoribosome with corresponding sites in E. coli ribosome (PDB ID: 7K00, white) reveals that mitoribosomal protein elements participating in 2Fe\u20132S coordination compensate for missing rRNA helices. (B) The conserved overall fold of bS18 contributes to Zn2+ or 2Fe\u20132S binding in the mitoribosome.\n\nCluster-1 (chain P, FES 201 in the PDB) links extensions of bS18m and bS6m close to the platform region (Figures 1 and 2A). The former forms a mitochondria-specific intersubunit protein\u2013protein contact that contributes to sampling a larger conformational space than the bacterial counterpart. In T. thermophilus the binding of bS6:bS18 requires a formation of the central RNA domain first (Agalarov et al., 2000), and therefore occurs during an advanced assembly process. Cluster-2 (chain T, FES 201 in the PDB) links the mitochondria-specific protein mS25 with bS16m in the lower body (Figures 1 and 2A). Despite being a peripheral mitoribosomal protein, the correct assembly of mS25 is crucial (Bugiardini et al., 2019), and mutations in its binding partner bS16m are associated with corpus callosum agenesia, hypotonia, and fatal neonatal lactic acidosis (Miller et al., 2004). Interestingly, we found another homolog of bS18m on the SSU: mitochondria-specific protein mS40. However, unlike its counterpart, mS40 binds a zinc ion in our structure and not a 2Fe\u20132S cluster, and it is not involved in protein bridging (Figure 2B).\n\nThe comparison with E. coli ribosome (PDB ID: 7K00) shows that the 2Fe\u20132S clusters are found where bacterial rRNA is missing (Figure 2A), suggesting that the incorporation of the iron\u2013sulfur clusters provides a mechanism by which protein stabilization is coupled with the structural compensation for the rRNA deletion. Together, our observation of iron\u2013sulfur clusters bridging between different proteins suggests a role in the mitoribosomal assembly, rather than a catalytic function.\n\n### NAD is associated with a single rRNA nucleotide insertion\n\nAnother notable feature of the map is the presence of two related densities associated with rRNA that we assigned as spermine and NAD (Figure 1). In the SSU-body, we found a spermine buried within the reduced rRNA core, bound to the rRNA h20. Surprisingly, despite the general conception that human mitochondrial rRNA only has large deletions, we found an insertion of the nucleotide C1048 in the mitochondrial genome. In the structure, the addition of this residue disrupts the base-paring that supports the h20 architecture, and the residues A1047 and C1048 are flipped out (Figure 3A, B). Spermine is then inserted through h20 and contacts the backbone of C1048 for stabilization. Spermine forms salt bridges with the phosphate groups of U946, U1044, G1045, and C1048 and forms hydrogen bonds with the base moieties of U944 and G945. While polyamines, like spermine, are commonly found in ribosomes (Watson et al., 2020; Zgadzay et al., 2022), we also detected an NAD at the same site, and both cooperatively compensate for the lack of internal rRNA interactions in this region as a result of the insertion (Figure 3A, B). NAD adopts a compact conformation, where its two base rings are stacked on each other. The adenine ring forms a base pair with U948 and is further stacked on A1046. NAD also interacts with A781, A782, A1047 (through Mg-ion coordination), and C1048 of rRNA and Tyr196 of uS15m. The density is suggestive that the ring may be a mixture of oxidized and reduced states, although the structure does not reveal whether it might have a regulatory function on the mitoribosome or affect the local environment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig3-v1.jpg)\n\n**Figure 3.:** (A) Comparison of the spermine-NAD binding site with E. coli ribosome (PDB ID: 7K00, white) shows that it provides structural stability that compensates for rRNA alterations. (B) 2D diagram of the SSU head rRNA (grey) with regions stabilized by NAD and spermine indicated (black); the associated insertion C1048 is highlighted in red.\n\n### New GTP-binding site in the head of the mitoribosomal SSU\n\nThe SSU head hosts arguably the most enigmatic mitoribosomal protein mS29 \u2013 a putative intrinsic GTPase, and therefore it is speculated that it may play a role in the translation cycle (Amunts et al., 2015; Greber et al., 2015; Ott et al., 2016). To clarify its structure, we performed our studies in the presence of a nonhydrolyzable analog GMPPNP. Careful inspection of the map at the improved resolution revealed that the reported nucleotide pocket binds ATP with an Mg2+ ion, and the previously modeled GDP was misassigned due to the limited resolution. Our argument is based on N6-amino and N1-imino groups of the adenine ring that form hydrogen bonds with the backbone carbonyl and NH groups of Met100, respectively (Figure 4B ). This would be incompatible with guanine, since its O6-carbonyl and N1-amino groups impart repulsive interactions with the backbone carbonyl and NH groups of Met100, respectively (acceptor with acceptor and donor with donor). Therefore, this binding site does not seem to bear a functional GTPase activity, which is also consistent with a fungal mitoribosome (Itoh et al., 2020).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig4-v1.jpg)\n\n**Figure 4.:** (A) Interactions of the bound ATP with the surrounding residues of mS29. The right panel shows the fitting of adenine versus guanine to the density, featuring the amine group N2 on carbon 6 that does not fit when guanosine triphosphate (GTP) is modeled. (B) The newly identified binding pocket and the interactions of GMPPNP with the surrounding residues of mS29. (C) Bending of uS11m loop at the site of occurrence of 1-methyl iso-Asp 184 of uS11m to facilitate interactions with helix h23.\n\nNotably, distinct from the reported binding site, we also identified a density that is not continuous with any of the assigned mS29 residues, and it corresponds to the added GMPPNP (Figure 1). The density is found in the hydrophobic cavity formed by Tyr173, Tyr208, Trp210, and Ile242, where it stabilizes a beta-hairpin (residues 208\u2013216) on the top of mS29 in the SSU head (Figure 4B). The local environment for the base specificity reveals that N1-amino and O6-carbonyl groups form hydrogen bonds with the backbone NH and carbonyl groups of Val209, respectively, while the N2-amino group forms hydrogen bonds with the backbone carbonyl group of Val209 and the side chain carboxyl group of Asp238. The ribose moiety has hydrogen bonds with Asp238 and Asn292 and the phosphate groups have polar interactions with Tyr173, Arg177, Lys245, His291, and Lys295. Thus, the chemical environment and the density features suggest a separate GTP/GDP-binding pocket. The network of interactions indicates that GTP would be favored over GDP in the binding pocket, and this explains why the SSU has a high affinity for GTP (Denslow et al., 1991).\n\n### Protein modifications identified from the density\n\nSome posttranslational chemical modifications of ribosomal proteins can be identified directly from the density (Watson et al., 2020; Cottilli et al., 2022), and our study reveals a mainchain modification 1-methyl-isoaspartate at position 184 in uS11m, and the N-terminal acetylations in bS21m and mS37 (Figure 1). The density around Asn184 was incompatible with the placement of an asparagine residue as indicated by the primary sequence. Instead, an isoaspartate (iso-Asp) was modeled, so that the \u03b2-carbonyl group forms backbone peptide linkage with Gly185, and the \u03b1-carboxyl group is exposed, in agreement with the modification detected in E. coli (David et al., 1999; Watson et al., 2020) and plants (Cottilli et al., 2022). Due to the elongated backbone peptide by one methylene group at the iso-Asp, the loop is kinked between His183 and iso-Asp184. This specific kinked loop interacts with rRNA h23\u201324, and thereby likely contributes to its stability (Figure 4C). Furthermore, an additional density was observed continuous with an \u03b1-carboxyl oxygen atom, and thus it corresponds to a non-hydrogen atom, which led us to replace the isoaspartate with 1-methyl-isoaspartate that is known as a product of the enzyme L-isoaspartyl O-methyltransferase (Reissner and Aswad, 2003). The backbone peptide and the \u03b1-methoxy group form hydrogen bonds with the adenine and ribose moieties of A1013 rRNA, respectively, while the \u03b1-carbonyl group forms a hydrogen bond with bS21m Arg42 (Figure 1).\n\nFor two mitoribosomal proteins bS21m and mS37, to model N-acetylations, we completed the model up to the corresponding N-terminal residues, and the remaining densities were too small to accommodate a methionine, but consistent in size with an acetyl group that is represented by three non-hydrogen atoms. N-Acetylated residues were then added and adjusted manually taking into consideration the immediate chemical environment. Thus, in bS21m and mS37, the first methionine is removed and the second residue is N-acetylated, which is a typical product of the N-terminal acetyltransferases (Starheim et al., 2009).\n\n### Streptomycin binding with a possible modification\n\nWe could model streptomycin unambiguously into the map and identify the interactions and solvation that stabilize it in the binding pocket (Figure 5A-C, Figure 5\u2014figure supplement 1). The chemical structure of streptomycin is comprised of three components linked by ether bonds: streptidine (scyllo-inositol with two hydroxyl groups substituted by guanidino groups), streptose (3-formyl-4-methyl tetrose), and N-methyl-L-glucosamine (Figure 5A, B). However, streptomycin can also be subjected to modifications under different environmental conditions that might affect its chemical properties in the cellular milieu (Abraham et al., 1946; Stern et al., 2018; Alekseeva et al., 2019), and thus be of a potential therapeutic interest.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig5-v1.jpg)\n\n**Figure 5.:** (A) Streptomycin interacts with uS12m and backbone phosphates of helices h18 and h44. (B) Chemical structure of the hydrated gem-diol form of streptomycin. (C) Left, density and model of the natively bound streptomycin along with surrounding water molecules and Mg2+ ions. Right, atomic B-factor distribution of the bound streptomycin shows higher relative flexibility of the streptose moiety. (D) Middle, density (red) and model of the in vitro formed complex. Left, zoom-in of the native state shows that the density of the gem-diol moiety is not well resolved. Right, zoom-in of the in vitro complex shows that the streptose moiety is better resolved with a defined orientation of the gem-diol moiety. A second notable difference is the inversion of chirality of C42, where the methyl group of streptose is located. (E) Comparison with the previously reported structure of T. thermophilus ribosome (PDB ID: 4DR3, pink). Close-ups of the chemical interactions of O6\u2033 N-methyl-L-glucosamine in its alternative conformations (left zoom-in); and methyl moieties (right zoom-in) with their densities resolve discrepancies of the methyl-group orientation in the previous studies.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The bound streptomycin is shown as a model, and the interacting SSU region that forms the binding pocket is shown as a model with density (uS12m, h18 and h44 of rRNA). Specific interactions are indicated in dashed arrows.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Left panel, current work with natively bound streptomycin. Middle panel, streptomycin modeled in two alternative conformations bound to adenylyltransferase AadA with streptose aldehyde (PDB: 5LUH, Stern et al., 2018). The density suggests a gem-diol moiety that can participate in the indicated hydrogen bonds. Right panel, streptomycin modeled in two alternative conformations bound to aminoglycoside phosphotransferase APH(3\u2033)-Id (PDB: 6FUX, Alekseeva et al., 2019). The side chain carboxylate of D267 is likely to be a proton acceptor of a gem-diol that acts as a proton donor for the hydrogen bond.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Top, mass- spectra in positive ionization mode confirms the presence of streptomycin. Bottom, the arrows indicated corresponding m/z peaks for hydrated (600.28) and non-hydrated (582.27) forms of streptomycin.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77460/elife-77460-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** The density shown as the surface represents a mixture of two states. A1558 is flipped out in one state (left), whereas its base is stacked between G1559 and A1492 in the other state, causing a shift of the residues in the other strand (right).\n\nIn our structure, the density for the streptose moiety reveals a series of unexpected features (Figure 5C): (1) it is generally the poorest resolved component of streptomycin, (2) particularly, the methyl group of streptose is not well covered by the density, (3) the previously modeled aldehyde group (Carter et al., 2000; Demirci et al., 2013) appears as a loosely bound density, and (4) the hydroxyl group is not well resolved. To further clarify the model, we calculated atomic B-factors estimated by reciprocal space refinement, which supports the idea that the streptose moiety is relatively flexible (Figure 5C). The density surrounding the methyl group also suggests the stereochemistry for the methyl group might have been inverted, possibly by enzymatic activity within cells, however, the map quality is not unambiguous in this region (Figure 5D). The density replacing the aldehyde group is within the hydrogen bonding distance of four phosphate groups of rRNA (C898, G899, A1166, and A1167). Given that aldehyde has no hydrogen to provide for H-bonding phosphates, the ribosome-bound streptomycin is likely to be in the hydrated gem-diol form rather than in the free aldehyde form.\n\nThis hydration has been previously reported by an NMR study of the free unbound state in an aqueous solution (Blundell et al., 2013). Additionally, previously reported sub-2 \u00c5 resolution X-ray electron density maps of the streptomycin bound to adenylyltransferase AadA (PDB: 5LUH, Stern et al., 2018) and an aminoglycoside phosphotransferase APH(3\u2033)-Id (PDB: 6FUX, Alekseeva et al., 2019) show clear branched densities and interactions of the aldehyde moiety (Figure 5\u2014figure supplement 2). This potentially also indicates a gem-diol, although they are interpreted as two alternative conformations of the aldehyde group in the published models (Stern et al., 2018; Alekseeva et al., 2019). On the other hand, the density of the streptose moiety in our map is unclear and therefore we cannot exclude the possibility of unidentified modification of streptomycin.\n\n### Comparison between native and in vitro bound streptomycin\n\nTo find out whether the streptomycin streptose moiety alteration originated in its chemical production or was affected by the cellular milieu, we next purified the SSU from untreated cells and added streptomycin in molar excess in vitro to determine its bound structure. In contrast to our previous experiment, this approach implies that the antimicrobial would maintain its original properties without being subjected to the cellular environment. After 30 min of incubation, the sample was subjected to cryo-EM analysis, and the resulting structure of the SSU with in vitro bound streptomycin was determined at 2.3-\u00c5 nominal resolution (Figure 1\u2014figure supplement 2 and Table 1). Unlike in the native structure, the streptose moiety is well resolved, and no chirality flip is observed around the methyl group (Figure 5D). The density around the aldehyde moiety is branched and supports the modeling of one stabilized rotamer with the oxygen atoms within hydrogen bond distance from backbone phosphates of rRNA residues G898, G899, A1166, and A1167 and an adjacent water molecule (Figure 5D). This indicates that the aldehyde is in the hydrated gem-diol state and participates in the potential interactions. Overall, no modification except for the aldehyde hydration is present in the streptomycin added in vitro to purified SSU.\n\nTo further confirm the chemical structure of the streptomycin modeled here, we next performed mass spectrometry analysis using a dual jet stream electrospray ion source operating in positive ion mode (Figure 5\u2014figure supplement 3). The mass to charge ratio (m/z) is consistent with the cryo-EM analysis of in vitro bound streptomycin displaying the highest peak at ~600.28, which corresponds to the hydrated gem-diol form. However, another less-abundant peak is found at m/z value of ~582.2, which corresponds to the exact m/z of streptomycin. This suggests that both forms of soluble streptomycin, hydrated and non-hydrated are retained in solution (Figure 5\u2014figure supplement 3). Interestingly, in the biosynthesis process of streptomycin by the bacterium Streptomyces griseus, the dehydrogenation leading to the aldehyde formation is the last of 27 assembly steps, followed by the compound release from the bacteria for activation by StrA (Flatt and Mahmud, 2007). A putative gene product that would mediate this transition is unknown.\n\n### Structural basis for streptomycin toxicity\n\nComparison with the previous model of streptomycin-bound T. thermophilus ribosome (Demirci et al., 2013) further shows that the methyl group and the O6\u2033 hydroxyl group have different conformations on the N-methyl-L-glucosamine moiety (Figure 5E, left panel). Our high-resolution structure indicates the chemically more favorable conformation with the amino group at the 2\u2033 position (protonated secondary amine), forming two hydrogen bonds/salt bridges with two backbone phosphates of rRNA (Figure 5E, right panel). We also found two water-coordinating magnesium ions (Figure 5C).\n\nWith respect to the mutations 1494C>T and 1555A>G in h44, the human mitochondrial rRNA appears to be more flexible in this region due to a loss of the G:C base pair at the 1494:1555 position. However, the two mutations introduce Watson\u2013Crick base pairs that limit the rRNA local flexibility and resemble the corresponding binding site in bacteria that is implicated in aminoglycoside hypersensitivity (Ippolito et al., 2008; Wilson et al., 2008). Interestingly, the density indicates two alternative states in this region (residues 1491\u20131495 and 1558\u20131559), particularly A1558 is flipped out in one state, whereas its base is stacked between G1559 and A1492 in the other state, causing a shift of the residues in the other strand (Figure 5\u2014figure supplement 4). Since this feature indicates a flexibility that might be related to recruitment of mRNA for translation (Khawaja et al., 2020), a possible mechanistic insight from our work is that by directly interacting with A1555 and C1556 on the mitoribosome, the streptomycin binding decreases that flexibility, which further contributes to translation inhibition.\n\n## Discussion\n\nIn this work, we present the cryo-EM reconstructions of the native and in vitro bound complexes of the mitoribosomal SSU with streptomycin at 2.4 and 2.3 \u00c5 resolution, respectively. We discovered distinct structural elements of the mitoribosome, including 2Fe\u20132S clusters and NAD. The comparison with bacteria allowed us to propose that 2Fe\u20132S clusters play a structural role, being organized between mitoribosomal proteins to stimulate a tighter association. This phenomenon likely reflects the importance of mechanical properties, such as the stability of newly added proteins in the regions where rRNA has been deleted during evolution. Therefore, the clusters facilitate protein complex formation to support the assembly of the human mitoribosome. Although there is evidence that iron\u2013sulfur clusters contribute to the structural stability of the apoproteins into which they are integrated, the involvement in maintaining a complex of proteins was not reported before. It is unknown whether the facilitation of inter-protein interactions that we found is unique to the mitoribosome or represents a more general characteristic. One of the implications of our finding is that since iron\u2013sulfur clusters are not stable in an aqueous solution without being bound to a protein, there might be yet to be characterized chaperones required for the assembly on the mitoribosome. Notably, the biogenesis of iron\u2013sulfur complexes is associated with acyl carrier protein and fatty-acid synthesis (Van Vranken et al., 2016; Nowinski et al., 2020), which we also previously identified as a component of the LSU assembly (Brown et al., 2017). Therefore, our data provide a potential regulatory link between the three main metabolic pathways in mitochondria: mitoribosomal biogenesis, iron\u2013sulfur assembly and fatty-acid synthesis. In addition, the mitochondrial disease Friedreich\u2019s ataxia that is caused by a depletion of an Fe\u2013S cluster biogenesis factor, leads to deficit in mitochondrial oxidative phosphorylation in patient samples (Marmolino, 2011), which might also involve mitoribosomes.\n\nThe improved resolution also allowed us to identify and model an NAD, which is a metabolite the depletion of which has been proposed to promote aging and mitochondrial myopathy (Pirinen et al., 2020). Apart from acting as an electron carrier in metabolic pathways, NAD is a co-substrate of several regulatory pathways, and its loss induces a pseudohypoxic state (Gomes et al., 2013). Here, we show that its presence on the mitoribosome contributes to the rRNA stability, and thus might be important for mitochondria function. Among other newly found cofactors, we re-assign the previously modeled GDP to ATP with an Mg2+ ion in the mitoribosomal protein mS29. At the same time, based on the local chemical environment, we identified a new GTP/GDP-binding pocket. This provides essential structural information and an accurate model that in the future will help to further our understanding of GTP binding to the SSU and its consequences for the activity of the human mitoribosome.\n\nOur structures detect specific water molecules and metal ions involved in the streptomycin coordination that exert its effects. The comparison between the two methods of adding the antibiotic (cultured cells vs. purified mitoribosome) allowed us to directly observe small differences in terms of hydration and a possible chirality inversion by the cellular milieu. The notion that hydrated aldehyde is present is supported by mass spectrometry analysis. These observations complement previous models of streptomycin-bound bacterial ribosomes and allow us to propose a refined model of binding that also includes alternative conformations. In addition, two alternative states of rRNA residues are found in the vicinity of the streptomycin site in the mRNA-binding region that is mechanistically important for the translation mechanism. Since our structures suggest those residues would lose their flexibility upon streptomycin association, this can explain the potential toxicity. Given that streptomycin is a drug that is used for the treatment of tuberculosis, these structural studies are informative for designing less-toxic drugs.\n\nOverall, these findings demonstrate that high-resolution cryo-EM of native assemblies with therapeutic compounds combined with a mass spectrometry approach is a powerful method to address potential modifications and identify specifically bound cofactors. Conceptually, the approach of adding drugs to cultured cells to study their binding could be applied to other medically relevant subjects and antibacterial compounds. Here, we used streptomycin to study its off-target binding, and since the sensitivity of the mitoribosome can also be exploited to suppress leukemia (Skrti\u0107 et al., 2011) and glioblastoma stem cell growth (Sighel et al., 2021), advances in structure-based design can lead to specific RNA-targeted small molecules for cancer research as well. The presence of cofactors can also affect the activity or selectivity of a compound, thus more data will be needed to define mitoribosomal profiles in different conditions, especially in the context of mRNA and tRNAs. In addition, since cofactors such as polyamines are implicated in aging and regulation of mitochondrial metabolism, determining their roles on the LSU and under native, biologically relevant conditions will allow to better understand how the functions of mitoribosome might be modulated. The disease phenotypes associated with mitoribosomes still remain poorly understood, yet high-resolution cryo-EM of native samples underscores the importance of modifications and cofactors, and thus defining their structural principles will help to better understand the related pathological dysfunctions.\n\n## Materials and methods\n\n### Sample preparation for native SSU\u2013streptomycin complex\n\nFlp-In T-Rex human embryonic kidney 293T (HEK293T) cell line (Invitrogen) was cultured as described previously (Khawaja et al., 2020). The cells have doxycycline-inducible expression of the C-terminally FLAG-tagged human mitochondrial IF3 with a HRV 3C cleavage cite. The cells were grown in DMEM media (Gibco) containing 10% tetracycline-free Fetal Bovine Serum (FBS), 100 \u03bcg/ml uridine, 5 \u03bcg/ml blasticidin S, and 100 \u00b5g/ml hygromycin B. Penicillin\u2013streptomycin solution at pH 6.2 and osmolality 322 (Thermo Fisher, 15140122) was supplemented to the media with the final concentration of 100 units/ml of penicillin and 100 \u00b5g/ml streptomycin. Doxycycline (Sigma-Aldrich) was added with the final concentration of 50 ng/ml to the culture to induce the FLAG-tagged IF3 expression 48 hr prior to the harvest.\n\nCells were collected, resuspended in an ice-cold hypotonic buffer 0.6 M mannitol, 100 mM Tris\u2013HCl pH 7.5, 10 mM Ethylenediamine tetraacetic acid (EDTA), 0.05% bovine serum albumin (BSA), and ruptured by a dounce homogenizer. The lysate was clarified by centrifugation at 800 \u00d7 g and 4\u00b0C for 10 min and the mitochondria were pelleted from the supernatant by further centrifugation at 8000 \u00d7 g and 4\u00b0C for 15 min. The crude mitochondria were loaded onto the sucrose step-gradient (1.0 M and 1.5 M sucrose, 20 mM Tris\u2013HCl pH 7.5, 1 mM EDTA) and centrifuged for 1 hr at 77,000 \u00d7 g (25,000 rpm) in a SW41 Ti rotor (Beckman Coulter). The band formed by the mitochondria between 1 and 1.5 M sucrose was collected and resuspended in 10 mM Tris\u2013HCl pH 7.5 in 1:1 ratio. After centrifugation at 8000 \u00d7 g and 4\u00b0C for 15 min, the purified mitochondrial pellet was resuspended in mitochondrial freezing buffer (200 mM trehalose, 10 mM Tris\u2013HCl pH 7.5, 10 mM KCl, 0.1% BSA, 1 mM EDTA), flash-frozen and stored at \u221280\u00b0C (Aibara et al., 2018).\n\nThe purified mitochondria were lysed by incubating at 4\u00b0C for 20 min in the lysis buffer 25 mM HEPES\u2013KOH pH 7.5, 5.0 mM Mg(OAc)2, 100 mM KCl, 2% (vol/vol) Triton X-100, 0.2 mM Dithiothreitol(DTT), 1\u00d7 cOmplete EDTA-free protease inhibitor cocktail (Roche), 40 U/\u00b5l RNase inhibitor (Invitrogen). The lysate was centrifuged at 5000 \u00d7 g for 5 min at 4\u00b0C and the supernatant was added to ANTI-FLAG M2 Affinity Gel (Sigma-Aldrich), equilibrated with the wash buffer (25 mM HEPES-KOH pH 7.5, 5.0 mM Mg(OAc)2, 100 mM KCl, 0.05% N-dodecyl-beta-D-maltoside [\u03b2-DDM]). After 3 hr incubation at 4\u00b0C, the gel was washed with the wash buffer and the IF3-bound ribosome was eluted by additional incubation of 2 hr with the PreScission protease (GE Healthcare) (2 U/\u00b5l). The IF2-GMPPNP mix was added (final concentration of 1 \u00b5M IF2 and 0.25 mM GMPPNP) to the IF3-bound SSU eluate (A260 = 7.9) together with the fMet-tRNAMeti (1 \u00b5M) and MTCO2 mRNA (1 \u00b5M) and incubated for another 30 min at room temperature, as described previously (Khawaja et al., 2020).\n\n### Sample preparation of in vitro formed SSU\u2013streptomycin complex\n\nHEK293-derived cells were cultured in Freestyle 293 Expression Medium (Thermo Fisher) in a vented flask shaking at 120 rpm at 37\u00b0C under 5% CO2. The culture was scaled up by splitting at a cell density of 3.0 \u00d7 106 cells/ml up to 2 l final volume of the cell culture. The cells were harvested at a density of 3.7\u20134.0 \u00d7 106 cells/ml by centrifugation at 1000 \u00d7 g for 10 min and washed with cold phosphate-buffered saline. Next, mitochondria were purified from the collected cells as described above. Purified mitochondria were lysed in the buffer containing 25 mM HEPES\u2013KOH pH 7.45, 50 mM KCl, 20 mM Mg(OAc)2, 2% Triton X-100, 2 mM DTT, supplemented with cOmplete protease inhibitors and RNase inhibitors, and incubated for 20 min at 4\u00b0C. The mitochondrial lysate was centrifuged at 20,000 \u00d7 g for 5 min at 4\u00b0C, and subsequently overlayed on top a 10\u201330% sucrose gradient in the ribosome buffer (25 mM HEPES/KOH pH 7.5, 50 mM KCl, 20 mM Mg(OAc)2, 2 mM DTT). After centrifugation for 15 hr at 79,000 \u00d7 g in a SW41 Ti rotor (Beckman Coulter), the gradients were fractionated with a Biocomp Fractionator. Fractions corresponding to the monosomes were pooled and concentrated by pelleting at 135,520 \u00d7 g (55,000 rpm) for 16 hr at 4\u00b0C using a TLA55 rotor (Beckman Coulter). The monosome pellet was resuspended in dissociation buffer (50 mM HEPES/KOH pH 7.6, 300 mM KCl, 5 mM Mg(OAc)2, 2 mM DTT) and incubated for 2 hr at 4\u00b0C. The suspension was loaded on top of a 10\u201330% sucrose gradient prepared in dissociation buffer and centrifuged at 54,455 \u00d7 g for 21 hr in a SW41 Ti rotor. The gradient was subsequently fractionated using a Biocomp Fractionator. The peak corresponding to the SSU was pooled and concentrated using the centrifugal concentrator Vivaspin MWCO 30 000 PES (Sartorius). The purified SSU (150 nM) was incubated with streptomycin solution (~600 \u00b5M) (Thermo Fisher, 15140122) for 30 min at room temperature to form the complex.\n\n### Cryo-EM data collection and processing\n\nFor the native SSU\u2013streptomycin complex, 3 \u03bcl of ~120 nM mitoribosome was applied onto a glow-discharged (20 mA for 30 s) holey carbon grid (Quantifoil R2/2, copper, mesh 300) coated with continuous carbon (of ~3 nm thickness) and incubated for 30 s in a controlled environment of 100% humidity and 4\u00b0C. The grids were blotted for 3 s, followed by plunge-freezing in liquid ethane, using a Vitrobot MKIV (Thermo Fisher). Datasets were collected on a Titan Krios transmission electron microscope operated at 300 keV, using C2 aperture of 70 \u03bcm and a slit width of 20 eV on a GIF quantum energy filter (Gatan). A K2 Summit detector (Gatan) was used at a pixel size of 0.83 \u00c5 (magnification of \u00d7165,000) with a dose of 29\u201332 electrons/\u00c52 fractionated over 20 frames. A defocus range of \u22120.5 to \u22123.6 \u03bcm was used. More detailed parameters are listed in Table 1.\n\nFor in vitro formed SSU\u2013streptomycin complex, 3 \u03bcl of 150 nM SSU (incubated with streptomycin as described above) was applied onto a Quantifoil R2/2 holey carbon grid coated with continuous carbon (~3 nm thickness), glow-discharged at 20 mA for 30 s. After application of sample, the grid was incubated for 30 s in a controlled environment of 100% humidity at 4\u00b0C using a Vitrobot MKIV (Thermo Fisher), blotted for 3 s and plunge-frozen in liquified ethane. Dataset was collected on Titan Krios transmission electron microscope operated at 300 keV, using C2 aperture of 50 \u03bcm and a slit width of 20 eV on a GIF quantum energy filter (Gatan). A K3 Summit detector (Gatan) was used at a pixel size of 0.846 \u00c5 (magnification of \u00d7105,000) with a dose of 40 electrons/\u00c52 fractionated over 40 frames. A defocus range of \u22120.5 to \u22122.0 \u03bcm was used (Table 1).\n\nFor the processing of cryo-EM data from the native SSU\u2013streptomycin sample, movie frames were aligned and averaged by global and local motion corrections by RELION 3.0 (Zivanov et al., 2018). CTF parameters were estimated by Gctf (Zhang and Gctf, 2016). Particles were picked by Gautomatch (http://www.mrc-lmb.cam.ac.uk/kzhang). The picked particles were subjected to 2D classification to discard contaminants as well as the LSU and monosome particles. The remaining particles underwent 3D auto-refinement with RELION 3.0 using EMD-10021 as a 3D reference, followed by 3D classification with local angular search with a solvent mask to remove poorly aligned particles. Focused 3D classification with signal subtraction was performed to pool the SSU particles with IF3 but without IF2, as described previously (Khawaja et al., 2020). The particles were subjected to 3D refinement and CTF refinement (beam-tilt, per-particle defocus, per-micrograph astigmatism) by RELION 3.1 (Zivanov et al., 2020), followed by Bayesian polishing. Particles were then separated into multi-optics groups based on acquisition areas and the date of data collection. The second round of CTF refinement (beam-tilt, trefoil, and fourth-order aberrations, magnification anisotropy, per-particle defocus, per-micrograph astigmatism) was performed, followed by 3D auto-refinement. To improve the local resolution, local-masked 3D auto-refinements were performed (Figure 1\u2014figure supplement 1).\n\nFor the processing of cryo-EM data from in vitro formed SSU\u2013streptomycin sample, movies were motion corrected using Relion 3.1.1. CTF parameters were estimated using Gctf (Zhang and Gctf, 2016). Bad micrographs were removed by manual inspection. Particles were picked in RELION 3.1.1 using 2D class averages as references. Reference-free 2D classification was carried out and particles corresponding to SSU classes were pooled for further processing. Particles were exported to cryoSPARC v.3 (Punjani et al., 2017) and subjected to homogeneous refinement. Aligned particles were exported back into RELION 3.1.1 for 3D classification to sort out a final clean set of SSU particles. SSU particles were then subjected to CTF refinement (beam-tilt, per-particle defocus, per-micrograph astigmatism) followed by Bayesian polishing in RELION 3.1.1. Particles were then separated into multi-optics groups based on acquisition areas followed by a second round of CTF refinement (beam-tilt, per-particle defocus, per-particle astigmatism and fourth-order aberrations, magnification anisotropy). The SSU-body was masked refined to achieve improved local resolutions (Figure 1\u2014figure supplement 2).\n\nReported resolutions are based on applying the 0.143 criterion on the Fourier shell correlation between reconstructed half-maps. Finally, the maps were subjected to B-factor sharpening and local-resolution filtering by RELION 3.1, superposed to the overall map and combined for model refinement.\n\n### Model building and refinement\n\nFor the SSU bound with streptomycin, the starting model was PDB ID: 6RW4. The manual revision was done using Coot 0.8 (Emsley et al., 2010). The streptidine (inositol with two hydroxyl groups substituted by guanidino groups) and the N-methyl-L-glucosamine parts agreed with the density, while the aldehyde group of streptose part disagrees. Therefore, the hydrated aldehyde was placed based on the reported hydration information (Blundell et al., 2013). The density indicates an inversion in the chirality at C42 (Figure 5D) the original chirality is retained in the final model. Alternative conformations supported by the density for the glucosamine moiety of the streptomycin, as well as RNA and protein residues were introduced. The introduced alternative conformations are chain-A (12S rRNA) G902, C1491-C1495, A1558-G1559; chain-B (uS2m) Met175, Ile232; chain-E (bS6m) Arg45; chain-Q (bS21m) Arg50; chain-S (mS23) Ala2-Ser4; chain-T (mS25) Arg160; chain-X (mS29) Lys298; chain-Y (mS31) Gln295. Water molecules were automatically picked by Coot, followed by manual revision. Geometrical restraints of modified residues and ligands were calculated by Grade Web Server (http://grade.globalphasing.org) or obtained from the CCP4 library (Lebedev et al., 2012). Hydrogens were added to the models except for water molecules by REFMAC5 (Murshudov et al., 2011) using the prepared geometrical restraint files. The model was then refined against the composite map using Phenix.real_space_refine v1.18 (Liebschner et al., 2019) with global energy minimization with reference restraints (only for non-modified protein residues, using the input model as the reference, sigma 5) and rotamer restraints, without Ramachandran restraints. Validation was done by MolProbity (Williams et al., 2018). The statistics are listed in Table 1.\n\n### High-resolution mass spectrometry analysis for streptomycin\n\nBefore high-resolution mass spectrometry analysis the streptomycin standard stock was diluted to 10 ng/\u00b5l in mQ water.\n\nThe chromatographic separation was performed on an Agilent 1290 Infinity UHPLC-system (Agilent Technologies, Waldbronn, Germany). 1 \u03bcl of the diluted standard was injected onto an Acquity UPLC HSS T3, 2.1 \u00d7 50 mm, 1.8 \u03bcm C18 column in combination with a 2.1 \u00d7 5 mm, 1.8 \u03bcm VanGuard precolumn (Waters Corporation, Milford, MA, USA) held at 40\u00b0C. The gradient elution buffers were A (H2O, 0.1% formic acid) and B (75/25 acetonitrile:2-propanol, 0.1% formic acid), and the flow rate was 0.5 ml min\u22121. The compounds were eluted with a linear gradient consisting of 0.1\u201310% B over 2 min, B was increased to 99% over 5 min and held at 99% for 2 min; B was decreased to 0.1% for 0.3 min and the flow rate was increased to 0.8 ml min\u22121 for 0.5 min; these conditions were held for 0.9 min, after which the flow rate was reduced to 0.5 ml min\u22121 for 0.1 min before the next injection.\n\nThe compounds were detected with an Agilent 6546 Q-TOF mass spectrometer equipped with a dual jet stream electrospray ion source operating in positive ion mode. Purine (4 \u03bcM) and HP-0921 (Hexakis(1H,1H,3H-tetrafluoropropoxy)phosphazine) (1 \u03bcM) were infused directly into the MS at a flow rate of 0.05 ml min\u20131 for internal mass calibration and accurate mass measurements, the monitored ions were purine m/z 121.05; HP-0921 m/z 922.0098. The gas temperature was set to 150\u00b0C, the drying gas flow to 8 l min\u20131 and the nebulizer pressure 35 psig. The sheath gas temp was set to 350\u00b0C and the sheath gas flow 11 l min\u20131. The capillary voltage was set to 4000 V in positive ion mode. The nozzle voltage was 300 V. The fragmentor voltage was 120 V, the skimmer 65 V, and the OCT 1 RF Vpp 750 V. The collision energy was set to 0 V. The m/z range was 70\u20131700, and data were collected in centroid mode with an acquisition rate of 4 scans s\u20131 (1977 transients/spectrum). A second injection of the standard was performed to achieve MSMS fragmentation spectra by auto MSMS at collision energies 10, 20, and 40 V.\n\n### Accession codes\n\nThe cryo-EM density maps and atomic coordinates for the native and in vitro SSU\u2013streptomycin complex have been deposited in the Electron Microscopy Data Bank (EMDB) and Protein Data Bank (PDB) under accession codes EMD-13170, EMD-15542, and 7P2E.\n",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "f04c74db-462b-453f-bc20-91bb21b22f6e",
+      "submission_id": "ff17e97e-d0dd-4297-94e5-cb93d50629ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jamie HD Cate, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77460.sa0](https://doi.org/10.7554/eLife.77460.sa0)\n\nThis manuscript describes high-resolution structures of the small subunit of the human mitochondrial ribosome that reveal for the first time a number of physiologically important small molecules (GTP and NAD+/NADH) and iron-sulfur clusters integrated into the small subunit architecture. In the two structures, the authors also describe interactions of the small subunit with the antibiotic streptomycin that reveal how this antibiotic may be chemically modified by the cellular environment. The chemical-level detail revealed by these structures lays a foundation for future efforts to understand the basis for mitochondrial function in human health and disease.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jamie HD Cate, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77460.sa1](https://doi.org/10.7554/eLife.77460.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural basis of streptomycin off-target binding to human mitoribosome\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by David Ron as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Tristan I Croll (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) In the manuscript, the authors present both a streptomycin-bound mitochondrial small subunit as well as an apo-subunit structure (Figure 1c). However, there is no description of the structural determination for the unbound state in either the methods or Table 1. The authors should add this information. This also raises the question of whether the short format captures all that these structures can provide. Considering the size of these complexes and the dramatically improved resolution, surely there must be some other observations worthy of mention.\n\n2) There are some questions about the interpretation of the density for the streptose ring. Although the overall density strongly supports the presence of bound streptomycin, the map does not convincingly support the proposed hydrated aldehyde within the streptomycin streptose moiety. While the claim that the poor density may reflect increased mobility of the hydrated aldehyde as the authors suggest is completely reasonable (and is supported by previously published NMR data), this would need to be independently validated given the ambiguity in the map. The authors could also cite two high-resolution crystal structures containing streptomycin (6fux and 5luh), which both show strong extra density consistent with the gem-diol form. A structure of streptomycin added in vitro to the mitochondrial small subunit would resolve whether the added molecule is indeed modified by the cellular milieu. While the authors suggest that adding the streptomycin to cultured cells rather than in vitro is an advantage of the work, the disadvantage is that it generates uncertainty that has not been resolved by the cryo-EM map alone about the chemical nature of the bound compound. The density might also be consistent with a potassium ion, for example.\n\nA second issue with the streptose ring is the density surrounding the methyl group. The map is of high enough quality to suggest that it is possible that the stereochemistry for the methyl group has been inverted, possibly by an enzymatic activity within the cells. However, the map is not unambiguous in this regard. The reviewers think the authors would be justified in noting the possible change in stereochemistry as an alternative interpretation of the density.\n\n3) The precise source of the streptomycin used in the study is not currently stated in the text. It is not clear if the compound was subjected to detailed mass spectrometry analysis to validate the composition assumed by the authors and to identify any potential chemical heterogeneity. This is an important control given the unexpected findings with the streptose ring in the structure.\n\nBelow are other itemized questions and comments from the reviewers for your consideration:Reviewer #1 (Recommendations for the authors):\n\n1. Density for the O6\" supports modeling two rotamers (Figure 1d, left), one like in the published structure, and the second as modeled here.\n\n2. The modeling in Figure 1d to the right is really hard to follow, the way the figure is laid out.\n\n3. The authors should show the density for the K71 interaction, as it is quite clear in the map, and would give the reader a sense of the map quality, with respect to the interactions.\n\n4. Line 73 p. 3, Instead of shoulder, use body-shoulder junction?\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 In the introduction, it is mentioned that mutation of C1494 to T increases susceptibility to streptomycin toxicity. The very strong excess density seeming to extend the base of A1492 (and to a lesser extent C1493) therefore seems to me to be in need of discussion (and ideally explanation). Given the spectacular local resolution it doesn't seem to be a simple artifact (and I note that there is more-or-less identical density associated with the same base in 6rw4) \u2013 is there any known evidence for modification at this base? I considered the possibility of an alternate conformation of the adjacent A1558, but (a) this clearly didn't fit the density, and (b) the excess density appears more contiguous with A1492 than with the complementary strand. I think some more careful evaluation of this site would not go astray.\n\n\u2013 Much clearer in diagnosis, but less clear in terms of relevance: the base C931 (modelled stacking against Tyr31 of chain N) has a very clear alternate configuration that instead stacks against A1137 (a roughly 150 degree flip around the backbone). Considering that it is reasonably close (~25\u00c5) to the bound streptomycin there may be some significance to this, but of course that is very difficult to speculate on.\n\n\u2013 I found a small handful of what I believe are incorrect rotamers (Thr 4:492, His X:154, His H:147, His R:247, Arg N73). None of these are critical to interpretation of the model, but if you're feeling enthusiastic it might be worth revisiting them.\n\n\u2013 Figure 1d: I think colour assignments in the caption are wrong (looks like this model is green, previous models are purple and cyan)?\n\n\u2013 Page 9, line 203: \"phenix.real_space_refine\", not \"phenix.real_space_refinement\"\n\n\u2013 Various small language issues (e.g. on line 19: \"Inhibition of the human mitoribosome\u2026\"; line 24: \"we report a 2.23\u00c5 resolution structure\u2026\"; etc.). None of this actually affects interpretation, in my opinion.Reviewer #3 (Recommendations for the authors):\n\n1. It would help the reader if the authors could highlight in the main text what they consider are the key methodological innovations in their study that allowed them to generate such a high resolution map of the mitochondrial small subunit compared to the previously published studies.\n\n2. Please clarify the source of the streptomycin used and what quality control assessment was made for the molecule.\n\n3. To support the claim that a chemical modification has been introduced into the exogenously added streptomycin with the cell, the authors should either repeat the analysis using in vitro added streptomycin or try to obtain mass spectrometry data comparing the bound versus added form of the streptomycin.\n\n4. Please improve the quality of Figure 1 to allow the reader to clearly distinguish the current model from the bacterial complexes. I find the presentation confusing. For example, the pink color is unexplained in the legend. On the left panel, which one is the current structure (green and cyan are stated to be bacterial in the legend)?\n\n5. At least some discussion of the rest of the mitochondrial small subunit structure would be welcomed given the high resolution of the current mitochondrial small subunit map.\n\n6. Line 86 \"the previously modeled aldehyde\"-modeled by whom? Please add a reference.\n\n7. Does the structure explain why \"patients carrying mtDNA mutations in the 12S rRNA gene, such as 1555A>G or 1494C>T more prone to aminoglycoside-induced ototoxicity\" (line 49)? Please discuss.\n\n8. Line 20: \"Inhibition of human mitoribosome can be caused by antimicrobial off-target binding, which leads to clinical appearances\". This is an example illustrating how the text would benefit from better clarity in the writing.\n\n9. Given the high quality of the map, it is surprising that there is no discussion about the remainder of the mitochondrial small subunit, including ligands/spermine listed in Table 1. What is the rationale for GMPPNP and ATP, which are listed as ligands in Table 1?\n",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a00e2bac-cd39-4246-bb1c-d8224ad68b52",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C1",
+      "claim": "The structure of the mitoribosomal small subunit with streptomycin was determined at 2.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting structure of the SSU with bound streptomycin was determined at 2.4 \u00c5 resolution (Figure 1\u2014figure supplement 1 and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the resolution achieved for the native SSU-streptomycin complex structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "4b03a3bc-c39c-46c5-bf65-69d2d31e4476",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C2",
+      "claim": "The 2.4 \u00c5 resolution structure represents a substantial improvement over X-ray crystal structures at 3.0\u20133.5 \u00c5 resolution of in vitro formed complexes of streptomycin with T. thermophilus ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents a substantial improvement of the X-ray crystal structures at 3.0\u20133.5 \u00c5 resolution of the in vitro formed complexes of streptomycin with T. thermophilus ribosome (Carter et al., 2000; Demirci et al., 2013), as well as the previous cryo-EM structures at ~3 \u00c5 of the human mitochondrial SSU (Khawaja et al., 2020; Itoh et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the achieved resolution with previously published structures, citing specific references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "8ecd062a-4e7a-4808-bef3-204e207b2a86",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C3",
+      "claim": "Two iron\u2013sulfur clusters (2Fe\u20132S) were detected in the mitoribosomal small subunit structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Four other cofactors reported in our structure are: two iron\u2013sulfur clusters (2Fe\u20132S), adenosine triphosphate (ATP), and the added GMPPNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the identification of two 2Fe-2S clusters in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "9d9aa239-27b3-4242-9ae0-34dcfbf7ccfb",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C4",
+      "claim": "NAD (nicotinamide adenine dinucleotide) was detected associated with rRNA insertion in the mitoribosomal small subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher resolution allowed us to detect a possible modification of the bound streptomycin and previously unknown cofactor components of the mitoribosome (Figure 1). Although compared to bacteria, human mitoribosomal rRNA is known for its substantial reduction in size, we detected and modelled a specific nucleotide insertion C1048 paralleled by a stabilizing tetraamine spermine (SPM) and NAD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the detection and modeling of NAD in the structure, with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "0829da76-4f48-40dc-9fd6-687b2af31d44",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C5",
+      "claim": "Each of the two 2Fe\u20132S clusters is coordinated by two different mitoribosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique feature of our structure is that both 2Fe\u20132S clusters are coordinated not by the same protein but by two different proteins, which is an unprecedented occurrence in any other known Fe\u2013S systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as a unique feature observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "9dd78fc2-0e80-4386-8e2c-ec1516123075",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C6",
+      "claim": "This is the first evidence of inter-protein coordination of iron\u2013sulfur clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first evidence of inter-protein coordination of iron\u2013sulfur, and the finding of iron\u2013sulfur clusters and NAD as fundamental building blocks of the mitoribosome directly links to mitochondrial disease and aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly claims this as the first evidence of this type of coordination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "1d8160f2-ca27-40f7-859a-b9d8445c331e",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C7",
+      "claim": "Cluster-1 links extensions of bS18m and bS6m close to the platform region.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster-1 (chain P, FES 201 in the PDB) links extensions of bS18m and bS6m close to the platform region (Figures 1 and 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the location and protein partners of Cluster-1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "91d5e0eb-2ff3-4f2a-b8e0-a8cc20623bca",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C8",
+      "claim": "Cluster-2 links the mitochondria-specific protein mS25 with bS16m in the lower body.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster-2 (chain T, FES 201 in the PDB) links the mitochondria-specific protein mS25 with bS16m in the lower body (Figures 1 and 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the location and protein partners of Cluster-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "5b3bd37f-a27f-42a9-ba1f-cbefd97af99a",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C9",
+      "claim": "The 2Fe\u20132S clusters are found where bacterial rRNA is missing in the human mitoribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison with E. coli ribosome (PDB ID: 7K00) shows that the 2Fe\u20132S clusters are found where bacterial rRNA is missing (Figure 2A), suggesting that the incorporation of the iron\u2013sulfur clusters provides a mechanism by which protein stabilization is coupled with the structural compensation for the rRNA deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this observation based on comparison with E. coli ribosome structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "6d118731-c7c8-4d70-af21-5689c403a9b8",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C10",
+      "claim": "The iron\u2013sulfur clusters provide structural compensation for rRNA deletion in the human mitoribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison with E. coli ribosome (PDB ID: 7K00) shows that the 2Fe\u20132S clusters are found where bacterial rRNA is missing (Figure 2A), suggesting that the incorporation of the iron\u2013sulfur clusters provides a mechanism by which protein stabilization is coupled with the structural compensation for the rRNA deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript suggests this mechanism based on structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "b632d64a-6d6d-4e62-a867-7cb0993cf57f",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C11",
+      "claim": "The iron\u2013sulfur clusters play a role in mitoribosomal assembly rather than a catalytic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our observation of iron\u2013sulfur clusters bridging between different proteins suggests a role in the mitoribosomal assembly, rather than a catalytic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this functional role based on the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "71e81921-0f0d-47cd-a44c-5ca1f33d73f5",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C12",
+      "claim": "A single nucleotide insertion C1048 was found in the human mitochondrial rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, despite the general conception that human mitochondrial rRNA only has large deletions, we found an insertion of the nucleotide C1048 in the mitochondrial genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the discovery of this nucleotide insertion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "d43bfa25-ef15-423c-963d-89046cd1006d",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C13",
+      "claim": "The insertion of nucleotide C1048 disrupts the base-pairing that supports the h20 architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, the addition of this residue disrupts the base-paring that supports the h20 architecture, and the residues A1047 and C1048 are flipped out (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the structural consequence of the C1048 insertion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "16862372-e1f7-48ab-b4aa-cca5a9639e93",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C14",
+      "claim": "Spermine is inserted through h20 and contacts the backbone of C1048 for stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Spermine is then inserted through h20 and contacts the backbone of C1048 for stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the role of spermine in stabilizing the C1048 insertion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "8047a1a7-e593-48e2-b35f-d071df11754e",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C15",
+      "claim": "NAD and spermine cooperatively compensate for the lack of internal rRNA interactions resulting from the C1048 insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "While polyamines, like spermine, are commonly found in ribosomes (Watson et al., 2020; Zgadzay et al., 2022), we also detected an NAD at the same site, and both cooperatively compensate for the lack of internal rRNA interactions in this region as a result of the insertion (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the cooperative role of NAD and spermine.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "aef6ec39-5143-45b0-ad8e-ea0f4eda67b6",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C16",
+      "claim": "The previously reported nucleotide pocket in mS29 binds ATP with an Mg2+ ion, not GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful inspection of the map at the improved resolution revealed that the reported nucleotide pocket binds ATP with an Mg2+ ion, and the previously modeled GDP was misassigned due to the limited resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly corrects a previous assignment based on improved resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "6fd34d7b-0226-44b9-95a9-e5b9d3b2ed0d",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C17",
+      "claim": "A separate GTP/GDP-binding pocket was identified in mS29.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, distinct from the reported binding site, we also identified a density that is not continuous with any of the assigned mS29 residues, and it corresponds to the added GMPPNP (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the identification of a new binding pocket for GMPPNP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "a5954b1a-fbe1-404b-b7dd-977d39be6992",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C18",
+      "claim": "The new GTP/GDP-binding pocket in mS29 would favor GTP over GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "The network of interactions indicates that GTP would be favored over GDP in the binding pocket, and this explains why the SSU has a high affinity for GTP (Denslow et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this preference based on the structural interactions observed, with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "18d2c512-313b-422b-bba2-6972b7b4c94c",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C19",
+      "claim": "A mainchain modification 1-methyl-isoaspartate was identified at position 184 in uS11m.",
+      "claim_type": "EXPLICIT",
+      "source": "Some posttranslational chemical modifications of ribosomal proteins can be identified directly from the density (Watson et al., 2020; Cottilli et al., 2022), and our study reveals a mainchain modification 1-methyl-isoaspartate at position 184 in uS11m, and the N-terminal acetylations in bS21m and mS37 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the identification of this modification from the density.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "333aa9de-f80b-4a40-baae-438b6aa72ab5",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C20",
+      "claim": "N-terminal acetylations were identified in bS21m and mS37.",
+      "claim_type": "EXPLICIT",
+      "source": "Some posttranslational chemical modifications of ribosomal proteins can be identified directly from the density (Watson et al., 2020; Cottilli et al., 2022), and our study reveals a mainchain modification 1-methyl-isoaspartate at position 184 in uS11m, and the N-terminal acetylations in bS21m and mS37 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the identification of these modifications.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "4ff4cfc6-edde-434c-9764-ee22ed0078ed",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C21",
+      "claim": "The mitoribosome-bound streptomycin is likely to be in hydrated gem-diol form rather than in the free aldehyde form.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that aldehyde has no hydrogen to provide for H-bonding phosphates, the ribosome-bound streptomycin is likely to be in the hydrated gem-diol form rather than in the free aldehyde form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this form based on the observed interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "c2814541-518e-4dda-8f98-46ac8e9e9f01",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C22",
+      "claim": "The structure of in vitro formed SSU-streptomycin complex was determined at 2.3 \u00c5 nominal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "After 30 min of incubation, the sample was subjected to cryo-EM analysis, and the resulting structure of the SSU with in vitro bound streptomycin was determined at 2.3-\u00c5 nominal resolution (Figure 1\u2014figure supplement 2 and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the resolution achieved for the in vitro complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "c3e54f3a-4722-4fcf-8f46-8d67c2dce324",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C23",
+      "claim": "In the in vitro formed complex, the streptose moiety of streptomycin is well resolved with no chirality flip around the methyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in the native structure, the streptose moiety is well resolved, and no chirality flip is observed around the methyl group (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly compares the in vitro structure with the native structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "bc64e6b7-6f4f-47c1-a64f-46fc8c5f5d37",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C24",
+      "claim": "Mass spectrometry analysis shows that both hydrated and non-hydrated forms of streptomycin are retained in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass to charge ratio (m/z) is consistent with the cryo-EM analysis of in vitro bound streptomycin displaying the highest peak at ~600.28, which corresponds to the hydrated gem-diol form. However, another less-abundant peak is found at m/z value of ~582.2, which corresponds to the exact m/z of streptomycin. This suggests that both forms of soluble streptomycin, hydrated and non-hydrated are retained in solution (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes mass spectrometry results showing both forms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "bcc39dec-3b7e-49b0-b9c4-2a7f5b68a30d",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C25",
+      "claim": "Streptomycin binding decreases the flexibility of rRNA residues in the mRNA-binding region, contributing to translation inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this feature indicates a flexibility that might be related to recruitment of mRNA for translation (Khawaja et al., 2020), a possible mechanistic insight from our work is that by directly interacting with A1555 and C1556 on the mitoribosome, the streptomycin binding decreases that flexibility, which further contributes to translation inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this mechanism based on structural observations and cites previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "fd322c86-caca-4d5c-a620-6f250283a7e0",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C26",
+      "claim": "The mitoribosome regulates cellular energy production.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitoribosome regulates cellular energy production, and its dysfunction is associated with aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this in the abstract as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "377b0aa7-6c47-4cca-a953-e57eb97b3f89",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C27",
+      "claim": "Inhibition of the mitoribosome can be caused by off-target binding of antimicrobial drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of the mitoribosome can be caused by off-target binding of antimicrobial drugs and was shown to be coupled with a bilateral decreased visual acuity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this in the abstract as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "c3cd7a28-f3b9-4fd2-9860-ac99ef26eabe",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C28",
+      "claim": "Therapy with streptomycin was shown to be coupled with bilateral decreased visual acuity with central scotomas and altered mitochondrial structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The aminoglycoside streptomycin targets the ribosomal small subunit (SSU), but the therapy with streptomycin was also shown to be coupled with a bilateral decreased visual acuity with central scotomas and an altered mitochondrial structure (Kogachi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study showing this clinical effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "195c0b6c-9bea-4e3a-bbe1-b29c51ae2885",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C29",
+      "claim": "Patients carrying mitochondrial DNA mutations 1555A>G or 1494C>T in the 12S rRNA gene are more prone to aminoglycoside-induced ototoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, patients carrying mitochondrial DNA mutations in the 12S rRNA gene, such as 1555A>G or 1494C>T are more prone to aminoglycoside-induced ototoxicity (Gao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study showing this genetic susceptibility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "5b9a70a3-78d6-40db-b6df-5c806ce72246",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C30",
+      "claim": "The human mitoribosome synthesizes 13 respiratory chain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The human mitoribosome has a distinct structure, it receives mRNAs with involvement of Leucine-rich PPR-motif-containing protein (LRPPRC) and synthesizes 13 respiratory chain proteins delivered to the inner mitochondrial membrane via the OXA1L insertase (Itoh et al., 2021; Singh et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "59a2da0e-3ecf-4e8a-851f-5cacce256982",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C31",
+      "claim": "Streptomycin was added to cultured HEK293T cells at a final concentration of 100 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the binding under close to physiological conditions, we added streptomycin to cultured human embryonic kidney 293T (HEK293T) cells at a final concentration of 100 \u03bcg/ml and not to any of the biochemical purification steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "f98142f8-2602-4ca3-800d-7af098686863",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C32",
+      "claim": "The approach of adding streptomycin to cultured cells implies that the antimicrobial would have to be imported into mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach implies that the antimicrobial would have to be imported into mitochondria, and therefore has an advantage over in vitro complex formation (that we performed as a control), as more native inhibitory properties would be preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly explains the rationale for the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "defc2514-302b-49e8-bcc2-119ea72b8925",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C33",
+      "claim": "The biogenesis of iron\u2013sulfur complexes is associated with acyl carrier protein and fatty-acid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the biogenesis of iron\u2013sulfur complexes is associated with acyl carrier protein and fatty-acid synthesis (Van Vranken et al., 2016; Nowinski et al., 2020), which we also previously identified as a component of the LSU assembly (Brown et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific studies showing this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "768f2f8f-95f1-415c-af9a-63d7b1f53f66",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C34",
+      "claim": "The finding of iron\u2013sulfur clusters and NAD as fundamental building blocks of the mitoribosome directly links to mitochondrial disease and aging.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first evidence of inter-protein coordination of iron\u2013sulfur, and the finding of iron\u2013sulfur clusters and NAD as fundamental building blocks of the mitoribosome directly links to mitochondrial disease and aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly makes this connection in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "7ad1ba7e-fb33-4bec-b3ce-217b36e0256f",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C35",
+      "claim": "NAD depletion has been proposed to promote aging and mitochondrial myopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "The improved resolution also allowed us to identify and model an NAD, which is a metabolite the depletion of which has been proposed to promote aging and mitochondrial myopathy (Pirinen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study proposing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "6e4d9b67-246a-4f87-91ee-e5d7f0f652a5",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C36",
+      "claim": "Friedreich's ataxia is caused by a depletion of an Fe\u2013S cluster biogenesis factor and leads to deficit in mitochondrial oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mitochondrial disease Friedreich's ataxia that is caused by a depletion of an Fe\u2013S cluster biogenesis factor, leads to deficit in mitochondrial oxidative phosphorylation in patient samples (Marmolino, 2011), which might also involve mitoribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study on Friedreich's ataxia.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "6856676f-682c-492f-b372-32a302fb2c0d",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C37",
+      "claim": "Mutations in bS16m are associated with corpus callosum agenesia, hypotonia, and fatal neonatal lactic acidosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being a peripheral mitoribosomal protein, the correct assembly of mS25 is crucial (Bugiardini et al., 2019), and mutations in its binding partner bS16m are associated with corpus callosum agenesia, hypotonia, and fatal neonatal lactic acidosis (Miller et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific studies on the clinical consequences of bS16m mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "fdd33324-2ec3-44dd-a13c-094ceb069bb9",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C38",
+      "claim": "The mitochondria-specific protein mS40 binds a zinc ion and is not involved in protein bridging.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found another homolog of bS18m on the SSU: mitochondria-specific protein mS40. However, unlike its counterpart, mS40 binds a zinc ion in our structure and not a 2Fe\u20132S cluster, and it is not involved in protein bridging (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the structural features of mS40.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "280e3693-32be-4aa1-b593-f161001723d6",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C39",
+      "claim": "In T. thermophilus, the binding of bS6:bS18 requires formation of the central RNA domain first and occurs during an advanced assembly process.",
+      "claim_type": "EXPLICIT",
+      "source": "In T. thermophilus the binding of bS6:bS18 requires a formation of the central RNA domain first (Agalarov et al., 2000), and therefore occurs during an advanced assembly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study on bacterial ribosome assembly.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "07464536-19b7-4b87-8c49-ba9c40a5f6ea",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C40",
+      "claim": "NAD adopts a compact conformation where its two base rings are stacked on each other.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD adopts a compact conformation, where its two base rings are stacked on each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the conformation of NAD observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "c8016ee9-5421-4bc1-b28f-2624cd0e4c1c",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C41",
+      "claim": "The adenine ring of NAD forms a base pair with U948 and is further stacked on A1046.",
+      "claim_type": "EXPLICIT",
+      "source": "The adenine ring forms a base pair with U948 and is further stacked on A1046.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the interactions of NAD with rRNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "0d87d8e6-94f8-4562-bf2f-49be7787eb90",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C42",
+      "claim": "The density of NAD is suggestive that the ring may be a mixture of oxidized and reduced states.",
+      "claim_type": "EXPLICIT",
+      "source": "The density is suggestive that the ring may be a mixture of oxidized and reduced states, although the structure does not reveal whether it might have a regulatory function on the mitoribosome or affect the local environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation of the density with uncertainty about functional implications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "cc4be804-b80f-417a-bb06-63cfc8c03395",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C43",
+      "claim": "The N6-amino and N1-imino groups of the adenine ring in ATP form hydrogen bonds with the backbone carbonyl and NH groups of Met100 in mS29.",
+      "claim_type": "EXPLICIT",
+      "source": "Our argument is based on N6-amino and N1-imino groups of the adenine ring that form hydrogen bonds with the backbone carbonyl and NH groups of Met100, respectively (Figure 4B ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the chemical interactions supporting ATP assignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "40254ebd-9dec-4ae4-b5a5-6f786b734ae7",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C44",
+      "claim": "The ATP binding site in mS29 does not bear functional GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this binding site does not seem to bear a functional GTPase activity, which is also consistent with a fungal mitoribosome (Itoh et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on structural analysis and comparison with fungal mitoribosome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "684ba562-c3e4-4a61-a634-00aa6f4f2114",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C45",
+      "claim": "The GMPPNP binding pocket in mS29 is formed by Tyr173, Tyr208, Trp210, and Ile242.",
+      "claim_type": "EXPLICIT",
+      "source": "The density is found in the hydrophobic cavity formed by Tyr173, Tyr208, Trp210, and Ile242, where it stabilizes a beta-hairpin (residues 208\u2013216) on the top of mS29 in the SSU head (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the residues forming the GMPPNP binding pocket.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "7a7c359e-7911-4738-8fb5-351f324451c1",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C46",
+      "claim": "The 1-methyl-isoaspartate modification at position 184 in uS11m is a product of the enzyme L-isoaspartyl O-methyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an additional density was observed continuous with an \u03b1-carboxyl oxygen atom, and thus it corresponds to a non-hydrogen atom, which led us to replace the isoaspartate with 1-methyl-isoaspartate that is known as a product of the enzyme L-isoaspartyl O-methyltransferase (Reissner and Aswad, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies the enzyme responsible for this modification with citation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "b5e9a9c2-90e5-4b15-87d6-c18e2f48cb94",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C47",
+      "claim": "In bS21m and mS37, the first methionine is removed and the second residue is N-acetylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in bS21m and mS37, the first methionine is removed and the second residue is N-acetylated, which is a typical product of the N-terminal acetyltransferases (Starheim et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the N-terminal processing with citation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "d81612eb-47f6-470f-90ee-0afb2674a351",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C48",
+      "claim": "The streptose moiety of streptomycin is the poorest resolved component in the native structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure, the density for the streptose moiety reveals a series of unexpected features (Figure 5C): (1) it is generally the poorest resolved component of streptomycin, (2) particularly, the methyl group of streptose is not well covered by the density, (3) the previously modeled aldehyde group (Carter et al., 2000; Demirci et al., 2013) appears as a loosely bound density, and (4) the hydroxyl group is not well resolved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the quality of the density for the streptose moiety.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "f2383c13-a377-4d50-9ca2-6803df468fd8",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C49",
+      "claim": "The stereochemistry for the methyl group of streptose might have been inverted, possibly by enzymatic activity within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The density surrounding the methyl group also suggests the stereochemistry for the methyl group might have been inverted, possibly by enzymatic activity within cells, however, the map quality is not unambiguous in this region (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly proposes this possibility with appropriate uncertainty.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "218c223c-482e-44cf-8390-035c5371b722",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C50",
+      "claim": "Hydration of streptomycin aldehyde to gem-diol has been previously reported by NMR study of the free unbound state in aqueous solution.",
+      "claim_type": "EXPLICIT",
+      "source": "This hydration has been previously reported by an NMR study of the free unbound state in an aqueous solution (Blundell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous NMR study supporting the hydration observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "23bb0c59-2d71-4f32-9917-5e0a4201c384",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C51",
+      "claim": "Two water-coordinating magnesium ions were found near the streptomycin binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found two water-coordinating magnesium ions (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the presence of these ions in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "8706c816-ce8f-4e97-9e79-fda8d11b6c0f",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C52",
+      "claim": "The mutations 1494C>T and 1555A>G introduce Watson\u2013Crick base pairs that limit rRNA local flexibility and resemble the bacterial binding site implicated in aminoglycoside hypersensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to the mutations 1494C>T and 1555A>G in h44, the human mitochondrial rRNA appears to be more flexible in this region due to a loss of the G:C base pair at the 1494:1555 position. However, the two mutations introduce Watson\u2013Crick base pairs that limit the rRNA local flexibility and resemble the corresponding binding site in bacteria that is implicated in aminoglycoside hypersensitivity (Ippolito et al., 2008; Wilson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the structural consequences of these mutations with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "d3903816-0c55-4701-b549-78cd42c4116e",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C53",
+      "claim": "The density indicates two alternative states for rRNA residues 1491\u20131495 and 1558\u20131559 in the streptomycin binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the density indicates two alternative states in this region (residues 1491\u20131495 and 1558\u20131559), particularly A1558 is flipped out in one state, whereas its base is stacked between G1559 and A1492 in the other state, causing a shift of the residues in the other strand (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the alternative conformations observed in the density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "05dee523-6afe-4745-a055-44c52618069f",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C54",
+      "claim": "The data provide a potential regulatory link between mitoribosomal biogenesis, iron\u2013sulfur assembly and fatty-acid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data provide a potential regulatory link between the three main metabolic pathways in mitochondria: mitoribosomal biogenesis, iron\u2013sulfur assembly and fatty-acid synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this regulatory link based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "416bbd18-a765-4aae-86e3-a20981510d39",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C55",
+      "claim": "There might be yet to be characterized chaperones required for the assembly of iron\u2013sulfur clusters on the mitoribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the implications of our finding is that since iron\u2013sulfur clusters are not stable in an aqueous solution without being bound to a protein, there might be yet to be characterized chaperones required for the assembly on the mitoribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this implication based on the properties of iron-sulfur clusters.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "d9803588-f02d-4c26-9027-04062e22dd70",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C56",
+      "claim": "High-resolution cryo-EM of native assemblies with therapeutic compounds combined with mass spectrometry is a powerful method to address potential modifications and identify specifically bound cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings demonstrate that high-resolution cryo-EM of native assemblies with therapeutic compounds combined with a mass spectrometry approach is a powerful method to address potential modifications and identify specifically bound cofactors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this methodological conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "ca14fe8f-f2f6-4a78-b6c5-1ff84155f7c8",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C57",
+      "claim": "The approach of adding drugs to cultured cells to study their binding could be applied to other medically relevant subjects and antibacterial compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually, the approach of adding drugs to cultured cells to study their binding could be applied to other medically relevant subjects and antibacterial compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this broader application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "ee473db3-7e06-47c9-a045-1de8dd48758c",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C58",
+      "claim": "The sensitivity of the mitoribosome can be exploited to suppress leukemia and glioblastoma stem cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used streptomycin to study its off-target binding, and since the sensitivity of the mitoribosome can also be exploited to suppress leukemia (Skrti\u0107 et al., 2011) and glioblastoma stem cell growth (Sighel et al., 2021), advances in structure-based design can lead to specific RNA-targeted small molecules for cancer research as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific studies showing this therapeutic potential.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "66fcd39a-695a-45d3-82ad-d9c090b31e6e",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C59",
+      "claim": "Antimicrobial binding has been used to suppress glioblastoma stem cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The antimicrobial binding has also been used to suppress glioblastoma stem cell growth (Sighel et al., 2021), suggesting that repurposing of mitoribosome-targeting antibiotics offers a therapeutic option for tumors (Vendramin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites specific studies on this therapeutic application.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "883669b4-512f-4b88-bbc6-e8007af47324",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C60",
+      "claim": "Dysfunction of the human mitoribosome can be caused by off-target binding of antimicrobials to structured rRNA core that is similar to bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dysfunction of the human mitoribosome can be caused by the off-target binding of antimicrobials to structured rRNA core that is similar to bacteria, which can lead to clinical symptoms of deafness, neuropathy, and myopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about mitoribosome dysfunction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "be482d97-ff04-4465-b924-bf25854fbf3c",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C61",
+      "claim": "Off-target binding studies are currently not incorporated in pharmaceutical companies' research and development pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, off-target binding studies are currently not incorporated in pharmaceutical companies' research and development pipelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this gap in pharmaceutical research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "725bccb3-55b5-4e03-b354-ad3fa7f1ba85",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C62",
+      "claim": "The structure-based design of molecules that bind RNA can be used to optimize physicochemical properties and has the potential of improving pharmacokinetics and potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the structure-based design of molecules that bind RNA can be used to optimize physicochemical properties and has the potential of improving pharmacokinetics and potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this potential application.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "14a548e8-bc54-47f2-ba11-6caeb1fbdf1f",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C63",
+      "claim": "The aminoglycoside streptomycin targets the ribosomal small subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The aminoglycoside streptomycin targets the ribosomal small subunit (SSU), but the therapy with streptomycin was also shown to be coupled with a bilateral decreased visual acuity with central scotomas and an altered mitochondrial structure (Kogachi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "2e314216-9ad2-4da2-98ec-a6fb19c7bed2",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C64",
+      "claim": "No detailed structural information elucidating specific molecular interactions of streptomycin with mitoribosomes was available prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sensitivity of mitoribosomes to antimicrobials has been documented, no detailed structural information elucidating specific molecular interactions is available, thus mechanistic details remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "65bd4013-c37e-4dc2-82e5-e086a7dec997",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C65",
+      "claim": "Cryo-EM has been instrumental in the structure determination of the mitoribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM has been instrumental in the structure determination of the mitoribosome, however, the description is currently limited to mitoribosomal proteins, rRNA, and associated factors, whereas important metabolic cofactors of potential therapeutic interest are largely excluded (Aibara et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "8082fc6b-0ee2-4de8-b843-746ef0be69ef",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C66",
+      "claim": "Important metabolic cofactors of potential therapeutic interest are largely excluded from current mitoribosome structural descriptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM has been instrumental in the structure determination of the mitoribosome, however, the description is currently limited to mitoribosomal proteins, rRNA, and associated factors, whereas important metabolic cofactors of potential therapeutic interest are largely excluded (Aibara et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies this limitation in current structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "b7d8e1d4-ae2a-4b59-8a73-776a2b381693",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C67",
+      "claim": "The human mitoribosome receives mRNAs with involvement of LRPPRC.",
+      "claim_type": "EXPLICIT",
+      "source": "The human mitoribosome has a distinct structure, it receives mRNAs with involvement of Leucine-rich PPR-motif-containing protein (LRPPRC) and synthesizes 13 respiratory chain proteins delivered to the inner mitochondrial membrane via the OXA1L insertase (Itoh et al., 2021; Singh et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "a1a5e9da-4aaf-4376-8e25-2dc002d50a36",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C68",
+      "claim": "Respiratory chain proteins synthesized by the mitoribosome are delivered to the inner mitochondrial membrane via the OXA1L insertase.",
+      "claim_type": "EXPLICIT",
+      "source": "The human mitoribosome has a distinct structure, it receives mRNAs with involvement of Leucine-rich PPR-motif-containing protein (LRPPRC) and synthesizes 13 respiratory chain proteins delivered to the inner mitochondrial membrane via the OXA1L insertase (Itoh et al., 2021; Singh et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "f401bae8-0fca-4e8d-b039-386bd7aaaf9d",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C69",
+      "claim": "The chemical structure of streptomycin is comprised of three components linked by ether bonds: streptidine, streptose, and N-methyl-L-glucosamine.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemical structure of streptomycin is comprised of three components linked by ether bonds: streptidine (scyllo-inositol with two hydroxyl groups substituted by guanidino groups), streptose (3-formyl-4-methyl tetrose), and N-methyl-L-glucosamine (Figure 5A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the chemical structure of streptomycin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "d4e0a994-f6d4-4058-88e7-bf608cc443c4",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C70",
+      "claim": "Streptomycin can be subjected to modifications under different environmental conditions that might affect its chemical properties in the cellular milieu.",
+      "claim_type": "EXPLICIT",
+      "source": "However, streptomycin can also be subjected to modifications under different environmental conditions that might affect its chemical properties in the cellular milieu (Abraham et al., 1946; Stern et al., 2018; Alekseeva et al., 2019), and thus be of a potential therapeutic interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing streptomycin can be modified.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "574e0bfc-454e-4c70-b687-ec8ea9eaafee",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C71",
+      "claim": "Spermine forms salt bridges with the phosphate groups of U946, U1044, G1045, and C1048.",
+      "claim_type": "EXPLICIT",
+      "source": "Spermine forms salt bridges with the phosphate groups of U946, U1044, G1045, and C1048 and forms hydrogen bonds with the base moieties of U944 and G945.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the interactions of spermine with rRNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "c8a1538c-dd91-4077-b08e-bcd9c79a37e4",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C72",
+      "claim": "NAD interacts with A781, A782, A1047 (through Mg-ion coordination), and C1048 of rRNA and Tyr196 of uS15m.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD also interacts with A781, A782, A1047 (through Mg-ion coordination), and C1048 of rRNA and Tyr196 of uS15m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the interactions of NAD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "da2a0f93-26e3-40c5-9277-cc3d6ed4a5b4",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C73",
+      "claim": "The density around Asn184 in uS11m was incompatible with the placement of an asparagine residue as indicated by the primary sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The density around Asn184 was incompatible with the placement of an asparagine residue as indicated by the primary sequence. Instead, an isoaspartate (iso-Asp) was modeled, so that the \u03b2-carbonyl group forms backbone peptide linkage with Gly185, and the \u03b1-carboxyl group is exposed, in agreement with the modification detected in E. coli (David et al., 1999; Watson et al., 2020) and plants (Cottilli et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the discrepancy between sequence and density, with citations to similar modifications in other organisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "698a9b07-4941-4cda-b68c-b67b0cfb0125",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C74",
+      "claim": "The kinked loop at iso-Asp184 in uS11m interacts with rRNA h23\u201324 and likely contributes to its stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the elongated backbone peptide by one methylene group at the iso-Asp, the loop is kinked between His183 and iso-Asp184. This specific kinked loop interacts with rRNA h23\u201324, and thereby likely contributes to its stability (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the structural consequence and proposes a functional role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "b1411a16-6542-4233-8599-85ddd7f796d1",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C75",
+      "claim": "The backbone peptide and the \u03b1-methoxy group of 1-methyl-isoaspartate form hydrogen bonds with the adenine and ribose moieties of A1013 rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The backbone peptide and the \u03b1-methoxy group form hydrogen bonds with the adenine and ribose moieties of A1013 rRNA, respectively, while the \u03b1-carbonyl group forms a hydrogen bond with bS21m Arg42 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the interactions of the modified residue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "7e130912-9d52-4b30-b5bb-98ea49fa819a",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C76",
+      "claim": "The amino group at the 2\u2033 position of streptomycin (protonated secondary amine) forms two hydrogen bonds/salt bridges with two backbone phosphates of rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our high-resolution structure indicates the chemically more favorable conformation with the amino group at the 2\u2033 position (protonated secondary amine), forming two hydrogen bonds/salt bridges with two backbone phosphates of rRNA (Figure 5E, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the interactions of streptomycin with rRNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "d049d95b-0fca-4142-a6fa-293cb49c71e5",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C77",
+      "claim": "The human mitochondrial rRNA appears to be more flexible in the h44 region due to a loss of the G:C base pair at the 1494:1555 position.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to the mutations 1494C>T and 1555A>G in h44, the human mitochondrial rRNA appears to be more flexible in this region due to a loss of the G:C base pair at the 1494:1555 position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the structural consequence of the base pair loss.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "9121156b-416e-43f6-a2d5-d015fc74fc23",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C78",
+      "claim": "In the biosynthesis process of streptomycin by Streptomyces griseus, the dehydrogenation leading to the aldehyde formation is the last of 27 assembly steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the biosynthesis process of streptomycin by the bacterium Streptomyces griseus, the dehydrogenation leading to the aldehyde formation is the last of 27 assembly steps, followed by the compound release from the bacteria for activation by StrA (Flatt and Mahmud, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study on streptomycin biosynthesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "394175d2-7225-4184-801f-ca53b400f8c7",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C79",
+      "claim": "A putative gene product that would mediate the transition from hydrated to aldehyde form of streptomycin is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "A putative gene product that would mediate this transition is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "25436d23-2c62-43a6-9ac0-4228225ecadd",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C80",
+      "claim": "The methyl group and the O6\u2033 hydroxyl group have different conformations on the N-methyl-L-glucosamine moiety compared to the previous T. thermophilus ribosome model.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with the previous model of streptomycin-bound T. thermophilus ribosome (Demirci et al., 2013) further shows that the methyl group and the O6\u2033 hydroxyl group have different conformations on the N-methyl-L-glucosamine moiety (Figure 5E, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly compares the current structure with a previous model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "0cd42730-3286-4519-92e3-828fa359cc86",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C81",
+      "claim": "The presence of NAD on the mitoribosome contributes to rRNA stability and might be important for mitochondria function.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from acting as an electron carrier in metabolic pathways, NAD is a co-substrate of several regulatory pathways, and its loss induces a pseudohypoxic state (Gomes et al., 2013). Here, we show that its presence on the mitoribosome contributes to the rRNA stability, and thus might be important for mitochondria function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly proposes this functional role based on structural observations and cites previous work on NAD function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "adc39179-6c8c-486d-82c3-6881d1ba154a",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C82",
+      "claim": "NAD loss induces a pseudohypoxic state.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from acting as an electron carrier in metabolic pathways, NAD is a co-substrate of several regulatory pathways, and its loss induces a pseudohypoxic state (Gomes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study on the consequences of NAD loss.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "91bd1224-ef80-4da1-9e03-d29490ada706",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C83",
+      "claim": "The comparison between the two methods of adding streptomycin allowed direct observation of small differences in terms of hydration and a possible chirality inversion by the cellular milieu.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison between the two methods of adding the antibiotic (cultured cells vs. purified mitoribosome) allowed us to directly observe small differences in terms of hydration and a possible chirality inversion by the cellular milieu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as a key finding from the comparative approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "5e0a3d18-f325-4099-b426-d4a568fe375e",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C84",
+      "claim": "The newly resolved features of streptomycin binding can serve as determinants for targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented approach of adding antibiotics to cultured cells can be used to define their native structures in a bound form under more physiological conditions, and since streptomycin is a widely used drug for treatment, the newly resolved features can serve as determinants for targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this potential application in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "92b42d08-f074-4461-ba77-1a1ac40724ae",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C85",
+      "claim": "Defining structural principles of modifications and cofactors will help to better understand pathological dysfunctions related to mitoribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The disease phenotypes associated with mitoribosomes still remain poorly understood, yet high-resolution cryo-EM of native samples underscores the importance of modifications and cofactors, and thus defining their structural principles will help to better understand the related pathological dysfunctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as a conclusion about the importance of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "f42484c2-af18-4c8c-a4a6-a0a9e7fa9427",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C86",
+      "claim": "More data will be needed to define mitoribosomal profiles in different conditions, especially in the context of mRNA and tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of cofactors can also affect the activity or selectivity of a compound, thus more data will be needed to define mitoribosomal profiles in different conditions, especially in the context of mRNA and tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies this as a future research need.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "29d386aa-5cdb-4adc-a11e-e5ff6f1a6a3c",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C87",
+      "claim": "Polyamines are implicated in aging and regulation of mitochondrial metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, since cofactors such as polyamines are implicated in aging and regulation of mitochondrial metabolism, determining their roles on the LSU and under native, biologically relevant conditions will allow to better understand how the functions of mitoribosome might be modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about polyamines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "76f39839-897d-4129-b643-f0c1a114f2eb",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C88",
+      "claim": "Iron\u2013sulfur clusters are not stable in an aqueous solution without being bound to a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the implications of our finding is that since iron\u2013sulfur clusters are not stable in an aqueous solution without being bound to a protein, there might be yet to be characterized chaperones required for the assembly on the mitoribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about iron-sulfur cluster properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "2e917f1f-83f4-4c4f-a502-817a91c47503",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C89",
+      "claim": "Although there is evidence that iron\u2013sulfur clusters contribute to the structural stability of apoproteins, the involvement in maintaining a complex of proteins was not reported before.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is evidence that iron\u2013sulfur clusters contribute to the structural stability of the apoproteins into which they are integrated, the involvement in maintaining a complex of proteins was not reported before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as a novel finding in the context of known iron-sulfur cluster functions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "72e390f0-90eb-437d-a717-23b49f21aa94",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "claim_id": "C90",
+      "claim": "It is unknown whether the facilitation of inter-protein interactions by iron-sulfur clusters is unique to the mitoribosome or represents a more general characteristic.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unknown whether the facilitation of inter-protein interactions that we found is unique to the mitoribosome or represents a more general characteristic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies this as an open question.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "177bb443-2999-40c0-af28-1b39735b9101",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High-resolution cryo-EM structures of mitoribosomal SSU-streptomycin complexes were determined at 2.4 \u00c5 (native) and 2.3 \u00c5 (in vitro), representing substantial improvements over previous bacterial and mitochondrial ribosome structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C22 collectively establish the resolution achievements with explicit statements and appropriate comparisons to prior work. The resolutions are clearly stated with supporting data in Table 1 and figures, and the improvement claim is substantiated by citations to previous structures at lower resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "1608a0a6-83c8-401e-8ee0-0c750b53b476",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two 2Fe-2S iron-sulfur clusters were identified in the mitoribosomal SSU, each coordinated by two different proteins (inter-protein coordination), located where bacterial rRNA is missing, suggesting a structural role in assembly and compensation for rRNA deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C11 provide converging structural evidence for the iron-sulfur clusters, their unprecedented inter-protein coordination, specific locations (C7, C8), and structural comparison with E. coli (C9). The proposed assembly role (C11) is a reasonable inference from the structural data showing protein bridging. The novelty claim (C6) is appropriately stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "5f37c2af-0335-48d3-95de-0db6ba090638",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NAD was identified bound to the mitoribosomal SSU in association with a novel single nucleotide insertion (C1048) in human mitochondrial rRNA, where NAD and spermine cooperatively stabilize the disrupted h20 architecture through specific molecular interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C12-C15, and C40-C41, C71-C72 provide detailed structural evidence for NAD binding, the unexpected rRNA insertion, and the cooperative stabilization mechanism. The molecular interactions are explicitly described with specific residues. The discovery of an insertion contradicting the general conception of only deletions in mitochondrial rRNA is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "c309f378-810b-47c4-acfd-0c53171300e2",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The previously reported GDP-binding site in mS29 was corrected to ATP based on improved resolution, and a separate GTP/GDP-binding pocket was identified that favors GTP over GDP, explaining the SSU's high affinity for GTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 and C43-C45 provide clear structural evidence for the correction of the nucleotide assignment with chemical reasoning (C43), identification of a new binding pocket with specific residues (C45), and inference about GTP preference supported by citation to previous biochemical data (C18). The lack of GTPase activity conclusion (C44) is appropriately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "60a5abe2-5e22-4bb7-b950-14a51851f10c",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Post-translational modifications were identified from the cryo-EM density, including 1-methyl-isoaspartate at position 184 in uS11m and N-terminal acetylations in bS21m and mS37, with structural evidence for their functional roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C46-C47, C73-C75 provide explicit identification of modifications from density with appropriate citations to known enzymatic products and similar modifications in other organisms. The structural consequences (C74) and molecular interactions (C75) are well-documented, supporting the functional interpretations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "4aa9ac78-af89-4db6-bcf1-2662b8090ed3",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mitoribosome-bound streptomycin is likely in hydrated gem-diol form based on structural analysis showing the aldehyde moiety within hydrogen bonding distance of rRNA phosphates, with possible chirality inversion of the methyl group in the native structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C21, C48-C49, and C76 describe the streptomycin structure, but C48 explicitly states the streptose moiety is poorly resolved, and C49 acknowledges the map quality is not unambiguous regarding chirality. While the gem-diol inference is chemically reasonable (C21), the poor density quality undermines confidence in the modification claims. The authors appropriately express uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "82ef8224-f0b1-4acd-bf43-97f3d103925e",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparison of native and in vitro streptomycin binding revealed differences in streptose moiety resolution and possible chirality, with mass spectrometry confirming both hydrated and non-hydrated forms exist in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 and C83 provide direct comparative structural evidence, with C24 supported by explicit mass spectrometry data showing both forms. The comparison methodology is sound, and C50 provides independent support from prior NMR studies. The observation of differences between native and in vitro conditions is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "51b41d0e-3d9c-42c1-8f7f-1ba3ce7eda51",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Streptomycin binding decreases rRNA flexibility in the mRNA-binding region, contributing to translation inhibition, with structural evidence showing alternative conformational states and explaining the molecular basis for aminoglycoside hypersensitivity in patients with specific mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C52-C53, and C77 provide structural evidence for flexibility changes with appropriate citations to prior work on mRNA recruitment (C25) and aminoglycoside hypersensitivity (C52). The observation of alternative states (C53) supports the flexibility argument. The mechanistic inference is reasonable given the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The identification of iron-sulfur clusters and NAD as mitoribosomal components provides a potential regulatory link between mitoribosomal biogenesis, iron-sulfur assembly, and fatty-acid synthesis, with direct connections to mitochondrial disease and aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C36 and C54, C81-C82 make broad connections to disease and metabolism. While C33, C35-C36, and C82 are supported by appropriate citations, the direct mechanistic links claimed in C34 and C54 are largely inferential. C81 proposes NAD contributes to rRNA stability, which is supported structurally, but the broader implications for mitochondrial function require additional experimental validation beyond structural observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "a0b635d4-4ee9-443e-8ea6-29f7b071c95a",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mitochondria-specific protein mS40 binds zinc rather than a 2Fe-2S cluster and is not involved in protein bridging, contrasting with its homolog bS18m.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 provide clear structural evidence for mS40's distinct metal coordination and lack of bridging function, with appropriate citation to bacterial ribosome assembly studies for context. The comparison with bS18m is well-supported by the structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "45302f02-61ee-4399-8636-c85fa7d1c2b9",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The NAD density suggests a possible mixture of oxidized and reduced states, though functional implications are unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 explicitly acknowledges uncertainty about both the oxidation state interpretation and functional significance. While the density observation is data-based, the interpretation is speculative and the authors appropriately express this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "f535bef0-185a-4079-8b73-41f08e8e2003",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The instability of iron-sulfur clusters in aqueous solution suggests yet-to-be-characterized chaperones may be required for mitoribosomal assembly, and it remains unknown whether inter-protein coordination is unique to mitoribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55, C88-C90 are explicitly speculative (C55, C90) or acknowledge knowledge gaps. While C88-C89 correctly state established knowledge about iron-sulfur clusters and note the novelty of the finding, C55 and C90 appropriately identify open questions requiring future investigation. These are reasonable hypotheses but lack experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "b3286ee5-2354-498d-9f44-9c364fa42316",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The methodological approach of adding drugs to cultured cells combined with high-resolution cryo-EM and mass spectrometry is powerful for studying native drug binding and could be applied more broadly, with implications for understanding mitoribosomal dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C84-C86 appropriately summarize the methodological contributions and their potential applications. C56 is supported by the successful demonstration in this work, though C57 and C86 acknowledge future work is needed. C85 makes a reasonable inference about the importance of the approach for understanding disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    },
+    {
+      "id": "b3eed3d1-cfa1-48bc-be48-087e9e4d82c8",
+      "content_id": "27e26abe-cfb2-4f2b-bda2-ec6ea66b54f5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The N-methyl-L-glucosamine moiety of streptomycin shows different conformations compared to the previous T. thermophilus ribosome structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 provides explicit structural comparison with appropriate citation. The differences in conformation are documented with reference to specific chemical groups and supported by Figure 5E.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.130133Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a00e2bac-cd39-4246-bb1c-d8224ad68b52",
+      "result_id": "177bb443-2999-40c0-af28-1b39735b9101"
+    },
+    {
+      "claim_id": "4b03a3bc-c39c-46c5-bf65-69d2d31e4476",
+      "result_id": "177bb443-2999-40c0-af28-1b39735b9101"
+    },
+    {
+      "claim_id": "c2814541-518e-4dda-8f98-46ac8e9e9f01",
+      "result_id": "177bb443-2999-40c0-af28-1b39735b9101"
+    },
+    {
+      "claim_id": "8ecd062a-4e7a-4808-bef3-204e207b2a86",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "0829da76-4f48-40dc-9fd6-687b2af31d44",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "9dd78fc2-0e80-4386-8e2c-ec1516123075",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "1d8160f2-ca27-40f7-859a-b9d8445c331e",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "91d5e0eb-2ff3-4f2a-b8e0-a8cc20623bca",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "5b3bd37f-a27f-42a9-ba1f-cbefd97af99a",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "6d118731-c7c8-4d70-af21-5689c403a9b8",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "b632d64a-6d6d-4e62-a867-7cb0993cf57f",
+      "result_id": "1608a0a6-83c8-401e-8ee0-0c750b53b476"
+    },
+    {
+      "claim_id": "9d9aa239-27b3-4242-9ae0-34dcfbf7ccfb",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "71e81921-0f0d-47cd-a44c-5ca1f33d73f5",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "d43bfa25-ef15-423c-963d-89046cd1006d",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "16862372-e1f7-48ab-b4aa-cca5a9639e93",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "8047a1a7-e593-48e2-b35f-d071df11754e",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "07464536-19b7-4b87-8c49-ba9c40a5f6ea",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "c8016ee9-5421-4bc1-b28f-2624cd0e4c1c",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "574e0bfc-454e-4c70-b687-ec8ea9eaafee",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "c8a1538c-dd91-4077-b08e-bcd9c79a37e4",
+      "result_id": "5f37c2af-0335-48d3-95de-0db6ba090638"
+    },
+    {
+      "claim_id": "aef6ec39-5143-45b0-ad8e-ea0f4eda67b6",
+      "result_id": "c309f378-810b-47c4-acfd-0c53171300e2"
+    },
+    {
+      "claim_id": "6fd34d7b-0226-44b9-95a9-e5b9d3b2ed0d",
+      "result_id": "c309f378-810b-47c4-acfd-0c53171300e2"
+    },
+    {
+      "claim_id": "a5954b1a-fbe1-404b-b7dd-977d39be6992",
+      "result_id": "c309f378-810b-47c4-acfd-0c53171300e2"
+    },
+    {
+      "claim_id": "cc4be804-b80f-417a-bb06-63cfc8c03395",
+      "result_id": "c309f378-810b-47c4-acfd-0c53171300e2"
+    },
+    {
+      "claim_id": "40254ebd-9dec-4ae4-b5a5-6f786b734ae7",
+      "result_id": "c309f378-810b-47c4-acfd-0c53171300e2"
+    },
+    {
+      "claim_id": "684ba562-c3e4-4a61-a634-00aa6f4f2114",
+      "result_id": "c309f378-810b-47c4-acfd-0c53171300e2"
+    },
+    {
+      "claim_id": "18d2c512-313b-422b-bba2-6972b7b4c94c",
+      "result_id": "60a5abe2-5e22-4bb7-b950-14a51851f10c"
+    },
+    {
+      "claim_id": "333aa9de-f80b-4a40-baae-438b6aa72ab5",
+      "result_id": "60a5abe2-5e22-4bb7-b950-14a51851f10c"
+    },
+    {
+      "claim_id": "7a7c359e-7911-4738-8fb5-351f324451c1",
+      "result_id": "60a5abe2-5e22-4bb7-b950-14a51851f10c"
+    },
+    {
+      "claim_id": "b5e9a9c2-90e5-4b15-87d6-c18e2f48cb94",
+      "result_id": "60a5abe2-5e22-4bb7-b950-14a51851f10c"
+    },
+    {
+      "claim_id": "da2a0f93-26e3-40c5-9277-cc3d6ed4a5b4",
+      "result_id": "60a5abe2-5e22-4bb7-b950-14a51851f10c"
+    },
+    {
+      "claim_id": "698a9b07-4941-4cda-b68c-b67b0cfb0125",
+      "result_id": "60a5abe2-5e22-4bb7-b950-14a51851f10c"
+    },
+    {
+      "claim_id": "b1411a16-6542-4233-8599-85ddd7f796d1",
+      "result_id": "60a5abe2-5e22-4bb7-b950-14a51851f10c"
+    },
+    {
+      "claim_id": "4ff4cfc6-edde-434c-9764-ee22ed0078ed",
+      "result_id": "4aa9ac78-af89-4db6-bcf1-2662b8090ed3"
+    },
+    {
+      "claim_id": "d81612eb-47f6-470f-90ee-0afb2674a351",
+      "result_id": "4aa9ac78-af89-4db6-bcf1-2662b8090ed3"
+    },
+    {
+      "claim_id": "f2383c13-a377-4d50-9ca2-6803df468fd8",
+      "result_id": "4aa9ac78-af89-4db6-bcf1-2662b8090ed3"
+    },
+    {
+      "claim_id": "f401bae8-0fca-4e8d-b039-386bd7aaaf9d",
+      "result_id": "4aa9ac78-af89-4db6-bcf1-2662b8090ed3"
+    },
+    {
+      "claim_id": "d4e0a994-f6d4-4058-88e7-bf608cc443c4",
+      "result_id": "4aa9ac78-af89-4db6-bcf1-2662b8090ed3"
+    },
+    {
+      "claim_id": "7e130912-9d52-4b30-b5bb-98ea49fa819a",
+      "result_id": "4aa9ac78-af89-4db6-bcf1-2662b8090ed3"
+    },
+    {
+      "claim_id": "c3e54f3a-4722-4fcf-8f46-8d67c2dce324",
+      "result_id": "82ef8224-f0b1-4acd-bf43-97f3d103925e"
+    },
+    {
+      "claim_id": "bc64e6b7-6f4f-47c1-a64f-46fc8c5f5d37",
+      "result_id": "82ef8224-f0b1-4acd-bf43-97f3d103925e"
+    },
+    {
+      "claim_id": "218c223c-482e-44cf-8390-035c5371b722",
+      "result_id": "82ef8224-f0b1-4acd-bf43-97f3d103925e"
+    },
+    {
+      "claim_id": "91bd1224-ef80-4da1-9e03-d29490ada706",
+      "result_id": "82ef8224-f0b1-4acd-bf43-97f3d103925e"
+    },
+    {
+      "claim_id": "bcc39dec-3b7e-49b0-b9c4-2a7f5b68a30d",
+      "result_id": "51b41d0e-3d9c-42c1-8f7f-1ba3ce7eda51"
+    },
+    {
+      "claim_id": "8706c816-ce8f-4e97-9e79-fda8d11b6c0f",
+      "result_id": "51b41d0e-3d9c-42c1-8f7f-1ba3ce7eda51"
+    },
+    {
+      "claim_id": "d3903816-0c55-4701-b549-78cd42c4116e",
+      "result_id": "51b41d0e-3d9c-42c1-8f7f-1ba3ce7eda51"
+    },
+    {
+      "claim_id": "d049d95b-0fca-4142-a6fa-293cb49c71e5",
+      "result_id": "51b41d0e-3d9c-42c1-8f7f-1ba3ce7eda51"
+    },
+    {
+      "claim_id": "defc2514-302b-49e8-bcc2-119ea72b8925",
+      "result_id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b"
+    },
+    {
+      "claim_id": "768f2f8f-95f1-415c-af9a-63d7b1f53f66",
+      "result_id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b"
+    },
+    {
+      "claim_id": "7ad1ba7e-fb33-4bec-b3ce-217b36e0256f",
+      "result_id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b"
+    },
+    {
+      "claim_id": "6e4d9b67-246a-4f87-91ee-e5d7f0f652a5",
+      "result_id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b"
+    },
+    {
+      "claim_id": "05dee523-6afe-4745-a055-44c52618069f",
+      "result_id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b"
+    },
+    {
+      "claim_id": "0cd42730-3286-4519-92e3-828fa359cc86",
+      "result_id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b"
+    },
+    {
+      "claim_id": "adc39179-6c8c-486d-82c3-6881d1ba154a",
+      "result_id": "0e1ae907-95da-4e96-ab6c-106a67b37a4b"
+    },
+    {
+      "claim_id": "fdd33324-2ec3-44dd-a13c-094ceb069bb9",
+      "result_id": "a0b635d4-4ee9-443e-8ea6-29f7b071c95a"
+    },
+    {
+      "claim_id": "280e3693-32be-4aa1-b593-f161001723d6",
+      "result_id": "a0b635d4-4ee9-443e-8ea6-29f7b071c95a"
+    },
+    {
+      "claim_id": "0d87d8e6-94f8-4562-bf2f-49be7787eb90",
+      "result_id": "45302f02-61ee-4399-8636-c85fa7d1c2b9"
+    },
+    {
+      "claim_id": "416bbd18-a765-4aae-86e3-a20981510d39",
+      "result_id": "f535bef0-185a-4079-8b73-41f08e8e2003"
+    },
+    {
+      "claim_id": "76f39839-897d-4129-b643-f0c1a114f2eb",
+      "result_id": "f535bef0-185a-4079-8b73-41f08e8e2003"
+    },
+    {
+      "claim_id": "2e917f1f-83f4-4c4f-a502-817a91c47503",
+      "result_id": "f535bef0-185a-4079-8b73-41f08e8e2003"
+    },
+    {
+      "claim_id": "72e390f0-90eb-437d-a717-23b49f21aa94",
+      "result_id": "f535bef0-185a-4079-8b73-41f08e8e2003"
+    },
+    {
+      "claim_id": "d9803588-f02d-4c26-9027-04062e22dd70",
+      "result_id": "b3286ee5-2354-498d-9f44-9c364fa42316"
+    },
+    {
+      "claim_id": "ca14fe8f-f2f6-4a78-b6c5-1ff84155f7c8",
+      "result_id": "b3286ee5-2354-498d-9f44-9c364fa42316"
+    },
+    {
+      "claim_id": "5e0a3d18-f325-4099-b426-d4a568fe375e",
+      "result_id": "b3286ee5-2354-498d-9f44-9c364fa42316"
+    },
+    {
+      "claim_id": "92b42d08-f074-4461-ba77-1a1ac40724ae",
+      "result_id": "b3286ee5-2354-498d-9f44-9c364fa42316"
+    },
+    {
+      "claim_id": "f42484c2-af18-4c8c-a4a6-a0a9e7fa9427",
+      "result_id": "b3286ee5-2354-498d-9f44-9c364fa42316"
+    },
+    {
+      "claim_id": "25436d23-2c62-43a6-9ac0-4228225ecadd",
+      "result_id": "b3eed3d1-cfa1-48bc-be48-087e9e4d82c8"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Rvb1/Rvb2 are enriched at promoters of alternative glucose metabolism genes (class II) but not heat shock genes (class I) during glucose starvation, as demonstrated by CoTrIP and ChIP-seq experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C54 collectively demonstrate promoter enrichment through multiple complementary approaches (CoTrIP mass spectrometry, ChIP-seq). The data show statistically significant enrichment (p=0.02) with appropriate negative controls (Pgk1) and validation against the CRAPome database. The overlapping enrichment patterns of Rvb1 and Rvb2 support their functional cooperation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Rvb1/Rvb2 are enriched on mRNAs of class II genes during glucose starvation in a promoter-dependent manner, suggesting co-transcriptional loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by RIP-qPCR data showing differential enrichment on class II vs. class I mRNAs during starvation (C56-C57). The promoter-swap experiment (C60) provides strong evidence that promoter identity, not mRNA sequence, determines Rvb binding. However, the inference of co-transcriptional loading (C62) is indirect and would benefit from direct demonstration of nascent RNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Engineered tethering of Rvb1/Rvb2 to class I heat shock mRNAs is sufficient to sequester them into mRNP granules and repress their translation during glucose starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C63-C73 are well-supported by the PP7-tethering experiments with appropriate controls (GFP-PP7). The data show ~40% reduction in protein synthesis (C64), increased mRNA granule localization (C70-C71), and reduced translational efficiency (C66). The specificity to stress conditions (C68) and proper negative controls (C67) strengthen the conclusions. The microscopy quantification (n=200 cells) provides adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Rvb2 tethering to mRNA increases transcription of the corresponding gene through a mechanism independent of mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C65-C80 demonstrate increased mRNA abundance upon Rvb2 tethering. The mathematical modeling approach (C77-C78) combined with transcription inhibition experiments (C79-C80) provides strong evidence that the effect is transcriptional rather than post-transcriptional. The half-life measurements (~25 min for both conditions, C80) directly support this conclusion. However, the mechanism linking cytoplasmic Rvb2-mRNA binding to nuclear transcription remains speculative (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "RVB2 knockdown decreases mRNA induction but increases protein production of class II genes during glucose starvation, supporting Rvb2's dual role in promoting transcription and repressing translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C82-C88 are supported by CRISPRi knockdown experiments showing ~20-fold reduction in RVB2 expression (C82). The opposing effects on mRNA (decreased, C87) and protein (increased, C85) levels for class II genes provide strong support for Rvb2's dual function. The class I control (HSP30) showing no change (C86) demonstrates specificity. However, sample sizes are modest (n=3-4) and off-target effects of CRISPRi cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Class II mRNAs show rapid translation induction upon glucose readdition, suggesting mRNP granules serve as temporary repositories for rapid stress recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by ribosome profiling and nanoluciferase data showing ~8-fold increase in ribosome occupancy within 5 minutes of glucose readdition. However, C76 is speculative about the functional role of granules as repositories. While the data are consistent with this model, alternative explanations (e.g., rapid transcriptional induction) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Rvb1/Rvb2 localize predominantly to the nucleus in unstressed cells but relocalize to cytoplasmic granules distinct from P-bodies during glucose starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by microscopy data (Figure 1\u2014figure supplement 2) showing nuclear localization in log phase and cytoplasmic granule formation in 68-71% of cells after 30 min starvation. The distinction from P-bodies is demonstrated by limited colocalization (6%). The consistency with prior work (C43) strengthens confidence. Sample size (n=200) is adequate for quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "TAP-tagging of Rvb1/Rvb2 does not disrupt their endogenous function, as evidenced by normal growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by the observation of normal doubling time (~90 min). However, this is a limited functional assessment. Normal growth does not guarantee that all Rvb1/Rvb2 functions are preserved, particularly stress-specific functions. More comprehensive functional validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C30",
+      "C37",
+      "C61",
+      "C62",
+      "C81",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "Rvb1/Rvb2 couple transcription, mRNA localization, and translation through co-transcriptional loading from promoters, though the recruitment mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C30, C37, C61-C62, C81, C89-C91, and C93 represent integrative conclusions and mechanistic hypotheses. While the coupling of transcription and translation is well-supported by the data, the specific mechanism of co-transcriptional loading (C62) is inferred rather than directly demonstrated. The recruitment mechanism (C89, C91) is speculative, and the connection between cytoplasmic Rvb-mRNA binding and nuclear transcription (C81) lacks mechanistic detail. These represent important hypotheses requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background and context: Prior work established that promoters can direct cytoplasmic mRNA fate during stress, but the mechanism was unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C11-C29 provide established background from prior literature and the authors' previous work. These are appropriately cited and provide necessary context for the current study. C22 and C29 identify the knowledge gap that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C55",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C100"
+    ],
+    "result": "Background on Rvb1/Rvb2: These are conserved AAA+ ATPases with established roles in chromatin remodeling and stress granule formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C31-C36, C38, C55, C92, C94-C96, C99-C100 summarize established knowledge about Rvb1/Rvb2 from prior literature. These are well-cited and provide important context for understanding the novel findings. The dual nuclear and cytoplasmic localization (C34-C36) provides rationale for investigating their role in coupling gene expression steps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C76",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "Speculative claims about biological function and future directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C76, C101-C102, and C104 are explicitly speculative (marked as SPECULATION in evidence_type). While these represent reasonable hypotheses based on the data, they require experimental validation. C10 about stress recovery is partially supported by the glucose readdition data (C74-C75), but the mechanistic claims in C101-C102 about local concentration effects and mRNA escorting are purely speculative.",
+    "result_type": "MINOR"
+  }
+]

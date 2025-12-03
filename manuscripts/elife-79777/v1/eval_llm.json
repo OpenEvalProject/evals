@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A custom probe panel of 20,000 probes was designed from 4,852 bat coronavirus sequences obtained from GenBank, providing broad in silico coverage of known bat coronavirus diversity. The panel covered at least 94.32% of nucleotide positions for 90% of all bat coronavirus sequences and at least 98.73% for 90% of full-length genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe the probe design and in silico validation. The quantitative coverage metrics (C30, C31) are clearly stated and supported by Figure 1. The conclusion of broad coverage (C32) is a reasonable inference from the high coverage percentages observed. The methodology is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study analyzed 25 metagenomic sequencing libraries prepared from 21 bat oral and rectal swabs collected in the Democratic Republic of the Congo between 2015 and 2018 as part of the PREDICT project. These specimens had been previously characterized by PCR and Sanger sequencing, generating partial RdRp sequences of 286 or 387 nucleotides that assigned them to four novel phylogenetic groups of alpha- and betacoronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C37 describe the specimen collection and prior characterization. These are well-documented with citations to prior work (Kumakamba et al., 2021) and provide essential context for the study. The specimen metadata is presented in Table 1, supporting these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "De novo assembly of probe captured reads recovered 113 coronavirus contigs from 17 of 25 libraries. The median contig sizes (696 and 602 nucleotides for the two amplicon protocols) exceeded the previously generated partial RdRp sequences, with 93.8% of contigs longer than the prior amplicon sequences. Nucleotide identities between probe capture contigs and amplicon sequences ranged from 99.3% to 100%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present quantitative results from de novo assembly analysis shown in Figure 2A. The high nucleotide identity (C42) validates the accuracy of probe capture sequencing. The comparison demonstrates that probe capture recovered longer contiguous sequences than amplicon sequencing in most cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Reference-based mapping analysis showed median total assembly size of 1724 nucleotides and median assembly N50 of 533 nucleotides. The median breadth of reference sequence recovery was 2376 nucleotides overall, with phylogenetic group Q-Alpha-4 showing median recovery of 6497 nucleotides and W-Beta-3 showing the most extensive maximum recovery of 26,755 nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 present quantitative results from reference-based mapping shown in Figures 2B, 3, and 4A. The metrics are clearly stated with interquartile ranges and maxima. The variation across phylogenetic groups is documented and provides insight into differential recovery success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C48",
+      "C49"
+    ],
+    "result": "Probe capture recovered more genome sequence than standard amplicon sequencing for 15 of 21 specimens (71%), providing a median 6.1-fold improvement ranging up to 69.1-fold. Probe capture recovery was greater for 18 of 25 libraries (72%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C48, C49 present the key comparative result between probe capture and amplicon sequencing, shown in Figure 4B. The quantitative metrics are clearly stated and demonstrate substantial improvement in most specimens. This is a primary finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "RdRp was more completely recovered than spike gene by probe capture, and no complete spike genes were recovered from any library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe differential gene recovery shown in Figure 4C. The absence of complete spike genes despite extensive overall recovery is a significant negative result that led to important insights about viral diversity (C64). This observation is well-documented in the coverage plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "No coronavirus sequences were recovered from 4 of 25 libraries despite prior amplicon success. All partial RdRp amplicons had at least 95.3% probe coverage in silico, but only 7 of 25 libraries achieved >95% recovery of the partial RdRp sequence, and 12 libraries recovered no part of it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 document probe capture failures shown in Figure 5A. The high in silico probe coverage (C53) excludes probe design as the primary explanation for failure, supporting the conclusion that in vitro sensitivity was limiting (C88). These negative results are important for understanding method limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Specimen quality metrics showed median RNA integrity number of 1.1 and median RNA concentration of 14 ng/\u03bcl. RNA concentration showed significant correlation with genome recovery (p=0.045), while RNA integrity trended toward significance (p=0.053). Median viral abundance was 0.26 million genome copies/\u03bcl, showing strong significant correlation with recovery (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 present specimen quality analysis and correlations shown in Figure 5B. The statistical tests are appropriate (Spearman's rank correlation for monotonic relationships). The strong correlation between viral abundance and recovery (C61) identifies this as a key limiting factor. One outlier was appropriately excluded from RNA concentration analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Probe coverage was nearly complete for all reference sequences in silico, yet reference sequence recovery did not exceed 92.3% for any library, with complete spike genes conspicuously absent. This indicated the presence of coronaviruses with novel spike genes divergent from reference sequences and all other coronaviruses in GenBank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe the probe inclusivity analysis shown in Figure 6 and coverage plots in Figure 3. The discrepancy between high in silico probe coverage (C62) and incomplete recovery (C63) leads to the inference of novel spike genes (C64). This inference is subsequently validated by deep sequencing results (C65-C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Complete genomes were recovered from five specimens by deep metagenomic sequencing. On-target rates for unenriched libraries ranged from 0.003% to 0.064%, while probe captured libraries showed 11.3% to 45.1% on-target rates. Probe capture achieved a 1020-fold enrichment (0.029% vs 29.6% mean on-target rates, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 present deep sequencing results and enrichment analysis shown in Figure 7. The statistical comparison (t-test, p<0.001) appropriately demonstrates significant enrichment. However, the comparison uses different library preparations (new libraries for deep sequencing vs original captured libraries), which is acknowledged but limits direct paired comparison. The low on-target rates in unenriched libraries (C66) validate the need for enrichment methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Phylogenetic analysis of novel spike proteins showed that sequences from specimens CDAB0017RSV and CDAB0040RSV formed a monophyletic clade (W-Beta-2), as did CDAB0203R and CDAB0217R (W-Beta-3). These grouped with three betacoronaviruses in GenBank. The alphacoronavirus CDAB0492R grouped with two alphacoronaviruses. None were closely related to human coronaviruses based on spike gene homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe phylogenetic results shown in Figures 8 and 9. The phylogenetic analysis appropriately used spike protein sequences with 100 bootstrap replicates. The groupings are consistent with prior RdRp-based classifications. The conclusion that these viruses are not closely related to human coronaviruses (C75) is supported by the phylogenetic trees.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Pairwise alignments of novel spike sequences with phylogenetically related GenBank sequences showed <76.5% amino acid identity and <85.7% positivity. Only specimens CDAB0203R and CDAB0217R shared host species (Eidolon helvum) with their closest matches. Study specimens from DRC had closest matches from diverse locations including Kenya, Cameroon, and China, suggesting these viruses belong to extensive but poorly characterized coronavirus taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 present sequence alignment results from Table 3 and metadata comparisons. The low sequence identities, disparate host species, and dispersed geographic locations provide multiple lines of evidence supporting the inference of poorly characterized viral taxa (C79). The alignment analysis is appropriate for assessing sequence divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Nucleotide alignments of novel spike genes with closest GenBank matches showed extreme divergence. For specimen CDAB0017RSV, no alignment was generated. Other specimens showed incomplete alignments (18-83% coverage) with low nucleotide identities (71.5-84.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 present nucleotide alignment results from Table 4. The extreme divergence at the nucleotide level (even more than at amino acid level) confirms that probe design based on available sequences would have been inadequate for these novel spike genes. This validates the interpretation that probe panel limitations contributed to incomplete spike recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study demonstrates that probe capture can achieve more extensive genome recovery than amplicon sequencing, providing additional sequence for database comparisons, recombination detection, and identification of specimens suitable for deep sequencing. Failure to capture complete spike genes successfully predicted the presence of novel spike genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 present conclusions and implications drawn from the experimental results. C82 is directly supported by the comparative data (C4-C5, C48-C49). C83-C85 are logical inferences about benefits of more extensive sequencing, with C85 supported by citations. C86 describes how negative results provided useful information, validated by subsequent deep sequencing. C87 is a reasonable inference about using probe capture for specimen triage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In vitro sensitivity was identified as the most limiting factor for probe capture. The method requires pre-constructed metagenomic libraries, and the library construction process involves sequential reactions with compounding losses. Amplicon sequencing avoids this attrition by enriching first. Better results could be expected from fresh specimens compared to the archived material used in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 discuss limitations of probe capture. C88 is supported by the correlation analyses (C58-C61) showing viral abundance as the strongest predictor of success. C89-C91 provide mechanistic explanations based on established knowledge of laboratory methods. C92 is reasonable speculation given the poor specimen quality metrics (C56-C57). These limitations are important for contextualizing the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Current knowledge of bat coronavirus diversity remains limited, especially for hypervariable genes like spike, making it impossible to design a broadly inclusive pan-bat coronavirus probe panel currently. As recently as 2017, only 6% of coronavirus sequences in GenBank were from bats. However, probe capture is highly adaptable and panels can be supplemented as new taxa are described, with improved recovery expected for projects returning to similar regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 discuss probe design limitations and adaptability. C93-C94 are reasonable assessments given the novel spike genes discovered in this study. C95 is supported by citation. C96 is supported by extensive citations to recent discovery studies. C97 is based on established knowledge of probe design. C98 is reasonable speculation about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors conclude that probe capture represents a trade-off: lower sensitivity than amplicon sequencing but more extensive and diverse sequences when successful. It is not a replacement but a complementary method. The most effective coronavirus discovery and surveillance programs should combine amplicon sequencing (for initial screening), probe capture (for additional sequence information), and deep metagenomic sequencing (for complete characterization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 present the authors' integrated conclusions and recommendations. C101 accurately summarizes the trade-offs demonstrated in the results. C102-C103 are reasonable recommendations based on the comparative performance of methods. C104-C105 appropriately characterize amplicon sequencing advantages. These conclusions logically follow from the experimental results and provide practical guidance for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes that public health emergencies have prioritized coronavirus surveillance, resulting in extensive genomic characterization. However, most bat coronaviruses have been characterized only by partial RdRp sequencing. Bats are the second-most diverse mammalian order and a vast reservoir of coronavirus diversity, implicated in the emergence of SARS-CoV, MERS-CoV, SARS-CoV-2, and endemic human coronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14 provide background context supported by extensive citations. These are well-established facts in the field and appropriately characterize the motivation for the study. C11 is explicitly described as speculation and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction describes technical challenges in viral genome recovery from animal specimens. Host tissues and microbiota dilute viral material, necessitating targeted enrichment methods. Amplicon sequencing is straightforward and sensitive but limited by PCR chemistry and primer site conservation, constraining studies to conserved genes like RdRp and limiting phylogenetic resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 describe established challenges and methods in the field, supported by citations. These provide essential context for why probe capture was evaluated as an alternative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction describes hybridization probe capture as using longer oligomers (80-120 nucleotides) that are more tolerant of sequence divergence than PCR primers. Probe panels are highly scalable and popular for diverse viruses, but have only been occasionally used for bat coronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe probe capture methodology and prior applications, supported by citations. This establishes the rationale for applying probe capture to bat coronavirus surveillance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Probe capture data identified five novel alpha- and betacoronaviruses, and their full genomes were recovered with additional deep sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 state the discovery outcome. This is supported by the deep sequencing results (C65) and phylogenetic analysis (C71-C75). The complete genomes are documented and the novelty is established through phylogenetic and sequence alignment analyses.",
+    "result_type": "MAJOR"
+  }
+]

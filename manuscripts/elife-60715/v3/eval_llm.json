@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The simulation-derived microswitch expectation values for the TM5 bulge (R = -0.95) and connector \u0394RMSD (R = 0.93) strongly correlate with experimentally measured cAMP production (Emax). Based on these correlations, the authors predict that BI-167107 has a cAMP Emax slightly higher than adrenaline and salmeterol, and carazolol has an Emax similar to the ligand-free receptor and inverse agonist timolol, consistent with their known pharmacological profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 demonstrate strong quantitative agreement between simulation-derived metrics and experimental cAMP responses. The high correlation coefficients (R = -0.95 and R = 0.93) for upper microswitches, convergence after 305 iterations (4 \u03bcs per complex), and validation against known pharmacology (BI-167107 as full agonist, carazolol as inverse agonist) provide robust support. The predictions for ligands without experimental data are appropriately framed as inferences from the established correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C56",
+      "C57"
+    ],
+    "result": "The correlation between cAMP response and intracellular microswitches (Y-Y motif R = -0.75, ionic lock R = 0.58) is weaker than for extracellular/TM microswitches. The authors attribute this to looser coupling between intracellular microswitches and the ligand binding site, and note that intracellular microswitches interact directly with intracellular binding partners whose absence affects their conformational states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C56-C57 provide a mechanistically coherent explanation for the observed weaker correlations. The reasoning that intracellular microswitches require binding partners for full activation is consistent with GPCR biology (C54) and explains why correlations deteriorate moving from the orthosteric site toward the intracellular domain. The interpretation is appropriately cautious and mechanistically grounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24"
+    ],
+    "result": "Simulation results agree with spectroscopy experiments showing similar TM6 distance distributions for carazolol and apo receptor. The simulations show agonists stabilize ionic lock residues pointing away from each other while carazolol favors them pointing toward each other. BI-167107 stabilizes a partially dehydrated active state when TM6 is in its outward pose, while carazolol and apo conditions do not induce dehydration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C19-C20, C23-C24 demonstrate good agreement between simulations and experimental spectroscopy data (Manglik et al., 2015). The observations about ionic lock orientations and hydration states are supported by simulation data (Figure 2\u2014figure supplement 11a,b). Claim C18 appropriately acknowledges limitations regarding missing residues that may affect ionic lock dynamics. The results provide molecular-level detail consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C64",
+      "C65",
+      "C66",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Machine learning analysis reveals that ligands share overall features of activation but stabilize unique local states. Ligands with shared efficacy profiles generate similar but not identical conformational ensembles. Agonists and non-agonists stabilize significantly different states, with agonists clustering together while each ligand induces distinct conformational signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C64-C66, and C84-C87 are well-supported by multiple dimensionality reduction analyses (PCA, MDS, t-SNE) shown in Figure 3. The similarity matrix (Figure 3d) quantitatively demonstrates that agonists and non-agonists occupy different conformational spaces. The finding that ligands with similar efficacy still show conformational differences (C66) is an important nuance supported by the data. Cross-validation (C83) strengthens confidence in adequate sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C47",
+      "C91"
+    ],
+    "result": "Data-driven methods automatically identified established microswitches as most important for classification: the NPxxY motif and intracellular TM6 for distinguishing all ligands, and the TM5 bulge for discriminating agonists from non-agonists. The NPxxY domain is identified as a major source of conformational heterogeneity, with each ligand stabilizing a unique NPxxY conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C32-C33, C47, and C91 are supported by multiple independent analyses (KL divergence, random forest, PCA) shown in Figure 4. The automatic identification of known microswitches validates the computational approach. Agreement with experimental spectroscopy studies (Frei et al., 2020; Lamichhane et al., 2020; Liu et al., 2012) linking NPxxY conformational differences to efficacy and biased signaling (C33, C97) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C53"
+    ],
+    "result": "The authors propose an allosteric pathway where ligands directly control TM5, which couples to the connector region one helical turn below the orthosteric site. This leads to distinct TM6-TM7 interaction patterns. Agonists induce specific interactions (V206-T118 van der Waals, L284-F321 contraction, S319-N51 hydrogen bond) and favor overall protein contraction compared to non-agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C41-C42, and C53 describe a mechanistically coherent allosteric pathway supported by simulation data (Figure 5a-d). The identification of specific residue interactions distinguishing agonists from non-agonists is data-driven and consistent with the conceptual model (Figure 4d). The connector region's role as a predictor of downstream response (C8, C53) links the structural observations to functional outcomes. The molecular details provide testable hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Different agonists stabilize distinct NPxxY conformations: adrenaline favors the most active-like motif, salmeterol stabilizes a unique Y326 rotation reminiscent of \u03b21AR conformations, and BI-167107 stabilizes an inactive-like motif. Salmeterol's distinct NPxxY state correlates with lost interactions to S207 and S203, similar to phenomena observed with biased agonist formoterol in \u03b21AR, suggesting potential biased signaling properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by simulation data (Figure 5d-e, Figure 5\u2014figure supplement 1). The comparison to \u03b21AR experimental structures (C45, C61-C62) provides external validation. However, C63 (biased signaling prediction) is appropriately framed as speculation based on structural similarity rather than direct evidence. The connection between lost S207/S203 interactions and distinct NPxxY states (C60) is a notable observation supported by simulation data, though the mechanistic link could be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The simulations used CHARMM36m force field with receptors embedded in POPC bilayers, performed with GROMACS 2018.6 patched with PLUMED. The string method with swarms of trajectories was used to find activation pathways, with CVs derived data-driven using restricted Boltzmann machines. Convergence was achieved after 305 iterations, assessed by averaging strings over 60 iterations and using Bayesian MCMC to sample 1000 transition matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 provide detailed methodological descriptions that are internally consistent and follow established computational protocols. The convergence criteria (C71-C72) are appropriate, and the use of Bayesian MCMC for uncertainty estimation (C76) is rigorous. The data-driven CV selection using RBMs (C73-C74) is a strength. However, the methods section lacks some details (e.g., random seeds, exact PLUMED version) that would be needed for full reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Three dimensionality reduction methods (PCA, MDS, t-SNE) were applied to analyze simulation data. For activation pathway ensembles, all methods separated snapshots by progression along the activation path, as expected since unsupervised methods emphasize large-scale motions like TM6 displacement. For equilibrated states, the first two PCs were insufficient for complete separation, but non-linear methods (MDS, t-SNE) separated ligand classes well in two dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C88-C90 describe standard dimensionality reduction approaches appropriately. The observation that activation pathway data separates by progression (C80) validates the simulation protocol. The acknowledgment that PC1-PC2 are insufficient (C88) but higher PCs provide separation (Figure 3\u2014figure supplement 4) shows appropriate analysis depth. The caveat about t-SNE's stochastic nature (C90) demonstrates methodological awareness. The convergence of results across multiple methods strengthens confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "An adaptive sampling protocol generated equilibrated states after 8 iterations (1.4 \u03bcs per ligand), with cross-validation confirming adequate sampling. Importance profiles were computed using KL divergence and validated with random forest classifiers. The methods showed similar results, though RF generated sharper peaks, likely due to suppressing features for outlier frames, while KL divergence was less affected by outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 demonstrate convergence and adequate sampling through cross-validation (Figure 3\u2014figure supplement 2-3). Claims C92-C96 describe appropriate feature importance methods with thoughtful comparison. The explanation for differences between KL and RF (C95-C96) is reasonable and shows critical analysis of the methods. The use of two independent approaches (KL and RF) that yield similar results (C94) strengthens confidence in the identified important residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C17"
+    ],
+    "result": "Spectroscopy experiments have shown that BI-167107 stabilizes an intermediate pre-active state, and it was hypothesized that activation proceeds through this state before forming the fully active state with an intracellular binding partner. Different agonists induce different cytoplasmic domain states, and the inactive receptor may exist in two sub-states with formed or broken ionic locks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C17 accurately report findings from prior spectroscopy work (Manglik et al., 2015). These are appropriately cited background claims that provide context for the simulation results. Claim C30 is correctly identified as a hypothesis from the cited work. These claims establish the experimental foundation against which the simulation results are compared.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "Background information on GPCRs: they are membrane proteins that activate cellular signaling, are important drug targets, and interconvert between inactive and active states via conformational changes in seven TM helices. The \u03b22AR specifically interacts with Gs proteins for cAMP response and arrestins for endocytosis, was the first GPCR crystallized with G protein, and is a drug target for bronchoconstriction. GPCRs only assume fully active states with intracellular binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C50-C52, C54-C55 provide established background knowledge appropriately supported by citations to primary literature. These are well-established facts in GPCR biology that provide necessary context. The claims are accurately stated and properly attributed to the relevant literature (Hauser et al., 2017; Rasmussen et al., 2011a,b; Chan et al., 2016; Jean-Charles et al., 2017; Manglik and Kruse, 2017; Gregorio et al., 2017; Lamichhane et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C39",
+      "C40",
+      "C48",
+      "C97",
+      "C98"
+    ],
+    "result": "Background structural and functional information: \u03b22AR crystal structures show water molecules in the inactive state that are dehydrated in the G protein-bound state. Disruption of water networks and hydrophobic barrier formation are conserved activation features. N51(1.50) is highly conserved across class A GPCRs and stabilizes water networks with D79(2.50) and Y326(7.53). V206 and S207 interact with a negative allosteric modulator. NPxxY and TM6 differences relate to biased signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C39-C40, C48, C97-C98 accurately report structural and functional information from the literature with appropriate citations (Cherezov et al., 2007; Rasmussen et al., 2011b; Trzaskowski et al., 2012; Venkatakrishnan et al., 2019; Isberg et al., 2014; Liu et al., 2020; Frei et al., 2020; Lamichhane et al., 2020; Liu et al., 2012; Suomivuori et al., 2020). These provide important context for interpreting the simulation results and demonstrate how the findings fit within existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The reorganization of helix 8 (H8) may be a secondary effect of NPxxY motif modulation, though this region could be important for arrestin recruitment based on prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 are appropriately framed as speculation. While the citations (Lally et al., 2017; Staus et al., 2018) support H8's potential role in arrestin recruitment, the simulation data showing H8 reorganization is not directly connected to arrestin function. The claim that H8 changes are secondary to NPxxY modulation is reasonable but not definitively demonstrated. This represents a plausible hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The NPxxY motif region, far from the orthosteric site, experiences the largest ligand-induced conformational heterogeneity, contrary to expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by the feature importance analyses (Figure 4b) showing the NPxxY region as highly important for discriminating between all ligands, and by the observation that each ligand stabilizes a unique NPxxY conformation (C28). The statement that this is \"against expectations\" reflects that one might expect the orthosteric site to show the most heterogeneity, making this a notable finding. However, the basis for the \"expectation\" is not explicitly justified.",
+    "result_type": "MAJOR"
+  }
+]

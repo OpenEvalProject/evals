@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The chromatin enrichment protocol successfully enriches chromatin-associated proteins from mouse embryonic stem cells (mESCs). The mESC chromatin fraction showed increased proportions of nuclear (20%) and chromatin-associated (35%) proteins compared to whole-cell lysate, with major chromatin complexes (PRC2, NuRD, BHC, MLL) detected and GO analysis confirming enrichment of chromatin-related functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 collectively demonstrate successful chromatin enrichment in mESCs through multiple complementary lines of evidence: Western blot validation (C17), detection of known chromatin complexes (C18), quantitative enrichment measurements (C19), and GO analysis (C20-C21). The convergence of these independent methods provides strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The chromatin enrichment protocol is applicable to mouse organs and yields reproducible enrichment across different organs and time points. Brain chromatin fractions contained >30% chromatin-associated proteins (up from ~8% in total lysate), with 30-60% nuclear/chromatin-associated proteins detected consistently across organs and time points. A total of 4581 chromatin-associated proteins and 2717 nuclear proteins were identified across all organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 demonstrate successful application of the chromatin enrichment protocol to mouse organs with consistent enrichment across organs and time points. The quantitative data (C22-C25) and comprehensive protein identification (C26) provide strong evidence for the robustness and reproducibility of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Each mouse organ exhibits a distinct chromatin proteome with organ-specific protein profiles. Brain and spleen showed the most extensive and diverse chromatin proteomes (3110 and 3125 proteins respectively). PCA analysis revealed that organ of origin is the fundamental discriminating factor for sample clustering, with brain showing poor correlation to other organs while kidney, liver, heart, and lung showed slight positive correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C5, C6, C28-C30 collectively demonstrate organ-specific chromatin proteomes through multiple analytical approaches: protein identification counts (C3, C5, C6), PCA clustering (C28), and correlation analysis (C29-C30). The convergence of these independent analyses provides strong support for distinct organ-specific chromatin proteomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A core chromatin proteome of 863 proteins is shared across all six organs, including 289 chromatin-binding and 157 nuclear proteins associated with major chromatin complexes (BHC, MLL, NuA4HAT, NuRD, NURF, PcG, SAGA, SIN3A, SWI/SNF). Each organ also contains unique proteins (214-793 per organ), with brain having the largest set (793 unique proteins, 24% chromatin-associated) and spleen having 582 unique proteins (~50% chromatin-associated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are well-supported by the proteomics data showing both shared and unique protein sets across organs. The identification of specific chromatin complexes in the core proteome (C32) and quantification of unique proteins per organ (C33-C36) provide strong evidence for both conserved and organ-specific chromatin functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "GO analysis of the core 863 proteins revealed enrichment for ageing-related categories including 'oxidation-reduction process', 'ageing', 'regulator of cell cycle', and 'stress response'. GO classification of unique proteins in each organ suggested distinctive molecular signs of ageing specific to each organ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by GO analysis of the proteomics data (Figure 4B-C). The identification of ageing-related categories in the core proteome and organ-specific GO terms provides evidence for both common and organ-specific ageing signatures. However, the interpretation relies on computational annotation rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C4",
+      "C92",
+      "C93"
+    ],
+    "result": "The spleen chromatin proteome exhibits a static 'young' or 'age-less' phenotype during the mouse lifespan, with few significant protein abundance changes detected. This contrasts with brain, heart, and kidney (gradual changes) and lung and liver (dramatic changes between 5-10 months). The spleen's static phenotype may reflect its constitutively active role in immune functions, red blood cell turnover, and microbial defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C4, C92-C93 are supported by the hierarchical clustering and differential expression analysis showing minimal changes in spleen proteins over time compared to other organs. However, the mechanistic interpretation linking the static proteome to spleen function (C44, C4) is speculative and based on inference rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Chromatin-modifying enzymes belonging to the same multiprotein complex exhibit similar expression profiles over time within specific organs, though different organs show opposite trends for the same complexes. For example, MLL subunits (WDR82, CTR9, WDR61) were downregulated in liver, NuRD subunit HDAC2 was downregulated in liver while NuRD subunits GATA2AD and TRIM28 were upregulated in kidney, and Reader enzymes showed organ-specific up- or downregulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by the proteomics data (Figure 5C) showing coordinated expression of complex subunits within organs but divergent patterns across organs. This demonstrates both the functional coherence of chromatin complexes and organ-specific regulation, though the functional consequences are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C98",
+      "C99"
+    ],
+    "result": "Differentially expressed proteins in ageing mouse organs overlap with human ageing-related biomarker candidates from the 'Human Ageing Genomic Resources' and 'GenAge machine learning databank'. Organ-specific examples include brain proteins IREB2 (Alzheimer's) and MAOB (Alzheimer's and Parkinson's), heart proteins ADD3, PTGIS, COL1A2 (hypertension and myocardial infarction), liver proteins INSR, PTPN1, ENPP1 (diabetes type 2 and obesity), lung proteins CYP2E1 and MMP9 (lung cancer), and spleen protein KLK1 (hypertension).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C98-C99 are supported by database queries showing overlap between the mouse proteomics data and known human ageing biomarkers. However, this is a correlative observation based on database annotation rather than experimental validation of disease associations in the mouse model. The claim that mouse proteins 'behaved just as' human biomarkers (C99) is an overstatement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "GO analysis revealed organ-specific ageing stress response pathways and chromatin architecture regulation during mouse lifespan. Brain showed upregulation of 'chromosome organisation' and 'histone modification' with downregulation of 'neuron projection regeneration'. Heart showed upregulation of 'oxidoreductase activity' and 'stress response' with downregulation of 'cardiovascular system development' and 'chromosome organisation'. Liver showed downregulation of 'chromosome organisation' and 'histone modification' with upregulation of 'oxidation-reduction process'. Lung showed upregulation of 'apoptotic process' and 'programmed cell death' with downregulation of 'muscle organisation and reassemble'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by GO analysis of the proteomics data (Figure 6). The identification of organ-specific pathway changes provides evidence for distinct ageing responses in different organs. However, the functional significance of these pathway changes is inferred from GO annotations rather than directly tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C79",
+      "C80"
+    ],
+    "result": "Macro-H2A2.1, macro-H2A2.2, and HP1BP3 accumulate during mouse brain ageing. These are mammalian heterochromatin components highly expressed in adult mouse brains. Macro-H2A2.1 maintains nuclear organization and heterochromatin architecture, while HP1BP3 recognizes H3K9me3 and promotes transcriptional repression. HP1BP3 loss of function is associated with cognitive impairment. The epigenetic regulator HP1BP3 accumulates at a similar rate to macro-H2A2 and likely interacts with it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C79 are directly supported by Western blot validation (Figure 7B) and proteomics data. Claims C61-C64 are supported by citations to prior research. Claim C80 about HP1BP3-macro-H2A2 interaction is speculative ('very likely') and based on co-accumulation rather than direct interaction evidence. The result is well-supported for protein accumulation but the interaction claim requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C82",
+      "C83"
+    ],
+    "result": "SIRT5 and SIRT3, members of the sirtuin family of histone deacylases, are upregulated in ageing mouse heart, with SIRT5 showing stronger upregulation from 3 to 15 months. This is accompanied by increased histone H3 acetylation in ageing heart. Sirtuins play important roles in age-related pathological conditions and SIRT3 maintains basal ATP levels and energy production. SIRT5 removes malonyl, succinyl, and glutaryl groups from histones but has no deacetylase activity towards histone H3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C67-C68, C82 are directly supported by proteomics data and Western blot validation (Figure 7A-B). Claims C66, C69, C83 are supported by citations to prior research. The observation that H3 acetylation increases despite SIRT5 upregulation is consistent with SIRT5's lack of H3 deacetylase activity (C69), providing internal consistency. The result is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C81",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Drastically downregulated 'chromosome organisation' was observed in ageing liver, with significantly reduced protein expression of CHD2 and KAT2A at 15 months, leading to decreased global histone H3 acetylation. KAT2A is a SAGA component required for normal mouse development, and its expression decreases during cell differentiation. This confirms prior findings of decreased H3 acetylation in liver during ageing and suggests decreased histone acylation activity at late stages of ageing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C81 are directly supported by GO analysis, proteomics data, and Western blot validation (Figure 7A-B). Claims C84-C86 are supported by citations to prior research. The mechanistic link between KAT2A downregulation and decreased H3 acetylation is logical and supported by the data. The confirmation of prior findings (C73) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Ageing kidney shows upregulation of E3 ubiquitin-protein ligases (FBXO41, RNF13, NEDD4, TRIM28) and proteasome subunits (PSMD14, PSME2), with FBXO41 and NEDD4 increasing gradually and PSMD14/PSME2 more pronounced at 15 months. This suggests ageing kidney increases E3 ubiquitin-protein ligases, enhances ubiquitylated substrates, and stimulates proteasome abundance and activity. This contrasts with prior reports of proteasome decline in senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C87-C88 are directly supported by GO analysis, proteomics data, and Western blot validation (Figure 7A-B). Claim C89 is supported by citations to prior research. However, claim C76 about enhanced ubiquitylated substrates is inferred rather than directly measured. The interpretation that increased proteasome components compensate for age-related dysfunction is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C90",
+      "C91"
+    ],
+    "result": "Downregulated proteins in ageing lungs are involved in 'muscle organisation and reassembly', with the top GO term encompassing myosin motor proteins. The downregulated 'myosin complex' GO category included several myosin family proteins, consistent with observations that human muscle ageing is accompanied by changes in myosin expression. The majority of downregulated chromatin-associated proteins in lung were assigned to 'myosin complex', 'chromatin organisation', and 'histone modification' categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C90-C91 are supported by GO analysis and proteomics data (Figure 7A). The connection to human muscle ageing (C78, C91) is supported by citations to prior research. However, the authors note they did not perform Western blot validation due to lack of specific antibodies, which is a limitation. The functional significance of myosin changes in lung chromatin is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The spleen contains the largest numbers of chromatin remodelling proteins, suggesting it may provide a good model for epigenetic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 is based on the observation of high numbers of chromatin proteins in spleen (C3, C36) but the inference that this makes spleen a 'good model for epigenetic studies' is speculative. The static nature of the spleen proteome during ageing (C4, C43, C93) could actually make it less useful for studying age-related epigenetic changes. The claim requires further justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Organelle-specific proteomics (chromatin) is a more viable strategy than bulk proteome analysis for revealing molecular details of ageing and chromatin regulation in mammalian organs. Common ageing signatures such as cell stress response and transcriptional alterations were observed changing at the late stage of adult rodent lifespan. Prior bulk proteome studies showed minimal changes in brain, heart, and kidney proteins during ageing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by comparison of the current chromatin-specific results with prior bulk proteome studies (C95 citation). The observation of ageing signatures in chromatin-enriched fractions (C97) that were not detected in bulk proteome studies (C95) supports the claim that organelle-specific proteomics is more sensitive (C96). However, the comparison is indirect and the two approaches have different time points and methodologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background and rationale: Temporal molecular changes in ageing mammalian organs are relevant to disease aetiology because age-related diseases are linked to changes in transcriptional and epigenetic machinery. Ageing affects the gene expression apparatus including chromatin. The mouse is a commonly used model for studying human health and disease with a relatively short lifespan. Prior work showed mouse chromatin undergoes major changes during ageing including histone variant replacement and altered methylation marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C16 provide background context supported by established knowledge (C1, C7, C12, C14) and citations to prior research (C8-C11, C13, C15-C16). These claims establish the scientific rationale for the study and are well-supported by the literature. They are primarily contextual rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "In principal component analysis, time points (age of mouse at organ harvest) were well separated from one another for each organ, with replicates for each time point clustering more closely to each other than to other time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is directly supported by the PCA analysis shown in Figure 3A. This demonstrates temporal changes in chromatin proteomes within each organ and good reproducibility of biological replicates. However, this is a secondary observation supporting the main finding that organ type is the primary discriminating factor (C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C91"
+    ],
+    "result": "Background information on protein functions: Various claims about the biological functions of specific proteins (spleen regeneration, macro-H2A2 function, HP1BP3 function, sirtuins, KAT2A, proteasome decline, myosin changes) based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C61-C64, C66, C83-C86, C89, C91 are all supported by citations to prior research. These provide important biological context for interpreting the proteomics findings but are not novel findings of this study. They are appropriately cited and used to support mechanistic interpretations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TMEM120A does not mediate mechanically activated currents in cells. The authors tested multiple TMEM120A constructs (mouse and human, with various tags) in Piezo1-knockout HEK cells using poking and stretch stimulation. While Piezo1, Piezo2, and TMEM63a showed robust mechanically activated currents as positive controls, none of the TMEM120A-expressing cells exhibited poking- or stretch-induced currents under whole-cell, cell-attached, or inside-out patch configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C69-C78 provide comprehensive experimental evidence across multiple recording configurations, cell lines, and construct variants. The use of appropriate positive controls (Piezo1, Piezo2, TMEM63a) with robust responses validates the experimental system. Testing four different TMEM120A constructs (C71-C73, C83) rules out tag-related artifacts. The sample size (57 cells total, C78) is adequate for negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C81"
+    ],
+    "result": "Purified HsTMEM120A reconstituted into GUVs shows minimal pressure-dependent channel activity. Out of 217 patches tested, only two exhibited pressure-dependent mini-conductance channel activities, indicating that the overall channel activity of reconstituted protein is fairly low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C81 are supported by single-channel recording data from reconstituted proteoliposomes. The large sample size (217 patches) with only 2 showing activity provides strong evidence for minimal channel function. This result is consistent with the cellular electrophysiology findings and challenges prior claims of TMEM120A functioning as a mechanosensitive channel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C79",
+      "C80"
+    ],
+    "result": "The cryo-EM structures of HsTMEM120A were solved in both CoASH-bound (3.7 \u00c5) and apo (4.0 \u00c5) states. HsTMEM120A forms a symmetrical homodimer with each monomer containing an N-terminal coiled-coil domain and a transmembrane domain with six membrane-spanning helices arranged as an asymmetric funnel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 and C46-C53 are well-supported by cryo-EM data with appropriate resolutions (3.7 \u00c5 and 4.0 \u00c5) for structural interpretation. The structures are deposited in PDB (7F3T and 7F3U), allowing independent verification. The data processing workflow is detailed and follows standard practices. The structural features described (homodimer, coiled-coil, six TM helices) are clearly visible in the provided figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "HsTMEM120A contains a specific CoASH-binding site within the transmembrane domain. CoASH is hosted in a deep intracellular cavity and forms specific interactions with conserved amino acid residues. The binding affinity was measured at Kd = 0.69 \u00b1 0.05 \u03bcM by ITC, and the identity of CoASH was confirmed by mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C54-C62 are strongly supported by multiple independent lines of evidence: cryo-EM density matching CoASH structure (C55), mass spectrometry identification (C56), ITC binding measurements (C57), and structural analysis of specific interactions (C58-C62). The conservation of binding residues across species (C59) strengthens the functional significance. The convergence of structural, biochemical, and biophysical data provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C63"
+    ],
+    "result": "Mutation of Trp193 to Ala dramatically reduced the binding affinity of HsTMEM120A with CoASH. The W193A mutant showed a Kd of ~198 \u03bcM compared to 0.69 \u03bcM for wild-type, representing a ~290-fold reduction in affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C63 are supported by ITC data comparing wild-type and W193A mutant (Figure 4\u2014figure supplement 4). The dramatic reduction in affinity (290-fold) is consistent with the structural observation that Trp193 forms a strong \u03c0-\u03c0 stacking interaction with the adenine group of CoASH (C62). This mutagenesis experiment validates the structural interpretation of the CoASH-binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "HsTMEM120A exhibits distinct conformations in CoASH-bound versus CoASH-free states. In the apo structure, the IL5 loop switches to an inward position partially covering the cavity entrance. The absence of CoASH creates a spacious vacant lumen potentially accessible to water and ions, while a constriction site on the extracellular side is formed by four residues (Met207, Trp210, Phe219, Cys310).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C64-C68 are supported by comparison of the two cryo-EM structures (Figures 5C-E and Figure 5\u2014figure supplement 2). The conformational changes in IL5 loop and cavity accessibility are clearly documented. The pore profile analysis (C65-C68) provides quantitative assessment of cavity dimensions. However, the functional interpretation regarding ion accessibility (C65) is somewhat speculative as it is not directly tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "The authors propose that TMEM120A may have alternative functional roles potentially involving CoASH transport, sensing, or metabolism, rather than functioning as a mechanosensitive ion channel. They acknowledge the possibility that TMEM120A might respond to specific mechanical stimuli not tested in their experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C93-C96, and C98 are speculative proposals based on the structural findings and negative electrophysiology results. While the CoASH-binding discovery is well-supported, the actual function remains uncertain. The authors appropriately acknowledge limitations (C93) and propose testable hypotheses (C94-C96), but these require future experimental validation. The speculation is reasonable given the data but lacks direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Endogenous CoASH copurified with HsTMEM120A can be removed by size-exclusion chromatography in detergent, as indicated by the decrease in A260/A280 ratio from 0.88 to 0.58-0.62. This spectrophotometric change reflects removal of CoASH (absorption maximum ~260 nm) from the protein (absorption maximum ~280 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by spectrophotometric measurements and established knowledge of protein and CoASH absorption spectra. The A260/A280 ratio change provides a simple biochemical assay for CoASH presence. The citation to prior work on CoASH spectroscopy (C87) supports the interpretation. This method enabled preparation of apo-protein for ITC and structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The lack of TMEM120A-mediated currents is unlikely due to fusion tag artifacts. Multiple constructs with different tags (mCherry, GFP) at N- or C-termini were tested, and the structural data shows both termini are distant from the transmembrane domain in the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 and C90-C92 address a critical control issue. Testing four different construct variants (C83, C90) with tags at different positions provides strong evidence against tag-related artifacts. The structural rationale (C91) that termini are distant from the TMD supports this conclusion. This thorough control strengthens the negative electrophysiology results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The optimal ratio for reconstituting HsTMEM120A in nanodiscs was determined to be 1:2:150 (HsTMEM120A monomer:MSP1E3D1:phospholipid, molar ratio).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by optimization experiments described in the Methods section. This technical detail is important for reproducibility of the nanodisc reconstitution used for cryo-EM structure determination. The successful structure determination validates this optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims about mechanosensation, ion channels, and prior work on TMEM120A/TACAN. These include established knowledge about mechanosensitive channels (MscL, MscS, Piezo) and citations to prior reports that TMEM120A functions as a mechanosensitive channel (TACAN) involved in pain sensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C15-C35 are primarily citations to prior literature establishing context. These are appropriately referenced and represent the state of knowledge that motivated the current study. The authors accurately describe prior claims about TMEM120A/TACAN (C27-C35) that their work challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C97"
+    ],
+    "result": "TMEM120 shares structural similarities with ELOVL proteins, but TMEM120A did not exhibit ELOVL-like enzymatic activity with tested substrates. Other studies have implicated TMEM120 in lipid metabolism in C. elegans and as a modulator of Piezo2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 and C97 are citations to recent literature on TMEM120 function. These provide important context for interpreting the CoASH-binding discovery and suggest potential alternative functions. The authors appropriately cite these studies and acknowledge that the actual enzymatic or metabolic function remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "HsTMEM63a serves as a high-threshold mechanosensitive channel and showed slowly activated stretch-induced currents in the experimental system, with smaller maximal current amplitude (20.4 \u00b1 2.2 pA) compared to Piezo1 (64.1 \u00b1 7.4 pA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe a positive control experiment confirming that the experimental system can detect mechanosensitive channels. The results are consistent with prior literature on TMEM63a and validate the experimental approach used to test TMEM120A. This control is essential for interpreting the negative TMEM120A results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The drastic difference in single-channel conductance measured in cells (11.5 pS) versus reconstituted membranes (~250 pS) in prior work raises concerns about whether TMEM120A forms a bona fide ion channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a reasonable inference based on the discrepancy in prior published data. This 20-fold difference in conductance is indeed unusual and raises valid questions about the identity of the channel activity. This observation motivated the authors' rigorous testing, which failed to reproduce mechanosensitive channel activity.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1843 @@
+{
+  "submission": {
+    "id": "8c4c1552-178b-48d2-a5a4-ed9916354340",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:25:18.075494Z",
+    "updated_at": "2025-12-03T19:25:18.075494Z"
+  },
+  "content": [
+    {
+      "id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "submission_id": "8c4c1552-178b-48d2-a5a4-ed9916354340",
+      "content_type": "manuscript",
+      "content_text": "# Competitive interactions between culturable bacteria are highly non-additive\n\n## Authors\n\n- Amichai Baichman-Kass<sup>1</sup> ([ORCID: 0000-0003-0924-3191](https://orcid.org/0000-0003-0924-3191))\n- Tingting Song<sup>1</sup> ([ORCID: 0000-0002-6740-2085](https://orcid.org/0000-0002-6740-2085))\n- Jonathan Friedman<sup>1</sup> ([ORCID: 0000-0001-8476-8030](https://orcid.org/0000-0001-8476-8030)) \u2020\n\n### Affiliations\n\n1. Institute of Environmental Sciences, Hebrew University Rehovot Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicroorganisms are found in diverse communities whose structure and function are determined by interspecific interactions. Just as single species seldom exist in isolation, communities as a whole are also constantly challenged and affected by external species. Though much work has been done on characterizing how individual species affect each other through pairwise interactions, the joint effects of multiple species on a single (focal) species remain underexplored. As such, it is still unclear how single-species effects combine to a community-level effect on a species of interest. To explore this relationship, we assayed thousands of communities of two, three, and four bacterial species, measuring the effect of single, pairs of, and trios of 61 affecting species on six different focal species. We found that when multiple species each have a negative effect on a focal species, their joint effect is typically not given by the sum of the effects of individual affecting species. Rather, they are dominated by the strongest individual-species effect. Therefore, while joint effects of multiple species are often non-additive, they can still be derived from the effects of individual species, making it plausible to map complex interaction networks based on pairwise measurements. This finding is important for understanding the fate of species introduced into an occupied environment and is relevant for applications in medicine and agriculture, such as probiotics and biocontrol agents, as well as for ecological questions surrounding migrating and invasive species.\n\n## Introduction\n\nScarce are the environments on Earth not colonized by bacteria. In addition to naturally playing important roles from driving biogeochemical cycles at the ecosystem level (Cavicchioli et al., 2019; Arrigo, 2005; Falkowski et al., 2008) to supporting host health at the individual level (Berendsen et al., 2012; Manor et al., 2020; Gilbert et al., 2018), bacteria have also been harnessed for countless biotechnological applications across industries such as food preservation (Motarjemi, 2002), plant and animal health (Berendsen et al., 2012; J\u00fanior et al., 2021), biocontrol of pathogens (K\u00f6hl et al., 2019), as well as decomposition of toxic compounds, and production of valuable ones (Varjani et al., 2017; Ro et al., 2006; Fang and Smith, 2016; Mainka et al., 2021). In natural environments, bacteria often form rich and complex communities, but understanding how these communities organize has proven difficult (Widder et al., 2016). Elucidating the rules that govern microbial ecology can both offer insight into larger ecological systems and allow us to better manipulate and design microbial communities for the desired functions.\n\nThe structure of microbial communities is determined by the interactions between the involved species (Konopka et al., 2015; Barbier et al., 2018; Qian and Ak\u00e7ay, 2020). In recent years, much effort has been put into measuring pairwise interactions of different species from, and in, different environments (Foster and Bell, 2012; Vetsigian et al., 2011; Kehe et al., 2021). But it is still unclear to what extent the joint effects of multiple species on a focal species of interest (e.g., a pathogen) can be inferred from pairwise measurements. Such inference may be challenging due to the presence of indirect interactions: the affecting species may alter each other\u2019s abundances (termed interaction chains) or may modify each other\u2019s effect on the focal species (termed interaction modification, or higher-order interactions) (Sanchez, 2019; Wootton, 2002).\n\nDespite a strong theoretical foundation, empirical studies in recent years have shown conflicting results regarding the importance of higher order interactions and indirect effects (Levine et al., 2017). For some functions, such as degradation of complex molecules (Sanchez-Gorostiaga et al., 2019; Gralka et al., 2020) and antibiotic production (Tyc et al., 2014; Qi et al., 2021; Westhoff et al., 2021), clear evidence of such interactions has been found. Furthermore, in both empirical and theoretical studies, the presence or absence of an additional species has been shown to affect interactions, and even the outcome of invasion and coexistence in some systems (Mickalide and Kuehn, 2019; Chang et al., 2022; Hsu et al., 2019). Additional theoretical work has shown that commonly used ecological models (i.e., generalized Lotka-Voltera) do not properly capture microbial community interactions, partially due to the nature of these interactions (chemically mediated as opposed to predator-prey) (Momeni et al., 2017). However, other studies have shown that both structures of, and interactions within, larger communities can be accurately predicted from pairwise interactions alone using variations of said models (Friedman et al., 2017; Meroz et al., 2021; Guo and Boedicker, 2016; Venturelli et al., 2018). This being the case, how microbial interactions combine into the joint effect of multiple species on a single species of interest is still poorly understood.\n\nIn our research, we used high-throughput nanodroplet-based microfluidics to measure over 14,000 bacterial communities composed of subsets of a library of 61 soil and leaf isolates of which six were fluorescently labeled (Figure 1). We quantified the effect of individual species and the joint effects of species pairs and trios on the growth of six focal bacterial species and found that the effects of multiple species are dominated by the strongest single-species effect, and specifically that negative effects combine non-additively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-v2.jpg)\n\n**Figure 1.:** (A) A library of 61 soil and leaf-associated bacterial strains was used in this experiment. All strains are from four orders: Proteobacteria (orange), Firmicutes (blue), Bacteroidetes (purple), and Actinobacteria (green) (full list in Supplementary file 1a, Source data 1). Also, 6 of the 61 species were labeled with GFP and used as \u2018focal\u2019 species whose growth was tested in the presence of the other isolates (affecting species). These strains are labeled on the phylogenetic tree (Escherichia coli [EC], Ewingella americana [EA], Raoultella planticola [RP], Buttiauxella izardii [BI], Citrobacter freundii [CF], and Pantoea agglomerans [PA].) (B) Each focal species was grown in monoculture, with (between 18 and 52) single affecting species, and (between 153 and 1464) pairs of affecting species. Additionally, E. coli was grown with 3009 trios of affecting species. (C) Effects of pairs and trios were then predicted using the effects of single species and single species and pairs, respectively. Predictions were made using three different models: additive, mean, and strongest (detailed in \u2018Results\u2019 and \u2018Materials and methods\u2019). (D) Equation used for calculating the effect of an affecting species on the focal species.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Droplets contained one of three different types of samples: (1) focal monoculture, containing only the focal species, (2) coculture of focal species and a single affecting species at an optical densities ratio of 2:1, and (3) blank samples, with media but no bacterial cells. Based on which two or three droplets (depending on the experimental setup) each well contained either a focal monoculture, one, two or three, affecting species. Similar communities started at different initial densities based on how many monoculture or blank droplets were in the well, but as shown in Figure 1\u2014figure supplement 2, initial densities did not influence the effect on the focal. Ratios of focal species to affecting species 1 and 2 are detailed for different well setups.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Correlation between different ratios of initial optical density in each well. (A) Different ratios of focal to affecting species based on whether there were two droplets containing the affecting species or one and one focal monoculture droplet: nRMSE = 0.22. (B) Different ratios of focal to affecting species based on whether there were three droplets containing the affecting species or one and two focal monoculture droplets: nRMSE = 0.16. (C) Different ratios of affecting species based on whether there were two droplets containing affecting species A and one droplet containing affecting species B or vice versa: nRMSE = 0.24.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Each strain\u2019s yield on 20 different carbon sources, assayed after 48 hr. Growth values are calculated as mean OD600 measurement from three replicates and were background-subtracted (media with no bacteria).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Each strain\u2019s ability to grow on 11 different antibiotics after 48 hr. Growth values are calculated as mean OD600 measurement from three replicates and were background-subtracted (media with no bacteria).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Growth in kChip of each focal strain in monoculture over 72 hr. Growth is measured by fluorescent signal and each well is normalized to the value at the beginning of the experiment (all signals at time zero are equal to one). The solid line represents the mean, and the shaded area the 95% confidence interval.\n\n## Results\n\nWe conducted high-throughput assays involving 61 affecting species and 6 different focal species to understand the effects of single species, pairs, and trios on the growth of a given (focal) species. The 61 affecting species included soil and leaf isolates as well as lab strains representing 19 genera from four phyla: Proteobacteria (n = 14), Firmicutes (n = 2), Bacteroidetes (n = 2), and Actinobacteria (n = 1) (full list in Supplementary file 1, Source data 1). The focal species were a subset of six of these species (all proteobacteria) that were transformed to constitutively express a fluorescent protein: (Escherichia coli [EC], Ewingella americana [EA], Raoultella planticola [RP], Buttiauxella izardii [BI], Citrobacter freundii [CF], and Pantoea agglomerans [PA]) (see \u2018Materials and methods\u2019). Except for EC, which is a lab strain (E. coli K-12 substr. MG1655), all focals were isolated from soil samples (Kehe et al., 2021). First, we characterized each species phylogenetically by performing Sanger sequencing of their 16S ribosomal RNA gene and phenotypically by growing each species on each of 20 different carbon sources and 11 antibiotics. The species showed large variability in carbon utilization profiles with no species growing well on all carbon sources (Figure 1\u2014figure supplement 3). There was also high variability in growth on antibiotics with 15 species showing little or no growth on any antibiotics, while 16 species showed resistance to at least seven antibiotics (Figure 1\u2014figure supplement 4).\n\nWe performed the interaction assays in the kChip microfluidics device (Kulesa et al., 2018; Kehe et al., 2019), allowing for extensive screening in parallel (see \u2018Materials and methods,\u2019 Figure 1\u2014figure supplement 1). We measured the effects of 243 single species (18\u201352 for each of the six focal species), the joint effects of 5357 species pairs (between 153 and 1464 for each of the six focal species), and the joint effects of 3009 species trios (from a subset of 26 affecting species on one focal species). Cultures were normalized and mixed after pre-growth, such that the starting densities in the kChip were approximately 1:1 for all species in wells containing two droplets and two affecting species, but ratios varied in three droplet wells (see \u2018Materials and methods,\u2019 Figure 1\u2014figure supplements 1 and 2). Interaction assays were carried out in minimal M9 media with 0.5% [w/v] glucose for 24 hr. The growth of the focal species was measured by fluorescence, and effects were calculated as the log ratio of growth in coculture to growth in monoculture (see \u2018Materials and methods,\u2019 Figure 1D). Positive and negative effects are defined as a net increase or decrease in growth compared to the monoculture respectively, while affecting species with no observable effect (see \u2018Materials and methods\u2019) were defined as neutral.\n\n### Joint effects of species pairs tend to be stronger than those of individual affecting species\n\nWe started our interaction assays by measuring the individual effects of single affecting species on each of the focal species (see \u2018Materials and methods\u2019). Individual effects covered a wide range (median = \u22120.15, interquartile range = 0.94) (Figure 2A), and positive effects (the focal species reaching a higher density in the presence of an affecting species than in monoculture) were common overall (32.9%, Figure 2B), in line with previous studies (Kehe et al., 2021). The distribution of effects varied based on the focal species, with E. coli and B. izardii showing the most negative (\u20132.83) and positive (+0.43) median effects, respectively (Figure 2D). Additionally, we found no affecting species that had strong effects across all focal species (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig2-v2.jpg)\n\n**Figure 2.:** (A) Distribution of the effects of single and pairs of affecting species on all focal species. Mann\u2013Whitney\u2013Wilcoxon test two-sided, p-value = 1e-9. Dots show individual effects, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5\u00d7 interquartile range. (B, C) Distribution of qualitative effects of single and pairs of affecting species respectively on all focal species. (D) Distribution of the effect of single and pairs of affecting species for each focal species individually. Dots represent individual measurements, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5\u00d7 interquartile range. Mann\u2013Whitney\u2013Wilcoxon test two-sided tests were performed for each focal species, and p-values are shown on the graph.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Distributions of the weakest effect of each individual species and pairs measured as the percentile within the distributions of effects for a single focal species (for affecting species that were measured against atleast four focal species). For each species or pair, the minimal value from all focals was taken to generate the above distributions. Sign was not regarded in this calculation, only strength of the effect. Dots represent individual measurements, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5\u00d7 interquartile range. Mann\u2013Whitney\u2013Wilcoxon test two-sided tests were performed, and p-value is shown on the graph.\n\nThe measured traits of individual species showed no consistent correlations with their effects on the focal species. In particular, the similarity of metabolic profile, resistance profile, or phylogeny between the focal and affecting species did not correlate strongly with the effect across focal species. Some traits showed little to no correlation for most focals (e.g., antibiotic resistance), while other traits were correlated with effect for a number focal species but not all (e.g., phylogenetic distance). Most of these correlations were not statistically significant (Figure 3\u2014figure supplement 1A).\n\nAfter characterizing the individual effects of all single species, we assayed each pair of affecting species against the focal species. Overall, negative effects were significantly more prevalent in joint pair effects (77.1%) than in effects of individual species (60.5%) (p=1.3e-9, Fisher\u2019s exact test) (Figure 2B and C). The median effect on each focal was more negative by 0.28 on average, though the difference was not significant in all cases; additionally, focals with mostly positive single-species interactions showed a small increase in median effect (Figure 2D). Despite this, the minimum and maximum effects for each focal species remained similar. As with the single affecting species, pairs\u2019 joint effects did not correlate well with species traits, with similarity between the two affecting species, or with their similarity to the focal species (Figure 3\u2014figure supplement 1B). These results indicate that it may be challenging to connect the effects of single and pairs of species on a focal strain to a specific trait of the involved strains using simple analysis.\n\n### Negative effects combine non-additively and joint effects are dominated by the stronger single-species effect\n\nNext, we examined how the effects of individual species relate to their joint effect. In particular, we were interested in finding a model that describes the effects of pairs based on the data from single-species effects. Based on previous studies' success in predicting community structure from pairwise interactions (Friedman et al., 2017; Meroz et al., 2021; Guo and Boedicker, 2016; Venturelli et al., 2018), we posited that predicting how effects combine based solely on the effects of the single species should also be feasible. To do so, we considered three models: an additive effect model, a mean effect model, and a strongest effect model.\n\nThe additive effect model proposes that the effects of each species on the focal are the same whether they act individually or jointly. Therefore, the combined effect will be equal to the sum of the effects of each species on their own. This is equivalent to additivity of effects between antibiotics, which is common in the drug combinations field (Bollenbach, 2015). The mean model represents a simple phenomenological model that assumes that the effects of different species will be diluted in the presence of a third species. By contrast, the strongest effect model posits that the species with the strongest effect dominates the effect of other affecting species, leaving the joint effect the maximum single effect, and not the sum or mean of single-species effects.\n\nWhen measured across all species and interaction types, we found that the model that best agrees with the measured effects is the strongest effect model (Figure 3B).Though supplementing the mean model with additional species information (i.e., carrying capacity) did improve the model accuracy, it was still less accurate than the strongest effect model (Figure 3\u2014figure supplement 2). The accuracy of the models and identity of the best-fitting model varied across interaction types. The strongest effect model was the most accurate overall (nRMSE = 0.46, 0.32, and 0.16 for the additive, mean, and strongest models, correspondingly), and considerably more accurate when both species affected the focal negatively (nRMSE = 0.65, 0.25, and 0.16). The additive model was slightly more accurate when one effect was negative and the other positive (nRMSE = 0.14, 0.43, and 0.16). Overall, predictions when both effects were positive were less accurate, but here too the strongest model gave the most accurate predictions (nRMSE = 0.81, 0.78, and 0.69) (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-v2.jpg)\n\n**Figure 3.:** (A) Graphical representation for each model. The additive model assumes that the effects of each species will accumulate, indicating they are acting independently, and are unaffected by one another. The mean model assumes the combined effect will be an average of the two single-species effects. The final model, strongest effect, assumes that whichever species had a stronger effect on its own will determine the joint effect when paired with an additional species. The y-axis represents the growth of the focal species in different conditions, and in these examples effects are negative. (B) Comparison of predicted effects and the experimental data, with their respective root mean squared error normalized to the interquartile range of the observed data (nRMSE). nRMSE values are calculated from 1000 bootstrapped datasets and represent the median and interquartile range in parentheses (see \u2018Materials and methods\u2019). Each dot represents the joint effect of a pair of affecting species on a focal species. Colors indicate the signs of the measured effects of the individual affecting species. (C) Similar to panel (B), but data is stratified by interaction signs of the individual affecting species.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Spearman correlation value for traits of (A) single species and (B) pairs and effect on species separated for each focal species individually. Correlations with p-values<0.05 are highlighted with a black frame. The growth rate and maximum OD shown in panel (A) were measured only in M9 glucose, similar to conditions used in the interaction assays. See \u2018Materials and methods\u2019 for calculations of phenotypic and phylogenetic distances.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Correlation between four different models for how single-species effects combine into pair effects and the experimental data, with their respective normalized root mean squared error (nRMSE). nRMSE values are calculated from 1000 bootstrapped datasets and represent the median and interquartile range in parentheses (see \u2018Materials and methods\u2019). Similar to Figure 3B with the addition of the OD-weighted mean.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The accuracy of each model as a function of the difference between the sizes of effect of each individual species within the pair. (B) Distribution of the prediction accuracy for each model. Dots represent individual measurements, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5\u00d7 interquartile range. The frequencies of these interaction types in the dataset are negative\u2013negative 48%, positive\u2013positive 14%, and negative\u2013positive 38%.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Pearson correlation value for each trait and the deviation of the model. Correlations with p-values<0.05 are highlighted with a black frame. See \u2018Materials and methods\u2019 for calculations of phenotypic and phylogenetic distances.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Correlation between the different models for how single-species effects combine into pair effects, and the experimental data, with their respective normalized root mean squared error. Negative effects and mixed effects were limited to pairs with a combined effect no stronger than \u20131.2 (the maximum positive effect observed). As the negative\u2013negative and negative\u2013positive predictions become less accurate with these datasets, we posit part of the reason positive\u2013positive interactions were difficult to predict is due to their small effect size.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Correlation between the different models for how single-species effects combine, and the experimental data, with their respective normalized root squared mean error. Data is divided for each focal species and interaction type individually.\n\nThe distribution of errors further supported the strongest effect model (Figure 3B, Figure 3\u2014figure supplement 3B): When both single-species effects were negative, the mean model was prone to underestimating the combined effect due to the reduction of the stronger effect by taking into account the weaker effect; while contrastingly, the additive model overestimated effects due to the addition of the weaker effect to the stronger effect, which was more accurate on its own. We saw the opposite trend when both single-species effects were positive, and no particular trend when there was one positive and negative effect. As with the effects themselves, model accuracy was not strongly correlated with any specific species trait (Figure 3\u2014figure supplement 4).\n\nIn regard to negative effects, support for the strongest model is also evident in how the difference in size of effect influences the model accuracy (Figure 3\u2014figure supplement 3A). When effects are close to equal, the mean model is fairly accurate while the additive model does particularly poorly as these effects would be calculated as twice the strongest effect. Contrastly, when one effect is much stronger than the other, the additive model is accurate since the addition of the weak effect is negligible, whereas the mean model underestimates the joint effects by taking into account the weaker effect.\n\n### The strongest effect model is also the most accurate for larger communities\n\nWith this information in hand, we were interested to see whether the same rules held up for larger communities. To this end, we screened trios of a subset (i.e., 26) of the affecting species against a single focal species (E. coli) and found similar trends to all those seen for pairs of affecting species. Similar to what was observed in the move from single species to pairs, effects were stronger (in this case more negative effects) in trios than in the pairs (Figure 4C). Additionally, as with joint pairs\u2019 effects, the strongest effect model was more accurate than the additive and mean models (nRMSE = 2.65, 1.23, and 0.63 for the additive, mean, and strongest models, correspondingly), which is consistent with the fact that the single-species effects in this subset were predominantly negative. Similar distributions of error were seen as in the pairs\u2019 effects, but further exaggerated with the more extreme under and overestimation of the combined trios\u2019 effects by the mean and additive models, respectively (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Correlation between three different models for how (A) single-species effects and (B) pairwise species effects combine into trio effects, and the experimental data. Root squared mean error normalized (nRMSE) to the interquartile range. nRMSE values are calculated from 1000 datasets and represent the median and interquartile range in parentheses (see \u2018Materials and methods\u2019). (C) Distribution of the effects of single, pairs, and trios of affecting species on E. coli. All Mann\u2013Whitney\u2013Wilcoxon two-sided tests were significant, p values are shown on plot. Dots show individual effects, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5\u00d7 interquartile range. (D, E) Distribution of errors for each model based on (D) single-species data and (E) pairs data. Dots show individual effects, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5\u00d7 interquartile range.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Correlation between four different models for how single-species effects combine into trio effects and the experimental data, with their respective normalized root mean squared error (nRMSE). nRMSE values are calculated from 1000 bootstrapped datasets and represent the median and interquartile range in parentheses (see \u2018Materials and methods\u2019). Similar to Figure 4A with the addition of the OD-weighted mean.\n\nWe further explored the additive, mean, and strongest models in trios by basing the model on effects of the three pairs comprising each trio (i.e., joint effect of AB, AC, BC to predict effect of ABC), as opposed to only using single-effect data (i.e. ,effect of A, B, C on their own) (Figure 4A and B). The effects of single species and pairs were measured again independently in this experiment (see \u2018Materials and methods,\u2019 Figure 1\u2014figure supplement 1). The move to pairs-based predictions improved the accuracy for both the mean and strongest model, while further pushing the additive predictions away from the observed effects (Figure 4B). These data suggest that even in the presence of additional species the strongest single-species effect still dominates the combined effect of a community.\n\n## Discussion\n\nBy measuring thousands of simplified microbial communities, we quantified the effects of single species, pairs, and trios on multiple focal species. The most accurate model, overall and specifically when both single-species effects were negative, was the strongest effect model. This is in stark contrast to models often used in antibiotic compound combinations, despite most effects being negative, where additivity is often the default model (Bollenbach, 2015). The additive model performed well for mixed effects (i.e., one negative and one positive), but only slightly better than the strongest model, and poorly when both species had effects of the same sign. When both single-species effects were positive, the strongest model was also the best, though the difference was less pronounced and all models performed worse for these interactions. This may be due to the small effect size seen with positive effects, as when we limited negative and mixed effects to a similar range of effects strength, their accuracy dropped to similar values (Figure 3\u2014figure supplement 5). We posit that the difference in accuracy across species is affected mainly by the effect type dominating different focal species\u2019 interactions, rather than by inherent species traits (Figure 3\u2014figure supplement 6).\n\nWe phenotypically and genetically profiled all species, but did not find strong correlations between the measured traits, or similarity in traits, to the effect on the focal species. Though positive effects were common, making up about one-third of the single-species effects, they became less common as the number of community members increased, making up only 16% of the effects of species pairs. Furthermore, we found similar trends in the larger communities of four species (three affecting species and one focal), both that effects combined in a non-additive manner, being dominated by the strongest single-species effect, and that effects became stronger in larger communities, which is consistent with previous studies (Cook et al., 2006; van Elsas et al., 2012 ; Jones et al., 2021; Piccardi et al., 2019; Gould et al., 2018; Palmer and Foster, 2022).\n\nThe mechanistic basis underlying the joint effects of multiple species is still unclear. The additive model\u2019s accuracy for mixed effects may indicate that negative and positive effects act independently. For negative effects, it is difficult to identify a single biological mechanism that could explain why the strongest effect model agreed best with our experimental data. Intuitively, we assumed this could be explained by resource competition (i.e., an affecting species that consumes resources quickly would negatively affect the focal species, as well as the other affecting species). However, this explanation is not consistent with the fact that the affecting species\u2019 growth rate did not correlate well with their effect on some focal species (Figure 3\u2014figure supplement 1A). Secondly, we thought effects could be saturating (either biologically or with regard to the detection limits in this experimental setup), but this would not explain why the model works for weaker effects. A hierarchical ranking, where each species affects all the species ranked below it could lead to the strongest affecting species affecting both the focal and the other affecting species, thus dominating their joint effects, but this does not coincide with the fact that we observed almost no single species or pairs with a strong effect across all focals (Figure 2\u2014figure supplement 1).\n\nAs we did not measure the abundance of all species in each community (only the focal), we cannot disentangle interaction modification (changes in per capita effect of specific species), from interaction chains (affecting the amount of an affecting species, and as such its effect on the focal), and further work is needed in order to pinpoint the exact mechanism(s) leading to the dominance of the strongest model for negative effects in our system. We also note that it is possible that the manner in which effects combine is affected by the mechanism of interaction; For instance, previous studies have shown that interference competition can combine additively, or even synergistically, results not seen in our work (Tyc et al., 2014; Westhoff et al., 2021).\n\nUnderstanding how microbial communities assemble and how large numbers of species interact is of both utmost importance and difficulty. Harnessing such information would open up a plethora of currently underutilized applications in food, medical, and agricultural industries. Specifically, understanding how the effects of multiple species on a single species combine is important for introduction of new species into a given environment. Our results suggest that when we want to affect a single focal species in a given environment (e.g., for biocontrol of a pathogen), introducing the species with the strongest effect on the focal would be sufficient to obtain the desired effect, as synergies were rare in our dataset. In cases where there are multiple strains of interest (e.g., probiotics), introducing multiple species may be beneficial since different affecting species typically have strong effects on different focals. Introducing combinations of species may allow for a more robust function as the chances that one member of the community will have a strong effect on a resident species of interest is more likely.\n\nFurther work is needed in order to deepen our understanding of how multiple species affect each other and to see to what extent our findings continue to hold up in more diverse communities, other taxonomic groups, and more complex environments. Specifically, as we saw a decrease in prediction power from pairs to trios, exploring this model with more diverse communities is of particular interest. Additionally, nearly all of the effects in the four member communities were negative, and it is unclear how mixed and positive effect modeling is affected by higher diversity. Lastly, it is important to note that our focal species are all from the same order (Enterobacterales), which may also limit the purview of our findings. Nonetheless, our results suggest that community effects can be predicted from the strongest effect of a single species, greatly reducing the amount of information required to obtain accurate estimations, which can improve our ability to use a bottom-up approach for biotechnological applications, as well as answering fundamental ecology questions.\n\n## Materials and methods\n\n### Strain isolation from soil samples\n\nSoil (50 ml of soil, taken from a depth of ~30 cm) and leaf samples (multiple leaves from a single plant combined into a sterile 50 ml tube) were collected from various locations in the Faculty of Agriculture in Rehovot, Israel, on multiple dates (See Source data 1 file for more information). Each sample was diluted in phosphate-buffered saline (PBS) directly after collection (1 g of soil or one leaf in 10 ml of PBS) and vortexed for 5 min. 100 \u03bcl of multiple dilutions of this mixture (10\u20132-10\u20135) were seeded on different solid media NB (0.5% [w/v] peptone, 0.3% [w/v] yeast extract, 1.5% [w/v] agar); 1% NB (0.005% [w/v] peptone, 0.003%[w/v] yeast extract, 1.5% agar); M9 minimal media (0.1 mM CaCl2, 2 mM MgSO4, 1\u00d7 [Enco-teknova] trace metals, 1% [w/v] glucose, 1\u00d7 [Sigma] M9 Salts), additional plates were made with the same media containing various antibiotics (antibiotics and respective concentrations are listed in Supplementary file 1b) Plates were incubated at 30\u00b0C, and colonies were restreaked on NB without antibiotics until single isolates were stably obtained. Strains were selected on the basis of multiple criteria: growth of transferred colony in NB liquid medium (30\u00b0C), frozen glycerol stock revival in NB (OD600 > 0.1) (30\u00b0C), and subsequent growth on M9 minimal media + 1% (w/v) glucose (OD600 > 0.1) (30\u00b0C). Isolates were kept in single tubes as well as 96-well plates in 50% NB + 50% glycerol (glycerol stock were 60% and 80% for tubes and plates, respectively, for 30% and 40% final glycerol concentrations).\n\n### Strain identification and phylogenetic distance calculation\n\nEach bacterial isolate was classified phylogenetically with its 16S rRNA gene sequence. The full 16S gene sequences (~1500 base pairs) were obtained via Sanger sequencing and classified with a combination of RDP Classifier (Cole et al., 2014) and BLAST (Altschul et al., 1990) (list of strains in Supplementary file 1, full phylogenetic data in Source data 1). Phylogenetic distance was calculated in Geneious Prime software (version 2022.2.1, Biomatters Ltd). Sequences were aligned using MUSCLE alignment. Phylogenetic tree was built using the UPGMA method with no outgroup and a HKY genetic distance model. The pairwise phylogenetic distances between strains were calculated directly from the patristic distances of the phylogenetic tree.\n\n### Phenotypic profiling and distance calculation\n\nBacterial strains were seeded from \u201380 stock directly into 1 ml LB medium (1% [w/v] tryptone, 1% [w/v] NaCl, 0.5% [w/v] yeast extract) in 96-well plate and grown overnight at 30\u00b0C at 900 RPM (on a Titramax 100; Heidolph Instruments, Schwabach, Germany). Cells were washed three times by centrifugation as 3600 rcf, removal of supernatant, and resuspension in M9 minimal media with no carbon. Cultures were then normalized to 0.01 OD600. 20 \u03bcl of the normalized cultures were added to 180 \u03bcl of M9 minimal media either containing 1% [w/v] of one of 20 carbon sources (Supplementary file 1) or M9 minimal media with 1% [w/v] glucose and one of 11 antibiotics (antibiotics and respective concentrations are listed in Supplementary file 1). Plates were grown at 30\u00b0C for 48 hr without shaking. Cultures were homogenized by shaking (on a Titramax 100) for 90 s before measuring OD600. Additionally, species were also grown in M9 minimal media (with the addition of 0.05% [w/v] BSA and 1% [w/v] glucose) with shaking (continuous double orbital shaking, 282 cpm) at 30\u00b0C, with OD measurements every 15 min, for 48 hr, to obtain growth kinetics (in Epoch and Synergy H1 microplate readers). Growth for carbon source experiments was normalized to the carbon source with the highest OD600 and antibiotic experiments were normalized to growth on M9 minimal media with glucose and no antibiotics. Euclidean distances of normalized values were measured for each species on carbon sources and antibiotics separately, and used to construct distance matrices. Growth kinetics (i.e., growth rate and carrying capacity) were not included in these profiles, but measured independently for correlation to effect size.\n\n### Droplet preparation and culturing\n\nBacterial strains were seeded from \u201380 stock directly into 1 ml LB medium (1% [w/v] tryptone, 1% [w/v] NaCl, 0.5% [w/v] yeast extract) in 96-well plate and grown overnight at 30\u00b0C at 900 RPM (on a Titramax 100). Cells were washed three times by centrifugation as 3600 rcf for 3 min, removal of supernatant, and resuspension in M9 minimal media (with the addition of 0.05% [w/v] BSA and 1% [w/v] glucose). Affecting species cultures were then normalized to 0.04 OD600 and focal species cultures were to 0.02 OD600. Affecting and focal species cultures were combined at a ratio of 1:1 so that droplets contained a final concentration of 0.02 OD600 affecting species and 0.01 OD600 focal species. Each well contained droplets with the same focal species such that with this setup, in a well containing two droplets of different affecting species, the starting OD600 of each species is 0.01 (as each affecting species is diluted by the other droplet in which it is not contained, but the focal species is not). In wells with three droplets, the starting ratio of the focal to each affecting species (assuming different species in each droplet) was 3:2. When one of the droplets contains a monoculture of the focal or is empty, or more than one droplet contains the same affecting species, these ratios change (see Figure 1\u2014figure supplement 1).\n\nDroplets were produced on a Bio-Rad QX200 Droplet Generator as described by Kulesa et al., 2018 Briefly, 20 \u03bcl input of combined cultures were emulsified into ~20,000 1 nl droplets in fluorocarbon oil (3M Novec 7500) stabilized with 2% (w/w) fluorosurfactant (RAN Biotech 008 FluoroSurfactant). 2.5 mM of fluorescent dyes (Thermo Fisher AlexaFluor: 555 [A33080], 594 [A33082], 647 [A33084]) were added to culture for droplet imaging (see Kulesa et al., 2018). For each kChip loading, about 5000 droplets for each input (~60 affecting species + focal species, 2 focal species monocultures, 2 blank cultures) were generated for a total of ~320,000 droplets. Droplets were generated together for 2 kChips (technical replicates), and then droplets were pooled separately for each chip. kChips were incubated at 30\u00b0C for 72 hr. Cultures were imaged at 24 hr intervals throughout the experiment. Data for analysis was taken from after 24 hr as monoculture growth of the focals saturated by this point (Figure 1\u2014figure supplement 5).\n\n### Fluorescence labeling and assays\n\nFocal species were transformed with commercially available plasmid pMRE132 containing GFP2 by Kehe et al., 2021. Fluorescence has some caveats as a measurement for biomass, as fluorescent signal is not always directly proportional to biomass, expression levels can vary in different physiological states, and signal stability can differ between strains. Nonetheless, as described in Appendix 1, we show that effect sizes assayed using fluorescence and standard OD600 are well correlated (Appendix 1\u2014figure 1).\n\n### Data filtering and normalization\n\nAs the kChip genreates droplet combinations stochastically, the amount of replicates for each community is different, ranging from 1 to 285, with a mean of 19. All communities with less than three replicates were not used in the analysis. Additionally, isolates were only used with focals whose monocultures were at least five times larger than the isolates autofluorescence signal, allowing to measure effects of at least \u20131.5. Full datasets without autofluorescence filtering can be seen in Appendix 1\u2014figure 3. Importantly, affecting species autofluorescence would weaken measured negative effects and would not systematically generate artifacts that support the strongest effect model. Normalization was performed by subtracting the starting value for each individual well from the additional time points.\n\n### Calculating effect size\n\nTo measure the effect of each affecting species on a given focal species, the log of the ratio of focal species yield in coculture (median of coculture replicates) to monoculture (median of monoculture replicates) was calculated:\n\n$$\nEffect_{i}=\u00a0log(\\frac{Median\u00a0growth\u00a0of\u00a0focal\u00a0in\u00a0coculture\u00a0with\u00a0species\u00a0i}{Median\u00a0growth\u00a0of\u00a0focal\u00a0in\u00a0monoculture})\n$$\n\nCoculture data was collected from wells with different starting concentrations in both the two-droplet experiments (i.e., one mixed droplet and one focal monoculture) and three-droplet experiments (i.e., two droplets of affecting species A and one droplet of affecting species B and vice versa, or one of each in addition to a blank droplet) (Figure 1\u2014figure supplement 1). Our data showed that the different initial fractions did not influence the effect on the focal species (Figure 1\u2014figure supplement 2). The standard error was calculated via bootstrapping, 100 calculations of the resampled median coculture divided by resampled median monoculture. Effects where the standard deviation was larger than the absolute value of the effect were classified as neutral.\n\n### Calculating predictions for different models and their accuracy\n\nThe additive model assumes that the effects of each species will accumulate, and is the combined effect is the sum of effects, calculated as\n\n$$\nEffect_{(1...n)}=Effect_{1}+...+Effect_{n}\n$$\n\nThe mean model assumes the combined effect will be an average of the two single species effects and is calculated as\n\n$$\nEffect_{(1...n)}=\u00a0\\frac{Effect_{1}+...+Effect_{n}}{n}\n$$\n\nThe OD-weighted mean model weighs the mean of effects by the affecting species\u2019 maximum OD600 in the growth curves experiment and is calculated as\n\n$$\nEffect_{(1...n)}=\u00a0\\frac{Effect_{1}\u2217max_{OD_{600}1}+...+Effect_{n}\u2217max_{OD_{600}n}}{max_{OD_{600}1}+...+\u2217max_{OD_{600}n}}\n$$\n\nThe strongest effect model assumes that whichever species had a stronger effect on its own will determine the joint effect when paired with an additional species. It is calculated as\n\n$$\nEffect_{1\u2026n}=argmax\u00a0|E|E\\in[Effect_{1},\u2026,\u00a0Effect_{n}]\n$$\n\nreturning the effect with the largest absolute value (e.g., if two single species\u2019 effects are \u20133 and +1, the model will predict that their joint effect is \u20133).\n\nRoot mean square error measuring the accuracy of each model was normalized to the interquartile range for each dataset. Normalized root mean square error median and interquartile ranges were calculated via bootstrapping. The dataset from each focal was sampled 1000 times with replacement. Sampling was done for individual effect measurements (specific wells), and median effect sizes for species, pairs, and trios were recalculated from these sampled datasets. The sampled datasets from each focal were assembled into 'full' datasets (containing all focals) from which nRMSEs were calculated. The median and interquartile range of the normalized root mean square errors were calculated from the 1000 sampled datasets' values.\n",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "c1af20e7-e4a6-4d10-b189-56c69c270c23",
+      "submission_id": "8c4c1552-178b-48d2-a5a4-ed9916354340",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83398.sa0](https://doi.org/10.7554/eLife.83398.sa0)\n\nThis important study presents an interesting example of how complexities of communities may be reduced by showing that when partner species exert a negative effect on the focal species, the joint effects are generally not additive, but rather dominated by the strongest single effect. The evidence, enabled by thousands of measurements using nanodroplet-based microfluidics, is compelling, although the generality of the conclusion awaits further studies. This paper is of interest to microbial ecologists and synthetic biologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wenying Shou, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83398.sa1](https://doi.org/10.7554/eLife.83398.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Interactions between culturable bacteria are highly non-additive\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Meredith Schuman as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alvaro Sanchez (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Revise the text with a softer tone. For example, the generality of the conclusions is unknown since the 6 focal species were from 1 family, and since the conclusion only works for a subset of focal species, etc. Please see specific comments especially from Reviewers 2 and 3 about revising the claims.\n\n2) Provide a more rigorous analysis of the fluorescence assay. Exactly what is this assay measuring? How might the correlation between growth/biomass and fluorescence be affected by death, diauxic shift, or prolonged lag / stationary phases? See comments to the authors from Reviewer 3.\n\nReviewer #1 (Recommendations for the authors):\n\nMy only suggestions are on writing. Certain key aspects of experiments can be outlined in the main text. For example, when pairs were introduced, did the inoculum for each strain get halved? Figure 3A graphic is unclear, and can be made much clearer by plotting mono effects and predicted coeffects under the three models.\n\nReviewer #2 (Recommendations for the authors):\n\nFigure 3: (A) I think this panel could be made clearer. What does the green bar represent? It is not explicitly clarified in the caption. I think it depicts the growth of the green \"test\" bacteria? Maybe clarifying this in the caption would help. Also, why not add the equation representing the interaction?\n\nFigure 3: (B). The data points are so tiny it is difficult to see them. Maybe using larger dots (I understand there are a lot of them, though. I wonder if there is a clearer way to plot this data). Also the color choice is not the friendlies to color-challenged readers like this reviewer. I had trouble in particular distinguishing the pairs when one species had a positive while the other one had a negative effect from those that were both negative.\n\nLines 167-169: The authors introduce the \"mean effect model\". What is the theoretical justification for including this model in the analysis? I mean, in terms of ecological theory? The additive model is justified e.g. in that it is the typical assumption in Lotka-Volterra (and also considered in the antibiotic combination literature cited in the paper). But how about the mean model? It would help if the authors explained/justified the theoretical basis for this. Otherwise it feels a bit random, they could have taken the median, or the square root of the variance, or\u2026\n\nLines 221-224: The authors write: \"We further explored this model by basing trios' data not on the additive, mean, or strongest values of the effects of individual species, but on those of the joint effects of the three pairs comprising each trio (the effects of single species and pairs were measured independently again in this experiment, see Materials and methods, Figure S1).\" I have read this sentence five times and I am still not sure what the authors meant\n\nLines 296-300. The authors may want to more explicitly bring up in their discussion that the predictive ability of the \"Dominance\", strongest-species model, is significantly worse when they try to predict the effect of a trio than when they try to predict the effect of a pair. This would suggest some caution in the reach of their conclusions, as it is possible that the predictive power of a single species will get worse and worse as the diversity of the community increases. Which, by the way, would not be surprising I think and should not be held against their findings, but I still think it would be good to qualify their statements about the potential reach of their conclusions for the bottom-up prediction of population-level interactions in complex communities. While they do state that \"further work is needed\u2026\" to figure out if they results hold in more diverse communities (Lines 294-96) I felt that the limitations of the study could be written in a sharper manner.\n\nFinally: I was curious if the authors have considered a model where one of the species is dominant in a pair, but the one that dominates is not necessarily the one with the strongest effect? For instance, is it possible that when A is grown with either B alone or C alone, the suppression of growth from B is stronger than the suppression of growth from C. Yet, in the presence of both B and C, the suppression of growth is exactly the same as that by C (or just closer to C than B)? Do the authors see this in any of their pairs? If so, how many?\n\nReviewer #3 (Recommendations for the authors):\n\nThe metric of growth for the focal species was fluorescence. This can be a risky measurement, because other species could autofluoresce in the emission spectrum. Additionally, fluorescent proteins can continue to fluoresce after cell death and lysis (we have personally observed this after phage infection and antibiotic treatment). I think the paper could use a test to verify that fluorescence was an unbiased proxy for growth.\n\nI am confused by the densities that the species start at. In the methods, it says the focal and affecting species had starter cultures that were 2-fold different in concentration, yet were mixed 1:1, and ended up with a 1:1 ratio. How is this possible? Supp Figure S1 did not help me understand this.\n\nIt was surprising to me that inoculation density had no effects. This makes me wonder whether the interactions observed in this study are dominated by primary metabolic competition, because density effects are very common when allelopathy occurs. If this is true, it restricts the generality of the results, and is worth being discussed. Related to this, antibiotic resistance was measured, but what about potential to secrete antibiotics?\n\nI think the density effects should be measured with nRMSE, or even absolute difference from y=x, because there could be a strong correlation without the actual numbers being the same sign or magnitude. For example, in S11-B, most of the datapoints appear below y=x, until the effects are near zero, suggesting an effect-size-specific effect of density.\n\nMore discussion could be given on what a \"meaningful\" difference in nRMSE is.\n\nMore details on how the resampling during the bootstrap procedure was done is warranted.\n\nIt isn't clear to me how Figure 1C is supposed to show that different models were used-perhaps drop this and just leave this explanation for Figure 3A, which is very clear.\n\nSuggestion for additional analysis using the trait data: this dataset seems perfect for using something like a random forest or other continuous-response, \"open box\" machine learning approach to agnostically ask whether the trait measurements can be used to predict effect when all the measurements are used, rather than summaries of the measurements in the distance metrics.\n",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "298730af-3c78-4f07-bcb5-b7968e8ddac6",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C1",
+      "claim": "A library of 61 soil and leaf-associated bacterial strains was used in this experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "A library of 61 soil and leaf-associated bacterial strains was used in this experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1A explicitly state the number and source of bacterial strains used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "545147eb-d1a3-424b-83cf-e8f7460e0a80",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C2",
+      "claim": "All strains are from four orders: Proteobacteria (orange), Firmicutes (blue), Bacteroidetes (purple), and Actinobacteria (green).",
+      "claim_type": "EXPLICIT",
+      "source": "All strains are from four orders: Proteobacteria (orange), Firmicutes (blue), Bacteroidetes (purple), and Actinobacteria (green) (full list in Supplementary file 1a, Source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1A describe the phylogenetic composition of the strain library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "7deb6407-e997-4487-ba7c-8c83ecdc510c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C3",
+      "claim": "Six of the 61 species were labeled with GFP and used as 'focal' species.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, 6 of the 61 species were labeled with GFP and used as 'focal' species whose growth was tested in the presence of the other isolates (affecting species).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1A explicitly describe the focal species labeling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "de3ab4d6-e1f0-4590-a232-b7673dd8888c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C4",
+      "claim": "The focal species include Escherichia coli [EC], Ewingella americana [EA], Raoultella planticola [RP], Buttiauxella izardii [BI], Citrobacter freundii [CF], and Pantoea agglomerans [PA].",
+      "claim_type": "EXPLICIT",
+      "source": "These strains are labeled on the phylogenetic tree (Escherichia coli [EC], Ewingella americana [EA], Raoultella planticola [RP], Buttiauxella izardii [BI], Citrobacter freundii [CF], and Pantoea agglomerans [PA].)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1A explicitly list the focal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "31a9475e-9e31-43e7-a28a-e6eace2d957d",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C5",
+      "claim": "Each focal species was grown in monoculture, with between 18 and 52 single affecting species.",
+      "claim_type": "EXPLICIT",
+      "source": "Each focal species was grown in monoculture, with (between 18 and 52) single affecting species, and (between 153 and 1464) pairs of affecting species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1B describe the experimental design for single affecting species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "5d0151cb-3241-4768-ba68-ae62bf170429",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C6",
+      "claim": "Each focal species was grown with between 153 and 1464 pairs of affecting species.",
+      "claim_type": "EXPLICIT",
+      "source": "Each focal species was grown in monoculture, with (between 18 and 52) single affecting species, and (between 153 and 1464) pairs of affecting species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1B describe the experimental design for pairs of affecting species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "25a5caf2-5e2b-477a-adb3-b7f6955924df",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C7",
+      "claim": "E. coli was grown with 3009 trios of affecting species.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, E. coli was grown with 3009 trios of affecting species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1B describe the experimental design for trios of affecting species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "96de6c34-6233-4bf7-aa71-e28ff7db7612",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C8",
+      "claim": "Effects of pairs and trios were predicted using three different models: additive, mean, and strongest.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects of pairs and trios were then predicted using the effects of single species and single species and pairs, respectively. Predictions were made using three different models: additive, mean, and strongest (detailed in 'Results' and 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and Figure 1C describe the modeling approach used for predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "72090d9f-1689-41c7-b0c5-3cd3cb3c2481",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C10",
+      "claim": "Bacteria play important roles from driving biogeochemical cycles at the ecosystem level to supporting host health at the individual level.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to naturally playing important roles from driving biogeochemical cycles at the ecosystem level (Cavicchioli et al., 2019; Arrigo, 2005; Falkowski et al., 2008) to supporting host health at the individual level (Berendsen et al., 2012; Manor et al., 2020; Gilbert et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting these roles of bacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "4de12b0e-5d8c-49c9-b8e5-b2f9f8be12fb",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C11",
+      "claim": "Bacteria have been harnessed for biotechnological applications across industries such as food preservation, plant and animal health, biocontrol of pathogens, decomposition of toxic compounds, and production of valuable compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "bacteria have also been harnessed for countless biotechnological applications across industries such as food preservation (Motarjemi, 2002), plant and animal health (Berendsen et al., 2012; J\u00fanior et al., 2021), biocontrol of pathogens (K\u00f6hl et al., 2019), as well as decomposition of toxic compounds, and production of valuable ones (Varjani et al., 2017; Ro et al., 2006; Fang and Smith, 2016; Mainka et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting these biotechnological applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "b811a104-5aa5-481c-8b34-3d88800817f6",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C12",
+      "claim": "Understanding how microbial communities organize has proven difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "In natural environments, bacteria often form rich and complex communities, but understanding how these communities organize has proven difficult (Widder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this challenge.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "05b87b91-19a5-4dbf-84b8-65e81ac7c2fc",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C13",
+      "claim": "The structure of microbial communities is determined by the interactions between the involved species.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of microbial communities is determined by the interactions between the involved species (Konopka et al., 2015; Barbier et al., 2018; Qian and Ak\u00e7ay, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "ae7e94b7-a163-4ead-ab87-807eb4e78e15",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C14",
+      "claim": "Much effort has been put into measuring pairwise interactions of different species from, and in, different environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, much effort has been put into measuring pairwise interactions of different species from, and in, different environments (Foster and Bell, 2012; Vetsigian et al., 2011; Kehe et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting this research effort.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "04da279b-f9cc-478d-bcd9-9fd64e0441db",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C15",
+      "claim": "It is unclear to what extent the joint effects of multiple species on a focal species can be inferred from pairwise measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "But it is still unclear to what extent the joint effects of multiple species on a focal species of interest (e.g., a pathogen) can be inferred from pairwise measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "ac2f6296-2c4b-4dc8-8f15-33e745b2b17c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C16",
+      "claim": "Inference of joint effects from pairwise measurements may be challenging due to the presence of indirect interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such inference may be challenging due to the presence of indirect interactions: the affecting species may alter each other's abundances (termed interaction chains) or may modify each other's effect on the focal species (termed interaction modification, or higher-order interactions) (Sanchez, 2019; Wootton, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references explaining the theoretical challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "0aaf05e0-5333-4fbe-bf7d-d3fe2eb580b9",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C17",
+      "claim": "Empirical studies in recent years have shown conflicting results regarding the importance of higher order interactions and indirect effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a strong theoretical foundation, empirical studies in recent years have shown conflicting results regarding the importance of higher order interactions and indirect effects (Levine et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "e54fa2da-376e-4485-8f53-3fff9175af8e",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C18",
+      "claim": "Clear evidence of higher-order interactions has been found for some functions, such as degradation of complex molecules and antibiotic production.",
+      "claim_type": "EXPLICIT",
+      "source": "For some functions, such as degradation of complex molecules (Sanchez-Gorostiaga et al., 2019; Gralka et al., 2020) and antibiotic production (Tyc et al., 2014; Qi et al., 2021; Westhoff et al., 2021), clear evidence of such interactions has been found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "a415d990-7ce6-4d11-84da-eaece78c0e5b",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C19",
+      "claim": "The presence or absence of an additional species has been shown to affect interactions and the outcome of invasion and coexistence in some systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in both empirical and theoretical studies, the presence or absence of an additional species has been shown to affect interactions, and even the outcome of invasion and coexistence in some systems (Mickalide and Kuehn, 2019; Chang et al., 2022; Hsu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "60525f88-a04a-4e4f-8803-f05cc87bdee8",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C20",
+      "claim": "Commonly used ecological models (i.e., generalized Lotka-Voltera) do not properly capture microbial community interactions, partially due to the nature of these interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional theoretical work has shown that commonly used ecological models (i.e., generalized Lotka-Voltera) do not properly capture microbial community interactions, partially due to the nature of these interactions (chemically mediated as opposed to predator-prey) (Momeni et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference supporting this theoretical limitation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "5cb75aaf-0ace-4b76-86c5-49810f138c6d",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C21",
+      "claim": "Other studies have shown that both structures of, and interactions within, larger communities can be accurately predicted from pairwise interactions alone using variations of ecological models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies have shown that both structures of, and interactions within, larger communities can be accurately predicted from pairwise interactions alone using variations of said models (Friedman et al., 2017; Meroz et al., 2021; Guo and Boedicker, 2016; Venturelli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "3999eeb7-e7bb-4183-a6be-2afef824328a",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C22",
+      "claim": "How microbial interactions combine into the joint effect of multiple species on a single species of interest is still poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "This being the case, how microbial interactions combine into the joint effect of multiple species on a single species of interest is still poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "62ebd4bf-e7b7-48c5-9cbf-af82032cbd5d",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C23",
+      "claim": "High-throughput nanodroplet-based microfluidics was used to measure over 14,000 bacterial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "In our research, we used high-throughput nanodroplet-based microfluidics to measure over 14,000 bacterial communities composed of subsets of a library of 61 soil and leaf isolates of which six were fluorescently labeled (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental method and scale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "7c5d90a5-66e6-48eb-9be1-9359e97d4e66",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C24",
+      "claim": "The effects of multiple species are dominated by the strongest single-species effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the effect of individual species and the joint effects of species pairs and trios on the growth of six focal bacterial species and found that the effects of multiple species are dominated by the strongest single-species effect, and specifically that negative effects combine non-additively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "c9ddf7e9-0975-4adf-b24a-592a7c31e6ed",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C25",
+      "claim": "Negative effects combine non-additively.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the effect of individual species and the joint effects of species pairs and trios on the growth of six focal bacterial species and found that the effects of multiple species are dominated by the strongest single-species effect, and specifically that negative effects combine non-additively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "67e281f1-ef50-44f5-814b-fe588d5be059",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C26",
+      "claim": "The 61 affecting species included soil and leaf isolates as well as lab strains representing 19 genera from four phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "The 61 affecting species included soil and leaf isolates as well as lab strains representing 19 genera from four phyla: Proteobacteria (n = 14), Firmicutes (n = 2), Bacteroidetes (n = 2), and Actinobacteria (n = 1) (full list in Supplementary file 1, Source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the composition of the strain library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "b6734551-2e29-48e1-b2b0-10b6db1c0ef4",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C27",
+      "claim": "The focal species were a subset of six species that were transformed to constitutively express a fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The focal species were a subset of six of these species (all proteobacteria) that were transformed to constitutively express a fluorescent protein: (Escherichia coli [EC], Ewingella americana [EA], Raoultella planticola [RP], Buttiauxella izardii [BI], Citrobacter freundii [CF], and Pantoea agglomerans [PA]) (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the focal species and their labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "5b31e3a5-f0cf-4e30-a4e5-cc8dbe3a4a4c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C28",
+      "claim": "Except for EC, which is a lab strain (E. coli K-12 substr. MG1655), all focals were isolated from soil samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for EC, which is a lab strain (E. coli K-12 substr. MG1655), all focals were isolated from soil samples (Kehe et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the origin of the focal species.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "4f629bcf-029f-4cfe-8dbb-a7bc6a07032b",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C29",
+      "claim": "Each species was characterized phylogenetically by performing Sanger sequencing of their 16S ribosomal RNA gene.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we characterized each species phylogenetically by performing Sanger sequencing of their 16S ribosomal RNA gene and phenotypically by growing each species on each of 20 different carbon sources and 11 antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the phylogenetic characterization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "292aacb3-c08b-44ee-9731-cc34e82fb2c9",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C30",
+      "claim": "Each species was characterized phenotypically by growing each species on each of 20 different carbon sources and 11 antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we characterized each species phylogenetically by performing Sanger sequencing of their 16S ribosomal RNA gene and phenotypically by growing each species on each of 20 different carbon sources and 11 antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the phenotypic characterization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "67a05b94-5c54-4d54-923b-74d3d3dd2aa1",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C31",
+      "claim": "The species showed large variability in carbon utilization profiles with no species growing well on all carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "The species showed large variability in carbon utilization profiles with no species growing well on all carbon sources (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the carbon utilization results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "5b64075c-ee43-4e7a-b502-04a3b0ede256",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C32",
+      "claim": "There was high variability in growth on antibiotics with 15 species showing little or no growth on any antibiotics, while 16 species showed resistance to at least seven antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also high variability in growth on antibiotics with 15 species showing little or no growth on any antibiotics, while 16 species showed resistance to at least seven antibiotics (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the antibiotic resistance results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "952ce629-69dc-4c90-9ce9-cd70acfdffb1",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C33",
+      "claim": "The interaction assays were performed in the kChip microfluidics device.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed the interaction assays in the kChip microfluidics device (Kulesa et al., 2018; Kehe et al., 2019), allowing for extensive screening in parallel (see 'Materials and methods,' Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental platform used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "cd4da999-84de-4955-aa00-d408f1a6a1cf",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C34",
+      "claim": "The effects of 243 single species were measured (18\u201352 for each of the six focal species).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the effects of 243 single species (18\u201352 for each of the six focal species), the joint effects of 5357 species pairs (between 153 and 1464 for each of the six focal species), and the joint effects of 3009 species trios (from a subset of 26 affecting species on one focal species).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the number of single-species effects measured.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "34bad65c-6860-495d-93b0-3e5dc160c2e5",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C35",
+      "claim": "The joint effects of 5357 species pairs were measured (between 153 and 1464 for each of the six focal species).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the effects of 243 single species (18\u201352 for each of the six focal species), the joint effects of 5357 species pairs (between 153 and 1464 for each of the six focal species), and the joint effects of 3009 species trios (from a subset of 26 affecting species on one focal species).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the number of pair effects measured.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "741c0153-8f8b-4aa2-93ae-5c9c7cc135f2",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C36",
+      "claim": "The joint effects of 3009 species trios were measured (from a subset of 26 affecting species on one focal species).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the effects of 243 single species (18\u201352 for each of the six focal species), the joint effects of 5357 species pairs (between 153 and 1464 for each of the six focal species), and the joint effects of 3009 species trios (from a subset of 26 affecting species on one focal species).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the number of trio effects measured.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "bc51944e-562b-489a-8a46-31d90f2e0994",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C37",
+      "claim": "Cultures were normalized and mixed after pre-growth, such that the starting densities in the kChip were approximately 1:1 for all species in wells containing two droplets and two affecting species.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultures were normalized and mixed after pre-growth, such that the starting densities in the kChip were approximately 1:1 for all species in wells containing two droplets and two affecting species, but ratios varied in three droplet wells (see 'Materials and methods,' Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental setup for initial densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "369863ed-2397-400e-928b-d0a421f0eee8",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C38",
+      "claim": "Interaction assays were carried out in minimal M9 media with 0.5% [w/v] glucose for 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction assays were carried out in minimal M9 media with 0.5% [w/v] glucose for 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "2f7002cf-825c-44e4-90d8-1d752c89be0d",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C39",
+      "claim": "The growth of the focal species was measured by fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth of the focal species was measured by fluorescence, and effects were calculated as the log ratio of growth in coculture to growth in monoculture (see 'Materials and methods,' Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the measurement method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "0f97ed4f-c94b-452d-aee0-3fd14b6d639a",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C40",
+      "claim": "Effects were calculated as the log ratio of growth in coculture to growth in monoculture.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth of the focal species was measured by fluorescence, and effects were calculated as the log ratio of growth in coculture to growth in monoculture (see 'Materials and methods,' Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the calculation method for effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "467f0217-1edd-43e0-93d2-aa849c0f2b45",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C41",
+      "claim": "Positive and negative effects are defined as a net increase or decrease in growth compared to the monoculture respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive and negative effects are defined as a net increase or decrease in growth compared to the monoculture respectively, while affecting species with no observable effect (see 'Materials and methods') were defined as neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines the terminology for effect types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "0bcfb812-a097-4333-adf1-9ffc9bbf9bb0",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C42",
+      "claim": "Individual effects covered a wide range (median = \u22120.15, interquartile range = 0.94).",
+      "claim_type": "EXPLICIT",
+      "source": "Individual effects covered a wide range (median = \u22120.15, interquartile range = 0.94) (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the distribution of individual effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "ca776909-3074-4505-bab9-7a554709aecb",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C43",
+      "claim": "Positive effects were common overall (32.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "and positive effects (the focal species reaching a higher density in the presence of an affecting species than in monoculture) were common overall (32.9%, Figure 2B), in line with previous studies (Kehe et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the prevalence of positive effects.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "f94f202b-9bac-48a2-8e7d-3998e9d7a2f9",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C44",
+      "claim": "The distribution of effects varied based on the focal species, with E. coli and B. izardii showing the most negative (\u20132.83) and positive (+0.43) median effects, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of effects varied based on the focal species, with E. coli and B. izardii showing the most negative (\u20132.83) and positive (+0.43) median effects, respectively (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the variation in effects across focal species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "ec2543ab-da87-4b60-a5a0-c13206b45134",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C45",
+      "claim": "No affecting species had strong effects across all focal species.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found no affecting species that had strong effects across all focal species (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the specificity of effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "49fc6554-7f4a-4fbd-85e8-a25e9b80a08a",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C46",
+      "claim": "The measured traits of individual species showed no consistent correlations with their effects on the focal species.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured traits of individual species showed no consistent correlations with their effects on the focal species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "f8cfd4c1-4bf7-4513-8011-97ea18e99597",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C47",
+      "claim": "The similarity of metabolic profile, resistance profile, or phylogeny between the focal and affecting species did not correlate strongly with the effect across focal species.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the similarity of metabolic profile, resistance profile, or phylogeny between the focal and affecting species did not correlate strongly with the effect across focal species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "a3913a7e-a97c-45f8-a666-1587c945982c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C48",
+      "claim": "Most correlations between traits and effects were not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these correlations were not statistically significant (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the statistical significance of correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "3e46ffcd-4027-45ee-9960-2ad476675177",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C49",
+      "claim": "Negative effects were significantly more prevalent in joint pair effects (77.1%) than in effects of individual species (60.5%) (p=1.3e-9, Fisher's exact test).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, negative effects were significantly more prevalent in joint pair effects (77.1%) than in effects of individual species (60.5%) (p=1.3e-9, Fisher's exact test) (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the statistical comparison of negative effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "87dc5800-ef07-4a8e-a50b-c482c1ac793b",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C50",
+      "claim": "The median effect on each focal was more negative by 0.28 on average for pairs compared to single species.",
+      "claim_type": "EXPLICIT",
+      "source": "The median effect on each focal was more negative by 0.28 on average, though the difference was not significant in all cases; additionally, focals with mostly positive single-species interactions showed a small increase in median effect (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the change in median effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "58ae4c76-cc16-49b2-a2a8-f604c509b960",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C51",
+      "claim": "The minimum and maximum effects for each focal species remained similar between single species and pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, the minimum and maximum effects for each focal species remained similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "2f6b08ab-f7d3-473a-aef7-24becb94161c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C52",
+      "claim": "Pairs' joint effects did not correlate well with species traits, with similarity between the two affecting species, or with their similarity to the focal species.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the single affecting species, pairs' joint effects did not correlate well with species traits, with similarity between the two affecting species, or with their similarity to the focal species (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the lack of correlation for pair effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "28f215bd-f92b-43b0-9df4-4411dfdbc240",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C53",
+      "claim": "It may be challenging to connect the effects of single and pairs of species on a focal strain to a specific trait of the involved strains using simple analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that it may be challenging to connect the effects of single and pairs of species on a focal strain to a specific trait of the involved strains using simple analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "5f978a3f-1348-42e5-8e7f-6be29e3addb8",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C54",
+      "claim": "The strongest effect model best agrees with the measured effects across all species and interaction types.",
+      "claim_type": "EXPLICIT",
+      "source": "When measured across all species and interaction types, we found that the model that best agrees with the measured effects is the strongest effect model (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "ad9dabd0-28f5-45eb-96a1-2dfbef3525af",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C55",
+      "claim": "The strongest effect model was the most accurate overall (nRMSE = 0.46, 0.32, and 0.16 for the additive, mean, and strongest models, correspondingly).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest effect model was the most accurate overall (nRMSE = 0.46, 0.32, and 0.16 for the additive, mean, and strongest models, correspondingly)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative accuracy metrics for the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "f4078153-525f-42e9-8292-f9fceaa5baa6",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C56",
+      "claim": "The strongest effect model was considerably more accurate when both species affected the focal negatively (nRMSE = 0.65, 0.25, and 0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "and considerably more accurate when both species affected the focal negatively (nRMSE = 0.65, 0.25, and 0.16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative accuracy metrics for negative-negative interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "f29ceaec-2704-4d5c-96ee-7a0c8266386b",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C57",
+      "claim": "The additive model was slightly more accurate when one effect was negative and the other positive (nRMSE = 0.14, 0.43, and 0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "The additive model was slightly more accurate when one effect was negative and the other positive (nRMSE = 0.14, 0.43, and 0.16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative accuracy metrics for mixed interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "8d5b2511-ecc5-4f6f-bca3-7206803b00ed",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C58",
+      "claim": "Predictions when both effects were positive were less accurate, but the strongest model gave the most accurate predictions (nRMSE = 0.81, 0.78, and 0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, predictions when both effects were positive were less accurate, but here too the strongest model gave the most accurate predictions (nRMSE = 0.81, 0.78, and 0.69) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure provide quantitative accuracy metrics for positive-positive interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "65f81038-965f-4296-8779-58df85f0ac83",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C59",
+      "claim": "When both single-species effects were negative, the mean model was prone to underestimating the combined effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of errors further supported the strongest effect model (Figure 3B, Figure 3\u2014figure supplement 3B): When both single-species effects were negative, the mean model was prone to underestimating the combined effect due to the reduction of the stronger effect by taking into account the weaker effect",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the error patterns for the mean model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "ac7e1432-a0c2-407b-b9a0-32f7e61598d2",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C60",
+      "claim": "When both single-species effects were negative, the additive model overestimated effects due to the addition of the weaker effect to the stronger effect.",
+      "claim_type": "EXPLICIT",
+      "source": "while contrastingly, the additive model overestimated effects due to the addition of the weaker effect to the stronger effect, which was more accurate on its own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the error patterns for the additive model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "24b49361-1503-4807-b6f4-18ba7b7a70a2",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C61",
+      "claim": "When effects are close to equal, the mean model is fairly accurate while the additive model does particularly poorly.",
+      "claim_type": "EXPLICIT",
+      "source": "When effects are close to equal, the mean model is fairly accurate while the additive model does particularly poorly as these effects would be calculated as twice the strongest effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how effect size differences influence model accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "e1149b4f-aa1c-425c-a2e6-87dc418fbfcf",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C62",
+      "claim": "When one effect is much stronger than the other, the additive model is accurate since the addition of the weak effect is negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastly, when one effect is much stronger than the other, the additive model is accurate since the addition of the weak effect is negligible, whereas the mean model underestimates the joint effects by taking into account the weaker effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how effect size differences influence model accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "9951cdd1-bae9-41fb-94e3-042a2438a082",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C63",
+      "claim": "Effects were stronger (more negative) in trios than in pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed in the move from single species to pairs, effects were stronger (in this case more negative effects) in trios than in the pairs (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the comparison of trio and pair effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "7066ff6d-e7fa-4a5e-8eaa-6f8cbe142b71",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C64",
+      "claim": "The strongest effect model was more accurate than the additive and mean models for trios (nRMSE = 2.65, 1.23, and 0.63 for the additive, mean, and strongest models, correspondingly).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as with joint pairs' effects, the strongest effect model was more accurate than the additive and mean models (nRMSE = 2.65, 1.23, and 0.63 for the additive, mean, and strongest models, correspondingly)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative accuracy metrics for trio predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "3c641fea-15f9-4b4a-a39c-550914b81d16",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C65",
+      "claim": "Similar distributions of error were seen in trios as in pairs, but further exaggerated with more extreme under and overestimation of the combined trios' effects by the mean and additive models, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar distributions of error were seen as in the pairs' effects, but further exaggerated with the more extreme under and overestimation of the combined trios' effects by the mean and additive models, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the error patterns for trio predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "f05342e0-6e3c-4faf-bbbe-4aa9858944dc",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C66",
+      "claim": "The move to pairs-based predictions improved the accuracy for both the mean and strongest model.",
+      "claim_type": "EXPLICIT",
+      "source": "The move to pairs-based predictions improved the accuracy for both the mean and strongest model, while further pushing the additive predictions away from the observed effects (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the improvement in predictions using pair data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "ba6a3cca-8960-40de-8375-898284ef7a28",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C67",
+      "claim": "Even in the presence of additional species the strongest single-species effect still dominates the combined effect of a community.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that even in the presence of additional species the strongest single-species effect still dominates the combined effect of a community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation of the trio results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "08342d9e-5390-4b32-9fea-ac63b4a6e373",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C68",
+      "claim": "The strongest effect model is in stark contrast to models often used in antibiotic compound combinations, where additivity is often the default model.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to models often used in antibiotic compound combinations, despite most effects being negative, where additivity is often the default model (Bollenbach, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference and compares the findings to antibiotic combination studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "7542313e-fbdf-41cd-8bb8-b7067a3f6f4e",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C69",
+      "claim": "The additive model performed well for mixed effects (i.e., one negative and one positive), but only slightly better than the strongest model.",
+      "claim_type": "EXPLICIT",
+      "source": "The additive model performed well for mixed effects (i.e., one negative and one positive), but only slightly better than the strongest model, and poorly when both species had effects of the same sign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the performance of the additive model for different interaction types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "fa87a238-8c1a-431e-a4de-b59769b2574c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C70",
+      "claim": "The additive model's accuracy for mixed effects may indicate that negative and positive effects act independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The additive model's accuracy for mixed effects may indicate that negative and positive effects act independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this interpretation of the additive model's performance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "98dc21f3-45b6-4e04-baa2-f9d38860d223",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C71",
+      "claim": "The mechanistic basis underlying the joint effects of multiple species is still unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanistic basis underlying the joint effects of multiple species is still unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "dd4d2d61-2103-42c0-81a5-1295c101b889",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C72",
+      "claim": "The affecting species' growth rate did not correlate well with their effect on some focal species.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this explanation is not consistent with the fact that the affecting species' growth rate did not correlate well with their effect on some focal species (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the lack of correlation between growth rate and effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "2b218dd9-2380-4ba5-8132-2036677a528f",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C73",
+      "claim": "Almost no single species or pairs had a strong effect across all focals.",
+      "claim_type": "EXPLICIT",
+      "source": "but this does not coincide with the fact that we observed almost no single species or pairs with a strong effect across all focals (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript text and figure describe the specificity of strong effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "396f29ce-a206-4581-8c75-29ee69426c88",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C74",
+      "claim": "The abundance of all species in each community was not measured (only the focal).",
+      "claim_type": "EXPLICIT",
+      "source": "As we did not measure the abundance of all species in each community (only the focal), we cannot disentangle interaction modification (changes in per capita effect of specific species), from interaction chains (affecting the amount of an affecting species, and as such its effect on the focal)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "8d62f730-ecca-4fc0-a56a-d2e8b2f86993",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C75",
+      "claim": "Further work is needed to pinpoint the exact mechanism(s) leading to the dominance of the strongest model for negative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "and further work is needed in order to pinpoint the exact mechanism(s) leading to the dominance of the strongest model for negative effects in our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "13967c6e-41e7-4407-8774-b68fff45c386",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C76",
+      "claim": "It is possible that the manner in which effects combine is affected by the mechanism of interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that it is possible that the manner in which effects combine is affected by the mechanism of interaction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this possibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "f9042f5c-21b0-4909-a977-8c393a95585f",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C77",
+      "claim": "Previous studies have shown that interference competition can combine additively, or even synergistically.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, previous studies have shown that interference competition can combine additively, or even synergistically, results not seen in our work (Tyc et al., 2014; Westhoff et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references describing different combination patterns for interference competition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "18a6e9b4-383f-439c-b7f1-fe2861b1de60",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C78",
+      "claim": "When we want to affect a single focal species in a given environment, introducing the species with the strongest effect on the focal would be sufficient to obtain the desired effect, as synergies were rare in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that when we want to affect a single focal species in a given environment (e.g., for biocontrol of a pathogen), introducing the species with the strongest effect on the focal would be sufficient to obtain the desired effect, as synergies were rare in our dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this practical implication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "c8ab5c0e-f6a4-4058-ae24-1859d1ed33bb",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C79",
+      "claim": "In cases where there are multiple strains of interest, introducing multiple species may be beneficial since different affecting species typically have strong effects on different focals.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where there are multiple strains of interest (e.g., probiotics), introducing multiple species may be beneficial since different affecting species typically have strong effects on different focals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this practical implication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "0d20d9b9-e088-41f9-b6a2-026dbd1659e8",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C80",
+      "claim": "Introducing combinations of species may allow for a more robust function as the chances that one member of the community will have a strong effect on a resident species of interest is more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing combinations of species may allow for a more robust function as the chances that one member of the community will have a strong effect on a resident species of interest is more likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this practical implication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "3e68653d-85cf-45d2-82fa-213da2437d77",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C81",
+      "claim": "Further work is needed to see to what extent the findings continue to hold up in more diverse communities, other taxonomic groups, and more complex environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Further work is needed in order to deepen our understanding of how multiple species affect each other and to see to what extent our findings continue to hold up in more diverse communities, other taxonomic groups, and more complex environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "e32df05c-1120-4e6d-b702-6cca7ba519b5",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C82",
+      "claim": "Nearly all of the effects in the four member communities were negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, nearly all of the effects in the four member communities were negative, and it is unclear how mixed and positive effect modeling is affected by higher diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation about four-member communities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "c0611f62-5e02-4fd8-b062-66740a6733f6",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C83",
+      "claim": "The focal species are all from the same order (Enterobacterales), which may limit the purview of the findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, it is important to note that our focal species are all from the same order (Enterobacterales), which may also limit the purview of our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "767c4c4e-7232-47e0-8ee1-fbd30a6f1d4b",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C84",
+      "claim": "Community effects can be predicted from the strongest effect of a single species, greatly reducing the amount of information required to obtain accurate estimations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our results suggest that community effects can be predicted from the strongest effect of a single species, greatly reducing the amount of information required to obtain accurate estimations, which can improve our ability to use a bottom-up approach for biotechnological applications, as well as answering fundamental ecology questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this main conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "6fd93ea4-1a37-4483-a24f-b5dbde339107",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C85",
+      "claim": "Soil and leaf samples were collected from various locations in the Faculty of Agriculture in Rehovot, Israel, on multiple dates.",
+      "claim_type": "EXPLICIT",
+      "source": "Soil (50 ml of soil, taken from a depth of ~30 cm) and leaf samples (multiple leaves from a single plant combined into a sterile 50 ml tube) were collected from various locations in the Faculty of Agriculture in Rehovot, Israel, on multiple dates (See Source data 1 file for more information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sample collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "802ab665-9dce-4730-b54c-5f54c3a95849",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C86",
+      "claim": "Each sample was diluted in phosphate-buffered saline (PBS) directly after collection and vortexed for 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Each sample was diluted in phosphate-buffered saline (PBS) directly after collection (1 g of soil or one leaf in 10 ml of PBS) and vortexed for 5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sample processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "2ad2d7bc-8321-4161-b6e1-b273511690b9",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C87",
+      "claim": "Isolates were selected on the basis of multiple criteria: growth of transferred colony in NB liquid medium (30\u00b0C), frozen glycerol stock revival in NB (OD600 > 0.1) (30\u00b0C), and subsequent growth on M9 minimal media + 1% (w/v) glucose (OD600 > 0.1) (30\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Strains were selected on the basis of multiple criteria: growth of transferred colony in NB liquid medium (30\u00b0C), frozen glycerol stock revival in NB (OD600 > 0.1) (30\u00b0C), and subsequent growth on M9 minimal media + 1% (w/v) glucose (OD600 > 0.1) (30\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the strain selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "83310bea-77fe-49a4-8cf9-fe92ac020427",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C88",
+      "claim": "The full 16S gene sequences (~1500 base pairs) were obtained via Sanger sequencing and classified with a combination of RDP Classifier and BLAST.",
+      "claim_type": "EXPLICIT",
+      "source": "The full 16S gene sequences (~1500 base pairs) were obtained via Sanger sequencing and classified with a combination of RDP Classifier (Cole et al., 2014) and BLAST (Altschul et al., 1990) (list of strains in Supplementary file 1, full phylogenetic data in Source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sequencing and classification methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "3bfd6c2d-14a5-46b8-b287-689f6b0d063c",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C89",
+      "claim": "Phylogenetic distance was calculated in Geneious Prime software using MUSCLE alignment and the UPGMA method with a HKY genetic distance model.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic distance was calculated in Geneious Prime software (version 2022.2.1, Biomatters Ltd). Sequences were aligned using MUSCLE alignment. Phylogenetic tree was built using the UPGMA method with no outgroup and a HKY genetic distance model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the phylogenetic analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "15fdda93-1645-477e-b91b-56abafcfb11e",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C90",
+      "claim": "Focal species were transformed with commercially available plasmid pMRE132 containing GFP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Focal species were transformed with commercially available plasmid pMRE132 containing GFP2 by Kehe et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the transformation method and cites the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "110337b4-eb85-4649-b42d-93be9576a352",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C91",
+      "claim": "All communities with less than three replicates were not used in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "All communities with less than three replicates were not used in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "1f1746e3-39db-4007-ad1c-bc08963e955e",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C92",
+      "claim": "Isolates were only used with focals whose monocultures were at least five times larger than the isolates autofluorescence signal, allowing to measure effects of at least \u20131.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, isolates were only used with focals whose monocultures were at least five times larger than the isolates autofluorescence signal, allowing to measure effects of at least \u20131.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data filtering criteria for autofluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "a536dea2-9b64-4136-81af-f49ee8816035",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C93",
+      "claim": "Affecting species autofluorescence would weaken measured negative effects and would not systematically generate artifacts that support the strongest effect model.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, affecting species autofluorescence would weaken measured negative effects and would not systematically generate artifacts that support the strongest effect model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this consideration about potential artifacts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "5198456a-78d0-4be9-9cc4-59a80bf09f8e",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C94",
+      "claim": "Effects where the standard deviation was larger than the absolute value of the effect were classified as neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects where the standard deviation was larger than the absolute value of the effect were classified as neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the classification criteria for neutral effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "fbc73320-ddf7-4294-ac56-e6698a51e199",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C98",
+      "claim": "Root mean square error measuring the accuracy of each model was normalized to the interquartile range for each dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Root mean square error measuring the accuracy of each model was normalized to the interquartile range for each dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the accuracy metric used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "736dbd51-ccaf-42eb-a07e-50537f3dbbf9",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "claim_id": "C99",
+      "claim": "Normalized root mean square error median and interquartile ranges were calculated via bootstrapping with 1000 resampled datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalized root mean square error median and interquartile ranges were calculated via bootstrapping. The dataset from each focal was sampled 1000 times with replacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical method for calculating error metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c696adef-b8df-4979-92ac-8c5645bf84da",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors assembled and characterized a library of 61 bacterial strains from soil and leaf samples, representing four phyla. Six focal species were fluorescently labeled with GFP for tracking. The strains showed high variability in carbon utilization and antibiotic resistance profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C26-C32 describe the strain library composition, characterization methods, and phenotypic diversity. The phylogenetic and phenotypic profiling is well-documented with appropriate methods (16S sequencing, carbon source utilization, antibiotic resistance testing), and the data are presented in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors used high-throughput microfluidics (kChip) to measure over 14,000 bacterial communities, including effects of 243 single species, 5,357 pairs, and 3,009 trios on focal species growth. Growth was measured by fluorescence and effects calculated as log ratios of coculture to monoculture growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C23, C33-C41, and C85-C94 describe the experimental design, scale, and methodology. The microfluidics approach is well-established (cited references), sample sizes are clearly stated, and appropriate data filtering criteria are described. The use of fluorescence as a proxy for biomass is acknowledged with caveats and validated in an appendix.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "33d619b7-b7b9-45c6-895f-b1828842e8c9",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-species effects on focal species covered a wide range (median = -0.15, IQR = 0.94), with positive effects common (32.9%). Effect distributions varied by focal species, with E. coli showing the most negative median effect (-2.83) and B. izardii the most positive (+0.43). No affecting species had strong effects across all focal species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe the distribution and specificity of single-species effects. The data are presented with appropriate summary statistics and visualized in Figure 2. The finding that no species affects all focals strongly (C45) is supported by Figure 2\u2014figure supplement 1, demonstrating effect specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "0846d0de-0f1e-4da9-919b-942c6f3a4859",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Measured traits (metabolic profiles, antibiotic resistance, phylogeny) showed no consistent correlations with effects on focal species for either single species or pairs. Most correlations were not statistically significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 and C52 describe the lack of trait-effect correlations. Figure 3\u2014figure supplement 1 shows correlation analyses with most lacking statistical significance. This negative result is appropriately reported and suggests that simple trait-based predictions are insufficient, supporting claim C53.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "1d025e3f-dd90-4eb4-8c1b-1fea452fac3e",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Negative effects became more prevalent as community size increased: 60.5% for single species, 77.1% for pairs (p=1.3e-9), and even more negative for trios. Median effects shifted more negative by 0.28 on average for pairs, though minimum and maximum effects remained similar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 and C63 describe the shift toward more negative effects with increasing community size. Statistical testing (Fisher's exact test, Mann-Whitney-Wilcoxon) supports the significance of these shifts. The data are visualized in Figures 2 and 4, showing consistent trends across focal species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Three models (additive, mean, strongest) were tested to predict joint effects from single-species data. The strongest effect model was most accurate overall (nRMSE = 0.16) and particularly for negative-negative interactions (nRMSE = 0.16 vs. 0.65 for additive, 0.25 for mean). The additive model performed slightly better for mixed effects (nRMSE = 0.14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C54-C58, C98-C99 describe model comparisons with quantitative accuracy metrics. The bootstrapping approach (1000 resampled datasets) provides robust error estimates. Figure 3 clearly shows the strongest model's superior performance for negative-negative interactions, with appropriate stratification by interaction type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "3490b18e-1f38-4a84-b8de-0eb62171c124",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Error patterns revealed that for negative-negative interactions, the mean model underestimated effects by averaging in weaker effects, while the additive model overestimated by summing effects. Model accuracy depended on the difference in effect sizes between individual species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 explain the mechanistic basis for model performance differences. Figure 3\u2014figure supplement 3 shows error distributions and how effect size differences influence accuracy. The explanations are logically consistent with the mathematical formulations of each model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "a29bebbb-41e7-4595-9aaa-a2f158cc4fb2",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For trios, the strongest effect model remained most accurate (nRMSE = 0.63 vs. 2.65 for additive, 1.23 for mean). Using pair data instead of single-species data improved predictions for mean and strongest models. The strongest single-species effect dominated even in four-member communities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 extend the findings to larger communities. Figure 4 shows that the same patterns hold for trios, with even more pronounced differences between models. The improvement when using pair data (C66) demonstrates hierarchical predictability. However, the trio data is limited to E. coli with a subset of 26 species, which somewhat limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "72941034-471c-4778-bd48-d43efc39690d",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The main finding is that effects of multiple species are dominated by the strongest single-species effect, with negative effects combining non-additively. This contrasts with antibiotic combination studies where additivity is the default model. Community effects can be predicted from the strongest single-species effect, greatly reducing information requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25, C68-C69, and C84 represent the core conclusions. These are well-supported by the extensive experimental data (>14,000 communities) and quantitative model comparisons. The contrast with antibiotic studies (C68) is appropriately cited. The practical implication (C84) follows logically from the results, though generalizability is limited by the taxonomic scope (all focals from Enterobacterales).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mechanistic basis for the strongest effect model's success remains unclear. Several potential explanations (resource competition, saturation, hierarchical ranking) are inconsistent with the data. The authors did not measure all species abundances, preventing distinction between interaction modification and interaction chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C77 acknowledge limitations and uncertainties in mechanistic understanding. The authors appropriately rule out several hypotheses using their data (C72-C73) and acknowledge what cannot be determined without additional measurements (C74). This honest assessment of limitations strengthens the overall evaluation, though it leaves the mechanism as an open question requiring future work (C75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "9ecb9605-8168-4fb4-a0be-b22c4168b6d7",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "For practical applications, introducing the species with the strongest effect should be sufficient for biocontrol of a single pathogen, as synergies were rare. For multiple target species (e.g., probiotics), introducing multiple species may be beneficial since different affecting species have strong effects on different focals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 present practical implications based on the findings. These recommendations follow logically from the dominance of the strongest effect (C24) and the specificity of effects (C45). However, these are extrapolations to applied contexts that were not directly tested, and the rarity of synergies (C78) is stated but not quantitatively demonstrated in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "634b1bb6-f67d-4610-a893-09fa63a1154d",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors acknowledge important limitations: all focal species are from the same order (Enterobacterales), nearly all four-member community effects were negative, and it's unclear how findings extend to more diverse communities, other taxonomic groups, or complex environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 appropriately identify key limitations. The taxonomic restriction (C83) is a significant constraint on generalizability. The predominance of negative effects in larger communities (C82) limits conclusions about positive and mixed interactions at higher diversity. These honest assessments of scope are important for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    },
+    {
+      "id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac",
+      "content_id": "e859c87f-9b24-40d2-b4b1-37ac1e5f8177",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes that while bacteria play important ecological and biotechnological roles and community structure is determined by species interactions, there are conflicting results about whether joint effects of multiple species can be inferred from pairwise measurements due to potential higher-order interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C22 provide background context from the literature. These are appropriately cited claims establishing the knowledge gap and conflicting prior results. The citations appear relevant and the characterization of the field as having conflicting results (C17, C21) sets up the motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:18.075494Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "298730af-3c78-4f07-bcb5-b7968e8ddac6",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "545147eb-d1a3-424b-83cf-e8f7460e0a80",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "7deb6407-e997-4487-ba7c-8c83ecdc510c",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "de3ab4d6-e1f0-4590-a232-b7673dd8888c",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "67e281f1-ef50-44f5-814b-fe588d5be059",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "b6734551-2e29-48e1-b2b0-10b6db1c0ef4",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "5b31e3a5-f0cf-4e30-a4e5-cc8dbe3a4a4c",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "4f629bcf-029f-4cfe-8dbb-a7bc6a07032b",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "292aacb3-c08b-44ee-9731-cc34e82fb2c9",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "67a05b94-5c54-4d54-923b-74d3d3dd2aa1",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "5b64075c-ee43-4e7a-b502-04a3b0ede256",
+      "result_id": "c696adef-b8df-4979-92ac-8c5645bf84da"
+    },
+    {
+      "claim_id": "31a9475e-9e31-43e7-a28a-e6eace2d957d",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "5d0151cb-3241-4768-ba68-ae62bf170429",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "25a5caf2-5e2b-477a-adb3-b7f6955924df",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "62ebd4bf-e7b7-48c5-9cbf-af82032cbd5d",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "952ce629-69dc-4c90-9ce9-cd70acfdffb1",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "cd4da999-84de-4955-aa00-d408f1a6a1cf",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "34bad65c-6860-495d-93b0-3e5dc160c2e5",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "741c0153-8f8b-4aa2-93ae-5c9c7cc135f2",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "bc51944e-562b-489a-8a46-31d90f2e0994",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "369863ed-2397-400e-928b-d0a421f0eee8",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "2f7002cf-825c-44e4-90d8-1d752c89be0d",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "0f97ed4f-c94b-452d-aee0-3fd14b6d639a",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "467f0217-1edd-43e0-93d2-aa849c0f2b45",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "6fd93ea4-1a37-4483-a24f-b5dbde339107",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "802ab665-9dce-4730-b54c-5f54c3a95849",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "2ad2d7bc-8321-4161-b6e1-b273511690b9",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "83310bea-77fe-49a4-8cf9-fe92ac020427",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "3bfd6c2d-14a5-46b8-b287-689f6b0d063c",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "15fdda93-1645-477e-b91b-56abafcfb11e",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "110337b4-eb85-4649-b42d-93be9576a352",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "1f1746e3-39db-4007-ad1c-bc08963e955e",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "a536dea2-9b64-4136-81af-f49ee8816035",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "5198456a-78d0-4be9-9cc4-59a80bf09f8e",
+      "result_id": "2f5c4aed-d21a-4de0-9b65-33c19babdafc"
+    },
+    {
+      "claim_id": "0bcfb812-a097-4333-adf1-9ffc9bbf9bb0",
+      "result_id": "33d619b7-b7b9-45c6-895f-b1828842e8c9"
+    },
+    {
+      "claim_id": "ca776909-3074-4505-bab9-7a554709aecb",
+      "result_id": "33d619b7-b7b9-45c6-895f-b1828842e8c9"
+    },
+    {
+      "claim_id": "f94f202b-9bac-48a2-8e7d-3998e9d7a2f9",
+      "result_id": "33d619b7-b7b9-45c6-895f-b1828842e8c9"
+    },
+    {
+      "claim_id": "ec2543ab-da87-4b60-a5a0-c13206b45134",
+      "result_id": "33d619b7-b7b9-45c6-895f-b1828842e8c9"
+    },
+    {
+      "claim_id": "49fc6554-7f4a-4fbd-85e8-a25e9b80a08a",
+      "result_id": "0846d0de-0f1e-4da9-919b-942c6f3a4859"
+    },
+    {
+      "claim_id": "f8cfd4c1-4bf7-4513-8011-97ea18e99597",
+      "result_id": "0846d0de-0f1e-4da9-919b-942c6f3a4859"
+    },
+    {
+      "claim_id": "a3913a7e-a97c-45f8-a666-1587c945982c",
+      "result_id": "0846d0de-0f1e-4da9-919b-942c6f3a4859"
+    },
+    {
+      "claim_id": "2f6b08ab-f7d3-473a-aef7-24becb94161c",
+      "result_id": "0846d0de-0f1e-4da9-919b-942c6f3a4859"
+    },
+    {
+      "claim_id": "3e46ffcd-4027-45ee-9960-2ad476675177",
+      "result_id": "1d025e3f-dd90-4eb4-8c1b-1fea452fac3e"
+    },
+    {
+      "claim_id": "87dc5800-ef07-4a8e-a50b-c482c1ac793b",
+      "result_id": "1d025e3f-dd90-4eb4-8c1b-1fea452fac3e"
+    },
+    {
+      "claim_id": "58ae4c76-cc16-49b2-a2a8-f604c509b960",
+      "result_id": "1d025e3f-dd90-4eb4-8c1b-1fea452fac3e"
+    },
+    {
+      "claim_id": "9951cdd1-bae9-41fb-94e3-042a2438a082",
+      "result_id": "1d025e3f-dd90-4eb4-8c1b-1fea452fac3e"
+    },
+    {
+      "claim_id": "96de6c34-6233-4bf7-aa71-e28ff7db7612",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "5f978a3f-1348-42e5-8e7f-6be29e3addb8",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "ad9dabd0-28f5-45eb-96a1-2dfbef3525af",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "f4078153-525f-42e9-8292-f9fceaa5baa6",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "f29ceaec-2704-4d5c-96ee-7a0c8266386b",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "8d5b2511-ecc5-4f6f-bca3-7206803b00ed",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "fbc73320-ddf7-4294-ac56-e6698a51e199",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "736dbd51-ccaf-42eb-a07e-50537f3dbbf9",
+      "result_id": "d7eb1697-bd53-480f-a5da-4bad9300f8fb"
+    },
+    {
+      "claim_id": "65f81038-965f-4296-8779-58df85f0ac83",
+      "result_id": "3490b18e-1f38-4a84-b8de-0eb62171c124"
+    },
+    {
+      "claim_id": "ac7e1432-a0c2-407b-b9a0-32f7e61598d2",
+      "result_id": "3490b18e-1f38-4a84-b8de-0eb62171c124"
+    },
+    {
+      "claim_id": "24b49361-1503-4807-b6f4-18ba7b7a70a2",
+      "result_id": "3490b18e-1f38-4a84-b8de-0eb62171c124"
+    },
+    {
+      "claim_id": "e1149b4f-aa1c-425c-a2e6-87dc418fbfcf",
+      "result_id": "3490b18e-1f38-4a84-b8de-0eb62171c124"
+    },
+    {
+      "claim_id": "7066ff6d-e7fa-4a5e-8eaa-6f8cbe142b71",
+      "result_id": "a29bebbb-41e7-4595-9aaa-a2f158cc4fb2"
+    },
+    {
+      "claim_id": "3c641fea-15f9-4b4a-a39c-550914b81d16",
+      "result_id": "a29bebbb-41e7-4595-9aaa-a2f158cc4fb2"
+    },
+    {
+      "claim_id": "f05342e0-6e3c-4faf-bbbe-4aa9858944dc",
+      "result_id": "a29bebbb-41e7-4595-9aaa-a2f158cc4fb2"
+    },
+    {
+      "claim_id": "ba6a3cca-8960-40de-8375-898284ef7a28",
+      "result_id": "a29bebbb-41e7-4595-9aaa-a2f158cc4fb2"
+    },
+    {
+      "claim_id": "7c5d90a5-66e6-48eb-9be1-9359e97d4e66",
+      "result_id": "72941034-471c-4778-bd48-d43efc39690d"
+    },
+    {
+      "claim_id": "c9ddf7e9-0975-4adf-b24a-592a7c31e6ed",
+      "result_id": "72941034-471c-4778-bd48-d43efc39690d"
+    },
+    {
+      "claim_id": "08342d9e-5390-4b32-9fea-ac63b4a6e373",
+      "result_id": "72941034-471c-4778-bd48-d43efc39690d"
+    },
+    {
+      "claim_id": "7542313e-fbdf-41cd-8bb8-b7067a3f6f4e",
+      "result_id": "72941034-471c-4778-bd48-d43efc39690d"
+    },
+    {
+      "claim_id": "767c4c4e-7232-47e0-8ee1-fbd30a6f1d4b",
+      "result_id": "72941034-471c-4778-bd48-d43efc39690d"
+    },
+    {
+      "claim_id": "fa87a238-8c1a-431e-a4de-b59769b2574c",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "98dc21f3-45b6-4e04-baa2-f9d38860d223",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "dd4d2d61-2103-42c0-81a5-1295c101b889",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "2b218dd9-2380-4ba5-8132-2036677a528f",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "396f29ce-a206-4581-8c75-29ee69426c88",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "8d62f730-ecca-4fc0-a56a-d2e8b2f86993",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "13967c6e-41e7-4407-8774-b68fff45c386",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "f9042f5c-21b0-4909-a977-8c393a95585f",
+      "result_id": "c7c20dba-cd82-4a5c-9d53-f62b645bd5a4"
+    },
+    {
+      "claim_id": "18a6e9b4-383f-439c-b7f1-fe2861b1de60",
+      "result_id": "9ecb9605-8168-4fb4-a0be-b22c4168b6d7"
+    },
+    {
+      "claim_id": "c8ab5c0e-f6a4-4058-ae24-1859d1ed33bb",
+      "result_id": "9ecb9605-8168-4fb4-a0be-b22c4168b6d7"
+    },
+    {
+      "claim_id": "0d20d9b9-e088-41f9-b6a2-026dbd1659e8",
+      "result_id": "9ecb9605-8168-4fb4-a0be-b22c4168b6d7"
+    },
+    {
+      "claim_id": "3e68653d-85cf-45d2-82fa-213da2437d77",
+      "result_id": "634b1bb6-f67d-4610-a893-09fa63a1154d"
+    },
+    {
+      "claim_id": "e32df05c-1120-4e6d-b702-6cca7ba519b5",
+      "result_id": "634b1bb6-f67d-4610-a893-09fa63a1154d"
+    },
+    {
+      "claim_id": "c0611f62-5e02-4fd8-b062-66740a6733f6",
+      "result_id": "634b1bb6-f67d-4610-a893-09fa63a1154d"
+    },
+    {
+      "claim_id": "72090d9f-1689-41c7-b0c5-3cd3cb3c2481",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "4de12b0e-5d8c-49c9-b8e5-b2f9f8be12fb",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "b811a104-5aa5-481c-8b34-3d88800817f6",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "05b87b91-19a5-4dbf-84b8-65e81ac7c2fc",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "ae7e94b7-a163-4ead-ab87-807eb4e78e15",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "04da279b-f9cc-478d-bcd9-9fd64e0441db",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "ac2f6296-2c4b-4dc8-8f15-33e745b2b17c",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "0aaf05e0-5333-4fbe-bf7d-d3fe2eb580b9",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "e54fa2da-376e-4485-8f53-3fff9175af8e",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "a415d990-7ce6-4d11-84da-eaece78c0e5b",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "60525f88-a04a-4e4f-8803-f05cc87bdee8",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "5cb75aaf-0ace-4b76-86c5-49810f138c6d",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    },
+    {
+      "claim_id": "3999eeb7-e7bb-4183-a6be-2afef824328a",
+      "result_id": "55075144-a8e2-448e-b19d-ee2d1c8e43ac"
+    }
+  ],
+  "comparisons": []
+}

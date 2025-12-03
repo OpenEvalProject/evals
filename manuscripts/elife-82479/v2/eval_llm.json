@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C5"
+    ],
+    "result": "Co-injection of mutated X. laevis eRF1(E55D) cRNA resulted in a more than threefold higher ratio of full-length to truncated receptor constructs compared to the 1-step injection method without eRF1(E55D), leading to more reproducible expression and increased formation of full-length ANAP-labeled receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are directly supported by quantitative data from Figure 1 showing a >3-fold improvement in full-length:truncated protein ratio (1.469\u00b10.229 vs 0.418\u00b10.082) with smaller standard deviation. The optimized protocol was validated and used throughout the study (C5, C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "All constructs with ANAP substitutions in the N-terminus and head domain, and three out of four constructs in TM2, were formed in full length, while ANAP incorporation into G338 completely prevented membrane incorporation. Receptors truncated before or within TM2 are retained in the endoplasmic reticulum and likely undergo degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by surface expression data in Figure 2C. The inference about ER retention and degradation (C32) is reasonable given that truncated receptors don't reach the surface. The G338 finding (C33) is a specific observation with appropriate comparison to previous cysteine substitution data (C34).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Surface expression of full-length receptors was particularly low for constructs containing ANAP in the C-terminal cap and ballast domains, but most efficient for positions 517-537 and the very C-terminus. Despite dominant formation of truncated protein, the majority of C-terminal constructs showed clear current responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by surface expression data in Figure 2C and functional data in Table 1. The observation that functional receptors can be obtained despite truncation is important for interpreting subsequent VCF experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "All head domain mutants except E121* and Q128* showed clear fluorescence signals in all spectral segments. Fluorescence changes were wavelength-independent (positive for P120*, G126*; negative for Y122*, P123*, K127*) indicating quenching/dequenching, while S124*, R125*, and Q128* showed opposite directions at different wavelengths, indicating ANAP enters a less polar environment during receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by comprehensive VCF data in Figure 3C-E with multiple wavelength measurements. The interpretation of spectral shifts (C46-C47) is consistent with ANAP photophysical properties and supported by the opposing fluorescence directions at different wavelengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In all head-domain constructs except K127*, fluorescence and current changes started simultaneously and showed shorter rising times upon repeated ATP applications, recapitulating current facilitation. The K127* mutant showed faster fluorescence than current changes already upon first activation, suggesting ANAP in position 127 reports ligand binding rather than gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by kinetic data in Figure 3F and Figure 3\u2014figure supplement 3. The distinction between ligand binding (K127*) and gating-associated movements (other positions) is well-supported by the temporal relationship between fluorescence and current changes. EC50 values were similar (C52, Table 2), supporting that the mutations don't grossly alter ATP binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mutants S339*, T340*, and L341* in TM2 showed 10-20-fold higher leak currents but clear fluorescence changes during receptor activation. T340* showed significantly larger fluorescence signals during the first ATP application compared to the second, but displayed no change in kinetics between applications, suggesting the facilitation-associated gating mechanism is disturbed by this mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are supported by VCF data in Figure 4. The high leak currents (C55) are consistent with positions near the channel gate. The unique behavior of T340* (C59-C62) is well-documented, though the inference about facilitation mechanism disruption (C62) is reasonable but somewhat speculative given the already compromised baseline function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "All N-terminal ANAP-substituted receptors were formed in full length, but S6*, V10*, and K17* showed small and inconsistent responses. A3*, C5*, W7*, and F11* showed positive fluorescence signals, with F11* kinetics correlating with current facilitation. ANAP fluorescence in F11* was not quenched by nearby Trp7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by surface expression data (Figure 2C) and VCF data (Figure 5B-C). The control experiment showing W7 removal had no effect on F11* fluorescence (C67, Figure 5\u2014figure supplement 1) properly addresses potential quenching artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Surface expression of functional full-length receptors was observed for all C-terminal juxtamembrane constructs except K387* and C388*. Only T361* showed fluorescence changes (in ~50% of recordings). Both F11 and T361 lie within CRAC motifs proposed to be involved in cholesterol sensitivity of P2X7 channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by surface expression and VCF data (Figure 5D). The connection to CRAC motifs (C70-C71) is appropriately cited to previous work (Robinson et al., 2014) and provides context for the limited fluorescence changes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C8",
+      "C92",
+      "C93"
+    ],
+    "result": "ANAP introduction in most of the 29 ballast domain positions led to dominant formation of truncated protein. Four mutants did not form functional receptors at all. Despite promising surface transport and current responses for at least 12 constructs, only two mutants (A564* and D423*) showed fluorescence changes, suggesting only limited ATP-induced movements in the ballast domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78, C92-C93 are supported by comprehensive surface expression data (Figure 2C, Table 1) and VCF data (Figure 5D). The conclusion of limited ATP-induced movements (C93) is well-supported by the systematic scanning of 41 C-terminal positions with only 3 showing fluorescence changes (C8). This is a key negative result that addresses the study's primary aim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Both A564* and D423* mutants showed EC50 values similar to wt P2X7 and were not functional in control oocytes injected without ANAP, suggesting truncated proteins either don't contribute to current responses or only function in complex with full-length ANAP-containing subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by dose-response data (Figure 5\u2014figure supplement 2A, Table 2) and control experiments (Figure 5\u2014figure supplement 2B). The inference about truncated protein contribution (C81) is reasonable given the trimeric nature of P2X7 receptors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "D423 is located on the outer surface of the cytoplasmic ballast facing away from the central axis, with neighboring mutations (Q422*, V424*) resulting in non-functional receptors. A564 is located in the \u03b115 helix at the end of a cavity harboring the guanosine nucleotide binding site, where GDP interacts with nearby residues A567 and L569.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by structural descriptions based on cryo-EM data (Figure 5E-F) and appropriately cite previous structural studies (McCarthy et al., 2019). The structural context helps interpret why these specific positions show fluorescence changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Poor expression of \u0394Cys and Cys-Ala mutants in combination with ANAP prevented VCF analysis, but combination of the \u0394CaM mutation with ANAP yielded good expression and similar current kinetics and fluorescence changes as single mutants, arguing against a major functional effect of the CaM binding site mutation on current facilitation or molecular movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by data in Figure 5\u2014figure supplement 3. The conclusion about \u0394CaM (C91) is appropriately qualified to the oocyte expression system. However, the inability to test \u0394Cys mutants is a limitation for fully evaluating the role of palmitoylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In the F11*/S124C double mutant, TMRM in the head domain showed instant fluorescence change upon first ATP application while ANAP fluorescence in F11* was slower, but both signals coincided upon second application. This supports the hypothesis that current facilitation in P2X7 is due to a change in receptor gating rather than ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by dual-labeling VCF data in Figure 6A. The interpretation that facilitation involves gating rather than ligand binding (C98) is well-supported by the temporal convergence of signals upon second application. EC50 values were comparable (C99, Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Ca2+ promoted P2X7 desensitization and affected baseline fluorescence in the ANAP emission spectrum. ATP-induced Ca2+-influx reduced ANAP fluorescence and increased mNeonGreen fluorescence in the P2X7(Y595*)CaM-M13-mNeonGreen construct, demonstrating FRET between ANAP and mNeonGreen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by data in Figure 6\u2014figure supplement 1 and Figure 6C. The FRET proof-of-concept (C101) is well-demonstrated with appropriate positive control construct. However, C100 identifies an important limitation for Ca2+-dependent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The CaM-mNeonGreen construct yielded unspecific fluorescence signals when used with ANAP-labeled P2X7 receptors, possibly due to interaction of soluble mNeonGreen-tagged CaM with co-injected ANAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by data in Figure 6\u2014figure supplement 3. This is an important negative result showing a limitation of the approach. The speculation about ANAP-CaM interaction (C103) is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Kinetically different fluorescence changes in the head domain are most likely associated with ligand binding (K127*) and gating (other positions), respectively. The region around T340 is involved in P2X7 current facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 summarize key findings from the VCF experiments. The distinction between ligand binding and gating is well-supported by temporal analysis (Figure 3F). The involvement of T340 in facilitation (C105) is supported by the unique behavior of this mutant (Figure 4), though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "For most ANAP-containing P2X7R constructs studied, fluorescence changes mirrored the faster onset of current signal upon second ATP application, strongly suggesting that current facilitation is a receptor-intrinsic property and does not involve currents from downstream-activated channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by systematic VCF data showing fluorescence changes parallel current facilitation across multiple constructs. This is a major conclusion that addresses a key mechanistic question. The argument is strengthened by consistency across different receptor domains and agreement with previous single-channel data (C109, cited).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C106",
+      "C10"
+    ],
+    "result": "The ballast domain functions rather independently from the extracellular ATP binding domain and might require activation by additional ligands and/or protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C106 are conclusions drawn from the limited fluorescence changes in the ballast domain (only 3/41 C-terminal positions showed changes). While the negative result is well-documented, the conclusion about independence is inferential. The speculation about additional ligands/interactions (C10, C106) is reasonable but unproven. Alternative explanations (e.g., ANAP placement not optimal, movements too subtle to detect) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The cryo-EM structure of ATP-bound open P2X7R likely represents the facilitated state. The open-state stabilizing cap domain might not be locked in place in the na\u00efve state but could be formed during first receptor activation and stabilized via the cysteine-rich anchor domain, supporting upward transition of TM2. Dynamic cysteine palmitoylation, cholesterol interactions, or changes in accessibility for allosteric ligands might modulate this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C118 are speculative mechanistic proposals in the Discussion. While consistent with the data, these are hypotheses rather than demonstrated results. The speculation is appropriately qualified with terms like \"likely,\" \"might,\" and \"may.\" Testing these hypotheses would require additional experiments not performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "D423 lies in a sequence with homology to an \u03b1-actinin 2 binding sequence. Since P2X7 activation induces plasma membrane morphology changes and interactions with cytoskeletal proteins have been proposed, ANAP in position 423 might report interactions with cytoskeletal components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C124 appropriately cite previous work. However, the speculation that D423* reports cytoskeletal interactions (C125) is not tested. The sporadic nature of D423* fluorescence changes (C78) and lack of direct evidence for cytoskeletal interaction make this uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C94"
+    ],
+    "result": "A564 is surrounded by proposed interaction sites including an LPS binding sequence and calcium-dependent CaM binding motif, which might account for observed fluorescence signals. Mutant A564* has great potential as a reporter for yet undefined processes affecting GDP binding and/or metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 appropriately cite previous work but the speculation about what A564* reports is not tested. The suggestion that A564* could be a useful reporter (C94) is reasonable given its proximity to the GDP binding site (C85-C86), but this potential utility is speculative and would require future validation.",
+    "result_type": "MINOR"
+  }
+]

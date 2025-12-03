@@ -1,0 +1,1889 @@
+{
+  "submission": {
+    "id": "c34d131f-1bbb-4021-b776-858ae9bf6d85",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:43:26.071312Z",
+    "updated_at": "2025-12-03T19:43:26.071312Z"
+  },
+  "content": [
+    {
+      "id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "submission_id": "c34d131f-1bbb-4021-b776-858ae9bf6d85",
+      "content_type": "manuscript",
+      "content_text": "# An herbal drug combination identified by knowledge graph alleviates the clinical symptoms of plasma cell mastitis patients: A nonrandomized controlled trial\n\n## Authors\n\n- Caigang Liu<sup>1</sup> ([ORCID: 0000-0003-2083-235X](https://orcid.org/0000-0003-2083-235X)) \u2020\n- Hong Yu<sup>1</sup> ([ORCID: 0000-0002-4557-1558](https://orcid.org/0000-0002-4557-1558))\n- Guanglei Chen<sup>1</sup>\n- Qichao Yang<sup>2</sup>\n- Zichu Wang<sup>2</sup>\n- Nan Niu<sup>1</sup>\n- Ling Han<sup>3</sup>\n- Dongyu Zhao<sup>4</sup>\n- Manji Wang<sup>5</sup> \u2020\n- Yuanyuan Liu<sup>2</sup>\n- Yongliang Yang<sup>2</sup> ([ORCID: 0000-0003-0449-0599](https://orcid.org/0000-0003-0449-0599)) \u2020\n\n### Affiliations\n\n1. Cancer Stem Cell and Translation Medicine Lab, Innovative Cancer Drug Research and Development Engineering Center of Liaoning Province, Department of Oncology, Shengjing Hospital of China Medical University Shenyang China\n2. School of Bioengineering, Dalian University of Technology Dalian China ([ROR:023hj5876](https://ror.org/023hj5876))\n3. National Engineering Research Center of Pharmaceutics of Traditional Chinese Medicine, China Resources Sanjiu Medical & Pharmaceutical Co., Ltd Shenzhen China\n4. International Cancer Institute, Peking University Health Science Center, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))\n5. Shanghai BeautMed Corporation Shanghai China\n6. Department of Biology, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Plasma cell mastitis (PCM) is a nonbacterial breast inflammation with severe and intense clinical manifestation, yet treatment methods for PCM are still rather limited. Although the mechanism of PCM remains unclear, mounting evidence suggests that the dysregulation of immune system is closely associated with the pathogenesis of PCM. Drug combinations or combination therapy could exert improved efficacy and reduced toxicity by hitting multiple discrete cellular targets.Methods:We have developed a knowledge graph architecture toward immunotherapy and systematic immunity that consists of herbal drug\u2013target interactions with a novel scoring system to select drug combinations based on target-hitting rates and phenotype relativeness. To this end, we employed this knowledge graph to identify an herbal drug combination for PCM and we subsequently evaluated the efficacy of the herbal drug combination in clinical trial.Results:Our clinical data suggests that the herbal drug combination could significantly reduce the serum level of various inflammatory cytokines, downregulate serum IgA and IgG level, reduce the recurrence rate, and reverse the clinical symptoms of PCM patients with improvements in general health status.Conclusions:In summary, we reported that an herbal drug combination identified by knowledge graph can alleviate the clinical symptoms of PCM patients. We demonstrated that the herbal drug combination holds great promise as an effective remedy for PCM, acting through the regulation of immunoinflammatory pathways and improvement of systematic immune level. In particular, the herbal drug combination could significantly reduce the recurrence rate of PCM, a major obstacle to PCM treatment. Our data suggests that the herbal drug combination is expected to feature prominently in future PCM treatment.Funding:C. Liu\u2019s lab was supported by grants from the Public Health Science and Technology Project of Shenyang (grant: 22-321-32-18); Y. Yang\u2019s laboratory was supported by the National Natural Science Foundation of China (grant: 81874301), the Fundamental Research Funds for Central University (grant: DUT22YG122), and the Key Research project of \u2018be Recruited and be in Command\u2019 in Liaoning Province (2021JH1/10400050).Clinical trial number:NCT05530226.\n\n## Introduction\n\nPlasma cell mastitis (PCM) represents a serious inflammatory condition of breast that occurs in young and middle-aged females at nonpregnant and nonlactating period (Cutler, 1949). The main histopathological characteristics of PCM are the infiltration of plasma cells and lymphocytes in breast tissue (Yu et al., 2012). Interestingly, PCM shares similarity with breast cancer from the perspective of macroscopical or microscopical characteristics (Cheng et al., 2015). On the other hand, mounting evidence suggests that the dysregulation of immune system is closely associated with the pathogenesis of PCM. Recently, the incidence rate of PCM is quickly rising, yet the treatment methods for PCM are still rather limited. In clinical practice, surgical resection and hormone therapy remain two major treatments for PCM. Unfortunately, neither surgical resection nor hormone therapy could prevent recurrence of PCM. Moreover, the serious side effects of hormone therapy are still problematic (Fleming et al., 2022). Therefore, the discovery of effective PCM treatment or therapeutics with minimal side effects is clearly warranted.\n\nTraditional Chinese Medicine (TCM) has a rather long history for the prevention and treatment of complex diseases in eastern Asia (Tu, 2011; Tu, 2016; Yin et al., 2022). Moreover, for decades, TCM has been often used as alternative or complementary medicine in the West. Indeed, Chinese herbal compounds have been successfully applied in the treatment of PCM in conjunction with Western medicine (Zhang et al., 2020a). In clinical practice, TCM refers to herbal entity prescription or formulae (also called \u2018Fangji\u2019), which may exhibit coordinating or synergistic effects through the combination of multiple herb drugs (Li et al., 2010). However, the design of formulae in TCM is solely based on the principle of \u2018syndrome differentiation\u2019 according to the medicinal properties of herbal entities. Moreover, the molecular mechanisms for the \u2018formulae\u2019 in TCM remain rather elusive.\n\nKnowledge graph has emerged as an advanced technology in the field of artificial intelligence that is able to connect entities in a graph based on their existing intricate relationships (Ye et al., 2021). In particular, knowledge graph can enable the rational design and identification of combination therapies for a specific disease or phenotypes (Zeng et al., 2022). Recently, we developed and constructed a knowledge graph for the discovery of herbal drug combination toward immunotherapy and systematic immunity. Subsequently, we identified a synergistic combination of herbal drugs for PCM via a scoring system based on target-hitting rates and phenotype relativeness. To verify our concept of design, we conducted a clinical trial experiment for the drug combination of herbal compounds mentioned above (ClinicalTrials.gov registration: NCT05530226). Strikingly, our clinical results demonstrated that the herbal drug combination identified by knowledge graph can markedly suppress various inflammatory cytokines in serum, restore clinical symptoms, and reduce the recurrence rates of PCM patients with improved global health status.\n\n## Methods\n\n### Construction of knowledge graph toward immunotherapy\n\nWe employed data mining techniques to collect and compile 240 targets of immunotherapy and systematic immunity from the PubMed database. Next, we collected and compiled 345 herbal drug entities officially released by the National Health Commission of China and the National Administration of Traditional Chinese Medicine. The intricate relations between the herbal drug entities and the immunotherapy targets were extracted from the PubMed database. These intricate relations were subjected to further manual curation. We used 13 ontology terms to describe the intricate relations (edges) in the knowledge graph. Moreover, 64 attributes of the medicinal properties for the herbal drug entities were collected and compiled from the Pharmacopoeia of China. Finally, we built the knowledge graph using Neo4j and Py2Neo tools that consists of 895 nodes and 2197 edges.\n\n### Scoring system of the knowledge graph\n\nTo this end, we developed a scoring system to asses and predict synergistic drug combination of herbal drug entities (number of drugs, n) as follows:\n\n$$\nScore=\u00a0f(x)\u2217g(x)\u2217\\sumi=1x\u2016(h_{1}h_{2}h_{3})\u2016\n$$\n\nHerein, $f(x)$ represents the penalty function. $f(x)$ value will be set to 0 if the medicinal properties of the drug combination fall into the contraindication rules in the Pharmacopoeia of China. Otherwise, $f(x)$ value will be set to 1. Herein, the penalty function is used to ensure that the herbal drug entities in the combination do not violate the contraindication rules in the Pharmacopoeia of China according to the medicinal attributes of herbal drugs.\n\n$$\ng(x)=1\u2212\u00a0p_{i}\n$$\n\n$gx$ is the target diversity function as above and $p_{i}$ is calculated as $p_{i}=w/t$ ; t refers to the total number of targets within the knowledge graph, and w refers to the total number of overlapping targets that the drug combination may hit. Hence, the target diversity function can be used as a measure to assess the diversity of the targets that the drug combination may hit. In other words, if each drug entity in the combination hits distinct targets, the $gx$ value will be set to 1. The last term of the scoring system is used as a measure to assess the relativeness of each drug entity in the combination and calculated as follows:\n\n$$\n\\sumi=1x\u2016(h_{1}h_{2}h_{3})\u2016\n$$\n\nIn brief, $h_{1}$ represents the target-hitting rates of each drug entity in the combination and was calculated as follows, $h_{1}=n_{i}/t$ ; ni is the number of hitting targets for each drug entity in the combination; again, t refers to the total number of targets constituting the knowledge graph for the disease. It is noteworthy that the concept of hitting rates toward discrete targets has been used in the scoring function for the selection of synergistic drug combinations (Jin et al., 2021). $h_{2}$ represents the phenotype relativeness of each drug entity in the combination and $h_{2}=c_{2}*1/x$, where $x$ is the number of drug entities in the combination and $c_{2}$ is the parameter, namely, if the drug entity is related to the phenotype of the disease (co-occurrence with the disease phenotype in the literature), then the $c_{2}$ value is set to 1; otherwise, the $c_{2}$ value is set to 0; $h_{3}$ represents the literature relativeness or confidence of each drug entity in the combination and calculated as follows:\n\n$$\nh_{3}=\u00a0c_{3}\u2217log\\sqrt{\\sumi=1xl\u00a0\\times\u00a0(j+k)}\n$$\n\nin which $l$ is the number of studies/publications that validated the association of drug entity with the specific disease (herein the knowledge graph refers to cancer immunotherapy), and $j$ and $k$ refer to whether the relations of the drug entity with the disease have been validated in cell lines or patient (or animal) tissues, respectively. Namely, if the drug entity was validated in cancer cell lines or patient tissues, the j or k value will be set to 1, respectively. Otherwise, the j or k value will be set to 0; $c_{3}$ is the parameter and set to 1 here. Therefore, herein, a high score of $h_{3}$ implicates that the drug combination is more relevant to cancer immunotherapy with high confidence of literature relativeness. Collectively, our scoring system can be used to select those drug combinations that are most relevant to disease phenotypes and those drug combinations that are able to hit most discrete targets related to immunotherapy.\n\n### Design of the clinical trial\n\nIn brief, 160 female patients diagnosed with PCM at the Shengjing Hospital Affiliated to China Medical University were recruited in the clinical trial between January 2021 and February 2022. The patients were divided 1:1 into experimental group (EG) and control group (CG). It is noteworthy that, in order to demonstrate the therapeutic effects of TCM drug combination, we selected the patients who were treated with Western medicine in the real world during the same period. Therefore, the two groups of patients were divided into TCM treatment group (EG) and Western medicine treatment group (CG). There was no significant difference in baseline data such as age, body mass index, clinical classification, marriage, and child-bearing history between the two groups (Supplementary file 1A). The patients in the CG were orally treated with methylprednisolone tablets, 20 mg/day once a day. The patients in the EG were orally treated with 20 g/bag of herbal drug combination twice a day, once in the morning and once in the evening for 2 mo. The herbal drug combination was prepared as granules in the following formulae: Taraxacum 15 g, Fructus forsythiae 15 g, Honeysuckle 10 g, Uniflower swisscentaury root 8 g, Herba violae 20 g, Danshen 10 g, Astragalus 20 g, and Liquorice 8 g. The formula was determined by TCM experts on the basis of \u2018syndrome differentiation\u2019 as described in the Pharmacopoeia of China. Furthermore, the herbal drug combination in the form of granules was provided and prepared by the Shengjing Hospital Affiliated to China Medical University according to the standard requirement of clinical study by the National Medical Products Administration.\n\n### Clinical trial protocol\n\nThe clinical trial for the herbal drug combination was registered at ClinicalTrials.gov and entitled \u2018A single arm study of Traditional Chinese Medicine for plasma cell mastitis\u201d with registration code NCT05530226 (see Figure 1\u2014figure supplement 2). The detailed clinical trial protocol has been provided as a separate document in \u2018Supplementary file 2\u2019.\n\n### Measurement of serum inflammatory cytokines by ELSIA assay\n\nVenous blood of the CG and EG was collected in a sterile non-anticoagulant test tube before and after treatment. The immune transmission turbidimetry was used according to the procedure of CRP kit, and automatic biochemical analyzer was used to detect the level of CRP. The levels of serum cytokines were measured by ELISA (Elabscience) according to the manufacturer\u2019s instructions.\n\n### Measurement of serum immunoglobulin level\n\nThe venous blood of PCM patients in the two groups was collected in a sterile non-anticoagulant tube before and after treatment. The serum IgG and IgA were measured by rate scattering turbidimetry using Array 360 System automatic-specific protein analyzer (Beckman Company, USA).\n\n### Assessment of clinical symptoms of PCM patients\n\nThe clinical symptoms were evaluated by an attending physician with board certification in pathology. The patients were scored before and after treatment according to the standard rating scale for PCM (Supplementary file 1B).\n\n### Statistics\n\nAll data were evaluated as mean \u00b1 SEM. Statistical analysis of the quantitative multiple group comparisons was performed using ANOVA, followed by Tukey\u02bcs test, whereas pairwise comparisons were performed using the t-test by GraphPad Prism 8 (GraphPad Software, La Jolla, CA). Results were considered to be statistically significant when p<0.05.\n\n## Results\n\nIn a previous study, we collected and compiled 240 targets for immunotherapy and systematic immunity from literature data (Zhang et al., 2020b). Recently, we collected 345 entities of herbal drugs documented in TCM books and herbal drugs announced by the National Administration of Traditional Chinese Medicine through advanced text-mining techniques. The existing intricate relationships between the herbal drugs and immunotherapy targets were also extracted and compiled via advanced text-mining techniques and manual curation for the construction of knowledge graph. We defined an ontology list consisting of 13 ontology terms describing the relations (edges) between herbal drug entities and the immunotherapy targets based on manual curation of literature data. Moreover, we collected the attributes of the medicinal properties of each herbal compound from the Pharmacopoeia of China (Hao and Jiang, 2015). We totally compiled and integrated 64 attributes of the medicinal properties of herbal drug entities into the knowledge graph. These medicinal properties are useful throughout the design of herbal drug combination. Finally, we built the knowledge graph using Neo4j and Py2Neo tools that consists of 895 nodes and 2197 edges (Figure 1, Figure 1\u2014figure supplement 1), which can be visited online (http://www.ikgg.org/). Subsequently, we employed a scoring system (or so-called recommendation system) to asses and predict synergistic herbal drug combination from the knowledge graph. Note that the scoring function is able to identify those herbal drug combinations that are most related to specific phenotypes as well as herbal drug combinations that are able to hit most discrete cellular targets, yet still following the principle of \u2018syndrome differentiation\u2019 as described in the Pharmacopoeia of China (\u2018Methods\u2019). Here, syndrome differentiation refers to the very basic principle of identifying and treating diseases in TCM. Syndrome (Zheng) is the presentation of the pathological changes during a specific disease course, including the location, cause, and nature of a disease. Moreover, \u2018Jun-Chen-Zuo-Shi\u2019 refers to the rules guided by syndrome differentiation to select multiple herbal drug entities to treat a specific disease in TCM. To this end, we used this scoring function to select herbal drug combinations consisting of eight herbal entities. We chose to identify drug combinations with eight entities because \u2018formulae\u2019 consisting of eight drugs are regarded as \u2018essence combination\u2019 in the TCM community. In short, we employed a combination generator that is able to randomly generate drug combinations with eight herbal drug entities for 10 rounds, each of which consists of 1000 random drug combinations. All the generated drug combinations from the 10 rounds were further ranked and evaluated. It is noteworthy that the scoring results of the 10 rounds are presented as normal distributions (Figure 2\u2014figure supplement 1). The top 20 combinations from each round ranked by the scoring function were further curated and inspected by experts in TCM. Remarkably, we identified a specific drug combination that was ranked among the top 20 choices in all 10 rounds of calculation. The drug combination was chosen for further clinical study for two reasons. First, this drug combination was among the top 20 combinations in each round of our calculations. Second, we asked experts in TCM to inspect the top 20 combinations on the basis of \u2018syndrome differentiation\u2019 as described in the Pharmacopoeia of China, and finally the combination consisting of eight herbal drug entities, including \u2018Fructus forsythiae,\u2019 \u2018Herba violae,\u2019 \u2018Uniflower swisscentaury root,\u2019 \u2018Danshen,\u2019 \u2018Astragalus,\u2019 \u2018Taraxacum,\u2019 \u2018Liquorice,\u2019 and \u2018Honeysuckle,\u2019 was selected for further clinical study.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig1-v3.jpg)\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The knowledge graph was constructed using Neo4j and Python tools (http://www.ikgg.org/kghti). The yellow color represents the herbal drug entity, the pink color represents the cellular targets, and the green color represents the attributes of herb drugs.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig1-figsupp2-v3.jpg)\n\nNext, we extracted the subgraph for the herbal drug combination mentioned above and created a network diagram for the drug combination using Cytoscape tools (Reimand et al., 2019; Figure 2). In total, the eight herbal drug entities in the combination regulate 46 cellular targets related to immunotherapy and systematic immunity such as HIF-1 (Nan et al., 2022), iNOS, IL-17, IL-6, IL-1\u03b2, mTOR, NLPR3, PD-L1, STAT3 (Liu et al., 2020), TGF-\u03b2, TLR2, and TLR4 (Figure 2). It is noteworthy that the medicinal properties of the eight drug entities could be classified into three major categories of \u2018heat-clearing and detoxicating,\u2019 \u2018Qi-tonifying,\u2019 and \u2018blood-activating menstruation regulating.\u2019 Moreover, we conducted pathway analysis for the herbal drug combination for plasma cell mastitis. Interestingly, we revealed that the herbal drug combination may modulate a few pathways related to systematic immunity, including \u2018Toll-like receptors cascades,\u2019 \u2018MAP kinase activation,\u2019 \u2018adaptive immune system,\u2019 \u2018growth hormone receptor signaling,\u2019 \u2018cytokine signaling in immune system,\u2019 and \u2018innate immune system\u2019 via Reactome Knowledgebase (Jassal et al., 2020; Figure 3). We believe that all these may account for the therapeutic profiles of the herbal drug combination toward PCM. For instance, \u2018Toll-like receptors cascades,\u2019 \u2018adaptive immune system,\u2019 \u2018cytokine signaling in immune system,\u2019 and \u2018innate immune system\u2019 are critical cellular pathways for systematic immunity that are directly associated with the pathogenesis of PCM. Moreover, the \u2018MAP kinase activation\u2019 pathway is associated with cellular defense and innate immunity, which are also crucial for the development and inflammatory conditions of PCM.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig2-v3.jpg)\n\n**Figure 2.:** In total, 46 cellular targets related to systemic immunity were hit by the drug combination such as NLPR3, IL-17, TLR4, STAT3, IL-6, iNOS, and TLR2, which are displayed in the green box model. Three major medicinal attributes (properties) were identified for these herbal drug entities, including \u2018heat-clearing and detoxicating,\u2019 \u2018Qi-tonifying,\u2019 and \u2018blood-activating menstruation regulation\u2019.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** It is noteworthy that the scoring results of the 10 rounds are presented as normal distributions. The herbal drug combination identified for the clinical trial was among the top 20 choices in all the 10 rounds and is marked with red dots.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig3-v3.jpg)\n\n**Figure 3.:** The statistically significant pathways are highlighted and displayed in yellow color (p<0.05).\n\nEfficacy was assessed every two cycles, and the results were summarized after 6 mo of treatment. The baseline characteristics are shown in Supplementary file 1A. Strikingly, our results demonstrated that a few inflammatory cytokines in the serum, including IL-2, IL-4, IL-6, IFN-\u03b3, IL-1\u03b2, and TNF-\u03b1, were significantly downregulated in PCM patients after treatment of herbal drug combination compared to the CG treated with methylprednisolone (Figure 4). We chose to measure these cytokines in the experiments because they are often regarded as serum cytokine markers during the pathogenic development of PCM (Liu et al., 2018). In addition, we found that the serum levels of IgA and IgG were markedly suppressed in the treatment group of herbal drug combination compared to the CG (Figure 5). Note that both IgA and IgG have been found to be crucial diagnostic serum markers for PCM patients (Xing et al., 2022). Moreover, IgA is regarded as a major component of mucosal immunity that is closely related to the pathogenesis of PCM (Betts et al., 2018; Bharathan and Mullarky, 2011). Therefore, our data suggests that the herbal drug combination may enable the regulation of mucosal immunity and consequently downregulate IgA and IgG serum level. Furthermore, we conducted the standard Quality of Life questionnaire studies for PCM patients in the clinical experiment. Our results implicated that symptom score, pain score, and global health status of PCM patients are significantly improved after treatment of the herbal drug combination compared to the CG (Figure 6). It is noteworthy that our results demonstrated that the recurrence rate of PCM patients in the treatment group was reduced to 3.75% compared to the recurrence rate of 12.5% in the CG (Table 1). Moreover, the incidence rate of adverse events of PCM patients in the treatment group was reduced to 6.25% compared to the recurrence rate of 11.25% in the CG (Table 1). In addition, we observed that the clinical symptoms of PCM patients in the EG such as swelling, abscess, and fistula were reversed (Figure 7), Supplementary file 3 after treatment of herbal drug combinations. The clinical symptom score in the EG is ~4.68 compared to the clinical symptom score of ~5.98 in the CG (Table 2). These results suggest that the herbal drug combination may achieve better efficacy for the treatment of PCM compared to methylprednisolone.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig4-v3.jpg)\n\n**Figure 4.:** Notably, a few key cytokines such as IL-2, IL-4, IFN-\u03b3, IL-1\u03b2, and TNF-\u03b1 were significantly downregulated in the treatment group compared to the control group.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig5-v3.jpg)\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig6-v3.jpg)\n\n**Figure 6.:** The scores of symptoms, pain, and living quality from the treatment group were significantly improved compared to the control group.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Control group (CG) baseline, experimental group (EG) baseline, CG treated with methylprednisolone, and EG treated with herbal drug combinations.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Control group (CG) baseline, experimental group (EG) baseline, CG treated with methylprednisolone, and EG treated with herbal drug combinations.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Control group (CG) baseline, experimental group (EG) baseline, CG treated with methylprednisolone, and EG treated with herbal drug combinations.\n\n**Table 1.**\n Comparison of operation rate, recurrence rate, and incidence of adverse reactions between the two groups (EG: experimental group; CG: control group).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Groups</th>\n      <th>N (patients)</th>\n      <th>Operation</th>\n      <th>Recurrence</th>\n      <th>Incidence of adverse events</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EG</td>\n      <td>80</td>\n      <td>25 (31.25%)</td>\n      <td>3 (3.75%)</td>\n      <td>5 (6.25%)</td>\n    </tr>\n    <tr>\n      <td>CG</td>\n      <td>80</td>\n      <td>47 (58.75%)</td>\n      <td>10 (12.5%)</td>\n      <td>9 (11.25%)</td>\n    </tr>\n    <tr>\n      <td>X2</td>\n      <td></td>\n      <td>12.22</td>\n      <td>4.103</td>\n      <td>1.252</td>\n    </tr>\n    <tr>\n      <td>p</td>\n      <td></td>\n      <td>\uff1c0.001</td>\n      <td>0.043</td>\n      <td>0.263</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84414/elife-84414-fig7-v3.jpg)\n\n**Figure 7.:** (A-F), Six selected PCM patients in the clinical trial to reveal the effects of herbal drug combination. Written informed consents have been provided by all the patients (including written informed consent for the publication of the images in this figure), and detailed patient information is provided in Supplementary file 3.\n\n**Table 2.**\n Clinical symptom scores between the two groups in the clinical trial (EG: experimental group; CG: control group; The clinical symptom rating scale for plasma cell mastitis (PCM) is displayed in Supplementary file 1B).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Groups</th>\n      <th>N(patients)</th>\n      <th>Baseline</th>\n      <th>Treated</th>\n      <th>t</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EG</td>\n      <td>80</td>\n      <td>13.90 \u00b1 2.37</td>\n      <td>4.68 \u00b1 3.40</td>\n      <td>22.19</td>\n      <td>\uff1c0.001</td>\n    </tr>\n    <tr>\n      <td>CG</td>\n      <td>80</td>\n      <td>13.423 \u00b1 2.70</td>\n      <td>5.98 \u00b1 3.68</td>\n      <td>14.282</td>\n      <td>\uff1c0.001</td>\n    </tr>\n    <tr>\n      <td>t</td>\n      <td></td>\n      <td>1.189</td>\n      <td>2.323</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>p</td>\n      <td></td>\n      <td>0.236</td>\n      <td>0.021</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nWith the increasing amount of biomedical data, the traditional drug discovery campaign has been revolutionized with the aid of artificial intelligence techniques to accelerate the process and reduce the cost (Yang et al., 2009). In recent years, knowledge graph, a technique that can provide structured relations among entities and unstructured semantic relations associated with entities, has been introduced into the domain of drug discovery (Zeng et al., 2022). The advantage of employing knowledge graph for drug discovery lies in the capabilities of revealing structured associations between drug entities, cellular targets, biological pathways, and phenotypes for human disorders. This is useful for scientists to identify new indications or phenotypes for existing drugs or so-called drug repurposing. With the aid of scoring function or recommendation system, knowledge graph can also be used to design and identify drug combinations for a specific disease. Herein, for the first time, we introduced and employed the concept of knowledge graph to identify herbal drug combinations for the severe PCM with unmet medical needs.\n\nAlthough the pathogenesis of PCM remains largely unclear, there have been numerous reports implicating that the overactivation of immunoinflammatory pathways plays an important role in the development of PCM (Liu et al., 2015). The major advantage of using TCM is that herbal drug combination can hit multiple discrete targets related to immunoinflammatory pathways with improved efficacy and reduced toxicity. Herein, for the first time, we showcase an example that identifies an herbal drug combination via knowledge graph toward PCM. In contrast to using the conventional principle of \u2018syndrome differentiation,\u2019 our knowledge graph consisting of intricate relations between herbal drug entities and immunotherapy targets coupled with scoring functions is able to automatically identify novel herbal drug combinations that can hit most discrete targets, making this strategy unique in the TCM community. This is because PCM is a rather complex disease that pathogenesis may involve multiple targets and immunoinflammatory pathways. Hence, we made the hypothesis that drug combinations that can act on most discrete targets or pathways related to PCM might be more effective to alleviate the symptoms. Although we acknowledge that the inclusion of chemical ingredients from the herbal drugs may impact the outcome of our analysis and design, unfortunately, the inclusion of chemical ingredients in the knowledge graph is rather technically difficult due to the limited and incomplete datasets for the herbal drugs in the field of TCM. Nevertheless, our strategy captures the prominent feature of design for drug combinations toward a complex disease such as PCM. In the future, we plan to include multiple types of omics data such as genomic, transcriptomic, proteomic, metagenomic, or metabolomics data into the knowledge graph to reveal novel targets and enable novel drug discovery.\n\nWe want to remind the reader that a third arm (a placebo group) added to the clinical study might be useful to fully reveal the therapeutic effects of the herbal drug combination. Unfortunately, we were unable to add a third arm due to some ethical concerns. This is because PCM is a rather acute, severe, and intense clinical manifestation of breast. Without any treatment, the serious inflammatory condition of PCM may quickly advance into breast cancer. Therefore, this is a limitation of our clinical study, and we hope to design more delicate clinical trials in the future to demonstrate the therapeutic effects of herbal drug combination. Nevertheless, the detailed analysis of three indicators, including symptom score, pain score, and score of life quality, between the EG treated with herbal drug combination and the CG treated with methylprednisolone in the clinical study suggests that the herbal drug combination might be more effective in reversing the clinical conditions of PCM compared to the methylprednisolone treatment (see Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2, Figure 6\u2014figure supplement 3).\n\nIn this study, our results revealed that the herbal drug combination identified by knowledge graph could suppress a few key immunoinflammatory cytokines, enhance the systematic immune levels, and significantly reduce the recurrence rates of PCM patients. Note that recurrence has become one major obstacle after surgical resection for PCM treatment in clinical practice. On the other hand, hormone therapy may increase the risk of side effects for PCM patients. Therefore, our approach of herbal drug combination may provide a new avenue for PCM treatment with less recurrence rate and reduced incidence rate of adverse events.\n\n### Conclusion\n\nIn summary, we report the identification and clinical assessment of an herbal drug combination toward PCM. We demonstrated that the herbal drug combination holds great promise as an effective remedy for PCM, acting through the regulation of multiple cellular targets and immunoinflammatory pathways, which leads to the improvement in systematic immune level. In particular, the herbal drug combination could significantly reduce the recurrence rate of PCM, a major obstacle to PCM treatment. Our data suggests that the herbal drug combination is expected to feature prominently in the future PCM treatment. Moreover, these promising results underscore the potential of knowledge graph to identify drug combinations or other novel therapeutics across various types of human disorders.\n\n### Ethical statement\n\nThe protocol was approved by the Institutional Review Board (IRB) of the China Medical University (approval number: 2021PS024T). This study was registered with ClinicalTrials.gov: NCT05530226. All patients provided written informed consent.\n",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "14c4e69e-e2e4-4ffb-9251-a162c1fbe168",
+      "submission_id": "c34d131f-1bbb-4021-b776-858ae9bf6d85",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, DaVita Labs United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84414.sa0](https://doi.org/10.7554/eLife.84414.sa0)\n\nThis study presents a valuable identification of an herbal drug combination for treating plasma cell mastitis (PCM), a breast inflammation with severe and intense clinical symptoms. The data were collected and analyzed using a solid approach in a clinical trial of 160 patients (NCT05530226). They can be used to understand how herbal drug combinations could help manage PCM patients.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, DaVita Labs United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84414.sa1](https://doi.org/10.7554/eLife.84414.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A herbal drug combination identified by knowledge graph alleviates the clinical symptoms of plasma cell mastitis patients: a non-randomized controlled trial\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n(1) Please address Reviewer 1's comments about the patient groups and confounding factors as well as expand the rationale for the evaluation of the clinical trial as noted for example, by reviewer 2's comments about the combination drug score.\n\n(2) Please address the relatively minor comments of all three reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nFigure 2 looks like it could be moved to supplementary data.\n\nFigure 3 text was too small to read.\n\nThe presented changes in figures 5 and 6, while statistically significant do not demonstrate significant difference. Perhaps a third, placebo, arm is needed whereby the steroids and the herbal groups induce immune changes not seen in the placebo group? That data would be clear and convincing, but as presented it is difficult to understand if this is a medication effect o=r the natural course of disease in these patients.\n\nReviewer #2 (Recommendations for the authors):\n\nBelow are some specific points for the manuscript,\n\n1. It would be necessary to elaborate the advantages of employing knowledge graph to design drug combinations for a specific human disease in the Discussion section of the manuscript.\n\n2. In Figure 4, the authors claimed that 'a few pathways related to systematic immunity' were identified. In page 8, line 158, the authors should discuss in length for the specific roles of these pathways in PCM pathogenesis.\n\n3. The drug combination in the clinical trial didn't obtain the highest score (Figure 2). The authors need to explain this in the Discussion section.\n\n4. Figure 1, Supplement 1, the authors need to explain the color scheme (pink, yellow and green etc) for the entities.\n\n5. Page 6, line 133, please explain and specify the term 'syndrome differentiation'. The reader who are not in TCM domain may not understand the term.\n\n6. In page 6, the authors claimed that the scoring system is able to identify 'herbal drug combinations that are able to hit most discrete cellular targets'. The authors need to explain and elaborate why this criteria is crucial for the identification of drug combinations for PCM in the Discussion section.\n\n7. The authors need to provide more details for their clinical study. For example, more details are required for the patients in Figure 6.\n\nReviewer #3 (Recommendations for the authors):\n\nThis is a rather interesting study that introduced a new concept in the domain of TCM and herbal drugs. Below are some specific suggestions which I think may help to improve the manuscript,\n\n1. The herbal drug combination used in the clinical study didn't obtain the highest score during the scoring process (Figure 2). The authors need to explain and elaborate this in a paragraph.\n\n2. In Figure 3, the network diagram analysis from the knowledge graph revealed that NLPR3, IL-17, TLR4, STAT3, IL-6, iNOS and TLR2 are possible cellular targets for the herbal drug combination. The authors need to elaborate or provide some references that NLPR3, IL-17, TLR4, STAT3, IL-6, iNOS and TLR2 are relevant to PCM pathogenesis.\n\n3. The authors need to explain and elaborate 'penalty function', in page 14.\n\n4. Line 326, the authors mean 'validated via cellular model'?\n\n5. Line 329, the author refers to 'systematic immunity'?\n\n6. Page 17, line 347, 'The herbal drug combination was prepared as granules in the following formulae', The authors need to explain how this formula was determined.\n\n7. In Figure 8, the authors need to provide more details for the clinical pictures in a paragraph. For example, age, treatment period and brief descriptions of the symptoms etc.\n\n8. The authors need to explain why the drug combination consisting of eight herbal drugs is selected in their study. Page 7, line 137, the authors made a statement that 'eight drugs are regarded as essence combination'. The authors need to explain and elaborate this point in the manuscript.\n\n9. Is it feasible that the authors could include chemical ingredients of the herbal drugs into their knowledge graph for the identification of herbal drug combination? The authors should elaborate more for this point in the manuscript.\n",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "07dff5d8-a9a9-4976-9b3c-97453836d858",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C1",
+      "claim": "Plasma cell mastitis (PCM) is a nonbacterial breast inflammation with severe and intense clinical manifestation.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma cell mastitis (PCM) is a nonbacterial breast inflammation with severe and intense clinical manifestation, yet treatment methods for PCM are still rather limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about PCM that draws from established medical knowledge and is supported by the citation to Cutler, 1949 in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "a4a807b7-d1f0-4efd-832b-ce8707844623",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C2",
+      "claim": "Treatment methods for PCM are still rather limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma cell mastitis (PCM) is a nonbacterial breast inflammation with severe and intense clinical manifestation, yet treatment methods for PCM are still rather limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects current medical knowledge about the limited therapeutic options for PCM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "7b5d6068-64dc-40e7-8beb-7970cca5c750",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C3",
+      "claim": "The mechanism of PCM remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mechanism of PCM remains unclear, mounting evidence suggests that the dysregulation of immune system is closely associated with the pathogenesis of PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific understanding of PCM pathogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "b3043b8b-b2f5-440c-9152-60c83e725dba",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C4",
+      "claim": "The dysregulation of immune system is closely associated with the pathogenesis of PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mechanism of PCM remains unclear, mounting evidence suggests that the dysregulation of immune system is closely associated with the pathogenesis of PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by accumulated evidence from the literature as indicated by 'mounting evidence suggests'.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "ecebd232-fd72-4f6f-8412-7fc740d87a52",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C5",
+      "claim": "Drug combinations or combination therapy could exert improved efficacy and reduced toxicity by hitting multiple discrete cellular targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug combinations or combination therapy could exert improved efficacy and reduced toxicity by hitting multiple discrete cellular targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle in pharmacology supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f4d3e8a5-f2bc-4b44-b6f5-1a1476b30fcf",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C6",
+      "claim": "A knowledge graph architecture was developed toward immunotherapy and systematic immunity that consists of herbal drug\u2013target interactions with a novel scoring system.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a knowledge graph architecture toward immunotherapy and systematic immunity that consists of herbal drug\u2013target interactions with a novel scoring system to select drug combinations based on target-hitting rates and phenotype relativeness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology developed by the authors as presented in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "38efe7c3-d973-4545-96d4-6afebab17df2",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C7",
+      "claim": "The herbal drug combination could significantly reduce the serum level of various inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our clinical data suggests that the herbal drug combination could significantly reduce the serum level of various inflammatory cytokines, downregulate serum IgA and IgG level, reduce the recurrence rate, and reverse the clinical symptoms of PCM patients with improvements in general health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clinical trial data presented in Figure 4 showing significant reductions in inflammatory cytokines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "65f01b9b-7d7c-4e2e-9f6d-aaa83823cb7b",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C8",
+      "claim": "The herbal drug combination could downregulate serum IgA and IgG level.",
+      "claim_type": "EXPLICIT",
+      "source": "Our clinical data suggests that the herbal drug combination could significantly reduce the serum level of various inflammatory cytokines, downregulate serum IgA and IgG level, reduce the recurrence rate, and reverse the clinical symptoms of PCM patients with improvements in general health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "9d2de32a-739e-4f2b-8b53-fb7a90444471",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C9",
+      "claim": "The herbal drug combination could reduce the recurrence rate of PCM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our clinical data suggests that the herbal drug combination could significantly reduce the serum level of various inflammatory cytokines, downregulate serum IgA and IgG level, reduce the recurrence rate, and reverse the clinical symptoms of PCM patients with improvements in general health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical trial data presented in Table 1 showing recurrence rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "d48303ca-4ce1-41e3-b5a4-610a19dca48c",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C10",
+      "claim": "The herbal drug combination could reverse the clinical symptoms of PCM patients with improvements in general health status.",
+      "claim_type": "EXPLICIT",
+      "source": "Our clinical data suggests that the herbal drug combination could significantly reduce the serum level of various inflammatory cytokines, downregulate serum IgA and IgG level, reduce the recurrence rate, and reverse the clinical symptoms of PCM patients with improvements in general health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical data in Figure 6 and Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "e344bbed-6e6f-4108-8103-846ff6f033b0",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C11",
+      "claim": "PCM represents a serious inflammatory condition of breast that occurs in young and middle-aged females at nonpregnant and nonlactating period.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma cell mastitis (PCM) represents a serious inflammatory condition of breast that occurs in young and middle-aged females at nonpregnant and nonlactating period (Cutler, 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement supported by citation to Cutler, 1949.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "0dbd20ad-9507-4566-841e-5ecf86df8264",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C12",
+      "claim": "The main histopathological characteristics of PCM are the infiltration of plasma cells and lymphocytes in breast tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The main histopathological characteristics of PCM are the infiltration of plasma cells and lymphocytes in breast tissue (Yu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "4dda6e33-ce79-44c0-8b66-dc9399535666",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C13",
+      "claim": "PCM shares similarity with breast cancer from the perspective of macroscopical or microscopical characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PCM shares similarity with breast cancer from the perspective of macroscopical or microscopical characteristics (Cheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cheng et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "cbf79a85-8e18-4a5a-b396-00d5ea40379e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C14",
+      "claim": "The incidence rate of PCM is quickly rising.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the incidence rate of PCM is quickly rising, yet the treatment methods for PCM are still rather limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about epidemiological trends based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "35144ccf-40df-46b8-9c29-d44c9197a6af",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C15",
+      "claim": "Surgical resection and hormone therapy remain two major treatments for PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical practice, surgical resection and hormone therapy remain two major treatments for PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes current clinical practice based on medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "6c539ee1-485a-45f3-8b39-6c4487af88df",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C16",
+      "claim": "Neither surgical resection nor hormone therapy could prevent recurrence of PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, neither surgical resection nor hormone therapy could prevent recurrence of PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current treatments based on clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "d41485d0-e9b0-4f61-b849-45b5f69865ac",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C17",
+      "claim": "The serious side effects of hormone therapy are still problematic.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the serious side effects of hormone therapy are still problematic (Fleming et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fleming et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f8eac6ef-43f3-47bf-b871-edd0f760d9ca",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C18",
+      "claim": "Traditional Chinese Medicine (TCM) has a rather long history for the prevention and treatment of complex diseases in eastern Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional Chinese Medicine (TCM) has a rather long history for the prevention and treatment of complex diseases in eastern Asia (Tu, 2011; Tu, 2016; Yin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tu, 2011; Tu, 2016; Yin et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "3fd6b0d9-aaa8-4d33-9b12-c2767c9c82de",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C19",
+      "claim": "For decades, TCM has been often used as alternative or complementary medicine in the West.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for decades, TCM has been often used as alternative or complementary medicine in the West.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the historical use of TCM based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "41b754ef-5034-4b05-b8a4-afe20580ee67",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C20",
+      "claim": "Chinese herbal compounds have been successfully applied in the treatment of PCM in conjunction with Western medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Chinese herbal compounds have been successfully applied in the treatment of PCM in conjunction with Western medicine (Zhang et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "423b6207-d766-4728-a31b-b3f0e656f0cc",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C21",
+      "claim": "TCM refers to herbal entity prescription or formulae (also called 'Fangji'), which may exhibit coordinating or synergistic effects through the combination of multiple herb drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical practice, TCM refers to herbal entity prescription or formulae (also called 'Fangji'), which may exhibit coordinating or synergistic effects through the combination of multiple herb drugs (Li et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "fd287228-ae51-4cde-9a8a-6fc0604ad181",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C22",
+      "claim": "The design of formulae in TCM is solely based on the principle of 'syndrome differentiation' according to the medicinal properties of herbal entities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the design of formulae in TCM is solely based on the principle of 'syndrome differentiation' according to the medicinal properties of herbal entities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes traditional TCM practice based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "34357c1a-cac9-40ef-ace4-452c4515fdaf",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C23",
+      "claim": "The molecular mechanisms for the 'formulae' in TCM remain rather elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the molecular mechanisms for the 'formulae' in TCM remain rather elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific understanding of TCM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "ac9fa0c2-9180-4394-ae31-8acb0f7b7316",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C24",
+      "claim": "Knowledge graph has emerged as an advanced technology in the field of artificial intelligence that is able to connect entities in a graph based on their existing intricate relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowledge graph has emerged as an advanced technology in the field of artificial intelligence that is able to connect entities in a graph based on their existing intricate relationships (Ye et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ye et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "d66ffeaf-62fd-4bd9-a79f-c86550fbff5a",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C25",
+      "claim": "Knowledge graph can enable the rational design and identification of combination therapies for a specific disease or phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, knowledge graph can enable the rational design and identification of combination therapies for a specific disease or phenotypes (Zeng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zeng et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "4f43f1cd-5ce1-4e48-a19d-9bf4685ecb63",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C26",
+      "claim": "A knowledge graph for the discovery of herbal drug combination toward immunotherapy and systematic immunity was developed and constructed.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we developed and constructed a knowledge graph for the discovery of herbal drug combination toward immunotherapy and systematic immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "bbb28ed1-0c2b-4a91-94bb-2df69d7342fb",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C27",
+      "claim": "A synergistic combination of herbal drugs for PCM was identified via a scoring system based on target-hitting rates and phenotype relativeness.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we identified a synergistic combination of herbal drugs for PCM via a scoring system based on target-hitting rates and phenotype relativeness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational approach used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "e299b16b-aa2f-4307-8db3-74c61c70bb6f",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C28",
+      "claim": "A clinical trial experiment for the drug combination of herbal compounds was conducted with ClinicalTrials.gov registration: NCT05530226.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify our concept of design, we conducted a clinical trial experiment for the drug combination of herbal compounds mentioned above (ClinicalTrials.gov registration: NCT05530226).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical trial conducted by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "fb479368-81d5-42d9-ac30-240866654bb3",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C29",
+      "claim": "The herbal drug combination identified by knowledge graph can markedly suppress various inflammatory cytokines in serum.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, our clinical results demonstrated that the herbal drug combination identified by knowledge graph can markedly suppress various inflammatory cytokines in serum, restore clinical symptoms, and reduce the recurrence rates of PCM patients with improved global health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical trial data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "98d5ee8b-2b71-43d7-a988-0f2c84aa4dbc",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C30",
+      "claim": "The herbal drug combination can restore clinical symptoms of PCM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, our clinical results demonstrated that the herbal drug combination identified by knowledge graph can markedly suppress various inflammatory cytokines in serum, restore clinical symptoms, and reduce the recurrence rates of PCM patients with improved global health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical data in Figure 7 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "e9e93aa7-5bd8-4a14-ac02-e577aec2e9ae",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C31",
+      "claim": "The herbal drug combination can reduce the recurrence rates of PCM patients with improved global health status.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, our clinical results demonstrated that the herbal drug combination identified by knowledge graph can markedly suppress various inflammatory cytokines in serum, restore clinical symptoms, and reduce the recurrence rates of PCM patients with improved global health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical data in Table 1 and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "717f4200-7b33-427b-a87b-d4cbca382adb",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C32",
+      "claim": "240 targets of immunotherapy and systematic immunity were collected and compiled from the PubMed database.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed data mining techniques to collect and compile 240 targets of immunotherapy and systematic immunity from the PubMed database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "df434826-547e-4d46-9e66-e5461abec7ff",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C33",
+      "claim": "345 herbal drug entities officially released by the National Health Commission of China and the National Administration of Traditional Chinese Medicine were collected and compiled.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we collected and compiled 345 herbal drug entities officially released by the National Health Commission of China and the National Administration of Traditional Chinese Medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f1f5480b-6d4d-44c4-89f6-1e98d7de597f",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C34",
+      "claim": "The intricate relations between the herbal drug entities and the immunotherapy targets were extracted from the PubMed database.",
+      "claim_type": "EXPLICIT",
+      "source": "The intricate relations between the herbal drug entities and the immunotherapy targets were extracted from the PubMed database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data extraction methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "8c7d5eac-2d31-4d55-a094-ca71f6c6870c",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C35",
+      "claim": "13 ontology terms were used to describe the intricate relations (edges) in the knowledge graph.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 13 ontology terms to describe the intricate relations (edges) in the knowledge graph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the knowledge graph construction methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "51ff555c-101a-4da3-bda2-ae105c0ceac5",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C36",
+      "claim": "64 attributes of the medicinal properties for the herbal drug entities were collected and compiled from the Pharmacopoeia of China.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 64 attributes of the medicinal properties for the herbal drug entities were collected and compiled from the Pharmacopoeia of China.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "5ea6498f-ad40-479b-900a-bb1074404b3c",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C37",
+      "claim": "The knowledge graph was built using Neo4j and Py2Neo tools that consists of 895 nodes and 2197 edges.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we built the knowledge graph using Neo4j and Py2Neo tools that consists of 895 nodes and 2197 edges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the knowledge graph.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "44c4d006-2787-4823-a2b8-0693a7d16dd5",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C38",
+      "claim": "160 female patients diagnosed with PCM at the Shengjing Hospital Affiliated to China Medical University were recruited in the clinical trial between January 2021 and February 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, 160 female patients diagnosed with PCM at the Shengjing Hospital Affiliated to China Medical University were recruited in the clinical trial between January 2021 and February 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical trial design and patient recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "03166ad2-50a1-4c86-93fd-f130c3399f40",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C39",
+      "claim": "The patients were divided 1:1 into experimental group (EG) and control group (CG).",
+      "claim_type": "EXPLICIT",
+      "source": "The patients were divided 1:1 into experimental group (EG) and control group (CG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical trial design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "08214209-6e30-49cb-9fd5-cb8a5cc10bb8",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C40",
+      "claim": "There was no significant difference in baseline data such as age, body mass index, clinical classification, marriage, and child-bearing history between the two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in baseline data such as age, body mass index, clinical classification, marriage, and child-bearing history between the two groups (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "49dd0a76-55c3-420e-988f-0ed9b5e36e86",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C41",
+      "claim": "The patients in the CG were orally treated with methylprednisolone tablets, 20 mg/day once a day.",
+      "claim_type": "EXPLICIT",
+      "source": "The patients in the CG were orally treated with methylprednisolone tablets, 20 mg/day once a day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the treatment protocol for the control group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "a0faa8aa-443b-4868-a76d-a107fc97ac8a",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C42",
+      "claim": "The patients in the EG were orally treated with 20 g/bag of herbal drug combination twice a day, once in the morning and once in the evening for 2 mo.",
+      "claim_type": "EXPLICIT",
+      "source": "The patients in the EG were orally treated with 20 g/bag of herbal drug combination twice a day, once in the morning and once in the evening for 2 mo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the treatment protocol for the experimental group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "a4269946-0d1b-4e16-9295-d0c8e8b34f7e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C43",
+      "claim": "The herbal drug combination was prepared as granules in the following formulae: Taraxacum 15 g, Fructus forsythiae 15 g, Honeysuckle 10 g, Uniflower swisscentaury root 8 g, Herba violae 20 g, Danshen 10 g, Astragalus 20 g, and Liquorice 8 g.",
+      "claim_type": "EXPLICIT",
+      "source": "The herbal drug combination was prepared as granules in the following formulae: Taraxacum 15 g, Fructus forsythiae 15 g, Honeysuckle 10 g, Uniflower swisscentaury root 8 g, Herba violae 20 g, Danshen 10 g, Astragalus 20 g, and Liquorice 8 g.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the herbal drug combination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "56459143-e4dd-4d8f-83a8-4f95c5cb31d6",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C44",
+      "claim": "The formula was determined by TCM experts on the basis of 'syndrome differentiation' as described in the Pharmacopoeia of China.",
+      "claim_type": "EXPLICIT",
+      "source": "The formula was determined by TCM experts on the basis of 'syndrome differentiation' as described in the Pharmacopoeia of China.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the formula was determined.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "d383cf17-842b-4d21-bb8a-0b457f5c9a40",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C45",
+      "claim": "The eight herbal drug entities in the combination regulate 46 cellular targets related to immunotherapy and systematic immunity such as HIF-1, iNOS, IL-17, IL-6, IL-1\u03b2, mTOR, NLPR3, PD-L1, STAT3, TGF-\u03b2, TLR2, and TLR4.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, the eight herbal drug entities in the combination regulate 46 cellular targets related to immunotherapy and systematic immunity such as HIF-1 (Nan et al., 2022), iNOS, IL-17, IL-6, IL-1\u03b2, mTOR, NLPR3, PD-L1, STAT3 (Liu et al., 2020), TGF-\u03b2, TLR2, and TLR4 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the knowledge graph analysis shown in Figure 2 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "51ee6780-10e1-4e7f-9ff5-668fc90fd7b2",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C46",
+      "claim": "The medicinal properties of the eight drug entities could be classified into three major categories of 'heat-clearing and detoxicating,' 'Qi-tonifying,' and 'blood-activating menstruation regulating.'",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the medicinal properties of the eight drug entities could be classified into three major categories of 'heat-clearing and detoxicating,' 'Qi-tonifying,' and 'blood-activating menstruation regulating.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of medicinal properties from the Pharmacopoeia of China.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f5379798-0d74-4a89-8a0b-2b2a23ea7b29",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C47",
+      "claim": "The herbal drug combination may modulate a few pathways related to systematic immunity, including 'Toll-like receptors cascades,' 'MAP kinase activation,' 'adaptive immune system,' 'growth hormone receptor signaling,' 'cytokine signaling in immune system,' and 'innate immune system'.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we revealed that the herbal drug combination may modulate a few pathways related to systematic immunity, including 'Toll-like receptors cascades,' 'MAP kinase activation,' 'adaptive immune system,' 'growth hormone receptor signaling,' 'cytokine signaling in immune system,' and 'innate immune system' via Reactome Knowledgebase (Jassal et al., 2020; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pathway analysis using Reactome Knowledgebase as shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "beabcec7-d734-4099-8b3c-7e2d98465da9",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C48",
+      "claim": "A few inflammatory cytokines in the serum, including IL-2, IL-4, IL-6, IFN-\u03b3, IL-1\u03b2, and TNF-\u03b1, were significantly downregulated in PCM patients after treatment of herbal drug combination compared to the CG treated with methylprednisolone.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, our results demonstrated that a few inflammatory cytokines in the serum, including IL-2, IL-4, IL-6, IFN-\u03b3, IL-1\u03b2, and TNF-\u03b1, were significantly downregulated in PCM patients after treatment of herbal drug combination compared to the CG treated with methylprednisolone (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "0c58ee20-7917-4f33-8dcb-8b415061fc72",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C49",
+      "claim": "IL-2, IL-4, IL-6, IFN-\u03b3, IL-1\u03b2, and TNF-\u03b1 are often regarded as serum cytokine markers during the pathogenic development of PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to measure these cytokines in the experiments because they are often regarded as serum cytokine markers during the pathogenic development of PCM (Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "a51cefab-4c0a-492c-adb0-f7da040148ea",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C50",
+      "claim": "The serum levels of IgA and IgG were markedly suppressed in the treatment group of herbal drug combination compared to the CG.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the serum levels of IgA and IgG were markedly suppressed in the treatment group of herbal drug combination compared to the CG (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "7f62650c-0290-47ac-8fe4-1706305f72f0",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C51",
+      "claim": "Both IgA and IgG have been found to be crucial diagnostic serum markers for PCM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that both IgA and IgG have been found to be crucial diagnostic serum markers for PCM patients (Xing et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xing et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "4b37540d-5f36-43d6-afcf-df4174849a88",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C52",
+      "claim": "IgA is regarded as a major component of mucosal immunity that is closely related to the pathogenesis of PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, IgA is regarded as a major component of mucosal immunity that is closely related to the pathogenesis of PCM (Betts et al., 2018; Bharathan and Mullarky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Betts et al., 2018 and Bharathan and Mullarky, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "3eb57b6d-85c0-4201-a09b-05f58087e14e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C53",
+      "claim": "The herbal drug combination may enable the regulation of mucosal immunity and consequently downregulate IgA and IgG serum level.",
+      "claim_type": "IMPLICIT",
+      "source": "Therefore, our data suggests that the herbal drug combination may enable the regulation of mucosal immunity and consequently downregulate IgA and IgG serum level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed downregulation of IgA and IgG and the known role of IgA in mucosal immunity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "97d45af1-81eb-467b-9cbb-9c45a7487b17",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C54",
+      "claim": "Symptom score, pain score, and global health status of PCM patients are significantly improved after treatment of the herbal drug combination compared to the CG.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we conducted the standard Quality of Life questionnaire studies for PCM patients in the clinical experiment. Our results implicated that symptom score, pain score, and global health status of PCM patients are significantly improved after treatment of the herbal drug combination compared to the CG (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Quality of Life questionnaire data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f7138c27-73ce-4cad-9c22-4f7efc8a2eb1",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C55",
+      "claim": "The recurrence rate of PCM patients in the treatment group was reduced to 3.75% compared to the recurrence rate of 12.5% in the CG.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that our results demonstrated that the recurrence rate of PCM patients in the treatment group was reduced to 3.75% compared to the recurrence rate of 12.5% in the CG (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clinical trial data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "202b6c69-8af8-428e-b2f4-85a04faa970b",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C56",
+      "claim": "The incidence rate of adverse events of PCM patients in the treatment group was reduced to 6.25% compared to the recurrence rate of 11.25% in the CG.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the incidence rate of adverse events of PCM patients in the treatment group was reduced to 6.25% compared to the recurrence rate of 11.25% in the CG (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clinical trial data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "68de300c-eaa3-45bb-b155-50e72bc3e2d4",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C57",
+      "claim": "The clinical symptoms of PCM patients in the EG such as swelling, abscess, and fistula were reversed after treatment of herbal drug combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed that the clinical symptoms of PCM patients in the EG such as swelling, abscess, and fistula were reversed (Figure 7), Supplementary file 3 after treatment of herbal drug combinations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clinical observations shown in Figure 7 and Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "aa5830b8-f76c-4779-ac66-9492176d8a41",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C58",
+      "claim": "The clinical symptom score in the EG is ~4.68 compared to the clinical symptom score of ~5.98 in the CG.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical symptom score in the EG is ~4.68 compared to the clinical symptom score of ~5.98 in the CG (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clinical data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f27c30c3-923d-488b-bbf0-6a93debd797d",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C59",
+      "claim": "The herbal drug combination may achieve better efficacy for the treatment of PCM compared to methylprednisolone.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the herbal drug combination may achieve better efficacy for the treatment of PCM compared to methylprednisolone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the clinical trial results comparing the two treatment groups.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "87b10f9a-8792-4901-8d46-d337c4318d83",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C60",
+      "claim": "The traditional drug discovery campaign has been revolutionized with the aid of artificial intelligence techniques to accelerate the process and reduce the cost.",
+      "claim_type": "EXPLICIT",
+      "source": "With the increasing amount of biomedical data, the traditional drug discovery campaign has been revolutionized with the aid of artificial intelligence techniques to accelerate the process and reduce the cost (Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yang et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "e681829f-bdeb-4510-a1ac-0c9539a0541b",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C61",
+      "claim": "Knowledge graph, a technique that can provide structured relations among entities and unstructured semantic relations associated with entities, has been introduced into the domain of drug discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, knowledge graph, a technique that can provide structured relations among entities and unstructured semantic relations associated with entities, has been introduced into the domain of drug discovery (Zeng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zeng et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "3d299842-f09a-41f1-99a7-1880cc59c055",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C62",
+      "claim": "The advantage of employing knowledge graph for drug discovery lies in the capabilities of revealing structured associations between drug entities, cellular targets, biological pathways, and phenotypes for human disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of employing knowledge graph for drug discovery lies in the capabilities of revealing structured associations between drug entities, cellular targets, biological pathways, and phenotypes for human disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of knowledge graph technology based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "83a7ad99-b6b1-4a84-a7a9-eb016922bdd4",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C63",
+      "claim": "Knowledge graph can be used to identify new indications or phenotypes for existing drugs or so-called drug repurposing.",
+      "claim_type": "EXPLICIT",
+      "source": "This is useful for scientists to identify new indications or phenotypes for existing drugs or so-called drug repurposing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential application of knowledge graph technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "6aa33ce5-8886-4c7b-b1f0-fee76fa7d9cf",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C64",
+      "claim": "With the aid of scoring function or recommendation system, knowledge graph can also be used to design and identify drug combinations for a specific disease.",
+      "claim_type": "EXPLICIT",
+      "source": "With the aid of scoring function or recommendation system, knowledge graph can also be used to design and identify drug combinations for a specific disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f18f6ce2-649d-40ff-a103-f73191910c78",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C65",
+      "claim": "For the first time, the concept of knowledge graph was introduced and employed to identify herbal drug combinations for the severe PCM with unmet medical needs.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, for the first time, we introduced and employed the concept of knowledge graph to identify herbal drug combinations for the severe PCM with unmet medical needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "8303aee7-9ef4-4527-874e-8d07ceee629a",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C66",
+      "claim": "There have been numerous reports implicating that the overactivation of immunoinflammatory pathways plays an important role in the development of PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the pathogenesis of PCM remains largely unclear, there have been numerous reports implicating that the overactivation of immunoinflammatory pathways plays an important role in the development of PCM (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "36208d7c-a859-44ed-9845-094021dfd1d3",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C67",
+      "claim": "The major advantage of using TCM is that herbal drug combination can hit multiple discrete targets related to immunoinflammatory pathways with improved efficacy and reduced toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The major advantage of using TCM is that herbal drug combination can hit multiple discrete targets related to immunoinflammatory pathways with improved efficacy and reduced toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of TCM based on general knowledge and the study's rationale.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "8282422b-c48b-48d6-bdfe-81c6f0e5c79d",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C68",
+      "claim": "For the first time, an example that identifies an herbal drug combination via knowledge graph toward PCM was showcased.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, for the first time, we showcase an example that identifies an herbal drug combination via knowledge graph toward PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "8a1690d8-a83f-44de-98cd-a5175e197862",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C69",
+      "claim": "The knowledge graph consisting of intricate relations between herbal drug entities and immunotherapy targets coupled with scoring functions is able to automatically identify novel herbal drug combinations that can hit most discrete targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to using the conventional principle of 'syndrome differentiation,' our knowledge graph consisting of intricate relations between herbal drug entities and immunotherapy targets coupled with scoring functions is able to automatically identify novel herbal drug combinations that can hit most discrete targets, making this strategy unique in the TCM community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capability of the developed knowledge graph system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "222de4d5-a20a-4e41-8548-db074bbdee71",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C70",
+      "claim": "PCM is a rather complex disease that pathogenesis may involve multiple targets and immunoinflammatory pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because PCM is a rather complex disease that pathogenesis may involve multiple targets and immunoinflammatory pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of PCM based on scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "76fad2c8-3da2-440b-9a46-e43f51ab7beb",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C71",
+      "claim": "Drug combinations that can act on most discrete targets or pathways related to PCM might be more effective to alleviate the symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we made the hypothesis that drug combinations that can act on most discrete targets or pathways related to PCM might be more effective to alleviate the symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis made by the authors based on reasoning about complex diseases.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "75b70720-3276-40e7-8af3-5accbcf9d5c5",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C72",
+      "claim": "The inclusion of chemical ingredients from the herbal drugs may impact the outcome of the analysis and design.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we acknowledge that the inclusion of chemical ingredients from the herbal drugs may impact the outcome of our analysis and design, unfortunately, the inclusion of chemical ingredients in the knowledge graph is rather technically difficult due to the limited and incomplete datasets for the herbal drugs in the field of TCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the study.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "fbec6057-0579-4b42-93ce-091bb5b3e242",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C73",
+      "claim": "The inclusion of chemical ingredients in the knowledge graph is rather technically difficult due to the limited and incomplete datasets for the herbal drugs in the field of TCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we acknowledge that the inclusion of chemical ingredients from the herbal drugs may impact the outcome of our analysis and design, unfortunately, the inclusion of chemical ingredients in the knowledge graph is rather technically difficult due to the limited and incomplete datasets for the herbal drugs in the field of TCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a limitation of the current approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "ed591715-98fd-4e72-b331-b16fbd41c785",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C74",
+      "claim": "The strategy captures the prominent feature of design for drug combinations toward a complex disease such as PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our strategy captures the prominent feature of design for drug combinations toward a complex disease such as PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the strength of the approach despite limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "104d92cb-31a2-459c-915c-2261d2b3a1c6",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C75",
+      "claim": "There are plans to include multiple types of omics data such as genomic, transcriptomic, proteomic, metagenomic, or metabolomics data into the knowledge graph to reveal novel targets and enable novel drug discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, we plan to include multiple types of omics data such as genomic, transcriptomic, proteomic, metagenomic, or metabolomics data into the knowledge graph to reveal novel targets and enable novel drug discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes future plans for the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f94d4aa1-c92d-49ab-9f19-47a976c0f4c1",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C76",
+      "claim": "A third arm (a placebo group) added to the clinical study might be useful to fully reveal the therapeutic effects of the herbal drug combination.",
+      "claim_type": "EXPLICIT",
+      "source": "We want to remind the reader that a third arm (a placebo group) added to the clinical study might be useful to fully reveal the therapeutic effects of the herbal drug combination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the study design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "4b54f64c-9296-482b-af8e-cfff236ab7d7",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C77",
+      "claim": "A third arm could not be added due to some ethical concerns.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, we were unable to add a third arm due to some ethical concerns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why a placebo group was not included.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "3daeeef8-c8e9-4168-a705-45c9f8f5ab08",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C78",
+      "claim": "Without any treatment, the serious inflammatory condition of PCM may quickly advance into breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because PCM is a rather acute, severe, and intense clinical manifestation of breast. Without any treatment, the serious inflammatory condition of PCM may quickly advance into breast cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the natural history of untreated PCM based on clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "0a803cec-9abc-4439-901a-2363afc01088",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C79",
+      "claim": "The detailed analysis of three indicators, including symptom score, pain score, and score of life quality, between the EG treated with herbal drug combination and the CG treated with methylprednisolone suggests that the herbal drug combination might be more effective in reversing the clinical conditions of PCM compared to the methylprednisolone treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the detailed analysis of three indicators, including symptom score, pain score, and score of life quality, between the EG treated with herbal drug combination and the CG treated with methylprednisolone in the clinical study suggests that the herbal drug combination might be more effective in reversing the clinical conditions of PCM compared to the methylprednisolone treatment (see Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 6 supplements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "aed97ef7-4711-4bae-9e1e-c94c8902a8a1",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C80",
+      "claim": "The herbal drug combination identified by knowledge graph could suppress a few key immunoinflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, our results revealed that the herbal drug combination identified by knowledge graph could suppress a few key immunoinflammatory cytokines, enhance the systematic immune levels, and significantly reduce the recurrence rates of PCM patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "62f4166c-0e0d-4b30-a2ba-539d167e67fd",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C81",
+      "claim": "The herbal drug combination could enhance the systematic immune levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, our results revealed that the herbal drug combination identified by knowledge graph could suppress a few key immunoinflammatory cytokines, enhance the systematic immune levels, and significantly reduce the recurrence rates of PCM patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data on IgA and IgG levels in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "e6aa4e2e-4622-4675-b3d6-11173bc7aad3",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C82",
+      "claim": "The herbal drug combination could significantly reduce the recurrence rates of PCM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, our results revealed that the herbal drug combination identified by knowledge graph could suppress a few key immunoinflammatory cytokines, enhance the systematic immune levels, and significantly reduce the recurrence rates of PCM patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "06d2b695-8163-451b-8090-ca5de5e0d0d6",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C83",
+      "claim": "Recurrence has become one major obstacle after surgical resection for PCM treatment in clinical practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that recurrence has become one major obstacle after surgical resection for PCM treatment in clinical practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about clinical challenges in PCM treatment based on medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "912decdd-f8e6-425c-9266-7d3ba686ba05",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C84",
+      "claim": "Hormone therapy may increase the risk of side effects for PCM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, hormone therapy may increase the risk of side effects for PCM patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on clinical knowledge about hormone therapy side effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "b7595e69-75b7-4d21-a643-29c51e1213ea",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C85",
+      "claim": "The approach of herbal drug combination may provide a new avenue for PCM treatment with less recurrence rate and reduced incidence rate of adverse events.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our approach of herbal drug combination may provide a new avenue for PCM treatment with less recurrence rate and reduced incidence rate of adverse events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the clinical trial results showing reduced recurrence and adverse events.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "e55b33e4-2925-4884-b925-7879f163ad30",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C86",
+      "claim": "The herbal drug combination holds great promise as an effective remedy for PCM, acting through the regulation of multiple cellular targets and immunoinflammatory pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that the herbal drug combination holds great promise as an effective remedy for PCM, acting through the regulation of multiple cellular targets and immunoinflammatory pathways, which leads to the improvement in systematic immune level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the knowledge graph analysis and clinical trial results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "460da51d-d3c0-455f-b037-8551a9665b4b",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C87",
+      "claim": "The regulation of multiple cellular targets and immunoinflammatory pathways leads to the improvement in systematic immune level.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that the herbal drug combination holds great promise as an effective remedy for PCM, acting through the regulation of multiple cellular targets and immunoinflammatory pathways, which leads to the improvement in systematic immune level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed effects on cytokines and immunoglobulins.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "5358aa91-9dd3-4cdb-b113-0700bdb380c6",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C88",
+      "claim": "The herbal drug combination could significantly reduce the recurrence rate of PCM, a major obstacle to PCM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the herbal drug combination could significantly reduce the recurrence rate of PCM, a major obstacle to PCM treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Table 1 showing reduced recurrence rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "411f016b-f95d-47fa-bfa0-21070bb6a145",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C89",
+      "claim": "The herbal drug combination is expected to feature prominently in the future PCM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that the herbal drug combination is expected to feature prominently in the future PCM treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future clinical applications based on the study results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "29a70fb6-2c57-43a4-82a2-6ecd4dc823a6",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C90",
+      "claim": "These promising results underscore the potential of knowledge graph to identify drug combinations or other novel therapeutics across various types of human disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these promising results underscore the potential of knowledge graph to identify drug combinations or other novel therapeutics across various types of human disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broader inference about the applicability of the knowledge graph approach beyond PCM.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "18568a37-bd55-4fb3-8200-65a1ca6a70f4",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C91",
+      "claim": "The protocol was approved by the Institutional Review Board (IRB) of the China Medical University (approval number: 2021PS024T).",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol was approved by the Institutional Review Board (IRB) of the China Medical University (approval number: 2021PS024T).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "a28b0b63-1f33-4cf2-833a-2aee824c12b8",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C92",
+      "claim": "This study was registered with ClinicalTrials.gov: NCT05530226.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was registered with ClinicalTrials.gov: NCT05530226.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about clinical trial registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "63d7c999-09c2-41bd-84f1-ac537356ae20",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C93",
+      "claim": "All patients provided written informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients provided written informed consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical procedures in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "afc945ad-7450-49f3-b4a2-b886931130f6",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C94",
+      "claim": "'Toll-like receptors cascades,' 'adaptive immune system,' 'cytokine signaling in immune system,' and 'innate immune system' are critical cellular pathways for systematic immunity that are directly associated with the pathogenesis of PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 'Toll-like receptors cascades,' 'adaptive immune system,' 'cytokine signaling in immune system,' and 'innate immune system' are critical cellular pathways for systematic immunity that are directly associated with the pathogenesis of PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the pathway analysis and general immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "b3b24b9c-6702-4eaa-ae0d-c199bccc0a6b",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "claim_id": "C95",
+      "claim": "The 'MAP kinase activation' pathway is associated with cellular defense and innate immunity, which are also crucial for the development and inflammatory conditions of PCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the 'MAP kinase activation' pathway is associated with cellular defense and innate immunity, which are also crucial for the development and inflammatory conditions of PCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the pathway analysis and general knowledge about MAP kinase signaling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3e890161-3248-4d84-9c31-f7ae6759d4f5",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a knowledge graph for immunotherapy and systematic immunity consisting of 240 targets, 345 herbal drug entities, 13 ontology terms, and 64 medicinal property attributes, implemented using Neo4j and Py2Neo tools (895 nodes, 2197 edges). A scoring system was developed to identify herbal drug combinations based on target-hitting rates and phenotype relativeness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C37 and C6 provide detailed methodology for knowledge graph construction including data sources, ontology design, and technical implementation. The approach is clearly described with specific numbers and tools, making it reproducible. The scoring system methodology is also explicitly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "914fb096-e925-4adf-8db7-609b762befb2",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An eight-herb combination was identified that regulates 46 cellular targets related to immunotherapy and systematic immunity, with medicinal properties classified into three categories ('heat-clearing and detoxicating,' 'Qi-tonifying,' and 'blood-activating menstruation regulating'). Pathway analysis revealed modulation of immune-related pathways including Toll-like receptor cascades, MAP kinase activation, and adaptive/innate immune systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 describe the identified herbal combination with supporting evidence from knowledge graph analysis (Figure 2) and pathway analysis via Reactome (Figure 3). The targets and pathways are explicitly listed and supported by citations and computational analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A non-randomized controlled clinical trial was conducted with 160 PCM patients divided 1:1 into experimental group (herbal drug combination) and control group (methylprednisolone). The trial was registered (NCT05530226), IRB-approved (2021PS024T), and all patients provided informed consent. Baseline characteristics showed no significant differences between groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42, C28, and C91-C93 provide comprehensive clinical trial design details including patient recruitment, group allocation, treatment protocols, and ethical approvals. The trial registration and IRB approval are verifiable. Baseline data equivalence is supported by Supplementary file 1A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "a8d83624-36d9-4003-8c23-4b2b0de3837e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The herbal drug combination significantly downregulated serum inflammatory cytokines (IL-2, IL-4, IL-6, IFN-\u03b3, IL-1\u03b2, TNF-\u03b1) in PCM patients compared to methylprednisolone control group. These cytokines are established serum markers for PCM pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C7, C29, and C80 are supported by experimental data in Figure 4 showing statistically significant reductions in multiple cytokines. Claim C49 provides rationale for cytokine selection with citation support (Liu et al., 2018). Statistical significance is clearly indicated in the figure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "eb470722-87cd-4eb6-94da-bcd34caf3969",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The herbal drug combination markedly suppressed serum IgA and IgG levels compared to control group. IgA and IgG are crucial diagnostic markers for PCM, with IgA being a major component of mucosal immunity related to PCM pathogenesis. The treatment may regulate mucosal immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C8, and C81 are supported by experimental data in Figure 5. Claims C51-C52 provide literature support for the relevance of these markers (Xing et al., 2022; Betts et al., 2018; Bharathan and Mullarky, 2011). Claim C53 is a reasonable inference based on observed IgA/IgG downregulation and known IgA role in mucosal immunity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "9b93a1bc-7865-4fd6-8101-fdf61fb8befe",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Quality of life measures (symptom score, pain score, global health status) were significantly improved in the herbal drug combination group compared to control group. Detailed analysis of these three indicators suggests the herbal combination may be more effective than methylprednisolone in reversing clinical conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C10, C30, and C79 are supported by Quality of Life questionnaire data in Figure 6 and supplementary figures. Statistical significance is demonstrated for multiple quality of life parameters. The comparative effectiveness claim (C79) is appropriately qualified as a suggestion based on the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "22a24a29-3855-4454-b1f8-3a70da39b66b",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The herbal drug combination reduced PCM recurrence rate to 3.75% compared to 12.5% in the methylprednisolone control group. This addresses a major obstacle in PCM treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C9, C31, C82, and C88 are supported by clinical trial data in Table 1 showing statistically significant difference in recurrence rates (p=0.043). The clinical importance is appropriately emphasized given that recurrence is acknowledged as a major treatment challenge (C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "b0db3844-3e78-4141-baea-b6b2003bed5a",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The incidence rate of adverse events was reduced to 6.25% in the treatment group compared to 11.25% in the control group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is supported by data in Table 1, but the difference is not statistically significant (p=0.263). While the trend favors the herbal combination, the lack of statistical significance means this result cannot be considered definitively supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "0d49ee87-6460-445d-bf14-80c2d71aaa3e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Clinical symptoms (swelling, abscess, fistula) were reversed in the experimental group, with clinical symptom scores of ~4.68 in the experimental group compared to ~5.98 in control group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C58 are supported by clinical observations in Figure 7 and Supplementary file 3, and quantitative data in Table 2 showing statistically significant difference (p<0.001) in symptom scores between groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "026a0aa4-19bd-461f-91cf-f9a69eb7451e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The herbal drug combination may achieve better efficacy for PCM treatment compared to methylprednisolone, providing a new treatment avenue with reduced recurrence and adverse events. The combination acts through regulation of multiple cellular targets and immunoinflammatory pathways, leading to improved systematic immune levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59, C85, C86, C87, and C89 represent interpretive conclusions based on the clinical trial results. While supported by the data presented (cytokines, immunoglobulins, recurrence, symptoms), these are appropriately qualified as suggestions/inferences. The mechanistic claim (C87) linking target regulation to immune improvement is plausible but not directly demonstrated. The lack of a placebo control (acknowledged by authors in C76-C77) limits definitive superiority claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "f3b0c739-c023-4c8c-af31-3a7363563b3c",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "This is the first application of knowledge graph to identify herbal drug combinations for PCM. The knowledge graph with scoring functions can automatically identify novel herbal drug combinations that hit multiple discrete targets, representing a unique strategy in the TCM community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C68, and C69 describe the novelty of the approach. The methodology is clearly described and implemented (C26-C37). The claim of being 'first' for PCM application is reasonable given the specific disease context. The capability to identify multi-target combinations is demonstrated by the identified 8-herb formula targeting 46 immune-related targets (C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors acknowledge several limitations: the hypothesis that multi-target combinations are more effective remains to be fully validated; chemical ingredients were not included in the knowledge graph due to data limitations; a placebo control arm could not be added due to ethical concerns about untreated PCM potentially progressing to breast cancer. Future work will incorporate omics data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C78 represent appropriate acknowledgment of study limitations and future directions. The ethical justification for not including a placebo arm (C77-C78) is reasonable given the serious nature of PCM. The limitations regarding chemical ingredients (C72-C73) and the hypothesis-driven nature of the approach (C71) are honestly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "57461562-74e8-49f5-a043-7a0a4538ad88",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PCM is a serious nonbacterial breast inflammation in young/middle-aged females with limited treatment options. The mechanism remains unclear but involves immune dysregulation. Current treatments (surgery, hormone therapy) cannot prevent recurrence and have problematic side effects. The pathogenesis involves multiple targets and immunoinflammatory pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C11-C17, C66, C70, C83-C84 provide background on PCM based on established medical knowledge and literature citations (Cutler 1949, Yu et al. 2012, Cheng et al. 2015, Fleming et al. 2022, Liu et al. 2015). These claims establish the clinical need and rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Drug combinations can provide improved efficacy and reduced toxicity by hitting multiple targets. TCM has a long history in disease treatment and has been applied to PCM. Knowledge graph technology has emerged as an AI tool for drug discovery, enabling identification of drug combinations and drug repurposing. TCM combinations can hit multiple immunoinflammatory targets with improved efficacy and reduced toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C18-C25, C60-C64, and C67 provide background on combination therapy principles, TCM history, and knowledge graph applications. These are supported by appropriate citations (Tu 2011/2016, Li et al. 2010, Ye et al. 2021, Zeng et al. 2022, Yang et al. 2009, Zhang et al. 2020a) and represent established knowledge in their respective fields.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "00b7ba32-3ad2-41f6-b46d-635dff6e350f",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "These results underscore the potential of knowledge graph to identify drug combinations or novel therapeutics across various types of human disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 represents a broad extrapolation from a single disease application (PCM) to 'various types of human disorders.' While the knowledge graph approach may have broader applicability, this claim extends beyond what is demonstrated in the study. The success in PCM does not necessarily validate the approach for other diseases with different pathophysiology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    },
+    {
+      "id": "94ae754a-768a-42de-a5aa-2d707afe10d6",
+      "content_id": "31064daa-e2c2-47ec-ba8a-4aa8aedbf0cf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Specific immune pathways (Toll-like receptor cascades, adaptive immune system, cytokine signaling, innate immune system, MAP kinase activation) are critical for systematic immunity and directly associated with PCM pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94 and C95 connect the identified pathways (from C47) to PCM pathogenesis based on general immunological knowledge and the pathway analysis results. The associations are reasonable given the inflammatory nature of PCM and the known roles of these pathways in immune responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:43:26.071312Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4f43f1cd-5ce1-4e48-a19d-9bf4685ecb63",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "bbb28ed1-0c2b-4a91-94bb-2df69d7342fb",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "717f4200-7b33-427b-a87b-d4cbca382adb",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "df434826-547e-4d46-9e66-e5461abec7ff",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "f1f5480b-6d4d-44c4-89f6-1e98d7de597f",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "8c7d5eac-2d31-4d55-a094-ca71f6c6870c",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "51ff555c-101a-4da3-bda2-ae105c0ceac5",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "5ea6498f-ad40-479b-900a-bb1074404b3c",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "f4d3e8a5-f2bc-4b44-b6f5-1a1476b30fcf",
+      "result_id": "3e890161-3248-4d84-9c31-f7ae6759d4f5"
+    },
+    {
+      "claim_id": "a4269946-0d1b-4e16-9295-d0c8e8b34f7e",
+      "result_id": "914fb096-e925-4adf-8db7-609b762befb2"
+    },
+    {
+      "claim_id": "56459143-e4dd-4d8f-83a8-4f95c5cb31d6",
+      "result_id": "914fb096-e925-4adf-8db7-609b762befb2"
+    },
+    {
+      "claim_id": "d383cf17-842b-4d21-bb8a-0b457f5c9a40",
+      "result_id": "914fb096-e925-4adf-8db7-609b762befb2"
+    },
+    {
+      "claim_id": "51ee6780-10e1-4e7f-9ff5-668fc90fd7b2",
+      "result_id": "914fb096-e925-4adf-8db7-609b762befb2"
+    },
+    {
+      "claim_id": "f5379798-0d74-4a89-8a0b-2b2a23ea7b29",
+      "result_id": "914fb096-e925-4adf-8db7-609b762befb2"
+    },
+    {
+      "claim_id": "44c4d006-2787-4823-a2b8-0693a7d16dd5",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "03166ad2-50a1-4c86-93fd-f130c3399f40",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "08214209-6e30-49cb-9fd5-cb8a5cc10bb8",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "49dd0a76-55c3-420e-988f-0ed9b5e36e86",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "a0faa8aa-443b-4868-a76d-a107fc97ac8a",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "e299b16b-aa2f-4307-8db3-74c61c70bb6f",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "18568a37-bd55-4fb3-8200-65a1ca6a70f4",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "a28b0b63-1f33-4cf2-833a-2aee824c12b8",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "63d7c999-09c2-41bd-84f1-ac537356ae20",
+      "result_id": "4e89d991-4bd6-4389-a7b5-d2319013ec5e"
+    },
+    {
+      "claim_id": "beabcec7-d734-4099-8b3c-7e2d98465da9",
+      "result_id": "a8d83624-36d9-4003-8c23-4b2b0de3837e"
+    },
+    {
+      "claim_id": "0c58ee20-7917-4f33-8dcb-8b415061fc72",
+      "result_id": "a8d83624-36d9-4003-8c23-4b2b0de3837e"
+    },
+    {
+      "claim_id": "38efe7c3-d973-4545-96d4-6afebab17df2",
+      "result_id": "a8d83624-36d9-4003-8c23-4b2b0de3837e"
+    },
+    {
+      "claim_id": "fb479368-81d5-42d9-ac30-240866654bb3",
+      "result_id": "a8d83624-36d9-4003-8c23-4b2b0de3837e"
+    },
+    {
+      "claim_id": "aed97ef7-4711-4bae-9e1e-c94c8902a8a1",
+      "result_id": "a8d83624-36d9-4003-8c23-4b2b0de3837e"
+    },
+    {
+      "claim_id": "a51cefab-4c0a-492c-adb0-f7da040148ea",
+      "result_id": "eb470722-87cd-4eb6-94da-bcd34caf3969"
+    },
+    {
+      "claim_id": "7f62650c-0290-47ac-8fe4-1706305f72f0",
+      "result_id": "eb470722-87cd-4eb6-94da-bcd34caf3969"
+    },
+    {
+      "claim_id": "4b37540d-5f36-43d6-afcf-df4174849a88",
+      "result_id": "eb470722-87cd-4eb6-94da-bcd34caf3969"
+    },
+    {
+      "claim_id": "3eb57b6d-85c0-4201-a09b-05f58087e14e",
+      "result_id": "eb470722-87cd-4eb6-94da-bcd34caf3969"
+    },
+    {
+      "claim_id": "65f01b9b-7d7c-4e2e-9f6d-aaa83823cb7b",
+      "result_id": "eb470722-87cd-4eb6-94da-bcd34caf3969"
+    },
+    {
+      "claim_id": "62f4166c-0e0d-4b30-a2ba-539d167e67fd",
+      "result_id": "eb470722-87cd-4eb6-94da-bcd34caf3969"
+    },
+    {
+      "claim_id": "97d45af1-81eb-467b-9cbb-9c45a7487b17",
+      "result_id": "9b93a1bc-7865-4fd6-8101-fdf61fb8befe"
+    },
+    {
+      "claim_id": "d48303ca-4ce1-41e3-b5a4-610a19dca48c",
+      "result_id": "9b93a1bc-7865-4fd6-8101-fdf61fb8befe"
+    },
+    {
+      "claim_id": "98d5ee8b-2b71-43d7-a988-0f2c84aa4dbc",
+      "result_id": "9b93a1bc-7865-4fd6-8101-fdf61fb8befe"
+    },
+    {
+      "claim_id": "0a803cec-9abc-4439-901a-2363afc01088",
+      "result_id": "9b93a1bc-7865-4fd6-8101-fdf61fb8befe"
+    },
+    {
+      "claim_id": "f7138c27-73ce-4cad-9c22-4f7efc8a2eb1",
+      "result_id": "22a24a29-3855-4454-b1f8-3a70da39b66b"
+    },
+    {
+      "claim_id": "9d2de32a-739e-4f2b-8b53-fb7a90444471",
+      "result_id": "22a24a29-3855-4454-b1f8-3a70da39b66b"
+    },
+    {
+      "claim_id": "e9e93aa7-5bd8-4a14-ac02-e577aec2e9ae",
+      "result_id": "22a24a29-3855-4454-b1f8-3a70da39b66b"
+    },
+    {
+      "claim_id": "e6aa4e2e-4622-4675-b3d6-11173bc7aad3",
+      "result_id": "22a24a29-3855-4454-b1f8-3a70da39b66b"
+    },
+    {
+      "claim_id": "5358aa91-9dd3-4cdb-b113-0700bdb380c6",
+      "result_id": "22a24a29-3855-4454-b1f8-3a70da39b66b"
+    },
+    {
+      "claim_id": "202b6c69-8af8-428e-b2f4-85a04faa970b",
+      "result_id": "b0db3844-3e78-4141-baea-b6b2003bed5a"
+    },
+    {
+      "claim_id": "68de300c-eaa3-45bb-b155-50e72bc3e2d4",
+      "result_id": "0d49ee87-6460-445d-bf14-80c2d71aaa3e"
+    },
+    {
+      "claim_id": "aa5830b8-f76c-4779-ac66-9492176d8a41",
+      "result_id": "0d49ee87-6460-445d-bf14-80c2d71aaa3e"
+    },
+    {
+      "claim_id": "f27c30c3-923d-488b-bbf0-6a93debd797d",
+      "result_id": "026a0aa4-19bd-461f-91cf-f9a69eb7451e"
+    },
+    {
+      "claim_id": "b7595e69-75b7-4d21-a643-29c51e1213ea",
+      "result_id": "026a0aa4-19bd-461f-91cf-f9a69eb7451e"
+    },
+    {
+      "claim_id": "e55b33e4-2925-4884-b925-7879f163ad30",
+      "result_id": "026a0aa4-19bd-461f-91cf-f9a69eb7451e"
+    },
+    {
+      "claim_id": "460da51d-d3c0-455f-b037-8551a9665b4b",
+      "result_id": "026a0aa4-19bd-461f-91cf-f9a69eb7451e"
+    },
+    {
+      "claim_id": "411f016b-f95d-47fa-bfa0-21070bb6a145",
+      "result_id": "026a0aa4-19bd-461f-91cf-f9a69eb7451e"
+    },
+    {
+      "claim_id": "f18f6ce2-649d-40ff-a103-f73191910c78",
+      "result_id": "f3b0c739-c023-4c8c-af31-3a7363563b3c"
+    },
+    {
+      "claim_id": "8282422b-c48b-48d6-bdfe-81c6f0e5c79d",
+      "result_id": "f3b0c739-c023-4c8c-af31-3a7363563b3c"
+    },
+    {
+      "claim_id": "8a1690d8-a83f-44de-98cd-a5175e197862",
+      "result_id": "f3b0c739-c023-4c8c-af31-3a7363563b3c"
+    },
+    {
+      "claim_id": "76fad2c8-3da2-440b-9a46-e43f51ab7beb",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "75b70720-3276-40e7-8af3-5accbcf9d5c5",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "fbec6057-0579-4b42-93ce-091bb5b3e242",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "ed591715-98fd-4e72-b331-b16fbd41c785",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "104d92cb-31a2-459c-915c-2261d2b3a1c6",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "f94d4aa1-c92d-49ab-9f19-47a976c0f4c1",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "4b54f64c-9296-482b-af8e-cfff236ab7d7",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "3daeeef8-c8e9-4168-a705-45c9f8f5ab08",
+      "result_id": "e7cf3a5f-68c3-4447-bc62-8d630434a59e"
+    },
+    {
+      "claim_id": "07dff5d8-a9a9-4976-9b3c-97453836d858",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "a4a807b7-d1f0-4efd-832b-ce8707844623",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "7b5d6068-64dc-40e7-8beb-7970cca5c750",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "b3043b8b-b2f5-440c-9152-60c83e725dba",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "e344bbed-6e6f-4108-8103-846ff6f033b0",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "0dbd20ad-9507-4566-841e-5ecf86df8264",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "4dda6e33-ce79-44c0-8b66-dc9399535666",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "cbf79a85-8e18-4a5a-b396-00d5ea40379e",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "35144ccf-40df-46b8-9c29-d44c9197a6af",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "6c539ee1-485a-45f3-8b39-6c4487af88df",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "d41485d0-e9b0-4f61-b849-45b5f69865ac",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "8303aee7-9ef4-4527-874e-8d07ceee629a",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "222de4d5-a20a-4e41-8548-db074bbdee71",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "06d2b695-8163-451b-8090-ca5de5e0d0d6",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "912decdd-f8e6-425c-9266-7d3ba686ba05",
+      "result_id": "57461562-74e8-49f5-a043-7a0a4538ad88"
+    },
+    {
+      "claim_id": "ecebd232-fd72-4f6f-8412-7fc740d87a52",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "f8eac6ef-43f3-47bf-b871-edd0f760d9ca",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "3fd6b0d9-aaa8-4d33-9b12-c2767c9c82de",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "41b754ef-5034-4b05-b8a4-afe20580ee67",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "423b6207-d766-4728-a31b-b3f0e656f0cc",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "fd287228-ae51-4cde-9a8a-6fc0604ad181",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "34357c1a-cac9-40ef-ace4-452c4515fdaf",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "ac9fa0c2-9180-4394-ae31-8acb0f7b7316",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "d66ffeaf-62fd-4bd9-a79f-c86550fbff5a",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "87b10f9a-8792-4901-8d46-d337c4318d83",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "e681829f-bdeb-4510-a1ac-0c9539a0541b",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "3d299842-f09a-41f1-99a7-1880cc59c055",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "83a7ad99-b6b1-4a84-a7a9-eb016922bdd4",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "6aa33ce5-8886-4c7b-b1f0-fee76fa7d9cf",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "36208d7c-a859-44ed-9845-094021dfd1d3",
+      "result_id": "4d0a46a7-6787-4eb0-81ea-0384c86c1a70"
+    },
+    {
+      "claim_id": "29a70fb6-2c57-43a4-82a2-6ecd4dc823a6",
+      "result_id": "00b7ba32-3ad2-41f6-b46d-635dff6e350f"
+    },
+    {
+      "claim_id": "afc945ad-7450-49f3-b4a2-b886931130f6",
+      "result_id": "94ae754a-768a-42de-a5aa-2d707afe10d6"
+    },
+    {
+      "claim_id": "b3b24b9c-6702-4eaa-ae0d-c199bccc0a6b",
+      "result_id": "94ae754a-768a-42de-a5aa-2d707afe10d6"
+    }
+  ],
+  "comparisons": []
+}

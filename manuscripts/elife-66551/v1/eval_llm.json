@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C24",
+      "C25",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a deep-learning CNN framework that decodes sensory and behavioral variables directly from minimally processed, wide-band neural data with little user input, generalizes across recording modalities and brain regions, and can be analyzed post-training to identify informative neural code elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C24-C25, C41-C42 collectively demonstrate the core capability and design of the framework. The experimental validation across CA1 recordings, auditory cortex, calcium imaging, and ECoG data (C6, C32) with successful decoding of multiple variables (C7, C98) and interpretability via influence analysis (C5, C104-C107) provides strong converging evidence for this central result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "The CNN accurately decoded spatial position from CA1 recordings (mean error 17.31\u00b14.46 cm), outperforming a Bayesian decoder (23.38\u00b14.35 cm) and SVMs, with the advantage increasing when channels were downsampled and when using both LFP and spiking data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C66-C68 provide quantitative performance metrics with statistical validation (Wilcoxon test p=0.0001). The comparisons to Bayesian decoder (C66, C70-C71) and SVMs (C77) are methodologically sound with appropriate controls. The analysis of LFP vs spiking contributions (C78-C82) demonstrates the framework extracts information from multiple frequency bands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C112"
+    ],
+    "result": "The network identified a previously unreported representation: 36.2% (33/91) of putative CA1 interneurons were modulated by head direction, validated through conventional analysis with rigorous spatial and stability controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C112 describe a novel finding discovered via the CNN's influence analysis and subsequently validated using conventional methods (Kullback-Leibler divergence, shuffling procedures, spatial controls). The convergence of CNN-based discovery and traditional validation with quantitative metrics (36.2% significant cells) provides strong support for this discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Influence analysis revealed that 469 Hz and 663 Hz frequency bands, corresponding to place cell action potentials, were most informative for position decoding, while interneurons (5304 Hz, 3750 Hz) were less informative, validated by correlation with spike-sorted waveforms (\u03c1=0.84, p=7.63e-08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C106-C109 demonstrate the interpretability of the trained network. The influence analysis correctly identified known neural correlates (place cells), validated by independent waveform analysis showing strong correlation (C107). The distinction between place cells and interneurons (C108-C109) with statistical support (Mann-Whitney U=1009.5, p=2.47e-13) confirms the method's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The network identified multiple frequency bands informative for speed decoding: theta oscillations (10.4 Hz), place cell firing rates (663 Hz), interneuron activity (2652 Hz), and type 2 theta during immobility (3.66-5.17 Hz), consistent with established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C113-C116 show the network correctly identified known speed correlates with appropriate citations. The influence analysis revealed multiple informative frequency bands, each corresponding to established neural phenomena, demonstrating the method's ability to discover multiplexed representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "The network simultaneously decoded position (17.78\u00b14.96 cm), head direction (0.80\u00b10.18 rad), and speed (4.94\u00b11.00 cm/s) with no performance decrement compared to single-variable models, outperforming Bayesian decoders for head direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101, C103 demonstrate multi-variable decoding capability with quantitative metrics and statistical validation (Wilcoxon tests). The lack of performance decrement (C99, p=0.2108) and superior performance vs Bayesian decoder for head direction (C100, p=0.0018) support the claim of effective multiplexed information extraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C117",
+      "C119",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The same CNN architecture generalized across recording modalities: auditory cortex electrophysiology (R\u00b2=0.734\u00b10.080), two-photon calcium imaging (R\u00b2=0.90\u00b10.03), and human ECoG (Pearson's r=0.517\u00b10.160), requiring only minor architectural adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C117, C119, C121-C125 demonstrate broad generalizability with quantitative performance metrics across three different recording techniques and species. The minimal architectural changes required (C117) and successful decoding in all cases, including outperforming BCI competition baseline (C124), strongly support the generalization claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Weight sharing via 2D convolutions reduced model complexity from 38,144,900 to 5,299,653 parameters (720% reduction), decreased training time from 4.7 hr to 175 s per epoch, and improved decoding accuracy compared to models without weight sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 provide quantitative comparisons demonstrating the benefits of weight sharing. The dramatic reductions in parameters (C56) and training time (C57) with improved performance (C58, Figure 1-supplement 1) provide strong evidence for this architectural choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "At 500 Hz sampling, the CNN decoded transient high-velocity trajectories during ripple periods that were longer (p=0.003) and had higher error (p<0.001) than matched stationary periods, but were coherent (p=0.257), suggesting detection of replay events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C92 present suggestive evidence with statistical support, but C93-C94 acknowledge this is speculative ('highly likely', 'seems plausible'). While the characteristics match replay events, definitive validation would require comparison to established replay detection methods or additional controls. The evidence is consistent with replay but not conclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "A shuffling-based influence analysis method was developed to efficiently identify which frequency bands, channels, and time points contribute to decoding accuracy without requiring model retraining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 describe the influence analysis methodology. The validation through correlation with single-frequency models (Figure 3-supplement 1, \u03c1=0.88 for position) and simulated behaviors (Figure 3-supplement 3) demonstrates the method's accuracy and efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Frequency interaction analysis revealed positive interactions between frequency bands associated with place cell waveforms (331.5-937.5 Hz), where combined influence exceeded the sum of individual influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by Figure 1-supplement 9 showing statistically significant positive interactions (Wilcoxon tests with Holm-Sidak correction, n=325 comparisons) between specific frequency pairs. This demonstrates the framework can identify synergistic neural code elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The CNN's superior performance on difficult samples suggests it utilizes additional information from sub-threshold spikes, unsuccessfully clustered spikes, and/or nonlinear information unavailable to the Bayesian decoder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is an inference based on performance differences (C67-C68). While the CNN's advantage on large errors is documented, the specific mechanisms (sub-threshold spikes, clustering failures, nonlinear information) are speculative. Direct evidence would require ablation studies or explicit comparison of information sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Limiting the CNN to movement periods (>3 cm/s threshold) improved performance and increased the advantage over the Bayesian decoder across all speed thresholds tested (0-25 cm/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by quantitative comparisons at multiple speed thresholds (Figure 1-supplement 6), showing the CNN maintains superior performance when matched to Bayesian decoder conditions, addressing potential methodological confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Spatial information in the LFP band is predominantly contained in higher frequencies (150-250 Hz), likely reflecting power from pyramidal cell waveforms reaching these frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by frequency band analysis (Figure 1-supplement 2, Figure 3-supplement 1) showing better decoding with 150-250 Hz compared to 0-150 Hz. The interpretation regarding pyramidal waveforms is reasonable given the overlap with spike-associated frequencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C13"
+    ],
+    "result": "Neural recordings have increased in size and extent due to technological progress, but interpretation remains challenging due to high-dimensional, sparse activity and multiplexed representations requiring considerable domain knowledge and manual operations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11, C13 provide context for the study, drawing on established knowledge about neural recording technologies and data interpretation challenges. These are well-supported by the field's consensus and set up the motivation for the proposed approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors propose that deep-learning frameworks like this constitute valuable tools for neuroscientists, best used as first-pass analysis followed by conventional validation, and likely to generalize to other recording modalities (fMRI, EEG, MEG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 represent reasonable recommendations based on the demonstrated workflow (C28-C29, C112), but C128 is speculative about untested modalities. While the generalization across tested modalities (C32, C125) is strong, extension to fMRI/EEG/MEG requires empirical validation given their different signal characteristics.",
+    "result_type": "MINOR"
+  }
+]

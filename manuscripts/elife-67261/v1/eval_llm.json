@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "SYT7KO neurons show no significant difference in total glutamate release magnitude from a single stimulus compared to WT, but exhibit a small (3%) yet statistically significant decrease in asynchronous release. This subtle difference was detected using the sensitive iGluSnFR optical probe, whereas previous electrophysiological studies found no differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by iGluSnFR measurements (Figure 1a-c) showing no difference in peak release but a small significant decrease in asynchronous release. The comparison to prior electrophysiology studies (C3) provides appropriate context, and the interpretation regarding probe sensitivity (C4) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "SYT7KO neurons exhibit complete loss of paired-pulse facilitation (PPF) across all tested interstimulus intervals (50-500 ms), releasing approximately half the glutamate in response to the second stimulus compared to WT. This deficit arises from reduced release at already-active synapses rather than recruitment failure, with SYT7KO neurons deactivating ~10% of synapses at shorter intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 are strongly supported by comprehensive PPF measurements using iGluSnFR (Figure 1d-g, Figure 1\u2014figure supplement 1). The spatial resolution of optical imaging allows direct demonstration that PPF results from enhanced release at active boutons rather than recruitment (C10), which is a novel mechanistic insight well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "During high-frequency stimulation (HFS), SYT7KO synapses exhibit more rapid and severe depression than WT, with reduced active synapse numbers, approximately half the synaptic vesicle replenishment rate, and progressively diminished asynchronous release. These findings indicate SYT7 continuously promotes asynchronous release, with enhanced function during sustained activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are well-supported by HFS experiments using iGluSnFR (Figure 2a-f, Figure 2\u2014figure supplement 1). The data clearly demonstrate enhanced depression, reduced replenishment rates (~50% of WT), and decreased asynchronous release in SYT7KO neurons. The conclusion that SYT7 continuously promotes asynchronous release (C15) is a reasonable interpretation supported by the progressive differences during trains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Quantal analysis reveals that asynchronous release in WT neurons comprises both uni- and multiquantal events (with uniquantal favored), while SYT7KO neurons show a decreased fraction of multiquantal asynchronous release events compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by quantal analysis of iGluSnFR peaks (Figure 2g-j). The analysis appropriately uses late-train data to define single quanta and applies this to characterize asynchronous release. The finding that SYT7 promotes multiquantal asynchronous release is novel and well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "At rest, SYT7KO synapses show normal morphology and vesicle numbers, but after stimulation (single AP or HFS), SYT7KO synapses have 30-40% fewer docked vesicles than WT at all time points examined. This increased loss of docked vesicles is not due to increased exocytosis but represents a specific docking defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are strongly supported by 'zap-and-freeze' electron microscopy data (Figure 3a-c). The quantification is rigorous with >300 profiles per condition from three biological replicates. The inference that reduced docking is not due to increased exocytosis (C21) is appropriately supported by the iGluSnFR data showing no increase in release magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Following HFS, both WT and SYT7KO synapses show modest decreases in total SV number at 5 ms, but only WT synapses recover by 5 seconds. The distribution of SVs within 100 nm of the active zone (excluding docked vesicles) remains unchanged, indicating the docking defect is specific and not secondary to altered SV distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are well-supported by electron microscopy data (Figure 3d-e). The careful spatial analysis of SV distribution (C24) strengthens the conclusion that the docking defect is specific (C25). The finding that SYT7KO synapses fail to recover total SV number provides a potential mechanism for the replenishment defect observed functionally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SYT7\u03b1 exhibits striking asymmetric localization to axons versus dendrites and localizes to the plasma membrane within axons, as demonstrated by super-resolution imaging. SYT7\u03b1 is also present on endo-lysosomal compartments including active and inactive lysosomes, specifically on lysosomal membranes rather than as cargo for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by multiple complementary imaging approaches including ICC, super-resolution Airyscan microscopy, and HITI-based endogenous tagging (Figure 4a-g, Figure 4\u2014figure supplements 1-2). The PM localization is convincingly demonstrated by the 'double bump' pattern in line profiles (C28), and the lysosomal membrane localization is supported by Prosense 680 labeling and super-resolution imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "SYT7KO neurons show no alterations in cholesterol-dependent protein-protein interactions (SYP/SYB), lipid composition by thin layer chromatography, or neutral lipid accumulation in lysosomes, indicating SYT7 influences the SV cycle from the axonal plasma membrane rather than indirectly through cholesterol trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by chemical crosslinking, thin layer chromatography, and lipid droplet staining experiments (Figure 4\u2014figure supplement 3a-f). These negative results appropriately rule out an alternative hypothesis regarding cholesterol trafficking and support the conclusion that SYT7 functions directly at the PM. The experiments are well-controlled and use established methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SYT7\u03b1 undergoes proteolytic cleavage by \u03b3-secretase in its transmembrane domain. N-terminally tagged constructs show cleavage while C-terminally tagged constructs remain intact. DAPT (a \u03b3-secretase inhibitor) alone shifts the mobility of all native SYT7 isoforms with an IC50 of ~71 nM, indicating SYT7 is a direct substrate of \u03b3-secretase without requiring metalloprotease preprocessing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 are well-supported by systematic immunoblot analyses with various tagged constructs and protease inhibitors (Figure 5a-c, Figure 5\u2014figure supplement 1a-d). The IC50 determination is rigorous, and the conclusion that SYT7 is a direct \u03b3-secretase substrate (C41) is appropriately supported by the differential effects of DAPT versus metalloprotease inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Full-length SYT7\u03b1 transits through the plasma membrane before being cleaved by \u03b3-secretase in intracellular synaptic endosomal structures, as demonstrated by labeling with membrane-impermeant JF549i dye that reveals fluorescent punctae partially colocalizing with LAMP1-positive structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by elegant pulse-labeling experiments using impermeant JF549i dye (Figure 5d-f). The experimental design directly tests the trafficking pathway, and the observation of labeled SYT7 in intracellular compartments demonstrates PM transit before cleavage. The inference about the trafficking pathway (C44) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Inhibition of \u03b3-secretase with DAPT causes SYT7\u03b1-HaloTag mislocalization to small punctae with reduced axonal staining and redistribution to earlier secretory compartments. Brief treatment with the palmitoylation inhibitor 2-BP causes complete disappearance of SYT7\u03b1-HaloTag. However, DAPT treatment of WT neurons does not phenocopy SYT7KO, suggesting residual functional SYT7 remains at the PM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by ICC experiments with DAPT and 2-BP treatments (Figure 6a-d). The colocalization analysis quantitatively demonstrates mislocalization to earlier secretory compartments (C47). The observation that DAPT doesn't phenocopy SYT7KO (C50) is appropriately interpreted as potentially due to residual PM-localized SYT7, though this interpretation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SYT7\u03b1 is a long-lived protein, but \u03b3-secretase inhibition enhances its turnover (reducing half-life from ~9.5 to ~3.3 days). Palmitoylation site mutations (Cys to Ala) result in unstable protein only marginally stabilized by DAPT. Together, these findings indicate SYT7 is cleaved in its TMD by \u03b3-secretase and becomes completely reliant on palmitoylation for PM association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by pulse-chase experiments using JF635-labeled SYT7\u03b1-HaloTag (Figure 6e-f, Figure 6\u2014figure supplement 1d-e). The half-life measurements are rigorous, and the finding that \u03b3-secretase inhibition accelerates turnover (C53) is unexpected but well-demonstrated. The palmitoylation mutant data (C54) strongly support the model that both modifications are required for stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Retargeting experiments demonstrate that PM-localized SYT7\u03b1 rescues all phenotypes (depression, PPF, asynchronous release), while endo-lysosomal-targeted SYT7\u03b1 rescues depression and PPF but not asynchronous release, and SV-targeted SYT7\u03b1 fails to rescue any phenotype. These results indicate PPF and asynchronous release are mechanistically distinct and that SYT7 must localize to the PM to support all its functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are strongly supported by comprehensive rescue experiments using retargeted SYT7\u03b1 constructs (Figure 7d-i). The experimental design is elegant and directly tests the importance of subcellular localization. The conclusion that PPF and asynchronous release are mechanistically distinct (C62) is well-supported by the differential rescue with LAMP1-targeted SYT7\u03b1. This is a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study demonstrates that SYT7 is targeted to the axonal plasma membrane through \u03b3-secretase processing and palmitoylation, where it functions as a peripheral membrane protein to promote synaptic vesicle docking and control multiple modes of exocytosis and plasticity. SYT7 contributes to asynchronous release, paired-pulse facilitation, and synaptic vesicle replenishment to different degrees, with loss of SYT7 diminishing vesicle docking after stimulation and inhibiting recovery after stimulus trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 represent the main conclusions of the study and are well-supported by the comprehensive data from functional, ultrastructural, localization, and rescue experiments. The integration of multiple experimental approaches provides strong converging evidence for the model that SYT7 functions from the PM to regulate multiple aspects of the SV cycle through effects on docking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The introduction provides extensive background on synaptotagmin isoforms, particularly SYT1, SYT2, and SYT7, reviewing their known functions, localization controversies, and the evolution of understanding regarding SYT7's roles in asynchronous release, PPF, and SV replenishment across different synapse types and experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C100 are appropriately supported by citations to relevant literature. The authors provide a comprehensive and balanced review of prior work, acknowledging contradictory findings and the evolution of the field's understanding. The citations appear accurate and appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The discussion synthesizes findings showing that SYT7 processing by \u03b3-secretase is required for axonal PM enrichment and stability, and that SYT7KO synapses show enhanced undocking during activity and failure to regenerate SVs after HFS. The authors propose future directions including clarifying the relative contributions of SYT7 and DOC2 to asynchronous release, speculating that early asynchronous release may be DOC2-dependent while late release is SYT7-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are well-supported summaries of the experimental findings. However, claims C103-C105 are speculative proposals for future work. While the speculation is reasonable and based on the current findings, these represent hypotheses to be tested rather than supported conclusions. The distinction between early and late asynchronous release (C104) is particularly speculative.",
+    "result_type": "MINOR"
+  }
+]

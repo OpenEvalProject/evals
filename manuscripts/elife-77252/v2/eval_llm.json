@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C34",
+      "C35",
+      "C36",
+      "C70",
+      "C74"
+    ],
+    "result": "PharaGlow enables automated, high-throughput detection of pharyngeal pumping in up to 50 unrestrained C. elegans simultaneously using low-magnification fluorescence imaging. The method accurately detects pumping with less than 2 pumps per 10 s deviation compared to human expert counting and provides more than an order of magnitude increase in throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9, C34-C36 provide converging experimental evidence that PharaGlow can image many animals simultaneously at low magnification and accurately detect pumping events. The validation against human experts (C9, Figure 1I-J) and the throughput comparison (C70) strongly support the method's capabilities. The field of view and detection accuracy are directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Developmental analysis shows that on-food pumping rates increase slightly over larval stages (L1-L4 to young adult), with over 1000 animal tracks obtained across five developmental stages. This represents up to two orders of magnitude more data than conventional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C37-C40 provide direct experimental measurements across developmental stages with large sample sizes (Figure 2). The data show modest increases in pumping rate during development with robust statistics. The comparison to conventional methods (C39, Table 1) supports the throughput claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C47",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Starvation experiments reveal that pumping rates decrease over 3 hours of food deprivation, with distinct behavioral sub-populations observed at 30 min starvation showing either high-speed/high-pumping or low-speed/low-pumping states that become more homogeneous with longer starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C50-C52 are supported by experimental data in Figure 3 showing time-dependent changes in pumping and velocity distributions. The bimodal distributions at early starvation timepoints and their resolution over time are clearly demonstrated. The interpretation of distinct behavioral states is reasonable given the joint distribution data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Long-term imaging of mating animals over 74 minutes demonstrates that PharaGlow can track individual animals continuously for hours. The YFP fluorescence decay time is 410\u00b147 min, enabling multi-hour recordings. Male and hermaphrodite show distinct behavioral profiles despite being in the same arena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C53-C57 are supported by the mating experiment data (Figure 4) and photobleaching measurements (Figure 4\u2014figure supplement 1). The long decay time directly supports multi-hour imaging capability. The behavioral differences between male and hermaphrodite are clearly shown in the velocity and pumping distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C58",
+      "C59",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "unc-31 mutants show comparable mean pumping rates to wildtype but display a bimodal distribution with long pauses in pumping and more persistent pumping behavior (\u03c4=9.6-11.0 min vs 7.9 min for wildtype). Wild-type animals show frequent switching between high and low pumping states, while unc-31 animals show infrequent switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C23-C26, and C58-C59 are supported by experimental data in Figure 5. The bimodal distribution (Figure 5B, F), autocorrelation analysis (Figure 5\u2014figure supplement 2), and state transition analysis (Figure 5H, J) provide converging evidence for altered pumping dynamics in unc-31 mutants. The longer autocorrelation time and reduced state transitions are quantitatively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "eat-18 mutants are smaller, develop more slowly (91 hr vs 63 hr to adulthood), lack fast pumping bursts, show doubled pharyngeal contraction duration, and display significantly fewer reversals than wildtype. The mutants pump at ~1 Hz, higher than previously reported (<0.5 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C61-C63 are supported by experimental data in Figure 5. The size difference (C18, Figure 5C), developmental timing (C19), altered pumping pattern (C20-C21, Figure 5B, E-F), and reversal phenotype (C22) are all directly measured. The discrepancy with prior literature (C62-C63) is acknowledged and verified by manual inspection of videos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Light exposure effects were characterized, showing mild light avoidance (5-25%) that depends on developmental stage. Repeated exposure affected velocity only in young adults. Long-term exposure (up to 5 hr) did not affect viability. Different excitation wavelengths had mild impact on velocity but not pumping rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by experimental data in Figure 2\u2014figure supplements 3-5. The effects are systematically characterized across developmental stages and exposure conditions. The findings are important for validating that the imaging method does not introduce major artifacts, though some modest effects are detected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The PharaGlow analysis pipeline consists of three steps: center of mass tracking, trajectory linking, and extraction of pharyngeal parameters. The software is modular and uses established algorithms (AMPD for peak detection). Behavioral parameters including pumping, velocity, and reversals are extracted using defined metrics and thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 describe the computational methods that are implemented in the openly available software. The methods are clearly described and validated against human expert counting (C9). The modular design (C85) and use of established algorithms (C88) support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Technical limitations include sensitivity to uneven plates and improper focus leading to low signal-to-noise ratios, though small height variations are tolerated due to large depth of field. Data rate is >6 GB/min and analysis time is ~8 hr for 150 worm-minutes on a 4-core laptop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 describe practical limitations and computational requirements that are directly reported from experimental experience. These are important for users to understand the method's constraints and resource needs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The method enables non-invasive imaging allowing repeated measurements and creates opportunities for studying novel behaviors like foraging in complex environments. The requirement for fluorescent labeling is mitigated by conservation of myo-2 across nematode species, with strains already available for related species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71 is supported by the developmental and mating experiments demonstrating repeated/continuous imaging. However, C72, C75-C76 are speculative about future applications that have not been demonstrated. C77-C78 make reasonable arguments about extensibility but this remains to be tested. The speculation is reasonable but not yet validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C41",
+      "C46",
+      "C48",
+      "C49",
+      "C60",
+      "C64"
+    ],
+    "result": "Background claims about C. elegans feeding biology, pharyngeal function, and prior methodological challenges are established from literature. These include pumping rates, stochastic nature of pumping, developmental changes, and technical challenges of imaging unrestrained animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C10, C27-C33, C41, C46, C48-C49, C60, C64 are all supported by citations to prior research and represent established knowledge in the field. These provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C73"
+    ],
+    "result": "Current methods for measuring feeding require single animal tracking, indirect population metrics, or restrained animals. Understanding neural basis of feeding requires temporal resolution to correlate pumping with neural activity, which bulk methods cannot provide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C73 accurately describe limitations of existing methods as documented in Table 1 and prior literature. This establishes the need for the new method and is supported by the comparison table.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Detailed experimental parameters are reported including illumination power density (0.24 mW/mm2), frame rate (30 fps), imaging duration (5 min standard), magnification choices (~60 pixel pharynx length), and data inclusion criteria (60 s minimum track duration for most experiments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 and C93-C95 provide methodological details that are clearly stated and enable reproducibility. These are standard reporting of experimental parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The authors conclude that studying underlying behaviors and dynamics in worm populations requires large statistics and long recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is a reasonable inference drawn from the experimental results showing population heterogeneity, temporal dynamics, and the value of the high-throughput approach. This is supported by the data presented throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

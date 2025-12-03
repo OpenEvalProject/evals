@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Single-cell RNA sequencing of mosquito hemocytes yielded 262 quality-filtered cells expressing approximately 46% of the An. gambiae genome, with a median of 1646 genes per cell and eight distinct cell clusters identified through hierarchical clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide consistent quantitative data on cell numbers, genome coverage, and cluster identification. The quality filtering threshold (10,000 reads/cell) is clearly stated, and the hierarchical clustering methodology is appropriate for the data type. The higher gene variance compared to previous studies (C23) is a reasonable observation given the broader FACS gating strategy employed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Cell clusters show distinct enrichment patterns across FACS gates based on WGA/DRAQ5 staining, with differences in DNA content suggesting potential variations in ploidy among hemocyte populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe the distribution of clusters across FACS gates with supporting figure evidence. The inference about ploidy variation (C29) is appropriately cautious, supported by citations to previous work, though direct ploidy measurements were not performed. The FACS methodology provides a reasonable basis for these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Most cell clusters are present under both na\u00efve and blood-fed conditions, with only Clusters 2 and 4 showing significant differential gene expression, including down-regulation of immune genes in Cluster 2 and up-regulation of trafficking/metabolic genes following blood-feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 present differential expression data with appropriate statistical support (Supplementary file 2). The observation that only 2 of 8 clusters show significant changes is well-documented. The functional interpretation of gene changes (C33-C37) is supported by citations to previous functional studies. The inference about blood-feeding effects (C38) is appropriately cautious and consistent with cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mitotic marker expression analysis reveals no differences between na\u00efve and blood-fed conditions overall, but Clusters 2 and 4 display the highest expression of mitotic markers, suggesting potential proliferative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by Figure 2B-C data. The lack of overall differences (C39) and cluster-specific patterns (C40) are clearly shown. The inference about proliferative capacity (C41) is appropriately tentative given that it is based on marker expression rather than direct proliferation assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Transcriptional profiling and correlation with previous proteomics data identify Clusters 2-4 as phagocytic granulocytes, Cluster 5 as having a unique redox/stress response profile, and Clusters 7-8 as distinct oenocytoid populations despite sharing similar markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 integrate multiple lines of evidence including GO analysis, proteomics correlations, and marker expression patterns. The correlation with Smith et al. 2016 proteomics (C42) provides independent validation. The characterization of Cluster 5 (C44) and distinction between Clusters 7-8 (C45) are supported by Figure 2D data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Cluster 1 likely represents non-hemocyte contaminating cells such as fat body based on gene expression profiles matching non-hemocyte markers and high DNA content consistent with polyploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 use comparative analysis with published gene sets (Raddi et al. 2020, Tattikota et al. 2020) and FACS data to identify Cluster 1 as contaminants. This is a reasonable interpretation supported by Figure 2\u2014figure supplement 2 and citations to studies showing fat body polyploidy. The exclusion of this cluster from downstream analysis is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Comparative analysis with Drosophila orthologs and known mosquito markers identifies universal hemocyte markers (SPARC, Cg25C, NimB2, PPO6), granulocyte markers (peroxidasin, eater, LRIM16A, LRR8, SCRASP1, SRPN10, LRIM15), and oenocytoid markers (lozenge, PPO1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 systematically characterize cell types using conserved markers with appropriate citations. The identification of universal markers (C48, C52, C55) and lineage-specific markers (C49, C50, C53, C54) is supported by Figure 2E-F data and multiple literature references. The inference that Clusters 7-8 represent oenocytoids (C51) is well-supported by marker expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PPO expression analysis reveals that PPO2/4/5/9 are abundant in granulocytes while PPO1/3/8 are enriched in oenocytoids, contrasting previous suggestions that PPOs are exclusively expressed in oenocytoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 present PPO expression data (Figure 2G) that challenges previous paradigms. The contrast with earlier literature (C58) is appropriately documented with citations, and the support for granulocyte PPO expression (C59) is backed by recent studies (Kwon and Smith 2019, Smith et al. 2016). This represents an important refinement of the field's understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Immune signaling pathway components show highest expression in Clusters 2 and 8, while chemosensory receptors are highly expressed in Clusters 7 and 8, suggesting distinct immune functions and potential roles for odorant binding proteins in immune development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe expression patterns of immune and chemosensory genes supported by Figure 2\u2014figure supplements 4-6. The inference about distinct immune functions (C61) is reasonable given the expression patterns. The speculation about odorant binding protein function (C63) is appropriately cautious and supported by citation to work in other insect systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Integration of marker expression, gene counts, and differentiation markers identifies Cluster 5 as prohemocytes, Clusters 2-4 as mature granulocytes (marked by LRIM15/SCRASP1), Cluster 6 as immature granulocytes, and Clusters 7-8 as oenocytoids (marked by SCRB9/SCRB3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 synthesize multiple lines of evidence to assign cell identities. The identification of prohemocytes (C65) is supported by low gene expression and cyclin G2 levels with appropriate citations. The distinction between mature (C67) and immature (C68) granulocytes is logical based on marker expression. The oenocytoid identification (C69) is well-supported by SCRB9/SCRB3 expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "RNA-FISH validation confirms that NimB2 labels >90% of hemocytes as a universal marker, LRIM15 labels ~60% of cells as phagocytic granulocytes, and SCRB9 labels ~5% of cells as oenocytoids, with distinct non-overlapping populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 provide experimental validation of computational predictions using RNA-FISH. The quantitative data on cell abundance (C74-C76) and marker specificity (C73) are clearly presented in Figure 3. This orthogonal validation strengthens the cluster assignments and provides reliable markers for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Functional validation demonstrates that LRIM15+ cells are phagocytic with higher activity than LRIM15- cells, SCRB9+ cells are non-phagocytic, and clodronate treatment specifically depletes LRIM15+ cells while sparing oenocytoid markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 provide functional validation through phagocytosis assays (Figure 3E-F) and clodronate depletion experiments (Figure 3G-H). The differential phagocytic activity (C79) is statistically supported, and the specificity of clodronate depletion (C80-C81) is confirmed by both RNA-FISH and qRT-PCR, providing strong evidence for the functional distinctions between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Detailed characterization identifies four granulocyte subtypes: Cluster 2 as specialized immune cells with high AMP/Toll pathway expression, Cluster 3 with cathepsin expression, Cluster 4 with high FBN/PPO expression, and Cluster 6 as immature precursors with reduced phagocytic markers and low Cyclin G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide detailed molecular characterization of granulocyte subtypes supported by Figure 3\u2014figure supplement 4. The functional interpretations are appropriately cautious (C84, C87, C89) and supported by marker expression patterns and citations to similar cell types in other studies. The use of Cyclin G2 as a differentiation marker (C88) is well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Oenocytoid populations are distinguished as immature (Cluster 7) and mature (Cluster 8) based on differential expression of PPO1/SCRB3/SCRB9 and mature markers (hnt/peb, DnaJ-1, Mlf, klu, lozenge), with high DNA content suggesting polyploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 characterize oenocytoid maturation states using marker expression (Figure 3\u2014figure supplement 4) and comparison to Drosophila crystal cells with appropriate citations. The polyploidy inference (C93) is based on FACS data and supported by citation to Ren et al. 2020, though direct ploidy measurements were not performed. The parallel to Drosophila strengthens this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Comparative analysis with other single-cell studies shows strong conservation of universal and granulocyte markers across species, but important differences in oenocytoid marker usage, particularly regarding PPO4/9 expression and the identification of SCRB3/SCRB9 as oenocytoid markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 systematically compare findings across studies (Figure 3\u2014figure supplements 5-6). The identification of conserved markers (C94-C95) and species-specific differences (C96-C100) is well-documented. The discrepancies in oenocytoid markers between studies (C98-C100) are clearly stated and represent important contributions to resolving conflicting literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Analysis of LysI and FBN10 expression shows LysI is predominantly in granulocytes (Clusters 2-4) while FBN10 is in both granulocytes and oenocytoids, with both correlating with PPO6 expression consistent with previous PPO6low/high classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 reconcile current findings with previous classifications (Severo et al. 2018) using expression data (Figure 3\u2014figure supplement 8). The correlation analysis (C103) provides quantitative support, though the authors appropriately note that these markers don't fully capture the complexity identified in their study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Pseudotime analysis reveals two distinct lineages from prohemocyte precursors (Cluster 5): a granulocyte lineage progressing through immature (Cluster 6) to mature states (Clusters 2-4), and an oenocytoid lineage progressing from immature (Cluster 7) to mature (Cluster 8) states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 present lineage analysis using Monocle3 (Figure 4) showing consistent trajectories across conditions. The identification of two lineages from a common precursor (C105) is supported by pseudotime plots. The progression through immature to mature states (C106, C108) is consistent with marker expression data. The inference about Cluster 3 as a transient state (C107) is appropriately tentative. This corroborates previous proposals (C110) with molecular evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Lozenge is expressed in ~15% of cells including both oenocytoids and some phagocytic cells; RNAi silencing of lozenge significantly reduces SCRB9+ oenocytoids and specifically decreases PPO1/3/8 expression, demonstrating lozenge is integral to oenocytoid differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C121 combine expression analysis (Figure 5A-C), functional validation through RNAi (Figure 5D-E), and phagocytosis assays (Figure 5\u2014figure supplement 1). The RNAi experiments show specific effects on oenocytoid markers and PPO subset (C116-C118), providing strong functional evidence. The broader expression of lozenge (C113-C115) is well-documented. The alternative transdifferentiation model (C121) is appropriately presented as a possibility supported by Drosophila literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Both granulocytes and oenocytoids contribute to PPO production with distinct PPO subsets differentially regulated in each lineage; lozenge-silencing specifically reduces PPO1/3/8 in oenocytoids while granulocyte-associated PPOs remain unaffected, reflecting the expansion of the PPO gene family in mosquitoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 integrate scRNA-seq data with functional RNAi experiments to demonstrate lineage-specific PPO regulation. The specific reduction of PPO1/3/8 upon lozenge silencing (C124) is supported by qRT-PCR data (Figure 5E). Support from other mosquito species (C125) and prostaglandin studies (C126) strengthens the conclusions. The evidence for granulocyte PPO expression (C127) is well-cited. The interpretation regarding PPO gene family expansion (C128-C129) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Comparison with Drosophila reveals similarities in developmental progression and multiple phagocytic populations, but also differences including absence of hemolectin/hemese markers, lack of lamellocytes, and mosquito-specific markers (LRIM15, SCRB9) and expanded PPO genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 provide systematic comparison with Drosophila studies with appropriate citations. The identification of similarities (C130) and differences (C131-C133) is well-documented. The absence of certain markers and cell types (C131-C132) is clearly stated, and the identification of mosquito-specific features (C133) represents important contributions to comparative immunology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Comparison with Raddi et al. 2020 shows agreement on prohemocytes and granulocyte populations but significant differences in oenocytoid identification, with this study's oenocytoids expressing conserved PPO1/lozenge markers while Raddi's oenocytoids more closely resemble granulocytes; differences may reflect sampling timepoints and methodological approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C145 provide detailed comparison with Raddi et al. 2020 identifying areas of agreement (C136) and disagreement (C137-C139). The analysis of why certain cell types were not detected (C140-C145) appropriately considers experimental differences including timepoints (C141-C142, C145) and methodology (C146-C147). The critique of oenocytoid identification in Raddi et al. (C138-C139) is supported by marker expression analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The FACS-based enrichment methodology enabled higher resolution of hemocyte subtypes despite sequencing fewer cells (262 vs 5383) compared to 10x Genomics approaches, with integration of previous immunofluorescence, transcriptional, and proteomic data providing a comprehensive resource.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 discuss methodological advantages and integration efforts. The comparison of cell numbers and resolution (C146-C147) is factually accurate, though the causal inference about FACS contributing to resolution is reasonable but not definitively proven. The integration with previous studies (C148-C150) is well-documented with appropriate citations and represents a strength of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The study provides new insights into mosquito immune cell biology including ploidy variation, differential CLIP/SRPN expression, chemosensory gene enrichment, and tRNA expression patterns, while demonstrating lozenge's role in oenocytoid differentiation and identifying knowledge gaps in hematopoiesis signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C158 summarize novel findings and future directions. The RNA-FISH data on oenocytoid phagocytosis (C151) resolves previous ambiguity. The identification of new insights (C152) is supported by the data presented. The demonstration of lozenge's role (C153) is well-supported by RNAi experiments. The acknowledgment of knowledge gaps (C155) and need for genetic tools (C157) is appropriate. The perspective on future utility (C156, C158) is reasonable given the comprehensive dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The characterization of at least seven immune cell subtypes with dependable molecular markers provides an important advancement and resource for the vector community, offering new insights into mosquito immune cell complexity and a foundation for comparative analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 provide summary statements about the study's contributions. The identification of seven subtypes (C160) is well-supported by the data presented throughout. The development of molecular markers is validated through RNA-FISH and functional assays. The assessment of the work as an important advancement (C159, C161) is reasonable given the comprehensive nature of the study, though these are somewhat subjective evaluative statements by the authors.",
+    "result_type": "MAJOR"
+  }
+]

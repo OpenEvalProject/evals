@@ -1,0 +1,2119 @@
+{
+  "submission": {
+    "id": "d70f9b37-8f9d-4c13-b51f-5156bde45379",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:01:57.648664Z",
+    "updated_at": "2025-12-03T11:01:57.648664Z"
+  },
+  "content": [
+    {
+      "id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "submission_id": "d70f9b37-8f9d-4c13-b51f-5156bde45379",
+      "content_type": "manuscript",
+      "content_text": "# Endurance exercise ameliorates phenotypes in Drosophila models of spinocerebellar ataxias\n\n## Authors\n\n- Alyson Sujkowski<sup>1</sup> ([ORCID: 0000-0002-9909-9279](https://orcid.org/0000-0002-9909-9279))\n- Kristin Richardson<sup>1</sup>\n- Matthew V Prifti<sup>2</sup>\n- Robert J Wessells<sup>1</sup> ([ORCID: 0000-0002-4516-3183](https://orcid.org/0000-0002-4516-3183)) \u2020\n- Sokol V Todi<sup>2</sup> ([ORCID: 0000-0003-4399-5549](https://orcid.org/0000-0003-4399-5549)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))\n2. Department of Pharmacology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))\n3. Department of Neurology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEndurance exercise is a potent intervention with widespread benefits proven to reduce disease incidence and impact across species. While endurance exercise supports neural plasticity, enhanced memory, and reduced neurodegeneration, less is known about the effect of chronic exercise on the progression of movement disorders such as ataxias. Here, we focused on three different types of ataxias, spinocerebellar ataxias type (SCAs) 2, 3, and 6, belonging to the polyglutamine (polyQ) family of neurodegenerative disorders. In Drosophila models of these SCAs, flies progressively lose motor function. In this study, we observe marked protection of speed and endurance in exercised SCA2 flies and modest protection in exercised SCA6 models, with no benefit to SCA3 flies. Causative protein levels are reduced in SCA2 flies after chronic exercise, but not in SCA3 models, linking protein levels to exercise-based benefits. Further mechanistic investigation indicates that the exercise-inducible protein, Sestrin (Sesn), suppresses mobility decline and improves early death in SCA2 flies, even without exercise, coincident with disease protein level reduction and increased autophagic flux. These improvements partially depend on previously established functions of Sesn that reduce oxidative damage and modulate mTOR activity. Our study suggests differential responses of polyQ SCAs to exercise, highlighting the potential for more extensive application of exercise-based therapies in the prevention of polyQ neurodegeneration. Defining the mechanisms by which endurance exercise suppresses polyQ SCAs will open the door for more effective treatment for these diseases.\n\n## Introduction\n\nNine inherited neurodegenerative disorders are caused by expansion of a CAG triplet repeat in the protein-coding region of the respective disease genes. The CAG repeat encodes the amino acid glutamine; thus, the disease protein carries a lengthened tract of polyglutamine (polyQ) residues that renders it toxic. The polyQ family includes six spinocerebellar ataxias (SCAs 1, 2, 3, 6, 7, and 17), Huntington\u2019s disease (HD), dentatorubral-pallidoluysian atrophy, and Kennedy\u2019s disease (also known as spinal-bulbar muscular atrophy, or SBMA) (Paulson et al., 1997; Zoghbi and Orr, 2000; La Spada and Taylor, 2003; Todi et al., 2007; Zoghbi and Orr, 2009; Paulson et al., 2017; Lieberman et al., 2019; Buijsen et al., 2019). Various pathogenic mechanisms are shared, involving primarily toxic gain-of-function acquired by the disease protein. These mutations yield aggregation of the toxic polyQ protein and, despite their wide expression throughout the body, only select central nervous system regions degenerate in each disease. Other common mechanisms underlying polyQ pathogenesis include mitochondrial, transcriptional, and autophagic dysfunction (Sullivan et al., 2019). Although the disorders share disease mechanisms, the individual host proteins have divergent functions (Zoghbi and Orr, 2000; La Spada and Taylor, 2003; Todi et al., 2007; Zoghbi and Orr, 2009; Paulson et al., 2017; Lieberman et al., 2019; Buijsen et al., 2019).\n\nThere is an unmet need for the treatment of polyQ diseases as there is currently no therapeutic solution for any of these disorders. Here, we examined the idea that daily endurance exercise might be of benefit against polyQ disorders. Endurance exercise is a low-cost, effective intervention with broad pro-healthspan effects, including reducing the incidence of obesity, heart disease, cancer, and cognitive defects (Booth et al., 2012; Wilmot et al., 2012; Strasser, 2013). Previous studies examined to a limited extent the effects of chronic exercise in patients with advanced stages of ataxia, including polyQ disorders: some types of exercise might help in certain cases (Chang et al., 2015; Schatton et al., 2017; de Oliveira et al., 2018) but not others (D\u2019Abreu et al., 2010; Wang et al., 2018). These studies may have been limited by lack of normalized protocols, genetics, and variable disease stage among patients. Some work on the possible role of exercise was also conducted in mouse models of HD, SBMA, and SCA1. SCA1 and SBMA mice seemed to benefit from exercise (Fryer et al., 2011; Chuang et al., 2019; Chua et al., 2014; Giorgetti et al., 2016; Sujkowski et al., 2022), whereas some models of HD improved (Herbst and Holloway, 2015; Ji et al., 2015) while others did not (Corrochano et al., 2018).\n\nDifferences in these investigations could be due to variation in protocols, genetic background, age of testing, and other parameters difficult to normalize among studies. While studies in animal models have identified potential pathways by which exercise may affect polyQ phenotypes, absence of normalization may limit the applicability and extension of those results to other polyQ diseases and further up the evolutionary chain. Here, we take advantage of the Drosophila model system to systematically examine which polyQ disorders are responsive to exercise and to identify mechanisms involved.\n\nDrosophila melanogaster has been widely and successfully utilized to understand polyQ disease mechanisms (Bonini and Fortini, 2003; Perrimon et al., 2016; Pandey and Rajamma, 2018; Ueyama and Nagai, 2018). In parallel, the fly has emerged as a highly efficient model for studying long-term effects of chronic exercise (Sujkowski and Wessells, 2018). Following a 3 week daily, gradually ramped training program, flies of diverse genotypes experience reproducible changes to speed, endurance, flight, cardiac performance, mitophagy, and mitochondrial function (Piazza et al., 2009; Sujkowski et al., 2012; Laker et al., 2014; Sujkowski et al., 2015; Damschroder et al., 2018b; Sujkowski et al., 2019). These changes track with adaptive physiological changes seen in chronically exercising humans (Sujkowski and Wessells, 2018; Wessells et al., 2018), and induce conserved changes in gene expression, including conserved mediators of exercise benefits, such as peroxisome proliferator-activated receptor \u03b3 coactivator 1-\u03b1(PGC-1\u03b1) and Sestrin (Sesn) (Tinkerhess et al., 2012b; Kim et al., 2020).\n\nHere, we tested the effects of chronic exercise in three Drosophila models of polyQ SCAs: 2, 3, and 6. Ectopic expression of these human, polyQ-expanded disease proteins in flies is toxic (Tsou et al., 2013; Tsou et al., 2015a; Tsou et al., 2015b; Costa et al., 2016; Tsou et al., 2016; Sutton et al., 2017; Ristic et al., 2018). We find that exercise has a dramatically positive effect in SCA2 flies, with modest effects on SCA6 model flies, and no benefit to SCA3 flies, indicating a range of response in different disease models. In addition, the exercise-mimicking protein, Sesn, improves early death and rescues mobility declines in SCA2 model flies. We further find that improvement in disease phenotypes depends on functions of Sesn that reduce oxidative damage and modulate the mechanistic target of rapamycin (mTOR). Our observations identify Sesn as a mechanistic target that can be leveraged toward therapeutic options for patients unable to exercise, or to supplement the benefits of those who can.\n\n## Results\n\n### Exercise differentially impacts mobility in Drosophila polyQ SCA models\n\nExpression of polyQ disease proteins in flies causes reduced motility and neuronal cell death, as we and others have shown in various publications (Bonini and Fortini, 2003; Perrimon et al., 2016; Pandey and Rajamma, 2018; Ueyama and Nagai, 2018; Tsou et al., 2015a; Sutton et al., 2017; Ristic et al., 2018; Jackson et al., 1998; Fernandez-Funez et al., 2000; Romero et al., 2008; Hsu et al., 2014; Rosas-Arellano et al., 2018). To test if endurance exercise reduces polyQ-dependent phenotypes in the fly, we selected three SCAs: 2, 3, and 6 (Figure 1A). Full-length, human disease protein was expressed through the binary, RU486-inducible Gal4-UAS system (Sujkowski et al., 2015; Brand et al., 1994) in all fly neurons and only during adulthood, which is toxic (Tsou et al., 2013; Tsou et al., 2015a; Tsou et al., 2015b; Costa et al., 2016; Tsou et al., 2016; Sutton et al., 2017; Ristic et al., 2018). We have established an optimized exercise protocol (Figure 1B) that drives reproducible effects that are robust across genotypes (Piazza et al., 2009). These effects are not due to non-specific stress or behavioral effect of the regimen\u2014unexercised flies exposed to training, but prevented from running, do not experience improvements (Piazza et al., 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig1-v5.jpg)\n\n**Figure 1.:** (A) Spinocerebellar ataxia (SCA) models used in this study. Box in SCA6 highlights the transcription factor, \u03b21A-CT that is encoded through an internal ribosomal entry site of the \u03b21A transcript. It is this transcript that we utilized for SCA6 model flies. (B) Timeline of endurance exercise program and assessment of physiology and disease protein levels. (C\u2013E) Representative climbing speed images (upper panels) in Drosophila models of (C) SCA2, (D) SCA3 and (E) SCA6. Photos taken 2 s after inducing negative geotaxis response in 4-week-old flies, following endurance exercise completion. Bottom panels: quantification by ANOVA with Tukey\u2019s post-hoc for significantly different groups; means \u00b1 SD. n = 10. Each individual datum depicts average week four climbing speed in arbitrary units (a.u.) for five vials of 20 flies.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig1-figsupp1-v5.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) elav-Gal4 (GS)> pwEmpty vector flies improve (A) climbing speed and (B) endurance independent of RU486-feeding. (C) Flies expressing an isolated polyQ-80 repeat in adult neurons have lower climbing speed than age-matched, uninduced control flies and do not increase speed with exercise. Mobility and endurance experiments performed in triplicate. Each individual datum depicts average climbing speed for \u22655 vials of 20 flies, analyzed by 2-way ANOVA (climbing speed), or time for 80% of flies in an individual vial (n \u2265 8 vials of 20 flies) to reach exhaustion, analyzed by log rank (endurance). Error bars indicate \u00b1 SD. pwEmpty: pwalium10.moe host vector inserted into the chromosomal site attP2 of the fly and in the same genetic background as the SCA lines used in this study.\n\nExercised wild-type flies retained faster climbing speed than age-matched, unexercised siblings (Sujkowski and Wessells, 2018). SCA2 model flies expressing polyQ-expanded ATXN2 specifically in adult neurons (elav-Gal4 (GS)> ATXN2Q117) had reduced climbing speed by 4 weeks of age, but exercise fully rescued climbing speed to the level of age-matched, uninduced control flies that complete the three-week, ramped exercise program (Figure 1C, Video 1). In contrast, four-week-old SCA3 model flies (elav-Gal4 (GS)> ATXN3Q77 RU+) did not increase climbing speed after exercise training (Figure 1D). Flies expressing polyQ-expanded \u03b21ACT (elav-Gal4 (GS)> \u03b21ACTQ70), the disease gene in SCA6 (Tsou et al., 2016), had reduced week-four climbing speed in comparison to uninduced, unexercised control flies, but climbing was partially rescued after exercise training (Figure 1E).\n\n![Video 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-video1.mp4.jpg)\n\n**Video 1.:** Video of 4-week-old uninduced control and SCA2 model flies taken after 3 weeks of ramped endurance exercise. Order of vials depicted, left to right: Vial 1-uninduced, exercised control, Vials 2,3-SCA2 model, exercised, Vials 4,5-SCA2 model, unexercised.\n\nNeurodegenerative severity of polyQ disorders tends to increase with age (Zoghbi and Orr, 2000; La Spada and Taylor, 2003). We have previously shown that exercise-induced improvements to climbing speed and endurance are long-lasting and persist even after the three-week exercise program is complete (Piazza et al., 2009). Neither RU486 feeding, nor expression of the empty vector used to generate transgenic flies in adult neurons, altered exercise adaptations to either climbing speed or endurance. Furthermore, expression of an isolated polyQ80 repeat (Johnson et al., 2020) in adult neurons reduced climbing speed and abrogated exercise benefits, while age-matched, uninduced control flies adapted to exercise (Figure 1\u2014figure supplement 1).\n\nHaving confirmed that post-exercise differences in climbing speed can be discerned in polyQ model flies, we next subjected the same three SCA models from Figure 1 to our endurance exercise program and tested them longitudinally for changes to climbing speed and endurance. In contrast to the ramped exercise program, endurance is tested by placing flies on the climbing apparatus on non-training days and allowing them to climb to exhaustion. When fewer than 20% of flies in a vial no longer respond to the climbing stimulus, the time is recorded, and the vial is removed from the apparatus and scored as fatigued. These data are plotted similarly to a survival curve, with each datum representing a single vial of 20 flies (Tinkerhess et al., 2012a).\n\nSpinocerebellar ataxias type 2 model flies had reduced climbing speed by adult week four (Figure 2A, compare RU- UN to RU+ UN), but endurance exercise fully rescued climbing speed to the level of exercised, uninduced control flies, and improvement persisted into adult week five (Figure 2A, compare RU- EX to RU+ EX). Baseline endurance in SCA2 flies was similar to uninduced, unexercised siblings (log-rank, P = 0.2018) and exercised SCA2 flies improved endurance as well as exercised, uninduced controls (Figure 2B). We next examined ATXN2 protein levels to see if improved mobility correlated with changes in toxic protein levels. Exercise markedly reduced ATXN2 levels relative to age-matched, unexercised siblings, linking improved physiology to reductions in disease protein (Figure 2C, I).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig2-v5.jpg)\n\n**Figure 2.:** (A) Flies ectopically expressing polyQ-expanded ATXN2 in adult neurons (RU+ UN) have lower climbing speed than unexercised, uninduced control flies (RU- UN) by adult week 4. Exercise fully rescues climbing speed to the level of exercised, uninduced control flies (compare RU- EX to RU+ EX). (B) Flies expressing polyQ-expanded ATXN2 in adult neurons (RU+) have similar endurance to uninduced control flies (RU-) whether exercised or not. (C) Exercise reduces ATXN2 protein levels in flies ectopically expressing polyQ-expanded ATXN2 in adult neurons, quantified in (I). (D, E) Flies ectopically expressing polyQ-expanded ATXN3 in adult neurons (RU+) have similar (D) climbing speed and endurance to uninduced, unexercised control flies and fail to improve either (D) climbing speed (E) endurance with exercise. (F) Exercise does not affect ATXN3 protein levels in flies expressing CAG-expanded ATXN3 in adult neurons, quantified in (I). (G) Flies ectopically expressing CAG-expanded \u03b2 ACT in adult neurons (RU+) have lower climbing speed than unexercised, uninduced control flies (RU- UN) by adult week 3, and exercise partially rescues climbing speed, although not to the level of exercised, uninduced control flies. (H) Exercise improves endurance in flies expressing CAG-expanded\u03b11ACT in adult neurons (RU+ EX), but not to the level of exercised, uninduced control siblings (compare RU- EX to RU+ EX). Mobility and endurance data are presented as representative experiments from triplicate biological replicates. Each individual datum depicts average climbing speed for \u22655 vials of 20 flies, analyzed by 2-way ANOVA (climbing speed), or time for 80% of flies in an individual vial (n \u2265 8 vials of 20 flies) to reach exhaustion, analyzed by log rank (endurance). Representative Western blots (five flies/lysate) from three biological repetitions, analyzed by ANOVA with Tukey\u2019s post-hoc for significantly different groups. Error bars indicate \u00b1 SD.\n\nIn contrast, SCA3 model flies did not improve climbing speed or endurance (Figure 2D, E) after exercise training. Furthermore, exercised and unexercised SCA3 flies had similar levels of ATXN3, the causative, polyQ-expanded disease protein in SCA3 (D\u2019Abreu et al., 2010; Figure 2F, I). SCA6 model flies had reduced climbing speed at weeks three and five compared to unexercised, uninduced siblings, and exercise training improved climbing speed, albeit not to the level of uninduced, exercised control flies (Figure 2G). Unexercised SCA6 flies trended toward lower endurance relative to uninduced, unexercised control flies (log-rank, P = 0.0559) and improved endurance after exercise training, but did not equal the endurance of uninduced, exercised controls (log-rank, P = 0.0218) (Figure 2H).\n\n### Sestrin expression improves phenotypes in SCA2 model flies without exercise\n\nWe have previously shown that the stress-inducible protein, Sesn, is necessary for exercise adaptations in multiple species (Kim et al., 2020), and Sesn activity has been proposed to play a protective role against neurodegeneration (Chen et al., 2019). Both endurance exercise and Sesn increase autophagy by inhibiting mTOR (Sujkowski et al., 2015; Mahalakshmi et al., 2020; Lee et al., 2010), and increased autophagy enhances ATXN2 solubility and reduces phenotypes in SCA2 patient cells (Wardman et al., 2020). Since muscle-specific dSesn overexpression is sufficient to replicate the beneficial adaptations of endurance exercise, even in sedentary Drosophila (Kim et al., 2020), we next overexpressed dSesn in SCA2 model flies.\n\nLongevity assessment in SCA model flies expressing polyQ-expanded disease protein selectively in adult neurons confirmed previously reported lifespan reductions in both SCA3 and SCA6 model flies (Tsou et al., 2016; Johnson et al., 2019; Figure 3B, C), but neither ATXN2 expression nor exercise significantly affected longevity in SCA2 flies (Figure 3A). CAG expansion in ATXN2, a widely expressed gene, causes early mortality in SCA2 patients (Scoles and Pulst, 2018). We performed subsequent experiments in flies ubiquitously expressing two copies of polyQ-expanded ATXN2 simultaneously with dSesn overexpression (sqh> ATXN2Q117;dSesnWT;ATXN2Q117) to more closely model clinical subjects. Indeed, constitutive expression of polyQ-expanded ATXN2 in all tissues, throughout development and in adults, (sqh> ATXN2Q117;ATXN2Q117) caused early death in both female (Figure 4A) and male (Figure 4D) flies. Mobility reductions appeared earlier than with pan-neuronal expression, present upon adult eclosion from the pupal case and persisting until death (Figure 4B, E). On the other hand, flies ubiquitously expressing both ATXN2Q117 and dSesn improved survival (Figure 4A, D), although rescue was not to the level of background control flies. Mobility improvements were more pronounced, with complete rescue of climbing speed in both females (Figure 4B) and males (Figure 4E). We next examined disease protein levels in sqh> ATXN2Q117;dSesnWT;ATXN2Q117 flies and found significant reduction in ATXN2 compared to SCA2 flies without dSesn expression (Figure 4C, F, quantified in Figure 7), similar to aforementioned reduction in disease protein after exercise. In contrast, ubiquitous expression of either ATXN3Q77 or \u03b2 1ACTQ70 led to developmental and early adult lethality (Tsou et al., 2016; Johnson et al., 2019), and dSesn expression did not improve outcomes (Figure 4\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig3-v5.jpg)\n\n**Figure 3.:** Cumulative mortality in (A) elav-Gal4 (GS)> ATXN2Q117 flies is similar whether exercised or not (compare RU- UN to RU+ UN, and RU- EX to RU+ EX). (B) elav-Gal4 (GS)> ATXN3Q77 flies have reduced lifespan compared to uninduced controls, and exercise does not negatively affect either group. (C) elav-Gal4 (GS)>\u03b11ACTQ70 flies have lower lifespan than uninduced controls, and exercise reduces lifespan further in this cohort. n \u2265 231, analyzed by log-rank tests.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig4-v5.jpg)\n\n**Figure 4.:** Female (A, B) and male (D, E) flies ubiquitously expressing two copies of CAG-expanded ATXN2 (red lines) have early death (A, D) and lower climbing speed (B, E) than age-matched background control flies (blue and black lines). dSesn expression in flies also expressing polyQ-expanded ATXN2 (green lines) partially rescues early death (A, D) and fully rescues decreased mobility (B, E). ATXN2 protein levels are lower in both female (C) and male (F) flies ubiquitously expressing both dSesn and polyQ-expanded ATXN2. Survival and mobility experiments performed in triplicate. Individual survival experiments comprise \u2265200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for \u22655 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate \u00b1 SD. Representative Western blots from five biological replicates (five flies per lysate), quantified in Figure 7.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig4-figsupp1-v5.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Survival curves in female (A) and male (B) background control flies (black) or flies ubiquitously expressing polyQ-expanded ATXN3 and either wild-type dSesn (orange), dSesnC86S (blue), dSesnD424A (pink), or dSesnD423A/D424A (green). n \u2265 73, analyzed by log-rank tests. (C) No adults eclose in flies ubiquitously expressing polyQ-expanded \u03b11ACT regardless of dSesn expression. Sufficient parental crosses set up for >400 flies per genotype.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig4-figsupp2-v5.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Survival curves in female (A) and male (B) flies expressing either wild-type dSesn (green), dSesnC86S (red), dSesnD424A (blue), dSesnD423A/D424A (purple) or background control (black). Flies ubiquitously expressing dSesn mutations have similar or lower survival than flies ubiquitously expressing wild type dSesn. n \u2265 97, analyzed by log-rank tests.\n\n### Oxidative resistance and mTOR modulating functions of Sesn are necessary to improve SCA2 phenotypes\n\nSesn is a multi-functional protein with separate, previously identified oxidoreductase and mTOR interacting domains (Kim et al., 2015). The C86S (dSesnC86S) mutation abolishes oxidoreductase activity while the D424A (dSesnD424A) and D423A/D424A (dSesnD423A/D424A) substitutions disrupt TORC1 inhibiting and TORC2/Akt potentiating functions of dSesn (Kim et al., 2015). We previously showed that interaction with mTOR is required for the mobility-extending effects of dSesn in wild-type, sedentary flies (Kim et al., 2020). Overexpression of either wild-type or mutated dSesns did not increase longevity in a wild-type background (i.e. without polyQ protein expression; Figure 4\u2014figure supplement 2). To explore the requirement of Sesn\u2019s various functions for suppression of polyQ phenotypes, we performed mobility, survival, and protein expression experiments in which we ubiquitously overexpressed dSesnC86S, dSesnD424A, dSesnD423A/D424A, or wild-type dSesn (dSesnWT) in SCA2 flies.\n\nFirst, we overexpressed dSesn without its antioxidant function(sqh>ATXN2Q; dSesnC86S;ATXN2Q117). Ubiquitous expression of dSesnC86S in SCA2 model flies did not provide any protection\u2014in fact, it exacerbated premature death in both male and female flies (Figure 5A, D). However, we observed pronounced mobility improvements in female flies (Figure 5B) and mobility was fully rescued in males (Figure 5E). Whereas wild-type dSesn overexpression consistently reduced ATXN2 levels in both female (Figure 5C) and male (Figure 5F) SCA2 flies, the effect of dSesnC86S on ATXN2 levels was more variable (Figure 5C, F, quantified in Figure 7). These results suggest that while the oxidoreductase function of dSesn is 14 Figure 6: Interaction with mTOR is required for dSesn to improve survival and mobility inflies expressing polyQ-expanded ATXN2. Ubiquitous expression of dSesn harboring two separate mutations that abolish mTORC interaction dSesnD424A (A\u2013D), dSesn D423A/D424A (E\u2013H)(denoted by orange lines) exacerbates early death (A,E, females, C,G, males) and fails to rescuemobility (B,F, females, D,H, males) in SCA2 flies. Survival and mobility experiments performed intriplicate. Individual survival experiments are composed of \u2265200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depictsaverage climbing speed for \u22655 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate \u00b1 SD not required for protection against motility defects in SCA2 flies, it is essential for improved survival.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig5-v5.jpg)\n\n**Figure 5.:** Ubiquitous expression of dSesn harboring a point mutation that abolishes oxidoreductase activity (dSesnC86S, orange lines) exacerbates early death in SCA2 model flies (compare orange lines to red lines) in both females (A) and males (D). In contrast, climbing speed is partially rescued in the same female flies (expressing both dSesnC86S and polyQ-expanded ATXN2, in orange) (B) and fully rescued in males (E). (C, F) Both wild-type dSesn and dSesnC86S expression reduce ATXN2 levels, but the effect of dSesnC86S expression is variable (examples of variability shown in panel [C]). Survival and mobility experiments performed in triplicate. Individual survival experiments are composed of \u2265200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for 5 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate \u00b1 SD. Representative Western blots from five biological replicates (five flies per lysate), quantified in Figure 7.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig6-v5.jpg)\n\n**Figure 6.:** Ubiquitous expression of dSesn harboring two separate mutations that abolish mTORC interaction dSesnD424A (A\u2013D), dSesn D423A/D424A (E\u2013H) (denoted by orange lines) exacerbates early death (A,E, females, C,G, males) and fails to rescue mobility (B,F, females, D,H, males) in SCA2 flies. Survival and mobility experiments performed in triplicate. Individual survival experiments are composed of \u2265200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for \u22655 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate \u00b1 SD.\n\nWe next ubiquitously expressed two separate amino-acid substitutions of dSesn that knock out its ability to modulate mTOR (Kim et al., 2015). Like dSesnC86S experiments, expression of either dSesnD424A (Figure 6A\u2013D) or dSesnD423A/D424A (Figure 6E\u2013H) increased early death in both female (Figure 6A, E) and male (Figure 6C, G) SCA2 flies. In female flies, both dSesnD424A and dSesn D423A/D424A conferred modest improvements to climbing speed compared to SCA2 model flies, but improvement did not equal that of wild-type dSesn expression and was absent at later timepoints (Figure 6B, F). Male flies ubiquitously expressing dSesnD424A did not display rescued mobility defects at any age (Figure 6D), while overexpression of dSesn D423A/D424A provided modest climbing speed improvements at early ages only (Figure 6H). Thus, interaction with mTOR appears critical for full rescue of climbing speed and protection against early death in SCA2 flies.\n\nTo examine the relative impact of dSesn expression on disease protein levels, we again performed Western blots on flies ubiquitously expressing polyQ-expanded ATXN2 with and without simultaneous expression of either wild-type dSesn, or dSesn harboring mutations that separately abolish its oxidative protection or mTOR modulating functions. ATXN2 protein in SCA2 model flies (sqh> ATXN2Q117;ATXN2Q117) was easily visible by log-phase of mortality (Figure 7A\u2013C, F). All mutant dSesn-expressing cohorts had variable, but statistically significant reductions in ATXN2 protein levels.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig7-v5.jpg)\n\n**Figure 7.:** Ubiquitous expression of dSesn significantly reduces ATXN2 levels (A\u2013C) and increases AtgIIa;AtgIa ratios (C\u2013E). n = 5 biological replicates, 5 flies per lysate, analyzed by ANOVA with Tukey post-hoc comparison for significantly different groups. (F) Genotypes in representative Western blot and from independent biological replicates, quantified in (A, B, D, E). Bracket in (F) indicates quantifications in (A, B, D, E).\n\nBased on these results and on our prior observations in exercised flies and flies with muscle-specific dSesn overexpression (Kim et al., 2020; Sujkowski et al., 2020), we hypothesized that dSesn overexpression and reduced ATXN2 levels relate to changes in autophagy. We observed that AtgIIa/Ia ratios increased in both male and female SCA2 model flies that were overexpressing wild-type dSesn, while its mutated versions had higher variability, which largely trended towards increased autophagy, but without reaching significance (Figure 7C\u2013F). These data may reflect different mechanisms of protection at play, discussed further below.\n\nFinally, since dSesn overexpression improved survival in flies ubiquitously expressing two copies of the polyQ-expanded ATXN2 transgene (Figure 4A, D), we repeated our longevity experiments in exercised SCA2 flies expressing two copies of the ATXN2 transgene. Exercised female flies expressing two copies of CAG-expanded ATXN2 either ubiquitously (Figure 8A) or in adult neurons (Figure 8C) significantly improved survival compared to unexercised siblings. Male SCA2 flies trended toward improved survival in early life only, while they were still undergoing exercise training (Figure 8B, D). Altogether, these findings indicate protective effects from endurance exercise not only in terms of motility (Figures 1 and 2) but also in terms of longevity (Figure 8) in SCA2 flies.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig8-v5.jpg)\n\n**Figure 8.:** Exercised female flies expressing two copies of CAG-expanded ATXN2 ubiquitously (A) or in adult neurons (C) have increased survival compared to age-matched, unexercised siblings, while exercised male flies expressing two copies of CAG-expanded ATXN2 ubiquitously (B) or in adult neurons (D) trend toward increased survival only in the first 25 days, the period in which flies are still training. Brackets indicate exercise training period. p-Values indicate log-rank for entire survival curve, n \u2265 170, performed in duplicate.\n\nIn summary, both exercise and dSesn expression ameliorated mobility and survival defects in SCA2 model flies and these improvements correlated with reduced disease protein levels. Furthermore, these neuroprotective effects relied on known functions of dSesn related to mTOR and oxidoreductase activities (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig9-v5.jpg)\n\n**Figure 9.:** Sesn\u2019s known functions and activation by exercise have been established previously (Kim et al., 2020; Kim et al., 2015). Wild-type Sesn overexpression or exercise can activate autophagy and reduce disease protein levels, improving function. Source data-all figures. Tab delimited excel file containing raw data for all figures and figure supplements. Uncropped, unedited Western blot data are included as separate images.\n\n## Discussion\n\nEndurance exercise enhances quality of life and provides remedy for a number of conditions and diseases, but, until now, has not been systematically examined across several polyQ disorders. Lack of systematic studies in this respect also means that exercise-dependent molecular mechanisms that can be utilized to fight polyQ diseases remain largely unknown. Here, we explored in a highly controlled and rigorously quantified way the possibility that daily training is of benefit against some polyQ diseases. In addition, we identified a key factor of exercise\u2019s protective effects that can be harvested towards therapeutic options.\n\nEndurance exercise significantly rescued progressive motility defects in SCA2 flies, allowing their climbing speed and endurance to remain in wild-type range. Exercise also partially rescued SCA6 flies, with no beneficial effect on SCA3 model flies. Thus, exercise can have potent rescue effects for particular polyQ diseases. To obtain early insight into how exercise could lead to such dramatic improvement in SCA2 flies (albeit not for SCA3) we examined protein levels of ATXN2 and ATXN3, their respective disease proteins. Exercise led to reduction in protein levels of ATXN2, but did not noticeably affect ATXN3. In the context of endurance exercise, improved motility in SCA2 flies may be due to reduced disease protein levels.\n\nIn addition, we examined the effect of the powerful exercise-mimetic protein, Sesn, on lifespan, motility, and disease protein levels in SCA2 model flies. Sesns are induced by oxidative and genotoxic stress in flies and mammals and promote autophagy (Lee et al., 2010; Budanov and Karin, 2008). Sesns protect against oxidative stress-induced fly neuronal death (Singh and Chowdhuri, 2018) and reduce accumulation of protein aggregates in mammalian cells (Reddy et al., 2016). In previous work with wild-type flies, we found that expression of fly Sesn is sufficient to preserve speed and endurance and has no additive effect with exercise, consistent with a role as a key effector of exercise (Kim et al., 2020). Here, we found that Sesn was protective in SCA2 model flies, but did not confer benefit to either SCA3 or SCA6. Furthermore, Sesn\u2019s oxidoreductase function was not necessary to rescue mobility defects in SCA2, while both its oxidative resistance and mTOR modulating activities were required for Sesn to improve early death. In fact, overexpression of Sesn with mutations eliminating either its oxidoreductase activity or mTOR modulating functions exacerbated premature death in SCA2 flies.\n\nWe have previously shown that the oxidoreductase activity of Sesn is dispensable for motility improvements in wild-type flies (Kim et al., 2020), similar to our observations with SCA2 flies in this study. Sesn overexpression is also not sufficient to extend lifespan in a wild-type background, shown here and elsewhere (Kim et al., 2020; Lee et al., 2010). Neurons are particularly susceptible to oxidative stress and reactive oxygen species can induce cell death during neurodegeneration (Fatokun et al., 2008). Perhaps, in the context of neurodegenerative disease, Sesn protects mobility until oxidative burden in neurons becomes insurmountable.\n\nWild-type Sesn overexpression in SCA2 model flies correlated with significantly reduced disease protein and increased autophagic flux. Overexpression of mutated versions of Sesn also led to reduced disease protein levels. This is not entirely surprising: mutated Sesns still had some positive impact on SCA2 fly mobility, but did not have the same, fully protective effect of wild-type Sesn. Collectively, these findings suggest the possibility of separate mechanisms at play: some protective mechanisms may directly depend on reduced toxic protein levels (as observed before in a model of HD and exercise Mangiarini et al., 1996; van Dellen et al., 2008); others may protect independently of changes in degenerative protein levels, or perhaps without directly relying on it. Future investigations are required to parse out such mechanisms and whether they function in a cell autonomous or non-cell autonomous manner.\n\nTo conclude, we propose endurance exercise as a promising therapeutic intervention for polyQ neurodegeneration, particularly in SCA2. We also demonstrate that Sesn can substitute for exercise benefits in flies that do not exercise. Identification of molecular targets capable of inducing exercise-like enhancements in the presence of neurodegeneration is particularly important, as many patients will eventually lose the ability to exercise. This work has begun to uncover exercise-induced mechanisms that can be utilized for neuroprotection against specific polyQ diseases and can be leveraged toward therapeutics in the future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>ATXN2</td>\n      <td>GenBank</td>\n      <td>FLYB: FBgn0267931</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>ATXN3</td>\n      <td>GenBank</td>\n      <td>FLYB: FBgn0024961</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>CACNA1A</td>\n      <td>GenBank</td>\n      <td>FLYB: FBgn0283733</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>Sesn</td>\n      <td>GenBank</td>\n      <td>FLYB: FBgn0034897</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS- ATXN2Q117</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC68394: FBst0068394</td>\n      <td>Flybase Symbol:w*; P{UAS-ATXN2.117Q}8B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS- ATXN2Q117</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC68395: FBst0068395</td>\n      <td>Flybase Symbol: w*; P{UAS-ATXN2.117Q}9 A</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-ATXN3Q77</td>\n      <td>Tsou et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-\u03b11ACTQ70</td>\n      <td>Sutton et al., 2017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w1118;UAS-ATXN2Q117/CyO;UAS-ATXN2Q117</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See methods lines 305\u2013306</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w1118;sqh/CyO;UAS- dSesnWT/TM3-Sb</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See methods lines 311\u2013314</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w1118;sqh/CyO;UAS- dSesnC86S/TM3-Sb</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See methods lines 311\u2013314</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w1118;sqh/CyO;UAS- dSesnD424A/TM3-Sb</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See methods lines 311\u2013314</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w1118;sqh/CyO;UAS- dSesnD423A/D424A/TM3-Sb</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See methods lines 311\u2013314</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ataxin-2 (mouse monoclonal)</td>\n      <td>BD biosciences</td>\n      <td>611,378</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ataxin-3 (mouse monoclonal)</td>\n      <td>Millipore</td>\n      <td>1H9, MAB5360</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GABARAP (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Ab1398</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-dSesn (rabbit polyclonal)</td>\n      <td>Kim et al., 2020</td>\n      <td></td>\n      <td>(1:500)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Antibodies\n\nPrimary antibodies were obtained from the following sources: anti-ATXN2 (mouse monoclonal, 1:500; BD biosciences, Franklin Lakes, NJ) anti-ATXN3 (mouse monoclonal 1H9, MAB5360, 1:500\u20131000; Millipore, Burlington, MA), anti-dSesn (rabbit polyclonal, 1:500, Lee et al., 2010), anti-GABARAP (rabbit polyclonal, 1:1000, Abcam, Cambridge, United Kingdom). Peroxidase-conjugated secondary antibodies (goat anti-mouse, goat anti-rabbit, 1:5000; Jackson Immunoresearch, West Grove, PA).\n\n### Fly stocks and maintenance\n\nGifted stocks used in this study were sqh-Gal4 (Daniel Kiehart, Duke University, abbreviated \u201csqh\u201d throughout), and w1118 (Russ Finley, Wayne State University). UAS-Q80, UAS-ATXN3Q77, UAS-\u03b11ACTQ70 and elav-Gal4 (GS) were previously described in Tsou et al., 2016; Johnson et al., 2020; Johnson et al., 2019 UAS- ATXN2Q117 (BDSC#68394, BDSC#68395), on chromosomes II and III, respectively, were obtained from the Bloomington Drosophila Stock Center (Bloomington, IN). Both SCA2 lines were used for pilot work. A single line containing UAS-ATXN2Q117 on both chromosomes II and III was then generated using standard crosses (w1118;UAS-ATXN2Q117/CyO;UAS-ATXN2Q117).\n\nWild-type (dSesnWT) and C86S(dSesnC86S), D424A (dSesnD424A) or D423A/D424A (dSesnD423A/D424A) mutations are described in Kim et al., 2020; Kim et al., 2015. C86, D423 and D424 in dSesn correspond to C125, D406 and D407 in mammalian SESN2 (Kim et al., 2015). These four lines were separately recombined with sqh-Gal4 to create four independent lines with genotypes: w1118;sqh/CyO;UAS- dSesnXX/TM3-Sb. Simultaneous overexpression of both UAS-ATXN2Q117 and UAS-dSesnXX was achieved via a single cross between w1118; UAS-ATXN2Q117/CyO;UAS-ATXN2Q117 virgin females and w1118;sqh/CyO;UAS-dSesnXX/TM3-Sb males to generate w1118;UAS-ATXN2Q117;UAS-dSesnXX/ATXN2Q117. All insertions were validated by Western blotting (Tsou et al., 2015b; Tsou et al., 2016; Ristic et al., 2018; Johnson et al., 2020; Lee et al., 2010; Johnson et al., 2019; Blount et al., 2018).\n\nPrior to all experiments, fly cultures were maintained at a constant density for at least two generations. About 20\u201325 virgin females (depending on genotype) and 5 males were mated in 300 mL bottles with 50 mL standard 10% sucrose 10% yeast spiked with 500 \u03bcL Penicillin-Streptomycin 10,000 u/mL, 10 mg/mL in 0.9% sterile NaCl (Sigma-Aldrich, St. Louis, MO). Adult progeny were synchronized by collecting within 6 hr of eclosion over a 24 hr time period. Groups of 20 age- and sex-matched flies were immediately transferred into narrow polypropylene vials containing 5 mL of standard 10% sucrose 10% yeast (no antibiotic) or RU486 food, as appropriate. Food vials were changed every day during exercise and every second day thereafter and scored for mobility and lifespan until no flies remained.\n\nFlies were housed in a 25\u00b0C incubator on a 12:12 h light:dark cycle at 50% relative humidity. Control flies for all non-gene-switch Gal4 UAS experiments consisted of both the UAS and Gal4 lines into w1118. For gene-switch experiments, RU- flies of the same genotype served as the negative control. RU+ group received 100 \u03bcM RU486/mifepristone (Cayman Chemical, Ann Arbor, MI), which activates the gene switch (GS) driver, while RU- group received the same volume of vehicle solution (70% ethanol).\n\n### Exercise training\n\nTriplicate cohorts of at least 800 flies were collected under light CO2 anesthesia within 6 hr of eclosion and separated into vials of 20. Flies were then further separated into two large cohorts of at least 400 flies, which served as exercised and unexercised groups. Exercised groups received three weeks of ramped exercise as described previously (Piazza et al., 2009). The unexercised groups were placed on the exercise training device at the same time as the exercised groups, but were prevented from running by the placement of a foam stopper low in the vial. Both cohorts were housed in the same incubator with normal foam stopper placement at all times other than during an exercise bout.\n\n### Climbing speed\n\nNegative geotaxis was assessed in Rapid Negative Geotaxis (RING) assays in groups of at least 100 flies as described (Damschroder et al., 2018a). Briefly, vials of 20 flies were briskly tapped down, then measured for climbing distance after 2 s of inducing the negative geotaxis instinct. For each group of vials, an average of five consecutive trials was calculated and batch-processed using ImageJ (Bethesda, MD). Flies were longitudinally tested 2\u20133 times per week for 5\u20137 weeks. Between assessments, flies were returned to food vials and housed normally as described above. Negative geotaxis results were analyzed using two-way ANOVA analysis (age-effect and genotype effect) with post hoc Tukey\u2019s multiple comparison tests in GraphPad Prism (San Diego, CA). All negative geotaxis experiments were performed in triplicate, with one complete trial shown in each graph.\n\n### Endurance\n\nAt least eight vials of 20 flies from each cohort were subjected to the endurance analysis on day 25 of adulthood, immediately after exercise was complete and after 2 days of recovery. For each session, the flies were placed on the Power Tower exercise machine (Sujkowski and Wessells, 2018) and the climbing instinct was induced until flies no longer responded to the negative geotaxis stimulus. Monitored at 15 min intervals, a vial of flies was visually determined to be fatigued when 10% or fewer flies could climb higher than 1 cm after three consecutive drops. Each vial was plotted as a single datum. Endurance experiments were performed in triplicate and at the same time as age-matched background controls and were scored blindly wherever possible. The time from the start of the assay to the time of fatigue was recorded for each vial, and the data analyzed using log-rank analysis in GraphPad Prism (San Diego, CA). Each graph represents an independent, representative repetition.\n\n### Longevity\n\nFor exercise experiments, appropriate food vials (RU486, vehicle, or standard 10% sucrose 10% yeast) were changed and deaths were recorded five times per week during exercise training and three times per week after completion of the training program. All other longevity experiments were scored three times per week. Dead flies were removed and counted until no flies remained. Differences in survival were plotted as cumulative mortality and assessed following censoring using log-rank analysis in GraphPad Prism (San Diego, CA). Longevity experiments were performed in triplicate and in parallel with background controls, with each individual graph depicting a representative biological repetition.\n\n### Western blots\n\nThree-to-five whole flies per biological replicate, depending on experiment, were homogenized in boiling lysis buffer (50 mM Tris pH 6.8, 2% SDS, 10% glycerol, 100 mM dithiothreitol), sonicated, boiled for 10 min, and centrifuged at 13,300xg at room temperature for 10 min. Western blots were developed ChemiDoc (Bio-Rad, Hercules, CA) and quantified with ImageLab (Bio-Rad, Hercules, CA). For direct blue staining, PVDF membranes were submerged for 10 min in 0.008% Direct Blue 71 (Sigma-Aldrich, St. Louis, MO) in 40% ethanol and 10% acetic acid, rinsed in 40% ethanol/10% acetic acid, air dried, and imaged. Western blots were performed using at least three biological replicates, and statistical analysis was performed in GraphPad Prism (San Diego, CA).\n\n### Statistical analysis\n\nSurvival and endurance analyses were analyzed by log-rank. Non-natural deaths were censored and did not exceed 10% of flies for any group. Climbing speed over time was analyzed by two-way ANOVA for age effect and genotype effect, with Tukey post-hoc comparison between significantly different groups. Western blots were analyzed using either student t-test or ANOVA depending on experiment. All statistics were performed using GraphPad Prism software version 9.2.0 (San Diego, CA, USA) for Macintosh.\n",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "76ae7394-f2b2-44eb-98e3-0cafb591aaba",
+      "submission_id": "d70f9b37-8f9d-4c13-b51f-5156bde45379",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Harry T Orr, https://ror.org/017zqws13 University of Minnesota United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75389.sa0](https://doi.org/10.7554/eLife.75389.sa0)\n\nIn this strong study, the investigators examine the therapeutic ability of endurance exercise to disease in Drosophila models of the spinocerebellar ataxias types (SCAs) 2, 3, and 6. Results support that exercise induced improvements rely on Sesn and perhaps its role in regulating autophagy.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Harry T Orr, https://ror.org/017zqws13 University of Minnesota United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75389.sa1](https://doi.org/10.7554/eLife.75389.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Endurance exercise ameliorates phenotypes in Drosophila models of Spinocerebellar Ataxias\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Harry T Orr as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity:; Amit Singh (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nSummary:\n\nThe ability of exercise to mitigate the disease-associated phenotypes for the inherited ataxias is an area under investigation for several years. Previous studies explore the ability of endurance exercise to promote neuronal plasticity and memory as well as diminish neurodegeneration. Here the investigators examine the therapeutic ability of endurance exercise to disease in Drosophila models of the spinocerebellar ataxias types (SCAs) 2, 3, and 6. Overall, this is a very strong manuscript.\n\nEssential revisions:\n\n1. Throughout the manuscript the wrong figures are referred to in the text. Examples include Figure 1C instead of Figure 2C in line 135 and on page 7 Figure 3 instead of Figure 4 is written more than once.\n\n2. In almost every figure legend is a lack of information on number of flies or samples per group and the exact statistical comparisons and post-hoc tests used. It is far more useful to have this information directly in the figure legend, especially for readers who go straight to the figures and do not focus on the text as much. For example, Figure 2 states N>100, n>8 vials of 20 flies, but do the data points represent the mean of each vial's average, or N>100 as an entire group? What statistical test is used? The same is true for Figure 3-6, and additionally these figures lack information on how many vials were in each group (i.e. are there any batch effects from vials that could skew the results?).\n\n3. The data for Figure 7 is the key supporting evidence of the claim that this is operating via autophagy. However, given the variability in the data and the very small sample sizes N=3-4/group, this is not currently supported. For example, the effects of the dSEN WT expression on ATXN2 protein levels is only significant because the grouping is tighter but there is a decrease in the other dSesn mutants. Same is true for AtgIa/IIa ratios where there is some effect of the dSesn mutant expression but just more variability. Either more samples are needed, or these data and claims should be removed from the manuscript.\n\nAdditional points:\n\n1. It is stated that Sesn administered to SCA3 and SCA6 flies was of no benefit, lines 174, 175 and 261 but the data are not shown. These data need to included in supplemental information.\n\n2. Quantification of the data for Figure 1 should be added to that figure.\n\n3. Rename the C86S mutant as dSesn^C86S as it is confusing to the reader to shorten to dSesn^CS.\n\n4. Describe the phenotype of SCA2 expression in Sestrin mutant background.\n\n5. How do the two domains of Sestrin trigger autophagic flux response?\n\n6. Is there a role of caspase dependent cell death in SCA2 neurodegenerative phenotype?\n",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d7a96139-0847-4347-aeba-c9b8c907eb65",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C1",
+      "claim": "Nine inherited neurodegenerative disorders are caused by expansion of a CAG triplet repeat in the protein-coding region of the respective disease genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine inherited neurodegenerative disorders are caused by expansion of a CAG triplet repeat in the protein-coding region of the respective disease genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on polyQ diseases",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "04db7df8-a767-4115-8fa0-560ec069fb80",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C2",
+      "claim": "The CAG repeat encodes the amino acid glutamine.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAG repeat encodes the amino acid glutamine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic code knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "3ba28b16-0e69-4c1e-b947-f670373dae49",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C3",
+      "claim": "The polyQ family includes six spinocerebellar ataxias (SCAs 1, 2, 3, 6, 7, and 17), Huntington's disease (HD), dentatorubral-pallidoluysian atrophy, and Kennedy's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The polyQ family includes six spinocerebellar ataxias (SCAs 1, 2, 3, 6, 7, and 17), Huntington's disease (HD), dentatorubral-pallidoluysian atrophy, and Kennedy's disease (also known as spinal-bulbar muscular atrophy, or SBMA) (Paulson et al., 1997; Zoghbi and Orr, 2000; La Spada and Taylor, 2003; Todi et al., 2007; Zoghbi and Orr, 2009; Paulson et al., 2017; Lieberman et al., 2019; Buijsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "287e0ede-65bc-4089-b2ef-e81519bc7933",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C4",
+      "claim": "PolyQ pathogenesis involves primarily toxic gain-of-function acquired by the disease protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Various pathogenic mechanisms are shared, involving primarily toxic gain-of-function acquired by the disease protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of polyQ disease mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "603e921e-117d-4e3c-9d49-3b31b33590ce",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C5",
+      "claim": "PolyQ mutations yield aggregation of the toxic polyQ protein.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations yield aggregation of the toxic polyQ protein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of polyQ protein behavior",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "52b70524-c386-449e-978b-cf798ed1b1d6",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C6",
+      "claim": "Despite wide expression of polyQ proteins throughout the body, only select central nervous system regions degenerate in each disease.",
+      "claim_type": "EXPLICIT",
+      "source": "despite their wide expression throughout the body, only select central nervous system regions degenerate in each disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of polyQ disease pathology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "a9e1ceae-c54a-492c-af5c-32e8a2965e05",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C7",
+      "claim": "Common mechanisms underlying polyQ pathogenesis include mitochondrial, transcriptional, and autophagic dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Other common mechanisms underlying polyQ pathogenesis include mitochondrial, transcriptional, and autophagic dysfunction (Sullivan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "ebf88090-9cc1-4889-b4e9-aa05b1b0e215",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C8",
+      "claim": "The individual host proteins in polyQ diseases have divergent functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the disorders share disease mechanisms, the individual host proteins have divergent functions (Zoghbi and Orr, 2000; La Spada and Taylor, 2003; Todi et al., 2007; Zoghbi and Orr, 2009; Paulson et al., 2017; Lieberman et al., 2019; Buijsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "d80bbb70-9d62-4cb8-b52d-c266e28e9a7c",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C9",
+      "claim": "There is currently no therapeutic solution for any polyQ disease.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an unmet need for the treatment of polyQ diseases as there is currently no therapeutic solution for any of these disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on current state of medical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "f810c3ef-f848-40f3-9743-74edac4f990f",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C10",
+      "claim": "Endurance exercise is a low-cost, effective intervention with broad pro-healthspan effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Endurance exercise is a low-cost, effective intervention with broad pro-healthspan effects, including reducing the incidence of obesity, heart disease, cancer, and cognitive defects (Booth et al., 2012; Wilmot et al., 2012; Strasser, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "450afe61-862d-46b1-9419-2e5a611c0e0c",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C11",
+      "claim": "Endurance exercise reduces the incidence of obesity, heart disease, cancer, and cognitive defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Endurance exercise is a low-cost, effective intervention with broad pro-healthspan effects, including reducing the incidence of obesity, heart disease, cancer, and cognitive defects (Booth et al., 2012; Wilmot et al., 2012; Strasser, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "cfd42e2a-1947-4b26-955b-9f1343108d42",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C12",
+      "claim": "Some types of exercise might help in certain cases of ataxia including polyQ disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies examined to a limited extent the effects of chronic exercise in patients with advanced stages of ataxia, including polyQ disorders: some types of exercise might help in certain cases (Chang et al., 2015; Schatton et al., 2017; de Oliveira et al., 2018) but not others (D'Abreu et al., 2010; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "f9d1545b-f91d-43c4-83dd-56eaad22a088",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C13",
+      "claim": "SCA1 and SBMA mice seemed to benefit from exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "SCA1 and SBMA mice seemed to benefit from exercise (Fryer et al., 2011; Chuang et al., 2019; Chua et al., 2014; Giorgetti et al., 2016; Sujkowski et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to mouse model studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "d5185bb0-fba7-4bab-a93c-6e8addaab293",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C14",
+      "claim": "Some models of HD improved with exercise while others did not.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas some models of HD improved (Herbst and Holloway, 2015; Ji et al., 2015) while others did not (Corrochano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to HD mouse model studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "518e116b-8aaa-411e-a246-618f114e35de",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C15",
+      "claim": "Drosophila melanogaster has been widely and successfully utilized to understand polyQ disease mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila melanogaster has been widely and successfully utilized to understand polyQ disease mechanisms (Bonini and Fortini, 2003; Perrimon et al., 2016; Pandey and Rajamma, 2018; Ueyama and Nagai, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "b6f60413-7750-4561-8815-99cd5c1ad0c5",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C16",
+      "claim": "The fly has emerged as a highly efficient model for studying long-term effects of chronic exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the fly has emerged as a highly efficient model for studying long-term effects of chronic exercise (Sujkowski and Wessells, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "3981b706-e8d6-41d1-bf53-37ab788ed98f",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C17",
+      "claim": "Following a 3 week daily, gradually ramped training program, flies of diverse genotypes experience reproducible changes to speed, endurance, flight, cardiac performance, mitophagy, and mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 3 week daily, gradually ramped training program, flies of diverse genotypes experience reproducible changes to speed, endurance, flight, cardiac performance, mitophagy, and mitochondrial function (Piazza et al., 2009; Sujkowski et al., 2012; Laker et al., 2014; Sujkowski et al., 2015; Damschroder et al., 2018b; Sujkowski et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "082d3bde-8c3b-46ae-afc5-4e154ee00c70",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C18",
+      "claim": "Exercise-induced changes in flies track with adaptive physiological changes seen in chronically exercising humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes track with adaptive physiological changes seen in chronically exercising humans (Sujkowski and Wessells, 2018; Wessells et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations comparing fly and human exercise responses",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "13a165a6-4d2d-46ba-9bbf-94daa6f39953",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C19",
+      "claim": "Exercise induces conserved changes in gene expression, including conserved mediators of exercise benefits, such as PGC-1\u03b1 and Sestrin.",
+      "claim_type": "EXPLICIT",
+      "source": "and induce conserved changes in gene expression, including conserved mediators of exercise benefits, such as peroxisome proliferator-activated receptor \u03b3 coactivator 1-\u03b1(PGC-1\u03b1) and Sestrin (Sesn) (Tinkerhess et al., 2012b; Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on exercise-induced gene expression",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e7895ae4-8c68-4735-9a4e-fcbb8764fa7e",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C20",
+      "claim": "Ectopic expression of polyQ-expanded human disease proteins in flies is toxic.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of these human, polyQ-expanded disease proteins in flies is toxic (Tsou et al., 2013; Tsou et al., 2015a; Tsou et al., 2015b; Costa et al., 2016; Tsou et al., 2016; Sutton et al., 2017; Ristic et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "aa71ed17-cee3-44c8-a5fd-656ad0f0c8df",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C21",
+      "claim": "Exercise has a dramatically positive effect in SCA2 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that exercise has a dramatically positive effect in SCA2 flies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "98b66806-e81e-4325-92e6-83708f94d859",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C22",
+      "claim": "Exercise has modest effects on SCA6 model flies.",
+      "claim_type": "EXPLICIT",
+      "source": "with modest effects on SCA6 model flies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "eecd4a6f-a792-4a3a-b637-ce0d4f29cfb1",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C23",
+      "claim": "Exercise has no benefit to SCA3 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "and no benefit to SCA3 flies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "ebc7b9ea-2c57-450d-a2e4-6fa5dc46ab5c",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C24",
+      "claim": "SCA2 model flies expressing polyQ-expanded ATXN2 specifically in adult neurons had reduced climbing speed by 4 weeks of age.",
+      "claim_type": "EXPLICIT",
+      "source": "SCA2 model flies expressing polyQ-expanded ATXN2 specifically in adult neurons (elav-Gal4 (GS)> ATXN2Q117) had reduced climbing speed by 4 weeks of age",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from climbing speed assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "50815273-80b6-4bed-8a89-bec4a80f0723",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C25",
+      "claim": "Exercise fully rescued climbing speed in SCA2 flies to the level of age-matched, uninduced control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "but exercise fully rescued climbing speed to the level of age-matched, uninduced control flies that complete the three-week, ramped exercise program (Figure 1C, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 1C and Video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "966b93aa-93f5-4089-bf3c-e9fa8eb3ddd5",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C26",
+      "claim": "Four-week-old SCA3 model flies did not increase climbing speed after exercise training.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, four-week-old SCA3 model flies (elav-Gal4 (GS)> ATXN3Q77 RU+) did not increase climbing speed after exercise training (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "0b9ac373-cfe6-42b5-a01b-ad9af8ca8039",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C27",
+      "claim": "Flies expressing polyQ-expanded \u03b21ACT had reduced week-four climbing speed in comparison to uninduced, unexercised control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies expressing polyQ-expanded \u03b21ACT (elav-Gal4 (GS)> \u03b21ACTQ70), the disease gene in SCA6 (Tsou et al., 2016), had reduced week-four climbing speed in comparison to uninduced, unexercised control flies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from climbing speed assays",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "c1e7802f-2403-4a5b-9853-615be072814f",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C28",
+      "claim": "Climbing in SCA6 flies was partially rescued after exercise training.",
+      "claim_type": "EXPLICIT",
+      "source": "but climbing was partially rescued after exercise training (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "2d329153-fd62-4441-ad9b-f662241820e1",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C29",
+      "claim": "Neurodegenerative severity of polyQ disorders tends to increase with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurodegenerative severity of polyQ disorders tends to increase with age (Zoghbi and Orr, 2000; La Spada and Taylor, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "419bb125-b7c7-478d-b4ac-01a644970847",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C30",
+      "claim": "Exercise-induced improvements to climbing speed and endurance are long-lasting and persist even after the three-week exercise program is complete.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that exercise-induced improvements to climbing speed and endurance are long-lasting and persist even after the three-week exercise program is complete (Piazza et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "54a5178d-bc09-454f-a720-23ad8a742bcb",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C31",
+      "claim": "Neither RU486 feeding, nor expression of the empty vector used to generate transgenic flies in adult neurons, altered exercise adaptations to either climbing speed or endurance.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither RU486 feeding, nor expression of the empty vector used to generate transgenic flies in adult neurons, altered exercise adaptations to either climbing speed or endurance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on control experiments shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "9204cf96-34e1-40ca-8ed4-7e4f477ee19a",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C32",
+      "claim": "Expression of an isolated polyQ80 repeat in adult neurons reduced climbing speed and abrogated exercise benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of an isolated polyQ80 repeat (Johnson et al., 2020) in adult neurons reduced climbing speed and abrogated exercise benefits, while age-matched, uninduced control flies adapted to exercise (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "108b2748-bd54-44d4-8ffc-c920fde455d2",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C33",
+      "claim": "Spinocerebellar ataxias type 2 model flies had reduced climbing speed by adult week four.",
+      "claim_type": "EXPLICIT",
+      "source": "Spinocerebellar ataxias type 2 model flies had reduced climbing speed by adult week four (Figure 2A, compare RU- UN to RU+ UN)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "77fa1264-4ebf-43a2-a96d-eac6e6618e1e",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C34",
+      "claim": "Endurance exercise fully rescued climbing speed in SCA2 flies to the level of exercised, uninduced control flies, and improvement persisted into adult week five.",
+      "claim_type": "EXPLICIT",
+      "source": "but endurance exercise fully rescued climbing speed to the level of exercised, uninduced control flies, and improvement persisted into adult week five (Figure 2A, compare RU- EX to RU+ EX).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "84d9cd70-79c9-4cf6-b248-44b0dd391c98",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C35",
+      "claim": "Baseline endurance in SCA2 flies was similar to uninduced, unexercised siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Baseline endurance in SCA2 flies was similar to uninduced, unexercised siblings (log-rank, P = 0.2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical analysis of endurance data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "dcb42749-49d2-406d-94f9-7da4190c76ac",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C36",
+      "claim": "Exercised SCA2 flies improved endurance as well as exercised, uninduced controls.",
+      "claim_type": "EXPLICIT",
+      "source": "and exercised SCA2 flies improved endurance as well as exercised, uninduced controls (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "682f65cb-a2b0-462a-a4cb-afc9ca4c0ded",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C37",
+      "claim": "Exercise markedly reduced ATXN2 levels relative to age-matched, unexercised siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercise markedly reduced ATXN2 levels relative to age-matched, unexercised siblings, linking improved physiology to reductions in disease protein (Figure 2C, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Western blot data shown in Figure 2C and 2I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "d6013788-4879-43a2-bff7-86c14e1959a7",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C38",
+      "claim": "SCA3 model flies did not improve climbing speed or endurance after exercise training.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SCA3 model flies did not improve climbing speed or endurance (Figure 2D, E) after exercise training.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2D and 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "a6197a33-7ece-45e6-92c8-6bc179840087",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C39",
+      "claim": "Exercised and unexercised SCA3 flies had similar levels of ATXN3.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, exercised and unexercised SCA3 flies had similar levels of ATXN3, the causative, polyQ-expanded disease protein in SCA3 (D'Abreu et al., 2010; Figure 2F, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Western blot data shown in Figure 2F and 2I",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "1d7a9217-effc-47d0-82e6-dfec2964d0f8",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C40",
+      "claim": "SCA6 model flies had reduced climbing speed at weeks three and five compared to unexercised, uninduced siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "SCA6 model flies had reduced climbing speed at weeks three and five compared to unexercised, uninduced siblings",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from climbing speed assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e2cd9a78-5746-4ad9-83de-cc8d8481d565",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C41",
+      "claim": "Exercise training improved climbing speed in SCA6 flies, albeit not to the level of uninduced, exercised control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "and exercise training improved climbing speed, albeit not to the level of uninduced, exercised control flies (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "21aa5240-b486-4833-9fea-374f9070eb17",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C42",
+      "claim": "Unexercised SCA6 flies trended toward lower endurance relative to uninduced, unexercised control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexercised SCA6 flies trended toward lower endurance relative to uninduced, unexercised control flies (log-rank, P = 0.0559)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical analysis of endurance data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "cab45bb2-518f-49b6-863d-59c6b3329aaa",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C43",
+      "claim": "SCA6 flies improved endurance after exercise training, but did not equal the endurance of uninduced, exercised controls.",
+      "claim_type": "EXPLICIT",
+      "source": "and improved endurance after exercise training, but did not equal the endurance of uninduced, exercised controls (log-rank, P = 0.0218) (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "523a142c-4997-4e78-83f6-ad221115c2d2",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C44",
+      "claim": "Sesn is necessary for exercise adaptations in multiple species.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the stress-inducible protein, Sesn, is necessary for exercise adaptations in multiple species (Kim et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "6b033ec1-7360-49a0-a721-9687cd3e9e98",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C45",
+      "claim": "Sesn activity has been proposed to play a protective role against neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "and Sesn activity has been proposed to play a protective role against neurodegeneration (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "947d1681-c804-44c4-aba4-af6ffea56e90",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C46",
+      "claim": "Both endurance exercise and Sesn increase autophagy by inhibiting mTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Both endurance exercise and Sesn increase autophagy by inhibiting mTOR (Sujkowski et al., 2015; Mahalakshmi et al., 2020; Lee et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "909d5906-ce0e-4889-9167-5b7ca21948ef",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C47",
+      "claim": "Increased autophagy enhances ATXN2 solubility and reduces phenotypes in SCA2 patient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and increased autophagy enhances ATXN2 solubility and reduces phenotypes in SCA2 patient cells (Wardman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e38c21f3-0db2-429f-855d-85b84d15c28a",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C48",
+      "claim": "Muscle-specific dSesn overexpression is sufficient to replicate the beneficial adaptations of endurance exercise, even in sedentary Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Since muscle-specific dSesn overexpression is sufficient to replicate the beneficial adaptations of endurance exercise, even in sedentary Drosophila (Kim et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "d7fb612e-887c-46b2-8603-8ba29d02f2a4",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C49",
+      "claim": "Neither ATXN2 expression nor exercise significantly affected longevity in SCA2 flies when expressed in adult neurons only.",
+      "claim_type": "EXPLICIT",
+      "source": "Longevity assessment in SCA model flies expressing polyQ-expanded disease protein selectively in adult neurons confirmed previously reported lifespan reductions in both SCA3 and SCA6 model flies (Tsou et al., 2016; Johnson et al., 2019; Figure 3B, C), but neither ATXN2 expression nor exercise significantly affected longevity in SCA2 flies (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on longevity data shown in Figure 3A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "f611f5e0-a99c-44b1-bc36-a2b2c4be8f3b",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C50",
+      "claim": "CAG expansion in ATXN2 causes early mortality in SCA2 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "CAG expansion in ATXN2, a widely expressed gene, causes early mortality in SCA2 patients (Scoles and Pulst, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "7bb26243-e15f-49a9-9aa9-9ea8f9b74d45",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C51",
+      "claim": "Constitutive expression of polyQ-expanded ATXN2 in all tissues caused early death in both female and male flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, constitutive expression of polyQ-expanded ATXN2 in all tissues, throughout development and in adults, (sqh> ATXN2Q117;ATXN2Q117) caused early death in both female (Figure 4A) and male (Figure 4D) flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival data shown in Figure 4A and 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "af081488-5100-4c88-b186-bee7673e60fc",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C52",
+      "claim": "Mobility reductions in flies ubiquitously expressing ATXN2 appeared upon adult eclosion from the pupal case and persisted until death.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobility reductions appeared earlier than with pan-neuronal expression, present upon adult eclosion from the pupal case and persisting until death (Figure 4B, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mobility data shown in Figure 4B and 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "04ab7ce4-993f-4b85-b3de-5d3843c2bfb0",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C53",
+      "claim": "Flies ubiquitously expressing both ATXN2Q117 and dSesn improved survival.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, flies ubiquitously expressing both ATXN2Q117 and dSesn improved survival (Figure 4A, D), although rescue was not to the level of background control flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival data shown in Figure 4A and 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "8af8ece5-7685-4d77-b0c1-3ec1db8ce7df",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C54",
+      "claim": "Flies ubiquitously expressing both ATXN2Q117 and dSesn showed complete rescue of climbing speed in both females and males.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobility improvements were more pronounced, with complete rescue of climbing speed in both females (Figure 4B) and males (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mobility data shown in Figure 4B and 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "0f7d6692-3dc2-4d49-ae10-dd3a408e5715",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C55",
+      "claim": "dSesn expression significantly reduced ATXN2 protein levels compared to SCA2 flies without dSesn expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined disease protein levels in sqh> ATXN2Q117;dSesnWT;ATXN2Q117 flies and found significant reduction in ATXN2 compared to SCA2 flies without dSesn expression (Figure 4C, F, quantified in Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Western blot data shown in Figure 4C, 4F, and Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "8fb40ae2-9cf6-410d-bd0d-2a2d1af373ad",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C56",
+      "claim": "Ubiquitous expression of either ATXN3Q77 or \u03b21ACTQ70 led to developmental and early adult lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ubiquitous expression of either ATXN3Q77 or \u03b2 1ACTQ70 led to developmental and early adult lethality (Tsou et al., 2016; Johnson et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "12bcb4fc-8ff9-4c2a-bf2c-3c8a5899f23a",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C57",
+      "claim": "dSesn expression did not improve outcomes in flies ubiquitously expressing ATXN3Q77 or \u03b21ACTQ70.",
+      "claim_type": "EXPLICIT",
+      "source": "and dSesn expression did not improve outcomes (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "607dc8f2-b10f-4987-a7b4-54779ec7806d",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C58",
+      "claim": "Sesn is a multi-functional protein with separate, previously identified oxidoreductase and mTOR interacting domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Sesn is a multi-functional protein with separate, previously identified oxidoreductase and mTOR interacting domains (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "a2012645-3cea-4663-a40e-a84513446ee1",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C59",
+      "claim": "The C86S mutation abolishes oxidoreductase activity of Sesn.",
+      "claim_type": "EXPLICIT",
+      "source": "The C86S (dSesnC86S) mutation abolishes oxidoreductase activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Sesn mutations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "a2616afc-49b7-45de-b878-c9d7d225ce45",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C60",
+      "claim": "The D424A and D423A/D424A substitutions disrupt TORC1 inhibiting and TORC2/Akt potentiating functions of dSesn.",
+      "claim_type": "EXPLICIT",
+      "source": "while the D424A (dSesnD424A) and D423A/D424A (dSesnD423A/D424A) substitutions disrupt TORC1 inhibiting and TORC2/Akt potentiating functions of dSesn (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "a64a78df-8e6e-403f-8b15-29905c5e2717",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C61",
+      "claim": "Interaction with mTOR is required for the mobility-extending effects of dSesn in wild-type, sedentary flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that interaction with mTOR is required for the mobility-extending effects of dSesn in wild-type, sedentary flies (Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "971a369d-34fb-4d55-9540-2fc581289ef4",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C62",
+      "claim": "Overexpression of either wild-type or mutated dSesns did not increase longevity in a wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of either wild-type or mutated dSesns did not increase longevity in a wild-type background (i.e. without polyQ protein expression; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "889a215a-2fba-470b-b062-71751ae65fd1",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C63",
+      "claim": "Ubiquitous expression of dSesnC86S in SCA2 model flies exacerbated premature death in both male and female flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitous expression of dSesnC86S in SCA2 model flies did not provide any protection\u2014in fact, it exacerbated premature death in both male and female flies (Figure 5A, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival data shown in Figure 5A and 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e74e65d1-02cf-4e92-bda1-a103e95a7372",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C64",
+      "claim": "Ubiquitous expression of dSesnC86S in SCA2 model flies provided pronounced mobility improvements in female flies and fully rescued mobility in males.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed pronounced mobility improvements in female flies (Figure 5B) and mobility was fully rescued in males (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mobility data shown in Figure 5B and 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "119816bb-8281-4dc9-8a7a-db033e988d68",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C65",
+      "claim": "Wild-type dSesn overexpression consistently reduced ATXN2 levels in both female and male SCA2 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas wild-type dSesn overexpression consistently reduced ATXN2 levels in both female (Figure 5C) and male (Figure 5F) SCA2 flies",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Western blot data shown in Figure 5C and 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "0b996045-6b8c-418c-a222-813bcb4db3e8",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C66",
+      "claim": "The effect of dSesnC86S on ATXN2 levels was more variable.",
+      "claim_type": "EXPLICIT",
+      "source": "the effect of dSesnC86S on ATXN2 levels was more variable (Figure 5C, F, quantified in Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Western blot data shown in Figure 5C, 5F, and Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "94f4f713-5da4-4902-adcb-ae3b9e21f1f6",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C67",
+      "claim": "The oxidoreductase function of dSesn is not required for protection against motility defects in SCA2 flies.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that while the oxidoreductase function of dSesn is 14 Figure 6: Interaction with mTOR is required for dSesn to improve survival and mobility inflies expressing polyQ-expanded ATXN2. Ubiquitous expression of dSesn harboring two separate mutations that abolish mTORC interaction dSesnD424A (A\u2013D), dSesn D423A/D424A (E\u2013H)(denoted by orange lines) exacerbates early death (A,E, females, C,G, males) and fails to rescuemobility (B,F, females, D,H, males) in SCA2 flies. Survival and mobility experiments performed intriplicate. Individual survival experiments are composed of \u2265200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depictsaverage climbing speed for \u22655 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate \u00b1 SD not required for protection against motility defects in SCA2 flies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results showing mobility rescue with dSesnC86S",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "c983e99e-0ea5-4401-b5ae-871f90e74280",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C68",
+      "claim": "The oxidoreductase function of dSesn is essential for improved survival in SCA2 flies.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that while the oxidoreductase function of dSesn is 14 Figure 6: Interaction with mTOR is required for dSesn to improve survival and mobility inflies expressing polyQ-expanded ATXN2. Ubiquitous expression of dSesn harboring two separate mutations that abolish mTORC interaction dSesnD424A (A\u2013D), dSesn D423A/D424A (E\u2013H)(denoted by orange lines) exacerbates early death (A,E, females, C,G, males) and fails to rescuemobility (B,F, females, D,H, males) in SCA2 flies. Survival and mobility experiments performed intriplicate. Individual survival experiments are composed of \u2265200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depictsaverage climbing speed for \u22655 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate \u00b1 SD not required for protection against motility defects in SCA2 flies, it is essential for improved survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results showing exacerbated death with dSesnC86S",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "8e621a71-7b81-4f63-b7ff-ecb6c6d1eb62",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C69",
+      "claim": "Expression of either dSesnD424A or dSesnD423A/D424A increased early death in both female and male SCA2 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Like dSesnC86S experiments, expression of either dSesnD424A (Figure 6A\u2013D) or dSesnD423A/D424A (Figure 6E\u2013H) increased early death in both female (Figure 6A, E) and male (Figure 6C, G) SCA2 flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "9223cba5-6727-4df0-8da7-89cbe835fe03",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C70",
+      "claim": "In female flies, both dSesnD424A and dSesn D423A/D424A conferred modest improvements to climbing speed compared to SCA2 model flies, but improvement did not equal that of wild-type dSesn expression and was absent at later timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "In female flies, both dSesnD424A and dSesn D423A/D424A conferred modest improvements to climbing speed compared to SCA2 model flies, but improvement did not equal that of wild-type dSesn expression and was absent at later timepoints (Figure 6B, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mobility data shown in Figure 6B and 6F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "d9202187-ac18-4ab0-a9ec-d7df30089953",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C71",
+      "claim": "Male flies ubiquitously expressing dSesnD424A did not display rescued mobility defects at any age.",
+      "claim_type": "EXPLICIT",
+      "source": "Male flies ubiquitously expressing dSesnD424A did not display rescued mobility defects at any age (Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mobility data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "bca78e4c-c103-464f-b518-1fb4fc4b2aa5",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C72",
+      "claim": "Overexpression of dSesn D423A/D424A provided modest climbing speed improvements at early ages only in male flies.",
+      "claim_type": "EXPLICIT",
+      "source": "while overexpression of dSesn D423A/D424A provided modest climbing speed improvements at early ages only (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mobility data shown in Figure 6H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "dfe71292-7cdf-43dd-98db-388689961903",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C73",
+      "claim": "Interaction with mTOR is critical for full rescue of climbing speed and protection against early death in SCA2 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, interaction with mTOR appears critical for full rescue of climbing speed and protection against early death in SCA2 flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results with mTOR-interaction-deficient Sesn mutants",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "967d49ae-292d-41dc-9e52-0162da4e79dd",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C74",
+      "claim": "All mutant dSesn-expressing cohorts had variable, but statistically significant reductions in ATXN2 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "All mutant dSesn-expressing cohorts had variable, but statistically significant reductions in ATXN2 protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Western blot data and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "077949be-45f1-460f-b6c1-5fe6f3f13808",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C75",
+      "claim": "AtgIIa/Ia ratios increased in both male and female SCA2 model flies that were overexpressing wild-type dSesn.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that AtgIIa/Ia ratios increased in both male and female SCA2 model flies that were overexpressing wild-type dSesn",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Western blot data for autophagy markers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "67866dbb-0094-4901-a369-0e6481fa8ef5",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C76",
+      "claim": "Mutated versions of dSesn had higher variability in AtgIIa/Ia ratios, which largely trended towards increased autophagy, but without reaching significance.",
+      "claim_type": "EXPLICIT",
+      "source": "while its mutated versions had higher variability, which largely trended towards increased autophagy, but without reaching significance (Figure 7C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Western blot data shown in Figure 7C-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "96567287-99c6-4919-9466-0196f2ff9cf0",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C77",
+      "claim": "Exercised female flies expressing two copies of CAG-expanded ATXN2 ubiquitously significantly improved survival compared to unexercised siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercised female flies expressing two copies of CAG-expanded ATXN2 either ubiquitously (Figure 8A) or in adult neurons (Figure 8C) significantly improved survival compared to unexercised siblings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival data shown in Figure 8A and 8C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "c066374a-081b-4f80-87f7-24d5b548d0d8",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C78",
+      "claim": "Male SCA2 flies trended toward improved survival in early life only, while they were still undergoing exercise training.",
+      "claim_type": "EXPLICIT",
+      "source": "Male SCA2 flies trended toward improved survival in early life only, while they were still undergoing exercise training (Figure 8B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on survival data shown in Figure 8B and 8D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "477af646-565e-4dbc-b5f6-28de1222fce4",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C79",
+      "claim": "Both exercise and dSesn expression ameliorated mobility and survival defects in SCA2 model flies and these improvements correlated with reduced disease protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, both exercise and dSesn expression ameliorated mobility and survival defects in SCA2 model flies and these improvements correlated with reduced disease protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "f173dc53-73f9-495f-94e6-9319504116e8",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C80",
+      "claim": "The neuroprotective effects of exercise and dSesn relied on known functions of dSesn related to mTOR and oxidoreductase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these neuroprotective effects relied on known functions of dSesn related to mTOR and oxidoreductase activities (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental results with Sesn mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "cae01563-e4ac-4399-b588-8426cbcdbde0",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C81",
+      "claim": "Endurance exercise enhances quality of life and provides remedy for a number of conditions and diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Endurance exercise enhances quality of life and provides remedy for a number of conditions and diseases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of exercise benefits",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "adeee55d-8dfe-49fa-a72b-b8d6024152fb",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C82",
+      "claim": "Exercise-dependent molecular mechanisms that can be utilized to fight polyQ diseases remain largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "but, until now, has not been systematically examined across several polyQ disorders. Lack of systematic studies in this respect also means that exercise-dependent molecular mechanisms that can be utilized to fight polyQ diseases remain largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of existing literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "3d488e5c-5b68-41a3-a473-c1690da4125b",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C83",
+      "claim": "Exercise can have potent rescue effects for particular polyQ diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, exercise can have potent rescue effects for particular polyQ diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential effects observed across SCA models",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e0765e32-bdcf-4f0b-9766-4242c520c8e1",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C84",
+      "claim": "Exercise led to reduction in protein levels of ATXN2, but did not noticeably affect ATXN3.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain early insight into how exercise could lead to such dramatic improvement in SCA2 flies (albeit not for SCA3) we examined protein levels of ATXN2 and ATXN3, their respective disease proteins. Exercise led to reduction in protein levels of ATXN2, but did not noticeably affect ATXN3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Western blot data comparing exercised and unexercised flies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "fd4235dc-0efd-4ac2-b0ef-e7d5cf4cad0e",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C85",
+      "claim": "Improved motility in SCA2 flies in the context of endurance exercise may be due to reduced disease protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of endurance exercise, improved motility in SCA2 flies may be due to reduced disease protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation between reduced ATXN2 levels and improved mobility",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "33ebbebf-be28-4fda-b483-11c978a7cc3e",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C86",
+      "claim": "Sesns are induced by oxidative and genotoxic stress in flies and mammals and promote autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Sesns are induced by oxidative and genotoxic stress in flies and mammals and promote autophagy (Lee et al., 2010; Budanov and Karin, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "a7ff47b2-dad8-4498-ad82-511dd73c1d1d",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C87",
+      "claim": "Sesns protect against oxidative stress-induced fly neuronal death.",
+      "claim_type": "EXPLICIT",
+      "source": "Sesns protect against oxidative stress-induced fly neuronal death (Singh and Chowdhuri, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "07ebd385-4c33-406e-ba5a-94430448bcc1",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C88",
+      "claim": "Sesns reduce accumulation of protein aggregates in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and reduce accumulation of protein aggregates in mammalian cells (Reddy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "37363f2c-4abb-44f8-a9e0-0f23eebad5f3",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C89",
+      "claim": "Expression of fly Sesn is sufficient to preserve speed and endurance and has no additive effect with exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work with wild-type flies, we found that expression of fly Sesn is sufficient to preserve speed and endurance and has no additive effect with exercise, consistent with a role as a key effector of exercise (Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "7937d951-7159-472b-a2a5-068bb3e58002",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C90",
+      "claim": "Sesn was protective in SCA2 model flies, but did not confer benefit to either SCA3 or SCA6.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that Sesn was protective in SCA2 model flies, but did not confer benefit to either SCA3 or SCA6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data from survival and mobility assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e4b321f4-683d-45cf-b53b-dfd413618bbb",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C91",
+      "claim": "Sesn's oxidoreductase function was not necessary to rescue mobility defects in SCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Sesn's oxidoreductase function was not necessary to rescue mobility defects in SCA2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data with dSesnC86S mutant",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "cdfe48fc-62f6-461b-9e24-c8c163e9ac91",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C92",
+      "claim": "Both Sesn's oxidative resistance and mTOR modulating activities were required for Sesn to improve early death in SCA2 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "while both its oxidative resistance and mTOR modulating activities were required for Sesn to improve early death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data with Sesn mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "3d74b76c-b2fc-4373-b192-d9ec81bf3623",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C93",
+      "claim": "Overexpression of Sesn with mutations eliminating either its oxidoreductase activity or mTOR modulating functions exacerbated premature death in SCA2 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, overexpression of Sesn with mutations eliminating either its oxidoreductase activity or mTOR modulating functions exacerbated premature death in SCA2 flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on survival data with Sesn mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "53dd258a-32c8-451a-9b19-692ced56aec5",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C94",
+      "claim": "The oxidoreductase activity of Sesn is dispensable for motility improvements in wild-type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the oxidoreductase activity of Sesn is dispensable for motility improvements in wild-type flies (Kim et al., 2020), similar to our observations with SCA2 flies in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e3957373-a759-4f80-897e-b16032ab3c53",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C95",
+      "claim": "Sesn overexpression is not sufficient to extend lifespan in a wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "Sesn overexpression is also not sufficient to extend lifespan in a wild-type background, shown here and elsewhere (Kim et al., 2020; Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data and citations to literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "030775b3-2b11-4fac-b1cd-d7fee62fbfd6",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C96",
+      "claim": "Neurons are particularly susceptible to oxidative stress and reactive oxygen species can induce cell death during neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons are particularly susceptible to oxidative stress and reactive oxygen species can induce cell death during neurodegeneration (Fatokun et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "70073f6f-773f-48c0-8728-478425100707",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C97",
+      "claim": "In the context of neurodegenerative disease, Sesn may protect mobility until oxidative burden in neurons becomes insurmountable.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps, in the context of neurodegenerative disease, Sesn protects mobility until oxidative burden in neurons becomes insurmountable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of experimental results",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "5f7cdc91-c156-4609-aa3b-c5a71566b6b5",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C98",
+      "claim": "Wild-type Sesn overexpression in SCA2 model flies correlated with significantly reduced disease protein and increased autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type Sesn overexpression in SCA2 model flies correlated with significantly reduced disease protein and increased autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Western blot data for ATXN2 and autophagy markers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "42a9bcd8-cb0d-4cee-94c2-8d908f7880ab",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C99",
+      "claim": "Overexpression of mutated versions of Sesn also led to reduced disease protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of mutated versions of Sesn also led to reduced disease protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Western blot data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "bf571d96-5be0-439e-9ca3-9f988a17286f",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C100",
+      "claim": "Some protective mechanisms may directly depend on reduced toxic protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings suggest the possibility of separate mechanisms at play: some protective mechanisms may directly depend on reduced toxic protein levels (as observed before in a model of HD and exercise Mangiarini et al., 1996; van Dellen et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation supported by citations to HD studies",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "9197945f-287f-4142-b6aa-85f7fc86e895",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C101",
+      "claim": "Some protective mechanisms may protect independently of changes in degenerative protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "others may protect independently of changes in degenerative protein levels, or perhaps without directly relying on it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of experimental results",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "7d754dc4-8013-4909-9a0e-e91cebff5d4c",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C102",
+      "claim": "Endurance exercise is a promising therapeutic intervention for polyQ neurodegeneration, particularly in SCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, we propose endurance exercise as a promising therapeutic intervention for polyQ neurodegeneration, particularly in SCA2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e090dda2-7e3e-43a5-96f4-c83f59978196",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C103",
+      "claim": "Sesn can substitute for exercise benefits in flies that do not exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate that Sesn can substitute for exercise benefits in flies that do not exercise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data showing Sesn overexpression improves phenotypes without exercise",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "c370e949-bf34-42d4-b58d-4f966ad546f7",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C104",
+      "claim": "Many patients with polyQ diseases will eventually lose the ability to exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of molecular targets capable of inducing exercise-like enhancements in the presence of neurodegeneration is particularly important, as many patients will eventually lose the ability to exercise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of disease progression",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "a550885e-690f-4aff-8638-a0bca3c892f1",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C105",
+      "claim": "Expression of polyQ disease proteins in flies causes reduced motility and neuronal cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of polyQ disease proteins in flies causes reduced motility and neuronal cell death, as we and others have shown in various publications (Bonini and Fortini, 2003; Perrimon et al., 2016; Pandey and Rajamma, 2018; Ueyama and Nagai, 2018; Tsou et al., 2015a; Sutton et al., 2017; Ristic et al., 2018; Jackson et al., 1998; Fernandez-Funez et al., 2000; Romero et al., 2008; Hsu et al., 2014; Rosas-Arellano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "5c5a8750-73a0-4912-ad20-b61d32b46d6d",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C106",
+      "claim": "Full-length, human disease protein was expressed through the binary, RU486-inducible Gal4-UAS system in all fly neurons and only during adulthood, which is toxic.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length, human disease protein was expressed through the binary, RU486-inducible Gal4-UAS system (Sujkowski et al., 2015; Brand et al., 1994) in all fly neurons and only during adulthood, which is toxic (Tsou et al., 2013; Tsou et al., 2015a; Tsou et al., 2015b; Costa et al., 2016; Tsou et al., 2016; Sutton et al., 2017; Ristic et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to methodology and toxicity studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "41343d7b-c9e3-4e36-aa69-2898216377d0",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C107",
+      "claim": "The exercise protocol drives reproducible effects that are robust across genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have established an optimized exercise protocol (Figure 1B) that drives reproducible effects that are robust across genotypes (Piazza et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "312e9de8-2885-4be1-bf67-8a18db8cd1f0",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C108",
+      "claim": "The effects of the exercise protocol are not due to non-specific stress or behavioral effect of the regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects are not due to non-specific stress or behavioral effect of the regimen\u2014unexercised flies exposed to training, but prevented from running, do not experience improvements (Piazza et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to control experiments",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "6c94f138-18bd-4d41-a96b-508c9b16f7bc",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "claim_id": "C109",
+      "claim": "Exercised wild-type flies retained faster climbing speed than age-matched, unexercised siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Exercised wild-type flies retained faster climbing speed than age-matched, unexercised siblings (Sujkowski and Wessells, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PolyQ diseases are a family of nine inherited neurodegenerative disorders caused by CAG repeat expansions encoding polyglutamine tracts. These diseases share common pathogenic mechanisms including toxic gain-of-function, protein aggregation, and mitochondrial/transcriptional/autophagic dysfunction, yet affect distinct CNS regions and currently lack therapeutic solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide well-established background on polyQ diseases, supported by multiple literature citations and general knowledge. These are foundational facts about the disease family that contextualize the study but represent prior knowledge rather than novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "61f6f3db-e184-496a-9ad8-73a9f302455a",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior studies show mixed results regarding exercise benefits in polyQ diseases. While endurance exercise has broad health benefits and some evidence suggests benefits in SCA1, SBMA, and certain HD models, results have been inconsistent across studies and disease models, with some showing no benefit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 accurately summarize prior literature on exercise effects in polyQ diseases, appropriately noting the inconsistent results. The citations support the mixed findings, providing important context for why systematic study is needed. This represents accurate assessment of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "7093ff09-703c-427c-bc43-35f4755fc618",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Drosophila is an established model for both polyQ disease mechanisms and chronic exercise studies. The authors use a validated 3-week ramped exercise protocol that produces reproducible physiological adaptations tracking with human exercise responses, and express full-length human polyQ-expanded disease proteins specifically in adult neurons using an inducible system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 and C105-C109 establish the validity of the Drosophila model system and experimental approach through extensive citations to prior work. The methodology is well-established and appropriately controlled (C31, C107-C108), providing a solid foundation for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Exercise differentially affects three Drosophila polyQ SCA models: SCA2 flies show dramatic rescue of climbing speed to control levels, SCA6 flies show partial rescue, and SCA3 flies show no benefit from exercise training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 are supported by clear experimental data in Figures 1C-E showing differential climbing speed responses. The statistical analyses (2-way ANOVA) are appropriate, sample sizes adequate (\u22655 vials of 20 flies), and experiments performed in triplicate. The differential response across disease models is a key finding demonstrating disease-specific exercise effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "f40d35ee-369b-4e62-b4aa-2517354c9260",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Longitudinal assessment confirms exercise fully rescues climbing speed and endurance in SCA2 flies with effects persisting beyond the training period, while SCA3 shows no improvement and SCA6 shows partial rescue. Exercise-induced improvements in SCA2 correlate with reduced ATXN2 protein levels, but ATXN3 levels remain unchanged in SCA3 flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C43 and C84-C85 are well-supported by longitudinal data in Figure 2 with appropriate statistical tests (2-way ANOVA for climbing, log-rank for endurance). The correlation between reduced ATXN2 protein levels and improved phenotypes (C37, C84) is demonstrated by Western blots (Figure 2C, I), though causation is not definitively established. The lack of ATXN3 reduction (C39, C84) provides important mechanistic insight into differential exercise responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pan-neuronal ATXN2 expression does not affect longevity in SCA2 flies, but ubiquitous expression throughout development causes early death and mobility defects. Co-expression of wild-type dSesn with ubiquitous ATXN2 partially rescues survival and completely rescues mobility, correlating with reduced ATXN2 protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 are supported by survival curves (Figures 3A, 4A, 4D) and mobility data (Figures 4B, 4E) with appropriate log-rank and ANOVA analyses. The Western blot data (Figures 4C, 4F, Figure 7) demonstrate reduced ATXN2 levels with dSesn expression. Sample sizes are adequate (\u2265200 flies for survival). The differential effects between neuronal-only and ubiquitous expression provide important context about disease severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "6b473f45-11b7-42eb-ac99-205e46d5d067",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sestrin overexpression does not improve outcomes in SCA3 or SCA6 fly models, showing disease-specific protective effects limited to SCA2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C90 are supported by data in Figure 4\u2014figure supplement 1 showing developmental/early adult lethality in SCA3 and SCA6 models with no rescue by dSesn. This negative result is important for establishing the specificity of Sesn's protective effects and parallels the exercise results, strengthening the mechanistic connection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sestrin's oxidoreductase function (C86S mutation) is dispensable for mobility rescue but essential for survival improvement in SCA2 flies. The oxidoreductase-deficient mutant fully rescues mobility in males and partially in females, but exacerbates premature death, with variable effects on ATXN2 protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 and C91-C94 are supported by comprehensive data in Figure 5 showing survival (5A, 5D) and mobility (5B, 5E) with appropriate statistical analyses. The dissociation between mobility and survival phenotypes is well-demonstrated. However, the variability in ATXN2 reduction (C66) and the exacerbation of death despite mobility rescue (C63) suggest complex mechanisms that are not fully explained. The interpretation (C67-C68) is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "b511247f-50f5-4eff-b09f-7df308e0c99d",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sestrin's mTOR-interacting function is critical for full rescue of both climbing speed and survival in SCA2 flies. Mutations abolishing mTOR interaction (D424A, D423A/D424A) exacerbate early death and provide only modest, transient mobility improvements that do not match wild-type Sesn effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 are well-supported by extensive data in Figure 6 showing survival and mobility across both sexes with multiple mTOR-interaction-deficient mutants. The experiments are appropriately controlled and replicated (n\u2265200 for survival, \u22655 vials for mobility). The sex-specific differences (C70-C72) add complexity but are clearly documented. The conclusion about mTOR interaction being critical (C73) is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "805ecc45-d999-4741-89ad-57eed3f159e2",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "All Sesn variants (wild-type and mutants) significantly reduce ATXN2 protein levels, though with variable magnitude. Wild-type Sesn consistently increases autophagy markers (AtgIIa/Ia ratios), while mutant Sesn variants show trends toward increased autophagy without reaching significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 and C98-C99 are supported by Western blot quantification in Figure 7 with appropriate statistical analyses (ANOVA with Tukey post-hoc, n=5 biological replicates). The variability in mutant effects is acknowledged and documented. However, the autophagy data (C76) shows trends without significance, which somewhat weakens the mechanistic interpretation. The correlation between protein reduction and phenotypic rescue is not perfect across all mutants, suggesting additional complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "ffeb3f09-0b0f-4f67-9713-20aa40619138",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Exercise significantly improves survival in female SCA2 flies expressing two copies of ATXN2 (both ubiquitously and neuronally), while male flies show only transient survival benefits during the training period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 are supported by survival data in Figure 8 with log-rank analyses (n\u2265170, performed in duplicate). The sex-specific differences are clearly documented, with females showing sustained benefits and males showing only transient effects. The experiments complement the mobility data, though the male-specific limitation of survival benefits raises questions about underlying mechanisms that are not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "08360ff6-6460-4188-bd1b-70c05b77852e",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Both exercise and Sesn expression ameliorate SCA2 phenotypes correlating with reduced ATXN2 levels, with protective effects depending on Sesn's mTOR-modulating and oxidoreductase functions. The authors propose that protection may involve both protein-level-dependent and protein-level-independent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 summarize the main findings and are well-supported by the collective data. However, C100-C101 propose separate mechanisms (protein-dependent vs. independent) based on the observation that all Sesn mutants reduce ATXN2 but have differential phenotypic effects. This interpretation is speculative and not directly tested. The dissociation between protein reduction and phenotypic rescue across mutants suggests complexity, but alternative explanations (e.g., differential effects on protein aggregation state, localization, or other functions) are not ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "8462ecd0-0c9f-4538-a8ef-089d484722ea",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sestrin is an established exercise-inducible protein necessary for exercise adaptations that promotes autophagy through mTOR inhibition, protects against oxidative stress and neurodegeneration, and can replicate exercise benefits when overexpressed in muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 and C86-C89 accurately summarize prior work on Sestrin, appropriately citing the authors' previous studies and other literature. This provides important mechanistic context for why Sesn was investigated as a mediator of exercise benefits. The claims represent accurate assessment of prior work rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "ad4ce593-ef1c-4a80-a2d4-69db7c58dafa",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PolyQ disease severity increases with age, exercise-induced improvements persist after training completion, and appropriate controls (RU486, empty vector, isolated polyQ80) validate the experimental system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 provide important methodological validation and context. C31 demonstrates that the induction system and vector do not confound results (Figure 1\u2014figure supplement 1). C32 shows that an isolated polyQ repeat is sufficient to cause defects and block exercise benefits, supporting the polyQ-specific nature of the phenotypes. These controls strengthen confidence in the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "f695465d-319b-4c83-ab2a-792a29cf8a26",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sestrin overexpression does not extend lifespan in wild-type flies. The authors speculate that in neurodegenerative disease, Sesn may protect mobility until oxidative burden becomes insurmountable, given that neurons are particularly susceptible to oxidative stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C95 is supported by data (Figure 4\u2014figure supplement 2) and citations. However, C97 is explicitly speculative (\"Perhaps...\") and not directly tested. While the speculation is reasonable given the dissociation between mobility and survival rescue with oxidoreductase-deficient Sesn, it remains a hypothesis requiring further investigation. C96 provides relevant background but doesn't directly support the speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    },
+    {
+      "id": "7dcddbec-b1aa-4fa8-8f43-0ad08e7f7e85",
+      "content_id": "7e5238bf-9e6c-4219-ae9b-dade25882586",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose endurance exercise as a promising therapeutic intervention for SCA2 and demonstrate that Sestrin can substitute for exercise benefits in non-exercising flies, which is important since many patients will lose the ability to exercise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 represent reasonable conclusions based on the collective experimental findings showing exercise and Sesn benefits in SCA2 models. C104 provides important clinical context. However, the translational potential (C102) should be interpreted cautiously given the limitations of the fly model, the disease-specific effects, and the lack of direct testing in patient-relevant contexts. The proposal is reasonable but requires validation in mammalian models and ultimately clinical trials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:01:57.648664Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d7a96139-0847-4347-aeba-c9b8c907eb65",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "04db7df8-a767-4115-8fa0-560ec069fb80",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "3ba28b16-0e69-4c1e-b947-f670373dae49",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "287e0ede-65bc-4089-b2ef-e81519bc7933",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "603e921e-117d-4e3c-9d49-3b31b33590ce",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "52b70524-c386-449e-978b-cf798ed1b1d6",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "a9e1ceae-c54a-492c-af5c-32e8a2965e05",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "ebf88090-9cc1-4889-b4e9-aa05b1b0e215",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "d80bbb70-9d62-4cb8-b52d-c266e28e9a7c",
+      "result_id": "2760cdf4-5f39-4ffb-a348-9f0502eeaa7b"
+    },
+    {
+      "claim_id": "f810c3ef-f848-40f3-9743-74edac4f990f",
+      "result_id": "61f6f3db-e184-496a-9ad8-73a9f302455a"
+    },
+    {
+      "claim_id": "450afe61-862d-46b1-9419-2e5a611c0e0c",
+      "result_id": "61f6f3db-e184-496a-9ad8-73a9f302455a"
+    },
+    {
+      "claim_id": "cfd42e2a-1947-4b26-955b-9f1343108d42",
+      "result_id": "61f6f3db-e184-496a-9ad8-73a9f302455a"
+    },
+    {
+      "claim_id": "f9d1545b-f91d-43c4-83dd-56eaad22a088",
+      "result_id": "61f6f3db-e184-496a-9ad8-73a9f302455a"
+    },
+    {
+      "claim_id": "d5185bb0-fba7-4bab-a93c-6e8addaab293",
+      "result_id": "61f6f3db-e184-496a-9ad8-73a9f302455a"
+    },
+    {
+      "claim_id": "518e116b-8aaa-411e-a246-618f114e35de",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "b6f60413-7750-4561-8815-99cd5c1ad0c5",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "3981b706-e8d6-41d1-bf53-37ab788ed98f",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "082d3bde-8c3b-46ae-afc5-4e154ee00c70",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "13a165a6-4d2d-46ba-9bbf-94daa6f39953",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "e7895ae4-8c68-4735-9a4e-fcbb8764fa7e",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "a550885e-690f-4aff-8638-a0bca3c892f1",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "5c5a8750-73a0-4912-ad20-b61d32b46d6d",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "41343d7b-c9e3-4e36-aa69-2898216377d0",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "312e9de8-2885-4be1-bf67-8a18db8cd1f0",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "6c94f138-18bd-4d41-a96b-508c9b16f7bc",
+      "result_id": "7093ff09-703c-427c-bc43-35f4755fc618"
+    },
+    {
+      "claim_id": "aa71ed17-cee3-44c8-a5fd-656ad0f0c8df",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "98b66806-e81e-4325-92e6-83708f94d859",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "eecd4a6f-a792-4a3a-b637-ce0d4f29cfb1",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "ebc7b9ea-2c57-450d-a2e4-6fa5dc46ab5c",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "50815273-80b6-4bed-8a89-bec4a80f0723",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "966b93aa-93f5-4089-bf3c-e9fa8eb3ddd5",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "0b9ac373-cfe6-42b5-a01b-ad9af8ca8039",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "c1e7802f-2403-4a5b-9853-615be072814f",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "3d488e5c-5b68-41a3-a473-c1690da4125b",
+      "result_id": "2b89f8fd-6fe6-42b4-ae5d-35d7f9259a5e"
+    },
+    {
+      "claim_id": "108b2748-bd54-44d4-8ffc-c920fde455d2",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "77fa1264-4ebf-43a2-a96d-eac6e6618e1e",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "84d9cd70-79c9-4cf6-b248-44b0dd391c98",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "dcb42749-49d2-406d-94f9-7da4190c76ac",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "682f65cb-a2b0-462a-a4cb-afc9ca4c0ded",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "d6013788-4879-43a2-bff7-86c14e1959a7",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "a6197a33-7ece-45e6-92c8-6bc179840087",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "1d7a9217-effc-47d0-82e6-dfec2964d0f8",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "e2cd9a78-5746-4ad9-83de-cc8d8481d565",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "21aa5240-b486-4833-9fea-374f9070eb17",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "cab45bb2-518f-49b6-863d-59c6b3329aaa",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "e0765e32-bdcf-4f0b-9766-4242c520c8e1",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "fd4235dc-0efd-4ac2-b0ef-e7d5cf4cad0e",
+      "result_id": "f40d35ee-369b-4e62-b4aa-2517354c9260"
+    },
+    {
+      "claim_id": "d7fb612e-887c-46b2-8603-8ba29d02f2a4",
+      "result_id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b"
+    },
+    {
+      "claim_id": "f611f5e0-a99c-44b1-bc36-a2b2c4be8f3b",
+      "result_id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b"
+    },
+    {
+      "claim_id": "7bb26243-e15f-49a9-9aa9-9ea8f9b74d45",
+      "result_id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b"
+    },
+    {
+      "claim_id": "af081488-5100-4c88-b186-bee7673e60fc",
+      "result_id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b"
+    },
+    {
+      "claim_id": "04ab7ce4-993f-4b85-b3de-5d3843c2bfb0",
+      "result_id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b"
+    },
+    {
+      "claim_id": "8af8ece5-7685-4d77-b0c1-3ec1db8ce7df",
+      "result_id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b"
+    },
+    {
+      "claim_id": "0f7d6692-3dc2-4d49-ae10-dd3a408e5715",
+      "result_id": "f85aae30-64b0-4e2d-adb7-abd53d7fb57b"
+    },
+    {
+      "claim_id": "8fb40ae2-9cf6-410d-bd0d-2a2d1af373ad",
+      "result_id": "6b473f45-11b7-42eb-ac99-205e46d5d067"
+    },
+    {
+      "claim_id": "12bcb4fc-8ff9-4c2a-bf2c-3c8a5899f23a",
+      "result_id": "6b473f45-11b7-42eb-ac99-205e46d5d067"
+    },
+    {
+      "claim_id": "7937d951-7159-472b-a2a5-068bb3e58002",
+      "result_id": "6b473f45-11b7-42eb-ac99-205e46d5d067"
+    },
+    {
+      "claim_id": "607dc8f2-b10f-4987-a7b4-54779ec7806d",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "a2012645-3cea-4663-a40e-a84513446ee1",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "a2616afc-49b7-45de-b878-c9d7d225ce45",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "a64a78df-8e6e-403f-8b15-29905c5e2717",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "971a369d-34fb-4d55-9540-2fc581289ef4",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "889a215a-2fba-470b-b062-71751ae65fd1",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "e74e65d1-02cf-4e92-bda1-a103e95a7372",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "119816bb-8281-4dc9-8a7a-db033e988d68",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "0b996045-6b8c-418c-a222-813bcb4db3e8",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "94f4f713-5da4-4902-adcb-ae3b9e21f1f6",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "c983e99e-0ea5-4401-b5ae-871f90e74280",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "e4b321f4-683d-45cf-b53b-dfd413618bbb",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "cdfe48fc-62f6-461b-9e24-c8c163e9ac91",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "3d74b76c-b2fc-4373-b192-d9ec81bf3623",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "53dd258a-32c8-451a-9b19-692ced56aec5",
+      "result_id": "e1a041bb-d0e1-4e28-ac7a-096a98ff11f2"
+    },
+    {
+      "claim_id": "8e621a71-7b81-4f63-b7ff-ecb6c6d1eb62",
+      "result_id": "b511247f-50f5-4eff-b09f-7df308e0c99d"
+    },
+    {
+      "claim_id": "9223cba5-6727-4df0-8da7-89cbe835fe03",
+      "result_id": "b511247f-50f5-4eff-b09f-7df308e0c99d"
+    },
+    {
+      "claim_id": "d9202187-ac18-4ab0-a9ec-d7df30089953",
+      "result_id": "b511247f-50f5-4eff-b09f-7df308e0c99d"
+    },
+    {
+      "claim_id": "bca78e4c-c103-464f-b518-1fb4fc4b2aa5",
+      "result_id": "b511247f-50f5-4eff-b09f-7df308e0c99d"
+    },
+    {
+      "claim_id": "dfe71292-7cdf-43dd-98db-388689961903",
+      "result_id": "b511247f-50f5-4eff-b09f-7df308e0c99d"
+    },
+    {
+      "claim_id": "967d49ae-292d-41dc-9e52-0162da4e79dd",
+      "result_id": "805ecc45-d999-4741-89ad-57eed3f159e2"
+    },
+    {
+      "claim_id": "077949be-45f1-460f-b6c1-5fe6f3f13808",
+      "result_id": "805ecc45-d999-4741-89ad-57eed3f159e2"
+    },
+    {
+      "claim_id": "67866dbb-0094-4901-a369-0e6481fa8ef5",
+      "result_id": "805ecc45-d999-4741-89ad-57eed3f159e2"
+    },
+    {
+      "claim_id": "5f7cdc91-c156-4609-aa3b-c5a71566b6b5",
+      "result_id": "805ecc45-d999-4741-89ad-57eed3f159e2"
+    },
+    {
+      "claim_id": "42a9bcd8-cb0d-4cee-94c2-8d908f7880ab",
+      "result_id": "805ecc45-d999-4741-89ad-57eed3f159e2"
+    },
+    {
+      "claim_id": "96567287-99c6-4919-9466-0196f2ff9cf0",
+      "result_id": "ffeb3f09-0b0f-4f67-9713-20aa40619138"
+    },
+    {
+      "claim_id": "c066374a-081b-4f80-87f7-24d5b548d0d8",
+      "result_id": "ffeb3f09-0b0f-4f67-9713-20aa40619138"
+    },
+    {
+      "claim_id": "477af646-565e-4dbc-b5f6-28de1222fce4",
+      "result_id": "08360ff6-6460-4188-bd1b-70c05b77852e"
+    },
+    {
+      "claim_id": "f173dc53-73f9-495f-94e6-9319504116e8",
+      "result_id": "08360ff6-6460-4188-bd1b-70c05b77852e"
+    },
+    {
+      "claim_id": "bf571d96-5be0-439e-9ca3-9f988a17286f",
+      "result_id": "08360ff6-6460-4188-bd1b-70c05b77852e"
+    },
+    {
+      "claim_id": "9197945f-287f-4142-b6aa-85f7fc86e895",
+      "result_id": "08360ff6-6460-4188-bd1b-70c05b77852e"
+    },
+    {
+      "claim_id": "523a142c-4997-4e78-83f6-ad221115c2d2",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "6b033ec1-7360-49a0-a721-9687cd3e9e98",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "947d1681-c804-44c4-aba4-af6ffea56e90",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "909d5906-ce0e-4889-9167-5b7ca21948ef",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "e38c21f3-0db2-429f-855d-85b84d15c28a",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "33ebbebf-be28-4fda-b483-11c978a7cc3e",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "a7ff47b2-dad8-4498-ad82-511dd73c1d1d",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "07ebd385-4c33-406e-ba5a-94430448bcc1",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "37363f2c-4abb-44f8-a9e0-0f23eebad5f3",
+      "result_id": "8462ecd0-0c9f-4538-a8ef-089d484722ea"
+    },
+    {
+      "claim_id": "2d329153-fd62-4441-ad9b-f662241820e1",
+      "result_id": "ad4ce593-ef1c-4a80-a2d4-69db7c58dafa"
+    },
+    {
+      "claim_id": "419bb125-b7c7-478d-b4ac-01a644970847",
+      "result_id": "ad4ce593-ef1c-4a80-a2d4-69db7c58dafa"
+    },
+    {
+      "claim_id": "54a5178d-bc09-454f-a720-23ad8a742bcb",
+      "result_id": "ad4ce593-ef1c-4a80-a2d4-69db7c58dafa"
+    },
+    {
+      "claim_id": "9204cf96-34e1-40ca-8ed4-7e4f477ee19a",
+      "result_id": "ad4ce593-ef1c-4a80-a2d4-69db7c58dafa"
+    },
+    {
+      "claim_id": "e3957373-a759-4f80-897e-b16032ab3c53",
+      "result_id": "f695465d-319b-4c83-ab2a-792a29cf8a26"
+    },
+    {
+      "claim_id": "030775b3-2b11-4fac-b1cd-d7fee62fbfd6",
+      "result_id": "f695465d-319b-4c83-ab2a-792a29cf8a26"
+    },
+    {
+      "claim_id": "70073f6f-773f-48c0-8728-478425100707",
+      "result_id": "f695465d-319b-4c83-ab2a-792a29cf8a26"
+    },
+    {
+      "claim_id": "7d754dc4-8013-4909-9a0e-e91cebff5d4c",
+      "result_id": "7dcddbec-b1aa-4fa8-8f43-0ad08e7f7e85"
+    },
+    {
+      "claim_id": "e090dda2-7e3e-43a5-96f4-c83f59978196",
+      "result_id": "7dcddbec-b1aa-4fa8-8f43-0ad08e7f7e85"
+    },
+    {
+      "claim_id": "c370e949-bf34-42d4-b58d-4f966ad546f7",
+      "result_id": "7dcddbec-b1aa-4fa8-8f43-0ad08e7f7e85"
+    }
+  ],
+  "comparisons": []
+}

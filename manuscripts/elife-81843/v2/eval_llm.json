@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors generated comprehensive transcriptomic data from intact muscle spindles isolated from the murine deep masseter muscle using a genetic labeling strategy with Piezo2EGFP-IRES-Cre;Rosa26tdTomato mice. Bulk RNA-sequencing identified over 3000 differentially expressed genes between spindle and adjacent muscle samples, with PCA confirming distinct transcriptional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33, C36-C49 collectively describe a well-designed experimental approach with appropriate controls (adjacent muscle tissue) and validation (PCA showing separation, detection of known markers). The genetic labeling strategy is properly cited and the differential expression analysis is supported by multiple lines of evidence including known marker validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C74",
+      "C75"
+    ],
+    "result": "The transcriptomic dataset successfully captured RNA transcripts from all major spindle tissues including intrafusal fibers, proprioceptive neurons, \u03b3-motoneurons, and capsule cells, as validated by detection of known tissue-specific markers and GO enrichment analysis showing appropriate cellular compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56, C74-C75 demonstrate successful comprehensive profiling through multiple validation approaches: (1) detection of established markers for each tissue type with proper citations, (2) GO analysis identifying expected cellular compartments, and (3) establishment of a database of 2742 upregulated genes. The convergence of these independent validation methods strongly supports the comprehensiveness claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C128",
+      "C129"
+    ],
+    "result": "325 differentially upregulated genes were localized to the extracellular space, containing matrix proteins (collagens, matrix metalloproteinases) and signaling molecules (Wnt, BMP pathways), likely representing capsule-associated genes including VCAN which was validated as a capsule ECM marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C128-C129 are supported by Ingenuity pathway analysis (C57) and subsequent immunostaining validation of VCAN expression in capsule ECM (C129). The inference that extracellular genes are capsule-associated (C59) is reasonable given the known ECM-rich composition of the spindle capsule, though this remains partially inferential until more markers are validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Gene set enrichment analysis identified 438 genes associated with proprioceptive neurons and 365 genes with \u03b3-motoneurons, with 178 shared genes enriched for synapse organization processes. The remaining 260 proprioceptive and 187 \u03b3-motoneuron genes potentially represent locally expressed transcripts at nerve endings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 describe a systematic GSEA approach comparing spindle data to published neuronal expression profiles with appropriate citations. The finding of synapse-related enrichment in shared genes (C66) is validated by consistency with prior literature showing synapse-like components at proprioceptive endings (C67). The inference about local expression (C63) is reasonable given the intact spindle preparation includes nerve terminals, though this remains indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Analysis of proprioceptive neuron subtypes identified 69 genes (22 Ia-specific, 45 II-specific, 2 shared) expressed by muscle spindle afferents but not GTO afferents, and 40 genes specific to \u03b3-motoneurons after filtering for \u03b1-motoneuron and proprioceptive neuron overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 demonstrate appropriate comparative analysis using published subtype markers (C68 properly cited). The identification of spindle-specific afferent genes (C70) and \u03b3-motoneuron-specific genes (C71) follows logically from the overlap analysis shown in supplementary figures. However, the specificity claims would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "187 genes overlapped between the study's differentially expressed genes and previously reported intrafusal fiber expression profiles, with GO analysis identifying processes including muscle structure development, fast-to-slow fiber transition, and cell-matrix adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by comparison to published intrafusal fiber data (Kim et al., 2020) and GO analysis results shown in figures. The biological processes identified are consistent with known intrafusal fiber biology, providing validation of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C92"
+    ],
+    "result": "Proteomic analysis of intact spindles, adjacent muscle, and nerve fibers identified over 500 differentially expressed proteins, with 40 proteins differentially expressed between spindle and muscle samples that clustered into five distinct groups representing different spindle tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83, C92 describe a well-designed proteomic experiment with appropriate tissue comparisons and controls. PCA shows clear separation of tissue types (C78), and clustering analysis provides tissue-specific protein signatures (C83). The inclusion of nerve tissue as a reference (C77) strengthens the ability to assign proteins to specific spindle compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93"
+    ],
+    "result": "Proteomic clustering identified tissue-specific protein signatures: Cluster 1 (neuronal tissue, validated by Tubb3), Cluster 2 (capsule, containing versican and elastin), Cluster 3 (intrafusal fibers, containing myosins), with 24 proteins expressed exclusively in spindles serving as potential spindle-specific markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90, C93 present logical inferences from clustering patterns supported by known marker proteins (Tubb3 for neurons-C85, versican/elastin for ECM-C87, myosins for muscle-C88). The identification of 24 spindle-specific proteins (C89-C90, C93) is well-supported by the expression data, though functional validation of these as markers would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "29 molecules were differentially expressed in the same direction at both RNA and protein levels, demonstrating concordance between transcriptomic and proteomic datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is directly supported by the correlation analysis shown in Figure 2C. The relatively modest overlap (29 of thousands of genes/hundreds of proteins) is expected given known post-transcriptional regulation and technical differences between methods, and does not undermine the validity of either dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Immunostaining validation confirmed tissue-specific expression predictions: ATP1A3 in proprioceptive neurons and \u03b3-motoneurons, MYL2 in intrafusal bag fibers (reduced at neuron contact sites), VCAN in capsule ECM, and GLUT1 in outer capsule cells. These markers were also detected in GTO tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C104 provide strong experimental validation of computational predictions through immunostaining on multiple tissue preparations (sections, whole-mount, transverse sections). ATP1A3 validation is supported by prior literature (C97). The spatial patterns observed (e.g., MYL2 reduction at neuron contacts-C100, VCAN in ECM space-C101, GLUT1 in outer capsule-C103) are consistent with expected biology and strengthen confidence in the markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Developmental analysis using the validated markers revealed sequential differentiation of spindle tissues: ATP1A3 expression from E15.5, GLUT1 in outer capsule by P7, VCAN in ECM by P25, and MYL2 in intrafusal fibers by P25, with sarcomeric organization present by P3, suggesting intrafusal identity is acquired after myofiber establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 present a coherent developmental timeline supported by immunostaining at multiple timepoints. The inference that intrafusal identity is acquired after myofiber establishment (C111) is reasonably supported by the observation that sarcomeric organization precedes MYL2 expression (C110). The overall conclusion of sequential differentiation (C112) is well-supported by the temporal expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Gli1 lineage tracing revealed that Gli1-positive cells contribute to the developing capsule at P1, with GLUT1 expression initiating at the spindle center at P7 and extending to polar ends by P25, demonstrating that capsule cell differentiation propagates from center to periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 combine prior knowledge about perineural cells (C113-C114, properly cited) with new lineage tracing data showing Gli1+ cell contribution to capsule (C116) and spatiotemporal GLUT1 expression patterns (C117-C120). The quantification in Figure 5G supports the center-to-periphery differentiation model (C122). The co-expression of tdTomato and GLUT1 (C119) validates that Gli1+ cells differentiate into GLUT1+ outer capsule cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The developmental findings indicate coordination between different spindle tissues during postnatal maturation, potentially involving secreted molecules such as BMPs and FGFs identified in the transcriptomic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 present reasonable inferences about developmental coordination supported by citations to prior work on intrafusal fiber and neuron maturation. However, C125-C126 are explicitly speculative statements about mechanisms, lacking direct experimental evidence. While the identification of growth factors in the dataset is factual, their role in coordinating development remains hypothetical and would require functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "GLUT1 and Gli1 were identified as novel markers for outer capsule cells, with Gli1 also marking inner capsule cells. Differences in gene expression between inner and outer capsule, combined with ultrastructural similarities to perineural and endoneurial cells respectively, suggest potential dual origins, though lineage tracing studies are needed for verification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130, C133-C134 are well-supported by experimental data and prior literature. However, C131-C132 present speculative hypotheses about dual origins based on gene expression differences and morphological similarities from cited studies. Claim C135 appropriately acknowledges that definitive evidence requires additional lineage tracing experiments, indicating the authors recognize the limitations of current data for establishing cellular origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Previous single-cell studies of proprioceptive and \u03b3-motoneurons captured RNA from cell bodies/nuclei but missed terminal end expression, which is important because neuronal gene expression is regulated locally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 accurately describe a limitation of prior single-cell approaches and provide appropriate justification (C28 with citation) for why terminal expression data is valuable. This establishes the rationale for the intact spindle approach used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C31",
+      "C32"
+    ],
+    "result": "The molecular composition of the muscle spindle, including molecular events regulating development, intrafusal vs. extrafusal fiber composition, and capsule composition, was largely unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21, C31-C32 accurately characterize knowledge gaps in the field that motivated the study. These are reasonable assessments of the literature supported by the limited prior molecular characterization of spindles, though 'largely unknown' is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The proprioceptive system plays vital regulatory roles in skeletal development and function, suggesting spindle pathology would broadly affect the musculoskeletal system, and the molecular data provided will support future studies of muscle spindle and musculoskeletal biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 is supported by citations to recent literature from the authors' group. Claim C137 is a reasonable inference from C136. Claim C138 is a forward-looking statement about potential impact that is reasonable given the comprehensive nature of the datasets generated, though actual utility will depend on future work.",
+    "result_type": "MINOR"
+  }
+]

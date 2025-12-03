@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C31",
+      "C32",
+      "C58"
+    ],
+    "result": "Repetitive testing significantly reduces attack rates compared to symptomatic isolation and reactive screening. Symptomatic isolation results in high attack rates (Wuhan: 0.03, Delta: 0.14) because 80% of infections are asymptomatic, while repetitive testing achieves the lowest attack rates (Wuhan: 0.02, Delta: 0.05). Reactive screening performs only slightly better than symptomatic isolation due to delayed detection after multiple asymptomatic transmission generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12, C31-C32, and C58 provide converging evidence from simulation data showing repetitive testing's superiority. The mathematical reasoning (C11) about asymptomatic generations explains why reactive screening fails, and the model assumption (C8) is clearly stated. The quantitative results with confidence intervals support the conclusions, though model validation against real-world data would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C59"
+    ],
+    "result": "Repetitive testing leads to substantially higher numbers of school days lost (NSDL) compared to other strategies. While symptomatic isolation results in low NSDL (Wuhan: 0.08, Delta: 0.3), repetitive testing produces very high NSDL (Wuhan: 13.85, Delta: 42.18) because more cases are detected, triggering class and school closure thresholds more frequently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 and C59 present consistent simulation data showing the trade-off between infection control and absenteeism. The mechanistic explanation (more detection \u2192 more closures \u2192 higher NSDL) is logical and supported by the model structure. The quantitative results with confidence intervals are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C33",
+      "C60"
+    ],
+    "result": "When repetitive testing is implemented, more lenient class closure thresholds can be applied with minimal impact on attack rates while substantially reducing absenteeism. Relaxing class closure thresholds from 2 to higher values or removing them entirely maintains epidemic control while reducing NSDL to acceptable levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C33, and C60 are supported by simulation data in Figure 2 and Table 1, showing that attack rates remain stable (0.08-0.09) across different class closure thresholds while NSDL decreases substantially (from 9.5 to 1.61). This represents a practical solution to the trade-off identified in the previous result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The effectiveness differences between testing strategies are most pronounced for more infectious variants. The Delta variant shows larger differences between strategies than the Wuhan strain, and the Omicron scenario with low immunity and shorter incubation period produces high attack rates that are difficult to control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by comparative simulation data across variants. The observation that more infectious variants amplify strategy differences is logical and consistent with epidemiological principles. However, the Omicron scenario involves multiple parameter changes simultaneously (immunity, incubation period), making it difficult to isolate individual effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Sensitivity analyses show that repetitive testing remains robust to variations in seeding frequency and school size. While additional seeding amplifies attack rates and smaller schools show higher attack rates with fixed seeding, repetitive testing maintains its relative effectiveness across these parameter variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by sensitivity analysis data in appendix figures. The finding that proportional seeding eliminates school size effects (C22) demonstrates appropriate model behavior. These sensitivity analyses strengthen confidence in the main results' robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Testing strategy effectiveness is sensitive to operational parameters including turnaround time and incubation period. Increased turnaround time (3 days) reduces reactive screening effectiveness to symptomatic isolation levels, while shorter incubation periods reduce all testing strategy performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 present sensitivity analyses showing how operational constraints affect strategy performance. The findings are logical and supported by appendix data. However, C23's assumption that asymptomatic and symptomatic individuals are equally infectious is stated as fact based on one citation, which may oversimplify a complex issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Testing the entire school population twice per week can control highly contagious epidemics driven by Delta and reduce attack rates for immune-evasive variants like Omicron with shorter incubation periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by simulation data in appendix figures. The increased testing frequency logically addresses the challenges posed by more transmissible variants. However, the practical feasibility and cost-effectiveness of twice-weekly whole-school testing are not addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Compliance to repetitive testing affects outcomes, with attack rates decreasing and NSDL increasing as compliance increases. Notably, 60% compliance achieves similar attack rates to 100% compliance in the experimental setting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by simulation data. The finding that 60% compliance is nearly as effective as 100% is interesting and practically relevant. However, this result is specific to the model's experimental setting and may not generalize to all scenarios or real-world conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The model assumes teachers interact only within their assigned classes, which is justified by high teacher immunity/vaccination rates. Perfect compliance to saliva sampling is assumed based on its low invasiveness and potential for societal support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C37 describe model assumptions with justifications. While the reasoning is provided (C36, C37), these are assumptions rather than empirically validated facts. The assumption of limited teacher interaction (C35) may not reflect reality in all schools, and perfect compliance (C37) is optimistic. These assumptions could significantly impact results but are not validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The model implements specific closure policies: classes close when infections exceed 2 cases, schools close when infections exceed 20 cases, and closures last 10 days. Symptomatic individuals develop symptoms at peak infectiousness and are isolated for 10 days. Infection counts are tracked over 14-day windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe model structure and parameters. These are clearly stated assumptions informed by literature (C42) and policy context. While these are design choices rather than findings, they are transparently reported and reasonably justified. The appropriateness of specific threshold values (2 and 20 cases) is not empirically validated but represents policy-relevant scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model incorporates epidemiological and operational parameters from literature: children are half as susceptible as adults, 30% of children and 90% of teachers are immune, PCR test sensitivity is 86% with 1-day turnaround, individuals become detectable 2 days post-infection, and 5 weekly seeding cases occur. Simulations run for 100 days with 100 replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 describe model parameterization with literature support. Parameters are transparently reported with citations. The choice of 100 simulations (C55) appears adequate for stable results based on the figures. However, uncertainty in parameter estimates is not propagated through the model, and some parameters (e.g., 30% child immunity) may vary substantially by location and time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Two outcome measures are defined: attack rate (total cases minus index cases divided by number of pupils) and NSDL (sum of school days lost divided by school size).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide clear definitions of outcome measures. These are appropriate metrics for evaluating both epidemiological impact and educational disruption. The definitions are unambiguous and consistently applied throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Class pooling approaches could be used to reduce the number of PCR samples requiring analysis, making repetitive testing more efficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by citation to prior work (Libin et al., 2021). This represents a practical implementation consideration rather than a finding of the current study. The suggestion is reasonable but not evaluated in the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background context establishes that SARS-CoV-2 has caused over 200 million cases and 4 million deaths by September 2021, debate exists about child vaccination, more infectious variants cause significant outbreaks in children, asymptomatic children may be highly contagious, school closures impair learning, and prior studies suggest repetitive testing reduces transmission but increases absenteeism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context supported by citations to authoritative sources and prior literature. These establish the motivation and context for the study but are not novel findings. The claims accurately represent the cited sources based on the information provided.",
+    "result_type": "MINOR"
+  }
+]

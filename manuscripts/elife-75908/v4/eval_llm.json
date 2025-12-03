@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Co-culture of AML and stromal cells in direct contact triggers increased acetate secretion by stromal cells. This phenomenon is specific to AML-stromal interactions, requires direct cell-to-cell contact, occurs in primary patient samples but not healthy donor cells, and is observed in vivo in leukemic mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide converging evidence from multiple experimental systems (cell lines, primary samples, mouse models) demonstrating contact-dependent acetate secretion. The use of permeable membrane controls (C4), specificity controls with HeLa cells (C5), separation experiments (C6), and validation in primary samples (C7-C8) and in vivo (C9) provide strong support. The experimental design appropriately controls for alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "AML cells consume acetate secreted by stromal cells and utilize it to feed the TCA cycle (within 30 minutes) and for lipid biosynthesis (after 48 hours). The concentration of secreted acetate in co-culture is approximately 3-4 mM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 demonstrate acetate utilization through tracer-based NMR experiments with [2-13C]acetate. The temporal progression from rapid TCA incorporation (C13) to delayed lipid synthesis (C14) is biochemically plausible. The use of 1H-13C-HSQC NMR (C12) and lipid extraction analysis (C14) provides direct evidence of label incorporation. The concentration determination (C10) uses appropriate calibration methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Acetate confers chemoresistance to AML cells against AraC treatment, and ACSS2 inhibition sensitizes AML cells to AraC. ACSS2 inhibitor reduces acetate incorporation into TCA metabolites by approximately 60%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 demonstrate functional consequences of acetate metabolism. The observation that acetate partially protects HL-60 cells from AraC (C16) and that ACSS2i sensitizes cells to AraC (C18) is supported by viability data. The incomplete inhibition by ACSS2i (C19, ~60% reduction) explains the partial rescue observed in C17. However, the therapeutic implications (C20) are somewhat overstated given the in vitro nature of these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Stromal cells undergo metabolic rewiring in co-culture characterized by upregulation of glycolysis genes and downregulation of pyruvate dehydrogenase complex genes. Glucose tracer experiments confirm that secreted acetate derives from glucose, with increased glycolytic flux in stromal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 integrate transcriptomic (RNA-seq) and metabolomic ([U-13C]glucose tracing) data. The RNA-seq shows 587 differentially expressed genes with GSEA enrichment for glycolysis (C22-C23) and downregulation of PDH complex genes (C24-C25). The glucose tracer experiments (C26-C28) provide metabolic validation. The only concern is that C28 shows significant label incorporation only in lactate, not acetate or alanine, which somewhat weakens the direct connection between transcriptional and metabolic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Acetate synthesis in stromal cells is mediated by ROS through a non-enzymatic oxidative decarboxylation of pyruvate, independent of keto acid dehydrogenases. ROS modulation (H2O2, NAC, catalase) directly affects acetate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 establish ROS-mediated acetate synthesis. The thiamine-free media experiment (C29) rules out enzymatic dehydrogenase involvement. The bidirectional manipulation of ROS levels (increasing with H2O2 in C31, decreasing with NAC in C32 and catalase in C33) provides strong evidence for ROS involvement. The mechanism is supported by prior literature (C30). The inference that acetate synthesis is ROS-mediated (C34) is well-supported by the experimental manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "AML cells transfer ROS to stromal cells in co-culture through a contact-dependent mechanism. ROS levels decrease in AML cells and increase in stromal cells during co-culture, and this transfer is blocked by permeable membrane separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 demonstrate ROS transfer using H2DCFDA fluorescence measurements. The reciprocal changes in ROS levels (decreased in AML, increased in stromal cells) in both cell lines (C35-C36) and primary samples (C38) provide strong evidence. The permeable membrane control (C39) demonstrates contact-dependence. However, the inference of ROS transfer (C37) is indirect\u2014the data show reciprocal changes but don't directly visualize transfer. Alternative explanations (e.g., differential ROS production/scavenging) aren't fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52"
+    ],
+    "result": "ROS transfer from AML to stromal cells occurs through gap junctions. Gap junction genes are upregulated in stromal cells in co-culture, calcein-AM transfer demonstrates functional gap junctions (>80% of AML cells), and gap junction inhibition by CBX blocks both ROS transfer and acetate secretion. ROS is required for gap junction establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47, C51-C52 establish gap junction involvement through multiple lines of evidence: RNA-seq showing upregulated gap junction genes (C40), calcein-AM transfer assay demonstrating functional gap junctions (C41-C42), and CBX inhibition blocking both ROS transfer (C44-C45) and acetate secretion (C46-C47). The temporal ordering experiment with catalase (C51) showing that ROS is required for gap junction formation is particularly important. The convergence of transcriptional, functional, and pharmacological evidence strongly supports this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In vivo validation in MLL-AF9 mouse model shows that ROS inducer TBHP accelerates AML development, and gap junction inhibitor CBX counteracts this effect, demonstrating that gap junction inhibition reduces the enhancing effect of ROS on AML progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide in vivo validation of the proposed mechanism. TBHP treatment accelerates AML development with 5-fold higher monocyte counts (C48), while combined TBHP+CBX treatment shows survival similar to vehicle controls (C49). This supports the therapeutic relevance of gap junction inhibition (C50). However, the sample sizes are not clearly stated, and the statistical analysis (p=0.048) is borderline significant. The claim that gap junction inhibition \"at least partially\" reduces ROS effects (C50) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Co-culture results in higher glucose consumption and lactate secretion compared to single cultures, but this increase is additive rather than synergistic. Metabolic changes in co-culture are independent of proliferation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 address important controls. The observation that glucose/lactate changes are additive (C69) rather than synergistic is important for interpreting the specificity of acetate secretion. The CFSE proliferation assay (C70) rules out proliferation differences as an explanation for metabolic changes (C71). These controls strengthen the overall conclusions by eliminating alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript contextualizes findings within existing literature on AML-stromal interactions, ROS biology, acetate metabolism, and metabolic crosstalk in cancer. The authors claim this is the first report of AML cells utilizing acetate secreted by stromal cells in co-culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C78 represent background knowledge and literature context. The citations appear appropriate and accurately represent prior work. The novelty claim (C60) is reasonable given the cited literature\u2014while acetate usage by AML cells was known (C59), the specific crosstalk mechanism with stromal cells appears novel. The comparison to published single-cell data (C62-C63) strengthens the physiological relevance of the MS-5 co-culture model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The authors propose that targeting ROS transfer via gap junction modulation or targeting acetate usage could serve as adjuvant therapy to eradicate AML.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is explicitly speculative and represents a therapeutic proposal rather than a demonstrated result. While the in vitro data on ACSS2i sensitization (C18) and in vivo CBX effects (C48-C50) provide some support, the leap to clinical adjuvant therapy is premature. The in vivo experiments used ROS inducers rather than testing gap junction inhibition alone in established AML. Additional preclinical validation would be needed to support this therapeutic claim.",
+    "result_type": "MINOR"
+  }
+]

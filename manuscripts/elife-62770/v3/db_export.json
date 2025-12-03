@@ -1,0 +1,1591 @@
+{
+  "submission": {
+    "id": "368550db-67cc-4155-a381-0caf6d943e87",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:03:59.266586Z",
+    "updated_at": "2025-12-03T03:03:59.266586Z"
+  },
+  "content": [
+    {
+      "id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "submission_id": "368550db-67cc-4155-a381-0caf6d943e87",
+      "content_type": "manuscript",
+      "content_text": "# Selective dendritic localization of mRNA in Drosophila mushroom body output neurons\n\n## Authors\n\n- Jessica Mitchell<sup>1</sup>\n- Carlas S Smith<sup>1</sup>\n- Josh Titlow<sup>3</sup>\n- Nils Otto<sup>1</sup> ([ORCID: 0000-0001-9713-4088](https://orcid.org/0000-0001-9713-4088))\n- Pieter van Velde<sup>2</sup> ([ORCID: 0000-0002-7281-8026](https://orcid.org/0000-0002-7281-8026))\n- Martin Booth<sup>1</sup>\n- Ilan Davis<sup>3</sup> ([ORCID: 0000-0002-5385-3053](https://orcid.org/0000-0002-5385-3053))\n- Scott Waddell<sup>1</sup> ([ORCID: 0000-0003-4503-6229](https://orcid.org/0000-0003-4503-6229)) \u2020\n\n### Affiliations\n\n1. Centre for Neural Circuits and Behaviour, University of Oxford Oxford United Kingdom\n2. Delft Center for Systems and Control, Delft University of Technology Delft Netherlands\n3. Department of Biochemistry, University of Oxford Oxford United Kingdom\n4. Department of Engineering Science, University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMemory-relevant neuronal plasticity is believed to require local translation of new proteins at synapses. Understanding this process requires the visualization of the relevant mRNAs within these neuronal compartments. Here, we used single-molecule fluorescence in situ hybridization to localize mRNAs at subcellular resolution in the adult Drosophila brain. mRNAs for subunits of nicotinic acetylcholine receptors and kinases could be detected within the dendrites of co-labeled mushroom body output neurons (MBONs) and their relative abundance showed cell specificity. Moreover, aversive olfactory learning produced a transient increase in the level of CaMKII mRNA within the dendritic compartments of the \u03b35\u03b2'2a MBONs. Localization of specific mRNAs in MBONs before and after learning represents a critical step towards deciphering the role of dendritic translation in the neuronal plasticity underlying behavioral change in Drosophila.\n\n## Introduction\n\nMemories are believed to be encoded as changes in the efficacy of specific synaptic connections. Dendritic localization of mRNA facilitates specificity of synaptic plasticity by enabling postsynaptic synthesis of new proteins where and when they are required (Holt et al., 2019). Visualizing individual dendritically localized mRNAs in memory-relevant neurons is therefore crucial to understanding this process of neuronal plasticity.\n\nSingle-molecule fluorescence in situ hybridization (smFISH) enables cellular mRNAs to be imaged at single-molecule resolution through the hybridization of a set of complementary oligonucleotide probes, each labeled with a fluorescent dye. Recent improvements in smFISH permit mRNA transcripts to be visualized in the dense heterogenous tissue of intact Drosophila brains (Long et al., 2017; Yang et al., 2017). Combining whole fly brain smFISH with neuron-specific co-labeling makes Drosophila an ideal model to investigate cell-specific mRNA localization and whether it is regulated in response to experience.\n\nOlfactory learning in Drosophila depresses cholinergic synaptic connections between odor-specific mushroom body Kenyon cells (KCs) and mushroom body output neurons (MBONs) (Barnstedt et al., 2016; Cohn et al., 2015; Handler et al., 2019; Hige et al., 2015; Owald et al., 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011). This plasticity is driven by dopaminergic neurons whose presynaptic terminals innervate anatomically discrete compartments of the mushroom body, where they overlap with the dendrites of particular MBONs (Aso et al., 2010; Aso et al., 2014; Burke et al., 2012; Claridge-Chang et al., 2009; Li et al., 2020; Lin et al., 2014; Liu et al., 2012). Dopamine-driven plasticity is mediated by cAMP-dependent signaling and associated kinases such as calcium/calmodulin-dependent protein kinase II (CaMKII) and protein kinase A (PKA) (Boto et al., 2014; Handler et al., 2019; Hige et al., 2015; Kim et al., 2007; Qin et al., 2012; Tomchik and Davis, 2009; Yu et al., 2006; Zhang and Roman, 2013). Here, we demonstrate localization of mRNAs in the 3D volumes of MBON dendrites by registering smFISH signals with co-labeled neurons using a custom image analysis pipeline. Moreover, we find that aversive learning transiently elevates dendritic CaMKII transcript levels within \u03b35\u03b2'2a MBONs.\n\n## Results and discussion\n\n### mRNA localization in the intact adult Drosophila brain\n\nMammalian CaMKII mRNA is transported to neuronal dendrites, where it is locally translated in response to neuronal activity (Bagni et al., 2000; Miller et al., 2002; Ouyang et al., 1999). Drosophila CAMKII is critical for behavioral plasticity (Griffith, 1997; Malik et al., 2013) and is also thought to be locally translated (Ashraf et al., 2006). However, fly CAMKII mRNAs have not been directly visualized within individual neurons. We therefore first hybridized CaMKII smFISH probes to whole-mount brains and imaged the mushroom\u00a0body\u00a0(MB) calyx (Figure 1A, B), a recognizable neuropil containing the densely packed dendrites of\u00a0~2000 KCs and their presynaptic inputs from\u00a0~350 cholinergic olfactory projection neurons (Bates et al., 2020a) using a standard spinning disk confocal microscope. To detect and quantify mRNA within the 3D volume of the brain, we developed a FIJI-compatible custom-built image analysis tool that segments smFISH image data and identifies spots within the 3D volume using a probability-based hypothesis test. This enabled detection of mRNAs with a false discovery rate of 0.05. CaMKII smFISH probes labeled 56\u00a0\u00b1\u00a05 discrete puncta within each calyx (Figure 1B, C). In comparison, smFISH probes directed to the \u03b11 nicotinic acetylcholine receptor (nAChR) subunit labeled 33 \u00b1\u00a02 puncta in the calyx (Figure 1B, C). Puncta were diffraction limited and the signal intensity distribution was unimodal (Figure 1D\u2013D'), indicating that they represent single mRNA molecules.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62770/elife-62770-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Schematic of Drosophila MB. smFISH signal was imaged in the calyx, indicated by the dashed box. (B) CaMKII and nAChR\u03b11 mRNAs labeled with smFISH in the MB calyx. Images are maximum intensity projections of ten 0.2\u00a0\u00b5m z-sections. (C) More CaMKII mRNAs are detected in the MB calyx relative to nAChR\u03b11 (unpaired t-test: p=0.0003, t\u00a0=\u00a04.727, df\u00a0=\u00a015). (D) smFISH spot size distribution (full width half maximum, bottom) in MB calyx. (D'). Unimodal smFISH spot intensity distribution (signal/background) indicates imaging at single-molecule resolution. (E) Reconstruction of a \u03b35\u03b2'2a MBON (black) showing the dendritic field (blue) and MB (light gray). The projection to the contralateral MB is truncated. (F) Alignment of dendrite and smFISH imaging channels using co-labeling with dsDNA Vybrant DyeCycle Violet\u00a0(VDV) dye. VDV is excited with 405 nm and emission is collected in the dendritic and smFISH imaging channels, which were then aligned in x, y, and z planes. (G,\u00a0G') CaMKII smFISH within the \u03b35\u03b2'2a MBON dendrite co-labeled with R66C08-GAL4-driven UAS-myr::SNAP and visualized with JF547SNAP dye. Images are maximum intensity projections of ten 0.2\u00a0\u03bcm z-sections. (H,\u00a0H') nAchR\u03b11 smFISH in \u03b35\u03b2'2aMBONs. Images are maximum intensity projections of ten 0.2\u00a0\u03bcm z-sections. (I) Single CaMKII smFISH puncta localized within a \u03b35\u03b2'2a MBON dendrite (green arrowhead). Images are single z-sections of 0.2 \u03bcm. (J) Single CaMKII smFISH puncta localized outside of the \u03b35\u03b2'2a MBON dendrite (red arrowhead). Images are single z-sections of 0.2 \u03bcm.\n\n### mRNA localization within MBON dendrites\n\nDrosophila learning is considered to be implemented as plasticity of cholinergic KC-MBON synapses. To visualize and quantify mRNA specifically within the dendritic field of the \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBONs, we expressed a membrane-tethered UAS-myr::SNAP reporter transgene using MBON-specific GAL4 drivers. This permitted simultaneous fluorescent labeling of mRNA with smFISH probes and the MBON using the SNAP Tag (Figure 1E). To correct for chromatic misalignment (Matsuda et al., 2018) that results from imaging heterogenous tissue at depth, we also co-stained brains with the dsDNA-binding dye Vybrant DyeCycle Violet (VDV). VDV dye has a broad emission spectrum so labeled nuclei can be imaged in both the SNAP MBON and smFISH mRNA channels. This triple-labeling approach allowed quantification and correction of any spatial mismatch between MBON and smFISH channels in x, y, and z planes, which ensures that smFISH puncta are accurately assigned within the 3D volume of the MBON dendritic field (Figure 1F).\n\nUsing this smFISH approach, we detected an average of 32 \u00b1 2 CaMKII mRNAs (Figure 1G,\u00a0G') within the dendrites of \u03b35\u03b2'2a MBONs. However, in contrast to the calyx, we did not detect nAChR\u03b11 in \u03b35\u03b2'2a MBON dendrites (Figure 1H,\u00a0H'). This differential localization of the CaMKII and nAChR\u03b11 mRNAs within neurons of the mushroom body is indicative of cell\u00a0specificity. To probe mRNA localization in MBONs more broadly, we used a single YFP smFISH probe set and a collection of fly strains harboring YFP insertions in endogenous genes (Lowe et al., 2014). We selected YFP insertions in the CaMKII, PKA-R2, and Ten-m genes as test cases and compared the localization of their YFP-tagged mRNAs between \u03b35\u03b2'2a MBON and \u03b31pedc>\u03b1/\u03b2 MBON dendrites.\n\nThe CaMKII::YFP allele is heterozygous in flies also expressing myr::SNAP in MBONs. Therefore, YFP smFISH probes detected half the number of CaMKII mRNAs in \u03b35\u03b2'2a MBON dendrites compared to CaMKII-specific probes (Figure 2A,\u00a0A', C). Importantly, YFP probes hybridized to YFP-negative control brains produced background signal (Figure 2B,\u00a0B') that was statistically distinguishable in brightness from genuine smFISH puncta (Figure 2D). Comparing data from YFP-negative and YFP-positive samples allowed us to define the false discovery rate to be 14% when using YFP-directed probes (Figure 2D, Figure 2\u2014figure supplement 1). These results indicate that the YFP probes are specific and that the YFP insertion does not impede localization of CaMKII mRNA. We detected a similar abundance of CaMKII::YFP in the dendritic field of \u03b35\u03b2'2a (Figure 2E) and the \u03b31 dendritic region of \u03b31pedc>\u03b1/\u03b2 (Figure 2F) MBONs (Figure 2G). In contrast, more PKA-R2 mRNAs were detected in the dendrites of \u03b35\u03b2'2a MBONs compared to \u03b31pedc>\u03b1/\u03b2 MBONs (Figure 2G). Importantly, the relative abundance of dendritically localized CaMKII and PKA-R2 mRNAs did not simply reflect the levels of these transcripts detected in the MBON somata (Figure 2H). In addition, we did not detect Ten-m mRNAs in either \u03b35\u03b2'2a or \u03b31pedc>\u03b1/\u03b2 MBON dendrites (Figure 2G, I), although they were visible in neighboring neuropil and at low levels in the MBON somata (Figure 2H). These results suggest that CaMKII and PKA-R2 mRNAs are selectively localized to MBON dendrites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62770/elife-62770-fig2-v3.jpg)\n\n**Figure 2.:** (A,\u00a0A'). CaMKII::YFP mRNA visualized in \u03b35\u03b2'2a MBON dendrites using YFP single-molecule fluorescence\u00a0in situ\u00a0hybridization\u00a0(smFISH) probes. The\u00a0\u03b35\u03b2'2a MBON is labeled by R66C08-GAL4-driven UAS-myr::SNAP and visualized with JF547SNAP dye. Images are maximum intensity projections of ten 0.2\u00a0\u00b5m z-sections. (B,\u00a0B'). YFP smFISH signal in a \u03b35\u03b2'2a MBON in a negative control fly. Images are maximum intensity projections of ten 0.2\u00a0\u00b5m z-sections. (C) The CaMKII::YFP allele is heterozygous, resulting in detection of half as many CaMKII mRNAs in \u03b35\u03b2'2a MBONs using YFP probes relative to that detected with CaMKII gene-specific probes. (D) Signal/background intensity distribution of YFP probe signals in CaMKII::YFP brains relative to control brains with no threshold on signal detection. The signal/background intensity threshold for quantitative analyses (dotted red line) resulted in a false discovery rate of \u226414% (indicated by the overlap of the histograms on the right side of the dotted red line) (see also Figure 2\u2014figure supplement 1).\u00a0(E) Reconstruction of a \u03b35\u03b2'2a MBON. Individual postsynapses (turquoise spheres) and presynapses (red spheres) are labeled. The projection to the contralateral mushroom\u00a0body\u00a0(MB) is truncated. (F) Reconstruction of a \u03b31pedc>\u03b1/\u03b2\u00a0MBON. Individual postsynapses (turquoise spheres) and presynapses (red spheres) are labeled. The projection to the contralateral MB is truncated. (G) Quantification of mRNA localization in \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2\u00a0MBON dendrites with YFP smFISH probes and gene-specific nicotinic acetylcholine receptor\u00a0(nAChR) subunit smFISH probes. More PKA-R2 transcripts localize within the dendrites of \u03b35\u03b2'2a MBONs relative to \u03b31pedc>\u03b1/\u03b2\u00a0MBONs (unpaired t-test: p=0.004, t\u00a0=\u00a05.069, df\u00a0=\u00a011). Ten-m mRNAs did not localize to either MBON dendritic field. CaMKII mRNAs were detected in equal abundance. nAchR\u03b11 mRNAs did not localize to the dendrites of either \u03b35\u03b2'2a or \u03b31pedc>\u03b1/\u03b2 MBONs. More nAchR\u03b15 (unpaired t-test: p=0.004, t\u00a0=\u00a03.368, df\u00a0=\u00a015) and nAchR\u03b16 (unpaired t-test: p=0.046, t\u00a0=\u00a02.274, df\u00a0=\u00a010) mRNAs localized to \u03b35\u03b2'2a MBON dendrites relative to \u03b31pedc>\u03b1/\u03b2\u00a0MBON dendrites. (H) Quantification of mRNA in \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON somata with YFP smFISH probes and gene-specific nAChR subunit smFISH probes. More CaMKII transcripts were present within \u03b35\u03b2'2a MBON somata relative to \u03b31pedc>\u03b1/\u03b2\u00a0MBON somata (unpaired t-test: p=0.0061, t\u00a0=\u00a03.103, df\u00a0=\u00a018). More Ten-m (Mann\u2013Whitney test: p=0.0093, Mann\u2013Whitney U\u00a0=\u00a0120) and nAchR\u03b11 (unpaired t-test: p=0.0359, t\u00a0=\u00a02.250, df\u00a0=\u00a020) transcripts were detected in \u03b31pedc>\u03b1/\u03b2 MBON somata relative to \u03b35\u03b2'2a MBON somata. (I) Example smFISH images of mRNAs localized in \u03b35\u03b2'2a (R66C08-GAL4>UAS-myr::SNAP) and \u03b31pedc>\u03b1/\u03b2\u00a0MBON (MB112C-GAL4>UAS-myr::SNAP) dendrites. Images are maximum intensity projections of ten 0.2\u00a0\u03bcm z-sections. Asterisks denote significant difference (p<0.05). Data are means \u00b1 standard error of mean. Individual data points are displayed.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62770/elife-62770-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Signal/background intensity distribution of YFP probe signals in CaMKII::YFP brains relative to control brains with no threshold on signal detection, as in Figure 2D. (B) Proportion of overlap between YFP probe signals in CaMKII::YFP brains relative to control brains with variable spot detection threshold. Overlap, and hence false detection rate, decreases with increasing threshold on signal/background. (C) Magnification of (B). Overlap when minimal signal/background threshold is 0\u00a0=\u00a00.29, 2\u00a0=\u00a00.29, 4\u00a0=\u00a00.25, 6\u00a0=\u00a00.14, 8\u00a0=\u00a00.04, and\u00a010\u00a0=\u00a00.01. The signal/background spot detection threshold in our analysis was 6, resulting in a maximum false detection rate of <14%. (D) Number of spot detections included and excluded with variable spot detection threshold. Higher signal/background threshold results in more spots being discarded and fewer being counted.\n\nAlthough we did not detect nAChR\u03b11 mRNA within \u03b35\u03b2'2a MBON dendrites, prior work has shown that nAChR subunits, including nAChR\u03b11, are required in \u03b35\u03b2'2a MBON postsynapses to register odor-evoked responses and direct odor-driven behaviors (Barnstedt et al., 2016). Since the YFP insertion collection does not include nAChR subunits, we designed nAChR\u03b15 and nAChR\u03b16-specific smFISH probes. These probes detected nAchR\u03b15 and nAchR\u03b16 mRNAs within\u00a0\u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON dendrites, with nAchR\u03b16 being most abundant (Figure 2G). Importantly, we detected nAchR\u03b11, nAchR\u03b15, and nAchR\u03b16 at roughly equivalent levels in the \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON somata (Figure 2H). Therefore, the selective localization of nAchR\u03b15 and nAchR\u03b16$\\alpha6$ mRNA to MBON dendrites indicates that these receptor subunits may be locally translated to modify the subunit composition of postsynaptic nAChR receptors.\n\nLocalized mRNAs were on average 2.8\u00d7 more abundant in \u03b35\u03b2'2a relative to the \u03b31 region of \u03b31pedc>\u03b1/\u03b2 MBON dendrites (Figure 2G). We therefore tested whether this apparent differential localization correlated with dendritic volume and/or the number of postsynapses between these MBONs. Using the recently published electron microscope volume of the Drosophila \u2018hemibrain\u2019 (Scheffer et al., 2020;\u00a0Figure 2E, F), we calculated the dendritic volume of the \u03b35\u03b2'2a MBON to be 1515.36 nm3 and the \u03b31\u00a0region of the \u03b31pedc>\u03b1/\u03b2 MBON to be 614.20 nm3. In addition, the \u03b35\u03b2'2a regions of the \u03b35\u03b2'2a MBON dendrite contain 30,625 postsynapses, whereas there are only 17,020 postsynapses in the \u03b31 region of the \u03b31pedc>\u03b1/\u03b2\u00a0MBON. Larger dendritic field volume and synapse number is therefore correlated with an increased number of localized nAchR\u03b15, nAchR\u03b16, and PKA-R2 mRNAs. The correlation, however, does not hold for CaMKII mRNA abundance. Selective localization of mRNAs to MBON dendrites therefore appears to be more nuanced than simply reflecting the size of the dendritic arbor, the number of synapses, or the level of transcripts detected throughout the cell.\n\n### Learning transiently changes CAMKII mRNA abundance in \u03b35\u03b2'2a MBON dendrites\n\nWe tested whether CaMKII::YFP mRNA abundance in \u03b35\u03b2'2a and\u00a0\u03b31pedc>\u03b1/\u03b2 MBONs was altered following aversive learning (Figure 3A, B). We also quantified mRNA in the somata and nuclei of these MBONs (Figure 3A, B'). Transcriptional activity is indicated by a bright nuclear transcription focus (Figure 3C, Figure 3\u2014figure supplement 1). We initially subjected flies to four conditions (Figure 3D): (1) an \u2018untrained\u2019 group that was loaded and removed from the T-maze but not exposed to odors or shock; (2) an \u2018odor only\u2019 group, exposed to the two odors as in training but without shock; (3) a \u2018shock only\u2019 group that was handled as in training and received the shock delivery but no odor exposure;\u00a0and\u00a0(4) a \u2018trained\u2019 group that was aversively conditioned by pairing one of the two odors with shock. Fly brains were extracted 10 min, 1 hr, or 2 hr after training and processed for smFISH.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62770/elife-62770-fig3-v3.jpg)\n\n**Figure 3.:** (A,\u00a0A'). CaMKII::YFP single-molecule fluorescence\u00a0in situ\u00a0hybridization\u00a0(smFISH) in \u03b35\u03b2'2a MBON dendrites and soma (R66C08-GAL4>UAS-myr::SNAP). Images are maximum intensity projections of ten 0.2\u00a0\u03bcm z-sections. (B,\u00a0B'). CaMKII::YFP smFISH in \u03b31pedc>\u03b1/\u03b2\u00a0MBON dendrites and soma (MB112C-GAL4>UAS-myr::SNAP). Nuclear transcription foci are indicated (red arrowheads). Images are maximum intensity projections of ten 0.2\u00a0\u00b5m z-sections.\u00a0(C) CaMKII::YFP smFISH signal/background in transcriptionally active \u03b35\u03b2'2a somata. Transcription foci are readily distinguished as the brightest puncta in the soma/nucleus (red data points). Note that\u00a0only one transcription focus can be visualized per cell since the CaMKII::YFP allele is heterozygous. (D) Schematic of aversive training and control protocols followed by smFISH. The yellow and red circles represent the two odors. (E) CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites increase 10 min after odor\u2013shock pairing, relative to control groups (one-way ANOVA: untrained-10\u00a0min p=0.001; odor only-10\u00a0min p=0.016; shock only-10\u00a0min p=0.002), and decrease to baseline by 2 hr (one-way ANOVA: 10 min-2\u00a0h p<0.001; 1\u20132\u00a0h p=0.004). CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON somata increase 1 hr after odor\u2013shock pairing, relative to untrained (one-way ANOVA: p=0.001), odor only (one-way ANOVA: p=0.002), and 10 min post training (one-way ANOVA: p=0.025). The proportion of transcriptionally active \u03b35\u03b2'2a MBON somata is unchanged (X2=2.064, df\u00a0=\u00a05, p=0.840). (F) CaMKII::YFP mRNA numbers are not changed by aversive odor\u2013shock pairing in \u03b31pedc>\u03b1/\u03b2 MBON dendrites (one-way ANOVA: f\u00a0=\u00a01.473, p=0.212), their somata (one-way ANOVA: f\u00a0=\u00a02.183, p=0.067), and there is no detected change in CaMKII::YFP transcription (X2=3.723, df\u00a0=\u00a05, p=0.59). (G) Signal/background ratio of CaMKII::YFP transcription foci in \u03b35\u03b2'2a MBON somata. (H) Signal/background ratio of CaMKII::YFP mRNA localized in \u03b35\u03b2'2a MBON dendrites. Asterisks denote significant difference (p<0.05). Data are means \u00b1 standard error of mean. Individual data points are displayed.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62770/elife-62770-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013A\"). Transcriptionally inactive nucleus visualized with endogenous CaMKII smFISH probes.\u00a0(B\u2013B\"). Monoallelic transcription visualized with endogenous CaMKII smFISH probes. (C\u2013C\"). Biallelic transcription visualized with endogenous CaMKII smFISH probes. (D\u2013D\"). Transcriptionally inactive nucleus visualized with YFP smFISH probes in a heterozygous CaMKII::YFP brain. (E\u2013E\"). Only monoallelic transcription can be visualized with YFP smFISH probes in a heterozygous CaMKII::YFP brain. (A\u2013E) Merge. (A'-C'). Endogenous CaMKII smFISH. (E'-F'). CaMKII::YFP smFISH. (A\"$''$\u2013E\"). Nuclei labeled with dsDNA binding Vybrant DyeCycle Violet Stain.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62770/elife-62770-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic of training protocols. The yellow and red circles represent the two odors. These experiments increased the interval between the two parts of the session from 45 to 180 s to avoid possible trace conditioning in the \u2018unpaired\u2019 group. CaMKII mRNA abundance in \u03b35\u03b2'2a mushroom body output neuron (MBON) dendrites increased 10 min after odor\u2013shock pairing relative to the odor only, shock only, and unpaired controls (one-way ANOVA: trained-odor only p=0.0249; trained-shock only p=0.0293; trained-unpaired p=0.0463).\u00a0(B) CaMKII::YFP fluorescence intensity (adu/voxel) within \u03b35\u03b2'2a MBON dendrites and somata. (C) CaMKII::YFP fluorescence intensity (adu/voxel) within \u03b31pedc>\u03b1/\u03b2 MBON dendrites and somata. No significant differences between trained and control groups were observed (one-way ANOVA/Kruskal\u2013Wallis p>0.05).\n\nCaMKII mRNA increased significantly in \u03b35\u03b2'2a MBON dendrites 10 min after training (Figure 3E) compared to all control groups. Including an additional \u2018unpaired\u2019 experiment, where odor and shock presentation was staggered, confirmed that the increase at 10 min after training requires coincident pairing of odor and shock (Figure 3\u2014figure supplement 2). Moreover, levels returned to baseline by 1 hr and remained at that level 2 hr after training (Figure 3E). CaMKII mRNAs in\u00a0\u03b35\u03b2'2a MBON somata showed a different temporal dynamic, with transcripts peaking 1 hr after training, albeit only relative to untrained and odor only controls (Figure 3E). The proportion of \u03b35\u03b2'2a nuclei containing a CaMKII transcription focus did not differ between treatments (Figure 3E), suggesting that the transcript increase in the somata is not correlated with the number of actively transcribing \u03b35\u03b2'2a nuclei, at least at the timepoints measured. In addition, the mean brightness of \u03b35\u03b2'2a transcription foci did not change across treatments (Figure 3G), although the variation was substantial. An increase of dendritically localized CaMKII mRNAs could result from enhanced trafficking or through the release of transcripts from protein bound states, which would increase smFISH probe accessibility and hence spot brightness (Buxbaum et al., 2014). Since the brightness of CaMKII mRNA spots detected in the dendrites of\u00a0\u03b35\u03b2'2a MBONs did not change with treatment (Figure 3H), we conclude that the increased abundance likely results from altered traffic.\n\nAssessing CaMKII mRNA abundance in \u03b31pedc>\u03b1/\u03b2 MBONs after learning did not reveal a change in mRNA abundance in the dendrites or somata between trained flies and all control groups at all timepoints measured (Figure 3F). These results indicate specificity to the response observed in the \u03b35\u03b2'2a MBONs.\n\nSince CaMKII protein is also labeled with YFP in CaMKII::YFP flies, we assessed protein expression by measuring YFP fluorescence intensity specifically within the MBON dendrites. This analysis did not reveal a significant difference in fluorescence intensity across treatments (Figure 3\u2014figure supplement 2). However, since smFISH provides single-molecule estimates of mRNA abundance, a similar level of single-molecule sensitivity may be required to detect subcellular resolution changes in protein copy number. Moreover, new synthesis and replacement of specific isoforms of CaMKII could radically change local kinase activity (Kuklin et al., 2017; Zalcman et al., 2018), even without an observable change in overall abundance.\n\nEarly studies in Drosophila demonstrated that broad disruption of CAMKII function impaired courtship learning (Broughton et al., 2003; Griffith et al., 1994; Griffith et al., 1993; Joiner and Griffith, 1997). In contrast, later studies that manipulated activity more specifically in olfactory projection neurons or particular classes of KCs reported a preferential loss of middle-term or long-term olfactory memory (Akalal et al., 2010; Ashraf et al., 2006; Malik et al., 2013). Here, we focused our analyses on two subtypes of MBONs, which are known to exhibit changes in odor-evoked activity after a single\u00a0trial of aversive olfactory conditioning. Whereas \u03b31pedc>\u03b1/\u03b2 MBON responses to the previously shock-paired odor are depressed immediately after aversive learning (Hige et al., 2015; Perisse et al., 2016), prior studies observed a learning-related increase of the conditioned odor response of \u03b35\u03b2'2a MBONs (Bouzaiane et al., 2015; Owald et al., 2015), likely resulting from a release of feedforward inhibition from \u03b31pedc>\u03b1/\u03b2 MBONs (Felsenberg et al., 2018; Perisse et al., 2016). We therefore speculate that the specific change in CaMKII mRNA abundance in the \u03b35\u03b2'2a MBONs after aversive learning might be a consequence of network-level potentiation of their activity, such as that that would result from a release from inhibition. Since CAMKII local translation-dependent plasticity is expected to underlie more extended forms of memory (Giese and Mizuno, 2013; Miller et al., 2002), it will be interesting to investigate whether the training-evoked change in CaMKII mRNA abundance in the \u03b35\u03b2'2a MBON dendrites contributes to later aversive memory formation and maintenance. This may be possible with MBON-specific targeting of CAMKII mRNAs that contain the long 3'UTR, which is essential for dendritic localization and activity-dependent local translation (Aakalu et al., 2001; Kuklin et al., 2017; Mayford et al., 1996; Rook et al., 2000).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>CaMKII</td>\n      <td>NCBI</td>\n      <td>Gene ID: 43828</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>PKA-R2</td>\n      <td>NCBI</td>\n      <td>Gene ID: 36041</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Ten-m</td>\n      <td>NCBI</td>\n      <td>Gene ID: 40464</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>nAChR\u03b11</td>\n      <td>NCBI</td>\n      <td>Gene ID: 42918</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>nAChR\u03b15</td>\n      <td>NCBI</td>\n      <td>Gene ID: 34826</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>nAChR\u03b16</td>\n      <td>NCBI</td>\n      <td>Gene ID: 34304</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>R66C08-GAL4</td>\n      <td>Bloomington Drosophila Stock Center (Owald et al., 2015)</td>\n      <td>RRID:BDSC_49412</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>MB112c-GAL4</td>\n      <td>Bloomington Drosophila Stock Center (Perisse et al., 2016)</td>\n      <td>RRID:BDSC_68263</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-myr::SNAPf</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>RRID:BDSC_58376</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>CaMKII::YFP</td>\n      <td>Kyoto Stock Centre (Lowe et al., 2014)</td>\n      <td>RRID:DGGR_115127</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>PKA-R2::YFP</td>\n      <td>Kyoto Stock Centre (Lowe et al., 2014)</td>\n      <td>RRID:DGGR_115174</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Ten-m::YFP</td>\n      <td>Kyoto Stock Centre (Lowe et al., 2014)</td>\n      <td>RRID:DGGR_115131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>20% v/v paraformaldehyde</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>Cat#15713S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>RNase-free 10\u00d7 PBS</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>Cat#AM9625</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Triton X-100</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#T8787</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>20\u00d7 RNase-free SSC</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>Cat#AM9763</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Deionized formamide</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>Cat#AM9342</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>50% dextran sulphate</td>\n      <td>Millipore</td>\n      <td>Cat#S4030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Vybrant DyeCycle Violet Stain</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>Cat#V35003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Vectashield anti-fade mounting medium</td>\n      <td>Vector Laboratories</td>\n      <td>Cat#H-1000-10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>JF549-SNAPTag</td>\n      <td>Grimm et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Mineral oil</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#M5904</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>4-Methocyclohexanol (98%)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#218405</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>3-Octanol (99%)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#153095</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td>NIH (Schindelin et al., 2012)</td>\n      <td>http://fiji.sc/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB R2019b</td>\n      <td>The MathWorks, Natick, MA</td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 8</td>\n      <td>GraphPad Software, La Jolla, CA</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Drosophila brain smFISH analysis</td>\n      <td>This paper (Mitchell, 2021)</td>\n      <td>see Data availability section</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Blender</td>\n      <td>Blender Foundation, Amsterdam</td>\n      <td>https://www.blender.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NAVis 0.2.0</td>\n      <td>Bates et al., 2020b</td>\n      <td>https://pypi.org/project/navis/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly strains\n\nFlies were raised on standard cornmeal agar food in plastic vials at 25\u00b0C and 40\u201350% relative humidity on a 12 hr:12 hr light:dark cycle. Details of fly strains are listed in the Key Resources Table.\n\n### smFISH probes\n\nOligonucleotide probe sets were designed using the web-based probe design software https://www.biosearchtech.com/stellaris-designer. The YFP smFISH probe set was purchased from LGC BioSearch Technologies (CA, USA) prelabeled with Quasar-670 dye. CaMKII, nAChR\u03b11, nAChR\u03b15, and nAChR\u03b16 DNA oligonucleotide sets were synthesized by Sigma-Aldrich (Merck) and enzymatically labeled with ATTO-633 according to Gaspar et al., 2017. DNA oligonucleotide sequences for each smFISH probe set are provided in Supplementary file 1.\n\n### Whole Drosophila brain smFISH\n\nWhole adult brain smFISH was performed essentially as described (Yang et al., 2017). The\u00a02\u20134-day-old adult Drosophila brains were dissected in 1\u00d7 phosphate buffered saline (PBS) and fixed in 4% v/v paraformaldehyde for 20 min at room temperature. Brains were washed 2\u00d7 with PBS, followed by 20 min in 0.3% v/v Triton X-100 in PBS (PBTX) to permeabilize the tissue, then 15 min in PBTX with 500 nM JF549-SNAPTag (Grimm et al., 2015) for neuronal labeling. Then,\u00a03 \u00d7 10 min washes in PBTX removed excess dye. Samples were then incubated in wash buffer (2\u00d7 RNase-free SSC + 10% v/v deionized formamide) for 10 min at 37\u00b0C, wash buffer was replaced with hybridization buffer (2\u00d7 RNase-free SSC, 10% v/v deionized formamide, 5% w/v dextran sulphate, 250 nM smFISH probes), and samples incubated overnight at 37\u00b0C. Hybridization buffer was removed before samples were washed 2\u00d7 in freshly prepared wash buffer and incubated 40 min in wash buffer containing Vybrant DyeCycle Violet Stain (1:1000) to label nuclei. Samples were then washed 3\u00d7 times in wash buffer, mounted on a glass slide covered with Vectashield anti-fade mounting medium (refractive index 1.45), and immediately imaged.\n\n### Olfactory conditioning\n\nAversive olfactory conditioning was performed essentially as described by Tully and Quinn, 1985. 3-Octanol (OCT) was used as the shock-paired odor. 4-Methylcyclohexanol (MCH) was used as the unpaired odor. Odors were prepared at concentrations of 9 \u03bcl OCT in 8 ml mineral oil, and 8 \u03bcl MCH in 8 ml mineral oil. Groups of\u00a0~100 flies were aliquoted into plastic vials containing standard cornmeal agar food and a 2 \u00d7 6 cm piece of filter paper. Flies were conditioned as follows: 1 min OCT paired with 12 \u00d7 90 V shocks at 5 s interstimulus interval; 45 s clean air; 1 min MCH. Control groups were handled in the same way except for the differing presentation of either odors or shock. Untrained flies experienced no odor or shock, the odor only group experienced the two odor presentations without shock, and the shock only group received the shock presentations but no odors. Aversive olfactory conditioning was performed at 23 \u00b0C and 70% relative humidity. Following training, flies were returned to food vials and brains were dissected either 10 min, 1 hr, or 2 hr later, and smFISH analyses performed.\n\nFor the 'unpaired' experiment, the interval between presentations was extended from 45 to 180 s to avoid trace conditioning of the unpaired odor. In the trained group, flies were presented with 1 min OCT paired with 12 \u00d7 90 V shocks at 5 s interstimulus interval, 180 s clean air,\u00a0and then 1 min MCH. In the unpaired group, flies received 12 \u00d7 90 V shocks at 5 s interstimulus interval (no odor pairing), 180 s clean air,\u00a0and then 1 min MCH. Other control groups were handled in the same way except that\u00a0the odor only group experienced the two odor presentations without shock and the shock only group received the shock presentations but no odors. Following training, flies were returned to food vials and brains were dissected 10 min later for smFISH analyses.\n\n### Microscopy\n\nSamples were imaged on a spinning disk confocal microscope (Perkin Elmer UltraView VoX) with a 60\u00d7 1.35 N.A. oil immersion UPlanSApo objective (Olympus) and a filter set to image fluorophores in DAPI, FITC, TRITC, and CY5 channels (center/bandwidth; excitation: 390/18, 488/24, 542/27, 632/22 nm; emission: 435/48, 594/45, 676/34 nm), the corresponding laser lines (488/4.26, 561/6.60, 640/3.2, 405/1.05, 440/2.5, 514/0.8 nm/mW), and an EMCCD camera (ImagEM, Hamamatsu Photonics). The camera pixel size is 8.34 \u00b5m, resulting in a pixel size in image space of approximately 139 nm. Optical sections were acquired with 200 nm spacing along the z-axis within a 512 \u00d7 512 pixel (71.2 \u00d7 71.2 \u00b5m) field of view.\n\n### Deconvolution\n\nDeconvolution was carried out using commercially available software (Huygens Professional v19.10.0p1, SVI Delft, The Netherlands). Raw image data generated in\u00a0.mvd2 file format were converted to OME.tiff format using FIJI (Schindelin et al., 2012) (convert_mvd2_to_tif.ijm). Spherical aberration was estimated from the microscope parameters (see Microscopy). Z-dependent momentum preserving deconvolution (CLME algorithm, theoretical high-NA PSF, iteration optimized with quality change threshold 0.1% and iterations 40 maximum, signal-to-noise ratio 20, area radius of background estimation is 700 nm, a brick mode is 1 PSF per brick, single array detector with reduction mode SuperXY) was then applied to compensate for the depth-dependent distortion in point spread function, thereby reducing artifacts and increasing image sharpness.\n\n### Multi-channel alignment\n\nMisalignment between channels was corrected for using Chromagnon (v. 0.81) (Matsuda et al., 2018). To estimate channel misalignment, nuclei were labeled with the broad emission spectrum dye (Vybrant DyeCycle Violet Stain, Thermo\u00a0Fisher) (Smith et al., 2015). The dye was excited at 405 nm, and emission was recorded using the appropriate filters for each imaging channel. Chromatic shift was estimated by finding the affine transformation that delivers a minimum mean square error between the nuclear stain in the various channels. Nuclear calibration channels for chromatic shift correction were separated using ImageJ (see macro Split_ometiff_channels_for_chromcorrect.ijm). The affine transformation was estimated and alignment was performed by calling Chromagnon from Python (see script chromagnon_bash.py). The resulting aligned and deconvolved images were saved in\u00a0.dv format for further downstream analysis.\n\n### Calculating postsynaptic abundance and volume of \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON dendrites\n\nNeuromorphological calculations were performed with NAVis 0.2.0 library functions in Python (https://pypi.org/project/navis/) (Bates et al., 2020a) using data obtained from the Drosophila hemibrain dataset (v.1.1) (https://neuprint.janelia.org) (Scheffer et al., 2020). To calculate the dendritic volume and postsynaptic abundance of \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBONs, neuron skeletons, neuropil meshes, and synapse data were first imported. Neural skeletons were then used to generate 3D neuron reconstructions. Dendritic processes of the \u03b35\u03b2'2a MBON were determined by intersecting neuronal skeletons with the MB mesh containing the \u03b35 and \u03b2'2a compartments. Dendritic processes of the \u03b31pedc>\u03b1/\u03b2 MBON were determined by intersecting the skeleton within the \u03b31 MB compartment mesh. The available \u03b31 MB compartment mesh did not encompass the entirety of the \u03b31pedc>\u03b1/\u03b2\u00a0MBON dendrites in the \u03b31 MB compartment, so the volume of the mesh was scaled up 1.35\u00d7. This intersects with almost all\u00a0\u03b31pedc>\u03b1/\u03b2 MBON dendrites in the \u03b31 MB compartment, but not any other substantial part of the neuron. Dendritic volume (nm3) was calculated as the sum of the neurite voxels multiplied by 83 since the resolution of each voxel is 8\u00a0nm3. The number of postsynapses within these compartments was also determined using the synapse data that accompany the neuron skeletons (Scheffer et al., 2020).\n\nData visualization smFISH data were visualized in FIJI (Schindelin et al., 2012). Maximum intensity projections representing 2 \u03bcm sections are presented for visualization purposes. Figure 1I and J are single z-sections (representing a 0.2\u00a0\u03bcm section). The\u00a03D reconstructions of \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBONs were created in Blender v.2.8.2 with NAVis 0.2.0 plug-in and using data obtained from http://www.neuprint.janelia.org.\n\n### mRNA detection\n\nAn smFISH spot detection MATLAB\u00a0script based on Smith et al., 2015 was written to quantify localized mRNA transcripts in Drosophila brains. Software for processing smFISH datasets is available as Supplementary Software. The smFISH channel was extracted and stored as a 3D grayscale image. mRNA signal was detected using 3D generalized likelihood ratio test (Smith et al., 2015).\u00a0The false detection rate is 0.05, and the spot width is \u03c3x,y = 1.39 and \u03c3z = 3.48. After 3D detection, the intensity, background, width, and subpixel position of the detected mRNA spots are estimated using maximum likelihood estimation (MLE) (Smith et al., 2010).To reduce the impact of overlapping spots in 3D, only a 2D cross\u00a0section is used from the z-plane where the spot is detected. To filter out spurious detections, all spots with a width >5 pixels are discarded.\n\n### mRNA-dendrite co-localization\n\nTo quantify calyx and dendritic localized smFISH puncta, the calyx and dendritic area were first segmented manually. The contour of the calyx and dendritic area is converted to a mask (M1) using the MATLAB R2019b function roipoly. To quantify smFISH puncta co-localizing with dendrite label, a mask of the dendrite label is created by enhancing the image using a difference of Gaussians filter (width of 1 and 5 pixels) and then thresholding the product between the enhanced image (A) and masked area ($M_{1}$) to obtain a mask (M2):\n\n$$\nM_{2}=A\u2218M_{1}>mean(A\u2218M_{1})+std(A\u2218M_{1})\n$$\n\nwhere mean() and std() are the sample mean and sample standard deviation of the image intensity values, and $A\u2218B$ is the Hadamard product between A and B. The sample standard deviation is calculated as\n\n$$\nstd(x)=\\sqrt{\\frac{1}{N\u22121}\\sumi=1N(x_{i}\u2212x\u00af)^{2}}\n$$\n\nwhere $N$ is the number of data points. smFISH signal within \u03b35\u03b2'2a MBON dendrites innervating the \u03b35 and \u03b2'2a MB compartments was\u00a0analyzed. smFISH signal within the\u00a0\u03b31pedc>\u03b1/\u03b2\u00a0dendrites innervating the \u03b31 MB compartment was\u00a0analyzed. Sections of 10 \u00d7 0.2 \u03bcm individual z-slices of MB calyx, \u03b35\u03b2'2a MBON dendrites, or \u03b31pedc>\u03b1/\u03b2 MBON dendrites were analyzed. smFISH puncta overlapping with the calyx or dendrite mask were considered co-localizing and therefore localized within that neuronal compartment.\n\n### Spot brightness and full width half maximum (FWHM) analysis\n\nFor each detection, a region of interest (ROI) is extracted as a 2D box in the x\u2013y plane with a size of 2\u00d7(3\u03c3x,y+1). For each ROI, the MLE of the x and y position, the number of photons, the number of background photons, and the width of the 2D Gaussian, \u03c3x,y, is computed. The FWHM of the spots is calculated as $FWHM=2\\sqrt{2ln(2)}\u00a0\\sigma_{x,y}$.\n\n### Verification of transcription foci\n\nSoma containing bright nuclear transcription foci were selected to quantify the difference in intensity relative to diffraction-limited smFISH puncta. The nuclear localization of the smFISH puncta with the highest photon count was validated by visual inspection and considered to correspond to the transcription site. The width (\u03c3x,y) of the transcription foci significantly differs from the sparse smFISH signal and is estimated by fitting a 2D Gaussian to the transcription site using the MATLAB 2019b nonlinear least-squares routine lsqcurvefit. Transcription foci brightness and background were computed using the same MLE protocol as for diffraction-limited spots, but with the estimated \u03c3x,y.\n\n### YFP fluorescence intensity\n\nTo quantify YFP fluorescence intensity within co-labeled neurons, we developed a FIJI-compatible macro plug-in. Depth-dependent bleaching was first corrected for over the z-stack using an exponential fit. Background signal was then subtracted in each z-section using a rolling ball filter with a width of 60 pixels. Five z-sections above and below the center of the image were cropped for analysis. YFP fluorescence intensity was recorded within the dendrites or soma of the co-labeled neuron using the mask described above (mRNA-dendrite co-localization). Fluorescence intensity was calculated as analog digital units (adu)/volume (dendrites or soma) to give adu/voxel. Software for analyzing fluorescent protein expression in single neurons is available as Supplementary Software.\n\n### Statistical analyses\n\nData were visualized and analyzed statistically using GraphPad Prism version 8.3.1 (332). The distribution of a dataset was assessed with a Shapiro\u2013Wilk test. Gaussian distributed smFISH abundance was compared between two groups using an unpaired t-test. Gaussian distributed smFISH abundance between multiple groups was compared using a one-way ANOVA followed by Tukey\u2019s post hoc test. Non-Gaussian distributed smFISH abundance was compared between two groups using a Mann\u2013Whitney U test. Proportions of transcriptionally active soma were compared to transcriptionally inactive soma using a chi-square test. YFP-positive and -negative smFISH intensity distributions were compared with a two-sided Wilcoxon rank-sum test. YFP fluorescence intensity across treatments was compared using a one-way ANOVA for Gaussian distributed data and a Kruskal\u2013Wallis test for non-Gaussian distributed data. Statistical significance is defined as p<0.05.\n",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "2092dcec-3198-44ac-bd23-cc3214f6ba79",
+      "submission_id": "368550db-67cc-4155-a381-0caf6d943e87",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62770.sa1](https://doi.org/10.7554/eLife.62770.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work describes the implementation of smFISH to visualise mRNAs in memory-encoding, mushroom-body output neurons (MBONs) in vivo. Using this technique, the authors report that levels of a CaMKII reporter mRNA are increased after associative training in dendrites of these MBONs known to mediate this form of memory. This is unexpected because gene expression changes are thought to occur after treatments that induce long-term memory and the increase is seen to occur after a single training trial, which should not induce LTM. Thus, the work points to unexpected and previously undocumented changes in the state or levels of dendritic mRNA after training regimens that do not induced long-term memory. Together, this work describes a very useful technology to study memory-associated changes in RNA transport, localisation, or accessibility in vivo and points to unexpected regulation of these processes by experiences that do not cause LTM. Additional analyses to establish the function and mechanisms for this learning-dependent CamKII localization localization will be required to establish the importance of these intriguing observations. The current work provides a foundation for such future studies.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Dendritic localization of mRNA in Drosophila Mushroom Body Output Neurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we genuinely regret to inform you that this potentially important work will not be considered further for publication in eLife.\n\nAll of the reviewers agreed that this was a technically impressive paper working towards an exciting and important goal. However there was a clear consensus not only that the observations made required more controls to firm up, but also and more critically, need to be extended further, to establish the origin of the increased smFISH signal (how), as well as its biological significance (why).\n\nReviewer #1:\n\nTargeting of mRNAs to synapses, combined with activity-dependent local translation, has been proposed to underlie various forms of synaptic plasticity, as well as formation of long-term memories. How this process is regulated in vivo during physiological learning and memory has remained unclear.\n\nHere, the authors aimed at addressing this question by studying dendritic mRNA localization in Drosophila brains. This is relevant, as imaging, conditioning and manipulation of neuronal activity can be efficiently combined in this system, yet no quantitative analysis of dendritic RNA localization has so far been reported. In this study, the authors describe that distinct mRNAs localize to different extent to the dendrites of neurons undergoing learning and memory-dependent plasticity (\u03b35\u03b2'2a MBON and \u03b31pedc>\u03b1/\u03b2 MBON). Furthermore, they uncover that aversive olfactory conditioning induces within minutes a transient increase in the amount of camkII mRNA molecules localizing to the dendrites of \u03b35\u03b2'2a MBON neurons. This last observation is interesting, as it suggests the existence of plasticity-dependent regulatory mechanisms controlling dendritic mRNA localization. However, both the origin of such a regulatory process and its biological implications remain unclear (see major points below) and should be investigated further.\n\n1) In Figure 2, the authors compare the dendritic localization profile of different RNAs in different neuron types (\u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBONs).\n\n\u2013 In 2F, they compare the accumulation of RNAs encoding subunits of the nAchR receptor. This is interesting as it points to local and specific regulation of receptor composition.\n\n\u2013 In 2E, the rationale to compare the distribution of CamkII, PKA-R2 and Ten-m mRNAs, however, is less clear: why are PKA-R2 and Ten-m specifically analyzed/interesting? Why is it surprising to not see Ten-m RNAs in the dendrites of \u03b35\u03b2'2a MBON? Also, it is difficult (impossible?) to interpret the observed differences in dendritic localization without knowing 1- if the transcripts are at all expressed in the neurons under consideration, and 2- their expression levels. Addressing this last point could be done by counting the number of transcripts found in the corresponding cell bodies (as done in Figure 3).\n\n\u2013 Last, the authors compare the amount of RNAs in \u03b31pedc>\u03b1/\u03b2 and \u03b35\u03b2'2a MBONs and try to make the point i- that the amount of dendritically-localized mRNAs correlate with dendritic volume and synapse number, and ii- that these factors may thus be \"important determinants of localized mRNA copy number\". Clearly, however, 2 of the 4 RNAs they identify as localized do not follow this principle (CamkII is equally abundant in both neuron types and the fold difference observed for PKA-R2 is not in the range of the observed difference in dendritic volume/synapse number). This makes the correlation quite weak. Determining whether the amount of RNAs present in dendrites correlate with the total amount of RNA (or at least the amount in cell bodies) for each species in the two populations under consideration may make a stronger case and highlight trends and/or specific behaviors.\n\n2) The increase in the amount of dendritically-localized Camk2 RNA seen 10 minutes after conditioning is the most interesting observation of this study. This observation should however be consolidated as both the biological meaning of the transient increase, and the mechanisms underlying this regulatory process remain unclear.\n\n\u2013 Investigating further if the observed changes are linked to local translation (and not only changes in global protein levels), or are specific to short-term/long-term memory paradigms would significantly strengthen the manuscript. This may also allow the authors to explain how their data fit with previous experiments demonstrating that the training protocol used in this study induces translation-independent short-term memory.\n\n\u2013 Alternatively, understanding how this process is regulated (activity-dependent? 3'UTR-dependent? transport vs degradation\u2026) may help the authors point to interesting underlying mechanisms.\n\nReviewer #2:\n\nMitchell et al. applied smFISH on the mushroom body circuit to visualize seemingly single- mRNA signals localized to the dendrites of single MBONs. They further found that aversive olfactory learning increases CamKII mRNA levels in the dendrites. The topic is interesting, and the imaging technique is high-level. But there are concerns regarding the evidence to support their claims.\n\n1) For example in Figure 2D, there is a considerable amount of false detection of background signal in YFP- condition. The authors should estimate the false detection rate. Importantly, the intensity of the signals and the background would be different with different probes. It would be necessary to verify the signal by using mutants or genetic knockdown for each probe.\n\n2) To claim selective localization of mRNA (Figure 2F), it is not enough to count the mRNA puncta in the dendrites because that may simply reflect the transcription level. Therefore, it is necessary to count mRNA in reference regions (e.g. soma as they did in Figure 3) and quantify the relative localization.\n\n3) In Figure 3E and F, unpaired training control is necessary to claim that the increase is learning-dependent. Also, it is not fair to compare the 10 min-odor only to 1 hr-trained (Figure 3E). The authors should compare the trained and the unpaired at the respective time points.\n\nReviewer #3:\n\nThis technically accomplished and well-written manuscript documents dendritic localization of subsets of mRNAs in specific neurons within the Drosophila brain and its modulation by learning paradigms. The development of a robust system for studying mRNA localization in a tractable physiological setting is valuable. However, the biological insights provided by this study fall short of what I would expect for a short communication in eLife. Specifically, the authors are unable to find a correlation between learning-associated changes in mRNA distribution and the synthesis or distribution of the protein product. In the absence of such data, or other functional data, the relevance of mRNA localization in this system is unclear.\n\nThe authors provide evidence that changes in mRNA distribution are not accompanied by changes in the proportion of cells transcribing the mRNA. This suggests that localization rather than synthesis of the mRNA is primarily being affected, which is a key distinction. Given the importance of this part of the work the authors need to provide additional evidence that the large foci are indeed sites of transcription. For example, endogenous autosomal genes might be expected to have two foci, whereas X-linked genes should have one focus in males and two in females. The authors should also quantify the fluorescence intensity of presumptive nascent transcript foci with and without learning as it seems conceivable that changes in mRNA distribution are due to the same subset of cells transcribing more of the mRNA (rather than an increase in the proportion of transcriptionally active cells).\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Selective dendritic localization of mRNA in Drosophila mushroom body output neurons\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Mani Ramaswami as Reviewing Editor and K VijayRaghavan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1) One thing still unclear is the calculation of false detection rate (previous point #1). The authors claim that the rate is 5%, but how was this calculated? In the corresponding data (Figure 2D), \u201ccontamination\u201d counts look much larger than 5%. If the authors mean the q-value of by the 5% of FDR, what was the multiple hypothesis testing? How is the value of \"signal/background\" in Figure 2D calculated? Justification is critical to interpret data of fewer counts (e.g. dendritic CaMKII). This needs to be clarified.\n\n2) The Discussion should include a clear consideration of the implications and observed increase in reporter RNA levels in MBON dendrites. Why is it observed after training trials that should not induce LTM and how does this observation impact or fit with previous observations and conclusions? Are there any specific experiments that could test the authors models? In addition, a discussion of potential mechanisms that could underlie this phenomenon and experiments required to address them would be valuable to the reader.\n",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8665dc53-64c9-428e-8e26-8b37db0e4215",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C1",
+      "claim": "Single-molecule fluorescence in situ hybridization (smFISH) enables cellular mRNAs to be imaged at single-molecule resolution through the hybridization of a set of complementary oligonucleotide probes, each labeled with a fluorescent dye.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule fluorescence in situ hybridization (smFISH) enables cellular mRNAs to be imaged at single-molecule resolution through the hybridization of a set of complementary oligonucleotide probes, each labeled with a fluorescent dye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the smFISH technique based on established scientific knowledge and methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "25bff9d7-1024-4216-b291-465b6845d75c",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C2",
+      "claim": "Recent improvements in smFISH permit mRNA transcripts to be visualized in the dense heterogenous tissue of intact Drosophila brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent improvements in smFISH permit mRNA transcripts to be visualized in the dense heterogenous tissue of intact Drosophila brains (Long et al., 2017; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by Long et al., 2017 and Yang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "df961686-e7fe-411b-87ff-df51be23e396",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C3",
+      "claim": "Olfactory learning in Drosophila depresses cholinergic synaptic connections between odor-specific mushroom body Kenyon cells (KCs) and mushroom body output neurons (MBONs).",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory learning in Drosophila depresses cholinergic synaptic connections between odor-specific mushroom body Kenyon cells (KCs) and mushroom body output neurons (MBONs) (Barnstedt et al., 2016; Cohn et al., 2015; Handler et al., 2019; Hige et al., 2015; Owald et al., 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "58d40a28-d9a3-436e-9a08-cb8232e3a99d",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C4",
+      "claim": "Dopamine-driven plasticity is mediated by cAMP-dependent signaling and associated kinases such as calcium/calmodulin-dependent protein kinase II (CaMKII) and protein kinase A (PKA).",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine-driven plasticity is mediated by cAMP-dependent signaling and associated kinases such as calcium/calmodulin-dependent protein kinase II (CaMKII) and protein kinase A (PKA) (Boto et al., 2014; Handler et al., 2019; Hige et al., 2015; Kim et al., 2007; Qin et al., 2012; Tomchik and Davis, 2009; Yu et al., 2006; Zhang and Roman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8aae83af-9a6d-4001-8500-9137418deb95",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C5",
+      "claim": "Mammalian CaMKII mRNA is transported to neuronal dendrites, where it is locally translated in response to neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian CaMKII mRNA is transported to neuronal dendrites, where it is locally translated in response to neuronal activity (Bagni et al., 2000; Miller et al., 2002; Ouyang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on mammalian CaMKII.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "6dfbba00-e9ba-4371-8773-2e2148b49e07",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C6",
+      "claim": "Drosophila CAMKII is critical for behavioral plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila CAMKII is critical for behavioral plasticity (Griffith, 1997; Malik et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "cc962ec5-87aa-470f-a499-4317cae9fe67",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C7",
+      "claim": "Drosophila CAMKII is thought to be locally translated.",
+      "claim_type": "EXPLICIT",
+      "source": "and is also thought to be locally translated (Ashraf et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8cf8ec7f-fc77-4e5e-b435-393ebe44fc1f",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C8",
+      "claim": "CaMKII smFISH probes labeled 56 \u00b1 5 discrete puncta within each calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII smFISH probes labeled 56 \u00b1 5 discrete puncta within each calyx (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "2eb87bd7-0d1d-4816-bf4d-f2ba142fa15c",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C9",
+      "claim": "smFISH probes directed to the \u03b11 nicotinic acetylcholine receptor (nAChR) subunit labeled 33 \u00b1 2 puncta in the calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, smFISH probes directed to the \u03b11 nicotinic acetylcholine receptor (nAChR) subunit labeled 33 \u00b1 2 puncta in the calyx (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "2ff478fb-6e36-4fa6-90e1-d84d8fb9c272",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C10",
+      "claim": "Puncta were diffraction limited and the signal intensity distribution was unimodal, indicating that they represent single mRNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Puncta were diffraction limited and the signal intensity distribution was unimodal (Figure 1D\u2013D'), indicating that they represent single mRNA molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D-D' and inference from the unimodal distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "2feb18ea-6df3-46bf-aeba-5ad030d8f2ea",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C11",
+      "claim": "An average of 32 \u00b1 2 CaMKII mRNAs were detected within the dendrites of \u03b35\u03b2'2a MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this smFISH approach, we detected an average of 32 \u00b1 2 CaMKII mRNAs (Figure 1G, G') within the dendrites of \u03b35\u03b2'2a MBONs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G and 1G'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "0e2db280-94d5-47e8-a142-8e8db1472f9d",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C12",
+      "claim": "nAChR\u03b11 was not detected in \u03b35\u03b2'2a MBON dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the calyx, we did not detect nAChR\u03b11 in \u03b35\u03b2'2a MBON dendrites (Figure 1H, H').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H and 1H'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "c6ef0247-f0eb-4975-939a-242b2da99eb1",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C13",
+      "claim": "The differential localization of the CaMKII and nAChR\u03b11 mRNAs within neurons of the mushroom body is indicative of cell specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This differential localization of the CaMKII and nAChR\u03b11 mRNAs within neurons of the mushroom body is indicative of cell specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the differential localization data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "1f176fc4-1e64-424d-aedb-9e5b37ddd594",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C14",
+      "claim": "YFP smFISH probes detected half the number of CaMKII mRNAs in \u03b35\u03b2'2a MBON dendrites compared to CaMKII-specific probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, YFP smFISH probes detected half the number of CaMKII mRNAs in \u03b35\u03b2'2a MBON dendrites compared to CaMKII-specific probes (Figure 2A, A', C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A, A', and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "9222c480-de4d-430e-9005-da690c83289c",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C15",
+      "claim": "YFP probes hybridized to YFP-negative control brains produced background signal that was statistically distinguishable in brightness from genuine smFISH puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, YFP probes hybridized to YFP-negative control brains produced background signal (Figure 2B, B') that was statistically distinguishable in brightness from genuine smFISH puncta (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B, B', and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "bce6698e-f5fd-4d5b-9504-33b2b4108835",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C16",
+      "claim": "The false discovery rate when using YFP-directed probes is 14%.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing data from YFP-negative and YFP-positive samples allowed us to define the false discovery rate to be 14% when using YFP-directed probes (Figure 2D, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "08687067-69a6-41fa-92f0-2278664d9aa0",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C17",
+      "claim": "The YFP insertion does not impede localization of CaMKII mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the YFP probes are specific and that the YFP insertion does not impede localization of CaMKII mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the comparison of YFP and CaMKII-specific probe results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "ac3f9bf5-486f-42c4-ac87-aefa3fee821f",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C18",
+      "claim": "Similar abundance of CaMKII::YFP was detected in the dendritic field of \u03b35\u03b2'2a and the \u03b31 dendritic region of \u03b31pedc>\u03b1/\u03b2 MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a similar abundance of CaMKII::YFP in the dendritic field of \u03b35\u03b2'2a (Figure 2E) and the \u03b31 dendritic region of \u03b31pedc>\u03b1/\u03b2 (Figure 2F) MBONs (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E, 2F, and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "b826cc07-24e6-462f-b561-1ba66269ee30",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C19",
+      "claim": "More PKA-R2 mRNAs were detected in the dendrites of \u03b35\u03b2'2a MBONs compared to \u03b31pedc>\u03b1/\u03b2 MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, more PKA-R2 mRNAs were detected in the dendrites of \u03b35\u03b2'2a MBONs compared to \u03b31pedc>\u03b1/\u03b2 MBONs (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "b5e5f300-8051-48e8-8995-32c9a9761e92",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C20",
+      "claim": "The relative abundance of dendritically localized CaMKII and PKA-R2 mRNAs did not simply reflect the levels of these transcripts detected in the MBON somata.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the relative abundance of dendritically localized CaMKII and PKA-R2 mRNAs did not simply reflect the levels of these transcripts detected in the MBON somata (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "0001bc2b-5867-430a-bc12-333393271d9b",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C21",
+      "claim": "Ten-m mRNAs were not detected in either \u03b35\u03b2'2a or \u03b31pedc>\u03b1/\u03b2 MBON dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we did not detect Ten-m mRNAs in either \u03b35\u03b2'2a or \u03b31pedc>\u03b1/\u03b2 MBON dendrites (Figure 2G, I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G and 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "cd9f661a-0e4c-4f5d-b364-3d5dd9f6e7a8",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C22",
+      "claim": "Ten-m mRNAs were visible in neighboring neuropil and at low levels in the MBON somata.",
+      "claim_type": "EXPLICIT",
+      "source": "although they were visible in neighboring neuropil and at low levels in the MBON somata (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "0a7a77dd-887d-4c58-a7cf-14c23bbf8a14",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C23",
+      "claim": "CaMKII and PKA-R2 mRNAs are selectively localized to MBON dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CaMKII and PKA-R2 mRNAs are selectively localized to MBON dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the differential localization patterns observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "3f3087de-f97a-4c8d-b37c-20ec2bd06bd3",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C24",
+      "claim": "nAChR\u03b11 is required in \u03b35\u03b2'2a MBON postsynapses to register odor-evoked responses and direct odor-driven behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not detect nAChR\u03b11 mRNA within \u03b35\u03b2'2a MBON dendrites, prior work has shown that nAChR subunits, including nAChR\u03b11, are required in \u03b35\u03b2'2a MBON postsynapses to register odor-evoked responses and direct odor-driven behaviors (Barnstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research by Barnstedt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "66d5b8a6-e204-4e3a-8311-3f3715f452aa",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C25",
+      "claim": "nAchR\u03b15 and nAchR\u03b16 mRNAs were detected within \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON dendrites, with nAchR\u03b16 being most abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "These probes detected nAchR\u03b15 and nAchR\u03b16 mRNAs within \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON dendrites, with nAchR\u03b16 being most abundant (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "40c3a70c-5b7a-4e6c-b761-582a6b7ec390",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C26",
+      "claim": "nAchR\u03b11, nAchR\u03b15, and nAchR\u03b16 were detected at roughly equivalent levels in the \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON somata.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we detected nAchR\u03b11, nAchR\u03b15, and nAchR\u03b16 at roughly equivalent levels in the \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBON somata (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "4d3226fe-f250-49c1-8afa-a65fbbe4923e",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C28",
+      "claim": "Localized mRNAs were on average 2.8\u00d7 more abundant in \u03b35\u03b2'2a relative to the \u03b31 region of \u03b31pedc>\u03b1/\u03b2 MBON dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Localized mRNAs were on average 2.8\u00d7 more abundant in \u03b35\u03b2'2a relative to the \u03b31 region of \u03b31pedc>\u03b1/\u03b2 MBON dendrites (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "69369439-3e49-42e9-bef6-6fb4fced9cae",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C29",
+      "claim": "The dendritic volume of the \u03b35\u03b2'2a MBON is 1515.36 nm3.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the recently published electron microscope volume of the Drosophila 'hemibrain' (Scheffer et al., 2020; Figure 2E, F), we calculated the dendritic volume of the \u03b35\u03b2'2a MBON to be 1515.36 nm3",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the hemibrain dataset (Scheffer et al., 2020) and calculations performed by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "e27b2056-1046-455c-af55-b69ac1f16ddf",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C30",
+      "claim": "The dendritic volume of the \u03b31 region of the \u03b31pedc>\u03b1/\u03b2 MBON is 614.20 nm3.",
+      "claim_type": "EXPLICIT",
+      "source": "and the \u03b31 region of the \u03b31pedc>\u03b1/\u03b2 MBON to be 614.20 nm3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the hemibrain dataset and calculations performed by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "0bceffaf-59f4-4972-b22a-9f70c9ebab67",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C31",
+      "claim": "The \u03b35\u03b2'2a regions of the \u03b35\u03b2'2a MBON dendrite contain 30,625 postsynapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the \u03b35\u03b2'2a regions of the \u03b35\u03b2'2a MBON dendrite contain 30,625 postsynapses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the hemibrain dataset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "67779b35-40a3-42ab-b8fe-53dbe62daed8",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C32",
+      "claim": "There are 17,020 postsynapses in the \u03b31 region of the \u03b31pedc>\u03b1/\u03b2 MBON.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas there are only 17,020 postsynapses in the \u03b31 region of the \u03b31pedc>\u03b1/\u03b2 MBON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the hemibrain dataset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8a9e0b7d-c5bf-4d64-8a52-aff03e5c241b",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C33",
+      "claim": "Larger dendritic field volume and synapse number is correlated with an increased number of localized nAchR\u03b15, nAchR\u03b16, and PKA-R2 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger dendritic field volume and synapse number is therefore correlated with an increased number of localized nAchR\u03b15, nAchR\u03b16, and PKA-R2 mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the correlation between dendritic volume, synapse number, and mRNA abundance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8be9079f-3d04-44c8-88b1-c065de13bd39",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C34",
+      "claim": "The correlation between dendritic field volume/synapse number and mRNA abundance does not hold for CaMKII mRNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation, however, does not hold for CaMKII mRNA abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the observation that CaMKII mRNA abundance does not follow the same pattern as other mRNAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "829d220e-5fce-4935-8a5c-4f142b1598c8",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C35",
+      "claim": "Selective localization of mRNAs to MBON dendrites appears to be more nuanced than simply reflecting the size of the dendritic arbor, the number of synapses, or the level of transcripts detected throughout the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective localization of mRNAs to MBON dendrites therefore appears to be more nuanced than simply reflecting the size of the dendritic arbor, the number of synapses, or the level of transcripts detected throughout the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the complex patterns of mRNA localization observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "f91c96b6-1575-46a8-b7cd-e87d7ea1b874",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C36",
+      "claim": "CaMKII mRNA increased significantly in \u03b35\u03b2'2a MBON dendrites 10 min after training compared to all control groups.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII mRNA increased significantly in \u03b35\u03b2'2a MBON dendrites 10 min after training (Figure 3E) compared to all control groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "40b2adaf-8db4-464f-beb8-5a2640dff766",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C37",
+      "claim": "The increase in CaMKII mRNA at 10 min after training requires coincident pairing of odor and shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Including an additional 'unpaired' experiment, where odor and shock presentation was staggered, confirmed that the increase at 10 min after training requires coincident pairing of odor and shock (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "87aac576-2732-4c78-82a6-37592ec4d411",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C38",
+      "claim": "CaMKII mRNA levels in \u03b35\u03b2'2a MBON dendrites returned to baseline by 1 hr and remained at that level 2 hr after training.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, levels returned to baseline by 1 hr and remained at that level 2 hr after training (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "ede5fa07-5dbf-4369-8254-2cc00e26dbf9",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C39",
+      "claim": "CaMKII mRNAs in \u03b35\u03b2'2a MBON somata peaked 1 hr after training, albeit only relative to untrained and odor only controls.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII mRNAs in \u03b35\u03b2'2a MBON somata showed a different temporal dynamic, with transcripts peaking 1 hr after training, albeit only relative to untrained and odor only controls (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "7c8fb9cf-c978-4889-8a20-d3ddc7716bb4",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C40",
+      "claim": "The proportion of \u03b35\u03b2'2a nuclei containing a CaMKII transcription focus did not differ between treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of \u03b35\u03b2'2a nuclei containing a CaMKII transcription focus did not differ between treatments (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "94f32f48-edb0-42d7-ae22-ebc32b8bb69d",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C41",
+      "claim": "The transcript increase in the somata is not correlated with the number of actively transcribing \u03b35\u03b2'2a nuclei, at least at the timepoints measured.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the transcript increase in the somata is not correlated with the number of actively transcribing \u03b35\u03b2'2a nuclei, at least at the timepoints measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the observation that transcription focus proportion did not change.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "c3529840-8bc4-4174-a15c-8e676c772695",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C42",
+      "claim": "The mean brightness of \u03b35\u03b2'2a transcription foci did not change across treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mean brightness of \u03b35\u03b2'2a transcription foci did not change across treatments (Figure 3G), although the variation was substantial.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "7f7c02bd-d0c7-461b-83b4-6c362a382974",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C43",
+      "claim": "The brightness of CaMKII mRNA spots detected in the dendrites of \u03b35\u03b2'2a MBONs did not change with treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the brightness of CaMKII mRNA spots detected in the dendrites of \u03b35\u03b2'2a MBONs did not change with treatment (Figure 3H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "a6d20117-25d4-4397-86b6-e990a6a1badd",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C44",
+      "claim": "The increased abundance of CaMKII mRNA in \u03b35\u03b2'2a MBON dendrites after training likely results from altered traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "we conclude that the increased abundance likely results from altered traffic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the observation that spot brightness did not change.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "a39fd6f9-d5de-460d-b216-2cc662375f73",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C45",
+      "claim": "CaMKII mRNA abundance in \u03b31pedc>\u03b1/\u03b2 MBONs did not change after learning in the dendrites or somata between trained flies and all control groups at all timepoints measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessing CaMKII mRNA abundance in \u03b31pedc>\u03b1/\u03b2 MBONs after learning did not reveal a change in mRNA abundance in the dendrites or somata between trained flies and all control groups at all timepoints measured (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "be998e7d-74ee-4798-99e1-d799cba9dc7a",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C46",
+      "claim": "The results indicate specificity to the response observed in the \u03b35\u03b2'2a MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate specificity to the response observed in the \u03b35\u03b2'2a MBONs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the differential responses between MBON types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "99aadc78-db8c-4c52-98bd-b4dec98b20d5",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C47",
+      "claim": "YFP fluorescence intensity analysis did not reveal a significant difference in fluorescence intensity across treatments in MBON dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis did not reveal a significant difference in fluorescence intensity across treatments (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8fd6792b-10bc-43b8-b680-0e4f9c357075",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C48",
+      "claim": "Broad disruption of CAMKII function impaired courtship learning in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies in Drosophila demonstrated that broad disruption of CAMKII function impaired courtship learning (Broughton et al., 2003; Griffith et al., 1994; Griffith et al., 1993; Joiner and Griffith, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "6499506f-8687-452b-8855-58e8f99fb648",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C49",
+      "claim": "Manipulating CAMKII activity specifically in olfactory projection neurons or particular classes of KCs resulted in a preferential loss of middle-term or long-term olfactory memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, later studies that manipulated activity more specifically in olfactory projection neurons or particular classes of KCs reported a preferential loss of middle-term or long-term olfactory memory (Akalal et al., 2010; Ashraf et al., 2006; Malik et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "2c4c09ac-ef54-4eda-9dfb-efb392842b7d",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C50",
+      "claim": "\u03b31pedc>\u03b1/\u03b2 MBON responses to the previously shock-paired odor are depressed immediately after aversive learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas \u03b31pedc>\u03b1/\u03b2 MBON responses to the previously shock-paired odor are depressed immediately after aversive learning (Hige et al., 2015; Perisse et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "5710ba8e-b084-486e-b20d-b8043af0df51",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C51",
+      "claim": "Prior studies observed a learning-related increase of the conditioned odor response of \u03b35\u03b2'2a MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "prior studies observed a learning-related increase of the conditioned odor response of \u03b35\u03b2'2a MBONs (Bouzaiane et al., 2015; Owald et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "f6090a88-3d76-441a-99f4-74105107a81c",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C52",
+      "claim": "The learning-related increase of the conditioned odor response of \u03b35\u03b2'2a MBONs likely results from a release of feedforward inhibition from \u03b31pedc>\u03b1/\u03b2 MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "likely resulting from a release of feedforward inhibition from \u03b31pedc>\u03b1/\u03b2 MBONs (Felsenberg et al., 2018; Perisse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "93dbae3d-9717-40de-bc76-e3854fda79cc",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C53",
+      "claim": "The specific change in CaMKII mRNA abundance in the \u03b35\u03b2'2a MBONs after aversive learning might be a consequence of network-level potentiation of their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore speculate that the specific change in CaMKII mRNA abundance in the \u03b35\u03b2'2a MBONs after aversive learning might be a consequence of network-level potentiation of their activity, such as that that would result from a release from inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observed changes and prior knowledge.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "21ff28c2-5995-4ae7-bd05-5ac829a41028",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C54",
+      "claim": "CAMKII local translation-dependent plasticity is expected to underlie more extended forms of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Since CAMKII local translation-dependent plasticity is expected to underlie more extended forms of memory (Giese and Mizuno, 2013; Miller et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "ec89ed14-97b5-4905-afd4-e89b9042920b",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C55",
+      "claim": "The training-evoked change in CaMKII mRNA abundance in the \u03b35\u03b2'2a MBON dendrites may contribute to later aversive memory formation and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "it will be interesting to investigate whether the training-evoked change in CaMKII mRNA abundance in the \u03b35\u03b2'2a MBON dendrites contributes to later aversive memory formation and maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, suggesting future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "fd7f54c4-72f9-4f5b-b8dd-3db4ccda540b",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C56",
+      "claim": "Dendritic localization of mRNA facilitates specificity of synaptic plasticity by enabling postsynaptic synthesis of new proteins where and when they are required.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic localization of mRNA facilitates specificity of synaptic plasticity by enabling postsynaptic synthesis of new proteins where and when they are required (Holt et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "ba1f496b-de29-45c5-b8ef-704787953ffa",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C57",
+      "claim": "Aversive olfactory learning produced a transient increase in the level of CaMKII mRNA within the dendritic compartments of the \u03b35\u03b2'2a MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, aversive olfactory learning produced a transient increase in the level of CaMKII mRNA within the dendritic compartments of the \u03b35\u03b2'2a MBONs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "357ba73c-7731-42ab-9211-fd903dba9451",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C58",
+      "claim": "mRNAs for subunits of nicotinic acetylcholine receptors and kinases could be detected within the dendrites of co-labeled mushroom body output neurons (MBONs).",
+      "claim_type": "EXPLICIT",
+      "source": "mRNAs for subunits of nicotinic acetylcholine receptors and kinases could be detected within the dendrites of co-labeled mushroom body output neurons (MBONs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "07370ec2-36de-40a0-bfc7-2c457f183241",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C59",
+      "claim": "The relative abundance of mRNAs for subunits of nicotinic acetylcholine receptors and kinases showed cell specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "and their relative abundance showed cell specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "93dde6e7-88ce-4b62-ac23-507f8c7506a2",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C60",
+      "claim": "Memories are believed to be encoded as changes in the efficacy of specific synaptic connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Memories are believed to be encoded as changes in the efficacy of specific synaptic connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8feba872-f6aa-4c98-ad77-d4ef2d5348b0",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C61",
+      "claim": "The mushroom body calyx is a recognizable neuropil containing the densely packed dendrites of ~2000 KCs and their presynaptic inputs from ~350 cholinergic olfactory projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore first hybridized CaMKII smFISH probes to whole-mount brains and imaged the mushroom body (MB) calyx (Figure 1A, B), a recognizable neuropil containing the densely packed dendrites of ~2000 KCs and their presynaptic inputs from ~350 cholinergic olfactory projection neurons (Bates et al., 2020a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to prior research by Bates et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "1d40b814-8c02-4971-8ebd-83237b767a67",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C62",
+      "claim": "Dopaminergic neurons have presynaptic terminals that innervate anatomically discrete compartments of the mushroom body, where they overlap with the dendrites of particular MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "This plasticity is driven by dopaminergic neurons whose presynaptic terminals innervate anatomically discrete compartments of the mushroom body, where they overlap with the dendrites of particular MBONs (Aso et al., 2010; Aso et al., 2014; Burke et al., 2012; Claridge-Chang et al., 2009; Li et al., 2020; Lin et al., 2014; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "32efbd5c-b756-4d48-88ea-a877e3a9b7c2",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C63",
+      "claim": "A custom image analysis pipeline was developed to register smFISH signals with co-labeled neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate localization of mRNAs in the 3D volumes of MBON dendrites by registering smFISH signals with co-labeled neurons using a custom image analysis pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodology developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "0bdf1120-38d2-43eb-af32-c564c3482208",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C64",
+      "claim": "A FIJI-compatible custom-built image analysis tool was developed that segments smFISH image data and identifies spots within the 3D volume using a probability-based hypothesis test.",
+      "claim_type": "EXPLICIT",
+      "source": "To detect and quantify mRNA within the 3D volume of the brain, we developed a FIJI-compatible custom-built image analysis tool that segments smFISH image data and identifies spots within the 3D volume using a probability-based hypothesis test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodology developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "67a645af-2847-4918-aed4-80882d40899e",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C65",
+      "claim": "The image analysis tool enabled detection of mRNAs with a false discovery rate of 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "This enabled detection of mRNAs with a false discovery rate of 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the performance of the methodology developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "3e11fcbd-0504-41d8-a32e-2ce6bc606e77",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C66",
+      "claim": "More CaMKII mRNAs are detected in the MB calyx relative to nAChR\u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "More CaMKII mRNAs are detected in the MB calyx relative to nAChR\u03b11 (unpaired t-test: p=0.0003, t = 4.727, df = 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "c1fd8a9f-95d3-4d0d-8301-7a7156f51d6c",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C67",
+      "claim": "More PKA-R2 transcripts localize within the dendrites of \u03b35\u03b2'2a MBONs relative to \u03b31pedc>\u03b1/\u03b2 MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "More PKA-R2 transcripts localize within the dendrites of \u03b35\u03b2'2a MBONs relative to \u03b31pedc>\u03b1/\u03b2 MBONs (unpaired t-test: p=0.004, t = 5.069, df = 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "763c6e4a-4c69-4f46-9afe-5b07449654cf",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C68",
+      "claim": "More nAchR\u03b15 mRNAs localized to \u03b35\u03b2'2a MBON dendrites relative to \u03b31pedc>\u03b1/\u03b2 MBON dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "More nAchR\u03b15 (unpaired t-test: p=0.004, t = 3.368, df = 15) and nAchR\u03b16 (unpaired t-test: p=0.046, t = 2.274, df = 10) mRNAs localized to \u03b35\u03b2'2a MBON dendrites relative to \u03b31pedc>\u03b1/\u03b2 MBON dendrites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "afbd2308-bc2a-465c-a1e1-95dbc3b5dbd3",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C69",
+      "claim": "More nAchR\u03b16 mRNAs localized to \u03b35\u03b2'2a MBON dendrites relative to \u03b31pedc>\u03b1/\u03b2 MBON dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "More nAchR\u03b15 (unpaired t-test: p=0.004, t = 3.368, df = 15) and nAchR\u03b16 (unpaired t-test: p=0.046, t = 2.274, df = 10) mRNAs localized to \u03b35\u03b2'2a MBON dendrites relative to \u03b31pedc>\u03b1/\u03b2 MBON dendrites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "4021df9e-c3f5-4e83-a845-d1f82c952523",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C70",
+      "claim": "More CaMKII transcripts were present within \u03b35\u03b2'2a MBON somata relative to \u03b31pedc>\u03b1/\u03b2 MBON somata.",
+      "claim_type": "EXPLICIT",
+      "source": "More CaMKII transcripts were present within \u03b35\u03b2'2a MBON somata relative to \u03b31pedc>\u03b1/\u03b2 MBON somata (unpaired t-test: p=0.0061, t = 3.103, df = 18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "f600aa95-9cca-4838-b66a-8e0104945031",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C71",
+      "claim": "More Ten-m transcripts were detected in \u03b31pedc>\u03b1/\u03b2 MBON somata relative to \u03b35\u03b2'2a MBON somata.",
+      "claim_type": "EXPLICIT",
+      "source": "More Ten-m (Mann\u2013Whitney test: p=0.0093, Mann\u2013Whitney U = 120) and nAchR\u03b11 (unpaired t-test: p=0.0359, t = 2.250, df = 20) transcripts were detected in \u03b31pedc>\u03b1/\u03b2 MBON somata relative to \u03b35\u03b2'2a MBON somata.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "d57aaa8f-04dc-4ebb-9bc7-7034ab19a6dd",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C72",
+      "claim": "More nAchR\u03b11 transcripts were detected in \u03b31pedc>\u03b1/\u03b2 MBON somata relative to \u03b35\u03b2'2a MBON somata.",
+      "claim_type": "EXPLICIT",
+      "source": "More Ten-m (Mann\u2013Whitney test: p=0.0093, Mann\u2013Whitney U = 120) and nAchR\u03b11 (unpaired t-test: p=0.0359, t = 2.250, df = 20) transcripts were detected in \u03b31pedc>\u03b1/\u03b2 MBON somata relative to \u03b35\u03b2'2a MBON somata.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "6e964657-1083-45cb-952e-4d78defe32f8",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C73",
+      "claim": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites increase 10 min after odor\u2013shock pairing, relative to untrained control.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites increase 10 min after odor\u2013shock pairing, relative to control groups (one-way ANOVA: untrained-10 min p=0.001; odor only-10 min p=0.016; shock only-10 min p=0.002)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "7e46f0f2-4445-4d9e-b89e-0dd0602a3db9",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C74",
+      "claim": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites increase 10 min after odor\u2013shock pairing, relative to odor only control.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites increase 10 min after odor\u2013shock pairing, relative to control groups (one-way ANOVA: untrained-10 min p=0.001; odor only-10 min p=0.016; shock only-10 min p=0.002)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "6c5689c2-6467-4344-8c84-df95c3386587",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C75",
+      "claim": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites increase 10 min after odor\u2013shock pairing, relative to shock only control.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites increase 10 min after odor\u2013shock pairing, relative to control groups (one-way ANOVA: untrained-10 min p=0.001; odor only-10 min p=0.016; shock only-10 min p=0.002)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "d4d5eb47-5bf7-4f03-81bc-59ff99b4fce0",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C76",
+      "claim": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON dendrites decrease to baseline by 2 hr after training compared to 10 min post-training.",
+      "claim_type": "EXPLICIT",
+      "source": "and decrease to baseline by 2 hr (one-way ANOVA: 10 min-2 h p<0.001; 1\u20132 h p=0.004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "92d23271-3c46-4f09-ac51-2f7418540d42",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C77",
+      "claim": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON somata increase 1 hr after odor\u2013shock pairing, relative to untrained.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON somata increase 1 hr after odor\u2013shock pairing, relative to untrained (one-way ANOVA: p=0.001), odor only (one-way ANOVA: p=0.002), and 10 min post training (one-way ANOVA: p=0.025).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "8004f83f-29ff-4f81-bd91-e8a4d648a73a",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C78",
+      "claim": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON somata increase 1 hr after odor\u2013shock pairing, relative to odor only.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON somata increase 1 hr after odor\u2013shock pairing, relative to untrained (one-way ANOVA: p=0.001), odor only (one-way ANOVA: p=0.002), and 10 min post training (one-way ANOVA: p=0.025).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "e01ccbac-c5e4-4c95-90f4-6732f6d807ff",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C79",
+      "claim": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON somata increase 1 hr after odor\u2013shock pairing, relative to 10 min post training.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII::YFP mRNA numbers in \u03b35\u03b2'2a MBON somata increase 1 hr after odor\u2013shock pairing, relative to untrained (one-way ANOVA: p=0.001), odor only (one-way ANOVA: p=0.002), and 10 min post training (one-way ANOVA: p=0.025).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "49e84adb-311d-4ca8-b32e-5652915ba7f8",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C80",
+      "claim": "The proportion of transcriptionally active \u03b35\u03b2'2a MBON somata is unchanged across treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of transcriptionally active \u03b35\u03b2'2a MBON somata is unchanged (X2=2.064, df = 5, p=0.840).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "10d454a4-5356-4019-9e7c-ccc28003f752",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C81",
+      "claim": "CaMKII mRNA abundance in \u03b35\u03b2'2a MBON dendrites increased 10 min after odor\u2013shock pairing relative to the odor only control in the unpaired experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII mRNA abundance in \u03b35\u03b2'2a mushroom body output neuron (MBON) dendrites increased 10 min after odor\u2013shock pairing relative to the odor only, shock only, and unpaired controls (one-way ANOVA: trained-odor only p=0.0249; trained-shock only p=0.0293; trained-unpaired p=0.0463).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "5468dce6-ecff-413c-afcd-97a06183a7b6",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C82",
+      "claim": "CaMKII mRNA abundance in \u03b35\u03b2'2a MBON dendrites increased 10 min after odor\u2013shock pairing relative to the shock only control in the unpaired experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII mRNA abundance in \u03b35\u03b2'2a mushroom body output neuron (MBON) dendrites increased 10 min after odor\u2013shock pairing relative to the odor only, shock only, and unpaired controls (one-way ANOVA: trained-odor only p=0.0249; trained-shock only p=0.0293; trained-unpaired p=0.0463).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "69ee631e-a83b-40b7-931d-7988a168a8eb",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C83",
+      "claim": "CaMKII mRNA abundance in \u03b35\u03b2'2a MBON dendrites increased 10 min after odor\u2013shock pairing relative to the unpaired control in the unpaired experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII mRNA abundance in \u03b35\u03b2'2a mushroom body output neuron (MBON) dendrites increased 10 min after odor\u2013shock pairing relative to the odor only, shock only, and unpaired controls (one-way ANOVA: trained-odor only p=0.0249; trained-shock only p=0.0293; trained-unpaired p=0.0463).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "d7c698ad-e14b-44e4-861a-1c176f2af660",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C84",
+      "claim": "The CaMKII::YFP allele is heterozygous in flies also expressing myr::SNAP in MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CaMKII::YFP allele is heterozygous in flies also expressing myr::SNAP in MBONs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genetic background of the experimental flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "723e588c-2a6a-4059-a583-c13a0c2eced8",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C85",
+      "claim": "Transcription foci are readily distinguished as the brightest puncta in the soma/nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription foci are readily distinguished as the brightest puncta in the soma/nucleus (red data points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "5f84872c-6d34-42d2-9c2d-93bba1656738",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "claim_id": "C86",
+      "claim": "Only one transcription focus can be visualized per cell since the CaMKII::YFP allele is heterozygous.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that only one transcription focus can be visualized per cell since the CaMKII::YFP allele is heterozygous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the heterozygous nature of the allele.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "64e3d865-5701-4841-99b6-070ad9d4d91e",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a custom smFISH image analysis pipeline for Drosophila brains that enables single-molecule mRNA detection with a false discovery rate of 0.05. This methodology combines smFISH with neuron-specific co-labeling and chromatic alignment correction to quantify mRNA localization in 3D neuronal volumes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 establish the smFISH technique and its application to Drosophila brains (supported by citations). Claims C63-C65 describe the custom analysis pipeline with specific performance metrics (false discovery rate 0.05). The methodology is well-documented with appropriate technical details and validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "379ff2ee-539a-4626-b8bb-9ed1fe008cfe",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CaMKII and nAChR\u03b11 mRNAs were detected in the mushroom body calyx at single-molecule resolution, with CaMKII being significantly more abundant (56\u00b15 vs 33\u00b12 puncta, p=0.0003). Puncta characteristics (diffraction-limited size, unimodal intensity distribution) confirm single-molecule detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 provide quantitative data with appropriate statistical analysis (C66) and technical validation of single-molecule resolution through size and intensity distribution analysis. The measurements are consistent with expected smFISH characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "3f97ea41-506c-4b42-ab4f-deb8472624a4",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CaMKII mRNA (32\u00b12 molecules) was detected in \u03b35\u03b2'2a MBON dendrites, while nAChR\u03b11 was absent, demonstrating cell-specific mRNA localization patterns within the mushroom body.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 provide quantitative detection data for specific MBON subtypes. Claim C13 appropriately interprets this differential localization as evidence of cell specificity. The data are supported by figures and consistent with the methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "ab0d8e5f-e7c6-423c-a608-c8abbb399df1",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "YFP-tagged smFISH probes were validated for specificity, detecting half the expected CaMKII mRNA in heterozygous flies with a false discovery rate of 14%, confirming that YFP insertion does not impede mRNA localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 provide appropriate validation controls comparing YFP-positive and YFP-negative samples with quantitative false discovery rate estimation. Claim C17's inference about YFP not impeding localization is supported by the half-detection in heterozygous flies matching expectations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "e0921a2f-331a-4d34-853e-d19bf96fb2fb",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Different mRNAs show distinct cell-specific localization patterns in MBON dendrites: CaMKII::YFP is equally abundant in \u03b35\u03b2'2a and \u03b31pedc>\u03b1/\u03b2 MBONs, while PKA-R2 is more abundant in \u03b35\u03b2'2a (p=0.004). Dendritic localization patterns do not simply reflect somatic transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 present comparative quantitative data with appropriate statistical analysis (C67). The observation that dendritic and somatic mRNA levels are uncorrelated supports selective localization mechanisms. Data are well-supported by figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "88c20662-e4d1-4957-b290-66ea1a37e1df",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ten-m mRNA was not detected in \u03b35\u03b2'2a or \u03b31pedc>\u03b1/\u03b2 MBON dendrites despite being present in neighboring neuropil and somata, supporting selective dendritic localization of CaMKII and PKA-R2 mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 provide negative control data showing Ten-m is present in the tissue but excluded from MBON dendrites. Claim C23's inference about selective localization is appropriately supported by the differential patterns observed across multiple mRNAs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "d6ddcedb-3b11-4eef-b624-14594912f296",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "nAChR\u03b15 and nAChR\u03b16 mRNAs were detected in MBON dendrites with cell-specific abundance (both more abundant in \u03b35\u03b2'2a, p=0.004 and p=0.046 respectively), while somatic levels were equivalent between cell types, indicating selective dendritic localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 provide quantitative data with statistical analysis (C68-C69) showing differential dendritic localization despite equivalent somatic levels. This pattern supports selective trafficking mechanisms and is consistent with the overall findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dendritic mRNA abundance correlates with dendritic volume and synapse number for some mRNAs (nAChR\u03b15, nAChR\u03b16, PKA-R2) but not CaMKII, indicating that mRNA localization mechanisms are more complex than simple scaling with dendritic size or synapse number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 provide structural measurements from the hemibrain dataset. Claims C33-C35 appropriately analyze correlations and note the exception for CaMKII. The inference about complexity is well-supported by the mixed correlation patterns observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Aversive olfactory learning produces a transient, pairing-specific increase in CaMKII mRNA in \u03b35\u03b2'2a MBON dendrites at 10 min post-training (p<0.05 vs all controls including unpaired), returning to baseline by 1-2 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C73-C76 provide the main training experiment data with appropriate statistical comparisons. Claims C81-C83 confirm pairing-specificity with an unpaired control. Multiple control conditions (untrained, odor-only, shock-only, unpaired) strengthen the conclusion that coincident pairing is required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "2931ba26-d845-42df-9dfd-c3051f98c186",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CaMKII mRNA in \u03b35\u03b2'2a MBON somata shows a different temporal dynamic than dendrites, peaking at 1 hr post-training (p<0.05 vs untrained and odor-only). The proportion of transcriptionally active nuclei and transcription focus brightness did not change, suggesting the somatic increase is not due to increased transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C77-C80 provide comprehensive analysis of somatic compartment with appropriate statistical tests. The inference in C41 about transcription not driving the somatic increase is appropriately cautious and supported by the transcription focus data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "bed903f3-0e8c-46bd-b3be-65ca1ca096a6",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The increased CaMKII mRNA abundance in dendrites after training likely results from altered trafficking rather than changes in individual mRNA molecules, as spot brightness remained constant across treatments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 provides data showing constant spot brightness. Claim C44's inference about altered trafficking is reasonable given that brightness changes would indicate altered probe accessibility or mRNA aggregation. The conclusion is appropriately stated as likely rather than definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "e80641c3-a8b2-485d-8eb6-d721d0b0b4cd",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CaMKII mRNA abundance in \u03b31pedc>\u03b1/\u03b2 MBONs did not change after learning at any timepoint, demonstrating cell-type specificity of the learning-induced mRNA response to the \u03b35\u03b2'2a MBONs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 provides negative control data for a different MBON type. Claim C46's inference about specificity is well-supported by the differential response between MBON types. This control strengthens the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "a22527bb-8b0a-4cd0-ba61-a89356772367",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "YFP fluorescence intensity analysis did not detect significant changes in CaMKII::YFP protein levels in MBON dendrites across training conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 reports negative results from protein fluorescence analysis. The authors appropriately note in the text that single-molecule sensitivity may be required to detect protein changes, and that isoform-specific changes could occur without overall abundance changes. This is an appropriate null result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    },
+    {
+      "id": "48c3be9c-a409-43d1-bc49-4081b48e6c30",
+      "content_id": "2752afe6-5dc6-444d-b4c4-adb1703d56a5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that the learning-induced CaMKII mRNA increase in \u03b35\u03b2'2a MBONs may result from network-level activity potentiation and could contribute to later memory formation, but acknowledge these hypotheses require future investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53 and C55 are explicitly speculative (\"speculate,\" \"it will be interesting to investigate\"). While the speculation is reasonable given prior work on MBON circuits and CaMKII function, these remain untested hypotheses requiring additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:59.266586Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8665dc53-64c9-428e-8e26-8b37db0e4215",
+      "result_id": "64e3d865-5701-4841-99b6-070ad9d4d91e"
+    },
+    {
+      "claim_id": "25bff9d7-1024-4216-b291-465b6845d75c",
+      "result_id": "64e3d865-5701-4841-99b6-070ad9d4d91e"
+    },
+    {
+      "claim_id": "32efbd5c-b756-4d48-88ea-a877e3a9b7c2",
+      "result_id": "64e3d865-5701-4841-99b6-070ad9d4d91e"
+    },
+    {
+      "claim_id": "0bdf1120-38d2-43eb-af32-c564c3482208",
+      "result_id": "64e3d865-5701-4841-99b6-070ad9d4d91e"
+    },
+    {
+      "claim_id": "67a645af-2847-4918-aed4-80882d40899e",
+      "result_id": "64e3d865-5701-4841-99b6-070ad9d4d91e"
+    },
+    {
+      "claim_id": "8cf8ec7f-fc77-4e5e-b435-393ebe44fc1f",
+      "result_id": "379ff2ee-539a-4626-b8bb-9ed1fe008cfe"
+    },
+    {
+      "claim_id": "2eb87bd7-0d1d-4816-bf4d-f2ba142fa15c",
+      "result_id": "379ff2ee-539a-4626-b8bb-9ed1fe008cfe"
+    },
+    {
+      "claim_id": "2ff478fb-6e36-4fa6-90e1-d84d8fb9c272",
+      "result_id": "379ff2ee-539a-4626-b8bb-9ed1fe008cfe"
+    },
+    {
+      "claim_id": "3e11fcbd-0504-41d8-a32e-2ce6bc606e77",
+      "result_id": "379ff2ee-539a-4626-b8bb-9ed1fe008cfe"
+    },
+    {
+      "claim_id": "2feb18ea-6df3-46bf-aeba-5ad030d8f2ea",
+      "result_id": "3f97ea41-506c-4b42-ab4f-deb8472624a4"
+    },
+    {
+      "claim_id": "0e2db280-94d5-47e8-a142-8e8db1472f9d",
+      "result_id": "3f97ea41-506c-4b42-ab4f-deb8472624a4"
+    },
+    {
+      "claim_id": "c6ef0247-f0eb-4975-939a-242b2da99eb1",
+      "result_id": "3f97ea41-506c-4b42-ab4f-deb8472624a4"
+    },
+    {
+      "claim_id": "1f176fc4-1e64-424d-aedb-9e5b37ddd594",
+      "result_id": "ab0d8e5f-e7c6-423c-a608-c8abbb399df1"
+    },
+    {
+      "claim_id": "9222c480-de4d-430e-9005-da690c83289c",
+      "result_id": "ab0d8e5f-e7c6-423c-a608-c8abbb399df1"
+    },
+    {
+      "claim_id": "bce6698e-f5fd-4d5b-9504-33b2b4108835",
+      "result_id": "ab0d8e5f-e7c6-423c-a608-c8abbb399df1"
+    },
+    {
+      "claim_id": "08687067-69a6-41fa-92f0-2278664d9aa0",
+      "result_id": "ab0d8e5f-e7c6-423c-a608-c8abbb399df1"
+    },
+    {
+      "claim_id": "ac3f9bf5-486f-42c4-ac87-aefa3fee821f",
+      "result_id": "e0921a2f-331a-4d34-853e-d19bf96fb2fb"
+    },
+    {
+      "claim_id": "b826cc07-24e6-462f-b561-1ba66269ee30",
+      "result_id": "e0921a2f-331a-4d34-853e-d19bf96fb2fb"
+    },
+    {
+      "claim_id": "b5e5f300-8051-48e8-8995-32c9a9761e92",
+      "result_id": "e0921a2f-331a-4d34-853e-d19bf96fb2fb"
+    },
+    {
+      "claim_id": "c1fd8a9f-95d3-4d0d-8301-7a7156f51d6c",
+      "result_id": "e0921a2f-331a-4d34-853e-d19bf96fb2fb"
+    },
+    {
+      "claim_id": "0001bc2b-5867-430a-bc12-333393271d9b",
+      "result_id": "88c20662-e4d1-4957-b290-66ea1a37e1df"
+    },
+    {
+      "claim_id": "cd9f661a-0e4c-4f5d-b364-3d5dd9f6e7a8",
+      "result_id": "88c20662-e4d1-4957-b290-66ea1a37e1df"
+    },
+    {
+      "claim_id": "0a7a77dd-887d-4c58-a7cf-14c23bbf8a14",
+      "result_id": "88c20662-e4d1-4957-b290-66ea1a37e1df"
+    },
+    {
+      "claim_id": "66d5b8a6-e204-4e3a-8311-3f3715f452aa",
+      "result_id": "d6ddcedb-3b11-4eef-b624-14594912f296"
+    },
+    {
+      "claim_id": "40c3a70c-5b7a-4e6c-b761-582a6b7ec390",
+      "result_id": "d6ddcedb-3b11-4eef-b624-14594912f296"
+    },
+    {
+      "claim_id": "763c6e4a-4c69-4f46-9afe-5b07449654cf",
+      "result_id": "d6ddcedb-3b11-4eef-b624-14594912f296"
+    },
+    {
+      "claim_id": "afbd2308-bc2a-465c-a1e1-95dbc3b5dbd3",
+      "result_id": "d6ddcedb-3b11-4eef-b624-14594912f296"
+    },
+    {
+      "claim_id": "4d3226fe-f250-49c1-8afa-a65fbbe4923e",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "69369439-3e49-42e9-bef6-6fb4fced9cae",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "e27b2056-1046-455c-af55-b69ac1f16ddf",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "0bceffaf-59f4-4972-b22a-9f70c9ebab67",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "67779b35-40a3-42ab-b8fe-53dbe62daed8",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "8a9e0b7d-c5bf-4d64-8a52-aff03e5c241b",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "8be9079f-3d04-44c8-88b1-c065de13bd39",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "829d220e-5fce-4935-8a5c-4f142b1598c8",
+      "result_id": "31fc6ca0-b4e9-46df-a1fa-4534ff338971"
+    },
+    {
+      "claim_id": "f91c96b6-1575-46a8-b7cd-e87d7ea1b874",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "40b2adaf-8db4-464f-beb8-5a2640dff766",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "87aac576-2732-4c78-82a6-37592ec4d411",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "6e964657-1083-45cb-952e-4d78defe32f8",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "7e46f0f2-4445-4d9e-b89e-0dd0602a3db9",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "6c5689c2-6467-4344-8c84-df95c3386587",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "d4d5eb47-5bf7-4f03-81bc-59ff99b4fce0",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "10d454a4-5356-4019-9e7c-ccc28003f752",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "5468dce6-ecff-413c-afcd-97a06183a7b6",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "69ee631e-a83b-40b7-931d-7988a168a8eb",
+      "result_id": "127d19bc-5a49-4c12-b127-5992b6ebc6e7"
+    },
+    {
+      "claim_id": "ede5fa07-5dbf-4369-8254-2cc00e26dbf9",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "7c8fb9cf-c978-4889-8a20-d3ddc7716bb4",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "94f32f48-edb0-42d7-ae22-ebc32b8bb69d",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "c3529840-8bc4-4174-a15c-8e676c772695",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "92d23271-3c46-4f09-ac51-2f7418540d42",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "8004f83f-29ff-4f81-bd91-e8a4d648a73a",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "e01ccbac-c5e4-4c95-90f4-6732f6d807ff",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "49e84adb-311d-4ca8-b32e-5652915ba7f8",
+      "result_id": "2931ba26-d845-42df-9dfd-c3051f98c186"
+    },
+    {
+      "claim_id": "7f7c02bd-d0c7-461b-83b4-6c362a382974",
+      "result_id": "bed903f3-0e8c-46bd-b3be-65ca1ca096a6"
+    },
+    {
+      "claim_id": "a6d20117-25d4-4397-86b6-e990a6a1badd",
+      "result_id": "bed903f3-0e8c-46bd-b3be-65ca1ca096a6"
+    },
+    {
+      "claim_id": "a39fd6f9-d5de-460d-b216-2cc662375f73",
+      "result_id": "e80641c3-a8b2-485d-8eb6-d721d0b0b4cd"
+    },
+    {
+      "claim_id": "be998e7d-74ee-4798-99e1-d799cba9dc7a",
+      "result_id": "e80641c3-a8b2-485d-8eb6-d721d0b0b4cd"
+    },
+    {
+      "claim_id": "99aadc78-db8c-4c52-98bd-b4dec98b20d5",
+      "result_id": "a22527bb-8b0a-4cd0-ba61-a89356772367"
+    },
+    {
+      "claim_id": "93dbae3d-9717-40de-bc76-e3854fda79cc",
+      "result_id": "48c3be9c-a409-43d1-bc49-4081b48e6c30"
+    },
+    {
+      "claim_id": "ec89ed14-97b5-4905-afd4-e89b9042920b",
+      "result_id": "48c3be9c-a409-43d1-bc49-4081b48e6c30"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C18",
+      "C19",
+      "C22",
+      "C32",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The hei-tag (myc-tag + optimized NLS via flexible linker at N-terminus, plus C-terminal oNLS) dramatically enhances Cas9 targeting efficiency, resulting in increased bi-allelic editing and reduced allele variance, indicating early developmental activity. In medaka, heiCas9 showed 70% increase in bi-allelic targeting vs. zCas9 (C22), with embryos essentially losing pigmentation (C55), suggesting early action at cleavage stages (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C5, C6, C18, C19, C22, C32, C53-C56 collectively demonstrate the hei-tag's enhancement of Cas9 activity through quantitative phenotypic data (Figure 1d) and sequencing results. The specific composition of the hei-tag (C53) and its superiority over permutations (C54) are well-documented. The inference of early developmental activity (C6, C56) is logically supported by reduced allele variance (C5) and increased bi-allelic editing (C4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "heiCas9 demonstrates broad applicability across evolutionarily distant species. In zebrafish, heiCas9 delivered a 17-fold increase in targeting efficiency compared to zCas9 (median 254.6 vs. 14.7, p=2.1e-56), with nearly unpigmented embryos indicating highly efficient early targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C24, C59-C61 are strongly supported by quantitative data from zebrafish experiments (Figure 1g) showing dramatic improvement. The statistical significance (p=2.1e-56) and large effect size (17-fold) provide robust evidence. The phenotypic observations (C59) and inferences about early activity (C61) are consistent with the quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C41",
+      "C40",
+      "C58"
+    ],
+    "result": "heiCas9 mRNA injection achieves editing efficiency fully comparable to RNP (ribonucleoprotein) approaches, which were previously the primary method for achieving early targeting in developing organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C40, C41, C58 are supported by direct comparison data in Figure 1d showing heiCas9 mRNA performance matching RNP injections at various concentrations. The citations (C40, C58) establish the prior state of the field, and the experimental data (C23, C41) demonstrate equivalence with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C62",
+      "C63"
+    ],
+    "result": "In multiplexing experiments at 10-fold reduced Cas9 concentrations targeting four different genomic loci, heiCas9 dramatically outperformed zCas9 with higher targeting efficiency (e.g., OlOca2: 54.59% vs. 3.38%, p=0.026) and reduced allele variance across all loci, indicating early editing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C62, C63 are well-supported by Illumina sequencing data (Figure 2a-b) from >800,000 reads per condition across four loci. The statistical significance is reported for each locus, and the consistent pattern of both increased efficiency and reduced variance strengthens the conclusion. The inference of early editing (C63) logically follows from reduced allele variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C66"
+    ],
+    "result": "In mammalian cell culture (mouse SW10 cells), heiCas9 exhibited the highest genome editing efficiency compared to JDS246-Cas9 and GeneArt CRISPR nuclease, with KO-score efficiencies of 173% and 167% respectively, and increased abundance of a 26 nt deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C66 are supported by TIDE and ICE analysis data (Figure 3) with high R\u00b2 values (>0.9) indicating good fit. The comparison includes appropriate controls (two commercial/published Cas9 variants) and uses complementary analysis methods. The specific observation of increased 26 nt deletion (C66) is documented in Figure 3\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C43",
+      "C44"
+    ],
+    "result": "The hei-tag also enhances base editor activity: heiBE4-Gam resulted in more pronounced pigmentation loss than BE4-Gam for all three sgRNAs tested, with an overall ~30% increase in C-to-T transition rates and 1.7-fold increase in the critical C997T STOP codon transition (68% vs. 41%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C43-C44 are supported by quantitative phenotypic data (Figure 4a) with statistical significance and Sanger sequencing quantification (Figure 4\u2014figure supplement 1) from three biological replicates. The specific increase in the STOP codon transition (C31) is particularly well-documented. This demonstrates the hei-tag's applicability beyond standard Cas9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The optimized NLS in the hei-tag explains earlier and better performance in developing organisms, but the impact of specific domain topology remains elusive. A permutation screen showed that identical peptides in different arrangements conveyed different editing efficiencies, possibly due to isoelectric points and charge distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 appropriately distinguish between what is understood (oNLS function, C33) and what remains unclear (topology effects, C34). The permutation screen data (C36, Figure 1\u2014figure supplement 1) supports the topology claim. The speculation about charge effects (C35) is appropriately cited and presented as speculation rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "heiCas9 produces high abundance of identical mutant alleles (useful for hypothesis testing and homology-directed repair), while non-hei-tagged Cas9 variants are better suited for screening approaches requiring diverse alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are logical inferences from the demonstrated reduced allele variance with heiCas9 (C26) and are appropriately contextualized with a citation for homology-directed repair applications (C37). This represents a practical interpretation of the results for different experimental applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The boosting activity of the hei-tag is neither limited by species nor approach, making it a powerful tool to upgrade any Cas-based genome editing approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by the cumulative evidence from multiple species (medaka, zebrafish, mouse cells) and multiple applications (Cas9, base editor). The broad conclusion is justified by the consistent enhancement across diverse experimental contexts, though the claim of applicability to \"any\" approach (C46) is somewhat overstated but appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The high efficiency of heiCas9 allows efficient editing at low concentrations with potential to reduce off-target effects, though whether this is compensated by efficient nuclear localization needs future whole-genome sequencing assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 appropriately identify a potential benefit (reduced off-targets at lower concentrations) but acknowledge this is speculative and requires future validation. The multiplexing data at 10-fold reduced concentrations (C25-C26) supports the efficiency claim, but off-target analysis was not performed. This represents responsible speculation about implications rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background context: Cas9 requires nuclear localization via NLS fusion, commonly uses SV40 or Xenopus nucleoplasmin NLS, and peptide tags (FLAG, myc) are added for detection/purification. NLS activity is developmentally controlled, with optimized NLS (oNLS) active immediately after fertilization while SV40 NLS acts later (~1000-cell stage in fish).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C17 establish field knowledge and are appropriately supported by citations. These provide essential context for understanding why the hei-tag design (using oNLS) would be advantageous. The developmental timing of NLS activity (C14-C16) is particularly relevant for interpreting the early activity results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C67"
+    ],
+    "result": "Methodological context: The oca2 gene requires bi-allelic inactivation for pigmentation loss, providing a quantitative phenotypic readout. Medaka and zebrafish span 200 million years of evolution. Timing of genome editing impacts allele variance in developing organisms. zCas9 showed patchy unpigmented domains indicating late-stage bi-allelic targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C50-C52, C57, C67 describe the experimental system and baseline observations. These are well-supported by citations (C20, C21, C50) and data (C51). The inference about late-stage targeting from patchy phenotype (C52) is reasonable. These claims establish the validity of the assay system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C42",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Summary and field context: heiCas9 increased bi-allelic targeting with decreased allele variance indicating early developmental activity. mRNA-based approaches offer advantages over protein (easy generation, cost-effective, reproducible). Base editing is increasingly applied with therapeutic potential, and base editors have undergone iterative optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C42, C47-C49 provide summary statements and field context appropriately supported by data (C39) or citations (C47-C49). The advantages of mRNA (C42) represent established knowledge. These claims help contextualize the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Ethical and quality control statements: Experiments followed German animal welfare law with local approval. Mouse SW10 cells were regularly tested negative for mycoplasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are standard methodological statements about ethical compliance and quality control. These are appropriately documented with permit numbers (C68) and represent good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The hei-tag allows instant upgrade of existing systems and establishes novel tools applicable at mRNA level. CRISPR/Cas9 has revolutionized genome editing across all phyla in the last decade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 represent high-level summary statements. C8 is supported by the demonstration across multiple Cas9 variants and base editors. C9 provides general field context with appropriate citation. These frame the significance of the work.",
+    "result_type": "MINOR"
+  }
+]

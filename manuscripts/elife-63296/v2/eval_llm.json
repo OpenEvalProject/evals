@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C41"
+    ],
+    "result": "The manuscript establishes the context of allergic asthma pathophysiology, describing how allergen inhalation leads to peribronchial inflammation involving Th2 cell activation, and notes that the conducting airways are the first site of exposure to inhaled substances. The authors identify gaps in understanding regarding which APCs survey the conducting airways and how antigen capture couples to Th2 cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C10-C18, C41) provide well-established background knowledge about asthma pathophysiology, airway anatomy, and the current state of the field. They are supported by appropriate citations to prior literature and represent accepted scientific understanding. The identification of knowledge gaps (C13, C14) appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In na\u00efve mice, myeloid APCs (both CX3CR1-GFP+ IMs and CD11c-YFP+ DCs) are positioned underneath the bronchial airway epithelium and are enriched in collagen-rich regions near airway branchpoints. These regions correspond to sites where inflammatory foci form during allergic airway disease, suggesting a role for these cells in initiating local inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C55 are well-supported by two-photon microscopy data showing the spatial distribution of IMs and DCs in na\u00efve mice (Figures 1E-I, Videos 2-3). Quantification demonstrates significantly higher density of CX3CR1-GFP+ cells at airways versus alveoli (C52, Figure 1G). The co-localization with inflammatory sites in disease models (C43, C47, C55) provides correlative evidence for functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CX3CR1-GFP+ IMs near bronchial airways efficiently capture soluble antigens (OVA, HDM) from the airway lumen, taking up significantly more antigen than CD11c-YFP+ DCs. By microscopy, DCs showed minimal visible antigen uptake, while IMs captured large amounts. Flow cytometry confirmed over 3-fold higher OVA intensity in IMs versus DCs, with the majority of OVAbright MHC-II+ cells being CX3CR1-GFPbright.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33, C56-C63, C73-C77 are strongly supported by converging evidence from two-photon microscopy (Figures 2A-F) and flow cytometry (Figure 2\u2014supplement 3). The quantitative analysis demonstrates statistically significant differences in antigen uptake between IMs and DCs. Multiple antigens (OVA, HDM, dextrans) were tested, strengthening the conclusion. The 1-2 hour timepoint minimizes concerns about cell migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The antigen-capturing CX3CR1-GFPbright cells near bronchial airways are CD11c+ CD64+ MHC-IIhi interstitial macrophages, distinct from DCs. These cells are designated as Bronchus-Associated Macrophages (BAMs) based on their anatomical localization underneath the bronchial epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C78-C92 are well-supported by flow cytometry (Figure 3A-B) and microscopy (Figure 3C-E) showing that CX3CR1-GFPbright OVAbright cells express macrophage markers (CD64, MerTK) and lack DC markers (CD24). The presence in na\u00efve mice and high MHC-II expression argue against monocyte origin (C79). The nomenclature proposal (C3, C92) is reasonable based on anatomical localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "BAMs are phenotypically distinct from both DCs and alveolar macrophages (AMs). BAMs express CD11b and MerTK uniformly, have minimal Zbtb46-GFP expression (10-fold lower than DCs), low CD169 expression, and lack Siglec-F, distinguishing them from both DCs and AMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by flow cytometry data (Figure 3\u2014supplement 2) showing differential marker expression. The low Zbtb46-GFP expression (C94) is particularly important for distinguishing BAMs from DCs, as Zbtb46 is a DC-specific transcription factor. The lack of Siglec-F distinguishes BAMs from AMs. These data establish BAMs as a distinct cell population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Single-cell RNA sequencing analysis reveals that BAMs constitute the majority of a major IM cluster expressing high Cx3cr1 and Mafb, with comparable MHC-II expression to DCs. BAMs express genes encoding chemokines (Cxcl13, Ccl7, Ccl2), complement components (C1q genes, C3ar1), Apoe, and Mmp12. Transcriptional profiling demonstrates that BAMs, AMs, and DCs are functionally distinct cell subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 are supported by scRNAseq data (Figure 4). The identification of distinct clusters based on marker gene expression (Cx3cr1, Mafb for IMs; Flt3, Zbtb46 for DCs) is appropriate. The differential gene expression analysis (C109, Figure 4D) identifies BAM-specific genes. However, the study would benefit from validation of key differentially expressed genes by other methods (e.g., qPCR, protein expression).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "BAMs express variable intermediate amounts of CD206, as demonstrated by flow cytometry showing a Gaussian distribution of CD206 expression and microscopy showing that CX3CR1-GFPbright MHC-IIhi cells near airways are CD206+ with variable expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by flow cytometry (Figure 3\u2014supplement 2E) and microscopy (Figure 5A-B) data. The variable CD206 expression is consistent with scRNAseq data showing Mrc1 (CD206) expression across IMs (C105). This addresses potential confusion with prior studies that used CD206 to define IM subsets, clarifying that BAMs are CD206+ but with heterogeneous expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C125"
+    ],
+    "result": "Nerves are present near bronchial airways and airway branchpoints where BAMs are abundant. A subset of BAMs are in direct contact with nerves, while others are not, suggesting BAMs may interact with nerves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117, C125 are supported by microscopy data (Figure 5C-D) using L1CAM antibody staining to visualize nerves. The observation that some but not all BAMs contact nerves is clearly documented. However, the functional significance of these contacts (C125) remains speculative and would require additional experiments to demonstrate actual interactions or functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "BAMs frequently contact DCs, with punctate CD169 staining on BAMs often polarized at the BAM-DC interface. Time-lapse microscopy reveals extensive dynamic interactions between BAMs and DCs. This suggests the possibility that BAMs may transfer antigen or peptide-MHC II complexes to DCs, analogous to CD169-mediated antigen transfer in spleen and lymph nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C34, C122-C123 regarding BAM-DC contacts are well-supported by static (Figures 2D, F, 3E) and time-lapse (Video 4) microscopy. The CD169 localization at the interface (C120, Figure 5E) is intriguing. However, the claim of antigen transfer (C9, C124) is speculative. While the citation to prior work (C121) establishes precedent, direct evidence of antigen transfer between BAMs and DCs is lacking. This would require experiments such as photoconversion, FRET, or functional assays demonstrating transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C135",
+      "C136"
+    ],
+    "result": "BAMs preferentially capture soluble antigens of various sizes (10-240 kDa), with uptake efficiency inversely related to antigen size. Approximately 80% of BAMs captured OVA, compared to ~50% of cDC2s and <5% of monocytes. Both BAMs and DCs showed minimal capture of particulate antigens (beads) at the airway interstitium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131, C135-C136 are supported by flow cytometry (Figure 6A, E) and microscopy (Figure 6B-D, F) data. The size-dependent uptake (C130-C131) is demonstrated with dextrans ranging from 10 kDa to 2 MDa. The minimal bead uptake by BAMs and DCs at airways (C132, C136) contrasts with uptake by AMs at alveoli (C133-C134), suggesting anatomical and functional specialization. Controls for uptake during digestion (Figure 6E) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "BAMs process and present antigen on MHC-II, as demonstrated by Y-Ae antibody staining detecting MHC-II:E\u03b1 peptide complexes. BAMs showed brighter Y-Ae staining than cDC2s, consistent with their superior antigen uptake. AMs showed negligible Y-Ae staining, confirming they are not relevant APCs for CD4 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C137-C141 are supported by flow cytometry data (Figure 7A) using the Y-Ae antibody, which specifically detects processed E\u03b1 peptide presented on I-Ab MHC-II. The 17-18 hour timepoint allows for antigen processing. The brighter staining on BAMs versus cDC2s (C139) is consistent with their greater antigen uptake. The negligible staining on AMs (C140-C141) is expected given their low MHC-II expression and high degradative capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "BAMs express high levels of co-stimulatory molecules CD80 and CD86, and activate T cells in vitro. BAMs induced robust proliferation of na\u00efve OT-II T cells (though less efficiently than cDC2s) and equivalently induced IL-13 production in Th2-polarized effector OT-II cells. These findings indicate BAMs possess the machinery for T cell activation and may equivalently activate effector T cells compared to DCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C142-C147 are supported by flow cytometry (Figure 7B) and in vitro co-culture experiments (Figure 7C-D). The higher CD80/CD86 expression on BAMs versus cDC2s (C142) is statistically significant. The proliferation assay (C143-C144) appropriately shows BAMs are less efficient than DCs for na\u00efve T cell activation, as expected. The equivalent IL-13 induction in effector T cells (C145) is important, suggesting BAMs may be particularly relevant for effector/memory T cell responses. However, in vitro assays may not fully recapitulate in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "In an asthma model, BAMs engage in sustained interactions with effector OT-II T cells recruited to the airways after allergen challenge. These interactions are comparable to antigen-specific T cell-DC interactions in lymph nodes. Some T cells also interact with DCs near airways, suggesting both BAMs and DCs can serve as APCs for local T cell activation in peribronchial regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C148-C151 are supported by time-lapse microscopy data (Figure 7E-G, Videos 5-6) showing sustained BAM-T cell interactions. The quantification of interaction times (Figure 7G) demonstrates statistically significant durations. The comparison to lymph node T cell-DC interactions (C149) is appropriate based on the cited literature. The observation of T cell-DC interactions (C150) is mentioned but not shown. The conclusion that both cell types can activate T cells locally (C151) is reasonable but would benefit from functional validation (e.g., cytokine production, proliferation in situ).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "BAMs and DCs exhibit distinct motility patterns. BAMs extend and probe with dendrites but show minimal cell body displacement, while DCs are highly migratory, moving their entire cell bodies and traversing greater distances than BAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are supported by time-lapse microscopy data (Figure 8A-D, Video 7) with quantification of displacement, track speed, and track length. The statistically significant differences in all motility parameters establish distinct behavioral patterns. This differential motility is consistent with the proposed functional division where BAMs remain resident while DCs migrate to lymph nodes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C165",
+      "C166"
+    ],
+    "result": "After inflammatory stimuli, DCs upregulate CCR7 expression and migrate to draining lymph nodes, whereas BAMs do not upregulate CCR7 and remain lung resident. DCs, but not BAMs, were observed migrating within lung lymphatics. This differential migratory behavior suggests DCs prime T cells in lymph nodes while BAMs mediate local airway immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38, C155-C159, C165-C166 are supported by multiple lines of evidence: CCR7 expression by flow cytometry (Figure 8E-G), lymphatic migration by microscopy (Figure 8H, Videos 8-9), and lymph node analysis (Figure 8I-J). The dose-dependent CCR7 upregulation on DCs but not BAMs (C155) is clear. The observation that DCs migrate in lymphatics while BAMs do not (C159) is direct evidence. However, the functional conclusions (C158, C166) about lymph node priming by DCs are inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "After HDM and PE administration, CD64+ MHC-II+ Ly6C+ cells were recruited to the draining lymph node but did not carry PE, whereas DCs were PE+. The high Ly6C expression suggests these cells were monocyte-derived rather than BAMs that had migrated from the lung.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 are supported by flow cytometry data (Figure 8I-J) showing PE+ DCs but PE- CD64+ MHC-II+ Ly6C+ cells in lymph nodes. The use of PE (240 kDa) is appropriate as it cannot enter lymph nodes via conduits. The inference that high Ly6C+ cells are monocyte-derived (C164) is reasonable based on known monocyte biology and comparison to BAM Ly6C expression (Figure 8\u2014supplement 1). This provides additional evidence that BAMs do not migrate to lymph nodes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors propose a model where BAMs act as tissue-resident sentinel APCs that drive local allergic inflammation at the airways, while DCs are more critical for priming T cell responses in lymph nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C39-C40 represent the authors' proposed model integrating their findings. The model is well-supported by the collective evidence: BAMs efficiently capture antigen (C2, C33), process and present it (C35, C137), activate effector T cells (C5, C148), and remain resident (C38, C165), while DCs migrate to lymph nodes (C7, C159). However, the model is based largely on correlative and in vitro evidence. Direct functional validation (e.g., selective depletion or inhibition of BAMs or DCs in vivo) would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C124"
+    ],
+    "result": "The authors propose that BAMs transfer antigen to DCs based on observed contacts between BAMs and DCs and CD169 localization at the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C124 propose antigen transfer from BAMs to DCs. While the frequent contacts (C6, C34, C122-C123) and CD169 localization at the interface (C120) are well-documented, and precedent exists for CD169-mediated transfer in other tissues (C121), direct evidence of antigen transfer is lacking. This remains a speculative hypothesis that requires experimental validation through techniques such as photoconversion, FRET, or functional transfer assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript reviews prior literature on lung APCs, noting that most studies focused on DCs, with conflicting results regarding antigen capture by DCs near airways. Recent studies have identified CX3CR1+ interstitial macrophages expressing DC markers like MHC-II and CD11c. The authors also note parallels to intestinal macrophages that capture soluble antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30 provide a literature review establishing the context and rationale for the study. The citations appear appropriate and accurately represent prior work. The authors correctly identify conflicting findings about DC antigen capture (C21-C24) and note the recent identification of IMs expressing DC markers (C29-C30). The parallel to intestinal macrophages (C26-C28) provides useful context. These claims appropriately set up the knowledge gaps the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CX3CR1-GFP+ IMs and CD11c-YFP+ DCs are largely non-overlapping populations with distinct morphologies. IMs have dendritic morphology with lower sphericity and longer axes, while DCs are rounder without long processes. Some cells show dim expression of both reporters, and rare cells are bright for both, but the majority express only one reporter brightly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 are supported by microscopy data (Figure 2D, F, Figure 2\u2014supplement 2) with quantitative morphological analysis (Figure 2G-H). The observation of dim co-expression (C65) and rare double-bright cells (C66) is consistent with known biology of these reporters. The morphological quantification (C70-C71) provides objective support for the visual observations. The conclusion that these are distinct populations (C67, C72) is reasonable, though the rare double-bright cells suggest some plasticity or intermediate states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CD64+ OVAbright cells express surface CD11c protein by antibody staining but are largely CD11c-YFP negative, indicating the CD11c-YFP transgene is more restricted to DCs than the CD11c protein. Monocytes and CX3CR1-GFP+ cDC2s have lower CX3CR1-GFP expression than BAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by flow cytometry data (Figure 3\u2014supplement 1) and are important for interpreting the reporter expression patterns. The observation that CD11c protein is more broadly expressed than CD11c-YFP (C83-C84) is consistent with prior literature (Rodero et al., 2015) and explains why BAMs are CD11c+ by antibody but not YFP-bright. The differential CX3CR1-GFP expression (C85) helps distinguish BAMs from monocytes and DC subsets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In allergic airway disease models, foci of leukocytes including eosinophils are located near airway branchpoints and large blood vessels in collagen-rich regions, likely representing bronchovascular bundles. Dense accumulations of myeloid cells were observed at these sites in both OVA and HDM models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by immunofluorescence (Figure 1A) and two-photon microscopy (Figure 1B-D, Video 1) data. The identification of collagen-rich regions near bifurcating airways (C44) and their likely identity as bronchovascular bundles (C45) is reasonable based on anatomy and the cited literature. The observation of myeloid cell accumulation at these sites in disease models (C47) establishes the relevance of these anatomical locations to inflammation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C55"
+    ],
+    "result": "BAMs are enriched in collagen-rich regions near airway branchpoints where inhaled antigens are likely to deposit, and these regions correspond to sites where inflammatory foci form in allergic airway disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C55 connect the anatomical localization of BAMs to functional significance. The enrichment at branchpoints is supported by microscopy data (Figures 1F, H). The inference that antigens deposit at branchpoints (C4, C32) is based on established airflow dynamics (C16) rather than direct measurement in this study. The correspondence to inflammatory sites (C55) is correlative. While plausible, direct demonstration of antigen deposition at these sites would strengthen these claims.",
+    "result_type": "MAJOR"
+  }
+]

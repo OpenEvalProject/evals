@@ -1,0 +1,2172 @@
+{
+  "submission": {
+    "id": "05d52525-b6d4-46a2-a476-c842eae8bc64",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:12:19.207026Z",
+    "updated_at": "2025-12-03T15:12:19.207026Z"
+  },
+  "content": [
+    {
+      "id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "submission_id": "05d52525-b6d4-46a2-a476-c842eae8bc64",
+      "content_type": "manuscript",
+      "content_text": "# Developmental stage-specific spontaneous activity contributes to callosal axon projections\n\n## Authors\n\n- Yuta Tezuka<sup>1</sup>\n- Kenta M Hagihara<sup>2</sup> ([ORCID: 0000-0003-0064-0852](https://orcid.org/0000-0003-0064-0852))\n- Kenichi Ohki<sup>2</sup>\n- Tomoo Hirano<sup>1</sup> ([ORCID: 0000-0003-3685-5935](https://orcid.org/0000-0003-3685-5935))\n- Yoshiaki Tagawa<sup>1</sup> ([ORCID: 0000-0002-3300-090X](https://orcid.org/0000-0002-3300-090X)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics, Kyoto University Graduate School of Science Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n2. Department of Molecular Physiology, Kyushu University Graduate School of Medical Sciences Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))\n3. Department of Physiology, The University of Tokyo School of Medicine Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n4. International Research Center for Neurointelligence (WPI-IRCN), The University of Tokyo School of Medicine Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n5. Institute for AI and Beyond, The University of Tokyo School of Medicine Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n6. CREST, Japan Science and Technology Agency Saitama Japan ([ROR:00097mb19](https://ror.org/00097mb19))\n7. Department of Physiology, Graduate School of Medical and Dental Sciences, Kagoshima University Kagoshima Japan ([ROR:03ss88z23](https://ror.org/03ss88z23))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe developing neocortex exhibits spontaneous network activity with various synchrony levels, which has been implicated in the formation of cortical circuits. We previously reported that the development of callosal axon projections, one of the major long-range axonal projections in the brain, is activity dependent. However, what sort of activity and when activity is indispensable are not known. Here, using a genetic method to manipulate network activity in a stage-specific manner, we demonstrated that network activity contributes to callosal axon projections in the mouse visual cortex during a \u2018critical period\u2019: restoring neuronal activity during that period resumed the projections, whereas restoration after the period failed. Furthermore, in vivo Ca2+ imaging revealed that the projections could be established even without fully restoring highly synchronous activity. Overall, our findings suggest that spontaneous network activity is selectively required during a critical developmental time window for the formation of long-range axonal projections in the cortex.\n\n## Introduction\n\nNeuronal activity plays a role in the formation of neural circuits in the brain (Katz and Shatz, 1996; Spitzer, 2006; Ackman and Crair, 2014). The roles of sensory-driven and spontaneously generated neuronal activity in circuit formation are well documented in the mammalian visual system (Wong, 1999; Huberman et al., 2008). Retinal ganglion cells (RGCs), output neurons in the retinal circuit, exhibit spontaneously generated, highly correlated neuronal activity (called retinal waves) before photoreceptor cells develop (Galli and Maffei, 1988; Meister et al., 1991; Wong et al., 1993). Such activity is transmitted to the lateral geniculate nucleus and the superior colliculus, where it plays an instructive role in the formation and reorganization of neuronal connections (Penn et al., 1998; Stellwagen and Shatz, 2002; Pfeiffenberger et al., 2005; Chandrasekaran et al., 2005; Hooks and Chen, 2006). The connectivity once formed is further sculpted by sensory-driven neuronal activity after visual inputs are available (Hooks and Chen, 2006).\n\nThe developing cerebral cortex also exhibits robust spontaneous network activity, ranging from highly synchronous to less correlated patterns (Siegel et al., 2012). This is partly generated intracortically and partly originates from retinal waves (Siegel et al., 2012; Gribizis et al., 2019; Smith et al., 2018). In rodents, a highly synchronous pattern of spontaneous neuronal activity emerges during early postnatal periods when cortical neurons still undergo maturation and circuit formation (Garaschuk et al., 2000; All\u00e8ne et al., 2008; Yang et al., 2009; Siegel et al., 2012). Such activity indicates a heterogeneous traveling pattern in the developing cortex (Garaschuk et al., 2000; Ackman et al., 2012; Hagihara et al., 2015). Subsequently, a more desynchronized pattern becomes dominant (Rochefort et al., 2009; Golshani et al., 2009). Based on findings in the visual system and other systems, these patterns of activity have been thought to play important roles in the development of cortical circuits (Khazipov and Luhmann, 2006; Blankenship and Feller, 2010; Winnubst et al., 2015; Hagihara et al., 2015; Nakazawa et al., 2020). However, their role in many aspects of cortical circuit formation remains to be fully elucidated.\n\nThe callosal axon projection, a long-range axonal projection connecting the two cortical hemispheres, is essential for integrating information processed in the hemispheres (Hubel and Wiesel, 1967). It is important for higher cognitive functions and its alterations have been noted in patients with developmental disorders (Paul, 2011). It has been a good model for studying activity-dependent mechanisms of cortical circuit formation (De Le\u00f3n Reyes et al., 2020). Callosal axons derived from layer 2/3 callosal projection neurons in one hemisphere project to the other hemisphere through several successive stages by postnatal day 15 (P15) in mice (Mizuno et al., 2007; Wang et al., 2007; Tagawa and Hirano, 2012). This axonal projection is activity-dependent: several groups, including ours, have previously shown that exogenous expression of Kir2.1 (an inward rectifying potassium channel), a genetic method to reduce neuronal activity (Johns et al., 1999), impairs callosal axon projection (Mizuno et al., 2007; Wang et al., 2007; Su\u00e1rez et al., 2014; Rodr\u00edguez-Tornos et al., 2016). Interestingly, when we expressed Kir2.1 in only a small number of neurons and examined the cell-autonomous effect of activity reduction on their axonal projections, we observed that the effect was less than that when we expressed Kir2.1 in a larger number of neurons (Mizuno et al., 2010). We also found that Kir2.1 expression in a large number of neurons reduced not only the activity of individual neurons (Mizuno et al., 2007) but also spontaneous network activity in the cortex during early postnatal periods (Hagihara et al., 2015). As mentioned above, the pattern of spontaneous cortical network activity changes during the period when callosal axons undergo maturation. These results led us to assume that there might be a specific temporal window in which cortical network activity is indispensable for the formation of long-range axonal projections of callosal neurons.\n\nIn this report, we sought to determine what sort of activity and when activity is indispensable for callosal axon projections. To this end, we used genetic methods to reduce and restore spontaneous network activity in a stage-specific manner in the developing mouse cortex.\n\n## Results\n\n### Callosal axons require neuronal activity during P6-15 for their projection\n\nIn the visual cortex, callosal axons project densely to a narrowly restricted region at the border between the primary and secondary visual cortex, in which they terminate primarily in layer 2/3 and less so in layer 5 (Olavarria and Montero, 1984; Mizuno et al., 2007; Figure 1\u2014figure supplement 1). This region- and lamina-specific projection pattern forms by P15 in the mouse (Mizuno et al., 2007). Our group, as well as others, previously showed that Kir2.1 expression disturbs callosal axon development primarily in the second postnatal week (Tagawa and Hirano, 2012). We also reported that Kir2.1 expression strongly reduced spontaneous cortical network activity at P9-10 and P13-14 (Hagihara et al., 2015). These results suggest that network activity around the second postnatal week is involved in the formation of callosal axon projections. In the current study, we sought to confirm this by conducting \u2018rescue\u2019 experiments, in which we attempted to restore the activity during P6-15 and asked whether such restored activity could recover the axonal projections.\n\nTo control spontaneous network activity in a stage-specific manner during early postnatal periods, we used the Tet-off system to express Kir2.1. In this system, Kir2.1 was expressed without doxycycline (Dox) treatment, and Kir2.1 expression was suppressed in response to Dox treatment (Figure 1A). Using in utero electroporation, we transfected layer 2/3 cortical neurons with two expression vectors (pTRE-Tight2-Kir2.1 and pCAG-tTA2s) for the expression of Kir2.1, together with an RFP expression vector (pCAG-TurboRFP) for labeling callosal axon projections (Figure 1; Mizuno et al., 2007; Hagihara et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left, plasmids designed for temporally controlled expression of Kir2.1. Right, experimental timeline. Kir2.1 is a genetic tool to reduce neuronal activity. Transactivator tTA2s is expressed under the control of the CAG promoter (CAGp). Without doxycycline (Dox), tTA2s binds to the TRETight2 promoter (TRETight2p), and Kir2.1 expression is induced (left). With Dox administration, tTA2s cannot bind to the TRETight2 promoter, and Kir2.1 expression is suppressed (right). pA: polyA signal. (B) Coronal sections through the P15 cerebral cortex show the distribution of neurons expressing fluorescent proteins on the electroporated side and their axonal projections on the other side. Top: \u2018Dox E15-P15\u2019 condition where Dox was administered from E15 to P15; thus, Kir2.1 expression was suppressed throughout development. Middle: \u2018Dox P6-15\u2019 condition where Dox was administered from P6 to P15; thus, Kir2.1 expression was suppressed in the second postnatal week. Bottom: \u2018no Dox\u2019 condition where Kir2.1 is expressed throughout development. Scale bars, 500 \u03bcm. (C) Boxed regions in (B). WM: white matter. Scale bars, 100 \u03bcm. (D) Top, average signal intensity of fluorescently labeled callosal axons in layers 1\u20133. \u2018Dox E15-P15\u2019 group: n=8 sections from eight mice. \u2018Dox P6-15\u2019 group: n=10 sections from 10 mice. \u2018no Dox\u2019 group: n=7 sections from seven mice. **p<0.01 by Tukey\u2013Kramer test. Bottom, average signal intensity of fluorescently labeled callosal axons in the white matter. *p<0.05 by Tukey\u2013Kramer test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, E) Coronal sections through the P15 visual cortex show the distribution of neurons expressing fluorescent proteins on the electroporated side and their axonal projections on the other side. pCAG-TurboRFP was transfected to label callosal axons. n=10 sections from 10 mice. (B, F) TRETight2 promoter (pTRE-Tight2)-Kir2.1, pCAG-tTA2s, and pCAG-TurboRFP were transfected, and doxycycline (Dox) was administered from E15 to P15. Due to the presence of Dox, Kir2.1 expression is suppressed throughout development. n=8 sections from eight mice. (C, G) pCAG-Kir2.1 and pCAG-TurboRFP were transfected. Under the control of the pCAG, Kir2.1 is expressed throughout development. n=7 sections from seven mice. (D, H) pTRE-Tight2-Kir2.1, pCAG-tTA2s, and pCAG-TurboRFP were transfected, and Dox was not administered. Due to the absence of Dox, Kir2.1 is expressed throughout development. n = 7 sections from seven mice. Scale bars in A\u2013D, 500 \u03bcm. Scale bar in H, 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) pCAsal-EGFP, TRETight2 promoter (pTRE-Tight2)-TurboRFP, and CAG promoter (pCAG)-tTA2s were transfected, and doxycycline (Dox) was administered from P6. The blue bars indicate the period of Dox treatment. (B) Top panels show EGFP and TurboRFP signals. Bottom panels show TurboRFP signals. Note the rapid disappearance of TurboRFP signals after Dox administration. In (C), EGFP (top panels) and TurboRFP (bottom panels) signals in layer 2/3 are shown. Scale bars in (B), 100 \u03bcm. Scale bars in (C), 50 \u03bcm. P6, n=3 sections from three mice. P8, n=3 sections from three mice. P10, n=3 sections from three mice. P15, n=2 sections from two mice.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) CAG promoter (pCAG)-TurboRFP, TRETight2 promoter (pTRE-Tight2)-Kir2.1EGFP, and pCAG-tTA2s were transfected. (B) Doxycycline (Dox) was administered from P6. The blue bars indicate the period of Dox treatment. (C) Kir2.1EGFP (Kir-GFP) and TurboRFP (RFP) signals in P6, P10, and P15 cortical sections. Right panels show three representative neurons (in columns) with Kir-GFP and RFP signals (in rows) at each age. At P6 (before Dox treatment), the signals of Kir-GFP (stained with anti-GFP antibody) were primarily observed in the periphery of the soma and along dendrites, implying that Kir-GFP was transported to the cellular membrane. Note that RFP signals were localized in the central part of the cell body. At P10 and P15 (4 days and 9 days after Dox treatment), Kir-GFP signals were not preferentially observed in the periphery of the soma and along dendrites anymore. Low-level signals in the central part of the cell body may suggest low-level expression of Kir-GFP even after Dox treatment. Alternatively, these may reflect the contaminated RFP signals in the acquisition of the GFP channel. (D) Average signal intensity of Kir-GFP (x-axis) and RFP (y-axis) in each cell is displayed at P6, P8, P10, P12, and P15. (E) Each dot represents KirGFP/RFP ratio of a cell at each age. Note that KirGFP/RFP ratio decreases after Dox administration at P6. Scale bar in the left panel of (C), 50 \u03bcm; right panel, 10 \u03bcm. P6, n=10 sections from three mice. P8, n=7 sections from two mice. P10, n=10 sections from three mice. P12, n=10 sections from three mice. P15, n=10 sections from three mice.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A, B) The width of callosal axon innervation zone in layers 2/3 (A) and 5 (B). The width of the zone along the mediolateral axis of the cortex was measured. Although callosal axon innervation zone was present in both layers 2/3 and 5 of doxycycline (Dox) P6-15 mice, the extent was not as much as in Dox E15-P15 mice, suggesting that some aspects of callosal projections might be partially recovered in Dox P6-15 mice. \u2018Dox E15-P15\u2019 group: n=8 sections from eight mice. \u2018Dox P6-15\u2019 group: n=9 sections from nine mice. \u2018no Dox\u2019 group: n=7 sections from seven mice. \u2018RFP\u2019 group: n=7 sections from seven mice. (C) Densitometric line scans of fluorescence intensity across all cortical layers. \u2018Dox E15-P15\u2019 group: n=8 sections from eight mice. \u2018Dox P6-15\u2019 group: n=9 sections from nine mice. \u2018no Dox\u2019 group: n=7 sections from seven mice. \u2018RFP\u2019 group: n=7 sections from seven mice.\n\nTo test the feasibility of the Tet-off system, we divided the electroporated mice into two groups. We reared the first group of mice without Dox treatment throughout development (n=7 mice). Under this condition, we observed that RFP-labeled callosal axon projections were impaired at P15 (Figure 1B, Figure 1\u2014figure supplement 1), a pattern similar to that observed when we expressed both Kir2.1 and a fluorescent protein under the control of the CAG promoter (Mizuno et al., 2007; Figure 1\u2014figure supplement 1). This suggests that Kir2.1 expression using the Tet-off system is as effective as that using the CAG promoter. We then reared the second group with Dox throughout development (from E15 to P15: see Methods: n=8 mice). Under this condition, we observed that RFP-labeled callosal axons projected normally to the contralateral cortex in a region- and lamina-specific manner at P15 (Figure 1B, Figure 1\u2014figure supplement 1). This projection pattern was similar to the pattern observed when we expressed only a fluorescent protein (i.e. normal pattern of callosal projections; Mizuno et al., 2007; Figure 1\u2014figure supplement 1), suggesting that Dox treatment effectively suppressed Kir2.1 expression throughout development.\n\nThe aim of this study was to determine the role of neuronal activity during P6-15. Therefore, we used the same set of plasmids for in utero electroporation and began Dox treatment during the postnatal period. Dox treatment for 4 days was almost enough to suppress gene expression in the Tet-off system (Figure 1\u2014figure supplement 2; Figure 1\u2014figure supplement 3; regarding the apparent low-level expression of Kir2.1EGFP after Dox treatment, please see the legend of Figure 1\u2014figure supplement 3). We started Dox treatment from P6 and continued it until P15 (n=10 mice). Under this condition, we observed that RFP-labeled callosal axons reached the innervation area in the contralateral cortex and ramified in a laminar specific manner at P15 (Figure 1B, C). This projection pattern appeared comparable to the normal pattern of callosal axon projections (Figure 1B, C). Because reaching and ramifying in layer 2/3 is a critical developmental step for the formation of callosal axon projections (Mizuno et al., 2007; Wang et al., 2007; Tagawa and Hirano, 2012), we quantified the strength of RFP signals in layer 2/3. Quantitative analyses suggested that the density of RFP-labeled callosal axons arriving and ramifying in the target cortical layer (see Methods) was comparable between the Dox P6-15 and Dox E15-P15 groups (p=0.96, Tukey\u2013Kramer test; Figure 1D), and that it was greater in the Dox P6-15 group than in the no Dox group (p=9.0 \u00d7 10\u20134, one-way ANOVA; p=2.3 \u00d7 10\u20133, Tukey\u2013Kramer test; Figure 1D). Analyses of the width of callosal axon innervation zone, as well as densitometric line scans across all cortical layers, suggest that some aspects of callosal projections might be partially recovered in Dox P6-15 mice (Figure 1\u2014figure supplement 4). These results suggest that Dox treatment at P6-15, which likely shut off Kir2.1 expression from P8-10 to P15, was effective for the formation of callosal axon projections, implying that callosal axons require neuronal activity during P6-15 to form their projections.\n\nAn important role of neuronal activity in P10-15 was suggested by another experiment using the DREADD (designer receptors exclusively activated by designer drugs) method. DREADD is a method to increase or decrease neuronal activity using a nonendogenous ligand clozapine-N-oxide (CNO; Alexander et al., 2009). Activation of hM3DGq, one of the artificial G-protein-coupled receptors used in DREADD technology, in hippocampal neurons causes depolarization of the membrane potential, resulting in an increase in neuronal activity (Alexander et al., 2009). We transfected layer 2/3 cortical neurons with the expression vector pCAG-hM3DGq, together with the pCAG-TurboRFP and pCAG-Kir2.1 plasmids, by in utero electroporation at E15 (Figure 2A). We observed that the electroporated mice with daily CNO injections from P10 to P14 (n=11 mice) exhibited a region- and lamina-specific projection pattern of RFP-labeled callosal axons in the contralateral cortex (Figure 2B). Neither of the two control groups of mice (n=10 mice for Kir2.1+hM3 DGq with saline injection P10-14, n=4 mice for Kir2.1 with CNO injection P10-14) exhibited such axonal projections (Figure 2B, data not shown). Quantitative analyses suggested a partial but significant \u2018rescue\u2019 effect of hM3DGq expression with CNO injections against the effect of Kir2.1 expression on callosal axon projections (Figure 2C). These results suggest that the resumption of neuronal activity during P10-15 is effective for the formation of callosal axon projections.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimental design and timeline. Kir2.1 expression and hM3DGq expression plasmids were transfected at E15, clozapine-N-oxide (CNO) or saline was injected daily from P10 to P14, and brains were fixed at P15. (B) Fluorescently labeled callosal axon projections in the P15 cortex. Scale bar, 100 \u03bcm. (C) Average signal intensity of fluorescently labeled callosal axons in layers 1\u20133. \u2018Kir + hM3 DGq with CNO injections\u2019 group; n=11 sections from 11 mice. \u2018Kir + hM3 DGq with saline injections\u2019 group; n=10 sections from 10 mice. \u2018Kir with CNO injections\u2019 group: n=4 sections from four mice. \u2018RFP\u2018 group (CAG promoter [pCAG]-TurboRFP was electroporated, no injection was performed): n=10 sections from 10 mice. \u2018Kir\u2019 group (pCAG-Kir2.1 was electroporated, no injection was performed): n=7 sections from seven mice. ***p<0.001 by Tukey\u2013Kramer test.\n\n### A critical period for the formation of callosal projections\n\nCallosal axons from Kir2.1-expressing neurons arrive in the white matter (WM) of the target innervation areas around P5, the same time as normal callosal axons (Mizuno et al., 2007). Afterward, they exhibit retarded and eventually stalled growth and development. As shown above, callosal axons can form region- and lamina-specific projection patterns when their activity is resumed from P6. How long do they retain the ability to grow into the target cortical areas and make lamina-specific branches after reaching the target innervation areas around P5? We found that the region- and lamina-specific projection pattern of callosal axons could not be recovered when Dox treatment was started later than P9. We performed in utero electroporation with the same set of plasmids as before (Figure 1A and Figure 3A), started Dox treatment from P9 or P12, and then assessed callosal axon projections at P18 or P21 (n=9 mice for Dox treatment P918: n=10 mice for Dox treatment P12-21). Contrary to the result of Dox treatment during P6-15, callosal axons were not present in the target innervation areas in either group of mice (Figure 3B). The extent of callosal axons arriving and ramifying in the target cortical layer (see Methods) was significantly lower in the Dox P9-18 and Dox P12-21 groups than in the Dox P6-15 group (p=2.1 \u00d7 10\u20135, one-way ANOVA; Dox P9-18 vs Dox P6-15, p=1.0 \u00d7 10\u20134; Dox P12-21 vs Dox P6-15, p=9.0 \u00d7 10\u20135, Tukey\u2013Kramer test; Figure 3C). These observations suggest that callosal axons retain the ability to grow into the target innervation areas and make lamina-specific branches only for a limited period during development.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig3-v1.jpg)\n\n**Figure 3.:** (A) Experimental design and timeline. CAG promoter (pCAG)-tTA2s and TRETight2 promoter (pTRETight2)-Kir2.1 plasmids were transfected at E15, and doxycycline (Dox) was administered from P6 to P15, from P9 to P18, or from P12 to P21. (B) Fluorescently labeled callosal axon projections in the P15 cortex. Scale bar, 100 \u03bcm. (C) Average signal intensity of fluorescently labeled callosal axons in layers 1\u20133. \u2018Dox P6-15\u2019 group: n=10 sections from 10 mice. \u2018Dox P9-P18\u2019 group: n=9 sections from nine mice. \u2018Dox P12-P21\u2019 group: n=10 sections from 10 mice. ***p<0.001 by Tukey\u2013Kramer test.\n\n### Network activity contributing to callosal axon projections\n\nIt has been shown that spontaneous network activity frequently occurs in the early postnatal cerebral cortex. Such network activity can be classified as a highly synchronous pattern (H events) or a less correlated pattern (L events) (Siegel et al., 2012). In the visual cortex, these events are mechanistically distinct (Siegel et al., 2012): H events are mostly of cortical origin, whereas L events are driven by activity in the retina. They may have distinct roles in cortical circuit formation (Cheyne et al., 2019; Wosniack et al., 2021). To gain insight into what pattern(s) of network activity contribute to activity-dependent axonal projections, we recorded spontaneous neuronal activity in V1 at P13 using in vivo two-photon Ca2+ imaging with a calcium indicator OGB1 (Figure 4A). Consistent with a previous study (Hagihara et al., 2015), control mice (in which the fluorescent protein FP635 was electroporated: n=5 mice) exhibited frequent spontaneous network events during 10-minute recording sessions (Figure 4B, C), whereas Kir2.1-expressing mice exhibited substantially fewer network events (n=5 mice, Figure 4E). Notably, both Kir2.1-positive and Kir2.1-negative neurons were suppressed. We classified these network events based on a similar criterion to that used in a previous study (Siegel et al., 2012, see Methods): H events, highly synchronous network activity with a participation rate >60%; L events, less correlated events with a participation rate of 60\u201320%. We observed both patterns of network activity in control mice at P13 (Figure 4F) (H events, 1.70\u00b10.36 events/min; L events, 2.16\u00b10.27 events/min), and Kir2.1 expression significantly reduced both of them (Figure 4F) (H events, 0.21\u00b10.10 events/min; L events, 0.62\u00b10.09 events/min; H events, p=1.3 \u00d7 10\u20133; L events, p=4.9 \u00d7 10\u20134 by one-way ANOVA; H events, p=1.2 \u00d7 10\u20133; L events, p=8.1 \u00d7 10\u20134 by Tukey\u2013Kramer test).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72435/elife-72435-fig4-v1.jpg)\n\n**Figure 4.:** (A) A representative image of OBG1-loaded (gray) and FP635-expressing (magenta) neurons in the P13 mouse visual cortex obtained by two-photon microscopy. Scale bar: 50 \u03bcm. Numbers shown in the image correspond to the cell numbers shown in panel (B). (B) Ca2+ traces from representative FP635+ (#1\u20134) and FP635\u2212 (#5\u201310) neurons. Obtained from the same recording session as shown in the bottom panel. (C) Top: an active period plot of all identified FP635+ (magenta) and FP635\u2212 (black) neurons in the top image. Bottom: corresponding participation rate. Events with a participation rate above 60% were regarded as H events. (D) A representative active period plot and corresponding participation rate from a Tet-Kir2.1 with doxycycline (Dox) mouse. Because of Dox treatment from P6, Kir2.1 expression was suppressed from P6: Kir OFF. (E) A representative active period plot and corresponding participation rate from a Tet-Kir2.1 without Dox mouse. Because of the absence of Dox, Kir2.1 was expressed throughout development: Kir ON. (F) Histograms of synchronous activity frequency with different participation rates from FP635-electroporated (Left: FP only), Tet-Kir2.1 with Dox (Middle: Kir OFF Dox P6), and Tet-Kir2.1 without Dox (Right: Kir ON) mice. (G) Quantifications of H (>60%) and L (20\u201360%) events. FP only, five mice. Kir OFF (Dox P6), five mice. Kir ON, five mice. *p<0.05, **p<0.01, ***p<0.001 by Tukey\u2013Kramer test.\n\nWe then asked whether the network activity would be resumed in the condition where callosal axon projections were recovered (i.e. Kir2.1 expression was turned off beginning from P6). We started Dox treatment on P6 and recorded spontaneous neuronal activity in the electroporated mice at P13 (n=5 mice). We found that Dox treatment from P6 resumed cortical network activity at P13 (Figure 4D). Unexpectedly, this treatment almost recovered L events, whereas H events were not recovered (H events, 0.66\u00b10.21 events/min; L events, 2.01\u00b10.30 events/min; Figure 4G). L events may make a larger contribution to the formation of callosal axon projections, although the involvement of H events or the total frequency of activity cannot be ruled out. Collectively, our observations suggest that sufficiently high activity during P6-15 plays a role in the formation of region- and lamina-specific projection patterns of callosal axons.\n\n## Discussion\n\nIn this study, using a genetic method to reduce and restore spontaneous network activity in the early postnatal cerebral cortex, we demonstrated that spontaneous activity during P6-15 contributes to the formation of region- and lamina-specific projection patterns of callosal axons. Several previous studies have revealed important roles of spontaneous cortical activity in the fine-tuning of local circuits and neural function (Winnubst et al., 2015: Hagihara et al., 2015; Wosniack et al., 2021). Our findings add new evidence of the critical role of spontaneous network activity in cortical circuit formation and demonstrate that not only local circuits but also long-range axonal projections require spontaneous activity for their normal development.\n\nA recent study showed that a developmental change in the firing mode of callosal projection neurons, regulated by transcription factor Cux1-driven Kv1 channel expression, was critically involved in activity-dependent callosal axon projections (Rodr\u00edguez-Tornos et al., 2016). Because they assessed the firing property of neurons using in vitro slice preparations, what aspect(s) of activity in vivo contribute to axonal projection is not known. Our study extends their findings by demonstrating that spontaneous activity in vivo is critical for callosal axon projections.\n\nThe \u2018rescue\u2019 effect was only observed during P6-15 but not afterward (Figure 3). A similar developmental time window for the formation of axonal projections was reported in the olfactory system (Ma et al., 2014). In the previous study, we showed that callosal axons could reach the innervation area almost normally under activity reduction, and that the effects of activity reduction became apparent afterward (Mizuno et al., 2007). Callosal axons elaborate their branches extensively in P10-P15 (Mizuno et al., 2010), and axon branching is regulated by neuronal activity (Matsumoto et al., 2016). It is likely that activity is required for the processes of formation, rather than the maintenance of the connections already formed by P10, but the current study employed massive labeling of callosal axons which is not suited to clarify this. In addition, the restoration of activity in the Tet-off (Figure 1) or DREADD (Figure 2) experiment may not completely rescue the ramification pattern of individual axons. Single-axon tracing experiments (Mizuno et al., 2010; Dhande et al., 2011) would be required to clarify this. Nonetheless, our findings suggest that callosal axons retain the ability, or are permitted, to grow and make region- and lamina-specific projections in the cortex during a limited period of postnatal cortical development under an activity-dependent mechanism.\n\nPatterned spontaneous activity in the developing neocortex can be classified as a highly synchronous pattern (H events) and a less correlated pattern (L events) (Siegel et al., 2012). What could be the roles of these patterns of activity in axonal projections? In retinothalamic and retinocollicular projections, network activity in the retina (retinal waves) is proposed to provide spatial information for axonal projections. It is proposed that two adjacent RGCs, which likely fire together in a spontaneous network event would project their axons to an adjacent location in the target tissue. On the other hand, two RGCs located distantly, or even in the left and right eyes, are unlikely to fire together, projecting axons to distinct locations (Wong, 1999). The highly synchronous network activity in the cortex recruits more than 60% of neurons in an imaging field, clearly exceeding the proportion of callosal projection neurons. Callosal projection neurons are intermingled with other types of cortical neurons that project axons intracortically (Mitchell and Macklis, 2005), suggesting that both the former and the latter contribute to H events once they occur. If the highly synchronous activity in the cortex exerts a similar role as retinal waves, it may provide topographic information to callosal axons and other axons projecting to other cortical regions at the same time.\n\nWe have shown that the projections could be established even without fully restoring highly synchronous activity (Figure 4). L events, but not H events, were present in P13 cortex after Dox treatment at P6. L events may be sufficient for the formation of callosal projections. Alternatively, any form of activity with certain level(s) (i.e. \u2018sufficiently\u2019 high activity with no specific pattern) could be permissive for the formation of callosal connections. In a recent study, we showed that callosal projection neurons preferentially make synaptic connections with neighboring callosal projection neurons and form local subnetworks (Hagihara et al., 2021). Some of the L events observed in this study may reflect the correlated subnetwork activity of callosal projection neurons, and such correlated activity may be critical for their axonal projections. This consideration may lead to a more general and intriguing idea that L events might be coactivations of locally connected cortical neurons, sending axons to the same target region(s). Future experiments would be able to test this important possibility by combining retrograde labeling of callosal (and other projection) neurons and Ca2+ imaging in developing mice.\n\nNetwork activity may also function to induce some trophic factors. If this is the case, the effect of reducing the activity of a small number of cells could be less than that of global activity reduction (Mizuno et al., 2010) because surrounding unperturbed cells can supply a \u2018trophic factor\u2019 for the perturbed cells. Spitzer et al. showed that BDNF could exert such a function in Xenopus spinal neurons (Guemez-Gamboa et al., 2014). They showed that spontaneous firing causes the release of BDNF, which non-cell-autonomously functions to trigger TrkB receptor activation and activity-dependent transmitter switching in the surrounding neurons. BDNF may function in callosal axon projections. BDNF expression is activity-dependent in the cortex (Tao et al., 1998; Lein and Shatz, 2000). It has also been shown that callosal axons require BDNF secretion for their projections (Shimojo et al., 2015). Activity-dependent secretion of BDNF, or other factor(s), may be associated with the network activity.\n\nIn the activity manipulation experiments using the Tet-off system (Figures 1 and 4), there may have been residual Kir2.1 expression after Dox treatment (Figure 1\u2014figure supplement 3). Therefore, it remains uncertain precisely when activity levels returned and what patterns of spontaneous activity emerged during the Dox-treated period. Highly and/or less synchronous activity can be instructive or permissive to the formation of cortical circuits. As mentioned above, L events may be a mixture of different patterns of activity with mixed populations of neurons in the cortex. Some pattern(s) of network activity embedded in L events may play a role in the formation of callosal projections and cortical connections in general.\n\n## Materials and methods\n\n### Mice\n\nThe ICR strain of mice was used. In utero electroporation was performed in pregnant female mice, and their offspring (both male and female) were used in the study. All experiments were performed in accordance with the institutional animal welfare guidelines of the Animal Care and Use Committee of Kyoto University, Kyushu University, and Kagoshima University and were approved by the Committee of Animal Experimentation in the Graduate School of Science, Kyoto University (H2405, H2420, H2504, H2518), Graduate School of Medical and Dental Sciences, Kagoshima University (MD17080, MD21017), and the Ethical Committee of Kyushu University (A25-105-0).\n\n### In utero electroporation and plasmids\n\nIn utero electroporation was performed as previously described (Mizuno et al., 2007: Hagihara et al., 2015). Briefly, pregnant mice were anesthetized at E15.5 with somnopentyl (pentobarbital sodium; 50 mg per kg of body weight; Kyoritsu-seiyaku) in saline with or without isoflurane. A midline laparotomy was performed to expose the uterus. For DNA microinjection, glass capillary tubes (GD-1; Narishige) were pulled using a micropipette puller (Sutter Instruments). Embryos were injected into the lateral ventricle with 1 \u03bcl of DNA solution (expression plasmids other than pCAG-tTA2s, 0.6\u20131.0 mg ml\u20131; pCAG-tTA2s, 0.04\u20130.1 mg ml\u20131), and square electric pulses (50 V; 50 ms) were delivered five times at the rate of one pulse per second using an electroporator (CUY21EDIT; NepaGene). After electroporation, the uterus was repositioned, the abdominal cavity was filled with prewarmed PBS, and the wall and skin were sutured. Animals were allowed to recover on a heating pad for approximately an hour before returning to their home cage. Plasmids used were as follows. pCAG-tTA2s and pTRETight2-Kir2.1 express Kir2.1 under the control of the Tet-off gene expression system (Hagihara et al., 2015). pCAsal-EGFP, pCAG-TurboRFP, and pCAG-FP635 express fluorescent proteins and pCAG-Kir2.1 for the expression of Kir2.1 under the control of the CAG promoter (Mizuno et al., 2007). pTRETight2-TurboRFP for expression of the fluorescent protein under the control of the Tet-off gene expression system. pTRETight2-Kir2.1EGFP (EGFP was fused with the C terminus of Kir2.1) was used to confirm the expression of Kir2.1. pCAG-hM3DGq for DREADD experiments. After birth, animals that did not show fluorescent signals in the visual cortex of the electroporated hemisphere were excluded from further histological or imaging experiments. For histological analyses, animals were anesthetized at P6, P8, P10, P15, P18, or P21 with an overdose of somnopentyl and decapitated.\n\n### Doxycycline and clozapine-N-oxide administration\n\nDox (#9891: Sigma-Aldrich) was added to drinking water (2 mg ml\u20131) with 10% sugar. Dox in water was protected from exposure to light and renewed every other day. Pups were exposed to Dox through the mother\u2019s milk; electroporated pups were transferred to a foster mother from P6 (or P9 or P12 in the experiments shown in Figure 3) that had been given Dox via the drinking water for a week. In the experiments shown in Figure 2, CNO (BML-NS105; Enzo Life Sciences; 1 mg ml\u20131 in saline) was intraperitoneally injected every day. A previous study showed that an intraperitoneally injected CNO was effective (in terms of increasing activity) for about 9 hr (Alexander et al., 2009). The \u2018partial rescue\u2019 effect we observed (Figure 2) may suggest that activity was not fully restored during 24 hr by our daily CNO injections.\n\n### Histology, confocal imaging, and quantification\n\nBrains were fixed using 4% paraformaldehyde in PBS overnight and then transferred to 30% sucrose in PBS for 1\u20132 days. Coronal brain slices (50 \u03bcm) were sectioned using a freezing microtome (LM2000R; Leica). Fluorescent histological images were acquired using a confocal laser-scanning microscope (FV1000; Olympus). The expression of Kir2.1EGFP was assessed with anti-GFP antibody (rat monoclonal Ab from Nacalai, Japan, GF090R; the secondary antibody, 488-anti Rat IgG from Invitrogen, A11006) (Mizuno et al., 2007). To obtain the projection patterns of fluorescently labeled callosal axons for each tissue section (50 \u03bcm in thickness), serial confocal images were collected at 3 \u03bcm intervals to create a z-axis image stack. Quantification of the callosal axon projections (Figure 1D, E) was performed as previously described with modifications (Mizuno et al., 2007). Briefly, in each brain section, boxes (300 \u03bcm in width, 100 \u03bcm in height) were drawn to enclose the fluorescently labeled callosal axon fibers in layers 1\u20133 and the WM on the projection side of the cortex, and the density of the fluorescent signal in each box was computed (these are raw values of the signal intensity in layers 1\u20133 and WM on the projection side). Then, a background level of signal was computed in adjacent areas of the cortex and subtracted (background-subtracted values of the signal intensity in layers 1\u20133 and WM on the projection side). To compensate for variability in the efficacy of labeling callosal axons with fluorescent proteins, the average WM fluorescent signal was obtained on the electroporated side of the cortex and used to normalize the signal intensity on the projection side of the cortex at each brain section (i.e. the normalized signal intensity in layers 1\u20133 and WM on the projection side was calculated by dividing the signal from layers 1\u20133 or WM on the projection side by the WM signal on the electroporated side; background-subtracted value of the signal intensity in layers 1\u20133 or WM on the projection side/background-subtracted value of the signal intensity in WM on the electroporated side). To quantify widths of callosal axon arborization in L2/3 and 5 (Figure 1\u2014figure supplement 4A, B), confocal images were first Gaussian filtered (kernel size: 30 pixels) and then binarized by one of the authors who was blind to experimental conditions. Widths of positive regions that correspond to L2/3 and 5 arborizations in the binarized images were manually quantified. For densitometric line scans (Figure 1\u2014figure supplement 4C), original confocal images were tilt-adjusted and cropped into 900 pixel \u00d7 900 pixel images so that pia to WM were covered. Pixel intensities of each row of the preprocessed images, which corresponds to a cortical depth, were averaged. For KirGFP expression level quantification (Figure 1\u2014figure supplement 3), individual neurons were manually detected and rectangular ROIs were placed. Pixel intensities in green and red channels in each ROI were then averaged. For comparison across Dox treatment conditions, the ratio between the averaged green and red channel intensities from individual neurons was used (Figure 1\u2014figure supplement 3E).\n\n### Spontaneous neuronal activity recording and data analyses\n\nMice were prepared for in vivo calcium imaging as previously described (Ohki et al., 2005; Hagihara et al., 2015). In brief, mice were anesthetized using isoflurane (3.0% for induction, 1.0\u20132.0% during surgery). A custom-made metal plate was mounted onto the skull, and a craniotomy was carefully performed before calcium imaging approximately above V1 using stereotaxic coordinates. After surgery, the isoflurane concentration was reduced to 0.7%. Because the level of spontaneous activity is greatly affected by the anesthesia level (Siegel et al., 2012), the isoflurane concentration was carefully controlled, and we started recording at least 1 hr after the reduction in isoflurane concentration. We dissolved 0.8 mM Oregon Green 488 BAPTA-1 AM (OGB-1) in Dimethyl sulfoxide (DMSO) with 20% pluronic acid and mixed it with Artificial cerebrospinal fluid (ACSF) containing 0.05 mM Alexa594 (Alexa; all obtained from Invitrogen, CA, USA). A glass pipette (3\u20135 \u03bcm tip diameter) was filled with this solution and inserted into the cortex around the center of a craniotomy to a depth of approximately 250 \u00b5m from the surface, and then the solution was pressure-ejected from the pipette using a Picospitzer (Parker, USA) (\u22120.5 psi for 1\u20135 s, 5\u201310 times). After confirming loading, the craniotomy was sealed with a cover glass. We aimed to record spontaneous neuronal activity in putative binocular zones in V1 based on relative coordinates to lambda. Since the boundaries between V1 and higher visual areas, AL (anterolateral)/LM (lateromedial) are not as obvious as those in adult, our recordings likely contained lateral monocular V1 and AL/LM. Changes in calcium fluorescence in the cortical neurons were monitored using a two-photon microscope (Zeiss LSM7MP or Nikon A1MP), which was equipped with a mode-locked Ti:sapphire laser (MaiTai Deep See, Spectra Physics). The excitation light was focused with a 25\u00d7 Olympus (NA: 1.05) or Nikon (NA: 1.10) PlanApo objective. The average power delivered to the brain was <20 mW, depending on the depth of focus. OGB-1 and FP635 were excited at 920 nm. The emission filters were 517\u2013567 nm for OGB-1 and 600\u2013650 nm for FP635. Care was taken to shield the microscope objective and the photomultipliers from stray light. Images were obtained using Zeiss Zen software or Nikon NIS Elements software. A rectangular region (281.6 \u00b5m \u00d7 140.8 \u00b5m) from layer 2/3 (depths of 150\u2013300 \u00b5m from the surface) was imaged with 512 \u00d7 256 pixels at 4 Hz.\n\nImages were analyzed using custom-written in-house software running on in MATLAB (Mathworks) (Ohki et al., 2005; Hagihara et al., 2015; https://github.com/hagikent/CallosalRescue). Images were motion corrected by maximizing the correlation between frames. The cell outlines were automatically identified using template matching. The identified cell outlines were visually inspected, and the rare but clear errors were manually corrected. FP635 positive or negative neurons were manually identified. The time courses of individual cells were extracted by averaging the pixel values within the cell outlines, and then, high-cut (Butterworth, n=10; cutoff, 1 s) and low-cut (Gaussian, cutoff, 2 min) filters were applied. Those time courses were further corrected to minimize out-of-focus signal contamination. This process is important because of the highly synchronous characteristics of spontaneous network activity during the developmental stage. To achieve this, neuropil signals were subtracted from cell body signals after multiplying the contamination ratio as previously described (Kerlin et al., 2010; Hagihara et al., 2015). The corrected fluorescence signal from a cell body was estimated as follows:\n\n$$\nFcell\u2212corrected(t)=Fcell\u2212apparent(t)\u2212r\\times[Fcell\u2212surrounding(t)\u2212mean(Fcell\u2212surrounding)]\n$$\n\nwhere t is the time and r is the contamination ratio. We calculated the contamination ratio r for each cell using the least squares method as follows:\n\n$$\n{F_{cell}[t_{base}]\u2212mean[F_{cell}(t_{base})]}=r\\times{F_{cell\u2212surround}[t_{base}]\u2212mean[F_{cell\u2212surround}(t_{base})]}\n$$\n\nwhere tbase is a period with no obvious spontaneous activity. After neuropil contamination correction, the spontaneous activity of each cell was detected using fixed criteria: \u0394F/F=5%. Time periods when >20% cells were simultaneously active were regarded as synchronous spontaneous activity. This spontaneous activity was further classified into H events and L events (Siegel et al., 2012) based on the participation rate (H >60%; L: 60\u201320%). Note that we used slightly different criteria for H and L events because of our rigid neuropil subtraction methods.\n\n### Statistical analyses\n\nAll data are expressed as individual data points and the mean \u00b1 SEM using a modified notBoxPlot function (originally written by R. Campbell), unless stated otherwise. Statistical analyses were conducted by Excel version 16.44 (Microsoft) (one-way ANOVA) and R version 2.12.0 (The R Foundation for Statistical Computing) (Tukey\u2013Kramer test). Exact p-values and additional statistical information are provided in the \u2018Source data\u2019 (Supplementary file ). Throughout the study, p<0.05 was considered statistically significant. No statistical methods were used to pre-determine sample sizes, but our sample sizes (number of animal) are similar to those generally employed in the field.\n",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "55d39f0e-9b77-41fa-bbb1-3b7cf4294d2c",
+      "submission_id": "05d52525-b6d4-46a2-a476-c842eae8bc64",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marla B Feller, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72435.sa0](https://doi.org/10.7554/eLife.72435.sa0)\n\nThis study extends previous findings on the activity-dependent development of the long-range axonal connections between the cortical hemispheres. In particular, it shows that neuronal activity strongly influences the development of these axons during a particular developmental period and it provides convincing evidence that specific activity patterns are required for the proper development of these long-range connections.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marla B Feller, https://ror.org/01an7q238 University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72435.sa1](https://doi.org/10.7554/eLife.72435.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Developmental stage-specific patterned activity contributes to callosal axon projections\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Edward S Ruthazer (Reviewer #1); Christian Albrecht Lohmann (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n(1) Some independent evidence that the presence of DOX reduces KIR expression.\n\n(2) Improved characterization of the callosal projections.\n\n(3) A revision in which the authors make clear that the current data does not support a role for patterned activity. Reviewers are also open to new experiments (suggested by Reviewer 2) but it is acknowledged that these are challenging experiments, but if possible, would greatly enhance the impact of the paper.\n\nReviewer #1 (Recommendations for the authors):\n\nWhat would strengthen the paper considerably would be to use calcium imaging to better characterize the restoration of activity during the critical period rather than just at the end both as a validation of the tet-off model and to precise the actual critical period window. In addition, more quantitative description of the actual size and shape, and not just the intensity, of the callosal projection over numerous rostrocaudal points would provide a better understanding of the importance of activity.\n\nAbstract\n\nLine 33 of abstract \"less correlated network activity was critical\"\n\nIntro\n\nLine 41 Katz and Shatz review is quite out of date already. Can it be replaced with something more recent?\n\nLine 52 the Smith et al. 2018 paper from David Fitzpatrick could also be referenced here in the context of corticocortical spontaneous activity.\n\nLine 59 Following a lengthy list of studies on how patterned activity influence cortical circuit development you go on to state \"However their role in cortical circuit formation remains elusive.\" Is it your intention to be so dismissive of the studies you just cited? Perhaps it would be more precise to say \"However, their role in many aspects of cortical circuit formation remains to be fully elucidated.\"\n\nLine 61 \"THE callosal projection\u2026\".\n\nOverall, the intro is well written and a nice summary of the field to date with just a few missing references.\n\nResults\n\nLine 107 \"the projection pattern was quite similar\".\n\nLine 119 \"quantitative analyses suggested that the extent of callosal axons\u2026 was comparable\".\n\nI didn't see any analysis of the EXTENT of callosal axons. Can this be quantified by measuring ML extent, etc?\n\nLine 114 starting dox on P6 with the hope that Kir 2.1 will be gone from P10-14 seems to require validation either by western blot or electrophysiology or functional imaging.\n\nThe body of text associated with figure 4 mentions the use of FP635 but fails to mention how calcium was measured (OGB1). This is a fairly major oversight.\n\nLine 180 \"This implies that L events, which have a less synchronous pattern of network activity, make a larger contribution to the formation of callosal axon projections\". I don't believe this is an accurate description. L events contribute to the formation of callosal projections but their relative importance is not possible to ascertain from this data. Rather one can conclude that any form of activity, synchronous or not, appears to be permissive for the presence of late stage callosal connections. While some useful information may be gleaned from these data it is difficult to directly attribute activity patterns at P13 to the formation of callosal connectivity that has taken place over the preceding week. What this data is particularly useful for is to establish that Dox does partially restore activity. Therefore, it would have been even more useful to have examined the relative proportions of L vs H activity at or BEFORE P6 in control animals to understand why P6 represents the opening of the critical period and to examine at several times between P6 and P13 the restoration of activity by Dox treatment to understand when the Kir2.1 expression in fact is sufficiently reduced to permit normal activity.\n\nFurther, the question of interhemispheric synchrony seems potentially relevant though it is not touched upon at all in these experiments.\n\nDiscussion\n\nLine 191 and 197 \"Our findings add new evidence \u2026 long-range axonal projections require patterned spontaneous activity for their normal development.\" Nothing in this study distinguishes patterned activity from random activation. These statements should be removed.\n\nLine 228 includes a reference to \"data not shown\". Please remove this sentence or provide a supplementary figure. It is a fascinating point which would be good to elaborate upon but perhaps the experiments are insufficient to draw firm conclusions yet, in which case they should not even be mentioned.\n\nLine 232 states \"the rescue effect was only observed during P10-15\". What is the basis for extrapolating from P6 to P10? This is a very precise statement which is not well supported by the data. We only know about P6 to P15.\n\nMethods\n\nLine 333 custom software for Ca analysis should be made available in a public repository or uploaded with the manuscript. The dryad reference should probably be added to the methods?\n\nLines 807-10: the normalization of signal intensity is somewhat vague, but absolutely essential. When is wm signal used and when is layer 1-3 signal used for normalization.\n\nFigures\n\nBar graphs showing mean {plus minus} SEM fail to convey the real variability of the data. If possible consider adding the individual points that make up the data to the graphs, even though these are available in the supplemental data.\n\nSuppl Figure 1B shows a different coronal plane than the other images. Does this indicate a different rostrocaudal pattern of interhemispheric connectivity in the rescue animals from controls? If not can a properly matched section be provided, or better yet a series throughout the rostrocaudal length of V1?\n\nSuppl Figure 2 is not cited anywhere in the manuscript. Note that expression of a soluble FP cannot be used as a proxy for expression of a transmembrane Kir2.1\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors propose the \"intriguing idea that L events might be coactivations of locally connected cortical neurons, sending axons to the same target region(s)\" (Lines 216-218). It would be interesting to see whether some L events indeed co-activate neurons projecting to the same target regions, by retrogradely labeling e.g. callosally projecting cortical neurons and performing calcium imaging to identify activity events where these subpopulations of neurons participate specifically.\n",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a1e70fb8-b1b8-4b50-8f8d-048dade069eb",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C1",
+      "claim": "The developing neocortex exhibits spontaneous network activity with various synchrony levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The developing neocortex exhibits spontaneous network activity with various synchrony levels, which has been implicated in the formation of cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the developing neocortex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "8229de4b-a05a-4e81-b223-c82b78e0c0c4",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C2",
+      "claim": "Spontaneous network activity in the developing neocortex has been implicated in the formation of cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The developing neocortex exhibits spontaneous network activity with various synchrony levels, which has been implicated in the formation of cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to prior research in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f6c489d8-172c-4b34-9880-4cbaac3415a9",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C3",
+      "claim": "The development of callosal axon projections is activity dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that the development of callosal axon projections, one of the major long-range axonal projections in the brain, is activity dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the authors' previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "8f234496-913c-4d39-bd93-c4bd117a7d68",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C4",
+      "claim": "Network activity contributes to callosal axon projections in the mouse visual cortex during a critical period.",
+      "claim_type": "EXPLICIT",
+      "source": "using a genetic method to manipulate network activity in a stage-specific manner, we demonstrated that network activity contributes to callosal axon projections in the mouse visual cortex during a 'critical period'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the current study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "47be0cc6-2a45-429a-b1b4-8a352c8093c2",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C5",
+      "claim": "Restoring neuronal activity during the critical period resumed callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "restoring neuronal activity during that period resumed the projections, whereas restoration after the period failed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "b2977f69-b548-4e9d-b1f2-59258219bb54",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C6",
+      "claim": "Restoration of neuronal activity after the critical period failed to resume callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "restoring neuronal activity during that period resumed the projections, whereas restoration after the period failed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "4fd16910-777d-4627-b127-79962da45838",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C7",
+      "claim": "Callosal axon projections could be established even without fully restoring highly synchronous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "in vivo Ca2+ imaging revealed that the projections could be established even without fully restoring highly synchronous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "0e6483f1-8e64-428f-83fa-bdb136297ea9",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C8",
+      "claim": "Spontaneous network activity is selectively required during a critical developmental time window for the formation of long-range axonal projections in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "our findings suggest that spontaneous network activity is selectively required during a critical developmental time window for the formation of long-range axonal projections in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "8034da5e-1e01-47cb-b733-6444a32205d9",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C9",
+      "claim": "Neuronal activity plays a role in the formation of neural circuits in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal activity plays a role in the formation of neural circuits in the brain (Katz and Shatz, 1996; Spitzer, 2006; Ackman and Crair, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c193b41c-dd56-4340-8a47-70748007fe01",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C10",
+      "claim": "The roles of sensory-driven and spontaneously generated neuronal activity in circuit formation are well documented in the mammalian visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "The roles of sensory-driven and spontaneously generated neuronal activity in circuit formation are well documented in the mammalian visual system (Wong, 1999; Huberman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "61aa31a5-a722-45ea-9f55-1081ae8ae3bc",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C11",
+      "claim": "Retinal ganglion cells exhibit spontaneously generated, highly correlated neuronal activity called retinal waves before photoreceptor cells develop.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal ganglion cells (RGCs), output neurons in the retinal circuit, exhibit spontaneously generated, highly correlated neuronal activity (called retinal waves) before photoreceptor cells develop (Galli and Maffei, 1988; Meister et al., 1991; Wong et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "2d9fa812-c8e0-4c27-8097-489bd5ca54c6",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C12",
+      "claim": "Retinal wave activity is transmitted to the lateral geniculate nucleus and the superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "Such activity is transmitted to the lateral geniculate nucleus and the superior colliculus, where it plays an instructive role in the formation and reorganization of neuronal connections (Penn et al., 1998; Stellwagen and Shatz, 2002; Pfeiffenberger et al., 2005; Chandrasekaran et al., 2005; Hooks and Chen, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "383feb32-4c47-4a7f-a4f7-819f4b4aa1cd",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C13",
+      "claim": "Retinal wave activity plays an instructive role in the formation and reorganization of neuronal connections in the lateral geniculate nucleus and superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "Such activity is transmitted to the lateral geniculate nucleus and the superior colliculus, where it plays an instructive role in the formation and reorganization of neuronal connections (Penn et al., 1998; Stellwagen and Shatz, 2002; Pfeiffenberger et al., 2005; Chandrasekaran et al., 2005; Hooks and Chen, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "fa6b2bd4-f2e4-418d-96be-841a62cef5fb",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C14",
+      "claim": "Connectivity once formed is further sculpted by sensory-driven neuronal activity after visual inputs are available.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectivity once formed is further sculpted by sensory-driven neuronal activity after visual inputs are available (Hooks and Chen, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "7bdf49d5-8875-41e0-b73a-533856498590",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C15",
+      "claim": "The developing cerebral cortex exhibits robust spontaneous network activity, ranging from highly synchronous to less correlated patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The developing cerebral cortex also exhibits robust spontaneous network activity, ranging from highly synchronous to less correlated patterns (Siegel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "0d025271-0044-4a02-81bb-ead4415622ca",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C16",
+      "claim": "Spontaneous network activity in the developing cortex is partly generated intracortically and partly originates from retinal waves.",
+      "claim_type": "EXPLICIT",
+      "source": "This is partly generated intracortically and partly originates from retinal waves (Siegel et al., 2012; Gribizis et al., 2019; Smith et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "45a814c3-a106-4ff3-a142-5dc9194f20ea",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C17",
+      "claim": "In rodents, a highly synchronous pattern of spontaneous neuronal activity emerges during early postnatal periods when cortical neurons still undergo maturation and circuit formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, a highly synchronous pattern of spontaneous neuronal activity emerges during early postnatal periods when cortical neurons still undergo maturation and circuit formation (Garaschuk et al., 2000; All\u00e8ne et al., 2008; Yang et al., 2009; Siegel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "cc8d1d45-d46a-4e1d-9bf6-fd309ffd0555",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C18",
+      "claim": "Highly synchronous spontaneous activity indicates a heterogeneous traveling pattern in the developing cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Such activity indicates a heterogeneous traveling pattern in the developing cortex (Garaschuk et al., 2000; Ackman et al., 2012; Hagihara et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "576aaa10-9da3-455a-9d94-6032e64b185c",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C19",
+      "claim": "A more desynchronized pattern of spontaneous activity becomes dominant after the early postnatal period.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, a more desynchronized pattern becomes dominant (Rochefort et al., 2009; Golshani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "474bb600-0574-4984-a487-9ed11d2c11fc",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C20",
+      "claim": "Patterns of spontaneous activity have been thought to play important roles in the development of cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on findings in the visual system and other systems, these patterns of activity have been thought to play important roles in the development of cortical circuits (Khazipov and Luhmann, 2006; Blankenship and Feller, 2010; Winnubst et al., 2015; Hagihara et al., 2015; Nakazawa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "25f8428f-ff06-4768-a3aa-b3f661117b4f",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C21",
+      "claim": "The role of spontaneous activity in many aspects of cortical circuit formation remains to be fully elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their role in many aspects of cortical circuit formation remains to be fully elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "936c555e-f382-477b-9213-6008cb42eb4e",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C22",
+      "claim": "The callosal axon projection is a long-range axonal projection connecting the two cortical hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "The callosal axon projection, a long-range axonal projection connecting the two cortical hemispheres, is essential for integrating information processed in the hemispheres (Hubel and Wiesel, 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "0f3003cf-29d0-47e8-93f9-e1f7f5e37c14",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C23",
+      "claim": "The callosal axon projection is essential for integrating information processed in the hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "The callosal axon projection, a long-range axonal projection connecting the two cortical hemispheres, is essential for integrating information processed in the hemispheres (Hubel and Wiesel, 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "bbba6828-d8cd-46e9-82c7-2f3634a3fd9d",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C24",
+      "claim": "The callosal axon projection is important for higher cognitive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important for higher cognitive functions and its alterations have been noted in patients with developmental disorders (Paul, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "da19d9bb-77a8-4459-86ee-280899dbcd1b",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C25",
+      "claim": "Alterations in callosal axon projections have been noted in patients with developmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important for higher cognitive functions and its alterations have been noted in patients with developmental disorders (Paul, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "cb18b0fc-99a6-4db9-bc03-ea98f0466d19",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C26",
+      "claim": "The callosal axon projection has been a good model for studying activity-dependent mechanisms of cortical circuit formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been a good model for studying activity-dependent mechanisms of cortical circuit formation (De Le\u00f3n Reyes et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "66b20bfc-33d0-4271-987e-852039d6468c",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C27",
+      "claim": "Callosal axons derived from layer 2/3 callosal projection neurons in one hemisphere project to the other hemisphere through several successive stages by postnatal day 15 (P15) in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Callosal axons derived from layer 2/3 callosal projection neurons in one hemisphere project to the other hemisphere through several successive stages by postnatal day 15 (P15) in mice (Mizuno et al., 2007; Wang et al., 2007; Tagawa and Hirano, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c2b5ecbb-4931-45c7-9b61-54d4d56799b7",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C28",
+      "claim": "Callosal axon projection is activity-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This axonal projection is activity-dependent: several groups, including ours, have previously shown that exogenous expression of Kir2.1 (an inward rectifying potassium channel), a genetic method to reduce neuronal activity (Johns et al., 1999), impairs callosal axon projection (Mizuno et al., 2007; Wang et al., 2007; Su\u00e1rez et al., 2014; Rodr\u00edguez-Tornos et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research including the authors' own work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c8243f4d-4a15-494d-92c3-e8279c01c192",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C29",
+      "claim": "Exogenous expression of Kir2.1 impairs callosal axon projection.",
+      "claim_type": "EXPLICIT",
+      "source": "several groups, including ours, have previously shown that exogenous expression of Kir2.1 (an inward rectifying potassium channel), a genetic method to reduce neuronal activity (Johns et al., 1999), impairs callosal axon projection (Mizuno et al., 2007; Wang et al., 2007; Su\u00e1rez et al., 2014; Rodr\u00edguez-Tornos et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c286caa6-af76-4321-94b1-cdcba690a504",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C30",
+      "claim": "Kir2.1 is an inward rectifying potassium channel that is a genetic method to reduce neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "exogenous expression of Kir2.1 (an inward rectifying potassium channel), a genetic method to reduce neuronal activity (Johns et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "e8a0041c-d824-4f2f-99c1-5b8a4a569516",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C31",
+      "claim": "When Kir2.1 was expressed in only a small number of neurons, the cell-autonomous effect of activity reduction on their axonal projections was less than when Kir2.1 was expressed in a larger number of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we expressed Kir2.1 in only a small number of neurons and examined the cell-autonomous effect of activity reduction on their axonal projections, we observed that the effect was less than that when we expressed Kir2.1 in a larger number of neurons (Mizuno et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "3fa114dc-5b12-4c6c-b400-447dfc548b11",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C32",
+      "claim": "Kir2.1 expression in a large number of neurons reduced the activity of individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Kir2.1 expression in a large number of neurons reduced not only the activity of individual neurons (Mizuno et al., 2007) but also spontaneous network activity in the cortex during early postnatal periods (Hagihara et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c3dd237b-a227-485e-8fba-76eac94b0648",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C33",
+      "claim": "Kir2.1 expression in a large number of neurons reduced spontaneous network activity in the cortex during early postnatal periods.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Kir2.1 expression in a large number of neurons reduced not only the activity of individual neurons (Mizuno et al., 2007) but also spontaneous network activity in the cortex during early postnatal periods (Hagihara et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "146e4ff1-a6d2-4c22-9ed8-b5367a55e1f2",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C34",
+      "claim": "The pattern of spontaneous cortical network activity changes during the period when callosal axons undergo maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, the pattern of spontaneous cortical network activity changes during the period when callosal axons undergo maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the previously mentioned information about developmental changes in activity patterns.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c675eab7-2272-45dd-acb8-1de59846f6d7",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C35",
+      "claim": "There might be a specific temporal window in which cortical network activity is indispensable for the formation of long-range axonal projections of callosal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results led us to assume that there might be a specific temporal window in which cortical network activity is indispensable for the formation of long-range axonal projections of callosal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from previous findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "71518500-9480-4205-b6a1-92efdd80bcea",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C36",
+      "claim": "In the visual cortex, callosal axons project densely to a narrowly restricted region at the border between the primary and secondary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the visual cortex, callosal axons project densely to a narrowly restricted region at the border between the primary and secondary visual cortex, in which they terminate primarily in layer 2/3 and less so in layer 5 (Olavarria and Montero, 1984; Mizuno et al., 2007; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous research and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "9da18dd3-126c-4e1a-af80-9b756fd041fc",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C37",
+      "claim": "Callosal axons in the visual cortex terminate primarily in layer 2/3 and less so in layer 5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the visual cortex, callosal axons project densely to a narrowly restricted region at the border between the primary and secondary visual cortex, in which they terminate primarily in layer 2/3 and less so in layer 5 (Olavarria and Montero, 1984; Mizuno et al., 2007; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous research and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "1415524c-f7b4-4802-aef8-a3d2a32632f6",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C38",
+      "claim": "The region- and lamina-specific projection pattern of callosal axons forms by P15 in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "This region- and lamina-specific projection pattern forms by P15 in the mouse (Mizuno et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "a74b0a4b-1a96-4b05-bcfc-f5a3a8745499",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C39",
+      "claim": "Kir2.1 expression disturbs callosal axon development primarily in the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "Our group, as well as others, previously showed that Kir2.1 expression disturbs callosal axon development primarily in the second postnatal week (Tagawa and Hirano, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "27993301-3a11-40c0-b7c4-4143131b9a38",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C40",
+      "claim": "Kir2.1 expression strongly reduced spontaneous cortical network activity at P9-10 and P13-14.",
+      "claim_type": "EXPLICIT",
+      "source": "We also reported that Kir2.1 expression strongly reduced spontaneous cortical network activity at P9-10 and P13-14 (Hagihara et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "70244a2d-b3b1-49e9-9458-12cca14a58b8",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C41",
+      "claim": "Network activity around the second postnatal week is involved in the formation of callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that network activity around the second postnatal week is involved in the formation of callosal axon projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the previous findings mentioned.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "cdae47f2-8b9c-4aed-a768-34eccfd7ee99",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C42",
+      "claim": "In the Tet-off system, Kir2.1 was expressed without doxycycline (Dox) treatment, and Kir2.1 expression was suppressed in response to Dox treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, Kir2.1 was expressed without doxycycline (Dox) treatment, and Kir2.1 expression was suppressed in response to Dox treatment (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental system used, supported by reference to a figure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "a4b103ea-9a6e-4055-ab37-40dbe951b171",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C43",
+      "claim": "RFP-labeled callosal axon projections were impaired at P15 when mice were reared without Dox treatment throughout development.",
+      "claim_type": "EXPLICIT",
+      "source": "We reared the first group of mice without Dox treatment throughout development (n=7 mice). Under this condition, we observed that RFP-labeled callosal axon projections were impaired at P15 (Figure 1B, Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "3bc3e44d-a306-4c8b-96df-e8c5d830ba6f",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C44",
+      "claim": "Kir2.1 expression using the Tet-off system is as effective as that using the CAG promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Kir2.1 expression using the Tet-off system is as effective as that using the CAG promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "3b778d14-0d51-4e6c-b143-0c4d964abb28",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C45",
+      "claim": "RFP-labeled callosal axons projected normally to the contralateral cortex in a region- and lamina-specific manner at P15 when mice were reared with Dox throughout development (from E15 to P15).",
+      "claim_type": "EXPLICIT",
+      "source": "We then reared the second group with Dox throughout development (from E15 to P15: see Methods: n=8 mice). Under this condition, we observed that RFP-labeled callosal axons projected normally to the contralateral cortex in a region- and lamina-specific manner at P15 (Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c156d946-8877-405d-aabb-794004b1108b",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C46",
+      "claim": "Dox treatment effectively suppressed Kir2.1 expression throughout development.",
+      "claim_type": "EXPLICIT",
+      "source": "This projection pattern was similar to the pattern observed when we expressed only a fluorescent protein (i.e. normal pattern of callosal projections; Mizuno et al., 2007; Figure 1\u2014figure supplement 1), suggesting that Dox treatment effectively suppressed Kir2.1 expression throughout development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparison of experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "02cfb6a2-0f28-4269-a562-7cf009f261d1",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C47",
+      "claim": "Dox treatment for 4 days was almost enough to suppress gene expression in the Tet-off system.",
+      "claim_type": "EXPLICIT",
+      "source": "Dox treatment for 4 days was almost enough to suppress gene expression in the Tet-off system (Figure 1\u2014figure supplement 2; Figure 1\u2014figure supplement 3; regarding the apparent low-level expression of Kir2.1EGFP after Dox treatment, please see the legend of Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c21fcd2e-6e40-4ffa-89ed-b5697c8cd75d",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C48",
+      "claim": "RFP-labeled callosal axons reached the innervation area in the contralateral cortex and ramified in a laminar specific manner at P15 when Dox treatment was started from P6 and continued until P15.",
+      "claim_type": "EXPLICIT",
+      "source": "We started Dox treatment from P6 and continued it until P15 (n=10 mice). Under this condition, we observed that RFP-labeled callosal axons reached the innervation area in the contralateral cortex and ramified in a laminar specific manner at P15 (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "cd994642-f6a9-4837-add7-00aa771490c4",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C49",
+      "claim": "The projection pattern of callosal axons with Dox treatment from P6-15 appeared comparable to the normal pattern of callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "This projection pattern appeared comparable to the normal pattern of callosal axon projections (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual comparison of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "2a069628-a22c-46bb-91fa-f475591a12ce",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C50",
+      "claim": "The density of RFP-labeled callosal axons arriving and ramifying in the target cortical layer was comparable between the Dox P6-15 and Dox E15-P15 groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses suggested that the density of RFP-labeled callosal axons arriving and ramifying in the target cortical layer (see Methods) was comparable between the Dox P6-15 and Dox E15-P15 groups (p=0.96, Tukey\u2013Kramer test; Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c7ffd141-dc4c-4a0c-90e1-e0b960183395",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C51",
+      "claim": "The density of RFP-labeled callosal axons arriving and ramifying in the target cortical layer was greater in the Dox P6-15 group than in the no Dox group.",
+      "claim_type": "EXPLICIT",
+      "source": "and that it was greater in the Dox P6-15 group than in the no Dox group (p=9.0 \u00d7 10\u20134, one-way ANOVA; p=2.3 \u00d7 10\u20133, Tukey\u2013Kramer test; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "3a5f49f0-e27c-47b6-bd98-28c1f1aca275",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C52",
+      "claim": "Dox treatment at P6-15, which likely shut off Kir2.1 expression from P8-10 to P15, was effective for the formation of callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Dox treatment at P6-15, which likely shut off Kir2.1 expression from P8-10 to P15, was effective for the formation of callosal axon projections",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "7e4eb05e-0184-4536-b5ed-a0b78609bb6e",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C53",
+      "claim": "Callosal axons require neuronal activity during P6-15 to form their projections.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that callosal axons require neuronal activity during P6-15 to form their projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "362a42f8-6acf-4378-9e4c-0abd68d43f1d",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C54",
+      "claim": "Activation of hM3DGq in hippocampal neurons causes depolarization of the membrane potential, resulting in an increase in neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of hM3DGq, one of the artificial G-protein-coupled receptors used in DREADD technology, in hippocampal neurons causes depolarization of the membrane potential, resulting in an increase in neuronal activity (Alexander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "d1cbdf38-b5b1-4eda-a782-85c3e1a0f0b5",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C55",
+      "claim": "Electroporated mice with daily CNO injections from P10 to P14 exhibited a region- and lamina-specific projection pattern of RFP-labeled callosal axons in the contralateral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the electroporated mice with daily CNO injections from P10 to P14 (n=11 mice) exhibited a region- and lamina-specific projection pattern of RFP-labeled callosal axons in the contralateral cortex (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f923764d-15bf-40a9-beab-f61b542a27e7",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C56",
+      "claim": "Control groups of mice (Kir2.1+hM3DGq with saline injection P10-14 and Kir2.1 with CNO injection P10-14) did not exhibit region- and lamina-specific callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of the two control groups of mice (n=10 mice for Kir2.1+hM3 DGq with saline injection P10-14, n=4 mice for Kir2.1 with CNO injection P10-14) exhibited such axonal projections (Figure 2B, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "b197d2e1-fc6a-493a-9dac-6540753724ea",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C57",
+      "claim": "hM3DGq expression with CNO injections showed a partial but significant 'rescue' effect against the effect of Kir2.1 expression on callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses suggested a partial but significant 'rescue' effect of hM3DGq expression with CNO injections against the effect of Kir2.1 expression on callosal axon projections (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "be5fd8da-8795-4661-80f7-954ab6660b3a",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C58",
+      "claim": "The resumption of neuronal activity during P10-15 is effective for the formation of callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the resumption of neuronal activity during P10-15 is effective for the formation of callosal axon projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "556f56c6-33e8-4726-a1f6-745913ac302d",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C59",
+      "claim": "Callosal axons from Kir2.1-expressing neurons arrive in the white matter (WM) of the target innervation areas around P5, the same time as normal callosal axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Callosal axons from Kir2.1-expressing neurons arrive in the white matter (WM) of the target innervation areas around P5, the same time as normal callosal axons (Mizuno et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "ef99bb5a-e5cb-45ae-9390-a53b9e6c1275",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C60",
+      "claim": "Callosal axons from Kir2.1-expressing neurons exhibit retarded and eventually stalled growth and development after arriving in the white matter around P5.",
+      "claim_type": "EXPLICIT",
+      "source": "Afterward, they exhibit retarded and eventually stalled growth and development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from previous research findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "bce06437-ccb4-40c9-98ac-05d852a79ae8",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C61",
+      "claim": "The region- and lamina-specific projection pattern of callosal axons could not be recovered when Dox treatment was started later than P9.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the region- and lamina-specific projection pattern of callosal axons could not be recovered when Dox treatment was started later than P9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "ca77eeb6-bf3b-4a0a-b1a0-90a71eed3a71",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C62",
+      "claim": "Callosal axons were not present in the target innervation areas when Dox treatment was started from P9 or P12.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed in utero electroporation with the same set of plasmids as before (Figure 1A and Figure 3A), started Dox treatment from P9 or P12, and then assessed callosal axon projections at P18 or P21 (n=9 mice for Dox treatment P918: n=10 mice for Dox treatment P12-21). Contrary to the result of Dox treatment during P6-15, callosal axons were not present in the target innervation areas in either group of mice (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "2da6ba64-ad2b-4732-895c-a139c426e0b3",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C63",
+      "claim": "The extent of callosal axons arriving and ramifying in the target cortical layer was significantly lower in the Dox P9-18 and Dox P12-21 groups than in the Dox P6-15 group.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of callosal axons arriving and ramifying in the target cortical layer (see Methods) was significantly lower in the Dox P9-18 and Dox P12-21 groups than in the Dox P6-15 group (p=2.1 \u00d7 10\u20135, one-way ANOVA; Dox P9-18 vs Dox P6-15, p=1.0 \u00d7 10\u20134; Dox P12-21 vs Dox P6-15, p=9.0 \u00d7 10\u20135, Tukey\u2013Kramer test; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "450d1dbb-2510-4129-9375-1a7db551b191",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C64",
+      "claim": "Callosal axons retain the ability to grow into the target innervation areas and make lamina-specific branches only for a limited period during development.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that callosal axons retain the ability to grow into the target innervation areas and make lamina-specific branches only for a limited period during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "93048351-abd5-4eeb-9c52-2b1faa770307",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C65",
+      "claim": "Spontaneous network activity in the early postnatal cerebral cortex can be classified as a highly synchronous pattern (H events) or a less correlated pattern (L events).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that spontaneous network activity frequently occurs in the early postnatal cerebral cortex. Such network activity can be classified as a highly synchronous pattern (H events) or a less correlated pattern (L events) (Siegel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "2e8bbfe1-329f-4f87-aea8-3d66eb201abf",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C66",
+      "claim": "In the visual cortex, H events are mostly of cortical origin, whereas L events are driven by activity in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "In the visual cortex, these events are mechanistically distinct (Siegel et al., 2012): H events are mostly of cortical origin, whereas L events are driven by activity in the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "248307d2-57b1-4bbb-b50d-75284c21efef",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C67",
+      "claim": "H events and L events may have distinct roles in cortical circuit formation.",
+      "claim_type": "EXPLICIT",
+      "source": "They may have distinct roles in cortical circuit formation (Cheyne et al., 2019; Wosniack et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "bf9c8139-008e-42a2-9c5d-1968f081830a",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C68",
+      "claim": "Control mice exhibited frequent spontaneous network events during 10-minute recording sessions at P13.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a previous study (Hagihara et al., 2015), control mice (in which the fluorescent protein FP635 was electroporated: n=5 mice) exhibited frequent spontaneous network events during 10-minute recording sessions (Figure 4B, C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "6f7a8812-d69a-4df4-b651-d986bd8a4420",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C69",
+      "claim": "Kir2.1-expressing mice exhibited substantially fewer network events than control mice at P13.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Kir2.1-expressing mice exhibited substantially fewer network events (n=5 mice, Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "8b3050cc-53ed-441e-a281-5d8937ec5c16",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C70",
+      "claim": "Both Kir2.1-positive and Kir2.1-negative neurons were suppressed in Kir2.1-expressing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both Kir2.1-positive and Kir2.1-negative neurons were suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observation of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "1e39ebaf-4c32-4e05-91ad-cee4ab6d7322",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C71",
+      "claim": "Control mice exhibited both H events and L events at P13.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed both patterns of network activity in control mice at P13 (Figure 4F) (H events, 1.70\u00b10.36 events/min; L events, 2.16\u00b10.27 events/min)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "020390d9-6ac5-436e-8ffc-553f102ae0ce",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C72",
+      "claim": "Kir2.1 expression significantly reduced both H events and L events.",
+      "claim_type": "EXPLICIT",
+      "source": "and Kir2.1 expression significantly reduced both of them (Figure 4F) (H events, 0.21\u00b10.10 events/min; L events, 0.62\u00b10.09 events/min; H events, p=1.3 \u00d7 10\u20133; L events, p=4.9 \u00d7 10\u20134 by one-way ANOVA; H events, p=1.2 \u00d7 10\u20133; L events, p=8.1 \u00d7 10\u20134 by Tukey\u2013Kramer test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "034e750a-25af-4c05-a886-45cd98db5a62",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C73",
+      "claim": "Dox treatment from P6 resumed cortical network activity at P13.",
+      "claim_type": "EXPLICIT",
+      "source": "We started Dox treatment on P6 and recorded spontaneous neuronal activity in the electroporated mice at P13 (n=5 mice). We found that Dox treatment from P6 resumed cortical network activity at P13 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "e79e7865-a479-4d3a-bfe8-ce8c24304a64",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C74",
+      "claim": "Dox treatment from P6 almost recovered L events, whereas H events were not recovered.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, this treatment almost recovered L events, whereas H events were not recovered (H events, 0.66\u00b10.21 events/min; L events, 2.01\u00b10.30 events/min; Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "2f20d9f0-5ff5-4156-9f52-522894a8bfc7",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C75",
+      "claim": "L events may make a larger contribution to the formation of callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "L events may make a larger contribution to the formation of callosal axon projections, although the involvement of H events or the total frequency of activity cannot be ruled out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "4f2aa3df-a2c6-4dea-9d1e-2bac75b32988",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C76",
+      "claim": "Sufficiently high activity during P6-15 plays a role in the formation of region- and lamina-specific projection patterns of callosal axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our observations suggest that sufficiently high activity during P6-15 plays a role in the formation of region- and lamina-specific projection patterns of callosal axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f910ed90-a60a-4846-8d26-45c63d1404f5",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C77",
+      "claim": "Spontaneous activity during P6-15 contributes to the formation of region- and lamina-specific projection patterns of callosal axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, using a genetic method to reduce and restore spontaneous network activity in the early postnatal cerebral cortex, we demonstrated that spontaneous activity during P6-15 contributes to the formation of region- and lamina-specific projection patterns of callosal axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "da2fd96e-2484-4900-8789-b093cefbe5e3",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C78",
+      "claim": "Spontaneous cortical activity plays important roles in the fine-tuning of local circuits and neural function.",
+      "claim_type": "EXPLICIT",
+      "source": "Several previous studies have revealed important roles of spontaneous cortical activity in the fine-tuning of local circuits and neural function (Winnubst et al., 2015: Hagihara et al., 2015; Wosniack et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "a33d560b-2027-40a6-924b-889746b8a486",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C79",
+      "claim": "Not only local circuits but also long-range axonal projections require spontaneous activity for their normal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings add new evidence of the critical role of spontaneous network activity in cortical circuit formation and demonstrate that not only local circuits but also long-range axonal projections require spontaneous activity for their normal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "dae534a7-ee34-4846-8600-ac1891bc48a1",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C80",
+      "claim": "A developmental change in the firing mode of callosal projection neurons, regulated by transcription factor Cux1-driven Kv1 channel expression, was critically involved in activity-dependent callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that a developmental change in the firing mode of callosal projection neurons, regulated by transcription factor Cux1-driven Kv1 channel expression, was critically involved in activity-dependent callosal axon projections (Rodr\u00edguez-Tornos et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "e0dea848-6591-4ce9-b7ce-59fca032fb78",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C81",
+      "claim": "Spontaneous activity in vivo is critical for callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study extends their findings by demonstrating that spontaneous activity in vivo is critical for callosal axon projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion of the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "80f2ae7c-6517-475b-936a-ddee29aba504",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C82",
+      "claim": "A similar developmental time window for the formation of axonal projections was reported in the olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar developmental time window for the formation of axonal projections was reported in the olfactory system (Ma et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "cf4146e1-5491-4363-8fb4-83533da8f1f1",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C83",
+      "claim": "Callosal axons could reach the innervation area almost normally under activity reduction, and the effects of activity reduction became apparent afterward.",
+      "claim_type": "EXPLICIT",
+      "source": "In the previous study, we showed that callosal axons could reach the innervation area almost normally under activity reduction, and that the effects of activity reduction became apparent afterward (Mizuno et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c72f8dff-b069-4178-8111-4e655a0424ab",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C84",
+      "claim": "Callosal axons elaborate their branches extensively in P10-P15.",
+      "claim_type": "EXPLICIT",
+      "source": "Callosal axons elaborate their branches extensively in P10-P15 (Mizuno et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "25c3546a-ca80-43c2-9384-e150192b35f9",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C85",
+      "claim": "Axon branching is regulated by neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "and axon branching is regulated by neuronal activity (Matsumoto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "57fe5e1c-f8b6-4327-8a16-3701cc029541",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C86",
+      "claim": "Activity is likely required for the processes of formation, rather than the maintenance of the connections already formed by P10.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that activity is required for the processes of formation, rather than the maintenance of the connections already formed by P10",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "fbf5adf4-440e-4f0e-866d-bbcdb80c5f19",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C87",
+      "claim": "Callosal axons retain the ability, or are permitted, to grow and make region- and lamina-specific projections in the cortex during a limited period of postnatal cortical development under an activity-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our findings suggest that callosal axons retain the ability, or are permitted, to grow and make region- and lamina-specific projections in the cortex during a limited period of postnatal cortical development under an activity-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "0f771a43-58d8-4b4f-8f1f-eaad8faeac10",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C88",
+      "claim": "Network activity in the retina (retinal waves) is proposed to provide spatial information for axonal projections in retinothalamic and retinocollicular projections.",
+      "claim_type": "EXPLICIT",
+      "source": "In retinothalamic and retinocollicular projections, network activity in the retina (retinal waves) is proposed to provide spatial information for axonal projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "13ad0dec-d58d-43bb-a1fd-5d84602a5f96",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C89",
+      "claim": "Two adjacent RGCs, which likely fire together in a spontaneous network event, would project their axons to an adjacent location in the target tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "It is proposed that two adjacent RGCs, which likely fire together in a spontaneous network event would project their axons to an adjacent location in the target tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "16e0f6f3-2baa-4c36-b156-a7ef6c020375",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C90",
+      "claim": "Two RGCs located distantly, or even in the left and right eyes, are unlikely to fire together, projecting axons to distinct locations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, two RGCs located distantly, or even in the left and right eyes, are unlikely to fire together, projecting axons to distinct locations (Wong, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "9e904f58-ce98-4381-ab9e-b11789615b55",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C91",
+      "claim": "The highly synchronous network activity in the cortex recruits more than 60% of neurons in an imaging field, clearly exceeding the proportion of callosal projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly synchronous network activity in the cortex recruits more than 60% of neurons in an imaging field, clearly exceeding the proportion of callosal projection neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data and known proportions of callosal projection neurons.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "6a1fe1ea-3875-453e-9e2d-319604b1f542",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C92",
+      "claim": "Callosal projection neurons are intermingled with other types of cortical neurons that project axons intracortically.",
+      "claim_type": "EXPLICIT",
+      "source": "Callosal projection neurons are intermingled with other types of cortical neurons that project axons intracortically (Mitchell and Macklis, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f537e11f-ba47-4f46-a93f-b05960c8780e",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C93",
+      "claim": "Both callosal projection neurons and other types of cortical neurons contribute to H events once they occur.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that both the former and the latter contribute to H events once they occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the previous statements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f6e9a9b3-6efa-46a5-b6f9-69e6c152724d",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C94",
+      "claim": "If the highly synchronous activity in the cortex exerts a similar role as retinal waves, it may provide topographic information to callosal axons and other axons projecting to other cortical regions at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "If the highly synchronous activity in the cortex exerts a similar role as retinal waves, it may provide topographic information to callosal axons and other axons projecting to other cortical regions at the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on analogy to retinal waves.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f15b7496-6a50-4907-b6fb-5fccb4496601",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C95",
+      "claim": "L events, but not H events, were present in P13 cortex after Dox treatment at P6.",
+      "claim_type": "EXPLICIT",
+      "source": "L events, but not H events, were present in P13 cortex after Dox treatment at P6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "7338a921-104c-4249-a783-94dc97aa167c",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C96",
+      "claim": "L events may be sufficient for the formation of callosal projections.",
+      "claim_type": "EXPLICIT",
+      "source": "L events may be sufficient for the formation of callosal projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "9225d93d-e948-4e21-8fd3-ab563410c4b6",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C97",
+      "claim": "Any form of activity with certain level(s) (i.e. 'sufficiently' high activity with no specific pattern) could be permissive for the formation of callosal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, any form of activity with certain level(s) (i.e. 'sufficiently' high activity with no specific pattern) could be permissive for the formation of callosal connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative interpretations of the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "88ae46f2-82ac-4506-a3f9-c66cf268648c",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C98",
+      "claim": "Callosal projection neurons preferentially make synaptic connections with neighboring callosal projection neurons and form local subnetworks.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, we showed that callosal projection neurons preferentially make synaptic connections with neighboring callosal projection neurons and form local subnetworks (Hagihara et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "56e0bb86-db6b-4258-a881-197a3b5aaa94",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C99",
+      "claim": "Some of the L events observed in this study may reflect the correlated subnetwork activity of callosal projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the L events observed in this study may reflect the correlated subnetwork activity of callosal projection neurons, and such correlated activity may be critical for their axonal projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the recent findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "e033a3a9-9a2e-476a-b04b-5f7431887b7c",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C100",
+      "claim": "Correlated subnetwork activity of callosal projection neurons may be critical for their axonal projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the L events observed in this study may reflect the correlated subnetwork activity of callosal projection neurons, and such correlated activity may be critical for their axonal projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the recent findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "c6783b1c-669b-44c9-84cf-a3aa4e36f85a",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C101",
+      "claim": "L events might be coactivations of locally connected cortical neurons, sending axons to the same target region(s).",
+      "claim_type": "EXPLICIT",
+      "source": "This consideration may lead to a more general and intriguing idea that L events might be coactivations of locally connected cortical neurons, sending axons to the same target region(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a more general interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "214094d3-bcc2-43fa-a377-e81ec3de52af",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C102",
+      "claim": "Network activity may function to induce some trophic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Network activity may also function to induce some trophic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "38e1eec5-9a17-4761-b5ce-940631b62ad1",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C103",
+      "claim": "If network activity induces trophic factors, the effect of reducing the activity of a small number of cells could be less than that of global activity reduction because surrounding unperturbed cells can supply a 'trophic factor' for the perturbed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "If this is the case, the effect of reducing the activity of a small number of cells could be less than that of global activity reduction (Mizuno et al., 2010) because surrounding unperturbed cells can supply a 'trophic factor' for the perturbed cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on previous findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f69977ae-c5d2-44b5-a896-2bdcb0f139f9",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C104",
+      "claim": "Spontaneous firing causes the release of BDNF, which non-cell-autonomously functions to trigger TrkB receptor activation and activity-dependent transmitter switching in surrounding neurons in Xenopus spinal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Spitzer et al. showed that BDNF could exert such a function in Xenopus spinal neurons (Guemez-Gamboa et al., 2014). They showed that spontaneous firing causes the release of BDNF, which non-cell-autonomously functions to trigger TrkB receptor activation and activity-dependent transmitter switching in the surrounding neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "b2ae3192-078c-4a5e-8ff2-57fbe638c2c3",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C105",
+      "claim": "BDNF may function in callosal axon projections.",
+      "claim_type": "EXPLICIT",
+      "source": "BDNF may function in callosal axon projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the previous findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "ed158abf-5a2f-4039-bba9-376e2cde55c8",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C106",
+      "claim": "BDNF expression is activity-dependent in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "BDNF expression is activity-dependent in the cortex (Tao et al., 1998; Lein and Shatz, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "6df4e865-1d79-4f72-a71d-f5dfd7084de3",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C107",
+      "claim": "Callosal axons require BDNF secretion for their projections.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that callosal axons require BDNF secretion for their projections (Shimojo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "86665d63-2957-4857-bea4-4a8e510efa8e",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C108",
+      "claim": "Activity-dependent secretion of BDNF, or other factor(s), may be associated with the network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity-dependent secretion of BDNF, or other factor(s), may be associated with the network activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the previous findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "d9427ddf-94b1-4a17-9547-032ae70fc07b",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C109",
+      "claim": "There may have been residual Kir2.1 expression after Dox treatment in the activity manipulation experiments using the Tet-off system.",
+      "claim_type": "EXPLICIT",
+      "source": "In the activity manipulation experiments using the Tet-off system (Figures 1 and 4), there may have been residual Kir2.1 expression after Dox treatment (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observation of experimental data in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "28c31e0d-c664-4d88-9cd7-0da5bb891a19",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C110",
+      "claim": "It remains uncertain precisely when activity levels returned and what patterns of spontaneous activity emerged during the Dox-treated period.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it remains uncertain precisely when activity levels returned and what patterns of spontaneous activity emerged during the Dox-treated period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "6ba58635-0164-4178-a30e-78c62719bf63",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C111",
+      "claim": "Highly and/or less synchronous activity can be instructive or permissive to the formation of cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly and/or less synchronous activity can be instructive or permissive to the formation of cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the role of different activity patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "fca1af49-016c-4b87-a1c4-a93009019ba0",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C112",
+      "claim": "L events may be a mixture of different patterns of activity with mixed populations of neurons in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, L events may be a mixture of different patterns of activity with mixed populations of neurons in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the nature of L events.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "48615d87-3098-4a9e-8d94-2e0dec31a290",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C113",
+      "claim": "Some pattern(s) of network activity embedded in L events may play a role in the formation of callosal projections and cortical connections in general.",
+      "claim_type": "EXPLICIT",
+      "source": "Some pattern(s) of network activity embedded in L events may play a role in the formation of callosal projections and cortical connections in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the role of specific activity patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "756d61fe-e11b-45ac-b234-439fca92a2ba",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C114",
+      "claim": "Some aspects of callosal projections might be partially recovered in Dox P6-15 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of the width of callosal axon innervation zone, as well as densitometric line scans across all cortical layers, suggest that some aspects of callosal projections might be partially recovered in Dox P6-15 mice (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on additional analyses of experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "80c734af-9dfd-493b-8ccf-88d9a2fab276",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C115",
+      "claim": "An intraperitoneally injected CNO was effective (in terms of increasing activity) for about 9 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study showed that an intraperitoneally injected CNO was effective (in terms of increasing activity) for about 9 hr (Alexander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f1ec0f79-51d1-4931-886c-c455a34dc75a",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "claim_id": "C116",
+      "claim": "The 'partial rescue' effect observed may suggest that activity was not fully restored during 24 hr by daily CNO injections.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'partial rescue' effect we observed (Figure 2) may suggest that activity was not fully restored during 24 hr by our daily CNO injections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental results and previous knowledge about CNO effectiveness.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "98ecbd83-fe95-4523-944a-298cba32ec17",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using a Tet-off system to control Kir2.1 expression, the authors demonstrate that restoring neuronal activity during P6-15 (by Dox treatment) rescues callosal axon projections to normal levels, while continuous Kir2.1 expression (no Dox) impairs projections. Quantitative analyses show that axon density in layers 1-3 is comparable between Dox P6-15 and Dox E15-P15 groups and significantly greater than the no Dox group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C53 collectively demonstrate the Tet-off system works as intended (C42, C46, C47) and that Dox treatment during P6-15 effectively rescues callosal projections (C48-C51). The quantitative data with appropriate statistical tests (C50, C51) support the conclusion that neuronal activity during P6-15 is required for callosal axon projection formation (C52, C53). The experimental design includes proper controls and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "159982d0-404f-4ba4-a68c-e854359c218a",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using DREADD technology (hM3DGq with CNO injections P10-14), the authors show a partial but significant rescue of callosal axon projections in Kir2.1-expressing mice. Control groups (saline injection or CNO without hM3DGq) did not show rescue, confirming that resumption of neuronal activity during P10-15 is effective for callosal projection formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 provide converging evidence using an independent method (DREADD) to support the critical period findings. The inclusion of appropriate controls (C56) and quantitative analysis (C57) strengthen the conclusion. However, the 'partial rescue' effect (C57, C116) suggests incomplete restoration of activity, which is acknowledged by the authors and consistent with the known duration of CNO effectiveness (C115).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "a0e88af2-7513-4baf-a162-634db93136fd",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate a critical period for callosal axon projection formation by showing that Dox treatment starting at P9 or P12 fails to rescue projections, unlike P6 treatment. Quantitative analyses show significantly lower axon density in late-treatment groups compared to P6-15 treatment, suggesting callosal axons retain the ability to grow and branch only during a limited developmental window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 establish temporal specificity of the critical period through systematic manipulation of Dox treatment timing. The experimental design directly tests the hypothesis by varying treatment start times (C61, C62), with quantitative support (C63) using appropriate statistics. The conclusion (C64) is well-supported by the data, though the authors acknowledge limitations regarding the precise timing of activity restoration (C109, C110).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "96c0fe66-ed24-49c5-a163-79b63382bb1f",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using in vivo two-photon calcium imaging at P13, the authors characterize spontaneous network activity patterns (H events and L events) and show that Kir2.1 expression reduces both types. Unexpectedly, Dox treatment from P6 recovers L events but not H events, suggesting L events may make a larger contribution to callosal axon projection formation, though the involvement of H events or total activity frequency cannot be ruled out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C76 provide mechanistic insight into which activity patterns contribute to callosal projections. The calcium imaging data (C68-C74) with appropriate statistical analyses (C72) support the differential recovery of L vs H events. However, the conclusion about L events' larger contribution (C75) is appropriately cautious, acknowledging alternative interpretations. The correlation between L event recovery and axon projection rescue is compelling but not definitively causal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study's main conclusion is that spontaneous network activity is selectively required during a critical developmental time window (P6-15) for the formation of long-range callosal axonal projections in the cortex. Restoring activity during this period rescues projections, while restoration after the period fails. Projections can be established without fully restoring highly synchronous activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the study's primary conclusions, which are well-supported by the convergent evidence from multiple experimental approaches (Tet-off system, DREADD, calcium imaging, and temporal manipulation experiments). The conclusions are appropriately qualified (C7, C75) and acknowledge limitations (C109, C110). The demonstration that long-range projections require spontaneous activity (C79, C81) extends previous findings about local circuits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "e9c038b8-f485-4f2b-aac9-05327674df5f",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors provide background on spontaneous network activity in the developing neocortex and visual system, including retinal waves and their roles in circuit formation. This establishes the context for studying spontaneous activity's role in cortical circuit development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 represent established knowledge in the field, supported by appropriate citations to prior work. These provide necessary background and context for the current study. The claims accurately represent the cited literature and establish the knowledge gap (C21) that motivates the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors review prior work on callosal axon projections, including their anatomical properties, functional importance, activity-dependence, and the effects of Kir2.1 expression. This establishes the foundation for the current study's hypothesis about a critical period for activity-dependent callosal projection formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22-C35 accurately represent prior work (including the authors' own previous studies) and establish the rationale for the current experiments. The progression from established facts to the hypothesis (C35) is logical. These claims provide essential context but are not primary findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "b5ce83cf-3c2f-4d16-8987-db471e2d7c62",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors establish that callosal axons in the visual cortex project to a restricted region at the V1/V2 border, terminating primarily in layer 2/3, with this pattern forming by P15. Previous work showed Kir2.1 expression disturbs development primarily in the second postnatal week and reduces spontaneous network activity, suggesting network activity around the second postnatal week is involved in callosal projection formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 combine established anatomical knowledge (C36-C38) with prior findings from the authors' work (C39-C40) to generate a testable inference (C41). The claims are well-supported by citations and provide the specific rationale for focusing on the P6-15 period in the current experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "61b13f40-39d7-41bb-9d7e-b7d6a22b41d5",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings within prior work showing that spontaneous cortical activity plays important roles in fine-tuning local circuits, that firing mode changes in callosal neurons are involved in activity-dependent projections, and that similar developmental time windows exist in other systems. They also reference their previous finding that callosal axons reach target areas normally under activity reduction but show effects afterward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C80, C82-C85 appropriately cite and interpret prior work to contextualize the current findings. These claims accurately represent the cited literature and help position the current study's contributions within the broader field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "5d808345-bbeb-4db3-a57c-200a41d249b5",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss potential mechanisms by which spontaneous activity might contribute to callosal projections, including analogies to retinal waves providing topographic information, the possibility that L events reflect subnetwork activity of callosal neurons, and potential roles for trophic factors like BDNF. They acknowledge uncertainty about which specific activity patterns are instructive versus permissive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86, C88-C94, C96-C105, C108, C111-C113 are largely speculative (as indicated by their evidence_type including SPECULATION). While these speculations are reasonable and grounded in prior work (C88-C90, C104, C106-C107), they represent hypotheses for future testing rather than conclusions supported by the current data. The authors appropriately qualify these as possibilities rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    },
+    {
+      "id": "508f2e13-8575-4851-84d0-b6f498c9aaee",
+      "content_id": "eff49de5-386d-418b-8d10-49d77ed4ff63",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations of their study, including potential residual Kir2.1 expression after Dox treatment, uncertainty about precise timing of activity restoration, partial recovery of some projection aspects, and incomplete activity restoration in DREADD experiments due to limited CNO effectiveness duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C110, C114-C116 represent appropriate acknowledgment of experimental limitations. These are supported by data (C109, C114) or reasonable inferences from prior work (C115, C116). The authors' transparency about these limitations strengthens rather than weakens the overall conclusions, as the main findings remain robust despite these caveats.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:12:19.207026Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cdae47f2-8b9c-4aed-a768-34eccfd7ee99",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "a4b103ea-9a6e-4055-ab37-40dbe951b171",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "3bc3e44d-a306-4c8b-96df-e8c5d830ba6f",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "3b778d14-0d51-4e6c-b143-0c4d964abb28",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "c156d946-8877-405d-aabb-794004b1108b",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "02cfb6a2-0f28-4269-a562-7cf009f261d1",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "c21fcd2e-6e40-4ffa-89ed-b5697c8cd75d",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "cd994642-f6a9-4837-add7-00aa771490c4",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "2a069628-a22c-46bb-91fa-f475591a12ce",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "c7ffd141-dc4c-4a0c-90e1-e0b960183395",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "3a5f49f0-e27c-47b6-bd98-28c1f1aca275",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "7e4eb05e-0184-4536-b5ed-a0b78609bb6e",
+      "result_id": "98ecbd83-fe95-4523-944a-298cba32ec17"
+    },
+    {
+      "claim_id": "362a42f8-6acf-4378-9e4c-0abd68d43f1d",
+      "result_id": "159982d0-404f-4ba4-a68c-e854359c218a"
+    },
+    {
+      "claim_id": "d1cbdf38-b5b1-4eda-a782-85c3e1a0f0b5",
+      "result_id": "159982d0-404f-4ba4-a68c-e854359c218a"
+    },
+    {
+      "claim_id": "f923764d-15bf-40a9-beab-f61b542a27e7",
+      "result_id": "159982d0-404f-4ba4-a68c-e854359c218a"
+    },
+    {
+      "claim_id": "b197d2e1-fc6a-493a-9dac-6540753724ea",
+      "result_id": "159982d0-404f-4ba4-a68c-e854359c218a"
+    },
+    {
+      "claim_id": "be5fd8da-8795-4661-80f7-954ab6660b3a",
+      "result_id": "159982d0-404f-4ba4-a68c-e854359c218a"
+    },
+    {
+      "claim_id": "556f56c6-33e8-4726-a1f6-745913ac302d",
+      "result_id": "a0e88af2-7513-4baf-a162-634db93136fd"
+    },
+    {
+      "claim_id": "ef99bb5a-e5cb-45ae-9390-a53b9e6c1275",
+      "result_id": "a0e88af2-7513-4baf-a162-634db93136fd"
+    },
+    {
+      "claim_id": "bce06437-ccb4-40c9-98ac-05d852a79ae8",
+      "result_id": "a0e88af2-7513-4baf-a162-634db93136fd"
+    },
+    {
+      "claim_id": "ca77eeb6-bf3b-4a0a-b1a0-90a71eed3a71",
+      "result_id": "a0e88af2-7513-4baf-a162-634db93136fd"
+    },
+    {
+      "claim_id": "2da6ba64-ad2b-4732-895c-a139c426e0b3",
+      "result_id": "a0e88af2-7513-4baf-a162-634db93136fd"
+    },
+    {
+      "claim_id": "450d1dbb-2510-4129-9375-1a7db551b191",
+      "result_id": "a0e88af2-7513-4baf-a162-634db93136fd"
+    },
+    {
+      "claim_id": "93048351-abd5-4eeb-9c52-2b1faa770307",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "2e8bbfe1-329f-4f87-aea8-3d66eb201abf",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "248307d2-57b1-4bbb-b50d-75284c21efef",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "bf9c8139-008e-42a2-9c5d-1968f081830a",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "6f7a8812-d69a-4df4-b651-d986bd8a4420",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "8b3050cc-53ed-441e-a281-5d8937ec5c16",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "1e39ebaf-4c32-4e05-91ad-cee4ab6d7322",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "020390d9-6ac5-436e-8ffc-553f102ae0ce",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "034e750a-25af-4c05-a886-45cd98db5a62",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "e79e7865-a479-4d3a-bfe8-ce8c24304a64",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "2f20d9f0-5ff5-4156-9f52-522894a8bfc7",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "4f2aa3df-a2c6-4dea-9d1e-2bac75b32988",
+      "result_id": "96c0fe66-ed24-49c5-a163-79b63382bb1f"
+    },
+    {
+      "claim_id": "8f234496-913c-4d39-bd93-c4bd117a7d68",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "47be0cc6-2a45-429a-b1b4-8a352c8093c2",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "b2977f69-b548-4e9d-b1f2-59258219bb54",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "4fd16910-777d-4627-b127-79962da45838",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "0e6483f1-8e64-428f-83fa-bdb136297ea9",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "f910ed90-a60a-4846-8d26-45c63d1404f5",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "a33d560b-2027-40a6-924b-889746b8a486",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "e0dea848-6591-4ce9-b7ce-59fca032fb78",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "fbf5adf4-440e-4f0e-866d-bbcdb80c5f19",
+      "result_id": "f70f5fcf-c26f-4978-b1ab-7f41cf88c543"
+    },
+    {
+      "claim_id": "a1e70fb8-b1b8-4b50-8f8d-048dade069eb",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "8229de4b-a05a-4e81-b223-c82b78e0c0c4",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "8034da5e-1e01-47cb-b733-6444a32205d9",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "c193b41c-dd56-4340-8a47-70748007fe01",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "61aa31a5-a722-45ea-9f55-1081ae8ae3bc",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "2d9fa812-c8e0-4c27-8097-489bd5ca54c6",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "383feb32-4c47-4a7f-a4f7-819f4b4aa1cd",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "fa6b2bd4-f2e4-418d-96be-841a62cef5fb",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "7bdf49d5-8875-41e0-b73a-533856498590",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "0d025271-0044-4a02-81bb-ead4415622ca",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "45a814c3-a106-4ff3-a142-5dc9194f20ea",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "cc8d1d45-d46a-4e1d-9bf6-fd309ffd0555",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "576aaa10-9da3-455a-9d94-6032e64b185c",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "474bb600-0574-4984-a487-9ed11d2c11fc",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "25f8428f-ff06-4768-a3aa-b3f661117b4f",
+      "result_id": "e9c038b8-f485-4f2b-aac9-05327674df5f"
+    },
+    {
+      "claim_id": "f6c489d8-172c-4b34-9880-4cbaac3415a9",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "936c555e-f382-477b-9213-6008cb42eb4e",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "0f3003cf-29d0-47e8-93f9-e1f7f5e37c14",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "bbba6828-d8cd-46e9-82c7-2f3634a3fd9d",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "da19d9bb-77a8-4459-86ee-280899dbcd1b",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "cb18b0fc-99a6-4db9-bc03-ea98f0466d19",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "66b20bfc-33d0-4271-987e-852039d6468c",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "c2b5ecbb-4931-45c7-9b61-54d4d56799b7",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "c8243f4d-4a15-494d-92c3-e8279c01c192",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "c286caa6-af76-4321-94b1-cdcba690a504",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "e8a0041c-d824-4f2f-99c1-5b8a4a569516",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "3fa114dc-5b12-4c6c-b400-447dfc548b11",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "c3dd237b-a227-485e-8fba-76eac94b0648",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "146e4ff1-a6d2-4c22-9ed8-b5367a55e1f2",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "c675eab7-2272-45dd-acb8-1de59846f6d7",
+      "result_id": "4c5ed8de-d1a2-4c14-a88f-7162df148f6b"
+    },
+    {
+      "claim_id": "71518500-9480-4205-b6a1-92efdd80bcea",
+      "result_id": "b5ce83cf-3c2f-4d16-8987-db471e2d7c62"
+    },
+    {
+      "claim_id": "9da18dd3-126c-4e1a-af80-9b756fd041fc",
+      "result_id": "b5ce83cf-3c2f-4d16-8987-db471e2d7c62"
+    },
+    {
+      "claim_id": "1415524c-f7b4-4802-aef8-a3d2a32632f6",
+      "result_id": "b5ce83cf-3c2f-4d16-8987-db471e2d7c62"
+    },
+    {
+      "claim_id": "a74b0a4b-1a96-4b05-bcfc-f5a3a8745499",
+      "result_id": "b5ce83cf-3c2f-4d16-8987-db471e2d7c62"
+    },
+    {
+      "claim_id": "27993301-3a11-40c0-b7c4-4143131b9a38",
+      "result_id": "b5ce83cf-3c2f-4d16-8987-db471e2d7c62"
+    },
+    {
+      "claim_id": "70244a2d-b3b1-49e9-9458-12cca14a58b8",
+      "result_id": "b5ce83cf-3c2f-4d16-8987-db471e2d7c62"
+    },
+    {
+      "claim_id": "da2fd96e-2484-4900-8789-b093cefbe5e3",
+      "result_id": "61b13f40-39d7-41bb-9d7e-b7d6a22b41d5"
+    },
+    {
+      "claim_id": "dae534a7-ee34-4846-8600-ac1891bc48a1",
+      "result_id": "61b13f40-39d7-41bb-9d7e-b7d6a22b41d5"
+    },
+    {
+      "claim_id": "80f2ae7c-6517-475b-936a-ddee29aba504",
+      "result_id": "61b13f40-39d7-41bb-9d7e-b7d6a22b41d5"
+    },
+    {
+      "claim_id": "cf4146e1-5491-4363-8fb4-83533da8f1f1",
+      "result_id": "61b13f40-39d7-41bb-9d7e-b7d6a22b41d5"
+    },
+    {
+      "claim_id": "c72f8dff-b069-4178-8111-4e655a0424ab",
+      "result_id": "61b13f40-39d7-41bb-9d7e-b7d6a22b41d5"
+    },
+    {
+      "claim_id": "25c3546a-ca80-43c2-9384-e150192b35f9",
+      "result_id": "61b13f40-39d7-41bb-9d7e-b7d6a22b41d5"
+    },
+    {
+      "claim_id": "57fe5e1c-f8b6-4327-8a16-3701cc029541",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "0f771a43-58d8-4b4f-8f1f-eaad8faeac10",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "13ad0dec-d58d-43bb-a1fd-5d84602a5f96",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "16e0f6f3-2baa-4c36-b156-a7ef6c020375",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "9e904f58-ce98-4381-ab9e-b11789615b55",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "6a1fe1ea-3875-453e-9e2d-319604b1f542",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "f537e11f-ba47-4f46-a93f-b05960c8780e",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "f6e9a9b3-6efa-46a5-b6f9-69e6c152724d",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "7338a921-104c-4249-a783-94dc97aa167c",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "9225d93d-e948-4e21-8fd3-ab563410c4b6",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "88ae46f2-82ac-4506-a3f9-c66cf268648c",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "56e0bb86-db6b-4258-a881-197a3b5aaa94",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "e033a3a9-9a2e-476a-b04b-5f7431887b7c",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "c6783b1c-669b-44c9-84cf-a3aa4e36f85a",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "214094d3-bcc2-43fa-a377-e81ec3de52af",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "38e1eec5-9a17-4761-b5ce-940631b62ad1",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "f69977ae-c5d2-44b5-a896-2bdcb0f139f9",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "b2ae3192-078c-4a5e-8ff2-57fbe638c2c3",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "ed158abf-5a2f-4039-bba9-376e2cde55c8",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "6df4e865-1d79-4f72-a71d-f5dfd7084de3",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "86665d63-2957-4857-bea4-4a8e510efa8e",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "6ba58635-0164-4178-a30e-78c62719bf63",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "fca1af49-016c-4b87-a1c4-a93009019ba0",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "48615d87-3098-4a9e-8d94-2e0dec31a290",
+      "result_id": "5d808345-bbeb-4db3-a57c-200a41d249b5"
+    },
+    {
+      "claim_id": "d9427ddf-94b1-4a17-9547-032ae70fc07b",
+      "result_id": "508f2e13-8575-4851-84d0-b6f498c9aaee"
+    },
+    {
+      "claim_id": "28c31e0d-c664-4d88-9cd7-0da5bb891a19",
+      "result_id": "508f2e13-8575-4851-84d0-b6f498c9aaee"
+    },
+    {
+      "claim_id": "756d61fe-e11b-45ac-b234-439fca92a2ba",
+      "result_id": "508f2e13-8575-4851-84d0-b6f498c9aaee"
+    },
+    {
+      "claim_id": "80c734af-9dfd-493b-8ccf-88d9a2fab276",
+      "result_id": "508f2e13-8575-4851-84d0-b6f498c9aaee"
+    },
+    {
+      "claim_id": "f1ec0f79-51d1-4931-886c-c455a34dc75a",
+      "result_id": "508f2e13-8575-4851-84d0-b6f498c9aaee"
+    }
+  ],
+  "comparisons": []
+}

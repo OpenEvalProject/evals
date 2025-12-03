@@ -1,0 +1,943 @@
+{
+  "submission": {
+    "id": "0ae69cdb-f978-425b-be52-fe3a50d72b4d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:29:45.194046Z",
+    "updated_at": "2025-12-03T19:29:45.194046Z"
+  },
+  "content": [
+    {
+      "id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "submission_id": "0ae69cdb-f978-425b-be52-fe3a50d72b4d",
+      "content_type": "manuscript",
+      "content_text": "# Cellular compartmentalisation and receptor promiscuity as a strategy for accurate and robust inference of position during morphogenesis\n\n## Authors\n\n- Krishnan S Iyer<sup>1</sup> ([ORCID: 0000-0002-0930-5164](https://orcid.org/0000-0002-0930-5164))\n- Chaitra Prabhakara<sup>2</sup>\n- Satyajit Mayor<sup>2</sup> ([ORCID: 0000-0001-9842-6963](https://orcid.org/0000-0001-9842-6963)) \u2020\n- Madan Rao<sup>1</sup> ([ORCID: 0000-0001-6210-6386](https://orcid.org/0000-0001-6210-6386)) \u2020\n\n### Affiliations\n\n1. Simons Center for the Study of Living Machines, National Center for Biological Sciences - TIFR Bangalore India ([ROR:03ht1xw27](https://ror.org/03ht1xw27))\n2. National Center for Biological Sciences - TIFR Bangalore India ([ROR:03ht1xw27](https://ror.org/03ht1xw27))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrecise spatial patterning of cell fate during morphogenesis requires accurate inference of cellular position. In making such inferences from morphogen profiles, cells must contend with inherent stochasticity in morphogen production, transport, sensing and signalling. Motivated by the multitude of signalling mechanisms in various developmental contexts, we show how cells may utilise multiple tiers of processing (compartmentalisation) and parallel branches (multiple receptor types), together with feedback control, to bring about fidelity in morphogenetic decoding of their positions within a developing tissue. By simultaneously deploying specific and nonspecific receptors, cells achieve a more accurate and robust inference. We explore these ideas in the patterning of Drosophila melanogaster wing imaginal disc by Wingless morphogen signalling, where multiple endocytic pathways participate in decoding the morphogen gradient. The geometry of the inference landscape in the high dimensional space of parameters provides a measure for robustness and delineates stiff and sloppy directions. This distributed information processing at the scale of the cell highlights how local cell autonomous control facilitates global tissue scale design.\n\n## Introduction\n\nPrecise positioning of cell fates and cell fate boundaries in a developing tissue is of vital importance in ensuring a correct developmental path (reviewed in Tka\u010dik and Gregor, 2021; Wolpert, 2016). The required positional information is often conveyed by concentration gradients of secreted signalling molecules, or morphogens (reviewed in Tabata and Takei, 2004; Briscoe and Small, 2015). Typically, a spatially varying input morphogen profile is translated into developmentally meaningful transcriptional outputs. Morphogen profile measurements, across several signalling contexts, show that the gradients are inherently noisy Houchmandzadeh et al., 2002; Gregor et al., 2007a; Kicheva et al., 2007; Bollenbach et al., 2008; Zagorski et al., 2017. However, precision of the signalling output should be robust to inherent genetic or environmental fluctuations in the concentrations of the ligands and receptors engaged in translating the positional information. For example, the noisy profile of the morphogen Bicoid (Bcd) that activates hunchback (hb) in the early Drosophila embryo Gregor et al., 2007a; Gregor et al., 2007b , and the expression of gap genes that activate pair-rule genes Dubuis et al., 2013; Petkova et al., 2019 result in cell fate boundaries that are positioned to a remarkable accuracy of about one cell\u2019s width. This points to a local, cell autonomous morphogenetic decoding that is precise and robust to various sources of noise Kerszberg and Wolpert, 2007; Kerszberg, 2004; Jaeger et al., 2004.\n\nCell autonomous decoding of noisy morphogen profiles includes reading of morphogen concentration, followed by cellular processing, finally leading to inference in the form of transcriptional readout. Several strategies have been proposed to ensure precision in output (reviewed in Barkai and Shilo, 2009; Lander et al., 2009): feedbacks such as self-enhanced morphogen degradation Eldar et al., 2002; Eldar et al., 2003, spatial and temporal averaging Gregor et al., 2007a, use of two opposing gradients McHale et al., 2006, pre-steady state patterning Bergmann et al., 2007 and serial transcytosis Bollenbach et al., 2007.\n\nMost cell signalling systems have regulatory mechanisms that fine-tune signalling by controlling ligand-specific receptor interactions Rogers and Schier, 2011. Ligands such as TGF $\\beta$/BMP Mueller and Nickel, 2012, Jiang and Cong, 2016, D\u2019Souza et al., 2008, show promiscuous interactions with different receptors. Chen and Schier, 2002; Sick et al., 2006 or sequestering components within the extracellular matrix Marjoram and Wright, 2011 or interactions with binding receptors such as heparin sulphate proteoglycans (HSPGs) Baeg et al., 2001; Baeg et al., 2004; Yan and Lin, 2009 can control availability of the ligand. Additionally, the multiple endocytic pathways that operate at the plasma membrane can control the extent of signalling B\u00f6kel and Brand, 2014; Di Fiore and von Zastrow, 2014. These examples argue for distributed information processing within the cell.\n\nIn this paper, we show how cellular compartmentalisation, a defining feature of multicellularity, provides a compelling realisation of such distributed cellular inference. We show that compartmentalisation together with multiple receptors, receptor promiscuity and feedback control, ensure precision and robustness in positional inference from noisy morphogen profiles during development. Compartments associated with specific chemical (e.g. lipids, proteins/enzymes) and physical (e.g. pH) environments, have been invoked as regulators of biochemical reactions during cellular signalling and development Ellisdon and Halls, 2016; Omerovic et al., 2007; Omerovic and Prior, 2009; Shilo and Schejter, 2011; B\u00f6kel and Brand, 2014. Deploying promiscuous receptors against a morphogen, in addition to its specific receptor, is a strategy to buffer variations in morphogen levels. These observations provide the motivation for a general conceptual framework for morphogenetic decoding based on a multi-tiered, multi-branched information channel. While our framework has broader applicability, we will, for clarity, use the terminology of Wingless signalling in Drosophila wing imaginal disc Hemalatha et al., 2016.\n\n### Conceptual framework and quantitative models\n\nWe pose the task of morphogenetic decoding as a problem in local, cell autonomous inference of position from a morphogen input (Figure 1), where each cell acts as an information/inference channel with the following information flow:\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig1-v1.jpg)\n\n**Figure 1.:** (a) A morphogen is produced by a specific set of cells (blue), and secreted into the lumen surrounding the tissue. Due to stochasticity of the production and transport processes, the morphogen concentration received by the rest of the cells is contaminated by extrinsic noise, which defines a distribution of morphogen concentration along the $y$-direction at any position $x$. (b) The route from morphogens to a developmental outcome requires each cell to read, process and infer its position. This task is further complicated by the stochasticity of the reading and processing steps themselves, that lead to intrinsic noise. (c) The problem of robust inference of position can be considered in a channel framework. The positional information is noisily encoded in the local morphogen (ligand) concentrations, $p\u2062(L|x)$. The cells receive this as input and process it into a less noisy output to ensure robustness in inferred positions.\n\nAt a phenomenological level, reading of the morphogen input is associated with the binding of the morphogen ligand to various receptors with varying degree of specificity, leading to the notion that the information channel describing positional inference must possess multiple branches. Furthermore, the multiple processing steps associated with compartmentalisation of cellular biochemistry and/or signal transduction modules, for example phosphorylation states, provide the motivation for invoking multiple tiers in the channel architecture. At an abstract level, one may think of the branch-tier architecture of the cellular processing as a bipartite Markovian network/graph Hartich et al., 2014, with a fast direction (involving multiple branches) consisting of ligand-bound and unbound states along with chemical state changes, and a slower direction (involving multiple tiers) consisting of intracellular transport, fission and fusion, characterised by energy-utilising processes or a flux imbalance. A general developmental context with multiple morphogens may involve several such bipartite Markov networks/graphs with different receptors (or branches) in parallel. Some of these receptors could be shared between different morphogens. We refer to signalling receptors as those which transduce a signal upon binding to their specific morphogen ligand and non-signalling receptors as those that participate in the signalling pathway without directly eliciting a signalling response. At the end of processing, each individual cell may pool information from the various branches for the final inference of position, i.e. a transcriptional readout (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig2-v1.jpg)\n\n**Figure 2.:** Branches correspond to different receptor types and tiers denote the layers of compartmentalisation used in cellular processing. Cellular processing associated with each receptor type (here, branches 1 and 2) is depicted by a generic Markov network. The gray and brown planes depict the tiers in the two branches respectively (here, tiers 1, 2, and 3 in each branch). The bi-directional in-plane purple arrows correspond to faster transitions between receptor states, e.g. bound/unbound, and the green bi-directional arrows depict slower transitions involving intracellular transport driven by flux-imbalanced processes. There may exist several feedback control loops (red \u2501\u2525 arrows) in the network. Ligand concentration $L$ drives one or several reaction rates in such Markov networks as in Harvey et al., 2020. The output $\\theta$ is a collection $f$ of several signalling states (purple nodes) from one or many branches. The statistics of the output $\\theta$ then enables inference of position.\n\nThe task of achieving a precise inference is complicated by the noise in morphogen input arising from both production and transport processes, and by the stochasticity of the reading and processing steps; thus the inference must be robust to the extrinsic and intrinsic sources of noise. The use of feedback control mechanisms is a common strategy to bring about robustness in the context of morphogen gradient formation and sensing Averbukh et al., 2017. Motivated by this, in Section \u2018Quantitative models for cellular reading and processing\u2019 we consider different feedback controls in conjunction with the tiers and branches. With these three elements to the channel architecture, the task of morphogenetic decoding can be summarised in the following objective.\n\n<table>\n  <tbody>\n    <tr>\n      <td>Objective:</td>\n    </tr>\n    <tr>\n      <td>Given a noisy ligand input distribution at position x, i.e. p\u2062(L|x), what are the requirements on the reading (number of receptor types and receptor concentrations) and processing steps (number of tiers and feedback type) such that the positional inference is precise and robust to extrinsic and intrinsic noise?</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mathematical framework\n\nFigure 1 describes information processing during development across a two dimensional tissue of nx, ny cells in $x$ and $y$ directions, respectively. The direction of morphogen gradient is taken to be along $x$, with the morphogen source to the left of $x=0$. Each cell is endowed with a chemical reaction network (CRN) with the same multi-tiered, multi-branched architecture with feedbacks described previously, that reads a noisy input $L\u2062(x,y)$ (morphogen concentration) and produces an \u2018output\u2019 (biochemical \u2018signal\u2019) $\\theta\u2062(x,y)$ that is also noisy. Here, we choose to construct the noisy morphogen profile in the following manner: for a given position $x\\in[0,1]$, cells along the $y$-direction see different amounts of ligand coming from the same input distribution$p\u2062(L|x)$,\n\n$$\np(L|x)=\\frac{2}{\\sqrt{2\\pi\\sigma_{L}^{2}(x)}}Exp[\u2212\\frac{(L\u2212\\mu_{L}(x))^{2}}{2\\sigma_{L}^{2}(x)}](1+Erf[\\frac{\\mu_{L}(x)}{\\sqrt{2}\\sigma_{L}(x)}])^{\u22121}.\n$$\n\ncharacterised parametrically by a mean $\\mu_{L}\u2062(x)$ and standard deviation $\\sigma_{L}\u2062(x)$. Experimental data can be fit to this distribution Equation 1 (or another distribution suitable for the specific experimental system) to obtain the parameters. Here, we consider an exponentially decaying mean $\\mu_{L}$ and standard deviation $\\sigma_{L}$.\n\n$$\n\\mu_{L}(x)=Ae^{\u2212x/\\lambda}\n$$\n\n\n\n$$\n\\sigma_{L}(x)=\\sqrt{\\mu_{L}(x)}\n$$\n\nAlternatively, one could choose a different parametrisation consistent with experimental observations for a morphogen profile with a monotonically decaying mean. The values of $A,\\lambda$ chosen for our analysis are listed in Table 1. The corresponding output distribution $p\u2062(\\theta|x)$ can be used to infer the cell\u2019s position. Since we do not know the precise functional relationship between the output and inferred position, we invoke Bayes rule MacKay and Mac Kay, 2003, as in previous work Tka\u010dik et al., 2015, to infer the cell\u2019s position,\n\n$$\np(x|\\theta)=\\frac{p(\\theta|x)p(x)}{p(\\theta)}\n$$\n\nwhere $p\u2062(\\theta)=\\int_{0}^{1}dx\u2062p\u2062(\\theta|x)\u2062p\u2062(x)$ and $p\u2062(x)$ is the prior distribution which we take to be uniform over a tissue of unit length, $p\u2062(x)=1$. We quantify precision in the inference by the local inference error, $\\sigma_{X}\u2062(x)$. For each position $x$, the inferred position $x^{\u2217}$ of cells along the $y$-direction is taken to be the maximum a posteriori estimate,\n\n$$\nx^{\u2217}(x,y)=argmaxx~p(x~|\\theta(x,y))\n$$\n\nwhere we use $x~$ to differentiate from the true position $x$. From this, the local and average inference error can be computed.\n\n$$\n\\sigma_{X}^{2}(x)=\u27e8(x^{\u2217}\u2212x)^{2}\u27e9_{y}\n$$\n\n\n\n$$\n\\sigma\u00af_{X}=\\int_{0}^{1}\\sigma_{X}(x)p(x)dx\n$$\n\nwhere the average in Equation 6 is over cells in the $y$-direction. The logic behind this definition of the inference error is that development of the tissue relies on the precision in the inference of cells\u2019 positions throughout the tissue. However, there may be tissue developmental contexts, where only the positions of certain regions or cell fate boundaries need to be specified with any precision (as in the case of short-range morphogen gradients like Nodal Liu et al., 2022). The definition of inference error may be readily extended to incorporate such specifications (see Section \u2018Choice of objective function\u2019).\n\n**Table 1.**\n Parameters associated with rates, feedback and receptor profiles along with their range of values.The chemical rate values used in numerical analysis are scaled by the unbinding rate $r_{u},\u03ba_{u}$ taken to be 1. The corresponding experimental values have been taken from Lauffenburger and Linderman, 1996 where available.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Symbol</th>\n      <th>Numerical values</th>\n      <th>Experimental values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical rates</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Signalling branch</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Unbinding rate</td>\n      <td>ru</td>\n      <td>1</td>\n      <td>0.34\u2009min-1</td>\n    </tr>\n    <tr>\n      <td>Binding rate</td>\n      <td>rb</td>\n      <td>0.1\u20131\u2009nM-1</td>\n      <td>0.072\u2009nM-1\u2062min-1</td>\n    </tr>\n    <tr>\n      <td>Degradation rate</td>\n      <td>rd</td>\n      <td>0.001\u20130.01</td>\n      <td>0.0022\u2009min-1</td>\n    </tr>\n    <tr>\n      <td>Internalisation rate</td>\n      <td>rI</td>\n      <td>0.1\u20131</td>\n      <td>0.03\u20130.3\u2009min-1</td>\n    </tr>\n    <tr>\n      <td>Recycling rate</td>\n      <td>rR</td>\n      <td>0.1\u20131</td>\n      <td>0.058\u2009min-1</td>\n    </tr>\n    <tr>\n      <td>Non-signalling branch</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Unbinding rate</td>\n      <td>\u03bau</td>\n      <td>1</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Binding rate</td>\n      <td>\u03bab</td>\n      <td>0.1\u20131\u2009nM-1</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Degradation rate</td>\n      <td>\u03bad</td>\n      <td>0.001\u20130.01</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Internalisation rate</td>\n      <td>\u03baI</td>\n      <td>0.1\u20131</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Recycling rate</td>\n      <td>\u03baR</td>\n      <td>0.1\u20131</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Conjugation rate</td>\n      <td>\u03baC</td>\n      <td>0.1\u20131\u2009nM-1</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Splitting rate</td>\n      <td>\u03baS</td>\n      <td>0.1\u20131</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Feedback control</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Amplification</td>\n      <td>\u03b1</td>\n      <td>0.1-10</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Feedback Sensitivity</td>\n      <td>\u03b3</td>\n      <td>0-1\u2009nM-1</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Feedback strength</td>\n      <td>n</td>\n      <td>0-5</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Receptor control</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Signalling receptors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hill coefficient</td>\n      <td>a</td>\n      <td>0-5</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Minimum concentration</td>\n      <td>A0</td>\n      <td>50-250\u2009nM</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Maximum concentration</td>\n      <td>A0+A1</td>\n      <td>50-500\u2009nM</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Position of half-maximum</td>\n      <td>A2</td>\n      <td>0.01-1</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Non-signalling receptors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hill coefficient</td>\n      <td>b</td>\n      <td>0-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Minimum concentration</td>\n      <td>B0</td>\n      <td>50-250\u2009nM</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Maximum concentration</td>\n      <td>B0+B1</td>\n      <td>50-500\u2009nM</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Position of half-maximum</td>\n      <td>B2</td>\n      <td>0.01-1</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Ligand input</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Maximum concentration</td>\n      <td>A</td>\n      <td>30\u2009nM</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Decay length</td>\n      <td>\u03bb</td>\n      <td>0.2-0.5</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Number of cells along\u2009x-direction</td>\n      <td>nx</td>\n      <td>101</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Number of cells along\u2009y-direction</td>\n      <td>ny</td>\n      <td>101</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\nWe have been motivated to use the maximum a posteriori (MAP) estimate in Equation 5 by its successful use in previous studies in Drosophila embryo Dubuis et al., 2013; Petkova et al., 2019; Tka\u010dik et al., 2015 and, more importantly, that it is a local estimate not requiring the computation of $p(\\theta)$ (which is independent of $x$). We have checked that a different definition of the inference error, which does not use the MAP estimate and takes into account the entire distribution $p(x^{\u2217}|x)$,\n\n$$\n\\sigma_{x}^{2}(x)=\\int_{0}^{1}dx(x^{\u2217}\u2212x)^{2}p(x^{\u2217}|x)\n$$\n\nleads to the same qualitative results.\n\n### Quantitative models for cellular reading and processing\n\nIn order to calculate the probability of the inferred position given the output $p\u2062(x^{\u2217}|\\theta)$ and hence the inference error $\\sigma\u00af_{X}$, one needs to know the prior $p\u2062(x)$ and the input-output relation giving rise to the output distribution $p\u2062(\\theta|x)$ in Equation 4. While a uniform prior may be justified by a homogeneous distribution of cells in the developing tissue at the stage considered, the input-output relation needs to be developed using a specific model based on the general channel design principles described previously. Thus, we will take each cell to be equipped with a chemical reaction network (CRN) that has up to two receptor types both of which bind the ligand on the cell surface but only one is signalling competent Hemalatha et al., 2016; Tabata and Takei, 2004. This latter aspect breaks the symmetry between the receptor types and hence the branches, a point that we will revisit in Section \u2018Asymmetry in branched architecture: promiscuity of non-signalling receptors\u2019. In multi-tier architectures, the bound states of both the receptors are internalised and shuttled through several compartments. The last compartment allows for a conjugation reaction between the two receptors (as in the case of Wingless and Dpp Hemalatha et al., 2016; Zhu et al., 2020). The signalling states, defined by all the bound states of the signalling receptor, contribute to the output. Within this schema, we consider control mechanisms on the surface receptor concentrations and in the chemical reactions downstream to binding on the surface (i.e. on internalisation, shuttling, conjugation, etc). We formulate the control on processing steps as a feedback/feedforward regulation from one of the signalling species in the CRN. On the other hand, the control of surface receptors is considered in the form of an open-loop control by allowing receptor profiles to vary within certain bounds, as described below. The key parameters are chemical rate parameters describing the rates of various reactions in the CRN, receptor parameters describing the receptor concentration profiles, feedback topology in the CRN that is a combination of actuator and rate under regulation, control parameters describing the strength and sensitivity of the feedback/feedforward. With these parameters specified, an input-output relation, calculated as a tier-wise weighted sum of all signalling states, can then be used to infer the cell\u2019s position by Equation 4.\n\n#### Cellular Reading via surface receptors\n\nIn the framework described previously, we consider the morphogen ligand as an external input to the receiving cells, outside the cellular information processing channel. The signal and noise of this external input are captured by the distribution Equation 1. This implicitly assumes that there is no feedback control from the output to the ligand input, that is no \u2018sculpting\u2019 of the morphogen ligand profile. We revisit this point in the Discussion. Given a distribution of the morphogen input, we address the local, cell autonomous morphogenetic decoding that allows the cells to tune their reading dynamically.\n\nWe subject the local, cellular reading to an open-loop control on total (ligand bound plus unbound) surface availability of the signalling $\u03c8$ and non-signalling $\u03d5$ receptors. This implies that for each evaluation of inference error within the optimisation routine (see Section \u2018Performance of the Channel Architectures\u2019), the local surface receptor levels are held constant in time through a chemostat (see Appendix 1). In our analysis, we consider a family of monotonic (increasing or decreasing in $x$ and independent of $y$) receptor profiles, which for convenience we take to be of the Hill form (Figure 3), that is either\n\n$$\nMonotonically increasing in\u00a0x:f_{A}(x)=A_{0}+\\frac{A_{1}x^{a}}{A_{2}^{a}+x^{a}}or\n$$\n\n\n\n$$\nMonotonically decreasing in\u00a0x:f_{B}(x)=B_{0}+\\frac{B_{1}}{1+(x/B_{2})^{b}}\n$$\n\nThe range of values for these parameters considered in the numerical analysis are listed in Table 1. Therefore, when considering $\u03c8\u2062(x)$ to be monotonically increasing in $x$, we parametrise it with $f_{A}$. It follows that in a one-branch channel, there are two possibilities: $\u03c8\\in{f_{A},f_{B}}$ while in a two-branch channel, there are a total of four possibilities: $(\u03c8,\u03d5)\\in{f_{A},f_{B}}\\times{f_{A},f_{B}}$. This allows us to simulate the \u2018reading\u2019 step performed by the cells (see Figure 1b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig3-v1.jpg)\n\n**Figure 3.:** Family of receptor profiles $f_{A}$ (monotonically increasing in $x$) and $f_{B}$ (monotonically decreasing in $x$) with an interpretation of function parameters (Equations 8; 9).The total surface concentrations of both signalling and non-signalling receptors are taken from these families of receptor profiles.\n\nNote that we are not fixing a receptor profile but taking it from a class of monotonic profiles (including a uniform profile), over which we vary to determine the optimal inference (see Section \u2018Performance of the Channel Architectures\u2019 below). Further, in the optimisation scheme (Section \u2018Performance of the Channel Architectures\u2019), we allow the receptor concentrations to vary over the space of all monotonically increasing, decreasing or flat profiles, and do not encode the positional information in the receptor profiles. Monotonicity implicitly assumes a spatial correlation in the receptor concentrations across cells \u2013 we return to this point in the Discussion.\n\n#### Dynamics of processing in a single-tier channel\n\nIn a single tier channel, all processing is restricted to the cell surface. We represent the bound state of the signalling receptor as $R^{(1)}$ and that of the non-signalling receptor as $S^{(1)}$. The conjugated state is represented by $Q^{(1)}$. The CRN for such a system with one and two branches is shown in Figure 4a. Rates associated with these reactions are listed in Table 1. The differential equations that describe the binding, unbinding, conjugation, splitting and degradation reactions of the receptors are given by\n\n$$\n\u2202_{t}R^{(1)}=r_{b}L(\u03c8(x)\u2212R^{(1)})\u2212(r_{u}+r_{d})R^{(1)}\u2212\u03ba_{C}R^{(1)}S^{(1)}+\u03ba_{S}Q^{(1)}\n$$\n\n\n\n$$\n\u2202_{t}S^{(1)}=\u03ba_{b}L(\u03d5(x)\u2212S^{(1)})\u2212(\u03ba_{u}+\u03ba_{d})S^{(1)}\u2212\u03ba_{C}R^{(1)}S^{(1)}+\u03ba_{S}Q^{(1)}\n$$\n\n\n\n$$\n\u2202_{t}Q^{(1)}=\u03ba_{C}R^{(1)}S^{(1)}\u2212\u03ba_{S}Q^{(1)}\n$$\n\nThe steady-state output $\\theta$, defined as the sum of all the ligand-bound signalling states, is given by $\\theta=R^{(1)}+Q^{(1)}$. Note that to describe the 1-branch system, we simply set all rates $\u03ba$ to zero.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig4-v1.jpg)\n\n**Figure 4.:** Signalling receptors in the bound state (colour purple) from each of the tiers contribute to the cellular output. The interpretation of the arrows is shown in the legend.\n\n#### Dynamics of processing in a multi-tier channel\n\nIn a multi-tiered channel, the receptors go through additional steps of processing before generating an output. We represent the bound state of a receptor in $k$-th tier of the first branch as $R^{(k)}$, that of the second branch as $S^{(k)}$, and the conjugate species that forms in the last $n_{T}$-th tier as $Q^{(n_{T})}$. The CRN for such a system with $n_{T}$ tiers is shown in Figure 4b. Rates associated with these reactions are listed in Table 1. The differential equations that describe the binding, unbinding, trafficking, recycling, conjugation, splitting and degradation reactions of the receptors are given by\n\n$$\n\u2202_{t}R^{(1)}=r_{b}L(\u03c8(x)\u2212R^{(1)})\u2212(r_{u}+r_{d}+r_{I})R^{(1)}+r_{R}R^{(2)}\n$$\n\n\n\n$$\n\u2202_{t}S^{(1)}=\u03ba_{b}L(\u03d5(x)\u2212S^{(1)})\u2212(\u03ba_{u}+\u03ba_{d}+\u03ba_{I})S^{(1)}+\u03ba_{R}S^{(2)}\n$$\n\n\n\n$$\n\u2202_{t}R^{(n_{T})}=r_{I}R^{(n_{T}\u22121)}\u2212(r_{R}+r_{d})R^{(n_{T})}\u2212\u03ba_{C}R^{(n_{T})}S^{(n_{T})}+\u03ba_{S}Q^{(n_{T})}\n$$\n\n\n\n$$\n\u2202_{t}S^{(n_{T})}=\u03ba_{I}S^{(n_{T}\u22121)}\u2212(\u03ba_{R}+\u03ba_{d})S^{(n_{T})}\u2212\u03ba_{C}R^{(n_{T})}S^{(n_{T})}+\u03ba_{S}Q^{(n_{T})}\n$$\n\n\n\n$$\n\u2202_{t}Q^{(n_{T})}=\u03ba_{C}R^{(n_{T})}S^{(n_{T})}\u2212\u03ba_{S}Q^{(n_{T})}\n$$\n\nThe output, realised from all the ligand-bound signalling states, now becomes $\\theta=w_{n_{T}}\u2062Q^{(n_{T})}+\\sum_{k=1}^{n_{T}}w_{k}\u2062R^{(k)}$ at steady state with wk, such that $\\sum_{k}w_{k}=1$, representing the weight allotted to the tier (according to the mean residence time in the tier, for instance). For details regarding the setup of Equations 10\u201317 refer to Appendix 1. These differential equations for single-tiered and multi-tiered systems are to be augmented by stochastic contributions from both extrinsic and intrinsic sources. Extrinsic noise is a consequence of stochasticity of the ligand concentration presented to the cell, $L\u223cp\u2062(L|x)$, and enters the equations as a source term. On the other hand, intrinsic noise is a consequence of copy-number fluctuations in the CRNs that characterise the channel, and are treated using chemical master equations (CMEs) Sengupta, 2008.\n\n#### Feedback Control\n\nWe consider all rates in the CRN, except the ligand binding and unbinding rates, as potentially under feedback regulation. Any chemical rate $r\\in{r_{I},\u03ba_{I},\u03ba_{C},\u2026.}$ that is under feedback control actuated by the node $R\\in{R^{(1)},S^{(1)},\u2026.}$ is modelled as.\n\n$$\nr_{+}=r_{0}(1+\\frac{\\alphaR^{n}}{\\gamma^{\u2212n}+R^{n}})if under positive feedback\n$$\n\n\n\n$$\nr_{\u2212}=\\frac{r_{0}}{1+(\\gammaR)^{n}}if under negative feedback\n$$\n\nwith r0 as the reference value of the chemical rate in the absence of feedback. The range of values for amplification $\\alpha$, feedback sensitivity $\\gamma$ and feedback strength $n$ are listed in Table 1. Figure 5 shows the different categories of possible feedback controls. We discuss the heuristics underlying the feedback controls in Appendix 2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig5-v1.jpg)\n\n**Figure 5.:** (A) In a one-branch channel, feedbacks are considered on internalisation rates or degradation rates. (B) A second branch in the channel opens up the possibilities of (a) intra-branch and (b) inter-branch, (i) intra-tier and (ii) inter-tier feedbacks.\n\n### Performance of the channel architectures\n\nWith the model in place, we address the Objective discussed previously, by studying the performance of different channel architectures, i.e. number of tiers and branches, and feedback topology. We define a vector $v\u2192$ belonging to a parameter space $V$ of the channel parameters related to chemical rates, receptor profiles and feedback (see Table 1). While the chemical rates and feedback parameters are the same in all cells, the receptor profile parameters help define the receptor concentrations at each cell position $x,y$. For a given morphogen input distribution $p\u2062(L|x)$ and a channel architecture under consideration, the optimisation can be stated as\n\n$$\n\\sigma\u00af_{X}^{opt}=minv\u2192\\inV\\sigma\u00af_{X}(v\u2192;p(L|x))\n$$\n\nand implemented by the following algorithm, the details of which are presented in Appendix 3.\n\n<table>\n  <thead>\n    <tr>\n      <th>Optimisation scheme</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Fix a morphogen input distribution for each position, p\u2062(L|x) using Equation 1.Define the channel architecture hierarchically, i.e. first declare the number of tiers and branches in the channel, and then choose a feedback topology (as in Figure 5).Optimise the average inference error Equation 20 w.r.t. to the channel parameters v\u2192\u2208V within the bounds provided in Table 1. We use a gradient independent method viz. Pattern Search algorithm for this step (implemented in MATLAB). For every poll (iteration) of the Pattern Search, we evaluate the average inference error \u03c3\u00afX using the steady-state outputs of the equations corresponding to the CRN under optimisation that is Equations 10\u201317. The steady state solution is obtained analytically when possible or solved using ODE15s (MATLAB) algorithm.Repeat Step 3 until all feedback topologies under consideration are exhausted.Repeat Steps 2 and 3 until all channel architectures are scanned.</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\nAs discussed previously, cells of a developing tissue face both extrinsic as well as intrinsic sources of noise. We first look at the issue of extrinsic noise in the morphogen input (described by Equation 1). The output then is a deterministic function of the morphogen input and parameters of the channel i.e. receptor concentrations, feedback topology, chemical rates and feedback parameters. The range of values considered for these parameters is listed in Table 1, consistent with the timescale separation between the rates of chemical reactions and transport as discussed in Section \u2018Conceptual framework and quantitative models\u2019. We apply the numerical analysis and the optimisation algorithm outlined in Section \u2018Performance of the Channel Architectures\u2019 to determine the design characteristics of \u2018reading\u2019 (receptor profiles) and \u2018processing\u2019 (tiers and feedback control) steps. Later, we check how channels, optimised in the reading and processing steps to deal with extrinsic noise, respond to intrinsic noise and what roles the elements of channel architecture play there. All the essential results are presented in this section and the reader may look up the appendices for further details.\n\n### Branched architecture with multiple receptors provides accuracy and robustness to extrinsic noise\n\nWe begin with architectures comprising single-tiered channels with one and two branches. Such architectures are similar in design to the classic picture of ligand-receptor kinetics Lauffenburger and Linderman, 1996; Alberts et al., 2017, but also to the self-enhanced degradation models for robustness of morphogen gradients Eldar et al., 2003. Before we proceed, it helps to recall a simple heuristic regarding signal discrimination. Appendix 4\u2014figure 1 illustrates that precision in positional inference requires both that the output variance at a given position be small and that the mean output at two neighbouring positions be sufficiently different.\n\nLet us first consider a minimal architecture of a one-tier one-branch channel without feedback control on any of the reaction rates. The output of this channel, here $R^{(1)}$, is a monotonic, saturating function of the input, with the surface receptor concentration setting the asymptote. As in Appendix 5\u2014figure 1a, if the receptor concentrations decrease with mean ligand input, i.e. increases with distance from source ($f_{A}$ in Figure 3a; ), the outputs for different input ranges overlap significantly. On the other hand, if the receptor concentrations increase with mean input ($f_{B}$ in Figure 3b), the outputs overlap to a lesser degree (see Appendix 5\u2014figure 1b). Thus within this minimal architecture, the inference error is optimised when the receptor concentrations increase with the mean input.\n\nIntroducing a feedback in this one-tier one-branch architecture, either on receptor levels or degradation rate, only partially reduces the inference errors (Figure 6a, c). As seen in Figure 6d, this is because the surface receptor concentration $\u03c8$ sets both the asymptote and the steepness of the input-output functions, resulting in significant overlaps between outputs at neighbouring positions. The receptor control introduces a competition between robustness of the output to input noise and sensitivity to systematic changes in the mean input (see Appendix 4).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig6-v1.jpg)\n\n**Figure 6.:** The optimised channel shows a moderately strong positive feedback on the degradation rate. (b) The optimal output is obtained when (b, inset) the total (bound plus unbound) signalling receptor concentration profile decreases away from the source. (c) Local inference errors in this optimised channel show a reduction compared to the expected inference errors from ligand with no cellular processing (i.e. reading directly from the free ligand). The minimum average inference error in this channel is $\\sigma\u00af_{X}\u223c8%$, which corresponds to 8 cells\u2019 width. The dashed line denotes a local inference error of one cell\u2019s width $\u223c1/n_{x}$. (d) The input-output relations in this channel are monotonically increasing sigmoid functions saturating at only large values of input. The solid lines correspond to the input-output relations at selected positions $x=0.25,0.5,0.75$, shaded with the same colour as the position-markers in (b inset, coloured rectangles). The signalling $\u03c8\u2062(x)$ receptor concentration is mentioned in the legend. For a fixed distribution of ligand input (Equation 1), the range of input values recorded by the receptors at the selected positions gives rise to a range of outputs (circles). It is clear that neighbouring positions have significant overlaps in their outputs. The optimised parameter values for the plots in (b\u2013d) can be found in Table 2 under the column corresponding to $n_{T}=1,n_{B}=1,r_{+}=r_{d}^{(1)}$.\n\nIncluding a non-signalling receptor $\u03d5$ via an additional branch in the channel architecture opens up several new possibilities of feedback controls, in addition to providing an extra tuning variable. Now, as opposed to the one-tier one-branch case, an inter-branch feedback control (Figure 7a) results in an input-output relation with a sharp rise followed by a saturation (Figure 7d). By appropriately placing the receptors at spatial locations that receive different input, as shown by black arrow in Figure 7d, one can cleanly separate out the cellular outputs in neighbouring positions. For a detailed description see Appendix 6. This mitigates the above-mentioned tension between robustness to input noise and sensitivity to systematic changes in the mean input to a considerable extent (see Appendix 4\u2014figure 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig7-v1.jpg)\n\n**Figure 7.:** (b) The output profile (with standard error in shaded region) corresponding to the (inset) optimised signalling (blue) and non-signalling (red) receptor profiles. The optimal signalling receptor now increases away from the source as opposed to the situation in the optimal one-tier one-branch channel (Figure 6). On the other hand, the optimal non-signalling receptor decreases away from the source. (c) The local inference error $\\sigma_{X}\u2062(x)$ is reduced throughout the tissue, when compared to the expected inference errors from ligand with no processing. (d) The input-output relations at selected positions $x=0.25,0.5,0.75$ (in the direction of the black arrow) are shown as solid lines, shaded with the same colour as the position-markers in (b inset, coloured rectangles). The signalling $\u03c8\u2062(x)$ and non-signalling $\u03d5$ receptor concentrations are mentioned in the legend. For a fixed distribution of ligand input (Equation 1), the range of input values recorded by the receptors at the selected positions gives rise to a range of outputs (circles). Tuning of input-output relations through receptor concentrations reduces output variance and minimises overlaps in the outputs of neighbouring cell cohorts. The optimised parameter values for the plots in (b\u2013d) can be found in Table 2 under the column corresponding to $n_{T}=1,n_{B}=2,r_{-}=\u03ba_{C}$.\n\nAs seen in Figure 7c, the two-branch architecture with inter-branch feedback leads to a dramatic reduction in the inference errors, to reach one cell\u2019s width precision at most spatial locations in the tissue.\n\nWe would like to highlight two unexpected features of the optimised two-branch architecture. (i) The signalling and non-signalling receptors present opposing optimal profiles \u2013 a consequence of the negative inter-branch feedback. (ii) The optimal non-signalling receptor decreases away from the source, indicating that the non-signalling receptor \u2018reads\u2019 the ligand input, while the signalling receptor increases away from the source, buffering the noise in the output (Figure 7). A heuristic understanding of the opposing optimal receptor profiles is provided in Appendix 7. In contrast, in the one-branch architectures, it is the signalling receptor that does the reading and buffering.\n\n**Table 2.**\n Values of rates, feedback and receptor control parameters obtained after optimising the different channel architectures with $n_{T}$ tiers and $n_{B}$ branches.The optimised values of the chemical rates quoted below are scaled by the unbinding rate ru, $\u03ba_{u}$ taken to be 1. The symbols $r_{-}$ and $r_{+}$ denote positive and negative feedbacks, respectively, on the rates following the equals sign; ${}$ implies absence of feedback.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\">Parameter (Symbol)</th>\n      <th colspan=\"5\">Value obtained in the optimised channel (nT,nB)</th>\n    </tr>\n    <tr>\n      <th>(1,1)</th>\n      <th>(1,2)</th>\n      <th>(2,2)</th>\n      <th>(2,2)</th>\n      <th>(2,2)</th>\n    </tr>\n    <tr>\n      <th>r+=rd(1)</th>\n      <th>r-=\u03baC</th>\n      <th>r-=\u03baI</th>\n      <th>r-=\u03baC</th>\n      <th>r-={}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical rates</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Signalling branch</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Binding rate (rb,nM-1)</td>\n      <td>0.0898</td>\n      <td>0.0949</td>\n      <td>0.0932</td>\n      <td>0.0893</td>\n      <td>0.0787</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 1 (rd(1))</td>\n      <td>0.0013</td>\n      <td>0.0081</td>\n      <td>0.0086</td>\n      <td>0.0098</td>\n      <td>0.0038</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 2 (rd(2))</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.0066</td>\n      <td>0.0087</td>\n      <td>0.0016</td>\n    </tr>\n    <tr>\n      <td>Internalisation rate (rI)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.0531</td>\n      <td>0.0784</td>\n      <td>0.0363</td>\n    </tr>\n    <tr>\n      <td>Recycling rate (rR)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.0681</td>\n      <td>0.0359</td>\n      <td>0.0758</td>\n    </tr>\n    <tr>\n      <td>Non-signalling branch</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Binding rate (\u03bab,nM-1)</td>\n      <td>-</td>\n      <td>0.0590</td>\n      <td>0.0954</td>\n      <td>0.0835</td>\n      <td>0.0288</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 1 (\u03bad(1))</td>\n      <td>-</td>\n      <td>0.0086</td>\n      <td>0.001</td>\n      <td>0.0043</td>\n      <td>0.0068</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 2 (\u03bad(2))</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.0037</td>\n      <td>0.0031</td>\n      <td>0.0033</td>\n    </tr>\n    <tr>\n      <td>Internalisation rate (\u03baI)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.0741</td>\n      <td>0.0846</td>\n      <td>0.0559</td>\n    </tr>\n    <tr>\n      <td>Recycling rate (\u03baR)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.0123</td>\n      <td>0.0134</td>\n      <td>0.0998</td>\n    </tr>\n    <tr>\n      <td>Conjugation rate (\u03baC,nM-1)</td>\n      <td>-</td>\n      <td>0.9926</td>\n      <td>0.9823</td>\n      <td>0.9722</td>\n      <td>0.6019</td>\n    </tr>\n    <tr>\n      <td>Splitting rate (\u03baS)</td>\n      <td>-</td>\n      <td>0.1285</td>\n      <td>0.1545</td>\n      <td>0.1350</td>\n      <td>0.7512</td>\n    </tr>\n    <tr>\n      <td>Feedback control</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Amplification (\u03b1)</td>\n      <td>3.2085</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Feedback Sensitivity (\u03b3)</td>\n      <td>0.2491</td>\n      <td>0.1831</td>\n      <td>0.5535</td>\n      <td>0.8259</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Feedback strength (n)</td>\n      <td>2.6825</td>\n      <td>2.3683</td>\n      <td>2.0953</td>\n      <td>2.1880</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Tier-wise weights</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>weight of tier 1 (w1)</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0.0018</td>\n      <td>0.1232</td>\n      <td>0.9259</td>\n    </tr>\n    <tr>\n      <td>weight of tier 2 (w2)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.9982</td>\n      <td>0.8768</td>\n      <td>0.0741</td>\n    </tr>\n    <tr>\n      <td>Receptor control</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Signalling receptors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hill coefficient (a)</td>\n      <td>4.9231</td>\n      <td>1.9974</td>\n      <td>3.8363</td>\n      <td>3.5251</td>\n      <td>3.3835</td>\n    </tr>\n    <tr>\n      <td>Minimum concentration (A0,nM)</td>\n      <td>51.8130</td>\n      <td>51.0960</td>\n      <td>69.6940</td>\n      <td>51.9770</td>\n      <td>51.2</td>\n    </tr>\n    <tr>\n      <td>Maximum concentration (A0+A1,nM)</td>\n      <td>298.283</td>\n      <td>290.356</td>\n      <td>304.114</td>\n      <td>134</td>\n      <td>301</td>\n    </tr>\n    <tr>\n      <td>Position of half-maximum (A2)</td>\n      <td>0.4752</td>\n      <td>0.7818</td>\n      <td>0.9405</td>\n      <td>0.8344</td>\n      <td>0.4091</td>\n    </tr>\n    <tr>\n      <td>Non-signalling receptors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hill coefficient (b)</td>\n      <td>-</td>\n      <td>4.8951</td>\n      <td>1.0802</td>\n      <td>1.7472</td>\n      <td>3.1821</td>\n    </tr>\n    <tr>\n      <td>Minimum concentration (B0,nM)</td>\n      <td>-</td>\n      <td>192.32</td>\n      <td>248.69</td>\n      <td>192.4</td>\n      <td>94.1850</td>\n    </tr>\n    <tr>\n      <td>Maximum concentration (B0+B1,nM)</td>\n      <td>-</td>\n      <td>442</td>\n      <td>489.77</td>\n      <td>441.67</td>\n      <td>305</td>\n    </tr>\n    <tr>\n      <td>Position of half-maximum (B2)</td>\n      <td>-</td>\n      <td>0.7428</td>\n      <td>0.5177</td>\n      <td>0.3196</td>\n      <td>0.0902</td>\n    </tr>\n  </tbody>\n</table>\n\n### Tiered architecture with compartmentalisation adds robustness to intrinsic noise\n\nWe next investigate the effects of addition of tiers (compartments) on the inference errors. Our optimisation shows there are two distinct optimised two-tier two-branch architectures, one with inter-branch feedback on the internalisation rate of the non-signalling receptors $\u03ba_{I}$ and the other on the conjugation rate $\u03ba_{C}$, that have comparable inference errors (Figure 8b, c). Both the receptor profiles and the input-output relations of these two optimised two-tier two-branch channels are qualitatively similar (Appendix 8\u2014figure 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig8-v1.jpg)\n\n**Figure 8.:** (a) Minimum average inference error $\\sigma\u00af_{X}$ in two-branch architectures with increasing number of tiers $n_{T}$. The dashed line corresponds to a local inference error of one cell\u2019s width $\u223c1/n_{x}$. (b,c) Results of optimisation of two-tier two-branch channels with inter-branch feedback. These two architectures perform equally well: local inference errors in both the channels (blue dots) are low throughout the tissue (with average inference errors $\u223c1.6%$ and $\u223c1.7%$) as compared to a case with no processing of ligand prior to inference (black dots). Note that the local inference errors in the optimised channels increase towards the end of the tissue due to lower ligand concentrations. The dashed line corresponds to a local inference error of one cell\u2019s width $\u223c1/n_{x}$. The optimised parameter values for the plots in (b\u2013c) can be found in Table 2 under the column corresponding to $n_{T}=2,n_{B}=2,r_{-}=\u03ba_{I}$ and $n_{T}=2,n_{B}=2,r_{-}=\u03ba_{C}$, respectively.\n\nIt would seem that addition of further tiers, that is more than two, would lead to further improvement in the inference. However, in both these optimised architectures, addition of tiers leads only to a marginal reduction of inference errors (Figure 8a) while invoking a cellular cost. Of course, extensions of our model that involve modification of the desired output could favour the addition of more tiers. For instance, additional tiers could facilitate signal amplification or improvement in robustness to input noise through an increase in signal-to-noise ratio (SNR) Stoeger et al., 2016. Further, by making the output $\\theta$ a multi-variate function of the tier index (compartment identity) one can multitask the various cellular outcomes (as in Ras/MAPK signalling Fehrenbacher et al., 2009 or with GPCR compartmentalisation Ellisdon and Halls, 2016).\n\nSo far, we have only considered noise due to fluctuations in the morphogen profile, that is extrinsic noise. Given that we are considering a distributed channel, intrinsic noise due to low copy numbers of the reacting species in the CRN will have a significant influence on the inference. As discussed in Section \u2018Conceptual framework and quantitative models\u2019 and Appendix 3, we solve the stochastic chemical master equations (CMEs) to compute the output distributions and the positional inference. It is here that we find that the addition of tiers contribute significantly to reducing inference errors. A comparison of the one-tier two-branch and two-tier two-branch channel architectures (Figure 9a and b) optimised for extrinsic noise, shows that in the presence of intrinsic noise, additional tiers lead to significantly lower inference errors (Figure 9c). The large inference errors seen in the one-tier one-branch channel in the presence of intrinsic noise, can be traced to the instabilities of steady-state trajectories of the two signalling species $R^{(1)}$ and $Q^{(1)}$ driven by the non-linear feedback (Figure 9d\u2013f). This effect is more prominent for larger values of ligand concentrations, that is closer to the source at $x=0$. On the other hand, we find that in the two-tier two-branch architecture (Figure 9g\u2013i), the fluctuations in the signalling species are more tempered, the inter-branch feedback leads to a mutual damping of the fluctuations of the signalling species from the two branches. Details of this heuristic argument appear in Appendix 9.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig9-v1.jpg)\n\n**Figure 9.:** (c) A comparison of local inference errors due to intrinsic noise shows consistently better performance in the case of a two-tier two-branch channel (red dots). (d-f) Sample steady-state trajectories of the signalling species $R^{(1)}$ (blue) and $Q^{(1)}$ (red) of a one-tier two-branch channel (purple nodes in (a)) at positions $x=0.1,0.4,0.7$, respectively. (g\u2013i) Sample steady-state trajectories of the signalling species $R^{(2)}$ (blue) and $Q^{(2)}$ (red) of a two-tier two-branch channel (purple nodes in (b)) at positions $x=0.1,0.4,0.7$, respectively. The optimised parameter values for the plots in (c,d\u2013f,g\u2013i) can be found in Table 2 under the column corresponding to $n_{T}=1,n_{B}=2,r_{-}=\u03ba_{C}$ and $n_{T}=2,n_{B}=2,r_{-}=\u03ba_{C}$, respectively.\n\nIn summary, we find that the nature of the channel architectures play a significant role in robustness of morphogenetic decoding to both extrinsic and intrinsic sources of noise. Of the three elements to the channel architecture - branches, tiers, and feedback control, we find that a branched architecture can significantly reduce inference errors by employing an inter-branch feedback and a control on its local receptor concentrations. For this, the receptor concentration profiles required to minimise inference errors are such that the concentration of signalling (non-signalling) receptor should decrease (increase) with mean morphogen input. Crucially, in the absence of feedback, performance of the channel diminishes and the optimised receptor profiles both decrease away from the source (Appendix 10\u2014figure 1). Further, we show in Appendix 11\u2014figure 1 that having uniform profiles for the signalling and non-signalling receptors, with or without uncorrelated noise, fares poorly in terms of inference capability. This provides a posteriori justification for the monotonicity in receptor profiles. Addition of tiers can help in further bringing down inference errors due to extrinsic noise, but with diminishing returns. An additional tier, however, does provide a buffering role for feedback when dealing with intrinsic noise. We note that these qualitative conclusions remain unaltered for different morphogen input characteristics, that is input noise and morphogen decay lengths (see Appendix 12).\n\n### Asymmetry in branched architecture: promiscuity of non-signalling receptors\n\nBefore comparing the theoretical results with experiments, we comment on the implications for the cellular control of the signalling $\u03c8$ and non-signalling $\u03d5$ receptors. In the two-branch architecture, the symmetry between the signalling and non-signalling receptors is broken by the inter-branch feedback and the definition of output $\\theta$, the latter taken to be a function only of the signalling states $R^{(k)}$ and $Q^{(k)}$ (Section \u2018Conceptual framework and quantitative models\u2019, purple nodes in Figure 7a and Figure 8b and c). What are the phenotypic implications of this asymmetry? In Appendix 13\u2014figure 1, we plot the contours of average inference errors $\\sigma\u00af_{X}$ in the $\u03c8-\u03d5$ plane around the optimal point. We compute the eigenvalues of the local curvature of $\\sigma\u00af_{X}\u2062(\u0394\u2062\u03c8,\u0394\u2062\u03d5)$ around the optimal point ($\u0394\u2062\u03c8=\u0394\u2062\u03d5=0$). The difference in the magnitudes of these eigenvalues, as discussed in Appendix 13, immediately describes stiff and sloppy directions Transtrum et al., 2015 along the $\u03c8$ and $\u03d5$ axes, respectively. This implies that while the signalling receptor is under tight cellular control, the control on the non-signalling receptor is allowed to be sloppy. A similar feature is observed in the contour plots for the robustness measure $\u03c7$ (defined as the ratio of coefficients of variation in the output to that in the input). Appendix 4\u2014figure 3 shows that for any given input distribution, reduction in output variance requires a stricter control on $\u03c8$, while the control on $\u03d5$ can be lax.\n\nThis sloppiness in the levels of non-signalling receptor would manifest at a phenotypic level in the context of multiple morphogen inputs as in the case of Drosophila imaginal disc Tabata and Takei, 2004. Participation of the same non-signalling receptor in the different signalling networks would imply its promiscuous interactions with all ligands. The signalling receptors, therefore, are specific for the various ligands while the non-signalling receptor, being promiscuous, is non-specific. This, as we see below, is the case with the Heparan sulfate proteoglycans (HSPGs) such as Dally and Dally-like protein (Dlp) that participate in the Wingless (Wg) and Decapentaplegic (Dpp) signalling networks Lin and Perrimon, 2000; Romanova-Michaelides et al., 2021.\n\n### Geometry of fidelity landscape\n\nThe above section and Appendix 13 motivate us to study the changes in the inference error upon perturbations of all the channel parameters. We therefore discuss the nature of optima in terms of the local geometry of the fidelity landscape around the optimum, and the geometry of the low inference error states. We work with the case of the optimised one-tier two-branch channel (shown in Figure 7a with optimum channel parameters listed in Table 2, Table 3) in presence of extrinsic noise.\n\n**Table 3.**\n Values of chemical rates and feedback parameters obtained after optimising the two-tier two-branch channel with inter-branch feedback on the internalisation rate $\u03ba_{I}$ of the non-signalling branch, keeping the receptor profiles spatially uniform, with and without uncorrelated noise.The optimised values of the chemical rates quoted below are scaled by the unbinding rate ru, $\u03ba_{u}$ taken to be 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Parameter (Symbol)</th>\n      <th colspan=\"2\">Optimised value</th>\n    </tr>\n    <tr>\n      <th>uniform receptor profiles</th>\n      <th>uniform receptor profiles with uncorrelated noise</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical rates</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Signalling branch</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Binding rate (rb,nM-1)</td>\n      <td>0.0922</td>\n      <td>0.0782</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 1 (rd(1))</td>\n      <td>0.0089</td>\n      <td>0.0041</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 2 (rd(2))</td>\n      <td>0.0092</td>\n      <td>0.0095</td>\n    </tr>\n    <tr>\n      <td>Internalisation rate (rI)</td>\n      <td>0.0225</td>\n      <td>0.0611</td>\n    </tr>\n    <tr>\n      <td>Recycling rate (rR)</td>\n      <td>0.0403</td>\n      <td>0.0971</td>\n    </tr>\n    <tr>\n      <td>Non-signalling branch</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Binding rate (\u03bab,nM-1)</td>\n      <td>0.0464</td>\n      <td>0.0265</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 1 (\u03bad(1))</td>\n      <td>0.0035</td>\n      <td>0.0045</td>\n    </tr>\n    <tr>\n      <td>Degradation rate in tier 2 (\u03bad(2))</td>\n      <td>0.0071</td>\n      <td>0.0068</td>\n    </tr>\n    <tr>\n      <td>Internalisation rate (\u03baI)</td>\n      <td>0.02</td>\n      <td>0.0513</td>\n    </tr>\n    <tr>\n      <td>Recycling rate (\u03baR)</td>\n      <td>0.0989</td>\n      <td>0.0770</td>\n    </tr>\n    <tr>\n      <td>Conjugation rate (\u03baC,nM-1)</td>\n      <td>0.7605</td>\n      <td>0.7579</td>\n    </tr>\n    <tr>\n      <td>Splitting rate (\u03baS)</td>\n      <td>0.7038</td>\n      <td>0.3036</td>\n    </tr>\n    <tr>\n      <td>Feedback control</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Amplification (\u03b1)</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Feedback Sensitivity (\u03b3)</td>\n      <td>0.0939</td>\n      <td>0.1946</td>\n    </tr>\n    <tr>\n      <td>Feedback strength (n)</td>\n      <td>4.6310</td>\n      <td>0.6202</td>\n    </tr>\n    <tr>\n      <td>Tier-wise weights</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>weight of tier 1 (w1)</td>\n      <td>0.0046</td>\n      <td>0.2875</td>\n    </tr>\n    <tr>\n      <td>weight of tier 2 (w2)</td>\n      <td>0.9954</td>\n      <td>0.7125</td>\n    </tr>\n  </tbody>\n</table>\n\nTo address the geometry of the local fidelity landscape around the optimum, we compute (i) percent changes in inference error $\\sigma\u00af_{X}$ due to perturbations in channel parameters (Figure 10a), and (ii) the eigenspectrum of the Fisher information metric (FIM, Figure 10b). The FIM $g_{\\mu\u2062\u03bd}$ is evaluated in the log-parameter space as Transtrum et al., 2015.\n\n$$\ng_{\\mu\u03bd}=\\sumx_{i}\\sumy_{j}\\frac{\u2202x^{\u2217}(M(x_{i},y_{j}),v\u2192)}{\u2202ln\u2061v^{\\mu}}\\frac{\u2202x^{\u2217}(M(x_{i},y_{j}),v\u2192)}{\u2202ln\u2061v^{\u03bd}}\n$$\n\nwhere, $v\u2192\\inV$ is the channel parameter vector, and $x_{i},y_{j}$ are the indices of cells that run along the $x$- and $y$-directions. As shown in Figure 10a, we see that the inference error does not change significantly (up to 20% change with most parameters), that is it remains within $\\sigma\u00af_{X}\\leq2.2%$. Varying the feedback strength $n$, however, drives a much stronger deviation from the minimum. Similarly, as seen from the heat map (Figure 10b), eigenvectors with the larger eigenvalues (index 1\u20136) have an appreciable component of the feedback parameters $\\gamma,n$. This implies that variation of the feedback parameters from the optimum would result in significant changes in the inferred positions. Perturbing conjugation $\u03ba_{C}$ and splitting $\u03ba_{S}$ rates simultaneously (see eigenvector 16) does not produce any notable change to the inferred positions (eigenvalue $\u223c10^{-13}$). Further, perturbations to channel parameters other than the feedback parameters (eigenvectors 7\u201316) produce marginal changes in inferred positions.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig10-v1.jpg)\n\n**Figure 10.:** (a) Percent changes in the inference error upon perturbations in the channel parameters (as described in Table 1) around the optimum for one-tier two-branch channel (optimised $\\sigma\u00af_{X}=1.9%$). For most perturbations, the inference error deviates by up to 20% of the optimum i.e. the inference error $\\sigma\u00af_{X}$ remains below 2.2%. (b) Left: eigen spectrum of the Fisher information metric (FIM, see Equation 21) around the global minimum of $\\sigma\u00af_{X}$, Right: weight of the different channel parameters in the eigenvectors of FIM, obtained from projecting each eigenvector along the channel parameter axes. The index 1 corresponds to the eigenvector with the largest eigenvalue and the index 16 corresponds to the eigenvector with the smallest eigenvalue.\n\nMoving now from a local to global analysis of the fidelity landscape, we run the optimisation algorithm (Section \u2018Performance of the Channel Architectures\u2019) on the one-tier two-branch channel architecture with 216 space-filling initial points in the 16-dimensional parameter space of this architecture. We then define the low inference error states as those channel parameters $v\u2192^{opt}$ that yield $\\sigma\u00af_{X}\\leq2%$. This cutoff, which equals $\u2308\\frac{\\sigma\u00af_{X}}{0.01}\u2309$, corresponds to declaring as equivalent all the inference errors $\\sigma\u00af_{X}$ that lie between one and two cells\u2019 widths. Consistent with the local analyses, we find that the frequency distribution of optimal feedback parameters $\\gamma,n$ is narrowly distributed about the global optimum (Figure 11a). As shown in Figure 11a, the parameters corresponding to forward and backward rates are skewed towards the upper and lower bounds of the allowed parameter range, respectively. We see that the optimal binding rates in the non-signalling branch (Figure 11a) are more broadly distributed across the permissible range than the optimal binding rates in the signalling branch, which are concentrated towards the upper bound of the permissible range. This again reflects the promiscuity of the non-signalling receptors as described in Section \u2018Asymmetry in branched architecture: promiscuity of non-signalling receptors\u2019. All other optimal parameters corresponding to degradation rates, minimum and maximum receptor values and steepness of the receptor profiles, show a very broad spread over this range (Appendix 14\u2014figure 1). To explore the topography of the low inference error landscape, we evaluate the components of the \u2018position vectors\u2019 of these minima $v\u2192^{opt}$ in the parameter space $V$ along the eigenvectors of the Hessian of $\\sigma\u00af_{X}$, defined as\n\n$$\nh_{\\mu\u03bd}=\\frac{\u2202^{2}\\sigma\u00af_{X}(M,v\u2192)}{\u2202v^{\\mu}\u2202v^{\u03bd}}\n$$\n\nwhere $M$ stands for the entire morphogen profile and we have assumed a Euclidean metric. As shown in Figure 11b and c, components of the \u2018position vector\u2019 of the minima $v\u2192^{opt}\\inV$ lie predominantly along the sloppy directions of the Hessian that is along the eigenvectors with small eigenvalues. This suggests that geometry of the low inference error landscape resembles a deep valley, which is shallow along the several sloppy directions and steep along the few stiff directions.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig11-v1.jpg)\n\n**Figure 11.:** Geometry of the low inference error landscape defined by channels within a band $\\sigma\u00af_{X}\\leq2%$ about the global minimum.(a) Frequency distributions of optimised channel parameters in the low inference error landscape. Here we show the ligand binding rates of the signalling and non-signalling receptors, conjugation and splitting rates, and feedback sensitivity and feedback strength parameters. The distributions of the other optimised channel parameters are shown in Appendix 14. (b) Eigenvalues of the Hessian $h_{\\mu\u2062\u03bd}$ (see Equation 22) of $\\sigma\u00af_{X}$ around the global minimum. (c) Components of the normalised \u2018position vectors\u2019 of the minima $v\u2192^{opt}\\inV$ along the eigenvectors of the Hessian $h_{\\mu\u2062\u03bd}$, obtained from projecting each position vector along the eigenvector of the Hessian. Here, position vectors in the parameter space $V$ are defined by the usual Euclidean metric.\n\n### Choice of objective function\n\nThe objective function as defined in Equation 7 gave equal weight to inference errors at all positions $x$ along the tissue, driving the inference error to reduce at all positions simultaneously. In certain developmental contexts, the objective could be to partition the tissue into cell identity segments (reviewed in Briscoe and Small, 2015). In such a case, the partition boundaries would need to be sharp Gregor et al., 2007a that is only the errors at the segment boundaries would need to be minimised. We show that even with this choice of objective function, the qualitative results for the optimal channel architectures remain unaltered. We define the inference error for a tissue with $N_{p}$ segmented cell identities as.\n\n$$\n\\sigma_{X}^{2}(x)=\u27e8(1\u2212\\delta_{g(x),g(x^{\u2217})})(x^{\u2217}\u2212x)^{2}\u27e9_{y}whereg(x)=1+\\sumi=1N_{p}\u0398(x\u2212\u03be_{i})\n$$\n\nwhere $\\delta$ and $\u0398$ denote the Kronecker-delta and Heaviside-theta functions respectively, $\u03be_{i}$ is the position of the boundary between the i-th and (i+1)-th segments, and $g$ is a function that maps position (actual or inferred) to a segment, that is $g:[0,1]\u2192{1,2,\u2026,N_{p}}$ with $N_{p}$ as the total number of segments.\n\nWe optimise one-tier one-branch, one-tier two-branch and two-tier two-branch channel architectures for the inference error as defined in Equation 23 with $N_{p}=4$ and equally spaced boundaries located at positions $\u03be_{1}=0.25,\u03be_{2}=0.5,\u03be_{3}=0.75$ along the $x$-axis. As before, this optimisation suggests that an additional branch aids in reducing the inference errors due to extrinsic noise (compare Figure 12b and d), with similar opposing receptor profiles as in Section \u2018Branched architecture with multiple receptors provides accuracy and robustness to extrinsic noise\u2019. Tiers play only a moderate role in reducing the inference errors further in a two-branch channel (compare Figure 12d and f). However, just as with the previous objective function, an additional tier provides substantial robustness to intrinsic noise as shown in Figure 13c.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig12-v1.jpg)\n\n**Figure 12.:** (a) Profile of the signalling receptor for (a, inset) the optimised one-tier one-branch channel. (b) Corresponding inference errors due to extrinsic noise in the optimised one-tier one-branch channel. (c) Profiles of the signalling (blue) and non-signalling (red) receptor for (c, inset) the optimised one-tier two-branch channel. (d) Corresponding inference errors due to extrinsic noise in the optimised one-tier two-branch channel. Errors are predominantly located around the segment boundaries at $x=0.25,0.5,0.75$ and still increase in the direction of reducing morphogen concentrations. (e) Profiles of the signalling (blue) and non-signalling (red) receptor for (e, inset) the optimised two-tier two-branch channel. (f) Corresponding inference errors due to extrinsic noise in the optimised two-tier two-branch channel. Note that the errors here are predominantly around the segment boundaries ($x=0.25,0.5,0.75$) and diminished compared to the one-tier two-branch channel in (d).\n\n![Figure 13.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig13-v1.jpg)\n\n**Figure 13.:** (c) A comparison of local inference errors of the two optimised channels in (a,b) in presence of intrinsic noise. Even for this choice of objective function, the two-tier channel shows consistently better performance.\n\n### Experimental verification in the Drosophila Wg signalling system\n\nThe phenomenology of the morphogen reading and processing of Wg in the wing imaginal disc of Drosophila melanogaster Hemalatha et al., 2016 suggests a one-to-one mapping to the two-tier two-branch channel defined above, thus providing an ideal experimental system for a realisation of the ideas presented here (Figure 14a, b).\n\n![Figure 14.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig14-v1.jpg)\n\n**Figure 14.:** (a) Schematic of the cellular processes involved in Wg signalling, showing the two endocytic routes for the receptors (see text for further description). (b) Two-tier two-branch channel architecture corresponding to the Wg signalling system. (c) Schematic describing the XY view of wing disc. The vertical brown stripe marks the Wg producing cells. Horizontal green stripes mark the regions in wing disc used for analysis. See Experimental Methods (Appendix 15) for more information. (d) Coefficient of variation (CV) of CAAX-GFP intensity profiles, expressed in wing discs, as a function of (normalized) distance from producing cells (n=4). (e) Coefficient of variation in the output of the optimised two-tier two-branch channel (blue), and upon perturbation (orange) via removal of the non-signalling branch, implemented by setting all rates in the non-signalling branch $\u03ba$ to zero. The optimised parameter values for the plot can be found in Table 2 under the column corresponding to $n_{T}=2,n_{B}=2,r_{-}=\u03ba_{C}$. (f) CV of intensity profiles of endocytosed Wg in control wing discs (C5GAL4Xw1118; blue; n=4) and discs where CLIC/GEEC endocytic pathway is removed using UAS-myr-garz-DN (C5GAL4XUAS-myr-garz-DN; orange; n=5).\n\n![Figure 14\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79257/elife-79257-fig14-figsupp1-v1.jpg)\n\n**Figure 14\u2014figure supplement 1.:** Fluorescence intensity profiles of: (a) GFP-Myr-Garz-DN and control. Endocytosed Wg profiles in (b) control wing discs (n=4) and (c) discs where CLIC/GEEC endocytic pathway is removed using UAS-myr-Garz-DN (n=5). Figure 14\u2014figure supplement 1\u2014source data 1.Fluorescence intensity measurements for a-c. Mean and standard error of mean (SEM) for b,c. Figure 14\u2014source data 1.CV of intensity measurements of CAAX GFP and endocytosed Wg, in control and myr-Garz-DN, as a function of distance from producing cells in individual samples of wing imaginal discs.\n\nWingless (Wg) is secreted by a line of cells (1\u20133 cells) at the dorso-ventral boundary and forms a concentration gradient across the receiving cells Neumann and Cohen, 1997. Receiving cells closer to the production domain show higher Wg signalling while those farther away have lower Wg signalling Neumann and Cohen, 1997. Several cell autonomous factors influence reading and processing of the morphogen Wg in the receiving cells. Binding of Wg to its signalling receptor, Frizzled-2 (DFz2), initiates signal transduction pathway and nuclear translocation of $\\beta$-catenin which further results in activation of Wg target genes (reviewed in Clevers and Nusse, 2012). In addition to the signalling receptor, binding receptors such as Heparin Sulphate Proteoglycans (HSPGs) \u2013 Dally and Dlp also contribute to Wg signalling Baeg et al., 2001; Franch-Marro et al., 2005. Further, the two receptors follow distinct endocytic pathways Hemalatha et al., 2016: while, DFz2 enters cells via the Clathrin Mediated Endocytic pathway (CME), Wg also enters cells independent of DFz2, possibly by binding to HSPGs, through CLIC/GEEC (CG) endocytic pathway. The two types of vesicles, containing Wg bound to different receptors, merge in common early endosomes Hemalatha et al., 2016. However, only DFz2 receptors in their Wg-bound state, both at the cell surface and early endosomes, are capable of generating a downstream signal leading to positional inference through a transcriptional readout Tsuda et al., 1999. This phenomenology is faithfully recapitulated in our two-tier two-branch channel architecture (Figure 14b) in which DFz2 and HSPG receptors play the role of the two branches. The conjugated state \u2018Q\u2019 represents a combination of the readings from the two branches, possibly realised by the co-receptors HSPGs that bind Kirkpatrick et al., 2006; Capurro et al., 2008 and present Hemalatha et al., 2016 diffusible ligands to signalling receptors (either on the cell surface or within endosomes).\n\nSince an experimental measurement of positional inference error poses difficulties, we measure the cell-to-cell variation in the signalling output for a given position $x$ as a proxy for inference error (Appendix 4\u2014figure 3). Larger the variation, higher is the inference error. This is calculated as coefficient of variation (CV, Appendix 15) in the output across cells in the $y$-direction (Figure 14c).\n\nLet us first discuss the results from the theoretical analysis. The optimised two-tier two-branch channel (Figure 14b) shows that the magnitude and the fluctuations in the coefficients of variation are small, with a slight increase with position (blue, Figure 14f). This is consistent with the low inference error associated with the optimised channel (Figure 8b). Upon perturbing this channel via removal of the non-signalling branch, the magnitude and fluctuations in the signalling output variation increases significantly (orange, Figure 14e). This qualitative feature of the coefficient of variation in the optimised two -tier two-branch channel is replicated in the Wg measurements of wild type cells.\n\nIn the experiments, we first established the method by determining the CV of a uniformly distributed signal, CAAX-GFP (expressed using ubiquitin promoter), and observed that the CV of CAAX-GFP is relatively uniform in $x$, the distance from Wg producing cells (Figure 14d). In order to study the steady state distribution of Wg within a cell and within the endosomes, we performed a long endocytic pulse (1 hr) with fluorescently labelled antibody against Wg Hemalatha et al., 2016; Prabhakara et al., 2022. Following this, we estimated the CV of the Wg endocytic profile as a function of $x$ (Figure 14f, and Figure 14\u2014figure supplement 1).\n\nWe assessed the CV of endocytosed Wg under two conditions: one, where the endocytic pulse of Wg is captured by the two branches and two tiers (control condition), and another, where we disengage one of the tiers by inhibiting the second endocytic pathway using a genetically expressed dominant negative mutant of Garz, a key player in the CG endocytic pathway Gupta et al., 2009. This perturbation has little or no effect on the functioning of the CME or the levels of the surface receptors that are responsible for Wg endocytosis (Hemalatha et al., 2016; Prabhakara et al., 2022). As predicted by the theory (Figure 14e), CV in the control shows a slight increase with position (Figure 14f) with fluctuations about the mean profile being small. In the perturbed condition, with the CG endocytic pathway disengaged, we find the CV shows a steeper increase with $x$ and has larger fluctuations about the mean profile.\n\nIn principle, the coefficient of variation of the output is affected by all the microscopic stochastic processes that intersect with Wg signalling network in the wing imaginal disc and in the ligand input. Therefore, one has to be careful about interpreting the changes in the coefficient of variation of the output, based on the such perturbation experiments. Notwithstanding, this qualitative agreement between theory and experiment is encouraging.\n\n## Discussion\n\nIn this paper, we have posed the problem of spatial patterning of cell fates in a developing tissue as a local, cell autonomous morphogenetic decoding that ensures precise inference of position, that is robust to extrinsic and intrinsic noise. We treat the cells as inference channels capable of reading and processing the morphogen input. We describe the architecture of the inference channels in terms of three elements: branches (number of receptor types), tiers (number of compartments) and feedbacks. We ask for properties of the inference channel architectures that allow for precision and robustness in the task of morphogenetic decoding of cellular position.\n\n### Key results\n\nTaking an information theoretic and systems biology approach, we have addressed the issue of accurate and robust morphogenetic decoding of position. For convenience, we summarise our key results in a point-wise manner:\n\nOur theoretical predictions are compared with experimental observations from Wg morphogen system of Drosophila wing imaginal disc. We first show that Wg signalling in the experimental system is equivalent to a two-tier two-branch channel. In the experiments, we use signal-to-noise ratio (SNR) of the output as a proxy for robustness of inference. Perturbation of the architecture, i.e. removal of the non-signalling branch, results in reduction of SNR. In a forthcoming manuscript, we will provide a detailed verification of the predicted opposing receptor profiles.\n\n### Geometry of the inference error landscape: implications for control\n\nWe have explored the local geometry of the fidelity landscape around the optimum, and the global geometry of the low inference error states, by perturbing channel parameters and concentration profiles of the receptors.\n\nThe local geometry of the fidelity landscape is studied using the Fisher information metric. This shows that steepest variation in the inference error comes from moving along the feedback parameters while perturbations to other channel parameters produces only marginal changes. Further, we explore the global geometry using the spectrum of the Hessian of the inference error. We find that the topography of the low inference error landscape resembles a ravine or a deep valley, which is shallow along the several sloppy directions and steep along the few stiff directions, the latter being predominantly along the feedback parameters. This dimensional reduction appears to be a recurring feature of such high-dimensional optimisation Transtrum et al., 2015; Yadav et al., 2022.\n\nSuch a geometrical approach also provides insight on the differences between the signalling and the non-signalling receptors, which shows up in the extent to which they influence inference errors in the neighbourhood of the optimum. Slight changes in the signalling receptor away from the optimum lead to a sharp increase in inference error while similar changes in the non-signalling receptor do not affect the inference errors significantly. This gives rise to the notion of stiff and sloppy directions of control - with non-signalling receptor placed under sloppy control. In a context with multiple morphogen ligands setting up the different coordinate axes (e.g. Wg, Dpp and Hh in imaginal discs Lin, 2004; Lin and Perrimon, 2000), the non-specific receptor can potentially facilitate cross-talks between them. A sloppy control on non-specific receptor would allow for accommodation of robustness in the outcomes of the different morphogens. This could potentially be tested in experiments.\n\n### Future directions\n\nWe end our discussion with a list of tasks that we would like to take up in the future. First, the information processing framework established here is very general. Obvious extensions of our models, such as adding more branches, tiers and chemical states, will not lead to qualitatively new features. However, one may alter the objective function \u2013 for instance, in the case of short range morphogens like Nodal Liu et al., 2022, only the positions of certain regions (closer to the morphogen source) or cell fate boundaries need to be specified with any precision. To this end, we have analysed another objective function which partitions the tissue into cell identity segments. The qualitative features of the optimised channel architectures remain unaltered. Depending on the developmental context, one might explore other objective functions. This would be a task for a future investigation.\n\nNext, our optimisation study ignores cellular costs due to compartmentalisation, additional receptors and implementation of feedback controls, and thus possible trade-offs between cellular economy and precision in inference. Nevertheless, the observation that addition of extra tiers beyond two provides only marginal improvements to inference, already suggests a balance between precision and cellular costs.\n\nThird, our theoretical result that the optimised surface receptor profiles are either monotonically increasing or decreasing from the morphogen source, suggests that the surface receptor concentrations are spatially correlated across cells. Such correlations could have a mechanochemical basis, either via cell surface tension that could in turn affect internalisation rates Thottacherry et al., 2018 or inter-cellular communication through cell junction proteins Garcia et al., 2018 or from adaptive feedback mechanisms between the output and receptor concentrations Barkai and Leibler, 1997. We emphasize that in the current optimisation scheme, we have allowed the receptor concentrations to vary over the space of all monotonically increasing, decreasing or flat profiles, and have not encoded the positional information in the receptor profiles.\n\nFinally, we have considered the morphogen ligand as an external input to the receiving cells, outside the cellular information processing channel. There is no feedback from the output to the receptors and thus no \u2018sculpting\u2019 of the morphogen ligand profile. Morphogen ligand profiles (e.g. Dpp Romanova-Michaelides et al., 2021) are set by the dynamics of morphogen production at the source, diffusion via transcytosis and luminal transport, and degradation via internalisation. These cellular processes are common to both the reading and processing modules in our channel architecture. This would suggest a dynamical coupling and feedback between reading and ligand internalisation, which naturally introduces closed-loop controls on the surface receptors and a concomitant sculpting of the morphogen profile.\n",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "fa69a2aa-a316-4afd-ae21-a838fc90b963",
+      "submission_id": "0ae69cdb-f978-425b-be52-fe3a50d72b4d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Gregor, https://ror.org/00hx57361 Princeton University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79257.sa0](https://doi.org/10.7554/eLife.79257.sa0)\n\nThe manuscript introduces a compelling theoretical framework to investigate architectures of signal processing. The predictions of the computational model have been convincingly validated with data from fly wing precursor tissues. The work is important and will be highly valuable to biological physicists and developmental biologists interested in morphogenesis and pattern formation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Thomas Gregor, https://ror.org/00hx57361 Princeton University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79257.sa1](https://doi.org/10.7554/eLife.79257.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cellular compartmentalisation and receptor promiscuity as a strategy for accurate and robust inference of position during morphogenesis\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Marcin Zagorski (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth reviewers and reviewing editor agreed that no additional data is needed to support the major conclusions. Therefore a revision focused on improving clarity and presentation will be sufficient. The following two major concerns should be addressed; additional detailed comments and suggestions in the reviews below should be considered for clarity and overall readability.\n\n1) One important point to clarify is whether the presented solutions (parameters identified) are representative of a larger class of sub-optimal or optimal solutions. This can be checked by perturbing the solutions. Presumably, the authors have investigated this point already as in the SM there are parts about, robustness, sensitivity and trade-offs, so improving presentation in the main part should solve that. This will also shed more light on the generality of the obtained results.\n\n2) The important question to address is whether the choice of Eq. 5, which describes how the cell evaluates its position, influences other results in the manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 Extrinsic noise coming from the stochastic ligand production at the source is included in the model by letting cells along the direction parallel to the source boundary experience a spatially-fluctuating level of ligand, with statistics given in (1). From what we understand, this noise is quenched in space. Is it clear to what extent this is equivalent to the more realistic annealed disorder originating from Brownian motion and stochastic source production?\n\n\u2013 In some cases, non-specific receptors (e.g. Dlp, Hanandal, Development, 2005) have been shown to increase in expression levels away from the morphogen source. Can the authors comment on this observation in light of their model?\n\n\u2013 In appendix L, the local inference error for a (optimised) graded receptor expression is compared to that of a uniform receptor expression pattern. We find that the way this result is presented slightly misleading since the expression level in the uniform case is not optimised; the two setups should be compared after optimisation.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 In my opinion, Figure 2 is misleading and is disrupting the flow of the manuscript. Almost the same information is conveyed in Figure 4 and Figure 5. Further Figure 2 suggests some very regular arrangement of the nodes (regular topology of signalling architecture), which is not the case. Presenting a model with tiers and branches, or some different network-like schematic to indicate reaction and flux imbalances could improve presentation.\n\n\u2013 In lines 85-87, different timescales of signalling processing are mentioned corresponding to branches (fast) and tiers (slow), but this aspect of regulation seems to be not discussed in the later parts of the paper. It might be worth drawing this analogy again when discussing how noise is integrated by different architectures. Possibly, there is the separation of the timescales or signalling integration takes place on the same timescales.\n\n\u2013 Line 98, Figure 5 is mentioned just after Figure 2 (line 91). Please amend the ordering or rephrase so figures are referenced in the text as they appear in the paper.\n\n\u2013 Line 114, I would avoid statements \"of course any choice consistent with experimental observations would do\". For instance, would the model work for stationary wave-like patterns of morphogens that could emerge via Turing mechanism (Green and Sharpe, Development 2015)? Basically, I would rephrase providing a description of acceptable ligand profiles (e.g. monotonically decreasing).\n\n\u2013 The optimization procedure employed is computationally quite-consuming as the intrinsic noise is calculated by solving a chemical master equation. Can the model be solved without directly solving CME? What are the differences? If the differences with and without CME are small this might help to have faster optimization and hence more explicitly explore the space of available signalling architectures that result in optimal or close to the optimal solution.\n\n\u2013 The intrinsic and extrinsic noises are varied separately as far as I understand. Are there any arguments/heuristics that would indicate the resulting global solutions would be the same if two types of noise would be varied simultaneously?\n\n\u2013 In appendix C, the screening is described for the model parameters, but it is still slightly obscure what process was carried out.\n\n\u2013 In table 2, in the middle column, we see that the weight of tier 2 is orders of magnitude greater than that for tier 1. In this case, what role does the first tier really play? And does such a strong weighting make sense biologically?\n\n\u2013 I don't really understand the need for appendix E, but I might be missing something.\n\n\u2013 In Appendix G, Figure 8, we see that adding a third tier does not reduce the minimum average inference error very much at all. Were any simulations done for four-tiered systems? What sort of computational cost does adding one extra tier there?\n",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7f0a9f8-399d-428b-be07-c552e33878ba",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C1",
+      "claim": "Precise spatial patterning of cell fate during morphogenesis requires accurate inference of cellular position.",
+      "claim_type": "EXPLICIT",
+      "source": "Precise spatial patterning of cell fate during morphogenesis requires accurate inference of cellular position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing a fundamental requirement for morphogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "5ae08a42-c5fc-468f-bbe0-024fbbf38605",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C2",
+      "claim": "Cells must contend with inherent stochasticity in morphogen production, transport, sensing and signalling when making inferences from morphogen profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In making such inferences from morphogen profiles, cells must contend with inherent stochasticity in morphogen production, transport, sensing and signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the challenges cells face, drawing on established understanding of biological noise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "b561206e-5e3e-4ca5-8131-aece3af0e2d8",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C3",
+      "claim": "Cells may utilise multiple tiers of processing (compartmentalisation) and parallel branches (multiple receptor types), together with feedback control, to bring about fidelity in morphogenetic decoding.",
+      "claim_type": "EXPLICIT",
+      "source": "we show how cells may utilise multiple tiers of processing (compartmentalisation) and parallel branches (multiple receptor types), together with feedback control, to bring about fidelity in morphogenetic decoding of their positions within a developing tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the paper based on theoretical modeling and analysis presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "38100201-f41d-4713-b856-1829489c20cd",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C4",
+      "claim": "By simultaneously deploying specific and nonspecific receptors, cells achieve a more accurate and robust inference.",
+      "claim_type": "EXPLICIT",
+      "source": "By simultaneously deploying specific and nonspecific receptors, cells achieve a more accurate and robust inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the theoretical analysis presented in the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "f60dc6b5-8b81-481a-91c6-cbe3006112c5",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C5",
+      "claim": "Multiple endocytic pathways participate in decoding the morphogen gradient in the patterning of Drosophila melanogaster wing imaginal disc by Wingless morphogen signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "We explore these ideas in the patterning of Drosophila melanogaster wing imaginal disc by Wingless morphogen signalling, where multiple endocytic pathways participate in decoding the morphogen gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references the experimental system used to test the theoretical predictions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "ee13faac-148e-4073-b3a9-f6742e1a4ed9",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C6",
+      "claim": "The geometry of the inference landscape in the high dimensional space of parameters provides a measure for robustness and delineates stiff and sloppy directions.",
+      "claim_type": "EXPLICIT",
+      "source": "The geometry of the inference landscape in the high dimensional space of parameters provides a measure for robustness and delineates stiff and sloppy directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach and finding from the parameter space analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "7db181b6-870f-4291-bec6-e4b348931adf",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C7",
+      "claim": "Morphogen gradients are inherently noisy across several signalling contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphogen profile measurements, across several signalling contexts, show that the gradients are inherently noisy Houchmandzadeh et al., 2002; Gregor et al., 2007a; Kicheva et al., 2007; Bollenbach et al., 2008; Zagorski et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "6884dcf0-5a07-4627-bfbb-857b4b1323f9",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C8",
+      "claim": "The noisy profile of the morphogen Bicoid (Bcd) that activates hunchback (hb) in the early Drosophila embryo results in cell fate boundaries that are positioned to a remarkable accuracy of about one cell's width.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the noisy profile of the morphogen Bicoid (Bcd) that activates hunchback (hb) in the early Drosophila embryo Gregor et al., 2007a; Gregor et al., 2007b , and the expression of gap genes that activate pair-rule genes Dubuis et al., 2013; Petkova et al., 2019 result in cell fate boundaries that are positioned to a remarkable accuracy of about one cell's width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies on Bicoid patterning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "4110d9b9-87d4-4fc7-9418-de2f90e1196b",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C10",
+      "claim": "Multiple endocytic pathways that operate at the plasma membrane can control the extent of signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the multiple endocytic pathways that operate at the plasma membrane can control the extent of signalling B\u00f6kel and Brand, 2014; Di Fiore and von Zastrow, 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on endocytic control of signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "cd2d54e3-ebd1-4745-afd3-68a0cb3462ad",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C11",
+      "claim": "Compartmentalisation together with multiple receptors, receptor promiscuity and feedback control, ensure precision and robustness in positional inference from noisy morphogen profiles during development.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, we show how cellular compartmentalisation, a defining feature of multicellularity, provides a compelling realisation of such distributed cellular inference. We show that compartmentalisation together with multiple receptors, receptor promiscuity and feedback control, ensure precision and robustness in positional inference from noisy morphogen profiles during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the paper based on the theoretical modeling and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "2fabe21b-ece8-4bbd-9291-531ee703a192",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C12",
+      "claim": "Deploying promiscuous receptors against a morphogen, in addition to its specific receptor, is a strategy to buffer variations in morphogen levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Deploying promiscuous receptors against a morphogen, in addition to its specific receptor, is a strategy to buffer variations in morphogen levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the modeling work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "825799c1-ca10-41ae-a81e-26b5072da23b",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C13",
+      "claim": "A branched architecture with multiple receptors provides accuracy and robustness to extrinsic noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Branched architecture with multiple receptors provides accuracy and robustness to extrinsic noise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a section heading summarizing a key finding from the theoretical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "473b163b-dcc8-4159-a6da-f2011417d6ca",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C14",
+      "claim": "In a one-tier one-branch channel without feedback control, the inference error is optimised when the receptor concentrations increase with the mean input.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus within this minimal architecture, the inference error is optimised when the receptor concentrations increase with the mean input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the optimization analysis of the minimal channel architecture.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "fa80340f-d35d-4e4b-ab31-0be89225e420",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C15",
+      "claim": "Introducing a feedback in a one-tier one-branch architecture only partially reduces the inference errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing a feedback in this one-tier one-branch architecture, either on receptor levels or degradation rate, only partially reduces the inference errors (Figure 6a, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "45b1f7f4-c0ba-4c13-8290-0042ad5169b3",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C17",
+      "claim": "An inter-branch feedback control in a one-tier two-branch channel results in an input-output relation with a sharp rise followed by a saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Now, as opposed to the one-tier one-branch case, an inter-branch feedback control (Figure 7a) results in an input-output relation with a sharp rise followed by a saturation (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis and data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "628cbec4-d38a-4aab-96e4-3a39236926a2",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C18",
+      "claim": "The two-branch architecture with inter-branch feedback leads to a dramatic reduction in the inference errors, to reach one cell's width precision at most spatial locations in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 7c, the two-branch architecture with inter-branch feedback leads to a dramatic reduction in the inference errors, to reach one cell's width precision at most spatial locations in the tissue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "b214aa56-df19-4c1f-81ca-148cc86cb160",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C19",
+      "claim": "In the optimised two-branch architecture, the signalling and non-signalling receptors present opposing optimal profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The signalling and non-signalling receptors present opposing optimal profiles \u2013 a consequence of the negative inter-branch feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the optimization analysis of the two-branch architecture.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "248d1ed0-a841-457d-a0ba-06932372997a",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C20",
+      "claim": "In the optimised two-branch architecture, the optimal non-signalling receptor decreases away from the source, indicating that the non-signalling receptor 'reads' the ligand input, while the signalling receptor increases away from the source, buffering the noise in the output.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal non-signalling receptor decreases away from the source, indicating that the non-signalling receptor 'reads' the ligand input, while the signalling receptor increases away from the source, buffering the noise in the output (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the optimization results shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "2bb57b09-8d70-4263-ad71-d3f1266d81ed",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C21",
+      "claim": "Tiered architecture with compartmentalisation adds robustness to intrinsic noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Tiered architecture with compartmentalisation adds robustness to intrinsic noise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a section heading summarizing a key finding from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "88b644fe-d103-4efd-8d62-5173ee3502b6",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C23",
+      "claim": "Addition of tiers beyond two leads only to a marginal reduction of inference errors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in both these optimised architectures, addition of tiers leads only to a marginal reduction of inference errors (Figure 8a) while invoking a cellular cost.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "587fd382-33b5-4aaf-8d0e-5233fc7b98ed",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C24",
+      "claim": "In the presence of intrinsic noise, additional tiers lead to significantly lower inference errors compared to one-tier architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the one-tier two-branch and two-tier two-branch channel architectures (Figure 9a and b) optimised for extrinsic noise, shows that in the presence of intrinsic noise, additional tiers lead to significantly lower inference errors (Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "3e4d4cba-0478-4089-8254-6859d13255d6",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C25",
+      "claim": "In the two-tier two-branch architecture, the inter-branch feedback leads to a mutual damping of the fluctuations of the signalling species from the two branches.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we find that in the two-tier two-branch architecture (Figure 9g\u2013i), the fluctuations in the signalling species are more tempered, the inter-branch feedback leads to a mutual damping of the fluctuations of the signalling species from the two branches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data shown in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "5ca8e4d1-4733-4100-bcc4-f26d2471d683",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C26",
+      "claim": "A branched architecture can significantly reduce inference errors by employing an inter-branch feedback and a control on its local receptor concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the three elements to the channel architecture - branches, tiers, and feedback control, we find that a branched architecture can significantly reduce inference errors by employing an inter-branch feedback and a control on its local receptor concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the optimization analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "56521616-2fa7-475b-ac8f-8b2e3cd846cc",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C27",
+      "claim": "The receptor concentration profiles required to minimise inference errors are such that the concentration of signalling (non-signalling) receptor should decrease (increase) with mean morphogen input.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, the receptor concentration profiles required to minimise inference errors are such that the concentration of signalling (non-signalling) receptor should decrease (increase) with mean morphogen input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the optimization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "bfce53e4-487e-4e06-8212-95e27d291e32",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C28",
+      "claim": "In the absence of feedback, performance of the channel diminishes and the optimised receptor profiles both decrease away from the source.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, in the absence of feedback, performance of the channel diminishes and the optimised receptor profiles both decrease away from the source (Appendix 10\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Appendix 10\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "4308c8fb-0322-4942-94fc-354ff2bddb9d",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C29",
+      "claim": "Having uniform profiles for the signalling and non-signalling receptors, with or without uncorrelated noise, fares poorly in terms of inference capability.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we show in Appendix 11\u2014figure 1 that having uniform profiles for the signalling and non-signalling receptors, with or without uncorrelated noise, fares poorly in terms of inference capability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Appendix 11\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "385c46c5-6124-4d6a-93cd-b4c4e6379dfb",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C30",
+      "claim": "While the signalling receptor is under tight cellular control, the control on the non-signalling receptor is allowed to be sloppy.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that while the signalling receptor is under tight cellular control, the control on the non-signalling receptor is allowed to be sloppy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the curvature analysis of the inference error landscape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "bb9ac3d5-269c-464a-95a3-737ff33d7088",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C31",
+      "claim": "Participation of the same non-signalling receptor in different signalling networks would imply its promiscuous interactions with all ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Participation of the same non-signalling receptor in the different signalling networks would imply its promiscuous interactions with all ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the sloppiness in control of non-signalling receptors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "4d76145f-7f9a-4d36-a360-77a7948951aa",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C32",
+      "claim": "Heparan sulfate proteoglycans (HSPGs) such as Dally and Dally-like protein (Dlp) participate in the Wingless (Wg) and Decapentaplegic (Dpp) signalling networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This, as we see below, is the case with the Heparan sulfate proteoglycans (HSPGs) such as Dally and Dally-like protein (Dlp) that participate in the Wingless (Wg) and Decapentaplegic (Dpp) signalling networks Lin and Perrimon, 2000; Romanova-Michaelides et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "79c3f841-870c-448b-a378-d7748578457e",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C33",
+      "claim": "Steepest variation in the inference error comes from moving along the feedback parameters while perturbations to other channel parameters produces only marginal changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that steepest variation in the inference error comes from moving along the feedback parameters while perturbations to other channel parameters produces only marginal changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Fisher information metric analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "ea611447-f729-4bab-a624-f2062e3d89c1",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C34",
+      "claim": "The topography of the low inference error landscape resembles a ravine or a deep valley, which is shallow along the several sloppy directions and steep along the few stiff directions.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the topography of the low inference error landscape resembles a ravine or a deep valley, which is shallow along the several sloppy directions and steep along the few stiff directions, the latter being predominantly along the feedback parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Hessian analysis of the inference error landscape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "e7e74a2d-26c4-4fe6-94de-16486dcb90ec",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C35",
+      "claim": "The phenomenology of the morphogen reading and processing of Wg in the wing imaginal disc of Drosophila melanogaster suggests a one-to-one mapping to the two-tier two-branch channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenology of the morphogen reading and processing of Wg in the wing imaginal disc of Drosophila melanogaster Hemalatha et al., 2016 suggests a one-to-one mapping to the two-tier two-branch channel defined above, thus providing an ideal experimental system for a realisation of the ideas presented here (Figure 14a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim connects the theoretical model to the experimental system, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "f77c0e16-0c4f-4877-8b39-6962596b8bcc",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C36",
+      "claim": "Wingless (Wg) is secreted by a line of cells (1\u20133 cells) at the dorso-ventral boundary and forms a concentration gradient across the receiving cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Wingless (Wg) is secreted by a line of cells (1\u20133 cells) at the dorso-ventral boundary and forms a concentration gradient across the receiving cells Neumann and Cohen, 1997.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "a3f2215f-4f85-4daf-b111-efc15d054ed1",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C38",
+      "claim": "Binding receptors such as Heparin Sulphate Proteoglycans (HSPGs) \u2013 Dally and Dlp also contribute to Wg signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the signalling receptor, binding receptors such as Heparin Sulphate Proteoglycans (HSPGs) \u2013 Dally and Dlp also contribute to Wg signalling Baeg et al., 2001; Franch-Marro et al., 2005.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "b9f7997b-100c-46c2-b677-6c0513e12173",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C39",
+      "claim": "DFz2 enters cells via the Clathrin Mediated Endocytic pathway (CME), while Wg also enters cells independent of DFz2, possibly by binding to HSPGs, through CLIC/GEEC (CG) endocytic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the two receptors follow distinct endocytic pathways Hemalatha et al., 2016: while, DFz2 enters cells via the Clathrin Mediated Endocytic pathway (CME), Wg also enters cells independent of DFz2, possibly by binding to HSPGs, through CLIC/GEEC (CG) endocytic pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "2f6c8834-2de6-44ed-85be-e4250f9f2e82",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C40",
+      "claim": "The two types of vesicles, containing Wg bound to different receptors, merge in common early endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The two types of vesicles, containing Wg bound to different receptors, merge in common early endosomes Hemalatha et al., 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "8fd4346d-3868-47bb-9930-9ce8b70621ad",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C41",
+      "claim": "Only DFz2 receptors in their Wg-bound state, both at the cell surface and early endosomes, are capable of generating a downstream signal leading to positional inference through a transcriptional readout.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only DFz2 receptors in their Wg-bound state, both at the cell surface and early endosomes, are capable of generating a downstream signal leading to positional inference through a transcriptional readout Tsuda et al., 1999.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "f51937f6-6bea-4a4f-bc04-3c64b529b616",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C42",
+      "claim": "The optimised two-tier two-branch channel shows that the magnitude and the fluctuations in the coefficients of variation are small, with a slight increase with position.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimised two-tier two-branch channel (Figure 14b) shows that the magnitude and the fluctuations in the coefficients of variation are small, with a slight increase with position (blue, Figure 14f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 14.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "228325e1-de9d-44ea-b407-4b311dbbbf25",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C43",
+      "claim": "Upon perturbing the optimized two-tier two-branch channel via removal of the non-signalling branch, the magnitude and fluctuations in the signalling output variation increases significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon perturbing this channel via removal of the non-signalling branch, the magnitude and fluctuations in the signalling output variation increases significantly (orange, Figure 14e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 14.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "87c5edd5-0c69-414c-9faa-083083b4d3d8",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C45",
+      "claim": "In the control condition, CV of endocytosed Wg shows a slight increase with position with fluctuations about the mean profile being small.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the theory (Figure 14e), CV in the control shows a slight increase with position (Figure 14f) with fluctuations about the mean profile being small.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 14f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "c69b8cde-524e-41cd-b620-bdbb42dcf319",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "claim_id": "C47",
+      "claim": "Inhibiting the CG endocytic pathway using a genetically expressed dominant negative mutant of Garz has little or no effect on the functioning of the CME or the levels of the surface receptors that are responsible for Wg endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This perturbation has little or no effect on the functioning of the CME or the levels of the surface receptors that are responsible for Wg endocytosis (Hemalatha et al., 2016; Prabhakara et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f30fc48-d92f-4f31-b02a-d6c521c03f8f",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Morphogenesis requires accurate positional inference by cells, which must contend with inherent stochasticity in morphogen production, transport, sensing, and signalling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 establish the fundamental biological context and challenge addressed by the manuscript. These are well-established principles in developmental biology supported by extensive prior literature, providing the motivation for the theoretical framework developed in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "d383928a-3908-4290-963c-c8889639cd2c",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cells utilize multiple tiers of processing (compartmentalisation) and parallel branches (multiple receptor types) with feedback control to achieve accurate and robust morphogenetic decoding. Deploying both specific and nonspecific receptors simultaneously provides a strategy to buffer morphogen level variations and achieve robustness to extrinsic noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C11, C12, and C13 represent the central theoretical predictions of the manuscript. These are supported by extensive mathematical modeling, optimization analyses across multiple channel architectures, and demonstration that branched architectures with inter-branch feedback dramatically reduce inference errors (Figures 6-8). The theoretical framework is internally consistent and the conclusions follow logically from the model assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "46372af2-42b3-4fc1-bb59-bcc15ff7f458",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In a minimal one-tier one-branch channel architecture without feedback, inference error is optimized when receptor concentrations increase with mean input. Adding feedback to this architecture only partially reduces inference errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C15 are supported by optimization analysis and data shown in Figure 6 and Appendix 5. The results demonstrate that the minimal architecture has fundamental limitations in reducing inference errors, motivating the need for more complex architectures. The analysis is mathematically sound and the conclusions are appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "1944be68-7c80-4801-b806-2d02e60ec6b1",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A one-tier two-branch channel with inter-branch feedback produces input-output relations with sharp rise and saturation, dramatically reducing inference errors to one cell's width precision. The optimized architecture shows opposing receptor profiles: non-signalling receptors decrease away from source (reading input) while signalling receptors increase (buffering noise).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are well-supported by theoretical analysis and data in Figure 7. The opposing receptor profiles emerge naturally from optimization and represent a key mechanistic insight. The dramatic reduction in inference errors is quantitatively demonstrated. However, the interpretation of functional roles (reading vs. buffering) is somewhat inferential, though logically consistent with the model behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "49e7c93a-30d4-4a6f-a56f-1559cc771afc",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Tiered architecture with compartmentalisation adds robustness to intrinsic noise. While adding tiers beyond two provides only marginal improvement for extrinsic noise, additional tiers significantly reduce inference errors in the presence of intrinsic noise through mutual damping of fluctuations via inter-branch feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C23, C24, and C25 are supported by data in Figures 8 and 9, including stochastic simulations using chemical master equations. The distinction between extrinsic and intrinsic noise effects is clearly demonstrated. The mechanistic explanation for damping of fluctuations is provided in the text and Appendix 9, though the full mathematical details of the stochastic analysis could be more explicit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "ba105a5a-63c6-4c29-8fd2-bac9d496174e",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among the three architectural elements (branches, tiers, feedback), branched architecture with inter-branch feedback and spatially varying receptor concentrations most significantly reduces inference errors. Optimal receptor profiles require signalling receptors to decrease and non-signalling receptors to increase with mean morphogen input. Without feedback or with uniform receptor profiles, performance is substantially diminished.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 synthesize key findings from the optimization studies, supported by data in Figures 6-8 and Appendices 10-11. The comparative analysis across architectures is systematic and the conclusions about the relative importance of different elements are well-justified. The requirement for spatially varying receptor profiles is demonstrated through multiple control analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "79730c1f-8dae-41f6-862d-80e8f15204a9",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Signalling receptors are under tight cellular control while non-signalling receptors can be under sloppy control. This sloppiness would allow non-signalling receptors to participate promiscuously in multiple signalling networks, as observed with HSPGs (Dally and Dlp) in Wg and Dpp signalling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 connect theoretical predictions about control requirements to biological observations. The stiff/sloppy distinction is supported by curvature analysis (Appendix 13) and Fisher information metric analysis. The connection to HSPG promiscuity is supported by citations to experimental literature. However, the direct experimental validation of the predicted control differences is not provided in this manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "ddb67a67-674d-427c-87bb-e28528a22268",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The geometry of the inference error landscape shows that steepest variation comes from feedback parameters while other parameters produce marginal changes. The low inference error landscape resembles a ravine with shallow sloppy directions and steep stiff directions, predominantly along feedback parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C34 are supported by Fisher information metric analysis (Figure 10b) and Hessian eigenspectrum analysis (Figure 11b-c). The geometric characterization provides insight into parameter sensitivity and robustness. The analysis is mathematically rigorous and the visualizations clearly support the conclusions about dimensional reduction in the parameter space.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "ff4d5018-9768-478e-a13e-71f126c03e42",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The geometry of the inference landscape in high-dimensional parameter space provides a measure for robustness and delineates stiff and sloppy directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is supported by the comprehensive parameter space analysis using Fisher information metric and Hessian analysis (Figures 10-11). The geometric approach successfully identifies which parameters require tight control versus those that can vary more freely, providing practical insights for biological regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "07f90746-06d9-452d-82ce-30198bf4b3bf",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Wg signalling system in Drosophila wing imaginal disc maps to a two-tier two-branch channel architecture. Wg forms a gradient from dorso-ventral boundary cells, binds to signalling receptor DFz2 and non-signalling HSPGs (Dally/Dlp), enters via distinct endocytic pathways (CME and CLIC/GEEC), and the vesicles merge in common early endosomes where only DFz2-Wg complexes generate downstream signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 establish the biological correspondence between the theoretical model and the experimental system. All claims are supported by citations to prior experimental work (Hemalatha et al., 2016 and others). The mapping between model components and biological entities is clearly articulated and well-justified based on established phenomenology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "6fe26fb4-87e0-499d-8f4b-c16aac017ded",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Experimental measurements in Wg signalling show that the optimized two-tier two-branch channel has small coefficients of variation with slight increase with position. Removing the non-signalling branch (by inhibiting CG pathway with Garz-DN) significantly increases output variation, consistent with theoretical predictions. The perturbation does not affect CME function or surface receptor levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C43, C45, and C47 present the experimental validation of theoretical predictions. The qualitative agreement between theory (Figure 14e) and experiment (Figure 14f) is demonstrated. However, the authors appropriately note caution in interpretation due to multiple intersecting stochastic processes. The control showing Garz-DN specificity (C47) is important but relies on prior publications rather than new data. The experimental validation is encouraging but limited in scope.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "7a90055e-5517-49cf-9d8c-f980e836d213",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple endocytic pathways participate in decoding the morphogen gradient in Drosophila wing imaginal disc Wingless signalling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by the experimental system description and citations to prior work (Hemalatha et al., 2016). This provides the biological motivation for the multi-branch architecture in the theoretical model and is well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "64020c78-45d4-4b44-963f-05381f3e3a52",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Morphogen gradients are inherently noisy across multiple signalling contexts, yet achieve remarkable precision in boundary positioning (approximately one cell's width) as exemplified by Bicoid-hunchback patterning in Drosophila embryo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C8 are supported by multiple citations to experimental studies. These establish the biological phenomenon that motivates the theoretical investigation: how cells achieve precise patterning despite noisy inputs. This is well-established prior knowledge that frames the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    },
+    {
+      "id": "9ac62157-d028-4236-99ff-312e63f5cb37",
+      "content_id": "a5108b6d-086b-47be-91d4-45441d13e450",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Multiple endocytic pathways at the plasma membrane can control the extent of signalling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 is supported by citations to prior literature. This represents established biological knowledge that motivates considering multiple branches (endocytic pathways) in the theoretical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:29:45.194046Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7f0a9f8-399d-428b-be07-c552e33878ba",
+      "result_id": "9f30fc48-d92f-4f31-b02a-d6c521c03f8f"
+    },
+    {
+      "claim_id": "5ae08a42-c5fc-468f-bbe0-024fbbf38605",
+      "result_id": "9f30fc48-d92f-4f31-b02a-d6c521c03f8f"
+    },
+    {
+      "claim_id": "b561206e-5e3e-4ca5-8131-aece3af0e2d8",
+      "result_id": "d383928a-3908-4290-963c-c8889639cd2c"
+    },
+    {
+      "claim_id": "38100201-f41d-4713-b856-1829489c20cd",
+      "result_id": "d383928a-3908-4290-963c-c8889639cd2c"
+    },
+    {
+      "claim_id": "cd2d54e3-ebd1-4745-afd3-68a0cb3462ad",
+      "result_id": "d383928a-3908-4290-963c-c8889639cd2c"
+    },
+    {
+      "claim_id": "2fabe21b-ece8-4bbd-9291-531ee703a192",
+      "result_id": "d383928a-3908-4290-963c-c8889639cd2c"
+    },
+    {
+      "claim_id": "825799c1-ca10-41ae-a81e-26b5072da23b",
+      "result_id": "d383928a-3908-4290-963c-c8889639cd2c"
+    },
+    {
+      "claim_id": "473b163b-dcc8-4159-a6da-f2011417d6ca",
+      "result_id": "46372af2-42b3-4fc1-bb59-bcc15ff7f458"
+    },
+    {
+      "claim_id": "fa80340f-d35d-4e4b-ab31-0be89225e420",
+      "result_id": "46372af2-42b3-4fc1-bb59-bcc15ff7f458"
+    },
+    {
+      "claim_id": "45b1f7f4-c0ba-4c13-8290-0042ad5169b3",
+      "result_id": "1944be68-7c80-4801-b806-2d02e60ec6b1"
+    },
+    {
+      "claim_id": "628cbec4-d38a-4aab-96e4-3a39236926a2",
+      "result_id": "1944be68-7c80-4801-b806-2d02e60ec6b1"
+    },
+    {
+      "claim_id": "b214aa56-df19-4c1f-81ca-148cc86cb160",
+      "result_id": "1944be68-7c80-4801-b806-2d02e60ec6b1"
+    },
+    {
+      "claim_id": "248d1ed0-a841-457d-a0ba-06932372997a",
+      "result_id": "1944be68-7c80-4801-b806-2d02e60ec6b1"
+    },
+    {
+      "claim_id": "2bb57b09-8d70-4263-ad71-d3f1266d81ed",
+      "result_id": "49e7c93a-30d4-4a6f-a56f-1559cc771afc"
+    },
+    {
+      "claim_id": "88b644fe-d103-4efd-8d62-5173ee3502b6",
+      "result_id": "49e7c93a-30d4-4a6f-a56f-1559cc771afc"
+    },
+    {
+      "claim_id": "587fd382-33b5-4aaf-8d0e-5233fc7b98ed",
+      "result_id": "49e7c93a-30d4-4a6f-a56f-1559cc771afc"
+    },
+    {
+      "claim_id": "3e4d4cba-0478-4089-8254-6859d13255d6",
+      "result_id": "49e7c93a-30d4-4a6f-a56f-1559cc771afc"
+    },
+    {
+      "claim_id": "5ca8e4d1-4733-4100-bcc4-f26d2471d683",
+      "result_id": "ba105a5a-63c6-4c29-8fd2-bac9d496174e"
+    },
+    {
+      "claim_id": "56521616-2fa7-475b-ac8f-8b2e3cd846cc",
+      "result_id": "ba105a5a-63c6-4c29-8fd2-bac9d496174e"
+    },
+    {
+      "claim_id": "bfce53e4-487e-4e06-8212-95e27d291e32",
+      "result_id": "ba105a5a-63c6-4c29-8fd2-bac9d496174e"
+    },
+    {
+      "claim_id": "4308c8fb-0322-4942-94fc-354ff2bddb9d",
+      "result_id": "ba105a5a-63c6-4c29-8fd2-bac9d496174e"
+    },
+    {
+      "claim_id": "385c46c5-6124-4d6a-93cd-b4c4e6379dfb",
+      "result_id": "79730c1f-8dae-41f6-862d-80e8f15204a9"
+    },
+    {
+      "claim_id": "bb9ac3d5-269c-464a-95a3-737ff33d7088",
+      "result_id": "79730c1f-8dae-41f6-862d-80e8f15204a9"
+    },
+    {
+      "claim_id": "4d76145f-7f9a-4d36-a360-77a7948951aa",
+      "result_id": "79730c1f-8dae-41f6-862d-80e8f15204a9"
+    },
+    {
+      "claim_id": "79c3f841-870c-448b-a378-d7748578457e",
+      "result_id": "ddb67a67-674d-427c-87bb-e28528a22268"
+    },
+    {
+      "claim_id": "ea611447-f729-4bab-a624-f2062e3d89c1",
+      "result_id": "ddb67a67-674d-427c-87bb-e28528a22268"
+    },
+    {
+      "claim_id": "ee13faac-148e-4073-b3a9-f6742e1a4ed9",
+      "result_id": "ff4d5018-9768-478e-a13e-71f126c03e42"
+    },
+    {
+      "claim_id": "e7e74a2d-26c4-4fe6-94de-16486dcb90ec",
+      "result_id": "07f90746-06d9-452d-82ce-30198bf4b3bf"
+    },
+    {
+      "claim_id": "f77c0e16-0c4f-4877-8b39-6962596b8bcc",
+      "result_id": "07f90746-06d9-452d-82ce-30198bf4b3bf"
+    },
+    {
+      "claim_id": "a3f2215f-4f85-4daf-b111-efc15d054ed1",
+      "result_id": "07f90746-06d9-452d-82ce-30198bf4b3bf"
+    },
+    {
+      "claim_id": "b9f7997b-100c-46c2-b677-6c0513e12173",
+      "result_id": "07f90746-06d9-452d-82ce-30198bf4b3bf"
+    },
+    {
+      "claim_id": "2f6c8834-2de6-44ed-85be-e4250f9f2e82",
+      "result_id": "07f90746-06d9-452d-82ce-30198bf4b3bf"
+    },
+    {
+      "claim_id": "8fd4346d-3868-47bb-9930-9ce8b70621ad",
+      "result_id": "07f90746-06d9-452d-82ce-30198bf4b3bf"
+    },
+    {
+      "claim_id": "f51937f6-6bea-4a4f-bc04-3c64b529b616",
+      "result_id": "6fe26fb4-87e0-499d-8f4b-c16aac017ded"
+    },
+    {
+      "claim_id": "228325e1-de9d-44ea-b407-4b311dbbbf25",
+      "result_id": "6fe26fb4-87e0-499d-8f4b-c16aac017ded"
+    },
+    {
+      "claim_id": "87c5edd5-0c69-414c-9faa-083083b4d3d8",
+      "result_id": "6fe26fb4-87e0-499d-8f4b-c16aac017ded"
+    },
+    {
+      "claim_id": "c69b8cde-524e-41cd-b620-bdbb42dcf319",
+      "result_id": "6fe26fb4-87e0-499d-8f4b-c16aac017ded"
+    },
+    {
+      "claim_id": "f60dc6b5-8b81-481a-91c6-cbe3006112c5",
+      "result_id": "7a90055e-5517-49cf-9d8c-f980e836d213"
+    },
+    {
+      "claim_id": "7db181b6-870f-4291-bec6-e4b348931adf",
+      "result_id": "64020c78-45d4-4b44-963f-05381f3e3a52"
+    },
+    {
+      "claim_id": "6884dcf0-5a07-4627-bfbb-857b4b1323f9",
+      "result_id": "64020c78-45d4-4b44-963f-05381f3e3a52"
+    },
+    {
+      "claim_id": "4110d9b9-87d4-4fc7-9418-de2f90e1196b",
+      "result_id": "9ac62157-d028-4236-99ff-312e63f5cb37"
+    }
+  ],
+  "comparisons": []
+}

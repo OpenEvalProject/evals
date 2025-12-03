@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The study collected functional genomics sequencing data from 279 samples across eleven studies, including seven SLE case-control studies with data from B cells, T cells, and neutrophils, plus SNP microarray data from a SLE GWAS study (n=2279).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe the data collection for the study. The manuscript explicitly states these numbers and study compositions, providing a clear foundation for the subsequent analyses. This is straightforward descriptive data about the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C72",
+      "C73"
+    ],
+    "result": "Three SNPs (rs1047643, rs246367, rs72642993) were identified showing significant allelic imbalance (AI) in chromatin accessibility (combined p<0.01) in B cells from SLE patients. SNP rs1047643, located in the first exon of FDFT1, exhibits dynamic AI patterns with reversed allelic preference between naive and activated B cells, and shows dynamic AI at both chromatin and transcriptional levels specific to SLE B cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11, C72-C73 describe the discovery of AI variants through a two-stage analysis. The manuscript provides statistical evidence (combined p<0.01), describes the genomic location, and demonstrates dynamic AI patterns across B cell developmental stages with supporting figures. The reciprocal validation between two independent datasets strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C70",
+      "C74",
+      "C75"
+    ],
+    "result": "SNP rs1047643 shows association with SLE risk in Hispanic populations (OR=0.77, 95% CI 0.54-0.99, p=0.023) and European populations (OR=0.91, 95% CI 0.84-0.98, p=0.02). The variant shows no strong LD (r\u00b2<0.1) with GWAS SNPs and represents a potentially GWAS-independent functional variant, though significance is lost after adjustment for 12 GWAS index SNPs in Hispanic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12-C15, C70, C74-C75 present genetic association evidence. While univariate analyses show nominal significance in two populations, the association does not survive adjustment for known GWAS variants (C74). The claim of independence (C15) is based on LD analysis but contradicted by conditional analysis showing dependence on rs17807624. The haplotype analysis (C70) provides some support but the overall genetic evidence is mixed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C71",
+      "C61",
+      "C62"
+    ],
+    "result": "SNP rs1047643 functions as an eQTL linked with BLK gene (~300 kb distant) and three adjacent genes (FDFT1, CTSB, NEIL2). Expression of BLK and FDFT1 gradually increases from naive to memory B cells, particularly in double negative memory B cells in SLE patients, a pattern not observed in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C71, C61-C62 describe eQTL relationships and expression patterns. The manuscript reports detection in two independent datasets for the BLK eQTL and provides RNA-seq data from two independent studies showing consistent expression patterns specific to SLE. The convergent evidence from multiple datasets supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A 7 kb super-enhancer (SE) was identified upstream of BLK gene in CD19+ B cells. This SE is present in 43 (33.9%) of 127 epigenomes analyzed and shows cell-type specificity to CD19+ B cells based on comparative enhancer length analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe SE identification and characterization. The manuscript provides clear genomic coordinates, quantitative analysis across 127 epigenomes, and comparative data demonstrating B cell specificity. The use of established Roadmap epigenome data provides a solid foundation for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C63",
+      "C64"
+    ],
+    "result": "DNA looping exists between SNP rs1047643 within FDFT1 and the SE region in GM12878 B-lymphoblastic cells, with the SE showing extensive long-range interactions with adjacent genes. These interactions are B-lymphocyte-specific, being much weaker or absent in seven non-B cell types, normal T cells, and nine tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C63-C64 describe chromatin interactions. The manuscript reports Hi-C data from two independent studies showing the looping interaction and provides comparative data across multiple cell types demonstrating B cell specificity. The convergent evidence from multiple Hi-C datasets and cell types supports the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The SE activity gradually increases through B cell development in SLE patients with hyper-activity in double negative (DN) B cells relative to controls. The rs1047643-containing promoter shows similar up-regulation during B cell development in SLE. Chromatin accessibility on both SE and FDFT1 promoter regions increases during B cell development in SLE but remains unchanged in healthy individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C66-C68 describe aberrant SE and promoter activity in SLE B cells. The manuscript provides quantitative ATAC-seq analysis across B cell developmental stages with appropriate controls including background sampling (Figure 4\u2014figure supplement 1). The consistent patterns across multiple B cell subsets and individuals support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "DNA methylation levels on the SE region gradually decrease from resting naive to memory B cells in SLE patients but show no obvious change in controls. There is a marked negative correlation between open chromatin states and DNA methylation levels at the SE region in SLE relative to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe DNA methylation patterns. The manuscript provides RRBS data showing developmental trends in SLE versus controls, includes background sampling controls (Figure 5\u2014figure supplement 1), and demonstrates expected inverse correlation with chromatin accessibility. The multi-omics integration strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "There is no marked enrichment of ATAC-seq reads on SE and FDFT1 promoter regions in T cells and neutrophils from both SLE patients and controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 demonstrates cell-type specificity by showing absence of activity in non-B cells. The manuscript provides quantitative ATAC-seq analysis in two additional immune cell types with appropriate visualization (Figure 4\u2014figure supplement 3), supporting the B cell-specific nature of the regulatory elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "pSTAT3, H3K4me1, and H3K27ac modifications are enriched on the SE region in B-lymphoblastic cells. STAT3 inhibition with S3I-201 significantly reduces both STAT3 DNA binding and SE activity, while STAT3 activation with ML115 significantly increases both. These results demonstrate that STAT3 directly modulates SE activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 establish STAT3 regulation of the SE. The manuscript provides ChIP-qPCR validation with appropriate IgG controls, negative control regions (Figure 6\u2014figure supplement 1), and bidirectional perturbation experiments (inhibition and activation). The convergent evidence from multiple experimental approaches supports the direct regulatory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C69"
+    ],
+    "result": "The risk allele T of rs1047643 is preferentially bound and regulated by STAT3 in B cells. STAT3 binding on the T allele is significantly reduced with inhibitor S3I-201 and increased with activator ML115 relative to the C allele. GM11997 cells are heterozygous for rs1047643, enabling allelic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C69 demonstrate allele-specific STAT3 binding. The manuscript confirms heterozygosity in the cell model (Figure 6\u2014figure supplement 2), provides allelic ChIP-qPCR with bidirectional perturbations, and validates with additional compounds (Figure 6\u2014figure supplement 3). The consistent allelic preference across multiple perturbations supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The rs1047643-T allele shows significant changes at the transcriptional level after STAT3 perturbation relative to the C allele. BLK and FDFT1 expression decreases with S3I-201 treatment and increases with ML115 treatment. The STAT3-binding risk allele T is associated with increased expression of BLK and FDFT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 link STAT3 binding to transcriptional consequences. The manuscript provides allelic RT-qPCR showing dose- and time-dependent effects (Figure 7, Figure 7\u2014figure supplement 1) and demonstrates coordinated regulation of target genes. The consistency between allelic binding and expression changes supports the functional relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Super-enhancers are large domains of clustered enhancers with extremely high enrichment of enhancer-related transcription factors, H3K4me1 and H3K27ac modifications. A large quantity of SEs show cell/tissue specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide background knowledge about super-enhancers. These are well-established concepts in the field, appropriately cited from foundational papers (Parker et al. 2013, Whyte et al. 2013, Vahedi et al. 2015, Hnisz et al. 2013). This provides necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C54"
+    ],
+    "result": "STAT3 is activated by phosphorylation at Y705 and/or S727, after which pSTAT3 modulates gene transcription by binding target sequences. STAT3 plays a key role in pathophysiological immune responses related to lymphocyte development and differentiation, and has a critical role in B cell maturation, differentiation, and autoimmunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C54 provide background on STAT3 biology. These are well-established facts appropriately cited from the literature (Decker and Kovarik 2000, Levy and Darnell 2002, Yu et al. 2009, Avery et al. 2010, Ding et al. 2016). This provides necessary biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C55"
+    ],
+    "result": "B-cell hyperactivity is central to SLE pathogenesis. Over 100 loci have been implicated in SLE by GWAS, explaining approximately 30% of heritability. Genetic risk variants at the BLK promoter at 8p23 alter transcription and contribute to autoreactive B-cell responses. Genetic risk factors behave in a context-dependent or cell-specific manner, and 8p23 is a major SLE susceptibility region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C55 provide background on SLE genetics. These are appropriately cited from the literature (Rahman and Isenberg 2008, Catalina et al. 2020, Yin et al. 2021, Guthridge et al. 2014, Sun et al. 2016, Morris et al. 2016, Gallagher and Chen-Plotkin 2018, Demirci et al. 2017). This establishes the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Allelic imbalance (AI) analysis can provide a strong foundation for implicating genetic or epigenetic mechanisms linked to complex traits or diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 describes the utility of AI analysis, appropriately cited from foundational papers (Pastinen and Hudson 2004, Yan et al. 2002). This provides methodological rationale for the study approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SNP rs1047643 has been associated with multiple myeloma and follicular lymphoma, diseases whose pathogenesis is partially associated with B cell dysfunction. Hyperactive STAT3 has been associated with poor survival in both diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide context about rs1047643 in other diseases, appropriately cited (Van Ness et al. 2008, Skibola et al. 2008, Huang et al. 2013, Jung et al. 2017). This supports the potential functional significance of the variant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "There are 13 SLE-associated GWAS leading SNPs at the 8p23 locus, with six SNPs directly located in the SE region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 describe known GWAS variants at the locus. The manuscript provides genomic visualization (Figure 3E) showing the locations of these variants. This contextualizes the novel variant within the known genetic architecture of the region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FDFT1 encodes squalene synthase, which catalyzes an early step in cholesterol biosynthesis. Dyslipidemia with elevated cholesterol, LDL, and triglycerides has been observed in lupus patients. Multi-omics data indicate that rs1047643-linked FDFT1 may be aberrantly activated in B cell development in SLE patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 connect FDFT1 function to SLE pathology. The background on FDFT1 and dyslipidemia is appropriately cited (Tozawa et al. 1999, Tisseverasinghe et al. 2006). The conclusion about aberrant activation (C60) is supported by the multi-omics evidence presented in the manuscript (expression, chromatin accessibility, DNA methylation data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "BLK plays a critical role in B lymphocyte development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 provides background on BLK function, appropriately cited (Saijo et al. 2003). This supports the biological significance of the eQTL relationship between rs1047643 and BLK.",
+    "result_type": "MINOR"
+  }
+]

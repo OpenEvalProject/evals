@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors developed a lattice-based stochastic mathematical model of corneal epithelium homeostasis that incorporates spatial correlations between cell replication and removal, replicative lifespan (RLS), and centripetal bias. The model examines both 'Hierarchical' and 'Equipotent' stem cell dynamics and derives tradeoffs between these parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C26 describe the model development and key assumptions. The model is clearly defined with explicit parameters (stem cells S, progenitor cells P, RLS, interaction range m, bias angle \u03b1) and uses Monte-Carlo simulations. The methodology is sufficiently detailed with references to Appendix sections for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In the coupled replication-removal model without centripetal bias, cells with low RLS exhaust their replicative capacity before reaching the corneal center, requiring RLSmin \u2248 130 replications for full renewal. Above this threshold, a contiguous patch pattern emerges that resembles mutant phenotypes lacking centripetal chemotaxis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 present simulation results with supporting figures (Figure 2A, 2B, Video 1, Appendix 1-figure 2). The RLSmin value of ~130 is derived from both simulations and theoretical approximations using a binomial stochastic process. The comparison to mutant phenotypes is supported by multiple citations (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Adding centripetal bias to the coupled model dramatically reduces RLSmin and produces centripetal stripe patterns. With ideal bias, the theoretical minimum RLS is R/m (\u224820 replications for R=100, m=5), and renewal time is 2R/(m+1) (\u224835 replications or ~100 days with 3-day cell cycle).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 present key results with theoretical derivations (Appendix 1 section V) and simulation data (Figures 3A-C, Video 2). The scaling relationships (RLSmin ~ R/m, renewal time ~ 2R/(m+1)) are mathematically derived and validated by simulations. The biological timescale calculation uses cited cell cycle times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In the uncoupled model without bias, centripetal patterns can form but only for low RLS (<10), primarily at the tissue periphery. This regime results in high post-mitotic rates, no central corneal proliferation, and renewal times of hundreds of replications, creating an inherent tradeoff between pattern order and renewal speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 describe uncoupled model behavior with supporting data (Figures 4A-C, 7B, Video 3). The limitations are clearly demonstrated: peripheral-only patterns, slow dynamics, and high post-mitotic fraction. However, the biological relevance is questionable given the extremely slow timescales (hundreds of replications vs. observed ~20-50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Adding centripetal bias to the uncoupled model increases clonal unmixing but maintains bias-independent mixing in the central region. The model exhibits non-monotonic renewal time behavior with RLS. Theoretical limits show minimal renewal time scales as log2(R) for high RLS with ideal bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C72 present uncoupled model with bias, supported by Figures 5A-C and Video 4. Theoretical limits are derived (Appendix 1 section VI). The comparison to 1D models (C67, Moraki et al. 2019) provides validation. The non-monotonic behavior (C71-C72) is explained mechanistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Comparing all model variants against experimental constraints (renewal time 20-50 replications, centripetal patterns, contiguous patches in mutants, central corneal proliferation), only the coupled model with centripetal bias and RLS \u226520 satisfies all criteria. Uncoupled models without bias produce unrealistically slow dynamics and post-mitotic central corneas inconsistent with in vivo data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C85 synthesize model comparisons with experimental data (Figure 6A-B). Multiple experimental observations are cited: cell cycle times (C75, Sagga et al. 2018), renewal times (C76, Amitai-Lange et al. 2015), mutant phenotypes (C80), and proliferation patterns (C85, Richardson et al. 2017, Sagga et al. 2018). The logical elimination of incompatible models is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The interplay between RLS and interaction length is similar for Hierarchical and Equipotent stem cell models, but clone dynamics differ. Hierarchical models show monotonic decline to stem cell number in both limbus and cornea. Equipotent models show different limbal vs. corneal dynamics with bi-phasic corneal clone numbers. Front propagation velocity is invariant to stem cell model but depends on interaction length and bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C98 compare stem cell model variants with supporting data (Figures 7A-E, Appendix 1-figure 4-5). The distinction between models is clearly demonstrated. The comparison to neutral drift dynamics (C93-C94) and intestinal crypt dynamics (C98, T\u00f3th et al. 2017) provides context. However, distinguishing these models experimentally may be challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Spatial coupling between replication and removal imposes fundamental constraints: minimal RLS scales as R/m for short-range interactions (or log2(m) for long-range), and renewal time scales as 2R/(m+1). This suggests progenitor cells require much higher replicative capacity than traditionally assumed (3-4 replications) if interactions are spatially correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C108 present key theoretical insights with mathematical derivations (Appendix 1 section V). The scaling relationships are rigorously derived and validated by simulations (Figure 3B-C). The challenge to traditional RLS values (C42, C103) is well-supported. However, the assumption of short-range interactions needs experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The model predicts that larger tissues require increased RLS or interaction length. The cornea's low cell number, limited lineage depth due to centripetal bias, and symmetric divisions in the Equipotent model suggest low mutation accumulation probability, potentially explaining the rarity of corneal cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C114 extend the model to cancer biology and tissue scaling. While the logic is sound (C110-C111 cite cancer rarity and cell numbers), the mutation accumulation analysis (Appendix 1 section IX) lacks quantitative validation against actual mutation rates or cancer incidence data. The tissue scaling prediction (C109) is speculative without comparative data from larger organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors conclude that the coupled replication-removal model with centripetal bias and RLS \u226520 best explains all experimental observations. This model predicts cells should proliferate throughout the cornea, not just near the limbus. Previous 2D models with low RLS produce unrealistically slow dynamics (hundreds of days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C122 synthesize conclusions by comparing to prior work (Moraki et al. 2019, Lobo et al. 2016). The systematic comparison (Figure 8) evaluates each model variant against four criteria. The prediction of central corneal proliferation (C122) is testable. The critique of prior models is fair given the quantitative timescale discrepancies (C119, Figure 6A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The work highlights that RLS-interaction length tradeoffs are independent of stem cell model choice (Hierarchical vs. Equipotent), though clone dynamics can distinguish between them. The conclusions are broadly applicable to tissues where spatial homeostasis is maintained through cell replication without significant motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 present final conclusions supported by Figure 7B showing similar tradeoffs across models. The distinction via clone dynamics (C124) is demonstrated in Figures 7C-D. The broader applicability claim (C126) is reasonable but speculative without validation in other tissue systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The introduction establishes the biological context: tissue homeostasis depends on stem cell and progenitor dynamics, with competing 'Hierarchical' and 'Equipotent' models. In the cornea, limbal epithelial stem cells (LESCs) generate progenitor cells with limited RLS that maintain the tissue. Lineage tracing reveals centripetal stripe patterns, but underlying mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide background knowledge supported by extensive citations. The description of corneal biology (C6-C12) cites established literature (O'Callaghan and Daniels 2011, Cotsarelis et al. 1989, etc.). The competing stem cell models (C3) and spatial correlation debate (C4-C5) frame the research question appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C42"
+    ],
+    "result": "The authors note their results can extend to other cellular systems maintaining spatial homeostasis through replication, and that previous literature attributed RLS of 3-4 to progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is a reasonable speculation about broader applicability. Claim C42 accurately represents prior literature (Lobo et al. 2016, Richardson et al. 2017, Lehrer et al. 1998) that the current work challenges. Both claims are appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A CX3CR1-associated gene module is identified in CD1c+ DCs from non-infectious uveitis patients. RNA-seq analysis of CD1c+ DCs from two independent cohorts identified a replicated gene module (147 genes, 94% consistent direction of effect) with CX3CR1 as the hub gene, enriched for cytokine production regulation, and comprising CD36, CCR2, TLRs, and transcription factors RUNX3, IRF8, and NFKB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C51 provide convergent evidence from two independent cohorts using RNA-seq and co-expression network analysis. The identification of CX3CR1 as the hub gene is replicated (C41, C48), with strong statistical support (p=5.9\u00d710\u207b\u00b2\u00b2). The replication of 147 genes with 94% directional consistency (C49) and functional enrichment (C50) strengthen the finding. The methodology is appropriate and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C90"
+    ],
+    "result": "The disease-associated gene module in CD1c+ DCs is not mediated by type I IFNs but shows overlap with disrupted NOTCH2/RUNX3 signaling. The transcriptome shows no enrichment for type I IFN-dependent genes, RUNX3 is downregulated in patients but upregulated by IFN-\u03b1 stimulation in vitro, and significant overlap exists with Runx3-KO and Notch2-KO cDC2 signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C52-C55, C90 provide multiple lines of evidence distinguishing this from type I IFN-mediated DC changes. The lack of enrichment for IFN-dependent genes (C52), opposite RUNX3 response to IFN-\u03b1 (C53-C54), and significant overlap with knockout signatures (C55, C90) are internally consistent. However, the mechanistic interpretation relies heavily on comparison to mouse models, which may not fully translate to human biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "CX3CR1+ DC3s are specifically diminished in peripheral blood of non-infectious uveitis patients. Flow cytometry analysis identified four CD1c+ DC clusters, with cluster 44 (CD36+CX3CR1+ DC3s) significantly reduced in patients (p=0.03 by FlowSOM, p=0.029 by manual gating), while CX3CR1\u2212 DC3s were not affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C57-C62, C67-C70 provide consistent evidence from both automated (FlowSOM) and manual gating approaches. The specific reduction of CX3CR1+ but not CX3CR1\u2212 DC3s (C69 vs C70) strengthens the specificity of the finding. Statistical significance is demonstrated with appropriate tests (Welch t-test). The convergence of computational and manual methods validates the result. Sample size (26 patients, 11 controls) is modest but adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C82"
+    ],
+    "result": "CX3CR1 expression in DC3s is independent of CD14 expression. Weak correlation between CD14 and CX3CR1 in bulk RNA-seq (r=0.35), no significant difference in CX3CR1 expression between sorted CD14+ and CD14\u2212 fractions, and CD5\u2212CD163+ DC3s contain both CX3CR1+ and CX3CR1\u2212 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C82 provide multiple lines of evidence for independence of CX3CR1 and CD14 expression. The weak correlation (C64), lack of differential expression in sorted populations (C65-C66), and flow cytometry data (C82) are consistent. However, C63 is stated as an inference ('suggests'), and the evidence, while consistent, is not definitive proof of biological independence versus technical limitations in detecting subtle differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C71",
+      "C72",
+      "C73",
+      "C96"
+    ],
+    "result": "Stimulated CX3CR1+ DC3s secrete high levels of pro-inflammatory cytokines. Upon LTA stimulation, CD36+CX3CR1+ DC3s produce significantly higher levels of TNF-\u03b1, IL-6, VEGF-A, and sTNFR1 compared to CD36\u2212CX3CR1\u2212 DC3s, while IL-23 secretion is equivalent between subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C71-C73, C96 demonstrate functional differences between DC subsets using in vitro stimulation and multiplex immunoassays. The differential cytokine production is statistically significant and biologically relevant. However, the number of donors tested (n=4) is small, and the use of a single stimulus (LTA) limits generalizability. The functional assays support but do not prove in vivo relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C84"
+    ],
+    "result": "CX3CR1+ DC3-like cells are detectable in inflamed eyes of non-infectious uveitis patients. Single-cell RNA-seq analysis of eye fluid identified CD1c+ DCs with a gene expression profile consistent with CX3CR1+ DC3s, including higher CX3CR1, CD36, CCR2, and lower RUNX3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C74-C77, C84 provide evidence for presence of CX3CR1+ DC3-like cells in the disease site using scRNA-seq of eye fluid. The gene expression profile is consistent with blood CX3CR1+ DC3s. However, the analysis relies on reanalysis of published data from only 4 patients, and the identification is based on gene expression similarity rather than direct CX3CR1 protein detection. The term 'DC3-like' appropriately acknowledges uncertainty in exact cell identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C43"
+    ],
+    "result": "Two independent cohorts of non-infectious uveitis patients were studied with appropriate controls and quality control. Discovery cohort (n=23 patients) used FACS-sorted CD1c+ DCs from frozen PBMCs; replication cohort (n=28 patients) used MACS-isolated CD1c+ DCs from fresh blood (96% purity). All patients had active disease without systemic immunomodulatory treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37, C43 describe the study design and cohorts. The use of two independent cohorts with different isolation methods strengthens the findings. Patient selection criteria are clearly defined (C33-C36), and high purity of isolated cells is documented (C43). The cohorts are well-characterized with appropriate controls. Sample sizes are modest but reasonable for discovery studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study was conducted with appropriate ethical oversight and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 document ethical compliance with Helsinki principles, institutional review board approval, and informed consent. These are standard requirements appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Patient samples did not cluster according to clinical parameters of disease activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 reports a negative finding that transcriptomic profiles do not correlate with clinical disease activity measures. This is supported by Figure 1\u2014figure supplement 2 showing PCA plots with various clinical parameters. This suggests the transcriptomic changes reflect disease state rather than activity level, though alternative explanations (insufficient power, inappropriate clinical measures) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Type I IFNs promote DC3 expansion in SLE but active uveitis is associated with lower type I IFN levels, distinguishing these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C23 cite prior literature establishing the role of type I IFNs in DC3 biology and the distinction between SLE and uveitis. These are appropriately cited background claims that contextualize the current findings. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C83",
+      "C112"
+    ],
+    "result": "CX3CR1+ DC3s are implicated in non-infectious uveitis pathophysiology and can secrete pro-inflammatory mediators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C83, C112 are summary conclusions integrating multiple lines of evidence from the study. The implication of CX3CR1+ DC3s is supported by their reduction in blood, presence in inflamed eyes, and capacity to secrete relevant cytokines. However, 'implicated' appropriately acknowledges that causality is not established\u2014the reduction in blood could be due to migration, consumption, or altered production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The uveitis-associated CX3CR1+ DC3s exhibit phenotypic and functional features similar to previously described cDC2B subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 compare the current findings to prior literature on DC subsets. The similarity to cDC2B (higher CX3CR1, TNF-\u03b1, IL-6 production) is supported by citations and consistent with the current data. However, C81 is explicitly stated as an inference, and the comparison relies on studies using different methodologies and potentially different cell populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Non-infectious uveitis shows opposite DC3 changes compared to SLE, consistent with opposite type I IFN profiles in these diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 contrast the current findings with SLE, where DC3s accumulate rather than decrease. The opposite type I IFN profiles (elevated in SLE, reduced in active uveitis) provide a mechanistic framework. The citations support these claims, though the comparison assumes similar DC biology across diseases, which may not be fully justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The gene module overlaps with disrupted NOTCH2 signaling, which is mediated via NF-\u03baB/RelB and regulates TNFR1 expression in cDC2s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C95 propose a mechanistic pathway linking NOTCH2, NF-\u03baB/RelB, and TNFR1. While each individual claim is supported by citations to prior literature, the integration into a coherent mechanism for uveitis is speculative. The overlap with NOTCH2-KO signatures (C90) is demonstrated, but the functional significance and whether this pathway is actually disrupted in uveitis patients remains unclear. This represents a hypothesis rather than a demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Prior studies show CD36+ DC3s and CX3CR1+ cDC2B produce high TNF-\u03b1, altered NF-\u03baB signaling in cDC2 associates with anti-TNF response, and anti-TNF therapy is effective for uveitis but may dysregulate type I IFN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 cite prior literature connecting DC biology to TNF-\u03b1 and therapeutic responses. These appropriately contextualize the findings within existing knowledge about anti-TNF therapy in uveitis. The citations appear accurate, though the mechanistic connections remain correlative rather than causal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Microbiota, dietary factors, and myeloid cytokines like GM-CSF can influence DC subsets and may contribute to uveitis, though GM-CSF signaling in DCs has a minor role in EAU inception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 cite prior literature on factors that may influence DC biology relevant to uveitis. These are appropriately cited background claims that suggest potential mechanisms for future investigation. The citations appear accurate, and the discussion appropriately notes the limited role of GM-CSF in EAU (C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Stimulation of CD1c+ subsets with GM-CSF or TLR ligands does not induce the transcriptional features observed in uveitis patients, consistent with DC subsets not converting between states upon stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 report negative findings from stimulation experiments, supported by data (C108) and consistent with prior literature (C109). This suggests the observed changes reflect altered subset proportions rather than activation states. However, the limited number of stimuli tested and the reliance on short-term in vitro cultures limit the generalizability of this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Prior study by Chen et al. 2014 reported increased CD1c+ DCs in uveitis, but that study did not include CD11c marker, potentially including non-DC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 address an apparent discrepancy with prior literature. The explanation that the prior study included CD1c+CD11c\u2212 populations is plausible and supported by reference to the current study's flow cytometry data. This represents appropriate critical evaluation of prior work, though the explanation remains somewhat speculative without reanalysis of the original data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on non-infectious uveitis, its clinical significance, genetic associations, role of T cells and dendritic cells, and gaps in understanding of CD1c+ DC involvement in conditions not driven by type I IFNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20, C24-C26 provide background context from prior literature and statements about current knowledge gaps. These are appropriately cited and accurately represent the state of the field. They establish the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "cDC2 subsets differ by their dependence on NOTCH signaling, leading to the hypothesis that transcriptomic signatures in patients reflect changes in subset proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 cites prior literature on NOTCH-dependent differences in cDC2 subsets and uses this to formulate a testable hypothesis. This represents appropriate use of prior knowledge to guide the study design and interpretation. The hypothesis is subsequently tested and supported by the flow cytometry data.",
+    "result_type": "MINOR"
+  }
+]

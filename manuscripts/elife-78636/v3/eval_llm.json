@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study enrolled 11 patients with GBAC (5 male, 6 female, median age 70 years), including 2 rapid autopsy cases and 9 surgery cases. A total of 58 samples were analyzed including 11 primary tumors, 6 BilIN, and 30 metastatic tumors, with appropriate ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30-C41, and C144-C148 provide comprehensive cohort description with consistent patient counts, demographics, and sample composition. The methodology is clearly documented with appropriate ethical oversight (C147-C148).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C42",
+      "C43"
+    ],
+    "result": "ERBB2 and TP53 were the most frequently altered genes in primary tumors (54.5%), followed by FBXW7 (27.3%). Of six ERBB2 alterations, three were amplifications and three were pathogenic missense mutations. Five of six TP53 mutations were accompanied by LOH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C42-C43 describe the mutational landscape with specific frequencies and molecular characterization. The data are supported by WES analysis of 11 primary tumors with appropriate validation using COSMIC database classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Most mutations in frequently altered genes (76.9%, 10 of 13) were detectable in concurrent BilIN, but a substantial proportion was subclonal. Specific mutations in TP53, ERBB3, ARID2, CTNNB1, FBXW7, ARID1A, NF1, CDKN2A, ERBB2, GNAS, and SMAD4 were characterized as clonal or subclonal in individual patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C51-C63 demonstrate early mutation acquisition in precancerous lesions with detailed patient-specific examples. The clonal/subclonal distinction is supported by PyClone analysis and consistent across multiple patients (n=4 BilIN samples analyzed).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C15",
+      "C16",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Subclonal diversity was common in BilIN (n=4), with certain subclones shrinking in concurrent primary tumors while others expanded through linear and branching evolution. Specific clonal dynamics were documented showing selective sweep phenomena during malignant transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C15-C16, and C64-C77 describe clonal selection during carcinogenesis with quantitative clonal prevalence data from four patients. The phylogenetic analysis using CITUP supports both branching evolution and selective sweep patterns with specific percentage changes documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C78",
+      "C79",
+      "C92"
+    ],
+    "result": "Combined analysis of metastatic tumors revealed branching and linear evolution in nine patients (81.8%) and linear evolution only in two patients (18.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C78-C79, and C92 provide clear quantification of evolutionary patterns in metastatic disease. The phylogenetic analysis of all 11 patients with metastatic samples supports these proportions, though the small sample size limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Eight patients (88.9%) had 11 subclones that expanded at least sevenfold during metastasis, harboring putative metastasis-driving mutations in cancer-related genes including SMAD4, ROBO1, DICER1, JARID2, PRKCD, and others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C80-C91 document subclonal expansion during metastasis with specific fold-changes and candidate driver mutations. The identification of putative drivers is supported by literature citations, though functional validation is not provided. The sevenfold threshold appears arbitrary but is consistently applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Six mutational signatures were identified (1, 3, 7, 13, 22, 24) with cosine similarity >0.9. Signatures 1 (age) and 13 (APOBEC) decreased during metastasis while signatures 22 (aristolochic acid) and 24 (aflatoxin) were relatively highlighted. Signatures 22 and 24 were exclusive to the SNUBH dataset compared to MSKCC and Shanghai cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C104-C108 describe mutational signature analysis with appropriate validation using multiple tools (Mutalisk, Signal, MuSiCa). The temporal changes in signature contributions are supported by data, though C106 acknowledges limitations due to low mutation counts (median 61). The geographic specificity of signatures 22 and 24 is interesting but requires cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Selected cancer clones continued to evolve and maintained subclonal diversity in metastatic tumors. Metastatic lesions were uniformly polyclonal, with clonal composition showing similarity within the same or adjacent organs but distinct patterns in anatomically distant organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C93-C103 describe polyclonal metastasis and organ-specific clonal patterns. The data from patients GB-A1, GB-A2, and GB-S4 support organ-specific clonal composition, though the sample size is limited. The temporal relationship in GB-A2 (C102) provides additional support for metastasis-to-metastasis spread.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C44",
+      "C45"
+    ],
+    "result": "Whole genome doubling (WGD) was detected in both primary and metastatic tumors in two patients (33.3%), and in distant metastasis only in one patient. Ploidy analysis was limited to 15 tumors from six patients with purity >0.4 due to accuracy concerns at lower purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe WGD patterns with appropriate methodological constraints. The purity threshold (>0.4) is justified by citation (C45), and the limited analysis scope is clearly stated. The finding of WGD acquisition during metastasis in GB-S5 is interesting but based on single patient observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Two of six patients with BilIN were excluded from analysis: one due to low tumor purity (0.03) and one due to different truncal mutations suggesting different origins of BilIN and primary GBAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe appropriate quality control exclusions. The low purity exclusion is consistent with the ploidy analysis threshold (C44-C45). The exclusion based on different truncal mutations (C50) is reasonable but relies on inference about clonal origins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In GB-A1, ERBB2 copy number gain initiated from the precancerous stage (copy number 3 in BilIN) and progressed during malignant transformation (copy number 9 in primary tumor), with maintenance after metastasis. SISH and IHC analyses confirmed progressive amplification and protein expression. ERBB2 amplification was uniformly identified from primary to metastatic tumors in GB-S6 and GB-S7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 describe ERBB2 amplification progression with multiple lines of evidence (WES, SISH, IHC). The data from GB-A1 show clear progression from BilIN to primary tumor with orthogonal validation. However, C112 uses speculative language ('might have initiated') which is appropriate given the cross-sectional nature of the data. The uniform amplification in GB-S6 and GB-S7 provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C102"
+    ],
+    "result": "The study found the possibility of metastasis-to-metastasis spread in GB-A2, where chest wall and mesentery metastases developed later than lung and liver metastases with distinct clonal compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130 and C102 suggest metastasis-to-metastasis spread based on phylogenetic analysis and clinical timeline. However, the authors acknowledge uncertainty ('possibility') and note that intratumoral heterogeneity of primary GBAC makes strong conclusions difficult. The temporal relationship supports the hypothesis but does not definitively prove metastasis-to-metastasis spread versus independent seeding from primary tumor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C109",
+      "C110"
+    ],
+    "result": "Aristolochic acid (ingredient of oriental herbal medicine) and aflatoxin (contained in soybean paste and soy sauce) might have little impact on early cancer development but their impacts might be highlighted in overt cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C111 link mutational signatures to environmental exposures with appropriate citations. However, C111 is highly speculative about the temporal role of these carcinogens. The mutational signature data show relative changes but do not establish causality or temporal dynamics of exposure. The interpretation requires validation through exposure history data not provided in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C29"
+    ],
+    "result": "This is the first study to investigate clonal evolution from precancerous lesions to metastatic tumors in patients with GBAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120 and C29 assert novelty based on literature review. While the comprehensive analysis from BilIN through metastasis appears unique for GBAC, the 'first study' claim is difficult to definitively verify without exhaustive literature search. The claim is reasonable given the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C139",
+      "C140"
+    ],
+    "result": "Targeted sequencing of single specimens is insufficient to determine clonal versus subclonal mutations. Multi-regional biopsies may not be feasible in most patients. Future applications include early diagnosis through detection of clonal mutations in healthy individuals and monitoring of expanding subclones for earlier detection of progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137 are reasonable inferences from the study findings. However, C139-C140 are highly speculative about future clinical applications without supporting data. The feasibility, sensitivity, and specificity of ctDNA-based approaches for GBAC are not established in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The study has three main limitations: samples were not acquired according to developmental sequence, small tumor pieces may not reflect entire lesion composition due to intratumoral heterogeneity, and accessibility bias exists with more samples enabling identification of more clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 appropriately acknowledge study limitations. These are inherent constraints of the study design and sampling approach. The authors transparently discuss how these limitations may affect interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The study employed comprehensive methodological approaches including WES with appropriate coverage (\u2265300\u00d7 tumors, \u2265200\u00d7 normal), analysis using Genomon2 pipeline, clonal inference using PyClone and CITUP, mutational signature analysis with multiple tools, and validation using SISH and IHC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C167 provide detailed methodology with appropriate tools, parameters, and validation approaches. The sequencing depth is adequate, multiple analytical tools are used with validation, and the filtering criteria are clearly stated. The exclusion of 42 mutations (2.7%) from CITUP analysis (C159-C160) is reasonable and transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C138"
+    ],
+    "result": "The introduction and discussion appropriately contextualize GBAC epidemiology, treatment, prognosis, genomic landscape, and clonal evolution concepts with relevant citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 and C121-C138 provide appropriate background and context with supporting citations. These claims establish the rationale for the study and interpret findings in light of prior work. The citations appear appropriate though individual citation accuracy was not verified.",
+    "result_type": "MINOR"
+  }
+]

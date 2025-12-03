@@ -1,0 +1,133 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Mass spectrometry-based immunopeptidomics identified 16 Mtb-derived MHC-I peptides from primary human macrophages infected with Mtb H37Rv. Of these, 13 (81.25%) derived from type VII secretion system (T7SS) substrates, which were significantly overrepresented relative to the whole Mtb proteome at both peptide (p<10\u207b\u00b9\u2070) and protein (p<10\u207b\u2077) levels. Proteins without identifiable secretion signals were significantly underrepresented (p<10\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 describe a rigorous immunopeptidomics workflow with appropriate validation (77.85% of initial identifications rejected after manual inspection, 51.51% of remaining rejected by SureQuant). The statistical enrichment analysis is properly conducted with appropriate corrections (Bonferroni), and the overrepresentation of T7SS substrates is highly significant. The quality control measures (peptide length distribution, hydrophobicity correlation, HLA motif clustering) support the technical validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Confocal microscopy revealed that Mtb co-localized with markers of phagosomal membrane permeabilization (Galectin-3 and P62) but not with MHC-I itself in primary human macrophages. An ESX-1-deficient Mtb strain (eccCa1:Tn) showed reduced co-localization with Galectin-3 and P62, consistent with prior studies showing ESX-1 is required for phagosome membrane damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by quantitative microscopy data across multiple donors (n=4 for C16-C18, n=3 for C19) with appropriate statistical testing. The findings are consistent with cited prior work and include proper controls (secondary antibody alone). The automated quantification method is described, reducing potential bias. The lack of MHC-I co-localization with Mtb-containing phagosomes supports the cytosolic processing hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C37"
+    ],
+    "result": "ESX-1 activity is required for presentation of both EsxA28-36 and EsxJKPW24-34 peptides on MHC-I, as demonstrated by targeted MS showing absence of these peptides in macrophages infected with ESX-1-deficient Mtb. This requirement is independent of type I interferon signaling, as exogenous IFN-\u03b2 restored CXCL10 production but did not rescue peptide presentation. Notably, presentation of peptides from ESX-5 substrates (EsxJKPW) also requires ESX-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C37 are well-supported by quantitative targeted MS data (n=3 donors, all HLA-A*02:01+, HLA-B*57:01+) with appropriate controls ruling out alternative explanations (no differences in bacterial growth, infection rates, or MHC-I surface expression). The IFN-\u03b2 rescue experiment provides strong evidence for ESX-1-dependent, interferon-independent mechanism. The finding that ESX-5 substrate presentation requires ESX-1 is particularly significant and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Chemical inhibition studies showed that proteasome inhibition (MG-132), cathepsin inhibition (E64d), and lysosomal acidification inhibition (bafilomycin) did not reduce presentation of Mtb peptides EsxA28-36 and EsxJKPW24-34, though each inhibitor reduced presentation of some self peptides. Bafilomycin treatment increased presentation of EsxA28-36 (p<0.05), though not significantly for EsxJKPW24-34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by targeted MS data with proper validation of inhibitor activity (western blots for MG-132, fluorometric assay for E64d, lysotracker staining for bafilomycin). Controls confirmed minimal cytotoxicity, no effect on phagocytosis or bacterial growth, and no significant effect on MHC-I surface levels. The statistical analysis for bafilomycin effect on EsxA28-36 is appropriate (one-way ANOVA with Dunnett's test). The negative results suggest alternative or redundant processing pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Background claims establishing TB disease burden and BCG vaccine limitations are cited from WHO reports and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are standard background information appropriately cited to authoritative sources (WHO reports, peer-reviewed literature). These establish the rationale for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior literature establishes that CD8+ T cells contribute to Mtb control in animal models, that some immunodominant antigens are poorly recognized on infected macrophages, and that virulent Mtb remains intact in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 accurately cite prior work to establish the scientific rationale. These are literature-based claims that provide context but are not experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "Discussion claims cite prior literature showing BCG and H37Ra are ESX-1 deficient, that ESX-1 requirements vary by antigen and cell type, that ESX-5 secretion is ESX-1-independent in culture, and that cytosolic access is required for MHC-I presentation in dendritic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C38 appropriately cite prior literature to contextualize the current findings. These are accurate representations of published work used to interpret the study's results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior studies demonstrate that several identified antigens (EsxA, EsxB, PPE51, EsxJKPW, EspC) are immunogenic in humans, and that specific peptides (EsxJ24-34, EsxA28-36) are recognized by human T cells. Bioinformatic studies show HLA-binding motifs are underrepresented in Esx-family proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 accurately cite prior immunogenicity studies to validate the potential vaccine relevance of identified antigens. These literature-based claims support the translational significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

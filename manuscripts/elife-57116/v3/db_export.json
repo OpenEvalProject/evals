@@ -1,0 +1,1756 @@
+{
+  "submission": {
+    "id": "0ae87b15-1941-4004-b8f1-ea97f34c8ed5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:11:25.956527Z",
+    "updated_at": "2025-12-03T02:11:25.956527Z"
+  },
+  "content": [
+    {
+      "id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "submission_id": "0ae87b15-1941-4004-b8f1-ea97f34c8ed5",
+      "content_type": "manuscript",
+      "content_text": "# shinyDepMap, a tool to identify targetable cancer genes and their functional connections from Cancer Dependency Map data\n\n## Authors\n\n- Kenichi Shimada<sup>1</sup> ([ORCID: 0000-0001-8540-9785](https://orcid.org/0000-0001-8540-9785)) \u2020\n- John A Bachman<sup>1</sup> ([ORCID: 0000-0001-6095-2466](https://orcid.org/0000-0001-6095-2466))\n- Jeremy L Muhlich<sup>1</sup> ([ORCID: 0000-0002-0811-637X](https://orcid.org/0000-0002-0811-637X))\n- Timothy J Mitchison<sup>1</sup> ([ORCID: 0000-0001-7781-1897](https://orcid.org/0000-0001-7781-1897))\n\n### Affiliations\n\n1. Laboratory of Systems Pharmacology and Department of Systems Biology, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIndividual cancers rely on distinct essential genes for their survival. The Cancer Dependency Map (DepMap) is an ongoing project to uncover these gene dependencies in hundreds of cancer cell lines. To make this drug discovery resource more accessible to the scientific community, we built an easy-to-use browser, shinyDepMap (https://labsyspharm.shinyapps.io/depmap). shinyDepMap combines CRISPR and shRNA data to determine, for each gene, the growth reduction caused by knockout/knockdown and the selectivity of this effect across cell lines. The tool also clusters genes with similar dependencies, revealing functional relationships. shinyDepMap can be used to (1) predict the efficacy and selectivity of drugs targeting particular genes; (2) identify maximally sensitive cell lines for testing a drug; (3) target hop, that is, navigate from an undruggable protein with the desired selectivity profile, such as an activated oncogene, to more druggable targets with a similar profile; and (4) identify novel pathways driving cancer cell growth and survival.\n\n## Introduction\n\nCancer is a disease of the genome. Hundreds, if not thousands, of driver mutations cause cancer in different patients (MC3 Working Group et al., 2018), and extensive collaborative efforts such as the Cancer Genome Atlas Program (TCGA) have helped discover them (The Cancer Genome Atlas Research Network, 2019). Targeted therapies, a type of precision medicine, aim to treat cancer by selectively killing cancer cells with a specific genotype and spectrum of driver mutations (Friedman et al., 2015). The underlying hypothesis is that cancers depend on essential genes that are not the same for all tissues, and that these conditionally essential genes constitute a druggable dependency\u2014an \u2018Achilles\u2019 heel\u2019\u2014that can be exploited to develop targeted drugs with minimal toxicity. To achieve this goal, it is important to identify conditionally essential genes for all cancers. It is also important to group these conditionally essential genes into functionally related sets to maximize the chance of finding a druggable target within each set, such as a kinase or other enzyme.\n\nThe concept of essential vs. non-essential genes arose largely from genetic research in model organisms. Traditionally, it was considered a binary distinction that held across any genotype. However, loss of a given gene can decrease cell growth without killing the cell, so it is more realistic to assign a numerical value to the degree of essentiality, that\u00a0is, the extent to which loss of a gene, or inhibition of its product, influences fitness. In cancer, this value may depend on the genotype, transcriptome, and lineage of the cell. In principle, genes that are only essential in a few cell types might make better drug targets since inhibiting their function is less likely to cause toxicity in non-cancer tissues. For example, the epidermal growth factor receptor is strongly required in certain cancer cells, but not in normal bone marrow stem cells, making it a potentially good target (Wang et al., 2006).\n\nThe Cancer Dependency Map (DepMap) is an ongoing project to identify essential genes across hundreds of cancer cell lines using genome-wide CRISPR and shRNA screens (Tsherniak et al., 2017; Behan et al., 2019). It has already been used successfully to discover cancer cells\u2019 genetic vulnerabilities (Sandoval et al., 2018; Wang et al., 2019b). These data represent a gold mine of useful information for biologists and drug developers, but can be challenging for non-bioinformaticians to manipulate and interpret.\n\nThe DepMap portal website (https://depmap.org/portal) provides a range of information for each gene, including (1) the cell lines and lineages dependent on the gene; (2) co-dependent genes (i.e., other genes whose effects on growth are strongly positively or negatively correlated with the gene); and (3) basal transcript abundances, copy numbers, and mutations for the gene. However, the DepMap portal has no native tools to integrate CRISPR and shRNA or to examine functional relationships among essential genes beyond pairwise comparisons.\n\nHere we describe shinyDepMap, a web tool to enable researchers to rapidly determine the essentiality and selectivity of a given gene across cell lines and to find groups of functionally related genes with similar essentiality profiles. shinyDepMap integrates data from both CRISPR and shRNA screens, yielding robust measures of the effects of gene loss on cell viability. From these combined effect scores, we derive two measures for each gene: the degree to which loss of the gene reduces cell growth in sensitive lines (\u2018efficacy\u2019), and the degree to which its essentiality varies across lines (\u2018selectivity\u2019). To help researchers identify potential therapeutic targets, we clustered genes with strong efficacy scores into functional units, many of which represent complexes or biological pathways, as previously reported (Pan et al., 2018). The results of this analysis are accessible via a simple interactive web\u00a0tool at https://labsyspharm.shinyapps.io/depmap.\n\n## Results\n\n### Assessment of consistency between CRISPR and shRNA dependency scores\n\nThe DepMap project (https://depmap.org/) provides two separate preprocessed genome-wide genetic perturbation datasets for hundreds of cell lines using either shRNA or CRISPR (Meyers et al., 2017; McFarland et al., 2018). In both datasets, the preprocessed scores represent the growth effects of knocking the gene down or out, with a strongly negative value in a particular cell line indicating essentiality. Though the preprocessing algorithms for the shRNA data take \u2018off-target\u2019 genes into account when generating essentiality scores, we nevertheless expected that the essentiality profiles would differ somewhat between shRNA and CRISPR due to their distinct mechanisms of reducing gene expression.\n\nTo assess the consistency between CRISPR and shRNA dependency scores, we first compared the gene/cell line combinations tested with both methods (15,847 genes in 423 cell lines, Figure 1\u2014source data 1) and computed essentiality thresholds for each distribution such that a dependency score more negative than the threshold is considered essential (Figure 1A; 'Materials\u00a0and\u00a0methods'). These thresholds define the subsets of cell line/gene combinations that are determined to be essential by either CRISPR or shRNA but not both (areas A and B in Figure 1A). The two methods were somewhat consistent on average, with both methods yielding approximately normal dependency score distributions with mean zero and a left-skewing tail corresponding to the subset of essential genes (Pearson correlation 0.456, Spearman correlation 0.201).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig1-v3.jpg)\n\n**Figure 1.:** (A) Comparison of normalized CRISPR and shRNA dependency scores of 15,847 protein-encoding genes in 423 cell lines. The density and contour plot corresponds to the distribution of the scores from all gene perturbations. Vertical and horizontal solid lines indicate the essentiality thresholds for CRISPR and shRNA dependency scores, respectively. Areas A, B, and\u00a0C correspond to the regions where only CRISPR, only shRNA, or both CRISPR and shRNA claimed essential. (B) Comparison of CRISPR and shRNA targeting four genes. In each panel, data points correspond to each gene\u2019s perturbation in 423 cell lines. Each point corresponds to one cell line. (C) In\u00a0total,\u00a0958 and 20 genes were claimed essential only by CRISPR or shRNA but not by the other method, respectively (Fisher\u2019s exact test, p-value<1e-3). (D) Assessment of the pathways overrepresented by the essential genes claimed only by CRISPR or shRNA, highlighted in C (Fisher\u2019s exact test).\n\nDespite this concordance, the comparison highlighted differences between the two methods at the individual gene level. First, CRISPR tends to detect weak to moderate gene deletion effects more sensitively, as evidenced by the greater density of CRISPR-essential genes above the diagonal in the joint distribution plot (Figure 1A). For example, while both methods identify RAN, CRISPR identifies CCND1 as more essential (Figure 1B). Second, some genes were shown essential only by CRISPR or shRNA, but not by the other method (e.g., FOXD4 and EIF5B; Figure 1B).\n\nTo better understand these inconsistent dependencies, we used Fisher\u2019s exact test to determine which genes, across their perturbations in all 423 cell lines, were enriched for inconsistent dependencies. We found that 958 and 20 genes were claimed commonly essential only by CRISPR or shRNA, respectively (Figure 1C). Notably, these two sets of inconsistently essential genes are enriched for involvement in distinct pathways: for example, tRNA metabolic process and mitochondrial translation are overrepresented in the CRISPR-only set, whereas cytosolic translation initiation is overrepresented in the shRNA-only set (Figure 1D). This suggests that CRISPR and shRNA have distinct biases in assessing some genes\u2019 essentiality, affecting different classes of genes. While CRISPR is considered to be less susceptible to off-target effects (Smith et al., 2017) and thus now generally preferred over shRNA, the results and their therapeutic relevance may also depend on the genes of interest. For example, EIF5B, a gene involved in translation initiation, is highly conserved throughout Bacteria, Archaea, and Eukarya, suggesting that it may be essential for most human cells (S\u00f8rensen et al., 2001). However, only shRNA, but not CRISPR, highlighted it as an essential gene. A method that can combine the two dependency scores would compensate for each other's artifacts and give more robust scores.\n\n### A new dependency score combining CRISPR and shRNA\n\nTo summarize both CRISPR and shRNA dependency scores, SC and SR, we developed a new dependency score by combining them. Recent studies have shown that similar approaches are practical (Wang et al., 2019a; Gilvary et al., 2019). Our new dependency score, $S^{\\theta}$, was computed as the weighted average of the two such that $S^{\\theta}=\\thetaS^{C}+1-\\thetaS^{R}$, where \u03b8 is the mixing ratio of the two scores. It is appropriate to have any $\\theta\\in[0,1]$, but we selected six values of \u03b8 :$\\theta\\in{0,0.2,0.4,0.6,0.8,1}$ in this study, which are equivalent to mixing CRISPR and shRNA scores at 0:100 (=SR), 20:80, 40:60, 60:40, 80:20, and 100:0 (=SC). Using the equation above, we computed $S^{\\theta}$ for 15,847 genes in 423 cell lines for each \u03b8 (Figure 2\u2014source data 1). The distribution of $S^{\\theta}$ was located between $S^{C}(=S^{1})$ and $S^{R}=S^{0}$ (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig2-v3.jpg)\n\n**Figure 2.:** (A) Dependency scores defined with different mixing ratios are computed by projecting each point onto the corresponding lines. \u03b8 denotes the fraction of CRISPR dependency scores. PC1 is the direction of the primary principal component line. (B) The distributions of combined dependency scores for four genes shown in Figure 1B. (C) Top panel: the distribution of the combined dependency score $S^{0.6}$. The essentiality threshold $T^{0.6}$ is determined based on this distribution. Bottom panel: the distribution of efficacy scores $\u2130_{G,X}^{0.6}$ with various X (-th percentile). Genes that satisfy $\u2130_{G,X}^{0.6}<T^{0.6}$ are defined as commonly or selectively essential, and the number of essential genes depends on X. (D) On the diagonal line, the numbers of commonly or selectively essential genes identified with various \u03b8 are shown. In the off-diagonal area, the numbers of essential genes identified with two distinct \u03b8 are shown. Color code indicates an overlap index, a measure of overlap between two essential gene sets. The overlap index ranges from 0 (no shared genes) to 1 (the smaller set is included in the larger set). (E) The extent to which the genes claimed essential by only CRISPR or shRNA are covered by the essential genes discovered by each mixing ratio.\n\n### Efficacy: gene essentiality in a sensitive cell line\n\nWe used the combined CRISPR-shRNA gene dependency scores to identify genes that are either commonly or selectively essential in the cell line panel. This distinction is important for identifying therapeutic targets because inhibition of commonly essential genes may be toxic to both cancer cells and normal cells, whereas genes that are selectively essential to particular cancers may allow for a greater therapeutic window. To capture the therapeutic potential of selectively essential genes, we characterized gene dependency effects with two parameters: the efficacy, which defines the strength of the effect in a sensitive cell line, and the selectivity, which describes the variation of the effect across cell lines.\n\nWe defined the efficacy $\u2130_{G,X}^{\\theta}$ as the X-th percentile of the distribution of combined dependency scores $S^{\\theta}$ for gene G across all cell lines, denoted $S_{G}^{\\theta}$. For a given X, we defined a gene as essential when $\u2130_{G,X}^{\\theta}$ is lower than the essentiality threshold $T_{\\theta}$, which is determined from the distribution of $S^{\\theta}$ for all genes in all cell lines (Figure 2C, top panel). Smaller values of X (lower percentiles) lead to more extreme efficacy values $\u2130_{G,X}^{\\theta}$ and identify more essential genes in smaller subsets of cell lines (Figure 2C, bottom panel). We selected X=1 for most of our analysis. This is equivalent to claiming a gene essential when roughly 5 out of 423 cell lines show dependence on the gene (p=7.8e-5, binomial test). We discovered from 3621 to 5094 commonly and selectively essential genes from $S^{\\theta}$\u00a0with different \u03b8 (Figure 2D). Reflecting the inconsistencies between CRISPR and shRNA, only 56% (2037 genes) of the essential genes overlapped between SC and SR (Figure 2D). As for the 958 and 20 genes claimed commonly essential only by CRISPR or shRNA (Figure 1C), the essential genes discovered with the same method naturally included all of them; however, the essential genes discovered with the other method included only 40\u201360% of them, highlighting the inconsistencies between them (Figure 2E). On the other hand, the combined dependency scores $S^{\\theta}$, particularly when $\\theta=0.2,0.4,and0.6$, provide a more sensitive measure, discovering most of the essential genes claimed by either method. The first principal component line between SC and SR was parallel to the line with $\\theta=0.66$ in Figure 2A, which maximizes the variance of (SC, SR). Among the six lines, $\\theta=0.6$ (CRISPR: shRNA=60:40) is most similar to this principal component line. Therefore, we chose $\\theta=0.6$ or the corresponding $S^{\\theta}$ primarily for the rest of the analysis and compare the performance of different $\\theta$ later.\n\n### Selectivity: the difference in gene essentiality among cell lines\n\nWe next defined selectivity, a measure of the cell line dependence of the response to the loss of a gene. Selectivity implies that gene loss has a widely varying effect across the population of cell lines, such that the dispersion of the score distribution for a selectively essential gene would be greater than that for a commonly essential gene. We defined the dispersion of gene G, $\ud835\udc9f_{G,X}^{\\theta}$, as the difference between the X-th and (100-X)-th percentiles of $S_{G}^{\\theta}$, or $\ud835\udc9f_{G,X}^{\\theta}=\u2130_{G,100\u2212X}^{\\theta}\u2212\u2130_{G,X}^{\\theta}$. We found that $\u2130_{G,X}^{\\theta}$ and $\u2130_{G,100\u2212X}^{\\theta}$ were related linearly for the majority of genes, corresponding to non-essential and commonly essential genes, while some genes had large positive residuals, corresponding to selectively essential genes (e.g., green vs. orange in Figure 3A,\u00a0B). We therefore defined the selectivity $\ud835\udcae_{G,X}^{\\theta}$ using the residuals of the (100-X)-th percentile values for $\u2130_{G,100\u2212X}^{\\theta}$ relative to the red regression line (Figure 3A), which we denote $\u211b_{G,X}^{\\theta}$:\n\n$$\n\ud835\udcae_{G,X}^{\\theta}=\u211b_{G,X}^{\\theta}/\u00a0\ud835\udc9f_{G,X}^{\\theta}^=(\u2130_{G,100\u2212X}^{\\theta}\u2212\u2130_{G,100\u2212X}^^{\\theta})/\u00a0\ud835\udc9f_{G,X}^{\\theta}^=(\ud835\udc9f_{G,X}^{\\theta}\u2212\ud835\udc9f_{G,X}^{\\theta}^)/\u00a0\ud835\udc9f_{G,X}^{\\theta}^\n$$\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig3-v3.jpg)\n\n**Figure 3.:** (A) The 1st and 99th percentiles of the combined dependency score of each gene where \u03b8\u00a0=\u00a00.6.\u00a0Each point corresponds to one gene. X- and Y-axes are equivalent to the efficacy with X\u00a0=\u00a01 and X\u00a0=\u00a099, respectively. Solid red line and dashed black line are robust linear regression and identity lines, respectively. (B) Distribution of the combined dependency scores of four selective and four non-selective genes. The 1st and 99th percentile values within each distribution are also highlighted. (C) The efficacy and selectivity of all genes are plotted. (D) Summary of the pathways overrepresented by genes with strongly negative efficacy and high selectivity, strongly negative efficacy, and high selectivity, respectively.\n\nwhere $\ud835\udc9f^_{G,X}^{\\theta}$ is the expected dispersion of dependency scores based on the robust linear regression of $\u2130_{G,100\u2212X}^{\\theta}$ given $\u2130_{G,X}^{\\theta}$, or\n\n$$\n\ud835\udc9f_{G,X}^{\\theta}^=\u2130_{G,100\u2212X}^{\\theta}^\u2212\u00a0\u2130_{G,X}^{\\theta}.\n$$\n\nThe expected dispersion $\ud835\udc9f_{G,X}^{\\theta}^$ increases for more strongly negative efficacy scores\u00a0$\u00a0\u2130_{G,X}^{\\theta}$, indicating greater variances in dependency effects for commonly or selectively essential genes (e.g., greater variance for RAN vs. ZCWPW1 in Figure 3B). This could be a result of experimental noise (e.g., fewer sequencing reads for negatively selected genes) or greater biological variability in dependency effects for these genes. To better distinguish whether genes have dispersion greater than would be expected simply based on their efficacy scores, we normalize the residual values $\u211b_{G,X}^{\\theta}$ by dividing by the expected dispersion $\ud835\udc9f_{G,X}^{\\theta}^$ to obtain a measure of selectivity that accounts for the variation of $\ud835\udc9f_{G,X}^{\\theta}^$ with the X-th percentile efficacy, $\u00a0\u2130_{G,X}^{\\theta}.$ Both the\u00a0efficacy and selectivity of all the genes across different $\\theta$\u00a0are available to download (Figure 3C\u2014source data 1).\n\n### Characteristics of essential genes\n\nBy comparing the efficacy and selectivity, we found that genes with strongly negative efficacy tend to be less selective, whereas selectively essential genes tend to have only moderate efficacy (Figure 3C). To characterize the genes that have either negative efficacy or positive selectivity, we performed gene set enrichment analysis of 6551 pathways. This revealed the pathways overrepresented among essential, selective, and both selective and essential genes. For example, chromatin regulation is overrepresented among genes that are both selective and essential; nuclear metabolism and translation are overrepresented among essential (but not selective) genes; and regulation of kinase activity and tissue development are overrepresented among selective (but not essential) genes (Figure 3D, Figure 3D\u2014source data 2).\n\n### Relationship of the selectivity and the lineage specificity\n\nCells in different lineages tend to depend on distinct essential genes compared to cells in the same lineage. We examined the extent to which lineage-specific dependence contributes to selectivity. For each gene, we assessed the relationship between the number of cell lines dependent on the gene and the gene\u2019s efficacy and selectivity, and confirmed that lower selectivity and more negative efficacy and are associated with a greater number of dependent cell lines (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig4-v3.jpg)\n\n**Figure 4.:** In\u00a0A,\u00a0B, and\u00a0D, the efficacy and selectivity scatterplots (Figure 3C) are color-coded differently, highlighting the following properties of each gene.\u00a0(A) The numbers of dependent cell lines. (B) The number of dependent lineages, computed with the\u00a0Adaptive Daisy Model\u00a0(ADaM). (C) The relationship between the dependent cell lines and the dependent lineages. (D) The number of lineages in which Behan et al. suggested suitable for chemotherapy targets. (E) Nine genes\u2019 dependency scores grouped by lineages, together with the number of dependent lineages and cell lines, efficacy, and selectivity. All the panels in this figure were computed using \u03b8\u00a0=\u00a00.6 and X\u00a0=\u00a01.\n\nWe computed the number of distinct lineages dependent on each gene using the Adaptive Daisy Model (ADaM), a permutation-based statistical model reported previously (Behan et al., 2019). As with dependent cell lines, a greater number of dependent lineages was associated with more negative efficacy and lower selectivity (Figure 4B). Overall, we found that 1050 genes are commonly essential across all the lineages, 670 genes are essential in at least one lineage, and 2581 essential genes were not lineage-dependent (Figure 4B,\u00a0C, Figure 4\u2014source data 1). Unsurprisingly, the number of dependent cell lines is strongly associated with the number of dependent lineages (Figure 4C).\n\nUsing an independent CRISPR screening dataset, Behan et al. also proposed candidate drug targets based on selectively essential genes they identified for each lineage. We found that most genes with high selectivity scores were also identified as targets for one or more lineages in their analysis (Figure 4D). On the other hand, targets proposed for multiple lineages in Behan et al. (orange and red points in Figure 4D) tended to show moderate efficacy scores, but not necessarily high selectivity scores.\n\nThough we saw a strong relationship between lower selectivity and a greater number of dependent cell lines and lineages (Figure 4A,\u00a0B), we note that lineage specificity is not the only cause of high selectivity. Conventionally, high selectivity is interpreted as being commonly essential within a few lineages but non-essential in others. Some genes do manifest this type of selectivity (e.g., broad dependence on CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, and SOX10 in skin cancer, Figure 4E), but such common essentiality within a lineage is relatively unusual. In many more cases, a gene that shows high selectivity is selectively essential within each lineage (e.g., only partial dependence on CTNNB1 in liver, lung, and pancreatic cancers, or on IRF4 in skin cancer). CDK4 is a\u00a0particularly strong example of this pattern as it is not commonly essential in any lineages, but is selectively essential in many. While more negative efficacy $\u2130_{G,X}^{\\theta}$ is strongly correlated with larger dispersion $\ud835\udc9f_{G,X}^{\\theta}$ (e.g., PSMA1 vs. ISL1, Figure 4E; see also Figure 3A,\u00a0B), some commonly essential genes that show similar efficacy have substantially higher selectivity than others (e.g., the selective PSMB5 vs. the non-selective PSMA1) (Figure 4E; see also Figure 4A, C). These genes that are essential in many lineages but nevertheless have high selectivity could be promising drug targets given appropriate biomarkers to characterize sensitive cell lines.\n\n### Clustering essential genes to find related targets\n\nThe dependency profile of a gene carries information about the functions of the gene that make it essential in certain cellular contexts. When a set of genes comprise a functional unit (e.g., a pathway or a complex) that regulates cell viability, these genes would be expected to have similar dependency profiles. Gene-wise cluster analysis of the dependency data should therefore reveal functional units that connect essential genes into pathways or protein complexes. It may also be easier to relate the essentiality of pathways to cancer genotypes than to interpret the essentiality of individual genes. Pathway analysis can help identify druggable vulnerabilities at the pathway level that might be missed by single-gene analysis.\n\nWe clustered essential genes based on the similarity of the combined CRISPR-shRNA dependency scores across 423 cell lines. Our approach is based on a related pair of popular algorithms, t-distributed stochastic neighbor embedding (t-SNE), and density-based spatial clustering and noise (DBSCAN) (van der Maaten and Hinton, 2008; van der Maaten, 2014; Ester et al., 1996). t-SNE is a technique that reduces the dimensionality of multidimensional data while preserving the pairwise distances between data points at high dimensions as much as possible. It has been widely used for visualizing high-dimensional data, such as single-cell RNA-seq data (Mass et al., 2016). DBSCAN is a clustering algorithm that detects regions where the data points are gathered at high density and clusters them; it is often used to cluster data points based on their coordinates in the t-SNE plot. The combination of t-SNE and DBSCAN (expressed as \u2018t-SNE + DBSCAN\u2019 hereafter) is a powerful clustering algorithm for high-dimensional data, such as single-cell transcriptomes (Haber et al., 2017).\n\nOne limitation of this approach is that the t-SNE algorithm is stochastic, producing different results and clusters with different initial seeds. However, when we compared clusters yielded by t-SNE + DBSCAN from multiple runs, we found that strongly positively correlated points are always clustered together while weakly positively correlated points are less consistently so. To obtain robust cluster assignments from t-SNE + DBSCAN, we therefore used a workflow we call ensemble clustering with hierarchy over DBSCAN on t-SNE with Spearman distance matrix (ECHODOTS).\n\nBriefly, ECHODOTS consists of four steps (Figure 5A, Figure 5\u2014figure supplement 1): it (1) computes the pairwise Spearman distance matrix among essential genes, (2) feeds the distance matrix as input to run t-SNE with different initial seeds 200 times, (3) clusters data points based on their coordinates in the t-SNE plot with DBSCAN, and (4) identifies the sets of genes assigned to the same cluster consistently across the 200 sets of clusters using a technique called ensemble clustering (Hornik, 2005). ECHODOTS produces more reliable clusters than a single run of t-SNE + DBSCAN by seeking data points that are consistently clustered together.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig5-v3.jpg)\n\n**Figure 5.:** (A) The framework of ensemble\u00a0clustering with\u00a0hierarchy\u00a0over\u00a0DBSCAN\u00a0on\u00a0t-SNE\u00a0with\u00a0Spearman\u00a0distance matrix\u00a0(ECHODOTS)\u00a0algorithm. (B) Nine gene clusters and their associated pathways. (C) Median efficacy and selectivity of large clusters. (D) Genes consisting of\u00a0large clusters with high selectivity highlighted in C. (E\u2013G) The intra-cluster connectivity of three gene clusters as exemplars. The colors of nodes indicate their membership of small clusters, and the edges indicate that the two connected genes have Spearman correlation coefficient greater than 0.1. Numbers in E indicate Spearman correlation coefficients.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The\u00a0ECHODOTS algorithm is written using pseudocodes.\u00a0The line numbers correspond to the line numbers in the main text.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Empirical cumulative density functions (CDFs) of the efficacy $\u2130_{G,X}^{\\theta}$ across all the genes with various \u03b8. (B) Empirical CDFs of the number of dependent cell lines across all the genes with various \u03b8. (C) The distribution of the number of dependent lineages among essential genes with various \u03b8. The genes in the left- and right-hand side of the vertical lines are considered selectively and commonly essential according to the\u00a0Adaptive Daisy Model\u00a0(ADaM). (D,\u00a0E) The efficacy\u2013selectivity plot of all the genes with various \u03b8 (X=1). The genes are color-coded based on the number of dependent cell lines (D) and lineages (E). (F) Relationship between the number of dependent lineages and the number of dependent cell lines with various \u03b8 (X=1). (G) Empirical CDFs of the selectivity $\ud835\udcae_{G,X}^{\\theta}$ across all the genes with various \u03b8. (H) The number of overrepresented pathways associated with genes with strongly negative efficacy and high selectivity, strongly negative efficacy, and high selectivity.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** In A\u2013D, four parameters were plotted on Y-axis against $d=L/\\epsilon$ on X-axis, where\u00a0$\\epsilon$ is a neighborhood threshold in density-based spatial clustering and noise\u00a0(DBSCAN), for various \u03b8.\u00a0(A) The ratio between the sizes of the first and second largest clusters (N1/N2). (B) The number of genes assigned into the first and second largest clusters (N1\u00a0and N2) and the number of noise genes (Nn), that\u00a0is,\u00a0the genes that are not clustered with other genes. (C) The number of clusters. (D) The mean cluster size. (E) The similarity of the clusters with various\u00a0\u03b8. Cluster membership of the 2008 genes that were found essential with all\u00a0\u03b8\u00a0was compared using cl_dissimilarity in clue R package.\n\n### Cluster reveals known and new connections among essential genes\n\nWe ran ECHODOTS against the combined dependency score $S^{\\theta}$ of the 4301 essential genes (\u03b8=0.6, X=1) and assigned them into 879 small, 608 medium, and 338 large clusters (Figure 5\u2014source data 1). Genes in the same cluster tended to be close to each other on t-SNE maps from individual runs, and some clusters were enriched for genes known to be members of specific biological pathways or complexes (Figure 5B, Figure 5\u2014source data 2). The median efficacy and selectivity of the clusters varied widely, suggesting that some represent more promising sets of drug targets than others (Figure 5C,\u00a0D).\n\nIn examining the clusters, we found that they often included genes that were not all mutually correlated with one another. While strongly positively correlated genes tend to be located in the same neighborhood on the t-SNE map and subsequently clustered together in ECHODOTS (Figure 5B), for a gene to be added to a cluster it only needs to be correlated with at least one other gene in the cluster. The structure of the correlations among the genes within a cluster can therefore highlight subtle functional relationships. For example, we plotted the correlations among six highly essential genes in cluster S152, with an edge between genes indicating a Spearman correlation greater than 0.1 (Figure 5E). In this cluster, KEAP1 and KCTD10 are both strongly correlated with the E3 ubiquitin ligase CUL3 (with correlations of 0.387 and 0.29, respectively), but have no correlation with each other (correlation \u22120.002). This is likely due to the fact that KEAP1 and KCTD10 interact with CUL3 in a mutually exclusive manner: both serve as adaptor proteins binding the same site on CUL3 but the resulting complexes degrade distinct target proteins (NFE2L2 and RHOB, respectively) (Cullinan et al., 2004; Kova\u010devi\u0107 et al., 2018).\n\nPerhaps more intriguing are clusters that appear to show a connection between specific cellular processes and genes not otherwise known to be involved in that process. We offer two examples. One is cluster L119 (Figure 5F), which comprises\u00a0three small clusters. Clusters S369 and S745 contain the core MAP kinase (MAPK) pathway proteins, including KRAS, RAF1, BRAF, and MAPK1, while cluster S641 consists of CTNNB1 (\u03b2-catenin) and TCF7L2, which form a bipartite transcription factor complex that is a key effector of the Wnt signaling pathway (Jin and Liu, 2008). These small clusters are within the same large cluster, suggesting that MAPK and Wnt signaling are functionally related in dependent cancer cell lines (Jeong et al., 2018). Cluster L119 also contains SHOC2, which was positively correlated to KRAS, RAF1, BRAF, and MAPK1. Multiple KRAS-mutant cancers were recently shown to be vulnerable to the loss of SHOC2 in the context of MEK inhibition, confirming the link between SHOC2 and MAP kinase pathway-driven cancers (Sulahian et al., 2019).\n\nA final example is the cluster L91 (Figure 5G), also consisting of multiple smaller clusters. Cluster S154 contains the selenoprotein GPX4. GPX4 encodes glutathione peroxidase 4, an antioxidant enzyme, that reduces cytotoxic lipid peroxides and protects cells from a non-apoptotic cell death, called ferroptosis. Intriguingly, we found that\u00a0the other genes in cluster S154 were involved in selenoprotein synthesis (SEPHS2, SEPSECS, PSTK, EFFSEC) (Squires and Berry, 2008), suggesting that the primary role of these genes in dependent cell lines is to synthesize GPX4. S572 contains another selenoprotein TXNRD1 and its substrate, TXNDC17 (Espinosa and Arn\u00e9r, 2019), both of which are also strongly correlated with four selenoprotein synthesis genes. Overall, L91 seems to represent a gene set related to the sensitivity to ferroptosis (Abdalkader et al., 2018; Ingold et al., 2018).\n\n### Comparison between different dependency scores\n\nWe have so far computed the efficacy, selectivity, and clusters of essential genes using $S^{\\theta}$ with the fixed mixing ratio, \u03b8 =\u00a00.6, since this $S^{\\theta}$\u00a0retains the largest variance of the original CRISPR and shRNA scores (Figure 2A). Here we compare the performance of different \u03b8.\n\nFor efficacy, larger \u03b8 (i.e., with a larger contribution of SC to $S^{\\theta}$) gave more genes with strongly negative efficacy (Figure 5\u2014figure supplement 2A). Consistently, the number of dependent cell lines and the number of dependent lineages per gene increased with larger \u03b8 (Figure 5\u2014figure supplement 2B\u2013F). For selectivity, larger \u03b8 gave more genes with high selectivity (Figure 5\u2014figure supplement 2G). We showed earlier that essential (i.e., negative efficacy), selective (i.e., high selectivity), and both selective and essential genes overrepresent different pathways when \u03b8 = 0.6 (Figure 3D). Similar pathways were overrepresented by selective and both selective and essential genes when \u03b8 = 0.8 and 1. However, no pathways were associated with selective or both selective and essential genes when \u03b8 < 0.5, suggesting that a high selectivity was given to genes more randomly (Figure 5\u2014figure supplement 2H). Since it is more likely that selective genes represent certain pathways such as the ones shown in Figure 2D, $S^{\\theta}$ with \u03b8 > 0.5 are more reasonable ones to choose.\n\nNext, we compared the clusters of the essential genes using ECHODOTS. Since the number of discovered essential genes varies with different \u03b8 (Figure 2D), we expect the number of clusters to be different. Therefore, we did not fix the number of clusters across \u03b8. Instead, we sought the upper bound of the neighborhood threshold \u03b5 (termed \u03b50) in DBSCAN for each \u03b8 because as \u03b5 gets larger than a certain value, \u03b50, most points on the t-SNE plot would start to merge to form a single large cluster (see \u2018Materials\u00a0and\u00a0methods\u2019). We can detect incorrect merging by measuring the ratio between the first and second largest cluster sizes (Figure 5\u2014figure supplement 3A,\u00a0B). We found that \u03b50 is particularly small for \u03b8\u00a0=\u00a00.8 and 1 compared to the rest of \u03b8, and more clusters were discovered for these \u03b8 consequently (Figure 5\u2014figure supplement 3C,\u00a0D). We compared cluster memberships of the 2008 genes identified as essential among all \u03b8 and found that \u03b8\u00a0>\u00a00.5 and \u03b8\u00a0<\u00a00.5 gave substantially different clusters (Figure 5\u2014figure supplement 3E). Through the comparison, we concluded that our initial choice of \u03b8\u00a0=\u00a00.6 was a reasonable one since the combined dependency score is more informative with more weight on CRISPR than shRNA (\u03b8\u00a0>\u00a00.5, Figure 5\u2014figure supplement 3) while having some contribution from shRNA is more beneficial than CRISPR alone (Figure 2E).\n\n### shinyDepMap: an interactive web tool to explore the essentiality of genes\n\nBoth the clusters of essential genes and the gene efficacy and selectivity scores provide valuable information for finding potential chemotherapeutic drug targets. To make this information accessible to the broader community of experimental drug discovery researchers, we developed a web-based tool to explore these analyses, called shinyDepMap. shinyDepMap is written in R (Chang et al., 2019) using the shiny package for building interactive visualization tools. It consists of two apps: \u2018Gene essentiality\u2019 and \u2018Gene cluster\u2019. Each app is a dashboard-style website (Figure 6A). shinyDepMap can be used in three ways: (1) via the website https://labsyspharm.shinyapps.io/depmap, (2) by downloading the code and preprocessed data from the GitHub repository (Shimada, 2021)\u00a0and running it on a local computer, and (3) running the app from a Docker container using the image at https://hub.docker.com/r/labsyspharm/shinydepmap. The analysis workflow in the application is explained below (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57116/elife-57116-fig6-v3.jpg)\n\n**Figure 6.:** (A) Top page. (B) Gene essentiality app. 1: textbox to type in a (partial) gene symbol to query; 2: dropdown menu to select a gene symbol that matches the query; 3: efficacy\u2013selectivity scatterplot; 4: list of matched genes; 5: combined dependency score profile of the gene selected in 2; 6: mix ratio; 7: efficacy threshold (C) Gene clusters app; 8: dropdown menu to select an essential gene to explore; 9: efficacy\u2013selectivity plot for essential genes; 10: t-distributed stochastic neighbor embedding\u00a0(t-SNE) plot; 11: list of clustered genes; 12: connectivity plot; 13: Spearman correlation between the selected gene and other essential genes; 14: cluster size input; 15: probability threshold input; 16: mix ratio; 17: efficacy threshold.\n\n### Gene essentiality (all protein-encoding genes)\n\nThis app allows a user to explore the essentiality of all the genes tested in the DepMap genetic perturbation experiments. Its output has two panels. A scatterplot in the middle displays efficacy and selectivity scores for all genes (3, bold numbers correspond to the panels in Figure 6B,\u00a0C). By hovering over the plot points with the cursor, one can find the genes corresponding to each point. When a gene name to search is provided in the input text box (1), corresponding genes will be highlighted in orange/red in the efficacy\u2013selectivity plot (3). Genes matched with the query will be listed on the \u2018Matched genes\u2019 tab in the right (4),\u00a0in which, by clicking a gene\u2019s name, the description of a gene in GeneCards (https://www.genecards.org/) will open on a new page. By further selecting a matched gene from the dropdown menu (2), one can see the combined dependency scores of the gene in 423 cell lines in the \u2018Dependency scores\u2019 tab on the right (5). The definition of combined dependency scores, efficacy, and selectivity can be changed by tuning the mix ratio (equivalent to \u03b8; 6) and efficacy threshold (X-th percentile, 7) from the input panel. We set them \u03b8\u00a0=\u00a00.6 and X\u00a0=\u00a01 by default.\n\n### Gene cluster (essential genes)\n\nThis app allows a user to explore gene clusters among the essential genes. When a user first selects an essential gene from the top-left dropdown menu (8), genes clustered with the query gene will be shown on the output panels. There are three output panels in the app. The top-center is the efficacy\u2013selectivity plot for the essential genes (9). The bottom-center shows the t-SNE plot, indicating the similarity of the dependency scores among essential genes (10). The list of \u2018Clustered genes\u2019 will be\u00a0shown in the right panel (11). \u2018Connectivity\u2019 tab will show how the clustered genes are connected (i.e., strongly correlated) (12). The graphs can be downloaded in the GraphML format. \u2018Correlation\u2019 tab shows the Spearman correlation coefficients between the selected gene and other essential genes grouped by the clusters (13). While all the genes in the small cluster are shown by default, one can change it by tuning the \u2018cluster size\u2019 parameter (14) and the probability threshold (15) in the left input panel. In ECHODOTS, we computed a probability at which each gene belongs to the assigned cluster. By setting the probability threshold close to one, one can show only genes that are assigned to the same clusters consistently across many runs of t-SNE + DBSCAN. This app allows the users to tune the mix ratio (16) and efficacy threshold (17) like the Gene essentiality app. Essential genes were defined based on these two parameters. Consequently, modifying these parameters affects the clusters.\n\n## Discussion\n\nIn this paper, we described an interactive software tool, shinyDepMap, that allows users to rapidly determine the efficacy and selectivity of a gene of interest and thereby find highly selective genes that may offer promising therapeutic targets. shinyDepMap is based on both the CRISPR and shRNA genome-wide screening DepMap datasets, which we combined to generate a unified dependency score that is more informative than data from either dataset alone. Using this combined dependency score, we computed \u2018efficacy\u2019 and \u2018selectivity\u2019 scores for each gene and highlighted how these scores can be used to characterize the therapeutic potential of targeting different genes across cell lines and lineages. Finally, we performed robust clustering of commonly and selectively essential genes to highlight functional relationships. shinyDepMap allows users to interactively explore both the essentiality and clustering results and is available as a deployed web-based application at https://labsyspharm.shinyapps.io/depmap and via source code or Docker image.\n\nOur cluster analysis of the dependency scores highlighted genes comprising complexes and pathways, as previously reported (Pan et al., 2018). Our research complements published work in the area of complex and pathway annotation, in part because we were able to combine both DepMap datasets. We provide cluster information in a browsable form in shinyDepMap, including the ability to tune the size of clusters. One application of this tool is \u2018target hopping\u2019, that\u00a0is, moving from one drug target to another while keeping the selectivity profile similar (Schenone et al., 2013). One goal of target hopping is to identify druggable targets with similar dependency score profiles to genes of interest that are not conventionally druggable. A classic example is KRAS, which is essential to many cancers but until recently has been considered \u2018undruggable\u2019. KRAS appears in cluster L119 with the druggable kinases RAF1 and MAPK1, highlighting these proteins as relevant alternative targets. One goal of shinyDepMap is to help researchers identify similar therapeutic opportunities among less well-studied genes.\n\nDespite its potential value for therapeutic discovery, the DepMap dataset and our corresponding analysis in shinyDepMap have important practical limitations. The DepMap data characterizes the genetic requirements for cells grown in culture, which differs from the in vivo tumor environment in critical ways: the presence of nutrient-rich media, a two-dimensional rather than a three-dimensional substrate, and the lack of a functional immune system or physiological microenvironment. In addition, the effects of genetic perturbations (knockdown and knockout) do not necessarily correspond to those of chemical inhibition, a discrepancy that makes target identification from datasets like the DepMap less straightforward (Weiss et al., 2007). Finally, because the DepMap includes only cultured cancer lines and no wild-type cell lines or tissues, a highly selective gene in our analysis is not guaranteed to be less toxic to normal tissues when inhibited. Provided these limitations are kept in mind, the DepMap is a powerful resource and we hope the shinyDepMap tool makes it accessible to a broad community of researchers.\n\n## Materials and methods\n\n### Data and code availability statement\n\nThe\u00a0following data of the 2019 Q3 release were downloaded from the DepMap project website: CRISPR (avana) (\u2018Achilles_gene_effect.csv\u2019), combined RNAi (\u2018D2_combined_gene_dep_scores.csv\u2019), and the cell line metadata (\u2018sample_info.csv\u2019). The CRISPR and shRNA efficacy data provided by the DepMap project were normalized with CERES and DEMETER2 algorithms by the Broad Institute, respectively. To compute the combined dependency score, we use the data of 15,847 genes in 423 cell lines, which were examined with both CRISPR and shRNA. The codes generated during this study are available at https://github.com/kenichi-shimada/depmap-analysis (data processing and analysis) and https://github.com/kenichi-shimada/shinyDepMap (standalone shinyDepMap). This study did not generate unique datasets.\n\n### Imputing missing values in shRNA and CRISPR dependency scores\n\nWe first compared all the conditions (genes and cell lines) that were using both CRISPR and shRNA in a scatterplot. In total, 15,847 genes were perturbed using both methods in 423 cell lines, and we compared 4,846,055 conditions that were non-missing values. Here, one condition is defined as a perturbation of one gene, either using CRISPR or shRNA in one cell line. We next imputed missing values in CRISPR and shRNA datasets using non-missing data from the other method. In\u00a0total,\u00a01,345,642 conditions (20%) were tested using CRISPR, but not shRNA. Also,\u00a019,001 (0.28%) were tested using shRNA, but not CRISPR. In these cases, the missing values were imputed from the other data using local polynomial regression (loess) function in R. In\u00a0total,\u00a04457 (0.066%) conditions were not tested by either CRISPR or shRNA, which were left as missing. After missing values were imputed, the combined dependency score from two values was computed.\n\n### Computing the dependency score combining CRISPR and shRNA data\n\nIn this method section, we use $S_{G,L}^{\\theta}$ instead of $S^{\\theta}$ to represent the dependency score of gene G in cell line L to make the argument clearer. To summarize CRISPR and shRNA dependency scores, we developed a new dependency score of a gene G in a cell line L, $S_{G,L}^{\\theta}$, using the following equation:\n\n$$\nS_{G,L}^{\\theta}=\\thetaS_{G,L}^{C}+1-\\thetaS_{G,L}^{R}(0\\leq\\theta\\leq1)\n$$\n\nwhere $S_{G,L}^{C}$ and $S_{G,L}^{R}$ are the dependency scores of the gene g in a cell line l, given by CRISPR and shRNA alone, respectively. The combined dependency score is a function of the mixing value \u03b8. We particularly chose and compared six values of \u03b8 :$\\theta\\in{0,0.2,0.4,0.6,0.8,1}$. The\u00a0resulting combined dependency scores, $S_{G,L}^{\\theta},$ were computed for 15,847 genes in 423 cell lines for each \u03b8.\n\n### Defining essential conditions\n\nWe defined the loss of a gene G is essential in a cell line L when the score $S_{G,L}^{\\theta}$ is lower than the essentiality threshold $T_{\\theta}$: $S_{G,L}^{\\theta}<\u00a0T_{\\theta}$. $T_{\\theta}$ is defined as follows: we first fit the kernel density estimate function to the entire distribution of the dependency scores across all genes and cell lines, or $S_{\u2219,\u2219}^{\\theta}$. This distribution is well fitted with a normal distribution with a heavy left tail. We computed the mean \u03bc and standard deviation \u03c3 from the right-half of the data and defined $T_{\\theta}$ such that $P(S_{G,L}^{\\theta}<T_{\\theta})=0.001$, where $S_{G,L}^{\\theta}~N\\mu,\\sigma$.\n\n### Identifying inconsistent essential genes between CRISPR and shRNA\n\nTo find out the\u00a0genes that are claimed essential only by CRISPR or shRNA, we first computed $T_{\\theta}$ for CRISPR and shRNA, or TC and TR. Next, we sought the set of scores targeting the same gene in all the cells ($S_{G,\u2219}^{C}$, $S_{G,\u2219}^{R}$). The essentiality claimed only by CRISPR or shRNA was expressed as $S_{G,\u22c5}^{C}<T_{C}\u22c2\u00a0S_{G,\u22c5}^{R}\\geqT_{R}\u00a0$\u00a0and $S_{G,\u22c5}^{C}\\geqT_{C}\u22c2\u00a0S_{G,\u22c5}^{R}<T_{R}$, respectively. They are illustrated as areas A and B in Figure 1B. Using one-tailed Fisher\u2019s exact test, we computed the statistical significance of the enrichment of the data points ($S_{G,\u2219}^{C}$, $S_{G,\u2219}^{R}$) in the areas A and B and found that\u00a0958 and 20 genes were claimed essential only by CRISPR and shRNA, respectively. We also computed the statistical significance of the overlap between these gene sets with publicly available gene annotations, Molecular Signature Database (MSigDB v7.0) (Subramanian et al., 2005), using Fisher\u2019s exact test.\n\n### Computing the efficacy and selectivity for each gene\n\nThe efficacy $\u2130_{G,X}^{\\theta}$ measures how essential a gene is in a sensitive cell line:\n\n$$\n\u2130_{G,X}^{\\theta}=theX^{th}percentileofS_{G,\u22c5}^{\\theta}(X\\in{1,2.5,5,10,25})\n$$\n\nWe defined a gene as essential for a given X when $\u2130_{G,X}^{\\theta}<T_{\\theta}$ (Figure 3A).\n\nTo define the selectivity, we first determined the dispersion of the distribution of $S_{G,\u2219}^{C}$, $\ud835\udc9f_{G,X}^{\\theta}$:\n\n$$\n\ud835\udc9f_{G,X}^{\\theta}=\u00a0\u2130_{G,100\u2212X}^{\\theta}\u2212\u00a0\u2130_{G,X}^{\\theta}\n$$\n\n$\u2130_{G,X}^{\\theta}$ and $\u2130_{G,100\u2212X}^{\\theta}$ were in a strong linear relationship for most of the genes, which correspond to commonly essential genes, while some genes have large positive residuals. We defined the residual from the regression line, $\u211b_{G,X}^{\\theta}$, as follows:\n\n$$\n\u211b_{G,X}^{\\theta}=\ud835\udc9f_{G,X}^{\\theta}\u2212\ud835\udc9f_{G,X}^{\\theta}^\n$$\n\n\n\n$$\n\ud835\udc9f_{G,X}^{\\theta}^=\u2130_{G,100\u2212X}^{\\theta}^\u2212\u2130_{G,X}^{\\theta}=\u00a0f(\u2130_{G,X}^{\\theta})\u2212\u2130_{G,X}^{\\theta}\n$$\n\nand the selectivity of the gene G, $\ud835\udcae_{G,X}^{\\theta}$, was defined as\n\n$$\n\ud835\udcae_{G,X}^{\\theta}=\u211b_{G,X}^{\\theta}/\u00a0\ud835\udc9f_{G,X}^{\\theta}^.\n$$\n\n### Overlap of essential genes among different \u03b8\n\nThe number of essential genes, defined as $\u2130_{G,1}^{\\theta}<T_{\\theta}$, depends on the mixing ratio \u03b8. To assess the overlap between the essential gene sets across different \u03b8, we computed an overlap index for any pairs of \u03b8 that is denoted as $O_{X}(\\theta_{1},\\theta_{2})$:\n\n$$\nO_{X}(\\theta_{1},\\theta_{2})=N_{X}^{\\theta_{1}\u2229\\theta_{2}}/min\u2061(N_{X}^{\\theta_{1}},N_{X}^{\\theta_{2}})\n$$\n\nwhere $\\theta_{1}$ and $\\theta_{2}$ are specific values of $\\theta$, $N_{X}^{\\theta_{1}}$ is the number of essential genes when $\\theta=\\theta_{1}$, and $N_{X}^{\\theta_{1}\u2229\\theta_{2}}$ is the number of shared genes between the two essential gene sets. By definition, $O_{X}(\\theta_{1},\\theta_{2})$ can take any values between 0 and 1: the index is zero when the two essential gene sets do not share any genes; the index is one when the two essential genes are identical (Figure 2D).\n\n### Identifying pathways overrepresented by essential and/or selective genes\n\nFor each of essential (i.e., negative efficacy), selective (i.e., high selectivity), or both selective and essential genes, we sought pathways that were overrepresented by each gene. We sorted all the genes by efficacy and selectivity in descending order and ran gene set enrichment analysis (GSEA) with the sorted genes against the pathways from MSigDB. GSEA was performed utilizing fgsea package with 107 permutations (Sergushichev, 2016).\n\n### Identifying lineage-specific and universally essential genes\n\nTo compute the lineage specificity, we utilized ADaM. ADaM calculates the minimum number of dependent cell lines that are required for a gene to be considered as commonly essential among the cell lines in question (Behan et al., 2019). It is implemented in the ADAM2 R package (https://github.com/DepMap-Analytics/ADAM2). The dependency score matrix, $S_{\u2219,\u2219}^{\\theta}$, contains the information of 423 cell lines representing 28 lineages. We focused on a subset of 387 cell lines in 17 lineages that includes 10 or more cell lines. We computed the binary essentiality matrix for each G and L, where 1 if $S_{G,L}^{\\theta}<\u00a0T_{\\theta}$ and 0 otherwise. We then provided a subset of the matrix attributed to each lineage as input and calculated the minimum number of dependent cell lines for the lineage. Each lineage is considered dependent on G when the number of dependent cell lines in the lineage is equal to or greater than the minimum number of dependent cell lines. To compute universally essential genes utilizing ADaM, we calculated the binary essential matrix for the 17 lineages instead of cell lines and the minimum number of dependent lineages providing the matrix as input.\n\nBehan et al. also provide a list of genes that are good targets for chemotherapies for each lineage. We counted the number of lineages they suggested was a good target for each gene and mapped them onto the efficacy/selectivity plot (Figure 4D).\n\n### Robust cluster analysis utilizing t-SNE and DBSCAN: ECHODOTS\n\nWe implemented a new cluster algorithm, ECHODOTS, extending the combination of t-SNE and DBSCAN. It is graphically summarized in Figure 5A, and its pseudocode is provided in Figure 5\u2014figure supplement 1.\n\nFirst, we computed the Spearman distance matrix or 1-Spearman correlation coefficient across all pairs of essential genes (line (1) in Figure 5\u2014figure supplement 1). This matrix was provided as input, and the coordinates of each data point in a 2D plane were computed with t-SNE (line (2)). Next, we clustered data points based on their coordinates with DBSCAN such that any two points whose distance is smaller than the neighborhood threshold \u03b5 are assigned into the same cluster (line (4)). We note that the range of the coordinates, L, varies among different runs of t-SNE. It is more reasonable to make the denominator d constant rather than to make \u03b5 constant; therefore, we determined \u03b5 relative to L: $\\epsilon=L/d$ (line (3)). The resulting cluster set C was computed by DBSCAN using $\\epsilon$ derived from the preset parameter d (line (4)), which we set an integer ranging from 30 to 200. We ran t-SNE and DBSCAN to compute C 200 times using different initial seeds.\n\nNext, we computed consistent clusters CC across 200 cluster sets C for each d (or equivalently \u03b5) using ensemble clustering available in clue R package (line (5)). When d is too small, (\u03b5 is too large), most of the points are erroneously connected. The mean size and total number of consistent clusters depend on the neighborhood threshold \u03b5. The smallest \u03b5 yields the largest number of small clusters, in which data points within each cluster are most tightly connected. The largest \u03b5 yields the smallest number of large clusters, in which data points within each cluster are most loosely connected. When \u03b5 is too large (correspondingly, d was too small), most genes form one massive cluster in an extreme case. To avoid this, we set a lower bound for d or equivalently upper bound for \u03b5 such that $\\epsilon=L/d\\leqL/d_{0}=\\epsilon_{0}$ (line (6)). We determined d0 by looking at the ratio between the sizes of the first and second largest clusters (Figure 5\u2014figure supplement 3A). When \u03b5 gets smaller (d gets larger), clusters get smaller and tighter. With smaller \u03b5, some genes are not clustered with any other genes. We called these genes forming clusters only by themselves \u2018noise\u2019 and distinguished them from other clusters containing more than one gene. Eventually, all the genes become isolated or noise, but we stopped our analysis far ahead (d\u00a0=\u00a0200). When \u03b8\u00a0=\u00a00.6, we chose three different values of d (d\u00a0=\u00a065, 100, 141), which discovered 338, 608, and 879 clusters (line (7)). Most of the smaller clusters derived with larger d were contained in the larger clusters derived with smaller d. Therefore, we constructed a hierarchical relationship between the three sets of clusters. There were a few cases where a gene belongs to distinct clusters with different d, but the smaller cluster is not a part of the larger cluster and thus the hierarchy is not constructed.\n\nNote that DBSCAN is a hard clustering algorithm that assigns each gene into only one cluster. Once clustered, both strongly and weakly correlated genes become indistinguishable in hard clusters. On the other hand, ECHODOTS performs a soft clustering that can assign each gene to more than one cluster. It conducts the \u2018majority vote\u2019 among 200 runs of the clustering and computes the probability of a point being assigned to each cluster, which provides us with the strength of evidence for the cluster assignment of each gene. Thus, ECHODOTS produces more reliable clusters than a single run of t-SNE + DBSCAN by seeking data points that are consistently clustered together.\n\n### Implementation of shinyDepMap website\n\nshinyDepMap was built using shiny package. The\u00a0following packages are also used to implement the tool: ggplot2 (v3.2.1), RColorBrewer (v1.1\u20132), shinyWidgets (v0.4.8), plotly (v4.9.0), DT (v0.8), visNetwork (v2.0.8), tibble (v2.1.3), dplyr (v0.8.3),\u00a0and tidyr (v0.8.3). shinyDepMap can be run locally without an internet connection. One can download the code and data at https://github.com/kenichi-shimada/shinyDepMap, and run locally following the link\u2019s instruction.\n",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "378d3e48-0112-489a-9656-c72791778cf0",
+      "submission_id": "0ae87b15-1941-4004-b8f1-ea97f34c8ed5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erica A Golemis, Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57116.sa1](https://doi.org/10.7554/eLife.57116.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe main strength of the work is combining into a single measure CRISPR and shRNA screening data from DepMap, and providing a very convenient interface to explore these data. The approach is well-considered, and the trade-off between streamlining the exploration vs increased difficulty in interpretation is reasonable. The web-based interface is easy to use, and most of the limitations in the data analysis are clearly described. As such, the tools could be used by the community investigating gene function.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"shinyDepMap: A tool for browsing the Cancer Dependency Map reveals functional connections between genes\" for peer review at eLife. Your article is being evaluated by three peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Maureen Murphy as the Senior Editor.\n\nAs you can see from the below comments, at least two of the reviewers identify potential significance in your study. However, all of the reviewers have identified multiple weaknesses in the submitted work, bearing on the capacity of the tool to yield a measurable benefit over what is currently available; the significance of the biological insights reported; and the clarity of the presentation.\n\nReviewer #1:\n\nThe main strength of the work is combining into a single measure CRISPR and shRNA screening data from DepMap and providing a very convenient interface to explore these data. The approach is plausible and the trade-off between streamlining the exploration vs increased difficulty in interpretation is reasonable. The web-based interface is easy to use, and most of the limitations in the data analysis are clearly described. As such, the tools could be used by the community and the paper deserves to be published after a revision.\n\nThe biggest problem with the paper itself is the way it is written, which appears to be in a big haste. Multiple terms are used to describe the same thing (like \"dependency score\" and \"perturbation score\"). Sometimes the sentences appear to have self-contradictions (like \"The median cluster size is 6, 4, and 3 genes for small, medium, or large clusters, respectively\"). References in text to figure panels are frequently not matching (e.g., the sentence \"We developed a new gene dependency metric, termed \"perturbation score\" \" refers to Figure 2B, which is just a set of violin plots showing \"The perturbation score profiles of the same four genes as in A.\"). Words missing in sentences make them hard to understand e.g., in the sentence \"such that the size of the 1st and 2nd largest clusters {less than or equal to} b (b = 2.26 in our case \" the word \"ratio\" is missing). Grammar and word usage issues additionally hamper difficulty in understanding.\n\nPerhaps most importantly, the document is really poorly structured with the definitions given after the analysis using the defined term was described, some of relevant logic found in Materials and methods section etc. While having the details of informatics analysis would be rather illuminating for the \"average biology scientist\", the paper still should be rewritten and streamlined to provide the better flow and eliminate the elements of sloppiness, including all points mentioned above across the main text, figures and figure legends.\n\n1) Authors' definition \"We defined non- essential genes such that they are not identified as essential from the earlier analysis using the perturbation scores of the 10 , 20 and 42 most sensitive cell lines, as well as not identified as promoting its growth using the scores of the 10 , 20 and 42 least sensitive cell lines.\" should be justified \u2013 why was it important to exclude also genes which appear to promote growth upon knockdown from the set of non \u2013 essential genes? How many of these genes were excluded?\n\n2) DepMap genes may have designations as \"Strongly Selective\" and/or \"Common Essential\". What is the relation between genes identified as such in this study and in DepMap? A supplementary figure (Venn diagrams) and/or table may illustrate the overlap.\n\n3) It is not quite clear what in Figure S1B is illustrated which would be not clear from S1A.\n\n4) Selectivity is already a very vague notion, because it can arise from differences between cell types, or from the presence/absence of mutation in certain gene(s), etc. Median selectivity, used in Figure 4F, is trickier still, because different genes in the cluster may have different sources of selectivity. While Figure 4F is, indeed, a good way to illustrate a diversity of identified clusters, a word of caution would help to avoid overinterpreting the results.\n\n5) In the application itself, Gene Clusters are very nicely presented in the Connectivity view. It would be very helpful to provide an option to save the underlying table with gene names and correlations (for example, to enable the subsequent use in Cytoscape). At the bare minimum, some way of exporting at least gene names in the cluster should be provided, apart from copying the whole table from \"Clustered genes\" view and then removing unused columns.\n\n6) CRISPR data seems to dominate the perturbation score. How much different the clustering based on the perturbation score is if compared to using CRISPR data alone? Could any independent measure be provided to compare the sets of clusters? E.g., distribution of connectivity scores based on protein-protein interactions, or of enrichment scores?\n\n7) In the application Gene Clusters , Correlation View, the names of the clusters can be discerned when the user zooms in. However, in the static view (Figure 1C, section 12) it should be indicated in the legend that the three vertical \"lines\" on the left are, in fact, the cluster labels.\n\nReviewer #2:\n\nShimada at al. present a combination CRISPR and shRNA screening data from DepMap and built user-friendly browser (https://labsyspharm.shinyapps.io/depmap) for the exploration of the dataset using their metric of efficacy and selectivity.\n\nThe efficacy is the \"perturbation score\" of the 10th most sensitive cell line for each gene, whereas selectivity is an ad-hoc measure that the authors define according to the dispersion of the efficacy between most sensitive and least sensitive cell lines. The app also allow to explore a clustering of the data computer with their algorithm ECHODOTS.\n\nThe DeepMap dataset is a very important resource to identify candidate targets and cancer dependency and efficient methods that allow exploration and analysis of these data are welcome. Unfortunately the paper of Shimada does not reach neither of these aims.\n\nOverall the paper is very poorly written and very difficult to follow. It starts with the presentation of the shiny app for the 2,492 essential genes that they select with their method. I understand that the aim is to allow non-programmers to access the data, the problem is the kind of analysis supporting the plots that, I think, should much more improved.\n\nThe author claim to compute a novel method of the efficacy, a new methods to select genes which are selectively lethal for cell line, and also a novel clustering method. Unfortunately none of these methods is sufficiently justified by the authors of compared with the state of the art of at least the current literature. For example, they could have compared their selectivity method to the ADaM method reported in (Behan et al., 2019), moreover it is not clear why the efficacy score computed on the basis of the \"perturbation score\" is more robust of should be preferred with respect to other approach. Finding out how they defined the efficacy was a very difficult.\n\nRegarding the novel clustering algorithm that they propose, it is very strange that the authors need to develop a novel clustering algorithms given the plethora of available methods in the literature. Why should they develop a new one and what limits of the current state of the art their algorithm should overcome it completely obscure. Moreover, from their description of the method I doubt it is really a clustering procedure at all.\n\nThere is no guarantee that rule they describe \"It assigns two genes into the same cluster when the distance between the genes is smaller than epsilon\" you have that each point belongs to just one cluster. The authors do not specify to what data the clustering is applied. CRISPR? shRNA? Both?\n\nMoreover, the choice of the parameters is rather arbitrary and not discussed in the paper.\n\nOverall, I suggest the authors to focus on what they think could be an improvement of the state of the art in at least one on the three areas (efficacy selectivity and clustering) and convince the reader that on what and why they are improving something.\n\nRegarding the shiny app itself, it is a very basic exploratory tool. A very interesting improvement that could be useful for target identification and exploitation of synthetic lethality of to include genomic information to check if the cells depending on a specific gene share some common molecular features (mutations, copy number, pathways). This could for example be done using the efficacy as an independent variable and the molecular features as predictors in the cells depending on a specific gene.\n\nReviewer #3:\n\nIn this manuscript, Shimada et al. develop a tool called shinyDepMap to enable the non-expert bioinformatician to analyze cancer dependency datasets through a user friendly interface. This tool reports gene perturbation scores, which combines essentiality scores from shRNA and CRISPR based screens for various cell lines and utilizes network analysis to identify gene cluster and essential pathways in the various cancer cell types. Overall, this is a very useful tool to the community at large, especially those with little computational background \u2013 similar to cbioportal. It will likely be widely adopted however I have a few suggestions for improvement:\n\nOverall the website is slow. I assume this is a test version, however if it is to be widely used, some effort will be needed to ensure it is able to meet the large bandwidth and demand. Ideally it should also be hosted in an independent weblink (e.g. cbioportal).\n\nIt would be helpful if in addition to the interactive graphs which are very helpful, if the tool would export data in PDF/JPG for publication purposes as well as a tabular format for each cell line/perturbation score. It is sometimes difficult to identify all key genes/cell lines simply by hovering over the graphs and it is helpful to be able to obtain the output in a table format.\n\nIt would be helpful if the perturbation scores can include a separate parameter to indicate whether the CRISPR and shRNA based essentiality scores significantly diverge. The authors explore this in some depth and report that their score is at least as good as the CRISPR screen, however it would be helpful to the user if they received some form of confidence score that indicates how well the two modalities agree/disagree. There are many reasons for discrepancy and it would be helpful to be aware of such a discrepancy when it exists.\n\nWhile the authors perform robustness analysis when choosing their cutoff to define essential genes (10th most sensitive cell line) it is unclear still why they picked such a cutoff. Perhaps some additional explanation of the rationale would be helpful. Also in cancer types where there are more cell lines available would it be helpful to define the 10th percentile rather than the 10th cell line?\n\nI find the selectivity analysis summarized in Figure 3E to be perhaps the most interesting biological insight from this paper. This is important therapeutically. However the way it is phrased, selectivity compares perhaps most likely different tumor types (i.e. a drug that's toxic to breast cancer cells is less toxic to sarcoma cells for example). Therapeutically this comparison is less valuable than comparing normal to transformed/cancer cell line for each histology or on a pan cancer level. If the data exists, it would be extremely helpful to recompute selectivity comparing cancer/non-cancer cells and reproducing Figure 3E for such a comparison.\n\nFinally, it would be very helpful for the user to be able to select a subset of cell lines to perform pairwise analysis. For example if a user would like to ask what genes are essential for cell lines harboring a KRAS mutation vs cells without a KRAS mutation, having the ability to perform pairwise analysis and displaying the data for pre-selected cell lines based on a specific feature/histology would be extremely helpful and significantly expand the value of this tool. I realize that this would necessitate incorporating the mutational annotation and copy number annotation of each cell line but perhaps the effort would be well worth it if feasible.\n",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ceb11bea-d9df-4a8d-a5d2-717cb2f6a57f",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C1",
+      "claim": "The Cancer Dependency Map (DepMap) is an ongoing project to uncover gene dependencies in hundreds of cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cancer Dependency Map (DepMap) is an ongoing project to uncover these gene dependencies in hundreds of cancer cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is a description of the DepMap project.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "265e62c0-23c2-4450-a6a4-07951a490efe",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C2",
+      "claim": "shinyDepMap combines CRISPR and shRNA data to determine gene knockout/knockdown effects on growth and selectivity across cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "shinyDepMap combines CRISPR and shRNA data to determine, for each gene, the growth reduction caused by knockout/knockdown and the selectivity of this effect across cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract as a description of the tool's functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "8700460f-a9c0-4b2e-903d-0ce23143eb8b",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C3",
+      "claim": "shinyDepMap clusters genes with similar dependencies, revealing functional relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "The tool also clusters genes with similar dependencies, revealing functional relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a feature of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "be157378-e337-4884-a8f9-bbf4573821cd",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C4",
+      "claim": "Hundreds, if not thousands, of driver mutations cause cancer in different patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Hundreds, if not thousands, of driver mutations cause cancer in different patients (MC3 Working Group et al., 2018), and extensive collaborative efforts such as the Cancer Genome Atlas Program (TCGA) have helped discover them (The Cancer Genome Atlas Research Network, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "35192713-dce7-40de-8255-5313267bb1ce",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C5",
+      "claim": "Targeted therapies aim to treat cancer by selectively killing cancer cells with a specific genotype and spectrum of driver mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted therapies, a type of precision medicine, aim to treat cancer by selectively killing cancer cells with a specific genotype and spectrum of driver mutations (Friedman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "4ebfa901-7d21-4f47-bdf9-441da2c82385",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C6",
+      "claim": "The epidermal growth factor receptor is strongly required in certain cancer cells but not in normal bone marrow stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the epidermal growth factor receptor is strongly required in certain cancer cells, but not in normal bone marrow stem cells, making it a potentially good target (Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "fa99e1c7-1ff5-4da7-9274-f6cd0184e772",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C7",
+      "claim": "The DepMap project identifies essential genes across hundreds of cancer cell lines using genome-wide CRISPR and shRNA screens.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cancer Dependency Map (DepMap) is an ongoing project to identify essential genes across hundreds of cancer cell lines using genome-wide CRISPR and shRNA screens (Tsherniak et al., 2017; Behan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "25ea5a11-9aaa-4f82-b2a7-ef0b0794deab",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C8",
+      "claim": "DepMap data has been used successfully to discover cancer cells' genetic vulnerabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "It has already been used successfully to discover cancer cells' genetic vulnerabilities (Sandoval et al., 2018; Wang et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "bb9a14e2-f88d-4f6a-b7e6-b4602bb8cc2c",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C9",
+      "claim": "The DepMap portal website has no native tools to integrate CRISPR and shRNA or to examine functional relationships among essential genes beyond pairwise comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the DepMap portal has no native tools to integrate CRISPR and shRNA or to examine functional relationships among essential genes beyond pairwise comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the limitations of the existing DepMap portal.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "69e5eee1-8841-4407-9a1a-587991198e52",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C10",
+      "claim": "15,847 genes were tested in 423 cell lines with both CRISPR and shRNA methods.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the consistency between CRISPR and shRNA dependency scores, we first compared the gene/cell line combinations tested with both methods (15,847 genes in 423 cell lines, Figure 1\u2014source data 1) and computed essentiality thresholds for each distribution such that a dependency score more negative than the threshold is considered essential (Figure 1A; 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and refers to data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "4301a557-c3e0-42fe-9a0e-b2773c0bf4e4",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C11",
+      "claim": "CRISPR and shRNA methods showed a Pearson correlation of 0.456 and Spearman correlation of 0.201 in dependency scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The two methods were somewhat consistent on average, with both methods yielding approximately normal dependency score distributions with mean zero and a left-skewing tail corresponding to the subset of essential genes (Pearson correlation 0.456, Spearman correlation 0.201).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "1dd6ee27-a57d-4543-a816-70519bc7f174",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C12",
+      "claim": "CRISPR tends to detect weak to moderate gene deletion effects more sensitively than shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "First, CRISPR tends to detect weak to moderate gene deletion effects more sensitively, as evidenced by the greater density of CRISPR-essential genes above the diagonal in the joint distribution plot (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "17b88e09-f137-4adf-91ec-b3ca1befaafa",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C13",
+      "claim": "958 genes were claimed commonly essential only by CRISPR but not by shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 958 and 20 genes were claimed commonly essential only by CRISPR or shRNA, respectively (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "946151eb-4fd0-45c0-93e2-e0be5239d214",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C14",
+      "claim": "20 genes were claimed commonly essential only by shRNA but not by CRISPR.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 958 and 20 genes were claimed commonly essential only by CRISPR or shRNA, respectively (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "2d1a108f-cf4d-4544-b9d3-76abc3050749",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C15",
+      "claim": "tRNA metabolic process and mitochondrial translation are overrepresented in the CRISPR-only essential gene set.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these two sets of inconsistently essential genes are enriched for involvement in distinct pathways: for example, tRNA metabolic process and mitochondrial translation are overrepresented in the CRISPR-only set, whereas cytosolic translation initiation is overrepresented in the shRNA-only set (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and refers to Figure 1D showing pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "be55570b-8bd8-4f81-b49a-948f9979c70b",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C16",
+      "claim": "Cytosolic translation initiation is overrepresented in the shRNA-only essential gene set.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these two sets of inconsistently essential genes are enriched for involvement in distinct pathways: for example, tRNA metabolic process and mitochondrial translation are overrepresented in the CRISPR-only set, whereas cytosolic translation initiation is overrepresented in the shRNA-only set (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and refers to Figure 1D showing pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "6bcc9ed9-d89a-47eb-9a98-a4b91dbff770",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C17",
+      "claim": "CRISPR and shRNA have distinct biases in assessing some genes' essentiality, affecting different classes of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that CRISPR and shRNA have distinct biases in assessing some genes' essentiality, affecting different classes of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pathway enrichment analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "1e8b3bcf-9cc7-4494-951d-74194af67cd7",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C18",
+      "claim": "CRISPR is considered to be less susceptible to off-target effects than shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While CRISPR is considered to be less susceptible to off-target effects (Smith et al., 2017) and thus now generally preferred over shRNA, the results and their therapeutic relevance may also depend on the genes of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "6edbfc01-f565-4eaa-988e-9ee7c1d3f9ec",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C19",
+      "claim": "EIF5B is highly conserved throughout Bacteria, Archaea, and Eukarya, suggesting it may be essential for most human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, EIF5B, a gene involved in translation initiation, is highly conserved throughout Bacteria, Archaea, and Eukarya, suggesting that it may be essential for most human cells (S\u00f8rensen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "a698896a-9520-4cd5-a08a-e33221adeaae",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C20",
+      "claim": "Only shRNA, but not CRISPR, highlighted EIF5B as an essential gene.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only shRNA, but not CRISPR, highlighted it as an essential gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "85d92b3c-8fbb-46b9-8213-4716e770a20e",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C24",
+      "claim": "X=1 was selected for most of the analysis, equivalent to claiming a gene essential when roughly 5 out of 423 cell lines show dependence on the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected X=1 for most of our analysis. This is equivalent to claiming a gene essential when roughly 5 out of 423 cell lines show dependence on the gene (p=7.8e-5, binomial test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the parameter choice and its statistical interpretation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "c91eda24-52c9-49b0-9a7e-8a24b5713fa0",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C26",
+      "claim": "Only 56% (2037 genes) of the essential genes overlapped between CRISPR (SC) and shRNA (SR) methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflecting the inconsistencies between CRISPR and shRNA, only 56% (2037 genes) of the essential genes overlapped between SC and SR (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "ce6ef38a-dd53-4269-9913-c58c545867cc",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C30",
+      "claim": "Genes with strongly negative efficacy tend to be less selective.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the efficacy and selectivity, we found that genes with strongly negative efficacy tend to be less selective, whereas selectively essential genes tend to have only moderate efficacy (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "95951227-cb41-408b-84fe-1987ee08f968",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C31",
+      "claim": "Selectively essential genes tend to have only moderate efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the efficacy and selectivity, we found that genes with strongly negative efficacy tend to be less selective, whereas selectively essential genes tend to have only moderate efficacy (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "c3e5e64e-732d-44e5-8a0e-5f43bfe52556",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C32",
+      "claim": "Chromatin regulation is overrepresented among genes that are both selective and essential.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chromatin regulation is overrepresented among genes that are both selective and essential; nuclear metabolism and translation are overrepresented among essential (but not selective) genes; and regulation of kinase activity and tissue development are overrepresented among selective (but not essential) genes (Figure 3D, Figure 3D\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "a29c5ba1-688b-4fff-902f-95340bb0f295",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C33",
+      "claim": "Nuclear metabolism and translation are overrepresented among essential (but not selective) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chromatin regulation is overrepresented among genes that are both selective and essential; nuclear metabolism and translation are overrepresented among essential (but not selective) genes; and regulation of kinase activity and tissue development are overrepresented among selective (but not essential) genes (Figure 3D, Figure 3D\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "e98f2cd9-8782-4e1f-ad78-22c8a2c39b83",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C34",
+      "claim": "Regulation of kinase activity and tissue development are overrepresented among selective (but not essential) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chromatin regulation is overrepresented among genes that are both selective and essential; nuclear metabolism and translation are overrepresented among essential (but not selective) genes; and regulation of kinase activity and tissue development are overrepresented among selective (but not essential) genes (Figure 3D, Figure 3D\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "861a4d01-7053-41aa-b7f7-6d21710d86aa",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C35",
+      "claim": "Lower selectivity and more negative efficacy are associated with a greater number of dependent cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "For each gene, we assessed the relationship between the number of cell lines dependent on the gene and the gene's efficacy and selectivity, and confirmed that lower selectivity and more negative efficacy and are associated with a greater number of dependent cell lines (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "ef5557ca-056d-4278-9cfa-2cab9f34969f",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C36",
+      "claim": "A greater number of dependent lineages was associated with more negative efficacy and lower selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "As with dependent cell lines, a greater number of dependent lineages was associated with more negative efficacy and lower selectivity (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "8cff64d4-aa46-4e08-8d31-f2f5dce1b906",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C37",
+      "claim": "1050 genes are commonly essential across all the lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found that 1050 genes are commonly essential across all the lineages, 670 genes are essential in at least one lineage, and 2581 essential genes were not lineage-dependent (Figure 4B, C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "07725d6a-fda8-448f-ad7f-0022c93ccedb",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C38",
+      "claim": "670 genes are essential in at least one lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found that 1050 genes are commonly essential across all the lineages, 670 genes are essential in at least one lineage, and 2581 essential genes were not lineage-dependent (Figure 4B, C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "1c649da4-984a-4b6e-ac3a-1196f267d465",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C39",
+      "claim": "2581 essential genes were not lineage-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found that 1050 genes are commonly essential across all the lineages, 670 genes are essential in at least one lineage, and 2581 essential genes were not lineage-dependent (Figure 4B, C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "afd42ef2-4b70-453c-8b65-964a497d7b06",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C40",
+      "claim": "The number of dependent cell lines is strongly associated with the number of dependent lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the number of dependent cell lines is strongly associated with the number of dependent lineages (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "ba0a11a6-ceae-4837-9be4-334ea0641b83",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C41",
+      "claim": "Most genes with high selectivity scores were also identified as targets for one or more lineages in Behan et al.'s analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most genes with high selectivity scores were also identified as targets for one or more lineages in their analysis (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4D, comparing results with published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "dcf51044-5a6d-4af1-8efd-498b7df2a3c1",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C42",
+      "claim": "Lineage specificity is not the only cause of high selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Though we saw a strong relationship between lower selectivity and a greater number of dependent cell lines and lineages (Figure 4A, B), we note that lineage specificity is not the only cause of high selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "a03658d5-6142-41ea-9d59-b6d3eee26613",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C43",
+      "claim": "CTNNB1 shows broad dependence in colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Some genes do manifest this type of selectivity (e.g., broad dependence on CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, and SOX10 in skin cancer, Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "bfa3c1a9-0733-4b0c-a2e8-c6b4d9ed03d8",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C44",
+      "claim": "MYB shows broad dependence in leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Some genes do manifest this type of selectivity (e.g., broad dependence on CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, and SOX10 in skin cancer, Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "202b4488-7ea9-499d-a11c-7c971d233ec4",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C45",
+      "claim": "IRF4 shows broad dependence in multiple myeloma.",
+      "claim_type": "EXPLICIT",
+      "source": "Some genes do manifest this type of selectivity (e.g., broad dependence on CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, and SOX10 in skin cancer, Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "c1dc8900-a43f-4272-a687-fd90a5644ce7",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C46",
+      "claim": "KRAS shows broad dependence in pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Some genes do manifest this type of selectivity (e.g., broad dependence on CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, and SOX10 in skin cancer, Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "08545a5d-5b57-43e6-b857-564df3daf372",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C47",
+      "claim": "SOX10 shows broad dependence in skin cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Some genes do manifest this type of selectivity (e.g., broad dependence on CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, and SOX10 in skin cancer, Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "1f265241-be7d-4139-8430-3ba9f231b6a8",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C48",
+      "claim": "CDK4 is not commonly essential in any lineages but is selectively essential in many.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK4 is a particularly strong example of this pattern as it is not commonly essential in any lineages, but is selectively essential in many.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "0c3bc58c-033e-4c5b-88d4-bfd87ecc125f",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C49",
+      "claim": "When a set of genes comprise a functional unit that regulates cell viability, these genes would be expected to have similar dependency profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "When a set of genes comprise a functional unit (e.g., a pathway or a complex) that regulates cell viability, these genes would be expected to have similar dependency profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the expected behavior of functionally related genes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "b5c6575e-e4e3-4231-8146-69c264db6bd8",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C50",
+      "claim": "The clustering approach is based on t-distributed stochastic neighbor embedding (t-SNE) and density-based spatial clustering and noise (DBSCAN).",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is based on a related pair of popular algorithms, t-distributed stochastic neighbor embedding (t-SNE), and density-based spatial clustering and noise (DBSCAN) (van der Maaten and Hinton, 2008; van der Maaten, 2014; Ester et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to the original algorithms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "af802657-0154-463a-94a8-d779a27e22aa",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C51",
+      "claim": "t-SNE has been widely used for visualizing high-dimensional data, such as single-cell RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely used for visualizing high-dimensional data, such as single-cell RNA-seq data (Mass et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "6bbe5043-f036-4285-9ed0-527b1c6a9074",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C52",
+      "claim": "The combination of t-SNE and DBSCAN is a powerful clustering algorithm for high-dimensional data, such as single-cell transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of t-SNE and DBSCAN (expressed as 't-SNE + DBSCAN' hereafter) is a powerful clustering algorithm for high-dimensional data, such as single-cell transcriptomes (Haber et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "57542115-306b-420f-bc3c-81c41f167e3f",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C53",
+      "claim": "The t-SNE algorithm is stochastic, producing different results and clusters with different initial seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of this approach is that the t-SNE algorithm is stochastic, producing different results and clusters with different initial seeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known property of the t-SNE algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "0d698e08-94df-493d-9171-805a273e503d",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C54",
+      "claim": "Strongly positively correlated points are always clustered together while weakly positively correlated points are less consistently so when comparing clusters from multiple t-SNE + DBSCAN runs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we compared clusters yielded by t-SNE + DBSCAN from multiple runs, we found that strongly positively correlated points are always clustered together while weakly positively correlated points are less consistently so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "9c8845ff-3b3c-4a74-bf72-02a3bf2feedf",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C55",
+      "claim": "ECHODOTS runs t-SNE with different initial seeds 200 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, ECHODOTS consists of four steps (Figure 5A, Figure 5\u2014figure supplement 1): it (1) computes the pairwise Spearman distance matrix among essential genes, (2) feeds the distance matrix as input to run t-SNE with different initial seeds 200 times, (3) clusters data points based on their coordinates in the t-SNE plot with DBSCAN, and (4) identifies the sets of genes assigned to the same cluster consistently across the 200 sets of clusters using a technique called ensemble clustering (Hornik, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the ECHODOTS algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "621bf2fa-84fd-485c-854d-add52c37c85b",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C56",
+      "claim": "ECHODOTS produces more reliable clusters than a single run of t-SNE + DBSCAN by seeking data points that are consistently clustered together.",
+      "claim_type": "EXPLICIT",
+      "source": "ECHODOTS produces more reliable clusters than a single run of t-SNE + DBSCAN by seeking data points that are consistently clustered together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion about the method's performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "6ed4f727-bfca-4373-8ece-8b15b12c6549",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C58",
+      "claim": "Genes in the same cluster tended to be close to each other on t-SNE maps from individual runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes in the same cluster tended to be close to each other on t-SNE maps from individual runs, and some clusters were enriched for genes known to be members of specific biological pathways or complexes (Figure 5B, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "393e7483-ee7e-4d3d-a143-b52cc07e6ccf",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C59",
+      "claim": "Some clusters were enriched for genes known to be members of specific biological pathways or complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes in the same cluster tended to be close to each other on t-SNE maps from individual runs, and some clusters were enriched for genes known to be members of specific biological pathways or complexes (Figure 5B, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "3802bbba-3f0b-4c35-b086-ca782d50c134",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C60",
+      "claim": "KEAP1 and KCTD10 are both strongly correlated with the E3 ubiquitin ligase CUL3 but have no correlation with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cluster, KEAP1 and KCTD10 are both strongly correlated with the E3 ubiquitin ligase CUL3 (with correlations of 0.387 and 0.29, respectively), but have no correlation with each other (correlation \u22120.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with specific correlation values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "ddffb159-a086-49ee-83fb-5ca467393765",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C61",
+      "claim": "KEAP1 and KCTD10 interact with CUL3 in a mutually exclusive manner, both serving as adaptor proteins binding the same site on CUL3 but the resulting complexes degrade distinct target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the fact that KEAP1 and KCTD10 interact with CUL3 in a mutually exclusive manner: both serve as adaptor proteins binding the same site on CUL3 but the resulting complexes degrade distinct target proteins (NFE2L2 and RHOB, respectively) (Cullinan et al., 2004; Kova\u010devi\u0107 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "f3397835-3cfc-4067-b6d3-c13fead093fb",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C62",
+      "claim": "Cluster L119 comprises three small clusters, with S369 and S745 containing core MAP kinase (MAPK) pathway proteins and S641 consisting of CTNNB1 and TCF7L2.",
+      "claim_type": "EXPLICIT",
+      "source": "One is cluster L119 (Figure 5F), which comprises three small clusters. Clusters S369 and S745 contain the core MAP kinase (MAPK) pathway proteins, including KRAS, RAF1, BRAF, and MAPK1, while cluster S641 consists of CTNNB1 (\u03b2-catenin) and TCF7L2, which form a bipartite transcription factor complex that is a key effector of the Wnt signaling pathway (Jin and Liu, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 5F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "b0e73bb7-caf0-4ac9-8e90-3d6814d605f3",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C63",
+      "claim": "CTNNB1 and TCF7L2 form a bipartite transcription factor complex that is a key effector of the Wnt signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters S369 and S745 contain the core MAP kinase (MAPK) pathway proteins, including KRAS, RAF1, BRAF, and MAPK1, while cluster S641 consists of CTNNB1 (\u03b2-catenin) and TCF7L2, which form a bipartite transcription factor complex that is a key effector of the Wnt signaling pathway (Jin and Liu, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "ac14edb2-f494-41e7-a6f6-78299832eb42",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C64",
+      "claim": "The clustering suggests that MAPK and Wnt signaling are functionally related in dependent cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "These small clusters are within the same large cluster, suggesting that MAPK and Wnt signaling are functionally related in dependent cancer cell lines (Jeong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the clustering results, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "3997ea7d-b558-456b-8754-bbd786434dcd",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C65",
+      "claim": "SHOC2 was positively correlated to KRAS, RAF1, BRAF, and MAPK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster L119 also contains SHOC2, which was positively correlated to KRAS, RAF1, BRAF, and MAPK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "ffc5ffb1-0395-4e37-9211-9b34b1009024",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C66",
+      "claim": "Multiple KRAS-mutant cancers were recently shown to be vulnerable to the loss of SHOC2 in the context of MEK inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple KRAS-mutant cancers were recently shown to be vulnerable to the loss of SHOC2 in the context of MEK inhibition, confirming the link between SHOC2 and MAP kinase pathway-driven cancers (Sulahian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "121fd907-ab09-450d-916d-aa0d99ea6462",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C67",
+      "claim": "Cluster S154 contains the selenoprotein GPX4 and genes involved in selenoprotein synthesis (SEPHS2, SEPSECS, PSTK, EFFSEC).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster S154 contains the selenoprotein GPX4. GPX4 encodes glutathione peroxidase 4, an antioxidant enzyme, that reduces cytotoxic lipid peroxides and protects cells from a non-apoptotic cell death, called ferroptosis. Intriguingly, we found that the other genes in cluster S154 were involved in selenoprotein synthesis (SEPHS2, SEPSECS, PSTK, EFFSEC) (Squires and Berry, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "e520a4de-fec7-4885-a0a2-6366c86b1453",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C68",
+      "claim": "GPX4 encodes glutathione peroxidase 4, an antioxidant enzyme that reduces cytotoxic lipid peroxides and protects cells from ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "GPX4 encodes glutathione peroxidase 4, an antioxidant enzyme, that reduces cytotoxic lipid peroxides and protects cells from a non-apoptotic cell death, called ferroptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "685c6203-3912-4978-87d4-0fb4e652ad2b",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C69",
+      "claim": "The primary role of selenoprotein synthesis genes in dependent cell lines is to synthesize GPX4.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we found that the other genes in cluster S154 were involved in selenoprotein synthesis (SEPHS2, SEPSECS, PSTK, EFFSEC) (Squires and Berry, 2008), suggesting that the primary role of these genes in dependent cell lines is to synthesize GPX4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the clustering results and known gene functions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "1bc0c26d-86d6-4af4-a778-f50e8bfd806c",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C70",
+      "claim": "Cluster L91 represents a gene set related to the sensitivity to ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, L91 seems to represent a gene set related to the sensitivity to ferroptosis (Abdalkader et al., 2018; Ingold et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the clustering results, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "7575dcd0-3464-4dc2-9270-87d1514bdea4",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C72",
+      "claim": "The number of dependent cell lines and the number of dependent lineages per gene increased with larger \u03b8.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the number of dependent cell lines and the number of dependent lineages per gene increased with larger \u03b8 (Figure 5\u2014figure supplement 2B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 5\u2014figure supplement 2B\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "a9b1a6f8-0057-4cbd-8eb1-44922891fb48",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C73",
+      "claim": "Larger \u03b8 gave more genes with high selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For selectivity, larger \u03b8 gave more genes with high selectivity (Figure 5\u2014figure supplement 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 5\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "32531126-154b-46e0-979f-69f4bdd19b5e",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C74",
+      "claim": "No pathways were associated with selective or both selective and essential genes when \u03b8 < 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no pathways were associated with selective or both selective and essential genes when \u03b8 < 0.5, suggesting that a high selectivity was given to genes more randomly (Figure 5\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 5\u2014figure supplement 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "51d359dd-9ddb-44fc-aa3e-ea8b4d26de3d",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C76",
+      "claim": "\u03b8 = 0.6 was a reasonable choice because the combined dependency score is more informative with more weight on CRISPR than shRNA while having some contribution from shRNA is more beneficial than CRISPR alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the comparison, we concluded that our initial choice of \u03b8 = 0.6 was a reasonable one since the combined dependency score is more informative with more weight on CRISPR than shRNA (\u03b8 > 0.5, Figure 5\u2014figure supplement 3) while having some contribution from shRNA is more beneficial than CRISPR alone (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the comparative analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "fedf23c3-a983-4174-9688-8be908e3e344",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C77",
+      "claim": "shinyDepMap is written in R using the shiny package for building interactive visualization tools.",
+      "claim_type": "EXPLICIT",
+      "source": "shinyDepMap is written in R (Chang et al., 2019) using the shiny package for building interactive visualization tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the implementation of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "4090300a-b99b-44f8-a57b-cb9269f17cd8",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C78",
+      "claim": "shinyDepMap consists of two apps: 'Gene essentiality' and 'Gene cluster'.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of two apps: 'Gene essentiality' and 'Gene cluster'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the structure of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "c0fc9b67-27e4-4479-adc5-005fa02a07d7",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C79",
+      "claim": "shinyDepMap can be used via the website https://labsyspharm.shinyapps.io/depmap, by downloading code from GitHub, or by running a Docker container.",
+      "claim_type": "EXPLICIT",
+      "source": "shinyDepMap can be used in three ways: (1) via the website https://labsyspharm.shinyapps.io/depmap, (2) by downloading the code and preprocessed data from the GitHub repository (Shimada, 2021) and running it on a local computer, and (3) running the app from a Docker container using the image at https://hub.docker.com/r/labsyspharm/shinydepmap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about how to access the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "5dbbe5a2-5420-4ba3-8d1a-63f5a478488d",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C80",
+      "claim": "The DepMap data characterizes the genetic requirements for cells grown in culture, which differs from the in vivo tumor environment in critical ways.",
+      "claim_type": "EXPLICIT",
+      "source": "The DepMap data characterizes the genetic requirements for cells grown in culture, which differs from the in vivo tumor environment in critical ways: the presence of nutrient-rich media, a two-dimensional rather than a three-dimensional substrate, and the lack of a functional immune system or physiological microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the DepMap dataset.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "f14fca12-4207-42ee-98ef-27f736b68bc1",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C81",
+      "claim": "The effects of genetic perturbations (knockdown and knockout) do not necessarily correspond to those of chemical inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the effects of genetic perturbations (knockdown and knockout) do not necessarily correspond to those of chemical inhibition, a discrepancy that makes target identification from datasets like the DepMap less straightforward (Weiss et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "5b7d9fa7-7608-4057-b10e-024e867adbee",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C82",
+      "claim": "The DepMap includes only cultured cancer lines and no wild-type cell lines or tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because the DepMap includes only cultured cancer lines and no wild-type cell lines or tissues, a highly selective gene in our analysis is not guaranteed to be less toxic to normal tissues when inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the DepMap dataset.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "bbbf154f-0a94-430a-a0a3-6feffffe48f6",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C83",
+      "claim": "A highly selective gene in the DepMap analysis is not guaranteed to be less toxic to normal tissues when inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because the DepMap includes only cultured cancer lines and no wild-type cell lines or tissues, a highly selective gene in our analysis is not guaranteed to be less toxic to normal tissues when inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation and inference from the dataset composition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "3f3d6fdc-a071-4d85-901e-42b76a8247e0",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C84",
+      "claim": "The CRISPR and shRNA efficacy data provided by the DepMap project were normalized with CERES and DEMETER2 algorithms by the Broad Institute, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR and shRNA efficacy data provided by the DepMap project were normalized with CERES and DEMETER2 algorithms by the Broad Institute, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "acab0a04-11e1-4fd5-b00e-656d9ac58575",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C85",
+      "claim": "1,345,642 conditions (20%) were tested using CRISPR but not shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 1,345,642 conditions (20%) were tested using CRISPR, but not shRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "f4f222bf-c4d4-4b3f-ad6a-fa7078ddb140",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C86",
+      "claim": "19,001 conditions (0.28%) were tested using shRNA but not CRISPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, 19,001 (0.28%) were tested using shRNA, but not CRISPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "c1f31413-6838-4c59-941a-e9c7a40ffe87",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C87",
+      "claim": "4457 conditions (0.066%) were not tested by either CRISPR or shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 4457 (0.066%) conditions were not tested by either CRISPR or shRNA, which were left as missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "8abaf354-947d-4fa0-b7df-1d8a35b5b18c",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C88",
+      "claim": "Missing values in CRISPR and shRNA datasets were imputed using non-missing data from the other method using local polynomial regression (loess).",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, the missing values were imputed from the other data using local polynomial regression (loess) function in R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "7d3c00b3-4b18-40d5-93d6-1362f29e6d23",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C90",
+      "claim": "ECHODOTS performs a soft clustering that can assign each gene to more than one cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, ECHODOTS performs a soft clustering that can assign each gene to more than one cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section as a property of the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "09349852-c950-4cb7-9ecb-3dd960e8481d",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C91",
+      "claim": "ECHODOTS conducts the 'majority vote' among 200 runs of the clustering and computes the probability of a point being assigned to each cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "It conducts the 'majority vote' among 200 runs of the clustering and computes the probability of a point being assigned to each cluster, which provides us with the strength of evidence for the cluster assignment of each gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section as a description of the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "820c33b4-da28-4ede-b466-a665408fc6d7",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C92",
+      "claim": "shinyDepMap was built using the following R packages: ggplot2 (v3.2.1), RColorBrewer (v1.1\u20132), shinyWidgets (v0.4.8), plotly (v4.9.0), DT (v0.8), visNetwork (v2.0.8), tibble (v2.1.3), dplyr (v0.8.3), and tidyr (v0.8.3).",
+      "claim_type": "EXPLICIT",
+      "source": "The following packages are also used to implement the tool: ggplot2 (v3.2.1), RColorBrewer (v1.1\u20132), shinyWidgets (v0.4.8), plotly (v4.9.0), DT (v0.8), visNetwork (v2.0.8), tibble (v2.1.3), dplyr (v0.8.3), and tidyr (v0.8.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "69c9e02a-2001-4634-bfe0-898aab15f579",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C93",
+      "claim": "A method that combines CRISPR and shRNA dependency scores would compensate for each other's artifacts and give more robust scores.",
+      "claim_type": "EXPLICIT",
+      "source": "A method that can combine the two dependency scores would compensate for each other's artifacts and give more robust scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for developing the combined score.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "73f545c6-a622-40c8-825c-5a00e384e369",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C94",
+      "claim": "Recent studies have shown that combining CRISPR and shRNA approaches is practical.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that similar approaches are practical (Wang et al., 2019a; Gilvary et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "33fcac68-43f8-4fd4-82d6-116a0190cfee",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C95",
+      "claim": "Both CRISPR and shRNA methods identify RAN as essential.",
+      "claim_type": "IMPLICIT",
+      "source": "For example, while both methods identify RAN, CRISPR identifies CCND1 as more essential (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is implied by the statement that both methods identify RAN, with reference to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "2e49b114-75bd-401c-8f8b-544e30b060c0",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C96",
+      "claim": "CRISPR identifies CCND1 as more essential than shRNA does.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while both methods identify RAN, CRISPR identifies CCND1 as more essential (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "491a85c3-418a-4f78-aff6-6016f763e09d",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C97",
+      "claim": "FOXD4 and EIF5B are examples of genes shown essential only by one method but not the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, some genes were shown essential only by CRISPR or shRNA, but not by the other method (e.g., FOXD4 and EIF5B; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the text and refers to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "5b4d9bda-2172-456c-b46d-99a6c80a3f2e",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C99",
+      "claim": "Cluster S572 contains another selenoprotein TXNRD1 and its substrate TXNDC17.",
+      "claim_type": "EXPLICIT",
+      "source": "S572 contains another selenoprotein TXNRD1 and its substrate, TXNDC17 (Espinosa and Arn\u00e9r, 2019), both of which are also strongly correlated with four selenoprotein synthesis genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "ff370f18-1e26-40e1-a5e6-bf52d425f523",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "claim_id": "C100",
+      "claim": "TXNRD1 and TXNDC17 are both strongly correlated with four selenoprotein synthesis genes.",
+      "claim_type": "EXPLICIT",
+      "source": "S572 contains another selenoprotein TXNRD1 and its substrate, TXNDC17 (Espinosa and Arn\u00e9r, 2019), both of which are also strongly correlated with four selenoprotein synthesis genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "795eddb2-3efe-4123-95e9-c4fda69eb701",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRISPR and shRNA methods show moderate correlation (Pearson 0.456, Spearman 0.201) but exhibit distinct biases: CRISPR detects weak-to-moderate gene deletion effects more sensitively, while 958 genes were claimed essential only by CRISPR and 20 only by shRNA, with pathway enrichment analysis revealing method-specific biases affecting different gene classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 provide convergent evidence from correlation analysis (C11), visual inspection of joint distributions (C12), Fisher's exact test results (C13-C14), and pathway enrichment analysis (C15-C16) that collectively support the conclusion of method-specific biases (C17). The statistical measures, specific gene counts, and biological pathway associations provide robust support for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "2034a447-4504-43eb-99c8-4734fcdb34de",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose that combining CRISPR and shRNA dependency scores would compensate for each method's artifacts and provide more robust scores, citing that recent studies have shown such approaches are practical and noting specific examples like EIF5B where only shRNA detected essentiality despite the gene's high conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 establish the rationale and precedent for combining methods, while C18-C20 provide a concrete example (EIF5B) demonstrating the practical need for integration. The combination of prior work citations (C94) and empirical observations (C19-C20) supports the proposed approach, though the actual validation of the combined score's superiority requires additional results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "d922d526-8745-4965-b745-eaf850f6bc6d",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed a combined dependency score by integrating CRISPR (normalized with CERES) and shRNA (normalized with DEMETER2) data using a weighted average with mixing ratio \u03b8=0.6, imputing missing values via local polynomial regression (loess) where needed, and defining essential genes using X=1 (1st percentile), which resulted in only 56% overlap between CRISPR-only and shRNA-only essential gene sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24, C84-C88 describe the methodological approach with specific technical details (normalization algorithms, imputation method, parameter choices), while C26 provides empirical validation showing the limited overlap between methods. The technical implementation is clearly documented, though the justification for specific parameter choices (\u03b8=0.6, X=1) relies on subsequent comparative analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "1b110f20-1d0d-4326-be98-d0453ff1cf8f",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genes with strongly negative efficacy tend to be less selective, while selectively essential genes tend to have only moderate efficacy, with pathway enrichment analysis revealing that chromatin regulation is overrepresented among genes that are both selective and essential, nuclear metabolism and translation among essential-only genes, and regulation of kinase activity and tissue development among selective-only genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 establish the inverse relationship between efficacy and selectivity, supported by Figure 3C, while C32-C34 provide pathway enrichment results that characterize distinct functional categories. The convergence of quantitative relationship analysis and biological pathway associations provides strong support for these patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "c059e2be-de9e-41e5-9cea-3b61839a2d87",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lower selectivity and more negative efficacy are associated with greater numbers of dependent cell lines and lineages, with 1050 genes commonly essential across all lineages, 670 genes essential in at least one lineage, and 2581 essential genes not lineage-dependent, showing strong association between dependent cell lines and dependent lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 establish the quantitative relationships supported by Figure 4A-B, while C37-C40 provide specific counts and associations. The convergence of multiple measures (cell lines, lineages, selectivity, efficacy) and their documented relationships provides robust support, though the statistical significance of these associations is not explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "8a68d783-2817-4cb9-a715-f80ee4cec64c",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Most genes with high selectivity scores were identified as lineage-specific targets in prior work (Behan et al.), but lineage specificity is not the only cause of high selectivity, as demonstrated by examples of genes showing broad lineage-specific dependence (CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, SOX10 in skin cancer) and genes like CDK4 that are selectively essential across many lineages without being commonly essential in any single lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 provide both validation against independent data (C41) and mechanistic insight into selectivity patterns (C42-C48). The specific examples (C43-C48) illustrate distinct patterns of selectivity, supporting the nuanced interpretation in C42. The convergence of external validation and detailed case studies provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors developed ECHODOTS, a clustering algorithm that combines t-SNE and DBSCAN with ensemble clustering across 200 runs to identify functionally related genes with similar dependency profiles, addressing the stochastic nature of t-SNE by seeking genes consistently clustered together and performing soft clustering that assigns probability scores to cluster membership.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C56 and C90-C91 describe the rationale, implementation, and advantages of ECHODOTS. The approach addresses a known limitation of t-SNE (C53) with an empirically motivated solution (C54), and the technical implementation is clearly described (C55, C91). The claim that ECHODOTS produces more reliable clusters (C56) is supported by the ensemble approach but lacks quantitative validation metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "bf483f2c-2c2d-4056-a684-a2a5519f2880",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ECHODOTS clustering revealed that genes in the same cluster tend to be proximal on t-SNE maps and enriched for known biological pathways or complexes, including subtle functional relationships such as KEAP1 and KCTD10 both correlating with CUL3 (0.387 and 0.29 respectively) but not with each other (-0.002), reflecting their mutually exclusive interaction with CUL3 as adaptor proteins that degrade distinct targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 establish general clustering performance, while C60-C61 provide a specific mechanistic example with quantitative correlation values and biological interpretation supported by citations. The convergence of computational clustering results with known protein interaction mechanisms provides strong validation of the approach's biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "5ea6c61a-8079-4786-bba6-85d69d6fc65d",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cluster L119 comprises three small clusters containing MAPK pathway proteins (KRAS, RAF1, BRAF, MAPK1) and Wnt signaling components (CTNNB1, TCF7L2), suggesting functional relationship between these pathways, and includes SHOC2 which correlates with MAPK pathway genes and was recently shown to be a vulnerability in KRAS-mutant cancers with MEK inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 provide cluster composition (C62), biological context for components (C63), functional interpretation (C64), and validation through recent independent findings (C66). The convergence of clustering results with known pathway biology and recent experimental validation provides strong support, though the functional relationship claim (C64) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "625e70da-56c1-489f-bca1-eb1267305655",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cluster L91 contains selenoproteins GPX4 and TXNRD1 along with selenoprotein synthesis genes (SEPHS2, SEPSECS, PSTK, EFFSEC), suggesting these synthesis genes primarily function to produce GPX4 in dependent cell lines, with the overall cluster representing genes related to ferroptosis sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 and C99-C100 describe cluster composition with biological interpretation supported by citations. The inference that selenoprotein synthesis genes primarily function to produce GPX4 (C69) is reasonable given the clustering but somewhat speculative. The ferroptosis connection (C70) is supported by citations but represents a broader interpretation of the cluster's biological significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "a3bf065a-100c-4656-83ae-4908bb0ae330",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Comparison across different mixing ratios (\u03b8) revealed that larger \u03b8 (more CRISPR weight) increased the number of dependent cell lines, dependent lineages, and genes with high selectivity, but \u03b8 < 0.5 failed to identify pathway associations with selective genes, leading to the conclusion that \u03b8 = 0.6 was optimal as it weights CRISPR more heavily while retaining shRNA contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 provide systematic comparison results across parameter values, while C76 synthesizes these findings into a justified parameter choice. The empirical comparison is thorough, though the optimality claim relies on pathway enrichment as the primary validation metric, and alternative validation approaches are not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "59571fb4-eb16-4ca6-b1f6-2ba1dc31e504",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "shinyDepMap is an interactive web tool written in R using the shiny package and additional visualization packages, consisting of two apps ('Gene essentiality' and 'Gene cluster'), accessible via web deployment, GitHub download, or Docker container.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 and C92 provide clear technical implementation details including programming language, framework, structure, dependencies, and deployment options. These are straightforward factual claims about the tool's implementation that are directly verifiable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "e5425106-6b8a-45bc-8b09-ef3983dfe64f",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge important limitations of DepMap data: it characterizes cells in culture rather than in vivo tumor environments, genetic perturbations may not correspond to chemical inhibition effects, and the absence of wild-type cell lines means highly selective genes are not guaranteed to be less toxic to normal tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 articulate well-recognized limitations of the DepMap dataset and the analysis approach, supported by citation (C81). These are appropriate caveats that acknowledge the gap between the experimental system and therapeutic applications. The limitations are clearly stated and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "518a2292-6efb-4936-8c39-78879831aea0",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides background on cancer genomics, the DepMap project, and targeted therapies, noting that DepMap identifies essential genes using CRISPR and shRNA screens and has been used to discover genetic vulnerabilities, but the existing DepMap portal lacks tools to integrate both screening methods or examine functional relationships beyond pairwise comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C9 provide established background information supported by appropriate citations. These claims establish context and motivation for the work. C9 identifies a specific gap in existing tools that motivates the development of shinyDepMap. All claims are well-supported by citations or represent accurate descriptions of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    },
+    {
+      "id": "2ee97ae5-5e39-4f24-b0c7-395daba3d77a",
+      "content_id": "4cb825cb-2936-4d08-b55e-eb3727dc9c95",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "shinyDepMap clusters genes with similar dependencies to reveal functional relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is a high-level description of one of the tool's main features, which is substantiated by the detailed clustering methodology (ECHODOTS) and results presented in claims C49-C70. This represents an accurate summary of a key capability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:11:25.956527Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "69e5eee1-8841-4407-9a1a-587991198e52",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "4301a557-c3e0-42fe-9a0e-b2773c0bf4e4",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "1dd6ee27-a57d-4543-a816-70519bc7f174",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "17b88e09-f137-4adf-91ec-b3ca1befaafa",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "946151eb-4fd0-45c0-93e2-e0be5239d214",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "2d1a108f-cf4d-4544-b9d3-76abc3050749",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "be55570b-8bd8-4f81-b49a-948f9979c70b",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "6bcc9ed9-d89a-47eb-9a98-a4b91dbff770",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "33fcac68-43f8-4fd4-82d6-116a0190cfee",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "2e49b114-75bd-401c-8f8b-544e30b060c0",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "491a85c3-418a-4f78-aff6-6016f763e09d",
+      "result_id": "795eddb2-3efe-4123-95e9-c4fda69eb701"
+    },
+    {
+      "claim_id": "1e8b3bcf-9cc7-4494-951d-74194af67cd7",
+      "result_id": "2034a447-4504-43eb-99c8-4734fcdb34de"
+    },
+    {
+      "claim_id": "6edbfc01-f565-4eaa-988e-9ee7c1d3f9ec",
+      "result_id": "2034a447-4504-43eb-99c8-4734fcdb34de"
+    },
+    {
+      "claim_id": "a698896a-9520-4cd5-a08a-e33221adeaae",
+      "result_id": "2034a447-4504-43eb-99c8-4734fcdb34de"
+    },
+    {
+      "claim_id": "69c9e02a-2001-4634-bfe0-898aab15f579",
+      "result_id": "2034a447-4504-43eb-99c8-4734fcdb34de"
+    },
+    {
+      "claim_id": "73f545c6-a622-40c8-825c-5a00e384e369",
+      "result_id": "2034a447-4504-43eb-99c8-4734fcdb34de"
+    },
+    {
+      "claim_id": "265e62c0-23c2-4450-a6a4-07951a490efe",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "85d92b3c-8fbb-46b9-8213-4716e770a20e",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "c91eda24-52c9-49b0-9a7e-8a24b5713fa0",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "3f3d6fdc-a071-4d85-901e-42b76a8247e0",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "acab0a04-11e1-4fd5-b00e-656d9ac58575",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "f4f222bf-c4d4-4b3f-ad6a-fa7078ddb140",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "c1f31413-6838-4c59-941a-e9c7a40ffe87",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "8abaf354-947d-4fa0-b7df-1d8a35b5b18c",
+      "result_id": "d922d526-8745-4965-b745-eaf850f6bc6d"
+    },
+    {
+      "claim_id": "ce6ef38a-dd53-4269-9913-c58c545867cc",
+      "result_id": "1b110f20-1d0d-4326-be98-d0453ff1cf8f"
+    },
+    {
+      "claim_id": "95951227-cb41-408b-84fe-1987ee08f968",
+      "result_id": "1b110f20-1d0d-4326-be98-d0453ff1cf8f"
+    },
+    {
+      "claim_id": "c3e5e64e-732d-44e5-8a0e-5f43bfe52556",
+      "result_id": "1b110f20-1d0d-4326-be98-d0453ff1cf8f"
+    },
+    {
+      "claim_id": "a29c5ba1-688b-4fff-902f-95340bb0f295",
+      "result_id": "1b110f20-1d0d-4326-be98-d0453ff1cf8f"
+    },
+    {
+      "claim_id": "e98f2cd9-8782-4e1f-ad78-22c8a2c39b83",
+      "result_id": "1b110f20-1d0d-4326-be98-d0453ff1cf8f"
+    },
+    {
+      "claim_id": "861a4d01-7053-41aa-b7f7-6d21710d86aa",
+      "result_id": "c059e2be-de9e-41e5-9cea-3b61839a2d87"
+    },
+    {
+      "claim_id": "ef5557ca-056d-4278-9cfa-2cab9f34969f",
+      "result_id": "c059e2be-de9e-41e5-9cea-3b61839a2d87"
+    },
+    {
+      "claim_id": "8cff64d4-aa46-4e08-8d31-f2f5dce1b906",
+      "result_id": "c059e2be-de9e-41e5-9cea-3b61839a2d87"
+    },
+    {
+      "claim_id": "07725d6a-fda8-448f-ad7f-0022c93ccedb",
+      "result_id": "c059e2be-de9e-41e5-9cea-3b61839a2d87"
+    },
+    {
+      "claim_id": "1c649da4-984a-4b6e-ac3a-1196f267d465",
+      "result_id": "c059e2be-de9e-41e5-9cea-3b61839a2d87"
+    },
+    {
+      "claim_id": "afd42ef2-4b70-453c-8b65-964a497d7b06",
+      "result_id": "c059e2be-de9e-41e5-9cea-3b61839a2d87"
+    },
+    {
+      "claim_id": "ba0a11a6-ceae-4837-9be4-334ea0641b83",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "dcf51044-5a6d-4af1-8efd-498b7df2a3c1",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "a03658d5-6142-41ea-9d59-b6d3eee26613",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "bfa3c1a9-0733-4b0c-a2e8-c6b4d9ed03d8",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "202b4488-7ea9-499d-a11c-7c971d233ec4",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "c1dc8900-a43f-4272-a687-fd90a5644ce7",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "08545a5d-5b57-43e6-b857-564df3daf372",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "1f265241-be7d-4139-8430-3ba9f231b6a8",
+      "result_id": "8a68d783-2817-4cb9-a715-f80ee4cec64c"
+    },
+    {
+      "claim_id": "0c3bc58c-033e-4c5b-88d4-bfd87ecc125f",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "b5c6575e-e4e3-4231-8146-69c264db6bd8",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "af802657-0154-463a-94a8-d779a27e22aa",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "6bbe5043-f036-4285-9ed0-527b1c6a9074",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "57542115-306b-420f-bc3c-81c41f167e3f",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "0d698e08-94df-493d-9171-805a273e503d",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "9c8845ff-3b3c-4a74-bf72-02a3bf2feedf",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "621bf2fa-84fd-485c-854d-add52c37c85b",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "7d3c00b3-4b18-40d5-93d6-1362f29e6d23",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "09349852-c950-4cb7-9ecb-3dd960e8481d",
+      "result_id": "7f35716e-64b5-4f84-9dc3-98bb72bf60f6"
+    },
+    {
+      "claim_id": "6ed4f727-bfca-4373-8ece-8b15b12c6549",
+      "result_id": "bf483f2c-2c2d-4056-a684-a2a5519f2880"
+    },
+    {
+      "claim_id": "393e7483-ee7e-4d3d-a143-b52cc07e6ccf",
+      "result_id": "bf483f2c-2c2d-4056-a684-a2a5519f2880"
+    },
+    {
+      "claim_id": "3802bbba-3f0b-4c35-b086-ca782d50c134",
+      "result_id": "bf483f2c-2c2d-4056-a684-a2a5519f2880"
+    },
+    {
+      "claim_id": "ddffb159-a086-49ee-83fb-5ca467393765",
+      "result_id": "bf483f2c-2c2d-4056-a684-a2a5519f2880"
+    },
+    {
+      "claim_id": "f3397835-3cfc-4067-b6d3-c13fead093fb",
+      "result_id": "5ea6c61a-8079-4786-bba6-85d69d6fc65d"
+    },
+    {
+      "claim_id": "b0e73bb7-caf0-4ac9-8e90-3d6814d605f3",
+      "result_id": "5ea6c61a-8079-4786-bba6-85d69d6fc65d"
+    },
+    {
+      "claim_id": "ac14edb2-f494-41e7-a6f6-78299832eb42",
+      "result_id": "5ea6c61a-8079-4786-bba6-85d69d6fc65d"
+    },
+    {
+      "claim_id": "3997ea7d-b558-456b-8754-bbd786434dcd",
+      "result_id": "5ea6c61a-8079-4786-bba6-85d69d6fc65d"
+    },
+    {
+      "claim_id": "ffc5ffb1-0395-4e37-9211-9b34b1009024",
+      "result_id": "5ea6c61a-8079-4786-bba6-85d69d6fc65d"
+    },
+    {
+      "claim_id": "121fd907-ab09-450d-916d-aa0d99ea6462",
+      "result_id": "625e70da-56c1-489f-bca1-eb1267305655"
+    },
+    {
+      "claim_id": "e520a4de-fec7-4885-a0a2-6366c86b1453",
+      "result_id": "625e70da-56c1-489f-bca1-eb1267305655"
+    },
+    {
+      "claim_id": "685c6203-3912-4978-87d4-0fb4e652ad2b",
+      "result_id": "625e70da-56c1-489f-bca1-eb1267305655"
+    },
+    {
+      "claim_id": "1bc0c26d-86d6-4af4-a778-f50e8bfd806c",
+      "result_id": "625e70da-56c1-489f-bca1-eb1267305655"
+    },
+    {
+      "claim_id": "5b4d9bda-2172-456c-b46d-99a6c80a3f2e",
+      "result_id": "625e70da-56c1-489f-bca1-eb1267305655"
+    },
+    {
+      "claim_id": "ff370f18-1e26-40e1-a5e6-bf52d425f523",
+      "result_id": "625e70da-56c1-489f-bca1-eb1267305655"
+    },
+    {
+      "claim_id": "7575dcd0-3464-4dc2-9270-87d1514bdea4",
+      "result_id": "a3bf065a-100c-4656-83ae-4908bb0ae330"
+    },
+    {
+      "claim_id": "a9b1a6f8-0057-4cbd-8eb1-44922891fb48",
+      "result_id": "a3bf065a-100c-4656-83ae-4908bb0ae330"
+    },
+    {
+      "claim_id": "32531126-154b-46e0-979f-69f4bdd19b5e",
+      "result_id": "a3bf065a-100c-4656-83ae-4908bb0ae330"
+    },
+    {
+      "claim_id": "51d359dd-9ddb-44fc-aa3e-ea8b4d26de3d",
+      "result_id": "a3bf065a-100c-4656-83ae-4908bb0ae330"
+    },
+    {
+      "claim_id": "fedf23c3-a983-4174-9688-8be908e3e344",
+      "result_id": "59571fb4-eb16-4ca6-b1f6-2ba1dc31e504"
+    },
+    {
+      "claim_id": "4090300a-b99b-44f8-a57b-cb9269f17cd8",
+      "result_id": "59571fb4-eb16-4ca6-b1f6-2ba1dc31e504"
+    },
+    {
+      "claim_id": "c0fc9b67-27e4-4479-adc5-005fa02a07d7",
+      "result_id": "59571fb4-eb16-4ca6-b1f6-2ba1dc31e504"
+    },
+    {
+      "claim_id": "820c33b4-da28-4ede-b466-a665408fc6d7",
+      "result_id": "59571fb4-eb16-4ca6-b1f6-2ba1dc31e504"
+    },
+    {
+      "claim_id": "5dbbe5a2-5420-4ba3-8d1a-63f5a478488d",
+      "result_id": "e5425106-6b8a-45bc-8b09-ef3983dfe64f"
+    },
+    {
+      "claim_id": "f14fca12-4207-42ee-98ef-27f736b68bc1",
+      "result_id": "e5425106-6b8a-45bc-8b09-ef3983dfe64f"
+    },
+    {
+      "claim_id": "5b7d9fa7-7608-4057-b10e-024e867adbee",
+      "result_id": "e5425106-6b8a-45bc-8b09-ef3983dfe64f"
+    },
+    {
+      "claim_id": "bbbf154f-0a94-430a-a0a3-6feffffe48f6",
+      "result_id": "e5425106-6b8a-45bc-8b09-ef3983dfe64f"
+    },
+    {
+      "claim_id": "ceb11bea-d9df-4a8d-a5d2-717cb2f6a57f",
+      "result_id": "518a2292-6efb-4936-8c39-78879831aea0"
+    },
+    {
+      "claim_id": "be157378-e337-4884-a8f9-bbf4573821cd",
+      "result_id": "518a2292-6efb-4936-8c39-78879831aea0"
+    },
+    {
+      "claim_id": "35192713-dce7-40de-8255-5313267bb1ce",
+      "result_id": "518a2292-6efb-4936-8c39-78879831aea0"
+    },
+    {
+      "claim_id": "4ebfa901-7d21-4f47-bdf9-441da2c82385",
+      "result_id": "518a2292-6efb-4936-8c39-78879831aea0"
+    },
+    {
+      "claim_id": "fa99e1c7-1ff5-4da7-9274-f6cd0184e772",
+      "result_id": "518a2292-6efb-4936-8c39-78879831aea0"
+    },
+    {
+      "claim_id": "25ea5a11-9aaa-4f82-b2a7-ef0b0794deab",
+      "result_id": "518a2292-6efb-4936-8c39-78879831aea0"
+    },
+    {
+      "claim_id": "bb9a14e2-f88d-4f6a-b7e6-b4602bb8cc2c",
+      "result_id": "518a2292-6efb-4936-8c39-78879831aea0"
+    },
+    {
+      "claim_id": "8700460f-a9c0-4b2e-903d-0ce23143eb8b",
+      "result_id": "2ee97ae5-5e39-4f24-b0c7-395daba3d77a"
+    }
+  ],
+  "comparisons": []
+}

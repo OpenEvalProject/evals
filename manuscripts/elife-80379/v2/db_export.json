@@ -1,0 +1,1314 @@
+{
+  "submission": {
+    "id": "4c1838aa-b74e-41bb-af4d-a20678285c69",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:20:58.947941Z",
+    "updated_at": "2025-12-03T18:20:58.947941Z"
+  },
+  "content": [
+    {
+      "id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "submission_id": "4c1838aa-b74e-41bb-af4d-a20678285c69",
+      "content_type": "manuscript",
+      "content_text": "# Individual behavioral trajectories shape whole-brain connectivity in mice\n\n## Authors\n\n- Jadna Bogado Lopes<sup>1</sup>\n- Anna N Senko<sup>1</sup> ([ORCID: 0000-0003-0885-0440](https://orcid.org/0000-0003-0885-0440))\n- Klaas Bahnsen<sup>3</sup> ([ORCID: 0000-0002-5413-0359](https://orcid.org/0000-0002-5413-0359))\n- Daniel Geisler<sup>3</sup>\n- Eugene Kim<sup>4</sup> ([ORCID: 0000-0003-0066-7051](https://orcid.org/0000-0003-0066-7051))\n- Michel Bernanos<sup>4</sup>\n- Diana Cash<sup>4</sup>\n- Stefan Ehrlich<sup>3</sup> ([ORCID: 0000-0003-2132-4445](https://orcid.org/0000-0003-2132-4445))\n- Anthony C Vernon<sup>6</sup> ([ORCID: 0000-0001-7305-1069](https://orcid.org/0000-0001-7305-1069)) \u2020\n- Gerd Kempermann<sup>1</sup> ([ORCID: 0000-0002-5304-4061](https://orcid.org/0000-0002-5304-4061)) \u2020\n\n### Affiliations\n\n1. German Center for Neurodegenerative Diseases (DZNE) Dresden Dresden Germany ([ROR:043j0f473](https://ror.org/043j0f473))\n2. Center for Regenerative Therapies Dresden (CRTD), TU Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))\n3. Division of Psychological and Social Medicine and Developmental Neurosciences, Faculty of Medicine Dresden Germany\n4. Department of Neuroimaging, Institute of Psychiatry, Psychology and Neuroscience King's College London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n5. Department of Child and Adolescent Psychiatry, Faculty of Medicine, Eating Disorder Treatment and Research Center Dresden Germany\n6. Department of Basic and Clinical Neuroscience, Institute of Psychiatry, Psychology and Neuroscience, King's College London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n7. MRC Centre for Neurodevelopmental Disorders, King's College London United Kingdom ([ROR:03x94j517](https://ror.org/03x94j517))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is widely assumed that our actions shape our brains and that the resulting connections determine who we are. To test this idea in a reductionist setting, in which genes and environment are controlled, we investigated differences in neuroanatomy and structural covariance by ex vivo structural magnetic resonance imaging in mice whose behavioral activity was continuously tracked for 3 months in a large, enriched environment. We confirmed that environmental enrichment increases mouse hippocampal volumes. Stratifying the enriched group according to individual longitudinal behavioral trajectories, however, revealed striking differences in mouse brain structural covariance in continuously highly active mice compared to those whose trajectories showed signs of habituating activity. Network-based statistics identified distinct subnetworks of murine structural covariance underlying these differences in behavioral activity. Together, these results reveal that differentiated behavioral trajectories of mice in an enriched environment are associated with differences in brain connectivity.\n\n## Introduction\n\nThe \u2018non-shared environment\u2019 (Plomin and Daniels, 2011), the elusive component of the non-genetic factor in phenotypic variation (Morgante et al., 2015), contributes to interindividual differences and neurobiological individuality. In humans, in vivo neuroimaging studies have demonstrated a complex relationship between behavioral performance and brain structure associated with learning (Draganski et al., 2014, Taubert et al., 2010), personality traits (Nostro et al., 2017), and political orientation (Kanai et al., 2011), supporting the idea of a causal, yet individual relationship between brain function, structure, and behavior. The structural connectome, which can be estimated based on the correlation between regional brain volumes (across subjects) or white matter links between specific brain regions (within subjects) partially recapitulates known functional networks and represents an individual \u2018fingerprint\u2019 in humans and non-human animals (Alexander-Bloch et al., 2013; Melozzi et al., 2019; Pagani et al., 2016; Yee et al., 2018). Open questions about the exact nature of the connectome and how it is represented in covariance patterns as assessed by imaging studies abound, especially with respect to the crucial issue of causes and consequences.\n\nWe have reported that environmental enrichment (ENR) increases variability in activity-related behaviors (roaming entropy, RE), or total object exploration in a novel object recognition task (K\u00f6rholz et al., 2018). The ENR mice also showed greater variability in measures linked to brain plasticity, such as adult hippocampal neurogenesis (K\u00f6rholz et al., 2018) accompanied by distinguishing epigenetic patterns in the hippocampal dentate gyrus (Zocher et al., 2021; Zocher et al., 2020). From these results we have developed the Individuality paradigm that exposes the influence of the non-shared environment on phenotypic variation (Kempermann, 2019; Kempermann et al., 2022). Its key feature is that both genes and environment are kept constant, while behavior is continuously measured to assess the emergence of differential behavioral trajectories.\n\nStructural magnetic resonance imaging (sMRI) studies of mice exposed to different enrichment paradigms have confirmed historical post-mortem findings, such as increased hippocampal volumes (Zhang et al., 2018), and extended these to mouse brain regions involved in sensorimotor processing (Scholz et al., 2015). We here go a decisive step further and examine the relationships between individual behavioral trajectories and regional brain volumes as well as whole-brain structural networks (\u2018connectomics\u2019). These data may provide neurobiological foundations for concepts such as cognitive reserve or brain maintenance, which attempt to capture individual differences in healthy cognitive aging and resilience to neurodegenerative disease (Kempermann, 2019; Scholz et al., 2015).\n\n## Results\n\nWe longitudinally tracked the behavior of enriched female mice (n = 38) in our Individuality cage system, equipped with radio-frequency identification (RFID) technology (Evans, 2013; Figure 1A). During 12 weeks of exposure to the ENR, mean values of RE as a measure of exploration and territorial coverage (Freund et al., 2013Zocher et al., 2020) were calculated per night and aggregated across four time blocks of 21 nights each. Increasing interindividual component of variance (Figure 1B) confirmed the emergence of individual behavioral differences. Two distinguishable patterns were observed (Figure 1C): mice with consistently high levels of RE and those with habituation and decreased RE values over time. Mice were stratified according to this criterion and grouped into \u2018flat\u2019 roamers (n = 15) or \u2018down\u2019 roamers (n = 15) depending on the slope of the linear regression line through a set of four RE time blocks. The slopes for \u2018flat\u2019 roamers ranged from \u22120.003 to 0.004, while slopes lower than \u22120.006 (to \u22120.049) were considered to represent \u2018down\u2019 roamers. Mice that showed in-between slope values (n = 2) and those with positive slopes (n = 6) were excluded from the clustering to achieve a sharper distinction between the extremes and equally sized groups of 15 mice were formed. The actual slopes are shown in Figure 3B. This is stratification serves the purpose of allowing the visualization of patterns at the top of a rank order based on changes in RE vs. at the bottom.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig1-v2.jpg)\n\n**Figure 1.:** Pictures (A) of the \u201cindividuality\u201d cage\u2014a custom build RFID cage with 70 interconnected small cages and 115 antennae distributed in the connecting tunnels. Interindividual variance (B) of behavior increased over time. Subgrouping of mice (n = 15) based on the slopes of RE trajectories (C), blue: \u2018down\u2019, and red: \u2018flat\u2019. Animals living under enriched environment conditions (ENR) showed increased adult hippocampal neurogenesis (as assessed by proxy marker DCX) independent of behavioral trajectories (One-way ANOVA: F(2,37) = 17.3, p < 0.001; Tukey post-hoc: standard vs flat and standard vs down p < 0.01, flat vs down p = 0.46) (D). Correlations between the number of doublecortin positive cells in the dentate gyrus to RE values at time-block four in the enriched group (R2 = 0.20, p = 0.005) (E), down subgroup (R2 = 0.39, p = 0.012) (F), and flat subgroup (R2 = 0.20, p = 0.095) (G). Box and whisker plots: center line - median; upper and lower hinges - first and third quartiles; whiskers - highest and lowest values within 1.5 times the interquartile range outside hinges; dots - individual data points.\n\nThe number of doublecortin (DCX)-positive cells in the dentate gyrus, a proxy measure of adult neurogenesis, increased in ENR compared to standard conditions, but did not differ between the \u2018flat\u2019 vs. \u2018down\u2019 ENR subgroups (Figure 1D). As previously shown (Evans, 2013; Gong et al., 2012), individual variability in behavior positively correlated to adult hippocampal neurogenesis (R2 = 0.20, p = 0.0046; Figure 1E). The positive correlation between end-point behavior (RE at the time block 4) and immature neurons was statistically significant in the \u2018down\u2019 roamers subgroup (R2 = 0.40, p = 0.012), but missed conventional statistical significance in the \u2018flat\u2019 roamers (R2 = 0.20, p = 0.095; Figure 1F, G). However, the correlations in the flat and down subgroups were not statistically different (one-sided Fisher\u2019s z test, z = \u22120.63, p = 0.27), which might point to an insufficient power for this comparison.\n\nWe next explored neuroanatomical changes between ENR- and standard-housed (STD) mice using ex vivo sMRI. Total brain volumes did not differ significantly (STD: 450.3 \u00b1 11.7 mm3 vs. ENR: 456.5 \u00b1 16.0 mm3; t = 1.14, df = 46; p > 0.05; q > 0.05; Figure 2\u2014figure supplement 1). Using atlas-based segmentation (ABS), statistically significant (5% false discovery rate [FDR]) group differences in absolute volume (mm3) were found for 12% (22/182) of mouse brain atlas regions of interest (ROIs) with effect sizes (SMD) ranging from +2.7 in CA1 oriens (CA1Or) to +1.15 in the molecular layer of the dentate gyrus (Figure 2A; Supplementary file 1). Most of these ROIs (68%; 15/22) were located in the mouse hippocampus, but absolute volume increases were also observed in the infralimbic cortex (cingulate cortex area 25), olfactory nuclei, the anterior commissure, and the orbital cortex (Figure 2A; Supplementary file 1). The majority of these ROIs were conserved as significant group differences when considering relative volumes (% of whole brain), suggesting normal scaling (Figure 2\u2014figure supplement 2a; Supplementary file 1). Complementing the atlas-based analysis, voxel-wise assessment of volume changes using tensor-based morphometry (TBM) revealed statistically significant (family-wise error [FWE] rate p < 0.05) clusters of voxels with apparent increases in both absolute volumes (Figure 2\u2014figure supplement 2b) and relative volumes (Figure 2\u2014figure supplement 2c) localized within the mouse hippocampus when comparing ENR to STD mice. Collectively, these data confirm the expected effects of ENR on mouse brain structure, as evidenced by prior mouse neuroimaging (Scholz et al., 2015; Zhang et al., 2018) and historical post-mortem studies in rats (Diamond et al., 1966).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig2-v2.jpg)\n\n**Figure 2.:** (A) Map of regional differences in absolute volume (mm3) extracted using the DSURQE mouse brain atlas comparing ENR mice (N=38) to those in standard (STD) housing (N=10). Only atlas regions of interest (ROI) that survive multiple comparisons correction are shown (False Discovery Rate, 5%). Data shown for each statistically significant ROI is the standardized mean difference (SMD) comparing ENR \u2013 STD housed mice. Warm colors indicate regional volume increases, whilst cold colors indicate regional volume decreases in ENR-mice as compared to those in STD housing. (B) Positive correlation (Pearson\u2019s r) between roaming entropy slope across all four time blocks and local brain absolute volume changes (log-scaled Jacobian determinant) for all mice in the ENR group (N=38). Voxel clusters with solid contours are significantly correlated to behavior at threshold of p<0.05 (FWE corrected) and voxels without contours correlate at p<0.001 uncorrected for multiple comparisons. Warm colors indicate positive correlation, such that local volume increases are seen in mice with higher RE scores.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each data point indicates the whole-brain volume (in mm3) for an individual mouse in each group. Solid horizontal line indicates the group mean.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Map of regional differences in relative volume (% total brain volume) extracted using the DSURQE mouse brain atlas comparing ENR mice (N=38) to those in standard (STD) housing (N=10). Only atlas regions of interest (ROIs) that survive multiple comparisons correction are shown (false discovery rate, 5%). Data shown for each statistically significant ROI are the standardized mean difference (SMD) comparing ENR \u2212 STD-housed mice. Warm colors indicate regional volume increases, whilst cold colors indicate regional volume decreases in ENR mice as compared to those in STD housing. (b, c) Complementary voxel-wise tensor-based morphometry (TBM) to map localized neuroanatomical differences between ENR\u2013STD mice. Data shown in (b, c) are the percentage difference in log-scaled Jacobian determinants either without correction for total brain volume (b; absolute volumes) or with correction for total brain volume (c; relative volumes) between ENR- and STD-housed mice. Voxels with solid black contours survive a stringent multiple comparisons correction (family-wise error p < 0.05) all other voxels reflect an exploratory threshold of p < 0.05 uncorrected for multiple comparisons. Warm colors indicate voxels with increased volume comparing ENR to STD mice, whilst cold colors indicate voxels with reduced volume.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Data shown are the percentage difference in log-scaled Jacobian determinants without correction for total brain volume (absolute volumes) between Flat (N=15) and Down (N=15) subgroups of ENR-housed mice. There were no statistically significant localized volume differences between the groups after a stringent correction for multiple comparisons (family-wise error p < 0.05). Voxels with solid black contours therefore represent apparent local volume differences between Flat and Down mice at an exploratory threshold of p < 0.05 uncorrected for multiple comparisons. Warm colors indicate voxels with apparent increases volume comparing Flat to Down mice, whilst cold colors indicate voxels with apparent reductions in volume.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Data shown are the correlation (Pearson\u2019s r) between roaming entropy slope across all four time blocks and local brain absolute volume changes (log-scaled Jacobian determinant) for mice clustering into the \u2018flat\u2019 and \u2018down\u2019 groups. Voxel clusters with solid contours are significantly correlated to behavior at an exploratory threshold of uncorrected p < 0.01. No changes were detected after correction for multiple comparisons (FWE p < 0.05). Warm colors indicate positive correlation, suggesting increased volumes in \u2018flat\u2019 as compared to \u2018down\u2019 mice.\n\nWe next explored to what extent our key behavior metric of RE relates to local volume changes (as measured by sMRI) in the ENR group alone. Using the average RE slope for each individual mouse in the ENR group across all four time blocks as a continuous variable, we performed a voxel-wise correlation of this measure against log-Jacobian measures of local volume change. This analysis revealed that RE slope values correlated positively with clusters of local volume changes in the mediodorsal and parafascicular thalamic nuclei, the periaqueductal grey, medial geniculate nucleus, deep mesencephalic nuclei, gray and white matter layers of the superior colliculus, and the central nuclei of the inferior colliculus (FWE p < 0.05, Figure 2B). At an exploratory threshold of p < 0.01 uncorrected for multiple comparisons additional positive correlations were seen between RE slope and the volumes of the sensory and motor cortices, striatum, ventral thalamus, brainstem nuclei, and cerebellar white matter. These data suggest that in mice with greater RE behavior in the ENR group the absolute volumes of these regions were larger than in the mice that displayed less RE behavior.\n\nWe next explored whether the subgroups within the ENR group that reflected continued high vs. declining (\u2018flat\u2019 vs. \u2018down\u2019 roamers) differed anatomically, as measured by sMRI. Total brain volumes did not differ between the two ENR subgroups (\u2018down\u2019: 451.7 \u00b1 11.8 mm3 vs. \u2018flat\u2019: 459.2 \u00b1 5.2 mm3; t = 1.24, df = 28; p > 0.05; q > 0.05; Figure 2\u2014figure supplement 1). Voxel-wise TBM to map localized neuroanatomical differences between Flat and Down subgroups of ENR-housed mice (Figure 2\u2014figure supplement 3) did not show statistically significant localized volume differences between the groups after a stringent correction for multiple comparisons (FWE p < 0.05). We additionally ran a voxel-wise regression between the RE slope across all four time blocks against local volume changes for each individual mouse in the \u2018flat\u2019 and \u2018down\u2019 subgroups. In contrast to the correlation across all mice in the ENR group, there were no statistically significant correlations after correction for multiple comparisons (FWE p < 0.05). At an exploratory threshold of p < 0.01 uncorrected for multiple comparisons, however, RE slope values correlated positively with the absolute volumes of the cingulate, motor, somatosensory, insular, visual, and auditory cortices, as well as ventral thalamic, mid and hind-brain nuclei (Figure 2\u2014figure supplement 4) largely replicating the pattern in Figure 2B. Collectively, these data suggest that individual differences in RE behaviors are likely supported by widely distributed mouse brain circuitry.\n\nTo study whether the emergence of interindividual variation in RE was associated with increased variability in the volumes of mouse brain regions, we calculated the coefficient of variation (CV) for each individual brain region. To determine if there are different degrees of overall variability between ENR subgroups, we averaged the CVs across all 182 ROIs in the mouse brain atlas to yield an average variability measure for each group (Figure 3\u2014figure supplement 1). Comparing the sum of ranks between \u2018down\u2019 and \u2018flat\u2019 mice, we found a highly statistically significant difference (Mann\u2013Whitney U = 11,076; p < 0.0001; Figure 3\u2014figure supplement 1). These data are indicative of an increase in regional brain volume variance as a function of behavioral response to the enriched environment.\n\nStructural covariance is defined as the correlated variation in volumes between pairs of brain regions, which, as human neuroimaging studies suggest, reflects both structural (Gong et al., 2012) and functional brain connectivity (Segall et al., 2012). Structural covariance networks are conserved in the mouse brain, providing an opportunity to explore the impact of ENR compared to standard housing on this cross-species measure of brain connectivity (Pagani et al., 2015; Yee et al., 2018). Correlation matrices of mouse brain structural covariance (Figure 3A) revealed a broad effect of housing, which was found to be statistically significant (Chi-square tests for equality of two correlation matrices; Chi-square = 17,997.7, df = 16471, p < 0.0001, where prob is the probability of observing the Chi-square under the null hypothesis) (Steiger, 1980). Furthermore, comparison of structural covariance matrices within the ENR group revealed distinctive effects between \u2018down\u2019 and \u2018flat\u2019 roamers (Chi-square = 19,997.29, df = 16,471, p < 0.0001; Figure 3B). The structural covariance matrix of \u2018flat\u2019 roamers (Figure 3C) differed from that of STD animals (Chi-square = 17,938.04, df = 16,471, prob <0.0001), whereas \u2018down\u2019 roamers (Figure 3D) were highly similar to STD group (Chi-square = 14,327.89, df = 16,471, prob <1; Figure 3A). In general, brain regions in the \u2019flat\u2019 roamers were highly correlated with each other, whereas this was not the case in \u2018down\u2019 roamers and STD mice (Figure 3). These correlation patterns support the hypothesis of a link between behavioral trajectories and distinct levels of brain structural covariance, which develops independently of genetic variation, or the idea that emerging complex behavioral patterns are dependent on changes in covariance between widely distributed regions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig3-v2.jpg)\n\n**Figure 3.:** Rows and columns of each matrix denote atlas-defined structures, and color intensity the correlation strength (Pearson\u2019s correlation, red = positive, blue = negative). (A) Mice were kept either in STD or ENR conditions. (B) based on patterns of behavior (slope of the RE trajectory), ENR animals were stratified into \u2018flat\u2019 and \u2018down\u2019 roamers. Six mice with positive slopes and 2 intermediates were not included into this visualization. \u2018Correlatedness\u2019 in flat roamers visibly exceeds the ENR (all) pattern, while in \u2018down roamers\u2019 it appears weaker than in STD (see text for the Chi Square statistics of the comparisons).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Individual data points represent the coefficient of variation (CV) for each of 182 regions of interest (ROIs) in the DSURQE mouse brain atlas. ***p < 0.001 Mann\u2013Whitney U-test comparing the average of the CV across all 182 ROIs in the DSURQE mouse brain atlas, to yield an average variability measure for each group.\n\nTo test hypotheses regarding specific network connections we used network-based statistics (NBS). To describe the graph model, an appropriate set of nodes was defined using the mouse brain ROIs from the DSURQE atlas that differed significantly in volumes based on the ENR > STD contrast after correction for multiple comparisons (5% FDR; Figure 2A, Supplementary file 1). Values of bilateral regions were averaged and plotted in both hemispheres. Comparing ENR and STD mice, NBS analysis detected a single statistically significant subnetwork of increased structural covariance, comprising 23 structural connections (t = 2.4; p < 0.05). By contrast, comparing \u2018flat\u2019 vs. \u2018down\u2019 mice in the ENR group, NBS identified a larger statistically significant subnetwork of increased structural covariance comprising 49 structural connections (t = 2.4; p < 0.05; Figure 4A, B). Figure 4C, D depicts how the size of these subnetwork depends on the chosen t thresholds.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80379/elife-80379-fig4-v2.jpg)\n\n**Figure 4.:** Visualization of subnetworks in the contrasts (A) ENR > STD and (B) FLAT > DOWN both at a threshold of t = 2.4. In the left panels nodes are projected onto a standard mouse brain template (Allen Mouse Common Coordinate Framework v.3). Edges and nodes are colored according to their anatomical location (Dark Green: Cerebellum, Light Green: Cingulate Area, Red: Hippocampal Formation, Orange: Fiber Tracts, Dark Blue: Olfactory Area, Light Blue: Temporal Association Area, Light Pink: Cerebral nuclei, Purple: Cortical Subplate). Nodes were defined using the DSURQE atlas and restricted to the regions of interest with a significant group difference in brain volumes based on the ENR > STD contrast. Values of bilateral regions were averaged and plotted in both hemispheres. Brain connectivity maps and circular connectogram were generated using NeuroMArVL (http://immersive.erc.monash.edu.au/neuromarvl). C and D: Visualization of the component size of the significant subnetwork depending on the chosen threshold. (C) ENR vs STD and (D) Flat vs Down. Regions of interest were defined with the DSURQE atlas and restricted to the regions of interest with a significant group difference in brain volumes based on the ENR > STD contrast.\n\nThe NBS analysis supports the conclusion that interindividual differences in behavioral trajectories (here clustered into the \u2018flat\u2019 vs. \u2018down\u2019 roamer subgroups of ENR) surpassed the housing effects, and identifies specific subnetworks of structural covariance in the mouse brain.\n\n## Discussion\n\nCorrelative analyses of magnetic resonance imaging (MRI) data provide evidence of integrated networks of brain regions, both structurally and functionally. These provide non-invasive insights into the organization of the brain at the macroscale, going beyond the analysis of local changes within individual brain regions as revealed by univariate analysis methods (Bullmore and Sporns, 2009). Within this framework, \u2018structural covariance\u2019, permits the study of variation in the organization of brain regional structures within networks that might emerge across a population of individuals in both humans (Alexander-Bloch et al., 2013; Evans, 2013) and mice (Bruce et al., 2021; Mueller et al., 2021). Applying structural covariance and NBS analysis to our individuality model, we observed patterns of structural covariance across the mouse brain that are highly distinct between STD- and ENR-housed mice, which may reflect synchronized plastic changes occurring across multiple brain regions over time. Remarkably, within the ENR group itself, the structural covariance matrix for the \u2018down\u2019 roamers was similar to the matrix generated for standard-housed mice (Figure 1F, G). The structural covariance matrix for those mice with a \u2018flat\u2019 RE suggests a much higher degree of inter-regional correlation in comparison to \u2018down\u2019 or STD mice, findings confirmed and extended by the NBS analysis. Variation in mouse brain structural covariance in the ENR group suggests that individual behavioral trajectories (as here first approximated by RE, but in reality encompassing the full scope and complexity of behaviors; Freund et al., 2015) are associated with a certain degree of individualization of brain structural networks at the macroscale and that this largely explains differences observed between standard and ENR mice per se.\n\nThe two groups of flat vs. down roamers were formed in order to be able to calculate structural covariance matrices at the ends of the behavioral spectrum within the ENR group. We used a within-group effect to point to the existence of interindividual differences, but by necessity, structural covariance has to be calculated in groups and cannot be calculated for individuals with the available structural MR images from this dataset. We excluded two animals with borderline slopes at the boundary between the groups and as a measure of stringency, removed mice with a clearly positive slope from the \u2018flat\u2019 group. Chi-square statistics support the qualitative impression that the visualization conveys: the patterns differ strongly.\n\nOur data suggest that the behaviors reflected in RE are supported by widely distributed brain circuitry, in particular the hippocampal formation, cingulate and temporal cortices, white matter tracts and olfactory areas. Consistent with this view, neuroanatomical and/or structural covariance changes within these mouse brain circuits have been previously shown to be associated with spatial memory, navigation and cognitive strategies (Lerch et al., 2011), social behaviors (Bruce et al., 2021), and susceptibility or resilience to stress exposure (Anacker et al., 2016), all domains of mouse behavior that may contribute to the individual estimate of RE.\n\nEnvironmental enrichment has always been by and large a \u2018black box\u2019 paradigm and discussions about the relative contribution of the various factors that make up enrichment (e.g., group size, space, changing objects) have filled volumes, without reaching a unified theory. In the center of our own considerations are learning and social interaction as key components. While the deconstruction of enrichment is an important research avenue, a case can also be made for leaving the black box closed and appreciate enrichment for its ability to apply a complex combination of inanimate and social stimuli. For the present study we have to leave open, to which extent and how exposure to the enriched conditions is causal for the observed behavioral trajectories and the associated changes in structural covariance. Nevertheless, the associations are strongly indicative of at least shared (indirect) causality.\n\nThe mice in our study are inbred, thus the genetic background and the \u2018nominal\u2019 environment are identical for all mice in the ENR group. Hence, phenotypic variation at the level of brain and behavior must arise from the non-shared component of the environmental factors (\u2018non-shared environment\u2019). Collectively, our data support a view that a continuum exists between RE and experience-dependent plasticity in brain structure (as measured by ex vivo sMRI). We speculate that exposure to ENR may build on initial variance in mouse brain volumes observable from early in postnatal life (Qiu et al., 2013) and amplifies these differences by providing the opportunity for the development of individual behavior (Freund et al., 2013; Kempermann, 2019; K\u00f6rholz et al., 2018; Zocher et al., 2020). Longitudinal in vivo multimodal MRI studies are however required to definitively confirm this view and define the relative contributions of pre-existing individual differences in both functional and structural mouse brain networks as compared to the experience of the shared enriched environment and link these changes to their cellular and molecular correlates.\n\nA certain limitation to our current study is the fact that the stratification of the ENR group into behaviorally distinct subgroups involved arbitrary decisions. With these, however, we intended to maximize the N number within each subgroup to increase power, use equally sized groups, and base the definition of the two group on a simple, rational, and plausible parameter (i.e., slope of the behavioral trajectory). The observed differences in covariance are large and occur in a group of mice, which are genetically homogenous and share the same environment. The data are consistent with the hypothesis that greater activity results in greater brain plasticity and, by consequence, a richer connectome. While Figure 4 offers first insight into which connections are involved, we here primarily emphasize the fact that the number of connections increases with greater activity. Actual effect sizes, specific network properties, and the role of specific connections will have to be examined in larger follow-up studies based on more and different behavioral measures and stringently objective stratification strategies. As first step into this direction, we however present the continuous correlation between RE slopes and gray matter volumes in Figure 2B.\n\nBecause \u2018flat\u2019 roamers show stronger structural brain connectivity (based on structural covariance in MRI), it is tempting to speculate that keeping a stable level of territorial coverage has a positive effect on brain networks. In fact, our RE measure has already been used in human studies, providing evidence that greater levels of RE (assessed with a smartphone app) are associated with a greater positive affect and greater hippocampal\u2013striatal functional connectivity (Heller et al., 2020). Our animal studies allow the generalization of such observations and ultimately will enable identification of the underlying mechanisms at the cellular and molecular levels.\n\nThe by now extensive literature on environmental enrichment covers different overarching mechanistic ideas, including the \u2018learning theory\u2019, the \u2018arousal theory\u2019, and the \u2018developmental theory\u2019. As argued recently, all of these seem to be correct to a certain extent and contribute to a multifactorial network of causes across scales (Kempermann, 2019), RE captures only a small facet of this complexity but appears to be a remarkably strong factor. We hypothesize learning and social factors to make important contributions to the individuality effect. It is, however, an unresolved question, to which extent these enrichment factors are necessary for behavioral and structural individualization to emerge.\n\nEven now, however, our study demonstrates how whole mouse brain structures are distinctively affected by the non-shared component of environmental enrichment and can be linked to stable behavioral trajectories.\n\n## Materials and methods\n\n### Animals and housing conditions\n\nFemale C57BL/6JRj mice from as many litters as possible were purchased at 4 weeks of age from Janvier Labs and were randomly divided into standard (STD) (n = 10) and enriched (ENR) (n = 38) housing conditions. ENR mice were subcutaneously injected into their neck with a glass coated micro transponder (SID 102/A/2; Euro I.D.) under brief isoflurane anesthesia. The shared enriched environment took place in a cage system custom-built to our specifications (PhenoSys GmbH, now marketed as \u2018PhenoSys ColonyRack Individuality 3.0\u2019), consisting of 70 polycarbonate cages (1264C Type II, Tecniplast) that are connected via transparent tunnels and distributed on seven levels. With this cage system, longitudinal tracking of mice is obtained by RFID antennae, located on connecting tunnels (Kempermann et al., 2022). For this specific experiment, ENR mice only had access to 35 polycarbonate cages in four levels (total area of 1.37 m2), equipped with toys and hideouts, that were replaced and rearranged once a week. STD mice were housed in two polycarbonate cages (36.5 \u00d7 20.7 \u00d7 14 cm; Type III, Tecniplast) in groups of five animals per cage. All mice were maintained on a 12-hr light/12-hr dark cycle with 55 \u00b1 10% humidity at the animal facility of the Center for Regenerative Therapies Dresden. Food (#V1534; Sniff) and water were provided ad libitum.\n\nThe experiment was conducted in accordance with the applicable European and national regulations and approved by the local authority (Landesdirektion Sachsen, file number 7/2016 TVT DD24 5131-365-8-SAC). All analyses were performed in a blinded manner.\n\n### Analysis of the tracking data\n\nAntenna contacts, resulting from mice activity, were recorded with the software PhenoSoft Control (PhenoSys GmbH), which identifies the specific antenna and mouse, as well as the time stamp of the antenna contact. As previously described (Kempermann et al., 2022), Shannon entropy of the roaming distribution was calculated as\n\n$$\nRE_{i,t}=\u2212\\sumj=1k(p_{i,j,t}log\u2061p_{i,j,t})/log\u2061(k)\n$$\n\nwhere i is the mouse, j is the antenna, k is the total number of antennae, and t is the day. RE quantifies differences in territorial coverage, and because mice are nocturnal animals, only the dark phase of the cycle was used for this analysis. From the nightly mean RE values, four time blocks (T1, T2, T3, and T4), of 21 calendar days each, was generated.\n\n### Mixed linear models and repeatability estimation\n\nTo investigate whether the observed phenotypic variances are resulting from inter- and/or within-individual variability, we employed generalized linear mixed models in a Bayesian framework, as previously described (Fong et al., 2010; Zocher et al., 2020). Briefly, repeatability (R) is the fraction of total variance that can be attributed to interindividual differences, rather than within individual differences, calculated as $R=\u00a0\\frac{V_{(ind)}}{V_{(ind)}+V_{(res)}}$ , where V(ind) represents the interindividual variances and V(res) the residual, or within individual, variances (Dingemanse and Dochtermann, 2013). The behavioral phenotypes from RE were mean centered and scaled to unity variance. We used time blocks as fixed effect and an interaction between time block and individual identifier as random effect. With a random effect, it was possible to estimate interindividual variances for each time block, while the residual variances were estimated separately. To fit the model, we applied Markov chain Monte Carlo estimation with Gibbs sampling (MCMCglmm R package). A Gaussian error distribution was assumed with weakly informative default priors for the fixed effect (time blocks). An inverse Wishart distribution prior was selected for residual variances. From the posterior (co)variance distributions, we derived the estimates of repeatability and interindividual correlations, using a mode of the posterior density.\n\n### Within-enrichment subgroups based on slope patterns\n\nThe optimal number of clusters was determined by a silhouette analysis using an unsupervised partitioning method of clustering (k-means), which measures the quality of clustering for each data point (Kaufman and Rousseeuw, 1990). All enriched mice were clustered based on mean RE values for each time period (T1, T2, T3, and T4).\n\nA visual assessment of individual behavioral trajectories, based on RE, indicates two distinct patterns: fixed amount of territorial coverage (\u2018flat\u2019) or behavioral habituation over time (\u2018down\u2019). After detecting an optimal number of two clusters within our enriched group, we applied slope values, calculated as $b= \\frac{\\sum(x-x-)(y-y-)}{\\sum(x-x-)^{2}}$ , where x are time points (1, 2, 3, and 4, representing time blocks), y are RE values for each time point, and x\u0304 and \u0233 are sample means of the known x\u2019s and the known y\u2019s. The slope values fall into a small distance range: \u22120.049 up to 0.016. We decided to select up to 15 animals for each subgroup, due to the uncertain behavioral pattern that some mice showed. Finally, 15 animals from the lower spectrum of slope values (\u22120.049 to \u22120.008) were grouped as \u2018down\u2019 roamers, and 15 animals with slope values ranging from \u22120.003 up to 0.004 were classified as \u2018flat\u2019 roamers. Excluded from the subgroup analysis are two mice with in-between slope values and six mice with higher than 0.006 slope values.\n\n### Tissue preparation for ex vivo MRI\n\nAll animals were killed at 17 weeks of age by cardiac perfusion performed on site at the Kempermann Lab, Center for Regenerative Therapies Dresden, prior to shipping to King\u2019s College London (KCL). The details of the perfusion protocol have been published elsewhere (Richetto et al., 2017; Wood et al., 2016). Briefly, mice were anesthetized with sodium pentobarbital (Narcoren 16 g/100 ml; 5 \u03bcl/g; i.p.) and intracardially perfused with 30 ml of 0.1 M phosphate-buffered saline (PBS), containing 10 U/ml heparin, followed by 30 ml of 4% (vol/vol) paraformaldehyde (PFA). Post-perfusion, the mouse was decapitated, and the skin, ears, and lower jaw removed, and the brain left within the cranium. This is done to minimize deformations due to dissection. Each brain is then first incubated for 24 hr in 4% PFA solution and then placed in 0.1 M PBS containing 0.05% (wt/vol) sodium azide. Samples were then shipped to KCL and stored at 4\u00b0C in this solution for 4 weeks prior to ex vivo MR image acquisition to allow tissue rehydration. MRI examiners were blinded for the experimental groups.\n\n### Tissue preparation for immunohistochemistry\n\nBrains in the skulls were shipped back to Dresden from the KCL. At the German Center for Neurodegenerative Diseases (DZNE) Dresden, brains were dissected from the skulls, incubated in 30% sucrose in phosphate buffer for 2 days and cut into 40-\u03bcm coronal sections using a dry-ice-cooled copper block on a sliding microtome (Leica, SM2000R). Sections were stored at 4\u00b0C in cryoprotectant solution (25% ethylene glycol, 25% glycerol in 0.1 M phosphate buffer, pH 7.4). For detection of DCX-positive cells, the peroxidase method was applied. Free-floating sections were pretreated with 0.2 M boric acid (pH 9) at 70\u00b0C for 1 hr as an antigen retrieval method, washed in 1% phosphate buffer (PBS) and then incubated for 12 hr at 4\u00b0C in PBS with 10% donkey serum (Jackson Immuno Research Labs) and 0.2% Triton X-100 (Carl Roth). After the protein blocking step, sections were incubated overnight at 4\u00b0C with the primary antibody (goat anti-DCX, 1:250; Santa Cruz Biotechnology, Cat# sc-50548, RRID:AB_2079663) diluted in PBS containing 3% donkey serum and 0.2% Triton X-100. Following washing steps, incubation with biotinylated secondary antibody (1:500, Jackson Immuno Research Labs Cat# 705-065-147, RRID:AB_2340397) occurred for 3 hr at room temperature. Sections were then incubated in 0.6% hydrogen peroxide in PBS for 30 min to inhibit endogenous peroxidase activity. Detection was performed using the Vectastain ABC Elite reagent (9 \u03bcg/ml of each component, Vector Laboratories, LINARIS) with diaminobenzidine (0.075 mg/ml; Sigma) and 0.04% nickel chloride as a chromogen. Stained sections were mounted onto glass slides, cleared with Neo-Clear (Millipore), and cover-slipped using Neo-Mount (Millipore). DCX-positive cells were counted on every sixth section along the entire rostrocaudal axis of the dentate gyrus using a brightfield microscope (Leica DM 750). Experimenters were blinded for the experimental groups.\n\n### MR image acquisition\n\nA 9.4T Bruker BioSpec 94/20 horizontal small bore magnet (Bruker Ltd, UK) and a quadrature volume radio-frequency coil (39-mm internal diameter, Rapid Biomedical GmbH, GER) were used for all ex vivo sMRI acquisitions. Fixed brain samples were placed securely, four at a time, in a custom-made MR-compatible holder and immersed in proton-free susceptibility matching fluid (Fomblin; Solvay, UK). Samples were scanned in a random order, with the operator blinded to sMRI acquisitions. Fixed brain samples were placed securely, four at a time, in a custom-made MR-compatible holder and immersed in proton-free susceptibility matching fluid (Fomblin; Solvay, UK). Samples were scanned in a random order, with the operator blinded to treatment group by numerical coding of samples. Scanning was interspersed with phantoms to ensure consistent operation of the scanner. T2-weighted images were acquired using a 3D fast spin-echo (FSE) sequence with the following parameters: effective echo time (TE) 30 ms, repetition time (TR) 3000 ms, \ufb01eld of view 25 \u00d7 25 \u00d7 20 mm and acquisition matrix 250 \u00d7 250 \u00d7 200 yielding isotropic voxels of 100 \u00b5m3, scan time = 5 hr and 44 min. This MRI resolution (100 \u00b5m3) is at the lower end for ex vivo anatomy as compared to other studies, which employ longer acquisition times with specific pulse sequences and the use of contrast enhancement, for example, the inclusion of gadolinium in the perfusion and rehydration steps to reach resolutions as low as 30\u201340 \u00b5m3 (Bruce et al., 2021). We adopted the protocol reported for this study based on our prior work (e.g., Lin et al., 2021Mueller et al., 2021) as a pragmatic initial step, which allows us to collect both structural and diffusion tensor imaging data (the latter to be reported elsewhere) in a single overnight scan across multiple mice. Of note however, prior work comparing low- and high-resolution ex vivo sMRI scans on the same population of mice suggests that the majority of variance is explained by biology and not methodology (Lerch et al., 2012). Nonetheless, sMRI studies at much higher resolution using contrast enhancement are now underway to address this issue directly.\n\n### MR image processing\n\nMR images were visually inspected in native space for artefacts, with no images excluded on this basis. Raw MR images were converted from the manufacturer\u2019s proprietary format to the NIFTI format and processed using a combination of FSL (Jenkinson et al., 2012), ANTs (Avants et al., 2011), and the Quantitative Imaging Tools (QUIT) package written in C++ software utilizing the ITK library, available from https://github.com/spinicist/QUIT. The following steps were performed on the T2-FSE anatomical MR images in their native space. A Tukey filter was applied to the FSE MR images in k-space to remove high-frequency noise followed by correction for intensity inhomogeneity using the N4 algorithm (Tustison et al., 2010). A study-specific template was then constructed from MR images of n = 24 mice randomly selected from the entire dataset, using the antsMultivariateTemplateConstruction2.sh script with cross-correlation metric and SyN transform (Avants et al., 2010). The template and individual brains were skull stripped using the RATS algorithm implemented in QUIT using the qimask script (Wood et al., 2016). All MRI data can be found here: https://osf.io/m7gpd/.\n\n### MR image analyses\n\n#### ABS of regional brain volumes\n\nGroup-level differences in volume were assessed using a combination of ABS and voxel-wise DBM as in our prior work (Mueller et al., 2021). To enable ABS analysis of regional brain volumes, the study-specific template was then registered to the Dorr-Steadman-Ullmann-Richards-Qiu-Egan (DSURQE) mouse brain atlas (40 \u00b5m) (https://wiki.mouseimaging.ca/display/MICePub/Mouse+Brain+Atlases). This atlas has 182 individual mouse brain structures defined (including left and right labels for most structures, giving 356 labels in total). The T2-weighted 3D FSE images for all study subjects were then non-linearly registered to the study template using the antsRegistrationSyN.sh script. For the DSURQE atlas, the inverse transforms from the atlas to the study template and from the study template to each subject, were applied to calculate the brain and atlas-based ROI volumes for each subject (Doostdar et al., 2019; Kuan et al., 2021). After careful checking of atlas label alignment to each individual subject\u2019s MR images, we automatically extracted volumes for the 182 ROIs comprising the DSURQE atlas, merging the left and right labels for each ROI. Total brain volume was calculated from the summation of the individual atlas ROI volumes. Both absolute volumes (mm3) and relative volumes were compared to assess brain scaling. Relative volumes were calculated as a percentage of total brain volume that is ([(brain region volume)/(whole-brain volume) \u00d7 100]). Whilst others and we have used this approach there are caveats. Specifically, whilst some brain regions scale linearly to total brain volume, such as the hippocampus, other regions, such as the cerebellum, may not (Mankiw et al., 2017). Hence, it is important to compare both absolute and relative volumes in assessing group differences. Group-level differences in either absolute or relative volumes were compared between STD and ENR mice using multiple t-tests (two-tailed, unequal variance assumed) with \u03b1 = 0.05 using R-project (v4.0). The resulting p values were subsequently corrected for multiple comparisons using the FDR at 5% (q < 0.05) using Prism software (v8.4.2; GraphPad, La Jolla, CA, USA). To calculate the magnitude and direction of volume change for each region between groups, effect sizes for each brain region were calculated using the standardized mean difference (effect size = (\u03bc [ENR] \u2212 \u03bc [STD]/\u03c3 STD)); measured in units of standard deviation. The volumetric MRI data are found in Supplementary file 1 (absolute values) and 2 (relative values).\n\n### Deformation-based morphometry\n\nJacobian determinant maps were calculated from the inverse warp fields in standard space using the CreateJacobianDeterminantImage script (ANTs) and log-scaled to allow voxel-wise estimation of apparent volume change via deformation-based morphometry (DBM) (Mueller et al., 2021). To compare local volume differences between STD and ENR mice, voxel-based nonparametric statistics were performed on the log-transformed Jacobian determinant maps using FSL randomize as previously described (Mueller et al., 2021). The resulting F-statistic maps were corrected for multiple comparisons using the FWE rate (p < 0.05). Data in the manuscript are also shown at p < 0.05 uncorrected for multiple comparisons. DBM analyses were run with and without total brain volume as a covariate of no interest, to check for potential global scaling effects.\n\n### Correlation between RE and local volume changes\n\nThe slope of the RE metric, calculated across all time blocks was regressed against log-Jacobians of each individual at each voxel in the ENR cohort only. The resultant correlation map was then thresholded using the FWE rate (p < 0.05). Data in the manuscript are also shown at p < 0.05 uncorrected for multiple comparisons.\n\n### Mouse brain structural covariance\n\nFollowing the atlas-based approach, we explored patterns of structural covariance using relative brain volumes from 182 predefined structures in the DSURQE atlas (Yee et al., 2018). We computed the Pearson correlation coefficient between all relative structure volumes, resulting in a 182 \u00d7 182 matrix of correlations representing the structural covariance network, for both standard housing and enriched housing groups. We repeated the same analysis considering the within-enrichment subgroups \u2018flat\u2019 and \u2018down\u2019 roamers. The 182 structures are ordered following hierarchical clustering of the enriched-housed correlation matrix, with the same order applied for all matrices.\n\n### NBS analysis\n\nNBS is a powerful statistical method for identifying a statistically significant cluster of connections indicating differences between groups on intermediate network scales (Zalesky et al., 2010). As described in previous functional studies (Ehrlich et al., 2015; Geisler et al., 2020), NBS is computed using the following steps: (1) identify all connections (pairs of nodes) that are different between groups beyond a particular t-value (called primary threshold), (2) select the largest contiguous cluster of these connections, and (3) validate the cluster\u2019s significance by permutation testing. In permutation testing an empirical null distribution of the largest cluster size is generated by conducting the first two NBS steps on resampled group membership data 10,000 times. The returned subnetwork is statistically significant at an FWE corrected value of p < 0.05.\n\nAlthough the network needs to be considered as a whole, the extent of the returned network can be varied using a different primary threshold. This adjusts the extremity of deviation in a connection between groups required, before it is considered for inclusion in the NBS result. NBS returns a single p value, which represents the likelihood that the subnetwork (also called component) is as observed if in fact there is no difference (i.e., the null hypothesis is true). This approach measures the entire cluster of returned connections but does not identify the contribution of each connection independently. The NBS procedure was carried out for the correlation matrices with a primary threshold of t = 3.1 (which corresponds to p = 0.001). The graphic visualization in Figure 4 is at t = 2.4.\n\nAs part of an additional analysis to see if cortical regions that are susceptible to thickness reductions are more interconnected the NBS procedure was carried out for STD and ENR on a subgroup of ROIs consisting of all significantly changed regions between STD and ENR.\n",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "fe01665e-0f32-4065-829a-9bbd10e2e197",
+      "submission_id": "4c1838aa-b74e-41bb-af4d-a20678285c69",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jason P Lerch, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80379.sa0](https://doi.org/10.7554/eLife.80379.sa0)\n\nThis important work is of broad interest to readers studying brain plasticity, individuality, and shared/non-shared environments. The identification of distinct patters of brain networks, in the absence of main effects, between two broad classes defining how mice explore their environments, is especially interesting. The evidence supporting their conclusions is convincing.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jason P Lerch, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80379.sa1](https://doi.org/10.7554/eLife.80379.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Individual behavioral trajectories shape whole-brain connectivity in mice\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jason Lerch as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yohan Yee (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The division of their cohort into two groups raised concerns by all three reviewers. The authors need to address these concerns by clearly showing the existence of two distinct groups, exploring sensitivity to different cutoffs, better justifying why some mice were excluded entirely, and if an intermediate group of mice are still excluded describing their covariance patterns.\n\n2) The manuscript would also benefit from directly using their key behaviour metric, roaming entropy (RE), by using RE-slopes as continuous variables (in addition to clustering based on RE-slopes).\n\n3) The authors need to slightly expand their statistical analyses by running permutation tests over the chi-squared tests, exploring a range of thresholds for network based statistics, and assessing whether alternate means of removing overall brain volume change their results.\n\n4) The authors need to partially expand their introduction and discussion by being clearer that structural covariance, as used here, is a group measure and not easily applicable to an individual, being more nuanced in associating structural covariance with connectivity, and discussing what aspects of their environment (social vs space) have impacts on structural covariance.\n\nAlso, a note of clarification based on discussions with reviewer #2: \"On acquiring more data to test whether their elaborate enrichment setup is _required_ for individuality, I don't think that's necessary, since that's not specifically the aim of this study. I should have been clearer about my comment \u2013 I meant that more as a Gedanken experiment to illustrate what would be needed to specifically tie their enrichment setup to the increasing variability in roaming entropy.\"\n\nReviewer #1 (Recommendations for the authors):\n\nMost of my confusion and possibly critique relates to the division of mice into two groups. Here the authors need to show the data that supports this division in a more convincing fashion, clear up how the automated clustering supports these division, illustrate how the intermediate group behaves on their measures, and possibly show sensitivity analyses as to how sensitive the groupings are to differences in ways of subdividing the cohort. In addition to clearing up the clustering it would be good to show slopes as a distribution/histogram to be convince the reader that it is indeed a bimodal distribution.\n\nReviewer #2 (Recommendations for the authors):\n\nI genuinely enjoyed reading this paper-it was well written, clear on what was done, concise, and on a relevant and interesting topic.\n\nA common question that came up throughout my reading of the manuscript was on choices made in grouping data: why partition mice into flat and down roamers (while excluding a few with slopes above and in between), as opposed to directly working with the slope. For example, in looking at structural covariance differences, a single analysis (on the entire group of mice) examining covariance differences due to RE-slope could be achieved through the inclusion of RE-slope interaction terms in linear models. Such an approach would benefit from a larger sample size and increased power. Unless the distribution of RE-slopes is bimodal, the justification for stratification is unclear. Similarly, why average the RE over three weeks? Given the temporal resolution of the RFID data and that RE is computed for each night, partitioning into four long periods seems unnecessary.\n\nClarity on the role of the enriched environment would be helpful. While it is reasonable to believe that individuality emerges from exposure to an enriched environment, it is unclear from this study if this enrichment is required. An explicit comparison of enriched mice with those raised in standard housing would rule out intrinsic age-associated divergence of roaming entropy. In other words, if four cohorts of standard-housed mice were exposed to the enriched environment to track roaming but only during each of the four time periods, would the emergence of individuality not be as pronounced?\n\nSome comments on specific parts of the study and manuscript:\n\n1) Line 100: \"Mice that showed in-between slope values (n = 10) were excluded from the clustering\" is inconsistent with the subject numbers listed on lines 88 (total n=38) and 96-97 (15 flat roamers, 15 down roamers). Also, this conflicts with the statement on lines 393-394 (\"Excluded from the subgroup analysis are 2 mice with in-between slope values and 6 mice with higher than 0.006 slope values\").\n\n2) Line 165: do you mean Figure 2B (as opposed to 3B)?\n\n3) Line 175: I would suggest averaging over cortical and subcortical regions separately, given their distinctive function, development, gene expression, connectivity, and covariance patterns.\n\n4) Line 282: missing closing parenthesis.\n\n5) There are various places in the manuscript where structural covariance is used as a proxy to traditional measures of connectivity. While structural covariance has been found to be statistically associated structural and functional connectivity, the idea that structural covariance is driven by synchronized plasticity between structurally connected regions has yet to be confirmed. Therefore, I would caution against making this connection (no pun intended) between covariance and connectivity. A mention of this (and other study limitations) in the discussion might be helpful.\n\n6) Lines 550-551: Could you double check the definition of the p-value? Unless NBS (which I am admittedly not an expert on) defines the p-value differently, the p-value is a probability of observing data given the null, as opposed to a probability of an effect.\n\n7) Reasons for only including female mice should be explicitly listed \u2013 I assume male mice were excluded to avoid aggression/mating?\n\n8) Figure 3: it would be helpful to annotate the rows and columns of these matrices with names of coarse structures.\n\nPotential ideas to further improve the study include:\n\n1) Are anatomical changes driven by neurogenesis? I.e., does the size of the dentate gyrus correlate with DCX?\n\n2) Apart from access to a larger and richer space, the ENR group differs from STD in the number of mice and therefore potential social interactions. I'd be curious to know whether these results can be separated into social vs spatial exploration effects. For example, based on RFID data, do flat roamers tend to spend time with other mice more, while down roamers are more isolated? If it is possible to extract from the RFID data, I think an analysis that includes measures of social interactions would make this a far stronger study.\n\n3) Similar to the above comment, can the effect of activity be teased out from the RFID data? Exercise has been shown to correlate with brain structural differences; I wonder if some of the neuroanatomical variation seen comes about from mice just moving around more.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 The interpretation of structural covariance is oversimplified especially in introduction. Specifically, REF 19 is being mischaracterized \u2013 this paper did suggest some convergence but also significance divergence with white matter connectivity. In the discussion the authors invoke the idea that structural covariance \"may reflect synchronized plastic changes occurring across multiple brain regions over time\". This idea should be included in the motivation for the investigation as well.\n\n\u2013 Given references to prior related work by the authors and others, it is not currently clear what are the exact analyses that have not previously been done which are unique to this paper. The paper would benefit from a clear discussion paragraph stating what this study does that has not been done previously and what is a replication (differentiating replication from restatement of results already reported in the same mice).\n\n\u2013 The statement on p.7 that \"The majority of these ROIs were conserved as significant group differences when considering relative volumes (% of whole brain), suggesting normal scaling\" should be clarified. Do the authors mean normal scaling versus nonlinear scaling cf https://www.science.org/doi/10.1126/science.aar2578? Note that dividing by total brain size is not really an effective way to \"control\" for the effect of total brain size (https://www.sciencedirect.com/science/article/pii/S1053811922006012)\n\n\u2013 The chi-square tests for equality of two correlation matrices would be better if replicated with permutation testing as REF 21 seems to indicate these tests are anti-conservative in small samples.\n\n\u2013 NBS uses permutation testing which is good. However it is more rigorous to consider the t-statistic over a range of thresholds not just a single threshold. I'd suggest 2.5-3.5 in 0.1 intervals as a sensitivity analysis. Also it's not clear why t=2.4 is mentioned in results but t=3.1 in mentioned in the methods.\n\n\u2013 This is out of my area of expertise but is it possible that genetic differences including de novo mutations could underlie some inter-individual differences between inbred mice?\n\n\u2013 I am having trouble understanding the rationale for the precise cut off values between groups. On p.15 manuscript says \"Excluded from the subgroup analysis are 2 mice with in-between slope values and 6 mice with higher than 0.006 slope values.\" while on p.10 it says \"Mice that showed in-between slope values (n = 10) were excluded from the clustering to achieve a sharper distinction. Presumably, I am not understanding something but it should be more clear.\n\n\u2013 In addition, the rationale for excluding \"up roamers\" with higher slope values is not clear. These mice should be included in the flat group in a sensitivity analysis to assess robustness of findings.\n\n\u2013 Currently it is not clear to what extent findings depend on the specific thresholds chosen to differentiate flat vs down roamers. It would be an improvement to conduct a sensitivity analysis in order to confirm the robustness of the findings to methodological variability to methodological choices which may seem arbitrary to a reader.\n",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4ea49516-061b-4361-bac4-5187245959eb",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C1",
+      "claim": "Environmental enrichment increases mouse hippocampal volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that environmental enrichment increases mouse hippocampal volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a confirmed finding in the abstract and supported by MRI data presented in Figure 2A and related supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "3dd992ce-502a-4519-8565-467920084f9d",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C2",
+      "claim": "Stratifying the enriched group according to individual longitudinal behavioral trajectories revealed striking differences in mouse brain structural covariance in continuously highly active mice compared to those whose trajectories showed signs of habituating activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Stratifying the enriched group according to individual longitudinal behavioral trajectories, however, revealed striking differences in mouse brain structural covariance in continuously highly active mice compared to those whose trajectories showed signs of habituating activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural covariance matrices shown in Figure 3 and network-based statistics in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "31b71e5e-915e-460b-91aa-e575c14cb9df",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C3",
+      "claim": "Network-based statistics identified distinct subnetworks of murine structural covariance underlying differences in behavioral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Network-based statistics identified distinct subnetworks of murine structural covariance underlying these differences in behavioral activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by NBS analysis results presented in Figure 4 showing different subnetworks for ENR vs STD and Flat vs Down comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "3f9104d8-0bed-4273-8115-c739647a9f88",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C4",
+      "claim": "Differentiated behavioral trajectories of mice in an enriched environment are associated with differences in brain connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results reveal that differentiated behavioral trajectories of mice in an enriched environment are associated with differences in brain connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined results of behavioral tracking, structural MRI, and network analysis presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "ab9af027-d08a-4743-ad30-e7b6d47a014a",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C5",
+      "claim": "The 'non-shared environment' contributes to interindividual differences and neurobiological individuality.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'non-shared environment' (Plomin and Daniels, 2011), the elusive component of the non-genetic factor in phenotypic variation (Morgante et al., 2015), contributes to interindividual differences and neurobiological individuality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on non-shared environment.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "210f1069-50dd-4178-b2e6-c5cebe7917cf",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C6",
+      "claim": "In humans, in vivo neuroimaging studies have demonstrated a complex relationship between behavioral performance and brain structure associated with learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, in vivo neuroimaging studies have demonstrated a complex relationship between behavioral performance and brain structure associated with learning (Draganski et al., 2014, Taubert et al., 2010), personality traits (Nostro et al., 2017), and political orientation (Kanai et al., 2011), supporting the idea of a causal, yet individual relationship between brain function, structure, and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to human neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "4819d439-de95-4307-9d41-a696156bfb0a",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C7",
+      "claim": "The structural connectome partially recapitulates known functional networks and represents an individual 'fingerprint' in humans and non-human animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural connectome, which can be estimated based on the correlation between regional brain volumes (across subjects) or white matter links between specific brain regions (within subjects) partially recapitulates known functional networks and represents an individual 'fingerprint' in humans and non-human animals (Alexander-Bloch et al., 2013; Melozzi et al., 2019; Pagani et al., 2016; Yee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on structural connectomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "0ca36464-717f-47c3-8460-fd8145a51022",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C8",
+      "claim": "Environmental enrichment increases variability in activity-related behaviors (roaming entropy, RE) or total object exploration in a novel object recognition task.",
+      "claim_type": "EXPLICIT",
+      "source": "We have reported that environmental enrichment (ENR) increases variability in activity-related behaviors (roaming entropy, RE), or total object exploration in a novel object recognition task (K\u00f6rholz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "d7c68aed-92da-4f27-be01-f65f49a5410f",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C9",
+      "claim": "ENR mice showed greater variability in measures linked to brain plasticity, such as adult hippocampal neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ENR mice also showed greater variability in measures linked to brain plasticity, such as adult hippocampal neurogenesis (K\u00f6rholz et al., 2018) accompanied by distinguishing epigenetic patterns in the hippocampal dentate gyrus (Zocher et al., 2021; Zocher et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "2542afe2-71f1-4abf-8a0e-2d16f2eb3ebe",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C10",
+      "claim": "Structural magnetic resonance imaging studies of mice exposed to different enrichment paradigms have confirmed increased hippocampal volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural magnetic resonance imaging (sMRI) studies of mice exposed to different enrichment paradigms have confirmed historical post-mortem findings, such as increased hippocampal volumes (Zhang et al., 2018), and extended these to mouse brain regions involved in sensorimotor processing (Scholz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior MRI studies in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "e1aad4f4-3b44-425c-946d-f52b8d366c1a",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C11",
+      "claim": "Interindividual component of variance increased over time in enriched mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing interindividual component of variance (Figure 1B) confirmed the emergence of individual behavioral differences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B demonstrating increasing variance estimates over time blocks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "16ce07ce-f95b-43be-9c9e-4e83486b97ec",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C12",
+      "claim": "Two distinguishable patterns of roaming entropy were observed: mice with consistently high levels of RE and those with habituation and decreased RE values over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Two distinguishable patterns were observed (Figure 1C): mice with consistently high levels of RE and those with habituation and decreased RE values over time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral trajectory data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "6c368557-5fd2-40a3-8f20-b57cfda346bd",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C13",
+      "claim": "The number of doublecortin-positive cells in the dentate gyrus increased in ENR compared to standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of doublecortin (DCX)-positive cells in the dentate gyrus, a proxy measure of adult neurogenesis, increased in ENR compared to standard conditions, but did not differ between the 'flat' vs. 'down' ENR subgroups (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 1D with statistical analysis (One-way ANOVA: F(2,37) = 17.3, p < 0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "b43cd32f-8605-4692-8054-7586c41a9f7e",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C14",
+      "claim": "The number of doublecortin-positive cells did not differ between 'flat' and 'down' ENR subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of doublecortin (DCX)-positive cells in the dentate gyrus, a proxy measure of adult neurogenesis, increased in ENR compared to standard conditions, but did not differ between the 'flat' vs. 'down' ENR subgroups (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison shown in Figure 1D (Tukey post-hoc: flat vs down p = 0.46).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "f40f41cb-d643-4487-bb7c-43df628a4b1e",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C15",
+      "claim": "Individual variability in behavior positively correlated to adult hippocampal neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown (Evans, 2013; Gong et al., 2012), individual variability in behavior positively correlated to adult hippocampal neurogenesis (R2 = 0.20, p = 0.0046; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1E and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "2fcd8bcc-3a5a-44b8-8715-aabdcdd2b396",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C16",
+      "claim": "The positive correlation between end-point behavior (RE at time block 4) and immature neurons was statistically significant in the 'down' roamers subgroup.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive correlation between end-point behavior (RE at the time block 4) and immature neurons was statistically significant in the 'down' roamers subgroup (R2 = 0.40, p = 0.012), but missed conventional statistical significance in the 'flat' roamers (R2 = 0.20, p = 0.095; Figure 1F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "e873d4be-2d38-4fa6-9bf3-fe0b18d8ccb6",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C17",
+      "claim": "Total brain volumes did not differ significantly between ENR and STD mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Total brain volumes did not differ significantly (STD: 450.3 \u00b1 11.7 mm3 vs. ENR: 456.5 \u00b1 16.0 mm3; t = 1.14, df = 46; p > 0.05; q > 0.05; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison of total brain volumes shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "dff5710e-25c3-4e8c-afad-ae61903529ac",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C18",
+      "claim": "Statistically significant group differences in absolute volume were found for 12% (22/182) of mouse brain atlas regions of interest with effect sizes ranging from +2.7 in CA1 oriens to +1.15 in the molecular layer of the dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Using atlas-based segmentation (ABS), statistically significant (5% false discovery rate [FDR]) group differences in absolute volume (mm3) were found for 12% (22/182) of mouse brain atlas regions of interest (ROIs) with effect sizes (SMD) ranging from +2.7 in CA1 oriens (CA1Or) to +1.15 in the molecular layer of the dentate gyrus (Figure 2A; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by atlas-based segmentation analysis shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "ae8508f8-4aad-4849-be44-1032fd9aa7ff",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C19",
+      "claim": "Most ROIs with significant volume differences (68%; 15/22) were located in the mouse hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these ROIs (68%; 15/22) were located in the mouse hippocampus, but absolute volume increases were also observed in the infralimbic cortex (cingulate cortex area 25), olfactory nuclei, the anterior commissure, and the orbital cortex (Figure 2A; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the regional distribution of significant findings shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "cc921849-649a-4935-9112-970f6eef1dc7",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C20",
+      "claim": "Absolute volume increases were observed in the infralimbic cortex, olfactory nuclei, the anterior commissure, and the orbital cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these ROIs (68%; 15/22) were located in the mouse hippocampus, but absolute volume increases were also observed in the infralimbic cortex (cingulate cortex area 25), olfactory nuclei, the anterior commissure, and the orbital cortex (Figure 2A; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by atlas-based segmentation results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "eeb2c065-9a4e-48a4-a002-b55d32408aca",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C21",
+      "claim": "Tensor-based morphometry revealed statistically significant clusters of voxels with apparent increases in both absolute and relative volumes localized within the mouse hippocampus when comparing ENR to STD mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing the atlas-based analysis, voxel-wise assessment of volume changes using tensor-based morphometry (TBM) revealed statistically significant (family-wise error [FWE] rate p < 0.05) clusters of voxels with apparent increases in both absolute volumes (Figure 2\u2014figure supplement 2b) and relative volumes (Figure 2\u2014figure supplement 2c) localized within the mouse hippocampus when comparing ENR to STD mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TBM analysis shown in Figure 2\u2014figure supplement 2b and 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "4e1d84a3-dc7b-4011-970f-f33c86d0ead9",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C22",
+      "claim": "RE slope values correlated positively with clusters of local volume changes in the mediodorsal and parafascicular thalamic nuclei, the periaqueductal grey, medial geniculate nucleus, deep mesencephalic nuclei, gray and white matter layers of the superior colliculus, and the central nuclei of the inferior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that RE slope values correlated positively with clusters of local volume changes in the mediodorsal and parafascicular thalamic nuclei, the periaqueductal grey, medial geniculate nucleus, deep mesencephalic nuclei, gray and white matter layers of the superior colliculus, and the central nuclei of the inferior colliculus (FWE p < 0.05, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by voxel-wise correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "41629d68-2687-4933-9253-df5d596a720b",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C23",
+      "claim": "Total brain volumes did not differ between the two ENR subgroups ('down' vs. 'flat').",
+      "claim_type": "EXPLICIT",
+      "source": "Total brain volumes did not differ between the two ENR subgroups ('down': 451.7 \u00b1 11.8 mm3 vs. 'flat': 459.2 \u00b1 5.2 mm3; t = 1.24, df = 28; p > 0.05; q > 0.05; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "7485b381-499b-4101-8ea4-a0d1b6eb83dc",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C24",
+      "claim": "Voxel-wise TBM did not show statistically significant localized volume differences between Flat and Down subgroups after correction for multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Voxel-wise TBM to map localized neuroanatomical differences between Flat and Down subgroups of ENR-housed mice (Figure 2\u2014figure supplement 3) did not show statistically significant localized volume differences between the groups after a stringent correction for multiple comparisons (FWE p < 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TBM analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "48598a20-d9b5-4fd7-bfee-5fa865aa525e",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C25",
+      "claim": "Individual differences in RE behaviors are likely supported by widely distributed mouse brain circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that individual differences in RE behaviors are likely supported by widely distributed mouse brain circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the widespread correlation patterns observed in Figure 2B and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "cd8360fe-25a0-45c4-a384-1829af66f6ee",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C26",
+      "claim": "Comparing the sum of ranks of coefficient of variation between 'down' and 'flat' mice showed a highly statistically significant difference.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the sum of ranks between 'down' and 'flat' mice, we found a highly statistically significant difference (Mann\u2013Whitney U = 11,076; p < 0.0001; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "46fb384c-aa4f-4fc4-b685-6a8cfbf95ba4",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C27",
+      "claim": "The data are indicative of an increase in regional brain volume variance as a function of behavioral response to the enriched environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are indicative of an increase in regional brain volume variance as a function of behavioral response to the enriched environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the coefficient of variation analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "9739a3df-a116-42ec-b093-d69954974176",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C28",
+      "claim": "Structural covariance is defined as the correlated variation in volumes between pairs of brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural covariance is defined as the correlated variation in volumes between pairs of brain regions, which, as human neuroimaging studies suggest, reflects both structural (Gong et al., 2012) and functional brain connectivity (Segall et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "ff7f6bd6-c7f2-49c2-9267-243f8ed48f72",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C29",
+      "claim": "Structural covariance networks are conserved in the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural covariance networks are conserved in the mouse brain, providing an opportunity to explore the impact of ENR compared to standard housing on this cross-species measure of brain connectivity (Pagani et al., 2015; Yee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on mouse structural covariance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "5a493fad-0d7b-4ed5-8aff-07c41bf2e453",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C30",
+      "claim": "Correlation matrices of mouse brain structural covariance revealed a broad effect of housing that was statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation matrices of mouse brain structural covariance (Figure 3A) revealed a broad effect of housing, which was found to be statistically significant (Chi-square tests for equality of two correlation matrices; Chi-square = 17,997.7, df = 16471, p < 0.0001, where prob is the probability of observing the Chi-square under the null hypothesis) (Steiger, 1980).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chi-square statistical test comparing correlation matrices shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "d42f4bcb-e50f-4d87-bc53-fa8972f22d9b",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C31",
+      "claim": "Comparison of structural covariance matrices within the ENR group revealed distinctive effects between 'down' and 'flat' roamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, comparison of structural covariance matrices within the ENR group revealed distinctive effects between 'down' and 'flat' roamers (Chi-square = 19,997.29, df = 16,471, p < 0.0001; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chi-square statistical test comparing correlation matrices shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "b7396253-0a8e-4829-8c3e-9af61e694876",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C32",
+      "claim": "The structural covariance matrix of 'flat' roamers differed from that of STD animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural covariance matrix of 'flat' roamers (Figure 3C) differed from that of STD animals (Chi-square = 17,938.04, df = 16,471, prob <0.0001), whereas 'down' roamers (Figure 3D) were highly similar to STD group (Chi-square = 14,327.89, df = 16,471, prob <1; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chi-square statistical test comparing correlation matrices shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "76d9fe16-e023-4dfb-ad25-7e8a039809ed",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C33",
+      "claim": "The structural covariance matrix of 'down' roamers was highly similar to the STD group.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural covariance matrix of 'flat' roamers (Figure 3C) differed from that of STD animals (Chi-square = 17,938.04, df = 16,471, prob <0.0001), whereas 'down' roamers (Figure 3D) were highly similar to STD group (Chi-square = 14,327.89, df = 16,471, prob <1; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chi-square statistical test comparing correlation matrices shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "1b4cc332-9d86-462a-8618-cc2082529c73",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C34",
+      "claim": "Brain regions in the 'flat' roamers were highly correlated with each other, whereas this was not the case in 'down' roamers and STD mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, brain regions in the 'flat' roamers were highly correlated with each other, whereas this was not the case in 'down' roamers and STD mice (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on visual inspection of correlation matrices shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "7adec7aa-daca-463f-a50c-e19b5124b75d",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C35",
+      "claim": "Comparing ENR and STD mice, NBS analysis detected a single statistically significant subnetwork of increased structural covariance, comprising 23 structural connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing ENR and STD mice, NBS analysis detected a single statistically significant subnetwork of increased structural covariance, comprising 23 structural connections (t = 2.4; p < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NBS analysis results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "7f62f048-8a56-4832-94bc-b7df3cdb479c",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C36",
+      "claim": "Comparing 'flat' vs. 'down' mice in the ENR group, NBS identified a larger statistically significant subnetwork of increased structural covariance comprising 49 structural connections.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, comparing 'flat' vs. 'down' mice in the ENR group, NBS identified a larger statistically significant subnetwork of increased structural covariance comprising 49 structural connections (t = 2.4; p < 0.05; Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NBS analysis results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "729dda06-4027-4c0b-a988-e44f4b091ae1",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C37",
+      "claim": "Interindividual differences in behavioral trajectories surpassed the housing effects in terms of structural covariance networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The NBS analysis supports the conclusion that interindividual differences in behavioral trajectories (here clustered into the 'flat' vs. 'down' roamer subgroups of ENR) surpassed the housing effects, and identifies specific subnetworks of structural covariance in the mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the larger subnetwork found in Flat vs Down comparison (49 connections) compared to ENR vs STD (23 connections).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "238796f2-dd2a-49ca-936d-6c8821266669",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C38",
+      "claim": "Patterns of structural covariance across the mouse brain are highly distinct between STD- and ENR-housed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying structural covariance and NBS analysis to our individuality model, we observed patterns of structural covariance across the mouse brain that are highly distinct between STD- and ENR-housed mice, which may reflect synchronized plastic changes occurring across multiple brain regions over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the correlation matrices shown in Figure 3 and NBS results in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "8d834e5a-2bcb-4c0a-b902-795c1063019d",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C39",
+      "claim": "Within the ENR group, the structural covariance matrix for the 'down' roamers was similar to the matrix generated for standard-housed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, within the ENR group itself, the structural covariance matrix for the 'down' roamers was similar to the matrix generated for standard-housed mice (Figure 1F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by visual comparison of correlation matrices in Figure 3 and chi-square statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "74452c8f-1fa4-476c-bd0d-b2c07e9d7a77",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C40",
+      "claim": "The structural covariance matrix for 'flat' roamers suggests a much higher degree of inter-regional correlation in comparison to 'down' or STD mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural covariance matrix for those mice with a 'flat' RE suggests a much higher degree of inter-regional correlation in comparison to 'down' or STD mice, findings confirmed and extended by the NBS analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by visual inspection of correlation matrices in Figure 3 and NBS results in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "4280206f-dc9a-4116-9fe1-728a614196b0",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C41",
+      "claim": "Individual behavioral trajectories are associated with a certain degree of individualization of brain structural networks at the macroscale.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in mouse brain structural covariance in the ENR group suggests that individual behavioral trajectories (as here first approximated by RE, but in reality encompassing the full scope and complexity of behaviors; Freund et al., 2015) are associated with a certain degree of individualization of brain structural networks at the macroscale and that this largely explains differences observed between standard and ENR mice per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural covariance and NBS analyses showing distinct patterns associated with behavioral trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "215569ed-1566-48d0-8d2b-0f67b4cdd223",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C42",
+      "claim": "The behaviors reflected in RE are supported by widely distributed brain circuitry, in particular the hippocampal formation, cingulate and temporal cortices, white matter tracts and olfactory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the behaviors reflected in RE are supported by widely distributed brain circuitry, in particular the hippocampal formation, cingulate and temporal cortices, white matter tracts and olfactory areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation analysis shown in Figure 2B and NBS results in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "1e922cb3-bce7-4248-a8d8-9af51b109be8",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C43",
+      "claim": "Neuroanatomical and/or structural covariance changes within hippocampal formation, cingulate and temporal cortices, white matter tracts and olfactory areas have been previously shown to be associated with spatial memory, navigation and cognitive strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this view, neuroanatomical and/or structural covariance changes within these mouse brain circuits have been previously shown to be associated with spatial memory, navigation and cognitive strategies (Lerch et al., 2011), social behaviors (Bruce et al., 2021), and susceptibility or resilience to stress exposure (Anacker et al., 2016), all domains of mouse behavior that may contribute to the individual estimate of RE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on brain-behavior relationships.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "f05a22a9-e285-4fb9-b940-27308788b8c1",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C44",
+      "claim": "Phenotypic variation at the level of brain and behavior must arise from the non-shared component of the environmental factors in genetically identical mice in identical nominal environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The mice in our study are inbred, thus the genetic background and the 'nominal' environment are identical for all mice in the ENR group. Hence, phenotypic variation at the level of brain and behavior must arise from the non-shared component of the environmental factors ('non-shared environment').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the experimental design using inbred mice in controlled environments.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "e91ae907-14a5-48d8-9d01-98aafdab4ede",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C45",
+      "claim": "A continuum exists between RE and experience-dependent plasticity in brain structure as measured by ex vivo sMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data support a view that a continuum exists between RE and experience-dependent plasticity in brain structure (as measured by ex vivo sMRI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation between RE and brain volumes shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "220858c2-83df-4093-8359-5b0c29a12ecd",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C46",
+      "claim": "Exposure to ENR may build on initial variance in mouse brain volumes observable from early in postnatal life and amplifies these differences by providing the opportunity for the development of individual behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that exposure to ENR may build on initial variance in mouse brain volumes observable from early in postnatal life (Qiu et al., 2013) and amplifies these differences by providing the opportunity for the development of individual behavior (Freund et al., 2013; Kempermann, 2019; K\u00f6rholz et al., 2018; Zocher et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation and supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "69ac6168-2918-4bb0-b9e5-e4f0d42bf2cf",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C47",
+      "claim": "Greater activity results in greater brain plasticity and a richer connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "The data are consistent with the hypothesis that greater activity results in greater brain plasticity and, by consequence, a richer connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis consistent with the data showing more connections in flat roamers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "84d24f4e-7f3c-45d6-a205-6695a93feffc",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C48",
+      "claim": "Greater levels of RE are associated with greater positive affect and greater hippocampal\u2013striatal functional connectivity in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our RE measure has already been used in human studies, providing evidence that greater levels of RE (assessed with a smartphone app) are associated with a greater positive affect and greater hippocampal\u2013striatal functional connectivity (Heller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a human study using the RE measure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "71c74f4c-efd9-47b6-9762-29ffe4665a1b",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C49",
+      "claim": "Whole mouse brain structures are distinctively affected by the non-shared component of environmental enrichment and can be linked to stable behavioral trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Even now, however, our study demonstrates how whole mouse brain structures are distinctively affected by the non-shared component of environmental enrichment and can be linked to stable behavioral trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "9071a055-11b9-434f-ae79-8e74772635b4",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C50",
+      "claim": "Female C57BL/6JRj mice were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Female C57BL/6JRj mice from as many litters as possible were purchased at 4 weeks of age from Janvier Labs and were randomly divided into standard (STD) (n = 10) and enriched (ENR) (n = 38) housing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "5264a7c1-7a01-43d6-8886-dfacc1c86ef1",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C51",
+      "claim": "ENR mice were housed in a custom-built cage system consisting of 70 polycarbonate cages connected via transparent tunnels with RFID antennae for longitudinal tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "The shared enriched environment took place in a cage system custom-built to our specifications (PhenoSys GmbH, now marketed as 'PhenoSys ColonyRack Individuality 3.0'), consisting of 70 polycarbonate cages (1264C Type II, Tecniplast) that are connected via transparent tunnels and distributed on seven levels. With this cage system, longitudinal tracking of mice is obtained by RFID antennae, located on connecting tunnels (Kempermann et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental apparatus used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "4d53df4d-ffd2-4a62-86ab-032e3cdd3c65",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C52",
+      "claim": "For this specific experiment, ENR mice only had access to 35 polycarbonate cages in four levels with a total area of 1.37 m2.",
+      "claim_type": "EXPLICIT",
+      "source": "For this specific experiment, ENR mice only had access to 35 polycarbonate cages in four levels (total area of 1.37 m2), equipped with toys and hideouts, that were replaced and rearranged once a week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the specific experimental setup used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "0e23ab50-b76b-49d8-851d-9f6b575d40f0",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C53",
+      "claim": "STD mice were housed in two polycarbonate cages in groups of five animals per cage.",
+      "claim_type": "EXPLICIT",
+      "source": "STD mice were housed in two polycarbonate cages (36.5 \u00d7 20.7 \u00d7 14 cm; Type III, Tecniplast) in groups of five animals per cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the standard housing conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "33f26139-99ef-4e11-922c-d1e6282ecd2a",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C55",
+      "claim": "The optimal number of clusters within the enriched group was two, as determined by silhouette analysis using k-means clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal number of clusters was determined by a silhouette analysis using an unsupervised partitioning method of clustering (k-means), which measures the quality of clustering for each data point (Kaufman and Rousseeuw, 1990). All enriched mice were clustered based on mean RE values for each time period (T1, T2, T3, and T4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering analysis method used to determine subgroups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "a86966a8-84b2-4ccd-8362-9624514e731b",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C56",
+      "claim": "All animals were killed at 17 weeks of age by cardiac perfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "All animals were killed at 17 weeks of age by cardiac perfusion performed on site at the Kempermann Lab, Center for Regenerative Therapies Dresden, prior to shipping to King's College London (KCL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for tissue preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "32ae1879-aa4e-4575-93b6-2d846c104d03",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C57",
+      "claim": "A 9.4T Bruker BioSpec 94/20 horizontal small bore magnet was used for all ex vivo sMRI acquisitions.",
+      "claim_type": "EXPLICIT",
+      "source": "A 9.4T Bruker BioSpec 94/20 horizontal small bore magnet (Bruker Ltd, UK) and a quadrature volume radio-frequency coil (39-mm internal diameter, Rapid Biomedical GmbH, GER) were used for all ex vivo sMRI acquisitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MRI equipment used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "40009ff4-d999-4be4-b6d1-8f449305d67e",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C58",
+      "claim": "T2-weighted images were acquired with isotropic voxels of 100 \u00b5m3.",
+      "claim_type": "EXPLICIT",
+      "source": "T2-weighted images were acquired using a 3D fast spin-echo (FSE) sequence with the following parameters: effective echo time (TE) 30 ms, repetition time (TR) 3000 ms, \ufb01eld of view 25 \u00d7 25 \u00d7 20 mm and acquisition matrix 250 \u00d7 250 \u00d7 200 yielding isotropic voxels of 100 \u00b5m3, scan time = 5 hr and 44 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MRI acquisition parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "f432c517-2cea-44e1-89f1-2060826756c8",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C59",
+      "claim": "The DSURQE mouse brain atlas has 182 individual mouse brain structures defined.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable ABS analysis of regional brain volumes, the study-specific template was then registered to the Dorr-Steadman-Ullmann-Richards-Qiu-Egan (DSURQE) mouse brain atlas (40 \u00b5m) (https://wiki.mouseimaging.ca/display/MICePub/Mouse+Brain+Atlases). This atlas has 182 individual mouse brain structures defined (including left and right labels for most structures, giving 356 labels in total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the brain atlas used for analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "e3128891-2d45-4f0d-a04f-9ed23aadf18c",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C60",
+      "claim": "Both absolute volumes (mm3) and relative volumes were compared to assess brain scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Both absolute volumes (mm3) and relative volumes were compared to assess brain scaling. Relative volumes were calculated as a percentage of total brain volume that is ([(brain region volume)/(whole-brain volume) \u00d7 100]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used to assess regional brain volumes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "6639ea7f-76dc-4bf4-a211-34a4d59754a7",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C61",
+      "claim": "Group-level differences in either absolute or relative volumes were compared using multiple t-tests with false discovery rate correction at 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Group-level differences in either absolute or relative volumes were compared between STD and ENR mice using multiple t-tests (two-tailed, unequal variance assumed) with \u03b1 = 0.05 using R-project (v4.0). The resulting p values were subsequently corrected for multiple comparisons using the FDR at 5% (q < 0.05) using Prism software (v8.4.2; GraphPad, La Jolla, CA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used for group comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "5dcfea0d-0bc0-41a0-8d90-024e78835c94",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C62",
+      "claim": "Network-based statistics is a powerful statistical method for identifying a statistically significant cluster of connections indicating differences between groups on intermediate network scales.",
+      "claim_type": "EXPLICIT",
+      "source": "NBS is a powerful statistical method for identifying a statistically significant cluster of connections indicating differences between groups on intermediate network scales (Zalesky et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the NBS method supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "38579044-80a0-4cf3-ac73-c5834daf609a",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "claim_id": "C63",
+      "claim": "The NBS procedure was carried out with a primary threshold of t = 3.1 (which corresponds to p = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The NBS procedure was carried out for the correlation matrices with a primary threshold of t = 3.1 (which corresponds to p = 0.001). The graphic visualization in Figure 4 is at t = 2.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical threshold used for NBS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "85459fb0-3344-4490-ac08-9c7e7eaea05a",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Environmental enrichment leads to increasing interindividual behavioral variance over time, with mice clustering into two distinct behavioral trajectory patterns: 'flat' roamers with consistently high roaming entropy and 'down' roamers showing habituation with decreased roaming entropy over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 are supported by Figure 1B-C showing increasing variance estimates and distinct trajectory patterns. C55 confirms optimal cluster number of two via silhouette analysis. The behavioral stratification is methodologically sound and visually evident in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "df705859-7e42-41de-b932-649ef671568f",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Adult hippocampal neurogenesis (measured by DCX+ cells) increases with environmental enrichment but does not differ between behavioral subgroups, though correlations with behavior show subgroup-specific patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C13-C14 are statistically supported (ANOVA p<0.001, post-hoc p=0.46). However, C16 reports significance in 'down' (p=0.012) but not 'flat' (p=0.095) subgroups, yet acknowledges these correlations are not statistically different from each other (Fisher's z, p=0.27), suggesting insufficient power. The biological interpretation of subgroup-specific correlations remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "815607e5-ad7c-474d-9240-0e51dc917094",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Environmental enrichment increases regional brain volumes, particularly in hippocampal regions (68% of significant ROIs), without affecting total brain volume, as confirmed by both atlas-based segmentation and tensor-based morphometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are well-supported by complementary analytical approaches (ABS and TBM) with appropriate multiple comparison corrections (5% FDR, FWE p<0.05). Effect sizes are substantial (SMD +1.15 to +2.7). The finding replicates prior literature (C1, C10) and is consistent across absolute and relative volume measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "c3292ef6-7156-444d-81ce-4c401ba1d0b2",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Roaming entropy slope correlates positively with local volume changes in widely distributed brain regions including thalamic nuclei, periaqueductal grey, superior colliculus, and inferior colliculus, suggesting distributed circuit support for exploratory behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C22 is supported by voxel-wise correlation analysis with stringent FWE correction (p<0.05) shown in Figure 2B. The inference that RE is supported by distributed circuitry (C25, C42) is reasonable given the widespread anatomical distribution of correlations. However, correlation does not establish causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "697e5ccd-d637-4cea-966b-d6c1d89d9d67",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Total brain volumes and localized regional volumes do not differ significantly between 'flat' and 'down' behavioral subgroups within the enriched environment after correction for multiple comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C23-C24 are supported by appropriate statistical tests (t-test p>0.05 for total volume; TBM with FWE correction showing no significant differences). This negative finding is important as it suggests behavioral trajectory differences are not explained by simple volumetric changes but may involve network-level reorganization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "26d7bcb0-c536-4725-9281-76db3f56189c",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Regional brain volume variance (measured by coefficient of variation) is significantly higher in 'flat' roamers compared to 'down' roamers, indicating increased variability as a function of behavioral response to enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C26 is supported by Mann-Whitney U test (p<0.0001) comparing sum of ranks of CV across 182 ROIs (Figure 3\u2014supplement 1). The inference in C27 that variance increases with behavioral response is reasonable, though the directionality (flat>down) and biological interpretation require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "b0be2360-f46c-4162-85f5-e455786fd7e8",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Structural covariance patterns differ significantly between housing conditions and between behavioral subgroups, with 'flat' roamers showing higher inter-regional correlations than 'down' roamers or standard-housed mice, while 'down' roamers resemble standard-housed mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by chi-square tests for equality of correlation matrices (all p<0.0001 except Down vs STD with prob<1). Visual inspection (C34, C40) and statistical tests converge. However, the chi-square test for correlation matrix equality has limitations: it assumes multivariate normality and may be overly sensitive with large matrices (182\u00d7182=33,124 correlations). The biological interpretation is compelling but the statistical approach could be strengthened.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "69e16819-44d1-44a3-9fd7-f34d26ee9cac",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Network-based statistics identified distinct subnetworks of structural covariance, with behavioral trajectory differences (flat vs down: 49 connections) showing larger effects than housing condition differences (ENR vs STD: 23 connections).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by NBS analysis (both p<0.05, t=2.4) shown in Figure 4. The inference that behavioral trajectories surpass housing effects (C37) is reasonable based on network size. However, the manuscript notes visualization is at t=2.4 while analysis used t=3.1 (C63), creating some ambiguity. The NBS approach is appropriate but threshold selection appears post-hoc.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "c63a1443-9daf-4a2e-8ebf-3e4a2f2b5e85",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Differentiated behavioral trajectories in enriched environments are associated with individualization of brain structural networks at the macroscale, demonstrating that individual behavior shapes whole-brain connectivity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (C4, C41, C49) integrates findings from behavioral tracking, structural covariance, and NBS analyses. The association between behavioral trajectories and structural networks is well-demonstrated. However, causality cannot be established from this cross-sectional ex vivo design\u2014pre-existing differences vs. experience-dependent changes remain unresolved, as acknowledged in C45-C46.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "e3b34c2b-e17f-4473-aecc-2983e33fc830",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In genetically identical mice housed in identical nominal environments, phenotypic variation in brain and behavior must arise from the non-shared component of environmental factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C44 is a logical inference based on the experimental design using inbred C57BL/6JRj mice (C50) in controlled environments. C5 provides theoretical framework from prior literature. The reasoning is sound: with genetics and nominal environment controlled, remaining variance must be non-shared environmental factors. However, the study does not directly measure or manipulate non-shared environment components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "df1a0d4f-968a-4f07-9cc6-dc1b742cf39e",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A continuum exists between roaming entropy and experience-dependent brain plasticity, potentially building on initial variance and amplifying through individual behavioral development, with greater activity leading to richer connectomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C45 is an inference from correlation data (Figure 2B). C46 is explicitly labeled as speculation with supporting citations. C47 is stated as a hypothesis consistent with data. While the correlational evidence supports an association, the causal mechanisms and temporal dynamics remain speculative. Longitudinal in vivo imaging would be required to test these hypotheses definitively.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used female C57BL/6JRj mice in custom-built enriched housing with RFID tracking or standard housing, with ex vivo MRI at 9.4T yielding 100 \u03bcm\u00b3 isotropic resolution after perfusion at 17 weeks of age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims (C50-C53, C56-C58) are clearly stated and internally consistent. The experimental design is appropriate. However, the authors acknowledge (in Methods discussion) that 100 \u03bcm\u00b3 resolution is at the lower end for ex vivo anatomy compared to studies using contrast enhancement reaching 30-40 \u03bcm\u00b3, which may limit detection of subtle structural differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "0cd4376d-b7c4-4624-bc1e-fdad26598d05",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Regional brain volumes were quantified using the DSURQE atlas (182 structures) with both absolute and relative volume measures, compared using multiple t-tests with 5% FDR correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 describe standard neuroimaging analysis methods appropriately. The use of both absolute and relative volumes addresses brain scaling concerns. FDR correction at 5% is appropriate for multiple comparisons. The methods are clearly described and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "b6ee4855-9cc3-4acf-a76d-eb674f2c14e3",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Structural covariance, defined as correlated variation in regional volumes, is conserved in mice and was analyzed using network-based statistics with primary threshold t=3.1 (p=0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C28-C29 provide appropriate definitions and citations. C62 correctly describes NBS methodology. However, C63 reveals a discrepancy: analysis used t=3.1 but Figure 4 visualization uses t=2.4, which is not fully explained. This raises questions about threshold selection and sensitivity of results to parameter choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    },
+    {
+      "id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396",
+      "content_id": "892898a8-14f9-4c9e-97af-1fae98045892",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior literature establishes that brain structure relates to behavior in humans, structural covariance represents individual fingerprints, environmental enrichment increases behavioral variability and neurogenesis in mice, and roaming entropy correlates with positive affect in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C6-C10, C43, C48) appropriately cite prior literature to establish context. The citations appear relevant and accurate. C48 is particularly important as it validates the RE measure in humans, strengthening translational relevance. These background claims appropriately frame the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:20:58.947941Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e1aad4f4-3b44-425c-946d-f52b8d366c1a",
+      "result_id": "85459fb0-3344-4490-ac08-9c7e7eaea05a"
+    },
+    {
+      "claim_id": "16ce07ce-f95b-43be-9c9e-4e83486b97ec",
+      "result_id": "85459fb0-3344-4490-ac08-9c7e7eaea05a"
+    },
+    {
+      "claim_id": "33f26139-99ef-4e11-922c-d1e6282ecd2a",
+      "result_id": "85459fb0-3344-4490-ac08-9c7e7eaea05a"
+    },
+    {
+      "claim_id": "6c368557-5fd2-40a3-8f20-b57cfda346bd",
+      "result_id": "df705859-7e42-41de-b932-649ef671568f"
+    },
+    {
+      "claim_id": "b43cd32f-8605-4692-8054-7586c41a9f7e",
+      "result_id": "df705859-7e42-41de-b932-649ef671568f"
+    },
+    {
+      "claim_id": "f40f41cb-d643-4487-bb7c-43df628a4b1e",
+      "result_id": "df705859-7e42-41de-b932-649ef671568f"
+    },
+    {
+      "claim_id": "2fcd8bcc-3a5a-44b8-8715-aabdcdd2b396",
+      "result_id": "df705859-7e42-41de-b932-649ef671568f"
+    },
+    {
+      "claim_id": "4ea49516-061b-4361-bac4-5187245959eb",
+      "result_id": "815607e5-ad7c-474d-9240-0e51dc917094"
+    },
+    {
+      "claim_id": "e873d4be-2d38-4fa6-9bf3-fe0b18d8ccb6",
+      "result_id": "815607e5-ad7c-474d-9240-0e51dc917094"
+    },
+    {
+      "claim_id": "dff5710e-25c3-4e8c-afad-ae61903529ac",
+      "result_id": "815607e5-ad7c-474d-9240-0e51dc917094"
+    },
+    {
+      "claim_id": "ae8508f8-4aad-4849-be44-1032fd9aa7ff",
+      "result_id": "815607e5-ad7c-474d-9240-0e51dc917094"
+    },
+    {
+      "claim_id": "cc921849-649a-4935-9112-970f6eef1dc7",
+      "result_id": "815607e5-ad7c-474d-9240-0e51dc917094"
+    },
+    {
+      "claim_id": "eeb2c065-9a4e-48a4-a002-b55d32408aca",
+      "result_id": "815607e5-ad7c-474d-9240-0e51dc917094"
+    },
+    {
+      "claim_id": "4e1d84a3-dc7b-4011-970f-f33c86d0ead9",
+      "result_id": "c3292ef6-7156-444d-81ce-4c401ba1d0b2"
+    },
+    {
+      "claim_id": "48598a20-d9b5-4fd7-bfee-5fa865aa525e",
+      "result_id": "c3292ef6-7156-444d-81ce-4c401ba1d0b2"
+    },
+    {
+      "claim_id": "215569ed-1566-48d0-8d2b-0f67b4cdd223",
+      "result_id": "c3292ef6-7156-444d-81ce-4c401ba1d0b2"
+    },
+    {
+      "claim_id": "41629d68-2687-4933-9253-df5d596a720b",
+      "result_id": "697e5ccd-d637-4cea-966b-d6c1d89d9d67"
+    },
+    {
+      "claim_id": "7485b381-499b-4101-8ea4-a0d1b6eb83dc",
+      "result_id": "697e5ccd-d637-4cea-966b-d6c1d89d9d67"
+    },
+    {
+      "claim_id": "cd8360fe-25a0-45c4-a384-1829af66f6ee",
+      "result_id": "26d7bcb0-c536-4725-9281-76db3f56189c"
+    },
+    {
+      "claim_id": "46fb384c-aa4f-4fc4-b685-6a8cfbf95ba4",
+      "result_id": "26d7bcb0-c536-4725-9281-76db3f56189c"
+    },
+    {
+      "claim_id": "3dd992ce-502a-4519-8565-467920084f9d",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "5a493fad-0d7b-4ed5-8aff-07c41bf2e453",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "d42f4bcb-e50f-4d87-bc53-fa8972f22d9b",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "b7396253-0a8e-4829-8c3e-9af61e694876",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "76d9fe16-e023-4dfb-ad25-7e8a039809ed",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "1b4cc332-9d86-462a-8618-cc2082529c73",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "238796f2-dd2a-49ca-936d-6c8821266669",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "8d834e5a-2bcb-4c0a-b902-795c1063019d",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "74452c8f-1fa4-476c-bd0d-b2c07e9d7a77",
+      "result_id": "b0be2360-f46c-4162-85f5-e455786fd7e8"
+    },
+    {
+      "claim_id": "31b71e5e-915e-460b-91aa-e575c14cb9df",
+      "result_id": "69e16819-44d1-44a3-9fd7-f34d26ee9cac"
+    },
+    {
+      "claim_id": "7adec7aa-daca-463f-a50c-e19b5124b75d",
+      "result_id": "69e16819-44d1-44a3-9fd7-f34d26ee9cac"
+    },
+    {
+      "claim_id": "7f62f048-8a56-4832-94bc-b7df3cdb479c",
+      "result_id": "69e16819-44d1-44a3-9fd7-f34d26ee9cac"
+    },
+    {
+      "claim_id": "729dda06-4027-4c0b-a988-e44f4b091ae1",
+      "result_id": "69e16819-44d1-44a3-9fd7-f34d26ee9cac"
+    },
+    {
+      "claim_id": "3f9104d8-0bed-4273-8115-c739647a9f88",
+      "result_id": "c63a1443-9daf-4a2e-8ebf-3e4a2f2b5e85"
+    },
+    {
+      "claim_id": "4280206f-dc9a-4116-9fe1-728a614196b0",
+      "result_id": "c63a1443-9daf-4a2e-8ebf-3e4a2f2b5e85"
+    },
+    {
+      "claim_id": "71c74f4c-efd9-47b6-9762-29ffe4665a1b",
+      "result_id": "c63a1443-9daf-4a2e-8ebf-3e4a2f2b5e85"
+    },
+    {
+      "claim_id": "f05a22a9-e285-4fb9-b940-27308788b8c1",
+      "result_id": "e3b34c2b-e17f-4473-aecc-2983e33fc830"
+    },
+    {
+      "claim_id": "ab9af027-d08a-4743-ad30-e7b6d47a014a",
+      "result_id": "e3b34c2b-e17f-4473-aecc-2983e33fc830"
+    },
+    {
+      "claim_id": "e91ae907-14a5-48d8-9d01-98aafdab4ede",
+      "result_id": "df1a0d4f-968a-4f07-9cc6-dc1b742cf39e"
+    },
+    {
+      "claim_id": "220858c2-83df-4093-8359-5b0c29a12ecd",
+      "result_id": "df1a0d4f-968a-4f07-9cc6-dc1b742cf39e"
+    },
+    {
+      "claim_id": "69ac6168-2918-4bb0-b9e5-e4f0d42bf2cf",
+      "result_id": "df1a0d4f-968a-4f07-9cc6-dc1b742cf39e"
+    },
+    {
+      "claim_id": "9071a055-11b9-434f-ae79-8e74772635b4",
+      "result_id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87"
+    },
+    {
+      "claim_id": "5264a7c1-7a01-43d6-8886-dfacc1c86ef1",
+      "result_id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87"
+    },
+    {
+      "claim_id": "4d53df4d-ffd2-4a62-86ab-032e3cdd3c65",
+      "result_id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87"
+    },
+    {
+      "claim_id": "0e23ab50-b76b-49d8-851d-9f6b575d40f0",
+      "result_id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87"
+    },
+    {
+      "claim_id": "a86966a8-84b2-4ccd-8362-9624514e731b",
+      "result_id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87"
+    },
+    {
+      "claim_id": "32ae1879-aa4e-4575-93b6-2d846c104d03",
+      "result_id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87"
+    },
+    {
+      "claim_id": "40009ff4-d999-4be4-b6d1-8f449305d67e",
+      "result_id": "175d2ff1-0ff9-4e6a-83bd-e25117a61b87"
+    },
+    {
+      "claim_id": "f432c517-2cea-44e1-89f1-2060826756c8",
+      "result_id": "0cd4376d-b7c4-4624-bc1e-fdad26598d05"
+    },
+    {
+      "claim_id": "e3128891-2d45-4f0d-a04f-9ed23aadf18c",
+      "result_id": "0cd4376d-b7c4-4624-bc1e-fdad26598d05"
+    },
+    {
+      "claim_id": "6639ea7f-76dc-4bf4-a211-34a4d59754a7",
+      "result_id": "0cd4376d-b7c4-4624-bc1e-fdad26598d05"
+    },
+    {
+      "claim_id": "9739a3df-a116-42ec-b093-d69954974176",
+      "result_id": "b6ee4855-9cc3-4acf-a76d-eb674f2c14e3"
+    },
+    {
+      "claim_id": "ff7f6bd6-c7f2-49c2-9267-243f8ed48f72",
+      "result_id": "b6ee4855-9cc3-4acf-a76d-eb674f2c14e3"
+    },
+    {
+      "claim_id": "5dcfea0d-0bc0-41a0-8d90-024e78835c94",
+      "result_id": "b6ee4855-9cc3-4acf-a76d-eb674f2c14e3"
+    },
+    {
+      "claim_id": "38579044-80a0-4cf3-ac73-c5834daf609a",
+      "result_id": "b6ee4855-9cc3-4acf-a76d-eb674f2c14e3"
+    },
+    {
+      "claim_id": "210f1069-50dd-4178-b2e6-c5cebe7917cf",
+      "result_id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396"
+    },
+    {
+      "claim_id": "4819d439-de95-4307-9d41-a696156bfb0a",
+      "result_id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396"
+    },
+    {
+      "claim_id": "0ca36464-717f-47c3-8460-fd8145a51022",
+      "result_id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396"
+    },
+    {
+      "claim_id": "d7c68aed-92da-4f27-be01-f65f49a5410f",
+      "result_id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396"
+    },
+    {
+      "claim_id": "2542afe2-71f1-4abf-8a0e-2d16f2eb3ebe",
+      "result_id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396"
+    },
+    {
+      "claim_id": "1e922cb3-bce7-4248-a8d8-9af51b109be8",
+      "result_id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396"
+    },
+    {
+      "claim_id": "84d24f4e-7f3c-45d6-a205-6695a93feffc",
+      "result_id": "32e90bba-b35d-43d6-9e7c-6d6e031f3396"
+    }
+  ],
+  "comparisons": []
+}

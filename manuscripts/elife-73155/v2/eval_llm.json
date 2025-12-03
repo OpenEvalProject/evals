@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "In primary motor cortex (M1), the correlation between LFPs and latent dynamics is frequency-dependent, with strong correlations in low (0.3-0.6 median) and high frequency bands, but near-zero correlations in mid-range bands (8-50 Hz). This relationship is stable across sessions and significantly exceeds surrogate controls (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide quantitative evidence from multiple sessions and animals showing the V-shaped correlation profile. The surrogate control analysis (C53-C55) using tensor maximum entropy demonstrates this is not due to spectral similarity alone. Multiple supplementary analyses confirm robustness across different manifold dimensionalities and preprocessing parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The LFP-latent dynamics correlation profile in M1 remains remarkably stable between movement planning and execution (R\u00b2=0.87, p<0.001), but decreases substantially during inter-trial intervals when the circuit is less engaged. This indicates the relationship reflects underlying physiological processes rather than movement kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide strong quantitative evidence (R\u00b2=0.87) for stability across behavioral epochs. The decrease during inter-trial intervals (C73) when neurons fire less and become less correlated (C71-C72) provides critical validation that the relationship depends on active circuit engagement. The interpretation (C74-C75) is well-supported by the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In dorsal premotor cortex (PMd), LFP-latent dynamics correlations show a similar frequency-dependent pattern to M1 but with a notable strong correlation at 12-25 Hz (present in 10 of 12 datasets) that is absent in M1. The correlation profile remains stable between planning and execution (R\u00b2=0.79, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 document the PMd-specific pattern with quantitative evidence. The 12-25 Hz correlation distinguishes PMd from M1 despite similar power spectra (C80), indicating region-specific circuit properties. Stability across epochs (C81) parallels M1 findings. The weaker decrease during inter-trial periods (C82) compared to M1 is noted but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In somatosensory area 2, both low and high frequency LFP bands strongly correlate with latent dynamics (p<0.001), with a strong 12-25 Hz correlation similar to PMd but absent in M1. However, unlike M1, the strength of LFP-latent dynamics correlation does not predict movement decoding accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 provide quantitative evidence for area 2's correlation pattern. The dramatic decrease during inter-trial periods (C92) validates circuit engagement dependence. Claims C94-C95 document the dissociation between correlation strength and decoding accuracy, distinguishing area 2 from M1. This represents robust region-specific findings across multiple animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "In M1, the strength of LFP-latent dynamics correlation for each frequency band strongly predicts that band's ability to decode movement kinematics (R\u00b2=0.78, p<0.001), with LMP and 200-400 Hz bands nearly matching latent dynamics decoding accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 provides strong quantitative evidence for the correlation-decoding relationship. Claims C63 and C65 show specific bands perform comparably to latent dynamics with consistent predictions. However, this relationship is M1-specific and does not hold for PMd (C87-C88) or area 2 (C95), limiting generalizability but supporting region-specific interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In PMd, high-frequency LFP bands accurately predict upcoming reach direction nearly as well as latent dynamics, but the 12-25 Hz band shows barely above-chance classification accuracy despite being among the most correlated bands with latent dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 document the frequency-dependent classification performance. The dissociation between correlation strength and behavioral prediction for the 12-25 Hz band (C87-C88) is a key unexpected finding. This suggests the 12-25 Hz activity may reflect cognitive processes beyond movement parameters, though the specific interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "LFP-latent dynamics correlations cannot be predicted from single neuron activity: within-electrode LFP-single neuron correlations are statistically indistinguishable from across-electrode correlations (p\u22650.1 for most comparisons) and are much weaker than LFP-latent dynamics correlations (slope \u03b2=0.15, R\u00b2=0.54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 provide strong statistical evidence that the relationship requires population-level analysis. The low slope (\u03b2=0.15) in C101 indicates even strong LFP-latent dynamics correlations correspond to weak single-neuron correlations. Control analyses with denoised firing rates (C102) and multi-units (C103) confirm this is not due to noise or aggregation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The frequency-dependent LFP-latent dynamics correlation profiles are robust to methodological choices, remaining consistent across different manifold dimensionalities, when using multi-units instead of single neurons, across different frequency band definitions, and when using latent LFP signals instead of individual channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 document extensive control analyses demonstrating the findings are not artifacts of specific analytical choices. These controls strengthen confidence in the main results by showing they persist across reasonable parameter variations. The consistency across latent LFP signals (C60) is particularly important for validating the population-level interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Surrogate neural firing rates generated using tensor maximum entropy (TME) that preserve cross-neuron covariance but have different temporal dynamics show significantly lower LFP correlations (median \u22640.1, p<0.001) than actual data, demonstrating the LFP-latent dynamics relationship depends on temporal structure beyond spectral similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe a rigorous control using TME to generate surrogate data with matched spectral properties but different dynamics. The large difference in correlations (actual: 0.3-0.6 vs surrogate: \u22640.1) with strong statistical significance provides compelling evidence that the relationship is not trivial. This control is critical for validating the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Four monkeys performed an instructed delay center-out reaching task while neural spiking and LFPs were recorded from 96-channel arrays in M1, PMd, and/or area 2. Latent dynamics were computed using PCA with region-specific dimensionalities (M1: 10, PMd: 15, area 2: 8), and LFP power was calculated in eight standard frequency bands plus LMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C48 describe standard experimental and analytical methods that are well-established in the field. The task design, recording methods, spike sorting, PCA dimensionality reduction, and LFP processing are all conventional approaches. The choice of manifold dimensionalities (C46) is justified by citations to previous work, though some arbitrariness remains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C18"
+    ],
+    "result": "The study is motivated by established knowledge that neural population activity is well-described by low-dimensional latent dynamics constrained by circuit connectivity, and that LFPs result from correlated synaptic currents across thousands of neurons, suggesting both signals should be fundamentally related through shared circuit biophysics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C7, C9-C11 cite extensive prior literature establishing the biophysical basis for both latent dynamics and LFPs. The inference that they should be related (C2, C15, C18) is logical given shared dependence on circuit properties. However, these are background claims rather than novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "The study tests four hypotheses: (1) LFP-latent dynamics relationships should be robust due to shared circuit biophysics, (2) frequency-dependent due to band-specific functional correlates, (3) stable across behavioral epochs while circuit biophysics remain unchanged, and (4) region-specific due to differences in cortical architecture and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C23 state the study's hypotheses, which are well-motivated by prior knowledge (C22) and biophysical reasoning. All four hypotheses are subsequently tested and supported by the experimental results. These represent the conceptual framework guiding the investigation rather than results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C109",
+      "C110",
+      "C145",
+      "C146"
+    ],
+    "result": "The study concludes that LFPs relate to latent dynamics in a stable, region-specific, and frequency-dependent manner, with LFPs fundamentally related to shared population activity patterns rather than individual neuron activity, and this relationship remaining stable within regions across behavioral processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C32, C109-C110, C145-C146) represent summary conclusions well-supported by the collective evidence from M1, PMd, and area 2 across multiple analyses. The conclusion that LFPs reflect population-level rather than single-neuron activity (C145) is strongly supported by the control analyses. These are integrative conclusions rather than individual results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C138",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "An unexpected finding is that the 12-25 Hz band shows strong LFP-latent dynamics correlations in PMd and area 2 but poor movement parameter prediction across all three regions, potentially reflecting attention or task structure rather than movement-related activity, possibly driven by projections from higher cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 and C138 document the empirical dissociation between correlation and behavioral prediction for 12-25 Hz. However, the interpretations (C141-C144) are speculative, supported only by citations to studies in other contexts. The hypothesis about projections from higher areas (C142-C144) lacks direct evidence. This represents an intriguing observation requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The V-shaped LFP-latent dynamics correlation profiles may have dual origins: low-frequency correlations dominated by correlated synaptic inputs driving population dynamics, and high-frequency correlations reflecting both synaptic inputs and local spiking, with multi-unit activity at 100-400 Hz showing intermediate correlation strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C131 present a biophysically motivated interpretation of the correlation profiles, supported by citations to LFP generation mechanisms. Claim C132 provides some supporting evidence from multi-unit correlations. However, this remains a speculative interpretation without direct experimental validation of the proposed mechanisms. The model is plausible but requires additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The findings are expected to generalize beyond sensorimotor cortex to other brain regions exhibiting low-dimensional latent dynamics, including during cognitive tasks, and offer opportunities to integrate studies using LFPs or population recordings, including clinical field potential recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34 and C147 cite evidence for latent dynamics in other brain regions, making generalization plausible. However, claims C35, C148-C149 are speculative about future applications without direct supporting evidence. The speculation is reasonable given the biophysical basis of the findings, but remains untested. These represent anticipated implications rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The less marked decrease in PMd LFP-latent dynamics correlations during inter-trial periods compared to M1 may indicate PMd retains task-related activity during these intervals, similar to prefrontal cortex, potentially reflecting probability encoding or reward signals that persist between trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 documents the empirical observation of weaker inter-trial decrease in PMd. Claims C121-C123 offer a speculative interpretation based on citations to PFC studies and known PMd functions (C122). However, this interpretation lacks direct evidence from the current data. The observation is interesting but the mechanistic explanation requires validation.",
+    "result_type": "MINOR"
+  }
+]

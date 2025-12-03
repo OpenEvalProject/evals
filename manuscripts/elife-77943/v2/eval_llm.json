@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study cohort consisted of 108 participants with initially asymptomatic to moderate COVID-19, with a median age of 37 years, 57% male, 62% Latinx ethnicity, 6.7% asymptomatic at baseline, and a median symptom duration of 5 days prior to randomization among symptomatic individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide comprehensive demographic and clinical baseline characteristics of the study cohort. These are directly stated measurements with appropriate references to supplementary data and the primary trial publication (Jagannathan et al., 2021), providing well-documented baseline data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The median duration of viral shedding was 7 days and symptoms was 8 days post-enrollment, with no significant difference between Peginterferon lambda and placebo treatment arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 report primary clinical outcomes from the trial with citation to the primary publication. These measurements are clearly stated and represent the main clinical endpoints of the original trial, providing essential context for the current multi-omics analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Transcriptomic and proteomic profiles correlate with time since symptom onset and disease progression. PC1 of transcriptomic data and PC2 of proteomic data showed strong associations with time since symptom onset, and S protein-binding IgG levels positively correlated with time since symptom onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe PCA results showing temporal associations between immune profiles and disease progression. The correlations are directly stated with reference to figures (2A-H), and the interpretation that transcriptomic profiles capture immune response progression (C15) is reasonably supported by the observed associations with both time and IgG titer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Peginterferon lambda treatment had no substantial effect on immune responses in COVID-19 outpatients, with no significant differences in transcriptomic profiles, blood transcription modules, T cell responses, or antibody responses between treatment arms, except for two plasma proteins (HSD1B1 and LAMP3) that were not associated with patient outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 and C104-C107 collectively demonstrate the lack of treatment effect through multiple lines of evidence: PCA showing similar profiles (C18), statistical testing of individual markers (C19-C20), and immunological outcomes (C21-C22). The two proteins affected by treatment (C20) were shown not to associate with outcomes (C107), strengthening the conclusion of no substantial effect (C23, C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Trajectory analysis revealed sequential activation of immune modules within the first 15 days of symptom onset, with four distinct temporal clusters: Cluster 1 (IFN-related, peaked at symptom onset), Cluster 2 (IFN-\u03b3 and T cell activation, peaked 1-5 days), Cluster 3 (B cells, peaked 10-14 days), and Cluster 4 (antibody production, monotonically increasing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 describe a comprehensive trajectory analysis using quadratic regression (FDR <0.05) with clear temporal patterns. The clustering analysis identified four biologically coherent groups with distinct kinetics, and the sequential activation pattern (C34) is well-supported by the individual cluster descriptions (C27-C33) with appropriate citations to literature supporting the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The immune trajectories were similar between treatment arms, and changes in immune modules were driven by cell activation rather than changes in major cell type composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 provide mechanistic insight into the trajectory analysis. The similarity between treatment arms (C35) supports the lack of treatment effect. The finding that major cell type proportions did not change significantly (C37) while immune modules did, supports the interpretation that activation rather than composition drives the observed trajectories (C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Eight patients (7.4%) experienced disease progression with a median time of 2 days. Early innate immune activation, including type I IFN response, RIG-I signaling, and IFN-induced proteins (CXCL10, MCP-1, MCP-2, CXCL11), was significantly associated with disease progression, along with expected associations of lower lymphocyte and higher neutrophil percentages with severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 identify disease progression outcomes and associated immune signatures. The positive controls (C41-C42) validate the analysis approach. The regression analysis (FDR <0.05) identified 4 modules and 25 proteins (C43), with significant enrichment of Cluster 1 markers (C44, p<0.001). The conclusion about innate immune activation (C45) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "38 plasma proteins were significantly associated with oropharyngeal viral load, with higher levels of RIG-I, CCL20, CCL25, KRT19, and AREG inversely correlated with viral load, while CLEC4C and TRAIL were positively associated with viral load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 report associations between plasma proteins and viral load from regression analysis. The inverse associations with RIG-I and other proteins (C47-C49) are supported by citations to literature showing these proteins are upregulated in COVID-19. The positive associations with CLEC4C and TRAIL (C50) provide contrasting patterns that add biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "86 plasma proteins were associated with T cell responses at day 28, and 83 and 55 proteins with IgG levels at day 28 and month 7, respectively. RIG-I, CXCL11, KRT19, and AREG were associated with both T cell and antibody responses. Notably, plasma RIG-I levels were significantly associated with all examined clinical, virological, and immunological outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 identify extensive associations between early plasma proteins and later immunological outcomes. The overlap analysis (C55) showing 20 proteins associated with 3/4 outcomes demonstrates consistency. The finding that RIG-I associates with all outcomes (C56) is particularly strong and well-documented across multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Plasma RIG-I levels were only modestly correlated with RIG-I mRNA expression (r=0.23, p=0.004) but strongly correlated with intracellular proteins including DFFA (an apoptosis-related protein), suggesting plasma RIG-I may reflect both increased expression and cell death. Plasma RIG-I levels were not associated with time since symptom onset, suggesting potential as a stable biomarker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 provide mechanistic insight into plasma RIG-I. The modest correlation with mRNA (C57) but strong correlation with intracellular proteins (C58, C60) supports the dual mechanism hypothesis (C61). The lack of temporal association (C62) supports the biomarker potential (C63), though C63 appropriately uses cautious language ('might serve') given this is correlative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The immune response after the first dose of BNT162b2 vaccination largely mirrors the trajectory after SARS-CoV-2 infection, with early markers (IFN\u03b3, MCP1, CXCL10, CXCL11) upregulated within 7 days and late markers (SLAMF1, TNFRSF9, CCL3, CCL4) upregulated at 21 days. The second dose showed rapid upregulation of both early and late markers, but notably lacked neutrophil-associated proteins (TRAIL, CXCL1, CXCL6) that were present in infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 compare infection and vaccination responses using published vaccine data. The temporal parallels (C64-C66) are well-documented with figure references. The distinct second dose response (C67) and absence of neutrophil markers (C68) are clearly stated. The interpretation about neutrophil response (C72) is appropriately supported by literature citations (C69-C71) about these proteins' functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Associations between plasma proteins and immunological outcomes were largely consistent between COVID-19 infection and BNT162b2 vaccination datasets, with proteins associated with T cell responses (CXCL9, CXCL10) and antibody responses (IFN-\u03b3, MCP1, IL10, PDL1, CXCL10, ADA, CXCL11) shared between infection and vaccination, suggesting these biomarkers may be useful correlates of protective immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 demonstrate consistency of biomarker associations across infection and vaccination. The shared associations (C74-C75) are clearly stated with specific proteins listed. The conclusion about biomarker utility (C76) is appropriately cautious ('may be useful') and logically follows from the shared associations, though it remains speculative without prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Machine learning models using 2-7 plasma protein markers achieved cross-validation AUCs of 0.87 (disease progression), 0.78 (viral load), 0.72 (day 28 T cells), 0.81 (day 28 IgG), and 0.77 (month 7 IgG). Protein markers substantially improved prediction of disease progression, IgG levels, and viral load compared to demographic/comorbidity data alone, but not for T cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 report machine learning model performance using leave-one-out cross-validation. The AUC values are clearly stated (C77-C81) and the comparison to baseline models (C82-C85) demonstrates added value for most outcomes. The lack of improvement for T cell prediction (C85) is honestly reported, adding credibility to the positive findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Machine learning models developed from the lambda dataset accurately predicted outcomes in two independent validation cohorts: the favipiravir dataset (AUC 0.90 for disease progression, 0.82 for T cells, 0.76 for IgG) and the Patel et al. dataset (AUC 0.85 for disease severity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 demonstrate external validation in independent datasets, which is critical for establishing generalizability. The favipiravir validation (C86-C88) shows strong performance across multiple outcomes, and the Patel validation (C89) provides additional independent confirmation. This external validation substantially strengthens the clinical utility claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Early transcriptomic signatures of type I IFN and RIG-I signaling, along with elevated CXCL10 and CXCL11, were associated with disease progression. These findings are consistent with some prior studies but contrast with others showing defective IFN in severe disease, potentially due to differences in sampling timing (outpatients before progression vs. hospitalized patients), suggesting a complex, non-monotonic relationship between IFN response and disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 contextualize the findings within existing literature. The associations (C90-C91) are clearly stated. The acknowledgment of conflicting literature (C92-C93) and proposed explanation based on timing (C94) demonstrate scientific rigor. The interpretation of a complex relationship (C95) is appropriately cautious and supported by the evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "RIG-I plays an important role in sensing SARS-CoV-2 RNA and inhibiting viral replication independent of downstream MAVS induction, and the inverse association between plasma RIG-I levels and viral load in this study is consistent with RIG-I restricting early virus replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 integrate recent mechanistic literature (Yamada et al., 2021) with the current findings. The mechanistic details (C96-C98) are appropriately cited, and the connection to the current data (C99) is logically sound, though the interpretation remains correlative rather than mechanistic proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Higher expression of CCR2 ligands (MCP1, MCP2, MCP3) was associated with disease progression, consistent with prior literature showing MCP3 elevation in severe disease and CCR2 association with severe COVID-19. However, these ligands were also associated with positive outcomes (reduced viral load, increased T cells and antibodies), suggesting CCR2 signaling plays a complex role\u2014essential for effective immunity but potentially harmful when overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 synthesize current findings with prior literature to propose a nuanced interpretation. The associations with both negative (progression) and positive (viral control, immunity) outcomes create an apparent paradox that is resolved by the interpretation of dose-dependent effects (C103). This is well-supported by murine literature (C102) and appropriately acknowledges complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Possible explanations for the lack of Peginterferon lambda effect include insufficient dosing to achieve therapeutic levels in upper respiratory epithelia, late administration (median 5 days symptoms, 40% already IgG positive), though sensitivity analysis in seronegative individuals also showed no treatment effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide thoughtful discussion of potential reasons for negative findings. The dosing hypothesis (C108) is speculative but reasonable. The timing concern (C109-C110) is data-supported, but the sensitivity analysis (C111) argues against this explanation, demonstrating scientific rigor in considering and testing alternative hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The proteomic response to BNT162b2 vaccination mirrors the response to SARS-CoV-2 infection in many ways, with shared associations between early protein markers and protective immunity, suggesting plasma biomarkers might be useful for identifying individuals at risk of reinfection or breakthrough infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 synthesize the comparative analysis between infection and vaccination. The established knowledge (C112-C116) provides context. The similarity in proteomic responses (C117-C118) is well-documented. The speculation about biomarker utility (C119) is appropriately cautious and logically follows from the shared associations, though prospective validation would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Study limitations include: lack of causal relationships (only associations), measurement limited to first 2 weeks post-symptom onset, trajectory analysis based on population-level data with only two timepoints per patient, enrollment prior to Delta/Omicron variants, and use of median cutoffs for machine learning rather than clinically relevant thresholds of protective immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 provide honest acknowledgment of study limitations. These are appropriately self-critical and identify genuine constraints on interpretation (causality, temporal coverage, sampling frequency, variant generalizability, threshold selection). This transparency strengthens confidence in the reported positive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Given the limited supply of effective COVID-19 therapeutics (monoclonal antibodies, molnupiravir, nirmatrelvir/ritonavir), measurement of plasma proteins at diagnosis could help identify patients who would most benefit from therapeutic interventions, and the models could potentially predict immune memory variation following infection and vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C130 provide clinical context (established knowledge). Claims C131-C132 propose clinical applications that are logical extensions of the findings but remain speculative. While the predictive models showed good performance in validation cohorts, prospective clinical utility studies would be needed to confirm these applications. The language is appropriately cautious ('could be', 'potentially').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "In the favipiravir validation cohort, 7 of 54 participants (13%) experienced disease progression with a median time of 4 days, and the median symptom duration prior to randomization was 5 days, similar to the lambda trial cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 describe the validation cohort characteristics. These are directly stated measurements that establish the similarity between the training and validation cohorts, which is important for interpreting the validation results. The comparable baseline characteristics strengthen the validation findings.",
+    "result_type": "MINOR"
+  }
+]

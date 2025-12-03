@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "Pharmacogenomic analysis reveals that fucosylation gene expression, particularly FUT8, correlates with resistance to targeted therapies across multiple cancer types. Cell lines with mutations at GDP-Fuc binding sites show higher drug sensitivity, and cancer types with higher FUT methylation are more sensitive to targeted therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C16, and C18 are supported by comprehensive pharmacogenomics data from GDSC and CCLE datasets showing correlations between fucosylation gene expression/mutations and drug response. The analysis includes appropriate statistical methods (Spearman's correlation) and multiple independent datasets, providing robust evidence for the association between fucosylation genes and therapy resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Targeted kinase inhibitors induce core fucosylation of secreted proteins <60 kDa in cell cultures, drug-resistant clones, xenograft models, and cancer patients. This signature discriminates between treated and untreated patients with high sensitivity and specificity (AUC 0.915-0.961).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C19-C27 are well-supported by multiple complementary experimental approaches (lectin blotting, N-glycan release assays, sandwich ELLA) across diverse model systems including cell lines, xenografts, and patient samples. The ROC curve analysis provides quantitative evidence for diagnostic potential. The consistency across multiple cancer types and therapeutic agents strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Label-free proteomics identifies PON1 as a major fucosylated component of the therapy-induced secretome. PON1 fucosylation is elevated in drug-treated cells, drug-resistant clones, and patient sera/tissues, discriminating treatment status with high accuracy (AUC 0.77-0.901).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C78-C88 are supported by label-free proteomics data identifying PON1, followed by validation using multiple orthogonal methods (HLE, immunoblotting, enzyme activity assays). The identification of two PON1 isoforms (~55 kDa and ~45 kDa) with differential N-glycosylation provides mechanistic detail. ROC curve analysis demonstrates diagnostic potential across multiple patient cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The fucose salvage-FUT8-SLC35C1 axis mediates N-glycosylation of the therapy-induced secretome and core fucosylation of PON1. This pathway shows increased expression in drug-stressed cells, drug-resistant clones, and relapsed patient tissues, with Golgi-localized enrichment of core fucosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C28-C31, C33, C45, C47-C49 are supported by gene expression analysis, enzyme activity assays, confocal microscopy, and RNAi experiments demonstrating the functional role of this pathway. The data show consistent upregulation across multiple model systems and demonstrate size-dependent regulation of secretome fucosylation (<60 kDa vs >100 kDa proteins).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "PON3 directly regulates PON1 core fucosylation in the Golgi/ER through physical interaction and modulation of GDP-Fuc transfer. PON3 expression is increased in drug-stressed cells and correlates with relapse in breast cancer patients. This regulation is dependent on PON3-PON1 binding and can be controlled transcriptionally by SREBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 and C100-C105 are supported by multiple lines of evidence including confocal microscopy showing co-localization, RNAi experiments demonstrating functional dependence, GDP-Fuc activity assays showing direct regulation, and cross-linking coimmunoprecipitation experiments demonstrating physical interaction. The data consistently show that PON3 regulates PON1 fucosylation without affecting PON1 paraoxonase activity, providing mechanistic specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Core fucosylation at specific N-glycosylation sites (particularly N253) impacts PON1 stability and folding in the Golgi prior to secretion, promoting a degradation-resistant PON1 with altered enzyme activity. Site-directed mutagenesis (N253G and N324G) reduces PON1 fucosylation, increases protein misfolding and degradation, and sensitizes drug-resistant clones to EGFR inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C131 are supported by comprehensive structural analysis, site-directed mutagenesis, trypsin sensitivity assays, cycloheximide chase experiments, and functional assays. The N253G mutation shows more robust effects than N324G, consistent with its location in the outer region of PON1's \u03b2-propeller structure. The data demonstrate that fucosylation affects protein stability without altering gene expression of fucosylation machinery, supporting a post-translational mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Global secretome de-N-glycosylation by PNGase F or depletion of FUT8/SLC35C1 blocks the expansion of drug-resistant clones in tumor regression models. This effect is mediated through de-N-glycosylation of secreted proteins rather than membrane proteins, and leads to senescence induction, decreased kinase phosphorylation, and impaired expression of resistance-promoting factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C51-C71 are supported by extensive cell admixture experiments using both 2D and 3D models, with multiple complementary readouts including cell tracking, cell cycle analysis, apoptosis assays, and gene expression analysis. The subcellular fractionation experiments (C63-C66) provide evidence that the effect is mediated by secreted rather than membrane proteins. The consistency across multiple cancer types and targeted therapies strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "PON1-specific inhibition of core fucosylation via PON3 silencing or PON1-N253G mutation prevents drug-resistant clone expansion in cell admixtures and sensitizes EGFR-TKI-resistant tumors in xenograft models, leading to systemic decrease in serum PON1 fucosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by both in vitro cell admixture experiments and in vivo xenograft studies. The PON1-N253G mutation specifically targets PON1 fucosylation without affecting overall secretome N-glycosylation (C116), providing specificity. The xenograft data show tumor sensitization without weight loss, indicating therapeutic potential. The systemic decrease in serum PON1 fucosylation validates the mechanism in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "De-N-glycosylation of the therapy-induced secretome or inhibition of PON1 fucosylation activates ER stress and UPR pathways (ATF6, ATF3, ATF4) while repressing stem cell factors and STAT signaling in drug-resistant clones. This leads to increased ROS/RNS production and a pro-inflammatory secretome, which restrains resistant clone growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C147 are supported by transcription factor reporter arrays, gene expression analysis, confocal microscopy, ROS/RNS detection assays, and functional rescue experiments with ATF6 RNAi. The data demonstrate a mechanistic link between secretome fucosylation and intracellular stress responses. The ATF6 RNAi rescue experiments (C142-C143) provide causal evidence for the role of ER stress in mediating the effects of de-N-glycosylated secretome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Engineered cells with modified PON1 fucosylation (overexpression, knockout, N253G mutation, or PNGase F treatment) show altered ROS/RNS levels and inflammatory secretome profiles. PON1 fucosylation-enriched secretomes promote drug-resistant clone growth, while de-N-glycosylated PON1 prevents growth and increases caspase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 are supported by experiments using multiple genetic and enzymatic approaches to modulate PON1 fucosylation, with consistent functional readouts including ROS/RNS detection, cytokine measurements, cell tracking, and caspase activity assays. The use of multiple complementary approaches (knockout, overexpression, mutation, enzymatic treatment) strengthens the conclusions about PON1 fucosylation's role in resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Transcriptome-wide analysis identifies genes modulated by secretome PON1 fucosylation, including negative regulators of cell cycle and regulators of transcription/metabolism. Key genes include RPS27L and C19orf25 (up-regulated, associated with better survival) and DKK1 and THBS1 (down-regulated, associated with poor survival). Functional validation shows these genes modulate drug-resistant clone response to inhibited secretome fucosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C174 are supported by RNA-seq analysis with appropriate statistical methods, validation by qPCR, correlation with cancer dependency data from DepMap, survival analysis in patient cohorts, and functional validation using RNAi and overexpression experiments. The consistency between transcriptomic data, dependency scores, survival outcomes, and functional validation provides strong support for these genes as modulators of resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establish that complete responses to targeted therapies are rare, resistance is inevitable, therapy-induced secretomes facilitate resistant clone expansion, and glycosylation is the most abundant post-translational modification of the secretome, with FUT8 being the only enzyme mediating core fucosylation via N-linkages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by citations to published literature and represent established knowledge in the field. These claims provide appropriate context for the study but do not constitute novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "There is extensive pan-cancer gene expression increase in both protein O- and N-linked glycosylation gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by gene expression analysis data shown in Figure 1C, demonstrating coordinated upregulation of glycosylation genes across cancer types. This provides context for the specific focus on fucosylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "FUT8 is not classified as an essential gene in cancer cell lines, but shows marginally higher essentiality in TKI-resistant cells. Non-lethal drug concentrations induce FUT8 expression, and FUT8 RNAi augments drug-induced killing with rescue by FUT8 cDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34, and C35 are supported by analysis of Cancer Dependency Map data and functional RNAi/rescue experiments. These findings establish that FUT8 contributes to resistance without being essential for cell viability, supporting a therapeutic window for targeting this pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Known fucosylated cancer biomarkers AFP and A1AT show systemic elevation in treated patients and drug-resistant secretomes. Molecular weight fractionation confirms enriched core fucosylation in >30 kDa but not >100 kDa proteins, which can be controlled by FUT8 or SLC35C1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by HLE analysis and MWCO filtration experiments. These findings validate the <60 kDa fucosylation signature using known biomarkers and demonstrate size-dependent regulation, providing additional support for the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "Xenograft models recapitulate the therapy-induced secretome fucosylation signature observed in cell cultures and patients. Drug-resistant clone xenografts show elevated baseline fucosylation without further induction by therapy. Both core and terminal fucosylation are enriched in Golgi of xenograft tumors following therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 and C46 are supported by comprehensive analysis of xenograft mouse sera and tumor tissues using multiple fucosylation assays. The xenograft data validate the in vitro findings in a more physiologically relevant context and demonstrate that the fucosylation signature is detectable systemically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Label-free proteomics of AAL-captured secretome proteins yields reproducible peptide sequences with differential mass ranges between conditions. After filtering contaminants, 57 unique secretory proteins are identified, enriched for biological processes related to stress response, secretory pathway, and oxidative stress metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by mass spectrometry data and GO analysis. The acknowledgment of >60% contaminant coverage (C74) and appropriate filtering strategy demonstrates methodological rigor. The enrichment of oxidative stress-related processes provides biological context for PON1 identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Exogenous PNGase F de-N-glycosylates secretome PON1 without affecting GDP-Fuc activity on PON1 in Golgi/ER or PON1 secretion in sensitive cells, drug-resistant clones, and PON1-overexpressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by HLE, GDP-Fuc activity assays, and ELISA data demonstrating that PNGase F specifically removes N-glycans from secreted PON1 without affecting intracellular fucosylation machinery or secretion. This validates the use of PNGase F as a tool to study secretome fucosylation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Therapy-induced secretome core fucosylation is proposed as an evolvable mechanism towards establishing resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is speculative and based on inference from the association between secretome fucosylation and drug resistance. While the data show correlation and functional effects, direct evidence for evolutionary selection of fucosylation during resistance development is not provided. Longitudinal studies tracking fucosylation changes during resistance evolution would be needed to support this claim.",
+    "result_type": "MINOR"
+  }
+]

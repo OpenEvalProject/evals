@@ -1,0 +1,1772 @@
+{
+  "submission": {
+    "id": "471626ca-169b-4ff1-97fc-64251ba72c99",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:21:37.557784Z",
+    "updated_at": "2025-12-03T10:21:37.557784Z"
+  },
+  "content": [
+    {
+      "id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "submission_id": "471626ca-169b-4ff1-97fc-64251ba72c99",
+      "content_type": "manuscript",
+      "content_text": "# Judgments of agency are affected by sensory noise without recruiting metacognitive processing\n\n## Authors\n\n- Marika Constant<sup>1</sup> ([ORCID: 0000-0003-3756-0362](https://orcid.org/0000-0003-3756-0362)) \u2020\n- Roy Salomon<sup>4</sup> ([ORCID: 0000-0002-6688-617X](https://orcid.org/0000-0002-6688-617X))\n- Elisa Filevich<sup>1</sup> ([ORCID: 0000-0002-1158-8220](https://orcid.org/0000-0002-1158-8220))\n\n### Affiliations\n\n1. Faculty of Life Sciences, Department of Psychology, Humboldt-Universit\u00e4t zu Berlin Berlin Germany\n2. Bernstein Center for Computational Neuroscience Berlin Berlin Germany\n3. Berlin School of Mind and Brain, Humboldt-Universit\u00e4t zu Berlin Berlin Germany\n4. Gonda Multidisciplinary Brain Research Center, Bar-Ilan University Ramat-Gan Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nActing in the world is accompanied by a sense of agency, or experience of control over our actions and their outcomes. As humans, we can report on this experience through judgments of agency. These judgments often occur under noisy conditions. We examined the computations underlying judgments of agency, in particular under the influence of sensory noise. Building on previous literature, we studied whether judgments of agency incorporate uncertainty in the same way that confidence judgments do, which would imply that the former share computational mechanisms with metacognitive judgments. In two tasks, participants rated agency, or confidence in a decision about their agency, over a virtual hand that tracked their movements, either synchronously or with a delay and either under high or low noise. We compared the predictions of two computational models to participants\u2019 ratings and found that agency ratings, unlike confidence, were best explained by a model involving no estimates of sensory noise. We propose that agency judgments reflect first-order measures of the internal signal, without involving metacognitive computations, challenging the assumed link between the two cognitive processes.\n\n## Introduction\n\nAttributing ourselves agency, or causation of our actions and their outcomes, is central to our experience of moving intentionally. Previous research has suggested that agency depends on a comparison between the predicted and observed consequences of our actions, resulting in a prediction error signal if they do not match. Under this widely accepted comparator model of agency, it is the prediction error signal that leads to our feeling of agency (FoA), which we assess in order to make judgments of agency (JoAs) (Carruthers, 2012; Frith et al., 2000; Haggard, 2017). There are several sources of noise to these signals, and agency processing, much like other perceptual processing, occurs under varying degrees of uncertainty. Noisy agency signals are suggested to play a role in clinical cases involving striking disruptions to agency, such as in schizophrenia (Corlett et al., 2010; Fletcher and Frith, 2009; Moore and Fletcher, 2012; Robinson et al., 2016), so it is critical to understand precisely how agency signals change with uncertainty, in both healthy and clinical populations.\n\nSome existing models of agency have suggested that noise affects the comparator signal because the latter is the result of a cue integration process, in which the motor and sensory information are integrated and weighted by their reliability (Moore and Fletcher, 2012; Moore and Haggard, 2008). In line with these models, participants\u2019 FoA, as measured by an implicit temporal binding effect, has been found to rely less on cues that are noisy or imprecise, and more on more informative cues (Moore et al., 2009; Wolpe et al., 2013). Further, one recent study put forward a possible computational model in which FoAs are affected by sensory noise (Legaspi and Toyoizumi, 2019). However, work on uncertainty in lower level agency processing has not addressed the role of noise in the formation of JoAs. It is not clear that explicit JoAs incorporate noise in the same way as lower level FoAs, as JoAs are generally considered to be at a higher level of the processing hierarchy (Gallagher, 2007; Haggard and Tsakiris, 2009; Sato, 2009; Synofzik et al., 2008).\n\nExplicit JoAs could incorporate noise in two main ways. One alternative is that JoAs are simply reports of FoAs, that do not involve secondary assessments of their reliability. A second alternative is that JoAs monitor the uncertainty of the first-order signal through computations that include a secondary assessment of the sensory uncertainty. The crucial difference between these two alternatives is whether JoAs require an estimate of the precision of the first-order signal, or can be determined without any information about it. This kind of second-order representation of the precision of a first-order signal is a defining feature of what has been called a metacognitive process (Shea, 2012). Accordingly, metacognitive judgments are often operationalized as confidence ratings following discrimination responses (Fleming and Lau, 2014), and these second-order metacognitive ratings have been shown to monitor the uncertainty of the perceived internal signal (de Gardelle et al., 2015; Navajas et al., 2017; Rausch et al., 2017; Sanders et al., 2016; Spence et al., 2016).\n\nIn the literature, JoAs have sometimes been considered to be metacognitive reports about otherwise first-order agency signals (Carruthers, 2015; Metcalfe et al., 2012; Metcalfe and Greene, 2007; Miele et al., 2011; Potts and Carlson, 2019; Terhune and Hedman, 2017; Wenke et al., 2010; Zalla et al., 2015). However, it is unclear if the link to metacognition is merely conceptual, or whether JoAs result from second-order uncertainty representations, and are computationally comparable to other metacognitive judgments. Here, we commit to a definition of metacognition as a process that involves second-order uncertainty monitoring computations, to test the link between JoAs and metacognition in this narrow but computationally tractable sense.\n\nWe propose that for agency judgments to be metacognitive in a computational sense, they should monitor the noise in the perceived prediction error signal, incorporating a second-order judgment of the uncertainty of one\u2019s agency processing. We examined this by setting up a two-criterion test. The two criteria refer to behavioral and computational measures, respectively. The first criterion for JoAs to be computationally metacognitive was for sensory noise to influence JoAs in a secondary way, beyond just altering their variance across trials. We expected the effect of the delay to become smaller in high perceptual uncertainty trials, leading JoAs to be less extreme, as compared to trials with lower uncertainty. This would suggest that the reliability of the signal was estimated and factored in for each rating, against the simpler alternative that the rating was made on the basis of a linear readout of the less reliable signal. We examined this by assessing the effects of noise and delay on explicit agency ratings, using a sensory noise manipulation orthogonal to the delay.\n\nThis first criterion formed our pre-registered hypothesis and was necessary, but not sufficient, for JoAs to be considered metacognitive. It therefore served as a prerequisite for the second criterion: Agency and confidence judgments should show similar sensitivity to internal estimates of the sensory noise, suggesting the involvement of second-order uncertainty monitoring following the same computational principles. We assessed this by contrasting two computational models against distributions of JoA data, one that would reflect metacognitive monitoring of noise and an alternative model that would not. We found that JoAs satisfied the first, but not the second criterion: Sensory noise did indeed influence JoAs, but this influence did not reflect any second-order noise monitoring, suggesting that JoAs may not be metacognitive in the computational sense.\n\n## Results\n\nEach participant completed two tasks: A confidence-rating task, consisting of a two-interval forced choice (2IFC) followed by a confidence rating on a scale from 1 to 6; and an agency-rating task consisting of a JoA on an equivalent scale. Both tasks used the same basic stimuli, namely, a movement of participants\u2019 index finger tracked by a LEAP Motion infrared tracker and displayed on the screen as a virtual hand movement either in synchrony or with small temporal delays. In both tasks, we manipulated sensory noise in the same way, by changing the illumination of the scene. We created two conditions (low and high sensory noise) by displaying the virtual hand under bright, high-contrast illumination or under dim, low-contrast illumination respectively (Figure 1A). This change in illumination, a manipulation that was orthogonal to the stimulus intensity, effectively changed the reliability of the mapping between the external and internal signal without affecting the stimulus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72356/elife-72356-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sensory noise conditions. Sensory noise was manipulated by changing the illumination, with high sensory noise captured by low contrast, dark illumination, and low sensory noise captured by high contrast, bright illumination. (B) Experimental paradigm. Cued by the offset of the fixation cross, participants made two consecutive finger movements on each trial, with their hand out of sight. On the screen, participants saw either a virtual hand moving in synchrony with their own, or with an additional temporal delay. Participants first discriminated which movement they felt more agency over, and then rated their confidence in their own response. (C) Discrimination accuracy. In line with the intended effect of the sensory noise manipulation, accuracy was significantly higher for low- vs. high-noise conditions. (D) Mean confidence ratings. We found a significant interaction effect between Response Accuracy and Noise on Confidence. Violin plots capture the kernel probability density and boxplots show the median, interquartile range (IQR) with hinges showing the first and third quartiles, and vertical whiskers stretching to most extreme data point within 1.5*IQR from the hinges. Outliers are plotted as black or gray dots. (E) M-Ratio Estimates. Metacognitive efficiency for each noise level, estimated using the HMetad\u2032 toolbox. The dashed vertical line indicates chance-level metacognitive efficiency.\n\n### Confirmatory analyses\n\n#### Confidence-rating task\n\nOn each trial of the confidence task, participants were cued to make two consecutive movements (which constituted the two intervals of the 2IFC) of their right index finger, with their hand out of sight. For only one of the two movements, we added a temporal delay to the virtual hand shown on the screen (in the other interval, the virtual hand was displayed to match the participant\u2019s hand movement in real time). Participants then discriminated in which interval they felt more agency over the movement of the virtual hand, and rated confidence in their response (Figure 1B). We assumed that participants compared their degree of control over the virtual hand in the two movements to solve the task, and rated confidence in this comparison. This paradigm brings agency into a standard framework for studying metacognition (Wang et al., 2020). Importantly, under this operationalization, we can define correct responses to the 2IFC discrimination task as those where participants report that they felt more agency for the stimulus without any added delay, allowing us to quantify discrimination accuracy. If the illumination manipulation served to increase sensory noise in the intended way, we expected lower discrimination accuracy under high sensory noise compared to low noise (Macmillan and Creelman, 1991). Further, based on previous work using similar confidence paradigms (Bang and Fleming, 2018; de Gardelle et al., 2015; Spence et al., 2016), and a normative model of confidence (Sanders et al., 2016), we predicted an interaction between sensory noise and accuracy on confidence, in particular with confidence decreasing in high noise following correct trials and increasing in high noise following incorrect trials. To test the effect of the illumination manipulation, we first built a logistic regression model on response accuracy, including sensory noise as a fixed effect, and by-participant random intercepts (see Table 1 for the explicit model syntax). As expected, we found a main effect of Noise, revealing significantly lower accuracy in the high-noise compared to the low-noise condition (Mdiff = 10%, SE = 1.4%, \u03c72(1) = 97.60, p < 0.001, BF10 = 1.78 \u2715 1020, OR = 1.55, 95% CI [1.42, 1.70]; Figure 1C).\n\n**Table 1.**\n Syntax for the linear mixed-effects models used.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Task</th>\n      <th>Hypothesis</th>\n      <th>Model formula</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Confidence Task</td>\n      <td>Sensory noise influences response accuracy</td>\n      <td>logit(Response Accuracy)~ Noise + (1 | Participant)</td>\n    </tr>\n    <tr>\n      <td>Confidence Task</td>\n      <td>Sensory noise influences confidence following correct decisions</td>\n      <td>Confidence~ Response + Response Accuracy*Noise + (1 | Participant)</td>\n    </tr>\n    <tr>\n      <td>Agency Rating Task</td>\n      <td>Sensory noise influences the effect of delay on JoA</td>\n      <td>JoA ~ Delay*Noise + (Delay:Noise | Participant)</td>\n    </tr>\n  </tbody>\n</table>\n\nThen, we built a linear mixed-effects model on confidence to test the second prediction (an interaction effect between sensory noise and response accuracy). The model included the interaction between response accuracy and noise level and each factor as fixed effects, as well as by-participant random intercepts. We also included response identity (first or second interval) as a fixed effect, as presentation order could have biased confidence ratings (Jamieson and Petrusic, 1975; Yeshurun et al., 2008). In line with our predictions, we found a significant interaction between Noise and Response Accuracy on confidence, F(1,8858) = 14.43, p < 0.001, BF10 = 2.19, \u03b72p = 0.0016 (Figure 1D), with a stronger difference in confidence between correct and incorrect trials under low noise (MdiffCorrect-Incorrect = 0.58, SE = 0.044) compared to high noise (MdiffCorrect-Incorrect = 0.34, SE = 0.042). In addition to the interaction effect, we found that confidence following incorrect decisions was lower in the high-noise compared to the low-noise condition. Although we expected confidence following incorrect decisions to increase under high noise, the \u2018double-increase\u2019 confidence pattern seen here has also been shown in the literature (Adler and Ma, 2018; Rausch et al., 2017; Rausch et al., 2019). Finally, we found a significant main effect of Response, F(1,8872) = 82.64, p < 0.001, BF10 = 5.71 \u2715 1014, \u03b72p = 0.0092, with pairwise comparisons revealing significantly higher confidence ratings when participants reported feeling more agency over the stimulus in the second interval, compared to the first (Mdiff = \u20130.27, SE = 0.030), t(8872) = \u20139.09, p < 0.001. These results were also all confirmed by repeating this analysis with ordinal models (Appendix 2).\n\nIn order to further ensure that participants\u2019 confidence ratings reflected metacognitive processing, especially given relatively low accuracy under high noise, we checked that their metacognitive efficiency (M-Ratio) was above-chance in both conditions (Figure 1E; see Appendix 3 for full analysis). Together, these results suggest that the illumination manipulation affected sensory noise as we intended, and influenced metacognitive confidence judgments as previous studies have shown.\n\n#### Agency-rating task\n\nOn each trial of the agency-rating task, participants made a single movement of their index finger and watched the virtual hand model either move synchronously with their movement (25% of trials) or with a delay of either 70, 100, or 200 ms. After every movement, participants rated their agency on a scale from 1 to 6 (Figure 2A). By adding sensory noise to the perceived sensory outcome of the movement (namely, the virtual hand movement), we added noise to the comparator signal that participants assessed with their JoAs (Figure 2B). We then formulated a two-criterion test to assess whether JoAs are computationally metacognitive, and hence involve second-order estimates of the noise. The first \u2014 behavioral \u2014 criterion was that mean JoAs should depend on both delay and sensory noise. This would suggest that sensory noise influences agency ratings beyond just increasing their variability, with agency ratings instead including an indication of the signal\u2019s precision (Figure 2B). Alternatively, if the mean JoA per delay does not depend on the sensory noise level, this would indicate that JoAs are simply a first-order report of the perceived comparator signal, with mean JoA reflecting the mean of the comparator signal distribution (Figure 2B). The second criterion of our test, if the first criterion was met, was at the computational level, for agency ratings to involve underlying metacognitive computations such as those involved in confidence, in particular, the second-order monitoring of sensory noise. To test this, we compared two computational models built based on the results of the first criterion, a Second-order agency model that involves metacognitive processing, and an alternative First-order model that does not.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72356/elife-72356-fig2-v2.jpg)\n\n**Figure 2.:** (A) Experimental paradigm. Cued by the offset of the fixation cross, participants made one finger movement on each trial, with their hand out of sight. On the screen, participants saw either a virtual hand moving in synchrony with their own, or with an additional delay/temporal lag. Participants then made a judgment of the degree of agency they experienced. (B) Sketch of noise dependency prediction. By decreasing the illumination of the scene, the high-noise condition adds sensory noise to the observed outcome, and hence to the comparator signal, computed as the mismatch between predicted and observed outcomes. This environmental noise, independent of the delay, leads to a noisier mapping between the actual delay in the environment and the perceived internal signal. According to the comparator model, this internal delay signal is then compared to the representation of the predicted outcome, leading to the internal comparator signal. The internal comparator signal is represented as the bottom-most red (low uncertainty) and blue (high uncertainty) probability distributions. Points reflect the perceived signals on single trials. If the JoA is a readout of the comparator signal on each trial, though the variance would increase with noise, the mean JoA will not depend on noise, but will reflect the mean of the comparator signal distribution. Alternatively, if JoAs monitor the noisiness of the comparator signal, mean JoA will depend on noise. In other words, JoAs would be a function not only of a noisy signal (x), but of the noisy signal and the noise itself (\u03c3). (C) Interaction effect result. Predicted JoA across delays and noise conditions from linear mixed-effects model results. 95% confidence intervals shown. Boxplots reflect subjectwise mean JoAs per noise level and delay. They show the median, interquartile range (IQR) with hinges showing the first and third quartiles, and vertical whiskers stretching to most extreme data point within 1.5*IQR from the hinges. Outliers are plotted as gray dots.\n\n#### Behavioral results\n\nWhile the results of the confidence task confirmed that the illumination manipulation affected sensory noise overall as intended, we were interested in examining precisely how JoAs responded to sensory noise, and hence required that the high-noise condition actually increased sensory noise for all participants included in the analysis of the agency rating task. We therefore excluded from the following analyses any participants for whom discrimination accuracy in the high-noise condition was not lower than in the low-noise condition in the confidence task. We note that all the results described below remain largely the same, and the conclusions unchanged, when we include the data from all participants in the analyses (see Appendix 1). We predicted that if sensory noise affected JoAs similarly to metacognitive processes, we would observe a significant interaction between Noise and Delay on JoA (Figure 2B). This would be the first of our two criteria. In particular, if uncertainty led to a metacognitive scaling of JoAs, similarly to confidence-weighted agency ratings, we would expect to see less extreme JoAs under high noise, with low certainty pulling ratings closer to the decision criterion. We investigated this using a linear mixed-effects model on JoAs that included the interaction between noise level and delay as fixed effects, and allowed for by-participant random effects of the interaction, and random intercepts (Table 1). We found a significant interaction effect between Noise and Delay, F(1,52) = 61.16, p < 0.001, BF10 = 3.78 \u2715 106, \u03b72p = 0.54, 95% CI [0.35, 0.67], with a less extreme negative slope across delay values in the high-noise condition (\u03b2High = -5.93, SE = 0.69), compared to low-noise (\u03b2Low = -9.84, SE = 0.77) (Figure 2C), suggesting that JoAs met our first criterion. We also found a significant main effect of Delay, F(1,39) = 132.05, p < 0.001, BF10 = 14486.52, \u03b72p = 0.77, 95% CI [0.64, 0.85], replicating previous findings that showed increasing delays of the virtual hand movement to lead to lower JoAs (Krugwasser et al., 2019; Stern et al., 2020). We found this effect of JoAs decreasing with delay for the majority of participants (37 out of 40) included in this analysis in both conditions, indicating that participants were able to make meaningful ratings, even in the high-noise condition. We also repeated these analyses with ordinal models, which confirmed our results (Appendix 2).\n\n### Exploratory analyses\n\n#### Computational modeling\n\nWe found in our behavioral analysis that the mean JoA depended on both delay and noise, meeting our first criterion for JoAs being metacognitive. This allowed us to move on to our second test-criterion and investigate whether there are strictly metacognitive computations underlying agency judgments. In order to test our second criterion, namely, whether JoAs can be explained by the same computations as confidence, we compared two possible models of agency ratings (the Second-order model and the First-order model, Figure 3A), that differed in their predicted distributions of JoAs across noise conditions and delays (Figure 3B). Both models could in principle account for the observed interaction effect between noise and delay on JoA, satisfying the first criterion. However, only the Second-order model required participants to be able to reflect on the noise of their own sensory processing. The Second-order model assumed that agency ratings behave like confidence as described by Bayesian-confidence models, namely as the posterior probability that a decision is correct, given the strength of the internal evidence and the decision (Navajas et al., 2017; Sanders et al., 2016). The computation of this probability requires the observer to have second-order access to estimate their own sensory noise (Figure 3A), beyond just adopting precision-weighted cues from the lower level. So, in this model, JoAs are metacognitive because they require a representation of the precision of the first-order agency signal.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72356/elife-72356-fig3-v2.jpg)\n\n**Figure 3.:** (A) Two models of JoAs. In the Second-order model of agency, JoA reflects the posterior probability of the detection decision being correct, given the choice and internal evidence. The Gaussian distributions are probability distributions of the internal comparator signal. The dashed colored lines indicate the criteria, or the thresholds on the internal signal axis that delineate the different JoA values. These are spaced linearly in probability space, so their positions on the internal signal space change with noise level. The solid colored lines show the expected JoAs as a function of internal signal strength. In the First-order model of agency, JoA reflects a first-order estimate of delay compared to the criterion, not based on noise. However, the criteria are spread evenly across the range of signals within each noise level, such that they interact with noise level only due to a rescaling of ratings. The solid colored lines show the predicted JoA as a function of internal signal strength. Note that this function is linear but still interacts with noise, due to the rescaling. (B) Example model predictions. To illustrate the predictions of each of the models, we chose representative parameter values to run simulations. These values fall within the range of the values resulting from the model fits to participants\u2019 data. Predicted distributions of JoAs per delay and noise condition are shown as densities.\n\nAs an alternative, we considered the First-order model, which parallels the Second-order one except that ratings are based on first-order point-estimates of evidence and therefore do not factor in metacognitive estimates of sensory noise (Figure 3A). This First-order model accounts for the observed relationship between noise and JoAs by considering that participants might simply treat the noise conditions independently. In practical terms, this implies that participants judged agency in low-noise trials relative to one another, and high-noise trials relative to one another. Although our design aimed to prevent this by interleaving the conditions, it is still possible that participants did this to some extent, as our noise manipulation was visually very apparent. Critically, this condition-dependent scaling is achieved without making any estimates of the sensory noise of the conditions. The only role noise plays in this model is to make the conditions distinguishable from one another such that participants might treat them independently and use the rating scale accordingly. This means that in each condition, the maximum of the scale, or a \u20186\u2019, refers to the maximum agency experienced only within trials of that condition. Therefore, in the First-order model, a \u20186\u2019 may differ between conditions in terms of the actual strength of the agency experience. In contrast, in the Second-order model, a JoA of \u20186\u2019 would always reflect the same perceived level of certainty about the agency decision and hence the same agency experience, since JoAs combine the evidence strength and sensory noise.\n\nWe compared the two models in their ability to account for the distributions of JoAs per delay and noise level (Figure 4A) at the group level (with pooled data) and at the single-participant level. We also measured protected exceedance probabilities (PEPs) to assess the probability that each model was the most frequently occurring one in the population, adjusted for the ability to reject the null hypothesis (that the models are equally likely in the population). To compare the models, we first found the best fitting parameter values for each model \u2014 low noise \u03c3L, high noise \u03c3H, decision criterion (c), and the mapping parameter, or the number of ratings to be considered as \u2018Yes\u2019 responses (NRYes), for both models, as well as the scale range parameter (s) for the First-order model \u2014 using maximum likelihood estimation (MLE), and then performed a Bayesian-information criterion (BIC) comparison. Following standard recommendations (Raftery, 1995), we required a minimum BIC difference of 2 in order to consider one model a better explanation of the data than the other. To perform the Bayesian model selection and calculate the PEPs, we used the \u2018bmsR\u2019 package (Lisi, 2021) with model evidence computed from the Akaike weights (Penny, 2012; Rigoux et al., 2014; Stephan et al., 2009; Wagenmakers and Farrell, 2004). We also performed a model recovery analysis across the set of winning parameter values of each model across participants, confirming that the models were distinguishable from one another over the entire relevant parameter space (see Appendix 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72356/elife-72356-fig4-v2.jpg)\n\n**Figure 4.:** (A) Model fits. Simulated probability of each JoA for a given delay and noise level, given best fitting parameters from the MLE analysis for Second-order and First-order models. These are portrayed as densities across the JoAs. Data distributions are shown in shaded gray, also portrayed as densities across discrete ratings. (B) Group BIC Results. BIC comparison between Second-order and First-order models on pooled JoA data. (C) Subject-wise BIC Results. Difference in BIC (Second-order - First-order) for each participant, with negative values indicating that the Second-order model fit better, and positive values indicating that the First-order model fit better. (D) Protected Exceedance Probabilities. Protected exceedance probabilities of the Second-order and First-order models. (E) Estimated Model Frequencies. Predicted model frequencies estimated from the exceedance probability analysis.\n\nAgainst the notion that agency ratings and confidence arise from analogous uncertainty monitoring computations, the group-level analysis revealed that the First-order model could better explain the JoA data (\u0394BICSecond-First = 2728, Figure 4B). The best fitting parameters for this First-order model were \u03c3L = 0.16, \u03c3H = 0.16, (c) = 0.16, NRYes = 3, and (s) = 1.11. In comparison, the best fitting parameters for the Second-order model were \u03c3L = 0.19, \u03c3H = 0.24, (c) = 0.16, and NRYes = 3. The predicted densities of each rating per delay and noise level for each model\u2019s best fitting parameters can be seen in Figure 4A. Fitting the two models to each participant revealed results consistent with the group-level analysis: The First-order model could better explain the data for 38 out of 40 participants, whereas the Second-order model provided a better fit for only 2 (Figure 4C). Also in line with this, the PEPs indicated that the First-order model occurs most frequently in the population (Figure 4D), with the predicted frequencies shown in Figure 4E. This was despite the First-order model including one additional free parameter, compared to the Second-order model.\n\nWe then performed the same model comparison on confidence ratings from the confidence task in order to confirm metacognitive computations underlying confidence using this modeling approach, for comparison to our agency-rating results. As expected, the Second-order model could better explain confidence ratings (\u0394BICFirst-Second = 1121, Figure 5A), suggesting confidence to involve metacognitive computations, in contrast to JoAs. The PEPs also suggested the Second-order model to be the most frequently occurring model in the population (Figure 5C), with estimated frequencies shown in Figure 5D. The subject-wise BIC comparison revealed the Second-order model to provide a better fit in 24 out of 40 participants, the First-order model to provide a better fit in 13, and a BIC difference of less than 2 (suggesting neither model being a conclusively better fit) in 3 (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72356/elife-72356-fig5-v2.jpg)\n\n**Figure 5.:** (A) Group BIC Results. BIC comparison between the Second-order and First-order models on pooled confidence rating data. (B) Subject-wise BIC Results. Difference in BIC (Second-order - First-order) for each participant, with negative values indicating that the Second-order model fit better, and positive values indicating that the First-order model fit better. (C) Protected Exceedance Probabilities. Protected exceedance probabilities of the Second-order and First-order models. (D) Estimated Model Frequencies. Predicted model frequencies estimated from the exceedance probability analysis.\n\n## Discussion\n\nPrevious research has investigated the effect of noise on implicit proxies of agency such as temporal binding effects, but it has remained unclear how explicit agency judgments incorporate uncertainty. It is possible that JoAs adopt the effect of uncertainty at the first-order level, by taking a direct readout of the variable lower level signal. However, it is also possible that JoA computations involve a second-order estimate of the noise of first-order signals, which we would take to be a metacognitive computation. Here, we tested whether JoAs are metacognitive in a computational sense by examining whether they involve the same second-order uncertainty monitoring computations as metacognitive confidence ratings, or whether they can only be said to be metacognitive at a broad conceptual level. We found that uncertainty did not affect agency ratings in the same way as it does confidence ratings, suggesting that any effect of noise is better considered as an influence on first-order signals, without involving metacognitive noise estimates.\n\nBy combining two tasks, we brought JoAs into a standard metacognitive framework and compared them to confidence ratings following a 2IFC decision. We examined how discrimination accuracy and confidence changed with sensory noise in the confidence-rating task, to first confirm that the sensory noise manipulation had the intended effect. Observing the expected effects of sensory noise on confidence allowed us to consider whether JoAs in the agency-rating task responded to sensory noise in a computationally analogous way. We reasoned that, if this were the case, JoAs would satisfy two criteria: First, they would depend on the precision of the comparator information, reflecting more than just a readout of the perceived signal. Second, this dependence on noise would reflect underlying metacognitive computations such as those involved in confidence, in particular, second-order estimates of one\u2019s own sensory noise. The JoAs satisfied the first of the test-criteria. We found that noise did indeed influence mean JoA across delays, indicating that the noise condition is factored into JoAs. However, because the noise manipulation changed the display in a visually obvious way, this information about the condition could have influenced judgments in a way that did not reflect participants making metacognitive estimates of the noise of their own processing. The second test-criterion investigated precisely this possibility.\n\nTo assess the second criterion, we compared two computational models. As a prerequisite, both models satisfied the first test-criterion. We contrasted a Second-order agency model, which included metacognitive noise estimates, with a First-order model that did not imply metacognitive processing. We tested these models in their ability to fit participants\u2019 JoAs as well as confidence judgments, to understand the computations underlying both. In the case of confidence, the model comparison revealed that participants' judgments were best explained by the Second-order model, confirming the metacognitive computations underlying them (Kepecs and Mainen, 2012; Meyniel et al., 2015; Pouget et al., 2016; Sanders et al., 2016). In striking contrast, this model comparison against participants\u2019 agency ratings revealed that JoAs were better explained by the First-order model as compared to the Second-order agency-model. The First-order model accounted for the observed behavioral relationship between JoA and noise by assuming that participants compared trials only to other trials within the same condition, and set condition-specific maxima of their rating scales accordingly. It would be an interesting direction for future work to test how JoAs depend on sensory noise under a noise manipulation that is not easily detectable, to investigate if the behavioral relationship we observe between noise and JoAs is limited to cases in which participants can treat the manipulation conditions as independent contexts, as our models suggest.\n\nTaken together, our results suggest that while JoAs can be influenced by sensory noise, this influence is not indicative of metacognitive processing, and JoAs may better reflect first-order assessments of agency signals. We therefore argue that greater care should be taken when discussing agency within a metacognitive context, as the assumptions made about agency judgments being metacognitive do not hold on a computational level. Although this work used confidence as a benchmark for metacognitive processing, the computation of interest is second-order monitoring of the precision of one\u2019s processing, which has become the narrower focus of recent metacognition work (Fleming and Lau, 2014). While JoAs may still satisfy broad definitions of metacognition, our results suggest that they may not satisfy this narrower definition that is associated with a concrete computational view. In this sense, these results may help specify and clarify the assumed relationships between explicit agency judgments and metacognition. At the same time, they may add to our understanding of how JoAs respond to uncertainty \u2014 similarly to first-order perceptual judgments \u2014 which is critical for interpreting agency reports, especially in certain clinical cases involving agency disruptions.\n\nImportantly, we also found that participants can make metacognitive confidence judgments about agency decisions, but that subjective agency ratings do not share these computations, despite the same basic agency task and noise manipulation. The use of 2IFC agency tasks with confidence has recently been proposed as a promising step toward a more reliable and complete investigation of agency processing, both in healthy and clinical populations (Wang et al., 2020). Here, using a virtual hand, we extended this approach into a more proximal form of embodied agency, closer to agency over the body itself (Christensen and Gr\u00fcnbaum, 2018; Dogge et al., 2019; Stern et al., 2020; Wen, 2019), and provided an initial step in demonstrating that participants can meaningfully monitor the accuracy of these agency decisions. We suggest that confidence judgments about agency should be considered as the metacognitive level of an agency processing hierarchy, with agency judgments as explicit first-order judgments. This also brings agency in line with recent motor metacognition research that considers agency-like judgments such as decisions of which trajectory was caused by one\u2019s movement to be the first-order motor judgments, followed by metacognitive confidence ratings (Arbuzova et al., 2021).\n\nAlthough we suggest that JoAs do not imply metacognitive uncertainty monitoring, the dependence of agency ratings on the noise condition should not be overlooked and may be highly relevant both for future experimental design and in the interpretation of explicit agency reports. This finding is in line with multifactorial accounts of JoAs as involving a variety of both internal and external cues (Synofzik et al., 2008), and with the expanding empirical work investigating a range of contextual effects on agency (Minohara et al., 2016; Wen, 2019). Our work also fits within cue integration theories of agency (Moore and Fletcher, 2012; Synofzik et al., 2013), with the delay information being weighted less heavily when the signal is made less precise. Further, these results are relevant to empirical work examining cue integration in agency, as they suggest that having a perceivable manipulation such as reduced visibility in order to add noise to feedback cues may itself act as an additional factor influencing agency judgments, which should be accounted for in design and analysis.\n\nThese findings also complement recent work that has aimed to find computational models of agency, but has focussed on low-level FoA and implicit measures such as temporal binding effects (Legaspi and Toyoizumi, 2019). Here, we bring explicit agency judgments into a Bayesian and SDT framework, implementing formal computational models that could be used to further assess computations underlying different JoAs. Our findings support the suggestions of previous work that, while Bayesian confidence computations may underlie pre-reflective FoA, explicit JoAs reflect a different computational mechanism, and factor in different contextual information (Legaspi and Toyoizumi, 2019; Wen, 2019).\n\nTaken into the context of two-step models of agency (Synofzik et al., 2008), our results suggest that sensory noise information may influence lower level, perceptual agency signals by making them more variable, and that these more variable signals then feed into higher level JoAs, but that estimates of the noise do not contribute as an additional cue to inform the JoAs. Hence, higher order agency states remain naive with regard to how noisy the lower level signals are. This could illuminate agency processing deficits in clinical cases which might involve perceptual agency cues becoming very noisy due to low level processing deficits. If explicit JoAs do not consider this uncertainty (as our findings indicate), this could lead to extreme agency reports despite unreliable evidence and inaccurate agency inferences. This is in line with work on agency misattributions in schizophrenia suggesting that they may be due to particularly noisy low level agency information, possibly due to dysregulated neurotransmitter activity (Corlett et al., 2010; Fletcher and Frith, 2009; Moore and Fletcher, 2012; Robinson et al., 2016).\n\nBy combining an agency rating task with an agency discrimination and confidence task, we were able to consider JoAs against the benchmark of metacognitive confidence judgments, while keeping the basic stimuli and noise manipulations the same in both cases. However, the tasks still differed on the nature of the ratings: Ratings in the agency task were about the feeling of agency over a single movement, whereas ratings in the confidence task were about the accuracy of the decision in the 2IFC task. Importantly, we note that the findings that we describe here do not rely on a comparison between tasks. The confidence task merely served as a positive control task to ensure that our noise manipulation had the expected effect on a metacognitive judgment and that the second-order model we built best predicted the results of computations we knew to be higher-order.\n\n### Limitations\n\nOur conclusions about the computations underlying the JoAs are limited by the manipulations used in the task. First, we manipulated noise externally, not directly internally, and only added noise to the perceived delay signals, rather than motor or somatosensory cues. We additionally did not manipulate action selection noise, which has been shown to influence agency independently of the comparator signal (Wenke et al., 2010). More research will be necessary to understand whether our conclusions also apply to these other sources of noise in agency processing.\n\nFurther, our conclusions hold for the agency manipulation we used, namely altering the timing of the action outcome. But, it is unclear whether these findings apply to other kinds of agency manipulations. This approach is prevalent in the literature, so our findings are directly applicable to agency as it is commonly measured in experimental situations (Blakemore et al., 1999; Farrer et al., 2013; Stern et al., 2021; Wen et al., 2015b). More conceptually, the efficacy of delay manipulations has been argued to be valid for the study of more proximal agency over the body, and in external agency cases in which the timing of the outcome is well-established with precise expectations, but has been called into question as a device to truly affect sense of agency over the effects of our actions on the environment (Wen, 2019). Our virtual hand manipulation allows us to get close to this proximal body agency while still using a delay manipulation, and, even if viewed as an external outcome, the timing of the virtual hand movement is tightly linked to our precise expectations about the timing of our own movements (Krugwasser et al., 2019; Stern et al., 2020; Stern et al., 2021). Previous work using this virtual hand agency paradigm has also validated the approach of introducing delay in the visual feedback against other measures of agency (Krugwasser et al., 2019; Stern et al., 2020).\n\nOur results should also be considered in the context of the particular agency rating scale we used, as this will constrain participants\u2019 rating behavior. Similar agency scales are commonly used in agency research (Dewey and Knoblich, 2014; Imaizumi and Tanno, 2019; Kawabe et al., 2013; Metcalfe and Greene, 2007; Miele et al., 2011; Sato and Yasuda, 2005; Stern et al., 2020; Voss et al., 2017; Wen et al., 2015a), so the results presented here are relevant to understand the computations of agency ratings discussed in the existing literature. Thus, our results suggest that the JoAs measured in the literature do not indicate metacognitive computations. On the basis of these results, we concur with recent work (Wang et al., 2020) that suggests that a 2IFC task on agency followed by a confidence judgment may be more adequate to measure a metacognitive component of agency processing. Future work could apply a similar modeling approach in order to understand whether other types of agency judgments, for example ones explicitly discriminating between self and other agents, show the same first-order behavior. Future work could also further investigate another simplifying assumption made here in our models, namely that trials in which, due to internal noise, participants experienced a negative delay, would be associated with strong evidence for agency. While this is a reasonable assumption in our task, where participants knew that the virtual hand tracked their hand movement and likely dismissed the possibility that the virtual hand moved prior to them, it may need to be adapted to fit other, more ecologically valid cases of agency processing.\n\n### Conclusion\n\nHere, we investigated whether the role of uncertainty in explicit JoAs is computationally metacognitive. The results suggest that JoAs can be influenced by sensory noise, but that this effect is best considered as a contextual cue that can impact participants\u2019 use of the rating scale (at least when detectable in the environment), rather than as the result of a second-order noise monitoring computation. We therefore suggest that JoAs best reflect first-order comparator signals, with the metacognitive level of agency processing being second-order confidence judgments about one\u2019s agency.\n\n## Materials and methods\n\nThe experiment was pre-registered (osf.io/pyjhm), and we describe deviations from the pre-registered plan.\n\n### Participants\n\nWe pre-registered a sample size of 32 participants (based on power estimates from similar tasks). We collected data until we reached 40 participants that displayed the basic and expected manipulation effect of illumination (see above). We tested 47 young, healthy participants between 18 and 35 years of age (M = 27.15, SD = 4.68) in Berlin. To participate in the study, we required that participants were right handed (Edinburgh Handedness Inventory score: M = 79.5, SD = 23.6), had no injury or condition preventing or restricting movement of the right index finger, had normal or corrected-to-normal vision, and were fluent in English. Subjects were compensated with eight euros per hour or with course credit and gave signed, informed consent before starting the experiment. The ethics committee of the Institute of Psychology at the Humboldt-Universit\u00e4t zu Berlin approved the study (Nr. 2020\u201329), which conformed to the Declaration of Helsinki.\n\n### Setup\n\nWe used a LEAP Motion controller (Leap Motion Inc, San Francisco, CA) to track participants\u2019 hand motion and to control in real time the movement of a virtual hand displayed on the screen. The experiment ran on a Dell Latitude 5591 laptop (Intel core i5 with 16 GB of RAM) with a display resolution of 1920 \u00d7 1080 (refresh rate = 60 Hz) using software built in Unity 5.6.1, and was modified from software used in previous studies (Krugwasser et al., 2019; Stern et al., 2020). The computer was placed to the left of an opaque board, which occluded participants\u2019 right hand from view. Participants placed their right hand under the LEAP Motion tracker, which was fixed with its sensors facing downward. Blackout curtains were used during all testing to keep the lighting conditions within the room as consistent as possible.\n\n### Procedure\n\nThe tasks we used built on a paradigm in which participants see on the screen a virtual hand that follows the movement of their own, with a given temporal lag (Krugwasser et al., 2019). This paradigm allowed us to examine a situation closer to the more embodied or \u2018narrow\u2019 sense of agency that relates to control of the body itself (Christensen and Gr\u00fcnbaum, 2018; Dogge et al., 2019; Stern et al., 2020). Each participant completed two tasks: a confidence-rating task (Figure 1B) and an agency-rating task (Figure 2A). In both tasks, we manipulated sensory uncertainty by controlling the visibility of the virtual hand, which is computationally analogous to adding noise to the signal. This allowed us to compare the effect of noise on JoAs and confidence. Importantly, we manipulated sensory noise orthogonally to the decision variable, as done by previous work (Bang and Fleming, 2018; de Gardelle et al., 2015; Spence et al., 2016), which allowed us to precisely examine effects of noise without altering the true degree of control that the participants had over the virtual hand movement.\n\nPrior to starting the experiment, participants completed the Edinburgh handedness scale. We then did a short thresholding procedure to set the illumination level that would be used in the high-noise condition of the main tasks. The baseline illumination levels were set in the Unity environment with a directional light intensity of 0 in the high-noise condition and 0.001 in the low-noise condition, but the brightness of the screen was then further thresholded in order to account for differences in eyesight and lighting conditions in the room. Participants placed their right hand on the table, under the LEAP tracker, and held it still. On each trial, participants first saw a fixation cross, followed by two consecutive presentations (separated by a flashed gray screen) of the virtual hand on the screen in the dark illumination condition, and in one case, it was artificially enlarged. Participants then discriminated which of the two intervals contained the larger hand. We ran this in blocks of 10 trials. If participants responded less than 70%, or more than 80% correctly in a block, or if they reported discomfort from straining to see the hand, we manually adjusted the brightness setting of the computer display. This rough thresholding procedure took approximately 5 min. The brightness was, however, further adjusted if participants reported not being able to see the virtual hand movement during the training or at the beginning of the task. The brightness was only re-adjusted prior to the confidence task for one participant.\n\n### Agency-rating task\n\nAll participants performed the agency-rating task first so that subjective ratings would not be biased by the structure or ratings of the confidence task. Because the two tasks employed a very similar rating scale, we wanted to make sure that agency ratings corresponded to how they are collected in the literature and not that, for example, participants interpreted the agency scale as the confidence scale. This was important, as our main research question examined the computations underlying ratings in this task, whereas our confidence task served as a positive control for a known metacognitive judgment. On each trial, participants began with their right hand resting on the table, palm facing up, with fingers extended. They saw a fixation cross (for 1.5 s), then the virtual hand appeared and they had 2 s in which to flex and extend their index finger once. The virtual hand displayed their movement either in real time, or with an added delay of either 70, 100, or 200 ms. Participants then rated their agency over the virtual hand movement on a scale from 1 (lowest) to 6 (highest). We explained that the term \u2018agency\u2019 referred to how much control they had over the movement of the virtual hand, and they were asked to focus specifically on the timing of the movement. Agency ratings were made using arrow keys to move a cursor, which started at a random position on the six-point scale each trial. Additionally, error trials in which there was a glitch of the virtual hand (such as flipping or contorting), participants saw no virtual hand, or participants made the wrong hand movement, could be marked using the Space key. Overall, 2.4% of trials were marked as errors in the confidence task, and 1.9% were marked as errors in the agency rating task.\n\nTo achieve the high-noise condition, the virtual hand was displayed under dark, low-contrast illumination, using a directional light intensity of 0 in the Unity environment. In the low-noise condition, the virtual hand was displayed under brighter, higher contrast illumination using a directional light intensity of 0.001 (Figure 1A). The noise conditions as well as the four delay levels were counterbalanced and randomly distributed across each block. There were 60 trials per delay level and lighting condition, for a total of 480 trials, split across six blocks. Prior to this task, participants completed a short training consisting of 20 trials and including both noise conditions and all delays, but they never received any feedback regarding any task. The agency-rating task took approximately 45 min.\n\n### Confidence-rating task\n\nAfter the agency-rating task, participants did a confidence-rating task. Participants again flexed and extended their right index finger under the LEAP motion tracker, while looking at the virtual hand on the screen. In contrast to the agency-rating task, they made two consecutive movements, each cued by the appearance of the virtual hand, and separated with a blank gray screen. They then decided which virtual hand movement they had more agency over, and rated their confidence in their response from 1 (lowest) to 6 (highest). The difference in delay levels between the movements in each trial was staircased, with one of the two movements always having no delay and the other being adjusted according to an online 2-down-1-up staircasing procedure aiming to achieve an overall accuracy of approximately 71%. Only the low-noise condition was staircased, and the delays of the high-noise condition were set to match those of the low-noise. Participants made their decision and then confidence rating using the arrow keys, and an error trial could be marked during either the decision or confidence rating.\n\nWe manipulated noise in the same way as in the agency-rating task, and this was fully counterbalanced with which movement was the delayed one, with these factors randomly distributed across each block. The noise condition was always the same for both consecutive movements within a trial, so in this task, the sensory noise in the environment led to an internal comparison of the two noisy delay signals, and confidence was modeled as monitoring the noise of this discrimination. There were 100 trials per noise condition, for a total of 200 trials across five blocks. Prior to this task, participants completed another short training consisting of 10 trials, but only in the low-noise condition, to adjust to the new movement and response structure. The confidence task took approximately 45 min. At the end of the session, participants completed an informal debriefing.\n\n### Analysis\n\nWe removed any trials marked as errors, and any trials with reaction times shorter than 100ms or longer than 8 s for any decision or rating.\n\nWe tested our main hypotheses using the \u2018lme4\u2019 package (Bates et al., 2015) in R (R Development Core Team, 2020) to build linear mixed-effects models. All models included by-participant random intercepts, and the model for the agency-rating task included random effects for the interaction of interest (Table 1). All hypotheses were tested using two-tailed tests and an alpha level of 0.05, and additionally using Bayes factors, which we computed with the \u2018BayesTestR\u2019 package (Makowski et al., 2019) using default priors. To compute Bayes factors for the logistic mixed-effects analyses, we built Bayesian models with the \u2018brms\u2019 package (B\u00fcrkner, 2017). For each of these Bayesian regressions, we ran 4 chains of 15,000 iterations, including 5000 burn-in samples for a total of 40,000 effective samples, and ensuring a R-hat close to 1. Effect sizes for results of the linear mixed-effects analyses were computed as \u03b72p using the \u2018effectsize\u2019 package (Ben-Shachar et al., 2020), with 95% confidence intervals reported when possible (large sample sizes resulted in some confidence intervals of width zero, and hence uninterpretable). The results of our linear mixed-effects analyses on confidence and JoAs were confirmed using ordinal models, built using the \u2018ordinal\u2019 package (Christensen, 2019).\n\nTo analyse metacognitive ability from the confidence task, we measured metacognitive efficiency (M-Ratio) using the HMeta-d\u2032 toolbox (Fleming, 2017). In this analysis, for the MCMC (Markov chain Monte Carlo method) procedure we used three chains of 15,000 iterations with an additional 5000 for adaptation, thinning of 3, and default initial values from JAGS (Just Another Gibbs Sampler). We also ensured that R-hat was approximately one for all sampling.\n\nAs a deviation from the pre-registered analyses, we included our second test-criterion and computational modeling analyses, and excluded instead some planned analysis of the variability of ratings, as, in hindsight, we reasoned that this would not help to clarify the link between agency and metacognition. To perform the Bayesian model selection and get the PEPs, we used the \u2018bmsR\u2019 package (Lisi, 2021), computing model evidence using Akaike weights from the MLE analysis and using 106 samples.\n\n### Modeling\n\nTo test whether JoAs reflect metacognitive computations, we compared two computational models which could both account for the observed effect of noise on agency ratings. Both are based on signal detection theory and a comparator model of agency, with the amount of delay between the real movement and virtual hand movement as the signal. However, under one model (the Second-order model) agency ratings involve a second-order assessment of sensory noise in the same way that confidence judgments do; whereas under the other model (the First-order model), agency is based on only first-order estimates of the internal signal strength. Under the First-order model, the observed behavioral effect of noise results from participants scaling their ratings independently for each condition, without the need for metacognitive estimates of the noise level.\n\nUnder both models, JoAs result from a Yes/No decision of whether participants felt agency over the virtual hand movement, and this is scaled into a rating according to a function of the strength of the evidence. Modeling JoAs as involving this binary detection decision allowed us to examine whether agency ratings follow the computations involved in decision confidence, and is also in line with work treating agency as a binary judgment (Fukushima et al., 2013; Spaniel et al., 2016). We assume that participants set an internal decision criterion (c) which determines whether they detected a delay \u2014 thus judging a disruption in their agency \u2014, or whether they detected no delay and therefore judged themselves to have agency over the virtual hand movement. Then, the different agency ratings are modeled as additional criteria on either side of (c). We model agency ratings as getting more extreme as the perceived signal (x) gets further from the decision criterion in either direction, or in other words, as evidence supporting the agency decision increases. This predicts that perceived delays that are very long relative to the decision criterion would lead to a \u2018No\u2019 decision with strong evidence, and in turn low JoAs, whereas perceived delays that are very short would lead to a \u2018Yes\u2019 decision with strong evidence, and high JoAs. Crucially, the two models differed in the function of internal evidence (f(x)) that determined the agency ratings, and in particular in the way this function was affected by sensory noise.\n\n### Agency ratings in the Second-order model\n\nThe Second-order model assumed that agency ratings scale as a function of internal evidence in the same way as confidence, namely scaling with the posterior probability of being correct, given a choice and the internal signal (Sanders et al., 2016). Therefore, in this model, the agency rating is computed by estimating the probability that the agency detection was correct, given the perceived signal and detection decision. Because this probability computation depends on the level of sensory noise, the Second-order model predicts that noise will be factored into participants\u2019 JoAs.\n\nIn both models, we obtained the criterion values that split the continuous range of possible f(x) values into equidistant bins. For the Second-order model, because confidence reflects a probability, it is naturally bounded to 1. So for the Second-order model (with a 3:3 mapping, see below) this amounted to finding the criterion values that would lead to confidence levels of \u2153, \u2154, and 1. To estimate the positions of the criteria on the internal signal axis, we followed an analytical solution that defines confidence as\n\n$$\n{\u03a6(\\frac{c\u00a0\u2212\u00a0x}{\\sigma})if\u00a0x\\geqc\n$$\n\n\n\n$$\n{\u00a01\u00a0\u2212\u00a0\u03a6(\\frac{c\u00a0\u2212\u00a0x}{\\sigma})if\u00a0x<c\n$$\n\nwhich we implemented, for convenience, as in a previous study (Navajas et al., 2017):\n\n$$\n  \u03a6(\\frac{ x - c }{\\sigma})\n$$\n\nThis confidence measure can be interpreted as the perceived probability that the true delay signal was on the same side of the decision criterion as the internal signal, hence making the decision correct (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72356/elife-72356-fig6-v2.jpg)\n\n**Figure 6.:** Agency as a function of evidence strength computations in each model. In the Second-order model this function of internal evidence reflects confidence based on the posterior probability of having given a correct response, given internal signal and choice. In the First-order model this is based on the perceived distance between signal and criterion.\n\n### Agency ratings in the First-order model\n\nThe non-Bayesian alternative model considers participants to compute their ratings proportionally to the distance between a point estimate of the internal signal and the decision criterion (Figure 6). According to this model, participants do not use the full distribution of internal signals in their assessment and hence do not make any metacognitive assessment of the precision of their evidence, but rather provide a rating that varies linearly as a function of the internal evidence, according to\n\n$$\nf(x)=  x - c \n$$\n\nUnlike the Second-order model, ratings in this linear model are not inherently bounded at 1, as f(x) could be as high as any arbitrarily high internal signal (x). Therefore, in order to find criterion placements that divide the continuous range of f(x) values into equidistant bins, we needed to approximate a maximum. We assumed that participants bound their ratings based on the range of delays they experience throughout the experiment. Because we cannot know the true range of perceived delays, we approximated the most extreme perceived delays as the most extreme external signals plus a multiple of the noise, the freely fit scale range parameter (s). Based on the idea that participants rescaled their agency criteria according to the noise condition that they observed, accounting for the observed behavioral interaction effect, (s) acted as a multiple of the noise within a given condition. Hence, the scale range on low-noise trials would be from -s\u03c3L to [200+ s\u03c3L] but the scale range on high-noise trials would be from -s\u03c3H to [200+ s\u03c3H]. However, critically, this noise parameter is not part of the internal JoA computation that we propose takes place in the brain, which does not involve estimates of the noise at all. It is only used by us, as experimenters, to guide an approximation of the range of perceived delays across the experiment, which we do not have external access to. Fitting this parameter allowed us to obtain the maximum f(x) value as the maximum distance between (c) and either bound of the scale, and then divide the continuous f(x) values into equidistant bins just as we did with the Second-order model. However, due to the different f(x) computations, in this case the bins were equal linear distances on the internal signal axis, not equal probability bins as in the Second-order model (Figure 3A). Importantly, although the agency ratings do depend on the noise level due to the rescaling in this model, this does not involve participants making an assessment of the precision of their evidence, but just reflects participants considering each trial relative to a maximum that is different between illumination conditions. In other words, it would require less extreme evidence to lead to a \u20181\u2019 in the low-noise condition than a \u20181\u2019 in the high-noise condition.\n\nOnce we found criterion locations for each noise condition for each model, we calculated the probability of each rating for any given alteration and noise level. Using these probabilities, for all trials of a given participant or the pooled data, we built the likelihood function as\n\n$$\n\\prod_{\\alpha=1}^{6}(\u03a6(\\frac{\\gamma_{\\alpha+1 }- d}{\\sigma})-\u03a6(\\frac{\\gamma_{\\alpha }- d}{\\sigma}))^{n_{\\alpha}}\n$$\n\nwhere $\\alpha$ indexes the agency rating criterion in a given noise condition; $\\gamma_{\\alpha\u00a0}$ is the position of criterion $\\alpha$, with $\\gamma_{1 }$ being -\u221e and $\\gamma_{7}$ being +\u221e; d is the external delay; and $n_{\\alpha}$ is the number of trials observed for that rating and delay, in that noise condition. We then took the product of this likelihood across all four possible external delays and across both noise conditions.\n\n### Model parameters\n\nBoth models shared the parameters: standard deviation of the low-noise condition, \u03c3L, standard deviation of the high-noise condition, \u03c3H, and decision criterion (c). The First-order model also included the scale range parameter (s). Additionally, instead of assuming that participants always used half of the scale ratings to reflect detection of agency (JoA = 4:6), and half to reflect disruption to agency (JoA = 1:3), we fit a mapping parameter to capture the number of ratings used for each decision. We fit this parameter, NRYes, defined as the number of ratings used for \u2018Yes\u2019 decisions, with a minimum of one rating used for each decision. If NRYes is two, for example, this would suggest participants used ratings of \u20185\u2019 and \u20186\u2019 to indicate detections of agency, and ratings of \u20181\u2019 to \u20194\u2019 to indicate disturbances to their agency. By fitting this parameter, we avoided having to make any strong assumptions about how participants used the rating scale, considering we did not have their true Yes/No decisions.\n\n### Modeling confidence\n\nWe also applied these two models to confidence ratings, in order to compare confidence computations with those underlying JoAs. For this analysis, the models were kept the same, except instead of fitting agency criteria, we fit the confidence criteria that divided confidence ratings into 12 total bins, with six ratings on each side of the decision criterion. We did not need to fit NRYes, as the assignment of ratings to a particular decision was forced by the task.\n\n### Code availability\n\nReproducible analysis scripts and models are publicly available under https://gitlab.com/MarikaConstant/metaAgency, (copy archived at swh:1:rev:10a9c40ac4a8b45c81c5966297ef9911b2d33043, Constant, 2022).\n",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "bad90910-3694-4db5-b747-a734c3beceb8",
+      "submission_id": "471626ca-169b-4ff1-97fc-64251ba72c99",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valentin Wyart, \u00c9cole normale sup\u00e9rieure, PSL University, INSERM France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72356.sa0](https://doi.org/10.7554/eLife.72356.sa0)\n\nThis article describes a carefully designed study on the computational mechanisms underlying judgements of agency in an action-outcome delay task. Model-based analyses of behavior indicate that, unlike judgments of confidence, judgments of agency do not recruit metacognitive processes. This finding is important, because it challenges the assumed relation between agency and metacognition.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Valentin Wyart, \u00c9cole normale sup\u00e9rieure, PSL University, INSERM France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72356.sa1](https://doi.org/10.7554/eLife.72356.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Judgments of agency are affected by sensory noise without recruiting metacognitive processing\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Valentin Wyart as the Reviewing Editor and Richard Ivry as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Valerian Chambon (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAs you will see below, all reviewers agree that the general approach you developed for your study of judgments of agency \u2013 combining experimental tasks with explicit computational modeling \u2013 is a clear strength of your study. The finding that sensory noise is monitored differently for judgments of agency and confidence judgments is interesting, and novel. However, there are different issues \u2013 in particular conceptual ones regarding the definition of metacognition but also experimental ones regarding the relation between the two tasks (and their associated judgments) you have used in your work. The essential revisions below have been discussed among reviewers and should be addressed in a point-by-point response. The individual reviews are also provided below for your information (please check all revisions regarding typos and concerns regarding the presentation of the results), but they do not require point-by-point responses. This is based on your responses to the essential revisions that we will evaluate your revised manuscript.\n\nEssential revisions:\n\n1) A first conceptual issue concerns the definition of metacognition in the study. It appears currently quite loosely defined, which is a problem for a study which makes specific claims about the distinction between metacognition and the sense of agency. In the present version of the manuscript, a metacognitive process appears to mean \"being about first-order signals\". But this loose definition is not satisfying when thinking about the rescaling model used to explain judgments of agency \u2013 which is seen as non-metacognitive. Indeed, this rescaling model still requires agents to track something about internal noise corrupting first-order signals, which would qualify it as metacognitive. A clear and unambiguous definition of metacognition should be provided upfront in the revised manuscript to avoid conceptual confusions.\n\nFor example, the authors argue their Bayesian model is a metacognitive one, because it requires the observer to have second-order access to an estimate of their own sensory noise. But even though the Bayesian model in this paper clearly incorporates an estimate of the noise/uncertainty in the signal, not all representations of noise are second-order or metacognitive. For example, Shea (2012) has noted that in precision-weighted Bayesian inference models throughout neuroscience (e.g., Bayesian cue combination, also discussed in this paper) the models contain noise estimates but the models are not metacognitive in nature. For example, when we combine a noisy visual estimate and a noisy auditory estimate, the Bayesian solution requires you account for the noise in the unimodal signals. But the precision parameters in these models do not necessarily refer to uncertainty in the agent's perceptions or beliefs, but uncertainty in the outside world. Similarly, in the Bayesian model proposed in this study, it is not clear why we should think of the uncertainty parameter as something metacognitive (e.g., about the agent's internal comparator representations) rather than something about the outside world (e.g., the sensory environment is noisy). This should be clarified and discussed in the revised manuscript.\n\nShea (2012) Reward prediction error signals are meta-representational. Nous, DOI: 10.1111/j.1468-0068.2012.00863.x\n\n2) The present manuscript suggests that judgments of agency are subject to only one source of internal noise, the comparator. While it is understandable, given that the task is not likely to be associated with significant action selection (motor) noise, it is possible that this design choice has penalized the hypothesis of metacognitive monitoring of uncertainty by judgments of agency. This would require having a task design that manipulates selection difficulty (and thus selection noise), to see whether judgments of agency are sensitive to selection noise \u2013 which would potentially make them metacognitive (since judgments of agency would reflect second-order measures of this selection noise). It is indeed well known that selection noise affects judgments of agency (see, e.g., Wenke et al., 2010), independently of any comparison between predicted and observed signals. While we are not requiring you to perform additional experiments, this prior work and the limitations of the current study along these lines should be explicitly discussed in the revised manuscript.\n\nRelated to this issue, the validity of using an action-outcome delay task to generate broad conclusions about the nature of judgments of agency appears currently limited. In the task used in the study, the experience of agency depends only on interval detection, i.e., sensitivity to temporal contiguity. But while this is a popular approach in the field, the temporal contiguity actions and outcomes is only one of the cues that influence judgments of agency. Recent authors (e.g., Wen, 2020) have suggested that this manipulation may be problematic for a number of reasons. In similar types of paradigm, Wen (2020) notes that agents are able to accurately judge their control over action outcomes that are substantially delayed (e.g., well over 1000 ms) and thus it is possible that tasks manipulating action-outcome delays are biasing participants to report variance in the delays they experience rather than their actual experience about what they can and cannot control. Indeed, in the Methods section, the authors note participants were asked to \"focus specifically on the timing of the movement\" of the virtual hand, which may make this concern particularly salient. The judgment of agency made by participants can thus be reframed in this task as \"did I detect a delay?\", which limits the generalizability of the findings to many other situations where judgments of agency are not restricted to delay detection.\n\nIn practice, these concerns require an explicit discussion in the manuscript. You should at least consider explicitly whether your findings indicate that sensorimotor delay judgements in particular (rather than judgments of agency in general) are non-metacognitive. This alternative, more focused interpretation of the findings, is by no means uninteresting, but it has a somewhat narrower theoretical significance for the key debate used to frame the study (\"do agency judgements monitor uncertainty in a metacognitive way?\"). Arguments against this alternative (more specific) account should be provided in the discussion to support the interpretation that you have chosen to put forward (that judgments of agency in general are non-metacognitive). It is important that the title and framing of the paper remains as close as possible to what the findings of the study are.\n\nWen (2020). Does delay in feedback diminish sense of agency? A Review. Consciousness and Cognition, DOI: 10.1016/j.concog.2019.05.007\n\n3) The relationship between the confidence task and the judgment of agency task is not entirely clear. Indeed, the confidence task measures confidence about a discrimination based on judgments of agency, whereas the judgement of agency task is about directly inferring agency from one stimulus. Therefore, the confidence task reflects by design a higher-order judgement about judgements of agency and, in this task setting, the judgments of agency appear to be treated experimentally as first-order judgements. It is unclear whether this choice of task design has triggered in itself the difference in computations underlying confidence and judgments of agency, and whether alternative task settings could show similar computations for the two types of judgments. This does not disqualify the main finding of the study, which is about determining which kind of computations underlie judgments of agency, but it is very important to discuss specifically the relation between the two judgments in this particular task, and how this relation may have something to do with the obtained findings. Further experimental work could \u2013 in principle \u2013 quash these worries \u2013 e.g., by manipulating agency in a different way but demonstrating the same effects of noise on confidence but not agency judgements. We are not requesting you to carry out these additional experiments, but they should be set as critical next steps for addressing the limitations of the current study.\n\nReviewer #1 (Recommendations for the authors):\n\n1. I find the research question itself really interesting, but I wonder if the authors are arguing against a strawman (\"agency judgements are often assumed to be metacognitive\"). That agency judgements are assumed to be metacognitive is certainly true according to the references cited in the article (Metcalfe and Miele) but I am not sure that this is a widespread view in the field. To my knowledge, agency judgements are often described as high-level, post-hoc, reflexive or retrospective, but none of these qualifications imply that JoAs are metacognitive per se. More recent references suggesting that indeed JoAs are metacognitive might be needed here.\n\n2. The discussion elaborates on what metacognition is (cognition about cognition, a process that involves 2nd order uncertainty monitoring computations, etc.) but I think a real definition of what a metacognitive process/representation/computation is would be needed in the introductory section, which lacks such a definition.\n\nIs \"being about\" a first-order signal (whether that signal is perceptual, motor or memory-related) the minimum condition for something to be labelled \"metacognitive\"?\n\n3. The task is a relatively simple motor task with little motor or premotor noise \u2013 in the sense that it does not specifically involve motor preparation or selecting a motor program from alternatives. This premotor/selection noise has been repeatedly shown (e.g. Wenke et al., 2010) to affect JoA, independent of any comparison between predicted and observed signals. Thus, according to this alternative hypothesis, the noise/uncertainty that feeds into participants' JoA does not come from a noisy comparator, as assumed in this paper, but comes directly from the action selection/preparation circuits \u2013 i.e. is due to competition between the selected and alternative action program and/or to blurred boundaries between alternative motor plans (e.g. Nachev 2005; Cisek, 2007)\n\nFor reasons of parsimony, which I can fully understand, the present study suggests that the JoA is subjected to only one source of internal noise, the comparator.\n\nI wonder to what extent this choice penalizes the hypothesis of (metacognitive) monitoring of uncertainty by the JoA. Is it possible that participants' JoAs are more sensitive to internal selection noise than to comparator noise? This may require replicating the same task by manipulating the selection noise and measuring whether the agency reports reflect second-order measures of this selection noise. Note that I am not asking here for this experiment to be carried out, but perhaps the authors can comment on this.\n\n4. A question of clarification: perhaps I missed something in the manuscript, but what is the internal noise that JoAs monitor? Logically, it should be the noise arising from the comparison between the first-order sensory signals (predicted and observed), a comparison that gives rise to the agentive experience itself. And if so, I am not sure I understand clearly what the source of the noise monitored by the confidence reports in the task is: is it the noise arising from the comparison between the two agentive experiences (which are themselves each the product of a noisy comparison between predicted and observed sensory signals)? Is it then reasonable to assume that this comparison, which gives rise to the confidence report, somehow inherits the noise from the first-order comparison that gives rise to the agentive experience?\n\nReviewer #2 (Recommendations for the authors):\n\nI was a bit confused about the rationale behind the first criterion which JoA's have to meet in order to be considered metacognitve. It was unclear to me how the JoA's are hypothesized to be influenced by the sensory noise exactly, beyond just making them noisier? Is there a fundamental reason to expect agency ratings to increase or decrease in noisier conditions which we would expect a priori? Expecting 'an effect on agency ratings' sounds rather vague. The results show that the effect of the delay becomes smaller during high noise conditions, which makes a lot of conceptual sense. Maybe pre-empting this somehow before the results will make things a bit clearer?\n\nThe contrasting two models elegantly reflect different underlying psychological strategies and are very well designed and implemented. However, I feel like the explanations of the models in the main text are still relatively technical and potentially hard to understand for readers unfamiliar with these specific types of models. I think adding a few extra sentences per model explaining the models in more psychological terms would help (e.g. 'second-order access to estimate their own sensory noise' -> add something like 'i.e. be able to reflect on how noisy their own sensory processing is' and 'rescaling depending on the noise condition' -> 'e.g. give less extreme agency judgments under high noise conditions').\n\nReviewer #3 (Recommendations for the authors):\n\nIn line with these comments above, I would suggest that the authors amend the manuscript to make it clear how detecting action-outcome delays relates to agency detection mechanisms in general \u2013 ideally with a persuasive rebuttal of the kinds of concern that Wen (2020) provides. Without a strong reason to believe that action-outcome delay detection is directly measuring the agency detection process (which Wen, 2020 etc. give us cause to doubt), the generality of these conclusions seems potentially limited, and the broadbrush conclusions currently offered might need to be moderated accordingly.\n\nAt the same time, I think the authors should also be explicit about what they mean by a 'metacognitive computation'. The real novelty of their approach seems to be getting into the nitty gritty of what different computational models would predict. But if the authors agree with me that models can have uncertainty parameters without being metacognitive, then more needs to be done to justify why the Bayesian model is a metacognitive one. Of course, the authors may disagree with me, but a strong rebuttal of this concern and an explanation for why uncertainty parameters entail metacognition would be an important addition to the paper.\n\nI have a few other points the authors might consider useful and which might help orient a reader:\n\n1. The authors discuss in places that their tasks bring agency judgements into a \"standard metacognition framework\". But there are some important disanalogies. For example, in a perceptual metacognition task there is a clearly correct Type 1 answer (e.g., stimulus was present or absent) whereas the question posed in these tasks does here does not have an objectively correct answer. Regardless of the stimulus delay, the correct answer is always \"I was the agent\", so really the task is looking at variance in Type 1 and Type 2 judgements which is separate from the ground truth (i.e., they are always the agent on every trial). This strikes me as an important difference from the standard metacognition framework as it is applied to perception or memory judgements, and may thus be worth flagging explicitly to a reader.\n\n2. The Gaussian schematics of the models in Figure 2, Figure 3 etc. are a bit opaque without describing what the underlying variable is. Making it clear these show a probabilistic representation of sensorimotor delays would make these more intelligible.\n\n3. The authors split the paper into 'confirmatory' and 'exploratory' analyses. I understand why, given their pre-registration, but my personal feeling was this disrupted the flow of the paper somewhat, since it means the reader sees the confidence task, then the agency task, then a model of the agency data, then a return to the confidence task. Grouping the sections by task (e.g., confidence task/ confidence model/ agency task/ agency model) might build up the authors conclusions more naturally since it establishes 'what is metacognition like?' before then asking 'is agency like that?'. Of course, this is just a thought, and doesn't change the substance of what is presented.\n\n4. In Figures that show model predictions or simulated data (e.g., Figure 3) I think it could be helpful to show simulated/predicted data in the same format as the original data displays (e.g., matching the plots of how data is shown in Figure 2c). This would make it easier for the reader to compare qualitative differences between the simulated and real data, and between each of the models. (Admittedly, this is done in Figure 4, but the granularity of the presentation is hard to translate back up to the big picture patterns observed in the experiments).\n\n5. In standard use 'noise' is something added to stimuli to make discriminations harder. Here the signal strength is actually reduced by dimming the virtual lights, rather than adding a noise mask etc. Labelling the conditions as something like 'Signal strength \u2013 High/Low' (reversed accordingly) might be more appropriate.\n\n6. p.22 \"pre-reflexive FoA\". I think the authors may mean 'pre-reflective'\n",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a8386c7c-d919-4d0b-a667-0c3855d2a3b2",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C1",
+      "claim": "Acting in the world is accompanied by a sense of agency, or experience of control over our actions and their outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Acting in the world is accompanied by a sense of agency, or experience of control over our actions and their outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about sense of agency that draws from established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "4bd1901d-9f88-4278-916b-1037038c8e67",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C2",
+      "claim": "Agency ratings, unlike confidence, were best explained by a model involving no estimates of sensory noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the predictions of two computational models to participants' ratings and found that agency ratings, unlike confidence, were best explained by a model involving no estimates of sensory noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational modeling results comparing two models against participants' data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "f1008b5b-7e74-4b2b-ad8f-79214b85ba5d",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C3",
+      "claim": "Agency judgments reflect first-order measures of the internal signal, without involving metacognitive computations.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that agency judgments reflect first-order measures of the internal signal, without involving metacognitive computations, challenging the assumed link between the two cognitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the computational modeling results showing the First-order model better explained the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "9eabfde6-74e2-4a94-af45-778444303578",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C4",
+      "claim": "Agency depends on a comparison between the predicted and observed consequences of our actions, resulting in a prediction error signal if they do not match.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has suggested that agency depends on a comparison between the predicted and observed consequences of our actions, resulting in a prediction error signal if they do not match.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is attributed to previous research and represents established theory in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "2c387c28-e92f-4c9f-808a-38e2847ba7e2",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C5",
+      "claim": "Under the comparator model of agency, it is the prediction error signal that leads to our feeling of agency (FoA).",
+      "claim_type": "EXPLICIT",
+      "source": "Under this widely accepted comparator model of agency, it is the prediction error signal that leads to our feeling of agency (FoA), which we assess in order to make judgments of agency (JoAs) (Carruthers, 2012; Frith et al., 2000; Haggard, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical work on the comparator model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "4f62edcf-6653-48af-bb26-1e1182c10f8e",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C6",
+      "claim": "Noisy agency signals are suggested to play a role in clinical cases involving striking disruptions to agency, such as in schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Noisy agency signals are suggested to play a role in clinical cases involving striking disruptions to agency, such as in schizophrenia (Corlett et al., 2010; Fletcher and Frith, 2009; Moore and Fletcher, 2012; Robinson et al., 2016), so it is critical to understand precisely how agency signals change with uncertainty, in both healthy and clinical populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on schizophrenia and agency.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "40896822-86cc-4b93-beec-f976c23e72e8",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C7",
+      "claim": "Participants' feeling of agency (FoA), as measured by an implicit temporal binding effect, has been found to rely less on cues that are noisy or imprecise, and more on more informative cues.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these models, participants' FoA, as measured by an implicit temporal binding effect, has been found to rely less on cues that are noisy or imprecise, and more on more informative cues (Moore et al., 2009; Wolpe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "297a801d-aa5a-4e68-a55a-c3dd6d5a0984",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C8",
+      "claim": "Explicit judgments of agency (JoAs) are generally considered to be at a higher level of the processing hierarchy than feelings of agency (FoAs).",
+      "claim_type": "EXPLICIT",
+      "source": "It is not clear that explicit JoAs incorporate noise in the same way as lower level FoAs, as JoAs are generally considered to be at a higher level of the processing hierarchy (Gallagher, 2007; Haggard and Tsakiris, 2009; Sato, 2009; Synofzik et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical work on the hierarchy of agency processing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "7da51e01-9f65-4c25-86ec-2a4828289488",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C9",
+      "claim": "Metacognitive judgments are often operationalized as confidence ratings following discrimination responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, metacognitive judgments are often operationalized as confidence ratings following discrimination responses (Fleming and Lau, 2014), and these second-order metacognitive ratings have been shown to monitor the uncertainty of the perceived internal signal (de Gardelle et al., 2015; Navajas et al., 2017; Rausch et al., 2017; Sanders et al., 2016; Spence et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on metacognition and confidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "ce4aaea4-4284-4175-b9dc-d6986573e0fb",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C10",
+      "claim": "Judgments of agency (JoAs) have sometimes been considered to be metacognitive reports about otherwise first-order agency signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the literature, JoAs have sometimes been considered to be metacognitive reports about otherwise first-order agency signals (Carruthers, 2015; Metcalfe et al., 2012; Metcalfe and Greene, 2007; Miele et al., 2011; Potts and Carlson, 2019; Terhune and Hedman, 2017; Wenke et al., 2010; Zalla et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature that has conceptualized JoAs as metacognitive.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "4bec92aa-c0b0-4c5c-b604-fe8fc9031f81",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C11",
+      "claim": "Discrimination accuracy was significantly higher for low- vs. high-noise conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the intended effect of the sensory noise manipulation, accuracy was significantly higher for low- vs. high-noise conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the statistical analysis of discrimination accuracy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "025fe3a6-8c81-4826-8244-d9eada2f9734",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C12",
+      "claim": "There was a significant interaction effect between Response Accuracy and Noise on Confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant interaction effect between Response Accuracy and Noise on Confidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the statistical analysis of confidence ratings shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "5c9ef307-58ea-440e-995a-ac7948f09758",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C13",
+      "claim": "Sensory noise was manipulated by changing the illumination, with high sensory noise captured by low contrast, dark illumination, and low sensory noise captured by high contrast, bright illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory noise was manipulated by changing the illumination, with high sensory noise captured by low contrast, dark illumination, and low sensory noise captured by high contrast, bright illumination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental manipulation shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "50a30ae0-493c-402c-96ee-761d41bfdba3",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C14",
+      "claim": "Participants first discriminated which movement they felt more agency over, and then rated their confidence in their own response.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants first discriminated which movement they felt more agency over, and then rated their confidence in their own response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "8c1f712f-68a9-4baf-9ccf-423667dac6df",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C15",
+      "claim": "Metacognitive efficiency for each noise level was estimated using the HMetad\u2032 toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "M-Ratio Estimates. Metacognitive efficiency for each noise level, estimated using the HMetad\u2032 toolbox.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analysis method used to produce the results shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "47236060-8bbb-4f1e-a421-5afe63ffb6d7",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C16",
+      "claim": "Accuracy was significantly lower in the high-noise compared to the low-noise condition (Mdiff = 10%, SE = 1.4%, \u03c72(1) = 97.60, p < 0.001, BF10 = 1.78 \u2715 1020, OR = 1.55, 95% CI [1.42, 1.70]).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we found a main effect of Noise, revealing significantly lower accuracy in the high-noise compared to the low-noise condition (Mdiff = 10%, SE = 1.4%, \u03c72(1) = 97.60, p < 0.001, BF10 = 1.78 \u2715 1020, OR = 1.55, 95% CI [1.42, 1.70]; Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the discrimination accuracy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "e07d1168-2af9-4ffd-9e56-bbb13f6d418e",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C17",
+      "claim": "There was a significant interaction between Noise and Response Accuracy on confidence, F(1,8858) = 14.43, p < 0.001, BF10 = 2.19, \u03b72p = 0.0016.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our predictions, we found a significant interaction between Noise and Response Accuracy on confidence, F(1,8858) = 14.43, p < 0.001, BF10 = 2.19, \u03b72p = 0.0016 (Figure 1D), with a stronger difference in confidence between correct and incorrect trials under low noise (MdiffCorrect-Incorrect = 0.58, SE = 0.044) compared to high noise (MdiffCorrect-Incorrect = 0.34, SE = 0.042).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the confidence rating data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "014b0d61-e5be-448e-af42-9d93d6e10160",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C18",
+      "claim": "Confidence following incorrect decisions was lower in the high-noise compared to the low-noise condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the interaction effect, we found that confidence following incorrect decisions was lower in the high-noise compared to the low-noise condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the confidence rating data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "b5ae8866-eaac-4bfa-81a4-fbeaae865cf0",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C19",
+      "claim": "There was a significant main effect of Response on confidence, F(1,8872) = 82.64, p < 0.001, BF10 = 5.71 \u2715 1014, \u03b72p = 0.0092.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found a significant main effect of Response, F(1,8872) = 82.64, p < 0.001, BF10 = 5.71 \u2715 1014, \u03b72p = 0.0092, with pairwise comparisons revealing significantly higher confidence ratings when participants reported feeling more agency over the stimulus in the second interval, compared to the first (Mdiff = \u20130.27, SE = 0.030), t(8872) = \u20139.09, p < 0.001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the confidence rating data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "85d4d817-45ac-483f-a374-0be1c1443af4",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C20",
+      "claim": "Participants' metacognitive efficiency (M-Ratio) was above-chance in both conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to further ensure that participants' confidence ratings reflected metacognitive processing, especially given relatively low accuracy under high noise, we checked that their metacognitive efficiency (M-Ratio) was above-chance in both conditions (Figure 1E; see Appendix 3 for full analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the M-Ratio analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "5825d050-7e25-40a5-95f8-d7e4c45e04bc",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C21",
+      "claim": "There was a significant interaction effect between Noise and Delay on JoA, F(1,52) = 61.16, p < 0.001, BF10 = 3.78 \u2715 106, \u03b72p = 0.54, 95% CI [0.35, 0.67].",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant interaction effect between Noise and Delay, F(1,52) = 61.16, p < 0.001, BF10 = 3.78 \u2715 106, \u03b72p = 0.54, 95% CI [0.35, 0.67], with a less extreme negative slope across delay values in the high-noise condition (\u03b2High = -5.93, SE = 0.69), compared to low-noise (\u03b2Low = -9.84, SE = 0.77) (Figure 2C), suggesting that JoAs met our first criterion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the agency rating data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "61eb75ce-75b8-49a1-a265-4bb004019b4d",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C22",
+      "claim": "There was a significant main effect of Delay on JoA, F(1,39) = 132.05, p < 0.001, BF10 = 14486.52, \u03b72p = 0.77, 95% CI [0.64, 0.85].",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a significant main effect of Delay, F(1,39) = 132.05, p < 0.001, BF10 = 14486.52, \u03b72p = 0.77, 95% CI [0.64, 0.85], replicating previous findings that showed increasing delays of the virtual hand movement to lead to lower JoAs (Krugwasser et al., 2019; Stern et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the agency rating data and citations to previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "4bb12f8a-3f7e-4910-9c48-17cff76a964c",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C23",
+      "claim": "The majority of participants (37 out of 40) showed the effect of JoAs decreasing with delay in both conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found this effect of JoAs decreasing with delay for the majority of participants (37 out of 40) included in this analysis in both conditions, indicating that participants were able to make meaningful ratings, even in the high-noise condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of individual participant data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "61a58271-757e-4a26-9d57-4a1f418fb638",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C24",
+      "claim": "The First-order model could better explain the JoA data than the Second-order model at the group level (\u0394BICSecond-First = 2728).",
+      "claim_type": "EXPLICIT",
+      "source": "Against the notion that agency ratings and confidence arise from analogous uncertainty monitoring computations, the group-level analysis revealed that the First-order model could better explain the JoA data (\u0394BICSecond-First = 2728, Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the BIC comparison of computational models shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "32f17fa3-976c-459e-ae18-a6d71a859465",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C25",
+      "claim": "The First-order model could better explain the data for 38 out of 40 participants, whereas the Second-order model provided a better fit for only 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the two models to each participant revealed results consistent with the group-level analysis: The First-order model could better explain the data for 38 out of 40 participants, whereas the Second-order model provided a better fit for only 2 (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the subject-wise BIC comparison shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "dde81f3b-68be-478b-90d5-dd00dd3fe0d1",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C26",
+      "claim": "The protected exceedance probabilities (PEPs) indicated that the First-order model occurs most frequently in the population for agency ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Also in line with this, the PEPs indicated that the First-order model occurs most frequently in the population (Figure 4D), with the predicted frequencies shown in Figure 4E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the PEP analysis shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "020f3a91-c6a0-4dc4-83c8-889e9ac46ceb",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C27",
+      "claim": "The Second-order model could better explain confidence ratings than the First-order model (\u0394BICFirst-Second = 1121).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the Second-order model could better explain confidence ratings (\u0394BICFirst-Second = 1121, Figure 5A), suggesting confidence to involve metacognitive computations, in contrast to JoAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the BIC comparison of computational models for confidence ratings shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "006c5ba5-1dc7-407a-a4ad-e4db25dbe234",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C28",
+      "claim": "The PEPs suggested the Second-order model to be the most frequently occurring model in the population for confidence ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "The PEPs also suggested the Second-order model to be the most frequently occurring model in the population (Figure 5C), with estimated frequencies shown in Figure 5D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the PEP analysis shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "0b3a6050-01aa-415c-86a5-fb4152f9961e",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C29",
+      "claim": "The Second-order model provided a better fit for confidence ratings in 24 out of 40 participants, the First-order model provided a better fit in 13, and a BIC difference of less than 2 in 3.",
+      "claim_type": "EXPLICIT",
+      "source": "The subject-wise BIC comparison revealed the Second-order model to provide a better fit in 24 out of 40 participants, the First-order model to provide a better fit in 13, and a BIC difference of less than 2 (suggesting neither model being a conclusively better fit) in 3 (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the subject-wise BIC comparison shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "7554e63a-b1c0-4752-a0c1-2a3ce094b9b0",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C30",
+      "claim": "Uncertainty did not affect agency ratings in the same way as it does confidence ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we tested whether JoAs are metacognitive in a computational sense by examining whether they involve the same second-order uncertainty monitoring computations as metacognitive confidence ratings, or whether they can only be said to be metacognitive at a broad conceptual level. We found that uncertainty did not affect agency ratings in the same way as it does confidence ratings, suggesting that any effect of noise is better considered as an influence on first-order signals, without involving metacognitive noise estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the computational modeling results comparing agency and confidence ratings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "baf8491b-c15f-4c20-8e16-8b01da657042",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C31",
+      "claim": "Participants can make metacognitive confidence judgments about agency decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also found that participants can make metacognitive confidence judgments about agency decisions, but that subjective agency ratings do not share these computations, despite the same basic agency task and noise manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the results of the confidence task showing above-chance metacognitive efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "bae554f2-c57b-4d0d-9dc9-a81255f6852e",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C32",
+      "claim": "Confidence judgments about agency should be considered as the metacognitive level of an agency processing hierarchy, with agency judgments as explicit first-order judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that confidence judgments about agency should be considered as the metacognitive level of an agency processing hierarchy, with agency judgments as explicit first-order judgments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "c248d4de-5a09-4a72-a6dc-3f5814abe08c",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C33",
+      "claim": "The dependence of agency ratings on the noise condition may be highly relevant both for future experimental design and in the interpretation of explicit agency reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we suggest that JoAs do not imply metacognitive uncertainty monitoring, the dependence of agency ratings on the noise condition should not be overlooked and may be highly relevant both for future experimental design and in the interpretation of explicit agency reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the findings for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "aa76dc0a-e0f9-4e5b-a81f-f3ceb9e6ee3e",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C34",
+      "claim": "The findings are in line with multifactorial accounts of JoAs as involving a variety of both internal and external cues.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is in line with multifactorial accounts of JoAs as involving a variety of both internal and external cues (Synofzik et al., 2008), and with the expanding empirical work investigating a range of contextual effects on agency (Minohara et al., 2016; Wen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the current findings to previous theoretical and empirical work through citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "937f054e-74b0-4b16-8e95-805ce7155b0d",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C35",
+      "claim": "The findings fit within cue integration theories of agency, with the delay information being weighted less heavily when the signal is made less precise.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also fits within cue integration theories of agency (Moore and Fletcher, 2012; Synofzik et al., 2013), with the delay information being weighted less heavily when the signal is made less precise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the current findings to cue integration theories through citations and inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "e9e9f13e-b699-4ef7-ba77-5da1b04aa152",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C36",
+      "claim": "Having a perceivable manipulation such as reduced visibility in order to add noise to feedback cues may itself act as an additional factor influencing agency judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these results are relevant to empirical work examining cue integration in agency, as they suggest that having a perceivable manipulation such as reduced visibility in order to add noise to feedback cues may itself act as an additional factor influencing agency judgments, which should be accounted for in design and analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of the findings for experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "df9567e7-b8d9-4517-abb2-ec1241e53e90",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C37",
+      "claim": "The findings support the suggestions of previous work that, while Bayesian confidence computations may underlie pre-reflective FoA, explicit JoAs reflect a different computational mechanism, and factor in different contextual information.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support the suggestions of previous work that, while Bayesian confidence computations may underlie pre-reflective FoA, explicit JoAs reflect a different computational mechanism, and factor in different contextual information (Legaspi and Toyoizumi, 2019; Wen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the current findings to previous work through citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "1da17618-5637-4505-b344-e2ce52193687",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C38",
+      "claim": "Sensory noise information may influence lower level, perceptual agency signals by making them more variable, and these more variable signals then feed into higher level JoAs, but estimates of the noise do not contribute as an additional cue to inform the JoAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken into the context of two-step models of agency (Synofzik et al., 2008), our results suggest that sensory noise information may influence lower level, perceptual agency signals by making them more variable, and that these more variable signals then feed into higher level JoAs, but that estimates of the noise do not contribute as an additional cue to inform the JoAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of agency processing based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "5ebe1335-9d80-470e-ab6c-639687f31630",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C39",
+      "claim": "Higher order agency states remain naive with regard to how noisy the lower level signals are.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, higher order agency states remain naive with regard to how noisy the lower level signals are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that JoAs do not involve metacognitive noise estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "e8cf341b-b560-4945-8f4c-e05de9ad36bd",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C40",
+      "claim": "If explicit JoAs do not consider uncertainty, this could lead to extreme agency reports despite unreliable evidence and inaccurate agency inferences in clinical cases.",
+      "claim_type": "EXPLICIT",
+      "source": "If explicit JoAs do not consider this uncertainty (as our findings indicate), this could lead to extreme agency reports despite unreliable evidence and inaccurate agency inferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the findings for clinical populations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "c52ba645-7b26-47b1-9295-86a93452e78a",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C41",
+      "claim": "The findings are in line with work on agency misattributions in schizophrenia suggesting that they may be due to particularly noisy low level agency information, possibly due to dysregulated neurotransmitter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with work on agency misattributions in schizophrenia suggesting that they may be due to particularly noisy low level agency information, possibly due to dysregulated neurotransmitter activity (Corlett et al., 2010; Fletcher and Frith, 2009; Moore and Fletcher, 2012; Robinson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the current findings to previous work on schizophrenia through citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "c1519094-3229-4467-b090-cca765fa5119",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C42",
+      "claim": "The confidence task served as a positive control task to ensure that the noise manipulation had the expected effect on a metacognitive judgment.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we note that the findings that we describe here do not rely on a comparison between tasks. The confidence task merely served as a positive control task to ensure that our noise manipulation had the expected effect on a metacognitive judgment and that the second-order model we built best predicted the results of computations we knew to be higher-order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological role of the confidence task in the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "6be9d5e4-438a-423d-b8ef-23752b5c2d7b",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C43",
+      "claim": "The conclusions about the computations underlying the JoAs are limited by the manipulations used in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusions about the computations underlying the JoAs are limited by the manipulations used in the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "ac9d281b-5719-4271-87e4-311bb76e97f6",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C44",
+      "claim": "Noise was manipulated externally, not directly internally, and only added noise to the perceived delay signals, rather than motor or somatosensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we manipulated noise externally, not directly internally, and only added noise to the perceived delay signals, rather than motor or somatosensory cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the experimental manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "44c4db6a-68d3-4be1-91c6-344f59cfd0d2",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C45",
+      "claim": "Action selection noise was not manipulated, which has been shown to influence agency independently of the comparator signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally did not manipulate action selection noise, which has been shown to influence agency independently of the comparator signal (Wenke et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the experimental manipulation with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "176c5d32-c3c0-4035-8e07-8761576d2599",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C46",
+      "claim": "It is unclear whether the findings apply to other kinds of agency manipulations beyond altering the timing of the action outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our conclusions hold for the agency manipulation we used, namely altering the timing of the action outcome. But, it is unclear whether these findings apply to other kinds of agency manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the study regarding generalizability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "e1b6903c-88a4-4e6a-904b-22424da92d38",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C47",
+      "claim": "The approach of introducing delay in the visual feedback has been validated against other measures of agency in previous work using the virtual hand agency paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work using this virtual hand agency paradigm has also validated the approach of introducing delay in the visual feedback against other measures of agency (Krugwasser et al., 2019; Stern et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous validation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "c5e0442d-9f87-4c2d-8185-aed44c285021",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C48",
+      "claim": "The results should be considered in the context of the particular agency rating scale used, as this will constrain participants' rating behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results should also be considered in the context of the particular agency rating scale we used, as this will constrain participants' rating behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation regarding the rating scale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "326273c7-8f12-4b49-91eb-0144fbbb60aa",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C49",
+      "claim": "Similar agency scales are commonly used in agency research.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar agency scales are commonly used in agency research (Dewey and Knoblich, 2014; Imaizumi and Tanno, 2019; Kawabe et al., 2013; Metcalfe and Greene, 2007; Miele et al., 2011; Sato and Yasuda, 2005; Stern et al., 2020; Voss et al., 2017; Wen et al., 2015a), so the results presented here are relevant to understand the computations of agency ratings discussed in the existing literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies using similar scales.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "86898f0a-25ba-4528-b54a-fa2d234bb700",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C50",
+      "claim": "A 2IFC task on agency followed by a confidence judgment may be more adequate to measure a metacognitive component of agency processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that the JoAs measured in the literature do not indicate metacognitive computations. On the basis of these results, we concur with recent work (Wang et al., 2020) that suggests that a 2IFC task on agency followed by a confidence judgment may be more adequate to measure a metacognitive component of agency processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on the findings, with a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "3693f46c-7836-47a9-82f1-cab0acee9ad4",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C51",
+      "claim": "The experiment was pre-registered (osf.io/pyjhm).",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment was pre-registered (osf.io/pyjhm), and we describe deviations from the pre-registered plan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological transparency of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "988bc73d-f791-45cb-89f6-90d8c5fce0b1",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C52",
+      "claim": "A sample size of 32 participants was pre-registered based on power estimates from similar tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We pre-registered a sample size of 32 participants (based on power estimates from similar tasks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pre-registered sample size and its justification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "1119be7b-e244-4931-8c95-d2f7a9108880",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C53",
+      "claim": "Data was collected until 40 participants that displayed the basic and expected manipulation effect of illumination were reached.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected data until we reached 40 participants that displayed the basic and expected manipulation effect of illumination (see above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the actual data collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "02ce6eb5-8919-4474-9959-65b762b37999",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C54",
+      "claim": "47 young, healthy participants between 18 and 35 years of age (M = 27.15, SD = 4.68) were tested in Berlin.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested 47 young, healthy participants between 18 and 35 years of age (M = 27.15, SD = 4.68) in Berlin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "0c324da9-5ee2-408b-9db3-26cf8063a6c7",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C55",
+      "claim": "Participants were required to be right handed (Edinburgh Handedness Inventory score: M = 79.5, SD = 23.6).",
+      "claim_type": "EXPLICIT",
+      "source": "To participate in the study, we required that participants were right handed (Edinburgh Handedness Inventory score: M = 79.5, SD = 23.6), had no injury or condition preventing or restricting movement of the right index finger, had normal or corrected-to-normal vision, and were fluent in English.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "6f1ca8c8-c637-4d0b-b8bd-a102d238ca99",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C56",
+      "claim": "The ethics committee of the Institute of Psychology at the Humboldt-Universit\u00e4t zu Berlin approved the study (Nr. 2020\u201329), which conformed to the Declaration of Helsinki.",
+      "claim_type": "EXPLICIT",
+      "source": "The ethics committee of the Institute of Psychology at the Humboldt-Universit\u00e4t zu Berlin approved the study (Nr. 2020\u201329), which conformed to the Declaration of Helsinki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the ethical approval of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "52355d09-8939-4e47-9963-49d8ada10098",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C57",
+      "claim": "A LEAP Motion controller was used to track participants' hand motion and to control in real time the movement of a virtual hand displayed on the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a LEAP Motion controller (Leap Motion Inc, San Francisco, CA) to track participants' hand motion and to control in real time the movement of a virtual hand displayed on the screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "f9ea0212-4d8e-4723-b05f-923b2fe00682",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C58",
+      "claim": "The experiment ran on a Dell Latitude 5591 laptop with a display resolution of 1920 \u00d7 1080 (refresh rate = 60 Hz) using software built in Unity 5.6.1.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment ran on a Dell Latitude 5591 laptop (Intel core i5 with 16 GB of RAM) with a display resolution of 1920 \u00d7 1080 (refresh rate = 60 Hz) using software built in Unity 5.6.1, and was modified from software used in previous studies (Krugwasser et al., 2019; Stern et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental apparatus and software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "6eee8c37-41dd-4260-9b4b-a2c118375fe7",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C59",
+      "claim": "Blackout curtains were used during all testing to keep the lighting conditions within the room as consistent as possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Blackout curtains were used during all testing to keep the lighting conditions within the room as consistent as possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail to control environmental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "8c95cc69-a61d-4357-b62d-1d7669ada0e4",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C60",
+      "claim": "Each participant completed two tasks: a confidence-rating task and an agency-rating task.",
+      "claim_type": "EXPLICIT",
+      "source": "Each participant completed two tasks: a confidence-rating task (Figure 1B) and an agency-rating task (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "40894f6d-ccec-479b-94e9-2df6af656d3b",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C61",
+      "claim": "In both tasks, sensory noise was manipulated orthogonally to the decision variable by controlling the visibility of the virtual hand.",
+      "claim_type": "EXPLICIT",
+      "source": "In both tasks, we manipulated sensory uncertainty by controlling the visibility of the virtual hand, which is computationally analogous to adding noise to the signal. This allowed us to compare the effect of noise on JoAs and confidence. Importantly, we manipulated sensory noise orthogonally to the decision variable, as done by previous work (Bang and Fleming, 2018; de Gardelle et al., 2015; Spence et al., 2016), which allowed us to precisely examine effects of noise without altering the true degree of control that the participants had over the virtual hand movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental manipulation and its justification with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "aae62080-a9f6-446a-a527-c8d950e9698b",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C62",
+      "claim": "A short thresholding procedure was done prior to starting the experiment to set the illumination level that would be used in the high-noise condition of the main tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to starting the experiment, participants completed the Edinburgh handedness scale. We then did a short thresholding procedure to set the illumination level that would be used in the high-noise condition of the main tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "a9e70eab-e056-444c-8427-81060ff221fa",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C63",
+      "claim": "The baseline illumination levels were set in the Unity environment with a directional light intensity of 0 in the high-noise condition and 0.001 in the low-noise condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline illumination levels were set in the Unity environment with a directional light intensity of 0 in the high-noise condition and 0.001 in the low-noise condition, but the brightness of the screen was then further thresholded in order to account for differences in eyesight and lighting conditions in the room.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific parameter settings for the noise manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "82ae474a-ad5e-4690-84cf-03bb50b99060",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C64",
+      "claim": "All participants performed the agency-rating task first so that subjective ratings would not be biased by the structure or ratings of the confidence task.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants performed the agency-rating task first so that subjective ratings would not be biased by the structure or ratings of the confidence task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task order and its justification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "dad7383c-ca3d-4edf-9348-dfc20680247f",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C66",
+      "claim": "After every movement in the agency-rating task, participants rated their agency on a scale from 1 to 6.",
+      "claim_type": "EXPLICIT",
+      "source": "After every movement, participants rated their agency on a scale from 1 to 6 (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the response measure in the agency-rating task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "ba1a1f76-e2f0-4c2b-a071-cce2db423bac",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C67",
+      "claim": "Participants were explained that the term 'agency' referred to how much control they had over the movement of the virtual hand, and they were asked to focus specifically on the timing of the movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We explained that the term 'agency' referred to how much control they had over the movement of the virtual hand, and they were asked to focus specifically on the timing of the movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the instructions given to participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "7666e09e-ffb2-4e43-906e-22b46ae4443b",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C68",
+      "claim": "Overall, 2.4% of trials were marked as errors in the confidence task, and 1.9% were marked as errors in the agency rating task.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 2.4% of trials were marked as errors in the confidence task, and 1.9% were marked as errors in the agency rating task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the error rate in the tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "cad6a800-c449-4ca3-a6a2-446ea365dbdf",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C69",
+      "claim": "There were 60 trials per delay level and lighting condition in the agency-rating task, for a total of 480 trials, split across six blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 60 trials per delay level and lighting condition, for a total of 480 trials, split across six blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of trials in the agency-rating task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "5f838c79-03f2-4cb2-88c7-27aaf9092c7a",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C70",
+      "claim": "The agency-rating task took approximately 45 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The agency-rating task took approximately 45 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the duration of the agency-rating task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "2431996b-897f-4676-943e-89bcb6da45c1",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C71",
+      "claim": "In the confidence-rating task, participants made two consecutive movements, decided which virtual hand movement they had more agency over, and rated their confidence in their response from 1 to 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants again flexed and extended their right index finger under the LEAP motion tracker, while looking at the virtual hand on the screen. In contrast to the agency-rating task, they made two consecutive movements, each cued by the appearance of the virtual hand, and separated with a blank gray screen. They then decided which virtual hand movement they had more agency over, and rated their confidence in their response from 1 (lowest) to 6 (highest).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for the confidence-rating task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "3139291c-c794-4891-9fd4-636007f9ed6a",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C72",
+      "claim": "The difference in delay levels between the movements in each trial of the confidence task was staircased using an online 2-down-1-up staircasing procedure aiming to achieve an overall accuracy of approximately 71%.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in delay levels between the movements in each trial was staircased, with one of the two movements always having no delay and the other being adjusted according to an online 2-down-1-up staircasing procedure aiming to achieve an overall accuracy of approximately 71%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the adaptive procedure used in the confidence task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "cbf28746-acc2-4976-9495-46b1afeff3f4",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C73",
+      "claim": "There were 100 trials per noise condition in the confidence task, for a total of 200 trials across five blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 100 trials per noise condition, for a total of 200 trials across five blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of trials in the confidence task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "456c4d87-8e50-4940-91e2-8204110d6da1",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C74",
+      "claim": "The confidence task took approximately 45 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The confidence task took approximately 45 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the duration of the confidence task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "98023bae-913b-46d4-a842-2ba58b47e705",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C75",
+      "claim": "Any participants for whom discrimination accuracy in the high-noise condition was not lower than in the low-noise condition in the confidence task were excluded from the analyses of the agency rating task.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore excluded from the following analyses any participants for whom discrimination accuracy in the high-noise condition was not lower than in the low-noise condition in the confidence task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an exclusion criterion for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "a1d97012-ff97-49e3-8039-6a1bf865f1e0",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C76",
+      "claim": "All the results remain largely the same, and the conclusions unchanged, when data from all participants are included in the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that all the results described below remain largely the same, and the conclusions unchanged, when we include the data from all participants in the analyses (see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a robustness check of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "dd32a8de-28d5-4de9-897c-3127b48949e4",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C77",
+      "claim": "Linear mixed-effects models were built using the 'lme4' package in R.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested our main hypotheses using the 'lme4' package (Bates et al., 2015) in R (R Development Core Team, 2020) to build linear mixed-effects models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "a048a161-8634-484c-9d01-ed5e4dc20ccb",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C78",
+      "claim": "All hypotheses were tested using two-tailed tests and an alpha level of 0.05, and additionally using Bayes factors.",
+      "claim_type": "EXPLICIT",
+      "source": "All hypotheses were tested using two-tailed tests and an alpha level of 0.05, and additionally using Bayes factors, which we computed with the 'BayesTestR' package (Makowski et al., 2019) using default priors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical testing approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "d246f0cc-f685-403c-b944-e1fbfb4a5d9f",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C79",
+      "claim": "Metacognitive efficiency (M-Ratio) was measured using the HMeta-d\u2032 toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyse metacognitive ability from the confidence task, we measured metacognitive efficiency (M-Ratio) using the HMeta-d\u2032 toolbox (Fleming, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to measure metacognitive efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "098759d5-9498-4487-bb8c-14564e388d75",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C80",
+      "claim": "A model recovery analysis was performed across the set of winning parameter values of each model across participants, confirming that the models were distinguishable from one another over the entire relevant parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed a model recovery analysis across the set of winning parameter values of each model across participants, confirming that the models were distinguishable from one another over the entire relevant parameter space (see Appendix 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a validation procedure for the computational models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "4e41d6ea-b227-487d-a7b5-630a8a703e46",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C81",
+      "claim": "The Second-order model assumed that agency ratings behave like confidence as described by Bayesian-confidence models, namely as the posterior probability that a decision is correct, given the strength of the internal evidence and the decision.",
+      "claim_type": "EXPLICIT",
+      "source": "The Second-order model assumed that agency ratings behave like confidence as described by Bayesian-confidence models, namely as the posterior probability that a decision is correct, given the strength of the internal evidence and the decision (Navajas et al., 2017; Sanders et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical basis of the Second-order model with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "b491e9bd-3326-47b2-987a-88eaff8a2b4d",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C82",
+      "claim": "In the Second-order model, the computation of the posterior probability requires the observer to have second-order access to estimate their own sensory noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The computation of this probability requires the observer to have second-order access to estimate their own sensory noise (Figure 3A), beyond just adopting precision-weighted cues from the lower level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the Second-order model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "45727576-bb45-4164-875b-cf0e0d7f6f67",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C83",
+      "claim": "In the Second-order model, JoAs are metacognitive because they require a representation of the precision of the first-order agency signal.",
+      "claim_type": "EXPLICIT",
+      "source": "So, in this model, JoAs are metacognitive because they require a representation of the precision of the first-order agency signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the defining characteristic of the Second-order model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "07652f05-2f5a-44ae-81e5-b118dbe16b76",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C84",
+      "claim": "The First-order model assumes that ratings are based on first-order point-estimates of evidence and therefore do not factor in metacognitive estimates of sensory noise.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative, we considered the First-order model, which parallels the Second-order one except that ratings are based on first-order point-estimates of evidence and therefore do not factor in metacognitive estimates of sensory noise (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the key difference of the First-order model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "baa195ca-3663-4f7d-b152-87b2407bb120",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C85",
+      "claim": "The First-order model accounts for the observed relationship between noise and JoAs by considering that participants might simply treat the noise conditions independently.",
+      "claim_type": "EXPLICIT",
+      "source": "This First-order model accounts for the observed relationship between noise and JoAs by considering that participants might simply treat the noise conditions independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism by which the First-order model explains the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "ad71284d-ef23-4db0-81fe-8e62ff18ac6d",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C86",
+      "claim": "In the First-order model, the only role noise plays is to make the conditions distinguishable from one another such that participants might treat them independently and use the rating scale accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, this condition-dependent scaling is achieved without making any estimates of the sensory noise of the conditions. The only role noise plays in this model is to make the conditions distinguishable from one another such that participants might treat them independently and use the rating scale accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the role of noise in the First-order model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "d21eeee2-0dfd-4e7a-8349-60e9b02c18f8",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C88",
+      "claim": "In the Second-order model, a JoA of '6' would always reflect the same perceived level of certainty about the agency decision and hence the same agency experience.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the Second-order model, a JoA of '6' would always reflect the same perceived level of certainty about the agency decision and hence the same agency experience, since JoAs combine the evidence strength and sensory noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a prediction of the Second-order model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "cced52aa-f532-4be3-8369-b9df4230a115",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C89",
+      "claim": "The best fitting parameters for the First-order model at the group level were \u03c3L = 0.16, \u03c3H = 0.16, (c) = 0.16, NRYes = 3, and (s) = 1.11.",
+      "claim_type": "EXPLICIT",
+      "source": "The best fitting parameters for this First-order model were \u03c3L = 0.16, \u03c3H = 0.16, (c) = 0.16, NRYes = 3, and (s) = 1.11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the parameter estimates from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "62539027-d034-48c9-bd5a-3595335f5420",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C90",
+      "claim": "The best fitting parameters for the Second-order model at the group level were \u03c3L = 0.19, \u03c3H = 0.24, (c) = 0.16, and NRYes = 3.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the best fitting parameters for the Second-order model were \u03c3L = 0.19, \u03c3H = 0.24, (c) = 0.16, and NRYes = 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the parameter estimates from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "3edefd2e-1615-44e8-9d1c-7f2f5f070ad5",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C91",
+      "claim": "The First-order model included one additional free parameter compared to the Second-order model.",
+      "claim_type": "EXPLICIT",
+      "source": "This was despite the First-order model including one additional free parameter, compared to the Second-order model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a difference in model complexity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "33b00460-bc26-49b1-82a3-0710601e2250",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "claim_id": "C92",
+      "claim": "Reproducible analysis scripts and models are publicly available under https://gitlab.com/MarikaConstant/metaAgency.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducible analysis scripts and models are publicly available under https://gitlab.com/MarikaConstant/metaAgency, (copy archived at swh:1:rev:10a9c40ac4a8b45c81c5966297ef9911b2d33043, Constant, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability of the analysis code.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36db0f5c-9779-4e29-9305-a7a3c99b6abf",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The sensory noise manipulation (varying illumination) successfully affected discrimination accuracy in the confidence task, with significantly higher accuracy in low-noise versus high-noise conditions (10% difference, p < 0.001, BF10 = 1.78 \u00d7 10^20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C16, C13, and C61 collectively demonstrate that the experimental manipulation worked as intended. The statistical evidence is strong with large effect sizes and Bayes factors, appropriate controls (orthogonal manipulation), and clear methodological description. This validates the noise manipulation for subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Confidence ratings in the 2IFC agency discrimination task showed the expected metacognitive pattern: a significant interaction between noise and response accuracy (F(1,8858) = 14.43, p < 0.001), with metacognitive efficiency (M-Ratio) above chance in both conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C17-C20 provide converging evidence that confidence ratings reflect metacognitive processing. The interaction effect, above-chance M-Ratio, and appropriate statistical analyses support this conclusion. The confidence task serves as a validated positive control for metacognitive judgments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "c7103ef1-5456-4fce-8512-01554ff360cd",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Agency ratings (JoAs) showed a significant interaction between noise and delay (F(1,52) = 61.16, p < 0.001, \u03b7\u00b2p = 0.54), with less extreme slopes in high-noise conditions, meeting the first behavioral criterion for potential metacognitive processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 demonstrate that JoAs are influenced by sensory noise beyond simple variance increases. The large effect size (\u03b7\u00b2p = 0.54), strong statistical evidence, and replication of delay effects across 37/40 participants provide robust support. However, this behavioral pattern alone is insufficient to conclude metacognitive processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "11f0e7c5-4709-484a-af48-9c31e73a1774",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Computational modeling revealed that the First-order model (without metacognitive noise estimates) better explained agency ratings than the Second-order model at both group level (\u0394BIC = 2728) and individual level (38/40 participants), with protected exceedance probabilities favoring the First-order model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C89, C91, and C80 provide strong computational evidence against metacognitive processing in JoAs. The large BIC difference, consistency across participants, model recovery validation, and advantage despite additional free parameter in First-order model collectively support this conclusion. The modeling approach is rigorous and appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "58c1352c-9fb4-4217-a134-91c84e924ed1",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Second-order model better explained confidence ratings than the First-order model (\u0394BIC = 1121), with protected exceedance probabilities favoring the Second-order model, confirming that confidence involves metacognitive computations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 demonstrate that confidence ratings, unlike agency ratings, involve metacognitive noise monitoring. The BIC comparison, PEP analysis, and majority of individual fits (24/40) support this conclusion. This serves as validation that the Second-order model can capture metacognitive processing when present.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "eb68d035-6dbe-4beb-949d-274a5e349b5a",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Agency judgments reflect first-order measures of internal signals without metacognitive computations, while participants can make metacognitive confidence judgments about the same agency decisions, suggesting a hierarchical processing structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C30-C32 represent the main conclusions synthesizing the behavioral and computational findings. The evidence from both tasks using identical stimuli and noise manipulations, combined with contrasting model fits, strongly supports this hierarchical interpretation. The logic is sound and conclusions are appropriately constrained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Two computational models were developed: a Second-order model where JoAs involve metacognitive estimates of sensory noise (posterior probability computation), and a First-order model where JoAs reflect linear distance from criterion without noise estimates but with condition-dependent rescaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C86, C88 describe the theoretical basis and key distinctions between models. The models are clearly specified, theoretically motivated, and appropriately formalized. The critical distinction (second-order noise monitoring vs. condition-dependent rescaling) is well-articulated and testable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "1798c6d4-4307-4791-8230-e3b03b686762",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings align with multifactorial and cue integration theories of agency, suggesting that sensory noise influences lower-level perceptual agency signals which feed into higher-level JoAs, but noise estimates themselves do not serve as additional cues, leaving higher-order states 'naive' to signal precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 appropriately contextualize findings within existing theoretical frameworks through citations. The mechanistic interpretation (noise affects signal variability but not as metacognitive cue) is a reasonable inference from the data, though it remains somewhat speculative about underlying neural mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "ee35b130-87f9-4022-95e4-0c2e00d256a9",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The lack of metacognitive noise monitoring in JoAs may have clinical implications, potentially leading to extreme agency reports despite unreliable evidence in conditions like schizophrenia where low-level agency signals are particularly noisy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40, C41, and C6 make speculative connections to clinical populations. While the logic is plausible and consistent with cited work on schizophrenia, no clinical data are presented in this study. The inference requires empirical validation in clinical samples before being considered supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "f2dc7bb1-5813-4609-a144-be4d72bede78",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study has several acknowledged limitations: noise was manipulated externally (illumination) rather than internally, only visual delay signals were affected, action selection noise was not manipulated, generalizability to other agency manipulations is unclear, and results are constrained by the particular rating scale used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 provide appropriate acknowledgment of limitations. The authors correctly identify constraints on generalizability while noting validation from prior work (C47) and relevance to common practices (C49). This transparent discussion of limitations strengthens rather than weakens the overall contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "d01bed38-5e66-4b28-aa1c-c64194b78cfd",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors recommend that 2IFC agency tasks followed by confidence judgments may be more adequate for measuring metacognitive components of agency processing, and that the dependence of agency ratings on noise conditions has important implications for experimental design and interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C33 offer reasonable methodological recommendations based on the findings. The suggestion for 2IFC+confidence is supported by the current data and cited prior work (C50). The caution about noise-dependent rating behavior (C33) is a valid practical implication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "9151a116-6418-4fb7-b747-47c6e2ad9d88",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study employed rigorous methodology including pre-registration, appropriate sample size (40 participants meeting criteria from 47 tested), validated apparatus (LEAP Motion, virtual hand paradigm), controlled procedures, comprehensive statistical analyses (mixed-effects models, Bayesian approaches), and publicly available code.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C79, C92 collectively describe methodological rigor. Pre-registration (C51), exclusion criteria with robustness checks (C75-C76), appropriate statistical methods (C77-C79), ethical approval (C56), and code availability (C92) demonstrate high methodological standards. The detailed procedural descriptions enable replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "a0aa4a24-de40-4034-875c-a5c82f8572ef",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The confidence task served as a positive control to validate that the noise manipulation affected metacognitive judgments as expected and that the Second-order model could capture known metacognitive computations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 correctly characterizes the methodological role of the confidence task. This is an important design feature that strengthens the interpretation of the agency task results by demonstrating that metacognitive effects can be detected when present.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    },
+    {
+      "id": "09b9db7d-1f3d-4f18-8882-41feac123624",
+      "content_id": "923abd46-0884-46e1-8a50-10cf61cfa9a9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study builds on established theoretical frameworks including the comparator model of agency, hierarchical models distinguishing feelings of agency (FoA) from judgments of agency (JoA), and computational approaches to metacognition as second-order uncertainty monitoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 accurately represent prior theoretical and empirical work through appropriate citations. These background claims establish the conceptual foundation and are well-supported by the cited literature. The authors correctly identify the gap regarding computational mechanisms underlying JoAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:37.557784Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4bec92aa-c0b0-4c5c-b604-fe8fc9031f81",
+      "result_id": "36db0f5c-9779-4e29-9305-a7a3c99b6abf"
+    },
+    {
+      "claim_id": "47236060-8bbb-4f1e-a421-5afe63ffb6d7",
+      "result_id": "36db0f5c-9779-4e29-9305-a7a3c99b6abf"
+    },
+    {
+      "claim_id": "5c9ef307-58ea-440e-995a-ac7948f09758",
+      "result_id": "36db0f5c-9779-4e29-9305-a7a3c99b6abf"
+    },
+    {
+      "claim_id": "40894f6d-ccec-479b-94e9-2df6af656d3b",
+      "result_id": "36db0f5c-9779-4e29-9305-a7a3c99b6abf"
+    },
+    {
+      "claim_id": "025fe3a6-8c81-4826-8244-d9eada2f9734",
+      "result_id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce"
+    },
+    {
+      "claim_id": "e07d1168-2af9-4ffd-9e56-bbb13f6d418e",
+      "result_id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce"
+    },
+    {
+      "claim_id": "014b0d61-e5be-448e-af42-9d93d6e10160",
+      "result_id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce"
+    },
+    {
+      "claim_id": "b5ae8866-eaac-4bfa-81a4-fbeaae865cf0",
+      "result_id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce"
+    },
+    {
+      "claim_id": "85d4d817-45ac-483f-a374-0be1c1443af4",
+      "result_id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce"
+    },
+    {
+      "claim_id": "50a30ae0-493c-402c-96ee-761d41bfdba3",
+      "result_id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce"
+    },
+    {
+      "claim_id": "8c1f712f-68a9-4baf-9ccf-423667dac6df",
+      "result_id": "2b57c6cc-5ba0-4bd2-aef0-7fe8c18eddce"
+    },
+    {
+      "claim_id": "5825d050-7e25-40a5-95f8-d7e4c45e04bc",
+      "result_id": "c7103ef1-5456-4fce-8512-01554ff360cd"
+    },
+    {
+      "claim_id": "61eb75ce-75b8-49a1-a265-4bb004019b4d",
+      "result_id": "c7103ef1-5456-4fce-8512-01554ff360cd"
+    },
+    {
+      "claim_id": "4bb12f8a-3f7e-4910-9c48-17cff76a964c",
+      "result_id": "c7103ef1-5456-4fce-8512-01554ff360cd"
+    },
+    {
+      "claim_id": "dad7383c-ca3d-4edf-9348-dfc20680247f",
+      "result_id": "c7103ef1-5456-4fce-8512-01554ff360cd"
+    },
+    {
+      "claim_id": "ba1a1f76-e2f0-4c2b-a071-cce2db423bac",
+      "result_id": "c7103ef1-5456-4fce-8512-01554ff360cd"
+    },
+    {
+      "claim_id": "61a58271-757e-4a26-9d57-4a1f418fb638",
+      "result_id": "11f0e7c5-4709-484a-af48-9c31e73a1774"
+    },
+    {
+      "claim_id": "32f17fa3-976c-459e-ae18-a6d71a859465",
+      "result_id": "11f0e7c5-4709-484a-af48-9c31e73a1774"
+    },
+    {
+      "claim_id": "dde81f3b-68be-478b-90d5-dd00dd3fe0d1",
+      "result_id": "11f0e7c5-4709-484a-af48-9c31e73a1774"
+    },
+    {
+      "claim_id": "cced52aa-f532-4be3-8369-b9df4230a115",
+      "result_id": "11f0e7c5-4709-484a-af48-9c31e73a1774"
+    },
+    {
+      "claim_id": "3edefd2e-1615-44e8-9d1c-7f2f5f070ad5",
+      "result_id": "11f0e7c5-4709-484a-af48-9c31e73a1774"
+    },
+    {
+      "claim_id": "098759d5-9498-4487-bb8c-14564e388d75",
+      "result_id": "11f0e7c5-4709-484a-af48-9c31e73a1774"
+    },
+    {
+      "claim_id": "020f3a91-c6a0-4dc4-83c8-889e9ac46ceb",
+      "result_id": "58c1352c-9fb4-4217-a134-91c84e924ed1"
+    },
+    {
+      "claim_id": "006c5ba5-1dc7-407a-a4ad-e4db25dbe234",
+      "result_id": "58c1352c-9fb4-4217-a134-91c84e924ed1"
+    },
+    {
+      "claim_id": "0b3a6050-01aa-415c-86a5-fb4152f9961e",
+      "result_id": "58c1352c-9fb4-4217-a134-91c84e924ed1"
+    },
+    {
+      "claim_id": "62539027-d034-48c9-bd5a-3595335f5420",
+      "result_id": "58c1352c-9fb4-4217-a134-91c84e924ed1"
+    },
+    {
+      "claim_id": "4bd1901d-9f88-4278-916b-1037038c8e67",
+      "result_id": "eb68d035-6dbe-4beb-949d-274a5e349b5a"
+    },
+    {
+      "claim_id": "f1008b5b-7e74-4b2b-ad8f-79214b85ba5d",
+      "result_id": "eb68d035-6dbe-4beb-949d-274a5e349b5a"
+    },
+    {
+      "claim_id": "7554e63a-b1c0-4752-a0c1-2a3ce094b9b0",
+      "result_id": "eb68d035-6dbe-4beb-949d-274a5e349b5a"
+    },
+    {
+      "claim_id": "baf8491b-c15f-4c20-8e16-8b01da657042",
+      "result_id": "eb68d035-6dbe-4beb-949d-274a5e349b5a"
+    },
+    {
+      "claim_id": "bae554f2-c57b-4d0d-9dc9-a81255f6852e",
+      "result_id": "eb68d035-6dbe-4beb-949d-274a5e349b5a"
+    },
+    {
+      "claim_id": "4e41d6ea-b227-487d-a7b5-630a8a703e46",
+      "result_id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137"
+    },
+    {
+      "claim_id": "b491e9bd-3326-47b2-987a-88eaff8a2b4d",
+      "result_id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137"
+    },
+    {
+      "claim_id": "45727576-bb45-4164-875b-cf0e0d7f6f67",
+      "result_id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137"
+    },
+    {
+      "claim_id": "07652f05-2f5a-44ae-81e5-b118dbe16b76",
+      "result_id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137"
+    },
+    {
+      "claim_id": "baa195ca-3663-4f7d-b152-87b2407bb120",
+      "result_id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137"
+    },
+    {
+      "claim_id": "ad71284d-ef23-4db0-81fe-8e62ff18ac6d",
+      "result_id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137"
+    },
+    {
+      "claim_id": "d21eeee2-0dfd-4e7a-8349-60e9b02c18f8",
+      "result_id": "fbb8e4b6-4351-4768-ab62-f628ecdc4137"
+    },
+    {
+      "claim_id": "aa76dc0a-e0f9-4e5b-a81f-f3ceb9e6ee3e",
+      "result_id": "1798c6d4-4307-4791-8230-e3b03b686762"
+    },
+    {
+      "claim_id": "937f054e-74b0-4b16-8e95-805ce7155b0d",
+      "result_id": "1798c6d4-4307-4791-8230-e3b03b686762"
+    },
+    {
+      "claim_id": "e9e9f13e-b699-4ef7-ba77-5da1b04aa152",
+      "result_id": "1798c6d4-4307-4791-8230-e3b03b686762"
+    },
+    {
+      "claim_id": "df9567e7-b8d9-4517-abb2-ec1241e53e90",
+      "result_id": "1798c6d4-4307-4791-8230-e3b03b686762"
+    },
+    {
+      "claim_id": "1da17618-5637-4505-b344-e2ce52193687",
+      "result_id": "1798c6d4-4307-4791-8230-e3b03b686762"
+    },
+    {
+      "claim_id": "5ebe1335-9d80-470e-ab6c-639687f31630",
+      "result_id": "1798c6d4-4307-4791-8230-e3b03b686762"
+    },
+    {
+      "claim_id": "e8cf341b-b560-4945-8f4c-e05de9ad36bd",
+      "result_id": "ee35b130-87f9-4022-95e4-0c2e00d256a9"
+    },
+    {
+      "claim_id": "c52ba645-7b26-47b1-9295-86a93452e78a",
+      "result_id": "ee35b130-87f9-4022-95e4-0c2e00d256a9"
+    },
+    {
+      "claim_id": "4f62edcf-6653-48af-bb26-1e1182c10f8e",
+      "result_id": "ee35b130-87f9-4022-95e4-0c2e00d256a9"
+    },
+    {
+      "claim_id": "6be9d5e4-438a-423d-b8ef-23752b5c2d7b",
+      "result_id": "f2dc7bb1-5813-4609-a144-be4d72bede78"
+    },
+    {
+      "claim_id": "ac9d281b-5719-4271-87e4-311bb76e97f6",
+      "result_id": "f2dc7bb1-5813-4609-a144-be4d72bede78"
+    },
+    {
+      "claim_id": "44c4db6a-68d3-4be1-91c6-344f59cfd0d2",
+      "result_id": "f2dc7bb1-5813-4609-a144-be4d72bede78"
+    },
+    {
+      "claim_id": "176c5d32-c3c0-4035-8e07-8761576d2599",
+      "result_id": "f2dc7bb1-5813-4609-a144-be4d72bede78"
+    },
+    {
+      "claim_id": "e1b6903c-88a4-4e6a-904b-22424da92d38",
+      "result_id": "f2dc7bb1-5813-4609-a144-be4d72bede78"
+    },
+    {
+      "claim_id": "c5e0442d-9f87-4c2d-8185-aed44c285021",
+      "result_id": "f2dc7bb1-5813-4609-a144-be4d72bede78"
+    },
+    {
+      "claim_id": "326273c7-8f12-4b49-91eb-0144fbbb60aa",
+      "result_id": "f2dc7bb1-5813-4609-a144-be4d72bede78"
+    },
+    {
+      "claim_id": "86898f0a-25ba-4528-b54a-fa2d234bb700",
+      "result_id": "d01bed38-5e66-4b28-aa1c-c64194b78cfd"
+    },
+    {
+      "claim_id": "c248d4de-5a09-4a72-a6dc-3f5814abe08c",
+      "result_id": "d01bed38-5e66-4b28-aa1c-c64194b78cfd"
+    },
+    {
+      "claim_id": "3693f46c-7836-47a9-82f1-cab0acee9ad4",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "988bc73d-f791-45cb-89f6-90d8c5fce0b1",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "1119be7b-e244-4931-8c95-d2f7a9108880",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "02ce6eb5-8919-4474-9959-65b762b37999",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "0c324da9-5ee2-408b-9db3-26cf8063a6c7",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "6f1ca8c8-c637-4d0b-b8bd-a102d238ca99",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "52355d09-8939-4e47-9963-49d8ada10098",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "f9ea0212-4d8e-4723-b05f-923b2fe00682",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "6eee8c37-41dd-4260-9b4b-a2c118375fe7",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "8c95cc69-a61d-4357-b62d-1d7669ada0e4",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "aae62080-a9f6-446a-a527-c8d950e9698b",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "a9e70eab-e056-444c-8427-81060ff221fa",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "82ae474a-ad5e-4690-84cf-03bb50b99060",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "7666e09e-ffb2-4e43-906e-22b46ae4443b",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "cad6a800-c449-4ca3-a6a2-446ea365dbdf",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "5f838c79-03f2-4cb2-88c7-27aaf9092c7a",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "2431996b-897f-4676-943e-89bcb6da45c1",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "3139291c-c794-4891-9fd4-636007f9ed6a",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "cbf28746-acc2-4976-9495-46b1afeff3f4",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "456c4d87-8e50-4940-91e2-8204110d6da1",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "98023bae-913b-46d4-a842-2ba58b47e705",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "a1d97012-ff97-49e3-8039-6a1bf865f1e0",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "dd32a8de-28d5-4de9-897c-3127b48949e4",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "a048a161-8634-484c-9d01-ed5e4dc20ccb",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "d246f0cc-f685-403c-b944-e1fbfb4a5d9f",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "33b00460-bc26-49b1-82a3-0710601e2250",
+      "result_id": "9151a116-6418-4fb7-b747-47c6e2ad9d88"
+    },
+    {
+      "claim_id": "c1519094-3229-4467-b090-cca765fa5119",
+      "result_id": "a0aa4a24-de40-4034-875c-a5c82f8572ef"
+    },
+    {
+      "claim_id": "9eabfde6-74e2-4a94-af45-778444303578",
+      "result_id": "09b9db7d-1f3d-4f18-8882-41feac123624"
+    },
+    {
+      "claim_id": "2c387c28-e92f-4c9f-808a-38e2847ba7e2",
+      "result_id": "09b9db7d-1f3d-4f18-8882-41feac123624"
+    },
+    {
+      "claim_id": "40896822-86cc-4b93-beec-f976c23e72e8",
+      "result_id": "09b9db7d-1f3d-4f18-8882-41feac123624"
+    },
+    {
+      "claim_id": "297a801d-aa5a-4e68-a55a-c3dd6d5a0984",
+      "result_id": "09b9db7d-1f3d-4f18-8882-41feac123624"
+    },
+    {
+      "claim_id": "7da51e01-9f65-4c25-86ec-2a4828289488",
+      "result_id": "09b9db7d-1f3d-4f18-8882-41feac123624"
+    },
+    {
+      "claim_id": "ce4aaea4-4284-4175-b9dc-d6986573e0fb",
+      "result_id": "09b9db7d-1f3d-4f18-8882-41feac123624"
+    }
+  ],
+  "comparisons": []
+}

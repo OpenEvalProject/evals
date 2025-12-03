@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Master regulator analysis of 144 BTSC samples identified FOSL1 as the top-scoring transcription factor distinguishing mesenchymal (MES) from non-mesenchymal (non-MES) glioblastoma subtypes, with 92% concordance with single-cell classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively demonstrate that FOSL1 is a key regulator of the MES subtype through comprehensive transcriptomic analysis. The dataset composition is clearly described (C1), PCA shows distinct separation (C2), concordance with independent classifications is quantified (C3), and both MRA and GSEA analyses consistently identify FOSL1 as the top candidate (C4, C5) with appropriate statistical thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "FOSL1 expression is elevated in IDH-wildtype gliomas, particularly in the mesenchymal subtype, and high FOSL1 expression is associated with worse patient prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by analysis of large patient cohorts (CGGA and TCGA datasets) with appropriate statistical methods. The association between FOSL1 expression and clinical outcomes is demonstrated through survival analysis with figure support, establishing clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "NF1 alterations are enriched in mesenchymal tumors and correlate with FOSL1 expression, showing a significant negative correlation (R = -0.44, p=7.8e-12) between NF1 and FOSL1 mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 establish a clear relationship between NF1 alterations and FOSL1 expression using appropriate statistical tests (Fisher's exact test, Student's t-test, Pearson correlation). The correlation coefficient and p-values are specific and highly significant, supporting the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "NF1 manipulation bidirectionally regulates FOSL1 expression and mesenchymal gene signatures: NF1-GRD overexpression downregulates FOSL1 and MES genes, while NF1 knockdown upregulates them, with FOSL1 overexpression rescuing NF1-GRD effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 demonstrate bidirectional regulation through complementary gain- and loss-of-function experiments in multiple cell lines. The rescue experiment (C14) provides strong evidence for direct mechanistic involvement of FOSL1, and MEK inhibitor experiments (C15) support the MAPK pathway involvement. Multiple independent approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "In mouse p53-null neural stem cells, Nf1 loss or Kras mutation upregulates FRA-1, and Fosl1 knockout leads to loss of mesenchymal gene signatures and gain of proneural gene signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 establish the mouse model as a valid system for studying the NF1-FOSL1-MES axis. Western blot confirms FRA-1 upregulation (C16), and RNA-seq with GSEA (C17) and qRT-PCR validation (C18) demonstrate comprehensive transcriptional changes. The use of multiple sgRNAs strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Fosl1 deletion causes selective closing of chromatin at AP-1 transcription factor binding sites and at mesenchymal GBM identity gene loci, while opening chromatin at lineage-specific marker loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by ATAC-seq analysis showing genome-wide chromatin accessibility changes. The selective nature of chromatin remodeling at specific regulatory elements provides mechanistic insight into how FOSL1 controls gene expression programs. The data directly link FOSL1 to chromatin regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Fosl1 knockout reduces cell viability, alters cell cycle distribution (decreased S-phase, increased G2/M), dramatically reduces stem cell frequency (from 1/3 to 1/28.6), and shifts gene expression from stem to differentiation programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 demonstrate multiple functional consequences of Fosl1 loss using complementary assays (MTT, flow cytometry, limiting dilution, RNA-seq). The limiting dilution assay provides quantitative stem cell frequency estimates with highly significant statistics (p<2.2e-16), and RNA-seq shows coordinated changes in stem and differentiation gene programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Fosl1 depletion significantly extends survival in orthotopic mouse models (median survival 54.5 vs 37 days, p=0.0263) and reduces mesenchymal markers while increasing proneural marker OLIG2 in tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 demonstrate in vivo functional significance through survival analysis and molecular characterization of tumors. The survival benefit is statistically significant, and multiple orthogonal methods (western blot, IHC, qPCR) confirm the molecular phenotype in vivo, validating the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Inducible Fosl1 overexpression in mouse NSCs upregulates mesenchymal genes, produces larger and more infiltrative tumors, and demonstrates reversible control of MES/PN gene expression programs upon doxycycline addition or withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide gain-of-function validation using an inducible system. The reversibility experiments (C29-C30) are particularly strong evidence for direct FOSL1 control of plasticity. The tumor phenotype (C28) demonstrates functional consequences, though the lack of survival difference is noted in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In human mesenchymal BTSCs, FOSL1 silencing reduces cell growth, proliferation (BrdU incorporation), and sphere-forming capacity (stem cell frequency increases from ~1/3-5 to ~1/7-11), and downregulates mesenchymal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 validate the mouse findings in human patient-derived cells using multiple independent MES BTSC lines. The use of inducible shRNAs and multiple functional assays (MTT, BrdU, limiting dilution, qRT-PCR) provides robust evidence. Statistical significance is demonstrated for key findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "FOSL1 manipulation (overexpression or silencing) in non-mesenchymal BTSC lines does not affect their proliferation or growth, demonstrating context-dependent function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 establish the specificity of FOSL1 function to the mesenchymal context through negative control experiments. Testing both gain- and loss-of-function in non-MES lines strengthens the conclusion that FOSL1's role is context-dependent rather than a general growth regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ChIP-seq analysis reveals that FOSL1/FRA-1 binding sites are systematically decorated with active histone mark H3K27Ac in MES BTSCs (11,748 differential regions, FDR<0.005), with direct FRA-1 binding confirmed at MES gene promoters including PLAU, TNC, ITGA5, and CD44.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 provide direct evidence for FOSL1/FRA-1 binding at target genes through ChIP-seq and ChIP-qPCR validation. The large number of differential regions with stringent statistical thresholds, the systematic H3K27Ac decoration pattern, and the inverse relationship with OLIG2 binding sites provide strong mechanistic evidence. Independent validation by ChIP-qPCR strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors propose that NF1 loss modulates FOSL1 expression through RAS/MAPK signaling, and that FOSL1 is a key regulator of GBM stemness, mesenchymal features, and plasticity, controlling an EMT-like process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 represent the main conclusions synthesized from the experimental data. While C51 is somewhat implicit in the abstract, the mechanistic pathway is well-supported by the experimental results (C8-C15). Claims C52-C53 are directly supported by the functional studies in both mouse and human systems (C21-C34). The overall model is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The NF1-MAPK-FOSL1 axis exists beyond GBM in multiple tumor types, as FOSL1 is upregulated in tumors with NF1 mutations across different cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by pan-cancer analysis shown in supplementary Figure 8\u2014figure supplement 1, demonstrating that the findings have broader relevance beyond GBM. The analysis across multiple TCGA tumor types provides evidence for generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The manuscript provides extensive background on GBM biology, FOSL1 function in other cancers, NF1's role in mesenchymal GBM, and relevant prior work on transcription factors and plasticity, all supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C72 represent background knowledge and prior work that contextualizes the current study. These are appropriately cited and accurately represent the state of the field. They establish the rationale for investigating FOSL1 in GBM and provide context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C66"
+    ],
+    "result": "The authors infer that FOSL1 is a pioneer transcription factor contributing to cell-intrinsic mesenchymal gene signatures, and that among previously characterized MES TFs, FOSL1 and CEBPB play dominant roles in NF1-mediated MES transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C66 represent interpretations of the data that are well-supported by the MRA analysis and NF1 manipulation experiments. The inference that FOSL1 and CEBPB are dominant among the tested TFs is supported by the observation that only these two are consistently regulated by NF1 (Figure 2\u2014figure supplement 2H-I).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The authors note that FOSL1/FRA-1 has been hypothesized to act as a transcriptional repressor of neurodevelopmental TFs including OLIG2 and SALL2, though this has not been formally demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 explicitly acknowledges that this is a hypothesis from prior work that has not been formally demonstrated. The current study provides some supporting evidence through the chromatin accessibility and gene expression data, but does not directly test this repression mechanism. The claim appropriately presents this as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The authors state that FOSL1/FRA-1 pharmacological inhibition is difficult due to its enzymatic activity and suggest gene therapy approaches as alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 contains a conceptual error: transcription factors like FOSL1/FRA-1 do not have enzymatic activity in the traditional sense. The difficulty in targeting transcription factors is due to their lack of enzymatic active sites and their function through protein-protein interactions. This misstatement undermines the claim, though the suggestion of gene therapy approaches is reasonable.",
+    "result_type": "MINOR"
+  }
+]

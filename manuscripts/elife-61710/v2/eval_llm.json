@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Two healthy cohorts were characterized: an obesity cohort (126 individuals, aged 53-78, BMI >27) and a normal-BMI cohort (473 individuals, 82% younger than 30, majority with BMI 18-25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide clear cohort descriptions with specific demographic characteristics. These are straightforward descriptive statistics that establish the study populations and are well-documented in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "A two-dimensional map of clinical parameters was constructed that explains 80% of variability in the obesity cohort, with proximal parameters positively correlated and opposite parameters negatively correlated. The map structure is reproducible across cohorts and gender-specific analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 describe the construction and validation of the parameter map with specific quantitative values (80% variability, 23% and 43% correlations). The reproducibility across independent cohorts and gender subgroups strengthens the findings. The circular organization pattern is well-documented with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Different parameter categories show distinct spatial distributions in the map: lipoproteins span the entire circle boundary, hemodynamic parameters localize to the top-right, metabolic parameters occupy two regions, and immunological parameters lack specific localization. Lipoprotein subfraction order corresponds to the known endogenous pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 describe biological organization within the map. The correspondence between lipoprotein subfraction order and known biological pathways (C13) provides biological validation. The spatial patterns are documented with figures and align with established lipoprotein biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "91% of individuals from healthy cohorts exhibit a global gradient of measurements over the map (imbalanced state), while 9% show a balanced state with no major differences between opposing sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 describe a key observation about individual-level patterns. The percentages are clearly stated and examples are provided in figures. This finding is fundamental to the subsequent state model development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The IM1 and IM2 states together explain substantial variation: IM1 explains 25% and IM2 explains additional 25% in the obesity cohort (20% and 28% respectively in normal-BMI cohort). For 50% of individuals, the two scores explain \u226550% of inter-parameter variation; for 50% of parameters, they explain \u226540% of inter-individual variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide quantitative assessments of variance explained by the two-state model. The percentages are specific and consistent across cohorts. The median-based reporting (50% of individuals/parameters) is appropriate. Statistical support is provided through figures showing variance decomposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "IM2 is associated with cytokine responses to bacterial but not fungal stimulations, suggesting pathogen-specific signal transduction (TLR/RLR vs CLR pathways) may contribute to the IM2-state spectrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe differential immune associations with IM2. The observation is clearly documented (C21), the biological mechanism is appropriately cited (C22), and the interpretation is presented as a suggestion rather than definitive conclusion (C23). The mechanistic hypothesis is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "IM1 shows gradual associations along lipoprotein pathways with peak in XS/S-VLDLs, links to fatty acid composition, and associations with glycolysis/gluconeogenesis (p<10\u207b\u2076) and beta-oxidation genes (p=0.04), suggesting IM1 specifically associates with carbohydrate metabolism in peripheral cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 build a mechanistic interpretation of IM1. The lipoprotein associations are documented (C24-C25), the link to triglyceride release is presented as a hypothesis (C26), and supporting evidence from fatty acid composition (C27) and gene expression (C28-C29) is provided with specific p-values. The conclusion (C30) appropriately integrates multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The IM2 state relates to variation in cholesterol homeostasis in peripheral tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 provides a mechanistic interpretation of IM2 based on lipoprotein marker analysis. While the conclusion is stated explicitly, it is supported by the detailed lipoprotein analysis described in the manuscript and is consistent with the biological functions of the identified markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "640 functional annotations are significantly associated (q<0.05) with IM1 or IM2 states, with the top 100 including 14% immunological and 25% metabolic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 report gene set enrichment analysis results with specific numbers and percentages. The analysis is appropriately controlled for multiple testing (q-values), and the functional categories provide biological context for the states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "IM1 is strongly associated with metabolic syndrome (MetS): MetS individuals tend toward positive IM1 scores (p<10\u207b\u2074), all five MetS criteria locate near IM1 axis extremes, and standard MetS parameters predict IM1 with high accuracy (r=0.87, p<10\u207b\u00b2\u2077). IM1 represents a quantitative version of conventional MetS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 establish the relationship between IM1 and conventional MetS through multiple convergent lines of evidence: statistical association (C35), spatial localization (C36-C37), prediction accuracy (C38), and known biological role (C39). The conclusion (C40) is well-supported by the integrated evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The IM1/IM2-state model represents disease patients well. Both states associate with disease but with different patterns: diabetes associates with positive IM1 (p<0.0002) but not IM2 (p>0.05), consistent with the MetS-diabetes link; SLE associates with positive IM2 and negative IM1 (p<10\u207b\u00b9\u2070, 10\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 demonstrate the model's applicability to disease. The disease-specific association patterns are documented with specific p-values and are consistent with known disease biology (C44). The contrasting patterns between diabetes and SLE support the independence of the two states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Most associations between clinical parameters and disease reflect the whole-body state: global gradients over the map align with disease associations, and accounting for the state drastically reduces significant parameter-disease associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 demonstrate that the state captures much of the parameter-disease relationships. The reduction in associations when controlling for state (C47) provides strong evidence that the state is not merely a confound but represents a meaningful biological construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "IM2 represents a distinct immunometabolic syndrome termed 'non-classical MetS', independent of conventional MetS but associated with disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 introduces the concept of non-classical MetS based on the evidence that IM2 is decoupled from conventional MetS yet associates with disease. This is a logical inference from the preceding results showing IM2's independence from IM1 and its disease associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Both IM1 and IM2 relate to cardiovascular disease (CVD): known causal atherosclerosis factors (triglyceride % in VLDL-remnants and LDL cholesterol) locate near IM1 and IM2 axis extremes respectively, and both axes show enrichment of documented CVD risk factors on their positive arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 establish links between both states and CVD through known causal factors and literature-documented risk factors. The citations to established causal relationships (Ference et al., 2017; Nordestgaard, 2016) strengthen the interpretation. The enrichment analysis provides systematic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In obese older adult males, atherosclerosis shows weak association with IM1 (consistent with literature) but significant association with IM2-positive state (p<0.001). This IM2-atherosclerosis link is male-specific, consistent with sex differences in atherosclerosis mechanisms. Both positive IM1 and IM2 states are CVD risk factors, with relative contributions depending on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 describe context-dependent disease associations. The weak IM1-atherosclerosis association is appropriately cited (C55), the IM2 association is statistically significant (C56), and the sex-specificity (C58-C59) is consistent with known biology. The conclusion about context-dependence (C60) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In SLE, 88 genes with state-independent associations are enriched for interferon/antiviral signaling (p<10\u207b\u2076\u00b9). Interferon signaling, IM1, and IM2 together explain 84% of SLE variance (interferon: 14-80%, IM1/IM2: 4-70%), and all three are independent predictors (p<10\u207b\u00b9\u00b3, 10\u207b\u00b9\u00b3, 10\u207b\u00b9\u2070\u00b3), suggesting independent contributions from specific mechanisms and the state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 demonstrate tripartite relationships in SLE. The interferon enrichment is highly significant and consistent with known SLE biology (C63). The variance decomposition (C64-C66) and independent prediction (C67-C68) provide strong statistical support. The ranges in variance explained (C65-C66) appropriately reflect the order-dependence in variance partitioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In atherosclerosis in obese males, no clinical parameters associate with disease when accounting for state. LDL cholesterol, despite known causal effects, is completely decoupled from atherosclerosis when accounting for IM2, suggesting the indirect effect is mediated through the IM2 state. Non-classical MetS likely affects atherosclerosis beyond specific causal mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe mediation relationships. The complete decoupling of LDL-C when controlling for IM2 (C71) is striking and well-documented. The known causal role of LDL-C (C72) is appropriately cited. The mediation model (C73) is presented as plausible based on systematic analysis, and the conclusion (C74) is appropriately stated as likely rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SLE has independent contributions from specific risk mechanisms and the state, while LDL cholesterol affects atherosclerosis both directly and indirectly through non-classical MetS. Human diseases are directly related to the whole-body ecosystem in addition to specific disease mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 synthesize the disease mechanism findings. These conclusions appropriately integrate the evidence from SLE and atherosclerosis analyses. The broad conclusion (C77) is justified by the consistent patterns across multiple diseases showing both state-dependent and state-independent contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The whole-body state can be accurately predicted using small parameter sets: four parameters from top markers predict IM1 (mean r=0.96) and IM2 (mean r=0.95) with high accuracy regardless of specific parameter selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 demonstrate practical applicability. The prediction accuracy is high and robust across 100 different parameter selections, indicating the state is not dependent on specific markers. This has important implications for clinical translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The map's reproducibility has been validated in three independent cohorts and across different subgroups. The two-component model captures 50% (on average) of variation in clinical parameters among individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 address reproducibility and model performance. The validation across three cohorts and multiple subgroups (C81) strengthens confidence in the findings. The 50% average variance explained (C82) is substantial and supports the model as a faithful representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "IM1 resembles classical MetS (ranging from negative in non-MetS to positive in MetS individuals), while IM2 reflects a novel 'non-classical MetS' that explains substantial variation, associates with disease risk, and is decoupled from classical MetS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide the core conceptual framework. These are synthesis claims that integrate multiple prior results. The characterization of IM1 as classical MetS is well-supported by the MetS association analysis, and the definition of IM2 as non-classical MetS is justified by its independence, disease associations, and contribution to variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Compared to classical MetS alone, the two-component model improves disease-state associations and extends the set of diseases associated with the whole-body state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 assert advantages of the two-component model over conventional MetS. The evidence from disease analyses (SLE, atherosclerosis in specific contexts) supports that IM2 captures disease associations not explained by classical MetS alone. The improvement is demonstrated through the disease-specific association patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The framework offers a strategy for superior diagnostics combining general markers (for state) and specific markers (for specific disease), to be tested in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 proposes a diagnostic strategy but explicitly states it requires future testing. While the conceptual framework is supported by the current results, the actual diagnostic performance and clinical utility remain to be demonstrated. This is appropriately presented as a hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Most individuals exist in an imbalanced state with one side of the map upregulated and the opposite downregulated. This suggests that homeostatic balance principles, known at molecular/cellular levels, are also effective at clinical/physiological scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 propose a conceptual interpretation. The observation of imbalanced states (C88) is well-documented. The parallel to cellular immunometabolism (C89) is appropriately cited. The extension to clinical scales (C90) is a reasonable inference from the observed patterns, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Quantifying disease-state relations provides opportunities to design state changes. Some state transitions may require activation energy (drug interventions or lifestyle changes) to overcome energetic boundaries, potentially impacting future therapeutic interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 propose therapeutic implications but are largely speculative. While the quantification of disease-state relations is demonstrated, the concepts of energetic boundaries (C92) and impact on interventions (C93) are hypothetical. These are appropriately presented as expectations rather than demonstrated findings.",
+    "result_type": "MINOR"
+  }
+]

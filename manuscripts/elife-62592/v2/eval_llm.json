@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "6PGD is identified as an androgen-regulated gene that is upregulated in prostate cancer. AR knockdown (siAR) reduces 6PGD expression at mRNA and protein levels in multiple cell lines, while AR antagonists (enzalutamide, apalutamide, darolutamide) do not acutely affect 6PGD expression. DHT stimulation increases 6PGD expression in an AR-dependent manner. Long-term androgen deprivation therapy reduces 6PGD levels in patients. 6PGD expression is elevated in prostate cancer compared to normal tissue and correlates with Gleason grade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C24 collectively demonstrate that 6PGD is an androgen-regulated gene through multiple lines of evidence: RNA-seq identifying 6PGD as differentially expressed (C13), validation by RT-qPCR and immunoblotting in multiple cell lines (C14-C15), differential effects of AR ablation versus antagonism (C16), DHT stimulation experiments (C17), patient-derived explant data (C18), clinical ADT data (C19), and clinical expression analysis showing upregulation in cancer and correlation with grade (C20-C24). The convergence of in vitro, ex vivo, and clinical data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "AR regulates 6PGD expression indirectly through SREBP1. No AR binding sites are found near the 6PGD gene in ChIP-seq data, but SREBP1 binding sites are identified at the 6PGD promoter. SREBP1 knockdown or pharmacological inhibition blocks androgen-mediated induction of 6PGD. AR enhances SREBP1 expression and activity through multiple mechanisms including upregulation of SCAP and activation of mTOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C36, C82-C87 establish the AR-SREBP1-6PGD regulatory axis through: absence of direct AR binding to 6PGD (C25), identification of SREBP1 binding sites (C31), functional validation showing SREBP1 knockdown/inhibition blocks DHT-induced 6PGD expression (C32-C34), and literature support for AR regulation of SREBP1 (C27-C29). The mechanistic chain is well-supported by both experimental data and prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of 6PGD, AR, or SREBP1 suppresses pentose phosphate pathway (PPP) activity. Metabolic flux analysis using 1,2-13C2 glucose shows that knockdown of 6PGD, AR, or SREBP1 significantly decreases flux through the oxidative PPP. Knockdown of AR and SREBP1 (but not 6PGD) also impacts the non-oxidative branch of the PPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36, C41-C43, C88-C89 are supported by rigorous 13C-glucose metabolic flux analysis showing reduced m1 Ru5P production (oxidative PPP) upon knockdown of all three factors, and reduced m2 Ru5P production (non-oxidative PPP) with AR and SREBP1 knockdown. The use of isotope tracing provides direct measurement of pathway flux, and the differential effects on oxidative versus non-oxidative branches are clearly demonstrated. The CSTR modeling approach for flux calculation is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C46",
+      "C130"
+    ],
+    "result": "Knockdown of 6PGD impairs growth and increases death of prostate cancer cells, at least in part due to increased oxidative stress. Effects are observed in androgen-sensitive (LNCaP, VCaP) and castration-resistant (V16D, MR49F) cell lines. 6PGD knockdown causes accumulation of its substrate 6-phosphogluconate and increases intracellular ROS levels, which can be rescued by the antioxidant Trolox.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C40, C44-C46, C130 demonstrate the functional importance of 6PGD through: cell viability/death assays in multiple cell lines (C37-C39), substrate accumulation confirming on-target effects (C40), and ROS measurements showing increased oxidative stress that is reversible with antioxidant treatment (C44-C46). The use of two independent siRNAs strengthens the conclusion that effects are specific to 6PGD knockdown. The Trolox rescue experiment provides mechanistic support for the oxidative stress hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The 6PGD inhibitors physcion and S3 exhibit anti-cancer activity in multiple prostate cancer models. S3, a physcion derivative with improved solubility, reduces cell viability, increases cell death (including apoptosis), and elevates ROS in a dose-dependent manner. S3 is active in androgen-sensitive cells (LNCaP, VCaP), castration-resistant cells (V16D), enzalutamide-resistant cells (MR49F), and patient-derived tumor explants, though AR-negative PC3 cells are less sensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47-C56, C103-C107 demonstrate therapeutic potential through extensive testing in multiple models: cell line assays showing dose-dependent effects on viability, death, apoptosis, and ROS (C47, C50-C53); activity in therapy-resistant models (C53-C54); and validation in patient-derived explants showing reduced Ki67 proliferation in all 9 tumors tested (C56). The lower sensitivity of AR-negative PC3 cells (C55) supports the relevance of the AR-6PGD axis. The solubility improvement of S3 over physcion (C49) addresses a practical limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Targeting 6PGD activates AMPK and represses anabolic pathways regulated by ACC1 and mTORC1. S3 treatment increases phospho-AMPK and phospho-ACC1 levels while decreasing phospho-S6K/S6 in a dose-dependent manner in cell lines and patient-derived explants. 6PGD knockdown produces similar effects, confirming on-target activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C63, C93-C95 establish the PPP-AMPK-ACC1/mTOR signaling axis through: dose-dependent immunoblotting data in multiple cell lines (C59), validation with 6PGD knockdown (C60), and confirmation in patient-derived explants (C61). The mechanistic link is supported by prior literature (C57, C93-C95). The convergence of pharmacological and genetic approaches strengthens the conclusion that effects are mediated through 6PGD inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Targeting 6PGD enhances AR ubiquitylation and reduces AR protein levels and activity. S3 and physcion reduce AR protein levels without affecting AR mRNA, indicating post-transcriptional regulation. Immunoprecipitation experiments show increased ubiquitylated AR in the presence of S3 and the proteasome inhibitor MG132. MG132 prevents S3-mediated AR protein reduction, confirming proteasome-dependent degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C64-C72, C99-C101 demonstrate a feedback mechanism where 6PGD inhibition promotes AR degradation through: immunoblotting showing reduced AR protein without mRNA changes (C64-C68), immunoprecipitation showing increased ubiquitylated AR with S3+MG132 (C70), and rescue of AR protein levels by MG132 alone (C71). The mechanistic link through ROS and AMPK is supported by literature (C100). This establishes a bidirectional regulatory relationship between AR and 6PGD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C98",
+      "C110"
+    ],
+    "result": "A positive feedback loop exists between AR and 6PGD, and co-targeting both factors is more effective than single-agent therapy. AR induces 6PGD expression via SREBP1, while 6PGD enhances AR protein stability. Combination treatment with enzalutamide and S3 shows additive effects in both androgen-sensitive (VCaP) and castration-resistant (V16D) cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C73-C76, C98, C110 establish the feedback loop and therapeutic rationale through: demonstration of AR\u21926PGD regulation (C73, from earlier results), evidence of 6PGD\u2192AR regulation (C74, from ubiquitylation data), and functional validation showing additive effects of combination therapy (C76, C8). The bidirectional regulation provides strong rationale for combination therapy, which is experimentally validated in multiple cell line models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "AR ablation (siAR) is more effective at suppressing the AR-regulated transcriptome compared to AR antagonism (enzalutamide). While 78% of genes altered by enzalutamide are also affected by siAR, an additional 2,574 genes are altered by siAR but not enzalutamide. Direct comparison identifies 581 genes differentially expressed between siAR and enzalutamide treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by comprehensive RNA-seq analysis with appropriate statistical methods (FDR < 0.05). The experimental design includes proper controls and validation of AR knockdown/inhibition through PSA expression. The concordance with an independent dataset (C9, Figure 1\u2014figure supplement 1A) strengthens confidence in the findings. However, the interpretation that AR ablation is 'more effective' (C12) should be qualified as this is a single experimental system with specific treatment conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Multiple enzymes in the pentose phosphate pathway are regulated in prostate cancer, emphasizing the pathway's importance. G6PD (the rate-limiting enzyme) is transcriptionally and post-transcriptionally regulated by AR. TKTL1 (regulating the non-oxidative phase) increases during progression and is highest in metastatic tumors. Both 6PGD and G6PD catalyze NADPH-generating steps in the oxidative PPP, representing a mechanism for hormonal protection against oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 synthesize findings from this study with prior literature to establish multi-level PPP regulation in prostate cancer. The claims are well-supported by citations (C77-C78) and biochemical knowledge (C80). The inference about hormonal protection against oxidative stress (C81) is reasonable given the established role of NADPH in antioxidant defense and the demonstrated androgen regulation of NADPH-producing enzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C96",
+      "C102",
+      "C108",
+      "C111"
+    ],
+    "result": "Therapeutic targeting of the AR-SREBP1-6PGD pathway could have broad clinical implications by impinging on multiple oncogenic drivers and metabolic processes. AR supports lipogenesis through 6PGD/PPP activation in addition to direct regulation of lipid metabolic genes. S3/physcion would possess multi-pronged anti-tumor activity by inhibiting oncogenic metabolism, increasing ROS, and suppressing AR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C92, C96, C102, C108, C111 represent speculative interpretations and future directions rather than directly demonstrated results. While the individual components are supported (PPP regulation, metabolic effects, AR suppression), the claims about 'multi-pronged activity' (C108) and 'major impact on patients' (C111) extend beyond the presented data. The speculation about AR/SREBP1 regulating other non-oxidative PPP factors (C90) is reasonable but untested. These represent discussion points rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C109"
+    ],
+    "result": "S3 can inhibit AR target gene expression as effectively as enzalutamide at higher doses, and physcion has been reported as well-tolerated with low toxicity in a Phase I trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by RT-qPCR data comparing S3 and enzalutamide effects on AR target genes. Claim C109 is supported by citation of a Phase I clinical trial. However, the clinical relevance is limited by the acknowledged pharmacological limitations of these compounds and the lack of in vivo efficacy/toxicity data in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background and context: Altered metabolism is a cancer hallmark. Prostate cancer exhibits unique metabolism with normal cells having truncated TCA cycle and high glycolysis, while malignant cells restore intact TCA cycle. AR is a major metabolic regulator and primary oncogenic driver. Current AR pathway inhibitors provide limited survival benefit in CRPC despite continued AR dependence. The PPP is an alternative glucose metabolic pathway generating NADPH and nucleotide precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C129 provide established background knowledge supported by appropriate citations. These are well-accepted concepts in cancer biology and prostate cancer research that provide context for the study. The claims accurately represent the current understanding of cancer metabolism, prostate-specific metabolic features, AR biology, and PPP biochemistry.",
+    "result_type": "MINOR"
+  }
+]

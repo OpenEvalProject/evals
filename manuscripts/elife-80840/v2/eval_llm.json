@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript establishes the clinical and biological context for studying OAC, noting its poor prognosis (~15% 5-year survival), origin from Barrett's oesophagus, and the role of chromatin accessibility changes in disease progression. Despite large-scale sequencing studies, precise molecular mechanisms remain uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by appropriate citations to prior literature (Coleman et al., 2018; Peters et al., 2019; Frankell et al., 2019; Ross-Innes et al., 2015; Stachler et al., 2015; Britton et al., 2017; Rogerson et al., 2019, 2020). These claims establish background knowledge and rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C66",
+      "C67"
+    ],
+    "result": "The study identified 4,600 high-confidence eRNA-containing enhancer regions from RNA-seq data of 210 OAC and 108 Barrett's patients, with 959 eRNAs upregulated in OAC and 670 in Barrett's. This was achieved by integrating RNA-seq with ATAC-seq data from accessible chromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C66-C67 describe the computational pipeline for eRNA identification with clear filtering criteria (read count \u22653, FPM \u22651.5, log2FC \u00b10.5, padj <0.05). The methodology is well-documented and supported by Figure 1A-B and supplementary files. Sample sizes are substantial (318 total patients).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The identified eRNAs exhibit bidirectional transcription patterns characteristic of enhancer activity, and eRNA-based profiling effectively distinguishes OAC from Barrett's patients with fewer misclassifications (8 samples) compared to whole RNA-seq clustering (37 samples).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by directionality score analysis (Figure 1C) and hierarchical clustering (Figure 1D, Figure 1\u2014figure supplement 1C). The comparison demonstrates superior classification performance of eRNA profiling, though the biological significance of the 8 vs 37 misclassification difference could benefit from statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "eRNA regions show enhancer-like chromatin characteristics including higher chromatin accessibility and H3K27ac levels compared to random regions, enrichment of enhancer-associated marks (H3K4me1, RNA Pol II, BRD4, MED1), depletion of promoter marks (H3K4me3), and lower CpG content than promoters. However, chromatin accessibility is a weak predictor of eRNA transcription levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C68-C72 are well-supported by multiple orthogonal datasets including ATAC-seq, ChIP-seq, and CUT&Tag analyses (Figures 2A-C, Figure 2\u2014figure supplements 1A-G). The use of appropriate controls (random accessible regions, promoter regions) strengthens the conclusions. The weak correlation between accessibility and eRNA levels (C18) is an important observation supported by Figure 2B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "ChromHMM analysis revealed that 33% of eRNA regions are designated as enhancers (vs 4% genome-wide), with only 17% designated as quiescent/repressed (vs 69% in random regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by ChromHMM state analysis (Figure 2D, Figure 2\u2014figure supplement 1J). The enrichment for enhancer states and depletion of repressed states is consistent with the hypothesis that these regions represent active enhancers. The methodology is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C43",
+      "C73"
+    ],
+    "result": "KAS-seq analysis in OE19 cells demonstrates active transcription at eRNA regions, with significant overlap between KAS-seq peaks and patient-derived eRNA regions, and higher KAS-seq signal at eRNA regions compared to random regions. eRNA regions with KAS-seq peaks show higher H3K27ac levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C43, C73 are supported by KAS-seq data with good replicate concordance (Figure 2\u2014figure supplement 2A) and appropriate statistical testing (hypergeometric test, Figure 2\u2014figure supplement 2B). The KAS-seq provides direct evidence of ongoing transcription at eRNA loci (Figures 2E, 6A, Figure 2\u2014figure supplement 2E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C74",
+      "C75"
+    ],
+    "result": "The study identified 221 high-confidence super enhancers in OE19 cells, of which 73 showed evidence of eRNA activity (containing 216 eRNA regions). Genes associated with these super enhancers are enriched for OAC-relevant processes including MAPK signaling and cadherin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C74-C75 are supported by super enhancer identification using HOMER on H3K27ac ChIP-seq and ATAC-seq data (Figure 2\u2014figure supplement 3A-B), with significant overlap with eRNA regions (Figure 2G, p=6.7\u00d710\u207b\u2077\u2078). GO analysis supports functional relevance (Figure 2\u2014figure supplement 3D). The methodology is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Motif enrichment analysis reveals that OAC-specific eRNA regions are enriched for transcription factors AP1, KLF5, and HNF1, with HNF1 motifs more enriched in eRNA-defined enhancers compared to accessibility-defined enhancers. Barrett's-specific regions show enrichment for p53-binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by de novo motif discovery using HOMER (Figure 3A) and motif frequency analysis (Figure 3B). The differential enrichment between eRNA-defined and accessibility-defined enhancers (C26-C27) is statistically significant and biologically meaningful, suggesting eRNA profiling captures distinct regulatory information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C76",
+      "C77",
+      "C31",
+      "C32",
+      "C78",
+      "C79"
+    ],
+    "result": "Functional validation demonstrates that KLF5 and AP1 regulate eRNA-defined enhancers: genes associated with KLF5/AP1 motif-containing eRNA regions significantly overlap with genes downregulated upon KLF5 depletion or AP1 inhibition. KLF5 strongly binds JUP and CCNE1 enhancers and regulates their activity, but MYBL2 regulation appears indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C76-C79 are well-supported by multiple lines of evidence: ChIP-seq showing KLF5 binding (Figure 3D, 3G), significant overlap between motif-containing eRNA-associated genes and genes downregulated upon TF perturbation (Figure 3E-F, hypergeometric tests), and direct measurement of enhancer activity changes upon KLF5 depletion (Figure 3H-I). The inference that MYBL2 regulation is indirect (C33) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C80",
+      "C81"
+    ],
+    "result": "GO analysis of eRNA-associated genes (528 in OAC, 380 in Barrett's) reveals disease-relevant processes: OAC genes are associated with cell migration and MAPK signaling, while Barrett's genes are associated with metabolic processes and epithelial differentiation. Despite similar GO terms, eRNA profiling identifies different candidate genes compared to total RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C80-C81 are supported by GO analysis (Figure 4A) and overlap analysis with DEGs (Figure 4B). The observation that eRNA profiling reveals different genes despite similar biological processes is important and well-documented. The nearest gene model used for annotation is acknowledged as a limitation (C82, C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "There is significant overlap between differentially expressed genes and eRNA-associated genes, and genes nearest to disease-specific eRNA regions show higher expression in the corresponding tissue type. Genome-wide analysis reveals correlation between eRNA expression directionality and nearby gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by Venn diagram analysis (Figure 4B), expression analysis in two independent datasets (Figure 4C, Figure 4\u2014figure supplement 1A), and genome-wide correlation analysis (Figure 4D). The use of independent validation datasets strengthens the conclusions. Statistical significance is demonstrated (Welch's t-test, Kruskal-Wallis test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "JUP is significantly co-amplified with ERBB2 in OAC, and both JUP transcript and eRNA are upregulated in ERBB2-amplified OAC patients. JUP eRNA expression shows strong correlation with JUP gene expression (especially in OAC samples), with lower correlations to adjacent genes. Similar patterns are observed for CCNE1 and MYBL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C83-C86 are supported by co-amplification analysis (Figure 5\u2014figure supplement 1C, cBioPortal), expression analysis (Figure 5B), and correlation analysis (Figure 5C, Figure 5\u2014figure supplement 1F-I). The tissue-specific correlation patterns (C42, C88-C89) strengthen the enhancer-gene linkages. Statistical testing is appropriate (Spearman's correlation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Global analysis of eRNA-gene correlations shows good segregation of OAC- and BO-specific eRNAs when clustered by associated gene expression. Disease-specific eRNAs show significantly higher correlation with nearby genes in the corresponding tissue type compared to shared eRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by clustering analysis (Figure 5D) and tissue-specific correlation analysis (Figure 5E). The observation that disease-specific eRNAs show stronger correlations in the appropriate tissue context provides additional validation of the enhancer-gene linkages and biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Experimental validation demonstrates that JUP, MYBL2, and CCNE1 enhancer regions have bona fide enhancer activity: they show higher KAS-seq signal, higher expression in OE19 vs CP-A cells, significant activity in both STARR-seq and luciferase reporter assays, and CRISPRi-mediated silencing reduces both eRNA and target gene expression without affecting flanking genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are strongly supported by multiple orthogonal validation approaches: KAS-seq (Figure 6A), RT-qPCR (Figure 6B), two independent reporter assays (Figure 6C, Figure 6\u2014figure supplement 1A), and CRISPRi with appropriate specificity controls (Figure 6D, Figure 6\u2014figure supplement 1C). The multi-pronged validation strategy is rigorous and convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C118"
+    ],
+    "result": "Hi-C analysis reveals long-range interactions between the JUPe enhancer and the ERBB2 locus region, likely due to co-localization on ecDNA amplicons. JUPe regulates GRB7 but not ERBB2 or MIEN1 expression. No long-range interactions were detected for CCNE1e and MYBL2e enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C91-C94, C118 are supported by Hi-C data with good replicate concordance (SCC=0.965) showing specific interactions for JUPe (Figure 6E) but not for CCNE1e/MYBL2e (Figure 6\u2014figure supplement 2A-B), and RT-qPCR validation of target gene regulation (Figure 6F, Figure 6\u2014figure supplement 2C). The ecDNA explanation (C92) is supported by citation to Ng et al., 2022.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "DepMap analysis reveals that JUP is the highest scoring gene for fitness dependency across OAC cell lines, with 4 of the top 6 JUP-dependent cell lines being gastroesophageal and ERBB2-amplified. CRISPRi-mediated silencing of all three enhancers (JUP, MYBL2, CCNE1) significantly reduces OE19 cell viability and growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by DepMap data analysis (Figure 7A) and cell viability assays (Figure 7B, Figure 7\u2014figure supplement 1B). The functional importance of these enhancers for cancer cell survival is well-demonstrated. Statistical significance is shown (Welch's t-test, two-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C96",
+      "C97"
+    ],
+    "result": "Clinical analysis of TCGA data shows that high MYBL2 and JUP expression is associated with lower age of diagnosis (suggesting earlier disease onset), and high MYBL2 expression predicts lower median survival times. However, JUP and CCNE1 expression were not informative for patient survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C96-C97 are supported by TCGA data analysis with appropriate statistical testing (Welch's t-test for age, log-rank test for survival; Figures 7C-D, Figure 7\u2014figure supplement 1C-D). The differential prognostic value of these genes is clearly demonstrated, though the lack of survival association for JUP may reflect its specific relevance to ERBB2-amplified subsets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C98",
+      "C99"
+    ],
+    "result": "32% of OAC eRNA-associated genes show significant prognostic value for patient survival. An unbiased six-gene signature derived from eRNA-associated genes is highly predictive of OAC patient survival, with only 3 of 6 genes annotated to OAC DEEs. DEEs can predict prognostic signatures equivalently to DEGs but identify alternative molecular markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C98-C99 are supported by survival analysis (Figure 7E, Figure 7\u2014figure supplement 1E-F) using appropriate methods (univariate Cox regression, random forest, multivariate Cox, Kaplan-Meier). The observation that eRNA-based signatures perform equivalently to gene expression-based signatures while identifying different markers demonstrates clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C101",
+      "C102"
+    ],
+    "result": "The manuscript establishes the scientific foundation for using eRNA profiling to identify active enhancers, noting that while histone marks and chromatin accessibility are useful, they are limited for defining active enhancers. eRNAs are associated with enhancer activity and can serve as tissue-specific and disease-specific markers with greater sensitivity than gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65, C101-C102 establish the conceptual framework and are well-supported by appropriate citations to foundational literature (Andersson & Sandelin 2020; Creyghton et al. 2010; De Santa et al. 2010; Kim et al. 2010; Chen et al. 2018; etc.). These claims provide the scientific rationale for the study approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors acknowledge several limitations: the approach misses intragenic enhancers, prior pan-cancer studies mixed OAC with squamous cell carcinoma, the nearest gene model may not always be appropriate, datasets were not optimized for eRNA detection, and Hi-C may have missed some long-range interactions. Discrepancies between DEGs and eRNA-associated genes may reflect enhancers maintaining rather than activating gene expression, expression cutoffs, sample heterogeneity, or technical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 represent appropriate acknowledgment of study limitations and alternative explanations. The authors are transparent about the constraints of their approach and provide reasonable speculation about sources of discrepancy. These limitations do not invalidate the main findings but suggest directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "The authors discuss the biological significance and therapeutic implications of their findings: CCNE1 and MYBL2 promote cell proliferation, JUP is involved in cell-cell contacts and may represent a therapeutic target (especially in ERBB2-positive patients) as an alternative to ERBB2 inhibitors which have limited benefit. JUP has been implicated in other cancers as a tumor suppressor, and its co-amplification with ERBB2 may reflect functional interdependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113, C115-C117, C119 represent reasonable speculation and discussion of implications based on the data and prior literature. However, these are largely interpretive claims that would require additional experimental validation. The therapeutic potential of JUP (C100, C115) is speculative, and the functional interdependency hypothesis (C119) is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The study demonstrates that eRNA profiling is clinically relevant and sufficient to differentiate between BO and OAC, identifies ~1000 OAC-specific enhancers revealing new operational pathways, shows that enhancer activity for JUP, MYBL2, and CCNE1 is required for cancer cell viability, and demonstrates clinical utility for identifying disease stage and patient prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114, C120-C122 represent the main conclusions of the study and are well-supported by the collective evidence: clustering analysis (Figure 1D), differential expression analysis identifying 959 OAC-specific eRNAs (Figure 1B), cell viability assays (Figure 7B), and survival analysis (Figures 7C-E). These conclusions are appropriately supported by the data presented.",
+    "result_type": "MAJOR"
+  }
+]

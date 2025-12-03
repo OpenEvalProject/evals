@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Complexin requires a kinetic delay in SNARE-mediated fusion to function as a fusion clamp. DNA-regulated fusion experiments demonstrate that mCPX can arrest spontaneous fusion when ~20 copies of ssDNA introduce a delay, but not with ~5 copies that produce no delay. This suggests Syt1 and mCPX act sequentially, with Syt1-induced delay enabling CPX to bind and block SNARE assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 provide direct experimental evidence using DNA mimetics showing that a delay is necessary for CPX clamping function. Claims C31, C75 provide mechanistic interpretation supported by the data. Claim C74 provides kinetic context from prior work. The sequential action model (C31, C76) is a reasonable inference from the experimental observations, though C76 contains speculative elements about physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "The continuous alpha-helical accessory-central domains (CPXacc and CPXcen) are essential for Complexin's inhibitory function. Systematic truncation analysis shows that deletion of CPXacc (mCPX48-134) or mutations disrupting CPXcen-SNARE interaction (mCPX4A) completely abolish clamping, while deletion of the N-terminal domain has no effect. These defects cannot be rescued even at high (20 \u03bcM) CPX concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide comprehensive experimental data from truncation/mutation studies with clear quantitative outcomes. The data consistently show that CPXacc and CPXcen are required for clamping while the N-terminal domain is dispensable. The inability to rescue function at high concentrations (C37) distinguishes these domains from the C-terminal domain, supporting the conclusion that they are structurally essential rather than simply affecting binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Specific interactions of the CPXacc with both t-SNAREs and VAMP2 enhance Complexin's inhibitory function. Mutants designed to weaken CPXacc-t-SNARE binding (mCPXNC1) abolish clamping, while mutants enhancing this interaction (mCPXSC) increase clamping efficiency (IC50 ~0.5 \u03bcM vs ~1 \u03bcM for wild-type). A mutant disrupting CPXacc-VAMP2 interaction (mCPXNC2) also fails to clamp fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 provide experimental validation of structure-based predictions about CPXacc-SNARE interactions. The bidirectional effects (loss-of-function with NC1/NC2, gain-of-function with SC) provide strong support for the functional relevance of these specific molecular interactions. Claim C49 extends this to VAMP2 interactions. The consistency with structural data (C43-C44) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C38",
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "The C-terminal domain of Complexin promotes clamping by locally elevating CPX concentration through membrane interactions. Deletion of the C-terminal domain (mCPX26-83) reduces clamping efficiency to ~50% at 2 \u03bcM, but this can be fully restored by increasing concentration to 20 \u03bcM. A mutant enhancing membrane binding (CPXL117W) shows increased clamping efficiency compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide clear experimental evidence that C-terminal deletion reduces but does not abolish clamping, and that the defect is concentration-dependent. This supports the interpretation (C41) that the C-terminal domain functions by concentrating CPX locally rather than being structurally essential. Claim C42 provides additional support through a gain-of-function mutant. The mechanism is well-supported by the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CPX orthologs from C. elegans and Drosophila show reduced clamping efficiency compared to mammalian CPX at standard concentrations, but this can be partially rescued at high concentrations. At 2 \u03bcM, ceCPX and dmCPX show ~15% and ~30% clamping efficiency respectively (vs >95% for mCPX), but achieve ~60-70% efficiency at 20 \u03bcM. The mCPXEAAK mutant with randomized accessory helix shows similar concentration-dependent partial rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide quantitative data showing species-specific differences in clamping efficiency that are concentration-dependent. Claim C51 provides sequence context showing CPXacc divergence. The interpretation (C54) that specific CPXacc-SNARE interactions enhance potency is reasonable given that the effect can be overcome by mass action at high concentrations. Claim C55 extends this to an artificial sequence, supporting the generality of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The accessory-central helical domains of Complexin promote Ca2+-triggered fusion from the clamped state, independent of their clamping function. mCPX increases fusion probability from ~70% (Syt1 alone) to >90% (Syt1+mCPX) with \u03c4 ~11 ms. Deletion of CPXacc or disruption of CPXcen-SNARE interaction abolishes this stimulatory function, but the GPGP helix-breaking mutation and non-clamping mutants (CPXEAAK, ceCPX) retain stimulatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide quantitative data on Ca2+-triggered fusion showing mCPX enhances fusion probability. Claims C62-C66 demonstrate through systematic mutagenesis that the stimulatory function requires CPXcen and CPXacc but not helical continuity or clamping-specific interactions. The dissociation between clamping and activation functions (C65-C66) is particularly compelling evidence for mechanistic separability (C67, C69). The temporal resolution limitation (C58) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C89"
+    ],
+    "result": "Under physiologically relevant conditions, mCPX is essential to generate and maintain a pool of docked vesicles and to promote rapid (<10 ms) and synchronous Ca2+-triggered fusion. The clamping and stimulatory functions of mCPX are mechanistically separable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C68-C70, C89) are well-supported by the comprehensive experimental data presented throughout the manuscript. The mechanistic separability (C69) is demonstrated by mutants that retain one function but not the other (e.g., CPXEAAK, mCPXGP). The essential role under minimal conditions (C70) is supported by the DNA-regulated fusion experiments and Ca2+-activation studies. These represent the main conclusions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A molecular model is proposed in which CPX bridges central and peripheral SNAREpins, with CPXcen binding Syt1-associated central SNAREpins and CPXacc extending to clamp peripheral SNAREpins. CPXcen binding creates a 'tripartite' interface for a second Syt1, which may regulate Ca2+-triggered fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C84 present a detailed molecular model that integrates structural and functional data. However, these are largely speculative proposals (as indicated by evidence_type: SPECULATION, INFERENCE) rather than directly demonstrated results. Claims C85-C86 cite prior work supporting aspects of the model, but the overall architecture of central vs peripheral SNAREpins and the bridging mechanism remain hypothetical. Claims C87-C88 are explicitly speculative. While the model is plausible and consistent with available data, it requires additional structural and functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The in vitro findings on mCPX function match physiological studies in invertebrate systems and are consistent with recent mammalian studies showing CPXacc mutants enhance spontaneous fusion, though there is ongoing debate about CPX's role as a fusion clamp in mammalian neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 establishes the prior work foundation. Claim C71 asserts consistency with invertebrate physiology, supported by appropriate citations. Claims C72-C73 acknowledge conflicting interpretations in mammalian systems while citing recent work (Malsam et al., 2020) that supports a clamping function. The authors appropriately contextualize their findings within the broader literature and acknowledge ongoing controversies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background information on synaptic vesicle fusion, SNARE proteins, and Complexin function is provided, including established knowledge about neuronal communication, SNARE-mediated fusion mechanisms, and species-specific differences in CPX function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C28 provide background context from established literature, appropriately cited. These claims summarize well-established knowledge in the field and set up the rationale for the current study. They are supported by appropriate citations to foundational and review literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The experimental system uses small unilamellar vesicles with defined copy numbers of VAMP2 (~70 or ~13 copies) and Syt1 (~25 copies), pre-formed t-SNAREs in planar bilayers, and fluorescent reporters to track docking, fusion, and Ca2+ dynamics. Clamped vesicles are defined as those remaining unfused for 10 minutes post-docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 describe the experimental methodology and materials. These are straightforward methodological descriptions supported by the Methods section and supplementary figures. The definitions and experimental conditions are clearly stated and appropriate for the study objectives.",
+    "result_type": "MINOR"
+  }
+]

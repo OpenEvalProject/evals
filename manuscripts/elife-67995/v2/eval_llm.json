@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The Reproducibility Project: Cancer Biology initially aimed to replicate 193 experiments from 53 high-impact papers published between 2010-2012, but was only able to complete 50 experiments from 23 papers. The sample included papers primarily from Nature (35), Cell (11), and Science (4) families of journals, with some papers replaced during the project due to feasibility concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18, C19, C96-C98 provide consistent, explicit data about the project scope and outcomes. The numbers are clearly stated in the abstract, methods, and results sections, with supporting detail in Table 1. The reduction from 193 to 50 experiments is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Original data availability was severely limited: only 4 of 193 experiments (2%) had publicly accessible data needed for power analyses, 27% reported only representative images, and despite contacting authors, no data was obtained for 68% of experiments. Raw data was shared for only 16% of experiments, summary data for 14%, and nothing for 68%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C24 provide explicit, quantitative data about data availability that is consistently reported across the abstract and results sections. The percentages are specific and add up appropriately (2% + 16% + 14% + 68% = 100%), indicating systematic coding and reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Statistical reporting and code availability were inadequate: only 40% of experiments reported statistical analyses, 21% of those did not specify which test was used, and analytical code was shared for only 13% of experiments with statistical analyses (81% shared nothing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide explicit percentages about statistical reporting and code sharing that are clearly stated in the results section. The data is internally consistent and represents systematic coding of the original papers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "None of the 193 experiments were described in sufficient detail to design replication protocols without author clarification. The extent of clarifications needed varied: 0% needed none, 9% needed few, 40% needed some, 31% needed moderate, 15% needed strong, and 5% needed extreme clarifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33-C38 provide explicit data about protocol completeness with a clear distribution of clarification needs. The percentages sum to 100% and are supported by detailed examples in the text. The claim that zero experiments needed no clarifications is particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C39",
+      "C40"
+    ],
+    "result": "Key reagents were requested for 136 of 193 experiments (70%) and 45 of 53 papers (85%). Original authors offered to share reagents for 73% of papers and 69% of experiments where reagents were requested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C39, C40 provide explicit, consistent data about reagent requests and sharing. The numbers are clearly stated and the distinction between paper-level and experiment-level analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Author helpfulness varied substantially: 41% of experiments received extremely or very helpful responses (26% extremely, 15% very), 9% received minimally helpful responses, and 32% received no help or no response. The distribution shows bimodal helpfulness with authors being either very helpful or not helpful at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C41-C46 provide detailed, explicit percentages about author helpfulness that are consistently reported in abstract and results. The bimodal distribution is noted in the discussion and supported by the data. The percentages sum appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The correlation between extent of clarifications needed and author helpfulness was weak and negative: -0.24 (95% CI [-0.48, 0.03]) across papers and -0.20 (95% CI [-0.33, -0.06]) across experiments, suggesting that larger requests were only modestly associated with less helpfulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide explicit correlation coefficients with confidence intervals, shown in Figure 2. The statistical analysis is appropriate for exploring the relationship between two ordinal variables. The confidence intervals indicate the correlation across experiments is statistically significant but weak.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Of 193 initially selected experiments, 83 were dropped after author exchanges, 97 were included in 32 submitted Registered Reports, and 87 experiments in 29 Registered Reports were ultimately published (none accepted without revision, one not resubmitted, two rejected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C101-C104 provide explicit data about the Registered Report process with consistent numbers across the manuscript. The attrition from 193 to 87 experiments is well-documented with clear reasons for exclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Of 87 experiments in published Registered Reports, 67% required protocol modifications during execution. The extent varied: 29% needed none, 21% few, 14% some, 9% moderate, 7% strong, and 8% extreme modifications. A total of 76 experiments were started (11 were not started).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C55-C62 provide explicit, detailed data about protocol modifications with percentages that sum appropriately. The data is clearly stated in the abstract and results sections with supporting examples in case studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Of the modifications needed, only 41% could be fully or mostly implemented: 24% were completely implemented, 5% mostly, 5% moderately, 7% some, 5% few, and 14% not implemented at all (excluding the 29% that needed no modifications).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide explicit percentages about modification implementation. The data is clearly stated and the percentages are internally consistent. The finding that many needed modifications could not be implemented is a critical barrier to replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The correlation between extent of modifications needed and implementation success was essentially zero: -0.01 (95% CI [-0.42, 0.40]) across papers and 0.01 (95% CI [-0.27, 0.28]) across experiments, indicating that the ability to implement modifications was not related to how extensive they were.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide explicit correlation coefficients with confidence intervals shown in Figure 3. The near-zero correlations with wide confidence intervals indicate no relationship between modification extent and implementation success, which is appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Ultimately, 50 experiments from 23 papers were completed. For 18 papers all planned experiments were completed and published as individual Replication Studies; for 5 papers only some experiments were completed and reported in an aggregate paper. Of 18 Replication Studies submitted to eLife, 17 were accepted and one was rejected (posted as preprint).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 provide explicit data about completion rates and publication outcomes, supported by Table 1 and clear statements in the results. The Registered Reports format largely eliminated publication bias (only 1 of 18 rejected), which is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The replication process took an average of 197 weeks total, broken down as: 30 weeks to design and submit Registered Report, 19 weeks for peer review, 12 weeks for preparation, 90 weeks for experimental work, 24 weeks for analysis and writing, and 22 weeks for Replication Study peer review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide explicit timing data shown in Figure 4 and stated in the results. The breakdown is detailed and the total (197 weeks) is consistent with the sum of phases. This represents approximately 3.8 years per replication on average.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Replication protocols required 25% larger sample sizes for animal experiments compared to original studies (replication average=30, SD=16, median=26 vs. original average=24, SD=14, median=22) to achieve 80% power to detect the original effect size at p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 provides explicit sample size data with appropriate statistical measures (mean, SD, median, IQR). The 25% increase is clearly calculated and the rationale (achieving adequate power) is appropriate. This illustrates the challenge of underpowered original studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The final cost per experiment was approximately $53,000, which the authors argue may be modest compared to losses from follow-on research based on unreplicable findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 provides an explicit cost estimate stated in the discussion. While the cost calculation methodology is not detailed, the figure is presented as an approximate value and contextualized appropriately. The comparison to downstream costs is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The project utilized 48 replication providers (22 academic facilities, 26 CROs) through the Science Exchange marketplace, with an average of 6 days (median=2) from request to quote.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 provide explicit data about the replication infrastructure used in the project. The numbers are clearly stated in the methods section and demonstrate the logistical approach taken.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes conceptual foundations: credibility relies on transparency and repeatability; selective reporting biases literature; data/code sharing increases efficiency; and defines reproducibility (same analysis, same data), robustness (alternative analysis, same data), and replicability (new data).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 provide standard definitions and principles supported by appropriate citations (Anderson et al. 2007, NAS 2019, etc.). These are well-established concepts in metascience and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The replication results (reported in a separate paper) showed evidence weaker or inconsistent with original studies, corroborating similar findings from pharmaceutical companies and other disciplines. Evidence for self-correction is underwhelming: few replications are published, preclinical findings advance to trials before verification, and retracted papers continue to be cited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by citations to the companion meta-analysis paper (Errington et al. 2021b) and multiple other studies. These claims about the broader replication crisis are well-established in the literature and appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Recent improvements in research practices include: hundreds of journals strengthening data/code sharing policies (with slowly improving rates), over 300 journals adopting Registered Reports (as of late 2021), and evidence that Registered Reports reduce publication bias (56% vs 4% negative results) while maintaining or improving impact and quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by appropriate citations (Camerer et al. 2018, Scheel et al. 2020, Hummer et al. 2017, Soderberg et al. 2021). The data about Registered Reports effectiveness is from peer-reviewed studies and the numbers are explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors conclude that pervasive impediments to verification make it hard to assess credibility of findings, that research operates as a 'trust me' rather than 'show me' enterprise, that this creates unnecessary friction in discovery, and that efficient science should not impose unnecessary barriers to verification or innovation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 represent the main conclusions drawn from the empirical findings documented in claims C1-C104. These inferences are well-supported by the extensive documentation of barriers encountered. The conclusions are appropriately qualified and represent reasonable interpretations of the data.",
+    "result_type": "MAJOR"
+  }
+]

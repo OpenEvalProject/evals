@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Model simulations demonstrate that independent reward and information value systems can produce spurious overlapping fMRI activity when shared variance is not controlled, but orthogonalization eliminates this apparent overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe computational simulations showing that orthogonalization successfully dissociates independent value systems. The simulations are presented with visual evidence (Figure 1A-B) and provide the methodological foundation for the empirical fMRI analyses. The logic is sound and the simulation results directly support the analytical approach adopted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Participants' choices in the gambling task were driven by both reward and information experienced during the learning phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 reports statistically significant effects of both reward (\u03b2=3.22, t(1,19)=12.4, p<10\u207b\u2079) and information (\u03b2=\u22123.68, t(1,19)=\u22127.84, p<10\u207b\u2076) on choice behavior with appropriate statistical tests and strong effect sizes, providing clear behavioral validation for the task design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The gambling task elicits opposing activity patterns in vmPFC and dACC, with vmPFC positively correlated with reward and dACC negatively correlated with reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C25 report fMRI activity patterns, but C24 notes that dACC activity did not survive FWE correction (p=0.158), only reaching significance at uncorrected threshold (p=0.014). While a small volume correction was performed post-hoc, the initial failure to reach corrected significance raises concerns about the robustness of this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The RL model with information integration (gkRL) better explains participant behavior than a standard RL model without information integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides model comparison statistics (BIC values) and random-effects model comparison (exceedance probability = 1 for gkRL), along with parameter recovery analysis showing adequate recovery (correlations 0.6-0.8). The model validation is appropriately conducted and supports the use of this model for deriving neural regressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "RelReward is a better predictor of vmPFC activity than alternative reward computations including expected reward value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 systematically compare RelReward against ExpReward and other reward definitions (Max Value, Min Value, Averaged Value) using orthogonalization and direct competition analyses. The statistical comparisons are appropriate and support the choice of RelReward as the primary reward regressor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Without controlling for shared variance, both vmPFC and dACC show correlations with both reward and information signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 report significant correlations in both regions for both value types (all p<0.001 or p=0.001) using separate GLMs (GLM1 and GLM2). The statistical evidence is strong and demonstrates the predicted overlapping activity pattern when shared variance is not controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "After controlling for shared variance through orthogonalization, vmPFC selectively encodes reward value while dACC selectively encodes information value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate the key dissociation: vmPFC remains correlated with RelReward (t(19)=4.47, p<0.001) but not Information Gain after orthogonalization, while dACC shows the opposite pattern (Information Gain: t(19)=4.39, p<0.001; RelReward: t(19)=\u22121.14, p=0.27). This is the central empirical finding and is well-supported by appropriate ROI analyses with proper controls for double-dipping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Statistical interactions confirm that the dissociation between reward and information encoding in vmPFC and dACC depends on controlling for shared variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 report significant three-way (F(1,19)=37.77, p<0.001) and two-way interactions for both ROIs, providing statistical confirmation that the orthogonalization procedure successfully reveals independent value systems. The ANOVA design appropriately tests the key hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "dACC encoding of information value is not explained by choice difficulty or conflict, as information gain does not correlate with reaction time and the effect persists after controlling for difficulty and switching behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 address alternative interpretations by showing no correlation between Information Gain and RT (r=0.031, p=0.1429) and demonstrating that dACC-information correlation persists (t(19)=2.4, p=0.027) after controlling for difficulty proxies and switching behavior. This strengthens the interpretation of dACC as encoding information value per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Frontopolar cortex activity correlates with moving away from default (most informative) options, demonstrating that information-seeking and exploration are dissociable in this task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 show frontopolar activity for NoDefault choices (FWE p=0.019) with no corresponding dACC activity (t(19)=0.664, p=0.514), supporting the interpretation that dACC encodes information value rather than exploratory switching. This control analysis appropriately addresses potential confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "dACC encodes both instrumental and non-instrumental information value, while vmPFC encodes instrumental information value, with non-instrumental information value uniquely represented in dACC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 demonstrate through behavioral regression and orthogonalized fMRI analyses that Information Gain (z=4.28, p=10\u207b\u2075) and Instrumental Information (z=\u22124.98, p<10\u207b\u2076) have opposite effects on behavior, and show dissociable neural correlates. dACC correlates with Information Gain after controlling for Instrumental Information (t(19)=5.56, p<10\u207b\u2074), while vmPFC shows the opposite pattern. The Bayesian learner model for computing instrumental information is sophisticated and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "Reward and information value signals converge in bilateral dorsal putamen (striatum), where choice probabilities derived from the combined RL model correlate with activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 report significant bilateral putamen activity (both FWE p<0.01) correlating with choice probabilities, with spatial overlap with both RelReward and Information Gain effects. This provides evidence for integration of the independent value systems at the level of action selection, consistent with theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study provides direct empirical evidence for independent reward and information value systems in human PFC, with distinct encoding in vmPFC and dACC respectively when shared variance is controlled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 summarize the main findings, which are well-supported by the convergent evidence from model simulations, behavioral data, and orthogonalized fMRI analyses. The conclusion that information and reward are independently encoded is justified by the systematic demonstration that apparent overlap disappears when shared variance is controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The dissociation between neural substrates for information gain and reward optimization demonstrates that information is valuable independent of its rewarding attributes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 interpret the findings to argue for information as an independent value signal. This interpretation is supported by the empirical dissociation demonstrated in the orthogonalized analyses, though the claim about information being 'valuable on its own' (C71) involves some inferential leap beyond the direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The findings support theoretical frameworks predicting independent information and reward value computations, including active inference and certain RL models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 connect the empirical findings to theoretical frameworks through appropriate citations. The consistency with monkey single-neuron data (C73) and theoretical predictions (C72) strengthens the interpretation, though the claim about a 'general coding scheme' (C74) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The results are consistent with prior literature on dACC function, including its role in encoding non-instrumental information value, uncertainty, and prospective information about options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 appropriately situate the findings within existing literature on dACC function through multiple citations. The interpretation that dACC represents 'subjective decision variables elicited in uncertain environments' (C80) is a reasonable synthesis of the current findings with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Other brain regions beyond those identified in this study may be involved in processing information-related value signals, including rostrolateral PFC and cortico-basal ganglia networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 acknowledge limitations and cite relevant literature on other regions involved in information processing. This appropriately contextualizes the findings within a broader network perspective, though these claims are primarily speculative regarding the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "vmPFC encodes relative reward value of the chosen option, consistent with prior research on vmPFC function in value computation and reward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 interpret the vmPFC findings in light of established literature, with appropriate citations. The finding that vmPFC specifically encodes relative reward value (C87) is supported by both the current data and prior work (Boorman et al., 2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The convergence of reward and information signals in the striatum is consistent with its role in representing expected policies, processing information-related cues, and supporting stimulus-response associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 interpret the striatal findings with extensive citations to relevant literature. The connection to softmax probability output (C93) is particularly well-grounded in computational modeling work. The interpretation is appropriately supported by both the current data and prior research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The study provides empirical support for theoretical frameworks aimed at developing a unifying understanding of brain function and suggests new perspectives on decision-making with implications for healthy and clinical populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 make broad claims about the study's contribution to unifying frameworks and clinical implications. While the empirical findings are solid, these claims extend beyond what the data directly demonstrate. No clinical populations were studied, and the connection to 'unifying frameworks' is somewhat vague.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study employed appropriate methods including 20 participants (after one exclusion), a gambling task with 128 games consisting of forced-choice and free-choice phases, and standard fMRI acquisition procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C115 describe the methods in detail. The sample size (n=20) is justified by citations to similar studies, though power analysis is not reported. The task design is well-described and appropriate for orthogonalizing reward and information. The fMRI acquisition parameters are standard. One concern is the relatively small sample size for detecting brain-behavior correlations, though this is typical for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The gkRL model used for deriving neural regressors was previously validated and employs standard delta-rule learning for reward values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 describe the computational model with appropriate citations. The model has been previously validated for this task (Cogliati Dezza et al., 2017), and the delta-rule learning is a standard approach (Rescorla & Wagner, 1972). The model description is adequate for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

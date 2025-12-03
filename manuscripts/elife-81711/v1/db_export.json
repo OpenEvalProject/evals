@@ -1,0 +1,1797 @@
+{
+  "submission": {
+    "id": "a8c98eba-8b80-4803-b04a-f1f7c70e8216",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:25:07.868299Z",
+    "updated_at": "2025-12-03T16:25:07.868299Z"
+  },
+  "content": [
+    {
+      "id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "submission_id": "a8c98eba-8b80-4803-b04a-f1f7c70e8216",
+      "content_type": "manuscript",
+      "content_text": "# A model-based analysis of the health impacts of COVID-19 disruptions to primary cervical screening by time since last screen for current and future disruptions\n\n## Authors\n\n- Emily A Burger<sup>1</sup> ([ORCID: 0000-0002-6657-5849](https://orcid.org/0000-0002-6657-5849)) \u2020\n- Inge MCM de Kok<sup>3</sup>\n- James F O'Mahony<sup>4</sup>\n- Matejka Rebolj<sup>5</sup> ([ORCID: 0000-0001-9597-645X](https://orcid.org/0000-0001-9597-645X))\n- Erik EL Jansen<sup>3</sup> ([ORCID: 0000-0003-0436-6918](https://orcid.org/0000-0003-0436-6918))\n- Daniel D de Bondt<sup>3</sup>\n- James Killen<sup>6</sup>\n- Sharon J Hanley<sup>7</sup> ([ORCID: 0000-0002-7554-004X](https://orcid.org/0000-0002-7554-004X))\n- Alejandra Castanon<sup>5</sup>\n- Mary Caroline Regan<sup>1</sup>\n- Jane J Kim<sup>1</sup>\n- Karen Canfell<sup>8</sup>\n- Megan A Smith<sup>8</sup> ([ORCID: 0000-0002-0401-2653](https://orcid.org/0000-0002-0401-2653))\n\n### Affiliations\n\n1. Center for Health Decision Science, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n2. Department of Health Management and Health Economics, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))\n3. Department of Public Health, Erasmus MC, University Medical Center Rotterdam Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))\n4. Centre for Health Policy & Management, School of Medicine, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))\n5. Faculty of Life Sciences & Medicine, School of Cancer & Pharmaceutical Sciences, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n6. Cancer Research Division, Cancer Council NSW Sydney Australia ([ROR:05gsbkp40](https://ror.org/05gsbkp40))\n7. Hokkaido University Center for Environmental and Health Sciences Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))\n8. Daffodil Centre, University of Sydney, a joint venture with Cancer Council NSW Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe evaluated how temporary disruptions to primary cervical cancer (CC) screening services may differentially impact women due to heterogeneity in their screening history and test modality. We used three CC models to project the short- and long-term health impacts assuming an underlying primary screening frequency (i.e., 1, 3, 5, or 10 yearly) under three alternative COVID-19-related screening disruption scenarios (i.e., 1-, 2-, or 5-year delay) versus no delay in the context of both cytology-based and human papillomavirus (HPV)-based screening. Models projected a relative increase in symptomatically detected cancer cases during a 1-year delay period that was 38% higher (Policy1-Cervix), 80% higher (Harvard), and 170% higher (MISCAN-Cervix) for underscreened women whose last cytology screen was 5 years prior to the disruption period compared with guidelines-compliant women (i.e., last screen 3 years prior to disruption). Over a woman\u2019s lifetime, temporary COVID-19-related delays had less impact on lifetime risk of developing CC than screening frequency and test modality; however, CC risks increased disproportionately the longer time had elapsed since a woman\u2019s last screen at the time of the disruption. Excess risks for a given delay period were generally lower for HPV-based screeners than for cytology-based screeners. Our independent models predicted that the main drivers of CC risk were screening frequency and screening modality, and the overall impact of disruptions from the pandemic on CC outcomes may be small. However, screening disruptions disproportionately affect underscreened women, underpinning the importance of reaching such women as a critical area of focus, regardless of temporary disruptions.\n\n## Introduction\n\nThe coronavirus disease 2019 (COVID-19) pandemic continues to impact a wide range of health outcomes. In the initial months of the pandemic in 2020, there were severe disruptions to preventive services, including cervical cancer screening. For example, during acute phases of the pandemic in the United States, 59% of federally qualified health centers stopped cancer screenings completely (Fisher-Borne et al., 2021), and electronic health records from 39 organizations spanning 23 states found a 67% decline in mean weekly cervical cancer screening volumes (Mast and Rio, 2020). While cancer screening volumes gradually improved (Mast and Rio, 2020), mid-June 2020 volumes remained around 30% lower than their pre-COVID-19 levels, and cervical volumes have remained 10% lower 2 years into the pandemic (Christopher and Joe, 2022).\n\nThe risk of developing cervical cancer depends in part on time since last screen (Dillner et al., 2008; Landy et al., 2020). Despite US recommendations for primary cervical cancer screening of either 3-yearly cytology or 5-yearly human papillomavirus (HPV) testing (Curry et al., 2018), there is heterogeneity in adherence to guideline recommendations where both underscreening and overscreening are observed when comparing behavior to recommendations. For example, in the only population-based registry in the United States prior to widespread primary HPV-based screening, 20% of women were not screened within 5 years (Cuzick et al., 2014), which was correlated with race and ethnicity, income level, lower levels of education, and lack of insurance (Johnson et al., 2020). Conversely, screening more frequently than recommended has been observed in 66% of insured women (Wright et al., 2021).\n\nThe impact of service disruptions due to COVID-19 may not have affected all women equally. For women without health insurance or unable to access care, or those who avoid care due to fear of COVID-19, the disruptions may continue. In other countries such as the United Kingdom, 30% of survey respondents elicited fall 2020 reported that they were less likely to attend cervical screening now than before the pandemic (Wilson et al., 2021). Although the observed decrease in screening attendance ultimately was smaller than surveyed intentions to screen (Castanon et al., 2022), the UK study also found that previous nonparticipation was the strongest predictor of low intentions for future post-pandemic participation.\n\nRebounds toward pre-pandemic attendance levels in aggregate-level metrics may suggest a successful recovery but could actually mask unexpected disparities in coverage. For example, the same disruption period may differentially impact women due to heterogeneity in their screening history so that the impact is greater for those underscreened compared to those that are screened according to recommended guidelines. It will thus be important to understand the influence of variation in women\u2019s past behavior as a contributor to underlying risk when assessing past and ongoing disruptions to screening.\n\nEmpirically, decreases in cervical cancer diagnoses in 2020 have been confirmed in the United States (Kaufman et al., 2020) and elsewhere (Ijzerman and Emery, 2020). Previous model-based analyses have projected that temporary disruptions to cervical cancer screening may result in temporal shifts in cancer detection (initial decreases followed by an increase), yielding small net increases in cervical cancer burden (Burger et al., 2021; Smith et al., 2021). Such decreases are to be expected in the short run due to the reduction in screening and related investigations and any net increases will only be observed in time. Model-based analyses (Burger et al., 2021; Smith et al., 2021) have shown that maintaining services for the highest risk women may mitigate the potential secondary impacts of COVID-19 on cervical cancer; for example, prioritizing those in need of diagnostic follow-up (surveillance, colposcopies) or excisional treatment, as well as women whose last primary screen did not involve a highly sensitive test, such as that for the detection of HPV. Furthermore, short delays to cervical screening services among women with a previous negative HPV result had minor effects on cancer outcomes; however, previous analyses have not explicitly stratified outcomes for women by their prior screening history, that is, time since last screen.\n\nDisease simulation models can help assess the impact of service disruptions and policy responses in advance of empirical data. Models can also quantify health consequences of alternative screening disruption scenarios and isolate complex interactions between temporary screening suspensions for women with different underlying screening histories. These simulations can help inform which women are most vulnerable to COVID-19 disruptions and should be prioritized for targeted recovery activities. Therefore, as part of the Covid and Cancer Global Modelling Consortium (CCGMC), we used three US-contextualized cervical cancer natural history models from the Cancer Intervention and Surveillance Modeling Network (CISNET) consortium (https://cisnet.cancer.gov/) to isolate the health impact of temporary disruptions to primary screening services only by time since a woman\u2019s last screen and primary screening test modality. Multimodel comparative analyses can demonstrate the validity of findings and test the robustness despite structural differences between the models used. The purpose of this analysis is to provide decision-makers with evidence regarding the potential impact of temporary disruptions to the provision of screening services on cervical cancer incidence, either due to the COVID-19 pandemic or any other similar disruption, on a disaggregated basis according to women\u2019s prior screening history in order to inform any targeted allocation of scarce screening capacity.\n\n## Results\n\n### Short-term impacts\n\nOn average, among women aged 35\u201355 years, the models projected a relative increase in symptomatically detected cancer burden during a 1-year delay period that were higher \u2013 38% higher (Policy1-Cervix), 80% higher (Harvard), and 170% higher (MISCAN-Cervix) \u2013 for those who had not screened in 5 years at the time of the disruption, compared with women who attended cytology-based screening according to guidelines (i.e., every 3 years) (Figure 1; Figure 2, left panels). Compared with guidelines-compliant cytology screeners, the relative excess burden of cancers detected during a 1-year delay period was 3.1 (Policy1-Cervix), 3.2 (Harvard), or 7.0 (MISCAN-Cervix) times higher for women whose last cytology screen was 10 years ago at the time of the disruption. Compared with women who switched to HPV-based screening at age 30 and were guidelines-compliant screening every 5 years, women who screened every 10 years with HPV after age 30 years faced an excess cancer burden that was generally consistent regardless of the disruption period, ranging from 2.2 to 2.5 (Policy1-Cervix), 3.0\u20133.9 (MISCAN-Cervix), and 3.6\u20133.7 (Harvard) times higher (Figure 2, right panels). Although the relative excess burden among women overdue for screening remained generally similar by delay period, the absolute accumulated rates increased with the length of the delay period (Appendix 1\u2014table 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81711/elife-81711-fig1-v1.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81711/elife-81711-fig2-v1.jpg)\n\n### Long-term impacts\n\nThe models consistently projected that a 1- or even 5-year temporary disruption to primary screening had a smaller effect on the lifetime risk of developing cervical cancer than the effects from screening frequency and modality we considered (Figure 3). For example, within-model comparisons found that the lifetime risk of developing cervical cancer was lower, even in the context of an extreme 5-year screening disruption, for women screened every 3 years with cytology prior to the disruption (Policy1-Cervix [0.21%], Harvard [0.32%], and MISCAN-Cervix [0.32%]) than for women screening every 5 years without a disruption (Policy1-Cervix [0.22%], Harvard [0.42%], and MISCAN-Cervix [0.39%]) (Figure 3, upper panels). Set within the wider context of prevention, the models projected that, under an extreme scenario of a 5-year delay, 3-yearly cytology screening maintained nearly all benefits of screening, decreasing from preventing 72.1% to 69.1% (MISCAN-Cervix), 79.9% to 78.4% (Harvard), and 86.5% to 85.1% (Policy1-Cervix) of cancer cases over a woman\u2019s lifetime compared with no screening (assuming screening resumed following the disruption) (Appendix 1\u2014table 4). In contrast to women screened with cytology over their lifetime, women screened with primary HPV after age 30 years face a lower overall lifetime risk of cervical cancer (and percentage of cancers prevented by screening was higher) compared with cytology-based screening; furthermore, these women generally faced smaller impacts of a COVID-19 disruption to screening relative to screening frequency (Figure 3, lower panel; Appendix 1\u2014table 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81711/elife-81711-fig3-v1.jpg)\n\nDespite the relatively lower contribution of COVID-19-related delays to lifetime risk of developing cervical cancer than screening frequency and test modality, there were important differences in the impact of a delay period on a woman\u2019s lifetime risk by the length of time since her last screen and the screening modality used during the last screen (Figure 4). In general, annual or 3-yearly screeners faced only nominal excess risks when experiencing a 1-year temporary delay to primary cytology screening, and cancer risks increased disproportionately the longer time had elapsed since a woman\u2019s last screen (Figure 4, upper panels). For example, all models projected that compared with no COVID-19 delay, an extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 20 (Policy1-Cervix), 22 (Harvard), and 31 (MISCAN-Cervix) per 100,000 women screened 3-yearly with cytology, compared to an increase of 44 (Harvard), 47 (MISCAN-Cervix), and 66 (Policy1-Cervix) per 100,000 women screened 10-yearly with cytology (Table 1). Importantly, these excess risks for a given delay period were generally lower for HPV-based screeners than for cytology-based screeners (Figure 4, lower panels). For example, compared with cytology-based screening, two of the models (Harvard and Policy1-Cervix) found that women screened with primary HPV testing faced smaller excess risks for the same delay duration unless women were screening very infrequently (10-yearly), in which case, the excess risks of cancer were similar, that is, 44\u201366 per 100,000 women for cytology versus 40\u201358 per 100,000 women for HPV 100,000 women.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81711/elife-81711-fig4-v1.jpg)\n\n**Table 1.**\n Long-term health impacts* of a 5-year temporary delay to screening compared with no delay, by screening history, that is, screening frequency.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">Screening frequency</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Annual</td>\n      <td>3-yearly</td>\n      <td>5-yearly</td>\n      <td>10-yearly\u2020</td>\n    </tr>\n    <tr>\n      <td>Primary cytology-based screening</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Harvard</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Absolute change in lifetime risk</td>\n      <td>0.008%</td>\n      <td>0.022%</td>\n      <td>0.031%</td>\n      <td>0.044%</td>\n    </tr>\n    <tr>\n      <td>Excess cases over lifetime per 100,000 women</td>\n      <td>8</td>\n      <td>22</td>\n      <td>31</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>MISCAN-Cervix</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Absolute change in lifetime risk</td>\n      <td>0.021%</td>\n      <td>0.031%</td>\n      <td>0.034%</td>\n      <td>0.047%</td>\n    </tr>\n    <tr>\n      <td>Excess cases over lifetime per 100,000 women</td>\n      <td>21</td>\n      <td>31</td>\n      <td>34</td>\n      <td>47</td>\n    </tr>\n    <tr>\n      <td>Policy1-Cervix</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Absolute change in lifetime risk</td>\n      <td>0.014%</td>\n      <td>0.020%</td>\n      <td>0.029%</td>\n      <td>0.066%</td>\n    </tr>\n    <tr>\n      <td>Excess cases over lifetime per 100,000 women</td>\n      <td>14</td>\n      <td>20</td>\n      <td>28</td>\n      <td>66</td>\n    </tr>\n    <tr>\n      <td>Primary HPV-based screening</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Harvard</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Absolute change in lifetime risk</td>\n      <td>0.000%</td>\n      <td>0.001%</td>\n      <td>0.004%</td>\n      <td>0.040%</td>\n    </tr>\n    <tr>\n      <td>Excess cases over lifetime per 100,000 women</td>\n      <td>0</td>\n      <td>1</td>\n      <td>4</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>MISCAN-Cervix</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Absolute change in lifetime risk</td>\n      <td>0.017%</td>\n      <td>0.032%</td>\n      <td>0.041%</td>\n      <td>0.063%</td>\n    </tr>\n    <tr>\n      <td>Excess cases over lifetime per 100,000 women</td>\n      <td>17</td>\n      <td>32</td>\n      <td>41</td>\n      <td>63</td>\n    </tr>\n    <tr>\n      <td>Policy1-Cervix</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Absolute change in lifetime risk</td>\n      <td>0.000%</td>\n      <td>0.006%</td>\n      <td>0.012%</td>\n      <td>0.058%</td>\n    </tr>\n    <tr>\n      <td>Excess cases over lifetime per 100,000 women</td>\n      <td>0</td>\n      <td>6</td>\n      <td>12</td>\n      <td>58</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Risks are rounded to nearest 0.001%.\u2020The women born in 1985 (aged 35 in 2020) received their last screen at age 25 and have not yet made the switch to primary human papillomavirus (HPV)-based screening. In the primary HPV-based analysis, these women would switch to primary HPV-based screening for their remaining lifetime either at 35 (under the no delay scenario) or aged >35 years (with a delay)._\n\n## Discussion\n\nThe results of our comparative health impact modeling study suggest that women who are overdue for routine screening and encounter a further delay face an increased risk of presenting with a symptomatic cancer during the delay period compared with those who attend screening regularly according to guidelines. Furthermore, women who undergo routine guidelines-compliant screening are able to endure a temporary, that is, 1 year, disruption to cervical screening under both primary cytology and HPV-based screening modalities, and those who undergo guidelines-compliant screening with HPV testing are more resilient to longer delays (2 or 5 years). In the United States, where there is heterogeneity in screening behavior (Wright et al., 2021), our findings suggest that to minimize population cancer risk, targeted outreach to overscreened and regularly screened women should be a lower priority than outreach to women whose screening history is not up to date. Our findings support outreach to women most vulnerable to COVID-19 disruptions who also faced pre-pandemic barriers to routine screening. Importantly, aggregated metrics demonstrating a near-return to pre-pandemic screening volumes may not be adequate to capture heterogeneities in screening history, and therefore, risk associated with disruptions to screening.\n\nSimilar to our previous results (Burger et al., 2021), we found that screening with primary HPV testing generally provided greater reductions in lifetime risk of developing cervical cancer compared with cytology-based screening. A recent study found variation in the utilization of screening tests by health network and geography, with safety-net healthcare systems \u2013 which service a greater proportion of uninsured and underinsured women \u2013 having a higher use of cytology-based screening than HPV-based screening (Haas et al., 2022). Although we did not explicitly simulate screening that switches from cytology-based screening before a disruption to HPV testing upon resumption, such a strategy may be able to mitigate any pandemic-related excess risks. Similarly, we found that the impact of disrupting an HPV-based screening program has different implications than the disruption of a cytology-based program. This can be explained by the fact that HPV screening has a higher sensitivity to detect (pre-invasive) cervical lesions than cytology; therefore, the cancer risk at time of disruption is lower (as there are fewer undetected lesions) and this may provide a greater buffer to endure temporary disruptions. On the other hand, in case of the more sensitive HPV test, disruption takes away a relatively more valuable (i.e., sensitive) screening moment. The balance between these two factors causes a greater or smaller excess risk per delay duration in case of HPV screening compared to cytology screening, which contributes to the within-model differences of cytology-based versus HPV-based screening in Table 1. If in a model the first effect (HPV screening contributes to lower risk at the time of disruption) is larger than the second effect (removal of a valuable screening moment), disruption of the HPV program would have a smaller effect than that of the cytology program, which is the case for all screening frequencies in both the Harvard and Policy1-Cervix models and the annual screeners in MISCAN-Cervix (Table 1). The MISCAN-Cervix model predicted relatively more excess cancers for women screened with HPV 3-yearly, 5-yearly, or 10-yearly due to disruptions, where delaying a more sensitive test (the second factor) seems to outweigh the first (less underlying disease at the time of the disruption). Differences in dwell time for HPV and cervical precancer among the three models predominately contribute to this balance between the two factors, where the MISCAN-Cervix model has the shortest preclinical dwell time from HPV acquisition to cancer development (Burger et al., 2020a). In addition to the shorter dwell times, the MISCAN model also assumes that some precancerous lesions are consistently missed over time by cytology-based screening because they are located deeper into the cervical canal. For women with such lesions, missing a cytology screen due to a disruption is less harmful, which increases the relative difference between primary cytology and primary HPV screening in case of a disruption, and increases the effect of women missing a very sensitive screen (the second factor).\n\nWe also found that the relative excess rates of symptomatically detected cancer projected for the same delay period were higher for women overdue for screening compared with women who attend screening according to guidelines. These relative increases were generally similar regardless of the length of the delay period as the underlying cases among the guidelines-compliant and overdue women continued to accumulate with the length of delay. However, some delay-length trends were observed (Figure 2), which may be due to the fact that the differences in the impact of the delay between guidelines-compliant and underscreeners may become smaller in the case of a longer delay (a longer screening delay increasingly becomes more impactful for guidelines-compliant screeners as well). Delay-length differences are predominantly observed in MISCAN-Cervix, which may be in part due to shorter dwell time assumptions. In contrast, for the Harvard and Policy1-Cervix models that assume longer dwell times, the relative impacts between a 1- and 5-year delay are smaller.\n\nAlthough our analysis was contextualized to the United States, our results may still be generalizable to other countries where cervical screening was disrupted such as the United Kingdom, Ireland, New Zealand, and the Netherlands where cervical screening was paused for 2\u20134 months (Public Health Agency, 2020; Aitken et al., 2022; Campbell et al., 2021; National Screening Service, 2022). We considered combinations of screening modality and screening frequency, some of which will be more applicable to some countries than others. Our overarching findings that disruptions are likely to disproportionately impact those who are already overdue for screening, and that underscreened women are at higher risk than guidelines-compliant screeners affected by a temporary delay are likely generalizable.\n\nImportantly, vaginal HPV-based screening (unlike cytology-based screening) enables self-collection of samples at home, which may provide a tool to reduce screening barriers and facilitate outreach to underscreened people who are also most vulnerable to screening disruptions. In the Netherlands, parts of Sweden, and recently Australia, self-sampling is available to all women, and preliminary findings suggest this has facilitated rapid reintroductions to screening in the Netherlands in the context of COVID-19 (Aitken et al., 2022).\n\n### Limitations and clinical relevance\n\nDespite the strength of consistent results from three established CISNET models, there are several limitations that should be considered in interpreting our results. First, in the absence of detailed information on cervical screening disruptions by screening frequency, we explored a range of stylized scenarios that represent different combinations of screening behavior, disruption periods, and screening modalities.\n\nWe encountered several challenges as we planned this analysis, which we feel are worth describing as they illustrate some of the limits of modeling in this context. The first is the scope of time over which to consider outcomes. Attempting to assess screening delays over a short period presents problems as short-term outcomes may not be representative of long-term health gains. For instance, the occurrence of screening moments will always be associated with the incidence of cancer due to the volume of screen-detected disease. An analysis that attempted to consider changes in the incidence of cancer within a finite period that includes resumption of screening will generate results that are largely artifacts of the resumption of screening within the period of analysis rather than fundamentally reflecting differences due to temporary extensions to the interval. Therefore, we restricted the short-term analysis to the assessment of symptomatically detected cancers during a finite delay period while the long-term analysis considered the net impact on cervical cancer risk given women\u2019s lifetime screening participation.\n\nConsidering changes in the longer term required us to make assumptions about women\u2019s screening behavior following the COVID-related delays as the impact of the temporary screen delays is contingent on the subsequent screens they receive. Again, we encountered the potential for modeling assumption to influence results. When screening eligibility is limited by an upper age bound, that is, age 65 years, the impact of a screen delay can depend heavily on what is assumed about a woman\u2019s final screen (summarized assumptions in Appendix 1\u2014table 1 and Appendix 1\u2014table 2). For instance, a 1-year delay to program for a woman following a 5-year interval would imply a final screen occurring at age 61 rather than age 65 in the \u2018no delay\u2019 scenario. In this instance, the model-projected changes in long-term outcomes potentially reflect a missed final screen moment, rather than isolated only to the extension of 1-year delay (increasing the screening interval temporarily from 5 to 6 years) (Wang et al., 2017; Castanon et al., 2021). Changes to future screening patterns maybe an overlooked secondary/long-term consequence of this one-time COVID-19 disruption.\n\nThis analysis did not consider delays in diagnostic follow-up or precancer treatment, which have been shown to account for most of the potential harm of COVID-induced disruptions to cervical cancer screening (Burger et al., 2021; Smith et al., 2021). If women who screen less frequently face further disproportional delays to essential diagnostic services or precancer treatment, we would expect the gap in cancer burden between routine and underscreeners to continue to widen. We did not stratify the impact of temporary disruptions by cancer stage at detection (i.e., potential upstaging due to delayed screening and diagnosis). As COVID-related delays have previously been projected to upstage cancer detection for cervical (Smith et al., 2021) and other cancers (Maringe et al., 2020), upstaging effects are likely exacerbated for women who screen infrequently, who are already at a higher risk of having a more severe cancer stage at diagnosis (Landy et al., 2020). We also did not evaluate rarer outcomes such as cancer death as the impact on incidence is an early indicator for mortality burden. We also did not consider differences in underlying risk between various screening behavior groups (i.e., we assumed differential cancer risk was a function of only screening behavior). If women who screen less frequently also face a higher underlying risk of developing cancer, the differences in our projected risks for delays to underscreeners compared with guideline-compliant screeners may be underestimated, providing additional support for a targeted outreach to underscreened women. Although we did not simulate a cytology and HPV \u2018co-testing\u2019 strategy explicitly, which is a third recommended screening approach by the USPSTF, the majority of the benefit of co-testing has been attributed to the high negative predictive value of HPV testing alone (Schiffman et al., 2011); therefore, we expect our current findings for HPV testing alone to be generalizable to women whose last screening involved co-testing.\n\nWhile our models do not explicitly simulate the impacts of specific factors, including race and ethnicity, poverty income level, education, and insurance status, these characteristics are associated with screening behavior, which we do capture in our simulation models. Furthermore, our projections reflected the burden of cervical cancer assuming an average underlying natural history risk of progression to cervical cancer, and we do not reflect the differential natural history for immunocompromised women. Subsequently, our findings would not be generalizable to certain groups facing greater background risk of developing cancer.\n\nIn conclusion, our models predicted that the main driver of lifetime risk of cervical cancer is screening frequency and screening modality rather than temporary disruptions to screening; however, a disruption to screening does not equally impact women with differential screening histories or screening behaviors. Understanding and reaching underscreened women remains the most critical area of focus, regardless of temporary disruptions.\n\n## Materials and methods\n\n### Analytic overview\n\nTo complement our previous analysis (Burger et al., 2021), we used the same three CISNET-Cervical microsimulation models to project the expected lifetime risk (until age 84 years) of developing cervical cancer for three birth cohorts (born in 1965, 1975, and 1985; aged 55, 45, and 35 in 2020, respectively) assuming an underlying exposure to HPV vaccination (see Kim et al., 2021) and screening frequency \u2013 that is, annual, 3-yearly, 5-yearly, or 10-yearly screening, aligned so that 2020 was 1, 3, 5, or 10 years since their last screen (Figure 1, Appendix 1\u2014table 1 and Appendix 1\u2014table 2). These selected birth cohorts enabled the analysis to capture at least 10 years of pre- and post-COVID-19 screening history. We used the models to estimate both the short- and long-term impacts of COVID-19 delays on cervical cancer burden. As both primary cytology- and HPV-based screening modalities are recommended by the U.S. Preventive Services Task Force (USPSTF), we explored these outcomes in the context of primary cytology (i.e., Pap smear only) and primary HPV-based screening recommendations. USPSTF guidelines recommend cervical cancer screening for women aged 21\u201365 years with cytology alone every 3 years, with an option to switch to 5-yearly primary high-risk HPV testing from age 30 years with partial genotyping for HPV genotypes 16 and 18 (Curry et al., 2018). Screen-positive women (i.e., >= atypical cells of undetermined significance [ASCUS] and reflex high-risk HPV-positive for women following cytology-based screening, or high-risk HPV-positive for women following HPV-based screening) were managed according to guidelines (Curry et al., 2018) and followed Kaiser Permanente Northern California compliance patterns, that is, colposcopy compliance (79%), precancer treatment compliance (73%) (Rendle et al., 2018). Scenarios were simulated in the context of birth cohort-specific historical HPV vaccination coverage as estimated and applied in other analyses (Burger et al., 2020b; Kim et al., 2021).\n\nFor the short-term impacts, we estimated the relative excess rate of symptomatically detected cancer during a COVID-19-related screening delay period for underscreeners compared with \u2018guidelines-compliant screeners\u2019 (i.e., those who perfectly adhere to 3-year cytology screening or 5-yearly HPV screening, except for during the COVID-19 disruption period). All three models define an incident, symptomatically detected cancer as a cancer that is diagnosed in a woman with a previously undetected cancer who is detected outside routine screening or screening-induced follow-up (e.g., reported symptoms). We averaged the cancer incidence rates (per 100,000 women) accumulated during a delay period (i.e., 1, 2, or 5 years) across the three birth cohorts for each screening history profile (i.e., 3-yearly, 5-yearly, or 10-yearly screening). The denominator for each relative rate (RR) calculation was the accumulated cancer rate under a given delay period for a \u2018guidelines-compliant\u2019 screener, which differed according to primary test modality (i.e., 3-yearly screening for cytology-based screeners and 5-yearly screening for HPV-based screeners) (Appendix 1\u2014figure 1). For the long-term impact, we projected the impact of disruptions to lifetime risks and absolute changes in cancer risks for each of the three alternative COVID-19-related screening delay scenarios, compared to a scenario of no COVID-19-related disruptions. To set findings within the wider context of prevention, we additionally considered how much each scenario would reduce a woman\u2019s lifetime risk of developing cervical cancer (compared to a hypothetical no screening scenario). For each scenario, model projections of cervical cancer cases and lifetime risks were averaged across the three birth cohorts.\n\n### Simulation models\n\nAs previously described (Burger et al., 2021; Burger et al., 2020a; de Kok et al., 2020), the three CISNET-Cervical models (Harvard, MISCAN-Cervix, and Policy1-Cervix) reflect the natural history of HPV-induced cervical cancer but differ structurally with respect to the type and number of health states, HPV genotype categorizations, histological cancer types, model cycle length, and data sources used to parameterize the model prior to fitting to the US population. Standardized US-model inputs included hysterectomy rates, all-cause mortality, and cervical cancer survival (Burger et al., 2020a). To reflect the burden of HPV and cervical cancer in the United States, the models were calibrated to HPV and cervical disease outcomes, achieving good fit to empirical targets based on US women (see Burger et al., 2020a for details of the calibration and fitting processes).\n\n### Scenarios and assumptions\n\nWe assumed that in the absence of the COVID-19 pandemic, each cohort would have received a primary cervical screen in 2020, aligned with an underlying screening frequency, that is, 1, 3, 5, or 10 years since last screen. For each birth cohort and screening frequency combination, these women faced either no delay, or a 1-, 2-, or 5-year delay (Figure 1, Appendix 1\u2014table 2). We assumed that during the delay period, there was a 100% temporary loss in primary screening, but following the delay period, screening was assumed to immediately resume, and women would continue to follow their pre-pandemic screening frequency. We assumed COVID-19 did not impact attendance for surveillance, diagnosis, or treatment of screen-detected abnormalities or investigation for symptomatically detected cancers, except when directly implied by missed screening events during a COVID-19 delay period. In line with US guideline recommendations, all models assumed women did not attend routine screening after age 65 years. A key modifier of the impact of screening delays on lifetime risk is the age at which women received their last screening test (Wang et al., 2017). Due to the analytically fixed screening intervals assumed post-COVID-19-related delay, the timing of future screening was shifted in all cohorts other than annual screeners; as a result, for some combinations of screening frequency and COVID-19-related delays, the delays also reduced the number of lifetime screens and/or changed the age at last screen (see Appendix 1\u2014table 1 and Appendix 1\u2014table 2 for additional details). For example, for a woman born in 1975 who screens every 10 years, her last screen would be at age 65 years without a COVID-19 disruption; however, her last screen would occur at age 56, 57, or 60 under the 1-, 2-, or 5-year delay scenarios, respectively.\n",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "628da2af-59dc-4a0d-9fa4-21ef48baa172",
+      "submission_id": "a8c98eba-8b80-4803-b04a-f1f7c70e8216",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tal\u00eda Malag\u00f3n, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81711.sa0](https://doi.org/10.7554/eLife.81711.sa0)\n\nThis article describes the use of three well\u2010established mathematical models of cervical cancer to estimate the impact of COVID\u201019-related delays in screening access on cervical cancer incidence and delays in diagnosis. Consistent with previous work and the known biology of cervical cancers, the findings that short delays have relatively small effects on population\u2010level cervical cancer risk are reassuring overall, but the impact of screening interval and screening test performance suggests that existing disparities related to screening access may be exacerbated. These results should be useful for policymakers in planning responses to future pandemics or other sources of sudden restriction of screening availability.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tal\u00eda Malag\u00f3n, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81711.sa1](https://doi.org/10.7554/eLife.81711.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Health impacts of COVID-19 disruptions to primary cervical screening by time since last screen: A model-based analysis for current and future disruptions\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Evan Myers (Reviewer #1).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revisions:\n\n1. The model assumes there are no delays in diagnostic follow-up services and that the time to diagnosis is equally distributed across categories of screeners. Some further discussion on this assumption and its impact on predictions may be warranted.\n\n2. Further clarification on how symptomatic cancers are defined and modeled in each model should be provided.\n\n3. There should be a brief description of the US cervical cancer screening guidelines that are being modeled for readers who may be unfamiliar with these guidelines.\n\nReviewer #1 (Recommendations for the authors):\n\nI don't have any major substantive comments/suggestions. As noted in my public review, it might be worth a little discussion about stage shift, and the potential for factors affecting underscreening also leading to delays in diagnosis after development of screening.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have written an extremely informative and comprehensive modeling manuscript showing the import of various screening factors on the incidence of cervical cancer in a population, in the short term and over a lifetime. For the most part the paper was easy to follow but may benefit from a few clarifications and points of consideration.\n\nThis paper was based on the US population. Co-testing every 5 years is also a standard there, and Kaiser Permanente (referenced for data on abnormal test follow up compliance) has published its long standing co-test data. It may be worthwhile in the background to comment that this strategy was not modeled and found to be non cost effective (or whatever reason for not modeling).\n\nThe outcome was symptomatic cervical cancer. A comment or explanation as to what symptomatic cervical cancer is for model detection would be helpful. The individual models have detailed appendices as does the CISNET summary, but within the text would help the reader understand the difference between screen detected, interval and symptomatic cancer. Later in the discussion screening moments and screen detected cancer are discussed.\n\nAs noted in the public review, greater explanation of the US cervical screening guidelines would help the reader understand the transition at 30 years to HPV from cytology. The authors described that disadvantaged women could not screen regularly, whereas women with insurance could screen more frequently ie annually. For a non US reader, is cytology screening, being an inferior test to HPV, as shown in the modeling results, available to un-insured or poorer disadvantaged women?\n\nIn the discussion, please label or clearly identify the two factors discussed for \"first\" and \"second effect\". Are they better HPV test sensitivity and NPV for factor 1, and screening moment or opportunity for factor 2? \"The balance between these two factors causes a greater or smaller excess risk per delay duration in case of HPV screening compared to cytology screening.\" The sentence is somewhat confusing. Maybe saying HPV screening is superior to cytology but the benefit varies depending on the balance of factors? The rest of the paragraph explains some of the varying results among the 3 models and the explanation is done well referring back to the shortened dwell time in the Miscan model.\n\nOverall, I very much enjoyed reading this manuscript.\n",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a93a68f6-c83a-468b-8b94-d213f7db3276",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C1",
+      "claim": "In the initial months of the pandemic in 2020, 59% of federally qualified health centers in the United States stopped cancer screenings completely.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial months of the pandemic in 2020, there were severe disruptions to preventive services, including cervical cancer screening. For example, during acute phases of the pandemic in the United States, 59% of federally qualified health centers stopped cancer screenings completely (Fisher-Borne et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fisher-Borne et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "2be87f4c-23bd-4551-a856-240d01237a48",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C2",
+      "claim": "Electronic health records from 39 organizations spanning 23 US states found a 67% decline in mean weekly cervical cancer screening volumes during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "electronic health records from 39 organizations spanning 23 states found a 67% decline in mean weekly cervical cancer screening volumes (Mast and Rio, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mast and Rio, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "90e1f809-6776-44ea-a3d1-0239745ed868",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C3",
+      "claim": "Mid-June 2020 cervical cancer screening volumes remained around 30% lower than their pre-COVID-19 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While cancer screening volumes gradually improved (Mast and Rio, 2020), mid-June 2020 volumes remained around 30% lower than their pre-COVID-19 levels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mast and Rio, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "93b32743-9df5-492a-af56-30b16f038241",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C4",
+      "claim": "Cervical cancer screening volumes have remained 10% lower 2 years into the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "cervical volumes have remained 10% lower 2 years into the pandemic (Christopher and Joe, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Christopher and Joe, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "9229ad09-0554-45b5-ac7d-dbad2ec34395",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C5",
+      "claim": "The risk of developing cervical cancer depends in part on time since last screen.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of developing cervical cancer depends in part on time since last screen (Dillner et al., 2008; Landy et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dillner et al., 2008 and Landy et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "b972152b-5291-4a08-9282-6f6cda71dc4d",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C6",
+      "claim": "US recommendations for primary cervical cancer screening include either 3-yearly cytology or 5-yearly human papillomavirus (HPV) testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite US recommendations for primary cervical cancer screening of either 3-yearly cytology or 5-yearly human papillomavirus (HPV) testing (Curry et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Curry et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3c52434f-ca83-44c2-ad5a-84a3ba0c0651",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C7",
+      "claim": "In the only population-based registry in the United States prior to widespread primary HPV-based screening, 20% of women were not screened within 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the only population-based registry in the United States prior to widespread primary HPV-based screening, 20% of women were not screened within 5 years (Cuzick et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cuzick et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "a2a987ed-e46b-4bdb-9d1f-7e5c58064cd8",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C8",
+      "claim": "Underscreening was correlated with race and ethnicity, income level, lower levels of education, and lack of insurance.",
+      "claim_type": "EXPLICIT",
+      "source": "which was correlated with race and ethnicity, income level, lower levels of education, and lack of insurance (Johnson et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Johnson et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "a99c80d3-2c84-4cef-99e5-f9dfe1b3638b",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C9",
+      "claim": "Screening more frequently than recommended has been observed in 66% of insured women.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, screening more frequently than recommended has been observed in 66% of insured women (Wright et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wright et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "d0b542d9-5412-4988-90e6-f3306e323d5a",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C10",
+      "claim": "In the United Kingdom, 30% of survey respondents in fall 2020 reported that they were less likely to attend cervical screening now than before the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In other countries such as the United Kingdom, 30% of survey respondents elicited fall 2020 reported that they were less likely to attend cervical screening now than before the pandemic (Wilson et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wilson et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "056ea3d2-9bbe-4b72-8ed0-a67830c1b7e1",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C11",
+      "claim": "The observed decrease in screening attendance in the UK was smaller than surveyed intentions to screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the observed decrease in screening attendance ultimately was smaller than surveyed intentions to screen (Castanon et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Castanon et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "25dc4fdc-9c77-49b2-90f9-5dd00ffc1a89",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C12",
+      "claim": "Previous nonparticipation was the strongest predictor of low intentions for future post-pandemic participation in cervical screening in the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "the UK study also found that previous nonparticipation was the strongest predictor of low intentions for future post-pandemic participation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to UK study findings",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "992e0f77-edf7-4ab5-abfd-05153071a42d",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C13",
+      "claim": "Decreases in cervical cancer diagnoses in 2020 have been confirmed in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirically, decreases in cervical cancer diagnoses in 2020 have been confirmed in the United States (Kaufman et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kaufman et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "dd524199-0e09-4494-ae04-430d6fefdf6c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C14",
+      "claim": "Decreases in cervical cancer diagnoses in 2020 have been confirmed elsewhere beyond the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "decreases in cervical cancer diagnoses in 2020 have been confirmed in the United States (Kaufman et al., 2020) and elsewhere (Ijzerman and Emery, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ijzerman and Emery, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "db077da6-b770-4da0-b844-aa389cc30be2",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C15",
+      "claim": "Previous model-based analyses have projected that temporary disruptions to cervical cancer screening may result in temporal shifts in cancer detection (initial decreases followed by an increase), yielding small net increases in cervical cancer burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous model-based analyses have projected that temporary disruptions to cervical cancer screening may result in temporal shifts in cancer detection (initial decreases followed by an increase), yielding small net increases in cervical cancer burden (Burger et al., 2021; Smith et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burger et al., 2021 and Smith et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "421e812e-0c22-49c6-b968-961fc942cf5d",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C16",
+      "claim": "Model-based analyses have shown that maintaining services for the highest risk women may mitigate the potential secondary impacts of COVID-19 on cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-based analyses (Burger et al., 2021; Smith et al., 2021) have shown that maintaining services for the highest risk women may mitigate the potential secondary impacts of COVID-19 on cervical cancer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burger et al., 2021 and Smith et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "95425ce7-fdef-4b54-b1be-1364839d0117",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C17",
+      "claim": "Short delays to cervical screening services among women with a previous negative HPV result had minor effects on cancer outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, short delays to cervical screening services among women with a previous negative HPV result had minor effects on cancer outcomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from previous analyses",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "2889f19a-6543-4c04-a22f-59b150d13372",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C18",
+      "claim": "Models projected a relative increase in symptomatically detected cancer cases during a 1-year delay period that was 38% higher (Policy1-Cervix) for underscreened women whose last cytology screen was 5 years prior to the disruption period compared with guidelines-compliant women.",
+      "claim_type": "EXPLICIT",
+      "source": "Models projected a relative increase in symptomatically detected cancer cases during a 1-year delay period that was 38% higher (Policy1-Cervix), 80% higher (Harvard), and 170% higher (MISCAN-Cervix) for underscreened women whose last cytology screen was 5 years prior to the disruption period compared with guidelines-compliant women (i.e., last screen 3 years prior to disruption)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "8c613774-14b6-4b20-9100-f5614e908b54",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C19",
+      "claim": "Models projected a relative increase in symptomatically detected cancer cases during a 1-year delay period that was 80% higher (Harvard) for underscreened women whose last cytology screen was 5 years prior to the disruption period compared with guidelines-compliant women.",
+      "claim_type": "EXPLICIT",
+      "source": "Models projected a relative increase in symptomatically detected cancer cases during a 1-year delay period that was 38% higher (Policy1-Cervix), 80% higher (Harvard), and 170% higher (MISCAN-Cervix) for underscreened women whose last cytology screen was 5 years prior to the disruption period compared with guidelines-compliant women (i.e., last screen 3 years prior to disruption)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3182afcf-b865-4aad-b3bf-459426a6bbb7",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C20",
+      "claim": "Models projected a relative increase in symptomatically detected cancer cases during a 1-year delay period that was 170% higher (MISCAN-Cervix) for underscreened women whose last cytology screen was 5 years prior to the disruption period compared with guidelines-compliant women.",
+      "claim_type": "EXPLICIT",
+      "source": "Models projected a relative increase in symptomatically detected cancer cases during a 1-year delay period that was 38% higher (Policy1-Cervix), 80% higher (Harvard), and 170% higher (MISCAN-Cervix) for underscreened women whose last cytology screen was 5 years prior to the disruption period compared with guidelines-compliant women (i.e., last screen 3 years prior to disruption)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "8f33cb9d-0a6f-41b8-9959-a951017163f6",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C21",
+      "claim": "Compared with guidelines-compliant cytology screeners, the relative excess burden of cancers detected during a 1-year delay period was 3.1 (Policy1-Cervix) times higher for women whose last cytology screen was 10 years ago at the time of the disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with guidelines-compliant cytology screeners, the relative excess burden of cancers detected during a 1-year delay period was 3.1 (Policy1-Cervix), 3.2 (Harvard), or 7.0 (MISCAN-Cervix) times higher for women whose last cytology screen was 10 years ago at the time of the disruption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "0eafc36a-01a0-4d1f-803c-8da6f1377a99",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C22",
+      "claim": "Compared with guidelines-compliant cytology screeners, the relative excess burden of cancers detected during a 1-year delay period was 3.2 (Harvard) times higher for women whose last cytology screen was 10 years ago at the time of the disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with guidelines-compliant cytology screeners, the relative excess burden of cancers detected during a 1-year delay period was 3.1 (Policy1-Cervix), 3.2 (Harvard), or 7.0 (MISCAN-Cervix) times higher for women whose last cytology screen was 10 years ago at the time of the disruption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "f1dd9cf4-db3f-4035-8bbe-62d9a52390d7",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C23",
+      "claim": "Compared with guidelines-compliant cytology screeners, the relative excess burden of cancers detected during a 1-year delay period was 7.0 (MISCAN-Cervix) times higher for women whose last cytology screen was 10 years ago at the time of the disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with guidelines-compliant cytology screeners, the relative excess burden of cancers detected during a 1-year delay period was 3.1 (Policy1-Cervix), 3.2 (Harvard), or 7.0 (MISCAN-Cervix) times higher for women whose last cytology screen was 10 years ago at the time of the disruption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "c5b68542-ce68-4005-84c5-bdd6fd0f3619",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C24",
+      "claim": "Women who switched to HPV-based screening at age 30 and screened every 10 years faced an excess cancer burden that was 2.2 to 2.5 (Policy1-Cervix) times higher compared with women who were guidelines-compliant screening every 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with women who switched to HPV-based screening at age 30 and were guidelines-compliant screening every 5 years, women who screened every 10 years with HPV after age 30 years faced an excess cancer burden that was generally consistent regardless of the disruption period, ranging from 2.2 to 2.5 (Policy1-Cervix), 3.0\u20133.9 (MISCAN-Cervix), and 3.6\u20133.7 (Harvard) times higher",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "0108c149-68fb-4bf6-a350-e8ae9c91d390",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C25",
+      "claim": "Women who switched to HPV-based screening at age 30 and screened every 10 years faced an excess cancer burden that was 3.0\u20133.9 (MISCAN-Cervix) times higher compared with women who were guidelines-compliant screening every 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with women who switched to HPV-based screening at age 30 and were guidelines-compliant screening every 5 years, women who screened every 10 years with HPV after age 30 years faced an excess cancer burden that was generally consistent regardless of the disruption period, ranging from 2.2 to 2.5 (Policy1-Cervix), 3.0\u20133.9 (MISCAN-Cervix), and 3.6\u20133.7 (Harvard) times higher",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "97712391-8ecc-4da1-ac2b-4aeec1e9c2e6",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C26",
+      "claim": "Women who switched to HPV-based screening at age 30 and screened every 10 years faced an excess cancer burden that was 3.6\u20133.7 (Harvard) times higher compared with women who were guidelines-compliant screening every 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with women who switched to HPV-based screening at age 30 and were guidelines-compliant screening every 5 years, women who screened every 10 years with HPV after age 30 years faced an excess cancer burden that was generally consistent regardless of the disruption period, ranging from 2.2 to 2.5 (Policy1-Cervix), 3.0\u20133.9 (MISCAN-Cervix), and 3.6\u20133.7 (Harvard) times higher",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "eae44789-7ac7-47d0-b847-ff39c3379cac",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C27",
+      "claim": "The absolute accumulated rates of cancer increased with the length of the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the relative excess burden among women overdue for screening remained generally similar by delay period, the absolute accumulated rates increased with the length of the delay period (Appendix 1\u2014table 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data presented in Appendix 1\u2014table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "5b1b0ba3-1d2f-478b-9f0a-106b28387775",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C28",
+      "claim": "A 1- or even 5-year temporary disruption to primary screening had a smaller effect on the lifetime risk of developing cervical cancer than the effects from screening frequency and modality.",
+      "claim_type": "EXPLICIT",
+      "source": "The models consistently projected that a 1- or even 5-year temporary disruption to primary screening had a smaller effect on the lifetime risk of developing cervical cancer than the effects from screening frequency and modality we considered (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model projections shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "e907a4db-f0f0-4a2e-bdf7-d554c66b5e7f",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C29",
+      "claim": "The lifetime risk of developing cervical cancer was lower, even in the context of an extreme 5-year screening disruption, for women screened every 3 years with cytology prior to the disruption (Policy1-Cervix [0.21%]) than for women screening every 5 years without a disruption (Policy1-Cervix [0.22%]).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within-model comparisons found that the lifetime risk of developing cervical cancer was lower, even in the context of an extreme 5-year screening disruption, for women screened every 3 years with cytology prior to the disruption (Policy1-Cervix [0.21%], Harvard [0.32%], and MISCAN-Cervix [0.32%]) than for women screening every 5 years without a disruption (Policy1-Cervix [0.22%], Harvard [0.42%], and MISCAN-Cervix [0.39%])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3f6b1cf9-c57e-4631-8515-bd54e3224566",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C30",
+      "claim": "The lifetime risk of developing cervical cancer was lower, even in the context of an extreme 5-year screening disruption, for women screened every 3 years with cytology prior to the disruption (Harvard [0.32%]) than for women screening every 5 years without a disruption (Harvard [0.42%]).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within-model comparisons found that the lifetime risk of developing cervical cancer was lower, even in the context of an extreme 5-year screening disruption, for women screened every 3 years with cytology prior to the disruption (Policy1-Cervix [0.21%], Harvard [0.32%], and MISCAN-Cervix [0.32%]) than for women screening every 5 years without a disruption (Policy1-Cervix [0.22%], Harvard [0.42%], and MISCAN-Cervix [0.39%])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4ffd2e30-69ca-433b-afb8-a56a69f5d9bc",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C31",
+      "claim": "The lifetime risk of developing cervical cancer was lower, even in the context of an extreme 5-year screening disruption, for women screened every 3 years with cytology prior to the disruption (MISCAN-Cervix [0.32%]) than for women screening every 5 years without a disruption (MISCAN-Cervix [0.39%]).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within-model comparisons found that the lifetime risk of developing cervical cancer was lower, even in the context of an extreme 5-year screening disruption, for women screened every 3 years with cytology prior to the disruption (Policy1-Cervix [0.21%], Harvard [0.32%], and MISCAN-Cervix [0.32%]) than for women screening every 5 years without a disruption (Policy1-Cervix [0.22%], Harvard [0.42%], and MISCAN-Cervix [0.39%])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "bb70f44a-dbd4-4ab3-8cb6-fdfa3cf0df5c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C32",
+      "claim": "Under an extreme scenario of a 5-year delay, 3-yearly cytology screening maintained nearly all benefits of screening, decreasing from preventing 72.1% to 69.1% (MISCAN-Cervix) of cancer cases over a woman's lifetime compared with no screening.",
+      "claim_type": "EXPLICIT",
+      "source": "the models projected that, under an extreme scenario of a 5-year delay, 3-yearly cytology screening maintained nearly all benefits of screening, decreasing from preventing 72.1% to 69.1% (MISCAN-Cervix), 79.9% to 78.4% (Harvard), and 86.5% to 85.1% (Policy1-Cervix) of cancer cases over a woman's lifetime compared with no screening (assuming screening resumed following the disruption) (Appendix 1\u2014table 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in Appendix 1\u2014table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "499af15c-2780-4eec-8864-e4bb254f0b2a",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C33",
+      "claim": "Under an extreme scenario of a 5-year delay, 3-yearly cytology screening maintained nearly all benefits of screening, decreasing from preventing 79.9% to 78.4% (Harvard) of cancer cases over a woman's lifetime compared with no screening.",
+      "claim_type": "EXPLICIT",
+      "source": "the models projected that, under an extreme scenario of a 5-year delay, 3-yearly cytology screening maintained nearly all benefits of screening, decreasing from preventing 72.1% to 69.1% (MISCAN-Cervix), 79.9% to 78.4% (Harvard), and 86.5% to 85.1% (Policy1-Cervix) of cancer cases over a woman's lifetime compared with no screening (assuming screening resumed following the disruption) (Appendix 1\u2014table 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in Appendix 1\u2014table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4193e887-fb08-481e-9609-2cb7a9887e7f",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C34",
+      "claim": "Under an extreme scenario of a 5-year delay, 3-yearly cytology screening maintained nearly all benefits of screening, decreasing from preventing 86.5% to 85.1% (Policy1-Cervix) of cancer cases over a woman's lifetime compared with no screening.",
+      "claim_type": "EXPLICIT",
+      "source": "the models projected that, under an extreme scenario of a 5-year delay, 3-yearly cytology screening maintained nearly all benefits of screening, decreasing from preventing 72.1% to 69.1% (MISCAN-Cervix), 79.9% to 78.4% (Harvard), and 86.5% to 85.1% (Policy1-Cervix) of cancer cases over a woman's lifetime compared with no screening (assuming screening resumed following the disruption) (Appendix 1\u2014table 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in Appendix 1\u2014table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "2f519ba2-e096-4ef4-8239-33b629db344e",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C35",
+      "claim": "Women screened with primary HPV after age 30 years face a lower overall lifetime risk of cervical cancer compared with cytology-based screening.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to women screened with cytology over their lifetime, women screened with primary HPV after age 30 years face a lower overall lifetime risk of cervical cancer (and percentage of cancers prevented by screening was higher) compared with cytology-based screening",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "c16af904-95c2-42cd-824a-0f937a7bff0f",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C36",
+      "claim": "Women screened with primary HPV after age 30 years generally faced smaller impacts of a COVID-19 disruption to screening relative to screening frequency compared to cytology-based screening.",
+      "claim_type": "EXPLICIT",
+      "source": "furthermore, these women generally faced smaller impacts of a COVID-19 disruption to screening relative to screening frequency (Figure 3, lower panel; Appendix 1\u2014table 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model projections shown in Figure 3 and Appendix 1\u2014table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "6d878da1-c210-4dee-b3ca-8c0aa149f26b",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C37",
+      "claim": "Cancer risks increased disproportionately the longer time had elapsed since a woman's last screen at the time of the disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a woman's lifetime, temporary COVID-19-related delays had less impact on lifetime risk of developing CC than screening frequency and test modality; however, CC risks increased disproportionately the longer time had elapsed since a woman's last screen at the time of the disruption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "7080292a-d9fc-4e67-8dfb-3d5b2c84e133",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C38",
+      "claim": "Annual or 3-yearly screeners faced only nominal excess risks when experiencing a 1-year temporary delay to primary cytology screening.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, annual or 3-yearly screeners faced only nominal excess risks when experiencing a 1-year temporary delay to primary cytology screening, and cancer risks increased disproportionately the longer time had elapsed since a woman's last screen (Figure 4, upper panels)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model projections shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "d67f88f0-edba-4878-a27c-3f286321827a",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C39",
+      "claim": "An extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 20 (Policy1-Cervix) per 100,000 women screened 3-yearly with cytology compared to no COVID-19 delay.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, all models projected that compared with no COVID-19 delay, an extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 20 (Policy1-Cervix), 22 (Harvard), and 31 (MISCAN-Cervix) per 100,000 women screened 3-yearly with cytology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "1e580b02-e8df-4379-a934-0adca004cadd",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C40",
+      "claim": "An extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 22 (Harvard) per 100,000 women screened 3-yearly with cytology compared to no COVID-19 delay.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, all models projected that compared with no COVID-19 delay, an extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 20 (Policy1-Cervix), 22 (Harvard), and 31 (MISCAN-Cervix) per 100,000 women screened 3-yearly with cytology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "a2f57a2d-e4cd-4133-83b4-8fbb2b7ef5a3",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C41",
+      "claim": "An extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 31 (MISCAN-Cervix) per 100,000 women screened 3-yearly with cytology compared to no COVID-19 delay.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, all models projected that compared with no COVID-19 delay, an extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 20 (Policy1-Cervix), 22 (Harvard), and 31 (MISCAN-Cervix) per 100,000 women screened 3-yearly with cytology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "d6598246-22ad-465a-af28-6cf5d73a8681",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C42",
+      "claim": "An extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 44 (Harvard) per 100,000 women screened 10-yearly with cytology compared to no COVID-19 delay.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to an increase of 44 (Harvard), 47 (MISCAN-Cervix), and 66 (Policy1-Cervix) per 100,000 women screened 10-yearly with cytology (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "7cdd6fef-b2f9-4aa3-8f3b-fd663002856c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C43",
+      "claim": "An extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 47 (MISCAN-Cervix) per 100,000 women screened 10-yearly with cytology compared to no COVID-19 delay.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to an increase of 44 (Harvard), 47 (MISCAN-Cervix), and 66 (Policy1-Cervix) per 100,000 women screened 10-yearly with cytology (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "948d5825-6870-429c-b4f4-16ce30e09772",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C44",
+      "claim": "An extreme 5-year temporary delay scenario was expected to increase the number of remaining lifetime cervical cancer cases by 66 (Policy1-Cervix) per 100,000 women screened 10-yearly with cytology compared to no COVID-19 delay.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to an increase of 44 (Harvard), 47 (MISCAN-Cervix), and 66 (Policy1-Cervix) per 100,000 women screened 10-yearly with cytology (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "62902e7c-8875-456e-972a-781293afed15",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C45",
+      "claim": "Excess risks for a given delay period were generally lower for HPV-based screeners than for cytology-based screeners.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these excess risks for a given delay period were generally lower for HPV-based screeners than for cytology-based screeners (Figure 4, lower panels)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model projections shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "f29fbbc3-0d71-4164-a28e-8f6add8d66b8",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C46",
+      "claim": "Two of the models (Harvard and Policy1-Cervix) found that women screened with primary HPV testing faced smaller excess risks for the same delay duration unless women were screening very infrequently (10-yearly).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compared with cytology-based screening, two of the models (Harvard and Policy1-Cervix) found that women screened with primary HPV testing faced smaller excess risks for the same delay duration unless women were screening very infrequently (10-yearly), in which case, the excess risks of cancer were similar, that is, 44\u201366 per 100,000 women for cytology versus 40\u201358 per 100,000 women for HPV 100,000 women",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "2d748be7-2774-45a6-9105-3015f00b2579",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C47",
+      "claim": "Women who are overdue for routine screening and encounter a further delay face an increased risk of presenting with a symptomatic cancer during the delay period compared with those who attend screening regularly according to guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our comparative health impact modeling study suggest that women who are overdue for routine screening and encounter a further delay face an increased risk of presenting with a symptomatic cancer during the delay period compared with those who attend screening regularly according to guidelines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4b7c2c22-3e11-4d97-9746-afe64e7804a9",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C48",
+      "claim": "Women who undergo routine guidelines-compliant screening are able to endure a temporary, that is, 1 year, disruption to cervical screening under both primary cytology and HPV-based screening modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, women who undergo routine guidelines-compliant screening are able to endure a temporary, that is, 1 year, disruption to cervical screening under both primary cytology and HPV-based screening modalities",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "5080b3c8-aacf-4d4b-93fb-835a6d0fd8e7",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C49",
+      "claim": "Women who undergo guidelines-compliant screening with HPV testing are more resilient to longer delays (2 or 5 years).",
+      "claim_type": "EXPLICIT",
+      "source": "those who undergo guidelines-compliant screening with HPV testing are more resilient to longer delays (2 or 5 years)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "39b39ff3-80b3-48cc-a98a-01982fbd437b",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C50",
+      "claim": "Screening with primary HPV testing generally provided greater reductions in lifetime risk of developing cervical cancer compared with cytology-based screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our previous results (Burger et al., 2021), we found that screening with primary HPV testing generally provided greater reductions in lifetime risk of developing cervical cancer compared with cytology-based screening",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study and previous results",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4605ea97-2de8-4741-af79-b299134ecdf8",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C51",
+      "claim": "A recent study found variation in the utilization of screening tests by health network and geography, with safety-net healthcare systems having a higher use of cytology-based screening than HPV-based screening.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study found variation in the utilization of screening tests by health network and geography, with safety-net healthcare systems \u2013 which service a greater proportion of uninsured and underinsured women \u2013 having a higher use of cytology-based screening than HPV-based screening (Haas et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Haas et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "d6f2ba1b-5755-45ec-8960-aa33b164415a",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C52",
+      "claim": "The impact of disrupting an HPV-based screening program has different implications than the disruption of a cytology-based program.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that the impact of disrupting an HPV-based screening program has different implications than the disruption of a cytology-based program",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "5c328e90-a8e7-45d7-a7ef-5e23d4bb29e1",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C53",
+      "claim": "HPV screening has a higher sensitivity to detect (pre-invasive) cervical lesions than cytology.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained by the fact that HPV screening has a higher sensitivity to detect (pre-invasive) cervical lesions than cytology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about screening test characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "1eed032e-1af2-4291-b1c1-9f41bf9b3f01",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C54",
+      "claim": "The cancer risk at time of disruption is lower for HPV screening compared to cytology screening because there are fewer undetected lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore, the cancer risk at time of disruption is lower (as there are fewer undetected lesions)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the higher sensitivity of HPV screening",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "2bfa9972-b305-4564-b1cd-9f711ca5b75b",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C55",
+      "claim": "The MISCAN-Cervix model has the shortest preclinical dwell time from HPV acquisition to cancer development among the three models.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in dwell time for HPV and cervical precancer among the three models predominately contribute to this balance between the two factors, where the MISCAN-Cervix model has the shortest preclinical dwell time from HPV acquisition to cancer development (Burger et al., 2020a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burger et al., 2020a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3499b0a6-203c-4f70-850e-813f491b6a82",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C56",
+      "claim": "The MISCAN model assumes that some precancerous lesions are consistently missed over time by cytology-based screening because they are located deeper into the cervical canal.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the shorter dwell times, the MISCAN model also assumes that some precancerous lesions are consistently missed over time by cytology-based screening because they are located deeper into the cervical canal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "c31e8494-bf6a-4abb-883c-7b154dfbea5f",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C57",
+      "claim": "The relative excess rates of symptomatically detected cancer projected for the same delay period were higher for women overdue for screening compared with women who attend screening according to guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the relative excess rates of symptomatically detected cancer projected for the same delay period were higher for women overdue for screening compared with women who attend screening according to guidelines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "d903f727-5ae3-4125-b82e-a4421a049eb9",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C58",
+      "claim": "Cervical screening was paused for 2\u20134 months in the United Kingdom, Ireland, New Zealand, and the Netherlands.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our analysis was contextualized to the United States, our results may still be generalizable to other countries where cervical screening was disrupted such as the United Kingdom, Ireland, New Zealand, and the Netherlands where cervical screening was paused for 2\u20134 months (Public Health Agency, 2020; Aitken et al., 2022; Campbell et al., 2021; National Screening Service, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Public Health Agency, 2020; Aitken et al., 2022; Campbell et al., 2021; National Screening Service, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "cc8a2fc9-9e00-4a18-8a01-af32c61f4f30",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C59",
+      "claim": "Disruptions are likely to disproportionately impact those who are already overdue for screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Our overarching findings that disruptions are likely to disproportionately impact those who are already overdue for screening, and that underscreened women are at higher risk than guidelines-compliant screeners affected by a temporary delay are likely generalizable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "b899c54d-505d-4851-b53b-2cb83588e547",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C60",
+      "claim": "Underscreened women are at higher risk than guidelines-compliant screeners affected by a temporary delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Our overarching findings that disruptions are likely to disproportionately impact those who are already overdue for screening, and that underscreened women are at higher risk than guidelines-compliant screeners affected by a temporary delay are likely generalizable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "1bf07043-aa82-4471-9a2b-283cddeee6ed",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C61",
+      "claim": "Vaginal HPV-based screening enables self-collection of samples at home.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, vaginal HPV-based screening (unlike cytology-based screening) enables self-collection of samples at home",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about HPV screening methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "44b0489d-e6fd-47ab-92bc-2c0adbf29bd1",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C62",
+      "claim": "Self-sampling is available to all women in the Netherlands, parts of Sweden, and recently Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Netherlands, parts of Sweden, and recently Australia, self-sampling is available to all women",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as factual information about screening programs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "dcc28b62-2518-408e-bc2a-a8c7950658a2",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C63",
+      "claim": "Preliminary findings suggest that self-sampling has facilitated rapid reintroductions to screening in the Netherlands in the context of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "preliminary findings suggest this has facilitated rapid reintroductions to screening in the Netherlands in the context of COVID-19 (Aitken et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aitken et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "28225aad-b503-4f0c-b8ce-66c348e18e24",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C64",
+      "claim": "Delays in diagnostic follow-up or precancer treatment have been shown to account for most of the potential harm of COVID-induced disruptions to cervical cancer screening.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis did not consider delays in diagnostic follow-up or precancer treatment, which have been shown to account for most of the potential harm of COVID-induced disruptions to cervical cancer screening (Burger et al., 2021; Smith et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burger et al., 2021 and Smith et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4dda83b9-a725-41dc-a54d-454354123bb6",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C65",
+      "claim": "COVID-related delays have previously been projected to upstage cancer detection for cervical cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "As COVID-related delays have previously been projected to upstage cancer detection for cervical (Smith et al., 2021) and other cancers (Maringe et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "cfb4c537-cd6c-405f-a522-1fafab1747ab",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C66",
+      "claim": "COVID-related delays have previously been projected to upstage cancer detection for other cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "As COVID-related delays have previously been projected to upstage cancer detection for cervical (Smith et al., 2021) and other cancers (Maringe et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maringe et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3c73c87f-802d-4cfa-a1ea-1753d9c1480c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C67",
+      "claim": "The majority of the benefit of co-testing has been attributed to the high negative predictive value of HPV testing alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not simulate a cytology and HPV 'co-testing' strategy explicitly, which is a third recommended screening approach by the USPSTF, the majority of the benefit of co-testing has been attributed to the high negative predictive value of HPV testing alone (Schiffman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schiffman et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "0af4b3be-eed2-426a-9a98-5239182f4459",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C68",
+      "claim": "Race and ethnicity, poverty income level, education, and insurance status are associated with screening behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "While our models do not explicitly simulate the impacts of specific factors, including race and ethnicity, poverty income level, education, and insurance status, these characteristics are associated with screening behavior, which we do capture in our simulation models",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about social determinants of screening behavior",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3ea1f96b-d1f7-4cc3-af22-ae7551b8c4cc",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C69",
+      "claim": "The main driver of lifetime risk of cervical cancer is screening frequency and screening modality rather than temporary disruptions to screening.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our models predicted that the main driver of lifetime risk of cervical cancer is screening frequency and screening modality rather than temporary disruptions to screening",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "e9a148dc-2914-4ac3-8cb9-48b69b171828",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C70",
+      "claim": "A disruption to screening does not equally impact women with differential screening histories or screening behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "however, a disruption to screening does not equally impact women with differential screening histories or screening behaviors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model projections presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "15d12979-ee73-48e5-9c0a-7c35d162fbd5",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C71",
+      "claim": "Three CISNET-Cervical microsimulation models were used to project the expected lifetime risk of developing cervical cancer for three birth cohorts (born in 1965, 1975, and 1985).",
+      "claim_type": "EXPLICIT",
+      "source": "we used the same three CISNET-Cervical microsimulation models to project the expected lifetime risk (until age 84 years) of developing cervical cancer for three birth cohorts (born in 1965, 1975, and 1985; aged 55, 45, and 35 in 2020, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "b088bf68-f390-41bf-9181-192c04a9aa30",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C72",
+      "claim": "USPSTF guidelines recommend cervical cancer screening for women aged 21\u201365 years with cytology alone every 3 years.",
+      "claim_type": "EXPLICIT",
+      "source": "USPSTF guidelines recommend cervical cancer screening for women aged 21\u201365 years with cytology alone every 3 years, with an option to switch to 5-yearly primary high-risk HPV testing from age 30 years with partial genotyping for HPV genotypes 16 and 18 (Curry et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Curry et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "fdf5cc3f-6db0-4af3-8ee7-7261dee35e9c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C73",
+      "claim": "USPSTF guidelines recommend an option to switch to 5-yearly primary high-risk HPV testing from age 30 years with partial genotyping for HPV genotypes 16 and 18.",
+      "claim_type": "EXPLICIT",
+      "source": "USPSTF guidelines recommend cervical cancer screening for women aged 21\u201365 years with cytology alone every 3 years, with an option to switch to 5-yearly primary high-risk HPV testing from age 30 years with partial genotyping for HPV genotypes 16 and 18 (Curry et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Curry et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "89adbf9d-6b2c-4c61-a602-bc983035a069",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C74",
+      "claim": "Screen-positive women were managed according to guidelines and followed Kaiser Permanente Northern California compliance patterns with colposcopy compliance at 79%.",
+      "claim_type": "EXPLICIT",
+      "source": "Screen-positive women (i.e., >= atypical cells of undetermined significance [ASCUS] and reflex high-risk HPV-positive for women following cytology-based screening, or high-risk HPV-positive for women following HPV-based screening) were managed according to guidelines (Curry et al., 2018) and followed Kaiser Permanente Northern California compliance patterns, that is, colposcopy compliance (79%), precancer treatment compliance (73%) (Rendle et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rendle et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "86469ad8-08d5-4c11-bbd9-4c925e7de2ed",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C75",
+      "claim": "Screen-positive women were managed according to guidelines and followed Kaiser Permanente Northern California compliance patterns with precancer treatment compliance at 73%.",
+      "claim_type": "EXPLICIT",
+      "source": "Screen-positive women (i.e., >= atypical cells of undetermined significance [ASCUS] and reflex high-risk HPV-positive for women following cytology-based screening, or high-risk HPV-positive for women following HPV-based screening) were managed according to guidelines (Curry et al., 2018) and followed Kaiser Permanente Northern California compliance patterns, that is, colposcopy compliance (79%), precancer treatment compliance (73%) (Rendle et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rendle et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "300d5824-c131-4443-80dd-753b316bda1e",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C76",
+      "claim": "The three CISNET-Cervical models (Harvard, MISCAN-Cervix, and Policy1-Cervix) reflect the natural history of HPV-induced cervical cancer but differ structurally with respect to the type and number of health states, HPV genotype categorizations, histological cancer types, model cycle length, and data sources used to parameterize the model.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described (Burger et al., 2021; Burger et al., 2020a; de Kok et al., 2020), the three CISNET-Cervical models (Harvard, MISCAN-Cervix, and Policy1-Cervix) reflect the natural history of HPV-induced cervical cancer but differ structurally with respect to the type and number of health states, HPV genotype categorizations, histological cancer types, model cycle length, and data sources used to parameterize the model prior to fitting to the US population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burger et al., 2021; Burger et al., 2020a; de Kok et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4962a92c-e643-4988-93f9-ff223e3bd8d6",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C77",
+      "claim": "Standardized US-model inputs included hysterectomy rates, all-cause mortality, and cervical cancer survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Standardized US-model inputs included hysterectomy rates, all-cause mortality, and cervical cancer survival (Burger et al., 2020a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burger et al., 2020a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "55de8bda-69e1-4a1c-8e72-f62657a9297c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C78",
+      "claim": "The models were calibrated to HPV and cervical disease outcomes, achieving good fit to empirical targets based on US women.",
+      "claim_type": "EXPLICIT",
+      "source": "To reflect the burden of HPV and cervical cancer in the United States, the models were calibrated to HPV and cervical disease outcomes, achieving good fit to empirical targets based on US women (see Burger et al., 2020a for details of the calibration and fitting processes)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burger et al., 2020a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4ab038b7-9546-4451-ad10-5e43823e51fb",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C79",
+      "claim": "During the delay period, there was a 100% temporary loss in primary screening assumed in the models.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that during the delay period, there was a 100% temporary loss in primary screening, but following the delay period, screening was assumed to immediately resume, and women would continue to follow their pre-pandemic screening frequency",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4ace60ac-eaa6-4e61-a2e7-9b44a1e7091c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C80",
+      "claim": "Following the delay period, screening was assumed to immediately resume, and women would continue to follow their pre-pandemic screening frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that during the delay period, there was a 100% temporary loss in primary screening, but following the delay period, screening was assumed to immediately resume, and women would continue to follow their pre-pandemic screening frequency",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4fa0a7ef-9333-419a-b903-3c8f7d821edd",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C81",
+      "claim": "All models assumed women did not attend routine screening after age 65 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with US guideline recommendations, all models assumed women did not attend routine screening after age 65 years",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a model assumption aligned with US guidelines",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3329789e-8492-4e6c-b019-c4ae281dc2de",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C82",
+      "claim": "The timing of future screening was shifted in all cohorts other than annual screeners due to the analytically fixed screening intervals assumed post-COVID-19-related delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the analytically fixed screening intervals assumed post-COVID-19-related delay, the timing of future screening was shifted in all cohorts other than annual screeners",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a model assumption and its consequence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "850f2762-6041-4c20-a645-905bec9806f5",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "claim_id": "C83",
+      "claim": "For some combinations of screening frequency and COVID-19-related delays, the delays also reduced the number of lifetime screens and/or changed the age at last screen.",
+      "claim_type": "EXPLICIT",
+      "source": "as a result, for some combinations of screening frequency and COVID-19-related delays, the delays also reduced the number of lifetime screens and/or changed the age at last screen (see Appendix 1\u2014table 1 and Appendix 1\u2014table 2 for additional details)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a consequence of model assumptions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acfe460a-6b11-4baa-9e08-d9f23e8aa50f",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The COVID-19 pandemic caused substantial disruptions to cervical cancer screening in the United States, with initial declines of 67% in screening volumes, gradual recovery to 30% below baseline by mid-2020, and persistent 10% reductions two years into the pandemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are all supported by appropriate citations to peer-reviewed literature and provide consistent evidence of screening disruptions. The temporal progression from severe initial disruption to partial recovery is well-documented and forms important context for the modeling study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "f5a5a836-3a74-4d45-8dca-5e7b2d40bb7f",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cervical cancer risk depends on time since last screen, and despite US guidelines recommending 3-yearly cytology or 5-yearly HPV testing, substantial heterogeneity exists in screening behavior with 20% of women underscreened and 66% of insured women overscreened, with underscreening correlated with sociodemographic factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 establish the epidemiological context and are all supported by appropriate citations. These claims provide essential background on screening heterogeneity that motivates the differential impact analysis, though the 20% underscreening figure (C7) comes from a single registry prior to widespread HPV screening and may have limited generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "d3800ae5-eec6-4942-a4a5-fd032015ce64",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the UK, 30% of survey respondents reported being less likely to attend cervical screening post-pandemic, though actual decreases were smaller than surveyed intentions, with previous nonparticipation being the strongest predictor of low future participation intentions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are supported by appropriate citations and demonstrate international context for screening disruptions. The discrepancy between stated intentions and actual behavior (C11) is an important finding that suggests survey data may overestimate behavioral impacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "fa89de42-5d5a-4e61-802a-d436537008d8",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Decreases in cervical cancer diagnoses in 2020 have been empirically confirmed, and previous modeling studies projected that temporary screening disruptions would cause temporal shifts in cancer detection with small net increases in burden, which could be mitigated by prioritizing high-risk women and had minor effects for women with previous negative HPV results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 appropriately cite prior work and establish the modeling literature context. These claims summarize previous findings that motivate the current analysis, though C17 lacks a specific citation and appears to be an inference from the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "95308ba3-3531-4d59-8263-a00299f3851e",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During a 1-year screening delay, underscreened women whose last cytology screen was 5 years prior faced 38-170% higher relative increases in symptomatically detected cancers compared to guidelines-compliant women, with even greater disparities (3.1-7.0 times higher) for women whose last screen was 10 years prior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 present the short-term modeling results showing disproportionate impacts on underscreened women. The three models show consistent directional findings despite quantitative variation (38-170% for 5-year underscreeners, 3.1-7.0\u00d7 for 10-year underscreeners), which strengthens confidence in the qualitative conclusion. The wide range across models reflects structural differences but all support the core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "e89a58c4-1dfe-42d6-8128-1389296c0993",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For HPV-based screening, women screening every 10 years faced 2.2-3.9 times higher excess cancer burden compared to guidelines-compliant 5-yearly screeners, with this relative excess remaining consistent across delay periods, though absolute accumulated cancer rates increased with delay length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 extend the short-term findings to HPV-based screening and show consistency across delay periods. The models show reasonable agreement (2.2-3.9\u00d7 range), and C27 is supported by referenced appendix data. These findings demonstrate that screening frequency effects persist across different screening modalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "44c16143-2cba-48dc-aa02-98a27ad0bab9",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Temporary screening disruptions of 1-5 years had smaller effects on lifetime cervical cancer risk than screening frequency and modality, with women screened 3-yearly with cytology having lower lifetime risk even with a 5-year disruption (0.21-0.32%) than women screened 5-yearly without disruption (0.22-0.42%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 present the key long-term finding that screening frequency dominates over temporary disruptions. The within-model comparisons across all three models consistently show this pattern, providing strong support. This is a central conclusion of the paper and is well-supported by the modeling data presented in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "96bdfcc6-495b-4960-8753-951ab8ecfff9",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Under an extreme 5-year delay scenario, 3-yearly cytology screening maintained nearly all screening benefits, with cancer prevention decreasing only from 72.1-86.5% to 69.1-85.1% compared to no screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 quantify the preservation of screening benefits despite extreme disruptions. All three models show small decreases (1.4-3.0 percentage points) in cancer prevention, supporting the conclusion that screening maintains most benefits. This is supported by referenced appendix data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "6cc8068b-b81e-42f3-9dbb-187c2c31c230",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Women screened with primary HPV testing after age 30 face lower overall lifetime cervical cancer risk than those screened with cytology and generally experience smaller impacts from COVID-19 disruptions relative to screening frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 compare HPV-based versus cytology-based screening outcomes and are supported by model projections in Figure 3 and appendix tables. The finding that HPV screening provides better protection and greater resilience to disruptions is consistent across models and represents an important clinical implication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "62a067c6-70f7-4df8-bafb-8f9f094593b7",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cancer risks increased disproportionately with longer time since last screen at disruption, with annual/3-yearly screeners facing only nominal excess risks from 1-year delays, while a 5-year delay increased lifetime cancer cases by 20-31 per 100,000 for 3-yearly screeners versus 44-66 per 100,000 for 10-yearly screeners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 detail the differential lifetime impacts by screening history and are supported by model projections in Figure 4 and Table 1. The consistent pattern across all three models of disproportionate impacts on underscreeners strengthens the conclusion. The absolute numbers provide clinically meaningful context for the relative findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "50c9ae6d-3030-4d88-a95a-d7356fe94dac",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Excess cancer risks for a given delay period were generally lower for HPV-based screeners than cytology-based screeners, except for very infrequent (10-yearly) screening where risks were similar (44-66 per 100,000 for cytology vs 40-58 per 100,000 for HPV).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 compare screening modalities and are supported by Figure 4 and model projections. Two of three models (Harvard and Policy1-Cervix) show this pattern consistently, while MISCAN-Cervix shows different behavior explained by model structure. The convergence at very infrequent screening is an interesting finding supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "5183718d-2cd7-495d-88cf-486e7ad1fd91",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Women overdue for screening face increased risk of symptomatic cancer during delays compared to guidelines-compliant women, while guidelines-compliant women can endure 1-year disruptions under both screening modalities, with HPV-screened women showing greater resilience to longer delays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 synthesize the main findings and are directly supported by the modeling results presented throughout. These represent the key clinical conclusions of the study and are consistently supported across all three independent models, providing strong evidence for the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "1779ad46-de4f-48bf-ab2d-e011aba7e92c",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HPV-based screening provides greater lifetime risk reduction than cytology-based screening, with differential utilization by healthcare system type, and disruptions to HPV programs have different implications than cytology programs due to HPV screening's higher sensitivity resulting in lower cancer risk at disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 discuss HPV versus cytology screening differences. C50-C52 are supported by model results and appropriate citations. C53 is established knowledge about test characteristics. C54 is a logical inference from C53 that is reasonable but represents interpretation rather than direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "a2964f0d-fdf9-484c-8cc6-350823f2385e",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The MISCAN-Cervix model has the shortest preclinical dwell time from HPV acquisition to cancer among the three models and assumes some precancerous lesions are consistently missed by cytology screening due to location deeper in the cervical canal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 describe model structural differences that explain variation in results. C55 is supported by citation to model description paper. C56 describes a model assumption that is stated clearly. These claims provide important context for interpreting model differences and are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "4bed2346-324b-4c37-8c49-27c3ded66419",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The relative excess rates of symptomatically detected cancer during delays were higher for women overdue for screening compared to guidelines-compliant women.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 summarizes a key finding that is directly supported by the model projections presented in Figures 1-2 and discussed throughout the results. This represents a core conclusion of the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "36072e53-c690-419f-b233-80a6605bc90b",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cervical screening was paused for 2-4 months in the UK, Ireland, New Zealand, and the Netherlands, and the findings that disruptions disproportionately impact underscreened women who face higher risk than guidelines-compliant screeners are likely generalizable to these settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 discuss generalizability. C58 is supported by appropriate citations documenting international disruptions. C59-C60 represent reasonable extrapolation of the core findings to other settings, though actual generalizability would depend on screening program characteristics and population behavior in those countries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "a0e303f9-56eb-4d11-9636-2899e12b630f",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "HPV-based screening enables self-collection at home, which is available to all women in the Netherlands, parts of Sweden, and Australia, and preliminary findings suggest this facilitated rapid screening reintroduction in the Netherlands during COVID-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 discuss self-sampling as a mitigation strategy. C61 is established knowledge about HPV testing capabilities. C62 describes screening program features. C63 cites preliminary findings about COVID-19 response, though the evidence is described as preliminary and may require further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "7c990a7c-01aa-4fed-84ee-e7de68cb233a",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Delays in diagnostic follow-up or precancer treatment account for most potential harm from COVID-induced screening disruptions, and COVID-related delays have been projected to upstage cancer detection for cervical and other cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 acknowledge study limitations and cite prior work on diagnostic delays and cancer upstaging. These are appropriately cited and provide important context for interpreting the current study's scope, which focused only on primary screening delays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "3700740b-a79e-4e00-9a34-cd21c700e82d",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The majority of the benefit of cytology and HPV co-testing has been attributed to the high negative predictive value of HPV testing alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 justifies not explicitly modeling co-testing by citing established literature on the source of co-testing benefits. This is appropriately cited and provides reasonable justification for the modeling approach, though the generalizability claim could be stronger with additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "8c805973-338a-4b42-b599-81ac160ba153",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Race and ethnicity, poverty income level, education, and insurance status are associated with screening behavior, which is captured in the simulation models even though these factors are not explicitly simulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 acknowledges that while models don't explicitly simulate sociodemographic factors, they capture their effects through screening behavior patterns. This is reasonable since the models simulate different screening frequencies that correlate with these factors, though the claim could be stronger if the models were explicitly calibrated to sociodemographic-stratified data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "854b607c-bb68-43a1-960b-50a03f639b05",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The main driver of lifetime cervical cancer risk is screening frequency and modality rather than temporary disruptions, but disruptions do not equally impact women with different screening histories or behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 state the main conclusions of the study and are well-supported by the comprehensive modeling results presented throughout. All three independent models consistently support these conclusions, providing strong evidence. This represents the central finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "5ca65e35-499a-4222-93b7-5dcaebd3eedd",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study used three CISNET-Cervical microsimulation models to project lifetime cervical cancer risk for three birth cohorts (born 1965, 1975, 1985) under USPSTF-recommended screening guidelines (3-yearly cytology or 5-yearly HPV testing from age 30) with management following Kaiser Permanente Northern California compliance patterns (79% colposcopy, 73% treatment compliance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 describe the methodological approach and are appropriately documented with citations. The use of three independent models is a strength. The compliance patterns from Kaiser Permanente are specific and well-cited, though generalizability to other US populations may vary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "33d2bfc8-358c-4c72-8dd0-7edb185e66f9",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The three CISNET-Cervical models reflect HPV-induced cervical cancer natural history but differ structurally in health states, HPV genotype categorizations, cancer types, cycle length, and parameterization, with standardized US inputs for hysterectomy, mortality, and survival, and were calibrated to achieve good fit to US empirical targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 describe model characteristics and validation. These are well-documented with appropriate citations to prior model description and calibration papers. The use of multiple structurally different models that achieve good calibration is a methodological strength that increases confidence in findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    },
+    {
+      "id": "703c8f91-5427-4160-9e42-9ab2bdc84cf7",
+      "content_id": "a5c69ebd-5236-495e-9840-492334d51637",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The models assumed 100% temporary loss of primary screening during delay periods with immediate resumption afterward at pre-pandemic frequency, no routine screening after age 65, and that delays shifted future screening timing and in some cases reduced lifetime screens or changed age at last screen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 describe key modeling assumptions. These are clearly stated and reasonable for the analysis objectives. The acknowledgment that delays affect not just the immediate missed screen but also future screening patterns (C82-C83) is important for interpretation. However, the assumption of immediate full resumption (C80) may be optimistic given real-world recovery patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:25:07.868299Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a93a68f6-c83a-468b-8b94-d213f7db3276",
+      "result_id": "acfe460a-6b11-4baa-9e08-d9f23e8aa50f"
+    },
+    {
+      "claim_id": "2be87f4c-23bd-4551-a856-240d01237a48",
+      "result_id": "acfe460a-6b11-4baa-9e08-d9f23e8aa50f"
+    },
+    {
+      "claim_id": "90e1f809-6776-44ea-a3d1-0239745ed868",
+      "result_id": "acfe460a-6b11-4baa-9e08-d9f23e8aa50f"
+    },
+    {
+      "claim_id": "93b32743-9df5-492a-af56-30b16f038241",
+      "result_id": "acfe460a-6b11-4baa-9e08-d9f23e8aa50f"
+    },
+    {
+      "claim_id": "9229ad09-0554-45b5-ac7d-dbad2ec34395",
+      "result_id": "f5a5a836-3a74-4d45-8dca-5e7b2d40bb7f"
+    },
+    {
+      "claim_id": "b972152b-5291-4a08-9282-6f6cda71dc4d",
+      "result_id": "f5a5a836-3a74-4d45-8dca-5e7b2d40bb7f"
+    },
+    {
+      "claim_id": "3c52434f-ca83-44c2-ad5a-84a3ba0c0651",
+      "result_id": "f5a5a836-3a74-4d45-8dca-5e7b2d40bb7f"
+    },
+    {
+      "claim_id": "a2a987ed-e46b-4bdb-9d1f-7e5c58064cd8",
+      "result_id": "f5a5a836-3a74-4d45-8dca-5e7b2d40bb7f"
+    },
+    {
+      "claim_id": "a99c80d3-2c84-4cef-99e5-f9dfe1b3638b",
+      "result_id": "f5a5a836-3a74-4d45-8dca-5e7b2d40bb7f"
+    },
+    {
+      "claim_id": "d0b542d9-5412-4988-90e6-f3306e323d5a",
+      "result_id": "d3800ae5-eec6-4942-a4a5-fd032015ce64"
+    },
+    {
+      "claim_id": "056ea3d2-9bbe-4b72-8ed0-a67830c1b7e1",
+      "result_id": "d3800ae5-eec6-4942-a4a5-fd032015ce64"
+    },
+    {
+      "claim_id": "25dc4fdc-9c77-49b2-90f9-5dd00ffc1a89",
+      "result_id": "d3800ae5-eec6-4942-a4a5-fd032015ce64"
+    },
+    {
+      "claim_id": "992e0f77-edf7-4ab5-abfd-05153071a42d",
+      "result_id": "fa89de42-5d5a-4e61-802a-d436537008d8"
+    },
+    {
+      "claim_id": "dd524199-0e09-4494-ae04-430d6fefdf6c",
+      "result_id": "fa89de42-5d5a-4e61-802a-d436537008d8"
+    },
+    {
+      "claim_id": "db077da6-b770-4da0-b844-aa389cc30be2",
+      "result_id": "fa89de42-5d5a-4e61-802a-d436537008d8"
+    },
+    {
+      "claim_id": "421e812e-0c22-49c6-b968-961fc942cf5d",
+      "result_id": "fa89de42-5d5a-4e61-802a-d436537008d8"
+    },
+    {
+      "claim_id": "95425ce7-fdef-4b54-b1be-1364839d0117",
+      "result_id": "fa89de42-5d5a-4e61-802a-d436537008d8"
+    },
+    {
+      "claim_id": "2889f19a-6543-4c04-a22f-59b150d13372",
+      "result_id": "95308ba3-3531-4d59-8263-a00299f3851e"
+    },
+    {
+      "claim_id": "8c613774-14b6-4b20-9100-f5614e908b54",
+      "result_id": "95308ba3-3531-4d59-8263-a00299f3851e"
+    },
+    {
+      "claim_id": "3182afcf-b865-4aad-b3bf-459426a6bbb7",
+      "result_id": "95308ba3-3531-4d59-8263-a00299f3851e"
+    },
+    {
+      "claim_id": "8f33cb9d-0a6f-41b8-9959-a951017163f6",
+      "result_id": "95308ba3-3531-4d59-8263-a00299f3851e"
+    },
+    {
+      "claim_id": "0eafc36a-01a0-4d1f-803c-8da6f1377a99",
+      "result_id": "95308ba3-3531-4d59-8263-a00299f3851e"
+    },
+    {
+      "claim_id": "f1dd9cf4-db3f-4035-8bbe-62d9a52390d7",
+      "result_id": "95308ba3-3531-4d59-8263-a00299f3851e"
+    },
+    {
+      "claim_id": "c5b68542-ce68-4005-84c5-bdd6fd0f3619",
+      "result_id": "e89a58c4-1dfe-42d6-8128-1389296c0993"
+    },
+    {
+      "claim_id": "0108c149-68fb-4bf6-a350-e8ae9c91d390",
+      "result_id": "e89a58c4-1dfe-42d6-8128-1389296c0993"
+    },
+    {
+      "claim_id": "97712391-8ecc-4da1-ac2b-4aeec1e9c2e6",
+      "result_id": "e89a58c4-1dfe-42d6-8128-1389296c0993"
+    },
+    {
+      "claim_id": "eae44789-7ac7-47d0-b847-ff39c3379cac",
+      "result_id": "e89a58c4-1dfe-42d6-8128-1389296c0993"
+    },
+    {
+      "claim_id": "5b1b0ba3-1d2f-478b-9f0a-106b28387775",
+      "result_id": "44c16143-2cba-48dc-aa02-98a27ad0bab9"
+    },
+    {
+      "claim_id": "e907a4db-f0f0-4a2e-bdf7-d554c66b5e7f",
+      "result_id": "44c16143-2cba-48dc-aa02-98a27ad0bab9"
+    },
+    {
+      "claim_id": "3f6b1cf9-c57e-4631-8515-bd54e3224566",
+      "result_id": "44c16143-2cba-48dc-aa02-98a27ad0bab9"
+    },
+    {
+      "claim_id": "4ffd2e30-69ca-433b-afb8-a56a69f5d9bc",
+      "result_id": "44c16143-2cba-48dc-aa02-98a27ad0bab9"
+    },
+    {
+      "claim_id": "bb70f44a-dbd4-4ab3-8cb6-fdfa3cf0df5c",
+      "result_id": "96bdfcc6-495b-4960-8753-951ab8ecfff9"
+    },
+    {
+      "claim_id": "499af15c-2780-4eec-8864-e4bb254f0b2a",
+      "result_id": "96bdfcc6-495b-4960-8753-951ab8ecfff9"
+    },
+    {
+      "claim_id": "4193e887-fb08-481e-9609-2cb7a9887e7f",
+      "result_id": "96bdfcc6-495b-4960-8753-951ab8ecfff9"
+    },
+    {
+      "claim_id": "2f519ba2-e096-4ef4-8239-33b629db344e",
+      "result_id": "6cc8068b-b81e-42f3-9dbb-187c2c31c230"
+    },
+    {
+      "claim_id": "c16af904-95c2-42cd-824a-0f937a7bff0f",
+      "result_id": "6cc8068b-b81e-42f3-9dbb-187c2c31c230"
+    },
+    {
+      "claim_id": "6d878da1-c210-4dee-b3ca-8c0aa149f26b",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "7080292a-d9fc-4e67-8dfb-3d5b2c84e133",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "d67f88f0-edba-4878-a27c-3f286321827a",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "1e580b02-e8df-4379-a934-0adca004cadd",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "a2f57a2d-e4cd-4133-83b4-8fbb2b7ef5a3",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "d6598246-22ad-465a-af28-6cf5d73a8681",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "7cdd6fef-b2f9-4aa3-8f3b-fd663002856c",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "948d5825-6870-429c-b4f4-16ce30e09772",
+      "result_id": "62a067c6-70f7-4df8-bafb-8f9f094593b7"
+    },
+    {
+      "claim_id": "62902e7c-8875-456e-972a-781293afed15",
+      "result_id": "50c9ae6d-3030-4d88-a95a-d7356fe94dac"
+    },
+    {
+      "claim_id": "f29fbbc3-0d71-4164-a28e-8f6add8d66b8",
+      "result_id": "50c9ae6d-3030-4d88-a95a-d7356fe94dac"
+    },
+    {
+      "claim_id": "2d748be7-2774-45a6-9105-3015f00b2579",
+      "result_id": "5183718d-2cd7-495d-88cf-486e7ad1fd91"
+    },
+    {
+      "claim_id": "4b7c2c22-3e11-4d97-9746-afe64e7804a9",
+      "result_id": "5183718d-2cd7-495d-88cf-486e7ad1fd91"
+    },
+    {
+      "claim_id": "5080b3c8-aacf-4d4b-93fb-835a6d0fd8e7",
+      "result_id": "5183718d-2cd7-495d-88cf-486e7ad1fd91"
+    },
+    {
+      "claim_id": "39b39ff3-80b3-48cc-a98a-01982fbd437b",
+      "result_id": "1779ad46-de4f-48bf-ab2d-e011aba7e92c"
+    },
+    {
+      "claim_id": "4605ea97-2de8-4741-af79-b299134ecdf8",
+      "result_id": "1779ad46-de4f-48bf-ab2d-e011aba7e92c"
+    },
+    {
+      "claim_id": "d6f2ba1b-5755-45ec-8960-aa33b164415a",
+      "result_id": "1779ad46-de4f-48bf-ab2d-e011aba7e92c"
+    },
+    {
+      "claim_id": "5c328e90-a8e7-45d7-a7ef-5e23d4bb29e1",
+      "result_id": "1779ad46-de4f-48bf-ab2d-e011aba7e92c"
+    },
+    {
+      "claim_id": "1eed032e-1af2-4291-b1c1-9f41bf9b3f01",
+      "result_id": "1779ad46-de4f-48bf-ab2d-e011aba7e92c"
+    },
+    {
+      "claim_id": "2bfa9972-b305-4564-b1cd-9f711ca5b75b",
+      "result_id": "a2964f0d-fdf9-484c-8cc6-350823f2385e"
+    },
+    {
+      "claim_id": "3499b0a6-203c-4f70-850e-813f491b6a82",
+      "result_id": "a2964f0d-fdf9-484c-8cc6-350823f2385e"
+    },
+    {
+      "claim_id": "c31e8494-bf6a-4abb-883c-7b154dfbea5f",
+      "result_id": "4bed2346-324b-4c37-8c49-27c3ded66419"
+    },
+    {
+      "claim_id": "d903f727-5ae3-4125-b82e-a4421a049eb9",
+      "result_id": "36072e53-c690-419f-b233-80a6605bc90b"
+    },
+    {
+      "claim_id": "cc8a2fc9-9e00-4a18-8a01-af32c61f4f30",
+      "result_id": "36072e53-c690-419f-b233-80a6605bc90b"
+    },
+    {
+      "claim_id": "b899c54d-505d-4851-b53b-2cb83588e547",
+      "result_id": "36072e53-c690-419f-b233-80a6605bc90b"
+    },
+    {
+      "claim_id": "1bf07043-aa82-4471-9a2b-283cddeee6ed",
+      "result_id": "a0e303f9-56eb-4d11-9636-2899e12b630f"
+    },
+    {
+      "claim_id": "44b0489d-e6fd-47ab-92bc-2c0adbf29bd1",
+      "result_id": "a0e303f9-56eb-4d11-9636-2899e12b630f"
+    },
+    {
+      "claim_id": "dcc28b62-2518-408e-bc2a-a8c7950658a2",
+      "result_id": "a0e303f9-56eb-4d11-9636-2899e12b630f"
+    },
+    {
+      "claim_id": "28225aad-b503-4f0c-b8ce-66c348e18e24",
+      "result_id": "7c990a7c-01aa-4fed-84ee-e7de68cb233a"
+    },
+    {
+      "claim_id": "4dda83b9-a725-41dc-a54d-454354123bb6",
+      "result_id": "7c990a7c-01aa-4fed-84ee-e7de68cb233a"
+    },
+    {
+      "claim_id": "cfb4c537-cd6c-405f-a522-1fafab1747ab",
+      "result_id": "7c990a7c-01aa-4fed-84ee-e7de68cb233a"
+    },
+    {
+      "claim_id": "3c73c87f-802d-4cfa-a1ea-1753d9c1480c",
+      "result_id": "3700740b-a79e-4e00-9a34-cd21c700e82d"
+    },
+    {
+      "claim_id": "0af4b3be-eed2-426a-9a98-5239182f4459",
+      "result_id": "8c805973-338a-4b42-b599-81ac160ba153"
+    },
+    {
+      "claim_id": "3ea1f96b-d1f7-4cc3-af22-ae7551b8c4cc",
+      "result_id": "854b607c-bb68-43a1-960b-50a03f639b05"
+    },
+    {
+      "claim_id": "e9a148dc-2914-4ac3-8cb9-48b69b171828",
+      "result_id": "854b607c-bb68-43a1-960b-50a03f639b05"
+    },
+    {
+      "claim_id": "15d12979-ee73-48e5-9c0a-7c35d162fbd5",
+      "result_id": "5ca65e35-499a-4222-93b7-5dcaebd3eedd"
+    },
+    {
+      "claim_id": "b088bf68-f390-41bf-9181-192c04a9aa30",
+      "result_id": "5ca65e35-499a-4222-93b7-5dcaebd3eedd"
+    },
+    {
+      "claim_id": "fdf5cc3f-6db0-4af3-8ee7-7261dee35e9c",
+      "result_id": "5ca65e35-499a-4222-93b7-5dcaebd3eedd"
+    },
+    {
+      "claim_id": "89adbf9d-6b2c-4c61-a602-bc983035a069",
+      "result_id": "5ca65e35-499a-4222-93b7-5dcaebd3eedd"
+    },
+    {
+      "claim_id": "86469ad8-08d5-4c11-bbd9-4c925e7de2ed",
+      "result_id": "5ca65e35-499a-4222-93b7-5dcaebd3eedd"
+    },
+    {
+      "claim_id": "300d5824-c131-4443-80dd-753b316bda1e",
+      "result_id": "33d2bfc8-358c-4c72-8dd0-7edb185e66f9"
+    },
+    {
+      "claim_id": "4962a92c-e643-4988-93f9-ff223e3bd8d6",
+      "result_id": "33d2bfc8-358c-4c72-8dd0-7edb185e66f9"
+    },
+    {
+      "claim_id": "55de8bda-69e1-4a1c-8e72-f62657a9297c",
+      "result_id": "33d2bfc8-358c-4c72-8dd0-7edb185e66f9"
+    },
+    {
+      "claim_id": "4ab038b7-9546-4451-ad10-5e43823e51fb",
+      "result_id": "703c8f91-5427-4160-9e42-9ab2bdc84cf7"
+    },
+    {
+      "claim_id": "4ace60ac-eaa6-4e61-a2e7-9b44a1e7091c",
+      "result_id": "703c8f91-5427-4160-9e42-9ab2bdc84cf7"
+    },
+    {
+      "claim_id": "4fa0a7ef-9333-419a-b903-3c8f7d821edd",
+      "result_id": "703c8f91-5427-4160-9e42-9ab2bdc84cf7"
+    },
+    {
+      "claim_id": "3329789e-8492-4e6c-b019-c4ae281dc2de",
+      "result_id": "703c8f91-5427-4160-9e42-9ab2bdc84cf7"
+    },
+    {
+      "claim_id": "850f2762-6041-4c20-a645-905bec9806f5",
+      "result_id": "703c8f91-5427-4160-9e42-9ab2bdc84cf7"
+    }
+  ],
+  "comparisons": []
+}

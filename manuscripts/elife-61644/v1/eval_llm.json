@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study collected 500 sourdough starters from four continents through a community science network, with dense sampling in the United States (429 samples), and smaller numbers from Canada (29), Europe (24), Australia/New Zealand (17), and Thailand (1). The starters varied greatly in their reported ages and maintenance histories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C26-C31, and C120-C123 collectively document the sample collection methodology and geographic distribution. The numbers are explicitly stated and shown in Figure 1B, with appropriate quality control steps described (560 initial samples reduced to 500 after filtering). The community science approach and geographic distribution are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Amplicon sequencing revealed that sourdough starters contained a median of 7 bacterial and 35 fungal ASVs, with LAB and AAB comprising >97% of bacterial reads and yeasts >70% of fungal reads. Communities exhibited strong species dominance patterns, with S. cerevisiae dominating 77% of samples and specific co-occurrence patterns among LAB species (e.g., L. plantarum and L. brevis co-occurred in 177 of 500 starters, p<0.001). AAB were detected in 147 starters at >1% relative abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 describe the microbial diversity patterns supported by amplicon sequencing data shown in Figure 2A and supplements. The quantitative results (median ASV counts, relative abundances, co-occurrence statistics) are explicitly stated with appropriate statistical tests and p-values. The detection of AAB in 147 starters is a novel finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C2",
+      "C99"
+    ],
+    "result": "Geographic location showed minimal influence on sourdough microbial composition. Across the continental U.S., taxonomic composition was not correlated with geographic distance (Mantel \u03c1 = 0.0, p>0.05 for both LAB/AAB and yeasts). At the global scale, only weak geographic signals were detected (yeast: Mantel \u03c1 = 0.07, p<0.01; all fungi: \u03c1 = 0.23, p\u22640.001). Indicator species analysis revealed only weak regional enrichment (indicator strength \u22640.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53, C2, and C99 present a major finding contradicting widespread assumptions about sourdough biogeography. The conclusion is supported by multiple statistical approaches (Mantel tests, indicator species analysis) shown in Figure 2B-C and supplements. The weak effect sizes and non-significant p-values for U.S. samples provide strong evidence against biogeographic structuring at the species level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Process parameters and environmental factors explained less than 10% of variation in community composition (PERMANOVA R\u00b2 = 8.3% for bacteria, 7.5% for fungi globally). Some taxa showed weak associations with specific conditions: younger starters were dominated by L. plantarum (IS=0.238, p<0.001) and L. brevis (IS=0.254, p<0.001), while older starters contained L. sanfranciscensis (IS=0.043, p=0.01) and P. parvulus (IS=0.222, p<0.001). L. sanfranciscensis was enriched in commercially-sourced starters (IS=0.267, p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C66 demonstrate that despite testing 33 metadata variables, process parameters explain minimal variation in community composition. The PERMANOVA results and indicator species analyses are appropriately conducted with FDR-corrected p-values. The weak indicator strengths (<0.3) support the conclusion that these factors have limited predictive power, though some biologically meaningful associations (e.g., starter age, commercial origin) are detected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C3",
+      "C4",
+      "C80",
+      "C107"
+    ],
+    "result": "Pairwise competition experiments with 8 isolates (4 LAB, 4 yeasts) revealed that growth ability alone predicted persistence in competitions (Spearman's \u03c1 = 0.81, p<0.05), but did not predict frequency in natural samples (\u03c1 = 0.39, p>0.05). Importantly, 7 of 8 significant co-occurrence patterns from amplicon sequencing were recapitulated in synthetic communities (p<0.05), demonstrating that microbial interactions shape community structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C80 and C107 present strong evidence that microbial interactions structure sourdough communities. The concordance between observational (amplicon sequencing) and experimental (competition assays) data is compelling, with 7/8 interactions matching (p<0.05 by Monte Carlo simulation). The experimental design is appropriate with adequate replication (n=5), though limitations regarding strain-level diversity and higher-order interactions are acknowledged in C108-C109.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C5",
+      "C97",
+      "C116"
+    ],
+    "result": "Functional analysis of 40 starters revealed that AAB abundance was the primary driver of functional diversity. Total AAB percentage strongly correlated with VOC profiles (Mantel \u03c1 = 0.73, p<0.001), sensory notes (Kruskal-Wallis p<0.05), and negatively with dough rise rate (\u03c1 = -0.51, p<0.001). The source inoculum explained 91% of VOC variation (PERMANOVA R\u00b2=0.91, p\u22640.001) and 42% of dough rise rate variation (adjusted R\u00b2=0.42, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C97 and C116 demonstrate a novel structure-function relationship in sourdough. The functional analyses are well-designed with appropriate controls (C124 validates that experimental communities resembled originals, Mantel \u03c1=0.55, p\u22640.001). Multiple lines of evidence (VOC analysis by GC/MS, sensory panel, dough rise tracking) converge on AAB as a key functional driver. The high R\u00b2 values and significant p-values support strong conclusions, though C117 appropriately notes complexity and variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C114",
+      "C115"
+    ],
+    "result": "AAB have been historically underappreciated in sourdough microbiology due to specialized culture requirements and methodological biases in previous studies that relied on culture-based techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C48, and C114-C115 establish that AAB were overlooked in prior research. This is supported by citations to major review articles (De Vuyst et al., 2014; G\u00e4nzle and Ripari, 2016; Van Kerrebroeck et al., 2017) that largely omitted AAB, and by citation to Kim et al., 2019 regarding specialized culture requirements. The inference about cultivation biases is reasonable given the methodological differences between this study (amplicon sequencing) and previous culture-based approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The lack of biogeographic patterns may be explained by widespread movement of starters and flour across geographic distances, though strain-level biogeographic patterns may exist below the resolution of amplicon sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C105 present hypotheses to explain the lack of biogeography and acknowledge methodological limitations. While the reasoning is logical and supported by citations about flour as a microbial source (C101) and amplicon sequencing limitations (C103), these remain speculative explanations. The comparison to other ecosystems showing distance-decay (C104) strengthens the argument that the lack of pattern is real rather than methodological, but the proposed mechanisms (starter/flour movement) lack direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Competition experiments have limitations including use of single isolates that don't capture strain-level diversity, pairwise design that doesn't capture higher-order interactions, and discrepancies between in vitro and in situ performance (e.g., W. anomalus was highly competitive in vitro but rare in natural samples).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 appropriately acknowledge experimental limitations. The discrepancy between W. anomalus's competitive ability in vitro (C111, supported by this study and citations to Daniel et al., 2011; Vrancken et al., 2010) and its rarity in natural samples (C112) is well-documented. The limitations regarding strain-level diversity (C108, supported by citation to Rogalski et al., 2020) and higher-order interactions (C109-C110) are standard caveats for this type of experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C118",
+      "C119"
+    ],
+    "result": "This study presents the first intercontinental atlas of sourdough starter microbial communities, demonstrating that sourdough starters are valuable model systems for studying microbiome assembly as top-down engineered communities maintained over many years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C118-C119 characterize the novelty and broader significance of the work. The claim of being the first intercontinental atlas (C98) is supported by the literature review showing previous studies focused on Europe (C14) with poor characterization of North America (C15) and lack of continental-scale biogeographic analysis (C23). The characterization of sourdough as a model system (C118-C119) is a reasonable inference based on the study's findings about microbial interactions and community structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C60",
+      "C106"
+    ],
+    "result": "Background context establishes that sourdough is a globally distributed fermented food with known microbial functions, but comprehensive surveys of household starters across continents have not been conducted, and the relative importance of geography, process parameters, and microbial interactions in structuring communities is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C25, C60, and C106 provide background context supported by appropriate citations to establish knowledge gaps. The characterization of sourdough biology (C7-C12) is well-established knowledge. The literature review identifying gaps (C13-C25) is supported by citations to previous studies and appropriately establishes the novelty of the current work. These are standard introductory claims that set up the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The influence of AAB on sensory properties and dough rise is complex, and correlations between AAB percentage and functional properties were not observed in all samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 appropriately acknowledges variability and complexity in the functional relationships. This is an important caveat to the strong correlations reported in C92-C95, recognizing that while AAB abundance is a key driver on average, individual samples may deviate from this pattern. This nuanced interpretation strengthens rather than weakens the overall conclusions by acknowledging biological complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Validation experiments confirmed that experimental communities revived from glycerol stocks resembled original samples (Mantel \u03c1 = 0.55, p\u22640.001 for overall bacterial composition), and dough rise rates ranged from 0.1 to 1.5 mm/hr across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 provide important methodological validation. The Mantel test (C124) demonstrates that the experimental system used for functional analysis maintained community composition similar to original samples, supporting the validity of functional measurements. The range of dough rise rates (C125) documents the functional variation observed. These are well-supported quality control results.",
+    "result_type": "MINOR"
+  }
+]

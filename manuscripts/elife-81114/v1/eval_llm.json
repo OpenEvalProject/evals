@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors motivate their study by arguing that current CRC molecular classifications rely on snapshot transcriptional profiles that are unstable and difficult to reproduce, whereas biological networks remain relatively stable and can more reliably characterize biological states. They propose using gene interaction perturbation networks to address this limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 establish the rationale for the study through citations to prior work (C1-C8, C10) and logical inference (C9, C11-C12). The motivation is well-supported by the literature and provides a clear justification for the network-based approach. The claims about network stability versus expression variability are backed by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors identified six gene interaction network-based subtypes (GINS1-6) using consensus clustering on a network of 1390 genes and 2225 interactions derived from 2167 CRC samples. The optimal number of clusters (K=6) was determined using CDF curves, PAC scores, and Nbclust assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 describe the primary discovery of six subtypes using appropriate clustering methodology. The statistical validation (C16: R=-0.994, p<2.2e-16; C18: optimal K=6) and multiple convergent methods (CDF, PAC, Nbclust, silhouette, UMAP) provide strong support for the clustering result. The methodological rigor is appropriate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The six GINS subtypes show distinct clinical characteristics: GINS2 has more advanced clinicopathological stage (p<0.05) and worst survival outcomes, GINS5 is enriched for MSI (p<2.2e-16) and has the most favorable prognosis, while other subtypes show intermediate outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 present clinical validation of the subtypes with appropriate statistical tests and p-values. The Kaplan-Meier survival analysis (C24-C25: p<0.0001) and MSI enrichment (C23: p<2.2e-16) provide strong evidence for clinical relevance. The lack of age/gender differences (C21) appropriately controls for confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The GINS subtypes show differential treatment responses: GINS2 benefits more from fluorouracil-based adjuvant chemotherapy (p=2.67e-5) and is the only subtype with significantly improved survival after ACT, while GINS3 shows better response to bevacizumab (p=0.042).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 demonstrate treatment-specific responses with statistical support. The ACT response in GINS2 is validated both in the discovery cohort (C26) and through subtype-specific survival analysis (C27). The bevacizumab response (C28) is statistically significant though the sample size is modest (25 responders, 29 non-responders).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The GINS subtypes show biological convergence with previous CRC classifications (CMS, CRIS, CCS, CRCA, CIT), with GINS2 associated with aggressive subtypes (CMS4, CRIS-B) and GINS5 with MSI-like subtypes (CMS1, CRIS-A). However, only ~50% of classifier genes overlap with previous classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 establish both convergence and novelty relative to prior work. The associations with established classifications (C30-C31) validate the biological relevance, while the limited gene overlap (C32: ~50%) demonstrates that this is not merely recapitulating previous work. The comparison is appropriately documented with figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A 289-gene centroid-based classifier was developed with 1.8% misclassification error and successfully validated across 19 independent datasets from different platforms (microarray and RNA-seq), microdissected and whole tumors, with comparable subtype proportions maintained across datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 demonstrate robust validation across diverse technical conditions. The low misclassification error (C33: 1.8%), successful validation across platforms (C34-C35), and consistency in microdissected vs. whole tumors (C36) address important technical concerns. The comparable proportions (C37) support generalizability. SubMap analysis provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The clinical and treatment characteristics of GINS subtypes were validated in external datasets: GINS2 showed more advanced tumors and worse survival, GINS5 was enriched for MSI with favorable outcomes, GINS2 benefited from ACT, and GINS3 responded better to cetuximab.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 confirm that the key clinical findings replicate in validation datasets. The consistency of GINS2 aggressiveness (C38), GINS5 MSI enrichment and favorable prognosis (C39), and treatment responses (C40-C41) across multiple independent cohorts strongly supports the robustness and clinical utility of the classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A 14-gene miniclassifier was developed using LASSO and random forest with misclassification errors of 7.8% (training) and 13.0% (testing), and successfully validated by qPCR in 214 clinical CRC samples, reproducing the key clinical characteristics including GINS2's poor prognosis and ACT sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 demonstrate successful translation to a clinically feasible tool. The machine learning approach is appropriate (C42), performance metrics are reasonable (C43), and qPCR validation in clinical samples (C44-C45) addresses practical implementation. The replication of clinical characteristics (C45: p<0.0001 for survival, p=0.041 for ACT) validates the miniclassifier's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The GINS subtypes show distinct biological characteristics: GINS1 is characterized by up-regulated cell cycle pathways and overexpression of MKI67 and PCNA (p<2.2e-16), GINS3 by inferior KRAS signaling, and GINS6 by activation of lipid metabolisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 characterize biological features using pathway analysis (SSEA, GSVA). The proliferative nature of GINS1 is validated by both pathway analysis (C46) and specific marker expression (C47: p<2.2e-16). The KRAS signaling in GINS3 (C48) and metabolic reprogramming in GINS6 (C49) are supported by appropriate analytical methods and figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "GINS2/4/5 show interactive stromal and immune activation trends: GINS2 has higher stromal and lower immune activity, GINS5 shows the opposite pattern, and GINS4 displays a mixed phenotype. These differences were validated by ESTIMATE (p<2.2e-16) and gene cluster analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 establish a key biological axis distinguishing subtypes. The inverse relationship between stromal and immune components is supported by multiple methods: pathway analysis (C50-C52), ESTIMATE validation (C53: p<2.2e-16), and gene cluster enrichment (C54-C55). The high tumor purity of GINS1/3 (C56) provides an important contrast.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "GINS5 shows extensive immune activation with high expression of immunomodulators (13/26 up-regulated at protein level, 12/13 involved in antigen presentation), higher TMB and neoantigen load (p<0.001), and rich infiltration of T cells, Th1, Th2, and M1 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 comprehensively characterize GINS5's immune-activated phenotype. The immunomodulator expression is validated at both transcript (C57) and protein levels (C58-C59), with functional annotation (C59). The higher immunogenicity (C60: p<0.001) and immune cell infiltration (C61-C62) are supported by multiple computational methods and consistent with the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GINS2 is characterized by immunosuppressive features including elevated M2 macrophages, fibroblasts, MDSC, and Treg cells, while GINS1/3 show sparse infiltration of both immune-activating and immunosuppressive cells, consistent with high tumor purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 establish the immune-suppressed phenotype of GINS2 and immune-desert phenotype of GINS1/3. The enrichment of immunosuppressive cells in GINS2 (C63-C64) is supported by appropriate citations and computational methods. The sparse immune infiltration in GINS1/3 (C65-C66) is consistent with their high tumor purity, providing internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The subtypes were classified into immune phenotypes: GINS1/3 as 'immune-desert', GINS2 as 'immune-suppressed', GINS5 as 'immune-activated', and GINS4/6 as 'mixed'. GINS5 shows favorable immunotherapy biomarkers (lower TIDE, higher immunophenoscore) and shares expression patterns with immunotherapy responders, while GINS1/2/3 resemble non-responders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 synthesize immune characterization and predict immunotherapy response. The immune phenotype classification (C67-C70) is well-supported by prior claims. The immunotherapy biomarkers (C71) and SubMap analysis (C72-C73) provide convergent evidence for differential immunotherapy response, though prospective validation would strengthen these predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "GINS6 is characterized by metabolic reprogramming with 20 significantly enriched metabolic pathways (mostly upregulated), particularly lipid metabolisms. This is supported by PCA separation, SSEA enrichment, metabolite-protein interaction network (7/9 genes in lipid pathways), and elevated fatty acids and carnitines in cell line metabolomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 comprehensively characterize GINS6's metabolic phenotype using multiple complementary approaches: GSEA (C74-C75), PCA (C76), SSEA (C77), network analysis (C78), and metabolomics validation (C79-C80). The convergence of transcriptomic and metabolomic evidence strongly supports the lipid metabolism characterization. However, the metabolomics is from cell lines, not patient samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The GINS subtypes show distinct cellular phenotypes: GINS2 is enriched for stem-cell-like tumors (91%) and crypt base phenotype with superior stemness abundance, GINS4 for transit-amplifying-like (86%), GINS5 for inflammatory and serrated-like CRC, and GINS6 for enterocyte-like and crypt top phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 characterize cellular differentiation states using published signatures and NTP algorithm. The stem-cell enrichment in GINS2 (C81, C86, C88) is consistent with its aggressive phenotype. The inflammatory/serrated association with GINS5 (C83, C85) aligns with MSI enrichment. The enterocyte/crypt top phenotype of GINS6 (C84, C87) is consistent with metabolic specialization. Multiple convergent methods support these assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The GINS subtypes show distinct autocrine stimulation loops: GINS1 with NOTCH2 and IL13RA2, GINS2 with TGFBR1 and IGF2R, GINS3 with ephrin receptors and high EGFR activity, GINS4 with ACKR2/FGFR1/IL1R1, GINS5 with immune-related loops (CXCR3, IFNAR1, IFNGR1, TNFRSF9, TNFRSF10A), and GINS6 with BMP activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 identify subtype-specific signaling using SSEA framework. The autocrine loops are biologically coherent with other subtype characteristics: EGFR in GINS3 (C91-C92) aligns with cetuximab sensitivity, immune loops in GINS5 (C94) with immune activation, and BMP in GINS6 (C95) with differentiation. The citation supporting BMP's role in stem cell restriction (C95) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The GINS subtypes show distinct genomic alterations: GINS1 with prevalent PIK3CA mutations (45%), GINS2 with SMAD4 mutations (53%), GINS3 with fewer KRAS mutations (12%) and heavy CNV burden including Chr20 amplifications, and GINS5 with rich driver gene mutations (especially BRAF) but low chromosomal instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 characterize genomic features using TCGA data. The mutation frequencies are well-documented with appropriate citations (C96-C98). The inverse relationship between mutation burden and CNV in GINS5 vs. GINS3 (C99-C102) is consistent with known MSI biology. The Chr20 amplification in GINS3 (C102) provides specific genomic characterization. Statistical support is provided where appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "GINS5 is predominantly assigned tumors with high CIMP (consistent with MSI-H), while GINS3 shows SMOC1 methylation silencing and GINS4 shows TMEM106A methylation silencing. The expression levels of SMOC1 and TMEM106A are significantly inversely correlated with their methylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 characterize epigenetic alterations. The CIMP enrichment in GINS5 (C103) is consistent with MSI-H and supported by citation. The subtype-specific methylation silencing (C104-C105) is validated by inverse correlation with expression (C106), demonstrating functional consequence. The integration of mutation, CNV, and methylation data provides comprehensive genomic characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Stromal components drive GINS2 classification: 71.1% of GINS2-discriminant genes are stromal, stromal-rich subtypes (GINS2/GINS4) transform to high-purity subtypes (GINS1/GINS3) in PDX models, post-radiotherapy biopsies shift to GINS2, and GINS2 shows higher fibroblast fraction, CAF score, worse prognosis, and radiotherapy resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 systematically demonstrate stromal contribution using multiple lines of evidence: gene annotation (C107), PDX analysis (C108), radiotherapy response (C109), single-cell RNA-seq (C110), and CAF scoring (C111-C113). The convergence of evidence from different experimental systems strongly supports the conclusion that stromal content is a key driver of GINS2 classification and clinical behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "41 subtype-specific therapeutic agents were identified through drug response prediction, with biological coherence: GINS1 drugs target proliferation and PI3K/mTOR (matching PIK3CA mutations), GINS2 drugs target IGF1R and WNT signaling, GINS3 drugs include EGFR/RTK inhibitors, GINS5 is sensitive to PARP inhibitors (matching high HRD score), and GINS6 may respond to anticholesterol drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 identify potential therapeutic strategies using pharmacogenomic databases. The drug-pathway matching shows biological coherence (C115-C119), and the PARP inhibitor sensitivity in GINS5 is validated by HRD analysis (C121). However, these are computational predictions requiring prospective clinical validation. The ISOpure purification addresses stromal contamination concerns. The KRAS mutation validation (Figure 10\u2014figure supplement 3C) supports the prediction pipeline's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The background network from Reactome database included 6376 genes and 148,942 interactions, fitted scale-free distribution (R=-0.852, p<2.2e-16), and showed that tumor samples had remarkably stronger perturbations than normal samples (p<2.2e-16), with 92.6% of gene pairs showing more dispersion in tumors (p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 establish the methodological foundation. The scale-free distribution (C123) validates the biological network structure. The differential perturbation between tumor and normal (C124-C125) with strong statistical significance provides the basis for using interaction perturbations to characterize disease states. The high percentage of perturbed interactions (C125: 92.6%) supports the rationale for the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The study enrolled 6216 patients and 308 normal samples from public databases, plus 214 clinical CRC samples from The First Affiliated Hospital of Zhengzhou University for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 document the data sources. The large sample size from public databases (C126) provides statistical power, and the independent clinical validation cohort (C127) addresses generalizability. The combination of discovery and validation cohorts is appropriate for this type of study.",
+    "result_type": "MINOR"
+  }
+]

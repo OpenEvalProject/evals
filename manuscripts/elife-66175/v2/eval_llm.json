@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C52",
+      "C125"
+    ],
+    "result": "Mice in the labyrinth make approximately 2000 navigation decisions per hour, with the median mouse performing 16,192 steps (mean = 15,257; SD = 3340) in a 7-hour observation period, resulting in approximately 15,000 decisions in a single night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C52, and C125 are consistent and provide converging evidence for the high rate of decision-making. The abstract claim (C1) of ~2000 decisions/hour aligns with the detailed measurements (C52, C125) showing ~15,000 decisions over 7 hours (~2143/hour). The data are directly measured from tracked trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C21",
+      "C23",
+      "C24",
+      "C60",
+      "C61",
+      "C64",
+      "C66"
+    ],
+    "result": "Mice learn to navigate to a water reward with remarkable speed, executing correct 10-bit choices after only ~10 reward experiences within approximately 1 hour, representing a learning rate 1000-6000 fold higher than in 2AFC experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims collectively demonstrate rapid learning: all 10 water-deprived animals discovered the water port quickly (C21), achieved ~75% perfect paths late in the night (C23), and executed fast runs in as little as 2s (C24). The information-theoretic analysis (C64, C66) supports the 10-bit complexity estimate. The comparison to 2AFC tasks (C3, C60, C61) is well-documented with specific quantitative comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C101",
+      "C102"
+    ],
+    "result": "At least 5 of 10 water-deprived mice showed discontinuous improvements in behavior identifiable to ~200s precision, suggesting moments of sudden insight that challenge conventional reinforcement learning models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C31 provide direct evidence from Figure 5 showing sudden behavioral changes in at least half the animals. The precision of timing (C31) and the challenge to conventional models (C101, C102) are explicitly stated and supported by the sigmoid function fitting analysis described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C85",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The search algorithm underlying maze exploration does not require global memory and is largely explained by local turning rules, with four turning biases that are remarkably consistent across animals (varying by only 3%) and account for ~87% of exploration efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by the biased random walk analysis in Figure 9. The consistency across animals (C42, C98) is quantified with specific standard deviations. The biased agents account for 87% of efficiency (C44, C85) compared to 60% for random walk, though they don't fully explain behavior (C85, C86). The conclusion that global memory is not required (C5, C96, C97) is supported by model comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "After maze rotation, experienced mice continued to navigate successfully to the water port, with 3 of 4 animals going directly to the correct location on first entry, demonstrating that navigation does not strictly depend on physical cues attached to the maze.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The maze rotation experiment (C25, C26, C76-C79) provides strong evidence that mice don't rely solely on maze-attached cues. The quantitative effects (C27-C29) show subtle but measurable changes in behavior. However, the conclusion (C30) is appropriately qualified as 'do not strictly depend' rather than claiming complete independence from physical cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Mice acquire homing strategies in a single bout, with first home runs typically starting from end nodes (deepest in maze) and showing little overlap with entry paths, suggesting immediate acquisition of escape routes rather than gradual learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide quantitative evidence from Figure 6 showing that maximal-length home runs appear first and have minimal overlap with entry paths. The conclusions (C91-C94) are well-supported by the data, though the metaphor of 'Ariadne's thread' (C94) is interpretive. The evidence contradicts gradual learning hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C95"
+    ],
+    "result": "Mice spent 84-95% of their time in exploration mode, with rewarded mice beginning half their bouts with water runs and continuing to explore 90% of the time after drinking, suggesting intrinsic reward from exploration itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide specific quantitative data from Figure 7 on behavioral state occupancies and transitions. The speculation about intrinsic reward (C95) is appropriately qualified as 'one suspects' and is a reasonable interpretation of the persistent exploration behavior, though it remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Exploration efficiency was remarkably consistent across animals (varying by only 11% of mean, 0.387 \u00b1 0.044 SD), with no difference between rewarded and unrewarded groups, but declined by an average of 23% over the course of the night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are directly supported by Figure 8 and provide specific quantitative measures of exploration efficiency. The consistency across animals and groups is striking, and the decline over time is statistically significant for almost every animal. The measurements are based on well-defined metrics (Equation 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C83",
+      "C84",
+      "C110"
+    ],
+    "result": "Mice showed systematic preferences for certain end nodes with >10-fold differences in visitation frequency, with outer nodes favored 2.2-fold over inner nodes; the biased random walk predicted 51% of variance and the Markov model 66%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 document the node preferences from Figure 10 with specific quantitative ratios. The model predictions (C48, C83, C84) show that local turning biases can explain much of this seemingly global preference pattern (C110). The consistency across animals (C46) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C88",
+      "C89"
+    ],
+    "result": "Markov chain models with average history length ~4 reduced uncertainty about mouse actions at T-junctions from 1.585 bits to 1.237 \u00b1 0.035 bits/action, with rewarded animals showing slightly lower entropy (1.216 vs 1.261 bits/action).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C88-C89 provide specific quantitative results from the Markov modeling analysis in Figure 11. The optimal history length of ~4 (C51, C88) and the remaining uncertainty (C49, C89) are well-documented. The difference between rewarded and unrewarded animals (C50) is small but consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The experimental apparatus consisted of a binary tree maze (24\u00d724\u00d72 inches, 1-1/8 inch corridors) with 63 branch points and 64 end nodes, one containing a water port delivering ~30\u00b5L with 90s timeout, tested on 20 C57BL/6J mice (ages 45-98 days, both sexes) with water deprivation ~22h before experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the experimental setup and are straightforward methodological details stated in the Materials and Methods section. The specifications are precise and internally consistent. These are descriptive rather than inferential claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "All mice except one readily used the maze, spending on average 46% of time there (47% rewarded vs 44% unrewarded), with one outlier excluded from analysis for never progressing past the first junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 describe basic behavioral observations supported by Figure 1 supplements. The exclusion of one animal (C15) is appropriately documented. The similarity between rewarded and unrewarded groups (C17) is an important control showing that exploration is not solely driven by water motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C103"
+    ],
+    "result": "The rate of maze entry was highest immediately after returning to the cage, declining 4-fold over the first minute, while exit rate remained constant throughout visits\u2014a pattern opposite to predictions from homeostatic drive for exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by Figure 1\u2014figure supplement 3 showing transition rates. The interpretation (C103) that this contradicts homeostatic drive is reasonable, though alternative explanations are acknowledged in the Discussion. The pattern is consistent across all animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Locomotion speed was approximately constant at ~1.56 cells/s (5.94 cm/s) on average across animals, rising quickly over the first 50s in the maze then varying little over the 7-hour experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by Figure 2\u2014figure supplement 1. The consistency of speed across animals and time (after initial adaptation) is well-documented and provides important context for interpreting other behavioral measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "A more sophisticated Markov-chain model with many parameters failed to improve on the biased random walk's efficiency prediction, and file compression algorithms (bzip2) performed 43% worse than behavioral models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 document negative results showing the limits of model improvement. The failure of more complex models to improve efficiency predictions (C86) and the poor performance of compression algorithms (C87) are important for understanding what aspects of behavior remain unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C90",
+      "C100",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The manuscript contextualizes findings within the literature on animal learning, citing examples of rapid one-shot learning (Bruce effect, fear conditioning, bee proboscis extension) and slow 2AFC learning (weeks to months for mice/monkeys), as well as historical maze studies and genetic components of tunnel-building behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent cited literature and provide appropriate context for the study. The citations appear accurate based on the references provided. These are primarily literature review claims rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The Discussion addresses potential navigation mechanisms, noting that the rotation image of the water port is a popular error destination, the maze was designed to restrict sensory cues (opaque walls, dark room, symmetric geometry), and the binary tree structure is more complex than historical mazes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims from the Discussion section provide interpretations and design rationale. The observations about navigation errors (C71, C72) are data-based, while claims about maze design (C111-C115) are methodological. The comparisons to historical mazes (C121-C124) provide appropriate context. The inferences about navigation mechanisms (C118-C120) are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Path length errors relate directly to turning errors (each wrong turn adds 2 steps), mice spent 50% of time in maze within 250s of first contact (much faster than arena exploration requiring hours), and surveying half the end nodes required 450 turning decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 provides a mathematical relationship for interpreting path lengths. Claims C107-C109 provide specific quantitative observations, with C108 citing Fonio et al. 2009 for comparison. These are supporting details that contextualize the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C99",
+      "C104",
+      "C105"
+    ],
+    "result": "The manuscript speculates that animals derive intrinsic reward from exploration, that tunnel-using rules may be innate/genetic, and that exploration drive in 2AFC tasks may manifest as lapse rates that decrease slowly over training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C95, C99, C104, C105) are explicitly speculative, using language like 'one suspects,' 'it is possible,' and 'presumably.' While they are reasonable hypotheses based on the data and cited literature, they are not directly tested in this study and are appropriately qualified as speculation.",
+    "result_type": "MINOR"
+  }
+]

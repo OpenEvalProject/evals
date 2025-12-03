@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "This single-arm mechanistic pilot study enrolled 52 adults with HCV genotype 1 or 6 infection and mild liver disease (FibroScan \u22647.1 kPa) in Ho Chi Minh City, Vietnam. Treatment duration with SOF/DCV was determined by day 2 viral load: participants with <500 IU/ml received 4 weeks, those with \u2265500 IU/ml received 8 weeks. Recruitment was stopped at 52 participants (target 60) due to COVID-19 restrictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30, C42-C45 describe the study design, eligibility criteria, treatment allocation, and recruitment. These methodological details are clearly stated and internally consistent, with appropriate citations for key definitions (e.g., FibroScan threshold from Nitta et al., 2009). The study design is adequately described for a pilot mechanistic study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In the response-guided therapy approach, 34 participants (65%) received 4-week SOF/DCV and 17 received 8-week treatment. First-line SVR12 was 75% (95% CI 63-86) overall, with 62% (21/34) cure rate in the 4-week arm and 100% (17/17) in the 8-week arm. All treatment failures occurred in the 4-week group. Mean first-line treatment duration was 37 days, saving 47 days compared to standard 12-week therapy, but falling below the target cure rate of \u226590%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55, C57, C102-C104 present the primary efficacy outcomes with appropriate statistical measures (confidence intervals). The data are internally consistent and clearly demonstrate that while 8-week therapy achieved 100% cure, 4-week therapy had unacceptably low cure rates (62%). The study failed to meet its primary endpoint of \u226590% cure rate. Sample sizes are small, particularly for the 8-week arm (n=17), limiting precision of estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C93",
+      "C105",
+      "C123"
+    ],
+    "result": "All 13 participants who failed first-line 4-week therapy were successfully retreated with standard 12-week SOF/DCV, achieving 100% SVR12. Including retreatment, mean total treatment duration was 58 days per patient with 100% overall cure rate, saving 26 days compared to standard therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58, C93, C105, C123 demonstrate that retreatment with standard duration SOF/DCV was uniformly successful (13/13). This is an important finding for clinical practice, showing that shortened therapy failures can be salvaged. However, the overall strategy (shortened therapy + retreatment) still requires more total treatment time than simply treating all patients for 8 weeks initially.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "No baseline host or viral factors (age, gender, BMI, IFNL4 genotype, transaminases, baseline viral load) predicted treatment outcome in 4-week therapy. All participants achieved initial virological response (\u22651 log10 decline), but time to viral suppression did not predict cure. Day 7 viral suppression showed marginal predictive value (p=0.054, 90% sensitivity), but by day 10 this was lost (p=1.00, 50% sensitivity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64, C66 describe analyses seeking predictors of treatment success. The negative findings are well-documented with appropriate statistical tests. The exploratory analysis of day 7 viral load is interesting but underpowered (small sample sizes, wide confidence intervals). The loss of predictive value by day 10 suggests early viral kinetics alone are insufficient for guiding ultra-short therapy. The study acknowledges use of two different HCV assays but found no evidence of platform differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "All treatment failures occurred during post-treatment follow-up (relapse), not during therapy. Despite intensive twice-weekly sampling, the earliest virological rebound was detected 3 weeks after end of treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe the timing of treatment failures. The finding that all failures were relapses (not on-treatment failures) is important for understanding the mechanism of failure with shortened therapy. The intensive sampling schedule strengthens confidence that early relapses were not missed, though the 3-week delay suggests viral rebound may be gradual.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Whole-genome sequencing revealed discrepancies with laboratory genotyping in 9/50 participants, including 5 genotype 6 subtype misclassifications and one undetected mixed genotype 1a/6a infection. The mixed infection case failed 4-week therapy but was cured with retreatment. No evidence was found for differences in treatment failure rates between genotypes or subtypes, though numbers were small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 describe viral genomic characterization. The discrepancies between laboratory and WGS-based genotyping highlight challenges in genotype 6 classification and the value of WGS. The detection of a mixed infection that was missed by standard genotyping is clinically important. Statistical comparisons between subtypes (C76-C77) are underpowered with wide confidence intervals and non-significant p-values, limiting conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C94",
+      "C122",
+      "C138"
+    ],
+    "result": "Baseline resistance-associated substitutions (RAS) were common: SOF RAS 159F (1 patient) and 237G (6 patients); DCV RAS 31M (35 patients), 30R (12 patients), and others. The most prevalent DCV RAS (31M) was found in 9/13 treatment failures but also in 13/21 4-week cures and 13/17 8-week cures. No significant association was found between number or type of baseline RAS and treatment outcome (p=0.12 for combined RAS count).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C88, C94, C122, C138 present comprehensive RAS analysis. The high prevalence of putative RAS (particularly 31M in genotype 1a and 6a) is notable, but the lack of association with treatment outcome is well-documented. The finding that 31M was present in both failures and cures undermines its clinical significance as a resistance marker. Statistical analyses are appropriate, though sample sizes limit power. The authors appropriately note this is the largest G6 RAS assessment with SOF/DCV (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C124"
+    ],
+    "result": "Viral genome sequencing at treatment failure showed no new infections and no new SOF RAS. Only one novel DCV RAS (28T) emerged in one participant as a minority variant (25-30% of reads), but this individual was cured with standard retreatment, suggesting the RAS was not clinically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92, C124 describe viral evolution during treatment failure. The absence of new SOF RAS and the successful retreatment despite emergence of DCV 28T RAS are reassuring findings for clinical practice. The low frequency of the emergent RAS (minority variant) and successful retreatment provide evidence against clinically significant resistance development. However, the sample size is small (13 failures, only 1 with new RAS).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C127",
+      "C128",
+      "C140"
+    ],
+    "result": "Pharmacokinetic analysis in 37 participants found no significant difference in SOF or DCV exposure (AUClast) between 4-week cures and failures. However, GS-331007 (inactive SOF metabolite) exposure was significantly higher in treatment failures (p=0.023), a counterintuitive finding given that higher GS-331007 levels have been associated with better outcomes in other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97, C127-C128, C140 present pharmacokinetic findings. The lack of association between SOF/DCV exposure and outcome is clearly stated, but the unexpected finding of higher GS-331007 in failures (C97, C128) is puzzling and contradicts prior literature (C129-C130). The authors acknowledge this is surprising but offer no clear explanation. The PK analysis has limitations acknowledged in the manuscript (non-compartmental analysis may not adequately account for drug accumulation). Sample sizes are small (n=15 cures, n=8 failures), limiting statistical power. The conclusion that drug levels don't affect outcome (C140) may be premature given these uncertainties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "SOF/DCV was well-tolerated with no treatment discontinuations due to adverse effects. Thirty-five percent of participants reported non-serious adverse reactions (most commonly insomnia, gastritis, dizziness), consistent with known SOF/DCV side effects. No serious adverse events or grade 3/4 adverse events occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 describe safety outcomes. The safety profile is consistent with known SOF/DCV tolerability, with appropriate citation to product characteristics (C100). The absence of serious adverse events in this small study is reassuring but expected given the short treatment duration and selected population (mild liver disease, no comorbidities). Safety reporting appears complete and appropriate for a pilot study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C65",
+      "C66",
+      "C134",
+      "C135"
+    ],
+    "result": "Two different HCV RNA assays were used during the study: Abbott Architect (LLOQ=12 IU/ml) for the first 41 participants and COBAS AmpliPrep/COBAS TaqMan (LLOQ=15 IU/ml) subsequently. While these assays have been shown to yield different results, no evidence of difference in viral kinetics by platform was found in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C32, C65-C66, C134-C135 describe a methodological limitation. The use of two different assays during the study is problematic, as acknowledged by the authors with citation to Maasoumy et al., 2016 showing these assays can give discrepant results. While the authors report finding no evidence of platform differences (C66), the study was underpowered to detect such differences (small numbers in each platform group). This introduces uncertainty into viral kinetics analyses and threshold determinations, though the overall conclusions about treatment efficacy are unlikely to be affected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study has important limitations: it was powered for overall cure rate rather than outcomes by treatment duration; the cohort excluded patients with HIV, hepatitis B, renal impairment, and active injection drug use; and the intensive visit schedule may not reflect real-world adherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 acknowledge key study limitations. These are appropriately recognized by the authors and are important for interpreting the results. The exclusion of key populations (HIV coinfection, active drug users) limits generalizability. The sample size calculation (C29-C30) was based on overall cure rate, not stratified by treatment duration, which explains why the 8-week arm results (n=17) have wide confidence intervals. These limitations are clearly stated and do not undermine the main findings but do limit their applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C139"
+    ],
+    "result": "The authors conclude that shortened SOF/DCV therapy cures a significant proportion of patients without compromising retreatment, and the study supports shortening therapy from 12 to 8 weeks in patients with mild liver disease. They conclude that routine RAS sequencing remains unnecessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137, C139 present the main conclusions. The conclusion about 8-week therapy (C137) is well-supported by the 100% cure rate in that arm, though the small sample size (n=17) warrants caution. The conclusion that routine RAS sequencing is unnecessary (C139) is supported by the lack of association between baseline RAS and outcomes (C94, C122, C138). However, the broader conclusion about shortened therapy (C136) should be qualified: 4-week therapy had unacceptably low cure rates, and the overall strategy (shortened + retreatment) may not be more efficient than treating all patients for 8 weeks initially.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes context: WHO has called for research on shortened DAA therapy; SOF/DCV costs $2417-2472 for 12 weeks in Vietnam with limited access; there is no prior data on response-guided therapy <8 weeks with SOF/DCV; and Vietnam has high prevalence of genetically diverse genotype 6 HCV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C14 provide background context with appropriate citations. These claims establish the rationale for the study: high cost limiting access in Vietnam (C2-C3), WHO call for research (C1), lack of data on ultra-short SOF/DCV therapy (C10), and unique characteristics of the Vietnamese HCV epidemic (C12-C14). All claims are supported by citations to relevant sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C25",
+      "C106",
+      "C107"
+    ],
+    "result": "Prior literature shows that shortened DAA therapy without response-guided approach has poor cure rates (\u22644 weeks: 63%, 6 weeks: 81%, 8 weeks: 94%). Response-guided therapy was used in the interferon era, and recent studies have shown high cure rates with ultra-short DAA therapy when guided by early viral response, including 100% cure with 3-week triple therapy in genotype 1b when day 2 viral load <500 IU/ml.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9, C25, C106-C107 summarize prior literature with appropriate citations (Jones et al., 2019; Fried et al., 2011; Lau et al., 2016; Cooke and Pett, 2021). These claims establish the scientific rationale for the study design, particularly the choice of the 500 IU/ml day 2 threshold based on Lau et al., 2016. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The IFNL4 polymorphism rs368234815 (\u0394G/TT) controls IFNL4 protein generation and is associated with impaired HCV clearance and inferior responses to interferon-based and SOF-based treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe the IFNL4 polymorphism with appropriate citations (Prokunina-Olsson et al., 2013; Franco et al., 2014; Ansari et al., 2017, 2019). This provides rationale for including IFNL4 genotyping in the study. However, the study found no association between IFNL4 genotype and treatment outcome (C59), suggesting this host factor may be less important with DAA therapy than with interferon-based treatment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The discussion notes that NS5A/NS5B inhibitors rapidly eliminate HCV but second-phase decline may be enhanced by protease inhibitors. Key differences from the Lau et al. study include the use of dual therapy (no protease inhibitor) and different genotype distribution (only 23% genotype 1b vs. 100% in Lau study). Genotype 1b is associated with favorable outcomes with some DAAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide mechanistic context for the lower cure rates observed compared to the Lau et al. study. The explanation that protease inhibitors enhance second-phase viral decline (C108-C109, citing Perelson and Guedj, 2015) is plausible and supported. The comparison with Lau et al. (C110) is accurate, and the note about genotype 1b having favorable outcomes (C111, citing Ferenci et al., 2014; Kohli et al., 2015) provides a reasonable explanation for the different results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "With standard duration therapy, SVR12 is not impacted by time to viral suppression or detectable virus at end of treatment. This also appears true for shortened therapy, as one failure had undetectable virus by day 7 and five cures only suppressed virus at end of treatment. Day 7 viral load thresholds are being evaluated in an ongoing trial in Vietnam.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 discuss the relationship between viral kinetics and treatment outcome. The citations to Kowdley et al., 2016 and Pal et al., 2020 (C112-C113) support the statements about standard therapy. The examples from the current study (C114-C115) illustrate that early viral suppression is not perfectly predictive of cure with ultra-short therapy. The reference to an ongoing trial (C116, McCabe et al., 2020) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Prior caution about 8-week SOF/DCV comes from a 2015 HIV-coinfection study where 7/10 failures received half-dose DCV due to drug interactions, a dose adjustment later deemed unnecessary. More recent studies support >90% cure with 8-week NS5A/NS5B combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 contextualize the 8-week therapy results. The discussion of the Wyles et al., 2015 study (C117-C119) appropriately notes the dosing issue that may have compromised that study's results. The citations to more recent supportive studies (C120: Yakoot et al., 2017; El-Shabrawi et al., 2018; Boyle et al., 2020) strengthen the case for 8-week therapy. This provides appropriate context for interpreting the 100% cure rate with 8-week therapy in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C125",
+      "C126",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors claim this is the largest assessment of genotype 6 RAS with SOF/DCV therapy and the first assessment of DAA drug levels' impact on shortened therapy efficacy. GS-331007 is the main circulating SOF metabolite, and SOF/GS-331007 AUCs are dose-proportional; higher GS-331007 levels have been associated with better cure rates with SOF/ribavirin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C125-C126, C129-C130 provide context for the novelty of the study. The claim about being the largest G6 RAS assessment (C121) and first PK assessment in shortened therapy (C125) appear to be based on the authors' knowledge of the literature and are plausible given the limited data on genotype 6 and ultra-short therapy. The statements about GS-331007 (C126, C129-C130) are supported by citations to Smolders et al., 2019 and Ahmed et al., 2019, providing context for why the finding of higher GS-331007 in failures (C97, C128) is unexpected.",
+    "result_type": "MINOR"
+  }
+]

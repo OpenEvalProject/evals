@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C46",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors established the solvent-induced denaturation landscape of the HCT116 proteome using increasing concentrations of AEA (0-21%). They quantified ~8500 proteins per replicate and successfully fit high-quality melting curves (R\u00b2 > 0.8, plateau < 0.3) to 6623-6879 proteins (~78% of detected proteome), with a median CM of 10.2% AEA and high reproducibility between replicates (Pearson r = 0.9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8-C13 provide converging experimental evidence from SDS-PAGE, BCA assays, and MS-based quantification showing that AEA induces proteome-wide denaturation. The curve-fitting methodology (C46, C61, C62) is clearly described and adapted from established TPP protocols. The quantitative metrics are directly supported by data in Figure 1 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C65",
+      "C67"
+    ],
+    "result": "SPP successfully identified known drug targets through compound-dependent CM shifts. Treatment with SCIO-469 (100 \u03bcM) shifted CM for MAPK14, MAPK12, and MAPK13; Alisertib (25 \u03bcM) shifted AURKA but not AURKB; and MK2206 (25 \u03bcM) shifted both AKT1 and AKT2. High-quality curves were generated using just 8 AEA concentrations with reproducible CM values between replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C14-C20 demonstrate SPP's capability for target identification with multiple lines of evidence: MS-based melting curves (Figure 2B-D), western blot validation (C16, Figure 2E), and known drug-target relationships from literature. The reproducibility data (C67) and efficiency improvement using 8 concentrations (C20) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C64"
+    ],
+    "result": "Solvent-PISA serves as a reliable surrogate for SPP by pooling soluble fractions across AEA concentrations and comparing compound vs. vehicle-treated samples. This approach requires only 2 TMTpro channels per comparison (vs. 16 for SPP), identified known targets of SCIO-469 (MAPK14, MAPK12) and vorinostat (HDAC1, HDAC2), and showed >97.5% of data with CV <15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C21-C22, C24-C26 demonstrate solvent-PISA's validity through identification of known targets (Figure 3B-C), high data quality (C24), and agreement with thermal-PISA (C25-C26). The statistical methods are clearly described (C64). The efficiency gain is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "SCIO-469 inhibits MAPK9/JNK2 as confirmed by in vitro kinase assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is directly supported by kinase assay data in Figure 3\u2014figure supplement 1B showing significant inhibition of MAPK9/JNK2 activity by SCIO-469. This represents validation of a novel off-target identified by solvent-PISA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "SPP and TPP are complementary methods because some proteins are altered exclusively in one method but not the other. MAPK8 and CDK19 were altered only in solvent-PISA with SCIO-469, while HDAC6 was altered only in thermal-PISA with vorinostat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by data in Figure 3D-E showing method-specific hits. This demonstrates non-redundancy between approaches, though the biological significance of method-specific hits requires further validation. The complementarity argument is logical and data-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The selection of AEA concentration range profoundly impacts fold change values in solvent-PISA, with progressively higher and smaller windows yielding larger fold changes. AURKA showed maximum response at the lowest Alisertib dose (5 \u03bcM), while AKT1/AKT2 showed dose-dependent responses to MK2206. CHEK1 was only detected as a hit in the smallest window (14-19% AEA) at 25 \u03bcM MK2206 but showed significant change at 125 \u03bcM in the 9-19% window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are well-supported by experimental data in Figure 4 and supplements. The window selection effect (C32-C33) is demonstrated with both measured and calculated values showing agreement. The CHEK1 example (C34-C36) illustrates practical implications of window selection, though CHEK1 as a true MK2206 target remains uncertain and requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Combining SPP and TPP increases proteome coverage beyond either method alone. While each method quantified ~8500 proteins, 25-30% failed curve quality filters. Of 7667 proteins quantified by both methods, ~5000 had high-quality curves in each approach, but 620 proteins had good curves only in SPP and 850 only in TPP. Combined, over 6400 proteins received high-quality curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C37-C44 demonstrate the complementarity of SPP and TPP with clear quantitative data (Figure 5). The numbers are internally consistent and show meaningful non-overlap between methods. This represents a practical advance for proteome-wide target engagement studies, though the specific numbers will vary with experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "SPP and solvent-PISA represent a significant advancement compared to the previous iteration of solvent-induced precipitation (SIP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the comprehensive demonstration of proteome-wide analysis capabilities (C9-C13, C46) not present in the original SIP method (Zhang et al., 2020). The advancement includes TMT multiplexing, curve fitting, and high-throughput target identification across thousands of proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "SPP encounters challenges in fitting melting curves similar to TPP, but solvent-PISA can partially overcome poor curve quality. MAPK14 and AURKA shifted CM sufficiently to fail curve quality filters in SPP but were recovered as significant hits in solvent-PISA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by the observation that strong binders can shift outside the measurement window (described in Discussion) and by data showing MAPK14 and AURKA recovery in solvent-PISA (Figure 3B, Figure 4\u2014figure supplement 1B). This represents an important practical consideration for method selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "SPP and solvent-PISA are not amenable to cell-based approaches like CETSA because the plasma membrane will likely impede AEA access to the cellular proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a logical inference based on the chemical properties of AEA and membrane barrier function. While not experimentally tested in this manuscript, the reasoning is sound and represents an important limitation compared to thermal methods. This is appropriately presented as a limitation rather than a tested result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Future improvements could include utilizing additional denaturation methods (salt, acid, other solvents, chemical denaturants), altering proteome extraction conditions, and maximizing high-quality curve coverage. SPP could serve as a suitable alternative for those unable to perform TPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C53 are speculative proposals for future work supported by citations to relevant literature but not experimentally validated in this manuscript. While the suggestions are reasonable based on the demonstrated complementarity of SPP and TPP, they remain hypotheses requiring testing. These represent future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The disparity in median CM between experiments (12% vs. 10%) stems from day-to-day variation in AEA stock solution preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is a speculative explanation for observed CM differences. While the authors note high reproducibility within experiments using identical AEA stocks (C67), the proposed cause of between-experiment variation is not experimentally validated. Alternative explanations (batch effects, lysate preparation differences) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Proteins with reduced quality curves in SPP are enriched for Gene Ontology terms including plasma membrane, extracellular region, and lysosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is directly supported by GO enrichment analysis shown in Figure 1\u2014figure supplement 3B. This suggests that certain protein classes are less amenable to SPP analysis, which has practical implications for method selection and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Recent advances in mass spectrometry have enabled quantitative proteomics to become a powerful tool in drug discovery for proteome-wide target engagement studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general contextual statement supported by established scientific knowledge and the extensive literature cited in the Introduction. This provides appropriate background for the manuscript's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Solvent-induced precipitation can be influenced by physical association with ligands, making proteins more or less susceptible to solvent-induced denaturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the fundamental principle underlying SPP and solvent-PISA, supported by compound-dependent CM shifts demonstrated throughout the manuscript (Figures 2-4) and building on Zhang et al., 2020. This principle is central to the method's utility for target engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "The manuscript describes detailed experimental methods including cell culture conditions, proteome extraction protocols, SPP/TPP procedures, data analysis using adapted TPP R package, and statistical criteria for identifying significant hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60, C63 provide methodological details that are clearly stated and appropriately referenced. The adaptation of the TPP R package (C60) is described with specific parameter modifications. These methods appear sound and reproducible, though some details (e.g., the specific bug fix in C60) could benefit from more elaboration.",
+    "result_type": "MINOR"
+  }
+]

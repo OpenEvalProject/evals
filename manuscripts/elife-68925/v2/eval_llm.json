@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes background knowledge about somite development, including that somites are periodically formed from the presomitic mesoderm (PSM), give rise to the vertebral column and various tissues (skeletal muscle, dermis, cartilage, bone), and are controlled by the segmentation clock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12, and C13 represent established developmental biology knowledge supported by appropriate citations. These background claims provide context for the study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior 2D monolayer culture systems can recapitulate aspects of PM development including species-characteristic oscillations, but do not exhibit somite formation or final stages of somite development and vertebra formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C17 accurately describe limitations of prior 2D culture systems based on appropriate citations. This establishes the gap in existing methods that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The differentiation protocol generates organoids that progress through expected developmental stages from pluripotent spheroids resembling cavity-stage epiblast embryos, through NMp/primitive streak fate (T/BRA and SOX2 co-expression), to PSM (TBX6, MSGN1, HES7 expression from days 2-4), and finally to somite fate (day 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 are well-supported by immunostaining (Figure 1B) and qPCR data (Figure 1C) showing sequential activation of appropriate marker genes. The temporal progression matches expected developmental stages, though the inference about developmental trajectory (C26) relies on the assumption that marker expression patterns accurately reflect developmental state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In the primary screen, all organoids treated with FGF or WNT inhibitors expressed PAX3 within 24 hr, but organoids initiated from 500 cells showed more consistent somite-like structures (radial arrangement of PAX3+ columnar cells with apical F-ACTIN) compared to 1000-cell organoids, which displayed more PAX3-negative/SOX2-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by immunostaining and quantification data in Figure 2. The morphological characterization of somite-like structures (C30) is clearly defined. However, the scoring criteria for somite-like structures are not fully detailed in the primary screen section, which could affect reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Treatment for 48 hr with signaling pathway modulators decreased PAX3 expression and organoid diameter compared to 24 hr treatment, suggesting that prolonged inhibition of WNT/FGF has detrimental effects and that 24 hr treatment is sufficient to induce somite fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by quantification data in Figure 2C-D. The inference about detrimental effects (C35) is reasonable given the known mitogenic roles of WNT/FGF, though direct proliferation or survival assays were not performed. The conclusion about sufficiency (C36) is appropriate based on the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Somite fate can be broadly induced across various WNT/FGF inhibitor treatments, but the number of somite-like structures does not necessarily correlate with average PAX3 expression levels, suggesting that marker gene expression alone is insufficient for predicting morphologically complex phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by data in Figure 3C-E showing discordance between PAX3 levels and somite-like structure counts. This is an important methodological insight, though the lack of correlation could also reflect limitations in the quantification methods or biological heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The optimized protocol (CL+FGF for 24 hr followed by basal media for 24 hr) reproducibly yields the highest number of somite-like structures with low variability (CV=11.1%) across multiple hiPSC lines, demonstrating that simply removing FGF/WNT agonists and BMP inhibitor is sufficient for somite induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are well-supported by quantification data in Figure 3E and supplementary figures showing reproducibility across replicates and cell lines. The coefficient of variation calculation (C42) provides quantitative evidence of reproducibility. The surprising finding that the control condition performed best (C40-C41) is counterintuitive but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Single-cell RNA-seq analysis of 15,558 cells across four timepoints revealed that cells cluster predominantly by collection timepoint, with cells at each timepoint exhibiting distinct transcriptional states but similar profiles within each timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by scRNA-seq clustering analysis shown in Figure 4A. The observation that major clusters correspond to timepoints (C45) and the inference about transcriptional differences (C46) are appropriate. However, the claim about uniformity within timepoints (C47) may oversimplify the heterogeneity visible in the UMAP plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "scRNA-seq analysis shows temporal progression of marker gene expression: day 1 cells express NMp/primitive streak markers (SOX2, T/BRA, MIXL1, NODAL), day 2 cells express PSM markers (TBX6, MSGN1, WNT3A, RSPO3, HES7, LFNG, DLL1, DLL3), and day 5 cells express somite markers (TCF15, PAX3, FOXC2, MEOX2) including polarity markers (UNCX, TBX18), suggesting faithful recapitulation of somite patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are well-supported by scRNA-seq data in Figure 4C, E, and supplementary figures. The expression patterns match expected developmental progression. The inference about faithful recapitulation of somite patterning (C52) based on polarity marker expression is reasonable but would be strengthened by spatial validation of these markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Two subclusters ('PSM-to-somite' and 'early somite') contain both day 3 and day 5 cells with co-expression of PSM and somite markers, capturing the PSM-to-somite transition. A 'late somite' subcluster enriched for myogenic and sclerotome genes represents more downstream differentiated fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by clustering data in Figure 4A-B and marker gene analysis in Figure 4\u2014figure supplement 4A. The identification of transitional states (C53) and differentiated populations (C54-C55) is appropriate, though the inference about downstream fates (C55) would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The Somitoid system exhibits sequential activation of HOX genes from HOXA1 (day 1) through cervical/thoracic HOX genes (days 2-3) to HOXD9 (day 5), matching expected anterior-posterior patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by scRNA-seq data in Figure 4D and Figure 4\u2014figure supplement 4B showing temporal HOX gene activation patterns. This provides evidence for axial patterning, though the authors later acknowledge (C86) that the system lacks a true AP axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The Somitoid system faithfully recapitulates gene regulatory programs of human PM development, generates mature somite-like cells expressing the full repertoire of known markers, and produces homogeneous organoids containing only PM derivatives without cells of different developmental origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 represent summary conclusions from the scRNA-seq analysis. These are well-supported by the comprehensive marker gene expression data (Figure 4). The claim about homogeneity (C60) is supported by the absence of non-PM markers in the dataset, though this depends on the sensitivity and coverage of the scRNA-seq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Day 5 Somitoids co-express somite markers TCF15 and PAX3 with apical F-ACTIN localization in somite-like structures. These structures are similar in size (median 8892 \u03bcm\u00b2) to Carnegie stage 11 human somites (median 9681 \u03bcm\u00b2) but larger than earlier-stage somites, sharing spatial, molecular, and size features with in vivo counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by whole-mount immunostaining (Figure 5A) and size quantification (Figure 5B). The size comparison with human embryonic somites is appropriate and provides validation. However, the size measurements use rectangular approximations which may introduce some error, and the comparison is limited to area rather than 3D volume.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Day 5 Somitoids can be differentiated into somite derivatives: exposure to SHH agonist and WNT inhibitor induces sclerotome markers (PAX1, SOX9, COL2A1), and treatment with WNT/BMP agonists and SHH inhibitor followed by monolayer culture generates skeletal muscle derivatives expressing MYH1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by qPCR data (Figure 5C) and immunostaining (Figure 5\u2014figure supplement 1). The differentiation protocols are based on established signaling requirements. However, the skeletal muscle differentiation requires dissociation and extended monolayer culture (to day 45), which limits conclusions about the organoid's intrinsic differentiation capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C70",
+      "C71"
+    ],
+    "result": "Initial cell number is a critical parameter for organoid reproducibility, with cell numbers above a certain threshold (>500 cells) preventing homogeneous somite fate induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C70, C71 are supported by systematic screening data in Figures 2-3 showing that 500-cell organoids consistently outperform 1000-cell organoids. The inference about a threshold effect (C71) is reasonable based on the data, though the exact threshold was not systematically determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Similar to the current findings, gastruloids exhibit higher variability and multiple elongations when initial cell number exceeds a threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 accurately describes prior work on gastruloids with appropriate citations, providing context for the cell number findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Unlike previous protocols using FGF/WNT inhibitors, removal of FGF/WNT agonists and BMP inhibitor performed better in the 3D system. This is consistent with scRNA-seq data showing day 5 somite cells autonomously downregulate WNT target genes (DKK1, AXIN2, WNT3A, RSPO3) and FGF target genes (FGF8, FGF17, SPRY4, DUSP6, IL17RD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by screening data (Figure 3) and scRNA-seq analysis (Figure 4\u2014figure supplements 2 and 5). The comparison with prior protocols is appropriate, and the autonomous downregulation of signaling targets provides mechanistic insight supporting the optimized protocol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Marker gene expression alone is insufficient to optimize culture conditions for morphologically complex organoid models like somitogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a methodological conclusion supported by the observation that PAX3 levels do not correlate with somite-like structure counts (C38). This is an important insight for organoid optimization, though it may be specific to this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "scRNA-seq analysis independently confirmed immunostaining and qRT-PCR results and showed that all major paraxial mesodermal cell types are generated, consistent with PM development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 represent appropriate integration of multiple data types. The scRNA-seq provides unbiased validation of targeted approaches and comprehensive cell type identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Comparison with prior monolayer culture studies shows similar marker gene activation patterns, but neither Diaz-Cuadros et al. nor Matsuda et al. reported somite-like structures. The current study reveals transcriptional heterogeneity within day 5 somitic cells that could not be inferred from bulk data, suggesting transcriptional similarity alone is insufficient to predict morphological features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 provide appropriate comparison with prior work. The assessment of prior studies (C81-C82) appears accurate based on the citations. The conclusion about transcriptional similarity and morphology (C85) is well-supported by the combined screening and scRNA-seq data, representing an important conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The current protocol does not produce an AP axis and therefore does not generate bilaterally symmetric somite-like structures. This is similar to mouse gastruloids/TLS which form grape-like arrangements of somite-like structures, though standard gastruloid/TLS cultures do recapitulate axial organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 represent an honest assessment of system limitations with appropriate comparison to related models. The lack of AP axis (C86) is a significant limitation acknowledged by the authors, though the system still provides valuable insights into somitogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C11",
+      "C90",
+      "C91"
+    ],
+    "result": "The Somitoid system is reproducible, scalable, and provides a platform to study molecular networks and morphogenetic processes of PM development and somite formation, with potential applications for studying congenital diseases like congenital scoliosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C90, C91 represent summary conclusions about the system's utility. Reproducibility and scalability (C11, C90) are well-supported by the data in Figure 3\u2014figure supplement 3. The proposed disease modeling application (C91) is speculative but reasonable given the system's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The hypothesis that a 3D cell culture system may exhibit all stages of PM development including morphogenetic processes associated with somite formation motivated the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 represents the motivating hypothesis for the study, which is reasonable given the limitations of 2D systems. The study successfully validates this hypothesis.",
+    "result_type": "MINOR"
+  }
+]

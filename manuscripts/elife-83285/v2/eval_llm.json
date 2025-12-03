@@ -1,0 +1,451 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Rlc1 phosphorylation at Ser35 is dynamically regulated during the cell cycle, with low levels during CAR assembly, gradual increase during ring maturation, peak levels during CAR contraction, and decrease during septum closure and cell separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are well-supported by Phos-tag SDS-PAGE analysis combined with live fluorescence microscopy of synchronized cells (Figure 1A-B). The experimental approach directly visualizes both phosphorylation status and cellular localization throughout the cell cycle, providing strong evidence for the dynamic regulation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Rlc1 phosphorylation at Ser35 has minimal effect on CAR dynamics during glucose fermentation, with only slight increases in ring constriction time and slight decreases in constriction rate in rlc1-S35A mutants compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by time-lapse microscopy data (Figure 1C) showing statistically significant but small differences between wild-type and rlc1-S35A cells during glucose growth. The phosphomimetic mutant (rlc1-S35D) shows no difference from wild-type, supporting the conclusion that phosphorylation has minimal functional impact under fermentative conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52"
+    ],
+    "result": "Rlc1 phosphorylation at Ser35 becomes essential for cytokinesis and cell growth during respiratory metabolism, with rlc1-S35A mutants showing severe growth defects, multiseptation, increased CAR assembly/contraction time, and reduced ring constriction rate on glycerol medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49, C52 are strongly supported by multiple complementary experiments including growth assays (Figure 1D), time-lapse microscopy (Figure 1F-G), and cell morphology analysis (Figure 1E). The conditional expression experiment (C43, Figure 1\u2014figure supplement 1B) provides additional genetic evidence that the phenotype is specifically due to loss of Ser35 phosphorylation. The phosphomimetic mutant rescues the defects, confirming the importance of phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Myo51 cooperates with Myo2 during CAR assembly, as evidenced by increased CAR assembly time in myo51\u0394 rlc1-S35A double mutants during glycerol growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by genetic interaction data (Figure 1\u2014figure supplement 2) showing that myo51\u0394 specifically increases CAR assembly time in rlc1-S35A cells during glycerol growth. However, the mechanistic basis for this cooperation is not explored, and the result is somewhat tangential to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "During glucose fermentation, Pak1 is the sole kinase responsible for Rlc1 phosphorylation at Ser35, but during respiratory growth, an additional kinase(s) phosphorylates Rlc1 at this site, as evidenced by persistent phosphorylation in pak1-M460G cells grown on glycerol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by Phos-tag analysis (Figure 2A, Figure 2\u2014figure supplement 1A) showing that pak1-M460G eliminates Rlc1 phosphorylation during glucose growth but not during glycerol growth. The analog-sensitive kinase inhibition experiment (C54) provides additional evidence for Pak1's role during fermentation. The observation of persistent phosphorylation during respiration in pak1-M460G cells logically leads to the inference of an additional kinase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Pak2 is the additional kinase that phosphorylates Rlc1 at Ser35 during respiratory growth. Pak2 expression is induced during respiration through a transcriptional mechanism involving Ste11 and Rst2, with repression by glucose cAMP-PKA signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 are well-supported by multiple lines of evidence: (1) genetic analysis showing loss of Rlc1 phosphorylation in pak1-M460G pak2\u0394 double mutants during glycerol growth (C60, Figure 2A); (2) Western blot analysis demonstrating Pak2 expression increases during nitrogen starvation, glycerol growth, and stationary phase (C61, Figure 2\u2014figure supplement 1C); (3) promoter analysis identifying TR boxes (C63, Figure 2C); (4) genetic experiments showing Pak2 expression depends on Ste11 and is repressed by PKA (C64-C65, Figure 2C-D). The regulatory mechanism is thoroughly characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Pak1 localizes to cell poles and the CAR during vegetative growth, while Pak2 localizes exclusively to the CAR and co-localizes with Rlc1 throughout cytokinesis in glycerol-grown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by fluorescence microscopy data (Figure 2E, Figure 2\u2014figure supplement 1E). However, the Pak2 localization was examined using a ppak1+-Pak2-GFP fusion with ~3-fold higher expression than endogenous levels, which may not fully reflect native Pak2 localization. This caveat is acknowledged in the methods but could affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Pak1 and Pak2 redundantly phosphorylate Rlc1 at Ser35 to regulate cytokinesis during respiratory growth, with pak1-M460G pak2\u0394 double mutants showing increased CAR assembly and constriction times, multiseptation, and growth defects on glycerol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by comprehensive phenotypic analysis of single and double mutants (Figure 2F-H, Figure 2\u2014figure supplement 1F). The observation that single mutants show no defects while the double mutant phenocopies rlc1-S35A provides strong evidence for redundancy. The conclusion that Pak1 is solely responsible during fermentation (C74) is well-supported by the pak1-M460G data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For3-mediated actin cable nucleation is crucial for proper cytokinesis and growth during respiration, with for3\u0394 cells showing increased CAR assembly/contraction time, reduced ring constriction rate, multiseptation, cell lysis, and growth defects on glycerol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by time-lapse microscopy (Figure 3\u2014figure supplement 1A-B), cell morphology analysis (Figure 3\u2014figure supplement 1C-D), and growth assays (Figure 3\u2014figure supplement 1E). The data clearly demonstrate that For3 function becomes critical during respiratory growth, establishing the importance of actin cable availability for cytokinesis under these conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Transfer of cells from glucose to glycerol induces sustained Sty1 activation, leading to For3 downregulation through ubiquitin-mediated degradation, reduced actin cable-to-patch ratio, and decreased Cdc42 and For3 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by Western blot analysis (Figure 3A, Figure 3\u2014figure supplement 1F), quantitative image analysis using Ilastik (Figure 3B), and fluorescence microscopy (Figure 3\u2014figure supplement 2A-C). The proteasome mutant experiment (C85) provides mechanistic insight into For3 degradation. The comprehensive characterization of actin cytoskeleton changes during respiratory growth is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Expression of constitutively active for3-DAD, which is resistant to Sty1-mediated downregulation, rescues the cytokinetic defects, multiseptation, and growth defects of rlc1-S35A and pak1-M460G pak2\u0394 cells during glycerol growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 are strongly supported by multiple experiments showing that for3-DAD expression: (1) is not reduced during glycerol growth (C90, Figure 3C); (2) increases actin cable-to-patch ratio (C91, Figure 3\u2014figure supplement 2D); (3) reduces CAR assembly time (C92, Figure 3D-E); and (4) rescues all major phenotypes of rlc1-S35A and pak1-M460G pak2\u0394 mutants (C93-C97, Figure 3D-G). This is a key result demonstrating the functional link between For3 availability and Rlc1 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "CAR assembly and contraction take longer in for3-DAD rlc1-S35A cells than in for3-DAD pak1-M460G pak2\u0394 cells, suggesting that Pak1/2 may regulate additional targets beyond Rlc1 that affect cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by quantitative time-lapse data (Figure 3D). However, the interpretation that Pak1/2 regulates other targets (C99) is speculative and not directly tested. Alternative explanations (e.g., differences in genetic background or incomplete rescue by for3-DAD) are not excluded. This result suggests future directions but does not provide definitive evidence for additional Pak1/2 substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "For3 and PAK-phosphorylated Rlc1 play collaborative and biologically significant roles during cytokinesis when S. pombe grows by respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is a synthesis of the rescue experiments showing that for3-DAD suppresses defects in both rlc1-S35A and pak1-M460G pak2\u0394 mutants. This conclusion is well-supported by the data and represents a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Deletion of Wis1 (MAPKK of the SAPK pathway) increases For3 levels and actin cable-to-patch ratio, and rescues the cytokinetic defects, multiseptation, and growth defects of rlc1-S35A cells during glycerol growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 are supported by Western blot analysis (Figure 4A-B), actin staining (Figure 4\u2014figure supplement 1A), time-lapse microscopy (Figure 4C-D), cell morphology (Figure 4\u2014figure supplement 1B), and growth assays (Figure 4E). The inability to test sty1\u0394 due to its growth defect on glycerol (C103) is a limitation, but the wis1\u0394 data provide strong support for the role of SAPK signaling in linking For3 availability to Rlc1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "During glucose fermentation where basal Sty1 activity is low, lack of Rlc1 phosphorylation has limited effect on CAR dynamics, but deletion of Pyp1 (which increases Sty1 activity and reduces For3 levels) exacerbates cytokinetic defects in rlc1-S35A cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by comparing CAR dynamics during glucose vs. glycerol growth (Figure 1C, Figure 4B) and by the pyp1\u0394 rlc1-S35A genetic interaction data (Figure 4F-G, Figure 4\u2014figure supplement 1D). This result demonstrates that the requirement for Rlc1 phosphorylation is dependent on SAPK activity level, providing mechanistic insight into the metabolic regulation of cytokinesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The SAPK-For3 and PAK-Rlc1 pathways act independently and are both critical for successful cytokinesis during respiration, as evidenced by normal For3 degradation in rlc1-S35A cells and unchanged Rlc1 phosphorylation in for3-DAD cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by Western blot data showing that For3 degradation occurs normally in rlc1-S35A cells (Figure 4A) and that for3-DAD expression does not affect Rlc1 phosphorylation (Figure 4\u2014figure supplement 1E). These experiments effectively rule out a simple linear pathway and support the conclusion of independent parallel pathways. This is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The hypomorphic myosin II allele myo2-E1, which shows reduced ATPase activity and actin-filament binding, exhibits growth defects on glycerol and increased CAR assembly/constriction times with slower constriction rate and multiseptation during respiratory growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by growth assays (Figure 5A), time-lapse microscopy (Figure 5B-C), and cell morphology analysis (Figure 5\u2014figure supplement 1A). The phenotypic similarity between myo2-E1 and rlc1-S35A mutants during respiratory growth supports the conclusion that Rlc1 phosphorylation regulates Myo2 function. However, the specificity of the myo2-E1 allele and potential off-target effects are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The myp2\u0394 mutant shows similar CAR closure delay in glucose and glycerol, but accumulates multiseptated cells during glycerol growth, with the phenotype exacerbated when combined with rlc1-S35A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by time-lapse microscopy (Figure 5\u2014figure supplement 2A) and cell morphology analysis (Figure 5\u2014figure supplement 2B). These results suggest that Myp2 contributes to cytokinesis during respiration but is not the primary target of Rlc1 phosphorylation, supporting the focus on Myo2 as the main regulated myosin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Expression of for3-DAD in myo2-E1 cells restores actin cable organization, suppresses cytokinetic defects and multiseptation, and rescues growth on glycerol, demonstrating that regulation of Myo2 function by Rlc1 phosphorylation is critical during respiration due to reduced actin filament nucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 are supported by actin staining (Figure 5\u2014figure supplement 1B), time-lapse microscopy (Figure 5D-E), cell morphology (Figure 5\u2014figure supplement 1C), and growth assays (Figure 5F). This is a key result demonstrating that the requirement for Rlc1 phosphorylation during respiration is due to reduced For3-mediated actin nucleation. The rescue of myo2-E1 defects by for3-DAD provides strong support for this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Treatment with the antioxidant GSH counteracts oxidative stress effects in rlc1-S35A and myo2-E1 cells during glycerol growth, recovering For3 levels, actin cable-to-patch ratio, CAR dynamics, septation, and growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 are supported by Western blot analysis (Figure 6A), actin staining (Figure 6\u2014figure supplement 1A), time-lapse microscopy (Figure 6B-C), cell morphology (Figure 6\u2014figure supplement 1B), and growth assays (Figure 6D). The GSH rescue experiments provide strong evidence that respiration-induced oxidative stress is the underlying cause of For3 downregulation and the requirement for Rlc1 phosphorylation. This is a critical result linking metabolism to cytokinesis regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Normal growth in the presence of GSH depends on For3, and GSH has no significant effect in wis1\u0394 cells, demonstrating that respiration-induced oxidative stress reduces actin cable nucleation by formins and renders cytokinesis dependent on Rlc1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are supported by growth assays showing that for3\u0394 cells do not benefit from GSH treatment (Figure 6D) and that wis1\u0394 cells are unaffected by GSH (Figure 6B-D). These controls effectively demonstrate that GSH acts through the SAPK-For3 pathway and that this pathway is the primary reason for the requirement of Rlc1 phosphorylation during respiration. This completes the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Background on RLC phosphorylation in animal cells and other organisms: RLC phosphorylation is critical for NMII activation in animal cells, essential in Drosophila, but not essential in Dictyostelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C11, C142-C146 are statements of established knowledge supported by citations to prior literature. These provide important context for the study but are not novel findings. The citations appear appropriate and the statements are consistent with the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on S. pombe cytokinesis and prior work on Rlc1 phosphorylation: S. pombe uses a CAR with Myo2 and Myp2, formins Cdc12 and For3 nucleate actin, Sty1 regulates For3 levels, and prior studies showed conflicting results on the role of Rlc1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12-C29 are statements of prior work supported by citations. These establish the knowledge gap that the study addresses. The statement that the biological significance of Rlc1 phosphorylation remains unclear (C29) accurately reflects the conflicting prior results and motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "S. pombe uses aerobic fermentation when glucose is available, and all prior studies of fission yeast cytokinesis have been performed in glucose-fermenting cells, making respiratory carbohydrate metabolism a key determinant of Rlc1 phosphorylation's biological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 are supported by citation (C147) and represent an important insight of the study (C148-C149). The observation that all prior work was done under fermentative conditions explains the conflicting results and highlights the novelty of examining cytokinesis during respiratory growth. This is a key conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "Speculation that Pak2 may boost PAK activity by acting on multiple targets and that its functional redundancy with Pak1 might be limited to cytokinesis-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C151 are speculative statements not directly tested in the study. While the speculation is reasonable based on Pak2's CAR-specific localization and known Pak1 substrates, no experimental evidence is provided to support or refute these hypotheses. These represent potential future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Background on actin sources for CAR assembly in animal cells and fission yeast, and speculation that enhanced For3-mediated actin nucleation may alleviate myo2-E1 defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are statements of established knowledge supported by citations. Claim C155 is a reasonable speculation based on the rescue data, but the mechanism is not directly tested. The speculation is plausible given that myo2-E1 has reduced actin-binding and that for3-DAD increases actin filament availability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The findings provide an example of how carbohydrate metabolism dictates the relative importance of different actin filament sources for CAR dynamics during cell division, addressing the open question of how metabolic changes trigger actin cytoskeleton remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 place the study's findings in a broader context of metabolic regulation of the cytoskeleton. The statement that this is an open question (C157) is supported by citation. The conclusion that the findings provide a remarkable example (C158) is justified by the comprehensive demonstration of metabolic regulation of cytokinesis through coordinated control of myosin activity and actin availability.",
+    "result_type": "MAJOR"
+  }
+]

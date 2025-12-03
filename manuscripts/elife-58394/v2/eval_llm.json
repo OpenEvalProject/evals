@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed a new class of 'regulated on-off-slide models' that systematically investigate nucleosome dynamics at promoters by integrating assembly, disassembly, and sliding processes across different activation states. They investigated 68,145 models with up to seven fitted parameters using four different experimental datasets, finding only very few models in agreement with all data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe the modeling framework and C34-C35 report the systematic analysis results. The hierarchical approach (C69) and comprehensive scope (C70) are well-documented, and the integration of four datasets (C34) with stringent selection criteria yielding only 7 satisfactory models (C3, C35) demonstrates methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Seven satisfactory models were identified, all involving sliding processes and the central role of the N-2 nucleosome, with regulation occurring through modulation of assembly rather than disassembly processes. All models had one regulated process (global assembly or assembly at N-2) and four constitutive processes, with assembly rates decreasing from repressed to activated states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C47-C51 collectively describe the key properties of the seven satisfactory models. The systematic analysis (C70) with staged fitting (C34-C36) and multiple independent datasets provides strong support. The finding that all models involve sliding (C4, C40, C50-C51) and regulate assembly rather than disassembly (C6, C48-C49) is consistently supported across multiple stages of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C40"
+    ],
+    "result": "Equilibrium models and models without sliding could not simultaneously fit all four datasets, demonstrating that sliding is essential for explaining PHO5 promoter dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C40 are negative results that constrain the model space. The systematic exclusion of these model types through staged fitting with likelihood thresholds provides clear evidence. This is further supported by the fact that all seven satisfactory models include sliding processes (C4, C50-C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C93"
+    ],
+    "result": "The ratio of effective chromatin closing to opening rates was 2.9-3.5 for all satisfactory models, consistent with experimental observations that chromatin closing is faster than opening. Assembly-regulated models showed closing/opening ratios of 1.5-4.5 while disassembly-regulated models showed 0.25-0.65, supporting assembly regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 and C93 provide convergent evidence from model predictions and experimental data. The consistency between model predictions (C61-C63) and independent experimental observations (C64-C66) that were not used in fitting provides strong validation. The contrasting ratios between assembly- and disassembly-regulated models (C62-C63) further support the selection of assembly-regulated models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C44",
+      "C45"
+    ],
+    "result": "Restriction enzyme accessibility experiments confirmed that sticky N-3 mutants show reduced chromatin opening at both N-2 and N-3 positions compared to wild-type, with models predicting increased sliding from N-3 to N-2 and decreased sliding from N-2 to N-3 in these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 report experimental results while C44-C45 describe model predictions. The experimental validation (C101) using restriction enzyme accessibility provides independent confirmation of the sticky N-3 effect, and the model predictions (C44-C45) are consistent with the observed phenotype. The integration of this data in stage 2 successfully constrained the model space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Configuration-specific processes are helpful but not necessary to achieve agreement with the data, as demonstrated by two satisfactory models (8166 and 27,443) that lack such processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are directly supported by the existence of models 8166 and 27,443 among the seven satisfactory models. This demonstrates that while configuration-specific processes can improve fit (5 of 7 models use them), the essential coupling between nucleosome positions can be achieved through sliding processes alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C7",
+      "C8"
+    ],
+    "result": "The identification of essential directional sliding and the central role of N-2 matched expectations from earlier studies, but the finding that only regulated assembly (not disassembly) was compatible with data was surprising and challenges common interpretations, suggesting chromatin opening by binding competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 acknowledge both expected and unexpected findings, while C7-C8 interpret the implications. The systematic analysis provides strong support for the assembly regulation finding (C3-C6, C48-C49, C61-C63), and the authors appropriately note this contradicts common expectations (C73, C75-C76). However, the mechanistic interpretation of binding competition (C8, C86-C88) remains speculative and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C67"
+    ],
+    "result": "The models make testable predictions including: (1) similar Flag amounts between N-3 and N-1 for six of seven models, (2) different behavior for N-3/N-2 ratios across models, and (3) probability maxima for certain configurations during chromatin opening transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 and C67 describe predictions from the fitted models. These are valid model outputs that can guide future experiments (C90). The predictions are internally consistent with the model structures and parameters, though they remain untested experimentally. The specificity of the predictions (C91-C92) could help discriminate between the seven satisfactory models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C18"
+    ],
+    "result": "The PHO5 promoter N-1 to N-3 subsystem provides unique single-molecule configuration data from electron microscopy, and the stochastic nature of nucleosome configuration variation validates the use of Markov models for this system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C18 establish the experimental foundation and methodological justification. The availability of single-molecule data (C30, C18) is documented by citations, the N-1 to N-3 subsystem has been validated (C31), and the stochastic nature justifying Markov models (C32-C33) is supported by citation. This provides solid foundation for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors obtained sticky N-3 mutant strains from Small et al. 2014 but did not use their published DNA methylation data due to concerns about saturation, contradictory accessibility patterns, and missing configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 explain the methodological decision to generate new data rather than use published data. The concerns raised (C98-C100) are reasonable given the methodological limitations of the DNA methylation approach at that time, and the decision to use restriction enzyme accessibility (C101) instead is well-justified. This demonstrates appropriate critical evaluation of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C39"
+    ],
+    "result": "After stage 1 using only configuration statistics, 173 models satisfied the likelihood threshold, including models with higher likelihood than the Brown et al. 2013 model and models with one fewer parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C39 report stage 1 results. The systematic approach identified 173 models meeting the threshold (C36), and the comparison with Brown et al. 2013 (C39) demonstrates improvement. This validates the systematic modeling approach and shows that the framework can identify better models than previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The common view of chromatin opening involves transcription factor recruitment of remodelers that mediate nucleosome removal by disassembly, supported by physical interactions, recruitment data, and in vitro assays. However, remodelers also mediate assembly in vitro, and historical evidence for binding competition exists, though early PHO5 studies suggested binding competition was not essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 provide comprehensive literature context. These are well-supported by multiple citations and accurately represent the field's understanding. The authors appropriately distinguish between the prevailing model (C75-C76) and alternative mechanisms (C77-C80), while acknowledging conflicting evidence about binding competition at PHO5 (C81-C85). This provides essential context for interpreting their unexpected finding of assembly regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The downregulation of nucleosome assembly implicated by the models could result from competition between Pho4 binding and nucleosome assembly at the promoter, with specific models potentially corresponding to Pho4 binding at different sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 propose mechanistic interpretations of the modeling results. While these interpretations are plausible and consistent with the model findings (C86-C87) and some prior evidence (C85), they remain speculative (as indicated by evidence_type SPECULATION for C86-C88). The proposed mechanism requires experimental validation through the suggested future experiments (C90-C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The modeling approach allows derivation of effective dynamics underlying different chromatin states and transitions, revealing that seemingly identical 'open' promoter states may correspond to different configuration dynamics or trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe capabilities and implications of the modeling framework. The ability to derive effective dynamics (C95) is demonstrated by the flux analyses and trajectory predictions throughout the results. The speculation about hidden complexity (C96) is a reasonable inference from the model diversity and represents an important conceptual advance in thinking about chromatin states.",
+    "result_type": "MINOR"
+  }
+]

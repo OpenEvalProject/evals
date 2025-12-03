@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Participants demonstrated high proficiency and task engagement in both experiments, with Python participants achieving 99.6% response rate and 85% accuracy, and ScratchJr participants achieving 98.6% response rate and 79% accuracy on code problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide behavioral validation data showing high response rates and accuracy across both experiments. These metrics appropriately confirm participant proficiency and engagement, supporting the validity of the neuroimaging findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The MD system exhibited strong bilateral responses to code problems in both Python and ScratchJr experiments, with responses significantly stronger than both sentence problems and control conditions. Code comprehension showed bilateral distribution while problem content processing was left-lateralized for Python, and ScratchJr showed right-hemisphere bias. The response was broadly distributed across most MD fROIs rather than localized to specific regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C50 collectively demonstrate robust MD system engagement during code comprehension with appropriate statistical support (all p<0.001). The bilateral distribution, generalization across languages, and broad spatial distribution are well-documented through fROI analyses. The distinction between code comprehension (bilateral) and problem content (left-lateralized) is a key methodological strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "While three left frontal MD fROIs showed stronger responses to Python code than to hard working memory tasks, these responses were comparable to average MD responses and likely reflected problem content processing rather than code-specific selectivity. No MD regions showed functional specialization for code comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 appropriately demonstrate the absence of code-selective MD regions through comparison with working memory tasks. The interpretation that elevated responses reflect problem content rather than code comprehension per se is well-justified by the comparable effect sizes and lack of generalization to ScratchJr.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C70",
+      "C72"
+    ],
+    "result": "The language system showed weak and inconsistent responses to code comprehension. Responses to code problems were weaker than sentence problems in both experiments (\u03b2=0.98 and \u03b2=0.99, both p<0.001). While Python code elicited responses stronger than nonword reading (\u03b2=0.78, p<0.001), ScratchJr did not (\u03b2=0.15, p=0.29), indicating that successful code comprehension can proceed without engaging the language network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C70, C72 demonstrate inconsistent language system engagement with appropriate statistical evidence. The differential response to Python vs. ScratchJr, combined with responses weaker than sentence problems, supports the conclusion that the language system is not necessary for code comprehension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Language system responses to Python code were not driven by the presence of semantically transparent identifiers, as shown by no effect of identifier language (English vs. Japanese; \u03b2=0.03, p=0.84), knowledge of Japanese (\u03b2=0.03, p=0.93), or their interaction (\u03b2=0.09, p=0.71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide strong evidence through a well-designed manipulation that language system responses are not driven by semantic transparency of identifiers. The null effects across all comparisons with appropriate statistical tests support this conclusion, though the result is somewhat surprising given prior work on semantic sensitivity (C63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "Spatial correlation analysis revealed that in the language system, activation patterns for code and sentence problems were highly correlated (r=0.69, p<0.001), with correlations higher than code-sentence reading (0.69 vs. 0.65, p<0.001) but lower than within-code correlations (0.69 vs. 0.73, p<0.001). Problem content accounted for substantial response variance (\u0394r=0.04), indicating that Python responses were driven by both problem content and code-specific processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69, C71 use spatial correlation analysis to decompose language system responses into content-related and code-specific components. The statistical comparisons are appropriate and the interpretation that both factors contribute is well-supported, though the effect sizes are relatively small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Whole-brain GSS analysis confirmed that code-responsive regions spatially resembled the MD system in both experiments. For Python, all code-responsive regions also responded to spatial working memory. For ScratchJr, some regions in early visual cortex/ventral stream responded more strongly to code than working memory, likely reflecting low-level visual properties. No non-visual code-responsive regions were found outside the MD system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate convergence between fROI-based and whole-brain analyses, strengthening confidence in the main findings. The identification of visual responses to ScratchJr is appropriately interpreted based on anatomical location and stimulus properties. The conclusion that no code-selective regions exist outside MD is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MD system responses to code problems were robust regardless of problem type (math vs. string manipulation; \u03b2=3.02, p<0.001) and problem structure (sequential, for loops, if statements; \u03b2=3.14, p<0.001), with only a slight reduction for sequential problems (\u03b2=-0.20, p=0.002). This demonstrates that responses were not driven by specific problem types or code structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide important evidence for generalization of MD responses across problem characteristics. The statistical analyses appropriately test for main effects and the small effect size for sequential problems does not undermine the general conclusion of broad engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "No significant correlations were found between programming proficiency (Experiment 1) or in-scanner accuracy (Experiment 2) and MD or language system responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 reports null findings for proficiency correlations. However, the authors appropriately note limited sample sizes (N=24 and N=19) and caution about interpretation. The lack of power analysis and the exploratory nature of this analysis limit confidence in these null results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study employed three key methodological innovations: (1) contrasting code problems with content-matched sentence problems to isolate code comprehension from problem content processing, (2) using functional localization to avoid reverse inference, and (3) performing individual-participant localization to account for inter-individual variability and increase sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe methodological strengths that are well-justified by citations to prior work. The content-matching design is a critical innovation that allows separation of code comprehension from computational thinking. The functional localization approach is appropriately motivated and implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study tested two very different programming languages\u2014Python (text-based, general-purpose) and ScratchJr (visual, designed for children)\u2014both requiring retrieval and combination of program tokens despite different visual features. Brain systems involved in code comprehension should generalize across languages and problem types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 establish the rationale for testing multiple languages to assess generalization. The choice of contrasting languages (text vs. visual) is well-motivated and the prediction about generalization is appropriately grounded in prior work on bilingual language processing (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The findings suggest that earlier reports of left-lateralized code-evoked activity may reflect problem content processing rather than code comprehension per se. The results align with Liu et al. (2020), whose broader contrast (code vs. fake code) would be expected to show left-lateralized MD activity due to problem content processing, which is what they observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 appropriately reinterpret prior findings in light of the current study's distinction between code comprehension and problem content. The comparison with Liu et al. (2020) is well-reasoned and demonstrates how methodological differences affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The MD system's engagement in code comprehension reflects the use of domain-general executive processes including attention, working memory, inhibitory control, planning, and flexible relational reasoning. Code comprehension elicits bilateral MD responses, contrasting with left-lateralized responses to math/logic and with language system responses to linguistic tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 provide appropriate interpretation of MD system engagement, well-grounded in prior literature on MD function (C13, C94). The contrast with math/logic lateralization and language system responses is clearly established by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Huang et al. (2019) reported overlap between programming and spatial reasoning in MD-like regions. The current study found all code-responsive regions outside visual cortex also responded to spatial memory tasks. However, the MD system is not specifically tuned to spatial reasoning, so this overlap likely reflects domain-general processes rather than spatial-specific mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 appropriately contextualize findings relative to prior work and provide a well-reasoned interpretation. The argument that overlap reflects domain-general rather than spatial-specific processes is supported by citations to prior work on MD function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Code-specific knowledge representations must be stored within the MD system since no regions outside MD showed code-specific responses. These representations likely include both language-specific knowledge (e.g., Python vs. Java syntax) and cross-language concepts (e.g., for loops). The MD system can store both short-term task-relevant information and long-term domain-specific representations for late-acquired domains. Code-evoked responses are distributed throughout the MD system rather than concentrated in specific regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 provide reasonable inferences about knowledge representation based on the pattern of results. The argument is well-supported by prior work on MD function (C100, C101) and the distributed nature of responses is clearly demonstrated. However, the inference about storage location (C98) is somewhat speculative given that fMRI cannot directly measure storage vs. processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Three possible explanations for the lack of code-selective MD regions are proposed: (1) selectivity may emerge only with extensive professional experience, (2) code-selective subsets may be detectable only at higher spatial resolution using invasive methods, or (3) the need for flexible problem-solving may prevent crystallization of specialized subnetworks. Additionally, some MD regions may be causally important for code comprehension without showing strong selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately acknowledge limitations and propose testable alternative explanations. The analogy to numerical cognition (C107) provides relevant precedent. These are reasonable speculations that appropriately qualify the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The language system does not respond consistently to code comprehension despite similarities between code and natural language. Some theories predict that abstract syntactic operations should engage language mechanisms for any structured input including code, but prior work on music processing already challenged this view. The current findings extend this by showing that compositional input and hierarchical structure do not necessarily engage language-specific regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 provide appropriate theoretical context and interpretation. The argument builds logically from prior work on music (C111) and is well-supported by the empirical findings. The challenge to domain-general syntax theories is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Studies of math and logic show those domains do not rely on the language system. The current study provides an even stronger test because code problems refer to the same conceptual representations as verbal problems (particularly striking for ScratchJr, which describes physical actions). Yet language regions do not respond to ScratchJr, showing preference for language over other meaningful structured input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 make a strong argument about the language system's selectivity. The point that code and sentence problems share conceptual content (C114) is a key strength of the design. The ScratchJr case (C115-C116) provides particularly compelling evidence against symbolic reference as sufficient for language system engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Python and ScratchJr are high-level languages emphasizing human readability over computational efficiency, with code meant to be read and understood by humans. Despite this communicative similarity to natural language, the communicative nature is not sufficient to recruit the language system, consistent with prior dissociations between language and other communication-related activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 establish the communicative properties of the programming languages and appropriately interpret the lack of language system engagement. The argument is well-supported by citations to prior work on communication and language (C121).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The lack of language system engagement does not mean language and code processing mechanisms are completely different\u2014both systems may have similarly organized circuits for processing combinatorial input or symbol-concept mapping. However, code comprehension does not load on the same neural circuits as language and instead uses domain-general MD circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 provide appropriate nuance to the interpretation, acknowledging possible mechanistic similarities while maintaining the key empirical distinction. This balanced interpretation is well-justified by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The language system may play a role in learning to program even if not required for skilled code comprehension. Educational research on 'coding as another language' approaches shows positive impacts on learning, suggesting the language system and/or semantic system might be involved in learning to code, especially in children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C127 propose an interesting hypothesis about learning vs. skilled performance, supported by educational research (C126). However, this remains speculative as the current study tested proficient programmers and did not examine learning. The distinction between learning and skilled performance is important but requires direct empirical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study has scope limitations: stimuli were short with basic control flow elements, and focused on code comprehension rather than generation, editing, or debugging. More complex code might recruit additional or different brain regions, similar to how narrative processing recruits systems beyond sentence processing. Expert programmers might show different neural organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 appropriately acknowledge limitations and propose directions for future research. The analogy to narrative processing (C130) is well-motivated by prior work. These limitations are clearly stated and do not undermine the main findings within their scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Code comprehension consistently recruits the MD system across multiple cognitive domains but does not consistently engage the language system, despite similarities between programming and natural languages. By isolating neural activity specific to code comprehension, the study advances understanding of programming's cognitive and neural basis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 appropriately summarize the main findings and contribution. The conclusions are well-supported by the comprehensive set of analyses across two experiments with different programming languages.",
+    "result_type": "MAJOR"
+  }
+]

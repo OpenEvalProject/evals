@@ -1,0 +1,516 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors developed a spatially explicit simulation model of fungal life cycles on a 2D toroidal lattice with three fitness components (vegetative growth, spore production, mating fitness) that trade off linearly (wv + wr + wm = 1.0). The model includes parameters for linkage (\u03bb) ranging from monogenic (\u03bb=1) to polygenic (\u03bb=0) inheritance, and simulations required grid sizes \u2265150 to avoid stochastic outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 describe the model structure and parameters in detail. The model design is internally consistent and appropriate for exploring the research questions. The finding that grid sizes <150 had stochastic outcomes (C38) demonstrates appropriate parameter testing, though the lack of shown data is a minor limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In the diploid life cycle scenario, populations remained stable across all tested parameters. With polygenic fitness, nuclei clustered near the middle of fitness space without specialization, while with monogenic fitness, nuclei formed a cluster maximizing spore production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe baseline diploid results shown in Figure 2. These findings are clearly presented and serve as an appropriate control for comparison with dikaryotic scenarios. The qualitative differences between polygenic and monogenic scenarios are visually evident in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the standard dikaryon with di-mon matings, there is strong selection for mating fitness. With polygenic fitness, nuclei exclusively optimize mating fitness leading to continuous population decline. With monogenic fitness, a polymorphism emerges between 'male' nuclei (high mating fitness) and 'female' nuclei (retaining spore production fitness), with parasitic high-mating-fitness female nuclei being purged after ~75 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C53-C56 describe key findings for the standard dikaryon shown in Figures 2 and 3. The emergence of polymorphism in the monogenic case and its dynamics are well-documented. The purging of parasitic nuclei in the female role represents an important emergent property of the model that helps explain population stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In the hypothetical open dikaryon allowing di-di matings, increased selection for mating fitness caused population collapse in most scenarios. With low spore production, populations crashed regardless of other parameters. With increased spore production, populations survived but all nuclei optimized mating fitness. Increased basal growth rate or mutational width allowed persistence under wider parameter ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe open dikaryon results shown in Figure 2 and supplements. The consistent pattern of population collapse or extreme mating fitness specialization across parameter space provides strong evidence for the costs of unrestricted nuclear exchange. The rescue by increased growth or mutation demonstrates parameter sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "In diploid simulations, the monogenic scenario had increased population size compared to polygenic fitness, coincident with increased spore production fitness and decreased vegetative growth and mating fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 describe diploid dynamics shown in Figure 3. The correlation between population size and fitness allocation is clearly demonstrated. This provides important context for understanding how genetic architecture affects evolutionary outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C81"
+    ],
+    "result": "In direct competition experiments, the DMF (dikaryotic male function) allele increased in frequency in most cases, particularly in the male nucleus. With polygenic fitness, DMF spread rapidly. With monogenic fitness, DMF increased in male nuclei (except when recessive), and parasitic high-mating-fitness nuclei in the female role were purged within 250 generations, though purging was less effective when DMF was recessive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C81 describe competition results shown in Figure 4. The spread of DMF despite fitness trade-offs demonstrates its selective advantage. The differential dynamics between male and female roles and the purging of parasites provide mechanistic insight. The recessive case showing reduced purging efficiency is consistent with population genetic theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C93",
+      "C94"
+    ],
+    "result": "Regardless of the shape of the fitness trade-off surface (linear vs. nonlinear), the DMF allele increased in frequency, with nonlinearity only affecting the rate of increase and resulting population size. Nuclei capable of DMF were selected even with strongly nonlinear trade-offs imposing high costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C93-C94 describe robustness tests with nonlinear trade-offs shown in Figure 4\u2014figure supplement 1. The qualitative consistency across trade-off shapes strengthens the main conclusions, though the quantitative effects demonstrate that trade-off shape matters for population viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Across environmental conditions (varying death and growth rates), populations were smaller with increasing death rate in all life cycles, with low growth and high death causing collapse. The open dikaryon was most susceptible to collapse. Generally, diploid had the largest population size, standard dikaryon intermediate, and open dikaryon smallest. The open dikaryon achieved nearly 100% dikaryotic cells while diploid had more monokaryons, showing a negative correlation between population size and proportion dikaryotic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 describe environmental parameter effects shown in Figure 5. The systematic variation across life cycles and environmental conditions is well-documented. The negative correlation between mating success and population size (C71) is a key emergent property, though the authors note this is observational rather than mechanistically explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Below \u03bb=0.75, linkage had little effect on mating fitness. Reducing mating type number had minimal effect. Increasing spore production had mild effects. Increasing growth rate (especially >0.5) decreased nuclei maximizing mating fitness. Increasing dominance (especially >0.5) increased mating fitness specialists, particularly with higher linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe parameter sensitivity analyses shown in Figure 6. The systematic exploration of multiple parameters provides important context for understanding when nuclear selection is most problematic. The threshold effects (e.g., growth rate >0.5, dominance >0.5) suggest nonlinear relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C77"
+    ],
+    "result": "The dikaryotic state leads to a higher proportion of fertilized monokaryons and increased proportion of individuals capable of sexual reproduction (particularly the male role) compared to diploids, due to increased mating opportunities from di-mon matings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C77 describe a primary benefit of the dikaryotic life cycle demonstrated across multiple simulations (Figures 2-5). The increased mating success is consistently shown, though it comes at a cost to mycelium fitness. This represents a key trade-off explored by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C78",
+      "C80"
+    ],
+    "result": "Intradikaryon selection for increased nuclear mating fitness leads to reduced mycelium fitness relative to a diploid life cycle. Even with an imposed fitness trade-off at the organismal level, the dikaryotic life cycle selects for mating success, with most nuclei specializing in mating fitness under all tested scenarios and parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C78, C80 describe the central cost of the dikaryotic life cycle shown throughout Figures 2-6. The consistency of this result across parameter space is compelling. However, this critically depends on the assumed trade-off (C25, C32), which the authors acknowledge may not exist or could be positive (C92, C97, C100-C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C125"
+    ],
+    "result": "The fitness reduction in standard dikaryons is lower compared to the hypothetical open dikaryon where di-di matings are allowed. Prohibition of fusion between dikaryons reduces nuclear parasitism and maintains higher mycelium-level fitness compared to completely free nuclear exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C28, C125 describe a key comparative finding shown in Figures 2-5. The consistent pattern of open dikaryons performing worse than standard dikaryons provides strong support for the adaptive value of restricting di-di matings. This is a central conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C126"
+    ],
+    "result": "The number of loci influencing fitness is an important determinant of mycelium-level fitness reduction. When fitness variance and its trade-off are restricted to a single locus (monogenic), costs to mycelial fitness are reduced compared to polygenic scenarios where loci are spread throughout the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29, C126 describe the effect of genetic architecture shown in Figures 2-3 and 6. The monogenic scenario allowing polymorphism that reduces costs is well-demonstrated. This represents an important mechanistic insight, though the biological realism of the \u03bb parameter as implemented is somewhat abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The environment influences costs and benefits of the dikaryotic life cycle, as density of individuals affects both the importance of mycelial fitness and chances for repeated matings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 summarizes environmental effects shown in Figure 5. The systematic variation with death and growth rates demonstrates environmental context-dependence. However, the specific mechanisms linking density to these effects could be more explicitly demonstrated in the model outputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C95"
+    ],
+    "result": "Adjacent monokaryons provide a reliable route for gene copy increase of DMF genotypes. The marginal decrease in fitness from vegetative growth/spore production due to the trade-off is outweighed by benefits of additional matings. In diploid populations, a DMF allele has increased fitness despite associated trade-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C95 provide mechanistic explanations for DMF spread shown in Figure 4. These are reasonable inferences from the model dynamics, though they represent interpretations rather than directly measured quantities. The logic is sound given the model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The fitness decrease at the dikaryotic level was dependent on the dominant/recessive nature of fitness components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 describes dominance effects shown in Figure 2. The systematic variation with the \u0398 parameter is clearly demonstrated. This represents an important genetic detail affecting the magnitude of costs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "When offspring are similar to parents due to linkage, intermediate offspring are restricted to those produced by mutation. When fitness components are unlinked across multiple loci, matings produce gametes with competitive alleles at on average half the loci, resulting in low phenotypic variance and uniform specialization for mating fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 explain the mechanistic basis for linkage effects. These are logical consequences of the model's genetic implementation. The explanations are consistent with the observed differences between monogenic and polygenic scenarios in Figures 2-3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C32",
+      "C96"
+    ],
+    "result": "The model assumes a three-way trade-off between growth, spore production, and mating success (wv + wr + wm = 1.0), and that competitive success of nuclei during di-mon matings results from competition between the two nuclei in the dikaryon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C32, C96 describe core model assumptions. These are clearly stated and consistently implemented. However, the authors acknowledge these are assumptions that may not hold biologically (C92, C97, C100-C102, C127), which is a critical caveat for interpreting all results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "For the diploid polygenic scenario, increased mutation width resulted in optimization of fitness around high spore production instead of a balance between fitness components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 describes an effect of increased mutation width mentioned in the text and shown in Figure 1\u2014figure supplement 1. This demonstrates sensitivity to mutation parameters, though the mechanism is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The diploid scenario also selects for increased mating fitness, although with less strength than dikaryons, as matings between monokaryons can include multiple partners with differing mating fitness, which has been shown in yeast to strongly select for mating pheromone production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 note that diploids also experience some mating competition, with citation to Rogers and Greig 2009 for yeast. This is visible in Figure 2 and provides important context that the dikaryotic costs are relative rather than absolute. The citation appropriately supports the yeast comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Blending inheritance models have been shown not to have a large effect on resulting social interactions when compared to biologically realistic Mendelian particulate inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 cites Gardner 2011 to justify the blending inheritance approach used in the model. This is an appropriate citation for this modeling choice, though the authors acknowledge this is a simplification that could be improved in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C129"
+    ],
+    "result": "Establishing the relationship between different fitness components is crucial to understand potential consequences of nuclear competition in the dikaryotic life cycle. The consequences of competition between unrelated haploid nuclei in a dikaryon can be severe, and mechanisms must exist to police it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C129 represent key conclusions about future research needs and implications. These are reasonable inferences from the modeling results, though they depend on the assumed trade-off being real. The call for empirical work on fitness relationships is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Basidiomycete fungi have a dikaryotic life cycle where plasmogamy occurs between monokaryons but karyogamy is delayed until meiosis. The dikaryon has two copies of the nuclear genome per cell (similar to diploids) but nuclei remain separate and retain the ability to fertilize further monokaryons (di-mon mating), corresponding to retention of the male role. This delayed karyogamy increases mating opportunities. In di-mon matings, initially both nuclei invade the monokaryon but ultimately only one fertilizes the entire monokaryon. Exchange between dikaryons is thought to be prevented by nonself recognition triggering apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C18 describe established biological facts about Basidiomycete life cycles, supported by appropriate citations (Raper 1966, Anderson and Kohn 2007, Banuett 2015, Schuurs et al. 1998, Aanen et al. 2004, Auxier et al. 2021b, Aylmore and Todd 1986). These provide essential biological context for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Competitive success within dikaryons could be based on variation in rates of nuclear division, migration, or percentage of hyphae colonized. Evidence of variation for mating success has been found in natural systems with consistent outcomes in replicate di-mon matings. Studies have found both direct nuclear competition and nuclear-monokaryon interactions can determine mating success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 summarize prior empirical work on nuclear competition with appropriate citations (Anderson and Kohn 2007, Raper 1966, Vreeburg et al. 2016, Ellingboe and Raper 1962, Nieuwenhuis et al. 2011, Nogami et al. 2002). This establishes that the modeled phenomenon has empirical support, though mechanisms remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Two common measures of fungal fitness are somatic (mycelial) growth and spore production. It has been thought that fungal vegetative growth and spore production may be under a life history trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 cite established literature (Pringle and Taylor 2002, Schoustra and Punzalan 2012) on fungal fitness measures and potential trade-offs. The authors appropriately note contrasting views (Anderson et al. 2019), acknowledging uncertainty about this assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Backcrossing of wild isolates has shown that variation in mating success potentially resides near/within the mating-type locus. Basidiomycete mating-type loci are idiomorphic with suppressed recombination, spanning 50-150 Kb up to several Mb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 cite relevant literature (Nogami et al. 2002, Branco et al. 2017, Brown and Casselton 2001) suggesting mating fitness variation may be linked to mating-type loci. This provides potential biological support for the monogenic scenario in the model, though the evidence is described as preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "An experimental evolution study attempting to select for competitive nuclei failed to find a trade-off with mycelium-level fitness components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 cites Nieuwenhuis et al. 2018 as evidence against the assumed trade-off. The authors appropriately acknowledge this contradictory evidence, noting that simultaneous selection for multiple components could not be excluded in that experiment. This is an important caveat for the model's assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Alternatively, the interaction between a nuclear type and the receiving monokaryon may affect nuclear competition outcomes, effectively a form of female choice. The B locus encodes pheromones and receptors with high redundancy. It has been argued this redundancy reflects female choice with pheromones as honest signals of nuclear quality. Under a 'good genes' model, a positive rather than negative relationship between nuclear and mycelial fitness might be expected, potentially making nuclear competition beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 present an alternative hypothesis to the assumed trade-off, with appropriate citations (James 2015, K\u00fces 2015, Nieuwenhuis et al. 2011, 2012, Rogers and Greig 2009, Zahavi 1975). The authors appropriately acknowledge this alternative could fundamentally change the interpretation of their results. This represents an important limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Nuclear selection has been shown to act rapidly in hyphal fungi in experimental evolution and in natural isolates of Neurospora tetrasperma. The prevalence of dominant phenotypes in Basidiomycetes is currently unknown, although recent work has found little support for dominant-recessive relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 cite relevant empirical work (Bastiaans et al. 2016, Meunier et al. 2018, Clergeot et al. 2019, Hiscox et al. 2010, Nobre et al. 2014) on nuclear selection and dominance in fungi. This provides context for the model's dominance parameter, though uncertainty about dominance prevalence is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C128"
+    ],
+    "result": "Nuclear exchange between dikaryons has been demonstrated in natural settings, particularly in Heterobasidion species that develop monokaryotic hyphal sectors. This presumably occurs through monokaryotic intermediates. There is a qualitative difference between di-di matings and di-mon matings through monokaryotic intermediates, as novel dikaryons from the latter are somatically incompatible with progenitors. The authors hypothesize that recent examples of dikaryon nuclear exchange are due to monokaryotic intermediates or extremely rare events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111, C128 discuss reported di-di matings with appropriate citations (Hansen et al. 1993, Johannesson and Stenlid 2004). The authors' interpretation that these likely involve monokaryotic intermediates is reasonable given the biological constraints. This addresses a potential challenge to their model's relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Widespread plant pathogenic rust fungi have a dikaryotic stage. Nuclear exchange between rust dikaryons ('somatic hybridization') is reported in production of novel pathogenic races. One possibility is that somatic hybridization is exceedingly rare, as a single event could produce a rust race able to grow on resistant hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 discuss rust fungi with appropriate citations (Burdon et al. 1981, Li et al. 2019, Nelson et al. 1955, Wu et al. 2019). The speculation about rarity (C114) is reasonable given the model's predictions, though this remains uncertain. This extends the model's relevance beyond mushroom-forming fungi.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Recent evidence indicates that abundant Arbuscular Mycorrhizal fungi from phylum Mucoromycota also exist in a dikaryotic state. While hyphal fusion occurs in this lineage, the potential for di-mon or di-di matings remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 cite recent work (Ropars et al. 2016, Croll et al. 2009) extending dikaryotic life cycles to another fungal group. The acknowledgment of uncertainty about mating patterns is appropriate. This further broadens the model's potential relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The open dikaryon model corresponds to the historical 'unit mycelium' concept that assumed cooperation between unrelated individuals. Accumulating evidence of distinct neighboring mycelia led to the 'individualistic mycelium' synthesis. This model is consistent with somatic incompatibility observations and predictions that cooperation between nonrelated dikaryons would be exploited almost immediately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 provide historical context with appropriate citations (Buller 1934, Rayner 1991, Booth 2022, Cz\u00e1r\u00e1n et al. 2014). This effectively situates the modeling work within the history of fungal biology and shows how the model results support the individualistic mycelium paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The dikaryotic state has been retained for over 400 million years, yet few extant Basidiomycete species are diploid. While there is little data on prevalence of di-mon matings in the field, they may be more common than generally assumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 cite relevant literature (Chang et al. 2015, Anderson and Kohn 2007, Nieuwenhuis et al. 2013) on the evolutionary persistence and prevalence of dikaryotic life cycles. This establishes the biological importance of understanding the modeled phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Kin-selection theory shows that altruistic interactions can evolve between genetically related vehicles. In contrast, sexual interactions are often avoided among genetically related and promoted among unrelated individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 cite foundational work (Hamilton 1964, Herron and Freeman 2014) establishing the theoretical framework for understanding conflicts between social and sexual interactions. This provides essential theoretical context for the modeling work.",
+    "result_type": "MINOR"
+  }
+]

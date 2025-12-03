@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study enrolled 87 HNSCC patients in a Phase 2 trial (NCT02633800), with 56 patients having complete paired blood samples at baseline (C1) and after first treatment cycle (C2). Blood samples were analyzed by flow cytometry for immune populations and exosomes for EGFR-ErbB3 dimerization and miRNAs, yielding 58 laboratory-based covariates. No significant differences existed between discovery cohort and full cohort, or between placebo and patritumab arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C24 provide clear documentation of study design, patient enrollment, sample collection, and analytical methods. The exclusion criteria and lack of differences between treatment arms (C17, C23) are appropriately documented with statistical comparisons. The methodology is well-described and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A baseline risk prediction model was developed using Bayesian multivariate proportional hazards regression on 42 baseline covariates. The model identified three significant covariates: CD33+CD14+ monocytes (\u03b2=-1.05), DN B cells (\u03b2=-0.53), and age (\u03b2=0.47). The baseline risk scores correlated with PFS (C-index=0.60, \u03c4=-0.33, p=0.0005), with median PFS of 8.3 months for low-risk vs 3.6 months for high-risk cohorts (log rank p=6.0e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 describe a statistically rigorous baseline model with appropriate methodology (Bayesian regression with cross-validation), clear performance metrics (C-index, rank correlation, log-rank test), and significant p-values. The \u03b2 values and their interpretations are internally consistent, and the survival analysis shows strong discrimination between risk groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A combined risk prediction model incorporating 71 covariates (42 baseline + 29 on-treatment changes) identified six significant covariates: baseline CD33+CD14+ monocytes, baseline CD4+ memory Tregs, increase in CD8+ effector memory T cells (all protective), increase in CD8+ central memory T cells, increase in CD3 T cells, and hypopharyngeal tumor site (all adverse). The combined model showed stronger correlation with PFS (C-index=0.69, \u03c4=-0.49, p=7e-7) than baseline model, with median PFS of 6.8 vs 3.6 months (log rank p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C35-C40 demonstrate that incorporating on-treatment changes improves predictive power over baseline alone. The statistical metrics show improvement (C-index 0.69 vs 0.60), and all p-values are highly significant. The identification of six covariates with clear directional effects is well-supported by the proportional hazards regression analysis shown in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C39"
+    ],
+    "result": "The combined model demonstrated superior predictive power compared to the baseline model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C39 are directly supported by quantitative comparison: combined model C-index=0.69 vs baseline C-index=0.60, with stronger rank correlation (\u03c4=-0.49 vs \u03c4=-0.33). This represents a meaningful improvement in predictive performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "EGFR-ErbB3 FRET difference (FRET.delta) showed a trend toward better PFS but did not meet stringent selection criteria for inclusion in the final signature. Patients with high FRET.delta showed non-significant better PFS than low FRET.delta (log rank p=0.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 appropriately characterize FRET.delta as showing a trend but lacking statistical significance. The authors transparently report this negative/borderline result and acknowledge the stringent selection criteria excluded it from the final model. This is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C78",
+      "C79"
+    ],
+    "result": "A significant correlation was identified between log fold changes of miR-21-5p and CD33+CD14+ monocytes (r=0.43, p=0.02). While miRNAs did not correlate with PFS, they have been implicated as classifiers for myeloid cell subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 reports a statistically significant correlation with appropriate statistical test and p-value. Claims C78-C79 provide literature context. The correlation is modest but significant, and the authors appropriately note that miRNAs did not independently predict PFS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The combined risk signature was validated in an independent cohort of 8 patients from the EACH trial (NCT03494322). The signature strongly correlated with treatment outcome (\u03c4=0.73, p=0.02). High baseline CD33+CD14+ monocytes and increased CD8CM both correlated with worse outcomes in validation. CD33+CD14+ monocytes were further characterized as expressing high HLA-DR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C44-C52 describe validation in an independent cohort, which is methodologically appropriate. However, the validation cohort is very small (n=8 patients, reduced from 16 due to exclusions), raising concerns about statistical power and generalizability. While the correlation is strong (\u03c4=0.73, p=0.02), the small sample size limits confidence. The use of BOR instead of PFS as outcome in validation cohort is justified by correlation in discovery cohort (C46), but represents a change in endpoint. The validation provides supportive evidence but is insufficient for definitive confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Imaging mass cytometry of tissue from 9 patients identified tissue counterparts of peripheral immune populations. Peripheral CD33+ monocytes correlated with tissue CD14+CD33+CD74+CD68+ macrophages, while peripheral CD8CM inversely correlated with tissue CD8Trm. Both tissue CD74+ macrophages and CD8Trm positively correlated with PFS. CD8Trm cells were significantly more likely to contact CD74+ macrophages than other populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C59 describe tissue analysis linking peripheral and tissue immune populations. The sample size is very small (n=9), limiting statistical power. While correlations are reported and cell-cell contact analysis suggests biological significance (C59), the small sample size and lack of reported statistical tests for some correlations (C55-C58) make these findings preliminary. The inverse correlation between peripheral CD8CM and tissue CD8Trm (C56) is interesting but requires validation in larger cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study findings are consistent with prior literature: hypopharyngeal SCC has worst survival among HNSCC subsites, these tumors present at advanced stage, and patritumab showed no PFS benefit in the Phase 2 trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are appropriately supported by citations to prior literature (Gatta et al. 2017, Machiels et al. 2020, Cadoni et al. 2017, Forster et al. 2019). These claims provide context and validate that study findings align with established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study demonstrates that the same blood kinetic changes can distinguish responders from non-responders across different treatment modalities (targeted therapy vs anti-EGFR + anti-PD-L1), which is novel. Multivariate analysis was more powerful than univariate analysis, as individual covariates did not independently predict outcome in validation cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 highlight key strengths of the multivariate approach. The observation that the signature works across different treatment modalities (C64-C65) is supported by the validation results, though limited by small sample size. The superiority of multivariate over univariate analysis (C66) is clearly demonstrated by comparing performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors propose mechanistic interpretations: CD33+HLADRhigh monocytes match intermediate monocytes with antigen presentation roles; cetuximab provides tumor antigens for cross-presentation; monocyte-derived macrophages activate tissue resident memory T cells (Trm); peripheral CD8CM can home to tumors and contribute to Trm populations; accumulation of peripheral CD8CM in poor responders may reflect tumor-induced T cell exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C77 present mechanistic hypotheses supported by literature citations but are largely speculative. The authors appropriately use language like \"hypothesize\" (C75, C77) and \"potential\" (C76). While the proposed mechanisms are biologically plausible and supported by cited literature, they are not directly tested in this study. The correlations observed (e.g., C55-C58) provide circumstantial support but do not prove causation. These interpretations require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study represents one of the first examples of integrating multiple biological covariates from peripheral blood with clinical data to predict treatment response across multiple therapeutic modalities. The combined signature predicts outcome more accurately than prior approaches like NLR or PD-L1 expression alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 appropriately contextualize the study's contributions. The comparison to NLR (C80) is supported by meta-analysis citations showing HRs of 1.69-1.78, while the current study achieves better discrimination (C-index 0.69). The novelty claim (C83) is reasonable given the multimodal, longitudinal approach and cross-treatment validation, though limited by small validation cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript provides background context on HNSCC prognosis, treatment evolution (EXTREME regimen, KEYNOTE-048 trial), current standard of care, and limitations of existing biomarker approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C14 provide appropriate background context supported by citations to key clinical trials and reviews. These establish the clinical need and rationale for the study.",
+    "result_type": "MINOR"
+  }
+]

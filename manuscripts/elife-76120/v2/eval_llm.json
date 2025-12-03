@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors acquired a large ssEM dataset (250\u00d7140\u00d790 \u03bcm\u00b3) from mouse L2/3 visual cortex and developed improved methods for handling image defects. State-of-the-art convolutional nets initially produced many reconstruction errors due to misalignments and damaged sections. By augmenting training data with simulated defects and implementing human-in-the-loop alignment, the resulting network was better able to trace neurites through image defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 collectively describe the dataset acquisition and methodological improvements. The manuscript provides specific dimensions, resolution, error observations, and quantified improvements (Figure 1\u2014figure supplement 3). The data augmentation strategy and its effectiveness are documented with both qualitative examples and quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C96"
+    ],
+    "result": "The authors generated the largest wiring diagram to date between cortical neurons of a defined type, containing 1735 connections (1960 synapses) between 334 L2/3 pyramidal cells. This required ~1300 hours of human proofreading, yielding 670 mm of cable length with an estimated 0.28 merge errors per millimeter remaining in axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C23 and C96 document the reconstruction pipeline and resulting connectivity map with specific numbers of cells, connections, synapses, and error rates. The manuscript provides detailed validation including sampling of 12 axons for error estimation and comparison to previous studies (C112-C114), supporting the claim of being the largest such map.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "PyC-PyC connections show distinct properties compared to other connection types: 89.1% are monosynaptic (vs. 60.3% for PyC\u2192inhibitory and 42.6% for inhibitory\u2192PyC), have the least variance in synapse number but highest variance in synapse sizes, and include dual connections with synapses separated by >100 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 provide quantitative comparisons across connection types with specific percentages and measurements. The observations are supported by data in Figure 2 and extend previous analyses (C30) by including widely separated synapses on different branches, which is enabled by the large volume.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C99"
+    ],
+    "result": "Synapse sizes between L2/3 PyCs deviate from the log-normal distribution reported in previous studies. A mixture of two normal distributions provides a significantly better fit (p<1e-39, n=1960) than a single normal distribution, with a 'knee' visible on the right side of the histogram. This suggests synapse size is well modeled by the sum of a binary variable and a log-normal analog variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 and C99 document the deviation from previous findings with statistical support (likelihood ratio test). The manuscript provides appropriate context by citing previous log-normal findings (C31-C33) and demonstrates the improved fit with rigorous statistical testing. Figure 3c clearly shows the deviation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "For dual connections between L2/3 PyCs, a bimodal mixture model provides a significantly superior fit (p=0.0425, n=320). The mixture component parameters remain consistent across connection types (single, dual, triple), but there is an overrepresentation of large synapses and a linear increase in the fraction of 'L' state synapses with the number of synapses per connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 demonstrate bimodality specifically for dual connections with statistical validation and show consistency of the two-state model across subsets. The linear relationship (C45) and parameter consistency (C43) support the model's validity. Results are replicated using cleft size (C41), providing orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Manual annotation of spine apparatus (SA) in all L2/3 PyC synapses confirmed that the probability of SA increases with spine volume, consistent with previous reports that large spines contain this specialized endoplasmic reticulum structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide validation of the size measurements through an independent structural marker. The manuscript cites previous work (C47) and provides quantitative confirmation (C49) with complete manual annotation (C48), shown in Figure 3\u2014figure supplement 7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C101"
+    ],
+    "result": "Dual connections between L2/3 PyCs show positive correlation in spine volumes (Pearson's r=0.418). The best-fitting hidden Markov model reveals that SS and LL states occur frequently (49% and 33%), while mixed states are rare. The binary latent variables are highly correlated (\u03c6=0.637), while analog variables show little correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 and C101 document correlations with appropriate statistical measures and model fitting. The manuscript contextualizes findings with previous work (C50-C51) and provides visual evidence (Figure 4a) showing scarcity of mixed states. The HMM analysis rigorously separates binary and analog components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "When conditioned on latent states, spine volumes in dual connections are approximately uncorrelated. Resampling analysis weighted by posterior probabilities of SS and LL states shows Pearson's correlation not significantly greater than zero, and residual synapse sizes after subtracting binary components show no remaining correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide rigorous validation that correlations are confined to binary components through resampling (C57) and residual analysis (C58, Figure 4\u2014figure supplement 3). The statistical approach appropriately tests the model's assumption of conditional independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Latent state correlations persist even for widely separated synapses. Dual connections were split by median distance (46.5 \u03bcm), and both near (\u03c6=0.53) and far (\u03c6=0.75) groups showed positive correlations, indicating correlations are not due to local crosstalk between neighboring synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 address a potential confound (local crosstalk) by analyzing distance dependence. The manuscript cites previous work on crosstalk (C59), provides appropriate analysis splitting by distance (C60), and shows correlations persist or strengthen with distance (C61-C62), ruling out local mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Synapse size correlations are specific to pairs sharing both the same presynaptic and postsynaptic L2/3 PyCs. Correlations in latent state or size were negligible for pairs sharing only the same axon (\u03c6=-0.11\u00b10.08, r=-0.06\u00b10.06) or only the same dendrite (\u03c6=-0.06\u00b10.06, r=-0.13\u00b10.05). Correlations exist even for large spatial separations and are confined to binary latent variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 demonstrate specificity through appropriate control analyses with quantified correlations and standard deviations. The manuscript cites consistent previous findings (C63-C64) and summarizes the key specificity (C65-C67), providing strong evidence for the connection-specific nature of correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors propose that binary variation could arise from Hebbian or other plasticity rules driven by activity signals uniform across arbors (shared by multisynaptic connections), while analog variation may be dominated by spontaneous dynamical fluctuations or local activity-related signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C73, C102-C103 are speculative interpretations (marked as SPECULATION in evidence_type). While the manuscript cites relevant literature supporting these mechanisms (C69, C71-C72), these are proposed explanations rather than tested hypotheses. The data support the existence of binary and analog components but do not directly demonstrate their mechanistic origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors discuss two scenarios for interpreting the binary latent variable: (1) synapses behave as bistable switches flipped by activity-dependent plasticity, with analog fluctuations obscuring underlying bistability, or (2) bimodality arises from plasticity driving intrinsically volatile synapses to extremes. They argue the bistable scenario is more plausible based on the correlation patterns observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C82 acknowledge uncertainty (C74) and present speculative scenarios with citations to relevant models (C76, C79). The argument for bistability (C81-C82) is based on inference from correlation patterns but lacks direct experimental validation. This represents thoughtful interpretation rather than demonstrated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Bimodality and strong correlations are specific to dual connections between L2/3 PyCs and are not observed when including orphan axons or all excitatory synapses. The authors propose this is because orphan axons come from mixed cell types, each with different synapse size distributions, and suggest bimodality may be heterogeneous across cortical synapse classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 document the specificity with appropriate negative controls (Figure 4\u2014figure supplement 6) and reconcile findings with previous studies. Claims C88-C91 provide speculative but reasonable explanations for the specificity. The cell-type specificity is well-demonstrated, though the mechanistic explanation (C88-C89) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The cortical reconstruction has been made publicly available at https://www.microns-explorer.org/phase1 and the code is freely available. The findings have implications for understanding strong connections in cortical computation, as connection strength can be predicted from the sum of synaptic sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 document data and code availability with specific URL (C93) and citations to concurrent uses (C93). The computational implications (C92) are appropriately cited. This demonstrates good scientific practice and reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Comprehensive error analysis and validation were performed. For dendrites: 99% precision and 99% recall for synapses (18.7 mm inspected). For axons: 98% precision and 99% recall (3.6 mm inspected). Spine detection: 88% recall. Synaptic cleft detection: 93.0% precision and 90.9% recall. Partner assignment: 98.9% accuracy. Final dataset: 1960 synapses after manual review and quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 provide detailed quantitative validation with appropriate sampling and multiple validation approaches. The error rates are clearly documented with specific path lengths inspected, providing transparency about data quality. This thorough validation supports confidence in the main findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Statistical mechanical modeling using the bWSME model predicts that SOD1 folding is initiated around metal binding regions, with Zn (not Cu) promoting proper folding. In the absence of Zn, the apo variant folds through an alternate pathway nucleated by the first three strands (residues 1-40), which exhibit higher aggregation propensity. The model predicts that absence of Zn alters the folding mechanism by populating partially structured states involving beta strands, potentially increasing aggregation chances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 present computational predictions from the bWSME model that are internally consistent and validated against prior experimental work (C23). The model successfully recapitulates single-molecule experimental results (C24) and makes testable predictions about differential roles of Zn vs Cu that are subsequently validated experimentally in later results. The computational approach is appropriately described with clear parametrization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Experimental characterization using fluorescence spectroscopy, acrylamide quenching, and FTIR demonstrates that H121F (Cu-deficient) behaves like WT SOD1, while H72F (Zn-deficient) behaves like apo protein. The Zn-starved H72F mutant showed higher solvent exposure (Ksv) and reduced beta sheet content similar to apo, while H121F remained similar to WT in these properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 provide converging experimental evidence from multiple orthogonal techniques (fluorescence, quenching, FTIR, CD) that consistently demonstrate the differential roles of Zn vs Cu. The FTIR analysis is validated against crystal structure data (C38), and atomic absorption spectroscopy confirms metal content (C30-C31, Table 1). The experimental design appropriately uses multiple complementary methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Computational predictions (OPM) and experimental measurements (FCS, fluorescence) demonstrate that Zn-deficient SOD1 variants (apo and H72F) show significantly higher membrane binding affinity compared to WT and H121F. Membrane binding follows the trend: apo \u2265 H72F > H121F > WT. FTIR shows that membrane binding induces large conformational changes (decreased beta sheet, increased alpha helix) in apo and H72F, but minimal changes in WT and H121F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 demonstrate strong agreement between computational predictions and experimental measurements using multiple techniques (OPM, FCS, tryptophan fluorescence, FTIR). The binding constants from FCS are corroborated by tryptophan fluorescence measurements. The conformational changes upon membrane binding are well-characterized by FTIR. Potential concern: FCS uses labeled proteins which could influence binding, but this is addressed by complementary unlabeled tryptophan fluorescence measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ThT fluorescence assays and AFM imaging demonstrate that WT and H121F do not aggregate in the absence or presence of membrane, while apo and H72F variants show significant aggregation that is accelerated by membrane presence. Membrane-induced aggregates (apoaggm, H72Faggm) exhibit distinct morphology - networks of thin aggregates (700-800 nm, 6-8 nm height) connected by DPPC vesicles - compared to large fibrillar aggregates (1.8-2 \u03bcm, 20 nm height) formed without membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 provide consistent evidence from ThT kinetics and AFM imaging showing differential aggregation behavior. The kinetic parameters are quantified (Table 4) and morphological characterization is detailed. The observation that membrane accelerates aggregation of Zn-deficient variants while having no effect on WT/H121F is consistent with the membrane binding data. AFM provides direct visualization supporting the ThT kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Membrane curvature affects H72F aggregation, with binding and aggregation increasing with higher curvature (SUVs > LUVs > GUVs). H72F incubation reduces GUV size from 5-10 \u03bcm to 1-2 \u03bcm, suggesting membrane remodeling. Negatively charged membranes (DPPG) increase both binding and aggregation rate compared to neutral DPPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 demonstrate systematic investigation of membrane properties (curvature, charge) on aggregation. The curvature dependence is well-documented with multiple vesicle sizes. The GUV size reduction and vesiculation observed by TEM suggests membrane remodeling, though the mechanism is not fully elucidated. The charge dependence is consistent with electrostatic interactions expected from the protein's charge distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "MTT assays show that apoagg and H72Fagg exhibit significantly higher neuronal toxicity than WT or H121F aggregates, with toxicity further increased for membrane-formed aggregates (apoaggm, H72Faggm). Phase-contrast microscopy of GUVs demonstrates that apoaggm and H72Faggm cause rapid membrane deformation (\u03bb ~ 3.5-3.9\u00d710\u207b\u00b3 s\u207b\u00b9) and vesicular assembly, while WT and H121F aggregates show minimal effects. The aggregates attach to GUV surfaces leading to cooperative deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 provide strong evidence for differential toxicity using cell viability assays and model membrane systems. The GUV deformation kinetics are quantified and show clear differences between variants. The phase-contrast microscopy provides direct visualization of aggregate-membrane interactions. The observation of vesicular assembly is novel and well-documented. Statistical significance is reported (Figure 4\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Calcein release assays and FTIR analysis of lipid conformational changes demonstrate that apoaggm and H72Faggm cause greater membrane rupture and lipid perturbation than apoagg and H72Fagg. FTIR shows significant increase in nonplanar kink+gtg conformers (1367 cm\u207b\u00b9) in lipid bilayers treated with apoagg/apoaggm and H72Fagg/H72Faggm. The extent of calcein release correlates with populations of nonplanar lipid conformers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide mechanistic insight into membrane damage using complementary techniques. The calcein release assay quantifies membrane permeabilization, while FTIR reveals molecular-level lipid structural changes. The correlation between calcein release and lipid conformational changes (C72) suggests a common mechanism. The use of synaptic vesicle-mimicking lipid composition is physiologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Computational analysis of 15 ALS mutants shows that membrane binding energy (\u0394GTr) correlates linearly with distance from the Zn site but not the Cu site. Patient survival time after ALS diagnosis correlates with distance of mutation site from Zn center, with mutations closer to Zn associated with shorter survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide computational validation of the Zn-centric model across multiple ALS mutants. The linear correlation with Zn distance but not Cu distance is striking and supports the central hypothesis. The correlation with patient survival data (C74, citing Wang et al., 2008) provides clinical relevance. However, the survival data relies on a single citation and the sample size/statistical analysis of the correlation is not fully detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Experimental validation using two ALS mutants (I113T near Zn pocket, G37R near Cu pocket) shows that I113T exhibits higher membrane binding, greater membrane-induced conformational changes, increased aggregation (especially in membrane presence), and higher toxicity compared to G37R. I113T shows increased loop flexibility and greater destabilization (more negative \u0394\u0394G) than G37R. AFM shows I113T forms fibrillar networks in membrane presence while G37R forms small non-fibrillar aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C88 provide comprehensive experimental validation of the model using clinically relevant ALS mutants with different survival times (I113T: 4.3 years, G37R: 17 years). Multiple techniques (FCS, FTIR, DynaMut predictions, ThT, AFM, MTT) consistently show that I113T (near Zn) behaves more like Zn-deficient variants while G37R (near Cu) behaves more like WT. The correlation with disease severity strengthens the clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "A third ALS mutant G85R shows intermediate behavior between G37R and I113T in terms of membrane binding affinity (-2 kcal/mol vs -1 and -3.2 kcal/mol) and aggregation morphology, consistent with its intermediate survival time (6 years vs 17 and 4.3 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide additional validation of the model's predictive power using a third mutant with intermediate properties. The binding affinity and aggregation behavior fall between the two extremes as predicted, supporting the generalizability of the Zn-distance correlation. This strengthens the overall model but is based on limited characterization compared to I113T and G37R.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C104"
+    ],
+    "result": "The authors conclude that Zn is largely responsible for SOD1 conformational stability, with Zn insertion at loop IV stabilizing the loop and reducing aggregation propensity. In contrast, Cu absence has minimal effect on protein stability, and Zn-containing Cu-deficient protein behaves like WT. Zn-coordinated protein shows minimal membrane binding and is removed from the bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C95-C96, C104 represent major conclusions well-supported by the comprehensive experimental data (fluorescence, FTIR, CD, membrane binding, aggregation assays). The differential roles of Zn vs Cu are consistently demonstrated across multiple protein variants and techniques. The conclusion is appropriately stated as being validated by 'a battery of experimental approaches' and is consistent with the bWSME model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The authors propose a maturation model where Cu coordination to SOD1 occurs through CCS using membrane as a scaffold (in low free Cu environments), followed by Zn binding that stabilizes loops and reduces membrane binding. Reduced Zn affinity (from mutations or other factors) results in misfolded membrane-bound protein that is aggregation-prone and toxic. CCS and SOD1 both bind Zn, with Zn absence favoring CCS-SOD1 heterodimers and Zn presence favoring CCS-CCS homodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103, C105 synthesize literature (properly cited) with current findings to propose a mechanistic model. The model is consistent with known biology (low free Cu, CCS function) and the experimental data presented. However, this is largely a proposed model integrating prior work rather than directly tested in this study. The key novel contribution is identifying Zn's role in membrane dissociation and the consequences of Zn deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Prior work shows that Cu binding has no effect on SOD1 folding and CCS knockout does not affect disease onset or lifespan in SOD1 transgenic mice, supporting the minimal role of Cu in the disease process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 cite prior literature (Bruns and Kopito, 2007; Subramaniam et al., 2002) to support the Cu-independent aspects of the model. These are appropriately cited established findings that support the authors' Zn-centric interpretation. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Zn supplementation (60 mg/kg/day) increases survival days in transgenic mouse experiments, supporting the Zn-centric model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 cites prior work (Ermilova et al., 2005) showing therapeutic benefit of Zn supplementation, which provides independent support for the model's predictions. The citation appears appropriate and the interpretation is reasonable, though the authors acknowledge this is correlative support rather than direct validation of their mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior work has demonstrated SOD1 aggregates in ALS patients, prion-like cell-to-cell transfer, mitochondrial membrane attachment causing toxicity, and pore formation. Recent work on Parkinson's disease shows Lewy bodies consist of protein-lipid vesicle clusters rather than amyloid fibrils, and synaptic vesicle assembly can occur through 'double anchor' mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 appropriately cite prior literature to contextualize the current findings within the broader neurodegenerative disease field. The citations appear accurate and relevant. The comparison to Parkinson's disease (C115-C116) and synaptic vesicle assembly (C117) provides useful context for interpreting the vesicular assembly observations, though these are from different disease contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "The authors infer that small-sized aggregates would be more efficient at anchoring vesicles for assembly compared to large fibrils, based on their observations and comparison with literature on vesicle assembly mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 is a reasonable inference based on the observed vesicular assembly with small membrane-formed aggregates vs large fibrils, and the 'double anchor' mechanism from literature. However, this is speculative and not directly tested. The authors appropriately present this as an inference ('it is easy to envision') rather than a demonstrated fact, but additional experiments would be needed to validate this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establish that SOD1 aggregation is implicated in ALS, over 140 disease mutations exist, but their stability/aggregation behaviors in membrane environments don't correlate with disease pathophysiology. SOD1 aggregation is heterogeneous with multiple steps, which has prevented structural understanding of aggregation processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C13 present well-established background knowledge appropriately cited from the literature. These claims accurately represent the state of the field and the knowledge gap the study addresses. The claim about lack of correlation (C3, C11) is presented as the problem the study aims to solve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on SOD1 structure and function: WT SOD1 contains Cu and Zn cofactors, with Cu responsible for dismutase activity. Cell membrane acts as scaffold for Cu transfer via CCS. SOD1 accumulates near membranes of various organelles, and computational/experimental studies show loops IV and VII promote membrane interaction of apo-SOD1, initiating aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 present established background knowledge with appropriate citations. These claims accurately represent prior work on SOD1 structure, function, localization, and membrane interactions. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C97",
+      "C98"
+    ],
+    "result": "Supporting literature shows that loop shortening increases SOD1 stability, thermophilic SOD1 variants have shorter electrostatic loops, apo SOD1 is flexible and dynamic, and C-terminal truncation results in transmembrane helices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C97-C98 cite relevant prior work that supports aspects of the authors' model regarding loop flexibility and membrane interactions. The citations appear appropriate and accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Clinical data shows I113T is the second most common ALS mutant with average survival of 4.3 years, while G37R has average survival of 17 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 present established clinical data about ALS mutant survival times. These are presented as known facts and are consistent with the cited literature (Wang et al., 2008). The survival time difference provides important clinical context for the experimental comparisons.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "At endogenous densities (1\u20132 channels/\u03bcm\u00b2) in Neuro2A cells, Piezo1 pressure sensitivity (P50) and open probability are independent of channel number. Analysis of patches containing 1\u201314 channels showed no substantial variation in P50 values, and idealized traces from patches with 1\u20135 channels yielded virtually identical P50 and slope values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C45, and C46 are directly supported by experimental data from patch-clamp recordings (n=281 patches) showing consistent P50 values across different channel numbers. The large sample size, multiple analytical approaches (direct P50 measurement and idealized trace analysis), and low measurement variability (24%) provide strong support for functional independence at physiological densities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "At high non-physiological densities (10\u2013100 channels/\u03bcm\u00b2) achieved through overexpression, Piezo1 channels maintain independent mechanosensitivity. P50 and slope values remain unaffected by channel number, though open probability in the nominal absence of tension slightly decreases from 0.6\u00b10.4% (1\u201310 channels) to 0.2\u00b10.1% (>200 channels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57\u2013C66 are supported by experimental data from 144 patches with overexpressed Piezo1. The lack of correlation between P50/slope and channel density (C64, C65, C66) is well-documented. The slight decrease in open probability (C63) is statistically observed but represents a minor effect (<0.5% change) that does not indicate strong functional cooperativity. The combination of electrophysiology and imaging (C66) strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C93",
+      "C94"
+    ],
+    "result": "Stochastic modeling using a Thomas point process suggests Piezo1 channels in Neuro2A cells are either randomly distributed or exhibit mild clustering (mean cluster size ~1.6 channels). Random distribution predicts ~5% of channels within 100 nm of each other (mean nearest-neighbor distance ~390 nm), while mild clustering predicts ~50% within 100 nm (mean distance ~225 nm). Larger clusters (n~5) fail to reproduce experimental distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47\u2013C53 and C93\u2013C94 are supported by computational modeling that fits experimental channel count distributions. The modeling appropriately accounts for experimental variability (pipette size, single-channel current) and tests multiple clustering scenarios. The key observation that ~15% of patches contain zero channels (C85) provides critical validation of spatial resolution. However, the modeling cannot definitively distinguish between random distribution and mild clustering, as both fit the data reasonably well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C54",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Piezo1 channels inherently behave as independent mechanotransducers at physiologically relevant densities, with no strong intrinsic tendency to spatially concentrate or functionally modulate each other's mechanical sensitivity. Even if mild spatial clustering occurs (2\u20133 channels), it does not substantially affect pressure sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This central conclusion (C8, C69, C70) is well-supported by the convergence of functional data (C46, C54) showing no density-dependent changes in mechanosensitivity and spatial modeling (C68) indicating most channels are too far apart to interact. The integration of electrophysiological measurements across two orders of magnitude in density with stochastic spatial modeling provides strong evidence for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C71",
+      "C76"
+    ],
+    "result": "The independent behavior of Piezo1 channels is proposed to be essential for cells to transduce forces homogeneously across the entire cell membrane, with potential applicability to other cell types expressing Piezo1 at similar or lower levels than Neuro2A cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C71 are speculative proposals about functional significance that extend beyond the experimental data. While the observation of functional independence is well-supported, the claim that this property is 'essential' for homogeneous force transduction (C9) lacks direct experimental validation. The extrapolation to other cell types (C76) is reasonable but speculative without additional experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C90"
+    ],
+    "result": "A novel ramp pressure protocol was developed and validated for accurate measurement of Piezo1 channel number and function. The protocol minimizes membrane creep artifacts, shows minimal inactivation at +60 mV (96.5\u00b17.4% current at 200 ms), and achieves high measurement accuracy (24% variability in repeated measurements, mean single-channel current 0.98\u00b10.04 pA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35\u2013C37, C39, C40, and C90 describe methodological developments that are well-validated through control experiments (knockout cells, repeated measurements). The comparison with traditional step protocols and quantification of background currents (2\u20133 pA) demonstrates rigor. The high reproducibility (24% variability) and large sample size (n=281 patches) support the reliability of this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Endogenous Piezo1 density in Neuro2A cells was determined to be 1\u20132 channels/\u03bcm\u00b2 (mean 3.5\u00b13.1 channels per patch), with ~15% of patches containing zero channels. Channel distributions were identical between overnight and acutely plated cells (p=0.6), arguing against redistribution to the cell-substrate interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41\u2013C43 and C85\u2013C89 are supported by direct experimental measurements with appropriate statistical analysis. The patch dome size estimate (C42, C81) is based on imaging data, though this introduces some uncertainty. The comparison between plating conditions (C88, C89) provides important validation that the measurements reflect true cellular distribution rather than experimental artifacts. The observation of zero-channel patches (C85) is a critical quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In the nominal absence of membrane tension, Piezo1 open probability is very low (<1%) at all densities but slightly decreases (~0.5%) with increasing channel number. This contrasts with simulations predicting increased open probability at extreme channel proximity (1\u20133 nm). Alternative mechanisms such as calcium-induced cooperativity may explain minor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is supported by experimental data, but the magnitude of the effect is small and the mechanism unclear. The comparison with simulations (C73) highlights a discrepancy that could arise from technical limitations in either approach. The speculation about calcium-mediated effects (C74, C75) is reasonable but untested. The prepulse protocol may not completely eliminate resting tension, introducing uncertainty about the true baseline condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C79",
+      "C80"
+    ],
+    "result": "Theoretical calculations predict Piezo1 can sense and curve the proximal membrane with a characteristic decay length of ~14 nm, yielding a total membrane footprint of ~50 nm. Channels within this footprint may influence each other via membrane curvature effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C79, and C80 accurately represent theoretical predictions from cited work (Haselwandter and MacKinnon, 2018). The calculation of the ~50 nm footprint (C80) is straightforward and appropriately used throughout the manuscript. However, these are theoretical predictions rather than experimental findings from this study, and the current work actually challenges the functional significance of these predicted interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The authors predict that if Piezo1 clustering is observed in specific cell types, it would require a dedicated non-Piezo-intrinsic mechanism such as a tethering molecule, since Piezo1 shows no intrinsic clustering tendency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C78 represent logical predictions based on the experimental findings that Piezo1 lacks intrinsic clustering tendency (C69). This is a reasonable inference from the data, though it remains a prediction about future observations rather than a directly tested hypothesis. The prediction is consistent with the experimental evidence but would require validation in other cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C28"
+    ],
+    "result": "Prior structural and reconstitution studies have shown that Piezo1 has a bowl-shaped/dome-shaped structure capable of inducing membrane curvature, and imaging of reconstituted Piezo1 in vesicles demonstrated local membrane curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C23, and C28 accurately represent findings from cited prior work (cryo-EM structures and reconstitution studies). These are well-established results in the field that provide important context for the current study. The authors appropriately cite the relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C91",
+      "C92"
+    ],
+    "result": "At the highest density measured (~100 channels/\u03bcm\u00b2), randomly distributed Piezo1 channels would have a mean nearest-neighbor distance of ~50 nm, resulting in substantial footprint overlap. This density is sufficient for channels to be in close enough proximity to potentially influence each other's function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C91, and C92 are supported by straightforward geometric calculations based on observed channel densities. The calculation that mean nearest-neighbor distance equals ~50 nm at 100 channels/\u03bcm\u00b2 is mathematically sound. The inference that this is sufficient for potential interactions (C61) is reasonable given the predicted 50 nm footprint, though the functional data show no such interactions actually occur.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Repeated pressure protocols on the same patch showed a slight systematic shift in P50 toward smaller pressures in the second protocol (\u0394P50=+2.0\u00b18.2 mmHg; p<0.05), likely due to membrane creep and corresponding increase in patch radius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C96 are supported by paired statistical analysis (n=261 patches). The small magnitude of the shift (2 mmHg) and the mechanistic explanation (membrane creep) are reasonable. This finding validates the protocol design choice to minimize the number of pressure applications and demonstrates awareness of potential artifacts.",
+    "result_type": "MINOR"
+  }
+]

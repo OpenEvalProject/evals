@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Low-intensity transcranial ultrasound (5 mW/cm\u00b2 ISPTA, 1 minute) activates neurons in mouse brain, as evidenced by increased p-ERK positive cells in cortex, hippocampus, and amygdala, with regional specificity. The ultrasound parameters were kept below 10 mW/cm\u00b2 ISATA for safety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from p-ERK immunohistochemistry showing significant increases in neuronal activation across multiple brain regions (cortex p=0.0007, hippocampus p=0.0132, amygdala p=0.0023) with detailed regional mapping. The methodological claims (C2, C65-C67) establish appropriate safety parameters and validate p-ERK as an activation marker. The regional specificity (C6) with unchanged PVH staining strengthens the specificity of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "A mixed loading condition (700 mVpp, 20% duty factor) combining ultrasound-induced pressure and acoustic streaming effectively activates cultured cortical neurons with dose-dependent calcium responses (threshold 400 mVpp/8 kPa, EC50 700 mVpp/12 kPa), while pressure-predominant or streaming-predominant conditions alone are ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 demonstrate through calcium imaging that a specific combination of mechanical forces is required for neuronal activation. The dose-response relationship with clear threshold and EC50 values provides quantitative support. However, the manuscript lacks detailed statistical analysis of the dose-response curve fitting and error estimates for EC50 determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "ASIC1a is the primary mechanosensor mediating ultrasound-induced calcium responses in cultured neurons, as demonstrated by complete inhibition with amiloride (non-selective ASIC blocker) and significant inhibition with PcTx1 (ASIC1a-specific inhibitor, IC50 0.2 nM), while Piezo and TRP channel inhibitors show minimal or partial effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 provide a systematic pharmacological dissection showing ASIC1a is the key channel. The IC50 of 0.2 nM for PcTx1 (C14) matches known values for homotrimeric ASIC1a, supporting the inference about channel composition. However, the discrepancy in gadolinium concentration between text (10 \u03bcM in C9) and figure (120 \u03bcM claimed, but 50-100 \u03bcM shown in Figure 2I) raises concerns about data consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Ultrasound-induced calcium responses require extracellular calcium influx (blocked by EGTA) and involve endoplasmic reticulum calcium release through IP3R (strongly inhibited by Xestospongin C) and RyR (partially inhibited by JTV519 fumarate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 establish the calcium signaling pathway downstream of ASIC1a activation. The complete block by EGTA demonstrates extracellular calcium dependence, while differential effects of IP3R and RyR inhibitors reveal intracellular amplification mechanisms. The data support a two-component calcium response model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Cytoskeletal integrity is required for ultrasound-mediated neuronal activation, as both actin polymerization inhibitor (cytochalasin D, 5-10 \u03bcg/ml) and microtubule assembly inhibitor (nocodazole, 5-10 \u03bcg/ml) dose-dependently suppress calcium responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 demonstrate cytoskeletal dependence through pharmacological disruption experiments. The dose-dependent effects and statistical significance (p=0.007 and p=0.004 from Figure 3E) support the conclusion. This finding is consistent with a tether-mode mechanotransduction model for ASIC1a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "ASIC1a overexpression in CHO cells accelerates calcium responses to ultrasound (immediate vs. delayed), and PcTx1 selectively inhibits responses in ASIC1a-transfected cells but not in mock-transfected cells, confirming ASIC1a's specific role in ultrasound mechanotransduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 provide gain-of-function evidence in a heterologous system. The two-way ANOVA showing significant effects of both ASIC1a overexpression and ultrasound (C20), combined with selective PcTx1 inhibition in transfected cells (C22, F=4.46, p<0.0001 for interaction), strongly supports ASIC1a's causal role. The presence of delayed responses in mock-transfected cells suggests endogenous mechanosensitive machinery in CHO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C53",
+      "C54"
+    ],
+    "result": "Repeated low-intensity ultrasound stimulation (3 consecutive days, 5 min, 5 mW/cm\u00b2) induces a significant twofold increase in DCX-positive cells in dentate gyrus at days 4 and 7, suggesting promotion of adult neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 demonstrate a biological outcome of repeated ultrasound stimulation. The use of DCX as a neurogenesis marker is well-established (C53), and the twofold increase is statistically significant (p=0.0013, F=15.18 from Figure 5B). However, DCX marks immature neurons and neuronal precursors, not necessarily completed neurogenesis. Longer-term studies with mature neuronal markers would strengthen the neurogenesis claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The ultrasound-induced increase in DCX-positive cells is partially compromised in Asic1-/- mice, with two-way ANOVA showing both ultrasound treatment (F=9.4, p=0.0098) and Asic1-/- genotype (F=26.35, p=0.0002) significantly regulate DCX cell counts independently without significant interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide genetic loss-of-function evidence linking ASIC1a to ultrasound-induced neurogenesis. The statistical analysis is appropriate, showing both factors contribute independently. The partial rather than complete compromise suggests ASIC1a is important but not the sole mediator of this effect, or that compensatory mechanisms exist in the knockout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Asic1-/- mice show greatly reduced p-ERK responses to ultrasound in cortex and amygdala (statistically insignificant differences from controls), while Asic3-/- mice retain significant p-ERK responses, indicating direct brain activation rather than indirect activation through peripheral sensory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide strong genetic evidence for ASIC1a's role in brain activation by ultrasound. The differential effects in Asic1-/- vs. Asic3-/- mice (C29-C31) effectively rule out auditory or peripheral sensory mediation, as ASIC3 is expressed in peripheral sensory neurons. The two-way ANOVA showing genotype-ultrasound interaction only in cortex (F=6.45, p=0.0037) suggests regional differences in mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The majority (94%) of ultrasound-activated p-ERK positive cells are neurons (NeuN+), with small populations of GABAergic interneurons (4.5% GAD67+) and parvalbumin-positive interneurons (0.9% PV+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 characterize the cell types responding to ultrasound through co-staining experiments. The data clearly show predominantly neuronal activation with minimal interneuron involvement. However, the sample sizes for quantification are relatively small (197-223 cells total), and the manuscript notes that NMDAR co-staining was negative despite NeuN positivity, which is somewhat unexpected and deserves further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Based on the IC50 of 0.2 nM for PcTx1 inhibition, homotrimeric ASIC1a channels are likely the predominant subtype mediating ultrasound mechanotransduction in cortical neurons, as this IC50 matches the known sensitivity of homotrimers (0.5-1 nM) rather than heterotrimers (3-50 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 make a well-reasoned inference about channel stoichiometry based on pharmacological data. The IC50 determination (C14, C46) combined with literature values for different ASIC1a configurations (C43-C45) supports the homotrimer conclusion. However, this remains an inference based on inhibitor sensitivity; direct biochemical or structural evidence would provide stronger support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C52"
+    ],
+    "result": "The proposed mechanotransduction mechanism involves ASIC1a experiencing combined shear force (from acoustic streaming on extracellular domains) and compression force (from ultrasound on intracellular cytoskeleton-connected domains), with ASIC1a activation leading to sodium influx and subsequent calcium elevation possibly through voltage-gated calcium channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48, C52 present a mechanistic model that is speculative and based on inference rather than direct evidence. While the model is consistent with the cytoskeletal dependence data (C17-C18) and the requirement for mixed loading conditions (C7), the specific molecular details of force transmission and the role of voltage-gated calcium channels lack direct experimental validation. The model is plausible but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ASIC1a is N-glycosylated at extracellular residues N366 and N393, and N-glycosylation is involved in ASIC1 trafficking and may mediate extracellular matrix interactions important for mechanotransduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by citations to prior literature. These are background knowledge claims that provide context for the mechanistic model but are not experimentally tested in this manuscript. The connection to the current work is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "DCX plays multiple roles in brain development including neuronal migration and axonal wiring, therefore ultrasound use in developing brains should be extremely cautious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide an important cautionary note based on established knowledge about DCX function. This is a reasonable inference given DCX's developmental roles, though the current study was performed in adult mice. The caution is appropriate but represents a limitation discussion rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C57",
+      "C58"
+    ],
+    "result": "Low-intensity ultrasound can modulate neuronal activity in mouse brain and directly activate neurons via ASIC1a, providing a molecular basis for future ultrasound neuromodulation applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C57-C58 are summary conclusions supported by the collective evidence from in vitro calcium imaging, pharmacological inhibition, genetic knockout studies, and in vivo p-ERK activation. The integration of multiple experimental approaches provides strong support for ASIC1a as a key mediator of low-intensity ultrasound effects on neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Prior work has established roles for ASICs in mechanotransduction, ASIC1a as an acid sensor in brain, and various mechanosensitive channels (TRP-4, Piezo1) as ultrasound sensors at higher intensities, but safety concerns remain for high-intensity ultrasound applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C38, C59-C62, C64 accurately summarize relevant prior literature and provide appropriate context for the current study. These are background claims supported by citations. The characterization of the field and identification of the gap (need for low-intensity ultrasound mechanisms) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Results from Asic3-/- mice suggest peripheral nerves may not mediate ultrasound-induced brain activation, and the mechanism may be ASIC1a-specific rather than involving other ASIC subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are interpretations of the Asic3-/- data (C29-C31) that are reasonable given ASIC3's expression pattern in peripheral sensory neurons. However, C40 includes speculation about subtype-specificity that, while plausible, is not definitively proven as other ASIC subtypes were not systematically tested in knockout models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Repeated transcranial low-intensity ultrasound stimulations are safe and able to elicit adult neurogenesis in mouse brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 asserts safety based on using low-intensity parameters, but no systematic safety studies (histological damage assessment, behavioral effects, long-term outcomes) are presented. The neurogenesis claim is supported by DCX data (C23-C26), but the safety assertion lacks direct experimental evidence beyond parameter selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Asic1-/- mice were generated by crossing Asic1f/f conditional knockout mice with protamine-Cre mice, and Asic3-/- mice were generated using homologous recombination with specific targeting constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are methodological descriptions of mouse line generation supported by citations. These are standard approaches for generating knockout mice and the descriptions are adequate for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

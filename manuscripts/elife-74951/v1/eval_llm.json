@@ -1,0 +1,102 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The authors defend their original findings of changes in procoagulant and fibrinolytic gene expression in COVID-19 patients' lungs against methodological criticisms. After reanalysis addressing concerns about library depth, preparation methods, and control group metadata, they conclude their datasets are comparable and support their original conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors present reanalysis (C3) in response to specific criticisms (C2), the manuscript is a response/rebuttal rather than presenting independent validation. The core claim relies on the adequacy of their methodological corrections, which are addressed in subsequent results. Without independent experimental validation or additional datasets, the overall conclusion remains dependent on the validity of their analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C34"
+    ],
+    "result": "The control samples from Michalovich et al. consisted of 40 BALF samples, most with comorbidities (asthma, nicotine dependence, obesity), with only three reportedly free of comorbidities. The authors justify using these as controls because their goal was to test for gene expression differences in response to SARS-CoV-2 infection, not to compare against perfectly healthy individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 accurately describe the control sample composition, and C33-C34 clearly state the study design rationale. The authors transparently acknowledge the control group characteristics and provide a reasonable scientific justification for their use in testing viral infection effects rather than requiring disease-free controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors address concerns about dissimilar library preparation methods (polyA enrichment for controls vs. total RNA for cases) by applying TMM normalization via edgeR and RUVSeq correction for technical variation. They demonstrate that log-fold changes with and without rRNA are highly correlated (R\u00b2 ~0.99954), supporting the comparability of the datasets despite different preparation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the high correlation (C11) suggests consistency between approaches, and normalization methods (C9, C31) are appropriate tools for addressing technical variation (C8), the fundamental issue of comparing polyA-enriched to total RNA libraries remains problematic. The choice of k=1 for RUVSeq is not justified, and no validation is provided showing that these corrections adequately remove batch effects. The dismissal of Zhao et al.'s concerns (C10) based on their focus on TPM rather than TMM/RLE is insufficient without demonstrating that TMM actually resolves the specific issues raised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors acknowledge low read depth in the nine COVID-19 BALF samples and resulting false-positive counts from Alu elements. They address this by using stringent mapping parameters (0.95 length and similarity vs. 0.80 default) and argue that genes expressed in cases but absent in controls are likely true positives with underestimated fold-changes. For genes with zero counts in controls, they used the lowest matrix value as denominator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The methodological approach contains critical flaws. Using the 'lowest number in the matrix' as denominator (C29) is statistically inappropriate and arbitrary\u2014this is not a standard method for handling zero counts in differential expression analysis. The claim that stringent mapping reduces false positives (C15-C17) does not address the fundamental problem of insufficient statistical power from low read depth. The inference that fold-changes are 'likely underestimates' (C18) is not supported by statistical analysis. Standard RNA-seq tools (like edgeR mentioned in C9) have established methods for handling low counts that were apparently not properly applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors find that tissue factor (F3) is not appreciably expressed at the mRNA level in BALF samples from either COVID-19 cases or controls, attributing this to Alu elements causing ambiguous read mapping. They acknowledge that F3 may be regulated at the protein/activity level or in other tissues, and their analysis does not preclude a role for F3 in COVID-19 pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 provide clear evidence from Figure 2 showing multi-mapping reads that cannot be confidently assigned to F3. The conclusion of minimal F3 mRNA expression (C21) is appropriately cautious, and the authors properly acknowledge limitations (C22-C24) regarding other regulatory mechanisms and tissue types. This represents a measured interpretation of negative/ambiguous data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors cite literature showing increased tissue factor detected by other methods (flow cytometry, confocal microscopy, RT-qPCR) in immune cells from COVID-19 patients, and note that SARS-CoV-2 spike protein can activate tissue factor through 'decryption' without changing expression levels, which they claim is consistent with their findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 appropriately cite relevant literature with specific methodologies. The inference (C28) that post-translational activation is consistent with their lack of mRNA changes is logically sound and helps contextualize their negative F3 expression results within the broader COVID-19 coagulation literature.",
+    "result_type": "MINOR"
+  }
+]

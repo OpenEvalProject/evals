@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study successfully combined immersive VR with EEG recording in 37 participants who experienced two rollercoaster rides while EEG was recorded, then retrospectively rated their emotional arousal. The experimental setup included both head-movement and no-head-movement conditions, with appropriate counterbalancing and quality control measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is well-documented with clear sample sizes (C2, C50, C51), appropriate exclusion criteria (C49), counterbalancing (C48), and detailed technical specifications (C39-C42). The arousal ratings show expected patterns with highest arousal for Andes coaster (C55), and simulator sickness was monitored (C52). The methodological rigor supports the feasibility of combining VR with EEG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SPoC analysis revealed a significant negative correlation between parieto-occipital alpha power and subjective emotional arousal ratings. For the majority of participants (92% nomov, 84% mov), the component with highest lambda value maximized the negative correlation, with group-level significance (p < 0.01) and mean correlations of -0.25 in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While group-level statistics are significant (C60), only 30-37% of individual participants showed significant correlations after permutation testing (C58, C59). The modest effect sizes (r = -0.25) and low single-subject significance rates raise questions about the robustness and generalizability of the finding. The result may be driven by a subset of participants or specific task features (e.g., the break period).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "CSP-based classification successfully decoded high versus low emotional arousal states with mean accuracies of ~61% (significantly above chance) in both movement conditions. Under stricter sub-blocked cross-validation with permutation testing, performance remained significant at the group level (ROC-AUC ~0.60), though fewer individual participants showed significant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CSP results show consistent above-chance classification with appropriate statistical testing including permutation controls (C67-C69). The convergence of results across standard and strict validation approaches strengthens confidence. However, the modest accuracy (~61%) and reduced single-subject significance under stricter testing (26-35% of participants, C68-C69) indicates the effect is real but moderate in strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "LSTM-based classification achieved mean accuracies of 59-61% (significantly above chance, p < 0.001) for decoding emotional arousal states, with notably higher single-subject significance rates in the movement condition (84% of participants) compared to no-movement (62%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LSTM results are statistically significant at the group level (C72) with comparable performance to CSP. The higher single-subject significance rate in the movement condition (C74) is interesting but unexplained. The lack of permutation testing for LSTM (acknowledged by authors) is a limitation, though the convergence with CSP results provides some validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C94",
+      "C96",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "The three decoding approaches (SPoC, CSP, LSTM) showed convergent results with significant correlations between CSP and LSTM predictions, similar spatial patterns between SPoC and CSP, and no significant differences in performance between models or movement conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence across methods (C75, C96, C99) strengthens confidence in the findings. The similar spatial patterns (C96) and lack of performance differences (C76, C94) suggest the methods are capturing the same underlying signal. The inference that LSTM extracts similar power-based features as CSP (C100) is reasonable given the strong correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Control analyses excluding the break period showed that both SPoC and CSP remained significantly above chance at the group level, though with numerically decreased performance. The decrease was significant for CSP in the no-movement condition but not in the movement condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control analysis appropriately tests whether results depend on the distinctive break period. Both methods remain significant without the break (C77, C80, C81), indicating the effect is not solely driven by this contrast. The performance decrease (C82-C84) is expected given less training data and narrower arousal range, and the pattern of results (significant decrease only in nomov for CSP) suggests some condition-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C105"
+    ],
+    "result": "Source localization using eLORETA identified parieto-occipital regions as the primary sources of arousal-related alpha oscillations, with additional contributions from sensorimotor cortices potentially corresponding to somatic experiences during the rollercoaster rides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The source localization results (C105, C90) are consistent with prior literature on alpha oscillations and emotional arousal. The identification of parieto-occipital sources aligns with the scalp topographies and the hypothesis. The interpretation of sensorimotor contributions (C90) is speculative but reasonable given the rollercoaster context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study demonstrates that EEG can be successfully combined with immersive VR and head movements with appropriate quality control, though the decoding accuracy was relatively modest (~60%) compared to other EEG paradigms, likely due to the naturalistic, dynamic stimulation and retrospective rating approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The feasibility conclusion (C95) is supported by the successful data collection and comparable results across movement conditions. The acknowledgment of modest accuracy (C106) and discussion of contributing factors (C107-C110) shows appropriate self-criticism. The retrospective rating approach (C109, C110) was designed to minimize biases, though some asynchronicity between experience and rating is unavoidable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C104",
+      "C119",
+      "C120"
+    ],
+    "result": "The study confirms that findings from event-related, simplified stimulation regarding the relationship between alpha power and emotional arousal generalize to more naturalistic, dynamic VR settings, demonstrating that subjective emotional arousal can be decoded from neural information in naturalistic research designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main conclusions (C86, C87, C120) are supported by the convergent results across multiple analytical approaches. The claim of generalization from lab to naturalistic settings (C85, C87, C119) is justified given the successful replication of the alpha-arousal relationship in a more complex, dynamic context. However, the modest effect sizes and individual variability suggest the generalization is not perfect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The LSTM model converged rapidly (< 200 iterations) on the relatively small dataset, likely due to efficient gradient flow through LSTM memory cells and the spatial-spectral filtering preprocessing that extracted narrow-band alpha components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of rapid convergence (C101) is documented, and the explanations involving LSTM architecture (C102) and preprocessing (C103) are reasonable and supported by citations. This demonstrates the practical applicability of deep learning to sparse neuroscience datasets when appropriate preprocessing is applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study has limitations including use of commercial VR content without source code access, relatively short recording times leading to data sparsity, and the inherent challenges of decoding from sparse naturalistic data, though cross-validation was used to mitigate limited data issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge limitations regarding stimulus control (C113, C114), data sparsity (C115, C116), and analytical approaches (C117). These are genuine limitations that affect interpretability and generalizability. The acknowledgment that more data would improve robustness (C118) is a standard limitation in machine learning studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C27",
+      "C28",
+      "C121"
+    ],
+    "result": "Immersive VR enables naturalistic neuroscientific studies while maintaining experimental control, and combining VR with neuroimaging may increase the generalizability and real-world relevance of neuroscientific findings by allowing study of the brain under conditions it was optimized for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the broader motivation and implications of the work. The successful execution of the study (C1) supports the feasibility claim. The arguments about naturalistic experiments (C27, C28) are well-supported by citations and the study's results. The forward-looking statement (C121) is appropriately framed as aspirational rather than demonstrated.",
+    "result_type": "MINOR"
+  }
+]

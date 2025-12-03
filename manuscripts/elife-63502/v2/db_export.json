@@ -1,0 +1,2030 @@
+{
+  "submission": {
+    "id": "5ac569bc-5907-4d17-a816-f86f752faf3a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:25:42.591382Z",
+    "updated_at": "2025-12-03T01:25:42.591382Z"
+  },
+  "content": [
+    {
+      "id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "submission_id": "5ac569bc-5907-4d17-a816-f86f752faf3a",
+      "content_type": "manuscript",
+      "content_text": "# Longitudinal high-throughput TCR repertoire profiling reveals the dynamics of T-cell memory formation after mild COVID-19 infection\n\n## Authors\n\n- Anastasia A Minervina<sup>1</sup> ([ORCID: 0000-0001-9884-6351](https://orcid.org/0000-0001-9884-6351))\n- Ekaterina A Komech<sup>1</sup>\n- Aleksei Titov<sup>3</sup>\n- Meriem Bensouda Koraichi<sup>4</sup>\n- Elisa Rosati<sup>5</sup> ([ORCID: 0000-0002-2635-6422](https://orcid.org/0000-0002-2635-6422))\n- Ilgar Z Mamedov<sup>1</sup>\n- Andre Franke<sup>5</sup>\n- Grigory A Efimov<sup>3</sup>\n- Dmitriy M Chudakov<sup>1</sup> ([ORCID: 0000-0003-0430-790X](https://orcid.org/0000-0003-0430-790X))\n- Thierry Mora<sup>4</sup> ([ORCID: 0000-0002-5456-9361](https://orcid.org/0000-0002-5456-9361))\n- Aleksandra M Walczak<sup>4</sup> ([ORCID: 0000-0002-2686-5702](https://orcid.org/0000-0002-2686-5702))\n- Yuri B Lebedev<sup>1</sup> ([ORCID: 0000-0003-4554-4733](https://orcid.org/0000-0003-4554-4733))\n- Mikhail V Pogorelyy<sup>1</sup> ([ORCID: 0000-0003-0773-1204](https://orcid.org/0000-0003-0773-1204)) \u2020\n\n### Affiliations\n\n1. Shemyakin-Ovchinnikov Institute of Bioorganic Chemistry Moscow Russian Federation\n2. Pirogov Russian National Research Medical University Moscow Russian Federation\n3. National Research Center for Hematology Moscow Russian Federation\n4. Laboratoire de physique de l'\u00c9cole Normale Sup\u00e9rieure, ENS, PSL, Sorbonne Universite, Universite de Paris, and CNRS Paris France\n5. Institute of Clinical Molecular Biology, Kiel University Kiel Germany\n6. Masaryk University, Central European Institute of Technology Brno Czech Republic\n7. V.I. Kulakov National Medical Research Center for Obstetrics, Gynecology and Perinatology Moscow Russian Federation\n8. Moscow State University Moscow Russian Federation\n\n\u2020 Corresponding author\n\n## Abstract\n\nCOVID-19 is a global pandemic caused by the SARS-CoV-2 coronavirus. T cells play a key role in the adaptive antiviral immune response by killing infected cells and facilitating the selection of virus-specific antibodies. However, neither the dynamics and cross-reactivity of the SARS-CoV-2-specific T-cell response nor the diversity of resulting immune memory is well understood. In this study, we use longitudinal high-throughput T-cell receptor (TCR) sequencing to track changes in the T-cell repertoire following two mild cases of COVID-19. In both donors, we identified CD4+ and CD8+ T-cell clones with transient clonal expansion after infection. We describe characteristic motifs in TCR sequences of COVID-19-reactive clones and show preferential occurrence of these motifs in publicly available large dataset of repertoires from COVID-19 patients. We show that in both donors, the majority of infection-reactive clonotypes acquire memory phenotypes. Certain T-cell clones were detected in the memory fraction at the pre-infection time point, suggesting participation of pre-existing cross-reactive memory T cells in the immune response to SARS-CoV-2.\n\n## Introduction\n\nCOVID-19 is a global pandemic caused by the novel SARS-CoV-2 betacoronavirus (Vabret et al., 2020). T cells are crucial for clearing respiratory viral infections and providing long-term immune memory (Schmidt and Varga, 2018; Swain et al., 2012). Two major subsets of T cells participate in the immune response to viral infection in different ways: activated CD8+ T cells directly kill infected cells, while subpopulations of CD4+ T cells produce signalling molecules that regulate myeloid cell behaviour, drive, and support CD8 response and the formation of long-term CD8 memory, and participate in the selection and affinity maturation of antigen-specific B\u00a0cells, ultimately leading to the generation of neutralizing antibodies. In SARS-1 survivors, antigen-specific memory T cells were detected up to 11 years after the initial infection, when viral-specific antibodies were undetectable (Ng et al., 2016; Oh et al., 2011). The T-cell response was shown to be critical for protection in SARS-1-infected mice (Zhao et al., 2010). Patients with X-linked agammaglobulinemia, a genetic disorder associated with lack of B cells, have been reported to recover from symptomatic COVID-19 (Quinti et al., 2020; Soresina et al., 2020), suggesting that in some cases, T cells are sufficient for viral clearance. Thevarajan et al. showed that activated CD8+HLA\u2013DR+CD38+ T cells in a mild case of COVID-19 significantly expand following symptom onset, reaching their peak frequency of 12% of CD8+ T cells on day 9 after symptom onset, and contract thereafter (Thevarajan et al., 2020). Given the average time of 5 days from infection to the onset of symptoms (Bi et al., 2020), the dynamics and magnitude of T-cell response to SARS-CoV-2 is similar to that observed after immunization with live vaccines (Miller et al., 2008). SARS-CoV-2-specific T cells were detected in COVID-19 survivors by activation following stimulation with SARS-CoV-2 proteins (Ni et al., 2020) or by viral protein-derived peptide pools (Weiskopf et al., 2020; Braun et al., 2020; Snyder et al., 2020; Le Bert et al., 2020; Meckiff et al., 2020; Bacher et al., 2020; Peng et al., 2020). Some of the T cells activated by peptide stimulation were shown to have a memory phenotype (Weiskopf et al., 2020; Le Bert et al., 2020; Mateus et al., 2020), and some potentially cross-reactive CD4+ T cells were found in healthy donors (Braun et al., 2020; Grifoni et al., 2020; Sekine et al., 2020; Bacher et al., 2020).\n\nT cells recognise short pathogen-derived peptides presented on the cell surface of the major histocompatibility complex (MHC) using hypervariable T-cell receptors (TCR). TCR repertoire sequencing allows for the quantitative tracking of T-cell clones in time, as they go through the expansion and contraction phases of the response. It was previously shown that quantitative longitudinal TCR sequencing is able to identify antigen-specific expanding and contracting T cells in response to yellow fever vaccination with high sensitivity and specificity (Minervina et al., 2020; Pogorelyy et al., 2018; DeWitt et al., 2015). Not only clonal expansion but also significant contraction from the peak of the response are distinctive traits of T-cell clones specific to the virus (Pogorelyy et al., 2018).\n\nIn this study, we use longitudinal TCRalpha and TCRbeta repertoire sequencing to quantitatively track T-cell clones that significantly expand and contract after recovery from a mild COVID-19 infection, and determine their phenotype. We reveal the dynamics and the phenotype of the memory cells formed after infection, identify pre-existing T-cell memory clones participating in the response, and describe public TCR sequence motifs of SARS-CoV-2-reactive clones, suggesting a response to immunodominant epitopes.\n\n## Results\n\n### Longitudinal tracking of TCR repertoires of COVID-19 patients\n\nIn the middle of March (day 0), donor W female and donor M male\u00a0(both healthy young adults) returned to their home country from the one of the centres of the COVID-19 outbreak in Europe at the time. Upon arrival, according to local regulations, they were put into strict self-quarantine for 14 days. On day 3 of self-isolation, both developed low-grade fever, fatigue, and myalgia, which lasted 4 days and was followed by a temporary loss of smell for donor M. On days 15, 30, 37, 45, and 85, we collected peripheral blood samples from both donors (Figure 1a). The presence of IgG and IgM SARS-CoV-2-specific antibodies in the plasma was measured at all time\u00a0points using SARS-CoV-2 S-RBD domain-specific ELISA (Figure 1\u2014figure supplement 1). From each blood sample, we isolated peripheral blood mononuclear cells (PBMCs, in two biological replicates), CD4+, and CD8+ T cells. Additionally, on days 30, 45, and 85, we isolated four T-cell memory subpopulations (Figure 1\u2014figure supplement 2a): effector memory (EM: CCR7\u2212CD45RA\u2212), effector memory with CD45RA re-expression (EMRA: CCR7\u2212CD45RA+), central memory (CM: CCR7+CD45RA\u2212), and stem cell-like memory (SCM: CCR7+CD45RA+CD95+). From all samples, we isolated RNA and performed TCRalpha and TCRbeta repertoire sequencing as previously described (Pogorelyy et al., 2017). For both donors, TCRalpha and TCRbeta repertoires were obtained for other projects 1\u00a0and 2\u00a0years prior to infection. Additionally, TCR repertoires of multiple samples for donor M \u2013 including sorted memory subpopulations \u2013 are available from a published longitudinal TCR sequencing study after yellow fever vaccination (donor M1 samples in Minervina et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig1-v2.jpg)\n\n**Figure 1.:** (a) Study design. Peripheral blood of two donors was sampled longitudinally on days 15, 30, 37, 45, and\u00a085 after arrival in Russia. At each time\u00a0point, we evaluated SARS-CoV-2-specific antibodies using ELISA (Figure 1\u2014figure supplement 1) and isolated PBMCs in two biological replicates. Additionally, CD4+ and CD8+ cells were isolated from a separate portion of blood, and EM, CM, EMRA, and\u00a0SCM memory subpopulations were FACS sorted on days 30, 45, and 85. For each sample, we sequenced TCRalpha and TCRbeta repertoires. For both donors, pre-infection PBMC repertoires were sampled in 2018 and 2019 for other projects. (b,\u00a0c) PCA of clonal temporal trajectories identifies three groups of clones with distinctive behaviours. Left: First two principal components of the 1000 most abundant TCRbeta clonotype frequencies normalized by maximum value for each clonotype in PBMC at post-infection time\u00a0points. Colour indicates hierarchical clustering results of principal components; symbol indicates if clonotype was called as significantly contracted from day 15 to day 85 (triangles) or expanded from day 15 to day 37 (circles) by both edgeR and NoisET (Figure 1\u2014figure supplement 5 shows overlap between clonal trajectory clusters and edgeR/NoisET hits). Right: Each curve shows the average \u00b12.96 SE of normalized clonal frequencies from each cluster. Contracting (d) and expanding (e) clones include both CD4+ and CD8+ T cells and are less abundant in pre-infection repertoires. T-cell clones significantly contracted from day 15 to day 85 (d) and significantly expanded from day 15 to day 37 (e) were identified in both donors. The fraction of contracting (d) and expanding (e) TCRbeta clonotypes in the total repertoire (calculated as the sum of frequencies of these clonotypes in the second PBMC replicate at a given time\u00a0point and corresponding to the fraction of responding cells of all T cells) is plotted in log-scale for all reactive clones (left)\u00a0and reactive clones with the CD4 (middle) and CD8 (right) phenotypes. Similar dynamics were observed in TCRalpha repertoires (Figure 1\u2014figure supplement 3) and for significantly expanded/contracted clones identified with the NoisET Bayesian differential expansion statistical model alone (Figure 1\u2014figure supplement 4).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) The relative level of SARS-CoV-2 S-RBD domain-specific IgG (y-axis) is plotted against time. Solid black line shows the threshold for positive testing. (b) Relative IgM levels in donors M and W are shown over time. Relative IgM levels for pre-pandemic serum samples from healthy donors are shown on the left (green dots).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Memory subpopulation gating strategy. Three populations of memory T cells: EM, CM, and EMRA are defined by CCR7 and CD45RA markers; SCM are distinguished from naive CCR7+ CD45RA+ T cells by CD95 expression. (b) HLA-A*02:01-YLQPRTFLL subpopulation gating strategy. On day 25 post-infection, donor M participated in study by Shomuradova et al., 2020 (as donor p1434), where his T cells were in vitro expanded and stained with HLA-A*02:01-YLQPRTFLL tetramer, TCRalpha, and TCRbeta repertoires were sequenced and resulting sequences deposited to VDJdb. See Shomuradova et al., 2020 for experimental details.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a,\u00a0b) PCA of clonal temporal trajectories identifies three groups of clones with distinctive behaviours. Left: First two principal components of the 1000 most abundant TCRalpha clonotype frequencies normalized by maximum value for each clonotype in PBMC at post-infection time\u00a0points. Colour indicates hierarchical clustering results of principal components; symbol indicates if clonotype was called as significantly contracted from day 15 to day 85 (triangles) or expanded from day 15 to day 37 (circles) by both edgeR and NoisET (Figure 1\u2014figure supplement 5 shows overlap between clonal trajectory clusters and edgeR/NoisET hits). Right: Each curve shows the average\u00a0\u00b12.96 SE of normalized clonal frequencies from each cluster. Contracting (c) and expanding (d) clones include both CD4+ and CD8+ T cells and are less abundant in pre-infection repertoires. T-cell clones significantly contracted from day 15 to day 85 (c) and significantly expanded from day 15 to day 37 (d) were identified in both donors. The fraction of contracting (c) and expanding (d) TCRalpha clonotypes in the total repertoire (calculated as the sum of frequencies of these clonotypes in the second PBMC replicate at a given time\u00a0point and corresponding to the fraction of responding cells of all T cells) is plotted in log-scale for all reactive clones (left)\u00a0and reactive clones with the CD4 (middle) and CD8 (right) phenotypes.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The fraction (plotted in the log-scale) of contracting (a) and expanding (d) TCRbeta clonotypes in the total repertoire was estimated using subsets of expanded and contracted clones called by edgeR (green) and NoisET (purple) models. Overlaps for contracted clones (b,\u00a0c) and expanded clones (e,\u00a0f) identified by both models are shown on the right.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** For each cluster of clonal trajectories identified on Figure 1b,c, Figure 1\u2014figure supplement 3a,b,\u00a0we show overlap with groups of significantly (called by edgeR and NoisET simultaneously) expanding clonotypes from day 15 to day 37 in yellow, significantly contracting clonotypes from day 15 to day 85 in green, other clonotypes are shown in purple (\u2018stable\u2019 clonotypes that\u00a0were not called significant by edgeR and NoisET simultaneously). Bar heights show fraction of abundant clonotypes in PCA cluster overlapping with expanding/contracting/non-significant groups called by edgeR/NoisET; raw number of overlapping clonotypes is shown inside bars.\n\n### Two waves of T-cell clone response\n\nFrom previously described activated T-cell dynamics for SARS-CoV-2 (Thevarajan et al., 2020), and immunization with live vaccines (Miller et al., 2008), the peak of the T-cell expansion is expected around day 15 post-infection, and responding T cells significantly contract afterwards. However, Weiskopf et al., 2020 reports an increase of SARS-CoV-2-reactive T cells at later time\u00a0points, peaking in some donors after 30 days following symptom onset. To identify groups of T-cell clones with similar dynamics in an unbiased way, we used principal component analysis (PCA) in the space of T-cell clonal trajectories (Figure 1b,c). This exploratory data analysis method allows us to visualize major trends in the dynamics of abundant TCR clonotypes (occurring within top 1000 on any post-infection time\u00a0points) between multiple time\u00a0points.\n\nIn both donors, and in both TCRalpha and TCRbeta repertoires, we identified three clusters of clones with distinct dynamics. The first cluster (Figure 1b,c, purple) corresponded to abundant TCR clonotypes that\u00a0had constant concentrations across time\u00a0points, the second cluster (Figure 1b,c, green) showed contraction dynamics from day 15 to day 85, and the third cluster (Figure 1b,c, yellow) showed an unexpected clonal expansion from day 15 with a peak on day 37 followed by contraction. The clustering and dynamics are similar in both donors and are reproduced in TCRbeta (Figure 1b,c) and TCRalpha (Figure 1\u2014figure supplement 3a,b) repertoires. We next used edgeR, a software for differential gene expression analysis (Robinson et al., 2010) and NoisET, a Bayesian differential expansion model (Puelma Touzel et al., 2020), to specifically detect changes in clonotype concentration between pairs of time\u00a0points in a statistically reliable way and without limiting the analysis to the most abundant clonotypes. Both NoisET and edgeR use biological replicate samples collected at each time\u00a0point to train a noise model for sequence counts. Results for the two models were similar (Figure 1\u2014figure supplement 4), and we conservatively defined as expanded or contracted the clonotypes that were called by both models simultaneously. We identified 291 TCRalpha and 295 TCRbeta clonotypes in donor W and 607 TCRalpha and 616 TCRbeta in donor M significantly contracted from day 15 to day 85 (largely overlapping with cluster 2 of clonal trajectories, Figure 1\u2014figure supplement 5). One hundred and seventy six TCRalpha and 278 TCRbeta for donor W and 293 TCRalpha and 427 TCRbeta clonotypes for donor M were significantly expanded from days\u00a015 to 37 (corresponding to cluster 3 of clonal trajectories).\n\nNote that, to identify putatively SARS-CoV-2-reactive clones, we only used post-infection time\u00a0points, so that our analysis can be reproduced in other patients and studies where pre-infection time\u00a0points are unavailable. However, tracking the identified responding clones back to pre-infection time\u00a0points reveals strong clonal expansions from pre- to post-infection (Figure 1d,e, Figure 1\u2014figure supplement 3c,d). For brevity, we further refer to clonotypes significantly contracted from day 15 to 85 as contracting clones and clonotypes significantly expanding from day 15 to 37 as expanding clones. Contracting clones corresponded to 2.5% and 0.9% of T cells on day 15 post-infection, expanding clones reached 1.1% and 0.8% on day 37 for donors M and W, respectively (Figure 1d,e, left). This magnitude of the T-cell response is of the same order of magnitude as previously observed after live yellow fever vaccine immunization of donor M (6.7% T cells on day 15 post-vaccination). For each contracting and expanding clone, we determined their CD4/CD8 phenotype using separately sequenced repertoires of CD4+ and CD8+ subpopulations (see Materials\u00a0and methods). Both CD4+ and CD8+ subsets participated actively in the response (Figure 1d,e). Interestingly, clonotypes expanding after day 15 were significantly biased towards the CD4+ phenotype, while contracting clones had balanced CD4/CD8 phenotype fractions in both donors (Fisher\u2019s exact test, $p<0.01$ for both donors). A recent study by Parrot et al., 2020 reported activation of mucosal-associated invariant T (MAIT) cells in COVID-19 patients. MAIT cells are innate-like T cells recognising bacterial metabolites with TCRs featuring an invariant TCRalpha chain. We used a set of 121 unique MAIT TCRalpha amino acid sequences from Loh et al., 2020 to check\u00a0whether MAIT cells contributed significantly to contracting or expanding clonotype groups identified in our study. We found that a small number of low-frequency contracting (one clonotype for each donor) and expanding (two clonotypes for each donor) TCRalpha clonotypes have MAIT invariant alpha chains, and the contribution of these clonotypes to the response was relatively small (<1% of responding T cells are MAIT).\n\n### Memory formation and pre-existing memory\n\nOn days 30, 45, and 85, we identified both contracting (Figure 2a\u2013c) and expanding (Figure 2\u2014figure supplement 1a\u2013c) T-cell clones in the memory subpopulations of peripheral blood. Both CD4+ and CD8+ responding clones were found in the CM and EM subsets; however, CD4+ were more biased towards CM (with exception of donor W day 30 time\u00a0point, where a considerable fraction of CD8+ clones were found in CM), and CD8+ clones more represented in the EMRA subset. A small number of both CD4+ and CD8+ responding clonotypes were also identified in the SCM subpopulation, which was previously shown to be a long-lived T-cell memory subset (Fuertes Marraco et al., 2015). Note that we sequenced more cells from PBMC than from the memory subpopulations (Supplementary file 1), so that some low-abundant responding T-cell clones are not sampled in the memory subpopulations. Intriguingly, a number of responding CD4+ clones, and fewer CD8+ clones, were also represented in the repertoires of both donors 1 and 2 years before the infection. The majority of the pre-existing clones had low concentrations at pre-infection and day 85 post-infection time\u00a0points, and high concentrations on day 15, suggesting that\u00a0they expanded after the infection and later contracted for both donors (Figure 2\u2014figure supplement 2). For donor M, for whom we had previously sequenced memory subpopulations before the infection (Minervina et al., 2020), we were able to identify pre-existing SARS-CoV-2-reactive CD4+ clones in the CM subpopulation 1 year before the infection and a group of CD8+ clones in the pre-infection EM subpopulation. Interestingly, on day 30 after infection, the majority of pre-infection CM clones were detected in the EM subpopulation, suggesting recent T-cell activation and a switch of the phenotype from memory to effector. These clones might represent memory T cells cross-reactive for other infections, for\u00a0example\u00a0other human coronaviruses.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig2-v2.jpg)\n\n**Figure 2.:** (a) A large fraction of contracting clonotypes is identified in T-cell memory subsets after infection. Bars show the fraction of contracting CD4+ and CD8+ TCRbeta clonotypes present in 2 year; 1 year pre-infection PBMC; in at least one of memory subpopulation sampled on day 30, day 37, and day 85 post-infection. (b,\u00a0c) Responding clones are found in different memory subsets. Fraction of CD4+ (left panels) and CD8+ (right panels) contracting clones of donor W (b) and M (c) that were identified in each memory subpopulation repertoire at each time\u00a0point. For both donors, CD4+ clonotypes were found predominantly in central memory (CM) and effector memory (EM), while CD8+ T cells were enriched in EMRA compartment. (c) For donor M, CD4+ contracting clonotypes are also identified in memory subsets 1 year before the infection, with a bias towards the CM subpopulation and a group of CD8+ clones is found in the pre-infection EM subpopulation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) A fraction of expanding clonotypes is identified in T-cell memory subsets after infection. Bars show the fraction of expanding CD4+ and CD8+ TCRbeta clonotypes present in 2 year; 1 year pre-infection PBMC; and in at least one of memory subpopulation sampled on day 30 and day 37 post-infection. (b) Responding clones are found in different memory subsets. For both W (b) and M (c) donors, CD4+ clonotypes were found predominantly in central memory (CM) and effector memory (EM), while CD8+ T cells were also present in EMRA.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The fraction of pre-existing (identified in \u22121 year and/or \u22122 year time\u00a0point pre-infection) contracting (a) and expanding (b) TCRbeta clonotypes in the total repertoire (corresponding to the fraction of responding cells of all T cells) is plotted in log-scale for all reactive clones (left)\u00a0and reactive clones with the CD4 (middle) and the CD8 phenotype (right).\n\nA search for TCRbeta amino acid sequences of responding clones in VDJdb (Bagaev et al., 2020) \u2014 a database of TCRs with known specificities \u2014 resulted in essentially no overlap with TCRs not specific for SARS-CoV-2 epitopes: only two clonotypes matched. One match corresponded to the cytomegalovirus epitope presented by the HLA-A*03 MHC allele, which is absent in both donors (Supplementary file 2), and a second match was for Influenza A virus epitope presented by HLA-A*02 allele. The absence of matches suggests that contracting and expanding clones are unlikely to be specific for immunodominant epitopes of common pathogens covered in VDJdb. We next asked if we could map specificites of our responding clones to SARS-CoV-2 epitopes.\n\n### Validation by MHC tetramer-staining assay\n\nOn day 25, post-infection donor M participated in a study by Shomuradova et al., 2020 (as donor p1434), where his CD8+ T cells were stained with a HLA-A*02:01-YLQPRTFLL MHC-I tetramer (Figure 1\u2014figure supplement 2b). TCRalpha and TCRbeta of FACS-sorted tetramer-positive cells were sequenced and deposited to VDJdb (see Shomuradova et al., 2020 for the experimental details). We matched these tetramer-specific TCR sequences to our longitudinal dataset (Figure 3a for TCRbeta and Figure 3\u2014figure supplement 1 for TCRalpha). We found that their frequencies were very low on pre-infection time\u00a0points and monotonically decreased from their peak on day 15 ($7.1\\times10^{\u22124}$ fraction of bulk TCRbeta repertoire) to day 85 ($1.3\\times10^{\u22125}$ fraction), in close analogy to our contracting clone set. Among the tetramer-positive clones that were abundant on day 15 (with bulk frequency $>10^{\u22125}$), 17 of 18 TCRbetas and 12 of 15 TCRalphas were independently identified as contracting by our method (as expected for TCRs specifically binding MHC-I multimer, all matching clonotypes in our datasets had a CD8+ phenotype). No tetramer-positive clonotypes matched with expanding clonotypes peaking on day 37.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig3-v2.jpg)\n\n**Figure 3.:** (a) SARS-CoV-2-specific TCRs are independently identified by clonal contraction. On day 25, donor M participated in a study by Shomuradova et al., 2020, where TCR sequences responding to the HLA-A*02:01-YLQPRTFLL-tetramer T cells were determined. Here we matched the resulting tetramer-specific TCRbeta clonotypes to the longitudinal repertoire dataset obtained in the current study. Each dot corresponds to the frequency of HLA-A*02:01-YLQPRTFLL-tetramer-specific TCRbeta clonotype in bulk repertoire of donor M (donor p1434 from Shomuradova et al., 2020) at each time\u00a0point. Green dots correspond to clonotypes independently identified as contracting in our longitudinal dataset. Blue line shows the cumulative frequency of tetramer-specific TCRbeta clonotypes. (b,\u00a0c) Analysis of TCR amino acid sequences of contracting CD8+ clones reveals distinctive motifs. For each set of CD8alpha and CD8beta contracted clonotypes, we constructed a separate similarity network. Each vertex in the similarity network corresponds to a contracting clonotype. An edge indicates two or less amino acid mismatches in the CDR3 region and identical V and J segments. Networks are plotted separately for CD8alpha (b) and CD8beta (c) contracting clonotypes. Clonotypes without neighbours are not shown. Sequence logos corresponding to the largest clusters are shown under the corresponding network plots. \u2018T\u2019 on vertices indicate TCRbeta clonotypes confirmed by HLA-A*02:01-YLQPRTFLL tetramer staining. Shaded coloured circles (c) indicate clonotypes with large number of matches to CD8+ TCRs recognising SARS-CoV-2 peptides pools from Snyder et al., 2020 (MIRA peptide dataset). Lists of peptides in YLQ and ORF7b peptide pools are shown on the right. (d) Sequence convergence among contracting clonotypes. The number of edges in each group is shown by pink dots and is compared to the distribution of that number in 1000 random samples of the same size from the relevant repertoires at day 15 (blue boxplots). (e) Fraction of TCRbeta clonotypes with matches in the MIRA dataset (coloured rectangles) out of all responding CD8+ TCRbeta clonotypes in donor M on day 15.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Each dot corresponds to the frequency of HLA-A*02:01-YLQPRTFLL-tetramer-specific TCRalpha in bulk repertoire from donor M (donor p1434 from Shomuradova et al., 2020) at given time\u00a0point (an estimate of fraction of tetramer+ cells of all CD3+ cells). Green dots correspond to clonotypes independently identified as contracting in our longitudinal dataset. Blue line shows cumulative frequency of HLA-A*02:01-YLQPRTFLL-tetramer-specific TCRalpha clonotypes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Similarity network shows ALICE hits (clones in repertoire with more neighbours than expected by chance), which differ by two mismatches or less in TCRalpha amino acid sequence. Darker colours indicate larger frequency of clone in the repertoire, vertex size indicates degree. The majority (54%, 99/183) of hits identified by the algorithm correspond to a single large TRAV35/TRAJ42 cluster of CD4+ contracting clones also seen on Figure 4a.\n\n### TCR sequence motifs of responding clones\n\nIt was previously shown that TCRs recognising the same antigens frequently have highly similar TCR sequences (Dash et al., 2017; Glanville et al., 2017). To identify motifs in TCR amino acid sequences, we plotted similarity networks for significantly contracted (Figures 3b,c\u00a0and 4a,b) and expanded (Figure 4\u2014figure supplement 1b\u2013e) clonotypes. The number of edges in all similarity networks except CD8+ expanding clones was significantly larger than would expected by randomly sampling the same number of clonotypes from the corresponding repertoire (Figure 3d and Figure 4\u2014figure supplement 1a). In both donors, we found clusters of highly similar clones in both CD4+ and CD8+ subsets for expanding and contracting clonotypes. Clusters were largely donor\u00a0specific, as expected, since our donors have dissimilar HLA alleles\u00a0(Supplementary file 2) and thus each is likely to present a non-overlapping set of T-cell antigens. The largest cluster, described by the motif TRAV35-CAGXNYGGSQGNLIF-TRAJ42, was identified in donor M\u2019s CD4+-contracting alpha chains. Clones from this cluster constituted 16.3% of all of donor M\u2019s CD4+-responding cells on day 15, suggesting a response to an immunodominant CD4+ epitope in the SARS-CoV-2 proteome. The high similarity of the TCR sequences of responding clones in this cluster allowed us to independently identify motifs from donor M\u2019s CD4 alpha contracting clones using the ALICE algorithm (Pogorelyy et al., 2019; Figure 3\u2014figure supplement 2). While the time-dependent methods (Figure 1) identify abundant clones, the ALICE approach is complementary to both edgeR and NoisET as it identifies clusters of T cells with similar sequences independent of their individual abundances.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig4-v2.jpg)\n\n**Figure 4.:** (a) Each vertex in the similarity network corresponds to a contracting clonotype. An edge indicates two or less amino acid mismatches in the CDR3 region (and identical V and J segments). Networks are plotted separately for CD4alpha (a)\u00a0and CD4beta (b) contracting clonotypes. Clonotypes without neighbours are not shown. Sequence logos corresponding to the largest clusters are shown under the corresponding network plots. (c, d) Clonotypes forming the two largest motifs are significantly more clonally expanded (p<0.001, one-sided t-test) in a cohort of COVID-19 patients (Snyder et al., 2020) than in a cohort of control donors (Emerson et al., 2017). Each dot corresponds to the total frequency of clonotypes from motifs shaded on (b) in the TCRbeta repertoire of a given donor. Coloured dots show donors predicted to share HLA-DRB1*07:01 allele with donor W (c) or HLA-DRB1*03:01-DQB1*02:01 haplotype with donor M (d).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) For each set of CD4alpha, CD4beta, CD8alpha, and CD8beta expanded clonotypes, we constructed separate similarity networks. Each vertex in the similarity network corresponds to an expanding clonotype. An edge indicates two or less amino acid mismatches in the CDR3 region and identical V and J segments. The number of edges in each group is shown by pink dots and is compared to the distribution of that number in 1000 random samples of the same size from the relevant repertoires at day 37 (blue boxplots). (b\u2013e) Analysis of TCR amino acid sequences of expanding clones reveal distinctive motifs. Networks are plotted separately for CD8alpha (b), CD8beta (c), CD4alpha (d), and CD4beta (e) expanding clonotypes. Clonotypes without neighbours are not shown. Sequence logos corresponding to the largest clusters are shown under the corresponding network plots.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63502/elife-63502-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Receiver operating characteristic (ROC) curves for classifying TCRbeta repertoires from COVID cohort vs control by cumulative frequency of clones from CD4beta motifs. Blue curve shows ROC curve (area under the ROC or AUROC\u00a0=\u00a00.8) for the classification of control and COVID donors predicted to be DRB1*03:01-DQB1*02:01 haplotype\u00a0positive with motif from donor M. Red curve shows ROC curve (AUROC\u00a0=\u00a00.79) for classification of control and COVID donors predicted to be DRB1*07:01\u00a0positive using motif from donor W. Grey ROC curves show classifier performance on all donors, irrespective of HLA allele matching (AUROC\u00a0=\u00a00.53 for (a)\u00a0and AUROC\u00a0=\u00a00.57 for (b)).\n\n### Mapping TCR motifs to SARS-CoV-2 epitopes\n\nIn CD8+ T cells, three\u00a0clusters of highly similar TCRbeta clonotypes in donor M and one cluster of TCRalpha clonotypes correspond to YLQPRTFLL-tetramer-specific TCR sequences described above. To map additional specificities for CD8+ TCRbetas, we used a large set of SARS-CoV-2-peptide-specific TCRbeta sequences from Snyder et al., 2020 obtained using Multiplex Identification of Antigen-specific T-cell Receptors Assay (MIRA) with combinatorial peptide pools (Klinger et al., 2015). For each responding CD8+ TCRbeta, we searched for the identical or highly similar (same VJ combination, up to one mismatch in CDR3aa) TCRbeta sequences specific for given SARS-CoV-2 peptides. A TCRbeta sequence from our set was considered mapped to a given peptide if it had at least two highly similar TCRbeta sequences specific for this peptide in the MIRA experiment. This procedure yielded unambiguous matches for 32 CD8+ TCRbetas \u2013 just one clonotype was paired to two peptide pools (Supplementary file 3). The vast majority of matches to MIRA corresponded to groups of contracting clones. As expected, we found that all clusters corresponding to HLA-A*02:01-YLQPRTFLL MHC-I tetramer-specific TCRs were matched to the peptide pool YLQPRTFL,YLQPRTFLL,YYVGYLQPRTF in the MIRA dataset. Another large group of matches corresponded to the HLA-B*15:01-restricted (Stamatakis et al., 2020) NQKLIANQF epitope. Interestingly, clonotypes corresponging to this cluster together made up 21% of the CD8+ immune response on day 15, suggesting immunodominance of this epitope. Two TCRbeta clonotypes mapped to this epitope were identified in Effector Memory subset 1\u00a0year before the infection, suggesting potential cross-reactive response. We speculate that this response might be initially triggered by NQKLIANAF, a homologous HLA-B*15:01 epitope from HKU1 or OC43, common human betacoronaviruses. Importantly, no matches for the NQKLIANQF epitope were observed among contracting or expanding clonotypes of HLA-B*15-negative donor W (Supplementary file 2). To predict potential pairings between TCRalpha and TCRbeta motifs, we used a method of alpha/beta clonal trajectory matching described in Minervina et al., 2020 (see Materials and methods for details). We found consistent pairing between one of the motifs in TCRalpha to the largest motif in TCRbeta T cells, which is associated with\u00a0HLA-B*15:01-NQKLIANQF.\n\n### Validation of CD4+ COVID-19 HLA-restricted specificity by cohort association analysis\n\nAt the time of writing, no data on TCR sequences specific to MHC-II class epitopes exist to map specificities of CD4+ T\u00a0cells in a similar way as we did with MIRA-specific TCRs. However, a recently published database of 1414 bulk TCRbeta repertoires from COVID-19 patients allowed us to confirm the SARS-CoV-2 specificity of contracting clones indirectly. Public TCRbeta sequences that can recognise SARS-CoV-2 epitopes are expected to be clonally expanded and thus sampled more frequently in the repertoires of COVID-19 patients than in control donors. In Figure 4c,d,\u00a0we show that the total frequency of TCRbeta sequences forming the largest cluster in donor M (Figure 4c) and donor W (Figure 4d) is significantly larger in the COVID-19 cohort than in the healthy donor cohort from Emerson et al., 2017, suggesting antigen-dependent clonal expansion. We hypothesized that the difference between control and COVID-19 donors in motif abundance should be even larger if we restrict the analysis to donors sharing the HLA allele that presents the epitope. Unfortunately, HLA-typing information is not yet available for the COVID-19 cohort. However, using sets of HLA-associated TCRbeta sequences from DeWitt et al., 2018, we could build a simple classifier to predict the HLA alleles of donors from both the control and COVID-19 cohorts exploiting the presence of TCRbeta sequences associated with certain HLA alleles (see Materials\u00a0and\u00a0methods for details). We found that the CD4+ TCRbeta motif from donor W occurs preferentially in donors predicted to have DRB1*07:01 allele, while the motif from donor M appears to be associated with HLA-DRB1*03:01-DQB1*02:01 haplotype. The frequency of sequences corresponding to these motifs can then be used to identify SARS-CoV-2 infected donors with matching HLA alleles (Figure 4\u2014figure supplement 2).\n\n## Discussion\n\nUsing longitudinal repertoire sequencing, we identified a group of CD4+ and CD8+ T cell clones that contract after recovery from a SARS-CoV-2 infection. Our response timelines agree with T-cell dynamics reported by Thevarajan et al., 2020 for mild COVID-19, as well as with dynamics of T-cell response to live vaccines (Miller et al., 2008). We further mapped the specificities of contracting CD8+ T cells using sequences of SARS-CoV-2-specific T cells identified with tetramer staining in the same donor, as well as the large set of SARS-CoV-2 peptide stimulated TCRbeta sequences from Snyder et al., 2020. For large CD4+ TCRbeta motifs, we show strong association with COVID-19 by analysing the occurrence patterns and frequencies of these sequences in a large cohort of COVID-19 patients. Surprisingly, in both donors, we also identified a group of predominantly CD4+ clonotypes that expanded from day 15 to day 37 after the infection. One possible explanation for this second wave of expansion is the priming of CD4+ T cells by antigen-specific B\u00a0cells, but there might be other mechanisms such as the migration of SARS-CoV-2-specific T cells from lymphoid organs or bystander activation of non-SARS-CoV-2 specific T cells. It is also possible that later expanding T cells are triggered by another infection, simultaneously and asymptomatically occurring in both donors around day 30. In contrast to the first wave of response identified by contracting clones, for now we do not have confirmation that this second wave of expansion corresponds to SARS-CoV-2-specific T cells. The\u00a0accumulation of TCR sequences for CD4+ SARS-CoV-2 epitope-specific T cells may further address this question. We showed that a large fraction of putatively SARS-CoV-2-reactive T cell clones are later found in memory subpopulations and remain there at least 3 months after infection. Importantly, some of responding clones are found in long-lived stem cell-like memory (SCM)\u00a0subset, as also reported for SARS-CoV-2 convalescent patients in Sekine et al., 2020. A subset of CD4+ clones were identified in pre-infection central memory subsets, and a subset of CD8+ T cells were found in effector memory. Among these are CD8+ clones recognising NQKLIANQF, an immunodominant HLA-B*15:01 restricted SARS-CoV-2 epitope, for which homologous epitope differing by 1 aa mismatch exists in common human betacoronaviruses. The presence of SARS-CoV-2 cross-reactive CD4+ T cells in healthy individuals was recently demonstrated (Braun et al., 2020; Grifoni et al., 2020; Le Bert et al., 2020; Meckiff et al., 2020; Bacher et al., 2020; Peng et al., 2020). Our data further suggests that cross-reactive CD4+ and CD8+ T cells can participate in the response in vivo. It is interesting to ask whether\u00a0the presence of cross-reactive T cells before infection is linked to the mildness of the disease (with predicted HLA-B*15:01 cross-reactive epitope described above as a good starting point). Larger studies with cohorts of severe and mild cases with pre-infection time\u00a0points are needed to address this question.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD3-FITC (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>CAT# 11-0038-42</td>\n      <td>FACS (5 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD45RA-eFluor450 (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>CAT# 48-0458-42</td>\n      <td>FACS (5 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CCR7-APC (rat monoclonal)</td>\n      <td>eBioscience</td>\n      <td>CAT# 17-1979-42</td>\n      <td>FACS (5 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD95-PE (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>CAT# 12-0959-42</td>\n      <td>FACS (5 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads CD4 Positive Isolation Kit</td>\n      <td>Invitrogen</td>\n      <td>CAT# 11331D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads CD8 Positive Isolation Kit</td>\n      <td>Invitrogen</td>\n      <td>CAT# 11333D</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Donors and blood samples\n\nPeripheral blood samples from two young healthy adult volunteers, donor W (female) and donor M (male), were collected with written informed consent in a certified diagnostics laboratory. Both donors gave written informed consent to participate in the study under the declaration of Helsinki. HLA alleles of both donors (Supplementary file 2) were determined by an in-house cDNA high-throughput sequencing method.\n\n### SARS-CoV-2 S-RBD domain-specific ELISA\n\nAn ELISA assay kit developed by the National Research Centre for Hematology was used for detection of anti-S-RBD IgG according to the manufacturer\u2019s protocol. The relative IgG level (OD/CO) was calculated by dividing the OD (optical density) values by the mean OD value of the cut-off positive control serum supplied with the Kit (CO). OD values of d37, d45, and d85 samples for donor M exceeded the limit of linearity for the Kit. In order to properly compare the relative IgG levels between d30, d37, d45, and d85, these samples were diluted 1:400 instead of 1:100; the ratios d37:d30 and d45:d30 and d85:d30 were calculated and used to calculate the relative IgG level of d37, d45, and d85 by multiplying d30 OD/CO value by the corresponding ratio. Relative anti-S-RBD IgM level was calculated using the same protocol with anti-human IgM-HRP-conjugated secondary antibody. Since the control cut-off serum for IgM was not available from the Kit, in Figure 1\u2014figure supplement 1b,\u00a0we show OD values for nine biobanked pre-pandemic serum samples from healthy donors.\n\n### Isolation of PBMCs and T-cell subpopulations\n\nPBMCs were isolated with the Ficoll-Paque density gradient centrifugation protocol. CD4+ and CD8+ T cells were isolated from PBMCs with Dynabeads CD4+-\u00a0and CD8+-positive selection kits (Invitrogen), respectively. For isolation of EM, EMRA, CM, and SCM memory subpopulations, we stained PBMCs with the following antibody mix: anti-CD3-FITC (UCHT1, eBioscience), anti-CD45RA-eFluor450 (HI100, eBioscience), anti-CCR7-APC (3D12, eBioscience), and\u00a0anti-CD95-PE (DX2, eBioscience). Cell sorting was performed on FACS Aria III, and\u00a0all four isolated subpopulations were lysed with Trizol reagent immediately after sorting.\n\n### TCR library preparation and sequencing\n\nTCRalpha and TCRbeta cDNA libraries preparation was performed as previously described in Pogorelyy et al., 2017. RNA was isolated from each sample using Trizol reagent according to the manufacturer\u2019s instructions. A universal primer binding site, sample barcode, and unique molecular identifier (UMI) sequences were introduced using the 5\u2032RACE technology with TCRalpha and TCRbeta constant segment-specific primers for cDNA synthesis. cDNA libraries were amplified in two PCR steps, with the\u00a0introduction of the second sample barcode and Illumina TruSeq adapter sequences at the second PCR step. Libraries were sequenced using the Illumina NovaSeq platform (2 \u00d7 150 bp read length).\n\n### TCR repertoire data analysis\n\n#### Raw data preprocessing\n\nRaw sequencing data was demultiplexed, and UMI-guided consensuses were built using migec v.1.2.7 (Shugay et al., 2014). Resulting UMI consensuses were aligned to V and J genomic templates of the TRA and TRB locus and assembled into clonotypes with mixcr v.2.1.11 (Bolotin et al., 2015). See Supplementary file 1 for the number of cells, UMIs, and unique clonotypes for each sample.\n\n#### Identification of clonotypes with active dynamics\n\nPrincipal component analysis (PCA) of clonal trajectories was performed as described before Minervina et al., 2020. First, we selected clones that\u00a0were present among the top 1000 abundant in any of post-infection PBMC repertoires, including biological replicates, i.e. considered clone abundant if it was found within top 1000 most abundant clonotypes in at least one of the replicate samples at one time\u00a0point. Next, for each such abundant clone, we calculated its frequency at each post-infection time\u00a0point and divided this frequency by the maximum frequency of this clone for normalization. Then we performed PCA on the resulting normalized clonal trajectory matrix and identified three clusters of trajectories with hierarchical clustering with average linkage, using Euclidean distances between trajectories. We identify statistically significant contractions and expansions with edgeR as previously described (Pogorelyy et al., 2018), using false discovery rate-adjusted $p<0.01$ and log2 fold-change threshold of 1. NoisET implements the Bayesian detection method described in Puelma Touzel et al., 2020. Briefly, a two-step noise model accounting for cell sampling and expression noise is inferred from replicates, and a second model of expansion is learned from the two time\u00a0points to be compared. The procedure outputs the posterior probability of expansion or contraction and the median estimated log2 fold change, whose thresholds are set to 0.05 and 1, respectively.\n\n#### Mapping of COVID-19-associated TCRs to the MIRA database\n\nTCRbeta sequences from T cells specific for SARS-CoV-2 peptide pools MIRA (ImmuneCODE release 2) were downloaded from https://clients.adaptivebiotech.com/pub/covid-2020. V and J genomic templates were aligned to TCR nucleotide sequences from the MIRA database using mixcr 2.1.11. We consider a TCRbeta from MIRA matched to a TCRbeta from our data, if it had the same V and J and at most one mismatch in CDR3 amino acid sequence. We consider a TCRbeta sequence mapped to an epitope if it has at least two identical or highly similar (same V, J and up to one mismatch in CDR3 amino acid sequence) TCRbeta clonotypes reactive for this epitope in the MIRA database.\n\n#### Computational alpha/beta pairing by clonal trajectories\n\nComputational alpha/beta pairing was performed as described in Minervina et al., 2020. For each TCRbeta, we determine the TCRalpha with the closest clonal trajectory (Supplementary files 3 and 5). We observe no stringent pairings between TCRbeta and TCRbeta motifs with exception of two contracting CD8 TCRbeta clusters: TRBV7-2/TRBJ1-2 NQKLIANQF-associated clones from donor M paired to TRAV21/TRAJ40 alphas from the same cluster (CASSLEDTNYGYTF-CAVHSSGTYKYIF and CASSLEDTIYGYTF-CAALTSGTYKYIF), and TRBV7-9/TRBJ2-3 beta cluster paired to largest alpha cluster (CASSPTGRGRTDTQYF-CAYRSGGSEKLVF and CASSPTGRGGTDTQYF-CAYRRPGGEKLTF).\n\n#### Computational prediction of HLA\u00a0types\n\nTo predict HLA\u00a0types from TCR repertoires of COVID-19 cohort, we used sets of HLA-associated TCR sequences from DeWitt et al., 2018. We use TCRbeta repertoires of 666 donors from cohort from Emerson et al., 2017, for which HLA-typing information is available in DeWitt et al., 2018 as a training set to fit logistic regression model, where the\u00a0presence or absense of given HLA\u00a0allele is an outcome, and the number of allele-associated sequences in repertoire, as well as the total number of unique sequences in the repertoire, are the predictors. A separate logistic regression model was fitted for each set of HLA-associated sequences from DeWitt et al., 2018 and then used to predict the probability $p$\u00a0that a donor from the COVID-19 cohort has this allele. Donors with $p<0.2$ were considered negative for a given allele.\n\n### Data availability\n\nRaw sequencing data are deposited to the Short Read Archive (SRA) accession: PRJNA633317. Processed TCRalpha and TCRbeta repertoire datasets, resulting repertoires of SARS-CoV-2-reactive clones, and raw data preprocessing instructions can be accessed from: https://github.com/pogorely/Minervina_COVID;\u00a0copy archived at https://archive.softwareheritage.org/swh:1:rev:d5b3953d3739f21a1ccc23114bfffa002e11951e/.\n",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "09cb26d4-4165-4709-a57d-1352ecf70756",
+      "submission_id": "5ac569bc-5907-4d17-a816-f86f752faf3a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sandeep Krishna, National Centre for Biological Sciences\u2010Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63502.sa1](https://doi.org/10.7554/eLife.63502.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper uses high throughput longitudinal TCR sequencing to understand the TCR dynamics in two persons infected with SARS-CoV-2. In particular, they find two peaks of T cell clonal expansion at 15 and 37 days post infection. The authors also identify TCR sequence motifs that are likely to be specific to SARS-CoV-2 and thereby show that some T cell clones are present pre-infection suggesting the existence of cross-reactive memory T cells prior to the infection.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Longitudinal TCR repertoire profiling reveals the dynamics of T cell memory formation after mild COVID-19\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Phil Bradley (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWhile we found the questions raised in this study interesting, we concluded that the manuscript would not be suitable for eLife without substantially more evidence that the clonotypes have TCR specificity for SARS-CoV-2. The individual reviews are appended below.\n\nReviewer #1:\n\nThis work investigates the T cell receptor (TCR) repertoires of 2 individuals diagnosed with mild COVID-19 infection. The authors use high-throughput sequencing of 2 biological replicate samples obtained at each of multiple pre-infection and post-infection timepoints to identify TCRalpha and TCRbeta clonotypes that contract or expand post-infection and to investigate potential reactivation of pre-existing memory cells. This is a potentially interesting work that may provide novel insights into T cell responses to SARS-CoV-2. However, some of the specific details of the various analyses reported are not clear and I have several major concerns about the reported work.\n\n1) The primary concern is the TCR specificity of the clonotypes that were determined to be contracting or expanding post-SARS-CoV-2-infection and therefore identified as responding to or reactive to SARS-CoV-2. There is no verification that these expanding or contracting clonotypes have TCR specificity for SARS-CoV-2. One alternative possibility is that some, maybe even many, of these expanding or contracting clonotypes are bystander-activated T cells with TCRs that are not specific for SARS-CoV-2. Similarly, the clonotypes that were identified as contracting or expanding post-SARS-CoV-2 infection and also detected in the memory pool prior to SARS-CoV-2 infection may not be cross-reactive (i.e. specificity for another infection + SARS-CoV-2), as suggested by the authors, but rather non-SARS-CoV-2-specific bystander-activated memory T cells.\n\nWhile the dynamics of the T cell populations following SARS-CoV-2 infection may be informative regardless of the mode of activation of the T cells (i.e. TCR-mediated vs. bystander activated), the reported TCR clonotype motifs are only informative if these TCRs have SARS-CoV-2 specificity.\n\n2) Another concern is the substantial variation between the various approaches used to identify the contracting and expanding clonotypes post-infection that are associated with COVID-19 infection. The manuscript text states that the EdgeR and NoiseET approaches for identifying expanding and contracting clonotypes yielded similar results. Figure 1\u2014figure supplement 4A, D suggest that the two approaches yield similar trajectories for the identified expanding and contracting clonotype subsets (i.e. fraction of reactive clonotypes). However, the Venn diagrams in Figure 1\u2014figure supplement 4B, C, E, F show that the two approaches are, in some cases, identifying substantially different subsets of expanding or contracting clonotypes. For example, for Donor M in Figure 1\u2014figure supplement 4F, of the 1044 expanded clonotypes identified by NoiseET, only 478 were also identified by EdgeR.\n\nThe text also states that the contracting and expanding clonotypes identified using EdgeR largely overlap/correspond to the clusters 2 and 3 of clonal trajectories yielded using PCA (Figure 1B-E) but no quantitative evidence is provided to support this. Venn diagrams, similar to those in Figure 1\u2014figure supplement 4, could be provided that compare the expanding and contracting clonotypes identified using the three different approaches (i.e. EdgeR, NoiseET, and PCA) as applied to TCR\u03b1 as well as TCR\u03b2 clonotypes.\n\nWhile these differences between methods may not have significant consequences for some of the reported results (eg. temporal clonal trajectories), these differences raise concerns about the results that depend on specific clonotype sequences (eg. Figure 2D-G, Figure 3\u2014figure supplement 2 and Figure S5D-G that report amino acid motifs for contracting and expanding clonotypes).\n\nReviewer #2:\n\nThis manuscript describes a longitudinal study of TCR repertoires in two individuals with mild COVID-19. TCR\u03b1 and \u03b2 repertoires at 4 time points post-infection are used to identify T cell clonotypes likely responding to COVID-19. These responding clones fall into two groups, a set of monotonically contracting clones and a set of clones whose frequencies peak (at day ~37) and then contract. Sequencing of memory populations at two time points and availability of TCR repertoire data from both individuals prior to infection allow the authors to map clonotypes to memory phenotypes and to identify a handful of responding clones that existed in the memory compartment prior to infection. Clusters of sequence-similar clonotypes are identified that suggest focused responses to immunodominant epitopes. This is a succinct and timely study and I have no major concerns, just a few questions/suggestions/typos detailed below.\n\nHow unexpected is the TCR clustering evident in Figure 2D-G? For example if the same number of equally high Pgen sequences were selected at random? I wonder whether the authors could run ALICE on just the responding clones (not the full dataset) to assess which neighborhoods are very unlikely to occur by chance.\n\nCould the \"computational chain pairing\" method of Minervina et al. be applied to this data? If only to try to connect some of the sequence motifs between the \u03b1 and \u03b2 chains?\n\nReviewer #3:\n\nThis is a case report analysing TCR repertoire on two individuals with suspected COVID-19 infection. The report shows that a set of TCR sequences expands between days 15 and day 30/37 and another set contract. The amount of expansion/contraction is not clearly shown. Most of these sequences are found in the memory phenotype. A few (especially CD4) are found before immunisation. As the authors point out, the evidence that the TCRs recognise COVID-19 is purely circumstantial. Even if they do, I do not see that this study contributes significantly to understanding either the protective or the pathological immune response to COVID-19.\n\n1) The Abstract is full of unsubstantiated claims. For example \"T cell response is a critical part of both individual and herd immunity to SARS-CoV-2 and the e\ufb03cacy of developed vaccines. \" Or \"In both donors we identi\ufb01ed SARS-CoV-2-responding CD4+ and CD8+ T cell clones. We describe characteristic motifs in TCR sequences of COVID- 19-reactive clones, suggesting the existence of immunodominant epitopes.\" The authors do not identify COVID-19 responding clones; nor do they show any evidence that there are immunodominant epitopes.\n\n2) Figure 1 What does \"normalized trajectory of TCR clones in each cluster\" mean ? It would be interesting to see the magnitude of the responses. Similarly, I don't really understand the y axis in panels d and e.\n\n3) Figure 3. I don't understand panels a and b. Is this the proportion of contracting TCR sequences which are memory phenotype? If so, what are the rest ? Or are they simply not captured. The figure legend is obscure.\n",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "69616c44-54c4-4aa2-8073-91b6bb5ec130",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C1",
+      "claim": "COVID-19 is a global pandemic caused by the SARS-CoV-2 coronavirus.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19 is a global pandemic caused by the SARS-CoV-2 coronavirus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citation to Vabret et al., 2020 in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "dac4d3f0-5133-44a7-bf65-67d31159f5d0",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C2",
+      "claim": "T cells play a key role in the adaptive antiviral immune response by killing infected cells and facilitating the selection of virus-specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells play a key role in the adaptive antiviral immune response by killing infected cells and facilitating the selection of virus-specific antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about T cell function supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "6d24fa10-dcf5-4550-8177-bee278785196",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C3",
+      "claim": "CD4+ and CD8+ T-cell clones with transient clonal expansion after infection were identified in both donors.",
+      "claim_type": "EXPLICIT",
+      "source": "In both donors, we identified CD4+ and CD8+ T-cell clones with transient clonal expansion after infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from longitudinal TCR sequencing presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "20bd04ce-a177-4119-b304-e8ab160f35d2",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C4",
+      "claim": "Characteristic motifs in TCR sequences of COVID-19-reactive clones show preferential occurrence in publicly available large dataset of repertoires from COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe characteristic motifs in TCR sequences of COVID-19-reactive clones and show preferential occurrence of these motifs in publicly available large dataset of repertoires from COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis comparing motif frequencies between COVID-19 patients and controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "bf5e8f2d-a279-460f-91a7-ca972580bd7d",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C5",
+      "claim": "The majority of infection-reactive clonotypes acquire memory phenotypes in both donors.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in both donors, the majority of infection-reactive clonotypes acquire memory phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from FACS-sorted memory subpopulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "03cb180c-f235-4913-b388-e39abaf33fc5",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C6",
+      "claim": "Certain T-cell clones were detected in the memory fraction at the pre-infection time point, suggesting participation of pre-existing cross-reactive memory T cells in the immune response to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain T-cell clones were detected in the memory fraction at the pre-infection time point, suggesting participation of pre-existing cross-reactive memory T cells in the immune response to SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing responding clones present in pre-infection samples and is speculative regarding cross-reactivity.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "af3f2c33-0097-40a6-8511-da1f0aa3a264",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C7",
+      "claim": "In SARS-1 survivors, antigen-specific memory T cells were detected up to 11 years after the initial infection, when viral-specific antibodies were undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "In SARS-1 survivors, antigen-specific memory T cells were detected up to 11 years after the initial infection, when viral-specific antibodies were undetectable (Ng et al., 2016; Oh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "2a1914a0-d6bc-4803-b5e1-9305c9eb8e6f",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C8",
+      "claim": "The T-cell response was shown to be critical for protection in SARS-1-infected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The T-cell response was shown to be critical for protection in SARS-1-infected mice (Zhao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "614fa77c-7015-4c43-8e00-d140d64785c7",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C9",
+      "claim": "Patients with X-linked agammaglobulinemia have been reported to recover from symptomatic COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with X-linked agammaglobulinemia, a genetic disorder associated with lack of B cells, have been reported to recover from symptomatic COVID-19 (Quinti et al., 2020; Soresina et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published case reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "9858de98-f267-45d0-81b2-dabf0db5e422",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C10",
+      "claim": "T cells are sufficient for viral clearance in some COVID-19 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with X-linked agammaglobulinemia, a genetic disorder associated with lack of B cells, have been reported to recover from symptomatic COVID-19 (Quinti et al., 2020; Soresina et al., 2020), suggesting that in some cases, T cells are sufficient for viral clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that patients without B cells can recover from COVID-19.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "40e2c6cb-4a7b-4f48-bac4-7cf2489c4bb3",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C11",
+      "claim": "Activated CD8+HLA\u2013DR+CD38+ T cells in a mild case of COVID-19 significantly expand following symptom onset, reaching their peak frequency of 12% of CD8+ T cells on day 9 after symptom onset, and contract thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thevarajan et al. showed that activated CD8+HLA\u2013DR+CD38+ T cells in a mild case of COVID-19 significantly expand following symptom onset, reaching their peak frequency of 12% of CD8+ T cells on day 9 after symptom onset, and contract thereafter (Thevarajan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "149d59ad-ebc7-480f-a8fd-432e87a876fc",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C12",
+      "claim": "The average time from infection to the onset of symptoms is 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the average time of 5 days from infection to the onset of symptoms (Bi et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "8ee25033-db5a-4a90-8641-20642e066b01",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C13",
+      "claim": "The dynamics and magnitude of T-cell response to SARS-CoV-2 is similar to that observed after immunization with live vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "the dynamics and magnitude of T-cell response to SARS-CoV-2 is similar to that observed after immunization with live vaccines (Miller et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and comparison to published data on vaccine responses.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "0688541e-ff0f-4e63-a415-6b9f8441f110",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C14",
+      "claim": "SARS-CoV-2-specific T cells were detected in COVID-19 survivors by activation following stimulation with SARS-CoV-2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2-specific T cells were detected in COVID-19 survivors by activation following stimulation with SARS-CoV-2 proteins (Ni et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "784ab364-4cd7-4544-b72f-ffe527de165e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C15",
+      "claim": "SARS-CoV-2-specific T cells were detected in COVID-19 survivors by viral protein-derived peptide pools.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2-specific T cells were detected in COVID-19 survivors by activation following stimulation with SARS-CoV-2 proteins (Ni et al., 2020) or by viral protein-derived peptide pools (Weiskopf et al., 2020; Braun et al., 2020; Snyder et al., 2020; Le Bert et al., 2020; Meckiff et al., 2020; Bacher et al., 2020; Peng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "be932b5f-457e-4c94-b517-26392d18a306",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C16",
+      "claim": "Some of the T cells activated by peptide stimulation were shown to have a memory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the T cells activated by peptide stimulation were shown to have a memory phenotype (Weiskopf et al., 2020; Le Bert et al., 2020; Mateus et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "2dc60f85-1e57-4bd0-9951-603337c2121e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C17",
+      "claim": "Some potentially cross-reactive CD4+ T cells were found in healthy donors.",
+      "claim_type": "EXPLICIT",
+      "source": "some potentially cross-reactive CD4+ T cells were found in healthy donors (Braun et al., 2020; Grifoni et al., 2020; Sekine et al., 2020; Bacher et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "05c6055c-3677-4528-a03c-a5c731b68ad1",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C18",
+      "claim": "T cells recognise short pathogen-derived peptides presented on the cell surface of the major histocompatibility complex (MHC) using hypervariable T-cell receptors (TCR).",
+      "claim_type": "EXPLICIT",
+      "source": "T cells recognise short pathogen-derived peptides presented on the cell surface of the major histocompatibility complex (MHC) using hypervariable T-cell receptors (TCR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about T cell recognition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "da9960dc-d0d3-486f-9eee-6f3cf241d37c",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C19",
+      "claim": "TCR repertoire sequencing allows for the quantitative tracking of T-cell clones in time, as they go through the expansion and contraction phases of the response.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR repertoire sequencing allows for the quantitative tracking of T-cell clones in time, as they go through the expansion and contraction phases of the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of TCR sequencing technology, supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "c1ac7a30-32df-460f-ba74-48a7dae9c36d",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C20",
+      "claim": "Quantitative longitudinal TCR sequencing is able to identify antigen-specific expanding and contracting T cells in response to yellow fever vaccination with high sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that quantitative longitudinal TCR sequencing is able to identify antigen-specific expanding and contracting T cells in response to yellow fever vaccination with high sensitivity and specificity (Minervina et al., 2020; Pogorelyy et al., 2018; DeWitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "d320ceba-8dec-4629-b624-bc63c17b7f1c",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C21",
+      "claim": "Clonal expansion and significant contraction from the peak of the response are distinctive traits of T-cell clones specific to the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only clonal expansion but also significant contraction from the peak of the response are distinctive traits of T-cell clones specific to the virus (Pogorelyy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "7d3c99f7-4c47-4e4b-98f7-760ba6d2f4da",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C22",
+      "claim": "Donor W is female and donor M is male, both healthy young adults.",
+      "claim_type": "EXPLICIT",
+      "source": "donor W female and donor M male (both healthy young adults)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "398b6315-6465-4672-829d-3361e34049d4",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C23",
+      "claim": "Both donors returned to their home country from one of the centres of the COVID-19 outbreak in Europe in the middle of March.",
+      "claim_type": "EXPLICIT",
+      "source": "In the middle of March (day 0), donor W female and donor M male (both healthy young adults) returned to their home country from the one of the centres of the COVID-19 outbreak in Europe at the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study timeline and participant exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "0c3d009c-1c3f-4359-907b-afc224e3e60e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C24",
+      "claim": "Both donors were put into strict self-quarantine for 14 days upon arrival.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon arrival, according to local regulations, they were put into strict self-quarantine for 14 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "566a3b5d-48df-448b-b79f-cfc7a1eedb43",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C25",
+      "claim": "On day 3 of self-isolation, both donors developed low-grade fever, fatigue, and myalgia, which lasted 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 3 of self-isolation, both developed low-grade fever, fatigue, and myalgia, which lasted 4 days",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of clinical symptoms observed in the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "7a461cc5-02b8-4081-84e2-8ce64243ef88",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C26",
+      "claim": "Donor M experienced a temporary loss of smell following the initial symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "and was followed by a temporary loss of smell for donor M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of clinical symptoms observed in donor M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "8b2a7410-f864-4c03-8489-3d108b1cc984",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C27",
+      "claim": "Peripheral blood samples were collected from both donors on days 15, 30, 37, 45, and 85.",
+      "claim_type": "EXPLICIT",
+      "source": "On days 15, 30, 37, 45, and 85, we collected peripheral blood samples from both donors (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental sampling schedule, also shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "afb56373-c01d-47b6-a516-1723a7f0e120",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C28",
+      "claim": "The presence of IgG and IgM SARS-CoV-2-specific antibodies in the plasma was measured at all time points using SARS-CoV-2 S-RBD domain-specific ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of IgG and IgM SARS-CoV-2-specific antibodies in the plasma was measured at all time points using SARS-CoV-2 S-RBD domain-specific ELISA (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used to measure antibodies, with results shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "63a8cf45-2584-4b89-9953-a6540c879b36",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C29",
+      "claim": "PBMCs, CD4+, and CD8+ T cells were isolated from each blood sample.",
+      "claim_type": "EXPLICIT",
+      "source": "From each blood sample, we isolated peripheral blood mononuclear cells (PBMCs, in two biological replicates), CD4+, and CD8+ T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental cell isolation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "6e80dd1b-abdd-45e5-9139-a08517dfdeaa",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C30",
+      "claim": "Four T-cell memory subpopulations (EM, EMRA, CM, and SCM) were isolated on days 30, 45, and 85.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, on days 30, 45, and 85, we isolated four T-cell memory subpopulations (Figure 1\u2014figure supplement 2a): effector memory (EM: CCR7\u2212CD45RA\u2212), effector memory with CD45RA re-expression (EMRA: CCR7\u2212CD45RA+), central memory (CM: CCR7+CD45RA\u2212), and stem cell-like memory (SCM: CCR7+CD45RA+CD95+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental isolation of memory subpopulations, with gating strategy shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "4a1a1c86-520c-4b94-8045-a8e847a83deb",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C31",
+      "claim": "TCRalpha and TCRbeta repertoire sequencing was performed on all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "From all samples, we isolated RNA and performed TCRalpha and TCRbeta repertoire sequencing as previously described (Pogorelyy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental sequencing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "2fe080ed-bb88-454d-8cc2-dd5631c01631",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C32",
+      "claim": "TCRalpha and TCRbeta repertoires were obtained for both donors 1 and 2 years prior to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For both donors, TCRalpha and TCRbeta repertoires were obtained for other projects 1 and 2 years prior to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability of pre-infection data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "b6b29041-d057-4041-829a-a1f9d9fc9f7e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C33",
+      "claim": "TCR repertoires of multiple samples for donor M, including sorted memory subpopulations, are available from a published longitudinal TCR sequencing study after yellow fever vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, TCR repertoires of multiple samples for donor M \u2013 including sorted memory subpopulations \u2013 are available from a published longitudinal TCR sequencing study after yellow fever vaccination (donor M1 samples in Minervina et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability of additional data from a previous study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "407b4f28-b4a2-434d-a889-6207c8af2bd5",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C34",
+      "claim": "Principal component analysis of clonal temporal trajectories identifies three groups of clones with distinctive behaviours in both donors.",
+      "claim_type": "EXPLICIT",
+      "source": "In both donors, and in both TCRalpha and TCRbeta repertoires, we identified three clusters of clones with distinct dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the PCA analysis shown in Figure 1b,c and Figure 1\u2014figure supplement 3a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "4aecf0cf-696f-4632-b183-6be87bd17a40",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C35",
+      "claim": "The first cluster of clones had constant concentrations across time points.",
+      "claim_type": "EXPLICIT",
+      "source": "The first cluster (Figure 1b,c, purple) corresponded to abundant TCR clonotypes that had constant concentrations across time points",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA analysis and trajectory plots shown in Figure 1b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "b3cd0291-10a2-4e6f-a5c4-6015174f91ca",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C36",
+      "claim": "The second cluster of clones showed contraction dynamics from day 15 to day 85.",
+      "claim_type": "EXPLICIT",
+      "source": "the second cluster (Figure 1b,c, green) showed contraction dynamics from day 15 to day 85",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA analysis and trajectory plots shown in Figure 1b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "5a51d170-95b8-4251-af6e-0a100d115a43",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C37",
+      "claim": "The third cluster of clones showed clonal expansion from day 15 with a peak on day 37 followed by contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "and the third cluster (Figure 1b,c, yellow) showed an unexpected clonal expansion from day 15 with a peak on day 37 followed by contraction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA analysis and trajectory plots shown in Figure 1b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "117a3557-9b4d-4b38-b901-4cfbc2f725c8",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C38",
+      "claim": "The clustering and dynamics are similar in both donors and are reproduced in TCRbeta and TCRalpha repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering and dynamics are similar in both donors and are reproduced in TCRbeta (Figure 1b,c) and TCRalpha (Figure 1\u2014figure supplement 3a,b) repertoires.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of results across donors and TCR chains shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "b97b51d5-581c-4c67-8729-8c5f4f652709",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C39",
+      "claim": "291 TCRalpha and 295 TCRbeta clonotypes in donor W and 607 TCRalpha and 616 TCRbeta in donor M were significantly contracted from day 15 to day 85.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 291 TCRalpha and 295 TCRbeta clonotypes in donor W and 607 TCRalpha and 616 TCRbeta in donor M significantly contracted from day 15 to day 85",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis using edgeR and NoisET methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "a1273d72-6e15-4fbd-8c69-5e760585b1d2",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C40",
+      "claim": "176 TCRalpha and 278 TCRbeta for donor W and 293 TCRalpha and 427 TCRbeta clonotypes for donor M were significantly expanded from days 15 to 37.",
+      "claim_type": "EXPLICIT",
+      "source": "One hundred and seventy six TCRalpha and 278 TCRbeta for donor W and 293 TCRalpha and 427 TCRbeta clonotypes for donor M were significantly expanded from days 15 to 37",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis using edgeR and NoisET methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "6d1f1350-784e-4ffc-a8bf-a758320bca95",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C41",
+      "claim": "Contracting clones corresponded to 2.5% and 0.9% of T cells on day 15 post-infection for donors M and W, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Contracting clones corresponded to 2.5% and 0.9% of T cells on day 15 post-infection, expanding clones reached 1.1% and 0.8% on day 37 for donors M and W, respectively (Figure 1d,e, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of clonotype frequencies shown in Figure 1d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "eedde6e2-31e4-40e8-a5b8-92402e549a3f",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C42",
+      "claim": "Expanding clones reached 1.1% and 0.8% of T cells on day 37 for donors M and W, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Contracting clones corresponded to 2.5% and 0.9% of T cells on day 15 post-infection, expanding clones reached 1.1% and 0.8% on day 37 for donors M and W, respectively (Figure 1d,e, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of clonotype frequencies shown in Figure 1d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "fd1fd862-9aed-4a56-bd6d-48d28c219d08",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C43",
+      "claim": "The magnitude of the T-cell response to COVID-19 is of the same order of magnitude as previously observed after live yellow fever vaccine immunization of donor M (6.7% T cells on day 15 post-vaccination).",
+      "claim_type": "EXPLICIT",
+      "source": "This magnitude of the T-cell response is of the same order of magnitude as previously observed after live yellow fever vaccine immunization of donor M (6.7% T cells on day 15 post-vaccination).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previously published data from the same donor.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "ed39481f-1034-4c5c-97c6-3c31084b1022",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C44",
+      "claim": "Both CD4+ and CD8+ subsets participated actively in the response.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CD4+ and CD8+ subsets participated actively in the response (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotyping data shown in Figure 1d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "59ac0128-366e-422f-8c22-a26cd74b1018",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C47",
+      "claim": "A recent study reported activation of mucosal-associated invariant T (MAIT) cells in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study by Parrot et al., 2020 reported activation of mucosal-associated invariant T (MAIT) cells in COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "fb58e90e-9edb-4a43-a68f-bece4d305660",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C48",
+      "claim": "MAIT cells are innate-like T cells recognising bacterial metabolites with TCRs featuring an invariant TCRalpha chain.",
+      "claim_type": "EXPLICIT",
+      "source": "MAIT cells are innate-like T cells recognising bacterial metabolites with TCRs featuring an invariant TCRalpha chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about MAIT cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "337a5010-4b83-42af-923c-78956506de20",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C49",
+      "claim": "A small number of low-frequency contracting and expanding TCRalpha clonotypes have MAIT invariant alpha chains.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a small number of low-frequency contracting (one clonotype for each donor) and expanding (two clonotypes for each donor) TCRalpha clonotypes have MAIT invariant alpha chains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison to a database of MAIT TCR sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "e7701862-ea2a-4483-ac30-f21376290228",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C50",
+      "claim": "The contribution of MAIT clonotypes to the response was relatively small (<1% of responding T cells are MAIT).",
+      "claim_type": "EXPLICIT",
+      "source": "and the contribution of these clonotypes to the response was relatively small (<1% of responding T cells are MAIT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of MAIT clonotype frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "8f934d3c-197e-486d-83f2-0bbe8de4fb90",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C51",
+      "claim": "Both contracting and expanding T-cell clones were found in memory subpopulations on days 30, 45, and 85.",
+      "claim_type": "EXPLICIT",
+      "source": "On days 30, 45, and 85, we identified both contracting (Figure 2a\u2013c) and expanding (Figure 2\u2014figure supplement 1a\u2013c) T-cell clones in the memory subpopulations of peripheral blood.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of FACS-sorted memory subpopulations shown in Figure 2 and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "fdb089d0-9d32-4635-bb8f-9012f5bc271a",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C52",
+      "claim": "Both CD4+ and CD8+ responding clones were found in the CM and EM subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CD4+ and CD8+ responding clones were found in the CM and EM subsets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of memory subpopulation repertoires.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "84510a2a-51ee-4806-b384-2fe5d1ab68ac",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C53",
+      "claim": "CD4+ responding clones were more biased towards CM.",
+      "claim_type": "EXPLICIT",
+      "source": "however, CD4+ were more biased towards CM (with exception of donor W day 30 time point, where a considerable fraction of CD8+ clones were found in CM)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of memory subpopulation distributions shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "617266c9-19cc-4248-8c8e-d0a5168fde94",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C54",
+      "claim": "CD8+ responding clones were more represented in the EMRA subset.",
+      "claim_type": "EXPLICIT",
+      "source": "and CD8+ clones more represented in the EMRA subset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of memory subpopulation distributions shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "0a68c5f5-9b65-40ef-8514-ff4e703dfa58",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C55",
+      "claim": "A small number of both CD4+ and CD8+ responding clonotypes were identified in the SCM subpopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "A small number of both CD4+ and CD8+ responding clonotypes were also identified in the SCM subpopulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of memory subpopulation repertoires.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "fa82c2f2-7d15-457b-8123-b2943992bb88",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C56",
+      "claim": "SCM is a long-lived T-cell memory subset.",
+      "claim_type": "EXPLICIT",
+      "source": "which was previously shown to be a long-lived T-cell memory subset (Fuertes Marraco et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "0cc05699-06bf-4a6d-9c12-0ed19fcb9e2e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C57",
+      "claim": "A number of responding CD4+ clones, and fewer CD8+ clones, were represented in the repertoires of both donors 1 and 2 years before the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a number of responding CD4+ clones, and fewer CD8+ clones, were also represented in the repertoires of both donors 1 and 2 years before the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of pre-infection repertoire data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "cb284dec-52bf-4bf1-a548-47f1820ffc1e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C58",
+      "claim": "The majority of pre-existing clones had low concentrations at pre-infection and day 85 post-infection time points, and high concentrations on day 15.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the pre-existing clones had low concentrations at pre-infection and day 85 post-infection time points, and high concentrations on day 15, suggesting that they expanded after the infection and later contracted for both donors (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by longitudinal tracking of pre-existing clones shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "b5285812-5c2e-4473-982a-ca96c6ae857b",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C59",
+      "claim": "Pre-existing SARS-CoV-2-reactive CD4+ clones were identified in the CM subpopulation 1 year before the infection in donor M.",
+      "claim_type": "EXPLICIT",
+      "source": "For donor M, for whom we had previously sequenced memory subpopulations before the infection (Minervina et al., 2020), we were able to identify pre-existing SARS-CoV-2-reactive CD4+ clones in the CM subpopulation 1 year before the infection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of pre-infection memory subpopulation data for donor M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "65ef88c8-35f6-4d60-b90a-f10f35b161f9",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C60",
+      "claim": "A group of CD8+ clones were found in the pre-infection EM subpopulation in donor M.",
+      "claim_type": "EXPLICIT",
+      "source": "and a group of CD8+ clones in the pre-infection EM subpopulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of pre-infection memory subpopulation data for donor M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "2a726a54-183d-4ce3-a200-12d9621bf84b",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C61",
+      "claim": "On day 30 after infection, the majority of pre-infection CM clones were detected in the EM subpopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, on day 30 after infection, the majority of pre-infection CM clones were detected in the EM subpopulation, suggesting recent T-cell activation and a switch of the phenotype from memory to effector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of memory subpopulation distributions over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "408deae9-9c5c-46f8-8c19-d5167449324a",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C62",
+      "claim": "Pre-existing clones might represent memory T cells cross-reactive for other infections, for example other human coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "These clones might represent memory T cells cross-reactive for other infections, for example other human coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observation of pre-existing responding clones.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "5f5a8e17-03ae-49ba-8f6e-65d4f8e54972",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C63",
+      "claim": "A search for TCRbeta amino acid sequences of responding clones in VDJdb resulted in essentially no overlap with TCRs not specific for SARS-CoV-2 epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "A search for TCRbeta amino acid sequences of responding clones in VDJdb (Bagaev et al., 2020) \u2014 a database of TCRs with known specificities \u2014 resulted in essentially no overlap with TCRs not specific for SARS-CoV-2 epitopes: only two clonotypes matched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by database search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "35feb345-9de3-45bd-9027-0f69a0fdb41c",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C64",
+      "claim": "One VDJdb match corresponded to a cytomegalovirus epitope presented by the HLA-A*03 MHC allele, which is absent in both donors.",
+      "claim_type": "EXPLICIT",
+      "source": "One match corresponded to the cytomegalovirus epitope presented by the HLA-A*03 MHC allele, which is absent in both donors (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by database search and HLA typing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "2f4e45c9-7a72-4caa-bf10-871df6bc7162",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C65",
+      "claim": "One VDJdb match was for an Influenza A virus epitope presented by HLA-A*02 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "and a second match was for Influenza A virus epitope presented by HLA-A*02 allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by database search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "4f0c526a-7872-42e8-a70b-b1bf4e3d65d7",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C66",
+      "claim": "The absence of VDJdb matches suggests that contracting and expanding clones are unlikely to be specific for immunodominant epitopes of common pathogens covered in VDJdb.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of matches suggests that contracting and expanding clones are unlikely to be specific for immunodominant epitopes of common pathogens covered in VDJdb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the lack of database matches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "553b133b-a07f-45fc-8cc6-c6657219def7",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C67",
+      "claim": "On day 25 post-infection, donor M's CD8+ T cells were stained with a HLA-A*02:01-YLQPRTFLL MHC-I tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 25, post-infection donor M participated in a study by Shomuradova et al., 2020 (as donor p1434), where his CD8+ T cells were stained with a HLA-A*02:01-YLQPRTFLL MHC-I tetramer (Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an independent validation experiment from another study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "a363e8da-31db-4626-bbc8-d8c6cb53ec6b",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C68",
+      "claim": "TCRalpha and TCRbeta of FACS-sorted tetramer-positive cells were sequenced and deposited to VDJdb.",
+      "claim_type": "EXPLICIT",
+      "source": "TCRalpha and TCRbeta of FACS-sorted tetramer-positive cells were sequenced and deposited to VDJdb (see Shomuradova et al., 2020 for the experimental details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability of validation data from another study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "a6a666c4-499f-403f-9515-26fd2526ce75",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C71",
+      "claim": "All matching tetramer-positive clonotypes had a CD8+ phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "(as expected for TCRs specifically binding MHC-I multimer, all matching clonotypes in our datasets had a CD8+ phenotype).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phenotyping data and is consistent with MHC-I restriction.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "0a249ad2-7bad-4a34-9649-42e23a24e8c7",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C72",
+      "claim": "No tetramer-positive clonotypes matched with expanding clonotypes peaking on day 37.",
+      "claim_type": "EXPLICIT",
+      "source": "No tetramer-positive clonotypes matched with expanding clonotypes peaking on day 37.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of tetramer-positive TCRs to expanding clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "be493843-c30d-4883-aaec-de297e4160e6",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C73",
+      "claim": "TCRs recognising the same antigens frequently have highly similar TCR sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that TCRs recognising the same antigens frequently have highly similar TCR sequences (Dash et al., 2017; Glanville et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "38a7909a-e664-4103-abc2-5474706130bb",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C74",
+      "claim": "The number of edges in all similarity networks except CD8+ expanding clones was significantly larger than would be expected by randomly sampling the same number of clonotypes from the corresponding repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of edges in all similarity networks except CD8+ expanding clones was significantly larger than would expected by randomly sampling the same number of clonotypes from the corresponding repertoire (Figure 3d and Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical comparison to random samples shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "636ade0a-9050-4126-b528-a4ff997c99a7",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C75",
+      "claim": "Clusters of highly similar clones were found in both CD4+ and CD8+ subsets for expanding and contracting clonotypes in both donors.",
+      "claim_type": "EXPLICIT",
+      "source": "In both donors, we found clusters of highly similar clones in both CD4+ and CD8+ subsets for expanding and contracting clonotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by similarity network analysis shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "f77273ab-9e54-46c2-a470-5eb3454b1e34",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C76",
+      "claim": "Clusters were largely donor specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters were largely donor specific, as expected, since our donors have dissimilar HLA alleles (Supplementary file 2) and thus each is likely to present a non-overlapping set of T-cell antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on HLA typing data and knowledge of MHC restriction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "8309a2ce-afb3-42aa-b685-a43360f80de8",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C77",
+      "claim": "The largest cluster was described by the motif TRAV35-CAGXNYGGSQGNLIF-TRAJ42 and was identified in donor M's CD4+-contracting alpha chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest cluster, described by the motif TRAV35-CAGXNYGGSQGNLIF-TRAJ42, was identified in donor M's CD4+-contracting alpha chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence motif analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "f46a4f86-2bf9-470e-9dd9-7aa9ca5fe55d",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C78",
+      "claim": "Clones from the largest cluster constituted 16.3% of all of donor M's CD4+-responding cells on day 15.",
+      "claim_type": "EXPLICIT",
+      "source": "Clones from this cluster constituted 16.3% of all of donor M's CD4+-responding cells on day 15, suggesting a response to an immunodominant CD4+ epitope in the SARS-CoV-2 proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of cluster frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "76b43020-34c5-42b9-9dfb-5327edb5dcb9",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C79",
+      "claim": "The high similarity of TCR sequences in the largest cluster allowed independent identification of motifs using the ALICE algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The high similarity of the TCR sequences of responding clones in this cluster allowed us to independently identify motifs from donor M's CD4 alpha contracting clones using the ALICE algorithm (Pogorelyy et al., 2019; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ALICE analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "4fa7a444-83a7-48c9-a6c7-6dd9ac1243d2",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C80",
+      "claim": "32 CD8+ TCRbetas were mapped to SARS-CoV-2 peptides using the MIRA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure yielded unambiguous matches for 32 CD8+ TCRbetas \u2013 just one clonotype was paired to two peptide pools (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by matching analysis to the MIRA database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "253a0a77-117d-40a6-9c9f-a64cc754c70b",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C81",
+      "claim": "The vast majority of matches to MIRA corresponded to groups of contracting clones.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of matches to MIRA corresponded to groups of contracting clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of MIRA matches to contracting/expanding clone sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "e65d050c-e727-462a-875c-6d681c2a7c73",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C82",
+      "claim": "All clusters corresponding to HLA-A*02:01-YLQPRTFLL MHC-I tetramer-specific TCRs were matched to the peptide pool YLQPRTFL,YLQPRTFLL,YYVGYLQPRTF in the MIRA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we found that all clusters corresponding to HLA-A*02:01-YLQPRTFLL MHC-I tetramer-specific TCRs were matched to the peptide pool YLQPRTFL,YLQPRTFLL,YYVGYLQPRTF in the MIRA dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the MIRA mapping approach using tetramer data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "d2534544-54a1-4aec-8552-d4ccea1551b9",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C83",
+      "claim": "Another large group of matches corresponded to the HLA-B*15:01-restricted NQKLIANQF epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Another large group of matches corresponded to the HLA-B*15:01-restricted (Stamatakis et al., 2020) NQKLIANQF epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MIRA mapping and citation to a study identifying the HLA restriction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "4c4d2700-2e0b-44da-a943-4e4e2c888e01",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C84",
+      "claim": "Clonotypes corresponding to the NQKLIANQF cluster together made up 21% of the CD8+ immune response on day 15.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, clonotypes corresponging to this cluster together made up 21% of the CD8+ immune response on day 15, suggesting immunodominance of this epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of cluster frequencies shown in Figure 3e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "d79c369a-1f8e-4f44-a2fa-418aed87f067",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C85",
+      "claim": "Two TCRbeta clonotypes mapped to the NQKLIANQF epitope were identified in Effector Memory subset 1 year before the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Two TCRbeta clonotypes mapped to this epitope were identified in Effector Memory subset 1 year before the infection, suggesting potential cross-reactive response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of pre-infection memory subpopulation data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "b4b39193-802e-4669-92aa-803749cc57fc",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C86",
+      "claim": "The NQKLIANQF response might be initially triggered by NQKLIANAF, a homologous HLA-B*15:01 epitope from HKU1 or OC43 common human betacoronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this response might be initially triggered by NQKLIANAF, a homologous HLA-B*15:01 epitope from HKU1 or OC43, common human betacoronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the origin of cross-reactive T cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "3589833d-34ea-4a8d-a5b7-27c079582864",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C87",
+      "claim": "No matches for the NQKLIANQF epitope were observed among contracting or expanding clonotypes of HLA-B*15-negative donor W.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no matches for the NQKLIANQF epitope were observed among contracting or expanding clonotypes of HLA-B*15-negative donor W (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of MIRA matches between donors with different HLA types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "919098cf-245d-48f9-9b93-76a128968472",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C88",
+      "claim": "Consistent pairing was found between one of the motifs in TCRalpha to the largest motif in TCRbeta T cells associated with HLA-B*15:01-NQKLIANQF.",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent pairing between one of the motifs in TCRalpha to the largest motif in TCRbeta T cells, which is associated with HLA-B*15:01-NQKLIANQF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational alpha/beta pairing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "86941dae-77aa-422e-aa28-169a84aba4f1",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C89",
+      "claim": "The total frequency of TCRbeta sequences forming the largest cluster in donor M is significantly larger in the COVID-19 cohort than in the healthy donor cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4c,d, we show that the total frequency of TCRbeta sequences forming the largest cluster in donor M (Figure 4c) and donor W (Figure 4d) is significantly larger in the COVID-19 cohort than in the healthy donor cohort from Emerson et al., 2017, suggesting antigen-dependent clonal expansion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of motif frequencies between COVID-19 and control cohorts shown in Figure 4c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "ad804b33-22d2-4bd0-9589-b7dcda914ff0",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C90",
+      "claim": "The total frequency of TCRbeta sequences forming the largest cluster in donor W is significantly larger in the COVID-19 cohort than in the healthy donor cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4c,d, we show that the total frequency of TCRbeta sequences forming the largest cluster in donor M (Figure 4c) and donor W (Figure 4d) is significantly larger in the COVID-19 cohort than in the healthy donor cohort from Emerson et al., 2017, suggesting antigen-dependent clonal expansion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of motif frequencies between COVID-19 and control cohorts shown in Figure 4c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "5fd10d2f-abea-4e2f-a20e-75fb7cd39372",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C91",
+      "claim": "The CD4+ TCRbeta motif from donor W occurs preferentially in donors predicted to have DRB1*07:01 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the CD4+ TCRbeta motif from donor W occurs preferentially in donors predicted to have DRB1*07:01 allele",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by HLA prediction analysis and motif frequency comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "239a9fe2-a258-4a50-b5cd-8cc42903f437",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C92",
+      "claim": "The CD4+ TCRbeta motif from donor M appears to be associated with HLA-DRB1*03:01-DQB1*02:01 haplotype.",
+      "claim_type": "EXPLICIT",
+      "source": "while the motif from donor M appears to be associated with HLA-DRB1*03:01-DQB1*02:01 haplotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by HLA prediction analysis and motif frequency comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "abc4266a-019a-4a8b-99e6-28ec80be2f21",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C93",
+      "claim": "The frequency of sequences corresponding to CD4+ motifs can be used to identify SARS-CoV-2 infected donors with matching HLA alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of sequences corresponding to these motifs can then be used to identify SARS-CoV-2 infected donors with matching HLA alleles (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ROC curve analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "1613d64f-979c-470e-af82-49ae62109ce8",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C94",
+      "claim": "A group of predominantly CD4+ clonotypes expanded from day 15 to day 37 after the infection in both donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in both donors, we also identified a group of predominantly CD4+ clonotypes that expanded from day 15 to day 37 after the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis and PCA of clonal trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "3302cd34-b262-4941-990f-76555142af6b",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C95",
+      "claim": "One possible explanation for the second wave of expansion is the priming of CD4+ T cells by antigen-specific B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this second wave of expansion is the priming of CD4+ T cells by antigen-specific B cells, but there might be other mechanisms such as the migration of SARS-CoV-2-specific T cells from lymphoid organs or bystander activation of non-SARS-CoV-2 specific T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed expanding clone dynamics.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "2717aa78-63e3-43b4-be0a-04a620d7a799",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C96",
+      "claim": "Later expanding T cells might be triggered by another infection, simultaneously and asymptomatically occurring in both donors around day 30.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that later expanding T cells are triggered by another infection, simultaneously and asymptomatically occurring in both donors around day 30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculative explanation for the expanding clone dynamics.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "0a2aa2c2-bb06-490b-96bf-c9e91f7da0ee",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C97",
+      "claim": "A large fraction of putatively SARS-CoV-2-reactive T cell clones are found in memory subpopulations and remain there at least 3 months after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that a large fraction of putatively SARS-CoV-2-reactive T cell clones are later found in memory subpopulations and remain there at least 3 months after infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of memory subpopulation repertoires at multiple time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "a86cce8b-1f9c-4be5-a9e9-b16b9f9e57c2",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C98",
+      "claim": "Some responding clones are found in long-lived stem cell-like memory (SCM) subset.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, some of responding clones are found in long-lived stem cell-like memory (SCM) subset, as also reported for SARS-CoV-2 convalescent patients in Sekine et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of SCM repertoires and citation to another study with similar findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "faed6bf0-14c7-4b8b-83a1-743d85e1319b",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C99",
+      "claim": "A subset of CD4+ clones were identified in pre-infection central memory subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of CD4+ clones were identified in pre-infection central memory subsets, and a subset of CD8+ T cells were found in effector memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of pre-infection memory subpopulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "42c311bc-384c-4603-863d-9a5cce96747c",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C100",
+      "claim": "A subset of CD8+ T cells were found in pre-infection effector memory.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of CD4+ clones were identified in pre-infection central memory subsets, and a subset of CD8+ T cells were found in effector memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of pre-infection memory subpopulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "bae44812-6e7d-446a-b699-8e7ecdb8e4c2",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C101",
+      "claim": "Pre-existing CD8+ clones recognising NQKLIANQF include an immunodominant HLA-B*15:01 restricted SARS-CoV-2 epitope for which a homologous epitope differing by 1 aa mismatch exists in common human betacoronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these are CD8+ clones recognising NQKLIANQF, an immunodominant HLA-B*15:01 restricted SARS-CoV-2 epitope, for which homologous epitope differing by 1 aa mismatch exists in common human betacoronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by epitope mapping and sequence comparison to other coronavirus epitopes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "4921ad4e-c2a0-4919-9950-2ca7bc0bba82",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C102",
+      "claim": "The presence of SARS-CoV-2 cross-reactive CD4+ T cells in healthy individuals was recently demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of SARS-CoV-2 cross-reactive CD4+ T cells in healthy individuals was recently demonstrated (Braun et al., 2020; Grifoni et al., 2020; Le Bert et al., 2020; Meckiff et al., 2020; Bacher et al., 2020; Peng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "f97a7a45-b703-488b-afc4-dd553529d354",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C103",
+      "claim": "Cross-reactive CD4+ and CD8+ T cells can participate in the response in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further suggests that cross-reactive CD4+ and CD8+ T cells can participate in the response in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of pre-existing responding clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "ccfd6dbc-a9ed-4be0-8292-893aa4f0045e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "claim_id": "C104",
+      "claim": "Larger studies with cohorts of severe and mild cases with pre-infection time points are needed to determine whether the presence of cross-reactive T cells before infection is linked to the mildness of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to ask whether the presence of cross-reactive T cells before infection is linked to the mildness of the disease (with predicted HLA-B*15:01 cross-reactive epitope described above as a good starting point). Larger studies with cohorts of severe and mild cases with pre-infection time points are needed to address this question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions and limitations of the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two healthy young adult donors (W and M) with mild COVID-19 symptoms were enrolled in a longitudinal study. Blood samples were collected at multiple time points (days 15, 30, 37, 45, and 85 post-infection), and TCR\u03b1/\u03b2 repertoire sequencing was performed on PBMCs, CD4+/CD8+ T cells, and memory subpopulations. Pre-infection repertoire data from 1-2 years prior were also available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C33 describe the study design, participant characteristics, sample collection schedule, and experimental methods. These are well-documented with appropriate detail and supported by the figures showing the experimental timeline and gating strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "bfd0d47a-966f-4881-9522-0779c28fcb25",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Principal component analysis of clonal trajectories identified three distinct clusters: stable clones with constant frequencies, contracting clones that peaked at day 15 and declined by day 85, and expanding clones that peaked at day 37. Statistical analysis using edgeR and NoisET identified 291-607 contracting TCR\u03b1/\u03b2 clonotypes and 176-427 expanding clonotypes across both donors, representing 0.9-2.5% of T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C42 describe the identification of T cell clones with distinct temporal dynamics using PCA and statistical methods. The results are supported by multiple figures showing consistent patterns across both donors and both TCR chains, with appropriate statistical validation using two independent methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "72a458aa-04eb-43b8-a96c-d79ba6c9a857",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The magnitude of the T-cell response to COVID-19 (0.9-2.5% of T cells) is comparable to that observed after yellow fever vaccination in donor M (6.7% on day 15). Both CD4+ and CD8+ T cell subsets participated in the response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 compare the COVID-19 response magnitude to a previous vaccination study in the same donor and document participation of both T cell subsets. This is supported by quantitative data and phenotyping results shown in Figure 1d,e.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "28cacdfa-89a4-4d52-9ab4-3695ce74aa61",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A small number of MAIT cell clonotypes were identified among contracting and expanding clones, but their contribution to the overall response was minimal (<1% of responding T cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 address the potential contribution of MAIT cells to the COVID-19 response. The analysis is appropriate, using a reference database of MAIT TCR sequences, and the conclusion that MAIT cells play a minor role is well-supported by the quantitative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "a720ccf4-77e7-4537-8dab-80792c8c95f7",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both contracting and expanding T-cell clones were found in memory subpopulations (CM, EM, EMRA, SCM) at days 30, 45, and 85 post-infection. CD4+ clones were biased toward CM, while CD8+ clones were more represented in EMRA. A large fraction of SARS-CoV-2-reactive clones persisted in memory subpopulations for at least 3 months after infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 and C97 describe memory formation after COVID-19 infection. The results are supported by FACS-sorted memory subpopulation analysis shown in Figure 2, demonstrating differential distribution of CD4+ and CD8+ responding clones across memory compartments and their persistence over time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "87aec8a1-3149-4089-b150-22ed1274aa7a",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Some responding clones were found in the long-lived stem cell-like memory (SCM) subset, consistent with findings in other COVID-19 convalescent patient studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C98 identify responding clones in the SCM compartment. This is supported by the memory subpopulation analysis and corroborated by citation to another study (Sekine et al., 2020) with similar findings, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "72eb55c4-b194-4229-b6eb-0affda0869ff",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pre-existing T cell clones that later responded to SARS-CoV-2 were identified in repertoires from 1-2 years before infection. These clones had low frequencies pre-infection, expanded on day 15, and contracted by day 85. CD4+ pre-existing clones were found in CM, while CD8+ clones were in EM. Pre-infection CM clones shifted to EM phenotype by day 30 post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 and C99-C100 describe pre-existing memory T cells that participated in the COVID-19 response. The longitudinal tracking data from pre-infection to post-infection time points, including memory subpopulation analysis, provides strong evidence for these clones' expansion and phenotypic changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "60b77cfe-9157-4649-8590-9cd6ca4fb0ac",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pre-existing responding clones may represent cross-reactive memory T cells specific for other infections, such as common human coronaviruses. Cross-reactive CD4+ and CD8+ T cells can participate in the in vivo response to SARS-CoV-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62, C6, C102, and C103 propose cross-reactivity as an explanation for pre-existing responding clones. While the observation of pre-existing clones is well-supported, the cross-reactivity hypothesis is speculative and not directly demonstrated. The claim is supported by citations to other studies showing cross-reactive T cells in healthy donors, but definitive proof of cross-reactivity for the specific clones identified here is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "f5344f64-4344-479a-b406-a8fdf30f5c84",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Database searches revealed essentially no overlap between responding clones and TCRs specific for common pathogens (only 2 matches found, one to CMV with incompatible HLA and one to influenza), suggesting responding clones are unlikely to be specific for immunodominant epitopes of common pathogens covered in VDJdb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 describe negative results from database searches that help rule out alternative explanations. The analysis is appropriate and the conclusion that responding clones are not recognizing common pathogen epitopes is well-supported by the lack of matches and HLA typing data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "6afbc3bd-b17f-4c61-b078-8a607663cc05",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Independent validation using HLA-A*02:01-YLQPRTFLL tetramer staining from another study confirmed that tetramer-positive TCRs matched contracting clones but not expanding clones. All matching clonotypes had CD8+ phenotype as expected for MHC-I restriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 and C71-C72 describe orthogonal validation of the contracting clone identification method using tetramer data from an independent study. The strong concordance between tetramer-positive TCRs and computationally identified contracting clones (17/18 TCR\u03b2 and 12/15 TCR\u03b1) provides robust validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "0051849a-0089-4e8a-b558-c1c07e8b0e52",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Similarity network analysis revealed that responding clones have significantly more sequence similarity than expected by chance (except CD8+ expanding clones). Clusters of highly similar clones were found in both CD4+ and CD8+ subsets for both donors, and clusters were largely donor-specific as expected from different HLA types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 describe TCR sequence similarity analysis. The statistical comparison to random samples provides appropriate validation, and the donor-specificity of clusters is consistent with HLA restriction. The analysis is well-executed and the conclusions are supported by the data in Figures 3 and 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "24ec29b2-1a66-4297-8fc9-3f66e2ddf189",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The largest cluster of similar TCRs (motif TRAV35-CAGXNYGGSQGNLIF-TRAJ42) was found in donor M's CD4+ contracting clones and constituted 16.3% of CD4+ responding cells on day 15, suggesting response to an immunodominant epitope. This cluster was independently identified using the ALICE algorithm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe the identification of a major CD4+ TCR motif. The high frequency (16.3%) and independent validation using a different algorithm (ALICE) provide strong support for this being a response to an immunodominant epitope.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "21217697-4cee-490d-9e47-704ac7ce05e6",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mapping to the MIRA database identified 32 CD8+ TCR\u03b2 clonotypes specific for SARS-CoV-2 peptides, with the vast majority corresponding to contracting clones. Tetramer-specific TCRs matched the expected YLQPRTFLL peptide pool. Another large group matched the HLA-B*15:01-restricted NQKLIANQF epitope, which constituted 21% of the CD8+ response on day 15.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 describe epitope mapping using the MIRA database. The validation of the approach using tetramer data (C82) and the identification of an immunodominant epitope (NQKLIANQF at 21% of CD8+ response) are well-supported. The consistency between different validation methods strengthens these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "708e3f8d-9d7f-408c-8798-d2b73a6eeada",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Two TCR\u03b2 clonotypes specific for the NQKLIANQF epitope were found in EM subset 1 year before infection, suggesting potential cross-reactivity. This response may have been initially triggered by NQKLIANAF, a homologous HLA-B*15:01 epitope from common human betacoronaviruses (HKU1 or OC43) that differs by only 1 amino acid. No NQKLIANQF-specific clones were found in HLA-B*15-negative donor W.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C87 and C101 propose a specific cross-reactivity mechanism. While the observation of pre-existing NQKLIANQF-specific clones is supported by data, and the HLA restriction is confirmed by the absence in donor W, the proposed mechanism involving the homologous HKU1/OC43 epitope is speculative. Direct demonstration of cross-reactivity (e.g., peptide stimulation assays) would be needed for full support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "570cc09a-5927-47b6-9d8e-a63c70b1106f",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Computational pairing analysis identified consistent pairing between TCR\u03b1 and TCR\u03b2 motifs associated with the HLA-B*15:01-NQKLIANQF epitope.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 describes TCR\u03b1/\u03b2 pairing for the NQKLIANQF-specific response. This is supported by the computational pairing analysis described in the methods, though the strength of evidence would be enhanced by experimental validation of the predicted pairings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "be76d388-4129-4301-8844-ed28fd08162d",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CD4+ TCR motifs from both donors showed significantly higher frequencies in a COVID-19 patient cohort compared to healthy controls. The motifs were associated with specific HLA alleles (DRB1*07:01 for donor W, DRB1*03:01-DQB1*02:01 for donor M) and could be used to identify SARS-CoV-2 infected donors with matching HLA alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 validate CD4+ motifs using an independent COVID-19 cohort. The statistical comparison between COVID-19 patients and controls, HLA association analysis, and ROC curve analysis (Figure 4\u2014figure supplement 2) provide strong support for these motifs being SARS-CoV-2-specific and HLA-restricted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "abbc3a85-3021-43fa-adc1-9f4773bf4cf2",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A group of predominantly CD4+ clonotypes showed unexpected expansion from day 15 to day 37 in both donors. Possible explanations include priming by antigen-specific B cells, migration from lymphoid organs, bystander activation, or response to a concurrent asymptomatic infection around day 30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C96 describe a second wave of T cell expansion. While the observation is well-supported by data (C94), the proposed explanations (C95-C96) are entirely speculative. The authors acknowledge uncertainty about whether these are SARS-CoV-2-specific T cells, and no validation data are provided to distinguish between the proposed mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "cccb1c15-2f76-4dfc-bf8b-ab526d32ef9e",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Larger studies with pre-infection time points from both severe and mild COVID-19 cases are needed to determine whether pre-existing cross-reactive T cells are associated with disease severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 appropriately identifies a limitation of the current study (only 2 mild cases) and proposes necessary future work. This is a reasonable assessment of what would be required to address the question of whether cross-reactive T cells affect disease outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "22a3bc9b-e00d-4e0f-a263-6173800fe029",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background context on COVID-19, T cell biology, and prior studies of SARS-CoV-2 immune responses establishes the scientific foundation for the current study. Previous work demonstrated the importance of T cells in coronavirus infections, the dynamics of T cell responses, and the utility of TCR repertoire sequencing for tracking antigen-specific responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C21 provide background information supported by appropriate citations to published literature. These establish the scientific context and rationale for the study design and analytical approaches used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    },
+    {
+      "id": "54729747-fb4f-45ec-9843-c53ad49258b2",
+      "content_id": "a6d781c7-376a-4137-9d28-258f9f3be848",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study identified CD4+ and CD8+ T-cell clones with transient expansion after mild COVID-19 infection, characterized TCR sequence motifs that are enriched in COVID-19 patients, and showed that the majority of infection-reactive clonotypes acquire memory phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 summarize the main findings of the study. These high-level conclusions are well-supported by the detailed results described in other claim groups, including the identification of contracting/expanding clones, motif analysis, and memory phenotyping.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:42.591382Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d3c99f7-4c47-4e4b-98f7-760ba6d2f4da",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "398b6315-6465-4672-829d-3361e34049d4",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "0c3d009c-1c3f-4359-907b-afc224e3e60e",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "566a3b5d-48df-448b-b79f-cfc7a1eedb43",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "7a461cc5-02b8-4081-84e2-8ce64243ef88",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "8b2a7410-f864-4c03-8489-3d108b1cc984",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "afb56373-c01d-47b6-a516-1723a7f0e120",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "63a8cf45-2584-4b89-9953-a6540c879b36",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "6e80dd1b-abdd-45e5-9139-a08517dfdeaa",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "4a1a1c86-520c-4b94-8045-a8e847a83deb",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "2fe080ed-bb88-454d-8cc2-dd5631c01631",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "b6b29041-d057-4041-829a-a1f9d9fc9f7e",
+      "result_id": "5ddd9969-c870-48b1-b4d2-67a2d5d807d4"
+    },
+    {
+      "claim_id": "407b4f28-b4a2-434d-a889-6207c8af2bd5",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "4aecf0cf-696f-4632-b183-6be87bd17a40",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "b3cd0291-10a2-4e6f-a5c4-6015174f91ca",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "5a51d170-95b8-4251-af6e-0a100d115a43",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "117a3557-9b4d-4b38-b901-4cfbc2f725c8",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "b97b51d5-581c-4c67-8729-8c5f4f652709",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "a1273d72-6e15-4fbd-8c69-5e760585b1d2",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "6d1f1350-784e-4ffc-a8bf-a758320bca95",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "eedde6e2-31e4-40e8-a5b8-92402e549a3f",
+      "result_id": "bfd0d47a-966f-4881-9522-0779c28fcb25"
+    },
+    {
+      "claim_id": "fd1fd862-9aed-4a56-bd6d-48d28c219d08",
+      "result_id": "72a458aa-04eb-43b8-a96c-d79ba6c9a857"
+    },
+    {
+      "claim_id": "ed39481f-1034-4c5c-97c6-3c31084b1022",
+      "result_id": "72a458aa-04eb-43b8-a96c-d79ba6c9a857"
+    },
+    {
+      "claim_id": "59ac0128-366e-422f-8c22-a26cd74b1018",
+      "result_id": "28cacdfa-89a4-4d52-9ab4-3695ce74aa61"
+    },
+    {
+      "claim_id": "fb58e90e-9edb-4a43-a68f-bece4d305660",
+      "result_id": "28cacdfa-89a4-4d52-9ab4-3695ce74aa61"
+    },
+    {
+      "claim_id": "337a5010-4b83-42af-923c-78956506de20",
+      "result_id": "28cacdfa-89a4-4d52-9ab4-3695ce74aa61"
+    },
+    {
+      "claim_id": "e7701862-ea2a-4483-ac30-f21376290228",
+      "result_id": "28cacdfa-89a4-4d52-9ab4-3695ce74aa61"
+    },
+    {
+      "claim_id": "8f934d3c-197e-486d-83f2-0bbe8de4fb90",
+      "result_id": "a720ccf4-77e7-4537-8dab-80792c8c95f7"
+    },
+    {
+      "claim_id": "fdb089d0-9d32-4635-bb8f-9012f5bc271a",
+      "result_id": "a720ccf4-77e7-4537-8dab-80792c8c95f7"
+    },
+    {
+      "claim_id": "84510a2a-51ee-4806-b384-2fe5d1ab68ac",
+      "result_id": "a720ccf4-77e7-4537-8dab-80792c8c95f7"
+    },
+    {
+      "claim_id": "617266c9-19cc-4248-8c8e-d0a5168fde94",
+      "result_id": "a720ccf4-77e7-4537-8dab-80792c8c95f7"
+    },
+    {
+      "claim_id": "0a68c5f5-9b65-40ef-8514-ff4e703dfa58",
+      "result_id": "a720ccf4-77e7-4537-8dab-80792c8c95f7"
+    },
+    {
+      "claim_id": "0a2aa2c2-bb06-490b-96bf-c9e91f7da0ee",
+      "result_id": "a720ccf4-77e7-4537-8dab-80792c8c95f7"
+    },
+    {
+      "claim_id": "fa82c2f2-7d15-457b-8123-b2943992bb88",
+      "result_id": "87aec8a1-3149-4089-b150-22ed1274aa7a"
+    },
+    {
+      "claim_id": "a86cce8b-1f9c-4be5-a9e9-b16b9f9e57c2",
+      "result_id": "87aec8a1-3149-4089-b150-22ed1274aa7a"
+    },
+    {
+      "claim_id": "0cc05699-06bf-4a6d-9c12-0ed19fcb9e2e",
+      "result_id": "72eb55c4-b194-4229-b6eb-0affda0869ff"
+    },
+    {
+      "claim_id": "cb284dec-52bf-4bf1-a548-47f1820ffc1e",
+      "result_id": "72eb55c4-b194-4229-b6eb-0affda0869ff"
+    },
+    {
+      "claim_id": "b5285812-5c2e-4473-982a-ca96c6ae857b",
+      "result_id": "72eb55c4-b194-4229-b6eb-0affda0869ff"
+    },
+    {
+      "claim_id": "65ef88c8-35f6-4d60-b90a-f10f35b161f9",
+      "result_id": "72eb55c4-b194-4229-b6eb-0affda0869ff"
+    },
+    {
+      "claim_id": "2a726a54-183d-4ce3-a200-12d9621bf84b",
+      "result_id": "72eb55c4-b194-4229-b6eb-0affda0869ff"
+    },
+    {
+      "claim_id": "faed6bf0-14c7-4b8b-83a1-743d85e1319b",
+      "result_id": "72eb55c4-b194-4229-b6eb-0affda0869ff"
+    },
+    {
+      "claim_id": "42c311bc-384c-4603-863d-9a5cce96747c",
+      "result_id": "72eb55c4-b194-4229-b6eb-0affda0869ff"
+    },
+    {
+      "claim_id": "408deae9-9c5c-46f8-8c19-d5167449324a",
+      "result_id": "60b77cfe-9157-4649-8590-9cd6ca4fb0ac"
+    },
+    {
+      "claim_id": "03cb180c-f235-4913-b388-e39abaf33fc5",
+      "result_id": "60b77cfe-9157-4649-8590-9cd6ca4fb0ac"
+    },
+    {
+      "claim_id": "4921ad4e-c2a0-4919-9950-2ca7bc0bba82",
+      "result_id": "60b77cfe-9157-4649-8590-9cd6ca4fb0ac"
+    },
+    {
+      "claim_id": "f97a7a45-b703-488b-afc4-dd553529d354",
+      "result_id": "60b77cfe-9157-4649-8590-9cd6ca4fb0ac"
+    },
+    {
+      "claim_id": "5f5a8e17-03ae-49ba-8f6e-65d4f8e54972",
+      "result_id": "f5344f64-4344-479a-b406-a8fdf30f5c84"
+    },
+    {
+      "claim_id": "35feb345-9de3-45bd-9027-0f69a0fdb41c",
+      "result_id": "f5344f64-4344-479a-b406-a8fdf30f5c84"
+    },
+    {
+      "claim_id": "2f4e45c9-7a72-4caa-bf10-871df6bc7162",
+      "result_id": "f5344f64-4344-479a-b406-a8fdf30f5c84"
+    },
+    {
+      "claim_id": "4f0c526a-7872-42e8-a70b-b1bf4e3d65d7",
+      "result_id": "f5344f64-4344-479a-b406-a8fdf30f5c84"
+    },
+    {
+      "claim_id": "553b133b-a07f-45fc-8cc6-c6657219def7",
+      "result_id": "6afbc3bd-b17f-4c61-b078-8a607663cc05"
+    },
+    {
+      "claim_id": "a363e8da-31db-4626-bbc8-d8c6cb53ec6b",
+      "result_id": "6afbc3bd-b17f-4c61-b078-8a607663cc05"
+    },
+    {
+      "claim_id": "a6a666c4-499f-403f-9515-26fd2526ce75",
+      "result_id": "6afbc3bd-b17f-4c61-b078-8a607663cc05"
+    },
+    {
+      "claim_id": "0a249ad2-7bad-4a34-9649-42e23a24e8c7",
+      "result_id": "6afbc3bd-b17f-4c61-b078-8a607663cc05"
+    },
+    {
+      "claim_id": "be493843-c30d-4883-aaec-de297e4160e6",
+      "result_id": "0051849a-0089-4e8a-b558-c1c07e8b0e52"
+    },
+    {
+      "claim_id": "38a7909a-e664-4103-abc2-5474706130bb",
+      "result_id": "0051849a-0089-4e8a-b558-c1c07e8b0e52"
+    },
+    {
+      "claim_id": "636ade0a-9050-4126-b528-a4ff997c99a7",
+      "result_id": "0051849a-0089-4e8a-b558-c1c07e8b0e52"
+    },
+    {
+      "claim_id": "f77273ab-9e54-46c2-a470-5eb3454b1e34",
+      "result_id": "0051849a-0089-4e8a-b558-c1c07e8b0e52"
+    },
+    {
+      "claim_id": "8309a2ce-afb3-42aa-b685-a43360f80de8",
+      "result_id": "24ec29b2-1a66-4297-8fc9-3f66e2ddf189"
+    },
+    {
+      "claim_id": "f46a4f86-2bf9-470e-9dd9-7aa9ca5fe55d",
+      "result_id": "24ec29b2-1a66-4297-8fc9-3f66e2ddf189"
+    },
+    {
+      "claim_id": "76b43020-34c5-42b9-9dfb-5327edb5dcb9",
+      "result_id": "24ec29b2-1a66-4297-8fc9-3f66e2ddf189"
+    },
+    {
+      "claim_id": "4fa7a444-83a7-48c9-a6c7-6dd9ac1243d2",
+      "result_id": "21217697-4cee-490d-9e47-704ac7ce05e6"
+    },
+    {
+      "claim_id": "253a0a77-117d-40a6-9c9f-a64cc754c70b",
+      "result_id": "21217697-4cee-490d-9e47-704ac7ce05e6"
+    },
+    {
+      "claim_id": "e65d050c-e727-462a-875c-6d681c2a7c73",
+      "result_id": "21217697-4cee-490d-9e47-704ac7ce05e6"
+    },
+    {
+      "claim_id": "d2534544-54a1-4aec-8552-d4ccea1551b9",
+      "result_id": "21217697-4cee-490d-9e47-704ac7ce05e6"
+    },
+    {
+      "claim_id": "4c4d2700-2e0b-44da-a943-4e4e2c888e01",
+      "result_id": "21217697-4cee-490d-9e47-704ac7ce05e6"
+    },
+    {
+      "claim_id": "d79c369a-1f8e-4f44-a2fa-418aed87f067",
+      "result_id": "708e3f8d-9d7f-408c-8798-d2b73a6eeada"
+    },
+    {
+      "claim_id": "b4b39193-802e-4669-92aa-803749cc57fc",
+      "result_id": "708e3f8d-9d7f-408c-8798-d2b73a6eeada"
+    },
+    {
+      "claim_id": "3589833d-34ea-4a8d-a5b7-27c079582864",
+      "result_id": "708e3f8d-9d7f-408c-8798-d2b73a6eeada"
+    },
+    {
+      "claim_id": "bae44812-6e7d-446a-b699-8e7ecdb8e4c2",
+      "result_id": "708e3f8d-9d7f-408c-8798-d2b73a6eeada"
+    },
+    {
+      "claim_id": "919098cf-245d-48f9-9b93-76a128968472",
+      "result_id": "570cc09a-5927-47b6-9d8e-a63c70b1106f"
+    },
+    {
+      "claim_id": "86941dae-77aa-422e-aa28-169a84aba4f1",
+      "result_id": "be76d388-4129-4301-8844-ed28fd08162d"
+    },
+    {
+      "claim_id": "ad804b33-22d2-4bd0-9589-b7dcda914ff0",
+      "result_id": "be76d388-4129-4301-8844-ed28fd08162d"
+    },
+    {
+      "claim_id": "5fd10d2f-abea-4e2f-a20e-75fb7cd39372",
+      "result_id": "be76d388-4129-4301-8844-ed28fd08162d"
+    },
+    {
+      "claim_id": "239a9fe2-a258-4a50-b5cd-8cc42903f437",
+      "result_id": "be76d388-4129-4301-8844-ed28fd08162d"
+    },
+    {
+      "claim_id": "abc4266a-019a-4a8b-99e6-28ec80be2f21",
+      "result_id": "be76d388-4129-4301-8844-ed28fd08162d"
+    },
+    {
+      "claim_id": "1613d64f-979c-470e-af82-49ae62109ce8",
+      "result_id": "abbc3a85-3021-43fa-adc1-9f4773bf4cf2"
+    },
+    {
+      "claim_id": "3302cd34-b262-4941-990f-76555142af6b",
+      "result_id": "abbc3a85-3021-43fa-adc1-9f4773bf4cf2"
+    },
+    {
+      "claim_id": "2717aa78-63e3-43b4-be0a-04a620d7a799",
+      "result_id": "abbc3a85-3021-43fa-adc1-9f4773bf4cf2"
+    },
+    {
+      "claim_id": "ccfd6dbc-a9ed-4be0-8292-893aa4f0045e",
+      "result_id": "cccb1c15-2f76-4dfc-bf8b-ab526d32ef9e"
+    },
+    {
+      "claim_id": "69616c44-54c4-4aa2-8073-91b6bb5ec130",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "dac4d3f0-5133-44a7-bf65-67d31159f5d0",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "af3f2c33-0097-40a6-8511-da1f0aa3a264",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "2a1914a0-d6bc-4803-b5e1-9305c9eb8e6f",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "614fa77c-7015-4c43-8e00-d140d64785c7",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "9858de98-f267-45d0-81b2-dabf0db5e422",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "40e2c6cb-4a7b-4f48-bac4-7cf2489c4bb3",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "149d59ad-ebc7-480f-a8fd-432e87a876fc",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "8ee25033-db5a-4a90-8641-20642e066b01",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "0688541e-ff0f-4e63-a415-6b9f8441f110",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "784ab364-4cd7-4544-b72f-ffe527de165e",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "be932b5f-457e-4c94-b517-26392d18a306",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "2dc60f85-1e57-4bd0-9951-603337c2121e",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "05c6055c-3677-4528-a03c-a5c731b68ad1",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "da9960dc-d0d3-486f-9eee-6f3cf241d37c",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "c1ac7a30-32df-460f-ba74-48a7dae9c36d",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "d320ceba-8dec-4629-b624-bc63c17b7f1c",
+      "result_id": "22a3bc9b-e00d-4e0f-a263-6173800fe029"
+    },
+    {
+      "claim_id": "6d24fa10-dcf5-4550-8177-bee278785196",
+      "result_id": "54729747-fb4f-45ec-9843-c53ad49258b2"
+    },
+    {
+      "claim_id": "20bd04ce-a177-4119-b304-e8ab160f35d2",
+      "result_id": "54729747-fb4f-45ec-9843-c53ad49258b2"
+    },
+    {
+      "claim_id": "bf5e8f2d-a279-460f-91a7-ca972580bd7d",
+      "result_id": "54729747-fb4f-45ec-9843-c53ad49258b2"
+    }
+  ],
+  "comparisons": []
+}

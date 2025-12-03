@@ -1,0 +1,459 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C19"
+    ],
+    "result": "Triple-drug therapies transformed HIV from a fatal to chronic condition and saved many lives by improving lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, and C19 are well-established facts supported by epidemiological data and multiple citations (Marcus et al., 2020; Hogg et al., 1999; Walensky et al., 2006). These represent consensus knowledge in HIV treatment history.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Triple-drug therapies were theoretically expected to prevent resistance evolution because each drug suppresses R0 below 1, mutations don't confer cross-class resistance, and simultaneous multi-drug resistance mutations are extremely rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C18 describe the well-established theoretical basis for triple-drug therapy design, supported by citations (Hammer et al., 1997; Nowak and May, 2000; Perelson and Nelson, 1999). The logic is sound and represents accepted HIV treatment theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C20"
+    ],
+    "result": "Despite theoretical expectations, triple-drug therapies reduced but did not eliminate resistance evolution, which continues into the modern day, contrasting with near-universal rapid resistance on early monotherapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8-C12, and C20 are supported by multiple citations to clinical trials and cohort studies (Zazzi et al., 2018; Larder et al., 1989; Schuurman et al., 1995; Lee et al., 2014; Rocheleau et al., 2018). This represents well-documented clinical reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In the Kempf study (M98-863) of 3TC+D4T+NFV therapy, 24% of 327 patients developed resistance within 2 years, with resistance emerging sequentially in a predictable order: 3TC first, then NFV, then D4T.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 present detailed data from Kempf et al., 2004, showing specific resistance patterns. The sequential ordering (C27) is inferred from cross-sectional data rather than longitudinal tracking, which is a limitation, but the inference is reasonable given the strong pattern (35/35 single-resistant had 3TC resistance, 35/36 double-resistant had 3TC+NFV).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In the Hoffmann study of 3TC+AZT+EFV therapy, 48/68 genotyped patients with virologic failure had resistance mutations, with a different sequential pattern than PI-based therapy: EFV resistance emerged first, then 3TC resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 present data from Hoffmann et al., 2009, showing that NNRTI-based therapy has a different resistance ordering than PI-based therapy. Like the Kempf study, the ordering is inferred from cross-sectional data (19/21 single-resistant had EFV resistance, 20/20 double-resistant had EFV+3TC), which is reasonable but not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "3TC resistance evolves rapidly as monotherapy and first when co-administered with AZT or D4T+NFV, but unexpectedly appears to not be selected with NNRTIs unless NNRTI resistance has already appeared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 synthesize observations across multiple studies. C33-C35 are well-supported by citations (Feder et al., 2021a; Picard et al., 2001; Larder et al., 1995) and data from the Kempf study. C36 is an inference from the Hoffmann study data showing the unexpected pattern with NNRTIs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "Resistance evolution remained common even in individuals starting triple-drug therapy in the mid-1990s or later, with substantial ongoing resistance 5+ years after therapy initiation. Conditional survival analysis shows yearly resistance probability remains elevated above 0 for all drug classes even after 5+ years, with slow exponential decline, indicating ongoing within-patient processes rather than early failure in a subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by cohort studies (Rocheleau et al., 2018; Phillips et al., 2005) and conditional survival analysis of British Columbia cohort data (Figure 2A). The statistical analysis is appropriate and the interpretation that resistance patterns reflect ongoing processes rather than early failures is well-reasoned from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Many viral sequences at virologic failure harbor only 0, 1, or 2 resistance mutations rather than full resistance to all three drugs, suggesting partial resistance allows growth above detectable thresholds, which contradicts theoretical expectations that singly-resistant viruses should be suppressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by data from the Stanford HIV Drug Resistance Database (Figure 2B, Feder et al., 2016a). The observation of partially resistant genotypes at virologic failure is well-documented. C47 correctly identifies this as surprising under standard triple-drug therapy theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In PI-based therapies, singly-resistant populations almost exclusively carry 3TC-resistance mutations, occurring more often than predicted by mutation rates (p<0.05), despite the M184V mutation incurring substantial fitness costs that should make it unlikely as standing genetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by Stanford database analysis (Figure 2C) with appropriate statistical testing (binomial test with Benjamini-Hochberg correction, Supplementary file 5). The fitness cost data is supported by citations (Paredes et al., 2009; Jain et al., 2011; Simen et al., 2009). The statistical analysis appropriately accounts for multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "In NNRTI-based therapies, single resistance mutations most often conferred NNRTI resistance, occurring more often than predicted by mutation rates in all therapies except one (p<0.05 with FDR correction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by Stanford database analysis (Figure 2C) with appropriate statistical testing (binomial test with 5% FDR and Benjamini-Hochberg correction, Supplementary file 6). The one exception (3TC-TDF-EFV) had the smallest sample size (n=15), which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HIV drugs cause viral population shrinkage even as monotherapy, with dynamics explained by Hill dose-response curves showing mutant selection windows where resistant virus can grow (R0>1) but sensitive virus cannot (R0<1) at intermediate drug concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are well-supported by citations (Eron et al., 1995; Reiss et al., 1988; Sampah et al., 2011; Rosenbloom et al., 2012) and Figure 3A showing AZT monotherapy data. The mutant selection window concept is established pharmacology with empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Patient non-adherence and variable drug metabolism can create temporal heterogeneity where drug concentrations drop below required levels. For 3TC+D4T+NFV, missed doses may result in 3TC monotherapy because NFV and D4T lose suppression within 24hr while 3TC persists, allowing 3TC-resistant genotypes to spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe the temporal heterogeneity mechanism supported by multiple citations (Fox et al., 2008; Bangsberg et al., 2007; Harrigan et al., 2005; Rosenbloom et al., 2012). The specific pharmacokinetic properties of the three drugs are cited (C62) and the inference about 3TC monotherapy (C63) follows logically from these properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A temporal heterogeneity model of 3TC+D4T+NFV reproduces sequential, predictably-ordered resistance evolution (3TC\u2192NFV\u2192D4T) and virologic failure without resistance, but fails to reproduce ongoing resistance after year 1, with 95.3% of individuals without first-year resistance remaining suppressed for 10 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 describe simulation results from the authors' temporal heterogeneity model (Figure 5A). The model successfully reproduces some clinical patterns (C64-C66) but fails to reproduce ongoing resistance (C67-C68), which is honestly reported. The conclusion (C69) appropriately acknowledges this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "NNRTIs have particularly long half-lives, creating potential for NNRTI monotherapy during treatment interruptions. However, the SMART trial found that 'covering' the NNRTI tail did not affect resistance risk, suggesting the tail may not explain NNRTI resistance. An alternative explanation is that population expansion during interruptions creates standing genetic variation that is then selected when treatment resumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by citations (Taylor et al., 2007; Fox et al., 2008; Pennings, 2012). The SMART trial result (C72) provides evidence against the simple NNRTI tail hypothesis, and the alternative explanation (C74) is appropriately presented as a hypothesis rather than proven fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "HIV drugs have non-uniform penetration profiles that differ among drugs, potentially creating effective monotherapy in some body parts (e.g., brain, lymph nodes). For 3TC+D4T+NFV, differential brain penetration (NFV and D4T particularly poor) can create regions where 3TC-resistant HIV can replicate and potentially be detected in blood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by multiple citations about drug penetration (Else et al., 2011; Letendre et al., 2008; Decloedt et al., 2015; Fletcher et al., 2014; Thompson et al., 2019) and specific penetration data for the three drugs (Letendre et al., 2008; Browne et al., 1993; Aweeka et al., 1999; Ene et al., 2011). The inference about 3TC-resistant replication (C78) is reasonable given the penetration data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "A spatial heterogeneity model of 3TC+D4T+NFV with three compartments (full drug penetration, brain-like reduced penetration, drug-free sanctuary) reproduces all three clinical patterns (ongoing, sequential, predictable resistance) but only for 3TC, with resistance continuing over years, emerging one mutation at a time, and individuals with larger populations evolving resistance faster. Additional compartments with different penetration patterns would be needed to explain NFV and D4T resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 describe simulation results from the authors' spatial heterogeneity model (Figure 5B). The model successfully reproduces clinical patterns for 3TC (C79-C85) and the population size effect is shown in supplementary data (C82, Figure 5\u2014figure supplement 1). The limitation to 3TC-only resistance is honestly reported (C85) with appropriate interpretation (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "NNRTIs' strong penetration profiles may explain why NNRTI resistance emerges first, but their high suppressive activity even at low concentrations suggests NNRTI resistance evolution may require both a single-drug compartment and sub-clinical NNRTI concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C90 are speculative hypotheses about NNRTI resistance mechanisms. C88 is labeled as speculation and C90 uses tentative language ('suggests', 'may require'). While the reasoning is logical given known NNRTI pharmacology, these claims lack direct experimental or modeling support and are appropriately presented as hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In spatial or temporal heterogeneity models, desirable drug properties (high penetration or long half-life) paradoxically make drugs vulnerable to resistance. Therefore, preventing 3TC resistance on 3TC+NFV+D4T requires targeting shortcomings of other drugs by adding drugs with similar long half-lives or good penetration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 present a counter-intuitive but logical inference from the spatial and temporal heterogeneity mechanisms described earlier. The reasoning is sound: if 3TC's good properties create monotherapy conditions, matching those properties with other drugs prevents single-drug compartments. This is supported by the clinical data on LPV/r discussed later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Ritonavir-boosted lopinavir (LPV/r) has improved penetration and extended half-life compared to NFV. Replacing NFV with LPV/r in the Kempf study reduced resistance evolution by 76% (from 24% to 6% within 2 years). LPV/r reaches inhibitory concentrations in cerebrospinal fluid, likely shrinking 3TC-alone compartments by approximately fourfold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are supported by citations (Tseng et al., 2015; Capparelli et al., 2005) and data from Kempf et al., 2004 comparing NFV and LPV/r arms. The 76% reduction calculation is correct (24% to 6%). The fourfold compartment size inference (C99) is reasonable given the fourfold reduction in resistance rates, though this assumes a linear relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Extended models show spatial heterogeneity can recreate observed clinical patterns for specific drugs but not others, while temporal models match some observations (sequential, ordered mutations) but not ongoing resistance after years. Neither model currently explains all data aspects, and while temporal and spatial heterogeneity exist and can cause resistance, this doesn't prove they do in practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 accurately summarize the modeling results from Figure 5 and appropriately acknowledge limitations. The authors honestly report that neither model fully explains the data (C102) and appropriately distinguish between mechanism plausibility and proof (C103). This represents good scientific practice in acknowledging uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Evidence from the SMART trial suggests the NNRTI tail doesn't explain NNRTI resistance in low-adherence patients. In the temporal heterogeneity model, many individuals stayed suppressed despite poor adherence because viral populations couldn't reach critical sizes rapidly enough to produce spreading variants. A quantitative approach integrating mutant selection windows, pharmacokinetics, and population genetics is needed to adjudicate between explanations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 discuss limitations of current models and propose future directions. C104 references earlier discussion of the SMART trial. C105-C106 explain why the temporal model failed to reproduce ongoing resistance. C107 is appropriately framed as a proposal for future research rather than a claim about current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Detailed models of temporal heterogeneity exist for one or two drugs (e.g., Rosenbloom et al., 2012 on DRV/r+RAL; Bershteyn and Eckhoff, 2013 on PrEP), but no three-drug therapies have been examined. A gap remains in developing realistic models for triple-drug therapies. The gap is even larger for spatial models, which are simpler and have many unknown parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 accurately characterize the state of the modeling literature with appropriate citations (Rosenbloom et al., 2012; Bershteyn and Eckhoff, 2013; Perelson et al., 1997; Moreno-Gamez et al., 2015; Lorenzo-Redondo et al., 2016). The assessment that no three-drug models exist and that spatial models are less developed is supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Understanding drug penetration is complicated by multiple factors: different studies find different penetrances; administered vs. active drug concentrations differ; intracellular rather than tissue concentrations may matter; heterogeneity exists within single tissues; studies often report relative rather than absolute concentrations; co-medications affect pharmacokinetics; and genetic variation (e.g., efavirenz metabolism, sex differences) mediates penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C126 describe challenges in measuring and understanding drug penetration, supported by multiple citations (Vendel et al., 2019; Dumond et al., 2008; Bazzoli et al., 2010; Thompson et al., 2015, 2019; Else et al., 2011; Shen et al., 2008; L\u00f3pez-Cort\u00e9s et al., 2002; Apostolova et al., 2015). These represent legitimate challenges in the field that complicate spatial modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Different adherence patterns could hypothetically affect mutational ordering. In vitro evidence suggests imperfect adherence combined with imperfect penetration makes sequential resistance likely. It remains unclear whether temporal heterogeneity, spatial heterogeneity, or both cause resistance during triple-drug therapy, but clarity would aid rational treatment design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 appropriately acknowledge uncertainty about mechanisms. C127 is speculative. C128 is supported by citation (Lustig et al., 2019). C129 honestly states the current uncertainty. C130 appropriately frames the practical importance of resolving this question. These claims accurately represent the state of knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Mathematical modeling has played an essential role in HIV research, helping motivate triple-drug therapies. Future studies should use realistic parameters, address pharmacokinetics of multiple interacting drugs, and match not just viral loads and failure rates but also genetic resistance patterns. Drug pairs can suppress populations more or less than expected from independent action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 discuss the role of modeling and future directions. C131-C132 are supported by citation (Perelson and Nelson, 1999). C133-C135 are recommendations for future research supported by citations (Rosenbloom et al., 2012; Bershteyn and Eckhoff, 2013; Koizumi and Iwami, 2014; Jilek et al., 2012). These are reasonable recommendations based on the gaps identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Drug resistance rates have fallen over time, virologic failure varies with adherence and drug combinations. Expanded models could enable predictions about resistance rates and patterns for novel drug combinations and potentially allow estimation of single-drug compartment sizes or viral migration rates between body parts from resistance patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by citations (Feder et al., 2016a; Harrigan et al., 2005; Lee et al., 2014). C139-C140 are appropriately framed as hopes and questions about future model applications rather than current capabilities. C140 includes a citation (Feder et al., 2019) suggesting this is an active research direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Drug resistance is a serious threat across disease systems, with spatial and temporal drug variation likely contributing broadly. In cancer, multi-drug therapy is proposed to halt resistance, but multi-drug resistant cells may exist as standing variation, and drug penetration gradients in solid tumors may speed resistance. In tuberculosis, drug levels in granulomas often don't reach bactericidal levels, particularly in cavitary lesions, suggesting ideal treatment may vary by patient. HIV lessons can inform other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C149 discuss broader implications beyond HIV, supported by citations for cancer (Basanta et al., 2012; Bhang et al., 2015; Hermsen et al., 2012; Fu et al., 2015; Gralka et al., 2017; Baym et al., 2016) and tuberculosis (Prideaux et al., 2015; Strydom et al., 2019). These appropriately frame HIV research in a broader context of drug resistance evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Evolution in response to complex environments is a fundamental question in evolutionary biology. HIV represents a powerful study system because we understand its population parameters and genotype-phenotype map, and resistance emerges repeatedly, allowing identification of generalizable features. While multi-drug therapies should theoretically prevent resistance, they are challenging to achieve in practice because pathogens don't experience all drugs everywhere at all times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C157 frame the work in broader evolutionary biology context. These are general statements about evolutionary biology (C150-C151), the value of HIV as a model system (C152-C155), and the theory vs. practice of multi-drug therapy (C156-C157). These claims represent reasonable framing of the research and are consistent with established knowledge in evolutionary biology and HIV research.",
+    "result_type": "MINOR"
+  }
+]

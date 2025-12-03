@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides background on the Drosophila mushroom body (MB) circuit architecture, including the role of Kenyon cells (KCs), mushroom body output neurons (MBONs), and dopaminergic neurons (DANs) in olfactory learning and memory. The claims establish that the MB is required for associative memory, that KCs receive largely stochastic input from projection neurons, that odors activate 3-9% of KCs, and that MBONs and DANs form functional modules that can be modulated by conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C13) are well-supported by extensive citations to prior literature. They establish the known architecture and function of the MB circuit as background for the current study. The claims are consistent with established knowledge in the field and provide appropriate context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C15",
+      "C19",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "The authors performed patch-clamp electrophysiology on MBON-\u03b13 neurons labeled with GFP and characterized their passive membrane properties. They report a resting membrane potential of -56.7\u00b12.0 mV, high membrane resistance (926\u00b155 M\u03a9), membrane time constant of 16.06\u00b12.3 ms, and small action potential amplitudes (4.3\u00b10.029 mV). The neuron exhibits spike-frequency adaptation and high excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological characterization (C75, C76, C15, C19, C21, C22, C24) is well-supported by experimental data from five cells with appropriate controls. The measurements are consistent with prior work on MBONs and other Drosophila central neurons. The small action potential amplitudes are appropriately attributed to the neuron's unipolar morphology. Sample sizes are adequate for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors constructed an in silico model of MBON-\u03b13 using electron microscopy-based connectome data from Takemura et al. 2017. The model includes 12,770 synaptic connections from 948 KCs, subdivided into 4336 linear sections (3121 postsynaptic). Linear cable theory was used as the modeling framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model construction (C25-C29) is well-documented and based on published EM data. The authors appropriately acknowledge limitations (10% missing synapses, single fly dataset). The choice of linear cable theory is justified as the most rational approach given the absence of detailed information about nonlinear currents. The methodology is transparent and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35",
+      "C54",
+      "C57"
+    ],
+    "result": "The authors demonstrate that MBON-\u03b13 is electrotonically compact, with synaptic inputs at different dendritic locations producing similar voltage excursions at the soma and proximal neurite. The characteristic length (\u03bb \u2248 1,300 \u03bcm) is about twice the maximal path length of the cell. The dendritic morphology appears finely tuned to maximize equality of functional synaptic weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrotonic compactness claims (C32, C34, C35, C54, C57) are well-supported by simulation data showing voltage compactification across the dendritic tree. The analytical estimate of the space constant provides theoretical support. The claim about fine-tuning of morphology (C35) is strongly supported by the near-perfect compensation (within <0.5 \u03bcV) of voltage differences shown in Figure 3I. This is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C83"
+    ],
+    "result": "The authors show that more distal dendritic segments have smaller volume and diameter, and that placing charge on smaller segments results in larger local voltage excursions than on larger segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C81, C83) are supported by morphological data (Figures 3G, 3H) and basic electrical circuit principles. The relationship between segment size and local voltage is expected from capacitance considerations and is well-established in cable theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "Individual KCs form 1-27 synapses (mean 13.47) with MBON-\u03b13. The neuron operates in a small-signal mode with a highly linear relationship between synapse number and somatic voltage. Activation of 13 randomly selected synapses produces similar responses to anatomically correct KC activation, but with less variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C31, C37, C38, C40, C41) are well-supported by simulation data (Figure 4). The linear relationship between synapse number and voltage is clearly demonstrated. The comparison between random and anatomical synapse placement (C40, C41) provides important insight into the robustness of the system. The finding that random placement shows less variability is interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Simulations with 50 randomly selected KCs (\u22485% of inputs) robustly elicit MBON depolarization consistent with in vivo observations. The low variability across 1000 trials indicates robust information coding. The authors conclude that labeled line representations are likely not necessary at the KC level since any set of \u224850 KCs is approximately equally efficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C43, C60, C61, C62, C63) are well-supported by simulation results and comparison with cited in vivo data. The 1000 independent trials provide strong statistical support for the robustness claim. The conclusion about labeled line representations (C63) is a reasonable inference from the data, though it remains a computational prediction that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors tested two mechanisms for altering MBON output: changing synaptic strength (\u00b125%) or changing the number of active KCs (\u00b125%). Both produce approximately 20% changes in membrane depolarization. They propose these mechanisms may underlie different types of memory (short-term vs. long-term) and that the KC>MBON architecture is well-suited to process both types of modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The simulation results (C48, C49) are well-supported and show nearly linear relationships. However, the claims about different memory types (C70, C71, C72) are explicitly speculative and lack direct experimental support. While the simulations demonstrate that both mechanisms can modulate MBON output, the assignment of synaptic changes to short-term memory and structural changes to long-term memory is an inference that requires experimental validation. The claim about the architecture being well-suited (C73) is supported by the simulations but remains a computational prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors compare their findings to prior work, noting agreement with locust MBON electrophysiology and crayfish neurons. They suggest that unlike large vertebrate neurons, small Drosophila neurons may not require local active amplification for input normalization, though voltage-gated channels have been reported in some Drosophila axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These comparative claims (C55, C56, C58, C59) are appropriately supported by citations. The inference about not requiring active amplification (C58) is reasonable given the electrotonic compactness demonstrated, though it remains a prediction that could be tested experimentally. The authors appropriately acknowledge that active currents could be incorporated if data become available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors discuss the broader context of MB function, including stochastic PN-KC connectivity, fixed MBON roles, unbiased KC connectivity, DAN-mediated plasticity, and prior observations of MBON activity changes during learning. They cite computational work on KC excitability and experimental observations of KC representation changes after conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion claims (C50-C69) are well-supported by appropriate citations to prior literature. The speculative claim about PN input modulation (C69) is appropriately qualified as speculative. These claims provide important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The authors conclude that the interplay between KCs and MBONs ensures reliable information processing and memory storage despite stochastic connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C74) is well-supported by the combined experimental and computational results. The electrotonic compactness, linear integration properties, and robustness across different KC activation patterns all support this conclusion. However, it remains a computational prediction that would benefit from direct experimental validation of memory performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C79"
+    ],
+    "result": "The authors note that KCs are cholinergic and explain that faster voltage changes at current injection onset/offset in simulations are due to the small soma size creating a faster local time constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These technical claims (C77, C79) are appropriately supported. C77 is supported by citation, and C79 is a reasonable inference from the cell morphology supported by supplementary figures showing the two-compartment behavior.",
+    "result_type": "MINOR"
+  }
+]

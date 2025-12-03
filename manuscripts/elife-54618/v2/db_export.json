@@ -1,0 +1,2245 @@
+{
+  "submission": {
+    "id": "edbb16e1-4473-4fc3-83c4-edb5695ff40a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:23:46.469230Z",
+    "updated_at": "2025-12-03T01:23:46.469230Z"
+  },
+  "content": [
+    {
+      "id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "submission_id": "edbb16e1-4473-4fc3-83c4-edb5695ff40a",
+      "content_type": "manuscript",
+      "content_text": "# Interplay of opposing fate choices stalls oncogenic growth in murine skin epithelium\n\n## Authors\n\n- Madeline Sandoval<sup>1</sup>\n- Zhe Ying<sup>1</sup>\n- Slobodan Beronja<sup>1</sup> ([ORCID: 0000-0002-6769-9261](https://orcid.org/0000-0002-6769-9261)) \u2020\n\n### Affiliations\n\n1. Division of Human Biology, Fred Hutchinson Cancer Research Center Seattle United States\n2. Molecular and Cellular Biology Graduate Program, University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSkin epithelium can accumulate a high burden of oncogenic mutations without morphological or functional consequences. To investigate the mechanism of oncogenic tolerance, we induced HrasG12V in single murine epidermal cells and followed them long term. We observed that HrasG12V promotes an early and transient clonal expansion driven by increased progenitor renewal that is replaced with an increase in progenitor differentiation leading to reduced growth. We attribute this dynamic effect to emergence of two populations within oncogenic clones: renewing progenitors along the edge and differentiating ones within the central core. As clone expansion is accompanied by progressive enlargement of the core and diminishment of the edge compartment, the intraclonal competition between the two populations results in stabilized oncogenic growth. To identify the molecular mechanism of HrasG12V-driven differentiation, we screened known Ras-effector in vivo and identified Rassf5 as a novel regulator of progenitor fate choice that is necessary and sufficient for oncogene-specific differentiation.\n\n## Introduction\n\nAdult human skin harbors potent oncogenic mutations without any functional or morphological consequences. A striking feature of this surprising tolerance is that mutant clones that persist in the tissue are both limited and uniform in size, irrespective of a mutation\u2019s mitogenic potential (Martincorena et al., 2015). In murine skin, gain-of-function mutant p53 clones grow extensively in naive epidermis, yet appear growth-inhibited when induced in a tissue premutagenized via acute exposure to UV. This suggests that the UV radiation introduced mutations that were able to compete with expanding p53 clones, limiting their size (Murai et al., 2018). This model of interclone growth inhibition may contribute to epithelial homeostasis in aged tissues, which contain a multitude of established mutations (Bowling et al., 2019; Higa and DeGregori, 2019).\n\nThere is also evidence that growth of oncogenic clones can be ameliorated in the naive epidermis. Activating mutation in \u03b2-catenin leads to ectopic hair follicle growths, which regress and are permanently eliminated (Brown et al., 2017). Epidermal activation of Pik3ca, the most commonly mutated oncogene in epithelial cancer, induces clones which are more proliferative than wild type\u00a0(WT). However, they too are lost as the oncogenic progenitors are removed from the tissue due to an inability to self-renew (Ying et al., 2018). Because the oncogenic clones in these studies are eliminated, neither addresses how a single oncogenic clone may be tolerated to persist in the tissue long\u00a0term. This is critical as the full complement of mutations in the aged epidermis likely arose through step-wise accumulation of discrete oncogenic mutations throughout the life of the tissue.\n\nTo answer this question, we use mouse skin and single-cell activation of oncogenic Hras (HrasG12V) which we previously demonstrated results in formation of persistent clones within the interfollicular epidermis (IFE) (Beronja et al., 2013). We follow HrasG12V single cells as they grow into stable clones and employ a novel cell fate identification\u00a0(CFI) assay which allows us to discern temporal and spatial influences on progenitor cell renewal and differentiation. We demonstrate that expanding HrasG12V clones develop intraclonal heterogeneity that impacts progenitor cell fate choice in a manner that restricts their growth yet ensures their persistence and does not depend on additional mutations or interclonal competition. To identify the mechanism, we conducted a genetic screen of Ras effectors and identify Rassf5 as a novel candidate regulator of progenitor cell fate choice. Lastly, using gain-/loss-of-function studies in vivo we demonstrate that Rassf5 is necessary and sufficient for progenitor cell differentiation and inhibition of HrasG12V-induced growth.\n\n## Results\n\n### Expression of activated HrasG12V promotes progenitor cell renewal in adult skin epithelium\n\nIn order to explore the immediate effect of single-cell activation of a potent oncogene on progenitor cell fate, we employed an Hraslox-WT-stop-lox-G12V (Hrasll-G12V); Rosa26mT/mG (R26mT/mG) mouse (Figure 1A; Chen et al., 2009; Muzumdar et al., 2007). We transduced the epidermis of mid-gestation embryos, using ultrasound-guided intraamniotic injection (Beronja et al., 2013; Beronja et al., 2010), with lentivirus containing inducible Cre-recombinase (LV-CreER) at clonal density (Figure 1A). Together, this model allowed for: (i) Tamoxifen-induced recombination in the adult epidermis, at a dose determined to result in sporadic single-cell activation events; (ii) expression of an oncogenic form of Hras (HrasG12V) from its endogenous promoter, ensuring both physiological mRNA/protein levels and regulatory control; and (iii) stable labeling of activated cells by Cre-mediated replacement of membrane-associated (m) Tomato fluorescent protein with mGFP (Figure 1A). We induced recombination at postnatal day 19 (P19) and imaged tissues 48 hr later, allowing sufficient time for individual progenitor cells to divide and for the resulting two daughter cells to commit to either basal progenitor or suprabasal differentiated cell fate (Figure 1B,C; Ying et al., 2018). Using intravital two-photon microscopy (Rompolas et al., 2013), we were able to image through the full thickness of the epidermis, identify the differentiation state of each of the two daughter cells derived from a single activated cell at P21, and score every progenitor cell division that occurred as either symmetric renewal, asymmetric division, or symmetric differentiation (Figure 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of Hrasll-G12V and R26mT/mG mice. Hrasll-G12V mouse changes expression of wild-type\u00a0(WT)-Hras allele to mutant-Hras allele upon addition of Cre. R26mT/mG mouse changes expression of mTomato to mGFP after Cre activation. CreER expression is induced by tamoxifen. (B) Schematic of single-cell induction and imaging experiment. (C) Epidermal progenitor cells can undergo three distinct division types. (D) Representative images of basal progenitor cell divisions in Cre-activated R26mT/mG epidermis captured using intravital imaging. Scale bar is 10 \u00b5m. (E) Quantification of division choices of single cells in adult epidermis. At least 75 cells were scored per animal. n\u00a0\u2265\u00a03 animals per genotype. (F) Rate of renewal significantly increases in single HrasG12V progenitor cells. At least 75 cells were scored per animal. n\u00a0=\u00a03 animals per genotype. (H) Quantification of basal cell numbers in WT and HrasG12V clones at 24 weeks. Each point represents one clone. Twenty total clones were scored from n\u00a0\u2265\u00a03 animals per genotype. (G) Representative images of basal cells of WT and HrasG12V clones at 24 weeks. Scale bar is 10 \u00b5m. For (E,F,H), the center line represents the mean; errors bars represent the s.d. Two-tailed Student\u2019s t-test was used. n.s. denotes p value\u00a0>\u00a00.05; **** denotes p value\u00a0<\u00a00.0001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantification of caspase 3+ cells in adult epidermis.\u00a0>1500 cells were counted per animal. n\u00a0=\u00a03 animals per genotype. (B) No senescence is detected in HrasG12V clones. Scale bar is 10 \u00b5m. For (A), the center line represents the mean and errors bars represent\u00a0the s.d. Two-tailed Student\u2019s t-test was used. n.s. denotes p value\u00a0>\u00a00.05.\n\nAnalysis of control (R26mT/mG) head skin epidermis showed that asymmetric divisions, once considered the predominant division type of epidermal progenitors, occurred in approximately 44% of cases, and that symmetric renewal was nearly perfectly balanced by symmetric differentiation (29% vs. 27%) (Figure 1E). In contrast, we observed a striking change in progenitor division type following expression of HrasG12V, with a significant increase in symmetric renewal (48%) and a significant decrease in symmetric differentiation (10%) (Figure 1E). We used the observed frequency of cell division types in control and oncogene-expressing epidermis to calculate the rate of progenitor renewal, which measures the proportion of new daughter cells that maintain progenitor potential (Ying et al., 2018). Epidermal progenitors in the control tissue had a renewal rate of\u00a0~0.5 (Figure 1F). Such a rate is expected to maintain a stable population of basal progenitors long\u00a0term and ensure neutral tissue growth. HrasG12V-expressing progenitors showed higher renewal rate of 0.69, which implies that oncogenic Hras, unlike single-cell expression of activated Pik3ca (Ying et al., 2018), promotes progenitor cell renewal. It also suggests that in contrast to loss of cellular fitness we observed in oncogenic Pik3ca epidermis (Ying et al., 2018), HrasG12V-expressing progenitors could support expansion and long-term maintenance of oncogenic clones. We tested the long-term persistence of oncogenic clones by quantifying the size of HrasG12V clones at 24 weeks (Figure 1G,H). At this point, Hras clones were significantly larger that WT clones but were smaller than anticipated based on the high renewal rate (0.69) at clone initiation. We first investigated apoptosis or senescence as a means to control clone growth but neither were significantly different between WT and oncogene expressing epidermis, (Figure 1\u2014figure supplement 1A,B). This suggests that additional mechanisms of growth suppression are at play to curtail the expansion of HrasG12V progenitor cells.\n\n### Development of an assay for quantification of progenitor cell fates in vivo\n\nNext, we set to determine if high proliferation and renewal rates were sustained in HrasG12V clones over time. While proliferation could be measured using standard approaches, a simple and broadly accessible assay that can directly score progenitor cell fate choice was lacking. We recently employed an EdU/BrdU differentiation assay (Ying et al., 2018) that allowed us to analyze progenitor daughter cells as a population, and estimate tissue renewal rate based on their relative expression of differentiation marker Keratin 10 (K10). Here, we modified this approach to develop a CFI assay, which allows us to classify each progenitor cell division event as asymmetric, symmetric renewal, or differentiation. We first gave animals a pulse of EdU and 30 min later processed the tissue for standard confocal imaging (Figure 2A). We observed EdU+ labeling of single cells throughout the tissue that was restricted to the progenitors in the K10- basal layer (Figure 2B). We followed the EdU pulse with administration of BrdU 2 hr later (Figure 2A). This resulted in the appearance of sporadic EdU+/BrdU+ single cells and a population of EdU+/BrdU- cells, in which\u00a0~\u00a015% of cells have already divided but not differentiated (Figure 2B). By 24 hr all EdU+/BrdU- cells were found as doublets and in both basal (K10-) and differentiated K10+ suprabasal layers (Figure 2B). These EdU+-only cells represent the daughters of progenitor cells that have exited the S-phase within a defined period (0\u20132 hr), and have been given sufficient time to show their differentiation state. By keeping the epidermis intact through processing and immunofluorescence staining, we are able to image every EdU+-only doublet in tissue whole-mounts and assign daughter cell fates based on cellular morphology (cuboidal vs. flat) and location in the tissue (basal vs. suprabasal; Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of CFI assay. EdU-only cells are assessed for location in epidermis (basal or suprabasal layer) as indicator of cell fate choice. (B) Representative images of tissues stained for EdU and BrdU expression, 30 min, 2.5 hr, and 24 hr post-EdU injection. Cells at the 24 hr time point are fully committed to progenitor or differentiated fate. Scale bar is 25 \u00b5m. Inset scale bar is 10 \u00b5m. At least 2000 total cells were counted per animal. n\u00a0\u2265\u00a02 animals per time point. (C) Representative images of cell divisions as seen in CFI assay. Blue arrow marks symmetric differentiation division. (D) Cell fate choices scored by CFI assay are not significantly different from cell fate choices scored via intravital imaging. At least 50 cells were scored per animal. n\u00a0\u2265\u00a03 animals per condition. (E) Schematic of clone activation. Tissues were processed in 2-week intervals following tamoxifen injection (blue arrows). (F\u2013H) Division choices of progenitor cells in activated clones. At least 30 divisions were counted per animal. n\u00a0\u2265\u00a03 animals per condition. (I) Rate of renewal in HrasG12V and WT clones initially differs significantly, but as HrasG12V clones reach 24 weeks, renewal rates drop to near-homeostatic levels. More than 30 total cells were counted per animal. n\u00a0\u2265\u00a03 animals per condition. (J) EdU-incorporation over 2 hr in WT and HrasG12V epidermis. At least 300 cells were counted per animal. n\u00a0=\u00a03 animals per condition. (K) HrasG12V clones expand significantly over time. At least 25 clones were counted per animal. n\u00a0\u2265\u00a03 animals per condition. For (F\u2013K), the center point represents the mean; errors bars represent the s.d. Two-tailed Student\u2019s t-test was used. n.s. denotes p value\u00a0>\u00a00.05; * denotes p value\u00a0<\u00a00.05; ** denotes p value\u00a0<\u00a00.01; *** denotes p value\u00a0<\u00a00.001; **** denotes p value\u00a0<\u00a00.0001.\n\nWe next compared the frequency of cell division types in control epidermis as measured by CFI with that obtained using intravital two-photon imaging of LV-CreER-transduced single cells (Figures 1E and 2D). We observed no significant differences between the two assays, suggesting that in CFI we have a valid and direct method for quantifying cell fate decision within the adult murine epidermis.\n\n### Epidermal expression of HrasG12V results in dynamic changes in progenitor cell fate choice\n\nTo investigate how proliferation and cell fate choice may evolve in HrasG12V cells over time, and account for relatively restricted growth of oncogene-expressing clones (Figure 1G,H), we measured their proliferation and cell fate rates. We lineage traced control and HrasG12V clones initiated from a single cell at P21 and collected tissues at 2-week intervals (Figure 2E). We observed that oncogenic clones undergo more symmetric renewal initially, but by 8\u201310 weeks of growth the proportion of symmetric renewal divisions decreased and returned to rates observed in WT clones (Figure 2F). Early increase in symmetric renewal was accompanied by reduction in the rates of symmetric differentiation and asymmetric divisions, which also returned to WT levels by 8\u201310 weeks (Figure 2G,H). From the observed frequency of cell division types, we calculated the rate of progenitor renewal. The WT progenitors maintained a renewal rate of\u00a0~0.5 throughout the duration of the study, consistent with a neutral growth potential of a homeostatic tissue (Figure 2I). In contrast, the HrasG12V-expressing progenitors showed an increase in renewal rate to\u00a0~0.70\u20130.85 in the initial 8 weeks, but then fell to\u00a0~0.55 over the next several weeks as differentiating and asymmetric cell divisions increased (Figure 2I).\n\nWe also measured proliferation rates in control and HrasG12V clones over the same period, and observed that while oncogene expressing cells had a higher rate of EdU incorporation than WT, the rates were largely stable over 24 weeks (Figure 2J). Together, this suggests that clonal expansion driven by a single oncogenic lesion is dependent on the cellular mechanisms of progenitor proliferation and renewal, with fluctuating rates of cell fate choice being the dominant determinant of growth dynamics (Figure 2K).\n\n### Emerging heterogeneity in expanding HrasG12V clones impacts progenitor renewal behavior\n\nIntrigued by the observed switch from highly renewing to more balanced cell fate choices we revisited oncogene-expressing clones early (weeks 2 and 4) and late (weeks 10 and 24) following single-cell HrasG12V activation (Figure 3). We used confocal microscopy of epidermal whole mounts to observe individual mGFP+ clones, and image processing to distinctly visualize their progenitor compartment (Figure 3A). Based on evidence that cell packing can have profound effect on delamination (Lee et al., 1998; Poumay and Pittelkow, 1995), we first compared clonal cell density between early and late HrasG12V-expressing cells (Figure 3B). We observed that cell density increases between two and four weeks but then remains stable as highly renewing clones transition to more differentiating clones. This lack of temporal correlation suggested that cell density does not drive the switch in progenitor renewal.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative images of basal cell population of HrasG12V clones at weeks 2 and 10. Scale bar is 10 \u00b5m. (B) Density of individual HrasG12V clones. Dashed gray line represents average density in wild-type\u00a0(WT) clones. At least 25 clones were counted per animal. n\u00a0\u2265\u00a02 animals per timepoint. (C) Outlines of individual HrasG12V clones show a circular morphology. Scale bars are 25 \u00b5m. (D) Quantification of circularity of individual HrasG12V clones. At least 25 clones were counted per animal. n\u00a0\u2265\u00a03 animals per timepoint. (E) Quantification of edge cells and inner cells in HrasG12V clones. At least 52 clones were counted per animal. n\u00a0\u2265\u00a03 animals per time point. (F) Proportion of edge cells in HrasG12V clones decreases as the clone expands. At least 52 clones were counted per animal. n\u00a0\u2265\u00a03 animals per timepoint. (G) Edge cells undergo significantly more renewing divisions and significantly fewer differentiating divisions compared to inner cells in week 10 HrasG12V clones. A total of 147 divisions were counted. n\u00a0=\u00a04 animals. (H) Rate of renewal in edge cells and inner cells of week 10 HrasG12V clones. A total of 147 divisions were counted from four animals. (I) WT cells adjacent to an HrasG12V clone undergo significantly fewer renewing divisions compared to a non-adjacent WT cell. A total of 160 divisions were counted. n\u00a0=\u00a05 animals. (J) The renewal rate of WT cells adjacent to an HrasG12V clone is significantly lower compared to WT cells not located adjacent to an HrasG12V clone. A total of 160 divisions were counted. n\u00a0=\u00a05 animals. (K) Early phase HrasG12V clones expand. In contrast, the inner region of late phase HrasG12V clones undergo high rates of differentiation, but the clone does not collapse because the edge cells are more renewing and compensate for the inner cells. In response to the high rate of renewal in oncogenic edge cells, the neighboring WT cells undergo a high rate of differentiation. For (B,D) each point represents a single clone. For (B, D\u2013J); the center point represents the mean; errors bars represent the s.d. Two-tailed Student\u2019s t-test was used. n.s. denotes p value\u00a0>\u00a00.05; * denotes p value\u00a0<\u00a00.05; ** denotes p value\u00a0<\u00a00.01; *** denotes p value\u00a0<\u00a00.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Outlines of individual wild-type\u00a0(WT) clones show a circular morphology.\u00a0Scale bars are 25 \u00b5m. (B) Quantification of circularity of individual WT clones. At least 22 clones were counted per animal. n\u00a0=\u00a02 animals per timepoint. (C) Quantification of edge and inner cell compartments of WT clones. At least 30 clones were counted per animal. n\u00a0=\u00a02 animals per timepoint. (D) Division choices of edge and inner cells of large areas of activated WT tissue. At least 24 clones were counted per animal. n\u00a0=\u00a03 animals. (E) Quantification of renewal rate of inner and edge compartments of large areas of activated WT tissue. At least 24 clones were counted per animal. n\u00a0=\u00a03 animals. For (B\u2013E), the center line represents the mean and errors bars the s.d. Two-tailed Student\u2019s t-test was used. n.s. denotes p value\u00a0>\u00a00.05.\n\nWe noted that the shape of expanding HrasG12V clones appeared to be relatively round, irrespective of their age and size (Figure 3C). Indeed, this was confirmed through analysis of HrasG12V clone circularity (Figure 3D) and further implied that, as clones expand, their area increases at a greater rate than their circumference. This suggested that time-dependent increase in clone size may be accompanied by a change in its overall composition in respect to the ratio of \u2018edge\u2019 cells, found along the circumference of the clone and in contact with WT neighbors, to \u2018inner\u2019 cells, found in the center of the clone and in contact with other HrasG12V-expressing progenitors. To test this, we quantified the number of edge and inner cells in HrasG12V clones and observed that while both populations enlarged in absolute terms (Figure 3E), the relative abundance of inner cells increased from 14 to 45% and edge cells decreased from 86 to 55% over time (Figure 3F). Therefore, as HrasG12V clones expand, their composition changes in a potentially profound way.\n\nWe hypothesized that the heterotypic (WT/HrasG12V) environment of the edge cells in HrasG12V clones could influence them to behave differently than the homotypic (HrasG12V/HrasG12V) inner cells. Using CFI assay, we analyzed 10-week-old HrasG12V-clones and observed that although the rate of homeostatic asymmetric divisions was similar between edge and inner cells, they significantly differed in the ratio of growth regulating symmetric fate choices (Figure 3G). Although edge cells underwent significantly more symmetric renewing divisions, inner daughter cells more often chose differentiated cell fates. From observed division types, we extrapolated the renewal rate and established that edge cell population maintains progenitor renewal rate consistent with growth expansion (0.69) while inner population is below the 0.5 threshold required for stasis, and therefore in a state of progenitor loss (Figure 3H).\n\nWe did the same analysis in early- and late-stage WT clones and observed that while they too remain circular over time, their small size (~3 progenitor cells) prevents formation of distinct inner and edge cell compartments (Figure 3\u2014figure supplement 1A\u2013C). To approximate cell dynamics that may exist within a large lentivirus-transduced WT clone, we used multi-clonally derived fields of CreER-activated mGFP cells. We did not detect a significant change in division choices or the renewal rate in cells at the edge or the inner portion of the activated WT areas (Figure 3\u2014figure supplement 1D,E). We also analyzed the behavior of WT cells adjacent to late-stage HrasG12V clones. We observed that these cells had a lower frequency of symmetric renewing divisions, as compared to WT cells not adjacent to HrasG12V clones (Figure 3I). This change was reflected by a significantly lower renewal rate (0.41) compared to distant WT cells (0.50) (Figure 3J).\n\nTaken together, our data suggest a new model for how growth of oncogene-expressing cells becomes restricted to ensure normal function despite accumulation of cancer driving genes. According to it, a single HrasG12V cell initially undergoes a rapid expansion, but after several weeks, a shift in renewal driven by intraclone heterogeneity decreases the rate of clone expansion until a point of near homeostasis. Even though the inner core of the clone is pro-differentiation, the clone does not collapse because it is maintained by the pro-renewal edge. Moreover, this pro-renewal edge is further supported by the reduced fitness of clone-adjacent WT cells that increase their rate of differentiation (Figure 3K). Our model also suggests the existence of a currently unknown molecular mechanism that regulates dynamic cell fate choice. Such a mechanism could explain how tissues can remain phenotypically normal while maintaining a high mutation burden throughout an individual\u2019s life.\n\n### Functional screen identifies Hras effector Rassf5 as a mediator of cell fate choice\n\nWe have previously shown that developing epidermis is a powerful system to conduct large-scale genetic screens and identify physiological regulators of distinct cellular processes, including progenitor renewal and differentiation (Beronja et al., 2010; Cai et al., 2020; Ying et al., 2018). We next set out to test if the dynamic impact of HrasG12V on progenitor renewal in adult skin can be recapitulated in oncogene-expressing embryonic epidermis. We first injected low titer LV-Cre (Beronja et al., 2010), encoding a constitutively active Cre recombinase, into control (R26YFP) and test (Hrasll-G12V; R26YFP) embryos at E9.5 (Figure 4A). At E18.5, we confirmed that epidermis was transduced at clonal density (Figure 4A,B), and used EdU/BrdU differentiation assay to quantify renewal rate in YFP+ clones (Ying et al., 2018). We observed that progenitor renewal rates were high (~0.75), and not significantly different between control and test clones (Figure 4C). We next transduced mice with high titer LV-Cre, which resulted in broad areas of HrasG12V activation by E18.5 (Figure 4A,B). We quantified progenitor renewal under large field expression of HrasG12V and discovered a significant rate reduction (0.76 vs. 0.57; p value\u00a0<\u00a00.001; Figure 4C). We also used K14-Cre transgenic mice to generate E18.5 epidermis with uniform field activation of HrasG12V (Figure 4A,B), and observed that the tissue\u2019s progenitor renewal rate (0.56) showed no difference between LV-Cre- and K14-Cre-induced fields (Figure 4C). Our data imply that a field of progenitor cells that ubiquitously express HrasG12V more often gives rise to differentiated daughter cells, and this correlates with the changes we see develop over time in adult HrasG12V clones. They also suggest that we may be able to use our E18.5 screening platform to uncover the mechanism of how activated HrasG12V induces differentiation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of clonal and field activation of HrasG12V in developing epidermis. Scale bar is 25 \u00b5m. Inset scale bar is 25 \u00b5m. (B) HrasG12V expression can be induced with LV-Cre (high or low titer) or K14-Cre. Changes in HrasG12V expression yield differences in tissue hyperplasia. (C) Rate of renewal decreases in tissues which broadly express HrasG12V (LV-Cre field and K14Cre field). At least 75 cells were counted from each animal per genotype. n\u00a0\u2265\u00a03 animals. (D) Diagram of shRNA screen methodology. A lentiviral pool targeting Ras effectors was injected into E9.5 embryos. The epidermis was harvested at E18.5, digested into single cells and separated by FACS based on low or high expression of \u03b16 Itg. Each population was profiled for shRNA enrichment. (E,F) Needle plots of shRNA\u2019s enriched in basal layer compared to suprabasal layer in wild-type\u00a0(WT) and HrasG12V epidermis. shRNAs that are enriched in basal layer (\u03b16 Itghigh population) relative to suprabasal layer (\u03b16 Itglow population) inhibit differentiation. The indicated shRNAs are candidate (Rassf5) or validated (Pik3ca) regulators of HrasG12V-induced differentiation in addition to potential positive regulators of renewal in HrasG12V epidermis (Rassf4, Rgl2, Rgs14). n\u00a0\u2265\u00a03 animals per genotype. For (C), the center point represents the mean; errors bars represent the s.d. Two-tailed Student\u2019s t-test was used. n.s. denotes p value\u00a0>\u00a00.5, *** denotes p value\u00a0<\u00a00.001.\n\nWith a goal of identifying immediate and direct events downstream of a powerful oncogenic signal, we generated a library of lentiviral constructs for expression of short hairpin RNAs (shRNAs) targeting 28 known effectors of Ras signaling (Figure 4D). We combined 4\u20135 shRNAs targeting each gene into a single pool of 135 constructs, titrated to result in MOI\u00a0\u2264\u00a01, and co-injected it along with high-titer LV-Cre into control (R26YFP) and test (Hrasll-G12V; R26YFP) E9.5 epidermis, using ultrasound-guided in utero microinjection (Figure 4D). We collected the epidermis at E18.5, isolated the keratinocytes, and separated them into basal (\u03b16 Itghigh) and suprabasal (\u03b16 Itglow) populations. We reasoned that if an shRNA is enriched in the basal layer, it would imply that the corresponding gene was a negative regulator of progenitor renewal, while suprabasal enrichment would be consistent with depletion of a renewal promoter. We quantified relative abundance of shRNAs in two populations using BWA and quantified significant basal/suprabasal enrichment using DeSeq2 (Love et al., 2014; Ying et al., 2018). Genes were scored as screen hits if at least two shRNAs showed significant and consistent enrichment, as before (Beronja et al., 2013).\n\nOur screen in WT epidermis did not identify any Hras effector enrichment in basal or suprabasal cells (Figure 4E), suggesting that in normal development Hras signaling is not a significant regulator of progenitor cell fate choice. In contrast, the screen in HrasG12V-expressing epidermis identified shRNAs targeting Rassf5 and Pik3ca as significantly enriched in basal cells (Figure 4F), consistent with their putative role as negative regulators of HrasG12V-mediated progenitor renewal. The screen also identified shRNAs targeting Rassf4, Rgl2, and Rgs14 as significantly enriched in suprabasal cells (Figure 4F, Supplementary file 1), suggesting that\u00a0these genes may positively regulate renewal in HrasG12V epidermis. We were encouraged by the observed enrichment of Pik3ca shRNAs in basal progenitors, as our lab has previously shown that activated Pik3ca can drive progenitor differentiation in the epidermis (Ying et al., 2018). We next set out to test our top hit, Rassf5, as a candidate mediator of oncogene-induced differentiation.\n\n### Rassf5 mediates Hras-dependent reduction in progenitor cell renewal\n\nRassf5, also known as Nore1a, is a Ras effector containing a Ras Association (RA) domain which directly binds to activated Ras (Vavvas et al., 1998). Like other RA domain family (RASSF) members, Rassf5 lacks enzymatic activity and is often epigenetically silenced in cancer (Donninger et al., 2016). Notably, Rassf5 is methylated in the majority of esophageal and head and neck squamous cell carcinomas (Guo et al., 2015; Steinmann et al., 2009) and has been shown to inhibit Ras growth via senescence (Donninger et al., 2015) and apoptosis (Elmetwali et al., 2016; Park et al., 2010).\n\nTo discern if Rassf5 also regulates progenitor cell fate choice and is critical to HrasG12V-mediated differentiation, we first quantified its expression in HrasG12V epidermis at E18.5 and discovered that both its transcript and protein were elevated relative to WT control, indicating that activated HrasG12V can promote Rassf5 expression (Figure 5A,B). We next identified three independent shRNAs which depleted Rassf5 mRNA by\u00a0~70% in keratinocytes (Figure 5\u2014figure supplement 1A), and generated lentiviral constructs for concomitant expression of Rassf5 shRNAs and Cre (LV-Cre-shRassf5; Figure 5C). We introduced these into Hrasll-G12V; R26mT/mG epidermis at high MOI, isolated mGFP+ cells by FACS and profiled them for mRNA and protein levels to observe their significant potential to counter HrasG1V-driven Rassf5 expression in vivo (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig5-v2.jpg)\n\n**Figure 5.:** (A) Rassf5 mRNA is increased in isolated HrasG12V E18.5 basal cells. shRNAs targeting Rassf5 efficiently knock down transcript expression. n\u00a0=\u00a03 animals per genotype. (B) Immunoblot of Rassf5 expression in HrasG12V E18.5 epidermis. (C) LV-Cre-shRassf5 construct for simultaneous knock down of Rassf5 and induction of HrasG12V expression. (D) Quantification of differentiation using EdU-BrdU pulse/chase differentiation assay. Depletion of Rassf5 promotes renewal in HrasG12V epidermis. At least 75 cells were counted per animal. n\u00a0\u2265\u00a03 animals per genotype. (E) Diagram of construct containing Rassf5 open-reading\u00a0frame\u00a0(ORF) fused with tdTomato (Rassf5-tdT) and co-expressing Cre. (F) Representative images of HrasG12V clone and HrasG12V/Rassf5-tdT clone in E18.5 epidermis. Overexpression of Rassf5 yields clones with reduced basal compartment and extensive suprabasal compartment. Scale bar is 25 \u00b5m. (G) Whole mount images of HrasG12V clone and HrasG12V/Rassf5-tdT clone in E18.5 epidermis. Scale bar is 25 \u00b5m. (H) Quantification of basal cell numbers in E18.5 HrasG12V and HrasG12V/Rassf5-tdT clones. Twenty-two clones were counted in total. n\u00a0=\u00a03 animals per genotype. (I) Quantification of the ratio of suprabasal surface area to basal surface area of HrasG12V and HrasG12V/Rassf5-tdT clones in E18.5 epidermis. Twenty-two clones were counted in total. n\u00a0=\u00a03 animals per genotype. (J) Difference between the renewal rate of edge and inner cells is lost in HrasG12V/shRassf5 clones. Animals are\u00a0>10 weeks old. Red dash lines represent renewal rate of edge and inner cells from week 10 clones. At least 120 cells were counted per genotype. n\u00a0=\u00a03 animals. (K) Knock down of Rassf5 in adult HrasG12V epidermis significantly increases renewal rate. At least 75 cells were quantified per animal. n\u00a0\u2265\u00a03 animals per genotype. (L) LV-rtTA-T2A-CreER and LV-TRE-Rassf5-tdT constructs for inducible expression of HrasG12V and Rassf5. (M) Schematic of Rassf5 overexpression in adult HrasG12V clones. Developing embryos were broadly transduced with LV-rtTA-T2A-CreER and sporadically transduced with LV-TRE-Rassf5-tdT. At P21, tamoxifen injection induced expression of HrasG12V, and at P24, doxycycline injection induced expression of Rassf5. Tissues were processed at P27. (N) Clones expressing HrasG12V/Rassf5 have a reduced basal cell population compared to clones expressing HrasG12V. n\u00a0=\u00a03 animals per condition. A total of 200 clones per condition were counted. (O) There are proportionally fewer HrasG12V clones composed of only differentiated cells compared to HrasG12V/Rassf5. At least 59 clones were counted per animal. n\u00a0=\u00a03 animals per condition. For (H,I,N), each dot represents an individual clone. For (A,D,H\u2013K,N,O), the center line represents the mean and errors bars the s.d. Two-tailed Student\u2019s t-tests were used. n.s. denotes p value\u00a0>\u00a00.05. * denotes p value\u00a0<\u00a00.05; ** denotes p value\u00a0<\u00a00.01*** denotes p value\u00a0<\u00a00.001; **** denotes p value\u00a0<\u00a00.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54618/elife-54618-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Real-time PCR quantification of Rassf5 transcripts from cultured keratinocytes. Asterisks mark shRNAs that demonstrate efficient Rassf5 knock down and were used in additional experiments. Statistics were based on three experiments. (B) Quantification of caspase 3+ cells in adult epidermis.\u00a0>1500 cells were counted per animal. n\u00a0=\u00a03 animals per genotype. (C) Senescence-associated \u03b2-galactosidase staining does detect senescence in oncogenic tissues with Rassf knockdown. For (A,B), the center line represents the mean and errors bars the s.d. Two-tailed Student\u2019s t-test was used. n.s. denotes p value\u00a0>\u00a00.05; * denotes p value\u00a0<\u00a00.05.\n\nTo independently validate our screen results and test if Rassf5 is necessary for increased differentiation under conditions of field activation of HrasG12V, we transduced control and Hrasll-G12V; R26YFP epidermis with high-titer LV-Cre-shRassf5, collected broadly infected tissue at E18.5 and performed EdU/BrdU differentiation assay (Figure 5D). Our data show that Rassf5 depletion in large HrasG12V-expressing fields leads to a significant increase in progenitor renewal rate, with three independent shRNAs demonstrating the same effect. This signifies that Rassf5 is necessary for HrasG12V-induced progenitor cell differentiation in embryonic tissues. We also observe increased renewal in control epidermis with one out of three shRNAs we used, which suggests that Rassf5 may have a more general ability to regulate progenitor cell renewal (Figure 5D).\n\nTo test if Rassf5 is sufficient to promote progenitor cell differentiation in embryonic tissue, we focused on small HrasG12V clones that we demonstrated do not show increased differentiation (Figure 4C). We generated a lentivirus to simultaneously express Cre recombinase and Rassf5 open-reading frame (ORF) fused to a tdTomato (LV-Cre-Rassf5-tdT), allowing for clonal oncogene activation and visualization of transgene expression (Figure 5E). We transduced HrasG12V epidermis with similar low titers of LV-Cre and LV-Cre-Rassf5-tdT, and readily observed numerous clones at E18.5. We noted a dramatic difference in their shape, with Rassf5-expressing clones appearing more triangular in cross-section (Figure 5F), consistent with either a significant loss of basal progenitors or expansion of the suprabasal differentiated cell compartment. Whole mount imaging further implied that Rassf5-expressing HrasG12V clones were composed of fewer basal and relatively more suprabasal cells (Figure 5G). We analyzed clone composition and observed that Rassf5 promotes significant reduction in basal cell numbers and significant increase in the suprabasal to basal surface area (Figure 5H,I). Together this suggests that Rassf5 is sufficient to promote progenitor cell differentiation in HrasG12V-expressing embryonic epidermis.\n\nWe next sought to investigate whether Rassf5 can also regulate progenitor renewal in adult epidermis. We first analyzed HrasG12V epidermal clones where Rassf5 was depleted with two independent shRNAs. Focusing on the difference in renewal rate between the edge and inner clone compartments (Figure 3H), we observed that depletion of Rassf5 in adult HrasG12V epidermis specifically suppressed progenitor differentiation of inner cells (Figure 5J). As a result, the overall progenitor renewal rate was significantly elevated in HrasG12V/shRassf5 tissues (Figure 5K). We also measured rates of apoptosis and senescence in adult HrasG12V/shRassf5 epidermis and found neither to be significantly affected (Figure 5\u2014figure supplement 1B,C). These observations suggest that Rassf5 is a negative regulator of progenitor renewal in the inner core of HrasG12V clones in the adult epidermis. To test next for the sufficiency of Rassf5 in promoting increased differentiation in adult HrasG12V epidermis, we utilized a system to overexpress Rassf5 in HrasG12V-activated adult clones. We co-injected animals with a high-titer LV-TRE-Rassf5-tdT mixed with a low-titer LV-rtTA-T2A-CreER, thus generating a tissue with ubiquitous LV-TRE-Rassf5-tdT and sporadic LV-rtTA-T2A-CreER transduction (Figure 5L,M). We induced HrasG12V expression in single cells via administration of Tamoxifen at P21, which was followed by Doxycycline-mediated activation of Rassf5-tdT expression in cells co-transduced with both viruses at P24, and tissue harvesting at P27 (Figure 5M). Our analyses showed that resultant early clones expressing HrasG12V and Rassf5 had a significant reduction in their basal cell population compared to HrasG12V clones alone (Figure 5O). Moreover, we observed a significant increase in the number of HrasG12V, Rassf5 clones without any basal cells (Figure 5O), consistent with Rassf5 inducing differentiation in adult HrasG12V clones. Together, our data indicate that Rassf5 is both necessary and sufficient positive regulator of HrasG12V-mediated differentiation in adult as well as embryonic epidermis.\n\n## Discussion\n\nWith CFI, a modified version of our EdU/BrdU pulse-chase assay (Ying et al., 2018) we have established a quantitative method that identifies individual progenitor cell fates that occur over a span of 24 hr in the adult epidermis. It is characterized by several features which should make it a standard in the field: (i) it quantifies progenitor renewal and differentiation rates in vivo\u2014by including net effects of direct and indirect determinants such as spindle orientation, delamination and plasticity, it reports the ultimate daughter cell fate choice; (ii) it records progenitor/daughter cell locations\u2014by maintaining spatial information of progenitor fate decisions, it allows for analysis of heterogeneity that may be driven by specific cell/cell and cell/niche interactions; and (iii) it is easily adoptable\u2014by utilizing generic reagents and basic microscopy techniques, it can be readily assimilated into any research program.\n\nUsing this assay, we uncovered that HrasG12V can promote progenitor renewal or differentiation depending on whether it is active in a single cell or an oncogenic field. This surprising discovery led us to design a genetic screen that identified Ras effector Rassf5 as an oncogene-specific mediator of progenitor differentiation. Rassf5 has been long considered a tumor suppressor in epithelial cancers, where it is often silenced through methylation (Donninger et al., 2016) and was shown to promote both apoptosis and senescence (Donninger et al., 2015; Khokhlatchev et al., 2002). We demonstrate that Rassf5 suppresses progenitor cell renewal to limit oncogenic growth, which suggests a mechanism of Rassf5-mediated tumor suppression via differentiation. This model is consistent with recent evidence that increasing the rate of progenitor cell differentiation can suppress tumorigenic potential of known oncogenes (Ying et al., 2018), and that reducing the frequency of asymmetric spindle orientation can promote tumor development in skin (Morrow et al., 2019). How Rassf5 regulates progenitor fate choice is not known, but studies suggest a potential mechanism. Specifically, Rassf5 can activate Mst1, a driver of Hippo signaling (Bitra et al., 2017), which may lead to phosphorylation and eventual degradation of Yap. As Yap is enriched in the basal epidermal layer and acts to maintain it in an undifferentiated state (Zhang et al., 2011), Rassf5 may be a negative regulator of progenitor renewal through Hippo/Yap signaling.\n\nWe demonstrated that progenitor cells occupying the homogeneous environment of the inner clone were more likely to give rise to differentiated daughter cells, whereas the heterotypic environment on the edge of the clone appeared to permit progenitor renewal, as there was little difference between the renewal rate of single HrasG12V cells and late-stage edge cells. Changes in cell behavior influenced by homotypic/heterotypic cell interactions have been well documented (Mishra et al., 2019), and may be driven by relatively simple processes. For instance, the homotypic adhesions of HrasG12V/HrasG12V inner cells could promote recruitment of more Ras and/or more Rassf5 to the membrane, driving an increase in differentiation. Resultant interplay between the renewing edge and differentiating core of late-stage HrasG12V clones would then lead to oncogenic clone homeostasis.\n\nIn addition, our data show that WT cells near the HrasG12V clone were also more likely to differentiate. It is noteworthy that similar phenomenon was observed following clonal activation of PI3K, although in that context WT cells were more self-renewing and the oncogenic clone was in the process of being eliminated from the tissue through increased differentiation (Ying et al., 2018). Despite having opposite effects on WT cells, both observations suggest that epidermal progenitors can respond to environmental changes in order to promote the stable size of the progenitor compartment necessary for tissue maintenance. This is consistent with a model where regulation of stem cell fate choice, rather than being a sole product of cell autonomous signaling, is subject to progenitor cell dynamics among the nearest neighbors (Mesa et al., 2018). Of note, while that model was supported by observation that delamination of a basal cell precedes division of a neighboring progenitor in the context of adult tissue homeostasis (Mesa et al., 2018), it would be interesting to test if oncogenic activation of a potent mitogenic signal in a basal progenitor may reverse the relationship, and promote delamination of its neighbors.\n\nIn our model, biological outcome of a balanced clone is driven by inception of two progenitor populations with very different fates. As this emergence of distinct populations is defined by a progressive increase in clone size, which may be promoted by any oncogenic event that drives unbalanced proliferation, and overall round clone shape, which appears to be a general feature of epidermal organization and can therefore be viewed as a simple facilitator, it suggests that physical attributes of the clone can play a defining role. The dichotomy of growing edge and unstable core not only provides a model for how the growth of a single isolated clone can be constrained without requiring the presence of competing clones/mutations but may also explain the observation that oncogene-driven clones residing in aged epidermis grow to a relatively uniform size (Martincorena et al., 2015).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>C57BL/6J</td>\n      <td>Jackson Laboratories</td>\n      <td>Stock #: 000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>293-FT</td>\n      <td>Invitrogen</td>\n      <td>Cat #: R70007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PerCP/Cyanine5.5 rat monoclonal anti-human/mouse CD49f</td>\n      <td>BioLegend</td>\n      <td>Cat #: 313617</td>\n      <td>1:50</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Chicken polyclonal anti-GFP</td>\n      <td>Abcam</td>\n      <td>Cat #: ab13970 RRID:AB_300798</td>\n      <td>IF 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-BrdU</td>\n      <td>Invitrogen</td>\n      <td>Cat #: MoBU-1</td>\n      <td>IF: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-GAPDH</td>\n      <td>Proteintech</td>\n      <td>Cat #: 60004\u20131-Ig RRID:AB_2737588</td>\n      <td>WB: 1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Peroxidase AffiniPure goat polyclonal Anti-Mouse IgG (H+L)</td>\n      <td>Jackson Immunoresearch</td>\n      <td>Cat #: 115-035-003</td>\n      <td>WB: 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-K10</td>\n      <td>BioLegend</td>\n      <td>Cat #: Poly19054</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Nore1A</td>\n      <td>Donated by G. Clark</td>\n      <td>Cat #: PAS17071</td>\n      <td>WB: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-RFP</td>\n      <td>Rockland</td>\n      <td>Cat #: 6000-401-379 RRID:AB_11182807</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-Nidogen</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat #: sc-33706 RRID:AB_627519</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BCA Protein Assay Kit</td>\n      <td>Thermo Fisher</td>\n      <td>Cat #: 23225</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT EdU cell proliferation kit for imaging, Alexa Fluor 555</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat. #: C10337</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DNeasy Blood and Tissue Kit</td>\n      <td>Qiagen</td>\n      <td>Cat #: 69504</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>iScript Reverse Transcription Supermix</td>\n      <td>Bio-Rad</td>\n      <td>Cat #: 1708840</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Power SYBR Green PCR Master Mix</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat. #: 4367660</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperSignal West Femto Maximum Sensitivity Substrate</td>\n      <td>Thermo Fisher</td>\n      <td>Cat #: 34094</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zero Blunt TOPO kit</td>\n      <td>Invitrogen</td>\n      <td>Cat #: 450245</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>FLAG-Nore1</td>\n      <td>Addgene</td>\n      <td>Cat #: 1975 RRID:Addgene_1975</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>tdTomato-C1</td>\n      <td>Addgene</td>\n      <td>Cat #: 54653 RRID:Addgene_54653</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zen Black</td>\n      <td>Zeiss</td>\n      <td>RRID:SCR_018163</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>M.O.M. buffer</td>\n      <td>Vector Labs</td>\n      <td>Cat #: BMK-220</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nAll mice were on a C57BL/6 or a C56BL/6-Tyrc-2J background including, HrasG12V/G12V (Chen et al., 2009), Tg(K14-cre)1Efu (Vasioukhin et al., 1999), Gt(Rosa)26Sortm1(eYFP)Cos/+ (Jackson Laboratories), and Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFO)Luo (Jackson Laboratories). Female and male animals were used in equal numbers. Randomization and blinding were not used in this study.\n\n### CFI assay\n\nEdU was administered via intraperitoneal injection to adult animals followed 2 hr later by BrdU. Animals were euthanized 24 hr after EdU injection. Head skin was removed and samples were incubated in 30 mM EDTA overnight at 4\u00b0C and then for 2 hr at 37\u00b0C to separate dermis from epidermis. The epidermis was then gently separated from the dermis by scrapping with scalpel, fixed for 1 hr in 4% PFA, followed by incubations for 1 hr in 0.5% Triton and then 1 hr in blocking buffer containing 0.5% Triton. Next, tissues were incubated with primary chicken anti-GFP antibody overnight at 4\u00b0C (to label transduced clones), and then processed for EdU expression using Click-iT technology (Invitrogen) according to the manufacturer\u2019s instructions. This was followed by a 15-min treatment in 2N HCL at 37\u00b0C to denature DNA, and two washes in 0.1 M sodium borate, pH 8.5. Following this quenching step, tissues were incubated in anti-chicken secondary (Invitrogen) for 1 hr. After incubation in M.O.M. buffer (Vector Labs) for 1 hr, tissues were processed for BrdU detection, stained with 4,6-diamidino-2-phenylindole (DAPI; Life Technologies), and mounted in ProLong Gold (Invitrogen). Images were collected using a Zeiss LSM700 system with a Plan-Apochromat 40X/1.4 oil objective. In order to create images with enough detail to accurately score division type, Z-stacks, spanning the full thickness of the epidermis, with 1 \u03bcm slice intervals were generated. Fates were scored by determining daughter cell location (basal or suprabasal layer) and morphology (cuboidal or squamous).\n\n### EdU-BrdU pulse-chase differentiation assay and renewal rate quantification\n\nE18.5 tissues were embedded in OCT. After sectioning, tissues were fixed in 4% PFA, washed in 0.1% Triton followed by incubation for 1 hr at room temperature in blocking buffer. Tissues were processed for K10 detection, and then processed for EdU expression using Click-iT technology (Invitrogen) according to the manufacturer\u2019s instructions. This was followed by incubation in 2N HCL for 30 min at 37\u00b0C to denature DNA and two washes with 0.1 M sodium borate, pH 8.5 for 15 min. Tissue sections were then incubated in M.O.M. buffer (Vector Labs) for 1 hr and processed for BrdU detection followed by mounting in ProLong Gold (Invitrogen). Rate of renewal was calculated as the proportion of EdU+/K10- cells out of all EdU+ cells. More detailed explanations of the methodology can be found elsewhere (Ying et al., 2018).\n\n### Proliferation assay\n\nHead skin was processed using the CFI assay protocol, described above. To determine proliferation rate, we calculated the proportion of EdU+ progenitor cells within transduced clones.\n\n### Immunofluorescence\n\nThe following primary antibodies were used: chicken anti-GFP (ab13970, 1:1000; Abcam); mouse anti-BrdU (MoBU-1, 1:100; Invitrogen); rabbit anti-K10 (Poly19054, 1:1,000 BioLegend); rabbit anti-RFP (6000-401-379, 1:1000; Rockland); rat anti-Nidogen (sc-33706, 1:1000; Santa Cruz Biotechnology). Tissues were processed for immunostaining as previously described4,5 and mounted in ProLong Gold (Invitrogen) with or without 4,6-diamidino-2-phenylindole (DAPI; Life Technologies). Confocal images were taken on a Zeiss LSM700 system using a Plan-Apochromat 40X/1.4 oil objective. Image processing was done using Zeiss Zen and ImageJ software.\n\n### Cell packing quantification\n\nHead skin was prepared for whole-mount confocal imaging. Images were collected using a Zeiss LSM700 system with a Plan-Apochromat 40X/1.4 oil objective. Clone area was measured using ImageJ. Cell density was calculated using the formula: clone density = (# basal cells / clone area).\n\n### Clone morphology and circularity quantification\n\nHead skin whole-mounts were imaged on a Zeiss LSM700 system with a Plan-Apochromat 40X/1.4 oil objective. Using ImageJ clone outlines were traced and an ellipse was fitted to each clone. The perimeter and area of the ellipse was measured using ImageJ. Circularity was calculated using the following equation: circularity\u00a0=\u00a04\u03c0(area / perimeter2).\n\n### Western blot\n\nHead skin from E18.5 animals was incubated in 2 mg/mL dispase at 37\u00b0C for 1 hr to separate dermis from epidermis. The epidermis was then digested in RIPA buffer with phosphatase and protease inhibitor cocktails (Santa Cruz Biotechnology) for 30 min on ice followed by sonication. Supernatants were assayed for protein concentration using the Pierce BCA Protein Assay Kit (Thermo Fisher). Western blotting was performed using a Novex system (Invitrogen). Membranes were incubated with primary antibody overnight and then incubated with HRP-conjugated secondary antibodies (Jackson Immunoresearch) for 1 hr at room temperature. Membranes were developed using SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Fisher). Chemiluminescent signals were detected using an Odyssey Fc system (LI-COR). The following primary antibodies were used: rabbit anti-Nore1A (PAS17071, 1:1000; donated by G. Clark), mouse anti-GAPDH (60004\u20131-Ig, 1:2000; Proteintech).\n\n### In vivo genetic screens\n\nHead skin of E18.5 mice was collected and digested in 2 mg/mL dispase at 37\u00b0C for 1 hr to separate dermis from epidermis. Epidermal tissue was then digested in 0.25% trypsin for 30 min to isolate single cells. Cells were labeled with CD49f/\u03b16-integrin-PerCP (1:50; BioLegend) and purified using fluorescence activated cell sorting (FACS) using BD FACSAria II (BD Biosciences). Genomic DNA was extracted using DNeasy Blood and Tissue Kit (Qiagen). Barcode preamplification, sequencing and data processing using the Deseq2 program were performed as previously described (Ying et al., 2018).\n\n### Lentiviral constructs\n\nA mouse Rassf5 expression construct (Addgene) was cloned into tdTomato-C1 vector (Addgene) at EcoRI/SmaI sites. Rassf5-tdT was then cloned into a modified pLX Cre EF1 vector3 using the Zero Blunt TOPO kit (Invitrogen). To make inducible Rassf5 and CreER constructs, Rassf5-tdT was cloned into a pLKO2 TRE vector at NsiI/BspEI sites. CreER was cloned into a pLKO2 rtTA construct at SalI/NheI sites.RNA interference-mediated gene depletion was achieved using pLKO1 shRNA vectors from the mouse TRC1.0 shRNA library (Sigma-Aldrich). pLKO-Cre vectors were used to generate Cre-shRNA expression constructs (Beronja et al., 2013; Beronja et al., 2010).\n\n### Lentiviral production and transduction\n\nLarge-scale production and concentration of lentivirus was performed as previously described (Beronja et al., 2010). Detailed descriptions of in vitro and in vivo lentiviral transductions and in-utero-guided lentiviral transduction can be found elsewhere (Beronja et al., 2013; Beronja et al., 2010).\n\n### mRNA quantifications\n\nTotal RNA was isolated from cultured keratinocytes or from E18.5 FACS-sorted epidermal cells using RNeasy Plus Mini Kit (Qiagen). Complementary DNA was generated from 1 \u03bcg of total RNA using the iScript Reverse Transcription Supermix (Bio-Rad). Quantitative PCR was performed with SYBR Green PCR Master Mix (Thermo Fisher) and with gene-specific and Rpl16 control primers.\n\n### Intravital imaging using two-photon microscopy\n\nAn LSM 780 multiphoton, laser scanning confocal microscope (Zeiss) was used in intravital imaging. Details of the technique have been previously described (Rompolas et al., 2013). Mice were anesthetized and further immobilized using a custom device so that the head skin could be imaged without interfering vibrations. GFP and Tomato signals were captured using a 940 nm laser.\n\n### Statistical information\n\nAll experiments were performed at least in triplicate, and all quantitative data are expressed as mean \u00b1 s.d. Differences between conditions were analyzed in Prism 7 (GraphPad) using Student\u2019s t-test. Significant differences were considered when p<0.05.\n",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "f867b30d-7d39-4913-94e5-5575a4e509ba",
+      "submission_id": "edbb16e1-4473-4fc3-83c4-edb5695ff40a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William C Hahn, Dana-Farber Cancer Institue United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54618.sa1](https://doi.org/10.7554/eLife.54618.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe work addresses an important question, namely what happens when cells acquire an oncogene that will ultimately progress to cancer. The authors nicely show that tumor cells in a stratified mouse epidermis generates two populations of oncogenic cells: ones at the tumor border that favor self-renewal and ones in the center of the clone that favor differentiation. As the clone grows, the intra-clonal competition between the two populations results in stabilized oncogenic growth. This knowledge could be widely applicable to many cancers derived from stratified tissues.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Interplay of opposing fate choices stalls oncogenic growth in skin epithelium\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard White as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Scott Williams (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this work the authors have created a genetically engineered mouse model where the effects of activating HRAS in the epithelium allows for the analysis of cell turnover/division at single cell resolution. They use this elegant experimental model to discover that the growth of oncogenic lesions is nuanced with both pro-proliferative and restraining forces at play. They also demonstrate that this model can be used for genetic screens and performed a screen that identified Rassf5 as a negative regulator of Hras.\n\nEssential revisions:\n\n1) The description of the CFI assay is overly complicated and given it is really just a slight amendment from the assay they previously employed in Ying, Sandoval and Beronja, 2018, the novelty of this assay is a little bit oversold, especially in the Discussion. The labelling of Figure 2B is also quite confusing \u2013 the EdU pulse is actually 2.5 hours in the middle panel of images, and the top panel is tissue that hasn't been subjected to a BrdU injection if I am understanding correctly but this isn't clear initially. Also what the %s are referring to in terms of either total cell population of just doublets is also unclear. Also the CFI method relies on the fact that a cell must divide (incorporate EdU or BrdU) in order to be labeled and counted. A cell that delaminates, without having recently dividing, would not be considered. Since there is evidence that delamination precedes division in the adult epidermis (Mesa et al., 2018), it seems that the concept of delamination should at least be considered (and this paper cited in the Discussion).\n\n2) By way of comparison, none of the analyses in Figure 3A are performed for WT clones. Does inter-clone heterogeneity and the tendency toward clonal circularity exist in WT clones? It would be nice to have some of these analysis performed in WT clones to confirm that the HrasG12V behaviors are unique. In particular, single cell sequencing might be quite illuminating here.\n\n3) In Figure 3G, although they do see significantly more self-renewal on the edges of the clone, there is not significantly more differentiation in the centre. Although the trend is there, the authors should be careful with their conclusions and this should be discussed. It seems like the main difference that accounts for what they see is the changes in self-renewal. In addition, do WT clones that are in contact with the HrasG12V edge cells behave any differently than WT clones far removed from a HrasG12V clone? The notion of competition between WT and mutant clones discussed by this group (subsection \u201cEmerging heterogeneity in expanding HrasG12V clones impacts progenitor renewal behavior) and others suggests that these WT \"edge\" cells may have unique properties.\n\n4) The authors claim in Figure 1\u2014figure supplement 1 and in the subsection \u201cExpression of activated HrasG12V promotes progenitor cell renewal in adult skin epithelium\u201d, that neither apoptosis nor cell cycle length are significantly different between WT and HrasG12V mutants; thus, they exclude these factors from their growth model (Figure 1G). However, these analyses were performed in embryonic back rather than adult head epidermis, and presumably in tissue that has ubiquitous rather than clonal induction of HrasG12V. Since the authors show in Figure 4A that there are no apparent differences in progenitor renewal rates between WT and HrasG12V in embryonic clones, these assumptions may not be valid for their model. The authors should at a minimum openly disclose this caveat. Also, additional details on how the growth models (Figures 1G, 2K) were built should be included in the Materials and methods.\n\n5) There is a general lack of n values for the majority of quantified data. The number of animals analyzed are listed but not the number of data points collected. These should be added to figures and/or legends. In addition, statistics are missing from Figure 2G-J.\n\n6) In order to properly contextualize the results shown in Figure 3, it would be important to show that in a large field of Hras-expressing cells (i.e. K14-Cre driven or high titer lentivirus driven expression), we don't see clonal shapes trending towards being round. This critical control would serve to reinforce the idea that in the case of clonal Hras expression, it is really interactions between wild-type and oncogenic cells that eventually contributes to the restraint of overgrowth in the tissue. An analysis of clonal growth in WT tissue would also serve to illustrate and further reinforce the same point.\n\n7) The screen was quite limited and although they identified a new regulator, this was selected from candidate genes. How large a screen can be performed? In addition, no mention or discussion is made of the screen hits that were enriched in the SB population in HrasG12V tissue, although there appear to be several. Also, it should be clarified which genetic backgrounds were used for the screen. I assume this is the Krt14-Cre; Hrasll-G12V/+, and that WT would be without either the Krt14-Cre or HrasG12V allele, but this should be explicitly stated in the text. Data regarding the enrichment/depletion of their screen hits (Figure 4E, F) should be provided.\n\n8) The observations regarding intraclonal heterogeneity are very interesting and quite well described. However, that Rassf5 is a bona fide contributor to these spatially distinct dynamics is not sufficiently convincing. More thorough analysis should be included to suggest that there are changes to these dynamics when Rassf5 expression is perturbed, either by shRNA-mediated knockdown, or by over-expression. It is puzzling that no data is shown to support this, and in both the initial description of these data in the Results, and in the Discussion, the authors mention that in other systems Rassf5 is thought to restrain oncogenic Ras activity through induction of senescence of apoptosis. However, according to their data, there is neither senescence nor apoptosis induced in the case of the epidermis (although this data could also be more convincing). At the very least, analysis similar to what is shown in Figure 3 should be included in the case of shRassf5 and/or Rassf5 overexpression to convincingly demonstrate that the phenomenon they describe in the first three figures can indeed be linked to Rassf5 function. Simply saying that the clones are more triangular upon Rassf5 overexpression is not sufficient. What do these clones look like in whole mount? Are they still circular like the HrasG12V clones, or is this lost? Is the heterogeneity of cell behaviors between the \"inner\" and \"edge\" cells maintained or lost? Is proliferation or apoptosis affected? Also, the Rassf5 knockdown and over-expression are assessed at E18.5 rather than later post-natal time points which makes it furthermore difficult to include the relevance between the phenotypes and what they describe earlier in the paper. Another potential experiment to include that would help their case would be to stain for Rassf5 to see if there are differences on the protein expression level within clones \u2013 if there is a working antibody available this should be included.\n",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f2c400d1-6899-40c0-8d35-d7ff7f7a7b8f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C1",
+      "claim": "Adult human skin harbors potent oncogenic mutations without any functional or morphological consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult human skin harbors potent oncogenic mutations without any functional or morphological consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about adult human skin that is supported by the citation that follows it in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "46df3d70-1155-4bcb-85ac-0592f65547e1",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C2",
+      "claim": "Mutant clones that persist in the tissue are both limited and uniform in size, irrespective of a mutation's mitogenic potential.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking feature of this surprising tolerance is that mutant clones that persist in the tissue are both limited and uniform in size, irrespective of a mutation's mitogenic potential (Martincorena et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Martincorena et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "45837c71-b817-47a2-b44b-524e1a9d2317",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C3",
+      "claim": "Gain-of-function mutant p53 clones grow extensively in naive epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "In murine skin, gain-of-function mutant p53 clones grow extensively in naive epidermis, yet appear growth-inhibited when induced in a tissue premutagenized via acute exposure to UV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the citation to Murai et al., 2018 that follows in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "3874a76a-e1ea-4eda-990e-8d948cea5c1a",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C4",
+      "claim": "Mutant p53 clones appear growth-inhibited when induced in a tissue premutagenized via acute exposure to UV.",
+      "claim_type": "EXPLICIT",
+      "source": "In murine skin, gain-of-function mutant p53 clones grow extensively in naive epidermis, yet appear growth-inhibited when induced in a tissue premutagenized via acute exposure to UV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the citation to Murai et al., 2018 that follows in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "5830ee2e-a746-4098-a8a6-047e23eb2c48",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C5",
+      "claim": "UV radiation introduced mutations that were able to compete with expanding p53 clones, limiting their size.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the UV radiation introduced mutations that were able to compete with expanding p53 clones, limiting their size (Murai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Murai et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "4355161f-5b9d-4e90-958d-fdbee355e440",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C6",
+      "claim": "Interclone growth inhibition may contribute to epithelial homeostasis in aged tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This model of interclone growth inhibition may contribute to epithelial homeostasis in aged tissues, which contain a multitude of established mutations (Bowling et al., 2019; Higa and DeGregori, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bowling et al., 2019 and Higa and DeGregori, 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "d447f362-d1df-431f-86ff-ea04a0fdb07b",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C7",
+      "claim": "Aged tissues contain a multitude of established mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This model of interclone growth inhibition may contribute to epithelial homeostasis in aged tissues, which contain a multitude of established mutations (Bowling et al., 2019; Higa and DeGregori, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bowling et al., 2019 and Higa and DeGregori, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "148738da-8664-4a46-9a7a-48cb1c011220",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C8",
+      "claim": "Activating mutation in \u03b2-catenin leads to ectopic hair follicle growths, which regress and are permanently eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating mutation in \u03b2-catenin leads to ectopic hair follicle growths, which regress and are permanently eliminated (Brown et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Brown et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "c389bc73-ef29-4495-bdd7-3c8eb947c053",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C9",
+      "claim": "Pik3ca is the most commonly mutated oncogene in epithelial cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidermal activation of Pik3ca, the most commonly mutated oncogene in epithelial cancer, induces clones which are more proliferative than wild type (WT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "e6c59415-cbf6-42a2-b5ad-8e97325b31f9",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C10",
+      "claim": "Epidermal activation of Pik3ca induces clones which are more proliferative than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidermal activation of Pik3ca, the most commonly mutated oncogene in epithelial cancer, induces clones which are more proliferative than wild type (WT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the citation to Ying et al., 2018 that follows.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "799b0f55-72d6-4aa4-9a53-57c5bd09fe53",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C11",
+      "claim": "Pik3ca-activated clones are lost as the oncogenic progenitors are removed from the tissue due to an inability to self-renew.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they too are lost as the oncogenic progenitors are removed from the tissue due to an inability to self-renew (Ying et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ying et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0c52b95b-6e74-47d8-a5e1-862b27c745cc",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C12",
+      "claim": "Single-cell activation of oncogenic Hras (HrasG12V) results in formation of persistent clones within the interfollicular epidermis (IFE).",
+      "claim_type": "EXPLICIT",
+      "source": "To answer this question, we use mouse skin and single-cell activation of oncogenic Hras (HrasG12V) which we previously demonstrated results in formation of persistent clones within the interfollicular epidermis (IFE) (Beronja et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Beronja et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "6ac1d650-a384-438d-99ae-b55cf999009e",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C13",
+      "claim": "HrasG12V promotes an early and transient clonal expansion driven by increased progenitor renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that HrasG12V promotes an early and transient clonal expansion driven by increased progenitor renewal that is replaced with an increase in progenitor differentiation leading to reduced growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in the manuscript, particularly in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "23e98ae0-8703-451a-b2ac-09cd2bc67a21",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C14",
+      "claim": "Increased progenitor renewal in HrasG12V clones is replaced with an increase in progenitor differentiation leading to reduced growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that HrasG12V promotes an early and transient clonal expansion driven by increased progenitor renewal that is replaced with an increase in progenitor differentiation leading to reduced growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in the manuscript, particularly in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "6d6b8dd4-53e5-433c-90cc-10a4ad6ebb0f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C15",
+      "claim": "HrasG12V clones contain two populations: renewing progenitors along the edge and differentiating ones within the central core.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this dynamic effect to emergence of two populations within oncogenic clones: renewing progenitors along the edge and differentiating ones within the central core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "a9eea3ea-45f6-4192-9317-343db40358e0",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C16",
+      "claim": "Clone expansion is accompanied by progressive enlargement of the core and diminishment of the edge compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "As clone expansion is accompanied by progressive enlargement of the core and diminishment of the edge compartment, the intraclonal competition between the two populations results in stabilized oncogenic growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "828bda47-99ff-4403-9956-78ed94b02d3c",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C17",
+      "claim": "Intraclonal competition between edge and core populations results in stabilized oncogenic growth.",
+      "claim_type": "EXPLICIT",
+      "source": "As clone expansion is accompanied by progressive enlargement of the core and diminishment of the edge compartment, the intraclonal competition between the two populations results in stabilized oncogenic growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "360dc994-a894-4eee-b7b9-4997c23ae05a",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C18",
+      "claim": "Rassf5 is a novel regulator of progenitor fate choice.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the molecular mechanism of HrasG12V-driven differentiation, we screened known Ras-effector in vivo and identified Rassf5 as a novel regulator of progenitor fate choice that is necessary and sufficient for oncogene-specific differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "d37b8a13-83ff-4fda-84fb-65fe8b4c443a",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C19",
+      "claim": "Rassf5 is necessary for oncogene-specific differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the molecular mechanism of HrasG12V-driven differentiation, we screened known Ras-effector in vivo and identified Rassf5 as a novel regulator of progenitor fate choice that is necessary and sufficient for oncogene-specific differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "fc36b910-8d97-4e4a-b405-2edb97770daf",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C20",
+      "claim": "Rassf5 is sufficient for oncogene-specific differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the molecular mechanism of HrasG12V-driven differentiation, we screened known Ras-effector in vivo and identified Rassf5 as a novel regulator of progenitor fate choice that is necessary and sufficient for oncogene-specific differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "15ac2866-50b1-4cdc-b8dc-5ff5917ef156",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C21",
+      "claim": "Asymmetric divisions occurred in approximately 44% of cases in control head skin epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of control (R26mT/mG) head skin epidermis showed that asymmetric divisions, once considered the predominant division type of epidermal progenitors, occurred in approximately 44% of cases, and that symmetric renewal was nearly perfectly balanced by symmetric differentiation (29% vs. 27%) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "a8fa82aa-ac86-4b92-8e18-e8b1c19a9fe3",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C22",
+      "claim": "In control epidermis, symmetric renewal was nearly perfectly balanced by symmetric differentiation (29% vs. 27%).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of control (R26mT/mG) head skin epidermis showed that asymmetric divisions, once considered the predominant division type of epidermal progenitors, occurred in approximately 44% of cases, and that symmetric renewal was nearly perfectly balanced by symmetric differentiation (29% vs. 27%) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "cc7ba4da-1d7f-4d1c-a369-0108f59c210a",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C23",
+      "claim": "HrasG12V expression results in a significant increase in symmetric renewal (48%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a striking change in progenitor division type following expression of HrasG12V, with a significant increase in symmetric renewal (48%) and a significant decrease in symmetric differentiation (10%) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "89338c9c-5d4e-43db-ba23-c8c20dfcddcb",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C24",
+      "claim": "HrasG12V expression results in a significant decrease in symmetric differentiation (10%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a striking change in progenitor division type following expression of HrasG12V, with a significant increase in symmetric renewal (48%) and a significant decrease in symmetric differentiation (10%) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "793a8180-c2f3-4eef-a103-460b0509bf4f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C25",
+      "claim": "Epidermal progenitors in the control tissue had a renewal rate of ~0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidermal progenitors in the control tissue had a renewal rate of ~0.5 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0afd5788-95fc-47b0-a1a8-d22ed06d403d",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C26",
+      "claim": "A renewal rate of ~0.5 is expected to maintain a stable population of basal progenitors long term and ensure neutral tissue growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a rate is expected to maintain a stable population of basal progenitors long term and ensure neutral tissue growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about tissue homeostasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "d0f44d72-088b-4f5f-abff-1f146ca01c06",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C27",
+      "claim": "HrasG12V-expressing progenitors showed higher renewal rate of 0.69.",
+      "claim_type": "EXPLICIT",
+      "source": "HrasG12V-expressing progenitors showed higher renewal rate of 0.69, which implies that oncogenic Hras, unlike single-cell expression of activated Pik3ca (Ying et al., 2018), promotes progenitor cell renewal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "21dc84c0-a893-4724-aabc-374969bfb90e",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C28",
+      "claim": "Oncogenic Hras promotes progenitor cell renewal, unlike single-cell expression of activated Pik3ca.",
+      "claim_type": "EXPLICIT",
+      "source": "HrasG12V-expressing progenitors showed higher renewal rate of 0.69, which implies that oncogenic Hras, unlike single-cell expression of activated Pik3ca (Ying et al., 2018), promotes progenitor cell renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in the manuscript and citation to Ying et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "e0099d92-4b64-4144-b4c8-aaed12666725",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C29",
+      "claim": "HrasG12V-expressing progenitors could support expansion and long-term maintenance of oncogenic clones.",
+      "claim_type": "EXPLICIT",
+      "source": "It also suggests that in contrast to loss of cellular fitness we observed in oncogenic Pik3ca epidermis (Ying et al., 2018), HrasG12V-expressing progenitors could support expansion and long-term maintenance of oncogenic clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed renewal rate and comparison to Pik3ca.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "832176f8-d098-48b3-acf3-eb04ea6743ee",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C30",
+      "claim": "At 24 weeks, Hras clones were significantly larger than WT clones.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point, Hras clones were significantly larger that WT clones but were smaller than anticipated based on the high renewal rate (0.69) at clone initiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "27446561-da49-4984-b4bc-25d97cb1f976",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C31",
+      "claim": "At 24 weeks, Hras clones were smaller than anticipated based on the high renewal rate (0.69) at clone initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point, Hras clones were significantly larger that WT clones but were smaller than anticipated based on the high renewal rate (0.69) at clone initiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1G,H and comparison to expected growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "6d800ecb-b2df-49b7-b79a-26ca0dc0c7d9",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C32",
+      "claim": "Apoptosis was not significantly different between WT and oncogene expressing epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "We first investigated apoptosis or senescence as a means to control clone growth but neither were significantly different between WT and oncogene expressing epidermis, (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ed69a8c1-8ebb-4de5-8a56-b8caa9042eb6",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C33",
+      "claim": "Senescence was not significantly different between WT and oncogene expressing epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "We first investigated apoptosis or senescence as a means to control clone growth but neither were significantly different between WT and oncogene expressing epidermis, (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "88a012de-7844-4fb2-9845-c2f9cd0b9bf8",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C34",
+      "claim": "Additional mechanisms of growth suppression are at play to curtail the expansion of HrasG12V progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that additional mechanisms of growth suppression are at play to curtail the expansion of HrasG12V progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that apoptosis and senescence do not explain the restricted growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "a8a1a162-d71d-4d4b-a3a3-c6d2066ad85f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C35",
+      "claim": "EdU+ labeling of single cells was restricted to the progenitors in the K10- basal layer at 30 min after EdU pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "We first gave animals a pulse of EdU and 30 min later processed the tissue for standard confocal imaging (Figure 2A). We observed EdU+ labeling of single cells throughout the tissue that was restricted to the progenitors in the K10- basal layer (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "c94ded06-dc24-449d-983d-198ae4e5cefc",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C36",
+      "claim": "At 2 hr after EdU pulse, there were sporadic EdU+/BrdU+ single cells and a population of EdU+/BrdU- cells, in which ~15% of cells have already divided but not differentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "We followed the EdU pulse with administration of BrdU 2 hr later (Figure 2A). This resulted in the appearance of sporadic EdU+/BrdU+ single cells and a population of EdU+/BrdU- cells, in which ~ 15% of cells have already divided but not differentiated (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "949d689d-bbd3-44bb-a74c-0fc71056dff1",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C37",
+      "claim": "By 24 hr all EdU+/BrdU- cells were found as doublets and in both basal (K10-) and differentiated K10+ suprabasal layers.",
+      "claim_type": "EXPLICIT",
+      "source": "By 24 hr all EdU+/BrdU- cells were found as doublets and in both basal (K10-) and differentiated K10+ suprabasal layers (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "f553d017-d55e-4dab-8e0a-5c27b8b538a1",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C38",
+      "claim": "Cell fate choices scored by CFI assay are not significantly different from cell fate choices scored via intravital imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We next compared the frequency of cell division types in control epidermis as measured by CFI with that obtained using intravital two-photon imaging of LV-CreER-transduced single cells (Figures 1E and 2D). We observed no significant differences between the two assays, suggesting that in CFI we have a valid and direct method for quantifying cell fate decision within the adult murine epidermis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 1E and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "d573e366-8edb-4a61-9f27-a5b0d62a98b8",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C39",
+      "claim": "Oncogenic clones undergo more symmetric renewal initially, but by 8\u201310 weeks of growth the proportion of symmetric renewal divisions decreased and returned to rates observed in WT clones.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that oncogenic clones undergo more symmetric renewal initially, but by 8\u201310 weeks of growth the proportion of symmetric renewal divisions decreased and returned to rates observed in WT clones (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ae0dddfb-fcf2-4b44-905d-d8ea00034b42",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C40",
+      "claim": "Early increase in symmetric renewal was accompanied by reduction in the rates of symmetric differentiation and asymmetric divisions, which also returned to WT levels by 8\u201310 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Early increase in symmetric renewal was accompanied by reduction in the rates of symmetric differentiation and asymmetric divisions, which also returned to WT levels by 8\u201310 weeks (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "65f7eb53-fff4-4d02-a18c-4c32fd8999fe",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C41",
+      "claim": "WT progenitors maintained a renewal rate of ~0.5 throughout the duration of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT progenitors maintained a renewal rate of ~0.5 throughout the duration of the study, consistent with a neutral growth potential of a homeostatic tissue (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "686ae831-539c-4ff0-bcc8-de41e791677f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C42",
+      "claim": "HrasG12V-expressing progenitors showed an increase in renewal rate to ~0.70\u20130.85 in the initial 8 weeks, but then fell to ~0.55 over the next several weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the HrasG12V-expressing progenitors showed an increase in renewal rate to ~0.70\u20130.85 in the initial 8 weeks, but then fell to ~0.55 over the next several weeks as differentiating and asymmetric cell divisions increased (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "84ba956c-15ce-4677-994d-709122872c0f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C43",
+      "claim": "Oncogene expressing cells had a higher rate of EdU incorporation than WT, and the rates were largely stable over 24 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured proliferation rates in control and HrasG12V clones over the same period, and observed that while oncogene expressing cells had a higher rate of EdU incorporation than WT, the rates were largely stable over 24 weeks (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ec7ebc7b-6763-494a-8c52-f14e25f485b9",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C44",
+      "claim": "Clonal expansion driven by a single oncogenic lesion is dependent on the cellular mechanisms of progenitor proliferation and renewal, with fluctuating rates of cell fate choice being the dominant determinant of growth dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this suggests that clonal expansion driven by a single oncogenic lesion is dependent on the cellular mechanisms of progenitor proliferation and renewal, with fluctuating rates of cell fate choice being the dominant determinant of growth dynamics (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "faf92e3a-6f45-4061-815d-73b8e3efe9e3",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C45",
+      "claim": "Cell density increases between two and four weeks but then remains stable as highly renewing clones transition to more differentiating clones.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cell density increases between two and four weeks but then remains stable as highly renewing clones transition to more differentiating clones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "1d86b703-d397-45e0-82fd-32c76404b8dc",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C46",
+      "claim": "Cell density does not drive the switch in progenitor renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of temporal correlation suggested that cell density does not drive the switch in progenitor renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of correlation between cell density and renewal rate changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "5776de1b-69b1-40df-a446-5d0219b897b5",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C47",
+      "claim": "The shape of expanding HrasG12V clones appeared to be relatively round, irrespective of their age and size.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that the shape of expanding HrasG12V clones appeared to be relatively round, irrespective of their age and size (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "211209b9-fd42-4ac4-a2a9-edff5b9fd2bf",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C48",
+      "claim": "HrasG12V clone circularity is maintained over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this was confirmed through analysis of HrasG12V clone circularity (Figure 3D) and further implied that, as clones expand, their area increases at a greater rate than their circumference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ca665388-6636-4913-9512-a5dc214dc808",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C49",
+      "claim": "As clones expand, their area increases at a greater rate than their circumference.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this was confirmed through analysis of HrasG12V clone circularity (Figure 3D) and further implied that, as clones expand, their area increases at a greater rate than their circumference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the circularity data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "7e84f31c-f085-4747-8483-64a261c622fe",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C50",
+      "claim": "Both edge and inner cell populations enlarged in absolute terms.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we quantified the number of edge and inner cells in HrasG12V clones and observed that while both populations enlarged in absolute terms (Figure 3E), the relative abundance of inner cells increased from 14 to 45% and edge cells decreased from 86 to 55% over time (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "fba484a7-b16a-4256-8ff0-0ffe4b25a0d3",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C51",
+      "claim": "The relative abundance of inner cells increased from 14 to 45% and edge cells decreased from 86 to 55% over time.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we quantified the number of edge and inner cells in HrasG12V clones and observed that while both populations enlarged in absolute terms (Figure 3E), the relative abundance of inner cells increased from 14 to 45% and edge cells decreased from 86 to 55% over time (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "7da16baa-61b6-42a6-bde3-f77c01d5fa94",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C52",
+      "claim": "Edge cells underwent significantly more symmetric renewing divisions than inner cells in 10-week-old HrasG12V clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CFI assay, we analyzed 10-week-old HrasG12V-clones and observed that although the rate of homeostatic asymmetric divisions was similar between edge and inner cells, they significantly differed in the ratio of growth regulating symmetric fate choices (Figure 3G). Although edge cells underwent significantly more symmetric renewing divisions, inner daughter cells more often chose differentiated cell fates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ae430514-d250-416c-9420-6f0fb5a6df2f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C53",
+      "claim": "Inner daughter cells more often chose differentiated cell fates than edge cells in 10-week-old HrasG12V clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CFI assay, we analyzed 10-week-old HrasG12V-clones and observed that although the rate of homeostatic asymmetric divisions was similar between edge and inner cells, they significantly differed in the ratio of growth regulating symmetric fate choices (Figure 3G). Although edge cells underwent significantly more symmetric renewing divisions, inner daughter cells more often chose differentiated cell fates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "b70ba893-113d-48e8-afde-d8c33d7db5d1",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C54",
+      "claim": "Edge cell population maintains progenitor renewal rate consistent with growth expansion (0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "From observed division types, we extrapolated the renewal rate and established that edge cell population maintains progenitor renewal rate consistent with growth expansion (0.69) while inner population is below the 0.5 threshold required for stasis, and therefore in a state of progenitor loss (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "463fa9f3-7021-40c4-b2d1-28db9470e24b",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C55",
+      "claim": "Inner population is below the 0.5 threshold required for stasis, and therefore in a state of progenitor loss.",
+      "claim_type": "EXPLICIT",
+      "source": "From observed division types, we extrapolated the renewal rate and established that edge cell population maintains progenitor renewal rate consistent with growth expansion (0.69) while inner population is below the 0.5 threshold required for stasis, and therefore in a state of progenitor loss (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0b252acb-3f8b-4602-8dec-02367899ea59",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C56",
+      "claim": "WT cells adjacent to late-stage HrasG12V clones had a lower frequency of symmetric renewing divisions compared to WT cells not adjacent to HrasG12V clones.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the behavior of WT cells adjacent to late-stage HrasG12V clones. We observed that these cells had a lower frequency of symmetric renewing divisions, as compared to WT cells not adjacent to HrasG12V clones (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "cd16fcd2-a928-46ee-a449-08ec2d2920fc",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C57",
+      "claim": "WT cells adjacent to HrasG12V clones had a significantly lower renewal rate (0.41) compared to distant WT cells (0.50).",
+      "claim_type": "EXPLICIT",
+      "source": "This change was reflected by a significantly lower renewal rate (0.41) compared to distant WT cells (0.50) (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ebb605ea-499e-4160-af85-0f435769ca84",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C58",
+      "claim": "Progenitor renewal rates were high (~0.75) and not significantly different between control and test clones at E18.5 following low titer LV-Cre transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "At E18.5, we confirmed that epidermis was transduced at clonal density (Figure 4A,B), and used EdU/BrdU differentiation assay to quantify renewal rate in YFP+ clones (Ying et al., 2018). We observed that progenitor renewal rates were high (~0.75), and not significantly different between control and test clones (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "95d3f716-61bf-4ffc-a407-a4539c73c678",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C59",
+      "claim": "Large field expression of HrasG12V resulted in a significant reduction in progenitor renewal rate (0.76 vs. 0.57).",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified progenitor renewal under large field expression of HrasG12V and discovered a significant rate reduction (0.76 vs. 0.57; p value < 0.001; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "2c99a2b4-ec36-4164-9193-36e31f50653f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C60",
+      "claim": "Uniform field activation of HrasG12V using K14-Cre resulted in a progenitor renewal rate of 0.56.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used K14-Cre transgenic mice to generate E18.5 epidermis with uniform field activation of HrasG12V (Figure 4A,B), and observed that the tissue's progenitor renewal rate (0.56) showed no difference between LV-Cre- and K14-Cre-induced fields (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "071943ac-fbb2-4bf6-bdb6-13d07d8a6181",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C61",
+      "claim": "A field of progenitor cells that ubiquitously express HrasG12V more often gives rise to differentiated daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data imply that a field of progenitor cells that ubiquitously express HrasG12V more often gives rise to differentiated daughter cells, and this correlates with the changes we see develop over time in adult HrasG12V clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in Figure 4C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "32193ee8-5d09-4041-8274-917906dcd69e",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C62",
+      "claim": "The screen in WT epidermis did not identify any Hras effector enrichment in basal or suprabasal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our screen in WT epidermis did not identify any Hras effector enrichment in basal or suprabasal cells (Figure 4E), suggesting that in normal development Hras signaling is not a significant regulator of progenitor cell fate choice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "e21f5635-c144-4508-8b02-373a60ea4beb",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C63",
+      "claim": "In normal development Hras signaling is not a significant regulator of progenitor cell fate choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our screen in WT epidermis did not identify any Hras effector enrichment in basal or suprabasal cells (Figure 4E), suggesting that in normal development Hras signaling is not a significant regulator of progenitor cell fate choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the screen results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "6e764757-ebb5-44f0-bf3b-23e058eda050",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C64",
+      "claim": "The screen in HrasG12V-expressing epidermis identified shRNAs targeting Rassf5 and Pik3ca as significantly enriched in basal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the screen in HrasG12V-expressing epidermis identified shRNAs targeting Rassf5 and Pik3ca as significantly enriched in basal cells (Figure 4F), consistent with their putative role as negative regulators of HrasG12V-mediated progenitor renewal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "8c9d126f-d8d1-4080-a340-45b115dd5336",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C65",
+      "claim": "Rassf5 and Pik3ca are putative negative regulators of HrasG12V-mediated progenitor renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the screen in HrasG12V-expressing epidermis identified shRNAs targeting Rassf5 and Pik3ca as significantly enriched in basal cells (Figure 4F), consistent with their putative role as negative regulators of HrasG12V-mediated progenitor renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the screen results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "8427c76b-4ffd-4115-bd5c-38f2738bab4e",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C66",
+      "claim": "The screen identified shRNAs targeting Rassf4, Rgl2, and Rgs14 as significantly enriched in suprabasal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen also identified shRNAs targeting Rassf4, Rgl2, and Rgs14 as significantly enriched in suprabasal cells (Figure 4F, Supplementary file 1), suggesting that these genes may positively regulate renewal in HrasG12V epidermis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4F and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "e507810b-9c53-4277-81be-316194260421",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C67",
+      "claim": "Rassf4, Rgl2, and Rgs14 may positively regulate renewal in HrasG12V epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen also identified shRNAs targeting Rassf4, Rgl2, and Rgs14 as significantly enriched in suprabasal cells (Figure 4F, Supplementary file 1), suggesting that these genes may positively regulate renewal in HrasG12V epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the screen results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "70a39cae-d23b-483c-8401-fefd3e681c1f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C68",
+      "claim": "Activated Pik3ca can drive progenitor differentiation in the epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "We were encouraged by the observed enrichment of Pik3ca shRNAs in basal progenitors, as our lab has previously shown that activated Pik3ca can drive progenitor differentiation in the epidermis (Ying et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ying et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "242d607d-d6e5-4e81-8309-7613fb17a82c",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C69",
+      "claim": "Rassf5, also known as Nore1a, is a Ras effector containing a Ras Association (RA) domain which directly binds to activated Ras.",
+      "claim_type": "EXPLICIT",
+      "source": "Rassf5, also known as Nore1a, is a Ras effector containing a Ras Association (RA) domain which directly binds to activated Ras (Vavvas et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vavvas et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "b688a047-5d4c-4aaa-b0b6-5c484b634f2e",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C70",
+      "claim": "Rassf5 lacks enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other RA domain family (RASSF) members, Rassf5 lacks enzymatic activity and is often epigenetically silenced in cancer (Donninger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Donninger et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "a325e51e-6f37-4276-9336-732dc2dad3bf",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C71",
+      "claim": "Rassf5 is often epigenetically silenced in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other RA domain family (RASSF) members, Rassf5 lacks enzymatic activity and is often epigenetically silenced in cancer (Donninger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Donninger et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "6bd26bb7-40bb-476a-88f6-5fb1ed7333d3",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C72",
+      "claim": "Rassf5 is methylated in the majority of esophageal and head and neck squamous cell carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Rassf5 is methylated in the majority of esophageal and head and neck squamous cell carcinomas (Guo et al., 2015; Steinmann et al., 2009) and has been shown to inhibit Ras growth via senescence (Donninger et al., 2015) and apoptosis (Elmetwali et al., 2016; Park et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Guo et al., 2015 and Steinmann et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "2025499f-157a-4b39-8540-c13f839651f9",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C73",
+      "claim": "Rassf5 has been shown to inhibit Ras growth via senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Rassf5 is methylated in the majority of esophageal and head and neck squamous cell carcinomas (Guo et al., 2015; Steinmann et al., 2009) and has been shown to inhibit Ras growth via senescence (Donninger et al., 2015) and apoptosis (Elmetwali et al., 2016; Park et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Donninger et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "6a8e93f3-a14b-4973-8b1d-ce977275fe68",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C74",
+      "claim": "Rassf5 has been shown to inhibit Ras growth via apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Rassf5 is methylated in the majority of esophageal and head and neck squamous cell carcinomas (Guo et al., 2015; Steinmann et al., 2009) and has been shown to inhibit Ras growth via senescence (Donninger et al., 2015) and apoptosis (Elmetwali et al., 2016; Park et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Elmetwali et al., 2016 and Park et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "5b7dd983-e949-4b00-a2d0-f1b68ce55473",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C75",
+      "claim": "Both Rassf5 transcript and protein were elevated in HrasG12V epidermis at E18.5 relative to WT control.",
+      "claim_type": "EXPLICIT",
+      "source": "To discern if Rassf5 also regulates progenitor cell fate choice and is critical to HrasG12V-mediated differentiation, we first quantified its expression in HrasG12V epidermis at E18.5 and discovered that both its transcript and protein were elevated relative to WT control, indicating that activated HrasG12V can promote Rassf5 expression (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "b4f8cee5-d461-455d-bb08-1bb8757731d4",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C76",
+      "claim": "Activated HrasG12V can promote Rassf5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To discern if Rassf5 also regulates progenitor cell fate choice and is critical to HrasG12V-mediated differentiation, we first quantified its expression in HrasG12V epidermis at E18.5 and discovered that both its transcript and protein were elevated relative to WT control, indicating that activated HrasG12V can promote Rassf5 expression (Figure 5A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed increase in Rassf5 expression in HrasG12V epidermis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "8bcf8509-ef1c-4d73-8763-789e98069047",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C77",
+      "claim": "Three independent shRNAs depleted Rassf5 mRNA by ~70% in keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We next identified three independent shRNAs which depleted Rassf5 mRNA by ~70% in keratinocytes (Figure 5\u2014figure supplement 1A), and generated lentiviral constructs for concomitant expression of Rassf5 shRNAs and Cre (LV-Cre-shRassf5; Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0c8231f0-44b9-4a27-9c4d-25a026d21eb4",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C78",
+      "claim": "Rassf5 depletion in large HrasG12V-expressing fields leads to a significant increase in progenitor renewal rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that Rassf5 depletion in large HrasG12V-expressing fields leads to a significant increase in progenitor renewal rate, with three independent shRNAs demonstrating the same effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "50a69704-2967-4340-8b05-47bda25bdb64",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C79",
+      "claim": "Rassf5 is necessary for HrasG12V-induced progenitor cell differentiation in embryonic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This signifies that Rassf5 is necessary for HrasG12V-induced progenitor cell differentiation in embryonic tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed increase in renewal rate upon Rassf5 depletion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "8f858325-d1fa-43c4-80da-0cad72e2eb7c",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C80",
+      "claim": "Rassf5 may have a more general ability to regulate progenitor cell renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe increased renewal in control epidermis with one out of three shRNAs we used, which suggests that Rassf5 may have a more general ability to regulate progenitor cell renewal (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed effect in control epidermis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0b098f21-e26d-46cf-bce1-bb932a023fee",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C81",
+      "claim": "Rassf5-expressing HrasG12V clones were composed of fewer basal and relatively more suprabasal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole mount imaging further implied that Rassf5-expressing HrasG12V clones were composed of fewer basal and relatively more suprabasal cells (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "26cbb18b-b920-47b4-8436-1141ba04f47c",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C82",
+      "claim": "Rassf5 promotes significant reduction in basal cell numbers and significant increase in the suprabasal to basal surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed clone composition and observed that Rassf5 promotes significant reduction in basal cell numbers and significant increase in the suprabasal to basal surface area (Figure 5H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "5b8e0795-a1d0-424e-a238-e900cd3c0003",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C83",
+      "claim": "Rassf5 is sufficient to promote progenitor cell differentiation in HrasG12V-expressing embryonic epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this suggests that Rassf5 is sufficient to promote progenitor cell differentiation in HrasG12V-expressing embryonic epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed effects of Rassf5 overexpression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "68a59214-3398-4731-a5cb-1a757e905671",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C84",
+      "claim": "Depletion of Rassf5 in adult HrasG12V epidermis specifically suppressed progenitor differentiation of inner cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the difference in renewal rate between the edge and inner clone compartments (Figure 3H), we observed that depletion of Rassf5 in adult HrasG12V epidermis specifically suppressed progenitor differentiation of inner cells (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "b6061593-87dc-4e70-b859-983ac6660fe0",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C85",
+      "claim": "The overall progenitor renewal rate was significantly elevated in HrasG12V/shRassf5 tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the overall progenitor renewal rate was significantly elevated in HrasG12V/shRassf5 tissues (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ee64e3e1-a0ab-4318-bef9-a0bef314e822",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C86",
+      "claim": "Rates of apoptosis and senescence were not significantly affected in adult HrasG12V/shRassf5 epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured rates of apoptosis and senescence in adult HrasG12V/shRassf5 epidermis and found neither to be significantly affected (Figure 5\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "faaf7daf-2436-4ff6-a8b6-ae69530c6601",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C87",
+      "claim": "Rassf5 is a negative regulator of progenitor renewal in the inner core of HrasG12V clones in the adult epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that Rassf5 is a negative regulator of progenitor renewal in the inner core of HrasG12V clones in the adult epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed effects of Rassf5 depletion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "430a7f2a-58e2-46b8-a7d5-a36c97e9f6e4",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C88",
+      "claim": "Early clones expressing HrasG12V and Rassf5 had a significant reduction in their basal cell population compared to HrasG12V clones alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses showed that resultant early clones expressing HrasG12V and Rassf5 had a significant reduction in their basal cell population compared to HrasG12V clones alone (Figure 5O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "03515438-beea-4d9f-81e9-6692bce5c2bc",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C89",
+      "claim": "There was a significant increase in the number of HrasG12V, Rassf5 clones without any basal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed a significant increase in the number of HrasG12V, Rassf5 clones without any basal cells (Figure 5O), consistent with Rassf5 inducing differentiation in adult HrasG12V clones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0959c9ec-eaeb-4ad0-a847-747072d1d67e",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C90",
+      "claim": "Rassf5 is both necessary and sufficient positive regulator of HrasG12V-mediated differentiation in adult as well as embryonic epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data indicate that Rassf5 is both necessary and sufficient positive regulator of HrasG12V-mediated differentiation in adult as well as embryonic epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on all the Rassf5 experiments presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "7352f0fd-3046-4cc1-bb01-4bdb5f21f44b",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C91",
+      "claim": "CFI quantifies progenitor renewal and differentiation rates in vivo by including net effects of direct and indirect determinants such as spindle orientation, delamination and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is characterized by several features which should make it a standard in the field: (i) it quantifies progenitor renewal and differentiation rates in vivo\u2014by including net effects of direct and indirect determinants such as spindle orientation, delamination and plasticity, it reports the ultimate daughter cell fate choice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the CFI assay methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "a2b5733d-916a-4964-b862-6b3055ff80c5",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C92",
+      "claim": "CFI records progenitor/daughter cell locations, allowing for analysis of heterogeneity that may be driven by specific cell/cell and cell/niche interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) it records progenitor/daughter cell locations\u2014by maintaining spatial information of progenitor fate decisions, it allows for analysis of heterogeneity that may be driven by specific cell/cell and cell/niche interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the CFI assay methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "b9842d99-82bc-445e-bdeb-22311951de4d",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C93",
+      "claim": "CFI is easily adoptable by utilizing generic reagents and basic microscopy techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) it is easily adoptable\u2014by utilizing generic reagents and basic microscopy techniques, it can be readily assimilated into any research program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the CFI assay methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "316a552a-efaa-44cb-9052-f2948d4b090b",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C94",
+      "claim": "HrasG12V can promote progenitor renewal or differentiation depending on whether it is active in a single cell or an oncogenic field.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we uncovered that HrasG12V can promote progenitor renewal or differentiation depending on whether it is active in a single cell or an oncogenic field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "fe48b661-19d5-46c8-b78a-2d8762cf4b69",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C95",
+      "claim": "Rassf5 suppresses progenitor cell renewal to limit oncogenic growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Rassf5 suppresses progenitor cell renewal to limit oncogenic growth, which suggests a mechanism of Rassf5-mediated tumor suppression via differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "dba3aecd-ad3e-4ddd-8104-dfd7c99daacb",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C96",
+      "claim": "Rassf5-mediated tumor suppression may occur via differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Rassf5 suppresses progenitor cell renewal to limit oncogenic growth, which suggests a mechanism of Rassf5-mediated tumor suppression via differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "945c0a04-50a9-4337-bf99-9ce048403350",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C97",
+      "claim": "Increasing the rate of progenitor cell differentiation can suppress tumorigenic potential of known oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with recent evidence that increasing the rate of progenitor cell differentiation can suppress tumorigenic potential of known oncogenes (Ying et al., 2018), and that reducing the frequency of asymmetric spindle orientation can promote tumor development in skin (Morrow et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ying et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "5046e586-2cd5-4dd7-899b-6d4b89227c67",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C98",
+      "claim": "Reducing the frequency of asymmetric spindle orientation can promote tumor development in skin.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with recent evidence that increasing the rate of progenitor cell differentiation can suppress tumorigenic potential of known oncogenes (Ying et al., 2018), and that reducing the frequency of asymmetric spindle orientation can promote tumor development in skin (Morrow et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Morrow et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "04478911-97e6-4053-8994-b09064e65d12",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C99",
+      "claim": "Rassf5 can activate Mst1, a driver of Hippo signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Rassf5 can activate Mst1, a driver of Hippo signaling (Bitra et al., 2017), which may lead to phosphorylation and eventual degradation of Yap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bitra et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "5420042d-6fbd-4e4a-9741-b8763d4de3ed",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C100",
+      "claim": "Rassf5 activation of Mst1 may lead to phosphorylation and eventual degradation of Yap.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Rassf5 can activate Mst1, a driver of Hippo signaling (Bitra et al., 2017), which may lead to phosphorylation and eventual degradation of Yap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known signaling pathways.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "ddb7196f-b853-455f-b27c-74a9d6d4c6ee",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C101",
+      "claim": "Yap is enriched in the basal epidermal layer and acts to maintain it in an undifferentiated state.",
+      "claim_type": "EXPLICIT",
+      "source": "As Yap is enriched in the basal epidermal layer and acts to maintain it in an undifferentiated state (Zhang et al., 2011), Rassf5 may be a negative regulator of progenitor renewal through Hippo/Yap signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "affe8ee1-a41a-491c-bbe1-24fa120d51c4",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C102",
+      "claim": "Rassf5 may be a negative regulator of progenitor renewal through Hippo/Yap signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "As Yap is enriched in the basal epidermal layer and acts to maintain it in an undifferentiated state (Zhang et al., 2011), Rassf5 may be a negative regulator of progenitor renewal through Hippo/Yap signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the known functions of Rassf5 and Yap.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "8315b149-2440-426b-9810-58677a70e66f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C103",
+      "claim": "Homotypic adhesions of HrasG12V/HrasG12V inner cells could promote recruitment of more Ras and/or more Rassf5 to the membrane, driving an increase in differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the homotypic adhesions of HrasG12V/HrasG12V inner cells could promote recruitment of more Ras and/or more Rassf5 to the membrane, driving an increase in differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "2765dd8c-3847-4276-a39e-d8313c7e668c",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C104",
+      "claim": "Interplay between the renewing edge and differentiating core of late-stage HrasG12V clones leads to oncogenic clone homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Resultant interplay between the renewing edge and differentiating core of late-stage HrasG12V clones would then lead to oncogenic clone homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed dynamics of edge and core populations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "1726267f-f779-444e-984c-8b8f8d68ad1e",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C105",
+      "claim": "Epidermal progenitors can respond to environmental changes in order to promote the stable size of the progenitor compartment necessary for tissue maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite having opposite effects on WT cells, both observations suggest that epidermal progenitors can respond to environmental changes in order to promote the stable size of the progenitor compartment necessary for tissue maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observations in this study and previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "cdd6ce44-f123-441e-bb3a-a32074b6a3d8",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C106",
+      "claim": "Regulation of stem cell fate choice is subject to progenitor cell dynamics among the nearest neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a model where regulation of stem cell fate choice, rather than being a sole product of cell autonomous signaling, is subject to progenitor cell dynamics among the nearest neighbors (Mesa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mesa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "712e43a0-d775-494a-a6de-e2cc085ba70f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C107",
+      "claim": "Delamination of a basal cell precedes division of a neighboring progenitor in the context of adult tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, while that model was supported by observation that delamination of a basal cell precedes division of a neighboring progenitor in the context of adult tissue homeostasis (Mesa et al., 2018), it would be interesting to test if oncogenic activation of a potent mitogenic signal in a basal progenitor may reverse the relationship, and promote delamination of its neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mesa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "72978f91-270e-4bf9-af7a-7ee03e723984",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C108",
+      "claim": "Oncogenic activation of a potent mitogenic signal in a basal progenitor may reverse the relationship and promote delamination of its neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, while that model was supported by observation that delamination of a basal cell precedes division of a neighboring progenitor in the context of adult tissue homeostasis (Mesa et al., 2018), it would be interesting to test if oncogenic activation of a potent mitogenic signal in a basal progenitor may reverse the relationship, and promote delamination of its neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "b6f1ce76-039c-4b18-b1cf-43875b9cf19f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C109",
+      "claim": "Physical attributes of the clone can play a defining role in the biological outcome of a balanced clone.",
+      "claim_type": "EXPLICIT",
+      "source": "As this emergence of distinct populations is defined by a progressive increase in clone size, which may be promoted by any oncogenic event that drives unbalanced proliferation, and overall round clone shape, which appears to be a general feature of epidermal organization and can therefore be viewed as a simple facilitator, it suggests that physical attributes of the clone can play a defining role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observations about clone shape and composition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "38f54086-5a29-43de-a4ee-53f8e4083fdf",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C110",
+      "claim": "The dichotomy of growing edge and unstable core provides a model for how the growth of a single isolated clone can be constrained without requiring the presence of competing clones/mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The dichotomy of growing edge and unstable core not only provides a model for how the growth of a single isolated clone can be constrained without requiring the presence of competing clones/mutations but may also explain the observation that oncogene-driven clones residing in aged epidermis grow to a relatively uniform size (Martincorena et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "3b8b117f-270c-4224-9eb2-e81a203aaca5",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "claim_id": "C111",
+      "claim": "The edge/core model may explain the observation that oncogene-driven clones residing in aged epidermis grow to a relatively uniform size.",
+      "claim_type": "EXPLICIT",
+      "source": "The dichotomy of growing edge and unstable core not only provides a model for how the growth of a single isolated clone can be constrained without requiring the presence of competing clones/mutations but may also explain the observation that oncogene-driven clones residing in aged epidermis grow to a relatively uniform size (Martincorena et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings and citation to Martincorena et al., 2015.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HrasG12V expression in single epidermal progenitor cells significantly increases symmetric renewal divisions (48% vs 29% in control) and decreases symmetric differentiation (10% vs 27% in control), resulting in an elevated progenitor renewal rate of 0.69 compared to the homeostatic rate of ~0.5 in control tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 are well-supported by intravital imaging data shown in Figure 1E-F. The quantification of division types and renewal rates is based on direct observation of single-cell divisions, with appropriate statistical analysis showing significant differences. The comparison to control tissue provides a clear baseline, and the interpretation that HrasG12V promotes progenitor renewal is justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "40926d68-95d5-4739-91a2-287dd131f478",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At 24 weeks, HrasG12V clones are significantly larger than WT clones but smaller than predicted based on the initial high renewal rate (0.69). Neither apoptosis nor senescence accounts for this growth restriction, suggesting alternative mechanisms of growth suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by data in Figure 1G-H and Figure 1\u2014figure supplement 1A-B. The clone size measurements are quantitative and statistically significant. The negative results for apoptosis and senescence are appropriately documented, justifying the inference that other mechanisms must be involved. This sets up the rationale for subsequent investigations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "f7939671-dd67-46d8-aad8-c47e19abb124",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The CFI assay successfully tracks progenitor cell fate decisions by pulse-labeling with EdU followed by BrdU, allowing identification of daughter cell fates based on location and morphology at 24 hours. The assay produces results consistent with intravital imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 describe the CFI assay methodology and validation. Figure 2A-D shows the temporal progression of labeled cells and demonstrates no significant difference between CFI and intravital imaging results. This validation is critical for establishing the assay's reliability for subsequent experiments. The methodology is clearly described and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "72f204aa-9cd6-45c9-b579-e53a7f27926f",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HrasG12V clones show dynamic changes in progenitor fate choice over time: initially high symmetric renewal (weeks 2-8) transitions to more balanced division patterns by weeks 8-10, with renewal rates decreasing from 0.70-0.85 to ~0.55. Proliferation rates remain stable throughout, indicating that fluctuating cell fate choice, not proliferation, drives growth dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are strongly supported by longitudinal data in Figure 2F-K. The temporal analysis of division types and renewal rates is comprehensive, with multiple timepoints and appropriate statistical comparisons. The stable proliferation rates (Figure 2J) combined with changing renewal rates provide compelling evidence that cell fate choice is the primary driver of growth dynamics. The inference in C44 is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "41f46f74-2229-424c-8bd2-5b22b22b0182",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell density in HrasG12V clones increases between weeks 2-4 but then stabilizes, showing no temporal correlation with the switch in progenitor renewal. HrasG12V clones maintain a circular shape over time, with area increasing faster than circumference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by data in Figure 3B-D. The cell density measurements rule out density-dependent mechanisms for the renewal switch. The circularity analysis is quantitative and shows consistent clone morphology over time. The inference about area vs. circumference growth (C49) is a logical geometric consequence of maintained circularity with increasing size.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "a2661e8a-8490-4ac2-bb7b-0fbbd29fc098",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "As HrasG12V clones expand, they develop spatial heterogeneity with edge cells maintaining high renewal rates (0.69) and inner cells showing increased differentiation (renewal rate below 0.5). The relative proportion of inner cells increases from 14% to 45% over time while edge cells decrease from 86% to 55%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are well-supported by data in Figure 3E-H. The quantification of edge vs. inner cell populations is clear, and the CFI assay data showing differential division patterns between these populations is compelling. The renewal rate calculations are consistent with the observed division frequencies. This spatial heterogeneity provides a mechanistic explanation for clone growth stabilization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "90b5657b-a408-4b20-9fcf-ffbf65871e99",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "WT cells adjacent to late-stage HrasG12V clones show reduced symmetric renewal and a significantly lower renewal rate (0.41) compared to distant WT cells (0.50).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by data in Figure 3I-J. The comparison between adjacent and distant WT cells is appropriately controlled and statistically significant. This non-cell-autonomous effect on neighboring WT cells is an important finding that suggests tissue-level regulation of progenitor behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "cf09aa89-1cbb-4ad4-8d71-3637fc9935b6",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In embryonic epidermis, single HrasG12V clones (low titer LV-Cre) show high renewal rates (~0.75) similar to control, but large-field HrasG12V expression (high titer LV-Cre or K14-Cre) significantly reduces renewal rate to 0.56-0.57, indicating that ubiquitous HrasG12V expression promotes differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by data in Figure 4A-C. The experimental design appropriately compares clonal vs. field activation, and the renewal rate measurements are consistent across two different methods of field activation (LV-Cre and K14-Cre). This demonstrates that the context of HrasG12V expression (single cell vs. field) determines its effect on cell fate, which is a key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "b2bf6dad-c661-4c0e-8420-b825500a0759",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "An in vivo shRNA screen of Ras effectors in embryonic epidermis identified Rassf5 and Pik3ca as negative regulators of HrasG12V-mediated progenitor renewal (enriched in basal cells), and Rassf4, Rgl2, and Rgs14 as potential positive regulators (enriched in suprabasal cells). No effectors were enriched in WT epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 are supported by the screen data in Figure 4E-F. The screen design is appropriate, using basal/suprabasal enrichment as a readout for renewal/differentiation effects. The requirement for multiple independent shRNAs per gene strengthens the findings. The negative result in WT epidermis (C62-C63) is an important control showing specificity to the oncogenic context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0ae7356d-249c-4a90-ad29-d977a938fc33",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Rassf5 transcript and protein are elevated in HrasG12V epidermis. Depletion of Rassf5 using three independent shRNAs (~70% knockdown) significantly increases progenitor renewal rate in large HrasG12V-expressing fields, demonstrating that Rassf5 is necessary for HrasG12V-induced differentiation in embryonic tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 are well-supported by data in Figure 5A-D and Figure 5\u2014figure supplement 1A. The expression data shows HrasG12V induces Rassf5, and the loss-of-function experiments with multiple independent shRNAs provide strong evidence for necessity. The effect in control epidermis with one shRNA (C80) is noted appropriately as suggestive rather than conclusive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "89898768-f0bc-43f4-af8b-c501a99c77a9",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overexpression of Rassf5 in HrasG12V clones in embryonic epidermis significantly reduces basal cell numbers and increases the suprabasal to basal surface area ratio, demonstrating that Rassf5 is sufficient to promote progenitor differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 are supported by gain-of-function data in Figure 5F-I. The whole-mount and quantitative analyses clearly show that Rassf5 overexpression promotes differentiation in HrasG12V clones. Combined with the loss-of-function data, this establishes both necessity and sufficiency of Rassf5 in embryonic epidermis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "6b81c6f2-08b0-49e6-b775-3aa4cb5e51f4",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In adult HrasG12V epidermis, Rassf5 depletion specifically suppresses differentiation of inner cells, significantly elevating overall renewal rate, without affecting apoptosis or senescence. This demonstrates that Rassf5 is a negative regulator of progenitor renewal in the inner core of adult HrasG12V clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 are supported by data in Figure 5J-K and Figure 5\u2014figure supplement 1B-C. The spatial analysis showing specific effects on inner cells is particularly important, linking Rassf5 function to the edge/core heterogeneity described earlier. The negative results for apoptosis and senescence rule out alternative mechanisms. This extends the embryonic findings to adult tissue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0675044a-ea8f-4c4f-959c-37c38e40adbf",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Inducible overexpression of Rassf5 in early adult HrasG12V clones significantly reduces basal cell numbers and increases the proportion of clones without any basal cells, demonstrating that Rassf5 is both necessary and sufficient for HrasG12V-mediated differentiation in adult and embryonic epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 are supported by data in Figure 5M-O. The inducible system allows temporal control and demonstrates sufficiency in adult tissue. Combined with all the Rassf5 loss- and gain-of-function experiments in both embryonic and adult contexts, the conclusion that Rassf5 is necessary and sufficient (C90) is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "8e9478c2-9b2c-43a5-979f-b456c83db822",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "HrasG12V clones undergo early transient expansion driven by increased progenitor renewal, which is replaced by increased differentiation leading to reduced growth. This dynamic is attributed to emergence of two populations: renewing edge progenitors and differentiating core cells, with progressive core enlargement and edge diminishment leading to stabilized growth through intraclonal competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 represent the central model of the paper, integrating findings from Figures 1-3. The temporal dynamics (C13-C14) are supported by longitudinal data, and the spatial heterogeneity (C15-C16) is demonstrated by edge/core analysis. The intraclonal competition model (C17) is a reasonable inference from the data showing opposing behaviors of edge and core populations. This is the paper's major conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "5356071a-5afc-42f1-9eb9-8584d822e066",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Rassf5 is identified as a novel regulator of progenitor fate choice that is both necessary and sufficient for oncogene-specific differentiation in HrasG12V-expressing epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 summarize the Rassf5 findings from the screen and functional validation experiments. The screen identified Rassf5 (C18), and the loss- and gain-of-function experiments in both embryonic and adult tissues establish necessity (C19) and sufficiency (C20). This is well-supported by the comprehensive data in Figures 4-5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "dc556f16-1e2c-486a-9c36-e056147fe7c8",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The CFI assay quantifies progenitor renewal and differentiation rates in vivo by including net effects of multiple determinants, records spatial information of progenitor/daughter cells, and is easily adoptable using generic reagents and basic microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 describe the features and advantages of the CFI assay. These are supported by the methodological description and validation data in Figure 2. The assay's ability to capture net cell fate outcomes while maintaining spatial information is demonstrated throughout the paper. The ease of adoption is a reasonable claim given the use of standard reagents and techniques.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "2bfa5f6e-e654-493d-95ee-62e0b222b590",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "HrasG12V can promote either progenitor renewal or differentiation depending on whether it is active in a single cell or an oncogenic field. Rassf5 suppresses progenitor renewal to limit oncogenic growth, suggesting a mechanism of tumor suppression via differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is well-supported by the comparison of single-cell vs. field activation data. Claim C95 is supported by the comprehensive Rassf5 functional data. Claim C96 is appropriately presented as speculation (\"suggests\") based on the findings, though it lacks direct tumor formation data. The overall interpretation is reasonable given the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work establishes that adult skin harbors oncogenic mutations without consequences, with mutant clones limited in size. Various oncogenic mutations show context-dependent growth patterns, including p53 clones that are growth-inhibited in UV-premutagenized tissue, \u03b2-catenin clones that regress, Pik3ca clones that are eliminated due to inability to self-renew, and HrasG12V clones that persist in the IFE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 summarize prior work from the literature, appropriately cited. These provide context for the current study and are supported by the referenced publications. The authors accurately represent the prior findings and use them to motivate their investigation of how single oncogenic clones can be tolerated long-term.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "3cf9ed34-346a-47e3-ab8c-e59b8eb963dd",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "HrasG12V-expressing progenitors could support expansion and long-term maintenance of oncogenic clones, in contrast to Pik3ca-expressing progenitors that show loss of cellular fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is an inference based on the observed high renewal rate (0.69) of HrasG12V progenitors and comparison to prior work on Pik3ca. The inference is reasonable given the data, though it is predictive rather than directly demonstrated. The long-term persistence data at 24 weeks (C30) provides some support for this prediction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "9b21b57a-2c1c-469e-968f-b0128c8391d3",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The interplay between renewing edge and differentiating core leads to oncogenic clone homeostasis. Epidermal progenitors respond to environmental changes to maintain stable progenitor compartment size, consistent with models where fate choice depends on neighbor dynamics. Physical attributes of clones play a defining role, and the edge/core dichotomy provides a model for growth constraint without requiring competing mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C111 represent interpretive synthesis of the findings. The edge/core model (C104, C110) is well-supported by the data. The broader interpretations about environmental responsiveness (C105) and neighbor dynamics (C106) are reasonable inferences supported by the adjacent WT cell data and cited literature. The speculation about uniform clone size in aged epidermis (C111) is appropriately tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "a66b717c-5e13-485b-8e73-8953e6dc9e10",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Prior work and general knowledge establish that Pik3ca can drive differentiation, Rassf5 is a Ras effector that binds activated Ras and is often silenced in cancer, and has been shown to inhibit Ras growth via senescence and apoptosis. Rassf5 may regulate progenitor renewal through Hippo/Yap signaling, as Rassf5 can activate Mst1 leading to Yap degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 and C97-C102 cite prior literature appropriately. The mechanistic speculation about Hippo/Yap signaling (C99-C102) is reasonable based on known pathway interactions, though it is not directly tested in this study. These claims provide important context for understanding Rassf5 function and potential mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    },
+    {
+      "id": "0abb0324-e98d-43e9-ae48-eae3b027e342",
+      "content_id": "8b83e600-146f-4877-bd8f-9bf0105c0ea8",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Speculation about mechanisms: homotypic adhesions of inner HrasG12V cells could promote membrane recruitment of Ras/Rassf5 driving differentiation. While delamination precedes division in homeostasis, oncogenic activation might reverse this relationship and promote neighbor delamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103, C107-C108 are explicitly speculative and not directly tested. C107 cites prior work appropriately, but C103 and C108 are hypotheses for future investigation. These are reasonable speculations based on the findings but lack experimental support in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:23:46.469230Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "15ac2866-50b1-4cdc-b8dc-5ff5917ef156",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "a8fa82aa-ac86-4b92-8e18-e8b1c19a9fe3",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "cc7ba4da-1d7f-4d1c-a369-0108f59c210a",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "89338c9c-5d4e-43db-ba23-c8c20dfcddcb",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "793a8180-c2f3-4eef-a103-460b0509bf4f",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "0afd5788-95fc-47b0-a1a8-d22ed06d403d",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "d0f44d72-088b-4f5f-abff-1f146ca01c06",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "21dc84c0-a893-4724-aabc-374969bfb90e",
+      "result_id": "d7fdce48-7a07-4b92-bf59-bc43a60f0a55"
+    },
+    {
+      "claim_id": "832176f8-d098-48b3-acf3-eb04ea6743ee",
+      "result_id": "40926d68-95d5-4739-91a2-287dd131f478"
+    },
+    {
+      "claim_id": "27446561-da49-4984-b4bc-25d97cb1f976",
+      "result_id": "40926d68-95d5-4739-91a2-287dd131f478"
+    },
+    {
+      "claim_id": "6d800ecb-b2df-49b7-b79a-26ca0dc0c7d9",
+      "result_id": "40926d68-95d5-4739-91a2-287dd131f478"
+    },
+    {
+      "claim_id": "ed69a8c1-8ebb-4de5-8a56-b8caa9042eb6",
+      "result_id": "40926d68-95d5-4739-91a2-287dd131f478"
+    },
+    {
+      "claim_id": "88a012de-7844-4fb2-9845-c2f9cd0b9bf8",
+      "result_id": "40926d68-95d5-4739-91a2-287dd131f478"
+    },
+    {
+      "claim_id": "a8a1a162-d71d-4d4b-a3a3-c6d2066ad85f",
+      "result_id": "f7939671-dd67-46d8-aad8-c47e19abb124"
+    },
+    {
+      "claim_id": "c94ded06-dc24-449d-983d-198ae4e5cefc",
+      "result_id": "f7939671-dd67-46d8-aad8-c47e19abb124"
+    },
+    {
+      "claim_id": "949d689d-bbd3-44bb-a74c-0fc71056dff1",
+      "result_id": "f7939671-dd67-46d8-aad8-c47e19abb124"
+    },
+    {
+      "claim_id": "f553d017-d55e-4dab-8e0a-5c27b8b538a1",
+      "result_id": "f7939671-dd67-46d8-aad8-c47e19abb124"
+    },
+    {
+      "claim_id": "d573e366-8edb-4a61-9f27-a5b0d62a98b8",
+      "result_id": "72f204aa-9cd6-45c9-b579-e53a7f27926f"
+    },
+    {
+      "claim_id": "ae0dddfb-fcf2-4b44-905d-d8ea00034b42",
+      "result_id": "72f204aa-9cd6-45c9-b579-e53a7f27926f"
+    },
+    {
+      "claim_id": "65f7eb53-fff4-4d02-a18c-4c32fd8999fe",
+      "result_id": "72f204aa-9cd6-45c9-b579-e53a7f27926f"
+    },
+    {
+      "claim_id": "686ae831-539c-4ff0-bcc8-de41e791677f",
+      "result_id": "72f204aa-9cd6-45c9-b579-e53a7f27926f"
+    },
+    {
+      "claim_id": "84ba956c-15ce-4677-994d-709122872c0f",
+      "result_id": "72f204aa-9cd6-45c9-b579-e53a7f27926f"
+    },
+    {
+      "claim_id": "ec7ebc7b-6763-494a-8c52-f14e25f485b9",
+      "result_id": "72f204aa-9cd6-45c9-b579-e53a7f27926f"
+    },
+    {
+      "claim_id": "faf92e3a-6f45-4061-815d-73b8e3efe9e3",
+      "result_id": "41f46f74-2229-424c-8bd2-5b22b22b0182"
+    },
+    {
+      "claim_id": "1d86b703-d397-45e0-82fd-32c76404b8dc",
+      "result_id": "41f46f74-2229-424c-8bd2-5b22b22b0182"
+    },
+    {
+      "claim_id": "5776de1b-69b1-40df-a446-5d0219b897b5",
+      "result_id": "41f46f74-2229-424c-8bd2-5b22b22b0182"
+    },
+    {
+      "claim_id": "211209b9-fd42-4ac4-a2a9-edff5b9fd2bf",
+      "result_id": "41f46f74-2229-424c-8bd2-5b22b22b0182"
+    },
+    {
+      "claim_id": "ca665388-6636-4913-9512-a5dc214dc808",
+      "result_id": "41f46f74-2229-424c-8bd2-5b22b22b0182"
+    },
+    {
+      "claim_id": "7e84f31c-f085-4747-8483-64a261c622fe",
+      "result_id": "a2661e8a-8490-4ac2-bb7b-0fbbd29fc098"
+    },
+    {
+      "claim_id": "fba484a7-b16a-4256-8ff0-0ffe4b25a0d3",
+      "result_id": "a2661e8a-8490-4ac2-bb7b-0fbbd29fc098"
+    },
+    {
+      "claim_id": "7da16baa-61b6-42a6-bde3-f77c01d5fa94",
+      "result_id": "a2661e8a-8490-4ac2-bb7b-0fbbd29fc098"
+    },
+    {
+      "claim_id": "ae430514-d250-416c-9420-6f0fb5a6df2f",
+      "result_id": "a2661e8a-8490-4ac2-bb7b-0fbbd29fc098"
+    },
+    {
+      "claim_id": "b70ba893-113d-48e8-afde-d8c33d7db5d1",
+      "result_id": "a2661e8a-8490-4ac2-bb7b-0fbbd29fc098"
+    },
+    {
+      "claim_id": "463fa9f3-7021-40c4-b2d1-28db9470e24b",
+      "result_id": "a2661e8a-8490-4ac2-bb7b-0fbbd29fc098"
+    },
+    {
+      "claim_id": "0b252acb-3f8b-4602-8dec-02367899ea59",
+      "result_id": "90b5657b-a408-4b20-9fcf-ffbf65871e99"
+    },
+    {
+      "claim_id": "cd16fcd2-a928-46ee-a449-08ec2d2920fc",
+      "result_id": "90b5657b-a408-4b20-9fcf-ffbf65871e99"
+    },
+    {
+      "claim_id": "ebb605ea-499e-4160-af85-0f435769ca84",
+      "result_id": "cf09aa89-1cbb-4ad4-8d71-3637fc9935b6"
+    },
+    {
+      "claim_id": "95d3f716-61bf-4ffc-a407-a4539c73c678",
+      "result_id": "cf09aa89-1cbb-4ad4-8d71-3637fc9935b6"
+    },
+    {
+      "claim_id": "2c99a2b4-ec36-4164-9193-36e31f50653f",
+      "result_id": "cf09aa89-1cbb-4ad4-8d71-3637fc9935b6"
+    },
+    {
+      "claim_id": "071943ac-fbb2-4bf6-bdb6-13d07d8a6181",
+      "result_id": "cf09aa89-1cbb-4ad4-8d71-3637fc9935b6"
+    },
+    {
+      "claim_id": "32193ee8-5d09-4041-8274-917906dcd69e",
+      "result_id": "b2bf6dad-c661-4c0e-8420-b825500a0759"
+    },
+    {
+      "claim_id": "e21f5635-c144-4508-8b02-373a60ea4beb",
+      "result_id": "b2bf6dad-c661-4c0e-8420-b825500a0759"
+    },
+    {
+      "claim_id": "6e764757-ebb5-44f0-bf3b-23e058eda050",
+      "result_id": "b2bf6dad-c661-4c0e-8420-b825500a0759"
+    },
+    {
+      "claim_id": "8c9d126f-d8d1-4080-a340-45b115dd5336",
+      "result_id": "b2bf6dad-c661-4c0e-8420-b825500a0759"
+    },
+    {
+      "claim_id": "8427c76b-4ffd-4115-bd5c-38f2738bab4e",
+      "result_id": "b2bf6dad-c661-4c0e-8420-b825500a0759"
+    },
+    {
+      "claim_id": "e507810b-9c53-4277-81be-316194260421",
+      "result_id": "b2bf6dad-c661-4c0e-8420-b825500a0759"
+    },
+    {
+      "claim_id": "5b7dd983-e949-4b00-a2d0-f1b68ce55473",
+      "result_id": "0ae7356d-249c-4a90-ad29-d977a938fc33"
+    },
+    {
+      "claim_id": "b4f8cee5-d461-455d-bb08-1bb8757731d4",
+      "result_id": "0ae7356d-249c-4a90-ad29-d977a938fc33"
+    },
+    {
+      "claim_id": "8bcf8509-ef1c-4d73-8763-789e98069047",
+      "result_id": "0ae7356d-249c-4a90-ad29-d977a938fc33"
+    },
+    {
+      "claim_id": "0c8231f0-44b9-4a27-9c4d-25a026d21eb4",
+      "result_id": "0ae7356d-249c-4a90-ad29-d977a938fc33"
+    },
+    {
+      "claim_id": "50a69704-2967-4340-8b05-47bda25bdb64",
+      "result_id": "0ae7356d-249c-4a90-ad29-d977a938fc33"
+    },
+    {
+      "claim_id": "8f858325-d1fa-43c4-80da-0cad72e2eb7c",
+      "result_id": "0ae7356d-249c-4a90-ad29-d977a938fc33"
+    },
+    {
+      "claim_id": "0b098f21-e26d-46cf-bce1-bb932a023fee",
+      "result_id": "89898768-f0bc-43f4-af8b-c501a99c77a9"
+    },
+    {
+      "claim_id": "26cbb18b-b920-47b4-8436-1141ba04f47c",
+      "result_id": "89898768-f0bc-43f4-af8b-c501a99c77a9"
+    },
+    {
+      "claim_id": "5b8e0795-a1d0-424e-a238-e900cd3c0003",
+      "result_id": "89898768-f0bc-43f4-af8b-c501a99c77a9"
+    },
+    {
+      "claim_id": "68a59214-3398-4731-a5cb-1a757e905671",
+      "result_id": "6b81c6f2-08b0-49e6-b775-3aa4cb5e51f4"
+    },
+    {
+      "claim_id": "b6061593-87dc-4e70-b859-983ac6660fe0",
+      "result_id": "6b81c6f2-08b0-49e6-b775-3aa4cb5e51f4"
+    },
+    {
+      "claim_id": "ee64e3e1-a0ab-4318-bef9-a0bef314e822",
+      "result_id": "6b81c6f2-08b0-49e6-b775-3aa4cb5e51f4"
+    },
+    {
+      "claim_id": "faaf7daf-2436-4ff6-a8b6-ae69530c6601",
+      "result_id": "6b81c6f2-08b0-49e6-b775-3aa4cb5e51f4"
+    },
+    {
+      "claim_id": "430a7f2a-58e2-46b8-a7d5-a36c97e9f6e4",
+      "result_id": "0675044a-ea8f-4c4f-959c-37c38e40adbf"
+    },
+    {
+      "claim_id": "03515438-beea-4d9f-81e9-6692bce5c2bc",
+      "result_id": "0675044a-ea8f-4c4f-959c-37c38e40adbf"
+    },
+    {
+      "claim_id": "0959c9ec-eaeb-4ad0-a847-747072d1d67e",
+      "result_id": "0675044a-ea8f-4c4f-959c-37c38e40adbf"
+    },
+    {
+      "claim_id": "6ac1d650-a384-438d-99ae-b55cf999009e",
+      "result_id": "8e9478c2-9b2c-43a5-979f-b456c83db822"
+    },
+    {
+      "claim_id": "23e98ae0-8703-451a-b2ac-09cd2bc67a21",
+      "result_id": "8e9478c2-9b2c-43a5-979f-b456c83db822"
+    },
+    {
+      "claim_id": "6d6b8dd4-53e5-433c-90cc-10a4ad6ebb0f",
+      "result_id": "8e9478c2-9b2c-43a5-979f-b456c83db822"
+    },
+    {
+      "claim_id": "a9eea3ea-45f6-4192-9317-343db40358e0",
+      "result_id": "8e9478c2-9b2c-43a5-979f-b456c83db822"
+    },
+    {
+      "claim_id": "828bda47-99ff-4403-9956-78ed94b02d3c",
+      "result_id": "8e9478c2-9b2c-43a5-979f-b456c83db822"
+    },
+    {
+      "claim_id": "360dc994-a894-4eee-b7b9-4997c23ae05a",
+      "result_id": "5356071a-5afc-42f1-9eb9-8584d822e066"
+    },
+    {
+      "claim_id": "d37b8a13-83ff-4fda-84fb-65fe8b4c443a",
+      "result_id": "5356071a-5afc-42f1-9eb9-8584d822e066"
+    },
+    {
+      "claim_id": "fc36b910-8d97-4e4a-b405-2edb97770daf",
+      "result_id": "5356071a-5afc-42f1-9eb9-8584d822e066"
+    },
+    {
+      "claim_id": "7352f0fd-3046-4cc1-bb01-4bdb5f21f44b",
+      "result_id": "dc556f16-1e2c-486a-9c36-e056147fe7c8"
+    },
+    {
+      "claim_id": "a2b5733d-916a-4964-b862-6b3055ff80c5",
+      "result_id": "dc556f16-1e2c-486a-9c36-e056147fe7c8"
+    },
+    {
+      "claim_id": "b9842d99-82bc-445e-bdeb-22311951de4d",
+      "result_id": "dc556f16-1e2c-486a-9c36-e056147fe7c8"
+    },
+    {
+      "claim_id": "316a552a-efaa-44cb-9052-f2948d4b090b",
+      "result_id": "2bfa5f6e-e654-493d-95ee-62e0b222b590"
+    },
+    {
+      "claim_id": "fe48b661-19d5-46c8-b78a-2d8762cf4b69",
+      "result_id": "2bfa5f6e-e654-493d-95ee-62e0b222b590"
+    },
+    {
+      "claim_id": "dba3aecd-ad3e-4ddd-8104-dfd7c99daacb",
+      "result_id": "2bfa5f6e-e654-493d-95ee-62e0b222b590"
+    },
+    {
+      "claim_id": "f2c400d1-6899-40c0-8d35-d7ff7f7a7b8f",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "46df3d70-1155-4bcb-85ac-0592f65547e1",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "45837c71-b817-47a2-b44b-524e1a9d2317",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "3874a76a-e1ea-4eda-990e-8d948cea5c1a",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "5830ee2e-a746-4098-a8a6-047e23eb2c48",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "4355161f-5b9d-4e90-958d-fdbee355e440",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "d447f362-d1df-431f-86ff-ea04a0fdb07b",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "148738da-8664-4a46-9a7a-48cb1c011220",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "c389bc73-ef29-4495-bdd7-3c8eb947c053",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "e6c59415-cbf6-42a2-b5ad-8e97325b31f9",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "799b0f55-72d6-4aa4-9a53-57c5bd09fe53",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "0c52b95b-6e74-47d8-a5e1-862b27c745cc",
+      "result_id": "0ab5dbcc-f6d7-4855-8ef5-2f63f49ba39c"
+    },
+    {
+      "claim_id": "e0099d92-4b64-4144-b4c8-aaed12666725",
+      "result_id": "3cf9ed34-346a-47e3-ab8c-e59b8eb963dd"
+    },
+    {
+      "claim_id": "2765dd8c-3847-4276-a39e-d8313c7e668c",
+      "result_id": "9b21b57a-2c1c-469e-968f-b0128c8391d3"
+    },
+    {
+      "claim_id": "1726267f-f779-444e-984c-8b8f8d68ad1e",
+      "result_id": "9b21b57a-2c1c-469e-968f-b0128c8391d3"
+    },
+    {
+      "claim_id": "cdd6ce44-f123-441e-bb3a-a32074b6a3d8",
+      "result_id": "9b21b57a-2c1c-469e-968f-b0128c8391d3"
+    },
+    {
+      "claim_id": "b6f1ce76-039c-4b18-b1cf-43875b9cf19f",
+      "result_id": "9b21b57a-2c1c-469e-968f-b0128c8391d3"
+    },
+    {
+      "claim_id": "38f54086-5a29-43de-a4ee-53f8e4083fdf",
+      "result_id": "9b21b57a-2c1c-469e-968f-b0128c8391d3"
+    },
+    {
+      "claim_id": "3b8b117f-270c-4224-9eb2-e81a203aaca5",
+      "result_id": "9b21b57a-2c1c-469e-968f-b0128c8391d3"
+    },
+    {
+      "claim_id": "70a39cae-d23b-483c-8401-fefd3e681c1f",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "242d607d-d6e5-4e81-8309-7613fb17a82c",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "b688a047-5d4c-4aaa-b0b6-5c484b634f2e",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "a325e51e-6f37-4276-9336-732dc2dad3bf",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "6bd26bb7-40bb-476a-88f6-5fb1ed7333d3",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "2025499f-157a-4b39-8540-c13f839651f9",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "6a8e93f3-a14b-4973-8b1d-ce977275fe68",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "945c0a04-50a9-4337-bf99-9ce048403350",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "5046e586-2cd5-4dd7-899b-6d4b89227c67",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "04478911-97e6-4053-8994-b09064e65d12",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "5420042d-6fbd-4e4a-9741-b8763d4de3ed",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "ddb7196f-b853-455f-b27c-74a9d6d4c6ee",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "affe8ee1-a41a-491c-bbe1-24fa120d51c4",
+      "result_id": "a66b717c-5e13-485b-8e73-8953e6dc9e10"
+    },
+    {
+      "claim_id": "8315b149-2440-426b-9810-58677a70e66f",
+      "result_id": "0abb0324-e98d-43e9-ae48-eae3b027e342"
+    },
+    {
+      "claim_id": "712e43a0-d775-494a-a6de-e2cc085ba70f",
+      "result_id": "0abb0324-e98d-43e9-ae48-eae3b027e342"
+    },
+    {
+      "claim_id": "72978f91-270e-4bf9-af7a-7ee03e723984",
+      "result_id": "0abb0324-e98d-43e9-ae48-eae3b027e342"
+    }
+  ],
+  "comparisons": []
+}

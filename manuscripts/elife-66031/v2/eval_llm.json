@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C53"
+    ],
+    "result": "The authors generated a comprehensive 3D image dataset of 92 annotated ovule primordia at cellular resolution, comprising 7763 cells with five morphological descriptors, and developed a refined staging system subdividing early developmental stages (0-I to 0-III) prior to the digit-shaped stage 1-I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17, and C53 collectively describe the creation of a well-documented image resource with explicit numbers of images, cells, and descriptors. The staging refinement is clearly justified and documented in Table 1 and Figure 1. This represents a solid methodological foundation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C2"
+    ],
+    "result": "Ovule primordium development occurs in two distinct phases: Phase I (stages 0-I to 0-III) characterized by 4.5-fold increase in cell number with high proliferation in L1 apical cells (64% of mitotic events), and Phase II (stages 1-I to 2-II) with moderate cell number increase and mitotic activity shifted to the basal domain (60% of events).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide quantitative evidence from both segmented images and CYCB1.1db-GFP reporter analysis showing biphasic, domain-specific cell division patterns. Statistical significance is reported (p=0.03 for Phase I volume increase), and the findings are internally consistent across multiple measurement approaches. Claim C2 accurately summarizes this spatio-temporal pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C84",
+      "C85"
+    ],
+    "result": "SMC characteristics emerge much earlier than previously recognized (stages 0-II/0-III), with candidate SMCs displaying distinct size, enlarged nuclei, and anisotropic shape aligned with the primordium axis (mean angle 22\u00b0 \u00b1 11\u00b0) from early developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C84-C85 are supported by quantitative measurements of cell volume, nuclear area, and anisotropy indices shown in Figures 2I-K and 6D. The early emergence finding revises previous understanding and is well-documented with statistical comparisons. The 22\u00b0 alignment angle provides specific quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C3"
+    ],
+    "result": "Computational modeling using both FEM and MS approaches identified plausible morphogenetic principles: inner L2,L3 layer-driven growth with a spatially confined growth signal, passive strain-based relaxation in a broad domain, and anisotropic cell growth are necessary for digit-shaped primordium formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe modeling results that converge across two independent computational approaches (FEM and MS). The necessity of growth anisotropy is demonstrated by ablation experiments (C29), and the role of inner tissue growth is shown through systematic parameter variation. Claim C3 accurately summarizes these findings. The convergence of two modeling frameworks strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C66",
+      "C67"
+    ],
+    "result": "The elongated-trapezoidal SMC shape emerges as a property of tissue geometry and mechanical constraints in the reference model, but requires anisotropic cell growth specification; isotropic growth models fail to produce the stereotypical SMC shape unless the SMC is allowed to grow twice as much.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C66-C67 demonstrate through MS-Model simulations that SMC shape is an emergent property dependent on growth anisotropy. The comparison between reference and variant models (MS-Model 2 vs MS-Model 3) provides clear evidence. However, the interpretation relies on 2D simulations which may not fully capture 3D complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C73",
+      "C74"
+    ],
+    "result": "Katanin mutant primordia show altered geometry with 1.5-fold increased volume (p=0.007), smaller aspect ratio (p<0.01), broader epidermis with more and larger cells (p=0.03 and p<0.001), and shifted mitotic activity from apex to base, confirming attenuated anisotropic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C73-C74 provide comprehensive quantitative characterization of kat phenotype with appropriate statistical tests and multiple independent measurements. The findings are consistent with prior observations in other tissues (C74 with citations). Sample sizes are adequate (n=59 annotated 3D images for kat dataset).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Katanin mutants show ectopic SMC candidates with molecular markers of SMC identity: 34% show multiple enlarged cells at stage 1-II, 29% show H1.1-GFP eviction in multiple cells, 21% show ectopic KNU-YFP expression, and 57% show ectopic AtDMC1-GUS expression, but no ectopic callose deposition or tetrads were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 provide convergent evidence from multiple independent markers (morphology, H1.1-GFP, KNU-YFP, AtDMC1-GUS, callose, pWOX2-CenH3-GFP) with adequate sample sizes. The negative result for callose (C42) is important and well-documented (n=119 and 269 ovules). The findings suggest ectopic SMC candidates acquire some but not all SMC characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "SMC fate undergoes progressive canalization: in wild-type, 27% of primordia show two SMC candidates at stage 0-II, decreasing to 3% at stage 2-II (resolved by stage 1-I); in kat mutants, plasticity is increased (42% at stage 0-II) and resolution is delayed (33% persist at stage 1-II vs 12% in wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are based on analysis of 1276 wild-type and 2587 kat primordia across multiple alleles, providing robust statistical power. The progressive restriction is well-documented and the delay in kat mutants (C6, C47) provides experimental support for the role of geometry in fate restriction. Claims C4-C5 accurately summarize these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C82"
+    ],
+    "result": "SMC candidates display distinct cell cycle patterns: in Phase I, S-phase is detected in ~24-40% of wild-type primordia suggesting a markedly long S-phase; in Phase II, 97% of SMC candidates show no S-phase pattern, while kat mutants show higher S-phase frequency suggesting delayed S-phase entry or duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C82 are based on PCNA-GFP reporter analysis with adequate sample sizes (n=112-79 for Phase I). The interpretation of long S-phase (C82) is reasonable given low mitotic frequency. The kat phenotype (C51) provides additional support. However, the marker cannot definitively distinguish meiotic from mitotic S-phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study proposes that tissue geometry channels reproductive cell fate in the ovule primordium: altered geometry in kat mutants expands the domain of cells competent for SMC fate through isotropic cell growth and altered mechanical constraints, similar to geometry-dependent canalization in animal systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C79-C80, C97-C99 represent the main conceptual conclusion integrating modeling predictions with kat phenotype. The parsimonious hypothesis (C79) is well-supported by the convergence of computational predictions and experimental observations. The parallel to animal systems (C97) is appropriately cited. However, this remains a proposed mechanism requiring additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C81",
+      "C95",
+      "C96"
+    ],
+    "result": "SMC fate emergence is characterized by mitotic quiescence in the L2 apical domain, enlarged nuclei in candidate SMCs from stage 0-II onwards, and cellular growth; resolution involves re-entry into somatic cell cycle and re-incorporation of H3.1 histone in neighboring cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C81, C95-C96 describe cellular events during SMC specification supported by nuclear area measurements (Figure 6D), mitotic reporter analysis, and cited work on H3.1 eviction (Hernandez-Lagana and Autran, 2020). The findings are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C68"
+    ],
+    "result": "Model simulations reveal that signal growth in L1 alone is insufficient for primordium growth when absent in inner L2,L3 tissue; inner L2,L3 layer-driven growth plays a fundamental role; broad strain accommodation is necessary; and directional epidermal growth is required to accommodate inner tissue growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C68 describe systematic parameter variations in both FEM and MS models (Models 5-8) showing the necessity of different growth components. The conclusions are based on comparison of multiple model scenarios with clear phenotypic outcomes. The convergence across modeling approaches strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "FEM simulations show that isotropic material can produce digit-shaped protrusions but with wider dome and increased L1 thickness; material anisotropy exclusively in L1 is sufficient to restore L1 thickness control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe FEM-specific findings (Models 2 and 2a) about material properties. The results are clearly shown in Figure 3\u2014figure supplement 1C and provide insights into L1 thickness control. However, MS models cannot test material anisotropy, limiting cross-validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "When SMC division is prevented in simulations, its enlargement overrides primordium shape control creating an enlarged dome, suggesting a mechanism may limit SMC growth in real primordia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 describes a simulation result shown in Figure 3\u2014figure supplement 1G. However, claim C70 is speculative inference about a compensatory mechanism (possibly turgor pressure reduction) that lacks experimental validation. The simulation result is clear but the biological interpretation requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Quantitative shape analysis reveals that SMC appears morphologically distinct at late stages (2-I, 2-II) but not early stages by PCA; companion cells show increasing ellipticity from stage 1-I; SMC displays consistent anisotropy with maximum index above medium/minimum indices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C55-C57 describe shape quantification results from PCA and anisotropy analysis. The findings are based on the comprehensive dataset with appropriate computational methods (MorphoMechanX extension). The 22\u00b0 alignment angle (C57) provides specific quantitative support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "KATANIN is expressed ubiquitously in ovule including L1 and L2,L3 layers; global cell parameters are not significantly different between kat and wild-type, but domain-specific analysis reveals altered mitotic patterns in L2 apical SMC neighbors (increased at stage 0-II, decreased at stage 1-II) contrasting with wild-type pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75-C78 provide important context for interpreting kat phenotype. KATANIN localization (C72) is demonstrated with GFP reporter (Figure 4\u2014figure supplement 1). The domain-specific mitotic alterations (C76-C78) are based on CYCB1.1db-GFP analysis and explain the ectopic SMC phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Two complementary 2D modeling approaches were developed: FEM-based continuous tissue model and MS-based cell wall network model, both implementing signal-based and strain-based growth modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe the modeling methodology with appropriate citations to prior work (Boudon et al., 2015; Coen et al., 2004; Bozorg et al., 2016). The dual approach allows cross-validation and testing of different hypotheses. Methods are described in detail in Appendix 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study documents developmental canalization at the cellular domain level in ovule primordium, where L2 apical cells initially share SMC competence leading to plasticity, followed by progressive fate restriction to a single SMC; this process remains robust despite genetic perturbations and is consistent with prior hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C91-C94 describe the canalization framework supported by quantitative data on SMC candidate frequencies across development. The connection to prior hypotheses (C93) and robustness despite mutations (C94) are well-supported. Claim C91 about expanding examples of canalization is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes background knowledge about germline specification in plants vs animals, SMC characteristics, natural variation in SMC singleness, regulatory pathways controlling SMC fate, and prior 2D/3D imaging approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 represent established knowledge and prior work appropriately cited from the literature. These provide necessary context for the study. The citations appear appropriate and the knowledge claims are standard for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C83",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The discussion contextualizes findings within established knowledge: KATANIN function in cell wall anisotropy, parallels to animal germline quiescence, and the concept of developmental canalization in both animal and plant systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C83, C88-C90 represent established knowledge appropriately cited to provide context for interpreting the study's findings. The citations to canalization literature (Waddington, 1942; Hallgrimsson et al., 2019) and animal/plant examples are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The image resource is complementary to existing datasets capturing later ovule stages and contributes to building a developmental atlas integrating morphogenesis with gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 appropriately position the resource in the context of related work (Lora et al., 2017; Vijayan et al., 2021; Wolny et al., 2020; Hartmann et al., 2020). The dataset is publicly available at DRYAD repository as stated in methods.",
+    "result_type": "MINOR"
+  }
+]

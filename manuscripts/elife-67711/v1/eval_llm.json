@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Value biases significantly affected behavioral performance across all task conditions. High-value trials showed higher accuracy (F(1,16) = 60.8, p < 0.001) and shorter median RTs (F(1,16) = 80.7, p < 0.001) compared to low-value trials. Task condition also significantly affected both accuracy and RTs, with high-coherence conditions being more accurate and the blocked high-coherence condition being fastest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 provide converging statistical evidence from repeated measures ANOVAs and pairwise comparisons demonstrating robust value and task condition effects on behavior. The large effect sizes (partial \u03b7\u00b2 = 0.79-0.84) and highly significant p-values support these behavioral findings, which are visualized in Figure 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Pre-stimulus motor preparation exhibited opposing value biases: high-value alternatives showed earlier onset (F(1,16) = 15.8, p = 0.001) and greater amplitude at 750 ms (F(1,16) = 17.6, p < 0.001), but low-value alternatives showed steeper buildup rates (F(1,16) = 14.7, p = 0.001). This pattern was observed in 14 of 17 individuals, resulting in a relative bias favoring high-value that peaked around 600 ms post-cue and then declined before stimulus onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C30 provide converging evidence from beta-band EEG measurements showing a complex pattern of countervailing biases. The statistical tests are appropriately powered, the effect is consistent across most individuals (Figure 2\u2014figure supplement 1), and the temporal dynamics are clearly visualized in Figures 2A and 2C. The negative buildup-rate bias is counterintuitive but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32"
+    ],
+    "result": "Following stimulus onset, a transient deflection in the LRP toward the cued (high-value) direction occurred approximately 100 ms after stimulus onset (F(1,16) = 20.3, p < 0.001), before sensory evidence began affecting motor preparation around 150 ms when the LRP for low-value trials reversed toward the correct direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C32 are supported by LRP measurements showing a clear value-biased 'bolus' response following stimulus detection. The statistical test (C31) provides strong evidence for this effect, and the temporal dynamics are consistent with a detection-triggered bias preceding discrimination-based processing. However, C32 relies partly on visual inspection, introducing some subjectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A neurally-constrained BurstIE model featuring anticipatory urgency biases, transient detection-triggered bias, and gradually increasing sensory evidence provided the best fit to both behavioral data and motor preparation dynamics. This model outperformed alternative models including those with stationary evidence, sustained bias, unconstrained urgency, and the standard DDM, as confirmed by AIC comparisons and jackknife analysis across all participant subsamples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37-C45 provide comprehensive model comparison evidence. The BurstIE model shows the lowest AIC (71) and highest Akaike weight (0.47), captures key qualitative features of RT distributions and CAFs (Figures 4D-F), and is robust to participant exclusion (Figure 4\u2014figure supplement 5). The systematic comparison of alternative models and neural constraint manipulations strengthens confidence in the model selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The neural decision architecture applies biases in opposing directions to different process components rather than uniformly enhancing high-value alternatives. This multiphasic biasing strategy\u2014combining positive starting point bias with negative urgency-rate bias and transient detection-triggered bias\u2014was identified through neurophysiological constraints and highlights the flexibility of fast-paced sensorimotor decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C58-C60 represent interpretive synthesis of the empirical findings. While these are higher-level conclusions, they are well-supported by the convergent evidence from EEG measurements (opposing biases in beta signals) and computational modeling (necessity of neural constraints for model performance). The claims appropriately acknowledge the critical role of neurophysiological data in revealing these dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Value bias was concentrated in the early part of the decision process, consistent with nonstationary accounts. The RDK stimulus properties (lag between onset and discriminatory evidence) may have provided a focal point for bias expression, though similar detection-discrimination signatures have been observed with other stimulus types (displacement, color).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by model comparisons favoring transient over sustained bias (Table 2) and citations to prior work. C49 is appropriately speculative about the role of RDK dynamics, while C50 provides evidence for generalization. The interpretation is consistent with the data while acknowledging uncertainty about the exact temporal profile of bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The dynamic shift from value- to evidence-driven accumulation resembles conflict tasks where automatic and controlled processes operate in parallel. However, the biased anticipatory motor preparation observed here differs from conflict tasks where anticipatory activity is unbiased, suggesting the value-biased responding is more strategic than automatic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 draw appropriate comparisons to conflict task literature with proper citations. The distinction between strategic and automatic processing is supported by cited evidence that beta buildup occurs earlier under speed pressure (C55). This represents valid theoretical contextualization of the findings, though it is interpretive rather than directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "A negative drift-rate bias alongside starting point bias has theoretical precedent in optimal decision strategies under certain conditions. The tradeoff between positive starting level bias and negative urgency-rate bias may arise because greater starting point bias necessitates steeper low-value urgency to allow overtaking when low-value represents the correct response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 provide theoretical context and speculation about functional significance. C56 is supported by citation to Moran (2015), but C57 is explicitly speculative about the mechanistic basis of the observed tradeoff. While plausible, this interpretation lacks direct empirical support and represents post-hoc theorizing about optimality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Beta-band motor preparation signals provide established markers of decision processes: they decrease with movement preparation, reflect effector-selective preparation predictive of choice, show biased starting levels with biased expectations, increase under speed pressure, reach similar threshold levels at response, and scale with evidence strength post-stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 establish the theoretical and empirical foundation for interpreting beta signals as decision variables. All claims are supported by appropriate citations to established literature. C24 is additionally supported by data in Figure 2B showing threshold convergence. These provide essential background knowledge for the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior research establishes that perceptual decisions involve evidence accumulation to a bound, with value biases traditionally implemented via starting point or drift rate modulation. Recent work highlights additional dynamic elements: anticipatory motor preparation can begin before stimulus onset, sensory evidence emerges gradually after initial detection, and serial detection-discrimination phases are reflected in motor preparation signals during fast decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 provide comprehensive literature review establishing the theoretical context. All claims are supported by appropriate citations to established work. These represent accurate characterizations of prior research that motivate the current study's approach, though they are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The standard DDM with stationary evidence accumulation and starting point or drift rate bias is insufficient for time-pressured decisions showing dynamic transitions from value- to evidence-based responses. Nonstationary drift rate models (dual-phase or gradually increasing evidence) have been required to capture fast value-biased behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 accurately characterize the DDM framework and its limitations for time-pressured decisions, supported by appropriate citations. These provide essential theoretical motivation for the modeling approach, though they represent synthesis of prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C69"
+    ],
+    "result": "Seventeen participants completed the study after one outlier exclusion. Sample size was justified based on prior effect sizes (d \u2265 1 for similar effects) providing 80% power to detect medium-to-large effects with 15-18 participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C69 provide transparent reporting of sample size, power analysis, and exclusions. The power justification is supported by citation to prior work (C62). One participant was appropriately excluded based on pre-specified outlier criteria (C69). The sample size is adequate for the reported effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The RDK stimulus had specific temporal and spatial properties: 16.7 dots/\u00b0/s density, one-third visible at any time, first coherent motion at 40 ms post-onset. Data exclusions were minimal: 0.23% of trials with RT < 50 ms and 0.21% without responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide detailed methodological specifications. These are direct statements about stimulus parameters and data handling that are clearly documented. The exclusion rates are appropriately low, suggesting good data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "EEG was recorded from 128 electrodes at 1024 Hz, filtered at 37 Hz, and processed with current source density transformation. Beta activity (14-30 Hz) was measured from individually selected electrodes based on strongest response-related decrease, with standard C3/C4 sites used for 9 of 17 participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 provide comprehensive methodological details about EEG acquisition and analysis. The procedures are standard and well-documented, with appropriate citations for specialized techniques (C72). Individual electrode selection (C74-C75) is justified for optimizing signal quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "For individually selected electrodes, contralateral beta reached a threshold at response across conditions. Ipsilateral beta diverged between blocked high-coherence and other conditions. Standard C3/C4 sites showed an offset between blocked and interleaved conditions, attributed to sessions being performed on different days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 report electrode-specific findings with appropriate caveats. C76 supports the threshold interpretation. C77 provides reasonable interpretation of ipsilateral patterns. C78-C79 identify a methodological issue (session effects) that was addressed through appropriate correction. The transparency about this issue strengthens confidence in the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Models were fit to group-average RT quantiles rather than individual participants because grand-average beta-amplitude dynamics are more robust than individual measures, which can be unreliable due to factors like brain geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 provide clear justification for the group-level modeling approach. The rationale is sound given the known variability in individual EEG signals and the need for reliable neural constraints. However, this approach prevents examination of individual differences in biasing strategies, which is appropriately acknowledged as a limitation.",
+    "result_type": "MINOR"
+  }
+]

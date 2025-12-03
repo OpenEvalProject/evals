@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors derived a normative model for decisions based on changing contexts (changes in evidence quality or reward during a single decision) using Bellman's equation to maximize trial-averaged reward rate. For simple tasks with sudden, expected within-trial changes, these normative strategies involve non-trivial, time-dependent changes in decision thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C17, and C18 collectively describe the core methodological contribution and are well-supported by the mathematical derivations presented in the Materials and methods section. The use of dynamic programming via Bellman's equation is standard and appropriately applied, with explicit derivations of the value function and threshold optimization procedures provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "For reward-change tasks with single changes in reward contingencies, dynamic programming produces normative thresholds with rich non-monotonic dynamics characterized by five distinct motifs. These include infinite thresholds when reward is initially very low (waiting for reward increase), thresholds collapsing to zero when reward is initially very high (responding before reward decrease), and intermediate non-monotonic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe specific findings from the reward-change task analysis shown in Figure 2. The characterization of five motifs is clearly illustrated in Figure 2C and panels i-v, with the mathematical framework supporting these emergent behaviors. The results follow logically from the optimization framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "For the inferred reward-change task, thresholds changed monotonically with monotonic shifts in expected reward. For SNR-change tasks, monotonic changes in evidence quality always produce monotonic changes in response behavior with only three optimal behavioral motifs. These findings suggest that changes in reward have a larger impact on normative strategy thresholds than changes in evidence quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by the analyses shown in Figure 2\u2014figure supplement 3 and Figure 3. The contrast between reward-change and SNR-change tasks is clearly demonstrated, with reward changes producing more diverse threshold dynamics (5 motifs) compared to evidence quality changes (3 motifs). However, C30 is an inference that could benefit from more quantitative comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C48"
+    ],
+    "result": "The normative model by definition maximizes reward rate when implemented perfectly, but perfect implementation may not be possible given biological constraints. When comparing noisy implementations, the relative benefits of the normative model depend on task conditions, with the highest performance differential occurring when reward changes from low to high values. The normative model's robustness arises from using infinite decision thresholds prior to reward change that prevent early noise-triggered responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C36, and C48 describe the robustness analysis shown in Figure 4. The simulations appropriately test model performance under noise, and the mechanistic explanation for robustness (infinite thresholds preventing premature responses) is well-supported by the data. The comparison across noise levels is systematic and the conclusions are justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C49"
+    ],
+    "result": "For the tokens task, where evidence quality changes gradually and commitment value increases over time, four distinct motifs of normative decision threshold dynamics were identified. Some parameter combinations produced collapsing thresholds similar to the UGM, but large regions of parameter space produced rich non-monotonic threshold dynamics that differed from the UGM. These thresholds are robust to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 and C49 describe the tokens task analysis shown in Figure 5. The task structure is clearly defined, and the identification of four motifs across parameter space is well-documented. The comparison to UGM predictions is appropriate, and the finding of non-monotonic dynamics in large parameter regions is clearly illustrated in Figure 5B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C19",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C50",
+      "C53"
+    ],
+    "result": "Decision models with adaptive thresholds outperform constant-threshold and urgency-gating models in accounting for human response times on the tokens task. The noisy Bayesian model provided better fits based on AICc and RMSE for most subjects in both slow and fast task versions. Most subjects best described by the noisy Bayesian model had parameters corresponding to non-monotonic decision thresholds, and subjects used distinct strategies for fast and slow conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C19, C42-C45, C50, and C53 describe the model fitting results shown in Figure 6. The use of AICc and RMSE for model comparison is appropriate, accounting for model complexity. The finding that most subjects are best fit by the normative model with non-monotonic thresholds is clearly demonstrated. However, the analysis would benefit from cross-validation or out-of-sample prediction tests to strengthen claims about model superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C47",
+      "C51",
+      "C52"
+    ],
+    "result": "Performance is maximized using decision thresholds that respond to and anticipate context changes. These adaptive thresholds exhibit several distinct temporal motifs depending on predicted and experienced context changes, perform robustly when implemented noisily, and normative behavior varies substantially across task parameters. Collectively, ideal observers and human subjects use adaptive and robust normative decision strategies in relatively simple decision environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C47, C51-C52 provide summary statements of the main findings. These are well-supported by the collective evidence from the reward-change, SNR-change, and tokens task analyses. The characterization of motifs, robustness to noise, and parameter-dependent behavior are all demonstrated across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Normative models have played a major role in understanding decision-making but have typically been derived for simple, stable conditions. While a previous model adapted evidence accumulation to fluctuations during a single decision, the evolution of commitment rules under dynamic conditions is not fully understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide background context and motivation for the study. These are appropriately supported by citations to established literature (C1-C3) and accurately identify a gap in current knowledge (C4) that motivates the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Classical decision models assume fixed thresholds that account for speed-accuracy tradeoffs but do not adequately describe decisions in changing contexts. Urgency-gating models use collapsing thresholds that are optimal in some cases but are sometimes implemented ad-hoc. Normative derivations typically maximize trial-averaged reward rate, but resulting time-varying thresholds are defined before evidence accumulation and cannot account for changes during deliberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 provide a comprehensive review of existing models and their limitations. These are well-supported by appropriate citations to the literature and accurately characterize the state of the field. The identification of limitations in existing approaches (C12, C14, C16) appropriately motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In dynamic environments, the most effective decision processes adapt to learned or predicted features of environmental dynamics. People commonly encounter context changes when making decisions, but real subjects likely use a mix of strategies rather than a single strategy. Normative analysis can expand and provide insights into the range of possible behaviors in a systematic way.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C54-C56 provide discussion context and methodological perspective. C46 is supported by citations to prior work, C54 is general knowledge, C55 is appropriately cited speculation, and C56 is a reasonable methodological argument about the value of normative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Several cortical regions may contribute to threshold formation, including prefrontal cortex, dorsal premotor area, and superior colliculus. Urgency signals may be detectable in recordings from basal ganglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide neuroscience context and are appropriately supported by citations to relevant studies. These claims acknowledge the neural implementation questions raised by the modeling work but do not make strong claims beyond what is supported in the cited literature.",
+    "result_type": "MINOR"
+  }
+]

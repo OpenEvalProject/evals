@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Feedforward neural networks modulated by slow and spatially diffuse feedback can dynamically generate invariant sensory representations in a dynamic blind source separation task. The modulated network successfully disentangles sources even when context changes, with transient errors that quickly resolve as the modulator infers the new context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C15, C19-C22 collectively demonstrate that feedback-modulated networks solve the dynamic blind source separation task. The computational modeling (Figures 1-3) shows successful source separation across contexts with appropriate temporal dynamics. The mechanism is well-characterized through multiple model variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The timescale of feedback modulation affects task performance only when comparable to the timescale of contextual changes. Slower modulation produces larger initial errors but reduces weight fluctuations, creating a speed-accuracy tradeoff. The modulatory system requires access to sensory stimuli for robust performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by systematic analyses in Figure 2 showing how modulation timescale affects signal clarity and weight dynamics. The experiments with different input configurations (C28-C29) demonstrate architectural requirements. The tradeoff is quantitatively characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Only a few distinct feedback signals with spatially broad effects are needed for clean source separation across contexts, consistent with low-dimensional context representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by Figure 3d-e showing that performance is maintained with as few as 4 feedback signals and broad spatial modulation. This demonstrates biological plausibility of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "Context invariance emerges at the population level rather than in individual neurons. Single neurons are strongly modulated by context and do not consistently represent individual sources, but the population activity contains a context-invariant subspace that can be decoded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33, C35-C36, C38 are supported by Figure 4 showing low single-neuron signal clarity but high population-level decoding performance. The lack of correlation between neuron signal clarity and readout contribution (C36) confirms population-level coding. Linear decoding analysis validates the invariant subspace.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C41",
+      "C42",
+      "C88"
+    ],
+    "result": "Feedback modulation dynamically reorients the manifold of neural activity to maintain an invariant subspace across contexts. Following contextual changes, the representation initially changes within the old manifold, then feedback reorients it to re-establish invariance. Similar contexts evoke similar subspace orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39, C41-C42, C88 are supported by Figure 5 showing subspace reorientation through freezing experiments and quantitative angle measurements. The mechanism is clearly demonstrated through visualization in readout space and principal component space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The feedback modulation mechanism generalizes to a biologically constrained Dalean network with Dale's law, positive firing rates, and hierarchical organization. Performance does not depend on specific architectural details like modulation targets or number of inhibitory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by Figure 6 and supplements showing successful task performance in the Dalean model. The robustness to architectural variations (C44) is demonstrated in Figure 6\u2014figure supplement 1. Population-level mechanisms replicate those in simpler models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C87"
+    ],
+    "result": "The higher-level population provides a linear representation of both stimuli and context, while modulatory units convey a nonlinear representation of context that requires nonlinear decoding methods. Linear decoding from modulatory units is poor despite their clear covariation with context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C48-C52, C54-C57, C87 are supported by Figure 7 showing differential decoding performance across populations and decoder types. The nonlinear representation in modulatory units (C52, C54) is demonstrated through comparison of linear vs. nonlinear decoders and inverse context decoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The dynamic blind source separation task cannot be solved by feedforward networks or standard blind source separation algorithms because it requires dynamic inference of context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by Figure 1\u2014figure supplement 1 showing failure of linear regression, multilayer feedforward networks, and even networks with temporal sequences as input. This establishes the necessity of the feedback modulation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The network is robust to noise (degrading only near SNR=1), generalizes across different source signals and numbers of sources seen during training, and can interpolate between training frequencies but fails on qualitatively different sources or contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by Figure 1e and supplements 2-6 showing systematic robustness tests. The interpolation vs. extrapolation distinction (C25) is clearly demonstrated, establishing the learned internal model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The model predicts that context invariance may only be evident at the population level, requiring population recordings and neural decoding to detect. Feedback manipulation experiments could test the mechanism's contribution at different hierarchical levels, with larger roles expected in higher cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C86 are predictions and proposed experiments rather than demonstrated results. While they follow logically from the model findings (C82-C83 from Figure 4 results), they represent testable hypotheses for future work rather than current evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C10"
+    ],
+    "result": "Sensory systems reliably process stimuli despite contextual changes. While feedforward models attribute context invariance to hierarchical feature extraction, the role of feedback mechanisms in context-invariant processing is not well understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C8, C10 establish the conceptual framework and motivation. These are general knowledge claims about sensory processing and existing models, appropriately supported by the literature review and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Recent work has elucidated context-dependent processing via recurrent feedback. Feedforward models successfully learn perceptual tasks but neglect abundant feedback pathways that shape sensory processing. Incorporating feedback increases model flexibility and fit to neural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C11-C14 summarize prior work on feedforward models and feedback mechanisms, appropriately supported by citations. These establish the scientific context and gap addressed by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In auditory processing, bottom-up frequency segregation provides initial source separation, but complex sounds require top-down processes. Neural hallmarks of invariant object recognition exist at population and single-neuron levels, classically attributed to feedforward feature extraction, though recent work highlights recurrence and feedback roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 provide domain-specific context for the model, appropriately supported by citations to auditory processing and visual object recognition literature. The discussion of feedforward vs. feedback mechanisms (C64-C66) is balanced and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Neuronal gains can be modulated through multiple mechanisms including classical neuromodulators and layer 1 feedback projections. Recent evidence indicates modulation can be spatially specific and operate on sub-second timescales. Higher-order thalamic nuclei are positioned to integrate inputs and mediate modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C79 review biological mechanisms of gain modulation, well-supported by extensive citations to anatomical and physiological studies. This establishes biological plausibility of the modeling assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "For tasks requiring temporal integration, thalamus may not perform contextual inference due to limited recurrent connectivity. Contextual inference may occur in higher-order cortical areas and be relayed via thalamus or direct cortico-cortical connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 are speculative inferences about neural implementation sites. While C80 is supported by a citation about thalamic connectivity, C81 is explicitly speculative. These represent plausible hypotheses rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Gain modulation enables various population-level computations. Previous models learned gain factors individually per context via slow mechanisms, whereas the current model uses a recurrent network to dynamically infer context and provide rapid feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 compare the current approach to prior work on gain modulation, appropriately supported by citations. The distinction between static learning and dynamic inference (C92-C93) is a valid conceptual contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The use of simplistic stimuli allowed focus on population-level mechanisms while avoiding computational challenges of complex stimuli and deep hierarchies. Training concentrated on optimizing the modulatory system and readout, with random sensory representations sufficient for simple stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 describe modeling choices and observations from training, supported by the authors' experience. Claims C97-C98 are reasonable speculations about more complex stimuli. This appropriately acknowledges limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The model uses an LSTM for feedback computation without providing a biologically plausible implementation. Questions of how feedback signals could be computed biologically and learned via local rules remain for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 acknowledge important limitations of the modeling approach. This is an appropriate and honest assessment of what the model does and does not address regarding biological implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "The feedback loop dynamically maintains an invariant subspace in the population representation to solve the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by Figures 4-5 demonstrating the invariant subspace and its maintenance through feedback. This is a core mechanistic finding, though it overlaps substantially with the more detailed result grouping C5, C33, C35-C36, C38.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The feedback-driven mechanism resembles meta-learning with inner and outer loops. The inner loop (unsupervised context inference) and outer loop (modulatory system optimization) could potentially use reinforcement learning or unsupervised priors rather than supervised learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 make a conceptual comparison to meta-learning supported by citations. Claim C69 is speculative about alternative learning mechanisms. While the comparison is reasonable, the alternative learning approaches are not demonstrated.",
+    "result_type": "MINOR"
+  }
+]

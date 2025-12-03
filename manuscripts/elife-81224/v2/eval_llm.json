@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study compiled and analyzed 6065 whole cancer genomes from two large datasets (PCAWG and HMF) across 32 cancer types, evaluating 736 DDR genes for both mono- and biallelic loss-of-function events. A total of 8408 biallelic DDR gene deficiencies were identified, with TP53 being the most frequently affected gene (29% of tumors), while 70% of DDR genes showed biallelic deficiency in fewer than 10 tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide comprehensive data on the study cohort and LOF annotation results. The numbers are explicitly stated with appropriate references to figures and supplementary files. The data collection and annotation methodology appears sound, with clear definitions of biallelic and monoallelic events based on variants and copy number changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C35",
+      "C36"
+    ],
+    "result": "The study developed predictive models for DDR gene deficiencies and shortlisted 48 models across 24 genes based on PR-AUC-E >0.2 and FDR <0.05. These 24 genes showed deficiencies that could be predicted with good accuracy from genome-wide mutational patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C35, and C36 consistently describe the model development and selection criteria. The discrepancy between 145 genes mentioned in C10 (from abstract) and the actual analysis of 535 models (C23-C24, C94) is explained by filtering criteria. The shortlisting thresholds are clearly defined and applied systematically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C91"
+    ],
+    "result": "BRCA2 deficiency in HMF breast cancer was strongly associated with deletions at sites of microhomology (median 608 vs 81 in wild-type). The predictive model achieved AUROC=0.93 and PR-AUC-E=0.29 in HMF data, with PR-AUC-E=0.37 when tested on PCAWG data, demonstrating generalizability across metastatic and non-metastatic tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 and C91 provide detailed validation of the BRCA2 model with specific performance metrics and cross-dataset validation. The high proportion of germline variants (14/17 biallelic events) supports forward causality as stated in C91. The model recapitulates known biology and achieves clinically relevant performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Nine predictive models for BRCA1/2 deficiency were identified across multiple cancer types. All BRCA2 models were predominantly predicted by deletions at microhomology sites, while BRCA1 deficiency in ovarian cancer was exclusively associated with tandem duplications (1-10 kb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe the BRCA1/2 models with clear mechanistic distinctions. The different mutational signatures for BRCA1 vs BRCA2 align with known biology (C40 cites supporting literature). The models recapitulate expected associations mentioned in the introduction (C18-C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CDK12 deficiency in prostate cancer was associated with increased mid- and large-sized tandem duplications (100 kb to 10 Mb) and could be predicted with high accuracy (PR-AUC-E=0.73, AUROC=0.97). Nine of 10 CDK12-deficient patients were treated with drugs for castration-resistant disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C49-C51 provide strong evidence for CDK12 deficiency prediction with excellent performance metrics. The association with tandem duplications is consistent with prior literature (C22). The clinical context (C51) supports the relevance of these findings, though the small sample size (n=10) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Eleven predictive models of monoallelic TP53 deficiency were identified across multiple cancer types. TP53 deficiency was associated with significantly increased numbers of structural variants genome-wide (except in skin cancers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 describe TP53 models with appropriate statistical testing (Wilcoxon rank-sum test) and cite supporting literature (C21). The exception for skin cancers is noted, suggesting context-dependent effects. The focus on monoallelic events is justified by known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Eight predictive models for monoallelic gene deficiencies were identified in HMF colorectal cancers, with MSH3 showing the highest performance (PR-AUC-E=0.62, AUROC=0.94). Hypermutated samples harbored 22% of all DDR LOF events (5.9-fold enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C46 describe colorectal cancer models, but the manuscript explicitly discusses potential reverse causality for most of these models (except MSH3). The authors suggest these associations may be driven by MSH3 co-mutation creating a hypermutator phenotype rather than representing true forward causality. This uncertainty undermines confidence in these as genuine predictive models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "MSH6 biallelic deficiency in prostate cancer (7/342 patients) could be predicted with high accuracy (PR-AUC-E=0.25, AUROC=0.98) by enrichment of deletions in repetitive DNA, consistent with mismatch repair deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 describe a well-characterized association between MSH6 deficiency and microsatellite instability. The performance metrics are strong despite small sample size. The finding is consistent with known MMR biology (C20) and has clinical relevance for immunotherapy response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ATRX and IDH1 deficiency in CNS cancers were both predicted by decreased SBS signature 8 mutations, with 7 of 11 IDH1-mutated tumors also harboring ATRX mutations (28-fold enrichment, p=1.2\u00d710\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe novel associations with appropriate performance metrics and statistical testing. The co-mutation pattern (C56) is well-documented in gliomas. However, the biological interpretation of decreased SBS signature 8 remains speculative, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "SMARCA4 biallelic deficiency in cancers of unknown primary (8/77 tumors) could be predicted with PR-AUC-E=0.44 and AUROC=0.85 using SBS signature 27 or signature 4 (smoking-associated). Tumors with biallelic SMARCA4 LOF showed significantly lower SMARCA4 expression (p=0.0054).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C64 describe an interesting association, but the authors explicitly note potential ascertainment bias and suggest further studies are needed. The high correlation between signatures 27 and 4 (C59) despite low compositional similarity raises questions about signature decomposition accuracy. The expression validation (C64) supports some LOF events but not all predicted cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Monoallelic CDKN2A deficiency in skin cancer could be predicted with PR-AUC-E=0.28 and AUROC=0.82, based on enrichment of deletions at microhomology sites, non-clustered inversions (100 kb-1 Mb), and SBS signature 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe a novel predictive model for CDKN2A deficiency with reasonable performance. The association with known melanoma predisposition (C67) supports biological plausibility. The mutational features suggest compromised DNA repair mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "HERC2 deficiency in HMF skin cancer could be predicted for both biallelic (PR-AUC-E=0.24, AUROC=0.73) and monoallelic (PR-AUC-E=0.23, AUROC=0.66) events, primarily by enrichment of deletions in non-microhomologous/non-repetitive regions. Seven of nine biallelic HERC2-deficient tumors also had monoallelic TP53 mutations (8-fold enrichment, p=4.6\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe a novel association with appropriate statistical validation. The co-mutation with TP53 (C72) is biologically plausible given HERC2's role in P53 regulation (C71). The similar performance for mono- and biallelic events suggests haploinsufficiency may be relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PTEN deficiency could be predicted in both CNS (PR-AUC-E=0.37, AUROC=0.74) and uterine cancers, with different mutational features: depletion of non-clustered inversions (10-100 kb) for biallelic uterine, depletion of tandem duplications (10-100 kb) for monoallelic uterine, and depletion of deletions (1-10 kb) and translocations for CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe tissue-specific PTEN deficiency models with cross-dataset validation mentioned in the text. The different mutational features across tissues suggest context-dependent effects. PTEN is a well-established tumor suppressor (C74), supporting biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Monoallelic ARID1A LOF in metastatic prostate cancer could be predicted with PR-AUC-E=0.208 and AUROC=0.72 by depletion of SBS signature 8 mutations. ARID1A loss impairs RNA polymerase II pausing during transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe a novel association with modest performance. The depletion of SBS signature 8 (associated with BRCAness) is interesting but mechanistically unclear. The functional consequence cited in C79 provides biological context but doesn't directly explain the mutational pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Biallelic BAP1 deficiency in metastatic skin cancers could be predicted with PR-AUC-E=0.26 and AUROC=0.80, primarily by decreased SBS signature 7 (UV-induced) and elevated SBS signature 30 (inefficient base excision repair).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 describe a BAP1 model, but the opposite effects of highly similar signatures (cosine similarity=0.72) raises concerns about signature decomposition accuracy. The biological interpretation is complicated by potential technical artifacts in signature assignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Biallelic MEN1 loss in metastatic neuro-endocrine cancers was predicted with PR-AUC-E=0.22 and AUROC=0.82 by fewer mutations in SBS signatures 16 (unknown etiology) and 9 (POLH hyperactivity). All 10 MEN1-deficient patients had somatic LOH combined with pathogenic variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe a MEN1 model with exclusively somatic events, contrasting with the typical germline MEN1 syndrome. The authors note this may represent a different disease phenotype. The predictive features involve signatures of uncertain biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "RB1 biallelic LOF in metastatic urinary tract cancers could be predicted with PR-AUC=0.47 and AUROC=0.84 by increased UV-related SBS signature 7 mutations, though this signature appears in multiple cancer types without UV exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 describe an RB1 model, but the authors explicitly note that SBS signature 7 appears in non-UV-exposed tissues, questioning the biological interpretation. The association may not reflect true UV exposure or may represent signature misassignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study used LASSO regression with alpha=1 for feature selection, k-fold cross-validation (k=number of mutated tumors), and permutation testing (minimum 10,000, up to 30,000 permutations) with Benjamini-Hochberg FDR control. Features were limited to one per 10 mutated tumors to prevent overfitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C92-C96 describe the statistical methodology in detail. The approach is generally sound with appropriate cross-validation and permutation testing. The feature limitation rule (C93) is a reasonable heuristic to prevent overfitting given small sample sizes. The use of CADD score >25 (0.3% most pathogenic) is conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The study restricted analysis to DDR genes with >5 biallelic LOF events (n=194 gene-cancer type combinations) or >10 monoallelic LOF events (n=341 combinations) in either PCAWG or HMF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 clearly state the filtering criteria used to focus on gene-cancer type combinations with sufficient events for modeling. These thresholds are reasonable given the need for adequate sample sizes, though they may miss rare but important associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The study excluded age-related SBS signature 1 to avoid confounding by patient age, but retained signature 5 despite age associations because of its link to hormone receptor-positive breast cancer subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe methodological decisions about signature inclusion with clear rationale. The exclusion of signature 1 is justified to prevent models from learning age rather than repair deficiency. The retention of signature 5 is supported by citation (C90).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "BRCA1/2 LOF mutations showed opposite survival associations across cancer types: improved survival in ovarian cancers (BRCA1 HR<0.42, p<0.093; BRCA2 HR<0.24, p<0.017) but decreased survival in primary breast cancer (BRCA2 HR>9.30, p<0.004). This may reflect differences in platinum-based treatment practices across cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C101 describe survival analyses with nominally significant results, but most p-values do not reach conventional significance thresholds (p<0.05). The interpretation (C100-C101) is speculative and based on treatment practice differences rather than direct evidence. Small sample sizes and lack of treatment data limit confidence in these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study compiled 736 DDR genes from three sources and applied stringent variant filtering: gnomAD frequency <0.5%, CADD score \u226525 for pathogenic variants, 10-25 for VUS, <10 for benign. LOH was defined as minor allele copy number <0.2, deep deletions as total copy number <0.3. Single LOH events were not considered monoallelic losses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 describe the variant annotation and filtering methodology in detail. The criteria are generally conservative and well-justified. The decision not to consider single LOH as monoallelic loss (C109) is reasonable given the high frequency of such events (~25\u00d7 higher than deep deletions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Mutational patterns were characterized using Signature Tools Lib for SBS signatures (organ-specific or COSMIC 1-30), indels (categorized by microhomology, repetitiveness), and structural variants (categorized by clustering, type, and size in five intervals from 1 kb to >10 Mb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 comprehensively describe the mutational feature extraction methodology. The use of established tools (Signature Tools Lib) and clear categorization schemes supports reproducibility. The definitions of microhomology (C113) and clustering (C116) are mechanistically motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study builds on established knowledge that DNA repair deficiencies modulate therapy response: BRCA1/2 deficiency confers PARP inhibitor sensitivity, MMR deficiency confers checkpoint inhibitor sensitivity but temozolomide resistance, and CDK12 mutations suggest CHK1 inhibitor sensitivity. These deficiencies are associated with characteristic mutational patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 accurately cite prior literature establishing the rationale for the study. The cited associations between repair deficiencies and mutational patterns (C18-C22) are well-established in the field and provide the foundation for the systematic approach taken in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

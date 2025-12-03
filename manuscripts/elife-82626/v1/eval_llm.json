@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Burn tissue shows altered T cell subset proportions compared to non-burn tissue. While total CD3+ T cell frequencies and counts are unchanged, burn tissue has significantly higher CD4+ T cells (62.3% vs 35.4%, p=0.02) and lower CD8+ T cells (23.0% vs 53.4%, p<0.0001) compared to non-burn tissue. No differences were observed in unconventional T cell populations (iNKT, \u03b3\u03b4 T cells, MAIT cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are supported by flow cytometry data with appropriate statistical testing (Mann-Whitney U test). The findings are internally consistent and confirmed by both proportional and absolute count measurements. Sample sizes (12 burn, 7 non-burn) are modest but adequate for the observed effect sizes and p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Conventional CD4+ and CD8+ T cells in burn tissue exhibit altered activation markers and enhanced pro-inflammatory cytokine production. Both subsets show significantly lower CD69 (tissue residency marker) and higher CD38 (chronic activation marker) expression in burn tissue. Upon PMA-ionomycin stimulation, burn tissue T cells produce significantly more IFN-\u03b3 and TNF-\u03b1 than non-burn tissue T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are well-supported by flow cytometry data with statistical significance (p<0.05 for all comparisons). The use of PMA-ionomycin as a positive control is appropriate for assessing cytokine production capacity. The findings are consistent across both CD4+ and CD8+ subsets, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Unconventional T cells (MAIT and \u03b3\u03b4 T cells) in burn tissue show similar patterns to conventional T cells with lower CD69 expression, higher CD38 expression, and enhanced pro-inflammatory cytokine production upon stimulation. MAIT cells show significantly higher IFN-\u03b3 and TNF-\u03b1 production after stimulation, but no differences in IL-10 or IL-17A. \u03b3\u03b4 T cells also produce more IFN-\u03b3 and TNF-\u03b1 upon stimulation, with elevated baseline TNF-\u03b1 in unstimulated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 are supported by flow cytometry data with appropriate statistical testing. The parallel findings between conventional and unconventional T cells strengthen the overall conclusion about burn-induced T cell alterations. The lack of IL-17A differences in MAIT cells is notable given prior literature suggesting IL-17A's role in tissue repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Single-cell RNA sequencing reveals distinct transcriptional profiles between burn and non-burn T cells. Burn and non-burn T cells cluster separately into 15 populations. Non-burn T cells (cluster 0) express tissue residency markers (IL7R, LGALS1, CD69), while burn T cells (cluster 1) express homing receptors (SELL, S1PR1, CCR7). Burn tissue shows lower CD8+ T cell proportions and reduced CD103+CD69+ T cells, with decreased expression of effector molecules (IFNG, TNF, NAMPT, GZMB, GZMH, PRF1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 are supported by scRNA-seq data with highly significant adjusted p-values (<9e-330 for key genes). The findings confirm flow cytometry results and provide additional transcriptional detail. However, the sample size is small (3 burn, 3 non-burn), and the targeted panel approach limits genome-wide assessment. The apparent contradiction between lower baseline effector molecule expression (C83) and higher cytokine production upon stimulation (C38) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Pathway analysis reveals that burn T cells are associated with T cell activation and cytokine production pathways, while showing negative association with apoptotic processes. KEGG analysis indicates positive association with Th17, Th1, and Th2 differentiation, and negative association with cytokine-cytokine receptor interactions and T cell receptor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by GO and KEGG pathway analyses. However, pathway analysis results should be interpreted cautiously as they are derived from the same limited scRNA-seq dataset. The biological interpretation of some findings (e.g., negative association with TCR signaling despite evidence of activation) requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CD4+ T cell subsets show distinct clustering patterns between burn and non-burn tissue. Non-burn CD4+ T cells (cluster 0) express tissue residency markers (IL7R, CD69, LGALS1), while burn CD4+ T cells (cluster 1) express homing markers (S1PR1, CCR7, SELL). A Treg population (cluster 2) is identified in non-burn tissue expressing FOXP3 and CTLA4. Burn CD4+ T cells show lower expression of effector molecules (NAMPT, GZMA, PRF1, TNF, CCL5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 are supported by scRNA-seq and AbSeq data. The identification of distinct CD4+ subsets is consistent with the overall findings. However, the lower expression of effector molecules in burn tissue (C94) appears contradictory to the higher cytokine production upon stimulation observed by flow cytometry, suggesting differences between baseline transcription and functional capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CD8+ T cells cluster separately based on burn status, with non-burn CD8+ T cells (cluster 0) showing upregulation of cytotoxic molecules (GZMK, GZMH, GNLY). Burn tissue CD8+ T cells express higher levels of homing markers (ITGA4, SELL, CCR7, SELPLG, S1PR1) and lower CD69. Burn CD8+ T cells show lower expression of NAMPT, GZMB, GZMH, TNF, and IL32, but higher CCL5 and GZMA compared to non-burn CD8+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are supported by scRNA-seq and AbSeq data. The findings parallel those for CD4+ T cells, strengthening the overall conclusion about burn-induced shifts from tissue-resident to circulating phenotypes. The differential expression of cytotoxic molecules between burn and non-burn tissue is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "MAIT cells from burn tissue cluster separately from non-burn tissue and show a highly cytotoxic phenotype. Burn tissue MAIT cells (cluster 0) express cytotoxic genes (PRF1, GZMK, NKG7) and show high RORC expression. Non-burn MAIT cells (cluster 1) show upregulation of CD4, ICOS, and TIGIT, suggesting a MAIT Treg lineage. Burn MAIT cells express lower CD69 and higher S1PR1, CCR7, and notably CXCR6, suggesting a potential trafficking mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 are supported by scRNA-seq data. The identification of a cytotoxic MAIT cell population in burn tissue is novel and well-documented. However, C110 (CXCR6 as trafficking mechanism) is speculative and requires functional validation. The identification of FOXP3+ MAIT cells (C105) is interesting but based on limited data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "\u03b3\u03b4 T cells show six distinct populations with burn tissue \u03b3\u03b4 T cells exhibiting high cytotoxic molecule expression (PRF1, GZMB) and homing markers (SELL, CCR7, S1PR1). Cluster 0 from burn tissue expresses KRLB1 and IL18RAP, indicating a V\u03b42 \u03b3\u03b4 T cell population transcriptionally similar to MAIT cells. Burn \u03b3\u03b4 T cells show higher ITGAE and CXCR6 expression and lower CD25, CD69, and PD1 expression compared to non-burn tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C121 are supported by scRNA-seq and AbSeq data. The identification of a V\u03b42 \u03b3\u03b4 T cell population (C114) with transcriptional similarity to MAIT cells is well-supported by citations. The overall pattern of cytotoxic and homing gene upregulation is consistent with findings in other T cell subsets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C147"
+    ],
+    "result": "Multi-omics analysis suggests that T cells in burn tissue shift from a homeostatic tissue-resident phenotype to a pro-inflammatory circulating phenotype, with unconventional T cells showing higher cytotoxic capacity. This represents the main conclusion integrating flow cytometry, scRNA-seq, and AbSeq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C147 represent the primary conclusions of the study and are supported by converging evidence from multiple experimental approaches. The shift from tissue-resident (CD69+, CD103+) to circulating (CCR7+, S1PR1+, SELL+) phenotypes is well-documented across multiple T cell subsets. However, the functional significance of this shift for wound healing and infection risk requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C127",
+      "C135",
+      "C136",
+      "C137",
+      "C143"
+    ],
+    "result": "The authors propose several mechanistic hypotheses about the functional consequences of burn-induced T cell alterations, including potential contributions to wound healing and infection responses, migration of peripheral blood T cells to burn sites, and MAIT cells acting as first responders to infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127, C135-C137, and C143 are speculative hypotheses based on the observed data and cited literature. While these hypotheses are reasonable given the findings, they lack direct experimental validation in the current study. These represent important directions for future research but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors compare their findings to mouse models of burn injury, noting both similarities (decreased CD69+ T cells, increased IFN-\u03b3+ T cells) and differences (no change in total T cells or \u03b3\u03b4 T cells in humans vs. increases/decreases in mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 accurately represent findings from cited mouse studies and appropriately contextualize the current human data. The comparison highlights important species differences that may affect translational relevance. This discussion is well-supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors acknowledge several study limitations including small sample size preventing stratification by sex and age, collection of samples from different body regions with potential intrinsic differences, and variations in dermis thickness between burn and non-burn samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 represent appropriate acknowledgment of study limitations with supporting citations. These limitations are important for interpreting the results and are honestly disclosed. The small sample size (n=3 per group for scRNA-seq) is a significant limitation that affects the generalizability of findings.",
+    "result_type": "MINOR"
+  }
+]

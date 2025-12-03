@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript provides background on prime editing technology, describing it as a CRISPR/Cas9-based tool that allows insertions, deletions, and substitutions without double-stranded breaks, but with typical editing rates of only 10-30% and requiring extensive optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C14) accurately summarize established knowledge about prime editing technology, supported by appropriate citations to the original literature. The characterization of prime editing efficiency, mechanism, and optimization requirements is consistent with published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Previous reporter systems for base editing and prime editing had significant limitations, being restricted to few target sequences or showing low signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately characterize prior work on editing reporters, supported by appropriate citations. This establishes the context and need for the PEAR system developed in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PEAR is based on the BEAR system design, using a split GFP with an inactive splice site that can be activated by prime editing, with the key innovation being placement of the PAM on the complementary strand to allow unrestricted sequence variation across the entire spacer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27, C90-C92 describe the PEAR design and its relationship to BEAR. The design is clearly illustrated in Figure 1A and Figure 1\u2014figure supplement 1, and the key innovation of PAM placement is well-supported. The comparison to BEAR is appropriate given prior work by the same group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "PEAR has no background fluorescence, specifically reports prime editing events, and provides unprecedented flexibility for sequence variation, allowing all types of edits (insertions, deletions, substitutions) and various active splice site sequences to be tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C28, C37-C41, C93-C97 are well-supported by experimental data in Figures 1C, 1D, and Figure 1\u2014figure supplement 1E. The specificity experiment (C37) convincingly shows that only PE2 (not nuclease or nickase) restores fluorescence. The flexibility claims are demonstrated across multiple sequence variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Optimization experiments with PEAR-GFP identified PBS-10 and RT-24 as optimal, with complementary strand nicking at position +17 generally most effective, and confirmed that PBS and RT length effects are independent, consistent with genomic prime editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 are directly supported by the heatmap data in Figure 1B. The systematic testing of 18 conditions (3 PBS \u00d7 3 RT \u00d7 2 nicking conditions) provides robust evidence. The conclusion that PEAR reflects genomic prime editing factors is reasonable but requires validation (addressed in subsequent experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C81"
+    ],
+    "result": "Comparison of prime editing on PEAR plasmids versus genomic targets in cell lines showed strong correlations (r=0.89-0.93) across three different targets, with over 250 conditions tested, confirming that PEAR accurately reflects the factors governing genomic prime editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51, C81 are strongly supported by the comparative data in Figure 2 and Figure 2\u2014figure supplement 2. The high correlations (r=0.89-0.93) across three independent targets provide convincing evidence. The lower absolute efficiency in cell lines (C45) is reasonably attributed to plasmid copy number differences. This is a critical validation of the PEAR system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Prior work has shown that surrogate markers subjected to the same type of genetic modification result in higher enrichment than transfection markers alone, possibly due to cell-to-cell variability in editing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 accurately summarize prior work on enrichment strategies, supported by appropriate citations. C54 is appropriately labeled as speculative regarding the mechanism. This provides context for testing PEAR as an enrichment marker.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C78"
+    ],
+    "result": "In HEK-BEAR-mScarlet cells, PEAR enrichment substantially outperformed transfection marker enrichment, increasing edited populations from 18% to 57-76% compared to 18% to 24% with transfection markers, representing approximately a 3-fold average improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C78 are directly supported by data in Figure 3A and summarized across experiments. The comparison between enrichment strategies is clear and statistically significant. This demonstrates proof-of-concept for PEAR enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "PEAR enrichment was effective across multiple cell lines (HEK293T, K562, U2OS, HUES9), with 2-7.8 fold increases in editing efficiency, including a particularly dramatic improvement in hard-to-edit HUES9 cells (from <4% to 28%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C87-C89 are supported by data in Figure 3C. The testing across four cell lines with different editing susceptibilities strengthens the generalizability. The HUES9 result is particularly compelling given the low baseline efficiency. Statistical significance is shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "PEAR enrichment increased indel frequency in 8 of 13 edits, but the increases were generally small and specificity (editing%/indel%) was maintained or improved in most cases, with no compromise to on-target specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C64 are supported by data in Figures 3D-E. The analysis of specificity is appropriate, though the definition (editing%/indel%) could be clearer. The conclusion that specificity is not compromised is reasonable given the data, though modest increases in indels are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Off-target analysis of 15 predicted sites showed detectable editing at only 1 site, with PEAR enrichment not increasing off-target editing or indels at the remaining 14 sites to detectable levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by data in Figures 3F-G. The off-target analysis is appropriately conducted on previously reported sites. The finding that PEAR enrichment does not substantially increase off-target effects is important for practical application, though the analysis is limited to predicted sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Integration of active PEAR plasmid into the genome is minimal, but unedited plasmids may still integrate at low efficiency, so clones should be checked for plasmid absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by data in Figure 3\u2014figure supplement 1. C66 is appropriately cautious about potential integration of unedited plasmids. C67 is a reasonable recommendation, and the authors provide PCR primers for detection. This addresses an important practical concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "To minimize off-target effects, PEAR-GFP-2in1-2.0 was developed using EGFP site 2 (with no detectable off-targets by GUIDE-seq) and a 12-nt PBS, and successfully enriched nine additional targets with various edit types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by GUIDE-seq data in Figure 4A and enrichment data in Figures 4B-E. The GUIDE-seq validation is rigorous and addresses the concern raised in C68. The successful enrichment of nine diverse targets demonstrates broad applicability of the optimized system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73"
+    ],
+    "result": "Using PEAR-GFP-2in1-2.0, editing rates increased 2.1-4.6 fold, reaching up to 84%, without decreasing specificity for any of nine target sites tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C72-C73 are directly supported by data in Figures 4C-E. The 84% maximum editing rate is impressive and represents a substantial improvement. The maintenance of specificity across all nine targets strengthens confidence in the approach. Statistical significance is shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C79",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "PEAR can be used as a surrogate marker for enriching prime edited cells and as a versatile tool for characterizing prime editors, with the flexibility to systematically examine sequence features affecting editing efficiency in ways not possible with genomic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C79-C80, C82-C83 are supported by the collective experimental data. The enrichment capability is demonstrated in Figures 3-4, and the characterization utility is shown in Figures 1-2. The claim about systematic investigation (C83) is reasonable given the demonstrated flexibility, though further examples would strengthen this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors discuss the broader context of prime editing adoption, noting limited practical use in mammalian cells despite translation to other systems, and suggest PEAR may facilitate wider adoption and future development of improved prime editors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C77, C84-C86 are primarily speculative or contextual. C74 is supported by citations. C75-C76 represent observations/speculation about field adoption. C77 is a logical inference. C84-C86 are speculations about future impact that cannot be evaluated from current data. These are reasonable discussion points but not experimental results.",
+    "result_type": "MINOR"
+  }
+]

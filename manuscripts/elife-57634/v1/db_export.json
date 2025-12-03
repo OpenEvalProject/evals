@@ -1,0 +1,1447 @@
+{
+  "submission": {
+    "id": "9e2189f8-50f1-4c2f-a997-cea1deab65fb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:43:05.011468Z",
+    "updated_at": "2025-12-03T08:43:05.011468Z"
+  },
+  "content": [
+    {
+      "id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "submission_id": "9e2189f8-50f1-4c2f-a997-cea1deab65fb",
+      "content_type": "manuscript",
+      "content_text": "# Aversive stimuli bias corticothalamic responses to motivationally significant cues\n\n## Authors\n\n- Federica Lucantonio<sup>1</sup>\n- Eunyoung Kim<sup>1</sup>\n- Zhixiao Su<sup>1</sup>\n- Anna J Chang<sup>1</sup>\n- Bilal A Bari<sup>1</sup>\n- Jeremiah Y Cohen<sup>1</sup> ([ORCID: 0000-0002-4768-7124](https://orcid.org/0000-0002-4768-7124)) \u2020\n\n### Affiliations\n\n1. The Solomon H Snyder Department of Neuroscience, Brain Science Institute, Kavli Neuroscience Discovery Institute, The Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaking predictions about future rewards or punishments is fundamental to adaptive behavior. These processes are influenced by prior experience. For example, prior exposure to aversive stimuli or stressors changes behavioral responses to negative- and positive-value predictive cues. Here, we demonstrate a role for medial prefrontal cortex (mPFC) neurons projecting to the paraventricular nucleus of the thalamus (PVT; mPFC\u2192PVT) in this process. We found that a history of aversive stimuli negatively biased behavioral responses to motivationally relevant cues in mice and that this negative bias was associated with hyperactivity in mPFC\u2192PVT neurons during exposure to those cues. Furthermore, artificially mimicking this hyperactive response with selective optogenetic excitation of the same pathway recapitulated the negative behavioral bias induced by aversive stimuli, whereas optogenetic inactivation of mPFC\u2192PVT neurons prevented the development of the negative bias. Together, our results highlight how information flow within the mPFC\u2192PVT circuit is critical for making predictions about motivationally-relevant outcomes as a function of prior experience.\n\n## Introduction\n\nEffective decision making requires anticipating the outcomes associated with environmental stimuli. It also requires balancing the goals of a decision\u2014for instance, acquiring a reward or avoiding a punishment\u2014with uncertainty about the outcome of the decision. For example, when the outcome of a decision to approach or avoid a stimulus is ambiguous, the nervous system must weigh the cost of receiving a punishment, or missing out on a reward, with the benefit of obtaining the reward, or avoiding the punishment.\n\nMany decisions are influenced by background emotional state. For example, both positive and negative mood affect decision making (Deldin and Levin, 1986; Wright and Bower, 1992; Bechara et al., 2000; Hockey et al., 2000; Dolan, 2002; Harding et al., 2004). This background state can be driven by prior experience. For example, prior exposure to aversive stimuli or stressors changes behavioral responses to ambiguous stimuli (Harding et al., 2004; Boleij et al., 2012; Rygula et al., 2014). How the balance between competing behaviors is weighed in the brain or how prior experience with an environment shifts this balance is still poorly understood.\n\nThe medial prefrontal cortex (mPFC) is critical for regulating cue-mediated behaviors in both appetitive and aversive domains (Ishikawa et al., 2008; Burgos-Robles et al., 2009; Sotres-Bayon and Quirk, 2010; Amemori and Graybiel, 2012; Burgos-Robles et al., 2013; Courtin et al., 2014; Sangha et al., 2014; Sparta et al., 2014; Burgos-Robles et al., 2017; Otis et al., 2017). Behavioral manifestations of appetitive and aversive conditioning correlate with changes in neural activity within the mPFC (Burgos-Robles et al., 2009; Peters et al., 2009; Amemori and Graybiel, 2012; Burgos-Robles et al., 2013; Moorman and Aston-Jones, 2015) and pharmacological or optogenetic manipulations of mPFC alter both reward-seeking and fear-related behaviors (Morgan and LeDoux, 1995; Blum et al., 2006; Corcoran and Quirk, 2007; Sierra-Mercado et al., 2011; Sangha et al., 2014; Sparta et al., 2014; Bari et al., 2019).\n\nThe mPFC has dense projections to subcortical structures involved in motivated behavior, including the paraventricular thalamus (PVT) (Vertes, 2004; Li and Kirouac, 2012). Like the mPFC, PVT is recruited by cues or contexts previously associated with rewarding or aversive outcomes (Beck and Fibiger, 1995; Schiltz et al., 2007; Yasoshima et al., 2007; Choi et al., 2010; Igelstrom et al., 2010; Haight and Flagel, 2014; Hsu et al., 2014; Do-Monte et al., 2015; Kirouac, 2015; Matzeu et al., 2015; Penzo et al., 2015; Li et al., 2016; Zhu et al., 2016; Do-Monte et al., 2017; McNally, 2021). PVT neurons are activated by multiple forms of stressors (Chastrette et al., 1991; Sharp et al., 1991; Cullinan et al., 1995; Bubser and Deutch, 1999; Spencer et al., 2004) and coordinate behavioral responses to stress (Hsu et al., 2014; Do-Monte et al., 2015; Penzo et al., 2015; Zhu et al., 2016; Do-Monte et al., 2017; Beas et al., 2018). On the other hand, under conditions of opposing emotional valence, PVT plays a role in multiple forms of stimulus-reward learning and PVT neurons have been reported to show reward-modulated responses (Schiltz et al., 2005; Igelstrom et al., 2010; Martin-Fardon and Boutrel, 2012; James and Dayas, 2013; Browning et al., 2014; Haight and Flagel, 2014; Li et al., 2016; Choi et al., 2019). Recent work suggests that PVT is especially critical during motivational conflict (Li et al., 2014; Choi and McNally, 2017; Zhu et al., 2018; Engelke et al., 2021). Inhibition across the anterior\u2013posterior axis of the PVT disrupts arbitration between appetitive and aversive behaviors when they are in conflict but has no effect when these behaviors are assessed in isolation (Choi et al., 2019). Moreover, activity in mPFC neurons projecting to the PVT also suppresses both the acquisition and expression of conditioned reward seeking (Otis et al., 2017).\n\nTaken together, these studies place the mPFC-to-PVT projection in a position to integrate information about positive and negative motivationally\u00a0relevant cues and translate it into adaptive behavioral responses (McNally, 2021). How these projection-specific mPFC neurons regulate behavioral responses in ambiguous settings and how their neural activity may be altered upon presentation of an aversive stimulus is unknown.\n\nTo address these questions, we trained mice on a go/no-go discrimination task with sweet- and bitter-predicting odor cues. Subsequently, mixtures of varying proportions of those cues were presented to probe behavioral responses to ambiguous stimuli. We recorded extracellularly from single neurons in mPFC and from identified mPFC\u2192PVT neurons. We then tested whether stimulating or inhibiting mPFC\u2192PVT projections modulated behavioral responses to the learned stimuli and their ambiguous mixtures.\n\n## Results\n\n### Aversive stimuli negatively bias behavioral responses to motivationally-significant cues\n\nTo assess the effect of aversive stimulus history on decisions about motivationally-significant outcomes, we developed a go/no-go discrimination task in head-fixed mice consisting of four phases: conditioning, probe test, reversal, and a second probe test (Figure 1A). In the conditioning phase, four odor cues (A, B, C, and D, counterbalanced) were presented. Odor A predicted an appetitive sweet solution (3 \u03bcl of 5% sucrose water). Odor B predicted an aversive bitter solution (3 \u03bcl of 10 mM denatonium water). Odor C was associated with no reinforcement. Odor D predicted a punishment (an unavoidable air puff delivered to the mouse\u2019s right eye) in mice assigned to the air-puff group and was associated with no reinforcement in mice assigned to the no-air-puff group. Each behavioral trial began with an odor (1 s; conditioned stimulus, CS), followed by a 1 s delay and an outcome (unconditioned stimulus, US). Mice showed essentially binary responses to cues that predicted sucrose or denatonium: they licked in anticipation of sucrose and did not in anticipation of denatonium (Figure 1B,C). We designed a probe test, in which, in addition to the four conditioning odors, we measured behavioral responses to ambiguous stimuli. We designed parametrically-varying mixtures of stimuli between appetitive and aversive solutions. We exposed mice to unreinforced mixtures of varying proportions of odors A and B: 85%A/15%B, 50%A/50%B, and 15%A/85%B. To ensure that behavioral responses to ambiguous stimuli were not driven by a mouse\u2019s preference for a particular odor, after completion of the probe test, cue-outcome associations for odors A and B were reversed, and each mouse was re-tested in a second set of probe stimuli.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig1-v1.jpg)\n\n**Figure 1.:** (A) Task design and experimental timeline. During ten conditioning sessions, odors (A, B, C, and D) predicted an appetitive sucrose solution, an aversive denatonium solution, no outcome, and either no outcome or an unavoidable air puff, respectively. During the first probe test, A and B were mixed in three different ratios: 85%B/15%A (light red), 50%B/50%A (gray), 15%B/85%A (light blue). After completion of 10 reversal training sessions, in which A and B contingencies were reversed, mice were re-trained in a second probe test. (B) Licking rates in no air puff (top, 7 mice) or air puff (bottom, 5 mice) groups across days, during odor and delay period, for sucrose (blue), denatonium (red), and no-outcome (black) trials. Dashed lines indicate reversals on day 11. (C) Licking behavior from a representative test session from a mouse without (left) and one with (right) exposure to air puffs. Color gradations between blue and red indicate odor mixtures as in (A). Gray bars indicate a period of odor presentation. Dashed lines indicate outcome delivery. (D) Licking rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials for no air puff (black) and air puff (orange) groups, during odor and delay period. (E) Mean trial-by-trial licking rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials for each ambiguous cue (light red, gray, light blue squares) for no air puff (black) and air puff (orange) groups, during odor and delay period. Line and error bars represent mean \u00b1 SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Left: first probe (Day 11). Right: second probe after reversal (Day 22).\n\nAs predicted, mice in both air-puff and no-air-puff groups quickly learned the CS-US associations: they showed increases in anticipatory licking responses to the positive, sucrose-predicting cue and in the delay before sucrose arrived across conditioning sessions, while withholding licking after sampling the negative, denatonium-predicting cue (Figure 1B). A three-factor ANOVA (session \u00d7 cue \u00d7 group) comparing licking during sucrose and denatonium cue presentation and delay period demonstrated a significant main effect of session ($F_{1,9}=29.74$, $p<0.01$) and cue ($F_{1,1}=64.77$, $p<0.01$). Moreover, mice exposed to air puffs responded to the sucrose-predicting odor with fewer licks (cue \u00d7 group interaction, $F_{1,1}=7.84$, $p<0.05$). During reversal learning, in which A and B contingencies were reversed, mice in both no-air-puff and air-puff groups quickly re-adapted to the new associations (Figure 1B). A three-factor ANOVA (session \u00d7 cue \u00d7 group) comparing licking rates during sucrose and denatonium cue presentation and delay period demonstrated a significant interaction between cue and session ($F_{1,9}=8.4$, $p<0.01$).\n\nAt the end of conditioning and reversal training, mice received a single probe test session. Behavioral responses from the initial probe test were not statistically different from data gathered in the second test and thus these sessions were analyzed together in the text (Figure 1\u2014figure supplement 1). Licking rates for odor mixtures scaled with the proportion of the mixture that was the sucrose-predicting odor. This indicates that mice responded to parametrically varying ambiguous stimuli with smoothly varying behavioral responses (Figure 1C). Interestingly, mice exposed to air puffs responded to ambiguous odor mixtures with fewer licks during the anticipatory odor and delay period indicating that exposure to aversive stimuli biased decisions about ambiguous outcomes toward avoidance and away from approach (Figure 1D). A two-factor ANOVA (cue \u00d7 group) comparing licking rates during cue presentation and delay period in test days demonstrated a significant interaction between cue and group ($F_{1,4}=5.32$, $p<0.01$; Tukey HSD, 0.71\u00a0\u00b1\u00a00.41 licks s\u22121, $p<0.001$). Lick rates were significantly larger for mixtures of odors in mice unexposed to air puffs ($t_{69}=2.70$, $p<0.01$). Notably, the reduced licking to ambiguous cues in the air-puff group was evident on the first trial of the probe test and persisted throughout all probe test trials (Figure 1E). Thus, the decline in responding was not due to effects of extinction in the probe test. Indeed, both groups showed similar extinction of responding to ambiguous cues across trials resulting from outcome omission. A three-factor ANOVA (cue \u00d7 trial \u00d7 group) revealed a significant interaction between cue and trial ($F_{1,14}=5.33$, $p<0.01$). Importantly, the interaction between cue, group and trial was not significant ($F_{1,14}=1.21$, $p=0.27$).\n\n### Aversive stimuli modulate mPFC neuronal responses to motivationally\u00a0relevant cues\n\nMedial PFC (mPFC) is known to be involved in learning (Holland and Gallagher, 2004; Luk and Wallis, 2009; Alexander and Brown, 2011; Del Arco et al., 2017; Otis et al., 2017; Orsini et al., 2018), stress (Wellman, 2001; Cook and Wellman, 2004; Radley et al., 2004; Radley et al., 2005; Liston et al., 2006; Radley et al., 2006; Cerqueira et al., 2007; Wei et al., 2007; Liu and Aghajanian, 2008; Radley et al., 2008; Goldwater et al., 2009; Yuen et al., 2012; Adhikari et al., 2015), and uncertainty (Ernst and Paulus, 2005; Opris and Bruce, 2005; Sugrue et al., 2005; Bach et al., 2009; Levy et al., 2010; Orsini et al., 2018). These functions are critical for making predictions about previously unobserved stimuli. Such predictions derive from prior knowledge, as well as experience with the context of an environment. We thus asked whether mPFC neurons responded differently to motivationally\u00a0relevant stimuli in the presence or absence of a history of aversive cues.\n\nWe recorded action potentials extracellularly from 2208 mPFC neurons in 12 mice, five exposed to air puffs (929 neurons), seven unexposed (1279 neurons), while mice performed the go/no-go discrimination task (Figure 2\u2014figure supplement 1). Most neurons showed firing rate increases or decreases following odor cues, largely with persistent activity that lasted beyond cue offset (Figure 2A). There was a positive correlation between firing rates in response to sucrose-predicting and denatonium-predicting CS in mice exposed ($r=0.59\\pm0.04$, 95% CI, $p<0.0001$) and unexposed ($r=0.58\\pm0.04$, 95% CI, $p<0.0001$) to air puffs. To quantify the responses of the population, we measured the temporal response profile of each neuron during sucrose trials by quantifying firing rate changes relative to denatonium trials in 100 ms bins using a receiver operating characteristic (ROC) analysis (Figure 2B). We calculated the area under the ROC curve (auROC), comparing sucrose trials to denatonium trials. This analysis determines to what extent an ideal observer could discriminate between activities on the two trial types. Values of 0.5 indicate no discriminability, whereas values of 0 or 1 indicate perfect discriminability. A large fraction of neurons (270 of 929 in mice exposed to air puffs and 325 of 1279 in mice unexposed) showed auROC values greater than 0.7, indicating substantially greater activity for sucrose compared to denatonium trials, or values less than 0.3, indicating substantially greater activity for denatonium compared to sucrose trials (Figure 2B). These patterns were observed in mice exposed and unexposed to air puffs (Figure 2C). Neurons from mice exposed to air puffs responded robustly to both air puff-predicting cues and the air puffs themselves (Figure 2D; Wilcoxon rank sum test, $p<0.0001$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig2-v1.jpg)\n\n**Figure 2.:** (A) Firing rates of neurons in mice unexposed (top) and exposed (bottom) to air puffs relative to pre-CS firing rates. Histogram scale bars: 700 neurons (top), 500 neurons (bottom). (B) Discriminability (auROC) between sucrose and denatonium trials of neurons in mice unexposed (left) and exposed (right) to air puffs with significant firing rate changes during the cue. Increases (yellow) and decreases (cyan) in firing rate in sucrose trials relative to denatonium trials. Each row represents one neuron. (C) Average firing rates of all neurons with auROC values greater than 0.7 or less than 0.3 in at least one bin in no air puff (left) and air puff (right) mice during sucrose (blue), denatonium (red), no-outcome (gray) and air puff (orange) trials. Gray bars indicate a period of odor presentation. Dashed lines indicate outcome delivery. (D) auROC values for responses to air puff-predicting CSs (left) and air puff (right).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Boxes indicate approximate location of recording sites in each mouse, taking into account any vertical distance traveled during training and the approximate lateral spread of the tetrode bundle.\n\nWe next asked whether a history of air puffs changed the responses of mPFC neurons to aversion- and reward-predictive cues together with ambiguous stimuli. We recorded from 136 neurons from mPFC in the no-air-puff group and 106 neurons from mPFC in air-puff exposed mice during the probe sessions (Figure 3). We calculated firing rates in response to odors predicting sucrose or denatonium, as well as the three proportions of mixtures of the two odors. These populations included 37 in the no-air-puff group and 25 in the air-puff group that exhibited auROC discrimination between sucrose and denatonium trials greater than 0.7 or less than 0.3 during the probe sessions (see Figure 3A,B for two example neurons in mice unexposed or exposed to air puffs). To compare firing rates of those neurons between mice exposed or unexposed to air puffs, we calculated a generalized linear model (Poisson regression) to predict spike counts during the cues as a function of air puff exposure and odor type. This type of regression tests for effects of categorical variables (i.e. air puff exposure) on variables generated from a discrete nonnegative probability distribution (i.e. spike counts). Cue-evoked firing rates were significantly higher in mice exposed to air puffs (Figure 3C\u2013E; odor mixture $z=0.18\\pm0.015$, air-puff group $z=0.043\\pm0.014$, stimulus-group interaction $z=0.033\\pm0.019$, $p<0.001$). Firing rates were higher at each odor mixture in mice exposed to air puffs (Wilcoxon rank sum tests, all $p<0.05$). When we use the term odor mixture in the context, we refer to all mixtures of sucrose-predicting and denatonium-predicting odors: 100%/0%, 85%/15%, 50%/50%, 15%/85%, and 0%/100%.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013B) Average firing rates (top) and histograms of firing rates during odor and delay period (bottom) from example neurons in a mouse unexposed (A) and exposed (B) to air puffs. Red: denatonium trials. Blue: sucrose trials. Graded colors indicate mixtures as in Figure 1A. Gray bars indicate a period of odor presentation. Dashed lines indicate outcome delivery. (C) Mean trial-by-trial firing rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials for each ambiguous cue (light red, gray, light blue squares) for no air puff (black) and air puff (orange) groups, during odor and delay period. Firing rates were calculated during the CS. (D) Mean \u00b1 SEM firing rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials for no air puff (black) and air puff (orange) groups, during odor and delay period. (E) Mean firing rates of mPFC neurons in mice unexposed (left) or exposed to air puffs (right).\n\n### Aversive stimuli modulate corticothalamic neuronal responses to motivationally-significant cues\n\nThe neural data described above suggest that mPFC neurons that discriminate between sucrose and denatonium trials are modulated by a history of aversive stimuli. One of the major projection targets of the mPFC is the paraventricular nucleus of the thalamus (mPFC\u2192PVT). Studies examining the role of PVT in regulating behavioral responses have found that PVT neurons are activated by cues or contexts previously associated with positive or negative emotional outcomes (Beck and Fibiger, 1995; Schiltz et al., 2007; Yasoshima et al., 2007; Choi et al., 2010; Igelstrom et al., 2010; Haight and Flagel, 2014; Hsu et al., 2014; Do-Monte et al., 2015; Kirouac, 2015; Matzeu et al., 2015; Penzo et al., 2015; Li et al., 2016; Zhu et al., 2016; Do-Monte et al., 2017). Additionally, activity in these corticothalamic neurons suppresses both the acquisition and expression of conditioned reward seeking (Otis et al., 2017). Thus, we hypothesized that mPFC\u2192PVT neurons encode information about appetitive and aversive stimuli, and that this information is critical for weighing prior experience in those predictions.\n\nTo test this hypothesis, we performed projection-specific electrophysiological recordings from mPFC\u2192PVT neurons while mice performed the go/no-go task. We expressed the light-gated ion channel channelrhodopsin-2 (ChR2, using adeno-associated viruses, AAV1-CaMKIIa-ChR2-eYFP) in pyramidal neurons of the mPFC and we implanted an optic fiber above the posterior portion of the PVT, to activate mPFC\u2192PVT cells antidromically (Figure 4A,B). Virus expression and optic fiber implantation were verified histologically (Figure 4\u2014figure supplement 1). At the end of each recording session, we used ChR2 excitation to observe antidromically-evoked spikes. For each neuron, we measured the response to light stimulation and the shape of spontaneous spikes (Figure 4C). To unequivocally identify mPFC\u2192PVT neurons, ChR2-expressing cells in the mPFC were identified with axonal photostimulation and extracellular recordings in mPFC using a collision test (Figure 4D; Paintal, 1959; Bishop et al., 1962; Darian-Smith et al., 1963; Economo et al., 2018; Bari et al., 2019). Based on the parameters of cells that passed the collision test, we only included units that responded to light with a latency less than 15 ms and spiked in response to at least 70% of all pulses (in response to 10 Hz pulses; Figure 4D). These criteria are comparable to the fastest responses seen using antidromic stimulation with collision tests in corticothalamic neurons in sensory regions of neocortex (Swadlow and Weyand, 1981; Swadlow, 1998; Stoelzel et al., 2017). Not every neuron was subjected to a collision test, therefore it is plausible that some of these neurons may have exhibited orthodromic activation via local synapses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic drawings of viral stereotaxic injection of AAV1-CaMKII-ChR2-eYFP and tetrode bundle into mPFC and optic fiber over PVT. (B) eYFP (green), and DAPI (blue) in mPFC (top) and PVT (bottom) coronal sections from BL6 mice that received AAV1-CaMKII-ChR2-eYFP and tetrode bundle into mPFC and an optic fiber over PVT (scale bar, 100 \u03bcm). (C) Example of an identified corticothalamic neuron responding to a sequence of light stimuli (cyan) with action potentials (top) but not when the light stimuli followed spontaneous action potentials (bottom). (D) Antidromically-tagged corticothalamic neurons (blue) and antidromically-tagged corticothalamic neurons that passed collision tests (magenta). White points are neurons that were not identified. Crosses are neurons that passed collision tests, but were not recorded during behavior. (E\u2013F) Average firing rates from example mPFC\u2192PVT neurons showing firing rate increase (E) or decrease (F) to the air puff-predicting cue. Orange: air puff trials. Gray: CS - trials. Gray bars indicate odor presentation. Dashed lines indicate outcome delivery. (G) Scatter plot showing relationship between the change in firing rate to the air puff-predicting cue compared to baseline firing activity. Orange: neurons in which the firing rate during the air puff-predicting cue was significantly different from baseline firing activity ($t$-test, $p<0.05$).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Drawings illustrate recording sites in mPFC in no air puff (left, $n=3$) and air puff exposed (right, $n=6$) mice. Boxes indicate approximate location of recording sites in each mouse, taking into account any vertical distance traveled during training and the approximate lateral spread of the tetrode bundle. (B) Traces showing virus expression in no air puff (left) and air puff (right) groups. (C) Locations of fiber tips in no air puff (left) and air puff (right) groups in PVT.\n\nWe identified 39 and 45 neurons as projecting to PVT in mice unexposed and exposed to air puffs, respectively (Figure 4D; no air puff group: 18 and 21 neurons during conditioning and probe sessions, respectively; air puff group: 35 and 10 neurons during conditioning and probe sessions, respectively). We first asked whether these neurons responded to aversive stimuli. Previous studies have emphasized the role of the PVT in shaping behavioral responses to stimuli that predict aversive outcomes (Beck and Fibiger, 1995; Yasoshima et al., 2007; Hsu et al., 2014; Do-Monte et al., 2015; Penzo et al., 2015), but it\u00a0is unknown which of its inputs may drive those responses. We found that 43% of mPFC\u2192PVT neurons recorded from mice in the air puff group showed firing rate changes (5 of 35 neurons with increases and 10 of 35 neurons with decreases) in response to air-puff-predicting stimuli during conditioning (Figure 4E\u2013G). This demonstrates that mPFC\u2192PVT neurons, thought to be involved in behavioral responses to aversive-predicting stimuli, are indeed modulated by those stimuli.\n\nWe next compared the responses of mPFC\u2192PVT neurons to sucrose- and denatonium-predictive cues and ambiguous stimuli (see Figure 5A,B for two example neurons in mice unexposed or exposed to air puffs, respectively). Interestingly, corticothalamic neurons from mice exposed to air puffs responded to the sucrose-predictive cue and ambiguous odor mixtures with higher phasic activity during the anticipatory odor and delay period, indicating that exposure to aversive stimuli biases neural responses of corticothalamic neurons to reward-predictive and ambiguous stimuli (Figure 5C\u2013F; Poisson regression, odor mixture $z=0.26\\pm0.10$, $p<0.01$, air-puff group $z=0.73\\pm0.15$, $p<0.01$, stimulus-group interaction $z=0.27\\pm0.22$, $p>0.2$). Firing rates were higher at each odor mixture in mice exposed to air puffs (Wilcoxon rank sum tests, all $p<0.05$).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) Average firing rates (left) and histograms of firing rates during odor and delay period (right) from example neurons in a mouse unexposed (A) and exposed (B) to air puffs. Red: denatonium trials. Blue: sucrose trials. Graded colors indicate mixtures as in Figure 1A. Gray bars indicate a period of odor presentation. Dashed lines indicate outcome delivery. (C) Mean trial-by-trial firing rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials for each ambiguous cue (light red, gray, light blue squares) for no air puff (black) and air puff (orange) groups, during odor and delay period. (D) Mean \u00b1 SEM firing rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials for no air puff (black) and air puff (orange) groups, during odor and delay period. (E) Mean firing rates of corticothalamic neurons in mice unexposed to air puffs. (F) Mean firing rates of corticothalamic neurons in mice exposed to air puffs.\n\n### Excitation of corticothalamic neurons modulates behavioral responses to motivationally-relevant cues\n\nThe neural data described above suggest that elevated activity in corticothalamic neurons to the aversion- and reward-predictive cues together with the ambiguous cues is critical for modulating behavioral response to those stimuli. To test this hypothesis, we next used optogenetic methods to activate corticothalamic neurons selectively at the time of presentation of those cues in mice trained in the same go/no-go task described above but with no exposure to air puffs. Mice received bilateral infusions of either AAV1/5-CaMKIIa-ChR2-EYFP or AAV1/5-CaMKIIa-EYFP (control) into mPFC; expression was verified histologically (Figure 6\u2014figure supplement 1). Mice also received fiber optic implants over posterior PVT (Figure 6A). Three weeks after surgery, these mice began training in the go/no-go discrimination task and, during the probe session, light was delivered into the PVT in five random trials of all sucrose and denatonium trials and in half of all the ambiguous trials, in the cue and delay period (Figure 6B). We used a 10 Hz frequency stimulation because it approximated the firing rate of corticothalamic neurons in response to ambiguous stimuli observed in neural recordings; we also used a 20 Hz frequency in order to obtain a frequency response curve. All mice underwent conditioning sessions and there were neither main effects nor any interactions of group on conditioned responding across conditioning ($F<1.14$; $p>0.33$; Figure 6C). During the subsequent probe test, ChR2 mice showed a reduction in response to denatonium- and sucrose-predictive cues and ambiguous cues in the trials in which light was delivered in a frequency-dependent manner, whereas eYFP mice that received the same treatment responded equally in trials with or without light delivery (Figure 6D,E). A three-factor ANOVA (cue \u00d7 stimulation \u00d7 group) comparing licking during cue presentation and delay period in stimulated versus unstimulated trials in EYFP, 10 Hz and 20 Hz groups revealed a significant main effect of cue ($F_{1,4}=13.8$, $p<0.01$) and stimulation ($F_{1,1}=30.11$, $p<0.01$). Moreover, there was a significant interaction between cue and group ($F_{1,8}=4.8$, $p<0.01$) and stimulation and group ($F_{1,2}=4.68$, $p<0.05$).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of viral stereotaxic injection of AAV1/5-CaMKIIa-ChR2-eYFP or AAV1/5-CaMKIIa-eYFP into mPFC and optic fiber over PVT. (B) Optical stimulation was delivered during presentation of the cue and during the 1 s delay before outcome delivery. (C) Licking rates in eYFP (left, $n=3$), 10 Hz ChR2-eYFP (center, $n=5$), and 20 Hz ChR2-eYFP (right, $n=7$) groups across conditioning, during odor and delay period, for sucrose (blue), denatonium (red), and no-outcome (black) trials. (D) Licking rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials of each mixed stimulus for eYFP (left), 10 Hz ChR2-eYFP (center) and 20 Hz ChR2-eYFP (right) groups, during odor and delay period, with (light blue) or without (white) laser stimulation. (E) Trial-by-trial licking rates during 85%A/15%B (light red), 50%A/50%B (gray), 15%A/85%B (light blue) trials for eYFP (left), 10 Hz ChR2-eYFP (center) and 20 Hz ChR2-eYFP (right) groups, during odor and delay period, with (light blue shadows) or without laser stimulation. Line and error bars represent the mean \u00b1 SEM.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) eYFP (green) and DAPI (blue) expression in a mPFC (left) and PVT (right) coronal section from a BL6 mouse that received AAV1-CaMKII\u03b1-Halo-eYFP into mPFC and an optic fiber over PVT (scale bar, 500 \u03bcm). (B) Traces showing the expression of eYFP (left), ChR2-eYFP (middle) and Halo-eYFP (right) groups. (C) Locations of fiber tips in eYFP (left), ChR2-eYFP (middle, red=10 Hz and orange=20 Hz) and Halo (right) groups in PVT.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Left: optical stimulation was delivered during the presentation of reward delivery and lasted for 1500 ms, Right: licking behavior in 10 Hz ChR2-eYFP (left) and 20 Hz ChR2-eYFP (right) groups across trials with no stimulation (black) and trials with stimulation (light blue). Line and error bars represent the mean \u00b1 SEM.\n\nStimulation of the same neurons did not, however, disrupt licking for an unpredictable reward. Outside of the task, we delivered randomly-timed sucrose rewards (3 \u03bcl). Mice licked at high rates to consume unexpected rewards (Figure 6\u2014figure supplement 2). Importantly, stimulation of mPFC\u2192PVT axons during reward delivery at the same frequencies used in the behavioral task in half of the total number of trials did not change the number of licks in response to these rewards. A two-factor ANOVA (frequency of stimulation \u00d7 group) comparing licking during stimulated and unstimulated trials revealed no significant main effect or interaction with group (all $F<0.23$, $p>0.65$). Thus, uncued licking is not altered by optogenetic excitation of mPFC\u2192PVT cells and the optogenetic effects are not due to a light-induced impairment in licking in general.\n\n### Inhibition of corticothalamic neurons prevents negative biases to motivationally-relevant cues\n\nThe optogenetic data described above suggest that artificially increasing activity in corticothalamic neurons to the aversion- and reward-predictive cues together with the ambiguous cues is sufficient for modulating behavioral response to those stimuli. To test the necessity of this pathway in generating negative biases to motivationally\u00a0relevant stimuli, we next used optogenetic inhibition to inhibit corticothalamic neurons selectively during air-puff trials during conditioning in mice trained in the same go/no-go task described above. Mice received bilateral infusions of either AAV1-CaMKIIa-eNpHR3.0-EYFP or AAV1-CaMKIIa-EYFP (control) into mPFC; expression was verified histologically (Figure 6\u2014figure supplement 1). Mice also received fiber optic implants over the posterior portion of PVT (Figure 7A). Three weeks after surgery, these mice began training in the go/no-go discrimination task and, during the air-puff-predictive cue, light was delivered into the PVT (Figure 7B). All mice underwent conditioning sessions and there were main effects of odor ($F_{2,228}=124.7$, $p<0.0001$) and day ($F_{1,228}=205.5$, $p<0.0001$). During the late phase of training, licking rates were not significantly different between the two groups of mice (Wilcoxon rank sum test, $p>0.05$; Figure 7C). During the probe test, mice expressing EYFP showed a reduction in response to denatonium- and sucrose-predictive cues and ambiguous cues in the trials compared to mice expressing eNpHR3.0-EYFP (Figure 7D). A two-factor ANOVA (cue \u00d7 group) comparing licking during cue presentation and delay period in eYFP versus virus groups revealed a significant main effect of cue ($F_{1,4}=39.8$, $p<0.05$) and group ($F_{1,1}=16.6$, $p<0.05$).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57634/elife-57634-fig7-v1.jpg)\n\n**Figure 7.:** (A) Schematic of viral stereotaxic injection of AAV1-CaMKIIa-eNpHR3.0-EYFP or AAV1-CaMKIIa-EYFP into mPFC and optic fiber over PVT. (B) Optical stimulation was delivered during presentation of the air-puff-predicting cue, during the 1 s delay before air-puff delivery and during air-puff delivery, only during learning. (C) Licking rates in EYFP (left, $n=3$), eNpHR3.0-eYFP (right, $n=5$) groups across conditioning, during odor and delay period (sucrose: blue, denatonium: red, no-outcome: black). (D) Licking rates during sucrose (blue square) and denatonium (red square) trials and during the eight probe trials of each mixed stimulus for EYFP (white circles), eNpHR3.0-EYFP (green circles) groups, during odor and delay period. Line and error bars represent the mean \u00b1 SEM.\n\n## Discussion\n\nIn this study, we examined the projection from mPFC to PVT in mice approaching or avoiding negative and positive valence-predictive stimuli. We found that a history of aversive stimuli negatively biased behavioral responses to those motivationally\u00a0relevant cues while increasing excitatory responses of PVT-projecting mPFC neurons. Indeed, mice exposed to aversive stimuli showed reduced approach behavior to reward-predictive and ambiguous stimuli compared to mice unexposed to aversive stimuli. Moreover, artificially increasing activity from mPFC to PVT quantitatively mimicked the negative behavioral bias induced by presentation of aversive stimuli while selectively inhibiting this pathway during learning prevented the formation of negative biases.\n\nCognitive processes\u2014appraisals of stimuli, events and situations\u2014play an important role in generating affective states, and these affective states influence cognitive functioning by inducing attentional, memory, and judgment biases (Lerner and Keltner, 2000; Haselton et al., 2009; Harding et al., 2004; Enkel et al., 2010; Rygula et al., 2012; Papciak et al., 2013; Rygula et al., 2013; Parker et al., 2014; Rygula et al., 2014). Among brain regions that are engaged in affective processing, the mPFC has long been implicated in adaptive responding by signaling information about expected outcome and by regulating sensitivity to reward and punishment (Holland and Gallagher, 2004; Luk and Wallis, 2009; Alexander and Brown, 2011; Del Arco et al., 2017; Orsini et al., 2018). Here, we found that firing rates in mPFC neurons reflect cue-evoked expectations for aversion- and reward-predictive cues and were enhanced in mice exposed to aversive stimuli, which correlates with a reduction in anticipatory responses to the same stimuli. These observations are consistent with a negative bias and suggest that negative events can bias decisions by altering the activity of mPFC neurons. Several studies have implicated the prefrontal network in the pathophysiology of affective disorders (Phillips et al., 2003; Drevets et al., 2008) and chronic stress\u2014a crucial factor in increasing the risk of developing affective disorders\u2014has profound detrimental effects on the anatomy and physiology of mPFC neurons (Wellman, 2001; Cook and Wellman, 2004; Radley et al., 2004; Liston et al., 2006; Radley et al., 2006; Cerqueira et al., 2007; Wei et al., 2007; Liu and Aghajanian, 2008; Radley et al., 2008; Goldwater et al., 2009; Yuen et al., 2012; Adhikari et al., 2015). For example, chronic stress induces significant regression of the apical dendrites of pyramidal neurons in mPFC (Cook and Wellman, 2004; Radley et al., 2004; Liston et al., 2006; Goldwater et al., 2009), which may in turn impact mPFC function.\n\nThe mPFC densely projects to subcortical structures relevant for our behavioral task, including PVT, amygdala, hippocampus, and nucleus accumbens (Vertes, 2004; Li and Kirouac, 2012). Among all brain regions that receive strong projections from the mPFC, PVT has long been considered a stress detector and implicated in the emergence of adaptive responding to stress (Chastrette et al., 1991; Sharp et al., 1991; Cullinan et al., 1995; Bubser and Deutch, 1999; Spencer et al., 2004; Hsu et al., 2014; Do-Monte et al., 2015; Penzo et al., 2015; Zhu et al., 2016; Do-Monte et al., 2017; Beas et al., 2018; Choi et al., 2019). At the same time, PVT has also been considered a potential mediator of motivated behavior responding to both food- and drug-associated cues (Schiltz et al., 2005; Igelstrom et al., 2010; Martin-Fardon and Boutrel, 2012; James and Dayas, 2013; Browning et al., 2014; Haight and Flagel, 2014; Li et al., 2016). Consistent with these findings that place PVT in a position to integrate information about positive and negative motivationally relevant cues and translate it into adaptive behavioral responses (McNally, 2021), we found that mPFC neurons projecting to the PVT maintain cue-evoked expectations for motivationally-relevant outcomes and their neural activity was enhanced in mice exposed to aversive stimuli. A feature of our experimental design is worth comment. In our experiments, mice were exposed to aversive stimuli in the same context in which they received motivationally-relevant cues. This design cannot rule out the influence of context-derived motivational conflict on the observed behavioral outcome. Indeed, recent work suggests that PVT is important during motivational conflict (Li et al., 2014; Choi and McNally, 2017; Zhu et al., 2018; Choi et al., 2019; Engelke et al., 2021). PVT seems important for behavioral control when appetitive and aversive behaviors are elicited at the same time and the animal must select between them (Li et al., 2014; Choi and McNally, 2017; Zhu et al., 2018; Choi et al., 2019). Future studies in which aversive stimuli and rewarding stimuli are presented in two different contexts will help clarify the behavioral relevance of such context-derived variables.\n\nBy mimicking the increased response of mPFC\u2192PVT neurons induced by exposure to aversive stimuli, we observed a reduction in anticipatory responses to the predictive cues. By contrast, selective inhibition of this pathway prevented the formation of negative biases. These findings suggest that information about cue interpretation is transferred from mPFC to PVT and this pathway is crucial for adaptive responding toward those stimuli as a function of previous experience. These results are also consistent with a recent study showing that activity in mPFC neurons projecting to the PVT suppresses both the acquisition and expression of conditioned reward seeking (Otis et al., 2017). Based on recent evidence showing two genetically, anatomically, and functionally distinct cell types across the anteroposterior axis of the PVT (Gao et al., 2020), it will be interesting to investigate in future studies whether the information from mPFC is transferred to anatomically or molecularly segregated cell types or projection-specific neurons within the PVT. Indeed, signals from mPFC to PVT inputs have been recently shown to propagate onto PVT projections to nucleus accumbens neurons (Otis et al., 2019) and are responsible for influencing reward seeking by adjusting a multiplexed reward signal in downstream PVT\u2192nucleus accumbens neurons. Future studies may help clarify whether this pathway is also involved in negative bias or dynamic salience processing (Zhu et al., 2018), which is a behavioral domain that is well positioned to shape the negative bias itself.\n\nStudying the mechanisms by which neuronal responses to cues are updated as a function of prior experience in the mPFC\u2192PVT circuit is crucial for understanding learning and decision making more generally. Adaptive tuning of this network is modulated by ascending monoaminergic systems (Arnsten et al., 2012) and maladaptive changes of these systems has been implicated in cognitive deficits associated with several affective disorders (Enkel et al., 2010; Kukolja et al., 2008). For example, acute pharmacological stimulation of the serotonergic and dopaminergic systems has been shown to influence cognitive bias in rodents (Rygula et al., 2014). In particular, citalopram, a selective serotonin reuptake inhibitor, and amphetamine, a powerful psychostimulant, both induced a positive cognitive processing bias (Rygula et al., 2014). Those results are important from a clinical point of view, knowing that negative cognitive bias lies at the core of the pathophysiology of several affective disorders and it has been extensively studied in humans (Wright and Bower, 1992; MacLeod and Byrne, 1996; Beck, 2008). For example, it has been shown that patients with anxiety and depression interpret ambiguous information with a negative bias (Schwarz and Clore, 1983; Eysenck et al., 1987; Wright and Bower, 1992; MacLeod and Byrne, 1996; Lawson et al., 2002; Beck, 2008; Chan et al., 2008; Pizzagalli et al., 2008; Dearing and Gotlib, 2009). Thus, understanding how cognitive biases develop and act in several chronic and debilitating neuropsychiatric disorders may offer an opportunity for designing novel treatments, aimed at ameliorating the proper functional tuning and connectivity of prefrontal-orchestrated neuronal circuits.\n\nIn summary, by using exposure to aversive stimuli, we induced a negative bias in mice in response to ambiguous stimuli, which was linked to an increase in firing rates of PVT-projecting mPFC neurons. Artificial activation of the same pathway recapitulated the behavioral outcome while inhibition prevented the formation of negative biases. Thus, our results highlight a fundamental role for the mPFC\u2192PVT circuit in shaping adaptive responses by modulating predictions about imminent motivationally-relevant outcomes as a function of prior experience.\n\n## Materials and methods\n\n### Subjects\n\nWild-type C57BL/6J male mice (The Jackson Laboratory, 000664), 8\u201310 weeks old at the time of surgery, were housed in a reverse 12 hr light-dark cycle room (lights on at 20:00). All mice were given ad libitum water except during testing periods. During behavioral testing, mice were water deprived by giving 1 ml of water per day. Food was freely available throughout the experiments. All testing was conducted in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and approved by the Johns Hopkins University Animal Care and Use Committee (protocol MO19M424).\n\n### Stereotaxic surgeries\n\nAll mice were surgically implanted with custom-made titanium head plates using dental adhesive (C and B-Metabond, Parkell) under isoflurane anesthesia (1.0\u20131.5% in O2). Surgeries were conducted under aseptic conditions and analgesia (ketoprofen, 5 mg/kg and buprenorphine, 0.05\u20130.1 mg/kg) was administered postoperatively. Mice recovered for 7\u201310 days before starting behavioral testing.\n\nFor electrophysiological experiments, we implanted unilaterally a custom microdrive containing eight drivable tetrodes made from nichrome wire (PX000004, Sandvik) and positioned inside 39 ga polyimide guide tubes. We targeted mPFC under stereotaxic guidance at 2.2 mm anterior and 0.4 mm lateral to bregma and 1.6 mm ventral to the skull. Tetrodes were advanced subsequently into final positions in mPFC during recording. For identifying corticothalamic neurons, an optic fiber was implanted over PVT under stereotaxic guidance at 1.4 mm anterior and 1.3 mm lateral to bregma and 3.6 mm ventral to the skull with a 225\u00b0 angle.\n\nFor optogenetic excitation experiments, AAV1/5-CamKIIa-hChR2(H134R)-eYFP or AAV1/5-CamKIIa-eYFP (AAV5: from UNC GTC Vectore Core; AAV1: from Addgene) was injected bilaterally in mPFC under stereotaxic guidance at 2.2 mm anterior and 0.3 mm lateral to bregma and 1.6 mm ventral to the skull. pAAV-CaMKIIa-hChR2(H134R)-EYFP was a gift from Karl Deisseroth (Addgene viral prep 26969-AAV1; http://n2t.net/addgene:26969; RRID:Addgene_26969) (Lee et al., 2010). A total of 300 nl of virus (titer \u223c 1013 GC/mL) per hemisphere was delivered at the rate of 1 nl/s (MMO-220A, Narishige). The injection pipette was left in place for 5 min after each injection. Optic fibers (200 \u03bcm diameter, 0.39 NA, Thorlabs) were implanted bilaterally over mPFC (at 2.2 mm anterior and 0.6 mm lateral to bregma and 1.3 mm ventral to the skull with a 10\u00b0 angle) or unilaterally over PVT (at 1.4 mm anterior and 1.3 mm lateral to bregma and 3.6 mm ventral to the skull with a 22.5\u00b0 angle). For inhibition experiments, AAV1-CaMKIIa-eNpHR 3.0-EYFP or AAV1-CaMKIIa-EYFP was injected as described above. pAAV-CaMKIIa-eNpHR 3.0-EYFP was a gift from Karl Deisseroth (Addgene viral prep 26971-AAV1; http://n2t.net/addgene:26971; RRID:Addgene_26971).\n\n### Behavioral task\n\nFollowing recovery from surgery, water-restricted mice were habituated for 3 days while head-fixed before training on the go/no-go task. Each mouse performed behavioral tasks at the same time of day (between 08:00 a.m. and 2:00 p.m). All behavioral tasks were performed in dark, sound-attenuated chamber, with white noise delivered between 2\u00a0and\u00a060 kHz (L60 Ultrasound Speaker, Pettersson). Odors were delivered with a custom-made olfactometer (Cohen et al., 2012). Each odor was dissolved in mineral oil at 1:10 dilution. Diluted odors (30 \u03bcl) were placed on filter-paper housing (Whatman, 2.7 \u03bcm pore size). Odorized air was further diluted with filtered air by 1:10 to produce a 1.0 l/min flow rate. Licks were detected by charging a capacitor (MPR121QR2, Freescale). Task events were controlled with a microcontroller (ATmega16U2 or ATmega328). Reinforcements were 3 \u03bcl of sucrose (an appetitive sweet solution), denatonium (an aversive bitter solution) or air puff (40 psi), delivered using solenoids (LHDA1233115H, The Lee Co). Intertrial intervals (ITIs) were drawn from an exponential distribution with a rate parameter of 0.3, with a maximum of 30 s. This resulted in a flat ITI hazard function, ensuring that expectation about the start of the next trial did not increase over time (Luce, 1986). The mean ITI was 7.2 s (range 2.4\u201330.0 s).\n\n### Mice underwent 10 conditioning sessions\n\nIn each session, mice received 50 1 s presentations of four different olfactory stimuli (A, B, C, and D). The order of odor presentations was randomized among mice and among sessions. For all conditioning, A, B, C, and D consisted of (+)-limonene, p-cymene, penthylacetate, and acetophenone, respectively (counterbalanced). 1 s after termination of A, sucrose was delivered and 1 s after termination of B, denatonium was delivered. C was paired with no reinforcement. In the air puff group, 1 s after termination of D, an unavoidable air puff was delivered to their right eye, while in the control group, D was paired with no reinforcement. Four s after the presentation of each odor, a vacuum was activated to remove any residual of sucrose or denatonium. After the activation of the vacuum, there was a fixed 3 s delay and then the variable ITI will follow. After completion of conditioning training, mice received a single extinction probe session. During the probe session, the four conditioning odors were continued to be presented (53 trials for each odor), but mice also received eight non-reinforced presentations of three mixtures of varying proportions of A and B odors: 85%A/15%B, 50%A/50%B, 15%A/85%B. These odor mixture trials were interleaved with the four conditioning odor trials in a randomized order.\n\nIn mice designated for the mPFC electrophysiological experiments, following the probe test, mice underwent reversal learning, in which A and B were reversed. 1 s after termination of A, denatonium was delivered and 1 s after termination of B, sucrose was delivered. C and D were continued to be presented as in conditioning. Then, mice received another single extinction probe session, identical to the one received after conditioning. Neural data from the initial extinction days were not statistically different from data gathered in later rounds of training and thus these neurons were analyzed together in the text.\n\nIn mice designated for the PVT-projecting mPFC electrophysiological experiments, following the probe test, mice repeated 3 days of conditioning and then underwent additional rounds of probe test days in order to acquire additional data. This was done up to three times for a given mouse. Neural data from the initial extinction days were not statistically different from data gathered in later rounds of training and thus these neurons were analyzed together in the text.\n\nIn mice designated for the optogenetic experiments of stimulation, training began approximately 3 weeks after viral injection and fiber implantation, and light (473 nm, 10\u201312 mW) was delivered into the PVT during the probe session. During the behavioral task, light was delivered in half of all the ambiguous trials, during the cue and delay epoch. Moreover, light was also delivered in five random trials of all sucrose and denatonium trials, during the cue and delay epoch. The primary measure of conditioning to cues was the number of licks during odor presentation and the second preceding reinforcement delivery. During the uncued stimulation trials, light was delivered in half of all trials, during the presentation of reward delivery and lasted for 1500 ms.\n\nIn mice designated for the optogenetic experiments of inhibition, training began approximately 3 weeks after viral injection and fiber implantation, and light (532 nm, 10\u201312 mW) was delivered into the PVT during air puff trials during conditioning days. During the behavioral task, light was delivered in all air puff trials, during the cue and delay epoch. The primary measure of conditioning to cues was the number of licks during odor presentation and the second preceding reinforcement delivery.\n\n### Electrophysiology\n\nThroughout the discrimination task, mice were attached to the recording cable and before each session, tetrodes were screened for activity. Active tetrodes were selected for recording, and the session was begun. On the rare occasion that fewer than four of eight tetrodes had single units, the tetrode assembly was advanced 40 or 80 \u03bcm at the end of the session. Otherwise, the tetrode assembly was kept in the same position between sessions until the probe test day. A neuron may be represented more than one time in the dataset. After the extinction probe test, the tetrode assembly was advanced 80 \u03bcm regardless of the number of active tetrodes in order to acquire activity from a new group of neurons in any subsequent training.\n\nWe recorded extracellularly (Digital Lynx 4SX, Neuralynx Inc) from multiple neurons simultaneously at 32 kHz using custom-built screw-driven microdrives with eight tetrodes coupled to a 200 \u03bcm fiber optic (32 channels total). All tetrodes were gold-plated to an impedance of 200\u2013300 k\u03a9 prior to implantation. Spikes were bandpass filtered between 0.3\u20136 kHz and sorted online and offline using Spikesort 3D (Neuralynx Inc) and custom software written in MATLAB. To measure isolation quality of individual units, we calculated the L-ratio (Schmitzer-Torbert et al., 2005) and fraction of interspike interval (ISI) violations within a 2 ms refractory period. All single units included in the dataset had an L-ratio less than 0.05 and less than 0.1% ISI violations. We only included units that had a firing rate of greater than 0.5 spikes s\u22121 over the course of the recording session.\n\n### Optogenetic identification\n\nTo verify that our recordings targeted corticothalamic neurons, at the end of daily recording sessions, we used channelrhodpsin excitation to observe stimulation-locked spikes, by delivering 3\u20135 ms pulses of 473 nm light at 15 mW using a diode-pumped solid-state laser (Laserglow), together with a shutter (Uniblitz). Spike shape was measured using a broadband signal (0.1 Hz-9 kHz) sampled at 32 kHz. This ensured that particular features of the spike waveform were not missed. We delivered 10 trains of light (10 pulses per train, 10 s between trains) at 10 Hz, resulting in 100 total pulses. For collision tests, we delivered light over PVT (2 ms pulse, 473 nm, 15 mW) triggered by a spontaneous action potential. Identified neurons did not show stimulus-locked spikes following spontaneous spikes (\u2018collisions\u2019).\n\n### Histology\n\nAt the end of behavioral testing, all mice were deeply anesthetized and then transcardially perfused with 4% paraformaldehyde (wt/vol). The brains were removed and processed for histology using standard techniques. For the electrophysiological experiments, we verified recording sites histologically with electrolytic lesions (15 s of 10 \u03bcA direct current across two wires of the same tetrode). For optogenetic experiments, virus expression was examined using a confocal microscope (Zeiss LSM 800). After histological verification, mice with incorrect virus injection or tetrode implantation were excluded from data analysis.\n\n### Data analysis\n\nAll analyses were performed with MATLAB (Mathworks) and R (http://www.r-project.org/). All data are presented as mean \u00b1 SEM unless reported otherwise. All statistical tests were two-sided. For nonparametric tests, the Wilcoxon rank-sum test was used, unless data were paired, in which case the Wilcoxon signed-rank was used. To estimate neuronal learning rates, we used logistic functions of the form $f\u2062(x)=\\frac{L}{1+e^{-k\u2062(x-x_{0})}}$. Learning rates are estimates of the $k$ parameter.\n",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "12689f1a-53f8-41d3-9cdc-11700e74bedf",
+      "submission_id": "9e2189f8-50f1-4c2f-a997-cea1deab65fb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua Johansen, RIKEN Center for Brain Science Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57634.sa1](https://doi.org/10.7554/eLife.57634.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nA history of aversive experiences biases decision making, but the neural mechanisms through which this occurs is unclear. Using an odor guided go, no-go task, Lucantonio et al. show that when rodents have previously experienced aversive stimuli, they are more cautious and exhibit reduced reward seeking behavior. Importantly, this is accompanied by increased activity in neurons in the medial prefrontal cortex which project to the paraventricular nucleus of the thalamus and optogenetically increasing the activity of these cells mimics the effect of prior stress.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Punishment history biases corticothalamic responses to motivationally-significant stimuli\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Mario Penzo (Reviewer #2); James Otis (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before a decision is reached, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe authors use electrophysiological and optogenetic techniques to study how prior aversive experiences alter olfactory cue based decision making. They report that when an aversive stimulus (airpuff) is added to the training regimen the resulting decision making behavior to other cues is more cautious and animals don't seek rewards as readily. This is accompanied by an increase in cue-evoked responding in medial prefrontal cortex (mPFC), and paraventricular thalamus (PVT) projecting mPFC, neurons. Finally, they show that optogenetic stimulation mPFC projections to PVT reduced cue-evoked reward seeking.\n\nEssential revisions:\n\nWhile all of the Reviewers thought that there were some potentially interesting results they felt that the analyses were seriously under-described and, in some cases, did not support the claims of the paper. Furthermore, there was a consensus opinion that the addition of a loss of function study was necessary to (a) go beyond what is already known from the literature, (b) test whether this pathway is important for prior aversive history to influence/inhibit reward seeking behavior and (c) to demonstrate that the projections to PVT, and not collateral projections to other brain regions, are important. Details of these and other concerns are outlined below.\n\n1) The paper requires a loss of function study to adequately test a central claim of the paper that this pathway is essential for prior aversive history to influence/inhibit reward seeking behavior. The stimulation effects they see are a replication of previous results (Otis et al., 2017; Otis et al., 2019) and these effects are difficult to ascribe to prior history effects because optogenetic excitation may be impacting behavioral performance via mechanisms not related to punishment history. Ideally this would be a terminal inhibition experiment as the optogenetic terminal stimulation experiment leaves open the possibility of antidromic activitation of cell bodies and axon collaterals, resulting in effects which are not specific to projections to PVT.\n\n2) A major issue with this paper is the way in which the results of statistical tests are presented. For example, in most cases the authors refer to overall ANOVA effects, but no group comparison tests are included. Specifically, on lines 258-262 the authors say that cue evoked firing rates were higher in cells from animals exposed to airpuff, statistics are provided and Figure 3C-D is referred to. They mention that they used a poisson regression to analyze this data, but very little information is given about this analysis, how it was used and the justification for its use. Furthermore, there is no statistical analysis which corresponds to the data presented in Figure 3C-D (this is also true for 1D and 5D). Figures reflecting the statistics with some kind of posthoc tests should be included so that the reader can get an idea of what odor mixtures this occurs in.\n\n3) The authors want to emphasize the specific function of mPFC-PVT projection by measuring the different firing patterns of mPFC-PVT neurons with and w/o air-puff stressor. However, how specific this change is to this projection is unclear and this could simply reflect a general change occurring across most mPFC cells. They could do this by examining population tendencies across all mPFC cells and compare this to mPFC-PVT projection neurons.\n\n4) Based on the figure legends and information in the figures, it is very difficult to understand what is represented in Figure 3B and the right panels in Figure 5A and B. These figures should be explained in the legend and explained/referred to in the text.\n\n5) Also related to data presentation. While auROC is certainly a valuable way to identify neurons that can discriminate between reward and aversive cues, my understanding is that this is essentially a normalization and at such it limits appreciation of when a cue leads to an excitatory or an inhibitory response. It would be useful to also see the raw firing rate data for the neurons recorded. Also, for visualization purposes the authors should include pie charts summarizing electrophysiological data. This will help assess the data better and the actual proportion of cells with excitatory and inhibitory responses as well as cue discrimination.\n\n6) In Figure 2 the auROC compares mPFC neuronal activity during sucrose vs denatonium trials rather than responses to each odor per se. Considering this analysis, technically a neuron could show greater inhibition to denatonium and no response to sucrose, and this would be completely hidden by the current analyses and figures. Data should be shown in the rawest form possible. One idea is that the authors could show spike frequency heatplots in addition to the existing auROC heatplots.\n\n7) Description of data for Figure 4E-G indicate that 43% of neurons increase or decrease their activity in response to the sucrose-predictive odor, however the number that increase and the number that decrease in response to each odor is not indicated. This should be rather obvious to the reader and within both the figures and analysis.\n\n8) To give the reader a better understanding of the dynamics of the cue response during the probe trials population/trial averaged PSTHs (similar to Figure 2B) should be presented for each stimulus condition in Figure 3C and 5C. Similarly, in Figure 3C and 5C, cue evoked firing rates are presented, but it is not clear how these were binned. Do they include only cue period, trace only, cue and trace, pre/post-stimulus? Finally, for Figure 1E, 3C and 5C it is unclear what is represented on the y-axis. Are these average values? This should be clarified.\n\n9) Related to all electrophysiological figures, simply showing examples and then an average of all neurons does not take advantage of the powerful data collection that the authors have completed, could be quite misleading to readers, and is particularly important to consider given the heterogeneity of cue responses in the PFC-PVT pathway (shown here, also shown in Otis et al., 2017; Otis et al., 2019). I highly recommend inserting \"example\" right on the figure panel when it is an example, and \"population average\" when appropriate. Finally, to show the full and powerful datasets collected, authors should consider plotting and comparing cue responses for every recorded neuron. For example, for Figure 4 authors could plot sucrose odor vs baseline auROC for each cell on one axis and denatonium odor vs baseline auROC for each cell on the opposing axis for both air puff and control mice.\n\n10) The authors have framed their study as addressing the effect of \"punishment history\" on motivationally-relevant stimuli. However, at present, their experimental design does not seem to rule out the possibility that what the authors are actually evaluating here is not the effect of punishment history, but rather the response to motivational conflict. Have the authors taken any steps to ensure that context was not the main driver of the behavioral and electrophysiological changes detected? If mice are being tested in the same context in which air puffs were presented, then their decreases in reward seeking may result from this context-derived motivational conflict.\n\n11) Also related to experimental design is the notion that ambiguity seems to serve no purpose here. With the exception of the near zero response to Odor B (bitter solution), mice response to parametrically-varying odor mixtures and to Odor A itself were similarly decreased for the air puff group. There is a sense that the authors initially predicted an effect of punishment history and ambiguity on response ratio. This may have been the case had mice been tested in a different context, or trained using a different behavioral task in which punishment was not directly associated with the reward (as seems to be the case based on the current experimental design).\n\n12) The authors claim that behavior for the first and second probe tests were not different and as such the data was pooled together. They should include the comparisons for the first and second probe test in the supplementary material, as it would be useful to see this quantification.\n\n13) For optogenetic antidromic identification of mPFC-PVT projection neurons, the authors find cells that respond with a range of latencies and with a range of fidelity. One issue with the antidromic approach, however, pertains to their mention that only neurons with latencies under 15 ms and at least 70% spike probability were labeled as corticothalamic. But looking at the data shown in Figure 4d it seems that two of the neurons that passed the collision test had spike probability below 70%. Furthermore, I don't think this approach rules out orthodromic activation as many cells were not tested for collision and it is not possible to test the ability of cells to follow very high frequency stimulation or to get as accurate a readout of latency as would be possible with electrical antidromic approaches for which these criteria were developed. These issues should be clarified and discussed.\n\n14) For the PVT projection neurons (Figure 5D) the authors note that \"\u2026in both groups, firing rates of mPFC-PVT neurons for odor mixtures scaled with the proportion of the mixture that was the sucrose predicting odor\u2026\". They make similar claims about the mPFC population as a whole (Figure 3D) However, based on the data in these figures it appears that, except for the non-ambiguous cue predicting bitter outcome, the cue response in both airpuff and non-airpuff groups was fairly flat, showing that there was no proportional scaling of the response. The authors should show some statistical support for this claim or change the interpretation.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Aversive stimuli bias corticothalamic responses to motivationally-significant cues\" for further consideration by eLife. Your revised article has been reviewed by 3 reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor.\n\nThe manuscript has been greatly improved but there are some remaining issues that need to be addressed/clarified, as outlined in the reviewer comments below:\n\nReviewer #1:\n\nThe authors have addressed my previous concerns.\n\nReviewer #2:\n\nIt is this reviewer's opinion that the authors have appropriately addressed the concerns raised during the initial submission. In particular, the loss of function experiment has significantly improved the quality of the study by demonstrating that inhibition of the mPFC-PVT pathway prevents the formation of negative bias. Similarly, the addition of missing statistical information has facilitated the assessment of the authors' findings.\n\nReviewer #3:\n\nThe revisions overall were good, although I have some residual concerns listed below.\n\nOn one hand, addition of the optogenetic inhibition experiment adds causal information beyond what is already known regarding PFC\u25caPVT involvement in reward seeking. Additional data analysis and figure presentation has improved the manuscript significantly. New Figure 2A is fantastic \u2013 although I would have liked to see this in the phototagging experiment as well.\n\nOn the other hand, below are some of my concerns that either remain unaddressed or I simply can't find the in-text revisions. It would be helpful if authors indicate where exactly they have addressed each concern (e.g., line number).\n\nConcerns Not Addressed:\n\n1. The number of mice used for Figure 3, Figure 4, and Figure 5 remains unreported. Of concern is Figure 5F, where only 10 neurons are represented. Please report how many mice these 10 neurons come from.\n\n2. Authors suggest that nomenclature of s-1 (which is used for neuronal and behavioral data analysis) is now described in the text, but I cannot find it in the methods, results, or legends. Am I missing it? Why not include it in the figure legend, like mean +/- SEM?\n\nAdditional Concern\n\n1. The authors mention within their resubmission that recordings from Figure 2 were across 10 conditioning sessions, so is it possible that the same neurons were represented 10 times within a single dataset? If so, how do the authors account for sampling the same neurons repeatedly? Additionally, do the data from earlier conditioning sessions look the same as in later conditioning sessions? Considering that learning occurred across conditioning, it would be surprising if they were the same based on previous findings showing learning dependent cue-reward response development in dmPFC neurons that are stably maintained after learning (see PMID 34184635; Figure 4B). Please clarify this for me or simply add text within the results or discussion to indicate this limitation of the current analysis.\n",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "36af5695-2877-414f-9923-be83c8ccbab9",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C1",
+      "claim": "Prior exposure to aversive stimuli or stressors changes behavioral responses to negative- and positive-value predictive cues.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, prior exposure to aversive stimuli or stressors changes behavioral responses to negative- and positive-value predictive cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction, setting up the context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d406eb5a-2dbb-4e11-9837-bb5b09406964",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C2",
+      "claim": "A history of aversive stimuli negatively biased behavioral responses to motivationally relevant cues in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a history of aversive stimuli negatively biased behavioral responses to motivationally relevant cues in mice and that this negative bias was associated with hyperactivity in mPFC\u2192PVT neurons during exposure to those cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by behavioral data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "71879028-4aa2-48f2-a510-bdb35486f012",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C3",
+      "claim": "The negative behavioral bias induced by aversive stimuli was associated with hyperactivity in mPFC\u2192PVT neurons during exposure to motivationally relevant cues.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a history of aversive stimuli negatively biased behavioral responses to motivationally relevant cues in mice and that this negative bias was associated with hyperactivity in mPFC\u2192PVT neurons during exposure to those cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by neural recording data presented in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b10aa8d8-0486-4b83-9a03-e04d2e1a87ba",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C4",
+      "claim": "Optogenetic excitation of the mPFC\u2192PVT pathway recapitulated the negative behavioral bias induced by aversive stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, artificially mimicking this hyperactive response with selective optogenetic excitation of the same pathway recapitulated the negative behavioral bias induced by aversive stimuli, whereas optogenetic inactivation of mPFC\u2192PVT neurons prevented the development of the negative bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by optogenetic manipulation data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "8c763c5b-bc1f-4926-afd8-c297a622e6ad",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C5",
+      "claim": "Optogenetic inactivation of mPFC\u2192PVT neurons prevented the development of the negative bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, artificially mimicking this hyperactive response with selective optogenetic excitation of the same pathway recapitulated the negative behavioral bias induced by aversive stimuli, whereas optogenetic inactivation of mPFC\u2192PVT neurons prevented the development of the negative bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by optogenetic inhibition data presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b5925cdb-e8a7-44d1-9bf1-dce8efcfb500",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C6",
+      "claim": "Information flow within the mPFC\u2192PVT circuit is critical for making predictions about motivationally-relevant outcomes as a function of prior experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results highlight how information flow within the mPFC\u2192PVT circuit is critical for making predictions about motivationally-relevant outcomes as a function of prior experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined behavioral, recording, and optogenetic manipulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "6bb7323f-e2ae-436d-992f-e9738c2a332f",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C7",
+      "claim": "Both positive and negative mood affect decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both positive and negative mood affect decision making (Deldin and Levin, 1986; Wright and Bower, 1992; Bechara et al., 2000; Hockey et al., 2000; Dolan, 2002; Harding et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b7b2223e-70d2-474c-b5a0-cb32481b197b",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C8",
+      "claim": "Prior exposure to aversive stimuli or stressors changes behavioral responses to ambiguous stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, prior exposure to aversive stimuli or stressors changes behavioral responses to ambiguous stimuli (Harding et al., 2004; Boleij et al., 2012; Rygula et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "fe6c65d7-7b24-4282-99b5-20dc16788596",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C9",
+      "claim": "The medial prefrontal cortex (mPFC) is critical for regulating cue-mediated behaviors in both appetitive and aversive domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The medial prefrontal cortex (mPFC) is critical for regulating cue-mediated behaviors in both appetitive and aversive domains (Ishikawa et al., 2008; Burgos-Robles et al., 2009; Sotres-Bayon and Quirk, 2010; Amemori and Graybiel, 2012; Burgos-Robles et al., 2013; Courtin et al., 2014; Sangha et al., 2014; Sparta et al., 2014; Burgos-Robles et al., 2017; Otis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "51b2c6b1-4c9f-4b2f-a67e-8014f19358c5",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C10",
+      "claim": "Behavioral manifestations of appetitive and aversive conditioning correlate with changes in neural activity within the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral manifestations of appetitive and aversive conditioning correlate with changes in neural activity within the mPFC (Burgos-Robles et al., 2009; Peters et al., 2009; Amemori and Graybiel, 2012; Burgos-Robles et al., 2013; Moorman and Aston-Jones, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "fbcce688-860d-4706-a232-d8ce3194d2c8",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C11",
+      "claim": "Pharmacological or optogenetic manipulations of mPFC alter both reward-seeking and fear-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "and pharmacological or optogenetic manipulations of mPFC alter both reward-seeking and fear-related behaviors (Morgan and LeDoux, 1995; Blum et al., 2006; Corcoran and Quirk, 2007; Sierra-Mercado et al., 2011; Sangha et al., 2014; Sparta et al., 2014; Bari et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "0302e984-84e6-4832-bcf9-bfb8b476b22b",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C12",
+      "claim": "The mPFC has dense projections to subcortical structures involved in motivated behavior, including the paraventricular thalamus (PVT).",
+      "claim_type": "EXPLICIT",
+      "source": "The mPFC has dense projections to subcortical structures involved in motivated behavior, including the paraventricular thalamus (PVT) (Vertes, 2004; Li and Kirouac, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "eee5715f-22d0-4dce-a96f-d96325d32748",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C13",
+      "claim": "PVT is recruited by cues or contexts previously associated with rewarding or aversive outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the mPFC, PVT is recruited by cues or contexts previously associated with rewarding or aversive outcomes (Beck and Fibiger, 1995; Schiltz et al., 2007; Yasoshima et al., 2007; Choi et al., 2010; Igelstrom et al., 2010; Haight and Flagel, 2014; Hsu et al., 2014; Do-Monte et al., 2015; Kirouac, 2015; Matzeu et al., 2015; Penzo et al., 2015; Li et al., 2016; Zhu et al., 2016; Do-Monte et al., 2017; McNally, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "8e6af04b-285e-4089-bfad-1fb5bdc21aee",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C14",
+      "claim": "PVT neurons are activated by multiple forms of stressors.",
+      "claim_type": "EXPLICIT",
+      "source": "PVT neurons are activated by multiple forms of stressors (Chastrette et al., 1991; Sharp et al., 1991; Cullinan et al., 1995; Bubser and Deutch, 1999; Spencer et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "073ef47e-fcd7-4182-ae5b-35130c67ba5b",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C15",
+      "claim": "PVT coordinates behavioral responses to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "and coordinate behavioral responses to stress (Hsu et al., 2014; Do-Monte et al., 2015; Penzo et al., 2015; Zhu et al., 2016; Do-Monte et al., 2017; Beas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "cccb156f-e4d2-4124-8ae4-516a3c7be41e",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C16",
+      "claim": "PVT plays a role in multiple forms of stimulus-reward learning.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, under conditions of opposing emotional valence, PVT plays a role in multiple forms of stimulus-reward learning and PVT neurons have been reported to show reward-modulated responses (Schiltz et al., 2005; Igelstrom et al., 2010; Martin-Fardon and Boutrel, 2012; James and Dayas, 2013; Browning et al., 2014; Haight and Flagel, 2014; Li et al., 2016; Choi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "5db37453-8fe4-40a1-8419-d37273bbe2e1",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C17",
+      "claim": "PVT neurons have been reported to show reward-modulated responses.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, under conditions of opposing emotional valence, PVT plays a role in multiple forms of stimulus-reward learning and PVT neurons have been reported to show reward-modulated responses (Schiltz et al., 2005; Igelstrom et al., 2010; Martin-Fardon and Boutrel, 2012; James and Dayas, 2013; Browning et al., 2014; Haight and Flagel, 2014; Li et al., 2016; Choi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d29b76bd-3419-42a6-a53f-7b25caa8b841",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C18",
+      "claim": "PVT is especially critical during motivational conflict.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work suggests that PVT is especially critical during motivational conflict (Li et al., 2014; Choi and McNally, 2017; Zhu et al., 2018; Engelke et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "175758ff-0d70-45a6-9125-3205463a372f",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C19",
+      "claim": "Inhibition across the anterior\u2013posterior axis of the PVT disrupts arbitration between appetitive and aversive behaviors when they are in conflict but has no effect when these behaviors are assessed in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition across the anterior\u2013posterior axis of the PVT disrupts arbitration between appetitive and aversive behaviors when they are in conflict but has no effect when these behaviors are assessed in isolation (Choi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "173a4952-c142-4076-85b9-c072d89175c7",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C20",
+      "claim": "Activity in mPFC neurons projecting to the PVT suppresses both the acquisition and expression of conditioned reward seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, activity in mPFC neurons projecting to the PVT also suppresses both the acquisition and expression of conditioned reward seeking (Otis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b26e961c-6b22-4c71-8f4b-39e6973557bd",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C21",
+      "claim": "Mice in both air-puff and no-air-puff groups quickly learned the CS-US associations.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, mice in both air-puff and no-air-puff groups quickly learned the CS-US associations: they showed increases in anticipatory licking responses to the positive, sucrose-predicting cue and in the delay before sucrose arrived across conditioning sessions, while withholding licking after sampling the negative, denatonium-predicting cue (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "19855b5c-e5c2-4fe1-823e-179a5be21395",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C22",
+      "claim": "Mice showed increases in anticipatory licking responses to the positive, sucrose-predicting cue across conditioning sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, mice in both air-puff and no-air-puff groups quickly learned the CS-US associations: they showed increases in anticipatory licking responses to the positive, sucrose-predicting cue and in the delay before sucrose arrived across conditioning sessions, while withholding licking after sampling the negative, denatonium-predicting cue (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "23143471-8efd-4d73-bd17-280bff52d337",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C23",
+      "claim": "Mice withheld licking after sampling the negative, denatonium-predicting cue.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, mice in both air-puff and no-air-puff groups quickly learned the CS-US associations: they showed increases in anticipatory licking responses to the positive, sucrose-predicting cue and in the delay before sucrose arrived across conditioning sessions, while withholding licking after sampling the negative, denatonium-predicting cue (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "37cd3598-0538-45ee-adfa-e840079a29c3",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C27",
+      "claim": "Mice in both no-air-puff and air-puff groups quickly re-adapted to the new associations during reversal learning.",
+      "claim_type": "EXPLICIT",
+      "source": "During reversal learning, in which A and B contingencies were reversed, mice in both no-air-puff and air-puff groups quickly re-adapted to the new associations (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "4e0bcda7-bec3-4bb0-9003-12dbd0ffee46",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C29",
+      "claim": "Licking rates for odor mixtures scaled with the proportion of the mixture that was the sucrose-predicting odor.",
+      "claim_type": "EXPLICIT",
+      "source": "Licking rates for odor mixtures scaled with the proportion of the mixture that was the sucrose-predicting odor. This indicates that mice responded to parametrically varying ambiguous stimuli with smoothly varying behavioral responses (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d0db1c28-6eb2-4eef-aed9-03d8538f3ddc",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C30",
+      "claim": "Mice responded to parametrically varying ambiguous stimuli with smoothly varying behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Licking rates for odor mixtures scaled with the proportion of the mixture that was the sucrose-predicting odor. This indicates that mice responded to parametrically varying ambiguous stimuli with smoothly varying behavioral responses (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the behavioral data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "47c3d929-1119-4776-8029-d887503d0344",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C31",
+      "claim": "Mice exposed to air puffs responded to ambiguous odor mixtures with fewer licks during the anticipatory odor and delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mice exposed to air puffs responded to ambiguous odor mixtures with fewer licks during the anticipatory odor and delay period indicating that exposure to aversive stimuli biased decisions about ambiguous outcomes toward avoidance and away from approach (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "4f84d9de-3173-44fb-ae1f-e2a23e979089",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C32",
+      "claim": "Exposure to aversive stimuli biased decisions about ambiguous outcomes toward avoidance and away from approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mice exposed to air puffs responded to ambiguous odor mixtures with fewer licks during the anticipatory odor and delay period indicating that exposure to aversive stimuli biased decisions about ambiguous outcomes toward avoidance and away from approach (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the behavioral data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b6644450-e8da-4901-a9d9-319415f6ac3f",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C35",
+      "claim": "The reduced licking to ambiguous cues in the air-puff group was evident on the first trial of the probe test and persisted throughout all probe test trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the reduced licking to ambiguous cues in the air-puff group was evident on the first trial of the probe test and persisted throughout all probe test trials (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by trial-by-trial behavioral data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "c147360e-b679-4006-9a2d-d2560b507513",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C36",
+      "claim": "The decline in responding was not due to effects of extinction in the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the decline in responding was not due to effects of extinction in the probe test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that the effect was present from the first trial.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b2839cc6-b221-4237-a510-08c7e66a65dd",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C37",
+      "claim": "Both groups showed similar extinction of responding to ambiguous cues across trials resulting from outcome omission.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both groups showed similar extinction of responding to ambiguous cues across trials resulting from outcome omission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the statistical analysis showing no three-way interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d796d0f0-4cd4-4d09-97b5-c5eadd151006",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C40",
+      "claim": "2208 mPFC neurons were recorded from 12 mice (929 neurons from 5 mice exposed to air puffs, 1279 neurons from 7 mice unexposed).",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded action potentials extracellularly from 2208 mPFC neurons in 12 mice, five exposed to air puffs (929 neurons), seven unexposed (1279 neurons), while mice performed the go/no-go discrimination task (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset collected in the electrophysiology experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "47412d73-b596-48ba-be97-28bc319f040c",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C41",
+      "claim": "Most neurons showed firing rate increases or decreases following odor cues, largely with persistent activity that lasted beyond cue offset.",
+      "claim_type": "EXPLICIT",
+      "source": "Most neurons showed firing rate increases or decreases following odor cues, largely with persistent activity that lasted beyond cue offset (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neural recording data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "0b92a26f-8ef4-4ab7-a688-5b82052a2a43",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C44",
+      "claim": "A large fraction of neurons (270 of 929 in mice exposed to air puffs and 325 of 1279 in mice unexposed) showed auROC values greater than 0.7 or less than 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "A large fraction of neurons (270 of 929 in mice exposed to air puffs and 325 of 1279 in mice unexposed) showed auROC values greater than 0.7, indicating substantially greater activity for sucrose compared to denatonium trials, or values less than 0.3, indicating substantially greater activity for denatonium compared to sucrose trials (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neural recording data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "37eb7bd0-661c-4fa9-ae8a-da158d67f60a",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C46",
+      "claim": "136 neurons were recorded from mPFC in the no-air-puff group during probe sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded from 136 neurons from mPFC in the no-air-puff group and 106 neurons from mPFC in air-puff exposed mice during the probe sessions (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset collected during probe sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d2b56999-462f-4f4e-a712-89e4d7e2302c",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C47",
+      "claim": "106 neurons were recorded from mPFC in air-puff exposed mice during probe sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded from 136 neurons from mPFC in the no-air-puff group and 106 neurons from mPFC in air-puff exposed mice during the probe sessions (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset collected during probe sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "2c3c35ca-398e-4500-809c-67e8751bae73",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C48",
+      "claim": "37 neurons in the no-air-puff group exhibited auROC discrimination between sucrose and denatonium trials greater than 0.7 or less than 0.3 during the probe sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "These populations included 37 in the no-air-puff group and 25 in the air-puff group that exhibited auROC discrimination between sucrose and denatonium trials greater than 0.7 or less than 0.3 during the probe sessions (see Figure 3A,B for two example neurons in mice unexposed or exposed to air puffs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a subset of neurons analyzed during probe sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "84a2318a-0e6c-4fde-9fdd-20dae7def6f8",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C49",
+      "claim": "25 neurons in the air-puff group exhibited auROC discrimination between sucrose and denatonium trials greater than 0.7 or less than 0.3 during the probe sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "These populations included 37 in the no-air-puff group and 25 in the air-puff group that exhibited auROC discrimination between sucrose and denatonium trials greater than 0.7 or less than 0.3 during the probe sessions (see Figure 3A,B for two example neurons in mice unexposed or exposed to air puffs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a subset of neurons analyzed during probe sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "cd466357-107e-4d2a-99ea-8eac68e178f5",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C52",
+      "claim": "39 neurons were identified as projecting to PVT in mice unexposed to air puffs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 39 and 45 neurons as projecting to PVT in mice unexposed and exposed to air puffs, respectively (Figure 4D; no air puff group: 18 and 21 neurons during conditioning and probe sessions, respectively; air puff group: 35 and 10 neurons during conditioning and probe sessions, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the dataset of identified corticothalamic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b44e9f86-a09a-4ac1-8eda-8ae0f5879087",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C53",
+      "claim": "45 neurons were identified as projecting to PVT in mice exposed to air puffs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 39 and 45 neurons as projecting to PVT in mice unexposed and exposed to air puffs, respectively (Figure 4D; no air puff group: 18 and 21 neurons during conditioning and probe sessions, respectively; air puff group: 35 and 10 neurons during conditioning and probe sessions, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the dataset of identified corticothalamic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "85efebfb-f0fc-4935-b586-10ae83bcc823",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C54",
+      "claim": "43% of mPFC\u2192PVT neurons recorded from mice in the air puff group showed firing rate changes in response to air-puff-predicting stimuli during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 43% of mPFC\u2192PVT neurons recorded from mice in the air puff group showed firing rate changes (5 of 35 neurons with increases and 10 of 35 neurons with decreases) in response to air-puff-predicting stimuli during conditioning (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neural recording data shown in Figure 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "43014fe4-1ed6-4c5c-b90b-00f10f3bcdc5",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C55",
+      "claim": "5 of 35 mPFC\u2192PVT neurons showed increases in firing rate in response to air-puff-predicting stimuli during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 43% of mPFC\u2192PVT neurons recorded from mice in the air puff group showed firing rate changes (5 of 35 neurons with increases and 10 of 35 neurons with decreases) in response to air-puff-predicting stimuli during conditioning (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neural recording data shown in Figure 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "a97c9e05-8a3a-4ef4-9466-7e508b158317",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C56",
+      "claim": "10 of 35 mPFC\u2192PVT neurons showed decreases in firing rate in response to air-puff-predicting stimuli during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 43% of mPFC\u2192PVT neurons recorded from mice in the air puff group showed firing rate changes (5 of 35 neurons with increases and 10 of 35 neurons with decreases) in response to air-puff-predicting stimuli during conditioning (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neural recording data shown in Figure 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d8944062-bb0e-415c-8ca6-e4ee6008230f",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C57",
+      "claim": "mPFC\u2192PVT neurons, thought to be involved in behavioral responses to aversive-predicting stimuli, are indeed modulated by those stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that mPFC\u2192PVT neurons, thought to be involved in behavioral responses to aversive-predicting stimuli, are indeed modulated by those stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the neural recording data showing responses to air-puff-predicting stimuli.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "2e486165-6ee2-444a-83c0-62e71b5ac1fa",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C62",
+      "claim": "During the probe test, ChR2 mice showed a reduction in response to denatonium- and sucrose-predictive cues and ambiguous cues in the trials in which light was delivered in a frequency-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "During the subsequent probe test, ChR2 mice showed a reduction in response to denatonium- and sucrose-predictive cues and ambiguous cues in the trials in which light was delivered in a frequency-dependent manner, whereas eYFP mice that received the same treatment responded equally in trials with or without light delivery (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data during optogenetic stimulation shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "a4f624cd-49b8-4310-8790-0be75023b6ba",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C63",
+      "claim": "eYFP mice that received the same treatment responded equally in trials with or without light delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "During the subsequent probe test, ChR2 mice showed a reduction in response to denatonium- and sucrose-predictive cues and ambiguous cues in the trials in which light was delivered in a frequency-dependent manner, whereas eYFP mice that received the same treatment responded equally in trials with or without light delivery (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data during optogenetic stimulation shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "5d6ae131-f5ea-46f8-8f2d-2aa8855798e2",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C68",
+      "claim": "Stimulation of mPFC\u2192PVT neurons did not disrupt licking for an unpredictable reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of the same neurons did not, however, disrupt licking for an unpredictable reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d1c8df09-7972-4398-8868-063920c8e198",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C69",
+      "claim": "Stimulation of mPFC\u2192PVT axons during reward delivery did not change the number of licks in response to unexpected rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, stimulation of mPFC\u2192PVT axons during reward delivery at the same frequencies used in the behavioral task in half of the total number of trials did not change the number of licks in response to these rewards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "2ce3bee5-7d3b-4274-9bf4-00dfb270b22a",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C71",
+      "claim": "Uncued licking is not altered by optogenetic excitation of mPFC\u2192PVT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, uncued licking is not altered by optogenetic excitation of mPFC\u2192PVT cells and the optogenetic effects are not due to a light-induced impairment in licking in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the behavioral data showing no effect on uncued licking.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "0d95df3e-31ca-46f8-be91-2ad58fb10390",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C72",
+      "claim": "The optogenetic effects are not due to a light-induced impairment in licking in general.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, uncued licking is not altered by optogenetic excitation of mPFC\u2192PVT cells and the optogenetic effects are not due to a light-induced impairment in licking in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the behavioral data showing no effect on uncued licking.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "f3a8b23f-5c25-40e1-8bec-165dc13cef7c",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C75",
+      "claim": "During the probe test, mice expressing EYFP showed a reduction in response to denatonium- and sucrose-predictive cues and ambiguous cues compared to mice expressing eNpHR3.0-EYFP.",
+      "claim_type": "EXPLICIT",
+      "source": "During the probe test, mice expressing EYFP showed a reduction in response to denatonium- and sucrose-predictive cues and ambiguous cues in the trials compared to mice expressing eNpHR3.0-EYFP (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data during optogenetic inhibition shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "77927130-afad-4653-ba79-e770af59704e",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C78",
+      "claim": "Cognitive processes play an important role in generating affective states, and these affective states influence cognitive functioning by inducing attentional, memory, and judgment biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognitive processes\u2014appraisals of stimuli, events and situations\u2014play an important role in generating affective states, and these affective states influence cognitive functioning by inducing attentional, memory, and judgment biases (Lerner and Keltner, 2000; Haselton et al., 2009; Harding et al., 2004; Enkel et al., 2010; Rygula et al., 2012; Papciak et al., 2013; Rygula et al., 2013; Parker et al., 2014; Rygula et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "267f7e3d-816c-4ffe-927c-dbb8ea244e02",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C79",
+      "claim": "The mPFC has long been implicated in adaptive responding by signaling information about expected outcome and by regulating sensitivity to reward and punishment.",
+      "claim_type": "EXPLICIT",
+      "source": "Among brain regions that are engaged in affective processing, the mPFC has long been implicated in adaptive responding by signaling information about expected outcome and by regulating sensitivity to reward and punishment (Holland and Gallagher, 2004; Luk and Wallis, 2009; Alexander and Brown, 2011; Del Arco et al., 2017; Orsini et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "282b54e6-b125-4851-b812-2e5856774b2d",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C80",
+      "claim": "Firing rates in mPFC neurons reflect cue-evoked expectations for aversion- and reward-predictive cues and were enhanced in mice exposed to aversive stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that firing rates in mPFC neurons reflect cue-evoked expectations for aversion- and reward-predictive cues and were enhanced in mice exposed to aversive stimuli, which correlates with a reduction in anticipatory responses to the same stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the neural recording findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "3d231b2a-d069-4f0c-9d6d-e518faaf10ac",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C81",
+      "claim": "Enhanced firing rates in mPFC neurons in mice exposed to aversive stimuli correlate with a reduction in anticipatory responses to the same stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that firing rates in mPFC neurons reflect cue-evoked expectations for aversion- and reward-predictive cues and were enhanced in mice exposed to aversive stimuli, which correlates with a reduction in anticipatory responses to the same stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation between neural and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b53a2e61-238a-45a9-aa09-62bbca9419c7",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C82",
+      "claim": "Negative events can bias decisions by altering the activity of mPFC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with a negative bias and suggest that negative events can bias decisions by altering the activity of mPFC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "7854fd24-30f4-474e-bd17-3ff74efaa57e",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C83",
+      "claim": "The prefrontal network is implicated in the pathophysiology of affective disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have implicated the prefrontal network in the pathophysiology of affective disorders (Phillips et al., 2003; Drevets et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "a441b9e2-0d9f-41ff-a58f-d5c45bd62e96",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C84",
+      "claim": "Chronic stress has profound detrimental effects on the anatomy and physiology of mPFC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and chronic stress\u2014a crucial factor in increasing the risk of developing affective disorders\u2014has profound detrimental effects on the anatomy and physiology of mPFC neurons (Wellman, 2001; Cook and Wellman, 2004; Radley et al., 2004; Liston et al., 2006; Radley et al., 2006; Cerqueira et al., 2007; Wei et al., 2007; Liu and Aghajanian, 2008; Radley et al., 2008; Goldwater et al., 2009; Yuen et al., 2012; Adhikari et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "c613a35a-035f-4af4-a28e-6c9bdccdc04b",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C85",
+      "claim": "Chronic stress induces significant regression of the apical dendrites of pyramidal neurons in mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chronic stress induces significant regression of the apical dendrites of pyramidal neurons in mPFC (Cook and Wellman, 2004; Radley et al., 2004; Liston et al., 2006; Goldwater et al., 2009), which may in turn impact mPFC function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d9b32de6-b629-4de7-a8cc-aa9507dc0a0e",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C86",
+      "claim": "Regression of apical dendrites of pyramidal neurons in mPFC may impact mPFC function.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chronic stress induces significant regression of the apical dendrites of pyramidal neurons in mPFC (Cook and Wellman, 2004; Radley et al., 2004; Liston et al., 2006; Goldwater et al., 2009), which may in turn impact mPFC function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on anatomical changes.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "d0b4c2bc-3050-4269-b93d-d28c5282dac7",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C87",
+      "claim": "The mPFC densely projects to subcortical structures relevant for the behavioral task, including PVT, amygdala, hippocampus, and nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "The mPFC densely projects to subcortical structures relevant for our behavioral task, including PVT, amygdala, hippocampus, and nucleus accumbens (Vertes, 2004; Li and Kirouac, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "a9456a7f-0e2d-4878-9306-bbed2e5764a2",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C88",
+      "claim": "PVT has long been considered a stress detector and implicated in the emergence of adaptive responding to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all brain regions that receive strong projections from the mPFC, PVT has long been considered a stress detector and implicated in the emergence of adaptive responding to stress (Chastrette et al., 1991; Sharp et al., 1991; Cullinan et al., 1995; Bubser and Deutch, 1999; Spencer et al., 2004; Hsu et al., 2014; Do-Monte et al., 2015; Penzo et al., 2015; Zhu et al., 2016; Do-Monte et al., 2017; Beas et al., 2018; Choi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "a0c9f7eb-2507-4e28-b9f4-045a0f40ec82",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C89",
+      "claim": "PVT has been considered a potential mediator of motivated behavior responding to both food- and drug-associated cues.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, PVT has also been considered a potential mediator of motivated behavior responding to both food- and drug-associated cues (Schiltz et al., 2005; Igelstrom et al., 2010; Martin-Fardon and Boutrel, 2012; James and Dayas, 2013; Browning et al., 2014; Haight and Flagel, 2014; Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "bc29eba6-fed0-4a9b-af94-aed02574ad5a",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C90",
+      "claim": "mPFC neurons projecting to the PVT maintain cue-evoked expectations for motivationally-relevant outcomes and their neural activity was enhanced in mice exposed to aversive stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings that place PVT in a position to integrate information about positive and negative motivationally relevant cues and translate it into adaptive behavioral responses (McNally, 2021), we found that mPFC neurons projecting to the PVT maintain cue-evoked expectations for motivationally-relevant outcomes and their neural activity was enhanced in mice exposed to aversive stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings on corticothalamic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "3ab31722-eda3-4bb2-a903-b8dd35983d2b",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C91",
+      "claim": "The experimental design cannot rule out the influence of context-derived motivational conflict on the observed behavioral outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "A feature of our experimental design is worth comment. In our experiments, mice were exposed to aversive stimuli in the same context in which they received motivationally-relevant cues. This design cannot rule out the influence of context-derived motivational conflict on the observed behavioral outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "38b41201-780b-411a-9331-2015442ae4b5",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C92",
+      "claim": "PVT is important for behavioral control when appetitive and aversive behaviors are elicited at the same time and the animal must select between them.",
+      "claim_type": "EXPLICIT",
+      "source": "PVT seems important for behavioral control when appetitive and aversive behaviors are elicited at the same time and the animal must select between them (Li et al., 2014; Choi and McNally, 2017; Zhu et al., 2018; Choi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "33969780-f9c3-4645-a292-45d86a991278",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C93",
+      "claim": "By mimicking the increased response of mPFC\u2192PVT neurons induced by exposure to aversive stimuli, a reduction in anticipatory responses to the predictive cues was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "By mimicking the increased response of mPFC\u2192PVT neurons induced by exposure to aversive stimuli, we observed a reduction in anticipatory responses to the predictive cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the optogenetic stimulation findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b03cab9c-2082-4a3b-bc50-1480e98d7f52",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C94",
+      "claim": "Selective inhibition of the mPFC\u2192PVT pathway prevented the formation of negative biases.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, selective inhibition of this pathway prevented the formation of negative biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the optogenetic inhibition findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "8716d779-9580-4ae0-8de8-eaef4b06ad49",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C95",
+      "claim": "Information about cue interpretation is transferred from mPFC to PVT and this pathway is crucial for adaptive responding toward those stimuli as a function of previous experience.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that information about cue interpretation is transferred from mPFC to PVT and this pathway is crucial for adaptive responding toward those stimuli as a function of previous experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the combined findings from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "91d80b79-69b1-4727-9118-f441650c1acc",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C96",
+      "claim": "Activity in mPFC neurons projecting to the PVT suppresses both the acquisition and expression of conditioned reward seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are also consistent with a recent study showing that activity in mPFC neurons projecting to the PVT suppresses both the acquisition and expression of conditioned reward seeking (Otis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature and is consistent with the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "fd89a0e7-c843-496d-a988-9137e83438a5",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C97",
+      "claim": "There are two genetically, anatomically, and functionally distinct cell types across the anteroposterior axis of the PVT.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent evidence showing two genetically, anatomically, and functionally distinct cell types across the anteroposterior axis of the PVT (Gao et al., 2020), it will be interesting to investigate in future studies whether the information from mPFC is transferred to anatomically or molecularly segregated cell types or projection-specific neurons within the PVT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "9b52bc55-70a6-481f-bea3-7760e22d70eb",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C98",
+      "claim": "Signals from mPFC to PVT inputs propagate onto PVT projections to nucleus accumbens neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, signals from mPFC to PVT inputs have been recently shown to propagate onto PVT projections to nucleus accumbens neurons (Otis et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "1e098426-3512-4215-8b52-83c85e1d796a",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C99",
+      "claim": "mPFC to PVT signals are responsible for influencing reward seeking by adjusting a multiplexed reward signal in downstream PVT\u2192nucleus accumbens neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and are responsible for influencing reward seeking by adjusting a multiplexed reward signal in downstream PVT\u2192nucleus accumbens neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the citation to Otis et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "e33f9fb8-9e25-4c44-9f32-001bbb7a7dcf",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C100",
+      "claim": "Adaptive tuning of the mPFC\u2192PVT network is modulated by ascending monoaminergic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive tuning of this network is modulated by ascending monoaminergic systems (Arnsten et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "8200c6af-baea-4354-ab89-780a9cc53045",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C101",
+      "claim": "Maladaptive changes of monoaminergic systems have been implicated in cognitive deficits associated with several affective disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "and maladaptive changes of these systems has been implicated in cognitive deficits associated with several affective disorders (Enkel et al., 2010; Kukolja et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "2be7a77c-8deb-4f5f-8b3c-4ed03f35b449",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C102",
+      "claim": "Acute pharmacological stimulation of the serotonergic and dopaminergic systems has been shown to influence cognitive bias in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, acute pharmacological stimulation of the serotonergic and dopaminergic systems has been shown to influence cognitive bias in rodents (Rygula et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "5687a9e2-aac6-4035-aa98-29e54d5ff2cf",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C103",
+      "claim": "Citalopram and amphetamine both induced a positive cognitive processing bias in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, citalopram, a selective serotonin reuptake inhibitor, and amphetamine, a powerful psychostimulant, both induced a positive cognitive processing bias (Rygula et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "218b64ee-9d5a-40d7-8812-3f4f4b51c839",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C104",
+      "claim": "Negative cognitive bias lies at the core of the pathophysiology of several affective disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Those results are important from a clinical point of view, knowing that negative cognitive bias lies at the core of the pathophysiology of several affective disorders and it has been extensively studied in humans (Wright and Bower, 1992; MacLeod and Byrne, 1996; Beck, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "09629435-430c-4bad-8810-dff7d98f92d0",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C105",
+      "claim": "Patients with anxiety and depression interpret ambiguous information with a negative bias.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been shown that patients with anxiety and depression interpret ambiguous information with a negative bias (Schwarz and Clore, 1983; Eysenck et al., 1987; Wright and Bower, 1992; MacLeod and Byrne, 1996; Lawson et al., 2002; Beck, 2008; Chan et al., 2008; Pizzagalli et al., 2008; Dearing and Gotlib, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "0a0b8a9c-7137-4ac1-a710-1be35ed49505",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C106",
+      "claim": "By using exposure to aversive stimuli, a negative bias was induced in mice in response to ambiguous stimuli, which was linked to an increase in firing rates of PVT-projecting mPFC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, by using exposure to aversive stimuli, we induced a negative bias in mice in response to ambiguous stimuli, which was linked to an increase in firing rates of PVT-projecting mPFC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "0ee126be-9b8e-4f63-96c7-10a3afa03580",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C107",
+      "claim": "Artificial activation of the mPFC\u2192PVT pathway recapitulated the behavioral outcome of negative bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial activation of the same pathway recapitulated the behavioral outcome while inhibition prevented the formation of negative biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the optogenetic manipulation findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "79f967a6-1242-44dc-8966-d2868e6337d1",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C108",
+      "claim": "Inhibition of the mPFC\u2192PVT pathway prevented the formation of negative biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial activation of the same pathway recapitulated the behavioral outcome while inhibition prevented the formation of negative biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the optogenetic manipulation findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "c7a701fa-9c29-4660-b606-68c2fee1cf45",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "claim_id": "C109",
+      "claim": "The mPFC\u2192PVT circuit plays a fundamental role in shaping adaptive responses by modulating predictions about imminent motivationally-relevant outcomes as a function of prior experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results highlight a fundamental role for the mPFC\u2192PVT circuit in shaping adaptive responses by modulating predictions about imminent motivationally-relevant outcomes as a function of prior experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "edb48e69-b99f-4b6f-97a9-aa428357b929",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mice in both air-puff and no-air-puff groups successfully learned the go/no-go discrimination task, showing increased anticipatory licking to sucrose-predicting cues and withholding licking to denatonium-predicting cues. Both groups also successfully adapted to reversed contingencies during reversal learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C27 are supported by behavioral data in Figure 1B and statistical analyses (three-factor ANOVA showing significant main effects of session and cue). The data demonstrate that both groups learned the task and adapted to reversals, establishing the baseline behavioral competence necessary for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "b84ed7ce-93c7-48fc-a603-afaa7736676a",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mice exposed to aversive air puffs showed a negative bias in responding to ambiguous odor mixtures, exhibiting fewer anticipatory licks compared to control mice. This bias was evident from the first trial and persisted throughout testing, indicating it was not due to extinction but rather a genuine shift in decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 are well-supported by behavioral data in Figures 1C-E and statistical analyses (two-factor ANOVA showing significant cue \u00d7 group interaction, p<0.01). The trial-by-trial analysis (C35) and lack of three-way interaction (C37) provide strong evidence that the effect represents a genuine negative bias rather than extinction or learning artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "30a69ed7-758c-47d6-8e77-b53133fd6664",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Electrophysiological recordings from 2208 mPFC neurons revealed that most neurons showed firing rate changes following odor cues with persistent activity beyond cue offset. A substantial fraction (270/929 in air-puff exposed mice, 325/1279 in unexposed mice) showed strong discriminability between sucrose and denatonium trials (auROC >0.7 or <0.3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by neural recording data in Figure 2. The large sample size (2208 neurons from 12 mice) and clear discrimination metrics provide robust evidence. However, the manuscript does not fully address potential issues with unit isolation quality across all recordings or whether neurons were recorded multiple times from the same animals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "e9082d4d-600a-4d22-b483-a814b7830f86",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During probe sessions, mPFC neurons from air-puff exposed mice showed significantly higher cue-evoked firing rates compared to unexposed mice across all odor mixtures. This enhanced neural activity in air-puff exposed mice correlated with reduced anticipatory licking behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 and C80-C81 are supported by neural data in Figure 3 and Poisson regression analysis showing significant effects of air-puff exposure (z=0.043\u00b10.014, p<0.001). The correlation between enhanced firing and reduced licking (C81) is appropriately described as correlational rather than causal. The use of Poisson regression is appropriate for spike count data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using antidromic identification, 39 and 45 mPFC\u2192PVT projection neurons were identified in unexposed and air-puff exposed mice, respectively. In air-puff exposed mice, 43% of these corticothalamic neurons showed firing rate changes to air-puff-predicting stimuli, and their activity to reward-predictive and ambiguous cues was enhanced compared to unexposed mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C57 and C90 describe projection-specific recordings, but several methodological concerns limit confidence. The manuscript acknowledges that not all neurons underwent collision tests, raising the possibility of orthodromic activation via local synapses. The relatively small sample sizes (39 and 45 neurons) and unequal distribution across conditioning/probe sessions make statistical comparisons challenging. The criteria for antidromic identification (<15 ms latency, >70% response reliability) are reasonable but may include some false positives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optogenetic excitation of mPFC\u2192PVT neurons during cue presentation recapitulated the negative behavioral bias induced by air puffs, reducing licking to sucrose-predictive, denatonium-predictive, and ambiguous cues in a frequency-dependent manner (10 Hz and 20 Hz). This effect was specific to cued trials, as stimulation did not affect licking for unpredictable rewards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 and C68-C72 are supported by optogenetic data in Figure 6 with appropriate controls (eYFP mice showed no effect). The three-factor ANOVA shows significant main effects and interactions. The control experiment with unpredictable rewards (C68-C72) strengthens the interpretation that effects are specific to cue-driven predictions rather than motor impairment. However, the manuscript does not report whether light delivery itself might serve as a cue or whether heating artifacts were controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "41204165-4c40-4381-8ca8-a2563761e003",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of mPFC\u2192PVT neurons during air-puff trials throughout conditioning prevented the development of negative bias. During subsequent probe tests, eNpHR3.0-expressing mice showed less reduction in responding to ambiguous cues compared to eYFP control mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C94, and C108 are supported by optogenetic inhibition data in Figure 7D with appropriate statistical analysis (two-factor ANOVA showing significant main effects of cue and group). This causal manipulation complements the excitation experiments. However, the sample sizes are small (n=3 eYFP, n=5 eNpHR3.0), and the manuscript does not report whether inhibition affected learning of the basic discrimination task itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mPFC\u2192PVT circuit plays a critical role in how prior aversive experience biases behavioral responses to motivationally relevant cues. Aversive stimuli induce hyperactivity in this pathway, which is both necessary (inhibition prevents bias formation) and sufficient (excitation recapitulates bias) for generating negative biases in decision-making about ambiguous outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6 and C82, C95, C106, C109 represent the main conclusions integrating behavioral, electrophysiological, and optogenetic findings. The convergent evidence from correlational (neural recordings) and causal (optogenetic) approaches provides strong support. However, the experimental design confounds context and aversive experience (C91), and the mechanism by which enhanced mPFC\u2192PVT activity reduces approach behavior remains unclear. The pathway could be modulating valuation, uncertainty, or other processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    },
+    {
+      "id": "91a7ba7b-c8d7-4113-8b06-674a2e2ab9ab",
+      "content_id": "53ceb9e1-a35e-4b06-95a6-a77f6e862737",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experimental design cannot rule out the influence of context-derived motivational conflict on the observed behavioral outcomes, as mice were exposed to aversive stimuli in the same context where they received motivationally-relevant cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is an explicit acknowledgment by the authors of a limitation in their experimental design. This is appropriately identified as a confound that prevents definitive conclusions about whether the effects are due to aversive experience per se or context-dependent conflict. Future experiments with separate contexts would be needed to resolve this.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:43:05.011468Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b26e961c-6b22-4c71-8f4b-39e6973557bd",
+      "result_id": "edb48e69-b99f-4b6f-97a9-aa428357b929"
+    },
+    {
+      "claim_id": "19855b5c-e5c2-4fe1-823e-179a5be21395",
+      "result_id": "edb48e69-b99f-4b6f-97a9-aa428357b929"
+    },
+    {
+      "claim_id": "23143471-8efd-4d73-bd17-280bff52d337",
+      "result_id": "edb48e69-b99f-4b6f-97a9-aa428357b929"
+    },
+    {
+      "claim_id": "37cd3598-0538-45ee-adfa-e840079a29c3",
+      "result_id": "edb48e69-b99f-4b6f-97a9-aa428357b929"
+    },
+    {
+      "claim_id": "4e0bcda7-bec3-4bb0-9003-12dbd0ffee46",
+      "result_id": "b84ed7ce-93c7-48fc-a603-afaa7736676a"
+    },
+    {
+      "claim_id": "d0db1c28-6eb2-4eef-aed9-03d8538f3ddc",
+      "result_id": "b84ed7ce-93c7-48fc-a603-afaa7736676a"
+    },
+    {
+      "claim_id": "47c3d929-1119-4776-8029-d887503d0344",
+      "result_id": "b84ed7ce-93c7-48fc-a603-afaa7736676a"
+    },
+    {
+      "claim_id": "4f84d9de-3173-44fb-ae1f-e2a23e979089",
+      "result_id": "b84ed7ce-93c7-48fc-a603-afaa7736676a"
+    },
+    {
+      "claim_id": "b6644450-e8da-4901-a9d9-319415f6ac3f",
+      "result_id": "b84ed7ce-93c7-48fc-a603-afaa7736676a"
+    },
+    {
+      "claim_id": "c147360e-b679-4006-9a2d-d2560b507513",
+      "result_id": "b84ed7ce-93c7-48fc-a603-afaa7736676a"
+    },
+    {
+      "claim_id": "b2839cc6-b221-4237-a510-08c7e66a65dd",
+      "result_id": "b84ed7ce-93c7-48fc-a603-afaa7736676a"
+    },
+    {
+      "claim_id": "d796d0f0-4cd4-4d09-97b5-c5eadd151006",
+      "result_id": "30a69ed7-758c-47d6-8e77-b53133fd6664"
+    },
+    {
+      "claim_id": "47412d73-b596-48ba-be97-28bc319f040c",
+      "result_id": "30a69ed7-758c-47d6-8e77-b53133fd6664"
+    },
+    {
+      "claim_id": "0b92a26f-8ef4-4ab7-a688-5b82052a2a43",
+      "result_id": "30a69ed7-758c-47d6-8e77-b53133fd6664"
+    },
+    {
+      "claim_id": "37eb7bd0-661c-4fa9-ae8a-da158d67f60a",
+      "result_id": "e9082d4d-600a-4d22-b483-a814b7830f86"
+    },
+    {
+      "claim_id": "d2b56999-462f-4f4e-a712-89e4d7e2302c",
+      "result_id": "e9082d4d-600a-4d22-b483-a814b7830f86"
+    },
+    {
+      "claim_id": "2c3c35ca-398e-4500-809c-67e8751bae73",
+      "result_id": "e9082d4d-600a-4d22-b483-a814b7830f86"
+    },
+    {
+      "claim_id": "84a2318a-0e6c-4fde-9fdd-20dae7def6f8",
+      "result_id": "e9082d4d-600a-4d22-b483-a814b7830f86"
+    },
+    {
+      "claim_id": "282b54e6-b125-4851-b812-2e5856774b2d",
+      "result_id": "e9082d4d-600a-4d22-b483-a814b7830f86"
+    },
+    {
+      "claim_id": "3d231b2a-d069-4f0c-9d6d-e518faaf10ac",
+      "result_id": "e9082d4d-600a-4d22-b483-a814b7830f86"
+    },
+    {
+      "claim_id": "cd466357-107e-4d2a-99ea-8eac68e178f5",
+      "result_id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3"
+    },
+    {
+      "claim_id": "b44e9f86-a09a-4ac1-8eda-8ae0f5879087",
+      "result_id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3"
+    },
+    {
+      "claim_id": "85efebfb-f0fc-4935-b586-10ae83bcc823",
+      "result_id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3"
+    },
+    {
+      "claim_id": "43014fe4-1ed6-4c5c-b90b-00f10f3bcdc5",
+      "result_id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3"
+    },
+    {
+      "claim_id": "a97c9e05-8a3a-4ef4-9466-7e508b158317",
+      "result_id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3"
+    },
+    {
+      "claim_id": "d8944062-bb0e-415c-8ca6-e4ee6008230f",
+      "result_id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3"
+    },
+    {
+      "claim_id": "bc29eba6-fed0-4a9b-af94-aed02574ad5a",
+      "result_id": "cf2b2cda-dbfb-4833-9df5-0b5da4a955d3"
+    },
+    {
+      "claim_id": "2e486165-6ee2-444a-83c0-62e71b5ac1fa",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "a4f624cd-49b8-4310-8790-0be75023b6ba",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "5d6ae131-f5ea-46f8-8f2d-2aa8855798e2",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "d1c8df09-7972-4398-8868-063920c8e198",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "2ce3bee5-7d3b-4274-9bf4-00dfb270b22a",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "0d95df3e-31ca-46f8-be91-2ad58fb10390",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "33969780-f9c3-4645-a292-45d86a991278",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "0ee126be-9b8e-4f63-96c7-10a3afa03580",
+      "result_id": "a999fc07-4a53-46fe-8fe3-f495bd856dcd"
+    },
+    {
+      "claim_id": "f3a8b23f-5c25-40e1-8bec-165dc13cef7c",
+      "result_id": "41204165-4c40-4381-8ca8-a2563761e003"
+    },
+    {
+      "claim_id": "b03cab9c-2082-4a3b-bc50-1480e98d7f52",
+      "result_id": "41204165-4c40-4381-8ca8-a2563761e003"
+    },
+    {
+      "claim_id": "79f967a6-1242-44dc-8966-d2868e6337d1",
+      "result_id": "41204165-4c40-4381-8ca8-a2563761e003"
+    },
+    {
+      "claim_id": "d406eb5a-2dbb-4e11-9837-bb5b09406964",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "71879028-4aa2-48f2-a510-bdb35486f012",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "b10aa8d8-0486-4b83-9a03-e04d2e1a87ba",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "8c763c5b-bc1f-4926-afd8-c297a622e6ad",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "b5925cdb-e8a7-44d1-9bf1-dce8efcfb500",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "b53a2e61-238a-45a9-aa09-62bbca9419c7",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "8716d779-9580-4ae0-8de8-eaef4b06ad49",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "0a0b8a9c-7137-4ac1-a710-1be35ed49505",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "c7a701fa-9c29-4660-b606-68c2fee1cf45",
+      "result_id": "6a2052b8-b7b8-4ab0-a512-f5f1c84c9e1e"
+    },
+    {
+      "claim_id": "3ab31722-eda3-4bb2-a903-b8dd35983d2b",
+      "result_id": "91a7ba7b-c8d7-4113-8b06-674a2e2ab9ab"
+    }
+  ],
+  "comparisons": []
+}

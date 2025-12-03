@@ -1,0 +1,508 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Removal of AP-2\u03b1 and AP-2\u03b2 from the early embryonic ectoderm leads to major craniofacial alterations including clefts in both the upper face and mandible, and fusion of the upper and lower jaws in the hinge region. At E11.5, EDKO embryos show early morphological changes including a smaller mandible with a midline notch and failure of maxillary and nasal processes to form a lambdoid junction. By E13.5, these defects are exacerbated with fully cleft mandible and failure of facial prominence fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C31-C34 are well-supported by scanning electron microscopy observations at E11.5 and E13.5 (Figure 1C-J), showing progressive craniofacial defects in EDKO mutants. The morphological observations are consistent across multiple embryos (N=3 per genotype) and demonstrate clear phenotypic differences from controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Tfap2a and Tfap2b are the most highly expressed AP-2 family members in the facial ectoderm at E10.5-E12.5, with significant cellular overlap in surface ectoderm and periderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by bulk RNA-seq analysis (Figure 1A) and single-cell RNA-seq data (Figure 1B) showing expression patterns. The data demonstrate that Tfap2a and Tfap2b have the highest expression among AP-2 family members in the ectoderm and show cellular co-expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ATAC-seq analysis of control facial ectoderm identified approximately 65,000 open chromatin peaks, which were classified into promoter (high H3K4me3, N=10,363) and distal elements (low H3K4me3, N=54,935). Motif enrichment analysis revealed distinct transcription factor binding profiles, with AP-2, p53/63/73, and TEAD motifs enriched in distal elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by ATAC-seq and ChIP-seq data analysis (Figure 2B-D). The classification of peaks based on H3K4me3 enrichment and their genomic distribution relative to TSS is clearly demonstrated. Motif enrichment analysis identifies biologically relevant transcription factor families.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "K-means clustering of distal ATAC-seq peaks with multi-organ datasets identified three groups: tissue generic (C1, N=9,244), ectoderm favored (C2, N=24,805), and ectoderm unique (C3, N=20,886). C3 elements contained p53/p63/p73, AP-2, and TEAD motifs and were associated with genes showing ectoderm enrichment (p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by K-means clustering analysis (Figure 2E-G) and statistical testing. The correlation between C2/C3 elements and ectoderm-enriched gene expression is demonstrated with appropriate statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ATAC-seq analysis of EDKO mutants identified approximately 63,000 peaks lacking AP-2 consensus motifs. Differential analysis revealed approximately 3,100 genomic regions (5% of control elements) with significantly decreased accessibility, with AP-2 motifs as the top enriched sequences. These AP-2-dependent regions are predominantly promoter distal (87%), consistent with enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by differential ATAC-seq analysis (Figure 3A-C). The loss of AP-2 motif enrichment in EDKO samples and identification of AP-2-dependent peaks with appropriate motif enrichment and genomic distribution is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Multiple WNT pathway genes (Wnt2b, Wnt3, Wnt3a, Wnt4, Wnt6, Wnt8b, Wnt9b, Wnt10a, Wnt10b) were assigned to AP-2-dependent peaks. Conservation analysis identified ultra-conserved elements (N=787) near Wnt3, Wnt9b, Wnt10a, and Wnt10b, with frizzled binding as the top molecular function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by GREAT pathway analysis (Figure 3D) and conservation analysis (Figure 3E-G). The association of WNT pathway genes with AP-2-dependent peaks and their evolutionary conservation is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Wnt ligands (Wnt3, Wnt4, Wnt9b) and antagonist Dkk4 show biased expression in surface ectoderm overlapping with Tfap2 genes. In situ hybridization and RT-PCR confirmed reduced expression of Wnt3, Wnt9b, and Wnt10b in EDKO mutants, with graded reduction from control to EAKO to EDKO. WNT-signaling repressors (Axin2, Dkk4, Sostdc1) also showed reduced expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by scRNA-seq data mining (Figure 4\u2014figure supplement 1), in situ hybridization (Figure 4A-C, E-G), and RT-PCR analysis (Figure 4D, H-L). The graded response across genotypes and consistent results across multiple assays strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Wnt3 down-regulation was confined to the ectoderm, whereas Axin2 expression was reduced in both ectoderm and mesenchyme. Cell proliferation analysis revealed significant reduction in \u03b1PHH3+ cells in EDKO mutant facial prominences at E11.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by RT-PCR analysis of separated tissue layers (Figure 4\u2014figure supplement 4) and immunofluorescence analysis (Figure 4\u2014figure supplement 5). The tissue-specific effects and reduced proliferation are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "At E18.5, EBKO embryos were indistinguishable from controls, while EAKO embryos exhibited bilateral facial clefting, cleft palate, cleft hypoplastic mandible, and other defects. EDKO embryos displayed more severe phenotypes including complete failure of facial prominences to grow toward midline, absence of external pinnae, microphthalmia, and severe ventral body wall closure defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by gross morphological examination at E18.5 (Figure 5). The graded severity of phenotypes across genotypes (EBKO < EAKO < EDKO) is clearly documented with multiple embryos examined per genotype (minimum N=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Functional redundancy exists between AP-2\u03b1 and AP-2\u03b2 in the ectoderm lineage, with AP-2\u03b1 having more potent transcription factor activity. Mice lacking Tfap2b but containing one functional copy of Tfap2a undergo normal facial development, whereas the reverse results in orofacial clefting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by the graded phenotypes observed across different allelic combinations (Figure 5). The comparison between EAKO and EBKO phenotypes clearly demonstrates differential potency of AP-2\u03b1 versus AP-2\u03b2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Skeletal analysis revealed that EAKO mutants had shortened, cleft mandible, hypoplastic maxillary and nasal bones, and disrupted mandibular condyles. EDKO mutants showed more severe defects with virtually absent squamosal, jugal, palatine bones, syngnathia, and duplicated Meckel's cartilage along the mandible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by skeletal staining at E18.5 (Figure 6) and alcian blue staining at E15.5 (Figure 6M-O). The progressive severity from EAKO to EDKO and specific skeletal abnormalities are well-documented with minimum N=3 per genotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Neural crest-derived elements in the craniofacial skeleton were most sensitive to loss of AP-2\u03b1 and AP-2\u03b2 from surface ectoderm, while mesoderm-derived components like the basioccipital appeared less affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by comparative skeletal analysis (Figure 6D-F) showing differential effects on neural crest versus mesoderm-derived structures. This inference is reasonable based on the observed patterns of skeletal defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RNA-seq analysis at E10.5 identified approximately 240 genes with >1.5-fold expression difference between controls and EDKO mutants. Multiple down-regulated genes were associated with ectoderm development and function, including keratins (Krt5, Krt14, Krt15), transcription factors (Trp63, Grhl3, Foxi2), and signaling molecules in WNT, NOTCH, EDN, and FGF pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by RNA-seq data analysis (Table 1, Supplementary file 3). The manually curated gene list and expression changes are consistent with expected effects on ectoderm differentiation and signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "RNA-seq analysis identified 711 genes with 1.2-fold change and Q<0.05 between control and EDKO samples at E10.5 (365 down-regulated, 346 up-regulated). Of these, 438 showed >2-fold enrichment between tissue layers. Statistical analysis revealed significantly greater fold-change magnitude in ectoderm versus mesenchyme, primarily due to down-regulated ectodermal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by RNA-seq data analysis with appropriate statistical thresholds (Figure 7B-G). The tissue-specific stratification and statistical comparisons are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Pathway analysis of ectoderm-enriched differentially expressed genes (Q1+Q2, N=274) identified WNT-signaling as the most over-represented pathway. Mesenchyme-enriched genes (Q3+Q4, N=164) were enriched for GPCR, Osteoblast, and Neural crest pathways. Q1 genes had the greatest overlap with AP-2-dependent peaks (54%), while mesenchyme genes were enriched for TCF12/4/3-interactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by Enrichr pathway analysis (Figure 7H) and correlation with ATAC-seq data. The differential enrichment patterns between ectoderm and mesenchyme genes support the model of direct versus indirect AP-2 effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The ectoderm gene list highlighted annotations for orofacial clefting, including TRP63 and GRHL3, which are associated with human clefting. Both genes are highly enriched in ectoderm, down-regulated >1.5-fold in EDKO mutants, and possess AP-2-dependent ATAC-seq peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by pathway analysis (Figure 7H), RNA-seq data (Supplementary file 3), and ATAC-seq data. The connection to human clefting genes strengthens the translational relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "32 of 711 differentially expressed genes were WNT pathway-related, with significantly greater average fold-change than remaining genes (p<0.05). This was more significant for Q1 genes (p<0.005). WNT ligands (Wnt3, Wnt4, Wnt6, Wnt9b, Wnt10a, Wnt10b), inhibitors (Dkk4, Kremen2, Sostdc1), and additional modulators (Rspo2, Nkd2, Nkd1, Axin2, Dkk2, Kremen1) were down-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by RNA-seq data analysis with appropriate statistical testing (Figure 7I, Figure 7\u2014figure supplement 1, Supplementary file 3). The enrichment of WNT pathway genes among differentially expressed genes is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "RT-PCR analysis of isolated mesenchymal RNA showed reduced expression of Wif1, Dkk2, Kremen1, and Nkd1 in EDKO mutants. This down-regulation likely results from regulatory feedback caused by reduced Wnt ligand expression from ectoderm. Several Wnt receptors (Fzd5, Fzd8, Fzd9) and related molecules (Sfrp1, Sfrp2, Sfrp4) were up-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by RT-PCR data (Figure 7\u2014figure supplement 3). Claims C106-C107 involve reasonable speculation about feedback mechanisms based on the observed expression changes, though C106 is explicitly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Axin2-lacZ reporter analysis at E10.5 showed robust \u03b2-gal activity in control facial prominences and second branchial arch. EAKO mutants displayed reduced staining intensity, most striking in the hinge domain of BA1. EDKO mutants showed even more prominent reduction in \u03b2-gal staining, including in mesenchymal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by \u03b2-galactosidase staining (Figure 8A-C) with minimum N=3 per genotype. The graded reduction in WNT pathway activity across genotypes and tissue-specific effects are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "Wnt1 overexpression in the ectoderm rescued major aspects of upper facial clefting in EAKO and EDKO mutants. At E13.5, all EAKO embryos (9/9) had bilateral cleft lip with protruding premaxilla, but most EAKO/Wnt1ox embryos (11/13) achieved upper facial fusion. Similarly, all EDKO embryos (9/9) had facial fusion defects, but EDKO/Wnt1ox embryos (7/7) showed diminished clefting severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117, C119 are supported by rescue experiments with clear quantification of phenotypes (Figure 8E-J). The partial rescue of upper facial clefting by Wnt1 overexpression provides strong evidence for WNT pathway involvement in the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C120",
+      "C162"
+    ],
+    "result": "The rescued EAKO/Wnt1ox and EDKO/Wnt1ox embryos remained dysmorphic, possibly due to insufficient WNT pathway activity, ectopic Wnt1 expression effects, or additional AP-2 functions beyond WNT pathway. Wnt1 overexpression did not affect lower jaw clefting, and genes linked to syngnathia (Foxc1, Six1, Bmp4, Fgf8, Dlx) were not significantly changed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C120, C162 are supported by morphological observations and RNA-seq data. The incomplete rescue and lack of effect on lower jaw clefting indicate WNT pathway involvement is partial, with appropriate speculation about alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "AP-2 transcription factors are essential components of the mouse early embryonic ectoderm gene regulatory network directing facial prominence growth and morphogenesis. This complements previous findings that AP-2\u03b1 and AP-2\u03b2 work together in cranial neural crest, though neural crest deletion resulted in different cleft types (upper midfacial cleft) but also caused syngnathia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 represent summary statements and comparisons to previous work (Van Otterloo et al., 2018). These are well-supported by the collective findings of the study and appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "TFAP2A mutations are associated with Branchio-Oculo-Facial Syndrome, while TFAP2B mutations cause Char Syndrome. Only TFAP2A mutations are associated with orofacial clefting. The findings support a more significant role for TFAP2A in orofacial clefting and suggest that reduction of AP-2\u03b1 function in ectoderm is associated with this human birth defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are established knowledge supported by appropriate citations. Claim C127 is a reasonable inference based on the mouse model findings showing greater importance of Tfap2a in ectoderm for facial development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "ATAC-seq, H3K4me3 ChIP-seq, and RNA-seq revealed chromatin signatures specific for E11.5 facial ectoderm enriched for P53/P63/P73, AP-2, TEAD, GRHL, and PBX binding motifs. Deletion of Tfap2a and Tfap2b led to 5% genome-wide loss of chromatin accessibility centered on AP-2 motifs, while P53 and TEAD motifs remained enriched, supporting independent function of AP-2 and p63 programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C148 are supported by integrated analysis of ATAC-seq, ChIP-seq, and RNA-seq data. The findings extend previous work (Fan et al., 2018) and provide evidence for independent AP-2 and p63 programs in chromatin regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Genes linked to AP-2 binding motifs were associated with skin development (keratins, cadherins, gap junction proteins) and an evolutionarily conserved group of WNT-related genes associated with craniofacial development. Loss of AP-2\u03b1/\u03b2 caused significant reduction in Wnt ligand expression (Wnt3, Wnt6, Wnt9b, Wnt10a) and altered expression of keratin genes, Gjb6, Trp63, Grhl3, and Lin28a, suggesting delayed skin differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 are supported by ATAC-seq pathway analysis and RNA-seq data. The dual effects on skin differentiation and WNT pathway are well-documented and biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Wnt3, Wnt6, Wnt9b, and Wnt10a have been associated with human orofacial clefting. Reduced WNT signaling from ectoderm was matched by reduced Axin2-LacZ expression in mesenchyme. Although Wnt ligand expression is reduced but not completely lost in EDKO mutants, the facial pathology is less severe than with ectodermal Wls loss, and presence of teeth argues against catastrophic WNT signaling loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 are supported by appropriate citations, \u03b2-galactosidase staining, RNA-seq data, and comparison to previous work (Goodnough et al., 2014; Woodruff et al., 2021). The reasoning about partial versus complete WNT pathway disruption is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Wnt1 overexpression in EDKO mutants resulted in significant rescue of facial dysmorphology and clefting. Previous studies showed ectopic Wnt1 expression could rescue cleft lip/palate caused by PBX loss. Normal facial morphology was not fully recapitulated, possibly reflecting suboptimal timing and level of Wnt1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 are supported by rescue experiments (Figure 8) and appropriate citation (Ferretti et al., 2011). The incomplete rescue and speculation about causes are reasonable based on the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "AP-2 directs additional ectodermal programs including IRX and IRF transcription factor expression and CXCL, EDN, FGF, and NOTCH signaling. IRF6, a gene involved in orofacial clefting, has been identified as a critical AP-2 target. A polymorphism in an IRF6 enhancer affects AP-2 binding and increases clefting risk. This enhancer is conserved in mouse, shows altered accessibility in EDKO mutants, and Irf6 expression is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 are supported by RNA-seq data, appropriate citations (Kondo et al., 2002; Zucchero et al., 2004; Rahimov et al., 2008), ATAC-seq data, and expression analysis. The connection to human IRF6 variants strengthens translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background knowledge and prior work establish the importance of facial surface ectoderm in craniofacial development, the role of neural crest cells, signaling interactions, and previous findings on AP-2 transcription factors in development and human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C28 represent established knowledge and prior work supported by appropriate citations. These provide necessary context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C41",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Discussion of AP-2 function in evolutionary context, comparison to other species, mechanisms of redundancy, and implications for facial shape evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C128-C142 represent discussion points supported by the current findings and appropriate citations to prior work. The evolutionary and mechanistic interpretations are reasonable based on the data, though some involve speculation (C129, C141).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "E12.5 Crect Wnt1ox embryos completed facial fusion but showed developmental changes including more pronounced forebrain-snout angle and eye formation defects, consistent with WNT pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by morphological examination (Figure 8\u2014figure supplement 1) and appropriate citation (Smith et al., 2005). These findings validate the Wnt1 overexpression model.",
+    "result_type": "MINOR"
+  }
+]

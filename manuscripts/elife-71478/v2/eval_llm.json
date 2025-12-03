@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed a universal targeting vector called UFlip for CRISPR-Cas9 targeted integration. The UFlip vector is derived from GeneWeld pGTag and pPRISM vectors and Tol2 Gene Breaking Transposon vectors, containing a floxed 2A-mRFP gene trap cassette with alternating loxP and lox2272 sites for stable Cre-mediated inversion, plus rox sites for Dre-mediated inversion, and a secondary BFP reporter for transgenic identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C35, C49-C50 describe the design and components of the UFlip vector, which are well-documented with citations to prior work and illustrated in Figure 1A. The vector design is a straightforward molecular engineering approach building on established methods, and the components are clearly specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors successfully isolated rbbp4off and rb1off UFlip integration alleles by targeting intronic sites with CRISPR-Cas9. Guide RNAs showed 50% (rbbp4) and 95% (rb1) indel efficiency. Germline transmission frequencies ranged from 4-14% for precise integrations, with some alleles containing minor imprecise junctions (homology arm duplications with small insertions) that did not affect functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 provide quantitative data on gRNA efficiency and germline transmission frequencies, supported by Figure 2 showing ICE analysis and junction sequencing. The recovery frequencies are modest but consistent with targeted integration approaches. The characterization of imprecise junctions is thorough with sequence data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C148"
+    ],
+    "result": "Dre recombinase efficiently inverted the rbbp4off allele to generate rbbp4on through germline transmission. After Dre mRNA injection, 7/11 adults transmitted the inverted allele, with inversion frequencies ranging from 7.7% to 43.2%. The inverted allele contained expected junction sequences confirmed by PCR and sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C148 describe Dre-mediated inversion with quantitative transmission data shown in Table 3 and molecular validation in Figure 3B-C. The efficiency demonstrates a practical method for recovering alleles in the opposite orientation, though the variable frequency (7.7-43.2%) suggests stochastic germline mosaicism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C4",
+      "C5",
+      "C6",
+      "C38",
+      "C39"
+    ],
+    "result": "The rbbp4off allele causes >99% knockdown of rbbp4 mRNA, shows mRFP expression in the expected pattern (retina, brain, mesodermal tissues), and recapitulates the microcephaly and microphthalmia phenotypes of known rbbp4 loss-of-function mutations. Trans-heterozygous rbbp4off/\u03944 embryos show extensive apoptosis in the midbrain (p<0.01) and retina (p<0.01), indistinguishable from rbbp4\u03944/\u03944 homozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73, C4-C6, C38-C39 demonstrate robust gene knockdown with RT-qPCR data (Figure 4B), appropriate reporter expression (Figure 4C-D), and phenotypic validation through comparison with established mutants (Figure 4D-H). The >99% knockdown is quantitatively measured, and statistical comparisons confirm phenotypic equivalence to known null alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C43",
+      "C136"
+    ],
+    "result": "The rbbp4on allele shows reduced mRNA levels (25% reduction in heterozygotes, 40% in homozygotes) but does not cause phenotypes. Neither rbbp4on/+ heterozygotes nor rbbp4on/\u03944 trans-heterozygotes show gross morphological defects or apoptosis, indicating the remaining transcript is sufficient to maintain wild-type rbbp4 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79, C43, C136 demonstrate that the 'on' orientation does not disrupt gene function despite modest mRNA reduction. RT-qPCR data (Figure 4J) quantifies the reduction, while phenotypic analysis (Figure 4K-N) shows no defects. The inference that remaining transcript is sufficient (C79) is reasonable given the absence of phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C7",
+      "C8",
+      "C9",
+      "C40",
+      "C41",
+      "C42",
+      "C91",
+      "C137"
+    ],
+    "result": "Cre mRNA injection into rbbp4off/\u03944 embryos leads to phenotypic rescue with normal morphology, loss of RFP expression, stable cassette inversion (93% efficiency by qPCR), and near-complete absence of apoptosis in the midbrain (p<0.01) and retina (p<0.0001). This demonstrates robust Cre-mediated conditional rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84, C7-C9, C40-C42, C91, C137 provide comprehensive evidence for conditional rescue including morphological (Figure 5B-C), molecular (Figure 5G, Figure 5-supplement 1M-P), and cellular (Figure 5D-F) validation. The 93% inversion efficiency and highly significant reduction in apoptosis support robust rescue. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "Cell-type-specific conditional rescue with proneural Cre drivers shows differential requirements for rbbp4. ascl1b-2A-Cre showed modest, non-significant rescue in the midbrain (p=0.3248) where it is expressed, with >30% cassette inversion. neurod1-2A-Cre showed no significant rescue in brain (p=0.7794) or retina (p=0.9365) despite 30% inversion, suggesting rbbp4 is not required for survival in the neurod1 progenitor population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90, C92-C93 describe cell-type-specific rescue experiments with appropriate statistical analysis (Figure 5H-K). The lack of significant rescue with ascl1b-2A-Cre despite 30% inversion (C88) and complete absence of rescue with neurod1-2A-Cre (C89-C90) are well-documented. The interpretation about cell-type-specific requirements (C92-C93) is reasonable given the data, though the modest rescue with ascl1b-2A-Cre is not statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C11",
+      "C12",
+      "C13",
+      "C44",
+      "C45",
+      "C46",
+      "C107",
+      "C157"
+    ],
+    "result": "Cre mRNA injection into rbbp4on/\u03944 embryos leads to conditional inactivation with induction of the rbbp4 loss-of-function phenotype (microcephaly and microphthalmia), RFP expression, increased apoptosis in midbrain (p<0.05) and retina (p<0.05), and stable cassette inversion (82-84% efficiency). This demonstrates efficient Cre-mediated conditional inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99, C11-C13, C44-C46, C107, C157 provide comprehensive evidence for conditional inactivation including morphological (Figure 6B-C), cellular (Figure 6D-F), and molecular (Figure 6G, Figure 6-supplement 1M-P) validation. The 82-84% inversion efficiency and significant increases in apoptosis support efficient conditional inactivation. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C94",
+      "C95",
+      "C105",
+      "C106",
+      "C108",
+      "C162"
+    ],
+    "result": "Cell-type-specific conditional inactivation with proneural Cre drivers reveals differential requirements for rbbp4. ascl1b-2A-Cre caused significant apoptosis in the midbrain (p<0.01) but not retina (p=0.08543) with 20% inversion, consistent with ascl1b expression pattern. neurod1-2A-Cre induced RFP expression with 20% inversion but caused no significant apoptosis in brain (p=0.3739) or retina (p=0.6434), indicating rbbp4 is required for survival specifically in ascl1b progenitors but not neurod1 progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106, C94-C95, C108, C162 describe cell-type-specific inactivation with appropriate statistical analysis (Figure 6H-M, Figure 6-supplement 2). The differential phenotypes correlate with Cre expression patterns and support cell-type-specific gene requirements. The 20% inversion efficiency is modest but sufficient to detect phenotypes where rbbp4 is required. The conclusion about cell-type-specific requirements (C105-C106, C108, C162) is well-supported by the contrasting results with the two Cre drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The rb1off allele causes >99% knockdown of rb1 mRNA. Trans-heterozygous rb1off/stop larvae appear morphologically normal except for lack of swim bladder but show significantly increased pH3-labeled cells in the midbrain (p<0.001) and retina (p<0.0001), similar to rb1\u03947/stop and rb1stop/stop larvae. The rb1stop allele is larval lethal with rb1\u03947 and shows the same cellular phenotype as rb1\u03947/\u03947 homozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 demonstrate robust gene knockdown with RT-qPCR data (Figure 7A-B) and phenotypic validation through comparison with established mutants (Figure 7C-H, Figure 7-supplement 1C, Figure 7-supplement 2A). The >99% knockdown is quantitatively measured, and statistical comparisons confirm phenotypic equivalence to known null alleles. The rb1stop allele serves as an effective loss-of-function control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The rb1on allele shows modest mRNA reduction (84% in heterozygotes, 83% in homozygotes) and does not cause significant phenotypes. rb1on/+ shows no significant difference from wild-type in the midbrain (p=0.1118) and only slightly significant increase in retina (p>0.05). rb1on/stop shows increased pH3 cells in midbrain (p<0.01) and retina (p<0.01), but the actual increase is minor (10 to ~30 cells) compared to hundreds in homozygous mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 demonstrate that the 'on' orientation does not significantly disrupt gene function. RT-qPCR data (Figure 7J) shows minimal mRNA reduction, and phenotypic analysis (Figure 7N-P, Figure 7-supplement 2B) shows no or minimal defects. The minor increase in rb1on/stop (C117-C118) is statistically significant but biologically modest, suggesting the rb1on allele is largely functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Cre-mediated conditional rescue of rb1off demonstrates cell-type-specific gene requirements. Cre mRNA injection into rb1off/stop larvae significantly reduced pH3-labeled cells in midbrain (p<0.01) and retina (p<0.01) with >78% inversion efficiency. neurod1-2A-Cre caused significant reduction in midbrain (p<0.05) and retina (p<0.01) with >34% inversion, demonstrating rb1 is required to suppress cell cycle entry in neurod1 progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 provide evidence for conditional rescue with molecular validation (Figure 8G, Figure 8-supplement 1) and cellular phenotype analysis (Figure 8B-C, F, D-H). The >78% inversion efficiency with ubiquitous Cre and >34% with neurod1-2A-Cre are sufficient to demonstrate rescue. Statistical tests are appropriate. The conclusion about rb1 function in neurod1 progenitors (C124) is supported by the rescue data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C161"
+    ],
+    "result": "Cre-mediated conditional inactivation of rb1on demonstrates cell-type-specific gene requirements. Cre mRNA injection into rb1on/stop larvae caused increased pH3 labeling in midbrain (p<0.0001) and retina (p<0.01) with >80% inversion. neurod1-2A-Cre caused significant increases in midbrain (p<0.001) and retina (p<0.05) with >25% inversion, demonstrating rb1 is required to suppress cell cycle entry in neurod1 progenitors in both midbrain and retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C132, C161 provide comprehensive evidence for conditional inactivation with molecular validation (Figure 9G, I, Figure 9-supplement 1C-F) and cellular phenotype analysis (Figure 9B-C, F, D-E, H). The >80% inversion with ubiquitous Cre and >25% with neurod1-2A-Cre are sufficient to induce phenotypes. Statistical tests are appropriate. The conclusion about rb1 function in neurod1 progenitors (C132, C161) is well-supported and consistent with the rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C47",
+      "C48"
+    ],
+    "result": "The UFlip system provides robust conditional control of gene activity. UFlip alleles led to >99% gene knockdown in the 'off' orientation, did not disrupt gene activity in the 'on' orientation, allowed stable Cre/lox-mediated inversion for conditional inactivation or rescue, and recapitulated expected loss-of-function phenotypes. Combined with cell-type-specific Cre drivers, the system revealed cell-type-specific requirements for gene activity that had previously only been inferred from global loss-of-function analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C140, C47-C48 are summary conclusions supported by the comprehensive experimental validation across both rbbp4 and rb1 alleles. The >99% knockdown, lack of disruption in 'on' orientation, stable inversion, and phenotypic validation are all well-documented. The cell-type-specific experiments with ascl1b-2A-Cre and neurod1-2A-Cre demonstrate the utility of the system for revealing cell-type-specific gene requirements. These are major conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The frequency of precise UFlip integration (4-14%) is lower than previous GeneWeld reports (22-100% for fluorescent reporters, 10-100% for 2A-Cre). This difference is attributed to selection strategy: only 7-8 adults were needed when primary reporter expression allowed selection, compared to 25 adults when only secondary reporter selection was possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 provide a reasonable explanation for the lower recovery frequency compared to prior work. The quantitative data (Table 2) supports the 4-14% frequency, and the comparison with prior studies (C142) is appropriately cited. The explanation about selection strategy (C143-C146) is logical and supported by the data showing fewer adults needed when primary reporter selection was possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "UFlip founders transmitted both precise and imprecise integration events. Some imprecise events involved homology arm duplications or short insertions at junctions. The rb1off allele with a 5' homology arm duplication and 115 bp insertion did not affect cassette inversion efficiency or conditional rescue, indicating the additional intronic sequences did not disrupt splicing or gene activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 describe the characterization of imprecise integrations with sequence data (Figure 2C) and functional validation. The rb1off allele with imprecise 5' junction (C153-C154) was functionally validated through successful Cre-mediated inversion and rescue (Figures 8-9), supporting the conclusion that intronic insertions do not disrupt function. This is consistent with the expectation that intronic sequences are spliced out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The UFlip gene trap is based on the Tol2 RP2 gene trap containing a transcriptional terminator that blocks transcription readthrough and reduces transcript levels by >99%. The efficacy was demonstrated by RT-qPCR showing >99% mRNA reduction. Cre/lox-mediated inversion from passive to active orientation was highly efficient after Cre mRNA injection or transgenic Cre exposure, generating expected phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 summarize the gene trap mechanism and validation. The design basis (C155) is appropriately cited to prior work on the RP2 gene trap. The >99% knockdown (C156) is quantitatively demonstrated by RT-qPCR data for both rbbp4 and rb1 (Figures 4B, 7B). The efficient inversion and phenotype induction (C157) is demonstrated across multiple experiments (Figures 6, 9).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript reviews the history and current state of Cre/lox conditional genetics in zebrafish. While the Cre/lox system has been widely used in zebrafish, simple and efficient methods for isolating stable conditional alleles have been lacking. Recent gene editing advances have enabled targeted integration approaches, but there remains a need for simpler methods to efficiently recover robust conditional alleles through a single gene engineering event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C15-C31 provide background context about Cre/lox systems in zebrafish, appropriately citing prior work. These claims establish the motivation for the study by identifying the gap in available methods (C2, C31). The historical review is well-supported by citations and accurately represents the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C141",
+      "C150",
+      "C167"
+    ],
+    "result": "The GeneWeld UFlip approach is simple in design, efficient, generates effective Cre/lox regulated alleles for genetic mosaic analysis, and can be applied to any gene of interest. The simplicity of vector construction and ability to recover precise integrations in either orientation underscore the power of the approach. The UFlip integration approach provides a powerful platform for generating new Cre/lox genetic tools to modify gene function at endogenous loci in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C141, C150, C167 are evaluative statements about the advantages of the UFlip approach. These are supported by the comprehensive validation across two genes (rbbp4 and rb1), demonstration of both conditional inactivation and rescue, and successful cell-type-specific applications. The simplicity of vector construction using short homology arms and the ability to recover both orientations (including via Dre recombination) support these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The UFlip approach has advantages over alternative methods. While Cre-regulated CRISPR indel targeting provides rapid conditional mutagenesis, a significant advantage of stable UFlip alleles is the strength of transcriptional termination in the active orientation. Additionally, Cre induction leads to mRFP fluorescent cell labeling, which is critical for lineage tracing and capturing mutant cells for downstream genomics applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 compare UFlip to alternative approaches, appropriately citing recent work (C158, C160). The advantage of strong transcriptional termination (C159) is supported by the >99% knockdown data. The utility of mRFP labeling for lineage tracing (C160) is a reasonable inference, though not directly demonstrated in this study. The comparison is fair and acknowledges alternative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The manuscript discusses future applications and potential adaptations of the UFlip system. Further analysis with tamoxifen-regulated CreERT2 drivers could refine understanding of gene requirements in neural progenitor survival and proliferation. The conditional genetic tools provide a foundation for future mechanistic studies. The UFlip vector can be adapted to introduce various gene modification cassettes, and targeted integration should increase phenotype consistency compared to Tol2 transposon binary UAS overexpression systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C166 are speculative statements about future work and potential applications. While these are reasonable extrapolations based on the demonstrated capabilities of the UFlip system, they represent future work rather than current results. The potential for adaptation (C165) and improved consistency (C166) are logical inferences but not experimentally validated in this study.",
+    "result_type": "MINOR"
+  }
+]

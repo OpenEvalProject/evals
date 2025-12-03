@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Two independent clustering methods (PSTH-based and conditional feature-based) both identified five distinct clusters of lOFC neurons with stereotyped temporal response profiles aligned to different task events. The gap statistic was used to determine the number of clusters, and each cluster exhibited characteristic periods of elevated activity during specific task epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C28, C29 establish that both clustering methods identified five clusters, supported by data analysis (C48-C52). The gap statistic methodology (C49) provides principled cluster selection. The temporal response profiles are documented with specific characteristics (C50-C51), and the interpretation (C52) is reasonable given the data. Multiple validation approaches (gap statistic, PAIRS, t-SNE) support the clustering results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C104"
+    ],
+    "result": "Clusters 2 and 3 showed high consistency (66% and 70% overlap respectively) across both PSTH-based and conditional feature-based clustering methods, indicating these neurons can be robustly identified by either their temporal response profiles or their task variable encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C104 are directly supported by quantitative overlap analysis presented in the data (Figure 2E). The consistency metrics provide clear evidence that these two clusters represent robustly identifiable neuronal subpopulations. The interpretation that neurons can be identified by either method is justified by the high overlap percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Cluster 3 uniquely encoded reward history at the time preceding choice, with this encoding re-emerging late in the trial. This cluster also exhibited the strongest encoding of reward outcomes, suggesting specialization for integrating information about previous and current trial outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C79-C80 document the unique 'bump' in reward history encoding in cluster 3 before choice, observable across multiple metrics (CPD, MI, d'). Claim C82 shows this encoding extends only to the previous trial. Claims C83-C84 establish strongest outcome encoding in this cluster. The data consistently support this distinctive encoding pattern, though the functional interpretation (C84) remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "A generalized linear model (GLM) with Poisson noise successfully captured neural responses in lOFC, reproducing trial-averaged PSTHs and explaining high variance for most neurons. Neurons with negative R\u00b2 values (69 units, 10.5%) were excluded as likely non-task-modulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C64-C65 are supported by model performance data showing good fits to PSTHs and high R\u00b2 values for most neurons. The exclusion criterion (C67) is reasonable given the liberal inclusion criteria (minimum 1 Hz firing rate). Model validation through cross-validation and comparison to alternative models strengthens these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31",
+      "C32",
+      "C33",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "All clusters exhibited weak encoding of reward attributes (clicks and flashes) but stronger encoding of reward history, choice, and reward receipt. The magnitude of CPD for reward attribute cues was an order of magnitude lower than for other task variables, indicating broad but weak representation of offer values across clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C31-C33, C70-C73 consistently document weak reward attribute encoding across all clusters using multiple metrics (CPD, MI). The quantitative comparison (order of magnitude difference, C72) is clearly stated. This finding is robust across both clustering methods and is well-supported by the GLM analysis. The interpretation (C73) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Reward history encoding was strongest at trial initiation and decayed during the trial across all clusters. Cluster 2 showed slightly more pronounced reward history encoding during the trial. Choice and reward outcome encoding were phasic, peaking at choice and outcome feedback respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe temporal dynamics of encoding that are directly observable in the CPD and MI analyses (Figure 4). The consistency with previous work (C76) and the specific temporal patterns (C78) are well-documented. The observation about cluster 2 (C77) is appropriately qualified as 'slightly more pronounced' and notes the confound of persistent activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C126"
+    ],
+    "result": "Approximately 15% of neurons (81/590) demonstrated adaptive value coding with opposite signs for current and previous reward coefficients. This proportion was comparable to primate OFC studies and was distributed across all clusters without preferential localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 present clear quantitative results from linear regression analysis. The finding that adaptive coding is distributed across clusters (C91-C92) is supported by statistical comparison of binomial confidence intervals. The comparison to primate studies (C126) provides appropriate context. The analysis methodology is sound, though the modest proportion (~15%) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C127",
+      "C128"
+    ],
+    "result": "Neural activity during the reward epoch did not encode reward prediction error (RPE). Instead, differential encoding of reward outcomes based on reward history reflected discrepancy between outcomes and recent experience rather than expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C127-C128 are supported by model comparison showing the win/loss model outperformed the RPE model (Figure 6\u2014figure supplement 1). The interpretation (C128) is logical given the task design with explicit value cues. However, the high correlation between RPE and win/loss regressors (\u03c1=0.80) noted in the supplement suggests some caution in strongly distinguishing these representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C10",
+      "C36",
+      "C37"
+    ],
+    "result": "Cluster 3 exhibited qualitatively similar responses to corticostriatal projection neurons identified in Hirokawa et al., 2019, encoding negative integrated value during the inter-trial interval and showing strong outcome encoding, suggesting these neurons may integrate previous and current reward experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 document similarity to corticostriatal neurons based on qualitative comparison of response profiles. While the temporal patterns match (negative value encoding during ITI), the comparison is qualitative rather than quantitative. Claims C36-C37 about integration are inferential. Without direct anatomical confirmation of projection targets, the similarity remains suggestive but not definitively established. The comparison would benefit from quantitative similarity metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The gap statistic was validated as a conservative but principled metric for determining cluster number in the lOFC data regime. Analysis of synthetic data showed that silhouette score substantially underestimated cluster number (predicting 2 instead of 5), while gap statistic performed better though still conservatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by systematic analysis on synthetic data with known ground truth (Figure 2\u2014figure supplement 6). The finding that silhouette score underestimates clusters in tightly-packed feature spaces (C58-C59) is consistent with cited literature. The comparative performance of gap statistic (C60-C61) justifies its use, though the acknowledgment of conservative estimation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Both the gap statistic and PAIRS statistic confirmed statistically significant clustering in the lOFC data, rejecting the null hypothesis of no clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by two independent statistical tests. The PAIRS analysis (Figure 2\u2014figure supplement 4) shows highly significant differences from null distributions (p\u224810^-125 for PSTH, p\u224810^-59 for conditional). The gap statistic similarly demonstrates significant clustering. The convergence of two different methods strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Using temporal responses (PSTHs) that do not explicitly contain conditional information represents a novel approach for identifying distinct neural response profiles in prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 asserts novelty but provides limited evidence for this claim. While PSTH-based clustering may be less common than conditional feature-based approaches in recent prefrontal cortex studies, the claim 'to our knowledge' is difficult to verify without comprehensive literature review. The approach is valid and informative, but the novelty claim requires stronger support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study identified fewer clusters (5) than previous studies using conditional feature spaces, potentially due to differences in clustering metrics (gap statistic vs. silhouette/ARI) or time windows used for feature construction. Despite this, the gap statistic provided a useful tool for investigating task variable encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 appropriately acknowledge differences with prior work and propose reasonable explanations. The comparison is fair and the authors acknowledge methodological differences that could account for discrepancies. The conclusion (C108) that the approach remains useful despite differences is reasonable and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The distribution of regular spiking units (RSU) and fast-spiking units (FSU) was similar across all five clusters, suggesting clusters are not defined by cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by waveform analysis (Figure 4\u2014figure supplement 1) showing no preferential distribution of RSU vs FSU across clusters. The analysis appropriately classified neurons based on AP and AHP widths. This negative result is important for interpreting the functional significance of clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The weak encoding of reward attributes in lOFC contrasts with some prior studies but is potentially consistent with findings that lOFC encodes outcome values more strongly than choice values. The difference may relate to the temporal integration required for the cues in this task, as OFC may only represent offer value after sufficient evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C122 present extensive discussion of discrepancies with prior literature. While the weak encoding finding (C110-C111) is well-supported by the current data, the explanations for discrepancies (C118-C122) are speculative. The hypothesis about temporal integration (C119-C122) is plausible but untested. The comparison to prior work is thorough but highlights uncertainty about when and how OFC represents offer values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C25",
+      "C38",
+      "C145",
+      "C146",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The subpopulation of neurons in cluster 3 may mediate sequential learning effects by integrating previous and current trial outcomes at the time of choice, potentially through influencing lOFC dynamics or via projections to striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C11, C25, C38, C145-C146, C155-C157 are all explicitly speculative (using 'may,' 'might,' 'could,' 'suggests'). While the encoding properties of cluster 3 are well-established, the functional role in mediating sequential effects is hypothetical. The connection to prior optogenetic results (C151) is suggestive but indirect. These hypotheses require direct causal testing through targeted manipulations of cluster 3 neurons.",
+    "result_type": "MAJOR"
+  }
+]

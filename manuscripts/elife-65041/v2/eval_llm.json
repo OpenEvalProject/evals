@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Cancer risk correlates with body size within species (Peto's Paradox), but not between species, indicating that large, long-lived species have evolved enhanced cancer protection mechanisms. Cancer prevalence remains stable at ~5% across species despite dramatic differences in body size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C10 establish Peto's Paradox through citations to established literature and comparative oncology studies. The within-species correlations (C1, C8, C9) and between-species lack of correlation (C2, C10) are well-documented in cited studies, providing strong support for this foundational result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Afrotherians exhibit diverse body sizes, with large-bodied lineages (elephants, sea cows, hyraxes) nested within small-bodied species, indicating independent evolution of gigantism. Body masses range from ~70g in golden moles to 4800kg in African elephants, with extinct species reaching even larger sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C11-C18 are supported by phylogenetic analyses shown in Figure 1 and cited paleontological studies. The phylogenetic nesting pattern (C17) and inference of independent gigantism evolution (C18) are consistent with established Afrotherian phylogeny and body size data from multiple sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Body size evolution in Afrotherians occurred in a stepwise manner, with multiple independent increases in different lineages. The Afrotherian ancestor was small (0.26 kg), with substantial increases occurring in Pseudoungulata (67.36\u00d7), Tethytheria (11.82\u00d7), and Elephantimorpha (2.69\u00d7), as well as independent increases in hyraxes and sea cows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 are supported by ancestral state reconstruction using the Stable Model in StableTraits, shown in Figure 2. The methodology is appropriate for body size evolution, and the stepwise pattern (C34) is a reasonable inference from the quantitative ancestral state estimates. The use of fossil data strengthens these reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Intrinsic cancer risk decreased substantially in Afrotherian lineages that evolved large body sizes, with reductions ranging from 6.41-log2 to 13.37-log2 across different lineages. The largest reductions occurred in Pseudoungulata (13.37-log2) and Tethytheria (7.84-log2), with smaller decreases in terminal lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C48 rely on the simplified multistage cancer risk model K\u2248Dt^6. While the mathematical framework is cited (Peto, Armitage), this model makes strong assumptions about cancer biology that may not hold across diverse species. The lifespan estimates for ancestral nodes are inferred via PGLS rather than directly measured, introducing additional uncertainty. The calculations are internally consistent but the biological validity of the model across such diverse taxa is questionable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C62",
+      "C63"
+    ],
+    "result": "Tumor suppressor gene duplication is pervasive across Afrotherian genomes, not restricted to large-bodied lineages. Pathway enrichment for tumor suppressors was found in multiple lineages: 18.18% in Paenungulata, 63% in Tethytheria, 38.81% in Proboscidea, and also in smaller-bodied lineages like Afrosoricida (37.04%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C49-C57, C62-C63 are supported by genome-wide RBBH analysis and pathway enrichment using WebGestalt/Reactome (Figure 3B, Table 2). The unexpected finding of pervasive duplication (C5, C56) is strengthened by comparison to simulated background enrichment (C58-C61), which shows that many lineages exceed expected enrichment levels. However, some lineages do not differ from background (C63), appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Simulation analysis established that random gene sets smaller than 157 genes show 12-18% enrichment for cancer pathways by chance, providing a background threshold of ~15% for evaluating observed enrichments. Multiple Afrotherian lineages exceeded this background threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe a critical control analysis that addresses potential bias in pathway enrichment. The simulation approach (5000 random gene sets) is appropriate and the comparison to observed data (C61, Table 2) provides statistical rigor. This analysis strengthens the interpretation of pathway enrichment results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Proboscideans have 157 genes duplicated in their stem-lineage that are uniquely enriched in 12 cancer-related pathways, including cell cycle regulation (G0/G1, G2/M checkpoints), DNA damage repair (NER pathways), telomere maintenance, apoptosis, and mTOR signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C64-C71 are supported by pathway enrichment analysis shown in Figures 3B-C. The identification of Proboscidean-specific enrichments (C65) is strengthened by the Upset plot analysis showing unique pathway combinations. The specific pathways identified (C66-C70) are biologically relevant to cancer suppression and are supported by the data in Figure 3C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sixteen genes were uniquely duplicated in Proboscideans, including TP53, LIF, STK11, BRD7, SOD1, and others involved in apoptosis and cell cycle regulation. The majority of these duplicates are expressed in African elephant transcriptome data, suggesting maintained functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by gene duplication analysis (Figure 4C) and RNA-seq expression data (Figure 4D). The expression of duplicates (C75) provides evidence for functionality (C76), though expression alone does not prove function. The identification of previously described duplicates (C73) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "TP53 duplication in Tethytheria was preceded by duplication of its regulators GTF2F1 and STK11 in Paenungulata, and coincident with BRD7 duplication. Downstream TP53 pathway genes duplicated subsequently in Proboscidea and are expressed in RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C82-C83 are supported by ancestral state reconstruction (Figure 4) and expression data (Figure 4D). The regulatory relationship of GTF2F1, STK11, and BRD7 to TP53 (C79) is supported by citations. However, the inference that prior duplication of regulators facilitated TP53 refunctionalization (C80) is speculative, appropriately marked as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Manual curation revealed that most Proboscidean duplicates (STK11, CD14, SOD1, BRD7) are well-conserved without premature stop codons. Some manatee duplicates have premature stop codons, though these may still be functional as regulatory RNAs or truncated proteins. Partial copies of CASP9 and PRDX1 may represent pseudogenization or neofunctionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C87-C88 are supported by manual sequence curation. The inference that genes with stop codons may still be functional (C89-C90, C92) is appropriately marked as speculative and supported by citation to previous work on TP53 duplicates. The acknowledgment of uncertainty regarding partial copies (C91-C92) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C115"
+    ],
+    "result": "Duplication of tumor suppressor genes facilitated the evolution of increased body size by compensating for decreasing intrinsic cancer risk. The coordinated duplication of TP53 regulators before TP53 itself may have mitigated dosage imbalance toxicity, enabling persistence and subsequent co-option for cancer resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C93, C97-C100, and C115 represent the main evolutionary hypothesis but are largely speculative inferences. While the correlation between gene duplications and body size evolution is documented, causation is not established. The hypothesis about dosage balance (C99-C100) is plausible but untested. These claims appropriately reflect the authors' interpretation but lack direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C95",
+      "C96"
+    ],
+    "result": "Transgenic mice with additional TP53 copies show that overexpression causes progeria and early death, but duplication with native regulatory elements results in healthy aging with enhanced stress response and lower cancer rates, demonstrating that tumor suppressor duplication can augment cancer resistance if properly regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C95-C96 are supported by citations to experimental mouse studies (Garc\u00eda-Cao et al., 2002; Tyner et al., 2002). These provide important context for interpreting the evolutionary significance of gene duplications and support the plausibility of the main hypothesis, though they are from prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Previous candidate gene studies identified duplications of TP53 and LIF in elephant genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by citations to prior studies (Abegglen et al., 2015; Sulak et al., 2016; Vazquez et al., 2018). This establishes the context for the current genome-wide study and validates the RBBH approach by recovering known duplications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Genome quality significantly affects the ability to identify gene duplicates, with mean copy number and ECNC correlating with quality metrics. Cape golden mole and Cape elephant shrew were excluded from pathway analyses due to poor genome quality showing high correlation between quality metrics and apparent duplication rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 and C128-C131 are supported by CEGMA quality assessment and correlation analysis (Figure 3\u2014figure supplement 2). The exclusion of poor-quality genomes (C131) is an appropriate methodological decision. This analysis demonstrates awareness of technical limitations and strengthens confidence in results from higher-quality genomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Elephant cells exhibit unique phenotypes including inability to immortalize, rapid DNA repair, extreme oxidative stress resistance, and high DNA damage sensitivity. These phenotypes may be connected to duplications in NER pathways, SOD1, cell cycle genes, and mTOR signaling, which are enriched in Proboscideans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 and C111-C113 are supported by citations to experimental studies on elephant cell biology. However, the connections to specific gene duplications (C108-C109, C115) are speculative inferences rather than demonstrated causal relationships. While the pathway enrichments (C107, C110) are supported by data, linking them mechanistically to cellular phenotypes requires experimental validation not provided in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The study employed multiple computational methods including: phylogenetic supertree construction, Stable Model for ancestral state reconstruction, RBHB pipeline with novel ECNC metric for gene duplication detection, IQ-TREE for ancestral copy number inference, WebGestalt for pathway enrichment, and PGLS for lifespan estimation. The pipeline identified 13,880 genes (77.1% of query genes) across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C127 and C132-C138 describe the methodological approaches used in the study. These are well-documented with appropriate citations and the methods are generally appropriate for the questions asked. The development of the ECNC metric (C124) addresses a real challenge with fragmented genomes. The 77.1% gene recovery rate (C127) is reasonable for cross-species comparisons.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DunedinPACE was developed using elastic-net regression on DNA methylation data from the Dunedin Study, achieving a high in-sample correlation (r=0.78) with the 20-year Pace of Aging, representing an improvement over the original DunedinPoAm (r=0.6). The algorithm includes 173 CpG sites selected from probes with acceptable test-retest reliability (ICC>0.4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C38-C41 provide converging evidence for the development and performance of DunedinPACE. The correlation coefficient (C1), comparison to DunedinPoAm (C2), and methodological details (C38-C41) are clearly reported with specific values. The improvement in correlation from 0.6 to 0.78 is substantial and the methodological approach is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C74",
+      "C75"
+    ],
+    "result": "DunedinPACE demonstrates excellent test-retest reliability (ICC=0.96 [0.93-0.98]) in Illumina 450k replicates, superior to the original DunedinPoAm (ICC=0.89) and comparable to or better than existing DNA methylation clocks including GrimAge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C74-C75 provide consistent evidence across multiple replicate datasets (GSE55763, EPIC-EPIC, 450k-EPIC) showing high reliability. The ICC values are reported with confidence intervals and demonstrate clear improvement over DunedinPoAm. The comparison to other clocks (C74-C75) is supported by data shown in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "DunedinPACE shows stronger correlation with chronological age (r=0.32) compared to DunedinPoAm (r=0.11) in cross-sectional analysis, and increases within individuals over time (b=0.021 per 5 years) in longitudinal analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 provide both cross-sectional (Understanding Society, n=1175) and longitudinal (NAS, n=536) evidence. The threefold increase in correlation with age (C8) and the within-individual change (C9) are consistent with the hypothesis that DunedinPACE captures biological aging. The longitudinal analysis addresses potential cohort effect confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "DunedinPACE shows weak to moderate correlations with DNA methylation clock age-acceleration measures: Horvath (r=0.13), Hannum (r=0.26), PhenoAge (r=0.36), and GrimAge (r=0.58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 report correlations from Understanding Society data (n=1175). The pattern of increasing correlation strength (Horvath < Hannum < PhenoAge < GrimAge) is consistent and suggests DunedinPACE captures related but distinct aspects of biological aging. The moderate correlations support the claim that DunedinPACE provides complementary information to existing clocks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "DunedinPACE correlates with physiology-based biological age measures (KDM r=0.30, Phenotypic Age r=0.32, Homeostatic Dysregulation r=0.09) and self-rated health (d=0.74 for excellent vs. poor health) in the Understanding Society Study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 demonstrate construct validity through associations with established biological age measures and subjective health. The correlations with KDM and Phenotypic Age (C14-C15) are moderate and consistent. The weak correlation with Homeostatic Dysregulation (C16) may reflect methodological differences. The large effect size for self-rated health (C17) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In the NAS cohort of older men (n=771, mean age 77), faster DunedinPACE predicts increased risk for incident chronic disease (HR=1.23), prevalent chronic disease (RR=1.16), and mortality (HR=1.26).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide consistent evidence for criterion validity in an older male cohort. All hazard ratios and relative risks are statistically significant with confidence intervals excluding 1.0. The effect sizes are moderate and clinically meaningful. However, the cohort is limited to men, which restricts generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In the Framingham Heart Study Offspring Cohort (n=2471, 54% women, mean age 66), faster DunedinPACE predicts increased risk for CVD (HR=1.39), stroke/TIA (HR=1.37), mortality (HR=1.65), and disability across multiple ADL scales (IRR=1.33-1.40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 demonstrate strong criterion validity across multiple health outcomes in a mixed-sex cohort. The hazard ratios are larger than in NAS, particularly for mortality (HR=1.65). All confidence intervals exclude 1.0. The consistency across different disability measures (Nagi, Katz, Rosow-Breslau) strengthens the findings. The inclusion of women addresses a limitation of the NAS analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "In the E-Risk cohort of 18-year-olds (n=1658), childhood adversity exposures are associated with faster DunedinPACE: low vs. high socioeconomic status (d=0.38) and polyvictimization vs. no victimization (d=0.47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 demonstrate that DunedinPACE detects accelerated aging in young adults with adverse childhood experiences. The effect sizes are moderate and statistically significant. This provides evidence that DunedinPACE can identify faster aging before clinical disease onset, supporting its potential utility for early intervention. The twin study design helps control for genetic confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C77",
+      "C78"
+    ],
+    "result": "DunedinPACE provides incremental predictive value beyond existing DNA methylation clocks. After adjusting for GrimAge, DunedinPACE associations with mortality, CVD, and disability remain statistically significant, though attenuated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 and C77-C78 demonstrate that DunedinPACE adds information beyond GrimAge, which was developed in the same Framingham cohort. While effect sizes are attenuated after GrimAge adjustment, they remain statistically significant for most outcomes. This is a rigorous test of incremental validity. The stroke association (C34) shows minimal attenuation, suggesting DunedinPACE may capture distinct aspects of cerebrovascular aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "DunedinPACE shows reduced association with smoking compared to DunedinPoAm. Smoking explains 13% of variance in DunedinPACE vs. 30% in DunedinPoAm (Understanding Society), with similar patterns in Framingham (12% vs. 23%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 demonstrate that DunedinPACE is less influenced by smoking than DunedinPoAm, with consistent findings across two independent cohorts. This represents a methodological improvement, as reduced smoking influence suggests DunedinPACE captures broader aspects of aging beyond smoking-related damage. The R-squared values are clearly reported and the pattern is replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The technical improvements in DunedinPACE over DunedinPoAm result from both the extended 20-year follow-up with four measurement occasions and the restriction to CpG sites with higher test-retest reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 explain the methodological basis for DunedinPACE's improvements. C70 is supported by citations to longitudinal modeling literature. C72 references Appendix 1 analysis demonstrating both factors contributed to improvement. This provides important context for understanding why DunedinPACE outperforms DunedinPoAm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The Dunedin Study cohort shows wide variation in Pace of Aging (Mean=1, SD=0.29), with individual rates ranging from 0.40 to 2.44 biological years per chronological year over two decades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the distribution of the Pace of Aging phenotype that DunedinPACE was designed to capture. The extreme values (C35-C36) and overall variation (C37) are clearly reported with citation to Elliott et al., 2021b. This establishes the biological phenomenon being measured and justifies the development of a DNA methylation surrogate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The Dunedin Study is a complete birth cohort (N=1037, born 1972-1973) that is representative of New Zealand's South Island population, primarily white (93%), with 94% retention at age 45.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C79-C83 describe the Dunedin Study cohort characteristics. The representativeness (C80-C81) and high retention (C83) are supported by citation to Poulton et al., 2015. The demographic homogeneity (C82) is acknowledged as a limitation. These claims establish the study population and its strengths and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The NAS is a longitudinal study of 2280 male veterans established in 1963, with DNA methylation data from 771 participants beginning in 1999, including repeated measures for 70% (n=536) and mortality follow-up through 2013 (46% died).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 describe the NAS cohort used for validation. The sample characteristics, repeated measures structure, and mortality outcomes are clearly reported. This establishes the study design and sample size for the mortality and morbidity analyses. The all-male composition is a limitation for generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The Framingham Heart Study Offspring Cohort analysis included 2471 participants (54% women, mean age 66) with up to 14 years of follow-up, during which 575 deaths, 327 CVD events, and 149 stroke/TIA events occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 describe the Framingham cohort characteristics and outcome ascertainment. The sample size, sex distribution, follow-up duration, and event counts are clearly reported. This establishes the study design for the cardiovascular and mortality analyses and demonstrates adequate statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The E-Risk Study is a birth cohort of 2232 twins (56% MZ, 44% DZ, 49% male) recruited to represent UK families with newborns in the 1990s, with DNA methylation measured at age 18 in 1658 participants. Victimization exposure was distributed as: 72% none, 21% one type, 4% two types, 2% three or more types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 describe the E-Risk cohort design, representativeness, and exposure distributions. The twin composition (C95-C96), recruitment strategy (C97-C99), representativeness (C100), and victimization distribution (C102-C105) are clearly reported. This establishes the study population for the childhood adversity analyses and the twin design that helps control for genetic confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study acknowledges limitations including modest sample size, single-country origin (New Zealand), and predominantly white European ancestry across all cohorts, though prior work with DunedinPoAm showed consistent validity across race/ethnic subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 acknowledge important limitations regarding sample size, geographic diversity, and racial/ethnic representation. C109 provides some reassurance through citation of prior work showing cross-population validity of DunedinPoAm. These limitations are appropriately acknowledged and contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Model-organism studies are yielding geroprotective treatments, but human trials face barriers due to the long human lifespan making it prohibitively time-consuming to test healthspan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 establish the scientific context and motivation for developing DunedinPACE. Both claims are supported by citations to relevant literature (Barzilai et al., 2018; Bellantuono, 2018; Campisi et al., 2019; Justice et al., 2018). This provides the rationale for needing a biomarker of aging pace.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Biological aging is an ongoing process in healthy young adults that varies across individuals decades before disease onset, characterized by gradual deterioration across organ systems. Faster Pace of Aging is associated with functional decline and brain aging, suggesting intervention could extend healthspan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 establish the geroscience framework underlying the study. C48-C49 are supported by citations to prior Dunedin Study work (Belsky et al., 2015; Elliott et al., 2021b). C50 represents established geroscience theory. C51-C52 are supported by multiple citations. C53 is a reasonable inference from the evidence. These claims provide the theoretical foundation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The original DunedinPoAm showed associations with functional decline, facial aging, disease risk, mortality, and early-life adversity, but had only moderate test-retest reliability, limiting its utility for clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 summarize prior work on DunedinPoAm, all supported by citations (Belsky et al., 2020; Graf et al., 2021; Raffington et al., 2021; Higgins-Chen et al., 2021). This establishes the proof-of-concept for DNA methylation measurement of Pace of Aging and identifies the limitation (moderate reliability) that DunedinPACE was designed to address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DunedinPACE is conceptually and methodologically distinct from DNA methylation clocks. It is derived from longitudinal data in a same-age cohort, measures rate of deterioration over a fixed interval, and controls for cohort effects, survival bias, and developmental deficits, whereas clocks are derived from cross-sectional mixed-age data and are vulnerable to these confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 articulate the key conceptual distinction between DunedinPACE and DNA methylation clocks. The methodological differences (C60-C64) are clearly stated and logically follow from the study design. The limitations of clocks (C65-C68) are reasonable inferences from their cross-sectional, mixed-age design. This distinction is important for interpreting the comparative analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "In humans and other species, mortality risk increases nonlinearly with chronological age, suggesting biological aging accelerates in later life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by citations to demographic and aging literature (Gompertz, 1997; Kirkwood, 2015; Olshansky and Carnes, 1997). This provides theoretical justification for expecting DunedinPACE to show stronger correlation with chronological age than DunedinPoAm, which was based on a shorter follow-up period in younger adults.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Geroscience theory predicts aging increases risk of chronic disease and death. Establishing DunedinPACE as a surrogate endpoint for healthspan requires evidence of modifiability by intervention and that intervention-induced changes result in changes in healthy-lifespan phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 states established geroscience theory. Claim C111 is supported by citations to literature on surrogate endpoints (Justice et al., 2018; Prentice, 1989). This appropriately acknowledges that validation as a surrogate endpoint requires additional evidence beyond the associations demonstrated in this paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "DunedinPACE can be implemented in Illumina 450k or EPIC array data, with code publicly available on GitHub. It will soon be available from the US Health and Retirement Study and offers unique utility for intervention trials due to its high test-retest reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are factual statements about implementation and code availability (with citation to Corcoran et al., 2022). C114 is a statement about planned future availability. C115 is a reasonable inference based on the demonstrated high reliability (ICC=0.96). These claims establish the practical utility and accessibility of DunedinPACE.",
+    "result_type": "MINOR"
+  }
+]

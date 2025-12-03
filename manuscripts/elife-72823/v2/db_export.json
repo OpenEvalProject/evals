@@ -1,0 +1,2151 @@
+{
+  "submission": {
+    "id": "853e1244-ed33-40ce-b367-349db85397d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:25:04.313593Z",
+    "updated_at": "2025-12-03T09:25:04.313593Z"
+  },
+  "content": [
+    {
+      "id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "submission_id": "853e1244-ed33-40ce-b367-349db85397d4",
+      "content_type": "manuscript",
+      "content_text": "# Neurotoxin-mediated potent activation of the axon degeneration regulator SARM1\n\n## Authors\n\n- Andrea Loreto<sup>1</sup> ([ORCID: 0000-0001-6535-6436](https://orcid.org/0000-0001-6535-6436)) \u2020\n- Carlo Angeletti<sup>2</sup>\n- Weixi Gu<sup>3</sup> ([ORCID: 0000-0002-1185-3557](https://orcid.org/0000-0002-1185-3557))\n- Andrew Osborne<sup>1</sup>\n- Bart Nieuwenhuis<sup>1</sup> ([ORCID: 0000-0002-2065-2271](https://orcid.org/0000-0002-2065-2271))\n- Jonathan Gilley<sup>1</sup> ([ORCID: 0000-0002-9510-7956](https://orcid.org/0000-0002-9510-7956))\n- Elisa Merlini<sup>1</sup>\n- Peter Arthur-Farraj<sup>1</sup> ([ORCID: 0000-0002-1239-9392](https://orcid.org/0000-0002-1239-9392))\n- Adolfo Amici<sup>2</sup> ([ORCID: 0000-0002-1081-7749](https://orcid.org/0000-0002-1081-7749))\n- Zhenyao Luo<sup>3</sup>\n- Lauren Hartley-Tassell<sup>4</sup>\n- Thomas Ve<sup>4</sup>\n- Laura M Desrochers<sup>5</sup>\n- Qi Wang<sup>5</sup>\n- Bostjan Kobe<sup>3</sup> ([ORCID: 0000-0001-9413-9166](https://orcid.org/0000-0001-9413-9166))\n- Giuseppe Orsomando<sup>2</sup> ([ORCID: 0000-0001-6640-097X](https://orcid.org/0000-0001-6640-097X)) \u2020\n- Michael P Coleman<sup>1</sup> \u2020\n\n### Affiliations\n\n1. John van Geest Centre for Brain Repair, Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom\n2. Department of Clinical Sciences (DISCO), Section of Biochemistry, Polytechnic University of Marche Ancona Italy\n3. School of Chemistry and Molecular Biosciences, Institute for Molecular Bioscience and Australian Infectious Diseases Research Centre, University of Queensland Brisbane Australia\n4. Institute for Glycomics, Griffith University Southport Australia\n5. Neuroscience, BioPharmaceuticals R and D, AstraZeneca Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAxon loss underlies symptom onset and progression in many neurodegenerative disorders. Axon degeneration in injury and disease is promoted by activation of the NAD-consuming enzyme SARM1. Here, we report a novel activator of SARM1, a metabolite of the pesticide and neurotoxin vacor. Removal of SARM1 completely rescues mouse neurons from vacor-induced neuron and axon death in vitro and in vivo. We present the crystal structure of the Drosophila SARM1 regulatory domain complexed with this activator, the vacor metabolite VMN, which as the most potent activator yet known is likely to support drug development for human SARM1 and NMNAT2 disorders. This study indicates the mechanism of neurotoxicity and pesticide action by vacor, raises important questions about other pyridines in wider use today, provides important new tools for drug discovery, and demonstrates that removing SARM1 can robustly block programmed axon death induced by toxicity as well as genetic mutation.\n\n## Introduction\n\nSterile alpha and TIR motif-containing protein 1 (SARM1) plays a central, pro-degenerative role in programmed axon death (including Wallerian degeneration) (Osterloh et al., 2012). This axon degeneration pathway is activated in a number of neurodegenerative contexts, including in human disease (Coleman and H\u00f6ke, 2020; Gilley et al., 2021; Huppke et al., 2019; Lukacs et al., 2019). SARM1 has a critical nicotinamide adenine dinucleotide (NAD) cleavage (NADase) activity, which is activated when its upstream regulator and axon survival factor nicotinamide mononucleotide adenylyltransferase 2 (NMNAT2) is depleted or inactive (Essuman et al., 2017; Gilley et al., 2015; Gilley and Coleman, 2010; Sasaki et al., 2020a, Sasaki et al., 2016). NMNAT2 loss causes accumulation of its substrate nicotinamide mononucleotide (NMN), which promotes axon degeneration (Di Stefano et al., 2017; Loreto et al., 2020; Loreto et al., 2015). NMN is now known to activate SARM1 NADase activity (Zhao et al., 2019). Given that Sarm1 deletion confers robust axon protection, and even lifelong protection against lethality caused by NMNAT2 deficiency (Gilley et al., 2017), SARM1 has become a very attractive therapeutic target to prevent neurodegeneration.\n\nIn the past 2 years, there has been intense focus on structure-activity studies of SARM1 to help drive drug development. Recent structural data revealed the existence of an allosteric pocket in SARM1 armadillo-repeat (ARM) domain which is important for the regulation of SARM1 activity. NMN binds to this pocket, leading to SARM1 activation (Figley et al., 2021). NAD (Jiang et al., 2020) can also bind the same allosteric site, competing with NMN to prevent SARM1 activation. The ratio between NMN:NAD is therefore important to regulate SARM1 activity (Figley et al., 2021) and we have recently extended this to show that, at physiological levels, changes in NMN levels have the greater impact on the regulation of SARM1 activity (Angeletti et al., 2021). Further understanding how SARM1 activity is regulated by small molecules will help develop ways to block its activation.\n\nHere, we have investigated whether vacor, a disused pesticide and powerful neurotoxin associated with human peripheral and central nervous system disorders (Gallanosa et al., 1981; LeWitt, 1980) and axon degeneration in rats (Watson and Griffin, 1987), causes activation of programmed axon death. Vacor is a pyridine derivative that is metabolised to vacor mononucleotide (VMN) and vacor adenine dinucleotide (VAD) through a two-step conversion by nicotinamide phosphoribosyltransferase (NAMPT) and NMNAT2 (Figure 1A). Considering VAD inhibits SARM1 regulator NMNAT2 (Buonvicino et al., 2018), we reasoned that vacor may induce SARM1-dependent axon death. We demonstrate that vacor neurotoxicity is entirely mediated by SARM1 such that Sarm1-/- neurons and their axons are completely resistant. We unexpectedly find that vacor metabolite VMN directly binds to and activates SARM1, causing neuronal death. This study elucidates the mechanism of action of vacor likely underlying its lethal neurotoxic effect in humans. Vacor use is banned, but structurally related pyridines are widely-used and present in drugs, pesticides and food, raising important questions about their potential toxicity and SARM1 as a mediator of environmental neurotoxicity. Our findings also provide important new tools for drug discovery. To our knowledge, VMN is the most potent activator of SARM1 reported so far, and our structural data reveal essential information on SARM1 regulation which will aid drug development to block SARM1 activation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of vacor conversion into VMN and VAD by NAMPT and NMNAT2, respectively. VAD has been reported to inhibit NMNAT2 (Buonvicino et al., 2018). Vacor competes with NAM for NAMPT. High doses of NAM or inhibition of NAMPT with FK866 prevent vacor conversion into downstream metabolites (NAM, nicotinamide; NMN, nicotinamide mononucleotide; NAD, nicotinamide adenine dinucleotide; NAMPT, nicotinamide phosphoribosyltransferase; NMNAT2, nicotinamide mononucleotide adenylyltransferase 2; VMN, vacor mononucleotide; VAD, vacor adenine dinucleotide). (B) Vacor, VMN and VAD levels in wild-type DRG whole explant cultures (neurites and cell bodies) 4 hr after 50 \u00b5M vacor treatment (mean \u00b1 SEM; n = 3). (C) Representative images of neurites from wild-type DRG explant cultures treated with 10, 50, 100 \u00b5M vacor or vehicle. (D) Quantification of the degeneration index in experiments described in (C) (mean \u00b1 SEM; n = 3; repeated measures two-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; statistical significance shown relative to +Vehicle). (E) Representative images of neurites from wild-type SCG explant cultures treated with 10, 50, 100 \u00b5M vacor or vehicle. (F) Quantification of the degeneration index in experiments described in (E) (mean \u00b1 SEM; n = 3; repeated measures two-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; ***, p < 0.001; **, p < 0.01; NS, not-significant; statistical significance shown relative to +Vehicle). (G) Representative images of neurites from wild-type SCG explant cultures treated with 100 \u00b5M vacor or 100 \u00b5M vacor +1 mM NAM. (H) Quantification of the degeneration index in experiments described in (G) (mean \u00b1 SEM; n = 3; repeated measures two-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; *, p < 0.05; NS, not-significant; statistical comparisons shown are: +100 \u00b5M Vacor vs +100 \u00b5M Vacor +1 mM NAM and +1 mM NAM vs +100 \u00b5M Vacor +1 mM NAM). (I) Representative images of neurites from wild-type SCG explant cultures treated with 100 \u00b5M vacor, 100 nM FK866 or vehicle. (J) Quantification of the degeneration index in experiments described in (I) (mean \u00b1 SEM; n = 3; repeated measures two-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; **, p < 0.01; *, p < 0.05; NS, not-significant; statistical comparisons shown are: +100 \u00b5M Vacor vs +100 \u00b5M Vacor +100 nM FK866 and +100 nM FK866 vs +100 \u00b5M Vacor +100 nM FK866). Source data for Figure 1\u2014source data 1.\n\n## Results\n\n### Vacor causes SARM1-dependent neurite and cell death\n\nIntracellular conversion of vacor into its metabolites has been suggested to contribute to its toxicity (Buonvicino et al., 2018). We first confirmed that VMN and VAD are generated in vacor-treated dorsal root ganglion (DRG) mouse neurons (Figure 1A and B) and that these and a second neuron type, superior cervical ganglia (SCG) mouse neurons, exhibit rapid, dose-dependent neurite degeneration (Figure 1C\u2013F). Consistent with the proposed toxic role for vacor metabolites (Buonvicino et al., 2018), both nicotinamide (NAM), which competes with vacor as a preferred substrate for NAMPT, and the NAMPT inhibitor FK866 (Figure 1A), delayed vacor-induced neurite degeneration (Figure 1G\u2013J). Such competition may explain why NAM was an effective treatment for patients with vacor poisoning (Gallanosa et al., 1981).\n\nAs hypothesised, vacor failed to induce degeneration of Sarm1-/- DRG and SCG neurites (Figure 2A\u2013D). This protection was extremely strong, with neurites surviving indefinitely even after multiple vacor doses (Figure 2\u2014figure supplement 1A,B). Sarm1-/- neurites were not only protected from degeneration, but they also continued to grow normally, even with repeated dosing (Figure 2E and F). This mirrors the permanent rescue and continued growth previously reported in Nmnat2 null axons in the absence of SARM1 (Gilley et al., 2017; Gilley et al., 2015), suggesting complete efficacy in both toxic and inherited types of neuropathy. It also shows that vacor neurotoxicity is predominantly SARM1-dependent.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative images of neurites from wild-type and Sarm1-/- DRG (littermates) explant cultures treated with 50 \u00b5M vacor. (B) Quantification of the degeneration index in experiments described in (A) (mean \u00b1 SEM; n = 4; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; statistical significance shown relative to Sarm1-/- +50 \u00b5M Vacor). (C) Representative images of neurites from wild-type and Sarm1-/- SCG explant cultures treated with 100 \u00b5M vacor. (D) Quantification of the degeneration index in experiments described in (C) (mean \u00b1 SEM; n = 4; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; statistical significance shown relative to Sarm1-/- +100 \u00b5M Vacor). (E) Representative images of neurite outgrowth at DIV7 from wild-type and Sarm1-/- DRG explant cultures treated with 50 \u00b5M vacor or vehicle. Multiple doses of vacor or vehicle were added at DIV2 and DIV5. (F) Quantification of neurite outgrowth in (E) (mean \u00b1 SEM; n = 5; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; NS, not-significant; statistical significance shown relative to Wild-type +Vehicle). (G) Schematic representation of the experimental design for (H) (\u2018Created with BioRender\u2019). (H) Representative images of neurites from Sarm1-/- SCG dissociated neurons co-injected with plasmids encoding wild-type or E642A hSARM1 and DsRed (to label neurites) and treated with 100 \u00b5M vacor. (I) Quantification of healthy neurites and viable neurons in experiments in (H) is shown as a percentage relative to 0 hr (time of drug addition) (mean \u00b1 SEM; n = 3; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001). Source data for Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic representation of the experimental design. Sarm1-/- SCG explant cultures were treated with 100 \u00b5M vacor at DIV7. Multiple doses of vacor were administered by replacing the media every 3 days with fresh media containing vacor. (B) Representative images of neurites from Sarm1-/- SCG explant cultures showing no degeneration at 16 days, after treatment with three doses of 100 \u00b5M vacor. (C) Representative immunoblots of the ganglia fraction from wild-type DRG explant cultures at the indicated time points after 50 \u00b5M vacor or vehicle probed for SARM1 and \u03b2-actin (loading control). (D) Quantification of normalised SARM1 level (to \u03b2-actin) is shown, with data presented relative to 0 hr (mean \u00b1 SEM; n = 4; two-way ANOVA followed by Tukey\u2019s multiple comparison test). (E) Representative immunoblots of the neurite fraction from wild-type DRG explant cultures at the indicated time points after 50 \u00b5M vacor or vehicle probed for SARM1 and \u03b2-actin (loading control). (F) Quantification of normalised SARM1 level (to \u03b2-actin) is shown, with data presented relative to 0 hr (mean \u00b1 SEM; n = 4; two-way ANOVA followed by Tukey\u2019s multiple comparison test). (G) Representative images showing long-term survival of neurites from Sarm1-/- SCG dissociated neurons co-injected with plasmids encoding E642A hSARM1 and DsRed (to label neurites) and treated with 100 \u00b5M vacor. (H) Representative images showing expression of both wild-type and E642A hSARM1 for microinjection experiments in (Figure 2G-I). The absence of vacor-induced toxicity in neurons expressing E642A hSARM1 is therefore due to loss of enzymatic activity, rather than the lack of protein expression. Source data for Figure 2\u2014figure supplement 1\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative images of neurites and cell bodies from wild-type DRG dissociated neurons cultured in microfluidic chambers and treated with 50 \u00b5M vacor or vehicle (\u2018Created with BioRender\u2019). (B) Quantification of the degeneration index and viable neurons (shown as a percentage relative to 0 hr) in experiments described in (A) (mean \u00b1 SEM; n = 4; repeated measures two-way ANOVA followed by Tukey\u2019s multiple comparison; ***, p < 0.001; *, p < 0.05; statistical significance shown relative to +Vehicle soma & neurite chambers). Source data for Figure 2\u2014figure supplement 2\u2014source data 1.\n\nSARM1 levels remained relatively stable following vacor treatment (Figure 2\u2014figure supplement 1C-F). We therefore tested if SARM1 NADase activity is the critical function required for vacor toxicity. Exogenous expression of wild-type human SARM1 (hSARM1) in Sarm1-/- SCG neurons restored vacor sensitivity, whereas expression of E642A hSARM1, which lacks NADase activity, did not (Figure 2G\u2013I; Figure 2\u2014figure supplement 1G,H), similar to findings in axotomy (Essuman et al., 2017). Interestingly, unlike axotomy, activation of the pathway by vacor also caused SARM1-dependent cell death (Figure 2I), similar to that previously reported with constitutively active SARM1 (Gerdts et al., 2015; Gerdts et al., 2013). To explore this further, we cultured DRG neurons in microfluidic chambers, to allow independent manipulation of the neurite and soma compartments. Addition of vacor to either compartment directly activated local death of cell bodies and/or neurites. However, while vacor-induced cell death also causes neurite degeneration, the reverse was not true: no cell loss was observed after local induction of distal neurite degeneration by vacor (Figure 2\u2014figure supplement 2A,B). Intriguingly, the degeneration of neurites in the soma-treated cultures is even more rapid that with direct treatment. Metabolite measurements in neurites after vacor treatment confirmed this involves SARM1 activation (Figure 4D). This suggests there may be components both of conventional Wallerian degeneration following loss of soma support and a possible spreading of SARM1 activation within the cell, possibly as a consequence of the proposed positive feedback upon NAD depletion (Figley et al., 2021).\n\n### Sarm1 deletion confers functional and morphological protection of neurons against vacor toxicity in vivo\n\nWe next sought to validate our findings in vivo. To reduce the impact on animal welfare of systemic administration of a rodenticide in mice, we opted for intravitreal (IVT) injection (Figure 3A) of vacor. Electroretinogram (ERG) recordings showed that vacor caused a global loss of photoreceptor neuronal activity, and subsequent loss of bipolar and retinal ganglion cell (RGC) responses, which were fully rescued by SARM1 deficiency (Figure 3B and C). Vacor administration also caused inner retina neuronal death, as revealed by a significant reduction in RGC number. Again, this was completely prevented by SARM1 deficiency (Figure 3D and E). DMSO had no adverse effect on retinal cell survival or function compared to PBS-injected eyes (Figure 3\u2014figure supplement 1A,B). These data demonstrate that the absence of SARM1 confers functional and morphological protection of neurons against vacor toxicity in vivo.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of the experimental design for (C,D) (\u2018Created with BioRender\u2019). (B) Graphic illustration of the different retinal layers (\u2018Created with BioRender\u2019). (C) Quantification of the ERG responses (pSTR, B wave and A wave) from wild-type and Sarm1-/- mice injected with 100 mM vacor or DMSO (vehicle) (mean \u00b1 SEM; n = 6; two-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001). (D) Representative images of RGC from wild-type and Sarm1-/- mice injected with 100 mM vacor or DMSO (vehicle). (E) Quantification of RGC numbers from wild-type and Sarm1-/- mice injected with 100 mM vacor or DMSO (vehicle) (mean \u00b1 SEM; n = 5; repeated measures two-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001). Source data for Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Quantification of the ERG responses (pSTR, B wave and A wave) from wild-type mice untreated (naive-no injection) or injected with PBS or DMSO (mean \u00b1 SD; n = 2\u20136). (B) Quantification of RGC numbers from wild-type mice untreated (naive-no injection) or injected with PBS or DMSO (mean \u00b1 SD; n = 2\u20135). Source data for Figure 3\u2014figure supplement 1\u2014source data 1.\n\n### Vacor treatment leads to SARM1 activation\n\nActivation of SARM1 depletes NAD and generates cADPR in neurons (Essuman et al., 2017; Gerdts et al., 2015; Sasaki et al., 2020a, Sasaki et al., 2016). Based on the previously reported inhibition of NMNAT2 by VAD (Buonvicino et al., 2018), we initially hypothesised that this causes a rise in NMN, the physiological NMNAT2 substrate and a known activator of SARM1 (Di Stefano et al., 2017; Di Stefano et al., 2015; Loreto et al., 2015; Zhao et al., 2019), thereby stimulating SARM1 activity to trigger vacor-dependent axon death. Surprisingly, while SARM1 activation was confirmed by a drastic SARM1-dependent decline in NAD and increase in cADPR following vacor administration, NMN did not rise and even fell slightly (Figure 4A\u2013D). Furthermore, NMN and NAD levels and their ratio to one another were not altered in our vacor-treated Sarm1-/- neurons (Figure 4A and B), suggesting that the reported inhibition of NAMPT and NMNAT2 by vacor/VAD (Buonvicino et al., 2018) does not occur in this context at this drug concentration. Crucially, NMN deamidase, an enzyme that strongly preserves axotomised axons by preventing NMN accumulation (Figure 4E; Figure 4\u2014figure supplement 1A, Di Stefano et al., 2017; Di Stefano et al., 2015; Loreto et al., 2015), was also unable to protect against vacor toxicity (Figure 4E and F), even though recombinant NMN deamidase retains its ability to convert NMN to nicotinic acid mononucleotide (NaMN) in the presence of vacor, VMN and VAD (Figure 4\u2014figure supplement 1B). WLDS, another enzyme that limits NMN accumulation (Di Stefano et al., 2015), also failed to rescue neurons against vacor neurotoxicity (Figure 4\u2014figure supplement 1C,D). These data suggest that, in this specific context at least, NMN is not responsible for SARM1 activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig4-v2.jpg)\n\n**Figure 4.:** (A,B) NMN and NAD levels and NMN/NAD ratio in ganglia (A) and neurite (B) fractions from wild-type and Sarm1-/- DRG explant cultures at the indicated time points after 50 \u00b5M vacor or vehicle treatment (mean \u00b1 SEM; n = 4; three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; **, p < 0.01; *, p < 0.05; NS, not-significant). (C) cADPR levels in wild-type and Sarm1-/- DRG whole explant cultures (neurites and cell bodies) 4 hr after 50 \u00b5M vacor or vehicle treatment. cADPR levels were consistently above the detection limit (~1 fmol/\u00b5g protein) only in wild-type DRG explant cultures treated with vacor (mean \u00b1 SEM; n = 3; ND, not-detectable). (D) A single analysis of cADPR levels in ganglia and neurite fractions from wild-type and Sarm1-/- DRG explant cultures 4 hr after 50 \u00b5M vacor or vehicle treatment (n = 1). (E) Representative images of neurites from Sarm1-/- SCG dissociated neurons co-injected with plasmids encoding hSARM1, EGFP or EGFP-NMN deamidase and DsRed (to label neurites) and treated with 100 \u00b5M vacor. As an experimental control, Sarm1-/- SCG dissociated neurons injected with the same injection mixtures were axotomised. As expected, neurites expressing NMN deamidase were still intact 24 hr after axotomy. (F) Quantification of healthy neurites and viable neurons in experiments in (E) is shown as a percentage relative to 0 hr (time of drug addition) (mean \u00b1 SEM; n = 3; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; NS, not-significant). Source data for Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic representation of NAD biosynthetic pathway from NAM and the side reaction catalysed by bacterial NMN deamidase, which prevents accumulation of the NMN intermediate. (B) Relative activity (%) (NMN conversion into NaMN) of purified, recombinant NMN deamidase in the presence of vacor, VMN and VAD (all 250 \u00b5M) (mean \u00b1 SD; n = 2). (C) Representative images of neurites from wild-type and WldS DRG explant cultures treated with 50 \u00b5M vacor. (D) Quantification of the degeneration index in experiments described in (C) (mean \u00b1 SEM; n = 4; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test). Source data for Figure 4\u2014figure supplement 1\u2014source data 1.\n\n### Vacor metabolite VMN potently activates SARM1\n\nWhat did accumulate in vacor-treated neurons was the vacor metabolite VMN (Figure 1B) and, given its structural similarity to the endogenous SARM1 activator NMN (Figure 5\u2014figure supplement 1A), we hypothesised that VMN might instead directly activate SARM1, leading to cell and axon death. Crucially, we found that VMN potently activates the NADase activity of recombinant hSARM1, even more so than NMN, having a lower Ka and resulting in a greater induction (Figure 5A; Figure 5\u2014figure supplement 1B). Conversely, VAD only had a weak inhibitory effect on hSARM1 activity (Figure 5\u2014figure supplement 1C). Intriguingly, recombinant hSARM1 NADase activity dropped at higher VMN concentrations (Figure 5A). Notwithstanding the doses of vacor used in this study resulting in VMN levels in neurons within the activation range of SARM1, this inhibitory action could reveal critical information on how SARM1 activity is regulated. Analysis via best fitting (see equation in Materials and methods) suggests that our data are compatible with two distinct binding sites of VMN on SARM1 and led us to establish binding constants for activation (Ka) and inhibition (Ki) (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig5-v2.jpg)\n\n**Figure 5.:** (A) Fold change of NADase activity of purified, recombinant hSARM1 in the presence of NMN and VMN (mean \u00b1 SEM; n = 3). hSARM1 average basal activity is 18.12 \u00b1 3.02 milliU/mg (fold activation = 1). Rates are relative to controls measured with 250 \u00b5M NAD alone. Both NMN and VMN, once added to each reaction mixture, were not consumed during incubation. Experimental data were fitted to the modified Michaelis-Menten equation in Methods to calculate the kinetic parameters shown in the attached table. Hill coefficients for NMN and VMN indicate positive cooperativity in binding in both cases. Best fitting also revealed a Km for NAD of 70 \u00b5M. (B) Representative images of neurites from wild-type and Sarm1-/- DRG (littermates) explant cultures treated with 500 \u00b5M VMN. (C) Quantification of the degeneration index in experiments described in (B) (mean \u00b1 SEM; n = 3; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001; **, p < 0.01; *, p < 0.05; statistical significance shown relative to Sarm1-/- +500 \u00b5M VMN). Source data for Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Chemical structures of the two pyridine 5\u2019 mononucleotides VMN and NMN. (B) Representative chromatogram and graphs showing basal NADase activity of purified, recombinant hSARM1 (40 \u03bcg/ml). The formed products after separation (left panel) are quantified by peak-area integration and evaluated for linearity (middle panel). The NADase rate is calculated from accumulating products ADPR and cADPR (middle panel). In every experiment, the sum of ADPR and cADPR fully matched the amount of NAM formed (middle panel), as well as the amount of NAD consumed (right panel). (C) Fold change of NADase activity of purified, recombinant hSARM1 in the presence of VAD (mean \u00b1 SD; n = 2). Rates are relative to control measured with 250 \u00b5M NAD alone. VAD, once added to the reaction mixture, was not consumed during incubation. (D) Relative activity (%) of purified, recombinant NMN deamidase with VMN as a substrate. NMN or VMN were assayed at 250 \u00b5M (mean \u00b1 SD; n = 2). (E) A single analysis of vacor, VMN and VAD levels in wild-type DRG ganglia and neurite fractions 4 hr after 50 \u00b5M vacor treatment (n = 1). Source data for Figure 5\u2014figure supplement 1\u2014source data 1.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Scheme of the reactions for VMN and VAD synthesis. (B) List of reagents used in mix (A) for VMN synthesis and mix (A + B) for VAD synthesis. (C) Representative IEC-FPLC purification of VMN from a typical mix (A). (D) Representative IEC-FPLC+ RP HPLC purification of VAD from a typical mix (A + B). Starting from vacor, typical conversion yields obtained via this protocol were 70 % for VMN and 50 % or less for VAD that required two chromatographic steps for purification.\n\nWhile NMN activates SARM1 (Zhao et al., 2019) and promotes programmed axon death when NMNAT2 is depleted (Di Stefano et al., 2017; Loreto et al., 2020; Loreto et al., 2015), exogenous NMN does not induce degeneration of uninjured neurites (Di Stefano et al., 2015), probably because it is rapidly converted to NAD when NMNAT2 is present. However, we now show that exogenous application of its analogue, VMN, does induce SARM1-dependent death of uninjured DRG neurites (Figure 5B and C). This difference likely reflects a combination of VMN being both a more potent activator of SARM1 and it accumulating more because it is not efficiently metabolised by NMNAT2 (Buonvicino et al., 2018). VMN-dependent activation of SARM1 being the effector of vacor toxicity is also supported by several other findings. First, unlike NMN, VMN is not a substrate of NMN deamidase (Figure 5\u2014figure supplement 1D), thus explaining its inability to protect against vacor neurotoxicity (Figure 4E and F). In addition, VMN is not a substrate of the nuclear isoform NMNAT1 and is a poor substrate of mitochondrial NMNAT3 (Buonvicino et al., 2018), so VMN accumulation in cell bodies (Figure 5\u2014figure supplement 1E) and subsequent SARM1 activation, as detected by a rise of cADPR in this compartment (Figure 4D), provides a clear rationale for why vacor administration also causes cell death.\n\n### VMN activates SARM1 through direct binding to SARM1 ARM domain\n\nSARM1 ARM domain is believed to maintain SARM1 in an inhibited state (Figley et al., 2021; Gerdts et al., 2013; Jiang et al., 2020). SARM1 is activated by NMN binding directly to the ARM domain (Figley et al., 2021; Gu et al., 2021). We therefore hypothesised that VMN could directly interact with the ARM domain to release this inhibition and activate SARM1, causing neuronal death. Because we were unable to produce hSARM1ARM recombinantly, we used the ARM domain of Drosophila SARM1 (dSARM1ARM, residues 315\u2013678), produced in E. coli, to investigate if VMN interacts directly with dSARM1ARM. Isothermal titration calorimetry (ITC) analysis showed that VMN bound to dSARM1ARM with a Kd value of 2.83 \u00b1 0.16 \u03bcM (1:1 molar ratio) (Figure 6\u2014figure supplement 1A). To further characterise this interaction, we determined the crystal structure of the VMN-bound dSARM1ARM (1.69 \u00c5 resolution). dSARM1ARM contains eight tandem armadillo repeats (ARM1-8) stacking into an unusually compact right-handed superhelix (Figure 6A; Supplementary file 1). The bound VMN molecule sits in the central groove of dSARM1ARM, which is mainly lined by the H3 helices from ARM1-5 (Figure 6A; Figure 6\u2014figure supplement 1B). The interaction is mediated by two pi-stacking interactions between the indole of W385 and the pyridine moiety of VMN, and between the imidazole ring of H392 and the nitrobenzene moiety of VMN (Figure 6B; Figure 6\u2014figure supplement 2A,B); and eight hydrogen bonds, with a buried surface area of ~910 \u00c52 (Figure 6B; Figure 6\u2014figure supplement 2A,B). The hydroxyl group from the side chain of Y396 and the amino groups from the side chains of the conserved R437 and K476 form hydrogen bonds with the phosphate group of VMN; the amino group from the side chain of N640 forms a hydrogen bond with the nitro group of VMN; and the imidazole rings of H392 and H473 form hydrogen bonds with the urea and ribose of VMN, respectively (Figure 6B; Figure 6\u2014figure supplement 2A,B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig6-v2.jpg)\n\n**Figure 6.:** (A) Crystal structure of VMN-bound dSARM1ARM. dSARM1ARM contains eight armadillo motifs (ARM1-8). Except for ARM1 (containing only the H3 helix) and ARM7 (containing only H2 and H3 helices), other motifs consist of H1, H2, and H3 helices, coloured green, blue, and yellow, respectively. The unusual ARM6, which makes a sharp turn at its C-terminus, is coloured grey. Nitrogen, oxygen and phosphorous are coloured blue, red, and orange, respectively, in the VMN molecule. (B) Stick representation of the interaction of dSARM1ARM with VMN (pink), NMN (PDB: 7LCZ; green) and NaMN (PDB: 7RTC; cyan), and hSARM1 ARM domain with NAD (PDB: 7CM6; orange). The corresponding residues in Drosophila or human SARM1ARM are shown in parentheses. Nitrogen, oxygen, and phosphorous are coloured blue, red, and orange. (C) Structural comparison of the ARM domains bound to different ligands. The panel on the left shows the structural superposition of the N-terminal regions (residues 373\u2013444) of VMN and NMN-bound dSARM1ARM (PDB: 7LCZ; RMSD is 0.4 \u00c5 over 304 C\u03b1 atoms). The middle panel shows the superposition of the N-terminal regions (residues 373\u2013444) of VMN-bound dSARM1ARM, ligand-free (PDB: 7LCY) and NaMN-bound dSARM1ARM (PDB: 7RTC, RMSD between ligand-free and VMN-bound structures is 1.6 \u00c5 over 300 C\u03b1 atoms; RMSD between NaMN-bound and VMN-bound structures is 1.7 \u00c5 over 300 C\u03b1 atoms). Panel on the right shows the superposition of the N-terminal regions (residues 373\u2013444 of dSARM1ARM and residues 91\u2013164 of hSARM1ARM) of VMN-bound dSARM1ARM, unbound (PDB: 7CM5) and NAD-bound hSARM1ARM (PDB: 7CM6, RMSD between ligand-free and VMN-bound structures is 4.3 \u00c5 over 300 C\u03b1 atoms; RMSD between NAD-bound and VMN-bound structures is 4.3 \u00c5 over 300 C\u03b1 atoms).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Integrated (left) and raw (right) ITC data for the titration of 0.6 mM VMN with 45 \u00b5M dSARM1ARM. (B) Standard omit (cyan) and Polder (slate) mFo-DFc maps near the VMN molecule in dSARM1ARM crystals (chain A). (C) The adenine group and the adjacent ribose of NAD clash with the C-terminal region of the protein in the VMN-bound structure.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Sequence alignment of Drosophila and human SARM1. The alignment was performed and analysed using T-coffee Multiple Sequence Alignment Server (Expresso) (Notredame et al., 2000) and ESPript, respectively. Conserved residues are highlighted in black boxes. Residues important for VMN interaction are indicated by stars. (B) Detailed interaction between VMN and the residues indicted by stars in (A).\n\nOur data show that VMN has over two-fold higher affinity for dSARM1ARM than NMN (Kd = 6.39 \u00b1 0.04 \u03bcM), whose own interaction with the ARM domain was recently reported (Figure 6\u2014figure supplement 1A, Figley et al., 2021). VMN-bound dSARM1ARM adopts a similar conformation to NMN-bound dSARM1ARM (Figure 6C). Comparison of the two structures reveals that the NMN moiety of VMN and NMN share the same binding mode, with the key residues involved in NMN binding interacting with the analogous portions of the VMN molecule (Figure 6B). Importantly, in the NMN-bound structure, NMN forms a hydrogen bond with the residues H599 and G600 (loop connecting ARM6 and 7), while in the VMN-bound structure, due to the extra portion of VMN (urea and nitrobenzene groups) extending to the region between the N- and C-termini of the protein, two different hydrogen bonds are formed between VMN and H392 (ARM2 H1) at the N-terminus, and N640 (ARM8 H1) at the C-terminus. Furthermore, the pi-stacking interaction between H392 and the nitrobenzene of VMN is specific to this compound. These different and extra interactions VMN forms could explain why VMN induces SARM1 activation more efficiently, compared to NMN. The compaction seen in both NMN and VMN-bound dSARM1ARM structures likely represents the conformation of the ARM domain in active SARM1, based on the comparison with the more open crystal structures of ligand-free and NaMN-bound dSARM1ARM, as well as cryo-EM (electron microscopy) structures of ligand-free and NAD-bound hSARM1, representing the inactive state of the protein (Bratkowski et al., 2020; Figley et al., 2021; Sporny et al., 2020) (Figure 6C). NaMN stabilises the open conformation of dSARM1ARM due to the rotation of its nicotinic acid (NA) portion towards the N-terminus of the protein, and is therefore unable to form any interactions with the C-terminal region of the protein (Sasaki et al., 2021). Although the corresponding pyridine moiety of VMN also has a similar rotation, the extended portion of VMN permits the interaction with the C-terminal region of the protein, hence maintaining a compact conformation (Figure 6C). In the NAD-bound hSARM1ARM structure, the portion of NAD equivalent to NMN and VMN interacts with the protein through similar interactions, but the adenine group and the adjacent ribose of NAD extend further down to the side of the region between the termini. This would cause steric clashes with the C-terminal region of the protein, particularly with the loop connecting ARM6 and 7 (residues 594\u2013602), thus preventing NAD from inducing a more compact conformation in the ARM domain (Figure 6\u2014figure supplement 1C), keeping the protein in the inactive state. In summary, our data suggest that VMN activates SARM1 with a mechanism similar to NMN, but with some important differences, inducing a compaction of the ARM domain, destabilising its interfaces with the neighbouring ARM, SAM, and TIR domains, and eventually permitting the TIR domains to self-associate and hydrolyse NAD.\n\n### Mutations in the VMN binding pocket of hSARM1 ARM domain prevent vacor toxicity\n\nTo validate the interactions observed in the crystal structure, we performed mutagenesis studies, focusing on the interactions associated with W385 (human W103), R437 (human R157), and K476 (human K193), because these residues are highly conserved and specifically interact with VMN through their side chains. We introduced the corresponding W103A, R157A, and K193R mutations into human SARM1 and exogenously expressed them in Sarm1-/- SCG mouse neurons (Figure 7\u2014figure supplement 1A). Unlike wild-type hSARM1, these mutants failed to restore neurite degeneration and cell death after vacor administration (Figure 7A\u2013F). We picked K193R hSARM1 for further biochemical characterisation, as it is known to cause loss-of-function, based on a previous study (Geisler et al., 2019). Crucially, neither VMN nor NMN could activate the NADase activity of recombinant K193R hSARM1 (Figure 7G).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative images of neurites from Sarm1-/- SCG dissociated neurons co-injected with plasmids encoding wild-type or W103A hSARM1 and DsRed (to label neurites) and treated with 100 \u00b5M vacor. (B) Quantification of healthy neurites and viable neurons in experiments in (A) is shown as a percentage relative to 0 hr (time of drug addition) (mean \u00b1 SEM; n = 3; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001). (C) Representative images of neurites from Sarm1-/- SCG dissociated neurons co-injected with plasmids encoding wild-type or R157A hSARM1 and DsRed (to label neurites) and treated with 100 \u00b5M vacor. (D) Quantification of healthy neurites and viable neurons in experiments in (C) is shown as a percentage relative to 0 hr (time of drug addition) (mean \u00b1 SEM; n = 3; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001). (E) Representative images of neurites from Sarm1-/- SCG dissociated neurons co-injected with plasmids encoding wild-type or K193R hSARM1 and DsRed (to label neurites) and treated with 100 \u00b5M vacor. (F) Quantification of healthy neurites and viable neurons in experiments in (E) is shown as a percentage relative to 0 hr (time of drug addition) (mean \u00b1 SEM; n = 3; repeated measures three-way ANOVA followed by Tukey\u2019s multiple comparison test; ****, p < 0.0001). (G) Fold change of NADase activity of purified, recombinant K193R hSARM1 in the presence of NMN and VMN (wild-type hSARM1+ VMN is also shown for comparison) (mean \u00b1 SEM; n = 2\u20133). K193R hSARM1 average basal activity is 17.75 \u00b1 2.47 milliU/mg (fold activation = 1). Source data for Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72823/elife-72823-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Representative images showing expression of wild-type, W103A, R157A and K193R hSARM1 for microinjection experiments in Figure 7.\n\n## Discussion\n\nOverall, our study provides clear evidence that direct SARM1 activation by the vacor metabolite VMN underlies vacor neurotoxicity. Crucially, the comparison between VMN and NMN-bound dSARM1ARM structures and the differences from the ligand-free and NAD-bound hSARM1ARM structures provide the explanation for the mechanism of how these ligands target the same allosteric site, but regulate SARM1 activity differently. The data not only provide support for a key physiological role of NMN in the regulation of SARM1 activity and axon degeneration, but given VMN\u2019s greater potency than NMN, we anticipate that VMN and vacor will be important tools to support drug discovery in several ways. The identification of key residues in the ARM domain involved in the potent activation of SARM1 by VMN should facilitate rational drug design; further understanding why VMN activates SARM1 more potently than NMN could lead to the development of ligands with higher-affinity and selectivity to lock SARM1 in its inactive state. It will be important to expand also on VMN inhibition functions. Finally, we have also recently reported that recombinant hSARM1 uses vacor for base exchange to produce VAD (Angeletti et al., 2021), suggesting that vacor can also directly interact with SARM1. Understanding whether base exchange is important for SARM1 pro-degenerative function is another important area of research.\n\nVacor is currently the most effective chemical to directly activate SARM1 and cause neuronal death, eliminating the need for complex axotomy experiments or the use of drugs with non-specific actions. The IVT vacor model we have developed could also be used for relatively rapid validation of drugs targeting SARM1 in vivo in rodents, with both morphological and functional readouts. Interestingly, it was previously reported that Sarm1 deletion does not prevent RGC death following optic nerve crush in mice (Fernandes et al., 2018). However, our data show that SARM1 activation is sufficient to drive degeneration of multiple types of retinal neuron (including RGC) in addition to photoreceptors (Sasaki et al., 2020b), making SARM1 a promising target to treat retinal degeneration, at least in response to certain insults. To explain these differences, we suggest that retrograde RGC soma death after axotomy proceeds by a different, SARM1-independent mechanism such as loss of retrogradely delivered trophic factors.\n\nOur data also further implicate programmed axon death in human disease. It appears that this degeneration pathway can be aberrantly activated in humans not only by genetic mutation of NMNAT2 (Huppke et al., 2019; Lukacs et al., 2019), but also by SARM1 activation in severe neurotoxicity within hours of vacor ingestion (LeWitt, 1980). Although vacor use is banned, many other pyridines are widely used in our environment, and even directly administered to humans or ingested as pharmaceuticals, perfumes or food additives (Adams and De Kimpe, 2006; Li et al., 2016), raising important questions about their potential to activate SARM1 and cause axon degeneration or neuronal death. Indeed, one other nicotinamide analog, 3-acetyl pyridine, is already associated with axon degeneration (Desclin and Escubi, 1974) and subsequent to our preprint of this work has now been reported to act through SARM1 in a similar manner (Wu et al., 2021). Genetic hyperactivation of SARM1 has also now been associated with amyotrophic lateral sclerosis (Bloom et al., 2021; Gilley et al., 2021).\n\nDespite the extreme toxicity of vacor, SARM1 deficiency completely rescues neurons and preserves their functionality. Together with the previously reported lifelong protection in a genetic model of a rare human axonopathy (Gilley et al., 2017; Lukacs et al., 2019), this further supports the therapeutic potential of blocking SARM1 to completely prevent programmed axon death. Lastly, as vacor causes pancreatic \u03b2-cell destruction and diabetes in humans (Gallanosa et al., 1981), these findings could also have broader implications, uncovering a role for SARM1 in the survival of insulin producing cells and aiding research on diabetes. In conclusion, our study identifies a powerful SARM1 activator, advancing our understanding of how SARM1 activity is regulated and providing key support to drug discovery targeting programmed axon death.\n\n## Materials and methods\n\nAll studies conformed to the institution\u2019s ethical requirements in accordance with the 1986 Animals (Scientific Procedures) Act under Project Licences PPL P98A03BF9 and PP1824519, and in accordance with the Association for Research in Vision and Ophthalmology\u2019s Statement for the Use of Animals in Ophthalmic and Visual Research.\n\n### Primary neuronal cultures\n\nDRG ganglia were dissected from C57BL/6J (RRID:IMSR_JAX:000664), Sarm1-/- (RRID:MGI:3765957) and WldS (RRID:MGI:4438866) E13.5-E14.5 mouse embryos and SCG ganglia were dissected from postnatal day 0\u20132 mouse pups. Littermates from Sarm1+/- crosses were used when possible, as indicated in figure legends. Explants were cultured in 35 mm tissue culture dishes pre-coated with poly-L-lysine (20 \u00b5g/ml for 1 hr; Merck) and laminin (20 \u00b5g/ml for 1 hr; Merck) in Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM, Gibco) with 1 % penicillin/streptomycin, 50 ng/ml 2.5 S NGF (all Invitrogen) and 2 % B27 (Gibco). Four \u00b5M aphidicolin (Merck) was used to reduce proliferation and viability of small numbers of non-neuronal cells (Loreto and Gilley, 2020). For cultures of dissociated SCG neurons, Sarm1-/- SCG ganglia were incubated in 0.025 % trypsin (Merck) in PBS (without CaCl2 and MgCl2) (Merck) for 30 min, followed by incubation with 0.2 % collagenase type II (Gibco) in PBS for 20 min. Ganglia were then gently dissociated using a pipette. Dissociated neurons were plated in a poly-L-lysine and laminin-coated area of ibidi \u03bc-dishes (Thistle Scientific) for microinjection experiments. Dissociated cultures were maintained as explant cultures, except that B27 was replaced with 10 % fetal bovine serum (Merck) and 2.5 S NGF was lowered to 30 ng/ml. Culture media was replenished every 3 days. For most experiments, neurites were allowed to extend for 7 days before treatment.\n\n### Drug treatments\n\nFor most experiments, DRG and SCG neurons were treated at day in vitro (DIV) 7 with vacor (Greyhound Chromatography) or vehicle (H2O with 4 % 1 N HCl), and VMN or vehicle (H2O) just prior to imaging (time 0 hr). When used, FK866 (kind gift of Prof Armando Genazzani, University of Novara) and NAM (Merck) were added at the same time as vacor. For neurite outgrowth and long-term survival assays, multiple doses of vacor or vehicle were added by replacing media with fresh media containing the drugs at the timepoints indicated in the figure. The drug concentrations used are indicated in the figures and figure legends. Vacor was dissolved in H2O with 4 % 1 N HCl or DMSO; quantitation of the dissolved stock was performed spectrophotometrically (\u025b340nm 17.8 mM\u20131cm\u20131).\n\n### Acquisition of phase contrast images and quantification of neurite degeneration and outgrowth\n\nPhase contrast images were acquired on a DMi8 upright fluorescence microscope (Leica microsystems) coupled to a monochrome digital camera (Hamamatsu C4742-95). The objectives used were NPLAN 5 X/0.12 for neurite outgrowth assays and HCXPL 20 X/0.40 CORR for neurite degeneration assays. Radial outgrowth was determined by taking the average of two measurements of representative neurite outgrowth for each ganglion at DIV2-3-5-7. Measurements were made from overlapping images of the total neurite outgrowth. For neurite degeneration assays, the degeneration index was determined using a Fiji plugin (Sasaki et al., 2009). For each experiment, the average was calculated from three fields per condition; the total number of experiments is indicated in the figure legends.\n\n### Microinjection and quantification of % of healthy neurites and viable neurons\n\nDIV5 dissociated Sarm1-/- SCG neurons were microinjected using a Zeiss Axiovert S100 microscope with an Eppendorf FemtoJet microinjector and Eppendorf TransferMan micromanipulator. Plasmids were diluted in 0.5 X PBS (without CaCl2and MgCl2) and filtered using a Spin-X filter (Costar). The mix was injected directly into the nuclei of SCG neurons using Eppendorf Femtotips (Gilley and Loreto, 2020). Injected plasmids were allowed to express for 2 days before vacor or vehicle treatment and axotomy. Plasmids were injected at the following concentrations: 2.5 (Figure 2G\u2013I) or 10 (Figure 4E and F) ng/\u03bcl (untagged) wild-type hSARM1 and 2.5 ng/\u03bcl E642A hSARM1 (pCMV-Tag2 vector backbone), 10 ng/\u03bcl (C-terminal Flag-tagged) wild-type, K193R, R157A and W103A hSARM1 (pLVX-IRES-ZsGreen vector backbone) (Figure 7A\u2013F), 30 ng/\u03bcl EGFP-NMN deamidase (pEGFP-C1 vector backbone), 30 ng/\u03bcl pEGFP-C1, 40 (Figure 2G\u2013I; Figure 7A\u2013F) and 70 (Figure 4E and F) ng/\u03bcl pDsRed2-N1. To check for expression of wild-type and E642A hSARM1 constructs (pCMV-Tag2 vector backbone) (Figure 2\u2014figure supplement 1H), wild-type, K193R, R157A, and W103A hSARM1 (pLVX-IRES-ZsGreen vector backbone) (Figure 7\u2014figure supplement 1A) and pDsRed2-N1 were injected at 25 ng/\u03bcl; neurons were then fixed in 4 % paraformaldehyde (PFA) (Merck) and immunostained with mouse monoclonal anti-SARM1 primary antibody (Chen et al., 2011) followed by Alexa Fluor 488 or 647 anti-mouse secondary antibody (Thermo Fisher Scientific). Fluorescence microscopy images were acquired on a DMi8 upright fluorescence microscope (Leica microsystems) coupled to a monochrome digital camera (Hamamatsu C4742-95). The objective used was HCXPL 20 X/0.40 CORR. Numbers of morphologically normal and continuous DsRed labelled neurites and morphologically normal cell bodies were counted in the same field at the indicated timepoints after vacor or vehicle treatment. For each experiment, the average was calculated from three fields per condition; the total number of experiments is indicated in the figure legends. The percentage of healthy neurites and viable neurons remaining relative to the first time point was determined.\n\n### Microfluidic cultures\n\nDissociated DRG neurons were plated in microfluidic chambers (150 \u03bcm barrier, XONA Microfluidics). Cell suspension was pipetted into each side of the upper channel of the microfluidic device. On DIV7, a difference of 100 \u03bcl of media between chambers was introduced and drugs were added to the compartment with the lower hydrostatic pressure. To calculate the % of viable neurons, 1 \u03bcg/ml propidium iodide (PI) (Thermo Fisher Scientific) was added to the media 15 min before drug addition. Phase contrast and fluorescence microscopy images were acquired on a DMi8 upright fluorescence microscope (Leica microsystems) coupled to a monochrome digital camera (Hamamatsu C4742-95). The objective used was HCXPL 20 X/0.40 CORR. For each experiment, the degeneration index was calculated from the average of two distal fields of neurites per condition, whereas the % of viable neurons remaining relative to the first time point was calculated from the average of three fields of cell bodies (staining positive for PI) per condition; the total number of experiments is indicated in the figure legends.\n\n### Intravitreal (IVT) injection into the eye\n\n9- to 12-week-old male and female C57BL/6J (Charles River, UK, RRID:IMSR_JAX:000664), or Sarm1-/- (RRID:MGI:3765957) mice were intravitreally injected with either 2 \u03bcL vacor, DMSO (vehicle) or PBS. Injections were performed as previously described (Osborne et al., 2018). ERG responses were recorded simultaneously from both eyes using an Espion E3 system with full-field Ganzfeld sphere (Diagnosys, Cambridge, UK). Animals were dark-adapted overnight, and ERG recordings performed under low level, red light illumination. Peak RGC responses (pSTR) were recorded between 70\u2013110 ms after a light exposure of \u20134.73 log cd.s.m\u20132, B wave peaks between 80\u2013120 ms, at \u20131.90 log cd.s.m\u20132, and A wave troughs within the first 20 ms at 1.29 log cd.s.m\u20132. Following culling via exposure to CO2, eyes were post-fixed for 24 hr in 4 % PFA before retinal flatmounts were prepared as previously described (Osborne et al., 2018). Briefly, retinas were excised from the eye cup, flattened and stained with the RGC specific nuclei marker BRN3A (Santa Cruz, sc-31984, RRID:AB_2167511, 1:200). Images were captured, blindly, from eight regions per retina using a 20 X objective, and automatically quantified with the Fiji plugin \u2018Simple RGC\u2019 (Cross et al., 2021). The representative images shown were acquired on a confocal microscope (Leica Microsystems) using a 40 X objective.\n\n### Determination of NMN, NAD, cADPR, vacor, VMN, and VAD tissue levels\n\nFollowing treatment with vacor or vehicle, DIV7 wild-type and Sarm1\u2212/\u2212 DRG ganglia were separated from their neurites with a scalpel. Neurite and ganglia (containing short proximal neurite stumps as well as cell bodies) fractions were washed in ice-cold PBS and rapidly frozen in dry ice and stored at \u221280 \u00b0C until processed. Tissues were ground in liquid N2 and extracted in HClO4 by sonication, followed by neutralisation with K2CO3. NMN and NAD were subsequently analysed by spectrofluorometric HPLC analysis after derivatisation with acetophenone (Mori et al., 2014). Vacor, VMN, and VAD were determined in DRG whole explant cultures by ion pair C18-HPLC chromatography, as previously described (Buonvicino et al., 2018). cADPR levels were determined in DRG whole explant cultures using a cycling assay, as previously described (Graeff and Lee, 2002). A single analysis of vacor, VMN, VAD, and cADPR levels was performed in DRG neurite and ganglia fractions independently, which was not further repeated due to the low basal levels of these metabolites and the amount of cellular material needed for this type of analysis. Metabolite levels were normalised to protein levels quantified with the Bio-Rad Protein Assay (Bio-Rad) on formate-resuspended pellets from the aforementioned HClO4 extraction.\n\n### VMN and VAD synthesis and purification\n\nVMN and VAD were synthesised as previously reported (Buonvicino et al., 2018) with minor changes. Vacor was either phosphoribosylated in vitro by murine NAMPT (mNAMPT) into VMN or phosphoribosylated by mNAMPT and adenylated by murine NMNAT2 (mNMNAT2) into VAD. The scheme of these reactions and the reaction mixtures are shown in Figure 5\u2014figure supplement 2A,B. Inorganic yeast pyrophosphatase (PPase), phosphoribosyl 1-pyrophosphate (PRPP) and adenosine triphosphate (ATP) were all from Merck. Recombinant mNAMPT and mNMNAT2 were purified as previously described (Amici et al., 2017; Orsomando et al., 2012). Following incubation, reaction mixtures (A) for VMN and (A + B) for VAD (Figure 5\u2014figure supplement 2B) were stopped by rapid cooling on ice and kept refrigerated until injection for purification. Next, the VMN and VAD obtained were purified by FPLC under volatile solvents and lyophilised. Briefly, a preparative IEC chromatography was carried out on AKTA Purifier onto the anion exchanger resin Source 15Q (GE HealthCare, 20 ml volume). The column was equilibrated at room temperature (~25 \u00b0C), at 5 ml/min. After injection of the two mixtures above, a linear gradient elution was applied by mixing the two volatile buffers, as indicated. The eluate was monitored at wavelengths of 260 nm and 340 nm (optimal for vacor nucleotides), and both VMN and VAD peaks were collected (Figure 5\u2014figure supplement 2C,D). Next, an additional chromatography was performed by HPLC onto a RP C18 column (Varian, 250 \u00d7 4.6mm, 5\u03bcm particles) heated at 50 \u00b0C to obtain a pure VAD stock. The equilibration in such case was carried out at 1 ml/min in ammonium formate buffer; this was followed by multiple injections of the previously collected IEC pool of VAD (~1 ml each), and elution by a linear gradient of increasing acetonitrile in the buffer. The eluate was monitored again at wavelengths 260 nm and 340 nm and the VAD peak was collected (Figure 5\u2014figure supplement 2D). After lyophilisation, dry pellets were stored at \u201380 \u00b0C. The resulting VMN and VAD lyophilised powders were 100 % pure. Their quantitation after resuspension in H2O was performed spectrophotometrically (\u025b340nm of 17.8 mM\u20131cm\u20131).\n\n### Recombinant hSARM1 purification\n\nHuman embryonic kidney (HEK) 293T cells (clone 17, [HEK 293T/17]) were obtained from the American Type Culture Collection (ATCC, CRL-11268, RRID:CVCL_1926) and had been authenticated by STR profiling. Mycoplasma contamination was not detected. Recombinant, full-length C-terminal Flag-tagged wild-type and K193R human SARM1 (hSARM1-Flag) were expressed in HEK293T cells and purified by immunoprecipitation. HEK cells at 50\u201370% confluence were transfected with wild-type and K193R hSARM1-Flag expression construct (pLVX-IRES-ZsGreen vector backbone) using Lipofecatmine 2000 (Thermo Fisher Scientific). To boost wild-type and K193R hSARM1-Flag expression, media were supplemented with 2 mM nicotinamide riboside (prepared from Tru Niagen capsules by dissolving the contents and passing through a 0.22 \u00b5m filter) at the time of transfection. After 24 hr, cells were collected and washed in cold PBS and lysed for 10 min with trituration by pipetting and repeated vortexing in ice-cold KHM buffer (110 mM potassium acetate, 20 mM HEPES pH 7.4, 2 mM MgCl2, 0.1 mM digitonin) with cOmplete, Mini, EDTA-free protease inhibitor cocktail (Roche). After centrifugation for 5 min at 3000 rpm in a chilled microfuge, the supernatant was collected and diluted to 1 \u00b5g/\u00b5l in KHM buffer after determination of its protein concentration by the Pierce BCA assay (Thermo Fisher Scientific). For immunoprecipitation, 1 ml of extract was incubated overnight at 4 \u00b0C with rotation with 20 \u00b5g/ml anti-FLAG M2 antibody (Merck, F3165, RRID:AB_259529) and 50 \u00b5l Pierce magnetic protein A/G beads (Thermo Fisher Scientific) pre-washed with KHM buffer. Beads were collected on a magnetic rack and washed 3 x with 500 \u00b5l KHM buffer and 1 x with PBS (with protease inhibitors) and then resuspended in PBS containing 1 mg/ml BSA. hSARM1-Flag concentration in the bead suspension was determined relative to an hSARM1 standard (purified from insect cells) by immunoblotting using a rabbit polyclonal antibody raised against the SAM domains of human SARM1 (both kindly provided by AstraZeneca).\n\n### hSARM1 NADase activity\n\nRates of NAD consumption by recombinant wild-type and K193R hSARM1 were measured by HPLC under a discontinuous assay that was set as follows. Typically, mixtures of 0.02\u20130.2 ml contained 2\u201320 \u03bcg/ml of hSARM1-Flag (on-beads) in buffer HEPES/NaOH 50 mM, pH 7.5, and 250 \u03bcM NAD. NMN, VMN, and VAD were added at the concentrations indicated in the figures. Reactions were initiated by adding NAD, incubated at 25 \u00b0C in a water-bath, stopped at appropriate times by HClO4 treatment, neutralised with K2CO3, and subsequently analysed by ion-pair reverse-phase (RP) HPLC (NAM, NMN, NAD, ADPR, cADPR) (Mori et al., 2014) or under optimised conditions for VMN and VAD detection (Buonvicino et al., 2018). The products formed (NAM, ADPR, and cADPR) were quantified from the area of separated peaks. Rates were calculated under NAD consumption \u226420 % from the linearly accumulating products ADPR and cADPR (Figure 5\u2014figure supplement 1B). One unit (U) of activity represents the enzyme amount that forms 1 \u03bcmol/min of the products above under these assay conditions. Data from three independent experiments were averaged to calculate hSARM1 activity fold activation (Figure 5A) and then studied by fitting through the Excel software package to the rate equation below\n\n$$\nV=\\frac{V_{max}(X+(\\frac{1\u2212X}{1+(\\frac{[I]}{K_{a}})}))(Y+(\\frac{1\u2212Y}{1+\\frac{[I]}{k_{i}}^{n}}))[S]}{K_{m}+[S]}\n$$\n\nthat represents a Michaelis-Menten equation adapted to be valid for readily reversible effectors, that is, including activators and inhibitors binding via distinct sites to one protein target. Maximum velocity (Vmax) represents the rate in the absence of the effector (basal activity) corrected by the two parameters between parentheses, the first for activation and the second for inhibition, taking into account opposite and independent contributions exerted by the single but dual effector I. X is the \u2018relative activity fold activation\u2018 factor at saturating concentrations of I, Y is the residual activity fraction at saturating concentration of I, Ka is the affinity constant of I for the activation site, Ki is the affinity constant of I for the inhibition site, and n is the Hill coefficient indicating cooperativity (if \u2260 1).\n\n### Expression and purification of recombinant dSARM1ARM\n\nCodon-optimised cDNA of dSARM1ARM (residues 315\u2013678) was cloned into the pMCSG7 expression vector at the SspI site, using ligation-independent cloning (Aslanidis and de Jong, 1990). Plasmids encoding various dSARM1ARM mutants were generated using the Q5 Site-Direct Mutagenesis Kit (New England BioLabs). Plasmids were transformed into BL21 (DE3) cells. Large-scale expression of dSARM1ARM and its mutants was performed using the auto-induction method (Studier, 2005). In brief, 2 ml of overnight culture of the transformed BL21 cells was inoculated into 1 l of auto-induction media with 100 \u03bcg/ml ampicillin, and grew at 37 \u00b0C, 225 rpm to reach OD600 of 0.8\u20131.0. Temperature was decreased to 20 \u00b0C for protein expression overnight. Cells were harvested by centrifugation at 6000\u00d7 g for 20 min at 4 \u00b0C, and resuspended into lysis buffer (50 mM HEPES pH 8.0, 500 mM NaCl and 30 mM imidazole). PMSF (phenylmethanesulfony fluoride) was added to the cell resuspension at 1 mM concentration. Cell resuspension from 1 l of culture was sonicated at the amplitude of 40 % for 120 s (10 s on and 20 s off). Lysed cells were centrifuged at 15300\u00d7 g for 40 min at 4 \u00b0C. The supernatant was loaded onto the HisTrap HP 5 ml Ni column, followed by washing using 10 column volumes of lysis buffer. The bound protein was eluted using elution buffer (50 mM HEPES pH 8.0, 500 mM NaCl and 300 mM imidazole), and incubated with TEV (tobacco etch virus) protease to remove the N-terminal 6\u00d7 histidine tag in the SnakeSkin Dialysis Tubing, 3.5 K MWCO (Thermo Fisher Scientific), dialysed against the buffer containing 20 mM HEPES (pH 8.0), 300 mM NaCl and 1 mM DTT at 4 \u00b0C overnight. The cleaved protein was reloaded onto the Ni column and flow-through was collected, concentrated to 10 ml and injected onto the Superdex 75 HiLoad 26/600 column (GE Healthcare) equilibrated with gel-filtration buffer (10 mM HEPES pH 8.0 and 150 mM NaCl). The pure target protein, as confirmed by SDS-PAGE analysis and mass spectrometry, was concentrated to 10 mg/ml and stored at \u201380 \u00b0C.\n\nProtein crystallisation, diffraction data collection and structural determination dSARM1ARM (10 mg/ml) and VMN were incubated at 1: 10 molar ratio at 4 \u00b0C overnight. Hanging drops, containing 2 \u03bcl of protein complex and 2 \u03bcl of well solution (20 % PEG 3350 and 0.2 M magnesium acetate tetrahydrate, pH 7.9), were equilibrated against 500 \u03bcl of well solution at 20 \u00b0C. Crystals with irregular shapes were observed after 3\u20135 days. In situ partial proteolysis happened during the process of crystallisation, as the analysis of the crystals via SDS-PAGE analysis and mass spectrometry indicated that the crystallised protein only spanned residues 370\u2013678, rather than residues 315\u2013678. Crystals cryo-protected in paratone-N diffracted to 1.7\u20132.3 \u00c5 resolution at the Australian Synchrotron MX2 beamline. X-ray diffraction data was collected at the wavelength of 0.95372 \u00c5. Raw data was processed using XDS (RRID:SCR_015652) (Kabsch, 2010); data reduction, scaling and reflection selection for Rfree calculation were performed using Aimless within CCP4 suite (RRID:SCR_007255) (Evans and Murshudov, 2013). Phases were calculated via molecular replacement using the NMN-bound dSARM1ARM (PDB: 7LCZ) (Figley et al., 2021; Gu et al., 2021) as a search model in the program Phaser within Phenix (RRID:SCR_014224) (McCoy et al., 2007). The model was refined using COOT (RRID:SCR_014222) (Emsley and Cowtan, 2004) and Phenix (Afonine et al., 2012), and analysed using PyMol (RRID:SCR_000305) (Schrodinger), PDBsum (RRID:SCR_006511) (Laskowski et al., 2018) and PISA (RRID:SCR_015749) (Krissinel and Henrick, 2007). The crystals contain two molecules of VMN-bound dSARM1ARM (RMSD = 0.3 \u00c5 over 296 C\u03b1 atoms) in the asymmetric unit.\n\n### Isothermal titration calorimetry (ITC)\n\nITC experiments were performed in duplicate on Nano ITC (TA Instruments). All proteins and compounds were dissolved in a buffer containing 10 mM HEPES (pH 8.0) and 150 mM NaCl. The baseline was equilibrated for 600 s before the first injection. VMN (0.6 mM) was titrated as 20\u201325 injections of 1.96 \u03bcL every 200 s, into 45 \u03bcM protein. The heat change was recorded by injection over time and the binding isotherms were generated as a function of molar ratio of the protein solution. The dissociation constants (Kd) were obtained after fitting the integrated and normalised data to a single-site binding model using NanoAnalyze (TA Instruments).\n\n### NMN deamidase activity\n\nRecombinant E. coli NMN deamidase was obtained as described previously (Zamporlini et al., 2014). Activity was measured in buffer HEPES/NaOH 50 mM, pH 7.5, in the presence of 4 milliU/ml enzyme, 0.5 mg/ml BSA, and 250 \u03bcM NMN or VMN. Vacor, VMN, and VAD, all at the concentration of 250 \u03bcM, were also assayed in presence of the substrate NMN. Reactions were incubated at 37 \u00b0C, then stopped and analysed by HPLC using the two methods described above (Buonvicino et al., 2018; Mori et al., 2014). The NMN deamidase rates were calculated after separation and quantification of the NaMN product formed from NMN, and finally reported as relative percentages of controls in the presence of NMN alone.\n\n### Western blot\n\nFollowing treatment with vacor, DRG ganglia were separated from their neurites with a scalpel. Neurites and ganglia were collected, washed in ice-cold PBS containing protease inhibitors (Roche), and lysed directly in 15 \u00b5l 2 x Laemmli buffer containing 10 % 2-mercaptoethanol (Merck). Samples were loaded on a 4-to-20% SDS polyacrylamide gel (Bio-Rad). Membranes were blocked for 3 hr in 5 % milk in TBS (50 mM Trizma base and 150 mM NaCl, PH 8.3, both Merck) plus 0.05 % Tween-20 (Merck) (TBST), incubated overnight with primary antibody in 5 % milk in TBST at 4 \u00b0C and subsequently washed in TBST and incubated for 1 hr at room temperature with HRP-linked secondary antibody (Bio-Rad) in 5 % milk in TBST. Membranes were washed, treated with SuperSignal West Dura Extended Duration Substrate (Thermo Fisher Scientific) and imaged with Uvitec Alliance imaging system. The following primary antibodies were used: mouse monoclonal anti-SARM1 (Chen et al., 2011) (1:5000) and mouse anti-\u03b2-actin (Merck, A5316, RRID:AB_476743, 1:2000) as a loading control. Quantification of band intensity was determined by densitometry using Fiji (RRID:SCR_002285).\n\n### Statistical analysis\n\nStatistical testing of data was performed using Prism (GraphPad Software, La Jolla, USA, RRID:SCR_002798). The appropriate tests used and the n numbers of each individual experiment are described in the figure legends. A p-value < 0.05 was considered significant.\n",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "c186fb9f-7032-4656-b07d-2b0f156a2ada",
+      "submission_id": "853e1244-ed33-40ce-b367-349db85397d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Moses V Chao, New York University Langone Medical Center New York City United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72823.sa0](https://doi.org/10.7554/eLife.72823.sa0)\n\nAxon degeneration is activated by injury and through a pathway that involves the SARM1 protein, which possesses NAD+ cleavage activity. This manuscript definitively identifies the pesticide vacor and its metabolite VMN as an activator of Sarm1. The study works out the mechanism of activation via structural analysis of the allosteric binding site. Because the axon degeneration pathway is activated in a number of neurodegenerative contexts, the insights into the mechanism of action of vacor during neurotoxicity provide avenues for future therapeutic strategies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Moses V Chao, New York University Langone Medical Center New York City United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72823.sa1](https://doi.org/10.7554/eLife.72823.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Neurotoxin-mediated potent activation of the axon degeneration regulator SARM1\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Suzanne Pfeffer as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Marc Freeman (Reviewer #2); Mohanish Deshmukh (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, in consultation with the Reviewing Editor. Among the comments, the overall enthusiasm is high and the results of vacor and its metabolite VMN as an activator of Sarm were considered to be well done and novel. The significance of the results and the structural data was also strong. Several revisions were recommended to improve the clarity and to extend the findings.\n\nEssential revisions:\n\n1) VMN is an activator of Sarm at low concentration and an inhibitor at high concentrations. Is VMN's inhibitory activity working on the active site? Is there any additional evidence for how VMN inhibits Sarm either through the active site or through an allosteric site. Two of the three reviewers requested further insight into this question and felt the answer would give mechanistic insight into a new activator and inhibitor of SARM.\n\n2) Do high VMN concentrations (or vacor) inhibit axotomy induced axon degeneration? Any data to address this question should be included.\n\n3) Some reorganization of the manuscript would be helpful. Many of the supplemental figures contains key data. They should be included with the four figures presently in the submission. The Introduction is dated and does not include consideration of the allosteric pocket.\n\nReviewer #1 (Recommendations for the authors):\n\n1) Is the supplement to figure 1 the authors use compartment chambers to show that vacor can trigger local degeneration of cell bodies and axons. They state that with cell body application \"vacor-induced cell death causes eventual secondary neurite degeneration.\" However, in their data, cell body application of vacor causes more rapid and robust distal axon degeneration than does direct application of vacor to the distal axons. This is not consistent with the \"eventual neurite degeneration\" and suggests a different and more active mechanism of degeneration in that case. Is the axon degeneration in the distal compartment still Sarm dependent? This should at a minimum be discussed, and now that inhibitors of Sarm are available could be experimentally addressable.\n\n2) The authors report that VMN not only activates Sarm, but also inhibits Sarm. The authors claims that this inhibitory function \"could reveal critical information on how Sarm activity is regulated,\" yet they do not attempt to understand the mechanism of inhibition. Is the inhibitory role of VMN working through the same allosteric pocket? Is it acting on the catalytic site in the enzyme? With the nice biochemical system the authors have established this seems easily addressable and would be an important addition to a manuscript describing how VMN regulates Sarm activity.\n\n3) The introduction in this manuscript is quite similar to the version published on Bioarchive about a year ago. In that year, there has been tremendous progress in understanding the mechanism of Sarm activation, with the publication of four papers describing the structure of allosteric ligands binding to Sarm and the definition of the roles of NMN and NAD in Sarm activation/inhibition. The introduction should be updated in order to better place the current work in context.\n\n4) There are only four figures but many supplemental figures that are quite important. The paper would be much easier to follow if it were re-organized into a more traditional 7-8 figure format.\n\n5) The final sentence in the abstract claims that the study shows that Sarm can \"permanently block programmed axon death induced by toxicity.\" This is overstated, as the authors only show Sarm knockout protects for three days after a single vacor injection, and in vitro after two doses separated by two days. This does not speak to whether the protection is permanent, since this would require studies of long-term toxin exposure.\n\n6) The manuscript would benefit from a more comprehensive analysis of how this work relates to prior work published by these authors. For example, the point mutants in the binding pocket of Sarm were previously analyzed by these authors for their role in NMN binding and Sarm activation. This should be mentioned and the findings compared. Similarly, there is a comparison of the crystal structure for NMN and NAD, but not for their recently described structure of Sarm bound to NAMN.\n\n7) The authors show very convincingly that Sarm activation leads to loss of retinal ganglion cells. A couple of previous studies using different injury models have come to different conclusions about whether Sarm causes RGC death. It would be interesting to comment on how the author's current data relates to those prior findings in Sarm knockouts.\n\n8) The abstract claims that the structure of VMN bound to the Sarm regulatory domain will \"facilitate drug development for some human disorders including ALS and some polyneuropathies.\" Since this binding pocket has already been well defined in previous studies, these is too grand of a claim for the abstract, which should focus more on what the manuscript has actually demonstrated. Commentary on hopes for improved drug development would be more appropriate for the Discussion section.Reviewer #2 (Recommendations for the authors):\n\nNone. This is a rigorous and complete study.\n\nReviewer #3 (Recommendations for the authors):\n\nThe experiments very well done and the results are interesting. The use of multiple models both in vitro and in vivo as well as the biochemical and structural studies are a strength of this study.\n",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8b35a1b2-179f-4bb3-84be-8ce0c1422fd7",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C1",
+      "claim": "SARM1 plays a central, pro-degenerative role in programmed axon death (including Wallerian degeneration).",
+      "claim_type": "EXPLICIT",
+      "source": "Sterile alpha and TIR motif-containing protein 1 (SARM1) plays a central, pro-degenerative role in programmed axon death (including Wallerian degeneration) (Osterloh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Osterloh et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "a2e2d7a1-6dd1-41be-b940-23f320d3ff53",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C2",
+      "claim": "The axon degeneration pathway is activated in a number of neurodegenerative contexts, including in human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This axon degeneration pathway is activated in a number of neurodegenerative contexts, including in human disease (Coleman and H\u00f6ke, 2020; Gilley et al., 2021; Huppke et al., 2019; Lukacs et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Coleman and H\u00f6ke, 2020; Gilley et al., 2021; Huppke et al., 2019; Lukacs et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "914b73cd-0e42-4c5b-9ad6-470f1b124379",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C3",
+      "claim": "SARM1 has a critical nicotinamide adenine dinucleotide (NAD) cleavage (NADase) activity.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 has a critical nicotinamide adenine dinucleotide (NAD) cleavage (NADase) activity, which is activated when its upstream regulator and axon survival factor nicotinamide mononucleotide adenylyltransferase 2 (NMNAT2) is depleted or inactive (Essuman et al., 2017; Gilley et al., 2015; Gilley and Coleman, 2010; Sasaki et al., 2020a, Sasaki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Essuman et al., 2017; Gilley et al., 2015; Gilley and Coleman, 2010; Sasaki et al., 2020a, Sasaki et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "019164b2-6a6a-4470-a9a8-4a50871c5854",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C4",
+      "claim": "SARM1 NADase activity is activated when NMNAT2 is depleted or inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 has a critical nicotinamide adenine dinucleotide (NAD) cleavage (NADase) activity, which is activated when its upstream regulator and axon survival factor nicotinamide mononucleotide adenylyltransferase 2 (NMNAT2) is depleted or inactive (Essuman et al., 2017; Gilley et al., 2015; Gilley and Coleman, 2010; Sasaki et al., 2020a, Sasaki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Essuman et al., 2017; Gilley et al., 2015; Gilley and Coleman, 2010; Sasaki et al., 2020a, Sasaki et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "06c5bcb2-0c97-49ae-b9cc-14315987aedd",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C5",
+      "claim": "NMNAT2 loss causes accumulation of its substrate nicotinamide mononucleotide (NMN).",
+      "claim_type": "EXPLICIT",
+      "source": "NMNAT2 loss causes accumulation of its substrate nicotinamide mononucleotide (NMN), which promotes axon degeneration (Di Stefano et al., 2017; Loreto et al., 2020; Loreto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Di Stefano et al., 2017; Loreto et al., 2020; Loreto et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "bd947264-7928-4e23-b58a-8b2e6c373acf",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C6",
+      "claim": "NMN accumulation promotes axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "NMNAT2 loss causes accumulation of its substrate nicotinamide mononucleotide (NMN), which promotes axon degeneration (Di Stefano et al., 2017; Loreto et al., 2020; Loreto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Di Stefano et al., 2017; Loreto et al., 2020; Loreto et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "b871b40d-99fd-4f61-85c0-4b4ae1bb2db4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C7",
+      "claim": "NMN activates SARM1 NADase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "NMN is now known to activate SARM1 NADase activity (Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "9b2cf0dc-ed93-4431-9341-f837cc0b2e40",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C8",
+      "claim": "Sarm1 deletion confers robust axon protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Sarm1 deletion confers robust axon protection, and even lifelong protection against lethality caused by NMNAT2 deficiency (Gilley et al., 2017), SARM1 has become a very attractive therapeutic target to prevent neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilley et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "598c9fd3-f234-4b75-90b6-b2d453e8704c",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C9",
+      "claim": "Sarm1 deletion confers lifelong protection against lethality caused by NMNAT2 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Sarm1 deletion confers robust axon protection, and even lifelong protection against lethality caused by NMNAT2 deficiency (Gilley et al., 2017), SARM1 has become a very attractive therapeutic target to prevent neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilley et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "83da3b73-af65-4457-9dd3-52a3c4bd6d99",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C10",
+      "claim": "SARM1 has become a very attractive therapeutic target to prevent neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Sarm1 deletion confers robust axon protection, and even lifelong protection against lethality caused by NMNAT2 deficiency (Gilley et al., 2017), SARM1 has become a very attractive therapeutic target to prevent neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the protective effects of Sarm1 deletion and citation to Gilley et al., 2017",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "aa8da1ab-8002-40bf-8354-f59c02ecf2b3",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C11",
+      "claim": "An allosteric pocket exists in SARM1 armadillo-repeat (ARM) domain which is important for the regulation of SARM1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural data revealed the existence of an allosteric pocket in SARM1 armadillo-repeat (ARM) domain which is important for the regulation of SARM1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to recent structural data",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "d353c2db-63ac-4d1e-b075-3a01c1c28e10",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C12",
+      "claim": "NMN binds to the allosteric pocket in SARM1 ARM domain, leading to SARM1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "NMN binds to this pocket, leading to SARM1 activation (Figley et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Figley et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "3657ba7b-08d7-444e-86e6-e67adbc750db",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C13",
+      "claim": "NAD can bind the same allosteric site as NMN in SARM1 ARM domain, competing with NMN to prevent SARM1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD (Jiang et al., 2020) can also bind the same allosteric site, competing with NMN to prevent SARM1 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "2df38736-56c1-4915-b5ea-aed96e07919b",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C14",
+      "claim": "The ratio between NMN:NAD is important to regulate SARM1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio between NMN:NAD is therefore important to regulate SARM1 activity (Figley et al., 2021) and we have recently extended this to show that, at physiological levels, changes in NMN levels have the greater impact on the regulation of SARM1 activity (Angeletti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Figley et al., 2021 and Angeletti et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "63facdd9-9686-4fcc-99eb-430b22106a65",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C15",
+      "claim": "At physiological levels, changes in NMN levels have the greater impact on the regulation of SARM1 activity compared to NAD.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio between NMN:NAD is therefore important to regulate SARM1 activity (Figley et al., 2021) and we have recently extended this to show that, at physiological levels, changes in NMN levels have the greater impact on the regulation of SARM1 activity (Angeletti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Angeletti et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "387d82cb-a509-4c67-9fc6-2340fb412804",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C16",
+      "claim": "Vacor is a disused pesticide and powerful neurotoxin associated with human peripheral and central nervous system disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have investigated whether vacor, a disused pesticide and powerful neurotoxin associated with human peripheral and central nervous system disorders (Gallanosa et al., 1981; LeWitt, 1980) and axon degeneration in rats (Watson and Griffin, 1987), causes activation of programmed axon death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gallanosa et al., 1981; LeWitt, 1980",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "97345d5a-75b4-463b-8579-db1e3d6ac2da",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C17",
+      "claim": "Vacor is associated with axon degeneration in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have investigated whether vacor, a disused pesticide and powerful neurotoxin associated with human peripheral and central nervous system disorders (Gallanosa et al., 1981; LeWitt, 1980) and axon degeneration in rats (Watson and Griffin, 1987), causes activation of programmed axon death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Watson and Griffin, 1987",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "68c4a3d6-3bc7-44d9-800c-478550d70d49",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C18",
+      "claim": "Vacor is a pyridine derivative that is metabolised to vacor mononucleotide (VMN) and vacor adenine dinucleotide (VAD) through a two-step conversion by NAMPT and NMNAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacor is a pyridine derivative that is metabolised to vacor mononucleotide (VMN) and vacor adenine dinucleotide (VAD) through a two-step conversion by nicotinamide phosphoribosyltransferase (NAMPT) and NMNAT2 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and illustrated in Figure 1A",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "08c7279e-bc27-4de8-9095-3bb769d2dc28",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C19",
+      "claim": "VAD inhibits NMNAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering VAD inhibits SARM1 regulator NMNAT2 (Buonvicino et al., 2018), we reasoned that vacor may induce SARM1-dependent axon death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buonvicino et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ebf8bb84-6783-4e28-8eae-1a7e26b0f1cc",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C20",
+      "claim": "Vacor neurotoxicity is entirely mediated by SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that vacor neurotoxicity is entirely mediated by SARM1 such that Sarm1-/- neurons and their axons are completely resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data showing Sarm1-/- neurons are completely resistant to vacor",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "fdce580b-d224-4dce-8a85-7bb48a2514e4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C21",
+      "claim": "Sarm1-/- neurons and their axons are completely resistant to vacor.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that vacor neurotoxicity is entirely mediated by SARM1 such that Sarm1-/- neurons and their axons are completely resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "9e185891-4d61-4ee4-a3f1-d532e0074c52",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C22",
+      "claim": "Vacor metabolite VMN directly binds to and activates SARM1, causing neuronal death.",
+      "claim_type": "EXPLICIT",
+      "source": "We unexpectedly find that vacor metabolite VMN directly binds to and activates SARM1, causing neuronal death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experimental data including ITC binding studies and NADase activity assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "a13d868f-58bc-456c-93b1-ad50fc8f4a1d",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C23",
+      "claim": "VMN and VAD are generated in vacor-treated dorsal root ganglion (DRG) mouse neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that VMN and VAD are generated in vacor-treated dorsal root ganglion (DRG) mouse neurons (Figure 1A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by metabolite measurements shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "864d9dfc-8314-492b-ac20-d7383b60b0ac",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C24",
+      "claim": "DRG and SCG mouse neurons exhibit rapid, dose-dependent neurite degeneration in response to vacor treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "and that these and a second neuron type, superior cervical ganglia (SCG) mouse neurons, exhibit rapid, dose-dependent neurite degeneration (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by phase contrast imaging and quantification shown in Figure 1C-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "5d7fa391-5c38-4008-97c0-edb5c4a91aac",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C25",
+      "claim": "Nicotinamide (NAM) delays vacor-induced neurite degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the proposed toxic role for vacor metabolites (Buonvicino et al., 2018), both nicotinamide (NAM), which competes with vacor as a preferred substrate for NAMPT, and the NAMPT inhibitor FK866 (Figure 1A), delayed vacor-induced neurite degeneration (Figure 1G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 1G-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "294a49ec-8473-4d56-b582-fe52bffeee33",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C26",
+      "claim": "FK866 delays vacor-induced neurite degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the proposed toxic role for vacor metabolites (Buonvicino et al., 2018), both nicotinamide (NAM), which competes with vacor as a preferred substrate for NAMPT, and the NAMPT inhibitor FK866 (Figure 1A), delayed vacor-induced neurite degeneration (Figure 1G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 1I-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "702e0300-a14d-4ad0-87b4-795e735e7bf4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C27",
+      "claim": "NAM competes with vacor as a preferred substrate for NAMPT.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the proposed toxic role for vacor metabolites (Buonvicino et al., 2018), both nicotinamide (NAM), which competes with vacor as a preferred substrate for NAMPT, and the NAMPT inhibitor FK866 (Figure 1A), delayed vacor-induced neurite degeneration (Figure 1G\u2013J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as known mechanism and consistent with cited literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ce23abdf-88c4-45be-9739-e0c493c90d62",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C28",
+      "claim": "NAM was an effective treatment for patients with vacor poisoning.",
+      "claim_type": "EXPLICIT",
+      "source": "Such competition may explain why NAM was an effective treatment for patients with vacor poisoning (Gallanosa et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gallanosa et al., 1981",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "c97c4058-de34-4a24-94d0-6f004a92ad7a",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C29",
+      "claim": "Vacor failed to induce degeneration of Sarm1-/- DRG and SCG neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "As hypothesised, vacor failed to induce degeneration of Sarm1-/- DRG and SCG neurites (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 2A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ea9890df-a028-4590-bef0-39cc5c513063",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C30",
+      "claim": "Sarm1-/- neurites survive indefinitely even after multiple vacor doses.",
+      "claim_type": "EXPLICIT",
+      "source": "This protection was extremely strong, with neurites surviving indefinitely even after multiple vacor doses (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 2\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "24ae850c-30b0-4a2b-a084-a2c3e7f544ab",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C31",
+      "claim": "Sarm1-/- neurites continue to grow normally even with repeated vacor dosing.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarm1-/- neurites were not only protected from degeneration, but they also continued to grow normally, even with repeated dosing (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by neurite outgrowth measurements shown in Figure 2E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "07061dc8-ebc3-46b5-9432-5a1e2c128975",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C32",
+      "claim": "Nmnat2 null axons are permanently rescued and continue to grow in the absence of SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "This mirrors the permanent rescue and continued growth previously reported in Nmnat2 null axons in the absence of SARM1 (Gilley et al., 2017; Gilley et al., 2015), suggesting complete efficacy in both toxic and inherited types of neuropathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gilley et al., 2017; Gilley et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "8158c901-4100-4152-8302-32fd988d3663",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C33",
+      "claim": "Vacor neurotoxicity is predominantly SARM1-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This mirrors the permanent rescue and continued growth previously reported in Nmnat2 null axons in the absence of SARM1 (Gilley et al., 2017; Gilley et al., 2015), suggesting complete efficacy in both toxic and inherited types of neuropathy. It also shows that vacor neurotoxicity is predominantly SARM1-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the complete protection of Sarm1-/- neurons from vacor toxicity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "942fe17c-df73-465e-8640-d547acd9fc56",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C34",
+      "claim": "Exogenous expression of wild-type human SARM1 in Sarm1-/- SCG neurons restores vacor sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenous expression of wild-type human SARM1 (hSARM1) in Sarm1-/- SCG neurons restored vacor sensitivity, whereas expression of E642A hSARM1, which lacks NADase activity, did not (Figure 2G\u2013I; Figure 2\u2014figure supplement 1G,H), similar to findings in axotomy (Essuman et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by microinjection experiments shown in Figure 2G-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "fa2ac4cb-bf8c-4348-94bf-0b80a3df270f",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C35",
+      "claim": "Expression of E642A hSARM1, which lacks NADase activity, does not restore vacor sensitivity in Sarm1-/- SCG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenous expression of wild-type human SARM1 (hSARM1) in Sarm1-/- SCG neurons restored vacor sensitivity, whereas expression of E642A hSARM1, which lacks NADase activity, did not (Figure 2G\u2013I; Figure 2\u2014figure supplement 1G,H), similar to findings in axotomy (Essuman et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by microinjection experiments shown in Figure 2G-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "cb46ea39-f511-485a-b22a-74baa0824b9d",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C36",
+      "claim": "SARM1 NADase activity is the critical function required for vacor toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested if SARM1 NADase activity is the critical function required for vacor toxicity. Exogenous expression of wild-type human SARM1 (hSARM1) in Sarm1-/- SCG neurons restored vacor sensitivity, whereas expression of E642A hSARM1, which lacks NADase activity, did not (Figure 2G\u2013I; Figure 2\u2014figure supplement 1G,H), similar to findings in axotomy (Essuman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing wild-type and E642A mutant SARM1 in rescue experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "56a6c843-8ff4-4a3d-b0db-4f712f72fb40",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C37",
+      "claim": "Activation of the pathway by vacor causes SARM1-dependent cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, unlike axotomy, activation of the pathway by vacor also caused SARM1-dependent cell death (Figure 2I), similar to that previously reported with constitutively active SARM1 (Gerdts et al., 2015; Gerdts et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by viable neuron counts in Figure 2I and supported by citations to Gerdts et al., 2015; Gerdts et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "36df8d3c-bb2f-4538-97e6-a3b8d2a950d9",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C38",
+      "claim": "Addition of vacor to either the neurite or soma compartment directly activates local death of cell bodies and/or neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of vacor to either compartment directly activated local death of cell bodies and/or neurites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by microfluidic chamber experiments shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ac97be91-eaa9-4387-b2f6-7a4d8cd459b9",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C39",
+      "claim": "Vacor-induced cell death causes neurite degeneration, but vacor-induced neurite degeneration does not cause cell loss.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while vacor-induced cell death also causes neurite degeneration, the reverse was not true: no cell loss was observed after local induction of distal neurite degeneration by vacor (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by microfluidic chamber experiments shown in Figure 2\u2014figure supplement 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "5b6bffb9-b11f-4404-97da-147e0b63e6c8",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C40",
+      "claim": "Vacor causes a global loss of photoreceptor neuronal activity in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroretinogram (ERG) recordings showed that vacor caused a global loss of photoreceptor neuronal activity, and subsequent loss of bipolar and retinal ganglion cell (RGC) responses, which were fully rescued by SARM1 deficiency (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ERG recordings shown in Figure 3B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "aaf81ac4-eca9-4997-8cea-e324ba192c5e",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C41",
+      "claim": "Vacor causes loss of bipolar and retinal ganglion cell (RGC) responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroretinogram (ERG) recordings showed that vacor caused a global loss of photoreceptor neuronal activity, and subsequent loss of bipolar and retinal ganglion cell (RGC) responses, which were fully rescued by SARM1 deficiency (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ERG recordings shown in Figure 3B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "76feb31b-7014-46c3-bbff-15fa3e5dc499",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C42",
+      "claim": "SARM1 deficiency fully rescues vacor-induced loss of photoreceptor, bipolar, and RGC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroretinogram (ERG) recordings showed that vacor caused a global loss of photoreceptor neuronal activity, and subsequent loss of bipolar and retinal ganglion cell (RGC) responses, which were fully rescued by SARM1 deficiency (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ERG recordings comparing wild-type and Sarm1-/- mice shown in Figure 3B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "28015288-8e21-424e-9ed7-e353772309da",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C43",
+      "claim": "Vacor administration causes inner retina neuronal death, as revealed by a significant reduction in RGC number.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacor administration also caused inner retina neuronal death, as revealed by a significant reduction in RGC number. Again, this was completely prevented by SARM1 deficiency (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RGC counts shown in Figure 3D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "87e96b0a-0ca1-4b17-abd1-585e8954a36d",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C44",
+      "claim": "SARM1 deficiency completely prevents vacor-induced reduction in RGC number.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacor administration also caused inner retina neuronal death, as revealed by a significant reduction in RGC number. Again, this was completely prevented by SARM1 deficiency (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RGC counts comparing wild-type and Sarm1-/- mice shown in Figure 3D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "d4bd3443-7d4c-4ff8-a2bd-91a4db36833a",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C45",
+      "claim": "The absence of SARM1 confers functional and morphological protection of neurons against vacor toxicity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the absence of SARM1 confers functional and morphological protection of neurons against vacor toxicity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by ERG recordings and RGC counts in vivo",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "02f31305-4d69-4b47-a575-fa286e60fd5f",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C46",
+      "claim": "SARM1 activation depletes NAD in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of SARM1 depletes NAD and generates cADPR in neurons (Essuman et al., 2017; Gerdts et al., 2015; Sasaki et al., 2020a, Sasaki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Essuman et al., 2017; Gerdts et al., 2015; Sasaki et al., 2020a, Sasaki et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "10b170cd-2c1c-41a5-8720-d11d04c444a6",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C47",
+      "claim": "SARM1 activation generates cADPR in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of SARM1 depletes NAD and generates cADPR in neurons (Essuman et al., 2017; Gerdts et al., 2015; Sasaki et al., 2020a, Sasaki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Essuman et al., 2017; Gerdts et al., 2015; Sasaki et al., 2020a, Sasaki et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "04b251a5-2243-4f19-9833-9e2c9fc4c7b3",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C48",
+      "claim": "SARM1 activation was confirmed by a drastic SARM1-dependent decline in NAD following vacor administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, while SARM1 activation was confirmed by a drastic SARM1-dependent decline in NAD and increase in cADPR following vacor administration, NMN did not rise and even fell slightly (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by metabolite measurements shown in Figure 4A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "8f4239cb-8a49-447d-af68-0dedb64e70ab",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C49",
+      "claim": "SARM1 activation was confirmed by an increase in cADPR following vacor administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, while SARM1 activation was confirmed by a drastic SARM1-dependent decline in NAD and increase in cADPR following vacor administration, NMN did not rise and even fell slightly (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by metabolite measurements shown in Figure 4A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "518ac370-1e9c-4df9-b373-48af240873e4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C50",
+      "claim": "NMN did not rise and even fell slightly following vacor administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, while SARM1 activation was confirmed by a drastic SARM1-dependent decline in NAD and increase in cADPR following vacor administration, NMN did not rise and even fell slightly (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by metabolite measurements shown in Figure 4A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "23ff45cf-4370-4504-9a1c-7831e99ecee8",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C51",
+      "claim": "NMN and NAD levels and their ratio to one another were not altered in vacor-treated Sarm1-/- neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NMN and NAD levels and their ratio to one another were not altered in our vacor-treated Sarm1-/- neurons (Figure 4A and B), suggesting that the reported inhibition of NAMPT and NMNAT2 by vacor/VAD (Buonvicino et al., 2018) does not occur in this context at this drug concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by metabolite measurements in Sarm1-/- neurons shown in Figure 4A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "b71cb812-0ef3-47aa-a58a-4ee9ddba2574",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C52",
+      "claim": "The reported inhibition of NAMPT and NMNAT2 by vacor/VAD does not occur in this context at this drug concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NMN and NAD levels and their ratio to one another were not altered in our vacor-treated Sarm1-/- neurons (Figure 4A and B), suggesting that the reported inhibition of NAMPT and NMNAT2 by vacor/VAD (Buonvicino et al., 2018) does not occur in this context at this drug concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of change in NMN and NAD levels in Sarm1-/- neurons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "fefabd69-83d1-46c1-992d-98faca653d07",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C53",
+      "claim": "NMN deamidase strongly preserves axotomised axons by preventing NMN accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, NMN deamidase, an enzyme that strongly preserves axotomised axons by preventing NMN accumulation (Figure 4E; Figure 4\u2014figure supplement 1A, Di Stefano et al., 2017; Di Stefano et al., 2015; Loreto et al., 2015), was also unable to protect against vacor toxicity (Figure 4E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Di Stefano et al., 2017; Di Stefano et al., 2015; Loreto et al., 2015 and shown in Figure 4E",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "227385e5-4d89-43de-9779-22ef4707679c",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C54",
+      "claim": "NMN deamidase was unable to protect against vacor toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, NMN deamidase, an enzyme that strongly preserves axotomised axons by preventing NMN accumulation (Figure 4E; Figure 4\u2014figure supplement 1A, Di Stefano et al., 2017; Di Stefano et al., 2015; Loreto et al., 2015), was also unable to protect against vacor toxicity (Figure 4E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by microinjection experiments shown in Figure 4E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "41a885e9-a4cd-41e0-a66a-ec99ac42c2eb",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C55",
+      "claim": "Recombinant NMN deamidase retains its ability to convert NMN to nicotinic acid mononucleotide (NaMN) in the presence of vacor, VMN and VAD.",
+      "claim_type": "EXPLICIT",
+      "source": "even though recombinant NMN deamidase retains its ability to convert NMN to nicotinic acid mononucleotide (NaMN) in the presence of vacor, VMN and VAD (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by enzyme activity assays shown in Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "429fc90e-c6a6-4789-8c55-1fbb8f0526a0",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C56",
+      "claim": "WLDS failed to rescue neurons against vacor neurotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "WLDS, another enzyme that limits NMN accumulation (Di Stefano et al., 2015), also failed to rescue neurons against vacor neurotoxicity (Figure 4\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experiments shown in Figure 4\u2014figure supplement 1C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "82be318d-6ea3-4592-8d5e-668a253c0bc4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C57",
+      "claim": "In this specific context, NMN is not responsible for SARM1 activation by vacor.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that, in this specific context at least, NMN is not responsible for SARM1 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of NMN accumulation and failure of NMN deamidase to protect",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "e7d4d233-2051-44c5-be55-420c83180174",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C58",
+      "claim": "VMN potently activates the NADase activity of recombinant hSARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, we found that VMN potently activates the NADase activity of recombinant hSARM1, even more so than NMN, having a lower Ka and resulting in a greater induction (Figure 5A; Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by NADase activity assays shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "52ec021b-626f-499e-8985-5fb519ff03b9",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C59",
+      "claim": "VMN activates hSARM1 NADase activity more potently than NMN, having a lower Ka and resulting in a greater induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, we found that VMN potently activates the NADase activity of recombinant hSARM1, even more so than NMN, having a lower Ka and resulting in a greater induction (Figure 5A; Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by NADase activity assays and kinetic analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ba4a3017-3956-4f0f-a6a7-e7511faa30e6",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C60",
+      "claim": "VAD only had a weak inhibitory effect on hSARM1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, VAD only had a weak inhibitory effect on hSARM1 activity (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by NADase activity assays shown in Figure 5\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "f88e6bec-d733-4437-9400-4c97d48e35a7",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C61",
+      "claim": "Recombinant hSARM1 NADase activity dropped at higher VMN concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, recombinant hSARM1 NADase activity dropped at higher VMN concentrations (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by NADase activity assays shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "f404bdd4-5c96-4a87-a757-1b201c442867",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C62",
+      "claim": "The data are compatible with two distinct binding sites of VMN on SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis via best fitting (see equation in Materials and methods) suggests that our data are compatible with two distinct binding sites of VMN on SARM1 and led us to establish binding constants for activation (Ka) and inhibition (Ki) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from kinetic analysis of NADase activity data shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "bfe58f69-a508-47f8-910b-f1b80647d004",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C63",
+      "claim": "Exogenous application of VMN induces SARM1-dependent death of uninjured DRG neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we now show that exogenous application of its analogue, VMN, does induce SARM1-dependent death of uninjured DRG neurites (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by neurite degeneration assays shown in Figure 5B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "caf6c5da-51cc-443f-9d14-d8a30c45da30",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C64",
+      "claim": "Exogenous NMN does not induce degeneration of uninjured neurites when NMNAT2 is present.",
+      "claim_type": "EXPLICIT",
+      "source": "While NMN activates SARM1 (Zhao et al., 2019) and promotes programmed axon death when NMNAT2 is depleted (Di Stefano et al., 2017; Loreto et al., 2020; Loreto et al., 2015), exogenous NMN does not induce degeneration of uninjured neurites (Di Stefano et al., 2015), probably because it is rapidly converted to NAD when NMNAT2 is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Di Stefano et al., 2015 and explained by known metabolism",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "759e855f-93be-459a-9b84-40fe60140566",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C65",
+      "claim": "VMN is a more potent activator of SARM1 than NMN.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference likely reflects a combination of VMN being both a more potent activator of SARM1 and it accumulating more because it is not efficiently metabolised by NMNAT2 (Buonvicino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by NADase activity assays and supported by citation to Buonvicino et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "587c5a85-a3d5-4db5-81f3-6cf6e7822442",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C66",
+      "claim": "VMN accumulates more than NMN because it is not efficiently metabolised by NMNAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference likely reflects a combination of VMN being both a more potent activator of SARM1 and it accumulating more because it is not efficiently metabolised by NMNAT2 (Buonvicino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buonvicino et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "abdd53d6-bc57-4755-9eb6-4edd275aeebf",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C67",
+      "claim": "VMN is not a substrate of NMN deamidase.",
+      "claim_type": "EXPLICIT",
+      "source": "First, unlike NMN, VMN is not a substrate of NMN deamidase (Figure 5\u2014figure supplement 1D), thus explaining its inability to protect against vacor neurotoxicity (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by enzyme activity assays shown in Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "24546cb0-ae31-4718-b02f-7f3c8818fd1b",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C68",
+      "claim": "VMN is not a substrate of the nuclear isoform NMNAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, VMN is not a substrate of the nuclear isoform NMNAT1 and is a poor substrate of mitochondrial NMNAT3 (Buonvicino et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buonvicino et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "10ca5f86-c122-43f1-bf02-44ba22dcb363",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C69",
+      "claim": "VMN is a poor substrate of mitochondrial NMNAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, VMN is not a substrate of the nuclear isoform NMNAT1 and is a poor substrate of mitochondrial NMNAT3 (Buonvicino et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buonvicino et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "d0ac4129-ba87-4978-b746-f60bf0538a09",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C70",
+      "claim": "VMN accumulation in cell bodies and subsequent SARM1 activation provides a rationale for why vacor administration causes cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "so VMN accumulation in cell bodies (Figure 5\u2014figure supplement 1E) and subsequent SARM1 activation, as detected by a rise of cADPR in this compartment (Figure 4D), provides a clear rationale for why vacor administration also causes cell death.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from VMN accumulation data (Figure 5\u2014figure supplement 1E) and cADPR measurements (Figure 4D)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "7ff5b27d-351b-443d-a4e5-7db55cc1bf17",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C71",
+      "claim": "SARM1 ARM domain is believed to maintain SARM1 in an inhibited state.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 ARM domain is believed to maintain SARM1 in an inhibited state (Figley et al., 2021; Gerdts et al., 2013; Jiang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Figley et al., 2021; Gerdts et al., 2013; Jiang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "7d2c8559-a04c-4b8d-a12d-9e3990cff6f1",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C72",
+      "claim": "SARM1 is activated by NMN binding directly to the ARM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 is activated by NMN binding directly to the ARM domain (Figley et al., 2021; Gu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Figley et al., 2021; Gu et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ecc0bb71-b516-4e78-8774-72053ea2a438",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C73",
+      "claim": "VMN bound to dSARM1ARM with a Kd value of 2.83 \u00b1 0.16 \u03bcM (1:1 molar ratio).",
+      "claim_type": "EXPLICIT",
+      "source": "Isothermal titration calorimetry (ITC) analysis showed that VMN bound to dSARM1ARM with a Kd value of 2.83 \u00b1 0.16 \u03bcM (1:1 molar ratio) (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ITC analysis shown in Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "1464410b-5dfb-403a-be4a-26771ceca306",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C74",
+      "claim": "The crystal structure of VMN-bound dSARM1ARM was determined at 1.69 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To further characterise this interaction, we determined the crystal structure of the VMN-bound dSARM1ARM (1.69 \u00c5 resolution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as experimental result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "47c2eabe-cd5f-494b-8843-a9ab58710ee4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C75",
+      "claim": "dSARM1ARM contains eight tandem armadillo repeats (ARM1-8) stacking into an unusually compact right-handed superhelix.",
+      "claim_type": "EXPLICIT",
+      "source": "dSARM1ARM contains eight tandem armadillo repeats (ARM1-8) stacking into an unusually compact right-handed superhelix (Figure 6A; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by crystal structure shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "361e306c-0640-48b9-91af-e424b102b402",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C76",
+      "claim": "The bound VMN molecule sits in the central groove of dSARM1ARM, which is mainly lined by the H3 helices from ARM1-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound VMN molecule sits in the central groove of dSARM1ARM, which is mainly lined by the H3 helices from ARM1-5 (Figure 6A; Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by crystal structure shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "b747dea0-9bb3-48d6-af4b-c756c5071dc9",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C77",
+      "claim": "The interaction between VMN and dSARM1ARM is mediated by two pi-stacking interactions and eight hydrogen bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction is mediated by two pi-stacking interactions between the indole of W385 and the pyridine moiety of VMN, and between the imidazole ring of H392 and the nitrobenzene moiety of VMN (Figure 6B; Figure 6\u2014figure supplement 2A,B); and eight hydrogen bonds, with a buried surface area of ~910 \u00c52 (Figure 6B; Figure 6\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by crystal structure analysis shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ff4092e6-844b-4755-b75b-909f24845687",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C78",
+      "claim": "VMN has over two-fold higher affinity for dSARM1ARM than NMN (Kd = 6.39 \u00b1 0.04 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that VMN has over two-fold higher affinity for dSARM1ARM than NMN (Kd = 6.39 \u00b1 0.04 \u03bcM), whose own interaction with the ARM domain was recently reported (Figure 6\u2014figure supplement 1A, Figley et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ITC analysis shown in Figure 6\u2014figure supplement 1A and supported by citation to Figley et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "fd5753fc-52e9-4946-989d-a7b7d78629ca",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C79",
+      "claim": "VMN-bound dSARM1ARM adopts a similar conformation to NMN-bound dSARM1ARM.",
+      "claim_type": "EXPLICIT",
+      "source": "VMN-bound dSARM1ARM adopts a similar conformation to NMN-bound dSARM1ARM (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by structural comparison shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "cb2eb568-6375-4354-a532-33a4c3e91c93",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C80",
+      "claim": "The NMN moiety of VMN and NMN share the same binding mode in dSARM1ARM.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the two structures reveals that the NMN moiety of VMN and NMN share the same binding mode, with the key residues involved in NMN binding interacting with the analogous portions of the VMN molecule (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by structural comparison shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "95fbd174-dcfc-4622-ada8-e8a0f0e7b5cd",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C81",
+      "claim": "VMN forms different and extra interactions compared to NMN in the dSARM1ARM binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in the NMN-bound structure, NMN forms a hydrogen bond with the residues H599 and G600 (loop connecting ARM6 and 7), while in the VMN-bound structure, due to the extra portion of VMN (urea and nitrobenzene groups) extending to the region between the N- and C-termini of the protein, two different hydrogen bonds are formed between VMN and H392 (ARM2 H1) at the N-terminus, and N640 (ARM8 H1) at the C-terminus. Furthermore, the pi-stacking interaction between H392 and the nitrobenzene of VMN is specific to this compound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "8fa92dae-f90a-40b9-8572-f18cd1a40d6c",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C82",
+      "claim": "The different and extra interactions VMN forms could explain why VMN induces SARM1 activation more efficiently compared to NMN.",
+      "claim_type": "EXPLICIT",
+      "source": "These different and extra interactions VMN forms could explain why VMN induces SARM1 activation more efficiently, compared to NMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "572276f7-be1e-422f-a84b-0478b6890d0a",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C83",
+      "claim": "The compaction seen in both NMN and VMN-bound dSARM1ARM structures likely represents the conformation of the ARM domain in active SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "The compaction seen in both NMN and VMN-bound dSARM1ARM structures likely represents the conformation of the ARM domain in active SARM1, based on the comparison with the more open crystal structures of ligand-free and NaMN-bound dSARM1ARM, as well as cryo-EM (electron microscopy) structures of ligand-free and NAD-bound hSARM1, representing the inactive state of the protein (Bratkowski et al., 2020; Figley et al., 2021; Sporny et al., 2020) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from structural comparisons shown in Figure 6C and supported by citations to Bratkowski et al., 2020; Figley et al., 2021; Sporny et al., 2020",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "a40f410a-a581-4dac-8121-2cb54aaae2bf",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C84",
+      "claim": "NaMN stabilises the open conformation of dSARM1ARM and is unable to form interactions with the C-terminal region of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "NaMN stabilises the open conformation of dSARM1ARM due to the rotation of its nicotinic acid (NA) portion towards the N-terminus of the protein, and is therefore unable to form any interactions with the C-terminal region of the protein (Sasaki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sasaki et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "be3da5bd-5953-4e32-8ee8-8ba04fab660d",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C85",
+      "claim": "The adenine group and adjacent ribose of NAD would cause steric clashes with the C-terminal region of the protein in the VMN-bound structure conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the NAD-bound hSARM1ARM structure, the portion of NAD equivalent to NMN and VMN interacts with the protein through similar interactions, but the adenine group and the adjacent ribose of NAD extend further down to the side of the region between the termini. This would cause steric clashes with the C-terminal region of the protein, particularly with the loop connecting ARM6 and 7 (residues 594\u2013602), thus preventing NAD from inducing a more compact conformation in the ARM domain (Figure 6\u2014figure supplement 1C), keeping the protein in the inactive state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by structural analysis shown in Figure 6\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "f873394a-2f4c-493f-bff1-3d23a8740deb",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C86",
+      "claim": "VMN activates SARM1 with a mechanism similar to NMN, inducing a compaction of the ARM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data suggest that VMN activates SARM1 with a mechanism similar to NMN, but with some important differences, inducing a compaction of the ARM domain, destabilising its interfaces with the neighbouring ARM, SAM, and TIR domains, and eventually permitting the TIR domains to self-associate and hydrolyse NAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural data and mechanistic understanding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "99570056-cf3a-4044-bdcc-ca9a073ab56f",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C87",
+      "claim": "W103A, R157A, and K193R mutations in human SARM1 prevent restoration of vacor sensitivity in Sarm1-/- SCG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced the corresponding W103A, R157A, and K193R mutations into human SARM1 and exogenously expressed them in Sarm1-/- SCG mouse neurons (Figure 7\u2014figure supplement 1A). Unlike wild-type hSARM1, these mutants failed to restore neurite degeneration and cell death after vacor administration (Figure 7A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by microinjection experiments shown in Figure 7A-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "6278e119-ab38-457e-927a-8f63bc69fc24",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C88",
+      "claim": "Neither VMN nor NMN could activate the NADase activity of recombinant K193R hSARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, neither VMN nor NMN could activate the NADase activity of recombinant K193R hSARM1 (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by NADase activity assays shown in Figure 7G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ac6cd479-b54b-4d49-b0c5-a67246a074f4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C89",
+      "claim": "VMN is the most potent activator of SARM1 reported so far.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, VMN is the most potent activator of SARM1 reported so far, and our structural data reveal essential information on SARM1 regulation which will aid drug development to block SARM1 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of VMN activation potency with NMN and other known activators",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "744d7eee-da96-4936-9ce4-a1a9a4db387a",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C90",
+      "claim": "Vacor use is banned.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacor use is banned, but structurally related pyridines are widely-used and present in drugs, pesticides and food, raising important questions about their potential toxicity and SARM1 as a mediator of environmental neurotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as fact",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "dfbd5a57-d715-4937-a5c2-39133f416d2f",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C91",
+      "claim": "Structurally related pyridines to vacor are widely-used and present in drugs, pesticides and food.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacor use is banned, but structurally related pyridines are widely-used and present in drugs, pesticides and food, raising important questions about their potential toxicity and SARM1 as a mediator of environmental neurotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as fact and supported by citation to Adams and De Kimpe, 2006; Li et al., 2016",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "891a1e3b-fbeb-489e-b52c-b4d6b167daa8",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C92",
+      "claim": "3-acetyl pyridine is associated with axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, one other nicotinamide analog, 3-acetyl pyridine, is already associated with axon degeneration (Desclin and Escubi, 1974) and subsequent to our preprint of this work has now been reported to act through SARM1 in a similar manner (Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Desclin and Escubi, 1974 and Wu et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "826f4934-d451-4478-9ba5-643d19331f4e",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C93",
+      "claim": "3-acetyl pyridine acts through SARM1 in a similar manner to vacor.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, one other nicotinamide analog, 3-acetyl pyridine, is already associated with axon degeneration (Desclin and Escubi, 1974) and subsequent to our preprint of this work has now been reported to act through SARM1 in a similar manner (Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "9edfc0e9-1ccb-40af-bbcb-c4cd5083edb4",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C94",
+      "claim": "Genetic hyperactivation of SARM1 has been associated with amyotrophic lateral sclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic hyperactivation of SARM1 has also now been associated with amyotrophic lateral sclerosis (Bloom et al., 2021; Gilley et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bloom et al., 2021; Gilley et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "f5732f1e-404e-4f54-a2c5-f22c471050df",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C95",
+      "claim": "SARM1 deficiency completely rescues neurons from vacor toxicity and preserves their functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the extreme toxicity of vacor, SARM1 deficiency completely rescues neurons and preserves their functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by in vitro and in vivo experiments throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "4c7769d0-d949-47a0-8f4c-d586c004a72e",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C96",
+      "claim": "Blocking SARM1 can completely prevent programmed axon death.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the previously reported lifelong protection in a genetic model of a rare human axonopathy (Gilley et al., 2017; Lukacs et al., 2019), this further supports the therapeutic potential of blocking SARM1 to completely prevent programmed axon death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current data and supported by citations to Gilley et al., 2017; Lukacs et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "fd5070af-68ef-4c1a-99ea-7998ee64d1de",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C97",
+      "claim": "Vacor causes pancreatic \u03b2-cell destruction and diabetes in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, as vacor causes pancreatic \u03b2-cell destruction and diabetes in humans (Gallanosa et al., 1981), these findings could also have broader implications, uncovering a role for SARM1 in the survival of insulin producing cells and aiding research on diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gallanosa et al., 1981",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "8c8c9c05-6804-48f5-b863-ddb9be4bc467",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C98",
+      "claim": "Sarm1 deletion does not prevent RGC death following optic nerve crush in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it was previously reported that Sarm1 deletion does not prevent RGC death following optic nerve crush in mice (Fernandes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fernandes et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "50626a12-45d3-4cb5-a0b7-3b50761108dd",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C99",
+      "claim": "SARM1 activation is sufficient to drive degeneration of multiple types of retinal neuron (including RGC) in addition to photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data show that SARM1 activation is sufficient to drive degeneration of multiple types of retinal neuron (including RGC) in addition to photoreceptors (Sasaki et al., 2020b), making SARM1 a promising target to treat retinal degeneration, at least in response to certain insults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by ERG and RGC count data and supported by citation to Sasaki et al., 2020b",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "dc3548ac-2bd3-421b-aeaf-9508506954c0",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C100",
+      "claim": "Retrograde RGC soma death after axotomy proceeds by a different, SARM1-independent mechanism such as loss of retrogradely delivered trophic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain these differences, we suggest that retrograde RGC soma death after axotomy proceeds by a different, SARM1-independent mechanism such as loss of retrogradely delivered trophic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed as speculation to explain differences between studies",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "03488d37-cb92-467b-9145-7c2765acf942",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C101",
+      "claim": "Programmed axon death can be aberrantly activated in humans by genetic mutation of NMNAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also further implicate programmed axon death in human disease. It appears that this degeneration pathway can be aberrantly activated in humans not only by genetic mutation of NMNAT2 (Huppke et al., 2019; Lukacs et al., 2019), but also by SARM1 activation in severe neurotoxicity within hours of vacor ingestion (LeWitt, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Huppke et al., 2019; Lukacs et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "9e01bd3f-6251-4db9-aba0-699b9b9b537b",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C102",
+      "claim": "Programmed axon death can be aberrantly activated in humans by SARM1 activation in severe neurotoxicity within hours of vacor ingestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also further implicate programmed axon death in human disease. It appears that this degeneration pathway can be aberrantly activated in humans not only by genetic mutation of NMNAT2 (Huppke et al., 2019; Lukacs et al., 2019), but also by SARM1 activation in severe neurotoxicity within hours of vacor ingestion (LeWitt, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current findings and supported by citation to LeWitt, 1980",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "6ce6884f-eaba-41bc-b9ec-be337df4fd22",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "claim_id": "C103",
+      "claim": "Recombinant hSARM1 uses vacor for base exchange to produce VAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we have also recently reported that recombinant hSARM1 uses vacor for base exchange to produce VAD (Angeletti et al., 2021), suggesting that vacor can also directly interact with SARM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Angeletti et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "862ffd8c-0693-4d29-830a-5404b6a2de42",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background context for SARM1 as a central regulator of programmed axon death, activated by NMNAT2 depletion and NMN accumulation, with therapeutic potential for neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 are all supported by appropriate citations to prior literature. These claims establish well-documented background knowledge about SARM1's role in axon degeneration, its regulation by NMNAT2 and NMN, and its therapeutic potential. All claims are appropriately attributed to published work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "780f9ab7-0bd8-4bfb-b3fb-4ca32f8f6919",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Recent structural studies have revealed an allosteric pocket in the SARM1 ARM domain where NMN binds to activate SARM1 and NAD competes to prevent activation, with the NMN:NAD ratio regulating SARM1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 are supported by appropriate citations to recent structural studies (Figley et al., 2021; Jiang et al., 2020; Angeletti et al., 2021). These claims accurately represent prior work establishing the mechanistic basis for SARM1 regulation by small molecules, providing essential context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "aae92611-e42c-422b-a62a-627bfd708163",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Vacor is a disused pesticide and neurotoxin associated with human neurological disorders and axon degeneration in rats. It is metabolized to VMN and VAD by NAMPT and NMNAT2, with VAD inhibiting NMNAT2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 are supported by appropriate citations (Gallanosa et al., 1981; LeWitt, 1980; Watson and Griffin, 1987; Buonvicino et al., 2018). The metabolic pathway is illustrated in Figure 1A. These claims establish the rationale for investigating vacor's mechanism of neurotoxicity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ed51d82f-b9cf-4d1f-ae7c-665ce38a0d53",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Vacor is metabolized to VMN and VAD in DRG neurons and causes rapid, dose-dependent neurite degeneration in DRG and SCG neurons. NAM and FK866, which prevent vacor metabolism, delay vacor-induced neurite degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are directly supported by experimental data shown in Figures 1B-J. The metabolite measurements (C23) and degeneration assays (C24-C26) are appropriately quantified with statistical analysis. Claims C27-C28 are supported by known mechanisms and prior literature. The data demonstrate that vacor metabolism is required for toxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "456546aa-3e6f-4b18-8059-8dcb18d6786f",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Vacor neurotoxicity is entirely mediated by SARM1, as Sarm1-/- neurons and neurites are completely resistant to vacor, survive indefinitely with multiple doses, and continue to grow normally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C29-C31, and C33 are strongly supported by experimental data in Figures 2A-F and supplementary figures. The complete protection of Sarm1-/- neurons from vacor toxicity, including with repeated dosing and continued growth, provides compelling evidence that vacor acts through SARM1. Statistical analysis shows highly significant differences between wild-type and Sarm1-/- neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "6bd44e2e-6c2e-4f8e-ad94-41d1150b23ca",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The permanent rescue and continued growth of Sarm1-/- neurites mirrors previous findings in Nmnat2 null axons lacking SARM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by appropriate citations to Gilley et al., 2017 and 2015. This comparison strengthens the interpretation that SARM1 deletion provides complete protection in both toxic and genetic models of neuropathy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "a426c906-3225-4198-b9cd-7d96dc1f74cc",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SARM1 NADase activity is the critical function required for vacor toxicity, as wild-type hSARM1 restores vacor sensitivity in Sarm1-/- neurons while catalytically inactive E642A hSARM1 does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by microinjection experiments shown in Figures 2G-I and supplementary figures. The rescue of vacor sensitivity by wild-type but not E642A mutant SARM1 demonstrates that NADase activity is essential for vacor toxicity. Expression of both constructs is confirmed in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "082fe749-e322-40a7-83c9-3629d224f577",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Vacor causes SARM1-dependent cell death in addition to neurite degeneration. Vacor added to either soma or neurite compartments directly activates local death, but neurite degeneration does not cause cell loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by data in Figure 2I and Figure 2\u2014figure supplement 2. The microfluidic chamber experiments demonstrate compartment-specific effects of vacor. However, the interpretation of bidirectional versus unidirectional effects could benefit from additional mechanistic investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "7a312387-bc9a-45cb-9743-20c9fccc712b",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vivo, vacor causes loss of photoreceptor, bipolar, and RGC responses and reduces RGC number, all of which are completely prevented by SARM1 deficiency, demonstrating functional and morphological neuroprotection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are strongly supported by in vivo ERG recordings and RGC counts shown in Figure 3. The complete rescue by SARM1 deficiency in both functional (ERG) and morphological (RGC counts) measures provides compelling evidence for SARM1-mediated toxicity in vivo. Statistical analysis shows highly significant differences. Controls with DMSO are shown in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Vacor treatment causes SARM1-dependent NAD depletion and cADPR accumulation, but surprisingly NMN does not rise and even falls slightly. NMN and NAD levels are unchanged in Sarm1-/- neurons, suggesting NMNAT2 inhibition does not occur at this drug concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 are supported by metabolite measurements in Figure 4A-D. The unexpected finding that NMN does not accumulate (C50) is a key observation that challenges the initial hypothesis. The lack of metabolite changes in Sarm1-/- neurons (C51) supports the inference that NMNAT2 inhibition is not occurring (C52), though this remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "a4c269c8-02a4-4ace-9fb7-df5dbafa3aa0",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NMN deamidase and WldS, which protect against axotomy by preventing NMN accumulation, fail to protect against vacor toxicity, even though NMN deamidase retains enzymatic activity in the presence of vacor metabolites. This suggests NMN is not responsible for SARM1 activation by vacor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by microinjection experiments (Figures 4E-F and supplementary figures) and enzyme activity assays (Figure 4\u2014figure supplement 1B). The failure of NMN deamidase to protect despite retaining activity is strong evidence against NMN-mediated activation. However, the conclusion (C57) is appropriately qualified as context-specific.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "6930e7ce-0d7e-4fb8-9f5c-2aa00e839a93",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VMN potently activates recombinant hSARM1 NADase activity more effectively than NMN, with lower Ka and greater induction. VAD has only weak inhibitory effects. At high concentrations, VMN activity drops, suggesting two distinct binding sites with activation (Ka) and inhibition (Ki) constants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by NADase activity assays shown in Figure 5A and supplementary figures. The kinetic analysis is rigorous, with appropriate curve fitting to a modified Michaelis-Menten equation. The biphasic response to VMN (C61) and interpretation of two binding sites (C62) is supported by the data, though the inhibitory site remains to be structurally characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "25296e72-7012-422f-8fa7-14734842e33b",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Exogenous VMN induces SARM1-dependent death of uninjured neurites, unlike NMN which does not. This difference reflects VMN being both a more potent SARM1 activator and accumulating more because it is not efficiently metabolized by NMNAT2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by neurite degeneration assays (Figure 5B-C), NADase activity data (Figure 5A), and citations to prior work on NMN metabolism (Di Stefano et al., 2015; Buonvicino et al., 2018). The explanation for why VMN but not NMN causes degeneration when applied exogenously is well-reasoned and supported by multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "904b2d74-5674-4357-a8c7-bf47253d3794",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "VMN is not a substrate of NMN deamidase, NMNAT1, or efficiently of NMNAT3, explaining its accumulation in cell bodies and subsequent SARM1 activation, which provides a rationale for vacor-induced cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are supported by enzyme activity assays (Figure 5\u2014figure supplement 1D), citations to prior work (Buonvicino et al., 2018), and metabolite measurements (Figure 5\u2014figure supplement 1E, Figure 4D). The mechanistic explanation for cell death (C70) is well-supported by the data showing VMN accumulation in cell bodies and cADPR elevation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "VMN binds directly to the dSARM1 ARM domain with Kd = 2.83 \u03bcM. The crystal structure at 1.69 \u00c5 resolution shows VMN sits in the central groove of the compact ARM domain superhelix, with interactions mediated by pi-stacking and eight hydrogen bonds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 are supported by ITC binding data (Figure 6\u2014figure supplement 1A) and crystal structure (Figure 6A-B). The structural data is of high quality (1.69 \u00c5 resolution) and the binding interactions are well-characterized. The use of Drosophila SARM1 ARM domain is appropriate given the inability to produce human SARM1 ARM recombinantly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "9145f45b-87ee-4f58-8530-cfc0dad72f7d",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "VMN has over two-fold higher affinity for dSARM1 ARM than NMN (Kd = 6.39 \u03bcM). VMN-bound and NMN-bound structures are similar, with the NMN moiety sharing the same binding mode, but VMN forms different and extra interactions that may explain its greater activation potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 are supported by ITC data comparing VMN and NMN binding (Figure 6\u2014figure supplement 1A) and structural comparisons (Figure 6B-C). The structural analysis clearly identifies the additional interactions formed by VMN's extended structure. The mechanistic interpretation (C82) is reasonable but appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "b1fb0920-6889-4b9f-9c12-ebb4080717b2",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The compact conformation seen in VMN- and NMN-bound structures likely represents active SARM1, contrasting with the open conformation of ligand-free and NaMN/NAD-bound structures representing inactive SARM1. VMN activates SARM1 by inducing ARM domain compaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 are supported by structural comparisons shown in Figure 6C and citations to prior structural studies. The interpretation that compaction represents activation is well-supported by comparison with multiple structures representing different states. The mechanistic model (C86) integrates structural and biochemical data effectively.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "a92db770-8b87-4155-bb27-bd6efff6c655",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "W103A, R157A, and K193R mutations in human SARM1 prevent restoration of vacor sensitivity in Sarm1-/- neurons. The K193R mutant cannot be activated by either VMN or NMN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 are supported by microinjection experiments (Figure 7A-F) and NADase activity assays (Figure 7G). The mutagenesis validates key residues identified in the crystal structure. Expression of all mutants is confirmed in supplementary figures. The functional validation strengthens the structural findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "6bf24c88-a5c1-4d70-be7e-abe0bd8ef9e9",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "VMN directly binds to and activates SARM1, causing neuronal death. VMN is the most potent SARM1 activator reported to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C89 are supported by the comprehensive set of experiments including ITC binding, NADase activity assays, crystal structure, and functional studies in neurons. The claim that VMN is the most potent activator (C89) is supported by comparison with NMN and is appropriately qualified ('to our knowledge').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "127d788f-e329-4250-8f83-67b573cca736",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Vacor use is banned, but structurally related pyridines are widely used in drugs, pesticides, and food. Other nicotinamide analogs like 3-acetyl pyridine are associated with axon degeneration and act through SARM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 are supported by appropriate citations. These claims establish the broader significance of the findings for environmental neurotoxicity. The reference to 3-acetyl pyridine (C92-C93) provides independent validation of the SARM1-mediated mechanism for pyridine neurotoxicity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "85675667-3f8a-4b86-8b91-13a9a7531e33",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "SARM1 deficiency completely rescues neurons from vacor toxicity and preserves functionality. Together with prior genetic studies, this supports the therapeutic potential of blocking SARM1 to prevent programmed axon death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 are supported by the comprehensive in vitro and in vivo data throughout the manuscript and appropriate citations to prior work (Gilley et al., 2017; Lukacs et al., 2019; Bloom et al., 2021). The therapeutic implications are appropriately framed based on the complete protection observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "259bd57c-b531-4528-9650-7b11289e7283",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Vacor causes pancreatic \u03b2-cell destruction and diabetes in humans, suggesting potential broader implications for SARM1 in insulin-producing cell survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is supported by citation to Gallanosa et al., 1981. The speculation about broader implications for diabetes research is appropriately qualified and represents a reasonable extension of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "8f2f29d3-f3a0-4d66-8459-e843575deb38",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "While prior work showed Sarm1 deletion does not prevent RGC death after optic nerve crush, the current data show SARM1 activation is sufficient to drive RGC degeneration. The authors suggest retrograde RGC death after axotomy proceeds by a different, SARM1-independent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C98 is supported by citation to Fernandes et al., 2018. Claim C99 is supported by the ERG and RGC data in Figure 3. However, claim C100 is speculative and not directly tested. The proposed explanation for the discrepancy between studies is reasonable but remains a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "1409afd8-a97b-4069-b6f8-118c4c52102a",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Programmed axon death can be aberrantly activated in humans by genetic mutation of NMNAT2 or by SARM1 activation following vacor ingestion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C101 is supported by appropriate citations (Huppke et al., 2019; Lukacs et al., 2019). Claim C102 is supported by the current findings and citation to LeWitt, 1980. The integration of genetic and toxicological mechanisms of SARM1 activation in human disease is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    },
+    {
+      "id": "22111fc8-0aaa-4e0e-b180-380ac72bdca0",
+      "content_id": "030edae3-ebec-4a30-98b9-89d24fd60134",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Recombinant hSARM1 uses vacor for base exchange to produce VAD, suggesting vacor can directly interact with SARM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 is supported by citation to Angeletti et al., 2021. This observation suggests an additional mechanism by which vacor may interact with SARM1, though the functional significance of base exchange for SARM1 activation remains to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:25:04.313593Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8b35a1b2-179f-4bb3-84be-8ce0c1422fd7",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "a2e2d7a1-6dd1-41be-b940-23f320d3ff53",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "914b73cd-0e42-4c5b-9ad6-470f1b124379",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "019164b2-6a6a-4470-a9a8-4a50871c5854",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "06c5bcb2-0c97-49ae-b9cc-14315987aedd",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "bd947264-7928-4e23-b58a-8b2e6c373acf",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "b871b40d-99fd-4f61-85c0-4b4ae1bb2db4",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "9b2cf0dc-ed93-4431-9341-f837cc0b2e40",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "598c9fd3-f234-4b75-90b6-b2d453e8704c",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "83da3b73-af65-4457-9dd3-52a3c4bd6d99",
+      "result_id": "862ffd8c-0693-4d29-830a-5404b6a2de42"
+    },
+    {
+      "claim_id": "aa8da1ab-8002-40bf-8354-f59c02ecf2b3",
+      "result_id": "780f9ab7-0bd8-4bfb-b3fb-4ca32f8f6919"
+    },
+    {
+      "claim_id": "d353c2db-63ac-4d1e-b075-3a01c1c28e10",
+      "result_id": "780f9ab7-0bd8-4bfb-b3fb-4ca32f8f6919"
+    },
+    {
+      "claim_id": "3657ba7b-08d7-444e-86e6-e67adbc750db",
+      "result_id": "780f9ab7-0bd8-4bfb-b3fb-4ca32f8f6919"
+    },
+    {
+      "claim_id": "2df38736-56c1-4915-b5ea-aed96e07919b",
+      "result_id": "780f9ab7-0bd8-4bfb-b3fb-4ca32f8f6919"
+    },
+    {
+      "claim_id": "63facdd9-9686-4fcc-99eb-430b22106a65",
+      "result_id": "780f9ab7-0bd8-4bfb-b3fb-4ca32f8f6919"
+    },
+    {
+      "claim_id": "387d82cb-a509-4c67-9fc6-2340fb412804",
+      "result_id": "aae92611-e42c-422b-a62a-627bfd708163"
+    },
+    {
+      "claim_id": "97345d5a-75b4-463b-8579-db1e3d6ac2da",
+      "result_id": "aae92611-e42c-422b-a62a-627bfd708163"
+    },
+    {
+      "claim_id": "68c4a3d6-3bc7-44d9-800c-478550d70d49",
+      "result_id": "aae92611-e42c-422b-a62a-627bfd708163"
+    },
+    {
+      "claim_id": "08c7279e-bc27-4de8-9095-3bb769d2dc28",
+      "result_id": "aae92611-e42c-422b-a62a-627bfd708163"
+    },
+    {
+      "claim_id": "a13d868f-58bc-456c-93b1-ad50fc8f4a1d",
+      "result_id": "ed51d82f-b9cf-4d1f-ae7c-665ce38a0d53"
+    },
+    {
+      "claim_id": "864d9dfc-8314-492b-ac20-d7383b60b0ac",
+      "result_id": "ed51d82f-b9cf-4d1f-ae7c-665ce38a0d53"
+    },
+    {
+      "claim_id": "5d7fa391-5c38-4008-97c0-edb5c4a91aac",
+      "result_id": "ed51d82f-b9cf-4d1f-ae7c-665ce38a0d53"
+    },
+    {
+      "claim_id": "294a49ec-8473-4d56-b582-fe52bffeee33",
+      "result_id": "ed51d82f-b9cf-4d1f-ae7c-665ce38a0d53"
+    },
+    {
+      "claim_id": "702e0300-a14d-4ad0-87b4-795e735e7bf4",
+      "result_id": "ed51d82f-b9cf-4d1f-ae7c-665ce38a0d53"
+    },
+    {
+      "claim_id": "ce23abdf-88c4-45be-9739-e0c493c90d62",
+      "result_id": "ed51d82f-b9cf-4d1f-ae7c-665ce38a0d53"
+    },
+    {
+      "claim_id": "ebf8bb84-6783-4e28-8eae-1a7e26b0f1cc",
+      "result_id": "456546aa-3e6f-4b18-8059-8dcb18d6786f"
+    },
+    {
+      "claim_id": "fdce580b-d224-4dce-8a85-7bb48a2514e4",
+      "result_id": "456546aa-3e6f-4b18-8059-8dcb18d6786f"
+    },
+    {
+      "claim_id": "c97c4058-de34-4a24-94d0-6f004a92ad7a",
+      "result_id": "456546aa-3e6f-4b18-8059-8dcb18d6786f"
+    },
+    {
+      "claim_id": "ea9890df-a028-4590-bef0-39cc5c513063",
+      "result_id": "456546aa-3e6f-4b18-8059-8dcb18d6786f"
+    },
+    {
+      "claim_id": "24ae850c-30b0-4a2b-a084-a2c3e7f544ab",
+      "result_id": "456546aa-3e6f-4b18-8059-8dcb18d6786f"
+    },
+    {
+      "claim_id": "8158c901-4100-4152-8302-32fd988d3663",
+      "result_id": "456546aa-3e6f-4b18-8059-8dcb18d6786f"
+    },
+    {
+      "claim_id": "07061dc8-ebc3-46b5-9432-5a1e2c128975",
+      "result_id": "6bd44e2e-6c2e-4f8e-ad94-41d1150b23ca"
+    },
+    {
+      "claim_id": "942fe17c-df73-465e-8640-d547acd9fc56",
+      "result_id": "a426c906-3225-4198-b9cd-7d96dc1f74cc"
+    },
+    {
+      "claim_id": "fa2ac4cb-bf8c-4348-94bf-0b80a3df270f",
+      "result_id": "a426c906-3225-4198-b9cd-7d96dc1f74cc"
+    },
+    {
+      "claim_id": "cb46ea39-f511-485a-b22a-74baa0824b9d",
+      "result_id": "a426c906-3225-4198-b9cd-7d96dc1f74cc"
+    },
+    {
+      "claim_id": "56a6c843-8ff4-4a3d-b0db-4f712f72fb40",
+      "result_id": "082fe749-e322-40a7-83c9-3629d224f577"
+    },
+    {
+      "claim_id": "36df8d3c-bb2f-4538-97e6-a3b8d2a950d9",
+      "result_id": "082fe749-e322-40a7-83c9-3629d224f577"
+    },
+    {
+      "claim_id": "ac97be91-eaa9-4387-b2f6-7a4d8cd459b9",
+      "result_id": "082fe749-e322-40a7-83c9-3629d224f577"
+    },
+    {
+      "claim_id": "5b6bffb9-b11f-4404-97da-147e0b63e6c8",
+      "result_id": "7a312387-bc9a-45cb-9743-20c9fccc712b"
+    },
+    {
+      "claim_id": "aaf81ac4-eca9-4997-8cea-e324ba192c5e",
+      "result_id": "7a312387-bc9a-45cb-9743-20c9fccc712b"
+    },
+    {
+      "claim_id": "76feb31b-7014-46c3-bbff-15fa3e5dc499",
+      "result_id": "7a312387-bc9a-45cb-9743-20c9fccc712b"
+    },
+    {
+      "claim_id": "28015288-8e21-424e-9ed7-e353772309da",
+      "result_id": "7a312387-bc9a-45cb-9743-20c9fccc712b"
+    },
+    {
+      "claim_id": "87e96b0a-0ca1-4b17-abd1-585e8954a36d",
+      "result_id": "7a312387-bc9a-45cb-9743-20c9fccc712b"
+    },
+    {
+      "claim_id": "d4bd3443-7d4c-4ff8-a2bd-91a4db36833a",
+      "result_id": "7a312387-bc9a-45cb-9743-20c9fccc712b"
+    },
+    {
+      "claim_id": "02f31305-4d69-4b47-a575-fa286e60fd5f",
+      "result_id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d"
+    },
+    {
+      "claim_id": "10b170cd-2c1c-41a5-8720-d11d04c444a6",
+      "result_id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d"
+    },
+    {
+      "claim_id": "04b251a5-2243-4f19-9833-9e2c9fc4c7b3",
+      "result_id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d"
+    },
+    {
+      "claim_id": "8f4239cb-8a49-447d-af68-0dedb64e70ab",
+      "result_id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d"
+    },
+    {
+      "claim_id": "518ac370-1e9c-4df9-b373-48af240873e4",
+      "result_id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d"
+    },
+    {
+      "claim_id": "23ff45cf-4370-4504-9a1c-7831e99ecee8",
+      "result_id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d"
+    },
+    {
+      "claim_id": "b71cb812-0ef3-47aa-a58a-4ee9ddba2574",
+      "result_id": "f82733ec-9e17-40bd-ad6e-5da6cec2b75d"
+    },
+    {
+      "claim_id": "fefabd69-83d1-46c1-992d-98faca653d07",
+      "result_id": "a4c269c8-02a4-4ace-9fb7-df5dbafa3aa0"
+    },
+    {
+      "claim_id": "227385e5-4d89-43de-9779-22ef4707679c",
+      "result_id": "a4c269c8-02a4-4ace-9fb7-df5dbafa3aa0"
+    },
+    {
+      "claim_id": "41a885e9-a4cd-41e0-a66a-ec99ac42c2eb",
+      "result_id": "a4c269c8-02a4-4ace-9fb7-df5dbafa3aa0"
+    },
+    {
+      "claim_id": "429fc90e-c6a6-4789-8c55-1fbb8f0526a0",
+      "result_id": "a4c269c8-02a4-4ace-9fb7-df5dbafa3aa0"
+    },
+    {
+      "claim_id": "82be318d-6ea3-4592-8d5e-668a253c0bc4",
+      "result_id": "a4c269c8-02a4-4ace-9fb7-df5dbafa3aa0"
+    },
+    {
+      "claim_id": "e7d4d233-2051-44c5-be55-420c83180174",
+      "result_id": "6930e7ce-0d7e-4fb8-9f5c-2aa00e839a93"
+    },
+    {
+      "claim_id": "52ec021b-626f-499e-8985-5fb519ff03b9",
+      "result_id": "6930e7ce-0d7e-4fb8-9f5c-2aa00e839a93"
+    },
+    {
+      "claim_id": "ba4a3017-3956-4f0f-a6a7-e7511faa30e6",
+      "result_id": "6930e7ce-0d7e-4fb8-9f5c-2aa00e839a93"
+    },
+    {
+      "claim_id": "f88e6bec-d733-4437-9400-4c97d48e35a7",
+      "result_id": "6930e7ce-0d7e-4fb8-9f5c-2aa00e839a93"
+    },
+    {
+      "claim_id": "f404bdd4-5c96-4a87-a757-1b201c442867",
+      "result_id": "6930e7ce-0d7e-4fb8-9f5c-2aa00e839a93"
+    },
+    {
+      "claim_id": "bfe58f69-a508-47f8-910b-f1b80647d004",
+      "result_id": "25296e72-7012-422f-8fa7-14734842e33b"
+    },
+    {
+      "claim_id": "caf6c5da-51cc-443f-9d14-d8a30c45da30",
+      "result_id": "25296e72-7012-422f-8fa7-14734842e33b"
+    },
+    {
+      "claim_id": "759e855f-93be-459a-9b84-40fe60140566",
+      "result_id": "25296e72-7012-422f-8fa7-14734842e33b"
+    },
+    {
+      "claim_id": "587c5a85-a3d5-4db5-81f3-6cf6e7822442",
+      "result_id": "25296e72-7012-422f-8fa7-14734842e33b"
+    },
+    {
+      "claim_id": "abdd53d6-bc57-4755-9eb6-4edd275aeebf",
+      "result_id": "904b2d74-5674-4357-a8c7-bf47253d3794"
+    },
+    {
+      "claim_id": "24546cb0-ae31-4718-b02f-7f3c8818fd1b",
+      "result_id": "904b2d74-5674-4357-a8c7-bf47253d3794"
+    },
+    {
+      "claim_id": "10ca5f86-c122-43f1-bf02-44ba22dcb363",
+      "result_id": "904b2d74-5674-4357-a8c7-bf47253d3794"
+    },
+    {
+      "claim_id": "d0ac4129-ba87-4978-b746-f60bf0538a09",
+      "result_id": "904b2d74-5674-4357-a8c7-bf47253d3794"
+    },
+    {
+      "claim_id": "7ff5b27d-351b-443d-a4e5-7db55cc1bf17",
+      "result_id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2"
+    },
+    {
+      "claim_id": "7d2c8559-a04c-4b8d-a12d-9e3990cff6f1",
+      "result_id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2"
+    },
+    {
+      "claim_id": "ecc0bb71-b516-4e78-8774-72053ea2a438",
+      "result_id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2"
+    },
+    {
+      "claim_id": "1464410b-5dfb-403a-be4a-26771ceca306",
+      "result_id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2"
+    },
+    {
+      "claim_id": "47c2eabe-cd5f-494b-8843-a9ab58710ee4",
+      "result_id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2"
+    },
+    {
+      "claim_id": "361e306c-0640-48b9-91af-e424b102b402",
+      "result_id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2"
+    },
+    {
+      "claim_id": "b747dea0-9bb3-48d6-af4b-c756c5071dc9",
+      "result_id": "ba07ea9b-8818-496f-9d29-d3a2a7a15cd2"
+    },
+    {
+      "claim_id": "ff4092e6-844b-4755-b75b-909f24845687",
+      "result_id": "9145f45b-87ee-4f58-8530-cfc0dad72f7d"
+    },
+    {
+      "claim_id": "fd5753fc-52e9-4946-989d-a7b7d78629ca",
+      "result_id": "9145f45b-87ee-4f58-8530-cfc0dad72f7d"
+    },
+    {
+      "claim_id": "cb2eb568-6375-4354-a532-33a4c3e91c93",
+      "result_id": "9145f45b-87ee-4f58-8530-cfc0dad72f7d"
+    },
+    {
+      "claim_id": "95fbd174-dcfc-4622-ada8-e8a0f0e7b5cd",
+      "result_id": "9145f45b-87ee-4f58-8530-cfc0dad72f7d"
+    },
+    {
+      "claim_id": "8fa92dae-f90a-40b9-8572-f18cd1a40d6c",
+      "result_id": "9145f45b-87ee-4f58-8530-cfc0dad72f7d"
+    },
+    {
+      "claim_id": "572276f7-be1e-422f-a84b-0478b6890d0a",
+      "result_id": "b1fb0920-6889-4b9f-9c12-ebb4080717b2"
+    },
+    {
+      "claim_id": "a40f410a-a581-4dac-8121-2cb54aaae2bf",
+      "result_id": "b1fb0920-6889-4b9f-9c12-ebb4080717b2"
+    },
+    {
+      "claim_id": "be3da5bd-5953-4e32-8ee8-8ba04fab660d",
+      "result_id": "b1fb0920-6889-4b9f-9c12-ebb4080717b2"
+    },
+    {
+      "claim_id": "f873394a-2f4c-493f-bff1-3d23a8740deb",
+      "result_id": "b1fb0920-6889-4b9f-9c12-ebb4080717b2"
+    },
+    {
+      "claim_id": "99570056-cf3a-4044-bdcc-ca9a073ab56f",
+      "result_id": "a92db770-8b87-4155-bb27-bd6efff6c655"
+    },
+    {
+      "claim_id": "6278e119-ab38-457e-927a-8f63bc69fc24",
+      "result_id": "a92db770-8b87-4155-bb27-bd6efff6c655"
+    },
+    {
+      "claim_id": "9e185891-4d61-4ee4-a3f1-d532e0074c52",
+      "result_id": "6bf24c88-a5c1-4d70-be7e-abe0bd8ef9e9"
+    },
+    {
+      "claim_id": "ac6cd479-b54b-4d49-b0c5-a67246a074f4",
+      "result_id": "6bf24c88-a5c1-4d70-be7e-abe0bd8ef9e9"
+    },
+    {
+      "claim_id": "744d7eee-da96-4936-9ce4-a1a9a4db387a",
+      "result_id": "127d788f-e329-4250-8f83-67b573cca736"
+    },
+    {
+      "claim_id": "dfbd5a57-d715-4937-a5c2-39133f416d2f",
+      "result_id": "127d788f-e329-4250-8f83-67b573cca736"
+    },
+    {
+      "claim_id": "891a1e3b-fbeb-489e-b52c-b4d6b167daa8",
+      "result_id": "127d788f-e329-4250-8f83-67b573cca736"
+    },
+    {
+      "claim_id": "826f4934-d451-4478-9ba5-643d19331f4e",
+      "result_id": "127d788f-e329-4250-8f83-67b573cca736"
+    },
+    {
+      "claim_id": "9edfc0e9-1ccb-40af-bbcb-c4cd5083edb4",
+      "result_id": "85675667-3f8a-4b86-8b91-13a9a7531e33"
+    },
+    {
+      "claim_id": "f5732f1e-404e-4f54-a2c5-f22c471050df",
+      "result_id": "85675667-3f8a-4b86-8b91-13a9a7531e33"
+    },
+    {
+      "claim_id": "4c7769d0-d949-47a0-8f4c-d586c004a72e",
+      "result_id": "85675667-3f8a-4b86-8b91-13a9a7531e33"
+    },
+    {
+      "claim_id": "fd5070af-68ef-4c1a-99ea-7998ee64d1de",
+      "result_id": "259bd57c-b531-4528-9650-7b11289e7283"
+    },
+    {
+      "claim_id": "8c8c9c05-6804-48f5-b863-ddb9be4bc467",
+      "result_id": "8f2f29d3-f3a0-4d66-8459-e843575deb38"
+    },
+    {
+      "claim_id": "50626a12-45d3-4cb5-a0b7-3b50761108dd",
+      "result_id": "8f2f29d3-f3a0-4d66-8459-e843575deb38"
+    },
+    {
+      "claim_id": "dc3548ac-2bd3-421b-aeaf-9508506954c0",
+      "result_id": "8f2f29d3-f3a0-4d66-8459-e843575deb38"
+    },
+    {
+      "claim_id": "03488d37-cb92-467b-9145-7c2765acf942",
+      "result_id": "1409afd8-a97b-4069-b6f8-118c4c52102a"
+    },
+    {
+      "claim_id": "9e01bd3f-6251-4db9-aba0-699b9b9b537b",
+      "result_id": "1409afd8-a97b-4069-b6f8-118c4c52102a"
+    },
+    {
+      "claim_id": "6ce6884f-eaba-41bc-b9ec-be337df4fd22",
+      "result_id": "22111fc8-0aaa-4e0e-b180-380ac72bdca0"
+    }
+  ],
+  "comparisons": []
+}

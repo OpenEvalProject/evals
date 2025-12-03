@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study generated bulk RNA-seq data from 63 samples covering four tissues (cortex, liver, lung, muscle) of 16 male C57BL/6J mice aged 2-904 days, resulting in 15,063 protein-coding genes for analysis. Samples were divided into development (2-61 days, n=7) and ageing (93-904 days, n=9) periods based on sexual maturity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide clear experimental design details including sample collection, age ranges, and filtering criteria. The citation-supported age classifications (C2, C3) and directly stated gene counts (C4) establish a well-documented dataset foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Principal component analysis reveals that tissue differences explain the majority of gene expression variation, with the first three PCs separating samples by tissue (ANOVA p<10^-20) and cortex being most distinct. PC4 (8% variance) shows a shared age effect across tissues during development (\u03c1 = [-0.88, -0.99], p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 present consistent PCA results with appropriate statistical testing (ANOVA, Spearman correlation) and are supported by both quantitative data and visualization. The findings align with cited prior work (C5), strengthening validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Inter-tissue transcriptome divergence during development is demonstrated by increasing Euclidean distances among tissues with age (\u03c1=0.99, p=1.5\u00d710^-5), consistent with previous reports and confirmed in development-only PCA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 provide convergent evidence for developmental divergence through multiple analytical approaches (full dataset and development-only PCA) with strong statistical support. Citation to prior work (C11) confirms this is an established phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Age-related gene expression changes show weak but significant correlations among tissue pairs during both development (\u03c1=[0.17,0.39]) and ageing (\u03c1=[0.23,0.33]), with no significant difference between periods (p=0.31). Genes changing in the same direction across tissues exceed chance expectations except for upregulated genes in ageing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 demonstrate modest inter-tissue coordination using appropriate permutation tests to account for non-independence. The statistical approach is sound, though effect sizes are small. The exception for ageing upregulation (C16) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Development involves widespread significant gene expression changes (13-41% of genes, n=1,941-6,151), most prominently in cortex. Shared developmental genes across tissues show significant overlap (p<0.03) and are enriched in hormone signaling/lipid metabolism (upregulated) and cell cycle/division (downregulated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide comprehensive characterization of developmental changes with appropriate statistical testing (permutation tests, GO enrichment with FDR correction). The tissue-specific magnitude differences and functional enrichments are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Ageing shows substantially fewer significant expression changes (0.013-15% of genes) compared to development, with lung showing the most changes (n=2,319) and muscle the fewest (n=2). No common significant ageing genes were found across tissues, likely due to lower signal-to-noise ratios in ageing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 document the contrast between development and ageing with appropriate statistical analysis. The interpretation of low overlap (C28) as due to subtle changes is reasonable given similar sample sizes and dataset characteristics. Citations support prior observations (C23, C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Expression reversal patterns (opposite directions in development vs. ageing) are observed in approximately 50% (43-58%) of genes, particularly in liver and muscle, though these proportions do not significantly exceed random expectations in permutation tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C31 document reversal patterns but acknowledge lack of statistical significance (C31), which undermines the strength of the finding. While the pattern is consistent with prior work (C32), the permutation tests suggest the observed proportions could occur by chance, making the biological significance unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Reversal genes show tissue-specific functional enrichments: up-down genes enrich in tissue-specific functions (e.g., synaptic signaling in cortex, cellular respiration in muscle), while down-up genes enrich in stress/inflammatory responses. No overlap of reversal genes across tissues was found (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 provide systematic functional characterization with appropriate GO enrichment analysis (FDR<0.1). The lack of overlap across tissues (C41) is well-tested with permutation analysis and supports the tissue-specificity interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Inter-tissue coefficient of variation (CoV) increases significantly during development (\u03c1=0.77, p=0.041) but shows a non-significant decreasing trend during ageing (\u03c1=-0.50, p=0.204). PCA-based Euclidean distance analysis supports this convergence trend (\u03c1=-0.87, p=0.0026 with quantile normalization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C44 present the core DiCo finding, but the ageing convergence is not statistically significant in the primary CoV analysis (C43, p=0.204). While the PCA-based analysis (C44) shows significance, the inconsistency across methods and dependence on normalization approach (VST shows p=0.102) raises concerns about robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The ratio of convergent to divergent genes differs significantly between development (70% divergence among 2,581 genes) and ageing (68% convergence among 62 genes). Among 9,058 developmentally divergent genes, 4,802 show the DiCo pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 quantify the DiCo pattern at the gene level. However, the very small number of significant genes in ageing (n=62, C45) raises concerns about statistical power and generalizability, even though the directional shift is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C51",
+      "C52"
+    ],
+    "result": "Tissue-specific genes tend to be downregulated in their native tissues during ageing while being upregulated in other tissues (OR=5.50, p=2.1\u00d710^-129 for all genes; OR=74.81, p=5.9\u00d710^-203 for DiCo genes), indicating loss of tissue identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C51-C52 provide strong statistical evidence for tissue identity loss with highly significant odds ratios. The dramatic increase in effect size for DiCo genes (C52) specifically links the convergence pattern to identity loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DiCo genes show enrichment in 184 GO Biological Process categories (FDR<0.1), particularly energy metabolism, mitochondria, tissue function, and immune response. Lung shows the most distinct expression patterns. No specific transcriptional or miRNA regulators are enriched (FDR>0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide comprehensive functional characterization with appropriate enrichment testing. The lack of specific regulators (C56) is well-tested and supports the interpretation of DiCo as a transcriptome-wide phenomenon rather than a targeted regulatory program.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Analysis of multiple independent datasets (Jonker, Schaum, GTEx) confirms strong association between tissue identity loss and convergence across all datasets, though transcriptome-wide convergence trends are weak and inconsistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 appropriately synthesize results across datasets. The consistent identity loss association (C57) despite variable transcriptome-wide trends (C58) is honestly reported and suggests the phenomenon is real but subtle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C48"
+    ],
+    "result": "Deconvolution analysis reveals that the most common cell types in tissues (e.g., hepatocytes in liver) increase in frequency during development but decrease during ageing, with significant correlations in liver and lung (|\u03c1|>0.77, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C48 provide mechanistic insight into DiCo through cell-type composition changes. The analysis is appropriately conducted and supported by independent immunohistochemistry data (C48 citation). However, the trend is described as \"weak but consistent,\" and significance is not observed in all tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C49"
+    ],
+    "result": "Single-cell analysis reveals that similar cell types across tissues become less similar with age (67% of comparisons), while distinct cell types become more similar (83% of comparisons), suggesting cell-autonomous contributions to DiCo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C49 provide evidence for cell-autonomous changes contributing to DiCo. The proportions are substantial (67% and 83%), though individual comparisons lack statistical testing. This represents an important mechanistic insight but would benefit from more rigorous statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "No consistent trend of intra-tissue convergence among cell types was observed in the Tabula Muris Senis dataset from 3-month to 24-month-old mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 reports a negative result that helps distinguish inter-tissue from intra-tissue convergence. This is appropriately tested and reported, though the analysis is limited by the available age range in the single-cell dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study establishes that mammalian tissue transcriptomes diverge during postnatal development but converge during ageing (DiCo), a phenomenon most prevalent among tissue-specific genes and associated with loss of tissue identity. DiCo is driven by both cell-type composition changes and cell-autonomous expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 summarize the main findings. While the association with tissue identity loss is well-supported (C65), the transcriptome-wide convergence during ageing (C64) shows inconsistent statistical significance across analyses and datasets. The mechanistic insights (C66) are supported but preliminary. The overall DiCo phenomenon is demonstrated but with important caveats about statistical robustness and generalizability.",
+    "result_type": "MAJOR"
+  }
+]

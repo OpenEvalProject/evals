@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Mice show texture-dependent figure-ground segmentation behavior with performance ranked Cross > Iso > Nat. Mice learned the Cross task quickly (88% after 7 days), were slower on Iso (77% after 9 days), and struggled with Nat (71% after 13 days). Generalization testing revealed mice could generalize well for Cross (2.47% drop), moderately for Iso (6.55% drop), but failed for Nat (20.61% drop to near chance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C28-C30, C37-C39 provide converging behavioral evidence from multiple experiments showing consistent texture-dependent segmentation. The learning curves, generalization tests, and statistical analyses (p=0.0011 for Nat generalization failure) strongly support the conclusion that mouse segmentation is texture-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "When trained extensively on naturalistic textures through gradual shaping, mice adopted a memorization strategy rather than using opponent motion cues. Three of four mice learned the full Nat condition after 26 sessions but performed at chance (60%) on new textures and showed no performance drop when motion was removed (87% on static).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32-C35 demonstrate through multiple complementary experiments that mice memorized texture-to-action mappings. The failure to generalize to new textures (C33) and maintained performance without motion (C34, C35) provide strong evidence for memorization over motion-based segmentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C36",
+      "C41",
+      "C42",
+      "C71",
+      "C72"
+    ],
+    "result": "Primates (macaques and mouse lemurs) can perform texture-invariant segmentation using opponent motion cues, unlike mice and treeshrews. Macaques performed >90% on all conditions within the first session and generalized to unseen patterns. Mouse lemurs also generalized across all conditions. Both primate species showed dramatic performance drops when motion was removed from Nat stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C31, C36, C41-C42, C71-C72 provide consistent cross-species behavioral evidence. The primate generalization success, rapid learning, and motion-dependence (p<10^-13 for monkeys on static Nat) strongly support texture-invariant segmentation capabilities in primates but not in mice/treeshrews.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C47",
+      "C48"
+    ],
+    "result": "Treeshrews, despite having 10-fold better visual acuity than mice, showed similar segmentation limitations, failing to generalize in the Nat condition. Critically, treeshrews and mouse lemurs have identical visual acuity (0.5 cpd), yet only mouse lemurs could perform the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C47-C48 provide critical control evidence ruling out visual acuity as the limiting factor. The comparison between treeshrews and mouse lemurs with identical acuity but different performance is particularly compelling evidence that the difference is computational rather than sensory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Multiple lines of evidence demonstrate that mice could perceive the spatial frequencies and motion in the Nat stimulus. 23-52% of stimulus energy was below mouse peak contrast sensitivity, mice learned to distinguish Nat patterns after training, and mice learned a modified Nat task with static background much faster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide converging evidence addressing the visual acuity concern. The quantitative analysis of spatial frequencies, successful learning after training, and faster learning with static background collectively demonstrate that perceptual limitations do not explain the segmentation deficit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Neural responses in mouse visual areas V1, LM, and RL showed no texture-invariant figure-ground or border-ownership signals. No neurons showed high correspondence across all six stimulus conditions. Mean Pearson correlations between figure maps across conditions were near zero (V1: 0.032, LM: 0.034, RL: 0.015). FGM and BOM indices were centered near zero with no neurons showing significant modulation across more than three conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52-C57 provide comprehensive neural evidence from electrophysiology across three visual areas. The quantitative analyses of figure map correlations, FGM indices, and BOM indices with appropriate statistical tests strongly support the absence of texture-invariant segmentation signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Time course analysis revealed clear figure/border enhancement for Cross condition starting at the earliest response time, but much smaller differences for Iso and Nat conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by population time course data in Figure 5i-k showing texture-dependent temporal dynamics of figure-ground signals, consistent with the overall pattern of texture dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Neural decoding of figure position from population responses mirrored behavioral performance with Cross > Iso > Nat ranking. Using 200 cells, decoding performance was r\u00b2=0.89 for Cross, r\u00b2=0.53 for Iso, and r\u00b2=0.09 for Nat. LM showed best decoding, followed by V1 and RL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 demonstrate strong correspondence between neural population codes and behavior. The quantitative decoding analyses with cross-validation and statistical comparisons across areas (p<10^-4) provide robust evidence linking neural representations to behavioral capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Computational modeling revealed that mouse behavior and neural responses could be explained by feedforward networks lacking explicit segmentation. A simple LN model decoded Cross but not Iso/Nat. Adding surround suppression did not improve Iso/Nat decoding. However, a deep convolutional network (VGG16) replicated the Cross > Iso > Nat ranking in mid-to-late layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C63-C66 provide systematic modeling evidence. The progression from simple LN model to surround model to deep network, with quantitative decoding performance matching neural and behavioral data, supports the conclusion that feedforward nonlinear processing without explicit segmentation can account for mouse performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C84"
+    ],
+    "result": "The study reveals fundamental differences in visual segmentation strategies between mice/treeshrews and primates. Mice are unable to detect figures defined purely by opponent motion and lack texture-invariant segmentation mechanisms, relying instead on texture-dependent cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C73, C84 represent well-supported summary conclusions integrating behavioral, neural, and modeling evidence. The convergence of multiple experimental approaches and cross-species comparisons strongly supports this fundamental distinction in segmentation strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C92"
+    ],
+    "result": "The authors speculate that surface perception from accretion-deletion may be unique to primates and that this capability may represent a key computational mechanism for self-supervised learning of physical world models that is unique to primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C92 are explicitly speculative conclusions that extend beyond the data. While the data support differences between the tested species, the claim of primate uniqueness requires testing additional species. The speculation about self-supervised learning and evolutionary significance, while interesting, lacks direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Previous work has shown that figure-ground signals exist in mouse visual cortex and are texture-dependent, behaviorally relevant, require feedback, and can support texture-based segmentation through orientation-dependent surround modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 accurately summarize prior literature with appropriate citations. The authors correctly contextualize their findings within existing knowledge about mouse visual cortex, distinguishing texture-based from texture-invariant segmentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Despite retinal object-motion cells being reported in mice, these cells cannot detect counterphase motion used in the experiments. Mice could readily detect moving figures against stationary backgrounds, indicating the deficit is specific to opponent motion segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 address an important alternative explanation with appropriate citations and control experiments. The demonstration that mice can detect motion against static backgrounds (Figure 2\u2014supplement 2c) while failing with counterphase motion provides important mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Deep networks, like mice, fail to exploit global features such as object boundaries and rely more on texture features. The authors suggest mice may adopt a visual strategy more similar to deep networks than primates, though this requires further circuit dissection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 are supported by appropriate citations about deep network limitations. However, C90 is speculative\u2014while the modeling shows similarity in performance patterns, claiming mice use similar computational strategies requires more direct evidence about underlying mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Two-photon imaging revealed that figure maps of neurons were highly stable across multiple days with mean correlation of 0.5579 for matched cell pairs versus 0.2054 for unmatched pairs (p=1e-163).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by imaging data with robust statistics (Figure 3g, N=950 cell pairs). This demonstrates the reliability of the neural measurements and validates the cell-matching procedure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The Cross stimulus fails as a behavioral marker for nonlinear figure-ground segmentation because simple feedforward models can decode figure position using edge discontinuities without explicit segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by the modeling results showing that a simple LN model can decode Cross stimuli (Figure 7b) and is consistent with cited work (Vinken and Op de Beeck, 2021). This is an important methodological insight for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14"
+    ],
+    "result": "The rodent visual system has attracted interest due to experimental tractability, but fundamental mechanisms of visual representation remain unclear, particularly regarding abstract representations of objects and scenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14 accurately represent the state of the field and motivation for the study. These are well-established background claims supported by general knowledge and the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C27",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In primates, figure-ground segmentation is a key step in visual processing. The primate visual system generates surface representations using multiple cues, with accretion-deletion being particularly important due to its reliability, texture-invariance, and computational power. Neural correlates include figure-ground modulation and border-ownership cells in V2 and V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C22, C27, C75-C78 accurately summarize established knowledge about primate vision with appropriate citations to seminal work (Gibson, Nakayama, Lamme, Zhou, etc.). These provide essential background for interpreting the comparative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Previous studies showed mice are capable of texture-based segmentation with orientation/phase differences, and mouse V1 shows iso-orientation surround suppression and figure-ground modulation. However, these studies used texture-based cues that are fundamentally ambiguous for segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 accurately review prior mouse vision literature with appropriate citations and provide important critical context distinguishing texture-based from motion-based segmentation cues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study used adult mice (2-12 months), treeshrews (7-18 months), mouse lemurs (2-3.5 years), and macaques (3 and 7 years), with appropriate sex distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are straightforward methodological details that are clearly stated and appropriate for the experiments conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Visual acuity varies across species by two orders of magnitude: macaque fovea (5 cpd), mouse lemur (0.5 cpd), treeshrew (0.5 cpd), and mouse (0.05 cpd).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 cite appropriate literature for visual acuity measurements across species. These values are critical for interpreting the behavioral differences and ruling out acuity as an explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Mice use visual cues for hunting, evasion, and navigation. Mouse visual cortex shares low-level organizing principles with primate cortex including frequency tuning, orientation selectivity, and surround effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 accurately summarize established knowledge about mouse vision with appropriate citations, providing context for the study's focus on higher-level segmentation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The authors suggest the mouse visual system may use similar nonlinear interactions as feedforward deep networks to accomplish object detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is explicitly speculative. While the modeling shows similar performance patterns between mouse neural responses and deep networks, this does not establish that the underlying mechanisms are similar. The claim requires more direct evidence about circuit mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The finding that mice cannot detect figures defined by opponent motion is consistent with a previous rat study showing inability to detect bars defined by counterphase Gabor patches, though that stimulus lacked accretion-deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 appropriately cites consistent prior work (De Keyser et al., 2015) while noting an important difference in stimuli. This strengthens the interpretation by showing consistency across rodent species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Accretion-deletion can enable texture-invariant segmentation and tracking without learning, providing training examples for self-supervised learning of other cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by appropriate citations (Tsao and Tsao, 2022; Chen et al., 2022) and provides theoretical context for the significance of accretion-deletion capabilities.",
+    "result_type": "MINOR"
+  }
+]

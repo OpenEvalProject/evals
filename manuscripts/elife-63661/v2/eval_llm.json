@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "A kinetic model of E. coli metabolism was constructed with three processes (glycolysis, TCA cycle, and acetate metabolism). The model required inhibition of both glycolysis and TCA cycle by acetate to fit experimental data from 13C-labeling experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 describe model construction and systematic testing of different model topologies. The experimental data (152 data points from 13C-labeling experiments) and goodness-of-fit analysis using \u03c7\u00b2 tests provide strong support that dual inhibition (model 4) is necessary to explain the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The model modifications suggest an unknown regulatory program making E. coli sensitive to acetate concentration and provide a mechanistic rationale for acetate toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are inferences from the modeling results (C18-C21) supported by citations to prior work on acetate toxicity. The requirement for dual inhibition in the model to fit data provides evidence for this regulatory program, though the molecular mechanisms remain to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Transcriptomic analysis revealed that acetate progressively remodels gene expression across multiple biological functions. Specifically, acetate reduces expression of glucose PTS genes and most glycolytic and TCA cycle genes, while expression of acetate pathway genes (pta, ackA) remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C36 are supported by transcriptomic data from four biological replicates at multiple acetate concentrations (Figure 2). The control experiment comparing expression at matched growth rates (C26) strengthens the conclusion that changes are acetate-specific rather than growth-rate effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Acetate modulates the flux capacity of E. coli to produce and utilize acetyl-CoA but does not influence the flux capacity of the acetate pathway itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are conclusions drawn from the transcriptomic data (C27-C36) showing reduced expression of glycolytic and TCA genes but stable expression of pta and ackA. This is consistent with the model structure requiring inhibition of glycolysis and TCA but not the acetate pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The kinetic model accurately predicts steady-state and dynamic responses of E. coli to various perturbations including glucose-limited chemostat cultures, increased acetate concentrations, and acetate pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe model validation using 170 independent experimental data points not used for training. The agreement between predictions and measurements across multiple experimental conditions (Figure 3) provides strong validation of the model's predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Model 4 with dual inhibition provides the most accurate predictions for all perturbations, and the regulatory role of acetate is functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by quantitative comparison of variance-weighted sum of squared residuals across all four model versions (Figure 3\u2014figure supplement 4). Model 4 consistently outperforms models 1-3, demonstrating the functional importance of acetate regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Metabolic control analysis revealed that acetate flux control is distributed around the acetyl-CoA node, with similar contributions from the acetate pathway (0.76), glycolysis (0.88), and TCA cycle (-0.64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by metabolic control analysis calculations from the validated model (Figure 4). The flux control coefficients quantitatively demonstrate distributed control, contrary to the hypothesis that control resides entirely within the acetate pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Intracellular flux control patterns shift with acetate concentration, with control progressively transferring from the acetate pathway to glycolysis and TCA cycle as acetate concentration increases. This shift emerges specifically from dual inhibition by acetate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by metabolic control analysis across acetate concentrations (Figure 5). The comparison with alternative models (Figure 5\u2014figure supplements 1-3) demonstrates that the progressive control shift requires dual inhibition, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Two distinct regulatory modes exist depending on acetate concentration: at low concentrations (<10 mM), direct regulation via the acetate pathway dominates (50-60%); above 10 mM, direct and indirect regulation contribute more equally (40% acetate pathway, 20% glycolysis, 40% TCA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by partitioned response coefficient analysis (Figure 6E) quantifying the relative contributions of different regulatory routes. The threshold at ~10 mM corresponds to the acetate flux reversal point, providing mechanistic consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The kinetic model links acetate metabolism with glucose uptake and growth, suggesting a global regulatory program where acetate determines flux capacity of glycolytic and TCA pathways. This inhibition was necessary and sufficient to predict E. coli responses, and was confirmed by transcriptomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 synthesize the main findings from modeling (C18-C21, C39-C46) and transcriptomics (C24-C38). The convergence of computational and experimental evidence provides strong support for the existence of this regulatory program.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The metabolic response to acetate involves global reorganization from transcriptional to flux levels, which is an efficient way to adjust fluxes while maintaining metabolite homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by the combined modeling and transcriptomic results. Claim C65 is supported by citations to foundational metabolic control theory. The integration of these findings provides a mechanistic understanding of the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The coordinated regulation of glycolytic and TCA pathways cannot be explained by known transcriptional regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is an inference that lacks supporting analysis. The manuscript does not present systematic analysis of known transcriptional regulators or their binding sites in the regulated genes. This claim requires additional computational or experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Transcriptional regulation occurs in minutes and explains most observations, but the immediate response to acetate pulses suggests additional faster regulatory mechanisms at post-transcriptional, post-translational, or metabolic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by citations and consistency with model predictions. Claim C69 is supported by the rapid glucose uptake response in Figure 3C. Claims C70-C72 are reasonable speculation supported by relevant citations, though they require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The direction of acetate flux is thermodynamically controlled by extracellular acetate concentration. Intracellular control is distributed around the acetyl-CoA node, and inhibition by acetate creates unusual control properties where the control pattern itself is determined by acetate concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are conclusions from the metabolic control analysis (C47-C55). The thermodynamic control is consistent with prior work (C12-C13), and the distributed control with concentration-dependent patterns is a novel finding supported by the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Metabolic engineering interventions to minimize acetate production should rebalance flux capacity of both glycolytic and TCA pathways while accounting for concentration-dependent control patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a practical implication logically derived from the control analysis results (C47-C55, C73-C76). While speculative regarding specific interventions, it is a reasonable application of the findings to biotechnology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The regulatory scheme involves direct metabolic regulation of the acetate pathway combined with indirect regulation of glycolytic and TCA pathways. This explains diverse acetate flux patterns and determines acetate's metabolic status as co-substrate or by-product.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 synthesize findings from response coefficient analysis (C57-C59) and transcriptomics (C24-C38). The equal contribution of direct and indirect mechanisms and the concentration-dependent regulatory modes provide mechanistic explanation for observed flux patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Acetate should not be considered a wasteful end-product but rather a co-substrate and global regulator that induces widespread remodeling of E. coli physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are major conclusions supported by the demonstration of flux reversal (C8, C41), co-consumption (C9), and widespread transcriptional changes (C24-C25). This challenges the traditional view of acetate as merely a waste product.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In the intestine, acetate concentrations (30-100 mM) are above the ~10 mM flux reversal threshold, which should favor acetate co-utilization with sugars, suggesting acetogenic species may be important nutrient sources for E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by citations. Claims C84-C85 are logical inferences comparing intestinal levels to the experimentally determined threshold. Claim C86 is reasonable speculation based on these inferences, though it requires experimental validation in the intestinal environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Similar co-consumption of overflow metabolites with glucose occurs in other organisms (S. cerevisiae with ethanol, mammalian cells with lactate), suggesting overflow metabolism is a reversible process and pointing to a universal phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by citations. Claims C89-C90 are reasonable inferences from these similarities, though the claim of universality is speculative and would require systematic investigation across diverse organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Overflow metabolism is ubiquitous across organisms and has been explained by stoichiometric models invoking various cell-level constraints that successfully predict growth-rate dependence of acetate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish background knowledge supported by appropriate citations. These claims accurately represent the state of the field and provide context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Existing theories cannot explain why acetate flux can reverse at high concentrations, E. coli can co-consume glucose and acetate, and growth is unaffected when acetate production is abolished. Previous kinetic modeling showed thermodynamic control by acetate concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 identify gaps in existing theories and prior kinetic modeling work, all supported by appropriate citations. These claims establish the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Experimental and modeling methods are described including growth conditions, biomass conversion factors, biological replicates, model structure, and parameter sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 describe methodological details supported by citations where appropriate. These are standard methods adequately described for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

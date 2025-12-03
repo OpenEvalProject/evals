@@ -1,0 +1,792 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Synapses in the brain are subject to significant modulation that occurs at faster timescales than long-timescale rewiring.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to long-timescale rewiring, synapses in the brain are subject to significant modulation that occurs at faster timescales that endow the brain with additional means of processing information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as a foundational premise of the work, drawing on established neuroscience knowledge about synaptic plasticity.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Recurrent neural networks (RNNs) often have their weights frozen after training, relying on an internal state stored in neuronal activity to hold task-relevant information.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this, models of the brain like recurrent neural networks (RNNs) often have their weights frozen after training, relying on an internal state stored in neuronal activity to hold task-relevant information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement about the typical operation of RNNs in the abstract, based on knowledge of how RNNs are commonly used.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The multi-plasticity network (MPN) relies solely on synapse modulation during inference to process task-relevant information.",
+    "claim_type": "EXPLICIT",
+    "source": "In this work, we study the computational potential and resulting dynamics of a network that relies solely on synapse modulation during inference to process task-relevant information, the multi-plasticity network (MPN).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement in the abstract describing the key feature of the MPN architecture studied in this work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The MPN has no recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the MPN has no recurrent connections, this allows us to study the computational capabilities and dynamical behavior contributed by synapses modulations alone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explicitly stated in the abstract as a design feature of the MPN.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The MPN and RNN have fundamentally different attractor structure.",
+    "claim_type": "EXPLICIT",
+    "source": "We thoroughly examine the neural population dynamics of the MPN trained on integration-based tasks and compare it to known RNN dynamics, finding the two to have fundamentally different attractor structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key finding stated in the abstract and supported by the dynamical analysis presented throughout the paper.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Differences in dynamics allow the MPN to outperform its RNN counterparts on several neuroscience-relevant tests.",
+    "claim_type": "EXPLICIT",
+    "source": "We find said differences in dynamics allow the MPN to outperform its RNN counterparts on several neuroscience-relevant tests.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and supported by performance comparisons shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The MPN's computational capabilities are comparable to networks that compute with recurrent connections across a battery of neuroscience tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Training the MPN across a battery of neuroscience tasks, we find its computational capabilities in such settings is comparable to networks that compute with recurrent connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and supported by the NeuroGym task results shown in Figure 7j.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Synaptic rewiring can be as fast as minutes to hours.",
+    "claim_type": "EXPLICIT",
+    "source": "Such mechanisms include synaptic rewiring, which modifies the topology of connections between neurons in our brain and can be as fast as minutes to hours.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and represents established knowledge about synaptic plasticity timescales.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Synaptic rewiring is assumed to be the basis of long-term memory that can last a lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "Rewiring is assumed to be the basis of long-term memory that can last a lifetime (Bailey and Kandel, 1993).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Bailey and Kandel, 1993.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Short-term synaptic plasticity (STSP) can affect synaptic strength on timescales less than a second.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, short-term synaptic plasticity (STSP) can affect synaptic strength on timescales less than a second, with such effects mainly presynaptic-dependent (Stevens and Wang, 1995; Tsodyks and Markram, 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Stevens and Wang, 1995 and Tsodyks and Markram, 1997.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Long-term potentiation (LTP) can have effects over minutes to hours or longer.",
+    "claim_type": "EXPLICIT",
+    "source": "At slower timescales, long-term potentiation (LTP) can have effects over minutes to hours or longer, with the early phase being dependent on local signals and the late phase including a more complex dependence on protein synthesis (Baltaci et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Baltaci et al., 2019.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Spike-time-dependent plasticity (STDP) adjusts the strengths of connections based on the relative timing of pre- and postsynaptic spikes.",
+    "claim_type": "EXPLICIT",
+    "source": "Also on the slower end, spike-time-dependent plasticity (STDP) adjusts the strengths of connections based on the relative timing of pre- and postsynaptic spikes (Markram et al., 1997; Bi and Poo, 1998; McFarlan et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Markram et al., 1997; Bi and Poo, 1998; McFarlan et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The MPN learns using two complementary plasticity mechanisms: long-term synaptic rewiring via standard supervised ANN training and simple synaptic modulations that operate at faster timescales.",
+    "claim_type": "EXPLICIT",
+    "source": "The multi-plasticity network (MPN) learns using two complementary plasticity mechanisms: (1) long-term synaptic rewiring via standard supervised ANN training and (2) simple synaptic modulations that operate at faster timescales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of the MPN architecture in the introduction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The modulations in the MPN represent a general synapse-specific change of strength on shorter timescales than the structural changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Biologically, the modulations in the MPN represent a general synapse-specific change of strength on shorter timescales than the structural changes, the latter of which are represented by weight adjustment via backpropagation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as the biological interpretation of the MPN's modulation mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The first modulation rule is primarily envisioned as coming from associative forms of plasticity that depend on both pre- and postsynaptic neuron activity.",
+    "claim_type": "EXPLICIT",
+    "source": "The first of these rules is primarily envisioned as coming from associative forms of plasticity that depend on both pre- and postsynaptic neuron activity (Markram et al., 1997; Bi and Poo, 1998; McFarlan et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and supported by citations to Markram et al., 1997; Bi and Poo, 1998; McFarlan et al., 2023.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The second type of modulation models presynaptic-dependent STSP.",
+    "claim_type": "EXPLICIT",
+    "source": "Meanwhile, the second type of modulation models presynaptic-dependent STSP (Mongillo et al., 2008; Zucker and Regehr, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and supported by citations to Mongillo et al., 2008 and Zucker and Regehr, 2002.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "RNNs store temporal, task-relevant information in transient internal neural activity using recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "RNNs store temporal, task-relevant information in transient internal neural activity using recurrent connections and have found widespread success in modeling parts of our brain (Cannon et al., 1983; Ben-Yishai et al., 1995; Seung, 1996; Zhang, 1996; Ermentrout, 1998; Stringer et al., 2002; Xie et al., 2002; Fuhs and Touretzky, 2006; Burak and Fiete, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "There is a striking universality of the underlying computational scaffold across different types of RNNs and tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Such studies have revealed a striking universality of the underlying computational scaffold across different types of RNNs and tasks (Maheswaranathan et al., 2019b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction and supported by citation to Maheswaranathan et al., 2019b.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The MPN computes using completely different dynamics than its RNN counterparts.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a novel approach of analyzing the synapse population behavior, we find the MPN computes using completely different dynamics than its RNN counterparts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the introduction as a key finding and is supported by the dynamical analysis throughout the paper.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The MPN is capable of learning the two-class integration task to near perfect accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "We find the MPN (and MPNpre) is capable of learning the above integration task to near perfect accuracy across a wide range of class counts, sequence lengths, and delay lengths.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by accuracy data shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "RNNs develop attractor dynamics to solve integration-based tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Several studies, both on natural and artificial neural networks, have discovered that networks with recurrent connections develop attractor dynamics to solve integration-based tasks (Maheswaranathan et al., 2019a; Maheswaranathan and Sussillo, 2020; Aitken et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by citations to Maheswaranathan et al., 2019a; Maheswaranathan and Sussillo, 2020; Aitken et al., 2020.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The hidden neuron activity of the MPN is largely dependent upon the most recent input to the network, rather than the accumulated evidence.",
+    "claim_type": "EXPLICIT",
+    "source": "That is, the hidden neuron activity is largely dependent upon the most recent input to the network, rather than the accumulated evidence as we saw for the RNN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 3f showing input-dependent clustering.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The readout vectors in the MPN are highly aligned with the evidence variation within the go cluster.",
+    "claim_type": "EXPLICIT",
+    "source": "Amongst all input-clusters, we find the readout vectors are highly aligned with the evidence variation within the go cluster (Figure 3f, inset).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 3f inset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The accuracy of the MPN does not decrease significantly with longer sequence lengths despite state saturation.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this saturation of state size, the accuracy of the MPN does not decrease significantly with longer sequence lengths (Figure 4d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 4d showing accuracy vs sequence length.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The MPN and RNNs are capable of generalizing to both shorter and longer sequence lengths, despite being trained at a fixed sequence length.",
+    "claim_type": "EXPLICIT",
+    "source": "These results also demonstrate the MPN (and RNNs) are capable of generalizing to both shorter and longer sequence lengths, despite being trained at a fixed sequence length.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by the data in Figure 4c and d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "A uniform decay across all elements of the MPN state maintains their relative size and does not decrease the MPN's accuracy for shorter delay lengths.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the evidence is stored in the magnitude of certain components of the SM matrix, a uniform decay across all elements maintains their relative size and does not decrease the MPN's accuracy for shorter delay lengths (Figure 4h).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 4h showing accuracy vs delay length.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "At the start of the delay period, a few of the MPN's hidden neuron activities quickly drop in magnitude, before spiking back up after receiving the go signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, at the start of the delay period, we see a few of the MPN's hidden neuron activities quickly drops in magnitude, before spiking back up after receiving the go signal (Figure 5a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 5a showing sample neuron activity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "At the onset of the delay, the RNN's hidden layer neurons quickly approach finite asymptotic values that remain fairly persistent throughout the delay period.",
+    "claim_type": "EXPLICIT",
+    "source": "Meanwhile, at the onset of the delay, the RNN's hidden layer neurons quickly approach finite asymptotic values that remain fairly persistent throughout the delay period (although see Orhan and Ma, 2019 for factors that can affect this result).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section with a citation to Orhan and Ma, 2019 for additional context.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Reduced activity during delay periods has been observed in working memory experiments and models and is sometimes referred to as 'activity-silent' storage of information.",
+    "claim_type": "EXPLICIT",
+    "source": "Reduced activity during delay periods has been observed in working memory experiments and models and is sometimes referred to as an 'activity-silent' storage of information (Barak et al., 2010; Stokes, 2015; Lundqvist et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by citations to Barak et al., 2010; Stokes, 2015; Lundqvist et al., 2018.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Persistent activity exhibited by RNNs has been argued to be more metabolically expensive than activity-silent storage.",
+    "claim_type": "EXPLICIT",
+    "source": "It contrasts with the 'persistent activity' exhibited by RNNs that has been argued to be more metabolically expensive (Attwell and Laughlin, 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by citation to Attwell and Laughlin, 2001.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The MPN's decoding accuracy drops to almost chance levels at the onset of the delay period before jumping back to near-perfect accuracy after the go signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Confirming that the MPN has significant variability during its stimulus and delay periods, we see the MPN's decoding accuracy drops to almost chance levels at the onset of the delay period before jumping back to near-perfect accuracy after the go signal (Figure 5b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 5b showing decoding accuracy over time.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The RNN's hidden neuron activity leads to a steady decoding accuracy throughout the entire delay period.",
+    "claim_type": "EXPLICIT",
+    "source": "Meanwhile, the RNN's hidden neuron activity leads to a steady decoding accuracy throughout the entire delay period, since the RNN's state just snaps to the nearby attractor, the position along which encodes the accumulated evidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 5b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Both the MPN and RNNs are capable of achieving near-perfect accuracy on the two-class task up to when noise is a comparable magnitude to the signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Even for networks trained with a relatively small amount of noise, we find both the MPN and RNNs are capable of achieving near-perfect accuracy on the two-class task up to when noise is a comparable magnitude to the signal (Figure 6c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 6c showing accuracy vs signal-to-noise ratio.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The RNNs maintain higher accuracy than the MPN for a slightly smaller ratio of signal to noise magnitude.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the RNNs maintain higher accuracy for a slightly smaller ratio of signal to noise magnitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and can be observed in Figure 6c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "RNN operation close to attractor manifolds is known to be robust to perturbations such as noisy inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "This might be expected given the RNN's operation close to attractor manifolds, which are known to be robust to perturbations such as noisy inputs (Vyas et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and supported by citation to Vyas et al., 2020.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The MPN consistently outperforms both RNNs in the echo-state setup where only the readout matrix is trained.",
+    "claim_type": "EXPLICIT",
+    "source": "For two different layer sizes, we find all networks are capable of training in this setup, but the MPN consistently outperforms both RNNs (Figure 6d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 6d showing accuracy with frozen weights.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The MPN loses significantly less accuracy than the GRU when trained on a new task in a sequential learning setting.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that the MPN loses significantly less accuracy than the GRU when trained on the new task (Figure 6e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 6e showing pre- and post-training accuracy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The MPN has a task-agnostic attractor structure that does not change in the presence of new data.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the MPN has a task-agnostic attractor structure, it does not change in the presence of new data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section as an explanation for the MPN's better performance in sequential learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "For the RNN, novel inputs do not cause the state to deviate far from the attractor.",
+    "claim_type": "EXPLICIT",
+    "source": "For the RNN, the novel inputs to the network do not cause the state to deviate far from the attractor (Figure 6f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 6f showing RNN state with novel class.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "For the MPN, new inputs have no problem deflecting the SM matrix in a distinct direction from previous inputs due to minimal attractor structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Meanwhile for the MPN, the minimal attractor structure means new inputs have no problem deflecting the SM matrix in a distinct direction from previous inputs (Figure 6g).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 6g showing MPN state with novel class.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Both the MPN and GRU are easily able to learn to solve the retrospective contextual integration task.",
+    "claim_type": "EXPLICIT",
+    "source": "We find both the MPN and GRU are easily able to learn to solve this task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section regarding the true-anti contextual integration task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The MPN achieves an average accuracy of 98.4% on the retrospective contextual integration task.",
+    "claim_type": "EXPLICIT",
+    "source": "We find the MPN is easily capable of learning this task and again achieves near-perfect accuracy, on average 98.4%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result stated in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "When context is passed to the MPN in the retrospective task, its state space becomes increasingly separated into two clusters corresponding to the two possible contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "When the context is finally passed to the network, we see its state space becomes increasingly separated into two clusters that correspond to whether the context is asking to report the label from subtask 1 or 2 (Figure 7c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 7c showing Mt during context period.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "As soon as contextual input is passed in the retrospective task, the readout difference for the irrelevant subtask immediately plummets while that of the relevant subtask increases.",
+    "claim_type": "EXPLICIT",
+    "source": "As soon as the contextual input is passed, the readout difference for the subtask that is now irrelevant (the one that doesn't match the context, dotted line) immediately plummets, while that of the relevant subtask (the one that matches the context, solid line) increases (Figure 7d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 7d showing readout difference over time.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The MPN is capable of achieving near perfect accuracy on the continuous integration task.",
+    "claim_type": "EXPLICIT",
+    "source": "The MPN is once again able to achieve near perfect accuracy on this task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section regarding the continuous integration task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Across all 19 NeuroGym tasks investigated, the MPN performs at levels comparable to the GRU and VanillaRNN.",
+    "claim_type": "EXPLICIT",
+    "source": "Across all 19 tasks we investigate, we find that the MPN performs at levels comparable to the GRU and VanillaRNN (Figure 7j).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Figure 7j showing accuracy across tasks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Despite its simplified modulation mechanism, the MPNpre achieves comparable performance to the MPN on the majority of NeuroGym tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite its simplified modulation mechanism, the MPNpre also achieves comparable performance on the majority of tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Results section and can be observed in Figure 7j.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The MPN and MPNpre have significantly fewer parameters than their RNN counterparts when networks have the same number of input, hidden, and output neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Since we compare networks with the same number of input, hidden, and output neurons, we again note that the MPN and MPNpre have significantly fewer parameters than their RNN counterparts (see Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Results section and supported by Table 1 showing parameter counts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The dynamics of the hidden neurons in the MPN primarily track the present input to the network, and only at subleading-order do they encode accumulated evidence.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike an RNN, we have found the dynamics of the hidden neurons in the MPN primarily track the present input to the network, and only at subleading-order do we see them encode accumulated evidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The MPN's state decays slowly and uniformly, maintaining the relative encoding of information.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite its simplistic attractor structure, the MPN can still hold accumulated evidence over time since its state decays slowly and uniformly, maintaining the relative encoding of information (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the Discussion and supported by Figure 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The exception to comparable performance was noise robustness, where the RNNs' attractor structure allows them to outperform the MPN in a relatively small window of signal to noise ratio.",
+    "claim_type": "EXPLICIT",
+    "source": "The exception to this was noise robustness, where the RNNs' attractor structure allows them to outperform the MPN in a relatively small window of signal to noise ratio.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of findings from Figure 6c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The MPN's integration dynamics that rely on its minimal attractor structure allowed it to outperform RNNs in both minimal training and sequential-learning settings.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the MPN's integration dynamics that rely on its minimal attractor structure allowed it to outperform RNNs in both minimal training and sequential-learning settings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a summary of findings from Figure 6d and 6e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The MPNpre's presynaptic activity dependent modulations can be mapped to STSP, which is largely dependent on availability and probability of release of transmitter vesicles.",
+    "claim_type": "EXPLICIT",
+    "source": "The MPNpre's presynaptic activity dependent modulations can be mapped to STSP, which is largely dependent on availability and probability of release of transmitter vesicles (Tsodyks and Markram, 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion and supported by citation to Tsodyks and Markram, 1997.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The associative modulations and backpropagation present in MPN could model the distinct plasticity mechanisms underlying early and late phases of LTP/LTD.",
+    "claim_type": "EXPLICIT",
+    "source": "As an example, the associative modulations and backpropagation present in MPN could model the distinct plasticity mechanisms underlying early and late phases of LTP/LTD (Baltaci et al., 2019; Becker and Tetzlaff, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion as a hypothetical mechanistic implementation and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "CaMKII is necessary and sufficient for early LTP induction.",
+    "claim_type": "EXPLICIT",
+    "source": "CaMKII is necessary and sufficient for early LTP induction (Silva et al., 1992; Pettit et al., 1994; Lledo et al., 1995) and is known to be activated by Ca2+ influx via N-methyl-D-aspartate receptors (NMDAR), which open primarily when the pre- and postsynaptic neurons activate in quick succession (Herring and Nicoll, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion and supported by citations to Silva et al., 1992; Pettit et al., 1994; Lledo et al., 1995; Herring and Nicoll, 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "AMPA receptor insertions in synapses occur within 2 min resulting in changes in postsynaptic currents.",
+    "claim_type": "EXPLICIT",
+    "source": "This results in insertions of AMPA receptors in the synapses within 2 min resulting in changes in postsynaptic currents (Patterson et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion and supported by citation to Patterson et al., 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Fast transitions in early LTP that occur on scales of minutes can stabilize and have been observed to decay back to baseline within a few hours.",
+    "claim_type": "EXPLICIT",
+    "source": "These fast transitions that occur on scales of minutes can stabilize and have been observed to decay back to baseline within a few hours (Becker and Tetzlaff, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Discussion and supported by citation to Becker and Tetzlaff, 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "STDP that potentiates synapses up to ~200% of their original values and depresses by up to ~30% at timescales of 10s of minutes has been seen in a wide variety of studies in various parts of the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Biologically, STDP that potentiates synapses up to \u223c200% of their original values and depresses by up to \u223c30% at timescales of 10s of minutes has been seen in a wide variety of studies in various parts of the brain (Sj\u00f6str\u00f6m and H\u00e4usser, 2006; McFarlan et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Methods section and supported by citations to Sj\u00f6str\u00f6m and H\u00e4usser, 2006 and McFarlan et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "STSP has been shown to facilitate to a similar relative magnitude as STDP potentiation, and seems to be capable of almost complete depression.",
+    "claim_type": "EXPLICIT",
+    "source": "Over shorter timescales, STSP has been shown to facilitate to a similar relative magnitude, and seems to be capable of almost complete depression (Campagnola et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the Methods section and supported by citation to Campagnola et al., 2022.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  }
+]

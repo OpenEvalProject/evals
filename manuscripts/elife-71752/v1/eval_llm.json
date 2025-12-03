@@ -1,0 +1,153 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C63",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors performed single-nucleus RNA sequencing on human L4/L5 DRG from 5 donors (1 male, 4 female, ages 34-55), isolating 1837 neuronal nuclei using NeuN antibody enrichment. Clustering analysis identified approximately a dozen distinct transcriptomic classes of human somatosensory neurons, well-separated from non-neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with appropriate sample sizes, quality control metrics (mean 2839 genes/nucleus, doublet detection), and standard bioinformatic pipelines (Seurat V3, sctransform normalization). The clustering is supported by multiple figures and appears robust across different parameter choices (Figure 1\u2014figure supplement 3). However, the study acknowledges limitations in sequencing depth compared to mouse studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C35",
+      "C38"
+    ],
+    "result": "Multiple human DRG neuron types show conserved transcriptomic features with mouse counterparts, including peptidergic nociceptors (H1-H3, H6), proprioceptors (H15), A\u03b2 neurons (H14), A\u03b4-LTMRs (H13), and cool-sensing neurons (H8). These express characteristic markers like TAC1, CALCA, NTRK1, TRPV1, TRPA1 for nociceptors; PVALB, ETV1, SCN1A/B for proprioceptors; and TRPM8 for cool sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of conserved cell types is well-supported by gene expression patterns (C7-C8, C11-C12), co-clustering analysis (C35), and KL divergence quantification (C38). The expression of functionally important markers is consistent with known mouse biology and validated by ISH. However, the functional assignments remain inferential based on marker expression rather than direct physiological testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C37",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Despite overall similarity, human and mouse DRG neurons show substantial differences in gene expression patterns. NEFH shows graded rather than uniform expression in humans (C9), contradicting previous studies. H8 cool-sensing neurons are NTRK2+ but TAC1- in humans versus the opposite in mice (C13). Genes like TMEM100 and S1PR3 show minimal expression in humans despite functional importance in mice (C14-C15). Peptidergic nociceptors separate in co-clustering despite similar marker expression (C37), and TRPV1 is broadly expressed in human nonpeptidergic neurons unlike in mice (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The species differences are well-documented through direct comparison of expression patterns in parallel analyses of human and mouse data. The claims are supported by multiple lines of evidence including UMAPs, dot plots, and co-clustering results. The contradiction with previous NEFH studies (C9) is appropriately cited and explained by the higher resolution of snRNA-seq. The functional implications remain speculative but the transcriptomic differences are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C36",
+      "C39",
+      "C60",
+      "C61"
+    ],
+    "result": "Several human neuronal populations lack clear mouse equivalents. H5 neurons express TRPA1 but are CALCA-/NTRK1- and NTRK2+ (C16-C17). H9 neurons uniquely co-express TRPM8 with PIEZO2 and SCN10A (C18), unlike mouse cool sensors (C19), and correlate with human neurons responding to both cooling and touch (C20-C22). H12 neurons express NTRK3/SCN1A with moderate PIEZO2, suggesting a mechanosensor type absent in mice (C23-C24). H4 represents c-nociceptors without clear mouse counterparts (C25). Humans lack a clear transcriptomic correlate to mouse cLTMRs (C39, C60), though H10 neurons may serve similar functions (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The identification of human-specific populations is based on co-clustering analysis and KL divergence showing poor matches to mouse cell types. However, the functional interpretations are largely speculative. The correlation with physiological data (C20) is cited but not directly tested. The suggestion that H10 may represent cLTMR equivalents (C61) is explicitly stated as speculation. The macaque data (C21) and engineered neuron comparison (C22) provide some cross-validation but differences are noted. Without functional validation, these remain candidate human-specific populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C62"
+    ],
+    "result": "H10 and H11 represent ~20% of human DRG neurons and express itch-related genes (IL31RA, OSMR, HRH1, NPPB) along with nociceptive markers (SCN10A, SCN11A, TRPV1) but lack NEFH and TAC1 (C26-C27). They are putative nonpeptidergic nociceptors with pruriceptive potential (C28). H11 strongly expresses JAK1 and SST, matching mouse NP3 markers (C49-C50). H10 expresses MRGPRX1 and high PIEZO2 (C48, C51), potentially mediating mechanical itch (C52). These populations contrast with the four mouse nonpeptidergic types (NP1-3, cLTMRs) that comprise 40% of mouse DRG (C29-C32). ISH reveals heterogeneity within H10/H11, suggesting they may not be as functionally distinct as clustering implies (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of H10/H11 is well-supported by transcriptomic data (C26-C27, C47-C51), co-clustering with mouse NP types (C36, C47), and ISH validation (C53-C55). The expression of itch-related genes is clearly demonstrated. However, the functional interpretations (C28, C52) remain speculative without physiological validation. The important caveat about heterogeneity (C56) is appropriately noted based on ISH showing variable expression levels. The comparison to mouse nonpeptidergic neurons is well-documented with appropriate citations (C29-C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiplexed ISH validates key transcriptomic predictions. TAC1, NEFH, and OSMR label distinct, largely non-overlapping populations covering essentially all neurons (C33), with NEFH marking large-diameter cells and TAC1/OSMR marking smaller neurons (C34). TRPM8+ neurons segregate into two types: H8 (TRPM8+/SCN10A-/PIEZO2-/NTRK2+) and H9 (TRPM8+/SCN10A+/PIEZO2+) (C40-C42). Proprioceptors (H15) express NEFH/PIEZO2/PVALB without NTRK2 (C43). SST divides OSMR+ cells into H10 and H11 (C53), with PIEZO2-OSMR coexpression marking SST- neurons (C54), though some heterogeneity exists (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ISH validation provides strong orthogonal support for the transcriptomic findings. The claims are based on direct visualization with appropriate quantification (Figure 2\u2014figure supplement 1: 1101 cells scored). The predictions from sequencing data are largely confirmed, though important caveats about heterogeneity are noted (C55). The ISH addresses a key concern about the sparse nature of snRNA-seq data by providing analog expression measurements. The consistency between sequencing and ISH strengthens confidence in the cell type classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C65",
+      "C66"
+    ],
+    "result": "Transcriptomic classes of DRG neurons show non-random spatial organization in the ganglion. In humans, NEFH+ and SCN10A+ neurons cluster significantly (p \u2264 6.96\u00d710\u207b\u2074\u00b2, n=803 cells, 1-40 neighbors analyzed) (C45, C65). Similar spatial clustering is observed in mouse DRG (p \u2264 3.98\u00d710\u207b\u00b9\u2075, n=1117 cells) (C46, C66), suggesting this is a conserved feature across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial clustering is well-supported by quantitative analysis with strong statistical significance and appropriate sample sizes. The Mann-Whitney U-test is suitable for this type of spatial analysis. The finding is validated across species (human and mouse) and across multiple neighborhood sizes (1-40 neighbors), demonstrating both short- and long-range organization. The visual evidence (Figure 4C) supports the quantitative findings. This represents a novel observation about DRG organization.",
+    "result_type": "MINOR"
+  }
+]

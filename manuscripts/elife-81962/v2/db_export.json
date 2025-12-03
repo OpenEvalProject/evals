@@ -1,0 +1,2260 @@
+{
+  "submission": {
+    "id": "4f2c71dc-2d8d-47a8-b46e-2e5460584e78",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:28:49.442276Z",
+    "updated_at": "2025-12-03T17:28:49.442276Z"
+  },
+  "content": [
+    {
+      "id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "submission_id": "4f2c71dc-2d8d-47a8-b46e-2e5460584e78",
+      "content_type": "manuscript",
+      "content_text": "# Environmental morphing enables informed dispersal of the dandelion diaspore\n\n## Authors\n\n- Madeleine Seale<sup>1</sup>\n- Oleksandr Zhdanov<sup>5</sup> ([ORCID: 0000-0002-1742-9765](https://orcid.org/0000-0002-1742-9765))\n- Merel B Soons<sup>7</sup>\n- Cathal Cummins<sup>1</sup>\n- Erika Kroll<sup>1</sup> ([ORCID: 0000-0001-8832-7208](https://orcid.org/0000-0001-8832-7208))\n- Michael R Blatt<sup>6</sup>\n- Hossein Zare-Behtash<sup>5</sup>\n- Angela Busse<sup>5</sup>\n- Enrico Mastropaolo<sup>3</sup>\n- James M Bullock<sup>9</sup>\n- Ignazio M Viola<sup>8</sup> ([ORCID: 0000-0002-3831-8423](https://orcid.org/0000-0002-3831-8423))\n- Naomi Nakayama<sup>1</sup> ([ORCID: 0000-0002-9390-3545](https://orcid.org/0000-0002-9390-3545)) \u2020\n\n### Affiliations\n\n1. School of Biological Sciences, Institute of Molecular Plant Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n2. Centre for Synthetic and Systems Biology, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n3. School of Engineering, Institute for Integrated Micro and Nano Systems, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n4. Department of Plant Sciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n5. James Watt School of Engineering, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))\n6. Laboratory of Plant Physiology and Biophysics, Bower Building, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))\n7. Ecology & Biodiversity group, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))\n8. School of Engineering, Institute for Energy Systems, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n9. UK Centre for Ecology & Hydrology Wallingford United Kingdom ([ROR:00pggkr55](https://ror.org/00pggkr55))\n10. Centre for Science at Extreme Conditions, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n11. Department of Bioengineering, Imperial College London South Kensington United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimal migration is highly sensitised to environmental cues, but plant dispersal is considered largely passive. The common dandelion, Taraxacum officinale, bears an intricate haired pappus facilitating flight. The pappus enables the formation of a separated vortex ring during flight; however, the pappus structure is not static but reversibly changes shape by closing in response to moisture. We hypothesised that this leads to changed dispersal properties in response to environmental conditions. Using wind tunnel experiments for flow visualisation, particle image velocimetry, and flight tests, we characterised the fluid mechanics effects of the pappus morphing. We also modelled dispersal to understand the impact of pappus morphing on diaspore distribution. Pappus morphing dramatically alters the fluid mechanics of diaspore flight. We found that when the pappus closes in moist conditions, the drag coefficient decreases and thus the falling velocity is greatly increased. Detachment of diaspores from the parent plant also substantially decreases. The change in detachment when the pappus closes increases dispersal distances by reducing diaspore release when wind speeds are low. We propose that moisture-dependent pappus-morphing is a form of informed dispersal allowing rapid responses to changing conditions.\n\n## Introduction\n\nLong-distance dispersal to a new habitat is one of the riskiest decisions a living organism can make. From ballooning spiders dispersing from salt marshes according to local wind velocity (Bonte et al., 2007) to kittiwakes abandoning breeding sites based on reproductive success of their neighbours (Boulinier et al., 2008), migration of many animals can be described as \u2018informed dispersal\u2019 by which organisms choose when and to where they travel depending on environmental cues and stressors (Clobert et al., 2009). In contrast, movement of plants, which is mostly mediated by seed or fruit dispersal, is understood as a mostly passive process by which seeds or fruits are carried by biotic or abiotic vectors (Bullock et al., 2006; Matthysen, 2012). This contradicts the wide range of environmental sensing and responses observed in plant development and physiology. Is plant dispersal really that passive?\n\nWind is a particularly common plant dispersal vector. Though locally unpredictable, wind is globally prevalent and almost ubiquitous. Variation in diaspore morphology and structure can have significant impacts on wind dispersal distributions when comparing between species (Muller-Landau et al., 2008; Tamme et al., 2014) however, the relevance of morphological and structural variation within a species has been questioned for wind dispersal (Greene and Johnson, 1992; Horn et al., 2001; Nathan et al., 2002). In most cases, intraspecific variation in dispersal distances is primarily determined by environmental conditions rather than plant factors (Nathan et al., 2002; Nathan et al., 2001). For example, for tree samaras the coefficient of variation for samara terminal velocity was too small to have a significant effect on dispersal distance as variation in wind turbulence was far larger (Greene and Johnson, 1992). Additionally, in field conditions, there was no correlation between diaspore terminal velocity and the likelihood of uplifting (which is a prerequisite for long-distance dispersal) for Liriodendron tulipifera diaspores (Horn et al., 2001; Nathan et al., 2002).\n\nHowever, some individual plant traits, such as plant height and diaspore appendages, can affect dispersal according to developmental programmes and in response to environmental cues (Seale and Nakayama, 2020). Bet-hedging strategies during dispersal can arise by manipulation of diaspore morphology (e.g. Imbert, 2002) and can be modified in response to nutrient availability, temperature, plant competition, or water availability (Arshad et al., 2019; Imbert and Ronce, 2001; Martorell and Mart\u00ednez-L\u00f3pez, 2014).\n\nModifying the timing of dispersal can also influence distances travelled. Phenological traits can ensure that plants produce and release seeds during seasonal periods that are favourable for dispersal (Heydel and Tackenberg, 2017; Wright et al., 2008). Abscission bias also affects localised timing of wind dispersal. By requiring a non-zero minimum force to detach diaspores from their parent plant, dispersal is often initiated only by greater wind speeds that result in longer flight times and further travelling distances (Bohrer et al., 2008; Greene, 2005; Maurer et al., 2013; Pazos et al., 2013; Schippers and Jongejans, 2005; Soons and Bullock, 2008; Thompson and Katul, 2013; Treep et al., 2018). For dandelions Taraxacum officinale, detachment arising from high horizontal wind speeds is thought to be important for the initiation of dispersal (Greene, 2005), whereas convective updrafts are likely to be important for long distance flight (Tackenberg et al., 2003).\n\nMany wind dispersal processes rely on mechanical innovations to initiate dispersal or aid flight (Seale and Nakayama, 2020): for example, explosive dispersal via release of builtup pressure in the seed pod of Cardamine hirsuta (Hofhuis et al., 2016) or directed ejection of seeds to enable spinning during flight in Ruellia ciliatiflora (Cooper et al., 2018). Specific wing designs and weighting generate leading-edge vortices in autorotating samaras (Lentink et al., 2009), and pappus porosity allows the formation of a separated vortex ring (SVR) in dandelion diaspores (Cummins et al., 2018).\n\nThe dandelion SVR is a toroidal vortex that forms in the wake of the pappus generating a region of low pressure. This underlies the drag-dominated flight behaviour conferred by the pappus that allows the diaspore to fall both slowly and steadily through the air (Cummins et al., 2018; Ledda et al., 2019). SVR behaviour changes as the Reynolds number (Re) changes. Re is the ratio of inertial to viscous forces and dictates the behaviour of flow around an object. It depends on the characteristic length scale of the object (D), the velocity of fluid flow (u), and the kinematic viscosity of the fluid (\u03bd), and is calculated as Re = uD/\u03bd. At Re >429, the SVR becomes unsteady and vortices are chaotically shed from the pappus (Cummins et al., 2018). At the natural falling velocity of dry dandelion diaspores, Re is approximately 355, which means that the SVR remains steady during flight. SVR stability is also affected by pappus porosity and thickness of the pappus (Cummins et al., 2018; Ledda et al., 2019).\n\nSo far, the SVR has been described for the dandelion pappus in their familiar open conformation. However, in response to high humidity, the dandelion pappus can morph into a closed structure by specific radial swelling of floral tissues (Meng et al., 2016; Rothert, 1895; Seale et al., 2022; Taliev, 1894). A ring of tissue, in which vascular tissue is surrounded by the cortical tissue, sits at the centre of the pappus and acts as a structure for the pappus hairs to attach to. Differential swelling capacities of the vasculature versus the cortical and other tissues facilitates raising and lowering of the pappus hairs (Seale et al., 2022). The presence of this specific mechanism and the widespread prevalence of pappus morphing in Asteraceae lineages (Rothert, 1895; Taliev, 1894) would suggest that pappus morphing serves a function.\n\nTo understand the biological significance of pappus morphing, we examined the fluid mechanics of the dandelion diaspore during flight and detachment from the parent plant. We found that, as the pappus changes shape, the SVR shrinks in size and moves closer to the pappus. Pappus closing also decreases the drag coefficient and thus increases diaspore falling velocity. When initiating dispersal, a closed pappus reduces detachment from the parent plant. We then used a computational model of wind dispersal to understand how these features affect dispersal distributions of the dandelion. Weather conditions combine with the functional consequences of pappus morphing to alter dispersal timing and flight behaviour and enhance dispersal distances compared to hypothetical diaspores that cannot morph.\n\n## Results\n\nThe dandelion diaspore consists of an achene attached to a pappus comprising around 100 hair-like filaments (Cummins et al., 2018). The pappus is found closed in wetting conditions such as mist or rain (Rothert, 1895; Taliev, 1894; Figure 1a\u2013c). In contrast, when dry, hairs are approximately horizontal, when measured from \u00b5CT scans at a 2 mm radius from the centre of the pappus (Figure 1\u2014figure supplement 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig1-v2.jpg)\n\n**Figure 1.:** (a) Image of a dry dandelion infructescence, (b) image of a wet dandelion infructescence, (c) schematic of a dandelion diaspore indicating features, and (d) image of dry dandelion pappus (scale bar: 2 mm). (e) Image of dandelion pappus after 1 hr in moisture chamber with a 20 min humidifier treatment (scale bar: 2 mm). (f) Time course of change in pappus angle between outermost hairs with 10 or 20 min humidifier treatment, n = 10 and n = 12 samples for 10 and 20 min treatments, respectively; error bars are s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) The angle of individual hairs of dandelion pappi. Angle is calculated relative to horizontal in which the dandelion diaspore beak (see Figure 1c) forms the vertical axis, n = 10 pappi, n = 932 hairs. Red dashed line indicates the median value. (b) High relative humidity partially closes the dandelion pappus. Change in pappus angle at stable relative humidity (after 10 hr in chamber with saturated salt solutions), n = 7 for 39.8% relative humidity and n = 6 for 71.8% and 87.0% treatments.\n\nTo capture pappus closure dynamics, we imaged dandelion diaspores in an enclosed, water-tight chamber with moisture added via an ultrasonic humidifier for 10 or 20 min (Figure 1d\u2013f). For both treatments, the pappus angle (the angle between outermost hairs, see Figure 1c) rapidly decreased (4.0 \u00b1 1.4 degree min\u20131) during moisture treatments, which is consistent with previous experiments (Meng et al., 2016). This continued for 5\u201315 min after moisture addition ceased with a final change in angle of 60\u00b0\u201390\u00b0 (Figure 1f). To test the effect of relative humidity (RH) below 100%, samples were placed in a chamber with stable RH. At RH of 71.8 and 87.0%, modest angles changes of around 10\u00b0 and 24\u00b0 were observed, respectively (Figure 1\u2014figure supplement 1b). Together, these results indicate that the dandelion pappus partially closes at high RH and rapidly closes when fully wet.\n\nWe hypothesised that pappus shape changes would modify diaspore flight and indeed found a strong effect on the falling velocity of the diaspore (Figure 2a). A decrease in pappus angle of around 100\u2013150\u00b0, associated with wetting for 1 hr, resulted in double to triple the falling velocity (Figure 2a). This is consistent with a change in projected pappus area that occurs when the pappus closes (Figure 2\u2014figure supplement 1a). Additionally, a small increase in mass due to the added water resulted in a 0.7 \u03bcN increase in drag for the wetted samples.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig2-v2.jpg)\n\n**Figure 2.:** (a) Falling speed at varying pappus angles, before and after wetting for 1 hr in moisture chamber, asterisks indicate statistically significant difference at p<0.0001, n = 20; (b) relationship between Reynolds number (Re) and drag coefficient (CD) for dry and wet samples, open red circles indicate data from weighted/clipped dry diaspores from Cummins et al., 2018, n = 10 diaspores, filled circles are same data as (a), n = 20 diaspores; (c) estimated porosity at varying pappus angles; (d) schematic illustrating axes and direction of flow; (e) flow visualisation of dandelion fruit with open pappus, contrast adjusted to illustrate vortex more clearly (scale bar: 2 mm); (f) flow visualisation of dandelion fruit with a partially closed pappus, contrast adjusted to illustrate vortex more clearly (scale bar: 2 mm); (g) distance of the region of minimum uz from the pappus centre at varying pappus angle, position is nondimensionalised for each sample by the diameter of the pappus when dry, n = 12 diaspores; and (h) longitudinal length of the separated vortex ring (SVR) non-dimensionalised by the diameter of the pappus when dry, at varying pappus angles, n = 12 diaspores.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Falling velocity reduces as projected area reduces. Projected area calculated using measured pappus angles and assuming hair lengths of 7.41 mm and diameters of 16 \u03bcm according to Cummins et al., 2018; (b) vorticity along the r axis of vortex images at calculated position of minimal uz flow. The r position is non-dimensionalised by dividing by the dry pappus diameter for each sample, with 0 indicating the centre of the pappus. Plot for a single sample at three different pappus angles, representative of n = 10 samples. (c) The minimum uz flow velocity in the separated vortex ring at varying pappus angles.\n\nTo understand further how the pappus shape change affects the drag and falling velocity of the dandelion diaspore, we calculated the drag coefficient (CD) and Reynolds numbers (Re) from our drop test data. The coefficient CD is a nondimensionalised parameter indicating the drag on an object for a given projected area (in our case, the area given by the pappus hairs). For dry diaspores, we examined CD and Re alongside data from weighted/clipped diaspores from Cummins et al., 2018 (Figure 2b). For dry diaspores, higher Re is associated with rapidly decreasing CD before reaching a plateau. The wet diaspores with closed pappi, however, exhibit a different CD-Re relationship with substantially lower CD for a given Re compared to dry (weighted) diaspores with open pappi (Figure 2c). Closing the pappus therefore has two simultaneous effects: Re is increased as falling velocity increases, and the drag per unit of projected pappus area is decreased relative to a hypothetical open pappus of the same projected area. Therefore, pappus morphing is associated with shifting to a different region of the CD-Re parameter space (Figure 2c).\n\nAn SVR forms behind the pappus due to the high porosity of the pappus combined with precise spacing of the hairs, which limits air flow through the pappus. (Cummins et al., 2018; Ledda et al., 2019). The nature of the SVR behind circular disks is strongly affected by the porosity of the disk and its projected area. Closing the pappus has several effects on the geometry: firstly, the projected area exposed to the flow reduces (Figure 2\u2014figure supplement 1a); secondly, porosity of the pappus reduces as hairs move closer together (Figure 2c); and thirdly, the shape of the pappus becomes less disk-like and more cone-like. We observed that the combination of these effects alters the fluid mechanics around the pappus by reducing vortex size and shifting the vortex towards the pappus (Figure 2h and i).\n\nIn order to understand how pappus morphing impacted on SVR formation, we examined the dandelion pappus in dry and wet states fixed in a vertical wind tunnel (Figure 2d). Flow visualisation confirmed the presence of the SVR in both open and partially closed pappi (Figure 2e and f). We performed particle image velocimetry (PIV) (Raffel et al., 2018) to spatially resolve the velocity field of air in the region behind the pappus. Streamwise flow velocity was kept constant to give Re = 133\u2013197 across different pappus angles. Our PIV analysis was able to detect the expected features of the SVR, such as stagnation points in the flow and characteristic vorticity profiles. (Figure 2g, Figure 2\u2014figure supplement 1b).\n\nIn the region of space directly behind the centre of the pappus, the maximum magnitude of negative streamwise flow velocity (minimum uz) showed no clear relationship with the pappus angle (Figure 2\u2014figure supplement 1c). However, the location of minimum uz correlated with pappus angle (Figure 2g). At more open pappus angles, the position of minimum uz moved further downstream of the pappus (Figure 2g, p=0.001, R2 = 0.34). Additionally, the size of the vortex significantly changes with altered pappus angle. The nominal length (see \u2018Materials and methods\u2019) of the vortex was markedly reduced at smaller pappus angles (Figure 2i, p<0.001, R2 = 0.46).\n\nFrom our data, it is clear that pappus morphology considerably affects the falling velocity of the diaspore and the fluid mechanics of the pappus. We also expected that the pappus shape might affect detachment of the diaspore from the parent plant. This is important because, as noted before, force thresholds on detachment are an important mechanism by which plants can bias timing of dispersal in favour of increased wind speeds (Greene, 2005; Greene et al., 2008; Schippers and Jongejans, 2005; Skarpaas et al., 2006; Soons and Bullock, 2008; Thompson and Katul, 2013; Treep et al., 2018) and is thought to promote long distance dispersal (Schippers and Jongejans, 2005; Soons and Bullock, 2008; Thompson and Katul, 2013). We placed dandelion infructescences in a wind tunnel (Figure 3\u2014figure supplement 1a) and assessed the number of diaspores detaching at varying wind speeds (Figure 3). Hydrating samples for 1 hr by mist application significantly (p<0.001, X2 = 341, df = 1) reduced detachment for the range of wind speeds tested (Figure 3c, Figure 3\u2014figure supplement 1b). In flow with 9.1% turbulent intensity, 24% of dry diaspores remained attached at the maximum wind speed (9.8 m s\u20131) compared to 50% of wet diaspores (Figure 3c). Reducing the turbulent intensity of the flow also reduced diaspore detachment (Figure 3\u2014figure supplement 1b, c). These data indicate that hydration and air flow impact on the initiation of dispersal. This observation is consistent with detachment data for thistles (Jongejans et al., 2007; Marchetto et al., 2012; Skarpaas et al., 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig3-v2.jpg)\n\n**Figure 3.:** (a) Snapshots of detachment dynamics at 8 m s\u20131 wind speed for a dry capitulum, air flow direction is from right to left of the images; (b) snapshots of detachment at 8 m s\u20131 wind speed for a wet capitulum; and (c) survival plot of percentage of fruits attached to capitula at varying wind speeds for 9.1% turbulent intensity flow in dry and wet conditions, tested 10\u201314 days after opening of capitula, n = 20 capitula per treatment corresponding to 3001 and 2654 diaspores for dry and wet conditions, respectively; shading around lines indicates s.e.m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Schematic illustrating experimental setup for detachment assays; (b) survival plot of percentage of fruits attached to capitula at varying wind speeds for 1.7% turbulent intensity flow in dry and wet conditions, tested 3 days after opening of capitula, n = 21 capitula per treatment corresponding to 3736 and 3652 diaspores for dry and wet conditions, respectively, shading around lines indicates s.e.m. (c) Survival plot of percentage of fruits attached to capitula at varying wind speeds for dry conditions with turbulent intensities of 1.7% and 9.1%, tested 3 days after opening of capitula (data for 1.7% turbulent intensity are the same as for dry capitula in panel b), n = 20 capitula for the 9.1% turbulent intensity treatment corresponding to 2677 diaspores, shading around lines indicates s.e.m.\n\nAs drag, falling velocity, and diaspore detachment are strongly affected by moisture-dependent pappus morphing, we expected pappus closure would influence dispersal distances. We tested this hypothesis by numerically modelling the dispersal distance in dry or wet conditions corresponding to the open or closed state of the pappus. We first separately tested the effects of pappus closure on diaspore flight, then diaspore detachment, and finally combined these phenomena together to understand how pappus morphing affects dispersal.\n\nWe simulated wind dispersal trajectories using the Markov chain synthetic turbulence generation (STG) model previously developed and used for grassland species (Pazos et al., 2013; Soons et al., 2004). This model simulates diaspore dispersal according to instantaneous calculation of wind trajectories. Importantly, the model can be generalised to new settings using measured (or estimated) parameters and is able to capture long-distance dispersal in a realistic manner. Long-distance dispersal relies on uplifting of diaspores at early stages in the dispersal process and is primarily achieved within the model by incorporating autocorrelated horizontal and vertical turbulence generated from properties of the canopy vegetation. We used wind velocity values from the Edinburgh meteorological data separating it into two groups: dry conditions (RH < 90%) or wet conditions (RH \u2265 90%). There is a consistent negative correlation between wind speed and RH (Figure 4a, Figure 4\u2014figure supplement 1). At high RH, when dandelion pappi are more likely to be closed, wind speeds are relatively low, although still variable (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig4-v2.jpg)\n\n**Figure 4.:** (a) Relationship between relative humidity and wind speed in Edinburgh, UK. (b) Model descriptions indicating whether dry (relative humidity < 90%), or wet (relative humidity \u2265 90%) weather conditions were used, whether the pappus was simulated to be open or closed during detachment, and whether the simulated diaspore falling velocity during flight was based on an open or closed pappus. (c) Modelled kernel density estimate of predicted dispersal distances for diaspores with open or closed pappi and for different weather conditions (see b for model details). (d) Median dispersal distance for each model. (e) Percent of 10,0000 dispersal simulation events that travelled further than 100 m. (f) Percent of time in which diaspores successfully detached after 172,800 simulations (representing the number of seconds in a 48 hr period). (g) Mean wind speed for time points (172,800 simulations) when detachment occurred.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Manchester, (b) Nottingham, (c) Norwich, and (d) Exeter.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Full dispersal kernel with distance plotted on a log10 scale. (b) Dispersal kernel portion from 0 to 10 m dispersal distance, dashed vertical lines indicate medians for the entire dispersal kernel. (c) Median dispersal distance. (d) Percent seeds dispersing further than 100 m.\n\nWe ran five different model simulations to explore the different functional aspects of pappus morphology on dispersal. For each model, we simulated 10,000 dispersal events and computed kernel density estimates normalised such that the integral over distance equalled one. Firstly, we simulated dispersal of dandelion diaspores with open pappi in dry weather conditions (Model 1), when wind speeds tend to be higher. As expected, most diaspores would disperse a short distance (median: 4.3 m) from the parent plant, but the model generated dispersal distances with a right-skewed tail, indicating some diaspores will disperse much longer distances (Figure 4c). It is worth noting that extremely long distances (>10,000 km) are observed in a very small number of cases. Some, though not all, of these individual simulations occurred because the diaspores hit the top of the atmospheric boundary layer during trajectory simulation, but we found that omitting such individuals from the analysis made very little difference to the kernel density estimate. The accuracy of the model at this range cannot be verified due to the impracticality of tracking such events empirically. Without a clear rationale for a specific cut-off distance, we decided to leave the model distribution unchanged to avoid misrepresentation of the model\u2019s results.\n\nTo explore the effects of weather conditions alone on dispersal, we ran the model again using the wet weather wind speed distribution in a hypothetical scenario where the pappus remains open in these conditions (Model 2). This substantially decreased the median dispersal distance to 1.5 m (Figure 4d). It also decreased long-distance dispersers from 17.5% of simulated dispersal events in Model 1 to 5.6% in Model 2 (Figure 4e). This indicates that the lower wind speeds typical in wetter weather conditions (Figure 4a) would considerably decrease dispersal distances across the entire distribution even with the aerodynamically favourable open pappus (Figure 4c\u2013e).\n\nWe then ran several simulations to investigate the ecological significance of closing the pappus. In Model 3, we used the wet weather wind conditions, the falling velocity of the diaspore when the pappus is closed, and the probability of a given wind speed detaching the diaspore in the first place was based on the detachment profiles observed for wet infructescences (Figure 3). Compared to keeping the pappus open during wet weather, closing the pappus reduced median dispersal from 1.5 m to 0.9 m (Figure 4c and d). However, long-distance dispersal increased from 5.6% to 7.5% of the 10,000 simulated dispersal events (Figure 4e) giving an increase of 34%.\n\nTo understand how different aspects of pappus closing affect dispersal, we separately manipulated the detachment threshold probability and the falling velocity of the diaspore. Closing the pappus only during flight (Model 4) dramatically reduced median dispersal (4.3 m to 1.4 m), while keeping the pappus closed only during detachment (Model 5) considerably increased both median and long-distance dispersal (4.3 m to 6.6 m and 17.5% vs. 21.4% respectively).\n\nOur model simulations established probability distributions for different realistic and hypothetical scenarios for diaspores that disperse. In reality, though, humidity may modify detachment thresholds to impact the probability of initiating dispersal in the first place. To explore this possibility, we simulated a 48 hr period during which dandelion plants are likely to disperse all their diaspores (Treep et al., 2018). Each instantiation of dispersal was considered to last 1 s, and diaspores were assessed for detachment against the appropriate probability distribution (derived from Figure 3) at the randomly selected wind speed for that second. There was a considerably higher probability of detaching in Models 1 and 3 when wind speeds were selected from the dry distributions and diaspores detachment was based on having the pappus open (Figure 4f). When pappi were closed and weather was wet (Model 3), the probability of detachment dropped dramatically, which is likely due to the low wind speeds and higher detachment thresholds in these conditions. When detachment did occur, wind speeds were higher than when the pappi were open in wet weather (Figure 4g, Model 3 vs. Model 2). The data imply that dispersal in wet conditions is a rare event (Figure 4f), but that when it does occur, closing the pappus increases the chances of travelling long distances (Figure 4e, Model 3 vs. Model 2). We can conclude that closing the dandelion pappus maintains long-distance dispersal primarily via its effect on detachment (Model 4). This biases diaspore release towards dispersing in dry conditions when wind speeds tend to be higher (Figure 4g). Interestingly, for the few diaspores that do disperse in wet conditions, a greater spread of dispersal distances occurs with reduced median distances but slightly higher long-distance dispersal.\n\nTo understand the dispersal distribution of dandelion diaspores across all possible weather conditions, we combined the distribution of Models 1 and 3 weighted by the frequency of wet or dry weather conditions in our meteorological data, and also conditioned on the probability of detachment in such conditions (Figure 4\u2014figure supplement 2). This kernel density estimate therefore represents the realistic dispersal distribution of diaspores given that they detach from the parent plant and that the pappus morphs depending on the humidity. We compared this to a hypothetical version in which the pappus cannot morph by combining Models 1 and 2 in the same manner. In our dataset, dry weather is three times more frequent than wet. Diaspores are 8 times less likely to detach in wet weather versus dry when morphing occurs and 2.5 times less likely when the pappus remains open. As a result dispersal during wet weather is rare in both morphing and open conditions so the distribution from Model 1 therefore dominated the overall kernel density estimates in both cases. To compare the models we found that the Jensen\u2013Shannon divergence was 0.034 indicating that the two distributions follow essentially similar shapes (Figure 4\u2014figure supplement 2a and b). Examining how the models varied, we found that morphing led to a 6% increase in long-distance dispersal (from 26.7% to 28.5% of seeds) (Figure 4\u2014figure supplement 2d) and a 23% increase in median dispersal (from 3.9 m to 4.8 m) compared to a pappus that was always open (Figure 4\u2014figure supplement 2c).\n\n## Discussion\n\nStructure is intimately linked to function in engineering and in biology. While biological systems have had millions of years of evolution to improve functional outcomes, evolution must also balance many survival and reproductive requirements which may lead to trade-offs. The dandelion diaspore achieves functionality during flight by constructing a filamentous pappus whose porosity allows an SVR to form. However, diaspore flight is not favourable in all circumstances, so we conjecture that the pappus morphs and modifies its structure to alter the flight characteristics.\n\nAs the pappus closes, the SVR decreases in size and shifts its position. Morphing via angular rotation of the pappus hairs is not only a convenient mechanism but also has functional consequences. If pappus hairs remained open but shortened in length, the drag per unit area would be greater than for a cone-like morphology with the same projected area. By generating a cone-like shape instead of a disk-like shape, the pappus becomes more streamlined. Together, the fluid mechanics of the closed pappus leads to significant changes in diaspore falling velocity and detachment from the parent plant.\n\nDispersing far from a parent is often considered favourable as resource and kin competition are reduced (Saastamoinen et al., 2018), but competition is not the only factor affecting site suitability. Soil moisture levels are temporally and spatially variable (Vinnikov et al., 1996), more than characteristics such as light and temperature (Silvertown et al., 2015), meaning that optimal germination sites and times may vary considerably with changing weather and microenvironments. Our data suggest that dandelions have evolved pappus morphing because it biases detachment toward favourable dispersal times, which enhances both median and long-distance dispersal.\n\nMoisture-induced pappus morphing may thus be a form of informed dispersal, by which dispersal is modified according to environmental cues signalling more favourable conditions (Clobert et al., 2009). In contrast to the popular perception that plant migration is a passive response to wind and other vectors, an explorative literature review has revealed otherwise (Seale and Nakayama, 2020). Plants are not able to make conscious decisions influencing their behaviour, but can form mechanical or chemical structures that respond differentially to the environment. There are two types of informed dispersal in plants: developmental adaptation of heteromorphic diaspores to environmental stresses (Martorell and Mart\u00ednez-L\u00f3pez, 2014), which acts over a longer time scale responding to stable environmental conditions; and highly temporal and local responses such as the fire-induced dispersal of Banksia (He et al., 2011), and the temperature-controlled dehiscence of Brassica siliques (Li et al., 2018), as well as the dynamic pappus morphing observed here. Such short-term regulation may be particularly beneficial in responding to unpredictable or fast-changing conditions.\n\nThe effects of pappus closure on detachment and on flight counteract one another to some extent as diaspores that detach when wet are more likely to do so when wind speeds are higher, but a closed pappus will cause them to fall faster. However, the low likelihood of detaching at low windspeeds when dry (due to higher average wind speeds) and when wet (due to pappus closure) means that dispersal largely occurs when wind speeds are high. These higher wind speeds appear to be more significant than the change in falling velocity as the overall effect of a morphing pappus is to increase median and long-distance dispersal (Figure 4, S5). The effect on long-distance dispersal is particularly significant as this has a disproportionate effect on ecological distributions and is often the major driver of range expansion (Clark, 1998; Kot et al., 1996; Trakhtenbrot et al., 2005).\n\nPappus morphing may have additional functions beyond detachment, flight, and dispersal, such as protection from damage, or to aid germination. The morphing phenomenon occurs in many (perhaps most) pappus-bearing diaspores but is conspicuously missing from some representatives of the Asteraceae (e.g. Leontodon, Hieracium, Erigeron) (Rothert, 1895; Taliev, 1894). A comparative approach examining the ecological and phenological features of pappose fruits that do or do not morph may yield greater insight into the roles of pappus morphing.\n\nWe have tested the ecological implications of this biomechanical response to moisture and suggested that pappus closure acts to tune dispersal promoting long-distance dispersal by responding to moisture conditions. As many species modify their seed or fruit structure in response to water, this might be a general mechanism to ensure dispersal at appropriate times.\n\nConsidering how prevalent environmentally induced plasticity is in plant structure and its development, understanding of structural functions within environmental contexts is critical to predict the ecological consequences of climate change (Denny and Helmuth, 2009). Insights into ecological and environmental drivers in turn enable us to comprehend selective pressure that has acted and will act to evolve plant forms and their functions.\n\n## Materials and methods\n\n### Plant growth and samples\n\nTaraxacum officinale agg. diaspores were collected and grown as described previously (Cummins et al., 2018). Briefly, plants were collected in Edinburgh, UK (55.922684\u00b0N, 3.170703\u00b0W), and grown in a peat/sand mix compost in greenhouses supplemented with light where necessary to ensure a 16 hr day, 8 hr night and kept at 18\u201321\u00b0C. All samples were the progeny of plants grown in the greenhouse for two generations originating from the same individual. As this subspecies reproduces apomictically, all diaspores used were considered to be genetically identical.\n\nFor the detachment assay, stems with capitula were harvested once the inflorescence had closed but before the infructescence (capitulum) had opened. Polypropylene tubes of 15 ml capacity were filled with water and covered by a piece of parafilm with a small hole in. Stems of samples placed through the hole. These samples were transported to the site of the wind tunnel experiment and then placed in a greenhouse (ambient conditions except for day length, which is artificially extended with electric lighting to ensure at least 16 hr of daylight) to allow the infructescence to fully mature and open.\n\n### Pappus angle measurements\n\nAngles of each hair from the horizontal axis were calculated at a 2 mm radius from the centre of the pappus, with the beak aligned to the vertical axis. Source data and analysis of 3D micro-tomography CT scans were identical to the ones used in Cummins et al., 2018.\n\nFor all other pappus angle measurements, the angle was measured from 2D microscope or macro-camera images. The pappus was aligned perpendicular to the objective/lens and pappus angle measured as the angle between the outermost hairs.\n\n### Moisture chamber imaging\n\nThe bespoke moisture chamber consisted of a 70 l airtight plastic box (Solent Plastics, UK). A hole was made in the box to pass cables through and the space around sealed with silicone sealant. Two USB microscopes (Maozua, USB001) were positioned horizontally to image dandelion diaspore samples, which were fixed in place by embedding in plasticine or individual pieces of foil shaped around the achene. An ultrasonic humidifier (Bottle Caps) was filled with distilled water and placed next to the dandelion samples. The ultrasonic humidifier releases small droplets of liquid water into the chamber meaning that RH reaches 100% within the first few minutes. Samples were imaged each minute for the duration of the experiment.\n\nFor RHs < 100%, dishes of saturated salt solutions were placed into the chamber to maintain defined, stable humidity levels (Wexler and Hasegawa, 1954). RH was monitored with a datalogger (Lascar, Easylog EL-GFX-2). Samples were imaged at 0 hr and 10 hr when RH had long reached equilibrium.\n\n### Falling velocity assays\n\nDrop tests were carried out using a modified version of the protocol described in Cummins et al., 2018. Diaspore samples were tested in two batches (n = 10 and n = 11). First, all diaspores were weighed together to obtain the mean weight per sample. Each sample was dropped three times and video recorded with a DSLR camera (Canon EOS 70D). Samples were then imaged in the moisture chamber while still dry. The humidifier was switched on for 1 hr and samples re-imaged. Diaspores were removed from the chamber one by one and dropped three times before placing back inside the humid chamber to prevent further drying. After all samples were dropped, all were weighed together again. The mean increase in weight after wetting was 70 \u00b5g, which corresponds to approximately 10% greater weight when wet compared to dry. Falling velocity was determined from the video frames using a particle detection script (Cummins et al., 2018).\n\n### Calculated variables for fluid mechanics analysis\n\nThe projected area of the pappus was calculated according to the pappus angle, assuming 100 straight, non-overlapping hairs of length 7.41 mm and diameter 16 \u00b5m according to previous measurements (Cummins et al., 2018). The apical plate at the centre of the structure (where the hairs attach) was not included in these calculations. Porosity was calculated as the ratio of empty space between hairs (i.e. 1 \u2013 the projected area) to the total area of the circle that would enclose the projected area.\n\nThe Reynolds number is defined as $Re= uD/\u03bd$ , where $u$ is the flow velocity (the falling velocity, that is, the undisturbed velocity of the fluid with respect to the pappus), $D$ is the characteristic length scale (in our case, this is the diameter of the pappus assuming hair length of 7.41 mm and varies according to pappus angle), and $\u03bd$ is the kinematic viscosity of the fluid at 20\u00b0C for which we used 15.06 \u00d7 10\u20136 m2 s\u20131.\n\nThe drag coefficient was calculated as follows:\n\n$$\nC_{D}= \\frac{mg}{\\frac{1}{2} \u03c1u^{2}A}\n$$\n\nwhere \u03c1 = 1.0241 kg m\u20133 is the density of air, A is the projected area of the pappus, taking the porosity into account, and g = 9.81 m s\u20131 is gravitational acceleration. Additionally, m is the mass of the diaspore, for which a mean measured value of 0.614 mg was used for all dry samples and 0.684 mg for all wet samples.\n\n### PIV and flow visualisation\n\nSamples were fixed in place inside a vertical wind tunnel for flow visualisation and PIV (Cummins et al., 2018). Long-exposure images were obtained using a Canon DSLR camera (EOS 70D). The raw experimental images were processed to distinguish the region of interest (i.e. the SVR) from the reflective pappus. To do this, we applied a digital graduated neutral density filter using the \u2018Curves\u2019 contrast adjust tool and the \u2018Blend\u2019 tool within the open-source software GNU Image Manipulation Program (GIMP version 2.8.22).\n\nFor PIV, videos were obtained with a high-speed camera (Fastcam Photron SA1.1) shooting at 125 frames per second fitted with a macro lens (Tamron). Air flow velocity was 0.207\u00a0m s\u20131 throughout.\n\nFor each video, 100 frames were analysed in PIVlab (MATLAB; Thielicke and Stamhuis, 2014) using single-pass direct cross-correlation with a window size of 128 pixels (corresponding to 3.88 mm) and a window overlap of 64 pixels. Data were filtered by excluding vectors of more than 2 standard deviations and a normalised median filter (Westerweel and Scarano, 2005) with a minimum normalisation level (\u03f5) of 0.1 pixels and a detection threshold of 3. Vectors were interpolated where missing, and the mean vector field of all 50 pairs of images was calculated.\n\nNoisy rows of data from the images were excluded from further analysis. The first row of the image (row size defined by the window size), which was always noisy, was removed. Other noisy rows were identified by fitting an autoregressive integrated moving-average model (R package \u2018tsoutliers\u2019) to the profiles of streamwise velocity (uz) across the r direction of the image. The velocity profiles with outliers were considered noisy. A z portion of the image with no more than one consecutive noisy row was considered to form the vortex region and was used for further analysis. Analysis was also limited in the r direction by excluding regions of data that fell outside of the limits of the dandelion pappus width. The coordinates of the central point of the pappus and the pappus angle were measured from images. The pappus limits were calculated assuming the pappus formed a triangular shape with hairs that were 7.41 mm long (Cummins et al., 2018).\n\nThe point P of minimal flow was determined by finding where uz along the z-axis was minimal at the r location of the centre of the pappus. Let zp be the z-coordinate of P, D the diameter of the pappus and \u03c4 the pappus angle. We found that\n\n$$\n\\frac{z_{p}}{D}=0.24+0.0039 \\tau,\n$$\n\np=0.001, R2 = 0.34.\n\nUsing this relationship (Figure 2f), we identified a nominal z-coordinate of minimal uz.\n\nThe flow structure was not well resolved beyond the limits of the vortex, so it was not possible to identify the downstream stagnation point where the velocity vanishes. Instead, the nominal vortex length was determined by obtaining the point beyond the centre of the pappus at which uz = 0.02 m s\u20131. This does not give the actual length of the vortex but gives an indicative value to compare between samples and treatments.\n\n### Detachment assays\n\nA modified version of the method in Jongejans et al., 2007 was used to assess detachment of diaspores from the capitulum. Tests were conducted in a bespoke horizontal, open-circuit wind tunnel set up in a greenhouse at the University of Glasgow, UK (Zhdanov et al., 2021). The test section was 1 m long with a rectangular cross-section of 450 mm \u00d7 400 mm (Figure 3\u2014figure supplement 1a). Either 3 days (Figure 3\u2014figure supplement 1b, c) or 10\u201314 days after opening (Figure 3c), samples were placed in the middle of the test section and were subjected to a flow speed of 2 m s\u20131 for 30 s. Samples were held in place by passing an aluminium rod (rod diameter was 1.5 mm or 3 mm in length depending on stem diameter) through the hollow stem attached to the capitulum. For older samples, in which the stem had degraded, stem remnants were clamped to the rod. Detached diaspores were collected in a mesh at the end of the test section (Figure 3\u2014figure supplement 1a) and counted. This was repeated for 4, 6, 8 and 10 m s\u20131.\n\nAfter the maximum wind speed, the number of diaspores remaining on the capitulum was also counted. For more turbulent conditions, a grid consisting of 11 equally spaced vertical rods (with a diameter of 10 mm) was created and placed inside the test section (200 mm downstream of the inlet). This increased turbulence intensity to 9.1%, but the maximum wind speed was reduced slightly to 9.8 m s\u20131, and this was used for the maximum detachment measurement speed instead of 10 m s\u20131. The turbulent intensities used here are comparable to that in some natural conditions (Ghanadi et al., 2017), though turbulence in the atmospheric boundary layer exhibits enormous variability, with values as high as 400% reported (Wilson et al., 1982).\n\nWet capitula were treated by placing in the moisture chamber with the humidifier switched on for 1 hr before placing in the wind tunnel.\n\n### Meteorological data\n\nHourly meteorological data was obtained from the Integrated Surface Database from the National Centers for Environmental Information (USA). We compared meteorological data from five locations across the UK (Edinburgh, Manchester, Nottingham, Norwich, and Exeter) and found the wind speed profiles to be largely similar (Figure S4). For all further analysis and modelling, we used the meteorological data from Edinburgh. Hourly data for a 30-year period (1987\u20132017) were acquired for Edinburgh (55.950\u20133.373) and filtered according the following criteria: entries were excluded if hourly wind speed, dewpoint, or temperature were missing; data were only used from the beginning of April to the end of October in each year (the period of dandelion reproduction); occasional data measured between hours were excluded. RH was calculated from the dewpoint and temperature. The hourly wind speeds varied around a mean of 4.0 m s\u20131 (Figure 4a; measured 10 m reference height). RH ranged between 14 and 100% with a mean value of 80%.\n\n### Dispersal modelling\n\nUsing the above meteorological data, we simulated the dispersal of dandelion diaspores using a mechanistic trajectory model (the CELC Markov chain STG model; details as in Soons et al., 2004). This model simulates the dispersal of individual diaspores based on mean horizontal wind speeds, vegetation characteristics, and plant traits, and a resulting modelled vertical wind speed and turbulence distribution. Wind speeds at infructescence height were inferred as described by Soons et al., 2004, assuming a logarithmic vertical wind profile.\n\nFor a representative environmental setting, we assumed the release height of dandelion diaspores to be 0.35 m (Treep et al., 2018) and surrounding vegetation height to be 0.2 m with a leaf area index of 2.0 (Soons and Bullock, 2008). We simulated dispersal under dry (RH < 90%) and wet conditions (RH > 90%) using the respective wind speed distributions. As dandelion pappi can partially close at RH > 70% (Figure 1\u2014figure supplement 1b) and field-measured RH > 90% is a good proxy for wetness on plant surfaces (Sentelhas et al., 2008), we used RH = 90% as a cut-off point. Diaspore falling velocities for dry and wet conditions were 0.3 m s\u20131 and 0.7 m s\u20131, respectively, corresponding to the measured values from our drop tests.\n\nDetachment probabilities for dry and wet weather were based on the wind tunnel detachment assays described above. Alternative parametric models were fitted to the detachment data using the R package \u2018flexsurv\u2019 (Jackson, 2016). According to the Akaike information criteria (AIC), a generalised gamma model fit the data best and performed better than Weibull, exponential, log-normal, log-logistic, generalised F, and Gompertz models. The fitted generalised gamma model was extrapolated beyond the original limit of 10 m s\u20131, and the probability of detachment for each humidity condition was used in the implementation of the dispersal model simulations.\n\n### Data analysis and statistics\n\nAll measurements were carried out on separate individual diaspores from different infructescences except detachment assays, in which multiple diaspores from each infructescence were counted.\n\nDetachment assays were analysed by fitting Kaplan\u2013Meier survival models to the data, with log-rank tests used to compare treatments (R package \u2018survival\u2019). For falling velocity tests, the following model was fitted to the data where the falling velocity is proportional to $cos^{-2/3}\u2061 \\tau,$ similarly to Meng et al., 2016, and dry and wet groups were compared using Student\u2019s two-sided two-sample t-test. For PIV data, linear regression models were fit to the data. For the plot of the relationship between CD and Re, loess regression with a span of 0.8 was used to illustrate the trends in the data. For boxplots, the centre line is the median, hinges indicate first and third quartiles, and whiskers extend to largest value no further than 1.5 times the interquartile range.\n",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "00cd4465-6dcb-4c3e-8c82-8e87498f6b81",
+      "submission_id": "4f2c71dc-2d8d-47a8-b46e-2e5460584e78",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dominique C Bergmann, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81962.sa0](https://doi.org/10.7554/eLife.81962.sa0)\n\nThis boundary-crossing work on dandelion diaspore flight is an excellent demonstration of how to address fundamental questions about wind dispersal of plant seeds from biophysical and ecological perspectives. Both wind-tunnel experiments and models provide compelling evidence that the aerodynamics of dandelion diaspores change with the environment. Addition of local climate data enables the authors to make a convincing case about how the biophysical properties can scale up to affect dispersal across the landscape under different environmental conditions. In addition to the strong data, this is a clear, accessible, and very enjoyable read.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Dominique C Bergmann, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81962.sa1](https://doi.org/10.7554/eLife.81962.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Environmental morphing enables informed dispersal of the dandelion diaspore\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Meredith Schuman as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Frederick P. Gosselin (Reviewer #1); Lauren Sullivan (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe work was received very favorable and thus there are mostly cosmetic changes to be completed before this is appropriate for publication.\n\nEssential revisions:\n\n1) Address the confusion about wet weather predictions from Model 5 (see Rev 2 comments).\n\n2) Reassess the model in Figure S5 in light of comments from reviewer 1.\n\n3) Change colors in Figures 1-2 to improve readability (Rev 2).\n\nReviewer #1 (Recommendations for the authors):\n\nFigure S5 of the modelled kernel of density of the predicted flight distance seems underwhelming. The two curves are highly similar and it's difficult to assess if the difference is significant on the logarithmic scale. Could a statistical test be performed to provide a quantification of how different they are? Similarly, since weather statistics is playing a dominant role, could the influence of pappus morphing be assessed with a principal component analysis or some other tool? Basically, how impactful is the dry/windy probability versus morphing/non-morphing effect in the final kernel?\n\nReviewer #2 (Recommendations for the authors):\n\nThe paragraph that starts on line 315 is really key to the ecological understanding of the work, yet is a bit confusing for me. For example, the authors say \"When pappi were closed and weather was wet (Model 5)\" that this increases dispersal ability. However, model 5 from the figure indicates that the weather is dry. I think this paragraph could be reworked to be more clear as to why the authors think that wet weather promotes longer dispersal, as from what I see, the models 2 and 3 appear to be the ones with wet weather, and also seem to have PDF's that don't indicate as far of travel (Figure 4b-f). The authors state that the increased wind is the cause, but I do not see the evidence for this in this paragraph or in Figure 4.\n\nAnother weakness to me, however an easy to fix weakness, is that in Figures 1g,h and 2c the red to blue gradient of points is unclear to me. I don't think it's necessary. I prefer to leave the points black, and keep the blue/red difference for the dry and wet seeds. In addition I'd encourage the authors to select two colors that are more visually different for those who are colorblind. Also, whatever colors the authors choose for dry/wet conditions, I'd keep those the same throughout the main figures, and the supplemental figures (the authors switch to yellow/blue in the supplement).\n\nSomething about the wording on lines 316-317 is confusing to me. It seems like it should read that humidity doesn't matter at all for dispersal. Anyway, if you could reword this sentence that would help!\n",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4244c6c-9297-41cb-b189-b997dc8d4846",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C1",
+      "claim": "The common dandelion (Taraxacum officinale) bears an intricate haired pappus facilitating flight.",
+      "claim_type": "EXPLICIT",
+      "source": "The common dandelion, Taraxacum officinale, bears an intricate haired pappus facilitating flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known characteristic of the dandelion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "74e2c0aa-0234-4f0b-8b94-cafed49028c6",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C2",
+      "claim": "The dandelion pappus enables the formation of a separated vortex ring during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "The pappus enables the formation of a separated vortex ring during flight",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by prior research referenced in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "985ec1b3-713c-45ea-bd1b-cce0fc653655",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C3",
+      "claim": "The dandelion pappus reversibly changes shape by closing in response to moisture.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the pappus structure is not static but reversibly changes shape by closing in response to moisture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through experimental observations in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "0d330534-185d-46c9-853c-186614e2ba90",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C4",
+      "claim": "Differential swelling capacities of the vasculature versus the cortical and other tissues facilitates raising and lowering of the pappus hairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential swelling capacities of the vasculature versus the cortical and other tissues facilitates raising and lowering of the pappus hairs (Seale et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is cited from prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "28ee0c81-09a5-4282-8b7f-6a3a5caa7193",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C5",
+      "claim": "When the pappus closes in moist conditions, the drag coefficient decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that when the pappus closes in moist conditions, the drag coefficient decreases and thus the falling velocity is greatly increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data from drop tests and fluid mechanics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "5869bd94-5d40-4272-93ec-c6d83a567483",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C6",
+      "claim": "When the pappus closes in moist conditions, the falling velocity is greatly increased.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that when the pappus closes in moist conditions, the drag coefficient decreases and thus the falling velocity is greatly increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through drop test experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "3e169a65-abbb-4ebf-90d6-0fe05e228c0a",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C7",
+      "claim": "Detachment of diaspores from the parent plant substantially decreases when the pappus closes.",
+      "claim_type": "EXPLICIT",
+      "source": "Detachment of diaspores from the parent plant also substantially decreases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by wind tunnel detachment assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "5a492f14-d351-477d-af30-2da5efb0a645",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C8",
+      "claim": "The change in detachment when the pappus closes increases dispersal distances by reducing diaspore release when wind speeds are low.",
+      "claim_type": "EXPLICIT",
+      "source": "The change in detachment when the pappus closes increases dispersal distances by reducing diaspore release when wind speeds are low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by dispersal modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "cb976b2e-812a-4af9-a248-1c758906551b",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C9",
+      "claim": "Moisture-dependent pappus-morphing is a form of informed dispersal allowing rapid responses to changing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that moisture-dependent pappus-morphing is a form of informed dispersal allowing rapid responses to changing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion proposed by the authors based on their experimental and modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "d9e8e6a7-193a-4a68-a77c-76d6d43a4810",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C10",
+      "claim": "Animal migration is highly sensitised to environmental cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal migration is highly sensitised to environmental cues, but plant dispersal is considered largely passive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "811fb3bd-67fb-469d-b24e-c83d044ac178",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C11",
+      "claim": "Plant dispersal is considered largely passive.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal migration is highly sensitised to environmental cues, but plant dispersal is considered largely passive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a common perception in the field that the authors challenge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "27d486e8-727a-4910-891d-1fcf22dbadbc",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C12",
+      "claim": "Ballooning spiders disperse from salt marshes according to local wind velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "From ballooning spiders dispersing from salt marshes according to local wind velocity (Bonte et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example of informed dispersal in animals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "02e66ade-3cca-45e8-913d-b6192bff73b7",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C13",
+      "claim": "Kittiwakes abandon breeding sites based on reproductive success of their neighbours.",
+      "claim_type": "EXPLICIT",
+      "source": "to kittiwakes abandoning breeding sites based on reproductive success of their neighbours (Boulinier et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example of informed dispersal in animals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "f31485ec-ca83-4785-aa80-37c64de0d13d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C14",
+      "claim": "Migration of many animals can be described as 'informed dispersal' by which organisms choose when and to where they travel depending on environmental cues and stressors.",
+      "claim_type": "EXPLICIT",
+      "source": "migration of many animals can be described as 'informed dispersal' by which organisms choose when and to where they travel depending on environmental cues and stressors (Clobert et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an established concept in animal dispersal.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "09228673-6c3b-4df4-983e-ebb3032d2cd4",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C15",
+      "claim": "Movement of plants is mostly mediated by seed or fruit dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, movement of plants, which is mostly mediated by seed or fruit dispersal, is understood as a mostly passive process by which seeds or fruits are carried by biotic or abiotic vectors (Bullock et al., 2006; Matthysen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge about plant dispersal.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "005fd222-c4a6-4338-b1e8-3fcdf4f5aca6",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C16",
+      "claim": "Plant seed or fruit dispersal is understood as a mostly passive process by which seeds or fruits are carried by biotic or abiotic vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, movement of plants, which is mostly mediated by seed or fruit dispersal, is understood as a mostly passive process by which seeds or fruits are carried by biotic or abiotic vectors (Bullock et al., 2006; Matthysen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as the conventional understanding of plant dispersal.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "8b181dbc-d7ef-44dd-be58-e4ffc18e6cee",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C17",
+      "claim": "Wind is a particularly common plant dispersal vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Wind is a particularly common plant dispersal vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "eba9606d-35ae-4e5f-942b-515a0e4bfb62",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C18",
+      "claim": "Wind is globally prevalent and almost ubiquitous.",
+      "claim_type": "EXPLICIT",
+      "source": "Though locally unpredictable, wind is globally prevalent and almost ubiquitous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about wind as a dispersal vector.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "af1aecd3-c06e-4bcb-8b09-719d9d6e252f",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C19",
+      "claim": "Variation in diaspore morphology and structure can have significant impacts on wind dispersal distributions when comparing between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in diaspore morphology and structure can have significant impacts on wind dispersal distributions when comparing between species (Muller-Landau et al., 2008; Tamme et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "defb4efa-de37-4056-80a4-bca1f277c204",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C20",
+      "claim": "The relevance of morphological and structural variation within a species has been questioned for wind dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the relevance of morphological and structural variation within a species has been questioned for wind dispersal (Greene and Johnson, 1992; Horn et al., 2001; Nathan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as a perspective from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "9eb6bfd9-bd12-4e84-9546-cc4b788fdf26",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C21",
+      "claim": "In most cases, intraspecific variation in dispersal distances is primarily determined by environmental conditions rather than plant factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, intraspecific variation in dispersal distances is primarily determined by environmental conditions rather than plant factors (Nathan et al., 2002; Nathan et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "ec34290a-1b35-45f9-a3d3-a3d6ee0a7b62",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C22",
+      "claim": "For tree samaras the coefficient of variation for samara terminal velocity was too small to have a significant effect on dispersal distance as variation in wind turbulence was far larger.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for tree samaras the coefficient of variation for samara terminal velocity was too small to have a significant effect on dispersal distance as variation in wind turbulence was far larger (Greene and Johnson, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "73e99abf-97af-4d85-963d-4d7d414fc176",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C23",
+      "claim": "In field conditions, there was no correlation between diaspore terminal velocity and the likelihood of uplifting for Liriodendron tulipifera diaspores.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in field conditions, there was no correlation between diaspore terminal velocity and the likelihood of uplifting (which is a prerequisite for long-distance dispersal) for Liriodendron tulipifera diaspores (Horn et al., 2001; Nathan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "aaf157ed-7d04-419a-ab4d-aa19e224ba2b",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C24",
+      "claim": "Some individual plant traits, such as plant height and diaspore appendages, can affect dispersal according to developmental programmes and in response to environmental cues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some individual plant traits, such as plant height and diaspore appendages, can affect dispersal according to developmental programmes and in response to environmental cues (Seale and Nakayama, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "c441e69c-cbbe-496c-9c80-62c5306065f9",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C25",
+      "claim": "Bet-hedging strategies during dispersal can arise by manipulation of diaspore morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Bet-hedging strategies during dispersal can arise by manipulation of diaspore morphology (e.g. Imbert, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "ea16be92-190e-4d6d-9bc0-a0fb06497dde",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C26",
+      "claim": "Bet-hedging strategies can be modified in response to nutrient availability, temperature, plant competition, or water availability.",
+      "claim_type": "EXPLICIT",
+      "source": "and can be modified in response to nutrient availability, temperature, plant competition, or water availability (Arshad et al., 2019; Imbert and Ronce, 2001; Martorell and Mart\u00ednez-L\u00f3pez, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "7dec7bd4-c48d-4b87-9ff6-2b820f125d86",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C27",
+      "claim": "Modifying the timing of dispersal can influence distances travelled.",
+      "claim_type": "EXPLICIT",
+      "source": "Modifying the timing of dispersal can also influence distances travelled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "0b93f384-a21f-4ed1-ab92-4e2deb2fd218",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C28",
+      "claim": "Phenological traits can ensure that plants produce and release seeds during seasonal periods that are favourable for dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenological traits can ensure that plants produce and release seeds during seasonal periods that are favourable for dispersal (Heydel and Tackenberg, 2017; Wright et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "977f7ad3-fc07-47e1-8e83-e7f411250357",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C29",
+      "claim": "By requiring a non-zero minimum force to detach diaspores from their parent plant, dispersal is often initiated only by greater wind speeds that result in longer flight times and further travelling distances.",
+      "claim_type": "EXPLICIT",
+      "source": "By requiring a non-zero minimum force to detach diaspores from their parent plant, dispersal is often initiated only by greater wind speeds that result in longer flight times and further travelling distances (Bohrer et al., 2008; Greene, 2005; Maurer et al., 2013; Pazos et al., 2013; Schippers and Jongejans, 2005; Soons and Bullock, 2008; Thompson and Katul, 2013; Treep et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge from multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "22c5f686-1c38-48b3-8a2f-aaf853528734",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C30",
+      "claim": "For dandelions Taraxacum officinale, detachment arising from high horizontal wind speeds is thought to be important for the initiation of dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "For dandelions Taraxacum officinale, detachment arising from high horizontal wind speeds is thought to be important for the initiation of dispersal (Greene, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior research on dandelion dispersal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "efe2ff82-4356-4aba-8807-cb8aea75c533",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C31",
+      "claim": "Convective updrafts are likely to be important for long distance flight of dandelions.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas convective updrafts are likely to be important for long distance flight (Tackenberg et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior research on dandelion dispersal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "e18bfdc6-92d4-4bb0-adc9-67a269d31f81",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C32",
+      "claim": "Many wind dispersal processes rely on mechanical innovations to initiate dispersal or aid flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Many wind dispersal processes rely on mechanical innovations to initiate dispersal or aid flight (Seale and Nakayama, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "56efdd64-e7b4-49fc-b932-a2afa862bb03",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C33",
+      "claim": "Cardamine hirsuta uses explosive dispersal via release of built-up pressure in the seed pod.",
+      "claim_type": "EXPLICIT",
+      "source": "for example, explosive dispersal via release of builtup pressure in the seed pod of Cardamine hirsuta (Hofhuis et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example of mechanical innovation in plant dispersal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "0c46a5a3-9706-4931-bfec-6c7a5e69ad2b",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C34",
+      "claim": "Ruellia ciliatiflora uses directed ejection of seeds to enable spinning during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "or directed ejection of seeds to enable spinning during flight in Ruellia ciliatiflora (Cooper et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example of mechanical innovation in plant dispersal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "ec68ff9f-da1a-4b52-bca5-4daaeca93cfa",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C35",
+      "claim": "Specific wing designs and weighting generate leading-edge vortices in autorotating samaras.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific wing designs and weighting generate leading-edge vortices in autorotating samaras (Lentink et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example of mechanical innovation in plant dispersal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "1f9dbffc-b202-4717-9132-33e3e763b13c",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C36",
+      "claim": "Pappus porosity allows the formation of a separated vortex ring in dandelion diaspores.",
+      "claim_type": "EXPLICIT",
+      "source": "and pappus porosity allows the formation of a separated vortex ring (SVR) in dandelion diaspores (Cummins et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior research on dandelion flight mechanics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "156846ce-f454-4e03-8529-84e2db6a1f62",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C37",
+      "claim": "The dandelion SVR is a toroidal vortex that forms in the wake of the pappus generating a region of low pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The dandelion SVR is a toroidal vortex that forms in the wake of the pappus generating a region of low pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "4075811c-785e-4187-b487-a8059598505d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C38",
+      "claim": "The SVR underlies the drag-dominated flight behaviour conferred by the pappus that allows the diaspore to fall both slowly and steadily through the air.",
+      "claim_type": "EXPLICIT",
+      "source": "This underlies the drag-dominated flight behaviour conferred by the pappus that allows the diaspore to fall both slowly and steadily through the air (Cummins et al., 2018; Ledda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior research on dandelion flight mechanics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "6d76d7d7-4fa2-4a22-b93f-cf7004621998",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C39",
+      "claim": "SVR behaviour changes as the Reynolds number (Re) changes.",
+      "claim_type": "EXPLICIT",
+      "source": "SVR behaviour changes as the Reynolds number (Re) changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about fluid mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "97b15729-0191-4121-b717-9eac4eea5084",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C40",
+      "claim": "At Re >429, the SVR becomes unsteady and vortices are chaotically shed from the pappus.",
+      "claim_type": "EXPLICIT",
+      "source": "At Re >429, the SVR becomes unsteady and vortices are chaotically shed from the pappus (Cummins et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior research on dandelion flight mechanics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "8caaa0d9-b72c-4bd3-ac0e-7f93d62cf2eb",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C41",
+      "claim": "At the natural falling velocity of dry dandelion diaspores, Re is approximately 355.",
+      "claim_type": "EXPLICIT",
+      "source": "At the natural falling velocity of dry dandelion diaspores, Re is approximately 355",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior research and measurements.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "40612c89-9218-453d-8ccc-41fbf39e2d4b",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C42",
+      "claim": "At Re approximately 355, the SVR remains steady during flight of dry dandelion diaspores.",
+      "claim_type": "EXPLICIT",
+      "source": "which means that the SVR remains steady during flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between Re and SVR stability.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "163bb338-4041-4b37-afb9-6125f6f1bd86",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C43",
+      "claim": "SVR stability is affected by pappus porosity and thickness of the pappus.",
+      "claim_type": "EXPLICIT",
+      "source": "SVR stability is also affected by pappus porosity and thickness of the pappus (Cummins et al., 2018; Ledda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior research on dandelion flight mechanics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "6019dcea-4a03-4b86-9dae-259e9c5fe725",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C44",
+      "claim": "In response to high humidity, the dandelion pappus can morph into a closed structure by specific radial swelling of floral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in response to high humidity, the dandelion pappus can morph into a closed structure by specific radial swelling of floral tissues (Meng et al., 2016; Rothert, 1895; Seale et al., 2022; Taliev, 1894).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple prior studies including the authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "589ee081-8b34-451a-aaf3-fa00392a0ecc",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C45",
+      "claim": "A ring of tissue, in which vascular tissue is surrounded by the cortical tissue, sits at the centre of the pappus and acts as a structure for the pappus hairs to attach to.",
+      "claim_type": "EXPLICIT",
+      "source": "A ring of tissue, in which vascular tissue is surrounded by the cortical tissue, sits at the centre of the pappus and acts as a structure for the pappus hairs to attach to.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of pappus anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "d002b03c-03c6-4f48-b4c1-0b146c6c7a83",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C46",
+      "claim": "Pappus morphing is widespread and prevalent in Asteraceae lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of this specific mechanism and the widespread prevalence of pappus morphing in Asteraceae lineages (Rothert, 1895; Taliev, 1894) would suggest that pappus morphing serves a function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from historical studies on Asteraceae.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "15e75894-f1f4-422d-b9ce-990c96b05bd5",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C47",
+      "claim": "The dandelion diaspore consists of an achene attached to a pappus comprising around 100 hair-like filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "The dandelion diaspore consists of an achene attached to a pappus comprising around 100 hair-like filaments (Cummins et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior research describing dandelion anatomy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "d31bd10b-8350-4f5b-ac4e-12766b2a4dbf",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C48",
+      "claim": "The pappus is found closed in wetting conditions such as mist or rain.",
+      "claim_type": "EXPLICIT",
+      "source": "The pappus is found closed in wetting conditions such as mist or rain (Rothert, 1895; Taliev, 1894; Figure 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited from historical studies and shown in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "7014e28f-85dc-415e-a9a8-4401cedc8072",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C49",
+      "claim": "When dry, dandelion pappus hairs are approximately horizontal, when measured from \u00b5CT scans at a 2 mm radius from the centre of the pappus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when dry, hairs are approximately horizontal, when measured from \u00b5CT scans at a 2 mm radius from the centre of the pappus (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "62c2ae7b-84f2-441a-a79b-b0996df3ec9f",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C50",
+      "claim": "The pappus angle rapidly decreased (4.0 \u00b1 1.4 degree min\u20131) during moisture treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "For both treatments, the pappus angle (the angle between outermost hairs, see Figure 1c) rapidly decreased (4.0 \u00b1 1.4 degree min\u20131) during moisture treatments",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental measurements shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "46f561e6-fea1-4909-8b04-903dbafd0219",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C51",
+      "claim": "Pappus angle change continued for 5\u201315 min after moisture addition ceased with a final change in angle of 60\u00b0\u201390\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "This continued for 5\u201315 min after moisture addition ceased with a final change in angle of 60\u00b0\u201390\u00b0 (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on experimental observations shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "cee80fe5-73f8-47d4-8948-b0b9468af4c5",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C52",
+      "claim": "At RH of 71.8 and 87.0%, modest angles changes of around 10\u00b0 and 24\u00b0 were observed, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At RH of 71.8 and 87.0%, modest angles changes of around 10\u00b0 and 24\u00b0 were observed, respectively (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on experimental measurements shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "260c178b-bf2c-4b5a-aea5-df7289b0d8dd",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C53",
+      "claim": "The dandelion pappus partially closes at high RH and rapidly closes when fully wet.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the dandelion pappus partially closes at high RH and rapidly closes when fully wet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data on pappus angle changes at different humidity levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "60c3b814-2f36-40e6-86e5-9137a7b274eb",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C54",
+      "claim": "A decrease in pappus angle of around 100\u2013150\u00b0, associated with wetting for 1 hr, resulted in double to triple the falling velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in pappus angle of around 100\u2013150\u00b0, associated with wetting for 1 hr, resulted in double to triple the falling velocity (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on experimental drop test data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "6b57a78d-7528-4bff-bddf-909a2d5bb254",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C55",
+      "claim": "A small increase in mass due to the added water resulted in a 0.7 \u03bcN increase in drag for the wetted samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a small increase in mass due to the added water resulted in a 0.7 \u03bcN increase in drag for the wetted samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on measurements of mass change and drag calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "9f47183d-c007-4e0b-9786-02c6781fb945",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C56",
+      "claim": "The wet diaspores with closed pappi exhibit substantially lower CD for a given Re compared to dry (weighted) diaspores with open pappi.",
+      "claim_type": "EXPLICIT",
+      "source": "The wet diaspores with closed pappi, however, exhibit a different CD-Re relationship with substantially lower CD for a given Re compared to dry (weighted) diaspores with open pappi (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of drag coefficient and Reynolds number data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "99818028-064c-4928-a27a-96012116fbf0",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C57",
+      "claim": "Closing the pappus increases Re as falling velocity increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Closing the pappus therefore has two simultaneous effects: Re is increased as falling velocity increases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "2d457249-92b2-484f-b3a0-c36c5f64d714",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C58",
+      "claim": "Closing the pappus decreases the drag per unit of projected pappus area relative to a hypothetical open pappus of the same projected area.",
+      "claim_type": "EXPLICIT",
+      "source": "and the drag per unit of projected pappus area is decreased relative to a hypothetical open pappus of the same projected area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "e3702303-daca-4973-801b-1e7f4ad04d63",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C59",
+      "claim": "Pappus morphing is associated with shifting to a different region of the CD-Re parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, pappus morphing is associated with shifting to a different region of the CD-Re parameter space (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion from the analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "d03bbeb3-387d-43da-9657-1fd93cf482b4",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C60",
+      "claim": "Closing the pappus reduces the projected area exposed to the flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Closing the pappus has several effects on the geometry: firstly, the projected area exposed to the flow reduces (Figure 2\u2014figure supplement 1a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "b643484b-02c7-4f13-907d-9d76d57e93cd",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C61",
+      "claim": "Closing the pappus reduces porosity of the pappus as hairs move closer together.",
+      "claim_type": "EXPLICIT",
+      "source": "secondly, porosity of the pappus reduces as hairs move closer together (Figure 2c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "a197d7f8-7268-4581-9485-c8f97a1c9837",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C62",
+      "claim": "Closing the pappus makes the shape of the pappus less disk-like and more cone-like.",
+      "claim_type": "EXPLICIT",
+      "source": "and thirdly, the shape of the pappus becomes less disk-like and more cone-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation of the geometric changes during pappus closing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "3141ebff-b1c4-4acd-aaff-0db4d5ea5e73",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C63",
+      "claim": "The combination of geometric effects from pappus closing alters the fluid mechanics around the pappus by reducing vortex size and shifting the vortex towards the pappus.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the combination of these effects alters the fluid mechanics around the pappus by reducing vortex size and shifting the vortex towards the pappus (Figure 2h and i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on PIV analysis shown in Figure 2g and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "70097ff3-000f-4fe3-8a30-a3b17e2426f8",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C64",
+      "claim": "Flow visualisation confirmed the presence of the SVR in both open and partially closed pappi.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow visualisation confirmed the presence of the SVR in both open and partially closed pappi (Figure 2e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on flow visualization experiments shown in Figure 2e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "d080b2e6-123d-4b7c-bad8-a2303c74d628",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C65",
+      "claim": "At more open pappus angles, the position of minimum uz moved further downstream of the pappus.",
+      "claim_type": "EXPLICIT",
+      "source": "At more open pappus angles, the position of minimum uz moved further downstream of the pappus (Figure 2g, p=0.001, R2 = 0.34).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on PIV analysis shown in Figure 2g with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "a57d94fe-29d2-4abd-bf69-5cd75ccb4b02",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C66",
+      "claim": "The nominal length of the vortex was markedly reduced at smaller pappus angles.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the size of the vortex significantly changes with altered pappus angle. The nominal length (see 'Materials and methods') of the vortex was markedly reduced at smaller pappus angles (Figure 2i, p<0.001, R2 = 0.46).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on PIV analysis shown in Figure 2h with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "12ee85ea-f998-4695-9c8c-76eea8f9f817",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C67",
+      "claim": "Hydrating samples for 1 hr by mist application significantly reduced detachment for the range of wind speeds tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrating samples for 1 hr by mist application significantly (p<0.001, X2 = 341, df = 1) reduced detachment for the range of wind speeds tested (Figure 3c, Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on wind tunnel detachment experiments shown in Figure 3c with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "badd0c0d-cb74-49b3-a3a7-b8d23cba0076",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C68",
+      "claim": "In flow with 9.1% turbulent intensity, 24% of dry diaspores remained attached at the maximum wind speed (9.8 m s\u20131) compared to 50% of wet diaspores.",
+      "claim_type": "EXPLICIT",
+      "source": "In flow with 9.1% turbulent intensity, 24% of dry diaspores remained attached at the maximum wind speed (9.8 m s\u20131) compared to 50% of wet diaspores (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on wind tunnel detachment experiments shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "f5600f2e-bede-4110-83ab-7d25900633db",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C69",
+      "claim": "Reducing the turbulent intensity of the flow reduced diaspore detachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the turbulent intensity of the flow also reduced diaspore detachment (Figure 3\u2014figure supplement 1b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on wind tunnel experiments shown in Figure 3\u2014figure supplement 1b, c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "23082f53-bc2f-4fb0-9716-e37f035cfdf7",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C70",
+      "claim": "Hydration and air flow impact on the initiation of dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that hydration and air flow impact on the initiation of dispersal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the detachment experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "fc941278-c442-4ea8-a8c2-3ba535431737",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C71",
+      "claim": "There is a consistent negative correlation between wind speed and RH in Edinburgh meteorological data.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a consistent negative correlation between wind speed and RH (Figure 4a, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of meteorological data shown in Figure 4a and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "22b49252-9ce0-4c28-9158-22cc4ce1d9b7",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C72",
+      "claim": "At high RH, when dandelion pappi are more likely to be closed, wind speeds are relatively low, although still variable.",
+      "claim_type": "EXPLICIT",
+      "source": "At high RH, when dandelion pappi are more likely to be closed, wind speeds are relatively low, although still variable (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of meteorological data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "972b667d-a2e3-482b-a28c-8575d6d55804",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C73",
+      "claim": "Using the wet weather wind conditions, the falling velocity of the diaspore when the pappus is closed, and the probability of detachment based on wet infructescences, closing the pappus reduced median dispersal from 1.5 m to 0.9 m compared to keeping the pappus open during wet weather.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to keeping the pappus open during wet weather, closing the pappus reduced median dispersal from 1.5 m to 0.9 m (Figure 4c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on dispersal modeling results shown in Figure 4c and d (Model 3 vs Model 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "26e046f4-f195-425d-8b99-9162ade33932",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C74",
+      "claim": "Closing the pappus in wet weather increased long-distance dispersal from 5.6% to 7.5% of the 10,000 simulated dispersal events, giving an increase of 34%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, long-distance dispersal increased from 5.6% to 7.5% of the 10,000 simulated dispersal events (Figure 4e) giving an increase of 34%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on dispersal modeling results shown in Figure 4e (Model 3 vs Model 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "9ee6a868-d71a-422e-9db1-1cda51796945",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C75",
+      "claim": "Closing the pappus only during flight dramatically reduced median dispersal from 4.3 m to 1.4 m.",
+      "claim_type": "EXPLICIT",
+      "source": "Closing the pappus only during flight (Model 4) dramatically reduced median dispersal (4.3 m to 1.4 m)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on dispersal modeling results (Model 4 vs Model 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "2e9b33c3-51de-43ef-a25f-e2cca1f06897",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C76",
+      "claim": "Keeping the pappus closed only during detachment considerably increased both median and long-distance dispersal (4.3 m to 6.6 m and 17.5% vs. 21.4% respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "while keeping the pappus closed only during detachment (Model 5) considerably increased both median and long-distance dispersal (4.3 m to 6.6 m and 17.5% vs. 21.4% respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on dispersal modeling results (Model 5 vs Model 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "d4c99b8f-c123-415f-9415-0b2ac644cc59",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C77",
+      "claim": "There was a considerably higher probability of detaching in Models 1 and 3 when wind speeds were selected from the dry distributions and diaspores detachment was based on having the pappus open.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a considerably higher probability of detaching in Models 1 and 3 when wind speeds were selected from the dry distributions and diaspores detachment was based on having the pappus open (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on dispersal modeling results shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "8c125c78-169f-41fe-bb95-1e462e24240a",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C78",
+      "claim": "When pappi were closed and weather was wet, the probability of detachment dropped dramatically, which is likely due to the low wind speeds and higher detachment thresholds in these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "When pappi were closed and weather was wet (Model 3), the probability of detachment dropped dramatically, which is likely due to the low wind speeds and higher detachment thresholds in these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on dispersal modeling results and inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "cfcd54b2-b47e-4cda-832e-0f6264572c4d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C79",
+      "claim": "When detachment did occur in wet conditions with closed pappi, wind speeds were higher than when the pappi were open in wet weather.",
+      "claim_type": "EXPLICIT",
+      "source": "When detachment did occur, wind speeds were higher than when the pappi were open in wet weather (Figure 4g, Model 3 vs. Model 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on dispersal modeling results shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "da8a534b-a562-4c46-8c33-9380b775fffd",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C80",
+      "claim": "Dispersal in wet conditions is a rare event.",
+      "claim_type": "EXPLICIT",
+      "source": "The data imply that dispersal in wet conditions is a rare event (Figure 4f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the dispersal modeling results shown in Figure 4f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "e0b521ae-5e11-4557-99c3-7c5a66bf88cb",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C81",
+      "claim": "When dispersal does occur in wet conditions, closing the pappus increases the chances of travelling long distances.",
+      "claim_type": "EXPLICIT",
+      "source": "but that when it does occur, closing the pappus increases the chances of travelling long distances (Figure 4e, Model 3 vs. Model 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on dispersal modeling results shown in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "4fa03061-0527-49d9-ae94-9841ed5eca35",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C82",
+      "claim": "Closing the dandelion pappus maintains long-distance dispersal primarily via its effect on detachment.",
+      "claim_type": "EXPLICIT",
+      "source": "We can conclude that closing the dandelion pappus maintains long-distance dispersal primarily via its effect on detachment (Model 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing the different dispersal models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "2789a200-95ef-41cb-bea6-55d912d27939",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C83",
+      "claim": "Closing the pappus biases diaspore release towards dispersing in dry conditions when wind speeds tend to be higher.",
+      "claim_type": "EXPLICIT",
+      "source": "This biases diaspore release towards dispersing in dry conditions when wind speeds tend to be higher (Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on dispersal modeling results shown in Figure 4g.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "8553bde2-312a-4dc8-b221-78ff2139c8c7",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C84",
+      "claim": "For the few diaspores that do disperse in wet conditions, a greater spread of dispersal distances occurs with reduced median distances but slightly higher long-distance dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for the few diaspores that do disperse in wet conditions, a greater spread of dispersal distances occurs with reduced median distances but slightly higher long-distance dispersal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of the dispersal modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "8cb2cc55-e3ed-4ca1-98aa-6544204dd559",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C85",
+      "claim": "In the Edinburgh dataset, dry weather is three times more frequent than wet.",
+      "claim_type": "EXPLICIT",
+      "source": "In our dataset, dry weather is three times more frequent than wet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of the meteorological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "aa09fb3e-f9a0-4b8e-a52d-dfe76de37e2d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C86",
+      "claim": "Diaspores are 8 times less likely to detach in wet weather versus dry when morphing occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Diaspores are 8 times less likely to detach in wet weather versus dry when morphing occurs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of the dispersal modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "1da8a854-ad1f-4308-97ce-2a2536807af2",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C87",
+      "claim": "Diaspores are 2.5 times less likely to detach in wet weather versus dry when the pappus remains open.",
+      "claim_type": "EXPLICIT",
+      "source": "and 2.5 times less likely when the pappus remains open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of the dispersal modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "af2f01ad-a38b-4c52-9401-5195819825fe",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C88",
+      "claim": "Morphing led to a 6% increase in long-distance dispersal (from 26.7% to 28.5% of seeds) compared to a pappus that was always open.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining how the models varied, we found that morphing led to a 6% increase in long-distance dispersal (from 26.7% to 28.5% of seeds) (Figure 4\u2014figure supplement 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the combined dispersal models shown in Figure 4\u2014figure supplement 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "43aad333-f235-4c2e-ac57-25a9c0898b9e",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C89",
+      "claim": "Morphing led to a 23% increase in median dispersal (from 3.9 m to 4.8 m) compared to a pappus that was always open.",
+      "claim_type": "EXPLICIT",
+      "source": "and a 23% increase in median dispersal (from 3.9 m to 4.8 m) compared to a pappus that was always open (Figure 4\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the combined dispersal models shown in Figure 4\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "a0c61e78-eefd-4748-a5ab-571e6933df99",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C90",
+      "claim": "The dandelion diaspore achieves functionality during flight by constructing a filamentous pappus whose porosity allows an SVR to form.",
+      "claim_type": "EXPLICIT",
+      "source": "The dandelion diaspore achieves functionality during flight by constructing a filamentous pappus whose porosity allows an SVR to form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the functional mechanism in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "4f6fb7de-b994-446f-a3d1-6bc79a74e5c4",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C91",
+      "claim": "If pappus hairs remained open but shortened in length, the drag per unit area would be greater than for a cone-like morphology with the same projected area.",
+      "claim_type": "EXPLICIT",
+      "source": "If pappus hairs remained open but shortened in length, the drag per unit area would be greater than for a cone-like morphology with the same projected area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothetical comparison to explain the functional advantage of the cone-like shape.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "016198ad-fed1-4a75-b926-405638573179",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C92",
+      "claim": "By generating a cone-like shape instead of a disk-like shape, the pappus becomes more streamlined.",
+      "claim_type": "EXPLICIT",
+      "source": "By generating a cone-like shape instead of a disk-like shape, the pappus becomes more streamlined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the functional advantage of pappus morphing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "f8982be5-77f9-4f30-ad91-7dc104ab2fa1",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C93",
+      "claim": "Dispersing far from a parent is often considered favourable as resource and kin competition are reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Dispersing far from a parent is often considered favourable as resource and kin competition are reduced (Saastamoinen et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge in dispersal ecology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "7c348765-ca19-4453-9e3c-8bd99d5e3f8d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C94",
+      "claim": "Soil moisture levels are temporally and spatially variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Soil moisture levels are temporally and spatially variable (Vinnikov et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "1ab9067e-0c25-40a9-9524-721f11b26354",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C95",
+      "claim": "Soil moisture levels are more variable than characteristics such as light and temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "more than characteristics such as light and temperature (Silvertown et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as established knowledge.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "148b40f6-eef3-46cd-9773-47e8015f5a98",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C96",
+      "claim": "Optimal germination sites and times may vary considerably with changing weather and microenvironments.",
+      "claim_type": "EXPLICIT",
+      "source": "meaning that optimal germination sites and times may vary considerably with changing weather and microenvironments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the variability in soil moisture.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "f0cb18c8-9fdc-46a9-a4c4-da0151ae9fde",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C97",
+      "claim": "Dandelions have evolved pappus morphing because it biases detachment toward favourable dispersal times, which enhances both median and long-distance dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that dandelions have evolved pappus morphing because it biases detachment toward favourable dispersal times, which enhances both median and long-distance dispersal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main evolutionary interpretation proposed by the authors based on their results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "01409eed-f912-45e0-9e84-7556125b1078",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C98",
+      "claim": "Plants are not able to make conscious decisions influencing their behaviour, but can form mechanical or chemical structures that respond differentially to the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants are not able to make conscious decisions influencing their behaviour, but can form mechanical or chemical structures that respond differentially to the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle about plant responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "98252d45-051f-4aeb-a14a-6d8074002141",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C99",
+      "claim": "There are two types of informed dispersal in plants: developmental adaptation of heteromorphic diaspores to environmental stresses, which acts over a longer time scale responding to stable environmental conditions; and highly temporal and local responses.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two types of informed dispersal in plants: developmental adaptation of heteromorphic diaspores to environmental stresses (Martorell and Mart\u00ednez-L\u00f3pez, 2014), which acts over a longer time scale responding to stable environmental conditions; and highly temporal and local responses such as the fire-induced dispersal of Banksia (He et al., 2011), and the temperature-controlled dehiscence of Brassica siliques (Li et al., 2018), as well as the dynamic pappus morphing observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a classification of informed dispersal types with cited examples.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "b02a82d4-d0e8-4028-afec-6bcd299ca75a",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C100",
+      "claim": "Short-term regulation may be particularly beneficial in responding to unpredictable or fast-changing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such short-term regulation may be particularly beneficial in responding to unpredictable or fast-changing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the adaptive value of rapid responses.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "518989a2-dcf0-45f1-be12-296f22b5e446",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C101",
+      "claim": "The effects of pappus closure on detachment and on flight counteract one another to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of pappus closure on detachment and on flight counteract one another to some extent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "0556469f-e8ed-4121-9354-6a3500538d02",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C102",
+      "claim": "The low likelihood of detaching at low windspeeds when dry (due to higher average wind speeds) and when wet (due to pappus closure) means that dispersal largely occurs when wind speeds are high.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the low likelihood of detaching at low windspeeds when dry (due to higher average wind speeds) and when wet (due to pappus closure) means that dispersal largely occurs when wind speeds are high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "0ed9c795-117a-40ba-be62-b3a2914c17e0",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C103",
+      "claim": "Higher wind speeds appear to be more significant than the change in falling velocity as the overall effect of a morphing pappus is to increase median and long-distance dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "These higher wind speeds appear to be more significant than the change in falling velocity as the overall effect of a morphing pappus is to increase median and long-distance dispersal (Figure 4, S5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the modeling results shown in Figure 4 and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "7035db87-7b30-4110-9eae-313ec9b8d364",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C104",
+      "claim": "The effect on long-distance dispersal is particularly significant as this has a disproportionate effect on ecological distributions and is often the major driver of range expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect on long-distance dispersal is particularly significant as this has a disproportionate effect on ecological distributions and is often the major driver of range expansion (Clark, 1998; Kot et al., 1996; Trakhtenbrot et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the ecological significance of long-distance dispersal.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "82163aae-87d7-41b1-bd09-d2e3c3600607",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C105",
+      "claim": "Pappus morphing may have additional functions beyond detachment, flight, and dispersal, such as protection from damage, or to aid germination.",
+      "claim_type": "EXPLICIT",
+      "source": "Pappus morphing may have additional functions beyond detachment, flight, and dispersal, such as protection from damage, or to aid germination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation about other possible functions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "aa3b5a62-bb21-4f41-86e6-720538a93e78",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C106",
+      "claim": "The morphing phenomenon occurs in many (perhaps most) pappus-bearing diaspores but is conspicuously missing from some representatives of the Asteraceae (e.g. Leontodon, Hieracium, Erigeron).",
+      "claim_type": "EXPLICIT",
+      "source": "The morphing phenomenon occurs in many (perhaps most) pappus-bearing diaspores but is conspicuously missing from some representatives of the Asteraceae (e.g. Leontodon, Hieracium, Erigeron) (Rothert, 1895; Taliev, 1894).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from historical studies on Asteraceae.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "88bac80b-7ff2-47c0-81ff-d42113bf116d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C107",
+      "claim": "A comparative approach examining the ecological and phenological features of pappose fruits that do or do not morph may yield greater insight into the roles of pappus morphing.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparative approach examining the ecological and phenological features of pappose fruits that do or do not morph may yield greater insight into the roles of pappus morphing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "8e781688-8674-4678-b689-d1ff10ffb29d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C108",
+      "claim": "Understanding of structural functions within environmental contexts is critical to predict the ecological consequences of climate change.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering how prevalent environmentally induced plasticity is in plant structure and its development, understanding of structural functions within environmental contexts is critical to predict the ecological consequences of climate change (Denny and Helmuth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the broader significance of the research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "e17e40e8-5ac3-4f3a-8ec0-67501b7853ea",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C109",
+      "claim": "Insights into ecological and environmental drivers enable us to comprehend selective pressure that has acted and will act to evolve plant forms and their functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Insights into ecological and environmental drivers in turn enable us to comprehend selective pressure that has acted and will act to evolve plant forms and their functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle about evolutionary understanding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "95e5b672-93f8-4a51-b235-f2763ba25519",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C110",
+      "claim": "All samples used in the study were the progeny of plants grown in the greenhouse for two generations originating from the same individual.",
+      "claim_type": "EXPLICIT",
+      "source": "All samples were the progeny of plants grown in the greenhouse for two generations originating from the same individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the plant material used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "ed11b2c4-ae6e-4c22-b6f1-c3b75b957b1c",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C111",
+      "claim": "As Taraxacum officinale agg. reproduces apomictically, all diaspores used were considered to be genetically identical.",
+      "claim_type": "EXPLICIT",
+      "source": "As this subspecies reproduces apomictically, all diaspores used were considered to be genetically identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the genetic uniformity of the samples.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "13337709-d5c1-48ff-aae3-adde02d09f1e",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C112",
+      "claim": "The mean increase in weight after wetting was 70 \u00b5g, which corresponds to approximately 10% greater weight when wet compared to dry.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean increase in weight after wetting was 70 \u00b5g, which corresponds to approximately 10% greater weight when wet compared to dry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on measurements from the drop test experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "7bed4e2a-42bb-44ce-b0ca-227fe385c313",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C113",
+      "claim": "The turbulent intensities used in the detachment experiments are comparable to that in some natural conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The turbulent intensities used here are comparable to that in some natural conditions (Ghanadi et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to justify the experimental conditions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "722a2f6e-72ee-4ab9-8962-1f6f5189a50d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C114",
+      "claim": "Turbulence in the atmospheric boundary layer exhibits enormous variability, with values as high as 400% reported.",
+      "claim_type": "EXPLICIT",
+      "source": "though turbulence in the atmospheric boundary layer exhibits enormous variability, with values as high as 400% reported (Wilson et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited to provide context for the range of natural turbulence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "737e4e65-8653-4129-88a8-2f0268558905",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C115",
+      "claim": "Field-measured RH > 90% is a good proxy for wetness on plant surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "As dandelion pappi can partially close at RH > 70% (Figure 1\u2014figure supplement 1b) and field-measured RH > 90% is a good proxy for wetness on plant surfaces (Sentelhas et al., 2008), we used RH = 90% as a cut-off point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited to justify the choice of RH threshold in the modeling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "c137d24c-4a4f-450c-a70b-ee2ac79ec06a",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "claim_id": "C116",
+      "claim": "Diaspore falling velocities for dry and wet conditions were 0.3 m s\u20131 and 0.7 m s\u20131, respectively, corresponding to the measured values from drop tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Diaspore falling velocities for dry and wet conditions were 0.3 m s\u20131 and 0.7 m s\u20131, respectively, corresponding to the measured values from our drop tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the parameter values used in the dispersal model based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8b1b2404-9903-43d2-99c5-5c182ed810b9",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The dandelion pappus reversibly closes in response to moisture. The pappus angle rapidly decreases (4.0 \u00b1 1.4 degree min\u207b\u00b9) during moisture treatments, continuing for 5\u201315 min after moisture addition ceases with a final change of 60\u00b0\u201390\u00b0. At high relative humidity (71.8% and 87.0%), modest angle changes of around 10\u00b0 and 24\u00b0 were observed, respectively. The pappus partially closes at high RH and rapidly closes when fully wet.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44, C48\u2013C53 provide converging experimental evidence from moisture chamber imaging, historical citations, and \u00b5CT scans demonstrating moisture-dependent pappus closure. The quantitative measurements of angle changes at different humidity levels and time courses are well-documented with appropriate sample sizes (n=10\u201312) and statistical reporting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "9a3d4c49-093d-44cb-969e-0dc225ee329f",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pappus closing in moist conditions decreases the drag coefficient and increases falling velocity. A decrease in pappus angle of 100\u2013150\u00b0 resulted in double to triple the falling velocity. Wet diaspores with closed pappi exhibit substantially lower CD for a given Re compared to dry diaspores with open pappi, shifting to a different region of the CD-Re parameter space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5\u2013C6, C54\u2013C59 are supported by drop test experiments (n=20\u201321 diaspores) with clear quantitative measurements. The fluid mechanics analysis appropriately calculates drag coefficients and Reynolds numbers. The relationship between pappus morphology and aerodynamic properties is well-established through experimental data shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "53755c23-09ce-4d8c-8b63-b6259c157875",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pappus closing alters the separated vortex ring (SVR) by reducing projected area, decreasing porosity, and changing shape from disk-like to cone-like. This reduces vortex size and shifts the vortex closer to the pappus. At more open pappus angles, the position of minimum uz moved further downstream (p=0.001, R\u00b2=0.34), and vortex length was markedly reduced at smaller angles (p<0.001, R\u00b2=0.46).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60\u2013C66 are supported by particle image velocimetry (PIV) analysis and flow visualization experiments (n=12 diaspores). The fluid mechanics changes are quantified with appropriate statistical tests showing significant relationships. The presence of SVR in both open and closed states is confirmed experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "ad7214f6-9c2e-40f8-81de-dc57d9f4dcff",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hydrating samples for 1 hr significantly reduced detachment across wind speeds tested (p<0.001, X\u00b2=341, df=1). At 9.1% turbulent intensity and maximum wind speed (9.8 m s\u207b\u00b9), 50% of wet diaspores remained attached compared to 24% of dry diaspores. Reducing turbulent intensity also reduced detachment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C67\u2013C70 are supported by wind tunnel detachment experiments with large sample sizes (n=20 capitula, 2654\u20133001 diaspores per treatment). Statistical significance is properly reported with chi-square tests. The experimental design appropriately controls for turbulence intensity and moisture conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "5e03937f-e832-45ff-bfcc-77b8f2ed1477",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Meteorological data from Edinburgh shows a consistent negative correlation between wind speed and relative humidity. At high RH when pappi are more likely closed, wind speeds are relatively low but variable. Dry weather (RH<90%) is three times more frequent than wet weather.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71\u2013C72, C85 are supported by analysis of 30 years of meteorological data (1987\u20132017) from Edinburgh. The negative correlation between wind speed and RH is clearly shown in Figure 4a and supplementary figures for multiple UK locations. The data analysis is appropriate for establishing environmental context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "7f13302d-9df5-48af-8b34-1a17ff07ac68",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dispersal modeling shows that closing the pappus in wet weather reduces median dispersal from 1.5 m to 0.9 m but increases long-distance dispersal from 5.6% to 7.5% (34% increase). The effect is primarily through altered detachment thresholds rather than flight dynamics. Closing the pappus biases dispersal toward dry conditions with higher wind speeds, maintaining long-distance dispersal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73\u2013C84 are supported by mechanistic dispersal modeling (CELC Markov chain STG model) with 10,000 simulated dispersal events per model. The modeling appropriately separates effects of detachment vs. flight (Models 1\u20135) and uses empirically measured parameters. The conclusions about the relative importance of detachment vs. flight effects are well-justified by model comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "d27287de-9fc0-4337-a9ff-ceb98a4d7c04",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "When combining dry and wet weather conditions weighted by frequency, morphing led to a 6% increase in long-distance dispersal (26.7% to 28.5%) and 23% increase in median dispersal (3.9 m to 4.8 m) compared to a pappus that remains open. Diaspores are 8 times less likely to detach in wet weather when morphing occurs vs. 2.5 times less likely when the pappus remains open.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86\u2013C89 are supported by combined dispersal modeling that appropriately weights models by weather frequency and detachment probability. The Jensen\u2013Shannon divergence (0.034) indicates similar distribution shapes with quantifiable differences in median and long-distance dispersal. The analysis properly accounts for the rarity of wet weather dispersal events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "e5758fef-95b6-402d-9813-17ac1c920232",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that moisture-dependent pappus morphing is a form of informed dispersal that increases dispersal distances by reducing diaspore release when wind speeds are low. Dandelions evolved pappus morphing because it biases detachment toward favorable dispersal times, enhancing both median and long-distance dispersal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8\u2013C9, C97 represent the main interpretive conclusion supported by the experimental data on pappus closure (C3, C48\u2013C53), aerodynamics (C5\u2013C6, C54\u2013C59), detachment (C7, C67\u2013C70), and dispersal modeling (C73\u2013C89). The inference that this constitutes 'informed dispersal' is reasonable given the demonstrated functional consequences, though the evolutionary claim (C97) involves speculation about selective pressures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The dandelion pappus enables formation of a separated vortex ring (SVR) during flight. The SVR is a toroidal vortex generating low pressure that underlies drag-dominated flight behavior. At natural falling velocity (Re\u2248355), the SVR remains steady. At Re>429, the SVR becomes unsteady with chaotic vortex shedding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1\u2013C2, C36\u2013C43, C47 describe established knowledge about dandelion flight mechanics, primarily citing prior work (Cummins et al., 2018; Ledda et al., 2019). These claims provide necessary background context and are appropriately cited. The current work builds on this foundation by examining how pappus morphing affects the SVR.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "44aaaa0e-b680-4867-ad3f-0c08693fb585",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Differential swelling capacities of the vasculature versus cortical tissues facilitate raising and lowering of pappus hairs. A ring of tissue at the pappus center, with vascular tissue surrounded by cortical tissue, provides the attachment structure for pappus hairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C45 describe the anatomical mechanism of pappus closure, citing prior work by the authors (Seale et al., 2022). This provides necessary mechanistic context for understanding how moisture triggers pappus morphing. The anatomical description is consistent with the observed morphological changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "34536ddd-b249-4175-b293-9c74b086683d",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The dandelion achieves flight functionality through a filamentous pappus whose porosity allows SVR formation. By generating a cone-like rather than disk-like shape when closing, the pappus becomes more streamlined. If hairs remained open but shortened, drag per unit area would be greater than for a cone-like morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90\u2013C92 represent interpretive discussion about the functional advantages of the cone-like morphology. While C90 is well-supported by prior work, C91\u2013C92 are hypothetical comparisons without direct experimental validation. The claim about drag differences between shortened-open vs. cone-like morphologies (C91) is speculative and would require additional experiments or simulations to verify.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "18781e44-ff1d-4d49-a9c6-8044f11c08f4",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The effects of pappus closure on detachment and flight counteract one another to some extent, but dispersal largely occurs when wind speeds are high due to low detachment likelihood at low wind speeds. Higher wind speeds appear more significant than changes in falling velocity, as the overall effect increases median and long-distance dispersal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101\u2013C103 synthesize findings from the dispersal modeling (C73\u2013C84) to explain the net effect of pappus morphing. The interpretation that detachment effects dominate over flight effects is well-supported by comparing Models 4 and 5. The conclusion is appropriately qualified ('appear to be') given the modeling assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "4aa48f32-a3e4-4724-a038-0176620e8fc2",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "All samples were progeny of greenhouse-grown plants from two generations originating from the same individual. As Taraxacum officinale agg. reproduces apomictically, all diaspores were considered genetically identical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110\u2013C111 describe the plant material and genetic uniformity of samples. This is important methodological information ensuring that observed variation is environmental rather than genetic. The apomictic reproduction of dandelions is well-established, making the genetic uniformity assumption reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "ebdcbd90-49e6-4316-8bc5-a59c933b0fa3",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mean weight increase after wetting was 70 \u00b5g (\u224810% increase). Turbulent intensities used (1.7\u20139.1%) are comparable to some natural conditions, though atmospheric turbulence can reach 400%. RH>90% is a good proxy for wetness on plant surfaces. Falling velocities for dry and wet conditions were 0.3 and 0.7 m s\u207b\u00b9, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112\u2013C116 provide methodological details and parameter values used in experiments and modeling. These are appropriately measured and cited where relevant (C113\u2013C115). The choice of RH=90% as a cutoff (C115) is justified by both the partial closure data (C52) and cited literature. The falling velocities (C116) match the experimental measurements from drop tests.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "f593eb32-f78e-49bd-961b-6163acea43f4",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing that animal migration is sensitized to environmental cues while plant dispersal is considered largely passive. Prior work shows that intraspecific variation in wind dispersal is primarily determined by environmental conditions rather than plant factors, though some plant traits can affect dispersal. Various mechanical innovations aid plant dispersal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10\u2013C35 provide literature context appropriately cited from prior work. These establish the conceptual framework contrasting animal 'informed dispersal' with supposedly passive plant dispersal, setting up the paper's challenge to this paradigm. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion claims about the ecological significance of dispersal, soil moisture variability, informed dispersal in plants, and the importance of understanding structural functions in environmental contexts for predicting climate change consequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93\u2013C96, C98\u2013C100, C104, C108\u2013C109 provide ecological and evolutionary context for interpreting the results. These are appropriately cited from prior literature and represent established knowledge in dispersal ecology. The claims help frame the significance of the findings but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    },
+    {
+      "id": "9cf8eaab-7a11-4150-ac0e-4747d67299ae",
+      "content_id": "5b9a593e-516d-42c6-8b46-79db0c7d53e0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Pappus morphing is widespread in Asteraceae lineages, suggesting it serves a function. It may have additional functions beyond dispersal such as protection or aiding germination. The phenomenon is conspicuously missing from some Asteraceae genera. Comparative approaches examining species that do or do not morph may yield further insights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46, C105\u2013C107 discuss the phylogenetic distribution and potential additional functions of pappus morphing. C46 is supported by historical citations, but C105 is purely speculative without supporting data. C106 notes variation across Asteraceae but doesn't explain it. C107 suggests future research directions. These claims raise interesting questions but lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:28:49.442276Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "985ec1b3-713c-45ea-bd1b-cce0fc653655",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "6019dcea-4a03-4b86-9dae-259e9c5fe725",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "d31bd10b-8350-4f5b-ac4e-12766b2a4dbf",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "7014e28f-85dc-415e-a9a8-4401cedc8072",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "62c2ae7b-84f2-441a-a79b-b0996df3ec9f",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "46f561e6-fea1-4909-8b04-903dbafd0219",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "cee80fe5-73f8-47d4-8948-b0b9468af4c5",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "260c178b-bf2c-4b5a-aea5-df7289b0d8dd",
+      "result_id": "8b1b2404-9903-43d2-99c5-5c182ed810b9"
+    },
+    {
+      "claim_id": "28ee0c81-09a5-4282-8b7f-6a3a5caa7193",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "5869bd94-5d40-4272-93ec-c6d83a567483",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "60c3b814-2f36-40e6-86e5-9137a7b274eb",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "6b57a78d-7528-4bff-bddf-909a2d5bb254",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "9f47183d-c007-4e0b-9786-02c6781fb945",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "99818028-064c-4928-a27a-96012116fbf0",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "2d457249-92b2-484f-b3a0-c36c5f64d714",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "e3702303-daca-4973-801b-1e7f4ad04d63",
+      "result_id": "9a3d4c49-093d-44cb-969e-0dc225ee329f"
+    },
+    {
+      "claim_id": "d03bbeb3-387d-43da-9657-1fd93cf482b4",
+      "result_id": "53755c23-09ce-4d8c-8b63-b6259c157875"
+    },
+    {
+      "claim_id": "b643484b-02c7-4f13-907d-9d76d57e93cd",
+      "result_id": "53755c23-09ce-4d8c-8b63-b6259c157875"
+    },
+    {
+      "claim_id": "a197d7f8-7268-4581-9485-c8f97a1c9837",
+      "result_id": "53755c23-09ce-4d8c-8b63-b6259c157875"
+    },
+    {
+      "claim_id": "3141ebff-b1c4-4acd-aaff-0db4d5ea5e73",
+      "result_id": "53755c23-09ce-4d8c-8b63-b6259c157875"
+    },
+    {
+      "claim_id": "70097ff3-000f-4fe3-8a30-a3b17e2426f8",
+      "result_id": "53755c23-09ce-4d8c-8b63-b6259c157875"
+    },
+    {
+      "claim_id": "d080b2e6-123d-4b7c-bad8-a2303c74d628",
+      "result_id": "53755c23-09ce-4d8c-8b63-b6259c157875"
+    },
+    {
+      "claim_id": "a57d94fe-29d2-4abd-bf69-5cd75ccb4b02",
+      "result_id": "53755c23-09ce-4d8c-8b63-b6259c157875"
+    },
+    {
+      "claim_id": "3e169a65-abbb-4ebf-90d6-0fe05e228c0a",
+      "result_id": "ad7214f6-9c2e-40f8-81de-dc57d9f4dcff"
+    },
+    {
+      "claim_id": "12ee85ea-f998-4695-9c8c-76eea8f9f817",
+      "result_id": "ad7214f6-9c2e-40f8-81de-dc57d9f4dcff"
+    },
+    {
+      "claim_id": "badd0c0d-cb74-49b3-a3a7-b8d23cba0076",
+      "result_id": "ad7214f6-9c2e-40f8-81de-dc57d9f4dcff"
+    },
+    {
+      "claim_id": "f5600f2e-bede-4110-83ab-7d25900633db",
+      "result_id": "ad7214f6-9c2e-40f8-81de-dc57d9f4dcff"
+    },
+    {
+      "claim_id": "23082f53-bc2f-4fb0-9716-e37f035cfdf7",
+      "result_id": "ad7214f6-9c2e-40f8-81de-dc57d9f4dcff"
+    },
+    {
+      "claim_id": "fc941278-c442-4ea8-a8c2-3ba535431737",
+      "result_id": "5e03937f-e832-45ff-bfcc-77b8f2ed1477"
+    },
+    {
+      "claim_id": "22b49252-9ce0-4c28-9158-22cc4ce1d9b7",
+      "result_id": "5e03937f-e832-45ff-bfcc-77b8f2ed1477"
+    },
+    {
+      "claim_id": "8cb2cc55-e3ed-4ca1-98aa-6544204dd559",
+      "result_id": "5e03937f-e832-45ff-bfcc-77b8f2ed1477"
+    },
+    {
+      "claim_id": "972b667d-a2e3-482b-a28c-8575d6d55804",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "26e046f4-f195-425d-8b99-9162ade33932",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "9ee6a868-d71a-422e-9db1-1cda51796945",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "2e9b33c3-51de-43ef-a25f-e2cca1f06897",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "d4c99b8f-c123-415f-9415-0b2ac644cc59",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "8c125c78-169f-41fe-bb95-1e462e24240a",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "cfcd54b2-b47e-4cda-832e-0f6264572c4d",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "da8a534b-a562-4c46-8c33-9380b775fffd",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "e0b521ae-5e11-4557-99c3-7c5a66bf88cb",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "4fa03061-0527-49d9-ae94-9841ed5eca35",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "2789a200-95ef-41cb-bea6-55d912d27939",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "8553bde2-312a-4dc8-b221-78ff2139c8c7",
+      "result_id": "7f13302d-9df5-48af-8b34-1a17ff07ac68"
+    },
+    {
+      "claim_id": "aa09fb3e-f9a0-4b8e-a52d-dfe76de37e2d",
+      "result_id": "d27287de-9fc0-4337-a9ff-ceb98a4d7c04"
+    },
+    {
+      "claim_id": "1da8a854-ad1f-4308-97ce-2a2536807af2",
+      "result_id": "d27287de-9fc0-4337-a9ff-ceb98a4d7c04"
+    },
+    {
+      "claim_id": "af2f01ad-a38b-4c52-9401-5195819825fe",
+      "result_id": "d27287de-9fc0-4337-a9ff-ceb98a4d7c04"
+    },
+    {
+      "claim_id": "43aad333-f235-4c2e-ac57-25a9c0898b9e",
+      "result_id": "d27287de-9fc0-4337-a9ff-ceb98a4d7c04"
+    },
+    {
+      "claim_id": "5a492f14-d351-477d-af30-2da5efb0a645",
+      "result_id": "e5758fef-95b6-402d-9813-17ac1c920232"
+    },
+    {
+      "claim_id": "cb976b2e-812a-4af9-a248-1c758906551b",
+      "result_id": "e5758fef-95b6-402d-9813-17ac1c920232"
+    },
+    {
+      "claim_id": "f0cb18c8-9fdc-46a9-a4c4-da0151ae9fde",
+      "result_id": "e5758fef-95b6-402d-9813-17ac1c920232"
+    },
+    {
+      "claim_id": "a4244c6c-9297-41cb-b189-b997dc8d4846",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "74e2c0aa-0234-4f0b-8b94-cafed49028c6",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "1f9dbffc-b202-4717-9132-33e3e763b13c",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "156846ce-f454-4e03-8529-84e2db6a1f62",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "4075811c-785e-4187-b487-a8059598505d",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "6d76d7d7-4fa2-4a22-b93f-cf7004621998",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "97b15729-0191-4121-b717-9eac4eea5084",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "8caaa0d9-b72c-4bd3-ac0e-7f93d62cf2eb",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "40612c89-9218-453d-8ccc-41fbf39e2d4b",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "163bb338-4041-4b37-afb9-6125f6f1bd86",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "15e75894-f1f4-422d-b9ce-990c96b05bd5",
+      "result_id": "9b4eab3f-7616-4f54-9a79-c160ecd422c0"
+    },
+    {
+      "claim_id": "0d330534-185d-46c9-853c-186614e2ba90",
+      "result_id": "44aaaa0e-b680-4867-ad3f-0c08693fb585"
+    },
+    {
+      "claim_id": "589ee081-8b34-451a-aaf3-fa00392a0ecc",
+      "result_id": "44aaaa0e-b680-4867-ad3f-0c08693fb585"
+    },
+    {
+      "claim_id": "a0c61e78-eefd-4748-a5ab-571e6933df99",
+      "result_id": "34536ddd-b249-4175-b293-9c74b086683d"
+    },
+    {
+      "claim_id": "4f6fb7de-b994-446f-a3d1-6bc79a74e5c4",
+      "result_id": "34536ddd-b249-4175-b293-9c74b086683d"
+    },
+    {
+      "claim_id": "016198ad-fed1-4a75-b926-405638573179",
+      "result_id": "34536ddd-b249-4175-b293-9c74b086683d"
+    },
+    {
+      "claim_id": "518989a2-dcf0-45f1-be12-296f22b5e446",
+      "result_id": "18781e44-ff1d-4d49-a9c6-8044f11c08f4"
+    },
+    {
+      "claim_id": "0556469f-e8ed-4121-9354-6a3500538d02",
+      "result_id": "18781e44-ff1d-4d49-a9c6-8044f11c08f4"
+    },
+    {
+      "claim_id": "0ed9c795-117a-40ba-be62-b3a2914c17e0",
+      "result_id": "18781e44-ff1d-4d49-a9c6-8044f11c08f4"
+    },
+    {
+      "claim_id": "95e5b672-93f8-4a51-b235-f2763ba25519",
+      "result_id": "4aa48f32-a3e4-4724-a038-0176620e8fc2"
+    },
+    {
+      "claim_id": "ed11b2c4-ae6e-4c22-b6f1-c3b75b957b1c",
+      "result_id": "4aa48f32-a3e4-4724-a038-0176620e8fc2"
+    },
+    {
+      "claim_id": "13337709-d5c1-48ff-aae3-adde02d09f1e",
+      "result_id": "ebdcbd90-49e6-4316-8bc5-a59c933b0fa3"
+    },
+    {
+      "claim_id": "7bed4e2a-42bb-44ce-b0ca-227fe385c313",
+      "result_id": "ebdcbd90-49e6-4316-8bc5-a59c933b0fa3"
+    },
+    {
+      "claim_id": "722a2f6e-72ee-4ab9-8962-1f6f5189a50d",
+      "result_id": "ebdcbd90-49e6-4316-8bc5-a59c933b0fa3"
+    },
+    {
+      "claim_id": "737e4e65-8653-4129-88a8-2f0268558905",
+      "result_id": "ebdcbd90-49e6-4316-8bc5-a59c933b0fa3"
+    },
+    {
+      "claim_id": "c137d24c-4a4f-450c-a70b-ee2ac79ec06a",
+      "result_id": "ebdcbd90-49e6-4316-8bc5-a59c933b0fa3"
+    },
+    {
+      "claim_id": "d9e8e6a7-193a-4a68-a77c-76d6d43a4810",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "811fb3bd-67fb-469d-b24e-c83d044ac178",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "27d486e8-727a-4910-891d-1fcf22dbadbc",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "02e66ade-3cca-45e8-913d-b6192bff73b7",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "f31485ec-ca83-4785-aa80-37c64de0d13d",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "09228673-6c3b-4df4-983e-ebb3032d2cd4",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "005fd222-c4a6-4338-b1e8-3fcdf4f5aca6",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "8b181dbc-d7ef-44dd-be58-e4ffc18e6cee",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "eba9606d-35ae-4e5f-942b-515a0e4bfb62",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "af1aecd3-c06e-4bcb-8b09-719d9d6e252f",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "defb4efa-de37-4056-80a4-bca1f277c204",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "9eb6bfd9-bd12-4e84-9546-cc4b788fdf26",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "ec34290a-1b35-45f9-a3d3-a3d6ee0a7b62",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "73e99abf-97af-4d85-963d-4d7d414fc176",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "aaf157ed-7d04-419a-ab4d-aa19e224ba2b",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "c441e69c-cbbe-496c-9c80-62c5306065f9",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "ea16be92-190e-4d6d-9bc0-a0fb06497dde",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "7dec7bd4-c48d-4b87-9ff6-2b820f125d86",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "0b93f384-a21f-4ed1-ab92-4e2deb2fd218",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "977f7ad3-fc07-47e1-8e83-e7f411250357",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "22c5f686-1c38-48b3-8a2f-aaf853528734",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "efe2ff82-4356-4aba-8807-cb8aea75c533",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "e18bfdc6-92d4-4bb0-adc9-67a269d31f81",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "56efdd64-e7b4-49fc-b932-a2afa862bb03",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "0c46a5a3-9706-4931-bfec-6c7a5e69ad2b",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "ec68ff9f-da1a-4b52-bca5-4daaeca93cfa",
+      "result_id": "f593eb32-f78e-49bd-961b-6163acea43f4"
+    },
+    {
+      "claim_id": "f8982be5-77f9-4f30-ad91-7dc104ab2fa1",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "7c348765-ca19-4453-9e3c-8bd99d5e3f8d",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "1ab9067e-0c25-40a9-9524-721f11b26354",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "148b40f6-eef3-46cd-9773-47e8015f5a98",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "01409eed-f912-45e0-9e84-7556125b1078",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "98252d45-051f-4aeb-a14a-6d8074002141",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "b02a82d4-d0e8-4028-afec-6bcd299ca75a",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "7035db87-7b30-4110-9eae-313ec9b8d364",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "8e781688-8674-4678-b689-d1ff10ffb29d",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "e17e40e8-5ac3-4f3a-8ec0-67501b7853ea",
+      "result_id": "a9fcb290-f8d3-4f1b-b7e2-04140a6f828f"
+    },
+    {
+      "claim_id": "d002b03c-03c6-4f48-b4c1-0b146c6c7a83",
+      "result_id": "9cf8eaab-7a11-4150-ac0e-4747d67299ae"
+    },
+    {
+      "claim_id": "82163aae-87d7-41b1-bd09-d2e3c3600607",
+      "result_id": "9cf8eaab-7a11-4150-ac0e-4747d67299ae"
+    },
+    {
+      "claim_id": "aa3b5a62-bb21-4f41-86e6-720538a93e78",
+      "result_id": "9cf8eaab-7a11-4150-ac0e-4747d67299ae"
+    },
+    {
+      "claim_id": "88bac80b-7ff2-47c0-81ff-d42113bf116d",
+      "result_id": "9cf8eaab-7a11-4150-ac0e-4747d67299ae"
+    }
+  ],
+  "comparisons": []
+}

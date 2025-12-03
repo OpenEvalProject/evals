@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The brain maintains parallel predictive models during speech perception: a unified sentence-level model, a word-level model, and a sublexical phoneme sequence model. Each model uniquely predicts neural responses, with sentence-constrained phoneme entropy providing evidence for cross-hierarchy integration where sentence-level information predicts upcoming phonemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide strong statistical evidence (p \u2264 0.005) that each context model significantly improves MEG predictions even when controlling for other models. The finding that sentence-constrained phoneme entropy explains unique variance (C33, C34, C72, C73) demonstrates cross-hierarchy integration. The parallel architecture is well-supported by converging evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C76",
+      "C77"
+    ],
+    "result": "Different context models are anatomically separable in the superior temporal lobes, with hemispheric differences: the sublexical model is significantly more right-lateralized than the sentence model, while the left hemisphere primarily relies on the unified sentence context model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Source localization analyses (C37-C40) demonstrate statistically significant differences in neural source configurations between context models. Lateralization analyses (C35, C36) show the sublexical model is significantly more right-lateralized (t11=4.41, p=0.001). The convergence of localization and lateralization evidence supports anatomical differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Temporal response functions reveal that sentence- and word-level contexts reach early representations simultaneously (~76-78 ms), with no significant latency differences between models. Later responses (>205 ms) show sustained sentence-context effects, while all context models drive early phoneme predictions in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "TRF peak latency analyses (C41-C43) show simultaneous early responses across models with no significant differences (p \u2265 0.065). Statistical comparisons (C44, C47) demonstrate later dissociation favoring sentence context. The temporal pattern supports parallel processing rather than sequential hierarchical processing, though the interpretation relies on the assumption that TRF latencies accurately reflect processing stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Early activity (~-50 to 150 ms) originates from the upper superior temporal gyrus regardless of context, while midlatency responses (150-350 ms) for sentence context recruit additional ventral temporal lobe sources, suggesting a two-stage process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Source localization results (C52-C55) show statistically significant differences between early and midlatency sentence-based responses in both hemispheres (p < 0.001). The spatial pattern is consistent with known functional neuroanatomy. However, MEG source localization has limited spatial resolution, so the precise anatomical claims should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "No evidence was found for a trade-off between context models, either across subjects or over time, with correlations between models being neutral or positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Correlation analyses (C57, Figure 7) show no negative correlations that would indicate trade-offs. This supports the parallel processing interpretation rather than alternating strategies. The analysis appropriately tests alternative hypotheses that could explain the apparent parallel processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Parallel activation of lexical candidates based on sentence and word context models can explain previous findings of short-lived priming of sentence-inappropriate candidates, with sentence-appropriate candidates showing sustained responses (150-550 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation (C84, C85) connects the current TRF findings to previous psycholinguistic results. The temporal pattern of transient vs. sustained responses provides a mechanistic explanation for prior behavioral findings. However, this is an inference connecting different experimental paradigms rather than direct evidence from the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Multiple probabilistic cohort representations are maintained in parallel, with separate representations based on lexical frequency and contextual likelihood, inconsistent with single-activation models but potentially reconcilable with token-based models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding that two cohort entropy predictors explain unique variance (C96) provides direct evidence for multiple cohort representations. The comparison to existing models (C97-C99) is appropriate, though the reconciliation with token-based models (C98) is speculative. The result challenges fundamental assumptions of word recognition models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Sentence-level context modulates phoneme-level expectations, providing evidence for feedback that is inconsistent with pure bottom-up models. The parallel architecture avoids theoretical problems of sequential models by allowing undistorted bottom-up information to be compared with each context model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phoneme entropy results (C100) provide empirical evidence for top-down modulation. The theoretical arguments (C102-C105) about Bayesian optimality are logically sound and supported by citations. However, the claim that the parallel model is theoretically superior is an inference rather than empirically demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The results provide evidence for graded probabilistic and form-based predictions at the phoneme level, addressing debates about whether predictions involve specific items or distributions over possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sentence-constrained cohort and phoneme entropy effects (C111) provide new evidence for graded predictions in naturalistic speech. This addresses an important theoretical debate. However, the study uses audiobook listening rather than highly constraining contexts, which limits direct comparison to some prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "Lexical/phonetic processing is largely bilateral, with both hemispheres relying on sentence-based predictions, but the right hemisphere additionally maintains stronger representations of local contexts. Response latencies suggest right-hemispheric effects are not due to interhemispheric transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lateralization results (C112) are supported by statistical analyses and consistent with clinical evidence (C113). The similar response latencies (C117) provide evidence against interhemispheric transfer. The modification of previous proposals (C119) is a reasonable inference from the data, though it remains an interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study included 12 native English speakers (11 right-handed, 1 left-handed) who listened to ~47 minutes of audiobook excerpts while MEG responses were recorded. Excluding the left-handed participant did not change lateralization conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details (C58-C61) are clearly reported. The robustness check (C62) appropriately addresses the inclusion of one left-handed participant. The sample size (N=12) is comparable to similar MEG studies but relatively small for individual differences analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Acoustic features explain more variance than linguistic features, likely because speech is acoustically rich while linguistic predictors represent specific computations. However, linguistic effects are highly consistent across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of acoustic vs. linguistic predictive power (C65) is clearly shown in Figure 4. The explanations (C66, C67) are reasonable inferences. The consistency across subjects (C68) is important for establishing reliability. However, the interpretation that linguistic effects are in 'specialized neural territory' (C67) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The sentence context was approximated with a 5-gram model, which captures local constraints but misses longer-range dependencies and conflates syntactic, semantic, and associative constraints. More sophisticated models might reveal additional complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge limitations of the 5-gram approximation (C122-C124). The suggestion for future work (C125) is reasonable. This limitation is important for interpreting the 'sentence context' results, which actually reflect local multi-word constraints rather than full discourse-level meaning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C86",
+      "C88",
+      "C90",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "Parallel models might serve multiple functions: making the perceptual system more robust, facilitating processing of unexpected inputs, aiding language acquisition, and handling novel words or noisy input. Different models might play differentiated roles in different listening conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These functional interpretations (C9-C11, C86, C88, C90, C91, C93, C94) are speculative and not directly tested in the current study. While plausible and supported by some citations, they represent hypotheses for future research rather than established findings. The study demonstrates parallel processing but does not test these specific functional advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The introduction reviews established findings about predictive processing in speech perception, including evidence for both local/staged processing and unified/interactive processing, setting up the theoretical debate addressed by the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C30) accurately characterize prior work through appropriate citations. They establish the theoretical context and competing hypotheses. The characterizations appear accurate based on the cited literature, though we cannot verify all citations without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C126"
+    ],
+    "result": "The main conclusion is that multiple predictive models process speech input in parallel, with three neural systems receiving input simultaneously but differing in context incorporation. Robust speech processing is based on probabilistic predictions using different context models in parallel, cutting across hierarchical levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis (C78, C79, C126) appropriately summarizes the major findings. The proposed architecture (Figure 8, C79) is consistent with the empirical results. However, the claim that this makes processing 'robust' (C126) is an inference about function rather than a demonstrated property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Among linguistic models, the unified sentence-context model has the most explanatory power, bilateral representation, extended activation (up to 600 ms), and recruitment of ventral temporal regions, suggesting it drives both semantic and form representations while local models may be restricted to form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical observations about the unified model (C80, C81) are well-supported by Figures 4 and 5. The inference about more extensive updates (C82) is reasonable. However, the speculation about semantic vs. form representations (C83) goes beyond the data, as the study did not directly measure semantic processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C92",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C115",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "The discussion contextualizes findings relative to prior literature on reading, language acquisition, hemispheric differences, and prediction specificity, noting that previous studies often used highly constraining contexts while the current study used naturalistic audiobook listening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C87, C89, C92, C106-C110, C113-C115, C118, C120, C121) appropriately cite and characterize relevant literature. The distinction between highly constraining experimental contexts and naturalistic listening (C106-C108) is important for interpreting the results. The connections to prior work appear accurate based on the citations provided.",
+    "result_type": "MINOR"
+  }
+]

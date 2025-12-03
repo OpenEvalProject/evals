@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C66",
+      "C67"
+    ],
+    "result": "Ceg3 is a mono-ADP-ribosyltransferase (mART) with a predicted catalytic motif R44-S94-E141KE143 that is critical for its enzymatic activity. The key residues in the predicted mART of Ceg3 are identical to those of known bacterial toxins including ExoS, CtxA, and members of the SidE family. Mutation of the catalytic glutamate residues (Ceg3E/A) completely abolishes yeast toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C66, and C67 are well-supported by sequence alignment data (Figure 1A), yeast toxicity assays (Figure 1B), and comparison with established mART enzymes. The loss of toxicity upon mutation of the catalytic residues provides strong functional evidence for the mART activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Ceg3 localizes to mitochondria in host cells and is an integral mitochondrial membrane protein. Multiple lines of evidence demonstrate mitochondrial targeting: colocalization with MitoTracker (Pearson's coefficient 0.87), co-fractionation with mitochondrial marker PDHA1, immunogold labeling, and resistance to carbonate extraction. Ceg3 does not localize to ER or Golgi compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C31, and C68-C70 are strongly supported by converging evidence from multiple orthogonal techniques including immunofluorescence (Figure 1C), electron microscopy (Figure 1D), cell fractionation (Figures 1E-F), and carbonate extraction (Figure 1G). The Pearson correlation coefficient of 0.87 indicates strong colocalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C71"
+    ],
+    "result": "Ceg3 targets ADP/ATP translocases (ANTs) for ADP-ribosylation modification. Mass spectrometry identified ANTs among the top modified proteins in Ceg3-expressing cells. Ceg3 binds to and colocalizes with ANT1 (Pearson's coefficient 0.87), and modifies all four human ANT isoforms in an mART motif-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C35, C38, and C71 are well-supported by mass spectrometry data (Supplementary file 1), immunoprecipitation experiments (Figures 2D, 3A), immunofluorescence colocalization (Figure 2E), and ADP-ribose-specific antibody detection (Figures 2A, 3A). The modification is dependent on the intact mART motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Ceg3 specifically modifies ANT1 by mono-ADP-ribosylation on Arg236, the second arginine residue in the conserved -RRRMMM- motif. This residue is located at the end of the fifth transmembrane helix near the mitochondrial matrix. Mass spectrometry identified diagnostic ADP-ribose fragments, and mutagenesis confirmed that only R236 mutation abolishes modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C39-C41 are strongly supported by high-quality mass spectrometry data showing diagnostic ADPR fragments (Figure 3B), structural localization (Figure 3C), and site-directed mutagenesis demonstrating specificity for R236 (Figure 3D). The MS/MS data includes multiple diagnostic ions confirming mono-ADP-ribosylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "The -RRRMMM- element is conserved among all known ADP/ATP carriers from different organisms and is essential for transport function. The second arginine in this motif is implicated in ADP binding via electrostatic interactions with negatively charged phosphate moieties. Mutations in any of the three arginine residues abolish transport activity in yeast and bovine carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C56, C57, and C59 are supported by sequence alignment data (Figure 3\u2014figure supplement 2), established structural knowledge from cited literature (Pebay-Peyroula et al., 2003; Ruprecht et al., 2014; M\u00fcller et al., 1996; Nelson et al., 1993), and functional studies showing the importance of these residues for transport activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C73"
+    ],
+    "result": "Yeast ADP/ATP carriers (Aac1p, Aac2p, Aac3p) are targeted by Ceg3 for ADP-ribosylation modification, which likely accounts for Ceg3's toxicity in yeast. ADP-ribosylation of proteins with molecular weights close to those of ADP/ATP carriers was detected in yeast cells expressing Ceg3 but not the catalytically inactive mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C73 are supported by yeast expression data (Figure 3E) showing mART-dependent ADP-ribosylation of proteins with molecular weights consistent with yeast ADP/ATP carriers. The correlation with yeast toxicity (Figure 1B) provides functional support, though direct identification of modified yeast proteins by mass spectrometry was not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C74"
+    ],
+    "result": "Ceg3 can modify ANT1 when co-expressed in E. coli, indicating that this enzyme functions without the need of co-factors from eukaryotic cells. This demonstrates that Ceg3 has intrinsic enzymatic activity independent of eukaryotic cellular machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C74 are supported by E. coli co-expression data (Figure 3\u2014figure supplement 4B) showing mART-dependent modification of ANT1. This is an important control demonstrating that Ceg3 activity does not require eukaryotic co-factors, though the authors note they could not purify soluble recombinant Ceg3 for in vitro assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C75"
+    ],
+    "result": "ADP-ribosylation of ANTs occurs during L. pneumophila infection in a Dot/Icm-dependent manner. Modification becomes detectable at 6 hours post-infection, peaks at 10 hours, then decreases by 14 hours, suggesting temporal regulation either through differential Ceg3 expression or injection of de-ADP-ribosylating enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C75 are supported by infection time-course data (Figures 4A-C) showing Dot/Icm-dependent ANT modification with a clear temporal pattern. However, C75's mechanistic speculation about temporal regulation (differential expression vs. reversal enzymes) is not directly tested and remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C60",
+      "C61"
+    ],
+    "result": "Ceg3-mediated ADP-ribosylation of ANTs inhibits their ADP/ATP exchange activity. Expression of Ceg3 but not the catalytically inactive mutant causes decreased ADP/ATP exchange in isolated mitochondria from both transfected cells and L. pneumophila-infected cells. The mechanism likely involves altered electrostatic interactions and steric interference from the bulky ADPR moiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48, C49, C60, and C61 are supported by functional ADP/ATP exchange assays (Figures 5C-D) showing mART-dependent inhibition. The mechanistic explanations in C60-C61 are reasonable inferences based on the chemical properties of ADPR and structural knowledge, though direct structural evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C77",
+      "C78"
+    ],
+    "result": "Ceg3 causes only a slight decrease in mitochondrial membrane potential (MMP), indicating that its impact on mitochondrial membrane integrity is moderate. ATP production depends on MMP integrity, and CCCP treatment serves as a positive control for MMP loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C77, and C78 are supported by MMP measurements using JC-10 dye (Figure 5A) with appropriate CCCP controls. The statistical analysis shows a significant but modest effect of Ceg3 on MMP, consistent with the authors' interpretation of moderate impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C58",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Ceg3 does not induce mitophagy in COS-1 cells and does not suppress or augment CCCP-induced mitophagy. This is consistent with previous findings that ANT1-associated mitophagy is independent of nucleotide translocase activity. COS-1 cells undergo robust mitophagy upon CCCP treatment, and lentiviral expression of Ceg3 leads to mART-dependent ANT modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C58, C80-C82 are supported by mitophagy assays in COS-1 cells (Figure 5\u2014figure supplement 1) showing no change in PDHA1 levels with Ceg3 expression, with or without CCCP treatment. The lentiviral transduction system ensures uniform expression, addressing potential concerns about transfection efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C76"
+    ],
+    "result": "The \u0394ceg3 mutant grows at rates indistinguishable from wild-type L. pneumophila in bone marrow-derived macrophages (BMDMs) and Dictyostelium discoideum, indicating that Ceg3 is dispensable for intracellular replication in commonly used laboratory hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C76 are supported by intracellular replication assays (Figure 4\u2014figure supplement 1) showing no significant difference between wild-type and \u0394ceg3 strains. This is consistent with the observation that most individual Dot/Icm effectors are dispensable in laboratory infection models, likely due to functional redundancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "L. pneumophila is an intracellular pathogen that causes Legionnaires' disease and delivers more than 330 effectors via the Dot/Icm secretion system. The bacterium exists as a parasite of freshwater amoebae, infects humans through aerosol inhalation, and survives in macrophages within the Legionella-containing vacuole (LCV). The Dot/Icm system is essential for virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C15 represent established background knowledge about L. pneumophila supported by appropriate citations and general scientific consensus. These claims provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ADP-ribosylation is a well-established post-translational modification used by bacterial toxins and effectors to manipulate host cell functions. Examples include diphtheria toxin (EF2 modification), cholera toxin (G\u03b1s modification), ExoS (Ras modification), SopF (ATP6V0C modification), CteC (ubiquitin modification), Lpg0181 (glutamate dehydrogenase), and SidE family (ubiquitin activation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 represent established prior work supported by appropriate citations. These provide important context for understanding Ceg3's mechanism but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The LCV is associated with mitochondria in a Dot/Icm-dependent manner, with 30-65% of LCVs surrounded by mitochondria within 1 hour of infection. Several L. pneumophila effectors target mitochondria, including LegS2 (lipid metabolism), MitF (mitochondrial dynamics), LncP (ATP transport), Lpg1625, Lpg0898, and Lpg2444. None of these effectors harbor canonical mitochondrial localization signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C52-C55, C62-C65 represent established prior work about L. pneumophila-mitochondria interactions supported by appropriate citations. These provide important biological context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Ceg3 was first identified as a Dot/Icm substrate by virtue of being coregulated with known effector genes and was later shown to kill yeast Saccharomyces cerevisiae upon ectopic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 represent prior characterization of Ceg3 supported by appropriate citations (Zusman et al., 2007; Urbanus et al., 2016). These provide background for the current study's investigation of Ceg3 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C79"
+    ],
+    "result": "Human cells express four ADP/ATP translocase isoforms that are essential for transferring ADP and ATP across the mitochondrial inner membranes via 1:1 stoichiometric exchange. All four isoforms were identified in mass spectrometric analysis of Ceg3-modified proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C79 combine established knowledge about ANTs with experimental findings from this study. The identification of all four isoforms by mass spectrometry (Supplementary file 1) supports the comprehensiveness of Ceg3's targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Mitochondria are involved in diverse functions including cell death, immunity, and metabolism regulation, making them common targets for infectious agents. Examples include V. cholerae VopE (Miro1/2 inhibition) and E. chaffeensis ECH0825 (superoxide dismutase upregulation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 represent established knowledge about mitochondrial functions and pathogen targeting supported by appropriate citations. These provide biological context for understanding why L. pneumophila targets mitochondria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The bacterium could gain better control of ATP transport in mitochondria by using one set of effectors (like Ceg3) to inhibit endogenous carriers and another set (like LncP) to substitute this function, though coordination between Ceg3 and LncP requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is speculative and not directly tested in this study. While the hypothesis is reasonable given the known functions of Ceg3 and LncP, no experimental evidence is provided for their coordination. This represents a testable hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Structural studies show that the -RRRMMM- element is positioned near the mitochondrial matrix in both bovine ADP/ATP carrier and yeast Aac2 carrier, though the exact positioning differs slightly between structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C89 are supported by cited structural studies (Pebay-Peyroula et al., 2003; Ruprecht et al., 2014). These provide important structural context for understanding how Ceg3 accesses its modification site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Af1521 is a protein from Archaeoglobus fulgidus that contains a macro domain involved in binding ADP-ribose moieties on modified proteins, used in this study for enrichment of ADP-ribosylated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 represents established knowledge about Af1521 supported by citation (Allen et al., 2003) and describes a methodological tool used in this study. The use of Af1521 for enrichment is a standard approach in ADP-ribosylation research.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C50",
+      "C51"
+    ],
+    "result": "Permutation-based surrogate data testing for time series dependence is often invalid due to autocorrelation, while phase randomization performs well when assumptions are met but fails when stationarity is violated. Simulations show phase randomization had 4% false positive rate under appropriate conditions but 21% when stationarity was violated, while permutation had 30-92% false positive rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 correctly identify the key assumption and violation of permutation testing. Claims C50-C51 provide quantitative simulation evidence from Figure 2 showing the differential performance of phase randomization under different conditions. The empirical results directly support the theoretical concerns raised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Granger causality has four major failure modes: it fails to detect causality in deterministic systems, erroneously assigns causality when unobserved common causes exist, is disrupted by infrequent sampling, and produces both false positives and false negatives in the presence of measurement noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These failure modes are illustrated in Figure 3B and supported by citations to prior theoretical and empirical work (C61 cites Newbold 1978, Nalatore et al. 2007). The claims are conceptually sound and represent well-established limitations in the causal inference literature. Each failure mode is clearly illustrated with examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "State space reconstruction (SSR) methods are designed for deterministic systems and rely on Takens' theorem, which guarantees continuous delay maps from driven to driving variables under certain conditions. However, practical performance depends on delay vector selection with finite noisy data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 accurately describe the theoretical foundation of SSR methods with appropriate citations (Sugihara et al. 2012, Cummins et al. 2015, Takens 1980). Claims C79-C80 appropriately distinguish between theoretical guarantees and practical limitations, with C80 citing empirical evidence (Cobey and Baskerville 2016). The explanation is conceptually accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "SSR methods have four major failure modes: nonreverting continuous dynamics (false positives from temporal trends), synchrony (bidirectional inference from unidirectional causation), integer multiple periods (false positives), and pathological symmetry (false negatives). The prediction lag test can sometimes address synchrony but is not foolproof.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These failure modes are illustrated in Figure 5 with clear visual examples. Claims C85-C86 acknowledge limitations (speculation about early works, lack of statistical tests) appropriately. Claim C88 is supported by citations and demonstration in Appendix 4. The failure modes represent important contributions to understanding SSR limitations, though some (C90) are noted as potentially rare.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Simulation studies demonstrate that both Granger causality and CCM perform well under appropriate conditions but are sensitive to process and measurement noise levels. Performance depends on the relative amounts of noise types and system details like external drivers. CCM is particularly challenged by synchrony, while Granger causality is less sensitive to synchrony when disrupted by process noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are directly supported by simulation results in Figure 7, which systematically varies noise levels and system configurations. The quantitative results (false positive rates, performance patterns) are clearly presented in pie charts. Claims C100-C103 describe specific patterns in the data with appropriate citations to prior analytical work. The simulations are well-designed to test the theoretical predictions, though limited to specific model systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Statistical dependence is connected to causation through the Common Cause Principle, and conditional dependence relationships can sometimes reveal direct causal structure through algorithms relying on the causal Markov and faithfulness conditions. However, selection bias can create spurious dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C37 are well-supported by citations to foundational work in causal inference (Peters et al. 2017, Glymour et al. 2019, Hitchcock 2020). Claim C35 correctly identifies a known pitfall with reference to Appendix 2-figure 3. Claim C36 accurately describes the power of constraint-based causal discovery. These represent established theoretical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Granger causality excludes indirect causes by definition, and whether a causal relationship is classified as direct or indirect depends on which variables are observed in the analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is illustrated in Figure 3A and follows logically from the definition of Granger causality. Claim C56 is a conceptual point about the relativity of direct causation that is well-established in the causal inference literature. Both claims are conceptually sound and important for interpreting Granger causality results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Linear Granger causality has standard parametric tests available in software packages, but these tests assume covariance-stationarity and can fail when this assumption is violated or when applied to nonlinear systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by citations to software packages (Seabold and Perktold 2010, Barnett and Seth 2014). Claims C63-C65 describe well-known limitations with appropriate citations to theoretical work (Toda and Phillips 1993, Ohanian 1988, He and Maekawa 2001, Li et al. 2018). These are accurate descriptions of method requirements and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "General Granger causality is often tested using transfer entropy with surrogate data, but standard surrogate procedures test independence rather than Granger non-causality. Recent procedures have been proposed to address this mismatch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C70 are supported by citations to methodological work (Papana et al. 2012, Montalto et al. 2014). Claim C71 makes an important conceptual distinction about null hypotheses. Claim C72 cites recent methodological advances (Runge 2018a, Shorten et al. 2021). This represents an accurate description of current practice and recent improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Granger causality faces challenges with high-dimensional data, which can be addressed through sparse regression assumptions or constraint-based algorithms that remove unnecessary terms using logical rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three claims are supported by appropriate citations to methodological work (Runge et al. 2019a/b, Gibbons et al. 2017, Mainali et al. 2019). These describe established approaches for handling high-dimensional causal discovery. The claims accurately represent current methodological solutions to a known problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Convergent cross mapping (CCM) is the most popular SSR method, using cross map skill to quantify prediction quality. Four criteria have been proposed for inferring causality, though many applications use only a subset of these criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 accurately describe CCM methodology with appropriate citations (Sugihara et al. 2012, Ye et al. 2015, Cobey and Baskerville 2016) and illustration in Figure 6. Claim C94 is supported by citations to applied works showing incomplete criterion use. This represents an accurate description of CCM methodology and current practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Distinguishing process from measurement noise is difficult without knowing system dynamics. Real time series are likely intermediate between fully deterministic and fully stochastic. Both SSR and Granger causality methods can potentially succeed for such systems, but more work is needed to understand when each performs better.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 acknowledge a practical limitation. Claims C112-C113 describe recommendations with citations (Hastings et al. 1993, Sugihara and May 1990, Clark et al. 2015). Claims C114-C115 make reasonable statements about real data. Claim C116 cites simulation evidence (Barraquand et al. 2020). Claim C117 appropriately identifies need for future work. These represent honest assessment of current knowledge and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Model-free causal discovery techniques do not depend on mechanistic knowledge but are not assumption-free. The danger is replacing explicit assumptions with unstated ones. When assumptions are clearly articulated, these methods can be valuable, but experimental follow-up remains important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the central message of the review paper. Claim C118 is supported by citation (Coenen et al. 2020) and is the main thesis. Claims C119-C120 make critical observations about current practice. Claims C121-C122 provide balanced assessment of method utility and limitations. These are well-reasoned conclusions supported by the detailed analysis throughout the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Measurement noise and nonstationarity are crucial considerations for real data. The stationarity requirement is ubiquitous but often hidden in analysis pipelines, particularly in surrogate data tests and Granger causality tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by citations emphasizing these issues (Stokes and Purdon 2017, Barnett et al. 2018, Munch et al. 2020). Claims C124-C125 make observations about awareness of these issues. Claims C126-C127 are supported by citations (Lancaster et al. 2018) and established knowledge. These represent important practical considerations well-supported by the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Future research directions include understanding robustness to assumption violations, developing methods that use partial mechanistic models, and leveraging known external perturbations in natural experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately identify important research directions. Claim C129 cites recent promising work (Daniels and Nemenman 2015, Brunton et al. 2016, Mangan et al. 2016). Claim C130 cites relevant methodological work (Eaton and Murphy 2007, Rothenh\u00e4usler et al. 2015). These represent reasonable and well-motivated suggestions for future work based on current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Effective strategies for communicating method assumptions include providing simulation examples of failures, creating video walkthroughs, and ensuring editors and reviewers work with authors to clearly articulate caveats in main text.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 cite examples of these communication strategies (Clark et al. 2015, Brunton et al. 2016, 2017, Xie and Shou 2021). Claim C133 is a reasonable recommendation from the authors. These represent practical suggestions for improving methodological communication, supported by examples from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Complex systems, including ecological communities, are challenging to study through manipulative experiments, motivating the development of causal inference methods for observational time series data. These methods are often controversial and easy to misunderstand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide background motivation for the review. Claims C1-C10 draw on established knowledge about experimental limitations, ecological systems, and data availability. Claim C3 is supported by citations to controversial exchanges (C25). Claims C7-C8 cite relevant methodological work. These represent accurate framing of the problem domain and are well-supported by general scientific knowledge and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Knowledge-based modeling approaches like Lotka-Volterra have specific assumptions and limitations. Model-free methods avoid mechanistic equations but still rely on statistical models, examining information flow or using flexible equations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately describe Lotka-Volterra model properties and applications with citations (Stein et al. 2013, Fisher and Mehta 2014, Bucci et al. 2016). Claim C14 cites work documenting failures (Levine 1976, Wootton 2002, Momeni et al. 2017). Claims C15-C17 describe model-free approaches with appropriate citations. These provide accurate background on alternative modeling approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Causal discovery methods have roots in multiple disciplines that use inconsistent terminology. Key assumptions are sometimes hidden or not mentioned in methodological articles. Some methods involve advanced mathematics, and efforts to infer causality from observational data have been controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims explain challenges in understanding causal discovery methods. Claims C18-C19 describe historical development and terminology issues. Claims C23-C24 identify communication problems in methodological literature. Claim C25 is supported by citations to controversial exchanges (Luo et al. 2015, Baskerville and Cobey 2017, etc.). These accurately characterize challenges in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "The distinction between correlation (a statistical description) and dependence (a hypothesis about probability distributions) is important. Dependence is connected to causality through the Common Cause Principle, though selection bias can create spurious dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 make important conceptual distinctions with citations (Weiss et al. 2016, Coenen and Weitz 2018). Claim C34 describes the Common Cause Principle with citations (Peters et al. 2017, Runge et al. 2019a, Hitchcock 2020b). Claim C35 identifies a known pitfall. These represent accurate descriptions of fundamental concepts in causal inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C38",
+      "C41",
+      "C43"
+    ],
+    "result": "Time series autocorrelation creates an n-of-one problem for dependence testing. Parametric tests accounting for autocorrelation have uncertain variance estimates. Valid tests should show p\u22640.05 in only 5% of cases when variables are independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 accurately describes the autocorrelation problem. Claim C41 identifies limitations of parametric approaches with citations (Pyper and Peterman 1998, Ebisuzaki 1997). Claim C43 states the expected behavior of valid statistical tests. These represent accurate descriptions of statistical testing challenges for time series.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "Phase randomization is a surrogate data procedure appropriate for linear, Gaussian, stationary processes. Some surrogate tests perform reasonably even when requirements are not exactly met, but comprehensive benchmarking is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 describes the phase randomization procedure with citations (Ebisuzaki 1997, Schreiber and Schmitz 2000, Andrzejak et al. 2003). Claim C49 specifies appropriate conditions with citations (Andrzejak et al. 2003, Lancaster et al. 2018). Claims C52-C53 cite evidence of robustness (Thiel et al. 2006, Papana et al. 2017) while identifying need for more work. These accurately describe current knowledge and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Alternative approaches to CCM exist for detecting continuous delay maps, but no systematic comparison of these methods has been conducted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 cites alternative methods (Ma et al. 2014, Cummins et al. 2015, Harnack et al. 2017, Leng et al. 2020). Claim C96 honestly acknowledges lack of comparative studies. These represent accurate assessment of the current state of the literature.",
+    "result_type": "MINOR"
+  }
+]

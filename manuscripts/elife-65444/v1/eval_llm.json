@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C77",
+      "C78"
+    ],
+    "result": "Resting habenula LFP recordings show dominant theta/alpha oscillations (5-10 Hz) in 13 of 18 recorded habenulae, with an average peak frequency of 8.2 \u00b1 1.1 Hz. Beta band peaks (12-30 Hz, average 15.1 \u00b1 1.8 Hz) were observed in 7 of 18 recordings, with 3 showing both frequency bands. Recordings from contacts within the habenula preferentially show theta/alpha peaks, while those outside show additional beta peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C77-C78 provide converging evidence from FOOOF analysis of resting LFP data. The quantitative characterization of oscillatory peaks, their frequencies, and anatomical specificity (theta/alpha within habenula vs. beta outside) is well-documented with appropriate statistical methods and sample sizes (N=18 habenulae from 9 patients).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Habenula LFP recordings during emotional picture viewing show significant event-related synchronization (2-30 Hz, 50-800 ms post-stimulus). Negative emotional stimuli elicit greater theta/alpha power (5-10 Hz, 100-500 ms) and theta power (4-7 Hz, 2700-3300 ms) compared to positive stimuli, with neutral stimuli showing intermediate responses. These effects are driven by non-phase-locked (induced) activity rather than evoked potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 are supported by rigorous time-frequency analysis with appropriate statistical testing (cluster-based permutation tests, p<0.05). The distinction between phase-locked and non-phase-locked activity (C32-C33) strengthens the interpretation. The graded response across valence conditions (C31) supports a parametric relationship with emotional valence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MEG recordings show increased theta/alpha band activity (5-10 Hz, 100-500 ms) in frontal sensors during negative emotional stimuli compared to positive stimuli. Source localization identifies two significant peaks: right prefrontal cortex (Brodmann area 10, MNI [16, 56, 0], t=4.14, p=0.046 corrected) and left PFC (Brodmann area 9, MNI [-32, 38, 28], t=3.21, p=0.046 corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by appropriate MEG analysis methods including cluster-based permutation testing and DICS beamforming source localization. The bilateral PFC involvement is well-characterized with corrected p-values and anatomical coordinates. However, the sample size (N=8 subjects with MEG) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Theta/alpha band (5-10 Hz) coherence between habenula and cortex increases during negative emotional stimuli in the 800-1300 ms time window, particularly over right frontal and temporal areas. This increased coherence correlates with subsequent theta power increase in habenula at 2700-3300 ms (k=0.2434\u00b10.1031, p=0.0226, R\u00b2=0.104). Source localization identifies peak coherence difference in right medial PFC (MNI [10, 64, 12], t=5.73, p=0.001 uncorrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 are well-supported by coherence analysis with appropriate statistics. However, C40 shows a weak effect (R\u00b2=0.104) that would not survive multiple comparison correction, as acknowledged by the authors. The correlation in C40 is significant only when pooling across conditions, not within individual conditions, raising questions about the robustness of this relationship. The source localization in C41 uses uncorrected statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Linear mixed-effects modeling demonstrates that increased theta/alpha synchronization in the habenula, PFC, and habenula-PFC network correlates significantly with emotional valence (more negative stimuli \u2192 higher synchronization) but not with stimulus arousal. This relationship holds across all measured neural responses in the identified time windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C42-C46 are supported by appropriate linear mixed-effects modeling that accounts for the non-linear relationship between valence and arousal shown in Figure 1B. The statistical approach properly addresses the confound between these stimulus dimensions. Results are presented with effect sizes, confidence intervals, and p-values (Table 2), demonstrating specificity for valence over arousal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C47"
+    ],
+    "result": "This study provides the first direct evidence in human patients that transient theta/alpha band (5-10 Hz) activity within the habenula and prefrontal cortical regions, as well as coupling between these structures, increases during perception and processing of negative emotional stimuli compared to positive emotional stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 summarize the main findings that are well-supported by the experimental data (LFP recordings, MEG, and coherence analyses). C47's claim of novelty appears justified given the unique opportunity to record simultaneously from habenula and cortex in humans during emotional processing. The convergence of local activity changes and network-level coherence strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The observed electrophysiological effects (theta/alpha activity and coherence changes) did not correlate with clinical depression scores (Beck Depression Inventory or Hamilton Depression Rating Scale) measured before surgery across patients after correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is explicitly stated and represents a negative finding. While the authors acknowledge this limitation, the lack of correlation could reflect the small sample size (N=9), heterogeneous patient population (depression, bipolar disorder, schizophrenia), or that the emotional valence effects observed are not specific to depression severity. This is appropriately reported as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "The study has several important limitations: responses to emotional tasks may differ in patients with psychiatric disorders versus healthy subjects; habenula recordings may be contaminated by volume conduction from neighboring structures (particularly medial dorsal thalamus); and postoperative stun effects from recent electrode implantation cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C75-C76, and C79 represent acknowledged limitations. These are appropriately discussed and reflect good scientific practice. The lack of healthy controls (C70) is a significant limitation for generalizability. The anatomical concerns (C75-C76) are partially addressed by showing that recordings from habenula contacts have distinct spectral signatures (theta/alpha peaks) compared to non-habenula contacts (C77-C78).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors speculate that high-frequency DBS targeting habenula may benefit treatment-resistant major depressive disorder by inhibiting hyperactivity and theta band over-synchrony in the habenula and by disrupting information flow from PFC through habenula. Theta band synchronization could potentially serve as a biomarker for closed-loop habenula DBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C69 are explicitly speculative and represent future directions rather than demonstrated results. While the speculation is grounded in the study's findings and prior DBS literature (C61-C66), these therapeutic implications are not tested in this study. The authors appropriately frame these as possibilities requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Nine patients with psychiatric disorders (treatment-resistant depression, schizophrenia, or bipolar disorder) underwent bilateral habenula DBS surgery and participated in an emotional picture-viewing task. The stimuli showed significant differences in valence and arousal scores across three categories (positive, neutral, negative), with positive pictures having highest valence and arousal, negative pictures having lowest valence, and neutral pictures having lowest arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 describe the study population and stimulus validation. The patient characteristics are clearly documented (Table 1), and stimulus properties are validated with appropriate statistics (one-way ANOVA, p<0.0001). The non-orthogonal relationship between valence and arousal (Figure 1B) is important for interpreting the linear mixed-effects modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior research establishes that the lateral habenula encodes negative motivational stimuli, links forebrain with dopaminergic and serotonergic midbrain structures, shows increased activity during aversive events in animals, and is implicated in psychiatric disorders including depression, bipolar disorder, schizophrenia, and addiction. Habenula dysfunction is associated with smaller volume in human patients and hyperactivity in depression, with theta band activity specifically linked to depression-like states in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C20 summarize established prior knowledge supported by appropriate citations. These provide essential context for the current study's findings. The citations appear appropriate and the claims accurately represent the cited literature, though verification of individual citations is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Animal models consistently show LHb hyperactivity in depression-like phenotypes, with increased activity during reward omission, stress, and fear. Manipulating LHb activity produces depressive-like or antidepressant effects in rodents. In humans, habenula hyperactivity is observed in depressive disorders. Ketamine reverses increased theta activity in rodent habenula, and 5 Hz DBS of LHb produces depressive-like behavior in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 provide relevant background from animal and human studies that contextualizes the current findings. The citations support the translational relevance of the theta band findings. These claims accurately represent prior literature and establish the rationale for investigating theta/alpha activity in human habenula during emotional processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior research shows that LHb receives input from cortical areas processing negative information (anterior insula, dACC, pgACC), and PFC-to-habenular projections may provide teaching signals for value-based choice behavior. Two competing hypotheses exist regarding hemispheric specialization in emotion: the Right Hemisphere Hypothesis (right hemisphere processes all emotions) and the Valence Hypothesis (left processes positive, right processes negative emotions), with the latter supported by multiple study types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide anatomical and theoretical context for interpreting the right-lateralized PFC-habenula coherence findings. The citations appropriately support these background claims. The discussion of competing hypotheses (C58-C60) provides a framework for interpreting the right frontal predominance observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "High-frequency DBS can reduce local neuron firing rates and suppress beta band hypersynchrony in Parkinson's disease, and may disrupt abnormal information flow through stimulation sites. Patient-specific connectivity profiles between stimulation targets and cortical areas can predict DBS clinical outcomes for Parkinson's disease, major depressive disorder, and obsessive-compulsive disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 provide relevant background on DBS mechanisms that contextualizes the therapeutic speculation in C67-C69. The citations appropriately support these claims about DBS mechanisms and the importance of connectivity profiles for predicting outcomes. This background is relevant for the discussion of potential therapeutic applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The human habenula is very small (combined volume ~30-36 mm\u00b3, each ~2-3 mm per dimension), potentially smaller than standard fMRI voxel size. Bipolar recordings from neighboring macroelectrodes can detect locally generated potentials, particularly when electrodes are within the target structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 address important methodological considerations regarding the small size of the habenula and the recording approach. The size estimates are supported by citations to prior MRI studies (C71-C73), and the bipolar recording approach is justified by citation to prior work (C74). These claims appropriately acknowledge the technical challenges of recording from this small structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Prior research shows that sustained medial PFC activity to negative facial expressions correlates with neuroticism, and slower amygdala recovery from negative images predicts greater neuroticism, lower social stimulus likability, and declined psychological well-being.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 provide relevant context for the prolonged theta activity observed at 2700-3300 ms after stimulus offset. These citations support the interpretation that prolonged neural responses to negative stimuli may have trait-level psychological correlates. The citations appear appropriate for contextualizing the late-latency effects.",
+    "result_type": "MINOR"
+  }
+]

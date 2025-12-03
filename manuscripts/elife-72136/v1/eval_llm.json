@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors developed an anatomically constrained computational model of 30 macaque cortical areas with inter-areal connectivity based on tract-tracing data, incorporating a gradient of synaptic excitation along the cortical hierarchy based on dendritic spine counts, and assuming graded feedforward excitatory and feedback inhibitory projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe the model architecture with clear references to anatomical data sources (Markov et al., Elston et al.) and explicit figures showing the implementation. The model constraints are well-documented in both text and supplementary materials, providing a solid foundation for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "The model demonstrates that mnemonic internal states can emerge from inter-areal reverberation even when isolated areas cannot generate self-sustained activity, producing distributed sustained activity patterns across frontal, temporal, and parietal areas that agree with experimental evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C22, and C24 collectively demonstrate the core distributed WM mechanism through simulation results (Figure 2). The model produces sustained activity patterns matching meta-analyses of experimental data (C20), with stimulus-specific selectivity (C21) and area-specific dynamics (C22). The spatial transition in firing rates (C24) provides a novel theoretical prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The model reveals a novel spatial transition separating cortical areas engaged in working memory from those that are not, which is robust to different ranking methods and does not require parameter fine-tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C27 describe the spatial transition phenomenon shown in Figure 2D and supplementary figures. The transition appears consistently across different ranking methods (C26, Figure 2\u2014supplement 5) and is characterized as robust (C27), representing a novel theoretical insight distinct from classical bifurcation theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A simplified model demonstrates that distributed WM patterns can emerge in generic networks of excitatory units with a linear gradient of local couplings when long-range connections are sufficiently strong, even when isolated nodes cannot generate bistability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe the simplified model analysis (Figure 3A-D) with mean-field analytical solutions confirming the mechanism. The mathematical framework provides theoretical support for the distributed WM concept, showing it requires minimal ingredients (strong inter-areal connections and a gradient of local properties).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "When biological constraints are considered (saturating spine count gradient), the model requires asymmetric feedforward/feedback projections (counterstream inhibitory bias) to produce realistic distributed WM patterns involving only a subset of areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 demonstrate through the simplified model (Figure 3E-F) that saturating gradients prevent distributed WM unless feedback projections are weaker than feedforward ones. This provides theoretical justification for the CIB hypothesis and links model requirements to biological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Counterstream inhibitory bias (CIB) prevents indiscriminate sustained activation across all cortical areas, reduces firing in early sensory areas while maintaining appropriate activity in higher areas, and allows distributed WM patterns to emerge across a wide range of coupling strengths with moderate to strong CIB agreeing well with experimental evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C40 describe the CIB mechanism and its effects (Figure 4). The systematic variation of CIB strength (C38-C39) demonstrates its functional role, and comparison with experimental evidence (C40, Figure 4D) provides validation. The mechanism is both theoretically motivated and empirically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C71",
+      "C72"
+    ],
+    "result": "The large-scale circuit displays a large number of distinct distributed sustained activity attractors defined by their spatial patterns, with the number of attractors showing an inverted-U relationship with global coupling strength. A positive correlation exists between attractor size and mean firing rate, and attractor composition depends on the number of intrinsically multistable areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46, C71-C72 describe the diversity of attractors (Figure 5). The systematic exploration across different parameter regimes (C43, C45-C46) and the correlation analysis (C44) provide comprehensive characterization. The finding that many attractors are not accessible from sensory stimulation (C72) has important functional implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "Distributed WM attractors show resilience to area inactivation, with the number of active areas and their firing rates decreasing only linearly with random inactivations. Silencing areas in the anatomical 'bowtie hub' has stronger impact than peripheral areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C50 demonstrate robustness through systematic inactivation studies (Figure 6A-B, F-G). The linear degradation (C47-C48) contrasts with catastrophic failure and the bowtie hub analysis (C50) links network topology to functional resilience, providing testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Prefrontal areas control distributed attractors: inactivating dlPFC prevents distributed WM emergence in strongly distributed networks, brief inactivations in distributed WM allow information recovery (unlike localized WM), and distributed attractors can be deactivated by targeting inhibitory populations in a small set of frontal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C57 demonstrate prefrontal control mechanisms (Figure 7). The comparison between localized and distributed WM (C53-C54) provides clear predictions, and the selective shutdown mechanism (C55-C57) shows how distributed patterns can be controlled from specific nodes despite their spatial extent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "Distributed WM is significantly more robust to distractors than localized WM, requiring distractors approximately three times stronger to disrupt memory maintenance, due to both the intrinsic resilience of distributed attractors and the dampening effect of counterstream inhibitory bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58-C60, C63 demonstrate distractor robustness through systematic comparison (Figure 8). The quantitative difference (3x stronger distractors needed, C59) and mechanistic explanation (C60) linking to CIB provide both empirical and theoretical support for this prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "The model generates four experimentally testable predictions: (1) positive correlation between number of areas involved and their firing rates, (2) brief silencing of areas in distributed WM allows information recovery, (3) distributed WM is more robust to distractors, and (4) FEF areas require frontal support for WM activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C64 explicitly state testable predictions derived from the model. These are clearly distinguished from the model results themselves and provide concrete experimental approaches to validate the distributed WM framework. Each prediction has clear empirical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The distributed WM mechanism requires minimal elements and is likely to generalize to other species (rodents, humans), with CIB being a plausible condition as long as local property gradients grow sublinearly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 discuss generalizability based on the simplified model (C66) and theoretical considerations (C67). While the minimal requirements suggest broad applicability, actual validation in other species requires empirical testing. The claims are speculative but theoretically grounded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The model provides a novel theoretical framework showing that graded circuit properties along the cortical hierarchy can explain qualitatively distinct functions of different areas through a spatial transition that cannot be simply explained by parameter gradients, potentially exhibiting dynamical criticality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 articulate the theoretical contributions. The spatial transition mechanism (C69) represents a novel form of bifurcation in networked systems, and the prediction of dynamical criticality (C70) follows logically from the transition phenomenon, though C70 remains speculative pending experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Distributed attractor states could serve various forms of internal representations not triggered by particular sensory pathways or encoded differently as memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 speculates about functional roles of non-sensory-accessible attractors. While the existence of such attractors is demonstrated (C72), their specific functional roles remain hypothetical. This represents an interesting direction for future work but lacks direct support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Working memory has traditionally been associated with localized frontal activity and local circuit mechanisms, but recent evidence shows distributed coactivation across multiple regions, which previous modeling efforts limited to two areas have not adequately addressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10 establish the scientific context through citations to prior work. These background claims are well-supported by the cited literature and accurately represent the state of the field, motivating the need for large-scale distributed modeling approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Population-level ramping activity of LIP in the model corresponds to trial-averaged temporal accumulation of information in decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C23 interprets LIP ramping activity by analogy to decision-making literature. While the model produces ramping (C22), the specific interpretation as decision-related accumulation is speculative and not directly tested. The connection requires additional validation.",
+    "result_type": "MINOR"
+  }
+]

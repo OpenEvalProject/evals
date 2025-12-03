@@ -1,0 +1,2465 @@
+{
+  "submission": {
+    "id": "0b95cf48-b0c2-4e00-9125-73d0a372cc04",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:46:46.534575Z",
+    "updated_at": "2025-12-03T16:46:46.534575Z"
+  },
+  "content": [
+    {
+      "id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "submission_id": "0b95cf48-b0c2-4e00-9125-73d0a372cc04",
+      "content_type": "manuscript",
+      "content_text": "# Autoantibody discovery across monogenic, acquired, and COVID-19-associated autoimmunity with scalable PhIP-seq\n\n## Authors\n\n- Sara E Vazquez<sup>1</sup> ([ORCID: 0000-0002-0601-7001](https://orcid.org/0000-0002-0601-7001))\n- Sabrina A Mann<sup>1</sup> ([ORCID: 0000-0002-4970-1073](https://orcid.org/0000-0002-4970-1073))\n- Aaron Bodansky<sup>5</sup> ([ORCID: 0000-0001-8943-8233](https://orcid.org/0000-0001-8943-8233))\n- Andrew F Kung<sup>1</sup>\n- Zoe Quandt<sup>2</sup>\n- Elise MN Ferr\u00e9<sup>7</sup>\n- Nils Landegren<sup>8</sup> ([ORCID: 0000-0002-6163-9540](https://orcid.org/0000-0002-6163-9540))\n- Daniel Eriksson<sup>10</sup> ([ORCID: 0000-0001-5473-3312](https://orcid.org/0000-0001-5473-3312))\n- Paul Bastard<sup>12</sup>\n- Shen-Ying Zhang<sup>12</sup>\n- Jamin Liu<sup>1</sup>\n- Anthea Mitchell<sup>1</sup>\n- Irina Proekt<sup>2</sup>\n- David Yu<sup>2</sup>\n- Caleigh Mandel-Brehm<sup>1</sup>\n- Chung-Yu Wang<sup>1</sup>\n- Brenda Miao<sup>1</sup> ([ORCID: 0000-0002-3393-9837](https://orcid.org/0000-0002-3393-9837))\n- Gavin Sowa<sup>3</sup> ([ORCID: 0000-0002-2089-8116](https://orcid.org/0000-0002-2089-8116))\n- Kelsey Zorn<sup>1</sup>\n- Alice Y Chan<sup>17</sup>\n- Veronica M Tagi<sup>18</sup>\n- Chisato Shimizu<sup>19</sup>\n- Adriana Tremoulet<sup>19</sup>\n- Kara Lynch<sup>20</sup>\n- Michael R Wilson<sup>22</sup> ([ORCID: 0000-0002-8705-5084](https://orcid.org/0000-0002-8705-5084))\n- Olle K\u00e4mpe<sup>8</sup> ([ORCID: 0000-0001-6091-9914](https://orcid.org/0000-0001-6091-9914))\n- Kerry Dobbs<sup>25</sup> ([ORCID: 0000-0002-3432-3137](https://orcid.org/0000-0002-3432-3137))\n- Ottavia M Delmonte<sup>25</sup>\n- Rosa Bacchetta<sup>18</sup>\n- Luigi D Notarangelo<sup>25</sup>\n- Jane C Burns<sup>19</sup>\n- Jean-Laurent Casanova<sup>12</sup>\n- Michail S Lionakis<sup>7</sup>\n- Troy R Torgerson<sup>27</sup> ([ORCID: 0000-0003-3489-5036](https://orcid.org/0000-0003-3489-5036))\n- Mark S Anderson<sup>2</sup> ([ORCID: 0000-0002-3093-4758](https://orcid.org/0000-0002-3093-4758)) \u2020\n- Joseph L DeRisi<sup>1</sup> ([ORCID: 0000-0002-4611-9205](https://orcid.org/0000-0002-4611-9205)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Diabetes Center, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n3. School of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n4. Chan Zuckerberg Biohub San Francisco United States\n5. Department of Pediatric Critical Care Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n6. Department of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n7. Fungal Pathogenesis Unit, Laboratory of Clinical Immunology & Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n8. Department of Medicine, Karolinska University Hospital, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n9. Science for life Laboratory, Department of Medical Sciences, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))\n10. Department of Medical Biochemistry and Microbiology, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))\n11. Centre for Molecular Medicine, Department of Medicine, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n12. St. Giles Laboratory of Human Genetics of Infectious Diseases, Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n13. Laboratory of Human Genetics of Infectious Diseases, Necker Branch, INSERM U1163, Necker Hospital for Sick Children Paris France ([ROR:05tr67282](https://ror.org/05tr67282))\n14. Imagine Institute, University of Paris Paris France ([ROR:05f82e368](https://ror.org/05f82e368))\n15. Department of Pediatrics, Necker Hospital for Sick Children Paris France ([ROR:05tr67282](https://ror.org/05tr67282))\n16. Berkeley-University of California, San Francisco Graduate Program in Bioengineering, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n17. Department of Pediatrics, Division of Pediatric Allergy, Immunology, Bone and Marrow Transplantation, Division of Pediatric Rheumatology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n18. Division of Stem Cell Transplantation and Regenerative Medicine, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n19. Kawasaki Disease Research Center, Rady Children\u2019s Hospital and Department of Pediatrics, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n20. Department of Laboratory Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n21. Zuckerberg San Francisco General San Francisco United States\n22. Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n23. Department of Clinical Science and KG Jebsen Center for Autoimmune Disorders, University of Bergen Bergen Norway ([ROR:03zga2b32](https://ror.org/03zga2b32))\n24. Center of Molecular Medicine, and Department of Endocrinology, Metabolism and Diabetes, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))\n25. Laboratory of Clinical Immunology and Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n26. Howard Hughes Medical Institute New York United States ([ROR:006w34k90](https://ror.org/006w34k90))\n27. Seattle Children's Research Institute Seattle United States\n28. Department of Pediatrics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhage immunoprecipitation sequencing (PhIP-seq) allows for unbiased, proteome-wide autoantibody discovery across a variety of disease settings, with identification of disease-specific autoantigens providing new insight into previously poorly understood forms of immune dysregulation. Despite several successful implementations of PhIP-seq for autoantigen discovery, including our previous work (Vazquez et al., 2020), current protocols are inherently difficult to scale to accommodate large cohorts of cases and importantly, healthy controls. Here, we develop and validate a high throughput extension of PhIP-seq in various etiologies of autoimmune and inflammatory diseases, including APS1, IPEX, RAG1/2 deficiency, Kawasaki disease (KD), multisystem inflammatory syndrome in children (MIS-C), and finally, mild and severe forms of COVID-19. We demonstrate that these scaled datasets enable machine-learning approaches that result in robust prediction of disease status, as well as the ability to detect both known and novel autoantigens, such as prodynorphin (PDYN) in APS1 patients, and intestinally expressed proteins BEST4 and BTNL8 in IPEX patients. Remarkably, BEST4 antibodies were also found in two patients with RAG1/2 deficiency, one of whom had very early onset IBD. Scaled PhIP-seq examination of both MIS-C and KD demonstrated rare, overlapping antigens, including CGNL1, as well as several strongly enriched putative pneumonia-associated antigens in severe COVID-19, including the endosomal protein EEA1. Together, scaled PhIP-seq provides a valuable tool for broadly assessing both rare and common autoantigen overlap between autoimmune diseases of varying origins and etiologies.\n\n## Introduction\n\nAutoantibodies provide critical insight into autoimmunity by informing specific protein targets of an aberrant immune response and serving as predictors of disease. Previously, disease-associated autoantigens have been discovered through candidate-based approaches or by screening tissue specific expression libraries. By contrast, the development of proteome-wide screening approaches has enabled the systematic and unbiased discovery of autoantigens.\n\nTwo complementary approaches for proteome-wide autoantibody discovery include printed protein arrays and phage-immunoprecipitation sequencing (PhIP-seq) (Jeong et al., 2012; Larman et al., 2011; Sharon and Snyder, 2014; Zhu et al., 2001). While powerful, printed protein arrays can be cost- and volume-prohibitive and are not flexible to adapting or generating new antigen libraries. On the other hand, PhIP-seq, originally developed by Larman et al., 2011, uses the economy of scale of arrayed oligonucleotide synthesis to enable very large libraries at comparatively low cost. However, phage-based techniques have remained hindered by labor-intensive protocols that prevent broader accessibility and scaling.\n\nRecently, we and others have adapted and applied PhIP-seq to detect novel, disease-associated autoantibodies targeting autoantigens across a variety of autoimmune contexts (Larman et al., 2011; Mandel-Brehm et al., 2019; O\u2019Donovan et al., 2020; Vazquez et al., 2020). However, both technical and biological limitations exist. From a technical standpoint, PhIP-seq libraries express programmed sets of linear peptides, and thus this technique is inherently less sensitive to detect reactivity to conformational antigens, such as Type I interferons (IFNs) and GAD65 (Vazquez et al., 2020; Wang et al., 2021). Nonetheless, the technique allows hundreds of thousands to millions of discrete peptide sequences to be represented in a deterministic manner, including the multiplicity of protein isoforms and variants that are known to exist in vivo. In this sense, PhIP-seq is complementary to mass spectrometry and other techniques that leverage fully native proteins. Given that many forms of autoimmunity exhibit significant phenotypic heterogeneity, the true number of patients with shared disease-associated autoantibodies may be low (Ferre et al., 2016). Therefore, the screening of large cohorts is an essential step for identifying shared antigens and would benefit from a scaled PhIP-seq approach for high throughput testing.\n\nBeyond the benefits of detecting low-frequency or low-sensitivity antigens, a scaled approach to PhIP-seq would also facilitate increased size of healthy control cohorts. Recently, PhIP-seq has been deployed to explore emerging forms of autoimmune and inflammatory disease, including COVID-19-associated multisystem inflammatory syndrome in children (MIS-C) (Gruber et al., 2020). However, these studies suffer from a relative paucity of control samples, resulting in low confidence in the disease specificity of the suggested autoantigens. Questions of disease specificity, rare antigens, and antigen overlap can be addressed in larger, scaled experiments.\n\nHere, we develop a high-throughput PhIP-seq protocol with markedly increased accessibility (not requiring robotics) and scale (enabling 600\u2013800 samples to be run in parallel), with minimal plate-to-plate variability and low contamination potential, and without sacrificing data quality. We demonstrate the utility of this protocol in the context of an expanded, multi-cohort study, including APS1, patients with immune dysregulation, polyendocrinopathy, X-linked (IPEX), RAG1/2 deficiency with autoimmune features, a KD patient cohort, and emerging COVID-19 patient phenotypes with possible autoimmune underpinnings. In the future, scaled PhIP-seq cohort studies could be used across additional syndromic and sporadic autoimmune diseases to develop an atlas of linear B cell autoantigens.\n\n## Results and discussion\n\n### Design and implementation of a scaled PhIP-seq protocol\n\nThe ability to process large numbers of patient samples for PhIP-seq in a highly uniform manner has several important benefits, including reduction of batch effects between samples from the same cohorts as well as between disease and control cohorts, detection of lower-frequency autoantigens, and the ability to simultaneously include large numbers of control samples.\n\nIn creating a scaled protocol, we searched for a method that would allow 600\u2013800 samples to be run fully in parallel to reduce any batch or plate-to-plate variability. Thus, each wash or transfer step needed to be performed in rapid succession for all plates. We also prioritized reduction of any well-to-well contamination, particularly given that small, early contamination can amplify across subsequent rounds of immunoprecipitation. Finally, we required our protocol to minimize consumable waste and maximize benchtop accessibility without robotics or other specialized equipment.\n\nA benchtop vacuum-based protocol (rapid, consistent wash times) in deep-well 96-well filter plates with single-use foil seals (no well-to-well contamination) met our requirements (see schematic in Figure 1A). The data for APS1 samples on our moderate-throughput manual multichannel protocols were closely correlated with vacuum-based output, including identification of previously validated antigens within each sample (Figure 1B). Additional protocol improvements included: 3-D printing template for vacuum plate adaptors (for easy centrifugation and incubation steps); direct addition of protein A/G beads to Escherichia coli lysis without a preceding elution step; shortened lysis step by using square-well plates with semi-permeable membrane for aeration; and options for smaller volume and decreased reagent library preparation in both 96-well and 384-well formats. A detailed protocol, including custom part designs, for both high-throughput vacuum-based and moderate throughput multichannel-based protocols is available at protocols.io.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of vacuum-based scaled PhIP-seq protocol, allowing for parallelized batches of 600\u2013800 samples. (B) Comparison of moderate-throughput multichannel protocol data to high-throughput vacuum-based protocol data, with axes showing normalized read percentages. Controls include a commercial polyclonal anti-GFAP antibody (left), APS1 patient A with known and validated autoantibodies RFX6, SOX10, ACPT, and LCN1 (center), and APS1 patient B with the same known and validated autoantibodies as well as NKX6-3.\n\n### Large control cohorts are critical for identifying disease-specific autoantibodies\n\nSome assays for autoantigen discovery, such as protein arrays, are often used as a quantitative measure of how autoreactive an individual serum sample may be. In contrast, PhIP-seq is an enrichment-based assay in which binders are serially enriched and amplified. A practical limitation of this technique is that non-specific phage may also be amplified, in addition to a wide array of autoreactive, but non-disease-related peptides. We tested whether we could detect global differences between case and control cohorts as a measure of autoreactivity. As each APS1 patient is known to have multiple, high-affinity antibodies to self-proteins (Fishman et al., 2017; Landegren et al., 2016; Meyer et al., 2016; Vazquez et al., 2020) we reasoned that this would be an ideal cohort to determine whether a global autoreactive state was discernible. As expected, each individual sample exhibits a spectrum of enriched genes, regardless of disease status (Figure 2A), indicating that measures of simple enrichment are inadequate for discrimination of cases from controls.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig2-v2.jpg)\n\n**Figure 2.:** (A) Number of hits per sample reaching 5, 10, 25, 50, and 100-fold enrichment relative to mock-IP samples. Each dot represents a single APS1 patient (green) or non-APS1 control (gray). (B) When looking for disease-specific hits, increasing the number of healthy controls results in fewer apparent hits and is therefore critical. Shared hits are defined as gene-level signal (>10-fold change over mock-IP) which is shared among 10% of APS1 samples (n=128), present in fewer than 2% of healthy controls, and with at least one APS1 sample with a high signal (FC of 50<). Random downsampling was performed 10 times for each healthy control bin. (C) Nine gene-level hits are present in 10%< of a combined three-group APS1 cohort. North-America-1, n=62; Sweden, n=40; North-America-2, n=26. Anti-GFAP control antibody (n=5) indicates that results are consistent across plates and exhibit no well-to-well contamination.\n\nWe and others have shown that PhIP-seq can robustly detect disease-associated antigens by comparing antigen-specific signal between disease and control cohorts (Larman et al., 2011; Mandel-Brehm et al., 2019; O\u2019Donovan et al., 2020; Vazquez et al., 2020). In this dataset, encompassing 186 control samples and 128 APS1 samples, we further evaluated the importance of control cohort size. We iteratively downsampled the number of healthy control samples in our dataset to 5, 10, 25, 50, 100, or 150 (out of n=186 total control samples). The number of apparent hits was determined in each condition, where a gene-level hit was called when the following criteria were met: (1) at least 10% of APS1 samples and less than two control samples with a Z-score >10, (2) no control sample exhibiting higher signal than the highest patient signal, and (3) a minimum of one strong positive patient sample (50-fold enrichment over mock-IP). Genes that failed to meet these conditions were considered non-specific. Using these conservative criteria, a control set of 10 samples resulted in (on average) 404 apparent hits, while increasing the control set to 50 samples removed an additional 388 non-specific hits, leaving 16 apparent hits (Figure 2B). Further increasing the number of control samples to 150 samples had diminishing returns, although 4\u20135 more autoantigen candidates were removed as being non-specific, reducing the frequency of false positives, and ultimately leaving only ~1% of the original candidate list for further investigation. In sum, to improve downstream analysis aimed at detecting disease-associated hits, PhIP-seq experimental design should include a large and appropriate number of non-disease controls.\n\n### Scaled PhIP-seq replicates and expands autoantigen repertoires across multiple independent cohorts of APS1\n\nWe previously identified and validated PhIP-seq hits based on shared positivity of a given hit among 3 (out of 39) or more patients with APS1 (Vazquez et al., 2020). While this enabled us to robustly detect frequently shared antigens within a small disease cohort, antigens with lower frequencies \u2013 or with low detection sensitivity \u2013 would likely fall below this conservative detection threshold.\n\nTo improve both sensitivity and specificity, we utilized scaled PhIP-seq to explore expanded cohorts of disease, including a much larger (n=128) APS1 cohort spanning two North American cohorts and one Swedish cohort. All hits present in at least 10% of APS1 patients also spanned all three cohorts, thus further validating broad prevalence of antigens that were previously described by us (RFX6, ACPT, TRIM50, CROCC2, GIP, NKX6-3, KHDC3L) and others (SOX10, LCN1) (Figure 2C; Fishman et al., 2017; Hedstrand et al., 2001; Vazquez et al., 2020). At the gene level, we detected 39 candidate hits that were present in 6/128 (>4%) of APS1 and in 2 or fewer controls (2/186, 1%) (Figure 3A and B). As expected, the larger cohort yielded new candidate antigens that had not been detected previously. For example, PDYN is a secreted opioid peptide thought to be involved in regulation of addiction-related behaviors (reviewed in Fricker et al., 2020). PDYN was enriched by 6/128 (4.7%) of patient samples and subsequently was validated by Radioligand Binding Assay (RLBA) (Figure 3C). Indeed, this validated antigen was present in our previous investigations (Vazquez et al., 2020); however, it was enriched in too few samples to qualify for follow-up.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig3-v2.jpg)\n\n**Figure 3.:** (A) Increasing the number of healthy controls results in fewer apparent hits and is therefore critical. Shared hits are defined as gene-level signal (>10-fold change over mock-IP) which is shared among 4%< of APS1 samples (n=128), present in fewer than 2% of healthy controls, and with at least one APS1 sample with a high signal (FC of 50<). Random downsampling was performed 10 times for each healthy control bin. (B) 39 candidate hits present in 4%< of the APS1 cohort. (C) Rare, novel anti-PDYN autoantibodies validate at whole-protein level, with PhIP-seq and whole-protein RLBA data showing good concordance.\n\nOther notable hits with relevant tissue-restricted expression were also observed. For example, SPAG17 is closely related to the known APS1 autoantigen SPAG16 and is expressed primarily in male germ cells and in the lung, with murine genetic mutations resulting in ciliary dyskinesis with pulmonary phenotypes (Fishman et al., 2017; Teves et al., 2013). Also potentially related to ciliary and/or pulmonary autoimmunity is CROCC2/Rootletin, a protein expressed in ciliated cells, which we previously observed, and now recognize at a high frequency across multiple cohorts (Uhl\u00e9n et al., 2015; Yang et al., 2002). Similarly, GAS2L2 is a ciliary protein expressed in the airway, with genetic loss of function in mice resulting in impaired mucociliary clearance, and clustered closely with CROCC2 (Bustamante-Marin et al., 2019; Uhl\u00e9n et al., 2015) in this dataset. These novel putative antigens together hint at potential mucociliary airway autoreactivity. CT45A10 and GPR64 are both proteins with expression restricted primarily to male gonadal tissues (Uhl\u00e9n et al., 2015). GABRR1 is a GABA receptor expressed primarily in the central nervous system as well as on platelets (Ge et al., 2006; Zhu et al., 2019), and TRIM2 is implicated in genetic disorders of demyelination within the peripheral nervous system, and therefore may be of interest to the chronic inflammatory demyelinating polyneuropathy phenotype that can be seen in some patients with APS1 (Li et al., 2020; Valenzise et al., 2017). In addition to our previously described intestinally expressed autoantigens RFX6, NKX6-3, and GIP, we also identify CDHR5, a transmembrane cadherin-family protein expressed on the enterocyte cell surface, as a putative autoantigen in APS1 (Crawley et al., 2014; Uhl\u00e9n et al., 2015).\n\n### APS1 disease prediction by machine learning\n\nAPS1 is a clinically heterogeneous disease, and it is also heterogeneous with respect to autoantibodies (Ferre et al., 2016; Fishman et al., 2017; Landegren et al., 2016; Meyer et al., 2016; Vazquez et al., 2020). Because PhIP-seq simultaneously interrogates autoreactivity to hundreds of thousands of peptides, we hypothesized that unsupervised machine learning techniques could be used to create a classifier that would distinguish APS1 cases from healthy controls. We applied a simple logistic regression classifier to our full gene-level APS1 (n=128) and control (n=186) datasets, resulting in excellent prediction of disease status (AUC = 0.95, Figure 4A) using fivefold cross-validation. Moreover, we found that the classification model was driven strongly by many of the previously identified autoantigens, including RFX6, KHDC3L, and others (Figure 4A), in addition to some targets that had not been previously examined (Vazquez et al., 2020). These results demonstrate that PhIP-seq autoreactive antigen enrichment profiles are amenable to machine learning techniques, and further suggest that such data could be used to derive diagnostic signatures with strong clinical predictive value.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig4-v2.jpg)\n\n**Figure 4.:** (A) Receiver operating characteristic (ROC) curve for prediction of APS1 versus control disease status. (B) The highest logistic regression (LR) coefficients include known antigens RFX6, KHDC3L, and others.\n\n### Antoantibody discovery in IPEX\n\nIPEX syndrome is characterized by defective peripheral immune tolerance secondary to impaired T regulatory cell (Treg) function. In IPEX, peripheral tolerance rather than central tolerance is impaired, resulting in a phenotypic constellation of autoimmunity that partially overlaps with APS1 (Bacchetta et al., 2006; Powell et al., 1982). Notably, the majority of IPEX patients exhibit severe enteropathy, with early-onset severe diarrhea and failure to thrive, with many of these children harboring anti-enterocyte antibodies detected by indirect immunofluorescence (Bacchetta et al., 2006; Gambineri et al., 2018; Powell et al., 1982). We hypothesized that the same PhIP-seq approach that was successful for APS1 would also yield informative hits for IPEX. A total of 27 patient samples were analyzed using scaled PhIP-seq, and the data processed in the same manner as for APS1.\n\nA handful of IPEX autoantibodies targeting antigens expressed in the intestine have been described, including harmonin (USH1C) and ANKS4B (Eriksson et al., 2019; Kobayashi et al., 2011). In our data, enrichment of USH1C was observed in two IPEX patients, and this signal was fully correlated with anti-ANKS5B as previously described (Figure 5\u2014figure supplement 1; Eriksson et al., 2019).\n\nSeveral novel putative autoantigens were observed that were shared among three or more IPEX patients (Figure 5A). Among these were several with expression restricted to the intestine, including BEST4, a protein expressed by a specific subset of enterocytes, BTNL8, a butyrophilin-like molecule highly expressed in the gut epithelium, ST6GALNAC1, and ITGA4 (Figure 5A; Mayassi et al., 2019; Schaum et al., 2018; Uhl\u00e9n et al., 2015). BEST4 and BTNL8 were selected for validation by whole protein immunoprecipitation. A total of 4/26 (15%) of IPEX patients were positive for anti-BEST4 autoantibodies (Figure 5B). In the case of BTLN8, orthogonal validation identified 11/26 (42%) of IPEX patients who were positive for anti-BTNL8 antibodies (Figure 5B). Of note, all patients with anti-BTNL8 and/or BEST4 antibodies also had clinical evidence of enteropathy (Supplementary file 1). In addition, to broaden the validity of our findings, we tested a second, independent cohort of IPEX patients for anti-BTNL8 antibodies and found 3/15 (20%) patients to be positive (Figure 5C). Taken together, these results suggest that anti-BEST4 and anti-BTNL8 are associated with IPEX enteropathy.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig5-v2.jpg)\n\n**Figure 5.:** (A) PhIP-seq heatmap of most frequent shared antigens among IPEX, with color indicating z-score relative to a cohort of non-IPEX controls. (B) Radioligand binding assay for BTNL8 reveals additional anti-BTNL8 positive IPEX patients (top). Radioligand binding assay for BEST4 autoantibodies correlates well with PhIP-seq data (bottom). (C) Discovery of additional anti-BTNL8 positive individuals in an independent IPEX cohort (n=15) by radioligand binding assay; dotted line indicates mean of healthy controls +3 SD. (D) PhIP-seq screen of patients with hypomorphic mutations in RAG1/2 reveals two patients with anti-BEST4 signal. (E) Orthogonal radioligand binding assay validation of anti-BEST4 antibodies in both PhIP-seq anti-BEST4 positive patients.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Phage-immunoprecipitation sequencing has low detection sensitivity for known antigens USH1C and ANKS4B, but those patients with positive signal exhibit the previously reported coupled signal for both antigens. (B) Additional, shared putative antigens within the cohort of RAG1/2-deficient patients (n=62).\n\n### Overlap of intestinal autoantigen BEST4 in the setting of hypomorphic RAG1/2 mutations\n\nHypomorphic RAG1/2 mutations represent an additional and notoriously phenotypically heterogeneous form of monogenic immune dysregulation. Absent RAG complex activity leads to lack of peripheral T and B cells, therefore causing severe combined immunodeficiency (SCID). However, patients with hypomorphic RAG1/2 have residual capacity to generate T and B cells. Depending on the severity of the defect, these patients can present with Omenn syndrome, atypical SCID (AS), or combined immune deficiency with granulomas and autoimmunity (CID-G/AI) (Delmonte et al., 2018; Delmonte et al., 2020). Autoimmune manifestations are particularly common in patients with AS and CID-G/AI. Cytopenias are the most frequent form of autoimmunity in patients with RAG deficiency, but cutaneous, neuromuscular, and intestinal manifestations have been also reported. While anti-cytokine antibodies have been described, other disease-associated autoantibody targets remain to be identified (Delmonte et al., 2020).\n\n62 patients with hypomorphic RAG1/2 mutations were screened by PhIP-seq to assess for overlap with APS1 and IPEX antigens, as well as for novel autoantigen specificities. Minimal overlap was observed between RAG1/2 deficiency and APS1 and IPEX. However, two samples from RAG1/2 patients indicated the presence of anti-BEST4 antibodies (Figure 5D), which were confirmed through orthogonal validation using whole protein (Figure 5E). Both positive patients had CID-G/AI, indicating the presence of autoimmune features. Remarkably \u2013 given that enteropathy in the setting of hypomorphic RAG1/2 deficiency is rare \u2013 one of the two individuals harboring anti-BEST4 antibodies also had very early-onset inflammatory bowel disease.\n\nSeveral other putative antigens among the larger RAG1/2 deficiency cohort were revealed. Nearly half of the cohort sera were enriched for peptides derived from ZNF365 (Figure 5\u2014figure supplement 1B). ZNF365 is a protein associated with multiple autoimmune diseases, as evidenced by genome-wide association studies (GWAS) show that variants in ZNF365 are associated with Crohn\u2019s disease and autoimmune uveitis (Haritunians et al., 2011; Hou et al., 2020). Many patients also had evidence of autoantibodies targeting RELL2, a TNF receptor binding partner, and CEACAM3, a phagocyte receptor that recognizes human-specific pathogens and is important for opsonin-independent phagocytosis of bacteria (Bonsignore et al., 2019; Moua et al., 2017). Autoantibodies targeting these antigens could potentially play a role in the autoinflammation seen in certain cases of hypomorphic RAG1/2 and/or increased susceptibility to particular infections and will require additional future follow-up.\n\n### PhIP-seq identifies rare, shared candidate autoantigens in MIS-C\n\nMIS-C leads to critical illness in ~70% of affected children and shares some common clinical features with KD, the most common cause of acquired pediatric heart disease in the United States. Despite hints for a role of abnormal adaptive immunity and autoantibodies in the pathogenesis of KD and MIS-C, the etiologies of both diseases remain enigmatic (Feldstein et al., 2020; Newburger et al., 2016). Recently, PhIP-seq has been deployed to explore COVID-19-associated MIS-C (Gruber et al., 2020). However, this study included only four healthy controls and nine MIS-C patients, and as our results have shown, removal of false-positive PhIP-seq hits requires the use of substantial numbers of unaffected controls (Figure 2C). Furthermore, these previously published hits lacked orthogonal validation. Therefore, we sought to examine an MIS-C cohort in light of these results, as well as to explore for possible autoantibody overlap between KD and MIS-C.\n\nFirst, 20 MIS-C subjects, 20 pediatric febrile controls, and 20 COVID-19 controls were examined by PhIP-seq, each of which was compared to a cohort of adult healthy controls (n=87). No evidence for specific enrichment was observed for any of the previously reported candidate antigens that overlapped with our PhIP-seq library (Figure 6A). Methodologic and sample differences could, in part, account for differences in our results; however, these results suggest that PhIP-seq hits should be subjected to external replication and/or validation. Additionally, MIS-C patients are treated with IVIG, which has abundant low-affinity, low-avidity autoantibodies, so caution must be exercised in the timing of sample collection (Burbelo et al., 2021; Sacco et al., 2021). While it remains unclear whether high-affinity, novel autoantibodies are likely to be present in IVIG, the majority of our MIS-C samples are confirmed to be collected pre-IVIG. Though several of our samples are of unknown IVIG status, each of the candidate autoantibodies discussed below is present in at least one sample known to be IVIG-free.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig6-v2.jpg)\n\n**Figure 6.:** (A) Heatmap of signal for putative hits from Gruber et al., 2020, among MIS-C, adult COVID-19 controls, and pediatric febrile controls (each n=20). (B) Only rare, shared PhIP-seq signals were found among n=20 MIS-C patients. (C) Heatmap of putative antigens in a cohort of n=70 KD patients. Hits that are specific to KD and are not found among n=20 febrile controls, are highlighted in green. (D) A small number of rare putative antigens are shared between KD and MIS-C (left), with radioligand binding assay confirmation of antibody reactivity to whole protein form of CGNL1 in three KD patients and one MIS-C patient (right).\n\nAnalysis of our MIS-C cohort for shared candidate hits yielded only three candidate hits, each in 2/20 patient sera. These were CD34, RPS6KB1, and CAPZB (Figure 6B). While these targets may be of interest, disease-association remains uncertain. These results suggest that a much larger MIS-C cohort, controlled by an equally large set of healthy controls, will be required to detect rare, shared antigens with confidence by PhIP-seq.\n\n### PhIP-seq screen of a cohort of KD patients\n\nTo screen for possible KD-specific autoantibodies, we analyzed a large cohort of 70 KD subjects by PhIP-seq. KD patients are also often treated with IVIG, so care was taken to ensure that each of these samples was collected prior to IVIG administration. Using the same hit selection criteria as previously, we detected 25 shared hits among 3 or more of the 70 KD samples, which were specific to KD relative to adult healthy controls (Figure 6C). Of these 25 shared KD hits, 17 were absent from additional control groups including the febrile pediatric patients. Each of these hits was present in only a small subset of KD samples, suggesting significant heterogeneity among samples.\n\nSome of the candidate antigens have possible connections to the systemic inflammation seen in KD, including SPATA2 (6/70, 8.6%) and ALOX5B (4/70, 5.7%). SPATA2 is a protein known to regulate the TNF receptor response, with murine knockout of SPATA2 resulting in increased activation of NFkB and MAPK (Schlicher and Maurer, 2017). Similarly, ALOX15 family of lipoxygenases is known to be responsive to Th2-induced anti-inflammatory cytokine IL-4 and IL-13 in human macrophages and thereby likely plays a role in suppressing inflammatory responses, and polymorphisms have been linked to the development of coronary artery disease (Snodgrass and Br\u00fcne, 2019; Wuest et al., 2014).\n\nOther KD candidate autoantigens exhibited tissue expression patterns that suggest possible relationships to sub-phenotypes of KD. For example, pancreatitis and psoriasis have been reported as rare complications of KD (Asano et al., 2005; Haddock et al., 2016). We found that 7/70 of the KD patients (10%) have increased signal for autoantibodies targeting FBXL19, a protein with associations with both acute pancreatitis (Ma et al., 2020) and psoriasis (Stuart et al., 2010) and 10/70 for pancreas-expressed protein RESP18 (Zhang et al., 2007).\n\nTaken together, our dataset did not uncover the presence of common autoantibodies in KD or MIS-C. Nonetheless, our findings leave open the possibility of lower-frequency disease-associated autoantibodies, and future studies with increased cohort scaling, diverse representation of clinical subphenotypes, and high-sensitivity follow-up assays may shed further light on the role of autoantibodies in KD.\n\n### Autoantigen overlap between KD and MIS-C\n\nGiven the partial clinical overlap of KD with MIS-C, we also searched for the low-frequency, shared KD hits within MIS-C and found that 6 of the 17 KD hits were present in one or more MIS-C samples (Figure 6D). Of these, CGNL1 was of particular interest given the very high enrichment values in patients and absence of signal from all controls, as well as its anatomic expression pattern. CGNL1 is an endothelial junction protein and is highly expressed in the cardiac endothelium (Chrifi et al., 2017; Schaum et al., 2018). We confirmed anti-CGNL1 autoantibodies using a radioligand binding assay with whole CGNL1 protein (Figure 6D). We also identified an additional positive KD patient that had not been detected by PhIP-seq. These data suggest that anti-CGNL1 antibodies, while rare, may be associated with KD and/or MIS-C.\n\n### Application of scaled PhIP-seq to severe COVID-19\n\nRecently, it was reported that over 10% of severe COVID-19 pneumonia is characterized by the presence of anti-Type I IFN autoantibodies, a specificity that overlaps with APS1 (Bastard et al., 2020; Bastard et al., 2021b; Bastard et al., 2021a; Meager et al., 2006; Meyer et al., 2016; van der Wijst et al., 2021). We therefore looked for possible overlap of additional antigens between APS1 and COVID-19. As expected, we had low sensitivity for the known anti-type I IFN autoantibodies by PhIP-seq, likely due to the conformational nature of these antigens; however, this cohort had been previously assessed for anti-Type I IFN antibodies by other techniques (Bastard et al., 2020; Bastard et al., 2021c). We did not detect substantial overlap of any of the other antigens that were found in 5% or more of APS1 samples, suggesting that autoantibody commonalities between APS1 and severe COVID-19 may be limited (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig7-v2.jpg)\n\n**Figure 7.:** (A) Screening of patients with severe COVID-19 pneumonia shows little overlap with APS1 but enables discovery of possible novel disease-associated autoantigens including EEA1. (B) Putative novel antigens EEA1, CHRM5, and MCAM are primarily found in anti-IFN-negative patients, suggesting the possibility of other frequent, independent disease-associated antibodies in severe COVID-19.\n\nPhIP-seq was then used to investigate patients with severe to critical COVID-19 pneumonia (n=117) relative to patients with mild to moderate COVID-19 (n=55) and non-COVID-19 healthy controls (n=125) (Figure 7A). A small number of putative autoantigens were identified in four or more of the severe COVID-19 group (>4%), but not within our control group, including MCAM, CHRM5, and EEA1. Of these, only EEA1, an early endosomal protein, had a frequency of >10% (Mu et al., 1995). Notably, the set of anti-EEA1 positive patients was almost fully distinct from the anti-Type I IFN antibody positive group, with only one patient shared between the groups (Figure 7B). Given the importance of the finding of autoantibodies to Type 1 IFNs in >15% of critical COVID-19 pneumonia, our data suggest that anti-EEA1 antibodies may also have predictive potential worth further investigation.\n\n## Discussion\n\nPhIP-seq is a powerful tool for antigen discovery due to its throughput and scalability. Continually declining costs in sequencing paired with scaled protocols such as the ones presented here result in a low per-sample cost and experimental time, and declining costs of custom oligonucleotide based-libraries allow for extensive adaptation (Rom\u00e1n-Mel\u00e9ndez et al., 2021; Vogl et al., 2021). Yet, as the technology is relatively new, increased discussion around best practices in experimental design, methodology, and data interpretation would be beneficial. In this work, we contribute to these efforts by presenting an accessible, carefully documented scaled lab protocol. We anticipate that scaling and low cost will facilitate cross-platform comparisons of autoimmune sera, enabling a more systematic understanding of each platform\u2019s abilities and shortcomings, as well as the best approaches to combine platforms for comprehensive autoantibody profiling, including fixed protein arrays, yeast display (REAP), and PhIP-seq (Wang et al., 2021).\n\nOur scaled data reinforces the importance of including large control cohorts to improve specificity and orthogonal validations to evaluate sensitivity. The absence of appropriately sized control cohorts can result in false-positive associations between enriched protein sequences and disease which can lead to misinterpretation. Furthermore, PhIP-seq is optimized for linear antigens and thus is inherently less robust for detection of confirmational or modified epitopes. For example, our previous work highlights that known anti-IFN and anti-GAD65 antibodies can be detected only in a handful of APS1 samples by PhIP-seq, while orthogonal assays using whole conformation protein demonstrate increased sensitivity (Vazquez et al., 2020). Similarly, the increased sensitivity of whole protein validation relative to PhIP-seq for BTNL8 autoantibodies highlights the need for rapid and sensitive secondary assays to confirm or even increase the importance of a given candidate antigen. These principles may be extended to other related PhIP-seq modalities (Mina et al., 2019; Rom\u00e1n-Mel\u00e9ndez et al., 2021; Vogl et al., 2021).\n\nSeveral novel APS1 antigens were identified in this work by virtue of the large cohort size and large control set, enabling the detection of low-frequency hits such as PDYN. PDYN is a secreted opioid precursor of the central nervous system, and while PDYN-knockout mice are largely phenotypically normal, they do experience hyperalgesia and altered anxiety-related behaviors relative to wildtype mice (McLaughlin et al., 2003; Sharifi et al., 2001; Wang et al., 2001). Future studies will be required to determine if anti-PDYN antibodies may themselves mediate these phenotypes. In addition to uncovering lower-frequency autoantigens, antigen overlap between APS1 and other syndromic autoimmune diseases, including IPEX and RAG1/2 deficiency, were evaluated. Detection of common APS1 antigens, such as RFX6 and KHDC3L, was rare among other disease contexts, suggesting APS1 displays limited sharing with respect to other multiorgan autoimmune syndromes, including IPEX and RAG deficiency.\n\nIn contrast, antigen overlap between IPEX and RAG-hypomorphic patients was detected in the form of anti-BEST4 antibodies. BEST4 is a well-characterized, cell-surface intestinal ion channel (Qu and Hartzell, 2008). Recently, BEST4 has become a standard and specific marker for a subset of enterocytes in the duodenum and colon, including CFTR+ enterocytes, which are involved in fluid homeostasis (Busslinger et al., 2021; Elmentaite et al., 2021; Smillie et al., 2019). The presence of an IPEX antigen BEST4 within CID-G/AI suggests a possible etiologic link between the two diseases, possibly relating to Treg dysfunction. Furthermore, given that BEST4 autoantibodies were found across two distinct etiologies of IBD, in addition to the intestinal localization of BEST4 expression, future experiments specifically searching for the presence of anti-BEST4 antibodies in IBD and other forms of autoimmune enteropathy are warranted.\n\nAnother novel IPEX antigen, BTNL8, is also of particular interest given its high frequency in IPEX (11/26) as well as its biological functions. BTN and BTNL-family members belong to the family of B7 co-stimulatory receptors known to modulate T-cell responses, with structural similarity to CD80 and PD-L1 (Chapoval et al., 2013; Rhodes et al., 2016). Broadly, BTNL-family members are thought to participate primarily in regulation of gamma-delta T cells, with BTNL8/BTNL3 implicated in gut epithelial immune homeostasis (Di Marco Barros et al., 2016; Chapoval et al., 2013). Given the cell-surface expression pattern of BTNL8, it is conceivable that antibodies to these proteins could play a functional role in immune checkpoints, rather than only the bystander role implicated for most autoantibodies to intracellular antigens. Interestingly, recent studies in patients with celiac disease have demonstrated a reduction in BTNL3/BTNL8 expression following acute episodes of inflammation, with an associated loss of the physiological normal gamma/delta T-cell subset of gut intraepithelial lymphocytes (Mayassi et al., 2019).\n\nWhile some disease cohorts yield strongly enriched common antigens, such as BTNL8 and BEST4, other cohorts appear heterogeneous. Such was the case for MIS-C and KD, where our results suggested only rare, shared putative antigens. Nonetheless, a number of observations point to a possible role for abnormal adaptive immunity and autoantibodies (reviewed in Sakurai, 2019). Both diseases respond to varying degrees to IVIG therapy, and genetic studies suggest some children with polymorphisms in genes involving B-cell and antibody function can be predisposed to developing KD (reviewed in Onouchi, 2018). Autoantibodies targeting clinically relevant tissues such as the heart or endothelium have been detected in KD, though their role in disease pathogenesis is uncertain (Cunningham et al., 1999; Fujieda et al., 1997; Grunebaum et al., 2002). Although anti-CGNL1 antibodies were only found at low frequency, it is possible that these antibodies may represent a subset of specificities within anti-endothelial cell antibodies, given the endothelial expression of CGNL1 as well as its implications in cardiovascular disease (Chrifi et al., 2017). Particularly in the setting of MIS-C, expanded cohorts both to further validate CGNL1 as well as for as-of-yet undescribed antigen specificities may add additional information to these otherwise poorly understood diseases.\n\nThere is increasing evidence for a role for autoantibodies in other acquired disease states that have not been classified per se as autoimmune diseases, including severe to critical COVID-19 pneumonia (Bastard et al., 2020; Bastard et al., 2021c; van der Wijst et al., 2021). Peptides derived from EEA1 were enriched in 11% of patients with severe COVID-19 pneumonia but not in patients with mild COVID-19. Interestingly, similarly to anti-IFN antibodies, anti-EEA1 antibodies have also previously been reported in the setting of systemic lupus erythematosus (Selak et al., 2000; Stinton et al., 2004; Waite et al., 1998). While intriguing, future studies will be needed to determine whether the specificity of EEA1 autoantibodies to severe-critical COVID-19 can be replicated in independent cohorts, as well as in orthogonal assays.\n\nThis work suggests that PhIP-seq data may have predictive or diagnostic value when the cohorts are sufficiently large. Implementation of a logistic regression machine learning model with cross-validation successfully discriminates APS1 samples from healthy control samples with high sensitivity and specificity (Figure 4A). Thus, scaled PhIP-seq represents an avenue to not only discover and compare novel autoantigens within and across cohorts of autoimmune disease, but also suggests that machine learning techniques will be effective tools for determining, without supervision, the underlying proteins that drive successful classification using this data type. This, in turn, may have diagnostic or prognostic value in a wide spectrum of immune dysregulatory contexts.\n\nFinally, we emphasize that to broadly understand autoantibody profiles, full PhIP-seq data availability is critical for enabling expanded analysis and comparison across datasets, cohorts, and research groups. Importantly, groups with expertise in specific disease areas may add value by re-analyzing and evaluating candidate hits using additional metrics for hit prioritization, including increased weighting of orthogonal expression and/or genetic data. Full PhIP-seq data for all cohorts presented here will be linked to this publication and will be available for download at Dryad.\n\n## Materials and methods\n\n### PhIP-seq protocols\n\nAll PhIP-seq protocols described in detail are available at protocols.io, located at the links below.\n\n### PhIP-seq data alignment and normalization\n\nFastq files were aligned at the level of amino acids using RAPSearch2 (Zhao et al., 2012). For gene-level analysis, all peptide counts mapping to the same gene were summed. 0.5 reads were added to all genes, and raw reads were normalized by converting to percentage of total reads per sample. Fold change (FC) over mock-IP was calculated on a gene-by-gene basis by dividing sample read percentage by mean read percentage in corresponding AG bead-only samples. Z-scores were calculated using FC values; for each disease sample by using all corresponding healthy controls, and for each healthy control samples by using all other healthy controls. The positive threshold used for detection of shared candidate antigens was a Z-score \u226510. Shared hits were then determined by positive rate in the specified percentage of patient samples and under a specified percentage (<2% unless otherwise specified) in controls. In addition, at least one positive sample was required to have a minimum FC of 50 or above. Finally, no candidate antigens were allowed where any positive control samples signal fell above the highest patient sample.\n\n### Radioligand binding assay\n\nRadioligand binding assay was performed as described in Vazquez et al., 2020 for each gene of interest (GOI). Briefly, GOI-myc-flag construct was used to in vitro transcribe and translate [35 S]-methionine-labeled protein, which was subsequently column purified, immunoprecipitated with patient serum on Sephadex protein A/G beads, and counts per million (cpm) were read out on a 96-well liquid scintillation reader (MicroBeta Trilux, Perkin Elmer). Constructs: PDYN (Origene, #RC205331), BEST4 (Origene, #RC211033), BTNL8(Origene, #RC215370), and CGNL1 (Origene, #RC223121). Anti-MYC (Cell Signaling Technologies, #2272 S) and/or anti-FLAG (Cell Signaling Technologies, #1493 S) antibodies were used as positive controls for immunoprecipitations.\n\n### Statistics\n\nStatistics for radioligand binding assay were performed as described in Vazquez et al., 2020. Briefly, the antibody index for each sample was calculated as: (sample value \u2013 mean blank value)/(positive control antibody value \u2013 mean blank value).\n\nWe applied a logistic regression classifier on log-transformed PhIP-seq RPK values from APS1 patients (n=128) versus healthy controls (n=186) using the scikit-learn package (Pedregosa et al., 2011) with a liblinear solver and L1 regularization. The model was evaluated with fivefold cross-validation.\n\n### Ethics/human subjects research\n\nAvailable clinical metadata varies across cohorts; all available clinical data is included in Supplementary file 1.\n\n#### APS1\n\nNorth America - 1: All patient cohort data was collected and evaluated at the NIH, and all APECED/ APS1 patients were enrolled in a research study protocol approved by the NIH Institutional Review Board Committee and provided with written informed consent for study participation (protocol #11-I-0187, NCT01386437). All NIH patients gave consent for passive use of their medical record for research purposes. The majority of this human cohort data was previously published Ferre et al., 2016; Ferr\u00e9 et al., 2019.\n\nSweden: Serum samples were obtained from Finnish and Swedish patients with APS1. All individuals met the clinical diagnostic criteria for APS1, requiring two of the hallmark components: chronic mucocutaneous candidiasis, hypoparathyroidism, and adrenal insufficiency, or at least one of the hallmark components in siblings or children of APS1 patients. The project was approved by local ethical boards and was performed in accordance with the declarations of Helsinki. All patients and healthy subjects had given their informed consent for participation.\n\nNorth America - 2: All patients underwent informed consent with research study protocols approved by the UCSF Human Research Protection Program (IRB# 10-02467).\n\n#### RAG1/2 deficiency\n\nPatients with RAG1/2 deficiency were enrolled in research study protocols approved by the NIAID, NIH Institutional Review Board (protocols 05-I0213, 06-I-0015, NCT03394053, and NCT03610802). Peripheral blood samples were obtained upon written informed consent.\n\n#### IPEX\n\nIPEX patient cohort data was collected and evaluated at Seattle Children\u2019s Hospital under an IRB-approved protocol. Clinical data on this human cohort was previously published by Gambineri et al., 2018. For the independent validation cohort (Figure 5C), all patient cohort data was collected and evaluated at Stanford under an IRB-approved protocol and was previously published by Narula et al., 2022.\n\n#### KD/MIS-C/febrile controls\n\nUCSD cohort (MIS-C/KD/febrile controls): The study was reviewed and approved by the institutional review board at the University of California, San Diego. Written informed consent from the parents or legal guardians and assent from patients were obtained as appropriate.\n\nRockefeller cohort (MIS-C): All individuals were recruited according to protocols approved by local Institutional Review Boards.\n\n#### Severe COVID-19\n\nAll COVID-19 (non-MIS-C) patients were collected between March 01, 2020 and July 21, 2020 and had positive results by SARS-CoV-2 RT-PCR in nasopharyngeal swabs. ZSFG remnant specimens (institutional review board [IRB] number 20-30387) were approved by the IRB of the University of California, San Francisco. The committee judged that written consent was not required for use of remnant specimens.\n\n#### Adult healthy controls\n\nNew York Blood Center & Vitalant Research Institute: Healthy, pre-COVID control plasma were obtained as deidentified samples. These samples were part of retention tubes collected at the time of blood donations from volunteer donors who provided informed consent for their samples to be used for research.\n\nRockefeller cohort: All individuals were recruited according to protocols approved by local Institutional Review Boards.\n",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "9c581086-a1a4-4f6a-863a-bb6a91e6642c",
+      "submission_id": "0b95cf48-b0c2-4e00-9125-73d0a372cc04",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antony Rosen, https://ror.org/00za53h95 Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78550.sa0](https://doi.org/10.7554/eLife.78550.sa0)\n\nThis is an important paper that is methodologically compelling. The work presents a series of enhancements to the PhIP-seq method of autoantibody discovery, improving scaling to larger cohorts and control populations, and increasing the ability to discover disease-specific immune responses. The approach is used to discover a novel, frequent autoantibody response (BTNL8) in IPEX patients, and will be an accessible approach to investigate the presence and specificity of autoantibodies in diseases where these have been difficult to define.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Antony Rosen, https://ror.org/00za53h95 Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78550.sa1](https://doi.org/10.7554/eLife.78550.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Autoantibody discovery across monogenic, acquired, and COVID19-associated autoimmunity with scalable PhIP-Seq\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Satyajit Rath as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Shiv Pillai (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. While all the reviewers recognized that the methodological improvements described have value, there was consensus that they alone do not meet the bar of \"substantial developments\" or \"significant improvements\" that a Research Advance require. To move forward there would need to be some application of the new method that reveals important information about an autoimmune disease or an immunological mechanism.\n\nReviewer #1 (Recommendations for the authors):\n\nThis manuscript may have had two goals \u2013 one being to develop methodology for more accurate comparison of autoantibody data across many cohorts with large numbers of controls and the other to gain some information on biological/biomedical relevance.\n\nThe authors should more lucidly explain how their alterations of the PhIP-seq approach are more than incremental.\n\nOne of the biological findings of possible note was the shared hits between KD and MIS-C. Perhaps it offers one way in which the disease relevance of this manuscript could be strengthened. This part could be expanded on a bit with more clinical information examining whether the MIS-C patients with antibodies to CGNL1 had more obvious cardiac findings compared to other MIS-C patients and perhaps consider tapping into other MIS-C cohorts for whom clinical information is also available.\n\nReviewer #3 (Recommendations for the authors):\n\nIt would have been good for the authors to choose another autoimmune process where the expectation of multiple autoantibodies in the 5-30% of patients are known to occur so that they could actually show the method has the ability to find the common autoantibodies. And if it largely cannot, to define the places where it is best applied. The APS1 is a great example, but this does not expand that finding much, and the other examples don't really provide enough new.\n",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "adb0e565-3d08-47fd-b52b-f3d7302a2235",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C1",
+      "claim": "PhIP-seq allows for unbiased, proteome-wide autoantibody discovery across a variety of disease settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage immunoprecipitation sequencing (PhIP-seq) allows for unbiased, proteome-wide autoantibody discovery across a variety of disease settings, with identification of disease-specific autoantigens providing new insight into previously poorly understood forms of immune dysregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a general capability of the PhIP-seq technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "0ae202fe-2259-4115-869c-c170e919841f",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C2",
+      "claim": "Current PhIP-seq protocols are inherently difficult to scale to accommodate large cohorts of cases and healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite several successful implementations of PhIP-seq for autoantigen discovery, including our previous work (Vazquez et al., 2020), current protocols are inherently difficult to scale to accommodate large cohorts of cases and importantly, healthy controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work and represents a limitation that motivated the current study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "7d71581a-f5a8-43c8-b18d-c9454d7183b6",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C3",
+      "claim": "Scaled PhIP-seq datasets enable machine-learning approaches that result in robust prediction of disease status.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that these scaled datasets enable machine-learning approaches that result in robust prediction of disease status, as well as the ability to detect both known and novel autoantigens, such as prodynorphin (PDYN) in APS1 patients, and intestinally expressed proteins BEST4 and BTNL8 in IPEX patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the machine learning analysis presented in the manuscript showing AUC = 0.95 for APS1 classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "e5f15b45-84b9-4a7b-adbc-f43a3657506d",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C4",
+      "claim": "PDYN is a novel autoantigen in APS1 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that these scaled datasets enable machine-learning approaches that result in robust prediction of disease status, as well as the ability to detect both known and novel autoantigens, such as prodynorphin (PDYN) in APS1 patients, and intestinally expressed proteins BEST4 and BTNL8 in IPEX patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PhIP-seq data and orthogonal validation by RLBA shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "d1cb0d9c-b94d-4a6c-a9fb-a6e469ceb8d4",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C5",
+      "claim": "BEST4 is a novel autoantigen in IPEX patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that these scaled datasets enable machine-learning approaches that result in robust prediction of disease status, as well as the ability to detect both known and novel autoantigens, such as prodynorphin (PDYN) in APS1 patients, and intestinally expressed proteins BEST4 and BTNL8 in IPEX patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PhIP-seq data and orthogonal validation by RLBA shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "ce8694bb-9b20-42a8-9a68-a7ed11fa07af",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C6",
+      "claim": "BTNL8 is a novel autoantigen in IPEX patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that these scaled datasets enable machine-learning approaches that result in robust prediction of disease status, as well as the ability to detect both known and novel autoantigens, such as prodynorphin (PDYN) in APS1 patients, and intestinally expressed proteins BEST4 and BTNL8 in IPEX patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PhIP-seq data and orthogonal validation by RLBA shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "67ed1bca-7dc9-444d-903d-f16fe618de33",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C7",
+      "claim": "BEST4 antibodies were found in two patients with RAG1/2 deficiency, one of whom had very early onset IBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, BEST4 antibodies were also found in two patients with RAG1/2 deficiency, one of whom had very early onset IBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PhIP-seq data and orthogonal validation shown in Figure 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "17f08e40-ca74-434c-941d-e9d9f91b5ef4",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C8",
+      "claim": "CGNL1 is a rare, overlapping antigen between MIS-C and KD.",
+      "claim_type": "EXPLICIT",
+      "source": "Scaled PhIP-seq examination of both MIS-C and KD demonstrated rare, overlapping antigens, including CGNL1, as well as several strongly enriched putative pneumonia-associated antigens in severe COVID-19, including the endosomal protein EEA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PhIP-seq data and orthogonal validation by RLBA shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "4579d0ca-3f94-4328-9a67-55959397b940",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C9",
+      "claim": "EEA1 is a putative pneumonia-associated antigen in severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Scaled PhIP-seq examination of both MIS-C and KD demonstrated rare, overlapping antigens, including CGNL1, as well as several strongly enriched putative pneumonia-associated antigens in severe COVID-19, including the endosomal protein EEA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PhIP-seq data showing enrichment in >10% of severe COVID-19 patients shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "3ada37a9-a72a-4cc9-bc08-fe3629efcca6",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C10",
+      "claim": "PhIP-seq was originally developed by Larman et al., 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, PhIP-seq, originally developed by Larman et al., 2011, uses the economy of scale of arrayed oligonucleotide synthesis to enable very large libraries at comparatively low cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to the original development of the technique.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "03b0eb30-78f5-4f8f-aa1c-4dee4827d7a7",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C11",
+      "claim": "PhIP-seq libraries express programmed sets of linear peptides and are inherently less sensitive to detect reactivity to conformational antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "From a technical standpoint, PhIP-seq libraries express programmed sets of linear peptides, and thus this technique is inherently less sensitive to detect reactivity to conformational antigens, such as Type I interferons (IFNs) and GAD65 (Vazquez et al., 2020; Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work demonstrating this limitation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "8883ee1c-2bdc-4378-8b7d-ad0473f56fbe",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C12",
+      "claim": "Many forms of autoimmunity exhibit significant phenotypic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that many forms of autoimmunity exhibit significant phenotypic heterogeneity, the true number of patients with shared disease-associated autoantibodies may be low (Ferre et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "e2db02b8-4221-46a2-b29c-5ff52221fb99",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C13",
+      "claim": "The scaled PhIP-seq protocol allows 600-800 samples to be run in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a high-throughput PhIP-seq protocol with markedly increased accessibility (not requiring robotics) and scale (enabling 600\u2013800 samples to be run in parallel), with minimal plate-to-plate variability and low contamination potential, and without sacrificing data quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the capabilities of the developed protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "7fbd6ec9-f4f1-40ac-b16d-53e2b4b0d28b",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C14",
+      "claim": "The scaled PhIP-seq protocol does not require robotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a high-throughput PhIP-seq protocol with markedly increased accessibility (not requiring robotics) and scale (enabling 600\u2013800 samples to be run in parallel), with minimal plate-to-plate variability and low contamination potential, and without sacrificing data quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the accessibility of the developed protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "cc2a273c-cc25-4e6a-bcea-2dd7f640f080",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C15",
+      "claim": "The vacuum-based protocol data is closely correlated with moderate-throughput manual multichannel protocol data for APS1 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The data for APS1 samples on our moderate-throughput manual multichannel protocols were closely correlated with vacuum-based output, including identification of previously validated antigens within each sample (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "89ece921-8012-4110-958b-66fa6f157605",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C16",
+      "claim": "Each APS1 patient is known to have multiple, high-affinity antibodies to self-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As each APS1 patient is known to have multiple, high-affinity antibodies to self-proteins (Fishman et al., 2017; Landegren et al., 2016; Meyer et al., 2016; Vazquez et al., 2020) we reasoned that this would be an ideal cohort to determine whether a global autoreactive state was discernible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "3880a167-bb07-419e-b310-936c8bba1d2c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C17",
+      "claim": "Each individual sample exhibits a spectrum of enriched genes, regardless of disease status.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, each individual sample exhibits a spectrum of enriched genes, regardless of disease status (Figure 2A), indicating that measures of simple enrichment are inadequate for discrimination of cases from controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "d32fe6b1-337d-4be2-8fa8-280028867b63",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C18",
+      "claim": "Measures of simple enrichment are inadequate for discrimination of cases from controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, each individual sample exhibits a spectrum of enriched genes, regardless of disease status (Figure 2A), indicating that measures of simple enrichment are inadequate for discrimination of cases from controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "4fb4ab2b-ebca-4394-a969-826a1352bddd",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C19",
+      "claim": "Increasing the number of healthy control samples from 10 to 50 removes 388 non-specific hits.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these conservative criteria, a control set of 10 samples resulted in (on average) 404 apparent hits, while increasing the control set to 50 samples removed an additional 388 non-specific hits, leaving 16 apparent hits (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the downsampling analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "6826753e-9781-46c5-b451-0d75cfccfea7",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C20",
+      "claim": "Further increasing the number of control samples to 150 samples removes 4-5 more autoantigen candidates.",
+      "claim_type": "EXPLICIT",
+      "source": "Further increasing the number of control samples to 150 samples had diminishing returns, although 4\u20135 more autoantigen candidates were removed as being non-specific, reducing the frequency of false positives, and ultimately leaving only ~1% of the original candidate list for further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the downsampling analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "3a151d91-7136-4d84-b967-a1087a0eab34",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C21",
+      "claim": "PhIP-seq experimental design should include a large and appropriate number of non-disease controls to improve downstream analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, to improve downstream analysis aimed at detecting disease-associated hits, PhIP-seq experimental design should include a large and appropriate number of non-disease controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the control cohort size analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "9759c8ec-a9f3-48dc-b4d8-539e8b063831",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C22",
+      "claim": "All hits present in at least 10% of APS1 patients spanned all three cohorts (two North American and one Swedish).",
+      "claim_type": "EXPLICIT",
+      "source": "All hits present in at least 10% of APS1 patients also spanned all three cohorts, thus further validating broad prevalence of antigens that were previously described by us (RFX6, ACPT, TRIM50, CROCC2, GIP, NKX6-3, KHDC3L) and others (SOX10, LCN1) (Figure 2C; Fishman et al., 2017; Hedstrand et al., 2001; Vazquez et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 2C and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "1628a228-2fb8-4fed-b8b5-b1e2fc4689ac",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C23",
+      "claim": "39 candidate hits were detected that were present in >4% of APS1 patients and in 2 or fewer controls.",
+      "claim_type": "EXPLICIT",
+      "source": "At the gene level, we detected 39 candidate hits that were present in 6/128 (>4%) of APS1 and in 2 or fewer controls (2/186, 1%) (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "4445b61b-cd7e-4285-bdbc-4d5786312a3b",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C24",
+      "claim": "PDYN was enriched by 4.7% of APS1 patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "PDYN was enriched by 6/128 (4.7%) of patient samples and subsequently was validated by Radioligand Binding Assay (RLBA) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PhIP-seq data and validation shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "6c2f2008-5154-4483-8d7b-c06133b2e46d",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C25",
+      "claim": "PDYN is a secreted opioid peptide thought to be involved in regulation of addiction-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PDYN is a secreted opioid peptide thought to be involved in regulation of addiction-related behaviors (reviewed in Fricker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f51614e6-51c0-4077-a4ef-56b5eb9bac9a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C26",
+      "claim": "SPAG17 is closely related to the known APS1 autoantigen SPAG16.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SPAG17 is closely related to the known APS1 autoantigen SPAG16 and is expressed primarily in male germ cells and in the lung, with murine genetic mutations resulting in ciliary dyskinesis with pulmonary phenotypes (Fishman et al., 2017; Teves et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "57ad48b4-9973-417a-bd54-3de0d28f58bd",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C27",
+      "claim": "SPAG17 is expressed primarily in male germ cells and in the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SPAG17 is closely related to the known APS1 autoantigen SPAG16 and is expressed primarily in male germ cells and in the lung, with murine genetic mutations resulting in ciliary dyskinesis with pulmonary phenotypes (Fishman et al., 2017; Teves et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "00a2bc5e-8773-49be-b43f-9865ed6c45fc",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C28",
+      "claim": "Murine genetic mutations in SPAG17 result in ciliary dyskinesis with pulmonary phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SPAG17 is closely related to the known APS1 autoantigen SPAG16 and is expressed primarily in male germ cells and in the lung, with murine genetic mutations resulting in ciliary dyskinesis with pulmonary phenotypes (Fishman et al., 2017; Teves et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "1c23d15f-2afa-437b-9323-960f7a9bc5b2",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C29",
+      "claim": "CROCC2/Rootletin is a protein expressed in ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Also potentially related to ciliary and/or pulmonary autoimmunity is CROCC2/Rootletin, a protein expressed in ciliated cells, which we previously observed, and now recognize at a high frequency across multiple cohorts (Uhl\u00e9n et al., 2015; Yang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "194ab12e-02e3-4e77-9f28-8dab59996f6a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C30",
+      "claim": "GAS2L2 is a ciliary protein expressed in the airway.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GAS2L2 is a ciliary protein expressed in the airway, with genetic loss of function in mice resulting in impaired mucociliary clearance, and clustered closely with CROCC2 (Bustamante-Marin et al., 2019; Uhl\u00e9n et al., 2015) in this dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "16488542-3cdb-401f-999b-a263c7eeba29",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C31",
+      "claim": "Genetic loss of function of GAS2L2 in mice results in impaired mucociliary clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GAS2L2 is a ciliary protein expressed in the airway, with genetic loss of function in mice resulting in impaired mucociliary clearance, and clustered closely with CROCC2 (Bustamante-Marin et al., 2019; Uhl\u00e9n et al., 2015) in this dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "c11aea33-6b3f-45d4-8fcc-d3f522164953",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C32",
+      "claim": "CT45A10 and GPR64 are both proteins with expression restricted primarily to male gonadal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "CT45A10 and GPR64 are both proteins with expression restricted primarily to male gonadal tissues (Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b624a4ce-ab5e-4ae7-a5a7-3605762118b2",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C33",
+      "claim": "GABRR1 is a GABA receptor expressed primarily in the central nervous system as well as on platelets.",
+      "claim_type": "EXPLICIT",
+      "source": "GABRR1 is a GABA receptor expressed primarily in the central nervous system as well as on platelets (Ge et al., 2006; Zhu et al., 2019), and TRIM2 is implicated in genetic disorders of demyelination within the peripheral nervous system, and therefore may be of interest to the chronic inflammatory demyelinating polyneuropathy phenotype that can be seen in some patients with APS1 (Li et al., 2020; Valenzise et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "2b107a54-0745-4665-a8e2-8aa0267b5b42",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C34",
+      "claim": "TRIM2 is implicated in genetic disorders of demyelination within the peripheral nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "GABRR1 is a GABA receptor expressed primarily in the central nervous system as well as on platelets (Ge et al., 2006; Zhu et al., 2019), and TRIM2 is implicated in genetic disorders of demyelination within the peripheral nervous system, and therefore may be of interest to the chronic inflammatory demyelinating polyneuropathy phenotype that can be seen in some patients with APS1 (Li et al., 2020; Valenzise et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b14ee13e-9516-49ac-a8ab-d05003fe2b11",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C35",
+      "claim": "Chronic inflammatory demyelinating polyneuropathy can be seen in some patients with APS1.",
+      "claim_type": "EXPLICIT",
+      "source": "GABRR1 is a GABA receptor expressed primarily in the central nervous system as well as on platelets (Ge et al., 2006; Zhu et al., 2019), and TRIM2 is implicated in genetic disorders of demyelination within the peripheral nervous system, and therefore may be of interest to the chronic inflammatory demyelinating polyneuropathy phenotype that can be seen in some patients with APS1 (Li et al., 2020; Valenzise et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "0d980556-da7e-4b61-93e0-f2e4756af6b8",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C36",
+      "claim": "CDHR5 is a transmembrane cadherin-family protein expressed on the enterocyte cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to our previously described intestinally expressed autoantigens RFX6, NKX6-3, and GIP, we also identify CDHR5, a transmembrane cadherin-family protein expressed on the enterocyte cell surface, as a putative autoantigen in APS1 (Crawley et al., 2014; Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "ae8edcc4-c488-4b47-bcfa-d1c2582aa335",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C37",
+      "claim": "A logistic regression classifier applied to APS1 and control datasets resulted in excellent prediction of disease status with AUC = 0.95.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a simple logistic regression classifier to our full gene-level APS1 (n=128) and control (n=186) datasets, resulting in excellent prediction of disease status (AUC = 0.95, Figure 4A) using fivefold cross-validation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the machine learning analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "8ac5016a-1f63-4d3c-acbc-f17e418dda17",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C38",
+      "claim": "The classification model was driven strongly by many of the previously identified autoantigens, including RFX6 and KHDC3L.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the classification model was driven strongly by many of the previously identified autoantigens, including RFX6, KHDC3L, and others (Figure 4A), in addition to some targets that had not been previously examined (Vazquez et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the logistic regression coefficients shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "c0a471f0-7dee-48c9-9c2c-50f2e5d0f277",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C39",
+      "claim": "IPEX syndrome is characterized by defective peripheral immune tolerance secondary to impaired T regulatory cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "IPEX syndrome is characterized by defective peripheral immune tolerance secondary to impaired T regulatory cell (Treg) function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about IPEX syndrome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "5292d715-1ba2-4a09-ba3e-5d7a4ddb13bd",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C40",
+      "claim": "In IPEX, peripheral tolerance rather than central tolerance is impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "In IPEX, peripheral tolerance rather than central tolerance is impaired, resulting in a phenotypic constellation of autoimmunity that partially overlaps with APS1 (Bacchetta et al., 2006; Powell et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "64612cb6-58b2-4a3b-b724-8ab68e03857c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C41",
+      "claim": "The majority of IPEX patients exhibit severe enteropathy with early-onset severe diarrhea and failure to thrive.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the majority of IPEX patients exhibit severe enteropathy, with early-onset severe diarrhea and failure to thrive, with many of these children harboring anti-enterocyte antibodies detected by indirect immunofluorescence (Bacchetta et al., 2006; Gambineri et al., 2018; Powell et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "8de35456-6043-414f-b032-f24361ae8ec1",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C42",
+      "claim": "Many IPEX patients harbor anti-enterocyte antibodies detected by indirect immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the majority of IPEX patients exhibit severe enteropathy, with early-onset severe diarrhea and failure to thrive, with many of these children harboring anti-enterocyte antibodies detected by indirect immunofluorescence (Bacchetta et al., 2006; Gambineri et al., 2018; Powell et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "cfb9a3b9-a8ab-44aa-96e4-c60d79bab5d3",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C43",
+      "claim": "Harmonin (USH1C) and ANKS4B are previously described IPEX autoantibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "A handful of IPEX autoantibodies targeting antigens expressed in the intestine have been described, including harmonin (USH1C) and ANKS4B (Eriksson et al., 2019; Kobayashi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "9ec3a331-e4ad-41c3-937e-e089b3891e60",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C44",
+      "claim": "Enrichment of USH1C was observed in two IPEX patients and was fully correlated with anti-ANKS5B.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data, enrichment of USH1C was observed in two IPEX patients, and this signal was fully correlated with anti-ANKS5B as previously described (Figure 5\u2014figure supplement 1; Eriksson et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5\u2014figure supplement 1 and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "1e53b5e2-90df-4e20-9bae-7d95a2247bd0",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C45",
+      "claim": "BEST4 is a protein expressed by a specific subset of enterocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these were several with expression restricted to the intestine, including BEST4, a protein expressed by a specific subset of enterocytes, BTNL8, a butyrophilin-like molecule highly expressed in the gut epithelium, ST6GALNAC1, and ITGA4 (Figure 5A; Mayassi et al., 2019; Schaum et al., 2018; Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "af8bc0ae-9e66-476c-af89-c5fcda434bc1",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C46",
+      "claim": "BTNL8 is a butyrophilin-like molecule highly expressed in the gut epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these were several with expression restricted to the intestine, including BEST4, a protein expressed by a specific subset of enterocytes, BTNL8, a butyrophilin-like molecule highly expressed in the gut epithelium, ST6GALNAC1, and ITGA4 (Figure 5A; Mayassi et al., 2019; Schaum et al., 2018; Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "3149c1be-450e-4cc1-a1f4-93f00556f44c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C47",
+      "claim": "4/26 (15%) of IPEX patients were positive for anti-BEST4 autoantibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 4/26 (15%) of IPEX patients were positive for anti-BEST4 autoantibodies (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the validation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "697b7725-953f-4184-b085-ea17e6d87665",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C48",
+      "claim": "11/26 (42%) of IPEX patients were positive for anti-BTNL8 antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of BTLN8, orthogonal validation identified 11/26 (42%) of IPEX patients who were positive for anti-BTNL8 antibodies (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the validation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b037f7af-f22f-4f8d-b435-935f8111a6c0",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C49",
+      "claim": "All IPEX patients with anti-BTNL8 and/or BEST4 antibodies had clinical evidence of enteropathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, all patients with anti-BTNL8 and/or BEST4 antibodies also had clinical evidence of enteropathy (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "528fe7ea-9235-4f59-8e87-32b74acbbece",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C50",
+      "claim": "3/15 (20%) patients in a second, independent IPEX cohort were positive for anti-BTNL8 antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, to broaden the validity of our findings, we tested a second, independent cohort of IPEX patients for anti-BTNL8 antibodies and found 3/15 (20%) patients to be positive (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the validation data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b93fc6fc-1a79-49e5-af6e-c2e1a4fa4af8",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C51",
+      "claim": "Anti-BEST4 and anti-BTNL8 are associated with IPEX enteropathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that anti-BEST4 and anti-BTNL8 are associated with IPEX enteropathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation data and clinical correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f6421f72-462e-4059-8e61-d685620caeb8",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C52",
+      "claim": "Hypomorphic RAG1/2 mutations represent a phenotypically heterogeneous form of monogenic immune dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypomorphic RAG1/2 mutations represent an additional and notoriously phenotypically heterogeneous form of monogenic immune dysregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RAG1/2 deficiency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "5cf66d73-380f-4ae7-ad98-f2bbe433ad8b",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C53",
+      "claim": "Absent RAG complex activity leads to lack of peripheral T and B cells, causing severe combined immunodeficiency (SCID).",
+      "claim_type": "EXPLICIT",
+      "source": "Absent RAG complex activity leads to lack of peripheral T and B cells, therefore causing severe combined immunodeficiency (SCID).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RAG complex function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "52a1a9ab-0dc2-4acc-bcc7-40ccb2135b7e",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C54",
+      "claim": "Patients with hypomorphic RAG1/2 have residual capacity to generate T and B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, patients with hypomorphic RAG1/2 have residual capacity to generate T and B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hypomorphic RAG1/2 mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "30efa4be-d629-4335-8685-3aae1220b7ef",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C55",
+      "claim": "Patients with hypomorphic RAG1/2 can present with Omenn syndrome, atypical SCID (AS), or combined immune deficiency with granulomas and autoimmunity (CID-G/AI).",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the severity of the defect, these patients can present with Omenn syndrome, atypical SCID (AS), or combined immune deficiency with granulomas and autoimmunity (CID-G/AI) (Delmonte et al., 2018; Delmonte et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "2c5134bf-969d-4d64-8373-1feb3cb766ef",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C56",
+      "claim": "Autoimmune manifestations are particularly common in patients with AS and CID-G/AI.",
+      "claim_type": "EXPLICIT",
+      "source": "Autoimmune manifestations are particularly common in patients with AS and CID-G/AI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RAG1/2 deficiency phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "48a1b663-48c8-4021-b648-ae0571facd05",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C57",
+      "claim": "Cytopenias are the most frequent form of autoimmunity in patients with RAG deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytopenias are the most frequent form of autoimmunity in patients with RAG deficiency, but cutaneous, neuromuscular, and intestinal manifestations have been also reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RAG deficiency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "075f79bc-527f-4e45-a7fc-e1672c428d56",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C58",
+      "claim": "Anti-cytokine antibodies have been described in RAG deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "While anti-cytokine antibodies have been described, other disease-associated autoantibody targets remain to be identified (Delmonte et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "40485161-23f6-42eb-8fde-6327f52d1161",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C59",
+      "claim": "Two RAG1/2 patients with anti-BEST4 antibodies both had CID-G/AI.",
+      "claim_type": "EXPLICIT",
+      "source": "Both positive patients had CID-G/AI, indicating the presence of autoimmune features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical information about the patients with anti-BEST4 antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "7cd5c8de-d388-429c-ab35-89c2947016a3",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C60",
+      "claim": "One of the two RAG1/2 patients with anti-BEST4 antibodies had very early-onset inflammatory bowel disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably \u2013 given that enteropathy in the setting of hypomorphic RAG1/2 deficiency is rare \u2013 one of the two individuals harboring anti-BEST4 antibodies also had very early-onset inflammatory bowel disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical information about one of the patients with anti-BEST4 antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "4cebeffb-5ecd-4a95-bf45-5c931de61831",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C61",
+      "claim": "Nearly half of the RAG1/2 deficiency cohort sera were enriched for peptides derived from ZNF365.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly half of the cohort sera were enriched for peptides derived from ZNF365 (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "5f03cbbc-df23-4bc2-8dfd-29d3a42ccf85",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C62",
+      "claim": "Variants in ZNF365 are associated with Crohn's disease and autoimmune uveitis.",
+      "claim_type": "EXPLICIT",
+      "source": "ZNF365 is a protein associated with multiple autoimmune diseases, as evidenced by genome-wide association studies (GWAS) show that variants in ZNF365 are associated with Crohn's disease and autoimmune uveitis (Haritunians et al., 2011; Hou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "825957c4-b813-4e6f-9f5b-f7b16bfd2646",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C63",
+      "claim": "RELL2 is a TNF receptor binding partner.",
+      "claim_type": "EXPLICIT",
+      "source": "Many patients also had evidence of autoantibodies targeting RELL2, a TNF receptor binding partner, and CEACAM3, a phagocyte receptor that recognizes human-specific pathogens and is important for opsonin-independent phagocytosis of bacteria (Bonsignore et al., 2019; Moua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "16e45f2a-15bc-4a30-9c17-52470eda19e5",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C64",
+      "claim": "CEACAM3 is a phagocyte receptor that recognizes human-specific pathogens and is important for opsonin-independent phagocytosis of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Many patients also had evidence of autoantibodies targeting RELL2, a TNF receptor binding partner, and CEACAM3, a phagocyte receptor that recognizes human-specific pathogens and is important for opsonin-independent phagocytosis of bacteria (Bonsignore et al., 2019; Moua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "d2531668-67ae-4b84-b8ba-5444bd5b8101",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C65",
+      "claim": "MIS-C leads to critical illness in ~70% of affected children.",
+      "claim_type": "EXPLICIT",
+      "source": "MIS-C leads to critical illness in ~70% of affected children and shares some common clinical features with KD, the most common cause of acquired pediatric heart disease in the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about MIS-C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "5c4cddd7-b0ec-48bc-8029-647b41511b2a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C66",
+      "claim": "KD is the most common cause of acquired pediatric heart disease in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "MIS-C leads to critical illness in ~70% of affected children and shares some common clinical features with KD, the most common cause of acquired pediatric heart disease in the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about KD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "300fd3eb-6036-46d7-9087-cc72c53366fd",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C67",
+      "claim": "The etiologies of both KD and MIS-C remain enigmatic.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite hints for a role of abnormal adaptive immunity and autoantibodies in the pathogenesis of KD and MIS-C, the etiologies of both diseases remain enigmatic (Feldstein et al., 2020; Newburger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "2ce980ee-2f9d-439a-8e4b-844c3b1f652f",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C68",
+      "claim": "A previous PhIP-seq study of MIS-C included only four healthy controls and nine MIS-C patients.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this study included only four healthy controls and nine MIS-C patients, and as our results have shown, removal of false-positive PhIP-seq hits requires the use of substantial numbers of unaffected controls (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous work (Gruber et al., 2020) and a critique based on the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "8321ffe7-659f-4ea2-b112-0cb2239a2730",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C69",
+      "claim": "No evidence for specific enrichment was observed for any of the previously reported MIS-C candidate antigens that overlapped with the PhIP-seq library.",
+      "claim_type": "EXPLICIT",
+      "source": "No evidence for specific enrichment was observed for any of the previously reported candidate antigens that overlapped with our PhIP-seq library (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "455cb726-b963-4046-a5b3-ccf4d1cf8560",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C70",
+      "claim": "MIS-C patients are treated with IVIG, which has abundant low-affinity, low-avidity autoantibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, MIS-C patients are treated with IVIG, which has abundant low-affinity, low-avidity autoantibodies, so caution must be exercised in the timing of sample collection (Burbelo et al., 2021; Sacco et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "20cb4861-d581-4828-b4ee-acdf08bf0ccb",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C71",
+      "claim": "The majority of MIS-C samples are confirmed to be collected pre-IVIG.",
+      "claim_type": "EXPLICIT",
+      "source": "While it remains unclear whether high-affinity, novel autoantibodies are likely to be present in IVIG, the majority of our MIS-C samples are confirmed to be collected pre-IVIG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the sample collection timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "35a909ba-9a31-4760-a08a-ceeccb149a71",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C72",
+      "claim": "Analysis of the MIS-C cohort yielded only three candidate hits: CD34, RPS6KB1, and CAPZB, each in 2/20 patient sera.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of our MIS-C cohort for shared candidate hits yielded only three candidate hits, each in 2/20 patient sera. These were CD34, RPS6KB1, and CAPZB (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "7cd0895e-7e7f-4c0a-b1c8-8c167267c0ec",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C73",
+      "claim": "A much larger MIS-C cohort will be required to detect rare, shared antigens with confidence by PhIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a much larger MIS-C cohort, controlled by an equally large set of healthy controls, will be required to detect rare, shared antigens with confidence by PhIP-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the limited findings in the MIS-C cohort.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "630c3a0f-a1cf-486d-9957-eaf7028a99d1",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C74",
+      "claim": "25 shared hits were detected among 3 or more of the 70 KD samples, which were specific to KD relative to adult healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same hit selection criteria as previously, we detected 25 shared hits among 3 or more of the 70 KD samples, which were specific to KD relative to adult healthy controls (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b03033d5-6d17-426a-83c7-31c51485979e",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C75",
+      "claim": "17 of the 25 shared KD hits were absent from febrile pediatric patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 25 shared KD hits, 17 were absent from additional control groups including the febrile pediatric patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis comparing KD to febrile controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "2cafae61-e162-4170-bd63-3455f97d1f0c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C76",
+      "claim": "Each of the KD candidate antigens was present in only a small subset of KD samples, suggesting significant heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these hits was present in only a small subset of KD samples, suggesting significant heterogeneity among samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data showing low frequency of each hit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "44a80ab9-026f-40e0-a590-f945b0358f9c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C77",
+      "claim": "SPATA2 is a protein known to regulate the TNF receptor response.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the candidate antigens have possible connections to the systemic inflammation seen in KD, including SPATA2 (6/70, 8.6%) and ALOX5B (4/70, 5.7%). SPATA2 is a protein known to regulate the TNF receptor response, with murine knockout of SPATA2 resulting in increased activation of NFkB and MAPK (Schlicher and Maurer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b0ea9e2a-27b6-41af-a2df-6878ddfe014c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C78",
+      "claim": "Murine knockout of SPATA2 results in increased activation of NFkB and MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "SPATA2 is a protein known to regulate the TNF receptor response, with murine knockout of SPATA2 resulting in increased activation of NFkB and MAPK (Schlicher and Maurer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "921042f8-6293-4df3-829e-00f8b4d43e32",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C79",
+      "claim": "ALOX15 family of lipoxygenases is responsive to Th2-induced anti-inflammatory cytokine IL-4 and IL-13 in human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ALOX15 family of lipoxygenases is known to be responsive to Th2-induced anti-inflammatory cytokine IL-4 and IL-13 in human macrophages and thereby likely plays a role in suppressing inflammatory responses, and polymorphisms have been linked to the development of coronary artery disease (Snodgrass and Br\u00fcne, 2019; Wuest et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "ce6d7403-2354-4c70-bb3e-d74f79c7791f",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C80",
+      "claim": "ALOX15 polymorphisms have been linked to the development of coronary artery disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ALOX15 family of lipoxygenases is known to be responsive to Th2-induced anti-inflammatory cytokine IL-4 and IL-13 in human macrophages and thereby likely plays a role in suppressing inflammatory responses, and polymorphisms have been linked to the development of coronary artery disease (Snodgrass and Br\u00fcne, 2019; Wuest et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "792eeee9-655d-479a-9dd8-0a391857db09",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C81",
+      "claim": "Pancreatitis and psoriasis have been reported as rare complications of KD.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, pancreatitis and psoriasis have been reported as rare complications of KD (Asano et al., 2005; Haddock et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "e25ff6ab-5650-449d-a8c2-07fc69d4b0aa",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C82",
+      "claim": "7/70 (10%) of KD patients have increased signal for autoantibodies targeting FBXL19.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 7/70 of the KD patients (10%) have increased signal for autoantibodies targeting FBXL19, a protein with associations with both acute pancreatitis (Ma et al., 2020) and psoriasis (Stuart et al., 2010) and 10/70 for pancreas-expressed protein RESP18 (Zhang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the PhIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "652f77f1-1651-438b-a824-ee7372526975",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C83",
+      "claim": "FBXL19 is a protein with associations with both acute pancreatitis and psoriasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 7/70 of the KD patients (10%) have increased signal for autoantibodies targeting FBXL19, a protein with associations with both acute pancreatitis (Ma et al., 2020) and psoriasis (Stuart et al., 2010) and 10/70 for pancreas-expressed protein RESP18 (Zhang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "dab91b28-3308-451a-a19f-6d6444b71f9b",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C84",
+      "claim": "6 of the 17 KD-specific hits were present in one or more MIS-C samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the partial clinical overlap of KD with MIS-C, we also searched for the low-frequency, shared KD hits within MIS-C and found that 6 of the 17 KD hits were present in one or more MIS-C samples (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f3377387-f505-4e90-bd42-4cc4481c3195",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C85",
+      "claim": "CGNL1 is an endothelial junction protein highly expressed in the cardiac endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "CGNL1 is an endothelial junction protein and is highly expressed in the cardiac endothelium (Chrifi et al., 2017; Schaum et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "7024f160-9cfd-46f2-a329-69d66e0f94a5",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C86",
+      "claim": "Anti-CGNL1 autoantibodies were confirmed using a radioligand binding assay with whole CGNL1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed anti-CGNL1 autoantibodies using a radioligand binding assay with whole CGNL1 protein (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the validation data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "2a912cff-53fc-4640-9731-8c2594f5c5db",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C87",
+      "claim": "Over 10% of severe COVID-19 pneumonia is characterized by the presence of anti-Type I IFN autoantibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was reported that over 10% of severe COVID-19 pneumonia is characterized by the presence of anti-Type I IFN autoantibodies, a specificity that overlaps with APS1 (Bastard et al., 2020; Bastard et al., 2021b; Bastard et al., 2021a; Meager et al., 2006; Meyer et al., 2016; van der Wijst et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b3d57234-e4eb-4232-8995-c564f05db53d",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C88",
+      "claim": "Low sensitivity for anti-type I IFN autoantibodies by PhIP-seq is likely due to the conformational nature of these antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we had low sensitivity for the known anti-type I IFN autoantibodies by PhIP-seq, likely due to the conformational nature of these antigens; however, this cohort had been previously assessed for anti-Type I IFN antibodies by other techniques (Bastard et al., 2020; Bastard et al., 2021c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known limitations of PhIP-seq for conformational antigens.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "31b53272-21a1-480d-91dc-a727d24a89b4",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C89",
+      "claim": "No substantial overlap was detected between APS1 antigens and severe COVID-19 antigens beyond anti-Type I IFN.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect substantial overlap of any of the other antigens that were found in 5% or more of APS1 samples, suggesting that autoantibody commonalities between APS1 and severe COVID-19 may be limited (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "44221930-fb9b-445e-b0f2-e0ecbc2d674a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C90",
+      "claim": "EEA1 is an early endosomal protein.",
+      "claim_type": "EXPLICIT",
+      "source": "A small number of putative autoantigens were identified in four or more of the severe COVID-19 group (>4%), but not within our control group, including MCAM, CHRM5, and EEA1. Of these, only EEA1, an early endosomal protein, had a frequency of >10% (Mu et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f49656b7-044e-48fc-8857-4e472ce1de89",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C91",
+      "claim": "EEA1 had a frequency of >10% in severe COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, only EEA1, an early endosomal protein, had a frequency of >10% (Mu et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the PhIP-seq data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "feffdccb-d3ac-46b7-843a-d1f288ca4759",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C92",
+      "claim": "The set of anti-EEA1 positive patients was almost fully distinct from the anti-Type I IFN antibody positive group.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the set of anti-EEA1 positive patients was almost fully distinct from the anti-Type I IFN antibody positive group, with only one patient shared between the groups (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "234a77a8-b18c-49cb-b65b-388f3d183e33",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C93",
+      "claim": "Anti-EEA1 antibodies may have predictive potential worth further investigation in COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the importance of the finding of autoantibodies to Type 1 IFNs in >15% of critical COVID-19 pneumonia, our data suggest that anti-EEA1 antibodies may also have predictive potential worth further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "67065c05-c71c-46bc-8785-a57dd8eaf3a5",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C94",
+      "claim": "Declining costs in sequencing paired with scaled protocols result in low per-sample cost and experimental time.",
+      "claim_type": "EXPLICIT",
+      "source": "Continually declining costs in sequencing paired with scaled protocols such as the ones presented here result in a low per-sample cost and experimental time, and declining costs of custom oligonucleotide based-libraries allow for extensive adaptation (Rom\u00e1n-Mel\u00e9ndez et al., 2021; Vogl et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the economics of the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "edf17808-d933-4176-a92f-ab0f17753c80",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C95",
+      "claim": "The scaled data reinforces the importance of including large control cohorts to improve specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our scaled data reinforces the importance of including large control cohorts to improve specificity and orthogonal validations to evaluate sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the control cohort size analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "271ecdec-e0e3-4a64-b153-51ff8ef05cec",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C96",
+      "claim": "Orthogonal validations are important to evaluate sensitivity of PhIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Our scaled data reinforces the importance of including large control cohorts to improve specificity and orthogonal validations to evaluate sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "d6e54e10-c3f8-4271-8c44-041353aef22a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C97",
+      "claim": "The absence of appropriately sized control cohorts can result in false-positive associations between enriched protein sequences and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of appropriately sized control cohorts can result in false-positive associations between enriched protein sequences and disease which can lead to misinterpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the control cohort size analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "45627f39-26f7-4e99-8a8b-67714d7fcf77",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C98",
+      "claim": "PhIP-seq is optimized for linear antigens and is inherently less robust for detection of conformational or modified epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PhIP-seq is optimized for linear antigens and thus is inherently less robust for detection of confirmational or modified epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of the PhIP-seq technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "542f536e-91d1-4079-96ff-ddac8a4409e9",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C99",
+      "claim": "Known anti-IFN and anti-GAD65 antibodies can be detected only in a handful of APS1 samples by PhIP-seq, while orthogonal assays using whole conformation protein demonstrate increased sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our previous work highlights that known anti-IFN and anti-GAD65 antibodies can be detected only in a handful of APS1 samples by PhIP-seq, while orthogonal assays using whole conformation protein demonstrate increased sensitivity (Vazquez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "c3e9a9fc-0e92-41f4-805c-d1bbd99e1814",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C100",
+      "claim": "The increased sensitivity of whole protein validation relative to PhIP-seq for BTNL8 autoantibodies highlights the need for rapid and sensitive secondary assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the increased sensitivity of whole protein validation relative to PhIP-seq for BTNL8 autoantibodies highlights the need for rapid and sensitive secondary assays to confirm or even increase the importance of a given candidate antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the BTNL8 validation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "d5ab69d5-3107-46ed-9738-d81edc02744a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C101",
+      "claim": "PDYN is a secreted opioid precursor of the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "PDYN is a secreted opioid precursor of the central nervous system, and while PDYN-knockout mice are largely phenotypically normal, they do experience hyperalgesia and altered anxiety-related behaviors relative to wildtype mice (McLaughlin et al., 2003; Sharifi et al., 2001; Wang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f9ab2f9d-a7eb-4be4-8251-71b7362a7852",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C102",
+      "claim": "PDYN-knockout mice experience hyperalgesia and altered anxiety-related behaviors relative to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "PDYN is a secreted opioid precursor of the central nervous system, and while PDYN-knockout mice are largely phenotypically normal, they do experience hyperalgesia and altered anxiety-related behaviors relative to wildtype mice (McLaughlin et al., 2003; Sharifi et al., 2001; Wang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "0208f2db-df3a-4128-8d7a-2aaa78d87705",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C105",
+      "claim": "BEST4 is a well-characterized, cell-surface intestinal ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "BEST4 is a well-characterized, cell-surface intestinal ion channel (Qu and Hartzell, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "21ef3b01-9490-4f30-97dc-66dd8b9b8e60",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C106",
+      "claim": "BEST4 has become a standard and specific marker for a subset of enterocytes in the duodenum and colon, including CFTR+ enterocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, BEST4 has become a standard and specific marker for a subset of enterocytes in the duodenum and colon, including CFTR+ enterocytes, which are involved in fluid homeostasis (Busslinger et al., 2021; Elmentaite et al., 2021; Smillie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "0d7dcf6b-e862-4cec-93b7-0e0ef1c85d75",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C107",
+      "claim": "CFTR+ enterocytes are involved in fluid homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, BEST4 has become a standard and specific marker for a subset of enterocytes in the duodenum and colon, including CFTR+ enterocytes, which are involved in fluid homeostasis (Busslinger et al., 2021; Elmentaite et al., 2021; Smillie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "232cb349-2a18-4376-8122-59d15e4d0e91",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C108",
+      "claim": "The presence of BEST4 antigen within CID-G/AI suggests a possible etiologic link between IPEX and RAG deficiency, possibly relating to Treg dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of an IPEX antigen BEST4 within CID-G/AI suggests a possible etiologic link between the two diseases, possibly relating to Treg dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the shared antigen finding.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "5710ae36-5c5b-4c94-ab0f-6f960dd37c0e",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C109",
+      "claim": "Future experiments searching for anti-BEST4 antibodies in IBD and other forms of autoimmune enteropathy are warranted.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, given that BEST4 autoantibodies were found across two distinct etiologies of IBD, in addition to the intestinal localization of BEST4 expression, future experiments specifically searching for the presence of anti-BEST4 antibodies in IBD and other forms of autoimmune enteropathy are warranted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "86a9f1c5-c2a4-4c71-a5a9-8c6287d6aaeb",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C110",
+      "claim": "BTN and BTNL-family members belong to the family of B7 co-stimulatory receptors known to modulate T-cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "BTN and BTNL-family members belong to the family of B7 co-stimulatory receptors known to modulate T-cell responses, with structural similarity to CD80 and PD-L1 (Chapoval et al., 2013; Rhodes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "e40e778a-9147-4d3e-a85a-2f509be1e31e",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C111",
+      "claim": "BTNL-family members have structural similarity to CD80 and PD-L1.",
+      "claim_type": "EXPLICIT",
+      "source": "BTN and BTNL-family members belong to the family of B7 co-stimulatory receptors known to modulate T-cell responses, with structural similarity to CD80 and PD-L1 (Chapoval et al., 2013; Rhodes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "0201827c-9a3b-49fc-a1d8-f36fafce8483",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C112",
+      "claim": "BTNL-family members are thought to participate primarily in regulation of gamma-delta T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, BTNL-family members are thought to participate primarily in regulation of gamma-delta T cells, with BTNL8/BTNL3 implicated in gut epithelial immune homeostasis (Di Marco Barros et al., 2016; Chapoval et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "12cda1da-a721-431e-8ee3-3c48c95e6099",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C113",
+      "claim": "BTNL8/BTNL3 are implicated in gut epithelial immune homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, BTNL-family members are thought to participate primarily in regulation of gamma-delta T cells, with BTNL8/BTNL3 implicated in gut epithelial immune homeostasis (Di Marco Barros et al., 2016; Chapoval et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "7561c8c9-fc99-4b71-9e2f-a080a1b6f696",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C114",
+      "claim": "Antibodies to BTNL8 could play a functional role in immune checkpoints rather than only a bystander role.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the cell-surface expression pattern of BTNL8, it is conceivable that antibodies to these proteins could play a functional role in immune checkpoints, rather than only the bystander role implicated for most autoantibodies to intracellular antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the known biology of BTNL8.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "e3158c65-15d1-4e33-9fa2-0b1208862cde",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C115",
+      "claim": "Recent studies in celiac disease patients demonstrated a reduction in BTNL3/BTNL8 expression following acute episodes of inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent studies in patients with celiac disease have demonstrated a reduction in BTNL3/BTNL8 expression following acute episodes of inflammation, with an associated loss of the physiological normal gamma/delta T-cell subset of gut intraepithelial lymphocytes (Mayassi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "8243b67b-dd35-472d-97c0-eb580197e340",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C116",
+      "claim": "Celiac disease patients show an associated loss of the physiological normal gamma/delta T-cell subset of gut intraepithelial lymphocytes following inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent studies in patients with celiac disease have demonstrated a reduction in BTNL3/BTNL8 expression following acute episodes of inflammation, with an associated loss of the physiological normal gamma/delta T-cell subset of gut intraepithelial lymphocytes (Mayassi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "175bdba6-d6f3-438a-bec3-d5055d3c01aa",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C117",
+      "claim": "Both KD and MIS-C respond to varying degrees to IVIG therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, a number of observations point to a possible role for abnormal adaptive immunity and autoantibodies (reviewed in Sakurai, 2019). Both diseases respond to varying degrees to IVIG therapy, and genetic studies suggest some children with polymorphisms in genes involving B-cell and antibody function can be predisposed to developing KD (reviewed in Onouchi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f9a41658-0f3e-406f-a827-45ba78abdfe3",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C118",
+      "claim": "Genetic studies suggest some children with polymorphisms in genes involving B-cell and antibody function can be predisposed to developing KD.",
+      "claim_type": "EXPLICIT",
+      "source": "Both diseases respond to varying degrees to IVIG therapy, and genetic studies suggest some children with polymorphisms in genes involving B-cell and antibody function can be predisposed to developing KD (reviewed in Onouchi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "9799ed76-bcca-422a-bf2e-ab4bb31b6213",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C119",
+      "claim": "Autoantibodies targeting clinically relevant tissues such as the heart or endothelium have been detected in KD.",
+      "claim_type": "EXPLICIT",
+      "source": "Autoantibodies targeting clinically relevant tissues such as the heart or endothelium have been detected in KD, though their role in disease pathogenesis is uncertain (Cunningham et al., 1999; Fujieda et al., 1997; Grunebaum et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "3d1f2fff-129e-4284-bb61-fa5129b8b0fb",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C120",
+      "claim": "The role of autoantibodies in KD pathogenesis is uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "Autoantibodies targeting clinically relevant tissues such as the heart or endothelium have been detected in KD, though their role in disease pathogenesis is uncertain (Cunningham et al., 1999; Fujieda et al., 1997; Grunebaum et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "4056aa4b-5d0d-43c4-9460-5c1b4ba5fa4e",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C121",
+      "claim": "Anti-CGNL1 antibodies may represent a subset of specificities within anti-endothelial cell antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although anti-CGNL1 antibodies were only found at low frequency, it is possible that these antibodies may represent a subset of specificities within anti-endothelial cell antibodies, given the endothelial expression of CGNL1 as well as its implications in cardiovascular disease (Chrifi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the known biology of CGNL1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "3314b168-bd69-447f-adbf-bfc4092cec6d",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C122",
+      "claim": "CGNL1 has implications in cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Although anti-CGNL1 antibodies were only found at low frequency, it is possible that these antibodies may represent a subset of specificities within anti-endothelial cell antibodies, given the endothelial expression of CGNL1 as well as its implications in cardiovascular disease (Chrifi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "bf575787-a40c-4214-857b-5aadc8f76cba",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C123",
+      "claim": "Anti-EEA1 antibodies have previously been reported in systemic lupus erythematosus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, similarly to anti-IFN antibodies, anti-EEA1 antibodies have also previously been reported in the setting of systemic lupus erythematosus (Selak et al., 2000; Stinton et al., 2004; Waite et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f1a1d074-54d7-43ca-b495-5126fa207266",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C124",
+      "claim": "PhIP-seq data may have predictive or diagnostic value when cohorts are sufficiently large.",
+      "claim_type": "EXPLICIT",
+      "source": "This work suggests that PhIP-seq data may have predictive or diagnostic value when the cohorts are sufficiently large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the machine learning analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "bc293ccb-c66a-4574-bf0d-e271aaf5c7e5",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C125",
+      "claim": "Machine learning techniques will be effective tools for determining the underlying proteins that drive successful classification using PhIP-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, scaled PhIP-seq represents an avenue to not only discover and compare novel autoantigens within and across cohorts of autoimmune disease, but also suggests that machine learning techniques will be effective tools for determining, without supervision, the underlying proteins that drive successful classification using this data type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the machine learning analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "61e068d3-15e5-4af8-ab27-a5dacfc9a792",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C126",
+      "claim": "Full PhIP-seq data availability is critical for enabling expanded analysis and comparison across datasets, cohorts, and research groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we emphasize that to broadly understand autoantibody profiles, full PhIP-seq data availability is critical for enabling expanded analysis and comparison across datasets, cohorts, and research groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for best practices in data sharing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "d1ff83f9-fb5f-4221-9dba-9c9cbcdf6565",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "claim_id": "C127",
+      "claim": "Full PhIP-seq data for all cohorts will be available for download at Dryad.",
+      "claim_type": "EXPLICIT",
+      "source": "Full PhIP-seq data for all cohorts presented here will be linked to this publication and will be available for download at Dryad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "49d21a28-ec1c-4ac0-b5f9-f8e6ef4c0908",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a high-throughput, vacuum-based PhIP-seq protocol that enables 600-800 samples to be run in parallel without robotics, with data quality comparable to moderate-throughput manual multichannel protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 collectively demonstrate successful development of a scaled protocol. The vacuum-based approach is validated by correlation with existing methods (C15, Figure 1B), and the protocol specifications (C13-C14) are clearly stated and demonstrated throughout the manuscript with large cohort analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "215d86eb-ce12-4db5-b393-de6233bfb2dd",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Large control cohorts (\u226550 samples) are critical for reducing false-positive hits in PhIP-seq, with increasing control numbers from 10 to 50 removing 388 non-specific hits and further increases to 150 providing diminishing but measurable returns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21, C95, C97 are strongly supported by the downsampling analysis in Figure 2A-B. The systematic evaluation demonstrates that simple enrichment is inadequate (C17-C18) and quantifies the impact of control cohort size (C19-C20), leading to the well-justified recommendation for large control cohorts (C21, C95, C97).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f11565b8-5806-4128-a9b8-2e4da3db4dfd",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Scaled PhIP-seq across 128 APS1 patients from three independent cohorts replicated known autoantigens and identified novel low-frequency autoantigens including PDYN (4.7% of patients), which was validated by orthogonal RLBA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C4 are well-supported by data in Figures 2C and 3. The multi-cohort validation (C22) strengthens confidence in shared antigens, and the detection of PDYN (C23-C24, C4) with orthogonal validation (Figure 3C) demonstrates the utility of scaled cohorts for detecting rare antigens that would be missed in smaller studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "61480b83-2619-47b6-b1e9-4a57a4395f7a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Machine learning classification using logistic regression on PhIP-seq data achieved excellent discrimination between APS1 patients and controls (AUC=0.95), with the model driven by known autoantigens including RFX6 and KHDC3L.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C3, C124-C125 are supported by the machine learning analysis in Figure 4. The high AUC (C37) with five-fold cross-validation provides strong evidence for predictive value (C3, C124), and the feature importance analysis (C38, Figure 4B) validates that known antigens drive classification, supporting the utility of ML approaches (C125).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BEST4 and BTNL8 are novel IPEX-associated autoantigens, with 15% and 42% of IPEX patients positive respectively, all with clinical enteropathy. BTNL8 positivity was replicated in an independent cohort (20%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C47-C51 are strongly supported by PhIP-seq data (Figure 5A) and orthogonal validation (Figure 5B-C). The clinical correlation with enteropathy (C49) and independent cohort validation for BTNL8 (C50) strengthen confidence in these novel associations. The higher sensitivity of whole-protein validation (C48 vs PhIP-seq) is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "6005b149-80b7-44d1-aa70-c4a9078bc12c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Anti-BEST4 antibodies were found in two RAG1/2 deficiency patients with CID-G/AI, one with very early-onset IBD, suggesting a possible etiologic link between IPEX and RAG deficiency related to Treg dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C59-C60 are supported by PhIP-seq and orthogonal validation (Figure 5D-E). The finding of a shared IPEX antigen in RAG deficiency patients is notable, though the mechanistic speculation (C108) remains to be tested. The clinical correlation with IBD in one patient strengthens the association, though the small sample size (n=2) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "a289fa34-d75e-4dac-bd1b-75b9f76aeacc",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Re-analysis of MIS-C with larger control cohorts (n=87 vs. 4 in prior study) failed to replicate previously reported candidate antigens and identified only three low-frequency candidates (CD34, RPS6KB1, CAPZB), suggesting much larger cohorts are needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C72-C73 are supported by data in Figure 6A-B. The failure to replicate prior findings (C69) with appropriate controls validates the importance of large control cohorts demonstrated earlier. The limited findings (C72) and recommendation for larger cohorts (C73) are appropriately cautious given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PhIP-seq of 70 KD patients identified 17 disease-specific candidate antigens present at low frequency, with CGNL1 representing a rare overlapping antigen between KD and MIS-C, validated by RLBA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76, C8, C84-C86 are supported by data in Figure 6C-D. The identification of KD-specific hits (C74-C75) and their low frequency (C76) is well-documented. The CGNL1 overlap between KD and MIS-C (C8, C84) with orthogonal validation (C86) is notable, though the low frequency limits clinical utility without further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "f785476d-8fb3-4624-9046-4e691b750f6c",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In severe COVID-19, EEA1 autoantibodies were found in >10% of patients, largely distinct from the anti-Type I IFN positive group, suggesting a potential additional predictive marker worth further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C87-C93 are supported by data in Figure 7. The identification of EEA1 in >10% of severe COVID-19 patients (C91) with minimal overlap with anti-IFN patients (C92) is well-documented. However, the predictive potential (C93) remains speculative and requires validation in independent cohorts. The low PhIP-seq sensitivity for anti-IFN antibodies (C88) is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "b44ba1be-20f3-4872-a953-021631c73628",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PhIP-seq enables unbiased proteome-wide autoantibody discovery but is inherently less sensitive for conformational antigens, requiring orthogonal validation with whole proteins to confirm and potentially increase sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C11, C98-C100 accurately describe the capabilities and limitations of PhIP-seq. The technique's utility for linear epitopes (C1, C11) and limitations for conformational antigens (C11, C98) are well-established and supported by citations (C10-C11, C99). The need for orthogonal validation (C96, C100) is demonstrated throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "7d643840-7c51-4184-8b60-d8157e33e48b",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PDYN is a secreted opioid peptide involved in addiction-related behaviors, with knockout mice showing hyperalgesia and altered anxiety-related behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C101-C102 are supported by appropriate citations to previous work. This background information on PDYN function provides context for the novel autoantigen discovery but does not represent new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "aa229190-1e07-4cee-b1f4-1050b76a850a",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple novel APS1 candidate antigens were identified with tissue-specific expression patterns potentially related to clinical phenotypes, including ciliary proteins (SPAG17, CROCC2, GAS2L2), gonadal proteins (CT45A10, GPR64), neurological proteins (GABRR1, TRIM2), and intestinal protein CDHR5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C36 describe novel APS1 candidate antigens with supporting citations for their expression patterns and functions. While these candidates are identified by PhIP-seq (Figure 3B), most lack orthogonal validation, making them preliminary findings requiring further investigation. The biological plausibility is supported by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "1f1f04d7-a172-4f27-a7e0-a883da445870",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "IPEX syndrome is characterized by impaired peripheral tolerance due to Treg dysfunction, with most patients exhibiting enteropathy and anti-enterocyte antibodies. Known IPEX antigens USH1C and ANKS4B were detected in two patients with correlated signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 provide established background on IPEX (C39-C42) supported by citations, and confirm detection of known antigens (C43-C44) in the current dataset. This validates the approach but does not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "9645e38d-fe2e-479d-b937-eeebb07fe88b",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "BEST4 is a cell-surface intestinal ion channel and marker for CFTR+ enterocytes involved in fluid homeostasis. BTNL8 is a butyrophilin-like molecule highly expressed in gut epithelium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C105-C107 provide well-cited background on BEST4 and BTNL8 biology, supporting the biological plausibility of these proteins as IPEX autoantigens. This contextual information is important for interpretation but does not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "RAG1/2 deficiency represents a heterogeneous form of immune dysregulation with variable phenotypes. Nearly half of the cohort showed enrichment for ZNF365 (associated with Crohn's disease and uveitis), and many had antibodies to RELL2 and CEACAM3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 provide established background on RAG deficiency supported by citations. Claims C61-C64 describe novel findings from PhIP-seq screening, though these lack orthogonal validation and remain preliminary. The ZNF365 association with autoimmune diseases (C62) provides biological plausibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "c7959d27-8012-4ca0-acd7-325bde9277f9",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MIS-C and KD are poorly understood inflammatory diseases with possible autoimmune components. Both respond to IVIG therapy, and genetic studies suggest B-cell/antibody function polymorphisms may predispose to KD. Autoantibodies have been detected in KD but their pathogenic role is uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C70-C71, C117-C120 provide well-cited background on MIS-C and KD, establishing the rationale for autoantibody investigation. The acknowledgment of IVIG contamination concerns (C70-C71) demonstrates appropriate methodological awareness. This is contextual information rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "d0651a6b-00fd-49a2-bb10-e02d60708c20",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "KD candidate antigens include SPATA2 and ALOX15B (linked to inflammation), and FBXL19 (associated with pancreatitis and psoriasis, rare KD complications), found in 10% of KD patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 describe KD candidate antigens with biological plausibility supported by citations (C77-C81, C83). The PhIP-seq findings (C82) lack orthogonal validation and represent preliminary observations. The connections to KD complications (C81-C83) are speculative but biologically plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "2f95940d-3fae-43a5-abb5-531f95225c7b",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "BTNL8 belongs to the B7 co-stimulatory receptor family, regulates gamma-delta T cells, and is implicated in gut epithelial immune homeostasis. Given its cell-surface expression, anti-BTNL8 antibodies could play a functional role in immune checkpoints. BTNL3/BTNL8 expression is reduced in celiac disease with associated loss of gut gamma-delta T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C116 provide well-cited biological context for BTNL8 function. The speculation about functional antibody roles (C114) is appropriately cautious and biologically plausible given the cell-surface expression. The celiac disease findings (C115-C116) provide relevant precedent for BTNL8 involvement in gut immunity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "09be318d-6f76-404e-a843-51c91da9b059",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Anti-CGNL1 antibodies may represent a subset of anti-endothelial cell antibodies given CGNL1's endothelial expression and implications in cardiovascular disease. Anti-EEA1 antibodies have been previously reported in systemic lupus erythematosus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C121-C123 provide speculative but biologically plausible interpretations of the CGNL1 and EEA1 findings, supported by appropriate citations. These represent discussion points rather than definitive conclusions, appropriately framed as possibilities requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "436620aa-16a5-470e-8907-27df727ae192",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Current PhIP-seq protocols are difficult to scale, and many autoimmune diseases show phenotypic heterogeneity with potentially low frequencies of shared autoantibodies. Declining sequencing costs enable low per-sample costs. Full data availability is critical for cross-dataset comparisons, and all data will be available at Dryad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12, C16, C94, C126-C127 provide appropriate context and data sharing commitments. The motivation for scaling (C2, C12) is well-justified, the economic considerations (C94) are accurate, and the data sharing commitment (C126-C127) represents best practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    },
+    {
+      "id": "6723eeb6-7010-48ee-a9db-cbe28d90a082",
+      "content_id": "bdc9385d-9ad3-410d-86ff-dc56eae00fb3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Future experiments searching for anti-BEST4 antibodies in IBD and other forms of autoimmune enteropathy are warranted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 represents a reasonable recommendation based on the finding of BEST4 antibodies across two distinct etiologies of IBD (IPEX and RAG deficiency). This is appropriately framed as a future direction rather than a current finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:46:46.534575Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e2db02b8-4221-46a2-b29c-5ff52221fb99",
+      "result_id": "49d21a28-ec1c-4ac0-b5f9-f8e6ef4c0908"
+    },
+    {
+      "claim_id": "7fbd6ec9-f4f1-40ac-b16d-53e2b4b0d28b",
+      "result_id": "49d21a28-ec1c-4ac0-b5f9-f8e6ef4c0908"
+    },
+    {
+      "claim_id": "cc2a273c-cc25-4e6a-bcea-2dd7f640f080",
+      "result_id": "49d21a28-ec1c-4ac0-b5f9-f8e6ef4c0908"
+    },
+    {
+      "claim_id": "3880a167-bb07-419e-b310-936c8bba1d2c",
+      "result_id": "215d86eb-ce12-4db5-b393-de6233bfb2dd"
+    },
+    {
+      "claim_id": "d32fe6b1-337d-4be2-8fa8-280028867b63",
+      "result_id": "215d86eb-ce12-4db5-b393-de6233bfb2dd"
+    },
+    {
+      "claim_id": "4fb4ab2b-ebca-4394-a969-826a1352bddd",
+      "result_id": "215d86eb-ce12-4db5-b393-de6233bfb2dd"
+    },
+    {
+      "claim_id": "6826753e-9781-46c5-b451-0d75cfccfea7",
+      "result_id": "215d86eb-ce12-4db5-b393-de6233bfb2dd"
+    },
+    {
+      "claim_id": "3a151d91-7136-4d84-b967-a1087a0eab34",
+      "result_id": "215d86eb-ce12-4db5-b393-de6233bfb2dd"
+    },
+    {
+      "claim_id": "edf17808-d933-4176-a92f-ab0f17753c80",
+      "result_id": "215d86eb-ce12-4db5-b393-de6233bfb2dd"
+    },
+    {
+      "claim_id": "d6e54e10-c3f8-4271-8c44-041353aef22a",
+      "result_id": "215d86eb-ce12-4db5-b393-de6233bfb2dd"
+    },
+    {
+      "claim_id": "9759c8ec-a9f3-48dc-b4d8-539e8b063831",
+      "result_id": "f11565b8-5806-4128-a9b8-2e4da3db4dfd"
+    },
+    {
+      "claim_id": "1628a228-2fb8-4fed-b8b5-b1e2fc4689ac",
+      "result_id": "f11565b8-5806-4128-a9b8-2e4da3db4dfd"
+    },
+    {
+      "claim_id": "e5f15b45-84b9-4a7b-adbc-f43a3657506d",
+      "result_id": "f11565b8-5806-4128-a9b8-2e4da3db4dfd"
+    },
+    {
+      "claim_id": "4445b61b-cd7e-4285-bdbc-4d5786312a3b",
+      "result_id": "f11565b8-5806-4128-a9b8-2e4da3db4dfd"
+    },
+    {
+      "claim_id": "ae8edcc4-c488-4b47-bcfa-d1c2582aa335",
+      "result_id": "61480b83-2619-47b6-b1e9-4a57a4395f7a"
+    },
+    {
+      "claim_id": "8ac5016a-1f63-4d3c-acbc-f17e418dda17",
+      "result_id": "61480b83-2619-47b6-b1e9-4a57a4395f7a"
+    },
+    {
+      "claim_id": "7d71581a-f5a8-43c8-b18d-c9454d7183b6",
+      "result_id": "61480b83-2619-47b6-b1e9-4a57a4395f7a"
+    },
+    {
+      "claim_id": "f1a1d074-54d7-43ca-b495-5126fa207266",
+      "result_id": "61480b83-2619-47b6-b1e9-4a57a4395f7a"
+    },
+    {
+      "claim_id": "bc293ccb-c66a-4574-bf0d-e271aaf5c7e5",
+      "result_id": "61480b83-2619-47b6-b1e9-4a57a4395f7a"
+    },
+    {
+      "claim_id": "d1cb0d9c-b94d-4a6c-a9fb-a6e469ceb8d4",
+      "result_id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82"
+    },
+    {
+      "claim_id": "3149c1be-450e-4cc1-a1f4-93f00556f44c",
+      "result_id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82"
+    },
+    {
+      "claim_id": "ce8694bb-9b20-42a8-9a68-a7ed11fa07af",
+      "result_id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82"
+    },
+    {
+      "claim_id": "697b7725-953f-4184-b085-ea17e6d87665",
+      "result_id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82"
+    },
+    {
+      "claim_id": "b037f7af-f22f-4f8d-b435-935f8111a6c0",
+      "result_id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82"
+    },
+    {
+      "claim_id": "528fe7ea-9235-4f59-8e87-32b74acbbece",
+      "result_id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82"
+    },
+    {
+      "claim_id": "b93fc6fc-1a79-49e5-af6e-c2e1a4fa4af8",
+      "result_id": "a1c6f3e1-fc11-45ba-b2ed-d2d526bb1a82"
+    },
+    {
+      "claim_id": "67ed1bca-7dc9-444d-903d-f16fe618de33",
+      "result_id": "6005b149-80b7-44d1-aa70-c4a9078bc12c"
+    },
+    {
+      "claim_id": "40485161-23f6-42eb-8fde-6327f52d1161",
+      "result_id": "6005b149-80b7-44d1-aa70-c4a9078bc12c"
+    },
+    {
+      "claim_id": "7cd5c8de-d388-429c-ab35-89c2947016a3",
+      "result_id": "6005b149-80b7-44d1-aa70-c4a9078bc12c"
+    },
+    {
+      "claim_id": "232cb349-2a18-4376-8122-59d15e4d0e91",
+      "result_id": "6005b149-80b7-44d1-aa70-c4a9078bc12c"
+    },
+    {
+      "claim_id": "2ce980ee-2f9d-439a-8e4b-844c3b1f652f",
+      "result_id": "a289fa34-d75e-4dac-bd1b-75b9f76aeacc"
+    },
+    {
+      "claim_id": "8321ffe7-659f-4ea2-b112-0cb2239a2730",
+      "result_id": "a289fa34-d75e-4dac-bd1b-75b9f76aeacc"
+    },
+    {
+      "claim_id": "35a909ba-9a31-4760-a08a-ceeccb149a71",
+      "result_id": "a289fa34-d75e-4dac-bd1b-75b9f76aeacc"
+    },
+    {
+      "claim_id": "7cd0895e-7e7f-4c0a-b1c8-8c167267c0ec",
+      "result_id": "a289fa34-d75e-4dac-bd1b-75b9f76aeacc"
+    },
+    {
+      "claim_id": "630c3a0f-a1cf-486d-9957-eaf7028a99d1",
+      "result_id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8"
+    },
+    {
+      "claim_id": "b03033d5-6d17-426a-83c7-31c51485979e",
+      "result_id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8"
+    },
+    {
+      "claim_id": "2cafae61-e162-4170-bd63-3455f97d1f0c",
+      "result_id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8"
+    },
+    {
+      "claim_id": "17f08e40-ca74-434c-941d-e9d9f91b5ef4",
+      "result_id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8"
+    },
+    {
+      "claim_id": "dab91b28-3308-451a-a19f-6d6444b71f9b",
+      "result_id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8"
+    },
+    {
+      "claim_id": "f3377387-f505-4e90-bd42-4cc4481c3195",
+      "result_id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8"
+    },
+    {
+      "claim_id": "7024f160-9cfd-46f2-a329-69d66e0f94a5",
+      "result_id": "fdd27fbc-b7bd-419c-8e99-889f7152afc8"
+    },
+    {
+      "claim_id": "4579d0ca-3f94-4328-9a67-55959397b940",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "2a912cff-53fc-4640-9731-8c2594f5c5db",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "b3d57234-e4eb-4232-8995-c564f05db53d",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "31b53272-21a1-480d-91dc-a727d24a89b4",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "44221930-fb9b-445e-b0f2-e0ecbc2d674a",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "f49656b7-044e-48fc-8857-4e472ce1de89",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "feffdccb-d3ac-46b7-843a-d1f288ca4759",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "234a77a8-b18c-49cb-b65b-388f3d183e33",
+      "result_id": "f785476d-8fb3-4624-9046-4e691b750f6c"
+    },
+    {
+      "claim_id": "adb0e565-3d08-47fd-b52b-f3d7302a2235",
+      "result_id": "b44ba1be-20f3-4872-a953-021631c73628"
+    },
+    {
+      "claim_id": "3ada37a9-a72a-4cc9-bc08-fe3629efcca6",
+      "result_id": "b44ba1be-20f3-4872-a953-021631c73628"
+    },
+    {
+      "claim_id": "03b0eb30-78f5-4f8f-aa1c-4dee4827d7a7",
+      "result_id": "b44ba1be-20f3-4872-a953-021631c73628"
+    },
+    {
+      "claim_id": "45627f39-26f7-4e99-8a8b-67714d7fcf77",
+      "result_id": "b44ba1be-20f3-4872-a953-021631c73628"
+    },
+    {
+      "claim_id": "542f536e-91d1-4079-96ff-ddac8a4409e9",
+      "result_id": "b44ba1be-20f3-4872-a953-021631c73628"
+    },
+    {
+      "claim_id": "c3e9a9fc-0e92-41f4-805c-d1bbd99e1814",
+      "result_id": "b44ba1be-20f3-4872-a953-021631c73628"
+    },
+    {
+      "claim_id": "6c2f2008-5154-4483-8d7b-c06133b2e46d",
+      "result_id": "7d643840-7c51-4184-8b60-d8157e33e48b"
+    },
+    {
+      "claim_id": "d5ab69d5-3107-46ed-9738-d81edc02744a",
+      "result_id": "7d643840-7c51-4184-8b60-d8157e33e48b"
+    },
+    {
+      "claim_id": "f9ab2f9d-a7eb-4be4-8251-71b7362a7852",
+      "result_id": "7d643840-7c51-4184-8b60-d8157e33e48b"
+    },
+    {
+      "claim_id": "f51614e6-51c0-4077-a4ef-56b5eb9bac9a",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "57ad48b4-9973-417a-bd54-3de0d28f58bd",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "00a2bc5e-8773-49be-b43f-9865ed6c45fc",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "1c23d15f-2afa-437b-9323-960f7a9bc5b2",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "194ab12e-02e3-4e77-9f28-8dab59996f6a",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "16488542-3cdb-401f-999b-a263c7eeba29",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "c11aea33-6b3f-45d4-8fcc-d3f522164953",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "b624a4ce-ab5e-4ae7-a5a7-3605762118b2",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "2b107a54-0745-4665-a8e2-8aa0267b5b42",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "b14ee13e-9516-49ac-a8ab-d05003fe2b11",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "0d980556-da7e-4b61-93e0-f2e4756af6b8",
+      "result_id": "aa229190-1e07-4cee-b1f4-1050b76a850a"
+    },
+    {
+      "claim_id": "c0a471f0-7dee-48c9-9c2c-50f2e5d0f277",
+      "result_id": "1f1f04d7-a172-4f27-a7e0-a883da445870"
+    },
+    {
+      "claim_id": "5292d715-1ba2-4a09-ba3e-5d7a4ddb13bd",
+      "result_id": "1f1f04d7-a172-4f27-a7e0-a883da445870"
+    },
+    {
+      "claim_id": "64612cb6-58b2-4a3b-b724-8ab68e03857c",
+      "result_id": "1f1f04d7-a172-4f27-a7e0-a883da445870"
+    },
+    {
+      "claim_id": "8de35456-6043-414f-b032-f24361ae8ec1",
+      "result_id": "1f1f04d7-a172-4f27-a7e0-a883da445870"
+    },
+    {
+      "claim_id": "cfb9a3b9-a8ab-44aa-96e4-c60d79bab5d3",
+      "result_id": "1f1f04d7-a172-4f27-a7e0-a883da445870"
+    },
+    {
+      "claim_id": "9ec3a331-e4ad-41c3-937e-e089b3891e60",
+      "result_id": "1f1f04d7-a172-4f27-a7e0-a883da445870"
+    },
+    {
+      "claim_id": "1e53b5e2-90df-4e20-9bae-7d95a2247bd0",
+      "result_id": "9645e38d-fe2e-479d-b937-eeebb07fe88b"
+    },
+    {
+      "claim_id": "af8bc0ae-9e66-476c-af89-c5fcda434bc1",
+      "result_id": "9645e38d-fe2e-479d-b937-eeebb07fe88b"
+    },
+    {
+      "claim_id": "0208f2db-df3a-4128-8d7a-2aaa78d87705",
+      "result_id": "9645e38d-fe2e-479d-b937-eeebb07fe88b"
+    },
+    {
+      "claim_id": "21ef3b01-9490-4f30-97dc-66dd8b9b8e60",
+      "result_id": "9645e38d-fe2e-479d-b937-eeebb07fe88b"
+    },
+    {
+      "claim_id": "0d7dcf6b-e862-4cec-93b7-0e0ef1c85d75",
+      "result_id": "9645e38d-fe2e-479d-b937-eeebb07fe88b"
+    },
+    {
+      "claim_id": "f6421f72-462e-4059-8e61-d685620caeb8",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "5cf66d73-380f-4ae7-ad98-f2bbe433ad8b",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "52a1a9ab-0dc2-4acc-bcc7-40ccb2135b7e",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "30efa4be-d629-4335-8685-3aae1220b7ef",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "2c5134bf-969d-4d64-8373-1feb3cb766ef",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "48a1b663-48c8-4021-b648-ae0571facd05",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "075f79bc-527f-4e45-a7fc-e1672c428d56",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "4cebeffb-5ecd-4a95-bf45-5c931de61831",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "5f03cbbc-df23-4bc2-8dfd-29d3a42ccf85",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "825957c4-b813-4e6f-9f5b-f7b16bfd2646",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "16e45f2a-15bc-4a30-9c17-52470eda19e5",
+      "result_id": "9e0311fe-e12a-417e-b6bc-e3c80e5756bc"
+    },
+    {
+      "claim_id": "d2531668-67ae-4b84-b8ba-5444bd5b8101",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "5c4cddd7-b0ec-48bc-8029-647b41511b2a",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "300fd3eb-6036-46d7-9087-cc72c53366fd",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "455cb726-b963-4046-a5b3-ccf4d1cf8560",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "20cb4861-d581-4828-b4ee-acdf08bf0ccb",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "175bdba6-d6f3-438a-bec3-d5055d3c01aa",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "f9a41658-0f3e-406f-a827-45ba78abdfe3",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "9799ed76-bcca-422a-bf2e-ab4bb31b6213",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "3d1f2fff-129e-4284-bb61-fa5129b8b0fb",
+      "result_id": "c7959d27-8012-4ca0-acd7-325bde9277f9"
+    },
+    {
+      "claim_id": "44a80ab9-026f-40e0-a590-f945b0358f9c",
+      "result_id": "d0651a6b-00fd-49a2-bb10-e02d60708c20"
+    },
+    {
+      "claim_id": "b0ea9e2a-27b6-41af-a2df-6878ddfe014c",
+      "result_id": "d0651a6b-00fd-49a2-bb10-e02d60708c20"
+    },
+    {
+      "claim_id": "921042f8-6293-4df3-829e-00f8b4d43e32",
+      "result_id": "d0651a6b-00fd-49a2-bb10-e02d60708c20"
+    },
+    {
+      "claim_id": "ce6d7403-2354-4c70-bb3e-d74f79c7791f",
+      "result_id": "d0651a6b-00fd-49a2-bb10-e02d60708c20"
+    },
+    {
+      "claim_id": "792eeee9-655d-479a-9dd8-0a391857db09",
+      "result_id": "d0651a6b-00fd-49a2-bb10-e02d60708c20"
+    },
+    {
+      "claim_id": "e25ff6ab-5650-449d-a8c2-07fc69d4b0aa",
+      "result_id": "d0651a6b-00fd-49a2-bb10-e02d60708c20"
+    },
+    {
+      "claim_id": "652f77f1-1651-438b-a824-ee7372526975",
+      "result_id": "d0651a6b-00fd-49a2-bb10-e02d60708c20"
+    },
+    {
+      "claim_id": "86a9f1c5-c2a4-4c71-a5a9-8c6287d6aaeb",
+      "result_id": "2f95940d-3fae-43a5-abb5-531f95225c7b"
+    },
+    {
+      "claim_id": "e40e778a-9147-4d3e-a85a-2f509be1e31e",
+      "result_id": "2f95940d-3fae-43a5-abb5-531f95225c7b"
+    },
+    {
+      "claim_id": "0201827c-9a3b-49fc-a1d8-f36fafce8483",
+      "result_id": "2f95940d-3fae-43a5-abb5-531f95225c7b"
+    },
+    {
+      "claim_id": "12cda1da-a721-431e-8ee3-3c48c95e6099",
+      "result_id": "2f95940d-3fae-43a5-abb5-531f95225c7b"
+    },
+    {
+      "claim_id": "7561c8c9-fc99-4b71-9e2f-a080a1b6f696",
+      "result_id": "2f95940d-3fae-43a5-abb5-531f95225c7b"
+    },
+    {
+      "claim_id": "e3158c65-15d1-4e33-9fa2-0b1208862cde",
+      "result_id": "2f95940d-3fae-43a5-abb5-531f95225c7b"
+    },
+    {
+      "claim_id": "8243b67b-dd35-472d-97c0-eb580197e340",
+      "result_id": "2f95940d-3fae-43a5-abb5-531f95225c7b"
+    },
+    {
+      "claim_id": "4056aa4b-5d0d-43c4-9460-5c1b4ba5fa4e",
+      "result_id": "09be318d-6f76-404e-a843-51c91da9b059"
+    },
+    {
+      "claim_id": "3314b168-bd69-447f-adbf-bfc4092cec6d",
+      "result_id": "09be318d-6f76-404e-a843-51c91da9b059"
+    },
+    {
+      "claim_id": "bf575787-a40c-4214-857b-5aadc8f76cba",
+      "result_id": "09be318d-6f76-404e-a843-51c91da9b059"
+    },
+    {
+      "claim_id": "0ae202fe-2259-4115-869c-c170e919841f",
+      "result_id": "436620aa-16a5-470e-8907-27df727ae192"
+    },
+    {
+      "claim_id": "8883ee1c-2bdc-4378-8b7d-ad0473f56fbe",
+      "result_id": "436620aa-16a5-470e-8907-27df727ae192"
+    },
+    {
+      "claim_id": "89ece921-8012-4110-958b-66fa6f157605",
+      "result_id": "436620aa-16a5-470e-8907-27df727ae192"
+    },
+    {
+      "claim_id": "67065c05-c71c-46bc-8785-a57dd8eaf3a5",
+      "result_id": "436620aa-16a5-470e-8907-27df727ae192"
+    },
+    {
+      "claim_id": "61e068d3-15e5-4af8-ab27-a5dacfc9a792",
+      "result_id": "436620aa-16a5-470e-8907-27df727ae192"
+    },
+    {
+      "claim_id": "d1ff83f9-fb5f-4221-9dba-9c9cbcdf6565",
+      "result_id": "436620aa-16a5-470e-8907-27df727ae192"
+    },
+    {
+      "claim_id": "5710ae36-5c5b-4c94-ab0f-6f960dd37c0e",
+      "result_id": "6723eeb6-7010-48ee-a9db-cbe28d90a082"
+    }
+  ],
+  "comparisons": []
+}

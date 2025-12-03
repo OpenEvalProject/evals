@@ -1,0 +1,1726 @@
+{
+  "submission": {
+    "id": "c0a37378-5cd7-44df-9bea-21b3a3437383",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:22:08.131865Z",
+    "updated_at": "2025-12-03T02:22:08.131865Z"
+  },
+  "content": [
+    {
+      "id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "submission_id": "c0a37378-5cd7-44df-9bea-21b3a3437383",
+      "content_type": "manuscript",
+      "content_text": "# Anatomy and activity patterns in a multifunctional motor neuron and its surrounding circuits\n\n## Authors\n\n- M\u00e1ria Ashaber<sup>1</sup> ([ORCID: 0000-0002-5586-9585](https://orcid.org/0000-0002-5586-9585))\n- Yusuke Tomina<sup>1</sup>\n- Pegah Kassraian<sup>1</sup>\n- Eric A Bushong<sup>2</sup> ([ORCID: 0000-0001-6195-2433](https://orcid.org/0000-0001-6195-2433))\n- William B Kristan<sup>2</sup>\n- Mark H Ellisman<sup>3</sup>\n- Daniel A Wagenaar<sup>1</sup> ([ORCID: 0000-0002-6222-761X](https://orcid.org/0000-0002-6222-761X)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States\n2. Division of Biological Sciences, University of California, San Diego San Diego United States\n3. National Center for Microscopy and Imaging Research, University of California, San Diego San Diego United States\n4. Department of Neurosciences, UCSD School of Medicine San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDorsal Excitor motor neuron DE-3 in the medicinal leech plays three very different dynamical roles in three different behaviors. Without rewiring its anatomical connectivity, how can a motor neuron dynamically switch roles to play appropriate roles in various behaviors? We previously used voltage-sensitive dye imaging to record from DE-3 and most other neurons in the leech segmental ganglion during (fictive) swimming, crawling, and local-bend escape (Tomina and Wagenaar, 2017). Here, we repeated that experiment, then re-imaged the same ganglion using serial blockface electron microscopy and traced DE-3\u2019s processes. Further, we traced back the processes of DE-3\u2019s presynaptic partners to their respective somata. This allowed us to analyze the relationship between circuit anatomy and the activity patterns it sustains. We found that input synapses important for all the behaviors were widely distributed over DE-3\u2019s branches, yet that functional clusters were different during (fictive) swimming vs. crawling.\n\n## Introduction\n\nSome neural circuits are responsible for only one specialized function. Examples include the exquisitely tuned delay lines that barn owls use to locate sounds (Carr and Konishi, 1988) and the motor neurons that control the honeybee\u2019s stinger (Ogawa et al., 1995). In the early days of neuroscience, those circuits received most attention, likely because they are in important ways more tractable. In most animals\u2019 central nervous systems, however, many circuits respond to stimuli of multiple sensory modalities or control more than one behavior (Briggman and Kristan, 2008). Increasingly, even sensory brain areas once considered unimodal are found to be modulated by or to directly respond to other sensory modalities, or to be modulated by behavioral state. For instance, auditory stimuli can modulate activity in the human visual cortex (Plass et al., 2019) (in sighted as well as in blind subjects [Bedny et al., 2015]). Likewise, motor cortex activity can be modulated not just by visual presentation of images of relevant body parts, but even in a working memory task in the absence of immediate stimuli (Galvez-Pol et al., 2018). All these forms of multifunctionality likely contribute to the versatility of large brains like ours and may help smaller animals use their more constrained neural hardware more efficiently (Briggman and Kristan, 2008).\n\nA particularly interesting situation occurs when multifunctional circuits converge onto a single motor neuron which plays distinct roles in different behaviors (Miroschnikow et al., 2018; Zarin et al., 2019). What functional and anatomical aspects of the converging pathways permit the output neuron to play its various roles? Control of locomotion in the medicinal leech (Hirudo verbana) is a prime example of a system organized in this manner. In each of the animal\u2019s segmental ganglia, partially overlapping circuits generate the rhythms for swimming and crawling as well as the dynamics of an escape behavior known as the local bend (Kristan et al., 2005; Briggman et al., 2005; Tomina and Wagenaar, 2017). These circuits have a common output in a motor neuron called DE-3 that excites the animal\u2019s dorsal longitudinal muscles. DE-3 plays markedly different dynamical roles in each of the behaviors: In swimming, it oscillates at a relatively rapid 2 Hz in antiphase to its Ventral Excitor counterpart (VE-4) and controls the local dorsal flexion phase of the swim rhythm. In crawling, it is active in phase with VE-4 and controls the contraction phase of the crawl rhythm. In \u2018local bending\u2019 it operates in tight concert with its contralateral homolog as well as VE-4 to precisely deform the local body wall away from a mechanical stimulus.\n\nTo study the mechanisms underlying the versatility of multifunctional circuits, one would ideally like to record from every single neuron in a nervous system during all of the behaviors the animal can execute, and then reconstruct the anatomical connections between those neurons. Once a mere dream, this is rapidly becoming practicable: Activity imaging using calcium dyes has advanced to the point where simultaneous recordings from the vast majority of individual neurons in smaller species can be accomplished, for instance in larval zebrafish (Ahrens et al., 2013). This technique has even been applied to behaving animals (Jiao et al., 2018). Likewise, anatomical imaging using electron microscopy (EM) has advanced to the point that brains as large as that of the fruit fly Drosophila melanogaster can be imaged\u2014and substantial fractions of their circuitry reconstructed\u2014at a synaptic resolution (Zheng et al., 2018; Bates et al., 2020; Scheffer et al., 2020; Maniates-Selvin et al., 2020). Even small vertebrate brains like that of larval zebrafish are yielding to this approach (Hildebrand et al., 2017).\n\nTo bring form and function together, an anatomical atlas based on electron microscopy can be combined with functional studies that use the split-GAL4 system to target individual neurons and identify them with neurons in the anatomical map (Eichler et al., 2017; Eschbach et al., 2020). This is an immensely powerful approach because a single (costly and time consuming) EM run can be used with an unlimited number of functional studies. However, cross-identification of neurons between EM and functional imaging in this approach is ultimately limited by the fact that all nervous systems, even the simplest ones, exhibit considerable variability in their connectomes (Bhattacharya et al., 2019). Accordingly, robustly linking function to connectivity requires a combined anatomical and functional assessment within the same animal (Bargmann and Marder, 2013). Nearly a decade ago, back-to-back papers in Nature described two-photon calcium imaging in the mouse visual cortex followed by serial transmission electron microscopy of a small volume of that same cortex (Bock et al., 2011) and two-photon calcium imaging in the mouse retina followed by serial block face electron microscopy of that same retina (Briggman et al., 2011). This approach, \u2018Correlated Light and Electron Microscopy\u2019 or CLEM (de Boer et al., 2015), has since allowed the quantification of synaptic connections between functionally identified neurons that control eye movement in the larval zebrafish (Vishwanathan et al., 2017), a reconstruction of the connections in the olfactory bulb of another larval zebrafish in which neural responses to eight different odors had been recorded prior to sectioning (Wanner and Friedrich, 2020), and a critical re-assessment of the mechanisms of selectivity to particular sensory features in neurons of the mammalian visual cortex (Scholl et al., 2019).\n\nFor the present study of multifunctional behavioral circuits, we chose to use a voltage-sensitive dye (VSD) (Grinvald and Hildesheim, 2004; Kulkarni and Miller, 2017) rather than a calcium dye because it can capture faster temporal dynamics, potentially even recording individual action potentials, as well as both excitatory and inhibitory synaptic potentials. We used a fast, high-sensitivity VSD (Woodford et al., 2015) to record the neuronal activity in a segmental ganglion of the medicinal leech Hirudo verbana while its nervous system expressed several (fictive) behaviors. Then, to map the circuits underlying those behaviors with synapse-level resolution, we re-imaged the same individual ganglion using serial blockface electron microscopy (SBEM) (Lippens et al., 2019). Finally, we traced the full arborization of the DE-3 motor neuron and the relevant parts of all its presynaptic partners, to enable comparison between functional and anatomical features of the circuit. Figure 1 illustrates the overall approach. To our knowledge, this is the first time VSDs and SBEM have been combined at this scale.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig1-v3.jpg)\n\n**Figure 1.:** Several fictive behaviors were induced in the isolated nervous system of a medicinal leech while one segmental ganglion was imaged using a voltage-sensitive dye. After fixation and resin embedding, the ganglion was X-ray-imaged to verify that the geometry of somata was preserved. Finally, the neuropil was imaged at nanometer resolution with serial blockface electron microscopy and selected neurons were manually traced. Scale bars: 1 cm (leech photograph); 100 \u03bcm (all others).\n\n## Results\n\n### Voltage-dye imaging of behavior\n\nThe nervous system of the leech comprises cephalic ganglia, a tail ganglion, and 21 nearly identical segmental ganglia connected by a ventral nerve cord (Muller et al., 1981; Wagenaar, 2015). Each ganglion consists of about 400 neurons (Macagno, 1980) with cell bodies arranged in a spherical monolayer around a central neuropil. In the neuropil, neurons communicate through chemical and electrical synapses located along extensively branched neurites (Muller and McMahan, 1976; Fan et al., 2005; Pipkin et al., 2016). The leech is an ideal model organism for this type of work, because it robustly expresses several behaviors even in reduced preparations (Kristan et al., 2005), its neurons are uncommonly accessible to physiological recording, and its cell bodies are relatively large and thus yield strong VSD signals (Briggman et al., 2005). Crucially, an individual segmental ganglion is a good stand-in for a whole nervous system, because its neurons capture the entire pathway from sensory input through self-generated interneuronal rhythms to motor output (Kristan et al., 2005), which is why we focused our imaging efforts there.\n\nWe expressed (fictive) swimming, crawling, and local bending behavior in the isolated nervous system of a single adult leech following the same protocol used for a previous extensive study of these behaviors using VSD imaging in a larger group of animals (Tomina and Wagenaar, 2017). As in the previous study, one segmental ganglion in the chain was prepared for VSD imaging and we recorded from both the ventral and dorsal aspects simultaneously with a double-sided fluorescence microscope (Figure 2a). We were able to record from 250 neurons simultaneously, similar to our previous results. Fictive swimming was induced by electrical stimulation of a posterior segment, which resulted in characteristic rhythmic activity in dorsal motor neurons and many other neurons on both sides of the ganglion (Figure 2b). Coherence analysis confirmed that the rhythms of the various neurons were indeed related to the fictive behavior (Figure 2c,d). In a similar manner, we induced fictive crawling (Figure 3) and local bending (Figure 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig2-v3.jpg)\n\n**Figure 2.:** (a) Images of the dorsal (left) and ventral (right) aspects of a leech ganglion simultaneously obtained using a double-sided microscope. \u2018R\u2019 indicates the right side of the ganglion (i.e., the animal\u2019s right when dorsal side up). (b) Selected VSD traces during fictive swimming. From the dorsal surface: dorsal and ventral inhibitory and excitatory motor neurons DI-1, VI-2, DE-3, and VE-4; from the ventral surface: the Retzius cells (neuromodulatory interneurons) and cell 153L (an interneuron). All those cells are known to be rhythmically active during swimming. Also shown is CVL, an excitor of ventrolateral circular muscles that was intracellularly recorded during the trial as a control to verify that fluorescence signals reflect membrane potential changes as they should. Scale bars: 0.2% relative fluorescence change, 5 mV membrane potential change. (c) Magnitude (radial axis from 0 to 1) and phase (angular coordinate) of the coherence of activity in individual neurons with the swim rhythm in motor neuron DE-3R. Error bars indicate confidence intervals based on a multi-taper estimate. (d) Coherence maps of the VSD signals of all cells on the dorsal (left) and ventral (right) surfaces of the ganglion. Colors of cell bodies indicate coherence relative to DE-3R. The yellow needle on CVL indicates a sharp electrode for intracellular recording. Color scale applies to all panels.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig3-v3.jpg)\n\n**Figure 3.:** (a) Selected VSD traces during fictive crawling. From the dorsal surface: dorsal and ventral inhibitory and excitatory motor neurons DI-1, VI-2, DE-3, and VE-4; from the ventral surface: the Retzius cells and CV cells. All those cells are known to be rhythmically active during crawling. Below the VSD traces, a simultaneously recorded intracellular trace of the annulus erector motor neuron AER is displayed (in both columns). Scale bars: 0.2%, 10 mV. Gray lines mark hyperpolarized phase of AER. (b) Magnitude and phase of the coherence of activity in individual neurons with the crawl rhythm in motor neuron DE-3R. (c) Coherence maps of the VSD signals of all cells on the dorsal (left) and ventral (right) surfaces of the ganglion. Colors of cell bodies indicate coherence relative to DE-3R. The yellow needle on AER indicates a sharp electrode for intracellular recording. Color scale applies to all panels.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig4-v3.jpg)\n\n**Figure 4.:** (a) Selected VSD traces during fictive local bending. From the dorsal surface: dorsal and ventral inhibitory and excitatory motor neurons DI-1, VI-2, DE-3, and VE-4; from the ventral surface: the Retzius cells, \u2018Anterior Pagoda\u2019 cells (\u2018AP\u2019; well-known postsynaptic partners of the P cells with unknown function). Below the traces, a simultaneously recorded intracellular trace of the PVL cell is displayed with injected current trains (in both columns). Scale bars: 0.2% relative fluorescence change, 100 mV membrane potential change, 2 nA injected current. (b) Magnitude and phase of the coherence of activity in individual neurons with the local bend rhythm in DE-3R. (c) Coherence maps of the VSD signals of all cells on the dorsal (left) and ventral (right) surfaces of the ganglion. Colors of cell bodies indicate coherence relative to DE-3R. A yellow needle on PVL indicates a sharp electrode for electrical stimulation. Note that PVL was only weakly stained by the VSD because it was left partially covered with sheath tissue to preserve its health.\n\nWe established a mapping between the neurons seen in the VSD images and the canonical maps of the ganglion (Wagenaar, 2017) based on geometry and on the involvement of the neurons in the various behaviors.\n\n### X-ray tomography connects functional and anatomical image stacks\n\nAt the end of the (fictive) behavior experiment, the ganglion was fixated and embedded in a resin. To correlate light and electron microscopy, we then re-imaged the ganglion using X-ray tomography (Bushong et al., 2015) and verified that the cell bodies seen in the VSD images could still be identified (Figure 5a). The X-ray image stack was also used to trace neuronal processes from the somata to the edge of the neuropil (Figure 5b). This obviated the need to capture the somata in the subsequent electron microscopy, and instead allowed us to restrict the EM effort largely to the neuropil.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig5-v3.jpg)\n\n**Figure 5.:** (a) Light micrograph (left) and X-ray image (right) of the ganglion in which we recorded neuronal activity using a VSD. Matching colors label the same cells on the two images. A: Anterior, P: Posterior, L: Left, R: Right. (b) Transverse section from X-ray tomographic image stack of the ganglion (top). Only the shaded area was imaged with SBEM (bottom). Arrowheads mark several somata that are (white) or are not (red) included in the SBEM volume. Circles mark neurites that facilitated complete mapping between the two imaging modalities. D: Dorsal, V: Ventral. Note that the X-ray image in (b) is shown in reverse video relative to the x-ray image in (a) for easier visual comparison with the SBEM image.\n\n### Electron microscopy\n\nWe chose serial blockface electron microscopy (SBEM) over serial-section transmission EM (Harris et al., 2006) because SBEM can reliably process large numbers of slices with much lower risk of sectioning artifacts. We acquired 78,803 images from 9604 slices, totaling 22.8 terapixels. We periodically paused the acquisition to adjust the imaging area so as to include the entirety of the neuropil but not too much additional space.\n\n### Tracing a motor neuron and all its synaptic inputs\n\nWe manually traced motor neuron DE-3R, a key motor neuron for all the behaviors included in our functional data set. The combined path length of the entire arborization of DE-3R was 6,109 \u03bcm (Figure 6a,b; Figure 7a). In addition to tracing the neuron, we marked all of its input synapses and then traced each of its presynaptic partners to their somata. Several visually distinct types of synapses were found, among which most prominently: (1) bright terminals with large dark vesicles (Figure 6c) and (2) darker terminals with smaller vesicles that occurred mainly in fiber endings and varicosities (Figure 6d). The small vesicles are barely resolved in our data set and appear merely as fields of granules. We used TEM on thin slices of a second ganglion to confirm our interpretation of these granules as vesicles (Figure 6\u2014figure supplement 1). No attempt has been made as of yet to interpret the anatomically distinct types of synapses as physiological classes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-v3.jpg)\n\n**Figure 6.:** (a) The principal neurite of DE-3R near its entrance to the neuropil (dashed yellow outline). (b) Two branches of the neurite of DE-3R (dashed outlines). (c) A synaptic connection onto DE-3R from an inhibitory motor neuron (DI-1R). Arrowheads: synapses, Pre: presynaptic terminal, v: vesicles. (d) A synapse onto DE-3R from an interneuron (cell 24 on the canonical map [Wagenaar, 2017]).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Our interpretation of a small section of our SBEM image: a process of cell DE-3 (yellow) and a presynaptic partner (purple). (b) Same area without overlay. Arrowhead: synapse. Stars: Mitochondria. (c) A similar area imaged with TEM (from a ganglion from another leech). (d) Same area as (c), computationally blurred (radius: 15 \u03bcm) to simulate the lower resolving power of SEM.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Average based on four representive 2048 \u00d7 2048 pixel regions from the volume.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig6-figsupp3-v3.jpg)\n\n![Figure 7.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig7-v3.jpg)\n\n**Figure 7.:** (a) Fully reconstructed arborization of DE-3R overlaid on a dorsal projection and a transverse section of the micro-CT data. (b) A selection of presynaptic partners with previously known identities. (c) A selection of presynaptic partners not matched to neurons previously described in the literature. (Top row: cell bodies on dorsal aspect; bottom row: cell bodies on ventral aspect of the ganglion.) Other cells in this category are 20R, 25R, 154R, 156L. Numbers in parentheses are number of synapses between each cell and DE-3R.\n\nWe identified 531 synapses onto DE-3R. Of these, 44 were formed by cells with somata in neighboring ganglia that were not included in our EM volume (Figure 6\u2014figure supplement 3). Of the rest, 387 could be traced to their somata with a high degree of confidence. To avoid false positives, we only considered presynaptic neurons that formed at least two synapses onto DE-3R. There were 51 of those. Of those, 35 could be confidently matched to cell bodies seen in the VSD record, and of those, 10 could be confidently matched to specific identified neurons on the canonical map with previously described functions (Figure 7b and Table 1). For the others, we assigned previously unused cell numbers from the canonical map (Wagenaar, 2017) based on soma location and size (Figure 7c). (If there were no unused cell numbers in the vicinity, we reused a previously used cell number but placed a question mark in the figure to indicate that we do not know if our cell and the previously described cell are the same.) The figure also shows some of the cells that we could not confidently link to the VSD record. We did not assign preliminary numbers to those. Our complete tracing results of DE-3R and its synaptic partners are shown in Figure 8 and Video 1.\n\n**Table 1.**\n Identified partner neurons of DE-3R.These synaptic partners could be confidently assigned as previously described neurons.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell</th>\n      <th>Synapse count</th>\n      <th>Known function</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DI-1L</td>\n      <td>4</td>\n      <td>Inhibitor of dorsomedial longitudinal muscles</td>\n    </tr>\n    <tr>\n      <td>DI-1R</td>\n      <td>52</td>\n      <td>Inhibitor of dorsomedial longitudinal muscles</td>\n    </tr>\n    <tr>\n      <td>VI-2R</td>\n      <td>2</td>\n      <td>Inhibitor of ventral longitudinal muscles</td>\n    </tr>\n    <tr>\n      <td>8R</td>\n      <td>13</td>\n      <td>Excitor of ventral longitudinal muscles</td>\n    </tr>\n    <tr>\n      <td>101R</td>\n      <td>2</td>\n      <td>Inhibitor of dorsoventral muscles</td>\n    </tr>\n    <tr>\n      <td>102R</td>\n      <td>6</td>\n      <td>Inhibitor of dorsal longitudinal muscles</td>\n    </tr>\n    <tr>\n      <td>107R</td>\n      <td>12</td>\n      <td>Excitor of dorsomedial longitudinal muscles</td>\n    </tr>\n    <tr>\n      <td>109R</td>\n      <td>7</td>\n      <td>Excitor of lateral dorsoventral muscles</td>\n    </tr>\n    <tr>\n      <td>117R</td>\n      <td>16</td>\n      <td>Excitor of medial dorsoventral muscles</td>\n    </tr>\n    <tr>\n      <td>LR</td>\n      <td>3</td>\n      <td>Excitor of dorsal and ventral longitudinal muscles</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 8.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig8-v3.jpg)\n\n**Figure 8.:** Partners that we could identify with cells in the VSD recording are marked with (arbitrary) colors. Small gray disks indicate partner neurons that could not be cross-identified between EM and VSD image stacks.\n\n![Video 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-video1.mp4.jpg)\n\n**Video 1.:** Back tracings of all DE-3R\u2019s presynaptic partners to their somata (0:05 to 0:12). Rotational view of the completed tracing (0:12 to 0:15).\n\n### Linking form to function\n\nThe availability of both functional (VSD) and anatomical (SBEM) information from the same individual ganglion allowed us to ask questions that relate form to function. First we asked whether there was a relationship between the overal functional strength of involvement of presynaptic partners and the number of synapses they make onto DE-3R. We thus calculated the correlation coefficients between synapse count and the previously obtained coherence magnitudes of the synaptic partners in each of the behavioral trials (see Figures 2, 3 and 4). On average across the eight trials in our data set, this correlation was 0.16 \u00b1 0.12 (mean \u00b1 SD; t = 3.41; p = 0.011; two-tailed t-test), even though none of the individual correlation coefficients was statistically significant (Figure 9). To test whether these results were robust, we replaced the synapse count by a \u2018proximity weight\u2019 (see Materials and methods) and repeated the analysis. This yielded similar results: The average across trials of the correlation coefficients was again significantly positive (two-sided t-test, t = 2.77, p = 0.028, n = 8).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig9-v3.jpg)\n\n**Figure 9.:** (a) Scatter plot of synapse count vs coherence magnitude during swimming for presynaptic partners with at least two synapses, with linear regression line (data from swim trial #1, R = 0.26, p = 0.20, n.s.). (b) Same for crawling (data from crawl trial #1, R = 0.38, p = 0.05, n.s.). (c) Correlation coefficients for all trials (left) and when raw synapse count was replaced by proximity weight (right; see Materials and methods).\n\nNext, we asked whether synapses with different valences (excitatory or inhibitory) were differently distributed along the arbors of DE-3R. Excitation and inhibition rely on different physiological processes and have asymmetric effects on cell membrane potential. Accordingly, one might expect that excitatory and inhibitory cells synapse onto their target cells in distinct spatial patterns. For instance, to achieve shunting inhibition, inhibitory synapses would have to be located close to the target cell\u2019s spike initiation zone. We therefore considered all the input synapses onto DE-3R from neurons with previous descriptions in the literature, and annotated them as either excitatory or inhibitory (Figure 10a). Presynaptic neurons for which no previous description as excitatory or inhibitory was found were annotated as 'unknown'. The spatial distributions of excitatory and inhibitory synapses were not found to be different from the other (\u2018unknown\u2019) synapses, either when distance was measured to the soma (Figure 10b), or when it was measured to the primary neurite (Figure 10\u2014figure supplement 1a) of the postsynaptic tree.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig10-v3.jpg)\n\n**Figure 10.:** (a) Distribution of excitatory and inhibitory synapses. (b) Histogram of the length of the paths between those synapses and the soma. (c) Distribution of synapses more strongly associated with a certain behavior. (d) Histogram of the length of the paths between those synapses and the soma (LB: Local bend).\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig10-figsupp1-v3.jpg)\n\n**Figure 10\u2014figure supplement 1.:** (a) Path length for excitatory vs inhibitory synapses. (b) Path lengths for synapses from neurons more strongly associated with a certain behavior.\n\nIn the same vein, we started from the premise that motor neuron DE-3R, as an output neuron of a multifunctional circuit, must integrate a diverse set of inputs in a flexible manner to accurately generate distinct behaviors. This versatility requires a dynamic functional reorganization of the underlying structural circuit. The question hence arises what the principles governing this dynamic reorganization are. We considered whether the anatomy of DE-3R facilitates reading out the different patterns of synchronicity in its presynaptic partners during different behaviors.\n\nWe first looked at all neurons that we could cross-reference between EM and VSD recordings (regardless of whether the function of those neurons had previously been described) and, for each of the three behaviors, selected the cells that exhibited the highest coherence with DE-3R in that behavior (see Materials and methods). We asked whether cells associated in that way with a specific behavior would form synapses in specific locations, but found that was not the case at the macroscopic scale (Figure 10c,d and Figure 10\u2014figure supplement 1b).\n\nThe absence of an obvious modular organization of DE-3R at the cellular scale leaves open the possibility of structure at the synaptic scale exists that relates to the different behaviors. To test that idea, we asked whether synchronously active presynaptic partners form synapses onto DE-3R that are spatially clustered. Such spatial clustering of synapses of synchronized cell assemblies has been previously observed in other model organisms (Takahashi et al., 2012; Varga et al., 2011).\n\n**Table 2.**\n Frequency of clusters of different sizes for clustering parameters (dNN, dext) = (5 \u00b5m, 65 \u00b5m), the parameters that gave the largest F-ratio for the swim trials.Synapse count: Number of synapses in a cluster. Frequency: Number of clusters with the respective synapse count. Number of presynaptic partners: Number of unique presynaptic neurons contributing to the synapses in the respective clusters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Synapse count</th>\n      <th>Frequency</th>\n      <th>Number of presynaptic partners</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2</td>\n      <td>9</td>\n      <td>1 (6x), 2 (3x)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>4</td>\n      <td>1 (1x), 2 (3x)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>1</td>\n      <td>1 (1x)</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>2</td>\n      <td>2 (2x)</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>1</td>\n      <td>2 (1x)</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>2</td>\n      <td>2 (1x), 3 (1x)</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>3</td>\n      <td>3 (1x), 4 (2x)</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>1</td>\n      <td>3 (1x)</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>1</td>\n      <td>3 (1x)</td>\n    </tr>\n    <tr>\n      <td>23</td>\n      <td>1</td>\n      <td>6 (1x)</td>\n    </tr>\n  </tbody>\n</table>\n\nOur spatial clustering algorithm had two free parameters: the maximum allowable distance between nearest neighbor synapses (dNN) and the maximum overall cluster extent (dext); see inset to Figure 11b and Materials and methods. Findings from in vivo and in vitro studies have shown that neighboring synapses that are less than 12\u201316 \u03bcm apart are more likely to be synchronized than synapses farther apart (Kleindienst et al., 2011; Winnubst et al., 2015) and that local synaptic plasticity mechanisms act on similar spatial scales (5\u201310 \u00b5m; Harvey and Svoboda, 2007). We used these findings to delineate biologically plausible ranges for our parameters: We explored maximum nearest-neighbor distances (dNN) between 5 and 25 \u00b5m, and maximum spatial extents (dext) between 10 and 100 \u00b5m; the extended upper bounds relative to the literature allowed for a thorough assessment of possible clusters of synapses with synchronized activity.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-v3.jpg)\n\n**Figure 11.:** (a) Tracing of DE-3R with synapses (arbitrarily) colored by presynaptic partner. (b) Clusters (elliptic areas) associated with synchronized synapses for a swimming trial (top) and a crawling trial (bottom). Within the same connectome, clusters of synchronized synapses differ with respect to their spatial extent for the two behaviors: During swimming, synchronization extends over larger areas along the neurite than during crawling. Shown are synaptic clusters obtained with parameter values (dNN, dext) = (5 \u03bcm, 65 \u03bcm) for swimming and (dNN, dext) = (7.5 \u03bcm, 15 \u03bcm) for crawling, respectively. Synapses are colored by the coherence between the activity of their presynaptic partner and DE-3R during the behaviors (as in Figure 2) and clusters are colored by the average coherence of their constituent presynaptic partners. Inset: Explanation of clustering parameters (see Materials and methods). (c) All clustering results for swim and crawl trials. Color indicates the degree of correspondence between spatial clusters and functional grouping expressed as an F-ratio from complex ANOVA (see Materials and methods) as a function of clustering parameters.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-figsupp1-v3.jpg)\n\n**Figure 11\u2014figure supplement 1.:** Out of the four trials, the first three involved stimulation of the left PV cell; the final trial involved stimulation of the right PV cell. In contrast to the swim and crawl trials (Figure 10b), the clustering results for local bend trials are inconsistent.\n\n![Figure 11\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-figsupp2-v3.jpg)\n\n**Figure 11\u2014figure supplement 2.:** These graphs represent slices through the data shown in Figure 11c, vertically through the highest peak in the parameter space. Lines are Gaussians fitted through the data; see Materials and methods.\n\n![Figure 11\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig11-figsupp3-v3.jpg)\n\n**Figure 11\u2014figure supplement 3.:** (a) Synthetic data where the coherence of a neuron\u2019s activity (location of each dot) is unrelated to its membership in a spatially defined cluster (color), hence F = 1. (b) Synthetic data where such a relationship does exist, hence F > 1. See Materials and methods.\n\nAt all points in this parameter space, the algorithm identified a multitude of synaptic clusters on the neurites of DE-3R. Most of these clusters contained synapses from multiple partner neurons (Tables 2 and 3).\n\n**Table 3.**\n Frequency of clusters of different sizes for clustering parameters (dNN, dext) = (7.5 \u00b5m, 15 \u00b5m), the parameters that gave the largest F-ratio for the crawl trials.Columns as in Table 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Synapse count</th>\n      <th>Frequency</th>\n      <th>Number of presynaptic partners</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2</td>\n      <td>28</td>\n      <td>1 (23x), 2 (5x)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>11</td>\n      <td>1 (7x), 2 (4x)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>9</td>\n      <td>1 (4x), 2 (5x)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>2</td>\n      <td>1 (2x)</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>2</td>\n      <td>2 (2x)</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>3</td>\n      <td>1 (1x), 2 (1x), 3 (1x)</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>1</td>\n      <td>3 (1x)</td>\n    </tr>\n  </tbody>\n</table>\n\nSince the mere observation of spatial clusters does not demonstrate their functional relevance, we searched through the parameter space of the clustering algorithm to find parameter values that resulted in clusters in which the participating neurons shared commonalities in their activity during various behaviors. This was quantified as an \u2018F-ratio\u2019 (see Materials and methods) that captured the degree to which neurons in a spatial cluster also formed functional clusters in the coherence plot for a given behavior (Figure 2c, Figure 3c). The overall procedure is outlined in Box 1.\n\nIn all but one trial, parameter ranges could be identified for which spatial clusters indeed corresponded to functional groupings (Figure 11b). We used a least-squares fit approach to find the location in parameter space of the strongest correspondence (Figure 11c, Figure 11\u2014figure supplement 2, and Materials and methods). In the two swim trials, the peaks were located at dext = 61 \u00b1 2 \u03bcm and 65 \u00b1 2 \u03bcm respectively; in the two crawl trials at 14 \u00b1 15 \u03bcm and 18 \u00b1 3 \u03bcm. In summary, functionally relevant spatial clusters during swimming were governed by very different parameter values than during crawling.\n\n## Discussion\n\nWe combined voltage-sensitive dye imaging with serial blockface electron microscopy to obtain a comprehensive recording of neuronal activity at the scale of an entire leech ganglion along with a full record of the anatomy of that same ganglion.\n\nThe use of a fast and sensitive VSD (Woodford et al., 2015) allowed us to record even small membrane potential fluctuations from somata. Those signals included both subthreshold excitatory and inhibitory synaptic potentials that could not have been detected by calcium imaging. Conversely, SBEM (Denk and Horstmann, 2004) allowed us to image the entire neuropil with sufficient resolution to visualize even thin neurites through much of the volume.\n\nWithin this vast dataset, we have focused on a neuron that plays three very distinct dynamic roles in different behaviors: motor neuron DE-3R, a main excitatory motor neuron of the dorsal longitudinal muscle, as well as its presynaptic partners (Stent et al., 1978). We reconstructed its arborization and traced its presynaptic partners back to their somata (up to the limits enabled by our SEM images, see Figure 6 and supplements). Thus, we generated a detailed map of the output stage of a multifunctional circuit that controls many of the animal\u2019s main forms of gross body movement, including swimming, crawling, and the local bend escape.\n\nThe reconstructed morphology of DE-3R was in accordance with previous light microscopic studies in adult (Norris and Calabrese, 1987; Fan et al., 2005) and electron microscopy in a juvenile ganglion (Pipkin et al., 2016): its primary neurite emerged from the soma laterally and traveled toward the ipsilateral roots before making a 180\u00b0 turn to run laterally across the ganglion. Our tracing revealed 531 synapses onto DE-3R. This was in the same range as the numbers previously reported for a juvenile ganglion (437 and 650) (Pipkin et al., 2016). Unlike Pipkin et al., 2016, we did not find any output synapses from DE-3R onto other cells in the ganglion. Several of the input synapses we found were from presynaptic partners that had previously been reported (Ort et al., 1974; Wagenaar, 2017) based on paired electrophysiological recordings. We focused here on chemical synaptic connections, since SBEM does not yet allow for the identification of gap junctions. However, electrical synapses between DE-3R and their contralateral homologs as well as some interneurons do exist (Fan et al., 2005). Work on molecular markers of electrical synapses that do not require expression of a particular connexin (Shu et al., 2011) may overcome this hurdle in the foreseeable future.\n\nIn previous reports, 21 neurons (including bilateral homologues) were found to be monosynaptically connected to the DE-3R motor neuron (Figure 12). Of those, four (bilateral DI-1, 107, and L) were matched to the presynaptic partners seen in the VSD imaging and identified with sufficient confidence. The other neurons previously reported were not confidently matched to presynaptic partners found here. Six other new partners were confidently identified (VI-2, 8, 101, 102, 109, and 117), and a further 41 synaptic partners of DE-3R could not be confidently identified with any previously described neuron, mainly because our limited tracing did not allow a morphological identity match. With additional tracing, many of those remaining neurons could possibly be assigned to other previously reported presynaptic neurons shown in Figure 12.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/61881/elife-61881-fig12-v3.jpg)\n\n**Figure 12.:** The diagram shows synaptic connections onto DE3, including newly found presynaptic neurons in this study (yellow) and previously known ones (green if also found in this study; white otherwise). Only confidently identified neurons shown in Figure 7 and Table 1 are represented as \u2018found.\u2019 Other presynaptic partners found but not positively identified in this study are not shown here. This diagram does not depict whether connections are ipsi- or contralateral.\n\nThe activity patterns observed during all three fictive behaviors exhibited by the single leech in this study (Figures 2, 3 and 4) matched observations from a larger group of animals reported before (Tomina and Wagenaar, 2017): The majority of neurons in the ganglion were phasically active during multiple behaviors, indicating substantial but not complete overlap between the circuits that govern the behaviors (Briggman and Kristan, 2006). There is considerable variation in the coherence values of specific cells between animals, but the data here fall within the range of values seen before. We conclude that the leech used in this study was representative of its species.\n\nOverlaying the anatomical and activity images (Figure 5) and comparing with the established canonical maps of the ganglion (Wagenaar, 2017) allowed us to address form\u2013function relationships. For instance, our own data allowed us to ask whether neurons that are more strongly associated with a particular behavior than with others formed synapses onto the output motor neuron that were spatially localized. Such an arrangement would indicate a modular organization of the motor neuron\u2019s processes (London and H\u00e4usser, 2005). However, we found no evidence of such organization in DE-3R (Figure 10c,d) other than a slight trend that swim-associated synapses tended to be located closer to the primary neurite (Figure 10\u2014figure supplement 1b). Since most presynaptic partners are multifunctional, the pre-motor network undoubtedly plays an important role in generating distinct motor patterns.\n\nWe also asked whether synapses with a particular valence (excitatory or inhibitory) were differently distributed along the tree, which would likewise have implications for possible models of computation in the cell (Saha and Truccolo, 2019). Thanks to an extensive body of previously published electrophysiological recordings from the leech ganglion, the valence of many of DE-3R\u2019s presynaptic partners is known, allowing us to visualize the spatial distributions of excitatory and inhibitory synapses separately (Figure 10a). However, we found no obvious differences between the two classes of synapses (Figure 10b, Figure 10\u2014figure supplement 1a).\n\nThe lack of macroscopic organization of functionally related synapses does not imply that the spatial arrangement of synapses on the tree has no functional relevance. Indeed, the limited experimental evidence currently available suggests that even clusters of two synapses are functionally relevant in the mammalian cortex (Takahashi et al., 2012; Fu et al., 2012). Findings from computational (Poirazi and Mel, 2001) and in vitro studies (Losonczy and Magee, 2006; Nevian et al., 2007) suggest that individual dendritic branches act as integrative compartments and that spatial synaptic clusters facilitate nonlinear dendritic integration. These results imply that connectivity has to be specific with respect to individual dendritic branches. Such a precision could arise through spontaneous neural activity where synaptic clusters are established by a branch-specific 'fire-together-wire-together' rule (Kleindienst et al., 2011).\n\nWe therefore applied a spatial clustering algorithm to the input synapses on DE-3R and asked whether the clusters identified by that algorithm also stand out as functionally significant groupings. Indeed, we found a set of parameter values for which synapses within spatial clusters also clustered in the phase space of the swim rhythm and a different set of parameters for which synapses within spatial clusters also clustered in the phase space of the crawl rhythm (Figure 11b,c). Results were highly consistent between trials of the same behavior. (The results of clustering were not consistent among local bending trials. This may stem from a nature of this reflex behavior: the responsiveness of the population of neurons involving pressure sensation is variable, reflecting the plasticity of the circuit (Crisp and Burrell, 2009).)\n\nEarlier work relied on light microscopy and could therefore not identify presynaptic partners. In contrast, our use of SBEM allowed us to assess such connection specificity based on individually identified synapses. Our findings confirm previous observations on the synchrony of proximal synapses (Kleindienst et al., 2011; Takahashi et al., 2012). An attractive interpretation of our results is that the clusters are the loci where inputs from synchronized presynaptic cell assemblies are integrated (Briggman and Kristan, 2008). In agreement with earlier reports (Kleindienst et al., 2011), the strongest correspondence between spatial clusters and activity patterns was observed when synaptic clusters were defined by a maximum distance between nearest neighbors (dNN) of up to 10 \u00b5m.\n\nComputational and in vitro studies indicate that 10\u201320 synchronized inputs are required to trigger dendritic spikes (Ujfalussy and Makara, 2020). Existing in vivo studies, however, have found synchrony in only up to five neighboring dendritic spines, making it unclear what the impact of the synaptic clusters on the membrane potential of the posysynaptic neuron might be. The smaller number derived from in vivo conditions might stem from the limitations of experimental methods. Indeed, our results indicate that clusters of up to 23 synaptic members can display synchronous activity. Further work is required, however, to elucidate the role of synaptic clusters in vivo or ex vivo on the membrane potential of the postsynaptic neuron under different experimental conditions.\n\nAdditional studies complementing our data are also required to more fully understand the mechanisms underlying synaptic integration in motor neurons like DE-3R. For instance, single-cell voltage imaging (Kuhn and Roome, 2019) and voltage clamp using sharp electrodes on neurites (Laurent, 1993; Takashima et al., 2006) would help determine where in the neurites active propagation of membrane potentials is supported and thus lead to a better understanding of how postsynaptic potentials as well as action potentials propagate through the tree. As it stands, we only have voltage data from the soma. Leech neurons\u2014along with most neurons in the central nervous systems of other annelids, arthopods, and molluscs\u2014have a unipolar morphology with the somata strictly segregated from neuropil (Bullock and Horridge, 1965). With notable exceptions (including sensory neurons in the leech and select insect motorneurons [Hancox and Pitman, 1992]), these somata are thought to play a relatively minor role in the integration of synaptic inputs to action potential outputs (Andjelic and Torre, 2005).\n\nEven so, the completeness of our functional dataset in combination with our anatomical data makes for an attractive basis for simulation studies to arrive at a computational understanding of multifunctional neuronal circuits (Real et al., 2017). Our data may also serve as a large-scale ground truth for EM segmentation algorithms (Plaza and Funke, 2018). This study not only represents an important step in a combined approach to studying multifunctional circuits at the synaptic level, but also lays the groundwork for a comprehensive neuronal mapping of a whole ganglion that semi-autonomously processes local sensory information and controls segmental movement.\n\nThe combination of anatomical methods with synaptic resolution and imaging techniques that can record from the entirety of the neurons of a circuit promises an extraordinary opportunity to assess neural computations at the level of circuit dynamics. Functional maps (Alivisatos et al., 2012) from recorded activity combined with anatomical connectomes (Denk et al., 2012; Bargmann and Marder, 2013; Morgan and Lichtman, 2013) are therefore poised to become a powerful tool not only to have a better understanding of complex behaviors, but also to predict the outcomes of new manipulations Devor et al., 2013; Kandel et al., 2013; Wang et al., 2013. This new addition with the annelid species to the developing field would also pave the way for comparative approaches by functional connectomics to study evolutionary aspects of neuronal design (Laurent, 2020).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Hirudo verbana)</td>\n      <td>Wild-type background</td>\n      <td>Niagara Leeches</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other (voltage- sensitive dye)</td>\n      <td>VF2.1(OMe).H</td>\n      <td>Woodford et al., 2015</td>\n      <td></td>\n      <td>Courtesy Miller lab</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SBEMAlign</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://github.com/wagenadl/sbemalign; Wagenaar, 2021a;copy archived at swh:1:rev:d76dcc55e7dad3e7bca91de24d20d201696a5339</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SBEMViewer</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://github.com/wagenadl/sbemviewer; Wagenaar, 2021b;copy archived at swh:1:rev:8f8d3d2bcae39e165993d9e11ffe173640b940db</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GVox</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://github.com/wagenadl/gvox; Wagenaar, 2021c;copy archived at swh:1:rev:5e7ccd2273caed49bac3e09ca39de68a0b182fc5</td>\n    </tr>\n  </tbody>\n</table>\n\n### Dissection and voltage-sensitive dye imaging\n\nDetailed procedures have been described before (Tomina and Wagenaar, 2018). Briefly, leeches (Hirudo verbana, obtained from Niagara Leeches, Niagara Falls, NY) were maintained on a 12 hr:12 hr light:dark cycle in temperature-controlled aquariums filled with artificial pond water. The entire nervous system of an adult leech was removed and pinned down on silicone (PDMS, Sylgard 184, Dow Corning, Midland, MI). The sheath surrounding one segmental ganglion (M10) was removed from both ventral and dorsal aspects to allow access with voltage-sensitive dyes. Most of the nerves that innervate the periphery were cut short, but several were kept long to allow extracellular stimulation as described before (Tomina and Wagenaar, 2017). A voltage-sensitive dye (VF2.1(OMe).H [Woodford et al., 2015] provided by Evan Miller) was bath-loaded at a concentration of 800 nM in leech saline using a pair of peristaltic pumps to evenly load cell membranes on both sides of the ganglion. The preparation was placed on a custom-built dual-headed microscope which was used to image neuronal activity during fictive behaviors triggered by electrical stimulation, as in our previous work (Tomina and Wagenaar, 2017).\n\nWe manually drew regions of interest (ROIs) around neuronal cell bodies and used custom software to associate those ROIs with named cells on the canonical maps of the leech ganglion (Wagenaar, 2017). For each of the behavior trials separately, we calculated the spectral coherence between each of the neurons and DE-3R at the frequency of the dominant peak in the power spectrum of DE-3R for the given behavior.\n\n### Histology\n\nAfter dye imaging, the preparation was reduced to just one segmental ganglion by transecting the anterior and posterior connectives. The ganglion was mounted on a slab of silicone (DPMS) with a hole cut out in the center so that the somata would not be in direct contact with the silicone. This preparation was transferred into a glass container and incubated for 72 hr at 4 \u00b0C in 2% paraformaldehyde, 2.5% glutaraldehyde in 0.15 M cacodylate buffer containing 2 mM CaCl2. Subsequently, the ganglion was washed in cacodylate buffer for 10 min and then incubated in an aqueous solution of 2% OsO4 and 1.5% potassium ferrocyanide. During this incubation, the sample was microwaved in a scientific microwave (Pelco 3440 MAX) three times at 800 W with a duty cycle of 40 s on and 40 s off at a controlled temperature of 35 \u00b0C and subsequently left at room temperature (RT) for 30 min. The sample was then washed twice in ddH2O and then microwaved three times at 30 \u00b0C with a duty cycle of 2 min on and 2 min off.\n\nThe sample was incubated in 0.5% thiocarbohydrazide (Electron Microscopy Sciences, Hatfield, PA). During this incubation, the sample was microwaved three times at 800 W with a duty cycle of 40 s on and 40 s off at 30 \u00b0C and subsequently left at RT for 15 min. The ganglion was then washed again, followed by the same microwave incubation as described above.\n\nNext, the sample was incubated in 2% aqueous OsO4, microwaved three times at 800 W with a duty cycle of 40 s on and 40 s off at 30 \u00b0C, and left for 30 min at RT. After another wash, the sample was left overnight in 2% uranyl acetate at 4 \u00b0C.\n\nThe next day, the sample was incubated in a lead aspartate solution at 60 \u00b0C for 25 min (Walton, 1979). The sample was then washed and dehydrated through a series of ethanol solutions (50%, 70%, 90%, 100%, 100%, 10 min each) at RT and incubated in acetone. After this, the sample was infiltrated with epoxy resin by first incubating it for one day at RT in a solution of 25% Durcupan (Sigma, St. Louis, MO) in acetone. On subsequent days, the concentration of Durcupan was increased to 50%, 75%, and finally 100%. After that, the sample was transferred to freshly prepared 100% Durcupan and incubated at 60\u00b0C for 3 days.\n\n### Micro-CT imaging\n\nWe used Micro-CT scanning to confirm that the above sample preparation had left the overall geometry of the ganglion intact and to trace portions of neurons outside of the neuropil. Scans were collected using the 20x objective on a Zeiss Versa 510 X-ray microscope. Epoxy-embedded ganglia were attached to the end of an aluminum rod using cyanoacrylate glue and then scanned at 80 kV, collecting 2401 projection images while rotating the specimen 360\u00b0. The final pixel size was approximately 0.75 \u03bcm. Volumes were reconstructed using Zeiss Reconstructor software and visualized in custom software (GVox, see Key resources table).\n\n### Scanning electron microscopy\n\nGanglia were mounted onto aluminum pins using conductive silver paint. They were mounted in a vertical orientation (with the anterior connective pointing upwards). The sample was imaged with a Zeiss Gemini 300 SEM with a Gatan 2XP 3View system. The microscope was run in focal charge compensation mode (Deerinck et al., 2018) using nitrogen gas (40% pressure), with an accelerating voltage of 2.5 kV, a 30 \u03bcm objective aperture, magnification of \u00d7336, a raster size of 17,100 \u00d7 17,100 pixels, a 5.5 nm pixel size, a 0.5 \u03bcm dwell time, and 50 nm section thickness. Stage montaging with an overlap of 8% between tiles was used to cover the complete extent of the ganglion in any given image. The backscatter detector was a Hamamatsu diode with a 2 mm aperture.\n\nOutside of the neuropil, neuronal processes could be traced in the micro-CT scan, which allowed us to reduce the total volume needed to be imaged with SBEM by almost a factor two (Figure 5b). Still, at the widest points of the neuropil as many as 7 \u00d7 2 tiles (119,700 \u00d7 34,200 pixels) were needed at a given z-position.\n\nAfter approximately every 500 sections, the run was stopped to clear sectioning debris from the diamond knife and prevent contamination of the block-face, diode, or column. The run was also stopped when we reached significantly wider or narrower regions of the neuropil as indicated above. Ultimately, the run was subdivided into 61 subruns. There was only one instance in the run where a significant loss of tissue occurred (approximately 150 nm) following the re-approach of the knife to the tissue after an interruption for clearing debris. Overall, electron microscopy took 7 months of near-continuous imaging.\n\nTo quantify true image resolution (as opposed to pixel size), we calculated power spectra of pixel intensities in several 2048 \u00d7 2048 pixel regions throughout the volume (Figure 6\u2014figure supplement 2). The spectral power in our images exceeded the noise floor set by shot noise at spatial frequencies up to about 20 lines/\u03bcm (Figure 6\u2014figure supplement 2), corresponding to an effective pixel size of about 25 nm.\n\n### Transmission electron microscopy\n\nImage quality and specimen preservation were verified using an additional ganglion prepared as above, but imaged in ultrathin sections on a conventional transmission electron microscope (JEOL JEM-1200EX, 120 kV, \u00d712,000\u2013\u00d720,000 magnification).\n\n### Image processing\n\nImages were aligned using custom software (\u2018SBEMAlign,\u2019 see Key resources table). First, we reduced the linear resolution of the original images by a factor five. Then we split each image into 5 \u00d7 5 sub-tiles and calculated the optimal alignment between each sub-tile and the corresponding sub-tile from the image above using a modified version of SWIFT-IR (Wetzel et al., 2016). Likewise, we split the regions of overlap that existing between images of the same slice into five sub-tiles and calculated the optimal alignment between the edges of adjacent images. We used these latter numbers to coarsely align images within each slice and render the first and last slices of each subrun at 1:25 scale, which allowed us to establish regions of correspondence between subruns. Using these procedures, we ended up with 3,430,650 matching pairs of image locations. Because SWIFT-IR matches up entire areas rather than single point pairs, those locations are defined at a much higher resolution than that of the images. Accordingly, alignment information obtained at a scale of 1:5 could be used to align the source images at scale 1:1 without material loss of precision.\n\nNext, we split the full EM volume up into subvolumes of 200 slices with 50% overlap between subsequent subvolumes (Stefan Saalfeld, personal communication) and optimized alignment in each subvolume independently. This was done in three steps: (1) Coarse alignment of all the z-stacks from all of the subruns involved in the subvolume relative to each other; (2) Refinement of this alignment by determining optimal rigid translation of each tile relative to its substack; (3) Further refinement through elastic deformation. This procedure resulted in absolute coordinates for a grid of points in each source image.\n\nWe then rendered each slice by linearly combining the placement according to the two subvolumes that incorporated the slice. We divided each slice up into nonoverlapping rectangles and rendered pixels from one source image into each rectangle using a perspective transformation derived from the grid coordinates calculated in the previous step.\n\nThe full-resolution stitched volume was then split into tiles of 512 \u00d7 512 \u00d7 1 voxels and reduced-resolution tiles at 1:2, 1:4, up to 1:256 resolution were produced for faster online visualization.\n\n### Visualization\n\nWe developed a custom tool for visualizing the aligned images and for neurite tracing. SBEMViewer (see Key resources table) was used to visualize the slices as they came off the microscope to monitor image quality, and also for purposes of tracing neurites.\n\n### Neurite tracing\n\nWe produced a full skeleton tracing of the right DE-3 motor neuron and all of its presynaptic partners from the synapses to their somata. The following criteria were used to identify synapses:\n\nBecause of limited resolution in our SBEM images, synaptic vesicles appear merely as gray granules (Figure 6c,d), but fields of such granules were clearly distinct from other gray areas in the SBEM images. Comparison with digitally blurred TEM images (Figure 6\u2014figure supplement 1) confirmed this interpretation. We found that granular areas were concentrated in fiber endings and varicosities.\n\n### Correlation analysis of synapse number and coherence\n\nWe calculated correlation coefficients for the number of synapses and the strength of functional connectivity quantified by the magnitude of the coherence in each of the behaviors (Figure 9). We then repeated this analysis with synapse count replaced by the \u2018proximity weight\u2019 of the synaptic partners. The proximity weight of a synapse was defined as the inverse of its distance to the soma of DE-3R (measured along the neurite), and the proximity weight of a neuron was defined as the sum of the proximity weights of its synapses onto DE-3R. Neurons were included in the calculation if (1) their somata could be matched between VSD and SBEM images and (2) they had at least two synapses onto DE-3R (see also Figure 6\u2014figure supplement 3). To test for overall significance, a two-tailed t-test was applied to compare the collected correlation coefficients (from n = 8 trials) to the null hypothesis of zero average correlation.\n\n### Tree analysis\n\nTo assign neurons to specific behaviors (Figure 10c,d), we took all the neurons for which we had a match between anatomy (EM) and activity (VSD). We then used the following procedure which compensates for the fact that the distribution of absolute coherence values is different per behavior for technical reasons resulting from the differences in cycle periods between the behaviors. We first looked at the coherence values in all cells and all behaviors, and assigned the neuron that had the greatest coherence to the behavior in which it had that coherence value. In the second step, we looked at the coherence values in all the other cells and both other behaviors, and assigned the top-cohering cell to a behavior. In the third step, we looked at the coherence values in all remaining cells in the last remaining behavior, and assigned the top-cohering cell to that behavior. In the fourth step, we once again considered all behaviors. In this manner, we continued until all cells had been assigned to a behavior. It should be noted that most cells were active in all behaviors to some degree, and that not all differences in absolute coherence values between behaviors were large. Accordingly, some variability in assigned should be expected across animals.\n\nThe primary neurite was defined as the path between the soma and the point where the axon leaves the ganglion through the contralateral dorsal posterior nerve.\n\n### Synaptic clustering analysis\n\nThe analysis was based on data from the 45 synaptic partners of DE-3R for which both anatomical as well as VSD recordings were available. The overall procedure is outlined in Box 1.\n\nWe defined synaptic clusters using an agglomerative hierarchical clustering algorithm with two parameters:\n\nThe algorithm began by treating each synapse as an individual cluster. Then, it iteratively joined the two clusters with minimum distance between their most proximal elements (\u2018single-linkage\u2019 clustering). However, if a joint cluster would exceed the limit on overall spatial extent (dext), its putative constituents were not joined. Aggregation stopped when no pairs of clusters were left with acceptable nearest-neighbor distance (i.e. less than dNN) and acceptable joint spatial extent (i.e. less than dext). All distances were measured along the neurites of DE-3R rather than by Euclidean metric in the volume. Clusters comprising only a single synapse were not considered for further analysis.\n\nThe analysis of functional significance of spatial clusters used an ANOVA-like procedure on the complex spectral coherence values of neurons within clusters relative to DE-3R. As in ANOVA, we calculated sums of squares within and between clusters. Since coherence values are complex numbers, we used the absolute square value. The ratio of these sums of squares (the \u2018F-ratio\u2019) is larger than one if coherence values within a spatial cluster tend to be more similar to each other than coherence values between different clusters.\n\nSpecifically, if $z_{k,i}$ represent the (complex) coherence values of cell $i$ in cluster k, then the centroid of each cluster is $z_{k}^{0}=\\frac{1}{n_{k}}\u2062\\sum_{i}z_{k,i}$ and the overall average of coherence values is $z^{0}=\\frac{1}{N}\u2062\\sum_{k,i}z_{k,i}$, where $n_{k}$ is the number of cells in cluster $k$ and $N$ is the total number of cells. The F-ratio is then\n\n$$\nF=\\frac{\\sum_{k,i}|z_{k,i}-z^{0}|^{2}}{\\sum_{k,i}|z_{k,i}-z_{k}^{0}|^{2}}.\n$$\n\nA demonstration of the method using synthetic data is presented in Figure 11\u2014figure supplement 3. We generated three clusters of two-dimensional Gaussian-distributed data, either with centroids at the same location (Figure 11\u2014figure supplement 3a), or with the centroids displaced from each other by one standard deviation in different directions (Figure 11\u2014figure supplement 3b). One can imagine each of the three colored clouds of dots as corresponding to the coherences of the neurons in three spatially defined clusters, represented on the complex plane. In Figure 11\u2014figure supplement 3a, the distribution of coherence values is the same for each cluster, hence F = 1; in Figure 11\u2014figure supplement 3b, each spatially defined cluster is clearly distinguishable by the coherence values of its neurons, hence F > 1.\n\nIn standard ANOVA, the F-ratio follows an F-distribution under the null hypothesis. In the complex-valued case, that is no longer true, so we calculated empirical distributions of the F-ratios by randomly shuffling the list of per-neuron coherence values 1000 times. The empirical p-value $p^$ was then defined as $p^=\\frac{m+1}{N+1}$ , where N = 1000 is the number of randomizations and m is the number of times the F-ratio from shuffled data exceeded the experimentally observed F-ratio. These p-values are reported in the Data supplement to Figure 11.\n\nWe generated plots of the F-ratio as a function of the cluster parameters dNN and dext. For each trial, we first determined the value of dNN for which the largest F-ratio was obtained. Then, we fitted a Gaussian of the form\n\n$$\nF=1+A\u2062exp\u2061(-\\frac{1}{2}\u2062[d_{ext}-\\mu]^{2}/\\sigma^{2})\n$$\n\nto the F-ratio as a function of dext (Figure 11\u2014figure supplement 2). The \u00b5-values from those fits and their uncertainties according to least-squares fitting are reported in the text.\n\n### Data availability\n\nThe easiest way to access the raw electrophysiology and voltage-dye data as well as the SBEM image data and tracing results used in this paper is through a series of Python modules that we made available at https://github.com/wagenadl/leechem; Kassraian and Wagenaar, 2021; copy archived at swh:1:rev:73eee24e387e11c259a3f3fe0bd4e469048b25e6. Included in the package is a file called \u2018demo.py\u2019 that demonstrates the use of the modules as well as several Jupyter notebooks that demonstrate other approaches to data analysis.\n\nTable 4 lists the VSD trials available for download using the Python modules. The SBEM volume may also be accessed through the Neuroglancer (Google, 2016) instance at https://leechem.caltech.edu or by pointing SBEMViewer to https://leechem.caltech.edu/emdata. This server also allows for direct downloading of SBEM image data. The API is documented at https://leechem.caltech.edu/emdata/help.\n\n**Table 4.**\n List of raw data trials and how they are referred to in the paper.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure</th>\n      <th>Behavior</th>\n      <th>Trial no. in paper</th>\n      <th>Trial no. in raw data</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 2</td>\n      <td>Swim</td>\n      <td>1</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>Swim</td>\n      <td>2</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Figure 3</td>\n      <td>Crawl</td>\n      <td>1</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>Crawl</td>\n      <td>2</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Figure 4</td>\n      <td>Local bend</td>\n      <td>1</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>Local bend</td>\n      <td>2</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>Local bend</td>\n      <td>3</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>Local bend</td>\n      <td>4</td>\n      <td>12</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "56136291-3cd2-4d29-9568-92e648d857b0",
+      "submission_id": "c0a37378-5cd7-44df-9bea-21b3a3437383",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vatsala Thirumalai, National Centre for Biological Sciences India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61881.sa1](https://doi.org/10.7554/eLife.61881.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this Research Advances article, the authors elegantly overlay an anatomical wiring diagram onto functional maps for the generation of distinct behaviors. They do this by combining voltage -sensitive dye imaging and EM reconstruction of the circuit to reveal functional synaptic locations onto a single motor neuron in 3 different behaviors. This study will be of great significance for bridging our understanding of neural basis of behaviors at the synaptic, cellular and circuit levels.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Anatomy and activity patterns in a multifunctional motor neuron and its surrounding circuits\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Christel Genoud (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional analyses are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nIn this manuscript, Ashabar et al. use a combination of voltage imaging and electron microscopy to explore the important question of how a specific motor neuron participates in distinct behaviors. The authors first perform voltage imaging of a leech ganglion to capture activity patterns of a large number of neurons during three fictive motor patterns: swimming, crawling, and local bending. Next, they perform x-ray tomography and serial block-face EM in order to reconstruct the inputs onto DE-3, a motor neuron that has different activity patterns during all three behaviors. The authors suggest that inputs correlated with distinct behaviors are widely distributed across the dendritic arbor of DE-3, but that synapses from presynaptic neurons with coherent activity cluster together more frequently than would be expected by chance. The addition of an EM dataset to the previous study on voltage imaging of the leech ganglion certainly constitutes a valuable advance.\n\nMajor Concerns:\n\n1) The premise of this study is that mapping subcellular localization of synaptic inputs onto DE-3 may explain the multifunctionality of the DE-3 motor neuron. However, it is clear from the voltage imaging experiments that many of the premotor neurons are also active during multiple behaviors.\n\na) How do the authors assign neurons to distinct behaviors in Figure 8 when Figures 2-4 show that the same neurons are active across multiple behaviors?\n\nb) If the premotor neurons are also multifunctional (i.e., active during multiple behaviors), then why would one expect there to be differences in subcellular localization on the motor neuron? Given the results from the voltage imaging data, it seems that the pre-motor network should be more important for generating distinct motor patterns, rather than integration of synaptic inputs in the DE-3 motor neuron.\n\n2) The analysis of synapse distributions is confusing. The primary finding of the paper is that the structure of the functional clusters is different for different behaviors, as different clustering parameters gave optimal correspondence between clusters and the neural activity.\n\na) While useful as a statistical measure, it is not clear how the F-ratio score relates to strength of clustering or coherence of neural activity. The authors should provide additional measures that provide some indication of how much functional clustering would contribute to the activity of the motor neuron.\n\nb) Additionally, it would be useful to see the distribution of how many neurons contribute synapses to each functional cluster. If the clusters arise from individual neurons, or a very small number of neurons, then it seems obvious that they would have a high coherence (with themselves).\n\nc) Was an analysis of # of synapses versus known connectivity strength performed (to the extent this is known)? Or, for example, the strength of coherence with DE-3 versus number of synapses?\n\n3) Another key analysis in the paper centers around measuring the distribution of synapses along the arbor of DE-3 (Figure 8). The authors find no differences between inhibitory/excitatory synaptic distributions nor neurons participating in different behaviors. It is unclear whether using the cell body as the reference point is a good choice for these analyses, given the unipolar nature of the motor neuron. It would be worthwhile to\n\na) Measure the distribution of synapses along the motor neuron arbor as a function of the distance from the primary neurite, as shunting inhibition could also occur in an arbor-specific manner, or\n\nb) Use a point on the axon as a reference point rather than the soma, as the spike initiation zone is likely nowhere near the soma.\n\n4) Generally an analysis of the known presynaptic connectivity onto DE-3 versus what was found in this study seems to be missing. Including a wiring diagram of the known monosynaptic presynaptic connections onto DE-3 would be extremely helpful along with an indication of which of these known connections were found in the volume and which were not (cells 27, 208, 204/205, etc\u2026)\n\n5) A reconstruction of a juvenile DE-3 was previously reported in Pipkin et al. How do the locations and distributions of synapses in the current volume compare to that reconstruction? At what developmental stage was the leech in this study?\n\n6) The data quality in Pipkin et al. (e.g. the ability to resolve vesicles) seems to be higher than in this volume? Is this correct? Could data quality also be a reason for different synapse counts between the two datasets?\n\n7) Why were 51-35 = 16 neurons not able to be matched to the VSD recording? Did they shift location during EM processing? Regarding the 35-10 = 25 neurons that were not included in the analysis because they could not be matched to known neurons: If the morphology of these 25 neurons had been completely traced, it seems at least possible they could have been matched based on morphology and previous light microscopy fills. It seems like this could have been done without too much effort given the size of leech neurons and the availability of programs to skeletonize neurons relatively rapidly. The number of synapses actually analyzed in Table 1 (~100 or so) is a small fraction of those actually identified onto DE-3 and it seems like such incompleteness could significantly impact the results in Figures 8 and 9.\n\n8) It would be useful to see that the observed clustering on DE-3R is reproducible on DE-3L. Given that the final number of neurons used in this analysis is small, is this feasible?\n\n9) Is it possible to reconstruct the contralateral DE-3 homolog to examine contact locations with the analyzed DE-3 and whether there is an anatomical signature of an electrical synapse?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Anatomy and activity patterns in a multifunctional motor neuron and its surrounding circuits\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Christel Genoud (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe manuscript is greatly improved after the first round of revisions. However, reviewers point out several places where clarifications and/or revising claims is essential. Please address these points.\n\nReviewer #1:\n\nAll the requests raised by the first review have been carefully considered. The new figures have positively improved the clarity of the results. The added analysis have strengthened the results and conclusions.\n\nReviewer #2:\n\nThe revisions made some of the analyses and conclusions more clear. We have four remaining concerns, intended to help explain and clarify the approach for a general scientific audience.\n\n1) The revised Materials and methods section clarifies the process used to classify neurons as belonging to distinct behaviors. This does not, however, justify that it is appropriate to classify neurons in this manner. It appears as if most neurons that have been classified as participating in one behavior exhibit similar levels of activity during other behaviors. This is also clear from Figure 4J in the previous (original) paper. The authors should provide some justification for assigning neurons to specific behaviors. Wouldn't the tree analysis still assign neurons to single behaviors even if all neurons participated in all behaviors? Would the assignment be repeatable across individual animals?\n\n2) In response to our previous comment about premotor neurons being multifunctional (ie, participating in multiple behaviors), the authors added a statement that \"DE-3 may be a relatively passive integrator of its inputs.\" I find this confusing. The synapse clustering analysis seems to suggest that DE-3 is not a passive integrator of inputs. If it were, would one not expect there to be no clustering at all?\n\n3) In response to our concern about the interpretability of the F-Ratio, the authors provide some additional description in the Results and Materials and methods. This is helpful, but it would still be useful to provide some context for readers unfamiliar with this ratio. This context could be provided with some examples of F-ratio values for highly clustered or randomly distributed synapses.\n\n4) It would be helpful to compare the coherence analyses in this manuscript with that from the previous (original) paper. They do not always appear similar across the two manuscripts. This should be discussed, especially given the data quality concerns between this paper and the previous one.\n\nReviewer #3:\n\nThe authors addressed most of the issues pointed out in the initial review adequately. There are a few additional points I had:\n\n1) I still cannot see the dataset at: https://leechem.caltech.edu/. It leads to a 502 Gateway Error.\n\n2) I think the correlation analysis of synapse number vs coherence should be added as a supplement to the paper, despite it yielding a statistically insignificant correlation.\n\n3) This sentence in the Discussion should be corrected: \u201cWe reconstructed its entire arborization and traced all of its presynaptic partners back to their somata.\u201d This is not true based on the number of untraceable synapses, right? The Abstract contains a similar claim.\n\n4) Including details of what limited the data quality would help future experimenters decide on imaging parameters. Perhaps adding a \u201cComment on data quality\u201d to the Materials and methods section?\n",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "baf9bc78-2b79-410e-b0e2-07df7668eade",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C1",
+      "claim": "Dorsal Excitor motor neuron DE-3 in the medicinal leech plays three very different dynamical roles in three different behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsal Excitor motor neuron DE-3 in the medicinal leech plays three very different dynamical roles in three different behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a foundational premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "acb75d05-33e4-44e6-adec-bd6d15cee694",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C2",
+      "claim": "Input synapses important for all the behaviors were widely distributed over DE-3's branches.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that input synapses important for all the behaviors were widely distributed over DE-3's branches, yet that functional clusters were different during (fictive) swimming vs. crawling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is directly stated in the abstract and supported by anatomical tracing data shown in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "ba72e1c7-34c8-4557-952c-eaaadb250e7f",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C3",
+      "claim": "Functional clusters were different during (fictive) swimming vs. crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that input synapses important for all the behaviors were widely distributed over DE-3's branches, yet that functional clusters were different during (fictive) swimming vs. crawling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through clustering analysis in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "db76ebb3-fb6e-4657-8924-702e3d9c0c3a",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C4",
+      "claim": "Barn owls use exquisitely tuned delay lines to locate sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include the exquisitely tuned delay lines that barn owls use to locate sounds (Carr and Konishi, 1988) and the motor neurons that control the honeybee's stinger (Ogawa et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Carr and Konishi, 1988).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "a2b0e894-1cf1-4b54-8cb8-7f7d1c8a446c",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C5",
+      "claim": "Motor neurons control the honeybee's stinger.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include the exquisitely tuned delay lines that barn owls use to locate sounds (Carr and Konishi, 1988) and the motor neurons that control the honeybee's stinger (Ogawa et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Ogawa et al., 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "7ab3b371-0526-43a5-a3da-698c3864f528",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C6",
+      "claim": "Many circuits in most animals' central nervous systems respond to stimuli of multiple sensory modalities or control more than one behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In most animals' central nervous systems, however, many circuits respond to stimuli of multiple sensory modalities or control more than one behavior (Briggman and Kristan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "c3972eb8-738d-414c-bcee-9d8ff2ff3624",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C7",
+      "claim": "Auditory stimuli can modulate activity in the human visual cortex in sighted as well as in blind subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, auditory stimuli can modulate activity in the human visual cortex (Plass et al., 2019) (in sighted as well as in blind subjects [Bedny et al., 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Plass et al., 2019; Bedny et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "946479d7-2f6a-4de8-98ec-edc20855d634",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C8",
+      "claim": "Motor cortex activity can be modulated by visual presentation of images of relevant body parts and in a working memory task in the absence of immediate stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, motor cortex activity can be modulated not just by visual presentation of images of relevant body parts, but even in a working memory task in the absence of immediate stimuli (Galvez-Pol et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Galvez-Pol et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "75f24724-c955-483b-8b41-db43c9f7450f",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C9",
+      "claim": "Multifunctionality may help smaller animals use their more constrained neural hardware more efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "All these forms of multifunctionality likely contribute to the versatility of large brains like ours and may help smaller animals use their more constrained neural hardware more efficiently (Briggman and Kristan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "7ce0079b-af30-444d-bc85-de708214728c",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C10",
+      "claim": "In swimming, DE-3 oscillates at a relatively rapid 2 Hz in antiphase to its Ventral Excitor counterpart (VE-4).",
+      "claim_type": "EXPLICIT",
+      "source": "In swimming, it oscillates at a relatively rapid 2 Hz in antiphase to its Ventral Excitor counterpart (VE-4) and controls the local dorsal flexion phase of the swim rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of DE-3 behavior during swimming.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "bf2bbb16-f3b4-48f1-8506-b5cfefa4bfda",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C11",
+      "claim": "In crawling, DE-3 is active in phase with VE-4.",
+      "claim_type": "EXPLICIT",
+      "source": "In crawling, it is active in phase with VE-4 and controls the contraction phase of the crawl rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of DE-3 behavior during crawling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "f0b98c20-d4d5-4ff0-8260-bcba2b6646bd",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C12",
+      "claim": "In local bending, DE-3 operates in tight concert with its contralateral homolog as well as VE-4.",
+      "claim_type": "EXPLICIT",
+      "source": "In 'local bending' it operates in tight concert with its contralateral homolog as well as VE-4 to precisely deform the local body wall away from a mechanical stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of DE-3 behavior during local bending.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "2ff17769-9012-4157-87a9-2b3badfed159",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C13",
+      "claim": "Calcium imaging has advanced to the point where simultaneous recordings from the vast majority of individual neurons in smaller species can be accomplished.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity imaging using calcium dyes has advanced to the point where simultaneous recordings from the vast majority of individual neurons in smaller species can be accomplished, for instance in larval zebrafish (Ahrens et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Ahrens et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "b5d7ccb0-0db6-4af7-b1d0-5e53f9b58dab",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C14",
+      "claim": "Calcium imaging has been applied to behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has even been applied to behaving animals (Jiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Jiao et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "6cda005b-4949-45c7-963c-55400bb706ca",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C15",
+      "claim": "Electron microscopy has advanced to the point that brains as large as that of the fruit fly Drosophila melanogaster can be imaged at synaptic resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, anatomical imaging using electron microscopy (EM) has advanced to the point that brains as large as that of the fruit fly Drosophila melanogaster can be imaged\u2014and substantial fractions of their circuitry reconstructed\u2014at a synaptic resolution (Zheng et al., 2018; Bates et al., 2020; Scheffer et al., 2020; Maniates-Selvin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "18aa7ea6-a3ec-4ca7-be05-425854b0bad5",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C16",
+      "claim": "Small vertebrate brains like that of larval zebrafish are yielding to electron microscopy approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Even small vertebrate brains like that of larval zebrafish are yielding to this approach (Hildebrand et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Hildebrand et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "f457a030-7a1e-489b-9557-4a422e45835f",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C17",
+      "claim": "All nervous systems, even the simplest ones, exhibit considerable variability in their connectomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cross-identification of neurons between EM and functional imaging in this approach is ultimately limited by the fact that all nervous systems, even the simplest ones, exhibit considerable variability in their connectomes (Bhattacharya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Bhattacharya et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "52510810-e8da-4884-b0e7-669f3f2d384b",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C18",
+      "claim": "Robustly linking function to connectivity requires a combined anatomical and functional assessment within the same animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, robustly linking function to connectivity requires a combined anatomical and functional assessment within the same animal (Bargmann and Marder, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Bargmann and Marder, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "0a0c5d15-e570-4a89-be5a-9c5969888a2e",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C19",
+      "claim": "Two-photon calcium imaging in the mouse visual cortex followed by serial transmission electron microscopy of that same cortex was described in Nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly a decade ago, back-to-back papers in Nature described two-photon calcium imaging in the mouse visual cortex followed by serial transmission electron microscopy of a small volume of that same cortex (Bock et al., 2011) and two-photon calcium imaging in the mouse retina followed by serial block face electron microscopy of that same retina (Briggman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Bock et al., 2011; Briggman et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "82ff6b0f-2266-4b55-8b0b-eef4c6ef0296",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C20",
+      "claim": "CLEM has allowed the quantification of synaptic connections between functionally identified neurons that control eye movement in the larval zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, 'Correlated Light and Electron Microscopy' or CLEM (de Boer et al., 2015), has since allowed the quantification of synaptic connections between functionally identified neurons that control eye movement in the larval zebrafish (Vishwanathan et al., 2017), a reconstruction of the connections in the olfactory bulb of another larval zebrafish in which neural responses to eight different odors had been recorded prior to sectioning (Wanner and Friedrich, 2020), and a critical re-assessment of the mechanisms of selectivity to particular sensory features in neurons of the mammalian visual cortex (Scholl et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Vishwanathan et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "25a375cf-2718-4f9f-9c30-efd18fc0c846",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C21",
+      "claim": "Voltage-sensitive dyes can capture faster temporal dynamics than calcium dyes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the present study of multifunctional behavioral circuits, we chose to use a voltage-sensitive dye (VSD) (Grinvald and Hildesheim, 2004; Kulkarni and Miller, 2017) rather than a calcium dye because it can capture faster temporal dynamics, potentially even recording individual action potentials, as well as both excitatory and inhibitory synaptic potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for the methodological choice and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "549333aa-db48-4add-9fb0-334589f6a0f3",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C22",
+      "claim": "Voltage-sensitive dyes can record both excitatory and inhibitory synaptic potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "For the present study of multifunctional behavioral circuits, we chose to use a voltage-sensitive dye (VSD) (Grinvald and Hildesheim, 2004; Kulkarni and Miller, 2017) rather than a calcium dye because it can capture faster temporal dynamics, potentially even recording individual action potentials, as well as both excitatory and inhibitory synaptic potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for the methodological choice and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "b82c8658-b20f-4ac4-b049-23c54296f268",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C23",
+      "claim": "This is the first time VSDs and SBEM have been combined at this scale.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first time VSDs and SBEM have been combined at this scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a claim of novelty by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "c15263dd-50fe-49ec-a84c-9fbacd83d7f9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C24",
+      "claim": "The nervous system of the leech comprises cephalic ganglia, a tail ganglion, and 21 nearly identical segmental ganglia connected by a ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "The nervous system of the leech comprises cephalic ganglia, a tail ganglion, and 21 nearly identical segmental ganglia connected by a ventral nerve cord (Muller et al., 1981; Wagenaar, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Muller et al., 1981; Wagenaar, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "35df8409-f4cc-4636-a690-deee6e14ae8f",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C25",
+      "claim": "Each leech ganglion consists of about 400 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Each ganglion consists of about 400 neurons (Macagno, 1980) with cell bodies arranged in a spherical monolayer around a central neuropil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Macagno, 1980).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "5e73fae6-2156-4f8f-b286-2cae2d1948c0",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C26",
+      "claim": "In the leech neuropil, neurons communicate through chemical and electrical synapses located along extensively branched neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "In the neuropil, neurons communicate through chemical and electrical synapses located along extensively branched neurites (Muller and McMahan, 1976; Fan et al., 2005; Pipkin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Muller and McMahan, 1976; Fan et al., 2005; Pipkin et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "e11457d4-320c-47bf-b9d5-0bb92e93e456",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C27",
+      "claim": "The leech robustly expresses several behaviors even in reduced preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "The leech is an ideal model organism for this type of work, because it robustly expresses several behaviors even in reduced preparations (Kristan et al., 2005), its neurons are uncommonly accessible to physiological recording, and its cell bodies are relatively large and thus yield strong VSD signals (Briggman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Kristan et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "0b1429d2-80ca-49d5-8ef8-c86bbe2aff8c",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C28",
+      "claim": "Leech neurons are uncommonly accessible to physiological recording.",
+      "claim_type": "EXPLICIT",
+      "source": "The leech is an ideal model organism for this type of work, because it robustly expresses several behaviors even in reduced preparations (Kristan et al., 2005), its neurons are uncommonly accessible to physiological recording, and its cell bodies are relatively large and thus yield strong VSD signals (Briggman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "14a4a5e9-6e4b-4f56-b048-e706e7e28b7f",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C29",
+      "claim": "Leech cell bodies are relatively large and thus yield strong VSD signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The leech is an ideal model organism for this type of work, because it robustly expresses several behaviors even in reduced preparations (Kristan et al., 2005), its neurons are uncommonly accessible to physiological recording, and its cell bodies are relatively large and thus yield strong VSD signals (Briggman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Briggman et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "f424ecd9-960a-479c-8d25-df8455f1d917",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C30",
+      "claim": "An individual segmental ganglion is a good stand-in for a whole nervous system because its neurons capture the entire pathway from sensory input through self-generated interneuronal rhythms to motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, an individual segmental ganglion is a good stand-in for a whole nervous system, because its neurons capture the entire pathway from sensory input through self-generated interneuronal rhythms to motor output (Kristan et al., 2005), which is why we focused our imaging efforts there.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Kristan et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "2b011330-1814-44e5-b1bd-b962ae960483",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C31",
+      "claim": "250 neurons were recorded simultaneously using VSD imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to record from 250 neurons simultaneously, similar to our previous results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the VSD imaging experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "49e15199-8105-411f-b39f-7a271def0280",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C32",
+      "claim": "Fictive swimming was induced by electrical stimulation of a posterior segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Fictive swimming was induced by electrical stimulation of a posterior segment, which resulted in characteristic rhythmic activity in dorsal motor neurons and many other neurons on both sides of the ganglion (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail and result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "efca74c6-4960-44e1-9d47-1e60c4588470",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C33",
+      "claim": "Electrical stimulation of a posterior segment resulted in characteristic rhythmic activity in dorsal motor neurons and many other neurons on both sides of the ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "Fictive swimming was induced by electrical stimulation of a posterior segment, which resulted in characteristic rhythmic activity in dorsal motor neurons and many other neurons on both sides of the ganglion (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "e9099f86-d07b-4bbe-a1a3-c78345e9c8b3",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C34",
+      "claim": "Coherence analysis confirmed that the rhythms of the various neurons were indeed related to the fictive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Coherence analysis confirmed that the rhythms of the various neurons were indeed related to the fictive behavior (Figure 2c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "d62dfe24-5fb3-4686-a06d-4cba4cb4222f",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C35",
+      "claim": "The ganglion was fixated and embedded in a resin at the end of the behavior experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of the (fictive) behavior experiment, the ganglion was fixated and embedded in a resin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "7350218a-9ec7-4e81-8262-9b635604d7a0",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C36",
+      "claim": "X-ray tomography was used to re-image the ganglion and verify that the cell bodies seen in the VSD images could still be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "To correlate light and electron microscopy, we then re-imaged the ganglion using X-ray tomography (Bushong et al., 2015) and verified that the cell bodies seen in the VSD images could still be identified (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "59bcacbd-a07e-4d01-a1ee-0d91cfe3e319",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C37",
+      "claim": "The X-ray image stack was used to trace neuronal processes from the somata to the edge of the neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray image stack was also used to trace neuronal processes from the somata to the edge of the neuropil (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "fb2247f7-0613-466a-937d-c3d33f366630",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C38",
+      "claim": "Serial blockface electron microscopy was chosen over serial-section transmission EM because SBEM can reliably process large numbers of slices with much lower risk of sectioning artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose serial blockface electron microscopy (SBEM) over serial-section transmission EM (Harris et al., 2006) because SBEM can reliably process large numbers of slices with much lower risk of sectioning artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for the methodological choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "28bd9374-1597-424d-85f7-e757c332b840",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C39",
+      "claim": "78,803 images from 9604 slices were acquired, totaling 22.8 terapixels.",
+      "claim_type": "EXPLICIT",
+      "source": "We acquired 78,803 images from 9604 slices, totaling 22.8 terapixels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the SBEM imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "9c529d61-8eeb-42b1-8230-5be708f4a09b",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C40",
+      "claim": "The combined path length of the entire arborization of DE-3R was 6,109 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined path length of the entire arborization of DE-3R was 6,109 \u03bcm (Figure 6a,b; Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "020aec91-6dec-40de-8e21-2eeb33024cfc",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C41",
+      "claim": "531 synapses onto DE-3R were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 531 synapses onto DE-3R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the tracing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "f2355337-f5ff-44a4-b4e0-7934ae31f7c5",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C42",
+      "claim": "44 synapses onto DE-3R were formed by cells with somata in neighboring ganglia that were not included in the EM volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 44 were formed by cells with somata in neighboring ganglia that were not included in our EM volume (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "ef47a1a5-3524-4176-82aa-1e054a071961",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C43",
+      "claim": "387 synapses onto DE-3R could be traced to their somata with a high degree of confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the rest, 387 could be traced to their somata with a high degree of confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the tracing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "64d57df8-aa0c-40c1-bf61-92b6af516310",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C44",
+      "claim": "51 presynaptic neurons formed at least two synapses onto DE-3R.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid false positives, we only considered presynaptic neurons that formed at least two synapses onto DE-3R. There were 51 of those.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the tracing analysis with a methodological criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "ddf4d07b-50ba-49e9-b684-14e6e3d079d9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C45",
+      "claim": "35 presynaptic neurons could be confidently matched to cell bodies seen in the VSD record.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those, 35 could be confidently matched to cell bodies seen in the VSD record, and of those, 10 could be confidently matched to specific identified neurons on the canonical map with previously described functions (Figure 7b and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the cross-identification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "8e083de4-79a5-40c0-b075-cc2c28c5693e",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C46",
+      "claim": "10 presynaptic neurons could be confidently matched to specific identified neurons on the canonical map with previously described functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those, 35 could be confidently matched to cell bodies seen in the VSD record, and of those, 10 could be confidently matched to specific identified neurons on the canonical map with previously described functions (Figure 7b and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the cross-identification analysis and shown in Figure 7b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "54eaa967-777c-48af-a4fa-0a91abe927d9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C47",
+      "claim": "The average correlation between synapse count and coherence magnitude across eight trials was 0.16 \u00b1 0.12.",
+      "claim_type": "EXPLICIT",
+      "source": "On average across the eight trials in our data set, this correlation was 0.16 \u00b1 0.12 (mean \u00b1 SD; t = 3.41; p = 0.011; two-tailed t-test), even though none of the individual correlation coefficients was statistically significant (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the correlation analysis and shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "8765380c-5e39-4456-a0c4-b5beef4e14cd",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C48",
+      "claim": "The spatial distributions of excitatory and inhibitory synapses were not found to be different from the other ('unknown') synapses when distance was measured to the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial distributions of excitatory and inhibitory synapses were not found to be different from the other ('unknown') synapses, either when distance was measured to the soma (Figure 10b), or when it was measured to the primary neurite (Figure 10\u2014figure supplement 1a) of the postsynaptic tree.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the spatial distribution analysis and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "39f191cc-d4c4-4529-aa71-8ca58911af4b",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C49",
+      "claim": "Cells associated with a specific behavior did not form synapses in specific locations at the macroscopic scale.",
+      "claim_type": "EXPLICIT",
+      "source": "We asked whether cells associated in that way with a specific behavior would form synapses in specific locations, but found that was not the case at the macroscopic scale (Figure 10c,d and Figure 10\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the spatial analysis and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "41e478d5-d766-403a-9c28-ae9b65c164ec",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C50",
+      "claim": "Spatial clustering of synapses of synchronized cell assemblies has been previously observed in other model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Such spatial clustering of synapses of synchronized cell assemblies has been previously observed in other model organisms (Takahashi et al., 2012; Varga et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Takahashi et al., 2012; Varga et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "c362cdc8-176a-4ea1-8930-17ba0a7c9210",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C51",
+      "claim": "Neighboring synapses that are less than 12\u201316 \u03bcm apart are more likely to be synchronized than synapses farther apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings from in vivo and in vitro studies have shown that neighboring synapses that are less than 12\u201316 \u03bcm apart are more likely to be synchronized than synapses farther apart (Kleindienst et al., 2011; Winnubst et al., 2015) and that local synaptic plasticity mechanisms act on similar spatial scales (5\u201310 \u00b5m; Harvey and Svoboda, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Kleindienst et al., 2011; Winnubst et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "35d5d63d-ce14-4da1-a602-ca56989f0eda",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C52",
+      "claim": "Local synaptic plasticity mechanisms act on spatial scales of 5\u201310 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings from in vivo and in vitro studies have shown that neighboring synapses that are less than 12\u201316 \u03bcm apart are more likely to be synchronized than synapses farther apart (Kleindienst et al., 2011; Winnubst et al., 2015) and that local synaptic plasticity mechanisms act on similar spatial scales (5\u201310 \u00b5m; Harvey and Svoboda, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Harvey and Svoboda, 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "e6834c1d-82d2-432a-8c23-92d8c0b5e8a1",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C53",
+      "claim": "Parameter ranges could be identified for which spatial clusters corresponded to functional groupings in all but one trial.",
+      "claim_type": "EXPLICIT",
+      "source": "In all but one trial, parameter ranges could be identified for which spatial clusters indeed corresponded to functional groupings (Figure 11b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the clustering analysis and shown in Figure 11b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "1d211c65-ebb2-4815-84c1-2a3de2de46c9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C54",
+      "claim": "In the two swim trials, the peaks were located at dext = 61 \u00b1 2 \u03bcm and 65 \u00b1 2 \u03bcm respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two swim trials, the peaks were located at dext = 61 \u00b1 2 \u03bcm and 65 \u00b1 2 \u03bcm respectively; in the two crawl trials at 14 \u00b1 15 \u03bcm and 18 \u00b1 3 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "a3a9bacc-6964-469f-bc59-f1a053a1c4d6",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C55",
+      "claim": "In the two crawl trials, the peaks were located at dext = 14 \u00b1 15 \u03bcm and 18 \u00b1 3 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two swim trials, the peaks were located at dext = 61 \u00b1 2 \u03bcm and 65 \u00b1 2 \u03bcm respectively; in the two crawl trials at 14 \u00b1 15 \u03bcm and 18 \u00b1 3 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "27719b0b-9c1a-4191-9668-29cc866e235d",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C56",
+      "claim": "Functionally relevant spatial clusters during swimming were governed by very different parameter values than during crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, functionally relevant spatial clusters during swimming were governed by very different parameter values than during crawling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary conclusion from the clustering analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "ac9008cf-6f61-4d9f-8bb5-2e50633ed3d4",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C57",
+      "claim": "The reconstructed morphology of DE-3R was in accordance with previous light microscopic studies in adult and electron microscopy in a juvenile ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstructed morphology of DE-3R was in accordance with previous light microscopic studies in adult (Norris and Calabrese, 1987; Fan et al., 2005) and electron microscopy in a juvenile ganglion (Pipkin et al., 2016): its primary neurite emerged from the soma laterally and traveled toward the ipsilateral roots before making a 180\u00b0 turn to run laterally across the ganglion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with previous literature (Norris and Calabrese, 1987; Fan et al., 2005; Pipkin et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "2f113b5a-d500-4406-bc6b-d688cafe3fd8",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C58",
+      "claim": "The number of synapses onto DE-3R (531) was in the same range as the numbers previously reported for a juvenile ganglion (437 and 650).",
+      "claim_type": "EXPLICIT",
+      "source": "Our tracing revealed 531 synapses onto DE-3R. This was in the same range as the numbers previously reported for a juvenile ganglion (437 and 650) (Pipkin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with previous literature (Pipkin et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "f88495ca-2265-43ee-9491-b27416a9484e",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C59",
+      "claim": "No output synapses from DE-3R onto other cells in the ganglion were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Pipkin et al., 2016, we did not find any output synapses from DE-3R onto other cells in the ganglion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the tracing analysis and a comparison with previous literature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "bd393d03-c898-4d4c-9d9a-d8a36ce4916d",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C60",
+      "claim": "SBEM does not yet allow for the identification of gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused here on chemical synaptic connections, since SBEM does not yet allow for the identification of gap junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the SBEM method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "139267f6-dbae-49a0-92e2-a993fca1add6",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C61",
+      "claim": "Electrical synapses between DE-3R and their contralateral homologs as well as some interneurons do exist.",
+      "claim_type": "EXPLICIT",
+      "source": "However, electrical synapses between DE-3R and their contralateral homologs as well as some interneurons do exist (Fan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Fan et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "f784a44f-b5c2-4037-9cd2-43638bb1e1d3",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C62",
+      "claim": "21 neurons (including bilateral homologues) were previously found to be monosynaptically connected to the DE-3R motor neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous reports, 21 neurons (including bilateral homologues) were found to be monosynaptically connected to the DE-3R motor neuron (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a summary of previous literature and shown in Figure 12.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "549e4a92-6ee8-4b43-b2e8-fa56328be7eb",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C63",
+      "claim": "Four previously reported presynaptic partners (bilateral DI-1, 107, and L) were matched to the presynaptic partners seen in the VSD imaging and identified with sufficient confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those, four (bilateral DI-1, 107, and L) were matched to the presynaptic partners seen in the VSD imaging and identified with sufficient confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the cross-identification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "d1026cb6-5c25-4174-976c-78101a96b0b8",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C64",
+      "claim": "Six other new partners were confidently identified (VI-2, 8, 101, 102, 109, and 117).",
+      "claim_type": "EXPLICIT",
+      "source": "Six other new partners were confidently identified (VI-2, 8, 101, 102, 109, and 117), and a further 41 synaptic partners of DE-3R could not be confidently identified with any previously described neuron, mainly because our limited tracing did not allow a morphological identity match.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the cross-identification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "7aed96b5-49ab-40e8-8ab2-d8bb413656d8",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C65",
+      "claim": "41 synaptic partners of DE-3R could not be confidently identified with any previously described neuron, mainly because limited tracing did not allow a morphological identity match.",
+      "claim_type": "EXPLICIT",
+      "source": "Six other new partners were confidently identified (VI-2, 8, 101, 102, 109, and 117), and a further 41 synaptic partners of DE-3R could not be confidently identified with any previously described neuron, mainly because our limited tracing did not allow a morphological identity match.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the cross-identification analysis with an explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "b55facaf-f0f0-4b7c-94e1-95c77c6d6271",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C66",
+      "claim": "The activity patterns observed during all three fictive behaviors exhibited by the single leech in this study matched observations from a larger group of animals reported before.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity patterns observed during all three fictive behaviors exhibited by the single leech in this study (Figures 2, 3 and 4) matched observations from a larger group of animals reported before (Tomina and Wagenaar, 2017): The majority of neurons in the ganglion were phasically active during multiple behaviors, indicating substantial but not complete overlap between the circuits that govern the behaviors (Briggman and Kristan, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a comparison with previous literature (Tomina and Wagenaar, 2017; Briggman and Kristan, 2006).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "62f51e5f-7406-4042-aed6-33de6459e09c",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C67",
+      "claim": "The majority of neurons in the ganglion were phasically active during multiple behaviors, indicating substantial but not complete overlap between the circuits that govern the behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity patterns observed during all three fictive behaviors exhibited by the single leech in this study (Figures 2, 3 and 4) matched observations from a larger group of animals reported before (Tomina and Wagenaar, 2017): The majority of neurons in the ganglion were phasically active during multiple behaviors, indicating substantial but not complete overlap between the circuits that govern the behaviors (Briggman and Kristan, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result and cited from previous literature (Briggman and Kristan, 2006).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "89d4bdf8-a3d2-40a0-a5bc-662477e15837",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C68",
+      "claim": "The leech used in this study was representative of its species.",
+      "claim_type": "EXPLICIT",
+      "source": "There is considerable variation in the coherence values of specific cells between animals, but the data here fall within the range of values seen before. We conclude that the leech used in this study was representative of its species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on comparison with previous data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "5fdc1fe5-1feb-461e-8cb7-c45be2193f38",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C69",
+      "claim": "No evidence of modular organization in DE-3R was found other than a slight trend that swim-associated synapses tended to be located closer to the primary neurite.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found no evidence of such organization in DE-3R (Figure 10c,d) other than a slight trend that swim-associated synapses tended to be located closer to the primary neurite (Figure 10\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the spatial analysis and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "e1909431-362c-4f74-80ab-eb1ff6a4f021",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C70",
+      "claim": "The limited experimental evidence currently available suggests that even clusters of two synapses are functionally relevant in the mammalian cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the limited experimental evidence currently available suggests that even clusters of two synapses are functionally relevant in the mammalian cortex (Takahashi et al., 2012; Fu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Takahashi et al., 2012; Fu et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "8cab8900-7d8a-443a-bb24-5a40f5dbd65d",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C71",
+      "claim": "Individual dendritic branches act as integrative compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings from computational (Poirazi and Mel, 2001) and in vitro studies (Losonczy and Magee, 2006; Nevian et al., 2007) suggest that individual dendritic branches act as integrative compartments and that spatial synaptic clusters facilitate nonlinear dendritic integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Poirazi and Mel, 2001; Losonczy and Magee, 2006; Nevian et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "904b41e9-d38b-4a21-ba7b-d4e8172736f9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C72",
+      "claim": "Spatial synaptic clusters facilitate nonlinear dendritic integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings from computational (Poirazi and Mel, 2001) and in vitro studies (Losonczy and Magee, 2006; Nevian et al., 2007) suggest that individual dendritic branches act as integrative compartments and that spatial synaptic clusters facilitate nonlinear dendritic integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Poirazi and Mel, 2001; Losonczy and Magee, 2006; Nevian et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "215687d5-f1d0-4b48-9337-14055fb296f6",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C73",
+      "claim": "A set of parameter values was found for which synapses within spatial clusters also clustered in the phase space of the swim rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found a set of parameter values for which synapses within spatial clusters also clustered in the phase space of the swim rhythm and a different set of parameters for which synapses within spatial clusters also clustered in the phase space of the crawl rhythm (Figure 11b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the clustering analysis and shown in Figure 11b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "ab1b0897-57e9-4add-bf83-aed27c142b6d",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C74",
+      "claim": "A different set of parameters was found for which synapses within spatial clusters also clustered in the phase space of the crawl rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found a set of parameter values for which synapses within spatial clusters also clustered in the phase space of the swim rhythm and a different set of parameters for which synapses within spatial clusters also clustered in the phase space of the crawl rhythm (Figure 11b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the clustering analysis and shown in Figure 11b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "977026be-3413-496c-a50d-5affd7ea1098",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C75",
+      "claim": "Results were highly consistent between trials of the same behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Results were highly consistent between trials of the same behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the clustering analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "18fb265c-8643-400d-a320-761bb45b49b9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C76",
+      "claim": "The results of clustering were not consistent among local bending trials.",
+      "claim_type": "EXPLICIT",
+      "source": "(The results of clustering were not consistent among local bending trials. This may stem from a nature of this reflex behavior: the responsiveness of the population of neurons involving pressure sensation is variable, reflecting the plasticity of the circuit (Crisp and Burrell, 2009).)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result with a speculative explanation cited from previous literature (Crisp and Burrell, 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "cd63079b-b4fb-4362-8b4b-9d7ca94a1165",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C77",
+      "claim": "The responsiveness of the population of neurons involving pressure sensation is variable, reflecting the plasticity of the circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "(The results of clustering were not consistent among local bending trials. This may stem from a nature of this reflex behavior: the responsiveness of the population of neurons involving pressure sensation is variable, reflecting the plasticity of the circuit (Crisp and Burrell, 2009).)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Crisp and Burrell, 2009) as an explanation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "1c3077d7-241b-46ac-a020-b80f5e5477f9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C78",
+      "claim": "The strongest correspondence between spatial clusters and activity patterns was observed when synaptic clusters were defined by a maximum distance between nearest neighbors (dNN) of up to 10 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with earlier reports (Kleindienst et al., 2011), the strongest correspondence between spatial clusters and activity patterns was observed when synaptic clusters were defined by a maximum distance between nearest neighbors (dNN) of up to 10 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result and cited from previous literature (Kleindienst et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "2eaa6fcd-c52d-455a-ab92-73a03827553d",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C79",
+      "claim": "Computational and in vitro studies indicate that 10\u201320 synchronized inputs are required to trigger dendritic spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational and in vitro studies indicate that 10\u201320 synchronized inputs are required to trigger dendritic spikes (Ujfalussy and Makara, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Ujfalussy and Makara, 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "a9933de9-013a-445a-b239-05e5450c0439",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C80",
+      "claim": "Existing in vivo studies have found synchrony in only up to five neighboring dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing in vivo studies, however, have found synchrony in only up to five neighboring dendritic spines, making it unclear what the impact of the synaptic clusters on the membrane potential of the posysynaptic neuron might be.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of previous in vivo studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "706dcb3d-825e-4fe5-be64-71cb1c948912",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C81",
+      "claim": "Clusters of up to 23 synaptic members can display synchronous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our results indicate that clusters of up to 23 synaptic members can display synchronous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "5646d02a-6046-4580-ac84-56638bfe8ce5",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C82",
+      "claim": "Leech neurons have a unipolar morphology with the somata strictly segregated from neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "Leech neurons\u2014along with most neurons in the central nervous systems of other annelids, arthopods, and molluscs\u2014have a unipolar morphology with the somata strictly segregated from neuropil (Bullock and Horridge, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Bullock and Horridge, 1965).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "998a6323-b06e-4ac4-8d4c-877948eed1a9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C83",
+      "claim": "With notable exceptions, leech somata are thought to play a relatively minor role in the integration of synaptic inputs to action potential outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "With notable exceptions (including sensory neurons in the leech and select insect motorneurons [Hancox and Pitman, 1992]), these somata are thought to play a relatively minor role in the integration of synaptic inputs to action potential outputs (Andjelic and Torre, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature (Hancox and Pitman, 1992; Andjelic and Torre, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "638849bf-4e42-4130-8b94-f678eae57a25",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C84",
+      "claim": "The completeness of the functional dataset in combination with anatomical data makes for an attractive basis for simulation studies to arrive at a computational understanding of multifunctional neuronal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Even so, the completeness of our functional dataset in combination with our anatomical data makes for an attractive basis for simulation studies to arrive at a computational understanding of multifunctional neuronal circuits (Real et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application and cited from previous literature (Real et al., 2017).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "edd16e21-4b39-4254-ace4-eefec608be52",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C85",
+      "claim": "The data may serve as a large-scale ground truth for EM segmentation algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data may also serve as a large-scale ground truth for EM segmentation algorithms (Plaza and Funke, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application and cited from previous literature (Plaza and Funke, 2018).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "7eed8e9b-e786-42f0-a5d9-46603af8e2d4",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C86",
+      "claim": "This study represents an important step in a combined approach to studying multifunctional circuits at the synaptic level.",
+      "claim_type": "EXPLICIT",
+      "source": "This study not only represents an important step in a combined approach to studying multifunctional circuits at the synaptic level, but also lays the groundwork for a comprehensive neuronal mapping of a whole ganglion that semi-autonomously processes local sensory information and controls segmental movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary claim by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "bd41536a-118e-416a-b7c1-14d1f0c127ef",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C87",
+      "claim": "This study lays the groundwork for a comprehensive neuronal mapping of a whole ganglion that semi-autonomously processes local sensory information and controls segmental movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This study not only represents an important step in a combined approach to studying multifunctional circuits at the synaptic level, but also lays the groundwork for a comprehensive neuronal mapping of a whole ganglion that semi-autonomously processes local sensory information and controls segmental movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary claim by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "5b050a46-9a7c-467d-be15-52b8fc2c2ca6",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C88",
+      "claim": "The combination of anatomical methods with synaptic resolution and imaging techniques that can record from the entirety of the neurons of a circuit promises an extraordinary opportunity to assess neural computations at the level of circuit dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of anatomical methods with synaptic resolution and imaging techniques that can record from the entirety of the neurons of a circuit promises an extraordinary opportunity to assess neural computations at the level of circuit dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a forward-looking claim by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "4dc922d5-29ce-47dc-9140-221c5dea481c",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C89",
+      "claim": "Functional maps from recorded activity combined with anatomical connectomes are poised to become a powerful tool to have a better understanding of complex behaviors and to predict the outcomes of new manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional maps (Alivisatos et al., 2012) from recorded activity combined with anatomical connectomes (Denk et al., 2012; Bargmann and Marder, 2013; Morgan and Lichtman, 2013) are therefore poised to become a powerful tool not only to have a better understanding of complex behaviors, but also to predict the outcomes of new manipulations Devor et al., 2013; Kandel et al., 2013; Wang et al., 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a forward-looking claim and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "9a6c1360-4cfe-4789-aeeb-7b7cb0ae683d",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C90",
+      "claim": "This new addition with the annelid species to the developing field would pave the way for comparative approaches by functional connectomics to study evolutionary aspects of neuronal design.",
+      "claim_type": "EXPLICIT",
+      "source": "This new addition with the annelid species to the developing field would also pave the way for comparative approaches by functional connectomics to study evolutionary aspects of neuronal design (Laurent, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a forward-looking claim and cited from previous literature (Laurent, 2020).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "162c2b58-beaf-41aa-bce2-f40ee0bfa49e",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C91",
+      "claim": "The spectral power in the images exceeded the noise floor set by shot noise at spatial frequencies up to about 20 lines/\u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectral power in our images exceeded the noise floor set by shot noise at spatial frequencies up to about 20 lines/\u03bcm (Figure 6\u2014figure supplement 2), corresponding to an effective pixel size of about 25 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the image quality analysis and shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "8925c9fb-b0ed-4b41-997d-05cca56898fa",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C92",
+      "claim": "The effective pixel size of the SBEM images was about 25 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectral power in our images exceeded the noise floor set by shot noise at spatial frequencies up to about 20 lines/\u03bcm (Figure 6\u2014figure supplement 2), corresponding to an effective pixel size of about 25 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result derived from the spectral analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "85f5c08b-cd3e-40d0-94e6-a91c258c75b2",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C93",
+      "claim": "Synaptic vesicles appear merely as gray granules in the SBEM images because of limited resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of limited resolution in our SBEM images, synaptic vesicles appear merely as gray granules (Figure 6c,d), but fields of such granules were clearly distinct from other gray areas in the SBEM images.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 6c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "9cb04499-19b9-4a15-81de-f77ec5478b70",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C94",
+      "claim": "Fields of granules were clearly distinct from other gray areas in the SBEM images.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of limited resolution in our SBEM images, synaptic vesicles appear merely as gray granules (Figure 6c,d), but fields of such granules were clearly distinct from other gray areas in the SBEM images.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 6c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "dbbde3a1-9bb3-4a81-a8df-5f4d62cdd16b",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C95",
+      "claim": "Comparison with digitally blurred TEM images confirmed the interpretation of granular areas as vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with digitally blurred TEM images (Figure 6\u2014figure supplement 1) confirmed this interpretation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a validation and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "b85760fa-519f-4acd-8e98-85a93bb56c73",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "claim_id": "C96",
+      "claim": "Granular areas were concentrated in fiber endings and varicosities.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that granular areas were concentrated in fiber endings and varicosities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the SBEM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "164eacd7-835f-4611-aee7-aad6c2d0a503",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully combined voltage-sensitive dye (VSD) imaging with serial blockface electron microscopy (SBEM) to record neuronal activity from 250 neurons during fictive behaviors and then reconstruct the full anatomy of motor neuron DE-3R and its 531 input synapses, identifying 51 presynaptic neurons with at least 2 synapses, of which 35 were matched to VSD recordings and 10 to previously described neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C31-C46 collectively demonstrate successful integration of VSD imaging and SBEM at an unprecedented scale. The methodological details (C21-C22, C32-C39) are well-documented, and the quantitative results (C40-C46) provide specific numbers for traced structures and identified connections. The cross-referencing between imaging modalities via X-ray tomography (C36-C37) strengthens the validity of the anatomical-functional correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "0595186b-1f65-4a9f-ad83-8c87eda423b9",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Input synapses onto DE-3R were widely distributed across its branches, but functional clustering analysis revealed behavior-specific spatial organization: synapses clustered in phase space during swimming had optimal spatial parameters at dext \u2248 61-65 \u03bcm, while crawling-related clusters had optimal parameters at dext \u2248 14-18 \u03bcm, with nearest-neighbor distances of up to 10 \u03bcm showing strongest correspondence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C53-C56 are directly supported by the clustering analysis results shown in Figure 11. The quantitative parameters (C54-C55, C78) are explicitly stated with error estimates, and the consistency across trials (C75) strengthens the findings. The behavior-specific differences in spatial clustering parameters (C56, C73-C74) represent a key discovery that is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "8d53273e-020c-4ab0-a459-3b98d9ef4cd4",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A weak but statistically significant positive correlation (0.16 \u00b1 0.12, p = 0.011) was found between synapse count and coherence magnitude across eight behavioral trials, though no individual trial showed significant correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 reports statistical significance for the average correlation across trials (p = 0.011), but acknowledges that no individual correlation was significant. This raises concerns about the robustness of the finding. The weak correlation magnitude (0.16) and high variability (SD = 0.12) suggest limited predictive power. The use of multiple comparisons without correction and the post-hoc averaging approach warrant caution in interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "51e62fda-24f6-46d3-a89a-92fe482fcd1c",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "No macroscopic spatial organization was found for excitatory versus inhibitory synapses or for behavior-specific synapses on DE-3R, except for a slight trend that swim-associated synapses were located closer to the primary neurite.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 and C69 report negative findings that are clearly stated and supported by the spatial distribution analyses shown in Figure 10. The absence of macroscopic organization is an important finding that constrains models of dendritic computation. The slight trend mentioned (C69) is appropriately qualified as weak. These negative results are valuable for understanding the organization principles of multifunctional circuits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The reconstructed DE-3R morphology and synapse count (531) matched previous studies, but the authors found six new presynaptic partners and could not identify 41 partners with previously described neurons, while notably finding no output synapses from DE-3R unlike a previous report.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 establish consistency with prior work, validating the current approach. The identification of new partners (C64) and the inability to match many neurons (C65) are honestly reported with reasonable explanations. The discrepancy regarding output synapses (C59) is a notable difference from Pipkin et al. 2016, but the authors appropriately acknowledge this without over-interpreting. The cross-identification results (C62-C65) demonstrate both the power and limitations of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "b13b691e-7a95-403d-9ff3-14b3b17c2950",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The activity patterns during all three fictive behaviors in this single leech matched previous observations from larger groups, with most neurons phasically active during multiple behaviors, indicating the leech was representative of its species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 establish that the single animal studied is representative of the species by comparing to previous multi-animal studies (Tomina and Wagenaar, 2017). This validation is critical for a study based on n=1 animal. The comparison to prior work (C66-C67) and the explicit statement about representativeness (C68) appropriately address the limitation of single-animal analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "43150ea7-65de-4167-afe2-9b6d7c6a6c57",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Clustering results were inconsistent among local bending trials, possibly due to variable responsiveness of pressure-sensing neurons reflecting circuit plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 reports inconsistent results for local bending, which is honestly acknowledged. However, the explanation offered (C77) is speculative and based on a citation about circuit plasticity. The inconsistency could also reflect methodological limitations, insufficient statistical power, or genuine biological variability. Without additional experiments or analysis, the cause of inconsistency remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "0064d66d-2a46-4b71-8af6-7e8bb5796736",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Clusters of up to 23 synaptic members can display synchronous activity, exceeding the 5 synapses previously observed in vivo studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by the clustering analysis (Table 2) which shows clusters with up to 23 synapses. This finding is significant as it exceeds previous in vivo observations (C80) and approaches the 10-20 inputs predicted by computational models (C79) to trigger dendritic spikes. The result is clearly stated and supported by the data, though functional validation of these clusters would strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "7d47660a-bcac-4636-9273-df4ce1e1d578",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SBEM image quality analysis revealed effective resolution of ~25 nm based on spectral power analysis, with synaptic vesicles appearing as gray granules that were validated by comparison with TEM images and concentrated in fiber endings and varicosities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C96 provide thorough characterization of image quality and synapse identification criteria. The spectral analysis (C91-C92) quantitatively establishes resolution, while the TEM validation (C95) confirms interpretation of granular areas as vesicles (C93-C94). The methodological rigor in establishing these criteria (C96) is essential for the reliability of the subsequent tracing and synapse identification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "8ac39d2a-9a91-491a-af65-6ce18830b523",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study focused on chemical synapses because SBEM cannot yet identify gap junctions, though electrical synapses between DE-3R and other neurons are known to exist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 clearly acknowledge a significant limitation of the SBEM approach. The authors appropriately note that gap junctions exist (C61, citing Fan et al. 2005) but cannot be identified with current SBEM methods (C60). This honest reporting of limitations is important for interpreting the completeness of the connectome reconstruction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "4404b3ce-cb79-44dc-8969-47affeb88c9d",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Motor neuron DE-3 plays three distinct dynamical roles in different behaviors: oscillating at 2 Hz in antiphase to VE-4 during swimming, active in phase with VE-4 during crawling, and operating in concert with its contralateral homolog and VE-4 during local bending.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C10-C12 describe the multifunctional nature of DE-3, which is the central motivation for the study. These are established facts from prior literature and are confirmed by the VSD recordings in Figures 2-4. The distinct roles in different behaviors provide the biological context for investigating how a single neuron can participate in multiple circuits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    },
+    {
+      "id": "6995e438-6d28-4a23-88af-d53a3b82cfb6",
+      "content_id": "12455c37-7f8a-4eb5-8055-06b9bfa05c4c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that their dataset provides a foundation for computational modeling of multifunctional circuits, ground truth for EM segmentation algorithms, comprehensive ganglion mapping, and comparative functional connectomics approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C90 are forward-looking statements about potential applications and future work. While the dataset may indeed be valuable for these purposes (C84-C85 are reasonable given the data completeness), the broader claims about advancing the field (C86-C90) are speculative. These represent aspirational goals rather than demonstrated results. The value of the dataset for these purposes remains to be established through future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:22:08.131865Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b82c8658-b20f-4ac4-b049-23c54296f268",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "25a375cf-2718-4f9f-9c30-efd18fc0c846",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "549333aa-db48-4add-9fb0-334589f6a0f3",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "2b011330-1814-44e5-b1bd-b962ae960483",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "49e15199-8105-411f-b39f-7a271def0280",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "efca74c6-4960-44e1-9d47-1e60c4588470",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "e9099f86-d07b-4bbe-a1a3-c78345e9c8b3",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "d62dfe24-5fb3-4686-a06d-4cba4cb4222f",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "7350218a-9ec7-4e81-8262-9b635604d7a0",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "59bcacbd-a07e-4d01-a1ee-0d91cfe3e319",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "fb2247f7-0613-466a-937d-c3d33f366630",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "28bd9374-1597-424d-85f7-e757c332b840",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "9c529d61-8eeb-42b1-8230-5be708f4a09b",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "020aec91-6dec-40de-8e21-2eeb33024cfc",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "f2355337-f5ff-44a4-b4e0-7934ae31f7c5",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "ef47a1a5-3524-4176-82aa-1e054a071961",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "64d57df8-aa0c-40c1-bf61-92b6af516310",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "ddf4d07b-50ba-49e9-b684-14e6e3d079d9",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "8e083de4-79a5-40c0-b075-cc2c28c5693e",
+      "result_id": "164eacd7-835f-4611-aee7-aad6c2d0a503"
+    },
+    {
+      "claim_id": "acb75d05-33e4-44e6-adec-bd6d15cee694",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "ba72e1c7-34c8-4557-952c-eaaadb250e7f",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "e6834c1d-82d2-432a-8c23-92d8c0b5e8a1",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "1d211c65-ebb2-4815-84c1-2a3de2de46c9",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "a3a9bacc-6964-469f-bc59-f1a053a1c4d6",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "27719b0b-9c1a-4191-9668-29cc866e235d",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "215687d5-f1d0-4b48-9337-14055fb296f6",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "ab1b0897-57e9-4add-bf83-aed27c142b6d",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "977026be-3413-496c-a50d-5affd7ea1098",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "1c3077d7-241b-46ac-a020-b80f5e5477f9",
+      "result_id": "0595186b-1f65-4a9f-ad83-8c87eda423b9"
+    },
+    {
+      "claim_id": "54eaa967-777c-48af-a4fa-0a91abe927d9",
+      "result_id": "8d53273e-020c-4ab0-a459-3b98d9ef4cd4"
+    },
+    {
+      "claim_id": "8765380c-5e39-4456-a0c4-b5beef4e14cd",
+      "result_id": "51e62fda-24f6-46d3-a89a-92fe482fcd1c"
+    },
+    {
+      "claim_id": "39f191cc-d4c4-4529-aa71-8ca58911af4b",
+      "result_id": "51e62fda-24f6-46d3-a89a-92fe482fcd1c"
+    },
+    {
+      "claim_id": "5fdc1fe5-1feb-461e-8cb7-c45be2193f38",
+      "result_id": "51e62fda-24f6-46d3-a89a-92fe482fcd1c"
+    },
+    {
+      "claim_id": "ac9008cf-6f61-4d9f-8bb5-2e50633ed3d4",
+      "result_id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c"
+    },
+    {
+      "claim_id": "2f113b5a-d500-4406-bc6b-d688cafe3fd8",
+      "result_id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c"
+    },
+    {
+      "claim_id": "f88495ca-2265-43ee-9491-b27416a9484e",
+      "result_id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c"
+    },
+    {
+      "claim_id": "f784a44f-b5c2-4037-9cd2-43638bb1e1d3",
+      "result_id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c"
+    },
+    {
+      "claim_id": "549e4a92-6ee8-4b43-b2e8-fa56328be7eb",
+      "result_id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c"
+    },
+    {
+      "claim_id": "d1026cb6-5c25-4174-976c-78101a96b0b8",
+      "result_id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c"
+    },
+    {
+      "claim_id": "7aed96b5-49ab-40e8-8ab2-d8bb413656d8",
+      "result_id": "52b08d6f-a858-46f3-9b4f-a8e2f14f596c"
+    },
+    {
+      "claim_id": "b55facaf-f0f0-4b7c-94e1-95c77c6d6271",
+      "result_id": "b13b691e-7a95-403d-9ff3-14b3b17c2950"
+    },
+    {
+      "claim_id": "62f51e5f-7406-4042-aed6-33de6459e09c",
+      "result_id": "b13b691e-7a95-403d-9ff3-14b3b17c2950"
+    },
+    {
+      "claim_id": "89d4bdf8-a3d2-40a0-a5bc-662477e15837",
+      "result_id": "b13b691e-7a95-403d-9ff3-14b3b17c2950"
+    },
+    {
+      "claim_id": "18fb265c-8643-400d-a320-761bb45b49b9",
+      "result_id": "43150ea7-65de-4167-afe2-9b6d7c6a6c57"
+    },
+    {
+      "claim_id": "cd63079b-b4fb-4362-8b4b-9d7ca94a1165",
+      "result_id": "43150ea7-65de-4167-afe2-9b6d7c6a6c57"
+    },
+    {
+      "claim_id": "706dcb3d-825e-4fe5-be64-71cb1c948912",
+      "result_id": "0064d66d-2a46-4b71-8af6-7e8bb5796736"
+    },
+    {
+      "claim_id": "162c2b58-beaf-41aa-bce2-f40ee0bfa49e",
+      "result_id": "7d47660a-bcac-4636-9273-df4ce1e1d578"
+    },
+    {
+      "claim_id": "8925c9fb-b0ed-4b41-997d-05cca56898fa",
+      "result_id": "7d47660a-bcac-4636-9273-df4ce1e1d578"
+    },
+    {
+      "claim_id": "85f5c08b-cd3e-40d0-94e6-a91c258c75b2",
+      "result_id": "7d47660a-bcac-4636-9273-df4ce1e1d578"
+    },
+    {
+      "claim_id": "9cb04499-19b9-4a15-81de-f77ec5478b70",
+      "result_id": "7d47660a-bcac-4636-9273-df4ce1e1d578"
+    },
+    {
+      "claim_id": "dbbde3a1-9bb3-4a81-a8df-5f4d62cdd16b",
+      "result_id": "7d47660a-bcac-4636-9273-df4ce1e1d578"
+    },
+    {
+      "claim_id": "b85760fa-519f-4acd-8e98-85a93bb56c73",
+      "result_id": "7d47660a-bcac-4636-9273-df4ce1e1d578"
+    },
+    {
+      "claim_id": "bd393d03-c898-4d4c-9d9a-d8a36ce4916d",
+      "result_id": "8ac39d2a-9a91-491a-af65-6ce18830b523"
+    },
+    {
+      "claim_id": "139267f6-dbae-49a0-92e2-a993fca1add6",
+      "result_id": "8ac39d2a-9a91-491a-af65-6ce18830b523"
+    },
+    {
+      "claim_id": "baf9bc78-2b79-410e-b0e2-07df7668eade",
+      "result_id": "4404b3ce-cb79-44dc-8969-47affeb88c9d"
+    },
+    {
+      "claim_id": "7ce0079b-af30-444d-bc85-de708214728c",
+      "result_id": "4404b3ce-cb79-44dc-8969-47affeb88c9d"
+    },
+    {
+      "claim_id": "bf2bbb16-f3b4-48f1-8506-b5cfefa4bfda",
+      "result_id": "4404b3ce-cb79-44dc-8969-47affeb88c9d"
+    },
+    {
+      "claim_id": "f0b98c20-d4d5-4ff0-8260-bcba2b6646bd",
+      "result_id": "4404b3ce-cb79-44dc-8969-47affeb88c9d"
+    },
+    {
+      "claim_id": "638849bf-4e42-4130-8b94-f678eae57a25",
+      "result_id": "6995e438-6d28-4a23-88af-d53a3b82cfb6"
+    },
+    {
+      "claim_id": "edd16e21-4b39-4254-ace4-eefec608be52",
+      "result_id": "6995e438-6d28-4a23-88af-d53a3b82cfb6"
+    },
+    {
+      "claim_id": "7eed8e9b-e786-42f0-a5d9-46603af8e2d4",
+      "result_id": "6995e438-6d28-4a23-88af-d53a3b82cfb6"
+    },
+    {
+      "claim_id": "bd41536a-118e-416a-b7c1-14d1f0c127ef",
+      "result_id": "6995e438-6d28-4a23-88af-d53a3b82cfb6"
+    },
+    {
+      "claim_id": "5b050a46-9a7c-467d-be15-52b8fc2c2ca6",
+      "result_id": "6995e438-6d28-4a23-88af-d53a3b82cfb6"
+    },
+    {
+      "claim_id": "4dc922d5-29ce-47dc-9140-221c5dea481c",
+      "result_id": "6995e438-6d28-4a23-88af-d53a3b82cfb6"
+    },
+    {
+      "claim_id": "9a6c1360-4cfe-4789-aeeb-7b7cb0ae683d",
+      "result_id": "6995e438-6d28-4a23-88af-d53a3b82cfb6"
+    }
+  ],
+  "comparisons": []
+}

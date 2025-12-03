@@ -1,0 +1,1716 @@
+{
+  "submission": {
+    "id": "2fb807a4-90a8-49b1-874b-44169b8fd1d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:41:21.687693Z",
+    "updated_at": "2025-12-03T03:41:21.687693Z"
+  },
+  "content": [
+    {
+      "id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "submission_id": "2fb807a4-90a8-49b1-874b-44169b8fd1d4",
+      "content_type": "manuscript",
+      "content_text": "# Associations of topic-specific peer review outcomes and institute and center award rates with funding disparities at the National Institutes of Health\n\n## Authors\n\n- Michael S Lauer<sup>1</sup> ([ORCID: 0000-0002-9217-8177](https://orcid.org/0000-0002-9217-8177)) \u2020\n- Jamie Doyle<sup>2</sup>\n- Joy Wang<sup>3</sup>\n- Deepshikha Roychowdhury<sup>3</sup>\n\n### Affiliations\n\n1. Office of the Director, National Institutes of Health Bethesda United States\n2. Division of Clinical Innovation, National Center for Advancing Translational Sciences Bethesda United States\n3. Office of Extramural Research, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA previous report found an association of topic choice with race-based funding disparities among R01 applications submitted to the National Institutes of Health (\u2018NIH\u2019) between 2011 and 2015. Applications submitted by African American or Black (\u2018AAB\u2019) Principal Investigators (\u2018PIs\u2019) skewed toward a small number of topics that were less likely to be funded (or \u2018awarded\u2019). It was suggested that lower award rates may be related to topic-related biases of peer reviewers. However, the report did not account for differential funding ecologies among NIH Institutes and Centers (\u2018ICs\u2019). In a re-analysis, we find that 10% of 148 topics account for 50% of applications submitted by AAB PIs. These applications on \u2018AAB Preferred\u2019 topics were funded at lower rates, but peer review outcomes were similar. The lower rate of funding for these topics was primarily due to their assignment to ICs with lower award rates, not to peer-reviewer preferences.\n\n## Introduction\n\nData recently reported by Hoppe et al., 2019 from the National Institutes of Health ('NIH') suggest that part of the well-documented funding disparity (Ginther et al., 2011) affecting African-American Black ('AAB') principal investigators ('PIs') may be related to the topic of their applications. The authors of that report (including the first author of this report) found that topic choice accounted for over 20% of the disparity and wondered whether biases on the part of peer reviewers might explain why some application topics fare less well when submitted to the NIH for consideration of funding. In other words, peer reviewers might prefer certain topics over others, and specifically may be biased against applications focused on topics preferred by AAB PI\u2019s.\n\nHowever, peer review outcomes are not the only determinant of funding. Across the agency, grants are not simply awarded in order of peer review scores (Taffe and Gilpin, 2021). One reason is that applications submitted to the NIH are not just submitted to NIH; they are assigned to one of 24 grant-issuing institutes or centers ('ICs') that in turn make decisions about which applications to fund. The proportion of applications funded (or 'award rate') varies across ICs; therefore, we can think of the NIH process as not one competition hinging entirely on peer review but rather as 24 separate competitions. The variability of award rates relates to differences in number of applications each IC receives, available funds, and IC priorities.\n\nHoppe et al., 2019 did not account for IC assignment or variation in IC-specific award rates. It is possible that the apparent link between topic choice and funding disparities may reflect differences in IC assignment, since ICs receive applications according to alignment with their stated mission. For example, applications focusing on cancer epidemiology are more likely to be assigned to the National Cancer Institute while those focusing on basic human biology are more likely to be assigned to the National Institute of General Medical Sciences. If award rates at the National Institutes of General Medical Sciences are higher than at the National Cancer Institute, it might appear that NIH 'prefers' basic human biology over cancer epidemiology. While the former topic does fare better with a higher likelihood of funding, this may be largely because of different IC award rates as opposed to differences in how the topics are received by peer reviewers.\n\nWe therefore re-analyzed the data from Hoppe et al., 2019 focusing on topic-specific peer review outcomes according to AAB PI preferences and on the possible role of IC assignment in application outcomes. To minimize well-documented biases related to repeated looks by the peer review system on individual proposals (from resubmissions [Lauer, 2017] or competing renewals [Lauer, 2016]) we focus on de novo applications submitted to the NIH for the first time.\n\n## Materials and methods\n\nThese analyses are based on R01 applications submitted to NIH between 2011 and 2015. Hoppe et al., 2019 described in detail NIH peer review processes and the 'Word2vec' algorithm Mikolov et al., 2013 used to designate a topic for each application. Briefly, each application is assigned to a peer review group; approximately 2% of applications are withdrawn prior to review for administrative reasons. After a preliminary pre-meeting review, approximately half are deemed to be potentially meritorious and are therefore discussed during a formally convened meeting. After the meeting, each discussed application receives a priority score ranging from 10 (best) to 90 (worst); many, but not all, applications also receive a 'percentile ranking' to account for differences in how individual peer review groups calibrate their scores.\n\nApplications are not only assigned to peer review groups; they are also assigned to ICs. The Center of Scientific Review (CSR) Division of Receipt and Referral makes assignments (CSR, 2021) based on IC interests, specific Funding Opportunity Announcements (as appropriate), and sometimes on applicant request. Some applications receive a dual assignment (that is, two ICs with one primary and one secondary), but changes in primary IC assignment occur less than 2% of the time. ICs ultimately make decisions about which applications to fund, with funding decisions based on peer review scores, strategic priorities, and availability of funds (NIH, 2021c).\n\n### Data and descriptive measures\n\nTo eliminate biases due to prior reviews and to maximize the likelihood that the analysis data frame reflects comparable observations with independently distributed variables, we focused on applications coming to the NIH for the first time; in other words, we excluded resubmissions (Lauer, 2017) and competing renewals (Lauer, 2016) which are known to systematically fare better on peer review. Each application was designated to one of 148 topics identified by the Word2vec algorithm (Mikolov et al., 2013). Hoppe et al., 2019 stated there were 150 topics, but subsequently discovered data processing errors for two topics yielded 148 for the re-analysis.\n\nFor each topic, we counted the number of applications of submitted by AAB PIs. We assessed AAB preference for each topic t by calculating the proportion of all AAB applications within that topic, that is\n\n$$\nP_{A\u2062A\u2062B}=(\\sumi=1na\u2062a\u2062b)/(\\sumi=1Na\u2062a\u2062b)\n$$\n\nwhere i refers to individual applications, n is the number of applications in topic t, aab is an indicator of whether application i had an African American or Black contact PI (1 if yes, 0 if no), and N is total number of applications (across all topics). For each IC, we calculated award rates A as number of applications funded divided by number of applications assigned, that is\n\n$$\nA_{I\u2062C}=\\frac{\\sum_{i=1}^{m}a}{m}\n$$\n\nwhere m is the number of applications received by the IC and a is an indicator of whether an application i was awarded (1 if yes, 0 if no). Similarly, for each topic we calculated awards rates as\n\n$$\nA_{t}=\\frac{\\sum_{i=1}^{n}a}{n}\n$$\n\nwhere again a is an indicator of whether an application i was awarded (1 if yes, 0 if no) and n is the number of applications in the topic. We estimated a predicted award rate for each topic by designating the probability for funding for each application i as its IC award rate (in other words, if an application i was assigned to NEI, the probability of funding was 0.15). Thus, the predicted topic award rate was\n\n$$\nA^_{t}=\\frac{\\sum_{i=1}^{n}a^}{n}\n$$\n\nwhere $a^$ is the award rate for the IC to which each application i is assigned and n is the number of applications in the topic.\n\nFor each topic, we calculated two peer review outcomes. The proportion of applications making it to discussion (or 'discussed') was\n\n$$\nD_{t}=\\frac{\\sum_{i=1}^{n}d}{n}\n$$\n\nwhere d is an indicator of whether an application i was discussed (1 if yes, 0 if no) and n is the number of applications in the topic. For those applications that were discussed and therefore received a priority score, we calculated a topic-specific mean score as\n\n$$\ns\u00af_{t}=\\frac{\\sum_{i=1}^{l}s}{l}\n$$\n\nwhere l is the number of applications in that topic that made it to discussion and s is the priority score of each application i.\n\n### Regression analyses\n\nFigure 1 shows the association of cumulative percentage of AAB applications by the cumulative percentage of topics. Consistent with Hoppe et al., 2019, there was a nonrandom distribution whereby 10% of topics (or 15 topics) accounted for 50% of AAB applications, while 25% of the topics accounted for 70% of AAB applications. We designted a topic as 'AAB Preferred' if it was among the 15 topics that accounted for 50% of AAB applications.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67173/elife-67173-fig1-v2.jpg)\n\n**Figure 1.:** Each dot represents a topic; the first dot on the lower left corner shows that this one topic accounted for over 8% of all applications submitted by an AAB PI. Dashed vertical lines show that 10% of the topics accounted for 50% of the applications submitted by AAB Principal Investigators and that 25% of the topics accounted for 70% of the applications submitted by AAB Principal Investigators. AAB\u00a0=\u00a0African American or Black.\n\nTo further assess the association of topic choice with peer review outcomes, we focused on applications that were discussed and therefore received a priority score. We constructed a plot of topic-specific mean peer review scores according to number of applications in each topic. We expected to find a greater variance of mean scores for topics receiving fewer applications ('regression to the mean'). We generated a linear regression model to estimate a predicted mean score for each topic based on topic size (namely the number of submitted applications that were discussed for each topic), and calculated a residual for each topic by subtracting from each topic-specific mean score the model-based predicted mean score. We compared the distribution of residuals for AAB preferred topics and other topics.\n\nWe next performed a series of probit regression analyses of application funding as\n\n$$\nY_{i}=\\beta_{0}+\\beta_{1}PI_{AAB}+\\beta_{2}T_{AABP}+\\beta_{3}A_{IC}+\\betaX+\u03f5\n$$\n\nwhere $P\u2062I_{A\u2062A\u2062B}$ is an indicator variable for whether application i had an African American or Black PI (yes\u00a0or no), $T_{A\u2062A\u2062B\u2062P}$ is an indicator variable for whether application i focused on an AAB Preferred topic (yes\u00a0or no), $A_{I\u2062C}$ is the IC award rate (Equation 2), and $\ud835\udc17$\u00a0corresponds\u00a0to variables including 'Early Stage Investigator' status, whether application i designated more than one PI, and whether the proposed research in application i involved animal and/or human subjects. Early Stage Investigators were those PIs within 10 years of their terminal research degree or completion of clinical training. Akaike Information Criteria, Bayesian Information Criteria, and Log Likelihood values informed model strength.\n\nAll analyses used R (R Foundation, 2021) packages, including tidyverse (Wickham et al., 2019), ggplot2 (Wickham, 2016), finalfit (Harrison, 2020), and texreg (Leifeld, 2013).\n\n## Results\n\nOf 157,405 applications received, there were, after exclusion of pre-review withdrawals, resubmissions and competing renewals, 96,697 applications considered and reviewed by NIH for the first time. Of these 8381 were funded, for an overall award rate of 9%. The vast majority of applications (88%) were reviewed in the NIH Center for Scientific Review (or CSR). There were 1643 applications, or 2%, submitted by AAB PIs. Table 1 shows IC-specific values for applications received, applications funded, award rates (Equation 2), and percent applications coming from AAB PIs. Of note, award rates varied from 6% to 15%, while the proportion of applications with AAB PIs ranged from\u00a0<1% to nearly 15%. We also show 2015 appropriations for each IC (NIH, 2021b).\n\n**Table 1.**\n Application characteristics according to Institute or Center (IC), as ranked by award rate (Equation 2, highest to lowest).AAB\u00a0=\u00a0African American or Black; PI\u00a0=\u00a0Principal Investigator; EY\u00a0=\u00a0National Eye Institute; DC\u00a0=\u00a0National Institute of Deafness and Communications Disorders; GM\u00a0=\u00a0National Institute of General Medical Sciences; DE\u00a0=\u00a0National Institute of Dental and Craniofacial Research; MH\u00a0=\u00a0National Institute of Mental Health; DA\u00a0=\u00a0National Institute on Drug Abuse; NS\u00a0=\u00a0National Institute of Neurological Disorders and Stroke; NR\u00a0=\u00a0National Institute of Nursing Research; HL\u00a0=\u00a0National Heart, Lung, and Blood Institute; AI\u00a0=\u00a0National Institute of Allergy and Infectious Diseases; ES\u00a0=\u00a0National Institute of Environmental Health Sciences; DK\u00a0=\u00a0National Institute of Diabetes and Digestive and Kidney Disease; AA\u00a0=\u00a0National Institute on Alcohol Abuse and Alcoholism; AG\u00a0=\u00a0National Institute on Aging; EB\u00a0=\u00a0National Institute of Biomedical Imaging and Bioengineering; CA\u00a0=\u00a0National Cancer Institute; HD\u00a0=\u00a0Eunice Kennedy Shriver National Institute of Child Health and Human Development; MD\u00a0=\u00a0National Institute on Minority Health and Health Disparities; AR\u00a0=\u00a0National Institute of Arthritis and Musculoskeletal and Skin Diseases. Data for ICs with cell sizes not exceeding 11 are not shown due to privacy concerns. Final columns shows 2015 appropriations in billions of dollars.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>IC</th>\n      <th>Applications(N)</th>\n      <th>Awards(N)</th>\n      <th>Award rate(%)</th>\n      <th>AAB\u00a0PI</th>\n      <th>AAB(%)</th>\n      <th>Appropriations($B)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EY</td>\n      <td>2026</td>\n      <td>315</td>\n      <td>15.5</td>\n      <td>14</td>\n      <td>0.69</td>\n      <td>0.684</td>\n    </tr>\n    <tr>\n      <td>GM</td>\n      <td>9781</td>\n      <td>1266</td>\n      <td>12.9</td>\n      <td>113</td>\n      <td>1.16</td>\n      <td>2.371</td>\n    </tr>\n    <tr>\n      <td>DC</td>\n      <td>1145</td>\n      <td>141</td>\n      <td>12.3</td>\n      <td>13</td>\n      <td>1.14</td>\n      <td>0.405</td>\n    </tr>\n    <tr>\n      <td>DE</td>\n      <td>1282</td>\n      <td>140</td>\n      <td>10.9</td>\n      <td>26</td>\n      <td>2.03</td>\n      <td>0.400</td>\n    </tr>\n    <tr>\n      <td>MH</td>\n      <td>5067</td>\n      <td>536</td>\n      <td>10.6</td>\n      <td>87</td>\n      <td>1.72</td>\n      <td>1.463</td>\n    </tr>\n    <tr>\n      <td>DA</td>\n      <td>3606</td>\n      <td>359</td>\n      <td>10.0</td>\n      <td>66</td>\n      <td>1.83</td>\n      <td>1.029</td>\n    </tr>\n    <tr>\n      <td>NS</td>\n      <td>6786</td>\n      <td>668</td>\n      <td>9.8</td>\n      <td>77</td>\n      <td>1.13</td>\n      <td>1.605</td>\n    </tr>\n    <tr>\n      <td>NR</td>\n      <td>1180</td>\n      <td>107</td>\n      <td>9.1</td>\n      <td>55</td>\n      <td>4.66</td>\n      <td>0.141</td>\n    </tr>\n    <tr>\n      <td>HL</td>\n      <td>11,325</td>\n      <td>995</td>\n      <td>8.8</td>\n      <td>171</td>\n      <td>1.51</td>\n      <td>2.998</td>\n    </tr>\n    <tr>\n      <td>ES</td>\n      <td>2193</td>\n      <td>188</td>\n      <td>8.6</td>\n      <td>44</td>\n      <td>2.01</td>\n      <td>0.745</td>\n    </tr>\n    <tr>\n      <td>AI</td>\n      <td>9421</td>\n      <td>791</td>\n      <td>8.4</td>\n      <td>196</td>\n      <td>2.08</td>\n      <td>4.359</td>\n    </tr>\n    <tr>\n      <td>DK</td>\n      <td>6986</td>\n      <td>538</td>\n      <td>7.7</td>\n      <td>110</td>\n      <td>1.57</td>\n      <td>1.900</td>\n    </tr>\n    <tr>\n      <td>AA</td>\n      <td>1423</td>\n      <td>105</td>\n      <td>7.4</td>\n      <td>16</td>\n      <td>1.12</td>\n      <td>0.447</td>\n    </tr>\n    <tr>\n      <td>EB</td>\n      <td>1777</td>\n      <td>131</td>\n      <td>7.4</td>\n      <td>15</td>\n      <td>0.84</td>\n      <td>0.330</td>\n    </tr>\n    <tr>\n      <td>AG</td>\n      <td>4211</td>\n      <td>302</td>\n      <td>7.2</td>\n      <td>52</td>\n      <td>1.23</td>\n      <td>1.199</td>\n    </tr>\n    <tr>\n      <td>CA</td>\n      <td>15,906</td>\n      <td>1045</td>\n      <td>6.6</td>\n      <td>206</td>\n      <td>1.30</td>\n      <td>4.950</td>\n    </tr>\n    <tr>\n      <td>HD</td>\n      <td>5454</td>\n      <td>340</td>\n      <td>6.2</td>\n      <td>168</td>\n      <td>3.08</td>\n      <td>1.287</td>\n    </tr>\n    <tr>\n      <td>MD</td>\n      <td>829</td>\n      <td>51</td>\n      <td>6.2</td>\n      <td>123</td>\n      <td>14.84</td>\n      <td>0.269</td>\n    </tr>\n    <tr>\n      <td>AR</td>\n      <td>2656</td>\n      <td>161</td>\n      <td>6.1</td>\n      <td>30</td>\n      <td>1.13</td>\n      <td>0.522</td>\n    </tr>\n  </tbody>\n</table>\n\nTable 2 shows review and funding outcomes for applications according to whether the assignment was to an IC in the top quartile of proportion of applications with AAB PIs ('Higher AAB'). These ICs were the National Institute of Allergy and Infectious Diseases, the National Institute of Dental and Craniofacial Research, the National Institute of Child Health and Human Development, the National Institute of Minority Health and Disparities, the National Institute of Nursing Research, and the Fogarty International Center. Applications assigned to Higher AAB ICs were three times more likely to come from AAB PIs. Review outcomes \u2013 proportion discussed and, for those applications that were discussed at peer review meetings, priority scores and percentile rankings \u2013 were similar in both groups. Despite the similar review outcomes, these applications were 10% less likely to be funded. These descriptive data show that two IC-defined cohorts of applications with similar review outcomes can have substantively different funding outcomes.\n\n**Table 2.**\n Application review and funding outcomes according to whether Institute or Center received a higher or lower proportion of applications from AAB principal investigators.AAB\u00a0=\u00a0African American or Black; PI\u00a0=\u00a0Principal Investigator.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristic or outcome</th>\n      <th></th>\n      <th>Higher AAB</th>\n      <th>Lower AAB</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total N (%)</td>\n      <td></td>\n      <td>18262 (18.9)</td>\n      <td>78435 (81.1)</td>\n    </tr>\n    <tr>\n      <td>PI AAB</td>\n      <td>Yes</td>\n      <td>579 (3.2)</td>\n      <td>1064 (1.4)</td>\n    </tr>\n    <tr>\n      <td>Discussed</td>\n      <td>Yes</td>\n      <td>8809 (48.2)</td>\n      <td>35845 (45.7)</td>\n    </tr>\n    <tr>\n      <td>Priority Score</td>\n      <td>Median (IQR)</td>\n      <td>39.0 (30.0 to 48.0)</td>\n      <td>40.0 (30.0 to 48.0)</td>\n    </tr>\n    <tr>\n      <td>Percentile Ranking</td>\n      <td>Median (IQR)</td>\n      <td>34.0 (21.0 to 45.0)</td>\n      <td>33.0 (21.0 to 44.0)</td>\n    </tr>\n    <tr>\n      <td>Awarded</td>\n      <td>Yes</td>\n      <td>1440 (7.9)</td>\n      <td>6941 (8.8)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Review outcomes according to topic\n\nFigure 2 shows the topic-based peer review outcomes according to the proportion of total AAB applications linked to each topic. There was a non-significant trend whereby applications focusing on topics that accounted for a greater proportion of AAB applications (Equation 1) were more likely to make it to discussion (Equation 5)(Panel A, p=0.12). When we focused on applications that were discussed and therefore received a priority score, there was no association of mean score for each topic (Equation 6) with proportion of total AAB applications linked to each topic (Equation 1) (Panel B, p=0.87).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67173/elife-67173-fig2-v2.jpg)\n\n**Figure 2.:** AAB\u00a0=\u00a0African American or Black. Panel A: Scatter plot of topic-specific probability of discussion according to proportion of AAB applications. Each dot refers to a topic; the three topics furthest to the right on the X-axis correspond to the three topics at the lower left of Figure 1. The line is based on a linear regression of proportion of topic-specifc applications discussed on proportion of AAB applications. The slope of the line was not significant (p=0.12). Panel B: Scatter plot of topic-specific mean priority score according to proportion of AAB applications. Lower mean priority scores correspond to better, more favorable reviews. Each dot refers to a topic; the three topics furthest to the right on the X-axis correspond to the three topics at the lower left of Figure 1. The line is based on a linear regression of proportion of topic-specific mean priority score on proportion of AAB applications; analyses are based on those applications that were discussed. The slope of the line was not significant (p=0.87).\n\nTo gain greater insights into possible peer review biases against topics preferred by AAB PIs, Figure 3, Panel A, shows the mean priority score by topic (Equation 6; again, only discussed applications receive priority scores) according to the topic size, namely the number of submitted applications that were discussed for each topic. As would be expected topics of smaller size showed greater variability, a manifestation of regression to the mean.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67173/elife-67173-fig3-v2.jpg)\n\n**Figure 3.:** Panel A: Scatter plot of topic-specific mean peer review scores according to topic size. Each dot refers to a topic, with orange dots AAB preferred topics and green dots all others. The line is based on a linear regression of mean peer review scores on topic size. The slope of the line was not significant (p=0.63). Panel B: Distribution of weighted residuals of topic-specific mean review scores. Residuals are calculated as the distance between the dots in Panel A and the regression line, and are then weighted by topic size.\n\nThe line in Figure 3, Panel A, is based on a linear regression of mean score according to topic size. Although the slope was slightly negative (coeffecient \u22120.0002634), the association was not significant (p=0.63). Among AAB preferred topics (orange dots), there were 5 more than 1 point above the line (meaning with scores worse than predicted), while there were 3 more than 1 point below the line (meaning with scores better than predicted). The remaining seven topics had mean scores that were within 1 point of the predicted value.\n\nFor each topic, we calculated a residual by subtracting from the topic-specific mean priority score (Equation 6) the predicted mean priority score; we weighted the residuals by the topic size, as the larger topics contribute more information. Figure 3, Panel B, shows the distribution of the weighted residuals according to topic type. Residuals were more positive (i.e. worse) for AAB preferred topics. However, the absolute differences were small, much less than one priority score point (over a possible range of 10\u201390, with topic-specific mean values ranging from 35 to 45).\n\n### Funding outcomes according to topic: descriptive findings\n\nTable 3 shows peer review and funding outcomes according to whether applications were focused on the 15 (or 10% of) topics that made up 50% of all applications with AAB PIs ('AAB Preferred' topics). Consistent with the absence of association with proportion of AAB applications linked to each topic (Figure 2), peer review outcomes were similar in the two groups. However, applications focusing on AAB Preferred topics were 7% less likely to be funded. Table 4 shows similar findings when focusing on the 37 (or 25% of) topics that made up 70% of all applications with AAB PIs.\n\n**Table 3.**\n Application review and funding outcomes according to whether topic was among those that accounted for half of all AAB applications.Abbreviations as in Table 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristic or outcome</th>\n      <th></th>\n      <th>AAB preferred</th>\n      <th>Other</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total N (%)</td>\n      <td></td>\n      <td>24416 (25.3)</td>\n      <td>72281 (74.7)</td>\n    </tr>\n    <tr>\n      <td>PI AAB</td>\n      <td>Yes</td>\n      <td>824 (3.4)</td>\n      <td>819 (1.1)</td>\n    </tr>\n    <tr>\n      <td>Discussed</td>\n      <td>Yes</td>\n      <td>11515 (47.2)</td>\n      <td>33139 (45.8)</td>\n    </tr>\n    <tr>\n      <td>Priority Score</td>\n      <td>Median (IQR)</td>\n      <td>40.0 (31.0 to 48.0)</td>\n      <td>39.0 (30.0 to 48.0)</td>\n    </tr>\n    <tr>\n      <td>Percentile Ranking</td>\n      <td>Median (IQR)</td>\n      <td>34.0 (22.0 to 45.0)</td>\n      <td>33.0 (20.0 to 44.0)</td>\n    </tr>\n    <tr>\n      <td>Assigned IC AAB Proportion</td>\n      <td>Higher AAB</td>\n      <td>5925 (24.3)</td>\n      <td>12337 (17.1)</td>\n    </tr>\n    <tr>\n      <td>Awarded</td>\n      <td>Yes</td>\n      <td>1992 (8.2)</td>\n      <td>6389 (8.8)</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Application review and funding outcomes according to whether topic was among those that accounted for 70% of all AAB applications.Abbreviations as in Table 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristic or outcome</th>\n      <th></th>\n      <th>AAB preferred</th>\n      <th>Other</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total N (%)</td>\n      <td></td>\n      <td>46108 (47.7)</td>\n      <td>50589 (52.3)</td>\n    </tr>\n    <tr>\n      <td>PI AAB</td>\n      <td>Yes</td>\n      <td>1152 (2.5)</td>\n      <td>491 (1.0)</td>\n    </tr>\n    <tr>\n      <td>Discussed</td>\n      <td>Yes</td>\n      <td>21485 (46.6)</td>\n      <td>23169 (45.8)</td>\n    </tr>\n    <tr>\n      <td>Priority Score</td>\n      <td>Median (IQR)</td>\n      <td>40.0 (31.0 to 48.0)</td>\n      <td>39.0 (30.0 to 48.0)</td>\n    </tr>\n    <tr>\n      <td>Percentile Ranking</td>\n      <td>Median (IQR)</td>\n      <td>34.0 (21.0 to 45.0)</td>\n      <td>33.0 (20.0 to 44.0)</td>\n    </tr>\n    <tr>\n      <td>Assigned IC AAB Proportion</td>\n      <td>Higher AAB</td>\n      <td>11424 (24.8)</td>\n      <td>6838 (13.5)</td>\n    </tr>\n    <tr>\n      <td>Awarded</td>\n      <td>Yes</td>\n      <td>3852 (8.4)</td>\n      <td>4529 (9.0)</td>\n    </tr>\n  </tbody>\n</table>\n\nWhy do applications on AAB Preferred topics have worse funding outcomes despite similar peer review assessments? Table 3 shows that applications on AAB Preferred topics (those 10% of topics that accounted for 50% of all AAB applications) were 42% more likely to be assigned to Higher AAB ICs. The scatter plot in Figure 4 shows IC award rate according to the proportion of applications assigned to it that focus on AAB Preferred topics. ICs with receiving a higher percentage of AAB Preferred topic applications tended to have lower award rates (r\u00a0=\u00a0\u22120.35, p=0.08).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67173/elife-67173-fig4-v2.jpg)\n\n**Figure 4.:** In other words, the X-axis value would be 33% if one-third of all IC applications focused on AAB Preferred topics, namely those 15 topics that together accounted for 50% of all applications with AAB PIs. The orange-colored ICs are those in which the proportion of applications from AAB PIs were in the top quartile. AAB\u00a0=\u00a0African American or Black; IC\u00a0=\u00a0Institute or Center; EY\u00a0=\u00a0National Eye Institute; DC\u00a0=\u00a0National Institute of Deafness and Communications Disorders; GM\u00a0=\u00a0National Institute of General Medical Sciences; DE\u00a0=\u00a0National Institute of Dental and Craniofacial Research; MH\u00a0=\u00a0National Institute of Mental Health; DA\u00a0=\u00a0National Institute on Drug Abuse; NS\u00a0=\u00a0National Institute of Neurological Disorders and Stroke; NR\u00a0=\u00a0National Institute of Nursing Research; HL\u00a0=\u00a0National Heart, Lung, and Blood Institute; AI\u00a0=\u00a0National Institute of Allergy and Infectious Diseases; ES\u00a0=\u00a0National Institute of Environmental Health Sciences; DK\u00a0=\u00a0National Institute of Diabetes and Digestive and Kidney Disease; AA\u00a0=\u00a0National Institute on Alcohol Abuse and Alcoholism; AG\u00a0=\u00a0National Institute on Aging; EB\u00a0=\u00a0National Institute of Biomedical Imaging and Bioengineering; CA\u00a0=\u00a0National Cancer Institute; HD\u00a0=\u00a0Eunice Kennedy Shriver National Institute of Child Health and Human Development; MD\u00a0=\u00a0National Institute on Minority Health and Health Disparities; AR\u00a0=\u00a0National Institute of Arthritis and Musculoskeletal and Skin Diseases. ICs that receive relatively more applications on AAB Preferred topics tended to have lower award rates (r\u00a0=\u00a0\u22120.35, p=0.08). Data for ICs with cell sizes not exceeding 11 are not shown due to privacy concerns.\n\nThe association between IC award rates and application success is demonstrated in Figure 5, Panel A, which shows that observed topic-specific award rates (Equation 3) were strongly correlated with predicted award rates (Equation 4), that is award rates that would be expected based solely on IC-specific award rates (r\u00a0=\u00a00.62, p<0.0001). Figure 5, Panel B shows a tendency toward lower predicted topic-specific award rates (Equation 4) with increasing proportion of AAB applications (Equation 1) linked to each topic (p=0.06). Panel C shows that the actual topic-specific award rates (Equation 3) were non-significantly negatively associated with increasing proportion of AAB applications (Equation 1) (p=0.76).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67173/elife-67173-fig5-v2.jpg)\n\n**Figure 5.:** AAB\u00a0=\u00a0African American or Black. Panel A: Association of actual vs predicted award rates. Each dot refers to a topic. The line is based on a linear regression of actual award rate on predicted award rate (r\u00a0=\u00a00.62, p<0.0001). Panel B: Association of predicted award rate (Equation 4) with proportion of AAB applications (Equation 1). Each dot refers to a topic; the three topics furthest to the right on the X-axis correspond to the 3 topics at the lower left of Figure 1. The line is based on a linear regression of predicted award rate on percent of all AAB applications; the negative slope was borderline signifiant (p=0.06). Panel C: Association of actual award rate (Equation 3) with proportion of AAB applications (Equation 1). Each dot refers to a topic; the three topics furthest to the right on the X-axis correspond to the three topics at the lower left of Figure 1. The line is based on a linear regression of actual award rate on percent of all AAB applications; the slope was non-signficant (p=0.76).\n\n### Funding outcomes according to topic: probit regression models\n\nTable 5 shows the association of an application with an AAB PI with the probability of funding. Consistent with Hoppe et al., 2019 and prior literature (Ginther et al., 2011), AAB PI applications had a lower likelihood of funding (Model 1, negative regression coefficient for AAB Principal Investigator, p<0.001). Adjusting for the topic (AAB Preferred or Other) reduced the absolute value of the regression coefficient for race by 5% (Model 2); similarly adjusting for IC assignment (Higher or Lower AAB) reduced the absolute value of the regression coefficient by 5% (Model 3). However, adjusting for the award rate of the assigned IC reduced the absolute value of the regression coefficient for race by 14% (Model 4).\n\n**Table 5.**\n Probit Regression Models (regression coefficients and standard errors) with focus on the PI.Model 1 shows the univariable association of funding success according to whether the PI is AAB. The negative non-zero cofficient indicates that applications with AAB PIs are less likely to be funded; the p-value refers to the likelihood that the difference from zero would be due to chance were the null hypothesis of no association to be true. Model 2 adjusts for topic, Model 3 adjusts for IC assignment, and Model 4 adjusts for IC award rate. Note that the absolute value for the regression coefficient linking AAB PI to funding outcome decreases with each of these adjustments, with the greatest reduction after adjusting for IC award rate. AIC\u00a0=\u00a0Akaike Information Criterion; BIC\u00a0=\u00a0Bayesian Information Criterion; Num. obs.\u00a0=\u00a0Number of Observations. Other abbreviations same as in Tables 1 and 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Model 1</th>\n      <th>Model 2</th>\n      <th>Model 3</th>\n      <th>Model 4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Intercept</td>\n      <td>\u22121.359***</td>\n      <td>\u22121.349***</td>\n      <td>\u22121.348***</td>\n      <td>\u22121.903***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>(0.006)</td>\n      <td>(0.007)</td>\n      <td>(0.006)</td>\n      <td>(0.020)</td>\n    </tr>\n    <tr>\n      <td>AAB Principal Investigator</td>\n      <td>\u22120.184***</td>\n      <td>\u22120.174***</td>\n      <td>\u22120.174***</td>\n      <td>\u22120.158**</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>(0.049)</td>\n      <td>(0.049)</td>\n      <td>(0.049)</td>\n      <td>(0.050)</td>\n    </tr>\n    <tr>\n      <td>AAB Preferred Topic</td>\n      <td></td>\n      <td>\u22120.040**</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>(0.013)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>IC Higher AAB Applications</td>\n      <td></td>\n      <td></td>\n      <td>\u22120.060***</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>(0.015)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>IC Award Rate</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.061***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>(0.002)</td>\n    </tr>\n    <tr>\n      <td>AIC</td>\n      <td>56996.279</td>\n      <td>56989.156</td>\n      <td>56982.092</td>\n      <td>56175.409</td>\n    </tr>\n    <tr>\n      <td>BIC</td>\n      <td>57015.238</td>\n      <td>57017.594</td>\n      <td>57010.530</td>\n      <td>56203.847</td>\n    </tr>\n    <tr>\n      <td>Log Likelihood</td>\n      <td>\u221228496.140</td>\n      <td>\u221228491.578</td>\n      <td>\u221228488.046</td>\n      <td>\u221228084.705</td>\n    </tr>\n    <tr>\n      <td>Deviance</td>\n      <td>56992.279</td>\n      <td>56983.156</td>\n      <td>56976.092</td>\n      <td>56169.409</td>\n    </tr>\n    <tr>\n      <td>Num. obs.</td>\n      <td>96697</td>\n      <td>96697</td>\n      <td>96697</td>\n      <td>96697</td>\n    </tr>\n  </tbody>\n</table>\n\n_p*\u2063**<0.001; p**<0.01; p*<0.05._\n\nTable 6 focuses on topic and funding outcomes. Without consideration of other variables, an AAB preferred topic was associated with a lower probability of funding (Model 1, negative regression coefficient for AAB preferred topic, p<0.01). However, after adjusting for IC award rate alone (Model 2, regression coefficient for AAB preferred topic close to zero, p=NS) as well as IC award rate and other characteristics (whether the PI is an early stage investigator, whether the application included more than one PI, and whether the proposed research included human and/or animal subjects), there was no association between AAB preferred topics and funding (Model 3, regression coefficient for AAB preferred topic close to zero, p=NS). The IC award rate was strongly associated with likelihood of funding (Models 2 and 3, regression coefficient positive, p<0.001).\n\n**Table 6.**\n Probit Regression Models (regression coefficients and standard errors) with focus on topic type.Model 1 shows the univariable association of funding success according to whether the topic is AAB preferred. Model 2 shows results according to topic choice and IC award rate. Model 3 includes early stage investigator status, whether applications had multiple PIs, and whether the application included research on human subjects and/or animal subjects. AIC\u00a0=\u00a0Akaike Information Criterion; BIC\u00a0=\u00a0Bayesian Information Criterion; Num. obs.\u00a0=\u00a0Number of Observations. Other abbreviations same as in Tables 1 and 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Model 1</th>\n      <th>Model 2</th>\n      <th>Model 3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Intercept</td>\n      <td>\u22121.351***</td>\n      <td>\u22121.904***</td>\n      <td>\u22121.869***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>(0.007)</td>\n      <td>(0.021)</td>\n      <td>(0.027)</td>\n    </tr>\n    <tr>\n      <td>AAB Preferred Topic</td>\n      <td>\u22120.044**</td>\n      <td>\u22120.005</td>\n      <td>\u22120.013</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>(0.013)</td>\n      <td>(0.014)</td>\n      <td>(0.015)</td>\n    </tr>\n    <tr>\n      <td>IC Award Rate</td>\n      <td></td>\n      <td>0.061***</td>\n      <td>0.057***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>(0.002)</td>\n      <td>(0.002)</td>\n    </tr>\n    <tr>\n      <td>AAB Principal Investigator</td>\n      <td></td>\n      <td></td>\n      <td>\u22120.170***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>(0.050)</td>\n    </tr>\n    <tr>\n      <td>Early Stage Investigator</td>\n      <td></td>\n      <td></td>\n      <td>0.149***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>(0.015)</td>\n    </tr>\n    <tr>\n      <td>Multi-PI Application</td>\n      <td></td>\n      <td></td>\n      <td>0.099***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>(0.015)</td>\n    </tr>\n    <tr>\n      <td>Human Subjects</td>\n      <td></td>\n      <td></td>\n      <td>\u22120.056</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>(0.014)</td>\n    </tr>\n    <tr>\n      <td>Animal Subjects</td>\n      <td></td>\n      <td></td>\n      <td>\u22120.052***</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>(0.014)</td>\n    </tr>\n    <tr>\n      <td>AIC</td>\n      <td>57000.243</td>\n      <td>56185.926</td>\n      <td>56047.521</td>\n    </tr>\n    <tr>\n      <td>BIC</td>\n      <td>57019.201</td>\n      <td>56214.364</td>\n      <td>56123.355</td>\n    </tr>\n    <tr>\n      <td>Log Likelihood</td>\n      <td>\u221228498.121</td>\n      <td>\u221228089.963</td>\n      <td>\u221228015.760</td>\n    </tr>\n    <tr>\n      <td>Deviance</td>\n      <td>56996.243</td>\n      <td>56179.926</td>\n      <td>56031.521</td>\n    </tr>\n    <tr>\n      <td>Num. obs.</td>\n      <td>96697</td>\n      <td>96697</td>\n      <td>96697</td>\n    </tr>\n  </tbody>\n</table>\n\n_p*\u2063**<0.001; p**<0.01; p*<0.05._\n\n### Resubmission and single-PI applications\n\nWe repeated the main analyses, but this time focusing on resubmission applications, which as a general rule are assigned to the same IC as the original submission. The findings were similar, except that, as expected, the absolute award rates were higher. We also conducted a separate series of analyses which repeated our primarily analyses but focusing solely on single-PI applications. Again, findings were similar (see Appendix 1 and Appendix 2).\n\n## Discussion\n\nAmong over 96,000 R01 applications submitted to NIH between 2011 and 2015, 2% were submitted by AAB PIs. Their applications were skewed towards a relatively small group of 'AAB Preferred' topics (Figure 1); 10% of 148 topics accounted for 50% of AAB applications. Applications on AAB Preferred topics had similar review outcomes as those on other topics (Figure 2 and Table 3) but were less likely to be funded. The lower award rates for applications on AAB Preferred applications (Table 5, Model 1) were no longer seen after accounting for IC award rates (Table 6, Models 2 and 3).\n\nThese observations reflect that there are two factors at play in determining whether an application submitted to NIH will be funded. The first, well known to all involved with NIH system, is peer review; those applications that receive better scores are more likely to be funded. But there is a second factor, namely the funding ecology of the IC to which the application is assigned. As shown in Table 2 applications with similar peer review outcomes are less likely to be funded if they are assigned to ICs with lower overall award rates. AAB PIs are more likely to submit applications to ICs with lower award rates, and applications (whether submitted by AAB or other PIs) that focus on AAB Preferred topics tended to be assigned to ICs with lower award rates (Figure 4).\n\nHoppe et al., 2019 found that topic choice accounted for over 20% of funding disparities that adversely effect AAB PIs. We confirm this, but find that IC assignment (which, of course, is linked to topic) explains the disparities just as well, and that IC award rates explain the disparities even better (Table 5, 14% vs 5% reduction in absolute value of regression coefficient for AAB PI). Furthermore, after accounting for IC award rate, we found no association between topic choice and funding outcome (Table 6).\n\nThere is variability in how well different topics fare at peer review, but inspection of Figure 3 suggests that much of this variability reflects instability of estimates stemming from smaller sample sizes. Many topics that are not favored by AAB PIs receive better (lower) priority scores than the overall average, but many other such topics receive worse scores (Figure 3, Panel A). An inspection of weighted residuals suggest that AAB Preferred topics may fare a bit worse (Figure 3, Panel B), but to a lower degree than the difference of award rates among assigned ICs (Table 1). Furthermore, it should be noted that applications on these topics were more likely to make it past the first hurdle of peer review, that is reaching the point of formal discussion (Figure 2 and Table 3, see line 'Discussed'); thus, if anything, peer reviewers may be slightly biased in favor of AAB-preferred topics.\n\nOur primary analysis focused on first-time submissions of de novo applications in which the award rates were low (<10%). Nonetheless, our analyses of resubmission applications yielded similar findings (Appendix\u00a01). It is also important to note that this was an analysis of applications, not persons. This is an issue when considering multi-PI applications, since all PI\u2019s, not just the contact PI, plays a role in choosing the topic of their proposal. Nonetheless, an analysis confined to single PI applications yielded similar findings (Appendix\u00a02).\n\nOnly 2% of PIs in this study were African American or Black and thus it is not possible that this small percentage of scientists cover the entire breadth of what NIH funds. The small number of AAB PIs is a source of error for describing AAB scientific interests as reflected in grant applications. Nonetheless, in recent years, NIH has increasingly recognized the importance of enhancing research in targeted topics, as exemplified by a recently announced Common Fund program to enhance transformative research in health disparities and health equity (NIH, 2021a) and by the large investment in RADx-UP, a COVID-19 diagnostic testing program in underserved communities (Tromberg et al., 2020).\n\n### Conclusion\n\nThe lower rate of funding for applications focused on AAB Preferred topics is likely primarily due to their assignment to ICs with lower award rates. These applications have similar peer review outcomes as those focused on other topics (Table 3). When AAB preference for each topic (Equation 1) was considered as a continuous variable, there was similarly no association between AAB preference and peer review outcomes (Figure 2). Topic choice does partially explain race-based funding disparities (Table 5, Model 2, absolute value of regression coefficient reduced by 5%), but IC-specific award rates explain the disparities to an even greater degree (Table 5, Model 4, absolute value of regression coefficient reduced by 14%). After accounting for IC-specific award rates, we find no association between topic choice and funding outcomes (Table 6, Models 2 and 3).\n",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "acbcee52-a122-404b-8477-0f613287ef2a",
+      "submission_id": "2fb807a4-90a8-49b1-874b-44169b8fd1d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cliff J Rosen, Maine Medical Center Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67173.sa1](https://doi.org/10.7554/eLife.67173.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis is an important paper that nicely addresses a topical and timely issue relevant to extramural NIH funding. The knowledge gained from your analyses will undoubtedly add to the vigorous discussion about how to move forward. We believe you have revised the paper according to the comments of the reviewers. It was clear from your edits and explanation that some of the comments were outside of the scope of the paper, and we understand that. In the meantime, the other responses were noted to be thoughtful and thorough.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"National Institutes of Health Institute and Center Award Rates and Funding Disparities\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, including Cliff J Rosen as the Reviewing Editor and Reviewer #2, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Carlos Isales (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nIn general there was enthusiasm for the topical nature of the subject and the importance of defining inequities in NIH funding for African Americans. However there were issues raised about the analysis, the absence of significant data sets in 50% of the topics, and approach to the analysis. Notwithstanding these potentially resolvable issues, there was consensus that a revised paper will be critical to enhance discussion of this important area and move toward possible solutions.\n\nEssential Revisions\n\nPlease refer to individual Recommendations for the Authors, and specifically focus on:\n\n1. Further defending the overall approach to the analysis by providing new data and/or offering explanations to issues raised in the four reviews.\n\n2. Further refine statistical analysis particularly as noted by Reviewer 3.\n\nReviewer #1 (Recommendations for the authors):\n\nPlease respond to the following questions by explaining further and/or providing data.\n\n1. The authors don't discuss the details about how Institute assignments are made. Agreed that this is done by CSR, a number of variables go into this: (a) the \u03c0 may attempt to direct the application to a specific Institute or Center by including keywords in abstract or title; (b) the \u03c0 may request a specific Institute or Center.\n\n2. Is part of the issue related to having an Institute named Minority Health, but then have that Institute be relatively underfunded? Would you suggest increased funding for specific Institutes?\n\n3. Not clear if the numbers included are all the R01's received or just the ones received by CSR. Some R01's go directly to Institutes (e.g. RFA's); as do P01's and training grants. If the analysis is for total grants submitted, in sub analysis, were there any differences in AAB funding rates for those applications that went directly to a specific Institute or Center and were of a different topic that the 10% of 148 topics, i.e were there differences in outcomes in \u03c0 assigned vs CSR assigned Institutes?\n\n4. For resubmitted R01's do 100% go back to the same Institute-Center or what % are reassigned to a different Institute?\n\n5. How was an \"Early-Stage investigator Table 5 defined? Did seniority (# of publications, h-index) and funding success correlate with specific Institutes?\n\n6. Do we know if there were differences between number of applications submitted before successful funding for AAB investigators? Or whether AAB investigators were less likely to submit an A1 application after initial triage?\n\nReviewer #2 (Recommendations for the authors):\n\nPlease address the following issues.\n\n1. It is still problematic why topic choice of community engagement or population studies fare worse overall and particularly at an Institute such as AI compared to GM if both have the relatively same proportion of preferred topics, and both have relatively high budgets compared to other institutes. Please provide data if available.\n\n2. Are there other factors imbedded within ICs or their leadership that determine priorities independent of funding scores?\n\n3. Also, are there one or more ICs that drive the correlations between IC funding and preferred topics or PIs? Please provide any data.\n\n4. In addition it should be noted that only 2% of all PIs are AABs so that represents a potential source of error.\n\n5. The data are only up to 2015; it has now been five years and things have changed dramatically at NIH and in society. Do the authors have more recent data? There are now many more multiple \u03c0 applications including AABs that may not be the contact \u03c0 yet are likely to choose to be in a preferred topic area.\n\n6. Please discuss potential resolutions to this issue; In other words we now know that the disparity in funding is such that AAB RO1s do worse than white PIs because they are selecting topics that end up at institutes with lower funding rates. Should the institutes devote a set aside for these topic choices to balance the portfolio of the IC and equal the playing field for AABs?\n\nReviewer #3 (Recommendations for the authors):\n\n1. The limited introductory material, and the Discussion do not appropriately place this important, indeed critical, work in the context it deserves. In general, the expectation for a general science journal such as eLife demands greater attention to scholarship and contextualization for the anticipated broad audience. Indeed, the Cover Letter argues that this work is relevant to the \"NIH extramural research community\" and that it is correcting a \"mistaken belief\" related to their Hoppe et al. 2019 paper. Furthermore, the authors reference the Taffe and Gilpin eLife Feature Article which explains at some length why these matters are of such pressing importance. This is indeed a very important study to publish, although perhaps it should be understood, and written, more as an extension of the ongoing inquiry into NIH funding practices and less as a correction of \"mistaken belief\" related to the prior paper. It is suggested that at the very least the Introduction and Discussion should address the impact of the funding disparity on (1) AA/B researchers and (2) research on the health concerns of Black Americans, in a scholarly way, including reference to recent materials on this topic to guide the interested reader.\n\n2. Introduction Ln26-41: This section, currently the bulk of the Introduction, fails to describe why applications in some topics would be assigned to one IC over another. The \"for example\" section is a misdirection and distracting. The key question, given the data in Figure 1 and Table 1, is why a given grant would be assigned to NIMHD or NINR instead of the disease-domain parent institute.\n\n2. The Methods indicate that the 15 topics that accounted for 50% of the AA/B applications were designated as AA/B-preferred for analysis. There is no rationale or justification provided for this choice. Why not the topics that accounted for 66% or 33% or 75%? It would appear critical to provide a strong justification, and some indication of what impact other choices for what is an apparently arbitrary cutoff would have on the central analyses.\n\n3. The Conclusion section presages what will be takeaway message for many readers, i.e. \"likely primarily due to\". Yet, from this analysis, this conclusion which is likely to be assumed to apply to all AA/B application leaves any disparity of funding for the topics associated with half of the applications with AA/B PIs ignored.\n\n4. The Methods indicate that the definition of AA/B-preferred ICs was the top quartile (6/24 ICs), but there is no rationale or justification provided for this choice. In the absence of a strong justification, it would appear critical to provide some indication of what impact other essentially arbitrary cutoff choices would have on the central analyses. For example, of the five (Fogerty International Center appears to be omitted due to \"privacy concerns\") ICs with the highest percentage of AA/B applications shown in Table 1, the two lowest are 2.13% (AI) and 2.06% (ES) which are much closer to 12 remaining ICs in AA/B percentage than they are to the third lowest of the AA/B upper quartile. Three of these (DE, 1.99% AA/B; DA, 1.81% AA/B; MH, 1.69% AA/B) are more obviously grouped with AI and ES in terms of AA/B award rate than are the three most extreme AA/B-preferred ICs (HD, NR, MD). This differs from the choices made in Hoppe et al. 2019 where it is fairly obvious from Figure 3A why the 8 topic clusters receiving a high percentage of AA/B applications, and the 8 with zero, were selected for analysis. From Table 1 of this manuscript, the top quartile of ICs account for only 27.3% of AA/B applications. Inclusion of DE, DA and MH would increase this to 48.5% of the AA/B applications, more consistent with the 50% threshold used by the authors to designate AA/B-preferred topics. These choices are not explained or justified and it is critical to give some indication of whether the central conclusions depend on such arbitrary choices.\n\n5. Table 1 is missing a statistic which is key to the authors' conclusions. The award rate for applications with AA/B versus white PIs should be listed per IC, instead of only the aggregate award rate. The entire argument hinges on the presumption that there is no difference in the white/AA/B success rate ratio across the ICs, yet we have seen no analysis of this in prior papers nor does the information occur here.\n\n6. Page 3, Line 102: The phrase \"submitted [applications] to\" in the context of IC assignment is an improper misrepresentation. This requires correcting throughout, including the Abstract and Line 163 of the Discussion. While applicants can request assignment to a given I or C, this is not always respected and thus this phrasing should reflect NIH assignment, not \u03c0 choice. This aspect of application assignment (and any dual assignments and selection/refusal to pick up as a secondary IC) should be incorporated into the analysis. Are applications with AA/B PIs more or less likely to be assigned by the NIH's receipt and referral process to the lower-success institutes instead of the parent IC? Are applications with AA/B PIs more likely to request those low-success rate ICs? Are assignment requests equivalently respected? Are applications with AA/B PIs more or less likely to be dual-assigned and/or selected for funding by the secondary IC? What about the role of shared funding between ICs?\n\n7. Page 5, Line 123: While the regression coefficients are useful for a sophisticated audience, it is essential to report the results in a more easily understandable manner for a more general audience. Most importantly the results should be expressed in a way that is comparable with the prior analyses provide by Ginther, Hoppe and their colleagues and indeed is mentioned in the first paragraph of the Introduction. The reader should be informed clearly what percentage of the disparity is accounted for here, similar to the ~20-25% of the racial bias effect accounted for by topic in Hoppe et al. 2019 and by CV metrics in Ginther et al. 2018. This will then help to make the Abstract and Conclusion statements more precise.\n\n8. Figure 1 is confusing in juxtaposition with Table 1 and in context with the overall thrust of the paper. It is suggested that an additional panel be added in which the X axis is the AA/B percentage of applications to that IC, as in Table 1. That is what the reader is expecting at first, and it takes some close reading to figure out these are rankings of the ICs based on submissions by topic. In addition, the six AA/B-preferred ICs should be clearly indicated on-figure by means of colored text, bolded text, a circle or something similar.\n\n9. Discussion, page 10: The second paragraph refers to the funding ecology and ICs with lower award rates, reflecting language used throughout the manuscript. There does not appear to be any description of this ecology and the general science reader will not understand the tremendous disparity in IC funding (e.g., NIMHD and NINR, the extreme outliers in % of AA/B \u03c0 applications, received 0.8% and 0.4% of the FY2000 budget) without this information. It is essential to add columns in Table 1 that show the average amount of money assigned to each IC across the relevant FYs and to also represent this as a percentage to assist the reader. This context then needs to be mentioned in both Introduction and Discussion where points about IC award rates and funding \"ecology\" are being made. By way of analogy, the readership of eLife expects an extensive mechanistic explanation without key omissions to accompany empirical results and this is similar.\n\n10. Discussion, page 10: The second paragraph is an outline of the illogic captured in this entire investigation. It cleverly draws indirect lines from the overall AA/B disparity of award to the success rate of ICs while seemingly ignoring the fact the analysis reflects only the topics preferred by half of the AA/B applications and reports on only 27.3% of AA/B applications. It is unclear why the primary analysis approach for this inquiry is not simply to examine white vs AA/B success rates across each of the ICs. This would be a much simpler and intuitive answer to what appear to be the authors originating question. The Hoppe report admitted, but tried to undersell, the critically important finding that even in the least-successful quintile of topics, the AA/B applications faired more poorly and it would be critical to understand if that is also true in this analysis of IC assignment.\n\n11. Discussion, page 10: The third and fourth paragraphs are written in imprecise language that does a disservice to the reader understanding of the size of the effects that are being reported. The Hoppe sentence should just include the ~20% number. The comments about \"just as well\", \"even better\", \"fare a bit worse\" and \"to a much lower degree\" need quantitation.\n\n12. Discussion, page 11, Line 179: The statement is utterly speculative and should be removed or backed with better evidence.\n\n13. Conclusion, page 11: The use of \"explain disparities to an even greater degree\" needs to be accompanied by an estimate of the effect size, similar to the data in Hoppe underlying the \"topic choice does partially explain\" beginning of the sentence. In Hoppe, it was something on the order of accounting for only 21% of the white/AAB disparity of grants that were discussed. In this manuscript the authors need to be clearer about what amount of which racial disparity does \"an even greater degree\" reflect?\n\n14. Conclusion, page 11: The third sentence again inappropriately draws conclusions from the indirect logic available from the design. The authors need to show the IC-specific award rates for white and AA/B applicants within each IC and contrast these by IC-specific award rate if they wish to make this statement.\n\n15. Supplementary Materials: As mentioned above, there is not a rationale provided for excluding the competing continuation applications from the main analysis. This is peculiar given that these were included in Hoppe and the current manuscript is framed as an explanation of those prior results. If the outcome is the same, it would make more sense to make the full sample the subject of the main paper and the more selected sub-sample the supplement.\n\nReviewer #4 (Recommendations for the authors):\n\nThe paper is well written and uses appropriate methods in the described analysis. While this analysis does contribute to understanding the differential outcomes that have been previously described in the funding of AAB investigators, there are still unanswered questions about the success rate differentials. The topics examined only account for 50% of the applications. If there is little or no biases as is suggested by the authors, the other 50% should be able to be accounted for using the analysis performed in this paper. The authors should consider adding a bit of conditional conclusion of these findings.\n",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9622681-88dc-4afb-937b-b05d50288d3e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C1",
+      "claim": "A previous report found an association of topic choice with race-based funding disparities among R01 applications submitted to the National Institutes of Health between 2011 and 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report found an association of topic choice with race-based funding disparities among R01 applications submitted to the National Institutes of Health ('NIH') between 2011 and 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a previous report's findings, indicating citation-based support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "27eaaa98-71e2-4d39-9190-5e0d740320fd",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C2",
+      "claim": "Applications submitted by African American or Black Principal Investigators skewed toward a small number of topics that were less likely to be funded.",
+      "claim_type": "EXPLICIT",
+      "source": "Applications submitted by African American or Black ('AAB') Principal Investigators ('PIs') skewed toward a small number of topics that were less likely to be funded (or 'awarded').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous report that is being referenced and re-analyzed in this manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "040cda55-1cf3-42d7-912b-3d7a64624c22",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C3",
+      "claim": "It was suggested that lower award rates may be related to topic-related biases of peer reviewers.",
+      "claim_type": "EXPLICIT",
+      "source": "It was suggested that lower award rates may be related to topic-related biases of peer reviewers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a hypothesis or speculation from prior work that is being tested in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "5d102f7d-a291-4bf8-976d-8e50bf268432",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C4",
+      "claim": "The previous report did not account for differential funding ecologies among NIH Institutes and Centers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the report did not account for differential funding ecologies among NIH Institutes and Centers ('ICs').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the previous report that motivates the current re-analysis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "b14859b2-b470-425a-a422-f0c4cd16b2a9",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C5",
+      "claim": "10% of 148 topics account for 50% of applications submitted by AAB PIs.",
+      "claim_type": "EXPLICIT",
+      "source": "In a re-analysis, we find that 10% of 148 topics account for 50% of applications submitted by AAB PIs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the re-analysis, supported by data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "f745ac7b-6222-4c60-8fe5-279c5f1854f3",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C6",
+      "claim": "Applications on 'AAB Preferred' topics were funded at lower rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These applications on 'AAB Preferred' topics were funded at lower rates, but peer review outcomes were similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the re-analysis, supported by data in Tables 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "438c607b-5f51-4486-98b5-6c8bc2a85021",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C7",
+      "claim": "Peer review outcomes for applications on 'AAB Preferred' topics were similar to other topics.",
+      "claim_type": "EXPLICIT",
+      "source": "These applications on 'AAB Preferred' topics were funded at lower rates, but peer review outcomes were similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the re-analysis, supported by data in Tables 3 and 4 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "50311098-fd42-4d9f-b135-d7bcfd109963",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C8",
+      "claim": "The lower rate of funding for AAB Preferred topics was primarily due to their assignment to ICs with lower award rates, not to peer-reviewer preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower rate of funding for these topics was primarily due to their assignment to ICs with lower award rates, not to peer-reviewer preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the re-analysis, supported by regression models in Tables 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "f78c8ce3-6532-4094-9238-6e5ebbd96020",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C9",
+      "claim": "Data from Hoppe et al., 2019 suggest that part of the well-documented funding disparity affecting African-American Black principal investigators may be related to the topic of their applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Data recently reported by Hoppe et al., 2019 from the National Institutes of Health ('NIH') suggest that part of the well-documented funding disparity (Ginther et al., 2011) affecting African-American Black ('AAB') principal investigators ('PIs') may be related to the topic of their applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references findings from Hoppe et al., 2019 and Ginther et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "3089b21d-a1a8-4ea4-9b4b-ad95a4fd156b",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C10",
+      "claim": "Topic choice accounted for over 20% of the funding disparity affecting AAB PIs.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors of that report (including the first author of this report) found that topic choice accounted for over 20% of the disparity and wondered whether biases on the part of peer reviewers might explain why some application topics fare less well when submitted to the NIH for consideration of funding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Hoppe et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "351d2d10-b287-4ba0-9924-2dc0389507f0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C11",
+      "claim": "Peer review outcomes are not the only determinant of funding at NIH.",
+      "claim_type": "EXPLICIT",
+      "source": "However, peer review outcomes are not the only determinant of funding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the NIH funding system and is supported by subsequent explanation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "7a4af867-fb4b-4af5-898b-03213f07bfb8",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C12",
+      "claim": "Grants are not simply awarded in order of peer review scores across the NIH agency.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the agency, grants are not simply awarded in order of peer review scores (Taffe and Gilpin, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Taffe and Gilpin, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "8dcc2360-9e39-4ac4-835a-995f600e7ff0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C13",
+      "claim": "Applications submitted to NIH are assigned to one of 24 grant-issuing institutes or centers that make decisions about which applications to fund.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason is that applications submitted to the NIH are not just submitted to NIH; they are assigned to one of 24 grant-issuing institutes or centers ('ICs') that in turn make decisions about which applications to fund.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the NIH organizational structure and funding process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "318963c7-0086-4dd8-99b9-65cdb7f99b21",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C14",
+      "claim": "The proportion of applications funded varies across ICs.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of applications funded (or 'award rate') varies across ICs; therefore, we can think of the NIH process as not one competition hinging entirely on peer review but rather as 24 separate competitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data presented in Table 1 showing IC-specific award rates ranging from 6% to 15%.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "b49fc757-f934-4960-80c5-1abc8c9744d3",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C15",
+      "claim": "The variability of award rates relates to differences in number of applications each IC receives, available funds, and IC priorities.",
+      "claim_type": "EXPLICIT",
+      "source": "The variability of award rates relates to differences in number of applications each IC receives, available funds, and IC priorities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of how NIH ICs operate and make funding decisions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "1f56f4c9-16d5-449d-8a95-94e9e2aa5f5c",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C16",
+      "claim": "Hoppe et al., 2019 did not account for IC assignment or variation in IC-specific award rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Hoppe et al., 2019 did not account for IC assignment or variation in IC-specific award rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the previous study that motivates the current re-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "dcc43864-ea9b-479c-a38c-a1eb757db51f",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C17",
+      "claim": "ICs receive applications according to alignment with their stated mission.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the apparent link between topic choice and funding disparities may reflect differences in IC assignment, since ICs receive applications according to alignment with their stated mission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of how NIH assigns applications to ICs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "ab98a202-a7d5-43f1-b743-330b9be5e9b9",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C18",
+      "claim": "Applications focusing on cancer epidemiology are more likely to be assigned to the National Cancer Institute.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, applications focusing on cancer epidemiology are more likely to be assigned to the National Cancer Institute while those focusing on basic human biology are more likely to be assigned to the National Institute of General Medical Sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example based on knowledge of IC missions and assignment practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "716994d6-7a2d-4123-97dc-9dc5cce57884",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C19",
+      "claim": "Applications focusing on basic human biology are more likely to be assigned to the National Institute of General Medical Sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, applications focusing on cancer epidemiology are more likely to be assigned to the National Cancer Institute while those focusing on basic human biology are more likely to be assigned to the National Institute of General Medical Sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example based on knowledge of IC missions and assignment practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "a227d6a8-ea35-4f02-8908-de0d10f0966e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C20",
+      "claim": "Resubmissions are subject to well-documented biases related to repeated looks by the peer review system.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize well-documented biases related to repeated looks by the peer review system on individual proposals (from resubmissions [Lauer, 2017] or competing renewals [Lauer, 2016]) we focus on de novo applications submitted to the NIH for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lauer, 2017 and Lauer, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "20540f3f-176e-45c6-a387-c1b845e9c048",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C21",
+      "claim": "Competing renewals are subject to well-documented biases related to repeated looks by the peer review system.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize well-documented biases related to repeated looks by the peer review system on individual proposals (from resubmissions [Lauer, 2017] or competing renewals [Lauer, 2016]) we focus on de novo applications submitted to the NIH for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lauer, 2017 and Lauer, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "46740111-f45a-4b08-812a-19b67cd49547",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C22",
+      "claim": "Each application is assigned to a peer review group.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, each application is assigned to a peer review group; approximately 2% of applications are withdrawn prior to review for administrative reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of NIH peer review processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "4a02b49e-563d-420d-81bb-a16a0b42ca08",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C23",
+      "claim": "Approximately 2% of applications are withdrawn prior to review for administrative reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, each application is assigned to a peer review group; approximately 2% of applications are withdrawn prior to review for administrative reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic about the NIH review process.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "dee25284-d0c1-4be2-881f-0e05e847c346",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C24",
+      "claim": "After a preliminary pre-meeting review, approximately half of applications are deemed to be potentially meritorious and are therefore discussed during a formally convened meeting.",
+      "claim_type": "EXPLICIT",
+      "source": "After a preliminary pre-meeting review, approximately half are deemed to be potentially meritorious and are therefore discussed during a formally convened meeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of NIH peer review processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "ff9c9108-4bbb-4128-b46b-5affee3eafaf",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C25",
+      "claim": "After the meeting, each discussed application receives a priority score ranging from 10 (best) to 90 (worst).",
+      "claim_type": "EXPLICIT",
+      "source": "After the meeting, each discussed application receives a priority score ranging from 10 (best) to 90 (worst); many, but not all, applications also receive a 'percentile ranking' to account for differences in how individual peer review groups calibrate their scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of NIH peer review scoring systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "31c7909a-679e-41ec-9c0e-af70ed7a5773",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C26",
+      "claim": "Many, but not all, applications receive a percentile ranking to account for differences in how individual peer review groups calibrate their scores.",
+      "claim_type": "EXPLICIT",
+      "source": "After the meeting, each discussed application receives a priority score ranging from 10 (best) to 90 (worst); many, but not all, applications also receive a 'percentile ranking' to account for differences in how individual peer review groups calibrate their scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of NIH peer review scoring systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "ec44cd43-c800-4a62-ad69-7b9ecd272a3e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C27",
+      "claim": "The Center of Scientific Review Division of Receipt and Referral makes IC assignments based on IC interests, specific Funding Opportunity Announcements, and sometimes on applicant request.",
+      "claim_type": "EXPLICIT",
+      "source": "The Center of Scientific Review (CSR) Division of Receipt and Referral makes assignments (CSR, 2021) based on IC interests, specific Funding Opportunity Announcements (as appropriate), and sometimes on applicant request.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to CSR, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "41075617-388e-412f-8d86-95684acf177b",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C28",
+      "claim": "Some applications receive a dual assignment (two ICs with one primary and one secondary).",
+      "claim_type": "EXPLICIT",
+      "source": "Some applications receive a dual assignment (that is, two ICs with one primary and one secondary), but changes in primary IC assignment occur less than 2% of the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of NIH assignment processes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "4a39600c-d965-40f8-b73e-129fdba1ff2f",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C29",
+      "claim": "Changes in primary IC assignment occur less than 2% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Some applications receive a dual assignment (that is, two ICs with one primary and one secondary), but changes in primary IC assignment occur less than 2% of the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic about IC assignment stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "25a972a3-6d3c-49b2-b6d9-d9402d3117e9",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C30",
+      "claim": "ICs make decisions about which applications to fund based on peer review scores, strategic priorities, and availability of funds.",
+      "claim_type": "EXPLICIT",
+      "source": "ICs ultimately make decisions about which applications to fund, with funding decisions based on peer review scores, strategic priorities, and availability of funds (NIH, 2021c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to NIH, 2021c.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "76063566-4ec0-4901-a982-accf020ed901",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C31",
+      "claim": "Resubmissions are known to systematically fare better on peer review than first-time submissions.",
+      "claim_type": "EXPLICIT",
+      "source": "To eliminate biases due to prior reviews and to maximize the likelihood that the analysis data frame reflects comparable observations with independently distributed variables, we focused on applications coming to the NIH for the first time; in other words, we excluded resubmissions (Lauer, 2017) and competing renewals (Lauer, 2016) which are known to systematically fare better on peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lauer, 2017 and Lauer, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "2fd28b57-e454-4ee2-aeec-2b225ef6f8a8",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C32",
+      "claim": "Competing renewals are known to systematically fare better on peer review than first-time submissions.",
+      "claim_type": "EXPLICIT",
+      "source": "To eliminate biases due to prior reviews and to maximize the likelihood that the analysis data frame reflects comparable observations with independently distributed variables, we focused on applications coming to the NIH for the first time; in other words, we excluded resubmissions (Lauer, 2017) and competing renewals (Lauer, 2016) which are known to systematically fare better on peer review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lauer, 2017 and Lauer, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "748193e9-a209-4bf4-9355-ba1901e402a5",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C33",
+      "claim": "Each application was designated to one of 148 topics identified by the Word2vec algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Each application was designated to one of 148 topics identified by the Word2vec algorithm (Mikolov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used, supported by citation to Mikolov et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "4b337bea-2685-4e02-8464-3e9916153d9f",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C34",
+      "claim": "Hoppe et al., 2019 stated there were 150 topics, but subsequently discovered data processing errors for two topics yielded 148 for the re-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hoppe et al., 2019 stated there were 150 topics, but subsequently discovered data processing errors for two topics yielded 148 for the re-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a correction to the previous report based on data processing review.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "d055b573-661e-4295-bd36-1512d33d3fda",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C35",
+      "claim": "Of 157,405 applications received, there were 96,697 applications considered and reviewed by NIH for the first time after exclusion of pre-review withdrawals, resubmissions and competing renewals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 157,405 applications received, there were, after exclusion of pre-review withdrawals, resubmissions and competing renewals, 96,697 applications considered and reviewed by NIH for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "f629256a-8da9-45a2-82ed-c23a994949ec",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C36",
+      "claim": "Of the 96,697 first-time applications, 8,381 were funded, for an overall award rate of 9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 8381 were funded, for an overall award rate of 9%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "a4119039-9f4d-4c66-ba61-2f2156525c5e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C37",
+      "claim": "88% of applications were reviewed in the NIH Center for Scientific Review.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of applications (88%) were reviewed in the NIH Center for Scientific Review (or CSR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "d7405389-7646-4802-ad59-838b5c57cb70",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C38",
+      "claim": "There were 1,643 applications (2%) submitted by AAB PIs.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1643 applications, or 2%, submitted by AAB PIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "94791b35-ccad-4e7b-88af-2419d68e9335",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C39",
+      "claim": "IC-specific award rates varied from 6% to 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, award rates varied from 6% to 15%, while the proportion of applications with AAB PIs ranged from <1% to nearly 15%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "bf80507a-a312-4401-9eb6-1ddb438cc800",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C40",
+      "claim": "The proportion of applications with AAB PIs ranged from <1% to nearly 15% across ICs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, award rates varied from 6% to 15%, while the proportion of applications with AAB PIs ranged from <1% to nearly 15%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "0103d8df-3a29-4f45-9fde-f039de690ce2",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C41",
+      "claim": "10% of topics accounted for 50% of applications submitted by AAB Principal Investigators.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Hoppe et al., 2019, there was a nonrandom distribution whereby 10% of topics (or 15 topics) accounted for 50% of AAB applications, while 25% of the topics accounted for 70% of AAB applications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "89feaa4b-37c6-419d-8381-0bca10ee92b0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C42",
+      "claim": "25% of topics accounted for 70% of applications submitted by AAB Principal Investigators.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Hoppe et al., 2019, there was a nonrandom distribution whereby 10% of topics (or 15 topics) accounted for 50% of AAB applications, while 25% of the topics accounted for 70% of AAB applications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "31eb7afa-542d-4ceb-84ab-65e84cfecfd0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C43",
+      "claim": "Applications assigned to Higher AAB ICs were three times more likely to come from AAB PIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Applications assigned to Higher AAB ICs were three times more likely to come from AAB PIs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "a90e4ec2-28d2-4fc9-b390-7286797d6d10",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C44",
+      "claim": "Review outcomes (proportion discussed and priority scores) were similar for applications assigned to Higher AAB ICs and Lower AAB ICs.",
+      "claim_type": "EXPLICIT",
+      "source": "Review outcomes \u2013 proportion discussed and, for those applications that were discussed at peer review meetings, priority scores and percentile rankings \u2013 were similar in both groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "3c4ea1d7-7695-4bb0-8a82-440b20e8ccb0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C45",
+      "claim": "Applications assigned to Higher AAB ICs were 10% less likely to be funded despite similar review outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the similar review outcomes, these applications were 10% less likely to be funded.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Table 2 showing 7.9% vs 8.8% award rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "30e6cb08-a10a-40b9-a368-a1577d4c75b5",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C46",
+      "claim": "Two IC-defined cohorts of applications with similar review outcomes can have substantively different funding outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These descriptive data show that two IC-defined cohorts of applications with similar review outcomes can have substantively different funding outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data presented in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "cbea5416-128f-4e3d-8ddf-2c1bacb53e95",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C47",
+      "claim": "There was a non-significant trend whereby applications focusing on topics that accounted for a greater proportion of AAB applications were more likely to make it to discussion (p=0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a non-significant trend whereby applications focusing on topics that accounted for a greater proportion of AAB applications (Equation 1) were more likely to make it to discussion (Equation 5)(Panel A, p=0.12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data and analysis shown in Figure 2, Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "ee0dc86f-aec6-4be5-a472-78efb4d4f1ba",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C48",
+      "claim": "There was no association of mean score for each topic with proportion of total AAB applications linked to each topic (p=0.87).",
+      "claim_type": "EXPLICIT",
+      "source": "When we focused on applications that were discussed and therefore received a priority score, there was no association of mean score for each topic (Equation 6) with proportion of total AAB applications linked to each topic (Equation 1) (Panel B, p=0.87).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data and analysis shown in Figure 2, Panel B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "79c1a540-afa2-4f3f-ab7a-79263cbac9b6",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C49",
+      "claim": "Topics of smaller size showed greater variability in mean priority scores, a manifestation of regression to the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "As would be expected topics of smaller size showed greater variability, a manifestation of regression to the mean.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 3, Panel A and is based on statistical knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "764145da-97dc-41a3-847c-93dd7790c52c",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C50",
+      "claim": "The association between mean priority score and topic size was not significant (p=0.63).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the slope was slightly negative (coeffecient \u22120.0002634), the association was not significant (p=0.63).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regression analysis shown in Figure 3, Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "2d1cf5db-bdea-47b8-980d-5728fd9f01e7",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C51",
+      "claim": "Among AAB preferred topics, there were 5 more than 1 point above the regression line (with scores worse than predicted), while there were 3 more than 1 point below the line (with scores better than predicted).",
+      "claim_type": "EXPLICIT",
+      "source": "Among AAB preferred topics (orange dots), there were 5 more than 1 point above the line (meaning with scores worse than predicted), while there were 3 more than 1 point below the line (meaning with scores better than predicted).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual inspection and counting of data points in Figure 3, Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "e29e31e3-5f27-4b3e-bd01-f8e81eaffdb1",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C52",
+      "claim": "Residuals were more positive (worse) for AAB preferred topics, but the absolute differences were small, much less than one priority score point.",
+      "claim_type": "EXPLICIT",
+      "source": "Residuals were more positive (i.e. worse) for AAB preferred topics. However, the absolute differences were small, much less than one priority score point (over a possible range of 10\u201390, with topic-specific mean values ranging from 35 to 45).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3, Panel B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "63004f90-b140-4ff6-b761-3aec0a8e440b",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C53",
+      "claim": "Applications focusing on AAB Preferred topics were 7% less likely to be funded than applications on other topics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, applications focusing on AAB Preferred topics were 7% less likely to be funded.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Table 3 showing 8.2% vs 8.8% award rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "1b25e973-8768-4155-a3c1-ebfbe82dd140",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C54",
+      "claim": "Applications on AAB Preferred topics were 42% more likely to be assigned to Higher AAB ICs.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 3 shows that applications on AAB Preferred topics (those 10% of topics that accounted for 50% of all AAB applications) were 42% more likely to be assigned to Higher AAB ICs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Table 3 showing 24.3% vs 17.1%.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "6aabe773-6bc8-40ab-a422-df3bda76fa7c",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C55",
+      "claim": "ICs receiving a higher percentage of AAB Preferred topic applications tended to have lower award rates (r = \u22120.35, p=0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "ICs with receiving a higher percentage of AAB Preferred topic applications tended to have lower award rates (r = \u22120.35, p=0.08).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "9c36a1c4-99cc-4e22-9cbc-af4c5bb70c3e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C56",
+      "claim": "Observed topic-specific award rates were strongly correlated with predicted award rates based solely on IC-specific award rates (r = 0.62, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The association between IC award rates and application success is demonstrated in Figure 5, Panel A, which shows that observed topic-specific award rates (Equation 3) were strongly correlated with predicted award rates (Equation 4), that is award rates that would be expected based solely on IC-specific award rates (r = 0.62, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 5, Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "11ee04e4-cda5-4bb6-b0c1-82c8386c59d2",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C57",
+      "claim": "There was a tendency toward lower predicted topic-specific award rates with increasing proportion of AAB applications linked to each topic (p=0.06).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5, Panel B shows a tendency toward lower predicted topic-specific award rates (Equation 4) with increasing proportion of AAB applications (Equation 1) linked to each topic (p=0.06).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regression analysis shown in Figure 5, Panel B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "eb0dfb0f-40df-47f1-9569-079e499fdfae",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C58",
+      "claim": "The actual topic-specific award rates were non-significantly negatively associated with increasing proportion of AAB applications (p=0.76).",
+      "claim_type": "EXPLICIT",
+      "source": "Panel C shows that the actual topic-specific award rates (Equation 3) were non-significantly negatively associated with increasing proportion of AAB applications (Equation 1) (p=0.76).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regression analysis shown in Figure 5, Panel C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "776c4cd7-782e-4405-a40d-86d955e1d6f9",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C59",
+      "claim": "AAB PI applications had a lower likelihood of funding (Model 1, negative regression coefficient for AAB Principal Investigator, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Hoppe et al., 2019 and prior literature (Ginther et al., 2011), AAB PI applications had a lower likelihood of funding (Model 1, negative regression coefficient for AAB Principal Investigator, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by probit regression analysis shown in Table 5, Model 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "bab3d1a9-d623-4f5b-8026-973cd762d0c7",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C60",
+      "claim": "Adjusting for the topic (AAB Preferred or Other) reduced the absolute value of the regression coefficient for race by 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusting for the topic (AAB Preferred or Other) reduced the absolute value of the regression coefficient for race by 5% (Model 2); similarly adjusting for IC assignment (Higher or Lower AAB) reduced the absolute value of the regression coefficient by 5% (Model 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of regression coefficients in Table 5, Models 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "e7cd994b-1836-4b83-acff-8044b566fc1a",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C61",
+      "claim": "Adjusting for IC assignment (Higher or Lower AAB) reduced the absolute value of the regression coefficient for race by 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusting for the topic (AAB Preferred or Other) reduced the absolute value of the regression coefficient for race by 5% (Model 2); similarly adjusting for IC assignment (Higher or Lower AAB) reduced the absolute value of the regression coefficient by 5% (Model 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of regression coefficients in Table 5, Models 1 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "5d4e56f8-a93b-4e8d-8aa6-329d520b6c76",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C62",
+      "claim": "Adjusting for the award rate of the assigned IC reduced the absolute value of the regression coefficient for race by 14%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, adjusting for the award rate of the assigned IC reduced the absolute value of the regression coefficient for race by 14% (Model 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of regression coefficients in Table 5, Models 1 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "d30a9358-29fd-4162-8338-e1ea27780309",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C63",
+      "claim": "Without consideration of other variables, an AAB preferred topic was associated with a lower probability of funding (Model 1, negative regression coefficient for AAB preferred topic, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Without consideration of other variables, an AAB preferred topic was associated with a lower probability of funding (Model 1, negative regression coefficient for AAB preferred topic, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by probit regression analysis shown in Table 6, Model 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "20805520-6280-4a92-9f68-edca8a9142a0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C64",
+      "claim": "After adjusting for IC award rate, there was no association between AAB preferred topics and funding (Model 2, regression coefficient for AAB preferred topic close to zero, p=NS).",
+      "claim_type": "EXPLICIT",
+      "source": "However, after adjusting for IC award rate alone (Model 2, regression coefficient for AAB preferred topic close to zero, p=NS) as well as IC award rate and other characteristics (whether the PI is an early stage investigator, whether the application included more than one PI, and whether the proposed research included human and/or animal subjects), there was no association between AAB preferred topics and funding (Model 3, regression coefficient for AAB preferred topic close to zero, p=NS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by probit regression analysis shown in Table 6, Model 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "44ebc441-0d87-45b5-a6af-1cef0307de92",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C65",
+      "claim": "The IC award rate was strongly associated with likelihood of funding (Models 2 and 3, regression coefficient positive, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The IC award rate was strongly associated with likelihood of funding (Models 2 and 3, regression coefficient positive, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by probit regression analysis shown in Table 6, Models 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "01a510a5-4aa9-4fa7-9d24-dcea2a6bc02b",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C66",
+      "claim": "Topic choice accounted for over 20% of funding disparities that adversely affect AAB PIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hoppe et al., 2019 found that topic choice accounted for over 20% of funding disparities that adversely effect AAB PIs. We confirm this, but find that IC assignment (which, of course, is linked to topic) explains the disparities just as well, and that IC award rates explain the disparities even better (Table 5, 14% vs 5% reduction in absolute value of regression coefficient for AAB PI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Hoppe et al., 2019 that is confirmed in this re-analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "489a615f-51a5-49ef-b96b-b09fcae25b1e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C67",
+      "claim": "IC assignment explains funding disparities just as well as topic choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm this, but find that IC assignment (which, of course, is linked to topic) explains the disparities just as well, and that IC award rates explain the disparities even better (Table 5, 14% vs 5% reduction in absolute value of regression coefficient for AAB PI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of regression models in Table 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "6bcf0700-fc3a-452b-a667-dc0ef5549d23",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C68",
+      "claim": "IC award rates explain funding disparities even better than topic choice or IC assignment (14% vs 5% reduction in absolute value of regression coefficient for AAB PI).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm this, but find that IC assignment (which, of course, is linked to topic) explains the disparities just as well, and that IC award rates explain the disparities even better (Table 5, 14% vs 5% reduction in absolute value of regression coefficient for AAB PI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of regression models in Table 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "05f9d891-4e18-4e1e-9220-37d45149c43a",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C69",
+      "claim": "After accounting for IC award rate, there was no association between topic choice and funding outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, after accounting for IC award rate, we found no association between topic choice and funding outcome (Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regression analysis shown in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "0c667fb2-5230-4ed7-8fbe-203d0fa80129",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C70",
+      "claim": "Applications on AAB Preferred topics were more likely to make it past the first hurdle of peer review (reaching the point of formal discussion).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it should be noted that applications on these topics were more likely to make it past the first hurdle of peer review, that is reaching the point of formal discussion (Figure 2 and Table 3, see line 'Discussed'); thus, if anything, peer reviewers may be slightly biased in favor of AAB-preferred topics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 2 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "babe6069-2fd6-43d3-81f5-bafb6d82894b",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C71",
+      "claim": "Peer reviewers may be slightly biased in favor of AAB-preferred topics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it should be noted that applications on these topics were more likely to make it past the first hurdle of peer review, that is reaching the point of formal discussion (Figure 2 and Table 3, see line 'Discussed'); thus, if anything, peer reviewers may be slightly biased in favor of AAB-preferred topics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data showing higher discussion rates for AAB-preferred topics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "635a144a-23e6-43bb-ba5e-6b90768e47dc",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C72",
+      "claim": "The primary analysis focused on first-time submissions of de novo applications in which the award rates were low (<10%).",
+      "claim_type": "EXPLICIT",
+      "source": "Our primary analysis focused on first-time submissions of de novo applications in which the award rates were low (<10%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the primary analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "baf3fabd-9a64-4788-9b08-0155d6a2a62e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C73",
+      "claim": "Analysis of resubmission applications yielded similar findings to the primary analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our analyses of resubmission applications yielded similar findings (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a supplementary analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "c17f6e33-5908-4f93-b373-92e4dbec6da1",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C74",
+      "claim": "An analysis confined to single PI applications yielded similar findings to the primary analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, an analysis confined to single PI applications yielded similar findings (Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a supplementary analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "04eace6d-1629-4244-81ba-b4fd6ac0cc5e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C75",
+      "claim": "Only 2% of PIs in this study were African American or Black.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 2% of PIs in this study were African American or Black and thus it is not possible that this small percentage of scientists cover the entire breadth of what NIH funds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "37c519d2-a468-472e-8e19-99d93157f849",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C76",
+      "claim": "It is not possible that 2% of scientists cover the entire breadth of what NIH funds.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 2% of PIs in this study were African American or Black and thus it is not possible that this small percentage of scientists cover the entire breadth of what NIH funds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the small percentage of AAB PIs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "4759bbf2-ee37-4885-bbde-095c538ec1d9",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C77",
+      "claim": "The small number of AAB PIs is a source of error for describing AAB scientific interests as reflected in grant applications.",
+      "claim_type": "EXPLICIT",
+      "source": "The small number of AAB PIs is a source of error for describing AAB scientific interests as reflected in grant applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "3d70deb5-8f22-4203-b6b4-bad0fd751c1b",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C78",
+      "claim": "NIH has increasingly recognized the importance of enhancing research in targeted topics.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, in recent years, NIH has increasingly recognized the importance of enhancing research in targeted topics, as exemplified by a recently announced Common Fund program to enhance transformative research in health disparities and health equity (NIH, 2021a) and by the large investment in RADx-UP, a COVID-19 diagnostic testing program in underserved communities (Tromberg et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to NIH, 2021a and Tromberg et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "00234006-0265-4a57-a362-b42554987ff8",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C79",
+      "claim": "NIH announced a Common Fund program to enhance transformative research in health disparities and health equity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, in recent years, NIH has increasingly recognized the importance of enhancing research in targeted topics, as exemplified by a recently announced Common Fund program to enhance transformative research in health disparities and health equity (NIH, 2021a) and by the large investment in RADx-UP, a COVID-19 diagnostic testing program in underserved communities (Tromberg et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to NIH, 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "c4275839-a9c0-4bac-969c-2cdda73b77f8",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C80",
+      "claim": "NIH made a large investment in RADx-UP, a COVID-19 diagnostic testing program in underserved communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, in recent years, NIH has increasingly recognized the importance of enhancing research in targeted topics, as exemplified by a recently announced Common Fund program to enhance transformative research in health disparities and health equity (NIH, 2021a) and by the large investment in RADx-UP, a COVID-19 diagnostic testing program in underserved communities (Tromberg et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tromberg et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "616201f9-29ba-46c5-a2d8-074e35d7995c",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C81",
+      "claim": "The lower rate of funding for applications focused on AAB Preferred topics is likely primarily due to their assignment to ICs with lower award rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower rate of funding for applications focused on AAB Preferred topics is likely primarily due to their assignment to ICs with lower award rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by regression analyses in Tables 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "f8eff891-d484-4485-b219-d3929eedde50",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C82",
+      "claim": "Applications focused on AAB Preferred topics have similar peer review outcomes as those focused on other topics.",
+      "claim_type": "EXPLICIT",
+      "source": "These applications have similar peer review outcomes as those focused on other topics (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "92ffbbc7-9fba-4c95-8f35-455c9db3088e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C83",
+      "claim": "Topic choice partially explains race-based funding disparities (absolute value of regression coefficient reduced by 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Topic choice does partially explain race-based funding disparities (Table 5, Model 2, absolute value of regression coefficient reduced by 5%), but IC-specific award rates explain the disparities to an even greater degree (Table 5, Model 4, absolute value of regression coefficient reduced by 14%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of regression models in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "105a4290-0597-49f4-9723-f7e5ca89ae40",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "claim_id": "C84",
+      "claim": "IC-specific award rates explain race-based funding disparities to a greater degree than topic choice (absolute value of regression coefficient reduced by 14%).",
+      "claim_type": "EXPLICIT",
+      "source": "Topic choice does partially explain race-based funding disparities (Table 5, Model 2, absolute value of regression coefficient reduced by 5%), but IC-specific award rates explain the disparities to an even greater degree (Table 5, Model 4, absolute value of regression coefficient reduced by 14%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of regression models in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work (Hoppe et al., 2019) found that topic choice accounted for over 20% of race-based funding disparities among NIH R01 applications (2011-2015), with AAB PI applications skewed toward less-funded topics, potentially due to peer reviewer biases. However, that analysis did not account for differential funding ecologies among NIH Institutes and Centers (ICs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C9-C10, and C16 accurately describe the findings and limitations of Hoppe et al., 2019, which are properly cited and form the motivation for the current re-analysis. These claims establish the context and rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "d506be6b-6290-4c64-82e1-4e85ad209c5e",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the re-analysis of 96,697 first-time R01 applications, 10% of 148 topics accounted for 50% of applications submitted by AAB PIs, and 25% of topics accounted for 70% of AAB applications, demonstrating a highly skewed distribution of topic preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41, and C42 are directly supported by Figure 1 and descriptive statistics from the data analysis. The nonrandom distribution is clearly demonstrated and quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Applications on AAB Preferred topics had similar peer review outcomes (discussion rates, priority scores, percentile rankings) compared to other topics, but were funded at lower rates (8.2% vs 8.8%, a 7% relative difference).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C44, C47-C48, C53, C70, and C82 are well-supported by data in Tables 2-3 and Figure 2. The statistical analyses show no significant association between AAB preference and peer review scores (p=0.87), while funding differences are documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "cf8f9944-9c3a-4eb7-b853-21c6d299e395",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Applications on AAB Preferred topics were 42% more likely to be assigned to Higher AAB ICs, which had 10% lower funding rates despite similar peer review outcomes. ICs receiving more AAB Preferred topic applications tended to have lower award rates (r=-0.35, p=0.08).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C45-C46, C54-C55 are supported by data in Tables 2-3 and Figure 4. The correlation between IC assignment patterns and funding outcomes is demonstrated, though the p-value of 0.08 for the IC-level correlation is borderline significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "30cbafe9-0ba0-43bd-aab6-74f77e8425f0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Topic-specific mean priority scores showed greater variability for smaller topics (regression to the mean), but there was no significant association between mean priority score and topic size (p=0.63). AAB preferred topics had slightly worse residuals, but differences were small (<1 priority score point).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by Figure 3 and regression analysis. The statistical analysis appropriately accounts for topic size effects, and the minimal differences in residuals argue against substantial peer reviewer bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "a18b8af6-4054-4b0c-aea4-2cadee9a90c1",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Observed topic-specific award rates were strongly correlated with predicted award rates based solely on IC-specific award rates (r=0.62, p<0.0001). Predicted award rates showed a borderline significant negative association with proportion of AAB applications (p=0.06), while actual award rates showed no significant association (p=0.76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by Figure 5 and correlation analyses. The strong correlation between predicted and actual award rates based on IC assignment provides key evidence for the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Probit regression models showed that adjusting for topic choice reduced the race-based funding disparity coefficient by 5%, adjusting for IC assignment reduced it by 5%, but adjusting for IC award rates reduced it by 14%, indicating that IC award rates explain funding disparities better than topic choice alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62, C66-C68, C83-C84 are supported by regression analyses in Table 5. The comparison of coefficient reductions across models provides quantitative evidence for the relative importance of IC award rates versus topic choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "9f146d00-2e76-43b9-8633-71ddee9e94cd",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AAB preferred topics were associated with lower funding probability in univariable analysis (p<0.01), but after adjusting for IC award rate, there was no association between AAB preferred topics and funding (p=NS). IC award rate was strongly associated with funding likelihood (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C69, and C81 are supported by regression analyses in Table 6. The disappearance of the topic effect after controlling for IC award rate is the key finding supporting the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "0d84ec6c-6b35-442e-9a2c-84602b769bc8",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The lower rate of funding for AAB Preferred topics was primarily due to their assignment to ICs with lower award rates, not to peer-reviewer preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 represents the main conclusion and is well-supported by the convergence of multiple lines of evidence: similar peer review outcomes (C6-C7), differential IC assignment patterns (C54), strong correlation between IC award rates and topic-specific outcomes (C56), and regression models showing IC award rates explain disparities better than topic choice (C62, C64-C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "03e8af4c-5e68-4e89-9c4c-f384b4cb045a",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Peer reviewers may be slightly biased in favor of AAB-preferred topics, as these applications were more likely to reach formal discussion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is an inference from C70 showing higher discussion rates for AAB-preferred topics. However, the trend was non-significant (p=0.12, C47), and alternative explanations for higher discussion rates are not ruled out. The claim of bias is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "32d9c247-1b05-4e15-a904-77523b78e7d0",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The NIH funding system involves assignment of applications to 24 ICs with varying award rates (6-15%), and funding decisions are based on peer review scores, strategic priorities, and available funds, not peer review scores alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15, C17-C19, C22-C30 describe the NIH funding system and are supported by citations and data in Table 1. These claims provide essential context for understanding the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "04e7bdfc-0387-4806-b0b6-f345239bbf18",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Resubmissions and competing renewals systematically fare better on peer review than first-time submissions and were excluded from the primary analysis to minimize bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 and C31-C32 are supported by citations to Lauer 2017 and 2016. The exclusion of these applications is a reasonable methodological choice to ensure comparable observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "168d206a-e7ba-41cf-b20d-7cd77fd49a42",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Applications were classified into 148 topics using the Word2vec algorithm, correcting a data processing error from Hoppe et al., 2019 which reported 150 topics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 describe the methodology and correction of a previous error. The use of Word2vec is properly cited (Mikolov et al., 2013), and the correction is transparently reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "c7d147c7-c95d-45c8-a6dc-9e65a09af60d",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The analysis included 96,697 first-time R01 applications (from 157,405 total) with an overall award rate of 9%. AAB PIs submitted 1,643 applications (2%), and IC-specific award rates ranged from 6-15% with AAB PI representation ranging from <1% to 15%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 provide descriptive statistics that are clearly documented in the text and Table 1. These data establish the study population and key variables.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "a8955f3d-c5a1-4f9e-94a3-b769afb40bc5",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The primary analysis focused on first-time submissions with low award rates (<10%), but supplementary analyses of resubmissions and single-PI applications yielded similar findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 describe the scope of analyses and robustness checks. The consistency of findings across different subsets strengthens confidence in the main results, though the supplementary analyses are referenced in appendices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "b3468ce4-e395-422e-ba8d-d42c639d3072",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Only 2% of PIs were AAB, which limits the ability to comprehensively describe AAB scientific interests and represents a source of error in characterizing topic preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 acknowledge an important limitation of the study. The small percentage of AAB PIs is a documented fact (C38), and the inference about limited coverage (C76) and measurement error (C77) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    },
+    {
+      "id": "436525e0-8c2f-4ff0-8620-ad0b99d33fd9",
+      "content_id": "340c42cd-e64a-4d79-8813-aef751d386d7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "NIH has increasingly recognized the importance of enhancing research in targeted topics, including health disparities and health equity research, as evidenced by new Common Fund programs and RADx-UP investment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 are supported by citations to NIH 2021a and Tromberg et al., 2020. These claims provide policy context but are not central to the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:41:21.687693Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f9622681-88dc-4afb-937b-b05d50288d3e",
+      "result_id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8"
+    },
+    {
+      "claim_id": "27eaaa98-71e2-4d39-9190-5e0d740320fd",
+      "result_id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8"
+    },
+    {
+      "claim_id": "040cda55-1cf3-42d7-912b-3d7a64624c22",
+      "result_id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8"
+    },
+    {
+      "claim_id": "5d102f7d-a291-4bf8-976d-8e50bf268432",
+      "result_id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8"
+    },
+    {
+      "claim_id": "f78c8ce3-6532-4094-9238-6e5ebbd96020",
+      "result_id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8"
+    },
+    {
+      "claim_id": "3089b21d-a1a8-4ea4-9b4b-ad95a4fd156b",
+      "result_id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8"
+    },
+    {
+      "claim_id": "1f56f4c9-16d5-449d-8a95-94e9e2aa5f5c",
+      "result_id": "576fd7f0-b680-4579-8569-13cd7d7ac0c8"
+    },
+    {
+      "claim_id": "b14859b2-b470-425a-a422-f0c4cd16b2a9",
+      "result_id": "d506be6b-6290-4c64-82e1-4e85ad209c5e"
+    },
+    {
+      "claim_id": "0103d8df-3a29-4f45-9fde-f039de690ce2",
+      "result_id": "d506be6b-6290-4c64-82e1-4e85ad209c5e"
+    },
+    {
+      "claim_id": "89feaa4b-37c6-419d-8381-0bca10ee92b0",
+      "result_id": "d506be6b-6290-4c64-82e1-4e85ad209c5e"
+    },
+    {
+      "claim_id": "f745ac7b-6222-4c60-8fe5-279c5f1854f3",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "438c607b-5f51-4486-98b5-6c8bc2a85021",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "a90e4ec2-28d2-4fc9-b390-7286797d6d10",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "cbea5416-128f-4e3d-8ddf-2c1bacb53e95",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "ee0dc86f-aec6-4be5-a472-78efb4d4f1ba",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "63004f90-b140-4ff6-b761-3aec0a8e440b",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "0c667fb2-5230-4ed7-8fbe-203d0fa80129",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "f8eff891-d484-4485-b219-d3929eedde50",
+      "result_id": "c97fa3ae-9bca-4d42-9328-7690d3a9b69b"
+    },
+    {
+      "claim_id": "31eb7afa-542d-4ceb-84ab-65e84cfecfd0",
+      "result_id": "cf8f9944-9c3a-4eb7-b853-21c6d299e395"
+    },
+    {
+      "claim_id": "3c4ea1d7-7695-4bb0-8a82-440b20e8ccb0",
+      "result_id": "cf8f9944-9c3a-4eb7-b853-21c6d299e395"
+    },
+    {
+      "claim_id": "30e6cb08-a10a-40b9-a368-a1577d4c75b5",
+      "result_id": "cf8f9944-9c3a-4eb7-b853-21c6d299e395"
+    },
+    {
+      "claim_id": "1b25e973-8768-4155-a3c1-ebfbe82dd140",
+      "result_id": "cf8f9944-9c3a-4eb7-b853-21c6d299e395"
+    },
+    {
+      "claim_id": "6aabe773-6bc8-40ab-a422-df3bda76fa7c",
+      "result_id": "cf8f9944-9c3a-4eb7-b853-21c6d299e395"
+    },
+    {
+      "claim_id": "79c1a540-afa2-4f3f-ab7a-79263cbac9b6",
+      "result_id": "30cbafe9-0ba0-43bd-aab6-74f77e8425f0"
+    },
+    {
+      "claim_id": "764145da-97dc-41a3-847c-93dd7790c52c",
+      "result_id": "30cbafe9-0ba0-43bd-aab6-74f77e8425f0"
+    },
+    {
+      "claim_id": "2d1cf5db-bdea-47b8-980d-5728fd9f01e7",
+      "result_id": "30cbafe9-0ba0-43bd-aab6-74f77e8425f0"
+    },
+    {
+      "claim_id": "e29e31e3-5f27-4b3e-bd01-f8e81eaffdb1",
+      "result_id": "30cbafe9-0ba0-43bd-aab6-74f77e8425f0"
+    },
+    {
+      "claim_id": "9c36a1c4-99cc-4e22-9cbc-af4c5bb70c3e",
+      "result_id": "a18b8af6-4054-4b0c-aea4-2cadee9a90c1"
+    },
+    {
+      "claim_id": "11ee04e4-cda5-4bb6-b0c1-82c8386c59d2",
+      "result_id": "a18b8af6-4054-4b0c-aea4-2cadee9a90c1"
+    },
+    {
+      "claim_id": "eb0dfb0f-40df-47f1-9569-079e499fdfae",
+      "result_id": "a18b8af6-4054-4b0c-aea4-2cadee9a90c1"
+    },
+    {
+      "claim_id": "776c4cd7-782e-4405-a40d-86d955e1d6f9",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "bab3d1a9-d623-4f5b-8026-973cd762d0c7",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "e7cd994b-1836-4b83-acff-8044b566fc1a",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "5d4e56f8-a93b-4e8d-8aa6-329d520b6c76",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "01a510a5-4aa9-4fa7-9d24-dcea2a6bc02b",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "489a615f-51a5-49ef-b96b-b09fcae25b1e",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "6bcf0700-fc3a-452b-a667-dc0ef5549d23",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "92ffbbc7-9fba-4c95-8f35-455c9db3088e",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "105a4290-0597-49f4-9723-f7e5ca89ae40",
+      "result_id": "9636d8a5-1ab3-406e-ae99-2a649d0700d5"
+    },
+    {
+      "claim_id": "d30a9358-29fd-4162-8338-e1ea27780309",
+      "result_id": "9f146d00-2e76-43b9-8633-71ddee9e94cd"
+    },
+    {
+      "claim_id": "20805520-6280-4a92-9f68-edca8a9142a0",
+      "result_id": "9f146d00-2e76-43b9-8633-71ddee9e94cd"
+    },
+    {
+      "claim_id": "44ebc441-0d87-45b5-a6af-1cef0307de92",
+      "result_id": "9f146d00-2e76-43b9-8633-71ddee9e94cd"
+    },
+    {
+      "claim_id": "05f9d891-4e18-4e1e-9220-37d45149c43a",
+      "result_id": "9f146d00-2e76-43b9-8633-71ddee9e94cd"
+    },
+    {
+      "claim_id": "616201f9-29ba-46c5-a2d8-074e35d7995c",
+      "result_id": "9f146d00-2e76-43b9-8633-71ddee9e94cd"
+    },
+    {
+      "claim_id": "50311098-fd42-4d9f-b135-d7bcfd109963",
+      "result_id": "0d84ec6c-6b35-442e-9a2c-84602b769bc8"
+    },
+    {
+      "claim_id": "babe6069-2fd6-43d3-81f5-bafb6d82894b",
+      "result_id": "03e8af4c-5e68-4e89-9c4c-f384b4cb045a"
+    },
+    {
+      "claim_id": "351d2d10-b287-4ba0-9924-2dc0389507f0",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "7a4af867-fb4b-4af5-898b-03213f07bfb8",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "8dcc2360-9e39-4ac4-835a-995f600e7ff0",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "318963c7-0086-4dd8-99b9-65cdb7f99b21",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "b49fc757-f934-4960-80c5-1abc8c9744d3",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "dcc43864-ea9b-479c-a38c-a1eb757db51f",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "ab98a202-a7d5-43f1-b743-330b9be5e9b9",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "716994d6-7a2d-4123-97dc-9dc5cce57884",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "46740111-f45a-4b08-812a-19b67cd49547",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "4a02b49e-563d-420d-81bb-a16a0b42ca08",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "dee25284-d0c1-4be2-881f-0e05e847c346",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "ff9c9108-4bbb-4128-b46b-5affee3eafaf",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "31c7909a-679e-41ec-9c0e-af70ed7a5773",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "ec44cd43-c800-4a62-ad69-7b9ecd272a3e",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "41075617-388e-412f-8d86-95684acf177b",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "4a39600c-d965-40f8-b73e-129fdba1ff2f",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "25a972a3-6d3c-49b2-b6d9-d9402d3117e9",
+      "result_id": "32d9c247-1b05-4e15-a904-77523b78e7d0"
+    },
+    {
+      "claim_id": "a227d6a8-ea35-4f02-8908-de0d10f0966e",
+      "result_id": "04e7bdfc-0387-4806-b0b6-f345239bbf18"
+    },
+    {
+      "claim_id": "20540f3f-176e-45c6-a387-c1b845e9c048",
+      "result_id": "04e7bdfc-0387-4806-b0b6-f345239bbf18"
+    },
+    {
+      "claim_id": "76063566-4ec0-4901-a982-accf020ed901",
+      "result_id": "04e7bdfc-0387-4806-b0b6-f345239bbf18"
+    },
+    {
+      "claim_id": "2fd28b57-e454-4ee2-aeec-2b225ef6f8a8",
+      "result_id": "04e7bdfc-0387-4806-b0b6-f345239bbf18"
+    },
+    {
+      "claim_id": "748193e9-a209-4bf4-9355-ba1901e402a5",
+      "result_id": "168d206a-e7ba-41cf-b20d-7cd77fd49a42"
+    },
+    {
+      "claim_id": "4b337bea-2685-4e02-8464-3e9916153d9f",
+      "result_id": "168d206a-e7ba-41cf-b20d-7cd77fd49a42"
+    },
+    {
+      "claim_id": "d055b573-661e-4295-bd36-1512d33d3fda",
+      "result_id": "c7d147c7-c95d-45c8-a6dc-9e65a09af60d"
+    },
+    {
+      "claim_id": "f629256a-8da9-45a2-82ed-c23a994949ec",
+      "result_id": "c7d147c7-c95d-45c8-a6dc-9e65a09af60d"
+    },
+    {
+      "claim_id": "a4119039-9f4d-4c66-ba61-2f2156525c5e",
+      "result_id": "c7d147c7-c95d-45c8-a6dc-9e65a09af60d"
+    },
+    {
+      "claim_id": "d7405389-7646-4802-ad59-838b5c57cb70",
+      "result_id": "c7d147c7-c95d-45c8-a6dc-9e65a09af60d"
+    },
+    {
+      "claim_id": "94791b35-ccad-4e7b-88af-2419d68e9335",
+      "result_id": "c7d147c7-c95d-45c8-a6dc-9e65a09af60d"
+    },
+    {
+      "claim_id": "bf80507a-a312-4401-9eb6-1ddb438cc800",
+      "result_id": "c7d147c7-c95d-45c8-a6dc-9e65a09af60d"
+    },
+    {
+      "claim_id": "635a144a-23e6-43bb-ba5e-6b90768e47dc",
+      "result_id": "a8955f3d-c5a1-4f9e-94a3-b769afb40bc5"
+    },
+    {
+      "claim_id": "baf3fabd-9a64-4788-9b08-0155d6a2a62e",
+      "result_id": "a8955f3d-c5a1-4f9e-94a3-b769afb40bc5"
+    },
+    {
+      "claim_id": "c17f6e33-5908-4f93-b373-92e4dbec6da1",
+      "result_id": "a8955f3d-c5a1-4f9e-94a3-b769afb40bc5"
+    },
+    {
+      "claim_id": "04eace6d-1629-4244-81ba-b4fd6ac0cc5e",
+      "result_id": "b3468ce4-e395-422e-ba8d-d42c639d3072"
+    },
+    {
+      "claim_id": "37c519d2-a468-472e-8e19-99d93157f849",
+      "result_id": "b3468ce4-e395-422e-ba8d-d42c639d3072"
+    },
+    {
+      "claim_id": "4759bbf2-ee37-4885-bbde-095c538ec1d9",
+      "result_id": "b3468ce4-e395-422e-ba8d-d42c639d3072"
+    },
+    {
+      "claim_id": "3d70deb5-8f22-4203-b6b4-bad0fd751c1b",
+      "result_id": "436525e0-8c2f-4ff0-8620-ad0b99d33fd9"
+    },
+    {
+      "claim_id": "00234006-0265-4a57-a362-b42554987ff8",
+      "result_id": "436525e0-8c2f-4ff0-8620-ad0b99d33fd9"
+    },
+    {
+      "claim_id": "c4275839-a9c0-4bac-969c-2cdda73b77f8",
+      "result_id": "436525e0-8c2f-4ff0-8620-ad0b99d33fd9"
+    }
+  ],
+  "comparisons": []
+}

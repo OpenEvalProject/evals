@@ -1,0 +1,2287 @@
+{
+  "submission": {
+    "id": "c34610c6-5a21-4e86-b0d0-0dad05eabbb0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:51:11.971692Z",
+    "updated_at": "2025-12-03T14:51:11.971692Z"
+  },
+  "content": [
+    {
+      "id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "submission_id": "c34610c6-5a21-4e86-b0d0-0dad05eabbb0",
+      "content_type": "manuscript",
+      "content_text": "# A pulse-chasable reporter processing assay for mammalian autophagic flux with HaloTag\n\n## Authors\n\n- Willa Wen-You Yim<sup>1</sup>\n- Hayashi Yamamoto<sup>1</sup> ([ORCID: 0000-0002-2831-1463](https://orcid.org/0000-0002-2831-1463)) \u2020\n- Noboru Mizushima<sup>1</sup> ([ORCID: 0000-0002-6258-6444](https://orcid.org/0000-0002-6258-6444)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology, Graduate School of Medicine, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n2. Department of Molecular Oncology, Institute for Advanced Medical Sciences, Nippon Medical School Tokyo Japan ([ROR:00krab219](https://ror.org/00krab219))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMonitoring autophagic flux is necessary for most autophagy studies. The autophagic flux assays currently available for mammalian cells are generally complicated and do not yield highly quantitative results. Yeast autophagic flux is routinely monitored with the green fluorescence protein (GFP)-based processing assay, whereby the amount of GFP proteolytically released from GFP-containing reporters (e.g. GFP-Atg8), detected by immunoblotting, reflects autophagic flux. However, this simple and effective assay is typically inapplicable to mammalian cells because GFP is efficiently degraded in lysosomes while the more proteolytically resistant red fluorescent protein (RFP) accumulates in lysosomes under basal conditions. Here, we report a HaloTag (Halo)-based reporter processing assay to monitor mammalian autophagic flux. We found that Halo is sensitive to lysosomal proteolysis but becomes resistant upon ligand binding. When delivered into lysosomes by autophagy, pulse-labeled Halo-based reporters (e.g. Halo-LC3 and Halo-GFP) are proteolytically processed to generate Haloligand when delivered into lysosomes by autophagy. Hence, the amount of free Haloligand detected by immunoblotting or in-gel fluorescence imaging reflects autophagic flux. We demonstrate the applications of this assay by monitoring the autophagy pathways, macroautophagy, selective autophagy, and even bulk nonselective autophagy. With the Halo-based processing assay, mammalian autophagic flux and lysosome-mediated degradation can be monitored easily and precisely.\n\n## Introduction\n\nAutophagy is the lysosome-based degradation system in eukaryotes essential for cellular homeostasis as part of intracellular quality control and intracellular remodeling during environmental adaptation (Bento et al., 2016; Kawabata and Yoshimori, 2020; Noda and Inagaki, 2015; Zhao et al., 2021). Dysregulated autophagy is associated with aging and diseases (Fleming et al., 2022; Kawabata and Yoshimori, 2020; Klionsky et al., 2021a; Mizushima and Levine, 2020; Zhao et al., 2021). Macroautophagy and microautophagy are major autophagy pathways by which cytoplasmic material is delivered to lysosomes for degradation. The former pathway involves the formation of an autophagosome that sequesters material and fuses with lysosomes while the latter pathway occurs via direct invagination of the lysosomal membrane (Kawabata and Yoshimori, 2020; Noda and Inagaki, 2015; Zhao et al., 2021). \u2018Autophagy\u2019 will refer to macroautophagy and microautophagy, collectively hereafter. Autophagic activity is the uninterrupted series of events that begins with material entering lysosomes and ends with their degradation by lysosomal hydrolases. The amount of autophagic degradation is often referred to as autophagic flux (Klionsky et al., 2021b).\n\nMonitoring autophagic flux is integral to studying autophagy (Ohsumi, 2014). Quantitative assays have been developed for Saccharomyces cerevisiae, with the GFP-Atg8 processing assay being the most commonly used (Shintani and Klionsky, 2004). GFP-Atg8 localizes to both outer and inner autophagosomal membranes and is delivered into the vacuole as part of autophagic bodies (inner membrane-delimited vesicles), where GFP-Atg8 is then processed by vacuolar proteases. Unlike Atg8, GFP is relatively stable against vacuolar proteolysis and accumulates in the vacuole as autophagy progresses. The amount of free GFP detected by immunoblotting thus reflects autophagic flux. Additionally, this assay can be adapted to monitor specific forms of autophagy by replacing Atg8 in the reporter with one\u2019s protein of interest, such as with the mitochondrial protein Om45 to monitor mitophagy (selective autophagy of mitochondria) (Kanki and Klionsky, 2008) or the cytosolic protein Pgk1 to monitor bulk nonselective autophagy (Welter et al., 2010). The versatility and ease of implementing the reporter processing assay are reasons why it is routinely used in yeast autophagy studies.\n\nImplementing the GFP-Atg8 processing assay in mammalian cells (using LC3 and GABARAP family proteins) has been challenging because GFP is rapidly degraded in mammalian lysosomes (Katayama et al., 2008). Only a few studies have succeeded in detecting the release of free GFP (Gao et al., 2008; Hosokawa et al., 2006). Although the success rate could be increased by raising the luminal pH of lysosomes with nonsaturating concentrations of lysosomotropic agents (Gao et al., 2008; Klionsky et al., 2021b), doing so might also affect GFP-LC3 processing itself and thus would require careful optimization. The difficulties in properly executing the GFP-LC3 processing assay prompted researchers to develop other assays.\n\nIn mammalian cells, autophagic flux is often estimated from the amount of selective autophagic cargo degraded or, with the LC3 turnover assay, the amount of LC3-II produced in the presence of a lysosomal inhibitor (i.e. the amount of LC3-II that would have otherwise been degraded; Klionsky et al., 2021b; Mizushima and Murphy, 2020; Mizushima and Yoshimori, 2007). Autophagic flux can also be monitored with the fluorescent reporters, RFP-GFP-LC3 (Kimura et al., 2007) and GFP-LC3-RFP (Kaizuka et al., 2016), with which autophagic flux is determined from the reduction in GFP fluorescence compared to the relatively unchanging fluorescence of the lysosome-resistant RFP and cytosol-localizing RFP, respectively. However, each assay has its own limitations (for a full list, see Klionsky et al., 2021b; Mizushima and Murphy, 2020). Some require the use of a lysosomal inhibitor control, which can limit the assay\u2019s dynamic range (Liebl et al., 2022) and cause side-effects (Florey et al., 2015; Juh\u00e1sz, 2012), while others are complicated or are low in sensitivity. Failing to consider and address the limitations may lead to misinterpretations of autophagic flux.\n\nHere, we report the HaloTag (Halo)-based processing assay, a simple and effective method to quantitatively monitor autophagic flux in mammalian cells. We found that Halo becomes proteolytically resistant upon ligand binding. Pulse-labeling with Halo ligand creates a pool of Halo-based reporters that, when delivered into lysosomes by autophagy, are proteolytically processed to release stable free Haloligand (Halo covalently conjugated with its ligand). The amount of free Haloligand thus reflects autophagic flux specifically. Moreover, Halo-based reporters can also be used by fluorescence microscopy and other means. We demonstrate the applications of this assay by monitoring macroautophagy, selective autophagy, and bulk nonselective autophagy.\n\n## Results\n\n### A HaloTag-LC3B processing assay to quantify autophagic flux in mammalian cells\n\nAlthough a few studies have succeeded in doing so (Gao et al., 2008; Hosokawa et al., 2006), implementing the equivalent of the routinely used yeast GFP-Atg8 processing assay (Klionsky et al., 2021b) in mammalian cells is challenging. With monomeric GFP (mGFP)-LC3B, a small amount of free mGFP was produced in wild-type HeLa cells but not in FIP200 knockout (KO) cells under both growing and starvation conditions, indicating that free mGFP was generated in an autophagy-dependent manner (Figure 1a). However, although a starvation-induced decrease of mGFP-LC3B levels was detected, an increase in free mGFP levels was not (Figure 1a, left) as mGFP is degraded in mammalian lysosomes like other GFPs (Katayama et al., 2008). Replacing mGFP with the proteolytically resistant monomeric RFP (mRFP) (Katayama et al., 2008) allowed for an increase in free mRFP levels upon starvation to be detected (Figure 1a, right), but the increase was not apparent due to the pre-existing mRFP band (Figure 1a, right) that probably resulted from basal autophagy-mediated lysosomal accumulation (Katayama et al., 2008). Hence, it is difficult to detect mammalian autophagic flux with a GFP- or RFP-tagged LC3 processing assay.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig1-v2.jpg)\n\n**Figure 1.:** (a) Immunoblotting of total cell lysates from wild-type and FIP200 knockout (KO) HeLa cells stably expressing monomeric GFP (mGFP)-LC3B or monomeric RFP (mRFP)-LC3B that was in nutrient-rich medium (0 hr) or incubated for 6 hr in starvation medium. (b) Immunoblotting and in-gel fluorescence detection of total cell lysates from wild-type and FIP200 KO HeLa cells stably expressing Halo-LC3B that was pulse-labeled for 20 min with 100 nM of tetramethylrhodamine (TMR)-conjugated ligand in nutrient-rich medium. The cells were immediately collected (0 hr) or incubated in starvation medium for 6 hr. (c) Same cells and labeling procedure as in (b) except that the cells were collected or incubated in starvation medium with or without 100 nM bafilomycin A1 (BafA) for 2 hr. (d) Same labeling procedure as in (b) except with HeLa cells stably expressing SNAP-tag (SNAP)-LC3B and TMR-conjugated ligand targeting SNAP. (e) Illustration of the fate of ligand-free and ligand-bound Halo-LC3B in autolysosomes. Halo-LC3B is processed by lysosomal hydrolases, releasing Halo from LC3B. When free from ligand, Halo is unstable and quickly degraded in lysosomes like LC3B. In contrast, ligand-bound Halo is stable against degradation and accumulates in lysosomes. Released Haloligand is detectable by immunoblot and, if a fluorescent ligand was used, in-gel fluorescence detection. The amount of free Haloligand separated from LC3B reflects the level of autophagic flux. (f) Immunoblotting and in-gel fluorescence detection of total cell lysates from wild-type HeLa cells stably expressing Halo-LC3B, pulse-labeled with 100 nM TMR-conjugated ligand in nutrient-rich medium for 20 min, and starved for the indicated durations. (g) Quantification of results shown in (f). HaloTMR band intensity was normalized by the sum of the band intensities HaloTMR-LC3B and HaloTMR. Mean values of data from three experiments are shown with red points that are traced by a line.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Wild-type HeLa cells stably expressing HaloTag (Halo)-LC3B, labeled with tetramethylrhodamine (TMR)-conjugated ligand or SF650-conjugated ligand at the indicated concentrations and in the indicated medium with or without SF650-conjugated ligand as a blocking agent. \u2018Stop\u2019 means that the samples were collected immediately after the pulse treatment.\n\nTo implement the tagged LC3 processing assay in mammalian cells, we searched for a protein tag that could be made resistant to lysosomal proteases and thus would not accumulate in lysosomes constitutively. Since ligand binding is known to increase a protein\u2019s thermal stability (Celej et al., 2003; Vedadi et al., 2006) and proteolytic resistance (Stankunas et al., 2003; Park and Marqusee, 2005; Kaur et al., 2018), we selected two protein tags that covalently bind with their respective ligands as candidate tags: Halo (Los et al., 2008) and SNAP-tag (SNAP) (Keppler et al., 2003).\n\nHeLa cells stably expressing Halo-LC3B or SNAP-LC3B were exposed to their respective tetramethylrhodamine (TMR)-conjugated ligands for 20 min and then washed of the ligands. After 6 hr of starvation, a starvation-induced decrease in labeled and unlabeled Halo-LC3B was observed by immunoblotting and, for labeled HaloTMR-LC3B, in-gel fluorescence detection (Figure 1b). Strikingly, free Halo was detected only for HaloTMR-LC3B. The decrease in Halo-LC3B and HaloTMR-LC3B levels and appearance of free HaloTMR were dependent on autophagy and lysosomal enzymatic activity as they were suppressed in FIP200 KO cells (Figure 1b\u2013c) and by the lysosomal inhibitor bafilomycin A1 (Klionsky et al., 2008; Mauvezin et al., 2015; Figure 1c). Removal of the ligand was enough to prevent further labeling (Figure 1\u2014figure supplement 1, compare lanes 8\u201310), avoiding the need for a blocking agent. In contrast, the generation of free SNAP was not detected from ligand-free and ligand-bound SNAP-LC3 during starvation (Figure 1d). Taken together, these data indicate that ligand-free Halo is susceptible to proteolysis but, unlike SNAP, Halo becomes resistant to proteolysis after covalently binding to its ligand and persists in lysosomes (Figure 1e). Therefore, autophagic flux can be quantitatively determined with pulse-chasable Halo-based reporters.\n\nTo assess the sensitivity and linearity of Halo-LC3B processing to the levels of autophagic activity, we obtained results for several time points between 0 and 8 hr of starvation. The amount of free HaloTMR generated from HaloTMR-LC3B was detected as early as 0.5 hr of starvation and increased over time (Figure 1f). Calculation of the ratio of released HaloTMR to total HaloTMR (HaloTMR-LC3B+HaloTMR) showed a linear increase of free HaloTMR levels that was readily reproducible (Figure 1g). The advantages of the processing assay are: (1) pulse-labeling ensures that the starting amount of HaloTMR-LC3B is relatively the same for each experimental condition (here, each time point), (2) the amount of free Halo is a positive readout (i.e. a signal is produced rather than reduced by autophagy), and (3) quantifying the amount of free HaloTMR produced is self-contained without the need for additional controls such as a lysosomal inhibitor control or a loading control. The Halo-LC3B processing assay is thus a simple and sensitive method with a wide linear range to quantitatively monitor autophagic flux in mammalian cells.\n\n### HaloTag-based reporters to monitor autophagic flux by fluorescence microscopy\n\nNext, we visualized the localization of mGFP-LC3B, mRFP-LC3B, and Halo-LC3B in HeLa cells. The number of mGFP-LC3B puncta increased during the first 2 hr of starvation but did not increase thereafter (Figure 2a and c), which is likely due to the quenching of mGFP signal in autolysosomes (Kimura et al., 2007). Under growing conditions, many mRFP-LC3B puncta were already present and their high rate of colocalization with LysoTracker revealed them to be lysosomes (Figure 2a), demonstrating mRFP\u2019s stability in acidic compartments (Katayama et al., 2008). Furthermore, an increase in the number of mRFP-LC3B puncta during starvation was not detected (Figure 2a and c), likely because the formation of mRFP-LC3B-marked autophagosomes was masked by the pre-existing intense lysosomal mRFP signal (Katayama et al., 2008). Contrastingly, Halo-LC3B that was labeled with ligand conjugated to fluorogenic SaraFluor 650T (SF650) demonstrated only a few faint punctate structures immediately after labeling, and starvation induced a continuous increase in the number of HaloSF650-positive puncta over time (Figure 2b and c). Many of the HaloSF650-positive puncta are autolysosomes as they colocalized with LysoTracker (Figure 2b) and the lysosomal membrane protein LAMP1 (Figure 2\u2014figure supplement 1a), which shows that HaloSF650 is stable in acidic lysosomes. Although autophagosomes cannot be distinguished from autolysosomes with Halo-LC3, the number of ligand-bound Halo puncta formed following pulse-labeling of Halo-based reporters can indicate autophagic flux.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig2-v2.jpg)\n\n**Figure 2.:** (a) Fluorescence images of wild-type HeLa cells stably expressing mGFP-LC3B or mRFP-LC3B in nutrient-rich medium or after 2 hr in starvation medium containing 75 nM LysoTracker Deep Red. (b) Fluorescence images of wild-type HeLa cells stably expressing HaloTag (Halo)-LC3B labeled with SF650-conjugated ligand. The cells were in nutrient-rich medium or incubated for 2 hr in starvation medium containing 200 nM of SF650-conjugated ligand and 75 nM LysoTracker Red. Arrows point to Halo puncta without LysoTracker signal that represent autophagosomes. (c) Quantification of mGFP, mRFP, or HaloSF650 puncta in the cells of (a) and (b). n=87\u201399 cells. (d) Schematic of fluorescence changes of fluorescent ligand-bound Halo-LC3B and Halo-mGFP-LC3B in autophagosomes and autolysosomes. Haloligand stays fluorescent and stable, whereas mGFP is quenched and degraded in autolysosomes. With Halo-mGFP-LC3B, autophagosomes appear as double-positive (Haloligand and mGFP) puncta while autolysosomes appear as single-positive (Haloligand only) puncta. (e) Fluorescence images of wild-type HeLa cells stably expressing Halo-mGFP-LC3B labeled with SF650-conjugated ligand. The cells were growing, starved, or starved with 100 nM bafilomycin A1 (BafA) for 2 hr in medium containing 200 nM of SF650-conjugated ligand and 75 nM LysoTracker Red. Arrowheads point to Halo+mGFP+ puncta that represent autophagosomes; arrows point to Halo+mGFP\u2013 puncta that represent autolysosomes. (f) Quantification of HaloSF650+mGFP+ puncta representing autophagosomes and HaloSF650+mGFP\u2013 puncta representing autolysosomes in cells shown in (e). n=86\u2013101 cells. Scale bar = 10 \u00b5m (main), 2 \u00b5m (magnified images) (a, b, e). In box plots, solid bars indicate medians, boxes indicate the interquartile range (25th\u201375th percentile), and whiskers indicate the largest and smallest values within 1.5 times the interquartile range (c, f).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Fluorescence images of wild-type HeLa cells stably expressing lysosomal marker LAMP1-mRuby3 and HaloTag (Halo)-LC3B in nutrient-rich medium or after 6 hr in starvation medium containing 200 nM SF650-conjugated ligand. (b) Fluorescence images of wild-type HeLa cells stably expressing mRFP-mGFP-LC3B in nutrient-rich medium or after 2 hr in starvation medium containing 75 nM LysoTracker Deep Red, with or without 100 nm of bafilomycin A1 (BafA). Arrowheads point to mRFP+mGFP+ puncta that represent autophagosomes; arrows point to mRFP+mGFP\u2013 puncta that should represent autolysosomes. (c) Quantification of mRFP+mGFP+ puncta and mRFP+mGFP\u2013 puncta in cells shown in (b). n=91\u2013100 cells. (d) Fluorescence images of wild-type HeLa cells stably expressing the lysosomal marker LAMP1-mRuby3 and Halo-mGFP-LC3B in nutrient-rich medium or after 2 hr in starvation medium with and withoutBafA. The media contained 200 nM of SF650-conjugated ligand. Arrowheads point to Halo+mGFP+ puncta that represent autophagosomes; arrows point to Halo+mGFP\u2013 puncta that represent autolysosomes. (e) Immunoblotting and in-gel fluorescence detection of total cell lysates from wild-type and FIP200 knockout (KO) HeLa cells and mouse embryonic fibroblasts (MEFs) stably expressing Halo-mGFP-LC3B-mRFP, pulse-labeled for 20 min with 100 nM TMR-conjugated ligand in nutrient-rich medium. The cells were then collected or incubated for 6 hr in starvation medium. (f) Fluorescence images of cells described in (e) in nutrient-rich medium or after 6 hr incubation in starvation medium. The media contained 200 \u03bcM of SF650-conjugated ligand. (g) mGFP and mRFP intensities of cells described in (e) were determined with flow cytometry under nutrient-rich conditions with or without 250 nM Torin1 for 24 hr. A reduction in the mRFP:mGFP fluorescence ratio indicates autophagic flux. n=5000 cells. In box plots, solid bars indicate medians, boxes indicate the interquartile range (25th\u201375th percentile), and whiskers indicate the largest and smallest values within 1.5 times the interquartile range (c, g). Scale bar = 10 \u00b5m (main), 2 \u00b5m (inset) (a, b, d, f).\n\nThe minimal lysosomal background signal of the Halo-based assay prompted us to use Halo instead of mRFP in the established mRFP-mGFP-LC3B reporter (Figure 2d; Kimura et al., 2007). This reporter was originally developed to distinguish between mRFP-positive mGFP-positive (mRFP+mGFP+) autophagosomes and mRFP-positive mGFP-negative (mRFP+mGFP\u2013) autolysosomes, but the constitutive accumulation of mRFP in lysosomes often hinders the detection of newly generated autolysosomes (mRFP+mGFP\u2013) (Figure 2\u2014figure supplement 1b and c). In contrast, HaloSF650-mGFP-LC3 was mostly cytosolic immediately after labeling (Figure 2e, Figure 2\u2014figure supplement 1d). Starvation induced the formation of HaloSF650+mGFP+ puncta that represent autophagosomes (arrowheads) and HaloSF650+mGFP\u2013 puncta that represent autolysosomes (arrows) as confirmed by their colocalization with LysoTracker or LAMP1-mRuby3 (Figure 2e and f, Figure 2\u2014figure supplement 1d). Adding the lysosomal inhibitor bafilomycin A1 resulted in the accumulation of HaloSF650+ and mGFP+ in autophagosomes and autolysosomes (Figure 2e and f, Figure 2\u2014figure supplement 1d). Hence, the lack of pre-existing lysosomal accumulation makes Halo-mGFP-LC3B a preferable alternative to mRFP-mGFP-LC3B as a fluorescence microscopy-based autophagic flux reporter.\n\nWe also generated Halo-mGFP-LC3B-mRFP as a modified version of the EGFP-LC3B-mRFP reporter (Kaizuka et al., 2016). With the original EGFP-LC3B-mRFP reporter, autophagic flux can be estimated from GFP:RFP fluorescence ratio because this reporter is cleaved into EGFP-LC3B and mRFP by ATG4 and only EGFP-LC3B is degraded by autophagy since mRFP remains in the cytosol (Kaizuka et al., 2016). Adding Halo at the N-terminus of mGFP-LC3B-mRFP yielded a reporter that can be used in the processing assay (Figure 2\u2014figure supplement 1e), the autophagosome/autolysosome formation assay (Figure 2\u2014figure supplement 1f), and the GFP:RFP ratiometry assay (Figure 2\u2014figure supplement 1g). Thus, Halo-mGFP-LC3B-mRFP can be used as a stably expressed \u2018three-in-one\u2019 reporter.\n\nIn summary, pulse-chasable Halo-based reporters are suitable for monitoring autophagic flux by fluorescence microscopy in addition to the processing assay readout.\n\n### The HaloTag-based processing assay can be adapted to monitor selective autophagy pathways\n\nA major advantage of the yeast GFP-Atg8 processing assay is its versatility: Atg8 can be replaced with a protein of interest to monitor the activity of selective autophagy, such as endoplasmic reticulum (ER)-phagy and mitophagy. Hence, we prepared Halo-mGFP-KDEL that localizes to the ER lumen (Figure 3\u2014figure supplement 1a) and pSu9-Halo-mGFP that localizes to the mitochondrial matrix (Figure 3\u2014figure supplement 1b). Generation of the 33 kDa HaloTMR band from pulse-labeled HaloTMR-mGFP-KDEL was detected in a FIP200-dependent manner upon starvation (Figure 3a and b). Production of free HaloTMR was a clear indicator of ER-phagy than the reduction in ER protein levels (Figure 3a\u2013b vs. Figure 3c-d). With fluorescence microscopy, ER-phagy flux was detected by the formation of HaloSF650+mGFP\u2013 puncta that colocalized with LysoTracker (Figure 3e and f) and LAMP1 (Figure 3\u2014figure supplement 1c). Similarly, Parkin-mediated mitophagic activity induced by oligomycin and antimycin treatment was detected by pSu9-Halo-mGFP processing (Figure 3g and h) as well as the formation of HaloSF650+mGFP\u2013 puncta colocalized with the lysosome (Figure 3i and j, Figure 3\u2014figure supplement 1d). An additional 37 kDa HaloTag band was observed in the SDS-PAGE based results (Figure 3a and g) that is most likely a cleavage product of the HaloTag constructs. The lack of cytosolic Halo and GFP signal (Figure 3e and i) indicates that this still-fluorescent product (in-gel fluorescence images in Figure 3a and g) localizes to the targeted organelle and would not result in background signal that might interfere with result interpretation. Therefore, the Halo-based assays can be adapted to monitor selective autophagic flux.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig3-v2.jpg)\n\n**Figure 3.:** (a) Immunoblotting and in-gel fluorescence detection of wild-type and FIP200 knockout (KO) HeLa cells stably expressing HaloTag (Halo)-mGFP-KDEL pulse-labeled for 20 min with 100 nM tetramethylrhodamine (TMR)-conjugated ligand in nutrient-rich medium. The cells were collected or incubated for 6 hr in starvation medium. (b) Quantification of Halo band intensities in (a). n=3. (c) Immunoblotting of total cell lysates from wild-type HeLa cells in nutrient-rich medium or after 6 hr in starvation medium. (d) Quantification of band intensities for the indicated proteins in (c). n=3. (e) Fluorescence images of the cells described in (a) under nutrient-rich conditions or for 6 hr under starvation conditions. The media contained 200 nM SF650-conjugated ligand and 75 nM LysoTracker Red. Arrows point to HaloSF650+mGFP\u2013 puncta representing autolysosomes. (f) Quantification of HaloSF650+mGFP\u2013 puncta that represent autolysosomes in cells shown in (e). n=111\u2013115 cells. (g) Immunoblotting and in-gel fluorescence detection of total cell lysates from wild-type or FIP200 KO HeLa cells stably expressing pSu9-Halo-mGFP only or together with HA-Parkin. After pulse-labeling with 100 nM TMR ligand in nutrient-rich medium, the cells were collected or incubated for 6 hr in nutrient-rich medium containing 1 \u03bcM oligomycin and 2 \u03bcM antimycin (OA collectively). (h) Quantification of Halo band intensities in (g). (i) Fluorescence images of wild-type and FIP200 KO HeLa cells stably expressing pSu9-Halo-mGFP and HA-Parkin. The cells were in nutrient-rich medium containing 200 nM SF650 ligand, 75 nM LysoTracker Red, with or without OA. Arrows point to HaloSF650+mGFP\u2013 puncta that represent autolysosomes. (j) Quantification of HaloSF650+mGFP\u2013 puncta in cells shown in (i). n=99 cells. Scale bar = 10 \u00b5m (main), 2 \u00b5m (magnified images) (e, i). In box plots, solid bars indicate medians, boxes indicate the interquartile range (25th\u201375th percentile), and whiskers indicate the largest and smallest values within 1.5 times the interquartile range (f, j).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Fluorescence images of wild-type HeLa cells stably expressing HaloTag (Halo)-mGFP-KDEL and ER marker mRuby3-cytochrome b5 in nutrient-rich medium containing 200 nM SF650-conjugated ligand. (b) Fluorescence images of wild-type HeLa cells stably expressing pSu9-Halo-mGFP and mitochondrial marker mRuby3-OMP25 in nutrient-rich medium containing 200 nM SF650-conjugated ligand. (c) Fluorescence images of wild-type HeLa cells stably expressing lysosomal marker LAMP1-mRuby3 and Halo-mGFP-KDEL in nutrient-rich medium or after 6 hr incubation in starvation medium. The media contained 200 nM SF650-conjugated ligand. (d) Fluorescence images of wild-type HeLa cells stably expressing HA-Parkin, LAMP1-mRuby3, and pSu9-Halo-mGFP in nutrient-rich medium containing 200 nM SF650-conjugated ligand with or without 1 \u00b5M oligomycin and 2 \u00b5M antimycin (OA, collectively), which were added for 6 hr. Scale bar = 10 \u00b5m (main), 2 \u00b5m (inset) (a, b, c, d).\n\n### Bulk nonselective autophagic flux can be detected with the HaloTag-based processing assay\n\nFinally, we examined whether the Halo-based processing assay could be used to detect bulk nonselective autophagic flux, which more accurately reflects total autophagic flux compared to LC3-based methods since LC3 and GABARAP family proteins are preferentially degraded by autophagy (Klionsky et al., 2021b). To monitor nonselective clearance of cytosolic material, we constructed Halo-mGFP, which should be taken up randomly into autophagosomes or lysosomes like the yeast Pgk1-GFP reporter (Welter et al., 2010).\n\nDespite occurring at much lower levels than LC3-dependent autophagic flux detected by HaloTMR-LC3B, the lack of lysosomal background allowed us to detect the generation of free HaloTMR from pulse-labeled HaloTMR-mGFP (Figure 4a). Accordingly, we were able to track the progression of starvation-induced bulk nonselective autophagic flux over time by HaloTMR-mGFP processing (Figure 4b and c) and by visualizing the gradual accumulation of HaloSF650 signal in the lysosomes of cells stably expressing Halo-mGFP labeled with SF650 ligand (Figure 4d and e, Figure 4\u2014figure supplement 1a and b). HaloTMR-mGFP processing and HaloSF650 puncta formation were not observed in FIP200 KO cells (Figure 4a and d). In contrast, HaloTMR-mGFP processing was slightly detected in ATG3 KO and ATG5 KO cells (Figure 4a), which is consistent with our previous finding that the ATG conjugation systems are not completely essential in mammalian cells (Tsuboyama et al., 2016). These results show that the Halo-GFP processing assay can be used to monitor bulk nonselective autophagic flux, even in cells lacking ATG conjugation system components.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig4-v2.jpg)\n\n**Figure 4.:** (a,b) Immunoblotting and in-gel fluorescence detection of total cell lysates from wild-type, FIP200 knockout (KO), ATG3 KO, and ATG5 KO HeLa cells stably expressing HaloTag (Halo)-LC3B (a) or Halo-mGFP (a,b). After pulse-labeling for 20 min with 100 nM tetramethylrhodamine (TMR)-conjugated ligand in nutrient-rich medium, the cells were collected or incubated for 6 hr (a) or the indicated times (b) in starvation medium. (c) Quantification of time course results shown in (b). Mean values of three experiments are shown with red points that are traced with a line. (d) Fluorescence images of wild-type and FIP200 KO HeLa cells stably expressing Halo-mGFP in nutrient-rich medium or after 6 hr of starvation. The media contained 200 nM of SF650-conjugated ligand. Scale bar = 10 \u00b5m (main), 2 \u00b5m (magnified images). (e) Quantification of the area of HaloSF650 signal that exceeded a 98th percentile intensity threshold in cells described in (d) at the indicated durations of starvation. n=42\u201348 cells. In box plots, solid bars indicate medians, boxes indicate the interquartile range (25th\u201375th percentile), and whiskers indicate the largest and smallest values within 1.5 times the interquartile range.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78923/elife-78923-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Fluorescence images of wild-type HeLa cells stably expressing lysosomal marker LAMP1-mRuby3 and HaloTag (Halo)-mGFP under nutrient-rich conditions or after 6 hr under starvation conditions in the presence of 200 nM SF650-conjugated ligand. (b) Time-lapse montage of wild-type HeLa cells stably expressing Halo-mGFP cells in starvation medium containing 200 nM SF650-conjugated ligand and 75 nM LysoTracker Red. Images were taken after the indicated durations of starvation. Scale bar = 10 \u00b5m (main), 2 \u00b5m (inset, inset montage) (a, b).\n\n## Discussion\n\nIt is generally difficult to implement the autophagic flux assays currently available for mammalian cells. In this study, we showed that the Halo-based processing assay is a simple yet effective way to quantitatively monitor various forms of autophagic flux in mammalian cells, from LC3-dependent autophagic flux to bulk nonselective autophagy. While this manuscript was being prepared, an independent study on the use of Halo-based reporters to monitor autophagic flux was published (Rudinskiy et al., 2022). In contrast to our main aim of developing a reporter processing assay for mammalian cells, Rudinskiy et al. sought to overcome the issue of lysosomal RFP accumulation with Halo-based reporters that can be fluorescently \u2018activated\u2019 upon binding to fluorescent ligands. Our study demonstrated that the \u2018activation\u2019 of Halo-based reporters is achieved not only by the introduction of fluorescent Halo ligand but, importantly, also by the stabilization of Halo against proteolysis after ligand binding.\n\nThe most significant advantage the HaloTag reporters have over currently available ATG8-based reporters and autophagy assays is that they can be used in a pulse-chase manner. This allows for minimal background noise since unlabeled reporters will not accumulate within lysosomes, and for the readout of free Halo to be unambiguously autophagy-dependent since it occurs only when the reporter has been labeled, delivered into, and processed in lysosomes. Another major advantage is the dispensation of a lysosome inhibitor control that may affect transcription/translation. Furthermore, reporter processing can be detected by immunoblotting, which is a widely available and commonly used laboratory technique. It can also be detected by in-gel imaging if available, which would reduce the time required to obtain results. Last, by replacing the partner protein of Halo, users can easily adapt the assay to monitor their autophagy pathway of interest or the autophagic clearance of a protein of interest.\n\nThe assay does have limitations. One that is inevitable is the need for exogenous expression. For experiments that are sensitive to variation in expression levels, clonal isolation may be required. Furthermore, the cost of Halo ligands might be prohibitive. A more cost-effective alternative could be the non-fluorescent Halo ligands, such as 7-bromoheptanol, which were developed as blocking agents (Merrill et al., 2019), and Halo band detection would be achieved only by immunoblotting. Another limitation is the difficulty in quantifying the absolute rate of reporter incorporation into lysosomes precisely due to the gradual degradation of even Haloligand. Additionally, the need to electrophoretically separate the full-length reporter from the free Haloligand band limits the use of this assay for large-scale screening. However, the good signal-to-noise ratio of Halo reporters in fluorescent imaging makes them ideal reporters for microscopy-based high-content screening in the same manner as was achieved with GFP-LC3 (Orvedahl et al., 2011; McKnight et al., 2012; Koepke et al., 2020) and dual-fluorescent Rosella-LC3 (Arias-Fuenzalida et al., 2019). Finally, Halo-LC3 reporter processing is not suitable for monitoring the activity of non-canonical forms of autophagy, where LC3 is conjugated to single-membrane organelles (e.g. LC3-associated phagocytosis; Heckmann and Green, 2019; Herb et al., 2020) as the reporter will not be delivered into lysosomes.\n\nWe anticipate the Halo-based processing assay to be useful to most studies on mammalian autophagy and lysosome-dependent protein clearance. With Halo-GFP, researchers can investigate the contribution of autophagy proteins by examining whether altering a protein by depletion/inhibition/mutation will affect nonselective autophagic flux. This may be especially useful to researchers investigating proteins that are directly required for commonly used autophagic flux assays, such as factors involved in the LC3 or GABARAP conjugation systems. Indeed, we managed to detect low levels of autophagic flux in ATG3 KO and ATG5 KO cells (Figure 4a), which cannot be detected by conventional LC3-based assays. This result is consistent with the recent consensus that, although severely reduced, autophagic flux is not completely blocked in cells lacking the ATG conjugation systems (reviewed in Mizushima, 2020). Halo-GFP could also be potentially used to study microautophagy. Furthermore, Halo-based reporters have been successfully employed in animal models (England et al., 2015) such as mice (Masch et al., 2018; Rivas-Pardo et al., 2020) and zebrafish (Wan et al., 2019), which suggest that the processing assay could be an additional method for assessing in vivo autophagic flux, e.g. when comparing autophagic flux among tissues.\n\nIn conclusion, the Halo-based processing assay can be used to monitor mammalian autophagic flux quantitatively and reliably with relative ease. The Halo-based reporters can also be readily observed by fluorescence microscopy. Besides serving as an alternative to conventional autophagic flux assays, the Halo-based assay has a myriad of potential applications that may lead to the discovery of new aspects and thus a deeper understanding of mammalian autophagy.\n\n## Materials and methods\n\n### Cell lines and culture conditions\n\nHeLa cells, human embryonic kidney (HEK) 293T cells, and mouse embryonic fibroblasts (MEFs) authenticated by RIKEN were used in this study. Cells were maintained in Dulbecco\u2019s Modified Eagle Medium (DMEM; Sigma-Aldrich, D6546) supplemented with 10% fetal bovine serum (FBS; Sigma-Aldrich, 173012) and 2 mM l-glutamine (Gibco, 25030\u2013081) in a 5% CO2 incubator at 37\u00b0C. FIP200 KO HeLa cells (Tsuboyama et al., 2016) and Fip200 KO MEFs Gan et al., 2006 have been described previously.\n\n### Plasmids\n\nPlasmids for stable expression in HeLa cells were generated as follows: DNA fragments encoding monomeric enhanced GFP with A206K mutation (mGFP), monomeric RFP (mRFP), mRuby3 (codon-optimized from Addgene #74252), HaloTag7 (Promega, N2701), or SNAP-tag (New England BioLabs, N9181S) were inserted into the retroviral plasmids pMRX-IP (harboring a puromycin-resistant marker; Kitamura et al., 2003; Saitoh et al., 2003), pMRX-IB (harboring a blasticidin-resistant marker; Morita et al., 2018), or pMRX-No (without a drug resistance marker) by the seamless ligation cloning extract (SLiCE) method (Motohashi, 2017). Then, DNA fragments encoding rat LC3B, the signal sequence of Drosophila BiP (residues 1\u201318) and KDEL (for pMRX-IB-Halo-mGFP-KDEL), or the presequence of Neurospora crassa Fo-ATPase subunit 9 (residues 1\u201369; for pMRX-IB-pSu9-Halo-mGFP) were inserted into the pMRX-IP-, pMRX-IB-, pMRX-No-based plasmids by the SLiCE method. mRFP-GFP-LC3B in pMXs was described previously (Jiang et al., 2014). Primers used in this study are listed in Supplementary file 1. Plasmids containing the Halo constructs used in this study can be found in addgene: 184899 (Halo-LC3), 184901 (Halo-mGFP-rLC3), 184902 (Halo-mGFP), 184904 (Halo-mGFP-KDEL), and 184905 (pSu9-Halo-mGFP).\n\n### Stable expression in HeLa cells and MEFs by retrovirus infection\n\nTo prepare the retrovirus solution, HEK293T cells were transfected for 4\u20136 hr with the pMRX-IP-based, pMRX-IB-based, or pMXs-based retroviral plasmid (Kitamura et al., 2003; Saitoh et al., 2003), pCG-gag-pol, and pCG-VSV-G using Lipofectamine 2000 (Thermo Fisher Scientific, 11668019), following which the medium was replaced with DMEM. After 2\u20133 days, the retrovirus-containing medium was harvested, filtered with a 0.45 \u03bcm filter unit (Millipore, Ultrafree-MC), and added to HeLa cells with 8 \u03bcg/mL polybrene (Sigma-Aldrich, H9268). After a day, selection was performed with 1\u20132 \u03bcg/mL puromycin (Sigma-Aldrich, P8833) or 2\u20133 \u03bcg/mL blasticidin (Fujifilm Wako Pure Chemical Corporation, 022\u201318713).\n\n### Antibodies and reagents\n\nPrimary antibodies used in this study are as listed: mouse monoclonal anti-Halo (Promega, G9211), rabbit polyclonal anti-SNAP-tag (New England BioLabs, P9310S), mouse monoclonal anti-HSP90 (BD Transduction Laboratories, 610419), anti-\u03b2-actin (Sigma-Aldrich, A2228), rabbit polyclonal anti-LC3 (Kabeya et al., 2000), rabbit polyclonal anti-GFP (Thermo Fisher Scientific, A6455), and mouse monoclonal anti-RFP (MBL, M155-3). Secondary antibodies are HRP-conjugated goat polyclonal anti-rabbit IgG (Jackson ImmunoResearch Laboratories, 111-035-144) and HRP-conjugated goat polyclonal anti-mouse IgG (Jackson ImmunoResearch Laboratories, 115-035-003). LysoTracker Red DND-99 or Deep Red (Thermo Fisher Scientific, L7528, L12492) were applied at 75 nM.\n\n### Protein extraction\n\nCells were incubated in DMEM with 100 nM TMR-conjugated Halo ligand (Promega, G8251) for 20 min. The cells were then collected for protein extraction or washed twice with phosphate-buffered saline (PBS) and incubated with amino acid-free and FBS-free DMEM (Wako Pure Chemical Industries, 048\u201333575) to induce autophagy by starvation or to DMEM with 1 \u00b5M oligomycin (Merck Millipore, 495455) and 2 \u00b5M antimycin (Sigma-Aldrich, A8674) to induce mitophagy. After the desired incubation time, cells were scraped into ice-cold PBS and centrifuged at 2000\u00d7g for 2 min. The cell pellet was then resuspended in lysis buffer (25 mM HEPES-KOH [pH 7.2], 150 mM NaCl, 2 mM MgSO4, 0.2% n-dodecyl-\u03b2-D-maltoside [Nacalai Tesque, 14239\u201354] with protease inhibitor [Sigma-Aldrich, P8340]). After 20 min of incubation on ice, 1/10 volume of lysis buffer containing benzonase (Merck Millipore, 70664) was added to the cell suspension to a final 1/200 dilution of benzonase. Protein concentration was determined with NanoDrop One spectrophotometer (Thermo Fisher Scientific).\n\n### In-gel fluorescence imaging and immunoblotting\n\nFor each sample, 20 \u00b5g of protein was separated by SDS-PAGE. For in-gel fluorescence imaging, the gel was immediately visualized with FUSION SOLO.7S.EDGE (Vilber-Lourmat) after SDS-PAGE. For immunoblotting, the samples were transferred from the SDS-PAGE gel to Immobilon-P polyvinylidene difluoride membranes (Millipore, WBKLS0500) with Trans-Blot Turbo Transfer System (Bio-Rad). After incubation with the relevant antibody, the signals from incubation with SuperSignal West Pico Chemiluminescent Substrate (Thermo Fisher Scientific, 34579) or Immobilon Western Chemiluminescent HRP Substrate (Millipore, WBKLS0500) were detected with FUSION SOLO.7S.EDGE (Vilber-Lourmat). Band intensities were measured with Gel Analyzer in the open-source image processing software Fiji (Schindelin et al., 2012).\n\n### Fluorescence imaging (live-cell)\n\nImaging was conducted with the Olympus SpinSR10 spinning-disk confocal super-resolution microscope equipped with a Hamamatsu ORCA-Flash 4.0 camera, a UPLAPO OHR 60\u00d7 (NA 1.50) lens, and the SORA disk in place. The microscope was operated with the Olympus cellSens Dimension 2.3 software.\n\nHeLa cells or MEFs were seeded onto a four-chamber glass-bottom dish (Greiner Bio-One) at least 48 hr before imaging. 20 min before image acquisition, the cells were incubated with 200 nM SF650-conjugated Halo ligand (GoryoChemical, A308-02) in FluoroBrite DMEM (Thermo Fisher Scientific, A1896701) supplemented with 10% FBS, 2 mM L-glutamine, and 50 U/ml penicillin and 50 \u00b5g/ml streptomycin (Gibco, 15070\u2013063). After acquiring images of the cells under growing conditions, they were washed with PBS twice and then incubated in amino acid-free and FBS-free DMEM (Wako Pure Chemical Industries, 048\u201333575) with 200 nM SF650-conjugated Halo ligand to induce autophagy by starvation or in the aforementioned supplemented FluoroBrite DMEM with 200 nM SF650-conjugated Halo ligand, 1 \u03bcM oligomycin, and 2 \u03bcM antimycin to induce mitophagy.\n\nImages were processed using the open-source image processing software Fiji (Schindelin et al., 2012). Cells were processed individually: each cell was first isolated as a single image, which was later processed. In Figure 2a and b, puncta were identified and counted with White Top Hat (from MorphoLibJ Legland et al., 2016) followed by Analyze Particles. For double-positive puncta (RFP+GFP+ or Halo+GFP+) and single-positive (RFP+GFP\u2013 or Halo+GFP\u2013) puncta identification in Figures 2e, 3e and i, and Figure 2\u2014figure supplement 1b, the positions of the puncta were identified with Find Maxima and marked as points on a binary image for both fluorescence channels. With the binarized images, double-positive puncta were identified with the AND function in Image Calculator (i.e. \u2018GFP\u2019 image AND \u2018RFP\u2019 image) while single-positive puncta were identified with the Subtract function in Image Calculator (i.e. \u2018RFP\u2019 image Subtract \u2018GFP\u2019 image). The resulting puncta after each operation were counted with Analyze Particles. In Figure 4e and a 98th percentile threshold was set and the area of the signal remaining after thresholding was measured with Analyze Particles.\n\n### Flow cytometry\n\nHeLa cells or MEFs were treated with or without 250 nM Torin1 (Tocris Bioscience, 4247) in DMEM for 24 hr. Each sample was detached by trypsinization, added to an equal volume of DMEM to inactivate trypsin, and centrifuged at 2000\u00d7g for 2 min at 4\u00b0C. The cell pellet was then resuspended in ice-cold PBS containing 7-amino-actinomycin D (BD Pharmingen, 559925) diluted 1:100. After 10 min on ice, five volumes of ice-cold PBS were added (e.g. 500 \u03bcl to 100 \u03bcl) and the sample was centrifuged at 2000\u00d7g for 2 min at 4\u00b0C. The cell pellet was resuspended in ice-cold PBS and subjected to flow cytometry by a cell analyzer (Sony, EC800) equipped with 488 \u2005nm and 561 \u2005nm lasers. All data points were transferred to Kaluza Analysis 2.1 software (Beckman Coulter) for analysis.\n\n### Data and material availability\n\nAll data generated or analyzed during this study are included in the manuscript and supporting files. Plasmids and plasmid maps for the constructs stated in this manuscript will be available from Addgene (https://www.addgene.org/Noboru_Mizushima/).\n",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "42438a1e-d011-4b3a-954f-4139c8a51749",
+      "submission_id": "c34610c6-5a21-4e86-b0d0-0dad05eabbb0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Li Yu, https://ror.org/03cve4549 Tsinghua University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78923.sa0](https://doi.org/10.7554/eLife.78923.sa0)\n\nThis paper describes the development of quantitative approaches to measure the turnover of cellular material in the lysosome. These new tools are carefully validated and the data shows their application to several physiologically relevant types of autophagy. This assay will be very useful for any researcher interested in studying autophagy flux\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Li Yu, https://ror.org/03cve4549 Tsinghua University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78923.sa1](https://doi.org/10.7554/eLife.78923.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A pulse-chasable reporter processing assay for mammalian autophagic flux with HaloTag\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Sharon Tooze (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Modify the text to address reviewer3's comment \"However, I am not entirely convinced of the overall benefits of employing this system if there exists a battery of well-characterized stable cell lines with tandem fluorescence tagged ATG8s. The main benefit would come from tagging cargo which would make the assay independent of the ATG8s (such as the authors have done with Halo-ER markers).\"\n\n2) Reviewer 1 \"Does this assay can be used to measure autophagy influx in vivo? Authors may want to discuss this possibility in the discussion.\"\n\n3) Line 188, Figure 2E: In order to convincingly conclude that there are no autolysosomes, can Figure 2e (especially the Baf treatment) be conducted using LAMP staining since the structures could represent autolysosomes that have lost their pH and therefore are not stained by lysotracker.\n\n4) Figure 3G: There is a major band at approximately 37 kDa which also has in-gel fluorescence. Does this band represent free GFP or is it fluorescence from a cleavage product of the HaloTag construct? In addition, is the product localised to mitochondria or the cytosol (can be tested by crude mitochondrial isolation)? Western blotting with the GFP antibody would help clarify the identity of the species while gel fluorescence without TMR ligand could also be used. This is an important point to address because it could influence the interpretation of fluorescent signals observed via imaging.\n\nReviewer #2 (Recommendations for the authors):\n\nSuggestions\n\n1. Line 188, Figure 2E: In order to convincingly conclude that there are no autolysosomes, can Figure 2e (especially the Baf treatment) be conducted using LAMP staining since the structures could represent autolysosomes that have lost their pH and therefore are not stained by lysotracker.\n\n2. Is the Halo-LC3B reporter influenced at all by alternative forms of lipidation including onto lysosomal membranes? For example, cGAMP treatment or C8 treatment -e.g. Goodwin et al. 2021 Science Advances? This would be helpful to know since the Halo-LC3B reporter might also report on non-autophagic events depending on the cellular context.\n\n3. Figure 3G: There is a major band at approximately 37 kDa which also has in-gel fluorescence. Does this band represent free GFP or is it fluorescence from a cleavage product of the HaloTag construct? In addition, is the product localised to mitochondria or the cytosol (can be tested by crude mitochondrial isolation)? Western blotting with the GFP antibody would help clarify the identity of the species while in gel fluorescence without TMR ligand could also be used. This is an important point to address because it could influence the interpretation of fluorescent signals observed via imaging.\n\nReviewer #3 (Recommendations for the authors):\n\nThe data presented support the novel adaptation of the Halo-tag system and do recapitulate a method of monitoring autophagy that is more in line with that done in yeast. In addition provides a pulse-chase manipulation. However, I am not entirely convinced of the overall benefits of employing this system if there exists a battery of well-characterized stable cell lines with tandem fluorescence tagged ATG8s. The main benefit would come from tagging cargo which would make the assay independent of the ATG8s (such as the authors have done with Halo-ER markers).\n",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2cbe1d89-0693-4568-ba3f-f12efb85ed39",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C1",
+      "claim": "Monitoring autophagic flux is necessary for most autophagy studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring autophagic flux is necessary for most autophagy studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "27548c1e-dd09-4310-bfe8-330f8aeb02d6",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C2",
+      "claim": "The autophagic flux assays currently available for mammalian cells are generally complicated and do not yield highly quantitative results.",
+      "claim_type": "EXPLICIT",
+      "source": "The autophagic flux assays currently available for mammalian cells are generally complicated and do not yield highly quantitative results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general assessment of existing methods based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "6af22127-ab59-4cde-a024-4cc9bf0abe49",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C3",
+      "claim": "Yeast autophagic flux is routinely monitored with the green fluorescence protein (GFP)-based processing assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast autophagic flux is routinely monitored with the green fluorescence protein (GFP)-based processing assay, whereby the amount of GFP proteolytically released from GFP-containing reporters (e.g. GFP-Atg8), detected by immunoblotting, reflects autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes an established method in yeast autophagy research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "524f1f39-8107-45f9-9fdb-76574eefbf4c",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C4",
+      "claim": "The amount of GFP proteolytically released from GFP-containing reporters reflects autophagic flux in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast autophagic flux is routinely monitored with the green fluorescence protein (GFP)-based processing assay, whereby the amount of GFP proteolytically released from GFP-containing reporters (e.g. GFP-Atg8), detected by immunoblotting, reflects autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the principle of the established GFP-Atg8 processing assay in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "5d8dd2b8-0245-406f-888a-49d1c3ef5753",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C5",
+      "claim": "The GFP-based processing assay is typically inapplicable to mammalian cells because GFP is efficiently degraded in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this simple and effective assay is typically inapplicable to mammalian cells because GFP is efficiently degraded in lysosomes while the more proteolytically resistant red fluorescent protein (RFP) accumulates in lysosomes under basal conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and is further supported by experimental data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "a811c002-1324-4fa0-b544-337e1d58d914",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C6",
+      "claim": "Red fluorescent protein (RFP) is more proteolytically resistant than GFP and accumulates in lysosomes under basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this simple and effective assay is typically inapplicable to mammalian cells because GFP is efficiently degraded in lysosomes while the more proteolytically resistant red fluorescent protein (RFP) accumulates in lysosomes under basal conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and experimental data shown in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "afefabce-ef8f-48f1-84ef-20b5c2089daf",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C7",
+      "claim": "Halo is sensitive to lysosomal proteolysis but becomes resistant upon ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Halo is sensitive to lysosomal proteolysis but becomes resistant upon ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "d24767fd-04b0-4296-8b7c-df49b9aee0eb",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C8",
+      "claim": "Pulse-labeled Halo-based reporters are proteolytically processed to generate Haloligand when delivered into lysosomes by autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "When delivered into lysosomes by autophagy, pulse-labeled Halo-based reporters (e.g. Halo-LC3 and Halo-GFP) are proteolytically processed to generate Haloligand when delivered into lysosomes by autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figures 1, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "4721d876-3a44-4589-a291-29d9822b56e6",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C9",
+      "claim": "The amount of free Haloligand detected by immunoblotting or in-gel fluorescence imaging reflects autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the amount of free Haloligand detected by immunoblotting or in-gel fluorescence imaging reflects autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "d1b28424-ecda-4211-96f9-b089e377d52c",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C10",
+      "claim": "The Halo-based processing assay can monitor macroautophagy, selective autophagy, and bulk nonselective autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the applications of this assay by monitoring the autophagy pathways, macroautophagy, selective autophagy, and even bulk nonselective autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "63c1cc81-5c8b-4b37-b5ed-56bbedec92f3",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C11",
+      "claim": "Autophagy is the lysosome-based degradation system in eukaryotes essential for cellular homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy is the lysosome-based degradation system in eukaryotes essential for cellular homeostasis as part of intracellular quality control and intracellular remodeling during environmental adaptation (Bento et al., 2016; Kawabata and Yoshimori, 2020; Noda and Inagaki, 2015; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "1108994e-a6e5-463a-a784-15aca06f8374",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C12",
+      "claim": "Dysregulated autophagy is associated with aging and diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulated autophagy is associated with aging and diseases (Fleming et al., 2022; Kawabata and Yoshimori, 2020; Klionsky et al., 2021a; Mizushima and Levine, 2020; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "a1ea4992-e482-4206-90e9-470c02762c74",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C13",
+      "claim": "Macroautophagy involves the formation of an autophagosome that sequesters material and fuses with lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Macroautophagy and microautophagy are major autophagy pathways by which cytoplasmic material is delivered to lysosomes for degradation. The former pathway involves the formation of an autophagosome that sequesters material and fuses with lysosomes while the latter pathway occurs via direct invagination of the lysosomal membrane (Kawabata and Yoshimori, 2020; Noda and Inagaki, 2015; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "5da2f850-b317-4673-aa88-d9a5a5b3f641",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C14",
+      "claim": "Microautophagy occurs via direct invagination of the lysosomal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Macroautophagy and microautophagy are major autophagy pathways by which cytoplasmic material is delivered to lysosomes for degradation. The former pathway involves the formation of an autophagosome that sequesters material and fuses with lysosomes while the latter pathway occurs via direct invagination of the lysosomal membrane (Kawabata and Yoshimori, 2020; Noda and Inagaki, 2015; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "90be2602-11d8-4799-9769-2efd4b2df4d4",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C15",
+      "claim": "Autophagic flux refers to the amount of autophagic degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagic activity is the uninterrupted series of events that begins with material entering lysosomes and ends with their degradation by lysosomal hydrolases. The amount of autophagic degradation is often referred to as autophagic flux (Klionsky et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement defines a term and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "69a882ab-5bcf-44a7-a612-1463a4232e0f",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C16",
+      "claim": "The GFP-Atg8 processing assay is the most commonly used quantitative assay for Saccharomyces cerevisiae autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative assays have been developed for Saccharomyces cerevisiae, with the GFP-Atg8 processing assay being the most commonly used (Shintani and Klionsky, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "d233bcdc-f015-4a08-bfb9-bb5f5cb610f1",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C17",
+      "claim": "GFP-Atg8 localizes to both outer and inner autophagosomal membranes in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-Atg8 localizes to both outer and inner autophagosomal membranes and is delivered into the vacuole as part of autophagic bodies (inner membrane-delimited vesicles), where GFP-Atg8 is then processed by vacuolar proteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established behavior of GFP-Atg8 in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "0c04ac40-afbc-431d-937b-89a8a4561fb8",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C18",
+      "claim": "GFP is relatively stable against vacuolar proteolysis in yeast and accumulates in the vacuole as autophagy progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Atg8, GFP is relatively stable against vacuolar proteolysis and accumulates in the vacuole as autophagy progresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established behavior of GFP in yeast vacuoles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "9c77a04c-96ef-474e-a660-86e02b7e62fc",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C19",
+      "claim": "The GFP-Atg8 processing assay can be adapted to monitor specific forms of autophagy by replacing Atg8 with a protein of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this assay can be adapted to monitor specific forms of autophagy by replacing Atg8 in the reporter with one's protein of interest, such as with the mitochondrial protein Om45 to monitor mitophagy (selective autophagy of mitochondria) (Kanki and Klionsky, 2008) or the cytosolic protein Pgk1 to monitor bulk nonselective autophagy (Welter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature demonstrating these adaptations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "a43ecc8e-a1ff-41a6-a0a0-85413bfcb3dc",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C20",
+      "claim": "GFP-Om45 can be used to monitor mitophagy in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this assay can be adapted to monitor specific forms of autophagy by replacing Atg8 in the reporter with one's protein of interest, such as with the mitochondrial protein Om45 to monitor mitophagy (selective autophagy of mitochondria) (Kanki and Klionsky, 2008) or the cytosolic protein Pgk1 to monitor bulk nonselective autophagy (Welter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "e5c34fab-3b9e-428b-a677-f7195e6f7d0c",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C21",
+      "claim": "GFP-Pgk1 can be used to monitor bulk nonselective autophagy in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this assay can be adapted to monitor specific forms of autophagy by replacing Atg8 in the reporter with one's protein of interest, such as with the mitochondrial protein Om45 to monitor mitophagy (selective autophagy of mitochondria) (Kanki and Klionsky, 2008) or the cytosolic protein Pgk1 to monitor bulk nonselective autophagy (Welter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "f07415e3-cdf1-415c-9bc0-210e139ab0d3",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C22",
+      "claim": "GFP is rapidly degraded in mammalian lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Implementing the GFP-Atg8 processing assay in mammalian cells (using LC3 and GABARAP family proteins) has been challenging because GFP is rapidly degraded in mammalian lysosomes (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "cb38286e-efe7-4605-9ed5-09de8c911a6d",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C23",
+      "claim": "Only a few studies have succeeded in detecting the release of free GFP from GFP-LC3 in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a few studies have succeeded in detecting the release of free GFP (Gao et al., 2008; Hosokawa et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "4c019306-43d1-4f97-b69f-b550353668da",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C24",
+      "claim": "The success rate of detecting free GFP from GFP-LC3 could be increased by raising the luminal pH of lysosomes with nonsaturating concentrations of lysosomotropic agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the success rate could be increased by raising the luminal pH of lysosomes with nonsaturating concentrations of lysosomotropic agents (Gao et al., 2008; Klionsky et al., 2021b), doing so might also affect GFP-LC3 processing itself and thus would require careful optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "6c2997ea-cfd6-4d09-83e5-99e7d0b6e79b",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C25",
+      "claim": "Raising lysosomal pH with lysosomotropic agents might affect GFP-LC3 processing itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the success rate could be increased by raising the luminal pH of lysosomes with nonsaturating concentrations of lysosomotropic agents (Gao et al., 2008; Klionsky et al., 2021b), doing so might also affect GFP-LC3 processing itself and thus would require careful optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential side effects of the method.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "9e0c9510-1184-4748-82f9-963ca7cce8de",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C26",
+      "claim": "In mammalian cells, autophagic flux is often estimated from the amount of selective autophagic cargo degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, autophagic flux is often estimated from the amount of selective autophagic cargo degraded or, with the LC3 turnover assay, the amount of LC3-II produced in the presence of a lysosomal inhibitor (i.e. the amount of LC3-II that would have otherwise been degraded; Klionsky et al., 2021b; Mizushima and Murphy, 2020; Mizushima and Yoshimori, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes established methods and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "b4300c96-1eaf-471b-b861-a8ad07d71046",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C27",
+      "claim": "The LC3 turnover assay estimates autophagic flux from the amount of LC3-II produced in the presence of a lysosomal inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, autophagic flux is often estimated from the amount of selective autophagic cargo degraded or, with the LC3 turnover assay, the amount of LC3-II produced in the presence of a lysosomal inhibitor (i.e. the amount of LC3-II that would have otherwise been degraded; Klionsky et al., 2021b; Mizushima and Murphy, 2020; Mizushima and Yoshimori, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes an established method and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "91dc366f-2476-4438-b1bb-25e13e6ee435",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C28",
+      "claim": "RFP-GFP-LC3 can be used to monitor autophagic flux based on the reduction in GFP fluorescence compared to the relatively unchanging fluorescence of the lysosome-resistant RFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagic flux can also be monitored with the fluorescent reporters, RFP-GFP-LC3 (Kimura et al., 2007) and GFP-LC3-RFP (Kaizuka et al., 2016), with which autophagic flux is determined from the reduction in GFP fluorescence compared to the relatively unchanging fluorescence of the lysosome-resistant RFP and cytosol-localizing RFP, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes an established method and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "ba19ad6b-ac97-41aa-81b8-ee65e1f4da08",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C29",
+      "claim": "GFP-LC3-RFP can be used to monitor autophagic flux based on the reduction in GFP fluorescence compared to cytosol-localizing RFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagic flux can also be monitored with the fluorescent reporters, RFP-GFP-LC3 (Kimura et al., 2007) and GFP-LC3-RFP (Kaizuka et al., 2016), with which autophagic flux is determined from the reduction in GFP fluorescence compared to the relatively unchanging fluorescence of the lysosome-resistant RFP and cytosol-localizing RFP, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes an established method and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "0b6bb4ec-cf50-4184-9937-edb08f7163d5",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C30",
+      "claim": "Some autophagic flux assays require the use of a lysosomal inhibitor control, which can limit the assay's dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Some require the use of a lysosomal inhibitor control, which can limit the assay's dynamic range (Liebl et al., 2022) and cause side-effects (Florey et al., 2015; Juh\u00e1sz, 2012), while others are complicated or are low in sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "bf6eb2ec-aef6-485f-aac0-8a28dba2f63c",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C31",
+      "claim": "Lysosomal inhibitor controls can cause side-effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Some require the use of a lysosomal inhibitor control, which can limit the assay's dynamic range (Liebl et al., 2022) and cause side-effects (Florey et al., 2015; Juh\u00e1sz, 2012), while others are complicated or are low in sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "169861ab-a131-45bb-aef8-5095cee6fa93",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C32",
+      "claim": "A small amount of free mGFP was produced from mGFP-LC3B in wild-type HeLa cells but not in FIP200 knockout cells under both growing and starvation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "With monomeric GFP (mGFP)-LC3B, a small amount of free mGFP was produced in wild-type HeLa cells but not in FIP200 knockout (KO) cells under both growing and starvation conditions, indicating that free mGFP was generated in an autophagy-dependent manner (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "e26c78b8-c6ec-4293-8a6f-7c849ec60386",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C33",
+      "claim": "Free mGFP from mGFP-LC3B is generated in an autophagy-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "With monomeric GFP (mGFP)-LC3B, a small amount of free mGFP was produced in wild-type HeLa cells but not in FIP200 knockout (KO) cells under both growing and starvation conditions, indicating that free mGFP was generated in an autophagy-dependent manner (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that free mGFP is not produced in FIP200 KO cells, which lack autophagy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "e9968ac1-4679-4418-b4c5-30a435d53741",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C34",
+      "claim": "A starvation-induced decrease of mGFP-LC3B levels was detected, but an increase in free mGFP levels was not.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although a starvation-induced decrease of mGFP-LC3B levels was detected, an increase in free mGFP levels was not (Figure 1a, left) as mGFP is degraded in mammalian lysosomes like other GFPs (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1a and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "bcd4d14e-04be-4d8e-b6a5-5276a31b2735",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C35",
+      "claim": "mGFP is degraded in mammalian lysosomes like other GFPs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although a starvation-induced decrease of mGFP-LC3B levels was detected, an increase in free mGFP levels was not (Figure 1a, left) as mGFP is degraded in mammalian lysosomes like other GFPs (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "b021f18c-cc15-46ca-a122-fc213ef1a814",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C36",
+      "claim": "Replacing mGFP with mRFP in the LC3 reporter allowed for an increase in free mRFP levels upon starvation to be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacing mGFP with the proteolytically resistant monomeric RFP (mRFP) (Katayama et al., 2008) allowed for an increase in free mRFP levels upon starvation to be detected (Figure 1a, right), but the increase was not apparent due to the pre-existing mRFP band (Figure 1a, right) that probably resulted from basal autophagy-mediated lysosomal accumulation (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1a and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "376cda60-7982-4047-953d-53eb3cac1d09",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C37",
+      "claim": "The increase in free mRFP upon starvation was not apparent due to a pre-existing mRFP band that probably resulted from basal autophagy-mediated lysosomal accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacing mGFP with the proteolytically resistant monomeric RFP (mRFP) (Katayama et al., 2008) allowed for an increase in free mRFP levels upon starvation to be detected (Figure 1a, right), but the increase was not apparent due to the pre-existing mRFP band (Figure 1a, right) that probably resulted from basal autophagy-mediated lysosomal accumulation (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1a, a citation to prior literature, and inference about the cause.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "86b1bd0c-3ffb-4dd5-8a5e-45c4d5826955",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C38",
+      "claim": "It is difficult to detect mammalian autophagic flux with a GFP- or RFP-tagged LC3 processing assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is difficult to detect mammalian autophagic flux with a GFP- or RFP-tagged LC3 processing assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data with mGFP-LC3B and mRFP-LC3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "860580ed-b84d-46cd-ad3e-a23b982aa5c5",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C39",
+      "claim": "After 6 hr of starvation, a starvation-induced decrease in labeled and unlabeled Halo-LC3B was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "After 6 hr of starvation, a starvation-induced decrease in labeled and unlabeled Halo-LC3B was observed by immunoblotting and, for labeled HaloTMR-LC3B, in-gel fluorescence detection (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "e948132b-d18a-44c0-8926-0f2ae43ac3da",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C40",
+      "claim": "Free Halo was detected only for HaloTMR-LC3B (ligand-bound) and not for unlabeled Halo-LC3B.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, free Halo was detected only for HaloTMR-LC3B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "56f6db95-d144-43f4-8bca-922ff1eeb056",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C41",
+      "claim": "The decrease in Halo-LC3B and HaloTMR-LC3B levels and appearance of free HaloTMR were dependent on autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in Halo-LC3B and HaloTMR-LC3B levels and appearance of free HaloTMR were dependent on autophagy and lysosomal enzymatic activity as they were suppressed in FIP200 KO cells (Figure 1b\u2013c) and by the lysosomal inhibitor bafilomycin A1 (Klionsky et al., 2008; Mauvezin et al., 2015; Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 1b-c showing suppression in FIP200 KO cells and with bafilomycin A1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "627795fa-f513-40ed-896a-3643513191ef",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C42",
+      "claim": "The decrease in Halo-LC3B and HaloTMR-LC3B levels and appearance of free HaloTMR were dependent on lysosomal enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in Halo-LC3B and HaloTMR-LC3B levels and appearance of free HaloTMR were dependent on autophagy and lysosomal enzymatic activity as they were suppressed in FIP200 KO cells (Figure 1b\u2013c) and by the lysosomal inhibitor bafilomycin A1 (Klionsky et al., 2008; Mauvezin et al., 2015; Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1c showing suppression with bafilomycin A1 and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "7cf41130-d5f0-4abe-9364-713d30eb2049",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C43",
+      "claim": "Removal of the ligand was enough to prevent further labeling of Halo-LC3B.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the ligand was enough to prevent further labeling (Figure 1\u2014figure supplement 1, compare lanes 8\u201310), avoiding the need for a blocking agent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "d70e716c-a97d-40cf-aff4-596dae1e3153",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C44",
+      "claim": "The generation of free SNAP was not detected from ligand-free and ligand-bound SNAP-LC3 during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the generation of free SNAP was not detected from ligand-free and ligand-bound SNAP-LC3 during starvation (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "4abf1e72-94ff-4fd2-ae14-390da02bb6d2",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C45",
+      "claim": "Ligand-free Halo is susceptible to proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that ligand-free Halo is susceptible to proteolysis but, unlike SNAP, Halo becomes resistant to proteolysis after covalently binding to its ligand and persists in lysosomes (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing that free Halo is only detected from ligand-bound Halo-LC3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "75feee2f-d937-4ac0-8e21-c25b8bd1ecd1",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C46",
+      "claim": "Unlike SNAP, Halo becomes resistant to proteolysis after covalently binding to its ligand and persists in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that ligand-free Halo is susceptible to proteolysis but, unlike SNAP, Halo becomes resistant to proteolysis after covalently binding to its ligand and persists in lysosomes (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data comparing Halo and SNAP behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "3c0afbda-4643-4037-8a3a-0dbf61e5e2ad",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C47",
+      "claim": "Autophagic flux can be quantitatively determined with pulse-chasable Halo-based reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, autophagic flux can be quantitatively determined with pulse-chasable Halo-based reporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data demonstrating the properties of Halo-based reporters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "a165b885-d30c-4ef6-8c67-46ab9fde0e69",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C48",
+      "claim": "The amount of free HaloTMR generated from HaloTMR-LC3B was detected as early as 0.5 hr of starvation and increased over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of free HaloTMR generated from HaloTMR-LC3B was detected as early as 0.5 hr of starvation and increased over time (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "2f16e233-79cc-4aa4-9f6a-36bbecf3434b",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C49",
+      "claim": "The ratio of released HaloTMR to total HaloTMR showed a linear increase of free HaloTMR levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculation of the ratio of released HaloTMR to total HaloTMR (HaloTMR-LC3B+HaloTMR) showed a linear increase of free HaloTMR levels that was readily reproducible (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "63bc7513-bf97-4335-8c36-c274f90e5160",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C50",
+      "claim": "Pulse-labeling ensures that the starting amount of HaloTMR-LC3B is relatively the same for each experimental condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantages of the processing assay are: (1) pulse-labeling ensures that the starting amount of HaloTMR-LC3B is relatively the same for each experimental condition (here, each time point), (2) the amount of free Halo is a positive readout (i.e. a signal is produced rather than reduced by autophagy), and (3) quantifying the amount of free HaloTMR produced is self-contained without the need for additional controls such as a lysosomal inhibitor control or a loading control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the pulse-labeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "9e953dcc-de03-4123-b2e7-012a88322353",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C51",
+      "claim": "The amount of free Halo is a positive readout where a signal is produced rather than reduced by autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantages of the processing assay are: (1) pulse-labeling ensures that the starting amount of HaloTMR-LC3B is relatively the same for each experimental condition (here, each time point), (2) the amount of free Halo is a positive readout (i.e. a signal is produced rather than reduced by autophagy), and (3) quantifying the amount of free HaloTMR produced is self-contained without the need for additional controls such as a lysosomal inhibitor control or a loading control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the assay design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "44fe1535-679c-4324-9d10-f4e1f0326a8e",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C52",
+      "claim": "Quantifying the amount of free HaloTMR produced is self-contained without the need for additional controls such as a lysosomal inhibitor control or a loading control.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantages of the processing assay are: (1) pulse-labeling ensures that the starting amount of HaloTMR-LC3B is relatively the same for each experimental condition (here, each time point), (2) the amount of free Halo is a positive readout (i.e. a signal is produced rather than reduced by autophagy), and (3) quantifying the amount of free HaloTMR produced is self-contained without the need for additional controls such as a lysosomal inhibitor control or a loading control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the assay design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "0767f9a4-3818-4edf-a7a1-381f3ceeb317",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C53",
+      "claim": "The Halo-LC3B processing assay is a simple and sensitive method with a wide linear range to quantitatively monitor autophagic flux in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Halo-LC3B processing assay is thus a simple and sensitive method with a wide linear range to quantitatively monitor autophagic flux in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data demonstrating the assay's properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "950ee48e-56b0-4728-abbd-4082634e1a8e",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C54",
+      "claim": "The number of mGFP-LC3B puncta increased during the first 2 hr of starvation but did not increase thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of mGFP-LC3B puncta increased during the first 2 hr of starvation but did not increase thereafter (Figure 2a and c), which is likely due to the quenching of mGFP signal in autolysosomes (Kimura et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 2a and c, with inference about the cause supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "a0ccb394-a144-442b-95f4-b4327d5ebc7e",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C55",
+      "claim": "The lack of increase in mGFP-LC3B puncta after 2 hr of starvation is likely due to the quenching of mGFP signal in autolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of mGFP-LC3B puncta increased during the first 2 hr of starvation but did not increase thereafter (Figure 2a and c), which is likely due to the quenching of mGFP signal in autolysosomes (Kimura et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference supported by a citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "c3ce4c2c-878a-4fc0-80d3-fa6397f5c79a",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C56",
+      "claim": "Under growing conditions, many mRFP-LC3B puncta were already present and their high rate of colocalization with LysoTracker revealed them to be lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under growing conditions, many mRFP-LC3B puncta were already present and their high rate of colocalization with LysoTracker revealed them to be lysosomes (Figure 2a), demonstrating mRFP's stability in acidic compartments (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2a and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "4614c5e0-5f87-4a6a-9fb9-76a762aeb3d9",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C57",
+      "claim": "The pre-existing mRFP-LC3B puncta demonstrate mRFP's stability in acidic compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Under growing conditions, many mRFP-LC3B puncta were already present and their high rate of colocalization with LysoTracker revealed them to be lysosomes (Figure 2a), demonstrating mRFP's stability in acidic compartments (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "d82311e6-d85c-4d54-b0a7-30ee5596397f",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C58",
+      "claim": "An increase in the number of mRFP-LC3B puncta during starvation was not detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an increase in the number of mRFP-LC3B puncta during starvation was not detected (Figure 2a and c), likely because the formation of mRFP-LC3B-marked autophagosomes was masked by the pre-existing intense lysosomal mRFP signal (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 2a and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "976a5041-45e3-4bd0-8793-12ce02e5be1b",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C59",
+      "claim": "The lack of increase in mRFP-LC3B puncta during starvation is likely because the formation of mRFP-LC3B-marked autophagosomes was masked by the pre-existing intense lysosomal mRFP signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an increase in the number of mRFP-LC3B puncta during starvation was not detected (Figure 2a and c), likely because the formation of mRFP-LC3B-marked autophagosomes was masked by the pre-existing intense lysosomal mRFP signal (Katayama et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference supported by a citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "9e08e773-1028-4b3a-b77d-6338437e5264",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C60",
+      "claim": "Halo-LC3B labeled with SF650 ligand demonstrated only a few faint punctate structures immediately after labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, Halo-LC3B that was labeled with ligand conjugated to fluorogenic SaraFluor 650T (SF650) demonstrated only a few faint punctate structures immediately after labeling, and starvation induced a continuous increase in the number of HaloSF650-positive puncta over time (Figure 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 2b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "13f4051e-944b-4074-a064-df0ae78ea5da",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C61",
+      "claim": "Starvation induced a continuous increase in the number of HaloSF650-positive puncta over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, Halo-LC3B that was labeled with ligand conjugated to fluorogenic SaraFluor 650T (SF650) demonstrated only a few faint punctate structures immediately after labeling, and starvation induced a continuous increase in the number of HaloSF650-positive puncta over time (Figure 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 2b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "cdb2e951-3938-44e5-9e79-8c260e0cd702",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C62",
+      "claim": "Many of the HaloSF650-positive puncta are autolysosomes as they colocalized with LysoTracker and the lysosomal membrane protein LAMP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the HaloSF650-positive puncta are autolysosomes as they colocalized with LysoTracker (Figure 2b) and the lysosomal membrane protein LAMP1 (Figure 2\u2014figure supplement 1a), which shows that HaloSF650 is stable in acidic lysosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from colocalization data shown in Figure 2b and Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "85f0d273-928c-48e4-97ed-678b05b8fac2",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C63",
+      "claim": "HaloSF650 is stable in acidic lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the HaloSF650-positive puncta are autolysosomes as they colocalized with LysoTracker (Figure 2b) and the lysosomal membrane protein LAMP1 (Figure 2\u2014figure supplement 1a), which shows that HaloSF650 is stable in acidic lysosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the colocalization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "ae9a4982-4ecf-4023-b903-802d6147a5cf",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C64",
+      "claim": "Autophagosomes cannot be distinguished from autolysosomes with Halo-LC3 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Although autophagosomes cannot be distinguished from autolysosomes with Halo-LC3, the number of ligand-bound Halo puncta formed following pulse-labeling of Halo-based reporters can indicate autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations and capabilities of the Halo-LC3 reporter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "9f9f9606-7559-49bd-9333-98038e643c8a",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C65",
+      "claim": "The number of ligand-bound Halo puncta formed following pulse-labeling of Halo-based reporters can indicate autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Although autophagosomes cannot be distinguished from autolysosomes with Halo-LC3, the number of ligand-bound Halo puncta formed following pulse-labeling of Halo-based reporters can indicate autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "c26976ef-1b8e-4dd8-a55f-3ab0b472b335",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C66",
+      "claim": "The constitutive accumulation of mRFP in lysosomes often hinders the detection of newly generated autolysosomes with mRFP-mGFP-LC3B.",
+      "claim_type": "EXPLICIT",
+      "source": "This reporter was originally developed to distinguish between mRFP-positive mGFP-positive (mRFP+mGFP+) autophagosomes and mRFP-positive mGFP-negative (mRFP+mGFP\u2013) autolysosomes, but the constitutive accumulation of mRFP in lysosomes often hinders the detection of newly generated autolysosomes (mRFP+mGFP\u2013) (Figure 2\u2014figure supplement 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2\u2014figure supplement 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "2d69f1fe-92b8-4fb3-a67f-bd2e5cb2beac",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C67",
+      "claim": "HaloSF650-mGFP-LC3 was mostly cytosolic immediately after labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HaloSF650-mGFP-LC3 was mostly cytosolic immediately after labeling (Figure 2e, Figure 2\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2e and Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "6e5c76c6-7605-4ff2-961a-3fd7f03123c7",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C68",
+      "claim": "Starvation induced the formation of HaloSF650+mGFP+ puncta that represent autophagosomes and HaloSF650+mGFP\u2013 puncta that represent autolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation induced the formation of HaloSF650+mGFP+ puncta that represent autophagosomes (arrowheads) and HaloSF650+mGFP\u2013 puncta that represent autolysosomes (arrows) as confirmed by their colocalization with LysoTracker or LAMP1-mRuby3 (Figure 2e and f, Figure 2\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 2e and f and Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "20c5b210-ecf4-4b1b-81d5-1d751b1acce1",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C69",
+      "claim": "Adding bafilomycin A1 resulted in the accumulation of HaloSF650+ and mGFP+ in autophagosomes and autolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding the lysosomal inhibitor bafilomycin A1 resulted in the accumulation of HaloSF650+ and mGFP+ in autophagosomes and autolysosomes (Figure 2e and f, Figure 2\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 2e and f and Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "946a6984-f61b-48f0-96b6-06269ad696c5",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C70",
+      "claim": "The lack of pre-existing lysosomal accumulation makes Halo-mGFP-LC3B a preferable alternative to mRFP-mGFP-LC3B as a fluorescence microscopy-based autophagic flux reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the lack of pre-existing lysosomal accumulation makes Halo-mGFP-LC3B a preferable alternative to mRFP-mGFP-LC3B as a fluorescence microscopy-based autophagic flux reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the comparative experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "58980a1a-64a0-484d-9de9-bd1eb5f9270c",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C71",
+      "claim": "Halo-mGFP-LC3B-mRFP can be used in the processing assay, the autophagosome/autolysosome formation assay, and the GFP:RFP ratiometry assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding Halo at the N-terminus of mGFP-LC3B-mRFP yielded a reporter that can be used in the processing assay (Figure 2\u2014figure supplement 1e), the autophagosome/autolysosome formation assay (Figure 2\u2014figure supplement 1f), and the GFP:RFP ratiometry assay (Figure 2\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2\u2014figure supplement 1e, f, and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "8af9f8f7-c1be-42a5-b5a2-189f5488a213",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C72",
+      "claim": "Halo-mGFP-LC3B-mRFP can be used as a stably expressed 'three-in-one' reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Halo-mGFP-LC3B-mRFP can be used as a stably expressed 'three-in-one' reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data showing its multiple applications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "87abebfe-afcf-4650-8414-38aadb323c61",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C73",
+      "claim": "Pulse-chasable Halo-based reporters are suitable for monitoring autophagic flux by fluorescence microscopy in addition to the processing assay readout.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, pulse-chasable Halo-based reporters are suitable for monitoring autophagic flux by fluorescence microscopy in addition to the processing assay readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "f96bda7b-3032-4371-ad5d-35f7acd7d5af",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C74",
+      "claim": "A major advantage of the yeast GFP-Atg8 processing assay is its versatility: Atg8 can be replaced with a protein of interest to monitor the activity of selective autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "A major advantage of the yeast GFP-Atg8 processing assay is its versatility: Atg8 can be replaced with a protein of interest to monitor the activity of selective autophagy, such as endoplasmic reticulum (ER)-phagy and mitophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes an established advantage of the yeast assay.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "cde40e21-55d5-4b50-af2a-2eb33745ec91",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C75",
+      "claim": "Halo-mGFP-KDEL localizes to the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we prepared Halo-mGFP-KDEL that localizes to the ER lumen (Figure 3\u2014figure supplement 1a) and pSu9-Halo-mGFP that localizes to the mitochondrial matrix (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "655cd98c-7cba-4f4b-b292-ad254ac9a8ae",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C76",
+      "claim": "pSu9-Halo-mGFP localizes to the mitochondrial matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we prepared Halo-mGFP-KDEL that localizes to the ER lumen (Figure 3\u2014figure supplement 1a) and pSu9-Halo-mGFP that localizes to the mitochondrial matrix (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "c451dca0-6316-4795-b580-8eeda450e7f6",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C77",
+      "claim": "Generation of the 33 kDa HaloTMR band from pulse-labeled HaloTMR-mGFP-KDEL was detected in a FIP200-dependent manner upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of the 33 kDa HaloTMR band from pulse-labeled HaloTMR-mGFP-KDEL was detected in a FIP200-dependent manner upon starvation (Figure 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "123376dd-3f9c-40a0-a8a1-8f8661d74ba3",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C78",
+      "claim": "Production of free HaloTMR was a clearer indicator of ER-phagy than the reduction in ER protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Production of free HaloTMR was a clear indicator of ER-phagy than the reduction in ER protein levels (Figure 3a\u2013b vs. Figure 3c-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative conclusion based on experimental data in Figures 3a-d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "2e7f42f9-daa0-4113-a4db-1778e5bb5743",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C79",
+      "claim": "ER-phagy flux was detected by the formation of HaloSF650+mGFP\u2013 puncta that colocalized with LysoTracker and LAMP1.",
+      "claim_type": "EXPLICIT",
+      "source": "With fluorescence microscopy, ER-phagy flux was detected by the formation of HaloSF650+mGFP\u2013 puncta that colocalized with LysoTracker (Figure 3e and f) and LAMP1 (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 3e and f and Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "b4e94eb4-dc19-4804-97cb-d62c659e31a9",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C80",
+      "claim": "Parkin-mediated mitophagic activity induced by oligomycin and antimycin treatment was detected by pSu9-Halo-mGFP processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Parkin-mediated mitophagic activity induced by oligomycin and antimycin treatment was detected by pSu9-Halo-mGFP processing (Figure 3g and h) as well as the formation of HaloSF650+mGFP\u2013 puncta colocalized with the lysosome (Figure 3i and j, Figure 3\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 3g and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "54f873dd-3bd8-4541-a465-8f3e5e9ad54e",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C81",
+      "claim": "Parkin-mediated mitophagic activity was detected by the formation of HaloSF650+mGFP\u2013 puncta colocalized with the lysosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Parkin-mediated mitophagic activity induced by oligomycin and antimycin treatment was detected by pSu9-Halo-mGFP processing (Figure 3g and h) as well as the formation of HaloSF650+mGFP\u2013 puncta colocalized with the lysosome (Figure 3i and j, Figure 3\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 3i and j and Figure 3\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "05577a73-42f1-45d6-9f6c-725a64cee4c7",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C82",
+      "claim": "An additional 37 kDa HaloTag band was observed in the SDS-PAGE results, which is most likely a cleavage product of the HaloTag constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional 37 kDa HaloTag band was observed in the SDS-PAGE based results (Figure 3a and g) that is most likely a cleavage product of the HaloTag constructs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed band in Figures 3a and g.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "5875dc13-c8f6-42b7-89ff-a12ed568ba17",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C83",
+      "claim": "The lack of cytosolic Halo and GFP signal indicates that the 37 kDa cleavage product localizes to the targeted organelle.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of cytosolic Halo and GFP signal (Figure 3e and i) indicates that this still-fluorescent product (in-gel fluorescence images in Figure 3a and g) localizes to the targeted organelle and would not result in background signal that might interfere with result interpretation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data in Figures 3e and i.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "76942deb-2a6d-4b8f-ac3e-a9f7defebcc8",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C84",
+      "claim": "The Halo-based assays can be adapted to monitor selective autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the Halo-based assays can be adapted to monitor selective autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data with ER-phagy and mitophagy reporters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "7809ee0b-c3ca-4869-a574-7b9c4cf65118",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C85",
+      "claim": "Bulk nonselective autophagic flux more accurately reflects total autophagic flux compared to LC3-based methods since LC3 and GABARAP family proteins are preferentially degraded by autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined whether the Halo-based processing assay could be used to detect bulk nonselective autophagic flux, which more accurately reflects total autophagic flux compared to LC3-based methods since LC3 and GABARAP family proteins are preferentially degraded by autophagy (Klionsky et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "78463de2-58d5-4923-8d47-ba78e518645a",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C86",
+      "claim": "LC3 and GABARAP family proteins are preferentially degraded by autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined whether the Halo-based processing assay could be used to detect bulk nonselective autophagic flux, which more accurately reflects total autophagic flux compared to LC3-based methods since LC3 and GABARAP family proteins are preferentially degraded by autophagy (Klionsky et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "36e6a793-ae16-4125-958e-8d18c836076f",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C87",
+      "claim": "Halo-mGFP should be taken up randomly into autophagosomes or lysosomes like the yeast Pgk1-GFP reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "To monitor nonselective clearance of cytosolic material, we constructed Halo-mGFP, which should be taken up randomly into autophagosomes or lysosomes like the yeast Pgk1-GFP reporter (Welter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analogy to the yeast reporter, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "cd647cb3-7f7d-4a34-9609-39e0556bc908",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C88",
+      "claim": "The generation of free HaloTMR from pulse-labeled HaloTMR-mGFP was detected despite occurring at much lower levels than LC3-dependent autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite occurring at much lower levels than LC3-dependent autophagic flux detected by HaloTMR-LC3B, the lack of lysosomal background allowed us to detect the generation of free HaloTMR from pulse-labeled HaloTMR-mGFP (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "580dbcbd-77a6-4512-ae47-ea444abf7b68",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C89",
+      "claim": "Starvation-induced bulk nonselective autophagic flux was tracked over time by HaloTMR-mGFP processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we were able to track the progression of starvation-induced bulk nonselective autophagic flux over time by HaloTMR-mGFP processing (Figure 4b and c) and by visualizing the gradual accumulation of HaloSF650 signal in the lysosomes of cells stably expressing Halo-mGFP labeled with SF650 ligand (Figure 4d and e, Figure 4\u2014figure supplement 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 4b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "c73c0d5a-1f89-4d15-abe4-37139f58c713",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C90",
+      "claim": "Starvation-induced bulk nonselective autophagic flux was tracked by visualizing the gradual accumulation of HaloSF650 signal in the lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we were able to track the progression of starvation-induced bulk nonselective autophagic flux over time by HaloTMR-mGFP processing (Figure 4b and c) and by visualizing the gradual accumulation of HaloSF650 signal in the lysosomes of cells stably expressing Halo-mGFP labeled with SF650 ligand (Figure 4d and e, Figure 4\u2014figure supplement 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 4d and e and Figure 4\u2014figure supplement 1a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "57198207-ce4e-467d-80a2-0848606d826e",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C91",
+      "claim": "HaloTMR-mGFP processing and HaloSF650 puncta formation were not observed in FIP200 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HaloTMR-mGFP processing and HaloSF650 puncta formation were not observed in FIP200 KO cells (Figure 4a and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 4a and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "f4776cda-cf2e-4ec2-8f2c-d38e34b2bc35",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C92",
+      "claim": "HaloTMR-mGFP processing was slightly detected in ATG3 KO and ATG5 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HaloTMR-mGFP processing was slightly detected in ATG3 KO and ATG5 KO cells (Figure 4a), which is consistent with our previous finding that the ATG conjugation systems are not completely essential in mammalian cells (Tsuboyama et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4a and a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "4590afcc-87f5-44e4-9f02-df6ebe34041d",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C93",
+      "claim": "The ATG conjugation systems are not completely essential in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HaloTMR-mGFP processing was slightly detected in ATG3 KO and ATG5 KO cells (Figure 4a), which is consistent with our previous finding that the ATG conjugation systems are not completely essential in mammalian cells (Tsuboyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "86d29e5c-ac09-4ed5-8988-d0377a27af6b",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C94",
+      "claim": "The Halo-GFP processing assay can be used to monitor bulk nonselective autophagic flux, even in cells lacking ATG conjugation system components.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the Halo-GFP processing assay can be used to monitor bulk nonselective autophagic flux, even in cells lacking ATG conjugation system components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data with ATG3 KO and ATG5 KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "95c4ba77-1a6d-4732-a401-831ed265fa3d",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C95",
+      "claim": "The most significant advantage the HaloTag reporters have over currently available ATG8-based reporters and autophagy assays is that they can be used in a pulse-chase manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant advantage the HaloTag reporters have over currently available ATG8-based reporters and autophagy assays is that they can be used in a pulse-chase manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data and comparison with existing methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "ef890548-25a2-4824-9f1e-c959a8c7d0e9",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C96",
+      "claim": "Pulse-chase labeling allows for minimal background noise since unlabeled reporters will not accumulate within lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows for minimal background noise since unlabeled reporters will not accumulate within lysosomes, and for the readout of free Halo to be unambiguously autophagy-dependent since it occurs only when the reporter has been labeled, delivered into, and processed in lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the pulse-chase approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "2668b017-f6ef-47ac-938c-980ac19449ea",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C97",
+      "claim": "The readout of free Halo is unambiguously autophagy-dependent since it occurs only when the reporter has been labeled, delivered into, and processed in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows for minimal background noise since unlabeled reporters will not accumulate within lysosomes, and for the readout of free Halo to be unambiguously autophagy-dependent since it occurs only when the reporter has been labeled, delivered into, and processed in lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the specificity of the assay.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "c13c37ed-5ead-434e-aad1-adfcd94ba2f9",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C98",
+      "claim": "Another major advantage is the dispensation of a lysosome inhibitor control that may affect transcription/translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Another major advantage is the dispensation of a lysosome inhibitor control that may affect transcription/translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of not requiring lysosomal inhibitors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "c9e838dc-65ca-42f8-966b-3bb767ca57f1",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C99",
+      "claim": "Reporter processing can be detected by immunoblotting, which is a widely available and commonly used laboratory technique.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reporter processing can be detected by immunoblotting, which is a widely available and commonly used laboratory technique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about laboratory techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "f8896609-f0be-4467-83e2-265baeb4282e",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C100",
+      "claim": "Reporter processing can be detected by in-gel imaging if available, which would reduce the time required to obtain results.",
+      "claim_type": "EXPLICIT",
+      "source": "It can also be detected by in-gel imaging if available, which would reduce the time required to obtain results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of in-gel imaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "46d0121f-e42c-4b0e-9f78-f345e38f288d",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C101",
+      "claim": "By replacing the partner protein of Halo, users can easily adapt the assay to monitor their autophagy pathway of interest or the autophagic clearance of a protein of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, by replacing the partner protein of Halo, users can easily adapt the assay to monitor their autophagy pathway of interest or the autophagic clearance of a protein of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the demonstrated versatility of the assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "ec60df54-6b7e-4a0f-b910-10bae88e05fb",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C102",
+      "claim": "One limitation of the assay is the need for exogenous expression.",
+      "claim_type": "EXPLICIT",
+      "source": "One that is inevitable is the need for exogenous expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "dd31bd26-a834-4065-9c8e-6e7e0f2232e8",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C103",
+      "claim": "For experiments that are sensitive to variation in expression levels, clonal isolation may be required.",
+      "claim_type": "EXPLICIT",
+      "source": "For experiments that are sensitive to variation in expression levels, clonal isolation may be required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential requirements for certain applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "8c0bf36b-c73c-43bd-9426-611e6edeb2ca",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C104",
+      "claim": "The cost of Halo ligands might be prohibitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the cost of Halo ligands might be prohibitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about a potential limitation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "e1d2b705-61a6-47df-b2c6-7230098b05dd",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C105",
+      "claim": "Non-fluorescent Halo ligands, such as 7-bromoheptanol, could be a more cost-effective alternative.",
+      "claim_type": "EXPLICIT",
+      "source": "A more cost-effective alternative could be the non-fluorescent Halo ligands, such as 7-bromoheptanol, which were developed as blocking agents (Merrill et al., 2019), and Halo band detection would be achieved only by immunoblotting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by a citation to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "500f462b-c2a3-4e68-a941-ba40c3bf1b1b",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C106",
+      "claim": "Another limitation is the difficulty in quantifying the absolute rate of reporter incorporation into lysosomes precisely due to the gradual degradation of even Haloligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Another limitation is the difficulty in quantifying the absolute rate of reporter incorporation into lysosomes precisely due to the gradual degradation of even Haloligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "eaf6d025-6014-4d51-88cd-4352574fe67a",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C107",
+      "claim": "The need to electrophoretically separate the full-length reporter from the free Haloligand band limits the use of this assay for large-scale screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the need to electrophoretically separate the full-length reporter from the free Haloligand band limits the use of this assay for large-scale screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "5c10259c-7a9e-43fc-918d-f12d310af8ef",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C108",
+      "claim": "The good signal-to-noise ratio of Halo reporters in fluorescent imaging makes them ideal reporters for microscopy-based high-content screening.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the good signal-to-noise ratio of Halo reporters in fluorescent imaging makes them ideal reporters for microscopy-based high-content screening in the same manner as was achieved with GFP-LC3 (Orvedahl et al., 2011; McKnight et al., 2012; Koepke et al., 2020) and dual-fluorescent Rosella-LC3 (Arias-Fuenzalida et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to prior literature demonstrating similar applications.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "3eb4b0f6-d1ca-4c72-aa3a-39276ce29712",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C109",
+      "claim": "Halo-LC3 reporter processing is not suitable for monitoring the activity of non-canonical forms of autophagy, where LC3 is conjugated to single-membrane organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Halo-LC3 reporter processing is not suitable for monitoring the activity of non-canonical forms of autophagy, where LC3 is conjugated to single-membrane organelles (e.g. LC3-associated phagocytosis; Heckmann and Green, 2019; Herb et al., 2020) as the reporter will not be delivered into lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of the method, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "8f283998-153a-4ef1-a8ff-c3e8ca859893",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C110",
+      "claim": "The Halo-based processing assay is anticipated to be useful to most studies on mammalian autophagy and lysosome-dependent protein clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate the Halo-based processing assay to be useful to most studies on mammalian autophagy and lysosome-dependent protein clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "b15b6b8b-9d69-487b-ba02-adeb0eab2321",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C111",
+      "claim": "With Halo-GFP, researchers can investigate the contribution of autophagy proteins by examining whether altering a protein by depletion/inhibition/mutation will affect nonselective autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "With Halo-GFP, researchers can investigate the contribution of autophagy proteins by examining whether altering a protein by depletion/inhibition/mutation will affect nonselective autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "7202ba5c-56fd-443f-ac4d-dd93ef7341d1",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C112",
+      "claim": "The Halo-GFP assay may be especially useful to researchers investigating proteins that are directly required for commonly used autophagic flux assays, such as factors involved in the LC3 or GABARAP conjugation systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be especially useful to researchers investigating proteins that are directly required for commonly used autophagic flux assays, such as factors involved in the LC3 or GABARAP conjugation systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "0ee11960-53b4-4b4b-839d-160004bb6392",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C113",
+      "claim": "Low levels of autophagic flux were detected in ATG3 KO and ATG5 KO cells, which cannot be detected by conventional LC3-based assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we managed to detect low levels of autophagic flux in ATG3 KO and ATG5 KO cells (Figure 4a), which cannot be detected by conventional LC3-based assays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4a and inference about the limitations of LC3-based assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "5bbf93fc-e91d-4cb4-a644-c64272e2dacc",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C114",
+      "claim": "Although severely reduced, autophagic flux is not completely blocked in cells lacking the ATG conjugation systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the recent consensus that, although severely reduced, autophagic flux is not completely blocked in cells lacking the ATG conjugation systems (reviewed in Mizushima, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "faaea367-ca98-40e8-b350-5ab477d78d2a",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C115",
+      "claim": "Halo-GFP could be potentially used to study microautophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Halo-GFP could also be potentially used to study microautophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "9df93517-7bed-480a-b91c-244a2ad6aca4",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C116",
+      "claim": "Halo-based reporters have been successfully employed in animal models such as mice and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Halo-based reporters have been successfully employed in animal models (England et al., 2015) such as mice (Masch et al., 2018; Rivas-Pardo et al., 2020) and zebrafish (Wan et al., 2019), which suggest that the processing assay could be an additional method for assessing in vivo autophagic flux, e.g. when comparing autophagic flux among tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "1ff78ba4-0e8c-4d04-b99f-1899bc7ae030",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C117",
+      "claim": "The processing assay could be an additional method for assessing in vivo autophagic flux, e.g. when comparing autophagic flux among tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Halo-based reporters have been successfully employed in animal models (England et al., 2015) such as mice (Masch et al., 2018; Rivas-Pardo et al., 2020) and zebrafish (Wan et al., 2019), which suggest that the processing assay could be an additional method for assessing in vivo autophagic flux, e.g. when comparing autophagic flux among tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, supported by citations showing Halo use in animal models.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "b8f66f49-25dc-4dc2-8cc5-48ca0602aaa6",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C118",
+      "claim": "The Halo-based processing assay can be used to monitor mammalian autophagic flux quantitatively and reliably with relative ease.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the Halo-based processing assay can be used to monitor mammalian autophagic flux quantitatively and reliably with relative ease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "355c734c-5394-435f-8b30-f06403b26af6",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C119",
+      "claim": "The Halo-based reporters can be readily observed by fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The Halo-based reporters can also be readily observed by fluorescence microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing fluorescence microscopy applications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "4f28479e-0755-466d-badf-17438eab4814",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C120",
+      "claim": "Besides serving as an alternative to conventional autophagic flux assays, the Halo-based assay has a myriad of potential applications that may lead to the discovery of new aspects and thus a deeper understanding of mammalian autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides serving as an alternative to conventional autophagic flux assays, the Halo-based assay has a myriad of potential applications that may lead to the discovery of new aspects and thus a deeper understanding of mammalian autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "bd0dd9bf-080e-49ba-adb6-d00d6d44d378",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C121",
+      "claim": "While this manuscript was being prepared, an independent study on the use of Halo-based reporters to monitor autophagic flux was published.",
+      "claim_type": "EXPLICIT",
+      "source": "While this manuscript was being prepared, an independent study on the use of Halo-based reporters to monitor autophagic flux was published (Rudinskiy et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to concurrent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "47f9e5da-a66d-4d2f-9ee3-2e357227d5f5",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C122",
+      "claim": "Rudinskiy et al. sought to overcome the issue of lysosomal RFP accumulation with Halo-based reporters that can be fluorescently 'activated' upon binding to fluorescent ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to our main aim of developing a reporter processing assay for mammalian cells, Rudinskiy et al. sought to overcome the issue of lysosomal RFP accumulation with Halo-based reporters that can be fluorescently 'activated' upon binding to fluorescent ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the approach of a concurrent study, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "564a0393-8728-4617-ae8d-0909b3ce14c4",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C123",
+      "claim": "The 'activation' of Halo-based reporters is achieved not only by the introduction of fluorescent Halo ligand but also by the stabilization of Halo against proteolysis after ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrated that the 'activation' of Halo-based reporters is achieved not only by the introduction of fluorescent Halo ligand but, importantly, also by the stabilization of Halo against proteolysis after ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "9b128497-161d-442f-b348-c6d0d9ae95b0",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C124",
+      "claim": "Ligand binding is known to increase a protein's thermal stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ligand binding is known to increase a protein's thermal stability (Celej et al., 2003; Vedadi et al., 2006) and proteolytic resistance (Stankunas et al., 2003; Park and Marqusee, 2005; Kaur et al., 2018), we selected two protein tags that covalently bind with their respective ligands as candidate tags: Halo (Los et al., 2008) and SNAP-tag (SNAP) (Keppler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "4d022c9b-9603-408e-aa0c-65513c360a84",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "claim_id": "C125",
+      "claim": "Ligand binding is known to increase a protein's proteolytic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ligand binding is known to increase a protein's thermal stability (Celej et al., 2003; Vedadi et al., 2006) and proteolytic resistance (Stankunas et al., 2003; Park and Marqusee, 2005; Kaur et al., 2018), we selected two protein tags that covalently bind with their respective ligands as candidate tags: Halo (Los et al., 2008) and SNAP-tag (SNAP) (Keppler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a5514cd7-3969-4280-b355-5859ea63548d",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes that existing mammalian autophagic flux assays have significant limitations. GFP-based processing assays that work well in yeast are challenging to implement in mammalian cells because GFP is rapidly degraded in mammalian lysosomes, while RFP accumulates constitutively in lysosomes. Current mammalian assays often require lysosomal inhibitors, which can limit dynamic range and cause side effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C22-C31 collectively establish the context and motivation for the study through well-cited prior literature and general knowledge about the field. The limitations of existing methods are documented with appropriate citations (e.g., Katayama et al., 2008; Kimura et al., 2007; Liebl et al., 2022), providing a solid foundation for the need for a new assay.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "0b332169-3205-4989-a00e-29561ebd71e9",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors demonstrate that HaloTag becomes proteolytically resistant upon ligand binding, unlike SNAP-tag. When Halo-LC3B is pulse-labeled with TMR ligand and cells undergo starvation, free HaloTMR is generated in an autophagy-dependent manner (suppressed in FIP200 KO cells and by bafilomycin A1), while unlabeled Halo-LC3B does not produce detectable free Halo. This ligand-dependent stabilization enables quantitative measurement of autophagic flux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C32-C47 are strongly supported by experimental data in Figure 1. The key finding that ligand-bound Halo is proteolytically resistant is demonstrated through multiple controls: FIP200 KO cells (autophagy-deficient), bafilomycin A1 treatment (lysosomal inhibitor), and comparison with SNAP-tag (which does not show the same behavior). The pulse-chase approach is validated by showing that ligand removal prevents further labeling (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "24a2692e-1008-435f-8fc7-2d9850d493e3",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Halo-LC3B processing assay shows linear kinetics and high sensitivity. Free HaloTMR is detected as early as 0.5 hours of starvation and increases linearly over time. The ratio of free HaloTMR to total HaloTMR provides a quantitative, self-contained readout without requiring lysosomal inhibitor controls or loading controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 are supported by time-course data in Figures 1f-g showing early detection (0.5 hr) and linear increase over 8 hours. The quantification method (ratio of free to total HaloTMR) is clearly demonstrated and reproducible. The advantages described (C50-C52) are logical inferences from the experimental design and data, though some are conceptual rather than directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "6410a411-05e6-4b94-be81-5d21bccc2d6c",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Fluorescence microscopy with Halo-LC3B labeled with SF650 ligand shows continuous increase in puncta during starvation, unlike mGFP-LC3B (which plateaus after 2 hours due to signal quenching) or mRFP-LC3B (which shows pre-existing lysosomal accumulation). HaloSF650-positive puncta colocalize with LysoTracker and LAMP1, confirming they are autolysosomes and that HaloSF650 is stable in acidic lysosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C65 are supported by microscopy data in Figures 2a-c and supplementary figures. The comparison between mGFP-LC3B, mRFP-LC3B, and Halo-LC3B clearly demonstrates the advantages of the Halo system for microscopy. Colocalization with lysosomal markers (LysoTracker, LAMP1) validates the identity of the puncta. The minimal background signal is a key advantage demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "ea01c104-e4d9-4c11-8eae-1d729ab13911",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Halo-mGFP-LC3B enables distinction between autophagosomes (HaloSF650+mGFP+) and autolysosomes (HaloSF650+mGFP\u2212) without the pre-existing lysosomal accumulation problem of mRFP-mGFP-LC3B. Starvation induces formation of both types of puncta, and bafilomycin A1 causes accumulation of both signals in autophagosomes and autolysosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 are supported by data in Figures 2e-f and supplementary figures. The dual-color reporter successfully distinguishes autophagosome and autolysosome populations based on mGFP quenching in acidic compartments. The comparison with mRFP-mGFP-LC3B (Figure 2\u2014figure supplement 1b-c) demonstrates the advantage of minimal background. Bafilomycin A1 controls validate the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "b9e55337-c511-44af-b2f4-1b3dc35ce60e",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Halo-mGFP-LC3B-mRFP functions as a 'three-in-one' reporter that can be used for the processing assay, autophagosome/autolysosome formation assay, and GFP:RFP ratiometry assay, providing versatility for different experimental approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by data in Figure 2\u2014figure supplement 1e-g showing the reporter works in all three assay formats. This demonstrates the versatility of the Halo-based approach. However, the manuscript does not extensively characterize the performance of this triple reporter compared to dedicated single-purpose reporters, which would strengthen the claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "1f37612d-3e11-4a03-9b27-920b0596cc1d",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Halo-based processing assay can be adapted to monitor selective autophagy pathways. Halo-mGFP-KDEL (ER-phagy) and pSu9-Halo-mGFP (mitophagy) show FIP200-dependent processing upon starvation or oligomycin/antimycin treatment, respectively. Free HaloTMR production provides a clearer indicator of selective autophagy than reduction in organellar protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C84 are supported by data in Figure 3 showing successful adaptation to ER-phagy and mitophagy. The FIP200 dependence confirms autophagy-mediated degradation. Both immunoblotting and microscopy approaches work for these selective autophagy reporters. The observation of a 37 kDa cleavage product (C82-C83) is noted but does not interfere with interpretation. The versatility claim is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Halo-mGFP reporter can detect bulk nonselective autophagic flux, which more accurately reflects total autophagic flux than LC3-based methods. Despite occurring at lower levels than LC3-dependent flux, free HaloTMR from Halo-mGFP is detectable and increases over time during starvation. Importantly, low levels of flux are detected in ATG3 KO and ATG5 KO cells, which cannot be detected by conventional LC3-based assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C94 are supported by data in Figure 4. The detection of bulk autophagy with Halo-mGFP is validated by FIP200 dependence (C91). The key finding that residual autophagy occurs in ATG3/ATG5 KO cells (C92-C93) is consistent with prior literature (Tsuboyama et al., 2016) and demonstrates a unique capability of this assay. The lower signal compared to Halo-LC3B is expected and does not undermine the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "f5518142-faa1-47b3-8eb7-74d3b0665064",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Halo-based reporters offer several advantages over existing methods: pulse-chase capability minimizes background, the readout is a positive signal (production rather than reduction), no lysosomal inhibitor control is needed, detection by widely available immunoblotting or faster in-gel imaging, and easy adaptation by replacing the Halo partner protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C101 summarize advantages that are logical inferences from the experimental data and design. The pulse-chase capability (C95-C97) is demonstrated throughout the manuscript. The elimination of lysosomal inhibitor controls (C98) is a clear advantage shown in the data. The detection methods (C99-C100) are demonstrated. The adaptability (C101) is proven by the selective autophagy examples. These are well-supported conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "bea79779-5402-4a8d-94e3-ebcca5880059",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The assay has several limitations: requires exogenous expression (potentially requiring clonal isolation for expression-sensitive experiments), Halo ligand cost may be prohibitive (though non-fluorescent alternatives exist), difficulty in quantifying absolute rates due to gradual Haloligand degradation, electrophoretic separation limits high-throughput screening (though microscopy-based screening is feasible), and the assay is not suitable for non-canonical autophagy where LC3 is conjugated to single-membrane organelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C109 honestly acknowledge limitations of the method. Most are logical inferences (C102-C107, C109) rather than experimentally demonstrated problems, but they represent reasonable assessments. The suggestion of microscopy-based screening (C108) is supported by citations to similar approaches with other reporters. The limitation regarding non-canonical autophagy (C109) is a valid conceptual point.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Halo-based assay has broad potential applications including investigating autophagy protein contributions (especially for proteins required in LC3-based assays), detecting low-level flux in ATG conjugation system mutants, potentially studying microautophagy, and assessing in vivo autophagic flux in animal models. The assay can monitor mammalian autophagic flux quantitatively and reliably with relative ease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C110-C120 are largely speculative about future applications (C110-C112, C115, C117, C120) or summarize the overall conclusions (C118-C119). The detection of flux in ATG3/ATG5 KO cells (C113-C114) is experimentally supported. The potential for in vivo use (C116-C117) is supported by citations showing Halo use in animal models, but this application is not demonstrated in the manuscript. These forward-looking statements are reasonable but not fully validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    },
+    {
+      "id": "b2a7c74f-6412-44ac-a0fa-800bef7a533c",
+      "content_id": "b28b955e-2a20-4730-9998-c8e08a1a77ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes concurrent work by Rudinskiy et al. (2022) and emphasizes that the current study uniquely demonstrates that Halo 'activation' is achieved not only by fluorescent ligand introduction but importantly by stabilization against proteolysis after ligand binding. This mechanism is based on the known principle that ligand binding increases protein thermal stability and proteolytic resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C121-C125 appropriately acknowledge concurrent work and clarify the unique contribution of this study. The mechanistic insight about proteolytic stabilization (C123) is a key finding supported by the experimental data. The rationale based on ligand binding effects (C124-C125) is well-cited. This provides proper context for the work's novelty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:51:11.971692Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2cbe1d89-0693-4568-ba3f-f12efb85ed39",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "27548c1e-dd09-4310-bfe8-330f8aeb02d6",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "6af22127-ab59-4cde-a024-4cc9bf0abe49",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "524f1f39-8107-45f9-9fdb-76574eefbf4c",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "5d8dd2b8-0245-406f-888a-49d1c3ef5753",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "a811c002-1324-4fa0-b544-337e1d58d914",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "f07415e3-cdf1-415c-9bc0-210e139ab0d3",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "cb38286e-efe7-4605-9ed5-09de8c911a6d",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "4c019306-43d1-4f97-b69f-b550353668da",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "6c2997ea-cfd6-4d09-83e5-99e7d0b6e79b",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "9e0c9510-1184-4748-82f9-963ca7cce8de",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "b4300c96-1eaf-471b-b861-a8ad07d71046",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "91dc366f-2476-4438-b1bb-25e13e6ee435",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "ba19ad6b-ac97-41aa-81b8-ee65e1f4da08",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "0b6bb4ec-cf50-4184-9937-edb08f7163d5",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "bf6eb2ec-aef6-485f-aac0-8a28dba2f63c",
+      "result_id": "a5514cd7-3969-4280-b355-5859ea63548d"
+    },
+    {
+      "claim_id": "afefabce-ef8f-48f1-84ef-20b5c2089daf",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "169861ab-a131-45bb-aef8-5095cee6fa93",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "e26c78b8-c6ec-4293-8a6f-7c849ec60386",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "e9968ac1-4679-4418-b4c5-30a435d53741",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "bcd4d14e-04be-4d8e-b6a5-5276a31b2735",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "b021f18c-cc15-46ca-a122-fc213ef1a814",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "376cda60-7982-4047-953d-53eb3cac1d09",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "86b1bd0c-3ffb-4dd5-8a5e-45c4d5826955",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "860580ed-b84d-46cd-ad3e-a23b982aa5c5",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "e948132b-d18a-44c0-8926-0f2ae43ac3da",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "56f6db95-d144-43f4-8bca-922ff1eeb056",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "627795fa-f513-40ed-896a-3643513191ef",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "7cf41130-d5f0-4abe-9364-713d30eb2049",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "d70e716c-a97d-40cf-aff4-596dae1e3153",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "4abf1e72-94ff-4fd2-ae14-390da02bb6d2",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "75feee2f-d937-4ac0-8e21-c25b8bd1ecd1",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "3c0afbda-4643-4037-8a3a-0dbf61e5e2ad",
+      "result_id": "0b332169-3205-4989-a00e-29561ebd71e9"
+    },
+    {
+      "claim_id": "a165b885-d30c-4ef6-8c67-46ab9fde0e69",
+      "result_id": "24a2692e-1008-435f-8fc7-2d9850d493e3"
+    },
+    {
+      "claim_id": "2f16e233-79cc-4aa4-9f6a-36bbecf3434b",
+      "result_id": "24a2692e-1008-435f-8fc7-2d9850d493e3"
+    },
+    {
+      "claim_id": "63bc7513-bf97-4335-8c36-c274f90e5160",
+      "result_id": "24a2692e-1008-435f-8fc7-2d9850d493e3"
+    },
+    {
+      "claim_id": "9e953dcc-de03-4123-b2e7-012a88322353",
+      "result_id": "24a2692e-1008-435f-8fc7-2d9850d493e3"
+    },
+    {
+      "claim_id": "44fe1535-679c-4324-9d10-f4e1f0326a8e",
+      "result_id": "24a2692e-1008-435f-8fc7-2d9850d493e3"
+    },
+    {
+      "claim_id": "0767f9a4-3818-4edf-a7a1-381f3ceeb317",
+      "result_id": "24a2692e-1008-435f-8fc7-2d9850d493e3"
+    },
+    {
+      "claim_id": "950ee48e-56b0-4728-abbd-4082634e1a8e",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "a0ccb394-a144-442b-95f4-b4327d5ebc7e",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "c3ce4c2c-878a-4fc0-80d3-fa6397f5c79a",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "4614c5e0-5f87-4a6a-9fb9-76a762aeb3d9",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "d82311e6-d85c-4d54-b0a7-30ee5596397f",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "976a5041-45e3-4bd0-8793-12ce02e5be1b",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "9e08e773-1028-4b3a-b77d-6338437e5264",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "13f4051e-944b-4074-a064-df0ae78ea5da",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "cdb2e951-3938-44e5-9e79-8c260e0cd702",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "85f0d273-928c-48e4-97ed-678b05b8fac2",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "ae9a4982-4ecf-4023-b903-802d6147a5cf",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "9f9f9606-7559-49bd-9333-98038e643c8a",
+      "result_id": "6410a411-05e6-4b94-be81-5d21bccc2d6c"
+    },
+    {
+      "claim_id": "c26976ef-1b8e-4dd8-a55f-3ab0b472b335",
+      "result_id": "ea01c104-e4d9-4c11-8eae-1d729ab13911"
+    },
+    {
+      "claim_id": "2d69f1fe-92b8-4fb3-a67f-bd2e5cb2beac",
+      "result_id": "ea01c104-e4d9-4c11-8eae-1d729ab13911"
+    },
+    {
+      "claim_id": "6e5c76c6-7605-4ff2-961a-3fd7f03123c7",
+      "result_id": "ea01c104-e4d9-4c11-8eae-1d729ab13911"
+    },
+    {
+      "claim_id": "20c5b210-ecf4-4b1b-81d5-1d751b1acce1",
+      "result_id": "ea01c104-e4d9-4c11-8eae-1d729ab13911"
+    },
+    {
+      "claim_id": "946a6984-f61b-48f0-96b6-06269ad696c5",
+      "result_id": "ea01c104-e4d9-4c11-8eae-1d729ab13911"
+    },
+    {
+      "claim_id": "58980a1a-64a0-484d-9de9-bd1eb5f9270c",
+      "result_id": "b9e55337-c511-44af-b2f4-1b3dc35ce60e"
+    },
+    {
+      "claim_id": "8af9f8f7-c1be-42a5-b5a2-189f5488a213",
+      "result_id": "b9e55337-c511-44af-b2f4-1b3dc35ce60e"
+    },
+    {
+      "claim_id": "87abebfe-afcf-4650-8414-38aadb323c61",
+      "result_id": "b9e55337-c511-44af-b2f4-1b3dc35ce60e"
+    },
+    {
+      "claim_id": "f96bda7b-3032-4371-ad5d-35f7acd7d5af",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "cde40e21-55d5-4b50-af2a-2eb33745ec91",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "655cd98c-7cba-4f4b-b292-ad254ac9a8ae",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "c451dca0-6316-4795-b580-8eeda450e7f6",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "123376dd-3f9c-40a0-a8a1-8f8661d74ba3",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "2e7f42f9-daa0-4113-a4db-1778e5bb5743",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "b4e94eb4-dc19-4804-97cb-d62c659e31a9",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "54f873dd-3bd8-4541-a465-8f3e5e9ad54e",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "05577a73-42f1-45d6-9f6c-725a64cee4c7",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "5875dc13-c8f6-42b7-89ff-a12ed568ba17",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "76942deb-2a6d-4b8f-ac3e-a9f7defebcc8",
+      "result_id": "1f37612d-3e11-4a03-9b27-920b0596cc1d"
+    },
+    {
+      "claim_id": "7809ee0b-c3ca-4869-a574-7b9c4cf65118",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "78463de2-58d5-4923-8d47-ba78e518645a",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "36e6a793-ae16-4125-958e-8d18c836076f",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "cd647cb3-7f7d-4a34-9609-39e0556bc908",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "580dbcbd-77a6-4512-ae47-ea444abf7b68",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "c73c0d5a-1f89-4d15-abe4-37139f58c713",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "57198207-ce4e-467d-80a2-0848606d826e",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "f4776cda-cf2e-4ec2-8f2c-d38e34b2bc35",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "4590afcc-87f5-44e4-9f02-df6ebe34041d",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "86d29e5c-ac09-4ed5-8988-d0377a27af6b",
+      "result_id": "0c12fe4b-9f6b-47cf-8fa2-326648c2e2f6"
+    },
+    {
+      "claim_id": "95c4ba77-1a6d-4732-a401-831ed265fa3d",
+      "result_id": "f5518142-faa1-47b3-8eb7-74d3b0665064"
+    },
+    {
+      "claim_id": "ef890548-25a2-4824-9f1e-c959a8c7d0e9",
+      "result_id": "f5518142-faa1-47b3-8eb7-74d3b0665064"
+    },
+    {
+      "claim_id": "2668b017-f6ef-47ac-938c-980ac19449ea",
+      "result_id": "f5518142-faa1-47b3-8eb7-74d3b0665064"
+    },
+    {
+      "claim_id": "c13c37ed-5ead-434e-aad1-adfcd94ba2f9",
+      "result_id": "f5518142-faa1-47b3-8eb7-74d3b0665064"
+    },
+    {
+      "claim_id": "c9e838dc-65ca-42f8-966b-3bb767ca57f1",
+      "result_id": "f5518142-faa1-47b3-8eb7-74d3b0665064"
+    },
+    {
+      "claim_id": "f8896609-f0be-4467-83e2-265baeb4282e",
+      "result_id": "f5518142-faa1-47b3-8eb7-74d3b0665064"
+    },
+    {
+      "claim_id": "46d0121f-e42c-4b0e-9f78-f345e38f288d",
+      "result_id": "f5518142-faa1-47b3-8eb7-74d3b0665064"
+    },
+    {
+      "claim_id": "ec60df54-6b7e-4a0f-b910-10bae88e05fb",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "dd31bd26-a834-4065-9c8e-6e7e0f2232e8",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "8c0bf36b-c73c-43bd-9426-611e6edeb2ca",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "e1d2b705-61a6-47df-b2c6-7230098b05dd",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "500f462b-c2a3-4e68-a941-ba40c3bf1b1b",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "eaf6d025-6014-4d51-88cd-4352574fe67a",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "5c10259c-7a9e-43fc-918d-f12d310af8ef",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "3eb4b0f6-d1ca-4c72-aa3a-39276ce29712",
+      "result_id": "bea79779-5402-4a8d-94e3-ebcca5880059"
+    },
+    {
+      "claim_id": "8f283998-153a-4ef1-a8ff-c3e8ca859893",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "b15b6b8b-9d69-487b-ba02-adeb0eab2321",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "7202ba5c-56fd-443f-ac4d-dd93ef7341d1",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "0ee11960-53b4-4b4b-839d-160004bb6392",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "5bbf93fc-e91d-4cb4-a644-c64272e2dacc",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "faaea367-ca98-40e8-b350-5ab477d78d2a",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "9df93517-7bed-480a-b91c-244a2ad6aca4",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "1ff78ba4-0e8c-4d04-b99f-1899bc7ae030",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "b8f66f49-25dc-4dc2-8cc5-48ca0602aaa6",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "355c734c-5394-435f-8b30-f06403b26af6",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "4f28479e-0755-466d-badf-17438eab4814",
+      "result_id": "a790a4c5-64f9-4556-bb42-7d2229c1f4f6"
+    },
+    {
+      "claim_id": "bd0dd9bf-080e-49ba-adb6-d00d6d44d378",
+      "result_id": "b2a7c74f-6412-44ac-a0fa-800bef7a533c"
+    },
+    {
+      "claim_id": "47f9e5da-a66d-4d2f-9ee3-2e357227d5f5",
+      "result_id": "b2a7c74f-6412-44ac-a0fa-800bef7a533c"
+    },
+    {
+      "claim_id": "564a0393-8728-4617-ae8d-0909b3ce14c4",
+      "result_id": "b2a7c74f-6412-44ac-a0fa-800bef7a533c"
+    },
+    {
+      "claim_id": "9b128497-161d-442f-b348-c6d0d9ae95b0",
+      "result_id": "b2a7c74f-6412-44ac-a0fa-800bef7a533c"
+    },
+    {
+      "claim_id": "4d022c9b-9603-408e-aa0c-65513c360a84",
+      "result_id": "b2a7c74f-6412-44ac-a0fa-800bef7a533c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Serial-section electron microscopy (ssEM) generates massive datasets requiring automated, high-throughput volume assembly pipelines. A cubic millimeter of cortical tissue at 4\u00d74\u00d740 nm\u00b3 resolution produces over a petabyte of data with more than 100 million image tiles, necessitating processing at the pace of imaging (tens of terabytes per day) to avoid bottlenecks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11-C13 establish the context and requirements for large-scale EM volume assembly. The quantitative data (C11) is supported by citation, and the processing requirements (C4, C12, C13) follow logically from the data production rates. These claims provide well-supported background for the manuscript's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C40",
+      "C41",
+      "C81"
+    ],
+    "result": "ASAP is a modular, scalable volume assembly pipeline built on Render services that processes petascale datasets through metadata operations. The pipeline includes five stages: lens distortion computation, 2D stitching, global 3D alignment, fine 3D alignment, and volume assembly, using feature-based registration with point correspondences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C22, C26-C28, C40-C41, C81 describe the core architecture and capabilities of ASAP. The design is well-documented with appropriate citations to foundational work (C6, C22, C26). The modular architecture (C8, C41) and metadata-based processing (C7) are clearly described as key features enabling scalability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C24",
+      "C57",
+      "C71",
+      "C83",
+      "C84"
+    ],
+    "result": "ASAP successfully processed multiple petascale datasets at speeds matching or exceeding imaging rates. Mouse dataset 1 (2 PB, 26,500 sections) was processed in ~4 months parallel to imaging, while mouse dataset 3 required only 10 days with pipeline improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C24, C57, C71, C83-C84 demonstrate ASAP's performance on real datasets. The quantitative metrics (processing times, data volumes) are supported by Table 3 and citations. The improvement from 4 months to 10 days for similar-sized datasets (C83-C84) demonstrates pipeline optimization over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C55",
+      "C56",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "ASAP corrects lens distortions using thin plate spline transformations derived from high-overlap calibration montages. Point correspondences are extracted using SIFT with robust filtering via local optimization RANSAC and robust regression, followed by direct least-squares optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33, C55-C56, C102-C106 describe the technical methods for lens correction and point correspondence generation. The methods are well-established (SIFT, RANSAC) with appropriate citations (C31, C102, C103). The calibration protocol (C56) and optimization approach (C104-C106) are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Global 3D alignment uses point correspondences between downsampled sections to compute thin plate spline transformations through progressive rotational, affine, and thin plate spline solves. This global alignment serves as initialization for fine alignment performed outside ASAP using SEAMLeSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C68-C70 describe the 3D alignment approach. The progressive refinement strategy (C35) is clearly explained, and the workflow integration with SEAMLeSS (C37, C69) is documented with citations. The angular residual metric (C68) provides a quality measure for the alignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Aloha is an image transfer service that receives raw images from microscopes, performs lossless compression, generates MIPmaps for faster processing, and stores data to various storage systems including cloud providers and on-premises storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C96-C100 describe the Aloha service architecture and functionality. The technical implementation (C96-C97) and storage flexibility (C99) are clearly documented. The service's role in the data pipeline is well-defined (C42-C43, C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C78",
+      "C79",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Render services provide image transformation, interpolation, and rendering logic backed by MongoDB storage. The point-match service stores point correspondences agnostic to generation method. Render-python replicates Render's data models in Python and is continuously integration tested for compatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C78-C79, C109-C111 describe the Render infrastructure. The architecture (C44-C45) and API design (C46) are clearly documented. The point-match service's algorithm-agnostic design (C48) and render-python's compatibility testing (C111) demonstrate good software engineering practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C113",
+      "C115"
+    ],
+    "result": "BigFeta is a matrix-based registration system that computes image transformations from point correspondences, supporting various transformation types (rigid, affine, thin plate spline) with per-tile regularization control. It integrates with distributed solvers like PETSc for large-scale problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C113, C115 describe BigFeta's capabilities. The transformation types (C50) and scalability features (C51) are documented with appropriate citations. The regularization control (C113) and its impact on quality metrics (C115) are clearly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C61",
+      "C62",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "BlueSky is a workflow manager developed in Django/PostgreSQL that automates volume assembly processing. It uses Celery/RabbitMQ for distributed task execution across diverse computing environments and supports flexible workflow specification in YAML, JSON, or Django formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C61-C62, C132-C135 describe BlueSky's architecture and capabilities. The technical implementation (C61, C132) and workflow flexibility (C62) are clearly documented. The computational resources used (C134-C135) provide context for the processing performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C114",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "ASAP achieved median residuals <5 pixels (20 nm) for all datasets, meeting requirements for 3D segmentation. Quality is assessed using residual and MAD metrics. Parameter optimization is sometimes necessary for different imaging conditions, with relaxed criteria applied to problematic sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C114, C116-C117, C119-C120 describe quality assessment and parameter optimization. The target accuracy (C64) is justified by biological considerations (spine neck diameter). The handling of problematic sections (C65-C66, C119-C120) demonstrates practical problem-solving, though the inference about lens distortion models (C120) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "ASAP supports multi-channel processing and can be applied to array tomography datasets. The pipeline handles registration between multiple light microscopy rounds and co-registration with EM data, producing multimodal representations visualizable through Neuroglancer integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C75-C80, C136-C141 demonstrate ASAP's applicability beyond EM. The array tomography workflow (C136-C141) is described in detail, including manual correspondence identification (C139-C140). The multimodal visualization capability (C80) is illustrated in Figure 8. However, the manual registration process (C136, C139) limits automation compared to the EM workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C101",
+      "C107",
+      "C108"
+    ],
+    "result": "The pipeline operates on metadata (point correspondences and transformations) rather than image data, enabling efficient petascale processing. Downsampled MIPmaps are used where possible to increase processing speed and reduce disk usage. Point correspondences are stored in a database for reuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C101, C107-C108 describe key design features enabling scalability. The metadata-based approach (C53) and use of MIPmaps (C54) are clearly explained as optimization strategies. The database storage of point correspondences (C107-C108) avoids redundant computation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C82"
+    ],
+    "result": "ASAP's throughput makes it suitable for processing exascale datasets spanning larger cortical areas across species. The pipeline can be adapted to other imaging domains sharing basic assumptions. Future improvements could include GPU-based algorithms for increased throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86, C82 make forward-looking statements about ASAP's applicability. While the demonstrated performance (C85) supports scalability claims, the actual processing of exascale datasets is not demonstrated. The generalizability claim (C86) is reasonable but speculative. The GPU integration suggestion (C82) is explicitly identified as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The volume assembly process assumes overlapping tile images within sections. Images are registered using points of interest extracted from overlapping regions, and raw tiles must be corrected for lens distortion effects from the acquisition system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe fundamental assumptions and requirements of the method. These are standard practices in image stitching and are illustrated in Figure 1. The assumptions are reasonable and well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Existing volume assembly tools (Fourier transformation methods, TrakEM2, AlignTK, Vescovi pipeline) have been successfully used for smaller datasets but do not scale well for large-scale datasets, lack support for different geometric transformations, or do not incorporate reliable filters for false matches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide context about prior work. The citations (C17-C20) support the descriptions of existing tools. The critical assessment (C21) is supported by citation and provides motivation for ASAP's development, though the specific limitations could be more thoroughly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Mouse samples were collected under IACUC approval (protocols 1503, 1801, 1808) and housed under standard conditions. Human samples were collected under IRB approval (protocol SNI 0405) with informed consent. Samples were prepared using rOTO staining protocol and sectioned at 40-45 nm thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 describe ethical compliance and sample preparation methods. The ethical approvals (C87, C89-C90) are properly documented. The sample preparation methods (C92-C95) are standard protocols with appropriate citations (C92). These claims provide necessary methodological details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "ASAP supports flexible 3D alignment strategies including chunk-based approaches and realignment of dataset subsets while maintaining global alignment. The asap.fusion package provides utilities for registering and fusing overlapping 3D aligned chunks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C121-C126 describe advanced features for handling large datasets. The chunk-based approach (C38, C124-C126) and realignment capabilities (C121-C123) demonstrate flexibility. However, the manuscript notes that all presented datasets were aligned as single chunks (C38), so these features are not fully demonstrated in practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Alignment produces tile metadata that can be materialized into various output formats including n5, CATMAID, and Neuroglancer precomputed format. Custom output formats can be implemented using render-python. Datasets were materialized to Neuroglancer format for SEAMLeSS processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 describe the materialization process and output formats. The supported formats (C129) are documented with citations. The extensibility (C130) and specific workflow used (C131) are clearly described. This demonstrates practical integration with downstream processing tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Single montages are ~80 GB, producing 3.6 TB/day per microscope in continuous imaging. Processing times include manual QC (roughly a few minutes per section, not quantified). Acquisition times represent five parallel ssTEMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C72-C74 provide quantitative details about data production and processing. The data rates (C59) are clearly stated. The clarifications about acquisition times (C72) and QC inclusion (C73-C74) are important for interpreting Table 3, though the lack of quantified QC times (C74) limits reproducibility assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C37",
+      "C69"
+    ],
+    "result": "ASAP integrates with SEAMLeSS for fine 3D alignment. For all presented datasets, ASAP performed 2D stitching and global alignment, then data was materialized and transferred to SEAMLeSS for fine alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C37, C69 describe the workflow integration with SEAMLeSS. The division of labor between ASAP (global alignment) and SEAMLeSS (fine alignment) is clearly documented with citations. This demonstrates practical integration in a production pipeline, though it means ASAP alone does not produce final aligned volumes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "ASAP modules use argschema for input/output validation, an extension of marshmallow that allows marshaling of command-line arguments and input files.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 describes a technical implementation detail. The use of argschema for data validation is a good software engineering practice that supports the modularity and usability of ASAP.",
+    "result_type": "MINOR"
+  }
+]

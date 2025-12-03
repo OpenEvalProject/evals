@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study profiled 34,590 cells from young donors (n=5, median age 20 years) and 40,641 cells from elderly donors (n=3, median age 72 years) using single-cell RNA sequencing at an average depth of 30,000 reads per cell. The study received ethical approval and informed consent was obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C54-C58 provide explicit methodological details about sample collection, cell numbers, sequencing depth, and ethical approval. These are straightforward descriptive claims that are well-documented in the manuscript with appropriate detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Fourteen cellular subpopulations were identified in young donors, including HSCs, early progenitors (MEPs, LMPPs, CLPs, GMPs), and lineage-committed cells. These populations were characterized by specific marker genes including CRHBP, HOPX, and PBX1 for early progenitors, and lineage-specific markers for myeloid (MPO, CTSG, PRTN3, LYZ, IRF8), lymphoid (DNTT, VPREB1, EBF1), erythroid (HBD, CA1), and basophil (HDC, MS4A2) compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 describe the identification and characterization of cellular subpopulations using established marker genes. The manuscript provides explicit evidence through clustering analysis and marker gene expression (Figure 1B-C), which is a standard approach in single-cell analysis. The markers used are well-established in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Elderly individuals showed a significant increase in HSC proportion, reduction in committed lymphoid and myeloid lineages, and increase in erythroid-committed cells compared to young individuals (adjusted p-value <0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 report statistically significant compositional changes with appropriate statistical testing (adjusted p-value <0.05). The findings are supported by both computational classification (GLMnet) and orthogonal validation by FACS for HSCs (Figure 1\u2014figure supplement 3), though FACS showed less obvious changes for GMPs and MEPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C80"
+    ],
+    "result": "Elderly donor cells exhibited enrichment of stress response pathways including TNF-\u03b1, TGF-\u03b2, hypoxia, inflammation, p53 pathway, and apoptosis programs, particularly in HSCs. This suggests an aging-related response to the inflammatory microenvironment present in elderly individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 and C80 describe pathway enrichment results from GSEA analysis with supporting citation (C80). The enrichment patterns are consistent with known aging biology and the inflammatory microenvironment in elderly individuals. The analysis methodology (GSEA) is appropriate and the interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Young donor progenitors showed increased metabolic activity (glycolysis, fatty acid metabolism, oxidative phosphorylation), enriched cell cycle progression (E2F targets) and proliferation (MYC targets) pathways, and more active DNA repair. MYC downregulation in elderly cells suggests decreased proliferative activity, consistent with predisposition to accumulate genetic lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 and C81-C83 describe functional differences between young and elderly cells based on GSEA and gene expression analysis. The findings are internally consistent and supported by cited literature (C83). The inference of increased metabolic activity and decreased proliferation in elderly cells is reasonable given the pathway enrichment data, though direct functional validation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C85"
+    ],
+    "result": "Trajectory inference using STREAM and Palantir showed strong correlation (r=0.78) between methods. Aging-associated HSPCs accumulated greater differentiation potential and lower pseudotime, suggesting an immature cell state consistent with other analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C85 demonstrate methodological validation through comparison of two independent trajectory inference methods with strong correlation. The finding of greater differentiation potential and lower pseudotime in elderly HSPCs is statistically significant and consistent with the compositional changes observed. The inference of immature state is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C79",
+      "C84"
+    ],
+    "result": "Trajectory analysis of monocytic differentiation revealed that elderly HSCs and LMPPs had higher probability of monocyte progenitor state, but GMPs showed opposite behavior with loss of monocytic differentiation capacity. This was accompanied by lower expression of myeloid differentiation markers (CST7, PRTN3, MPO, CD74, CALR, GNAS) and higher expression of stem cell markers (MYCT1, MLLT3, ALDH1A1) and stress/inflammation genes (FOS, JUNB, TSC22D3, DUSP1, DDIT4) in elderly donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26, C79, and C84 describe trajectory-specific alterations in monocytic differentiation during aging. The findings are internally consistent, showing increased early bias but loss of later differentiation capacity. The gene expression patterns support the interpretation of less differentiated state. The consistency between trajectory analysis and compositional changes (C79) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C89",
+      "C90"
+    ],
+    "result": "Gene ontology analysis revealed that young HSCs showed enrichment of hematopoietic differentiation terms (myeloid cell differentiation, lymphocyte cell differentiation, regulation of hematopoiesis) that were absent in elderly HSCs, suggesting altered differentiation potential. Elderly LMPPs showed enrichment of DNA replication terms, suggesting altered proliferative rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C89, and C90 describe functional enrichment differences based on gene ontology analysis of regulon targets. The absence of differentiation-related enrichment in elderly HSCs is consistent with other findings of impaired differentiation. The DNA replication enrichment in elderly LMPPs suggests altered proliferation, though the manuscript notes no change in LMPP proportion, indicating complexity in the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A GLMnet-based classifier was developed and validated, showing superior performance to Seurat for classifying HSPCs. GLMnet correctly classified 83.31% of LMPPs compared to 57.91% by Seurat, and showed lower misclassification of HSCs as MEPs (12% vs 38%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe the development and benchmarking of a classification method with explicit performance metrics. The comparison to Seurat using an external dataset (Granja et al., 2019) provides appropriate validation. The citation support (C60) for using regularized logistic regression with scRNA-seq data strengthens the methodological choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of 41,749 MDS patient cells revealed absence of lymphoid compartments, considerable reduction in HSCs, and increase in LMPPs and GMPs compared to healthy elderly individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe compositional changes in MDS samples compared to healthy elderly controls. The findings are explicitly stated and consistent with known MDS pathology. However, the small sample size (n=4 MDS patients) and focus on one MDS subtype (multilineage dysplasia) limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C74",
+      "C75",
+      "C91",
+      "C92"
+    ],
+    "result": "MDS patients showed enrichment of interferon alpha/gamma response (particularly MDS1 and MDS2), oxidative phosphorylation genes, and altered cell proliferation hallmarks (E2F targets, mitotic spindle, G2/M checkpoint), suggesting aberrant proliferative activity. These findings are consistent with previous reports of increased inflammatory signaling in MDS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C74-C75, C91-C92 describe pathway alterations in MDS with appropriate citation support for inflammatory signaling (C74, C91) and oxidative phosphorylation as cancer target (C75). The GSEA analysis is appropriate, though the manuscript notes variability when using young vs elderly controls, highlighting importance of age-matched comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C93",
+      "C94"
+    ],
+    "result": "Trajectory analysis of erythroid differentiation in MDS revealed altered dynamics of specific genes: increased expression of negative regulators (JUN, YBX1, NME4) and decreased expression of positive regulators (TRIB2, PHF6, PDCD4, PVT1). TRIB2 showed aberrant dynamics in all MDS patients. Despite these changes, some erythroid markers (ANK1, CA2, AHSP) followed normal trends, suggesting early alterations may manifest later as erythroid dysplasia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C93-C94 describe gene expression dynamics along erythroid trajectory with appropriate citation support for gene functions. The finding that TRIB2 is altered in all patients while others show patient-specific patterns demonstrates disease heterogeneity. The inference that early alterations lead to later dysplasia (C94) is reasonable but speculative without direct validation of causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C86",
+      "C87",
+      "C88",
+      "C95"
+    ],
+    "result": "GRN analysis identified patient-specific regulons active in MDS but not in healthy samples: SMAD1 (MDS1), ATF3 and HOXA6 (MDS2), POU2F2, NR4A1, and HMG20B (MDS3), YEATS4, E2F1, and RUNX1 (MDS4). These transcription factors have known roles in hematopoietic differentiation or myeloid malignancies, suggesting aberrant regulon activity could drive myelodysplastic phenotype. The heterogeneity demonstrates disease complexity at the GRN level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C53, C86-C88, C95 describe patient-specific GRN alterations with appropriate citation support for TF functions (C45-C46, C50-C51) and some knowledge-based claims (C47-C49, C52-C53). The SCENIC analysis identifies regulons not present in healthy samples, though the method can produce false positives. The inference of causal role (C88) is speculative without functional validation, but the pattern is consistent with known biology of these factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study employed standard computational methods (2000 most variable genes, variance stabilizing transformation) and contextualized findings within established aging biology literature, including increased HSC numbers, decreased bone marrow cellularity, loss of lymphocyte production, myeloid skewing, increased platelet-primed HSCs, loss of immune function, clonal hematopoiesis, transcriptional changes, epigenetic modifications, and association with myeloid malignancies including MDS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C63-C73 provide methodological details and literature context with appropriate citations. These claims establish the study within the existing knowledge framework and justify the research questions. The citations support the stated prior knowledge about aging-related hematopoietic changes and MDS characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C96"
+    ],
+    "result": "The study demonstrates that combining single-cell technologies with computational analysis enables study of cellular mechanisms in complex biological systems like hematopoiesis and can dissect perturbed differentiation trajectories in aging and malignant transformation. The methodology could be translated to other biological systems, and identified regulatory mechanisms could be exploited for personalized therapeutic approaches. The study represents one of the first analyses describing early human hematopoiesis based on dynamic gene expression and transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 and C96 represent broad conclusions and future applications. While C76 is supported by the presented analyses, C77-C78 are speculative about future therapeutic applications without validation. C96 claims novelty with appropriate citations to distinguish from prior work in other species or data types, though the claim of being 'one of the first' is difficult to verify definitively. The conclusions are reasonable given the data but require future work for full validation.",
+    "result_type": "MAJOR"
+  }
+]

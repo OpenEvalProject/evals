@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C46",
+      "C51",
+      "C52"
+    ],
+    "result": "CIC and ERF are frequently co-deleted in prostate cancer (~10-12% of patients) through focal genomic deletions at chromosome 19q13.2. This co-deletion is enriched in metastatic castrate-resistant prostate cancer, associates with higher Gleason scores and later tumor stages, defines a distinct molecular subtype, and correlates with significantly worse disease-free survival (p=0.001) and progression-free survival (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide converging evidence from multiple independent datasets (15 PCa studies) with appropriate statistical tests (Fisher's exact test, log-rank test) and specific p-values. The clustering analysis (C9) and survival data (C10) with event counts support the clinical significance. However, the authors acknowledge potential overlap between datasets, which could inflate significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C53"
+    ],
+    "result": "Dual genetic inactivation of CIC and ERF in PNT2 prostate epithelial cells increases colony formation, spheroid formation, cellular viability, invasiveness, migratory capacity, and frequency of subcutaneous tumor xenograft formation compared to single gene loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by multiple complementary in vitro assays (colony formation, spheroid, viability, invasion, migration) and in vivo xenograft data with appropriate replicates (n=3-6 for in vitro, n=10 for in vivo). Statistical significance is reported with p-values. The data consistently demonstrate cooperative effects of dual loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In prostate cancer cell lines with endogenous CIC or ERF deficiency (DU-145 and PC-3), genetic reconstitution or overexpression of the missing factor suppresses malignant phenotypes including colony formation, viability, invasion, migration, and tumor growth in xenografts. ERF expression can partially rescue CIC-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 utilize complementary cell line models (DU-145: ERF-deficient, CIC-proficient; PC-3: CIC-deficient, ERF-proficient) with appropriate genetic manipulations. Multiple phenotypic assays and in vivo xenograft experiments (n=10 mice) consistently demonstrate rescue effects. The data support functional cooperation between CIC and ERF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ChIP-Seq analysis identified 178 high-confidence CIC peaks mapping to 130 genes and 91 shared CIC-ERF target genes. CIC and ERF peaks show similar genomic distributions (promoters, UTRs, introns, distal intergenic regions). PEA3 family transcription factors (ETV1, ETV4, ETV5) are the most highly enriched among shared targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by ChIP-Seq data with appropriate FDR threshold (\u22640.05) and functional clustering analysis using DAVID. However, a limitation is that CIC ChIP-Seq was performed in PNT2 cells while ERF ChIP-Seq data came from a different cell line (VCaP) and prior publication, which may affect the validity of direct comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "CIC and ERF independently bind to the proximal ETV1 regulatory element and mutually repress ETV1 expression. CIC loss increases ETV1, ETV4, and ETV5 levels, while ERF loss specifically increases ETV1 but not ETV4 or ETV5. CIC and ERF do not physically interact based on co-immunoprecipitation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by multiple complementary approaches: qRT-PCR (n=3), ChIP-PCR, luciferase promoter assays (n=6), and Co-IP experiments. The data consistently demonstrate independent binding and ETV1-specific regulation by ERF. The negative Co-IP result (C29) appropriately rules out direct protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C57"
+    ],
+    "result": "Dual CIC and ERF deficiency is significantly associated with the ETV1-regulated gene set (IC=0.619, p=0.0009) but anti-correlated with the TMPRSS2-ERG fusion signature (IC=-0.45, p=0.0009), suggesting that dual suppression increases ETV1-mediated transcriptional programs in prostate cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by ssGSEA analysis with specific information coefficients and p-values. The analysis appropriately uses TCGA-PRAD dataset and established gene signatures. The anti-correlation with ERG fusion signature supports a distinct mechanism of ETS activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C48",
+      "C58",
+      "C67"
+    ],
+    "result": "ETV1 inhibition (pharmacologic with BRD32048 or genetic with siRNA) decreases viability and invasiveness in CIC and ERF-deficient prostate cancer cells, suggesting that CIC-ERF co-deleted tumors may be sensitive to ETV1-directed therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C39 show modest effects of ETV1 inhibition with appropriate controls and replicates. However, C36 notes 'unexpectedly' mild enhancement and C58/C67 use cautious language ('can potentially modulate', 'may potentially benefit'). The lack of in vivo validation of ETV1 inhibitor efficacy and the acknowledged limitation (C68) that ETV1 transcript levels are not significantly different in patient tumors weakens the therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C49",
+      "C50",
+      "C60",
+      "C61"
+    ],
+    "result": "Background claims establishing that CIC and ERF are tumor suppressors frequently altered in cancer, that ETS transcription factors are activated in ~60% of prostate cancers predominantly through TMPRSS2 fusions, and that fusion-independent ETS upregulation associates with poor outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C40-C44, C49-C50, C60-C61 are appropriately supported by multiple citations to prior literature. These establish the scientific context and are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CIC and ERF are physically adjacent genes (~15-30 kb apart) on chromosome 19q13.2. CIC-ERF co-deletion represents a new molecular subclass of prostate cancer and also occurs in stomach adenocarcinoma, suggesting this may be an alternative mode to de-repress ETS programs in cancers dependent on PEA3 transcriptional dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by genomic data. Claims C62-C66 represent interpretive conclusions supported by the clustering analysis (C9) and citations to prior work in stomach cancer. The speculation about mechanism (C65-C66) is appropriately qualified and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C59"
+    ],
+    "result": "CIC and ERF co-bind the proximal regulatory element and mutually repress ETV1, cooperating to silence ETV1 transcriptional programs and limit ETV1-mediated prostate cancer progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C59 represent the central mechanistic conclusion of the manuscript, synthesizing results from ChIP-Seq (C22-C26), binding studies (C30), expression analyses (C27-C32), functional assays (C11-C21), and gene set enrichment (C34-C35). The conclusion is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "There is no statistically significant difference in ETV1 transcript levels between CIC-ERF co-deleted and CIC-ERF replete tumors in the TCGA-PRAD dataset (n=455), potentially because ETV1 is commonly upregulated through mechanisms beyond CIC-ERF loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 appropriately acknowledge a significant limitation of the study. The authors transparently report negative findings in patient samples that contrast with their cell line results. The proposed explanation (C69) is speculative but reasonable.",
+    "result_type": "MINOR"
+  }
+]

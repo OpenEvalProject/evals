@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C46",
+      "C48"
+    ],
+    "result": "p53 silencing in unstressed cells increases cell death, cell fusion, and multipolar cell division, leading to aneuploid progeny formation. This suggests that low levels of p53 suppress these events under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C46, and C48 provide consistent experimental evidence from single-cell tracking showing increased frequencies of cell death, fusion, and multipolar division in p53 RNAi cells. Claim C14 appropriately infers the suppressive role of basal p53 from these observations. The data are internally consistent and statistically supported (Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25"
+    ],
+    "result": "Multipolar cell division predominantly follows cell fusion (79-93%), with fusion occurring preferentially between sibling cells. p53 silencing increases the absolute number of surviving aneuploid progeny 10-fold despite similar survival percentages (3.2-3.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 document the sequence of events leading to multipolar division with specific percentages from lineage tracing. Claims C24-C25 quantify survival rates and demonstrate that increased frequency, not survival rate, drives aneuploid accumulation. The mechanistic sequence is well-documented through single-cell tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C45"
+    ],
+    "result": "Cell death in p53 RNAi cells reduces population expansion by 7.4%, and single-cell tracking reveals significantly slower expansion of p53 RNAi populations compared to Control cells, which is masked in conventional cell counting assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 quantifies the impact of cell death through in silico removal experiments. Claim C45 demonstrates the superior resolution of single-cell tracking over conventional methods (C44). The 7.4% reduction is modest but statistically supported and mechanistically linked to increased cell death frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C32"
+    ],
+    "result": "Cell-fate simulations predict that aneuploid cells from p53 RNAi populations can propagate, but p53 RNAi cells are outcompeted by Control cells in mixed populations (4% declining to 2.4% over 20,000 min) due to increased cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C32 present simulation results that are validated against empirical data (C27: 8% variation). Claim C16 explains the competitive disadvantage mechanistically. The simulation extends beyond experimental limits but is grounded in validated parameters from single-cell tracking data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C33",
+      "C34",
+      "C18"
+    ],
+    "result": "Under DNA damage conditions (MNNG exposure), Control cell expansion is suppressed while p53 RNAi cells gain a competitive advantage, with repeated 7 \u00b5M MNNG exposure leading to 93% p53 RNAi cell dominance. This suggests p53 has dual roles in tumor suppression and promotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C33, and C34 provide simulation-based evidence for context-dependent competitive dynamics. Claim C18 synthesizes these findings into the dual-role hypothesis. While based on simulation, the predictions are grounded in empirically validated parameters (C27, C28-C29) and align with known p53 biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Simulation-based decomposition of MNNG effects estimates that 63% of growth inhibition results from DNA breaks and 37% from p53 accumulation at 7 \u00b5M MNNG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29 present a quantitative decomposition based on comparing Control and p53 RNAi responses to MNNG. However, this assumes that p53 RNAi cells completely lack p53-mediated responses and that the two mechanisms are additive. The 70% knockdown efficiency (C42) and potential indirect effects create uncertainty in these specific percentages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C52",
+      "C55"
+    ],
+    "result": "The cell-fate simulation algorithm reproduces empirical single-cell tracking results within 8% variation when using >1000 progenitors, though it systematically underestimates cell doubling time by ~2 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C52, and C55 provide validation metrics for the simulation approach. The 8% variation (C27) and <2% variation with >1000 progenitors (C55) demonstrate good agreement. The systematic 2-hour bias in doubling time (C52) is acknowledged and may reflect sampling limitations in rare events or actual population characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "siRNA treatment achieved ~70% reduction in p53 levels at 48 hours, and 7 \u00b5M MNNG treatment induced 5.8-fold p53 accumulation in Control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide essential validation of the experimental system through Western blotting. The 70% knockdown is substantial but incomplete, which should be considered when interpreting results. The 5.8-fold induction confirms MNNG's ability to stabilize p53 as expected from prior literature (C11).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Conventional cell counting detected no significant difference between Control and p53 RNAi expansion rates, while single-cell tracking revealed significantly slower p53 RNAi expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 demonstrate the superior sensitivity of single-cell tracking (10 min intervals) versus conventional counting (1000 min intervals). This methodological comparison validates the approach and explains why subtle phenotypes might be missed by standard assays. The statistical significance in C45 but not C44 supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "MNNG treatment reduces the increased multipolar cell division and cell death events caused by p53 silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 documents a dose-dependent suppression of p53 silencing phenotypes by MNNG, supported by Figure 4. This counterintuitive finding suggests that DNA damage responses can override some effects of p53 loss, though the mechanism is not fully explained. The observation is well-documented but represents a secondary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Quantitative event probabilities differ substantially between Control and p53 RNAi cells: multipolar division (0.001 vs 0.014), cell death (0.004 vs 0.037), and cell fusion (0.004 vs 0.023) per 100 lineages per time point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide precise quantification of event frequencies that form the basis for simulation parameters. These probabilities show 3.5-14-fold increases in rare events with p53 silencing. The measurements are derived from comprehensive single-cell tracking (335 lineages, C53) and are internally consistent with other reported frequencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Extended simulation (20,000 min) shows no reproductive multipolar division progeny in Control cells but 0.72% in p53 RNAi populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 extend observations beyond experimental limits using validated simulation. The 0.72% frequency in p53 RNAi cells represents a small but potentially significant aneuploid subpopulation. This prediction is consistent with the 10-fold increase in surviving progeny (C25) and provides quantitative estimates for long-term consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "MNNG treatment dose-dependently increases average cell doubling time from 31.23 to 41.85 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 documents the expected cytotoxic effect of MNNG on cell cycle progression. This dose-response relationship is well-established for DNA damaging agents and serves as a validation of the experimental system. The measurements are consistent with known MNNG biology (C8-C10).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Methodological validation shows that >240 cell lineages provide reproducible analysis, and siRNA transfection efficiency peaks at 3750 min (62.5 hours) post-transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide important methodological parameters. The 240-lineage threshold (C53) ensures statistical robustness, and the transfection kinetics (C54) justify the timing of MNNG treatment and tracking initiation. These are essential quality control measures that support the reliability of subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background on p53 function: p53 is mutated in >50% of cancers and acts as a tumor suppressor through stress-responsive increases that trigger cell cycle arrest, senescence, and death. Low p53 levels are maintained by Mdm2-mediated degradation and may have functional roles in stress response and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 summarize well-established p53 biology from cited literature. These provide necessary context for the study but represent prior knowledge rather than new findings. The citations are appropriate and the characterizations are accurate based on the referenced work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background on MNNG: MNNG generates methylated DNA bases including O6-methylguanine (mutagenic, repaired by MGMT) and 7-methylguanine (cytotoxic, repaired by BER), and can increase cellular p53 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 accurately describe MNNG's mechanism of action based on cited literature. This background is essential for interpreting the experimental design and results. The characterization of MNNG's dual effects (mutagenic and cytotoxic) is well-established in the DNA damage field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background on p53 and aneuploidy: p53 loss causes tetraploidy in mouse fibroblasts, and aneuploidy is nearly universal in human cancers, involved in tumorigenesis, and associated with impaired p53 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 establish the connection between p53 loss and chromosomal instability from prior literature. These observations motivate the study's focus on multipolar division and aneuploid formation. The citations are appropriate and the relationships are well-documented in cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C23"
+    ],
+    "result": "Background on multipolar division: Multipolar cell division occurs at 1-10% frequency in cultured cell lines, and persistent intercellular links after bipolar division can lead to cell fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C23 provide context for the observed multipolar division frequencies and potential mechanisms of sibling cell fusion. These are established observations from prior work that help interpret the current findings, particularly the high frequency of fusion between siblings (C22).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Methodological details: A549 cells were cultured in RPMI with 10% FBS and 5% CO2, with images acquired every 10 minutes using near-infrared DIC to minimize phototoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe standard cell culture and imaging methods. These are appropriate techniques for long-term live-cell imaging. The use of near-infrared DIC (C41) is a thoughtful choice to minimize phototoxicity during extended imaging periods, which is critical for accurate cell fate tracking.",
+    "result_type": "MINOR"
+  }
+]

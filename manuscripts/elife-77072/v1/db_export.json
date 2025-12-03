@@ -1,0 +1,1339 @@
+{
+  "submission": {
+    "id": "4508f738-8380-4098-8c38-615af8627dcc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:13:33.160509Z",
+    "updated_at": "2025-12-03T17:13:33.160509Z"
+  },
+  "content": [
+    {
+      "id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "submission_id": "4508f738-8380-4098-8c38-615af8627dcc",
+      "content_type": "manuscript",
+      "content_text": "# The CIC-ERF co-deletion underlies fusion-independent activation of ETS family member, ETV1, to drive prostate cancer progression\n\n## Authors\n\n- Nehal Gupta<sup>1</sup> ([ORCID: 0000-0002-8931-5759](https://orcid.org/0000-0002-8931-5759))\n- Hanbing Song<sup>1</sup>\n- Wei Wu<sup>1</sup>\n- Rovingaile K Ponce<sup>1</sup>\n- Yone K Lin<sup>1</sup>\n- Ji Won Kim<sup>1</sup>\n- Eric J Small<sup>1</sup>\n- Felix Y Feng<sup>1</sup>\n- Franklin W Huang<sup>1</sup> ([ORCID: 0000-0001-5447-0436](https://orcid.org/0000-0001-5447-0436)) \u2020\n- Ross A Okimoto<sup>1</sup> ([ORCID: 0000-0002-4467-8476](https://orcid.org/0000-0002-4467-8476)) \u2020\n\n### Affiliations\n\n1. Department of Medicine, University of California San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Helen Diller Family Comprehensive Cancer Center, University of California San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n3. Department of Radiation Oncology, University of California San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman prostate cancer can result from chromosomal rearrangements that lead to aberrant ETS gene expression. The mechanisms that lead to fusion-independent ETS factor upregulation and prostate oncogenesis remain relatively unknown. Here, we show that two neighboring transcription factors, Capicua (CIC) and ETS2 repressor factor (ERF), which are co-deleted in human prostate tumors can drive prostate oncogenesis. Concurrent CIC and ERF loss commonly occur through focal genomic deletions at chromosome 19q13.2. Mechanistically, CIC and ERF co-bind the proximal regulatory element and mutually repress the ETS transcription factor, ETV1. Targeting ETV1 in CIC and ERF-deficient prostate cancer limits tumor growth. Thus, we have uncovered a fusion-independent mode of ETS transcriptional activation defined by concurrent loss of CIC and ERF.\n\n## Introduction\n\nProstate cancer (PCa) is the most common solid tumor malignancy in men. Activation of ETS transcription factors (TFs), ERG, ETV1, ETV4, and ETV5, are present in approximately 60% of PCa, underscoring their importance in prostate oncogenesis (Nelson et al., 2003). In human PCa, ETS TFs are most commonly activated through gene rearrangements that fuse the androgen responsive gene, TMPRSS2, to either ERG, ETV1, ETV4, or ETV5 (Sizemore et al., 2017). Beyond ETS TF fusions, little is known about the underlying molecular mechanisms that lead to increased expression of wildtype (WT) ETS factors, which confer aggressive malignant phenotypes and associate with poor clinical outcomes in fusion negative PCa patients (Baena et al., 2013).\n\nCapicua (CIC) is a High-mobility group (HMG) box TF that silences ETV1, ETV4, and ETV5 through direct target gene repression (Kim et al., 2021; Sim\u00f3n-Carrasco et al., 2018). CIC is frequently altered in human cancer, where it functionally suppresses tumor growth and metastasis (Ahmad et al., 2019; Bettegowda et al., 2011; Choi et al., 2015; Dissanayake et al., 2011; Kim et al., 2018; Okimoto et al., 2017; Seim et al., 2017; Yoshiya et al., 2021). Notably, in PCa, CIC is commonly altered through genomic loss (homozygous and heterozygous deletion) in ~10% of PCa patients (Abida et al., 2019; Grasso et al., 2012; Hieronymus et al., 2014; Huang et al., 2017; Robinson et al., 2015; Cancer Genome Atlas Research Network, 2015) and inactivation of CIC de-represses ETV1, ETV4, and ETV5 transcription to promote tumor progression (Bettegowda et al., 2011; Choi et al., 2015; Kim et al., 2018; Okimoto et al., 2017). Leveraging mutational profiling data from multiple PCa cohorts, we previously observed concurrent loss of the ETS2 repressor factor (ERF) in CIC-deficient prostate tumors (Huang et al., 2017). Combinatorial loss is most commonly the result of focal deletions (homozygous and heterozygous) at the 19q13.2 locus, where CIC and ERF are physically adjacent (long and short isoforms of CIC are separated from ERF by approximately 15 and 30 kb, respectively) to one another in the genome. Since ERF is a transcriptional repressor that binds ETS DNA motifs (Bose et al., 2017), we hypothesized that in a fusion independent manner, CIC and ERF cooperate to mutually suppress ETS target genes in PCa.\n\nThrough an integrative genomic and functional analysis, we mechanistically show that CIC and ERF directly bind and co-repress a proximal ETV1 regulatory element limiting PCa progression. Concomitant loss of CIC and ERF de-represses ETV1-mediated transcriptional programs and confer ETV1 dependence in multiple PCa model systems. Thus, we reveal a fusion-independent mechanism to de-repress ETS-mediated PCa progression and potentially uncover a therapeutic approach to target CIC-ERF co-deleted PCa.\n\n## Results\n\nCIC is a TF that directly suppresses ETV1, ETV4, and ETV5 TF family members (Futran et al., 2015; Jim\u00e9nez et al., 2012; Kim et al., 2021; Okimoto et al., 2017). CIC silences target genes through direct binding of a highly conserved DNA-binding motif (T[G/C]AAT[G/A]AA; Figure 1A; Ajuria et al., 2011; Futran et al., 2015; Jim\u00e9nez et al., 2012). CIC is commonly altered in multiple human cancer subtypes where it suppresses tumor growth and metastasis (Kim et al., 2021). CIC is located on chromosome 19q13.2, directly adjacent to another transcriptional repressor, namely the ERF (Figure 1B). ERF binds and competes for ETS TF-binding sites (GGAA-motifs) and is frequently altered in human PCa, predominantly through focal deletions (Bose et al., 2017; Hou et al., 2020). We thus hypothesized that concurrent loss of CIC and ERF may de-repress an ETS-driven transcriptional program that drives PCa progression in a fusion-independent manner. To explore this, we first queried 15 PCa datasets curated on cBioPortal (Cerami et al., 2012; Gao et al., 2013) and identified a high cooccurrence rate (p<0.001, two-sided Fisher\u2019s exact test [FET]) for CIC (10%) and ERF (12%) homozygous and heterozygous deletions (Figure 1C), suggesting that concurrent loss occurs through focal copy number change at the 19q13.2 locus. Through analysis of these clinically annotated specimens, we observed that the CIC-ERF co-deletion was present at an increased frequency in PCa with higher Gleason scores and later tumor stages when compared to CIC-ERF replete tumors (Figure 1D). In order to understand the association between CIC and/or ERF alterations in specific PCa cohorts, we stratified published datasets to identify patients that represent primary PCa (Fraser et al., 2017; Hieronymus et al., 2014; \u2018 Cancer Genome Atlas Research Network, 2015) (PNAS 2014, n=272; Cell 2015, n=333; Nature 2017, n=477 primary PCas) and metastatic castrate resistant prostate cancer (mCRPC) (Abida et al., 2019; Grasso et al., 2012; Robinson et al., 2015) (Nature 2012, n=50; Cell 2015, n=150; PNAS 2019, n=429 mCRPCs). This analysis revealed enrichment of CIC and ERF alterations including the CIC-ERF co-deletion in mCRPC samples (Figure 1E, Figure 1\u2014source data 1, Figure 1\u2014figure supplement 1). Importantly, CIC-ERF co-deleted tumors clustered as a subgroup when compared to the more well-characterized molecular subsets including ERG, ETV1, ETV4, SPOP, and FOXA1 altered PCas, suggesting a distinct molecular subtype of PCa (Figure 1F). In order to explore clinical outcomes of patients harboring CIC-ERF co-deleted tumors, we performed a survival analysis using the aforementioned PCa datasets and observed significantly worse outcomes in patients who harbored the CIC-ERF co-deletion (p=0.001, disease-free survival [DFS] [ERF-CIC co-deletion 25 events/90 total; no ERF-CIC co-deletion 153 events/910 total] and p=0.01, progression-free survival [PFS] [ERF-CIC co-deletion 16 events/52 total; no ERF-CIC co-deletion 77 events/442 total]; Figure 1G). One limitation of this analysis is that individual studies included overlapping tumors from the same patient (i.e. TCGA PanCancer and Firehose Legacy cohorts). Despite this overlap, we utilized this insight to formulate a hypothesis that CIC and ERF are co-deleted with increasing frequency in mCRPC and that the CIC-ERF co-deletion is associated with worse clinical outcomes in PCa patients.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig1-v1.jpg)\n\n**Figure 1.:** (A) CIC transcriptionally represses ETV1/4/5. (B) The 19q13.2 genomic locus demonstrating the physical location of ERF and CIC. (C) 15 PCa studies (cBioPortal) demonstrating the co-occurrence of ERF and CIC homozygous and heterozygous deletions. The co-occurrence of ERF and CIC alterations is highly significant (p<0.001 co-occurrence, Fisher exact test). (D) ERF-CIC co-deleted PCa stratified by Gleason score and tumor stage. (E) Frequency of ERF and CIC alterations in primary PCa (top) and metastatic castrate resistant prostate cancer (mCRPC; bottom), demonstrating enrichment in mCRPC. (F) Onco-print of known genetic drivers (ERG, ETV1, ETV4, SPOP, and FOXA1) of PCa aligned with CIC and ERF (cBioPortal). CIC-ERF co-deleted prostate tumors (red box) do not frequently co-occur with other known oncogenic events. (G) Survival analysis performed using 15 PCa datasets from cBioPortal. Disease-free survival (DFS) and progression-free survival (PFS) in patients harboring the ERF-CIC co-deletion (red) vs. no ERF-CIC co-deletion (blue). p=value, log-rank.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig1-figsupp1-v1.jpg)\n\nOur initial findings provided rationale to explore the genetic and functional relationship between CIC and ERF. Independently, CIC and ERF have previously been reported to promote malignant phenotypes, including tumor growth and metastasis in multiple human cancer subsets (Bettegowda et al., 2011; Bose et al., 2017; Choi et al., 2015; Huang et al., 2017; Kawamura-Saito et al., 2006; Kim et al., 2018; Bunda et al., 2019; Okimoto et al., 2019; Okimoto et al., 2017; Sim\u00f3n-Carrasco et al., 2017; Wong et al., 2019; Yang et al., 2017). Since our clinical data indicated that combinatorial loss of CIC and ERF was associated with worse patient outcomes, we hypothesized that CIC and ERF loss may cooperate to enhance PCa progression. To investigate this, we engineered ERF, CIC, or both CIC and ERF-deficient immortalized prostate epithelial cells (PNT2) and performed a series of in vitro and in vivo experiments to test the combinatorial effect of the CIC-ERF co-deletion. Compared to single gene loss of CIC or ERF, genetic inactivation of both CIC and ERF increased colony formation (Figure 2A\u2013B, Figure 2\u2014figure supplement 1A) and spheroid formation (Figure 2C\u2013D) in PNT2 cells. CIC-ERF co-deletion also enhanced malignant phenotypes including cellular viability, invasiveness, and migratory capacity in PNT2 (Figure 2E\u2013G). Additionally, genetic silencing of both CIC and ERF increased the frequency of subcutaneous tumor xenograft formation in severe-combined immunodeficient (SCID) mice compared to control (Figure 2H, Figure 2\u2014figure supplement 1B). Thus, our findings demonstrate that the combination of CIC and ERF loss augments the transformation of PNT2 and promotes malignant phenotypes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig2-v1.jpg)\n\n**Figure 2.:** (A) Clonogenic assay comparing prostate epithelial cells (PNT2) with ERF KD, CIC KO, or ERF KD+CIC KO compared to control. (B) Number of colonies for each condition in (A) (n=3). (C) Spheroid growth assay using PNT2 cells expressing ERF KD, CIC KO, ERF KD+CIC KO vs. control. (D) Size of the sphere for each condition in (C) (n=6). Error bars represent SD. p Values were calculated using Student\u2019s t test. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. (E) Cell-titer glo viability assay (n=6), (F) transwell assay (n=3), and (G) wound healing assay comparing PNT2 ERF KD, CIC KO, and ERF KD+CIC KO to control (n=4). Error bars represent SD. p Values were calculated using Student\u2019s t test. (H) Bar graph comparing the incidence of PNT2 parental (N=3/10), PNT2 ERF KD (5/10), PNT2 CIC KO (N=5/10), or PNT2 ERF KD+CIC KO (N=6/10) tumor formation in immunodeficient mice. **p<0.01, ***p<0.001, and ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Immunoblot of CIC, ERF, and HSP90 in PNT2 and its different variants. Representative figure; performed in duplicate. Arrows indicate CIC and ERF bands. (B) Tumor explants from mice in Figure 2E.\n\nTo assess the functional role of CIC and ERF in the context of human PCa progression, we leveraged two genetically annotated, androgen-insensitive PCa cell lines, DU-145 (moderate metastatic potential) and PC-3 (high-metastatic potential). DU-145 cells harbor a loss-of-function ERF mutation (ERFA132S) (Huang et al., 2017) and express functional WT CIC, (Figure 3\u2014figure supplement 1A). By comparison, PC-3 cells are deficient in CIC (homozygous deletion) and retain functional ERF (Figure 3\u2014figure supplement 1B; Cerami et al., 2012; Gao et al., 2013; Seim et al., 2017). Thus, these cell line models provided isogenic systems to functionally interrogate the role of CIC and ERF in human PCa. Specifically, genetic reconstitution of ERF into ERF-deficient DU-145 cells decreased colony formation in both CIC proficient (parental cells) and CIC knockout (KO) conditions (Figure 3A\u2013B, Figure 3\u2014figure supplement 1C, D). While CIC loss did not enhance colony formation in ERF-deficient DU-145 cells, it significantly increased tumor cell viability, invasion, and migratory capacity compared to control (Figure 3C\u2013D, Figure 3\u2014figure supplement 1E). Importantly, we observed that ERF expression in CIC KO DU-145 cells rescued the CIC-mediated effects on viability and migration/invasion (Figure 3C\u2013D, Figure 3\u2014figure supplement 1E). These findings indicate that rescuing ERF can partially restore the functional effects of CIC loss in DU-145 cells. To further understand if ERF could suppress tumor growth in vivo, we reconstituted WT ERF into CIC proficient and deficient (CIC KO) DU-145 cells and generated subcutaneous xenografts in immunodeficient mice (NU/J). Consistent with our in vitro data, CIC KO increased the tumor growth rate in vivo and genetic reconstitution of WT ERF partially suppressed tumor growth compared to DU-145 CIC KO cells (Figure 3E). Moreover, genetic reconstitution of ERF into CIC proficient DU-145 cells suppressed the tumor growth rate in vivo (Figure 3E). We next used PC-3 cells, to further test how ERF and CIC functionally interact in the context of human PCa. We first noted that ERF overexpression (OE) or reconstitution of CIC alone decreased PC-3 colony formation, with combinatorial ERF OE and CIC rescue having the most significant reduction compared to parental PC-3 cells (Figure 3F\u2013G, Figure 3\u2014figure supplement 1F, G). Moreover, ERF and CIC expression had a similar impact on decreasing PC-3 viability, invasion, and migratory capacity (Figure 3H\u2013I, Figure 3\u2014figure supplement 1H). Similarly, genetic suppression of ERF resulted in a significant increase of colony formation, viability, and invasion compared to parental PC3 cells (Figure 3F\u2013I, Figure 3\u2014figure supplement 1I). Interestingly, OE of ERF in mice bearing CIC deficient PC-3 tumor xenografts decreased tumor growth compared to PC-3 parental and PC-3 cells expressing WT CIC (genetic rescue of CIC; Figure 3J). Since we consistently observed that ERF expression could partially rescue the effects of CIC loss in PCa, we hypothesized that WT CIC and ERF potentially cooperate to limit PCa progression.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig3-v1.jpg)\n\n**Figure 3.:** (A) Clonogenic assay of DU-145 cells with ERF rescue, CIC knockout (KO), or ERF rescue +CIC KO compared to parental control. (B) Number of colonies for each condition in (A) (n=3). (C) Cell-titer glo viability assay (n=6) and (D) transwell assay comparing DU-145 parental cells to DU-145 with ERF rescue, CIC KO, or ERF rescue +CIC KO (n=3). p Values were calculated using Student\u2019s t test. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Error bars represent SD. (E) Relative tumor volume in mice bearing DU-145 parental, DU-145 ERF, DU-145 with CIC KO, or DU-145 ERF +CIC KO xenografts (N=10). p Values were calculated using Student\u2019s t test. *p<0.05. Error bars represent SEM. (F) Clonogenic assay in PC-3 cells expressing ERF knockdown (KD), ERF overexpression (OE), CIC OE, or ERF +CIC OE compared to control. (G) Number of colonies for each condition in (F) (n=3). (H) Cell-titer glo viability assay (n=6) and (I) transwell assay comparing different groups in PC-3 cells (WT, ERF KD, ERF OE, CIC OE, or ERF +CIC OE) (n=3). p Values were calculated using Student\u2019s t test. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Error bars represent SD. (J) Relative tumor volume in mice bearing PC-3 parental cells, PC-3 ERF OE, or PC-3 CIC OE (N=10) over 33 days. p Values were calculated using Student\u2019s t test. *p<0.05. Error bars indicate SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Immunoblot of CIC, ERF, and beta-actin in DU-145 cells compared to prostate epithelial cells (PNT2). (B) Immunoblot of CIC, ERF, and beta-actin in PC-3 cells compared to PNT2 cells. (C) Immunoblot of CIC, ERF, and HSP90 in parental DU-145 cells and engineered DU-145 different variants. Representative figure; performed in duplicate. (D) Relative ERF mRNA expression in DU-145 parental, ERF rescue, CIC knockout (KO), and ERF rescue +CIC KO (n=3), Student\u2019s t-test, ***p<0.001, and ****p<0.0001. (E) Wound healing assay in DU-145 cells with ERF rescue, CIC KO, or ERF rescue +CIC KO compared to parental (n=2). (F) CIC mRNA expression in PC-3 parental, PC-3 CIC overexpression (OE), and PC-3 (ERF +CIC) OE (n=3). p Value = ****p<0.0001 (G) Relative ERF mRNA expression in PC-3 parental, PC-3 ERF OE, PC-3 (ERF +CIC) OE, and PC-3 ERF knockdown (KD) (n=3). p Value = *p<0.05, **p<0.01, and ***p<0.001. (H) Wound healing assay in PC-3 cells expressing ERF OE, CIC OE, (ERF +CIC) OE, or ERF KD compared to control (n=6). (I) Immunoblot of ERF and HSP90 in PC-3 cells with ERF KD.\n\nIn order to mechanistically define how CIC and ERF (two TFs with known repressor function) were interacting to functionally regulate PCa, we performed chromatin immunoprecipitation followed by sequencing (ChIP-Seq) using a validated CIC antibody (Lin et al., 2020; Okimoto et al., 2019; Okimoto et al., 2017) in PNT2, and compared this to a publicly available ERF ChIP-Seq dataset in VCaP PCa cells (Bose et al., 2017), we were unsuccessful at pulling down ERF in PNT2 cells. This analysis identified 178 high-confidence (False-discovery rate (FDR) \u22640.05) CIC peaks that mapped to 130 annotated genes including known targets, ETV1, ETV4, and ETV5. Globally, CIC peaks were localized to distinct genomic regions including promoters (38.6%), untranslated regions (UTRs) (1.14%), introns (19.9%), and distal intergenic regions (38.64%). Interestingly, the distribution of ERF peaks was similar to CIC, with 32.8% in promoters, 1.2% in UTRs, 29.2% intronic, and 33.8% in distal intergenic regions (Figure 4A). Next, through a comparative ChIP-Seq analysis (Figure 4B), we identified 91 shared CIC and ERF target genes. Importantly, we focused on genes with shared CIC- and ERF-binding sites to potentially explain the functional cooperativity that we observed in our prior studies. In order to narrow down potential candidates, we performed Functional Clustering Analyses through the DAVID bioinformatics database (https://david.ncifcrf.gov) (Huang et al., 2009; Sherman et al., 2022) using the 91 shared CIC and ERF target genes (Supplementary file 1). Among these putative CIC and ERF targets, the PEA3 (ETV1, ETV4, and ETV5) TFs (known oncogenic drivers in PCa; Baena et al., 2013; Kim et al., 2016; Oh et al., 2012) were found to be the most highly enriched family. These findings suggested that CIC and ERF may co-regulate PEA3 family members through direct transcriptional control.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig4-v1.jpg)\n\n**Figure 4.:** (A) Percentage of CIC and ERF peaks located in defined genomic regions. (B) Schematic algorithm to identify shared CIC and ERF target genes in prostate cells (top). Functional Clustering Analysis of the 91 shared CIC and ERF target genes using DAVID (bottom table). (C) ETV1 mRNA expression in prostate epithelial cells (PNT2) (CIC-ERF-replete) cells with ERF knockdown (KD), CIC knockout (KO), or ERF KD +CIC KO (n=3). (D) Schematic of CIC and ERF DNA-binding motifs in the ETV1 promoter. (E) Chromatin immunoprecipitation (ChIP)-PCR from PNT2 cells showing CIC occupancy on the ETV1 promoter. (F\u2013G) ChIP-PCR with ERF occupancy on the ETV1 promoter. (H) ETV1 mRNA expression in DU-145 (ERF-deficient) cells with ERF rescue, CIC KO, or ERF rescue +CIC KO (n=3). ETV1 mRNA expression in PC-3 cells with (I) ERF KD (n=3) and (J) ERF overexpression (OE) (n=3). p Values were calculated using Student\u2019s t test. *p<0.05, **p<0.01, and ****p<0.0001. Error bars represent SD. Performed in triplicate. (K) ETV1 luciferase promoter assay in 293T cells comparing Empty vector (EV) with ERF OE (n=6). Student\u2019s t test, *p<0.05. Error bars represent SD. (L) Single sample gene set enrichment analysis (ssGSEA) alignments comparing gene expression patterns in PNT2 cells with ERF KD and CIC KO. IC = information coefficient.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013C) Relative ETV1, ETV4, and ETV5 mRNA expression in prostate epithelial cells (PNT2) parental and PNT2 CIC knockout (KO) cells (n=3). (D\u2013F) Relative ETV1, ETV4, and ETV5 mRNA expression in PNT2 parental and PNT2 ERF knockdown (KD) +CIC KO cells (n=3). (G) Relative ERF, (H) ETV1, (I) ETV4, and (J) ETV5 mRNA expression in parental PNT2 and PNT2 ERF KD cells (n=3). (K) Co-immunoprecipitation using GFP-tagged ERF (pulldown) and immunoblotting for ERF and CIC. (L) Co-immunoprecipitation using Myc-tagged CIC (pulldown) and immunoblotting for ERF and CIC. (M) ETV1 chromatin immunoprecipitation (ChIP)-PCR fold enrichment of CIC compared to IgG control in PNT2 cells (n=3). (N) ETV1 ChIP-PCR fold enrichment of ERF compared to IgG control in PNT2 cells (n=3). (O) Gene Desert quantitative PCR (Active Motif Negative control) comparing CIC and ERF to IgG control. (P) Gene Desert quantitative PCR (Active Motif Negative control) comparing CIC, ERF, and IgG to input control. Relative (Q) ERF, (R) ETV1, (S) ETV4, and (T) ETV5 mRNA expression in parental DU-145 and DU-145 ERF cells (n=3). p Values for all figures = *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Error bars represent SD.\n\nIn order to further identify how CIC and/or ERF impact PEA3 TF expression, we performed quantitative real time polymerase chain reaction (qRT-PCR) in PNT2 cells, assessing ETV1, ETV4, or ETV5 mRNA levels in response to genetic silencing of CIC and/or ERF. As expected, CIC KO and/or combinatorial CIC and ERF loss in PNT2 cells (ERF and CIC WT) consistently increased ETV1, ETV4, and ETV5 levels compared to control (Figure 4\u2014figure supplement 1A-F). In contrast, genetic silencing of ERF consistently increased ETV1 mRNA expression, but not ETV4 or ETV5 (Figure 4C, Figure 4\u2014figure supplement 1G-J). These findings indicated that ETV1 may be a shared transcriptional target of CIC and ERF in prostate cells. In order to test a potential proteomic interaction between CIC and ERF, we performed co-immunoprecipitation (Co-IP) experiments but did not observe binding when either ERF or CIC was pulled down in HEK293T cells (Figure 4\u2014figure supplement 1K-L). This led us to hypothesize that CIC and ERF may potentially bind (but not interact) to distinct regions along the ETV1 regulatory element. To explore this, we first localized CIC (TGAATGGA) and ERF (GGAA) DNA binding motifs within the proximal upstream regulatory element of ETV1 and independently confirmed CIC and ERF occupancy of the ETV1 promoter through ChIP-PCR (Figure 4D\u2013G, Figure 4\u2014figure supplement 1M, P). To extend these findings into the context of PCa, we reconstituted ERF in ERF deficient DU-145 cells and this consistently decreased ETV1 expression (not ETV4 or ETV5) in both CIC proficient and CIC deficient settings (Figure 4H, Figure 4\u2014figure supplement 1Q-T). Moreover, ERF Knockdown (KD) or ERF OE in CIC deficient PC-3 cells increased and decreased ETV1 mRNA expression, respectively (Figure 4I\u2013J). Since ETV1 is a known target of CIC (Dissanayake et al., 2011; Jim\u00e9nez et al., 2012), we focused on further validating ETV1 as a molecular target of ERF. To this end, we engineered a ETV1 luciferase based promoter assays and observed a decrease in luciferase activity following ERF expression in 293T cells (Figure 4K). These genetic tools further validate that ERF can suppress ETV1 expression through direct transcriptional silencing of the ETV1 promoter and identifies ETV1 as an ERF target.\n\nConsistent with a repressor function, ERF loss was previously shown to transcriptionally associate with ETV1-regulated gene set signatures (Huang et al., 2017). Yet it remains unclear if ERF can directly regulate ETV1 and how combinatorial loss of CIC and ERF controls ETV1-mediated (or other ETS family members) transcriptional programs. To explore this, we generated a signature gene set of upregulated genes from our dual CIC and ERF deficient PNT2 cells (ERF KD +CIC KO) and projected the Cancer Genome Atlas PCa (TCGA-PRAD) dataset onto the transcriptional space of these signature gene sets using the ssGSEA module (Version 10.0.9) on GenePattern (Reich et al., 2006). We found that CIC and ERF loss were significantly associated with the ETV1-regulated gene set (Information coefficient (IC)=0.619, p=0.0009), but was anti-correlated with the TMPRSS2-ERG fusion signature gene set (Setlur et al., 2008; Figure 4L, IC = \u20130.45, p=0.0009). Thus, the enrichment of the ETV1-regulated gene set signature was shared between ERF loss alone (Huang et al., 2017) and CIC-ERF dual suppression (Figure 4L). In contrast, combinatorial CIC and ERF loss negatively correlated with the TMPRSS2-ERG fusion signature gene set, which was not consistent with our prior studies using ERF KD alone (Huang et al., 2017). These findings led us to hypothesize that the dual suppression of CIC and ERF may increase ETV1-mediated transcriptional programs in PCa. This was supported by two major lines of experimental and conceptual evidence including: (1) dual suppression of ETV1 expression and ETV1 mediated transcriptional output by CIC and ERF; and (2) the majority of tumors derived from PCa patients that harbor ERF deletions also contain deletions in CIC.\n\nIn order to demonstrate enhanced survival dependence on ETV1 in PCa cells, we genetically silenced CIC in ERF-deficient DU-145 cells and assessed drug sensitivity to an ETV1 inhibitor (BRD32048) (Pop et al., 2014). We validated the pharmacologic effect of ETV1 inhibition (BRD32048) through suppression of known downstream target genes (ATAD2 and ID2) using qPCR in LNCaP cells (Figure 5\u2014figure supplement 1A-C). Since BRD32048 was previously shown to decrease invasiveness in ETV1-fusion positive PCa cells (LNCaP), but not significantly impact tumor cell viability, we unexpectedly observed that silencing CIC in DU-145 cells mildly enhanced sensitivity to BRD32048 (Figure 5A). To further confirm these findings and to mitigate potential off-target effects, we silenced ETV1 using siRNA in PC3 and DU-145 cells expressing Crispr-based sgRNA targeting CIC (Figure 5\u2014figure supplement 1D-F). Consistent with our pharmacologic studies, the viability of DU-145 CIC KO cells was decreased upon genetic ETV1 inhibition (Figure 5B). Similarly, pharmacologic and genetic ETV1 inhibition decreased invasiveness of CIC deficient DU-145 cells (Figure 5C\u2013D). These findings indicate that loss of CIC in ERF deficient PCa cells can potentially modulate the sensitivity to ETV1-directed therapies. To expand these findings, we also consistently observed a decrease in viability and invasiveness upon ETV1 inhibition (BRD32048) in PNT2 cells with dual ERF and CIC suppression and in PC-3 cells with ERF KD (Figure 5\u2014figure supplement 2A-J). These in vitro findings indicate that ETV1 inhibition in CIC and ERF deficient prostate cells can suppress invasion and potentially limit viability. Further studies targeting ETV1 in patient derived specimens that harbor endogenous CIC-ERF co-deletions is warranted. Collectively, our data indicate that CIC and ERF may cooperate to silence ETV1 transcriptional programs, limiting ETV1-mediated PCa progression.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig5-v1.jpg)\n\n**Figure 5.:** (A) DU-145 cells were transfected with either siScramble (siSCM) or siCIC. After 48 hr, BRD32048 (ETV1 inhibitor) was added to both the transfected groups at the defined concentrations (0 \u03bcM, 25 \u03bcM, 50 \u03bcM). After 24 hr of BRD32048 treatment, cells were replated for crystal violet assay (0.4%) and images were taken and analyzed after 5 days (n=3). siCIC was compared to siSCRM conditions in each respective drug concentration. (B) Crystal violet viability assay (n=3). siETV1 groups were compared to siSCRM control groups +/- CIC expression (sgCtrl, sgCIC1, or sgCIC2). (C) DU-145 cells were transfected with either siScramble (siSCM) or siCIC. After 48 hr, BRD32048 was added to the transfected groups at defined concentrations (0 \u03bcM or 50 \u03bcM). Transwell invasion assays (n=3) were performed 24 hr after the addition of BRD32048. siCIC was compared to siSCRM in the 0 \u03bcM and 50 \u03bcM concentration groups. (D) Transwell invasion assays (n=3) comparing siETV1 to siSCRM control +/-CIC expression (sgCtrl, sgCIC1, or sgCIC2). p value = *p<0.05, **p<0.01 for all figures. Error bars represent SD.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Relative ETV1, ATAD2, and ID2 mRNA expression in LNCaP cells with or without BMS32048 (ETV1 inhibitor) treatment (n=3). (D) Relative ETV1 mRNA expression in PC-3 cells, (E) DU-145 +sgCIC1 and (F) DU-145 +sgCIC2 with or without siETV1 (n=3). p values for all figures = **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77072/elife-77072-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) BRD32048 treatment of PNT2 cells expressing siCIC and siERF compared to siSCRM control. (B) Relative density of crystal violet assays performed in (A) (n=3). (C) Transwell assay comparing BRD32048 treated PNT2 cells (n=3). BRD32048 (0 \u03bcM) columns were set to \u20181\u2019 in the siSCRM and siERF +siCIC groups for relative comparison in (B\u2013C). (D) Relative density of crystal violet assays performed in (A) (n=3). (E) Transwell assay comparing BRD32048 treated PNT2 cells (n=3). siSCRM column (0 \u00b5M) was set to \u20181\u2019 for relative comparison to other groups in (D\u2013E). (F) BRD32048 treatment of PC-3 cells expressing siERF compared to siSCRM control. (G) Relative density of crystal violet assays performed in (F) (n=3). (H) Transwell assay comparing BRD32048 treated PC-3 cells (n=3). BRD32048 (0 \u03bcM) columns were set to \u20181\u2019 in the siSCRM and siERF groups for relative comparison in (G\u2013H). (I) Relative density of crystal violet assays performed in (F) (n=3). (J) Transwell assay comparing BRD32048 treated PC-3 cells (n=3). siSCRM column (0 \u00b5M) was set to \u20181\u2019 for relative comparison to other groups in (I\u2013J). Students t-test, p values *p<0.05, **p<0.01 for all figures.\n\n## Discussion\n\nMolecular and functional subclassification of human PCa has revealed a dependence on ETS family TFs including ERG, ETV1, ETV4, and ETV5 (Feng et al., 2014; Oh et al., 2012). The predominant mode of ETS activation in PCa is through chromosomal rearrangements that fuse ERG, ETV1, ETV4, and ETV5 to the androgen-regulated TMPRSS2 gene, leading to fusion oncoproteins that drive oncogenesis (Clark and Cooper, 2009; Feng et al., 2014; Helgeson et al., 2008; Tomlins et al., 2006; Tomlins et al., 2005). Interestingly, recent data indicate that ETV1, ETV4, and ETV5 are upregulated in a fusion-independent manner and are associated with poor clinical outcomes in PCa patients (Baena et al., 2013; Hermans et al., 2008). Our study focused on understanding the molecular mechanisms that drive fusion-independent upregulation of ETS family members and we reveal a new molecular subclass of PCa defined by a co-deletion of two TFs, CIC and ERF.\n\nCIC is a TF that directly silences ETV1, ETV4, and ETV5 transcription through direct repression at proximal regulatory sites (Jim\u00e9nez et al., 2012). We observed that in ~10\u201312% of human PCa, CIC and ERF are co-deleted through focal homozygous or heterozygous deletions. It has been recently shown that ERF competes for ETS DNA binding motifs and our studies identify cooperative regulation of key target genes between CIC and ERF. Specifically, through ChIP-Seq analysis coupled with a series of in vitro and in vivo studies, we identify a coordinated binding of CIC and ERF to the proximal ETV1 regulatory element that physically and functionally regulates ETV1 expression. Therefore, we reveal ETV1 as a novel ERF target gene. Rescuing ERF in CIC deficient PCa cells decreases ETV1 expression and limits malignant phenotypes including viability, migration and invasion.\n\nThe 19q13.2 locus contains CIC and ERF, which are physically adjacent and oriented in opposing directions. The long and short isoforms of CIC are separated from ERF by ~15 and 30 kb, respectively. Thus, future studies directed at defining the genome topology and epigenetic states, both within and around this highly conserved region are warranted. In particular, studies aimed at mapping topology associated domains and key histone marks can potentially reveal shared upstream regulatory elements including enhancers or superenhancers that may co-regulate CIC and ERF in concert. These findings could reveal non-genetic mechanisms to functionally regulate CIC and ERF expression in a coordinated fashion.\n\nBeyond PCa, we and others have observed that CIC and ERF are co-deleted in a subset of stomach adenocarcinoma (LeBlanc et al., 2017; Okimoto et al., 2017). Thus, combined CIC and ERF loss are not entirely specific for PCa. We speculate that since prostate (Baena et al., 2013) and potentially stomach adenocarcinoma (Keld et al., 2011) are highly dependent on PEA3 transcriptional dysregulation to enhance tumor progression, the dual loss of CIC and ERF may, in part, represent an alternative mode to de-repress ETS mediated transcriptional programs in these cancer subsets.\n\nThe use of ETV1 inhibitors has been limited to preclinical studies (Pop et al., 2014). These studies have largely focused on direct targeting of ETV1 fusion oncoproteins in PCa (Pop et al., 2014). Our findings indicate that patients with CIC-ERF deficient PCa may have a survival dependence on ETV1 and that these patients may potentially benefit from ETV1 directed therapies. A limitation of this targeted approach in PCa patients is that we did not find a statistically significant difference in ETV1 transcript levels in CIC-ERF co-deleted tumors compared to CIC-ERF replete tumors in the TCGA-PRAD (n=455) dataset. One potential explanation is that ETV1 is commonly upregulated in human PCas through mechanisms beyond CIC-ERF loss. Thus, while our data support the upregulation and potential induced dependence on ETV1 in our CIC-ERF deficient systems, it remains unclear if this will translate beyond our cell-line based models into PCa patients that harbor CIC-ERF co-deletions. Thus, larger studies that aim to evaluate: (1) ETV1 mRNA and protein expression levels; (2) the biological significance of ETV1 function; and (3) the clinical application of ETV1 inhibitors in patients with endogenous CIC-ERF co-deleted tumors (compared to CIC-ERF WT tumors) is warranted in this subset of PCa. Collectively, we have uncovered a molecular subset of PCa defined by a co-deletion of CIC and ERF and further demonstrate a mechanism-based strategy to potentially limit tumor progression through ETV1 inhibition in this subset of human PCa.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GeneCIC (Homo sapiens)</td>\n      <td>CIC</td>\n      <td>Pubmed gene database</td>\n      <td>Gene ID:23152</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GeneERF (Homo sapiens)</td>\n      <td>ERF</td>\n      <td>Pubmed gene database</td>\n      <td>Gene ID: 2077</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GeneETV1 (Homo sapiens)</td>\n      <td>ETV1</td>\n      <td>Pubmed gene database</td>\n      <td>Gene ID:2115</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td></td>\n      <td>Cell line maintained in DMEM with 10% FBS and 1% PSN</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>PNT2</td>\n      <td>Sigma</td>\n      <td></td>\n      <td>Cell line maintained in DMEM with 10% FBS and 1% PSN</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>DU-145</td>\n      <td>ATCC</td>\n      <td></td>\n      <td>Cell line maintained in RPMI with 10% FBS and 1% PSN</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>PC3</td>\n      <td>ATCC</td>\n      <td></td>\n      <td>Cell line maintained in RPMI with 10% FBS and 1% PSN</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>ERF shRNA #1</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAT# TRCN000001391TRCN0000013912</td>\n      <td>Lentiviral construct to transfect and expressERF shRNA.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>sgRNAs</td>\n      <td>Addgene</td>\n      <td>CAT#74959 and #74953</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>Lentiviral GFP-tagged ERF</td>\n      <td>GeneCopoeia</td>\n      <td>CAT# EX-S0501-Lv122</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>CIC-Myc-tag plasmid</td>\n      <td>Origene</td>\n      <td>CAT#: RC215209</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>siRNA to ETV1SMARTpool</td>\n      <td>Dharmacon</td>\n      <td>CAT#L-003801-00-0005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>siRNA to CICSMARTpool</td>\n      <td>Dharmacon</td>\n      <td>CAT#L-015185-01-0005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CIC(Rabbit polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>CAT#PA146018</td>\n      <td>WB (1:1000)For ChIP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ERF(Rabbit monoclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>CAT#PA530237</td>\n      <td>WB (1:1000)For ChIP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HSP90(Rabbit polyclonal)</td>\n      <td>Cell Signaling</td>\n      <td>CAT# 4874 S</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Actin(Rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>CAT# 4970 S</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ETV1-CIC-Forward-1</td>\n      <td>This paper</td>\n      <td>ChIP-PCR primers</td>\n      <td>5\u2019 CAGGACAAAGAGGAGGCAGCGAGCTG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ETV1-CIC-Reverse-1</td>\n      <td>This paper</td>\n      <td>ChIP-PCR primers</td>\n      <td>5\u2019 GTTTATTGCTGACCCCTCAGCGCTCCGC 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ETV1-ERF-Forward-1-</td>\n      <td>This paper</td>\n      <td>ChIP-PCR primers</td>\n      <td>5\u2019-CCAGGTCCGGGGTTGAGTGCTGTGC- 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ETV1-ERF-Reverse-1</td>\n      <td>This paper</td>\n      <td>ChIP-PCR primers</td>\n      <td>5\u2019-CATTTGTGACCAGAACTAGTGACC-3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ETV1 promoter</td>\n      <td>SwitchGear Genomics</td>\n      <td>Product ID: S720645</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Empty promoter</td>\n      <td>SwitchGear Genomics</td>\n      <td>Product ID: S790005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BRD32048</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat#: SML1346</td>\n      <td>ETV1 inhibitor</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines, drug, and reagents\n\nCell lines were cultured as recommended by the American Type Culture Collection (ATCC) or Sigma. DU-145, PC-3, and HEK293T cells were purchased and authenticated (STR profiling) by ATCC. PNT2 cells were purchased and authenticated (STR profiling) by Sigma. All cell lines were tested for mycoplasma using the e-myco PLUS PCR detection kit (Boca Scientific, Cat#25237). HEK293T cells are human embryonic kidney cells which are commonly used for transfection. PNT2 ERF KD (shERFA1, shERFB1), PNT2 CIC KO (sgCIC1, sgCIC2) and PNT2 ERF KD +CIC KO were derived from parental PNT2 cells. shRNAs targeting ERF to develop PNT2 shERFA1 and PNT2 shERFB1 were obtained from Sigma-Aldrich: TRCN000001391, TRCN0000013912. Puromycin (1 \u03bcg/ml) was used as a selection reagent. Two sgRNAs targeting CIC were previously validated and were gifts from William Hahn, Addgene (#74959 and #74953). These sgRNAs were used to develop PNT2 sgCIC1 and PNT2 sgCIC2 cells. Blasticidin (10 \u03bcg/ml) was used as a selection agent. PNT2shERFA1 +sgCIC1 and PNT2shERFA1 +sgCIC2 were developed from the combination of the above two shRNA and sgRNAs. All PNT2 cells were grown in DMEM media supplemented with 10% FBS, 100 IU/ml penicillin and 100 \u03bc g/ml streptomycin.\n\nDU-145 ERF, DU-145 CIC KO (sgCIC1, sgCIC2) and DU-145 ERF +CIC KO (ERF +sgCIC1, ERF +sgCIC2) were derived from parental DU-145 cell line. Lentiviral GFP-tagged ERF (GeneCopoeia, EX-S0501-Lv122) was used to develop DU-145 ERF cells with puromycin (1 \u03bcg/ml) as a selection marker. The above-mentioned two sgRNAs were used to develop DU-145 sgCIC1 and DU-145 sgCIC2 cells with blasticidin (15 \u03bcg/ml) as the selection agent. DU-145 ERF +sgCIC1 and DU-145 ERF +sgCIC2 were developed from the combination of the above two.\n\nPC-3 ERF KD (shERFA1), PC-3 ERF OE, PC-3 CIC OE, PC-3 (ERF +CIC) OE cells were derived from parental PC-3 cell line. shRNAs targeting ERF (Sigma-Aldrich: TRCN000001391) and lentiviral GFP-tagged ERF (GeneCopoeia, EX-S0501-Lv122) were used to develop PC-3 shERFA1 and PC-3 ERF OE, respectively. PC-3 CIC OE cells were developed using CIC-Myc-tag plasmid purchased from Origene (CAT#: RC215209).\n\nGeneticin (250 \u03bcg/ml) was used as a selection agent. PC-3 (ERF +CIC) OE cells were developed using a combination of ERF-GFP and CIC-Myc overexpressing plasmid.\n\nAll DU-145 and PC-3 cells were grown in RPMI 1640 media supplemented with 10% FBS, 100 I U/ml penicillin and 100 \u03bc g/ml streptomycin, respectively. All cell lines were maintained at 37 \u00b0C in a humidified atmosphere at 5% CO2. All the above mentioned stable cell lines were validated by analyzing the expression of CIC and ERF using qPCR and western blot analysis (Figure 2\u2014figure supplement 1A, Figure 3\u2014figure supplement 1A-C, I).\n\nBRD32048 is an ETV1 inhibitor that was purchased from Sigma-Aldrich (CAT#:SML1346).\n\n### Analysis of PCa datasets from cBioPortal\n\n15 PCa datasets (see Figure 1c for individual studies) were queried for alterations in CIC and ERF using the cBioPortal platform \u2018query by gene\u2019 function. Stratification into \u2018ERF-CIC No co-deletion\u2019 and \u2018ERF-CIC co-deletion\u2019 was performed in cBioPortal and associated with \u2018Gleason Score\u2019, \u2018AJCC Primary Tumor T Stage\u2019, and DFS and PFS using the \u2018Plots\u2019 and \u2018Comparison/Survival\u2019 functions. p-values for comparison between Gleason and Tumor Stage were calculated using FET and survival curves were calculated by Log-rank test.\n\nFor the CIC and ERF mutational analysis in primary prostate vs. metastatic castrate resistant PCa, we selected studies that purely represented primary prostate tumors (PNAS 2014, Cell 2014, Nature 2017) and advanced mCRPC (Nature 2012, Cell 2015, PNAS 2019).\n\n### Colony formation assay\n\nEqual number of cells from cell lines (500\u2013600 cells/well) were seeded in a 6-well plate. Cells were allowed to form colonies for 7 days. At day 7, cells were fixed and stained with 0.5% crystal violet solution after washing with PBS and performed in triplicate.\n\nFinally, the colonies with >50 cells were counted under an imageJ software.\n\n### Tumorsphere assay\n\nApproximately 25,000 cells from different groups were cultured in tumorsphere media at 37 \u00b0C and 5% CO2 for 7 days. Tumorsphere medium contains serum free DMEM /F12 supplemented with 10 ng/ml FGF (fibroblast growth factor), 20 ng/ml EGF (epidermal growth factor), 1xITS (Insulin-Transferrin-Selenium) and B27 supplement. On day 7, images of different areas of the wells were taken using confocal. The size of the sphere was calculated using Fiji (ImageJ) software in all the tested groups. Each group consisted of three replicate wells and at least 6 images (n>/=6).\n\n### Subcutaneous tumor xenograft assays\n\nFour week old male SCID mice were purchased from Jackson Laboratory. Mice were kept under specific pathogen-free conditions and facilities were approved by the UCSF IACUC. To prepare cell suspensions, PNT2 and its other genetic variants (PNT2 ERF KD, PNT2 CIC KO, PNT2 ERF KD +CIC KO) were briefly trypsinized, quenched with 10% FBS RPMI media and resuspended in PBS. Cells were pelleted again and mixed with PBS/Matrigel matrix (1:1) for a final concentration of 0.1\u00d7105 cells/\u00b5l. A 100 \u03bcl cell suspension containing 1\u00d7106 cells were injected (s.c.) in the right and left flanks of immunodeficient mice (n=10/group). Mice were observed for tumor formation in different groups over 7 weeks. For other subcutaneous xenografts, four week old male mice (NU/J) were purchased from Jackson Laboratory and were six-eight weeks old at time of experiment. 1.0\u00d7106 DU-145 cells and its variants (DU-145 ERF, DU-145 CICKO and DU-145 ERF +CICKO) were resuspended in PBS/Matrigel (1:1) matrix and injected s.c. into the right and left flanks of nude mice (n=10/group). Tumor volume was measured twice per week using Vernier caliper. Tumor volume was determined using caliper measurements of tumor length (L) and width (W) according to the formula V = (L X W2) X 0.52.\n\nSimilarly, 1.0\u00d7106 PC-3 tumor cells and its variants (PC-3 ERFOE, CICOE) were injected subcutaneously in flanks of male nude mice (NU/J), n=10/group and tumor volume was monitored in different groups. Mice body weight was measured in all the experiments throughout the study. At the end of the experiment, mice were sacrificed by CO2 overdose in accordance with IACUC guidelines.\n\n### Viability assays\n\n5000 cells were plated in a 12 well plate. Crystal violet staining was performed 5 days after cell plating with 3 replicates per group. CellTiter Glo experiments were performed according to the manufacturer\u2019s protocol. In brief, cells were plated in a 96-well plate, and analyzed on a Spectramax microplate reader (Molecular Devices) at different days. Each assay was performed with six replicate wells.\n\n### Transwell invasion assays\n\nRPMI with 10% FBS was added to the bottom well of a trans-well chamber. 2.5\u00d710^4 cells resuspended in serum free media was then added to the top 8 \u00b5m pore matrigel coated (invasion) or non-coated (migration) trans-well insert (BD Biosciences). After 20 hr, non-invading cells on the apical side of inserts were scraped off and the trans-well membrane was fixed in methanol for 15 min and stained with Crystal Violet for 30 min. The basolateral surface of the membrane was visualized with a Zeiss Axioplan II immunofluorescent microscope at 5\u00d7. Each trans-well insert was imaged in five distinct regions at 5\u00d7and performed in triplicate. % invasion was calculated by dividing the mean # of cells invading through Matrigel membrane / mean # of cells migrating through control insert.\n\n### Wound healing assays\n\nCells were plated at a density of 0.5\u00d7106 cells/well and incubated to form a monolayer in 6-well dishes. Once a uniform monolayer was formed, wound was created by scratching the monolayer with a 1 ml sterile tip. Floating cells were removed by washing the cells with PBS three times. Images of the wound were taken at this point using bright field microscope and considered as a 0 hr time point. Furthermore, media was added in all the wells and cells were left to migrate either for 24 hr (DU-145 cells) or 48 hr (PNT2 ond PC-3 cells). At end point, wound was imaged again using bright field microscope. The wound area at different points was calculated using ImageJ software. Each group consisted of at least three replicate wells.\n\n### DAVID functional clustering analysis\n\nThe 91 shared candidate target genes between CIC and ERF identified through our ChIPSeq analysis in PNT2 and VCaP cells, respectively, were used as an input list for analysis using the DAVID Bioinformatics Database (https://david.ncifcrf.gov).\n\n### Real-time quantitative PCR (RT-qPCR)\n\nRT-qPCR was performed in PNT2, DU145 and PC3 cells. Isolation and purification of RNA was performed using RNeasy Mini Kit (Qiagen). 500 ng of total RNA was used in a reverse transcriptase reaction with the SuperScript III firststrand synthesis system (Invitrogen). Quantitative PCR included three replicates per cDNA sample. Human CIC (Cat#. Hs00943425_g1), ERF (Cat#. Hs01100070_g1), ETV1 (Cat#. Hs00951951_m1), ETV4 (Cat#. Hs00383361_g1), ETV5 (Cat#. Hs00927557_m1), and endogenous controls GAPDH (Cat#. Hs02758991_g1) were amplified with Taqman gene expression assay (Applied Biosystems). Expression data were acquired using an ABI Prism 7900HT Sequence Detection System (Thermo Fisher Scientific). Expression of each target was calculated using the 2\u2212\u0394\u0394Ct method and expressed as relative mRNA expression.\n\n### Chip-Seq and PCR\n\nChIP was performed on PNT2 and DU-145 cells with the SimpleChIP Enzymatic Chromatin IP kit, Cell Signaling Technology #9003 in accordance with the manufacturer\u2019s protocol. The antibodies used for IP were as follows: CIC (Thermo Fisher Scientific \u2013 PA146018) and ERF (Thermo Fisher Scientific \u2013PA530237). Paired-end 150 bp (PE150) sequencing on an Illumina HiSeq platform was then performed. ChIP-Seq peak calls were identified through Mode-based Analysis of ChIP-Seq (MACS). For ETV1 ChIP-PCR validation, primers were designed in the proximal regulatory element of ETV1. The promoter primer sequences are listed in supplementary experimental methods:\n\nVCaP ERF ChIP-Seq was previously performed (Bose et al., 2017) and publicly available in the GEO database: GSE83653. For this analysis, the samples used are listed in supplementary experimental methods.\n\nPromoter primer sequences for ChIP-PCR and ChIP-Seq are provided in the Supplementary Methods (Supplementary file 2).\n\n### GSM2612455_INPUT red replicate two luciferase promoter assay\n\n293T and DU-145 cells were split into a 96 well plate to achieve 50\u201370% confluence the day of transfection. LightSwitch luciferase assay system (SwitchGear Genomics) was used per the manufacturer\u2019s protocol. Briefly, a mixture containing FuGENE 6 transfection reagent, 50 ng Luciferase GoClone ETV1 promoter (S720645) plasmid DNA, 50 ng of either control (empty) vector or fully sequenced ERF cDNA (GeneCopoeia [EX-S0501Lv122]), were added to each well. All transfections were performed in quintuplicate. The plates were assessed for luciferase activity after 48 hr of treatment.\n\n### Single-sample gene set enrichment analysis (ssGSEA)\n\nGene-level expression of our dual CIC and ERF deficient PNT2 cells are computed using RSEM (Setlur et al., 2008) (Version 1.3.3) and log-2 normalized. The signature gene set of dual CIC and ERF deficient PNT2 cells (ERF KD +CIC KO) is defined as the top upregulated genes compared to the CIC and ERF WT cells. The ssGSEA module on GenePattern was then used to project the TCGA-PRAD dataset onto the transcriptional space defined by both the ERF KD +CIC KO signature gene set and previously established gene sets including the ETV1-regulated gene set, ERF KD signature and TMPRSS2-ERG fusion signature. The ssGSEA enrichment scores of the ERF KD +CIC KO signature gene set for the TCGA-PRAD samples are compared with the scores of the other signature gene sets and visualized in heatmaps and used for downstream association analyses.\n\n### Gene knockdown (KD) and OE assays\n\nON-TARGET plus Scramble, ETV1 (L-003801-00-0005) and CIC (L-015185-01-0005) siRNAs were obtained from GE Dharmacon and transfection was performed with Dharmafect transfection reagent per manufacturer recommendations. ETV1 inhibitorBRD32048 (SML1346) was purchased from Millipore Sigma. Lentiviral GFP-tagged ERF was obtained from GeneCopoeia (EX-S0501-Lv122). pCMV-CIC with myc-tag was purchased from Origene and validated previously.\n\n### Experimental plan for experiments using ETV1 inhibitor\n\nCells were plated at a density of 0.2\u00d7106 in a 6-well plate. Next day, cells were transfected with siScramble and siCIC. After 48 hr, 25 \u03bcM and 50 \u03bcM of BMS32048 (ETV1 inhibitor) was added to both the transfected groups and control groups were treated with DMSO. 24 hr post ETV1 inhibitor treatment, cells from all the groups were replated for viability assay in a 24-well plate (n=3) and transwell invasion assay (n=3). Viability assay was performed using crystal violet. The relative density of crystal violet and % invasion was calculated comparing siCIC with siSCRM conditions in each respective drug concentration.\n\n### Western blot analysis\n\nAdherent cells were washed and lysed with RIPA buffer supplemented with proteinase and phosphatase inhibitors. Proteins were separated by SDS-PAGE, transferred to nitrocellulose membranes and blotted with antibodies recognizing: CIC (Thermo Fisher Scientific \u2013PA146018), ERF (Thermo Fisher Scientific \u2013PA530237), ETV1 (Thermo Fisher Scientific \u2013MA515461), HSP90 (Cell Signaling\u2013 4874 S), Actin (Cell Signaling \u2013 4970 S). All immunoblots represent at least two independent experiments.\n\n### Co-immunoprecipitation assays\n\n293T cells were transfected with GFP-tagged ERF for 48 hr, lysed, quantified, and incubated with either IgG (Cell Signaling Technology; 2729) fused to Dynabeads Protein G (Thermo Fisher Scientific; 10004D) or anti-GFP magnetic beads overnight at 4 \u00b0C. Proteins were separated by SDS-PAGE, transferred to nitrocellulose membranes, and blotted with antibodies recognizing GFP or CIC. Myc-tagged CIC was transfected into HEK293T cells for 48 hr, lysed, quantified, and incubated with either IgG (Cell Signaling Technology; 2729) fused to Dynabeads Protein G (Thermo Fisher Scientific; 10004D) or anti-myc magnetic beads overnight at 4 \u00b0C. Proteins were separated by SDS-PAGE, transferred to nitrocellulose membranes, and blotted with antibodies recognizing Myc or ERF.\n\n### Statistical analysis\n\nExperimental data are presented as mean +/-Standard Deviation (SD) or Standard Error of the Mean (SEM). P-values derived for all in-vitro experiments were calculated using two-tailed student\u2019s t-test or one-way ANOVA. The detailed statistical analysis performed for each experiment is defined in the figure legends.\n\n### Study approval\n\nFor tumor xenograft studies, specific pathogen-free conditions and facilities were approved by the American Association for Accreditation of Laboratory Animal Care. Surgical procedures were reviewed and approved by the UCSF Institutional Animal Care and Use Committee (IACUC), protocol #AN178670-03.\n",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "7edd42da-7018-423a-8601-4eadb871475a",
+      "submission_id": "4508f738-8380-4098-8c38-615af8627dcc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erica A Golemis, https://ror.org/0567t7073 Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77072.sa0](https://doi.org/10.7554/eLife.77072.sa0)\n\nThis study provides insight into a potentially new genetically defined subset of prostate tumors driven by concurrent loss of the ERF and CIC tumor suppressor genes, in the absence of the canonical fusion event involving TMPRSS2 (around 10% of all cases). The work both validates previous findings and provides new data that support a compelling overall conclusion that combined ERF and CIC loss promotes prostate tumorigenesis by increasing expression of the oncogenic driver ETV1. This is an important study based on convincing evidence, that will be of interest to researchers in the field of prostate cancer.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Erica A Golemis, https://ror.org/0567t7073 Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77072.sa1](https://doi.org/10.7554/eLife.77072.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The CIC-ERF co-deletion underlies fusion independent activation of ETS family member, ETV1, to drive prostate cancer progression\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Erica Golemis as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Stephen Yip (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Can the authors confirm that the 15 cBioPortal datasets are really independent? To clarify this, it would be informative to have the numbers presented for each dataset in the associated Figure 1c legend. For example, the reader should then be able to see that the TCGA 2018 and TCGA numbers are quite small as most of these cases are also in TCGA 2015. Figure 1c is also hard to interpret given the data has been sorted (we assume) by CIC and ERF alterations. It would be more informative for the reader if it was sorted according to the study so we can see the distribution of alterations across each study. This then ties in with the later analysis looking at the difference in alterations between primary and metastatic prostate cancer datasets. It is also hard to interpret the stage data presented in Figure 1d, is it possible to condense the stages somehow? For example, condense T2A, T2B and T2C into one category (T2), etc.\n\n2. Can the numbers of cases present in the primary and metastatic prostate cancer groups be specified in the text or in Figure 1e. Similarly, Can the number of cases present in each group of the survival analyses be specified in the text or in Figure 1g? Without any of the numbers requested above, it is difficult to determine the statistical power these analyses have.\n\n3. The sample size used in each of the cell line assays should also be presented in the corresponding figure legends as (n=x). This includes bioreps of the cell culture experiments.\n\n4. Supplementary Table 1 is missing.\n\n5. The description of the ssGSEA work is very unclear both in the methods and Results sections. GSEA also stands for Gene Set Enrichment Analysis, not Gene Expression Analysis as stated in the results. It is unclear whether the authors used gene expression data from PNT2 cells or if they used data from the TCGA-PRAD dataset. If they used PNT2 gene expression data, how was this generated and how exactly was the TCGA-PRAD dataset involved? A more comprehensive and coherent description of these analyses is required in both the methods and Results sections. This includes the figure legend (4m) where there is no explanation for the abbreviations used.\n\n6. The figures associated with the results describing the assessment of the ETV1 inhibitor in DU-145 cells actually show LNCap cells (Figure 4A-c). Please clarify.\n\n7. The authors say they observe enhanced sensitivity to BRD32048 in DU-145 CIC KO cells, but this is not significant and should be noted. Why wasn't this work repeated in the other cell lines (PNT2 and PC-3, especially, given their contexts in prostate cancer metastatic potential) or in vivo? Or why not reconstitute ERF in DU-145 to see the effect of the inhibitor on CIC KO/KD alone? These experiments are essential to strengthen and generalize conclusions.\n\n8. The supplementary figure (4d-f) also shows results from PC-3 cells, but this is not mentioned in the text.\n\n9. The sub-figures (5b-5d) are in the wrong order, 5b shows invasiveness while 5c shows viability.\n\n10. The methods section provides no information as to how the authors conducted their cell culture experiments using the ETV1 inhibitor (including technical/bioreps etc.), and as such, are not reproducible. Overall, the methods section is very disjointed and the methodology should be presented in the order that it is described in the results (aside from the cell line/culture information). This would also allow the authors to get rid of some repetition that is currently present and ensure there is still no missing methodology. In addition to some of the more specific methodology suggestions mentioned previously, can more information regarding the DAVID functional clustering analysis be added, including a reference/web link if available?\n\n11. The authors should perform additional replicates to provide statistical significance for experiments currently lacking significance or temper their claims. For example, Figure 4l should probably be removed, unless additional replicates improve the data.\n\n12. If ERF and CIC co-deletion function by increasing ETV1 transcription, then an increase in ETV1 mRNA levels in these tumors should be apparent in patient tumor datasets, such as those analyzed in Figure 1. This is a key missing analysis. This needs to be supplied.\n\n13. A growth curve to measure proliferation rate changes after CIC and ERF manipulation would provide more rigor. Does ERF overexpression inhibit phenotypes in PNT2 cells?\n\n14. Testing a few negative control genomic regions and showing no enrichment would alleviate the concern regarding controls for ChIP-PCR.\n\n15. This phrase in the introduction needs references: \"\u2026and inactivation of CIC de-represses ETV1, ETV4, and ETV5 transcription to promote tumor progression.\"\n\n16. It is important to investigate potential proteomic interactions between CIC and ERF using Western blot and immunoprecipitation. Whether they bind to one another and what happens when only CIC or ERF is not expressed. What happens to the level of CIC, or ERF, in the absence of the other protein and the consequence of this, if there is altered expression.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The CIC-ERF co-deletion underlies fusion independent activation of ETS family member, ETV1, to drive prostate cancer progression\" for further consideration by eLife. Your revised article has been evaluated by Erica Golemis (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nIn general, no further experiments are needed, and the remaining critiques can be addressed by writing changes. Reviewer 3 is satisfied with the current version of the article, and Reviewer 1 has points that are largely directed at clarity; please address these. However, Reviewer 2 has residual issues with the significance and interpretation of the data. Please address point 1 in the discussion; for point 2, we suggest you present alternative analyses of the data (perhaps in a new supplemental figure) that allow the comparisons suggested, and discuss the significance of the results obtained through this analysis.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have addressed the majority of my concerns, however, I don't feel I can comment on whether they have adequately addressed the other reviewers' comments. I have just a few points below that require the authors' attention.\n\n1. As suggested, the authors have included a Table (Supplementary Table 1) that presents the CIC-ERF data for the various studies. However, I'm not sure the authors understood our comment regarding study overlap. For example, they present two rows of data for TCGA samples (PanCancer Atlas and Firehose Legacy) but these studies essentially consist of the same samples (the second just has a few more samples included). Thus, it is somewhat misleading to present two primary predominant cohorts with lower CIC-ERF alterations, when this is really just a single cohort. The authors also need to determine how many samples overlap the two SU2C/PCF studies and the MSK studies. This also applies to the data presented in Supplementary Figure 1 and impacts the statement in the Results section that says \"We analyzed over 6047 PCa tumors from 5839 patients\" (line 99), as this is not the case given numbers overlap across the studies.\n\nFigure 1C still appears to be sorted by something other than study. If it was sorted by study, the top bar in this figure would have, for example, all the MSK-IMPACT prostate samples grouped together, all the PRAD (MSKCC, 2020) samples grouped together, etc. So there would be a solid teal block, a solid pink block, etc. At the moment you can see that on the far left of the \"Study\" bar, it starts with a mix of green and purple study samples, and so on.\n\n2. The first and second sentences of the abstract now essentially say the same thing. The second sentence can be removed.\n\n3. Ensure all gene names are italicised.\n\n4. There is an issue with one of the references (TCGA 2015 publication).\n\nReviewer #2 (Recommendations for the authors):\n\nOverall the revision has not alleviated my concerns regarding the viability of the overall thesis that ERG and CIC co-deletion leading to activation of ETV1 is a driver of prostate cancer progression. There are two main reasons for this. First is the finding that there is no statistically significant difference in ETV1 expression between patient tumors with wild-type ERF and CIC, and co-deleted ERF and CIC. This seems to be a major problem. Second much of the critical data is underwhelming, does not reach statistical significance, and seems to be presented in ways intended to obscure the real results. Examples of this include the setting of every odd column to 1 and normalization of each even column to the prior odd column in Figures 5A, 5B, 5C, and 5S2B, C, E, and F \u2013 with no explanation that this is being done. This is also true of the ChIP control presented in the rebuttal, which includes an irrelevant input column that obscures the necessary comparison of IgG to anti-CIC and anti-ERF. It is also a problem that this control is presented in an entirely different way than the ChIP in Figure 4 that it is necessary to control for, and the control does not appear to be included in the revised manuscript.\n\nReviewer #3 (Recommendations for the authors):\n\nI am satisfied with the authors' responses and the additional experiments performed. I am somewhat disappointed that the selective knockdown of CIC and ERF did not further elucidate the functional interactions between these two proteins but I appreciate the effort and the underlying complexity of the interactions which could also be affected by cell and developmental contexts.\n",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1a5d4b56-3196-4ea7-82f4-93fda0732319",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C2",
+      "claim": "CIC is frequently altered in human cancer and functionally suppresses tumor growth and metastasis",
+      "claim_type": "EXPLICIT",
+      "source": "CIC is frequently altered in human cancer, where it functionally suppresses tumor growth and metastasis (Ahmad et al., 2019; Bettegowda et al., 2011; Choi et al., 2015; Dissanayake et al., 2011; Kim et al., 2018; Okimoto et al., 2017; Seim et al., 2017; Yoshiya et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "3bfe9a14-39bb-4de5-aafd-c12b447aa4fa",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C3",
+      "claim": "CIC is commonly altered through genomic loss in approximately 10% of prostate cancer patients",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in PCa, CIC is commonly altered through genomic loss (homozygous and heterozygous deletion) in ~10% of PCa patients (Abida et al., 2019; Grasso et al., 2012; Hieronymus et al., 2014; Huang et al., 2017; Robinson et al., 2015; Cancer Genome Atlas Research Network, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple prostate cancer genomic studies",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "27a47b9c-9d1a-48bd-9410-0670469e04e5",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C5",
+      "claim": "ERF is a transcriptional repressor that binds ETS DNA motifs",
+      "claim_type": "EXPLICIT",
+      "source": "Since ERF is a transcriptional repressor that binds ETS DNA motifs (Bose et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research (Bose et al., 2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "376ccfa8-0372-4b17-b75c-827edb84909e",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C6",
+      "claim": "CIC and ERF co-deletions occur with high frequency (p<0.001) in prostate cancer",
+      "claim_type": "EXPLICIT",
+      "source": "identified a high cooccurrence rate (p<0.001, two-sided Fisher's exact test [FET]) for CIC (10%) and ERF (12%) homozygous and heterozygous deletions (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of 15 PCa datasets shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "64c682b0-fba2-4ae3-ba91-a68f86140975",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C7",
+      "claim": "CIC-ERF co-deletion is present at increased frequency in prostate cancer with higher Gleason scores and later tumor stages",
+      "claim_type": "EXPLICIT",
+      "source": "we observed that the CIC-ERF co-deletion was present at an increased frequency in PCa with higher Gleason scores and later tumor stages when compared to CIC-ERF replete tumors (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of clinically annotated specimens shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "80c8f421-5b63-4406-b0a5-3a9e7247c727",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C8",
+      "claim": "CIC and ERF alterations are enriched in metastatic castrate resistant prostate cancer compared to primary prostate cancer",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed enrichment of CIC and ERF alterations including the CIC-ERF co-deletion in mCRPC samples (Figure 1E, Figure 1\u2014source data 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative analysis of primary vs. metastatic PCa datasets shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "2e100c30-6858-4907-8c3c-a0c2ccce6474",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C9",
+      "claim": "CIC-ERF co-deleted tumors cluster as a distinct molecular subgroup separate from ERG, ETV1, ETV4, SPOP, and FOXA1 altered prostate cancers",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CIC-ERF co-deleted tumors clustered as a subgroup when compared to the more well-characterized molecular subsets including ERG, ETV1, ETV4, SPOP, and FOXA1 altered PCas, suggesting a distinct molecular subtype of PCa (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by clustering analysis shown in Figure 1F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "5de9b931-13a6-4a3a-8df7-9ba3337e9a4f",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C10",
+      "claim": "Patients with CIC-ERF co-deletion have significantly worse disease-free survival (p=0.001) and progression-free survival (p=0.01)",
+      "claim_type": "EXPLICIT",
+      "source": "we performed a survival analysis using the aforementioned PCa datasets and observed significantly worse outcomes in patients who harbored the CIC-ERF co-deletion (p=0.001, disease-free survival [DFS] [ERF-CIC co-deletion 25 events/90 total; no ERF-CIC co-deletion 153 events/910 total] and p=0.01, progression-free survival [PFS] [ERF-CIC co-deletion 16 events/52 total; no ERF-CIC co-deletion 77 events/442 total]; Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by survival analysis data shown in Figure 1G with specific p-values and event counts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "35eca052-fb9b-4d88-9ac7-c471e02c6fd2",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C11",
+      "claim": "Genetic inactivation of both CIC and ERF increases colony formation compared to single gene loss in PNT2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to single gene loss of CIC or ERF, genetic inactivation of both CIC and ERF increased colony formation (Figure 2A\u2013B, Figure 2\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A-B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "d486ba64-53bd-4a92-a486-870d7273304c",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C12",
+      "claim": "CIC-ERF co-deletion enhances spheroid formation in PNT2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "CIC-ERF co-deletion also enhanced malignant phenotypes including cellular viability, invasiveness, and migratory capacity in PNT2 (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 2C-D and 2E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "e6d0278f-e4bf-440f-9cce-28ed05c5c6bd",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C13",
+      "claim": "Genetic silencing of both CIC and ERF increases the frequency of subcutaneous tumor xenograft formation in SCID mice",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, genetic silencing of both CIC and ERF increased the frequency of subcutaneous tumor xenograft formation in severe-combined immunodeficient (SCID) mice compared to control (Figure 2H, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo xenograft data shown in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "f9d0a56e-9a0d-4950-b79c-6d3f33a3dd36",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C14",
+      "claim": "DU-145 cells harbor a loss-of-function ERF mutation (ERFA132S) and express functional wild-type CIC",
+      "claim_type": "EXPLICIT",
+      "source": "DU-145 cells harbor a loss-of-function ERF mutation (ERFA132S) (Huang et al., 2017) and express functional WT CIC, (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation and validation data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "064b68b6-e553-4f6a-bdb3-77efc8c6da87",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C15",
+      "claim": "PC-3 cells are deficient in CIC (homozygous deletion) and retain functional ERF",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, PC-3 cells are deficient in CIC (homozygous deletion) and retain functional ERF (Figure 3\u2014figure supplement 1B; Cerami et al., 2012; Gao et al., 2013; Seim et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and validation data shown in Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "ef4723a0-762d-4c06-b228-dde51fb544c9",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C16",
+      "claim": "Genetic reconstitution of ERF into ERF-deficient DU-145 cells decreases colony formation in both CIC proficient and CIC knockout conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, genetic reconstitution of ERF into ERF-deficient DU-145 cells decreased colony formation in both CIC proficient (parental cells) and CIC knockout (KO) conditions (Figure 3A\u2013B, Figure 3\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A-B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "8220cb09-609d-4a20-82cd-32c08a2098f0",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C17",
+      "claim": "ERF expression in CIC KO DU-145 cells rescues the CIC-mediated effects on viability and migration/invasion",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that ERF expression in CIC KO DU-145 cells rescued the CIC-mediated effects on viability and migration/invasion (Figure 3C\u2013D, Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "a148f11b-1835-4862-9223-c621b9e8a7fe",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C18",
+      "claim": "CIC knockout increases tumor growth rate in DU-145 xenografts in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our in vitro data, CIC KO increased the tumor growth rate in vivo and genetic reconstitution of WT ERF partially suppressed tumor growth compared to DU-145 CIC KO cells (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo xenograft data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "1c6f5148-2cf8-4a93-85a5-595e0d0a0d3f",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C19",
+      "claim": "Genetic reconstitution of ERF into CIC proficient DU-145 cells suppresses tumor growth rate in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, genetic reconstitution of ERF into CIC proficient DU-145 cells suppressed the tumor growth rate in vivo (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo xenograft data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "894d5c3a-3306-42d7-9593-55827764a6ff",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C20",
+      "claim": "ERF overexpression or CIC reconstitution decreases PC-3 colony formation, with combinatorial ERF OE and CIC rescue having the most significant reduction",
+      "claim_type": "EXPLICIT",
+      "source": "We first noted that ERF overexpression (OE) or reconstitution of CIC alone decreased PC-3 colony formation, with combinatorial ERF OE and CIC rescue having the most significant reduction compared to parental PC-3 cells (Figure 3F\u2013G, Figure 3\u2014figure supplement 1F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3F-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "cdfbf711-1ef2-4d8e-b2fc-9a6bc7d4bbe7",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C21",
+      "claim": "ERF overexpression in CIC deficient PC-3 tumor xenografts decreases tumor growth compared to PC-3 parental and PC-3 cells expressing wild-type CIC",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, OE of ERF in mice bearing CIC deficient PC-3 tumor xenografts decreased tumor growth compared to PC-3 parental and PC-3 cells expressing WT CIC (genetic rescue of CIC; Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo xenograft data shown in Figure 3J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "25decad2-2446-4b57-a5a0-c0f70aeae95d",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C22",
+      "claim": "ChIP-Seq analysis identified 178 high-confidence CIC peaks that mapped to 130 annotated genes including ETV1, ETV4, and ETV5",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified 178 high-confidence (False-discovery rate (FDR) \u22640.05) CIC peaks that mapped to 130 annotated genes including known targets, ETV1, ETV4, and ETV5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-Seq experimental data with specific FDR threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "a9fe89d2-fd2d-4755-baf0-7f18f917173b",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C23",
+      "claim": "CIC peaks are localized to promoters (38.6%), UTRs (1.14%), introns (19.9%), and distal intergenic regions (38.64%)",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, CIC peaks were localized to distinct genomic regions including promoters (38.6%), untranslated regions (UTRs) (1.14%), introns (19.9%), and distal intergenic regions (38.64%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-Seq analysis data with specific percentages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "42aaacaa-db09-4c42-b406-eda71162ba35",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C24",
+      "claim": "ERF peaks are distributed to promoters (32.8%), UTRs (1.2%), introns (29.2%), and distal intergenic regions (33.8%)",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the distribution of ERF peaks was similar to CIC, with 32.8% in promoters, 1.2% in UTRs, 29.2% intronic, and 33.8% in distal intergenic regions (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-Seq analysis data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "1871a050-f215-4ed8-ae11-42a68a88a878",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C25",
+      "claim": "Comparative ChIP-Seq analysis identified 91 shared CIC and ERF target genes",
+      "claim_type": "EXPLICIT",
+      "source": "Next, through a comparative ChIP-Seq analysis (Figure 4B), we identified 91 shared CIC and ERF target genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative ChIP-Seq analysis shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "0fb688d2-2997-4da7-a921-086558dc5608",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C26",
+      "claim": "PEA3 family transcription factors (ETV1, ETV4, and ETV5) are the most highly enriched family among shared CIC and ERF target genes",
+      "claim_type": "EXPLICIT",
+      "source": "Among these putative CIC and ERF targets, the PEA3 (ETV1, ETV4, and ETV5) TFs (known oncogenic drivers in PCa; Baena et al., 2013; Kim et al., 2016; Oh et al., 2012) were found to be the most highly enriched family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Functional Clustering Analysis using DAVID bioinformatics database",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "65a05bf4-42ee-4373-b02c-fbc12b6a12bb",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C27",
+      "claim": "CIC knockout and/or combinatorial CIC and ERF loss in PNT2 cells increases ETV1, ETV4, and ETV5 levels compared to control",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, CIC KO and/or combinatorial CIC and ERF loss in PNT2 cells (ERF and CIC WT) consistently increased ETV1, ETV4, and ETV5 levels compared to control (Figure 4\u2014figure supplement 1A-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 4\u2014figure supplement 1A-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "f48592d0-19c2-4626-a5af-bf65d57f3dff",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C28",
+      "claim": "Genetic silencing of ERF consistently increases ETV1 mRNA expression, but not ETV4 or ETV5",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, genetic silencing of ERF consistently increased ETV1 mRNA expression, but not ETV4 or ETV5 (Figure 4C, Figure 4\u2014figure supplement 1G-J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 4C and Figure 4\u2014figure supplement 1G-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "c3c02344-c44e-4fcf-b0f8-fa456bf4b8f7",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C29",
+      "claim": "CIC and ERF do not physically interact based on co-immunoprecipitation experiments",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test a potential proteomic interaction between CIC and ERF, we performed co-immunoprecipitation (Co-IP) experiments but did not observe binding when either ERF or CIC was pulled down in HEK293T cells (Figure 4\u2014figure supplement 1K-L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Co-IP experimental data shown in Figure 4\u2014figure supplement 1K-L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "df0a80d4-3d46-411a-ad70-fa389ccba3ec",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C30",
+      "claim": "CIC and ERF independently bind to the proximal ETV1 regulatory element",
+      "claim_type": "EXPLICIT",
+      "source": "we first localized CIC (TGAATGGA) and ERF (GGAA) DNA binding motifs within the proximal upstream regulatory element of ETV1 and independently confirmed CIC and ERF occupancy of the ETV1 promoter through ChIP-PCR (Figure 4D\u2013G, Figure 4\u2014figure supplement 1M, P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-PCR data shown in Figure 4D-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "5ce70f12-d146-4aeb-ad9f-c7f670332c9b",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C31",
+      "claim": "ERF reconstitution in ERF deficient DU-145 cells decreases ETV1 expression in both CIC proficient and CIC deficient settings",
+      "claim_type": "EXPLICIT",
+      "source": "To extend these findings into the context of PCa, we reconstituted ERF in ERF deficient DU-145 cells and this consistently decreased ETV1 expression (not ETV4 or ETV5) in both CIC proficient and CIC deficient settings (Figure 4H, Figure 4\u2014figure supplement 1Q-T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "ac8cc1d1-0027-4578-94ce-d61744ccb656",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C32",
+      "claim": "ERF knockdown in CIC deficient PC-3 cells increases ETV1 mRNA expression",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ERF Knockdown (KD) or ERF OE in CIC deficient PC-3 cells increased and decreased ETV1 mRNA expression, respectively (Figure 4I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 4I-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "c9e2703c-6f26-4b87-82cf-627649114b90",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C33",
+      "claim": "ERF expression decreases luciferase activity in ETV1 promoter assays in 293T cells",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we engineered a ETV1 luciferase based promoter assays and observed a decrease in luciferase activity following ERF expression in 293T cells (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by luciferase promoter assay data shown in Figure 4K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "6c8f6951-09f5-49b3-83e1-cab4f1d5d232",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C34",
+      "claim": "Dual CIC and ERF deficiency is significantly associated with the ETV1-regulated gene set (IC=0.619, p=0.0009)",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CIC and ERF loss were significantly associated with the ETV1-regulated gene set (Information coefficient (IC)=0.619, p=0.0009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ssGSEA analysis with specific IC and p-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "97883bc7-8dee-4c2a-8eee-19288413750d",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C35",
+      "claim": "Dual CIC and ERF deficiency is anti-correlated with the TMPRSS2-ERG fusion signature gene set (IC=-0.45, p=0.0009)",
+      "claim_type": "EXPLICIT",
+      "source": "but was anti-correlated with the TMPRSS2-ERG fusion signature gene set (Setlur et al., 2008; Figure 4L, IC = \u20130.45, p=0.0009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ssGSEA analysis shown in Figure 4L with specific IC and p-value",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "576b973b-b505-43eb-a23c-2415e83a8810",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C36",
+      "claim": "Silencing CIC in ERF-deficient DU-145 cells mildly enhances sensitivity to ETV1 inhibitor BRD32048",
+      "claim_type": "EXPLICIT",
+      "source": "we unexpectedly observed that silencing CIC in DU-145 cells mildly enhanced sensitivity to BRD32048 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by drug sensitivity assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "6a3ced6f-fbe9-461e-ab9f-deee7b4aee8a",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C37",
+      "claim": "Viability of DU-145 CIC KO cells is decreased upon genetic ETV1 inhibition",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our pharmacologic studies, the viability of DU-145 CIC KO cells was decreased upon genetic ETV1 inhibition (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by viability assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "0b0bb6a8-1b77-483a-942c-30027ebd0a9c",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C38",
+      "claim": "Pharmacologic and genetic ETV1 inhibition decreases invasiveness of CIC deficient DU-145 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, pharmacologic and genetic ETV1 inhibition decreased invasiveness of CIC deficient DU-145 cells (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by invasion assay data shown in Figure 5C-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "57469159-9907-4c07-9796-6481fdca9526",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C39",
+      "claim": "ETV1 inhibition decreases viability and invasiveness in PNT2 cells with dual ERF and CIC suppression",
+      "claim_type": "EXPLICIT",
+      "source": "To expand these findings, we also consistently observed a decrease in viability and invasiveness upon ETV1 inhibition (BRD32048) in PNT2 cells with dual ERF and CIC suppression and in PC-3 cells with ERF KD (Figure 5\u2014figure supplement 2A-J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 2A-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "81b771b1-c501-4cd3-a7e1-f216062ff7cd",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C40",
+      "claim": "Activation of ETS transcription factors (ERG, ETV1, ETV4, and ETV5) is present in approximately 60% of prostate cancer",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of ETS transcription factors (TFs), ERG, ETV1, ETV4, and ETV5, are present in approximately 60% of PCa, underscoring their importance in prostate oncogenesis (Nelson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research (Nelson et al., 2003)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "c762c7d4-d3f3-4086-acf9-c6e7e674f4c0",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C41",
+      "claim": "ETS transcription factors are most commonly activated through gene rearrangements that fuse TMPRSS2 to ERG, ETV1, ETV4, or ETV5",
+      "claim_type": "EXPLICIT",
+      "source": "In human PCa, ETS TFs are most commonly activated through gene rearrangements that fuse the androgen responsive gene, TMPRSS2, to either ERG, ETV1, ETV4, or ETV5 (Sizemore et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research (Sizemore et al., 2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "d874edd3-1464-4cbe-9c14-bd46858a4dad",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C42",
+      "claim": "Increased expression of wildtype ETS factors confers aggressive malignant phenotypes and associates with poor clinical outcomes in fusion negative prostate cancer patients",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond ETS TF fusions, little is known about the underlying molecular mechanisms that lead to increased expression of wildtype (WT) ETS factors, which confer aggressive malignant phenotypes and associate with poor clinical outcomes in fusion negative PCa patients (Baena et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research (Baena et al., 2013)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "777fd3b3-e459-49ec-85df-bd6cf92739b8",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C43",
+      "claim": "CIC is a High-mobility group (HMG) box transcription factor",
+      "claim_type": "EXPLICIT",
+      "source": "Capicua (CIC) is a High-mobility group (HMG) box TF that silences ETV1, ETV4, and ETV5 through direct target gene repression (Kim et al., 2021; Sim\u00f3n-Carrasco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text and supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "947394ae-d013-4752-be7f-7b92763c687f",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C44",
+      "claim": "Inactivation of CIC de-represses ETV1, ETV4, and ETV5 transcription to promote tumor progression",
+      "claim_type": "EXPLICIT",
+      "source": "inactivation of CIC de-represses ETV1, ETV4, and ETV5 transcription to promote tumor progression (Bettegowda et al., 2011; Choi et al., 2015; Kim et al., 2018; Okimoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "f4ea8c18-d462-4c2f-aab5-9ad897fa9721",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C45",
+      "claim": "CIC and ERF are separated by approximately 15 kb (long isoform) and 30 kb (short isoform) in the genome",
+      "claim_type": "EXPLICIT",
+      "source": "long and short isoforms of CIC are separated from ERF by approximately 15 and 30 kb, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text based on genomic location data",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "047253a2-0f4d-4a04-a00a-3179b5702b03",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C46",
+      "claim": "Concurrent loss of CIC and ERF most commonly occurs through focal genomic deletions at chromosome 19q13.2",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent CIC and ERF loss commonly occur through focal genomic deletions at chromosome 19q13.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by genomic analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "8ec08590-e9d6-4090-9e97-a27ca4aebf23",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C47",
+      "claim": "CIC and ERF co-bind the proximal regulatory element and mutually repress ETV1",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, CIC and ERF co-bind the proximal regulatory element and mutually repress the ETS transcription factor, ETV1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by ChIP-Seq and functional data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "70a2267a-fb09-4a23-97a6-36b374b4d2f5",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C48",
+      "claim": "Targeting ETV1 in CIC and ERF-deficient prostate cancer limits tumor growth",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting ETV1 in CIC and ERF-deficient prostate cancer limits tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by experimental data in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "daed4e74-99ad-46c0-bb4d-ba2220cdd08b",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C49",
+      "claim": "CIC binds to a highly conserved DNA-binding motif (T[G/C]AAT[G/A]AA)",
+      "claim_type": "EXPLICIT",
+      "source": "CIC silences target genes through direct binding of a highly conserved DNA-binding motif (T[G/C]AAT[G/A]AA; Figure 1A; Ajuria et al., 2011; Futran et al., 2015; Jim\u00e9nez et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and shown in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "d77d4c9d-9c80-42e4-a67c-35194e79ba40",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C50",
+      "claim": "ERF binds and competes for ETS TF-binding sites (GGAA-motifs)",
+      "claim_type": "EXPLICIT",
+      "source": "ERF binds and competes for ETS TF-binding sites (GGAA-motifs) and is frequently altered in human PCa, predominantly through focal deletions (Bose et al., 2017; Hou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "9e1f844a-3e0a-409b-b7b8-f03ef49c65e3",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C51",
+      "claim": "CIC and ERF are co-deleted in approximately 10% and 12% of prostate cancer patients, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "we first queried 15 PCa datasets curated on cBioPortal (Cerami et al., 2012; Gao et al., 2013) and identified a high cooccurrence rate (p<0.001, two-sided Fisher's exact test [FET]) for CIC (10%) and ERF (12%) homozygous and heterozygous deletions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of 15 PCa datasets with specific percentages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "721db62f-c118-4508-afae-393f09738bd3",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C52",
+      "claim": "CIC-ERF co-deleted tumors do not frequently co-occur with other known oncogenic events (ERG, ETV1, ETV4, SPOP, and FOXA1)",
+      "claim_type": "EXPLICIT",
+      "source": "CIC-ERF co-deleted prostate tumors (red box) do not frequently co-occur with other known oncogenic events.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is shown in Figure 1F caption and supported by oncoprint analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "ee7df6c2-f2ff-47e4-831d-4b4a0f447791",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C53",
+      "claim": "Combination of CIC and ERF loss augments the transformation of PNT2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings demonstrate that the combination of CIC and ERF loss augments the transformation of PNT2 and promotes malignant phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple in vitro and in vivo experiments shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "5c4051a6-15ec-4308-8f99-18053e848669",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C54",
+      "claim": "CIC loss increases ETV1, ETV4, and ETV5 levels in PNT2 cells",
+      "claim_type": "IMPLICIT",
+      "source": "As expected, CIC KO and/or combinatorial CIC and ERF loss in PNT2 cells (ERF and CIC WT) consistently increased ETV1, ETV4, and ETV5 levels compared to control (Figure 4\u2014figure supplement 1A-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the phrase 'as expected' and supported by qRT-PCR data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "302451b0-5b67-427e-b333-6c470fc33a63",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C55",
+      "claim": "ETV1 is a novel ERF target gene",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we reveal ETV1 as a novel ERF target gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated explicitly and supported by multiple lines of experimental evidence including ChIP-PCR and luciferase assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "66ccca57-0554-4235-a2c7-c8d165935679",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C56",
+      "claim": "ERF can suppress ETV1 expression through direct transcriptional silencing of the ETV1 promoter",
+      "claim_type": "EXPLICIT",
+      "source": "These genetic tools further validate that ERF can suppress ETV1 expression through direct transcriptional silencing of the ETV1 promoter and identifies ETV1 as an ERF target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by luciferase promoter assay and ChIP-PCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "cc9b5a29-2e74-4529-8c9c-6ab9eb93f51b",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C57",
+      "claim": "Dual suppression of CIC and ERF increases ETV1-mediated transcriptional programs in prostate cancer",
+      "claim_type": "EXPLICIT",
+      "source": "These findings led us to hypothesize that the dual suppression of CIC and ERF may increase ETV1-mediated transcriptional programs in PCa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a hypothesis supported by ssGSEA analysis and functional data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "f2920f26-34f2-40d3-87b9-bc037a192f22",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C58",
+      "claim": "Loss of CIC in ERF-deficient prostate cancer cells can potentially modulate the sensitivity to ETV1-directed therapies",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that loss of CIC in ERF deficient PCa cells can potentially modulate the sensitivity to ETV1-directed therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by drug sensitivity and genetic inhibition experiments shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "ad303944-7935-4bbd-a1b7-8e365816879a",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C59",
+      "claim": "CIC and ERF cooperate to silence ETV1 transcriptional programs, limiting ETV1-mediated prostate cancer progression",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data indicate that CIC and ERF may cooperate to silence ETV1 transcriptional programs, limiting ETV1-mediated PCa progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion supported by multiple lines of experimental evidence throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "a1be35d4-e127-46d9-b41f-8f1aef8fe0fa",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C60",
+      "claim": "The predominant mode of ETS activation in prostate cancer is through chromosomal rearrangements that fuse TMPRSS2 to ETS family members",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant mode of ETS activation in PCa is through chromosomal rearrangements that fuse ERG, ETV1, ETV4, and ETV5 to the androgen-regulated TMPRSS2 gene, leading to fusion oncoproteins that drive oncogenesis (Clark and Cooper, 2009; Feng et al., 2014; Helgeson et al., 2008; Tomlins et al., 2006; Tomlins et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "bf89a3c1-7fb9-46c1-b074-6d166118a6b3",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C61",
+      "claim": "ETV1, ETV4, and ETV5 are upregulated in a fusion-independent manner and are associated with poor clinical outcomes in prostate cancer patients",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent data indicate that ETV1, ETV4, and ETV5 are upregulated in a fusion-independent manner and are associated with poor clinical outcomes in PCa patients (Baena et al., 2013; Hermans et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "9cdd407d-083f-4d7b-b947-16036e17baf1",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C62",
+      "claim": "CIC-ERF co-deletion represents a new molecular subclass of prostate cancer",
+      "claim_type": "EXPLICIT",
+      "source": "Our study focused on understanding the molecular mechanisms that drive fusion-independent upregulation of ETS family members and we reveal a new molecular subclass of PCa defined by a co-deletion of two TFs, CIC and ERF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Discussion and supported by clustering analysis and clinical data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "a111df8e-2776-4d0b-afb5-f123d545d7c4",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C63",
+      "claim": "CIC and ERF are co-deleted in a subset of stomach adenocarcinoma",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond PCa, we and others have observed that CIC and ERF are co-deleted in a subset of stomach adenocarcinoma (LeBlanc et al., 2017; Okimoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "5aa49369-03f8-4a62-9da7-6d6ff1e7dcef",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C64",
+      "claim": "Combined CIC and ERF loss is not entirely specific for prostate cancer",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, combined CIC and ERF loss are not entirely specific for PCa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Discussion based on observations in stomach adenocarcinoma",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "76b704b0-b73e-4509-9ddb-611d18ee03b5",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C65",
+      "claim": "Prostate cancer is highly dependent on PEA3 transcriptional dysregulation to enhance tumor progression",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that since prostate (Baena et al., 2013) and potentially stomach adenocarcinoma (Keld et al., 2011) are highly dependent on PEA3 transcriptional dysregulation to enhance tumor progression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as speculation supported by citations",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "752792a2-48af-464a-b8b4-b0841da1b6d3",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C66",
+      "claim": "Dual loss of CIC and ERF may represent an alternative mode to de-repress ETS mediated transcriptional programs in prostate and stomach adenocarcinoma",
+      "claim_type": "EXPLICIT",
+      "source": "the dual loss of CIC and ERF may, in part, represent an alternative mode to de-repress ETS mediated transcriptional programs in these cancer subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as speculation based on observations in multiple cancer types",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "ee4dc4f6-ed8f-4aec-9c70-c512cac9269a",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C67",
+      "claim": "Patients with CIC-ERF deficient prostate cancer may potentially benefit from ETV1 directed therapies",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that patients with CIC-ERF deficient PCa may have a survival dependence on ETV1 and that these patients may potentially benefit from ETV1 directed therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a potential therapeutic implication based on experimental data",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "6de8c3ca-ec56-4acb-b44f-f735594e8314",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C68",
+      "claim": "There is no statistically significant difference in ETV1 transcript levels in CIC-ERF co-deleted tumors compared to CIC-ERF replete tumors in the TCGA-PRAD dataset",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of this targeted approach in PCa patients is that we did not find a statistically significant difference in ETV1 transcript levels in CIC-ERF co-deleted tumors compared to CIC-ERF replete tumors in the TCGA-PRAD (n=455) dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a limitation based on analysis of TCGA-PRAD dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "4e0d70ed-4d2c-41df-8c8d-c868b518f67d",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "claim_id": "C69",
+      "claim": "ETV1 is commonly upregulated in human prostate cancers through mechanisms beyond CIC-ERF loss",
+      "claim_type": "EXPLICIT",
+      "source": "One potential explanation is that ETV1 is commonly upregulated in human PCas through mechanisms beyond CIC-ERF loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a potential explanation for the lack of differential ETV1 expression",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CIC and ERF are frequently co-deleted in prostate cancer (~10-12% of patients) through focal genomic deletions at chromosome 19q13.2. This co-deletion is enriched in metastatic castrate-resistant prostate cancer, associates with higher Gleason scores and later tumor stages, defines a distinct molecular subtype, and correlates with significantly worse disease-free survival (p=0.001) and progression-free survival (p=0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 provide converging evidence from multiple independent datasets (15 PCa studies) with appropriate statistical tests (Fisher's exact test, log-rank test) and specific p-values. The clustering analysis (C9) and survival data (C10) with event counts support the clinical significance. However, the authors acknowledge potential overlap between datasets, which could inflate significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "072e8301-f4e3-49df-a074-b423e74d47fd",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dual genetic inactivation of CIC and ERF in PNT2 prostate epithelial cells increases colony formation, spheroid formation, cellular viability, invasiveness, migratory capacity, and frequency of subcutaneous tumor xenograft formation compared to single gene loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by multiple complementary in vitro assays (colony formation, spheroid, viability, invasion, migration) and in vivo xenograft data with appropriate replicates (n=3-6 for in vitro, n=10 for in vivo). Statistical significance is reported with p-values. The data consistently demonstrate cooperative effects of dual loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In prostate cancer cell lines with endogenous CIC or ERF deficiency (DU-145 and PC-3), genetic reconstitution or overexpression of the missing factor suppresses malignant phenotypes including colony formation, viability, invasion, migration, and tumor growth in xenografts. ERF expression can partially rescue CIC-mediated effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 utilize complementary cell line models (DU-145: ERF-deficient, CIC-proficient; PC-3: CIC-deficient, ERF-proficient) with appropriate genetic manipulations. Multiple phenotypic assays and in vivo xenograft experiments (n=10 mice) consistently demonstrate rescue effects. The data support functional cooperation between CIC and ERF.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "6a1158a3-ba46-4429-9f59-4cd6bcce15e5",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ChIP-Seq analysis identified 178 high-confidence CIC peaks mapping to 130 genes and 91 shared CIC-ERF target genes. CIC and ERF peaks show similar genomic distributions (promoters, UTRs, introns, distal intergenic regions). PEA3 family transcription factors (ETV1, ETV4, ETV5) are the most highly enriched among shared targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by ChIP-Seq data with appropriate FDR threshold (\u22640.05) and functional clustering analysis using DAVID. However, a limitation is that CIC ChIP-Seq was performed in PNT2 cells while ERF ChIP-Seq data came from a different cell line (VCaP) and prior publication, which may affect the validity of direct comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "3386468d-e84e-464b-a65c-09ac7678a9da",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CIC and ERF independently bind to the proximal ETV1 regulatory element and mutually repress ETV1 expression. CIC loss increases ETV1, ETV4, and ETV5 levels, while ERF loss specifically increases ETV1 but not ETV4 or ETV5. CIC and ERF do not physically interact based on co-immunoprecipitation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 are supported by multiple complementary approaches: qRT-PCR (n=3), ChIP-PCR, luciferase promoter assays (n=6), and Co-IP experiments. The data consistently demonstrate independent binding and ETV1-specific regulation by ERF. The negative Co-IP result (C29) appropriately rules out direct protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "732e17f3-c260-4a59-8063-5c450a240f55",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dual CIC and ERF deficiency is significantly associated with the ETV1-regulated gene set (IC=0.619, p=0.0009) but anti-correlated with the TMPRSS2-ERG fusion signature (IC=-0.45, p=0.0009), suggesting that dual suppression increases ETV1-mediated transcriptional programs in prostate cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by ssGSEA analysis with specific information coefficients and p-values. The analysis appropriately uses TCGA-PRAD dataset and established gene signatures. The anti-correlation with ERG fusion signature supports a distinct mechanism of ETS activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "d7411681-138c-40e9-b684-82860610af76",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ETV1 inhibition (pharmacologic with BRD32048 or genetic with siRNA) decreases viability and invasiveness in CIC and ERF-deficient prostate cancer cells, suggesting that CIC-ERF co-deleted tumors may be sensitive to ETV1-directed therapies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C39 show modest effects of ETV1 inhibition with appropriate controls and replicates. However, C36 notes 'unexpectedly' mild enhancement and C58/C67 use cautious language ('can potentially modulate', 'may potentially benefit'). The lack of in vivo validation of ETV1 inhibitor efficacy and the acknowledged limitation (C68) that ETV1 transcript levels are not significantly different in patient tumors weakens the therapeutic implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "1272a5ab-9208-4765-bd35-93cb6b20878e",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background claims establishing that CIC and ERF are tumor suppressors frequently altered in cancer, that ETS transcription factors are activated in ~60% of prostate cancers predominantly through TMPRSS2 fusions, and that fusion-independent ETS upregulation associates with poor outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C40-C44, C49-C50, C60-C61 are appropriately supported by multiple citations to prior literature. These establish the scientific context and are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "5e966a2e-56a2-4551-8c53-84d8223cc6e2",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CIC and ERF are physically adjacent genes (~15-30 kb apart) on chromosome 19q13.2. CIC-ERF co-deletion represents a new molecular subclass of prostate cancer and also occurs in stomach adenocarcinoma, suggesting this may be an alternative mode to de-repress ETS programs in cancers dependent on PEA3 transcriptional dysregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by genomic data. Claims C62-C66 represent interpretive conclusions supported by the clustering analysis (C9) and citations to prior work in stomach cancer. The speculation about mechanism (C65-C66) is appropriately qualified and supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "3172b9e6-5808-4ff8-a108-e1404e57c7df",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CIC and ERF co-bind the proximal regulatory element and mutually repress ETV1, cooperating to silence ETV1 transcriptional programs and limit ETV1-mediated prostate cancer progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C59 represent the central mechanistic conclusion of the manuscript, synthesizing results from ChIP-Seq (C22-C26), binding studies (C30), expression analyses (C27-C32), functional assays (C11-C21), and gene set enrichment (C34-C35). The conclusion is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    },
+    {
+      "id": "3d0ccc28-d18b-4184-9ea4-f1f7b801ea5a",
+      "content_id": "143a7214-1123-4416-9b72-97f81b13ab64",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There is no statistically significant difference in ETV1 transcript levels between CIC-ERF co-deleted and CIC-ERF replete tumors in the TCGA-PRAD dataset (n=455), potentially because ETV1 is commonly upregulated through mechanisms beyond CIC-ERF loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 appropriately acknowledge a significant limitation of the study. The authors transparently report negative findings in patient samples that contrast with their cell line results. The proposed explanation (C69) is speculative but reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:33.160509Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "376ccfa8-0372-4b17-b75c-827edb84909e",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "64c682b0-fba2-4ae3-ba91-a68f86140975",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "80c8f421-5b63-4406-b0a5-3a9e7247c727",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "2e100c30-6858-4907-8c3c-a0c2ccce6474",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "5de9b931-13a6-4a3a-8df7-9ba3337e9a4f",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "047253a2-0f4d-4a04-a00a-3179b5702b03",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "9e1f844a-3e0a-409b-b7b8-f03ef49c65e3",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "721db62f-c118-4508-afae-393f09738bd3",
+      "result_id": "f07aaff5-f7c0-4f38-ba17-7955605a5ab6"
+    },
+    {
+      "claim_id": "35eca052-fb9b-4d88-9ac7-c471e02c6fd2",
+      "result_id": "072e8301-f4e3-49df-a074-b423e74d47fd"
+    },
+    {
+      "claim_id": "d486ba64-53bd-4a92-a486-870d7273304c",
+      "result_id": "072e8301-f4e3-49df-a074-b423e74d47fd"
+    },
+    {
+      "claim_id": "e6d0278f-e4bf-440f-9cce-28ed05c5c6bd",
+      "result_id": "072e8301-f4e3-49df-a074-b423e74d47fd"
+    },
+    {
+      "claim_id": "ee7df6c2-f2ff-47e4-831d-4b4a0f447791",
+      "result_id": "072e8301-f4e3-49df-a074-b423e74d47fd"
+    },
+    {
+      "claim_id": "f9d0a56e-9a0d-4950-b79c-6d3f33a3dd36",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "064b68b6-e553-4f6a-bdb3-77efc8c6da87",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "ef4723a0-762d-4c06-b228-dde51fb544c9",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "8220cb09-609d-4a20-82cd-32c08a2098f0",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "a148f11b-1835-4862-9223-c621b9e8a7fe",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "1c6f5148-2cf8-4a93-85a5-595e0d0a0d3f",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "894d5c3a-3306-42d7-9593-55827764a6ff",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "cdfbf711-1ef2-4d8e-b2fc-9a6bc7d4bbe7",
+      "result_id": "1700a7fa-033a-4cdb-8bc8-42fdac60cd3e"
+    },
+    {
+      "claim_id": "25decad2-2446-4b57-a5a0-c0f70aeae95d",
+      "result_id": "6a1158a3-ba46-4429-9f59-4cd6bcce15e5"
+    },
+    {
+      "claim_id": "a9fe89d2-fd2d-4755-baf0-7f18f917173b",
+      "result_id": "6a1158a3-ba46-4429-9f59-4cd6bcce15e5"
+    },
+    {
+      "claim_id": "42aaacaa-db09-4c42-b406-eda71162ba35",
+      "result_id": "6a1158a3-ba46-4429-9f59-4cd6bcce15e5"
+    },
+    {
+      "claim_id": "1871a050-f215-4ed8-ae11-42a68a88a878",
+      "result_id": "6a1158a3-ba46-4429-9f59-4cd6bcce15e5"
+    },
+    {
+      "claim_id": "0fb688d2-2997-4da7-a921-086558dc5608",
+      "result_id": "6a1158a3-ba46-4429-9f59-4cd6bcce15e5"
+    },
+    {
+      "claim_id": "65a05bf4-42ee-4373-b02c-fbc12b6a12bb",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "f48592d0-19c2-4626-a5af-bf65d57f3dff",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "c3c02344-c44e-4fcf-b0f8-fa456bf4b8f7",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "df0a80d4-3d46-411a-ad70-fa389ccba3ec",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "5ce70f12-d146-4aeb-ad9f-c7f670332c9b",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "ac8cc1d1-0027-4578-94ce-d61744ccb656",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "c9e2703c-6f26-4b87-82cf-627649114b90",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "5c4051a6-15ec-4308-8f99-18053e848669",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "302451b0-5b67-427e-b333-6c470fc33a63",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "66ccca57-0554-4235-a2c7-c8d165935679",
+      "result_id": "3386468d-e84e-464b-a65c-09ac7678a9da"
+    },
+    {
+      "claim_id": "6c8f6951-09f5-49b3-83e1-cab4f1d5d232",
+      "result_id": "732e17f3-c260-4a59-8063-5c450a240f55"
+    },
+    {
+      "claim_id": "97883bc7-8dee-4c2a-8eee-19288413750d",
+      "result_id": "732e17f3-c260-4a59-8063-5c450a240f55"
+    },
+    {
+      "claim_id": "cc9b5a29-2e74-4529-8c9c-6ab9eb93f51b",
+      "result_id": "732e17f3-c260-4a59-8063-5c450a240f55"
+    },
+    {
+      "claim_id": "576b973b-b505-43eb-a23c-2415e83a8810",
+      "result_id": "d7411681-138c-40e9-b684-82860610af76"
+    },
+    {
+      "claim_id": "6a3ced6f-fbe9-461e-ab9f-deee7b4aee8a",
+      "result_id": "d7411681-138c-40e9-b684-82860610af76"
+    },
+    {
+      "claim_id": "0b0bb6a8-1b77-483a-942c-30027ebd0a9c",
+      "result_id": "d7411681-138c-40e9-b684-82860610af76"
+    },
+    {
+      "claim_id": "57469159-9907-4c07-9796-6481fdca9526",
+      "result_id": "d7411681-138c-40e9-b684-82860610af76"
+    },
+    {
+      "claim_id": "70a2267a-fb09-4a23-97a6-36b374b4d2f5",
+      "result_id": "d7411681-138c-40e9-b684-82860610af76"
+    },
+    {
+      "claim_id": "f2920f26-34f2-40d3-87b9-bc037a192f22",
+      "result_id": "d7411681-138c-40e9-b684-82860610af76"
+    },
+    {
+      "claim_id": "ee4dc4f6-ed8f-4aec-9c70-c512cac9269a",
+      "result_id": "d7411681-138c-40e9-b684-82860610af76"
+    },
+    {
+      "claim_id": "1a5d4b56-3196-4ea7-82f4-93fda0732319",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "3bfe9a14-39bb-4de5-aafd-c12b447aa4fa",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "81b771b1-c501-4cd3-a7e1-f216062ff7cd",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "c762c7d4-d3f3-4086-acf9-c6e7e674f4c0",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "d874edd3-1464-4cbe-9c14-bd46858a4dad",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "777fd3b3-e459-49ec-85df-bd6cf92739b8",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "947394ae-d013-4752-be7f-7b92763c687f",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "daed4e74-99ad-46c0-bb4d-ba2220cdd08b",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "d77d4c9d-9c80-42e4-a67c-35194e79ba40",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "a1be35d4-e127-46d9-b41f-8f1aef8fe0fa",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "bf89a3c1-7fb9-46c1-b074-6d166118a6b3",
+      "result_id": "1272a5ab-9208-4765-bd35-93cb6b20878e"
+    },
+    {
+      "claim_id": "f4ea8c18-d462-4c2f-aab5-9ad897fa9721",
+      "result_id": "5e966a2e-56a2-4551-8c53-84d8223cc6e2"
+    },
+    {
+      "claim_id": "9cdd407d-083f-4d7b-b947-16036e17baf1",
+      "result_id": "5e966a2e-56a2-4551-8c53-84d8223cc6e2"
+    },
+    {
+      "claim_id": "a111df8e-2776-4d0b-afb5-f123d545d7c4",
+      "result_id": "5e966a2e-56a2-4551-8c53-84d8223cc6e2"
+    },
+    {
+      "claim_id": "5aa49369-03f8-4a62-9da7-6d6ff1e7dcef",
+      "result_id": "5e966a2e-56a2-4551-8c53-84d8223cc6e2"
+    },
+    {
+      "claim_id": "76b704b0-b73e-4509-9ddb-611d18ee03b5",
+      "result_id": "5e966a2e-56a2-4551-8c53-84d8223cc6e2"
+    },
+    {
+      "claim_id": "752792a2-48af-464a-b8b4-b0841da1b6d3",
+      "result_id": "5e966a2e-56a2-4551-8c53-84d8223cc6e2"
+    },
+    {
+      "claim_id": "8ec08590-e9d6-4090-9e97-a27ca4aebf23",
+      "result_id": "3172b9e6-5808-4ff8-a108-e1404e57c7df"
+    },
+    {
+      "claim_id": "ad303944-7935-4bbd-a1b7-8e365816879a",
+      "result_id": "3172b9e6-5808-4ff8-a108-e1404e57c7df"
+    },
+    {
+      "claim_id": "6de8c3ca-ec56-4acb-b44f-f735594e8314",
+      "result_id": "3d0ccc28-d18b-4184-9ea4-f1f7b801ea5a"
+    },
+    {
+      "claim_id": "4e0d70ed-4d2c-41df-8c8d-c868b518f67d",
+      "result_id": "3d0ccc28-d18b-4184-9ea4-f1f7b801ea5a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1619 @@
+{
+  "submission": {
+    "id": "06c628e8-6c13-4d80-9f63-8f91013a5a6c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:10:43.287931Z",
+    "updated_at": "2025-12-03T06:10:43.287931Z"
+  },
+  "content": [
+    {
+      "id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "submission_id": "06c628e8-6c13-4d80-9f63-8f91013a5a6c",
+      "content_type": "manuscript",
+      "content_text": "# Topography and motion of acid-sensing ion channel intracellular domains\n\n## Authors\n\n- Tyler Couch<sup>1</sup>\n- Kyle D Berger<sup>2</sup>\n- Dana L Kneisley<sup>2</sup>\n- Tyler W McCullock<sup>1</sup> ([ORCID: 0000-0003-1628-1102](https://orcid.org/0000-0003-1628-1102))\n- Paul Kammermeier<sup>2</sup>\n- David M Maclean<sup>2</sup> ([ORCID: 0000-0001-8294-6075](https://orcid.org/0000-0001-8294-6075)) \u2020\n\n### Affiliations\n\n1. Graduate Program in Cellular and Molecular Pharmacology and Physiology Reno United States\n2. Department of Pharmacology and Physiology, University of Rochester Medical Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAcid-sensing ion channels (ASICs) are trimeric cation-selective channels activated by decreases in extracellular pH. The intracellular N and C terminal tails of ASIC1 influence channel gating, trafficking, and signaling in ischemic cell death. Despite several X-ray and cryo-EM structures of the extracellular and transmembrane segments of ASIC1, these important intracellular tails remain unresolved. Here, we describe the coarse topography of the chicken ASIC1 intracellular domains determined by fluorescence resonance energy transfer (FRET), measured using either fluorescent lifetime imaging or patch clamp fluorometry. We find the C terminal tail projects into the cytosol by approximately 35 \u00c5 and that the N and C tails from the same subunits are closer than adjacent subunits. Using pH-insensitive fluorescent proteins, we fail to detect any relative movement between the N and C tails upon extracellular acidification but do observe axial motions of the membrane proximal segments toward the plasma membrane. Taken together, our study furnishes a coarse topographic map of the ASIC intracellular domains while providing directionality and context to intracellular conformational changes induced by extracellular acidification.\n\n## Introduction\n\nThe predominant sensor of extracellular pH in the central and peripheral nervous system is thought to be acid-sensing ion channels (ASICs) (Pattison et al., 2019). This family of trimeric pH-activated sodium-selective ion channels couples extracellular acidification to numerous physiological and pathophysiological consequences including synaptic transmission and plasticity (Du et al., 2014; Kreple et al., 2014; Liu et al., 2016; Uchitel et al., 2019; Yu et al., 2018), fear memory consolidation and expression (Du et al., 2017; Taugher et al., 2020; Taugher et al., 2017; Taugher et al., 2014), epilepsy (Ziemann et al., 2008), and ischemia-induced cell death (Wemmie et al., 2013; Xiong et al., 2004). However, in many of these cases, the duration of extracellular acidosis is quite long. Since most ASIC subunits desensitize nearly completely in a few seconds (Benson et al., 2002; Gr\u00fcnder and Pusch, 2015), how might these channels convey information over minutes or hours? While other extracellular pH sensors may play roles (Pattison et al., 2019; Ruan et al., 2020), recent evidence reveals that ASICs possess both canonical ionic and non-canonical metabotropic signaling capabilities.\n\nExtracellular acidosis is proposed to drive the association of the serine/threonine kinase receptor interacting protein 1 (RIP1) and N-ethylmaleimide-sensitive factor with ASIC1a, triggering RIP1 phosphorylation and initiating a necroptotic signaling cascade (Wang et al., 2020; Wang et al., 2015). This occurs independent of ASIC1a ion conductance and via intracellular protein-protein interactions (Wang et al., 2020; Wang et al., 2015). Thus, ASICs join a growing, and controversial, list of ligand-gated ion channels who also possess metabotropic signaling capacity (Dore et al., 2017; Kabbani and Nichols, 2018; Pressey and Woodin, 2021; Rodr\u00edguez-Moreno and Sihra, 2007; Valbuena and Lerma, 2016). Like many of these ion channels, the structure of the ASIC extracellular and transmembrane regions has been determined (Baconguis et al., 2014; Gonzales et al., 2009; Yoder and Gouaux, 2020; Yoder et al., 2018), but the intracellular domains\u00a0(ICDs) are unresolved. It is likely that the ASIC ICDs are partly, or even mostly, unstructured regions. Nonetheless, understanding the coarse outline of the two ICDs, the N and C tails, as well as their pH-induced movements, would inform further investigation of ASIC metabotropic signaling and may shed light on how the ICDs impact gating, protein-protein interactions, and/or trafficking (Baron et al., 2002; Chai et al., 2007; Hruska-Hageman et al., 2004; Kellenberger and Schild, 2015; Klipp et al., 2020; Leonard et al., 2003; Schnizler et al., 2009).\n\nHere, we set out to generate a coarse topography of the chicken ASIC1 intracellular N and C termini using fluorescence resonance energy transfer\u00a0(FRET) in several configurations. We find that the short (15 amino acid) N tail projects about 6\u201310 \u00c5 from the membrane inner leaflet into the cytosol while the longer 67 amino acid C tail extends between 30 and 40 \u00c5. This contrasts with the unresolved tail of AMPA receptors that is largely perpendicular to the membrane (Zachariassen et al., 2016). We also report that the N and proximal segment of the C tail from the same subunits are closer than adjacent subunits, suggesting preferential intra-subunit tail interactions which may inform the interpretation of experiments with heteromeric channels. Finally, using pH-insensitive fluorescent proteins\u00a0(FPs), we fail to detect any relative movement between the N and C tails but do observe axial motions of these segments toward the plasma membrane upon extracellular acidification. Together, these data allow us to build a topographical model of the intracellular tails of ASIC1 that will be a foundation for working hypotheses in future experiments.\n\n## Results\n\n### Voltage-dependent quenching measurements with dipicrylamine\n\nThe intracellular components of the cASIC1 N and C terminal tails are 15 and 67 amino acids, respectively. The range of possible structures adoptable by these tails is quite large. For example, in principle, the C tail could exist as a linear strand of peptide more than 70 \u00c5 long (Miller and Goebel, 1968) extended parallel to the plasma membrane or as a similar extended strand but perpendicular to the membrane plane, projecting \u2018downward\u2019 into the cytosol. These two extreme scenarios represent the borders of the conformational landscape. The main goal of our study was to experimentally shrink the range of possibilities and map this landscape. Our secondary goal was to determine if these ICDs move upon extracellular acidification. To do this, we adopted a FRET approach using different colored FPs as donors and the membrane soluble small molecule DPA as an acceptor (Figure 1A). DPA has several advantageous properties as a FRET acceptor (Chanda et al., 2005b; Wang et al., 2010). First, it is a dark acceptor, allowing FRET to be easily measured by changes in donor emission. Second, it binds and dissociates from the plasma membrane quickly with respect to the time of a patch clamp experiment. Third, and most critically, the anionic DPA orients in the plasma membrane depending on voltage, being pulled into the inner membrane leaflet by depolarization or pushed to the outer leaflet by hyperpolarization. Thus, voltage steps can move DPA molecules closer to, or further from, the donor by a fixed distance of 25 \u00c5, reflecting to the estimated displacement of DPA (Wang et al., 2010; Zachariassen et al., 2016). These qualities have been used to probe topography and conformational changes in several ion channels from multiple groups (Barros et al., 2018; Chanda et al., 2005a; De-la-Rosa et al., 2013; Groulx et al., 2010; Taraska and Zagotta, 2007). We validated this approach using patch clamp fluorometry where the fluorescence from single patch clamped cells, transfected with membrane tethered CFP or YFP variants (mTurquiose2 and mVenus), was recorded in the continual presence of DPA during a series of voltage steps (\u2212180 to +120 mV, 20 mV increments, Figure 1B). Membrane tethered CFP (Lck-CFP) gave robust voltage-dependent fluorescence changes in the presence of DPA (5 \u00b5M) but not in its absence and was quantified as the difference between the top and bottom values of a Boltzmann sigmoidal fit of the normalized fluorescence (\u0394F/F\u221215 mv = 0.45 \u00b1 0.03, n = 6, Figure 1C & D), consistent with the fluorophore being close to the plasma membrane and having a relatively high R0 distance (47 \u00c5). The Lck-YFP gave relatively weak voltage-dependent quenching in the presence of DPA (\u0394F/F\u221215 mv = 0.16 \u00b1 0.013, n = 6, Figure 1C & D), which is also consistent with a membrane proximal position but relatively lower R0 distance (36.5 \u00c5).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig1-v3.jpg)\n\n**Figure 1.:** (A) Absorption (dotted line) or fluorescence emission (solid lines) spectra of DPA (black), CFP variant mTurqoise2 (blue), GFP variant Gamillus (green) and YFP variant mVenus (yellow). Structure of DPA inset. (B, left) DPA (orange circle) localizes to the outer leaflet with hyperpolarization and moves to inner leaflet upon depolarization, resulting in stronger quenching. Arrows reflect excitation (purple), emission (blue), or resonance transfer (black). (B, right) Exemplar patch fluorometry data of Lck-CFP fluorescence changing during voltage steps. (C) Single cell fluorescence, normalized to fluorescence at \u221215 mV, over a range of voltages for Lck-CFP (blue) and Lck-YFP (yellow). Solid lines are fits to Boltzmann function which yield \u0394F/F. (D) Summary of \u0394F/Fs from Lck-CFP or Lck-YFP. Squares are single cells (N = 6 cells per construct) and error bars depict SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Simulated FRET efficiency over distance with an R0 of 55 \u00c5. Moving donor and acceptor apart by a fixed distance has a larger effect when the donor and acceptor are close (donor proximal case) compared to when they are further apart (donor distal case).\n\nNext, we set out to generate a coarse topographical map of chicken ASIC1 using DPA quenching. To do this, we relied upon the steeply non-linear distance dependence of FRET. For example, if DPA is close to a donor fluorophore then inducing a 25 \u00c5 displacement away using voltage steps will produce a large change in fluorescence whereas if DPA is far from a donor then a 25 \u00c5 displacement away will yield a much smaller effect, provided the DPA-donor initial distances are not on the asymptotes of the FRET curve (Figure 1\u2014figure supplement 1). We inserted CFP or YFP immediately upstream of the N terminus and into four positions within the C tail (Figure 2A, Figure 2\u2014figure supplement 1). The C tail positions were selected based on prior divisions within this domain (Wang et al., 2020; Wang et al., 2015). If the C tail is roughly parallel to the plasma membrane, as observed for AMPA receptors (Zachariassen et al., 2016), then all insertions will have equal voltage-dependent quenching. However, if quenching varies at different insertion points and between fluorophores, these data will provide insight into the topography of the tail. Importantly, FP insertions did not disrupt channel function as determined by the rates of desensitization and recovery, although small differences in desensitization decay of C4 and recovery of C1 insertions appeared (Figure 2\u2014figure supplement 2). Further, these constructs showed robust plasma membrane localization in confocal microscopy (Figure 2\u2014figure supplement 3). For each construct, we measured the fluorescence emission from single voltage clamped cells over a range of voltage steps before DPA application, during continual application of 5 \u00b5M DPA and during a subsequent wash period. Figure 2 shows the results of these experiments with extracellular pH 8 to maximally populate the resting state. Importantly, the extent of quenching varied by position, ruling out the possibility that the C tail is parallel to the membrane. Specifically, we found that with CFP insertions, the C1 position gave the strongest quenching (\u0394F/F\u221215 mv = 0.65 \u00b1 0.03) with N and C2 being about equal (\u0394F/F\u221215 mv = 0.48 \u00b1 0.03 and \u0394F/F\u221215 mv = 0.51 \u00b1 0.05) and C3 and C4 having progressively less quenching (\u0394F/F\u221215 mv = 0.39 \u00b1 0.03 and \u0394F/F\u221215 mv = 0.21 \u00b1 0.03). In the case of YFP, a slightly different pattern was observed where the N terminal YFP gave the strongest quenching (\u0394F/F\u221215 mv = 0.26 \u00b1 0.02) with C1\u2013C4 giving progressively weaker quenching (\u0394F/F\u221215 mv between 0.23 \u00b1 0.02 and 0.14 \u00b1 0.01, Figure 2B\u2013D). Quenching of the N terminal YFP insertion was statistically distinguishable from the C4 insertion (p = 0.019) but did not detect differences between adjacent insertions as for CFP (Figure 2D). As with the Lck data, we used Boltzmann fits to define the maximum and minimum fluorescence and calculate a \u0394F/F (see Materials\u00a0and\u00a0methods and Figure 1). However, using a \u2018fit free\u2019 approach and calculating a \u0394F/F by subtracting the measured fluorescence at the extreme voltages (i.e. \u2212180 mV and +120 mV) divided by the fluorescence at \u221215 mV produces similar results with an identical pattern of statistical significance (Figure 2\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic of cASIC1 constructs used. The extracellular domain (ECD) and transmembrane helices (TM) are gray with amino and carboxy termini depicted in white. Letters within the carboxy tail indicate the amino acid sequence around the insertion site while the lower numbers give the position. (B) Example fluorescence traces for each of the CFP or YFP insertions. Voltage protocol and coloring is the same as in Figure 1B. (C and D) Quenching curves and summary plots for CFP (left) and YFP (right) insertions. Symbols denote individual cells (N = 5\u20137 cells) and error bars represent SEM. Asterisks mark significant differences with p values of 0.004 (N\u2013C1), 0.0475 (C1\u2013C2), 0.0483 (C2\u2013C3), and 0.0163 (C3\u2013C4) for CFP.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The extracellular domain (ECD) and transmembrane helices (TM) are gray with amino and carboxy termini depicted in white. Numbers indicate the amino acid position for insertion. The violet bar shows the amino acid linker between the first and second subunit in the cASIC1 dimer. CFP, YFP, GFP, and RFP represent mTurq2, mVenus, Gamillus, and tagRFP, respectively. Sizes of fluorescent protein\u00a0(FP) insertions are not drawn to scale. See Materials\u00a0and\u00a0methods for further details.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Outside-out patch recording of cASIC1 CFP at C3 during paired pulse stimulation protocol using pH 8 and pH 5. (B) Recovery from desensitization curves over various interpulse intervals for the indicated constructs. The recovery slope, m, ranged from 0.94 \u00b1 0.08 to 1.06 \u00b1 0.02 (mean \u00b1 SEM). (C and D) Summary of desensitization entry (C) and recovery (D) time constants for the indicated constructs. Symbols denote individual excised patches (N = 9\u201312 patches per construct). Asterisks indicate significant difference compared to wild type using randomization test. For C4 desensitization, p = 0.00012. For C1 recovery, p = 0.046. Error bars represent SEM in all panels.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Confocal images of HEK293T cells transfected with the indicated constructs 2 days prior. Plasma membrane was stained with FM1\u201343 (5 \u00b5M) immediately prior to imaging.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Summary plots of DPA quenching for CFP (left) and YFP (right) insertions analyzed by subtraction of fluorescence values at +120 mV from \u2212180 mV without fitting to a model. Symbols denote individual cells (N = 5\u20137 cells) and error bars represent SEM. Asterisks mark significant differences with p-values of 0.005 (N\u2013C1), 0.0373 (C1\u2013C2), 0.0396 (C2\u2013C3), and 0.013 (C3\u2013C4) for CFP.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Schematic of DPA quenching of a fluorophore positioned away from the plasma membrane. (B) Predicted quenching curves for CFP (upper) and YFP (lower) at depolarized (light color) or hyperpolarized (darker color) voltages. Dotted line depicts the difference between hyperpolarized and depolarized curves or \u0394F as a function of axial distance. (C) \u0394F versus distance curves normalized to fluorescence at hyperpolarized voltage or \u0394F/Fnorm as a function of distance. (D) Plot of observed quenching (i.e. \u0394F/Fnorm) for each FP insertion. Same data as in Figure 2D. Note similarity with predicted \u0394F/Fnorm curves in panel C.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig2-figsupp6-v3.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Structure of cASIC1 in the resting stats (PDB: 6VTL) with individual subunits colored green, red, and blue. The distance between the critical His74 and the Lys355 at the base of the thumb domain is shown in a red arrow and is approximately 35 \u00c5.\n\nTo gain further insight from these data, we modeled DPA quenching of CFP and YFP using previously established theory (Wang et al., 2010; Zachariassen et al., 2016; Figure 2\u2014figure supplement 5). The expected quenching of CFP and YFP was simulated at infinitely negative and positive voltages over a range of distances from the plasma membrane (Figure 2\u2014figure supplement 5A and B). Subtracting these curves and normalizing produces the theoretical \u0394F/Fnorm curves as a function of distance for both CFP and YFP (Figure 2\u2014figure supplement 5C). The CFP curve has a distinct hump at 24 \u00c5 (i.e. 20 and 28 \u00c5 give equal extents of quenching) while the YFP curve peaks at 16 \u00c5 and falls off with increasing distance (Figure 2\u2014figure supplement 5C). This broadly mirrors the quenching pattern we observe in our data with CFP C1 giving the greatest quenching followed by N and C2 then C3 and C4 while in YFP all positions are weaker than N (Figure 2\u2014figure supplement 5C). The most parsimonious interpretation of these data is that the N terminal insertion point is membrane proximal while all positions in the C tail are progressively further from the membrane. To assign some provisional distances to these measurements, we assumed the FP adds 10 \u00c5 to the axial distance, reflecting the radius of the beta barrel. With this assumption, the strongest interpretation of our data is that the tip of the N terminus is about 6\u201310 \u00c5 from the inner leaflet while the C1 insertion site is approximately 12\u201316 \u00c5 away. Distance estimates for the C2\u2013C4 insertion sites are difficult to assign; however, given that the C4 position shows quenching for both FPs, this final C terminal amino acids are likely within 30\u201340 \u00c5 of the inner leaflet. For reference, the C-\u03b1 to C-\u03b1 distance from the critical His74 to Lys355, at the base of thumb domain\u2019s alpha5 helix, is 35 \u00c5 (Figure 2\u2014figure supplement 6, resting state, PDB:6VTL). Uncertainties and caveats to these estimates are enumerated in the Discussion section. Increases in accuracy to this provisional map will require reductions in background fluorescence and a smaller fluorophore at more positions.\n\n### N and C tail inter- versus intra-subunit interactions\n\nThe DPA quenching experiments indicate the N terminal insertion is closest to the plasma membrane, while the C1\u2013C4 insertions are progressively further away. Within the membrane proximal segment of the C tail is a cluster of lysine and arginine residues (amino acids 461\u2013476). These have been proposed to interact with a segment of negatively charged amino acids in the N termini (amino acids 7\u201312), forming a salt bridge between the intracellular tails of the same subunit (Wang et al., 2020; Wang et al., 2015). We reasoned that if such a bridge was formed between tails of the same subunit, then FPs appended to both tails of the same subunit would experience stronger FRET than FPs on the tails of different subunits. To test this, we used fluorescent lifetime imaging (FLIM) to measure the lifetime of an N terminal CFP donor in the absence or presence of a C terminal YFP acceptor. A challenge in this experiment is ensuring that only one FRET pair exists within the majority of trimers. If more than one pair of FPs are present, a \u2018donor-centric\u2019 measure of FRET like FLIM will be skewed toward higher FRET efficiencies (Ben-Johny et al., 2016). To measure the FRET between CFP and YFP in a single subunit, we appended a C terminal YFP to the N terminal CFP clone (CFP-cA1-YFP, Figure 2\u2014figure supplement 1). This construct was transfected along with wild-type cASIC1 at progressively increasing ratios. In principle, as the amount of unlabeled wild-type cASIC1 increases, the FRET should decrease (lifetimes increase) until a plateau is reached. The FRET value of this plateau will correspond to the FRET from single subunits. As expected, CFP-cA1-YFP alone produced very strong FRET as evidenced by the dramatically faster CFP lifetimes compared to N CFP (N CFP: 4.06 \u00b1 0.02 ns, n = 76; CFP-cA1-YFP: 2.68 \u00b1 0.03, n = 58, Figure 3). Adding more wild-type cASIC1 led to an increase in CFP lifetimes until reaching a plateau of approximately 3 ns, representing a FRET efficiency of 25% between CFP and YFP in a single subunit (1:31 ratio: 3.08 \u00b1 0.03, n = 34, 24% FRET efficiency, Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig3-v3.jpg)\n\n**Figure 3.:** (A) Example cells transfected with the indicated constructs showing intensity (left) and lifetime (right) images.\u00a0(B) Time-correlated single photon counting\u00a0(TCSPC) histograms from the plasma membrane of cells in A and additional control. Solid line is a single exponential fit to the data. (C) Cartoon (upper) and lifetimes (lower) from the indicated constructs for measuring intra-subunit FRET. (D) Cartoon (upper) and lifetimes (lower) for measuring inter-subunit FRET. Symbols denote single cells (N = 35\u201376 cells) and error bars are SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cartoon (upper) and lifetimes (lower) from the indicated constructs for measuring FRET between cASIC dimer and membrane tethered YFP (Lck-YFP) over varying cDNA ratios. Symbols denote single cells (N = 13\u201374 cells per construct) and error bars are SEM.\n\nTo measure the FRET between FPs in different subunits, we concatenated two cASIC1 subunits together in a dimer with an N terminal CFP (CFP-cA1-cA1, Figure 2\u2014figure supplement 1). Expression of this clone along with wild-type cASIC1 gave the expected approximately 4 ns mono-exponential lifetime from this CFP variant (3.86 \u00b1 0.02 ns, n = 74). Co-transfection of CFP-cA1-cA1 along with C4 YFP at increasing ratios produced progressively faster lifetimes up to about 3.3 ns or 15% FRET efficiency (1:15: 3.28 \u00b1 0.05 ns, n = 43, Figure 3). In this experiment, FRET comes partly from the CFP-cA1-cA1 transferring energy to a YFP within the channel complex and partly from transfer to YFPs in nearby ASICs (i.e. crowding). This crowding effect is illustrated in Figure 3\u2014figure supplement 1 where CFP-cA1-cA1 is co-expressed with unlabeled wild type and Lck-YFP at varying ratios. As the Lck-YFP amount is increased so does the FRET efficiency. Separating out the fraction of FRET due to crowding is difficult but also unnecessary in this case. Even with a 1:15 ratio of CFP-cA1-cA1 to C4 YFP, where all dimers likely have a C4 YFP monomer partner, the FRET efficiency is significantly less than that observed in the CFP-cA1-YFP experiment (15 \u00b1 1%, n = 43 for CFP-cA1-cA1 + C4 YFP 1:15; 24 \u00b1 1%, n = 46 for CFP-cA1-YFP + wild type 1:15, p < 1e\u22126, Student\u2019s t-test). Thus, FPs on the same subunit show more efficient FRET than on different subunits, suggesting the tails of the same subunit are physically closer and more likely to associate.\n\nThe addition of C4 YFP at 1:1 and 1:3 ratios gave unexpectedly small FRET efficiencies (1 \u00b1 1% and 3 \u00b1 1%, n = 35 and 46). To determine if the concatenated dimer was assembling as anticipated, we repeated the experiment using N YFP, where the acceptor is positioned much closer to the donor and hence should give more robust FRET. Consistent with this, all ratios of N YFP gave a strong reduction in donor lifetimes, indicating the CFP dimer does assemble with labeled monomer. Taken together, these experiments demonstrate that FRET efficiency from FPs on neighboring subunits is considerably less than that measured from the same subunit, supporting a model where the N and C tails of the same subunit interact.\n\n### Measurement of ICD conformational changes\n\nThe putative salt bridge between the N terminal tail and the membrane proximal segment of the C tail is proposed to break apart to facilitate ion-independent signaling\u00a0(Wang et al., 2020). Evidence for this movement comes from the change in FRET between N terminal CFP and C terminal YFP upon extracellular acidification (Wang et al., 2020). To investigate this, we conducted an analogous experiment using patch clamp fluorometry with simultaneous recording of both the blue and yellow emission from CFP-cA1-YFP receptors. As seen in Figure 4A and B, rapid application of pH 7 or 6, but not pH 8, produced a decrease in the ratio of YFP to CFP emission (i.e. change in FRET) with a slow time course (\u0394FYFP/CFP pH 7: \u22122.6 \u00b1 0.3%, n = 8, p = 0.031 versus pH 8; pH 6: \u22124.6 \u00b1 0.5%, n = 8, p = 0.0025 versus pH 8). However, as discussed previously (Wang et al., 2020), the strong pH sensitivity of YFP complicates the interpretation of these measurements. Consistent with this (Wang et al., 2020), we also observed a strong loss of emission from C4 YFP upon extracellular acidification (Figure 4A and B, \u0394FYFP pH 7: \u22122.6 \u00b1 0.8%, n = 5; pH 6: \u221212 \u00b1 2%, n = 8). In contrast, the N CFP showed no such change in emission (Figure 4) owing to this CFP variants pKa of 3.1 (Goedhart et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig4-v3.jpg)\n\n**Figure 4.:** (A) Cartoons (left), electrophysiology (upper), and fluorescence traces (lower) from single cells transfected with the CFP, YFP, or both FPs attached to cASIC1 during pH jumps from eight into pH 8, pH 7, or pH 6. Fluorescence trace is the acceptor fluorescence signal divided by the donor. (B) Summary of change in acceptor/donor ratio during pH changes. (C) Same as in A but for pH-insensitive variants of GFP and RFP (see Materials\u00a0and\u00a0methods). (D) Summary of change in acceptor/donor ratio during pH changes. Symbols indicate single cells (N = 5\u20138 cells), error bars are SEM. Asterisks denote statistical significance with p-values of 0.028 for YFP pH 8 versus 6, 0.031 and 0.0025 for CFP-cA1-YFP pH 8 versus 7 and pH\u00a08 versus 6, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Summary of green fluorescence emission divided by red fluorescence emission upon GFP excitation for the indicated clones. ** denotes p = 0.0014 and * indicates p = 0.0117 by randomization test. (B) Cartoon (left), example traces of current and fluorescence ratio (middle) and summary changes to apparent FRET (right) from the indicated. Symbols denote single cells (N = 3\u20137 cells per construct) and error bars are SEM.\n\nBlue/yellow and green/red pairings are the most common for FRET. The chromophores of GFP and YFP are intrinsically pH sensitive making them unsuitable for studying acid-evoked conformational changes. Fortunately, a novel GFP was described with a distinct chromophore and pKa of 3.4 (Shinoda et al., 2018). When combined with a relatively low pKa red FP (TagRFP, pKa 3.8 Merzlyak et al., 2007), this pairing should enable a FRET measurement that is relatively insensitive to the pH range examined while gaining the advantages of green/red FRET (McCullock et al., 2020). We therefore cloned the low pKa GFP into the N terminal position and the RFP into the C4 position (GFP-cA1 and cA1-RFP, Figure 2\u2014figure supplement 1) and tested the pH sensitivity of their fluorescence emission. As seen in Figure 4C and D, both clones showed no change in their fluorescence emission with extracellular pH 6, 7, or 8, confirming their suitability for measuring conformational changes induced by pH. We next added both FPs into a single subunit (GFP-cA1-RFP) and repeated our dual-channel patch clamp fluorometry measurements. However, we detected no change in the RFP/GFP ratio (i.e. no change in FRET) from these FPs (Figure 4C and D, \u0394FRFP/GFP\u00a0pH 7:\u00a0\u22121.3\u00b1\u00a00.5%; pH 6:\u00a0\u22120.1\u00a0\u00b1\u00a00.6%,\u00a0n\u00a0= 5).\u00a0Importantly, the GFP does FRET with the RFP as the ratio of red to green fluorescence emission was significantly greater in the GFP-cA1-RFP clone compared to the GFP-cA1 only (GFP-cA1: 0.14 \u00b1 0.01, n = 6; GFP-cA1-RFP: 0.41 \u00b1 0.04, n = 7, p = 0.0014). To increase the sensitivity to local motions, we repeated the experiment with the RFP cloned into the C1 position (i.e. GFP-cA1-C1-RFP). Unfortunately, here again we did not detect any change in RFP/GFP ratio with either GFP-cA1-C1-RFP alone or when diluting this construct out with unlabeled wild-type cASIC1 (\u0394FRFP/GFP GFP-cA1-C1-RFP pH 6: \u22120.9 \u00b1 1.4%, n = 3; + wild type pH 6: \u22120.8 \u00b1 1.5%, n = 5; Figure 4\u2014figure supplement 1). Although we did not detect any changes in FRET, we cannot exclude that extracellular acidification does cause the N and C tails do move apart laterally but such movements are either small, localized, or otherwise fall below our ability to detect them.\n\nFinally, we investigated if either the N or C tails move axially, with respect to the plasma membrane, upon extracellular acidification. To do this, we returned to DPA quenching by first recording the fluorescence emission during a series of voltage steps in the absence of DPA, presence of DPA at pH 8.0, and then in the presence of DPA at pH 6.0. Importantly, the voltage-dependent quenching of Lck-CFP was not different between extracellular pH 8 compared to pH 6 (\u0394F/F\u221215 mV pH 8: 0.45 \u00b1 0.03, pH 6: 0.43 \u00b1 0.04, n = 6, uncorrected p-value = 0.52, paired Wilcoxon signed-rank test, Figure 5), thus confirming the DPA quenching is relatively pH-tolerant. Interestingly, the extent of quenching at the N and C1 position was significantly reduced in pH 6 compared to pH 8 (Figure 5). Specifically, in the resting state (pH 8), CFP at the N or C1 position had a \u0394F/F\u221215 mV of 0.49 \u00b1 0.02 or 0.57 \u00b1 0.04 (n = 13 or 11), respectively. However, with extracellular pH 6 (populating the desensitized state), these were reduced to 0.41 \u00b1 0.02 and 0.55 \u00b1 0.03. In a subset of cells expressing the N CFP clone, we maintained the recording in pH 8, 6 and then back to pH 8 and found the effect on the extent of quenching was readily reversible (Figure 5D\u2013E). None of the other positions showed significant evidence of movement between these conditions (Figure 5C, Figure 5\u2014figure supplement 1), supporting that this motion is specific to the membrane proximal region and not a general pH artifact. These results demonstrate that both the N and C tails of cASIC1 move axially with respect to the membrane between the resting and desensitized states. To determine if the axial motion is toward or away from the plasma membrane, we considered our prior data and theoretical analysis (Figure 2, Figure 2\u2014figure supplement 5). The resting state DPA quenching places the N terminal FP chromophore about 15\u201320 \u00c5 from the inner membrane leaflet (Figure 2, Figure 2\u2014figure supplement 5). The reduced quenching in the pH 6 condition indicates the FP moves even closer to the plasma membrane upon channel desensitization. However, interpreting the C1 data is less straightforward. The DPA data indicate\u00a0that\u00a0FPs at the C1 position are about 23\u201325 \u00c5 from the inner leaflet, thus lying at or near the peak of CFP\u2019s \u0394F/Fnorm curve (Figure 2\u2014figure supplement 5C and D). In such a position, moving either toward or away from the plasma membrane will result in decreased quenching. A scenario where the N terminal moves toward the membrane while the C tail moves away is difficult to reconcile with the lack of \u0394FRET between FPs in these positions upon acidification (Figure 4). Therefore, our data favor a model where the N and proximal segment of the C tail move up toward the inner membrane leaflet when the channel is exposed to desensitizing conditions (Figure 6).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig5-v3.jpg)\n\n**Figure 5.:** (A) Example CFP fluorescence quenching traces from single cells expressing N or C1 CFP-cASIC1 with extracellular pH 8 (left) or pH 6 (right). (B) Quenching voltage curves for CFP inserted in N (left) or C1 (right) position. Curves in extracellular pH 8.0 (resting state) shown in black and pH 6.0 (desensitized) in blue. (C) Summary of the extents of quenching at each position with extracellular pH 8 (black) and pH\u00a06 (blue). Symbols denote individual cells (N = 5\u201313 cells per construct) and error bars represent SEM. Asterisks denote statistical significance by Wilcoxon signed-rank test after correction for multiple comparisons. The p-value for N and C1 are 0.0.0010 and 0.0.033, respectively. (D) Fluorescence-voltage traces from single cell expressing N CFP in the indicated extracellular buffer with 5 \u00b5M dipicrylamine (DPA). (E) Summary of the voltage-dependent extent of DPA quenching from N CFP in the indicated extracellular pH. Symbols denote individual cells (N = 7) and error bars represent SEM. * indicates p-value < 0.05 by paired Wilcoxon signed-rank test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Data points represent the difference between the \u0394F/F\u221215 mV at pH 6.0 and 8.0 of individual cells. Error bars represent SEM. Asterisk indicates that the median is significantly different from 0 by the one-sample Wilcoxon signed-rank test after correcting for multiple tests (p = 0.0015 and 0.015 for N and C1, respectively).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68955/elife-68955-fig6-v3.jpg)\n\n**Figure 6.:** Estimated distances of N and C tail positions derived from dipicrylamine (DPA) quenching mapped onto resting state structure (6VTL). Not drawn to scale. Extracellular pH moves the proximal N and C segments toward the membrane.\n\n## Discussion\n\nUsing a combination of patch clamp fluorometry and FLIM, we obtained an outline of the ASIC ICDs. We find the N terminus and proximal segment of the C terminus to extend about 6\u201310 and 12\u201316 \u00c5 into the cytosol, while the remainder of the C tail projects not more than 40 \u00c5. Further, FLIM FRET results indicate the N and proximal segment of the C tail from the same subunit are physically closer than from different subunits, presumably reflecting association via the putative salt bridge. Finally, we find that the N and proximal segment of the C tail move toward the plasma membrane upon acidification, while we detect no substantial lateral movement (Figure 6). Our results support the emerging idea that extracellular acidification promotes ASIC ICD conformational changes, potentially creating or exposing sites within the membrane proximal segments that bind intracellular signaling partners and facilitating metabotropic signaling.\n\n### Sources of error\n\nThe principle source of error is the possible disruption of the N or C tail caused by the addition or insertion of an FP. Insertion of an FP into the midst of a region with secondary structure would obviously distort this region. It is also possible that the addition of an FP would bias the region toward or away from the membrane. While we consider this unlikely given the solubility of FPs, we cannot exclude this possibility. Future studies could employ smaller fluorophores such as the fluorescent non-canonical amino acid L-ANAP (Chatterjee et al., 2013; Gordon et al., 2018; Gordon et al., 2016; Sakata et al., 2016; Zagotta et al., 2016) or split inteins and semi-synthesis (Khoo et al., 2020; Lueck et al., 2016; Shah and Muir, 2014) to introduce small, bright fluorophores in specific sites. Such methods, ideally combined with acceptor groups (Gordon et al., 2018; Gordon et al., 2016; Zagotta et al., 2016), will refine and test the provisional map we report here. An additional source of error in our DPA quenching estimates is the background fluorescence from FPs in the ER\u00a0(endoplasmic reticulum). These FPs may be either unquenched or progressively quenched over the course of the experiment as DPA migrates into the cell. In prior work, intracellular channels and FPs produced variable amounts of background fluorescence (Barros et al., 2018; De-la-Rosa et al., 2013; Zachariassen et al., 2016), which may confound more accurate mapping. Fortunately, our family of cASIC1 with FP insertions show very robust plasma membrane expression (Figure 2\u2014figure supplement 3). We also selected cells with minimal intracellular fluorescence to reduce the impact of this background signal. In addition, our theoretical analysis treats DPA molecules as existing in two discrete planes, separated by 25 \u00c5. In reality, DPA molecules will inhabit a distribution of distances centered around these planes which would introduce some inaccuracy in our measurements. A further source of potential error is the orientation dependence of FRET. This concern is partly mitigated since the fluorophores are attached to regions which are likely to be unstructured or highly flexible, allowing the FPs to adopt multiple orientations. Consistent with this, past theoretical and experimental work suggests a minimal influence of orientation dependence for FRET involving DPA as an acceptor (Zachariassen et al., 2016). Subsequent studies using isotropic resonance transfer methods such as lanthanide-based resonance energy transfer or transition-metal FRET may reduce many of these concerns and provide a more refined map (Selvin, 2002; Taraska et al., 2009).\n\nDespite these sources of error, we do observe a consistent and reproducible decrease in the \u0394F/F at the N and C1 position upon the addition of extracellular acidification in the same experiment (Figure 5A\u2013C, Figure 5\u2014figure supplement 1). This is not detected at other positions or with Lck-CFP and hence it does not appear to be a pH-induced artifact (Figure 5C, Figure 5\u2014figure supplement 1). Indeed, in the subset of longer N position recordings, we were able to\u00a0reverse this decrease in \u0394F/F by moving back to extracellular pH 8 (Figure 5D and E).\n\n### Structural interpretation\n\nStructures of full-length cASIC1 have been solved using cryo-EM. The N and C tails are present in these constructs yet give no resolvable density (Yoder and Gouaux, 2020; Yoder et al., 2018). This suggests the tails maybe largely disordered, waiting to bind intracellular proteins via an induced fit or conformation selection mechanisms (Arai et al., 2015; Oldfield and Dunker, 2014). If true, then our data define the borders of the conformation landscape these disordered segments occupy. However, it is also possible that within these disordered tails are areas of secondary structure. A small but well-ordered segment of the tails which is moved around by adjacent disordered regions might be unresolvable by cryo-EM. Having isolated regions of order among a largely disordered tail is consistent with the proposed salt bridge between N and the C1 region. Secondary structure predictions using the JPred tool also support this view, with the proximal segment of the C tail having a strong tendency to form alpha helices while the remainder of the tail is unstructured (Drozdetskiy et al., 2015). Additional approaches such as CD spectroscopy combined with molecular modeling (Ezerski et al., 2020), NMR, and DEER will be critical to address the extent and location of secondary structure within the tails as well as further define the intracellular structural changes induced by extracellular pH that we report here. A particularly useful approach maybe single-molecule FRET, which has already been used to gain insight into the unstructured, and larger, intracellular tails of NMDA receptors (Choi et al., 2013; Choi et al., 2011).\n\n### Physiological relevance\n\nNumerous protein-protein interactions have been reported for ASICs that are important for channel trafficking, gating, and possibly metabotropic signaling (Kellenberger and Schild, 2015; Zeng et al., 2014). The best documented of these are PICK1, PSD-95, and stomatin (Baron et al., 2002; Hruska-Hageman et al., 2004; Hruska-Hageman et al., 2002; Klipp et al., 2020; Leonard et al., 2003; Price et al., 2004; Zha et al., 2009). Of particular note is the interaction between ASIC3\u2019s C tail and stomatin, which enables stomatin to inhibit channel activation through a mechanism involving the first transmembrane helix (Klipp et al., 2020). In addition, recent work has suggested that the membrane proximal region of the ASIC1 C tail becomes liberated from the N\u00a0tail during desensitization, allowing for the recruitment of RIP1 kinase (Wang et al., 2020). This results in activation of RIP1 by phosphorylation leading to eventual cell death via necroptosis. Canonical activation of RIP1 by the tumor necrosis factor (TNF) receptor 1 (TNFR1) occurs through heterodimerization of death domains (DD) present on both RIP1 and TNFR1 (Meng et al., 2018). ASIC1 does not contain a DD, so how RIP1 interacts with the C\u00a0tail of ASIC1 and resulting in activation remains an important unanswered question. Using the FP insertion approach we adopted is problematic for investigating this, or any of the other protein-protein interactions mentioned above, due to the sheer disruptive size of the FP. However, using a higher resolution method with a smaller fluorophore could shed light on the molecular determinants, timing, and dynamics of these interactions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line\u00a0(Homo\u00a0sapiens)</td>\n      <td>HEK293T ASIC1 KO</td>\n      <td>Rook et al., 2020a</td>\n      <td>Clone 2C1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-cocASIC1</td>\n      <td>Rook et al., 2020b</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmVenus(L68V)-mTurquiose2</td>\n      <td></td>\n      <td>RRID:addgene_60493</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Gamillus/pcDNA3</td>\n      <td></td>\n      <td>RRID:addgene_124837</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PSD-95-pTagRFP</td>\n      <td></td>\n      <td>RRID:addgene_52671</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lck-mScarlet-I</td>\n      <td></td>\n      <td>RRID:addgene_98821</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Q5 Hot Start High-Fidelity 2X Master Mix</td>\n      <td>New England Biolabs, Inc</td>\n      <td>M0494L</td>\n      <td>PCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBuilder HiFi DNA Assembly Master Mix</td>\n      <td>New England Biolabs, Inc</td>\n      <td>E2621L</td>\n      <td>Insertion of FP tags</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polyethylenimine 25 k</td>\n      <td>Polysciences, Inc</td>\n      <td>23966\u20131</td>\n      <td>Transfection reagent</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dipicrylamine</td>\n      <td>Biotium</td>\n      <td>60037</td>\n      <td>Quencher</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Axograph</td>\n      <td></td>\n      <td>RRID:SCR_014284</td>\n      <td>Patch clamp and fluorometry acquisition</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampfit</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323 (pClamp)</td>\n      <td>Patch clamp and fluorometry analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OriginPro 2020b</td>\n      <td>OriginLab Corp</td>\n      <td>9.7.5.184 (Student Version)</td>\n      <td>Data fitting and figure preparation</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids and molecular cloning\n\nA pcDNA3.1(+) vector containing the sequence for codon-optimized chicken ASIC1 (pcDNA3.1-cocASIC1) was used for all experiments (Rook et al., 2020b). Scar-less insertion of FP tags was achieved by opening the pcDNA3.1-cocASIC1 vector by PCR with primers containing 18-nt homologous overhangs. FP sequences were PCR-derived from pmVenus(L68V)-mTurquiose2 (Addgene plasmid #60493), Gamillus/pcDNA3 (Addgene plasmid #124837), or PSD-95-pTagRFP (Addgene #52671), and cloned in using NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs) according to the manufacturer\u2019s instructions. These FP constructs were gifts from Dorus Gadella, Takeharu Nagai, and Johannes Hell, respectively. All constructs were verified by Sanger sequencing (Eurofins Genomics). The Lck membrane tether clones were made using Lck-mScarlet-I (Addgene #98821), removing the mScarlet by inverse PCR and inserting PCR-derived mTurquiose2 or mVenus. Throughout the manuscript CFP, GFP, YFP, and RFP to refer to mTurquoise2, Gamillus, mVenus, and TagRFP, respectively.\n\n### Cell culture and transfection\n\nA clonal Human Embryonic Kidney 293T (HEK293T) cell line, purchased from ATCC and identity confirmed with STR profiling, with the endogenous ASIC1 gene knocked out were used for all experiments (Rook et al., 2020a). A PCR test for mycoplasma contamination, last performed on 6/04/2021, was negative. HEK293T cells were maintained in minimum essential medium containing glutamine and Earle\u2019s salts (Gibco) supplemented with 10% fetal bovine serum (Atlas Biologicals) and PenStrep (Gibco). Cells were plated in 35 mm tissue culture treated dishes and transfected 1\u20132 days later using polyethylenimine 25 k (Polysciences, Inc) with a mass ratio of 1:3 (cDNA:PEI). For dipicrylamine (DPA) quenching experiments, 500 ng of pcDNA3.1-cocASIC1 with an FP tag and 2.0 \u00b5g of pcDNA3.1(+)-empty vector were co-transfected per 35 mm dish. We found that dilution with the empty vector helped limit intracellular accumulation of the channel. Cells were dissociated 24\u201348 hr post-transfection with divalent-free DPBS (Gibco) supplemented with 0.5 mM EDTA and sparsely seeded onto 18 mm No. 1 coverslips that had been treated with 100 \u03bcg/mL poly-lysine for 20 min.\n\n### Electrophysiology\n\nFor the experiments in Figure 2\u2014figure supplement 2, excised patch recordings were done as described previously (Rook et al., 2020b). Briefly, borosilicate patch pipettes were pulled and heat-polished to a resistance of 3\u20136 M\u03a9. The internal pipette solution was (in mM) 135 CsF, 11 EGTA, 10 HEPES, 10 MES, 2 MgCl2, 1 CaCl2, and pH adjusted to 7.4 using CsOH. External solutions were comprised of (in mM) 150 NaCl, 1 CaCl2, 1 MgCl2, and either 20 HEPES (pH 7.0 or 8.0) or 20 MES (pH 5.0 or 6.0) and adjusted using NaOH. Data were acquired at 20\u201350 kHz and filtered online at 10 kHz using AxoGraph software (Axograph), an Axopatch 200B amplifier (Molecular Devices) and USB-6343 DAQ (National Instruments) at room temperature and with a holding potential of \u221260 mV. Series resistance was routinely compensated by 90\u201395% when the peak amplitude exceeded 100 pA. A homebuilt double or triple barrel perfusion pipette (MacLean, 2015) (Vitrocom) attached to a piezo translator (Physik Instrumente) under computer control was used for fast perfusion. Piezo voltage commands were generally filtered between 50 and 100 Hz.\n\n### Patch clamp fluorometry\n\nCoverslips were visualized using an S Fluor 40\u00d7 oil-immersion objective (1.30\u00a0NA, Nikon) mounted on a Nikon Ti2 microscope. Transfected cells were excited and visualized with either a four-channel LED or single-channel LED (Thorlabs) and dichroic filter cube. Single cells were patched in a whole-cell configuration using heat-polished borosilicate glass pipettes with 3\u20136 M\u03a9 resistance. Cells were continually perfused with external solution, with or without 5 \u00b5M DPA (Biotium), using a homebuilt multi-barrel flow pipe (see above). Single cell fluorescence was collected using a D-104 dual-channel photometer (Photon Technology International) attached to the left microscope port. Emitted fluorescence was limited to only the patched cell using adjustable slits and detected with photomultiplier tubes (Hamamatsu Photonics, R12829). Photometers were generally set to a voltage of 650\u2013900 V and filtered with a time constant of 0.5 ms. The photometer voltage signals were fed to the analog inputs of the same DAQ as the patch clamp amplifier and recorded using AxoGraph. The timing of the excitation source was triggered by TTL.\n\nFor DPA quenching experiments with CFP, a 455 nm LED, 455/20 nm excitation filter, 442 nm dichroic, and 510/84 nm emission filter were used. For YFP, a 505 nm LED, 510/20 excitation filter, 525 dichroic, and 545/35 band-pass emission filter were used. In all cases, we worked to minimize background fluorescence by selecting cells with prominent plasma membrane fluorescence and minimal intracellular signal. Quenching curves were generated in whole-cell configuration by a series of 100 ms steps ranging from \u2212180 to +120 mV in 30 mV increments, with \u221215 mV holding potential and 1 s between steps. Excitation was triggered 50 ms before a voltage step and lasted for 200 ms. This family of voltage steps was repeated four times either in control, with continual perfusion of 5 \u00b5M DPA, or during DPA washes with several seconds separating each condition. We found the data from the first family of DPA steps tended to be inconsistent, presumably reflecting DPA equilibration within the cell. Thus, only the final three series of steps were averaged together. For each recording a background signal was measured by slightly moving the stage to a region with no cells and this signal subtracted. Analysis was done using Clampfit (Molecular Devices) where, following background subtraction, the average fluorescence signal in the second quintile (20 ms) window within the 100 ms voltage step was divided by the fluorescence signal at the preceding holding potential to generate F/F\u221215mV. These values were plotted in OriginLab (OriginLab Corp) and cells were individually fitted with a Boltzmann function. The difference of the minimum and maximum values of the Boltzmann gave the \u0394F/F\u221215mv for that specific cell.\n\nFor patch clamp FRET experiments, the fluorescence emission was split into two photomultiplier tubes. For CFP/YFP, a 455 nm LED, 455/20 nm excitation, 442 nm dichroic, and 510/84 nm wide-band emission was used. This combination of donor and acceptor emission was passed to the dual photometer, through the adjustable aperture, and split by a 518 nm dichroic before further filtering into nominal donor (482/25 nm) and acceptor (537/26 nm) emission channels. A similar configuration was used for GFP/RFP with 455 nm LED, 470/10 nm excitation, 495 nm dichroic, 500 nm long-pass emission followed by a 552 nm splitter diving donor (510/42 nm) and acceptor (609/54 nm). Single cells were patch-clamped and piezo-driven perfusion used to switch between pH 8.0, pH 7 and 6.0 for 2 s, with 20 s between acidic applications. The excitation source was triggered 1 s before the solution switch for 10 s. The background subtracted \u2018acceptor\u2019 channel fluorescence signal was divided by the subtracted \u2018donor\u2019 channel signal to yield an apparent FRET signal. The goal of this experiment was to ascertain if any changes in FRET are detectable upon activation/desensitization of the channel, not to quantify the FRET efficiency. Therefore, we made no attempt to correct for bleedthrough excitation or emission. To reflect this, all such measurements are referred to as \u2206FRETapp or change in apparent FRET.\n\n### FLIM and confocal imaging\n\nFLIM was done as described previously (McCullock et al., 2020). Cells were transfected in either 35 or 60 mm culture dishes and imaged using a water immersion 25\u00d7\u00a0objective (XL Plan N, 1.05 NA) mounted on an Olympus IX61WI upright microscope. A Mai Tai Ti:Sapphire multi-photon laser (Spectra Physics) was used for excitation with an 860 nm wavelength, a repetition rate of 80 MHz and pulse width of approximately 100 fs. Donor emission was filtered by a 480\u201320 filter and measured by a H72422P Hamamatsu hybrid avalanche photodiode. Time-correlated single photon counting was done using a Becker and Hickl card with a resolution of 25 ps. Using VistaVision software (ISS), donor fluorescence from the plasma membrane from individual cells was binned and fit with a single exponential function, consistent with the lifetime of CFP variant mTurquoise2 (Goedhart et al., 2012).\n\nFor confocal imaging, cells were transfected with Lck-CFP or CFP-tagged cASIC1 in 35 mm dishes. After 2 days, cells were stained with 2 mL of 7.5 \u00b5M FM1\u201343 (Invitrogen) immediately prior to imaging with an Olympus FV1000MP microscope using a 60\u00d7 water immersion objective (U Plan SApo, 1.20 NA). CFP and FM1\u201343 were simultaneously excited with a 440 nm laser and emissions between 465\u00a0and\u00a0495 nm collected as CFP and 575\u00a0and\u00a0675 nm collected as FM1\u201343.\n\n### DPA quenching simulations\n\nClosely following the work of Wang et al., 2010 and Zachariassen et al., 2016, we calculated the FRET between a donor fluorophore and a plane of DPA molecules over a range of axial distances. The donor fluorophore was positioned at a distance, $R_{a}$, from a point within a perpendicular plane representing the inner leaflet of the plasma membrane. This point is the center of a ring of radius\u00a0$r$, within the perpendicular plane. The distance between the donor and DPA on the perimeter of the ring is the hypotenuse of a triangle with the other sides being the ring radius, r, and the axial distance between the center of the ring and the donor,\u00a0$R_{a}$. Thus the donor-acceptor distance is\u00a0$\\sqrt{R_{a}^{2}+r^{2}}$. We define $P(r)$\u00a0as the probability that no FRET will occur between the donor and DPA positioned along ring perimeter and $Q(r)$\u00a0as the probability FRET (quenching) will occur. As the sum of $Pr$\u00a0and $Q(r)$\u00a0is one, for a ring of slightly larger radius $r+dr$:\n\n$$\nPr+dr=Pr1-Qrdr\n$$\n\nFRET efficiency, $E$, over a distance, $d$, for a single donor-acceptor pair is given by:\n\n$$\nE=\\frac{1}{1+\\frac{d}{R_{0}}^{6}}\n$$\n\nwhere $R_{0}$ is the F\u00f6rster distance giving half-maximal FRET. As with past work, we used 5 \u00b5M DPA which gives a density, $\\sigma$, of 1.25 \u00d7 10\u22124 molecules per \u00c52 (Wang et al., 2010). Combing the DPA density and distance constraint, we define the probability of quenching as:\n\n$$\nQ(r)dr=\\frac{\\sigma2\\pirdr}{1+(\\frac{R_{a}^{2}+r^{2}}{R_{0}^{2}})^{3}}\n$$\n\nGiven Equation 1, the following differential equation can be derived:\n\n$$\n\\frac{dP}{dr}=\\frac{\\sigma2\\pirP}{1+(\\frac{R_{a}^{2}+r^{2}}{R_{0}^{2}})^{3}}\n$$\n\nSubstituting $u=R_{a}^{2}+r^{2}/R_{0}^{2}$\u00a0and evaluating the integral at $r=\u221e$\u00a0gives:\n\n$$\nP_{\u221e}=exp-\\sigma\\piR_{0}^{2}\\int_{\\frac{R_{a}^{2}}{R_{0}^{2}}}^{\u221e}\\frac{du}{1+u^{3}}\n$$\n\nwhich represents the unquenched fluorescence signal remaining over a range of axial distances. As DPA is assumed to traverse about 25 \u00c5 in the plasma membrane (Wang et al., 2010; Zachariassen et al., 2016), evaluating this integral using either $R_{a}$ or $R_{a}+25$ gives the quenching curves for DPA at the inner leaflet or outer leaflet, which are populated by infinitely depolarizing or hyperpolarizing conditions, respectively. $R_{0}$\u00a0calculations were done with the $k^{2}=2/3$ assumption, using donor FP spectra and quantum yield listed in FP database (Lambert, 2019). The DPA absorption spectrum was measured with 25 \u00b5M DPA diluted in saline on a QuickDrop spectrophotometer (Molecular Devices). The DPA molar extinction coefficient at 420 nm was determined to be 26,500 M\u22121cm\u22121 by fitting the slope of absorption measurements from serial dilutions of DPA into saline or 1% SDS. This value is consistent with previously reported measurements (Gunupuru et al., 2014).\n\n### Statistics and data analysis\n\nCurrent desensitization decays were fitted using exponential decay functions in Clampfit (Molecular Devices). For recovery from desensitization experiments, the test peak (i.e. the second response) was normalized to the conditioning peak (i.e. the first response). OriginLab (OriginLab Corp) was used to fit the normalized responses to:\n\n$$\nI_{t}=1-e^{\\frac{-t}{\\tau}}^{m}\n$$\n\nwhere It is the fraction of the test peak at an interpulse interval of t compared to the conditioning peak, \u03c4 is the time constant of recovery, and m is the slope of the recovery curve. Patches were individually fit and averages for the fits were reported in the text. N was taken to be a single patch.\n\nFRETefficiency from FLIM measurements was calculated using:\n\n$$\nFRET_{efficiency}=1\u2212(\\frac{\\tau_{donor+acceptor}}{\\tau_{donoronly}})\n$$\n\nwhere \u03c4donor only and \u03c4donor+acceptor are the single exponential time constants of donor decay in the absence and presence of acceptor, respectively.\n\nUnless otherwise noted, statistical testing was done using nonparametric permutation or randomization tests with at least 100,000 iterations implemented in Python to assess statistical significance. Reported p-values have been adjusted using the Holm-Bonferroni method for multiple test corrections. Data for each figure can be found in Source data 1.\n",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "91e75b9e-4999-4c43-9d15-c6bf9694960d",
+      "submission_id": "06c628e8-6c13-4d80-9f63-8f91013a5a6c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68955.sa1](https://doi.org/10.7554/eLife.68955.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis is a rigorous and clearly written paper that provides quantitative data showing small, previously uncharacterized, movements of intracellular regions of ASIC channels. These channels are involved in pain signalling and other processes, and apparently can couple to intracellular pathways independent of ion flow. Here the authors measure the organization and movements of the unstructured intracellular parts of ASIC using fluorescence spectroscopy coupled to functional measurements. These careful experiments might provide a basis to understand signaling mediated by these ion channels. The authors have carried out the requested changes and satisfactorily answered reviewer's comments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Topography and motion of the acid-sensing ion channel intracellular domains\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Leon D Islas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kenton Swartz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew J R Plested (Reviewer #2); Michael C Puljung (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The measurement of axial movement in response to pH changes yielded very small distances. This makes the interpretation of these data complicated. The authors should discuss all possible sources of error involved in these experiments and thoroughly discuss this particular result in the light of possible artifacts.\n\n2) The authors should discuss the appropriateness of statistical methods used in some sections of the paper and again, discuss results and conclusions reached in the light of sources of error. These possible errors are pointed out in detail by the reviewers below and should be addressed thoroughly.\n\nReviewer #1 (Recommendations for the authors):\n\nThis manuscript by Couch et al. makes use of different fluorescence spectroscopy techniques as approximations to provide a coarse definition of the organization and possible orientations of the N- and C-terminal domains of the ASIC channel, which are intracellular. The experiments are nicely executed and controlled and the general conclusion reached by the authors seem to be supported by the data.\n\nHowever, the last section of the paper, which is an attempt at detecting movements or conformational changes of these regions is much less solid.\n\nThe main problem I see is that the measured changes in fluorescence produced by DPA quenching of the FPs are buried in the variability of the experiments. Although for position C1 it seems the statistical analysis detects a difference in quenching between ph 8 and 6, this effect is really small and seems to be produced by two or three patches.\n\nThis is likely due to the large size of the PF being used here and other factors that are not being taken into account.\n\nSo, the data presented in figure 5 has very little statistical power and its interpretation is difficult. This data should be removed or presented as a negative result.\n\nA possible source of error or artifact, not discussed by the authors, is the possibility that the insertion of the large FPs actually distorts the real position/orientation of the terminal domains, especially the C-terminus. It should be taken into account that it is entirely possible that the C-terminus is parallel to the membrane and is being \"dragged down\" by the massive FPs. The authors should explain or justify why they think this is unlikely, and that their results are actual mirrors of reality.\n\nOne of the problems when using DPA and interpreting quenching with simulations is that the authors assume that all DPA molecules at a given voltage, even extreme voltages, exist in a single plane within the membrane. However, statistical mechanics says that DPA should exist in a Boltzmann distribution of distances. So, quenching of an FP will occur from such a distribution of distances and not only from distances obtained from the radial distribution of molecules in a single plane. This results in a smear or broadening of the voltage-dependence of the quenching function and an increased error at the edges of these distributions.\n\nReviewer #2 (Recommendations for the authors):\n\nThis paper is a model of clarity and rigor. It was a pleasure to read. I have no suggestions for improvement. The dilution experiments in Figure 3 are very good indeed. I congratulate the authors on their admirable work.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 Can concatemeric channels like CFP-cA1-cA1 traffic to the plasma membrane when expressed alone? Can they form functional channels (for example with two subunits from one concatemer and one subunit from a different concatemer)?\n\n\u2013 The use of the YFP to CFP ratio to quantify FRET is not standard. The authors rightly point out that they do not use this metric quantitate results. However, referring to it as FRETapp may be confusing to the reader. The authors should simply refer to it as FYFP/FGFP in figure 4 A and C and \u0394FYFP/FGFP in Figure 4 B and D (and the associated text).\n\n\u2013 The authors should specify which 20 ms window was used to quantify the fluorescence changes in Figures 1, 2, and 5.\n\n\u2013 In providing approximate locations relative to the plasma membrane for their fluorescent protein (FP) tags, the authors add 10 \u00c5 to the axial distance to approximate the diameter of the \u03b2-barrel structure of their tags. Presumably this assumes that the long axis of the FP is parallel to the plasma membrane. How would this adjustment change if the barrel were oriented perpendicular to the membrane?\n\n\u2013 Whereas the authors do explain \u0394F/F-15 mV in the methods section, they may wish to do so in the main text on page 15 for the casual reader who may not have read the methods.\n\n\u2013 The authors should provide explanation of terms like \"thumb domain\" on page 18 as a courtesy to their broader, non-ASIC-savvy audience.\n\n\u2013 The authors should spell out dipicrylamine (DPA) the first time it is used on page 7. The word is spelled out in full on the following page, but without the abbreviation.\n\n\u2013 On page 22, it is stated that YFP is pH sensitive because it is derived from GFP, which is also pH sensitive. This statement should be rephrased as it indirectly implies that the other tags (e.g. CFP) are not derived from GFP.\n\n\u2013 It would be useful to the reader if the authors were to provide a plot of the calculated distance dependence of FRET between the CFP/YFP and GFP/RFP tags being used.\n\n\u2013 Several citations were included for the use of the amino acid ANAP as a fluorescent label. The authors might consider replacing these with references to Chatterjee et al. (2013). Journal of the American Chemical Society, 135, 12540-12543. (often cited for ANAP expression) or Kalstrup and Blunck (2013). PNAS, 110:8272-8277. (The first use of ANAP as an ion channel probe).\n\n\u2013 Similarly, the authors mention LRET and tmFRET. These abbreviations should be spelled out and appropriate literature citations added.\n\n\u2013 The authors also use the abbreviation smFRET for single-molecule FRET. This can be spelled out as well, for the non-specialist audience.\n\n\u2013 In Figure 2\u2014figure supplement 2A, the authors should indicate on their plot where the change was made from pH 5 to pH 8.\n\n\u2013 Figure 5\u2014figure supplement 1 makes an important point. The authors should consider moving it to the main body of the paper.\n",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "70fad4e8-ec1e-4d9b-9b9d-2ee1af3e5896",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C1",
+      "claim": "Acid-sensing ion channels (ASICs) are trimeric cation-selective channels activated by decreases in extracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Acid-sensing ion channels (ASICs) are trimeric cation-selective channels activated by decreases in extracellular pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characterization of ASICs supported by scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "dccbd886-6fc0-4a87-beb7-2e09e0a9e32c",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C2",
+      "claim": "The intracellular N and C terminal tails of ASIC1 influence channel gating, trafficking, and signaling in ischemic cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular N and C terminal tails of ASIC1 influence channel gating, trafficking, and signaling in ischemic cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to prior work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "d80af90d-1617-4cf7-862f-b448a0713979",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C3",
+      "claim": "Several X-ray and cryo-EM structures of the extracellular and transmembrane segments of ASIC1 have been determined, but the intracellular tails remain unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite several X-ray and cryo-EM structures of the extracellular and transmembrane segments of ASIC1, these important intracellular tails remain unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies (Baconguis et al., 2014; Gonzales et al., 2009; Yoder and Gouaux, 2020; Yoder et al., 2018) mentioned in the Introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "9b590e21-e586-4e10-b338-87e52704e878",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C4",
+      "claim": "The C terminal tail of chicken ASIC1 projects into the cytosol by approximately 35 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the C terminal tail projects into the cytosol by approximately 35 \u00c5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the DPA quenching experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "adcbb4df-80a9-472e-a5dd-ac0dbc2045c7",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C5",
+      "claim": "The N and C tails from the same subunits are closer than adjacent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the C terminal tail projects into the cytosol by approximately 35 \u00c5 and that the N and C tails from the same subunits are closer than adjacent subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FLIM FRET measurements comparing intra- versus inter-subunit distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "6602ec47-bdf5-4b79-8fd7-bdfdfe741285",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C6",
+      "claim": "Using pH-insensitive fluorescent proteins, no relative movement between the N and C tails upon extracellular acidification was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Using pH-insensitive fluorescent proteins, we fail to detect any relative movement between the N and C tails upon extracellular acidification",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on patch clamp fluorometry experiments with GFP-RFP pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "d32968dd-a7b2-4079-8550-a7ee31bbdd0f",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C7",
+      "claim": "Axial motions of the membrane proximal segments toward the plasma membrane occur upon extracellular acidification.",
+      "claim_type": "EXPLICIT",
+      "source": "Using pH-insensitive fluorescent proteins, we fail to detect any relative movement between the N and C tails upon extracellular acidification but do observe axial motions of the membrane proximal segments toward the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by DPA quenching experiments at different pH values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "00ef9ec0-2910-43af-b77e-fa9e551279bf",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C8",
+      "claim": "ASICs are the predominant sensor of extracellular pH in the central and peripheral nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant sensor of extracellular pH in the central and peripheral nervous system is thought to be acid-sensing ion channels (ASICs) (Pattison et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pattison et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "c94f1b68-4d0f-4ba4-95c6-3ecb974f2389",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C9",
+      "claim": "ASICs couple extracellular acidification to synaptic transmission and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of trimeric pH-activated sodium-selective ion channels couples extracellular acidification to numerous physiological and pathophysiological consequences including synaptic transmission and plasticity (Du et al., 2014; Kreple et al., 2014; Liu et al., 2016; Uchitel et al., 2019; Yu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "ae7f2e86-db9e-4dd0-ac19-44569704d95c",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C10",
+      "claim": "ASICs are involved in fear memory consolidation and expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of trimeric pH-activated sodium-selective ion channels couples extracellular acidification to numerous physiological and pathophysiological consequences including synaptic transmission and plasticity (Du et al., 2014; Kreple et al., 2014; Liu et al., 2016; Uchitel et al., 2019; Yu et al., 2018), fear memory consolidation and expression (Du et al., 2017; Taugher et al., 2020; Taugher et al., 2017; Taugher et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "22a9123c-c2ef-441a-a50e-9a03561e1e8f",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C11",
+      "claim": "ASICs are involved in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of trimeric pH-activated sodium-selective ion channels couples extracellular acidification to numerous physiological and pathophysiological consequences including synaptic transmission and plasticity (Du et al., 2014; Kreple et al., 2014; Liu et al., 2016; Uchitel et al., 2019; Yu et al., 2018), fear memory consolidation and expression (Du et al., 2017; Taugher et al., 2020; Taugher et al., 2017; Taugher et al., 2014), epilepsy (Ziemann et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ziemann et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "de9e1ace-652c-40e3-b186-d2b748c8f4e3",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C12",
+      "claim": "ASICs are involved in ischemia-induced cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of trimeric pH-activated sodium-selective ion channels couples extracellular acidification to numerous physiological and pathophysiological consequences including synaptic transmission and plasticity (Du et al., 2014; Kreple et al., 2014; Liu et al., 2016; Uchitel et al., 2019; Yu et al., 2018), fear memory consolidation and expression (Du et al., 2017; Taugher et al., 2020; Taugher et al., 2017; Taugher et al., 2014), epilepsy (Ziemann et al., 2008), and ischemia-induced cell death (Wemmie et al., 2013; Xiong et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wemmie et al., 2013 and Xiong et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "c104248f-b68b-4a02-8c84-d5bfcdd6bb9c",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C13",
+      "claim": "Most ASIC subunits desensitize nearly completely in a few seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Since most ASIC subunits desensitize nearly completely in a few seconds (Benson et al., 2002; Gr\u00fcnder and Pusch, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Benson et al., 2002 and Gr\u00fcnder and Pusch, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "0cb35a46-e307-4307-a148-02749246c3a6",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C14",
+      "claim": "ASICs possess both canonical ionic and non-canonical metabotropic signaling capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "While other extracellular pH sensors may play roles (Pattison et al., 2019; Ruan et al., 2020), recent evidence reveals that ASICs possess both canonical ionic and non-canonical metabotropic signaling capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and recent evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "00fbcbb3-4765-4a5c-8309-9479cf44abf1",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C15",
+      "claim": "Extracellular acidosis drives the association of RIP1 and N-ethylmaleimide-sensitive factor with ASIC1a, triggering RIP1 phosphorylation and initiating a necroptotic signaling cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular acidosis is proposed to drive the association of the serine/threonine kinase receptor interacting protein 1 (RIP1) and N-ethylmaleimide-sensitive factor with ASIC1a, triggering RIP1 phosphorylation and initiating a necroptotic signaling cascade (Wang et al., 2020; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2020 and Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "8ed1cf34-db5f-4444-97bf-7fa359dba482",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C16",
+      "claim": "The ASIC1a-mediated necroptotic signaling occurs independent of ASIC1a ion conductance and via intracellular protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs independent of ASIC1a ion conductance and via intracellular protein-protein interactions (Wang et al., 2020; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2020 and Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "317673dc-56d1-42af-9894-2e24870859a5",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C17",
+      "claim": "The structure of the ASIC extracellular and transmembrane regions has been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Like many of these ion channels, the structure of the ASIC extracellular and transmembrane regions has been determined (Baconguis et al., 2014; Gonzales et al., 2009; Yoder and Gouaux, 2020; Yoder et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "78473147-513e-4e66-9c64-263ab48ffc7b",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C18",
+      "claim": "The intracellular domains of ASICs are unresolved in structural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Like many of these ion channels, the structure of the ASIC extracellular and transmembrane regions has been determined (Baconguis et al., 2014; Gonzales et al., 2009; Yoder and Gouaux, 2020; Yoder et al., 2018), but the intracellular domains (ICDs) are unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the absence of ICD structures in cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "e2e8a5d9-6204-4280-965f-f93cdcb12d62",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C19",
+      "claim": "The ASIC ICDs are likely partly or mostly unstructured regions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the ASIC ICDs are partly, or even mostly, unstructured regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of resolved structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "2b999d61-9cd0-4755-bfb7-12f352751169",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C20",
+      "claim": "The short (15 amino acid) N tail projects about 6\u201310 \u00c5 from the membrane inner leaflet into the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the short (15 amino acid) N tail projects about 6\u201310 \u00c5 from the membrane inner leaflet into the cytosol",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "91c32d0a-4e37-43fe-83bc-854ad144839a",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C21",
+      "claim": "The longer 67 amino acid C tail extends between 30 and 40 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the short (15 amino acid) N tail projects about 6\u201310 \u00c5 from the membrane inner leaflet into the cytosol while the longer 67 amino acid C tail extends between 30 and 40 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "261d8680-1f75-4de1-b5a8-2dcb9372b802",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C22",
+      "claim": "The ASIC C tail orientation contrasts with the unresolved tail of AMPA receptors that is largely perpendicular to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with the unresolved tail of AMPA receptors that is largely perpendicular to the membrane (Zachariassen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison supported by a citation to Zachariassen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7eb4ed12-4c8f-4ae2-b5cb-51ceec1d417e",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C23",
+      "claim": "The N and proximal segment of the C tail from the same subunits are closer than adjacent subunits, suggesting preferential intra-subunit tail interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also report that the N and proximal segment of the C tail from the same subunits are closer than adjacent subunits, suggesting preferential intra-subunit tail interactions which may inform the interpretation of experiments with heteromeric channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on FLIM FRET data comparing intra- and inter-subunit distances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "e688a9b8-b235-4909-8144-137ef3c27f4e",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C24",
+      "claim": "The intracellular components of the cASIC1 N and C terminal tails are 15 and 67 amino acids, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular components of the cASIC1 N and C terminal tails are 15 and 67 amino acids, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the construct used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "a76d8482-c481-4dd5-9012-8f4488dbb99d",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C25",
+      "claim": "DPA is a dark acceptor, allowing FRET to be easily measured by changes in donor emission.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is a dark acceptor, allowing FRET to be easily measured by changes in donor emission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of DPA supported by prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7462bd14-44fe-4ead-9154-45457ec3bbfd",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C26",
+      "claim": "DPA binds and dissociates from the plasma membrane quickly with respect to the time of a patch clamp experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it binds and dissociates from the plasma membrane quickly with respect to the time of a patch clamp experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of DPA supported by prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7e795355-94a7-4824-a361-ba52c962bf77",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C27",
+      "claim": "The anionic DPA orients in the plasma membrane depending on voltage, being pulled into the inner membrane leaflet by depolarization or pushed to the outer leaflet by hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, and most critically, the anionic DPA orients in the plasma membrane depending on voltage, being pulled into the inner membrane leaflet by depolarization or pushed to the outer leaflet by hyperpolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of DPA supported by prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "709851bc-f601-4f86-919a-f21a037f8bdf",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C28",
+      "claim": "Voltage steps can move DPA molecules closer to, or further from, the donor by a fixed distance of 25 \u00c5, reflecting the estimated displacement of DPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, voltage steps can move DPA molecules closer to, or further from, the donor by a fixed distance of 25 \u00c5, reflecting to the estimated displacement of DPA (Wang et al., 2010; Zachariassen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2010 and Zachariassen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "2238a46e-8f25-4227-93e3-bf1a975be95a",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C29",
+      "claim": "Lck-CFP gave robust voltage-dependent fluorescence changes in the presence of DPA (5 \u00b5M) but not in its absence.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane tethered CFP (Lck-CFP) gave robust voltage-dependent fluorescence changes in the presence of DPA (5 \u00b5M) but not in its absence and was quantified as the difference between the top and bottom values of a Boltzmann sigmoidal fit of the normalized fluorescence (\u0394F/F\u221215 mv = 0.45 \u00b1 0.03, n = 6, Figure 1C & D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "a32ab658-9825-4c6d-95ba-30b05b903b6c",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C30",
+      "claim": "Lck-CFP quenching (\u0394F/F\u221215 mv = 0.45 \u00b1 0.03, n = 6) is consistent with the fluorophore being close to the plasma membrane and having a relatively high R0 distance (47 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane tethered CFP (Lck-CFP) gave robust voltage-dependent fluorescence changes in the presence of DPA (5 \u00b5M) but not in its absence and was quantified as the difference between the top and bottom values of a Boltzmann sigmoidal fit of the normalized fluorescence (\u0394F/F\u221215 mv = 0.45 \u00b1 0.03, n = 6, Figure 1C & D), consistent with the fluorophore being close to the plasma membrane and having a relatively high R0 distance (47 \u00c5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data based on FRET theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "f8fa32f9-a532-4b16-b320-7a75925c7342",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C31",
+      "claim": "Lck-YFP gave relatively weak voltage-dependent quenching in the presence of DPA (\u0394F/F\u221215 mv = 0.16 \u00b1 0.013, n = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "The Lck-YFP gave relatively weak voltage-dependent quenching in the presence of DPA (\u0394F/F\u221215 mv = 0.16 \u00b1 0.013, n = 6, Figure 1C & D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "c35f7650-aecf-4b65-96d0-da257a3d1a48",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C32",
+      "claim": "Lck-YFP quenching is consistent with a membrane proximal position but relatively lower R0 distance (36.5 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "The Lck-YFP gave relatively weak voltage-dependent quenching in the presence of DPA (\u0394F/F\u221215 mv = 0.16 \u00b1 0.013, n = 6, Figure 1C & D), which is also consistent with a membrane proximal position but relatively lower R0 distance (36.5 \u00c5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data based on FRET theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "2e945a6c-cdcb-4712-bbf4-eeb7968383c9",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C33",
+      "claim": "FP insertions did not disrupt channel function as determined by the rates of desensitization and recovery, although small differences in desensitization decay of C4 and recovery of C1 insertions appeared.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, FP insertions did not disrupt channel function as determined by the rates of desensitization and recovery, although small differences in desensitization decay of C4 and recovery of C1 insertions appeared (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiology data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "f7f22d20-bc12-48ef-832f-e4b08558d7a1",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C34",
+      "claim": "The FP-tagged ASIC1 constructs showed robust plasma membrane localization in confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these constructs showed robust plasma membrane localization in confocal microscopy (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on confocal imaging data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "f0207486-c00d-499b-8799-c966c3ff62f9",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C35",
+      "claim": "With CFP insertions, the C1 position gave the strongest quenching (\u0394F/F\u221215 mv = 0.65 \u00b1 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that with CFP insertions, the C1 position gave the strongest quenching (\u0394F/F\u221215 mv = 0.65 \u00b1 0.03)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "8e3858eb-c9f3-40ac-9f61-2e509444b0f8",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C36",
+      "claim": "With CFP insertions, N and C2 positions gave about equal quenching (\u0394F/F\u221215 mv = 0.48 \u00b1 0.03 and \u0394F/F\u221215 mv = 0.51 \u00b1 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that with CFP insertions, the C1 position gave the strongest quenching (\u0394F/F\u221215 mv = 0.65 \u00b1 0.03) with N and C2 being about equal (\u0394F/F\u221215 mv = 0.48 \u00b1 0.03 and \u0394F/F\u221215 mv = 0.51 \u00b1 0.05)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7408312a-a87b-4693-94a0-9d904266678b",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C37",
+      "claim": "With CFP insertions, C3 and C4 had progressively less quenching (\u0394F/F\u221215 mv = 0.39 \u00b1 0.03 and \u0394F/F\u221215 mv = 0.21 \u00b1 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that with CFP insertions, the C1 position gave the strongest quenching (\u0394F/F\u221215 mv = 0.65 \u00b1 0.03) with N and C2 being about equal (\u0394F/F\u221215 mv = 0.48 \u00b1 0.03 and \u0394F/F\u221215 mv = 0.51 \u00b1 0.05) and C3 and C4 having progressively less quenching (\u0394F/F\u221215 mv = 0.39 \u00b1 0.03 and \u0394F/F\u221215 mv = 0.21 \u00b1 0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "eb7aab6f-56d2-4f08-8ffb-a4b375a6b351",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C38",
+      "claim": "With YFP insertions, the N terminal YFP gave the strongest quenching (\u0394F/F\u221215 mv = 0.26 \u00b1 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of YFP, a slightly different pattern was observed where the N terminal YFP gave the strongest quenching (\u0394F/F\u221215 mv = 0.26 \u00b1 0.02)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "02486ca2-263e-4fea-bfdc-8f0677459291",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C39",
+      "claim": "With YFP insertions, C1\u2013C4 gave progressively weaker quenching (\u0394F/F\u221215 mv between 0.23 \u00b1 0.02 and 0.14 \u00b1 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of YFP, a slightly different pattern was observed where the N terminal YFP gave the strongest quenching (\u0394F/F\u221215 mv = 0.26 \u00b1 0.02) with C1\u2013C4 giving progressively weaker quenching (\u0394F/F\u221215 mv between 0.23 \u00b1 0.02 and 0.14 \u00b1 0.01, Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DPA quenching measurements shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "d94a4883-7fc6-4d1f-9d47-b3bbda48343a",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C40",
+      "claim": "Quenching of the N terminal YFP insertion was statistically distinguishable from the C4 insertion (p = 0.019).",
+      "claim_type": "EXPLICIT",
+      "source": "Quenching of the N terminal YFP insertion was statistically distinguishable from the C4 insertion (p = 0.019) but did not detect differences between adjacent insertions as for CFP (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of DPA quenching data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "86280434-c83e-4193-9e4f-d33de706ee67",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C41",
+      "claim": "The most parsimonious interpretation of the DPA quenching data is that the N terminal insertion point is membrane proximal while all positions in the C tail are progressively further from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The most parsimonious interpretation of these data is that the N terminal insertion point is membrane proximal while all positions in the C tail are progressively further from the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the pattern of quenching data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "972f948b-adc9-4b8a-a0d0-0545210d5dfb",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C42",
+      "claim": "The tip of the N terminus is about 6\u201310 \u00c5 from the inner leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "With this assumption, the strongest interpretation of our data is that the tip of the N terminus is about 6\u201310 \u00c5 from the inner leaflet",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on modeling of DPA quenching data with the assumption that the FP adds 10 \u00c5 to the axial distance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "da320569-2477-41ea-99cd-6713aef04da0",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C43",
+      "claim": "The C1 insertion site is approximately 12\u201316 \u00c5 away from the inner leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "With this assumption, the strongest interpretation of our data is that the tip of the N terminus is about 6\u201310 \u00c5 from the inner leaflet while the C1 insertion site is approximately 12\u201316 \u00c5 away.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on modeling of DPA quenching data with the assumption that the FP adds 10 \u00c5 to the axial distance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7cccd5cd-43a0-496e-9940-d835dcde7a08",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C44",
+      "claim": "The final C terminal amino acids are likely within 30\u201340 \u00c5 of the inner leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "Distance estimates for the C2\u2013C4 insertion sites are difficult to assign; however, given that the C4 position shows quenching for both FPs, this final C terminal amino acids are likely within 30\u201340 \u00c5 of the inner leaflet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of quenching at the C4 position.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "b15acf53-2845-441e-a61a-c7d0c98da42e",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C45",
+      "claim": "The C-\u03b1 to C-\u03b1 distance from the critical His74 to Lys355, at the base of thumb domain's alpha5 helix, is 35 \u00c5 in the resting state (PDB:6VTL).",
+      "claim_type": "EXPLICIT",
+      "source": "For reference, the C-\u03b1 to C-\u03b1 distance from the critical His74 to Lys355, at the base of thumb domain's alpha5 helix, is 35 \u00c5 (Figure 2\u2014figure supplement 6, resting state, PDB:6VTL).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from a published structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "6ad1e3b8-6404-4d59-901c-31f5e298c660",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C46",
+      "claim": "A cluster of lysine and arginine residues (amino acids 461\u2013476) in the membrane proximal segment of the C tail is proposed to interact with a segment of negatively charged amino acids in the N termini (amino acids 7\u201312), forming a salt bridge between the intracellular tails of the same subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the membrane proximal segment of the C tail is a cluster of lysine and arginine residues (amino acids 461\u2013476). These have been proposed to interact with a segment of negatively charged amino acids in the N termini (amino acids 7\u201312), forming a salt bridge between the intracellular tails of the same subunit (Wang et al., 2020; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2020 and Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "697384f9-f220-4137-a6ec-119ae6dc22e3",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C47",
+      "claim": "CFP-cA1-YFP alone produced very strong FRET as evidenced by dramatically faster CFP lifetimes compared to N CFP (N CFP: 4.06 \u00b1 0.02 ns, n = 76; CFP-cA1-YFP: 2.68 \u00b1 0.03, n = 58).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, CFP-cA1-YFP alone produced very strong FRET as evidenced by the dramatically faster CFP lifetimes compared to N CFP (N CFP: 4.06 \u00b1 0.02 ns, n = 76; CFP-cA1-YFP: 2.68 \u00b1 0.03, n = 58, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FLIM measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "2d2e1f35-2db0-4f88-b732-0dff07ea4a2d",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C48",
+      "claim": "Adding more wild-type cASIC1 to CFP-cA1-YFP led to an increase in CFP lifetimes until reaching a plateau of approximately 3 ns, representing a FRET efficiency of 25% between CFP and YFP in a single subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding more wild-type cASIC1 led to an increase in CFP lifetimes until reaching a plateau of approximately 3 ns, representing a FRET efficiency of 25% between CFP and YFP in a single subunit (1:31 ratio: 3.08 \u00b1 0.03, n = 34, 24% FRET efficiency, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FLIM measurements at varying cDNA ratios shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "ce50ab36-72dd-43e0-a7ac-b441610acc8e",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C49",
+      "claim": "Co-transfection of CFP-cA1-cA1 along with C4 YFP at increasing ratios produced progressively faster lifetimes up to about 3.3 ns or 15% FRET efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transfection of CFP-cA1-cA1 along with C4 YFP at increasing ratios produced progressively faster lifetimes up to about 3.3 ns or 15% FRET efficiency (1:15: 3.28 \u00b1 0.05 ns, n = 43, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FLIM measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "990bddb1-ae29-4697-a64d-02f262d30005",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C50",
+      "claim": "The FRET efficiency from FPs on neighboring subunits (15 \u00b1 1%, n = 43 for CFP-cA1-cA1 + C4 YFP 1:15) is significantly less than that observed in the CFP-cA1-YFP experiment (24 \u00b1 1%, n = 46 for CFP-cA1-YFP + wild type 1:15, p < 1e\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "Even with a 1:15 ratio of CFP-cA1-cA1 to C4 YFP, where all dimers likely have a C4 YFP monomer partner, the FRET efficiency is significantly less than that observed in the CFP-cA1-YFP experiment (15 \u00b1 1%, n = 43 for CFP-cA1-cA1 + C4 YFP 1:15; 24 \u00b1 1%, n = 46 for CFP-cA1-YFP + wild type 1:15, p < 1e\u22126, Student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical comparison of FLIM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "8a6874d2-e9d2-49d9-9ae9-62a101f08e38",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C51",
+      "claim": "FPs on the same subunit show more efficient FRET than on different subunits, suggesting the tails of the same subunit are physically closer and more likely to associate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, FPs on the same subunit show more efficient FRET than on different subunits, suggesting the tails of the same subunit are physically closer and more likely to associate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FLIM FRET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "38942456-839b-4e2c-8c54-33152eb34501",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C52",
+      "claim": "The putative salt bridge between the N terminal tail and the membrane proximal segment of the C tail is proposed to break apart to facilitate ion-independent signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The putative salt bridge between the N terminal tail and the membrane proximal segment of the C tail is proposed to break apart to facilitate ion-independent signaling (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "06e31d76-7c62-4833-ac9d-da2b3df7d0c9",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C53",
+      "claim": "Rapid application of pH 7 or 6, but not pH 8, produced a decrease in the ratio of YFP to CFP emission (i.e. change in FRET) with a slow time course (\u0394FYFP/CFP pH 7: \u22122.6 \u00b1 0.3%, n = 8, p = 0.031 versus pH 8; pH 6: \u22124.6 \u00b1 0.5%, n = 8, p = 0.0025 versus pH 8).",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 4A and B, rapid application of pH 7 or 6, but not pH 8, produced a decrease in the ratio of YFP to CFP emission (i.e. change in FRET) with a slow time course (\u0394FYFP/CFP pH 7: \u22122.6 \u00b1 0.3%, n = 8, p = 0.031 versus pH 8; pH 6: \u22124.6 \u00b1 0.5%, n = 8, p = 0.0025 versus pH 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "afdc7184-5a59-4425-9300-dcf546695194",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C54",
+      "claim": "The strong pH sensitivity of YFP complicates the interpretation of FRET measurements upon acidification.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as discussed previously (Wang et al., 2020), the strong pH sensitivity of YFP complicates the interpretation of these measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of YFP supported by prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7fe55a5b-7cd7-4d66-9b34-651782e6d335",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C55",
+      "claim": "C4 YFP showed a strong loss of emission upon extracellular acidification (\u0394FYFP pH 7: \u22122.6 \u00b1 0.8%, n = 5; pH 6: \u221212 \u00b1 2%, n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this (Wang et al., 2020), we also observed a strong loss of emission from C4 YFP upon extracellular acidification (Figure 4A and B, \u0394FYFP pH 7: \u22122.6 \u00b1 0.8%, n = 5; pH 6: \u221212 \u00b1 2%, n = 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "f51433b1-1096-468d-8cff-1b51b1a586a0",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C56",
+      "claim": "The N CFP showed no change in emission upon extracellular acidification owing to this CFP variant's pKa of 3.1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the N CFP showed no such change in emission (Figure 4) owing to this CFP variants pKa of 3.1 (Goedhart et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data and a citation to Goedhart et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "97b7ffe3-fc0a-4e46-84be-98e6c7d79d03",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C57",
+      "claim": "A novel GFP with a distinct chromophore and pKa of 3.4 was described.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, a novel GFP was described with a distinct chromophore and pKa of 3.4 (Shinoda et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Shinoda et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "a4e6f3fe-1eae-4f3d-819d-6f2b15a3f6aa",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C58",
+      "claim": "TagRFP has a relatively low pKa of 3.8.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with a relatively low pKa red FP (TagRFP, pKa 3.8 Merzlyak et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Merzlyak et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "b44e083e-cdd0-4f23-b64c-85e834f683ba",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C59",
+      "claim": "Both GFP-cA1 and cA1-RFP clones showed no change in their fluorescence emission with extracellular pH 6, 7, or 8.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 4C and D, both clones showed no change in their fluorescence emission with extracellular pH 6, 7, or 8, confirming their suitability for measuring conformational changes induced by pH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "1abda112-d613-4aa4-b5ed-088bd7da9107",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C60",
+      "claim": "No change in the RFP/GFP ratio (i.e. no change in FRET) was detected from GFP-cA1-RFP upon acidification (\u0394FRFP/GFP pH 7: \u22121.3\u00b1 0.5%; pH 6: \u22120.1 \u00b1 0.6%, n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected no change in the RFP/GFP ratio (i.e. no change in FRET) from these FPs (Figure 4C and D, \u0394FRFP/GFP pH 7: \u22121.3\u00b1 0.5%; pH 6: \u22120.1 \u00b1 0.6%, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "497200ed-71be-41bb-8bf6-9e0466200427",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C61",
+      "claim": "The GFP does FRET with the RFP as the ratio of red to green fluorescence emission was significantly greater in the GFP-cA1-RFP clone compared to the GFP-cA1 only (GFP-cA1: 0.14 \u00b1 0.01, n = 6; GFP-cA1-RFP: 0.41 \u00b1 0.04, n = 7, p = 0.0014).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the GFP does FRET with the RFP as the ratio of red to green fluorescence emission was significantly greater in the GFP-cA1-RFP clone compared to the GFP-cA1 only (GFP-cA1: 0.14 \u00b1 0.01, n = 6; GFP-cA1-RFP: 0.41 \u00b1 0.04, n = 7, p = 0.0014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7eaf1b0b-71db-485b-9794-68edd3dd8857",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C62",
+      "claim": "No change in RFP/GFP ratio was detected with GFP-cA1-C1-RFP alone or when diluting this construct with unlabeled wild-type cASIC1 (\u0394FRFP/GFP GFP-cA1-C1-RFP pH 6: \u22120.9 \u00b1 1.4%, n = 3; + wild type pH 6: \u22120.8 \u00b1 1.5%, n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, here again we did not detect any change in RFP/GFP ratio with either GFP-cA1-C1-RFP alone or when diluting this construct out with unlabeled wild-type cASIC1 (\u0394FRFP/GFP GFP-cA1-C1-RFP pH 6: \u22120.9 \u00b1 1.4%, n = 3; + wild type pH 6: \u22120.8 \u00b1 1.5%, n = 5; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on patch clamp fluorometry data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "87019cd0-4adc-4691-8575-ed30695eb041",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C63",
+      "claim": "The voltage-dependent quenching of Lck-CFP was not different between extracellular pH 8 compared to pH 6 (\u0394F/F\u221215 mV pH 8: 0.45 \u00b1 0.03, pH 6: 0.43 \u00b1 0.04, n = 6, uncorrected p-value = 0.52).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the voltage-dependent quenching of Lck-CFP was not different between extracellular pH 8 compared to pH 6 (\u0394F/F\u221215 mV pH 8: 0.45 \u00b1 0.03, pH 6: 0.43 \u00b1 0.04, n = 6, uncorrected p-value = 0.52, paired Wilcoxon signed-rank test, Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DPA quenching measurements at different pH values shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "48d656a0-3562-491e-b8d6-50db1897b15c",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C64",
+      "claim": "The extent of quenching at the N and C1 position was significantly reduced in pH 6 compared to pH 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the extent of quenching at the N and C1 position was significantly reduced in pH 6 compared to pH 8 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DPA quenching measurements at different pH values shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "cf1e8019-6d28-4f06-9b95-e3bf980feb4d",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C65",
+      "claim": "In the resting state (pH 8), CFP at the N or C1 position had a \u0394F/F\u221215 mV of 0.49 \u00b1 0.02 or 0.57 \u00b1 0.04 (n = 13 or 11), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the resting state (pH 8), CFP at the N or C1 position had a \u0394F/F\u221215 mV of 0.49 \u00b1 0.02 or 0.57 \u00b1 0.04 (n = 13 or 11), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "93d0e5e4-43be-4914-b723-1e8f280925c8",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C66",
+      "claim": "With extracellular pH 6 (populating the desensitized state), the \u0394F/F\u221215 mV at N and C1 positions were reduced to 0.41 \u00b1 0.02 and 0.55 \u00b1 0.03.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with extracellular pH 6 (populating the desensitized state), these were reduced to 0.41 \u00b1 0.02 and 0.55 \u00b1 0.03.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DPA quenching measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "a73be9d2-f5f0-42b0-a925-04f97659fc58",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C67",
+      "claim": "The effect of pH on the extent of quenching at the N position was readily reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "In a subset of cells expressing the N CFP clone, we maintained the recording in pH 8, 6 and then back to pH 8 and found the effect on the extent of quenching was readily reversible (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DPA quenching measurements shown in Figure 5D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "f61b57c2-62bd-4990-a611-3017415e37e7",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C68",
+      "claim": "None of the other positions (C2, C3, C4) showed significant evidence of movement between pH 8 and pH 6 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the other positions showed significant evidence of movement between these conditions (Figure 5C, Figure 5\u2014figure supplement 1), supporting that this motion is specific to the membrane proximal region and not a general pH artifact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DPA quenching measurements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "2f8d475e-af33-4b38-96ff-67b1b35a7da4",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C69",
+      "claim": "Both the N and C tails of cASIC1 move axially with respect to the membrane between the resting and desensitized states.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that both the N and C tails of cASIC1 move axially with respect to the membrane between the resting and desensitized states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DPA quenching data at different pH values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "258a8d06-3936-4636-81e9-245d963f79a6",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C70",
+      "claim": "The reduced quenching at the N position in the pH 6 condition indicates the FP moves closer to the plasma membrane upon channel desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced quenching in the pH 6 condition indicates the FP moves even closer to the plasma membrane upon channel desensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the DPA quenching data and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "535f5ac0-3ac3-45e3-aa11-344c83555802",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C71",
+      "claim": "The data favor a model where the N and proximal segment of the C tail move up toward the inner membrane leaflet when the channel is exposed to desensitizing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data favor a model where the N and proximal segment of the C tail move up toward the inner membrane leaflet when the channel is exposed to desensitizing conditions (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the DPA quenching data at different pH values, illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "a0fc38aa-bc74-4b92-a386-adf6d64586e0",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C72",
+      "claim": "Structures of full-length cASIC1 have been solved using cryo-EM, but the N and C tails give no resolvable density.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of full-length cASIC1 have been solved using cryo-EM. The N and C tails are present in these constructs yet give no resolvable density (Yoder and Gouaux, 2020; Yoder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yoder and Gouaux, 2020 and Yoder et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "48ac5782-29c2-4c5b-a45b-5316aff24b61",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C73",
+      "claim": "The lack of resolvable density for the tails suggests they may be largely disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the tails maybe largely disordered, waiting to bind intracellular proteins via an induced fit or conformation selection mechanisms (Arai et al., 2015; Oldfield and Dunker, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of resolved structures, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "18ebc796-0f48-41a2-a585-468ccdc71904",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C74",
+      "claim": "Secondary structure predictions using the JPred tool support that the proximal segment of the C tail has a strong tendency to form alpha helices while the remainder of the tail is unstructured.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary structure predictions using the JPred tool also support this view, with the proximal segment of the C tail having a strong tendency to form alpha helices while the remainder of the tail is unstructured (Drozdetskiy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational predictions and a citation to Drozdetskiy et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "cea92e90-b1d0-4cf8-93b3-1c2846765fd4",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C75",
+      "claim": "Numerous protein-protein interactions have been reported for ASICs that are important for channel trafficking, gating, and possibly metabotropic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous protein-protein interactions have been reported for ASICs that are important for channel trafficking, gating, and possibly metabotropic signaling (Kellenberger and Schild, 2015; Zeng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kellenberger and Schild, 2015 and Zeng et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "925ceb57-9b26-49fc-87d8-af50b3539899",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C76",
+      "claim": "The best documented protein-protein interactions for ASICs are with PICK1, PSD-95, and stomatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The best documented of these are PICK1, PSD-95, and stomatin (Baron et al., 2002; Hruska-Hageman et al., 2004; Hruska-Hageman et al., 2002; Klipp et al., 2020; Leonard et al., 2003; Price et al., 2004; Zha et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "56aecccc-78ff-4b20-b546-f202191a7eb3",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C77",
+      "claim": "The interaction between ASIC3's C tail and stomatin enables stomatin to inhibit channel activation through a mechanism involving the first transmembrane helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular note is the interaction between ASIC3's C tail and stomatin, which enables stomatin to inhibit channel activation through a mechanism involving the first transmembrane helix (Klipp et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Klipp et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "f9ab2a6d-511f-4d36-86fd-b95724fe4be0",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C78",
+      "claim": "The membrane proximal region of the ASIC1 C tail becomes liberated from the N tail during desensitization, allowing for the recruitment of RIP1 kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent work has suggested that the membrane proximal region of the ASIC1 C tail becomes liberated from the N tail during desensitization, allowing for the recruitment of RIP1 kinase (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "67b579f2-50dd-42aa-9402-363fdc61faf5",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C79",
+      "claim": "Activation of RIP1 by ASIC1 results in RIP1 phosphorylation leading to eventual cell death via necroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in activation of RIP1 by phosphorylation leading to eventual cell death via necroptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior citations in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "d8d1ad37-e3dc-4f96-9ab5-aeb19671ec38",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C80",
+      "claim": "Canonical activation of RIP1 by the tumor necrosis factor (TNF) receptor 1 (TNFR1) occurs through heterodimerization of death domains (DD) present on both RIP1 and TNFR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonical activation of RIP1 by the tumor necrosis factor (TNF) receptor 1 (TNFR1) occurs through heterodimerization of death domains (DD) present on both RIP1 and TNFR1 (Meng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Meng et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "3d50b6d9-8e8c-4ec6-acac-ab9453189d61",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C81",
+      "claim": "ASIC1 does not contain a death domain.",
+      "claim_type": "EXPLICIT",
+      "source": "ASIC1 does not contain a DD",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "29ee2288-96a7-4803-907e-70ee854c6180",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C82",
+      "claim": "The intracellular N and C terminal tails of chicken ASIC1 are 15 and 67 amino acids, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular components of the cASIC1 N and C terminal tails are 15 and 67 amino acids, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the construct used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "ca5801dd-7615-41c1-a161-cd8c2d28f517",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C83",
+      "claim": "A clonal Human Embryonic Kidney 293T (HEK293T) cell line with the endogenous ASIC1 gene knocked out was used for all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A clonal Human Embryonic Kidney 293T (HEK293T) cell line, purchased from ATCC and identity confirmed with STR profiling, with the endogenous ASIC1 gene knocked out were used for all experiments (Rook et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "7369d56b-c10d-4d97-9c3b-d29081c1ca7a",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C84",
+      "claim": "The DPA molar extinction coefficient at 420 nm was determined to be 26,500 M\u22121cm\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The DPA molar extinction coefficient at 420 nm was determined to be 26,500 M\u22121cm\u22121 by fitting the slope of absorption measurements from serial dilutions of DPA into saline or 1% SDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "cf69a139-363b-4061-b368-d628b1ee175f",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "claim_id": "C85",
+      "claim": "The DPA molar extinction coefficient value of 26,500 M\u22121cm\u22121 is consistent with previously reported measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "This value is consistent with previously reported measurements (Gunupuru et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gunupuru et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on ASICs as trimeric pH-activated channels involved in various physiological and pathophysiological processes, including synaptic transmission, fear memory, epilepsy, and ischemic cell death. ASICs possess both ionic and metabotropic signaling capabilities, with the intracellular domains remaining structurally unresolved despite available extracellular and transmembrane structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1\u2013C18 establish well-supported background knowledge from prior literature. These claims are appropriately cited and represent consensus understanding of ASIC biology, structure, and function. They provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "465b3e9e-e018-47bf-95b6-3932a8f0609c",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors validated the DPA quenching approach using membrane-tethered CFP and YFP constructs. Lck-CFP showed robust voltage-dependent quenching (\u0394F/F = 0.45 \u00b1 0.03) consistent with membrane proximity and high R0 (47 \u00c5), while Lck-YFP showed weaker quenching (\u0394F/F = 0.16 \u00b1 0.013) consistent with lower R0 (36.5 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24\u2013C32 describe validation experiments with appropriate controls and quantification. The DPA properties are well-established in prior literature, and the Lck-FP controls demonstrate the expected behavior based on FRET theory and R0 distances.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "62b2ae0d-bedf-4380-90b1-13f031611215",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fluorescent protein insertions into ASIC1 did not substantially disrupt channel function, as assessed by desensitization and recovery kinetics, though small differences were observed for C4 desensitization and C1 recovery. All constructs showed robust plasma membrane localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33\u2013C34 are supported by electrophysiology data (Figure 2\u2014figure supplement 2) and confocal imaging (Figure 2\u2014figure supplement 3). The functional validation is critical for interpreting subsequent topography measurements, though the small kinetic differences noted warrant caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "c256eccf-8e08-4713-ae0b-bd15fed01e24",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DPA quenching experiments with CFP and YFP insertions at multiple positions along the N and C tails revealed position-dependent quenching patterns. The N terminus projects ~6\u201310 \u00c5 from the inner leaflet, the C1 position is ~12\u201316 \u00c5 away, and the C-terminal end (C4) is within 30\u201340 \u00c5 of the membrane. The pattern indicates the C tail extends progressively away from the membrane rather than lying parallel to it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35\u2013C45 present the core topographical mapping results. While the quenching data show clear position-dependent patterns (C35\u2013C40) and statistical significance, the distance estimates (C42\u2013C44) rely on modeling assumptions including a 10 \u00c5 correction for FP size and theoretical FRET curves. The authors acknowledge multiple sources of error including background fluorescence, FP orientation effects, and potential structural disruption. The provisional nature of these distance estimates is appropriately noted but limits confidence in precise values. Alternative methods (e.g., smaller fluorophores, complementary techniques) would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "ad164dd2-90aa-44e5-a211-1eec07f7fa26",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FLIM FRET measurements comparing intra-subunit versus inter-subunit distances show that FPs on the same subunit (CFP-cA1-YFP) exhibit higher FRET efficiency (24%) than FPs on neighboring subunits (CFP-cA1-cA1 + C4 YFP, 15% efficiency, p < 1e-6), suggesting the N and C tails of the same subunit are physically closer and more likely to associate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46\u2013C51 are supported by systematic FLIM experiments with appropriate controls and dilution series to isolate single FRET pairs. The statistical comparison is robust (p < 1e-6), and the interpretation that intra-subunit tails are closer than inter-subunit tails is well-justified by the data. This supports the proposed salt bridge model from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "9076d563-5875-403f-acde-3ed78230737a",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using pH-sensitive CFP-YFP pairs, acidification produced apparent FRET changes, but these are confounded by YFP's pH sensitivity. With pH-insensitive GFP-RFP pairs (pKa 3.4 and 3.8), no change in FRET was detected upon acidification at either the C4 or C1 position, indicating no detectable lateral movement between N and C tails.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52\u2013C62 appropriately address a key hypothesis about tail separation during acidification. The authors recognize the pH sensitivity problem with standard FPs (C54\u2013C56) and employ pH-insensitive variants (C57\u2013C59). The negative result (no FRET change, C60, C62) is clearly reported with appropriate controls (C61). While negative results have limitations, the experimental design is sound and the conclusion that no substantial lateral movement is detectable is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DPA quenching at different pH values reveals that the N and C1 positions show significantly reduced quenching at pH 6 compared to pH 8, while other positions (C2\u2013C4) and Lck-CFP controls show no pH-dependent changes. This indicates axial movement of the membrane-proximal N and C tail segments toward the plasma membrane upon channel desensitization, with the effect being reversible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63\u2013C71 demonstrate pH-dependent conformational changes with appropriate controls (Lck-CFP shows no pH effect, C63) and specificity (only N and C1 affected, C68). The reversibility (C67) strengthens the conclusion. The interpretation that reduced quenching indicates movement toward the membrane (C70) is consistent with the theoretical framework, though the C1 interpretation is acknowledged as more complex due to its position on the FRET curve. Statistical significance is demonstrated with correction for multiple comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ASIC intracellular domains are likely largely disordered based on lack of resolved density in cryo-EM structures, with the N tail projecting 6\u201310 \u00c5 and the C tail extending 30\u201340 \u00c5 into the cytosol. Secondary structure predictions suggest the proximal C tail may form alpha helices while the remainder is unstructured. The N and proximal C tail segments from the same subunit are closer than adjacent subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19\u2013C23 and C72\u2013C74 synthesize the study's findings with prior structural knowledge. The inference of disorder (C19, C73) is reasonable given unresolved cryo-EM density (C72) and is supported by computational predictions (C74). The distance estimates (C20\u2013C21) are appropriately qualified as provisional. The intra-subunit proximity (C23) is well-supported by FLIM data. This represents a coherent integration of results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "744ae4c5-9cf9-4682-bb24-d2323eb70713",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript discusses the physiological relevance of ASIC intracellular domain structure in the context of known protein-protein interactions (PICK1, PSD-95, stomatin) and proposed metabotropic signaling through RIP1 kinase recruitment during acidification-induced necroptosis, noting that ASIC1 lacks a death domain unlike canonical RIP1 activators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75\u2013C81 provide appropriate discussion context citing relevant prior work. These are well-supported literature-based claims that frame the significance of the structural findings. The discussion appropriately identifies open questions about ASIC-RIP1 interaction mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    },
+    {
+      "id": "297701a4-ad45-435c-8602-3ddfe318e618",
+      "content_id": "603f5595-9add-4a88-97e8-c00785b42557",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used chicken ASIC1 with 15 and 67 amino acid intracellular tails in HEK293T cells with endogenous ASIC1 knocked out. The DPA molar extinction coefficient was experimentally determined to be 26,500 M\u207b\u00b9cm\u207b\u00b9, consistent with prior measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82\u2013C85 describe methodological details that are appropriately documented and validated. The cell line is properly characterized (C83), and the DPA characterization (C84\u2013C85) provides important validation for the quenching experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:10:43.287931Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "70fad4e8-ec1e-4d9b-9b9d-2ee1af3e5896",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "dccbd886-6fc0-4a87-beb7-2e09e0a9e32c",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "d80af90d-1617-4cf7-862f-b448a0713979",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "00ef9ec0-2910-43af-b77e-fa9e551279bf",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "c94f1b68-4d0f-4ba4-95c6-3ecb974f2389",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "ae7f2e86-db9e-4dd0-ac19-44569704d95c",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "22a9123c-c2ef-441a-a50e-9a03561e1e8f",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "de9e1ace-652c-40e3-b186-d2b748c8f4e3",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "c104248f-b68b-4a02-8c84-d5bfcdd6bb9c",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "0cb35a46-e307-4307-a148-02749246c3a6",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "00fbcbb3-4765-4a5c-8309-9479cf44abf1",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "8ed1cf34-db5f-4444-97bf-7fa359dba482",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "317673dc-56d1-42af-9894-2e24870859a5",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "78473147-513e-4e66-9c64-263ab48ffc7b",
+      "result_id": "6e3ef280-e0be-47f9-b513-ba6a4f48b60a"
+    },
+    {
+      "claim_id": "e688a9b8-b235-4909-8144-137ef3c27f4e",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "a76d8482-c481-4dd5-9012-8f4488dbb99d",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "7462bd14-44fe-4ead-9154-45457ec3bbfd",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "7e795355-94a7-4824-a361-ba52c962bf77",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "709851bc-f601-4f86-919a-f21a037f8bdf",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "2238a46e-8f25-4227-93e3-bf1a975be95a",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "a32ab658-9825-4c6d-95ba-30b05b903b6c",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "f8fa32f9-a532-4b16-b320-7a75925c7342",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "c35f7650-aecf-4b65-96d0-da257a3d1a48",
+      "result_id": "465b3e9e-e018-47bf-95b6-3932a8f0609c"
+    },
+    {
+      "claim_id": "2e945a6c-cdcb-4712-bbf4-eeb7968383c9",
+      "result_id": "62b2ae0d-bedf-4380-90b1-13f031611215"
+    },
+    {
+      "claim_id": "f7f22d20-bc12-48ef-832f-e4b08558d7a1",
+      "result_id": "62b2ae0d-bedf-4380-90b1-13f031611215"
+    },
+    {
+      "claim_id": "f0207486-c00d-499b-8799-c966c3ff62f9",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "8e3858eb-c9f3-40ac-9f61-2e509444b0f8",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "7408312a-a87b-4693-94a0-9d904266678b",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "eb7aab6f-56d2-4f08-8ffb-a4b375a6b351",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "02486ca2-263e-4fea-bfdc-8f0677459291",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "d94a4883-7fc6-4d1f-9d47-b3bbda48343a",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "86280434-c83e-4193-9e4f-d33de706ee67",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "972f948b-adc9-4b8a-a0d0-0545210d5dfb",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "da320569-2477-41ea-99cd-6713aef04da0",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "7cccd5cd-43a0-496e-9940-d835dcde7a08",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "b15acf53-2845-441e-a61a-c7d0c98da42e",
+      "result_id": "c256eccf-8e08-4713-ae0b-bd15fed01e24"
+    },
+    {
+      "claim_id": "6ad1e3b8-6404-4d59-901c-31f5e298c660",
+      "result_id": "ad164dd2-90aa-44e5-a211-1eec07f7fa26"
+    },
+    {
+      "claim_id": "697384f9-f220-4137-a6ec-119ae6dc22e3",
+      "result_id": "ad164dd2-90aa-44e5-a211-1eec07f7fa26"
+    },
+    {
+      "claim_id": "2d2e1f35-2db0-4f88-b732-0dff07ea4a2d",
+      "result_id": "ad164dd2-90aa-44e5-a211-1eec07f7fa26"
+    },
+    {
+      "claim_id": "ce50ab36-72dd-43e0-a7ac-b441610acc8e",
+      "result_id": "ad164dd2-90aa-44e5-a211-1eec07f7fa26"
+    },
+    {
+      "claim_id": "990bddb1-ae29-4697-a64d-02f262d30005",
+      "result_id": "ad164dd2-90aa-44e5-a211-1eec07f7fa26"
+    },
+    {
+      "claim_id": "8a6874d2-e9d2-49d9-9ae9-62a101f08e38",
+      "result_id": "ad164dd2-90aa-44e5-a211-1eec07f7fa26"
+    },
+    {
+      "claim_id": "38942456-839b-4e2c-8c54-33152eb34501",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "06e31d76-7c62-4833-ac9d-da2b3df7d0c9",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "afdc7184-5a59-4425-9300-dcf546695194",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "7fe55a5b-7cd7-4d66-9b34-651782e6d335",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "f51433b1-1096-468d-8cff-1b51b1a586a0",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "97b7ffe3-fc0a-4e46-84be-98e6c7d79d03",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "a4e6f3fe-1eae-4f3d-819d-6f2b15a3f6aa",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "b44e083e-cdd0-4f23-b64c-85e834f683ba",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "1abda112-d613-4aa4-b5ed-088bd7da9107",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "497200ed-71be-41bb-8bf6-9e0466200427",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "7eaf1b0b-71db-485b-9794-68edd3dd8857",
+      "result_id": "9076d563-5875-403f-acde-3ed78230737a"
+    },
+    {
+      "claim_id": "87019cd0-4adc-4691-8575-ed30695eb041",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "48d656a0-3562-491e-b8d6-50db1897b15c",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "cf1e8019-6d28-4f06-9b95-e3bf980feb4d",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "93d0e5e4-43be-4914-b723-1e8f280925c8",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "a73be9d2-f5f0-42b0-a925-04f97659fc58",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "f61b57c2-62bd-4990-a611-3017415e37e7",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "2f8d475e-af33-4b38-96ff-67b1b35a7da4",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "258a8d06-3936-4636-81e9-245d963f79a6",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "535f5ac0-3ac3-45e3-aa11-344c83555802",
+      "result_id": "07ebe44d-d79b-4fd4-93e0-9cd305c35c58"
+    },
+    {
+      "claim_id": "e2e8a5d9-6204-4280-965f-f93cdcb12d62",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "2b999d61-9cd0-4755-bfb7-12f352751169",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "91c32d0a-4e37-43fe-83bc-854ad144839a",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "261d8680-1f75-4de1-b5a8-2dcb9372b802",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "7eb4ed12-4c8f-4ae2-b5cb-51ceec1d417e",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "a0fc38aa-bc74-4b92-a386-adf6d64586e0",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "48ac5782-29c2-4c5b-a45b-5316aff24b61",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "18ebc796-0f48-41a2-a585-468ccdc71904",
+      "result_id": "bed63ed2-4099-4c6b-91e1-61e63f0287ae"
+    },
+    {
+      "claim_id": "cea92e90-b1d0-4cf8-93b3-1c2846765fd4",
+      "result_id": "744ae4c5-9cf9-4682-bb24-d2323eb70713"
+    },
+    {
+      "claim_id": "925ceb57-9b26-49fc-87d8-af50b3539899",
+      "result_id": "744ae4c5-9cf9-4682-bb24-d2323eb70713"
+    },
+    {
+      "claim_id": "56aecccc-78ff-4b20-b546-f202191a7eb3",
+      "result_id": "744ae4c5-9cf9-4682-bb24-d2323eb70713"
+    },
+    {
+      "claim_id": "f9ab2a6d-511f-4d36-86fd-b95724fe4be0",
+      "result_id": "744ae4c5-9cf9-4682-bb24-d2323eb70713"
+    },
+    {
+      "claim_id": "67b579f2-50dd-42aa-9402-363fdc61faf5",
+      "result_id": "744ae4c5-9cf9-4682-bb24-d2323eb70713"
+    },
+    {
+      "claim_id": "d8d1ad37-e3dc-4f96-9ab5-aeb19671ec38",
+      "result_id": "744ae4c5-9cf9-4682-bb24-d2323eb70713"
+    },
+    {
+      "claim_id": "3d50b6d9-8e8c-4ec6-acac-ab9453189d61",
+      "result_id": "744ae4c5-9cf9-4682-bb24-d2323eb70713"
+    },
+    {
+      "claim_id": "29ee2288-96a7-4803-907e-70ee854c6180",
+      "result_id": "297701a4-ad45-435c-8602-3ddfe318e618"
+    },
+    {
+      "claim_id": "ca5801dd-7615-41c1-a161-cd8c2d28f517",
+      "result_id": "297701a4-ad45-435c-8602-3ddfe318e618"
+    },
+    {
+      "claim_id": "7369d56b-c10d-4d97-9c3b-d29081c1ca7a",
+      "result_id": "297701a4-ad45-435c-8602-3ddfe318e618"
+    },
+    {
+      "claim_id": "cf69a139-363b-4061-b368-d628b1ee175f",
+      "result_id": "297701a4-ad45-435c-8602-3ddfe318e618"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A computational ODE model of the fast BR response pathway was developed comprising four cellular compartments (cytosol, cell wall, vacuole, and plasma membrane), incorporating BR perception, BRI1 complex activation, and H+-ATPase stimulation. The model predicted that a cation influx is required to balance charge distribution during apoplastic acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 describe the model structure, parameterization, and key predictions. The model design is well-justified based on biological knowledge (C39, C44), properly initialized to equilibrium (C41), and makes a testable prediction about cation influx (C48-C49) that addresses a discrepancy between calculated and measured membrane potential. The model structure and approach are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Quantification of signaling components along the root axis revealed that BRI1 and BIR3 levels remain relatively constant, while AHA2 shows a strong gradient with low expression in the MZ (4 molecules/\u00b5m\u00b2) and high expression in the EZ (10 molecules/\u00b5m\u00b2). The AHA2:BRI1 ratio increases from 0.28 in MZ to 5 in late EZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 present scRNA-Seq data (C50-C53) and quantitative CLSM measurements (C57-C61) showing differential protein accumulation patterns. The data are internally consistent across methods and support the inference that AHA2 accumulation coincides with growth competence (C62). Multiple biological replicates and appropriate imaging controls are described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model accurately reproduces experimental dose-response and time-course data for apoplastic acidification in the EZ. Sensitivity analysis reveals that H+-ATPase amount and activity are the dominant controlling parameters for the early BR response, identifying proton pumps as key determinants of cellular competence to respond to BR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 demonstrate strong agreement between model predictions and HPTS experimental data for both dose-response (C65-C67) and kinetics (C68-C69). Sensitivity analysis (C71-C73) provides mechanistic insight, and the conclusion about AHA2 as rate-limiting (C74-C75) is well-supported by the combination of protein quantification showing constant BRI1 but variable AHA2 levels and the sensitivity analysis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The model predicts that MZ cells should show higher resting pH and reduced BR response compared to EZ cells due to lower AHA2 expression. This prediction is supported in principle by HPTS data, though statistical significance could not be established due to experimental limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 present model predictions that are qualitatively supported by experimental data (Figure 6), but C78 explicitly acknowledges that statistical significance could not be achieved due to methodological limitations and biological variability. While the model prediction is reasonable and shows qualitative agreement, the lack of statistical validation prevents full support of this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "MIFE and HPTS measurements confirm a pH gradient along the root axis with higher H+ efflux in the EZ. The bri1-301 mutant shows significantly reduced BR-induced acidification and H+ efflux compared to wild type, demonstrating that kinase-active BRI1 is required for maintaining the pH gradient and BR-regulated responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 present convergent evidence from multiple experimental approaches (MIFE, HPTS) showing the pH gradient (C80-C82) and its dependence on BRI1 activity (C83-C84). The model successfully captures the mutant behavior when BRI1 activity is reduced by half (C85), providing quantitative validation. The experimental data include appropriate statistical analysis (Figure 7B) and the conclusion about BRI1 requirement (C86) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The model predicted a discrepancy between calculated (28 mV) and measured (7.2 mV) membrane potential changes during acidification. Integration of CNGC10, a K+ channel expressed in root tips and linked to cell expansion, into the model eliminated this discrepancy, suggesting CNGC10 mediates the required cation influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 present a clear model prediction (C87) based on charge balance calculations, identify a candidate channel based on literature criteria (C88-C89), and show that incorporating CNGC10 resolves the discrepancy (C90). The logic is sound: the model identified a missing component, literature search found a plausible candidate, and model integration validated the hypothesis. This demonstrates the predictive power of the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C100",
+      "C101"
+    ],
+    "result": "CNGC10 physically interacts with BRI1, BAK1, and AHA2 as demonstrated by mbSUS and FRET-FLIM (spatial association <13 nm). Two independent cngc10 loss-of-function mutants fail to acidify the apoplast in response to BL, establishing CNGC10 as the major K+ channel for charge compensation during BR-induced acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96, C100-C101 provide strong experimental validation of the model prediction. Multiple independent lines of evidence support CNGC10's role: protein-protein interactions by two methods (C92-C93), loss-of-function phenotype in two independent mutants (C94), and functional interpretation (C95-C96, C100). The convergence of computational prediction, physical interaction data, and genetic evidence provides robust support for this novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C99",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The competence of root epidermal cells to respond to BR depends predominantly on the amount and activity of H+-ATPases in the plasma membrane. AHA2 is the rate-limiting factor for BR-induced cell physiological responses and elongation, with competence reflected by a gradient of AHA2 accumulation along the root axis rather than differential BRI1/BAK1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C99, C102-C105 represent the central conclusion of the study, integrating computational predictions with experimental validation. The conclusion is supported by: (1) protein quantification showing AHA2 gradient but constant BRI1 (C102), (2) sensitivity analysis identifying AHA2 as rate-limiting (C103), (3) correlation of AHA2 levels with growth competence (C102), and (4) bri1-301 mutant data showing BRI1 is necessary but not sufficient (C104). The inference is well-supported by multiple converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The establishment of AHA2 accumulation along the root axis is achieved by cytokinin-auxin interplay during development. The model prediction that ectopic AHA2 expression in MZ should cause elongation is confirmed by literature. Two competence patterns (BR biosynthesis and AHA accumulation) superimpose along the root axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 integrate the current findings with prior literature to provide developmental context. The model prediction (C107) is validated by published data (C108), and the synthesis of BR biosynthesis patterns (C109-C110) with AHA2 accumulation patterns (C111) is well-reasoned. All claims are supported by appropriate citations, though the authors are primarily synthesizing rather than generating new data for these specific points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Short-term BR responses (within minutes) involve rapid AHA phosphorylation at Ser315 and Thr328, leading to acidification, hyperpolarization, and wall swelling. These initial rapid processes are proposed to be necessary prerequisites for subsequent BR-regulated elongation growth involving gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 synthesize the study's findings with the acid-growth theory and prior literature. C112 is supported by modeling, experimental data, and citations. C113 is a reasonable hypothesis based on the acid-growth theory, though it remains to be directly tested. C114 extends the findings to broader BR functions with appropriate citations. The claims represent well-supported integration of results with existing theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Short-term BR-induced cell physiological processes require higher hormone concentrations (1-10 nM) than long-term processes (0.1-0.25 nM). The response in root tips is faster and requires lower BL than in hypocotyls. Different phosphorylation events may regulate AHA activity temporally in different organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C122 discuss concentration differences and tissue-specific responses. C115 is an observation supported by data and citations. C116-C117 are speculations about why concentrations differ (explicitly acknowledged as speculation). C118-C121 compare root and hypocotyl responses based on literature. C122 is speculation about phosphorylation cascades. While the observations are valid, the mechanistic explanations remain speculative and require further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The composition of nano-organized BRI1 complexes likely varies along developmental gradients to achieve cell-specific responses. The model can represent published bir3 mutant phenotypes and predict dose-dependent BIR3 effects, demonstrating how computational modeling facilitates prioritization of components for experimental testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 discuss the broader implications of variable receptor complex composition. C123 is a hypothesis based on the data. C124 articulates a general principle. C125-C126 provide literature support for variable complex composition in other contexts. C127-C128 demonstrate the model's ability to capture and predict BIR3 effects. C129 makes a valid point about the utility of modeling. The claims are well-reasoned though some aspects (C123) remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "The iterative combination of computational modeling and wet lab experiments provided a novel quantitative view of BR-regulated elongation growth. This approach is broadly applicable to other signal transduction processes when minimal element sets and quantitative data are available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 summarize the study's methodological contribution and broader applicability. C130 accurately describes what was achieved. C131 makes a reasonable claim about generalizability, supported by citation to similar work in other systems. These represent valid conclusions about the study's significance and approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background claims establish that BRs are key hormonal regulators with well-characterized perception and signaling components (BRI1, BAK1, BIR3, BKI1), leading to both short-term (minutes) and long-term (hours-days) responses. Previous computational approaches have not achieved truly quantitative predictions of cellular behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 provide essential background context, all supported by appropriate citations to established literature (C5-C26) or general knowledge (C1, C27-C30). C36 is the authors' assessment of prior modeling work, which is reasonable given the lack of quantitative predictions in cited studies. These claims establish the rationale and knowledge base for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C97",
+      "C98"
+    ],
+    "result": "There may be a regulatory link between AHA2 accumulation and BR-regulated root growth. Recent data show highest BR concentration in the EZ overlapping with BR/BRI1 signaling maxima for cell elongation, while earlier work proposed MZ signaling is sufficient for root growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C97-C98 discuss the relationship between AHA2, BR distribution, and growth along the root axis. C63 is a reasonable hypothesis based on the data. C64 provides literature support for AHA2-BRI1 interactions. C97-C98 cite apparently conflicting prior findings about where BR signaling is most important. These claims appropriately contextualize the current findings within existing literature, though some tension between studies remains unresolved.",
+    "result_type": "MINOR"
+  }
+]

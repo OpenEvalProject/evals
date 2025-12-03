@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript provides background on COVID-19 pandemic statistics and vaccine development, noting that severe thrombotic side effects (ITP/TTS/CVST) were first observed with Vaxzevria in Europe in March 2021, leading to temporary suspension of vaccination campaigns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide well-documented background information citing specific data sources (worldometers.info for pandemic statistics) and describing the timeline of adverse events with Vaxzevria. The claims are consistent with publicly available information and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "According to Paul-Ehrlich-Institute data (December 23, 2021), Vaxzevria showed significantly higher rates of thrombocytopenia/ITP (21.2 per million) and TTS (15.7 per million) compared to mRNA vaccines and Ad26.COV2.S, with thromboembolic case mortality ranging from 21.4-52%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 present specific surveillance data from the Paul-Ehrlich-Institute with exact case numbers and calculated rates per million injections. The data is presented in Table 1 and shows clear differences between vaccines, with Vaxzevria having the highest rates. The mortality calculation (C13) is appropriately derived from the reported data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript notes that vaccine-induced thrombotic events share similarities with heparin-induced thrombocytopenia (HIT) and have been termed VITT, with anti-PF4 autoantibodies causally linked, though the underlying initiating mechanisms were not fully understood at the time of writing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately describe the state of knowledge regarding VITT, citing appropriate references (Greinacher et al., 2021a, 2021b) for the anti-PF4 mechanism. The acknowledgment of incomplete understanding (C17) is appropriate and sets up the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript describes fundamental mechanistic differences between mRNA and adenoviral vector vaccines: mRNA vaccines function in the cytoplasm producing membrane-anchored Spike, while adenoviral vectors deliver DNA that enters the nucleus where transcription and RNA processing (including splicing) occur before cytoplasmic translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27 provide accurate descriptions of vaccine mechanisms, appropriately citing Doerfler and B\u00f6hm, 2003 for adenoviral transcription. The distinction between cytoplasmic (mRNA) and nuclear (adenoviral) processing is fundamental to the study's hypothesis and is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript establishes that SARS-CoV-2 has a purely cytoplasmic replication cycle with no evolutionary pressure to eliminate splice sites (~130 cryptic sites in the genome), leading to the hypothesis that nuclear splicing of DNA-encoded Spike sequences might produce truncated protein variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C40 provide sound evolutionary and molecular biology reasoning, appropriately citing Lee and Rio, 2015 for splicing mechanisms. The logic that cytoplasmic RNA viruses lack selection against splice sites is valid, and the hypothesis (C39) follows logically from this premise. The estimate of ~130 cryptic splice sites (C38) provides specific quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In silico analysis using SpliceRover predicted that wildtype Spike contains 6 SD and 5 SA sites (score >0.15), while codon optimization increased splice sites in all three adenoviral vectors: Ad5.S (12 SD, 10 SA), ChAdOx1-S (13 SD, 5 SA), and Ad26.COV2.S (9 SD, 10 SA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 present in silico predictions using established tools (SpliceRover, ASSP). The data are shown in Figure 1 and Table 2. The finding that codon optimization increases splice sites is a key result. However, the predictive value of these algorithms for actual splicing events requires experimental validation (provided in subsequent results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Wildtype Spike splice trap experiments showed Luciferase activity (highest in +2 construct: 1291 RLU), confirming splicing occurs. The splice trap design ensures that splicing between Spike SD sites and the trap SA results in loss of the TM domain, potentially leading to secretion of truncated Spike proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe the splice trap experimental design and initial results shown in Figure 2. The Luciferase activity confirms splicing occurs, and the logic that loss of TM domain leads to secretion is sound. The detection of extracellular Luciferase (C48) provides additional support for secretion. The experimental design is appropriate for testing the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Codon-optimized Spike genes from all three adenoviral vectors showed enhanced Luciferase activity compared to wildtype, with ChAdOx1-S +1 construct showing the highest activity (15,840 RLU) and Ad26.COV2.S showing the lowest among codon-optimized constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 present experimental Luciferase data from Figure 2 (panels IV-VI) showing that codon optimization increases splicing activity. The quantitative differences between vectors are clearly documented, with ChAdOx1-S showing the highest activity. This correlates with the in silico predictions and supports the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Western blot analysis detected Spike-Luciferase fusion proteins of 95-250 kDa in cell lysates and supernatants, with molecular weights matching predictions from major splice events for each vector (Ad5.S: 195.1/195.3 kDa; ChAdOx1-S: 195.1/195.3 kDa; Ad26.COV2.S: 196.4 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 present Western blot data from Figure 3 confirming protein-level evidence of splice products. The detection of multiple bands at predicted molecular weights provides strong support for the occurrence of splicing. The presence of proteins in both lysates and supernatants supports secretion of truncated variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "RT-PCR and Sanger sequencing of wildtype Spike splice trap constructs confirmed multiple splice reactions from predicted sites (SD1-3) and internal frame-shift events, including two splice events downstream of the ACE2-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 present molecular validation of splice events shown in Figure 4. The sequencing data confirms that predicted splice sites are actually used, and the identification of additional internal splice events demonstrates the complexity of splicing. This provides direct molecular evidence supporting the Luciferase and Western blot results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "All three adenoviral vector Spike genes contain a conserved SA site in the pIX 5'-non-coding region (Ad5.S: nt -14; ChAdOx1-S: nt -4; Ad26.COV2.S: nt -5), and despite poly(A) signals, transcriptional read-through allowing Spike-to-pIX splicing was observed in all vectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 identify a critical structural feature of adenoviral vectors and demonstrate that poly(A) signals are not fully effective at preventing read-through. The RT-PCR data in Figures 5-7 confirm these splice events. This finding is important as it shows splicing occurs in the actual vaccine context, not just artificial constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "RT-PCR and sequencing identified predominant Spike-to-pIX splice events for each vector: Ad5.S (positions 506, 1821, 3610*, 3614, 3641*), ChAdOx1-S (506, 1049*, 1914*, 3610*, 3614, -298*, -84*), and Ad26.COV2.S (541*, 959*, 1184, 1221*, 3641*, -83*), with some sites not predicted by SpliceRover (marked with *).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 present detailed mapping of splice sites shown in Figures 5-7. The identification of unpredicted sites (marked with *) demonstrates that in silico predictions are incomplete. The finding that ChAdOx1-S and Ad26.COV2.S have splice events in their poly(A) signals (BGH and SV40, respectively) is particularly important for understanding read-through mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PCR analysis of transduced HeLa cells showed spliced products for Ad5.S and ChAdOx1-S but not Ad26.COV2.S. Sequencing revealed Ad5.S produces an in-frame Spike-pIX fusion (potentially secreted), while ChAdOx1-S produces a truncated Spike with stop codon (secreted due to lacking TM), and BGH-pIX splice products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 present critical functional data from Figure 9 showing differential splicing between vectors. The absence of spliced products in Ad26.COV2.S (C68) is important and correlates with lower adverse event rates. The sequencing data (C69-C71) provides molecular detail on the consequences of splicing, including loss of TM domain and potential for secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Comparison of PCR products indicates Ad5.S has significantly higher Spike-pIX read-through than ChAdOx1-S in HeLa cells (despite loading 2.5-fold less Ad5.S sample), suggesting the BGH poly(A) of ChAdOx1-S is more potent than SV40 poly(A) of Ad5.S at preventing read-through.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 present a comparative analysis from Figure 9A. The inference about poly(A) signal strength (C73) is reasonable given that both vectors use the same CMV promoter. However, this conclusion would be strengthened by quantitative measurements rather than visual comparison of gel bands. The claim is supported but could benefit from more rigorous quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Splicing abundance is cell type-dependent: Ad5.S-transduced C2C12 cells showed no splicing (only full-length read-through), while ChAdOx1-S showed predominantly BGH-pIX splicing in C2C12 and Spike-pIX splicing in HepG2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 present important data from Figure 9B-C showing tissue-specific differences in splicing. This finding has implications for understanding which tissues might produce secreted Spike variants in vivo. The cell type-dependence suggests that splicing regulation varies between cell types, which is consistent with known biology of alternative splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Spike-pIX splice products lacking the TM-coding sequence will likely be secreted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is a logical inference based on established cell biology: proteins lacking transmembrane domains that enter the secretory pathway are typically secreted. This is supported by the detection of Luciferase activity in culture medium (C48) and Western blot detection of proteins in supernatants (C55-C56).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "RNA-Seq analysis of ChAdOx1-S-transduced MRC-5 cells (day 72) identified 120 trans-spliced mRNAs (1.24% of Spike reads) fusing host cell genes to Spike sequences, 50 Spike-pIX fusions, and 79 BGH-pIX fusions (total 249 aberrant reads, 1.24-1.33%), which is significant compared to housekeeping genes (ABL1: 44 reads; GAPDH: 4586 reads).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 present RNA-Seq data analysis from Figure 10, revealing unexpected trans-splicing events between Spike and host genes. While the frequency is low (1.24-1.33%), the comparison to housekeeping genes (C83-C85) provides context suggesting biological significance. However, the functional consequences of these trans-spliced products are unknown, and nanopore sequencing error rates could contribute to some false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study provides experimental evidence that adenovirus-based vaccines expressing SARS-CoV-2 Spike from codon-optimized cDNA result in unwanted splicing events if functional splice sites are not avoided. This occurs because SARS-CoV-2 is a cytoplasmic RNA virus lacking evolutionary selection against splice sites, while adenoviral vectors undergo nuclear transcription and RNA processing including splicing, generating secreted Spike variants lacking the membrane anchor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 summarize the main findings and conclusions. The experimental evidence from multiple approaches (in silico prediction, splice traps, Western blots, RT-PCR/sequencing, RNA-Seq) consistently supports the conclusion that splicing occurs and produces truncated, potentially secreted Spike variants. The mechanistic explanation based on viral biology and vaccine delivery is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study demonstrated that: (1) predicted SD sites in wildtype Spike result in Spike-Luciferase fusions in the reporter system; (2) splicing leads to secreted variants due to TM domain loss; (3) two of three adenoviral vectors have more/stronger SD sites than wildtype after codon optimization; (4) transcriptional read-through enables splicing to pIX SA, also causing TM anchor loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 accurately summarize the four main experimental findings. Each point is supported by multiple lines of evidence presented in the results section. The progression from in silico prediction to experimental validation in reporter systems to actual vaccine vectors provides strong support for the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Soluble Spike protein has been described to cause adverse effects including strong inflammatory responses on endothelial cells, and severe thromboembolic events occur with wildtype SARS-CoV-2 infection. Pseudoviruses with surface Spike can cause inflammatory reactions, indicating potential risk of soluble Spike in the vascular system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 cite relevant literature (Lei et al., 2020, 2021; Nuovo et al., 2021; Patra et al., 2020; Amraei and Rahimi, 2020) establishing that Spike protein can cause inflammatory and thrombotic effects. This provides biological plausibility for the hypothesis that secreted Spike variants from vaccines could contribute to adverse events. The citations appear appropriate and support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Soluble Spike variants could potentially explain rare severe events after Vaxzevria vaccination. Ad26.COV2.S has fewer SD sequences (lacking strong sites SD506 and SD3614 present in Ad5.S/ChAdOx1-S) and shows no significant spliced RNA, potentially explaining its ~3-fold lower thromboembolic incidence and ~2-fold lower TTS risk compared to Vaxzevria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 present a speculative connection between splicing and clinical adverse events. While the correlation between splice site abundance and adverse event rates is intriguing (C100-C104 supported by data), the causal link (C99, C103, C104) remains unproven. The study does not demonstrate that secreted Spike variants actually cause thrombotic events in vivo, nor does it measure Spike levels in vaccinated individuals. Alternative explanations for differential adverse event rates are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors hypothesize that soluble Spike binds ACE2 on endothelial cells, where anti-Spike antibodies recognize it, triggering ADCC and/or CDC inflammatory reactions that could initiate thrombus formation. Due to absent venous valves and bi-directional flow in dural venous sinuses, Spike residence time increases, enhancing ACE2 binding and adverse immune reactions at sites of slow blood flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C111 present a mechanistic hypothesis for how secreted Spike could cause thrombotic events. While the proposed mechanisms (ADCC, CDC) are biologically plausible and appropriately described (C107-C108 citing Luo et al., 2020), this remains speculative. The study provides no direct evidence that these mechanisms actually occur in vaccinated individuals, no measurement of secreted Spike levels in vivo, and no demonstration of ACE2 binding or immune complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "VITT involves anti-PF4 autoantibodies and platelet activation. Vaccine impurities may contribute to pro-inflammatory status. The authors propose that ACE2-bound Spike becomes a target for anti-Spike antibodies, potentially causing ADCC/CDC-mediated inflammation, NET reactions linked to thromboembolism, and possibly explaining capillary leak syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C116 integrate the study's findings with existing VITT mechanisms and propose additional pathways. While C112 accurately describes established VITT mechanisms and C113 appropriately cites Krutzke et al., 2021 regarding impurities, claims C114-C116 are speculative. The proposed mechanisms are plausible but lack direct experimental support. The study does not demonstrate that the proposed immune reactions actually occur or that they contribute to clinical adverse events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors recommend that for DNA-encoded sequences (especially from RNA viruses), strong SD sites should be avoided and strong poly(A) signals used for RNA termination. Since transgenes are typically placed upstream of pIX with its strong SA site, inverting the expression cassette orientation could prevent Spike-pIX splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 present reasonable design recommendations based on the study findings. The suggestion to avoid strong SD sites and use strong poly(A) signals (C117-C118) follows logically from the data. The observation about typical vector design (C119) is accurate, and the proposed inversion strategy (C120) is a logical solution, though it has not been experimentally tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "In mice, intramuscular adenovirus injection results in significant hepatocyte transduction. ChAdOx1-S is likely hepatotropic since it derives from chimpanzee adenovirus Y25 associated with viral hepatitis outbreaks. If significant hepatocyte transduction occurs in vaccines, larger amounts of spliced Spike lacking TM could be secreted into systemic circulation via hepatic veins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 appropriately cites Kron et al., 2011 for mouse data. Claim C122 makes a reasonable inference citing Dicks et al., 2012 and Hillis and Goodman, 1969, though hepatotropism in chimpanzees may not predict human tropism. Claim C123 is highly speculative, extrapolating from mouse data to humans without evidence. The study provides no data on tissue distribution or Spike levels in vaccinated humans or relevant animal models.",
+    "result_type": "MINOR"
+  }
+]

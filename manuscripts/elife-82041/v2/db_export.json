@@ -1,0 +1,1972 @@
+{
+  "submission": {
+    "id": "dd1cd2e0-e4b3-4931-a254-0d7151592012",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:07:32.992763Z",
+    "updated_at": "2025-12-03T15:07:32.992763Z"
+  },
+  "content": [
+    {
+      "id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "submission_id": "dd1cd2e0-e4b3-4931-a254-0d7151592012",
+      "content_type": "manuscript",
+      "content_text": "# Double NPY motifs at the N-terminus of the yeast t-SNARE Sso2 synergistically bind Sec3 to promote membrane fusion\n\n## Authors\n\n- Maximilian Peer<sup>1</sup> ([ORCID: 0000-0001-5032-8029](https://orcid.org/0000-0001-5032-8029))\n- Hua Yuan<sup>2</sup>\n- Yubo Zhang<sup>1</sup>\n- Katharina Korbula<sup>1</sup>\n- Peter Novick<sup>2</sup> ([ORCID: 0000-0003-0401-7857](https://orcid.org/0000-0003-0401-7857)) \u2020\n- Gang Dong<sup>1</sup> ([ORCID: 0000-0001-9745-8103](https://orcid.org/0000-0001-9745-8103)) \u2020\n\n### Affiliations\n\n1. Max Perutz Labs, Vienna Biocenter, Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))\n2. Department of Cellular and Molecular Medicine, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nExocytosis is an active vesicle trafficking process by which eukaryotes secrete materials to the extracellular environment and insert membrane proteins into the plasma membrane. The final step of exocytosis in yeast involves the assembly of two t-SNAREs, Sso1/2 and Sec9, with the v-SNARE, Snc1/2, on secretory vesicles. The rate-limiting step in this process is the formation of a binary complex of the two t-SNAREs. Despite a previous report of acceleration of binary complex assembly by Sec3, it remains unknown how Sso2 is efficiently recruited to the vesicle-docking site marked by Sec3. Here, we report a crystal structure of the pleckstrin homology (PH) domain of Sec3 in complex with a nearly full-length version of Sso2 lacking only its C-terminal transmembrane helix. The structure shows a previously uncharacterized binding site for Sec3 at the N-terminus of Sso2, consisting of two highly conserved triple residue motifs (NPY: Asn-Pro-Tyr). We further reveal that the two NPY motifs bind Sec3 synergistically, which together with the previously reported binding interface constitute dual-site interactions between Sso2 and Sec3 to drive the fusion of secretory vesicles at target sites on the plasma membrane.\n\n## Introduction\n\nThe cytoplasm in eukaryotic cells is compartmentalized into distinct membrane bound organelles. Inter-organelle material exchange is carried out primarily through membrane traffic in which membrane bound transport vesicles bud from a donor compartment and are delivered to a specific acceptor compartment. Upon arriving at the destination, cargo-packed vesicles are first recognized and caught by tethering factors situated on the target membrane, which then hand the captured vesicles over to the soluble N-ethylmaleimide-sensitive factor-attachment protein receptor (SNARE) proteins that drive membrane fusion (Ungermann and K\u00fcmmel, 2019; Chia and Gleeson, 2014; Br\u00f6cker et al., 2010; Yu and Hughson, 2010).\n\nThere are several types of SNARE proteins, one of which is attached to the membrane of vesicles (v-SNARE), and the others are on the target membrane (t-SNARE). In neuronal exocytosis, fusion of synaptic vesicles to the presynaptic plasma membrane is driven by the assembly of a four-helix bundle containing two t-SNAREs, syntaxin-1 and SNAP-25, on the target membrane and the v-SNARE, synaptobrevin, on synaptic vesicles (Fernandez et al., 1998; Sutton et al., 1998). Extensive studies have established that SNARE assembly is tightly regulated by multiple auxiliary proteins, including the Sec1/Munc18 (SM) family of proteins, tethering factors, and small GTPases (Dulubova et al., 1999; Fiebig et al., 1999; Demircioglu et al., 2014; Takemoto et al., 2018; Koike and Jahn, 2019; Cai et al., 2007). Munc18 is a chaperone protein that maintains syntaxin-1 in an activated conformation and passes it to its cognate SNARE partners for assembly to catalyze membrane fusion (Wang et al., 2019; Yu et al., 2018; Jiao et al., 2018; Xu et al., 2010; Andr\u00e9 et al., 2020).\n\nThe exocytic vesicle-docking site in yeast is marked by the octameric exocyst complex, which belongs to the CATCHR family of multi-subunit tethering proteins (Pleskot et al., 2015; Guo et al., 1999; Boehm and Field, 2019). The main function of the exocyst is to capture secretory vesicles at sites of cell surface growth, which include the tip of the daughter cell early in the cell cycle, and the mother-daughter cell junction late in the cycle (Lipschutz and Mostov, 2002). The two t-SNAREs for exocytosis in yeast are Sso1/2 and Sec9, which are homologs of syntaxin-1 and SNAP-25, respectively. The v-SNARE attached to secretory vesicles in yeast is Snc1/2, which is equivalent to synaptobrevin in neuronal exocytosis.\n\nOur previous work showed that one of the exocyst components, Sec3, promotes SNARE assembly by interacting with the t-SNARE Sso2 (Yue et al., 2017). Sec3 consists of an N-terminal pleckstrin homology (PH) domain, a central putative coiled coil, and a C-terminal helical domain. Like syntaxin-1 and other related t-SNAREs, Sso2 consists of four helices, with the first three (Habc) forming an inhibitory domain and the last (H3) serving as the SNARE motif that interacts with the other two SNAREs during membrane fusion. We have shown that the Sec3 PH domain binds to the auto-inhibited four-helix bundle of Sso2 and promotes a conformational change of the linker between Hc and H3 of Sso2 via an allosteric effect (Yue et al., 2017). This change promotes the release of the SNARE motif (H3) of Sso2 and substantially accelerates the formation of the initial binary complex between H3 of Sso2 and the two helices of the other t-SNARE, Sec9. However, it remains unclear how Sso2 is initially recruited to the vesicle target sites marked by the exocyst to drive the efficient fusion reaction between secretory vesicles and the plasma membrane.\n\nHere, we report our structural studies of Sec3-PH in complex with a nearly full-length construct of Sso2 (aa1\u2013270), which lacks only its C-terminal transmembrane region (aa271\u2013295). Our crystal structure of this Sec3/Sso2 complex reveals a previously unknown binding site for Sec3 on Sso2 in addition to the one on its four-helix bundle as reported in our previous work (Yue et al., 2017). This extra binding site is located at the N-terminal end of Sso2 and consists of two highly conserved NPY (i.e. Asn-Pro-Tyr) motifs. These NPY motifs are connected to the helical core of Sso2 (i.e. Habc and H3) via a long variable linker. In the two heterodimeric complexes present in the crystal structure, the two NPY motifs of the two Sso2 molecules bind individually to a similar conserved hydrophobic pocket on the two Sec3 molecules. Interestingly, however, our in vitro interaction studies using synthetic polypeptides and recombinant Sec3-PH protein demonstrated that each NPY motif alone bound Sec3 much more weakly than the two NPY motifs together. The importance of the interaction between the NPY motifs of Sso2 and Sec3 was confirmed by a series of in vivo assays in yeast.\n\nOverall, our work has uncovered a new interaction interface and thus establishes dual-site interactions between Sec3 and Sso2, which also suggests potentially an extra regulatory step in exocytic membrane fusion. Binding of the NPY motifs of Sso2 allows efficient recruitment of the t-SNARE protein to the vesicle-docking site on the plasma membrane to facilitate vesicle fusion.\n\n## Results\n\n### Crystal structure reveals two NPY motifs at the N-terminus of Sso2 bound individually to the Sec3 PH domain\n\nWe previously reported the structure of Sso2-HabcH3 (aa36\u2013227) in complex with the PH domain of Sec3 (aa75\u2013320) (Yue et al., 2017). Recently, we crystallized another complex of the two proteins using a longer version of Sso2 (aa1\u2013270), which contains all Sso2 sequence except for its C-terminal transmembrane part, together with a shorter Sec3 PH domain (aa75\u2013260) (Figure 1A and Figure 1\u2014figure supplement 1). A stable binary complex was obtained via size exclusion chromatography (SEC) (Figure 1\u2014figure supplement 1), which was then crystallized by hanging drop vapor diffusion. Diffraction data to 2.19 \u00c5 resolution was collected at the ESRF synchrotron site and the crystal structure was determined by the molecular replacement method. The crystal belongs to space group P1 (a=50.96 \u00c5, b=58.40 \u00c5, c=83.29 \u00c5; \u03b1=104.28\u00b0, \u03b2=98.49\u00b0, \u03b3=113.20\u00b0). The final structure was refined to Rwork and Rfree of 19.9% and 23.9%, respectively, with an average B factor of 40.74 \u00c52 for all macromolecules (Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematics of the constructs of Sso2 (aa1\u2013270) and Sec3 (aa75\u2013260) used in our structural studies. (B) Superposition of the two Sso2/Sec3 complexes in the asymmetric unit of the crystal structure, together with the one reported previously (light gray, pdb code: 5M4Y). (C) Stereo view of the 2Fo\u2212Fc electron density map contoured at 1.8\u03c3 level around the binding interface. Maps for Sec3 and Sso2 are colored in cyan and orange, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematics of the constructs of Sso2 (aa1\u2013270) and Sec3 (aa75\u2013260) used in our studies. (B) Size-exclusion chromatography elution profiles of Sso2, Sec3, and a mixture of Sso2 and Sec3 (molar ratio 1:3). The SDS PAGE gel shows proteins in the mixture (\u201cLoad\u201d) and fractions from the two elution peaks of the mixture. The first peak contains the Sso2/Sec3 complex with both proteins; the second one contains only excessive Sec3 alone.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Wavelength (\u00c5)</th>\n      <th>0.9793</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Resolution range (\u00c5)</td>\n      <td>19.95\u20132.19 (2.27\u20132.19)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P1</td>\n    </tr>\n    <tr>\n      <td>Unit cell (a, b, c; \u00c5)(\u03b1, \u03b2, \u03b3; \u00b0)</td>\n      <td>50.961, 58.402, 83.286104.284, 98.494, 113.198</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>164,051 (15,510)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>40,853 (3771)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>4.0 (3.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>96.08 (89.79)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3(I)</td>\n      <td>6.73 (1.18)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor</td>\n      <td>31.15</td>\n    </tr>\n    <tr>\n      <td>R-merge</td>\n      <td>0.1641 (1.094)</td>\n    </tr>\n    <tr>\n      <td>R-meas</td>\n      <td>0.1894 (1.271)</td>\n    </tr>\n    <tr>\n      <td>R-pim</td>\n      <td>0.09332 (0.636)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.99 (0.438)</td>\n    </tr>\n    <tr>\n      <td>CC*</td>\n      <td>0.997 (0.781)</td>\n    </tr>\n    <tr>\n      <td>Reflections used in refinement</td>\n      <td>40,587 (3771)</td>\n    </tr>\n    <tr>\n      <td>Reflections used for R-free</td>\n      <td>2008 (181)</td>\n    </tr>\n    <tr>\n      <td>R-work</td>\n      <td>0.1990 (0.2864)</td>\n    </tr>\n    <tr>\n      <td>R-free</td>\n      <td>0.2394 (0.3374)</td>\n    </tr>\n    <tr>\n      <td>CC(work)</td>\n      <td>0.943 (0.699)</td>\n    </tr>\n    <tr>\n      <td>CC(free)</td>\n      <td>0.907 (0.601)</td>\n    </tr>\n    <tr>\n      <td>Number of non-hydrogen atoms</td>\n      <td>5837</td>\n    </tr>\n    <tr>\n      <td>Macromolecules</td>\n      <td>5,419</td>\n    </tr>\n    <tr>\n      <td>Solvent</td>\n      <td>418</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>658</td>\n    </tr>\n    <tr>\n      <td>RMS (bonds)</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>RMS (angles)</td>\n      <td>0.50</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>97.82</td>\n    </tr>\n    <tr>\n      <td>Ramachandran allowed (%)</td>\n      <td>2.18</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>5.76</td>\n    </tr>\n    <tr>\n      <td>Average B-factor</td>\n      <td>40.87</td>\n    </tr>\n    <tr>\n      <td>Macromolecules</td>\n      <td>40.74</td>\n    </tr>\n    <tr>\n      <td>Solvent</td>\n      <td>42.65</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Statistics for the highest-resolution shell are shown in parentheses._\n\nThe final model contains two copies of the Sso2/Sec3 complex per asymmetric unit, together with 418 ordered water molecules. One of the complexes contains residues 4\u20138, 33\u2013149, and 197\u2013226 of Sso2 and residues 76\u2013250 of Sec3; the other contains residues 6\u201314, 33\u2013148, and 196\u2013226 of Sso2 and residues 76\u2013250 of Sec3. Corresponding regions in the two complex structures are essentially identical, with r.m.s.d. of 0.45 \u00c5 for all aligned backbone atoms (Figure 1B). 2Fo\u2013Fc electron density maps have a high quality, and sidechains of most residues in both Sec3 and Sso2 can be confidently built (Figure 1C).\n\nPrimary sequence alignments of Sso2 homologs from various yeast species reveal two conserved three-residue motifs toward the N-terminus of Sso2, which we name as NPY motifs. These double NPY motifs are connected to the highly conserved core of Sso2 (i.e. Habc and H3) via a non-conserved linker with variable lengths in different homologs (Figure 2A and Figure 2\u2014figure supplement 1). These NPY motifs bind individually to Sec3 in the two structural copies (Figure 2B and E). In one complex structure, residues 4\u20138 of Sso2 show clear densities in the 2Fo\u2013Fc map (Figure 2C) in the other structure we could unambiguously trace sidechains of residues 10\u201314, but for residues 6\u20139 we could build only the backbone atoms (Figure 2F). Despite variations in the flanking residues of these NPY motifs, the NPY cores adopt essentially the same conformation and share similar contacts with ordered solvent molecules and neighboring residues from Sec3 (Figure 2\u2014figure supplement 2). Particularly, the tyrosine residues in both cases (i.e. Y7 and Y13) are docked into a conserved hydrophobic pocket on the concave surface on Sec3 (Figure 2D and G). Overall, the NPY motif adopts a T-shaped conformation, with its broad top part shaped by the asparagine (N) and the proline (P) residues, which is stabilized by a hydrogen bond between the carboxyl group of the asparagine and the amide proton of the proline (Figure 2H). The tyrosine residue sticks out to form a pin-like structure that fits neatly in the pocket on Sec3.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sequence alignments of Sso2 homologs. Conserved residues are shaded in dark (highly conserved) or light blue (partially conserved). The two NPY motifs are marked as magenta blocks above the aligned sequences, which are connected to helix Ha via a variable linker. (B) Ribbon diagram of the crystal structure of the Sso2/Sec3 complex with first NPY motif (shown as sticks) of Sso2 bound to Sec3. (C) An enlarged view of the NPY motif in (B) together with the 2Fo\u2013Fc map contoured at 1.5\u03c3. (D) Sticks of the NPY motif on top of an electrostatic surface plot of Sec3. (E\u2013G) Crystal structure shows how the second NPY motif of Sso2 interacts with Sec3. (H) Separate views of the binding site show the cork-like NPY motif (magenta) and the complementary cradle-like pocket on Sec3 (light blue). The structure is shown as semitransparent surface together with ribbon diagrams (Sec3) or sticks (Sso2). The broad top part of the \u2018cork\u2019 of Sso2 is stabilized by a hydrogen bond between the carboxyl group of the Asn (N) sidechain and the amide proton of Tyr (Y).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Two different representations of the Sso2/Sec3 complex structure show the two separate interaction sites between the two proteins. The NPY motif of Sso2 is shown as magenta sticks. Dash lines depict the regions that are invisible in the crystal structure. (B) Sequence alignment of multiple Sso2 homologs. Highly and relatively conserved residues are shaded in dark and light blue, respectively. Secondary structures are shown above the aligned sequences. The two highly conserved NPY motifs at the N terminus of Sso2 are depicted as magenta blocks. Dash lines represent the unstructured loops that are invisible in the crystal structure. The C-terminal twenty-five residues of Sso2, including the hydrophobic transmembrane helix, is colored grey and was excluded from our protein expression construct.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Stereo view of the enlarged NPY binding sites of the two superimposed structures. Sec3 and the NPY motifs of Sso2 are shown as ribbons and sticks, respectively. Water molecules bound to the NPY motifs (directly or indirectly) are depicted as spheres with the same colors as the corresponding NPY motifs. (B, C) Separate stereo views of the two NPY binding sites. Sec3 molecules are shown as ribbons, with those residues hydrogen bonded to Sso2 or Sso2-bound water molecules additionally shown as sticks. The NPY motifs and waters are shown as sticks and spheres, respectively. All hydrogen bonds are depicted as dash lines. (D, E) Details of interactions between the NPY motifs of Sso2 (purple) and Sec3 (gray). The plots were generated using DIMPLOT in the LigPlot plus suite. Residues involved in hydrogen bond formation are shown as ball-and-stick, with oxygen, nitrogen, and carbon atoms colored in red, blue, and gray, respectively. Water molecules mediating intermolecular hydrogen bond formation are shown as cyan-colored spheres. Green dash lines indicate hydrogen bonds. Non-bonded residues involved in hydrophobic interactions are shown as spoked arcs. For clarity, only three of the seven bound water molecules are shown.\n\n### The two NPY motifs of Sso2 binds synergistically to Sec3\n\nTo determine how the two NPY motifs of Sso2 interact with Sec3, we carried out isothermal titration calorimetry (ITC) assays using synthetic polypeptides of Sso2 and recombinant Sec3-PH purified from bacteria (Figure 3). Wild type (WT) double NPY motifs of Sso2 (aa1\u201315) bound Sec3 with a dissociation constant (Kd) of 21.1 \u00b5M (Figure 3A). However, each NPY motif individually bound Sec3 much more weakly, with binding affinities reduced by three- to fourfold (Figure 3B and C). Mutation of all core residues of the first NPY motif to alanines (M5) slightly reduced the binding affinity (Kd = 34.9 \u00b5M) (Figure 3D), whereas mutation of the second NPY motif (M6) drastically affected the interaction, with a Kd of 188 \u00b5M (Figure 3E). The synthetic polypeptide with both NPY motifs mutated (M7) displayed no detectable interaction with Sec3 (Figure 3F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig3-v2.jpg)\n\n**Figure 3.:** (A) Wild type double NPY motifs of Sso2 bound Sec3 with a dissociation constant (Kd) of approximately 21 \u00b5M. (B and C) Either of the two NPY motifs alone bound Sec3 much more weakly than the two together, with Kd values increased by three- to fourfold. (D and E) Mutation of either NPY motif (i.e. M5 and M6) also substantially reduced the binding affinity of Sso2 to Sec3. (F) Double mutation (M7) of both NPY motifs completely abolished the interaction between Sso2 and Sec3. For M6 in (E), the peptide concentration had to be increased by sixfold to detect its very weak interaction with Sec3.\n\n### Mutation of Sso2 NPY motifs inhibits cell growth as well as secretion of Bgl2 and invertase\n\nTo assess the in vivo role of the interactions between Sec3 and the two NPY motifs of Sso2, we constructed various sso2 alanine substitution mutations in a yeast integrating vector and introduced them into a yeast strain deleted for the paralogous gene, SSO1. The mutations were incorporated into the endogenous SSO2 locus by the loop-in/loop-out method, leaving the surrounding sequence entirely unaltered (Figure 4A and Figure 4\u2014figure supplement 1; Novick and Botstein, 1985). The sso1\u0394 sso2 mutants were tested for growth at both 25\u00b0C and 37\u00b0C (Figure 4B and Figure 4\u2014figure supplement 1). No effect was observed with single, double, or triple mutations in the first NPY domain (sso1\u0394 sso2M1-M4), however changing all four residues to alanine (sso1\u0394 sso2M5) resulted in reduced growth at 37\u00b0C (Figure 4\u2014figure supplement 1). Mutating all four residues of the second NPY domain to alanine (sso1\u0394 sso2M6) did not affect growth at any temperature, however changing all residues of both the first and second NPY domain to alanine (sso1\u0394 sso2M7) resulted in significantly reduced growth at both 25\u00b0C and 34\u00b0C and severely impaired growth at 37\u00b0C (Figure 4B). The synergistic effects of eliminating the first and second NPY motif of Sso2 suggest that both motifs are functional and at least partially redundant.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sequences of three sso2 mutants generated by site-directed mutagenesis. Residues in the first and/or the second NPY motif that were mutated to Ala (A) are shown in bold italics. (B) Sso2 mutants in an sso1\u0394 background partially inhibit cells growth at 37\u00b0C. Control sso1\u2297 SSO2 or sso1\u0394 sso2 mutant cells were grown overnight in YPD medium. An aliquot (0.2 OD600 units) of cells from each strain was collected, serially diluted by fivefold and spotted onto YPD plates. Plates were incubated at 25oC, 34oC, or 37oC for 2 days. (C\u2013D) The sso1\u0394 sso2 mutants were grown at 25oC in YPD medium overnight to early log phase and shifted to 37oC for 90 min. The internal and external fractions were prepared as described in Materials and methods. (C) The internal or external pools of Bgl2 were detected by western blotting. Several mutations in SSO2 caused inhibition of Bgl2 secretion. (D) Quantitation of internal Bgl2 was determined by ImageJ. Results were analyzed based on seven independent experiments. Error bar represents SD, n=7. *p<0.005, **p<2e5. (E) Strains were grown at 25\u00b0C in YP containing 5% (v/v) glucose medium overnight to early log phase. 1 OD600 unit of cells was collected from each strain and shifted to YP containing 0.1% (v/v) glucose medium, and incubated at 37oC for 45 min. Four independent experiments were performed. Error bars represent SD, n=4. *p<0.005.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The sequence of sso2 mutants generated by site-directed mutagenesis. Residues in the first NPY motif that were mutated to Ala (A) in all mutants (i.e. M1-M5) are shown in bold italics. (B) The sso2 mutations in an sso1\u0394 background partially inhibit cells growth at 37oC. Control sso1\u0394 SSO2 or sso1\u0394 sso2 mutant cells were grown overnight in YPD medium. An aliquot (0.2 OD600 units) of cells from each strain was collected, serially diluted by 5 fold and spotted onto YPD plates. Plates were incubated at 25oC, 34 oC or 37oC for 2 days. (C) Control sso1\u0394 SSO2 strain and sso1\u0394 sso2 mutants were grown as described in Figure 3. The external and internal Bgl2 pools were detected by western blotting. Several mutations in SSO2 caused inhibition of Bgl2 secretion. (D) Quantitation of internal Bgl2. Results were analyzed based on four independent experiments. Error bar represents SD, n=5. *p<0.05. (E) Invertase secretion was determined in sso2 mutants. Strains were grown as in Figure 3. Samples were processed and quantified as described in Materials and Methods. Three independent experiments were performed. Error bar represents SD, n=3. *p < 0.05. Invertase accumulation was calculated by the formula of $(Ext_{45m}\u2212Ext_{0m})/[(Ext_{45m}\u2212Ext_{0m})+(Int_{45m}\u2212Int_{0m})]$.\n\nWe next assayed the export of two different cell surface enzymes, Bgl2 and invertase. Bgl2 is synthesized and secreted constitutively, while the synthesis of invertase is under hexose repression. Both enzymes become trapped at the cell surface by the cell wall glucan and this external pool can be released by treatment of cells with exogenous glucanase, while any internal pool remains associated with the resulting spheroplasts (Yuan et al., 2017). Using western blot analysis to measure the internal and external pools of Bgl2, we found that the secretory efficiency at 37\u00b0C generally paralleled growth: sso1\u0394 sso2M1-M6 showed only a modest accumulation of an internal pool, while sso1\u0394 sso2M7 accumulated a significantly larger internal pool (Figure 4C and D and Figure 4\u2014figure supplement 1).\n\nTo assay invertase secretion, we started with cells grown at 25\u00b0C in 5% (w/v) glucose to repress synthesis and then shifted to 0.1% (w/v) glucose to derepress synthesis and simultaneously shifted the cells to 37\u00b0C. Using these conditions we found that sso1\u0394 sso2M1-M4 and sso1\u0394 sso2M6 were not significantly different from the sso1\u0394 SSO2 control, while sso1\u0394 sso2M5 showed a minor defect in invertase secretion and sso1\u0394 sso2M7 showed a more substantial defect (Figure 4E and Figure 4\u2014figure supplement 1).\n\n### Mutations of the Sso2 NPY motifs cause polarized accumulation of secretory vesicles\n\nDefects on the secretory pathway are typically associated with the accumulation of membrane bound intermediates (Novick et al., 1980). Loss of function of exocytic SNAREs, including Sso1 and Sso2, leads to the accumulation of secretory vesicles (Aalto et al., 1993). Secretory vesicles are normally delivered to sites of polarized cell surface growth, such as the tip of the bud, early in the cell cycle, and the neck separating the mother cell and bud, late in the cell cycle. Thin section electron microscopy revealed an accumulation of vesicles in the mutants that mirrored their growth: the sso1\u0394 SSO2 control and the sso1\u0394 sso2M6 mutant had relatively few vesicles per cell section, while sso1\u0394 sso2M5 and sso1\u0394 sso2M7 had many more (Figure 5A\u2013E). The vesicles were similar in size in the different strains (Figure 5F) and were found preferentially within the buds of small budded cells (Figure 5A\u2013D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig5-v2.jpg)\n\n**Figure 5.:** A control sso1\u0394 SSO2 strain and sso1\u0394 sso2 mutants were grown in YPD medium at 25\u00b0C to an OD600 of 0.5, then 10 OD600 units of cells were collected and processed for EM analysis: (A) sso1\u0394 SSO2, (B) sso1\u0394 sso2M5, (C) sso1\u0394 sso2M6, and (D) sso1\u0394 sso2M7. Scale bar, 0.5 \u00b5m. sso2M5 and sso2M7 cells contain more secretory vesicles in the bud compared to SSO2 and sso2M6 cells. (E) Quantitation of secretory vesicles. The number of vesicles/cell was scored in 46 control cells, 49 sso2M5 cells, 51 sso2M6 cells, and 45 sso2M7 cells. (F) Measurement of vesicle size. The measurement was analyzed using ImageJ; 23\u201391 vesicles were measured.\n\n### Mutations in the NPY motifs of Sso2 affect Snc1 recycling\n\nIn addition to the export of newly synthesized cell surface proteins, secretory vesicles are also important for recycling certain plasma membrane proteins back to the cell surface after they have been internalized by endocytosis. The Snc1 v-SNARE has been shown to rapidly cycle from secretory vesicles to the plasma membrane, and then into endocytic vesicles from which it is recycled through the Golgi into a new round of secretory vesicles (Lewis et al., 2000). Under normal growth conditions, Snc1 is predominantly found on the plasma membrane, with only a minor pool in internal structures. Impeding any step in the cycle leads to a shift in the steady-state distribution of GFP-Snc1. We examined the distribution of GFP-Snc1 in various sso1\u0394 sso2 mutants. In the sso1\u0394 SSO2 control and the sso1\u0394 sso2M6 mutant, GFP-Snc1 was mostly on the plasma membrane with a small number of internal, patch-like structures apparent (Figure 6A and C). In contrast, the sso1\u0394 sso2M5 and sso1\u0394 sso2M7 mutants showed a much greater fraction of cells with internal patches of GFP-Snc1, presumably representing concentrations of secretory vesicles, and a greatly reduced localization to the plasma membrane (Figure 6B, D and E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013D) Representative images of sso1\u0394 SSO2 control, sso1\u0394 sso2M5 sso1\u0394 sso2M6, and sso1\u0394 sso2M7 mutant cells. Strains harboring a CEN plasmid expressing GFP-Snc1 were grown in SC-Ura medium overnight at 25\u00b0C reaching an OD600 around 0.5. Cells were further diluted and shifted to 37\u00b0C for 90 min prior to imaging. GFP-Snc1 localized predominantly to the PM in SSO2 control cells and sso2M6 cells yet formed GFP patches (indicated by arrows) near small buds or bud necks in sso2M5 and sso2M7 mutant cells. Scale bar, 5 \u00b5m. (E) Quantitation of cells with GFP-Snc1 patches. GFP-Snc1 patches near bud tips or necks were scored. Error bar represents SD, n=3. *p<0.05, **p<0.005.\n\n### The sso2 mutations have no effect on the actin-independent localization of Sec3\n\nSecretory vesicles are delivered to sites of cell surface growth by the type V myosin, Myo2, moving along polarized actin cables (Pruyne et al., 2004). Loss of actin or Myo2 function leads to the rapid depolarization of a vesicle marker, such as the Rab GTPase Sec4 (Salminen and Novick, 1989). Sec3, in contrast, remains associated with the tips of small buds and the necks of large buds even after actin polymerization has been blocked by addition of Latrunculin A (LatA) (Finger et al., 1998). We determined if the interactions between Sec3 and the NPY motifs of Sso2 are required for the actin-independent localization of Sec3. GFP-Sec4 and Sec3\u22123\u00d7GFP were expressed in sso1\u0394 SSO2, sso1\u0394 sso2M5, and sso1\u0394 sso2M7 cells. Localization was evaluated after treatment with either LatA or DMSO for 15 min. The polarized localization of GFP-Sec4 was lost after treatment with LatA (Figure 7A and B). While the localization of Sec3\u22123\u00d7GFP was largely resistant to LatA treatment in the control and sso1\u0394 sso2M5 mutant cells, the polarization of Sec3\u22123\u00d7GFP in sso1\u0394 sso2M7 was only slightly reduced by LatA treatment (Figure 7C and D). These results demonstrate that the NPY motifs of Sso2 do not play a major role in the recruitment of Sec3 to sites of polarized growth. Notably, prior studies have shown that the actin-independent localization of Sec3 involves its interaction with the Rho1 and Cdc42 GTPases (Guo et al., 2001; Zhang et al., 2001).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig7-v2.jpg)\n\n**Figure 7.:** (A) A control sso1\u0394 SSO2 strain or sso1\u0394 sso2 mutants expressing Sec4-GFP were grown to early log phase in YPD at 25\u00b0C, then 1 OD600 unit cells was collected and resuspended in 50 \u00b5l SC medium and incubated with 200 \u00b5M Latrunculin A (LatA) or DMSO at 25\u00b0C for 15 min prior to imaging. Images were captured by fluorescence microscopy. Sec4 is normally localized near the tip of small buds (arrow) and the neck of large buds (arrowhead) in DMSO-treated cells. Sec4 localization was disrupted in LatA-treated cells. Scale bar, 5 \u00b5m (for all images). (B) Quantitation of polarized Sec4-GFP. (C) A control sso1\u0394 SSO2 strain and the sso1\u0394 sso2 mutant strains expressing Sec3\u22123\u00d7GFP were grown and treated with LatA or DMSO under the conditions as described in A. Sec3 localization remains polarized after LatA treatment, either at the tips of small bus (arrow) or the necks of large buds (arrow head). Scale bar, 5 \u00b5m. (D) Quantitation of polarized Sec3\u22123\u00d7GFP. Error bars represent SDs based on three independent experiments in each case.\n\n### The NPY motifs play an essential role in stabilizing the interaction between Sso2 and Sec3\n\nIn the structure with the second NPY motif bound to Sec3, we see extra electron densities beyond the bound NPY motif. However, the quality of the map in that part was poor and we could only build the main chains for residues 6\u20139 (Figure 8A). We found that this \u2018fuzzy\u2019 part upstream of the bound NPY motif is in close contact with the C-terminal tip of the SNARE motif (i.e. H3) of Sso2 (Figure 8B). To find out whether the NPY motifs are essential in stabilizing the interaction between Sso2 and Sec3, we carried out ITC experiments using either WT or M7 mutant of Sso2 with the Sec3 PH domain. Our results show that WT Sso2 bound Sec3 robustly, with Kd ~ 2.7 \u00b5M (Figure 8C). However, the M7 mutant of Sso2 (aa1\u2013270) did not interact with Sec3 at all (Figure 8D).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig8-v2.jpg)\n\n**Figure 8.:** (A) Ribbon diagram of the Sso2/Sec3 complex structure with the 2Fo\u2212Fc map around the NPY motif (residue positions are marked by numbers) shown in dots (1.5\u03c3). The enlarged view shows the close contact between the NPY motif and the C-terminal tip of the H3 helix of Sso2 with their 2Fo\u2212Fc maps shown in magenta and blue, respectively. (B) Two orthogonal views of the contact site between the N-terminal extension (magenta) and the C-terminal region (green) of Sso2. Sso2 structure is shown as ribbons and sticks together with a semitransparent surface plot. (C) Isothermal titration calorimetry (ITC) result shows that wild type (WT) Sso2 (aa1\u2013270) bound Sec3-PH robustly, with a Kd of 2.67 \u00b5M. (D) Mutant M7 of Sso2 (aa1\u2013270) did not bind the Sec3 PH domain.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Native gel electrophoresis shows that WT Sso2 (aa1-270) interacted with the Sec3 PH domain, with the slowly migrating complex bands becoming stronger with increasing amounts of Sec3. In contrast, the M7 mutant of Sso2 (aa1-270) shows no interaction. (B) The same set of samples in (A) were checked on an SDS PAGE gel to visualize the proteins. (C) Size exclusion chromatography elution profiles of either WT (blue) or mutant M7 (orange) Sso2 (aa1-270) mixed with the Sec3 PH domain. (D) The mixtures and samples from the elution peaks in (C) were checked on an SDS PAGE gel.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** A control yeast strain expressing untagged Sec3 and Sso2 (NY3305) was grown in YPD and strains expressing Sec3-3\u00d7Flag and Sso2 (NY3447) or Sec3-3\u00d7Flag and Sso2-M7 (NY3448) were grown in SC-Leu medium at 25oC overnight to an OD600 around 1.0. Cell lysates were prepared as described in Methods section, and Sec3-3\u00d7Flag was immunoprecipitated from cell lysate with anti-Flag beads. Cell lysates and immunoprecipitated proteins (IPs) were blotted with anti-Flag antibody to detect Sec3-3\u00d7Flag (top panel) and anti-Sso antibody to detect Sso2 (bottom panel). The input was 1.7% of the lysate for Sec3-3\u00d7Flag and 0.25% for Sso2.\n\nWe further examined their interactions using two other independent methods. Our electrophoretic mobility shift assays (EMSA) show that more and more WT Sso2 shifted up to the complex band with increasing amounts of Sec3 in the mixtures. However, no complex was formed when we mixed the M7 mutant of Sso2 with Sec3 (Figure 8\u2014figure supplement 1). Consistently, our further test using SEC also shows that Sec3 could form complex with only WT but not the M7 mutant of Sso2 (Figure 8\u2014figure supplement 1).\n\nTo investigate whether the M7 mutant of Sso2 also affects its interaction with Sec3 in vivo, we carried out co-immunoprecipitation of Sec3\u22123\u00d7Flag and Sso2 using yeast cell lysate. Our results show that, in contrast to the clear signal of WT Sso2 pulled down by Sec3\u22123\u00d7Flag, the pull-down band for the M7 mutant was much weaker and near the level of the negative control in which the Sec3\u22123\u00d7Flag was absent (Figure 8\u2014figure supplement 2).\n\n## Discussion\n\nSec3 is a subunit of the octameric exocyst complex, a tethering factor that marks the docking site for secretory vesicles in exocytosis. Sec3 is recruited to these sites by binding to the membrane-anchored small GTPases Rho1/Cdc42 and phosphoinositides on the plasma membrane (Guo et al., 2001; Zhang et al., 2001; Zhang et al., 2008; Yamashita et al., 2010). Sso2, similar to its homologous t-SNARE in neuronal exocytosis, bears a C-terminal transmembrane helix. We have previously reported crystal structures of the Sec3 N-terminal PH domain in complex with the closed form of Sso2 as a four-helix bundle (Yue et al., 2017). We found that Sec3 destabilizes the linker between Hc and H3 of Sso2 via an allosteric effect, which promotes the assembly of the binary complex between Sso2 and the other t-SNARE, Sec9, and thus drastically accelerates subsequent full SNARE assembly with the v-SNARE Snc1/2 to drive fusion of secretory vesicles with the plasma membrane. However, it remains unknown whether the conserved N-terminal extension of Sso2 also participates in the Sso2/Sec3 interaction and how Sso2 is effectively recruited to Sec3.\n\nHere, we report a new crystal structure of the Sec3 PH domain in complex with a nearly full-length version of Sso2 that contains all sequence except for the C-terminal transmembrane helix. In addition to the interaction between the helical bundle of Sso2 and Sec3 observed in the previous study, we found an extra interaction interface between two conserved NPY motifs at the N-terminal end of Sso2 and a hydrophobic pocket on Sec3 (Figure 1). The NPY motifs are connected to the highly conserved helical core of Sso2 via a non-conserved linker with variable lengths (roughly 15\u201340 residues), which is invisible in our crystal structure, suggesting that it is mobile within the crystal structure.\n\nThere are two copies of the Sso2/Sec3 complex in our crystal structure. The two NPY motifs were independently bound to Sec3 in these two complex structures (Figure 2). Despite variations in the flanking residues, the cores of the two motifs, that is, residues Asn, Tyr, and Pro, adopt essentially the same conformation and have similar hydrogen bond networks with the neighboring Sec3 residues and water molecules (Figure 2\u2014figure supplement 2). Our ITC experiments show that either of the two NPY motifs alone could bind Sec3 tightly, although with binding affinities three- to fourfold lower than the polypeptide with both motifs (Figure 3). Similarly, mutation of either motif to alanine also substantially reduced the interaction of the N-terminal part of Sso2 with Sec3, whereas simultaneous mutation of both motifs completely abolished the interaction. Together, these data suggest that the two NPY motifs bind Sec3 synergistically.\n\nTo further understand the function of the NPY motifs in exocytosis, we carried out a series of in vivo assays using yeast strains carrying mutations of Sso2 in its NPY motifs. While mutation of either NPY motif alone only slightly reduced cell growth, simultaneous mutation of both NPY motifs severely impaired cell growth, particularly at 37\u00b0C (Figure 4B). We also explored how mutations of the NPY motifs of Sso2 influence protein secretion using Bgl2 and invertase as reporters. Our data show that mutation of both NPY motifs simultaneously substantially affects cell secretion efficiency, with a significantly larger internal pool of Bgl2 failing to reach the cell surface, whereas mutation of either motif alone yielded only a modest accumulation of an internal pool (Figure 4C and D and Figure 4\u2014figure supplement 1). Similar effects were observed in invertase secretion, where the double NPY mutant M7 showed a more substantial defect than all other mutants (Figure 4E and Figure 4\u2014figure supplement 1).\n\nWe further checked how the sso2 NPY mutations affect fusion of secretory vesicles to the target sites on the plasma membrane. Mutation of both NPY motifs resulted in the accumulation of many vesicles within the cell. Similar results were also observed for the mutation of the first NPY motif, whereas that of the second NPY motif showed no significant effect (Figure 5). Consistently, we found that both the double NPY mutation and mutation of the first NPY motif caused accumulation of GFP-Snc1 patches within the cytoplasm (Figure 6). Taken together, we conclude that the NPY motifs of Sso2 play an essential role in the secretory pathway. Notably, however, the interaction between Sec3 and the NPY motifs of Sso2 is dispensable for the actin-independent localization of Sec3 (Figure 7), which is consistent with previous reports that recruitment of Sec3 to the plasma membrane is determined by its interaction with the small GTPases Rho1 and Cdc42 as well as phosphoinositides on the membrane (Guo et al., 2001; Zhang et al., 2001; Zhang et al., 2008; Yamashita et al., 2010).\n\nAlthough the M7 mutant in the synthetic N-terminal part of Sso2 (aa1\u201315) disrupts its interaction with Sec3, the major interaction interface between the helical bundle of Sso2 and the Sec3 PH domain remains unchanged (Figure 1B). Therefore, it was intriguing to us why the M7 mutant showed such a strong deleterious effect in vesicle trafficking. Our ITC data reveal that the M7 mutant of Sso2 (aa1\u2013270) completely abolished its interaction with the Sec3 PH domain (Figure 8C and D). The disrupted binding of the M7 mutant with Sec3 was further confirmed by two other in vitro experiments using purified recombinant proteins (Figure 8\u2014figure supplement 1), as well as by our co-immunoprecipitation data (Figure 8\u2014figure supplement 2). All these demonstrate that the NPY motifs play an essential role in stabilizing the interaction between Sso2 and Sec3. This might be explained by what was observed in the crystal structure of the Sso2/Sec3 complex, where the NPY motifs are in close contact with the C-terminal tip of the SNARE motif (i.e. H3) of Sso2 and may thus stabilize their interaction as explained below (Figure 8A and B).\n\nThe dual interaction interfaces between Sso2 and Sec3 are reminiscent of what has been seen in the structures of syntaxin-1 and Tlg2 in complex with their partner SM proteins Munc18 and Vps45, respectively (Figure 9A\u2013C). In the latter two complex structures, a short peptide at the N-terminus of Munc-18 and Vps45, which was named \u2018N-peptide\u2019, forms a short helix and binds distally to the backside of the first domain of Munc18 or Vps45, opposite to their interaction sites with the helical bundles of the SNARE proteins (Eisemann et al., 2020; Burkhardt et al., 2008). In contrast, the binding site for the NPY motifs of Sso2 is on the same side of the Sec3 PH domain as the aforementioned direct contact with the C-terminal part of H3 of Sso2 (Figure 9D). Furthermore, the Sec3 PH domain is a single globular domain and much smaller than Munc18 and Vps45, both of which contain three domains that are folded into a horseshoe-like conformation. The helical bundle of syntaxin-1 and Tlg2 is clamped between the two tips of the \u2018horseshoe\u2019. Additionally, in those two complex structures, the C-terminal extensions of the SNARE motifs (i.e. H3) form a short helix and insert into a hydrophobic pocket deeply inside the \u2018horseshoe\u2019 (Figure 9B and C). These together ensure a strong interaction between the two t-SNAREs and their partner SM proteins. In contrast, the interaction interface between Sec3 and Sso2 is very small, and thus their interaction is presumably much weaker than that in the Munc18/syntaxin-1 and Vps45/Tlg2 complexes. Our ITC data show that double mutation of both NPY motifs completely abolished the interaction between Sso2 and Sec3 (Figure 8C and D). Consistently, our in vivo data demonstrate that simultaneous mutation of both NPY motifs substantially impaired protein secretion as well as recycling of cell surface proteins. We therefore think that the NPY motifs play an important role in stabilizing the interaction of Sso2 with Sec3 by providing an additional binding site, which ensures effective recruitment of Sso2 to vesicle-docking sites on the plasma membrane.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig9-v2.jpg)\n\n**Figure 9.:** (A\u2013C) Crystal structures of the complexes of Sso2/Sec3 (PDB code: 7Q83), syntaxin-1/Munc18 (PDB code: 3C98), and Tlg2/Vps45 (PDB code: 2XHE), respectively. All N-terminal extensions of these t-SANREs are indicated by arrows. (D) Superposition of the three complex structures shown in A, B, and C. (E) Superposition of the Rho1/Sec3 complex (PDB code: 3A58) with the Sec3/Sso2 complex (PDB code: 7Q83) on top of their overlapped Sec3 components.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82041/elife-82041-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** The NPY motifs at the N-terminus of Sso2 first reach out to dock into the complementary pocket on the Sec3 PH domain, which then pulls back and allows Sec3 to bind to the middle of the helical bundle of Sso2 (helices Ha, Hb and Hc are shown as semitransparent white cylinders, and H3 as an orange cylinder). Binding of Sec3 allosterically destabilizes the linker connecting Hc and H3 of Sso2 and primes downstream events in SNARE complex assembly.\n\nGiven that binding of Sec3 destabilizes the linker connecting H3 to Hc and prepares H3 for its subsequent interaction with Sec9, we think that another possible role for the NPY motifs, which are packed tightly against the C-terminal tip of the SNARE motif H3 (Figure 8A and B), might be to serve as a stopper to hold the destabilized SNARE motif in place to prevent a premature release of H3 before the right time comes for it to form a binary complex with the other t-SNARE protein Sec9.\n\nNotably, the N-peptide motif is ubiquitously present in all syntaxins that interact with SM proteins (Latham et al., 2006; McEwen and Kaplan, 2008; Johnson et al., 2009; Khvotchev et al., 2007). It serves as an initiator to recruit SM proteins to their SNARE partners to facilitate their subsequent assembly (Rathore et al., 2010). Given that the NPY motifs are connected to the rest of Sso2 via a long variable linker, we hypothesize that they may similarly function like fishing hooks to search for Sec3 around the membrane-anchored Sso2 (Figure 9\u2014figure supplement 1). Once the \u2018hooks\u2019 find and bind to Sec3, Sso2 would be locally restrained, which would promote the binding of Sec3 to the helical bundle of Sso2. This would in turn lead to the destabilization of the linker between Hc and H3 of Sso2 and thus promote the assembly of the binary complex between Sso2 and Sec9 to facilitate the final formation of the full SNARE complex with the v-SNARE Snc1/2, which eventually drives the fusion of secretory vesicles with the plasma membrane.\n\n## Materials and methods\n\n### Molecular cloning of expression constructs for in vitro assays\n\nThe Sso2 sequence excluding only its C-terminal transmembrane domain (aa1\u2013270) was sub-cloned into the pET-15b vector (Novagen) between the NdeI and BamHI sites using the following two primers: 5\u2019-GGCAGCCATATGATGAGCAAC-3\u2019 (forward) and 5\u2019-GACCGGATCCTTAACATCTTATTTTG-3\u2019 (reverse). The Sec3 PH domain sequence (aa75\u2013260) was sub-cloned into pET-15b between the BamHI and XhoI sites using forward primer 5\u2019-GCTGGGATCCTCGAATTTTTTAGCCGAACAATATG-3\u2019 and reverse primer 5\u2019-GCTGCTCGAGTTATGTGATGACTGCTCTTTGATAAC-3\u2019.The pET15b plasmid provides an N-terminal His6 tag followed by a thrombin cleavage site prior to the target proteins. All constructs were validated by DNA sequencing.\n\n### Protein expression and purification\n\nEscherichia coli strain BL21(DE3) cells harboring the expression plasmids for Sso2 and Sec3 were cultured in Luria Broth (LB) medium containing 50 mM ampicillin at 37\u00b0C to an OD600 of 0.6\u20130.8. Over-expression of the target proteins was induced using 0.5 mM isopropylthio-\u03b2-D-galactoside and cultures were incubated at 18\u00b0C overnight. Cells were harvested by centrifugation (6000\u00d7 g, 12 min, 4\u00b0C). The pellets were resuspended in pre-chilled lysis buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, 20 mM imidazole, and 10 mM \u03b2-mercaptoethanol. Cell were lysed using an EmulsiFlex-C3 homogenizer (Avestin). After centrifugation (25,000\u00d7 g, 40 min, 4\u00b0C) to remove cell debris, the supernatant was filtered through a 0.45 \u03bcm pore size filter and then loaded onto a 5 ml Ni-HiTrap column (GE Healthcare) that had been pre-equilibrated in the same lysis buffer. After washing with 5 column volumes (cv) of lysis buffer, bound protein was eluted using a linear gradient concentration of imidazole in the lysis buffer (20\u2013600 mM, \u00d725 cv). Elution fractions were checked on SDS-PAGE gels and those containing target proteins were pooled. The N-terminal His6 tag was removed by incubating the purified proteins with ~3% (w/w) thrombin (4\u00b0C, overnight) and then subjected to SEC using a Superdex S-200 16/60 column (GE Healthcare) pre-equilibrated with the running buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, and 1 mM DTT. Fractions of interest were pooled for later use.\n\nTo generate protein complex for crystallization, purified domains of Sec3 and Sso2 were mixed in a molar ratio of 2:1. After incubation at 4\u00b0C for 1 hr, the mixture was loaded on a Superdex S-200 16/60 column (GE Healthcare) pre-equilibrated with the same running buffer as above. Elution fractions were checked on a 15% (w/v) SDS-PAGE gel. The first elution peak containing both proteins were pooled and concentrated to 10\u201315 mg/ml using Amicon Ultra Centrifugal Filter Units (Millipore) with 10 kDa molecular weight cutoffs.\n\n### Crystallization, data collection, and structure determination\n\nConcentrated protein of the Sec3-Sso2 complex (~12 mg/ml) was subjected to extensive crystallization screening trials using commercial crystallization kits. Initial crystallization screenings were carried out at 22\u00b0C by the sitting drop vapor diffusion method using the Phoenix HT liquid handling robot (Rigaku) to set up dual droplets for each condition with drop volume of 0.2 and 0.3 \u00b5l (1:1 and 2:1, protein vs. reservoir solution) on 96-well sitting drop crystallization plates (Molecular Dimensions). The crystal used for final data collection was grown from a manually setup droplet containing 2 \u00b5l of protein and 1 \u00b5l of reservoir solution. Needle-shaped crystals of ~10 \u00d7 10 \u00d7 100 \u00b5m3 were obtained in a condition containing 0.1 M sodium acetate (pH 5.0), 0.2 M ammonium acetate, and 30% (w/v) PEG 4000. All crystals were harvested with nylon loops (Hampton Research) by flash-cooling in liquid nitrogen using the same reservoir solutions containing 20% (v/v) glycerol as cryo-protectant. X-ray diffraction data were collected at the beamline ID23-1 of the European Synchrotron Radiation Facility (ESRF) in Grenoble, France. Data reduction was carried out using the XDS program (Kabsch and Crystallogr, 2010).\n\nFor structure determination, the maximum-likelihood molecular replacement by PHASER (McCoy et al., 2007) was conducted using our previously determined structures of Sec3 and Sso2 (PDB code: 5M4Y) as the searching model (Yue et al., 2017). The structural models were carefully checked; all different regions as well as extra parts in the models where electron densities were clearly visible were manually built using the program COOT (Emsley and Cowtan, 2004). Refinement was carried out by Phenix.refine (Adams et al., 2010) using data of 20\u20132.19 \u00c5. All subsequent structure analyses and figure generations were carried out using Pymol (http://www.pymol.org). The details of data collection and refinement statistics are summarized in Supplementary file 1.\n\n### Isothermal titration calorimetry\n\nAll ITC measurements were conducted on a MicroCal PEAQ-ITC microcalorimeter (Malvern Panalytical). Purified Sec3 (aa75\u2013260) and WT or M7 mutant Sso2 (aa1\u2013270) proteins were dialyzed overnight against a buffer composed of 20 mM HEPES (pH 7.5), 100 mM NaCl, and 1 mM DTT. Synthetic Sso2 polypeptides were dissolved in the same buffer and their concentrations were determined using the DS-11+ Spectrophotometer (DeNovix). For ITC measurements of Sec3 with various Sso2 poplypeptides, the reaction chamber and the injection syringe contained 250 \u00b5l of 59 \u00b5M Sec3 and 45 \u00b5l of 590 \u00b5M poplypeptides, respectively. For ITC measurements of Sec3-PH with Sso2 (aa1\u2013270), the reaction chamber held 300 \u00b5l of purified Sec3 (30 \u00b5M), while the injection syringe contained 75 \u00b5l of WT or MT Sso2 (75 \u00b5M). All titration experiments consisted of one initial 0.4 \u00b5l injection followed by 18 consecutive 2 \u00b5l injections with a duration of 4 s each and an interval of 120 s between two consecutive injections. The resulting data were analyzed with the MicroCal PEAQ-ITC Analysis Software (Malvern Panalytical, Version 1.22) using the one-set-of-site fitting model. Non-linear least square fitting using one binding site model was used to calculate the association constant (Ka). Dissociation constants (Kd) were calculated according to the formula Kd = 1/Ka.\n\n### Electrophoretic mobility shift assay\n\nEMSA experiments were carried out on a 5% (w/v) native polyacrylamide gel in Tris-acetate-EDTA buffer containing 40 mM Tris, 20 mM acetic acid, and 1 mM EDTA. Purified Sec3 (aa75\u2013260), WT, or M7 mutant Sso2 (aa1\u2013270), and their mixtures (0.5\u20131 mg/ml, 10 \u00b5l) in the presence of 10% (v/v) glycerol were loaded into separate lanes on the native gel. The gel was run at 150 V for 1.5 hr at 4\u00b0C, and then stained in an ethanol solution containing 0.025% (w/v) Coomassie brilliant blue G-250 to visualize the protein bands. The same set of samples were also separately checked on a 15% (w/v) SDS-PAGE gel to confirm the presence of target proteins in each loaded sample.\n\n### Size exclusion chromatography\n\nOne-hundred \u00b5l purified Sec3 PH domain (100 \u00b5M) were mixed with equal volume of either WT or M7 mutant Sso2 (aa1\u2013270, 50 \u00b5M) in a sample buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, and 1 mM DTT. After incubating at 4\u00b0C for 30 min, the mixtures were separately run on a Superdex 200 Increase 10/300 GL column (Sigama-Aldrich) with a flow rate of 0.5 ml/min. Samples from each elution peak were checked on an SDS-PAGE gel to visualize protein content in that peak.\n\n### Construction of strains and plasmids for in vivo assays\n\nAll bacteria and yeast strains used in our in vivo studies are listed in Supplementary files 1 and 2. To generate the various sso2 mutants, a fragment of the SSO2 gene consisting of the promotor region (242 bp) and a C-terminally truncated ORF (1\u2013659 bp) was amplified by PCR. The PCR product was digested and ligated into KpnI/HindIII enzyme sites in an integrative pRS306-based vector. The sso2 mutations were generated by QuikChange Lightning Site-Directed Mutagenesis Kit (Agilent, #210518).\n\nPlasmids carrying the mutant alleles were linearized by digestion with the MscI enzyme to promote integration into the SSO2 locus and introduced into yeast strains (an sso1\u2297 strain for mutants sso2M1-M6 or wt for sso2M7) by the lithium acetate method. Transformants were selected on SC-Ura plates. Multiple independent transformants were grown in SC-Ura medium overnight. To select for Ura- \u2018loop-out\u2019 segregants, cells (100 \u00b5l) were collected, washed in sterile water, and then plated on YPD+5-FOA plates. Integration and loop-out events leading to the genomic expression of the sso2 mutations were verified by sequencing PCR products. Due to genetic instability issues, we used a two-step procedure to construct an sso1\u2297 sso2M7 strain. A wt strain was transformed with plasmid NRB1659 and then Ura- cells were selected by growth on 5-FOA plates. The selected sso2M7 strain was crossed with an sso1\u2297SSO2 strain, and after dissection haploid sso1\u2297 sso2M7 spores were identified by PCR analysis.\n\n### Growth test\n\nMutants were grown in yeast extract peptone dextrose (YPD) medium overnight to stationary phase; 0.04 OD600 units of cells were resuspended in 200 \u00b5l sterile water and diluted in fivefold serial dilutions. Cells were spotted on YPD plates and incubated at 25\u00b0C, 34\u00b0C, or 37\u00b0C for 2 days.\n\n### Bgl2 secretion assay\n\nThe Bgl2 secretion assay was carried out as previously described by Yuan et al., 2017. Briefly, 15 ml of yeast cells were grown at 25\u00b0C in YPD medium overnight to early log phase (\u223c0.5 OD600/ml), then shifted to 37\u00b0C for 90 min. Six OD600 units of cells from each strain were harvested by centrifugation at 900\u00d7 g for 5 min. Cell pellets were resuspended in 1 ml of ice-cold 10 mM NaN3 and 10 mM NaF, and then incubated on ice for 10 min. The cell suspension was transferred to 1.5 ml microfuge tubes, pelleted, and resuspended in 1 ml of fresh prespheroplasting buffer consisted of 100 mM Tris-HCl (pH 9.4), 50 mM \u03b2-mercaptoethanol, 10 mM NaN3, and 10 mM NaF, then incubated on ice for 15 min. Cells were then pelleted and washed with 0.5 ml of spheroplast buffer (50 mM KH2PO4-KOH [pH 7.0], 1.4 M sorbitol, and 10 mM NaN3). Cells were resuspended in 1 ml of spheroplast buffer containing 167 \u00b5g/ml zymolyase 100T (Nacasai Tesque) and incubated at 37\u00b0C in a water bath for 30 min. Spheroplasts were spun down at 5000\u00d7 g for 10 min, and 100 \u00b5l of the supernatant from each tube was transferred into a new 1.5 ml tube and mixed immediately with 34 \u00b5l of \u00d74 SDS sample buffer (the external pool). All of the remaining supernatant was discarded. The pellets (spheroplasts) were resuspended in 100 \u00b5l \u00d71 SDS sample buffer (the internal pool). Samples were boiled for 10 min and proteins were separated on a 10% SDS-PAGE gel. Bgl2 was visualized by western blotting with anti-Bgl2 rabbit polyclonal antibody at 1:5000 dilution (provided by the laboratory of Randy Schekman, University of California, Berkeley). For quantitation of Bgl2, images of western blots were captured using the ChemiDoc system (Bio-Rad) and multiple images were collected to ensure an unsaturated signal. Serial dilutions of a control sample were run in parallel to establish a standard curve. The electrophoretic bands were quantitated using ImageJ software (https://imagej.nih.gov).\n\n### Invertase secretion assay\n\nThe invertase assays were performed as previously described by Yuan et al., 2017. Yeast strains were grown at 25\u00b0C in YP medium containing 5% (w/v) glucose overnight to early log phase (\u223c0.5 OD600/ml). Then, 1 OD600 unit of cells was transferred to two sets of 15 ml centrifuge tubes and pelleted at 3500 rpm for 5 min. The first set of cells were washed in 0.5 ml sterile water and resuspended in 1 ml ice-cold 10 mM NaN3, then kept on ice as 0 min samples. The second set of cells were washed once in sterile water and resuspended in 1 ml YP+0.1% glucose medium, then incubated at 37\u00b0C in a water bath with shaking for 45 min. Cells were pelleted and resuspended in 1 ml 10 mM NaN3 as 45 min samples; 0.5 ml cells from each 0 or 45 min samples were used to measure the external invertase. Another 0.5 ml cells of 0 or 45 min samples were resuspended in spheroblast buffer containing 50 \u00b5g/ml zymolyase and incubated at 37\u00b0C in a water bath for 45 min to generate spheroplasts. All internal samples were lysed with 0.5 ml 0.5% Triton X-100. A 20 \u00b5l aliquot from each internal and external sample was used for measuring invertase. The percentage of invertase accumulation was calculated by the formula of (Int45m-Int0m)/[(Ext45m-Ext0m) + (Int45m-Int0m)].\n\n### Electron microscopy\n\nControl (sso1\u2297/SSO2) or sso2 mutant cells were grown at 25\u00b0C in YPD to an OD600 of \u223c0.5 and then processed for electron microscopy study as previously described (Yuan et al., 2017). In brief, \u223c10 OD600 units of cells were collected using a 0.22 \u00b5m filter apparatus, washed with 10 ml of 0.1 M cacodylate (pH 6.8), then resuspended in 10 ml of fixative (0.1 M cacodylate, 4% glutaraldehyde, pH 6.8). Cells were fixed at room temperature for 1 hr and then shifted to 4\u00b0C for 16 hr. The next day, cells were washed twice with 50 mM KPi (pH 7.5), and then digested in 2 ml of 50 mM KPi buffer containing 0.25 mg/mL Zymolyase 100T at 37\u00b0C for 40 min in a water bath with gentle shaking. Cells were then washed twice with ice-cold 0.1 M cacodylate buffer and resuspended in 1.5 ml of cold 2% (w/v) OsO4 in 0.1 M cacodylate buffer. Cells were incubated for 1 hr on ice, washed three times with water, and then incubated in 1.5 ml of 2% (w/v) uranyl acetate at room temperature for 1 hr. Cells were dehydrated by a series of ethanol washes and incubated overnight in Durcupan resin. Cells were embedded in fresh Durcupan resin and baked at 60\u00b0C for at least 48 hr. Sections were stained with lead citrate and uranyl acetate, and images were acquired using a transmission electron microscope (Tecnai G2 Spirit; FEI) equipped with a CCD camera (UltraScan 4000; Eagle).\n\n### Fluorescence microscopy and quantitative localization analysis\n\n#### GFP-Snc1 localization\n\nYeast strains expressing GFP-Snc1 were grown at 25\u00b0C to early log phase OD600 0.3\u20130.6 in SC-Ura medium. Five-hundred \u00b5l of cells were harvested and resuspended in growth medium for fluorescence imaging. Cultures were shifted to 37\u00b0C for 90 min, then 500 \u00b5l samples were collected for fluorescence imaging. Images were acquired with a \u00d7100 oil-immersion objective on a widefield fluorescence microscopy system equipped with a Hamamatsu ORCA-ER camera. For each sample, z-stacks with a 200 nm slice distance were generated. Images were analyzed using Volocity software 4.8 (Quorum Technology, Inc). For quantitation studies, three independent transformants from each condition were examined under the same condition and 100\u2013200 cells from each strain were scored. Three separate experiments were used to calculate the SD.\n\n#### LatA treatment of Sec4-GFP and Sec3\u22123\u00d7GFP\n\nYeast strains were transformed with an integration vector expressing GFP-Sec4 or Sec3\u22123\u00d7GFP. Cells were grown in YPD to around OD600 0.5, then 1 OD600 unit cells were collected and resuspended in 50 \u00b5l SC-Ura medium. One \u00b5l of 10 mM LatA was added to the cell suspension and incubated at 25\u00b0C for 15 min. Cells were fixed with 3.7% (v/v) formaldehyde for 60 min and washed twice in 0.5 ml PBS. Cells were imaged on a widefield fluorescence microscope. Quantitation analysis was done as described above. Three separate experiments were used to calculate the SD.\n\n### Co-immunoprecipitation\n\nStrains were grown at 25\u00b0C overnight to an OD600 around 1.0. Seventy OD600 units of cells were collected from each strain. Cell lysates were prepared as described previously with modifications (Yue et al., 2017; Liu et al., 2022). Briefly, cell pellets were washed once in cold water and resuspended in ice-cold lysis buffer (50 mM Tris-HCl, pH 7.5, 100 mM NaCl, 1 mM EDTA, 5 mM NaF, 1 mM sodium pyrophosphate, and 1 mM DTT) and a protease inhibitor cocktail (Roche). Cells suspensions were transferred to 2 ml screw cap tubes containing prewashed 2 mg zirconia/silica 0.5 mm beads. Cell were lysed using a bead beater; 1% (v/v) Triton X-100 was added to the cell lysates and incubated for 15 min at 4\u00b0C. The cell lysates were then spun at 20,000\u00d7 g for 30 min and supernatants were incubated with 10 \u00b5l prewashed anti-Flag agarose beads (Sigma, A2220) at 4\u00b0C for 3 hr. Beads were washed five times with lysis buffer containing 0.1% (v/v) Triton X-100. Proteins bound on the beads were eluted with \u00d71 sample buffer. Proteins were detected with anti-Flag antibody (Sigma, F1804, monoclonal, 1:1000) or anti-Sso antibody (rabbit antiserum, 1:2000).\n\nCoordinates and structure factors for the Sec3-Sso2 complex have been deposited in the Protein Data Bank with accession code 7Q83 (https://www.rcsb.org/structure/7Q83).\n",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "55e71e22-80ef-412c-a09a-46a4bbda91df",
+      "submission_id": "dd1cd2e0-e4b3-4931-a254-0d7151592012",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82041.sa0](https://doi.org/10.7554/eLife.82041.sa0)\n\nThis paper describes a mechanistic and structural investigation of a crucial step in exocytosis that involves the assembly of two t-SNAREs with a v-SNARE. The authors solve the structure of Sec3, a component of the exocyst vesicle tethering complex and the t-SNARE Sso2, and identify a previously unknown binding site that helps to explain the mechanism of this rate-limiting step. The results are of great interest to scientists studying exocytosis, membrane fusion, and protein-protein interaction.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82041.sa1](https://doi.org/10.7554/eLife.82041.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e53b43f8-1fc9-430b-9d5e-43091c63be5d",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C1",
+      "claim": "Exocytosis is an active vesicle trafficking process by which eukaryotes secrete materials to the extracellular environment and insert membrane proteins into the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Exocytosis is an active vesicle trafficking process by which eukaryotes secrete materials to the extracellular environment and insert membrane proteins into the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about exocytosis that represents established scientific knowledge in the field of cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "6f70578f-d474-4b67-af49-b526a9fe97af",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C2",
+      "claim": "The final step of exocytosis in yeast involves the assembly of two t-SNAREs, Sso1/2 and Sec9, with the v-SNARE, Snc1/2, on secretory vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The final step of exocytosis in yeast involves the assembly of two t-SNAREs, Sso1/2 and Sec9, with the v-SNARE, Snc1/2, on secretory vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the molecular mechanism of exocytosis in yeast, drawing from established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "2a7136ed-1abd-4f1f-a023-55694ab809d1",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C3",
+      "claim": "The rate-limiting step in exocytosis is the formation of a binary complex of the two t-SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate-limiting step in this process is the formation of a binary complex of the two t-SNAREs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a specific mechanistic bottleneck in the exocytosis process, representing established knowledge about SNARE assembly kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "f46cb3d2-4676-44d2-a1a7-f1f4dcb97790",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C4",
+      "claim": "Sec3 accelerates binary complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a previous report of acceleration of binary complex assembly by Sec3, it remains unknown how Sso2 is efficiently recruited to the vesicle-docking site marked by Sec3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work, as indicated by the phrase 'previous report'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "0f5a0632-2ebf-49a9-be9c-3547049190be",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C5",
+      "claim": "The crystal structure of the pleckstrin homology (PH) domain of Sec3 in complex with a nearly full-length version of Sso2 lacking only its C-terminal transmembrane helix was determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report a crystal structure of the pleckstrin homology (PH) domain of Sec3 in complex with a nearly full-length version of Sso2 lacking only its C-terminal transmembrane helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data including crystallography and structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "076832f8-8dc8-4669-b010-c2ef3fff4cc8",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C6",
+      "claim": "The structure shows a previously uncharacterized binding site for Sec3 at the N-terminus of Sso2, consisting of two highly conserved triple residue motifs (NPY: Asn-Pro-Tyr).",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows a previously uncharacterized binding site for Sec3 at the N-terminus of Sso2, consisting of two highly conserved triple residue motifs (NPY: Asn-Pro-Tyr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "6fa5fa74-1527-4e51-84d5-79cc62765ea8",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C7",
+      "claim": "The two NPY motifs bind Sec3 synergistically.",
+      "claim_type": "EXPLICIT",
+      "source": "We further reveal that the two NPY motifs bind Sec3 synergistically, which together with the previously reported binding interface constitute dual-site interactions between Sso2 and Sec3 to drive the fusion of secretory vesicles at target sites on the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC experiments showing that the two motifs together bind more strongly than either motif alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "07da7047-de8e-47d5-88d8-a216936f6529",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C8",
+      "claim": "The dual-site interactions between Sso2 and Sec3 drive the fusion of secretory vesicles at target sites on the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We further reveal that the two NPY motifs bind Sec3 synergistically, which together with the previously reported binding interface constitute dual-site interactions between Sso2 and Sec3 to drive the fusion of secretory vesicles at target sites on the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the structural and functional data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "45300558-a5d3-4d2e-91be-348142b762c9",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C9",
+      "claim": "Inter-organelle material exchange is carried out primarily through membrane traffic in which membrane bound transport vesicles bud from a donor compartment and are delivered to a specific acceptor compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-organelle material exchange is carried out primarily through membrane traffic in which membrane bound transport vesicles bud from a donor compartment and are delivered to a specific acceptor compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cellular trafficking mechanisms representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "3bf146d8-50d7-4097-90a6-3e533c694634",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C10",
+      "claim": "Upon arriving at the destination, cargo-packed vesicles are first recognized and caught by tethering factors situated on the target membrane, which then hand the captured vesicles over to the SNARE proteins that drive membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon arriving at the destination, cargo-packed vesicles are first recognized and caught by tethering factors situated on the target membrane, which then hand the captured vesicles over to the soluble N-ethylmaleimide-sensitive factor-attachment protein receptor (SNARE) proteins that drive membrane fusion (Ungermann and K\u00fcmmel, 2019; Chia and Gleeson, 2014; Br\u00f6cker et al., 2010; Yu and Hughson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "88c6256a-9e3a-434f-bc73-22a69c01cf81",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C11",
+      "claim": "In neuronal exocytosis, fusion of synaptic vesicles to the presynaptic plasma membrane is driven by the assembly of a four-helix bundle containing two t-SNAREs, syntaxin-1 and SNAP-25, on the target membrane and the v-SNARE, synaptobrevin, on synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In neuronal exocytosis, fusion of synaptic vesicles to the presynaptic plasma membrane is driven by the assembly of a four-helix bundle containing two t-SNAREs, syntaxin-1 and SNAP-25, on the target membrane and the v-SNARE, synaptobrevin, on synaptic vesicles (Fernandez et al., 1998; Sutton et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "a58b438b-0de4-4bc6-8c0e-738bf0467ff6",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C12",
+      "claim": "SNARE assembly is tightly regulated by multiple auxiliary proteins, including the Sec1/Munc18 (SM) family of proteins, tethering factors, and small GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive studies have established that SNARE assembly is tightly regulated by multiple auxiliary proteins, including the Sec1/Munc18 (SM) family of proteins, tethering factors, and small GTPases (Dulubova et al., 1999; Fiebig et al., 1999; Demircioglu et al., 2014; Takemoto et al., 2018; Koike and Jahn, 2019; Cai et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "fa519560-b1ce-45d6-bbeb-7de82cb8b65f",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C13",
+      "claim": "Munc18 is a chaperone protein that maintains syntaxin-1 in an activated conformation and passes it to its cognate SNARE partners for assembly to catalyze membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Munc18 is a chaperone protein that maintains syntaxin-1 in an activated conformation and passes it to its cognate SNARE partners for assembly to catalyze membrane fusion (Wang et al., 2019; Yu et al., 2018; Jiao et al., 2018; Xu et al., 2010; Andr\u00e9 et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies on Munc18 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "530f6140-33cb-44b3-a14a-5463658a0eb6",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C14",
+      "claim": "The exocytic vesicle-docking site in yeast is marked by the octameric exocyst complex, which belongs to the CATCHR family of multi-subunit tethering proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The exocytic vesicle-docking site in yeast is marked by the octameric exocyst complex, which belongs to the CATCHR family of multi-subunit tethering proteins (Pleskot et al., 2015; Guo et al., 1999; Boehm and Field, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work characterizing the exocyst complex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "300914f6-4125-4f18-860c-d932ca73042b",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C15",
+      "claim": "The main function of the exocyst is to capture secretory vesicles at sites of cell surface growth, which include the tip of the daughter cell early in the cell cycle, and the mother-daughter cell junction late in the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The main function of the exocyst is to capture secretory vesicles at sites of cell surface growth, which include the tip of the daughter cell early in the cell cycle, and the mother-daughter cell junction late in the cycle (Lipschutz and Mostov, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work on exocyst function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "093fc637-0a6a-49e4-8f0e-d0dbdced537a",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C16",
+      "claim": "The two t-SNAREs for exocytosis in yeast are Sso1/2 and Sec9, which are homologs of syntaxin-1 and SNAP-25, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The two t-SNAREs for exocytosis in yeast are Sso1/2 and Sec9, which are homologs of syntaxin-1 and SNAP-25, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about yeast SNARE proteins and their homology to mammalian counterparts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "955ba088-7b38-4dec-8e25-475c0dbad2a3",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C17",
+      "claim": "The v-SNARE attached to secretory vesicles in yeast is Snc1/2, which is equivalent to synaptobrevin in neuronal exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The v-SNARE attached to secretory vesicles in yeast is Snc1/2, which is equivalent to synaptobrevin in neuronal exocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about yeast v-SNARE proteins and their homology to mammalian counterparts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "54cf8248-30b8-4f01-a22c-3c7595dce224",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C18",
+      "claim": "One of the exocyst components, Sec3, promotes SNARE assembly by interacting with the t-SNARE Sso2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work showed that one of the exocyst components, Sec3, promotes SNARE assembly by interacting with the t-SNARE Sso2 (Yue et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "d7cd930a-ab68-4aa9-b5d8-a8698d34ce63",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C19",
+      "claim": "Sec3 consists of an N-terminal pleckstrin homology (PH) domain, a central putative coiled coil, and a C-terminal helical domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec3 consists of an N-terminal pleckstrin homology (PH) domain, a central putative coiled coil, and a C-terminal helical domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of Sec3 based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "a6aff2ad-d7f8-4140-b4d6-835f8d8c3dac",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C20",
+      "claim": "Sso2 consists of four helices, with the first three (Habc) forming an inhibitory domain and the last (H3) serving as the SNARE motif that interacts with the other two SNAREs during membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Like syntaxin-1 and other related t-SNAREs, Sso2 consists of four helices, with the first three (Habc) forming an inhibitory domain and the last (H3) serving as the SNARE motif that interacts with the other two SNAREs during membrane fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of Sso2 based on established knowledge about syntaxin-like proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "d0656d97-b147-450d-982c-ea60d393bc92",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C21",
+      "claim": "The Sec3 PH domain binds to the auto-inhibited four-helix bundle of Sso2 and promotes a conformational change of the linker between Hc and H3 of Sso2 via an allosteric effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the Sec3 PH domain binds to the auto-inhibited four-helix bundle of Sso2 and promotes a conformational change of the linker between Hc and H3 of Sso2 via an allosteric effect (Yue et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "b1df1f28-bad0-4881-949f-137973138daa",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C22",
+      "claim": "The conformational change promoted by Sec3 binding promotes the release of the SNARE motif (H3) of Sso2 and substantially accelerates the formation of the initial binary complex between H3 of Sso2 and the two helices of the other t-SNARE, Sec9.",
+      "claim_type": "EXPLICIT",
+      "source": "This change promotes the release of the SNARE motif (H3) of Sso2 and substantially accelerates the formation of the initial binary complex between H3 of Sso2 and the two helices of the other t-SNARE, Sec9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "b0a76427-5039-40bd-a9f6-05a4e0b825c6",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C23",
+      "claim": "A stable binary complex of Sso2 (aa1-270) and Sec3 PH domain (aa75-260) was obtained via size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "A stable binary complex was obtained via size exclusion chromatography (SEC) (Figure 1\u2014figure supplement 1), which was then crystallized by hanging drop vapor diffusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the SEC data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "ff8ae809-4569-4b26-bd09-6337a55adeb2",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C24",
+      "claim": "Diffraction data to 2.19 \u00c5 resolution was collected at the ESRF synchrotron site.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffraction data to 2.19 \u00c5 resolution was collected at the ESRF synchrotron site and the crystal structure was determined by the molecular replacement method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "3918e405-344b-4822-ac8f-008e5eddecbe",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C25",
+      "claim": "The crystal structure was determined by the molecular replacement method.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffraction data to 2.19 \u00c5 resolution was collected at the ESRF synchrotron site and the crystal structure was determined by the molecular replacement method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the method used for structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "6143730d-49bd-4147-b646-9d6f7b6eb494",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C26",
+      "claim": "The crystal belongs to space group P1 (a=50.96 \u00c5, b=58.40 \u00c5, c=83.29 \u00c5; \u03b1=104.28\u00b0, \u03b2=98.49\u00b0, \u03b3=113.20\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal belongs to space group P1 (a=50.96 \u00c5, b=58.40 \u00c5, c=83.29 \u00c5; \u03b1=104.28\u00b0, \u03b2=98.49\u00b0, \u03b3=113.20\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is crystallographic data from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "12606a21-e073-41ee-bf6f-e9866efd99cd",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C27",
+      "claim": "The final structure was refined to Rwork and Rfree of 19.9% and 23.9%, respectively, with an average B factor of 40.74 \u00c52 for all macromolecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The final structure was refined to Rwork and Rfree of 19.9% and 23.9%, respectively, with an average B factor of 40.74 \u00c52 for all macromolecules (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is crystallographic refinement data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "83e6a32d-ecb8-413d-ac8e-66de37d58987",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C28",
+      "claim": "The final model contains two copies of the Sso2/Sec3 complex per asymmetric unit, together with 418 ordered water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model contains two copies of the Sso2/Sec3 complex per asymmetric unit, together with 418 ordered water molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the contents of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "f692d281-f732-44df-a970-fc8c6946e2b1",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C29",
+      "claim": "One of the complexes contains residues 4\u20138, 33\u2013149, and 197\u2013226 of Sso2 and residues 76\u2013250 of Sec3.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the complexes contains residues 4\u20138, 33\u2013149, and 197\u2013226 of Sso2 and residues 76\u2013250 of Sec3; the other contains residues 6\u201314, 33\u2013148, and 196\u2013226 of Sso2 and residues 76\u2013250 of Sec3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the visible residues in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "e4631d58-9de6-4c2e-82b9-66b1bb14cb94",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C30",
+      "claim": "The other complex contains residues 6\u201314, 33\u2013148, and 196\u2013226 of Sso2 and residues 76\u2013250 of Sec3.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the complexes contains residues 4\u20138, 33\u2013149, and 197\u2013226 of Sso2 and residues 76\u2013250 of Sec3; the other contains residues 6\u201314, 33\u2013148, and 196\u2013226 of Sso2 and residues 76\u2013250 of Sec3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the visible residues in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "1b1e5352-86a8-4568-9526-5f578bd453e2",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C31",
+      "claim": "Corresponding regions in the two complex structures are essentially identical, with r.m.s.d. of 0.45 \u00c5 for all aligned backbone atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Corresponding regions in the two complex structures are essentially identical, with r.m.s.d. of 0.45 \u00c5 for all aligned backbone atoms (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of the two structures in the asymmetric unit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "60f6bb9c-2e1a-4f9c-a980-e72ad9351ca3",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C32",
+      "claim": "Primary sequence alignments of Sso2 homologs from various yeast species reveal two conserved three-residue motifs toward the N-terminus of Sso2.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary sequence alignments of Sso2 homologs from various yeast species reveal two conserved three-residue motifs toward the N-terminus of Sso2, which we name as NPY motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "96c09fa6-9fa1-4a90-84fb-efdb2ddcf2ff",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C33",
+      "claim": "The double NPY motifs are connected to the highly conserved core of Sso2 (i.e. Habc and H3) via a non-conserved linker with variable lengths in different homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "These double NPY motifs are connected to the highly conserved core of Sso2 (i.e. Habc and H3) via a non-conserved linker with variable lengths in different homologs (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "74a158f6-61d4-49f6-bc9b-ae7eeb5fd8cc",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C34",
+      "claim": "The NPY motifs bind individually to Sec3 in the two structural copies.",
+      "claim_type": "EXPLICIT",
+      "source": "These NPY motifs bind individually to Sec3 in the two structural copies (Figure 2B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the crystal structure data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "3c4e444f-0d44-4a50-9158-ae2c297c5093",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C35",
+      "claim": "The tyrosine residues in both NPY motifs (i.e. Y7 and Y13) are docked into a conserved hydrophobic pocket on the concave surface on Sec3.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, the tyrosine residues in both cases (i.e. Y7 and Y13) are docked into a conserved hydrophobic pocket on the concave surface on Sec3 (Figure 2D and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the crystal structure data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "33512141-f2c1-41aa-8484-75f9db9d868a",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C36",
+      "claim": "The NPY motif adopts a T-shaped conformation, with its broad top part shaped by the asparagine (N) and the proline (P) residues, which is stabilized by a hydrogen bond between the carboxyl group of the asparagine and the amide proton of the proline.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the NPY motif adopts a T-shaped conformation, with its broad top part shaped by the asparagine (N) and the proline (P) residues, which is stabilized by a hydrogen bond between the carboxyl group of the asparagine and the amide proton of the proline (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the crystal structure data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "84d54521-7101-4b8c-9f50-15cbf5ec37bf",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C37",
+      "claim": "The tyrosine residue sticks out to form a pin-like structure that fits neatly in the pocket on Sec3.",
+      "claim_type": "EXPLICIT",
+      "source": "The tyrosine residue sticks out to form a pin-like structure that fits neatly in the pocket on Sec3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description based on the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "f48bed91-0fc5-42da-8149-bbfe72e25f05",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C38",
+      "claim": "Wild type double NPY motifs of Sso2 (aa1\u201315) bound Sec3 with a dissociation constant (Kd) of 21.1 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type (WT) double NPY motifs of Sso2 (aa1\u201315) bound Sec3 with a dissociation constant (Kd) of 21.1 \u00b5M (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "b03bc7c5-b00d-49d1-af1d-83b85c185963",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C39",
+      "claim": "Each NPY motif individually bound Sec3 much more weakly, with binding affinities reduced by three- to fourfold.",
+      "claim_type": "EXPLICIT",
+      "source": "However, each NPY motif individually bound Sec3 much more weakly, with binding affinities reduced by three- to fourfold (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figures 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "e01d4f67-d2dc-4362-9eba-f5db354740e6",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C40",
+      "claim": "Mutation of all core residues of the first NPY motif to alanines (M5) slightly reduced the binding affinity (Kd = 34.9 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of all core residues of the first NPY motif to alanines (M5) slightly reduced the binding affinity (Kd = 34.9 \u00b5M) (Figure 3D), whereas mutation of the second NPY motif (M6) drastically affected the interaction, with a Kd of 188 \u00b5M (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "ee2e8175-77da-47b3-93ff-50ddaef18115",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C41",
+      "claim": "Mutation of the second NPY motif (M6) drastically affected the interaction, with a Kd of 188 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of all core residues of the first NPY motif to alanines (M5) slightly reduced the binding affinity (Kd = 34.9 \u00b5M) (Figure 3D), whereas mutation of the second NPY motif (M6) drastically affected the interaction, with a Kd of 188 \u00b5M (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "c56c859f-02a5-4503-b7ed-cfca4649a6f4",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C42",
+      "claim": "The synthetic polypeptide with both NPY motifs mutated (M7) displayed no detectable interaction with Sec3.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic polypeptide with both NPY motifs mutated (M7) displayed no detectable interaction with Sec3 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "aeae7153-0ab0-4eb2-a013-175b0df61a8d",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C43",
+      "claim": "No effect on growth was observed with single, double, or triple mutations in the first NPY domain (sso1\u0394 sso2M1-M4).",
+      "claim_type": "EXPLICIT",
+      "source": "No effect was observed with single, double, or triple mutations in the first NPY domain (sso1\u0394 sso2M1-M4), however changing all four residues to alanine (sso1\u0394 sso2M5) resulted in reduced growth at 37\u00b0C (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth assay data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "bc563a1b-247f-41aa-ab1a-5b98f57c1075",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C44",
+      "claim": "Changing all four residues of the first NPY domain to alanine (sso1\u0394 sso2M5) resulted in reduced growth at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "No effect was observed with single, double, or triple mutations in the first NPY domain (sso1\u0394 sso2M1-M4), however changing all four residues to alanine (sso1\u0394 sso2M5) resulted in reduced growth at 37\u00b0C (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth assay data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "a1b5f545-820b-4522-aa83-247c22c6034f",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C45",
+      "claim": "Mutating all four residues of the second NPY domain to alanine (sso1\u0394 sso2M6) did not affect growth at any temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating all four residues of the second NPY domain to alanine (sso1\u0394 sso2M6) did not affect growth at any temperature, however changing all residues of both the first and second NPY domain to alanine (sso1\u0394 sso2M7) resulted in significantly reduced growth at both 25\u00b0C and 34\u00b0C and severely impaired growth at 37\u00b0C (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "e334a3b1-924f-4fce-8539-10995ab94405",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C46",
+      "claim": "Changing all residues of both the first and second NPY domain to alanine (sso1\u0394 sso2M7) resulted in significantly reduced growth at both 25\u00b0C and 34\u00b0C and severely impaired growth at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating all four residues of the second NPY domain to alanine (sso1\u0394 sso2M6) did not affect growth at any temperature, however changing all residues of both the first and second NPY domain to alanine (sso1\u0394 sso2M7) resulted in significantly reduced growth at both 25\u00b0C and 34\u00b0C and severely impaired growth at 37\u00b0C (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "9d99dd90-ed8c-4c88-b495-eff1da67f7f4",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C47",
+      "claim": "The synergistic effects of eliminating the first and second NPY motif of Sso2 suggest that both motifs are functional and at least partially redundant.",
+      "claim_type": "EXPLICIT",
+      "source": "The synergistic effects of eliminating the first and second NPY motif of Sso2 suggest that both motifs are functional and at least partially redundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the growth assay data showing that double mutation has a stronger effect than single mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "dfbbec14-2367-436b-ae8b-4aff155d344d",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C48",
+      "claim": "Several mutations in SSO2 caused inhibition of Bgl2 secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal or external pools of Bgl2 were detected by western blotting. Several mutations in SSO2 caused inhibition of Bgl2 secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "e9165221-312a-4ed1-8422-4d32cefbb405",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C49",
+      "claim": "sso1\u0394 sso2M1-M6 showed only a modest accumulation of an internal pool of Bgl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using western blot analysis to measure the internal and external pools of Bgl2, we found that the secretory efficiency at 37\u00b0C generally paralleled growth: sso1\u0394 sso2M1-M6 showed only a modest accumulation of an internal pool, while sso1\u0394 sso2M7 accumulated a significantly larger internal pool (Figure 4C and D and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figures 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "38060585-4e61-449e-9d9d-5f312d5a0985",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C50",
+      "claim": "sso1\u0394 sso2M7 accumulated a significantly larger internal pool of Bgl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using western blot analysis to measure the internal and external pools of Bgl2, we found that the secretory efficiency at 37\u00b0C generally paralleled growth: sso1\u0394 sso2M1-M6 showed only a modest accumulation of an internal pool, while sso1\u0394 sso2M7 accumulated a significantly larger internal pool (Figure 4C and D and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figures 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "363ec90a-a13c-46c3-8816-5a878f85972b",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C51",
+      "claim": "sso1\u0394 sso2M1-M4 and sso1\u0394 sso2M6 were not significantly different from the sso1\u0394 SSO2 control in invertase secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these conditions we found that sso1\u0394 sso2M1-M4 and sso1\u0394 sso2M6 were not significantly different from the sso1\u0394 SSO2 control, while sso1\u0394 sso2M5 showed a minor defect in invertase secretion and sso1\u0394 sso2M7 showed a more substantial defect (Figure 4E and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by invertase secretion assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "f6e9d49c-5a73-4e78-a1f6-d2f1b5be364f",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C52",
+      "claim": "sso1\u0394 sso2M5 showed a minor defect in invertase secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these conditions we found that sso1\u0394 sso2M1-M4 and sso1\u0394 sso2M6 were not significantly different from the sso1\u0394 SSO2 control, while sso1\u0394 sso2M5 showed a minor defect in invertase secretion and sso1\u0394 sso2M7 showed a more substantial defect (Figure 4E and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by invertase secretion assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "a28c6350-25b4-45e4-811a-cb32520d6a95",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C53",
+      "claim": "sso1\u0394 sso2M7 showed a more substantial defect in invertase secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these conditions we found that sso1\u0394 sso2M1-M4 and sso1\u0394 sso2M6 were not significantly different from the sso1\u0394 SSO2 control, while sso1\u0394 sso2M5 showed a minor defect in invertase secretion and sso1\u0394 sso2M7 showed a more substantial defect (Figure 4E and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by invertase secretion assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "031479d3-3a09-4b0c-97c7-468057363744",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C54",
+      "claim": "Loss of function of exocytic SNAREs, including Sso1 and Sso2, leads to the accumulation of secretory vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of function of exocytic SNAREs, including Sso1 and Sso2, leads to the accumulation of secretory vesicles (Aalto et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "1ad8c820-e97f-4803-b6c9-cc1e83929394",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C55",
+      "claim": "Secretory vesicles are normally delivered to sites of polarized cell surface growth, such as the tip of the bud, early in the cell cycle, and the neck separating the mother cell and bud, late in the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretory vesicles are normally delivered to sites of polarized cell surface growth, such as the tip of the bud, early in the cell cycle, and the neck separating the mother cell and bud, late in the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about yeast cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "a713da8b-dd52-4092-b9cd-16771f5a0d99",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C56",
+      "claim": "The sso1\u0394 SSO2 control and the sso1\u0394 sso2M6 mutant had relatively few vesicles per cell section.",
+      "claim_type": "EXPLICIT",
+      "source": "Thin section electron microscopy revealed an accumulation of vesicles in the mutants that mirrored their growth: the sso1\u0394 SSO2 control and the sso1\u0394 sso2M6 mutant had relatively few vesicles per cell section, while sso1\u0394 sso2M5 and sso1\u0394 sso2M7 had many more (Figure 5A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "5535f5a8-78f4-4b60-a47c-f03e279bf812",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C57",
+      "claim": "sso1\u0394 sso2M5 and sso1\u0394 sso2M7 had many more vesicles per cell section than the control.",
+      "claim_type": "EXPLICIT",
+      "source": "Thin section electron microscopy revealed an accumulation of vesicles in the mutants that mirrored their growth: the sso1\u0394 SSO2 control and the sso1\u0394 sso2M6 mutant had relatively few vesicles per cell section, while sso1\u0394 sso2M5 and sso1\u0394 sso2M7 had many more (Figure 5A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "95fd4e67-ddff-4131-820a-a4533b1ec67c",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C58",
+      "claim": "The vesicles were similar in size in the different strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicles were similar in size in the different strains (Figure 5F) and were found preferentially within the buds of small budded cells (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by vesicle size measurements shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "3bb69a3c-e999-4ce7-b71a-2d44c776b7b8",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C59",
+      "claim": "The vesicles were found preferentially within the buds of small budded cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicles were similar in size in the different strains (Figure 5F) and were found preferentially within the buds of small budded cells (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy images shown in Figures 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "5257cd4f-6710-4b6c-8b50-90cca5fc221d",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C60",
+      "claim": "The Snc1 v-SNARE has been shown to rapidly cycle from secretory vesicles to the plasma membrane, and then into endocytic vesicles from which it is recycled through the Golgi into a new round of secretory vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The Snc1 v-SNARE has been shown to rapidly cycle from secretory vesicles to the plasma membrane, and then into endocytic vesicles from which it is recycled through the Golgi into a new round of secretory vesicles (Lewis et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "ad8cfb91-bcbd-4f2f-801c-cf787ac4a2d4",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C61",
+      "claim": "Under normal growth conditions, Snc1 is predominantly found on the plasma membrane, with only a minor pool in internal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Under normal growth conditions, Snc1 is predominantly found on the plasma membrane, with only a minor pool in internal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about Snc1 localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "c1c41795-643f-4aa4-955d-2b151b5ebd0f",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C62",
+      "claim": "Impeding any step in the Snc1 cycle leads to a shift in the steady-state distribution of GFP-Snc1.",
+      "claim_type": "EXPLICIT",
+      "source": "Impeding any step in the cycle leads to a shift in the steady-state distribution of GFP-Snc1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the cycling behavior of Snc1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "03ee7ad0-7f9b-475f-b775-b99ab6967894",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C63",
+      "claim": "In the sso1\u0394 SSO2 control and the sso1\u0394 sso2M6 mutant, GFP-Snc1 was mostly on the plasma membrane with a small number of internal, patch-like structures apparent.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sso1\u0394 SSO2 control and the sso1\u0394 sso2M6 mutant, GFP-Snc1 was mostly on the plasma membrane with a small number of internal, patch-like structures apparent (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "30659859-c614-4c74-85e2-7bfdbb5721b6",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C64",
+      "claim": "The sso1\u0394 sso2M5 and sso1\u0394 sso2M7 mutants showed a much greater fraction of cells with internal patches of GFP-Snc1, presumably representing concentrations of secretory vesicles, and a greatly reduced localization to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the sso1\u0394 sso2M5 and sso1\u0394 sso2M7 mutants showed a much greater fraction of cells with internal patches of GFP-Snc1, presumably representing concentrations of secretory vesicles, and a greatly reduced localization to the plasma membrane (Figure 6B, D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "f8578b2a-9a20-4005-8907-0d3cb4facfa9",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C65",
+      "claim": "Secretory vesicles are delivered to sites of cell surface growth by the type V myosin, Myo2, moving along polarized actin cables.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretory vesicles are delivered to sites of cell surface growth by the type V myosin, Myo2, moving along polarized actin cables (Pruyne et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "8dac1011-575d-4eaa-a523-3780f4971c8c",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C66",
+      "claim": "Loss of actin or Myo2 function leads to the rapid depolarization of a vesicle marker, such as the Rab GTPase Sec4.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of actin or Myo2 function leads to the rapid depolarization of a vesicle marker, such as the Rab GTPase Sec4 (Salminen and Novick, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "7c9020ab-b8fa-41b1-a6b2-0d838231dfbe",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C67",
+      "claim": "Sec3 remains associated with the tips of small buds and the necks of large buds even after actin polymerization has been blocked by addition of Latrunculin A (LatA).",
+      "claim_type": "EXPLICIT",
+      "source": "Sec3, in contrast, remains associated with the tips of small buds and the necks of large buds even after actin polymerization has been blocked by addition of Latrunculin A (LatA) (Finger et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "23e94586-bc57-46f0-bb68-f563e20b798e",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C68",
+      "claim": "The polarized localization of GFP-Sec4 was lost after treatment with LatA.",
+      "claim_type": "EXPLICIT",
+      "source": "The polarized localization of GFP-Sec4 was lost after treatment with LatA (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "013514ef-867c-4f86-9909-68e2f1abe1e0",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C69",
+      "claim": "The localization of Sec3\u22123\u00d7GFP was largely resistant to LatA treatment in the control and sso1\u0394 sso2M5 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While the localization of Sec3\u22123\u00d7GFP was largely resistant to LatA treatment in the control and sso1\u0394 sso2M5 mutant cells, the polarization of Sec3\u22123\u00d7GFP in sso1\u0394 sso2M7 was only slightly reduced by LatA treatment (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "45f384d9-a06d-4f49-bc67-0044b88e0bee",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C70",
+      "claim": "The polarization of Sec3\u22123\u00d7GFP in sso1\u0394 sso2M7 was only slightly reduced by LatA treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "While the localization of Sec3\u22123\u00d7GFP was largely resistant to LatA treatment in the control and sso1\u0394 sso2M5 mutant cells, the polarization of Sec3\u22123\u00d7GFP in sso1\u0394 sso2M7 was only slightly reduced by LatA treatment (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "ae13d353-a723-430c-8352-765511e5c440",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C71",
+      "claim": "The NPY motifs of Sso2 do not play a major role in the recruitment of Sec3 to sites of polarized growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the NPY motifs of Sso2 do not play a major role in the recruitment of Sec3 to sites of polarized growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the LatA treatment data showing that Sec3 localization is maintained even in the M7 mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "f35844cf-c2da-4f5b-83c1-0b569ed7fb4c",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C72",
+      "claim": "The actin-independent localization of Sec3 involves its interaction with the Rho1 and Cdc42 GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, prior studies have shown that the actin-independent localization of Sec3 involves its interaction with the Rho1 and Cdc42 GTPases (Guo et al., 2001; Zhang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "56b47901-5ea0-43b9-9ba8-2aa48e6553e1",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C73",
+      "claim": "The M7 mutant of Sso2 (aa1\u2013270) completely abolished its interaction with the Sec3 PH domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ITC data reveal that the M7 mutant of Sso2 (aa1\u2013270) completely abolished its interaction with the Sec3 PH domain (Figure 8C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "9fc2c138-e33d-43bd-b3ea-f56bc3580813",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C74",
+      "claim": "Wild type Sso2 (aa1\u2013270) bound Sec3 robustly, with Kd ~ 2.7 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that WT Sso2 bound Sec3 robustly, with Kd ~ 2.7 \u00b5M (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "1dbed628-4747-4f91-b3aa-9d3c83920b38",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C75",
+      "claim": "The NPY motifs play an essential role in stabilizing the interaction between Sso2 and Sec3.",
+      "claim_type": "EXPLICIT",
+      "source": "All these demonstrate that the NPY motifs play an essential role in stabilizing the interaction between Sso2 and Sec3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the ITC, EMSA, SEC, and co-IP data showing that the M7 mutant abolishes the interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "4f898bc7-7079-4202-9aa6-e78355c4b0e3",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C76",
+      "claim": "The dual interaction interfaces between Sso2 and Sec3 are reminiscent of what has been seen in the structures of syntaxin-1 and Tlg2 in complex with their partner SM proteins Munc18 and Vps45, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual interaction interfaces between Sso2 and Sec3 are reminiscent of what has been seen in the structures of syntaxin-1 and Tlg2 in complex with their partner SM proteins Munc18 and Vps45, respectively (Figure 9A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative analysis based on structural similarities with previously published structures.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "d1008c03-2ca4-494f-971c-66dfca19fdbb",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C77",
+      "claim": "In the Munc18/syntaxin-1 and Vps45/Tlg2 complex structures, a short peptide at the N-terminus of Munc-18 and Vps45, which was named 'N-peptide', forms a short helix and binds distally to the backside of the first domain of Munc18 or Vps45, opposite to their interaction sites with the helical bundles of the SNARE proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter two complex structures, a short peptide at the N-terminus of Munc-18 and Vps45, which was named 'N-peptide', forms a short helix and binds distally to the backside of the first domain of Munc18 or Vps45, opposite to their interaction sites with the helical bundles of the SNARE proteins (Eisemann et al., 2020; Burkhardt et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "397cb88a-3f32-4753-91d3-a5227f04e8fa",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C78",
+      "claim": "The binding site for the NPY motifs of Sso2 is on the same side of the Sec3 PH domain as the direct contact with the C-terminal part of H3 of Sso2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the binding site for the NPY motifs of Sso2 is on the same side of the Sec3 PH domain as the aforementioned direct contact with the C-terminal part of H3 of Sso2 (Figure 9D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "d8dc0b7d-d865-4962-8224-8772ce5308b4",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C79",
+      "claim": "The Sec3 PH domain is a single globular domain and much smaller than Munc18 and Vps45, both of which contain three domains that are folded into a horseshoe-like conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the Sec3 PH domain is a single globular domain and much smaller than Munc18 and Vps45, both of which contain three domains that are folded into a horseshoe-like conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative structural analysis based on known structures.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "ae61a115-4854-4236-b4ea-be07e3f1c3db",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C80",
+      "claim": "The helical bundle of syntaxin-1 and Tlg2 is clamped between the two tips of the 'horseshoe' in their complexes with SM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical bundle of syntaxin-1 and Tlg2 is clamped between the two tips of the 'horseshoe'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description based on previously published structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "ed115d46-dc12-4278-a3b2-12d50d949984",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C81",
+      "claim": "In the Munc18/syntaxin-1 and Vps45/Tlg2 complex structures, the C-terminal extensions of the SNARE motifs (i.e. H3) form a short helix and insert into a hydrophobic pocket deeply inside the 'horseshoe'.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in those two complex structures, the C-terminal extensions of the SNARE motifs (i.e. H3) form a short helix and insert into a hydrophobic pocket deeply inside the 'horseshoe' (Figure 9B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural description based on previously published structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "215418d4-6bb8-4e2d-aa50-dcef55ad2ce5",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C82",
+      "claim": "The interaction interface between Sec3 and Sso2 is very small, and thus their interaction is presumably much weaker than that in the Munc18/syntaxin-1 and Vps45/Tlg2 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the interaction interface between Sec3 and Sso2 is very small, and thus their interaction is presumably much weaker than that in the Munc18/syntaxin-1 and Vps45/Tlg2 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on structural comparison.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "29476f1a-8f45-4fff-8449-804d8652dd88",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C83",
+      "claim": "Double mutation of both NPY motifs substantially impaired protein secretion as well as recycling of cell surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, our in vivo data demonstrate that simultaneous mutation of both NPY motifs substantially impaired protein secretion as well as recycling of cell surface proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Bgl2, invertase, and GFP-Snc1 data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "57b06c95-0d64-476f-b86f-29eefc216a5a",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C84",
+      "claim": "The NPY motifs play an important role in stabilizing the interaction of Sso2 with Sec3 by providing an additional binding site, which ensures effective recruitment of Sso2 to vesicle-docking sites on the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore think that the NPY motifs play an important role in stabilizing the interaction of Sso2 with Sec3 by providing an additional binding site, which ensures effective recruitment of Sso2 to vesicle-docking sites on the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the structural and functional data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "49c74c51-68f9-45ff-9cd1-c3cc16e354f6",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C85",
+      "claim": "Another possible role for the NPY motifs might be to serve as a stopper to hold the destabilized SNARE motif in place to prevent a premature release of H3 before the right time comes for it to form a binary complex with the other t-SNARE protein Sec9.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that binding of Sec3 destabilizes the linker connecting H3 to Hc and prepares H3 for its subsequent interaction with Sec9, we think that another possible role for the NPY motifs, which are packed tightly against the C-terminal tip of the SNARE motif H3 (Figure 8A and B), might be to serve as a stopper to hold the destabilized SNARE motif in place to prevent a premature release of H3 before the right time comes for it to form a binary complex with the other t-SNARE protein Sec9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the structural observation that the NPY motifs contact the C-terminal tip of H3.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "5b313c59-94be-4625-9bff-563e11c7dcb9",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C86",
+      "claim": "The N-peptide motif is ubiquitously present in all syntaxins that interact with SM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the N-peptide motif is ubiquitously present in all syntaxins that interact with SM proteins (Latham et al., 2006; McEwen and Kaplan, 2008; Johnson et al., 2009; Khvotchev et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "2be1d9d4-bd98-436f-8301-4f8978935571",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C87",
+      "claim": "The N-peptide motif serves as an initiator to recruit SM proteins to their SNARE partners to facilitate their subsequent assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "It serves as an initiator to recruit SM proteins to their SNARE partners to facilitate their subsequent assembly (Rathore et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "d555e194-1df5-4c82-8e33-600548eedf59",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C88",
+      "claim": "The NPY motifs may function like fishing hooks to search for Sec3 around the membrane-anchored Sso2.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the NPY motifs are connected to the rest of Sso2 via a long variable linker, we hypothesize that they may similarly function like fishing hooks to search for Sec3 around the membrane-anchored Sso2 (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative hypothesis based on the structural features of the NPY motifs and their linker.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "72ae2fc0-34f2-4c05-a3de-e41eaba1dd59",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C89",
+      "claim": "Once the NPY motifs find and bind to Sec3, Sso2 would be locally restrained, which would promote the binding of Sec3 to the helical bundle of Sso2.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the 'hooks' find and bind to Sec3, Sso2 would be locally restrained, which would promote the binding of Sec3 to the helical bundle of Sso2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis based on the dual-site binding model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "7158a9ab-0dac-40a6-bb07-abc3c59b08a9",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C90",
+      "claim": "Binding of Sec3 to the helical bundle would lead to the destabilization of the linker between Hc and H3 of Sso2 and thus promote the assembly of the binary complex between Sso2 and Sec9 to facilitate the final formation of the full SNARE complex with the v-SNARE Snc1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "This would in turn lead to the destabilization of the linker between Hc and H3 of Sso2 and thus promote the assembly of the binary complex between Sso2 and Sec9 to facilitate the final formation of the full SNARE complex with the v-SNARE Snc1/2, which eventually drives the fusion of secretory vesicles with the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model integrating the current findings with previous work on Sec3-mediated SNARE assembly.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "6480347a-24dd-484c-ad7e-5f4f4c0f1377",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C91",
+      "claim": "The full SNARE complex assembly eventually drives the fusion of secretory vesicles with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This would in turn lead to the destabilization of the linker between Hc and H3 of Sso2 and thus promote the assembly of the binary complex between Sso2 and Sec9 to facilitate the final formation of the full SNARE complex with the v-SNARE Snc1/2, which eventually drives the fusion of secretory vesicles with the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about SNARE-mediated membrane fusion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "7bdf9b23-c0c4-486d-bc78-57c50f873715",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C92",
+      "claim": "The crystal structure contains residues 4\u20138 of Sso2 with clear densities in the 2Fo\u2013Fc map in one complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In one complex structure, residues 4\u20138 of Sso2 show clear densities in the 2Fo\u2013Fc map (Figure 2C) in the other structure we could unambiguously trace sidechains of residues 10\u201314, but for residues 6\u20139 we could build only the backbone atoms (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the electron density quality in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "12ad1e11-3516-4645-9cd9-35e931ad21cb",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C93",
+      "claim": "In the other complex structure, sidechains of residues 10\u201314 of Sso2 could be unambiguously traced, but for residues 6\u20139 only the backbone atoms could be built.",
+      "claim_type": "EXPLICIT",
+      "source": "In one complex structure, residues 4\u20138 of Sso2 show clear densities in the 2Fo\u2013Fc map (Figure 2C) in the other structure we could unambiguously trace sidechains of residues 10\u201314, but for residues 6\u20139 we could build only the backbone atoms (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the electron density quality in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "53567d7f-1703-491c-be30-23165e80069e",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C94",
+      "claim": "Despite variations in the flanking residues of the NPY motifs, the NPY cores adopt essentially the same conformation and share similar contacts with ordered solvent molecules and neighboring residues from Sec3.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite variations in the flanking residues of these NPY motifs, the NPY cores adopt essentially the same conformation and share similar contacts with ordered solvent molecules and neighboring residues from Sec3 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "9ee692c8-daf5-498a-beb8-69344b546fa3",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C95",
+      "claim": "The 'fuzzy' part upstream of the bound NPY motif is in close contact with the C-terminal tip of the SNARE motif (i.e. H3) of Sso2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this 'fuzzy' part upstream of the bound NPY motif is in close contact with the C-terminal tip of the SNARE motif (i.e. H3) of Sso2 (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "278e33bd-c36c-44c8-99fd-b0c38a739ee5",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C97",
+      "claim": "Size exclusion chromatography shows that Sec3 could form complex with only WT but not the M7 mutant of Sso2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, our further test using SEC also shows that Sec3 could form complex with only WT but not the M7 mutant of Sso2 (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SEC data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "33aa51d4-4926-49c7-b979-2fca52b4ceb9",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C98",
+      "claim": "In contrast to the clear signal of WT Sso2 pulled down by Sec3\u22123\u00d7Flag, the pull-down band for the M7 mutant was much weaker and near the level of the negative control in which the Sec3\u22123\u00d7Flag was absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that, in contrast to the clear signal of WT Sso2 pulled down by Sec3\u22123\u00d7Flag, the pull-down band for the M7 mutant was much weaker and near the level of the negative control in which the Sec3\u22123\u00d7Flag was absent (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by co-immunoprecipitation data shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "e3a986eb-121b-4d8b-9421-76b4448bb209",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "claim_id": "C99",
+      "claim": "Coordinates and structure factors for the Sec3-Sso2 complex have been deposited in the Protein Data Bank with accession code 7Q83.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinates and structure factors for the Sec3-Sso2 complex have been deposited in the Protein Data Bank with accession code 7Q83 (https://www.rcsb.org/structure/7Q83).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a crystal structure of the Sec3 PH domain (aa75-260) in complex with nearly full-length Sso2 (aa1-270) at 2.19 \u00c5 resolution. The structure contains two copies of the complex per asymmetric unit with good refinement statistics (Rwork=19.9%, Rfree=23.9%) and the two copies are essentially identical (r.m.s.d. 0.45 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C23-C31 collectively provide comprehensive crystallographic data including resolution, space group, refinement statistics, and structural details. The refinement statistics are within acceptable ranges for protein crystallography, and the low r.m.s.d. between the two copies indicates structural consistency. The data deposition (C99) provides reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "39a18901-eeb9-4c65-84e2-807573a291e7",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The crystal structure reveals two conserved NPY (Asn-Pro-Tyr) motifs at the N-terminus of Sso2 that bind individually to a conserved hydrophobic pocket on Sec3. The NPY motifs adopt a T-shaped conformation with the tyrosine residue docking into the hydrophobic pocket, and are connected to the Sso2 core via a non-conserved variable-length linker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C32-C37 are directly supported by the crystal structure data with clear electron density maps (C92-C93) and sequence alignments showing conservation (C32). The structural description is detailed with specific residue interactions and conformations visible in the electron density. The T-shaped conformation and hydrogen bonding patterns are well-documented in the supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "44e0a31a-05df-4f08-9ec6-f750debcc050",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The two NPY motifs bind Sec3 synergistically. Wild-type double NPY motifs bind with Kd=21.1 \u00b5M, while individual motifs bind 3-4 fold weaker. Mutation of the first motif (M5) slightly reduces binding (Kd=34.9 \u00b5M), mutation of the second motif (M6) drastically reduces binding (Kd=188 \u00b5M), and double mutation (M7) abolishes binding completely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C38-C42 are supported by systematic ITC experiments showing dose-dependent binding affinities. The synergistic effect is demonstrated by the observation that double mutation has a much stronger effect than either single mutation alone, and that individual motifs bind weaker than both together. The quantitative Kd values provide strong evidence for the synergistic binding model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "f00728fc-d762-444a-a978-bb2988b9e227",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutations in the NPY motifs of Sso2 affect yeast cell growth in a synergistic manner. Single mutations in the first NPY motif (M1-M4) show no effect, complete mutation of the first motif (M5) reduces growth at 37\u00b0C, mutation of the second motif alone (M6) has no effect, but double mutation of both motifs (M7) severely impairs growth at all temperatures tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by systematic growth assays at multiple temperatures. The synergistic effect is clearly demonstrated by the observation that M7 (double mutant) shows much stronger growth defects than M5 or M6 alone. However, the manuscript does not provide statistical analysis or quantification of growth rates, relying on qualitative spot assays. Despite this limitation, the pattern is consistent across temperatures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "633cd770-3860-4844-9365-cb27962e22eb",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NPY motif mutations impair protein secretion. The M7 double mutant shows significantly increased internal accumulation of Bgl2 and substantially reduced invertase secretion compared to wild-type and single mutants (M5, M6), which show only modest defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 are supported by western blot analysis for Bgl2 and enzymatic assays for invertase secretion. The data show consistent patterns across both secretion markers with statistical analysis (p-values provided in figures). The synergistic effect of the double mutation is evident, though the manuscript could benefit from more replicates for some conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "5354048c-2ece-41e1-b10a-0d5c45eedc35",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NPY motif mutations cause accumulation of secretory vesicles. Electron microscopy shows that M5 and M7 mutants accumulate many more vesicles per cell section than wild-type or M6 controls. The vesicles are similar in size across strains and are found preferentially in buds of small budded cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by quantitative electron microscopy data with appropriate sample sizes (46-51 cells analyzed per strain). The vesicle accumulation phenotype is consistent with secretion defects and the vesicle size measurements (Figure 5F) show no significant differences, ruling out vesicle formation defects. The preferential localization to buds is consistent with normal vesicle trafficking patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "9f29cee2-02a9-495b-9583-83a6a31181f6",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NPY motif mutations affect Snc1 v-SNARE recycling. In M5 and M7 mutants, GFP-Snc1 shows increased internal patches (presumably secretory vesicles) and reduced plasma membrane localization compared to wild-type and M6 controls, indicating impaired vesicle fusion and/or Snc1 recycling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by fluorescence microscopy with quantification (Figure 6E) showing statistical significance. The interpretation that internal patches represent secretory vesicles is reasonable given the EM data and established Snc1 cycling behavior (C60, supported by citation). The shift in steady-state distribution is consistent with impaired exocytosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "6fc3a382-37cf-4e42-bf59-cd5fa731627c",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The NPY motifs of Sso2 do not play a major role in recruiting Sec3 to sites of polarized growth. Latrunculin A treatment disrupts GFP-Sec4 localization but Sec3-3\u00d7GFP localization remains largely polarized in wild-type, M5, and M7 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by fluorescence microscopy with quantification showing that Sec3 localization is maintained even in the M7 mutant after LatA treatment. This demonstrates that the NPY motifs are not required for Sec3 recruitment to the plasma membrane, which is consistent with prior work (C72) showing that Sec3 localization depends on Rho1/Cdc42 interactions. The interpretation in C71 is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "d12baeb4-2d2a-4f52-982e-f1bbfe11ab45",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The NPY motifs are essential for stabilizing the full-length Sso2-Sec3 interaction. Wild-type Sso2 (aa1-270) binds Sec3 with Kd~2.7 \u00b5M, but the M7 mutant completely abolishes binding as shown by ITC, SEC, EMSA, and co-immunoprecipitation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 and C97-C98 are supported by multiple independent biochemical methods (ITC, SEC, EMSA, co-IP) all showing loss of interaction with the M7 mutant. The convergence of evidence from different techniques strengthens the conclusion. The dramatic difference between the short peptide binding (Kd~21 \u00b5M for double NPY, C38) and full-length protein binding (Kd~2.7 \u00b5M, C74) suggests additional stabilizing interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "bde43352-27e2-46e9-9a82-5592c4c475cb",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 'fuzzy' N-terminal region upstream of the bound NPY motif contacts the C-terminal tip of the SNARE motif (H3) of Sso2 in the crystal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is supported by structural observations shown in Figure 8A-B. This structural feature provides a potential explanation for why the NPY motifs are essential for the full-length interaction (C75) and suggests a mechanism for how they might stabilize the H3 region.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "66456913-49d8-40b9-8372-c5ce8bd91691",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The dual interaction interfaces between Sso2 and Sec3 are structurally reminiscent of syntaxin-1/Munc18 and Tlg2/Vps45 complexes, but with key differences. Unlike the N-peptides in SM protein complexes that bind distally, the NPY motifs bind on the same side as the helical bundle interaction. Sec3 is also much smaller than SM proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 are supported by structural comparisons with published structures (cited). The comparative analysis is appropriate and highlights both similarities (dual binding sites) and differences (binding site locations, protein sizes). This provides useful context for understanding the Sec3/Sso2 interaction mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "b1e8bc44-3a0c-491f-836b-1db3bb2e831f",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The interaction interface between Sec3 and Sso2 is very small and presumably much weaker than Munc18/syntaxin-1 and Vps45/Tlg2 complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is speculative (uses 'presumably') and not directly tested. While the structural comparison suggests a smaller interface, the measured Kd of 2.7 \u00b5M (C74) for the full-length interaction is actually quite strong. The claim would require direct comparison of binding affinities with SM protein complexes to be properly evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "b6f4c637-f138-4839-b8a2-f4ee8ac1a97a",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The NPY motifs stabilize the Sso2-Sec3 interaction by providing an additional binding site, ensuring effective recruitment of Sso2 to vesicle-docking sites on the plasma membrane, which is important for protein secretion and cell surface protein recycling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 integrate the structural (C5-C7), biochemical (C38-C42, C73-C75), and functional data (C46, C48-C53, C64) into a coherent mechanistic model. The interpretation is well-supported by the convergent evidence from multiple experimental approaches showing that NPY motifs are required for stable binding and proper secretory function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "6331151e-8204-4fe1-a0db-4ed9c54fe7e0",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The NPY motifs may serve as a stopper to hold the destabilized SNARE motif H3 in place to prevent premature release before binary complex formation with Sec9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is explicitly speculative ('we think that another possible role') and based on structural proximity (C95) rather than functional data. While the hypothesis is reasonable given the structural observations, it requires experimental testing (e.g., H3 release kinetics, Sec9 binding assays) to be validated. This represents an interesting model for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "91751c99-9cf4-4ee4-a397-193295f6fd57",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose a 'fishing hook' model where the NPY motifs search for and bind Sec3, locally restraining Sso2 to promote Sec3 binding to the helical bundle, leading to linker destabilization and promoting binary complex assembly with Sec9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C90 present a mechanistic model that is explicitly hypothetical ('we hypothesize'). While the model is consistent with the structural features (flexible linker connecting NPY motifs to the core) and integrates prior work on Sec3-mediated SNARE assembly (C21-C22), it lacks direct experimental validation. The model makes testable predictions but requires kinetic studies and additional functional experiments to be confirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "848918d7-09bb-43a8-a343-5dcf14d59aa0",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims about exocytosis, SNARE proteins, membrane trafficking, and regulatory factors in yeast and neuronal systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C17, C19-C20, C54-C55, C60-C61, C65-C67, C72, C86-C87, and C91 represent established knowledge in the field, supported by appropriate citations to prior work. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "e46741c4-5e2c-42c4-8ba1-9b480a380fa7",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work from the authors showed that Sec3 promotes SNARE assembly by binding to Sso2 and inducing conformational changes that accelerate binary complex formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18, C21, and C22 are supported by citations to the authors' previous work (Yue et al., 2017). These establish the foundation for the current study by showing that Sec3 interacts with Sso2 and promotes SNARE assembly, but the mechanism of Sso2 recruitment remained unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    },
+    {
+      "id": "882cf08c-0c79-4c59-859b-1982f4b1f9dd",
+      "content_id": "a116d7a0-b9c8-492f-9ff7-eba7772a2537",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The structural data has been deposited in the Protein Data Bank with accession code 7Q83.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is a factual statement about data deposition that can be verified. Data deposition is essential for reproducibility and is a standard requirement for structural biology publications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:07:32.992763Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f5a0632-2ebf-49a9-be9c-3547049190be",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "b0a76427-5039-40bd-a9f6-05a4e0b825c6",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "ff8ae809-4569-4b26-bd09-6337a55adeb2",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "3918e405-344b-4822-ac8f-008e5eddecbe",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "6143730d-49bd-4147-b646-9d6f7b6eb494",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "12606a21-e073-41ee-bf6f-e9866efd99cd",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "83e6a32d-ecb8-413d-ac8e-66de37d58987",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "f692d281-f732-44df-a970-fc8c6946e2b1",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "e4631d58-9de6-4c2e-82b9-66b1bb14cb94",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "1b1e5352-86a8-4568-9526-5f578bd453e2",
+      "result_id": "4b04e0ce-7a72-490d-bcb4-0b8c89f4d595"
+    },
+    {
+      "claim_id": "076832f8-8dc8-4669-b010-c2ef3fff4cc8",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "60f6bb9c-2e1a-4f9c-a980-e72ad9351ca3",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "96c09fa6-9fa1-4a90-84fb-efdb2ddcf2ff",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "74a158f6-61d4-49f6-bc9b-ae7eeb5fd8cc",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "3c4e444f-0d44-4a50-9158-ae2c297c5093",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "33512141-f2c1-41aa-8484-75f9db9d868a",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "84d54521-7101-4b8c-9f50-15cbf5ec37bf",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "7bdf9b23-c0c4-486d-bc78-57c50f873715",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "12ad1e11-3516-4645-9cd9-35e931ad21cb",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "53567d7f-1703-491c-be30-23165e80069e",
+      "result_id": "39a18901-eeb9-4c65-84e2-807573a291e7"
+    },
+    {
+      "claim_id": "6fa5fa74-1527-4e51-84d5-79cc62765ea8",
+      "result_id": "44e0a31a-05df-4f08-9ec6-f750debcc050"
+    },
+    {
+      "claim_id": "f48bed91-0fc5-42da-8149-bbfe72e25f05",
+      "result_id": "44e0a31a-05df-4f08-9ec6-f750debcc050"
+    },
+    {
+      "claim_id": "b03bc7c5-b00d-49d1-af1d-83b85c185963",
+      "result_id": "44e0a31a-05df-4f08-9ec6-f750debcc050"
+    },
+    {
+      "claim_id": "e01d4f67-d2dc-4362-9eba-f5db354740e6",
+      "result_id": "44e0a31a-05df-4f08-9ec6-f750debcc050"
+    },
+    {
+      "claim_id": "ee2e8175-77da-47b3-93ff-50ddaef18115",
+      "result_id": "44e0a31a-05df-4f08-9ec6-f750debcc050"
+    },
+    {
+      "claim_id": "c56c859f-02a5-4503-b7ed-cfca4649a6f4",
+      "result_id": "44e0a31a-05df-4f08-9ec6-f750debcc050"
+    },
+    {
+      "claim_id": "aeae7153-0ab0-4eb2-a013-175b0df61a8d",
+      "result_id": "f00728fc-d762-444a-a978-bb2988b9e227"
+    },
+    {
+      "claim_id": "bc563a1b-247f-41aa-ab1a-5b98f57c1075",
+      "result_id": "f00728fc-d762-444a-a978-bb2988b9e227"
+    },
+    {
+      "claim_id": "a1b5f545-820b-4522-aa83-247c22c6034f",
+      "result_id": "f00728fc-d762-444a-a978-bb2988b9e227"
+    },
+    {
+      "claim_id": "e334a3b1-924f-4fce-8539-10995ab94405",
+      "result_id": "f00728fc-d762-444a-a978-bb2988b9e227"
+    },
+    {
+      "claim_id": "9d99dd90-ed8c-4c88-b495-eff1da67f7f4",
+      "result_id": "f00728fc-d762-444a-a978-bb2988b9e227"
+    },
+    {
+      "claim_id": "dfbbec14-2367-436b-ae8b-4aff155d344d",
+      "result_id": "633cd770-3860-4844-9365-cb27962e22eb"
+    },
+    {
+      "claim_id": "e9165221-312a-4ed1-8422-4d32cefbb405",
+      "result_id": "633cd770-3860-4844-9365-cb27962e22eb"
+    },
+    {
+      "claim_id": "38060585-4e61-449e-9d9d-5f312d5a0985",
+      "result_id": "633cd770-3860-4844-9365-cb27962e22eb"
+    },
+    {
+      "claim_id": "363ec90a-a13c-46c3-8816-5a878f85972b",
+      "result_id": "633cd770-3860-4844-9365-cb27962e22eb"
+    },
+    {
+      "claim_id": "f6e9d49c-5a73-4e78-a1f6-d2f1b5be364f",
+      "result_id": "633cd770-3860-4844-9365-cb27962e22eb"
+    },
+    {
+      "claim_id": "a28c6350-25b4-45e4-811a-cb32520d6a95",
+      "result_id": "633cd770-3860-4844-9365-cb27962e22eb"
+    },
+    {
+      "claim_id": "a713da8b-dd52-4092-b9cd-16771f5a0d99",
+      "result_id": "5354048c-2ece-41e1-b10a-0d5c45eedc35"
+    },
+    {
+      "claim_id": "5535f5a8-78f4-4b60-a47c-f03e279bf812",
+      "result_id": "5354048c-2ece-41e1-b10a-0d5c45eedc35"
+    },
+    {
+      "claim_id": "95fd4e67-ddff-4131-820a-a4533b1ec67c",
+      "result_id": "5354048c-2ece-41e1-b10a-0d5c45eedc35"
+    },
+    {
+      "claim_id": "3bb69a3c-e999-4ce7-b71a-2d44c776b7b8",
+      "result_id": "5354048c-2ece-41e1-b10a-0d5c45eedc35"
+    },
+    {
+      "claim_id": "5257cd4f-6710-4b6c-8b50-90cca5fc221d",
+      "result_id": "9f29cee2-02a9-495b-9583-83a6a31181f6"
+    },
+    {
+      "claim_id": "ad8cfb91-bcbd-4f2f-801c-cf787ac4a2d4",
+      "result_id": "9f29cee2-02a9-495b-9583-83a6a31181f6"
+    },
+    {
+      "claim_id": "c1c41795-643f-4aa4-955d-2b151b5ebd0f",
+      "result_id": "9f29cee2-02a9-495b-9583-83a6a31181f6"
+    },
+    {
+      "claim_id": "03ee7ad0-7f9b-475f-b775-b99ab6967894",
+      "result_id": "9f29cee2-02a9-495b-9583-83a6a31181f6"
+    },
+    {
+      "claim_id": "30659859-c614-4c74-85e2-7bfdbb5721b6",
+      "result_id": "9f29cee2-02a9-495b-9583-83a6a31181f6"
+    },
+    {
+      "claim_id": "23e94586-bc57-46f0-bb68-f563e20b798e",
+      "result_id": "6fc3a382-37cf-4e42-bf59-cd5fa731627c"
+    },
+    {
+      "claim_id": "013514ef-867c-4f86-9909-68e2f1abe1e0",
+      "result_id": "6fc3a382-37cf-4e42-bf59-cd5fa731627c"
+    },
+    {
+      "claim_id": "45f384d9-a06d-4f49-bc67-0044b88e0bee",
+      "result_id": "6fc3a382-37cf-4e42-bf59-cd5fa731627c"
+    },
+    {
+      "claim_id": "ae13d353-a723-430c-8352-765511e5c440",
+      "result_id": "6fc3a382-37cf-4e42-bf59-cd5fa731627c"
+    },
+    {
+      "claim_id": "56b47901-5ea0-43b9-9ba8-2aa48e6553e1",
+      "result_id": "d12baeb4-2d2a-4f52-982e-f1bbfe11ab45"
+    },
+    {
+      "claim_id": "9fc2c138-e33d-43bd-b3ea-f56bc3580813",
+      "result_id": "d12baeb4-2d2a-4f52-982e-f1bbfe11ab45"
+    },
+    {
+      "claim_id": "1dbed628-4747-4f91-b3aa-9d3c83920b38",
+      "result_id": "d12baeb4-2d2a-4f52-982e-f1bbfe11ab45"
+    },
+    {
+      "claim_id": "278e33bd-c36c-44c8-99fd-b0c38a739ee5",
+      "result_id": "d12baeb4-2d2a-4f52-982e-f1bbfe11ab45"
+    },
+    {
+      "claim_id": "33aa51d4-4926-49c7-b979-2fca52b4ceb9",
+      "result_id": "d12baeb4-2d2a-4f52-982e-f1bbfe11ab45"
+    },
+    {
+      "claim_id": "9ee692c8-daf5-498a-beb8-69344b546fa3",
+      "result_id": "bde43352-27e2-46e9-9a82-5592c4c475cb"
+    },
+    {
+      "claim_id": "4f898bc7-7079-4202-9aa6-e78355c4b0e3",
+      "result_id": "66456913-49d8-40b9-8372-c5ce8bd91691"
+    },
+    {
+      "claim_id": "d1008c03-2ca4-494f-971c-66dfca19fdbb",
+      "result_id": "66456913-49d8-40b9-8372-c5ce8bd91691"
+    },
+    {
+      "claim_id": "397cb88a-3f32-4753-91d3-a5227f04e8fa",
+      "result_id": "66456913-49d8-40b9-8372-c5ce8bd91691"
+    },
+    {
+      "claim_id": "d8dc0b7d-d865-4962-8224-8772ce5308b4",
+      "result_id": "66456913-49d8-40b9-8372-c5ce8bd91691"
+    },
+    {
+      "claim_id": "ae61a115-4854-4236-b4ea-be07e3f1c3db",
+      "result_id": "66456913-49d8-40b9-8372-c5ce8bd91691"
+    },
+    {
+      "claim_id": "ed115d46-dc12-4278-a3b2-12d50d949984",
+      "result_id": "66456913-49d8-40b9-8372-c5ce8bd91691"
+    },
+    {
+      "claim_id": "215418d4-6bb8-4e2d-aa50-dcef55ad2ce5",
+      "result_id": "b1e8bc44-3a0c-491f-836b-1db3bb2e831f"
+    },
+    {
+      "claim_id": "29476f1a-8f45-4fff-8449-804d8652dd88",
+      "result_id": "b6f4c637-f138-4839-b8a2-f4ee8ac1a97a"
+    },
+    {
+      "claim_id": "57b06c95-0d64-476f-b86f-29eefc216a5a",
+      "result_id": "b6f4c637-f138-4839-b8a2-f4ee8ac1a97a"
+    },
+    {
+      "claim_id": "49c74c51-68f9-45ff-9cd1-c3cc16e354f6",
+      "result_id": "6331151e-8204-4fe1-a0db-4ed9c54fe7e0"
+    },
+    {
+      "claim_id": "d555e194-1df5-4c82-8e33-600548eedf59",
+      "result_id": "91751c99-9cf4-4ee4-a397-193295f6fd57"
+    },
+    {
+      "claim_id": "72ae2fc0-34f2-4c05-a3de-e41eaba1dd59",
+      "result_id": "91751c99-9cf4-4ee4-a397-193295f6fd57"
+    },
+    {
+      "claim_id": "7158a9ab-0dac-40a6-bb07-abc3c59b08a9",
+      "result_id": "91751c99-9cf4-4ee4-a397-193295f6fd57"
+    },
+    {
+      "claim_id": "e53b43f8-1fc9-430b-9d5e-43091c63be5d",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "6f70578f-d474-4b67-af49-b526a9fe97af",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "2a7136ed-1abd-4f1f-a023-55694ab809d1",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "45300558-a5d3-4d2e-91be-348142b762c9",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "3bf146d8-50d7-4097-90a6-3e533c694634",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "88c6256a-9e3a-434f-bc73-22a69c01cf81",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "a58b438b-0de4-4bc6-8c0e-738bf0467ff6",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "fa519560-b1ce-45d6-bbeb-7de82cb8b65f",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "530f6140-33cb-44b3-a14a-5463658a0eb6",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "300914f6-4125-4f18-860c-d932ca73042b",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "093fc637-0a6a-49e4-8f0e-d0dbdced537a",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "955ba088-7b38-4dec-8e25-475c0dbad2a3",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "d7cd930a-ab68-4aa9-b5d8-a8698d34ce63",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "a6aff2ad-d7f8-4140-b4d6-835f8d8c3dac",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "031479d3-3a09-4b0c-97c7-468057363744",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "1ad8c820-e97f-4803-b6c9-cc1e83929394",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "5257cd4f-6710-4b6c-8b50-90cca5fc221d",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "ad8cfb91-bcbd-4f2f-801c-cf787ac4a2d4",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "f8578b2a-9a20-4005-8907-0d3cb4facfa9",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "8dac1011-575d-4eaa-a523-3780f4971c8c",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "7c9020ab-b8fa-41b1-a6b2-0d838231dfbe",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "f35844cf-c2da-4f5b-83c1-0b569ed7fb4c",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "5b313c59-94be-4625-9bff-563e11c7dcb9",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "2be1d9d4-bd98-436f-8301-4f8978935571",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "6480347a-24dd-484c-ad7e-5f4f4c0f1377",
+      "result_id": "848918d7-09bb-43a8-a343-5dcf14d59aa0"
+    },
+    {
+      "claim_id": "f46cb3d2-4676-44d2-a1a7-f1f4dcb97790",
+      "result_id": "e46741c4-5e2c-42c4-8ba1-9b480a380fa7"
+    },
+    {
+      "claim_id": "54cf8248-30b8-4f01-a22c-3c7595dce224",
+      "result_id": "e46741c4-5e2c-42c4-8ba1-9b480a380fa7"
+    },
+    {
+      "claim_id": "d0656d97-b147-450d-982c-ea60d393bc92",
+      "result_id": "e46741c4-5e2c-42c4-8ba1-9b480a380fa7"
+    },
+    {
+      "claim_id": "b1df1f28-bad0-4881-949f-137973138daa",
+      "result_id": "e46741c4-5e2c-42c4-8ba1-9b480a380fa7"
+    },
+    {
+      "claim_id": "e3a986eb-121b-4d8b-9421-76b4448bb209",
+      "result_id": "882cf08c-0c79-4c59-859b-1982f4b1f9dd"
+    }
+  ],
+  "comparisons": []
+}

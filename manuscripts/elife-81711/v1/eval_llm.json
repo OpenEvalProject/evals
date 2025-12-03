@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The COVID-19 pandemic caused substantial disruptions to cervical cancer screening in the United States, with initial declines of 67% in screening volumes, gradual recovery to 30% below baseline by mid-2020, and persistent 10% reductions two years into the pandemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are all supported by appropriate citations to peer-reviewed literature and provide consistent evidence of screening disruptions. The temporal progression from severe initial disruption to partial recovery is well-documented and forms important context for the modeling study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Cervical cancer risk depends on time since last screen, and despite US guidelines recommending 3-yearly cytology or 5-yearly HPV testing, substantial heterogeneity exists in screening behavior with 20% of women underscreened and 66% of insured women overscreened, with underscreening correlated with sociodemographic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 establish the epidemiological context and are all supported by appropriate citations. These claims provide essential background on screening heterogeneity that motivates the differential impact analysis, though the 20% underscreening figure (C7) comes from a single registry prior to widespread HPV screening and may have limited generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "In the UK, 30% of survey respondents reported being less likely to attend cervical screening post-pandemic, though actual decreases were smaller than surveyed intentions, with previous nonparticipation being the strongest predictor of low future participation intentions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by appropriate citations and demonstrate international context for screening disruptions. The discrepancy between stated intentions and actual behavior (C11) is an important finding that suggests survey data may overestimate behavioral impacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Decreases in cervical cancer diagnoses in 2020 have been empirically confirmed, and previous modeling studies projected that temporary screening disruptions would cause temporal shifts in cancer detection with small net increases in burden, which could be mitigated by prioritizing high-risk women and had minor effects for women with previous negative HPV results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 appropriately cite prior work and establish the modeling literature context. These claims summarize previous findings that motivate the current analysis, though C17 lacks a specific citation and appears to be an inference from the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "During a 1-year screening delay, underscreened women whose last cytology screen was 5 years prior faced 38-170% higher relative increases in symptomatically detected cancers compared to guidelines-compliant women, with even greater disparities (3.1-7.0 times higher) for women whose last screen was 10 years prior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 present the short-term modeling results showing disproportionate impacts on underscreened women. The three models show consistent directional findings despite quantitative variation (38-170% for 5-year underscreeners, 3.1-7.0\u00d7 for 10-year underscreeners), which strengthens confidence in the qualitative conclusion. The wide range across models reflects structural differences but all support the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "For HPV-based screening, women screening every 10 years faced 2.2-3.9 times higher excess cancer burden compared to guidelines-compliant 5-yearly screeners, with this relative excess remaining consistent across delay periods, though absolute accumulated cancer rates increased with delay length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 extend the short-term findings to HPV-based screening and show consistency across delay periods. The models show reasonable agreement (2.2-3.9\u00d7 range), and C27 is supported by referenced appendix data. These findings demonstrate that screening frequency effects persist across different screening modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Temporary screening disruptions of 1-5 years had smaller effects on lifetime cervical cancer risk than screening frequency and modality, with women screened 3-yearly with cytology having lower lifetime risk even with a 5-year disruption (0.21-0.32%) than women screened 5-yearly without disruption (0.22-0.42%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 present the key long-term finding that screening frequency dominates over temporary disruptions. The within-model comparisons across all three models consistently show this pattern, providing strong support. This is a central conclusion of the paper and is well-supported by the modeling data presented in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Under an extreme 5-year delay scenario, 3-yearly cytology screening maintained nearly all screening benefits, with cancer prevention decreasing only from 72.1-86.5% to 69.1-85.1% compared to no screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 quantify the preservation of screening benefits despite extreme disruptions. All three models show small decreases (1.4-3.0 percentage points) in cancer prevention, supporting the conclusion that screening maintains most benefits. This is supported by referenced appendix data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Women screened with primary HPV testing after age 30 face lower overall lifetime cervical cancer risk than those screened with cytology and generally experience smaller impacts from COVID-19 disruptions relative to screening frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 compare HPV-based versus cytology-based screening outcomes and are supported by model projections in Figure 3 and appendix tables. The finding that HPV screening provides better protection and greater resilience to disruptions is consistent across models and represents an important clinical implication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Cancer risks increased disproportionately with longer time since last screen at disruption, with annual/3-yearly screeners facing only nominal excess risks from 1-year delays, while a 5-year delay increased lifetime cancer cases by 20-31 per 100,000 for 3-yearly screeners versus 44-66 per 100,000 for 10-yearly screeners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 detail the differential lifetime impacts by screening history and are supported by model projections in Figure 4 and Table 1. The consistent pattern across all three models of disproportionate impacts on underscreeners strengthens the conclusion. The absolute numbers provide clinically meaningful context for the relative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Excess cancer risks for a given delay period were generally lower for HPV-based screeners than cytology-based screeners, except for very infrequent (10-yearly) screening where risks were similar (44-66 per 100,000 for cytology vs 40-58 per 100,000 for HPV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 compare screening modalities and are supported by Figure 4 and model projections. Two of three models (Harvard and Policy1-Cervix) show this pattern consistently, while MISCAN-Cervix shows different behavior explained by model structure. The convergence at very infrequent screening is an interesting finding supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Women overdue for screening face increased risk of symptomatic cancer during delays compared to guidelines-compliant women, while guidelines-compliant women can endure 1-year disruptions under both screening modalities, with HPV-screened women showing greater resilience to longer delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 synthesize the main findings and are directly supported by the modeling results presented throughout. These represent the key clinical conclusions of the study and are consistently supported across all three independent models, providing strong evidence for the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "HPV-based screening provides greater lifetime risk reduction than cytology-based screening, with differential utilization by healthcare system type, and disruptions to HPV programs have different implications than cytology programs due to HPV screening's higher sensitivity resulting in lower cancer risk at disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 discuss HPV versus cytology screening differences. C50-C52 are supported by model results and appropriate citations. C53 is established knowledge about test characteristics. C54 is a logical inference from C53 that is reasonable but represents interpretation rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The MISCAN-Cervix model has the shortest preclinical dwell time from HPV acquisition to cancer among the three models and assumes some precancerous lesions are consistently missed by cytology screening due to location deeper in the cervical canal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe model structural differences that explain variation in results. C55 is supported by citation to model description paper. C56 describes a model assumption that is stated clearly. These claims provide important context for interpreting model differences and are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The relative excess rates of symptomatically detected cancer during delays were higher for women overdue for screening compared to guidelines-compliant women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 summarizes a key finding that is directly supported by the model projections presented in Figures 1-2 and discussed throughout the results. This represents a core conclusion of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Cervical screening was paused for 2-4 months in the UK, Ireland, New Zealand, and the Netherlands, and the findings that disruptions disproportionately impact underscreened women who face higher risk than guidelines-compliant screeners are likely generalizable to these settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 discuss generalizability. C58 is supported by appropriate citations documenting international disruptions. C59-C60 represent reasonable extrapolation of the core findings to other settings, though actual generalizability would depend on screening program characteristics and population behavior in those countries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HPV-based screening enables self-collection at home, which is available to all women in the Netherlands, parts of Sweden, and Australia, and preliminary findings suggest this facilitated rapid screening reintroduction in the Netherlands during COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 discuss self-sampling as a mitigation strategy. C61 is established knowledge about HPV testing capabilities. C62 describes screening program features. C63 cites preliminary findings about COVID-19 response, though the evidence is described as preliminary and may require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Delays in diagnostic follow-up or precancer treatment account for most potential harm from COVID-induced screening disruptions, and COVID-related delays have been projected to upstage cancer detection for cervical and other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 acknowledge study limitations and cite prior work on diagnostic delays and cancer upstaging. These are appropriately cited and provide important context for interpreting the current study's scope, which focused only on primary screening delays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The majority of the benefit of cytology and HPV co-testing has been attributed to the high negative predictive value of HPV testing alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 justifies not explicitly modeling co-testing by citing established literature on the source of co-testing benefits. This is appropriately cited and provides reasonable justification for the modeling approach, though the generalizability claim could be stronger with additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Race and ethnicity, poverty income level, education, and insurance status are associated with screening behavior, which is captured in the simulation models even though these factors are not explicitly simulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 acknowledges that while models don't explicitly simulate sociodemographic factors, they capture their effects through screening behavior patterns. This is reasonable since the models simulate different screening frequencies that correlate with these factors, though the claim could be stronger if the models were explicitly calibrated to sociodemographic-stratified data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The main driver of lifetime cervical cancer risk is screening frequency and modality rather than temporary disruptions, but disruptions do not equally impact women with different screening histories or behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 state the main conclusions of the study and are well-supported by the comprehensive modeling results presented throughout. All three independent models consistently support these conclusions, providing strong evidence. This represents the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study used three CISNET-Cervical microsimulation models to project lifetime cervical cancer risk for three birth cohorts (born 1965, 1975, 1985) under USPSTF-recommended screening guidelines (3-yearly cytology or 5-yearly HPV testing from age 30) with management following Kaiser Permanente Northern California compliance patterns (79% colposcopy, 73% treatment compliance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe the methodological approach and are appropriately documented with citations. The use of three independent models is a strength. The compliance patterns from Kaiser Permanente are specific and well-cited, though generalizability to other US populations may vary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The three CISNET-Cervical models reflect HPV-induced cervical cancer natural history but differ structurally in health states, HPV genotype categorizations, cancer types, cycle length, and parameterization, with standardized US inputs for hysterectomy, mortality, and survival, and were calibrated to achieve good fit to US empirical targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe model characteristics and validation. These are well-documented with appropriate citations to prior model description and calibration papers. The use of multiple structurally different models that achieve good calibration is a methodological strength that increases confidence in findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The models assumed 100% temporary loss of primary screening during delay periods with immediate resumption afterward at pre-pandemic frequency, no routine screening after age 65, and that delays shifted future screening timing and in some cases reduced lifetime screens or changed age at last screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe key modeling assumptions. These are clearly stated and reasonable for the analysis objectives. The acknowledgment that delays affect not just the immediate missed screen but also future screening patterns (C82-C83) is important for interpretation. However, the assumption of immediate full resumption (C80) may be optimistic given real-world recovery patterns.",
+    "result_type": "MINOR"
+  }
+]

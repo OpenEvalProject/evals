@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A one-dimensional CNN trained on manually annotated SWR events from head-fixed mice (1794 events, 2 sessions, 2 mice) outperforms spectral filter methods in detecting SWRs. The CNN exhibits better offline performance (P-R curves), greater robustness to threshold variation, better online performance (p=0.0047 per session), and slightly better anticipation of SWR events (CNN12: -7.01\u00b12.05 ms vs filter: -4.66\u00b12.87 ms, p=0.048). The CNN generalizes across strata, brain locations, preparations (freely moving), and species (rats) without retraining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C26, C66-C69 provide converging evidence from multiple validation approaches (offline, online, cross-species) with appropriate statistical tests. The training dataset is clearly described (C19, C20), performance metrics are quantified with statistics (C21-C26), and generalization is demonstrated empirically (C67-C68). The comparative advantage over spectral methods is well-supported by data in Figures 2 and 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "When using optimized thresholds per session, the CNN performs comparably to an optimized Butterworth filter (CNN12: F1=0.68\u00b10.06; CNN32: F1=0.63\u00b10.05; filter: F1=0.65\u00b10.11) and similar to another optimized filter-based algorithm (F1=0.65\u00b10.11), but significantly outperforms RippleNET (F1=0.31\u00b10.22; p<0.00001). The filter shows larger variability across sessions than the CNN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by statistical comparisons shown in Figure 3A with appropriate tests (one-way ANOVA). However, the comparison is somewhat limited because it requires knowing the ground truth to optimize thresholds, which is not realistic for prospective use. The variability observation (C28) is qualitative but visible in the data. The RippleNET comparison includes proper citation and statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C87"
+    ],
+    "result": "The CNN detects SWR events beyond individual expert annotations. When tested against consolidated ground truth from two experts, CNN performance improves significantly (p=0.026 for CNN12, p=0.013 for CNN32), while the filter performs worse (p=0.033). In an external dataset from freely moving rats, many CNN 'false positives' (2403 events) were actually unannotated SWRs, increasing precision from P=0.42\u00b10.18 to P=0.77\u00b10.08 (CNN32) and P=0.86\u00b10.08 (CNN12) after manual validation. Expert-to-expert agreement scored F1=0.70\u00b10.13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38, C87 demonstrate that detection limits depend on expert criteria through multiple lines of evidence: inter-expert comparison (C31-C33), external dataset validation (C34-C36), and manual reclassification of false positives (C36). The statistical tests are appropriate (one-way ANOVA, paired t-tests), and the finding that CNN improves with consolidated ground truth while the filter does not (C31-C32) is particularly compelling. The external validation on rats (C34-C36) provides strong evidence for generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C5"
+    ],
+    "result": "The CNN relies on feature-based specialization across layers. Early layer kernels (L1K1, L1K2) specialize in detecting rhythmic and periodic patterns, while later layers (L19K18) focus on temporal patterns. L1K1 activates maximally at ripple peaks, while L1K2 and L19K18 activate at SWR onset, enabling anticipation. Pattern-matching analysis shows maximal values for True Positives and minimal for True Negatives (F(3)=1517, p<0.0001), with False Positives showing higher values than False Negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44, C48, C5 are supported by saliency map analysis (Figure 4B) and pattern-matching quantification with appropriate statistics. The interpretability method is adapted from established CNN visualization techniques (cited). The finding that different kernels specialize in different features (spatial vs temporal, peak vs onset) is demonstrated through multiple examples and quantitative analysis. This provides mechanistic insight into how the CNN achieves its performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C88"
+    ],
+    "result": "Manual examination of CNN false positives reveals that ~20% can be reclassified into physiologically relevant categories: about one-third are sharp waves without ripples, with others being ripples without sharp waves, population firing, and artifacts. The filter shows a greater tendency to detect artifacts at the expense of physiologically relevant events. These ambiguous predictions may identify different forms of population firing and oscillatory activities associated with sharp waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C49, C88 are supported by manual categorization of false positives shown in Figure 4F. The finding that CNN false positives include physiologically relevant events (sharp waves without ripples, ripples without sharp waves, population firing) while filter false positives are predominantly artifacts is important for understanding the biological relevance of CNN detections. However, the manual categorization introduces subjectivity, and the ~20% reclassification rate suggests most false positives remain unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70"
+    ],
+    "result": "Kernel weight visualization and UMAP analysis reveal how the CNN operates through feature-based detection. L1K1 weights LFP channels along the somatodendritic axis (spatial scale), while L1K2 operates in the temporal scale. UMAP successfully segregates feature maps by detection probability, with True Positives and True Negatives showing striking segregation. False Negatives locate in intermediate regions (suggesting threshold effects), while False Positives scatter throughout, with validated physiologically relevant false positives distributing over the ground truth region and artifacts falling apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57, C70 are supported by kernel weight visualization (Figure 6A) and UMAP analysis (Figure 6C-E). The UMAP segregation of True Positives/Negatives demonstrates that the CNN learns meaningful feature representations. The distribution of validated false positives in UMAP space (C56) provides additional evidence that these represent physiologically relevant events rather than noise. The interpretability analysis is thorough and uses appropriate dimensionality reduction techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C77"
+    ],
+    "result": "Using Neuropixels recordings, the CNN detects SWR events across hippocampal layers. While detection is optimal at CA1 stratum pyramidale (SP), many events are identified from radiatum (SR) and lacunosum moleculare (SLM) layers. Detection is better at dorsal than ventral hippocampus except for SR and SLM. At SR and SLM, only a subset of SWRs are detected (low recall) but with high precision (>80%). Both the Butterworth filter and RippleNET fail to identify SWR signatures beyond dorsal SP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C77 are supported by Neuropixels data (Figure 7C-D, supplements). The finding that the CNN can detect SWRs at SR and SLM layers with high precision is novel and important. The failure of both filter and RippleNET to detect these events (C62) strengthens the claim that this is a unique capability of the CNN. However, the low recall at these layers (C61) means many events are missed, limiting the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C82"
+    ],
+    "result": "SWR events detected at different hippocampal layers show distinct physiological signatures. Events detected at SLM and SR show larger current sinks and sources compared to those at SO. Pyramidal cells exhibit striking reorganization of firing rate and timing during SWRs detected at SO, SR, and SLM, supporting activation of different hippocampal ensembles. Larger current sources at SLM support contribution of GABAergic cells at the SR-SLM border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C82 are supported by CSD analysis (Figure 7G) and single-unit analysis (Figure 7H) from Neuropixels recordings. The finding that SWRs detected at different layers have different physiological signatures (CSD patterns, firing rates, timing) provides strong evidence that they reflect activation of different circuits. The inference about GABAergic contribution (C82) is reasonable given the CSD data and prior literature, though it remains indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims about SWRs and brain signal analysis establish the scientific context. SWRs are highly synchronous events reflecting firing and synaptic sequences from cognitively relevant ensembles. They result from cell-type-specific microcircuits and can replay or preplay representations. EEG/LFP analysis typically relies on spectral methods, though temporal features (slope, polarity, latency) are equally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C12 are background statements supported by appropriate citations to established literature. These provide necessary context for understanding the motivation and significance of the study. The claims accurately represent the current understanding of SWRs and brain signal analysis methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Current SWR detection methods have limitations. While spectral filters enable real-time interventions, they are not optimal for disambiguating variability, especially during online operation. With ultra-dense recordings, automatic identification is pressing. Current solutions require improvement to capture SWR complexity across hippocampal layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 establish the motivation for developing a new detection method. C13 is supported by citations to prior work. C14 is a critical assessment supported by inference from the literature and the authors' experimental results. C15-C16 are reasonable inferences about the need for improved methods given technological advances. These claims appropriately frame the problem the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The CNN architecture and implementation details are described. The network was inspired by YOLO, operates on 8-channel LFP inputs downsampled to 1250 Hz, consists of 7 blocks (21 layers) plus a dense output layer, and provides SWR probability at 32 ms or 12.8 ms resolution. The architecture was optimized through parameter searches, with CNN32 showing the lowest and most stable learning curve. Online detection was implemented via a TensorFlow plugin for Open Ephys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C109 provide methodological details about the CNN architecture, training, and implementation. These are supported by figures (1C, 1\u2014figure supplement 1) and appropriate technical descriptions. The parameter optimization process is documented (C104-C107), and code/software availability is provided (C109). These details are essential for reproducibility and represent sound methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C81",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "Discussion claims about brain oscillations and SWR mechanisms provide broader context. Gamma oscillations involve complex interactions between synaptic potentials and phase-locked firing. Spectral definitions face challenges from non-stationary brain activity and ambiguous frequency band demarcation. Recent work suggests entorhinal inputs modulate SWR dynamics, CA3-CA2 inputs affect memory consolidation, and various GABAergic cell types and input pathways contribute to SWR diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76, C79, C81, C89-C90, C92-C93 are discussion points supported by appropriate citations to prior literature. These contextualize the findings within broader understanding of brain oscillations and SWR mechanisms. The claims accurately represent current knowledge and help interpret the study's findings about SWR diversity and detection challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C91",
+      "C94",
+      "C95"
+    ],
+    "result": "Interpretive claims about SWR mechanisms and implications suggest that: (1) CSD patterns indicate weighted interaction between input pathways across behavioral states; (2) detection at different layers indicates roles for dendritic potentials; (3) dorsal SWR dynamics involve complex septotemporal interactions; (4) the CNN identifies different SWR types suggesting major roles for input pathways; (5) dorsal/ventral segregation suggests brain-wide subcircuits inherit different replay dynamics; (6) CNN detection permits unbiased categorization; (7) spectral methods may miss microcircuit variability; (8) gold-standard methods fail to reflect necessary statistical variance; (9) feature-based methods can change the approach to studying SWR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C80, C83-C86, C91, C94-C95 are interpretive or speculative statements that extend beyond the direct experimental evidence. While they are reasonable inferences supported by the data and prior literature (C78, C80, C83 include citations), they involve speculation about mechanisms (C78, C80, C85, C91) or future impact (C95). Some claims (C84, C86, C94) are better supported by the experimental results but still represent interpretations rather than direct observations. These require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "CNNs have extraordinary capability for real-time recognition, which is exploited for SWR identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is a general statement about CNN capabilities supported by citation to prior work (Bai et al., 2018). This provides appropriate background for the methodological choice. The real-time capability is demonstrated in the online detection experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "All protocols and procedures were performed according to Spanish and European legislation, and experiments were approved by the Ethics Committee of the Instituto Cajal and the Spanish Research Council.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are statements about ethical compliance and approval. These are standard declarations that are assumed to be accurate. They are important for research ethics but do not constitute scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "When applied without retraining to new datasets and ultra-dense hippocampus-wide recordings, the CNN discovered physiologically relevant processes associated with SWR emergence, prompting novel classification criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is a high-level summary supported by the Neuropixels experiments (C58-C65, C77) and external dataset validation (C34-C36). The discovery of SWRs at different hippocampal layers with distinct physiological signatures represents a novel finding enabled by the CNN's capabilities. The claim about 'novel classification criteria' is supported by the identification of different SWR types (C45-C47, C88) and layer-specific detection (C58-C65).",
+    "result_type": "MAJOR"
+  }
+]

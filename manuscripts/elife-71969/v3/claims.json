@@ -1,0 +1,1431 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Simple methods to determine neuronal responsiveness require arbitrary parameter choices, such as binning size.",
+    "claim_type": "EXPLICIT",
+    "source": "Simple methods to determine responsiveness require arbitrary parameter choices, such as binning size, while more advanced model-based methods require fitting and hyperparameter tuning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known limitation in the abstract and introduction, representing established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Model-based methods for determining neuronal responsiveness require fitting and hyperparameter tuning.",
+    "claim_type": "EXPLICIT",
+    "source": "Simple methods to determine responsiveness require arbitrary parameter choices, such as binning size, while more advanced model-based methods require fitting and hyperparameter tuning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known limitation in the abstract, representing established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Parameter choices can change the results of neuronal responsiveness analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "These parameter choices can change the results, which invites bad statistical practice and reduces the replicability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known problem in the abstract, representing established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The ZETA-test outperforms t-tests, ANOVAs, and renewal-process-based methods by including more cells at a similar false-positive rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present the parameter-free ZETA-test, which outperforms t-tests, ANOVAs, and renewal-process-based methods by including more cells at a similar false-positive rate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding supported by experimental data presented in Figures 1-5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The ZETA-test works across brain regions and recording techniques, including calcium imaging and Neuropixels data.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that our procedure works across brain regions and recording techniques, including calcium imaging and Neuropixels data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experimental data from multiple brain regions and techniques shown in Figures 3 and 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "In mouse visual cortex, visuomotor-mismatch and spatial location are encoded by different neuronal subpopulations.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in illustration of the method, we show in mouse visual cortex that (1) visuomotor-mismatch and spatial location are encoded by different neuronal subpopulations",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding supported by experimental data presented in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Optogenetic stimulation of VIP cells in mouse visual cortex leads to early inhibition and subsequent disinhibition.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in illustration of the method, we show in mouse visual cortex that (1) visuomotor-mismatch and spatial location are encoded by different neuronal subpopulations and (2) optogenetic stimulation of VIP cells leads to early inhibition and subsequent disinhibition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding supported by experimental data presented in Figure 8.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Classical studies used manual curation during experiments to select cells for analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Classical studies used manual curation during experiments to select cells for analysis (Hubel and Wiesel, 1959; Mountcastle, 1957), but this method cannot provide a statistically unbiased sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to historical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Manual curation cannot provide a statistically unbiased sample.",
+    "claim_type": "EXPLICIT",
+    "source": "Classical studies used manual curation during experiments to select cells for analysis (Hubel and Wiesel, 1959; Mountcastle, 1957), but this method cannot provide a statistically unbiased sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference from the nature of manual curation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Manual curation is unsuitable for state-of-the-art large-scale recording techniques, such as Neuropixels and high-density multi-electrode arrays.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, such manual curation is unsuitable for state-of-the-art large-scale recording techniques, such as Neuropixels and high-density multi-electrode arrays (Bartolo et al., 2020; Jun et al., 2017; Semedo et al., 2019; Steinmetz et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the scale of modern recording techniques, supported by citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Neuroscience currently lacks a standard practice for determining whether a neuron is responsive to an experimental stimulus or treatment.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the widespread application of neuronal responsiveness analyses, neuroscience currently lacks a standard practice for determining whether a neuron is responsive to an experimental stimulus or treatment (Mesa et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Mesa et al., 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Comparing a neuron's average spike rate during the presence and absence of a stimulus can only detect mean-rate modulated cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Common approaches, such as comparing a neuron's average spike rate during the presence and absence of a stimulus, can only detect mean-rate modulated cells (Mazurek et al., 2014; Ringach et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Computing a peri-stimulus time histogram (PSTH) and applying an ANOVA requires the a priori selection of an arbitrary binning window size.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, approaches such as computing a peri-stimulus time histogram (PSTH) and applying an ANOVA, require the a priori selection of an arbitrary binning window size (Palm et al., 1988).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Palm et al., 1988.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Choosing the wrong bin size reduces the test's sensitivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Choosing the wrong bin size reduces the test's sensitivity, while optimizing from a range of window sizes creates a multiple-comparison problem.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference from statistical principles.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Optimizing from a range of window sizes creates a multiple-comparison problem.",
+    "claim_type": "EXPLICIT",
+    "source": "Choosing the wrong bin size reduces the test's sensitivity, while optimizing from a range of window sizes creates a multiple-comparison problem.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established statistical knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Multiple-comparison problems lower the approach's statistical power when corrections are applied.",
+    "claim_type": "EXPLICIT",
+    "source": "This lowers the approach's statistical power when corrections are applied, or can even lead to (unintentional) 'p-hacking' if the results are not corrected (Head et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Head et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Model-based approaches require the a priori selection, or tuning, of hyperparameters specific to the statistical properties of classes of cells, or even individual neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, while (point-process) model-based approaches can circumvent many of the above problems (Kass et al., 2014), they still require the a priori selection, or tuning, of hyperparameters specific to the statistical properties of classes of cells, or even individual neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Kass et al., 2014.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Many model-based approaches are not well suited to an unsupervised analysis of large-scale data recorded with state-of-the-art techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "Many model-based approaches are therefore not well suited to an unsupervised analysis of large-scale data recorded with state-of-the-art techniques.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the need for hyperparameter tuning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The ZETA method detects whether a cell is responsive to stimulation in a statistically robust way and avoids binning and parameter selection altogether.",
+    "claim_type": "EXPLICIT",
+    "source": "To solve these problems, we developed a method that detects whether a cell is responsive to stimulation in a statistically robust way and avoids binning and parameter selection altogether.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary claim about the method, supported by data in Figures 1-5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The ZETA-test either outperformed or matched that of t-tests, ANOVAs and point-process-based methods in all conditions tested.",
+    "claim_type": "EXPLICIT",
+    "source": "This method, which we call ZETA (Zenith of Event-based Time-locked Anomalies), either outperformed or matched that of t-tests, ANOVAs and point-process-based methods in all conditions tested.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experimental data in Figures 1-5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The instantaneous firing rate procedure allows visualization of instantaneous spiking rates without the need for binning.",
+    "claim_type": "EXPLICIT",
+    "source": "Building upon this framework, we also present a procedure to visualize instantaneous spiking rates without the need for binning, and show how this can be used to estimate peak-activity latencies with sub-millisecond accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The instantaneous firing rate procedure can be used to estimate peak-activity latencies with sub-millisecond accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Building upon this framework, we also present a procedure to visualize instantaneous spiking rates without the need for binning, and show how this can be used to estimate peak-activity latencies with sub-millisecond accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "A common procedure in pre-processing neural data is removing cells that are not responsive to an experimental stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "A common procedure in pre-processing neural data is removing cells that are not responsive to an experimental stimulus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as established practice in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Many experimenters determine the 'stimulus responsiveness' of a cell by comparing its average spiking rate during the presentation and absence of a stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "Many experimenters determine the 'stimulus responsiveness' of a cell by comparing its average spiking rate during the presentation and absence of a stimulus (see Figure 1A\u2013C for an example V1 cell).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as common practice, with an example shown in Figure 1A-C.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The procedure of comparing average spiking rates has the risk of removing neurons that show a strong, but complex time-locked response to stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "This procedure will therefore remove neurons that show no response, but has the risk of also removing neurons that show a strong, but complex time-locked response to stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the limitations of mean-rate comparisons.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The ZETA-test represents whether a neuron's spike train could be observed by chance, if it were not responding to an experimenter's event of interest.",
+    "claim_type": "EXPLICIT",
+    "source": "It represents whether a neuron's spike train could be observed by chance, if it were not responding to an experimenter's event of interest: for example, the presentation of a visual stimulus, the onset of optogenetic stimulation, or a self-generated variable, such as an animal's location on a track.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the ZETA-test's statistical interpretation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "At a significance threshold of \u03b1 = 0.05, ZETA detects more stimulus-responsive cells than both a mean-rate t-test and an ANOVA over bins using an optimal bin width.",
+    "claim_type": "EXPLICIT",
+    "source": "At a significance threshold of \u03b1 = 0.05, ZETA detects more stimulus-responsive cells than both a mean-rate t-test (***: paired t-test, p = 2.8 x 10\u20137, n = 12 data sets) and an ANOVA over bins using an optimal bin width (**: p = 0.0014).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by statistical analysis of data from 12 datasets, shown in Figure 1G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "93.3% of all V1 neurons showed significant firing rate modulations that were time-locked to stimulus onset using the ZETA-test.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying the ZETA-test, we found that 93.3 % of all V1 neurons showed significant firing rate modulations that were time-locked to stimulus onset.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct result from applying the ZETA-test to V1 Neuropixels data, shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Using a rate-based t-test between stimulation and no stimulation epochs across trials registered 77.3% of V1 neurons to be visually responsive.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a rate-based t-test between stimulation (0\u20131 s) and no stimulation (1\u20131.5 s) epochs across trials registered 77.3 % of neurons to be visually responsive.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct result from applying a t-test to V1 Neuropixels data, shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Cells included with a t-test were almost exclusively a subset of the cells detected with ZETA.",
+    "claim_type": "EXPLICIT",
+    "source": "This showed that cells included with a t-test were almost exclusively a subset of the cells detected with ZETA (see Figure 2B for all V1 cells recorded with Neuropixels).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2B comparing t-test and ZETA results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "If a cell is detected as being visually responsive with a t-test, it is almost guaranteed to also be detected by the ZETA-test.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, if a cell is detected as being visually responsive with a t-test, it is almost guaranteed to also be detected by the ZETA-test.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the data shown in Figure 2B.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The ZETA-test includes cells that were not registered by a t-test.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to these cells, the ZETA-test also includes cells that were not registered by a t-test.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The false-positive rate of the ZETA-test was generally low, and consistent with that expected for a significance level of \u03b1 = 0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the false-positive rate of the ZETA-test was generally low, and consistent with that expected for a significance level of \u03b1 = 0.05 (Figure 2E\u2013F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2E-F using jittered onset times.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "At a significance level of \u03b1 = 0.05, the inclusion rate for the ZETA-tests was 79% and for mean-rate t-tests was 64%.",
+    "claim_type": "EXPLICIT",
+    "source": "Under all conditions, the inclusion rate using ZETA-tests was higher than using t-tests: at a significance level of \u03b1 = 0.05, the inclusion rate for the ZETA-tests was 79 % and for mean-rate t-tests was 64 %; t-test of ZETA vs mean-rate t-test inclusion rates: n = 12 data sets, p = 2.8 \u00d7 10\u20137 (Figures 1G and 3, Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary statistic from 12 datasets shown in Figures 1G and 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The ZETA-test includes 42% of the cells that were not included by a t-test.",
+    "claim_type": "EXPLICIT",
+    "source": "This means that the ZETA-test includes 42 % of the cells that were not included by a t-test.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the inclusion rates of ZETA (79%) and t-test (64%).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The ZETA-test showed a higher statistical sensitivity (mean AUC = 0.914) than a mean-rate t-test (mean AUC = 0.843).",
+    "claim_type": "EXPLICIT",
+    "source": "Again, we found that the ZETA-test showed a higher statistical sensitivity (ZETA-test, mean AUC = 0.914) than a mean-rate t-test (t-test, mean AUC = 0.843), and that this difference was statistically significant (paired t-test, n = 12, p = 4.9 x 10\u20136).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is from ROC analysis of 12 datasets shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The percentage of visually responsive cells detected by the ZETA-test is higher than typically reported.",
+    "claim_type": "EXPLICIT",
+    "source": "The percentage of visually responsive cells detected by the ZETA-test is higher than typically reported.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference comparing the 93.3% inclusion rate to previous literature.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Using gratings that only differed by orientation, 93.3% of all V1 cells were found to be visually-modulated.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, using gratings that only differed by orientation, we found 93.3 % of all V1 cells to be visually-modulated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct result from the V1 Neuropixels data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The lower bound of the binomial 95%-confidence interval for V1 visual responsiveness was at 89.7%.",
+    "claim_type": "EXPLICIT",
+    "source": "Even more striking was that the lower bound of the binomial 95%-confidence interval was at 89.7 %.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical calculation from the V1 data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The lower-bound of V1 visual responsiveness is higher than the responsiveness previously reported in many studies.",
+    "claim_type": "EXPLICIT",
+    "source": "This lower-bound is higher than the responsiveness previously reported in many studies, including our own (Montijn et al., 2016a; Niell and Stryker, 2008; Shuler and Bear, 2006; Steinmetz et al., 2019), exemplifying the advantage of the ZETA-test.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The ZETA-test consistently included more cells than the t-test, regardless of the number of trials.",
+    "claim_type": "EXPLICIT",
+    "source": "As the results for V1 in Figure 3\u2014figure supplement 4A show, the ZETA-test consistently included more than the t-test, regardless of the number of trials.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 4A using subsampled trials.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The ANOVA procedure performed markedly better than a mean-rate t-test.",
+    "claim_type": "EXPLICIT",
+    "source": "This ANOVA procedure performed markedly better than a mean-rate t-test (Figures 1G and 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figures 1G and 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The ANOVA showed an inclusion rate (at \u03b1 = 0.05) that was lower than using the ZETA-test (ANOVA mean inclusion rate = 71%; ZETA-test inclusion = 79%).",
+    "claim_type": "EXPLICIT",
+    "source": "However, we found that it still showed an inclusion rate (at \u03b1 = 0.05) that was lower than using the ZETA-test (ANOVA mean inclusion rate = 71 %; ZETA-test inclusion = 79%, paired t-test, n = 12, p = 0.0014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is from statistical analysis of 12 datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "An ROC analysis showed a superior statistical sensitivity for the ZETA-test (mean AUC = 0.914) compared to ANOVA (mean AUC = 0.880).",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this difference could not be explained by different levels of false positives, as an ROC analysis also showed a superior statistical sensitivity for the ZETA-test: mean ANOVA-AUC = 0.880, mean ZETA-AUC = 0.914, paired t-test, n = 12, p = 7.7 \u00d7 10\u20134.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is from ROC analysis of 12 datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The binless ZETA-test has a statistical sensitivity superior to all alternative tests, regardless of number of trial repetitions, brain region where the data were recorded, or specifics of the data preparation.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, the results of comparing the ZETA-test to t-tests, ANOVAs, and renewal-process based tests show that the binless ZETA-test has a statistical sensitivity superior to all alternative tests, regardless of number of trial repetitions, brain region where the data were recorded, or specifics of the data preparation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion from the benchmarking data in Figures 1-5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "When the variability of mean activity across trials is low, but the variability of spike times within a trial is high, the ZETA-test could perform worse than a t-test.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, when the variability of mean activity across trials is low, but the variability of spike times within a trial is high, the ZETA-test could perform worse than a t-test.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical speculation about potential limitations.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The t-test performs better than the ZETA-test when response duration is 1 s with constant spike count.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, while the t-test performs better than the ZETA-test when Tr = 1.0, the ZETA-test also still performs reasonably well (Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in simulated data in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Despite the lack of clear peaks of activity in bursting cells, the ZETA-test exceeds the t-test's ability to detect stimulus-modulated bursting cells (ZETA AUC = 0.941, t-test AUC = 0.902).",
+    "claim_type": "EXPLICIT",
+    "source": "However, despite the lack of clear peaks of activity, the ZETA-test exceeds the t-test's ability to detect stimulus-modulated bursting cells (ZETA AUC = 0.941, t-test AUC = 0.902).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in simulated bursting cell data in Figure 4F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Under natural movie conditions, the binless and timescale-free ZETA-test performs as well as an aggregate set of ANOVAs binned at various timescales.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the above results show that, under these conditions, the binless and timescale-free ZETA-test performs as well as an aggregate set of ANOVAs binned at various timescales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 5 using natural movie data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "There was no significant difference in performance between a set of ANOVAs and the ZETA-test for natural movie responses (z-test, p = 0.554).",
+    "claim_type": "EXPLICIT",
+    "source": "Using this approach, we found there was no significant difference in performance between a set of ANOVAs and the ZETA-test (z-test, p = 0.554): ANOVAs AUC = 0.798 \u00b1 0.010, ZETA-test AUC = 0.792 \u00b1 0.011 (mean \u00b1 sd).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is from ROC analysis of natural movie data shown in Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The instantaneous firing rate (IFR) avoids the bin size selection issue of peri-stimulus time histograms (PSTHs).",
+    "claim_type": "EXPLICIT",
+    "source": "Like the ZETA-test, it avoids the bin size selection issue of peri-stimulus time histograms (PSTHs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the IFR method's properties.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The IFR's temporal resolution is limited only by the neuron's spike density.",
+    "claim_type": "EXPLICIT",
+    "source": "Another advantage of this IFR is that its temporal resolution is limited only by the neuron's spike density.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the IFR method's properties.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Unlike model-based methods, such as the multiplicative inhomogeneous Markov interval (MIMI) model, the IFR requires no fitting and is orders of magnitude faster.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, unlike model-based methods, such as the multiplicative inhomogeneous Markov interval (MIMI) model (Kass and Ventura, 2001), it requires no fitting and is orders of magnitude faster (see Materials and methods, Figure 3\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The IFR is a useful tool for determining spike train features with high precision, such as a neuron's onset latency.",
+    "claim_type": "EXPLICIT",
+    "source": "It is therefore a useful tool for determining spike train features with high precision, such as a neuron's onset latency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The main advantage of the IFR method is that it avoids having to tailor the bin size to each neuron individually.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, the main advantage of our method is that it avoids having to tailor the bin size to each neuron individually; allowing for better comparisons across varying cell types and brain regions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the method's advantages.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The IFR allows for better comparisons across varying cell types and brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, the main advantage of our method is that it avoids having to tailor the bin size to each neuron individually; allowing for better comparisons across varying cell types and brain regions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the method's advantages.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Across all V1 neurons, the IFR metric showed the strongest agreement in latency estimation with PSTH bin sizes between 1 and 10 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Across all V1 neurons (Figure 6C, n = 119 neurons) as well as all neurons recorded in visual areas (Figure 6D, n = 1403 neurons), our metric showed the strongest agreement in latency estimation with PSTH bin sizes between 1 and 10 ms.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6C-D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The error in peak latency estimation using the IFR was independent of background spiking rate.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the error in the peak estimate was independent of background spiking rate (Figure 6H), indicating robust performance even when the spikes contributing to the peak were only 0.78 % of the total (i.e. for 32 Hz).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in simulated data in Figure 6H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The mean error in peak latency estimation was independent of the jitter, while the standard deviation of the error estimate grew as O(\u03c3).",
+    "claim_type": "EXPLICIT",
+    "source": "The mean error was also independent of the jitter, while the standard deviation of the error estimate grew in a theoretically optimal fashion as O(\u03c3) (Figure 6I).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in simulated data in Figure 6I.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The binning-less IFR-based latencies were consistently as accurate as, or more accurate than, the best possible bin-width for any given peak-width.",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, when comparing the estimation error between these bin-based methods and our IFR, we found that the binning-less IFR-based latencies were consistently as accurate as, or more accurate than, the best possible bin-width for any given peak-width (Figure 6K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in simulated data in Figure 6K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The IFR-latency accuracy supersedes the PSTH-based and MIMI-based accuracy without the need to hand-pick the optimal binning width per neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, the IFR-based accuracy supersedes the PSTH-based (and MIMI-based) accuracy without the need to hand-pick the optimal binning width per neuron for a PSTH-method, nor tune hyperparameters such as knot number, location, and regularization strength for the MIMI-method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion from the data in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Time- and location-modulation were positively correlated (mean r = 0.23, one-sample t-test, n = 7 recordings, p = 0.016).",
+    "claim_type": "EXPLICIT",
+    "source": "Across recordings, time- and location-modulation were positively correlated (mean r = 0.23, one-sample t-test, n = 7 recordings, p = 0.016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is from statistical analysis of calcium imaging data from virtual corridor experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Time- and mismatch-modulation were not significantly correlated (r = 0.13, p = 0.28).",
+    "claim_type": "EXPLICIT",
+    "source": "time- and mismatch-modulation were not significant (r = 0.13, p = 0.28)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is from statistical analysis of calcium imaging data from virtual corridor experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Location- and mismatch-modulation were negatively correlated (r = \u22120.22, p = 0.04).",
+    "claim_type": "EXPLICIT",
+    "source": "and location- and mismatch-modulation were negatively correlated (r = \u22120.22, p = 0.04).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is from statistical analysis of calcium imaging data from virtual corridor experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "More neurons showed joint-encoding of both spatial and temporal location than expected by chance (p = 1.1 \u00d7 10\u20134).",
+    "claim_type": "EXPLICIT",
+    "source": "More neurons showed joint-encoding of both spatial and temporal location than expected by chance (p = 1.1 \u00d7 10\u20134).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is from kernel-density estimate analysis shown in Figure 7G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Joint-encoding of temporal location and mismatch was not significantly different from chance (p = 0.932).",
+    "claim_type": "EXPLICIT",
+    "source": "Joint-encoding of temporal location and mismatch was not significantly different from chance (p = 0.932).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is from kernel-density estimate analysis shown in Figure 7H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Location on the virtual track and visuomotor mismatch are less likely to be encoded by the same neuron than expected from chance (p = 2.0 \u00d7 10\u20135).",
+    "claim_type": "EXPLICIT",
+    "source": "Location on the virtual track and visuomotor mismatch are less likely to be encoded by the same neuron than expected from chance (p = 2.0 \u00d7 10\u20135).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is from kernel-density estimate analysis shown in Figure 7I.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The results suggest a functional specialization for many neurons to encode either visuomotor mismatch signals or spatial location, but not both.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests a functional specialization for many neurons to encode either visuomotor mismatch signals or spatial location, but not both.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the data in Figure 7.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Inhibited cells showed significantly lower mean IFR-peak latencies after optogenetic stimulation than Activated cells (Inh: 17.4 ms; Act: 23.0 ms; Mann-Whitney U-test, p = 5.1 \u00d7 10\u20137).",
+    "claim_type": "EXPLICIT",
+    "source": "Inhibited cells showed significantly lower mean IFR-peak latencies after optogenetic stimulation than Activated cells (Inh: 17.4 ms; Act: 23.0 ms; Mann-Whitney U-test, p = 5.1 \u00d7 10\u20137).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is from analysis of Allen Brain Institute data shown in Figure 8J.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The latency of Inhibited cells was significantly shorter after optogenetic stimulation than it was for Activated cells (median latency Inh = 16.5 ms, Act = 23.6, Mann-Whitney U-test, p = 5.1 \u00d7 10\u20137).",
+    "claim_type": "EXPLICIT",
+    "source": "The latency of Inhibited cells was significantly shorter after optogenetic stimulation than it was for Activated cells (median latency Inh = 16.5 ms, Act = 23.6, Mann-Whitney U-test, p = 5.1 \u00d7 10\u20137).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is from analysis of Allen Brain Institute data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The results show a VIP-mediated disinhibition mechanism operates in vivo in visual cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "These results show a VIP-mediated disinhibition mechanism operates in vivo in visual cortex, confirm slice connectivity studies (Pfeffer et al., 2013), and are in general agreement with results from the auditory cortex and mPFC (Pi et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion from the optogenetic data in Figure 8, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The ZETA-test's main difference from other approaches is that it makes no a priori assumptions about the underlying distribution of temporal modulations and is binning-free.",
+    "claim_type": "EXPLICIT",
+    "source": "In short, the ZETA-test's main difference from other approaches used to infer a neuron's stimulus responsiveness, is that our test makes no a priori assumptions about the underlying distribution of temporal modulations and is binning-free.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the ZETA-test's key properties.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The ZETA-test can detect both long-timescale changes in mean firing rate, as well as short-timescale stimulus-locked bursts or lapses of activity at any point in time relative to stimulus onset.",
+    "claim_type": "EXPLICIT",
+    "source": "It can therefore detect both long-timescale changes in mean firing rate, as well as short-timescale stimulus-locked bursts or lapses of activity at any point in time relative to stimulus onset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the ZETA-test's capabilities, supported by data in Figures 1-5.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The ZETA-test sometimes performed as well as other techniques and sometimes better.",
+    "claim_type": "EXPLICIT",
+    "source": "We investigated the performance of the ZETA-test in a variety of cases and observed that the ZETA-test sometimes performed as well as other techniques and sometimes better.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the benchmarking results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The ZETA-test outperforms the t-test in every case tested except for purely Poisson-distributed spike counts.",
+    "claim_type": "EXPLICIT",
+    "source": "While the ZETA-test is slightly worse than a t-test for purely Poisson-distributed spike counts, it outperforms the t-test in every other case we tested, including those where the interspike interval distribution is highly peaked, such as in bursting cells (Figures 1\u20144).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary of benchmarking results from Figures 1-4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The ZETA-test may often be the preferred choice as it required no fitting, hyperparameter tuning, and shows a statistical sensitivity superior to model-based approaches in all cases tested.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the ZETA-test may often be the preferred choice as it required no fitting, hyperparameter tuning, and shows a statistical sensitivity superior to model-based approaches in all cases we tested.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion from the benchmarking data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The ZETA-test might not perform as well as models manually fitted to describe a particular cell's response.",
+    "claim_type": "EXPLICIT",
+    "source": "As we designed it to be a generalist test applicable to any spike train, the ZETA-test might not perform as well as models manually fitted to describe a particular cell's response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about potential limitations.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The ZETA-test shows great merit especially as an unbiased parameter-free inclusion criterion.",
+    "claim_type": "EXPLICIT",
+    "source": "The ZETA-test shows great merit especially as an unbiased parameter-free inclusion criterion, which is something that currently often varies between studies and can adversely affect the replicability of scientific results (Mesa et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Mesa et al., 2021.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The ZETA-test only compares point-events (e.g. spike times) to other point-events (e.g. stimulus onsets).",
+    "claim_type": "EXPLICIT",
+    "source": "Another, and fairly obvious, limitation is that the ZETA-test only compares point-events (e.g. spike times) to other point-events (e.g. stimulus onsets).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the method's scope.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The ZETA-test is a powerful tool for state-of-the-art electrophysiological techniques, like Neuropixels recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequentially, it is a powerful tool for state-of-the-art electrophysiological techniques, like Neuropixels recordings, but does not apply to calcium imaging dF/F0 traces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the method's applicability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The ZETA-test performs well when applied to putative spiking events extracted from calcium imaging data.",
+    "claim_type": "EXPLICIT",
+    "source": "However, as we show in Figure 7, the ZETA-test performs well when applied to putative spiking events extracted from calcium imaging data.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7 using calcium imaging data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Almost all V1 neurons (>93%) are responsive to drifting gratings, even if the spatial frequency and temporal frequency parameters are not optimal to drive these cells.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, our results indicate that almost all V1 neurons ( > 93%) are responsive to drifting gratings, even if the spatial frequency (SF) and temporal frequency (TF) parameters are not optimal to drive these cells (Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the V1 data shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The finding of >93% V1 responsiveness calls into question the idea that V1 cells are generally narrowly tuned and can only be driven by specific stimulus feature parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "This calls into question the idea that V1 cells are generally narrowly tuned and can only be driven by specific stimulus feature parameters (Xing et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the high responsiveness data, with citation to Xing et al., 2004.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The response of V1 neurons to features such as SF and TF may drop off rather slowly with distance to their preferred stimulus properties.",
+    "claim_type": "EXPLICIT",
+    "source": "Our analysis indicates that neuronal responsiveness rarely drops to 0 for a combination of stimulus features, as otherwise we would not have found such a large number of responsive V1 cells using a feature-sparse stimulus (24 directions, 1 SF: 0.05cpd, 1 TF: 2 Hz). This suggests that the response of V1 neurons to features such as SF and TF may drop off rather slowly with distance to their preferred stimulus properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the high responsiveness data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The V1 neural code may be more 'dense' than proposed by some theories of sparse coding.",
+    "claim_type": "EXPLICIT",
+    "source": "Conceptually, this would mean that the V1 neural code may in fact be more 'dense' than proposed by some (Ohiorhenuan et al., 2010; Olshausen and Field, 1997; Vinje and Gallant, 2000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation based on the high responsiveness data, with citations to sparse coding theories.",
+    "evidence_type": [
+      "SPECULATION",
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Only a relatively small group of neurons is strongly driven by any one stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "That said, our results show that only a relatively small group of neurons is strongly driven by any one stimulus: sparse coding may therefore still operate in V1, but it acts on top of a dense, but weak code.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "VIP cell activation drives disinhibition in visual cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "Two other noteworthy findings are that VIP cell activation drives disinhibition in visual cortex (Figure 8)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 8 using Allen Brain Institute data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The strength of visuomotor signals and modulation by spatial location are negatively correlated.",
+    "claim_type": "EXPLICIT",
+    "source": "and that the strength of visuomotor signals and modulation by spatial location are negatively correlated (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7 using calcium imaging data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Bottom-up and top-down processing in visual cortex may be mediated by distinct neuronal subnetworks.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that bottom-up and top-down processing in visual cortex may be mediated by distinct neuronal subnetworks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the data in Figure 7.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Functional segregation of bottom-up and top-down processing has previously been shown based on a macroanatomical (e.g. laminar) analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "While this functional segregation has previously been shown based on a macroanatomical (e.g. laminar) analysis (Kok et al., 2016; Markov et al., 2014; Poort et al., 2012; Self et al., 2019), our results suggest that this functional segregation also holds at a microanatomical level for neurons located within a single recording plane (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Functional segregation of bottom-up and top-down processing holds at a microanatomical level for neurons located within a single recording plane.",
+    "claim_type": "EXPLICIT",
+    "source": "While this functional segregation has previously been shown based on a macroanatomical (e.g. laminar) analysis (Kok et al., 2016; Markov et al., 2014; Poort et al., 2012; Self et al., 2019), our results suggest that this functional segregation also holds at a microanatomical level for neurons located within a single recording plane (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference from the data in Figure 7.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The IFR and ZETA-test are simpler, more statistically powerful, and less error-prone tools than bin-based PSTHs, t-tests, Markov-model based approaches, and ANOVAs widely used in neuroscience today.",
+    "claim_type": "EXPLICIT",
+    "source": "In conclusion, the IFR and ZETA-test are simpler, more statistically powerful, and less error-prone tools than bin-based PSTHs, t-tests, Markov-model based approaches, and ANOVAs widely used in neuroscience today.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion from all the benchmarking data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Statistically underpowered studies are still common in neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Statistically underpowered studies are still common in neuroscience, which makes the development of statistically sensitive tools especially important (Button et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Button et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Increased statistical sensitivity, such as with the ZETA-test, can reduce the number of required experimental animals when power analyses are used to determine the necessary sample size.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, when power analyses are used to determine the necessary sample size, then increased statistical sensitivity, such as with the ZETA-test, can reduce the number of required experimental animals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the implications of increased statistical power.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The ZETA-test bears similarities to a mean-subtracted Kolmogorov-Smirnov test applied to a renewal process model.",
+    "claim_type": "EXPLICIT",
+    "source": "The ZETA-test bears similarities to a mean-subtracted Kolmogorov-Smirnov test applied to a renewal process model (see methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the mathematical relationship of the ZETA-test.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The ZETA-test gains robustness to violations of the assumptions underlying renewal processes and outperforms alternative approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "In the method section 'ZETA and renewal-process models' we show how the ZETA-test gains robustness to violations of the assumptions underlying renewal processes and outperforms alternative approaches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in the methods section and Figure 3\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The ZETA-test makes no a priori assumptions about the underlying distribution of temporal modulations.",
+    "claim_type": "EXPLICIT",
+    "source": "In short, the ZETA-test's main difference from other approaches used to infer a neuron's stimulus responsiveness, is that our test makes no a priori assumptions about the underlying distribution of temporal modulations and is binning-free.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the ZETA-test's key property.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The ZETA-test is considerably faster than methods that rely on model fitting, such as the multiplicative inhomogeneous Markov interval (MIMI) model.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, compared to methods that rely on model fitting, such as the multiplicative inhomogeneous Markov interval (MIMI) model, the ZETA-test is considerably faster, not subject to overfitting, and does not require tuning of hyperparameters (Figure 3\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The ZETA-test is not subject to overfitting.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, compared to methods that rely on model fitting, such as the multiplicative inhomogeneous Markov interval (MIMI) model, the ZETA-test is considerably faster, not subject to overfitting, and does not require tuning of hyperparameters (Figure 3\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical property of the method since it does not involve fitting.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The ZETA-test does not require tuning of hyperparameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, compared to methods that rely on model fitting, such as the multiplicative inhomogeneous Markov interval (MIMI) model, the ZETA-test is considerably faster, not subject to overfitting, and does not require tuning of hyperparameters (Figure 3\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a key property of the method, shown in Figure 3\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The ZETA-test is slightly worse than a t-test for purely Poisson-distributed spike counts.",
+    "claim_type": "EXPLICIT",
+    "source": "While the ZETA-test is slightly worse than a t-test for purely Poisson-distributed spike counts, it outperforms the t-test in every other case we tested",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in simulated data in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Various components of the ZETA-test were chosen to relax the assumptions made by other tests with the aim to gain relative invariance to the specifics of a neuron's spike train.",
+    "claim_type": "EXPLICIT",
+    "source": "Various components of the ZETA-test were chosen to relax the assumptions made by other tests with the aim to gain relative invariance to the specifics of a neuron's spike train (Figure 3\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The ZETA-test can be applied directly to raw spike times and stimulus onsets.",
+    "claim_type": "EXPLICIT",
+    "source": "This makes the ZETA-test even easier to use than established methods, as it can be applied directly to raw spike times and stimulus onsets, and the lack of a parameter selection naturally lends itself to the bulk-analysis of large numbers of cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the method's ease of use.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The lack of parameter selection in the ZETA-test naturally lends itself to the bulk-analysis of large numbers of cells.",
+    "claim_type": "EXPLICIT",
+    "source": "This makes the ZETA-test even easier to use than established methods, as it can be applied directly to raw spike times and stimulus onsets, and the lack of a parameter selection naturally lends itself to the bulk-analysis of large numbers of cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the method's applicability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The IFR's temporal resolution is only limited by the spike density, which allows more accurate determination of spike train events such as peak response latencies.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar to the ZETA-test, it has two main advantages over alternative common approaches, such as PSTHs: (1) it does not require binning, and therefore removes the need to tune binning widths for individual cells or cell types and (2) its temporal resolution is only limited by the spike density, which allows more accurate determination of spike train events such as peak response latencies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "When benchmarking the IFR's performance for latency-estimation, it outperformed PSTH-based approaches without the need to fine-tune bin sizes for each neuron individually.",
+    "claim_type": "EXPLICIT",
+    "source": "When benchmarking its performance for latency-estimation, it outperformed PSTH-based approaches without the need to fine-tune bin sizes for each neuron individually (Figure 6K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

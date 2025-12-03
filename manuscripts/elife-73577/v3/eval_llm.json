@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "At least 20 vertebrate species now have pedigree-based germline mutation rate estimates, with half added in the past two years. The first human estimate was published over 10 years ago, followed by the first nonhuman primate (chimpanzee) estimate four years later. Table 1 provides mutation rate data for multiple species including 10 primates, 5 nonprimate mammals, 1 bird, and 4 fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C15 establish the historical context and recent growth of the field, while C54-C71 provide specific mutation rate data from Table 1 with citation support. The data are presented consistently with appropriate references, and the temporal progression of the field is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Methodological differences among studies make direct comparisons of germline mutation rates difficult, with this effect likely larger in nonhuman species due to lower-quality genome assemblies, less information about segregating polymorphisms, often higher heterozygosity, and an overall deficit in prior information on mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the central thesis supported by the Mutationathon results (C5), while C17-C20 provide logical reasoning for why methodological differences would have larger effects in nonhuman species. The Mutationathon experiment directly demonstrates this variation (C5, C37-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C26"
+    ],
+    "result": "Most studies using human pedigrees have converged on similar mutation rates of approximately 1.2 \u00d7 10\u207b\u2078 mutations per site per generation at an average age of around 30 years, with the first two-trio study estimating 1.1 \u00d7 10\u207b\u2078, which falls within the overall variation reported across studies with larger sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C26 are supported by data in Table 1 and appropriate citations. The convergence of human mutation rate estimates provides a positive contrast to the variation observed in nonhuman species and validates the pedigree-based approach when applied with sufficient sample sizes and quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C52",
+      "C53"
+    ],
+    "result": "The Mutationathon competition among five research labs analyzing a single rhesus macaque pedigree (sequenced at 40-70\u00d7 coverage with BGISEQ-500) revealed almost a twofold variation in final estimated mutation rates using different post-alignment processing, calling, and filtering criteria. Five groups detected between 18 and 32 candidate DNMs, with PCR validation confirming 33 true positives, 6 false positives, and 4 unsuccessful amplifications from 43 distinct sites. No group found all true-positive DNMs, and only 7 of 33 true positives were detected by all groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C37-C40 describe the Mutationathon design and key findings, supported by experimental data in Figures 3-4 and validation by Sanger sequencing (C38). The twofold variation (C5) is documented despite the lack of statistical significance (C6), demonstrating the practical impact of methodological choices. Claims C52-C53 provide essential experimental details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Candidate DNMs found by a single group were more likely to be false positives, as all six false-positive candidates were detected by only one pipeline. The transition-to-transversion ratio did not significantly differ between groups (Fisher's exact test p=0.87), and the transmission rate of all true-positive DNMs was 67% (21/33), which is not significantly different from the expected 50% inheritance (binomial test p=0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by the validation data showing all false positives were unique to single pipelines. Claims C42-C43 provide statistical validation with appropriate tests and p-values, showing that despite methodological differences, key biological signatures (ti/tv ratio and transmission rate) remain consistent and within expected ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Among the five groups, TT estimated the lowest mutation rate (0.46 \u00d7 10\u207b\u2078), while RW estimated the highest (0.85 \u00d7 10\u207b\u2078). Four groups (CV, RW, SB, LB) found similar rates ranging from 0.63 to 0.85 \u00d7 10\u207b\u2078 with 25% differences and large overlap of confidence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are directly supported by data shown in Figure 4 and described in the text. The variation in estimates is documented with specific values and confidence intervals, demonstrating the impact of different methodological choices on final mutation rate estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "TT's pipeline was the only one to detect a candidate mutation at a site where the father was heterozygous (C/G), the mother was homozygous for the reference allele (G/G), and the offspring was heterozygous (A/G), which was validated by PCR, indicating a true germline mutation arose at a heterozygous site in a parental genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by PCR validation data and demonstrates that different filtering strategies can miss true mutations. This finding is significant because most pipelines filter out sites where parents are heterozygous, potentially missing real germline mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The GQ (genotype quality) filter had the largest impact on the number of mutations and final estimated mutation rate. The number of candidate DNMs with GQ < 20 was three times higher than with the most conservative GQ filter (twofold after correcting for false positives). More than 90% of candidate DNMs were false positives with no GQ filter, while no false positives were found with conservative GQ filters (GQ < 80 or GQHom < 100 and GQHet < 200).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by systematic filter comparison analysis shown in Figure 5. The data demonstrate that GQ filtering is the most effective parameter for reducing false positives while maintaining true positives, providing practical guidance for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Two recent, independent studies of the per-generation mutation rate in rhesus macaque reported rates within 5% of each other for individuals of the same age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by citations to Bergeron et al., 2021a and Wang et al., 2020, and provides a positive counterpoint to the Mutationathon variation, suggesting that with careful methodology, independent studies can achieve consistent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Germline mutations are the source of most genetic diseases and provide the raw material for evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 represent established biological knowledge stated in the introduction to motivate the importance of accurate mutation rate estimation. These are well-accepted facts in genetics and evolutionary biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "High-throughput next-generation sequencing enables direct estimation of the germline mutation rate over a single generation based on whole-genome comparison of pedigree samples without requiring assumptions about generation times or fossil calibrations, and enables identification of the parental origin of mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 describe the methodological advantages of pedigree-based approaches with appropriate citation support (Tiley et al., 2020). These represent established capabilities of the method that are widely accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The key principle of the pedigree-based approach is to detect de novo mutations present in a heterozygous state in an offspring that are absent from its parents' genomes. A per-site per-generation mutation rate is calculated by dividing the number of DNMs by the number of callable sites (accounting for diploid genome length). The overall pipeline includes five steps: sampling and sequencing, alignment and post-alignment processing, variant calling, detecting de novo mutations, and mutation rate estimation. False-positive calls can arise from sequencing errors, read mapping and genotyping errors, stochastically missing alternative alleles in parents, or somatic mutations in offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe the fundamental methodology illustrated in Figures 1-2. These are well-established principles of pedigree-based mutation rate estimation that form the foundation for the subsequent methodological discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "The first pedigree-based human mutation rate study used only two trios and estimated 1.1 \u00d7 10\u207b\u2078 per site per generation, within the variation of larger studies. Multi-sibling pedigrees offer opportunities to detect mosaic mutations in parents from early development. Blood is often the preferred tissue because many tissues contribute cells to blood, reducing the chance of mistaking somatic mutations for DNMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27-C28 provide methodological context with citation support. C25 demonstrates that even small sample sizes can yield reasonable estimates, while C27-C28 describe best practices for study design and sample selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "PCR amplification can generate artifacts from sequence errors or overamplification of reads, so PCR-free libraries are preferable for samples yielding sufficient DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe a known technical issue with citation support (Acinas et al., 2005) and provide a practical recommendation. This represents established knowledge about library preparation methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "BWA has been used in the majority of mutation rate studies. A minimum coverage of 15\u00d7 has been advised for accurate SNP calling, but 35\u00d7 is recommended as a rule of thumb for mutation rate studies. GATK is widely used for calling germline DNMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe standard tools and practices with extensive citation support. C33 provides a specific recommendation based on statistical calculations (C74-C75), though the 35\u00d7 threshold is presented as a rule of thumb rather than a strict requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Most mutation rate studies restrict Mendelian violations to sites where both parents are homozygous for the reference allele and the offspring is heterozygous. PCR amplification followed by Sanger sequencing is one of the most straightforward validation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe common practices in the field with extensive citation support. These represent standard approaches for DNM detection and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Approximately 3% of DNMs in humans are part of mutation clusters, a feature that appears conserved among all eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 present established findings with citation support (Besenbacher et al., 2016; Kaplanis et al., 2019; Schrider et al., 2011). This information is relevant to filtering strategies that might exclude clustered mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Statistical calculations show that the binomial probability of not observing a read with one allele in a heterozygote with 15\u00d7 coverage is 3.05 \u00d7 10\u207b\u2075 (occurring ~30 times in a genome with 1 million heterozygous positions), and the probability that a somatic mutation in 10% of cells appears in >30% of reads is 0.0113 with 20\u00d7 coverage but falls to 0.0004 with 35\u00d7 coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 present statistical calculations that support the recommendation for 35\u00d7 coverage (C33). The mathematics are straightforward applications of binomial probability and provide quantitative justification for coverage recommendations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Realignment around indels is required for non-haplotype-aware callers but not for haplotype-aware variant callers. BGISEQ-500 technology shows similar performance to Illumina on data quality. Most pedigree-based studies have sequenced individuals to 30-50\u00d7 depth, though some used higher (80-150\u00d7) or lower (<25\u00d7) coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe technical aspects of sequencing and variant calling with appropriate citations. These represent established knowledge about different sequencing technologies and variant calling approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Estimates of callable genome vary widely from 45% to 91.5% of the total genome across studies. The estimated false-negative rate ranges from 0% to 44%, and false discovery rate estimates using manual curation have varied from 91% at low coverage to 35% at medium coverage to 11% at high coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 document substantial variation in key parameters across published studies with citation support. This variation highlights the challenges in comparing mutation rates across studies and supports the main thesis about methodological differences (C3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The Mutationathon pedigree was previously sequenced as part of a larger rhesus macaque project (BioProject: PRJNA588178). Trimming was performed using SOAPnuke version 1.5.6 to remove adaptors, low-quality reads, and reads <60 bases. Sanger sequences from PCR validation were deposited on GenBank (accession numbers MZ661796-MZ662076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide essential methodological details and data availability information. These are straightforward descriptions of data processing and deposition that enable reproducibility.",
+    "result_type": "MINOR"
+  }
+]

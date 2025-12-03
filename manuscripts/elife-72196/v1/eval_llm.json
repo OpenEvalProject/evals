@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work demonstrates that animals can measure both intensity and timing of odor encounters through behavioral and neural evidence. Multiple species use these measures for olfactory navigation, with neural recordings confirming that the brain encodes both types of information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 are all supported by citations to prior published work. These claims establish the biological and physical context for the study by reviewing established knowledge about animal olfactory behavior and neural encoding. The citations appear appropriate and the claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Turbulence causes odor to be distributed in highly intermittent patches, and both intensity and timing of these bursts vary with source location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by citations to both theoretical and experimental studies on turbulent odor transport. This establishes the physical basis for why odor features should contain information about source location.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Machine learning analysis reveals that odor temporal dynamics over short memory spans (~1s) contain information about source location. Intensity features predict distance better near the source/substrate, while timing features perform better at greater distances. Combining timing and intensity features dramatically improves predictions across all conditions, while pairing features of the same type provides little benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 represent the core findings from the machine learning analysis and are supported by data presented in Figures 2-6. The complementary nature of timing and intensity features is demonstrated through systematic comparisons across spatial regions and feature combinations. The statistical analysis appears sound with appropriate train/test splits and cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "At source height, intensity features outperform timing features, and predictions are more accurate in crosswind than downwind direction. Performance varies little across three source locations, demonstrating the algorithm learns odor dynamics rather than flow properties. Timing features gain predictive power with height while intensity features lose it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by data in Figure 2 and supplements. The control experiments with multiple source locations (C31, C34) strengthen the conclusion that the algorithm captures scalar dynamics. The spatial variation in feature performance (C32-C33) is consistent with the main findings about complementarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C39"
+    ],
+    "result": "Performance improves with longer memory following a slow power law, such that 20x longer memory yields only ~2x better precision. Sampling more frequently than once per Kolmogorov time does not substantially affect results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C39 are supported by data in Figure 3. The power law relationship is demonstrated empirically, and the insensitivity to sampling frequency above the Kolmogorov timescale is consistent with turbulence theory. However, the exact exponent of the power law is not quantified with uncertainty estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Pairing two features of the same category provides little improvement, while combining one intensity and one timing feature improves performance up to 65%. This occurs because intensity and timing features are spatially complementary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by data in Figure 4 and Figure 5\u2014supplement 1. The spatial complementarity is directly visualized through error mapping, providing mechanistic insight into why mixed pairs outperform same-category pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Across five datasets at different heights (a-e), sparsity increases and intensity decreases with distance from the boundary. Intensity features outperform timing features in less sparse conditions (a-b), while timing features excel in more sparse conditions (d-e). Mixed pairs remain the best strategy across all heights, while combining all five features provides little additional benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by data in Figure 5. The systematic variation in odor statistics with height (C43-C44) is explained by fluid dynamics principles. The shift in feature ranking (C45-C47) is consistent with the complementarity hypothesis. The robust superiority of mixed pairs (C48) and diminishing returns of adding more features (C49) are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the proximal problem (close to source), odor is more intense and sparse, and intensity features clearly outperform timing features. In the distal problem (far from source), odor is more dilute and less sparse, and the performance gap between feature types disappears. Mixed pairs outperform individual features in both proximal and distal problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by data in Figure 6. The proximal/distal comparison provides another dimension demonstrating spatial variation in feature utility. The consistent superiority of mixed pairs across both regimes (C54) reinforces the main conclusion about complementarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Timing features are most useful in dilute conditions (far from source/substrate), while intensity features are most useful in concentrated conditions (close to source/substrate). Concentration and slope are particularly useful predictors at close range, but their primacy wanes in more challenging conditions where timing features become equally or more effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 synthesize the main findings from the spatial analyses. These conclusions are well-supported by the aggregate data from Figures 2-6, showing consistent patterns across multiple spatial dimensions (height, distance from source).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Insect olfactory receptor neurons efficiently encode timing information across wide intensity ranges. Within a single flow, odor dynamics and optimal predictors vary considerably in space. In mice, sparse odor cues elicit responses that track temporal dynamics, while continuous signals elicit intense but temporally uncorrelated responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C62-C63 are supported by citations to prior work and provide biological context for the computational findings. Claim C61 is supported by the authors' own data showing spatial variation in feature performance. These claims connect the computational results to biological mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Features within the same class (timing or intensity) are redundant, while features from different classes are complementary. Each class has distinct spatial performance patterns. Using more than one feature per class provides no advantage, but measuring both timing and intensity is beneficial. Mixed pairs outperform individual features robustly across all spatial regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 synthesize key findings about feature redundancy and complementarity. These are well-supported by the systematic feature combination analysis in Figures 4-6. The spatial analysis of performance patterns (C65) provides mechanistic insight into the redundancy/complementarity structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Biological evidence suggests animals can measure timing and intensity simultaneously: lobsters have both bursting and canonical olfactory neurons, and mammalian optogenetic studies show both measures guide behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by citations to prior experimental work. These provide biological plausibility for the computational finding that combining timing and intensity improves predictions. The inference from neural diversity to dual measurement capability (C69) is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Comparison with prior work shows binary representations were suboptimal at close range, individual snapshots contained 1-2 bits of information, but temporal information was valuable. The current mixed pairs achieve 4-4.3 bits of positional information at close range. Memory is useful but with diminishing returns following a power law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 accurately cite prior work for comparison. Claim C74 is supported by the authors' data and calculation. Claim C75 synthesizes findings from Figure 3. The comparison contextualizes the current results within the literature, though direct quantitative comparison is limited by methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Both intensity and timing have potential for navigation to odor sources. Prior work found combinations beneficial, consistent with current results. Timing features are more robust to source intensity variations, especially with adaptive thresholds as used in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by citations and consistency with current results. Claims C78-C79 address an important methodological consideration about threshold definition. The adaptive threshold choice (C79) is justified but represents a specific modeling assumption that may not fully reflect biological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C84"
+    ],
+    "result": "The DNS uses 8th grade tensor-product polynomials within spectral elements, effectively discretizing the domain into 81,920,000 elements. Each simulation requires 2 weeks on 320 CPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C84 are methodological details about the computational implementation. These are straightforward factual statements about the numerical methods used. The computational cost is substantial, indicating high-fidelity simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Kernel methods are more powerful than linear models for this problem. Linear models have limited predictive power and do not allow feature ranking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by comparison data in Figure 2\u2014supplement 2 and citation to kernel methods literature. The superiority of kernel methods is clearly demonstrated, justifying the methodological choice. This is important for establishing that the feature rankings are meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The precise value of the adaptive threshold has little effect on results, while fixed thresholds show sensitive dependence and vary optimally across datasets in non-trivial ways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by data in Figure 2\u2014supplement 1. This justifies the choice of adaptive thresholds and demonstrates robustness of the main results to this methodological choice. The sensitivity to fixed thresholds highlights a potential limitation of that approach.",
+    "result_type": "MINOR"
+  }
+]

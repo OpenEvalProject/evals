@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7"
+    ],
+    "result": "EHE is a vascular sarcoma characterized by two mutually exclusive gene fusions: WWTR1-CAMTA1 (85-90% of cases) and YAP1-TFE3 (10-15% of cases), and lacks effective medical therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, and C7 establish the clinical and molecular characteristics of EHE based on established knowledge and prior literature. These are well-documented facts about the disease supported by multiple citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "YAP-TFE3 is a neomorphic fusion protein that transforms cells through combined properties of YAP and TFE3, remains constitutively nuclear under conditions that normally trigger Hippo pathway suppression, and escapes Hippo pathway regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by multiple complementary assays including soft agar, poly-HEMA, immunofluorescence, and nuclear/cytoplasmic fractionation (Figures 1B-F, Figure 1\u2014figure supplement 2). The data consistently show that YAP-TFE3 remains nuclear under confluence and detachment conditions where wild-type YAP is cytoplasmic and degraded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Both YAP-TFE3 and TAZ-CAMTA1 fusion proteins drive tumor formation in vivo with reduced latency compared to controls, and YAP-TFE3 promotes metastasis to the lungs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by xenograft experiments in NSG mice using both NIH 3T3 and SW872 cells (Figures 1G-J, Figure 1\u2014figure supplement 3). The data show statistically significant differences in survival, tumor initiation, and metastasis. However, the experiments were repeated only twice with 5-10 mice per group, which is modest but acceptable for xenograft studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Both TAZ-CAMTA1 and YAP-TFE3 require TEAD transcription factors to drive their oncogenic transcriptional programs, as demonstrated by loss of function with TEAD binding domain mutations and TEAD knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by multiple complementary approaches including mutagenesis studies, shRNA knockdown, soft agar assays, poly-HEMA assays, qRT-PCR, ChIP-qPCR, and luciferase reporter assays (Figures 1\u2014figure supplement 2F-G, Figures 2A-I). The convergent evidence from different experimental modalities strongly supports the requirement for TEAD binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TAZ-CAMTA1 and YAP-TFE3 drive transcriptomes that significantly overlap with TAZ/YAP but also contain substantial unique gene sets (20-47% depending on cell line), indicating the fusion proteins create distinct transcriptional programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 are supported by RNA-Seq data in biological triplicates across two cell lines (NIH 3T3 and SW872) with appropriate statistical analysis (FDR < 0.05) and validation by qRT-PCR (Figures 3A-G). The hypergeometric analysis provides quantitative support for the overlap and uniqueness of the transcriptomes. PCA analysis confirms the distinct clustering patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "TAZ-CAMTA1 and YAP-TFE3 activate cancer-related signaling pathways including PI3K-Akt, Hippo, MAPK, and JAK-STAT pathways, as well as pathways related to focal adhesion and extracellular matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by iPathwayGuide analysis of RNA-Seq data (Figures 3H-I) and validated by qRT-PCR for specific genes (Figures 3F-G). The pathway analysis is appropriate for the data type and the validation strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "TAZ-CAMTA1 and YAP-TFE3 bind predominantly to distal intergenic/enhancer sequences marked by H3K27ac, maintain TEAD binding motif enrichment, but also show enrichment for non-TEAD motifs (EGR2 for TAZ-CAMTA1, MiTF for YAP-TFE3), indicating altered DNA binding properties compared to wild-type TAZ/YAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 are supported by ChIP-Seq data in biological triplicates with appropriate controls and validation by ChIP-qPCR (Figures 4A-H, Figure 4\u2014figure supplement 1). The motif enrichment analysis is unbiased and the overlap with H3K27ac marks provides independent validation of enhancer binding. The hypergeometric analysis quantifies the similarities and differences between fusion proteins and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "YAP-TFE3 co-immunoprecipitates with full-length TFE3, and disruption of the bHLH dimerization domain reduces anchorage-independent growth, suggesting TFE3 dimerization contributes to YAP-TFE3 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by co-immunoprecipitation and soft agar assay data (Figure 4\u2014figure supplement 2A). However, the mechanistic interpretation could be strengthened with additional experiments examining whether the bHLH mutation specifically disrupts TFE3 dimerization or has other effects on protein stability or localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Only 13-15% of differentially expressed genes are directly bound by the fusion proteins, indicating that the majority of transcriptional changes are indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by integrated analysis of RNA-Seq and ChIP-Seq data (Figure 4\u2014figure supplement 3A-B). This is an important observation that suggests the fusion proteins work through both direct and indirect mechanisms. The low percentage of direct targets is consistent with transcription factor biology where secondary effects are common.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "TAZ-CAMTA1 and YAP-TFE3 increase chromatin accessibility, particularly at distal regions from the TSS, with TAZ-CAMTA1 chromatin profile resembling CAMTA1 and YAP-TFE3 showing intermediate similarity to both YAP5SA and TFE3, and the majority of bound and differentially expressed genes are within euchromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 are supported by ATAC-Seq data in biological triplicates with appropriate analysis including hypergeometric testing and PCA (Figures 5A-G). The integration of ATAC-Seq with RNA-Seq and ChIP-Seq data provides strong evidence for the chromatin remodeling function of the fusion proteins. The quantitative analysis showing more accessible genes with fusion proteins than controls is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "BioID mass spectrometry identified 27 shared proximity interactors between TAZ-CAMTA1 and YAP-TFE3, enriched for epigenetic/transcriptional regulators including histone modifying enzymes, transcriptional regulators, and chromatin remodeling proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by BioID mass spectrometry in biological duplicates with SAINT analysis (Figures 6A-E). The filtering strategy to identify shared interactors is reasonable, though the requirement for increased interaction relative to full-length TAZ/YAP may exclude some relevant interactors. The functional classification is appropriate and informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "YEATS2 and ZZZ3, the top hits from the RNAi screen, are components of the ATAC histone acetyltransferase complex, and KAT14, a third ATAC complex subunit, was also identified by BioID, establishing the ATAC complex as a key interactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by the RNAi screen results (Figure 7C) and BioID data (Figure 6C). The convergence of two independent approaches (functional screen and proximity labeling) strongly supports the importance of the ATAC complex. The background information about ATAC complex function is well-cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Knockdown of YEATS2 or ZZZ3 reduces anchorage-independent growth in TAZ-CAMTA1-expressing cells, and KAT14 shows the strongest interaction with both fusion proteins by co-immunoprecipitation among ATAC complex subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by soft agar assays after shRNA knockdown (Figure 8\u2014figure supplement 1A-D) and co-immunoprecipitation experiments (Figure 8\u2014figure supplement 1E-G). The validation of BioID results by co-IP strengthens the conclusions. However, the experiments were repeated only twice, which is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Knockdown of YEATS2 or ZZZ3 alters the fusion protein transcriptomes, with greater effect on YAP-TFE3 than TAZ-CAMTA1, downregulating extracellular matrix proteins and key signaling pathways including MAPK and PI3K-Akt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by RNA-Seq after ATAC complex knockdown in biological duplicates with validation by qRT-PCR (Figures 8A-D, Figure 8\u2014figure supplement 2). The PCA analysis shows clear separation of knockdown samples from controls. The pathway analysis is appropriate and the validation by qRT-PCR strengthens the conclusions. However, biological duplicates are less robust than triplicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "71-74% of differentially expressed genes after YEATS2 or ZZZ3 knockdown are within euchromatin regions unique to YAP-TFE3-expressing cells, linking ATAC complex function to chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by integrated analysis of RNA-Seq and ATAC-Seq data (Figures 8E-F). This analysis provides mechanistic insight linking the ATAC complex to the chromatin remodeling function of the fusion proteins. The high percentage of affected genes within fusion-specific euchromatin is compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Vitronectin is expressed in all EHE clinical samples but essentially absent in epithelioid angiosarcoma and epithelioid hemangioma, suggesting it may be a diagnostic marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by immunohistochemistry on clinical samples (Figure 8H). The sample size (6 EHE, 6 epithelioid hemangioma, 5 epithelioid angiosarcoma) is modest but reasonable for a pilot study. The specificity of vitronectin expression for EHE is notable, though larger validation studies would strengthen this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Increased expression of YEATS2 or ZZZ3 predicts poorer prognosis across different sarcoma types in TCGA data, suggesting the ATAC complex may be a key oncogenic driver in multiple sarcomas beyond EHE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by Kaplan-Meier survival analysis using TCGA sarcoma data (Figures 8I-J). The analysis shows statistically significant associations between ATAC complex expression and survival. However, this is a correlative analysis across heterogeneous sarcoma types, and the mechanistic inference (C108) requires additional validation in other sarcoma models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C109",
+      "C110"
+    ],
+    "result": "The ATAC complex is a key epigenetic mediator of both TAZ-CAMTA1 and YAP-TFE3 oncogenic function, enabling the fusion proteins to simultaneously hyperactivate TEAD-based transcription and modulate chromatin environment, representing a potential therapeutic target for EHE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C109-C110 represent the central conclusion of the manuscript, supported by the convergence of multiple lines of evidence: BioID identifying ATAC complex interaction, RNAi screen showing functional requirement, RNA-Seq showing transcriptional dependence, ATAC-Seq showing chromatin effects, and co-IP validating interactions. The therapeutic potential (C110) is a reasonable inference but remains speculative without actual therapeutic studies.",
+    "result_type": "MAJOR"
+  }
+]

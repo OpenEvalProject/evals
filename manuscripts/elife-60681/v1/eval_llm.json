@@ -1,0 +1,483 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SNPC-1.3 is identified as a male germline-enriched variant of SNAPC1 that functions as a male-specific piRNA transcription factor in C. elegans. SNPC-1.3 co-purifies with SNPC-4 specifically from male (him-8) but not female (fem-1) mutants, and the interaction is robust during spermatogenesis but much weaker during oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C59-C62 are well-supported by mass spectrometry data (Figure 1C) showing sex-specific co-purification and co-IP experiments (Figure 1D) demonstrating developmental stage-specific interaction. The reciprocal co-IP confirms the biochemical interaction. The identification is a primary finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SNPC-1.3 colocalizes with SNPC-4 in nuclear foci specifically in the male germline. In hermaphrodites, no SNPC-1.3 signal is detected above background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C70-C72 are supported by immunofluorescence microscopy data shown in Figure 2C. The colocalization is clearly demonstrated in males but absent in hermaphrodites, providing strong visual evidence for male-specific localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "SNPC-1.3 is predominantly expressed in the germline and is highly enriched in males compared to females. Expression is reduced upon germline depletion (glp-1 RNAi and glp-4 mutant) and is dramatically higher in him-8(-) males versus fem-1(-) females at both mRNA and protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by multiple lines of evidence: qRT-PCR showing reduced expression upon germline depletion (Figure 2A), differential expression between males and females by qRT-PCR and Western blot (Figure 2B). The data consistently demonstrate male-enriched, germline-specific expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SNPC-4 is a core piRNA transcription factor required for all piRNA expression in both male and female germlines. Auxin-mediated depletion of SNPC-4 decreases both spermatogenesis- and oogenesis-enriched piRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by auxin-inducible degradation experiments with qPCR data (Figure 1A) showing decreased piRNA expression upon SNPC-4 depletion during both spermatogenesis and oogenesis. This confirms SNPC-4 as a core factor for all piRNA expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C95"
+    ],
+    "result": "SNPC-1.3 is required for male piRNA expression but not female piRNA expression. Loss of snpc-1.3 leads to dramatic reduction of male piRNAs in hermaphrodites during spermatogenesis and in males, while female piRNAs remain largely unaltered. Unexpectedly, female piRNAs are moderately upregulated in snpc-1.3(-) mutants during spermatogenesis. Small RNA-seq shows 85% of male piRNAs are depleted in snpc-1.3(-) mutants. SNPC-1.3 does not affect U1 snRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82, C87-C90, C95 are strongly supported by qPCR data (Figure 3A,B) and comprehensive small RNA-seq analysis (Figure 3C-F). The data show specific loss of male piRNAs with preservation of female piRNAs, and the unexpected upregulation of female piRNAs during spermatogenesis. The U1 snRNA control (Figure 3\u2014supplement 2A) demonstrates specificity to piRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Small RNA-seq analysis identifies 6,368 differentially expressed piRNAs between spermatogenesis and oogenesis in wild-type worms, with 4,060 male piRNAs and 2,308 female piRNAs. Male piRNAs show strong enrichment for the CNGTTTCA motif with 5' cytosine, while female piRNAs show weaker bias for 5' cytosine. 82% of male piRNAs overlap with previously identified spermatogenesis-enriched piRNAs. 73% of oogenesis-enriched piRNAs are upregulated in snpc-1.3(-) mutants during spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86, C91-C94 are supported by comprehensive small RNA-seq analysis with appropriate statistical thresholds (1.2-fold, FDR \u22640.05). The motif analysis (Figure 3E,F) confirms distinct male and female core motifs. The overlap with previous studies validates the findings. The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "SNPC-1.3 binds at male piRNA loci in a SNPC-4-dependent manner. ChIP-qPCR and ChIP-seq show SNPC-1.3 enrichment at piRNA clusters during spermatogenesis, which is lost upon SNPC-4 depletion. SNPC-1.3 binding is most enriched just upstream of the piRNA 5' nucleotide at male piRNA loci, overlapping the conserved core motif. Little evidence exists for SNPC-1.3 binding at female piRNA loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C96-C106 are strongly supported by ChIP-qPCR (Figure 4A) and genome-wide ChIP-seq data (Figure 4B-E). The SNPC-4 dependency is demonstrated by auxin-mediated depletion experiments. The binding profiles show clear enrichment at male piRNA loci with appropriate statistical significance (p<2.2\u00d710\u207b\u00b9\u2076). The data are reproducible across biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117"
+    ],
+    "result": "TRA-1 binds to the snpc-1.3 promoter and represses its expression during oogenesis. Three consensus TRA-1 binding sites are identified upstream of snpc-1.3. RNAi knockdown of tra-1 causes ectopic upregulation of snpc-1.3 during oogenesis. Mutation of TRA-1 binding sites reduces TRA-1 binding and increases snpc-1.3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C110, C112-C115, C117 are supported by multiple lines of evidence: identification of TRA-1 binding sites, ChIP-seq showing TRA-1 binding (Figure 5B), RNAi experiments (Figure 5C), and CRISPR-mediated mutation of binding sites with corresponding changes in expression. The data demonstrate direct transcriptional repression by TRA-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Loss of TRA-1 targeting causes ectopic expression of snpc-1.3 and male piRNAs during oogenesis. Small RNA-seq shows 1,370 piRNAs upregulated in snpc-1.3(2xtbs) mutants during oogenesis, with the majority overlapping male piRNAs. qPCR confirms male piRNAs are significantly upregulated in TRA-1 binding site mutants during oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C118-C121 are supported by small RNA-seq data (Figure 5D) and qPCR validation (Figure 5E) in TRA-1 binding site mutants. The ectopic expression of male piRNAs during oogenesis provides strong evidence for TRA-1-mediated repression. The data are consistent with the ChIP-seq results showing TRA-1 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Loss of snpc-1.3 leads to defects in male-dependent fertility. snpc-1.3(-) hermaphrodites show significantly reduced fertility at 25\u00b0C. Mating assays demonstrate that snpc-1.3(-) males produce smaller brood sizes when crossed with females, while snpc-1.3(-) females show normal fertility when crossed with wild-type males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C125-C130 are supported by fertility assays (Figure 6A,B) and mating experiments with GFP-marked males (Figure 6\u2014supplement 1A). The data consistently show male-specific fertility defects. The experimental design with reciprocal crosses appropriately controls for sex-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "snpc-1.3(-) males have defective spermatogenesis with abnormal sperm morphology and activation. snpc-1.3(-) spermatids rarely form normal pseudopodia, similar to prg-1(-) mutants. Time-lapse imaging shows snpc-1.3(-) spermatids spend less time in the intermediate state (2.9 vs 6.2 min) and sustain pseudopod growth for shorter periods (7.3 vs 24 min) before becoming immotile. snpc-1.3(3xtbs) sperm show normal pseudopod formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 are supported by sperm activation assays with morphological analysis (Figure 6C,D) and quantitative time-lapse imaging (Figure 6E). The data show clear defects in spermiogenesis with appropriate statistical analysis (p<0.05, Student's t-test). The rescue in snpc-1.3(3xtbs) mutants supports the specificity of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C158"
+    ],
+    "result": "Sexually dimorphic regulation of snpc-1.3 expression coordinates male and female piRNA expression during germline development. SNPC-1.3 functions as a male piRNA transcription factor that interacts with SNPC-4, preferentially binds male piRNA promoters, and is critical for male piRNA expression. Expression is highest during spermatogenesis and is regulated by TRA-1, which binds the snpc-1.3 promoter during oogenesis to repress transcription. SNPC-1.3 is crucial for maintaining the balance between male and female piRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C139-C148, C158 represent the main conclusions synthesizing all findings. These are well-supported by the collective evidence from expression analysis, localization, ChIP-seq, piRNA profiling, and TRA-1 regulation experiments. The model integrates multiple lines of evidence into a coherent mechanism for sex-specific piRNA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SNPC-4 interacts with both snRNA and piRNA transcriptional machinery. PRDE-1 and TOFU-5 co-purify with SNPC-4 in both male and female germlines. The C. elegans genome encodes four homologs each of SNAPC1 and SNAPC3, and six of eight homologs co-purify with SNPC-4 from both genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by mass spectrometry data (Figure 1B,C) showing co-purification of known piRNA factors and SNAPc homologs. The data demonstrate that SNPC-4 functions in both snRNA and piRNA pathways. The identification of multiple homologs is consistent with genome annotation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C116"
+    ],
+    "result": "snpc-4 mRNA is expressed at low levels during spermatogenesis but dramatically increases during oogenesis, suggesting low SNPC-4 levels are sufficient for male piRNA biogenesis. snpc-1.3 mRNA levels peak during spermatogenesis (L3 to early L4 stages). SNPC-1.3 protein shows increased expression in snpc-1.3(2xtbs) mutants during both spermatogenesis and oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109, C116 are supported by qRT-PCR data across development (Figure 5A) and Western blot analysis (Figure 5C). The expression profiles are consistent with the functional roles of these factors. The inference about SNPC-4 sufficiency is reasonable but could benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Female piRNAs show reduced expression during oogenesis upon upregulation of SNPC-1.3 in TRA-1 binding site mutants. The authors propose that SNPC-1.3 directly activates male piRNA transcription while indirectly limiting female piRNA transcription by sequestering core factors to male piRNA loci. Male and female piRNA transcription is not completely separable, and the balance may be dictated by allocation of shared core transcription factors like SNPC-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C124, C149-C157 include both supported observations (C122, C149, C150) and mechanistic models (C123-C124, C151-C157). The data show reciprocal effects on male and female piRNAs, but the proposed sequestration mechanism is speculative. Direct evidence for competition or sequestration is lacking. Alternative mechanisms (e.g., a female-specific factor) are acknowledged but not tested. The model is plausible but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "SNPC-1.3 requires SNPC-4 to bind at piRNA clusters, and the authors speculate the piRNA complex is assembled in a similar fashion to the snRNA complex. However, they cannot rule out that SNPC-4 loss only affects SNPC-1.3 stability rather than recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C163 are partially supported by ChIP data showing SNPC-4-dependent binding, but the authors acknowledge they cannot distinguish between recruitment and stability effects. The speculation about assembly similarity to snRNA complexes is reasonable but lacks direct evidence. Additional experiments (e.g., protein stability assays, order-of-assembly studies) would be needed to resolve this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "SNPC-1.3 is essential for proper spermiogenesis, and the authors hypothesize that global loss of male piRNAs is responsible for spermiogenesis arrest and fertility loss, though SNPC-1.3 may have other effects on male fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 are supported by sperm activation assays (Figure 6) showing defects in spermiogenesis. The hypothesis that male piRNA loss is responsible is reasonable given the correlation, but the authors appropriately acknowledge that SNPC-1.3 may have additional functions. The rescue of sperm morphology in snpc-1.3(3xtbs) mutants supports the piRNA-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims about piRNA function and sex-specific expression across species. piRNAs play essential roles in silencing repetitive elements and promoting fertility in metazoans. piRNAs are expressed in a sex-specific manner in worms, flies, and mammals. Loss of piRNA pathway components causes fertility defects and transposon activation in various organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C27 are background knowledge supported by appropriate citations to previous literature. These establish the context for the current study and are well-documented in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims about piRNA biogenesis mechanisms in Drosophila and mice. In Drosophila, piRNA clusters are in heterochromatin with H3K9me3, and Rhino recruits Moonshiner and Pol II. In mice, two waves of piRNA expression occur with different functions, and pachytene piRNAs require A-MYB and Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 are background knowledge supported by appropriate citations. These provide context for understanding piRNA transcription mechanisms in other organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Background claims about C. elegans piRNA biogenesis. SNPC-4 is essential for piRNA expression and is the C. elegans ortholog of SNAPC4. piRNAs are encoded in two large clusters on chromosome IV, individually transcribed by Pol II, and require an eight-nucleotide core motif. Male piRNAs are associated with a 5' cytosine in the core motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C49 are background knowledge supported by appropriate citations to previous work. These establish the foundation for the current study's investigation of sex-specific piRNA transcription factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Discussion claims about co-option of snRNA machinery for piRNA biogenesis. snRNA machinery has been hijacked at multiple stages in C. elegans piRNA biogenesis. The minimal snRNA SNAP complex is a heterotrimer that must assemble before DNA binding. Similarity exists between snRNA PSEs and piRNA core motifs. Type I and II piRNAs are distinguished by the core motif, with different factors required for each type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C169 are supported by appropriate citations and integrate previous findings with the current study. The discussion of snRNA/piRNA machinery parallels is well-grounded in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Discussion claims about piRNA function in C. elegans versus other organisms. Loss of piRNAs in male germline causes fertility defects. C. elegans has fewer transposable elements than humans, and C. elegans piRNAs bind targets by partial complementarity rather than perfect complementarity like Drosophila. Male piRNAs may regulate gene expression for spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C182 are supported by appropriate citations and reasonable inferences from the data. The speculation about male piRNA function (C180) is appropriately qualified. The comparison to other organisms provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Discussion claims about epigenetic inheritance and consequences of male piRNA misexpression. Sperm and oocytes pass epigenetic information including piRNAs to the next generation. Maternal piRNAs trigger 22G-RNA production for transgenerational memory. The authors predict that misexpression of male piRNAs during oogenesis may perturb female piRNA pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C184 are supported by appropriate citations. Claim C185 is a reasonable prediction based on the observed fertility defects in TRA-1 binding site mutants (Figure 6\u2014supplement 1B), though direct evidence is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Discussion claims about evolution of SNPC-1 paralogs. The authors speculate that gene duplication of snpc-1 occurred early in nematode evolution and allowed acquisition of new functions from snRNA to piRNA biogenesis. At least two SNPC-1 paralogs exist in the distantly related nematode Plectus sambesii. Co-option may have occurred in parallel with sex determination pathway evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C189 are largely speculative. Claim C188 about Plectus sambesii is stated as fact but no data or citation is provided. The evolutionary speculation (C186-C187, C189) is plausible but lacks direct phylogenetic or functional evidence. These are reasonable hypotheses for future investigation but are not well-supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Discussion claims about TRA-1 conservation and link to sex determination. TRA-1 controls sperm-to-oocyte decision by repressing male-promoting genes. Loss-of-function tra-1 mutants show masculinization. TRA-1 is conserved in nematodes, and TRA-1 binding motifs are present in snpc-1.3 promoters of related Caenorhabditis species, pointing to a conserved link between sex determination and piRNA biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C194 are supported by appropriate citations (C190-C192) and sequence analysis showing conserved TRA-1 binding sites (C193, Figure 6\u2014supplement 1C). The conclusion about conserved linkage (C194) is well-supported by the conservation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Summary claims: SNPC-1.3 is specified to the male germline, is essential for male piRNA expression, and is a major target of TRA-1 repression in the female germline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C197 are summary statements well-supported by the collective evidence from the study. These accurately reflect the major findings.",
+    "result_type": "MAJOR"
+  }
+]

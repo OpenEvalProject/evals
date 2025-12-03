@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "Convalescent COVID-19 sera contain robust IgG responses to SARS-CoV-2 S protein, with 990-fold higher antibody levels compared to healthy donors. Hospitalized patients show 4-fold higher antibody levels and 5-fold higher neutralization capacity than non-hospitalized patients, with strong correlation between antibody levels and neutralization (r=0.735). Older patients (>60) show 8-fold higher responses than younger patients (<35), while no sex differences were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C26 are well-supported by experimental Luminex assay data and neutralization assays shown in Figure 1. The statistical analyses are appropriate (Mann-Whitney U tests, Spearman correlation), sample sizes are adequate (n=50 COVID-19 patients, n=30 healthy donors), and p-values are reported. The findings are consistent with prior literature on COVID-19 antibody responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "COVID-19 convalescent sera show elevated antibodies binding to all hCoV S proteins compared to healthy donors, with the largest increases for SARS-CoV (123-fold) and MERS-CoV (11-fold), and more modest increases for seasonal coronaviruses (2-4-fold). No difference was observed for the tetanus toxoid control protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C27-C30 are supported by Luminex assay data in Figure 2a with appropriate statistical testing (Mann-Whitney U tests, p<0.0001 for most comparisons). The inclusion of tetanus toxoid as a negative control strengthens the specificity of the findings. The magnitude of cross-reactivity correlates with sequence homology, providing biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C69",
+      "C70"
+    ],
+    "result": "SARS-CoV-2 S protein depletion from COVID-19 sera reduces antibodies binding to other hCoV S proteins, with strongest depletion for SARS-CoV (61%) and MERS-CoV (25%), modest depletion for seasonal coronaviruses, and no depletion for hCoV-NL63 or tetanus toxoid control. No depletion was observed in healthy donor sera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37, C69-C70 are supported by depletion assay data shown in Figure 2b and supplements. The experimental design is sound with appropriate controls (tetanus toxoid, healthy donor sera). Individual variation is reported (up to 72% depletion for some patients), demonstrating transparency. The lack of depletion in healthy donors confirms specificity of cross-reactive antibodies to SARS-CoV-2 infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C71"
+    ],
+    "result": "The level of cross-reactivity (measured by antibody depletion) correlates with sequence identity between SARS-CoV-2 and other hCoV S proteins, with highest cross-reactivity for the most closely related coronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38 and C71 report a correlation (r=0.83, p=0.06) that does not reach statistical significance. While the trend is biologically plausible and consistent with other findings, the p-value of 0.06 means this specific correlation is not statistically significant by conventional standards. The claim requires cautious interpretation or additional data for full support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The S2 subdomain of the SARS-CoV-2 S protein is the main target for cross-reactive antibodies. S2 subdomain depletion resulted in 48%, 20%, and 19% mean reduction for SARS-CoV, MERS-CoV, and hCoV-OC43 respectively, while S1 depletion showed no reduction. S2 depletion correlated significantly with S2 sequence identity (r=0.90, p=0.03), while S1 depletion did not (r=0.23, p=0.67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C43-C51 are well-supported by S1/S2 subdomain depletion experiments shown in Figure 3. The differential depletion between S1 and S2 is clear and statistically significant. The correlation with S2 sequence identity (p=0.03) provides mechanistic support. The finding is consistent with known higher conservation of S2 versus S1 subdomains (C51, supported by citation and Supplementary file 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cross-reactive antibodies show moderate correlation with SARS-CoV-2 neutralization for SARS-CoV (r=0.545, p<0.0001), weak correlation for MERS-CoV, hCoV-HKU1, and hCoV-229E (r=0.3-0.32, p<0.05), and no correlation for hCoV-OC43 and hCoV-NL63. These correlations suggest cross-reactive antibodies form a minor component of neutralizing antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by correlation analyses shown in Figure 2\u2014figure supplement 3 with appropriate statistical testing (Spearman correlations). The interpretation that cross-reactive antibodies are a minor component of neutralizing antibodies (C42) is reasonable given the weak to absent correlations for most hCoVs. However, the functional significance of these cross-reactive antibodies remains unclear without direct neutralization assays against other hCoVs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "SARS-CoV-2 S protein vaccination in cynomolgus macaques induced cross-reactive antibodies to all hCoV S proteins, with strongest responses to SARS-CoV (3313-fold), MERS-CoV (168-fold), and hCoV-OC43 (106-fold), and weaker responses to seasonal coronaviruses. Cross-reactivity was detectable 2 weeks after first immunization, with no increase in tetanus toxoid control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C57, C61 are supported by experimental data from vaccinated macaques shown in Figure 4a and supplements. The study design is appropriate with baseline measurements (week 0) and post-vaccination timepoints. The inclusion of tetanus toxoid as negative control strengthens specificity. However, a limitation is that macaques were not tested for prior hCoV exposure (C76), which could confound interpretation of de novo versus boosted responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SARS-CoV-2 S protein depletion from vaccinated macaque sera resulted in 88-99% reduction of antibodies binding to SARS-CoV, MERS-CoV, and hCoV-OC43, and 75-92% reduction for seasonal coronaviruses, with virtually no depletion (3%) for tetanus toxoid control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by depletion assay data from vaccinated macaques shown in Figure 4b and supplements. The high depletion percentages (75-99%) for all hCoVs except tetanus toxoid demonstrate that vaccination-induced antibodies are predominantly cross-reactive. This is stronger evidence for de novo cross-reactive responses than the infection data, though the caveat about untested prior hCoV exposure (C76) remains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "SARS-CoV-2 mRNA vaccination in 45 na\u00efve humans induced cross-reactive antibodies to hCoV S proteins, with largest increases after second vaccination for SARS-CoV (62-fold), MERS-CoV (11-fold), and hCoV-OC43 (2.5-fold). Increases for hCoV-HKU1, hCoV-229E, and hCoV-NL63 (1.9-2.1-fold) were similar to tetanus toxoid control (1.7-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C62-C66 are supported by Luminex data from vaccinated humans shown in Figure 5. The study design with baseline and post-vaccination timepoints is appropriate. Statistical testing (Friedman test with Dunn's correction) is suitable for paired comparisons. The finding that increases for some seasonal coronaviruses match the tetanus toxoid control suggests these may reflect non-specific immune activation rather than true cross-reactivity, which is appropriately discussed (C79-C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Tetanus toxoid was included as a control protein throughout the study and confirmed specificity in COVID-19 patient sera and vaccinated macaque sera. However, a significant increase in tetanus toxoid antibodies was observed following mRNA vaccination in humans, indicating non-specific immune activation by the Pfizer-BioNTech vaccine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by experimental data and citation (van Gils et al., 2021). The observation of non-specific immune activation is important for interpreting the human vaccination data (C65), as it suggests some of the modest increases in seasonal coronavirus antibodies may not represent true cross-reactivity. This is a strength of the study design that the authors appropriately acknowledge and discuss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "In 50 COVID-19 patients, there was no evidence of a clear association between the presence of cross-reactive antibodies and COVID-19 disease severity based on principal component analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by PCA data shown in Figure 2\u2014figure supplement 4. The analysis appropriately includes multiple variables (antibody levels to all hCoVs, neutralization, age, etc.) and shows that cross-reactive antibodies do not contribute strongly to separation by disease severity. However, the sample size (n=50) and observational design limit the ability to definitively rule out associations, particularly for subgroups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Higher cross-reactive antibody responses are observed for hCoVs more closely related to SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by data showing stronger responses to SARS-CoV and MERS-CoV compared to seasonal coronaviruses across infection (C2-C3, C27-C29), macaque vaccination (C53, C55-C56), and human vaccination (C64-C65) studies. The correlation with sequence identity (C38, C48) provides additional support, though one correlation does not reach significance (p=0.06).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C87",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The findings support the feasibility of pan-coronavirus vaccine development and provide guidance for vaccine design. The authors propose that the S2 subdomain should receive more attention in vaccine design, and suggest a S2-based booster vaccine could amplify and broaden immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C81, C87, C92-C94 represent conclusions and recommendations based on the experimental findings. While the data demonstrate cross-reactive antibodies can be induced, the feasibility of a pan-coronavirus vaccine requires additional evidence: (1) demonstration that cross-reactive antibodies provide functional protection against other coronaviruses (neutralization or in vivo protection studies are lacking), (2) assessment of whether S2-targeted responses can be sufficiently immunogenic, and (3) evaluation of potential safety concerns like ADE. The recommendations are reasonable directions for future research but overstate what the current data support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cynomolgus macaques used in the vaccination study are unlikely to have encountered hCoVs, though infections have been described in the literature, and animals were not tested for prior hCoV infection before study entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 accurately describe a limitation of the macaque study. The statement is appropriately cautious (\"unlikely\") and acknowledges both the citation showing possible infections (C75) and the lack of pre-study testing (C76). This is an important caveat for interpreting whether vaccination-induced cross-reactive antibodies represent de novo responses versus boosting of pre-existing immunity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The observation that not all sera reached 100% depletion could indicate conformational differences between hCoV S proteins, though all proteins were confirmed to form trimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a reasonable speculation supported by the depletion data and protein characterization (Figure 2\u2014figure supplement 5). The authors appropriately present this as speculation (\"we suspect\") rather than a definitive conclusion. Conformational differences between prefusion-stabilized vaccine antigens and native viral proteins could explain incomplete depletion and is an important consideration for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The influence of S2 pre- versus post-fusion conformation on cross-reactivity remains unknown as only postfusion S2 constructs were available. However, others have described protective neutralizing antibodies and antibody effector functions targeting the S2 subdomain, and few S2 mutations are reported in SARS-CoV-2 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 appropriately acknowledge limitations (C88) while citing relevant literature (C89-C91) to support the potential of S2-targeted vaccines. The citations provide evidence for S2 antibody functionality and conservation. However, the current study does not directly test S2 antibody function, so recommendations for S2-based vaccines (C87, C92) remain speculative pending functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C25",
+      "C67",
+      "C72",
+      "C73",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background claims about vaccine efficacy against variants, coronavirus epidemiology, sequence identity between coronaviruses, prior observations of cross-reactivity, and potential concerns about ADE are supported by citations to published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C19, C25, C67, C72-C73, C82-C85 are background/context claims supported by appropriate citations to published literature. These provide necessary context for the study but are not primary findings. The citations appear appropriate and the claims are consistent with established knowledge in the field as of the publication date (2021).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C25",
+      "C26"
+    ],
+    "result": "The Quadratic Color Model (QCM) with 6 free parameters explains the same cross-validated variance as a conventional General Linear Model (GLM) with 41 free parameters when modeling V1 BOLD fMRI responses to chromatic modulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, and C26 demonstrate that the QCM achieves similar or slightly better cross-validated R\u00b2 compared to the GLM (Figure 4), despite having far fewer parameters (C12: 6 vs C13: 41). The cross-validation procedure (C88-C90) properly accounts for model complexity, making this a fair comparison. The replication across measurement sets strengthens this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C91",
+      "C92"
+    ],
+    "result": "The QCM generalizes to predict V1 responses to untested chromatic directions through leave-session-out cross-validation, with better generalization from Session 1 to Session 2 than vice versa, likely due to Session 1 including directions that better constrain model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C27 are supported by leave-session-out cross-validation results (C91-C92) shown in Figure 5 and supplements. The asymmetric generalization performance (C28) is explained by the experimental design (C29), where Session 1 includes chromatic directions near the major axis of the ellipse. This demonstrates both the model's generalization capability and its sensitivity to stimulus sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C20"
+    ],
+    "result": "Results replicate well across two independent measurement sets for each of three subjects, demonstrating reliability of the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by consistent results across Measurement Sets 1 and 2 (C20) shown throughout Figures 2, 6, 7, and other results sections. The replication design with randomized stimulus orders across measurement sets provides strong evidence for reliability. Agreement is demonstrated both within and across subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Within the LM cone contrast plane, V1 is most sensitive to L-M contrast modulations and least sensitive to L+M modulations, with approximately 5-fold difference in sensitivity as indicated by elliptical isoresponse contours oriented at ~45\u00b0 with minor axis ratios of 0.15-0.25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are supported by the QCM isoresponse contours (Figure 6) showing consistent ellipse angles of ~45\u00b0 (C14) across all subjects and measurement sets. The minor axis ratios of 0.15-0.25 (C16) translate to the ~5-fold sensitivity difference (C17). The interpretation (C15) correctly follows from the model definition. This finding replicates across subjects and measurement sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Within V1, there is little to no systematic change in chromatic sensitivity (ellipse angle or minor axis ratio) as a function of eccentricity from 0\u00b0 to 20\u00b0, though parameter variability exists at each eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C32 are supported by cortical surface maps (Figure 8) and scatter plots (Figure 9, Tables 1-2) showing minimal systematic variation in QCM parameters with eccentricity. While C34 notes that changes from 0\u00b0 to 20\u00b0 are small compared to vertical spread, and some parameter changes exceed measurement-to-measurement variability (Tables 1-2), the overall conclusion of little systematic change is justified. Outside V1, lower R\u00b2 and higher variability (C33) appropriately limit conclusions to V1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "V1 BOLD responses generally increase with contrast for each chromatic direction, but the rate of increase varies substantially with chromatic direction, requiring ~60% contrast in the 45\u00b0 direction versus ~12% in the -45\u00b0 direction to elicit similar responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are directly supported by contrast response functions in Figure 2 and supplements. The monotonic increase with contrast (C21) is expected and observed. The direction-dependent sensitivity (C22) is quantified by the specific example (C23) showing 5-fold difference in contrast requirements. This provides the empirical basis for the QCM's elliptical isoresponse contours.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The single Naka-Rushton nonlinearity of the QCM accurately captures the dependence of GLM beta weights on equivalent contrast across all chromatic directions without apparent bias, though stimuli did not drive responses into the saturated regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by Figure 7 showing GLM beta weights plotted against equivalent contrast with good agreement to the QCM nonlinearity across all chromatic directions. However, C31 notes an important limitation: the stimuli did not reach saturation, meaning the shape of the nonlinearity at high contrasts is not constrained. This limits conclusions about the precise form of the nonlinearity but supports the separability assumption of the QCM within the tested range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The GLM achieved median R\u00b2 values of 0.41 (Measurement Set 1) and 0.32 (Measurement Set 2) for Subject 2 when fitting V1 BOLD time courses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 directly reports GLM fit quality metrics for Subject 2, supported by Figure 3. These R\u00b2 values provide context for evaluating the QCM performance. The difference between measurement sets may reflect variation in data quality or other factors, but both values indicate meaningful stimulus-driven variance is captured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "An alternative Linear Channels Model (LCM) accounts for the data about as well as the QCM, with isoresponse contours that approximate but are not perfectly elliptical, while constraining the QCM ellipse angle to 0\u00b0 results in noticeably lower cross-validated R\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by Figure 4\u2014supplement 1 and Figure 6\u2014supplement 1. The LCM achieves similar cross-validated R\u00b2 to the QCM (C100), with approximately elliptical but not perfect isoresponse contours (C101). The constrained QCM with angle locked to 0\u00b0 shows noticeably lower R\u00b2 (C102), demonstrating that the data have power to reject incorrect isoresponse contour shapes. This validates that the elliptical form is empirically supported, not just assumed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C40",
+      "C41",
+      "C42",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The experimental design used spatially uniform (0 c.p.d.) chromatic temporal modulations at 12 Hz in 8 chromatic directions at 5 log-spaced contrast levels, presented in 12-second blocks to three subjects with normal color vision, who performed an attention task with 100% accuracy across 960 total blocks per subject.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C40-C42, C56-C68 provide a comprehensive description of the experimental design, stimuli, subjects, and task performance. These are methodological specifications directly stated in the Materials and Methods section. The 100% attention task performance (C67) confirms subjects maintained attention throughout. This establishes the experimental foundation for all results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Stimuli were generated using a OneLight Spectra digital light synthesis device with 56 independent primaries, employing silent substitution to selectively modulate cone photoreceptors while accounting for eccentricity-dependent cone fundamentals and age-related lens density, with spectroradiometric validation before and after each session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 describe the stimulus generation and calibration procedures. These are methodological details directly stated in Materials and Methods, with validation measurements provided in Tables 5-7. The approach to account for eccentricity-dependent cone fundamentals (C50-C51) is a methodological strength that distinguishes this study from prior work and is relevant to interpreting the eccentricity results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "MRI data were acquired using HCP LifeSpan protocol on a 3T Siemens Prisma, preprocessed using HCP minimal preprocessing pipeline with ICAFIX denoising, motion censoring (FD > 0.5), and polynomial detrending, with V1 ROI defined using neuropythy anatomical template (0-20\u00b0 eccentricity), and models fit using leave-runs-out cross-validation with bootstrap error estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C95 comprehensively describe MRI acquisition, preprocessing, ROI definition, and analysis procedures. These are standard methodological details directly stated in Materials and Methods. The preprocessing steps (C75-C79) are appropriate for fMRI data. The cross-validation strategy (C88-C90) is properly designed to evaluate model performance. Code availability (C95) supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work establishes that psychophysical evidence supports cone-opponent (S-(L+M), L-M) and luminance (L+M) mechanisms, with physiological correlates in retinal ganglion cells and LGN, but studies have not converged on a widely accepted quantitative model of V1 chromatic response properties, partly due to considerable heterogeneity across individual neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 accurately summarize prior literature through appropriate citations. These claims establish the scientific context and motivation for developing the QCM. The citations support the statements about psychophysical mechanisms (C8), physiological evidence (C9), lack of consensus on V1 models (C10), and neuronal heterogeneity (C11). This provides appropriate background for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C96",
+      "C97"
+    ],
+    "result": "Prior fMRI work by Engel et al. (1997) found V1 BOLD signals maximally sensitive to L-M modulations at low temporal frequencies, with elliptical isoresponse contours similar to psychophysical isothreshold contours, though at higher temporal frequencies psychophysical contours shift to favor L+M sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C96-C97 accurately cite prior work by Engel et al. (1997) and related studies. These citations establish precedent for using elliptical isoresponse contours (C36) and provide context for the current findings. The temporal frequency dependence noted (C97) is relevant for interpreting the current results at 12 Hz. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior fMRI studies by Mullen et al. (2007) and Vanni et al. (2006) reported decreased V1 response to L-M modulations with eccentricity (attributed to random cone-ganglion cell connections), while D'Souza et al. (2016) found no change (supporting selective connections), differing from the current study's finding of no change in chromatic sensitivity with eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 accurately summarize prior fMRI studies and their interpretations. The comparison to the current results (C113) is appropriate. However, the evaluation notes important methodological differences between studies (stimulus properties, accounting for eccentricity-dependent cone fundamentals) that complicate direct comparison. The citations appear accurate and the discrepancies are acknowledged in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Variation in macular pigment and photopigment optical density can produce eccentricity-dependent deviations in cone contrast that prior studies did not account for, while the current study designed stimuli to produce the same contrasts in 2\u00b0 and 15\u00b0 cone fundamentals, with the lack of variation in chromatic sensitivity with eccentricity parsimoniously explained by retinal output that preserves chromatic sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 identify an important methodological consideration (eccentricity-dependent cone fundamentals) that distinguishes the current study from prior work. The current study's approach (C120) addresses this potential confound. However, the interpretation (C121) that retinal output preserves chromatic sensitivity is one possible explanation but not uniquely determined by the data, as acknowledged in the discussion. The claim is appropriately qualified as 'parsimonious' rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C12"
+    ],
+    "result": "The QCM assumes that elliptical isoresponse contours maintain constant aspect ratio and orientation across response levels (only scale changes), with the minor axis corresponding to the most sensitive chromatic direction and the major axis to the least sensitive direction, parameterized by 6 free parameters total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C12 describe fundamental assumptions and structure of the QCM model. These are definitional statements about the model as designed by the authors. The assumption of constant aspect ratio and orientation (C37) is a key constraint that makes the model tractable. The definitions of minor and major axes (C38-C39) follow from standard geometric interpretation. The 6-parameter structure (C12) is clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "A quadratic isoresponse contour can be produced by a quadratic mechanism computing the sum of squared responses of two underlying linear mechanisms, but the isoresponse contours do not uniquely determine the sensitivity of underlying linear mechanisms, even within the QCM framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 correctly describe theoretical considerations about the relationship between quadratic isoresponse contours and underlying mechanisms, with appropriate citation to Poirson et al. (1990). This acknowledges an important limitation: the QCM characterizes the aggregate response but does not uniquely identify the underlying neural mechanisms. This is an appropriate caveat for interpreting the model parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The spatially uniform 12 Hz stimuli could drive 'color', 'luminance', and 'color-luminance' cells, with 0 c.p.d. stimuli presumably producing strong responses in color cells (low-pass spatial filters), and the ~5-fold L-M vs L+M sensitivity ratio matching the ratio of color cell vs luminance/color-luminance cell firing rates at low spatial frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 attempt to relate the QCM results to single-cell electrophysiology. While the comparison to firing rate ratios from Schluppeck and Engel (2002) analyzing Johnson et al. (2001) data is interesting (C105-C106), this connection is speculative. The inference about which cell types are driven (C103-C104) is reasonable but not directly tested. The 12 Hz temporal frequency may shift responses relative to the cited analysis. The aggregate BOLD response reflects a complex mixture of cell types, making direct comparisons uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The data do not distinguish whether V1 response properties are inherited from the LGN or shaped by V1 processing, though the stimuli would robustly drive LGN cells projecting to V1, and the measured sensitivities may be inherited from earlier stages or affected by cortical feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 appropriately acknowledge a fundamental limitation of the fMRI approach: spatial localization to V1 does not determine the processing stage responsible for the observed response properties. The inference that stimuli would drive LGN cells (C108) is reasonable based on stimulus properties and citation to Lankheet et al. (1998). The speculation about possible sources (C109) is appropriately qualified. This is an important caveat for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Prior electrophysiology work by Horwitz and Hass (2012) found that roughly half of macaque V1 neurons were best fit by quadratic isoresponse surfaces (some ellipsoidal, some hyperbolic) while the other half were fit by linear models with parallel plane isoresponse surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 accurately cite prior single-cell electrophysiology work. This provides relevant context showing that quadratic models have been used at the single-neuron level, though with diverse response properties. The connection to the current aggregate BOLD measurements is appropriately noted as challenging to establish directly. The citations appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Studies show random or close-to-random L- and M-cone inputs to midget ganglion cells in the periphery, though not all studies agree, and possible cortical compensation mechanisms include supra-threshold compensation (as postulated in contrast perception and anomalous trichromacy) or differential integration area changes, though the latter is not supported by pRF measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 accurately summarize relevant literature on retinal wiring and possible compensation mechanisms. The citations to conflicting findings (C122-C123) appropriately acknowledge uncertainty in the field. The speculation about compensation mechanisms (C124-C125) is appropriately qualified and cites relevant precedents. The citation ruling out differential integration area (C126) is appropriate. These claims provide context for interpreting the eccentricity results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The QCM could potentially be generalized to the full L-M-S cone contrast space using ellipsoidal isoresponse surfaces, to different temporal frequencies to examine sensitivity changes, and to different spatial frequencies to model responses to complex spatial stimuli, which would place constraints on forward models of BOLD response to chromatic modulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 appropriately describe potential future extensions of the QCM framework. These are reasonable proposals for future work based on the current model structure. The connection to forward models of BOLD response (C131-C133) is appropriate, noting that how to generalize such models to chromatic modulations is currently unknown (C132). These are appropriately framed as speculation about future work rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The research was approved by the University of Pennsylvania IRB, all subjects gave informed written consent and were compensated, and the experimental procedures for Measurement Set 1 were preregistered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 document ethical approval, informed consent, compensation, and preregistration. These are standard ethical and methodological practices that are appropriately documented. Preregistration (C45) is a strength that enhances confidence in the results, particularly for Measurement Set 1.",
+    "result_type": "MINOR"
+  }
+]

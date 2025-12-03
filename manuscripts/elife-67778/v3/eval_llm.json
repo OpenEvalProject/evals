@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C170",
+      "C171",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The study employed a double-blind, placebo-controlled, within-subjects design with 62 participants (after exclusions) who received 150 mg levodopa or placebo in counterbalanced order across two sessions approximately one week apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 and C170-C181 collectively describe a rigorous experimental design with appropriate blinding, counterbalancing, ethical approval, and sample size justification (C173). The within-subjects design with adequate washout period and standardized procedures (fasting, training criteria) supports valid pharmacological manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Participants performed a dual-outcome bandit task ('Magic Castle') with extensive training on vehicle-destination mappings, featuring standard trials (2/3) and uncertainty trials (1/3) where a 'ghost' covertly nominated one vehicle from a chosen pair, with rewards drifting according to Gaussian random walks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 and C182-C195 describe a well-designed task adapted from Moran et al., 2019 (C182) with rigorous training procedures ensuring all participants achieved criterion knowledge (C187-C189). The task structure enables dissociation of MF and MB processes through standard and uncertainty trials with informative/non-informative destinations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The task design dissociates model-free (MF) and model-based (MB) credit assignment: MF systems update values only for chosen vehicles based on observed rewards, while MB systems update destination values and compute on-demand vehicle values prospectively, enabling generalization across vehicles sharing destinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C88-C90 describe established theoretical distinctions between MF and MB systems (citing Moran et al., 2019) that are operationalized in the task design. The logic is sound and consistent with dual-system reinforcement learning theory (C7-C8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In uncertainty trials, a pure MF system cannot preferentially assign credit to the ghost-nominated versus ghost-rejected vehicle, but an MB system can retrospectively infer the ghost's choice from the informative (second) destination and guide MF credit assignment preferentially to the nominated vehicle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C68 and C73-C76 present a logically coherent argument about how MB inference can guide MF learning in uncertainty trials. The reasoning is sound: the first destination is non-informative (C58), the second destination enables retrospective inference (C59-C60), and this can guide preferential MFCA (C61-C63, C67-C68). This forms the theoretical basis for the main hypothesis (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Model-agnostic analyses replicated previous findings of MF choice repetition (common reward effect: b=0.67, p<0.001) and MB choice generalization (common reward effect: b=0.40, p<0.001), but found no significant drug \u00d7 reward interactions, providing no evidence that levodopa modulated MF or MB contributions directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 report clear statistical findings with appropriate tests (mixed effects models) replicating prior work (Moran et al., 2019). The lack of drug effects on standard MF and MB measures (C50, C52) is well-documented with non-significant interactions (p=0.500, p=0.695), supporting the conclusion in C54.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "For the informative destination in uncertainty trials, there was a significant nomination \u00d7 drug interaction (b=0.11, p=0.007), with preferential MF credit assignment to the ghost-nominated vehicle significant under levodopa (b=0.09, p=0.003) but not placebo (b=-0.02, p=0.474).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 report the key finding with appropriate statistics from mixed effects models. The significant interaction (C70) followed by simple effects analysis (C71) provides strong evidence for the hypothesis that levodopa enhances MB-guided MF credit assignment (C72). This is the primary result supporting the main claim (C3, C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "For the non-informative destination in clash trials, there was a marginally significant main effect of reward (b=0.13, p=0.051) but no significant drug \u00d7 reward interaction (b=0.05, p=0.696), yielding no evidence that levodopa enhanced preferential MFCA based on non-informative outcomes, though an unexpected main effect of drug on choice repetition was observed (b=0.15, p=0.021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C83 report mixed findings: the expected PMFCA effect was only marginally significant (C78), the key drug interaction was non-significant (C80-C81), but an unexpected main drug effect emerged (C82) that was specific to this trial subset and not replicated in computational modeling (C83). This inconsistency and the marginal/non-significant key effects create uncertainty about MB guidance via non-informative destinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "A computational reinforcement learning model was developed with five free MFCA parameters (one for standard trials, four for uncertainty trials by nomination/informativeness), with parameter inclusion validated through systematic model comparisons and reanalysis of prior data (Moran et al., 2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C91-C93 describe the rationale and validation of the computational model. The model addresses limitations of trial-by-trial analyses (C84) by incorporating full task history (C85), includes theoretically motivated parameters (C91), and was validated through model comparison (C92) and replication on independent data (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Computational modeling confirmed no drug effects on standard MFCA or MBCA parameters, but revealed a significant nomination \u00d7 drug interaction (b=0.10, p=0.015) for uncertainty trials, with PMFCA significant under levodopa (b=0.13, p=0.003) and stronger than placebo (b=0.07, p=0.034), with a main drug effect (b=0.10, p=0.017) across both informative and non-informative destinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 report computational modeling results that converge with model-agnostic analyses for standard trials (C95) and extend findings for uncertainty trials. The significant nomination \u00d7 drug interaction (C96-C97) and main drug effect (C99-C100) provide robust evidence across both destination types (C98, C101), strengthening the primary conclusion about levodopa's effect on MB-guided MFCA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Inter-individual differences analysis revealed a significant negative correlation between drug effects on aPMFCA and MBCA (r=-0.30, p=0.017), with a significant drug \u00d7 \u0394MBCA-split interaction (b=-0.17, p=0.042): participants with negative \u0394MBCA showed significant increases in aPMFCA under levodopa (b=0.18, p=0.002), while those with positive \u0394MBCA showed no significant change (b=0.02, p=0.749).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 report a coherent pattern of inter-individual differences with appropriate statistics (correlation, median split, mixed effects model with interaction). The negative correlation (C102) is unpacked through median split analysis (C103-C104) and confirmed with interaction analysis (C105-C107), suggesting heterogeneity in how levodopa affects different MB processes across individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C168"
+    ],
+    "result": "Levodopa enhanced MB guidance of MF credit assignment without directly impacting MF and MB influences, with drug effects on MB guidance of MFCA negatively correlated with drug effects on pure MBCA, providing the first human evidence that dopamine directly influences cooperative interactions between MB and MF systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C23-C25, and C108-C112 summarize the main findings, which are well-supported by the model-agnostic analyses (C48-C54, C69-C72), computational modeling (C95-C101), and inter-individual differences (C102-C107). The convergence of evidence across multiple analytical approaches (C168) and the specificity of the effect (enhanced MB-guided MFCA but not direct MF/MB effects) strongly support this novel conclusion (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C110",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The negative correlation between drug effects on MB guidance of MFCA and pure MBCA possibly reflects a trade-off between these two MB components of behavioral control, with data suggesting between-subject heterogeneity in how boosting dopamine affects distinct aspects of MB influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6 and C124-C126 propose a trade-off interpretation of the negative correlation (C102), but this is explicitly speculative (C6 includes 'possibly reflecting'). While the correlation is statistically significant, the mechanistic interpretation as a 'trade-off' (C126) versus other explanations (e.g., individual differences in baseline DA, masking effects C124) remains uncertain without additional evidence. The heterogeneity observation (C125) is supported but the trade-off mechanism is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C122",
+      "C123",
+      "C129"
+    ],
+    "result": "Dopamine boosts exploitation of task structure to facilitate retrospective MF learning, indicating enhanced integration of MB information in DA signaling, with the novel task separating two MB processes and revealing that only MB guidance of MFCA (not pure MB control) was sensitive to DA enhancement at the group level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 and C122-C123 provide interpretation of the findings that is well-grounded in the data. The task successfully separated two MB processes (C122), and the selective effect on MB-guided MFCA (C123, C129) is clearly demonstrated. The interpretation about enhanced MB information integration (C114) is supported by citation (Sadacca et al., 2016) and consistent with the pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Model-agnostic and computational modeling approaches showed some inconsistencies: the repeat vs. switch effect was not significant under placebo alone in model-agnostic analysis but reached significance in computational modeling, and the drug effect on non-informative destinations was non-significant in model-agnostic analysis but significant in computational modeling, likely due to computational modeling's superior sensitivity from using full task history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C165 acknowledge and explain discrepancies between analytical approaches. The authors provide reasonable explanations: weak-to-moderate effect sizes (C162), computational modeling's use of full task history versus single-trial effects (C163-C164), and greater statistical power from using all trials (C164). This transparent reporting of inconsistencies and methodological limitations strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The study remains agnostic to underlying neural mechanisms but speculates that prefrontal working memory or hippocampal replay mechanisms may contribute to the two MB processes, with levodopa potentially affecting prefrontal DA levels (enhancing working memory) or hippocampal reverse replay (mediating retrospective state inference), though the striatal versus prefrontal DA origin of effects remains equivocal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C151 extensively discuss potential neural mechanisms but are explicitly speculative (C140, C144, C148). While the speculation is informed by relevant literature (C118-C119, C141, C147, C149, C151), the study design cannot distinguish between prefrontal versus striatal DA effects (C117), working memory versus replay mechanisms (C145-C146), or test the specific predictions about enhanced replay (C150). These remain hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Despite theoretical predictions that phasic DA should affect MF learning, there is no compelling human evidence for direct DA impact on MF learning or control in tasks with dynamically changing reward contingencies, possibly because dynamic reward schedules lessen sensitivity to detect changes in incremental MF processes, with DA effects varying as a function of contextual task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 provide a well-reasoned explanation for the lack of direct MF effects, supported by citations to theoretical predictions (C131), empirical evidence (C132, C135), and logical inference about task design (C133-C134). The argument that dynamic reward schedules reduce sensitivity to MF changes (C134) is plausible and supported by citation (Doll et al., 2016), explaining the pattern of results across studies (C136).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The findings have implications for understanding psychiatric symptoms and addiction, suggesting that cooperative MB-MF processes may be particularly sensitive to DA enhancement and prevalent in early goal-directed drug seeking, and that differential sensitivity of distinct MB processes to DA provides a potential target for understanding variability in treatment responses to DA-boosting agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C156 discuss clinical implications but are largely speculative. While MB influences have been studied in psychiatric contexts (C152, citations provided), the specific implications for addiction (C153-C155) and treatment response variability (C156) are extrapolations from the current findings without direct evidence. The suggestions are plausible and well-reasoned but require empirical validation in clinical populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C46",
+      "C47",
+      "C116"
+    ],
+    "result": "Prior work established that dopamine signals MF reward prediction errors and influences MB credit assignment and choice, with evidence from animal studies (optogenetics, neural recordings) and human studies (neuroimaging, genetics, pharmacology), though previous tasks could not dissociate MB guidance of MFCA from pure MB influences, motivating the current study design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C19 summarize established background knowledge with appropriate citations to animal and human studies. The critical observation about limitations of prior tasks (C18, C47, C116) is well-supported and provides clear motivation for the current study's novel task design (C19, C46). This background appropriately contextualizes the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C22",
+      "C64"
+    ],
+    "result": "The study hypothesized that enhancing dopamine would strengthen MB guidance of MFCA and enhance MB influence over choice, based on previous work showing positive DA influence on MB control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C64 state the study's hypotheses, which are clearly motivated by prior literature (C14-C17) and the novel task design (C19). The hypotheses are testable and appropriately operationalized in the experimental design. Note that the hypothesis about MB influence over choice was not supported (C24, C121), but the hypothesis about MB guidance of MFCA was confirmed (C3, C23).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C167",
+      "C172",
+      "C173"
+    ],
+    "result": "The study acknowledges that reported effects were small to moderate, particularly for inter-individual differences, and that previous DA drug studies used small samples prone to overestimating effect sizes, leading to conservative sample size determination (d=0.35, n=62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167, C172-C173 provide transparent reporting of effect sizes and sample size justification. The acknowledgment of small-to-moderate effects (C167) is consistent with the reported statistics, and the conservative approach to sample size determination (C173) based on concerns about prior studies (C172) demonstrates appropriate methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C166",
+      "C169"
+    ],
+    "result": "The computational models are conceptually similar to those in Moran et al., 2019 with modified parameterizations, and the findings provide a unified perspective on previous research suggesting a closely integrated architecture for MB-MF interactions under DA-mediated cooperation to improve learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166 and C169 appropriately contextualize the modeling approach and synthesize the findings. The connection to prior work (C166) ensures continuity while the modifications allow testing of novel hypotheses. The synthesis (C169) is well-supported by the convergence of evidence across multiple analyses and consistency with prior animal and human research.",
+    "result_type": "MINOR"
+  }
+]

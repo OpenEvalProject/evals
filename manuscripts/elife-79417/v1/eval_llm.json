@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "During infancy in mandrills, paternal half-siblings show significantly greater facial resemblance than maternal half-siblings or non-kin. Using a retrained VGG-Face deep learning model on 204 images of 80 infants (0-1 year), the authors found that paternal half-sibs and infants conceived during the same alpha male's tenure had lower facial distances than other dyads, while maternal half-sibs showed no increased resemblance compared to non-kin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 provide converging evidence from deep learning facial recognition analysis (C32-C33, C39-C40), genetic/behavioral data (C34-C38), and statistical modeling (C40-C41, Figure 1, Table 1). The methodology is well-described with appropriate controls for confounding variables (age, sex, maternal identity). The finding extends previous work to the infant age class with a robust sample size and validated computational approach (93.42% identification accuracy, C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Mandrill mothers preferentially associate with infants that facially resemble their own offspring, and this maternal behavior leads to increased spatial association among similar-looking infants. Mothers and infants both show significant positive associations with similar-looking infants (C44-C45), while mother-mother associations are independent of offspring facial resemblance (C46). Infants follow/approach mothers in 97.6%/89.4% of events (C53-C54), and 71% of infant-infant association variance is explained by mother-infant associations (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C57 present multiple converging lines of evidence from GLMM analyses controlling for matrilineal origin, maternal relatedness, rank, and infant characteristics (Table 2, Figure 2). The directionality analyses (C53-C56) strengthen causal inference that mothers drive infant associations. The lack of mother-mother association effects (C46, C49) and minimal grooming (C50-C51) rule out alternative explanations. Statistical rigor is appropriate with negative binomial models for count data and proper control variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C97",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors develop a theoretical model demonstrating that mothers can gain direct fitness benefits by promoting associations between their offspring and paternal half-siblings through a mechanism termed 'second-order kin selection'. The model uses Price equation formalism (C97) and shows that maternal behavior increasing offspring cooperation likelihood is favored (C101) through identity disequilibrium (C105-C107), where infants similar at phenotypic loci are also similar at cooperation loci due to shared paternity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C111 present a mathematically coherent theoretical framework grounded in established inclusive fitness theory (C30, citations to Hamilton 1964, Gardner et al. 2011). The model appropriately uses Price equation formalism (C97) and identity disequilibrium concepts (C106-C107, citing Sved 1971, Grafen 1990). The logic connecting phenotypic similarity to cooperation through shared paternity is sound (C105), and the model correctly identifies key conditions (high reproductive skew C104, reciprocal interactions). However, the model makes strong assumptions about cooperation payoffs and requires empirical validation of long-term reciprocal interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors evaluate and largely reject the alternative hypothesis that fathers drive the observed facial resemblance patterns. While paternal care exists in some promiscuous primates (C61), mandrill males show minimal paternal care (C62), are only present ~50% of the time when infants are born (C65-C66), and do not maintain proximity with infants or mothers (C67). The authors conclude maternal behavior is the most plausible explanation (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C68 provide circumstantial evidence against paternal involvement through male residency patterns (C64-C66) and observational data on lack of paternal care (C62, C67). However, the evidence is incomplete: C62 and C67 rely on personal observations without quantitative data, male-infant interaction data are acknowledged as unavailable, and the ~50% male presence (C65) still allows substantial paternal influence. The conclusion (C68) is reasonable but not definitively supported\u2014the alternative hypothesis is weakened but not eliminated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors identify two critical conditions for second-order kin selection: ability to predict relatedness through phenotype matching (C69, C70-C71) and occurrence of reciprocal interactions between matched partners (C69, C72-C77). They demonstrate the first condition is met in mandrills (C70-C71) and cite extensive literature showing reciprocal kin interactions and fitness benefits of social integration across mammals (C72-C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71 are well-supported for the first condition (phenotype matching ability) by the empirical data presented in this study. However, C72-C77 rely entirely on citations to other species (baboons C73, humans C74, general mammals C75-C76) and one semi-captive mandrill study (C77). The critical second condition\u2014that early-associated mandrill infants maintain reciprocal relationships throughout life\u2014lacks direct empirical support in the wild population studied. The authors acknowledge this limitation, noting longitudinal data are unavailable. This is a significant gap for validating the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C32",
+      "C90"
+    ],
+    "result": "The retrained VGG-Face model (VGG-Mandrill) achieved 93.42% accuracy in identifying individual mandrills and 86.87% accuracy in face verification. The model was trained on ~16k images representing 276 mandrills using transfer learning from human face recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe appropriate deep learning methodology with transfer learning, adequate sample size (~16k training images, 276 individuals), proper train/validation/test splits, and data augmentation to prevent overfitting. The reported accuracies (93.42% identification, 86.87% verification) are reasonable for this task. The use of \u03c7\u00b2 distance in encoding space and SVM for metric learning (C92) follows established computer vision practices. Appendix 1-figure 5 reportedly shows limited overfitting, supporting generalization claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study population consists of ~250 mandrills in Gabon, originating from 65 captive-released individuals (2002, 2006), with ~200 individually monitored daily. The study analyzed 80 infants with known maternity, 32 with genetic paternity, and collected 9,305 behavioral scans. Matrilineal origin and maternal relatedness were independent of facial distance (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C96 provide thorough description of study population, data collection methods, and sample sizes. The population history is documented (C85-C86), sample sizes are substantial (80 infants, 9,305 scans C93), and genetic/behavioral data collection is described with appropriate citations. The independence of matrilineal origin and maternal relatedness from facial distance (C96, r=0.008, p=0.89) is an important control ruling out confounding by maternal kinship. The limitation that only 32/80 infants have genetic paternity (C35) is acknowledged and addressed through alpha male tenure as a proxy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The introduction establishes theoretical background on kin selection, phenotype matching mechanisms for kin recognition, and the challenges of self-referent and template-based recognition in natural contexts. These mechanisms are well-established in the literature but rarely demonstrated in wild populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 accurately summarize established theory with appropriate citations to foundational (Hamilton 1964, C1) and review literature (Clutton-Brock 2002, Penn & Frommen 2010, C2-C3). The characterization of self-referent phenotype matching challenges (C5, C7) and rarity of template-based recognition in the wild (C9) are reasonable inferences supported by cited literature. These are standard background claims establishing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction describes mandrill social biology and previous findings on kin recognition. Mandrills live in matrilineal societies with male dispersal and high reproductive skew (C10-C12). Previous work showed kin-biased behavior (C13-C14), acoustic/visual kin recognition (C15-C16), and heightened facial resemblance among paternal vs. maternal half-sisters despite similar relatedness (C17-C19). The authors argue self-referent and father-template matching are unlikely in wild mandrills (C21-C22), and that paternity cues are strongest early in life (C23-C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C25 accurately cite previous work by the same research group (Charpentier et al. 2005, 2007, 2020; Levr\u00e9ro et al. 2015) establishing the biological context. The key prior finding that paternal half-sisters resemble each other more than maternal half-sisters (C18) despite similar relatedness (C19, r~0.25) is well-documented. The inferences about environmental constraints on self-recognition (C21) and father-template use (C22, supported by Appendix data) are reasonable. These claims appropriately set up the study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors state their main empirical finding that mothers and offspring associate more with similar-looking infants who are more likely to be paternal half-sibs (C26-C27), and that this cannot be explained by standard kin selection because mothers are not related to their offspring's paternal half-sibs (C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 accurately summarize the study's key empirical findings (detailed in C42-C57) and correctly identify the theoretical puzzle. The logic in C28 is sound: standard kin selection requires relatedness between actor and recipient, which is absent between mothers and their offspring's paternal half-sibs (who share only paternal genes). This sets up the need for the novel theoretical mechanism (second-order kin selection) developed in C29-C111.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The authors cite comparative evidence that mothers control offspring social development in mammals generally (C58) and specifically in chimpanzees where mothers with sons associate more with adult males (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 appropriately cite relevant comparative literature (Rilling & Young 2014, Murray et al. 2014) showing maternal influence on offspring social development is widespread in mammals. These citations provide context that the proposed maternal behavior in mandrills is biologically plausible and has precedent in related species. The claims are accurately represented from the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors discuss the potential generality of second-order kin selection, noting it may explain cooperation among human affinal kin (C78) and that its prevalence in nonhuman animals depends on distribution of reciprocal interactions (C79) and other modulating factors (C80). They speculate several favorable conditions may be widespread (C81-C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C83 are largely speculative about the broader applicability of the proposed mechanism. C78 makes a reasonable connection to human affinal kin cooperation with appropriate citations, but C79-C83 are explicitly speculative (C79, C81, C83 use 'may' and conditional language). The claim that maternal control of offspring social development is widespread (C82) is supported by citations, but whether this translates to second-order kin selection in other species remains untested. These are appropriate discussion points but lack empirical support beyond mandrills.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The authors conclude that combining AI algorithms with long-term field data can reveal adaptive details of social complexity that would otherwise go unnoticed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a reasonable methodological conclusion supported by the study's successful application of deep learning to detect subtle facial resemblance patterns (C91-C92) that correlate with behavioral associations (C42-C57) in a long-term field study. This integration of computational and behavioral methods did reveal patterns (maternal preferential association based on offspring facial resemblance) that would be difficult to detect without the facial recognition technology. The claim is appropriately modest and well-supported by the study's execution.",
+    "result_type": "MINOR"
+  }
+]

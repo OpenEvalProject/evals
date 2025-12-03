@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In silico analysis of public mRNA-seq data revealed that senescence markers Cdkn1aCip1 and Cdkn2aInk4a are induced during murine fracture healing, with distinct temporal patterns peaking around day 7-14 post-fracture. Gene ontology analysis identified these cell cycle regulators as key common regulators of biological processes affected by fracture healing, including cell proliferation and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C33-C41 collectively demonstrate transcriptional changes during fracture healing using publicly available mRNA-seq data. The PCA analysis (C33), gene ontology enrichment (C35), gene overlap analysis (C36), and temporal expression patterns (C38-C41) provide converging computational evidence. The analysis is appropriately conducted and the conclusions are supported by the data presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Direct experimental validation in murine fracture models confirmed marked increases in senescence biomarkers during fracture healing. Cdkn1aCip1 showed a 20-fold increase and Cdkn2aInk4a showed a 100-fold increase at day 14 post-fracture. SADS-positive cells increased ~6-fold with peaks on days 8 and 14, and TAF-positive cells were highest on day 14 and remained elevated throughout the observation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42-C47 provide direct experimental validation using qRT-PCR (C42-C43) and two specific senescence markers, SADS and TAF (C44-C47). The use of SADS and TAF is appropriate as these are established specific markers for cellular senescence (C91). The temporal patterns are consistent across multiple independent measurements, and appropriate controls (contralateral femur) were used. Sample sizes appear adequate (n=4-6 per timepoint).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C91"
+    ],
+    "result": "Cells in the fracture callus display hallmarks of senescence including SADS and TAF, which are the most specific markers for cellular senescence. However, the precise cellular identity of these senescent cells requires further characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C91 accurately describe the detection of senescent cells using specific markers while acknowledging limitations. The authors appropriately use established specific markers (SADS and TAF, supported by citations in C91) and transparently acknowledge that cellular identity remains to be determined (C4). This represents rigorous and honest reporting of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C92"
+    ],
+    "result": "Using Cdkn2aLUC reporter mice, senescent cells were shown to accumulate transiently in vivo during callus formation, with Cdkn2aInk4a-driven luminescence peaking approximately 2 weeks after fracture induction. The luminescence kinetics mirrored mRNA expression patterns and paralleled SADS and TAF changes, consistent with findings in skin wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48-C50, and C92 demonstrate in vivo accumulation of Cdkn2aInk4a-expressing cells using an established reporter mouse model. The temporal concordance between luminescence, mRNA expression, and senescence markers (SADS/TAF) provides strong converging evidence. The comparison to skin wound healing (C92) is appropriately cited. Sample sizes (n=6-8) are adequate for this type of study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C93"
+    ],
+    "result": "Complete loss of Cdkn2aInk4a expression in knockout mice did not significantly alter the overall time course of healing but resulted in significantly increased callus bone volume compared to wild-type mice, suggesting that Cdkn2aInk4a does not impair but rather may suppress callus formation during fracture healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C93 provide genetic evidence using Cdkn2aInk4a knockout mice. The finding that healing kinetics were unchanged (C51) but callus volume increased (C52) is supported by X-ray and micro-CT data (Figure 3D, G). However, the interpretation that Cdkn2aInk4a 'suppresses' callus formation (C53, C93) is somewhat inferential. The data support that loss of Cdkn2aInk4a increases callus volume, but the mechanism remains unclear. Sample sizes (n=6) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C98",
+      "C99"
+    ],
+    "result": "SASP factors show distinct temporal expression patterns during fracture healing, with substantial increases in growth factors (Igfbp3: 20-fold), chemokines (Ccl7: >70-fold), proteases (Pai1: >60-fold on day 8), and transcription factors (Foxo4). Correlation analysis identified specific Cdkn2aInk4a and Cdkn1aCip1 clusters of associated SASP factors with concordant timecourses, representing the first characterization of SASP components within healing bone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63, C98-C99 provide comprehensive characterization of SASP factor expression during fracture healing using qRT-PCR. The temporal patterns are well-documented with appropriate controls (contralateral femur). The correlation analysis (C63, C99) identifying gene clusters is novel and appropriately conducted. However, the heterogeneity of expression patterns (C62) suggests complexity that may require additional validation. Sample sizes (n=24) are adequate for gene expression studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Analysis of single-cell RNA-seq data indicated that MSCs in murine bone and bone marrow show the highest enrichment of SASP genes and are an important cell population undergoing senescence. However, the precise identity of cells undergoing transient senescence in the fracture callus remains unclear, and multiple cell types including cartilage cells may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C94-C96 appropriately analyze publicly available single-cell RNA-seq data to identify candidate senescent cell populations. The finding that MSCs show high SASP gene enrichment (C64, C94) is supported by the analysis shown in Figure 4\u2014figure supplement 2. The authors appropriately acknowledge uncertainty about cellular identity in the fracture callus (C95-C96), recognizing the complexity of fracture healing stages and multiple cell types involved. This represents honest and rigorous interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C102"
+    ],
+    "result": "In vitro studies demonstrated that D+Q treatment did not affect MSC cell numbers but could partially rescue H2O2-induced senescence, reducing the percentage of senescent cells from 33.1% to 13.1% (-60.3%). This established the efficiency of D+Q in reducing MSC senescence in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C71, and C102 provide in vitro validation of D+Q senolytic effects on MSCs. The experimental design is appropriate with vehicle controls, and SA-\u03b2-Gal staining is a standard method for detecting senescence. The finding that D+Q does not affect cell numbers (C65) but reduces senescence (C67) is important for interpreting in vivo effects. Sample sizes (n=6) are adequate for in vitro studies. However, the 'partial rescue' (C71) language appropriately reflects that senescence was reduced but not eliminated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In vivo D+Q treatment for 5 weeks increased the relative cell number of isolated MSCs but resulted in only a minor reduction in senescent MSCs (-18.8%). Prior in vivo D+Q treatment did not significantly reduce the proportion of cells becoming senescent after subsequent H2O2 treatment ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe in vivo D+Q effects on MSCs isolated after treatment. The finding that in vivo D+Q had modest effects on MSC senescence (C69) compared to in vitro treatment (C67) is interesting but the interpretation is limited. The lack of protection against subsequent H2O2-induced senescence (C70) suggests D+Q does not prevent senescence induction. These findings are appropriately reported but their mechanistic implications are unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C103"
+    ],
+    "result": "Intermittent D+Q treatment decreased senescence and SASP markers in the fracture callus. Cdkn2aInk4a and Foxo4 showed decreased mRNA levels, with Pdgfa showing a borderline decrease. The reduction of Cdkn2aInk4a was confirmed at the protein level by Western blot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C72-C75, and C103 demonstrate that D+Q treatment reduces senescence markers in vivo. The qRT-PCR data (C72-C74) and Western blot confirmation (C75) provide converging evidence. However, the 'borderline' decrease in Pdgfa (C74) suggests variable effects on SASP markers. The sample size for the day 14 analysis appears small (n=5-6 based on Figure 6B), which may limit statistical power for detecting all SASP changes. The finding that some SASP markers increased (C106) adds complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C76",
+      "C77",
+      "C78",
+      "C104"
+    ],
+    "result": "Intermittent D+Q treatment significantly accelerated the time course of fracture healing. Healing kinetics were significantly improved based on X-ray scoring, with an increased callus area at 2 weeks and accelerated callus restoration by week 5, indicating earlier progression to the remodeling phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C76-C78, and C104 demonstrate accelerated healing with D+Q treatment using multiple metrics. The X-ray-based healing scores (C76) and callus area measurements (C77-C78) provide quantitative evidence. The interpretation of 'accelerated callus restoration' (C78) as indicating earlier remodeling is reasonable. Sample sizes (n=17 per group) are adequate. However, the study used only female mice for this experiment, which limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C105"
+    ],
+    "result": "D+Q treatment resulted in higher callus volume at 5 weeks by micro-CT and significantly increased maximal torque in biomechanical testing, although the increase in bone stiffness did not achieve statistical significance. Biomechanical bone parameters were partly enhanced after senolytic treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 and C105 provide structural and functional outcomes. The increased callus volume (C79) and maximal torque (C80) support improved healing. However, the lack of significant increase in stiffness (C81) and the qualifier 'partly enhanced' (C105) indicate incomplete biomechanical improvement. The loss of 3 samples from the vehicle group for biomechanical testing (noted in Figure 6 legend) may have affected statistical power. Overall, the data support improved but not fully normalized biomechanical properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C82",
+      "C116"
+    ],
+    "result": "Clearance of senescent cells with D+Q treatment does not impair but rather improves fracture healing, in contrast to findings in skin wound healing. Senolytic treatment enhanced rather than impaired the fracture healing process in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C82, and C116 represent the main conclusion of the study. The evidence from genetic (Cdkn2aInk4a knockout) and pharmacological (D+Q) approaches converges to support this conclusion. The contrast with skin wound healing (Demaria et al., 2014) is appropriately cited and represents an important biological insight. However, the study was conducted only in young adult mice, which limits generalizability to aged animals or humans. The mechanisms underlying the beneficial effects remain incompletely understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Some SASP markers, specifically Gdf15 and Pdgfb, were increased after senolytic treatment, indicating complex and heterogeneous effects of D+Q on SASP factor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 reports an unexpected finding that some SASP markers increased with D+Q treatment. This is supported by qRT-PCR data (Figure 6\u2014figure supplement 1A) and represents honest reporting of complex results. The biological significance of these increases is unclear and may warrant further investigation. This finding adds nuance to the interpretation that D+Q simply 'reduces' SASP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Cellular senescence in healing bone follows a transient time course peaking around the second week, potentially suppressing callus formation. A reduction of senescent cells by ~30% (the typical efficacy of senolytics) is sufficient to enhance callus formation without impairing biomechanical properties of healed bone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 synthesize the findings and provide mechanistic interpretation. The temporal pattern (C108) is well-supported by multiple lines of evidence. The statement about ~30% reduction (C109) is appropriately cited to published literature on senolytic efficacy. The conclusion that this reduction is 'sufficient' (C110) is supported by the experimental data showing improved outcomes. However, the mechanism by which senescent cells 'suppress' callus formation remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C113",
+      "C114",
+      "C118"
+    ],
+    "result": "The concept of senescent cells as physiologically facilitating tissue repair may be overly simplistic, with beneficial versus detrimental effects varying across tissues. The transient appearance of senescent cells may be evolutionarily conserved for skin wound healing (with scar formation), but may be detrimental in bone (which heals without scarring) due to the already highly inflammatory state following fracture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111, C113-C114, and C118 present speculative hypotheses about tissue-specific roles of senescent cells. While the experimental data support different outcomes in bone versus skin, the mechanistic explanations (C113-C114) are largely speculative. The hypothesis about evolutionary conservation (C113) and the role of inflammation (C114) are plausible but not directly tested. These represent interesting hypotheses for future work but are not definitively supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C97",
+      "C100",
+      "C101",
+      "C107"
+    ],
+    "result": "Background and context claims about aging, senescence, senolytics, and wound healing based on published literature and general knowledge. These include the growing burden of fractures, hallmarks of aging, the role of senescence in bone loss, mechanisms of cellular senescence and SASP, effects of senolytics in preclinical and clinical studies, and differences between skin and bone healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C32, C83-C89, C97, C100-C101, and C107 provide background context and are appropriately supported by citations to published literature or represent established knowledge. These claims accurately represent prior work and provide appropriate context for the current study. The citations appear appropriate and the characterizations of prior work are accurate based on the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The study focused on young adult mice to avoid potential confounding due to aging and to define the possible physiological role of senescent cells in fracture healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 describes the study design rationale. This is a reasonable approach for an initial study to isolate the physiological role of senescent cells from age-related confounding. However, this design choice limits the generalizability of findings to aged animals or humans with osteoporosis, which is the ultimate clinical target population. The authors appropriately acknowledge this limitation in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C115",
+      "C117"
+    ],
+    "result": "Summary and implications: Cellular senescence is present in fracture callus development using multiple analytical approaches. The findings have clinical implications for the development of senolytic therapies for osteoporosis, and bone has the unique ability to heal without scar formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C115, and C117 provide summary statements and discuss implications. The presence of cellular senescence in fracture callus (C115) is well-supported by the data. The statement about bone's unique healing ability (C112) is established knowledge. The clinical implications (C117) are appropriately cautious, recognizing that this is an initial study in young mice. Further studies in aged animals and ultimately humans will be needed to fully establish clinical relevance.",
+    "result_type": "MINOR"
+  }
+]

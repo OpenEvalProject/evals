@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The unroofing method successfully isolates apical cell membranes containing membrane proteins with negligible cytoplasmic contamination. The method has ~80% success rate (n=105) for adherent cells and produces membrane patches 5-8 nm in height with ~1 nm roughness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 provide converging evidence from multiple experimental approaches (fluorescence microscopy, AFM imaging) demonstrating successful membrane isolation without cytoplasmic contamination. The quantitative success rate (C16) and physical measurements (C19) are directly supported by experimental data shown in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C29",
+      "C30"
+    ],
+    "result": "SMFS experiments on isolated membranes yielded over 2 million F-D traces, of which ~2% (~50,000 traces) displayed sawtooth-like patterns characteristic of protein unfolding, fitting the WLC model with persistence length ~0.4 nm. These traces are dramatically heterogeneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C29-C30 are well-supported by quantitative data analysis. The percentages of different curve types (C21), WLC model fitting (C22), and heterogeneity (C30) are directly demonstrated in the figures and represent standard SMFS data characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "An automated clustering method based on density peak clustering was developed to recognize recurrent patterns in F-D curves. The method uses a previously established similarity distance and does not require pre-setting the shape or number of clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe the clustering methodology with appropriate citations (Ilieva et al., 2020; Rodriguez and Laio, 2014; Marsico et al., 2007). The method is detailed in the Methods section and its application is demonstrated throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The pipeline was validated using three purified proteins (ChR1, bR, SthK) reconstituted in lipid bilayers. Clustering identified expected patterns: two nearly indistinguishable clusters for symmetric bR, three clusters for ChR1 (including partial unfolding), and two clusters for SthK. For all proteins, Lcmax was within 5% of expected length and force peaks colocalized with structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 provide comprehensive validation of the pipeline using known proteins. The clustering results match expectations based on protein structure and prior literature (C50-C51 cite Kessler and Gaub, 2006). The quantitative agreement between measured and expected lengths (C54) and peak positions (C55) strongly supports the method's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "When proteins were co-reconstituted or mixed, the same clusters were identified as in single-protein experiments, and the number of traces per cluster scaled with protein abundance. The Lcmax histogram encodes protein content and allows detection of protein presence and abundance in sub-femtogram samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 demonstrate that the method can handle protein mixtures and provides semi-quantitative abundance information. The scaling of cluster sizes with known mixing ratios (C57) and the protein profile analysis (C58) are directly supported by experimental data in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The pipeline was applied to five native cell types, collecting 301,654-413,468 F-D curves per sample. Clustering identified 5-15 statistically dense unfolding patterns per cell type, demonstrating that clean unfolding patterns can be detected in native membrane patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 report the application of the method to native samples with specific quantitative results. The data collection numbers are clearly stated, and the clustering results are shown in Figure 3. This represents a successful extension from reconstituted to native systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A Bayesian method was developed for protein identification that combines mass spectrometry data, proteomic databases, and SMFS literature. The method uses protein length (Lcmax corresponds to 89% of real length, R\u00b2=0.98), unfolding force, and peak positions to reduce candidates from hundreds to 1-4 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 describe the Bayesian identification framework with extensive literature support (14 SMFS examples, multiple database sources). The correlation between measured and actual protein length (C83) is quantitatively strong (R\u00b2=0.98), and the method's ability to narrow candidates (C85) is demonstrated in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The pipeline was validated by overexpressing four N2B-tagged constructs (TMEM16F, TRPC1, TRPC5, TRPC6) in NG108-15 cells. RT-PCR and western blot confirmed protein expression. F-D traces from transfected cells showed the N2B signature (~85 nm flat region) followed by peaks matching wild-type clusters, confirming protein identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 provide strong validation through independent overexpression experiments. The N2B tag provides an internal control (C88, C90), and the matching of peak positions between wild-type and tagged proteins (C90-C91) directly confirms the Bayesian identifications. This is supported by data in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "TRPC6 unfolding revealed structural heterogeneity: the peak at 143 nm showed reproducible behavior typical of well-folded structure, while peaks at 193 and 230 nm (loops E1 and E2) showed variability. Comparison with three published cryo-EM structures revealed that short \u03b1-helices in these loops are present in some but not all structures, suggesting that different cryo-EM structures coexist at RT in native environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 provide novel structural insights by integrating SMFS data with cryo-EM structures. The variability in loop regions (C96-C97) is well-documented in the data, and the correlation with structural differences in published cryo-EM structures (C99-C100) is clearly demonstrated. The conclusion about structural coexistence (C102) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The protein profile (histogram of Lcmax from clustered F-D curves) from native membranes shows good agreement with mass spectrometry profiles, particularly above 100 nm. This suggests SMFS provides a semi-quantitative proxy for mass detection at the single-cell membrane level, despite orders of magnitude difference in sample amounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C105-C108 demonstrate an important capability of the method. The comparison between SMFS and mass spectrometry profiles (Figure 3K) shows reasonable agreement, though the authors appropriately note imperfect matching (C107) and the need for improvements (C108). The conclusion is appropriately qualified as 'semi-quantitative.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Multiple non-ideal binding events can occur in SMFS: simultaneous attachment of multiple proteins, incomplete unfolding, and tip binding to loops. These events produce non-recurrent patterns. Inspired by cryo-EM's success despite selecting <20% of images, the authors hypothesized that 'bad' events produce non-recurrent patterns that can be filtered by clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 describe known complications in SMFS with appropriate citations (C33, C37, C41) and provide the rationale for the clustering approach. The analogy to cryo-EM (C41) is well-supported by citation to Yi et al., 2019. The hypothesis about non-recurrent patterns (C42) is reasonable and forms the basis for the clustering strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Four major classes of clusters were identified in native membranes: short curves with increasing forces, long periodic curves similar to LacY, conventional short curves sharing features with opsin family, and unconventional clusters. NG108-15 cells showed different protein profiles compared to neurons, with fewer short stable proteins but more long stable proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe the classification of clusters with appropriate comparisons to known proteins (C71, C73 cite literature). The differences between cell types (C75-C76) are supported by the data in Figure 3. This represents a descriptive analysis of the clustering results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "By combining SMFS on native membrane patches with database information, probabilistic identification of proteins is possible, typically providing <4 candidates (p>95%). The validity was proven by engineered constructs. The pipeline enriches cryo-EM structural information with insights from native environment unfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 summarize the main findings. The probabilistic identification (C110-C111) is demonstrated throughout the results, validation by constructs (C112) is shown in Figure 6, and the complementarity with cryo-EM (C113) is illustrated by the TRPC6 analysis. These are well-supported summary statements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "A major limitation is the possibility of merging traces from different proteins with similar molecular weight and unfolding patterns, particularly for proteins with Lc between 50-150 nm. Coupling SMFS with devices like solid-state nanopores could help overcome this limitation. Arbitrary attachment/detachment events in this range may pass quality filters but will be positioned at cluster edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 provide an honest assessment of method limitations. The issue of protein ambiguity (C127-C128) is a logical consequence of the approach, and the suggestion for improvement (C129) is reasonable with appropriate citation. The discussion of how arbitrary events are handled (C130-C131) shows understanding of the method's behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The Bayesian framework addresses the technical challenge of relating measured Lcmax to protein length. Based on 14 literature examples, Lcmax = 89% of real length (r=0.991). The framework is flexible, provides error estimates, is scalable, and is robust to conformational changes (if anchoring point changes <10% of Lcmax). Lcmax has higher weight than peak correlation in probability estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C142 provide detailed justification for the Bayesian approach. The correlation (C138) is very strong, and the reasoning about flexibility and robustness (C136, C139-C140) is sound. The discussion of weighting (C141) and conformational robustness (C140, C142) shows careful consideration of the method's properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Protein abundance is a limiting factor - only the most abundant proteins generate detectable clusters. Functionalizing the cantilever tip could increase yield for specific targets, but for unbiased SMFS, the low yield (~2%) is advantageous because it minimizes double-binding events (estimated at 0.04% overall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C149 discuss practical limitations and design choices. The abundance limitation (C143-C144) is acknowledged, and the reasoning about tip functionalization (C145-C149) is logical. The calculation about double-binding probability (C149) is a reasonable first-order approximation that justifies the methodological choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background and motivation: SMFS uses AFM to unfold single proteins, encoding unfolding pathways in F-D curves. While cryo-EM and AlphaFold determine static structures, they cannot identify protein configurations or mechanical properties at physiological conditions. SMFS has been limited to <20 purified proteins in 20 years, but studying proteins in native membranes is preferable because folding depends on membrane environment and molecular partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide well-established background with appropriate citations. The limitations of current structural methods (C6-C7) and advantages of native membrane studies (C14) are accurately stated. The historical limitation of SMFS (C13) provides motivation for the current work. These are primarily knowledge claims that set up the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Technical considerations for membrane protein SMFS: 'unfolding' refers broadly to tertiary structure. AFM tip attachment occurs mainly via hydrophobic/hydrophilic interactions, more likely at termini than loops (kinetically). The mechanism is non-specific, and tips were not functionalized to avoid bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe technical aspects of the method with appropriate citations (C24). The reasoning about preferential terminus attachment (C25) is logical based on mechanical properties, and the choice not to functionalize tips (C28) is consistent with the goal of unbiased sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Structural variability extends beyond TRPC6: TRPC5 loop pre-S1/S1 shows complex unfolding behavior, and clusters DRG5 and H3 show exotic dual behavior with both secondary peaks and unfolding humps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 extend the observation of structural heterogeneity to other proteins. While less detailed than the TRPC6 analysis, these observations are supported by the data shown in the figures and suggest that structural variability may be a general feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Advantages of the method: SMFS cannot distinguish \u03b2-sheets from \u03b1-helices but accurately determines unfolded domains at RT. It provides complementary information to cryo-EM about poorly folded regions and mechanical stability. The method works with limited material (1-10 cells) and unfolding profiles can serve as fingerprints for sample characterization, potentially applicable to disease studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 accurately describe the method's capabilities and limitations with appropriate citations (C114). The complementarity with cryo-EM (C115) is demonstrated by the TRPC6 results. The low sample requirement (C116) is a clear advantage, though the disease application (C118) is appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Protein unfolding is stochastic (Brownian diffusion in tilted energy landscape), making variability intrinsic to SMFS. However, variability is constrained by obligatory intermediates that enable clustering. Changes in obligatory intermediates indicate conformational changes, and minor features can reveal mechanical plasticity or structural segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 provide theoretical context for interpreting SMFS data with appropriate citations (C119, C121-C123). The discussion of stochasticity and constrained variability explains both the challenges and opportunities of the technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Membrane protein unfolding is not a single-biomolecule event but involves the protein plus surrounding environment (lipids, partner proteins). Studying proteins in physiological environment is preferable for understanding mechanical stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 provide important conceptual framing about what is actually being measured in membrane protein SMFS. The point that membrane proteins don't exist in isolation (C125) is well-established, and the preference for physiological environment (C126) is supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "An inherent limitation of the isolation technique is that only the cytoplasmic side of the membrane is accessible. A method to reverse the membrane for extracellular side experiments would be desired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 identify a clear technical limitation of the unroofing method. This is an honest acknowledgment of a constraint that limits the types of proteins and interactions that can be studied. The suggestion for improvement (C151) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Despite limitations, the study classified tens of unfolding pathways, identified proteins with high accuracy, and reconciled contrasting cryo-EM structures. The methodology represents a genuine step toward single-cell membrane proteomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 provide appropriate summary statements. The achievements listed (C152) are demonstrated throughout the results, and the characterization as a 'first step' and 'genuine step' (C153) appropriately balances accomplishment with acknowledgment of remaining challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "These results may pave the way to single-cell proteomics and phenotyping, with potential to advance understanding of disease development, progress, and treatment effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is explicitly speculative ('may pave the way,' 'potential to advance'). While the single-cell capability is demonstrated, the application to disease studies remains to be shown. This is appropriately framed as future potential rather than current achievement.",
+    "result_type": "MINOR"
+  }
+]

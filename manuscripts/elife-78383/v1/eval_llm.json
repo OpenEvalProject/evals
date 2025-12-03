@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "INPP5E ciliary targeting requires an intact structurally-defined catalytic domain (aa 282\u2013623), which encompasses the FDRxLYL motif on its surface. Deletion or truncation of this domain abolishes or severely reduces ciliary localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C67 provide converging structural and functional evidence from crystal structure analysis, AlphaFold modeling, and systematic deletion mutagenesis showing that the catalytic domain (aa 282-623) is essential for ciliary targeting. The data demonstrate that deletions affecting this domain abolish ciliary localization while preserving N-terminal deletions maintain targeting (C57-C65), and protein stability analyses (C67) confirm this is not solely due to protein degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "W383 (CLS2) and the FDRxLYL motif (CLS3) function as bona fide ciliary localization signals. W383A and combined FDR+LYL alanine mutations completely abolish ciliary targeting, while individual residue mutations within FDRxLYL show redundancy. W383 requires an aromatic ring for both targeting and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C82 demonstrate through mutagenesis, localization assays, and enzyme activity measurements that W383 and FDRxLYL are specific CLSs. The data show complete loss of ciliary targeting with W383A and FDR+LYL mutations (C68, C71), redundancy within FDR and LYL triplets (C69-C70), and that W383's requirement for an aromatic ring is specific for both functions (C79-C82). Enzyme activity and protein stability data (C73-C77) confirm these are not simply structural requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The LLxPIR motif (CLS1, aa 259-264) cooperates with the CaaX box (CLS4) for INPP5E ciliary targeting. While each is partially dispensable alone, simultaneous deletion of both completely abolishes ciliary localization despite both accumulating at the ciliary base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 provide systematic deletion and mutagenesis data showing functional redundancy between CLS1 and CLS4. The key evidence is that single deletions (\u0394251-273 or C641S) allow ciliary targeting while the double mutant completely fails (C86-C87), and fine-mapping identifies the essential LLxPIR residues (C91-C92). Activity assays confirm these effects are not due to enzyme dysfunction (C89-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "INPP5E ciliary targeting is controlled by four highly conserved ciliary localization signals in vertebrates: CLS1 ([VL]LxPIR), CLS2 (W), CLS3 (FDRxLYLxGI[KR]RR), and CLS4 (C[ST][IV]S).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C94-C98 establish the four CLS consensus sequences through sequence alignment across vertebrate species (Figure 4a). The conservation analysis demonstrates that all four CLSs are maintained from fish to mammals, supporting their functional importance. This integrates the individual CLS discoveries into a comprehensive model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In a functional TULP3 rescue assay in INPP5E-KO cells, \u0394CLS4 fully rescues while \u0394CLS1+4 completely fails, demonstrating CLS1-CLS4 redundancy. \u0394CLS2 shows partial rescue, while \u0394CLS3 and catalytic domain deletion are completely inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 provide functional validation of the CLS requirements using a well-established TULP3 accumulation phenotype rescue assay. The data show clear differential effects: full rescue by \u0394CLS4 (C101), no rescue by \u0394CLS1+4 (C102), and complete loss of function for \u0394CLS3 (C103). The partial rescue by \u0394CLS2 (C104) is noted as surprising and requiring further investigation, but does not undermine the overall conclusion about CLS function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "With methanol fixation, CLS mutants show distinct localization patterns: \u0394CLS1, \u0394CLS4, and \u0394CLS1+4 accumulate at the transition zone (100% of cilia) but lack axonemal staining, while \u0394CLS2 and \u0394CLS3 show little to no ciliary base accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 demonstrate that different fixation methods reveal distinct aspects of INPP5E localization. The methanol fixation data (Figure 4\u2014figure supplement 3) show that all CLS mutants lose axonemal staining (C106), but \u0394CLS1/4 mutants specifically accumulate at the transition zone (C107-C108) while \u0394CLS2/3 do not (C109-C110). This provides mechanistic insight into how different CLSs function at different stages of ciliary entry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Some Joubert syndrome mutations in INPP5E perturb ciliary targeting. Specifically, G286R and W474R abolish ciliary localization and were found in homozygous JBTS patients, while V303M considerably reduces targeting. Other JBTS mutations near CLS2-3 do not affect ciliary localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C111-C117 demonstrate through systematic analysis of JBTS mutations that some, but not all, disease-causing mutations affect ciliary targeting. The data show that mutations likely disrupting catalytic domain integrity (G286R, W474R, V303M) impair targeting (C113-C115), while mutations near but not within CLSs do not (C112). The finding that homozygous patients carry targeting-defective mutations (C116) has important clinical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "CLS4 (CaaX box) is the key determinant for INPP5E binding to PDE6D. The interaction is completely dependent on CLS4 and independent of CLS1-3, as shown by both co-immunoprecipitation and in vivo co-recruitment assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C118-C125 provide robust evidence from two complementary approaches (co-IP and co-recruitment) that CLS4 specifically mediates PDE6D binding. The data show complete dependence on CLS4 (C119, C122) and independence from other CLSs (C120, C123), with only modest effects of \u0394CLS2 (C124). The convergence of biochemical and live-cell data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "INPP5E binding to RPGR is mediated by CLS4 (CaaX box). The interaction is abolished by \u0394CLS4 and \u0394CLS1+4 but unaffected by \u0394CLS1, \u0394CLS2, or \u0394CLS3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 demonstrate through co-IP experiments that RPGR binding follows the same CLS4-dependent pattern as PDE6D binding. The complete loss of interaction with \u0394CLS4 mutations (C126) and preservation with other CLS deletions (C127) clearly establish CLS4 as the key determinant for RPGR association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "CLS2, CLS3, and CLS4 all promote INPP5E association with ARL13B. Co-IP experiments show CLS4 dependence, while co-recruitment assays reveal that \u0394CLS2, \u0394CLS3, and \u0394CLS4 all strongly reduce ARL13B interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C129-C132 demonstrate ARL13B binding requires multiple CLSs, though the two assay methods show somewhat different patterns. Co-IP shows clear CLS4 dependence (C129-C130) while co-recruitment reveals additional roles for CLS2-3 (C131). The authors acknowledge this discrepancy and note that the in vivo co-recruitment data may be more sensitive. The convergence on CLS4 requirement and the mechanistic explanation for CLS2-3 effects support the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "INPP5E interacts with TULP3 in a manner dependent on CLS2 and CLS3 in INPP5E's catalytic domain, and on TULP3's C-terminal Tubby domain and its ability to bind ARL13B and phosphoinositides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 establish a novel INPP5E-TULP3 interaction through systematic co-IP experiments. The data show specific binding (C133), CLS2/3 dependence (C134-C135), requirement for TULP3's CTD (C136), and partial dependence on TULP3's ARL13B and phosphoinositide binding sites (C137). The multiple lines of evidence from domain mapping and point mutations support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "CLS2 and CLS3 downregulate INPP5E binding to CEP164, which occurs through INPP5E's N-terminus and CEP164's WW domain. However, this CEP164 dissociation is not sufficient for ciliary targeting, as \u0394CLS2/3 mutants lacking the CEP164-binding region still fail to enter cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C146 demonstrate through co-IP and domain mapping that CLS2-3 negatively regulate CEP164 binding (C139-C140), which occurs via the N-terminus and WW domain (C141-C144). Critically, the functional test showing that removing both CEP164 binding and CLS2/3 still prevents ciliary entry (C145-C146) demonstrates that CEP164 dissociation alone is insufficient, indicating CLS2-3 have additional functions beyond CEP164 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "CLS1 and CLS4 may cooperate in ATG16L1 binding. Single CLS deletions do not noticeably alter INPP5E-ATG16L1 binding, but the \u0394CLS1+4 double mutant shows reduced interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10 and C149-C151 suggest CLS1-CLS4 cooperation in ATG16L1 binding based on reduced binding in the double mutant (C150). However, the authors explicitly state that despite consistent trends across three experiments, the reduction was not statistically significant (C151 evidence), and they note more experiments are needed. The evidence is suggestive but insufficient to definitively support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "INPP5E ciliary levels are significantly reduced in CSNK2A1-null fibroblasts, but CSNK2A1 does not directly interact with INPP5E, suggesting an indirect effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 demonstrate through immunofluorescence quantitation and co-IP that CSNK2A1 affects INPP5E ciliary targeting indirectly. The significant reduction in ciliary INPP5E levels (C147) combined with lack of direct interaction (C148) supports an indirect mechanism, consistent with CSNK2A1's known role in regulating TTBK2-CEP164 interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "INPP5E localizes to the immune synapse between Jurkat T-cells and Raji cells, but this targeting is independent of CLS1-4, as none of the CLS deletion mutants show perturbed immune synapse localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 demonstrate through immunofluorescence that INPP5E immune synapse targeting uses different mechanisms than ciliary targeting. The observation that all CLS mutants that fail to enter cilia still localize normally to the immune synapse (C154) clearly establishes mechanistic independence (C155). This is well-supported by the imaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Partial CLS1-CLS4 redundancy explains why CLS4 is dispensable for ciliary targeting, and the essential need for CLS2 clarifies why CLS3-CLS4 together are insufficient for ciliary accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 represent key conceptual conclusions that resolve long-standing questions in the field. These are well-supported by the experimental data showing CLS1-CLS4 redundancy (Figure 3) and the absolute requirement for CLS2 (Figure 2). The claims synthesize multiple experimental results into mechanistic explanations for previously puzzling observations.",
+    "result_type": "MAJOR"
+  }
+]

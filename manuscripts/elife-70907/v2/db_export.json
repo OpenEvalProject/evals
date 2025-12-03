@@ -1,0 +1,1759 @@
+{
+  "submission": {
+    "id": "5872c7c7-30ca-4efb-a8cf-830b89a17eac",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:34:40.190951Z",
+    "updated_at": "2025-12-03T09:34:40.190951Z"
+  },
+  "content": [
+    {
+      "id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "submission_id": "5872c7c7-30ca-4efb-a8cf-830b89a17eac",
+      "content_type": "manuscript",
+      "content_text": "# Respiration aligns perception with neural excitability\n\n## Authors\n\n- Daniel S Kluger<sup>1</sup> ([ORCID: 0000-0002-0691-794X](https://orcid.org/0000-0002-0691-794X)) \u2020\n- Elio Balestrieri<sup>2</sup>\n- Niko A Busch<sup>2</sup> ([ORCID: 0000-0003-4837-0345](https://orcid.org/0000-0003-4837-0345))\n- Joachim Gross<sup>1</sup>\n\n### Affiliations\n\n1. Institute for Biomagnetism and Biosignal Analysis, University of M\u00fcnster M\u00fcnster Germany\n2. Otto Creutzfeldt Center for Cognitive and Behavioral Neuroscience, University of M\u00fcnster M\u00fcnster Germany\n3. Institute of Psychology, University of M\u00fcnster M\u00fcnster Germany\n4. Centre for Cognitive Neuroimaging, Institute of Neuroscience and Psychology, University of Glasgow Glasgow United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent studies from the field of interoception have highlighted the link between bodily and neural rhythms during action, perception, and cognition. The mechanisms underlying functional body-brain coupling, however, are poorly understood, as are the ways in which they modulate behavior. We acquired respiration and human magnetoencephalography data from a near-threshold spatial detection task to investigate the trivariate relationship between respiration, neural excitability, and performance. Respiration was found to significantly modulate perceptual sensitivity as well as posterior alpha power (8\u201313 Hz), a well-established proxy of cortical excitability. In turn, alpha suppression prior to detected versus undetected targets underscored the behavioral benefits of heightened excitability. Notably, respiration-locked excitability changes were maximized at a respiration phase lag of around \u201330\u00b0 and thus temporally preceded performance changes. In line with interoceptive inference accounts, these results suggest that respiration actively aligns sampling of sensory information with transient cycles of heightened excitability to facilitate performance.\n\n## Introduction\n\nHuman respiration at rest is a continuous, rhythmic sequence of active inspiration, and passive expiration (Fleming et al., 2011). Even the active phase seems effortless, however, thanks to medullar microcircuits like the preB\u00f6tzinger complex who autonomously and periodically drive respiration (Moore et al., 2013). Despite being largely automatic, breathing can also be adapted top-down when required, for example, during speech or laughter (McKay et al., 2003). To this end, intricate connections from key structures like the preB\u00f6tzinger complex (through the central medial thalamus) and the olfactory bulb (OB) to both the limbic system (Carmichael et al., 1994) and the neocortex (Yang and Feldman, 2018) serve the bidirectional interplay between respiratory control and higher cognitive functions. In turn, neural oscillations in the cortex have long been established as sensitive markers of brain states (Thut et al., 2012), which has brought increasing attention to questions of respiration-brain coupling. While there is a rather extensive body of literature on the interaction of respiratory and neural rhythms in animals, these links are only beginning to be addressed in the human brain. Recently, both invasive (Zelano et al., 2016) and noninvasive work (Kluger and Gross, 2021) has shown respiration to modulate neural oscillations across a wide network of cortical and subcortical areas, including those not typically associated with olfaction. Moreover, modulatory effects of respiration have been demonstrated in motor (Kluger and Gross, 2020; Rassler and Raabe, 2003) as well as in cognitive tasks (Perl et al., 2019; Zelano et al., 2016). Taken together, these studies provide strong evidence for breathing-related changes in neural signaling that, particularly in task contexts, translate into changes in behavior. Yet, fundamental questions in the trivariate relationship between respiration, neural oscillations, and behavior remain unanswered. Respiration-locked behavioral changes have so far been demonstrated in \u2018higher-level\u2019 cognitive paradigms (e.g., visuospatial rotation or emotional judgment tasks), which complicates the identification of a clear mechanism by which respiration shapes perception and behavior. Here, we used a simple perception task to propose neural excitability as a key moderator underlying behavioral changes coupled to respiration phase.\n\nCross-frequency phase-amplitude coupling is a well-established mechanism of neural information transfer across spatiotemporal scales (Canolty and Knight, 2010) and provides an intuitive explanation how the link between respiration phase and oscillatory amplitudes is potentially implemented: In mice, slow respiration-induced rhythms within the OB were shown to be transmitted through the piriform cortex and subsequent cortico-limbic circuits to modulate the amplitude of faster oscillations in upstream cortical areas (Fontanini and Bower, 2006; Ito et al., 2014). In order to plausibly explain the perceptual and behavioral modulation effects in humans, the respiratory rhythm has to be coupled to specific neural rhythms that code transient brain states of heightened susceptibility for sensory stimulation. These phasic cycles of neural excitability determine the intensity (or gain) of early sensory responses in order to amplify relevant or salient stimuli at the expense of irrelevant ones (Morillon et al., 2015; Schroeder et al., 2010). Excitability has been shown to vary over the respiration cycle in rats (Dulla et al., 2005) and is tightly coupled to the amplitude of human cortical alpha oscillations (8\u201313 Hz): Particularly in the visual system, prestimulus alpha power over parieto-occipital sensors is inversely related to early visual responses (Chapeton et al., 2019; Iemi et al., 2019; Romei et al., 2010). As a consequence, one highly replicated finding is that a prestimulus decrease in alpha power leads to increased detection rates for near-threshold stimuli (Ergenoglu et al., 2004; Iemi and Busch, 2018; Iemi et al., 2017). Coming back to respiration-brain coupling and excitability, not only do performance levels in cognitive tasks fluctuate over the respiration cycle (Perl et al., 2019), but so does spontaneous alpha activity (Kluger and Gross, 2021). Therefore, respiration-entrained fluctuations in neural excitability represent a promising mechanism for unifying neural and behavioral findings. Both theoretical accounts and evidence from animal and human studies strongly suggest that this link is by no means accidental, but an example of active sensing (Schroeder et al., 2010). While it is admittedly easier to imagine the high-frequency sniffing and whisking of mice as an active sampling of sensory stimuli, a similar case can be made for human respiration from the perspective of predictive processing (Mumford, 1992): In temporally coordinating the breathing act and internal brain dynamics (i.e., heightened excitability), the sampling of bottom-up sensory information can be aligned with top-down predictive streams (Arnal and Giraud, 2012). This active view of respiration is corroborated by reports that human participants spontaneously inhale at trial onset in a self-paced cognitive task (Perl et al., 2019), effectively aligning stimulus processing with the inspiration phase.\n\nOverall, evidence from the lines of research examined so far point to respiration as a mechanism to synchronize perception and neural excitability, which in turn might influence human performance in a variety of tasks. However, this mechanism currently lacks a clear demonstration, which we aim to provide with the present experiment. We simultaneously recorded respiration, whole-head magnetoencephalography (MEG), and performance measures from 30 human participants in a spatial detection task to address the questions introduced earlier: First, we investigated whether respiration cyclically affects sensitivity toward near-threshold stimuli and how this link develops over the respiration cycle. Second, using parieto-occipital alpha power as a well-established proxy of excitability, we assessed respiration-locked excitability changes and how they are related to performance. Finally, we aimed to illuminate the overarching link between respiration-excitability and respiration-performance modulations.\n\n## Results\n\n### Respiration modulates perception\n\nParticipants performed a simple detection task in which Gabor patches were briefly presented at near-threshold contrast either to the left or to the right of a central fixation cross. After a short delay, participants were to report via button press whether they had seen the target on the left, the right, or no target at all (see Figure 1a and Materials and methods for details). An adaptive staircase (QUEST) was used to adjust the contrast of target trials in a way that performance would settle at a hit rate (HR) of around \u00b5HR=0.60. Across participants, we observed an average HR (i.e., the proportion of detected targets) of MHR=0.54\u00b10.05 (M \u00b1 SD), which was reasonably close to the staircase\u2019s desired HR.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig1-v2.jpg)\n\n**Figure 1.:** (a) In the experimental task, participants kept their gaze on a central fixation cross while a brief, near-threshold Gabor patch (magnified for illustrative purposes) was randomly presented either on the left or the right side of the screen. During catch trials, no stimulus was presented. After a brief delay, participants were prompted to indicate whether they had seen a stimulus on the left (index finger) or on the right side (middle finger), or no stimulus at all (thumb). (b) Exemplary segment of respiration recordings (normalized, top) plotted against its phase angle (bottom). Over time, targets were randomly presented over the respiration cycle and could be either detected (hits, green) or undetected (miss, yellow). (c) Raincloud plots show mutual information between task performance and stimulus contrast (left) and stimulus contrast plus respiration phase (right), respectively. Each dot for contrast or contrast+ phase represents one participant\u2019s mutual information value computed across all trials for the respective condition. Links between dots identify mutual information values from the same participant and illustrate the increase in mutual information when respiration phase is included in its computation: Mutual information was significantly enhanced by adding respiration phase (Wilcoxon signed-rank test: z=4.78, p<0.001). Filled curves represent the respective probability density functions of mutual information values across participants. Raincloud plots generated with the RainCloudPlots toolbox for Matlab (Allen et al., 2019b).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig1-figsupp1-v2.jpg)\n\nWhile individual HRs were obviously dependent on the contrast of each target, one of our main aims was to assess the independent influence of the interoceptive breathing signal. As a first analysis of potential respiration-related performance changes, we employed a model comparison of single-trial mutual information. For each participant, we first computed mutual information between the discrete factor detected/undetected and the continuous factor of Copula-normalized stimulus contrast. In a second computation, we included another continuous factor with sine and cosine of the respiration phase angle at which each trial was presented (see Figure 1b for an illustration). On the group level, we then compared the mutual information with and without respiration phase by testing participant-level differences against zero. A Wilcoxon signed-rank test confirmed that mutual information was significantly enhanced by adding respiration phase information (z=4.78, p<0.001; see Figure 1c). Having provided first evidence for a functional link between respiration and perceptual performance, we next conducted an in-depth analysis to illustrate how such behavioral modulation occurs independently of target contrast.\n\n### Respiration changes the psychometric function\n\nSince the previous analysis had established a significant relationship between respiration and perceptual performance, we next addressed the question if this relationship is mediated by a respiration-induced change of the individual psychometric function that relates stimulus contrast to perceptual performance.\n\nIn order to assess respiration-related changes in perceptual accuracy irrespective of QUEST-induced changes in stimulus intensity, we exploited single-trial information about both stimulus (i.e., its contrast) and performance (i.e., whether it was detected or not) in an iterative refitting of the psychometric function: For each participant, we first fitted an overall psychometric function to all target trials. The resulting parameters (threshold, width) were used as priors for a moving window approach in which we iteratively refitted the psychometric function to a subset of trials presented at a certain range of respiration angles (see description above and Figure 2b). For each of the 60 overlapping phase angle bins ranging from \u2212\u03c0 to \u03c0, we thus obtained a threshold estimate characterizing perceptual performance at that respiration phase: With a fixed response criterion of \u00b5HR=0.60, a lower threshold indicates higher accuracy, as a lower stimulus intensity was sufficient to yield the same level of performance. Indeed, individual thresholds showed systematic variations across the respiratory cycle (Figure 2c), indicating that respiration in fact changes the perceptual threshold. We set up a linear mixed effect model (LMEM) expressing the refitted PsychF threshold values as a linear combination of sine and cosine of the respiration signal. The resulting regression weights for sine and cosine were combined in a phase vector norm (akin to a harmonic regression) and tested for significance using 5000 random permutations of subject-level PsychF threshold courses (see Materials and methods for details). The empirical regression weight was greater than anyone from the randomization distribution (see Figure 2d), corroborating the overall influence of respiration on perceptual performance. With regard to the time course of these modulations, cluster-permutation testing confirmed a significant lowering of the PsychF threshold during the inspiratory phase, corresponding to respiration angles between \u2013128\u00b0 and \u201376\u00b0 (Figure 2e).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig2-v2.jpg)\n\n**Figure 2.:** (a) The first 20 trials of each run were discarded to allow initiation of the QUEST staircase (inset shows contrast variation of the full run). Extending the behavioral analysis shown in Figure 1, we obtained contrast values and respiration phase angle of hits (green) and misses (orange). Catch trials did not inform the QUEST staircase and are not shown. (b) Top panel shows the contrast values of all hit and miss trials of one exemplary participant sorted by the respiration phase angle at which the targets were presented. Moving along the respiration cycle (bottom) in increments of \u03c0/30, we applied a moving window with a width of \u03c0/5 to select a subset of trials for a phase-locked refitting of the psychometric function. Phase angles from \u2212\u03c0 to 0 covered inspiration whereas the range from 0 to \u03c0 was expiration. (c) The psychometric function was first fitted to the full data set (black function, shown here for one typical participant). All parameters except the threshold were then fixed and used as priors for fitting the psychometric function iteratively to an angle-specific subset of trials (gray functions). Blue dots mark clusters of single trials scaled by frequency of occurrence. For each participant, the procedure of trial selection and refitting was repeated 60 times until all trials from all respiration phase angles had been sampled (see panel (b)). Vertical gray lines indicate the respective thresholds of refitted psychometric functions, whose variation is shown in the inset. (d) Histogram shows the empirical LMEM weight for the respiratory vector norm against the null distribution computed from 5000 iterations of randomized PsychF vectors on the subject level. (e) The moving window approach resulted in individual courses of PsychF threshold over respiration angles whose normalized mean is shown here \u00b1 SEM (top panel, black line, and shading). These modulations corresponded to contrast value changes within the range of [0.64\u20130.80] (5th and 95th percentile, respectively). Bottom panel shows t values from cluster-permutation testing. On the group level, PsychF threshold was significantly lowered during the inspiratory phase (covering a respiration phase angle between \u2013128\u00b0 and \u201376\u00b0, see main text).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For each participant, PsychF changes across the respiration cycle were assessed by subsequently fixing all parameters except the PsychF threshold (vertical lines) and refitting the PsychF on subsets of trials falling into one of n=60 respiration phase bins (exemplified in Figure 2b of the main manuscript).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The psychometric function was first fitted to the full data set (black function). All parameters except the threshold were then fixed and used as priors for fitting the psychometric function iteratively to an angle-specific subset of trials (gray functions). Blue dots mark clusters of single trials scaled by frequency of occurrence. Trial selection and refitting were repeated 60 times until all trials from all respiration phase angles had been sampled. Vertical gray lines indicate the respective thresholds of refitted psychometric functions.\n\nTaken together, our analysis demonstrates that the individual psychometric function changes significantly across the respiratory cycle. The next step was to assess the role of alpha oscillations and how they are linked to performance changes. If respiration, as we propose, does shape perception through changes in cortical excitability, we can form precise assumptions regarding parieto-occipital alpha power as a proxy of excitability.\n\n### Alpha power is related to behavioral performance\n\nFor the excitability hypothesis to hold true, changes in pre- and peristimulus alpha power over parieto-occipital sensors would first have to be linked to changes in behavior. Replicating a rich body of previous work (reviewed in Samaha et al., 2020a), we compared parieto-occipital MEG power spectra for detected and undetected targets (see Figure 3a). Time-frequency analyses confirmed significant suppression of alpha power prior to presentation of targets which were later detected (vs. undetected, see Figure 3b for cluster-corrected results across ROI sensors). Prestimulus alpha suppression persisted as long as 1 s prior to target onset (Figure 3c) and was mainly localized over occipital and posterior parietal sensors. Whole-scalp control analyses across all frequency bands demonstrated that this topographical pattern was unique to alpha and beta prestimulus power (see Figure 3\u2014figure supplement 1): Compared to the clear parieto-occipital topography of prestimulus alpha modulations, delta and theta effects were prominently shifted to anterior electrodes, which rendered their involvement in low-level visual processing unlikely. No significant effects were observed in the gamma range. In contrast, beta-band modulations were closest to the alpha effects in their topography, covering parietal as well as occipital sites. Although the size of normalized effects was markedly smaller in the beta band (compared to alpha frequencies), the topographic distribution of prestimulus modulations as well as the spectral proximity of the two bands prompted further investigation of beta involvement.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig3-v2.jpg)\n\n**Figure 3.:** (a) Frequency spectra show prestimulus alpha suppression (interval [\u20131 0] s before target onset) for detected (hits, green) versus undetected targets (misses, yellow) averaged over bilateral parieto-occipital sensors (see inset). (b) Left panel shows the topographic distribution of normalized prestimulus power differences between detected and undetected targets (i.e., hits and misses). ROI channels with significant alpha-band differences (computed between [Arnal and Giraud, 2012; Busch and VanRullen, 2010] 8\u201313 Hz) for the contrast hits> misses are marked. Right panel shows the corresponding group-level t values from cluster-corrected permutation testing. Significant channels are marked for reference. (c) TFR shows power difference for the contrast hits> misses averaged across ROI sensors. Differences were computed on a frequency range of 5\u201340 Hz within a time frame of [\u20131 0.2] s around target onset, red frame indicates alpha frequencies (8\u201313 Hz). (d) Population statistic quantifying TFR differences (see panel (c)) on the sensor level. For each frequency at each time point, the heatmap illustrates which ratio of the n=82 ROI channels showed a significant difference for the contrast hits> misses (cluster-corrected, see main text).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Whole-scalp topographic distribution of normalized pre- and peristimulus power differences between hits and misses, separately for each frequency band. Channels with significant differences in the respective band are marked (cluster-corrected within the respective time frame).\n\nIn line with previous work (Wyart and Tallon-Baudry, 2009; Iemi et al., 2017), we further observed a pronounced alpha desynchronization after stimulus onset for detected (vs. undetected) targets. Such differences have been shown to be driven by stronger evoked responses for these stimuli in near-threshold perception tasks (Busch and VanRullen, 2010; Bareither et al., 2014) and to influence detection performance together with prestimulus alpha fluctuations (Wyart and Tallon-Baudry, 2009).\n\nWhile these results are confirmatory rather than novel, they pose a central prerequisite for a unifying account of excitability. We suggest that respiration cyclically organizes states of cortical excitability, states which in turn determine perceptual performance. Building on our findings that (a) respiration cyclically modulated performance consistently across participants and (b) performance was determined by phasic changes in parieto-occipital alpha power, the final questions thus concerned the overarching link between alpha power, behavior, and respiration.\n\n### Alpha power, behavior, and respiration\n\nParticularly, two key questions remained for the final analyses: First, for excitability to be the mediator of respiration-locked performance changes, parieto-occipital alpha power should itself be modulated by respiration. Second, such respiration-induced changes in alpha power should contribute to the phase-dependent performance effects we saw in the PsychF refitting, extending the global differentiation between hits and misses shown above.\n\nAs for respiration-induced changes in parieto-occipital alpha power, we replicated previous findings of phase-amplitude coupling in the alpha band (Kluger and Gross, 2021). The modulation index (MI; Tort et al., 2008) quantifies the extent to which respiration phase modulated alpha power over parietal and occipital electrodes. Depicted in units of standard deviation of the null distribution in Figure 4a, values were significant for a wide frequency range including the alpha band (tested against the 95th percentile of a null distribution constructed from 200 random phase shifts, cluster-corrected for multiple comparisons at \u03b1=0.05). This result establishes a significant respiratory modulation of the cortical parieto-occipital alpha rhythms that are known to be related to perceptual performance (Figure 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig4-v2.jpg)\n\n**Figure 4.:** (a) Left panel shows modulation index as a measure of phase-amplitude coupling across frequencies and corresponding t values from cluster-permutation testing. Coupling was significant (FDR-corrected) over the entire frequency range from 2 to 40 Hz within the parieto-occipital ROI (see Figure 3a). Right panel shows ROI sensor-level TFR illustrating group-level average power changes over the course of one entire respiration cycle. Power was normalized within each frequency to highlight phasic changes and is shown in z values. (b) Histogram shows the empirical LMEM weight for the respiratory vector norm against the null distribution computed from 5000 iterations of randomized PsychF vectors on the subject level. (c) Instantaneous group-level correlation between individual alpha and PsychF threshold courses (averaged between 8 and 13 Hz) with significant phase vector (length of six time points) marked by gray dots (cluster-corrected). Inset shows the correlation within the significant time window: For each participant, six dots represent alpha power and Psych F at the respective significant time point (color-coded across participants). (d) Didactic panel illustrating the iterative refitting approach. Individual alpha and PsychF threshold courses (see top and middle) were continuously shifted against each other. At each lag (ranging from \u2212\u03c0 to \u03c0), the LMEM was recomputed on the group level to obtain the preferred phase of alpha modulation effects, that is, the lag at which alpha explained the maximum variance in PsychF thresholds. (e) Top panel shows LMEM beta weights \u00b195% confidence interval for alpha power (red) for all phase lags between alpha and PsychF threshold courses. Alpha effects were found to be strongest at a phase lag of \u221230\u00b0, that is, preceding PsychF modulation by \u03c0/6. Blue line shows the respiratory phase vector norm (i.e., the combination of LMEM weights for respiratory sine and cosine). Blue violin plots show the null distributions of the phase vector norm at each lag, resulting from n=1000 random permutations. Inset shows distribution of peak lags for the alpha power coefficient from a bootstrapping approach with n=500 iterations. Bottom panel shows the corresponding t-statistic for alpha across all phase lags. Dots indicate significance for alpha (red) and the respiratory phase vector norm (blue).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70907/elife-70907-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Group-level correlation between individual beta and PsychF threshold courses (averaged between 14 and 30 Hz) with significant phase vector (length of seven time points) marked by dark gray dots (cluster-corrected). Correlation time course of the alpha band (see Figure 4c) shown for reference in light gray.\n\nTo assess the significance of alpha contributions to the interplay of respiration and performance, we set up a second LMEM expressing refitted PsychF threshold values as a linear combination of sine and cosine of the respiration signal as well as parieto-occipital alpha power (averaged from 8 to 13 Hz). Using the permutation approach described above, we replicated the significant effect of the respiratory phase vector norm from the first LMEM (all p<0.002, see Figure 4b). Moreover, the model yielded a significant effect for parieto-occipital alpha power (t(1794)=6.02, p<0.001). In addition, alpha power significantly interacted with the cosine portion of the respiratory signal (t(1794)=4.07, p<0.001), providing strong support for both respiration and excitability as significant predictors of perceptual performance. Comparing the LMEM to the previous model (which only contained respiratory sine and cosine) confirmed the significant contribution of alpha power in explaining PsychF threshold variation by means of a theoretical likelihood ratio test (\u03c7\u00b2(3)=49.45, p<0.001). In other words, variation in perceptual accuracy was around 49 times more likely under the model which included parieto-occipital alpha than under one that did not. Of note, the increase in model fit cannot be explained by the higher number of regressors, as the likelihood ratio test accounts for the addition of predictors.\n\nA third LMEM investigating potential beta contributions yielded significant effects for both alpha (t(1790)=3.27, p<0.001) and beta power (t(1790)=4.83, p<0.001). Beta showed significant interactions with the sine of the respiratory signal (t(1790)=\u20133.52, p<0.001) as well as with alpha power (t(1790)=\u20134.63, p<0.001). Comparing the LMEM to the previous model which only contained alpha power (along with respiratory sine and cosine) confirmed the significant contribution of beta power in explaining PsychF threshold variation by means of a theoretical likelihood ratio test (\u03c7\u00b2(4)=60.43, p<0.001).\n\nFinally, we aimed to characterize the relationship between alpha power and PsychF threshold over the respiration cycle. To this end, we computed the instantaneous (i.e., bin-wise) correlation between alpha power (averaged between 8 and 13 Hz) and PsychF threshold values. On the group level, we found the two time courses to be significantly correlated during the inspiratory phase between \u201390\u00b0 and \u201360\u00b0 (cluster-corrected, Figure 4c). These positive correlations corroborated our previous results showing epochs of increased performance during the inspiratory phase (Figure 2d) as well as the perceptual benefit of suppression effects in the alpha band (Figure 3b). Control analyses across all frequency bands yielded a significant instantaneous correlation between PsychF threshold and beta power as well, albeit at a slightly later phase (see Figure 4\u2014figure supplement 2). Consistent with the TFR analysis shown above, no significant correlation between oscillatory power and respiration time courses were found for delta, theta, and gamma bands.\n\nWhile the instantaneous correlation nicely captured interactions between alpha oscillations and PsychF threshold, it was naturally computed at zero lag between the two time courses. Conceivably, however, if respiration-induced excitability changes in fact mediate performance effects, respiration-brain coupling could temporally precede respiration-induced changes in behavior. Within the present analytical framework, this would manifest in an increased effect of alpha power at negative lags. To test this hypothesis, we combined circular shifts of the alpha power time courses with a bootstrapping approach to recompute the second LMEM described above for different lags ranging from -\u03c0 to \u03c0. In short, we shifted the alpha power courses of each participant against their PsychF threshold courses by a single angle bin (i.e., \u03c0/30 or 6\u00b0), recomputed the LMEM (including coefficients for sine, cosine, and alpha), and stored the beta weights and t values for each predictor (see Figure 4d for an illustration). This way, we obtained a distribution of t values as a function of phase shifts which showed that the effect of alpha power peaked not at zero lag, but at a lag of \u201330\u00b0 (Figure 4e). To test the reliability of this negative peak, we recomputed binwise LMEMs n=500 times, each time randomly drawing 30 participants (with replacement). The bootstrapping procedure yielded a confidence interval of [\u221233.17 to 29.25] degrees for the peak effect of alpha power. While these results strongly suggest that respiration-alpha coupling temporally precedes behavioral consequences, they do not provide sufficient evidence for a strict causal interpretation (see Discussion).\n\nTo summarize, both respiration phase and parieto-occipital alpha power significantly explained individual variation in perceptual sensitivity (PsychF threshold). While parieto-occipital alpha and PsychF threshold were found to be significantly correlated during the inspiratory phase, the effect of alpha power was maximized at a respiration phase lag of around \u201330\u00b0, showing that alpha modulation precedes behavioral modulation.\n\n## Discussion\n\nThe overall picture of our findings emphatically underscores the central role of respiration in the temporal synchronization of information sampling to phasic states of heightened neural excitability. Extending previous reports of respiration-locked performance changes, we found respiration to modulate perceptual sensitivity in a near-threshold detection task. Assessing behavioral effects over the continuous respiration signal allowed us to characterize the shape of this modulation over time, demonstrating for the first time that it appears to be more complex than a dichotomy of inspiratory versus expiratory phase. This modulatory pattern raises interesting methodological questions for future research: As the respiratory signal itself is not strictly sinusoidal, respiration-locked performance modulation is not necessarily constrained to a sinusoidal shape. Conceivably, similar to the heartbeat-evoked potential shown for the cardiac rhythm (Pollatos and Schandry, 2004), respiratory rhythms too could trigger event-like behavioral changes that repeat with each breathing cycle. Future studies might investigate if the temporal modulation revealed here is best described by a sinusoidal function spanning the entire breathing cycle or by other models that are possibly restricted to specific time windows within a full cycle.\n\nWe then investigated parieto-occipital oscillatory power in the alpha band (8\u201313 Hz) as a proxy of neural excitability. Alpha power was significantly suppressed prior to detected versus undetected targets, highlighting the behavioral benefits of heightened prestimulus excitability. Furthermore, parieto-occipital alpha was found to be significantly modulated by respiration phase, strongly suggesting a functional coupling of respiration-locked changes in both excitability and performance. This coupling was further accentuated by a significant instantaneous correlation between alpha power and sensitivity, particularly during the inspiratory phase. Notably, the effect of alpha power on behavioral performance was strongest at a respiration phase lag of around \u201330\u00b0, indicating that respiration-alpha coupling temporally precedes performance changes.\n\n### Alpha oscillations, neural excitability, and behavior\n\nThere is overwhelming evidence for an intricate connection between alpha oscillations, excitability, and behavior, particularly in the visual domain (see Samaha et al., 2020a for a recent review). In addition to alpha pacemaker cells originally shown in the animal thalamus (da Silva et al., 1973), widespread alpha activity suggests generators to be further located in early visual (Bollimunta et al., 2008) and even higher-order cortical areas (Florez et al., 2015; Haegens et al., 2015). Excitatory input to the visual cortex is regulated by functional inhibition in a feed-forward mechanism based on alpha oscillations, effectively controlling the excitability of the neural system per se (Iemi et al., 2021; Jensen and Mazaheri, 2010). The inverse relationship between alpha power and excitability is corroborated by cross-modal evidence that strong ongoing alpha oscillations entail reduced single-unit firing rates in humans (Chapeton et al., 2019) and primates (Dougherty et al., 2017; Lundqvist et al., 2020), population-level activity such as local field potentials (Potes et al., 2014; Spaak et al., 2012), and hemodynamic BOLD activity (Becker et al., 2011; Goldman et al., 2002). In perceptual tasks, a transient state of lowered excitability inevitably affects behavior, as evident from longer reaction times (Kelly and O\u2019Connell, 2013; Zhang et al., 2008), lower confidence reports (Samaha et al., 2017; Samaha et al., 2020b), and lower detection rates of near-threshold stimuli (Chaumon and Busch, 2014; Iemi and Busch, 2018). Accordingly, one recent study proposed that the alpha rhythm shapes the strength of neural stimulus representations by modulating excitability (Iemi et al., 2021). Previous work by Michalareas et al., 2016 as well as our own data (see Supplementary Material) point toward an interaction between alpha and beta bands, as beta oscillations have very recently been implicated in mediating top-down signals from the frontal eye field (FEF) that modulate excitability in the visual cortex during spatial attention (Veniero et al., 2021). Our findings suggest that this top-down signaling is modulated across the respiration cycle in a way that changes behavioral performance. Thus, our present results not only provide further support for the link between alpha power and excitability-related performance changes, but further suggest respiration as a key contributing factor in the ongoing search for an underlying mechanism. Such an argument for functional body-brain coupling does not contradict the proposed alpha mechanism in any way, but rather broadens the explanatory scope to unify neural and peripheral signaling.\n\n### Excitability changes are coupled to respiration\n\nCompared to the extensive research of alpha oscillations and their relation to neural excitability, the link between excitability and respiration is considerably less well understood. Intracranial recordings in animals have demonstrated that respiration modulates spike rates in a variety of brain regions (Biskamp et al., 2017; Ito et al., 2014; Yanovsky et al., 2014). This characteristic was implemented in a graph model by Heck et al., 2016, which provided a proof of principle that sinusoidal input and intrinsic properties of cortical networks are sufficient to potentially achieve respiration-locked modulations of high-frequency oscillations. The authors later proposed two main sources of respiration-locked neural signaling, namely the OB and extrabulbar sources within the brainstem (Heck et al., 2019). As outlined in the introduction, there is broad consensus that cross-frequency coupling (Canolty and Knight, 2010; Jensen and Colgin, 2007) plays a central role in translating respiratory to neural rhythms: Respiration entrains neural activity within the olfactory tract via mechanoreceptors, after which the phase of this infraslow rhythm is coupled to the amplitude of faster oscillations (see Fontanini and Bower, 2006; Ito et al., 2014). While this mechanism is difficult to investigate directly in humans, converging evidence for the importance of bulbar rhythms comes from animal bulbectomy studies (Ito et al., 2014) and the fact that respiration-related changes in both oscillatory power and behavior dissipate during oral breathing (Zelano et al., 2016; Perl et al., 2019). Thus, rhythmic nasal respiration conceivably aligns rhythmic brain activity across the brain, which in turn influences behavior. In our present paradigm, transient phases of heightened excitability would then be explained by decreased inhibitory influence on neural signaling within the visual cortex, leading to increased postsynaptic gain and higher detection rates. Given that the breathing act is under voluntary control, the question then becomes to what extent respiration may be actively used to synchronize information sampling with phasic states of heightened excitability.\n\n### Toward an active account of human respiration-brain coupling\n\nSuch an active account of respiration-brain coupling is once more motivated by the animal literature. In rodents, respiration is only one of multiple rhythmic processes that constitute orofacial motor behaviors, including head and nose movements, whisking, and sniffing (Welker, 1964). Distinct respiratory nuclei in the ventral medulla have been shown to coordinate these complex motor patterns in a specific manner, in that the respiratory rhythm effectively \u2018resets\u2019 faster rhythms like whisking behavior (Moore et al., 2013). According to this \u2018master clock\u2019 conceptualization of respiration, respiratory circuits in the brain stem allow phase-locking of various sensorimotor channels through \u2018snapshots\u2019 of the orofacial environment continuously triggered by respiration onsets (Kurnikova et al., 2017). In other words, multiple streams of sensory information are coordinated in a way that optimizes their integration and propagation (Corcoran et al., 2018). While the concept of active sensing has thus been well established in animals (Wachowiak, 2011), interoceptive inference in human sensation is still in its infancy. Intriguingly, theoretical modelling work (Allen et al., 2019a; Corcoran et al., 2018; Owens et al., 2018) as well as empirical studies on various interoceptive signals (Galvez-Pol et al., 2020; Mather and Thayer, 2018; Rebollo et al., 2018) are seeking to widen our understanding of how sampling information from the external world is coordinated with bodily states. Reports on functional body-brain coupling span cyclic signals from infraslow gastric (Rebollo et al., 2018) over respiratory (Herrero et al., 2018; Kluger and Gross, 2021) to cardiac rhythms (Galvez-Pol et al., 2020; Mather and Thayer, 2018), showing that, across all time scales, sensory information is critically dependent on physiological rhythms. From a predictive processing perspective, the link between interoceptive and neural rhythms serves predictive timing, meaning that information sampling itself is temporally aligned with particular bodily states. Using free visual search, Galvez-Pol et al., 2020 demonstrated that the timing of eye movements was closely coupled to certain phases of the cardiac cycle, with information sampling clustered during quiescent periods of the heartbeat. Functionally, the authors interpret this synchronization to maximize the signal-to-noise balance between interoceptive and exteroceptive signals, which is precisely the mechanism we propose for the alignment with excitability states. A similar argument has prominently been made for attentional selection (Thut et al., 2006) which actively phase-locks neural oscillations to sensory streams in order to upregulate response gain and amplify attended stimuli (Lakatos et al., 2008). Our findings, together with mounting evidence from recent interoceptive accounts, strongly suggest that well-described accounts of hierarchically organized oscillations (Lakatos et al., 2005) are not limited to neural signals alone, but extend to even slower bodily rhythms. Rigorous future work is needed to investigate potentially causal effects of respiration-brain coupling on behavior, for example, by means of directed connectivity within task-related networks. A second promising line of research considers top-down respiratory modulation as a function of stimulus characteristics (such as predictability). This would grant fundamental insights into whether respiration is actively adapted to optimize sensory sampling in different contexts, as suggested by the animal literature. Recognizing human respiration as active sensory selection rather than a mere bottom-up automatism offers a promising framework to explain how respiration-locked changes in neural signaling benefit action, perception, and cognition.\n\n## Materials and methods\n\n### Participants\n\nThirty volunteers (16 female, age 25.1\u00b12.7 years [mean \u00b1 SD]) participated in the study. All participants had (corrected-to) normal vision, denied having any respiratory or neurological disease, and gave written informed consent prior to all experimental procedures. The study was approved by the local ethics committee of the University of Muenster (approval ID 2018-068f-S) and complied with the Declaration of Helsinki.\n\n### Procedure\n\nParticipants were seated upright in a magnetically shielded room while we simultaneously recorded respiration and MEG data. MEG data were acquired using a 275-channel whole-head system (OMEGA 275, VSM Medtech Ltd, Vancouver, Canada) and continuously recorded at a sampling frequency of 600 Hz. To minimize head movement, the participant\u2019s head was stabilised with cotton pads inside the MEG helmet. Data were acquired across six runs with intermediate self-paced breaks. The length of each run was dependent on individual response speed (452\u00b128 s; M \u00b1 SD). Participants were to breathe automatically through their nose while respiration was recorded as thoracic circumference by means of a respiration belt transducer (BIOPAC Systems, Inc, Goleta, USA) placed around their chest. Participants were continuously monitored via video to ensure nasal (and not oral) respiration. To characterize individual rates of natural breathing, we computed TFRs of single-run respiration time courses for each participant. To this end, the continuous respiration signal was segmented into 20 s segments with 50% overlap and subsequently detrended. Power spectra (range 0\u20132 Hz in 0.025 Hz increments, single Hanning taper, zero-padded to 40 s segments) were computed in Fieldtrip (Oostenveld et al., 2011) and subsequently averaged across runs within each participant. On the group level, the dominant breathing frequency was found to be at 0.26\u00b10.08 Hz (M \u00b1 SD), corresponding to an average of 15.8 breaths per minute.\n\n### Task\n\nParticipants performed a spatial detection task (three-choice, single interval) in which they were to fixate on a cross (0.4\u00b0 in diameter) in the center of the screen presented against a black background. Following this fixation period (jittered between 1200 and 3500 ms), a small Gabor patch (0.3\u00b0 in diameter) was presented for 50 ms in a marked circular area (3.5\u00b0 in diameter) 10\u00b0 to the left or the right side of the fixation cross. In addition to left or right side targets, one-third of all trials were catch trials where no target was presented at all. After a delay of 500 ms, a question mark in the center of the screen prompted participants to give their response: Using a three-button response box in their right hand, participants reported whether they saw a target on the left (index finger) or the right side (middle finger) or no target at all (thumb). Once the report was registered, a new trial started (again with a fixation period). Participants were instructed to keep their eyes on the center cross at all times and encouraged to report left or right targets even when they were not entirely certain.\n\nFor each trial, target contrast was adapted by a QUEST staircase (Watson and Pelli, 1983) aimed at individual HRs of about 60%. Each of the six experimental runs contained a total of 720 trials (240 left target, right target, and catch trials, respectively).\n\n### Behavioral analyses\n\nBehavioral data were preprocessed and analyzed using R (R Development Core Team, 2014) and Matlab (The Mathworks, Inc, Natick, USA). To account for the initiation of the QUEST procedure, the first 20 trials of each run were discarded. All behavioral analyses were focussed on trials with an actual target present (n=480) which were subsequently classified into hits (i.e., detected targets) and misses (undetected targets). Misses were restricted to \u2018target absent\u2019 responses during target-present trials. Individual HRs were computed as nHits/(nHits+nMisses).\n\nTo obtain the respiration phase angles corresponding to single trials, we used Matlab\u2019s findpeaks function to identify time points of peak inspiration (peaks) and expiration (troughs) in the normalized respiration time course. Phase angles were linearly interpolated from trough to peak (\u2212\u03c0 to 0) and peak to trough (0 to \u03c0) in order to yield respiration cycles centerd around mean inspiration. For each trial, we thus obtained the respiration angle at which the target had been presented.\n\nUsing the gcmi toolbox for Matlab (Ince et al., 2017), we computed single-trial mutual information on the participant level for two sets of factors: First, we considered a discrete detection factor (target detected/undetected) and a continuous contrast factor of Copula-normalized target contrast (as determined by the QUEST procedure). The Copula transform is based on rank ordering the individual target contrast vectors (see Ince et al., 2017 for details). In a second step, we added two further continuous sine and cosine factors of respiration phase. These computations yielded two mutual information values for each participant, with and without respiration phase, respectively. To determine whether adding respiration phase significantly enhanced mutual information on the group level, we tested individual differences of the two mutual information values against zero with a Wilcoxon signed-rank test.\n\n### Respiration phase-dependent PsychF fitting\n\nFor a more sensitive measure of respiration-locked changes in perceptual accuracy, we combined the moving window approach outlined above with a robust Bayesian inference analysis for the psychometric function. For each participant, we first fitted the psychometric function (with a cumulative Gaussian distribution as the sigmoid) to all target trials using a three-alternative forced choice model (guessing rate fixed at 0.33) from the Psignifit toolbox for Matlab (Sch\u00fctt et al., 2016). We then used the identified threshold and width (i.e., slope) from the overall fit as priors for an iterative refitting of the PsychF on subsets of trials obtained from the moving window: Again moving along the respiration cycle in increments of \u0394\u03c9=\u03c0/30, we fitted the PsychF to the trials presented at a respiration angle of \u03c9\u00b1\u03c0/10. This way, we extracted respiration phase-dependent estimates of PsychF threshold for each participant (see Figure 2) which were subsequently z-scored. Finally, the normalized threshold variations were averaged across subjects to obtain the grand average phase-dependent threshold modulation at the population level.\n\n### MEG preprocessing and segmentation\n\nAll MEG and respiratory data preprocessing were done in Fieldtrip for Matlab. Prior to statistical comparisons, we adapted the synthetic gradiometer order to the third order for better MEG noise balancing (ft_denoise_synthetic). Power line artifacts were removed using a discrete Fourier transform (DFT) filter on the line frequency of 50 Hz and all its harmonics (including spectrum interpolation; dftfilter argument in ft_preprocessing). Next, we applied independent component analysis (ICA) on the filtered data to capture eye blinks and cardiac artifacts (ft_componentanalysis with 32 extracted components). On average, artifacts were identified in 2.53\u00b10.73 components (M \u00b1 SD) per participant and removed from the data. Finally, continuous MEG data were segmented to a [\u20131.25 to 0.75] s interval around target onset and resampled to 300 Hz. Likewise, respiration time courses were resampled to 300 Hz and z-scored to yield normalized respiration traces for each participant and each experimental run.\n\n### Head movement correction\n\nIn order to rule out head movement as a potential confound in our analyses, we used a correction method established by Stolk et al., 2013. This method uses the accurate online head movement tracking that is performed by our acquisition system during MEG recordings. This leads to six continuous signals (temporally aligned with the MEG signal) that represent the x, y, and z coordinates of the head center $(H_{x},H_{y},H_{z})$ and the three rotation angles $(H_{\u03c8},H_{\u03d1},H_{\\phi})$ that together fully describe the head movement. We constructed a regression model comprising these six \u2018raw\u2019 signals as well as their derivatives and, from these 12 signals, the first-, second-, and third-order non-linear regressors to compute a total of 36 head movement-related regression weights (using a third-order polynomial fit to remove slow drifts). This regression analysis was performed on the power spectra of single-sensor time courses, removing signal components that can be explained by translation or rotation of the head with respect to the MEG sensors.\n\n### MEG time-frequency analyses\n\nParieto-occipital time-frequency representations (TFRs) of hit and miss trials were computed using a discrete prolate spheroidal sequences multitaper on a frequency range from 5 to 40 Hz (mtmconvol argument for ft_freqanalysis). We applied a 2-Hz smoothing kernel to frequencies below 30 Hz and a 5-Hz smoothing kernel to frequencies above 30 Hz. As hits were slightly more frequent than misses (recall that the QUEST staircase aimed to fix performance at a HR of 0.60), we randomly sampled hit trials to match the number of misses, thus avoiding sampling bias. TFRs were computed for a moving window of 500 ms (50 ms increments) over the entire time frame of [\u20131.25 to 0.75] s around target onset. TFRs of hits and misses were separately averaged across participants and collapsed over the time dimension (range [\u20131 to 0] s) to obtain prestimulus power spectra (see Figure 3a).\n\nAgain, we used nonparametric permutation testing to determine statistical significance of group-level differences between TFRs of hits and misses. Individual TFRs were represented in matrices of 82 ROI channels \u00d7 36 frequencies \u00d7 25 time points. Differences across participants were assessed by means of dependent-samples t-tests while correcting for multiple comparisons (across channels, frequencies, and samples) with a Monte Carlo-based cluster permutation approach (5000 randomization iterations, \u03b1=0.05).\n\n### Computation of global field power\n\nFor the computation of global field power, the time courses of 82 MEG channels within our parieto-occipital ROI were individually subjected to a continuous wavelet transform using a Morlet wavelet with a Fourier-based algorithm for 64 frequencies (ranging from 0.5 to 40 Hz). The Fourier transform of our wavelet is defined as\n\n$$\n\u03c8(f)=\\pi^{\\frac{1}{4}}e^{\\frac{\u2212(f\u2212f0)^{2}}{2}}H(f)\n$$\n\nwhere H(f) is the Heaviside function and f0 is the center frequency in radians/sample. Next, we computed the absolute amplitude envelope of this complex-valued data, smoothed it with a 300 ms moving average, and averaged these amplitude values across channels and experimental runs.\n\n### Computation of modulation index and phase-triggered average\n\nThe MI quantifies cross-frequency coupling and specifically phase-amplitude coupling. Here, it was used to study to what extent the amplitude of brain oscillations at different frequencies were modulated by respiration phase. To this end, the instantaneous phase of the respiration time course was computed with the Hilbert transform. MI computation was then based on the average oscillatory amplitude (ranging from 2 to 40 Hz) at 20 different phases of the respiratory cycle (centerd around peak inspiration). Any significant modulation (i.e., deviation from a uniform distribution) is quantified by the entropy of this distribution. To account for frequency-dependent biases, we followed previously validated approaches (Zelano et al., 2016) and computed 200 surrogate MIs using random shifts of respiratory phase time series with concatenation across the edges. The normalized MI was computed by subtracting, for each frequency, the mean of all surrogate MIs and dividing by their standard deviation leading to MI values in units of standard deviation of the surrogate distribution. The computation resulted in normalized MI values for each channel, frequency, and participant. Group-level significance of these normalized MI values was determined by means of cluster-based permutation testing using ft_freqstatistics in Fieldtrip. Specifically, we conducted a series of one-tailed t-tests of individual MI values at each frequency against the 95th percentile of the null distribution from the 200 surrogate MI values. T values were then thresholded at p=0.05 and adjacent significant data points were defined as clusters. Using 5000 randomization iterations and the cluster sum criterion, the original cluster statistics were compared to the histogram of the randomized null statistics. Clusters in the original data were deemed significant when they yielded a larger test statistic than 95% of the randomized null data.\n\nTo assess oscillatory modulation over time, the phase-triggered average (PTA) was computed from the smoothed, band-specific amplitude envelopes averaged across the 80 ROI sensors. Time points of peak inhalation were detected from the respiration phase angle time series using Matlab\u2019s findpeaks function. For each peak in the respiration signal, global field power across all 64 frequencies was averaged within a time window of \u00b11000 samples centered around peak inhalation. The resulting 64 frequencies \u00d7 2000 samples matrix was finally z-scored across the time dimension, leading to normalized oscillatory power within the ROI phase-locked to the respiration signal. This analysis is equivalent to a wavelet-based time-frequency analysis. Computations were done separately for the six experimental runs and subsequently averaged across runs and participants.\n\n### Instantaneous correlation\n\nWe investigated the presence of an instantaneous, positive group-level correlation between variations in prestimulus alpha power and variations in the PsychF threshold, both as a function of the respiration phase angle. First, we averaged the alpha power over the range between 8 and 13 Hz. Then, for each phase angle bin, we correlated the alpha power with the corresponding threshold values. This yielded a course of Pearson r and corresponding p values over the respiration cycle. In order to correct for multiple comparisons, we applied a cluster permutation approach as follows: We first detected the significant clusters in our data and obtained the cluster masses by summing together the r values of the contiguous significant points (p<0.05). Then we reiteratively shuffled (N=10,000), the participant order in both the matrices of alpha power and thresholds. For each iteration, we stored the highest cluster mass value, yielding a surrogate distribution of cluster masses. We rejected H0 for each cluster mass in the real data that exceeded the 95th percentile (\u03b1=0.05, one-tailed) of the surrogate distribution of cluster masses.\n\n### Linear mixed effect modelling\n\nWe employed LMEM to investigate the relationship between respiration phase, parieto-occipital alpha power, and perceptual accuracy. LMEM models a response variable (in our case, the PsychF threshold value) as a linear combination of fixed effects shared across the population (phase angle, alpha power) and participant-specific random effects (i.e., modulatory variation between participants). We specified two LMEMs: The first model was set up to predict the PsychF threshold as a function of respiration angle (with separate sine and cosine contributions):\n\n$$\nT_{j}=\\beta_{0}+(S_{1j}+\\beta_{1})\u2217sin_{resp}+(S_{2j}+\\beta_{2})\u2217cos_{resp}+e_{j}\n$$\n\nFor participant j, the PsychF threshold value is expressed as a combination of the intercept ($\\beta_{0}$), the fixed effects of sine and cosine of the respiration angle ($\\beta_{1}$, $\\beta_{2}$), and an error term (ej~N(0,\u03c3\u00b2)). Since we had observed considerable between-participant variation of respiration-locked PsychF changes during the previous analysis (see above), we specified the current LMEM to include random slopes ($S_{1,\u00a0j},\u00a0S_{2,\u00a0j}$). This accounts for the fact that a potential fixed effect of respiration phase does not necessarily have to modulate PsychF threshold identically across the entire cohort. For significance testing, LMEM beta weights for sine and cosine were combined in a respiratory phase vector norm:\n\n$$\nv=\\sqrt{\\beta_{2}^{1}+\\beta_{2}^{2}}\n$$\n\nThis empirical combination of sine and cosine was tested against a null distribution constructed from randomized individual PsychF courses. To this end, we recomputed the LMEM n=5000 times while shuffling each participant\u2019s PsychF course. The resulting beta weights for sine and cosine were combined as described above and saved as \u2018null vector norms.\u2019 Significance of the empirical vector norm was determined by computing its percentile rank relative to the density function of the null distribution.\n\nAn analogous approach was used in a second model that further included the fixed effect of alpha power and separate interaction terms:\n\n$$\nT_{j}=\\beta_{0}+(S_{1j}+\\beta_{1})\u2217sin_{resp}+(S_{2j}+\\beta_{2})\u2217cos_{resp}+(S_{3j}+\\beta_{3})\u2217alpha+(S_{4j}+\\beta_{4})\u2217sin_{resp}\u2217alpha+(S_{5j}+\\beta_{5})\u2217cos_{resp}\u2217alpha+e_{j}\n$$\n\nWe used Matlab\u2019s compare function to test whether including alpha power in the model would significantly increase the LMEM fit (while simultaneously accounting for the addition of a third fixed effect) by means of a theoretical likelihood ratio test.\n\nNext, we attempted to characterize potential phase shifts between the modulatory effects of respiration on PsychF thresholds and alpha power. To this end, for lags ranging from \u2212\u03c0 to \u03c0, we shifted the alpha power course of each participant against their PsychF threshold course by a single angle bin (i.e., \u03c0/30 or 6\u00b0), recomputed the group-level LMEM (including coefficients for sine, cosine, and alpha), and stored the beta weights and t values for each predictor. This way, we obtained a distribution of t values as a function of phase shifts between alpha and PsychF time courses. In keeping with our previous LMEM analyses, we also generated a null distribution for the empirical phase vector norm at each lag by randomly shuffling each participant\u2019s PsychF threshold vector n=1000 times. These null distributions are shown as violin plots in Figure 4e.\n\nTo quantify the reliability of the ideal phase lag we obtained at around \u201330\u00b0 (Figure 4e), we combined the previous permutation procedure with a bootstrapping approach: For n=500 iterations, we randomly selected 30 participants (with replacement) and recomputed binwise LMEMs as described above.\n\n### Control analyses for extended frequency range\n\nIn order to characterize our central findings across an extended frequency range, we conducted control analyses that were not restricted to alpha frequencies alone, but involved all major frequency bands.\n\nTo this end, we extended the spectral range for both MEG time-frequency analyses and the computation of global field power (see above) to a range of 2\u201370 Hz. Computations and settings remained otherwise identical to our main analyses as described above. We then first computed cluster-corrected whole-scalp topographies for delta (2\u20134 Hz), theta (4\u20137 Hz), alpha (7\u201313 Hz), beta (14\u201330 Hz), and gamma bands (30\u201370 Hz) for hits versus misses over time intervals 1 s prior to stimulus presentation. Next, we computed the instantaneous correlation between individual beta power (over the respiration cycle) and respiratory phase, analogous to our main analysis shown in Figure 4c. Finally, we recomputed the LMEM visualized in Figure 4 with an additional factor for beta power and corresponding interactions:\n\n$$\nT_{j}=\\beta_{0}+(S_{1j}+\\beta_{1})\u2217sin_{resp}+(S_{2j}+\\beta_{2})\u2217cos_{resp}+(S_{3j}+\\beta_{3})\u2217alpha+(S_{4j}+\\beta_{4})\u2217sin_{resp}\u2217alpha+(S_{5j}+\\beta_{5})\u2217cos_{resp}\u2217alpha+(S_{6j}+\\beta_{6})\u2217beta+(S_{7j}+\\beta_{7})\u2217sin_{resp}\u2217beta+(S_{8j}+\\beta_{8})\u2217cos_{resp}\u2217beta+(S_{9j}+\\beta_{9})\u2217alpha\u2217beta+e_{j}\n$$\n",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "d8e9a06e-3d14-40eb-9c46-307fe8bc4f32",
+      "submission_id": "5872c7c7-30ca-4efb-a8cf-830b89a17eac",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonas Obleser, University of L\u00fcbeck Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70907.sa0](https://doi.org/10.7554/eLife.70907.sa0)\n\nKluger and colleagues investigated the influence of respiration on visual sensory perception in a near-threshold task and argue that the detected correlation between respiration phase and detection precision is liked to \u03b1 power, which in turn is modulated by the phase of respiration. The main finding is that the moment-to-moment relationship between excitability and perception in turn is coupled to the body's slower respiratory oscillation. This advances our understanding of how the brain-body system works as a whole.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jonas Obleser, University of L\u00fcbeck Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70907.sa1](https://doi.org/10.7554/eLife.70907.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Respiration aligns perception with neural excitability\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Floris de Lange as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andreas Draguhn (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAbove and beyond the major points of revision raised in the individual reviews, we have agreed on the following queries to be addressed by new analyses (and/or new data, although we are not asking for new data as a hard criterion, obviously, given the current situation):\n\ni) the paper needs more evidence for causality, rather than correlation, including data supporting the specificity of effects for \u03b1 (compared to other frequencies).\n\nSee detailed comments by the Reviewers regarding these issue below.\n\nAs an editorial hint, here the authors might want to look into state-of-the-art statistical approaches to inferring causality from observational/correlational data (for review see e.g. https://doi.org/10.1038/s41562-018-0466-5).\n\nAt the very least, the question of causality should at least be discussed more explicitly and all causal or causality-insinuating language should be avoided where not warranted.\n\nii) While we will not ask for new data as a hard requirement in the face of the curren pandemic, the authors should take note of our general concern about the lack of insights in underlying mechanisms; the reviewers feel the authors should at least consider interventions like mouth versus nasal breathing. This would also contribute substantially to the causality-related questions.\n\niii) better acknowledgement of earlier efforts and findings re. \u03b1 and breathing and breathing and visual perception is in order. See comments esp. by Reviewer 2 below.\n\nReviewer #1 (Recommendations for the authors):\n\n1. As described above in the public review, it seemed to me to be assumed that respiration causes fluctuations in \u03b1 power, and fluctuations in \u03b1 power in turn cause fluctuations in behavior (or we can speak of excitability, and maybe \u03b1 power is a reflection of that, I'm not hung up on this). Could it be that respiration and \u03b1 are both fluctuating on their own, and both influence behavior, but the two signals are not connected? I realize that the phase-amplitude coupling analysis is supposed to answer this question. However, this analysis seems problematic in that activity in frequency bands spanning 5-40 Hz (theta to low \u03b3) is coupled to respiration. So there's nothing specific about \u03b1/excitability that is related to respiration. Is it possibly the case that \"measurability\" (signal-to-noise ratio) is rather respiration coupled, as opposed to neural excitability? So, brain activity for whatever reason is easier to measure at certain phases of the respiration cycle? And therefore the brain-behavior relationship is clearer or stronger? That would be boring, but I think important to discuss / rule out. One possibility for the \u03b1-causality issue would be some kind of causal or moderator analysis. I'm not an expert, but I think there are some exciting new statistical techniques that could be useful here. I'm less sure about how to better assess the \u03b1-specificity of the effect, or to conceptually deal with an unspecific effect.\n\n2. I was not able to understand the analysis that involved shifting the \u03b1 time course. Unfortunately, I'm not sure what to recommend here, because I really didn't understand well enough to advise on how to make it clearer. I wonder whether a didactic analysis figure panel as part of Figure 4 might help?\n\n3. I think there are a few ways to update the analyses of the psychometric thresholds to make the results more interpretable and also to be more parallel across sections.\n\n\u2013 First, the authors use the sine and cosine of a circular predictor in their regression. They then interpret the \u03b2 values and statistics separately for the two predictors. I think the more common and meaningful approach is to recombine the betas into a single value that reflects the predictive power of the phase predictor, and then calculate corresponding statistics for the combined value. To do so, take the root-mean-square of the b1 and b2 values, sqrt(b12 + b22). Since this value will always be positive, it is often tested for significance using a permutation-based approach, which the authors are already comfortable with. I recently learned that this approach is called \"harmonic regression\" (for googleableness).\n\n\u2013 The approach I described above to recombine betas for the phase predictor will not work in the first analysis the authors present based on mutual information. Actually, I was wondering why the authors chose this approach, when a logistic regression would have worked equally well, would have been more cohesive with the other analyses in the paper, and would afford the same model-comparison approach as they used for the other analysis, instead of the Wilcoxon test on MI values. I would suggest that the results would be more streamlined with a regression approach here that algins with the other sections.\n\n\u2013 It might also be nice to substitute the hits > misses contrast on \u03b1 power with a regression approach examining how \u03b1 power changes psychometric thresholds so that the analyses start to align better across sections.\n\n4. I think I didn't fully follow the logic in the Intro/Discussion regarding the one of the paths by which respiration might affect excitability. In particular, for the route via the olfactory bulb, it wasn't clear to me how phase-amplitude coupling between slow olfactory, respiration-coupled phase and amplitude of \"faster oscillations\" would structurally or functionally lead to fluctuations in amplitude of parieto-occipital \u03b1 oscillations. Is this known, or is this rather for future work?\n\n5. The conversion of the normalized respiration time course to phase involved using Matlab's findpeaks function, assigning peaks and troughs values of 0 and {plus minus} \u03c0, respectively, and then linearly interpolating the phase values between them. This seems odd, especially as the later analysis (p. 25) accomplished the same thing via the Hilbert transform (more what I was expecting). I also would ask how, given that values between peak and trough were interpolated, it would be possible to see phase slips and nonlinear phase transitions, as in Figure 1d.\n\nReviewer #2 (Recommendations for the authors):\n\nThe study should include a comparison between nasal and oral breathing with reliable monitoring. Video alone might not suffice.\n\nThe analysis of the MEG signal should be extended to the entire frequency spectrum captured by the method.\n\nIf blood CO2 is the suspected mediator between breathing cycle and excitability the authors should consider manipulations that alter this parameter, using for example, controlled shallow vs. deep breathing.\n\nReviewer #3 (Recommendations for the authors):\n\nSpecific recommendations (not sorted by priority):\n\ni) Introduction, lines 75-77: The sentence is a bit puzzling. It starts with \"The bidirectionality\u2026\", but this bidirectionality had not been introduced previously to the reader. Rather, the connections mentioned in the second part of the sentence may lead to / explain such bidirectional relations.\n\nii) The raincloud plot in Figure 1c is not easily understandable to unfamiliar readers. Please explain in some detail and, if possible, label x-dimension.\n\niii) Figure 2c: Can you please provide an additional panel with extended contrast resolution (x-axis) to illustrate the dispersion of the curves more clearly? At present, density of curves and lacking contrast make it almost impossible to see the details.\n\niv) Figure 3b shows an apparent strong performance-dependent difference in \u03b1 power AFTER stimulus presentation. This should be made explicit and discussed. Could it be that the difference in this phase of the experiment does also affect the behavioral decision which, obviously, comes after presentation?\n\nv) Figure 4c does also need a more thorough explanation to be understandable.\n",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "20943d0b-b7e4-449b-8147-8063728df45c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C1",
+      "claim": "Human respiration at rest is a continuous, rhythmic sequence of active inspiration and passive expiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Human respiration at rest is a continuous, rhythmic sequence of active inspiration, and passive expiration (Fleming et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fleming et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "5f9bb129-a7a4-459e-ab3a-ce0d907e2c79",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C2",
+      "claim": "The active phase of respiration seems effortless due to medullar microcircuits like the preB\u00f6tzinger complex that autonomously and periodically drive respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Even the active phase seems effortless, however, thanks to medullar microcircuits like the preB\u00f6tzinger complex who autonomously and periodically drive respiration (Moore et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moore et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "9046fd36-f51e-4efc-b58e-6ee6c50bd904",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C3",
+      "claim": "Breathing can be adapted top-down when required, for example during speech or laughter.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being largely automatic, breathing can also be adapted top-down when required, for example, during speech or laughter (McKay et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McKay et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "ed362353-55b9-4e8e-a77e-a14818079e23",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C4",
+      "claim": "The preB\u00f6tzinger complex has intricate connections through the central medial thalamus to both the limbic system and the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, intricate connections from key structures like the preB\u00f6tzinger complex (through the central medial thalamus) and the olfactory bulb (OB) to both the limbic system (Carmichael et al., 1994) and the neocortex (Yang and Feldman, 2018) serve the bidirectional interplay between respiratory control and higher cognitive functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carmichael et al., 1994 and Yang and Feldman, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "2a6fe1c7-a503-4524-a596-d0c39aef7a01",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C5",
+      "claim": "The olfactory bulb has intricate connections to both the limbic system and the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, intricate connections from key structures like the preB\u00f6tzinger complex (through the central medial thalamus) and the olfactory bulb (OB) to both the limbic system (Carmichael et al., 1994) and the neocortex (Yang and Feldman, 2018) serve the bidirectional interplay between respiratory control and higher cognitive functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carmichael et al., 1994 and Yang and Feldman, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "afbc7d31-ef8a-4d17-87c8-bff47b629758",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C6",
+      "claim": "Neural oscillations in the cortex are sensitive markers of brain states.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, neural oscillations in the cortex have long been established as sensitive markers of brain states (Thut et al., 2012), which has brought increasing attention to questions of respiration-brain coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thut et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "a1813323-f785-4e5f-a1df-800bc182e3a9",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C7",
+      "claim": "Invasive work has shown respiration to modulate neural oscillations across a wide network of cortical and subcortical areas, including those not typically associated with olfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, both invasive (Zelano et al., 2016) and noninvasive work (Kluger and Gross, 2021) has shown respiration to modulate neural oscillations across a wide network of cortical and subcortical areas, including those not typically associated with olfaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zelano et al., 2016 and Kluger and Gross, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "98b08d54-825a-4fcd-a762-24d5c8afd322",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C8",
+      "claim": "Noninvasive work has shown respiration to modulate neural oscillations across a wide network of cortical and subcortical areas, including those not typically associated with olfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, both invasive (Zelano et al., 2016) and noninvasive work (Kluger and Gross, 2021) has shown respiration to modulate neural oscillations across a wide network of cortical and subcortical areas, including those not typically associated with olfaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zelano et al., 2016 and Kluger and Gross, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "e9962c48-2634-49cf-883b-64a1b8f04cfd",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C9",
+      "claim": "Modulatory effects of respiration have been demonstrated in motor tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, modulatory effects of respiration have been demonstrated in motor (Kluger and Gross, 2020; Rassler and Raabe, 2003) as well as in cognitive tasks (Perl et al., 2019; Zelano et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kluger and Gross, 2020 and Rassler and Raabe, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "26e3b208-106f-423d-98e4-948f158b815e",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C10",
+      "claim": "Modulatory effects of respiration have been demonstrated in cognitive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, modulatory effects of respiration have been demonstrated in motor (Kluger and Gross, 2020; Rassler and Raabe, 2003) as well as in cognitive tasks (Perl et al., 2019; Zelano et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Perl et al., 2019 and Zelano et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "f6f1bd85-b8e3-4076-bd80-8ae33b83cfdd",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C11",
+      "claim": "Cross-frequency phase-amplitude coupling is a well-established mechanism of neural information transfer across spatiotemporal scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-frequency phase-amplitude coupling is a well-established mechanism of neural information transfer across spatiotemporal scales (Canolty and Knight, 2010) and provides an intuitive explanation how the link between respiration phase and oscillatory amplitudes is potentially implemented",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Canolty and Knight, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "12092005-4ed6-41d2-be37-6c01c6f30744",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C12",
+      "claim": "In mice, slow respiration-induced rhythms within the olfactory bulb are transmitted through the piriform cortex and subsequent cortico-limbic circuits to modulate the amplitude of faster oscillations in upstream cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, slow respiration-induced rhythms within the OB were shown to be transmitted through the piriform cortex and subsequent cortico-limbic circuits to modulate the amplitude of faster oscillations in upstream cortical areas (Fontanini and Bower, 2006; Ito et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fontanini and Bower, 2006 and Ito et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "1a63be1b-5961-4d79-b86b-cde2bc728e95",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C13",
+      "claim": "Excitability varies over the respiration cycle in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitability has been shown to vary over the respiration cycle in rats (Dulla et al., 2005) and is tightly coupled to the amplitude of human cortical alpha oscillations (8\u201313 Hz)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dulla et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "e614023a-efd4-48f4-8dfa-d688e2113a27",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C14",
+      "claim": "Excitability is tightly coupled to the amplitude of human cortical alpha oscillations (8\u201313 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Excitability has been shown to vary over the respiration cycle in rats (Dulla et al., 2005) and is tightly coupled to the amplitude of human cortical alpha oscillations (8\u201313 Hz)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dulla et al., 2005 and established knowledge about alpha oscillations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "1d19cea7-a15f-4813-947d-59d33c294123",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C15",
+      "claim": "In the visual system, prestimulus alpha power over parieto-occipital sensors is inversely related to early visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly in the visual system, prestimulus alpha power over parieto-occipital sensors is inversely related to early visual responses (Chapeton et al., 2019; Iemi et al., 2019; Romei et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chapeton et al., 2019, Iemi et al., 2019, and Romei et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "be69c15f-b859-47d8-ae7f-6a1e932f524e",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C16",
+      "claim": "A prestimulus decrease in alpha power leads to increased detection rates for near-threshold stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, one highly replicated finding is that a prestimulus decrease in alpha power leads to increased detection rates for near-threshold stimuli (Ergenoglu et al., 2004; Iemi and Busch, 2018; Iemi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ergenoglu et al., 2004, Iemi and Busch, 2018, and Iemi et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "07172958-93a5-425e-b247-ae14367c81be",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C17",
+      "claim": "Performance levels in cognitive tasks fluctuate over the respiration cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Coming back to respiration-brain coupling and excitability, not only do performance levels in cognitive tasks fluctuate over the respiration cycle (Perl et al., 2019), but so does spontaneous alpha activity (Kluger and Gross, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perl et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "78976505-d803-414b-b795-9c0e858cfdfb",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C18",
+      "claim": "Spontaneous alpha activity fluctuates over the respiration cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Coming back to respiration-brain coupling and excitability, not only do performance levels in cognitive tasks fluctuate over the respiration cycle (Perl et al., 2019), but so does spontaneous alpha activity (Kluger and Gross, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kluger and Gross, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "1fe6edde-fd1a-4013-b7db-da5d45ac1caf",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C19",
+      "claim": "Human participants spontaneously inhale at trial onset in a self-paced cognitive task, effectively aligning stimulus processing with the inspiration phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This active view of respiration is corroborated by reports that human participants spontaneously inhale at trial onset in a self-paced cognitive task (Perl et al., 2019), effectively aligning stimulus processing with the inspiration phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perl et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "01e1d412-bfaa-4701-a85d-9a80a7249b01",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C20",
+      "claim": "Thirty volunteers (16 female, age 25.1\u00b12.7 years) participated in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty volunteers (16 female, age 25.1\u00b12.7 years [mean \u00b1 SD]) participated in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of participant demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "45025e0f-5bd5-4562-8c2a-2070a6dc1495",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C21",
+      "claim": "All participants had (corrected-to) normal vision.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants had (corrected-to) normal vision, denied having any respiratory or neurological disease, and gave written informed consent prior to all experimental procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of participant inclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "d6b5225b-75f5-44be-919d-d2c9144893ea",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C22",
+      "claim": "The study was approved by the local ethics committee of the University of Muenster (approval ID 2018-068f-S).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the local ethics committee of the University of Muenster (approval ID 2018-068f-S) and complied with the Declaration of Helsinki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethics approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "ca192616-65f5-4a0f-b300-e3da9fb0aae8",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C23",
+      "claim": "MEG data were acquired using a 275-channel whole-head system (OMEGA 275, VSM Medtech Ltd, Vancouver, Canada) and continuously recorded at a sampling frequency of 600 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "MEG data were acquired using a 275-channel whole-head system (OMEGA 275, VSM Medtech Ltd, Vancouver, Canada) and continuously recorded at a sampling frequency of 600 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of MEG acquisition parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "9b4b457e-5bdb-404a-9e1f-22765569f7d3",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C24",
+      "claim": "Data were acquired across six runs with intermediate self-paced breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were acquired across six runs with intermediate self-paced breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "03bbedf9-703e-431c-bc8a-b6b9ba44e83e",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C25",
+      "claim": "The length of each run was dependent on individual response speed (452\u00b128 s; M \u00b1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "The length of each run was dependent on individual response speed (452\u00b128 s; M \u00b1 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of run duration with measured data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "2008c745-d931-4b63-b289-134c32d08c1c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C26",
+      "claim": "Respiration was recorded as thoracic circumference by means of a respiration belt transducer (BIOPAC Systems, Inc, Goleta, USA) placed around the chest.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were to breathe automatically through their nose while respiration was recorded as thoracic circumference by means of a respiration belt transducer (BIOPAC Systems, Inc, Goleta, USA) placed around their chest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of respiration recording method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "4abe755d-6933-4527-8828-c72678c39519",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C27",
+      "claim": "On the group level, the dominant breathing frequency was found to be at 0.26\u00b10.08 Hz (M \u00b1 SD), corresponding to an average of 15.8 breaths per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "On the group level, the dominant breathing frequency was found to be at 0.26\u00b10.08 Hz (M \u00b1 SD), corresponding to an average of 15.8 breaths per minute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of measured breathing frequency",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "ca8992e9-c7c9-4fd2-b696-16683cb5bb1d",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C28",
+      "claim": "A small Gabor patch (0.3\u00b0 in diameter) was presented for 50 ms in a marked circular area (3.5\u00b0 in diameter) 10\u00b0 to the left or the right side of the fixation cross.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this fixation period (jittered between 1200 and 3500 ms), a small Gabor patch (0.3\u00b0 in diameter) was presented for 50 ms in a marked circular area (3.5\u00b0 in diameter) 10\u00b0 to the left or the right side of the fixation cross.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of stimulus parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "d32bae83-0810-4c28-a5dd-1a6886896ae9",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C29",
+      "claim": "One-third of all trials were catch trials where no target was presented at all.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to left or right side targets, one-third of all trials were catch trials where no target was presented at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "b6cb5002-5690-4823-ba36-d57f53e0d2f5",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C30",
+      "claim": "For each trial, target contrast was adapted by a QUEST staircase aimed at individual hit rates of about 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "For each trial, target contrast was adapted by a QUEST staircase (Watson and Pelli, 1983) aimed at individual HRs of about 60%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of adaptive staircase procedure with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "1951c03d-614b-44ca-b73a-2bd4bdf15995",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C31",
+      "claim": "Each of the six experimental runs contained a total of 720 trials (240 left target, right target, and catch trials, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the six experimental runs contained a total of 720 trials (240 left target, right target, and catch trials, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of trial numbers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "3b819445-e0aa-4a43-b594-446375fb473c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C32",
+      "claim": "Across participants, an average hit rate of 0.54\u00b10.05 (M \u00b1 SD) was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Across participants, we observed an average HR (i.e., the proportion of detected targets) of MHR=0.54\u00b10.05 (M \u00b1 SD), which was reasonably close to the staircase's desired HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of measured hit rate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "6e688935-83d7-4e21-b9d6-dff18cd1e4ed",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C33",
+      "claim": "Mutual information was significantly enhanced by adding respiration phase (Wilcoxon signed-rank test: z=4.78, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutual information was significantly enhanced by adding respiration phase (Wilcoxon signed-rank test: z=4.78, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical test result, also shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "169b5b2a-1331-47d0-b58f-86d4bf32c08f",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C34",
+      "claim": "Individual thresholds showed systematic variations across the respiratory cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, individual thresholds showed systematic variations across the respiratory cycle (Figure 2c), indicating that respiration in fact changes the perceptual threshold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to Figure 2c showing the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "de45a8bd-df18-4bc5-b982-965e79caca2a",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C35",
+      "claim": "The empirical regression weight was greater than anyone from the randomization distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical regression weight was greater than anyone from the randomization distribution (see Figure 2d), corroborating the overall influence of respiration on perceptual performance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical result with reference to Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "8dfcd9b4-59b4-4f78-8a18-7825ef010291",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C36",
+      "claim": "Cluster-permutation testing confirmed a significant lowering of the PsychF threshold during the inspiratory phase, corresponding to respiration angles between \u2013128\u00b0 and \u201376\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to the time course of these modulations, cluster-permutation testing confirmed a significant lowering of the PsychF threshold during the inspiratory phase, corresponding to respiration angles between \u2013128\u00b0 and \u201376\u00b0 (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical result with reference to Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "4b071287-4cf7-4736-aada-ceb7ab26d73c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C37",
+      "claim": "Time-frequency analyses confirmed significant suppression of alpha power prior to presentation of targets which were later detected (vs. undetected).",
+      "claim_type": "EXPLICIT",
+      "source": "Time-frequency analyses confirmed significant suppression of alpha power prior to presentation of targets which were later detected (vs. undetected, see Figure 3b for cluster-corrected results across ROI sensors).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of analysis result with reference to Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "d7e82683-175d-4c9d-8ab4-61081dea25d5",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C38",
+      "claim": "Prestimulus alpha suppression persisted as long as 1 s prior to target onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Prestimulus alpha suppression persisted as long as 1 s prior to target onset (Figure 3c) and was mainly localized over occipital and posterior parietal sensors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to Figure 3c showing the temporal extent",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "982c367c-5377-4e3a-be19-eb9031e3643f",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C39",
+      "claim": "Prestimulus alpha suppression was mainly localized over occipital and posterior parietal sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Prestimulus alpha suppression persisted as long as 1 s prior to target onset (Figure 3c) and was mainly localized over occipital and posterior parietal sensors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to Figure 3c showing the spatial distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "f447960f-03ae-4122-9bdd-c4c41779dc17",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C40",
+      "claim": "A pronounced alpha desynchronization after stimulus onset was observed for detected (vs. undetected) targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous work (Wyart and Tallon-Baudry, 2009; Iemi et al., 2017), we further observed a pronounced alpha desynchronization after stimulus onset for detected (vs. undetected) targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of observed result with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "02d5a98e-55b2-4aa8-8e00-7bc4ce163797",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C41",
+      "claim": "Modulation index values were significant for a wide frequency range including the alpha band.",
+      "claim_type": "EXPLICIT",
+      "source": "Depicted in units of standard deviation of the null distribution in Figure 4a, values were significant for a wide frequency range including the alpha band (tested against the 95th percentile of a null distribution constructed from 200 random phase shifts, cluster-corrected for multiple comparisons at \u03b1=0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical result with reference to Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "959a3513-949e-4fd5-825a-13e969cc4a19",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C42",
+      "claim": "The LMEM yielded a significant effect for parieto-occipital alpha power (t(1794)=6.02, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the model yielded a significant effect for parieto-occipital alpha power (t(1794)=6.02, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "f9dfe911-a36c-4deb-8885-eb85f72eefc0",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C43",
+      "claim": "Alpha power significantly interacted with the cosine portion of the respiratory signal (t(1794)=4.07, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, alpha power significantly interacted with the cosine portion of the respiratory signal (t(1794)=4.07, p<0.001), providing strong support for both respiration and excitability as significant predictors of perceptual performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "933e6fe9-1781-4897-b877-8889939baa4c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C44",
+      "claim": "Comparing the LMEM to the previous model confirmed the significant contribution of alpha power in explaining PsychF threshold variation by means of a theoretical likelihood ratio test (\u03c7\u00b2(3)=49.45, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the LMEM to the previous model (which only contained respiratory sine and cosine) confirmed the significant contribution of alpha power in explaining PsychF threshold variation by means of a theoretical likelihood ratio test (\u03c7\u00b2(3)=49.45, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "3a389822-a767-4141-aa34-e00b74d5d343",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C45",
+      "claim": "Alpha power and PsychF threshold were found to be significantly correlated during the inspiratory phase between \u201390\u00b0 and \u201360\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "On the group level, we found the two time courses to be significantly correlated during the inspiratory phase between \u201390\u00b0 and \u201360\u00b0 (cluster-corrected, Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical result with reference to Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "2bc93ca3-4130-4ed1-a584-750484e129a0",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C46",
+      "claim": "The effect of alpha power peaked at a lag of \u201330\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "This way, we obtained a distribution of t values as a function of phase shifts which showed that the effect of alpha power peaked not at zero lag, but at a lag of \u201330\u00b0 (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of analysis result with reference to Figure 4e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "e4f85af1-e552-4be8-889c-a420c0d37132",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C47",
+      "claim": "The bootstrapping procedure yielded a confidence interval of [\u221233.17 to 29.25] degrees for the peak effect of alpha power.",
+      "claim_type": "EXPLICIT",
+      "source": "The bootstrapping procedure yielded a confidence interval of [\u221233.17 to 29.25] degrees for the peak effect of alpha power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of bootstrapping result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "61badcdf-062f-42d9-be72-a7efcc476de6",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C48",
+      "claim": "Respiration was found to significantly modulate perceptual sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Respiration was found to significantly modulate perceptual sensitivity as well as posterior alpha power (8\u201313 Hz), a well-established proxy of cortical excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in abstract summarizing main finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "7d27d084-d578-42dc-b5b2-4ff574b658d2",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C49",
+      "claim": "Respiration was found to significantly modulate posterior alpha power (8\u201313 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Respiration was found to significantly modulate perceptual sensitivity as well as posterior alpha power (8\u201313 Hz), a well-established proxy of cortical excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in abstract summarizing main finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "a5131b83-fd1a-4e60-a232-7e188563d99c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C50",
+      "claim": "Alpha suppression prior to detected versus undetected targets underscored the behavioral benefits of heightened excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, alpha suppression prior to detected versus undetected targets underscored the behavioral benefits of heightened excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in abstract summarizing main finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "28f2e412-fc1a-4413-a930-a734b896849f",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C51",
+      "claim": "Respiration-locked excitability changes were maximized at a respiration phase lag of around \u201330\u00b0 and thus temporally preceded performance changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, respiration-locked excitability changes were maximized at a respiration phase lag of around \u201330\u00b0 and thus temporally preceded performance changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in abstract summarizing main finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "0b318773-e8ec-4f4d-a534-7505d651ea15",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C52",
+      "claim": "Respiration actively aligns sampling of sensory information with transient cycles of heightened excitability to facilitate performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with interoceptive inference accounts, these results suggest that respiration actively aligns sampling of sensory information with transient cycles of heightened excitability to facilitate performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretive conclusion based on the experimental data and theoretical framework",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "34dc5b7b-29d8-4178-9567-44cda261a7f7",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C53",
+      "claim": "Phasic cycles of neural excitability determine the intensity (or gain) of early sensory responses in order to amplify relevant or salient stimuli at the expense of irrelevant ones.",
+      "claim_type": "EXPLICIT",
+      "source": "These phasic cycles of neural excitability determine the intensity (or gain) of early sensory responses in order to amplify relevant or salient stimuli at the expense of irrelevant ones (Morillon et al., 2015; Schroeder et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Morillon et al., 2015 and Schroeder et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "c2ed39a4-bb98-4aeb-b08d-1fc93891a861",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C54",
+      "claim": "Respiration-entrained fluctuations in neural excitability represent a promising mechanism for unifying neural and behavioral findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, respiration-entrained fluctuations in neural excitability represent a promising mechanism for unifying neural and behavioral findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the integration of multiple lines of evidence presented",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "0b5e37df-c6bc-4603-9181-446f8aa22927",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C55",
+      "claim": "In temporally coordinating the breathing act and internal brain dynamics (i.e., heightened excitability), the sampling of bottom-up sensory information can be aligned with top-down predictive streams.",
+      "claim_type": "EXPLICIT",
+      "source": "In temporally coordinating the breathing act and internal brain dynamics (i.e., heightened excitability), the sampling of bottom-up sensory information can be aligned with top-down predictive streams (Arnal and Giraud, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical claim supported by citation to Arnal and Giraud, 2012",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "a786f665-7205-477a-a13d-afd49a862774",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C56",
+      "claim": "The individual psychometric function changes significantly across the respiratory cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our analysis demonstrates that the individual psychometric function changes significantly across the respiratory cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "6693a456-f7a4-442e-b89b-ec42be819167",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C57",
+      "claim": "Both respiration phase and parieto-occipital alpha power significantly explained individual variation in perceptual sensitivity (PsychF threshold).",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, both respiration phase and parieto-occipital alpha power significantly explained individual variation in perceptual sensitivity (PsychF threshold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of LMEM results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "fc9579d2-9c2c-4213-a424-77061bc70517",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C58",
+      "claim": "Alpha modulation precedes behavioral modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "While parieto-occipital alpha and PsychF threshold were found to be significantly correlated during the inspiratory phase, the effect of alpha power was maximized at a respiration phase lag of around \u201330\u00b0, showing that alpha modulation precedes behavioral modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the phase lag analysis results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "61cd8973-a8c9-4874-a647-b6c1e9e9bf3d",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C59",
+      "claim": "There is overwhelming evidence for an intricate connection between alpha oscillations, excitability, and behavior, particularly in the visual domain.",
+      "claim_type": "EXPLICIT",
+      "source": "There is overwhelming evidence for an intricate connection between alpha oscillations, excitability, and behavior, particularly in the visual domain (see Samaha et al., 2020a for a recent review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review by Samaha et al., 2020a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "777727d7-8546-41bb-8030-9f306486ad28",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C60",
+      "claim": "Alpha pacemaker cells were originally shown in the animal thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to alpha pacemaker cells originally shown in the animal thalamus (da Silva et al., 1973), widespread alpha activity suggests generators to be further located in early visual (Bollimunta et al., 2008) and even higher-order cortical areas (Florez et al., 2015; Haegens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to da Silva et al., 1973",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "33660518-31cb-44d4-adee-7adbddc7039b",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C61",
+      "claim": "Widespread alpha activity suggests generators to be located in early visual and even higher-order cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to alpha pacemaker cells originally shown in the animal thalamus (da Silva et al., 1973), widespread alpha activity suggests generators to be further located in early visual (Bollimunta et al., 2008) and even higher-order cortical areas (Florez et al., 2015; Haegens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bollimunta et al., 2008, Florez et al., 2015, and Haegens et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "2af1f383-641e-4f72-941a-e6035eb2b02e",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C62",
+      "claim": "Excitatory input to the visual cortex is regulated by functional inhibition in a feed-forward mechanism based on alpha oscillations, effectively controlling the excitability of the neural system per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory input to the visual cortex is regulated by functional inhibition in a feed-forward mechanism based on alpha oscillations, effectively controlling the excitability of the neural system per se (Iemi et al., 2021; Jensen and Mazaheri, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Iemi et al., 2021 and Jensen and Mazaheri, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "d65ab897-a7e3-4c9a-85e9-172d8edc53d1",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C63",
+      "claim": "Strong ongoing alpha oscillations entail reduced single-unit firing rates in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse relationship between alpha power and excitability is corroborated by cross-modal evidence that strong ongoing alpha oscillations entail reduced single-unit firing rates in humans (Chapeton et al., 2019) and primates (Dougherty et al., 2017; Lundqvist et al., 2020), population-level activity such as local field potentials (Potes et al., 2014; Spaak et al., 2012), and hemodynamic BOLD activity (Becker et al., 2011; Goldman et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chapeton et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "b1797b3b-3d77-441e-a37f-24fcebc8e8db",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C64",
+      "claim": "Strong ongoing alpha oscillations entail reduced single-unit firing rates in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse relationship between alpha power and excitability is corroborated by cross-modal evidence that strong ongoing alpha oscillations entail reduced single-unit firing rates in humans (Chapeton et al., 2019) and primates (Dougherty et al., 2017; Lundqvist et al., 2020), population-level activity such as local field potentials (Potes et al., 2014; Spaak et al., 2012), and hemodynamic BOLD activity (Becker et al., 2011; Goldman et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dougherty et al., 2017 and Lundqvist et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "79af1e09-169c-46a2-a808-8b96d445678a",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C65",
+      "claim": "Strong ongoing alpha oscillations are associated with reduced population-level activity such as local field potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse relationship between alpha power and excitability is corroborated by cross-modal evidence that strong ongoing alpha oscillations entail reduced single-unit firing rates in humans (Chapeton et al., 2019) and primates (Dougherty et al., 2017; Lundqvist et al., 2020), population-level activity such as local field potentials (Potes et al., 2014; Spaak et al., 2012), and hemodynamic BOLD activity (Becker et al., 2011; Goldman et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Potes et al., 2014 and Spaak et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "62f79495-d0df-44d5-bbd6-89738989ef88",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C66",
+      "claim": "Strong ongoing alpha oscillations are associated with reduced hemodynamic BOLD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse relationship between alpha power and excitability is corroborated by cross-modal evidence that strong ongoing alpha oscillations entail reduced single-unit firing rates in humans (Chapeton et al., 2019) and primates (Dougherty et al., 2017; Lundqvist et al., 2020), population-level activity such as local field potentials (Potes et al., 2014; Spaak et al., 2012), and hemodynamic BOLD activity (Becker et al., 2011; Goldman et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Becker et al., 2011 and Goldman et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "1b6234b0-aa6d-4a34-9e12-eae6f2708887",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C67",
+      "claim": "In perceptual tasks, a transient state of lowered excitability affects behavior, as evident from longer reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "In perceptual tasks, a transient state of lowered excitability inevitably affects behavior, as evident from longer reaction times (Kelly and O'Connell, 2013; Zhang et al., 2008), lower confidence reports (Samaha et al., 2017; Samaha et al., 2020b), and lower detection rates of near-threshold stimuli (Chaumon and Busch, 2014; Iemi and Busch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelly and O'Connell, 2013 and Zhang et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "49117039-491a-4353-a825-15e427d4bcb2",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C68",
+      "claim": "In perceptual tasks, a transient state of lowered excitability affects behavior, as evident from lower confidence reports.",
+      "claim_type": "EXPLICIT",
+      "source": "In perceptual tasks, a transient state of lowered excitability inevitably affects behavior, as evident from longer reaction times (Kelly and O'Connell, 2013; Zhang et al., 2008), lower confidence reports (Samaha et al., 2017; Samaha et al., 2020b), and lower detection rates of near-threshold stimuli (Chaumon and Busch, 2014; Iemi and Busch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Samaha et al., 2017 and Samaha et al., 2020b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "df3dd45b-a76f-4a33-b844-1f9428d683b9",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C69",
+      "claim": "In perceptual tasks, a transient state of lowered excitability affects behavior, as evident from lower detection rates of near-threshold stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In perceptual tasks, a transient state of lowered excitability inevitably affects behavior, as evident from longer reaction times (Kelly and O'Connell, 2013; Zhang et al., 2008), lower confidence reports (Samaha et al., 2017; Samaha et al., 2020b), and lower detection rates of near-threshold stimuli (Chaumon and Busch, 2014; Iemi and Busch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chaumon and Busch, 2014 and Iemi and Busch, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "9e5c3f0d-0d41-43d8-b908-613913f48037",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C70",
+      "claim": "The alpha rhythm shapes the strength of neural stimulus representations by modulating excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, one recent study proposed that the alpha rhythm shapes the strength of neural stimulus representations by modulating excitability (Iemi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Iemi et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "8448d46d-796c-4405-9f22-3950f0f4a9f8",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C71",
+      "claim": "Beta oscillations have been implicated in mediating top-down signals from the frontal eye field (FEF) that modulate excitability in the visual cortex during spatial attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by Michalareas et al., 2016 as well as our own data (see Supplementary Material) point toward an interaction between alpha and beta bands, as beta oscillations have very recently been implicated in mediating top-down signals from the frontal eye field (FEF) that modulate excitability in the visual cortex during spatial attention (Veniero et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Michalareas et al., 2016 and Veniero et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "66445ebc-de32-40cc-a075-e3759cd6f9c1",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C72",
+      "claim": "Intracranial recordings in animals have demonstrated that respiration modulates spike rates in a variety of brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracranial recordings in animals have demonstrated that respiration modulates spike rates in a variety of brain regions (Biskamp et al., 2017; Ito et al., 2014; Yanovsky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Biskamp et al., 2017, Ito et al., 2014, and Yanovsky et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "37af74b6-423b-4e8a-8886-ea6dc1b71cfb",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C73",
+      "claim": "A graph model by Heck et al., 2016 provided a proof of principle that sinusoidal input and intrinsic properties of cortical networks are sufficient to potentially achieve respiration-locked modulations of high-frequency oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "This characteristic was implemented in a graph model by Heck et al., 2016, which provided a proof of principle that sinusoidal input and intrinsic properties of cortical networks are sufficient to potentially achieve respiration-locked modulations of high-frequency oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heck et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "a377f455-bac6-4afb-99bd-4e2ae5db269c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C74",
+      "claim": "Two main sources of respiration-locked neural signaling are the olfactory bulb and extrabulbar sources within the brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors later proposed two main sources of respiration-locked neural signaling, namely the OB and extrabulbar sources within the brainstem (Heck et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heck et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "879bc865-0c72-45f9-a21f-05908e6cbec1",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C75",
+      "claim": "Respiration-related changes in both oscillatory power and behavior dissipate during oral breathing.",
+      "claim_type": "EXPLICIT",
+      "source": "While this mechanism is difficult to investigate directly in humans, converging evidence for the importance of bulbar rhythms comes from animal bulbectomy studies (Ito et al., 2014) and the fact that respiration-related changes in both oscillatory power and behavior dissipate during oral breathing (Zelano et al., 2016; Perl et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zelano et al., 2016 and Perl et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "ab753618-9377-4dcc-9016-42375777a387",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C76",
+      "claim": "In rodents, respiration is only one of multiple rhythmic processes that constitute orofacial motor behaviors, including head and nose movements, whisking, and sniffing.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, respiration is only one of multiple rhythmic processes that constitute orofacial motor behaviors, including head and nose movements, whisking, and sniffing (Welker, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Welker, 1964",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "b0b90d9e-539e-4c7f-a544-6095c1009368",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C77",
+      "claim": "Distinct respiratory nuclei in the ventral medulla have been shown to coordinate complex motor patterns in a specific manner, in that the respiratory rhythm effectively 'resets' faster rhythms like whisking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct respiratory nuclei in the ventral medulla have been shown to coordinate these complex motor patterns in a specific manner, in that the respiratory rhythm effectively 'resets' faster rhythms like whisking behavior (Moore et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moore et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "2d05ffd9-b26c-4524-9f88-f437570d726a",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C78",
+      "claim": "According to the 'master clock' conceptualization of respiration, respiratory circuits in the brain stem allow phase-locking of various sensorimotor channels through 'snapshots' of the orofacial environment continuously triggered by respiration onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this 'master clock' conceptualization of respiration, respiratory circuits in the brain stem allow phase-locking of various sensorimotor channels through 'snapshots' of the orofacial environment continuously triggered by respiration onsets (Kurnikova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kurnikova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "cea0c729-932f-4d8d-9cd5-6aff5ef33bb1",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C79",
+      "claim": "Multiple streams of sensory information are coordinated in a way that optimizes their integration and propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, multiple streams of sensory information are coordinated in a way that optimizes their integration and propagation (Corcoran et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Corcoran et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "0544d2f9-0c4d-488d-8daf-9b07aebbc5cb",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C80",
+      "claim": "The timing of eye movements was closely coupled to certain phases of the cardiac cycle, with information sampling clustered during quiescent periods of the heartbeat.",
+      "claim_type": "EXPLICIT",
+      "source": "Using free visual search, Galvez-Pol et al., 2020 demonstrated that the timing of eye movements was closely coupled to certain phases of the cardiac cycle, with information sampling clustered during quiescent periods of the heartbeat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Galvez-Pol et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "8c8b4c9c-c3ed-4faf-84d0-b98a236b1277",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C81",
+      "claim": "Attentional selection actively phase-locks neural oscillations to sensory streams in order to upregulate response gain and amplify attended stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar argument has prominently been made for attentional selection (Thut et al., 2006) which actively phase-locks neural oscillations to sensory streams in order to upregulate response gain and amplify attended stimuli (Lakatos et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Thut et al., 2006 and Lakatos et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "93f281b9-2158-43b1-b260-534c75d9e469",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C82",
+      "claim": "Well-described accounts of hierarchically organized oscillations are not limited to neural signals alone, but extend to even slower bodily rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings, together with mounting evidence from recent interoceptive accounts, strongly suggest that well-described accounts of hierarchically organized oscillations (Lakatos et al., 2005) are not limited to neural signals alone, but extend to even slower bodily rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on current findings and citation to Lakatos et al., 2005",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "33a27b64-2517-4765-83f7-0390d156e4a7",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C83",
+      "claim": "Differences in post-stimulus alpha desynchronization have been shown to be driven by stronger evoked responses for detected stimuli in near-threshold perception tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Such differences have been shown to be driven by stronger evoked responses for these stimuli in near-threshold perception tasks (Busch and VanRullen, 2010; Bareither et al., 2014) and to influence detection performance together with prestimulus alpha fluctuations (Wyart and Tallon-Baudry, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Busch and VanRullen, 2010, Bareither et al., 2014, and Wyart and Tallon-Baudry, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "e42be0c4-8d6a-48cb-8cb6-c83986f168bd",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C84",
+      "claim": "A third LMEM investigating potential beta contributions yielded significant effects for both alpha (t(1790)=3.27, p<0.001) and beta power (t(1790)=4.83, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "A third LMEM investigating potential beta contributions yielded significant effects for both alpha (t(1790)=3.27, p<0.001) and beta power (t(1790)=4.83, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "6eabd2b9-f864-44ad-93d1-1f20fb9bcea6",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C85",
+      "claim": "Beta showed significant interactions with the sine of the respiratory signal (t(1790)=\u20133.52, p<0.001) as well as with alpha power (t(1790)=\u20134.63, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Beta showed significant interactions with the sine of the respiratory signal (t(1790)=\u20133.52, p<0.001) as well as with alpha power (t(1790)=\u20134.63, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "b15ca535-9a75-463c-85fa-9f07e2dde7a9",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C86",
+      "claim": "Comparing the LMEM to the previous model which only contained alpha power confirmed the significant contribution of beta power in explaining PsychF threshold variation by means of a theoretical likelihood ratio test (\u03c7\u00b2(4)=60.43, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the LMEM to the previous model which only contained alpha power (along with respiratory sine and cosine) confirmed the significant contribution of beta power in explaining PsychF threshold variation by means of a theoretical likelihood ratio test (\u03c7\u00b2(4)=60.43, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical test result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "8868bffb-accd-4835-a202-27d78268ca7b",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C87",
+      "claim": "Control analyses across all frequency bands yielded a significant instantaneous correlation between PsychF threshold and beta power.",
+      "claim_type": "EXPLICIT",
+      "source": "Control analyses across all frequency bands yielded a significant instantaneous correlation between PsychF threshold and beta power as well, albeit at a slightly later phase (see Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "46a38987-de3f-449b-9b27-eb3d50bb0947",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C88",
+      "claim": "No significant correlation between oscillatory power and respiration time courses were found for delta, theta, and gamma bands.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the TFR analysis shown above, no significant correlation between oscillatory power and respiration time courses were found for delta, theta, and gamma bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of negative result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "61a5d6be-7324-4ecd-8e80-b78c47bb9b27",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "claim_id": "C89",
+      "claim": "The first 20 trials of each run were discarded to allow initiation of the QUEST staircase.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for the initiation of the QUEST procedure, the first 20 trials of each run were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data preprocessing procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 30 participants who performed a near-threshold spatial detection task while MEG and respiration data were simultaneously recorded. The experimental design used an adaptive QUEST staircase to maintain performance near 60% hit rate, with 720 trials per run across 6 runs, including catch trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C31 and C89 provide comprehensive methodological details that are internally consistent and appropriately documented. The sample size (n=30), inclusion criteria, MEG acquisition parameters (275-channel system, 600 Hz sampling), respiration recording method (thoracic belt), task parameters (Gabor patches, 50 ms presentation, adaptive contrast), and trial structure (720 trials/run, 1/3 catch trials) are all clearly specified with measured outcomes (e.g., average hit rate 0.54\u00b10.05, breathing frequency 0.26\u00b10.08 Hz).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "aca29472-99bd-4cc0-b840-d958f0e1a956",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Respiration phase significantly modulates perceptual sensitivity in a near-threshold detection task. Adding respiration phase information to a model with stimulus contrast significantly enhanced mutual information (z=4.78, p<0.001), and the individual psychometric function threshold varied systematically across the respiratory cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33, C48, and C56 demonstrate a clear behavioral effect of respiration on perception using multiple complementary analyses. The mutual information analysis (C33) provides strong statistical evidence, while the psychometric function refitting approach (C34-C36, C56) characterizes the temporal dynamics of this modulation. The observed hit rate (0.54\u00b10.05) was close to the QUEST target (0.60), validating the experimental manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "49548998-fa09-4a56-8c47-3659dda9a088",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Perceptual thresholds showed systematic variations across the respiratory cycle, with significant lowering during the inspiratory phase (respiration angles between -128\u00b0 and -76\u00b0). The empirical regression weight from the LMEM was greater than all values from the randomization distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 provide converging evidence for respiration-locked threshold modulation using a sophisticated moving-window psychometric function refitting approach. The permutation testing (C35) and cluster-corrected analysis (C36) provide appropriate statistical controls. The specific phase window identified (-128\u00b0 to -76\u00b0) is clearly defined and statistically validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "9d549689-60bd-483e-8ec0-26f65302121c",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prestimulus alpha power (8-13 Hz) over parieto-occipital sensors was significantly suppressed prior to detected versus undetected targets, persisting up to 1 second before target onset. This alpha suppression was localized to occipital and posterior parietal sensors and underscores the behavioral benefits of heightened excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 and C50 replicate well-established findings linking prestimulus alpha suppression to detection performance. The time-frequency analysis with cluster correction (C37), temporal extent characterization (C38), and spatial localization (C39) are methodologically sound. The post-stimulus alpha desynchronization (C40) is appropriately cited as confirmatory of prior work. These results establish alpha as a valid proxy for excitability in this paradigm.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "c62603c4-9acc-472e-af83-5ff1621fa5c2",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Respiration phase significantly modulates posterior alpha power (8-13 Hz). Modulation index values were significant for a wide frequency range including the alpha band, tested against the 95th percentile of a null distribution with cluster correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C49 demonstrate respiration-alpha coupling using phase-amplitude coupling analysis with appropriate statistical controls (200 random phase shifts, cluster correction at \u03b1=0.05). This establishes a critical link in the proposed mechanism connecting respiration to excitability. The modulation index approach is well-validated for assessing cross-frequency coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "5b66629f-e652-41c6-9de7-c97b9d565042",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both respiration phase and parieto-occipital alpha power significantly explained individual variation in perceptual sensitivity (PsychF threshold). The LMEM showed significant effects for alpha power (t(1794)=6.02, p<0.001) and a significant interaction between alpha power and the cosine of respiration (t(1794)=4.07, p<0.001). Adding alpha power significantly improved model fit (\u03c7\u00b2(3)=49.45, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C57 provide strong statistical evidence that both respiration and alpha power independently and interactively predict perceptual thresholds. The LMEM approach appropriately accounts for within-subject variability with random slopes. The likelihood ratio test (C44) demonstrates that alpha power explains substantial additional variance beyond respiration alone. The interaction term (C43) supports the proposed mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "c54a8fee-bf92-4daf-aea9-62fd53fbf57a",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Alpha power and PsychF threshold were significantly correlated during the inspiratory phase (between -90\u00b0 and -60\u00b0). Critically, the effect of alpha power on behavior peaked at a respiration phase lag of approximately -30\u00b0 (95% CI: [-33.17, 29.25] degrees), indicating that respiration-locked excitability changes temporally precede performance changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47, C51, and C58 provide the key temporal evidence supporting the proposed causal chain from respiration to excitability to behavior. The instantaneous correlation analysis (C45) establishes the phase window of coupling, while the lag analysis with bootstrapping (C46-C47) demonstrates temporal precedence. The confidence interval for the peak lag (C47) is appropriately narrow and excludes zero, supporting the temporal ordering. However, the authors correctly note this does not establish strict causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "612bb958-b451-48ac-bf34-8d03adf62191",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Beta oscillations (14-30 Hz) also contribute to explaining perceptual threshold variation. A third LMEM showed significant effects for both alpha (t(1790)=3.27, p<0.001) and beta power (t(1790)=4.83, p<0.001), with beta showing significant interactions with respiration and alpha power. Adding beta power significantly improved model fit (\u03c7\u00b2(4)=60.43, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 demonstrate that beta oscillations contribute additional explanatory power beyond alpha. The statistical evidence is strong, with significant main effects and interactions. The likelihood ratio test (C86) shows beta adds substantial predictive value. However, the beta effects appear at a slightly later phase than alpha (C87), and the topographic distribution overlaps with but is distinct from alpha (referenced in discussion). This suggests beta may play a complementary but secondary role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "cdcc06fc-6ead-4338-9f26-758d657b1668",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "No significant correlation between oscillatory power and respiration time courses were found for delta, theta, and gamma bands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 reports appropriate negative controls demonstrating specificity of the respiration-oscillation coupling to alpha and beta bands. This strengthens the interpretation that the effects are not due to general arousal or non-specific coupling across all frequencies. The control analyses are consistent with the time-frequency results shown in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "ec1e040f-8ba7-48b5-854e-d3ed81f30fa4",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that respiration actively aligns sampling of sensory information with transient cycles of heightened excitability to facilitate performance, representing an extension of hierarchically organized oscillations to bodily rhythms and consistent with interoceptive inference accounts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C54, C55, and C82 present the overarching theoretical interpretation of the empirical findings. While these are inferential claims, they are well-supported by the convergent evidence from the behavioral (C33-C36), neural (C37-C41), and integrative analyses (C42-C47). The temporal precedence of alpha modulation (C46-C47) is particularly important for this interpretation. However, the authors appropriately acknowledge limitations regarding strict causal inference and the need for future work to test active modulation directly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes the background on respiration physiology, respiration-brain coupling, and the relationship between alpha oscillations and excitability, drawing on extensive prior literature from animal and human studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C19 provide appropriate background context supported by relevant citations. These claims accurately represent prior work on respiratory control (C1-C5), neural oscillations as brain state markers (C6), respiration-brain coupling in animals and humans (C7-C12), excitability-alpha relationships (C13-C16), and respiration-locked behavioral and neural fluctuations (C17-C19). The citations appear appropriate and the characterizations are consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "bc0463a9-a95b-4a90-91d5-226833c4800d",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The discussion reviews extensive evidence for the relationship between alpha oscillations, neural excitability, and behavior in the visual domain, including the neural mechanisms (inhibitory gating), cross-modal evidence (single-unit recordings, LFPs, BOLD), and behavioral consequences (reaction times, confidence, detection rates).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C59-C71 provide a comprehensive review of the alpha-excitability literature with appropriate citations. The characterization of alpha generators (C60-C61), inhibitory mechanisms (C62), inverse relationship with neural activity across multiple measurement modalities (C63-C66), and behavioral consequences (C67-C69) are all well-supported by the cited literature. The discussion of beta oscillations (C71) appropriately acknowledges recent work on top-down modulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "4b3da902-767a-4f30-ba78-7c8c759280d2",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion reviews evidence for respiration-brain coupling mechanisms, including animal intracranial recordings showing respiration modulates spike rates, computational models of cross-frequency coupling, proposed sources (olfactory bulb and brainstem), evidence from bulbectomy and oral breathing studies, and the 'master clock' conceptualization of respiration coordinating multiple sensorimotor channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C81 provide appropriate context for interpreting the current findings within the broader literature on respiration-brain coupling. The citations to animal work (C72, C76-C77), computational modeling (C73), proposed mechanisms (C74-C75), and theoretical frameworks (C78-C79) are relevant and accurately characterized. The comparison to cardiac coupling (C80) and attentional selection (C81) provides useful conceptual parallels for the active sensing interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    },
+    {
+      "id": "6a9bfe54-44f9-4e9c-9853-04f56477e1fe",
+      "content_id": "1350530c-ca7d-48e7-a9ef-6928eff20040",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Post-stimulus alpha desynchronization differences between detected and undetected targets are driven by stronger evoked responses for detected stimuli in near-threshold perception tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 appropriately characterizes prior work on post-stimulus alpha effects with relevant citations. This contextualizes the observed post-stimulus desynchronization (C40) within the established literature and distinguishes it from the prestimulus effects that are the primary focus of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:40.190951Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01e1d412-bfaa-4701-a85d-9a80a7249b01",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "45025e0f-5bd5-4562-8c2a-2070a6dc1495",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "d6b5225b-75f5-44be-919d-d2c9144893ea",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "ca192616-65f5-4a0f-b300-e3da9fb0aae8",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "9b4b457e-5bdb-404a-9e1f-22765569f7d3",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "03bbedf9-703e-431c-bc8a-b6b9ba44e83e",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "2008c745-d931-4b63-b289-134c32d08c1c",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "4abe755d-6933-4527-8828-c72678c39519",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "ca8992e9-c7c9-4fd2-b696-16683cb5bb1d",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "d32bae83-0810-4c28-a5dd-1a6886896ae9",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "b6cb5002-5690-4823-ba36-d57f53e0d2f5",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "1951c03d-614b-44ca-b73a-2bd4bdf15995",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "61a5d6be-7324-4ecd-8e80-b78c47bb9b27",
+      "result_id": "507f36e9-1f09-4cba-b8c7-caf8dc5ac194"
+    },
+    {
+      "claim_id": "3b819445-e0aa-4a43-b594-446375fb473c",
+      "result_id": "aca29472-99bd-4cc0-b840-d958f0e1a956"
+    },
+    {
+      "claim_id": "6e688935-83d7-4e21-b9d6-dff18cd1e4ed",
+      "result_id": "aca29472-99bd-4cc0-b840-d958f0e1a956"
+    },
+    {
+      "claim_id": "61badcdf-062f-42d9-be72-a7efcc476de6",
+      "result_id": "aca29472-99bd-4cc0-b840-d958f0e1a956"
+    },
+    {
+      "claim_id": "a786f665-7205-477a-a13d-afd49a862774",
+      "result_id": "aca29472-99bd-4cc0-b840-d958f0e1a956"
+    },
+    {
+      "claim_id": "169b5b2a-1331-47d0-b58f-86d4bf32c08f",
+      "result_id": "49548998-fa09-4a56-8c47-3659dda9a088"
+    },
+    {
+      "claim_id": "de45a8bd-df18-4bc5-b982-965e79caca2a",
+      "result_id": "49548998-fa09-4a56-8c47-3659dda9a088"
+    },
+    {
+      "claim_id": "8dfcd9b4-59b4-4f78-8a18-7825ef010291",
+      "result_id": "49548998-fa09-4a56-8c47-3659dda9a088"
+    },
+    {
+      "claim_id": "4b071287-4cf7-4736-aada-ceb7ab26d73c",
+      "result_id": "9d549689-60bd-483e-8ec0-26f65302121c"
+    },
+    {
+      "claim_id": "d7e82683-175d-4c9d-8ab4-61081dea25d5",
+      "result_id": "9d549689-60bd-483e-8ec0-26f65302121c"
+    },
+    {
+      "claim_id": "982c367c-5377-4e3a-be19-eb9031e3643f",
+      "result_id": "9d549689-60bd-483e-8ec0-26f65302121c"
+    },
+    {
+      "claim_id": "f447960f-03ae-4122-9bdd-c4c41779dc17",
+      "result_id": "9d549689-60bd-483e-8ec0-26f65302121c"
+    },
+    {
+      "claim_id": "a5131b83-fd1a-4e60-a232-7e188563d99c",
+      "result_id": "9d549689-60bd-483e-8ec0-26f65302121c"
+    },
+    {
+      "claim_id": "02d5a98e-55b2-4aa8-8e00-7bc4ce163797",
+      "result_id": "c62603c4-9acc-472e-af83-5ff1621fa5c2"
+    },
+    {
+      "claim_id": "7d27d084-d578-42dc-b5b2-4ff574b658d2",
+      "result_id": "c62603c4-9acc-472e-af83-5ff1621fa5c2"
+    },
+    {
+      "claim_id": "959a3513-949e-4fd5-825a-13e969cc4a19",
+      "result_id": "5b66629f-e652-41c6-9de7-c97b9d565042"
+    },
+    {
+      "claim_id": "f9dfe911-a36c-4deb-8885-eb85f72eefc0",
+      "result_id": "5b66629f-e652-41c6-9de7-c97b9d565042"
+    },
+    {
+      "claim_id": "933e6fe9-1781-4897-b877-8889939baa4c",
+      "result_id": "5b66629f-e652-41c6-9de7-c97b9d565042"
+    },
+    {
+      "claim_id": "6693a456-f7a4-442e-b89b-ec42be819167",
+      "result_id": "5b66629f-e652-41c6-9de7-c97b9d565042"
+    },
+    {
+      "claim_id": "3a389822-a767-4141-aa34-e00b74d5d343",
+      "result_id": "c54a8fee-bf92-4daf-aea9-62fd53fbf57a"
+    },
+    {
+      "claim_id": "2bc93ca3-4130-4ed1-a584-750484e129a0",
+      "result_id": "c54a8fee-bf92-4daf-aea9-62fd53fbf57a"
+    },
+    {
+      "claim_id": "e4f85af1-e552-4be8-889c-a420c0d37132",
+      "result_id": "c54a8fee-bf92-4daf-aea9-62fd53fbf57a"
+    },
+    {
+      "claim_id": "28f2e412-fc1a-4413-a930-a734b896849f",
+      "result_id": "c54a8fee-bf92-4daf-aea9-62fd53fbf57a"
+    },
+    {
+      "claim_id": "fc9579d2-9c2c-4213-a424-77061bc70517",
+      "result_id": "c54a8fee-bf92-4daf-aea9-62fd53fbf57a"
+    },
+    {
+      "claim_id": "e42be0c4-8d6a-48cb-8cb6-c83986f168bd",
+      "result_id": "612bb958-b451-48ac-bf34-8d03adf62191"
+    },
+    {
+      "claim_id": "6eabd2b9-f864-44ad-93d1-1f20fb9bcea6",
+      "result_id": "612bb958-b451-48ac-bf34-8d03adf62191"
+    },
+    {
+      "claim_id": "b15ca535-9a75-463c-85fa-9f07e2dde7a9",
+      "result_id": "612bb958-b451-48ac-bf34-8d03adf62191"
+    },
+    {
+      "claim_id": "8868bffb-accd-4835-a202-27d78268ca7b",
+      "result_id": "612bb958-b451-48ac-bf34-8d03adf62191"
+    },
+    {
+      "claim_id": "46a38987-de3f-449b-9b27-eb3d50bb0947",
+      "result_id": "cdcc06fc-6ead-4338-9f26-758d657b1668"
+    },
+    {
+      "claim_id": "0b318773-e8ec-4f4d-a534-7505d651ea15",
+      "result_id": "ec1e040f-8ba7-48b5-854e-d3ed81f30fa4"
+    },
+    {
+      "claim_id": "c2ed39a4-bb98-4aeb-b08d-1fc93891a861",
+      "result_id": "ec1e040f-8ba7-48b5-854e-d3ed81f30fa4"
+    },
+    {
+      "claim_id": "0b5e37df-c6bc-4603-9181-446f8aa22927",
+      "result_id": "ec1e040f-8ba7-48b5-854e-d3ed81f30fa4"
+    },
+    {
+      "claim_id": "93f281b9-2158-43b1-b260-534c75d9e469",
+      "result_id": "ec1e040f-8ba7-48b5-854e-d3ed81f30fa4"
+    },
+    {
+      "claim_id": "20943d0b-b7e4-449b-8147-8063728df45c",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "5f9bb129-a7a4-459e-ab3a-ce0d907e2c79",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "9046fd36-f51e-4efc-b58e-6ee6c50bd904",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "ed362353-55b9-4e8e-a77e-a14818079e23",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "2a6fe1c7-a503-4524-a596-d0c39aef7a01",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "afbc7d31-ef8a-4d17-87c8-bff47b629758",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "a1813323-f785-4e5f-a1df-800bc182e3a9",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "98b08d54-825a-4fcd-a762-24d5c8afd322",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "e9962c48-2634-49cf-883b-64a1b8f04cfd",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "26e3b208-106f-423d-98e4-948f158b815e",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "f6f1bd85-b8e3-4076-bd80-8ae33b83cfdd",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "12092005-4ed6-41d2-be37-6c01c6f30744",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "1a63be1b-5961-4d79-b86b-cde2bc728e95",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "e614023a-efd4-48f4-8dfa-d688e2113a27",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "1d19cea7-a15f-4813-947d-59d33c294123",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "be69c15f-b859-47d8-ae7f-6a1e932f524e",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "07172958-93a5-425e-b247-ae14367c81be",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "78976505-d803-414b-b795-9c0e858cfdfb",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "1fe6edde-fd1a-4013-b7db-da5d45ac1caf",
+      "result_id": "b49eed7d-d7a1-4988-a5df-a7105c4571fc"
+    },
+    {
+      "claim_id": "34dc5b7b-29d8-4178-9567-44cda261a7f7",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "61cd8973-a8c9-4874-a647-b6c1e9e9bf3d",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "777727d7-8546-41bb-8030-9f306486ad28",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "33660518-31cb-44d4-adee-7adbddc7039b",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "2af1f383-641e-4f72-941a-e6035eb2b02e",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "d65ab897-a7e3-4c9a-85e9-172d8edc53d1",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "b1797b3b-3d77-441e-a37f-24fcebc8e8db",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "79af1e09-169c-46a2-a808-8b96d445678a",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "62f79495-d0df-44d5-bbd6-89738989ef88",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "1b6234b0-aa6d-4a34-9e12-eae6f2708887",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "49117039-491a-4353-a825-15e427d4bcb2",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "df3dd45b-a76f-4a33-b844-1f9428d683b9",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "9e5c3f0d-0d41-43d8-b908-613913f48037",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "8448d46d-796c-4405-9f22-3950f0f4a9f8",
+      "result_id": "bc0463a9-a95b-4a90-91d5-226833c4800d"
+    },
+    {
+      "claim_id": "66445ebc-de32-40cc-a075-e3759cd6f9c1",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "37af74b6-423b-4e8a-8886-ea6dc1b71cfb",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "a377f455-bac6-4afb-99bd-4e2ae5db269c",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "879bc865-0c72-45f9-a21f-05908e6cbec1",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "ab753618-9377-4dcc-9016-42375777a387",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "b0b90d9e-539e-4c7f-a544-6095c1009368",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "2d05ffd9-b26c-4524-9f88-f437570d726a",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "cea0c729-932f-4d8d-9cd5-6aff5ef33bb1",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "0544d2f9-0c4d-488d-8daf-9b07aebbc5cb",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "8c8b4c9c-c3ed-4faf-84d0-b98a236b1277",
+      "result_id": "4b3da902-767a-4f30-ba78-7c8c759280d2"
+    },
+    {
+      "claim_id": "33a27b64-2517-4765-83f7-0390d156e4a7",
+      "result_id": "6a9bfe54-44f9-4e9c-9853-04f56477e1fe"
+    }
+  ],
+  "comparisons": []
+}

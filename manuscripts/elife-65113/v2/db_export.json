@@ -1,0 +1,1587 @@
+{
+  "submission": {
+    "id": "06bf545c-fae7-4381-a8f8-1e18a096099f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:24:41.051193Z",
+    "updated_at": "2025-12-03T03:24:41.051193Z"
+  },
+  "content": [
+    {
+      "id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "submission_id": "06bf545c-fae7-4381-a8f8-1e18a096099f",
+      "content_type": "manuscript",
+      "content_text": "# Saliva TwoStep for rapid detection of asymptomatic SARS-CoV-2 carriers\n\n## Authors\n\n- Qing Yang<sup>1</sup> ([ORCID: 0000-0001-9053-3158](https://orcid.org/0000-0001-9053-3158))\n- Nicholas R Meyerson<sup>1</sup>\n- Stephen K Clark<sup>1</sup>\n- Camille L Paige<sup>1</sup> ([ORCID: 0000-0002-7620-3977](https://orcid.org/0000-0002-7620-3977))\n- Will T Fattor<sup>1</sup> ([ORCID: 0000-0002-6477-3139](https://orcid.org/0000-0002-6477-3139))\n- Alison R Gilchrist<sup>1</sup>\n- Arturo Barbachano-Guerrero<sup>1</sup> ([ORCID: 0000-0001-7483-839X](https://orcid.org/0000-0001-7483-839X))\n- Benjamin G Healy<sup>4</sup>\n- Emma R Worden-Sapper<sup>1</sup> ([ORCID: 0000-0002-5823-3566](https://orcid.org/0000-0002-5823-3566))\n- Sharon S Wu<sup>1</sup>\n- Denise Muhlrad<sup>6</sup>\n- Carolyn J Decker<sup>6</sup>\n- Tassa K Saldi<sup>1</sup>\n- Erika Lasda<sup>1</sup>\n- Patrick Gonzales<sup>1</sup>\n- Morgan R Fink<sup>1</sup> ([ORCID: 0000-0002-0567-3234](https://orcid.org/0000-0002-0567-3234))\n- Kimngan L Tat<sup>1</sup>\n- Cole R Hager<sup>1</sup>\n- Jack C Davis<sup>2</sup>\n- Christopher D Ozeroff<sup>1</sup>\n- Gloria R Brisson<sup>9</sup>\n- Matthew B McQueen<sup>8</sup>\n- Leslie A Leinwand<sup>1</sup> ([ORCID: 0000-0003-1470-4810](https://orcid.org/0000-0003-1470-4810))\n- Roy Parker<sup>1</sup> ([ORCID: 0000-0002-8412-4152](https://orcid.org/0000-0002-8412-4152))\n- Sara L Sawyer<sup>1</sup> ([ORCID: 0000-0002-6965-1085](https://orcid.org/0000-0002-6965-1085)) \u2020\n\n### Affiliations\n\n1. BioFrontiers Institute, University of Colorado Boulder Boulder United States\n2. Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder Boulder United States\n3. Darwin Biosciences Inc Boulder United States\n4. Department of Mechanical Engineering, University of Colorado Boulder Boulder United States\n5. Interdisciplinary Quantitative Biology Graduate Program, University of Colorado Boulder Boulder United States\n6. Department of Biochemistry, University of Colorado Boulder Boulder United States\n7. Howard Hughes Medical Institute, University of Colorado Boulder Boulder United States\n8. Department of Integrative Physiology, University of Colorado Boulder Boulder United States\n9. Wardenburg Health Center, University of Colorado Boulder Boulder United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHere, we develop a simple molecular test for SARS-CoV-2 in saliva based on reverse transcription loop-mediated isothermal amplification. The test has two steps: (1) heat saliva with a stabilization solution and (2) detect virus by incubating with a primer/enzyme mix. After incubation, saliva samples containing the SARS-CoV-2 genome turn bright yellow. Because this test is pH dependent, it can react falsely to some naturally acidic saliva samples. We report unique saliva stabilization protocols that rendered 295 healthy saliva samples compatible with the test, producing zero false positives. We also evaluated the test on 278 saliva samples from individuals who were infected with SARS-CoV-2 but had no symptoms at the time of saliva collection, and from 54 matched pairs of saliva and anterior nasal samples from infected individuals. The Saliva TwoStep test described herein identified infections with 94% sensitivity and >99% specificity in individuals with sub-clinical (asymptomatic or pre-symptomatic) infections.\n\n## Introduction\n\nDisease screening is one of the most basic and powerful tools in the public health arsenal. Screening tests identify unknown illness in apparently healthy or asymptomatic individuals. In the case of dangerous pathogens, screening tests serve to direct potential carriers of the pathogen into the healthcare system for confirmatory testing and to alert them that they could possibly infect others while they await confirmatory results. If dangerous pathogens are spreading at high rates, individuals will need to be screened frequently. As such, screening tests should operate with minimal requirements for laboratory equipment and labor, such that they are community\u00a0deployable and do\u00a0not burden the critical pipelines for diagnostics. In the current SARS-CoV-2 pandemic, body temperature is a ubiquitous screening test being used on apparently\u00a0healthy people around the world. However, using elevated body temperature as a sign of SARS-CoV-2 infection lacks specificity for this particular pathogen and sensitivity in identifying asymptomatic carriers (Wright and Mackowiak, 2020). To help fill in the need for more reliable screening tests, here we present a simple and portable assay that detects the SARS-CoV-2 genome in saliva with specificity and sensitivity, even in samples from individuals with no symptoms at the time of saliva collection.\n\nLAMP (loop-mediated isothermal amplification) is a simple nucleic acid diagnostic concept that has existed for more than 20 years (Notomi, 2000). It has been used in diverse and even remote settings to test samples for the presence of viral nucleic acids (Brewster et al., 2018; Chotiwan et al., 2017). LAMP utilizes loop forming primers and strand-displacement polymerases to achieve isothermal amplification of a target nucleic acid template, and therefore does not require a thermal cycler. LAMP assays can be performed anywhere because they simply require pipettors and a heating source (e.g. water baths or heat blocks) as equipment (Brewster et al., 2018). LAMP assays offer robust amplification of target material and can produce on the order of 109 copies of the target in an hour-long reaction (Notomi, 2000). Successful amplification in LAMP reactions can be directly visualized by simply looking at the reaction tube, where the reaction mix changes color upon successful target amplification. These colorimetric changes can be triggered by pH indicator dyes or metal ion indicators, which change color when successful target amplification changes the chemistry within the reaction tube (Kellner et al., 2020; Notomi, 2000; Tanner et al., 2015). If more sophisticated visualization equipment is available, other indicators can used. Intercalating fluorescent DNA dyes or quenched fluorescent probes can be used which emit fluorescent signal over time during amplification (Hardinge and Murray, 2019; Seyrig et al., 2015). Alternately, real-time measurements of turbidity in the tube can be used to measure changes in turbidity resulting from magnesium pyrophosphate formation as amplification proceeds (Mori et al., 2001). Reverse transcription\u00a0(RT)-LAMP, where a reverse transcription step is added upstream of the LAMP reaction, adapts all of these protocols for detection of RNA. RT-LAMP with a simple visual color change that occurs in sample tubes containing SARS-CoV-2 could be well suited as a rapid and deployable community-based screening test (Khan et al., 2020).\n\nRecent studies have shown that saliva has high diagnostic value for SARS-CoV-2 (Butler-Laporte et al., 2021; Silva et al., 2021; Vogels et al., 2020; Wyllie et al., 2020; Yokota et al., 2020). Compared to nasopharyngeal swabs, saliva samples harbor similar levels of viral load while being easier to obtain via self-collection. Several groups have developed RT-LAMP tests to detect SARS-CoV-2 in saliva samples (Bhadra et al., 2020; Flynn et al., 2020; Lalli et al., 2020; Lamb et al., 2020; Nagura-Ikeda et al., 2020; Rabe and Cepko, 2020; Taki et al., 2021; Yokota et al., 2020). However, due to pH variability between saliva samples, RT-LAMP often has a high rate of false positives when used with the common pH-dependent dye phenol red (Bhadra et al., 2020; Hardinge and Murray, 2019). In RT-LAMP reactions containing phenol red, reactions start as pink/red but turn strongly yellow at pH 6.8 and below. When RT-LAMP amplifies a target, hydrogen ions are released during dNTP incorporation. This causes a drop in pH within the tube to pH 6.0\u20136.5, triggering the color change to yellow (Tanner et al., 2015). Human saliva naturally varies in pH between 6.8 and 7.4 (Cameron et al., 2015), posing a significant problem in this pH-dependent assay. In fact, we find about 7% of human saliva samples are naturally acidic enough to immediately trigger phenol red-containing reactions to change to yellow without any target amplification (Figure 1A,\u00a0left). If acidic samples are not anticipated and managed, colorimetric RT-LAMP has the potential to produce a high false-positive rate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig1-v2.jpg)\n\n**Figure 1.:** (A) Here, saliva samples from 96 different individuals are analyzed for the prevalence of natural acidity extreme enough to trigger the pink-to-yellow color change of phenol red even before isothermal amplification. Each saliva sample was combined 1:1 with water (left) or 2\u00d7 saliva stabilization solution (right; Materials\u00a0and\u00a0methods) and heated at 95\u00b0C for 10 min to liberate RNA from virions. Two\u00a0microliters of each was then added to 18 \u00b5L RT-LAMP reaction mix (2\u00d7 Colorimetric RT-LAMP Master Mix, RNase P primers, nuclease-free water). The pictures show tubes immediately after samples and master mix are combined, before any incubation steps are undertaken to commence isothermal amplification. With raw saliva, 7 of 96 tubes turned yellow at this step (highlighted in red boxes). These are false\u00a0positives because no amplification reaction has occurred. None of these 96 saliva samples mixed with saliva stabilization solution turned the reaction tube prematurely yellow. (B) Here, we show the method used to identify the ideal pH of the saliva stabilization solution used in (A) and throughout this paper. We chose four normal and four acidic saliva samples and mixed each 1:1 with 2\u00d7 saliva stabilization solution containing NaOH at various concentrations (final molarity of NaOH after mixing shown). Samples were then heated at 95\u00b0C for 10 min and combined with RT-LAMP reaction mix and control primers recognizing the human RNase P transcript. Before incubation, all tubes should be pink, and after incubation, all tubes should be yellow. Based on this, the red box indicates the final optimal NaOH concentration chosen.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) This experiment shows that heating at 95\u00b0C for 10 min degrades viral RNA when it is not in the form of virions. Saliva samples were diluted 1:1 with saliva stabilization solution. In vitro transcribed SARS-CoV-2 RNA was spiked into the diluted saliva to reach the indicated concentrations before (left) or after (right) the heating at 95\u00b0C for 10 min. To match other experiments, the indicated concentration represents the copies of SARS-CoV-2 RNA in the original undiluted saliva. The samples were then subjected to RT-LAMP at 65\u00b0C for 30 min. In this colorimetric version of RT-LAMP, reactions remain pink when no amplification occurred, and turned yellow if there was an amplification event. An RT-LAMP primer set targeting the human RNaseP transcript is included as a host RNA amplification control in addition to the three SARS-CoV-2 primer sets shown in (A). (B) This experiment shows that heating saliva at 95\u00b0C for 10 min does not degrades viral RNA when it is in the form of virions. Saliva samples were spiked with the indicated concentrations of heat-inactivated SARS-CoV-2 virions before being diluted 1:1 with saliva stabilization solution. Samples were then heated at 95\u00b0C for 10 min and subjected to RT-LAMP similarly to the experiment shown in (A). (C) Results illustrate the optimal incubation time at 95\u00b0C to liberate SARS-CoV-2 RNA from virions. Saliva samples were spiked with the indicated concentrations of heat-inactivated SARS-CoV-2 virions before being diluted 1:1 with saliva stabilization solution. Samples were then heated at 95\u00b0C for the indicated amount of time, and subjected to RT-LAMP similarly to the experiment shown in (B). Without heating, no SARS-CoV-2 RNA can be detected with RT-LAMP, presumably because virions remain intact and the viral RNA is not accessible by the amplification enzymes. Amplification is somewhat inconsistent at 5 and 30 min possibly because at 5 min hardly any RNA has been liberated, and by 30 min, it has been largely degraded. However, 10 or 15 min at 95\u00b0C appears to provide just the right balance between liberating and preserving RNA. All reactions contain the AS1E primer set. Duplicates are presented at each time point.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic of the experimental conditions. (B) RT-LAMP reaction result before and after the isothermal amplification. Saliva samples were spiked with heat-inactivated SARS-CoV-2 virions at the indicated concentration and mixed 1:1 with saliva stabilization solution or nuclease-free water before/after storing at 4\u00b0C for 24, 48, 72, and 96 hr. Samples were then heated at 95\u00b0C for 10 min and analyzed using RT-LAMP with the indicated primer sets. Condition C, which is the condition used in our test, performs robustly and is sensitive to the limit of detection even after 96 hr storage at 4\u00b0C. The stated limit of detection of 200 virions/\u03bcL is boxed.\n\nHere, we combine the simplicity of RT-LAMP and the non-invasive nature of saliva to develop an effective screening test for SARS-CoV-2. This test does not require RNA purification but rather works directly with human saliva. We optimized a saliva stabilization solution that (1) addresses the pH\u00a0variability of human saliva and essentially eliminates false positives,\u00a0(2) lowers the viscosity of saliva, and (3) stabilizes RNA for analysis in the test. We validated the RT-LAMP test using a large cohort of saliva and matched nasal swab specimens collected from our local university population, comparing the test to two other quantitative RT-PCR-based SARS-CoV-2 tests (one nasal test and one saliva test). We found that\u00a0our optimized RT-LAMP procedure performs consistently with high specificity and sensitivity, even though our samples were largely from individuals who had no reported symptoms at the time of sample collection. Based on our experience performing screening on our university campus and elsewhere, we provide in Appendix 1 extensive operational details and recommendations for successful community deployment of this SARS-CoV-2 screening test.\n\n## Results\n\n### Optimized universal saliva stabilization conditions for RT-LAMP\n\nTo deal with the variability in pH of human saliva, we optimized a basic saliva stabilization solution by titrating in various concentrations of sodium hydroxide (NaOH). We performed this optimization using a control RT-LAMP primer set, \u2018RNaseP\u2019, which amplifies the mRNA transcript produced from the human POP7 gene (primer set developed previously\u00a0[Curtis et al., 2018]). Our goal was to increase the pH of all saliva samples well above the indicator flip-point of pH 6.8, while not making the samples so basic that they could\u00a0not reach this pH upon successful target amplification. We found that human saliva containing 14.5 mM NaOH is optimal to inhibit false positives caused by saliva acidity (N\u00a0=\u00a096; Figure 1A, right) without impeding the intended color change during amplification (Figure 1B). In addition, we designed our saliva stabilization solution to also include a chelating agent (1 mM ethylenediaminetetraacetic acid\u00a0[EDTA] final concentration) and Proteinase K to inhibit RNases, both of which help preserve virion RNA and therefore to increase sensitivity. (Note that Proteinase K will inhibit the RT-LAMP reaction if it does not go through a heat inactivation step prior to that reaction.) Finally, the saliva stabilization solution contains TCEP, which aids in RNA stabilization by breaking disulfide bonds present in RNases and helps to reduce saliva viscosity. Our optimized saliva stabilization solution (2\u00d7 solution: 5 mM TCEP, 2 mM EDTA, 29 mM NaOH, 100 \u03bcg/mL Proteinase K, diluted in DEPC-treated water) is key to this test. For additional advice on controlling the acidity of reactions, see Appendix 1.\n\n### Optimized RT-LAMP primer sets for detecting SARS-CoV-2 in human saliva\n\nA critical parameter in RT-LAMP is primer design because RT-LAMP requires four to six primers all working together (Notomi, 2000). We found that the \u2018AS1E\u2019 set, developed by Rabe et al. and targeting the ORF1ab region of the SARS-CoV-2 genome, performs very well (Rabe and Cepko, 2020). However, in order to target two distinct regions from the SARS-CoV-2 genome, we designed and tested a large number of additional primer sets. Two of our custom sets, \u2018ORF1e\u2019 targeting the virus ORF1ab gene and \u2018CU-N2\u2019 targeting the virus N gene, exhibited similar sensitivity and amplification efficiency as the AS1E set, as determined using real-time fluorescence monitoring of RT-LAMP products (Figure 2A, Figure 2\u2014figure supplement 1). We next confirmed that these primer sets were both compatible with saliva preserved in our saliva stabilization solution and with colorimetric RT-LAMP (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig2-v2.jpg)\n\n**Figure 2.:** (A) Three RT-LAMP primer sets targeting the SARS-CoV-2 genome (AS1E [Rabe and Cepko, 2020], ORF1e, and CU-N2) were tested with real-time RT-LAMP. Saliva was mixed 1:1 with 2\u00d7\u00a0saliva stabilization solution, heated at 95\u00b0C for 10 min, and then spiked with in vitro transcribed SARS-CoV-2 RNA at the indicated concentrations. 4 \u03bcL of this was added to a master mix containing primers and NEB\u2019s WarmStart LAMP 2x Master Mix in a final reaction volume of 20 \u03bcL. Reactions were incubated at 65\u00b0C and a fluorescence reading was taken every 30 s. EvaGreen was used to monitor amplification products in real-time (X-axis) using a QuantStudio3 quantitative PCR machine. There are nine lines for each of the three primer sets because three concentrations of spiked in SARS-CoV-2 RNA were each tested in triplicate (0, 400, 800 copies/\u03bcL saliva). When concentrations are given herein, denominator refers to the raw, pre-diluted saliva sample. The normalized change in fluorescence signal (\u0394Rn) is shown on the Y-axis. (B) Saliva mixed 1:1 with 2\u00d7\u00a0saliva stabilization solution was heated (95\u00b0C for 10 min) and then spiked with SARS-CoV-2 RNA at the indicated concentrations. Replicates were tested by RT-LAMP with the control RNaseP primer set and three distinct SARS-CoV-2 primer sets (AS1E, ORF1e, and CU-N2). All samples scored positive\u00a0as\u00a0expected except those boxed, which are saliva samples that contain no SARS-CoV-2 RNA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Genome map of SARS-CoV-2 with the regions targeted RT-LAMP primers highlighted in red. SARS-CoV-2 genome map is adapted from BioRender. (B) Sequence alignments of regions of the key SARS-CoV-2 genome variants targeted by RT-LAMP primer sets AS1E and CU-N2. Binding regions of each individual primer set component is highlighted in underlying horizontal bars. The SARS-CoV-2 genome region targeted by AS1E primer set is conserved among all variants. For CU-N2, the red box highlights region of sequence variation that might render CU-N2 primer set less effective to identify the UK and Brazil variants. The coordinate of the genome sequence is based on the SARS-CoV-2 reference genome (NCBI NC_045512.2). The SARS-CoV-2 variant representative genomes are downloaded from GISAID (South Africa Variant B.1.351: hCoV-19/South Africa/KRISP-EC-K004572/2020; UK Variant B.1.1.7: hCoV-19/England/MILK-9E2FE0/2020; Brazil Variant P.1: hCoV-19/USA/VA-DCLS-2185/2020).\n\n### Addressing biosafety concerns through heat inactivation\n\nNext, we addressed the biosafety concerns of handling potentially infectious saliva samples. Recent studies suggest that incubation for 3 min at 95\u00b0C is sufficient to inactivate SARS-CoV-2 virions (Bat\u00e9jat et al., 2021). However, when heating saliva samples for downstream analysis of RNA, one must balance heating long enough to liberate the target RNA from virions with not heating for so long that the target RNA will be degraded. Heating at 95\u00b0C does degrade SARS-2-CoV RNA that is spiked directly into saliva samples but does not degrade viral RNA when it is spiked into samples within SARS-CoV-2 virions (Figure 1\u2014figure supplement 1). A 10 min incubation of saliva samples at 95\u00b0C was found to be optimal (Figure 1\u2014figure supplement 1). We designed our test procedure such that testing personnel avoid handling open tubes until after this step to increase biosafety (Appendix 1).\n\n### Assessment of sample stability during storage\n\nStability of saliva samples from the time of collection to the time of processing and analysis is important if testing cannot be performed immediately or if the tests are being conducted in batches. Saliva samples containing purified virions and diluted with 2\u00d7 saliva stabilization solution were stored at 4\u00b0C for 24, 48, 72, or 96 hr before being inactivated at 95\u00b0C and analyzed using colorimetric RT-LAMP (Figure 1\u2014figure supplement 2). We tested saliva collection and storage over a range of SARS-CoV-2 virion spike-in concentrations. We observed no significant changes in sample stability and the test detection limit over this time course, suggesting that saliva samples stored in saliva stabilization solution at 4\u00b0C are stable for at least 4\u00a0days.\n\n### Determining the limit of detection\n\nWe next determined\u00a0the limit of detection for this test. The lowest concentration at which positive samples were reliably identified was 200 virions/\u03bcL in saliva (red box, summary table in Figure 3A).\u00a0Note that the\u00a0limit of detection\u00a0refers to the virus concentration that can be identified\u00a0>95%\u00a0of the time, and the assay does often detect the virus at even lower concentrations.\u00a0We next tested 20 replicates at this concentration (200 virions/\u03bcL) using all four primer sets (Figure 3B). The ORF1e primer set was not consistent in its performance at 200 virions/\u03bcL. Therefore, we decided to eliminate the ORF1e primer set from our testing panel from this point forward.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig3-v2.jpg)\n\n**Figure 3.:** (A) Saliva samples were spiked with the indicated concentrations of heat-inactivated SARS-CoV-2 virions (top) before being diluted 1:1 with 2\u00d7\u00a0saliva stabilization solution. Samples were then heated at 95\u00b0C for 10 min and subjected to RT-LAMP at 65\u00b0C for 30 min in six replicates. Each panel represents a unique primer set (listed at the bottom of each panel). The table shows a summary of positive reactions (yellow). Red box indicates the determined RT-LAMP limit of detection\u00a0(LOD). (B) Saliva samples were spiked with heat-inactivated SARS-CoV-2 virions at 200 virions/\u03bcL (the limit of detection) before being diluted 1:1 with 2\u00d7\u00a0saliva stabilization solution. Samples were then heated at 95\u00b0C for 10 min and 20 replicates of RT-LAMP with the indicated primer sets were incubated at 65\u00b0C for 30 min. The table shows a summary of positive reactions (yellow). Red box indicates primer sets to advance to subsequent analyses.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Here, the detection limit of\u00a0the RT-LAMP assay\u00a0was\u00a0assessed in the absence of any saliva or saliva stabilization solution . This was explored in order to determine whether there might be components of saliva or saliva stabilization solution that inherently lower test sensitivity because they are inhibitory to the RT-LAMP reaction. Here, synthetic SARS-CoV-2 RNA was diluted in nuclease-free water. The diluted RNA was mixed with RT-LAMP reaction mix and incubated at 65\u00b0C for 30 min to allow isothermal amplification. Positive reactions turn yellow. Two different primer sets that amplify SARS-CoV-2 were employed, AS1E and CU-N2. The red box indicates the concentration at which positives were identified at least 95% of the time (here, 100% is achieved). That is defined at the limit of detection. Here, it is 200 copies/\u03bcL, just as when saliva and saliva stabilization solution is used (see panel B, and data figures in main paper). (B) Evaluation of RT-LAMP detection limit in the presence of saliva, but in the presence or absence of saliva stabilization solution. Saliva spiked with heat-inactivated SARS-CoV-2 virions at specified concentrations was mixed 1:1 with stabilization solution (left) or nuclease-free water (right) and heated at 95\u00b0C for 10 min (RNA liberation) before being incubated at 65\u00b0C for 30 min (isothermal amplification). On the left, the saliva stabilization solution achieves a limit of detection of 200 virions/\u03bcL. When virions are boiled without the saliva stabilization solution (right), very few reactions turn positive and the pattern is unpredictable, presumably because virions and viral RNA are destroyed.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Plain saliva, or saliva spiked with heat-inactivated SARS-CoV-2 virions at different concentrations, was heated at 95\u00baC for 10 minutes. Samples were then analyzed using RT-LAMP by a researcher that did not know the true state of each sample. Experiments in figure) For each sample, three reactions were performed as indicated by each triplet of tubes. By looking at the patterns of yellow and pink results in each triplet, samples were scored according to the criteria in table A. The true status and observed result of each sample are listed to the right in green boxes (P = Positive, N = Negative, I = Inconclusive). A white box on the triplet is shown if the sample contained SARS-CoV-2. One sample resulted in inconclusive test result. This sample did have SARS-CoV-2 spiked into it, but one of the SARS-CoV-2 primer sets failed to produce a signal (CU-N2). This failed reaction is still pink (negative) even though the tube has 2xLOD virus. 1X LOD = 200 virions/\u03bcL. Summary statistics for this experiment are provided in tables B and C below.\n\nWe considered that contaminants in saliva and/or components of the saliva stabilization solution might be suppressing the overall RT-LAMP reaction efficiency by acting in inhibitory ways. On the contrary, we found that when synthetic SARS-CoV-2 RNA is directly added to the RT-LAMP reaction mix (in the absence of saliva and the stabilization solution), we were unable to achieve a better detection limit than 200 genome copies/\u03bcL (Figure 3\u2014figure supplement 1). This suggests that\u00a0the observed detection limit represents the upper performance limit of the presented RT-LAMP assay, and that\u00a0the saliva and stabilization solution have little to no negative impact to the test performance. In fact, multiple observations suggest that RNA degradation is observed in the absence of stabilization solution, resulting in less consistent testing results (Figure 1\u2014figure supplement 2; Figure 3\u2014figure supplement 1).\n\nWe next performed a blinded study. Heat-inactivated virions were spiked into human saliva at various concentrations at or above the limit of detection (200 virions/\u03bcL), and these as well as uninfected saliva samples were blinded and passed to a second member of our personnel. After running the RT-LAMP test on 60 such samples, only one positive sample scored as inconclusive. In that sample the SARS-CoV-2 primer set CU-N2 failed, while the other primer set detecting SARS-CoV-2 correctly identified the sample (Figure 3\u2014figure supplement 2). All negative samples were scored correctly (100% specificity, binomial 95% confidence interval [88%,\u00a0100%]). Conservatively counting the inconclusive test as a false negative lead to a sensitivity estimate of 97% (binomial 95% confidence interval [93%,\u00a0100%]). See Figure 4C for a breakdown by primer set.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig4-v2.jpg)\n\n**Figure 4.:** (A) We re-analyzed university saliva samples that had been previously analyzed for SARS-CoV-2 using quantitative RT-PCR with a primer set against the N gene of SARS-CoV-2 (see Materials\u00a0and\u00a0methods). The remaining saliva was mixed 1:1 with 2\u00d7\u00a0saliva stabilization solution (without Proteinase K) and re-tested using RT-LAMP. The results of RT-LAMP are compared to relative saliva viral load determined by quantitative RT-PCR. The figure shows the distribution of the viral load of all 278 positive saliva samples separated by the corresponding RT-LAMP reaction results with either the AS1E or CU-N2 primer\u00a0set. (B) Saliva RT-LAMP test sensitivity as a function of the cycle threshold (Ct) from the quantitative RT-PCR\u00a0analysis. (C) A summary of test sensitivity and specificity from the blinded virion\u00a0spike-in\u00a0evaluation described above (Figure 3\u2014figure supplement 2) and from the human\u00a0sample\u00a0data in (A).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** 10,000 copies/\u00b5L of heat deactivated SARS-CoV-2 virus was spiked into negative saliva specimens from six different volunteers and incubated for 30 min at 95\u00b0C. Samples were diluted to indicate concentrations using heat-treated saliva without SARS-CoV-2 addition from the same individual. The standard curve for the primer set targeting SARS-CoV-2 N gene is generated from the linear regression analysis and is illustrated with 95% confidence interval.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Between September 16\u201325, 2020, 8836 saliva samples were screened for SARS-CoV-2 using the direct quantitative RT-PCR method. (A) The amplification of SARS-CoV-2 N gene is detected in 347 samples and the Ct value distribution is illustrated. Samples with Ct values above the qRT-PCR limit of detection (Ct\u00a0<34, dark gray, N\u00a0=\u00a0278) were considered SARS-CoV-2 positive and used for RT-LAMP validation. (B) Quantile\u2013quantile plot of the SARS-CoV-2 N Ct values indicates near normal distribution within the linear range of qRT-PCR (D'Agostino test, K2\u00a0=\u00a09.07, p-value=0.011).\n\n### Evaluation on human samples\n\nSARS-CoV-2 screening was initiated on the University of Colorado Boulder campus starting in the summer/fall of 2020. Saliva samples were taken weekly from residents of dormitories and at several testing sites throughout the campus. Participants were asked to refrain from eating or drinking 30 min prior to sample collection, and to not participate if they were experiencing any symptoms consistent with COVID-19. Therefore, individuals testing positive for SARS-CoV-2 were either pre-symptomatic at the time of saliva collection, or they never developed symptoms throughout the course of infection (we do\u00a0not have the necessary follow-up data to delineate). All saliva samples were analyzed by a quantitative RT-PCR method performed directly on saliva,\u00a0which\u00a0was mixed 1:1 with 2\u00d7 TBE buffer containing 1% Tween-20 (saliva sample prep as in Ranoa et al., 2020). An\u00a0in-house\u00a0multiplex quantitative RT-PCR assay\u00a0was used to determine the presence of the SARS-CoV-2 genome in saliva, with\u00a0primers\u00a0targeting the E and N gene regions of the SARS-2-CoV genome (see Materials\u00a0and\u00a0methods). Because positive results in our university screening regimen resulted in the tested individual being directed to their healthcare provider for confirmatory testing, positively tested individuals were removed from the sampling pool. Thus, most positive samples are from unique individuals, with a few exceptions.\n\nAll positive\u00a0saliva\u00a0samples with viral load above the quantitative RT-PCR detection\u00a0limit\u00a0(collected between September 16\u201325,\u00a02020;\u00a0N\u00a0= 278), along with 295 negative\u00a0saliva\u00a0samples, were next re-evaluated with RT-LAMP.\u00a0Saliva samples had already been heat inactivated for 30 min at 95\u00b0C as the initial step of the quantitative RT-PCR protocol. Since the heating component of our Saliva Preparation step had already been performed, an aliquot of the heated saliva sample was transferred into our 2\u00d7 saliva stabilization solution (without Proteinase K) and then put through the RT-LAMP reaction as described above. For each of the 573 samples, three RT-LAMP reactions were performed with different primer sets: RNaseP (positive control), AS1E, and CU-N2 (the latter two sets detecting SARS-CoV-2). During this part of the study, we noticed that decreasing the input sample amount (saliva + saliva stabilization solution) from 4 \u03bcL to 2 \u03bcL in a total reaction volume of 20 \u03bcL further increased tolerance of the RT-LAMP reaction color to acidic saliva samples because less saliva is added. We thus reduced the input sample amount to 2 \u03bcL when evaluating these human samples. For all 573 samples, RT-LAMP with primers recognizing\u00a0a human RNA positive control (RNaseP) correctly turned positive (yellow).\n\n### Specificity\n\nTwo hundred and ninety-five saliva samples that tested negative for SARS-CoV-2 by quantitative RT-PCR were used for evaluation. We re-tested all of those samples with RT-LAMP to evaluate our false-positive rate. For all 295 SARS-CoV-2-negative samples, the\u00a0AS1E and CU-N2 primer sets both returned a result of negative, consistent with the quantitative RT-PCR results. Therefore, there were zero false positives, and the test had a specificity of 100% in this extensive sample set. This shows the strength of our saliva stabilization solution, which mitigates the problem of false\u00a0positives in RT-LAMP due to some human saliva samples being naturally acidic.\n\n### Sensitivity\n\nWe next re-analyzed 278 SARS-CoV-2-positive saliva samples\u00a0using\u00a0RT-LAMP. We determined the viral load of each positive saliva sample using the quantitative RT-PCR standard curve generated by our university testing lab (Figure 4\u2014figure supplement 1). All viral load and Ct values reported in this study are from the\u00a0nucleocapsid (N) primer set\u00a0(Figure 4\u2014figure supplement 2). Among all positive samples, 208 (74.8%; AS1E primers) and 182 (65.5%; CU-N2 primers) returned positive RT-LAMP test results (Figure 4A). Although both primer sets were still able to detect SARS-CoV-2 RNA below the experimentally determined detection limit (200 virions/\u03bcL), we observed a decline in the test sensitivity below such limit (Figure 4B).\u00a0The observed\u00a0limit of detection\u00a0of the AS1E primer set was determined from this data to be 266 virions/\u00b5L. The strong congruence with our prior estimate of 200 virions/\u00b5L\u00a0demonstrates that heating for\u00a030\u00a0min\u00a0prior to adding stabilization solution and using\u00a02\u00a0\u00b5L\u00a0of saliva plus stabilization solution, instead of\u00a04\u00a0\u00b5L, both have very little effect.\u00a0Of the 168 positive samples with\u00a0viral loads\u00a0greater than RT-LAMP limit of detection, 158 (94%; AS1E primers) or 142 (85%; CU-N2 primers) returned positive RT-LAMP test results (Figure 4A). In Figure 4C, we summarize the performance of each primer set in both this test of human saliva samples, and in the blinded\u00a0virion\u00a0spike-in experiment described above (Figure 3\u2014figure supplement 2). Because the AS1E primer set performs best throughout our study, we include that as the main primer set in our final test configuration, which we refer to as the Saliva TwoStep test. However, the CU-N2 primer set still performs well and can be used when it is desirable to detect a second region of the SARS-CoV-2 genome.\n\n### Test sensitivity as a function of viral load in the sample\n\nFor both primer sets, we calculated the sensitivity (positive agreement with quantitative RT-PCR) and specificity (negative agreement with quantitative RT-PCR) of the RT-LAMP test at various levels of viral load cutoffs (Figure 4B, Table 1). The differences in the observed limit of detection between the two SARS-CoV-2 primer sets could reflect the differences in the primer efficiencies, as well as the dynamics in relative viral transcript abundance\u00a0(Kim et al., 2020).\n\n**Table 1.**\n Summary of RT-LAMP evaluation in human samples.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\" colspan=\"3\"></th>\n      <th colspan=\"5\">RT-LAMP\u00a0Primers</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">AS1E</th>\n      <th colspan=\"2\">CU-N2</th>\n    </tr>\n    <tr>\n      <th>No. of samples</th>\n      <th>No. of positives</th>\n      <th>Agreement</th>\n      <th>No. of positives</th>\n      <th>Agreement</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"7\">Quantitative RT-PCR (SARS-CoV-2 N)</td>\n      <td colspan=\"2\">Negative</td>\n      <td>295</td>\n      <td>0</td>\n      <td>295/295 (100%)</td>\n      <td>0</td>\n      <td>295/295 (100%)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Positive (levels of viral load: Virions/\u03bcL)</td>\n      <td>4000</td>\n      <td>82</td>\n      <td>82</td>\n      <td>82/82 (100%)</td>\n      <td>82</td>\n      <td>82/82 (100%)</td>\n    </tr>\n    <tr>\n      <td>2000</td>\n      <td>97</td>\n      <td>97</td>\n      <td>97/97 (100%)</td>\n      <td>94</td>\n      <td>94/97 (96.9%)</td>\n    </tr>\n    <tr>\n      <td>1000</td>\n      <td>118</td>\n      <td>117</td>\n      <td>117/118 (99.2%)</td>\n      <td>110</td>\n      <td>110/118 (93.2%)</td>\n    </tr>\n    <tr>\n      <td>800</td>\n      <td>123</td>\n      <td>122</td>\n      <td>122/123 (99.2%)</td>\n      <td>112</td>\n      <td>112/123 (91.1%)</td>\n    </tr>\n    <tr>\n      <td>400</td>\n      <td>143</td>\n      <td>139</td>\n      <td>139/143 (97.2%)</td>\n      <td>129</td>\n      <td>145/173 (90.2%)</td>\n    </tr>\n    <tr>\n      <td>200</td>\n      <td>168</td>\n      <td>158</td>\n      <td>158/168 (94.0%)</td>\n      <td>142</td>\n      <td>142/168 (84.5%)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Assessment of Saliva TwoStep against a nasal swab test\n\nOf the 278 SARS-CoV-2-positive saliva samples analyzed above, 54 also had matched nasal samples collected no more than 2\u00a0days later. In some cases, individuals may have developed symptoms by the time follow-up nasal swabs were taken, so we can make no claims about symptomatic status at the time of nasal swab. We next compared the results of the Saliva TwoStep test with the results obtained by the Quidel Lyra direct nasal swab RT-PCR test. Compared to the quantitative RT-PCR on saliva results, the RT-LAMP produced three false negatives in this sample set, whereas the Lyra nasal swab test produced eight (Figure 5A). However, this is still remarkably consistent given that this comparison involves three degrees of freedom: biosample (saliva versus nasal swab), test modality (RT-PCR versus RT-LAMP), and days between saliva and nasal samples collection (up to 2\u00a0days apart). A summary of how these first two degrees of freedom affect test congruency are shown in Figure 5B.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig5-v2.jpg)\n\n**Figure 5.:** (A) Matched nasal swabs and saliva from 54 individuals were analyzed (all of whom were SARS-CoV-2 positive at the time that these samples were collected, as verified by the\u00a0saliva quantitative RT-PCR test\u00a0described\u00a0above). Nasal swab samples were collected within 2 days of positive saliva test and tested using the Quidel Direct Lyra RT-PCR test. The saliva samples from those same individuals were\u00a0also re-tested with the Saliva TwoStep test. Data points represent individuals (n\u00a0=\u00a054), and the corresponding test result is color-coded: positive, yellow; negative, gray. (B) Positive test agreement between Saliva TwoStep and the two comparator tests. The nature of the sample used by each test (nasal swab or saliva), and the test chemistry (quantitative RT-PCR or RT-LAMP) are delineated.\n\n### Final test conditions\n\nFrom the experiments described above, we selected the final optimized conditions for our Saliva TwoStep test. The two steps have an end-to-end processing and analysis time of approximately 45 min (Figure 6). For additional application details regarding the testing station setup, sample collection, and overall workflow of employing this test for community screening, please refer to Appendix 1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig6-v2.jpg)\n\n**Figure 6.:** (Upper half) Step 1: Prepare saliva. Person provides 1 mL of saliva, and 1 mL of 2\u00d7\u00a0saliva stabilization solution is then added to it. (This sample can be processed immediately or stored in the refrigerator at 4\u00b0C for at least 4 days.) The mixture is heated at 95\u00b0C for 10 min. This step serves to\u00a0increase the pH of saliva, liberate viral RNA from virions in the saliva, and inactivate virions for safe handling (although appropriate safety precautions should always be taken). We have determined that performing a heating step at 95\u00b0C for 30 min in a water bath before addition of the saliva stabilization solution also works well. However, in this case, Proteinase K must be left out of that solution. (Lower half) Step 2: Detect virus. Two\u00a0microliters of stabilized saliva from step 1\u00a0is pipetted into each of three test tubes pre-filled with the RT-LAMP master mix and primers. The only thing different between the three tubes is the primer set included, with each set targeting either the human positive control RNA or a region of SARS-CoV-2 RNA, as indicated. After incubation, the reaction will turn from pink to yellow if the target RNA is present in saliva. An example of a positive and a negative test is\u00a0shown. Graphic by Annika Rollock.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65113/elife-65113-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) CAD model of dispensing apparatus showing components. Custom solution dispensing apparatus fabricated from machined and solvent welded 236-in polycarbonate (Tuffak). Polycarbonate is chosen for visibility, strength, and ability to withstand cleaning solvents such as ethanol. This device prevents the need for staff to directly handle uncapped and potentially infectious sample prior to inactivation, limits splash and aerosol exposure risk, and prevents cross-contamination of samples during solution addition step. (B) Diagram illustrates the operation of the dispensing apparatus. Position 1: Tray is extended toward the testing participant and sample tube is seated in tray. Bottle containing stabilization solution and assembled with bottle top dispenser is seated in back section of apparatus. Staff moves tray toward themselves by gently pulling on handle until the tray is seated against back wall of the apparatus. Position 2: Sample tray is positioned against the back wall of the apparatus. This brings the sample tube and dispenser nozzle into a set orientation underneath the removable cover assembly. Sample collector uses bottle top dispenser to add 1 mL of stabilization solution to sample and\u00a0then pushes sample tray back to the testing participant.\n\n### Step 1. Prepare saliva\n\nCollect saliva, combine 1:1 with 2\u00d7 saliva stabilization solution and incubate at 95\u00b0C for 10 min. Note: We have determined that performing a heating step at 95\u00b0C for 30 min in a water bath, before addition of the saliva stabilization solution, also works reasonably well. However, in this case, Proteinase K must be omitted.\n\n### Step 2. Detect virus\n\nIncubate at 65\u00b0C for 30 min: 2 \u03bcL diluted saliva from step 1, 10 \u03bcL 2\u00d7 NEB Colorimetric RT-LAMP enzyme mix, 6 \u03bcL of nuclease-free water, and 2 \u03bcL 10\u00d7\u00a0primer mix for a final reaction volume of 20 \u03bcL.\n\n### Step 3. Reaction inactivation (optional)\n\nStop reaction at 80\u00b0C for 2 min. This stabilizes color so that results can be analyzed at a later time. The multiple heating steps here may be programmed into a thermal cycler for maximum convenience, but this is not necessary.\n\n## Discussion\n\nThere are several advantages to the SARS-CoV-2 Saliva TwoStep RT-LAMP screening approach described herein: (1) The use of saliva eliminates invasive nasal swab-based sampling, which requires special supplies and causes discomfort. (2) We optimized a\u00a0saliva stabilization solution that allows for analysis of a broad range of naturally acidic saliva samples while maintaining compatibility with a colorimetric RT-LAMP assay. The solution also helps preserve saliva samples for at least 4\u00a0days before processing and lowers saliva viscosity. (3) We determined the optimal sample heating condition that liberates the host and viral RNA with minimal degradation. The simple heating step increases biosafety and avoids formal RNA extraction procedures. (4) For RT-LAMP, we incorporated additional primers based on up-do-date SARS-CoV-2 genome databases and identified primers allowing efficient target amplification. These primers are expected to work on most or all viral variants currently circulating (Figure 2\u2014figure supplement 1). Overall, with the simplified two steps of saliva preparation and virus detection, the test has a rapid sample-to-result turnaround time of 45 min.\n\nThrough the optimization process, we identified other potential sources of false-positive results and provided a detailed summary for troubleshooting (Materials\u00a0and\u00a0methods and Appendix 1). In addition, from our experience of the actual deployment of this screening test, we summarized the standard operational procedures for saliva sample collection, including the design of a stabilization solution dispensing apparatus to preserve samples while avoiding environmental contamination and protecting workers (Figure 6\u2014figure supplement 1; Appendix 1). By strictly following these application notes, we completely avoided false positive results during the evaluation of a large cohort of human saliva samples, achieving 100% specificity. We also evaluated the RT-LAMP test performance based on the experimentally determined limit of detection. Using SARS-CoV-2-positive human saliva samples, we confirmed that the RT-LAMP test can consistently identify infected individuals with 94% sensitivity.\n\nDuring the test development and optimization, we have also explored additional methods that may help enhance the RT-LAMP test performance and consistency. Previous work suggests that the addition of 40 mM of guanidine chloride in the RT-LAMP reaction mix could increase RT-LAMP amplification efficiency (Zhang et al., 2020). However, we did not observe similar enhancement when included in our experiments. To further prevent carry over contamination (Davidi et al., 2020), the usage of dUTP and uracil-DNA-glycosylase-containing RT-LAMP reaction mix can be considered. Previous studies have shown that the addition of this alternative master mix does not affect the RT-LAMP limit of detection (Kellner et al., 2020; Tang et al., 2016).\n\nSaliva TwoStep requires less sample processing, reaction incubation time, and laboratory overhead as compared to quantitative RT-PCR methods. The result is the ability to run significantly more tests with a given amount of resources. Based on these observations, we conclude that the Saliva TwoStep test described herein can be used as a SARS-CoV-2 screening tool to reliably identify infectious individuals (Yang et al., 2021)\u00a0with minimal laboratory setup, potentially serving as a tool for effective SARS-CoV-2 surveillance at the community level. This RT-LAMP testing offers many solutions to a nation-wide shortage of COVID-19 testing. With minimal set-up, this test could be performed in diverse settings such as factories, office buildings, or schools.\n\n## Materials and methods\n\n### RT-LAMP primer design and preparation\n\nRegions of the SARS-CoV-2 genome that are conserved among strains were identified using genome diversity data from NextStrain (nextstrain.org/ncov/global). Next, nucleotide-BLAST (blast.ncbi.nlm.nih.gov) was used to filter out genome sequences that share high-sequence homology with other seasonal coronavirus genomes. Finally, PrimerExplorer V5 (primerexplorer.jp/e/) was used to design RT-LAMP primers targeting the specific regions of SARS-CoV-2 genomes. The F3, B3, FIP, BIP, Loop F, and Loop B primers were selected for optimal melting temperature and complementarity using A plasmid editor (ApE). In all cases, a 10\u00d7 concentration of primer sets was made containing 16 \u03bcM FIP and BIP primers, 4 \u03bcM LF and LB primers, and 2 \u03bcM F3 and B3 primers.\n\nAll primers should be ordered with HPLC purification, which ensures the yield and avoids cross-contamination from other SARS-CoV-2-related synthesis projects being run on the same equipment at the oligo synthesis facilities (which can lead to false positives). This is particularly a problem during a pandemic where these facilities are handling many oligo synthesis orders focused on the same pathogen\u00a0(M\u00f6gling et al., 2020). It is also recommended that you communicate with the primer synthesis company to inform them that primers are intended for use with a SARS-CoV-2 screening test. Several companies have dedicated facilities for minimizing cross-contamination of SARS-CoV-2 templates. In addition, primers should be diluted in nuclease-free water, instead of Tris\u2013EDTA buffer, which will also inhibit pH change that takes place during RT-LAMP.\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer set name</th>\n      <th>LAMP primer component</th>\n      <th>Primer sequence (5\u2032\u20133\u2032)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">\u2018RNaseP\u2019 amplifies human RNA for positive control (Curtis et al., 2018)</td>\n      <td>F3</td>\n      <td>TTGATGAGCTGGAGCCA</td>\n    </tr>\n    <tr>\n      <td>B3</td>\n      <td>CACCCTCAATGCAGAGTC</td>\n    </tr>\n    <tr>\n      <td>Loop F</td>\n      <td>ATGTGGATGGCTGAGTTGTT</td>\n    </tr>\n    <tr>\n      <td>Loop B</td>\n      <td>CATGCTGAGTACTGGACCTC</td>\n    </tr>\n    <tr>\n      <td>FIP</td>\n      <td>GTGTGACCCTGAAGACTCGGTTTTAGCCACTGACTCGGATC</td>\n    </tr>\n    <tr>\n      <td>BIP</td>\n      <td>CCTCCGTGATATGGCTCTTCGTTTTTTTCTTACATGGCTCTGGTC</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">\u2018AS1E\u2019\u00a0(Rabe and Cepko, 2020)</td>\n      <td>F3</td>\n      <td>CGGTGGACAAATTGTCAC</td>\n    </tr>\n    <tr>\n      <td>B3</td>\n      <td>CTTCTCTGGATTTAACACACTT</td>\n    </tr>\n    <tr>\n      <td>Loop F</td>\n      <td>TTACAAGCTTAAAGAATGTCTGAACACT</td>\n    </tr>\n    <tr>\n      <td>Loop B</td>\n      <td>TTGAATTTAGGTGAAACATTTGTCACG</td>\n    </tr>\n    <tr>\n      <td>FIP</td>\n      <td>TCAGCACACAAAGCCAAAAATTTATTTTTCTGTGCAAAGGAAATTAAGGAG</td>\n    </tr>\n    <tr>\n      <td>BIP</td>\n      <td>TATTGGTGGAGCTAAACTTAAAGCCTTTTCTGTACAATCCCTTTGAGTG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">\u2018CU-N2\u2019 developed herein</td>\n      <td>F3</td>\n      <td>CGGCAGTCAAGCCTCTTC</td>\n    </tr>\n    <tr>\n      <td>B3</td>\n      <td>TTGCTCTCAAGCTGGTTCAA</td>\n    </tr>\n    <tr>\n      <td>Loop F</td>\n      <td>This set does not require a Loop F primer</td>\n    </tr>\n    <tr>\n      <td>Loop B</td>\n      <td>ATGGCGGTGATGCTGCTCTT</td>\n    </tr>\n    <tr>\n      <td>FIP</td>\n      <td>TCCCCTACTGCTGCCTGGAGCGTTCCTCATCACGTAGTCG</td>\n    </tr>\n    <tr>\n      <td>BIP</td>\n      <td>TCTCCTGCTAGAATGGCTGGCATCTGTCAAGCAGCAGCAAAG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">\u2018ORF1e\u2019 developed herein</td>\n      <td>F3</td>\n      <td>GGCTAACTAACATCTTTGGC</td>\n    </tr>\n    <tr>\n      <td>B3</td>\n      <td>GTCAGCACACAAAGCCAA</td>\n    </tr>\n    <tr>\n      <td>Loop F</td>\n      <td>TCTTCAAGCCAATCAAGGAC</td>\n    </tr>\n    <tr>\n      <td>Loop B</td>\n      <td>TTGTCGGTGGACAAATTGT</td>\n    </tr>\n    <tr>\n      <td>FIP</td>\n      <td>TCTCTAAGAAACTCTACACCTTCCTTTTTACTGTTTATGAAAAACTCAAACC</td>\n    </tr>\n    <tr>\n      <td>BIP</td>\n      <td>TATCTCAACCTGTGCTTGTGAAATTTTAGAATGTCTGAACACTCTCCT</td>\n    </tr>\n  </tbody>\n</table>\n\n### SARS-CoV-2 RNA and virion standards\n\nSynthetic SARS-CoV-2 RNA control (Twist Bioscience #102019) was obtained, and its copy number of 1 \u00d7 106 copies/\u03bcL was confirmed using quantitative RT-PCR in conjunction with a DNA plasmid control containing a region of the N gene from the SARS-CoV-2 genome (IDT #10006625). Heat-inactivated SARS-CoV-2 virion control (ATCC #VR-1986HK) was obtained and its concentration of 3.75 \u00d7 105 virions/\u03bcL was confirmed using quantitative RT-PCR in conjunction with both the synthetic SARS-CoV-2 RNA control and a DNA plasmid control containing a region of the N gene from the SARS-CoV-2 genome. SARS-CoV-2 RNA was added to saliva samples after they\u00a0had\u00a0been mixed 1:1 with saliva stabilization solution and heated at 95\u00b0C for 10 min, unless stated otherwise, whereas heat-inactivated SARS-CoV-2 virions were added directly\u00a0to saliva samples and then\u00a0mixed 1:1 with saliva stabilization solution before being heated. Concentrations reported throughout this study represent the final concentration of standards in saliva before it was mixed 1:1 with 2\u00d7 saliva stabilization solution.\n\n### Saliva preparation with heat and stabilization solution\n\nWhen making the 2\u00d7 saliva stabilization solution, we offer several key pointers: (1) Use TCEP\u2013HCl (GoldBio #TCEP10). The \u2013HCl form must be used to produce the correct final stock pH. (2) Use EDTA, 0.5 M, pH 8.0 (Sigma-Aldrich #324506). It is important to use a pH 8.0 stock solution, otherwise this also affect the pH of the final stabilization solution. (3) Use lyophilized Proteinase K (Roche # 3115879001). It is important to use the lyophilized form. Liquid forms will contain Tris, which inhibits the pH change during the RT-LAMP reaction. (4) Ten molar NaOH was prepared by dissolving NaOH pellets (Sigma-Aldrich #221465) into nuclease-free water, before being added to the 2\u00d7 solution to reach the correct concentration. The following is the exact recipe that we used to create a 100 mL stock of 2\u00d7 saliva stabilization solution:\n\n<table>\n  <thead>\n    <tr>\n      <th>Components</th>\n      <th>Amount mixed</th>\n      <th>Final concentration in 2\u00d7\u00a0stock solution</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TCEP\u2013HCl (GoldBio #TCEP10)</td>\n      <td>143.3 mg</td>\n      <td>5 mM</td>\n    </tr>\n    <tr>\n      <td>0.5 M EDTA, pH 8.0 (Sigma-Aldrich #324506)</td>\n      <td>400 \u03bcL</td>\n      <td>2 mM</td>\n    </tr>\n    <tr>\n      <td>10 M NaOH (Sigma-Aldrich #221465)</td>\n      <td>290 \u03bcL</td>\n      <td>29 mM</td>\n    </tr>\n    <tr>\n      <td>Proteinase K (Roche #3115879001)</td>\n      <td>10 mg</td>\n      <td>100 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Nuclease-free water</td>\n      <td>To 100 mL</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nSaliva samples (1 mL) were collected in sterile, nuclease-free 5 mL conical screw-cap tubes (TLD Five-O # TLDC2540). 2\u00d7 saliva stabilization solution described above was then added at a 1:1 ratio. Samples were shaken vigorously for 5\u201310 s and incubated at 95\u00b0C for 10 min. Samples were then placed on ice before being used in downstream analyses (Detailed sample collection procedure is described in Appendix 1.)\n\n### Real-time RT-LAMP\n\nFor each reaction, 10 \u03bcL WarmStart LAMP 2\u00d7 Master Mix (NEB #E1700) was combined with 1 \u03bcL 20\u00d7 EvaGreen Dye (Biotium #31000), 2 \u03bcL 10\u00d7 primer mix, and 3 \u03bcL DEPC-treated water. The combined reaction mix was added to MicroAmp Optical 96-Well Reaction Plate (ThermoFisher #N8010560), and then 4 \u03bcL processed saliva sample was added. The reaction was mixed using a multi-channel pipette and incubated in Applied Biosystems QuantStudio3 Real-time PCR system. The reaction proceeded at 65\u00b0C for 30 min with fluorescent signal being captured every 30 s. The results were visualized and analyzed using ThermoFisher\u2019s Design and Analysis software.\n\n### Colorimetric RT-LAMP\n\nWarmStart Colorimetric LAMP 2\u00d7 Master Mix (NEB #M1800) was used in all colorimetric RT-LAMP reactions. Each reaction was carried out in a total of 20 \u03bcL (10 \u03bcL WarmStart Master Mix, 2 \u03bcL 10\u00d7 primer mix, 4 \u03bcL processed saliva sample, and 4 \u03bcL DEPC-treated water). Reactions were set up in PCR strip tubes on ice. Saliva template was added last, and tubes were inverted several times to mix samples and briefly spun down in a microfuge. Reactions were incubated in a thermal cycler at 65\u00b0C for 30 min and then deactivated at 80\u00b0C for 2 min. The incubation was carried out without the heated lid to simulate a less complex heating device. Images of reactions were taken using a smartphone. For the community deployment of this assay, 2 \u03bcL of processed saliva was used instead of 4 \u03bcL.\n\n### Testing of university samples\n\nThe University of Colorado Boulder SARS-CoV-2 screening test was loosely based on a published quantitative RT-PCR performed directly on saliva (Ranoa et al., 2020), which has a limit of detection of 5 virions/\u03bcL. Some modifications were made, as described here. For sample collection, individuals were asked to collect no less than 0.5 mL of saliva in a 5 mL screw-top collection tube. Saliva samples were heated at 95\u00b0C for 30 min to inactivate the viral particles for safe handling and then placed on ice or at 4\u00b0C. For quantitative RT-PCR analysis, the university testing team transferred 75 \u03bcL of saliva into a 96-well plate, where each well had been pre-loaded with 75 \u03bcL 2\u00d7\u00a0TBE buffer supplemented with 1% Tween 20. (The remaining saliva in the 5 mL collection tube proceeded to RT-LAMP testing as described in the next paragraph.) Next, 5 \u03bcL of this diluted sample was added to a separate 96-well plate where each well had been pre-loaded with 15 \u03bcL reaction mix composed of TaqPath 1-step Multiplex Master Mix (Thermo Fisher A28523), nuclease-free water, and triplex primer mix consisting of primer and probe sets targeting SARS-CoV-2 E and N genes and human RNase P gene (sequence and concentration specified in the table below). The reactions were mixed, spun down, and loaded onto a Bio-Rad CFX96 or CFX384 qPCR machine. Quantitative RT-PCR was run using the standard mode, consisting of a hold stage (25\u00b0C for 2 min, 50\u00b0C for 15 min, and 95\u00b0C for 2 min) followed by 44 cycles of a PCR stage (95\u00b0C for 3 s, 55\u00b0C for 30 s, with a 1.6 \u00b0C/s ramp up and ramp down rate). Only Ct values from the N primer set are reported in the study herein and used to calculate relative sample viral load based on the standard curve shown in Figure 4\u2014figure supplement 1.\n\n<table>\n  <thead>\n    <tr>\n      <th>TaqMan primer/probe set target</th>\n      <th>Primer or probe name</th>\n      <th>1\u00d7\u00a0Concentration</th>\n      <th>Sequence (5\u2032\u20133\u2032)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">SARS-CoV-2 E gene</td>\n      <td>E_Sarbeco_F1 (IDT 10006888)</td>\n      <td>400 nM</td>\n      <td>ACAGGTACGTTAATAGTTAATAGCGT</td>\n    </tr>\n    <tr>\n      <td>E_Sarbeco_R2 (IDT 10006890)</td>\n      <td>400 nM</td>\n      <td>ATATTGCAGCAGTACGCACACA</td>\n    </tr>\n    <tr>\n      <td>E_Sarbeco_P (IDT Custom)</td>\n      <td>200 nM</td>\n      <td>TexRd-ACACTAGCCATCCTTACTGCGCTTCG-IAbRQSp</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">SARS-CoV-2 N gene</td>\n      <td>nCOV_N1_F (IDT 10006830)</td>\n      <td>500 nM</td>\n      <td>GACCCCAAAATCAGCGAAAT</td>\n    </tr>\n    <tr>\n      <td>nCOV_N1_R (IDT 10006831)</td>\n      <td>500 nM</td>\n      <td>TCTGGTTACTGCCAGTTGAATCTG</td>\n    </tr>\n    <tr>\n      <td>nCOV_N1_P (IDT Custom)</td>\n      <td>250 nM</td>\n      <td>HEX-ACCCCGCAT-ZEN-TACGTTTGGTGGACC-IABkFQ</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Human RNase P</td>\n      <td>RNaseP_F (IDT 10006836)</td>\n      <td>50 nM</td>\n      <td>AGATTTGGACCTGCGAGCG</td>\n    </tr>\n    <tr>\n      <td>RNaseP_R (IDT 10006837)</td>\n      <td>50 nM</td>\n      <td>GAGCGGCTGTCTCCACAA GT</td>\n    </tr>\n    <tr>\n      <td>RNase_P_P (IDT 10006838)</td>\n      <td>50 nM</td>\n      <td>FAM-TTCTGACCT-ZEN-GAAGGCTCTGCGCG-IABkFQ</td>\n    </tr>\n  </tbody>\n</table>\n\nLeftover samples from this testing procedure were then tested with RT-LAMP. Fifty\u00a0microliters of saliva was transferred and mixed into a 96-well plate, where each well had been pre-loaded with 50 \u03bcL 2\u00d7 saliva stabilization solution without proteinase K (5 mM TCEP\u2013HCl, 2 mM EDTA, 29 mM NaOH, diluted in DEPC-treated water). Two\u00a0microliters\u00a0of this\u00a0diluted saliva was transferred into eight-strip PCR tubes containing RT-LAMP reaction mixture (enzymes and primers). For each sample, three RT-LAMP reactions were carried out to amplify human RNaseP as a control and AS1E and CU-N2 for SARS-CoV-2. The reactions were incubated at 65\u00b0C for 30 min followed by inactivation at 80\u00b0C for 2 min on a thermal cycler (Bio-RAD T100). A color change from pink to yellow was observed visually to interpret results.\n",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "180767c9-609f-40b6-a2cf-9c0e2ed862cd",
+      "submission_id": "06bf545c-fae7-4381-a8f8-1e18a096099f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65113.sa1](https://doi.org/10.7554/eLife.65113.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study provides a novel strategy for the diagnosis of SARS-CoV-2 infection using a simple detection system for viral genomic material, together with saliva as the clinical specimen. The authors showed that acidic saliva resulted in false-positive results, and to avoid this false positivity, NaOH was added to saliva samples. The utility of this strategy was tested using clinical saliva samples, demonstrating high sensitivity and specificity. The work will be of interest to clinical microbiologists and virologists.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Saliva TwoStep for rapid identification of SARS-CoV-2 carriers in a large population\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Bavesh Kana as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Petr Chlanda (Reviewer #2); Viet Loan Dao Thi (Reviewer #3, co-reviewed with Prof. Michael Knop).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe authors develop a diagnostic testing approach for detecting SARS-CoV-2 in saliva using loop-mediated isothermal amplification (LAMP) and sodium hydroxide to adjust the pH of samples. They tested the utility of the approach using clinical saliva samples (both PCR negative and PCR positive samples) thus demonstrating high sensitivity and specificity of their test. As SARS-CoV-2 infections increase around the world, this approach promises to deliver public health benefit.\n\nKey findings:\n\n1. The authors used NaOH to adjust the pH of the saliva before RT-LAMP and found that 14.5 mM NaOH is sufficient to neutralize the saliva without compromising RT-LAMP detection.\n\n2. The method was validated on a cohort of human saliva samples (295 negatives, 168 positives) that were tested by RT-PCR.\n\nThe presented work provides a promising step towards rapid and inexpensive testing for SARS-CoV-2.\n\nEssential revisions:\n\n1. An important matter of concern is the sensitivity of the assay. The authors state that they investigated this using samples from university testing. This university testing was conducted using a direct RT-qPCR assay with a limit of detection (LOD) of approx. 5000 viral copies per ml of saliva sample. This reference (their ref 12) should be included also on page 25. This LOD is approx. 10x lower (3-4 CT steps) than RT-qPCR based on isolated RNA and using commercial state of the art RT-qPCR kits. The best commercial RT-qPCR kits, which employ novel primer designs and semi-nested PCR strategies that can detect a single RNA molecule in the reaction with >95% sensitivity, are roughly 50x (5-6 CT steps) more sensitive than the direct RT-qPCR assay used in this study. The authors explained that they used from this student cohort \"295 negative samples, and 168 positive samples with viral loads at or above our limit of detection (200 virions/\u03bcL)\". For this testing, they used 1 \u03bcl of saliva volume which corresponds to a sensitivity of 200'000 genomes per ml of saliva. From this, several questions arise: The 168 positive samples tested: from how many different people do they origin? Are there also longitudinal sample series included? What fraction of the RT-qPCR positive samples of the university testing contained a lower viral load than the detection limit estimate from Figure S4, and hence were not considered for the analysis? Why was the analysis limited to this high-load sample range? If they had included also the remaining positive samples, they could have better calculated the sensitivity as a function of the CT of diagnostic RT-qPCR. Samples with low viral loads must be included in the revision. From this, the authors can calculate the fraction of students they would have missed when using RT-LAMP instead of RT-qPCR, and, when combined with contact tracing data (which they seem to have available), they could have tried to estimate the impact of their RT-LAMP procedure vs the used RT-qPCR strategy. What would be the LOD if the results of both primer sets were combined?\n\n2. No data are shown on the prevalence of acidic saliva in the tested cohort. It is not known how many samples were acidic, and it could also be that all tested negative samples had a neutral pH. Further, no data is available on whether the addition of NaOH to already neutral saliva will decrease the detection limit. The study could be improved by providing RT-LAMP data performed with and without NaOH on the same set of samples. This could be done by using RT-LAMP with and without NaOH on the same set of samples and show photographs of the test tubes before and after heat incubation. Besides, this would also allow direct determination of the false positive number in cases where NaOH is not used. Related to this, please provide data that would support your statement on page 4, \"In fact, we find about 10% of human saliva samples are naturally acidic enough to immediately trigger phenol red-containing reactions to change to yellow without any target amplification required.\" The number of naturally acidic saliva samples in the cohort is not reported.\n\n3. Figure 1. Samples with 0 mM NaOH are missing to compare the colour change. An addition of 14.5 mM of NaOH to all samples might decrease the detection limit of RT-LAMP. In particularly SARS-CoV-2 positive saliva samples that are naturally more alkaline than others and have a low viral load might be missed because of the addition of NaOH. Figure 3 shows that the detection limit of RT-LAMP is around 200 virions/\u00b5l (Ct ~ 30) in the presence of 14.5 mM NaOH. The detection limit, specificity, and sensitivity for naturally neutral saliva with and without the addition of 14.5mM NaOH should be determined and directly compared, using both high and low viral load samples.\n\n4. Page 18: Please provide data that the stabilization solution helps to preserve saliva samples for at least four days. Supplementary Figure S2 shows that saliva samples were spiked with heat-inactivated SARS-CoV-2 virions and mixed 1:1 with the stabilization solution but no dataset is provided without the stabilizing solution.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Saliva TwoStep for rapid detection of asymptomatic SARS-CoV-2 carriers\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Bavesh Kana as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Petr Chlanda (Reviewer #2); Viet Loan Dao Thi (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Reviewers concur that your manuscript is improved but there are still some outstanding issues that require further clarity. These are detailed below.\n\nEssential Revisions:\n\n1. For comparison of RT-LAMP and RT-PCR, you included in the first manuscript only samples with a CT<30. The revised selection of samples with a CT>30 are distributed in a non-natural bimodal fashion. This indicates that the samples are not from a coherent dataset, either from different datasets with different PCR methods, or there must have been some sort of pre-selection of samples. If you have preselected or filtered these specimens, they are not suitable to calculate sensitivity. Please explain the source of the samples/data and that the analysis in 4B and 4C is omitted.\n\n2. Where it states, \"\u2026the usage of dUTP and uracil-DNA-glycosylase-containing RT-LAMP reaction mix can be considered. Through data not shown, we determined that the addition of this alternative master mix does not affect the reported test limit of detection.\" This data should be shown or the statement about the mix should be omitted.\n\n3. Please explain who you would interpret positive RT-LAMP, negative RT-qPCR\n\n(as a comparator)? If the sensitivity of your assay is much lower than a direct RT-PCR assay and no other advantage is provided, why should one use RT-LAMP for testing at all?\n\nReviewer #2:\n\nQing Yang et al. have addressed all my comments and provided a substantial amount of new data to show that stabilizing solution is improving RT-LAMP performance on saliva samples without an RNA purification step. They show that the addition of NaOH is not decreasing the sensitivity of the assay. The authors provide improved figures and nicely show that the addition of stabilizing solution shortly after collection increases the stability of saliva samples for at least 4 days. They also directly assayed the prevalence of naturally acidic saliva and show that it is about 7%, which clearly justifies the importance of their work. I congratulate the authors on their work and recommend it for publication without additional revisions.\n\nReviewer #3:\n\nThe present manuscript is an improved version by Yang et al., who describe the development of a rapid molecular test for SARS-CoV-2, based on RT-LAMP detection in saliva samples.\n\nFor comparison of RT-LAMP and RT-PCR, the authors included in the first manuscript only samples with a CT<30. Now they include also samples with a CT>30, but the values are distributed in a non-natural bimodal fashion (Figure 4A9#). This indicates that the samples are not from a coherent dataset, either from different datasets with different PCR methods, or there must have been some sort of pre-selection of samples. This simply means that the data is not suitable to calculate sensitivity at all! \u2013 We suggest that the authors explain better the source of the samples/data and that the analysis in 4B and 4C is omitted.\n\nThe following point should be still addressed: \"\u2026the usage of dUTP and uracil-DNA-glycosylase-containing RT-LAMP reaction mix can be considered. Through data not shown, we determined that the addition of this alternative master mix does not affect the reported test limit of detection.\" This data should be shown or the statement about the mix should be omitted.\n\nPoint 8. The authors seem to confirm the idea that the used Lyra PCR assay is of limited sensitivity. Since PCR is still considered to be the gold standard, we would like to reiterate our question: If the authors would use the RT-LAMP assay for diagnostics (and not only to re-assay samples that have already been assayed): how would they deal with such a situation \u2013 positive RT-LAMP, negative RT-qPCR? What diagnostic result is given out to the participant? This is an important question that has legal implications.\n\nPoint 9: If the sensitivity of their assay is much lower than a direct RT-PCR assay and no other advantage is provided, why should one use RT-LAMP for testing at all?\n\nOther than these points, the authors have addressed all other questions.\n\nFew comments that could, but not necessarily, be addressed:\n\nLine 190: This suggests the observed detection limit represents the upper performance limit of colorimetric RT-LAMP, and the saliva and stabilization solution have little to no negative impact to the test performance\"\n\nOther studies have shown that the detection limit of the colorimetric RT-LAMP assay is 50-100 genome copies/ul. Hence, I would re-phrase this sentence.\n\nLine 220: \"Because positive results in our university screening regimen result in university affiliates being directed to their healthcare provider for confirmatory testing, with a few exceptions every positive sample is from a unique individual.\"\n\nDoes that mean that the positively tested candidates were removed from the participant's pool, which is why we can assume that each sample corresponds to one individual? This could be rephrased to make it more clear.\n",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bb37af54-01e1-4e92-98ab-997f8b92c338",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C1",
+      "claim": "The Saliva TwoStep test is based on reverse transcription loop-mediated isothermal amplification (RT-LAMP).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a simple molecular test for SARS-CoV-2 in saliva based on reverse transcription loop-mediated isothermal amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the test is based on RT-LAMP technology.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "9e877b7e-ed78-4727-9c0c-d4d1b7b40a8b",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C2",
+      "claim": "The Saliva TwoStep test has two steps: (1) heat saliva with a stabilization solution and (2) detect virus by incubating with a primer/enzyme mix.",
+      "claim_type": "EXPLICIT",
+      "source": "The test has two steps: (1) heat saliva with a stabilization solution and (2) detect virus by incubating with a primer/enzyme mix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the two-step procedure of the test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "4a43d8a4-4044-4dcd-b5dd-445867cbe15a",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C3",
+      "claim": "Saliva samples containing the SARS-CoV-2 genome turn bright yellow after incubation in the Saliva TwoStep test.",
+      "claim_type": "EXPLICIT",
+      "source": "After incubation, saliva samples containing the SARS-CoV-2 genome turn bright yellow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that positive samples turn bright yellow, which is the colorimetric readout of the test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "8aef882d-4d3f-44ec-b415-3458eaea8bf2",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C4",
+      "claim": "The Saliva TwoStep test is pH dependent and can react falsely to some naturally acidic saliva samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this test is pH dependent, it can react falsely to some naturally acidic saliva samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly acknowledges the pH-dependent nature of the test and potential for false positives from acidic saliva.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "b7d5af76-10fb-43fd-bf1d-1a36600c3ca0",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C5",
+      "claim": "The optimized saliva stabilization protocols rendered 295 healthy saliva samples compatible with the test, producing zero false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "We report unique saliva stabilization protocols that rendered 295 healthy saliva samples compatible with the test, producing zero false positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports the specificity results from testing 295 negative samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "92cc289f-f250-47f7-8f46-43ede44c367f",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C6",
+      "claim": "The Saliva TwoStep test was evaluated on 278 saliva samples from individuals who were infected with SARS-CoV-2 but had no symptoms at the time of saliva collection.",
+      "claim_type": "EXPLICIT",
+      "source": "We also evaluated the test on 278 saliva samples from individuals who were infected with SARS-CoV-2 but had no symptoms at the time of saliva collection, and from 54 matched pairs of saliva and anterior nasal samples from infected individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the sample cohort used for test evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "13b6a7e1-7487-4468-b069-c369405d3ec8",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C7",
+      "claim": "The Saliva TwoStep test identified infections with 94% sensitivity in individuals with sub-clinical (asymptomatic or pre-symptomatic) infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The Saliva TwoStep test described herein identified infections with 94% sensitivity and >99% specificity in individuals with sub-clinical (asymptomatic or pre-symptomatic) infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports the sensitivity of the test in asymptomatic/pre-symptomatic individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "4f055729-d587-409a-b0a3-65121d8dbc37",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C8",
+      "claim": "The Saliva TwoStep test identified infections with >99% specificity in individuals with sub-clinical (asymptomatic or pre-symptomatic) infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The Saliva TwoStep test described herein identified infections with 94% sensitivity and >99% specificity in individuals with sub-clinical (asymptomatic or pre-symptomatic) infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports the specificity of the test in asymptomatic/pre-symptomatic individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "a473d9be-6d88-4647-8b7c-b2b3ad36f2de",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C9",
+      "claim": "Using elevated body temperature as a sign of SARS-CoV-2 infection lacks specificity for this particular pathogen and sensitivity in identifying asymptomatic carriers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using elevated body temperature as a sign of SARS-CoV-2 infection lacks specificity for this particular pathogen and sensitivity in identifying asymptomatic carriers (Wright and Mackowiak, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference to support the claim about temperature screening limitations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "d47d8580-9054-40e0-9c64-dfdd57c657f1",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C10",
+      "claim": "LAMP (loop-mediated isothermal amplification) has existed for more than 20 years.",
+      "claim_type": "EXPLICIT",
+      "source": "LAMP (loop-mediated isothermal amplification) is a simple nucleic acid diagnostic concept that has existed for more than 20 years (Notomi, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites the original LAMP publication from 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "222bd05c-3831-4624-96ee-b158ce0b2636",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C11",
+      "claim": "LAMP has been used in diverse and even remote settings to test samples for the presence of viral nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been used in diverse and even remote settings to test samples for the presence of viral nucleic acids (Brewster et al., 2018; Chotiwan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites references supporting the use of LAMP in various settings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "0d6f6678-8fa0-4235-a1ca-b1181186d445",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C12",
+      "claim": "LAMP utilizes loop forming primers and strand-displacement polymerases to achieve isothermal amplification of a target nucleic acid template.",
+      "claim_type": "EXPLICIT",
+      "source": "LAMP utilizes loop forming primers and strand-displacement polymerases to achieve isothermal amplification of a target nucleic acid template, and therefore does not require a thermal cycler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes the basic mechanism of LAMP technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "eaf3c751-5bcb-49c6-b431-f8000c48db65",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C13",
+      "claim": "LAMP does not require a thermal cycler.",
+      "claim_type": "EXPLICIT",
+      "source": "LAMP utilizes loop forming primers and strand-displacement polymerases to achieve isothermal amplification of a target nucleic acid template, and therefore does not require a thermal cycler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states that LAMP operates isothermally without a thermal cycler.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "c1281b80-7bcb-4377-8455-b7ea6acfc303",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C14",
+      "claim": "LAMP assays can be performed anywhere because they simply require pipettors and a heating source as equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "LAMP assays can be performed anywhere because they simply require pipettors and a heating source (e.g. water baths or heat blocks) as equipment (Brewster et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference supporting the minimal equipment requirements for LAMP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "840a8afd-54d9-42b4-ad57-efa3197738c0",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C15",
+      "claim": "LAMP assays offer robust amplification of target material and can produce on the order of 10^9 copies of the target in an hour-long reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "LAMP assays offer robust amplification of target material and can produce on the order of 109 copies of the target in an hour-long reaction (Notomi, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites the original LAMP publication to support the amplification efficiency claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "0d6feb69-fafc-4889-947e-dd8ce89ed245",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C16",
+      "claim": "Successful amplification in LAMP reactions can be directly visualized by simply looking at the reaction tube, where the reaction mix changes color upon successful target amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful amplification in LAMP reactions can be directly visualized by simply looking at the reaction tube, where the reaction mix changes color upon successful target amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes the visual readout capability of LAMP assays.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "d7ef70cf-ad6b-49ca-8998-be828659b6f4",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C17",
+      "claim": "Colorimetric changes in LAMP can be triggered by pH indicator dyes or metal ion indicators, which change color when successful target amplification changes the chemistry within the reaction tube.",
+      "claim_type": "EXPLICIT",
+      "source": "These colorimetric changes can be triggered by pH indicator dyes or metal ion indicators, which change color when successful target amplification changes the chemistry within the reaction tube (Kellner et al., 2020; Notomi, 2000; Tanner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites references supporting the colorimetric detection mechanisms in LAMP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "92b2bc22-6b3e-4bbe-9637-1b5ff70dca33",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C18",
+      "claim": "Saliva has high diagnostic value for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that saliva has high diagnostic value for SARS-CoV-2 (Butler-Laporte et al., 2021; Silva et al., 2021; Vogels et al., 2020; Wyllie et al., 2020; Yokota et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple references supporting the diagnostic value of saliva for SARS-CoV-2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "b56547f4-fce3-473f-a4b2-d37634250165",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C19",
+      "claim": "Compared to nasopharyngeal swabs, saliva samples harbor similar levels of viral load while being easier to obtain via self-collection.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to nasopharyngeal swabs, saliva samples harbor similar levels of viral load while being easier to obtain via self-collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction makes a comparative claim about saliva versus nasopharyngeal swabs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "75fb970b-6d9e-4bea-94fa-4e7358bf533c",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C20",
+      "claim": "Several groups have developed RT-LAMP tests to detect SARS-CoV-2 in saliva samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Several groups have developed RT-LAMP tests to detect SARS-CoV-2 in saliva samples (Bhadra et al., 2020; Flynn et al., 2020; Lalli et al., 2020; Lamb et al., 2020; Nagura-Ikeda et al., 2020; Rabe and Cepko, 2020; Taki et al., 2021; Yokota et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple references of prior RT-LAMP tests for SARS-CoV-2 in saliva.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "c0794d50-b59b-40c5-bb44-d37c74bc3abc",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C21",
+      "claim": "Due to pH variability between saliva samples, RT-LAMP often has a high rate of false positives when used with the common pH-dependent dye phenol red.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to pH variability between saliva samples, RT-LAMP often has a high rate of false positives when used with the common pH-dependent dye phenol red (Bhadra et al., 2020; Hardinge and Murray, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites references supporting the false positive problem with phenol red in RT-LAMP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "626533ed-ff8e-461f-9c03-b86009caf890",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C22",
+      "claim": "In RT-LAMP reactions containing phenol red, reactions start as pink/red but turn strongly yellow at pH 6.8 and below.",
+      "claim_type": "EXPLICIT",
+      "source": "In RT-LAMP reactions containing phenol red, reactions start as pink/red but turn strongly yellow at pH 6.8 and below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes the pH-dependent color change of phenol red.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3ea3c6ab-c4d8-444e-b3ad-eb8a4a88adbd",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C23",
+      "claim": "When RT-LAMP amplifies a target, hydrogen ions are released during dNTP incorporation, causing a drop in pH within the tube to pH 6.0\u20136.5, triggering the color change to yellow.",
+      "claim_type": "EXPLICIT",
+      "source": "When RT-LAMP amplifies a target, hydrogen ions are released during dNTP incorporation. This causes a drop in pH within the tube to pH 6.0\u20136.5, triggering the color change to yellow (Tanner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference explaining the mechanism of pH change during LAMP amplification.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "81a214a7-e305-4511-b828-420c83c5cb5f",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C24",
+      "claim": "Human saliva naturally varies in pH between 6.8 and 7.4.",
+      "claim_type": "EXPLICIT",
+      "source": "Human saliva naturally varies in pH between 6.8 and 7.4 (Cameron et al., 2015), posing a significant problem in this pH-dependent assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a reference for the natural pH range of human saliva.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "e47c62f7-278a-4a18-805e-7ea5f64699a4",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C25",
+      "claim": "About 7% of human saliva samples are naturally acidic enough to immediately trigger phenol red-containing reactions to change to yellow without any target amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we find about 7% of human saliva samples are naturally acidic enough to immediately trigger phenol red-containing reactions to change to yellow without any target amplification (Figure 1A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The introduction references Figure 1A which shows experimental data on the prevalence of acidic saliva samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "e9e69bc8-3316-4793-831f-7024ae48646a",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C26",
+      "claim": "With raw saliva, 7 of 96 tubes turned yellow before incubation, representing false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "With raw saliva, 7 of 96 tubes turned yellow at this step (highlighted in red boxes). These are false positives because no amplification reaction has occurred.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1A caption describes the false positive results observed with raw saliva.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "b35f29a3-a012-4b21-9ba2-6c1a32f0c294",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C27",
+      "claim": "None of the 96 saliva samples mixed with saliva stabilization solution turned the reaction tube prematurely yellow.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these 96 saliva samples mixed with saliva stabilization solution turned the reaction tube prematurely yellow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1A caption reports zero false positives when using the stabilization solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "6ea5da1c-a1ec-4339-be1c-d8a9d3f64505",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C28",
+      "claim": "Human saliva containing 14.5 mM NaOH is optimal to inhibit false positives caused by saliva acidity without impeding the intended color change during amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that human saliva containing 14.5 mM NaOH is optimal to inhibit false positives caused by saliva acidity (N = 96; Figure 1A, right) without impeding the intended color change during amplification (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the optimization of NaOH concentration with reference to Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3f246e7f-074c-45eb-8b86-84aee38c84d9",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C29",
+      "claim": "The optimized saliva stabilization solution includes a chelating agent (1 mM EDTA final concentration) and Proteinase K to inhibit RNases.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we designed our saliva stabilization solution to also include a chelating agent (1 mM ethylenediaminetetraacetic acid [EDTA] final concentration) and Proteinase K to inhibit RNases, both of which help preserve virion RNA and therefore to increase sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the components of the stabilization solution and their purposes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "1c0366b0-e0b6-4679-95cf-2cd6d0acc9b5",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C30",
+      "claim": "Proteinase K will inhibit the RT-LAMP reaction if it does not go through a heat inactivation step prior to that reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "(Note that Proteinase K will inhibit the RT-LAMP reaction if it does not go through a heat inactivation step prior to that reaction.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section notes the requirement for heat inactivation of Proteinase K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "edb36035-e6d1-4e46-bf75-8352101e9b2b",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C31",
+      "claim": "The saliva stabilization solution contains TCEP, which aids in RNA stabilization by breaking disulfide bonds present in RNases and helps to reduce saliva viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the saliva stabilization solution contains TCEP, which aids in RNA stabilization by breaking disulfide bonds present in RNases and helps to reduce saliva viscosity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the function of TCEP in the stabilization solution.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3dac77b9-40a5-4690-a14b-fc0756f7d0e1",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C32",
+      "claim": "The optimized saliva stabilization solution is 2\u00d7 solution: 5 mM TCEP, 2 mM EDTA, 29 mM NaOH, 100 \u03bcg/mL Proteinase K, diluted in DEPC-treated water.",
+      "claim_type": "EXPLICIT",
+      "source": "Our optimized saliva stabilization solution (2\u00d7 solution: 5 mM TCEP, 2 mM EDTA, 29 mM NaOH, 100 \u03bcg/mL Proteinase K, diluted in DEPC-treated water) is key to this test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides the exact composition of the stabilization solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "0507807a-3590-4a94-b24b-c254aa5a91a6",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C33",
+      "claim": "Heating at 95\u00b0C for 10 min degrades viral RNA when it is not in the form of virions.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment shows that heating at 95\u00b0C for 10 min degrades viral RNA when it is not in the form of virions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1A caption describes experimental results showing RNA degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "00c4f233-6fe3-462d-9468-03f88f095138",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C34",
+      "claim": "Heating saliva at 95\u00b0C for 10 min does not degrade viral RNA when it is in the form of virions.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment shows that heating saliva at 95\u00b0C for 10 min does not degrades viral RNA when it is in the form of virions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B caption describes experimental results showing RNA preservation in virions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "bc401f52-9269-4f5e-9d50-a5148d0415d3",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C35",
+      "claim": "The 'AS1E' primer set, developed by Rabe et al. and targeting the ORF1ab region of the SARS-CoV-2 genome, performs very well.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the 'AS1E' set, developed by Rabe et al. and targeting the ORF1ab region of the SARS-CoV-2 genome, performs very well (Rabe and Cepko, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites the source of the AS1E primer set and reports its performance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "5862f0b4-3a5a-4577-b698-144562e6f377",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C36",
+      "claim": "Two custom primer sets, 'ORF1e' targeting the virus ORF1ab gene and 'CU-N2' targeting the virus N gene, exhibited similar sensitivity and amplification efficiency as the AS1E set.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of our custom sets, 'ORF1e' targeting the virus ORF1ab gene and 'CU-N2' targeting the virus N gene, exhibited similar sensitivity and amplification efficiency as the AS1E set, as determined using real-time fluorescence monitoring of RT-LAMP products (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the performance of custom primer sets with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "586d689b-c62c-4906-9b10-f4b9c29b3dc5",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C37",
+      "claim": "Incubation for 3 min at 95\u00b0C is sufficient to inactivate SARS-CoV-2 virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest that incubation for 3 min at 95\u00b0C is sufficient to inactivate SARS-CoV-2 virions (Bat\u00e9jat et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites a reference supporting the heat inactivation protocol.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "1cf7bcef-d45d-4a36-8546-83f3aa1bc557",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C38",
+      "claim": "A 10 min incubation of saliva samples at 95\u00b0C was found to be optimal for liberating viral RNA from virions.",
+      "claim_type": "EXPLICIT",
+      "source": "A 10 min incubation of saliva samples at 95\u00b0C was found to be optimal (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section references a figure showing optimization of heating time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "40c28188-f538-484f-9af8-9008e20302f0",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C39",
+      "claim": "Saliva samples containing purified virions and diluted with 2\u00d7 saliva stabilization solution stored at 4\u00b0C for up to 96 hr showed no significant changes in sample stability and test detection limit.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant changes in sample stability and the test detection limit over this time course, suggesting that saliva samples stored in saliva stabilization solution at 4\u00b0C are stable for at least 4 days.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes stability testing results with reference to Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "ce91194e-da8b-4e31-87c0-12742b45a87d",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C40",
+      "claim": "The lowest concentration at which positive samples were reliably identified was 200 virions/\u03bcL in saliva.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest concentration at which positive samples were reliably identified was 200 virions/\u03bcL in saliva (red box, summary table in Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the limit of detection with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "b037b0c2-fb7c-4586-8fd5-a6b794ed437b",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C41",
+      "claim": "The limit of detection refers to the virus concentration that can be identified >95% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the limit of detection refers to the virus concentration that can be identified >95% of the time, and the assay does often detect the virus at even lower concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section defines the limit of detection criterion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "f502fe60-4ff4-4766-87b3-444780a4bead",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C42",
+      "claim": "The ORF1e primer set was not consistent in its performance at 200 virions/\u03bcL.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORF1e primer set was not consistent in its performance at 200 virions/\u03bcL. Therefore, we decided to eliminate the ORF1e primer set from our testing panel from this point forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the decision to eliminate ORF1e based on performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "89d2045c-69fe-4a41-a384-7c3ae276128b",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C43",
+      "claim": "When synthetic SARS-CoV-2 RNA is directly added to the RT-LAMP reaction mix (in the absence of saliva and the stabilization solution), the detection limit achieved was 200 genome copies/\u03bcL.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, we found that when synthetic SARS-CoV-2 RNA is directly added to the RT-LAMP reaction mix (in the absence of saliva and the stabilization solution), we were unable to achieve a better detection limit than 200 genome copies/\u03bcL (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes control experiments with reference to Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "75d32b8e-0a68-47de-9bb7-a6317e5f0358",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C44",
+      "claim": "The observed detection limit represents the upper performance limit of the presented RT-LAMP assay, and the saliva and stabilization solution have little to no negative impact to the test performance.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the observed detection limit represents the upper performance limit of the presented RT-LAMP assay, and that the saliva and stabilization solution have little to no negative impact to the test performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section draws an inference from the control experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "2aee419e-697f-4e0e-94af-e3116b3d9266",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C45",
+      "claim": "In a blinded study with 60 samples, only one positive sample scored as inconclusive, all negative samples were scored correctly (100% specificity), and sensitivity was 97%.",
+      "claim_type": "EXPLICIT",
+      "source": "After running the RT-LAMP test on 60 such samples, only one positive sample scored as inconclusive. In that sample the SARS-CoV-2 primer set CU-N2 failed, while the other primer set detecting SARS-CoV-2 correctly identified the sample (Figure 3\u2014figure supplement 2). All negative samples were scored correctly (100% specificity, binomial 95% confidence interval [88%, 100%]). Conservatively counting the inconclusive test as a false negative lead to a sensitivity estimate of 97% (binomial 95% confidence interval [93%, 100%]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the blinded study results with reference to Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "6750af9d-c47b-4245-b5d2-48d8ce871af6",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C46",
+      "claim": "SARS-CoV-2 screening was initiated on the University of Colorado Boulder campus starting in the summer/fall of 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 screening was initiated on the University of Colorado Boulder campus starting in the summer/fall of 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the university screening program.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "1ef46ab4-03db-4d5c-81c7-fe680afd3e68",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C47",
+      "claim": "Saliva samples were taken weekly from residents of dormitories and at several testing sites throughout the campus.",
+      "claim_type": "EXPLICIT",
+      "source": "Saliva samples were taken weekly from residents of dormitories and at several testing sites throughout the campus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the sampling protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3a9b3bc1-25ce-44fa-9763-5d0bce825766",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C48",
+      "claim": "Participants were asked to refrain from eating or drinking 30 min prior to sample collection, and to not participate if they were experiencing any symptoms consistent with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were asked to refrain from eating or drinking 30 min prior to sample collection, and to not participate if they were experiencing any symptoms consistent with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the sample collection instructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "74b34b05-4a85-4b8c-ac65-4345e696c1d1",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C49",
+      "claim": "Individuals testing positive for SARS-CoV-2 were either pre-symptomatic at the time of saliva collection, or they never developed symptoms throughout the course of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, individuals testing positive for SARS-CoV-2 were either pre-symptomatic at the time of saliva collection, or they never developed symptoms throughout the course of infection (we do not have the necessary follow-up data to delineate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the symptomatic status of positive individuals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "9ca648be-1aad-4b9a-85d2-5d4ec6c98bbd",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C50",
+      "claim": "All saliva samples were analyzed by a quantitative RT-PCR method performed directly on saliva, which was mixed 1:1 with 2\u00d7 TBE buffer containing 1% Tween-20.",
+      "claim_type": "EXPLICIT",
+      "source": "All saliva samples were analyzed by a quantitative RT-PCR method performed directly on saliva, which was mixed 1:1 with 2\u00d7 TBE buffer containing 1% Tween-20 (saliva sample prep as in Ranoa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the quantitative RT-PCR method used for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "1f6a26d4-95cf-4144-aae4-477a6ea03b8d",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C51",
+      "claim": "An in-house multiplex quantitative RT-PCR assay was used to determine the presence of the SARS-CoV-2 genome in saliva, with primers targeting the E and N gene regions of the SARS-2-CoV genome.",
+      "claim_type": "EXPLICIT",
+      "source": "An in-house multiplex quantitative RT-PCR assay was used to determine the presence of the SARS-CoV-2 genome in saliva, with primers targeting the E and N gene regions of the SARS-2-CoV genome (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the quantitative RT-PCR assay used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "a2e9607f-2536-471d-806f-40035b45baf7",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C52",
+      "claim": "All positive saliva samples with viral load above the quantitative RT-PCR detection limit (N = 278), along with 295 negative saliva samples, were re-evaluated with RT-LAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "All positive saliva samples with viral load above the quantitative RT-PCR detection limit (collected between September 16\u201325, 2020; N = 278), along with 295 negative saliva samples, were next re-evaluated with RT-LAMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the sample set used for RT-LAMP validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "86830abf-3693-44ea-b6b7-ee30eb950acc",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C53",
+      "claim": "For all 573 samples, RT-LAMP with primers recognizing a human RNA positive control (RNaseP) correctly turned positive (yellow).",
+      "claim_type": "EXPLICIT",
+      "source": "For all 573 samples, RT-LAMP with primers recognizing a human RNA positive control (RNaseP) correctly turned positive (yellow).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the positive control results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "2bcf1b0f-e290-4867-9074-f1c43d770c78",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C54",
+      "claim": "For all 295 SARS-CoV-2-negative samples, the AS1E and CU-N2 primer sets both returned a result of negative, consistent with the quantitative RT-PCR results.",
+      "claim_type": "EXPLICIT",
+      "source": "For all 295 SARS-CoV-2-negative samples, the AS1E and CU-N2 primer sets both returned a result of negative, consistent with the quantitative RT-PCR results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the specificity results on negative samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "ccde7229-f5a4-4ff2-8c23-85d1898f12ae",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C55",
+      "claim": "There were zero false positives, and the test had a specificity of 100% in the sample set of 295 negative samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, there were zero false positives, and the test had a specificity of 100% in this extensive sample set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the specificity of the test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "e5b51a29-57af-466a-965e-7c8aeb9013e7",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C56",
+      "claim": "Among all 278 positive samples, 208 (74.8%; AS1E primers) and 182 (65.5%; CU-N2 primers) returned positive RT-LAMP test results.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all positive samples, 208 (74.8%; AS1E primers) and 182 (65.5%; CU-N2 primers) returned positive RT-LAMP test results (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the sensitivity results with reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "c1a53766-c49c-464a-a6fc-87e1b7ed6941",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C57",
+      "claim": "A decline in test sensitivity was observed below the experimentally determined detection limit of 200 virions/\u03bcL.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both primer sets were still able to detect SARS-CoV-2 RNA below the experimentally determined detection limit (200 virions/\u03bcL), we observed a decline in the test sensitivity below such limit (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the relationship between viral load and sensitivity with reference to Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "2773dea9-37ee-4883-87fe-169403238712",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C58",
+      "claim": "The observed limit of detection of the AS1E primer set was determined from human sample data to be 266 virions/\u00b5L.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed limit of detection of the AS1E primer set was determined from this data to be 266 virions/\u00b5L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the limit of detection determined from human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3781f0fe-4a4f-47e3-8f7e-ed4e600a582d",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C59",
+      "claim": "Of the 168 positive samples with viral loads greater than RT-LAMP limit of detection, 158 (94%; AS1E primers) or 142 (85%; CU-N2 primers) returned positive RT-LAMP test results.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 168 positive samples with viral loads greater than RT-LAMP limit of detection, 158 (94%; AS1E primers) or 142 (85%; CU-N2 primers) returned positive RT-LAMP test results (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the sensitivity at viral loads above the limit of detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "13ce2456-7544-4540-8325-02fedfbeef65",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C60",
+      "claim": "The differences in the observed limit of detection between the two SARS-CoV-2 primer sets could reflect the differences in the primer efficiencies, as well as the dynamics in relative viral transcript abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in the observed limit of detection between the two SARS-CoV-2 primer sets could reflect the differences in the primer efficiencies, as well as the dynamics in relative viral transcript abundance (Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides an interpretation of the primer set performance differences with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "9190792c-a4f4-4518-b8e3-bbb664aa5f3d",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C61",
+      "claim": "Of the 278 SARS-CoV-2-positive saliva samples, 54 also had matched nasal samples collected no more than 2 days later.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 278 SARS-CoV-2-positive saliva samples analyzed above, 54 also had matched nasal samples collected no more than 2 days later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the matched sample set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "cc6a61a0-ee0a-405f-99a0-c0fa2c7cc105",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C62",
+      "claim": "Compared to the quantitative RT-PCR on saliva results, the RT-LAMP produced three false negatives in the matched sample set, whereas the Lyra nasal swab test produced eight.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the quantitative RT-PCR on saliva results, the RT-LAMP produced three false negatives in this sample set, whereas the Lyra nasal swab test produced eight (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section compares the performance of RT-LAMP to the Lyra nasal swab test with reference to Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "893bc9d2-ebc3-404d-bca6-48bf74495763",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C63",
+      "claim": "The Saliva TwoStep test has an end-to-end processing and analysis time of approximately 45 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The two steps have an end-to-end processing and analysis time of approximately 45 min (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the total time for the test with reference to Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "ba67c97c-e19e-4ca7-8d5a-9fee3566ea64",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C64",
+      "claim": "The use of saliva eliminates invasive nasal swab-based sampling, which requires special supplies and causes discomfort.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) The use of saliva eliminates invasive nasal swab-based sampling, which requires special supplies and causes discomfort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion lists advantages of the saliva-based approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "951ce700-a3b7-4a3d-863e-e0e7f54c08ae",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C65",
+      "claim": "The optimized saliva stabilization solution allows for analysis of a broad range of naturally acidic saliva samples while maintaining compatibility with a colorimetric RT-LAMP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) We optimized a saliva stabilization solution that allows for analysis of a broad range of naturally acidic saliva samples while maintaining compatibility with a colorimetric RT-LAMP assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the advantages of the stabilization solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "ff0859d4-8fa9-4179-aadb-1f999be34651",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C66",
+      "claim": "The saliva stabilization solution helps preserve saliva samples for at least 4 days before processing and lowers saliva viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "The solution also helps preserve saliva samples for at least 4 days before processing and lowers saliva viscosity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the benefits of the stabilization solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "e8866d9f-13da-428d-9447-e79bb4139ca5",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C67",
+      "claim": "The simple heating step increases biosafety and avoids formal RNA extraction procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) We determined the optimal sample heating condition that liberates the host and viral RNA with minimal degradation. The simple heating step increases biosafety and avoids formal RNA extraction procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the advantages of the heating step.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "7ae10309-0740-4b94-bb78-38a4df0662e5",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C68",
+      "claim": "The AS1E and CU-N2 primers are expected to work on most or all viral variants currently circulating.",
+      "claim_type": "EXPLICIT",
+      "source": "These primers are expected to work on most or all viral variants currently circulating (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Discussion makes a claim about primer compatibility with variants with reference to Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3f6435d7-3ab3-466f-900a-a3eff169b2cf",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C69",
+      "claim": "By strictly following the application notes, false positive results were completely avoided during the evaluation of a large cohort of human saliva samples, achieving 100% specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "By strictly following these application notes, we completely avoided false positive results during the evaluation of a large cohort of human saliva samples, achieving 100% specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the specificity results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "4e9935c0-c018-4d00-a57a-9123c070ef78",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C70",
+      "claim": "Using SARS-CoV-2-positive human saliva samples, the RT-LAMP test can consistently identify infected individuals with 94% sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also evaluated the RT-LAMP test performance based on the experimentally determined limit of detection. Using SARS-CoV-2-positive human saliva samples, we confirmed that the RT-LAMP test can consistently identify infected individuals with 94% sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the sensitivity results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "08f90b2d-60e7-44bb-9503-05c05220fd57",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C71",
+      "claim": "The addition of 40 mM of guanidine chloride in the RT-LAMP reaction mix did not enhance RT-LAMP amplification efficiency in the authors' experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work suggests that the addition of 40 mM of guanidine chloride in the RT-LAMP reaction mix could increase RT-LAMP amplification efficiency (Zhang et al., 2020). However, we did not observe similar enhancement when included in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion reports negative results from testing guanidine chloride.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "ea986f91-2bf8-4af0-b231-dd9b948efa05",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C72",
+      "claim": "Saliva TwoStep requires less sample processing, reaction incubation time, and laboratory overhead as compared to quantitative RT-PCR methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Saliva TwoStep requires less sample processing, reaction incubation time, and laboratory overhead as compared to quantitative RT-PCR methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion compares the resource requirements of Saliva TwoStep to quantitative RT-PCR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "e8c32180-7ba9-4c34-b74e-84f1587258a6",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C73",
+      "claim": "The Saliva TwoStep test can be used as a SARS-CoV-2 screening tool to reliably identify infectious individuals with minimal laboratory setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, we conclude that the Saliva TwoStep test described herein can be used as a SARS-CoV-2 screening tool to reliably identify infectious individuals (Yang et al., 2021) with minimal laboratory setup, potentially serving as a tool for effective SARS-CoV-2 surveillance at the community level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion concludes with the potential application of the test.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "501254d2-fff7-436e-a888-69db2e2c0762",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C74",
+      "claim": "With minimal set-up, the Saliva TwoStep test could be performed in diverse settings such as factories, office buildings, or schools.",
+      "claim_type": "EXPLICIT",
+      "source": "With minimal set-up, this test could be performed in diverse settings such as factories, office buildings, or schools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion suggests potential deployment settings for the test.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "783e06e4-eedd-4736-a859-0c18fa3f4de4",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C75",
+      "claim": "Regions of the SARS-CoV-2 genome that are conserved among strains were identified using genome diversity data from NextStrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions of the SARS-CoV-2 genome that are conserved among strains were identified using genome diversity data from NextStrain (nextstrain.org/ncov/global).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section describes the primer design process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3475edb0-38d1-4220-a4d7-d553509526fb",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C76",
+      "claim": "All primers should be ordered with HPLC purification, which ensures the yield and avoids cross-contamination from other SARS-CoV-2-related synthesis projects.",
+      "claim_type": "EXPLICIT",
+      "source": "All primers should be ordered with HPLC purification, which ensures the yield and avoids cross-contamination from other SARS-CoV-2-related synthesis projects being run on the same equipment at the oligo synthesis facilities (which can lead to false positives).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section provides recommendations for primer ordering with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "c90e1c32-f033-454a-b5ad-16cccc4e61c3",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "claim_id": "C77",
+      "claim": "The University of Colorado Boulder SARS-CoV-2 screening test was loosely based on a published quantitative RT-PCR performed directly on saliva, which has a limit of detection of 5 virions/\u03bcL.",
+      "claim_type": "EXPLICIT",
+      "source": "The University of Colorado Boulder SARS-CoV-2 screening test was loosely based on a published quantitative RT-PCR performed directly on saliva (Ranoa et al., 2020), which has a limit of detection of 5 virions/\u03bcL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section describes the university testing method with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ad54209b-4497-43de-aed8-992dfdb19c6e",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Saliva TwoStep test is based on RT-LAMP technology, which is an isothermal amplification method that does not require a thermal cycler and produces a colorimetric readout (pink to yellow) when SARS-CoV-2 is detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C12-C17 collectively establish the technical foundation of the test. The RT-LAMP methodology is well-established (C10, C15 cite original publications), the isothermal nature and equipment requirements are clearly described (C12-C14), and the colorimetric readout mechanism is explained with appropriate citations (C16-C17, C22-C23). The two-step procedure is explicitly outlined (C2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "ef0c3fbb-0616-4673-b3d1-286a384490a5",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed an optimized saliva stabilization solution containing 14.5 mM NaOH (final concentration), EDTA, Proteinase K, and TCEP that eliminates false positives caused by naturally acidic saliva samples while maintaining compatibility with colorimetric RT-LAMP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 provide direct experimental evidence showing that 7% of raw saliva samples produce false positives (7/96 tubes), but zero false positives occur with the stabilization solution (0/96). The optimization of NaOH concentration is demonstrated in Figure 1B (C28), and the complete formulation is provided (C32). The mechanistic rationale for each component is explained (C29-C31). This addresses a critical limitation of pH-dependent RT-LAMP assays (C4, C21-C24).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "81ebdf7c-2ef7-4e9f-a2f3-782e930bb489",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Heating saliva at 95\u00b0C for 10 minutes effectively liberates viral RNA from virions without degrading it, while also inactivating the virus for biosafety.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 present experimental data (Figure 1\u2014figure supplement 1) showing that heating degrades free viral RNA but preserves RNA within virions. The 10-minute heating time was experimentally optimized (C38, Figure 1\u2014figure supplement 1C). The biosafety aspect is supported by citation (C37). This heating step serves dual purposes: RNA liberation and viral inactivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "5aa10191-3b71-4971-8d2d-bda2d98d6725",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Saliva samples stored in stabilization solution at 4\u00b0C remain stable for at least 4 days without significant changes in test detection limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 reports experimental data (Figure 1\u2014figure supplement 2) showing no significant changes in sample stability or detection limit over 96 hours at 4\u00b0C. The experimental design tested multiple time points (24, 48, 72, 96 hr) with virion-spiked samples. This is a practical consideration for test deployment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "77731b08-6fe8-4ceb-9bbc-db6739a942c0",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The AS1E primer set (targeting ORF1ab) and custom CU-N2 primer set (targeting N gene) performed well in RT-LAMP, while the ORF1e primer set was eliminated due to inconsistent performance at the limit of detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 report that AS1E and CU-N2 showed similar sensitivity and amplification efficiency based on real-time fluorescence monitoring (Figure 2A). Claim C42 documents the elimination of ORF1e based on inconsistent performance at 200 virions/\u03bcL. Claim C68 suggests these primers work on circulating variants based on sequence alignment (Figure 2\u2014figure supplement 1), though this is somewhat speculative as it's based on computational analysis rather than experimental validation with variant samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "50a909e5-5af9-49a7-9c7f-7352e39e9828",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The limit of detection of the Saliva TwoStep test is 200 virions/\u03bcL in saliva (defined as >95% detection rate), which represents the upper performance limit of the RT-LAMP assay itself rather than inhibition by saliva components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 reports the experimentally determined LOD with reference to Figure 3A. Claim C43 shows that synthetic RNA in the absence of saliva achieves the same 200 copies/\u03bcL LOD (Figure 3\u2014figure supplement 1), supporting the interpretation in C44 that saliva does not inhibit the assay. Claim C58 reports a slightly higher LOD (266 virions/\u03bcL) from human sample data, which is reasonably consistent. The definition of LOD as >95% detection is clearly stated (C41).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "f5e5b3a6-f2fa-4821-8826-24fe20b83b33",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In a blinded study with 60 samples (30 positive, 30 negative), the test achieved 100% specificity and 97% sensitivity (conservatively counting one inconclusive result as a false negative).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 reports results from a blinded virion spike-in study with appropriate statistical confidence intervals. The data is presented in Figure 3\u2014figure supplement 2. All 30 negative samples were correctly identified (100% specificity), and 29/30 positive samples were correctly identified, with one inconclusive result where CU-N2 failed but AS1E succeeded. The conservative approach of counting this as a false negative is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In a large-scale evaluation using 278 SARS-CoV-2-positive and 295 negative saliva samples from asymptomatic/pre-symptomatic university students, the Saliva TwoStep test achieved 100% specificity (0/295 false positives) and 94% sensitivity (158/168 samples above the LOD with AS1E primers).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 document perfect specificity (0 false positives in 295 negative samples). Claims C56-C59 report sensitivity data stratified by viral load, showing 94% sensitivity (AS1E) for samples above the LOD. The study population is well-described (C46-C49): asymptomatic/pre-symptomatic individuals from university screening. All samples had positive control (RNaseP) results (C53). The overall sensitivity across all 278 positive samples was lower (74.8% for AS1E, C56), but this includes many samples below the LOD where reduced sensitivity is expected (C57). The 94% sensitivity figure for samples above LOD is the appropriate metric.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "fd904ba6-9f9b-427a-9ace-9d6f5d58c283",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The university screening program used a quantitative RT-PCR method performed directly on saliva (mixed 1:1 with TBE buffer containing Tween-20) with primers targeting E and N genes, which has a limit of detection of 5 virions/\u03bcL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 describe the quantitative RT-PCR method used as the reference standard, with appropriate citation (Ranoa et al., 2020). Claim C77 provides the LOD of this method (5 virions/\u03bcL). The method is clearly described in Materials and methods with primer sequences provided. This establishes the reference standard against which RT-LAMP was compared.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "25780953-97db-4968-9be2-21069f9a02d3",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In 54 matched saliva and nasal swab samples from SARS-CoV-2-positive individuals, the Saliva TwoStep test produced 3 false negatives compared to 8 false negatives from the Lyra nasal swab RT-PCR test (using saliva quantitative RT-PCR as reference).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 reports comparative data (Figure 5A), but the interpretation is complicated by multiple confounding factors explicitly acknowledged in the text: different biosample types (saliva vs. nasal), different test modalities (RT-PCR vs. RT-LAMP), and temporal separation (up to 2 days between collections). Additionally, symptomatic status at the time of nasal swab collection is unknown. While the data suggests favorable performance of the saliva RT-LAMP test, the comparison is not rigorous enough to draw strong conclusions about relative test performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "c87dcb91-13f7-4dd5-9757-6ade49962ac5",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Differences in observed limit of detection between AS1E and CU-N2 primer sets may reflect differences in primer efficiencies and dynamics of viral transcript abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 provides a reasonable interpretation of the observed performance differences between primer sets (AS1E: 94% sensitivity, CU-N2: 85% sensitivity at samples above LOD, from C59). The explanation is supported by citation (Kim et al., 2020) regarding viral transcript dynamics. This is a plausible mechanistic explanation for the observed differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "24c36eb8-db30-4567-95fb-b8b09d2d0257",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Saliva TwoStep test has an end-to-end processing time of approximately 45 minutes and requires less sample processing, incubation time, and laboratory overhead compared to quantitative RT-PCR methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 reports the total time with reference to Figure 6, which shows the workflow: 10 min heating + 30 min RT-LAMP + optional 2 min inactivation. Claim C72 makes a comparative statement about resource requirements versus RT-PCR, which is reasonable given that RT-PCR typically requires RNA extraction (not needed here) and thermal cycling equipment. However, C72 is somewhat inferential rather than based on direct comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "3772259e-18d7-4b26-a41b-cf736146d69e",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Saliva TwoStep test can serve as a community-deployable SARS-CoV-2 screening tool with minimal laboratory setup, potentially suitable for diverse settings such as factories, offices, or schools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C73 summarize the advantages and potential applications of the test based on the demonstrated performance characteristics. The non-invasive nature of saliva collection (C64), minimal equipment requirements of LAMP (C14), and demonstrated sensitivity/specificity support this conclusion. However, C74 is somewhat speculative about deployment in specific settings, as actual field deployment data in these settings is not provided. The conclusion is reasonable based on the test characteristics but represents an extrapolation beyond the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "d0d0cb1d-3cd9-4379-b6ba-ddb4b26d3013",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The addition of 40 mM guanidine chloride to the RT-LAMP reaction mix did not enhance amplification efficiency in the authors' experiments, contrary to previous reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 reports a negative result from testing guanidine chloride, citing prior work (Zhang et al., 2020) that suggested potential benefit. While the authors don't show the data, the negative result is clearly stated. This is a minor methodological finding that may be useful for others attempting to optimize similar assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "93b0f71d-ff2c-46e8-a475-e4a838eedf31",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Primer design utilized conserved regions of the SARS-CoV-2 genome identified from NextStrain data, and primers should be ordered with HPLC purification to avoid cross-contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 describes the primer design strategy using publicly available genome diversity data. Claim C76 provides a practical recommendation about HPLC purification to prevent false positives from cross-contamination during oligo synthesis, with appropriate citation (M\u00f6gling et al., 2020). These are methodological details that support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    },
+    {
+      "id": "50c4eb73-5554-4548-8e03-7ae72c73c48e",
+      "content_id": "68813fe4-a7a8-483d-919b-5ddb815142b6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work establishes that temperature screening lacks specificity and sensitivity for SARS-CoV-2, LAMP technology has been used in diverse settings for 20+ years, saliva has high diagnostic value for SARS-CoV-2, and pH-dependent RT-LAMP has a high false-positive rate with saliva.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C9-C11, C18-C21) summarize relevant prior work with appropriate citations. They establish the context and rationale for developing the Saliva TwoStep test. The citations appear appropriate for the claims made, though the actual accuracy of these prior work claims cannot be fully verified without examining the cited papers. These are background/contextual claims rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:24:41.051193Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bb37af54-01e1-4e92-98ab-997f8b92c338",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "9e877b7e-ed78-4727-9c0c-d4d1b7b40a8b",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "4a43d8a4-4044-4dcd-b5dd-445867cbe15a",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "0d6f6678-8fa0-4235-a1ca-b1181186d445",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "eaf3c751-5bcb-49c6-b431-f8000c48db65",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "c1281b80-7bcb-4377-8455-b7ea6acfc303",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "840a8afd-54d9-42b4-ad57-efa3197738c0",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "0d6feb69-fafc-4889-947e-dd8ce89ed245",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "d7ef70cf-ad6b-49ca-8998-be828659b6f4",
+      "result_id": "ad54209b-4497-43de-aed8-992dfdb19c6e"
+    },
+    {
+      "claim_id": "8aef882d-4d3f-44ec-b415-3458eaea8bf2",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "c0794d50-b59b-40c5-bb44-d37c74bc3abc",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "626533ed-ff8e-461f-9c03-b86009caf890",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "3ea3c6ab-c4d8-444e-b3ad-eb8a4a88adbd",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "81a214a7-e305-4511-b828-420c83c5cb5f",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "e47c62f7-278a-4a18-805e-7ea5f64699a4",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "e9e69bc8-3316-4793-831f-7024ae48646a",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "b35f29a3-a012-4b21-9ba2-6c1a32f0c294",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "6ea5da1c-a1ec-4339-be1c-d8a9d3f64505",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "3f246e7f-074c-45eb-8b86-84aee38c84d9",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "1c0366b0-e0b6-4679-95cf-2cd6d0acc9b5",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "edb36035-e6d1-4e46-bf75-8352101e9b2b",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "3dac77b9-40a5-4690-a14b-fc0756f7d0e1",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "951ce700-a3b7-4a3d-863e-e0e7f54c08ae",
+      "result_id": "ef0c3fbb-0616-4673-b3d1-286a384490a5"
+    },
+    {
+      "claim_id": "0507807a-3590-4a94-b24b-c254aa5a91a6",
+      "result_id": "81ebdf7c-2ef7-4e9f-a2f3-782e930bb489"
+    },
+    {
+      "claim_id": "00c4f233-6fe3-462d-9468-03f88f095138",
+      "result_id": "81ebdf7c-2ef7-4e9f-a2f3-782e930bb489"
+    },
+    {
+      "claim_id": "586d689b-c62c-4906-9b10-f4b9c29b3dc5",
+      "result_id": "81ebdf7c-2ef7-4e9f-a2f3-782e930bb489"
+    },
+    {
+      "claim_id": "1cf7bcef-d45d-4a36-8546-83f3aa1bc557",
+      "result_id": "81ebdf7c-2ef7-4e9f-a2f3-782e930bb489"
+    },
+    {
+      "claim_id": "e8866d9f-13da-428d-9447-e79bb4139ca5",
+      "result_id": "81ebdf7c-2ef7-4e9f-a2f3-782e930bb489"
+    },
+    {
+      "claim_id": "40c28188-f538-484f-9af8-9008e20302f0",
+      "result_id": "5aa10191-3b71-4971-8d2d-bda2d98d6725"
+    },
+    {
+      "claim_id": "ff0859d4-8fa9-4179-aadb-1f999be34651",
+      "result_id": "5aa10191-3b71-4971-8d2d-bda2d98d6725"
+    },
+    {
+      "claim_id": "bc401f52-9269-4f5e-9d50-a5148d0415d3",
+      "result_id": "77731b08-6fe8-4ceb-9bbc-db6739a942c0"
+    },
+    {
+      "claim_id": "5862f0b4-3a5a-4577-b698-144562e6f377",
+      "result_id": "77731b08-6fe8-4ceb-9bbc-db6739a942c0"
+    },
+    {
+      "claim_id": "f502fe60-4ff4-4766-87b3-444780a4bead",
+      "result_id": "77731b08-6fe8-4ceb-9bbc-db6739a942c0"
+    },
+    {
+      "claim_id": "7ae10309-0740-4b94-bb78-38a4df0662e5",
+      "result_id": "77731b08-6fe8-4ceb-9bbc-db6739a942c0"
+    },
+    {
+      "claim_id": "ce91194e-da8b-4e31-87c0-12742b45a87d",
+      "result_id": "50a909e5-5af9-49a7-9c7f-7352e39e9828"
+    },
+    {
+      "claim_id": "b037b0c2-fb7c-4586-8fd5-a6b794ed437b",
+      "result_id": "50a909e5-5af9-49a7-9c7f-7352e39e9828"
+    },
+    {
+      "claim_id": "89d2045c-69fe-4a41-a384-7c3ae276128b",
+      "result_id": "50a909e5-5af9-49a7-9c7f-7352e39e9828"
+    },
+    {
+      "claim_id": "75d32b8e-0a68-47de-9bb7-a6317e5f0358",
+      "result_id": "50a909e5-5af9-49a7-9c7f-7352e39e9828"
+    },
+    {
+      "claim_id": "2773dea9-37ee-4883-87fe-169403238712",
+      "result_id": "50a909e5-5af9-49a7-9c7f-7352e39e9828"
+    },
+    {
+      "claim_id": "2aee419e-697f-4e0e-94af-e3116b3d9266",
+      "result_id": "f5e5b3a6-f2fa-4821-8826-24fe20b83b33"
+    },
+    {
+      "claim_id": "b7d5af76-10fb-43fd-bf1d-1a36600c3ca0",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "92cc289f-f250-47f7-8f46-43ede44c367f",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "13b6a7e1-7487-4468-b069-c369405d3ec8",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "4f055729-d587-409a-b0a3-65121d8dbc37",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "6750af9d-c47b-4245-b5d2-48d8ce871af6",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "1ef46ab4-03db-4d5c-81c7-fe680afd3e68",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "3a9b3bc1-25ce-44fa-9763-5d0bce825766",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "74b34b05-4a85-4b8c-ac65-4345e696c1d1",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "a2e9607f-2536-471d-806f-40035b45baf7",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "86830abf-3693-44ea-b6b7-ee30eb950acc",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "2bcf1b0f-e290-4867-9074-f1c43d770c78",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "ccde7229-f5a4-4ff2-8c23-85d1898f12ae",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "e5b51a29-57af-466a-965e-7c8aeb9013e7",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "c1a53766-c49c-464a-a6fc-87e1b7ed6941",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "3781f0fe-4a4f-47e3-8f7e-ed4e600a582d",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "3f6435d7-3ab3-466f-900a-a3eff169b2cf",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "4e9935c0-c018-4d00-a57a-9123c070ef78",
+      "result_id": "a45cfbeb-c43e-42b8-a367-bb521023a2b5"
+    },
+    {
+      "claim_id": "9ca648be-1aad-4b9a-85d2-5d4ec6c98bbd",
+      "result_id": "fd904ba6-9f9b-427a-9ace-9d6f5d58c283"
+    },
+    {
+      "claim_id": "1f6a26d4-95cf-4144-aae4-477a6ea03b8d",
+      "result_id": "fd904ba6-9f9b-427a-9ace-9d6f5d58c283"
+    },
+    {
+      "claim_id": "c90e1c32-f033-454a-b5ad-16cccc4e61c3",
+      "result_id": "fd904ba6-9f9b-427a-9ace-9d6f5d58c283"
+    },
+    {
+      "claim_id": "9190792c-a4f4-4518-b8e3-bbb664aa5f3d",
+      "result_id": "25780953-97db-4968-9be2-21069f9a02d3"
+    },
+    {
+      "claim_id": "cc6a61a0-ee0a-405f-99a0-c0fa2c7cc105",
+      "result_id": "25780953-97db-4968-9be2-21069f9a02d3"
+    },
+    {
+      "claim_id": "13ce2456-7544-4540-8325-02fedfbeef65",
+      "result_id": "c87dcb91-13f7-4dd5-9757-6ade49962ac5"
+    },
+    {
+      "claim_id": "893bc9d2-ebc3-404d-bca6-48bf74495763",
+      "result_id": "24c36eb8-db30-4567-95fb-b8b09d2d0257"
+    },
+    {
+      "claim_id": "ea986f91-2bf8-4af0-b231-dd9b948efa05",
+      "result_id": "24c36eb8-db30-4567-95fb-b8b09d2d0257"
+    },
+    {
+      "claim_id": "ba67c97c-e19e-4ca7-8d5a-9fee3566ea64",
+      "result_id": "3772259e-18d7-4b26-a41b-cf736146d69e"
+    },
+    {
+      "claim_id": "e8c32180-7ba9-4c34-b74e-84f1587258a6",
+      "result_id": "3772259e-18d7-4b26-a41b-cf736146d69e"
+    },
+    {
+      "claim_id": "501254d2-fff7-436e-a888-69db2e2c0762",
+      "result_id": "3772259e-18d7-4b26-a41b-cf736146d69e"
+    },
+    {
+      "claim_id": "08f90b2d-60e7-44bb-9503-05c05220fd57",
+      "result_id": "d0d0cb1d-3cd9-4379-b6ba-ddb4b26d3013"
+    },
+    {
+      "claim_id": "783e06e4-eedd-4736-a859-0c18fa3f4de4",
+      "result_id": "93b0f71d-ff2c-46e8-a475-e4a838eedf31"
+    },
+    {
+      "claim_id": "3475edb0-38d1-4220-a4d7-d553509526fb",
+      "result_id": "93b0f71d-ff2c-46e8-a475-e4a838eedf31"
+    },
+    {
+      "claim_id": "a473d9be-6d88-4647-8b7c-b2b3ad36f2de",
+      "result_id": "50c4eb73-5554-4548-8e03-7ae72c73c48e"
+    },
+    {
+      "claim_id": "d47d8580-9054-40e0-9c64-dfdd57c657f1",
+      "result_id": "50c4eb73-5554-4548-8e03-7ae72c73c48e"
+    },
+    {
+      "claim_id": "222bd05c-3831-4624-96ee-b158ce0b2636",
+      "result_id": "50c4eb73-5554-4548-8e03-7ae72c73c48e"
+    },
+    {
+      "claim_id": "92b2bc22-6b3e-4bbe-9637-1b5ff70dca33",
+      "result_id": "50c4eb73-5554-4548-8e03-7ae72c73c48e"
+    },
+    {
+      "claim_id": "b56547f4-fce3-473f-a4b2-d37634250165",
+      "result_id": "50c4eb73-5554-4548-8e03-7ae72c73c48e"
+    },
+    {
+      "claim_id": "75fb970b-6d9e-4bea-94fa-4e7358bf533c",
+      "result_id": "50c4eb73-5554-4548-8e03-7ae72c73c48e"
+    },
+    {
+      "claim_id": "c0794d50-b59b-40c5-bb44-d37c74bc3abc",
+      "result_id": "50c4eb73-5554-4548-8e03-7ae72c73c48e"
+    }
+  ],
+  "comparisons": []
+}

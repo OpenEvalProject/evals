@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "The study generated a single-cell transcriptome atlas from 11 bone marrow samples (9 MM patients across R-ISS stages I-III and 2 healthy donors), yielding 101,432-103,043 quality-filtered single cells organized into 24 clusters, with 6 clusters identified as plasma cells (CD138+CD38+) expressing ribosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C25 describe the basic experimental design and initial clustering. However, there is an inconsistency in the reported cell numbers (C19: 101,432 vs C103: 103,043), suggesting potential data processing discrepancies. The small sample size (2 R-ISS I, 2 R-ISS II, 5 R-ISS III) limits statistical power for stage-specific comparisons. Quality control procedures are mentioned but not fully detailed, and batch effect correction methods lack validation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C88"
+    ],
+    "result": "A novel NKG7+ cytotoxic plasma cell population (PC18) was identified, validated in an independent dataset (GSE117156), confirmed by immunofluorescence, and shown by flow cytometry to be enriched in R-ISS stage II patients (average 8.89%) compared to stage I (2.73%) and stage III (0.58%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 and C88 provide converging evidence from multiple approaches: scRNA-seq identification (C26), validation in independent dataset GSE117156 (C30-C31), immunofluorescence confirmation (C32), and flow cytometry quantification in 20 patients (C33-C35). The stage II enrichment is supported by quantitative data (C35), though statistical significance testing is not explicitly reported for the stage comparisons (C29 notes 'no significant difference' in the initial scRNA-seq cohort, but C34-C35 show 'obvious diversities' in the flow cytometry validation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C89"
+    ],
+    "result": "Plasma cell clusters PCC4 and PCC6 were identified as malignant based on CNV signals on chromosomes 1, 8 (gain) and 2, 3, 21 (deletion), with PCC6 showing G2/M enrichment, high expression of proliferation markers (MKI67, TOP2A, CDK1), enrichment of oxidative phosphorylation and EMT pathways, and containing genes with elevated prognostic z-scores associated with unfavorable prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 and C89 provide multiple lines of evidence for malignant proliferating PCs: CNV analysis consistent with known MM alterations (C36-C37), cell cycle analysis (C38), proliferation marker expression (C39), pathway enrichment (C40), and prognostic gene analysis (C41). The integration of genomic, transcriptomic, and clinical data strengthens the characterization, though the causal relationship between these features and malignancy is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C91",
+      "C92"
+    ],
+    "result": "RRM2 was identified as a proliferating PC-specific marker with unfavorable prognostic significance (HR=2.3, p=0.000402), validated to be overexpressed in R-ISS III patient samples and MM cell lines, and functionally demonstrated to promote MM cell proliferation and cell cycle progression through knockdown experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 and C91-C92 provide comprehensive evidence: bioinformatic identification (C42-C44), clinical validation (C45-C46), and functional validation (C47-C49). The survival analysis shows statistical significance (C44), expression validation uses qRT-PCR (C45-C46), and functional studies demonstrate proliferation reduction and G1 arrest upon RRM2 silencing (C47-C48). The convergence of computational, clinical, and experimental evidence supports RRM2 as an oncogene in MM, though mechanistic details are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C90"
+    ],
+    "result": "Differential gene expression analysis in PCC6 between R-ISS stages I and III identified 351 DEGs organized into functional modules including EBV infection (18 genes), with proliferation markers MKI67 and PCNA significantly elevated in EBV-positive MM patients, linking the malignant PC population to EBV infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C90 describe pathway analysis and EBV association. The identification of 351 DEGs (C51) and functional modules (C52) is supported by appropriate bioinformatic methods. The EBV-proliferation link (C53-C54) is validated experimentally, showing elevated MKI67 and PCNA in EBV+ patients. However, the sample size for EBV comparison is not specified, and the mechanistic relationship between EBV infection and proliferation remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Five drugs (alsterpaullone, orlistat, moxonidine, nalidixic acid, and LY-294002) were computationally proposed as potential therapeutics targeting PCC6 pathways in MM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C55 proposes therapeutic candidates based solely on computational pathway analysis without experimental validation. The claim relies entirely on in silico predictions and literature citations for drug mechanisms, lacking any functional validation in MM models. Drug repurposing predictions require experimental validation to be considered supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C93",
+      "C94"
+    ],
+    "result": "T cell re-clustering identified 21 clusters including CD4+ T cells, CD8+ T cells, NK cells, and NKT cells, with two clusters (T4 CD8+ T cells and T6 NKT cells) showing decreased percentages along R-ISS stages, reflecting tumor immune microenvironment plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 and C93-C94 describe T cell characterization and stage-dependent changes. The clustering and cell type identification (C56-C60) follow standard scRNA-seq practices. The observation of decreased CD8+ T and NKT cell percentages with disease progression (C58, C93) is supported by the data, though the interpretation of 'plasticity' (C94) is somewhat speculative. The biological significance of these changes is inferred rather than mechanistically demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "R-ISS stage-dependent gene expression modules were identified in T4 CD8+ T cells (modules 7 and 11) and T6 NKT cells (modules 3 and 7), with functional enrichment showing involvement in hematopoiesis, T-helper 1 cell lineage commitment, megakaryocyte/myeloid differentiation, and immune response activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe module identification and functional analysis using MFUZZ and pathway enrichment. The approach is methodologically sound for identifying stage-dependent expression patterns. The functional annotations (C62-C65) are based on established pathway databases. However, the biological interpretation of these modules in the context of MM progression would benefit from experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C95"
+    ],
+    "result": "Cell-cell communication analysis identified myeloid cluster C9 as having the most ligand-receptor pairs with T4 CD8+ T cells (69 pairs) and T6 NKT cells (71 pairs), including IL15-IL15R, SIRPA-CD47, CCL5-CCR1, and LGALS9-CD44, with SIRPA-CD47 proposed as a potential immunotherapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C95 describe ligand-receptor analysis using CellPhoneDB. The identification of interaction pairs is computationally sound and based on established databases. The SIRPA-CD47 interaction (C67-C68, C95) is well-documented in cancer immunology literature. However, the functional significance of these interactions in MM specifically requires experimental validation, and the proposal as a therapeutic target (C95) is based on inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C96"
+    ],
+    "result": "Ligand-receptor analysis between T cells and proliferating PCs (PC6) identified CD74-MIF, ADRB2-VEGFB, and CCL5-CCR1 as common interaction pairs, with CD74-MIF proposed as a potential immunotherapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C96 describe T cell-PC interactions. The identification of these ligand-receptor pairs follows the same computational approach as the T cell-myeloid analysis. The CD74-MIF interaction is supported by literature citations showing MIF's role in MM (referenced in discussion). However, as with C95, the therapeutic potential (C96) is inferential and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that MM accounts for ~10% of hematologic malignancies, R-ISS stratifies patients with distinct outcomes, EBV is associated with poor prognosis in MM, immune microenvironment interactions affect MM progression, and single-cell sequencing has revealed various aspects of MM heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 are background statements supported by appropriate literature citations. These establish the scientific context for the study but do not represent novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Discussion claims provide literature context for RRM2 and HINT1 as cancer-related genes, and for various immunotherapeutic targets (CD24, ICAM-1, CD44, CD47, MIF) in MM, based on prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C87 are discussion points supported by literature citations. These contextualize the findings but do not represent novel results from the current study. They appropriately reference prior work to interpret the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study claims to provide an R-ISS-related single-cell MM atlas revealing clinical significance of novel PC clusters and potential immunotargets in MM progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are summary statements of the study's contributions. These are supported by the collective evidence from the experimental results (identification of NKG7+ PCs, proliferating PCs with RRM2, T cell changes, and ligand-receptor interactions). The atlas generation and characterization of PC heterogeneity represent the core contributions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "For flow cytometry validation of MKI67, PCNA, and NKG7 in plasma cells, samples from 3 healthy donors, 3 R-ISS I, 10 R-ISS II, and 7 R-ISS III patients were collected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 describes the validation cohort for flow cytometry experiments. This is a straightforward methodological statement that is consistent with the results presented in the manuscript (e.g., Figure 2G, Figure 5B-C). The sample sizes are modest but adequate for validation purposes.",
+    "result_type": "MINOR"
+  }
+]

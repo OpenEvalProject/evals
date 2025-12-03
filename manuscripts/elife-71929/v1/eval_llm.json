@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "AKT hyperactivation specifically upregulates CBS protein expression and transsulfuration pathway activity in AIS cells without affecting CBS mRNA levels, suggesting post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from Western blots (C1, C3), qPCR (C2), and H2S production assays (C4) demonstrating AKT-specific upregulation of CBS and pathway activity. The data consistently show increased protein without mRNA changes, supporting post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C67",
+      "C68"
+    ],
+    "result": "The transsulfuration pathway protects AIS cells from oxidative stress-induced cell death, as evidenced by AOAA treatment impairing proliferation and AIS cells' resistance to cysteine deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C67-C68 demonstrate through pharmacological inhibition (AOAA) and nutrient deprivation experiments that H2S production and transsulfuration pathway activity are protective in AIS cells. The data from multiple experimental approaches converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "CBS depletion is necessary and sufficient to promote escape from AIS in a cell-type specific manner, as demonstrated by multiple knockdown approaches with rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 provide strong evidence through constitutive shRNA (C7), inducible shRNA (C8), rescue experiments (C9), specificity controls (C10), and RIS comparison (C11). The rescue experiment (C9) is particularly important for confirming on-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "CBS depletion promotes AIS escape through p53-independent mechanisms involving restoration of Rb and Cyclin A levels without affecting SASP factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 demonstrate through Western blot and qPCR data that CBS loss affects cell cycle regulators (Rb, Cyclin A) but not p53/p21 or SASP factors. The mechanistic specificity is well-documented, though the exact molecular mechanism linking CBS to Rb remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C23",
+      "C51"
+    ],
+    "result": "CBS depletion does not affect other transsulfuration pathway components or GSH/H2S production in cysteine-replete conditions, indicating a pathway-independent mechanism for AIS escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C23, and C51 consistently show through siRNA screens, Western blots, and metabolite measurements that CBS loss specifically affects AIS without altering other pathway components or antioxidant production when cysteine is available. This is a critical finding for understanding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25"
+    ],
+    "result": "Isotope tracing reveals that AIS cells have elevated transsulfuration pathway activity with increased cysteine and GSH production, which is maintained in CBS-depleted cells through exogenous cysteine uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 provide comprehensive metabolomics data (GC/MS and LC/MS with isotope tracing) showing pathway activity and metabolite changes. The isotope tracing experiments (C21) are particularly strong evidence for pathway flux. The observation that CBS depletion doesn't affect cysteine/GSH in replete conditions (C23) is key.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Erastin treatment reduces viability of both proliferating and AIS cells, with further suppression upon CBS knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by cell viability data after erastin treatment. However, the result is somewhat tangential to the main story and serves primarily as supporting evidence for the importance of cysteine uptake.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "GSEA analysis reveals that oxidative phosphorylation and ROS pathways are downregulated in CBS-depleted AIS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by RNA-seq and GSEA analysis. This transcriptomic finding provides important context for the mechanistic studies that follow, though it requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "CBS localizes to mitochondria in AIS cells, with increased mitochondrial CBS abundance compared to proliferating cells, and this localization depends on the CBSD2 motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide multiple lines of evidence including immunofluorescence (C28), MitoTracker staining (C29), mitochondrial fractionation (C30), protease protection assay (C31), and mutant analysis (C32). The convergence of multiple techniques strongly supports mitochondrial localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C37",
+      "C38"
+    ],
+    "result": "Mitochondrial localization of CBS is required for AIS maintenance, as demonstrated by rescue experiments with wild-type but not CBSD2-truncated CBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C37-C38 demonstrate through rescue experiments with wild-type and truncation mutants that mitochondrial localization is functionally required. The use of both senescence markers (SA-\u03b2Gal, EdU) and bioenergetic measurements (OCR, ATP) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CBS knockdown suppresses elevated OCR and ATP production in AIS cells but has opposite effects in RIS cells, demonstrating AIS-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by Seahorse measurements showing context-dependent effects of CBS on mitochondrial respiration. The opposite effect in RIS (C36) is particularly important for demonstrating specificity, though the mechanism for this difference is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C61"
+    ],
+    "result": "Oxidative stress is required for AIS maintenance, as antioxidant treatment promotes proliferation and CBS knockdown reduces ROS levels in AIS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C61 demonstrate through Trolox treatment and flow cytometry that ROS is required for AIS and that CBS depletion reduces ROS. This provides a mechanistic link between CBS and senescence maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "CBS genetic alterations occur in gastric cancer and are significantly associated with PI3K/AKT/mTORC1 pathway activation, with decreased CBS mRNA in tumors versus normal tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by TCGA data analysis showing genetic alterations, pathway co-occurrence, and differential expression. The statistical association (C44) is significant (p=0.0031, OR=4.49), though the sample size for CBS alterations is relatively small (18/441).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "CBS protein expression is significantly downregulated in gastric tumor tissues and cancer cell lines compared to normal tissues and epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by tissue microarray immunofluorescence (62 patients) and Western blot data from cell lines. The paired sample analysis in the TMA provides strong evidence for CBS downregulation in tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C88"
+    ],
+    "result": "CBS expression is epigenetically silenced through promoter hypermethylation in gastric cancer cell lines, as demonstrated by correlation analysis and azacitidine treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C88 demonstrate through correlation analysis (34 cell lines), methylation-specific PCR, and demethylation experiments that CBS is epigenetically silenced. The >50-fold increase in SNU-1 cells after azacitidine treatment (C50) is particularly striking evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "CBS loss cooperates with AKT hyperactivation or PTEN knockout to promote anchorage-independent growth of gastric epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 demonstrate through soft agar assays that CBS depletion enhances transformation in the context of PI3K/AKT activation. The use of both myrAKT1 and PTEN knockout provides convergent evidence, though the effect is specific to 3D culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CBS restoration suppresses gastric tumor growth in vivo through p53-independent mechanisms involving decreased Ki67 and RB phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 demonstrate tumor suppression through xenograft experiments with molecular characterization. The in vivo data (C57) is strong, and the mechanistic analysis (C58) shows p53-independence. However, the lack of effect in 2D culture (C56) raises questions about the specific context requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C86",
+      "C87"
+    ],
+    "result": "AKT activation increases ROS through multiple mechanisms including stimulating oxidative phosphorylation and increasing cysteine uptake for antioxidant production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C62-C63, and C86-C87 synthesize prior literature with current findings to explain how AKT affects ROS homeostasis. The integration of established mechanisms (citations) with new data on cysteine metabolism is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C80"
+    ],
+    "result": "H2S has concentration-dependent effects on mitochondrial function, acting as an antioxidant and bioenergetic stimulator at low concentrations but as a mitochondrial poison at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C80 are supported by citations to prior literature establishing the biphasic effects of H2S. This provides important context for interpreting the current findings, though the actual H2S concentrations in the experimental systems are not measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CBS mitochondrial localization in AIS cells increases ROS production through enhanced oxidative phosphorylation, while cytoplasmic transsulfuration pathway activity provides antioxidant protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C92-C95 synthesize the experimental findings into a coherent model. The dual role of CBS (mitochondrial pro-oxidant vs. cytoplasmic antioxidant) is supported by the data, though some aspects remain inferential. The model explains why CBS depletion allows AIS escape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Overproduction of H2S by increased mitochondrial CBS in Down syndrome fibroblasts suppresses oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 cites prior work showing opposite effects of CBS overexpression. This is important for contextualizing the current findings and explaining apparent discrepancies, though it's from a different biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "A negative correlation exists between CBS and xCT expression in gastric cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is inferred from Western blot data and supported by citation. This observation supports the model that cancer cells compensate for CBS loss by increasing cysteine uptake, though direct correlation analysis is not shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C96",
+      "C97",
+      "C100"
+    ],
+    "result": "CBS is a novel regulator of AIS maintenance and a potential tumor suppressor in PI3K/AKT-driven gastric cancers, providing a new therapeutic vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C96-C97, and C100 represent the main conclusions of the study. These are well-supported by the comprehensive experimental evidence from both the AIS and gastric cancer studies. The designation as 'potential' tumor suppressor is appropriate given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Background context on oncogene-induced senescence, AIS characteristics, CBS biochemistry, and CBS roles in cancer from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79, C81-C85, C89-C91 provide essential background from prior literature. These are well-cited and accurately represent established knowledge, providing necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "CBS restoration may suppress gastric tumors independent of p53, potentially through H2S production, though this requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are partially supported by the data showing p53-independence (C58) but explicitly acknowledge that the H2S mechanism requires further investigation. The uncertainty is appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  }
+]

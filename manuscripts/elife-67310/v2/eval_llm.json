@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on carbapenem resistance mechanisms and the prevalence of resistance in K. pneumoniae, particularly in specific clonal groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-established facts about carbapenem resistance mechanisms and epidemiology, supported by multiple citations to prior literature. These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior bioinformatic studies reported absence of CRISPR-Cas systems in ST258/ST11 strains, leading to the hypothesis that this contributes to carbapenem resistance, but emerging lineages like ST15 and ST307 contain CRISPR-Cas systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 accurately summarize prior research findings and acknowledge the limitation that CRISPR absence cannot fully explain carbapenem resistance across all lineages. This sets up the rationale for experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Different carbapenems have distinct properties, with ertapenem being more susceptible to \u03b2-lactamase hydrolysis and more impeded by porin loss compared to other carbapenems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are established knowledge about carbapenem antibiotics, supported by appropriate citations. This provides important context for why different carbapenems might have different propensities for resistance evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C19",
+      "C90"
+    ],
+    "result": "Isolates from dominant and emerging carbapenem-resistant lineages had higher mutation frequencies to ertapenem than other lineages, with UCI38 (ST258) showing the highest frequency, and strains with similar MICs can have very different mutation frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C19, and C90 are supported by experimental data from the modified Luria-Delbr\u00fcck system (Figure 2A, Table 1). The experiments were replicated 2-3 times with appropriate controls and statistical analysis. This is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "UCI38 carries blaSHV-12 on plasmid pESBL, but introduction of blaSHV-12 alone did not increase mutation frequencies in strains lacking ESBLs. pESBL could not be transformed into certain strains (UCI64, UCI34, MGH21) but could be transformed into BWH41 (ST258) and E. coli, while all strains took up pSHV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 are supported by plasmid sequencing, transformation experiments, and RT-qPCR data (Figures 2C-F). The experiments demonstrate that ESBL presence alone does not explain mutation frequency differences and that pESBL is restricted in certain strains. Controls with pSHV are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Bioinformatic analysis of 80 ST258 strains and 2453 K. pneumoniae strains from NCBI showed that no ST258 strains contain CRISPR-Cas systems, confirming this as a genetic feature of ST258, but there is no clear association between CRISPR absence and recently emerging resistant lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by comprehensive bioinformatic analysis of large strain collections (Supplementary files 3-4, Figure 1A). The analysis confirms prior observations about ST258 and extends them to show CRISPR presence/absence does not fully explain resistance patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "MGH21's CRISPR-Cas system is expressed and contains spacers (spacer 11 and spacer 24) that target sequences in pESBL and numerous other plasmids carrying antibiotic resistance genes, including carbapenemase genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by RNA-seq data (Figure 3\u2014figure supplement 1), sequence comparison, and bioinformatic analysis of a curated plasmid database (Supplementary files 5-8). The identification of spacers targeting resistance plasmids provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Deletion of the CRISPR-Cas system in MGH21 allowed pESBL transformation, while complementation restored restriction. CRISPR deletion did not affect mutation frequencies but increased HGT-mediated resistance acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by transformation efficiency experiments and mutation frequency measurements (Figure 3B, D). The genetic complementation provides strong evidence for CRISPR-Cas function in restricting plasmid uptake. This experimentally validates the role of CRISPR-Cas systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Introduction of pESBL into MGH21\u0394cas increased ertapenem mutation frequency ~30-fold compared to controls, suggesting factors on pESBL beyond the ESBL gene contribute to high mutation frequencies. However, MGH21\u0394cas(pESBL) frequency was still 10-20 times lower than UCI38, indicating additional genetic background factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by mutation frequency experiments (Figure 3D). The experiments appropriately compare multiple controls (MGH21, MGH21\u0394cas, MGH21(pSHV)) and demonstrate that both plasmid factors and chromosomal genetic background contribute to mutation frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Whole genome sequencing of resistant mutants revealed that UCI38 and MGH21\u0394cas(pESBL) mutants arose primarily through transposon-mediated mechanisms (blaSHV-12 duplication and/or ompK36 disruption), while MGH21 mutants arose through SNPs. pESBL facilitates resistance through transposon duplication of blaSHV-12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by WGS data of resistant mutants (Figure 4A). The analysis of 16 mutants from three strains reveals distinct mutational mechanisms. The inference about pESBL's mechanism is logical given the data, though the sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Analysis of 50-100 mutants per strain showed that transposon insertions in ompK36 accounted for 60-90% of resistant mutants from high-mutation-frequency strains but only 0-10% from low-frequency strains. Multiple IS families were involved, with no correlation between IS number and transposition activity. Transposon insertional mutagenesis occurred at ~10 times higher frequency than SNP acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by extensive Sanger sequencing of ompK36 locus in 50-100 mutants per strain (Figure 4B, D, Supplementary files 9-10). The large sample size strengthens the conclusions. The 10-fold difference is a key quantitative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Transposon insertions in ompK36 are reversible. When Mut41 (UCI38 mutant with IS1 insertion in ompK36 promoter) was cultured without antibiotics, 99% of the population reverted to wild-type ompK36 by ~100 generations, restoring ompK36 expression and fitness. Similar reversion was observed in mutants from three other strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by reversion experiments, RT-qPCR, and growth curves (Figure 4D-F, Figure 4\u2014figure supplement 4). The experiments demonstrate reversibility in multiple strains. C50 and C51 are established knowledge appropriately cited. This reveals an important evolutionary advantage of transposon-mediated resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Mutation frequencies varied by carbapenem identity, with meropenem showing lowest frequencies and ertapenem/faropenem showing higher frequencies. MGH32 (no \u03b2-lactamase) yielded no carbapenem-resistant mutants but faropenem-resistant mutants, suggesting \u03b2-lactamase genes are necessary for carbapenem but not faropenem resistance. This pattern was independent of strain genetic background and not explained by antibiotic stability or differential mutagenesis induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by mutation frequency experiments with multiple carbapenems in 6 strains (Figure 5A, Figure 5\u2014figure supplements 1-2). Controls for antibiotic stability and mutagenesis induction are appropriate. The inference about \u03b2-lactamase requirement (C57) is reasonable but based on negative data from one strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Analysis of 90 mutants showed that 63 had increased MICs to both ertapenem (2-256 fold) and meropenem (2-16 fold), 27 had increased MICs only to ertapenem, and none had increased MIC only to meropenem. No highly resistant (MIC >4 \u00b5g/ml) meropenem mutants were isolated. This demonstrates ertapenem has a wider spectrum of resistance-conferring mutations than meropenem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by MIC measurements of 90 characterized mutants (Table 2, Supplementary file 11). The asymmetry in mutational spectra (ertapenem-only but not meropenem-only mutants) is compelling evidence. WGS validation of representative mutants strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Mut34 (ertapenem-resistant with blaSHV-12 duplication) had >100-fold higher mutation frequency to meropenem than parent UCI38. WGS showed meropenem-resistant mutants from Mut34 acquired additional ompK36 mutations, demonstrating ertapenem-resistance mutations serve as stepping-stones to meropenem resistance, though only achieving low-moderate meropenem resistance (4-32 fold MIC increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by mutation frequency experiments and WGS data (Figure 5B-D, Table 2). The stepping-stone concept is well-demonstrated experimentally. The limitation to low-moderate resistance levels is an important caveat appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In the presence of meropenem, Mut34 and Mut186 showed higher conjugation efficiency for blaKPC-2 plasmid uptake than UCI38. This is likely due to longer survival times in meropenem rather than direct mechanistic effects, as conjugation frequencies were equal in the absence of meropenem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by conjugation experiments with and without meropenem (Figure 5E, Figure 5\u2014figure supplement 3). The interpretation (C71) is reasonable given equal conjugation frequencies without antibiotic. This demonstrates how stepping-stone mutations facilitate HGT-mediated high-level resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Faropenem-resistant mutant Mut101 also showed elevated mutation frequencies and conjugation efficiencies to meropenem. Together, results suggest ertapenem and faropenem select for mutations that increase rates of acquiring high-level meropenem resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by experimental data (Figure 5\u2014figure supplement 4). C74 is an inference that appropriately synthesizes the stepping-stone findings for both ertapenem and faropenem. This extends the stepping-stone concept beyond ertapenem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study identifies that high-level transposon insertional mutagenesis and mutational spectrum differences between carbapenems facilitate resistance evolution. These mechanisms work with loss of CRISPR-Cas systems to promote resistance. The emergence of predominant resistant lineages was not random and provides genetic markers for high-risk isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are summary claims synthesizing the major experimental findings. They are well-supported by the collective data on transposon mutagenesis (C14-C15, C41-C49), CRISPR-Cas (C16, C33-C35), and mutational spectra (C55-C65). The inference about non-random emergence (C77) is reasonable given the lineage-specific differences observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Transposon-mediated porin disruption can revert, enabling rapid adaptation to fluctuating environments. Emerging lineages like ST15 and ST307 have evolved resistance through ESBLs and porin truncations, potentially reflecting these mutagenic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C79 is supported by the reversion experiments (C52-C54). C80 is a reasonable inference connecting the experimental findings to observed resistance patterns in emerging lineages, though it is somewhat speculative as it is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study provides evidence that transposon-mediated mutational events play a critical role in antibiotic resistance evolution alongside HGT. Bioinformatic analysis of spacer sequences, not just CRISPR presence/absence, is needed to understand functional roles in resistance gene exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C81 is established knowledge appropriately cited. C82 and C83 are reasonable inferences from the experimental findings. C83 is particularly well-supported by the demonstration that spacer content determines restriction specificity (C30-C32).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Current carbapenem selection considers dosing convenience and spectrum of activity but not mutation frequencies. The findings suggest carbapenems with higher barriers to resistance (like meropenem) should be favored to prevent resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C84-C86 are statements about current clinical practice. C87 is a recommendation based on the study findings. While the experimental data support that meropenem has a higher barrier to resistance, the clinical recommendation (C87) would require validation in clinical settings and consideration of other factors (pharmacokinetics, patient outcomes, etc.) not addressed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "Current antibiotic selection is based primarily on MIC, but strains with similar MICs can have different resistance evolution outcomes. Mutations pre-selected by ertapenem/faropenem may not change meropenem MIC but significantly increase likelihood of evolving meropenem resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C88 is a statement about current practice. C89 and C91 are supported by the experimental findings showing MIC-independent differences in mutation frequencies (C90) and stepping-stone mutations (C66-C68). This highlights an important limitation of MIC-based decision making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The work argues that strains should not be considered identical regarding resistance potential, and that diagnostics should characterize strains beyond MIC to identify high-risk lineages and stepping-stone mutations. Understanding resistance evolution mechanisms could inform antibiotic choice and development of new antibiotics. Strategies should consider both current efficacy and potential for future resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C92 is a reasonable conclusion from the findings. C93-C96 are recommendations and implications that logically follow from the experimental results. However, these are forward-looking suggestions that would require additional work to implement and validate clinically. They represent important implications but are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Higher mutation frequencies in dominant and emerging carbapenem-resistant lineages are caused by high-level transposon insertional mutagenesis, leading to resistance gene duplication and reversible porin disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by WGS analysis of mutants (C41-C43), quantification of transposon vs SNP frequencies (C45-C49), and reversion experiments (C52-C54). The mechanistic link between transposon activity and mutation frequency is well-established through multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "CRISPR-Cas systems can restrict resistance gene acquisition when corresponding spacer sequences are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C16 is supported by the demonstration that MGH21's CRISPR-Cas system restricts pESBL (C30-C32), deletion allows uptake (C33), and complementation restores restriction (C34). The spacer-dependence is well-demonstrated. This experimentally validates a previously hypothesized role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "A broader spectrum of resistance-conferring mutations for ertapenem contributes to increased resistance rates, and these mutations can serve as stepping-stones to high-level resistance to all carbapenems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C17 is supported by the mutational spectrum analysis (C61-C65). C18 is supported by the stepping-stone experiments (C66-C72). The combination of broader mutational spectrum and stepping-stone effect is a key mechanistic insight into how ertapenem use can promote pan-carbapenem resistance.",
+    "result_type": "MAJOR"
+  }
+]

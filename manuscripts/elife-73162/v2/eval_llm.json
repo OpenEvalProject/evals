@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Retrograde tracing from intermediate hippocampus labels neurons in layer 3 and L5a, but not L5b, of the MEC. L5a neurons were identified by Etv1 immunostaining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging anatomical evidence from retrograde tracing experiments. The identification of L5a by Etv1 immunostaining (C4) is a validated method, and the absence of labeling in L5b (C5) is explicitly stated. The data are supported by figures and citations to prior work establishing layer 3 projections (C2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The Rbp4-Cre mouse line provides specific genetic access to L5a excitatory projection neurons in the MEC, with 71.3% of L5a neurons labeled at the injection center, 99.5% being non-GABAergic, and 88.6% expressing Etv1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 establish the specificity and validation of the Rbp4-Cre line for targeting L5a neurons. Quantitative data with appropriate sample sizes (n=3 mice) support the characterization. The proportion of Etv1 expression matches prior literature (C10), and axonal projections to telencephalon confirm the identity of labeled neurons (C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C80"
+    ],
+    "result": "L5a axons in CA1 have a distinct laminar distribution compared to superficial MEC layers, targeting primarily deep stratum pyramidale and stratum lacunosum, with sparse projections to stratum moleculare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C80 describe the unique laminar topography of L5a projections with anatomical data and statistical analysis (p=0.0156, n=6). The comparison to superficial layer projections (C13) is supported by citations. Control experiments with synaptic markers confirm the topography is not due to passing axons (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "L5a axons preferentially target distal CA1 and the subiculum, contrasting with superficial MEC layers that favor proximal CA1. This topography was confirmed with both membrane-bound GFP and presynaptic protein labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 establish the proximo-distal organization with statistical support (p=0.0312, n=5 mice). The control experiments using synaptophysin labeling (C18) address the potential confound of labeling passing axons. The contrast with superficial layers (C16) is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Combinatorial viral labeling demonstrates that both RSC-projecting and NucAcb-projecting L5a neurons send axon collaterals to CA1, establishing that hippocampal projections are collaterals of telencephalic projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 provide direct evidence for axon collateralization using a combinatorial viral strategy. The similar laminar distribution across labeling methods (C21-C22) strengthens the conclusion. However, this approach only tests two telencephalic targets, leaving open whether this principle applies to all targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "MAPseq analysis reveals that >98% of barcodes detected in telencephalic targets (isocortex, CNU, Olf/Ctxsp) are also detected in hippocampus, indicating that collateralization to hippocampus is a common feature independent of dorso-ventral position in MEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide high-throughput evidence for widespread collateralization with large sample sizes (1603-3493 barcodes per brain, n=3 mice). The consistency across dorso-ventral positions (C28) is supported by supplementary data. The MAPseq method is appropriately cited and the barcode diversity calculation (C95) suggests 99.9% unique labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Back-projections from MEC to hippocampus are topographically organized, with dorsal MEC neurons preferentially projecting to dorsal hippocampus and ventral MEC neurons to ventral hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe topographic organization based on MAPseq barcode counts as a measure of projection strength. The method is appropriately cited (Kebschull et al., 2016). The data support the conclusion, though the interpretation of barcode counts as projection strength has inherent limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "All projections from MEC to the telencephalon are copied back to the hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 is a broad generalization based on MAPseq data from three telencephalic divisions and combinatorial labeling from two specific targets (RSC and NucAcb). While the data strongly support widespread collateralization, the claim that 'all' projections are copied is not definitively established. Some telencephalic areas were excluded from the MAPseq analysis due to technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "L5a projections provide monosynaptic glutamatergic excitatory inputs to pyramidal neurons in both proximal and distal CA1, with 64% of pyramidal neurons showing depolarizing responses. Responses have short latencies (3.04\u00b10.26 ms) and are AMPA receptor-mediated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 provide comprehensive electrophysiological and pharmacological characterization with appropriate sample sizes (n=64 cells, 27 mice for C33). The monosynaptic nature is supported by multiple criteria: short latencies (C38), invariant latencies (C38), independence from stimulus position (C39), and TTX/4-AP sensitivity (C40). Pharmacological controls with Gabazine and NBQX confirm glutamatergic transmission (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "A smaller population of pyramidal neurons (6 out of 26) showed indirect inhibitory responses, indicating that L5a inputs recruit local interneurons that provide inhibitory input to pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 describe indirect inhibitory connections with appropriate sample sizes. The characterization of these responses as indirect is supported by their properties (polarity reversal, Gabazine sensitivity). However, the sample size is relatively small (6/26 neurons).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "L5a projections recruit CA1 interneurons through monosynaptic glutamatergic inputs, with highest connectivity to SP and SR interneurons (64% each), and lower connectivity to SL (31%), SM (23%), and SO (16%) interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 provide systematic characterization of interneuron connectivity across CA1 layers. The monosynaptic nature (C51) and glutamatergic transmission (C52) are supported by appropriate pharmacological and electrophysiological criteria. Sample sizes vary across layers but are generally adequate. The exception for SO interneurons (C51) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "L5a, but not L5b, neurons project to hippocampal CA1, and these telencephalon-projecting neurons copy their outputs to both pyramidal cells and interneuron subpopulations in CA1 with unique topography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C60-C62 summarize the main findings supported by the combined anatomical, MAPseq, and electrophysiological data. The exclusion of L5b (C54) is supported by retrograde tracing (C5). The unique topography (C61) and cell-type targeting (C62) are well-documented in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C79"
+    ],
+    "result": "L5a of MEC is anatomically configured to coordinate neocortical and hippocampal networks simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C79 represent the main conceptual conclusion drawn from the anatomical findings. The conclusion is well-supported by the demonstration of axon collateralization to both telencephalon and hippocampus. However, the functional implications remain speculative without direct functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The distinct organization of L5a projections suggests they serve functions distinct from superficial layer projections and opens the possibility for lateral and medial EC input streams to converge in CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 are interpretive statements based on the anatomical findings. While the distinct organization is well-documented, the functional implications (C81) and the convergence of EC streams (C82) are speculative. The claim about convergence (C82) is particularly uncertain as it is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "L5b does not participate in the pathway from deep MEC to CA1, reinforcing the distinct input-output organization where L5a coordinates the wider hippocampal-neocortical loop while L5b integrates signals locally within MEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 draw conclusions about the differential roles of L5a and L5b. The absence of L5b projections to CA1 (C84) is directly supported by retrograde tracing (C5). The functional interpretation (C85) integrates current findings with prior knowledge about L5b connectivity, though the functional implications remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Potential functional roles of L5a-to-CA1 projections include creating self-reinforcing/correcting loops, providing gating signals, or influencing rhythmic network activity, but more experiments are required to determine the actual function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C91 are speculative statements about potential functions. While C86 cites prior work showing L5a projections are necessary for memory, the specific functional roles proposed (C88-C90) are hypothetical. The authors appropriately acknowledge (C91) that functional experiments are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The finding that L5a axons have highest density in distal CA1 contrasts with previous reports using traditional tracers showing dense MEC projections in proximal but not distal CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 highlight a discrepancy with prior literature. The current findings (C15) are supported by statistical analysis and control experiments. The discrepancy likely reflects the layer-specific labeling achieved with the Rbp4-Cre line versus bulk labeling with traditional tracers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "MAPseq experiments achieved 99.9% predicted unique labeling of neurons based on 2314\u00b1131 total L5a neurons and barcode diversity of 2\u00d710^6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 provide methodological validation for the MAPseq approach. The calculation is appropriately performed using the formula from Kebschull et al., 2016. The neuron count (C94) has a small sample size (n=2 mice) but is sufficient for the calculation.",
+    "result_type": "MINOR"
+  }
+]

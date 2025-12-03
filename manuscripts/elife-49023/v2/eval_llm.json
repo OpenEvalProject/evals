@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors developed an ODT experimental setup based on off-axis holography with a digital micro-mirror device that enables high-speed acquisition of 3D refractive index tomograms within 500 milliseconds at sub-micrometer resolution (125 nm lateral, 471 nm axial). The reconstructed RI values were converted to protein densities using a constant RI increment of 0.185 mL/g, and the system operated at low illumination intensity (11.46 mW/cm\u00b2) without phototoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 collectively describe the ODT system specifications and performance. The technical specifications are well-documented with appropriate citations (C26-C28), the protein density conversion method is based on established literature (C29-C30), and the phototoxicity assessment is supported by experimental observation (C31). The system characterization appears thorough and appropriately validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed DeepIS, a deep convolutional neural network framework for automated 3D segmentation of immunological synapses from RI tomograms. The network was trained on 236 expert-curated tomogram pairs to predict signed distance maps that distinguish CART19 and K562-CD19 cells, requiring approximately 6 hours of training on four GPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe the development and training of the DeepIS framework. The dataset preparation involved rigorous expert validation (C33), the network architecture was adapted from prior work with novel modifications (C34-C35), and training parameters are clearly specified (C36). The methodological approach is well-documented and appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "DeepIS demonstrated superior segmentation performance compared to manual segmentation, successfully labeling both individual cells and cell conjugates with high accuracy. Quantitative validation showed 3D Pearson correlation coefficients of 87.9\u00b17.7% for CART19 and 92.0\u00b14.3% for K562-CD19 cells, with boundary displacement errors of 615.5\u00b1379.8 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 present quantitative validation of DeepIS performance. The comparison with manual segmentation (C37-C38) demonstrates practical utility, and the quantitative metrics (C39-C40) show strong agreement with ground truth. The boundary error is on the order of the system resolution, which is reasonable. Statistical measures are appropriately reported with standard deviations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Using 3D-SIM with dextran negative staining, the authors validated that CAR immunological synapses exclude dextran molecules above a size threshold (visible only with 4 nm dextran, not 54 nm). The IS location determined by DeepIS was within 200-600 nm of CAR and synaptic cleft peak intensities, with a measured synaptic cleft width of 894 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide orthogonal validation of DeepIS accuracy using high-resolution fluorescence microscopy. The size-exclusion observation (C41) is consistent with prior work on NK cells and provides biological validation. The spatial accuracy measurements (C42-C43) demonstrate that DeepIS localizes the IS within the resolution limits of ODT, and the cleft width measurement agrees with prior confocal studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Correlative 3D-SIM and ODT analysis revealed that CAR proteins exhibit asymmetric and granular distributions at the IS, with highest correlations between CAR and lytic granules and colocalization of CD19 with CAR clusters. ODT-measured total protein densities showed both correlated and uncorrelated regions with fluorescently-labeled proteins, suggesting the presence of additional unlabeled protein clusters such as F-actin, Lck, and supramolecular attack particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe correlative imaging results. The asymmetric CAR distribution (C44) agrees with prior work, the correlation analysis (C45) is supported by Figure 7c, and the observation of correlated/uncorrelated regions (C46) is a strength of the label-free approach. The interpretation of uncorrelated signals (C47) is reasonable and supported by citations, though it remains inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Time-lapse ODT analysis of 27 IS formation events revealed that CART19 cells form stable synapses with CD19-positive K562 cells but not CD19-negative K562 cells. The IS expanded to half-maximum area within 40 seconds and stabilized within 3 minutes, with membrane protein density increasing to 27\u00b14 fg/\u03bcm\u00b2 at the IS (higher than 19\u00b11 fg/\u03bcm\u00b2 at non-IS surfaces). CART19 cells exhibited more dynamic translocation (\u0394dmax=7.48 \u03bcm) than K562-CD19 cells (\u0394dmax=1.74 \u03bcm), with greater movement in early stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 present comprehensive kinetic analysis of IS formation. The antigen-dependent synapse formation (C49-C50) provides biological validation, the temporal measurements (C51-C52) are quantitatively reported with appropriate statistics, and the mechanical analysis (C53-C54) reveals differential cell behavior. The dataset size (n=27) is reasonable, and the observations are consistent with expected T cell biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C69"
+    ],
+    "result": "Comparison of CD19-28z and CD19-BBz CAR-T cells revealed no significant difference in IS areas but significantly higher IS protein densities and total IS protein amounts (approximately 10% higher) for CD19-BBz CAR-T cells compared to CD19-28z CAR-T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C69 present a comparative analysis of CAR-T cells with different costimulatory domains. The statistical analysis is appropriate (Figures 9b-d show the data), sample sizes are adequate (n=54 and n=64), and the finding of differential protein accumulation despite similar IS areas is novel and biologically interesting. This addresses a gap in prior literature (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors interpret the observed rapid increase in membrane protein density as reflecting influx of IS components including CARs, actins, and adhesion molecules, the intracellular protein density changes as centrosome polarization, and the mechanical forces as evidence for mechanical potentiation during target cell killing similar to TCR-based T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57 are interpretations of the observed data rather than direct measurements. While each interpretation is supported by citations to prior work and is biologically plausible, they remain speculative without direct evidence. C56 is explicitly tentative ('perhaps'), and C57 suggests similarity to TCR-based cells without direct comparison. These interpretations are reasonable but would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors establish the biological and technical context for their study, describing the immunological synapse as a critical cell-cell junction for T cell activation, the structure and function of CAR-T cells, and identifying that the dynamics and mechanochemical properties of CAR-mediated IS remain understudied compared to TCR-mediated IS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide background knowledge and motivation for the study. These claims are well-supported by appropriate citations to established literature and accurately represent the current state of knowledge in the field. The identification of the research gap (C11) is justified and provides clear motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors review existing imaging approaches for studying IS, highlighting that while fluorescence microscopy is useful for dynamic imaging, it suffers from photobleaching and phototoxicity. ODT offers label-free 3D imaging at sub-micrometer resolution but has not been applied to cell-cell interactions due to lack of accurate 3D segmentation methods, which existing manual and automatic approaches cannot adequately address.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C24 provide a comprehensive review of existing methods and their limitations, supported by appropriate citations. The identification of the technical gap (C21-C22) and limitations of existing segmentation approaches (C23-C24) clearly motivates the development of DeepIS. The assessment of prior methods appears accurate and fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors conclude that DeepIS combined with ODT enables label-free, automated 3D IS tracking and may help elucidate mechanistic differences in CAR-T cells with different signaling domains. They anticipate the method can be generalized to other immune receptors (TCR, BCR, NK cells) and used to test effects of chemical treatments and genetic mutations on IS morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 are forward-looking statements about potential applications. While C63 summarizes demonstrated capabilities, C62, C64, and C65 are speculative about future applications. These are reasonable extrapolations from the demonstrated results, but they remain to be validated. The generalizability claims would require additional experiments with other cell types and conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors contextualize their findings relative to prior work by Xiong et al., noting that while previous studies compared 2nd and 3rd generation CARs, there were no direct comparisons of 2nd generation CAR IS properties based on costimulatory domain type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 accurately describe prior work and identify a specific gap that the current study addresses. The characterization of Xiong et al.'s findings (C66-C67) is supported by the citation, and the identification of the missing comparison (C68) is accurate and provides context for the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors claim this is the first application of ODT and deep learning to IS dynamics, acknowledge limitations including ~500 nm error in synaptic cleft determination and lack of chemical specificity for individual proteins, and suggest correlative fluorescence microscopy as a solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide honest assessment of novelty and limitations. The novelty claim (C70) appears justified based on the literature review. The acknowledged limitations (C71-C72) are appropriate and realistic, and the proposed solution (C73) is reasonable and supported by citations. This transparent discussion of limitations strengthens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The authors note that Kymriah and Yescarta are the only FDA-approved CD19-targeting CAR-T therapies and differ primarily in their costimulatory domains (4-1BB vs CD28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide factual background about approved CAR-T therapies and their structural differences. These statements are verifiable facts that provide clinical context for the comparative analysis of CD28 vs 4-1BB costimulatory domains.",
+    "result_type": "MINOR"
+  }
+]

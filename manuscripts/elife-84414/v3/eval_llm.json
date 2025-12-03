@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C6"
+    ],
+    "result": "The authors developed a knowledge graph for immunotherapy and systematic immunity consisting of 240 targets, 345 herbal drug entities, 13 ontology terms, and 64 medicinal property attributes, implemented using Neo4j and Py2Neo tools (895 nodes, 2197 edges). A scoring system was developed to identify herbal drug combinations based on target-hitting rates and phenotype relativeness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 and C6 provide detailed methodology for knowledge graph construction including data sources, ontology design, and technical implementation. The approach is clearly described with specific numbers and tools, making it reproducible. The scoring system methodology is also explicitly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "An eight-herb combination was identified that regulates 46 cellular targets related to immunotherapy and systematic immunity, with medicinal properties classified into three categories ('heat-clearing and detoxicating,' 'Qi-tonifying,' and 'blood-activating menstruation regulating'). Pathway analysis revealed modulation of immune-related pathways including Toll-like receptor cascades, MAP kinase activation, and adaptive/innate immune systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe the identified herbal combination with supporting evidence from knowledge graph analysis (Figure 2) and pathway analysis via Reactome (Figure 3). The targets and pathways are explicitly listed and supported by citations and computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C28",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "A non-randomized controlled clinical trial was conducted with 160 PCM patients divided 1:1 into experimental group (herbal drug combination) and control group (methylprednisolone). The trial was registered (NCT05530226), IRB-approved (2021PS024T), and all patients provided informed consent. Baseline characteristics showed no significant differences between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C28, and C91-C93 provide comprehensive clinical trial design details including patient recruitment, group allocation, treatment protocols, and ethical approvals. The trial registration and IRB approval are verifiable. Baseline data equivalence is supported by Supplementary file 1A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C7",
+      "C29",
+      "C80"
+    ],
+    "result": "The herbal drug combination significantly downregulated serum inflammatory cytokines (IL-2, IL-4, IL-6, IFN-\u03b3, IL-1\u03b2, TNF-\u03b1) in PCM patients compared to methylprednisolone control group. These cytokines are established serum markers for PCM pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C7, C29, and C80 are supported by experimental data in Figure 4 showing statistically significant reductions in multiple cytokines. Claim C49 provides rationale for cytokine selection with citation support (Liu et al., 2018). Statistical significance is clearly indicated in the figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C8",
+      "C81"
+    ],
+    "result": "The herbal drug combination markedly suppressed serum IgA and IgG levels compared to control group. IgA and IgG are crucial diagnostic markers for PCM, with IgA being a major component of mucosal immunity related to PCM pathogenesis. The treatment may regulate mucosal immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C8, and C81 are supported by experimental data in Figure 5. Claims C51-C52 provide literature support for the relevance of these markers (Xing et al., 2022; Betts et al., 2018; Bharathan and Mullarky, 2011). Claim C53 is a reasonable inference based on observed IgA/IgG downregulation and known IgA role in mucosal immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C10",
+      "C30",
+      "C79"
+    ],
+    "result": "Quality of life measures (symptom score, pain score, global health status) were significantly improved in the herbal drug combination group compared to control group. Detailed analysis of these three indicators suggests the herbal combination may be more effective than methylprednisolone in reversing clinical conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C10, C30, and C79 are supported by Quality of Life questionnaire data in Figure 6 and supplementary figures. Statistical significance is demonstrated for multiple quality of life parameters. The comparative effectiveness claim (C79) is appropriately qualified as a suggestion based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C9",
+      "C31",
+      "C82",
+      "C88"
+    ],
+    "result": "The herbal drug combination reduced PCM recurrence rate to 3.75% compared to 12.5% in the methylprednisolone control group. This addresses a major obstacle in PCM treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C9, C31, C82, and C88 are supported by clinical trial data in Table 1 showing statistically significant difference in recurrence rates (p=0.043). The clinical importance is appropriately emphasized given that recurrence is acknowledged as a major treatment challenge (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The incidence rate of adverse events was reduced to 6.25% in the treatment group compared to 11.25% in the control group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is supported by data in Table 1, but the difference is not statistically significant (p=0.263). While the trend favors the herbal combination, the lack of statistical significance means this result cannot be considered definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Clinical symptoms (swelling, abscess, fistula) were reversed in the experimental group, with clinical symptom scores of ~4.68 in the experimental group compared to ~5.98 in control group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 are supported by clinical observations in Figure 7 and Supplementary file 3, and quantitative data in Table 2 showing statistically significant difference (p<0.001) in symptom scores between groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The herbal drug combination may achieve better efficacy for PCM treatment compared to methylprednisolone, providing a new treatment avenue with reduced recurrence and adverse events. The combination acts through regulation of multiple cellular targets and immunoinflammatory pathways, leading to improved systematic immune levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C85, C86, C87, and C89 represent interpretive conclusions based on the clinical trial results. While supported by the data presented (cytokines, immunoglobulins, recurrence, symptoms), these are appropriately qualified as suggestions/inferences. The mechanistic claim (C87) linking target regulation to immune improvement is plausible but not directly demonstrated. The lack of a placebo control (acknowledged by authors in C76-C77) limits definitive superiority claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C68",
+      "C69"
+    ],
+    "result": "This is the first application of knowledge graph to identify herbal drug combinations for PCM. The knowledge graph with scoring functions can automatically identify novel herbal drug combinations that hit multiple discrete targets, representing a unique strategy in the TCM community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C68, and C69 describe the novelty of the approach. The methodology is clearly described and implemented (C26-C37). The claim of being 'first' for PCM application is reasonable given the specific disease context. The capability to identify multi-target combinations is demonstrated by the identified 8-herb formula targeting 46 immune-related targets (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors acknowledge several limitations: the hypothesis that multi-target combinations are more effective remains to be fully validated; chemical ingredients were not included in the knowledge graph due to data limitations; a placebo control arm could not be added due to ethical concerns about untreated PCM potentially progressing to breast cancer. Future work will incorporate omics data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 represent appropriate acknowledgment of study limitations and future directions. The ethical justification for not including a placebo arm (C77-C78) is reasonable given the serious nature of PCM. The limitations regarding chemical ingredients (C72-C73) and the hypothesis-driven nature of the approach (C71) are honestly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C66",
+      "C70",
+      "C83",
+      "C84"
+    ],
+    "result": "PCM is a serious nonbacterial breast inflammation in young/middle-aged females with limited treatment options. The mechanism remains unclear but involves immune dysregulation. Current treatments (surgery, hormone therapy) cannot prevent recurrence and have problematic side effects. The pathogenesis involves multiple targets and immunoinflammatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11-C17, C66, C70, C83-C84 provide background on PCM based on established medical knowledge and literature citations (Cutler 1949, Yu et al. 2012, Cheng et al. 2015, Fleming et al. 2022, Liu et al. 2015). These claims establish the clinical need and rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "Drug combinations can provide improved efficacy and reduced toxicity by hitting multiple targets. TCM has a long history in disease treatment and has been applied to PCM. Knowledge graph technology has emerged as an AI tool for drug discovery, enabling identification of drug combinations and drug repurposing. TCM combinations can hit multiple immunoinflammatory targets with improved efficacy and reduced toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18-C25, C60-C64, and C67 provide background on combination therapy principles, TCM history, and knowledge graph applications. These are supported by appropriate citations (Tu 2011/2016, Li et al. 2010, Ye et al. 2021, Zeng et al. 2022, Yang et al. 2009, Zhang et al. 2020a) and represent established knowledge in their respective fields.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "These results underscore the potential of knowledge graph to identify drug combinations or novel therapeutics across various types of human disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 represents a broad extrapolation from a single disease application (PCM) to 'various types of human disorders.' While the knowledge graph approach may have broader applicability, this claim extends beyond what is demonstrated in the study. The success in PCM does not necessarily validate the approach for other diseases with different pathophysiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Specific immune pathways (Toll-like receptor cascades, adaptive immune system, cytokine signaling, innate immune system, MAP kinase activation) are critical for systematic immunity and directly associated with PCM pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 connect the identified pathways (from C47) to PCM pathogenesis based on general immunological knowledge and the pathway analysis results. The associations are reasonable given the inflammatory nature of PCM and the known roles of these pathways in immune responses.",
+    "result_type": "MINOR"
+  }
+]

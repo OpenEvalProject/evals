@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The WASH complex, composed of five core proteins (WASHC1-5), is broadly expressed and plays a central role in non-neuronal endosomal trafficking by activating Arp2/3-dependent actin branching. It interacts with cargo adaptor complexes (Retromer, Retriever, CCC) and its loss results in aberrant endosomal tubule elongation and cargo mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all explicitly stated with extensive supporting citations from prior research. These claims establish well-documented background knowledge about the WASH complex structure and function in non-neuronal cells, providing appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Human mutations in WASH complex components are associated with neurological diseases. Dominant missense mutations in WASHC5 cause hereditary spastic paraplegia (SPG8), while autosomal recessive mutations in WASHC4 and WASHC5 are associated with intellectual disabilities. Specifically, the WASHC4 c.3056C>G (p.Pro1019Arg) mutation was identified in children with non-syndromic intellectual disability, and patient-derived cell lines showed decreased WASH protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are explicitly stated with supporting citations from prior research. These claims establish the clinical relevance and rationale for studying the SWIPP1019R mutation, though the mechanistic understanding of how these mutations cause disease was unknown prior to this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "In vivo BioID (iBioID) identified the neuronal WASH proteome containing 175 significantly enriched proteins, including all five WASH complex components, 13 previously reported WASH interactors, and proteins enriched for endosomal (23), endocytic (24), cytoskeletal regulatory (31), and synaptic (27) functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 are supported by explicit data presentation with appropriate statistical thresholds (fold-change\u22654.0, FDR<0.05) and reference to figures. The identification of all five WASH components and known interactors validates the approach. However, the manuscript lacks details on biological replicates and validation of key interactions by orthogonal methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A CRISPR-generated mouse model of the human WASHC4c.3056C>G mutation (SWIPP1019R) shows significantly decreased abundance of Strumpellin and WASH1 in brain lysate. The SWIPP1019R mutation impairs WASH complex formation, as demonstrated by reduced co-immunoprecipitation of Strumpellin (54.8% of WT) and WASH1 (41.4% of WT) with mutant SWIP in HEK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by explicit data with statistical analysis (n=3 for western blots, n=4 for co-IP). The co-IP experiments in HEK cells provide mechanistic insight, though validation in neuronal cells would strengthen the conclusion. The phenocopy of human patient data validates the mouse model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Spatial proteomics analysis of SWIPP1019R mouse brain identified 6,919 reproducibly quantified proteins. Analysis revealed 65 proteins with significantly altered abundance in at least one subcellular fraction, including five proteins (four WASH proteins and RAB21A) differentially abundant in all seven fractions. Overall, 728 proteins were differentially abundant between WT and MUT brain across all fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by rigorous quantitative proteomics with appropriate statistical methods (MSstatsTMT, Benjamini-Hochberg FDR<0.05) and three biological replicates. The identification of WASH complex proteins and known interactor RAB21A as most consistently altered validates the approach and mutation effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Network analysis of the spatial proteomics data identified 49 protein modules that strongly covary together, with 23 modules showing significant differences between WT and MUT brain. Module 38 (M38) contains the WASH complex, CCC, Retriever, and CORVET/HOPS complexes, was predicted to have endosomal function, and exhibited significantly decreased abundance in MUT brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by sophisticated network analysis using established methods (Leiden algorithm, Surprise quality statistic) with appropriate statistical testing (Bonferroni p-adjust<0.05). The co-clustering of functionally related complexes (WASH, CCC, Retriever, CORVET/HOPS) in M38 provides strong biological validation of the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Module 36 (M36) was enriched for lysosomal protein components and exhibited increased abundance in MUT brain, in contrast to the decreased abundance of the endosomal module M38. M36 contains lysosomal cathepsin proteases (CTSA, CTSB, CTSS, CTSL), key lysosomal hydrolases (HEXA, GBA, GLB1, MAN2B1, MAN2B2), all eight exocyst complex subunits, and the lysosomal glycoprotein progranulin (GRN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by explicit data with statistical analysis (hypergeometric test p-adjust<0.05) and appropriate citations for protein functions. The increased abundance of lysosomal proteins contrasting with decreased endosomal proteins suggests compensatory or pathological changes, though the manuscript appropriately notes this interpretation as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Primary cortical neurons from SWIPP1019R mutant mice display structural abnormalities in endo-lysosomal compartments. MUT neurons show larger EEA1+ somatic puncta than WT neurons (with no difference in total number), and significantly fewer but larger Cathepsin D+ puncta compared to WT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by quantitative 3D reconstruction analysis with appropriate statistical testing. The data are consistent with loss of WASH function causing cargo accumulation at endosomes. However, the manuscript lacks information on the number of independent culture preparations and whether the experimenter was blinded during analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SWIPP1019R mutant brains exhibit markers of neurodegeneration. At 10 months old, MUT motor cortices display significantly greater cleaved caspase-3 staining compared to WT controls. Transmission electron microscopy revealed large electron-dense inclusions in MUT neuron cell bodies, associated with electron-lucent lipid-like inclusions, consistent with lipofuscin accumulation at lysosomal residual bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by explicit data with statistical analysis and appropriate citations for lipofuscin identification. The progressive nature (no difference at P42, significant at 10mo) and motor cortex specificity strengthen the findings. However, the manuscript would benefit from quantification of lipofuscin in additional brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "SWIPP1019R mutant mice display persistent deficits in cued fear memory. MUT mice showed significantly decreased conditioned freezing to tone presentation compared to WT littermates 48 hours after fear conditioning, with this deficit evident at both adolescence (P42) and adulthood (6.5 months).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by explicit behavioral data with appropriate statistical analysis (two-way ANOVA, Sidak's post hoc) and controls for sensory function. The persistent deficit across ages suggests a fundamental impairment rather than developmental delay. Sample sizes appear adequate (n=10-13 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SWIPP1019R mutant mice exhibit progressive motor deficits. MUT mice performed markedly worse than WT controls on the rotarod at both adolescence and adulthood. At adulthood (5.5 months), MUT mice displayed significantly longer rear swing time, longer hindlimb strides, and decreased homologous coupling (abnormal gait symmetry) compared to WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by explicit behavioral data with appropriate statistical analysis and adequate sample sizes (n=11-14 per group). The progressive nature of deficits (more pronounced at adulthood) and multiple converging measures (rotarod, gait analysis) strengthen the findings. The lack of differences at adolescence in some gait parameters suggests age-dependent progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "All human SWIPP1019R patients exhibited motor symptoms including fine motor difficulties, dysmetria, dysdiadochokinesia, and mild dysarthria, in addition to the previously reported cognitive impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by explicit clinical data from retrospective analysis of seven patients (mean age 10.4 years). This finding is significant as motor symptoms were not the primary reason for medical evaluation, suggesting they may have been underappreciated. However, the retrospective nature and small sample size limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The authors propose a mechanistic model whereby SWIPP1019R causes loss of WASH complex function, resulting in endo-lysosomal disruption and accumulation of neurodegenerative markers (upregulation of unfolded protein response modulators and lysosomal enzymes, lipofuscin accumulation, cleaved caspase-3), ultimately leading to cognitive deficits and progressive motor impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 represent the authors' integrative model synthesizing multiple lines of evidence from proteomics, cellular analyses, and behavioral studies. The model is well-supported by the convergent data, though some mechanistic links remain speculative. The claim of 'first mechanistic evidence' is reasonable given the comprehensive approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "In vivo proximity-based proteomics in wild-type mouse brain demonstrated that the neuronal WASH complex closely interacts with the CCC (COMMD9 and CCDC93) and Retriever (VPS35L) cargo selective complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by the iBioID data (Figure 1) and spatial proteomics co-clustering (M38, Figure 3). The convergence of two independent proteomic approaches strengthens this conclusion. However, the manuscript notes that Retromer was not significantly enriched in iBioID, which may reflect technical limitations of the BioID approach or use of WASH1 as the bait.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The authors speculate that loss of WASH function may lead to increased accumulation of cargo and associated machinery at early endosomes, eventually overburdening early endosomal vesicles and triggering transition to late endosomes for subsequent fusion with degradative lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is explicitly stated as speculation and is based on the observation of enlarged EEA1+ puncta (Figure 5). While this interpretation is plausible and consistent with known WASH function, it lacks direct experimental validation. The manuscript appropriately presents this as a hypothesis rather than a conclusion, but additional experiments (e.g., cargo trafficking assays, endosomal maturation markers) would be needed to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors contextualize their findings within the broader literature on endo-lysosomal dysfunction in neurological diseases. They note that elevated ER stress modulators can indicate neurodegenerative states, that mutations in endo-lysosomal mediators are implicated in multiple neurological diseases (Parkinson's, Huntington's, Alzheimer's, frontotemporal dementia, NCLs, hereditary spastic paraplegia), and that mutations in the WASH interactor VPS35 are associated with Parkinson's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are explicitly stated with appropriate supporting citations from prior research. These claims provide important context for interpreting the current findings and are well-established in the literature. The authors appropriately use this background to frame their discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The SWIPP1019R mouse model does not display dopaminergic cell-specific changes, diverging from Parkinson's disease models, but exhibits parallels to neuronal ceroid lipofuscinosis (NCL) models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by explicit data (Figure 6\u2014figure supplement 2) showing no differences in dopaminergic neurons or striatal innervation. The comparison to NCL models is appropriate given the lipofuscin accumulation observed. However, the claim of 'parallels to NCL models' is somewhat speculative as direct comparisons to NCL mouse models are not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors compare their findings to neuronal ceroid lipofuscinoses (NCLs), which are lysosomal storage disorders primarily found in children with heterogeneous presentations. Most NCL patients present with neurological impairments and lysosomal lipofuscin accumulation. While the human SWIPP1019R mutation has not been classified as an NCL, the mouse model findings suggest that loss of WASH complex function leads to phenotypes bearing strong resemblance to NCLs, including lipofuscin accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by appropriate citations for NCL characteristics and explicit data from the current study (Figures 5-8) showing lipofuscin accumulation and other NCL-like features. The authors appropriately note that the human mutation has not been classified as NCL while drawing parallels based on their mouse model data. This comparison is reasonable but somewhat speculative regarding human disease classification.",
+    "result_type": "MAJOR"
+  }
+]

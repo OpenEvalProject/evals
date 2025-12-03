@@ -1,0 +1,1394 @@
+{
+  "submission": {
+    "id": "2c7df545-aa50-47f1-981a-73d4415abcb0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:34:34.630404Z",
+    "updated_at": "2025-12-03T04:34:34.630404Z"
+  },
+  "content": [
+    {
+      "id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "submission_id": "2c7df545-aa50-47f1-981a-73d4415abcb0",
+      "content_type": "manuscript",
+      "content_text": "# Modeling the impact of racial and ethnic disparities on COVID-19 epidemic dynamics\n\n## Authors\n\n- Kevin C Ma<sup>1</sup> ([ORCID: 0000-0002-4326-2911](https://orcid.org/0000-0002-4326-2911)) \u2020\n- Tigist F Menkir<sup>2</sup> ([ORCID: 0000-0001-6070-8017](https://orcid.org/0000-0001-6070-8017))\n- Stephen Kissler<sup>1</sup> ([ORCID: 0000-0001-6000-8387](https://orcid.org/0000-0001-6000-8387))\n- Yonatan H Grad<sup>1</sup> ([ORCID: 0000-0001-5646-1314](https://orcid.org/0000-0001-5646-1314))\n- Marc Lipsitch<sup>1</sup> ([ORCID: 0000-0003-1504-9213](https://orcid.org/0000-0003-1504-9213))\n\n### Affiliations\n\n1. Department of Immunology and Infectious Diseases, Harvard TH Chan School of Public Health Boston United States\n2. Center for Communicable Disease Dynamics, Department of Epidemiology, Harvard TH Chan School of Public Health Boston United States\n3. Division of Infectious Diseases, Brigham and Women\u2019s Hospital and Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:The impact of variable infection risk by race and ethnicity on the dynamics of SARS-CoV-2 spread is largely unknown.Methods:Here, we fit structured compartmental models to seroprevalence data from New York State and analyze how herd immunity thresholds (HITs), final sizes, and epidemic risk change across groups.Results:A simple model where interactions occur proportionally to contact rates reduced the HIT, but more realistic models of preferential mixing within groups increased the threshold toward the value observed in homogeneous populations. Across all models, the burden of infection fell disproportionately on minority populations: in a model fit to Long Island serosurvey and census data, 81% of Hispanics or Latinos were infected when the HIT was reached compared to 34% of non-Hispanic whites.Conclusions:Our findings, which are meant to be illustrative and not best estimates, demonstrate how racial and ethnic disparities can impact epidemic trajectories and result in unequal distributions of SARS-CoV-2 infection.Funding:K.C.M. was supported by National Science Foundation GRFP grant DGE1745303. Y.H.G. and M.L. were funded by the Morris-Singer Foundation. M.L. was supported by SeroNet cooperative agreement U01 CA261277.\n\n## Introduction\n\nThe dynamics of SARS-CoV-2 spread are influenced by population heterogeneity. This is especially true for herd immunity, which occurs when susceptible individuals in a population are indirectly protected from infection due to immunity in others. The herd immunity threshold (HIT) is the fraction of the population that is non-susceptible when an unmitigated epidemic reaches its peak, and estimating the HIT for SARS-CoV-2 is important for forecasting the harm associated with letting the epidemic spread in the absence of interventions (Randolph and Barreiro, 2020). A population that has reached the HIT is protected from a new epidemic occurring, until births or waning immunity reduce the proportion nonsusceptible below the HIT, but existing cases will still lead to some onward transmission as the epidemic declines and can often result in a final epidemic size that exceeds the HIT. In a population with homogeneous mixing, the HIT is 1\u20131/R0, where R0 is the basic reproduction number; this translates to an HIT of 67% using an R0 of 3.\n\nHowever, population homogeneity is an unrealistic assumption, and models incorporating heterogeneity in social exposure and infection susceptibility (defined as the probability of infection given exposure) generally result in lowered HITs (Hill and Longini, 2003; Britton et al., 2020; Gomes et al., 2020; Aguas et al., 2020; Tkachenko et al., 2020). The key idea behind these models is that subpopulations important for epidemic spread (i.e., those with substantially increased susceptibility or exposure) become infected \u2013 and thus develop immunity \u2013 early on in an epidemic\u2019s course. Herd immunity for the population overall is then achieved earlier because once these individuals are no longer susceptible to infection, further epidemic spread is slowed.\n\nImportantly, these models also imply that in locations where SARS-CoV-2 has spread there may be demographic subpopulations with particularly high cumulative incidences of infection due to increased exposure, susceptibility, or both. Seroprevalence studies \u2013 which characterize past exposure by identifying SARS-CoV-2 antibodies \u2013 can identify these subpopulations and are more reliable and unbiased than case data, which suffer from under-reporting and other biases (Metcalf et al., 2020). Identifying and building structured models with these groups in mind is important for understanding how variation in exposure or susceptibility and social disparities is interconnected. These models are also useful for designing interventions that can both reduce disparities and disrupt overall transmission by focusing efforts on groups most affected by high transmission rates (Wallinga et al., 2010; Bubar et al., 2021). Transmission models in this space have incorporated subpopulation structure by focusing primarily on accounting for variation in susceptibility and exposure by age (Britton et al., 2020; Davies et al., 2020; Miller et al., 2020). Supporting this approach, susceptibility to infection, contact rates, and cumulative incidence in some locations all appear to vary by age (Davies et al., 2020; Mossong et al., 2008). Nonetheless, serosurveys in Belgium, Spain, Iran, New York City (NYC), Brazil, and other places exhibit relatively low variation in seropositivity by age (Herzog et al., 2020; Poll\u00e1n et al., 2020; Shakiba et al., 2020; Rosenberg et al., 2020; Hallal et al., 2020), indicating additional factors that govern transmission spread.\n\nSubstantial racial and ethnic disparities in infection rates, hospitalizations, and deaths have been characterized across the US (Chamie et al., 2020; Moore et al., 2020; Millett et al., 2020a; Pan et al., 2020; Chen and Krieger, 2020; Bassett et al., 2020; Hanage et al., 2020), but it is unclear how these heterogeneities in risk are expected to change over time and what implications \u2013 if any \u2013 they have on overall epidemic dynamics. Here, we aim to address these questions by fitting compartmental SEIR transmission models structured by race and ethnicity to seroprevalence data from NYC and Long Island (Rosenberg et al., 2020). We focus primarily on building and analyzing variable exposure models because observed disparities in infection rates in US cities are strongly attributable to differences in mobility and exposure (Chang et al., 2021; Zelner et al., 2020; Kissler et al., 2020). Because of the challenges in acquiring racial and ethnic COVID-19 data (Krieger et al., 2020b), including social contact data that can be used in transmission models, we analyze a range of model structures that are compatible with the data and assess how these assumptions affect estimates of HITs, final epidemic sizes, and longitudinal trends in risk across groups. These results highlight the importance of developing socially informed COVID-19 transmission models that incorporate patterns of epidemic spread across racial and ethnic groups.\n\n## Materials and methods\n\n### SEIR model\n\nWe initially modeled transmission dynamics in a homogeneous population using a SEIR compartmental SARS-CoV-2 infection model:\n\n$$\n\\frac{d\u2062S}{d\u2062t}=-\\beta\u2062I\u2062S\n$$\n\n\n\n$$\n\\frac{d\u2062E}{d\u2062t}=\\beta\u2062I\u2062S-r\u2062E\n$$\n\n\n\n$$\n\\frac{d\u2062I}{d\u2062t}=r\u2062E-\\gamma\u2062I\n$$\n\n\n\n$$\n\\frac{d\u2062R}{d\u2062t}=\\gamma\u2062I\n$$\n\nwhere $S,E,I,R$ refer to the number of people in susceptible, latently infected, infectious, and recovered compartments, respectively. Given a mean incubation period and mean serial interval of 5 days as suggested by empirical studies (Nishiura et al., 2020; Lauer et al., 2020), we set the mean latent period $1/r$ to be 3 days to allow for pre-symptomatic transmission and the mean infectious period $1/\\gamma$ to be 4 days to coincide with the observed serial interval. The per capita transmission rate is given by $\\beta=R_{0}\u2062\\gamma/N$, where $N$ is the total number of people in the population.\n\nWe extended this model to incorporate multiple racial and ethnic groups by including SEIR compartmental variables for each group, which interact through a social contact matrix that governs the interactions between and within groups. In matrix form, the structured SEIR model is given by\n\n$$\n\\frac{dS}{dt}=\u2212(BI)\u2218S\n$$\n\n\n\n$$\n\\frac{dE}{dt}=(BI)\u2218S\u2212rE\n$$\n\n\n\n$$\n\\frac{dI}{dt}=rE\u2212\\gammaI\n$$\n\n\n\n$$\n\\frac{dR}{dt}=\\gammaI\n$$\n\nwhere \u00b0 denotes element-wise multiplication and $S,E,I,R$ are column vectors comprising the compartmental variables for each group (e.g., $S=[S_{0},\u2026,S_{p}]^{T}$ for $p$ demographic groups). We let S0 denote non-Hispanic whites, S1 denote Hispanics or Latinos, S2 denote non-Hispanic African-Americans, S3 denote non-Hispanic Asians, and S4 denote multiracial or other demographic groups, with similar ordering for elements in vectors $E$ through $R$.\n\nWe define contacts to be interactions between individuals that allow for transmission of SARS-CoV-2 with some non-zero probability. Following the convention for age-structured transmission models (Wallinga et al., 2019), we defined the $p\\timesp$ per capita social contact matrix $C$ to consist of elements $c_{i\u2190j}$ at row $i$ and column $j$, representing the per capita rate that individuals from group i are contacted by individuals of group $j$. Letting $N_{i}$ be the total number of individuals in group i, the social contact matrix $M$ consists of elements $m_{i\u2190j}=c_{i\u2190j}*N_{i}$, which represents the average number of individuals in group i encountered by an individual in group $j$. The susceptibility to infection can vary between groups, which we modeled by allowing the probability of infection given contact with an infected individual to vary: $q=[q_{0},...,q_{p}]^{T}$. The transmission matrix $B$ is then given by $(q1^{T})\u2218C$, where $1^{T}$ is a one by $p$ vector of 1 s:\n\n$$\nB=[q_{0}...q_{0}...q_{0}\u22ee\u22ee\u22eeq_{4}...q_{4}...q_{4}]\u2218[c_{0\u21900}...c_{0\u21902}...c_{0\u21904}\u22ee\u22ee\u22eec_{4\u21900}...c_{4\u21902}...c_{4\u21904}]\n$$\n\nGiven mean duration of infectiousness $1/\\gamma$, the next-generation matrix $G$, representing the average number of infections in group i caused by an infected individual in group $j$, is given by $(q\u20621^{T})\u2218M/\\gamma=N\u2218B/\\gamma$. R0 for the overall population described by this structured model was calculated by computing the dominant eigenvalue of matrix $G$. The effective reproduction number $R_{t}$ at time $t$ was calculated by computing the dominant eigenvalue of $G_{t}=(q1^{T})\u2218M_{t}/\\gamma=S_{t}\u2218B/\\gamma$, where the elements in $M_{t}$ are given by $c_{i\u2190j}*S_{i,t}$ and $S_{i,t}$ is the number of susceptible individuals in group i at time $t$. To hold R0 values across model types constant when calculating HITs and final epidemic sizes, we re-scaled transmission matrices to have the same dominant eigenvalue. We also calculated the instantaneous incidence rate at some time $t$ for all groups by calculating the force of infection $\\lambda_{t}=(BI_{t})\u2218S_{t}$. To account for the effects of social distancing and other non-pharmaceutical interventions (NPIs), we scaled the transmission rate by a factor $\\alpha$ beginning when 5% cumulative incidence in the population was reached, representing an established and expanding epidemic, for a variable duration. We analyzed a range of $\\alpha$ values to reflect the variation in NPIs implemented.\n\n### Structured model variants\n\nSimplifying assumptions are needed to constrain the number of variables to estimate in $B$ given limited data. Under the variable susceptibility model, we set the contact rates $c_{i\u2190j}$ to all be 1, indicating no heterogeneity in exposure, but allowed the qj in the susceptibility vector to vary (i.e., $B=q1^{T}$).\n\nUnder each of two variable exposure models, in contrast, we set the susceptibility factors qj to be equal. The simplest variable exposure model we analyzed was the proportionate mixing model, which assumes that the contact rate for each pair of groups is proportional to the total contact rate of the two groups (i.e., total number of contacts per unit time for an individual of group i) (Hethcote, 1996). Denoting ai as the total contact rate for a member of group $\u00a0i$ and $a$ as the $1\\timesp$ vector of ais, the $i\u2062j$ th entry in the transmission matrix is given by\n\n$$\n\\beta_{i\u2190j}=q\u2062\\frac{a_{i}\u2062a_{j}}{\\sum_{k}a_{k}\u2062N_{k}}\n$$\n\nand the overall transmission matrix $B$ can be written as\n\n$$\nB=\\frac{q}{\\sumka_{k}N_{k}}aa^{T}\n$$\n\nFinally, under the assortative mixing assumption, we extended this model by partitioning a fraction $\u03f5$ of contacts to be exclusively within-group and distributed the rest of the contacts according to proportionate mixing (with $\\delta_{i\u2062j}$ being an indicator variable that is 1 when $i=j$ and 0 otherwise) (Hethcote, 1996):\n\n$$\n\\beta_{i\u2190j}=(1-\u03f5)\u2062q\u2062\\frac{a_{i}\u2062a_{j}}{\\sum_{k}a_{k}\u2062N_{k}}+\u03f5\u2062\\delta_{i\u2062j}\u2062q\u2062\\frac{a_{i}}{N_{i}}\n$$\n\n\n\n$$\nB=\\frac{(1\u2212\u03f5)q}{\\sumka_{k}N_{k}}aa^{T}+\u03f5qdiag(a\u22181/N)\n$$\n\n### Calculating the HIT and final epidemic size\n\nWe defined the HIT for all models as the fraction of nonsusceptible people when the effective reproduction number $R_{t}$ first crosses 1. In the homogenous model, where $R_{t}=S_{t}\u2062\\beta/\\gamma$, the analytical solution for the HIT occurs when the fraction of nonsusceptible individuals equals 1\u20131/R0. In the structured models of heterogeneous populations, the HIT was calculated via simulation: we took the dominant eigenvalue of $G_{t}$ at each timestep to calculate $R_{t}$ and identified the number of nonsusceptible individuals when $R_{t}$ first decreased below 1. For the heterogeneous models with mitigation measures, $R_{t}$ was calculated at each timestep with respect to the corresponding unmitigated epidemic; in other words, the mitigation scaling factor $\\alpha$ was not included in the $R_{t}$ calculation. This identifies the point in the epidemic trajectory at which the population reaches the HIT even if all mitigation measures were lifted (i.e., HIT due to population immunity), as opposed to the point in the trajectory when the population transiently reaches the HIT due to mitigation measures (see Figure 1\u2014figure supplement 1 for further explanation).\n\nFinal epidemic sizes were calculated by simulation by running the epidemic out to 1 year for R0 above 2 and 4 years for R0 below 2 to allow additional time for the slower epidemics to fully resolve. The final time point was used as the estimate for the final epidemic size.\n\n### Model fitting and data sources\n\nSEIR differential equations were solved using the lsoda function in the deSolve package (version 1.28) of R (version 3.6.3). We estimated the ai in the variable exposure models and the qi in the variable susceptibility models using maximum likelihood fits to a single cross-sectional serosurvey from New York, which was collected from over 15,000 adults in grocery stores from April 19 to 28 (Rosenberg et al., 2020). We assumed that the seroprevalence data (adjusted cumulative incidence estimates from Table 2 in Rosenberg et al., 2020) were collected via a binomial sampling process: at a given time point ts representing the time of the serosurvey, the number of seropositive cases $Y_{i}\u2062(t_{s})$ in group i is distributed $B\u2062i\u2062n\u2062(m_{i},R_{i}\u2062(t_{s})/N_{i}\u2062(t_{s}))$, where mi is the number of people tested from group i in the serosurvey and $R_{i}/N_{i}$ is the fraction of recovered people from the SEIR model. The likelihood was calculated jointly for all demographic groups, with ts set to 100 days and the initial number of infected individuals set to 1 in each demographic group.\n\nWe conducted sensitivity analyses to assess whether these assumptions on epidemic timing, and number and distribution of initial infected individuals, affected parameter and HIT estimates. Varying the timing of epidemic start did not substantially affect HIT estimates as long as the time between epidemic start and serosurvey ts was reasonably large (e.g., >20 days) and assortativity was low ($\u03f5\u00a7lt;0.8$) (Figure 2\u2014figure supplement 1). The distribution and number of initial infected individuals also did not substantially affect HIT estimates for low levels of assortativity ($\u03f5\u00a7lt;0.8$) (Figure 2\u2014figure supplements 2 and 3). We limited our analyses to models with $\u03f5$ less than 0.8.\n\nWe acquired total population numbers (i.e., $N_{i}$ for $i\\in{0,\u2026,4}$) from the 2018 ACS census 1-year estimates Table B03002 (Hispanic or Latino origin by race) subsetted to the following counties: Bronx, Kings, New York, Queens, and Richmond Counties for NYC and Nassau and Suffolk Counties for Long Island. We acquired population numbers at the level of \u2018all block groups\u2019 within the above counties from the 2018 ACS 5-year estimates Table B03002 (Hispanic or Latino origin by race). Copies of the census data we used are available at https://github.com/kevincma/covid19-race-ethnicity-model/tree/main/data.\n\n### Census-informed transmission model\n\nThe total number of contacts $C_{i\u2062j}$ between groups i and $j$ can be calculated using the assortative mixing social contact matrix.\n\n$$\nC_{i\u2062j}=c_{i\u2062j}\u2062N_{i}\u2062N_{j}=(1-\u03f5)\u2062\\frac{a_{i}\u2062a_{j}\u2062N_{i}\u2062N_{j}}{\\sum_{k}a_{k}\u2062N_{k}}+\u03f5\u2062\\delta_{i\u2062j}\u2062a_{i}\u2062N_{j}\n$$\n\nTo fit this assortative mixing model to both serosurvey and census data, we modeled interactions between racial and ethnic groups at the census block group level \u2013 which we interpreted to be roughly equivalent to neighborhoods \u2013 allowing the structure of the census data to inform the dynamics of transmission. Specifically, we assumed proportionate mixing between racial and ethnic groups in each census block group, with no interactions between block groups. Under this proportionate mixing within neighborhoods assumption, the total number of contacts $C_{i\u2062j}^{\u2032}$ between groups i and $j$ is proportional to:\n\n$$\nC_{i\u2062j}^{\u2032}\u221d\\sumlLa_{i}\u2062a_{j}\u2062N_{i,l}\u2062N_{j,l}\n$$\n\nwhere $L$ is the number of census block groups, $N_{j,l}$ is the number of people from demographic group $j$ in census block $l$, and aj is the total contact rate per individual in group $j$ as before. Within each neighborhood, proportionate mixing holds: the total number of contacts between two groups is proportional to the activity level and neighborhood population of the groups. Additionally, similarly to the previous models, the total number of contacts across all groups ($\\sum_{i\u2062j}C_{i\u2062j}^{\u2032}$) must equal $\\sum_{k}a_{k}\u2062N_{k}$; to satisfy this constraint, we set a proportionality constant:\n\n$$\nC_{i\u2062j}^{\u2032}=\\frac{\\sum_{k}a_{k}\u2062N_{k}}{\\sum_{i\u2062j\u2062l}a_{i}\u2062a_{j}\u2062N_{i,l}\u2062N_{j,l}}\u2062\\sumlLa_{i}\u2062a_{j}\u2062N_{i,l}\u2062N_{j,l}\n$$\n\nTo fit $\u03f5$, we minimized the absolute difference between these two formulations ($C_{i\u2062j}$ and $C_{i\u2062j}^{\u2032}$) of the total number of contacts across all pairs of groups (Figure 2\u2014figure supplement 4):\n\n$$\n\u03f5^=argmin\u03f5\\sumij|C_{ij}\u2212C_{ij}^{\u2032}|=argmin_{\u03f5}\u2061\\sumij|(1\u2212\u03f5)\\frac{a_{i}a_{j}N_{i}N_{j}}{\\sumka_{k}N_{k}}+\u03f5\\delta_{ij}a_{i}N_{j}\u2212\\frac{\\sumka_{k}N_{k}}{\\sumijla_{i}a_{j}N_{i,l}N_{j,l}}\\sumlLa_{i}a_{j}N_{i,l}N_{j,l}|\n$$\n\nUsing the fitted value $\u03f5^$, we then conducted maximum likelihood to fit the varying ai as described previously. We repeated this process iteratively \u2013 holding ai constant while $\u03f5$ was fit, and then vice versa \u2013 until convergence, which we defined as the difference between successive $\u03f5^$ values being lower than a threshold of 0.001 (Supplementary file 3). For the first iteration, we fit $\u03f5^$ holding ai constant at 1. We used this iterative fitting procedure to accommodate both the seroprevalence and census data because the single seroprevalence time point cannot fit both the activity levels and $\u03f5$.\n\nTo empirically characterize average neighborhood composition from the census data, we also calculated the exposure index matrix $P$ with elements $P_{i\u2062j}$ for demographic groups i and $j$, defined similarly to McCauley et al., 2001; Richardson et al., 2020\n\n$$\nP_{i\u2062j}=\\sumlL(\\frac{N_{j,l}}{N_{j}})\u2062(\\frac{N_{i,l}}{T_{l}})\n$$\n\nwhere $T_{l}$ is the total number of people in census block group $l$ and other variables are defined as before. The exposure indices were used for descriptive purposes only and not used in the model fitting approach.\n\n### Variable susceptibility versus variable exposure models\n\nThe serosurvey data were compatible with variable susceptibility models in which Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 2.25, 1.62, 0.86, and 1.28 times the susceptibility to infection relative to non-Hispanic whites in NYC, respectively, and 4.32, 1.96, 0.92, and 2.48 times the susceptibility to infection relative to non-Hispanic whites in Long Island, respectively. As with variable exposure models, these differences in susceptibility lowered herd immunity levels and final epidemic sizes relative to the homogeneous model (Figure 1\u2014figure supplement 2), but to a lesser extent; for instance, variable susceptibility models resulted in HITs ~10% greater than HITs under proportionate mixing for Long Island.\n\nThe difference between these models is that incorporating heterogeneity in susceptibility only affects susceptible individuals, but heterogeneity in exposure impacts both susceptible and infectious individuals: individuals from racial and ethnic groups with higher contact rates are both more likely to be infected, and when infected, to infect a greater number of secondary cases. This contrast is clear when comparing the next-generation matrices for each model, which lists the average number of secondary infections caused by an infected individual from a given demographic group (Figure 2\u2014figure supplements 5 and 6). The epidemic resolves at an earlier stage in variable exposure models once these key transmission groups become immune because of this additional compound effect on transmission.\n\nOur results contrasting mechanistic variable exposure and susceptibility models are in line with theoretical studies, which also indicate that models incorporating heterogeneity in exposure have more pronounced effects on HITs than models incorporating heterogeneity in susceptibility, assuming comparable continuous distributions of exposure and susceptibility (Tkachenko et al., 2020; Gomes et al., 2020). Tkachenko et al. showed that $H\u2062I\u2062T=1-(1/R_{0})^{(1/\\lambda)}$, where $\\lambda$ is either $1+C\u2062V^{2}$ for variable susceptibility models or $1+C\u2062V^{2}\u2062(2+\\gamma_{s}\u2062C\u2062V)/(1+C\u2062V^{2})$ for variable exposure models, and $C\u2062V$ is the coefficient of variation and $\\gamma_{s}$ is the skewness for the exposure distribution (Tkachenko et al., 2020). We calculated CV and skewness using the susceptibility and total contact rate ratios and substituted those values into the HIT formula, which is an approximation because our exposure and susceptibility distributions are discrete; nonetheless, the approximations result in similar HIT curves to the simulation results (Figure 1\u2014figure supplement 3).\n\n### Code availability\n\nCode and data to reproduce all analyses and figures are available at https://github.com/kevincma/covid19-race-ethnicity-model Ma et al., 2021, copy archived at swh:1:rev:75574621317a599e9058236f62bb34de63120e99. An executable version of the Jupyter notebook is available at https://mybinder.org/v2/gh/kevincma/covid19-race-ethnicity-model/HEAD.\n\n## Results\n\nWe model the dynamics of COVID-19 infection allowing for social exposure to infection to vary across racial and ethnic groups. Models incorporating variable susceptibility to COVID-19 are commonly used when stratifying by age because children are thought to have decreased susceptibility to infection (Davies et al., 2020). Variable susceptibility to infection across racial and ethnic groups has been less well characterized, and observed disparities in infection rates can already be largely explained by differences in mobility and exposure (Chang et al., 2021; Zelner et al., 2020; Kissler et al., 2020), likely attributable to social factors such as structural racism that have put racial and ethnic minorities in disadvantaged positions (e.g., employment as frontline workers and residence in overcrowded, multigenerational homes) (Henry Akintobi et al., 2020; Thakur et al., 2020; Tai et al., 2021; Khazanchi et al., 2020). In line with the notion that variation in exposure could instead be the main driver of observed seroprevalence differences, our primary focus is on analyzing variable exposure models; we have also analyzed variable susceptibility models for comparison (see Materials and methods section).\n\nThe simplest variable exposure models assume proportionate mixing, where the contact rate between groups is set to be proportional to the total contact rates (i.e., total number of contacts per time period per individual) of the two groups (Hethcote, 1996). We fit proportionate mixing models allowing for variable contact rates across racial and ethnic demographic groups to serosurvey data collected in late April from NYC and Long Island, comprising 5946 and 2074 adults, respectively (Rosenberg et al., 2020). The serosurvey data were compatible with proportionate mixing models in which Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 2.25, 1.62, 0.86, and 1.28 times the total contact rates relative to non-Hispanic whites in NYC. Model fits to Long Island resulted in even more pronounced exposure differences because of greater between-group differences in seropositivity (e.g., the seropositivity in Hispanics or Latinos relative to non-Hispanic whites was 1.85 times higher in Long Island than in NYC). Under proportionate mixing, Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 4.31, 1.96, 0.92, and 2.48 times the fitted total contact rates relative to non-Hispanic whites in Long Island, respectively. These differences in exposure impacted herd immunity levels and final epidemic sizes relative to the homogeneous model across a range of R0 values (Figure 1 and Figure 1\u2014figure supplement 4); for example, for an R0 of 3, the HIT decreases to 58% in NYC and 40% in Long Island compared to 67% under the homogeneous model. The observed contrast in HITs and final sizes between the proportionate mixing and the homogenous model is in line with theoretical derivations (Figure 1\u2014figure supplement 3). The HIT overall is reached in this model after cumulative incidence has disproportionately increased in certain minority groups: at the HIT, 75% of Hispanics or Latinos and 63% of non-Hispanic Black people were infected compared to 46% of non-Hispanic whites in NYC, and 77% of Hispanics or Latinos and 48% of non-Hispanic Black people were infected compared to 29% of non-Hispanic whites in Long Island (Figure 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-v3.jpg)\n\n**Figure 1.:** Variable exposure models were fitted to New York City and Long Island serosurvey data.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** $R_{t}$calculation accounting for $\\alpha$ (top) and without accounting for $\\alpha$ (bottom) for a mitigated epidemic trajectory.The model was fit to Long Island census and serosurvey data, and mitigation was initiated on day 60 for 100 days with \u03b1 = 0.4. The population reaches the herd immunity threshold (HIT) due to mitigation measures in the top $R_{t}$ trajectory at the circled time point and remains above the HIT after mitigation measures are lifted. However, we are defining the HIT relative to the unmitigated epidemic, which occurs when $R_{t}$ crosses 1 in the bottom trajectory at the circled time point. The interpretation is that even if all mitigation measures were lifted at this point, the unmitigated population will still have reached the HIT.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-figsupp2-v3.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** See Materials and methods section for additional details on comparisons.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Variable exposure models were fitted to New York City and Long Island serosurvey data.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Herd immunity thresholds versus R0 in variable exposure models with mitigation measures for $\\alpha=0.3$ (top) and $\\alpha=0.6$ (bottom).Non-pharmaceutical interventions were initiated when cumulative incidence reached 5% in all models and continued for 50 days. Models were fitted to New York City and Long Island serosurvey data.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Final epidemic sizes versus R0 in variable exposure models with mitigation measures for $\\alpha=0.3$ (top) and $\\alpha=0.6$ (bottom).Non-pharmaceutical interventions were initiated when cumulative incidence reached 5% in all models and continued for 50 days. Models were fitted to New York City and Long Island serosurvey data.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig1-figsupp7-v3.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Herd immunity threshold values for the same mitigation parameters were 46.4 \u00b1 0.5% (range). The smallest final size, corresponding to $\\alpha=0.6$ and duration = 100, was 51%. Census-informed assortativity models were fit to Long Island seroprevalence data. NPIs were initiated when cumulative incidence reached 5% in all models.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-v3.jpg)\n\n**Figure 2.:** Results are shown for an epidemic with R0 = 3. The HIT for the population is indicated with a black line, and the HIT for a homogeneous model with the same R0 is indicated with a gray line.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Models were fit to Long Island seroprevalence data. Varying the timing of epidemic start did not substantially affect herd immunity threshold estimates as long as the time between epidemic start and serosurvey was reasonable (e.g., >20 days) and assortativity was low ($\u03f5\u00a7lt;0.8$).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Models were fit to Long Island seroprevalence data. The number of initial infected individuals did not substantially affect herd immunity threshold estimates for low levels of assortativity ($\u03f5\u00a7lt;0.8$).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Models were fit to Long Island seroprevalence data. The race or ethnicity of the first infected individual did not substantially affect herd immunity threshold estimates for low levels of assortativity ($\u03f5\u00a7lt;0.8$). Group A denotes non-Hispanic whites, B denotes Hispanics or Latinos, C denotes non-Hispanic African-Americans, D denotes non-Hispanic Asians, and E denotes multiracial or other demographic groups.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** First iteration of fitting $\u03f5$ in social contact matrices to census data for New York City (top) and Long Island (bottom).Distance metric denotes the $\\sum_{i\u2062j}|C_{i\u2062j}-C^{\u2032}\u2062i\u2062j|$ (see Materials and methods) scaled by $\\sumC_{i\u2062j}$; this represents the number of \u2018mismatched\u2019 contacts relative to the total number of contacts.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Each column corresponds to an infected individual from a given demographic group and lists the expected number of secondary infections by group across the rows. Group A denotes non-Hispanic whites, B denotes Hispanics or Latinos, C denotes non-Hispanic African-Americans, D denotes non-Hispanic Asians, and E denotes multiracial or other demographic groups.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp6-v3.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Each column corresponds to an infected individual from a given demographic group and lists the expected number of secondary infections by group across the rows. Group A denotes non-Hispanic whites, B denotes Hispanics or Latinos, C denotes non-Hispanic African-Americans, D denotes non-Hispanic Asians, and E denotes multiracial or other demographic groups.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp7-v3.jpg)\n\n**Figure 2\u2014figure supplement 7.:** The mean and SD of the population size were 1357 \u00b1 649 for NYC and 1331 \u00b1 590 for Long Island, indicating that these block groups correspond approximately to local neighborhoods.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig2-figsupp8-v3.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Results are shown for an epidemic with R0 = 3, and non-pharmaceutical interventions (NPIs) were modeled with $\\alpha=0.3$ for 50 days. The HIT for the population is indicated with a black line, and the HIT for a homogeneous model with the same R0 is indicated with a gray line.\n\nThe estimated total contact rate ratios indicate increased contacts for minority groups such as Hispanics or Latinos and non-Hispanic Black people, which is in line with studies using cell phone mobility data (Chang et al., 2021); however, the magnitudes of the ratios are substantially higher than one would expect given the findings from those studies. This may reflect some of the limitations of the proportionate mixing assumption, which does not allow for preferential within-group contacts and hence must fit observed seropositivity differences solely by scaling total contact rates. To address this, we augment the model by partitioning a specified fraction $\u03f5$ of contacts to be exclusively within-group, with the remaining contacts distributed proportionately. This assortative mixing model captures more realistic patterns of interactions due to neighborhood structure. After fitting the models across a range of $\u03f5$ values, we observed that as $\u03f5$ increases, HITs and epidemic final sizes shifted higher back towards the homogeneous case (Figure 1, Figure 1\u2014figure supplement 4); this effect was less pronounced for R0 values close to 1. This observation can be understood by comparing the epidemic cumulative incidence trajectories (Figure 3\u2014figure supplement 1) and next-generation matrices (Figure 2\u2014figure supplement 5 and 6): under proportionate mixing ($\u03f5=0$), lower-risk demographic groups are protected from further infection due to built-up immunity in higher-risk demographic groups, but the magnitude of this indirect protection decreases as the proportion of exclusively within-group contacts increases and groups become more isolated.\n\nWe assessed a range of values for $\u03f5$ because the serosurvey data cannot be used to also fit the optimal $\u03f5$ value; given limited numbers of data points, any value of $\u03f5$ can fit exactly to the single seroprevalence time point we consider. To inform plausible assortativity levels, we instead used additional data on demographic population distributions from the American Community Survey US census stratified at the census block group level, which represents a small geographic area and population (Figure 2\u2014figure supplement 7). We first calculated the exposure index, which represents the average neighborhood\u2019s demographic composition from the perspective of an individual from a given racial or ethnic group; the proportion of contacts within group were elevated, suggesting assortativity in the census data (Supplementary file 1). To directly fit $\u03f5$ with these data, we assumed proportionate mixing within census block groups and ran an iterative fitting approach to jointly fit $\u03f5$ and the ai total contact rates using both census and serosurvey data (see Materials and methods and Supplementary file 3). This approach accounts for contacts based on geographic proximity using strong assumptions on mixing patterns, but may not capture contacts in other settings, such as work, beyond one\u2019s immediate neighborhood of residence. The models jointly fitted to serosurvey and census data indicated that 46 and 39% of contacts were exclusively within-group in NYC and Long Island, respectively. The same groups had elevated total contact rates as under proportionate mixing, but the magnitudes of differences were now lower and more concordant with reported mobility differences (Chang et al., 2021): model estimates indicated Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 1.62, 1.35, 0.90, and 1.17 times the total contact rate relative to non-Hispanic whites in NYC, respectively, and 2.60, 1.63, 0.93, and 1.90 times the total contact rate relative to non-Hispanic whites in Long Island, respectively. For an epidemic with $R_{0}=3$, the HITs for NYC and Long Island using these census-informed assortativity models were 61 and 45%, respectively. Similar to previous models, at the HIT, 76% of Hispanics or Latinos and 66% of non-Hispanic Black people were infected compared to 50% of non-Hispanic whites in NYC, and 81% of Hispanics or Latinos and 56% of non-Hispanic Black people were infected compared to 34% of non-Hispanic whites in Long Island (Figure 2).\n\nUsing these census-informed assortative mixing models, we then considered how the relative incidence rates of infection in demographic groups could change over the course of the epidemic. Early comparisons of infection and mortality rates have helped to identify racial and ethnic groups at high risk and the risk factors for infection (Chamie et al., 2020; Moore et al., 2020; Millett et al., 2020a; Pan et al., 2020; Chen and Krieger, 2020; Bassett et al., 2020; Hanage et al., 2020), but these studies often rely on cross-sectional snapshots of epidemiological patterns. The challenge is that these metrics can change over time: for instance, multiple studies indicate decreasing disparities in incidence rate over time across racial and ethnic groups relative to non-Hispanic whites (Krieger et al., 2020a; Van Dyke et al., 2021). The reasons for these changes are multifaceted, but even independent of the effect of interventions, behavioral changes, or differential access to testing, models of epidemic spread in structured populations imply that incidence rate ratios for high-risk groups can decrease substantially as the epidemic progresses because of depletion of susceptible individuals from these groups (Goldstein et al., 2017; Koopman et al., 1991). In line with this, we observe that instantaneous incidence rate ratios are elevated initially in high-contact groups relative to non-Hispanic whites, but this trend reverses after the epidemic has peaked and overall incidence is decreasing \u2013 a consequence of the fact that a majority of individuals have already become infected (Figure 3). Similarly, cumulative incidence ratios remain elevated in high-contact racial and ethnic groups throughout the epidemic, but the magnitude decreases as the epidemic progresses (Figure 3\u2014figure supplement 2). Although these trajectories are not meant to be taken as predictive estimates, these results highlight the importance of controlling for dynamics-induced changes in epidemiological measures of disease burden when evaluating the impact of interventions for reducing inequities in SARS-CoV-2 infections (Kahn et al., 2020); otherwise, ineffective interventions \u2013 depending on their timing \u2013 might still be associated with declines in relative measures of disease burden.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig3-v3.jpg)\n\n**Figure 3.:** Dashed line represents the peak overall incidence for the epidemic.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Comparison of cumulative incidence trajectories for proportionate mixing (top) and assortative mixing ($\u03f5=0.7$; bottom) models fitted to Long Island seroprevalence data.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Dashed line represents the peak overall incidence for the epidemic.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66601/elife-66601-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Four models were fit to Long Island seroprevalence data with varied non-pharmaceutical intervention intensity and duration parameters as indicated. Dashed line represents the peak overall incidence for the epidemic. Results for no mitigation measures (i.e., $\\alpha=1$) are shown in Figure 3.\n\nFinally, we assessed how robust these findings were to the impact of social distancing and other NPIs. We modeled these mitigation measures by scaling the transmission rate by a factor $\\alpha$ beginning when 5% cumulative incidence in the population was reached. Setting the duration of distancing to be 50 days and allowing $\\alpha$ to be either 0.3 or 0.6 (i.e., a 70% or 40% reduction in transmission rates, respectively), we assessed how the R0 versus HIT and final epidemic size relationships changed. We found that the R0 versus HIT relationships were similar comparing a mitigated to an unmitigated epidemic (Figure 1\u2014figure supplement 5). In contrast, final epidemic sizes depended on the intensity of mitigation measures, though qualitative trends across models (e.g., increased assortativity leads to greater final sizes) remained true (Figure 1\u2014figure supplement 6). To explore this further, we systematically varied $\\alpha$ and the duration of NPIs while holding R0 constant at 3. We found again that the HIT was consistent, whereas final epidemic sizes were substantially affected by the choice of mitigation parameters (Figure 1\u2014figure supplement 7); the distribution of cumulative incidence at the point of HIT was also comparable with and without mitigation measures (Figure 2\u2014figure supplement 8). The most stringent NPI intensities did not necessarily lead to the smallest epidemic final sizes, an idea which has been explored in studies analyzing optimal control measures (Neuwirth et al., 2020; Handel et al., 2007). Longitudinal changes in incidence rate ratios also were affected by NPIs, but qualitative trends in the ordering of racial and ethnic groups over time remained consistent (Figure 3\u2014figure supplement 3).\n\n## Discussion\n\nHere, we explored how incorporating heterogeneity in SARS-CoV-2 spread across racial and ethnic groups could affect epidemic dynamics using deterministic transmission models. Models incorporating variable exposure generally decreased the HIT and final epidemic size, but incorporating preferential within-group contacts shifted HITs and final epidemic sizes higher, approaching the homogeneous case. Epidemiological measures of disease burden such as incidence rate ratios and cumulative incidence ratios also changed substantially over the course of the epidemic, highlighting the need to account for these trends when evaluating interventions (Kahn et al., 2020). These results illustrate the varied effects of different structured heterogeneity models, but are not meant to be best estimates given the limited seroprevalence data.\n\nAcross all model variants, the observed higher cumulative incidence among Hispanics or Latinos and non-Hispanic Black people compared to non-Hispanic whites led to estimates of higher estimated contacts relative to non-Hispanic whites, mirroring existing inequities in housing, education, healthcare, and beyond (Khazanchi et al., 2020; Millett et al., 2020a; Millett et al., 2020b; Boyd et al., 2020; Bailey et al., 2021). The estimated contact rate differences also concord with reports that frontline workers, who are unable to engage in physical or social distancing to the same degree as other types of workers, are disproportionately from minority backgrounds (Blau et al., 2020; Chang et al., 2021; Kissler et al., 2020). The assortativity we observed in the census data has root causes in many areas, including residential segregation arising from a long history of discriminatory practices (Yang et al., 2020; Millett et al., 2020b; Bailey et al., 2021; Benfer et al., 2021). Projecting the epidemic forward indicated that the overall HIT was reached after cumulative incidence had increased disproportionately in minority groups, highlighting the fundamentally inequitable outcome of achieving herd immunity through infection. All of these factors underscore the fact that incorporating heterogeneity in models in a mechanism-free manner can conceal the disparities that underlie changes in epidemic final sizes and HITs. In particular, overall lower HIT and final sizes occur because certain groups suffer not only more infection than average, but more infection than under a homogeneous mixing model; incorporating heterogeneity lowers the HIT but increases it for the highest-risk groups (Figure 2).\n\nThese results also suggest that public health interventions for reducing COVID-19 inequities can have synergistic effects for controlling the overall epidemic (Richardson et al., 2020). For instance, from a transmission-control perspective, age-structured models indicate that vaccination of high-contact age groups \u2013 such as young adults \u2013 is optimal for controlling the spread of SARS-CoV-2 (Bubar et al., 2021). Similar interventions are being explored for disadvantaged populations because of how increased exposure underlies much of the higher infection risk that racial and ethnic minorities experience. For instance, Mulberry et al. used a structured SEIR model to evaluate the impact of preferentially vaccinating essential workers, finding that such a strategy was more effective in reducing morbidity, mortality, and economic cost due to COVID-19 compared to age-only vaccination prioritization strategies (Mulberry et al., 2021). Because racial and ethnic minorities are overrepresented among essential workers (Blau et al., 2020; Chang et al., 2021; Kissler et al., 2020), further modeling studies could evaluate the impact of such strategies on also reducing inequities in COVID-19 infection rates. Wrigley-Field et al. took a different methodological approach, projecting demographically stratified death rates from 2020 into 2021 assuming various vaccination strategies (Wrigley-Field et al., 2021). In line with the prior study, they found that vaccination strategies that prioritized geographic areas based on socioeconomic criteria or prior COVID mortality rates outperformed age-based strategies in reducing overall mortality and inequities in mortality. Because populations here were considered independently, these results could be extended using a transmission modeling framework, such as the one we have described, that accounts for interactions between racial and ethnic groups and thus allows for synergistic benefits from vaccinating high-risk populations. All policy proposals in this space should, of course, carefully consider the legal and ethical dimensions of vaccinations or other interventions targeted by race or ethnicity (Schmidt et al., 2020).\n\nWe note several limitations with this study. First, biases in the serosurvey sampling process can substantially affect downstream results; any conclusions drawn depend heavily on the degree to which serosurvey design and post-survey adjustments yield representative samples (Clapham et al., 2020). For instance, because the serosurvey we relied on primarily sampled people at grocery stores, there is both survival bias (cumulative incidence estimates do not account for people who have died) and ascertainment bias (undersampling of at-risk populations that are more likely to self-isolate, such as the elderly) (Rosenberg et al., 2020; Accorsi et al., 2021). These biases could affect model estimates if, for instance, the capacity to self-isolate varies by race or ethnicity \u2013 as suggested by associations of neighborhood-level mobility versus demographics (Kishore et al., 2020a; Kissler et al., 2020) \u2013 leading to an overestimate of cumulative incidence and contact rates in whites. Other sources of uncertainty, such as antibody test sensitivity and specificity, could also be incorporated into transmission models in future work (Larremore et al., 2020; Accorsi et al., 2021). Second, we have assumed that seropositivity implies complete immunity and that immunity does not wane. These are strong assumptions that can be revisited as empirical studies on the length of natural immunity are conducted. Third, we have assumed the impact of NPIs such as stay-at-home policies, closures, and the like to equally affect racial and ethnic groups. Empirical evidence suggests that during periods of lockdown certain neighborhoods that are disproportionately wealthy and white tend to show greater declines in mobility than others (Kishore et al., 2020a; Kissler et al., 2020). These simplifying assumptions were made to aid in illustrating the key findings of this model, but for more detailed predictive models, the extent to which contact rate differences change could be evaluated using longitudinal contact survey data (Feehan and Mahmud, 2020) since granular mobility data are typically not stratified by race and ethnicity due to privacy concerns (Kishore et al., 2020b). Fourth, due to data availability, we have only considered variability in exposure due to one demographic characteristic; models should ideally strive to also account for the effects of age on susceptibility and exposure within strata of race and ethnicity and other relevant demographics, such as socioeconomic status and occupation (Mulberry et al., 2021). These models could be fit using representative serological studies with detailed cross-tabulated seropositivity estimates. Finally, we have estimated model parameters using a single cross-sectional serosurvey. To improve estimates and the ability to distinguish between model structures, future studies should use longitudinal serosurveys or case data stratified by race and ethnicity and corrected for underreporting; the challenge will be ensuring that such data are systematically collected and made publicly available, which has been a persistent barrier to research efforts (Krieger et al., 2020b). Addressing these data barriers will also be key for translating these and similar models into actionable policy proposals on vaccine distribution and NPIs.\n\nIn summary, we have explored how deterministic transmission models can be extended to study the dynamics of infection in racial and ethnic groups, and how the impact of heterogeneity on the HIT and final epidemic size depends strongly on the details of how heterogeneity is modeled. We have shown that due to early infections in individuals from the most at-risk group, relative measures of incidence may decline and even reverse, but inequities in the cumulative burden of infection persist throughout the epidemic as the HIT is reached. These results describe a framework that can be extended to other cities and countries in which racial and ethnic disparities in seropositivity have been observed (Hallal et al., 2020; Flannery et al., 2020; Chan et al., 2021) and are a step towards using transmission models to design policy interventions for reducing disparities in COVID-19 and other diseases.\n",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "c7744bc9-94e7-4d1b-82ac-3cc2e7177346",
+      "submission_id": "2c7df545-aa50-47f1-981a-73d4415abcb0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua T Schiffer, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66601.sa1](https://doi.org/10.7554/eLife.66601.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThank you for submitting and revising this paper which makes the important point that the herd immunity threshold, as well as the pattern of incidence over time, is likely to be dictated by the degree of assortative mixing between racial and ethnic groups during the SARS-CoV-2 pandemic. The paper's observations can hopefully be used to optimize non-pharmaceutical interventions and vaccine implementation in high-risk ethnic and racial groups.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modeling the impact of racial and ethnic disparities on COVID-19 epidemic dynamics\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Joshua T Schiffer as the Reviewing Editor and Reviewer #1, by Miles Davenport as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jon Zelner (Reviewer #2); Mia Moore (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another in detail, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please consider broadening the range of R0 considered in the analysis, with inclusion of values closer to one. It would also be useful to allow R0 (or rather R_effective) to take on varying levels over time to reflect observed shifts in physical distancing and NPIs during the pandemic. All 3 reviewers agreed that it would be interesting to see whether these changes, which would more closely approximate reality, would alter the paper's conclusions in anyway.\n\nWe do not feel that it is required to precisely recapitulate the dynamics of the NYC and/or Long Island epidemics, but rather to attempt scenarios other than the unmitigated simulated epidemic in the original version.\n\n2) Similarly, another way to strengthen the paper would be to show what happens when \"herd immunity\" is achieved via vaccination rather than infection. The interaction with the mixing models would be a fascinating and useful contribution.\n\nReviewer #1 (Recommendations for the authors):\n\nStrengths:\n\n1) The model structure is appropriate for the scientific question.\n\n2) The paper addresses a critical feature of SARS-CoV-2 epidemiology which is its much higher prevalence in Hispanic or Latino and Black populations. In this sense, the paper has the potential to serve as a tool to enhance social justice.\n\n3) Generally speaking, the analysis supports the conclusions.\n\nOther considerations:\n\n1) The clean distinction between susceptibility and exposure models described in the paper is conceptually useful but is unlikely to capture reality. Rather, susceptibility to infection is likely to vary more by age whereas exposure is more likely to vary by ethnic group / race. While age cohort are not explicitly distinguished in the model, the authors would do well to at least vary susceptibility across ethnic groups according to different age cohort structure within these groups. This would allow a more precise estimate of the true effect of variability in exposures. Alternatively, this could be mentioned as a limitation of the current model.\n\n2) I appreciated that the authors maintained an agnostic stance on the actual value of HIT (across the population and within ethnic groups) based on the results of their model. If there was available data, then it might be possible to arrive at a slightly more precise estimate by fitting the model to serial incidence data (particularly sorted by ethnic group) over time in NYC and Long Island. First, this would give some sense of R_effective. Second, if successive waves were modeled, then the shift in relative incidence and CI among these groups that is predicted in Figure 3 and Sup Figure 8 may be observed in the actual data (this fits anecdotally with what I have seen in several states). Third, it may (or may not) be possible to estimate values of critical model parameters such as epsilon. It would be helpful to mention this as possible future work with the model.\n\nCaveats about the impossibility of truly measuring HIT would still apply (due to new variants, shifting use and effective of NPIs, etc\u2026.). However, as is, the estimates of possible values for HIT are so wide as to make the underlying data used to train the model almost irrelevant. This makes the potential to leverage the model for policy decisions more limited.\n\n3) I think the range of R0 in the figures should be extended to go as low as 1. Much of the pandemic in the US has been defined by local Re that varies between 0.8 and 1.2 (likely based on shifts in the degree of social distancing). I therefore think lower HIT thresholds should be considered and it would be nice to know how the extent of assortative mixing effects estimates at these lower R_e values.\n\n4) line 274: I feel like this point needs to be considered in much more detail, either with a thoughtful discussion or with even with some simple additions to the model. How should these results make policy makers consider race and ethnicity when thinking about the key issues in the field right now such as vaccine allocation, masking, and new variants. I think to achieve the maximal impact, the authors should be very specific about how model results could impact policy making, and how we might lower the tragic discrepancies associated with COVID. If the model / data is insufficient for this purpose at this stage, then what type of data could be gathered that would allow more precise and targeted policy interventions?\n\nReviewer #2 (Recommendations for the authors):\n\nOverall I think this is a solid and interesting piece that is an important contribution to the literature on COVID-19 disparities, even if it does have some limitations. To this point, most models of SARS-CoV-2 have not included the impact of residential and occupational segregation on differential group-specific covid outcomes. So, the authors are to commended on their rigorous and useful contribution on this valuable topic. I have a few specific questions and concerns, outlined below:\n\n1. Does the reliance on serosurvey data collected in public places imply a potential issue with left-censoring, i.e. by not capturing individuals who had died? Can the authors address how survival bias might impact their results? I imagine this could bring the seroprevalence among older people down in a way that could bias their transmission rate estimates.\n\n2. It might be helpful to think in terms of disparities in HITs as well as disparities in contact rates, since the HIT of whites is necessarily dependent on that of Blacks. I'm not really disagreeing with the thrust of what their analysis suggests or even the factual interpretation of it. But I do think it is important to phrase some of the conclusions of the model in ways that are more directly relevant to health equity, i.e. how much infection/vaccination coverage does each group need for members of that group to benefit from indirect protection?\n\n3. The authors rely on a modified interaction index parameterized directly from their data. It would be helpful if they could explain why they did not rely on any sources of mobility data. Are these just not broken down along the type of race/ethnicity categories that would be necessary to complete this analysis? Integrating some sort of external information on mobility would definitely strengthen the analysis.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors show that in an uncontrolled epidemic the herd-immunity threshold may differ dramatically between racial groups. Although this question is undeniably important and the authors have shown that their results are robust to differing assumptions about population mixing, it seems to me that the situation considered is not completely relevant to current state of the covid epidemic. The herd-immunity threshold is assumed to be reached via a single, unmitigated wave within a few months. Unfortunately, the details of how this threshold is calculated are missing from the manuscript, but I can't help but imagine that it would be quite different if it was assumed to be possible to reach herd-immunity via vaccination. I think the authors need to address this.\n\nFigure 2 could potentially include the cumulative incidence associated with R0=3 in a homogeneous model.\n\nMulti-panel figures are unlabeled and split over more than one page, separated from their captions.\n\nIssue with assortative mixing assumption: When you assume a = 1, you assume that everyone makes the same number of contacts. How, then, is one group defined to be at higher risk than another. Is a really 1 in this case?\n\nIssue with assortative mixing derivation: I have a minor concern about the derivation, specifically how the contact matrix is fit. When I try to follow your steps and fill-in the gaps I get a slightly different result. So please either clarify your reasoning or fix the result.\n\nTotal i seen by a single j in one day = c_ij*Ni\n\nTotal i seen by all j in one day = c_ij*Ni*Nj=total j seen by all i in one day\n\nUsing the P_ij formulation (and please drop the P_ab notation, it is not consistently used and P_ij makes it easier to follow)\n\nTotal j seen by a single i in one day = P_ij % of people seen by group i = P_ij*ai=P_ij (as a=1)\n\nTotal j seen by all i in one day = P_ij*Ni\n\nTherefore you want to minimize |c_ij*Ni*Nj-P_ij*Ni|=|(1-e)N_j*Ni/sum(N_k)+e*Ni*d_ij \u2013 Ni*Pij|\n\n= |Ni((1-e)Nj/sum(N_k) + e*d_ij \u2013 P_ij)|\n\nWhich is only different from what you have in that Ni and Nj are switched in one term.\n\nWith a not equal to 1 (which you appear to use?) should be something like:\n\n= |Ni((1-e)a_i a_j Nj/sum(N_k) + e*d_ij \u2013 a_i a_j sum_k(N_ik N_jk/sum(a_i N_lk)))|\n\nWhere the P_ij term is now weighted by a.\n\nCalculation of HIT not described: I also feel like I'm missing something about how HIT is derived from the simulations. It sounds as though you used a computation rather than analytic approach, but I cannot find where it is spelled out. That seems important.\n\nFit to sero-prevalence data not shown or described: You initially list fitted activity levels, can you provide error bounds for these values? What is the nature of the data that is being fit? Is it only a single proportion collected at a single time? Can you show model fits? Unclear what was done here?\n\nYou also say \"differences in exposure\u2026are in line with theoretical derivations\". I assume that what you meant is that differences in herd immunity levels and final epidemic sizes are in line with theoretical derivations, but the sentence doesn't read that way.\n\nPlease put activity levels in a table: These values (and uncertainty ranges) should be in a table where it is easy to compare between the models.\n\nFit of assortative mixing model not shown or described: In the results you say you first choose epsilon, then you fit a afterwards. However the epsilon fit is performed assuming that a is zero. Can you explain the reasoning here? I'm concerned that this methodology underestimates mixing (because if contact is heterogeneous by group, then you are more likely to contact individuals from the higher risk group than is strictly predicted by geographic distribution).\n\nIncidence rate ratio plot is misleading: The incidence does not follow this pattern in proportionate mixing, and incidence is dropping in all groups. Furthermore this plot shows a time series which is completely unrealistic and wildly different from data. Most importantly, it seems to be wholly irrelevant to the main point of the paper.\n",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b874ef9f-2eec-4b8b-9d7a-0afdeab7d4c0",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C1",
+      "claim": "The impact of variable infection risk by race and ethnicity on the dynamics of SARS-CoV-2 spread is largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of variable infection risk by race and ethnicity on the dynamics of SARS-CoV-2 spread is largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field at the time of writing, representing a gap in understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "96099ade-2da0-42dc-8968-6c6fef134734",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C2",
+      "claim": "A simple model where interactions occur proportionally to contact rates reduced the HIT.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple model where interactions occur proportionally to contact rates reduced the HIT, but more realistic models of preferential mixing within groups increased the threshold toward the value observed in homogeneous populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "79394c4c-2880-45b8-b5eb-0769d2f3af19",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C3",
+      "claim": "More realistic models of preferential mixing within groups increased the threshold toward the value observed in homogeneous populations.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple model where interactions occur proportionally to contact rates reduced the HIT, but more realistic models of preferential mixing within groups increased the threshold toward the value observed in homogeneous populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling results comparing different mixing assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "617ea8f1-a442-4d09-9fde-a897a4078104",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C4",
+      "claim": "In a model fit to Long Island serosurvey and census data, 81% of Hispanics or Latinos were infected when the HIT was reached compared to 34% of non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all models, the burden of infection fell disproportionately on minority populations: in a model fit to Long Island serosurvey and census data, 81% of Hispanics or Latinos were infected when the HIT was reached compared to 34% of non-Hispanic whites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the model fitted to Long Island data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "e77963bf-1234-49bd-a6b0-7aa6f5bd5d9e",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C5",
+      "claim": "The burden of infection fell disproportionately on minority populations across all models.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all models, the burden of infection fell disproportionately on minority populations: in a model fit to Long Island serosurvey and census data, 81% of Hispanics or Latinos were infected when the HIT was reached compared to 34% of non-Hispanic whites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general finding across all model variants tested in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "90287036-6571-449d-b24a-a294489d54bc",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C6",
+      "claim": "K.C.M. was supported by National Science Foundation GRFP grant DGE1745303.",
+      "claim_type": "EXPLICIT",
+      "source": "K.C.M. was supported by National Science Foundation GRFP grant DGE1745303.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of funding support.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "855349b2-c07f-4dae-9611-b796b84dda5b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C7",
+      "claim": "Y.H.G. and M.L. were funded by the Morris-Singer Foundation.",
+      "claim_type": "EXPLICIT",
+      "source": "Y.H.G. and M.L. were funded by the Morris-Singer Foundation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of funding support.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "d340e7f5-0d43-4003-8ad3-90ffe963cfa4",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C8",
+      "claim": "M.L. was supported by SeroNet cooperative agreement U01 CA261277.",
+      "claim_type": "EXPLICIT",
+      "source": "M.L. was supported by SeroNet cooperative agreement U01 CA261277.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of funding support.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "7ad840b9-cff6-497d-941a-8207bb29f69b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C9",
+      "claim": "The dynamics of SARS-CoV-2 spread are influenced by population heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of SARS-CoV-2 spread are influenced by population heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by the modeling work and existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "5e687b16-cae9-421f-8ee5-373d78b6e641",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C10",
+      "claim": "The herd immunity threshold (HIT) is the fraction of the population that is non-susceptible when an unmitigated epidemic reaches its peak.",
+      "claim_type": "EXPLICIT",
+      "source": "The herd immunity threshold (HIT) is the fraction of the population that is non-susceptible when an unmitigated epidemic reaches its peak, and estimating the HIT for SARS-CoV-2 is important for forecasting the harm associated with letting the epidemic spread in the absence of interventions (Randolph and Barreiro, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of HIT used in the manuscript, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "9dca94a8-2694-4240-ae3c-98d549a0218e",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C11",
+      "claim": "Estimating the HIT for SARS-CoV-2 is important for forecasting the harm associated with letting the epidemic spread in the absence of interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "The herd immunity threshold (HIT) is the fraction of the population that is non-susceptible when an unmitigated epidemic reaches its peak, and estimating the HIT for SARS-CoV-2 is important for forecasting the harm associated with letting the epidemic spread in the absence of interventions (Randolph and Barreiro, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Randolph and Barreiro, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "eb805d40-8f17-4660-8154-df6a04bc6f37",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C12",
+      "claim": "In a population with homogeneous mixing, the HIT is 1\u20131/R0, where R0 is the basic reproduction number.",
+      "claim_type": "EXPLICIT",
+      "source": "In a population with homogeneous mixing, the HIT is 1\u20131/R0, where R0 is the basic reproduction number; this translates to an HIT of 67% using an R0 of 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established formula from epidemic theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "e86031f3-e3d9-4fcb-8df1-8c9f49f2b8cc",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C13",
+      "claim": "For an R0 of 3, the HIT in a homogeneous population is 67%.",
+      "claim_type": "EXPLICIT",
+      "source": "In a population with homogeneous mixing, the HIT is 1\u20131/R0, where R0 is the basic reproduction number; this translates to an HIT of 67% using an R0 of 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the HIT formula.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "6791ca19-e4a0-4dd7-aefe-d6fdd6e157be",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C14",
+      "claim": "Models incorporating heterogeneity in social exposure and infection susceptibility generally result in lowered HITs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, population homogeneity is an unrealistic assumption, and models incorporating heterogeneity in social exposure and infection susceptibility (defined as the probability of infection given exposure) generally result in lowered HITs (Hill and Longini, 2003; Britton et al., 2020; Gomes et al., 2020; Aguas et al., 2020; Tkachenko et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "97074f05-6632-43fb-99b8-a6e41bc1b418",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C15",
+      "claim": "Subpopulations important for epidemic spread become infected early on in an epidemic's course.",
+      "claim_type": "EXPLICIT",
+      "source": "The key idea behind these models is that subpopulations important for epidemic spread (i.e., those with substantially increased susceptibility or exposure) become infected \u2013 and thus develop immunity \u2013 early on in an epidemic's course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism behind lowered HITs in heterogeneous models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "bba6b9f1-1795-4955-b168-15c4f130afea",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C16",
+      "claim": "Herd immunity for the population overall is achieved earlier when high-risk individuals are no longer susceptible to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Herd immunity for the population overall is then achieved earlier because once these individuals are no longer susceptible to infection, further epidemic spread is slowed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the heterogeneous mixing model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "f5df8be0-8857-4663-b98f-115762d99936",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C17",
+      "claim": "In locations where SARS-CoV-2 has spread there may be demographic subpopulations with particularly high cumulative incidences of infection due to increased exposure, susceptibility, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these models also imply that in locations where SARS-CoV-2 has spread there may be demographic subpopulations with particularly high cumulative incidences of infection due to increased exposure, susceptibility, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication of the heterogeneous models discussed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "16054eb8-9edb-4cf6-9b61-db15c49f744e",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C18",
+      "claim": "Seroprevalence studies can identify subpopulations with high cumulative incidences and are more reliable and unbiased than case data.",
+      "claim_type": "EXPLICIT",
+      "source": "Seroprevalence studies \u2013 which characterize past exposure by identifying SARS-CoV-2 antibodies \u2013 can identify these subpopulations and are more reliable and unbiased than case data, which suffer from under-reporting and other biases (Metcalf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Metcalf et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "c058c420-dd76-44b7-a258-92a716826428",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C19",
+      "claim": "Case data suffer from under-reporting and other biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Seroprevalence studies \u2013 which characterize past exposure by identifying SARS-CoV-2 antibodies \u2013 can identify these subpopulations and are more reliable and unbiased than case data, which suffer from under-reporting and other biases (Metcalf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of case data, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "0016eed3-fb76-4b92-a00a-6ac6a556646e",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C20",
+      "claim": "Transmission models in this space have incorporated subpopulation structure by focusing primarily on accounting for variation in susceptibility and exposure by age.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission models in this space have incorporated subpopulation structure by focusing primarily on accounting for variation in susceptibility and exposure by age (Britton et al., 2020; Davies et al., 2020; Miller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "05223b47-2db0-43c9-82c0-6eab6a3acb4a",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C21",
+      "claim": "Susceptibility to infection, contact rates, and cumulative incidence in some locations all appear to vary by age.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this approach, susceptibility to infection, contact rates, and cumulative incidence in some locations all appear to vary by age (Davies et al., 2020; Mossong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "19325f1b-93b9-4879-af9b-77a72b1554a6",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C22",
+      "claim": "Serosurveys in Belgium, Spain, Iran, New York City (NYC), Brazil, and other places exhibit relatively low variation in seropositivity by age.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, serosurveys in Belgium, Spain, Iran, New York City (NYC), Brazil, and other places exhibit relatively low variation in seropositivity by age (Herzog et al., 2020; Poll\u00e1n et al., 2020; Shakiba et al., 2020; Rosenberg et al., 2020; Hallal et al., 2020), indicating additional factors that govern transmission spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to serosurvey studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "dcd2dc7f-430b-44c9-bb82-ee89be5f64b4",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C23",
+      "claim": "Low variation in seropositivity by age indicates additional factors that govern transmission spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, serosurveys in Belgium, Spain, Iran, New York City (NYC), Brazil, and other places exhibit relatively low variation in seropositivity by age (Herzog et al., 2020; Poll\u00e1n et al., 2020; Shakiba et al., 2020; Rosenberg et al., 2020; Hallal et al., 2020), indicating additional factors that govern transmission spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the serosurvey data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "bb9ff448-6f34-4690-8d7b-f601a69d645b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C24",
+      "claim": "Substantial racial and ethnic disparities in infection rates, hospitalizations, and deaths have been characterized across the US.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial racial and ethnic disparities in infection rates, hospitalizations, and deaths have been characterized across the US (Chamie et al., 2020; Moore et al., 2020; Millett et al., 2020a; Pan et al., 2020; Chen and Krieger, 2020; Bassett et al., 2020; Hanage et al., 2020), but it is unclear how these heterogeneities in risk are expected to change over time and what implications \u2013 if any \u2013 they have on overall epidemic dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies documenting disparities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "e7115b58-62ba-451a-a6dc-c6e2ced29cd0",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C25",
+      "claim": "It is unclear how racial and ethnic heterogeneities in risk are expected to change over time and what implications they have on overall epidemic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial racial and ethnic disparities in infection rates, hospitalizations, and deaths have been characterized across the US (Chamie et al., 2020; Moore et al., 2020; Millett et al., 2020a; Pan et al., 2020; Chen and Krieger, 2020; Bassett et al., 2020; Hanage et al., 2020), but it is unclear how these heterogeneities in risk are expected to change over time and what implications \u2013 if any \u2013 they have on overall epidemic dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "a8f4df78-3006-4f54-8085-e5f56c435923",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C26",
+      "claim": "Observed disparities in infection rates in US cities are strongly attributable to differences in mobility and exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus primarily on building and analyzing variable exposure models because observed disparities in infection rates in US cities are strongly attributable to differences in mobility and exposure (Chang et al., 2021; Zelner et al., 2020; Kissler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on mobility and exposure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "6cedab35-ef9d-44bc-8679-7b37302e5f4e",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C31",
+      "claim": "The serosurvey data were collected from over 15,000 adults in grocery stores from April 19 to 28.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the ai in the variable exposure models and the qi in the variable susceptibility models using maximum likelihood fits to a single cross-sectional serosurvey from New York, which was collected from over 15,000 adults in grocery stores from April 19 to 28 (Rosenberg et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used for model fitting, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "fee119e9-8942-413b-b192-08beab8e8b68",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C34",
+      "claim": "Under proportionate mixing in NYC, Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 2.25, 1.62, 0.86, and 1.28 times the total contact rates relative to non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "The serosurvey data were compatible with proportionate mixing models in which Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 2.25, 1.62, 0.86, and 1.28 times the total contact rates relative to non-Hispanic whites in NYC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model fitting result for NYC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "d0a9f84e-6357-4180-ad82-37766cf06e20",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C35",
+      "claim": "Under proportionate mixing in Long Island, Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 4.31, 1.96, 0.92, and 2.48 times the total contact rates relative to non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "Under proportionate mixing, Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 4.31, 1.96, 0.92, and 2.48 times the fitted total contact rates relative to non-Hispanic whites in Long Island, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model fitting result for Long Island data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "72e50b85-1dad-4929-acde-f7ef4443e3e2",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C36",
+      "claim": "For an R0 of 3, the HIT decreases to 58% in NYC under proportionate mixing compared to 67% under the homogeneous model.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in exposure impacted herd immunity levels and final epidemic sizes relative to the homogeneous model across a range of R0 values (Figure 1 and Figure 1\u2014figure supplement 4); for example, for an R0 of 3, the HIT decreases to 58% in NYC and 40% in Long Island compared to 67% under the homogeneous model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "7699a680-e2cd-47b5-b9ed-ec300669abf4",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C37",
+      "claim": "For an R0 of 3, the HIT decreases to 40% in Long Island under proportionate mixing compared to 67% under the homogeneous model.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in exposure impacted herd immunity levels and final epidemic sizes relative to the homogeneous model across a range of R0 values (Figure 1 and Figure 1\u2014figure supplement 4); for example, for an R0 of 3, the HIT decreases to 58% in NYC and 40% in Long Island compared to 67% under the homogeneous model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "70c61fa9-5a30-4db2-88d5-e7200f2992e3",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C38",
+      "claim": "At the HIT under proportionate mixing in NYC, 75% of Hispanics or Latinos and 63% of non-Hispanic Black people were infected compared to 46% of non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIT overall is reached in this model after cumulative incidence has disproportionately increased in certain minority groups: at the HIT, 75% of Hispanics or Latinos and 63% of non-Hispanic Black people were infected compared to 46% of non-Hispanic whites in NYC, and 77% of Hispanics or Latinos and 48% of non-Hispanic Black people were infected compared to 29% of non-Hispanic whites in Long Island (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the model shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "f079c6f5-29cc-4516-a41b-de61d0399e39",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C39",
+      "claim": "At the HIT under proportionate mixing in Long Island, 77% of Hispanics or Latinos and 48% of non-Hispanic Black people were infected compared to 29% of non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIT overall is reached in this model after cumulative incidence has disproportionately increased in certain minority groups: at the HIT, 75% of Hispanics or Latinos and 63% of non-Hispanic Black people were infected compared to 46% of non-Hispanic whites in NYC, and 77% of Hispanics or Latinos and 48% of non-Hispanic Black people were infected compared to 29% of non-Hispanic whites in Long Island (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the model shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "988a8538-aa7e-4da6-bccc-01527a1e685f",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C44",
+      "claim": "The models jointly fitted to serosurvey and census data indicated that 46% of contacts were exclusively within-group in NYC.",
+      "claim_type": "EXPLICIT",
+      "source": "The models jointly fitted to serosurvey and census data indicated that 46 and 39% of contacts were exclusively within-group in NYC and Long Island, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the census-informed model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "43c801e6-2801-468a-b5fa-7aaed33010b8",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C45",
+      "claim": "The models jointly fitted to serosurvey and census data indicated that 39% of contacts were exclusively within-group in Long Island.",
+      "claim_type": "EXPLICIT",
+      "source": "The models jointly fitted to serosurvey and census data indicated that 46 and 39% of contacts were exclusively within-group in NYC and Long Island, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the census-informed model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "f779ed5b-21d0-4ff7-9c8c-9e06d109b296",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C46",
+      "claim": "Using census-informed assortativity models, Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 1.62, 1.35, 0.90, and 1.17 times the total contact rate relative to non-Hispanic whites in NYC.",
+      "claim_type": "EXPLICIT",
+      "source": "The same groups had elevated total contact rates as under proportionate mixing, but the magnitudes of differences were now lower and more concordant with reported mobility differences (Chang et al., 2021): model estimates indicated Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 1.62, 1.35, 0.90, and 1.17 times the total contact rate relative to non-Hispanic whites in NYC, respectively, and 2.60, 1.63, 0.93, and 1.90 times the total contact rate relative to non-Hispanic whites in Long Island, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the census-informed model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "911e9c10-e878-4b7d-bd5f-84a3865c73e3",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C47",
+      "claim": "Using census-informed assortativity models, Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 2.60, 1.63, 0.93, and 1.90 times the total contact rate relative to non-Hispanic whites in Long Island.",
+      "claim_type": "EXPLICIT",
+      "source": "The same groups had elevated total contact rates as under proportionate mixing, but the magnitudes of differences were now lower and more concordant with reported mobility differences (Chang et al., 2021): model estimates indicated Hispanics or Latinos, non-Hispanic Black people, non-Hispanic Asians, and multiracial or other people had 1.62, 1.35, 0.90, and 1.17 times the total contact rate relative to non-Hispanic whites in NYC, respectively, and 2.60, 1.63, 0.93, and 1.90 times the total contact rate relative to non-Hispanic whites in Long Island, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the census-informed model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "4af24d60-1a23-4e8e-ba0b-f35757ef1666",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C49",
+      "claim": "At the HIT using census-informed models, 76% of Hispanics or Latinos and 66% of non-Hispanic Black people were infected compared to 50% of non-Hispanic whites in NYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previous models, at the HIT, 76% of Hispanics or Latinos and 66% of non-Hispanic Black people were infected compared to 50% of non-Hispanic whites in NYC, and 81% of Hispanics or Latinos and 56% of non-Hispanic Black people were infected compared to 34% of non-Hispanic whites in Long Island (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the census-informed model shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "3010bb74-1599-416b-98cb-28204cfd49aa",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C50",
+      "claim": "At the HIT using census-informed models, 81% of Hispanics or Latinos and 56% of non-Hispanic Black people were infected compared to 34% of non-Hispanic whites in Long Island.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previous models, at the HIT, 76% of Hispanics or Latinos and 66% of non-Hispanic Black people were infected compared to 50% of non-Hispanic whites in NYC, and 81% of Hispanics or Latinos and 56% of non-Hispanic Black people were infected compared to 34% of non-Hispanic whites in Long Island (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the census-informed model shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "f3088ab1-227e-4cde-91ad-eb3e62363aa3",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C51",
+      "claim": "Multiple studies indicate decreasing disparities in incidence rate over time across racial and ethnic groups relative to non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "The challenge is that these metrics can change over time: for instance, multiple studies indicate decreasing disparities in incidence rate over time across racial and ethnic groups relative to non-Hispanic whites (Krieger et al., 2020a; Van Dyke et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "0389c035-f57d-48b6-9f7c-7f7b86e41346",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C52",
+      "claim": "Models of epidemic spread in structured populations imply that incidence rate ratios for high-risk groups can decrease substantially as the epidemic progresses because of depletion of susceptible individuals from these groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasons for these changes are multifaceted, but even independent of the effect of interventions, behavioral changes, or differential access to testing, models of epidemic spread in structured populations imply that incidence rate ratios for high-risk groups can decrease substantially as the epidemic progresses because of depletion of susceptible individuals from these groups (Goldstein et al., 2017; Koopman et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and is a theoretical prediction from structured models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "0143800d-d569-4473-9a92-516bca1d5073",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C53",
+      "claim": "Instantaneous incidence rate ratios are elevated initially in high-contact groups relative to non-Hispanic whites, but this trend reverses after the epidemic has peaked.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, we observe that instantaneous incidence rate ratios are elevated initially in high-contact groups relative to non-Hispanic whites, but this trend reverses after the epidemic has peaked and overall incidence is decreasing \u2013 a consequence of the fact that a majority of individuals have already become infected (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the model results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "88d3f5c2-4b4a-4628-8b4b-998747001662",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C54",
+      "claim": "Cumulative incidence ratios remain elevated in high-contact racial and ethnic groups throughout the epidemic, but the magnitude decreases as the epidemic progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cumulative incidence ratios remain elevated in high-contact racial and ethnic groups throughout the epidemic, but the magnitude decreases as the epidemic progresses (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the model results shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "ccde5b98-c107-4dfd-ac0a-cbc12edcdc0b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C55",
+      "claim": "The R0 versus HIT relationships were similar comparing a mitigated to an unmitigated epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the R0 versus HIT relationships were similar comparing a mitigated to an unmitigated epidemic (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the mitigation analysis shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "6cd717c4-2172-4047-a796-be5324b23925",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C56",
+      "claim": "Final epidemic sizes depended on the intensity of mitigation measures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, final epidemic sizes depended on the intensity of mitigation measures, though qualitative trends across models (e.g., increased assortativity leads to greater final sizes) remained true (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the mitigation analysis shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "9cdaf247-f91d-426d-9fbc-10377b455af6",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C57",
+      "claim": "The HIT was consistent across different mitigation parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We found again that the HIT was consistent, whereas final epidemic sizes were substantially affected by the choice of mitigation parameters (Figure 1\u2014figure supplement 7); the distribution of cumulative incidence at the point of HIT was also comparable with and without mitigation measures (Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the systematic mitigation analysis shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "ab36d1eb-cbdd-4177-94d4-3dcf192812a3",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C58",
+      "claim": "The most stringent NPI intensities did not necessarily lead to the smallest epidemic final sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "The most stringent NPI intensities did not necessarily lead to the smallest epidemic final sizes, an idea which has been explored in studies analyzing optimal control measures (Neuwirth et al., 2020; Handel et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the model results, supported by citations to prior work on optimal control.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "d58e296a-6561-494e-a823-ca4fde44334f",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C59",
+      "claim": "Models incorporating variable exposure generally decreased the HIT and final epidemic size.",
+      "claim_type": "EXPLICIT",
+      "source": "Models incorporating variable exposure generally decreased the HIT and final epidemic size, but incorporating preferential within-group contacts shifted HITs and final epidemic sizes higher, approaching the homogeneous case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the modeling work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "6db9f3df-6d35-4a33-a3d5-621d649cbe8b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C60",
+      "claim": "Incorporating preferential within-group contacts shifted HITs and final epidemic sizes higher, approaching the homogeneous case.",
+      "claim_type": "EXPLICIT",
+      "source": "Models incorporating variable exposure generally decreased the HIT and final epidemic size, but incorporating preferential within-group contacts shifted HITs and final epidemic sizes higher, approaching the homogeneous case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the modeling work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "d9ed65cd-79f9-43b4-a85a-2627d362b983",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C61",
+      "claim": "Epidemiological measures of disease burden such as incidence rate ratios and cumulative incidence ratios changed substantially over the course of the epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological measures of disease burden such as incidence rate ratios and cumulative incidence ratios also changed substantially over the course of the epidemic, highlighting the need to account for these trends when evaluating interventions (Kahn et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the modeling work, with citation to support the importance of accounting for these trends.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "462f38b2-7d3e-4362-aa18-0865fb7e5899",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C62",
+      "claim": "The observed higher cumulative incidence among Hispanics or Latinos and non-Hispanic Black people compared to non-Hispanic whites led to estimates of higher estimated contacts relative to non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all model variants, the observed higher cumulative incidence among Hispanics or Latinos and non-Hispanic Black people compared to non-Hispanic whites led to estimates of higher estimated contacts relative to non-Hispanic whites, mirroring existing inequities in housing, education, healthcare, and beyond (Khazanchi et al., 2020; Millett et al., 2020a; Millett et al., 2020b; Boyd et al., 2020; Bailey et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model fitting results across all variants, with citations to support the connection to existing inequities.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "51897167-4661-40ac-b044-34ac0774c110",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C63",
+      "claim": "Frontline workers are disproportionately from minority backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated contact rate differences also concord with reports that frontline workers, who are unable to engage in physical or social distancing to the same degree as other types of workers, are disproportionately from minority backgrounds (Blau et al., 2020; Chang et al., 2021; Kissler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to reports on frontline workers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "0244c85a-82ab-4e0b-8674-37d7449df3fa",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C64",
+      "claim": "Frontline workers are unable to engage in physical or social distancing to the same degree as other types of workers.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated contact rate differences also concord with reports that frontline workers, who are unable to engage in physical or social distancing to the same degree as other types of workers, are disproportionately from minority backgrounds (Blau et al., 2020; Chang et al., 2021; Kissler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of frontline workers supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "98e57939-0114-420e-af6b-ecf495f55185",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C65",
+      "claim": "The assortativity observed in the census data has root causes in residential segregation arising from a long history of discriminatory practices.",
+      "claim_type": "EXPLICIT",
+      "source": "The assortativity we observed in the census data has root causes in many areas, including residential segregation arising from a long history of discriminatory practices (Yang et al., 2020; Millett et al., 2020b; Bailey et al., 2021; Benfer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on residential segregation and discriminatory practices.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "20500cb0-8671-494e-be91-6bfced8e92fc",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C66",
+      "claim": "The overall HIT was reached after cumulative incidence had increased disproportionately in minority groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Projecting the epidemic forward indicated that the overall HIT was reached after cumulative incidence had increased disproportionately in minority groups, highlighting the fundamentally inequitable outcome of achieving herd immunity through infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model projections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "eb805775-d1c5-4a3a-9588-f79617172334",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C67",
+      "claim": "Achieving herd immunity through infection results in a fundamentally inequitable outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Projecting the epidemic forward indicated that the overall HIT was reached after cumulative incidence had increased disproportionately in minority groups, highlighting the fundamentally inequitable outcome of achieving herd immunity through infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "38ff1f2e-feb9-46a5-8cf9-b8bf56a3dcfc",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C68",
+      "claim": "Incorporating heterogeneity lowers the overall HIT but increases it for the highest-risk groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, overall lower HIT and final sizes occur because certain groups suffer not only more infection than average, but more infection than under a homogeneous mixing model; incorporating heterogeneity lowers the HIT but increases it for the highest-risk groups (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of the mechanism behind the model results, shown in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "1266f52c-ae19-41f8-b663-c469c5a4acf4",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C69",
+      "claim": "Public health interventions for reducing COVID-19 inequities can have synergistic effects for controlling the overall epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also suggest that public health interventions for reducing COVID-19 inequities can have synergistic effects for controlling the overall epidemic (Richardson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication of the model results, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "cd56ee1b-21ec-4586-bbbe-74b3f5a49c86",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C70",
+      "claim": "Age-structured models indicate that vaccination of high-contact age groups is optimal for controlling the spread of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, from a transmission-control perspective, age-structured models indicate that vaccination of high-contact age groups \u2013 such as young adults \u2013 is optimal for controlling the spread of SARS-CoV-2 (Bubar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bubar et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "82d6f000-48b0-4aeb-a436-71c91687743b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C71",
+      "claim": "Racial and ethnic minorities are overrepresented among essential workers.",
+      "claim_type": "EXPLICIT",
+      "source": "Because racial and ethnic minorities are overrepresented among essential workers (Blau et al., 2020; Chang et al., 2021; Kissler et al., 2020), further modeling studies could evaluate the impact of such strategies on also reducing inequities in COVID-19 infection rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on essential workers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "89948d4d-f438-431f-bf0c-71f3d0c2b648",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C72",
+      "claim": "Biases in the serosurvey sampling process can substantially affect downstream results.",
+      "claim_type": "EXPLICIT",
+      "source": "First, biases in the serosurvey sampling process can substantially affect downstream results; any conclusions drawn depend heavily on the degree to which serosurvey design and post-survey adjustments yield representative samples (Clapham et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "351544a8-4285-4a96-88f9-a804620bc86b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C73",
+      "claim": "The serosurvey primarily sampled people at grocery stores, leading to survival bias and ascertainment bias.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, because the serosurvey we relied on primarily sampled people at grocery stores, there is both survival bias (cumulative incidence estimates do not account for people who have died) and ascertainment bias (undersampling of at-risk populations that are more likely to self-isolate, such as the elderly) (Rosenberg et al., 2020; Accorsi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific limitation of the data source used, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "f290c827-fc61-452e-b1c0-64ce35b0952d",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C74",
+      "claim": "The study assumed that seropositivity implies complete immunity and that immunity does not wane.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we have assumed that seropositivity implies complete immunity and that immunity does not wane. These are strong assumptions that can be revisited as empirical studies on the length of natural immunity are conducted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption acknowledged as a limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "17ade808-6f97-4965-a924-b3db2c71fb7a",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C75",
+      "claim": "The study assumed the impact of NPIs to equally affect racial and ethnic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we have assumed the impact of NPIs such as stay-at-home policies, closures, and the like to equally affect racial and ethnic groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption acknowledged as a simplification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "98a624ae-ce32-49e3-b415-161737ba7923",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C76",
+      "claim": "During periods of lockdown certain neighborhoods that are disproportionately wealthy and white tend to show greater declines in mobility than others.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical evidence suggests that during periods of lockdown certain neighborhoods that are disproportionately wealthy and white tend to show greater declines in mobility than others (Kishore et al., 2020a; Kissler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to empirical studies on mobility during lockdown.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "3c5a7206-bcb0-4a6c-b11d-8fe4a882bcd5",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C77",
+      "claim": "The study only considered variability in exposure due to one demographic characteristic.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, due to data availability, we have only considered variability in exposure due to one demographic characteristic; models should ideally strive to also account for the effects of age on susceptibility and exposure within strata of race and ethnicity and other relevant demographics, such as socioeconomic status and occupation (Mulberry et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors, with citation to support the need for more comprehensive models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "c3f8de63-286d-4236-8e27-731a5691230e",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C78",
+      "claim": "The study estimated model parameters using a single cross-sectional serosurvey.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we have estimated model parameters using a single cross-sectional serosurvey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the data used for model fitting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "1b4da44f-83a0-46ce-90f1-8a0b2a34c5ff",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C79",
+      "claim": "Systematically collected and publicly available data stratified by race and ethnicity has been a persistent barrier to research efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve estimates and the ability to distinguish between model structures, future studies should use longitudinal serosurveys or case data stratified by race and ethnicity and corrected for underreporting; the challenge will be ensuring that such data are systematically collected and made publicly available, which has been a persistent barrier to research efforts (Krieger et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Krieger et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "bc0db7cc-e6bc-4b02-9cc6-066ce09b4932",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C80",
+      "claim": "Due to early infections in individuals from the most at-risk group, relative measures of incidence may decline and even reverse, but inequities in the cumulative burden of infection persist throughout the epidemic as the HIT is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that due to early infections in individuals from the most at-risk group, relative measures of incidence may decline and even reverse, but inequities in the cumulative burden of infection persist throughout the epidemic as the HIT is reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of a key finding from the modeling work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "f57df300-d421-4012-957c-6869477cf8a2",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "claim_id": "C81",
+      "claim": "Racial and ethnic disparities in seropositivity have been observed in Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "These results describe a framework that can be extended to other cities and countries in which racial and ethnic disparities in seropositivity have been observed (Hallal et al., 2020; Flannery et al., 2020; Chan et al., 2021) and are a step towards using transmission models to design policy interventions for reducing disparities in COVID-19 and other diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hallal et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74890788-f6d6-40eb-8558-e3e761ffee6d",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Proportionate mixing models (where interactions occur proportionally to contact rates) reduced the herd immunity threshold (HIT) compared to homogeneous models, but incorporating preferential within-group mixing (assortative mixing) increased the HIT back toward homogeneous values. For R0=3, proportionate mixing reduced HIT to 58% (NYC) and 40% (Long Island) compared to 67% in homogeneous models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C36, C37, C59, and C60 collectively demonstrate this core finding through model fitting to serosurvey data and systematic comparison across model structures. The quantitative results are specific and supported by Figures 1 and related supplements showing HIT versus R0 relationships across model types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "397c1ad0-36ef-49ec-8265-ca53641094c1",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Across all model variants, minority populations bore a disproportionate burden of infection when the population reached the HIT. In the census-informed model for Long Island, 81% of Hispanics/Latinos and 56% of non-Hispanic Black people were infected at HIT compared to 34% of non-Hispanic whites, demonstrating the fundamentally inequitable outcome of achieving herd immunity through infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C38, C39, C49, C50, C66, C67, and C68 provide consistent quantitative evidence across multiple model variants (proportionate mixing and census-informed) for both NYC and Long Island. Figure 2 visually supports these disparities. The finding is robust across model assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "3d9d7646-1aeb-4f87-878f-1101adcb119b",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Model fitting to serosurvey data estimated that minority groups had elevated contact rates relative to non-Hispanic whites. Under proportionate mixing, Hispanics/Latinos had 2.25\u00d7 (NYC) and 4.31\u00d7 (Long Island) the contact rates of non-Hispanic whites. Census-informed models yielded lower but still elevated estimates: 1.62\u00d7 (NYC) and 2.60\u00d7 (Long Island).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, C46, C47, and C62 present model-fitted parameter estimates that are internally consistent and concordant with cited mobility studies (C26, C63). The census-informed estimates are more realistic and align better with empirical mobility data, as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "8c2dee7f-0b1c-4709-9b99-0ebcf8fcf56e",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Census-informed models estimated that 46% (NYC) and 39% (Long Island) of contacts were exclusively within racial/ethnic groups, reflecting residential segregation arising from historical discriminatory practices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C45, and C65 describe the assortativity parameter fitted using an iterative approach combining serosurvey and census block group data. The methodology is clearly described and the interpretation linking to residential segregation is supported by citations (C65). The approach is novel and addresses limitations of proportionate mixing models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "aa5971c3-b987-49ee-b174-9c269dec628f",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Instantaneous incidence rate ratios for high-contact minority groups were initially elevated but reversed after the epidemic peaked due to depletion of susceptibles in these groups. Cumulative incidence ratios remained elevated throughout but decreased in magnitude over time, highlighting the need to account for epidemic dynamics when evaluating interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54, C61, and C80 describe temporal dynamics of epidemiological measures supported by Figure 3 and theoretical predictions from structured models (C52). The finding is important for interpretation of observational data and is supported by citations to empirical studies showing similar patterns (C51).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "a35a9e11-3af5-467c-bcb2-e9a2086ef840",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relationship between R0 and HIT was robust to non-pharmaceutical interventions (NPIs), remaining similar between mitigated and unmitigated epidemics. However, final epidemic sizes depended strongly on NPI intensity and duration, and the most stringent NPIs did not necessarily produce the smallest final sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 describe sensitivity analyses examining NPI effects, supported by Figure 1 supplements 5-7. The finding that HIT is robust to mitigation while final size is not is methodologically important and clearly demonstrated. The non-monotonic relationship between NPI stringency and final size is supported by citations to optimal control literature (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study has several important limitations: serosurvey sampling biases (grocery store sampling leading to survival and ascertainment bias), assumptions of complete and non-waning immunity, equal NPI effects across groups, consideration of only one demographic characteristic, and use of a single cross-sectional serosurvey. Lack of systematically collected race/ethnicity-stratified data remains a barrier.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C72-C79 comprehensively describe study limitations with appropriate citations. The authors are transparent about data limitations and modeling assumptions. These limitations are important for interpreting the results, which the authors explicitly state are 'illustrative and not best estimates.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "35b6e989-3a84-4d7e-9e0e-5e3861effb36",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Public health interventions targeting high-risk minority populations could have synergistic effects for controlling the overall epidemic. Vaccination strategies prioritizing essential workers (who are disproportionately from minority backgrounds) could both reduce transmission and address inequities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 present policy implications supported by the modeling results and citations to vaccination modeling studies (C70). The connection between model findings and intervention strategies is logical, though the authors appropriately note this requires further modeling work and careful consideration of legal/ethical dimensions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background and motivation for the study, including definitions of key concepts (HIT), review of prior work on heterogeneous models and age-structured models, documentation of racial/ethnic disparities in COVID-19, and identification of knowledge gaps regarding how these disparities affect epidemic dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C26 provide comprehensive background supported by appropriate citations. The authors correctly identify that while age-structured models exist and racial/ethnic disparities are documented, the impact of racial/ethnic heterogeneity on epidemic dynamics is unclear (C1, C25). This establishes clear motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "9dd3c795-7d7a-4c06-8a9e-91caaa12d9cf",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Funding sources are disclosed for the authors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are straightforward statements of funding support that are verifiable and standard for scientific manuscripts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    },
+    {
+      "id": "c5fc2948-c612-4be2-b533-c86df89e39a2",
+      "content_id": "0d128028-b599-4f38-b617-2d569d310d99",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Supporting contextual claims: frontline workers are disproportionately from minority backgrounds and unable to socially distance to the same degree as other workers; racial/ethnic disparities in seropositivity have been observed internationally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C64, and C81 provide supporting context with appropriate citations. These are well-established findings from prior literature that support the interpretation of the modeling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:34:34.630404Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "96099ade-2da0-42dc-8968-6c6fef134734",
+      "result_id": "74890788-f6d6-40eb-8558-e3e761ffee6d"
+    },
+    {
+      "claim_id": "79394c4c-2880-45b8-b5eb-0769d2f3af19",
+      "result_id": "74890788-f6d6-40eb-8558-e3e761ffee6d"
+    },
+    {
+      "claim_id": "72e50b85-1dad-4929-acde-f7ef4443e3e2",
+      "result_id": "74890788-f6d6-40eb-8558-e3e761ffee6d"
+    },
+    {
+      "claim_id": "7699a680-e2cd-47b5-b9ed-ec300669abf4",
+      "result_id": "74890788-f6d6-40eb-8558-e3e761ffee6d"
+    },
+    {
+      "claim_id": "d58e296a-6561-494e-a823-ca4fde44334f",
+      "result_id": "74890788-f6d6-40eb-8558-e3e761ffee6d"
+    },
+    {
+      "claim_id": "6db9f3df-6d35-4a33-a3d5-621d649cbe8b",
+      "result_id": "74890788-f6d6-40eb-8558-e3e761ffee6d"
+    },
+    {
+      "claim_id": "617ea8f1-a442-4d09-9fde-a897a4078104",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "e77963bf-1234-49bd-a6b0-7aa6f5bd5d9e",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "70c61fa9-5a30-4db2-88d5-e7200f2992e3",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "f079c6f5-29cc-4516-a41b-de61d0399e39",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "4af24d60-1a23-4e8e-ba0b-f35757ef1666",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "3010bb74-1599-416b-98cb-28204cfd49aa",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "20500cb0-8671-494e-be91-6bfced8e92fc",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "eb805775-d1c5-4a3a-9588-f79617172334",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "38ff1f2e-feb9-46a5-8cf9-b8bf56a3dcfc",
+      "result_id": "397c1ad0-36ef-49ec-8265-ca53641094c1"
+    },
+    {
+      "claim_id": "fee119e9-8942-413b-b192-08beab8e8b68",
+      "result_id": "3d9d7646-1aeb-4f87-878f-1101adcb119b"
+    },
+    {
+      "claim_id": "d0a9f84e-6357-4180-ad82-37766cf06e20",
+      "result_id": "3d9d7646-1aeb-4f87-878f-1101adcb119b"
+    },
+    {
+      "claim_id": "f779ed5b-21d0-4ff7-9c8c-9e06d109b296",
+      "result_id": "3d9d7646-1aeb-4f87-878f-1101adcb119b"
+    },
+    {
+      "claim_id": "911e9c10-e878-4b7d-bd5f-84a3865c73e3",
+      "result_id": "3d9d7646-1aeb-4f87-878f-1101adcb119b"
+    },
+    {
+      "claim_id": "462f38b2-7d3e-4362-aa18-0865fb7e5899",
+      "result_id": "3d9d7646-1aeb-4f87-878f-1101adcb119b"
+    },
+    {
+      "claim_id": "988a8538-aa7e-4da6-bccc-01527a1e685f",
+      "result_id": "8c2dee7f-0b1c-4709-9b99-0ebcf8fcf56e"
+    },
+    {
+      "claim_id": "43c801e6-2801-468a-b5fa-7aaed33010b8",
+      "result_id": "8c2dee7f-0b1c-4709-9b99-0ebcf8fcf56e"
+    },
+    {
+      "claim_id": "98e57939-0114-420e-af6b-ecf495f55185",
+      "result_id": "8c2dee7f-0b1c-4709-9b99-0ebcf8fcf56e"
+    },
+    {
+      "claim_id": "f3088ab1-227e-4cde-91ad-eb3e62363aa3",
+      "result_id": "aa5971c3-b987-49ee-b174-9c269dec628f"
+    },
+    {
+      "claim_id": "0389c035-f57d-48b6-9f7c-7f7b86e41346",
+      "result_id": "aa5971c3-b987-49ee-b174-9c269dec628f"
+    },
+    {
+      "claim_id": "0143800d-d569-4473-9a92-516bca1d5073",
+      "result_id": "aa5971c3-b987-49ee-b174-9c269dec628f"
+    },
+    {
+      "claim_id": "88d3f5c2-4b4a-4628-8b4b-998747001662",
+      "result_id": "aa5971c3-b987-49ee-b174-9c269dec628f"
+    },
+    {
+      "claim_id": "d9ed65cd-79f9-43b4-a85a-2627d362b983",
+      "result_id": "aa5971c3-b987-49ee-b174-9c269dec628f"
+    },
+    {
+      "claim_id": "bc0db7cc-e6bc-4b02-9cc6-066ce09b4932",
+      "result_id": "aa5971c3-b987-49ee-b174-9c269dec628f"
+    },
+    {
+      "claim_id": "ccde5b98-c107-4dfd-ac0a-cbc12edcdc0b",
+      "result_id": "a35a9e11-3af5-467c-bcb2-e9a2086ef840"
+    },
+    {
+      "claim_id": "6cd717c4-2172-4047-a796-be5324b23925",
+      "result_id": "a35a9e11-3af5-467c-bcb2-e9a2086ef840"
+    },
+    {
+      "claim_id": "9cdaf247-f91d-426d-9fbc-10377b455af6",
+      "result_id": "a35a9e11-3af5-467c-bcb2-e9a2086ef840"
+    },
+    {
+      "claim_id": "ab36d1eb-cbdd-4177-94d4-3dcf192812a3",
+      "result_id": "a35a9e11-3af5-467c-bcb2-e9a2086ef840"
+    },
+    {
+      "claim_id": "6cedab35-ef9d-44bc-8679-7b37302e5f4e",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "89948d4d-f438-431f-bf0c-71f3d0c2b648",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "351544a8-4285-4a96-88f9-a804620bc86b",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "f290c827-fc61-452e-b1c0-64ce35b0952d",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "17ade808-6f97-4965-a924-b3db2c71fb7a",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "98a624ae-ce32-49e3-b415-161737ba7923",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "3c5a7206-bcb0-4a6c-b11d-8fe4a882bcd5",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "c3f8de63-286d-4236-8e27-731a5691230e",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "1b4da44f-83a0-46ce-90f1-8a0b2a34c5ff",
+      "result_id": "dd66e4e2-43ef-4a76-aa55-fde4e8a717fc"
+    },
+    {
+      "claim_id": "1266f52c-ae19-41f8-b663-c469c5a4acf4",
+      "result_id": "35b6e989-3a84-4d7e-9e0e-5e3861effb36"
+    },
+    {
+      "claim_id": "cd56ee1b-21ec-4586-bbbe-74b3f5a49c86",
+      "result_id": "35b6e989-3a84-4d7e-9e0e-5e3861effb36"
+    },
+    {
+      "claim_id": "82d6f000-48b0-4aeb-a436-71c91687743b",
+      "result_id": "35b6e989-3a84-4d7e-9e0e-5e3861effb36"
+    },
+    {
+      "claim_id": "b874ef9f-2eec-4b8b-9d7a-0afdeab7d4c0",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "7ad840b9-cff6-497d-941a-8207bb29f69b",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "5e687b16-cae9-421f-8ee5-373d78b6e641",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "9dca94a8-2694-4240-ae3c-98d549a0218e",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "eb805d40-8f17-4660-8154-df6a04bc6f37",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "e86031f3-e3d9-4fcb-8df1-8c9f49f2b8cc",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "6791ca19-e4a0-4dd7-aefe-d6fdd6e157be",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "97074f05-6632-43fb-99b8-a6e41bc1b418",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "bba6b9f1-1795-4955-b168-15c4f130afea",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "f5df8be0-8857-4663-b98f-115762d99936",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "16054eb8-9edb-4cf6-9b61-db15c49f744e",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "c058c420-dd76-44b7-a258-92a716826428",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "0016eed3-fb76-4b92-a00a-6ac6a556646e",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "05223b47-2db0-43c9-82c0-6eab6a3acb4a",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "19325f1b-93b9-4879-af9b-77a72b1554a6",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "dcd2dc7f-430b-44c9-bb82-ee89be5f64b4",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "bb9ff448-6f34-4690-8d7b-f601a69d645b",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "e7115b58-62ba-451a-a6dc-c6e2ced29cd0",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "a8f4df78-3006-4f54-8085-e5f56c435923",
+      "result_id": "0c824df8-c1b6-4c88-bb5a-699f42c59eb4"
+    },
+    {
+      "claim_id": "90287036-6571-449d-b24a-a294489d54bc",
+      "result_id": "9dd3c795-7d7a-4c06-8a9e-91caaa12d9cf"
+    },
+    {
+      "claim_id": "855349b2-c07f-4dae-9611-b796b84dda5b",
+      "result_id": "9dd3c795-7d7a-4c06-8a9e-91caaa12d9cf"
+    },
+    {
+      "claim_id": "d340e7f5-0d43-4003-8ad3-90ffe963cfa4",
+      "result_id": "9dd3c795-7d7a-4c06-8a9e-91caaa12d9cf"
+    },
+    {
+      "claim_id": "51897167-4661-40ac-b044-34ac0774c110",
+      "result_id": "c5fc2948-c612-4be2-b533-c86df89e39a2"
+    },
+    {
+      "claim_id": "0244c85a-82ab-4e0b-8674-37d7449df3fa",
+      "result_id": "c5fc2948-c612-4be2-b533-c86df89e39a2"
+    },
+    {
+      "claim_id": "f57df300-d421-4012-957c-6869477cf8a2",
+      "result_id": "c5fc2948-c612-4be2-b533-c86df89e39a2"
+    }
+  ],
+  "comparisons": []
+}

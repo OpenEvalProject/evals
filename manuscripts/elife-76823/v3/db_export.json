@@ -1,0 +1,1761 @@
+{
+  "submission": {
+    "id": "87021c1b-72dd-4804-a12c-6d9ff03febe2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:28:52.235863Z",
+    "updated_at": "2025-12-03T12:28:52.235863Z"
+  },
+  "content": [
+    {
+      "id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "submission_id": "87021c1b-72dd-4804-a12c-6d9ff03febe2",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the human somatostatin receptor 2 complex with its agonist somatostatin delineates the ligand-binding specificity\n\n## Authors\n\n- Yunseok Heo<sup>1</sup>\n- Eojin Yoon<sup>2</sup>\n- Ye-Eun Jeon<sup>1</sup>\n- Ji-Hye Yun<sup>1</sup>\n- Naito Ishimoto<sup>4</sup>\n- Hyeonuk Woo<sup>5</sup>\n- Sam-Yong Park<sup>4</sup> ([ORCID: 0000-0001-6164-8896](https://orcid.org/0000-0001-6164-8896))\n- Ji-Joon Song<sup>2</sup> ([ORCID: 0000-0001-7120-6311](https://orcid.org/0000-0001-7120-6311)) \u2020\n- Weontae Lee<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, College of Life Science and Biotechnology, Yonsei University Seoul Republic of Korea ([ROR:01wjejq96](https://ror.org/01wjejq96))\n2. Department of Biological Sciences, Korea Advanced Institute of Science and Technology Daejeon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))\n3. PCG-Biotech, Ltd., 508 KBIZ DMC Tower, Sangam-Ro Seoul Republic of Korea\n4. Drug Design Laboratory, Graduate School of Medical Life Science, Yokohama City University Yokohama Japan ([ROR:0135d1r83](https://ror.org/0135d1r83))\n5. Department of Chemistry, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSomatostatin is a peptide hormone that regulates endocrine systems by binding to G-protein-coupled somatostatin receptors. Somatostatin receptor 2 (SSTR2) is a human somatostatin receptor and is highly implicated in hormone disorders, cancers, and neurological diseases. Here, we report the high-resolution cryo-EM structure of full-length human SSTR2 bound to the agonist somatostatin (SST-14) in complex with inhibitory G (Gi) proteins. Our structural and mutagenesis analyses show that seven transmembrane helices form a deep pocket for ligand binding and that SSTR2 recognizes the highly conserved Trp-Lys motif of SST-14 at the bottom of the pocket. Furthermore, our sequence analysis combined with AlphaFold modeled structures of other SSTR isoforms provide a structural basis for the mechanism by which SSTR family proteins specifically interact with their cognate ligands. This work provides the first glimpse into the molecular recognition mechanism of somatostatin receptors and a crucial resource to develop therapeutics targeting somatostatin receptors.\n\n## Introduction\n\nSomatostatin (SST) is a cyclic peptide hormone that regulates neurotransmission and hormone secretion (Weckbecker et al., 2003; Saito et al., 2005; Morrison et al., 1985). SST was initially identified as an inhibitory hormone produced in hypothalamic neurons, but it is also released in the gastrointestinal (GI) tract. SST binds to G-protein-coupled somatostatin receptors (SSTRs), inhibiting adenylyl cyclase via inhibitory G-proteins (Patel et al., 1994; Patel et al., 1995). SSTRs are class A G-protein-coupled receptors (GPCRs), and there are five isoforms (SSTR1\u2013SSTR5) (Leu and Nandi, 2010). Each SSTR isoform is expressed in different tissues and organs and has a distinct function (Bartha and Gy\u0151rffy, 2021). SST inhibits the secretion of growth hormone from the pituitary gland, and SST secreted in the GI tract inhibits the secretion of GI hormones. Furthermore, SST in the brain has been shown to modulate cortical circuits (Song et al., 2020). Therefore, the SST-SSTR axis is highly implicated in several human diseases, including acromegaly, cancers, and neurological disorders (Song et al., 2020; Song et al., 2021; Lamberts et al., 2002). Several SST analogs, such as octreotide, lanreotide, and pasireotide, targeting SSTRs have been developed, and they are already in clinical use (Lamberts et al., 2002). For example, acromegaly is caused by excessive production of growth hormone in the pituitary gland, and SST analogs such as octretotide and lanreotide are clinically used for treating acromegaly by exploiting the inhibitory role of SST via SSTR. However, the currently used SST and its analogs have obscure binding specificity among SSTR isoforms, making it difficult to develop means to modulate each isoform specifically while minimizing off-target effects. SSTR2 is mainly expressed in brain and endocrine tissues and is implicated in neuroendocrine tumors and Alzheimer\u2019s disease (Song et al., 2021; Uhl\u00e9n et al., 2015). To understand the molecular and structural basis of the SSTR interaction with its ligand, we determined the cryo-EM structure of SSTR2 bound to its endogenous agonist somatostatin (SST-14) in a complex with inhibitory G-proteins. Our structural work provides insight into the mechanism by which SSTRs recognize their ligands and will serve as a platform to develop selective agonists and therapeutics.\n\n## Results and discussion\n\nTo investigate the molecular basis of ligand-specific binding by SSTR2, we determined the cryo-EM structure of human SSTR2 bound to the SST-14 somatostatin peptide. Full-length human SSTR2 in a thermostabilized apocytochrome b562 RIL (BRIL) fusion form and a heterotrimeric G\u03b1i1/G\u03b21\u03b32 complex with G\u03b1i1-recognizing scFv16 were separately expressed and purified, and the SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex in the presence of SST-14 cyclic peptide was prepared for structural study (Figure 1\u2014figure supplement 1). The complex was plunge-frozen, and micrographs were collected using a Titan Krios 300 keV with a Gatan K2 Summit direct detector in movie mode. The collected data were processed and refined with Relion 3.1 (Zivanov et al., 2018; Figure 1\u2014figure supplement 2 and Table 1). During refinement, SSTR2 was separated into two bodies (Body 1: SSTR2 + G\u03b1i1\u03b21 and Body 2: G\u03b21\u03b32 + scFv16), and the two bodies were separately refined. The overall resolution of the whole SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex was estimated as 3.72 \u00c5 at 0.143 criteria of the gold standard FSC, and the resolutions of Body 1 and Body 2 were estimated as 3.65 and 3.22 \u00c5, respectively. The cryo-EM map was well resolved, and the atomic model for most part of the SSTR2 complex was built on the map (Figure 1A and Figure 1\u2014figure supplement 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig1-v3.jpg)\n\n**Figure 1.:** (A) The atomic model of the SSTR2 complex is shown in a ribbon model. SSTR2, G\u03b1i1, G\u03b21, G\u03b32, and scFv16 are shown in a ribbon diagram and colored in salmon, green, cyan, magenta, and yellow, respectively. The bound SST-14 cyclic peptide is shown in a ball-and-stick model and colored in navy blue. (B) The C-terminal of G\u03b1i1 is inserted in the pocket formed by TM5\u20137 of SSTR2 forming hydrophobic interactions. (C) SST-14 (shown in a ball-and-stick) is bound to the pocket formed by seven TMs of SSTR2 (colored in salmon) at the extracellular side (left panel). SSTR2 is shown in an electrostatic surface representation (right panel).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** After injecting the complex sample into a size exclusion chromatography column, three peaks appeared. The complete complex of SSTR2, heterotrimeric G\u03b1i1/G\u03b21\u03b32, and scFv16 was eluted at the first peak around 11.25 mL (shown in an SDS-PAGE).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The collected data was processed using Relion 3.1. Through 2D and 3D classification, final 320,885 particles were selected for reconstruction. After sharpening, the resolution of somatostatin receptor 2 (SSTR2) complex was determined at 3.72 \u00c5. (B) FSC curves of Body 1 and Body 2 as well as complete complex of SSTR2 were obtained. SSTR2 of Body 1 showed better resolution than SSTR2 of complete complex, and G-proteins of Body2 showed better resolution than G-proteins of complete complex. (C) Euler angle distribution of the particles for the 3D reconstruction.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) The cryo-EM maps of SSTR2 complex at the ligand-binding pocket (i), the interface between SSTR2 and G-proteins (ii) and the G-protein (G\u03b21) (iii). (B) The atomic models of the seven transmembrane helices (TM1: 43\u201369 a.a., TM2: 77\u2013105 a.a., TM3: 111\u2013145 a.a., TM4: 156\u2013180 a.a., TM5: 203\u2013237 a.a., TM6: 245\u2013281 a.a., and TM7: 288\u2013315 a.a.) are superimposed on the cryo-EM map.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) The superimposition of SSTR2 in active and inactive conformations. The active structure of SSTR2 (in salmon) is from this study and the inactive structure of SSTR2 (in green) is predicted by AlphaFold. TM6 is displaced outward in the active form compared with the inactive form. (B) Comparison between SSTR2 and other GPCR structures in active and inactive forms. The active SSTR2 structure (in salmon) is superimposed with the inactive oxytocin receptor (OTR) structure (in cyan) (PDB ID: 6TPK) and with the active melanocortin receptor 4 (MC4R) structure (in yellow) (PDB ID:7AUE).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** SST-14, oxytocin, and setmelanotide cyclic peptide ligands bound to SSTR2, OTR, and MC4R are shown in a stick model.\n\n**Table 1.**\n Refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Data collection and processing</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th colspan=\"2\">Magnification</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Total electron exposure/used (e/\u212b2)</td>\n      <td>55.04/29.24</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Defocus range (\u03bcm)</td>\n      <td>\u20130.8 ~ \u20132.0</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Pixel size (\u212b2)</td>\n      <td>0.829</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Processing program</td>\n      <td>Relion 3.1</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Obtained/used micrographs (no.)</td>\n      <td>5523/5523</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Initial/final particles used (no.)</td>\n      <td>6,677,042/320,885</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Symmetry imposed</td>\n      <td>C1</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Resolution (\u212b) (FSC threshold)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GPCR + G-protein</td>\n      <td></td>\n      <td>3.72 (0.143)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Multibody refinement</td>\n      <td>GPCR + G\u03b1\u03b2</td>\n      <td>3.65 (0.143)</td>\n    </tr>\n    <tr>\n      <td>G\u03b2\u03b3+scfv16</td>\n      <td>3.22 (0.143)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Refinement program</td>\n      <td>PHENIX</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Model composition</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Nonhydrogen atoms</td>\n      <td>8660</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Protein residues</td>\n      <td>1129</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">r.m.s. deviation</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Bond length (\u212b)</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Bond angle (\u00b0)</td>\n      <td>0.547</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Validation</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">MolProbity score</td>\n      <td>2.08</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Clash score</td>\n      <td>7.79</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Ramachandran plot (%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Favored/allowed/outliers</td>\n      <td>95.86/4.24/0.0</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Mask CC</td>\n      <td>0.80</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the structure, the C-terminal helix of G\u03b1i1 is inserted inside of the seven transmembrane (TM) helices forming hydrophobic interactions with TM 5\u20137 helices (Figure 1B), and scFv16 interacts with the N-terminal helix of G\u03b1i1 and a loop protruding from G\u03b21, stabilizing the structures. The topology and structure of the TM helices is similar to other known GPCRs (Weis and Kobilka, 2018). We compared our active SSTR2 structure with the inactive structures of oxytocin receptor (OTR), AlphaFold predicted SSTR2, and the active structure of melanocortin receptor 4 (MC4R) (Waltensp\u00fchl et al., 2020; Israeli et al., 2021; Jumper et al., 2021). Our cryo-EM structure of SSTR2 shows a conventional active conformation, in which TM5, TM6, and TM7 are displaced outward from TM3 (Figure 1A and Figure 1\u2014figure supplement 4).\n\nThe TM helices of SSTR2 at the extracellular side form a pocket for ligands, and SST-14 nestles snugly at the pocket (Figure 1C). Among the 14 amino acids in SST-14, 12 amino acid residues from Cys3 to Cys14 are clearly visible in the cryo-EM map, and the positions of the side chains were unambiguously assigned on the map (Figure 2A). SST-14 is cyclized via a disulfide bond between Cys3 and Cys14, and the region between Phe6 and Phe11 forms a flat sheet (Figure 2B). In this configuration, the disulfide bond is located outward from the ligand-binding pocket of SSTR2, and the two amino acids of Trp8 and Lys9 are positioned at the bottom of the binding pocket (Figure 2B). The binding mode of SST-14 to SSTR2 is similar to those of other cyclic peptides, including oxytocin in OTR and setmelanotide in MC4R (Israeli et al., 2021; Meyerowitz et al., 2022; Figure 1\u2014figure supplement 5). The disulfide bonds of the cyclic peptides are located at the extracellular surface of the ligand-binding pockets formed by TMs. While SSTR2 recognizes the Trp-Lys motif in SST-14, OTR and MC4R interact with the Tyr-Ile motifs in oxytocin and dPhe-Arg-Trp in setmelanotide via the bottom of the binding pockets, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig2-v3.jpg)\n\n**Figure 2.:** (A) The cryo-EM map near the SST-14 ligand in two different orientations. The sequence of SST-14 is drawn at the below. Two amino acids, which are not visible, are colored in gray. C3 and C14 make a covalent bond to form a cyclic peptide. (B) The ligand-binding pocket of SSTR2 with SST-14 is shown in two different orientations. SSTR2 is shown in a ribbon diagram and SST-14 in a stick model. (C) Detailed interactions between SST-14 and SSTR2. The salt bridge between Lys9 and Asp122, and a hydrogen bonding between Lys9 and Gln126 are indicated with yellow dotted lines. (D) The dose-signal curves of SSTR2 for SST-14. WT, D122A, Q126M, F272A, F294A of SSTR2, measuring the inhibition of cAMP production upon forskolin stimulation (n = 3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The expression levels of SSTR2 WT and mutants are similar. Actin was used for loading control.\n\nTo understand the specific recognition of SST-14 by SSTR2, we examined the detailed interactions between SST-14 and SSTR2. At the bottom of the ligand-binding pocket, Trp9 of SST-14 interacts with SSTR2 via a hydrophobic pocket formed by Ile177, Phe208, Thr212, and Phe272 from TM4\u20136 helices (Figure 2C). Notably, Lys9 is the only charged residue among the amino acids of SST-14, which is located inside of the pocket. Lys9 of SST-14 forms a salt bridge with Asp122 with a 2.7 \u00c5 distance and makes a hydrogen bond with the oxygen atom of the Gln126 side chain. In addition, the carbonyl oxygen in the peptide bond between Lys8 and Trp9 forms a hydrogen bond with Asn276. While the region of S13C14C3K4 is exposed to the solvent, other hydrophobic residues form stable interactions with the hydrophobic residues in the ligand-binding pocket (Figure 2C). Specifically, the Phe275, Leu290, and Phe294 residues of SSTR2 accommodate the Phe6 residue of SST-14, and the Phe7 residue of SST-14 is stacked on Tyr205 coming from the TM5 helix and further stabilized by the interactions with the Ile195 and Phe208 residues. To validate the recognition of SST-14 by SSTR2 observed in the cryo-EM structure, we mutagenized several critical residues involved in the interaction and performed a functional assay in HEK293 cells. We measured the degree of inhibition of cAMP generation upon forskolin stimulation by homogeneous time-resolved fluorescence resonance energy transfer (HTRF-FRET) (Figure 2D and Figure 2\u2014figure supplement 1). We first eliminated the salt bridge between Lys9 of SST-14 and SSTR2 by mutating Asp122 to alanine. While the cAMP production was completely inhibited by SST-14 at submicromolar range concentrations for SSTR2WT, SSTR2D122A showed less than 20% inhibition of cAMP production, indicating that the disruption of the bridge likely abrogated the interaction between SSTR2 and SST-14. Next, we mutated Gln126 to methionine and examined its effect. Gln126 forms a hydrogen bond with Lys9 of SST-14 in addition to the salt bridge, and mutating Gln to Met substantially decreased the function of SSTR2. Notably, among the five isoforms, SSTR2, SSTR3, and SSTR5 isoforms have glutamine while SSTR1 and SSTR4 have methionines at this position. We further examined the effects of the hydrophobic residues interacting with SST-14 by mutating Phe272 or Phe294 to alanines. Eliminating the hydrophobic interactions between SST-14 and SSTR2 also substantially decreased the function of SSTR2, emphasizing their roles in recognizing its ligand. Combined with the cryo-EM structure, our functional analysis further delineates the specific recognition of SSTR2 for its ligand.\n\nThe endogenous agonists for SSTRs are SST-14 and SST-28 (Patel et al., 1994; Patel and Srikant, 1994). Compared to SST-14, SST-28 has an extra 14 residues at the N-terminus (Figure 3A). Our cryo-EM structure shows that the region of SST-14 is likely sufficient for binding to SSTR2. Consistent with this hypothesis, SST-28 has a binding affinity similar to that of SST-14, in the subnanomolar range (Song et al., 2021). In addition to SST-14, there are several other ligands and drugs that bind to SSTR2, including cortistatin, octreotide, pasireotide, and lanreotide. All of these ligands and drugs are cyclic forms of peptides and contain absolutely conserved Trp and Lys residues (Figure 3A). The interaction analysis based on the cryo-EM structure showed that these highly conserved Trp and Lys residues tightly interact with SSTR2 via hydrophobic interactions and a salt bridge. Therefore, it is likely that the Trp-Lys motif of the ligands and drugs is a major determinant for binding.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig3-v3.jpg)\n\n**Figure 3.:** (A) The sequences of somatostatins and its analogs. Trp-Lys motif is absolutely conserved among all SSTR-binding ligands, emphasizing the importance of the Trp-Lys motif for the function. Modified amino acids are marked with asterisks in pasireotide (P*: hydroxyproline, F*: 2-phenylglycine, Y*: phenylmethylated tyrosine), lanreotide (A*: D-2-naphthylalanine, T*: amidated threonine), vapreotide (W*: amidated tryptophan), and somatoprim (X*: \u03c9-amino acid). (B) A sequence alignment among SSTR isoforms. The amino acids are colored in red or yellow depending the degree of sequence conservation among the isoforms. The secondary structures based on the cryo-EM structure of SSTR2 are shown above the sequences. Critical residues recognizing SST-14 are indicated with asterisks under the sequences. P1, P2, and P3 indicate highly variable sequences among the isoforms. (C) The conserved amino acids near the ligand-binding pocket are colored according to the sequence alignment in (B). Highly conserved amino acids are clustered near the inner bottom of the pocket, which interacts with the Trp-Lys motif, while amino acids near the upper part of the pocket are not well conserved. (D) Three variable positions (P1, P2, P3) in the ligand-binding pockets based on the cryo-EM structure of SSTR2 and AlphaFold modeled structure of SSTR1, SSTR3, SSTR4, and SSTR5.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76823/elife-76823-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Structures of SSTR1, SSTR3, SSTR4, and SSTR5 from AlphaFold Protein Structure Database (alphafold.ebi.ac.uk) were superimposed on the cryo-EM structure of SSTR2. SSTR2 is shown in a ribbon diagram in salmon color. SSTR1 is shown as a C\u03b1 backbone model and colored in green, SSTR3 in cyan, SSTR4 in gold, and SSTR5 in magenta.\n\nThere are five isoforms of SSTRs (SSTR1\u20135), which are classified into two families based on their structural and pharmacological properties. SSTR2, SSTR3, and SSTR5 belong to the SRIF1 receptor family, and SSTR1 and SSTR4 belong to the SRIF2 receptor family (G\u00fcnther et al., 2018). The tissues that express each isoform and its cognate ligand differ, implying the isoform-specific function of SSTRs (Song et al., 2021). To further investigate the ligand specificity of the isoforms, we further examined the ligand-binding pocket of SSTRs by combining a sequence alignment analysis, our cryo-EM structure of SSTR2 and predicted models of other isoforms from the AlphaFold database (https://alphafold.ebi.ac.uk) (Jumper et al., 2021). To examine the sequence conservation of the ligand-binding pocket, we colored the residues near the ligand-binding pocket of SSTR2 in red or yellow depending on the degree of conservation based on a sequence alignment among SSTRs (Figure 3B and C). This practice revealed that the residues involved in interacting with the Trp-Lys motif are highly conserved. On the other hand, the residues interacting with the other part of SST-14 are highly variable, suggesting that this region contributes to the ligand specificity among SSTR isoforms.\n\nTo further understand the binding specificity of SSTR isoforms, we superimposed modeled structures of SSTR1, SSTR3, SSTR4, and SSTR5 isoforms from the AlphaFold Structure Database (alphafold.ebi.ac.uk) (Jumper et al., 2021) on the cryo-EM structure of SSTR2 (Figure 3\u2014figure supplement 1) and examined the interactions between SST-14 bound to SSTRs. As the AlphaFold models were generated in the absence of ligands, the modeled structures represent an inactive state where the ligand is not bound. Among the residues in the ligand-binding pockets, residues at three positions, which directly interact with SST-14, vary among the isoforms (Figure 3D). The first position is at Gln126 in SSTR2 located in the bottom of the ligand-binding pocket and involved in interacting with the Trp-Lys motif of SST-14. SSTR3 and SSTR5 also have Gln at this position while SSTR1 and SSTR4 have Mets. As this position is located between Trp8 and Lys9 of SST-14, Gln interacts with Lys9, while Met interacts with Trp8. Interestingly, our functional assay with Gln126Met mutant showed a substantial decrease in the function of SSTR2, suggesting that Gln126 may play a role in the substrate specificity of the isoforms. The second position is Tyr205, which interacts with Phe7 of SST-14 via stacking interactions between aromatic rings. Each isoform has a different residue at this position (Leu220 in SSTR1, Arg203 in SSTR3, Ser208 in SSTR4, and Gly198 in SSTR5). Therefore, it is possible that the residues at this position contribute to the binding specificity of each isoform. The third position is at Phe294, which is located on TM7 in SSTR2. Phe294 holds Phe6 of SST-14 via hydrophobic interactions. While SSTR3 and SSTR5 have Tyr residues at this position, maintaining the hydrophobicity, SSTR1 and SSTR4 have Ser305 and Asn293 residues at this position, respectively. Collectively, our structural and sequence analyses suggest that SSTR2, SSTR3, and SSTR5 likely have different binding characteristics than SSTR1 and SSTR4. Consistent with this hypothesis, octreotide, lanreotide, and pasireotide have higher affinities toward SSTR2, SSTR3, and SSTR5 than SSTR1 and SSTR4 (Song et al., 2021; Barbieri et al., 2013). A recent report on the SSTR2 structure by Robertson et al. showed that extracellular loop 2 (ECL2) and ECL3 are involved in ligand-specific binding among SSTR isoforms, which have highly variable sequences among the SSTR isoforms (Figure 3B; Robertson et al., 2022). In addition, consistent with our findings, they also showed that the interactions between the ligands and SSTR2 at the inside of the binding pocket are also critical for the ligand specificity. Therefore, several regions of SSTR2 including residues in the ECLs and the inside of the binding pockets likely contribute to the ligand-binding specificity. Together with the recent work, our structural and sequence analysis revealed subtle differences in the ligand-binding pocket in each SSTR isoform, providing a critical information to understand how each SSTR isoform specifically recognizes its cognate ligand and drug.\n\nIn conclusion, our work on the structure of the SSTR2 and SST-14 ligand complex delineates the specific ligand recognition by SSTRs. Furthermore, as SSTRs are highly implicated in several human diseases, our works on SSTR2 and the SST-14 complex will serve as a fundamental platform to design novel and specific therapeutics to modulate SSTRs.\n\n## Materials and methods\n\n### Construct design\n\nWT full-length human SSTR2 inserted with an N-terminal hemagglutinin signal sequence and FLAG tag inserted, followed by an 8\u00d7 His tag and HRV 3C protease cleavage site was cloned into the modified pFastBac1 (Invitrogen, Carlsbad, CA) vector. For the SSTR2 stability, an additional sequence of A1-L106 encoding thermostabilized apocytochrome BRIL with mutations (M7W, H102I, R106L) was added after the 8\u00d7 His tag at the N-terminus (Chun et al., 2012). The heterotrimeric G\u03b1i1/G\u03b21\u03b32 was designed as previously described (Kim et al., 2020). The scFv16 single-chain antibody containing the GP67 secretion signal sequence was also inserted into the pFastBac1 vector (Maeda et al., 2018).\n\n### Expression of SSTR2\n\n#### The G\u03b1i/G\u03b2\u03b3 heterotrimer and scFv16\n\nSSTR2 and G\u03b1i1/G\u03b21\u03b32 were expressed using the Bac-to-Bac Baculovirus Expression system (Invitrogen) in Spodoptera frugiperda (Sf9) cells using ESF media (Expression Systems, Davis, CA). Using the high titer virus at a multiplicity of infection of 3, Sf9 cells at a density of 2 \u00d7 106 cells/mL in 400 mL of biomass were infected. The cells were incubated with shaking at 27\u00b0C for 72 hr and harvested, washed with phosphate-buffered saline (PBS), flash-frozen in liquid nitrogen, and stored at \u221280\u00b0C until further use. The scFV16 single-chain antibody was expressed using the Bac-to-Bac expression system in Sf9 cells, and a high titer virus was generated. The cells were incubated with shaking at 27\u00b0C for 72 hr, and secreted scFv16 in the supernatant was separated from the cells by centrifugation.\n\n### Purification of SSTR2\n\n#### The G\u03b1i/G\u03b2\u03b3 heterotrimer and scFv16\n\nSSTR2 frozen pellets were thawed and resuspended at 4\u00b0C with the addition of EDTA-free protease inhibitor cocktail (Sigma Aldrich, St Louis, MO). The cell membranes were obtained by repeated lysis and Dounce homogenization using hypotonic buffer containing 10 mM HEPES (pH 7.5), 10 mM MgCl2, 20 mM KCl, and protease inhibitors and hypertonic buffer containing 10 mM HEPES (pH 7.5), 10 mM MgCl2, 20 mM KCl, 1.0 M NaCl, and protease inhibitors. The washed membrane fractions were resuspended in buffer containing 30 mM HEPES (pH 7.5), 5 mM MgCl2, 10 mM KCl, 500 mM NaCl, 200 \u03bcM SST-14, and protease inhibitors. Then, membrane fractions were incubated at 25\u00b0C for 1 hr and solubilized in 1% (w/v) n-dodecyl-\u03b2-D-maltopyranoside (DDM) (Anatrace, Maumee, OH) and 0.2% (w/v) cholesteryl hemisuccinate (CHS) (Anatrace, Maumee, OH) at 4\u00b0C for 3 hr. The solubilized solution was isolated by ultracentrifugation at 150,000 \u00d7 g for 60 min, and the supernatant was isolated. TALON IMAC (Clontech) resin was added to the supernatant. The mixture was incubated at 4\u00b0C overnight. After incubation, the resin-bound SSTR2 was loaded onto a disposable chromatography column (Bio-Rad, Hercules, CA), and the resin was washed with 20 column volumes (CVs) of wash buffer containing 50 mM HEPES (pH 7.5), 500 mM NaCl, 10 mM MgCl2, 1% (w/v) DDM, 0.2% CHS (w/v), 5 mM imidazole, 10% (v/v) glycerol, and 50 \u03bcM SST-14. Bound proteins were eluted with 10 CVs of elution buffer containing 50 mM HEPES (pH 7.5), 500 mM NaCl, 0.05% (w/v) lauryl maltose neopentyl glycol (LMNG) (Anatrace, Maumee, OH), 0.005% (w/v) CHS, 300 mM imidazole, 10% (v/v) glycerol, and 100 \u03bcM SST-14. PD-10 desalting column (Cytiva) was used to remove the high concentration of imidazole. SSTR2 was then treated overnight at 4\u00b0C with HRV 3C protease. A reverse affinity column was used for the further purification of untagged SSTR2 with buffer containing 50 mM HEPES (pH 7.5), 500 mM NaCl, 0.05% (w/v) LMNG, 0.005% (w/v) CHS, 10% (v/v) glycerol, and 50 \u03bcM SST-14. SSTR2 was collected and concentrated and loaded onto a Superdex 200 Increase 10/300 GL column (Cytiva) with buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, 1 mM MgCl2, 0.5 mM TCEP, 0.05% (w/v) LMNG, 0.005% (w/v) CHS, and 50 \u03bcM SST-14 via \u00c4KTA pure system (Cytiva). Fresh SSTR2 was used for SSTR2-G\u03b1i1/G\u03b21\u03b32 complex formation. G\u03b1i1/G\u03b21\u03b32 frozen pellets were thawed and resuspended at 4\u00b0C with the addition of a protease inhibitor cocktail. The cells were lysed in lysis buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, 1 mM MgCl2, 20 mM imidazole, 5 mM \u03b2-mercaptoethanol, 100 \u03bcM GDP, 1% (v/v) Tergitol-type NP-40 (Sigma), and protease inhibitors. The soluble fraction was isolated by ultracentrifugation at 130,000 \u00d7 g at 4\u00b0C for 30 min. The Gi heterotrimer in the soluble fraction was purified using Ni-NTA chromatography and eluted with buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, 1 mM MgCl2, 300 mM imidazole, 5 mM \u03b2-mercaptoethanol, and 10 \u03bcM GDP. HRV 3C protease was added and the 6\u00d7 His tag was cleaved at 4\u00b0C overnight. A reverse affinity column was used for purification of untagged G\u03b1i1/G\u03b21\u03b32. The untagged G\u03b1i1/G\u03b21\u03b32 protein was further purified by size exclusion chromatography (SEC) on a HiLoad 16/600 Superdex 200 column (Cytiva) with the following buffer: 20 mM HEPES (pH 7.5), 100 mM NaCl, 1 mM MgCl2, 500 \u00b5M TCEP, and 10 \u00b5M GDP. The eluted protein was concentrated to 5 mg/mL and stored at \u221280\u00b0C until further use. The supernatant containing scFv16 was loaded onto a HisTrap EXCEL column. The column was washed with 10 CVs of wash buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, and 50 mM imidazole. The bound protein was eluted using the same buffer supplemented with 500 mM imidazole. After the eluted protein was concentrated, PD-10 desalting column was used to remove the high concentration of imidazole. The C-terminal 6\u00d7 His tag was cleaved by incubation with HRV 3C protease at 4\u00b0C overnight. A reverse affinity column was used for purification of untagged scFv16. scFv16 was further purified by SEC on a HiLoad 16/600 Superdex 200 column (Cytiva) with following buffer containing 20 mM HEPES (pH 7.5) and 100 mM NaCl. Monomeric fractions were pooled, concentrated, and flash-frozen in liquid nitrogen until further use.\n\n### Formation of SSTR2-G\u03b1i1/G\u03b21\u03b32 complex\n\nTo form the SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex, fresh SST-14-bound SSTR2 was mixed with a 1.2 molar excess of G\u03b1i1/G\u03b21\u03b32. The coupling reaction was performed at 25\u00b0C for 1 hr, followed by the addition of 0.2 units/mL apyrase (New England Biolabs). After an additional 1 hr at 25\u00b0C, lambda phosphatase (New England Biolabs) was added. To form the SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex, a 1.2 molar excess of scFv16 was added to the SSTR2-G\u03b1i1/G\u03b21\u03b32 complex and further incubated at 4\u00b0C overnight. The SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex sample in LMNG/CHS-containing buffer was loaded on a Superdex 200 Increase 10/300 GL column (Cytiva) equilibrated in buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, 1 mM MgCl2, 0.5 mM TCEP, 0.001% (w/v) LMNG, 0.0001% (w/v) CHS, and 40 \u03bcM SST-14. Peak fractions were concentrated to 2.5 mg/mL for electron microscopy studies.\n\n### Cryo-EM image processing\n\nCryo-EM data were collected with a Titan Krios, Yokohama, Japan. A total of 5523 movies were collected in electron counting mode for 50 frames with a total dose of 55.04 e/\u00c5 (Saito et al., 2005). Magnification of micrographs was \u00d775,000, 0.867 \u00c5/pixel. After data collection, image processing was performed by Relion 3.1 (Zivanov et al., 2018) in the SBGrid package (https://www.sbgrid.org/; Morin et al., 2013). Initially, collected movies were motion-corrected by MotionCorr2 and ctffind using CTFFIND 4.1 embedded in Relion 3.1. Then, 6,677,042 particles were picked by template-based autopicking. Bad particles were filtered out through several rounds of 2D classification until secondary structures were visible in 2D classes. After 2D classification, the selected 2,906,685 particles were subjected to 3D classification with C1 symmetry dividing the particles into eight classes. Among eight 3D classes, three high-resolution classes were selected. Several rounds of 3D classification were performed until the final resolution reached 4.08 \u00c5 by 3D autorefining with a final of 320,885 particles. The final particles were reextracted from motion-corrected micrographs with a total dose of 29.24 e-/\u00c5 (Saito et al., 2005), and the resolution was improved up to 3.72 \u00c5 (FSC threshold 0.143). For further processing, the whole model was divided into two bodies for multibody refinement. Body 1 contains SSTR2 + G\u03b1i1/G\u03b21 + scFv16, and Body 2 contains G\u03b21/G\u03b32 + scFv16. The resolution after multibody refinement and sharpening was 3.65 \u00c5 for Body 1 and 3.22 \u00c5 for Body 2 (FSC threshold 0.143). The atomic model was built on the cryo-EM map with the help of the available G\u03b1i1/G\u03b21 + scFv16 structure and the AlphaFold predicted SSTR2 structure. The cryo-EM map and the model were deposited at the EMDB (https://www.ebi.ac.uk/) and RCSB (https://www.rcsb.org/) databases with the accession codes of EMD-32543 and 7WJ5, respectively.\n\n### cAMP functional assay\n\nInhibition of forskolin-stimulated cAMP production was measured using a CISBIO cAMP HTRF-FRET kit (Cisbio, Bedford, MA). First, 2 \u03bcg of SSTR2 DNA was transfected into HEK293 cells, and the cells were plated in 96-well plates (4 \u00d7 104/well) in 5 \u03bcL using DMEM supplemented with 1% FBS following suspension in 5 mM EDTA/PBS. The cells were treated with 2 \u03bcL of 50 \u03bcM phosphodiesterase inhibitor (RO-20\u20131724) dissolved in a stimulation buffer (1\u00d7 DPBS containing 0.1% BSA) and 2 \u03bcL of SST-14 at 10 different concentrations (5 \u00d7 10\u20136, 2.5 \u00d7 10\u20136, 2.5 \u00d7 10\u20137, 5 \u00d7 10\u20138, 2.5 \u00d7 10\u20138, 2.5 \u00d7 10\u20139, 5 \u00d7 10\u201310, 2.5 \u00d7 10\u201310, 2.5 \u00d7 10\u201311, and 5 \u00d7 10\u201312 M) dissolved in distilled water, and 1 \u03bcL of 1 \u03bcM forskolin for 45 min at 37\u00b0C. The plates were developed by adding 5 \u03bcL of anti-cAMP cryptate and 5 \u03bcL of d2-labeled cAMP in a lysis buffer for 60 min at 25\u00b0C. Fluorescence measurements were acquired at 620 and 665 nm using an Artemis plate reader (Cisbio, Bedford, MA), and FRET data were calculated as the 665/620 ratio. The signal values of WT SSTR2 were normalized from 0% to 100%. The signal values of mutant SSTR2 were indicated relative to those of WT SSTR2. The expression levels of SSTR2 constructs were monitored by Western blot analysis using FLAG antibody (Sigma A8592, St. Louis, MO, USA) and actin antibody (Sigma A5441, St. Louis, MO, USA) (Figure 2\u2014figure supplement 1). The HEK293 cells were obtained from Korean Cell Line Bank (https://cellbank.snu.ac.kr). The characteristics of the cell line are as follows: origin-kidney, species-human, cellular morphology-epithelia, growth pattern-monolayer, histopathology-transformed primary embryonial kidney. The detailed STR data can be found at Korean Cell Line Bank (https://cellbank.snu.ac.kr) with KCBL No. 21,573. The cell line was tested negative for mycoplasma contamination.\n",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "5e7e3f3b-977d-4179-82e9-c303fbb04f37",
+      "submission_id": "87021c1b-72dd-4804-a12c-6d9ff03febe2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew C Kruse, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76823.sa0](https://doi.org/10.7554/eLife.76823.sa0)\n\nThis manuscript reports the cryoEM structure of somatostatin receptor 2 (SSTR2) bound to its agonist SST\u2013 14 and a heterotrimeric G protein. In addition to presenting the structure itself, the authors include discussion and analysis of ligand recognition and subtype specificity, guided by AlphaFold2 modeling of other somatostatin receptor subtypes. Site\u2013 directed mutagenesis and signaling assay data attest to the importance of receptor\u2013 ligand contacts that contribute to subtype specificity. Somatostatin signaling is important in endocrine biology, including in diseases such as acromegaly and some cancers, and structures of somatostatin receptors will help illuminate the molecular details of somatostatin receptor signal transduction. Of note, the structure of SSTR2 was also separately reported by Robertson et al., Nat. Struct. Mol. Biol. 2022 while this manuscript was under review.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andrew C Kruse, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76823.sa1](https://doi.org/10.7554/eLife.76823.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cryo-EM structure of human somatostatin receptor 2 complex with its agonist somatostatin delineates the ligand binding specificity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Volker D\u00f6tsch as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The addition of a modest amount of functional data (i.e., binding or signaling assays) to test the importance of proposed receptor\u2013 ligand contacts is critical to understand which features directly contribute to subtype specificity. This could also broaden the appeal of the manuscript to other researchers with interests in GPCR signaling. Appropriate controls should be included for any receptor mutants tested.\n\n2) Both reviewers noted that discussion of somatostatin receptor biology is brief and vague in several points. Please revise to include more precise and explicit discussion of disease relevance and of the role of SSTR signaling in normal biology.\n\nReviewer #1 (Recommendations for the authors):\n\nThe discussion of somatostatin biology is quite thin, and often rather vague. In the first sentence of the introduction, the authors state that SST is \"implicated in several diseases\". Much more precision would be helpful here. What does SST do in normal biology? Which diseases arise from dysfunction of SST signaling, and how? Some explicit discussion of the key unresolved structural and pharmacological questions would be helpful as well, to provide a clear rationale for the work described.\n\nAs noted above, some specific hypotheses around ligand recognition could be tested experimentally by mutagenesis or peptide engineering. Discussions based purely on structure (or alphafold predictions) are inherently speculative rather than definitive.\n\nRamachandran outliers should be fixed.\n\nReviewer #2 (Recommendations for the authors):\n\nI would recommend the authors to introduce and discuss the literature regarding the pharmacology of somatostatin (SST\u2013 14 in particular). For example, SST\u2013 14 binds to all 5 receptors with similar affinities so it is hard to explain with just one structure how the residues that are not conserved in the binding pocket do regulate the binding specificity.\n\nThe authors also do not discuss at all the active state features of SSTR2 and only briefly the coupling with the Gi protein. Also, you describe the binding of a cyclic peptide. How does it compare to other known structures, if any? Could we learn something about cyclic peptide binding mode for GPCR?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cryo\u2013 EM structure of the human somatostatin receptor 2 complex with its agonist somatostatin delineates the ligand binding specificity\" for further consideration by eLife. Your revised article has been evaluated by Volker D\u00f6tsch (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n1. Expression level data are necessary to evaluate the effects of point mutations presented in Figure 2D, as discussed in the previous reviews. It is possible that the attenuated signaling of the mutants reflects differences in expression level, rather than differences in ligand recognition.\n\n2. Some additional discussion of the recent Robertson et al. paper would be helpful, highlighting where conclusions in the present manuscript confirm or extend data in the other paper.\n",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f58e895b-2ee6-46d2-a590-f7b408859f8b",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C1",
+      "claim": "Somatostatin is a peptide hormone that regulates endocrine systems by binding to G-protein-coupled somatostatin receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatostatin is a peptide hormone that regulates endocrine systems by binding to G-protein-coupled somatostatin receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about somatostatin function that is established in the scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "10819c56-cf22-4e54-846e-da1f4542de69",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C2",
+      "claim": "SSTR2 is a human somatostatin receptor and is highly implicated in hormone disorders, cancers, and neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatostatin receptor 2 (SSTR2) is a human somatostatin receptor and is highly implicated in hormone disorders, cancers, and neurological diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about SSTR2's role in disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "76936a80-bc08-4c5f-947c-378d7b5dea55",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C3",
+      "claim": "The authors determined a high-resolution cryo-EM structure of full-length human SSTR2 bound to SST-14 in complex with inhibitory G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the high-resolution cryo-EM structure of full-length human SSTR2 bound to the agonist somatostatin (SST-14) in complex with inhibitory G (Gi) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental determination of this structure with detailed methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "b4073855-7331-4e9d-a3cf-272dcc4153d7",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C4",
+      "claim": "Seven transmembrane helices of SSTR2 form a deep pocket for ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural and mutagenesis analyses show that seven transmembrane helices form a deep pocket for ligand binding and that SSTR2 recognizes the highly conserved Trp-Lys motif of SST-14 at the bottom of the pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM structure and mutagenesis experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "320cfdc9-8450-42a7-8908-01d6b5872a3e",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C5",
+      "claim": "SSTR2 recognizes the highly conserved Trp-Lys motif of SST-14 at the bottom of the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural and mutagenesis analyses show that seven transmembrane helices form a deep pocket for ligand binding and that SSTR2 recognizes the highly conserved Trp-Lys motif of SST-14 at the bottom of the pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and mutagenesis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "94fa97ee-0cda-4736-a10a-f852e5831dca",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C6",
+      "claim": "SST was initially identified as an inhibitory hormone produced in hypothalamic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "SST was initially identified as an inhibitory hormone produced in hypothalamic neurons, but it is also released in the gastrointestinal (GI) tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about the discovery of somatostatin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "6ad24a30-7292-45c9-863f-fd18ce301593",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C7",
+      "claim": "SST is also released in the gastrointestinal tract.",
+      "claim_type": "EXPLICIT",
+      "source": "SST was initially identified as an inhibitory hormone produced in hypothalamic neurons, but it is also released in the gastrointestinal (GI) tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about somatostatin distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "392ca97e-8a83-4d25-8c55-292304b348a7",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C8",
+      "claim": "SST binds to G-protein-coupled somatostatin receptors, inhibiting adenylyl cyclase via inhibitory G-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "SST binds to G-protein-coupled somatostatin receptors (SSTRs), inhibiting adenylyl cyclase via inhibitory G-proteins (Patel et al., 1994; Patel et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "b5368d24-3d00-402e-a330-214cd644565a",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C9",
+      "claim": "SSTRs are class A G-protein-coupled receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "SSTRs are class A G-protein-coupled receptors (GPCRs), and there are five isoforms (SSTR1\u2013SSTR5) (Leu and Nandi, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "b17d6324-799d-46dd-ad57-16f5753d8db5",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C10",
+      "claim": "There are five SSTR isoforms (SSTR1\u2013SSTR5).",
+      "claim_type": "EXPLICIT",
+      "source": "SSTRs are class A G-protein-coupled receptors (GPCRs), and there are five isoforms (SSTR1\u2013SSTR5) (Leu and Nandi, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "4d52524a-fa84-451a-8404-5e7c21f01e38",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C11",
+      "claim": "Each SSTR isoform is expressed in different tissues and organs and has a distinct function.",
+      "claim_type": "EXPLICIT",
+      "source": "Each SSTR isoform is expressed in different tissues and organs and has a distinct function (Bartha and Gy\u0151rffy, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "b66033ca-dd6e-4dfe-99a6-83a32caa08e8",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C12",
+      "claim": "SST inhibits the secretion of growth hormone from the pituitary gland.",
+      "claim_type": "EXPLICIT",
+      "source": "SST inhibits the secretion of growth hormone from the pituitary gland, and SST secreted in the GI tract inhibits the secretion of GI hormones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about somatostatin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "fe8a7b07-beeb-4700-89cc-2de93a54c959",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C13",
+      "claim": "SST secreted in the GI tract inhibits the secretion of GI hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "SST inhibits the secretion of growth hormone from the pituitary gland, and SST secreted in the GI tract inhibits the secretion of GI hormones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about somatostatin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "b975ad6c-29b0-4000-8d7d-48e591c2c3c8",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C14",
+      "claim": "SST in the brain has been shown to modulate cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SST in the brain has been shown to modulate cortical circuits (Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "6c98d437-66c7-48d6-b85e-12ac00f53537",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C15",
+      "claim": "The SST-SSTR axis is highly implicated in several human diseases, including acromegaly, cancers, and neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the SST-SSTR axis is highly implicated in several human diseases, including acromegaly, cancers, and neurological disorders (Song et al., 2020; Song et al., 2021; Lamberts et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "060d5ac1-8ed3-4d58-82cc-90781ab28a68",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C16",
+      "claim": "Several SST analogs, such as octreotide, lanreotide, and pasireotide, targeting SSTRs have been developed and are already in clinical use.",
+      "claim_type": "EXPLICIT",
+      "source": "Several SST analogs, such as octreotide, lanreotide, and pasireotide, targeting SSTRs have been developed, and they are already in clinical use (Lamberts et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "65666800-c03a-46ec-becf-847aa38fc4e7",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C17",
+      "claim": "Acromegaly is caused by excessive production of growth hormone in the pituitary gland.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, acromegaly is caused by excessive production of growth hormone in the pituitary gland, and SST analogs such as octretotide and lanreotide are clinically used for treating acromegaly by exploiting the inhibitory role of SST via SSTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "7a3897bf-1a11-4a84-8d95-d328dcc8d111",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C18",
+      "claim": "SST analogs such as octreotide and lanreotide are clinically used for treating acromegaly.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, acromegaly is caused by excessive production of growth hormone in the pituitary gland, and SST analogs such as octretotide and lanreotide are clinically used for treating acromegaly by exploiting the inhibitory role of SST via SSTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "5dd95ff5-e3fb-403c-91cd-67a809a6156a",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C19",
+      "claim": "Currently used SST and its analogs have obscure binding specificity among SSTR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the currently used SST and its analogs have obscure binding specificity among SSTR isoforms, making it difficult to develop means to modulate each isoform specifically while minimizing off-target effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of SST analog specificity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "f45142b6-fb93-4376-8c74-cc7352d0ad25",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C20",
+      "claim": "SSTR2 is mainly expressed in brain and endocrine tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "SSTR2 is mainly expressed in brain and endocrine tissues and is implicated in neuroendocrine tumors and Alzheimer's disease (Song et al., 2021; Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "81109482-a128-4675-b394-f4c8aba05656",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C21",
+      "claim": "SSTR2 is implicated in neuroendocrine tumors and Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "SSTR2 is mainly expressed in brain and endocrine tissues and is implicated in neuroendocrine tumors and Alzheimer's disease (Song et al., 2021; Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "8ec68ce8-e959-4a76-85f5-becc80e8900a",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C22",
+      "claim": "The overall resolution of the whole SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex was estimated as 3.72 \u00c5 at 0.143 criteria of the gold standard FSC.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall resolution of the whole SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex was estimated as 3.72 \u00c5 at 0.143 criteria of the gold standard FSC, and the resolutions of Body 1 and Body 2 were estimated as 3.65 and 3.22 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "6f934351-5023-4615-a78c-849466b2f474",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C23",
+      "claim": "The resolutions of Body 1 and Body 2 were estimated as 3.65 and 3.22 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall resolution of the whole SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex was estimated as 3.72 \u00c5 at 0.143 criteria of the gold standard FSC, and the resolutions of Body 1 and Body 2 were estimated as 3.65 and 3.22 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "d5dd4b56-5c44-475c-af75-40bca3c2ae5c",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C24",
+      "claim": "The C-terminal helix of G\u03b1i1 is inserted inside of the seven transmembrane helices forming hydrophobic interactions with TM 5\u20137 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, the C-terminal helix of G\u03b1i1 is inserted inside of the seven transmembrane (TM) helices forming hydrophobic interactions with TM 5\u20137 helices (Figure 1B), and scFv16 interacts with the N-terminal helix of G\u03b1i1 and a loop protruding from G\u03b21, stabilizing the structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "31bc2e64-499c-45a2-9a35-e072a6486548",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C25",
+      "claim": "scFv16 interacts with the N-terminal helix of G\u03b1i1 and a loop protruding from G\u03b21, stabilizing the structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, the C-terminal helix of G\u03b1i1 is inserted inside of the seven transmembrane (TM) helices forming hydrophobic interactions with TM 5\u20137 helices (Figure 1B), and scFv16 interacts with the N-terminal helix of G\u03b1i1 and a loop protruding from G\u03b21, stabilizing the structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "94a2c3ad-a328-49b1-8f2f-717a8346a91b",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C26",
+      "claim": "The topology and structure of the TM helices is similar to other known GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The topology and structure of the TM helices is similar to other known GPCRs (Weis and Kobilka, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with known GPCR structures and a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "a2436be4-1504-4dc9-9f37-b3e857851e9a",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C27",
+      "claim": "The cryo-EM structure of SSTR2 shows a conventional active conformation, in which TM5, TM6, and TM7 are displaced outward from TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM structure of SSTR2 shows a conventional active conformation, in which TM5, TM6, and TM7 are displaced outward from TM3 (Figure 1A and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "f3c43ea9-7337-43bc-81bd-696ecd347273",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C28",
+      "claim": "The TM helices of SSTR2 at the extracellular side form a pocket for ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The TM helices of SSTR2 at the extracellular side form a pocket for ligands, and SST-14 nestles snugly at the pocket (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "e7a2f9f5-eebf-4156-b821-d8baa36a8ddd",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C29",
+      "claim": "SST-14 nestles snugly at the pocket formed by TM helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The TM helices of SSTR2 at the extracellular side form a pocket for ligands, and SST-14 nestles snugly at the pocket (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "ddd2f1f7-f8df-4546-811d-25630cf0a566",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C30",
+      "claim": "Among the 14 amino acids in SST-14, 12 amino acid residues from Cys3 to Cys14 are clearly visible in the cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 14 amino acids in SST-14, 12 amino acid residues from Cys3 to Cys14 are clearly visible in the cryo-EM map, and the positions of the side chains were unambiguously assigned on the map (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the cryo-EM map shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "7c84dc3a-ed6d-413e-892d-032b97d99dc8",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C31",
+      "claim": "SST-14 is cyclized via a disulfide bond between Cys3 and Cys14.",
+      "claim_type": "EXPLICIT",
+      "source": "SST-14 is cyclized via a disulfide bond between Cys3 and Cys14, and the region between Phe6 and Phe11 forms a flat sheet (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "eed70972-2d59-4dee-b328-71af77df7886",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C32",
+      "claim": "The region between Phe6 and Phe11 of SST-14 forms a flat sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "SST-14 is cyclized via a disulfide bond between Cys3 and Cys14, and the region between Phe6 and Phe11 forms a flat sheet (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "fc9e5384-82a8-4fb9-9e32-d2d7065506c1",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C33",
+      "claim": "The disulfide bond of SST-14 is located outward from the ligand-binding pocket of SSTR2.",
+      "claim_type": "EXPLICIT",
+      "source": "In this configuration, the disulfide bond is located outward from the ligand-binding pocket of SSTR2, and the two amino acids of Trp8 and Lys9 are positioned at the bottom of the binding pocket (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "8acad813-102e-4d67-a0d0-75274465989d",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C34",
+      "claim": "Trp8 and Lys9 of SST-14 are positioned at the bottom of the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In this configuration, the disulfide bond is located outward from the ligand-binding pocket of SSTR2, and the two amino acids of Trp8 and Lys9 are positioned at the bottom of the binding pocket (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "a160b243-ad5f-4236-baaa-95da18dd187b",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C35",
+      "claim": "The binding mode of SST-14 to SSTR2 is similar to those of other cyclic peptides, including oxytocin in OTR and setmelanotide in MC4R.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding mode of SST-14 to SSTR2 is similar to those of other cyclic peptides, including oxytocin in OTR and setmelanotide in MC4R (Israeli et al., 2021; Meyerowitz et al., 2022; Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison with cited structures and shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "cf8319bb-2da6-4416-b55f-82bf5f3fdd3a",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C36",
+      "claim": "Trp9 of SST-14 interacts with SSTR2 via a hydrophobic pocket formed by Ile177, Phe208, Thr212, and Phe272 from TM4\u20136 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "At the bottom of the ligand-binding pocket, Trp9 of SST-14 interacts with SSTR2 via a hydrophobic pocket formed by Ile177, Phe208, Thr212, and Phe272 from TM4\u20136 helices (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "fa04c382-7588-437e-ad6c-f642576d3c92",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C37",
+      "claim": "Lys9 is the only charged residue among the amino acids of SST-14 located inside of the pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Lys9 is the only charged residue among the amino acids of SST-14, which is located inside of the pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "17982b8c-8509-4d4f-847f-7d93d6a506df",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C38",
+      "claim": "Lys9 of SST-14 forms a salt bridge with Asp122 with a 2.7 \u00c5 distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys9 of SST-14 forms a salt bridge with Asp122 with a 2.7 \u00c5 distance and makes a hydrogen bond with the oxygen atom of the Gln126 side chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure with measured distance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "d5d0d8db-9b99-4516-bdba-552cd01ed7be",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C39",
+      "claim": "Lys9 of SST-14 makes a hydrogen bond with the oxygen atom of the Gln126 side chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys9 of SST-14 forms a salt bridge with Asp122 with a 2.7 \u00c5 distance and makes a hydrogen bond with the oxygen atom of the Gln126 side chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "840ee5c0-885c-4351-97f4-31464f1afcaa",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C40",
+      "claim": "The carbonyl oxygen in the peptide bond between Lys8 and Trp9 forms a hydrogen bond with Asn276.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the carbonyl oxygen in the peptide bond between Lys8 and Trp9 forms a hydrogen bond with Asn276.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "3758e785-5045-4783-8812-61048d9f6ae4",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C41",
+      "claim": "The Phe275, Leu290, and Phe294 residues of SSTR2 accommodate the Phe6 residue of SST-14.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the Phe275, Leu290, and Phe294 residues of SSTR2 accommodate the Phe6 residue of SST-14, and the Phe7 residue of SST-14 is stacked on Tyr205 coming from the TM5 helix and further stabilized by the interactions with the Ile195 and Phe208 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "cda7f9cd-29e6-4f14-bae3-c995cbdee28b",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C42",
+      "claim": "The Phe7 residue of SST-14 is stacked on Tyr205 coming from the TM5 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the Phe275, Leu290, and Phe294 residues of SSTR2 accommodate the Phe6 residue of SST-14, and the Phe7 residue of SST-14 is stacked on Tyr205 coming from the TM5 helix and further stabilized by the interactions with the Ile195 and Phe208 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "5166979c-0bd7-4ed7-8dbb-ff8fcba81f8e",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C43",
+      "claim": "The Phe7 residue of SST-14 is further stabilized by the interactions with the Ile195 and Phe208 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the Phe275, Leu290, and Phe294 residues of SSTR2 accommodate the Phe6 residue of SST-14, and the Phe7 residue of SST-14 is stacked on Tyr205 coming from the TM5 helix and further stabilized by the interactions with the Ile195 and Phe208 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "f6cb1010-042d-47e9-ab35-4064f8df3670",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C44",
+      "claim": "SSTR2D122A showed less than 20% inhibition of cAMP production.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cAMP production was completely inhibited by SST-14 at submicromolar range concentrations for SSTR2WT, SSTR2D122A showed less than 20% inhibition of cAMP production, indicating that the disruption of the bridge likely abrogated the interaction between SSTR2 and SST-14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the functional assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "1c72caff-1998-4103-8038-aa5dd5edc79a",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C45",
+      "claim": "The disruption of the salt bridge between Lys9 and Asp122 likely abrogated the interaction between SSTR2 and SST-14.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cAMP production was completely inhibited by SST-14 at submicromolar range concentrations for SSTR2WT, SSTR2D122A showed less than 20% inhibition of cAMP production, indicating that the disruption of the bridge likely abrogated the interaction between SSTR2 and SST-14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional assay results comparing WT and D122A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "e86cc615-a4e5-443a-978e-71daa730ae34",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C46",
+      "claim": "Mutating Gln126 to Met substantially decreased the function of SSTR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we mutated Gln126 to methionine and examined its effect. Gln126 forms a hydrogen bond with Lys9 of SST-14 in addition to the salt bridge, and mutating Gln to Met substantially decreased the function of SSTR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the functional assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "76a00ca3-b361-401f-b718-5da83229897f",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C47",
+      "claim": "Among the five isoforms, SSTR2, SSTR3, and SSTR5 isoforms have glutamine while SSTR1 and SSTR4 have methionines at position 126.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, among the five isoforms, SSTR2, SSTR3, and SSTR5 isoforms have glutamine while SSTR1 and SSTR4 have methionines at this position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "9dfab6c2-198c-4a7a-9f51-c56ca1824d1d",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C48",
+      "claim": "Eliminating the hydrophobic interactions between SST-14 and SSTR2 by mutating Phe272 or Phe294 to alanines substantially decreased the function of SSTR2.",
+      "claim_type": "EXPLICIT",
+      "source": "We further examined the effects of the hydrophobic residues interacting with SST-14 by mutating Phe272 or Phe294 to alanines. Eliminating the hydrophobic interactions between SST-14 and SSTR2 also substantially decreased the function of SSTR2, emphasizing their roles in recognizing its ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the functional assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "4dc0fded-8121-43d9-994d-51bb42b51980",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C49",
+      "claim": "The endogenous agonists for SSTRs are SST-14 and SST-28.",
+      "claim_type": "EXPLICIT",
+      "source": "The endogenous agonists for SSTRs are SST-14 and SST-28 (Patel et al., 1994; Patel and Srikant, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "5759b1ea-b200-4ddb-8c58-3482842da1d3",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C50",
+      "claim": "SST-28 has an extra 14 residues at the N-terminus compared to SST-14.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to SST-14, SST-28 has an extra 14 residues at the N-terminus (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "9136d6ab-b1d9-43f7-a7ce-bcb6316a753e",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C51",
+      "claim": "The region of SST-14 is likely sufficient for binding to SSTR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM structure shows that the region of SST-14 is likely sufficient for binding to SSTR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cryo-EM structure showing complete binding of SST-14.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "edefe651-e097-4550-97c6-f2c674e2e290",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C52",
+      "claim": "SST-28 has a binding affinity similar to that of SST-14, in the subnanomolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, SST-28 has a binding affinity similar to that of SST-14, in the subnanomolar range (Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "a3cd1796-527d-43f2-81d3-5729092e642b",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C53",
+      "claim": "All SSTR2-binding ligands and drugs are cyclic forms of peptides and contain absolutely conserved Trp and Lys residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to SST-14, there are several other ligands and drugs that bind to SSTR2, including cortistatin, octreotide, pasireotide, and lanreotide. All of these ligands and drugs are cyclic forms of peptides and contain absolutely conserved Trp and Lys residues (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "81ce4437-7fba-4ec3-acda-112085a1ba73",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C54",
+      "claim": "The Trp-Lys motif of the ligands and drugs is likely a major determinant for binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction analysis based on the cryo-EM structure showed that these highly conserved Trp and Lys residues tightly interact with SSTR2 via hydrophobic interactions and a salt bridge. Therefore, it is likely that the Trp-Lys motif of the ligands and drugs is a major determinant for binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis and sequence conservation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "7170e790-1928-4a1d-b002-66506f69d7ca",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C55",
+      "claim": "There are five isoforms of SSTRs (SSTR1\u20135), which are classified into two families based on their structural and pharmacological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "There are five isoforms of SSTRs (SSTR1\u20135), which are classified into two families based on their structural and pharmacological properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SSTR classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "939adc8c-f6fb-4411-8c3f-9a3e46c278ad",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C56",
+      "claim": "SSTR2, SSTR3, and SSTR5 belong to the SRIF1 receptor family.",
+      "claim_type": "EXPLICIT",
+      "source": "SSTR2, SSTR3, and SSTR5 belong to the SRIF1 receptor family, and SSTR1 and SSTR4 belong to the SRIF2 receptor family (G\u00fcnther et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "8d51c506-51d3-4868-9ab8-82cde68101a1",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C57",
+      "claim": "SSTR1 and SSTR4 belong to the SRIF2 receptor family.",
+      "claim_type": "EXPLICIT",
+      "source": "SSTR2, SSTR3, and SSTR5 belong to the SRIF1 receptor family, and SSTR1 and SSTR4 belong to the SRIF2 receptor family (G\u00fcnther et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "03da8d4b-554b-4f2f-8263-c928d8b2c196",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C58",
+      "claim": "The tissues that express each isoform and its cognate ligand differ, implying the isoform-specific function of SSTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The tissues that express each isoform and its cognate ligand differ, implying the isoform-specific function of SSTRs (Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "e8dd5f6d-fc12-44bd-a575-340f4dc1304e",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C59",
+      "claim": "The residues involved in interacting with the Trp-Lys motif are highly conserved among SSTR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "This practice revealed that the residues involved in interacting with the Trp-Lys motif are highly conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis combined with structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "acb7f2fb-2a4e-4af0-b4f2-eef72c6fa934",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C60",
+      "claim": "The residues interacting with the other part of SST-14 are highly variable among SSTR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the residues interacting with the other part of SST-14 are highly variable, suggesting that this region contributes to the ligand specificity among SSTR isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis combined with structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "62dded15-5b33-4de9-8efd-e6b7f02c8b9f",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C61",
+      "claim": "The variable region contributes to the ligand specificity among SSTR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the residues interacting with the other part of SST-14 are highly variable, suggesting that this region contributes to the ligand specificity among SSTR isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sequence variability analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "edc4f27a-d50b-4270-a010-9b0d3e7cb979",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C62",
+      "claim": "SSTR2, SSTR3, and SSTR5 likely have different binding characteristics than SSTR1 and SSTR4.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our structural and sequence analyses suggest that SSTR2, SSTR3, and SSTR5 likely have different binding characteristics than SSTR1 and SSTR4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and sequence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "7a4d810b-3927-42b7-9e8a-86a245bacf53",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C63",
+      "claim": "Octreotide, lanreotide, and pasireotide have higher affinities toward SSTR2, SSTR3, and SSTR5 than SSTR1 and SSTR4.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, octreotide, lanreotide, and pasireotide have higher affinities toward SSTR2, SSTR3, and SSTR5 than SSTR1 and SSTR4 (Song et al., 2021; Barbieri et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "5fad6d8d-cc5e-4f0e-95fd-49670c7ba3ec",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C64",
+      "claim": "Extracellular loop 2 (ECL2) and ECL3 are involved in ligand-specific binding among SSTR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent report on the SSTR2 structure by Robertson et al. showed that extracellular loop 2 (ECL2) and ECL3 are involved in ligand-specific binding among SSTR isoforms, which have highly variable sequences among the SSTR isoforms (Figure 3B; Robertson et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "ed572d4c-466b-46ac-8f3d-37050c26fcab",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C65",
+      "claim": "ECL2 and ECL3 have highly variable sequences among the SSTR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent report on the SSTR2 structure by Robertson et al. showed that extracellular loop 2 (ECL2) and ECL3 are involved in ligand-specific binding among SSTR isoforms, which have highly variable sequences among the SSTR isoforms (Figure 3B; Robertson et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 3B and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "0e985e64-381f-45b3-809b-2d4a1a924420",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C66",
+      "claim": "The interactions between the ligands and SSTR2 at the inside of the binding pocket are critical for the ligand specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, consistent with our findings, they also showed that the interactions between the ligands and SSTR2 at the inside of the binding pocket are also critical for the ligand specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to recent research and is consistent with the authors' findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "45c1c575-716e-41fa-9ae7-96ba767746e6",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C67",
+      "claim": "Several regions of SSTR2 including residues in the ECLs and the inside of the binding pockets likely contribute to the ligand-binding specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, several regions of SSTR2 including residues in the ECLs and the inside of the binding pockets likely contribute to the ligand-binding specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined structural and sequence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "d15a1392-7b44-460b-a120-f9e40113fd30",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C68",
+      "claim": "The cryo-EM map was well resolved, and the atomic model for most part of the SSTR2 complex was built on the map.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM map was well resolved, and the atomic model for most part of the SSTR2 complex was built on the map (Figure 1A and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the quality of the cryo-EM data and model building.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "8faf2672-9b82-4908-9f77-cac128889ba9",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C69",
+      "claim": "The complete complex of SSTR2, heterotrimeric G\u03b1i1/G\u03b21\u03b32, and scFv16 was eluted at the first peak around 11.25 mL in size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "After injecting the complex sample into a size exclusion chromatography column, three peaks appeared. The complete complex of SSTR2, heterotrimeric G\u03b1i1/G\u03b21\u03b32, and scFv16 was eluted at the first peak around 11.25 mL (shown in an SDS-PAGE).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "e33c7d36-506e-47dc-8da3-fbf9cab7e977",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C70",
+      "claim": "A total of 320,885 particles were selected for reconstruction after 2D and 3D classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Through 2D and 3D classification, final 320,885 particles were selected for reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the data processing workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "be1d31b3-01c4-408b-84a6-b2c2a50612b1",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C71",
+      "claim": "The active structure of SSTR2 is from this study and the inactive structure of SSTR2 is predicted by AlphaFold.",
+      "claim_type": "EXPLICIT",
+      "source": "The active structure of SSTR2 (in salmon) is from this study and the inactive structure of SSTR2 (in green) is predicted by AlphaFold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure legend for Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "3425799f-ccab-4066-a2a5-73d53ea2945a",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C72",
+      "claim": "TM6 is displaced outward in the active form compared with the inactive form.",
+      "claim_type": "EXPLICIT",
+      "source": "TM6 is displaced outward in the active form compared with the inactive form.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "a2b13326-21f0-4561-a9f8-42c5711aa1af",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C73",
+      "claim": "The disulfide bonds of the cyclic peptides are located at the extracellular surface of the ligand-binding pockets formed by TMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The disulfide bonds of the cyclic peptides are located at the extracellular surface of the ligand-binding pockets formed by TMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural comparison of cyclic peptide-GPCR complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "05d6c5f5-5fbc-4fd1-a597-9af2eb113d85",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C74",
+      "claim": "OTR and MC4R interact with the Tyr-Ile motifs in oxytocin and dPhe-Arg-Trp in setmelanotide via the bottom of the binding pockets, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "While SSTR2 recognizes the Trp-Lys motif in SST-14, OTR and MC4R interact with the Tyr-Ile motifs in oxytocin and dPhe-Arg-Trp in setmelanotide via the bottom of the binding pockets, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with known structures of OTR and MC4R.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "d9c4aad1-ef17-41c4-b75b-8ce996783e6e",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C75",
+      "claim": "The region of S13C14C3K4 of SST-14 is exposed to the solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "While the region of S13C14C3K4 is exposed to the solvent, other hydrophobic residues form stable interactions with the hydrophobic residues in the ligand-binding pocket (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "8bf16b2b-2341-4753-8c87-c607cbb42025",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C76",
+      "claim": "The cAMP production was completely inhibited by SST-14 at submicromolar range concentrations for SSTR2WT.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cAMP production was completely inhibited by SST-14 at submicromolar range concentrations for SSTR2WT, SSTR2D122A showed less than 20% inhibition of cAMP production, indicating that the disruption of the bridge likely abrogated the interaction between SSTR2 and SST-14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the functional assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "00eae257-1362-4c98-8c02-cb75794e397c",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C77",
+      "claim": "Gln126 forms a hydrogen bond with Lys9 of SST-14 in addition to the salt bridge.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we mutated Gln126 to methionine and examined its effect. Gln126 forms a hydrogen bond with Lys9 of SST-14 in addition to the salt bridge, and mutating Gln to Met substantially decreased the function of SSTR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "4d5e21e3-624f-4c02-84a5-33b98f3db093",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C78",
+      "claim": "Gln126 may play a role in the substrate specificity of the isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our functional assay with Gln126Met mutant showed a substantial decrease in the function of SSTR2, suggesting that Gln126 may play a role in the substrate specificity of the isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "ff115ad2-2ed8-4d92-be08-5b35b7713b59",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C79",
+      "claim": "Tyr205 interacts with Phe7 of SST-14 via stacking interactions between aromatic rings.",
+      "claim_type": "EXPLICIT",
+      "source": "The second position is Tyr205, which interacts with Phe7 of SST-14 via stacking interactions between aromatic rings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "faec1bbe-59fa-4bd1-b515-aa73be1b29b4",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C80",
+      "claim": "Each SSTR isoform has a different residue at position 205 (Leu220 in SSTR1, Arg203 in SSTR3, Ser208 in SSTR4, and Gly198 in SSTR5).",
+      "claim_type": "EXPLICIT",
+      "source": "Each isoform has a different residue at this position (Leu220 in SSTR1, Arg203 in SSTR3, Ser208 in SSTR4, and Gly198 in SSTR5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "41c8acb1-e1a0-4fd8-b6f5-4db963f4a924",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C81",
+      "claim": "The residues at position 205 may contribute to the binding specificity of each isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that the residues at this position contribute to the binding specificity of each isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sequence variability at this position.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "3262d80d-d2d6-4255-9fa1-68890cfd2cfa",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C82",
+      "claim": "Phe294 is located on TM7 in SSTR2.",
+      "claim_type": "EXPLICIT",
+      "source": "The third position is at Phe294, which is located on TM7 in SSTR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "77f89350-6265-46b9-912c-6fbad06e414c",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C83",
+      "claim": "Phe294 holds Phe6 of SST-14 via hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Phe294 holds Phe6 of SST-14 via hydrophobic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "4e856156-0e6c-4d86-8d34-9b2af3d4762f",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C84",
+      "claim": "SSTR3 and SSTR5 have Tyr residues at position 294, maintaining the hydrophobicity.",
+      "claim_type": "EXPLICIT",
+      "source": "While SSTR3 and SSTR5 have Tyr residues at this position, maintaining the hydrophobicity, SSTR1 and SSTR4 have Ser305 and Asn293 residues at this position, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "c2ed323d-5fd7-4909-b78c-f69da9913ba2",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C85",
+      "claim": "SSTR1 and SSTR4 have Ser305 and Asn293 residues at position 294, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "While SSTR3 and SSTR5 have Tyr residues at this position, maintaining the hydrophobicity, SSTR1 and SSTR4 have Ser305 and Asn293 residues at this position, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "2362c177-f4e1-4725-b24e-e3abc61bdeba",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C86",
+      "claim": "The AlphaFold models were generated in the absence of ligands and represent an inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "As the AlphaFold models were generated in the absence of ligands, the modeled structures represent an inactive state where the ligand is not bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of AlphaFold predictions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "a8699146-6547-4e08-bc2a-7dcee65dd447",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C87",
+      "claim": "Among the residues in the ligand-binding pockets, residues at three positions, which directly interact with SST-14, vary among the isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the residues in the ligand-binding pockets, residues at three positions, which directly interact with SST-14, vary among the isoforms (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment and structural analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "8f415f2d-6010-44fd-9aa2-29f28f24b0d6",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C88",
+      "claim": "The first variable position is at Gln126 in SSTR2 located in the bottom of the ligand-binding pocket and involved in interacting with the Trp-Lys motif of SST-14.",
+      "claim_type": "EXPLICIT",
+      "source": "The first position is at Gln126 in SSTR2 located in the bottom of the ligand-binding pocket and involved in interacting with the Trp-Lys motif of SST-14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "28269cbc-abb3-4036-9c30-bebb96ba8095",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C89",
+      "claim": "SSTR3 and SSTR5 also have Gln at position 126.",
+      "claim_type": "EXPLICIT",
+      "source": "SSTR3 and SSTR5 also have Gln at this position while SSTR1 and SSTR4 have Mets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "5bb4f0f7-53f9-40a3-b171-c3928d95e747",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C90",
+      "claim": "Position 126 is located between Trp8 and Lys9 of SST-14.",
+      "claim_type": "EXPLICIT",
+      "source": "As this position is located between Trp8 and Lys9 of SST-14, Gln interacts with Lys9, while Met interacts with Trp8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "2f0787a9-f84b-4264-a067-aef2d4a45162",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "claim_id": "C91",
+      "claim": "Gln at position 126 interacts with Lys9, while Met interacts with Trp8.",
+      "claim_type": "EXPLICIT",
+      "source": "As this position is located between Trp8 and Lys9 of SST-14, Gln interacts with Lys9, while Met interacts with Trp8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural position and chemical properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e17f8bcb-b747-4eca-9f40-501345573bda",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a cryo-EM structure of the SSTR2-G\u03b1i1/G\u03b21\u03b32-scFv16 complex bound to SST-14 at 3.72 \u00c5 overall resolution, with Body 1 (SSTR2 + G\u03b1i1\u03b21) at 3.65 \u00c5 and Body 2 (G\u03b21\u03b32 + scFv16) at 3.22 \u00c5. The structure was obtained from 320,885 particles after 2D and 3D classification, and the cryo-EM map was well-resolved allowing atomic model building.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22, C23, C68, C69, and C70 collectively describe the structural determination with appropriate resolution metrics, particle numbers, and data quality assessments. The reported resolutions are reasonable for cryo-EM, the methodology is standard, and the figures show clear density maps supporting model building. The multibody refinement approach is appropriate for flexible complexes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The SSTR2 structure shows seven transmembrane helices forming a ligand-binding pocket at the extracellular side, with SST-14 bound snugly in this pocket. The structure adopts a conventional active GPCR conformation with TM5, TM6, and TM7 displaced outward from TM3, and the C-terminal helix of G\u03b1i1 inserted between TM5-7 forming hydrophobic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24-C29, and C72 describe the overall architecture of the SSTR2-G protein complex. The structural features are consistent with known GPCR activation mechanisms (C26), supported by clear cryo-EM density (Figures 1A-C), and comparison with inactive structures validates the active conformation. The topology and G protein coupling interface are well-established features of class A GPCRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SSTR2 recognizes the Trp-Lys motif (Trp8-Lys9) of SST-14 at the bottom of the binding pocket through specific interactions: Trp8 engages a hydrophobic pocket (Ile177, Phe208, Thr212, Phe272), while Lys9 forms a salt bridge with Asp122 (2.7 \u00c5) and hydrogen bond with Gln126. Additional interactions involve Phe6 and Phe7 of SST-14 with hydrophobic residues of SSTR2, while the disulfide bond region (S13C14C3K4) is solvent-exposed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30-C43, and C75 describe detailed ligand-receptor interactions visible in the cryo-EM structure (Figure 2A-C). The 12 of 14 residues of SST-14 are clearly resolved with unambiguous side chain assignments (C30). The specific distances (2.7 \u00c5 salt bridge) and interaction types are appropriate for the reported resolution. The structural observations are internally consistent and follow expected binding chemistry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "85f5b88a-a665-48a9-86c3-268fb613a8ca",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutagenesis validation shows that disrupting key interactions substantially impairs SSTR2 function: D122A mutation (disrupting the Lys9 salt bridge) reduced cAMP inhibition to <20%, while Q126M, F272A, and F294A mutations also substantially decreased function. Wild-type SSTR2 completely inhibited cAMP production at submicromolar SST-14 concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46, C48, and C76 present functional validation of structural observations through mutagenesis and cAMP assays (Figure 2D). The functional data directly support the importance of identified interactions. Expression levels were controlled (Figure 2\u2014supplement 1). The dose-response curves show clear differences between WT and mutants, with n=3 replicates. The results are internally consistent with the structural model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "12580450-167d-4f1a-a2c3-2706ea70896b",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The binding mode of SST-14 to SSTR2 is similar to other cyclic peptide-GPCR complexes (oxytocin-OTR, setmelanotide-MC4R), with disulfide bonds located at the extracellular surface and key recognition motifs (Trp-Lys in SSTR2, Tyr-Ile in OTR, dPhe-Arg-Trp in MC4R) positioned at the bottom of binding pockets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C73, and C74 compare SSTR2 structure with known cyclic peptide-GPCR structures. The comparison is supported by Figure 1\u2014supplement 5 and appropriate citations (Israeli et al., 2021; Meyerowitz et al., 2022). The structural similarities in overall binding mode with differences in specific recognition motifs are reasonable and consistent with GPCR family diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "f854cb06-b245-47a0-ad5c-81fdb4a72b85",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The endogenous agonists SST-14 and SST-28 (which has 14 additional N-terminal residues) have similar subnanomolar binding affinities, consistent with the cryo-EM structure showing SST-14 is sufficient for binding. All SSTR2-binding ligands (cortistatin, octreotide, pasireotide, lanreotide) are cyclic peptides containing absolutely conserved Trp-Lys residues, which likely serve as a major binding determinant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 integrate structural observations with sequence analysis (Figure 3A) and prior binding data (cited). The inference that SST-14 is sufficient for binding (C51) is reasonable given complete structural resolution and similar affinities of SST-14 and SST-28 (C52). The conservation of Trp-Lys across all ligands (C53) combined with structural interactions (C54) strongly supports this motif as a binding determinant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sequence analysis reveals that residues interacting with the Trp-Lys motif are highly conserved among SSTR isoforms, while residues interacting with other parts of SST-14 are variable. Position 126 (Gln in SSTR2/3/5, Met in SSTR1/4) is located between Trp8 and Lys9, with Gln interacting with Lys9 and Met predicted to interact with Trp8, contributing to isoform specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C59-C61, and C87-C91 describe sequence conservation patterns from alignment analysis (Figure 3B) combined with structural mapping. The conservation of Trp-Lys interacting residues versus variability elsewhere is clearly shown in Figure 3C. The position 126 analysis is based on both sequence data (C47, C89) and structural positioning (C90, C91), providing a mechanistic hypothesis for isoform specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "0f97cf09-19c4-4acc-afe3-d1813505106e",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structural and sequence analyses suggest SSTR2/3/5 have different binding characteristics than SSTR1/4, consistent with higher affinities of octreotide, lanreotide, and pasireotide for SSTR2/3/5. Variable positions at 126 (Gln vs Met), 205 (Tyr in SSTR2 vs Leu/Arg/Ser/Gly in others), and 294 (Phe/Tyr vs Ser/Asn) may contribute to isoform-specific binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63, C78, C80-C81, and C84-C85 integrate sequence analysis with AlphaFold models (Figure 3D) and cited pharmacological data. The correlation between predicted structural differences and known binding preferences (C63) supports the analysis. The Q126M functional data (C78, C46) provides experimental validation. The identification of three variable positions is based on clear sequence alignment and structural analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "18e23333-8fcb-497d-a2c9-d520a7f04c0f",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple regions contribute to ligand-binding specificity: extracellular loops ECL2 and ECL3 (which have highly variable sequences among isoforms) and residues inside the binding pocket. This conclusion is consistent with recent work by Robertson et al. (2022) on SSTR2 structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 synthesize findings from this study with concurrent work (Robertson et al., 2022). The ECL sequence variability is shown in Figure 3B (C65), and the integration of ECL and pocket contributions (C67) is a reasonable conclusion. The consistency with independent work (C66) strengthens the interpretation, though the authors appropriately acknowledge this as concurrent rather than prior validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "11e98138-5c71-4453-a3cb-39666afc7d41",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The five SSTR isoforms are classified into SRIF1 (SSTR2/3/5) and SRIF2 (SSTR1/4) families with tissue-specific expression patterns implying isoform-specific functions. Structural analysis using AlphaFold-predicted inactive structures identifies specific variable residues (e.g., Tyr205 in SSTR2 stacking with Phe7, Phe294 on TM7 holding Phe6) that may contribute to binding specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58, C79, C82-C83, and C86 combine established knowledge (C55-C58, supported by citations) with structural analysis using AlphaFold models. The use of AlphaFold-predicted inactive structures (C86) is appropriate for comparative analysis, though the authors correctly note these represent inactive states. The identification of specific variable positions (C79, C82-C83) is based on clear structural observations from the cryo-EM structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context: Somatostatin is a peptide hormone regulating endocrine systems through GPCRs (SSTRs), with five isoforms (SSTR1-5) having tissue-specific expression and functions. SSTR2 is expressed in brain and endocrine tissues and implicated in neuroendocrine tumors and Alzheimer's disease. SST analogs (octreotide, lanreotide, pasireotide) are clinically used but have obscure isoform specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 provide established background knowledge supported by appropriate citations. These claims describe well-known aspects of somatostatin biology, SSTR classification, physiological functions, disease implications, and clinical applications. The statement about obscure binding specificity (C19) motivates the study and is reasonable given the lack of high-resolution structures at the time.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    },
+    {
+      "id": "7d146692-cf9f-47be-81ae-205fccf97e34",
+      "content_id": "976ad2d7-df11-4e18-807f-4809da5d398b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The active SSTR2 structure from this study was compared with an AlphaFold-predicted inactive SSTR2 structure to analyze conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 describes the comparison shown in Figure 1\u2014supplement 4. Using AlphaFold predictions for inactive state comparison is reasonable in the absence of experimental inactive structures, though the authors appropriately note the limitations of this approach (C86). The comparison is used appropriately to illustrate active-state conformational changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:28:52.235863Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "76936a80-bc08-4c5f-947c-378d7b5dea55",
+      "result_id": "e17f8bcb-b747-4eca-9f40-501345573bda"
+    },
+    {
+      "claim_id": "8ec68ce8-e959-4a76-85f5-becc80e8900a",
+      "result_id": "e17f8bcb-b747-4eca-9f40-501345573bda"
+    },
+    {
+      "claim_id": "6f934351-5023-4615-a78c-849466b2f474",
+      "result_id": "e17f8bcb-b747-4eca-9f40-501345573bda"
+    },
+    {
+      "claim_id": "d15a1392-7b44-460b-a120-f9e40113fd30",
+      "result_id": "e17f8bcb-b747-4eca-9f40-501345573bda"
+    },
+    {
+      "claim_id": "8faf2672-9b82-4908-9f77-cac128889ba9",
+      "result_id": "e17f8bcb-b747-4eca-9f40-501345573bda"
+    },
+    {
+      "claim_id": "e33c7d36-506e-47dc-8da3-fbf9cab7e977",
+      "result_id": "e17f8bcb-b747-4eca-9f40-501345573bda"
+    },
+    {
+      "claim_id": "b4073855-7331-4e9d-a3cf-272dcc4153d7",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "d5dd4b56-5c44-475c-af75-40bca3c2ae5c",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "31bc2e64-499c-45a2-9a35-e072a6486548",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "94a2c3ad-a328-49b1-8f2f-717a8346a91b",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "a2436be4-1504-4dc9-9f37-b3e857851e9a",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "f3c43ea9-7337-43bc-81bd-696ecd347273",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "e7a2f9f5-eebf-4156-b821-d8baa36a8ddd",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "3425799f-ccab-4066-a2a5-73d53ea2945a",
+      "result_id": "467cb9ab-2c5f-48d4-b0bf-b65f9b3a9279"
+    },
+    {
+      "claim_id": "320cfdc9-8450-42a7-8908-01d6b5872a3e",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "ddd2f1f7-f8df-4546-811d-25630cf0a566",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "7c84dc3a-ed6d-413e-892d-032b97d99dc8",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "eed70972-2d59-4dee-b328-71af77df7886",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "fc9e5384-82a8-4fb9-9e32-d2d7065506c1",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "8acad813-102e-4d67-a0d0-75274465989d",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "cf8319bb-2da6-4416-b55f-82bf5f3fdd3a",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "fa04c382-7588-437e-ad6c-f642576d3c92",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "17982b8c-8509-4d4f-847f-7d93d6a506df",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "d5d0d8db-9b99-4516-bdba-552cd01ed7be",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "840ee5c0-885c-4351-97f4-31464f1afcaa",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "3758e785-5045-4783-8812-61048d9f6ae4",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "cda7f9cd-29e6-4f14-bae3-c995cbdee28b",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "5166979c-0bd7-4ed7-8dbb-ff8fcba81f8e",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "d9c4aad1-ef17-41c4-b75b-8ce996783e6e",
+      "result_id": "6e9d5fd0-e034-41e9-9e11-6a0fff1a7cdb"
+    },
+    {
+      "claim_id": "f6cb1010-042d-47e9-ab35-4064f8df3670",
+      "result_id": "85f5b88a-a665-48a9-86c3-268fb613a8ca"
+    },
+    {
+      "claim_id": "1c72caff-1998-4103-8038-aa5dd5edc79a",
+      "result_id": "85f5b88a-a665-48a9-86c3-268fb613a8ca"
+    },
+    {
+      "claim_id": "e86cc615-a4e5-443a-978e-71daa730ae34",
+      "result_id": "85f5b88a-a665-48a9-86c3-268fb613a8ca"
+    },
+    {
+      "claim_id": "9dfab6c2-198c-4a7a-9f51-c56ca1824d1d",
+      "result_id": "85f5b88a-a665-48a9-86c3-268fb613a8ca"
+    },
+    {
+      "claim_id": "8bf16b2b-2341-4753-8c87-c607cbb42025",
+      "result_id": "85f5b88a-a665-48a9-86c3-268fb613a8ca"
+    },
+    {
+      "claim_id": "a160b243-ad5f-4236-baaa-95da18dd187b",
+      "result_id": "12580450-167d-4f1a-a2c3-2706ea70896b"
+    },
+    {
+      "claim_id": "a2b13326-21f0-4561-a9f8-42c5711aa1af",
+      "result_id": "12580450-167d-4f1a-a2c3-2706ea70896b"
+    },
+    {
+      "claim_id": "05d6c5f5-5fbc-4fd1-a597-9af2eb113d85",
+      "result_id": "12580450-167d-4f1a-a2c3-2706ea70896b"
+    },
+    {
+      "claim_id": "4dc0fded-8121-43d9-994d-51bb42b51980",
+      "result_id": "f854cb06-b245-47a0-ad5c-81fdb4a72b85"
+    },
+    {
+      "claim_id": "5759b1ea-b200-4ddb-8c58-3482842da1d3",
+      "result_id": "f854cb06-b245-47a0-ad5c-81fdb4a72b85"
+    },
+    {
+      "claim_id": "9136d6ab-b1d9-43f7-a7ce-bcb6316a753e",
+      "result_id": "f854cb06-b245-47a0-ad5c-81fdb4a72b85"
+    },
+    {
+      "claim_id": "edefe651-e097-4550-97c6-f2c674e2e290",
+      "result_id": "f854cb06-b245-47a0-ad5c-81fdb4a72b85"
+    },
+    {
+      "claim_id": "a3cd1796-527d-43f2-81d3-5729092e642b",
+      "result_id": "f854cb06-b245-47a0-ad5c-81fdb4a72b85"
+    },
+    {
+      "claim_id": "81ce4437-7fba-4ec3-acda-112085a1ba73",
+      "result_id": "f854cb06-b245-47a0-ad5c-81fdb4a72b85"
+    },
+    {
+      "claim_id": "76a00ca3-b361-401f-b718-5da83229897f",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "e8dd5f6d-fc12-44bd-a575-340f4dc1304e",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "acb7f2fb-2a4e-4af0-b4f2-eef72c6fa934",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "62dded15-5b33-4de9-8efd-e6b7f02c8b9f",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "a8699146-6547-4e08-bc2a-7dcee65dd447",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "8f415f2d-6010-44fd-9aa2-29f28f24b0d6",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "28269cbc-abb3-4036-9c30-bebb96ba8095",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "5bb4f0f7-53f9-40a3-b171-c3928d95e747",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "2f0787a9-f84b-4264-a067-aef2d4a45162",
+      "result_id": "228c7367-d4bb-451b-81b0-4e9e9aa49eef"
+    },
+    {
+      "claim_id": "edc4f27a-d50b-4270-a010-9b0d3e7cb979",
+      "result_id": "0f97cf09-19c4-4acc-afe3-d1813505106e"
+    },
+    {
+      "claim_id": "7a4d810b-3927-42b7-9e8a-86a245bacf53",
+      "result_id": "0f97cf09-19c4-4acc-afe3-d1813505106e"
+    },
+    {
+      "claim_id": "4d5e21e3-624f-4c02-84a5-33b98f3db093",
+      "result_id": "0f97cf09-19c4-4acc-afe3-d1813505106e"
+    },
+    {
+      "claim_id": "faec1bbe-59fa-4bd1-b515-aa73be1b29b4",
+      "result_id": "0f97cf09-19c4-4acc-afe3-d1813505106e"
+    },
+    {
+      "claim_id": "41c8acb1-e1a0-4fd8-b6f5-4db963f4a924",
+      "result_id": "0f97cf09-19c4-4acc-afe3-d1813505106e"
+    },
+    {
+      "claim_id": "4e856156-0e6c-4d86-8d34-9b2af3d4762f",
+      "result_id": "0f97cf09-19c4-4acc-afe3-d1813505106e"
+    },
+    {
+      "claim_id": "c2ed323d-5fd7-4909-b78c-f69da9913ba2",
+      "result_id": "0f97cf09-19c4-4acc-afe3-d1813505106e"
+    },
+    {
+      "claim_id": "5fad6d8d-cc5e-4f0e-95fd-49670c7ba3ec",
+      "result_id": "18e23333-8fcb-497d-a2c9-d520a7f04c0f"
+    },
+    {
+      "claim_id": "ed572d4c-466b-46ac-8f3d-37050c26fcab",
+      "result_id": "18e23333-8fcb-497d-a2c9-d520a7f04c0f"
+    },
+    {
+      "claim_id": "0e985e64-381f-45b3-809b-2d4a1a924420",
+      "result_id": "18e23333-8fcb-497d-a2c9-d520a7f04c0f"
+    },
+    {
+      "claim_id": "45c1c575-716e-41fa-9ae7-96ba767746e6",
+      "result_id": "18e23333-8fcb-497d-a2c9-d520a7f04c0f"
+    },
+    {
+      "claim_id": "7170e790-1928-4a1d-b002-66506f69d7ca",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "939adc8c-f6fb-4411-8c3f-9a3e46c278ad",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "8d51c506-51d3-4868-9ab8-82cde68101a1",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "03da8d4b-554b-4f2f-8263-c928d8b2c196",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "ff115ad2-2ed8-4d92-be08-5b35b7713b59",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "3262d80d-d2d6-4255-9fa1-68890cfd2cfa",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "77f89350-6265-46b9-912c-6fbad06e414c",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "2362c177-f4e1-4725-b24e-e3abc61bdeba",
+      "result_id": "11e98138-5c71-4453-a3cb-39666afc7d41"
+    },
+    {
+      "claim_id": "f58e895b-2ee6-46d2-a590-f7b408859f8b",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "10819c56-cf22-4e54-846e-da1f4542de69",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "94fa97ee-0cda-4736-a10a-f852e5831dca",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "6ad24a30-7292-45c9-863f-fd18ce301593",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "392ca97e-8a83-4d25-8c55-292304b348a7",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "b5368d24-3d00-402e-a330-214cd644565a",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "b17d6324-799d-46dd-ad57-16f5753d8db5",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "4d52524a-fa84-451a-8404-5e7c21f01e38",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "b66033ca-dd6e-4dfe-99a6-83a32caa08e8",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "fe8a7b07-beeb-4700-89cc-2de93a54c959",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "b975ad6c-29b0-4000-8d7d-48e591c2c3c8",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "6c98d437-66c7-48d6-b85e-12ac00f53537",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "060d5ac1-8ed3-4d58-82cc-90781ab28a68",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "65666800-c03a-46ec-becf-847aa38fc4e7",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "7a3897bf-1a11-4a84-8d95-d328dcc8d111",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "5dd95ff5-e3fb-403c-91cd-67a809a6156a",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "f45142b6-fb93-4376-8c74-cc7352d0ad25",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "81109482-a128-4675-b394-f4c8aba05656",
+      "result_id": "1ab3b59c-9115-4ebd-9e44-fa96f4e8aa9f"
+    },
+    {
+      "claim_id": "be1d31b3-01c4-408b-84a6-b2c2a50612b1",
+      "result_id": "7d146692-cf9f-47be-81ae-205fccf97e34"
+    }
+  ],
+  "comparisons": []
+}

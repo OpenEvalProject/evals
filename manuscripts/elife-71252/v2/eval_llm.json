@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Optogenetic stimulation of KNDy neurons has opposite effects on LH pulse frequency depending on estrous cycle stage: stimulation at 5 Hz triggers robust LH pulses (2.10 \u00b1 0.24 pulses/hour) in estrous mice but inhibits pulsatility in diestrous mice (0.64 \u00b1 0.09 pulses/hour at 5 Hz and 0.40 \u00b1 0.13 pulses/hour at 15 Hz). This demonstrates that ovarian steroids qualitatively change the dynamical response of the KNDy network to external perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C28, C30-C35 provide converging experimental evidence from optogenetic experiments with appropriate controls (C34) showing cycle-dependent responses. The data include quantitative measurements with error estimates and statistical comparisons, supported by Figures 2 and supplements. The conclusion about qualitative changes in dynamical response (C35) is well-supported by the differential effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mathematical modeling predicts that network excitability is actively regulated throughout the ovarian cycle and is co-regulated with NKB and Dyn signaling strength. The model predicts negative correlation between NKB signaling and network excitability, positive correlation between NKB and Dyn signaling, and identifies basal activity as an independent regulatory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C70-C74 describe model predictions derived from Bayesian parameter inference using experimental LH frequency data. The principal component analysis provides quantitative support for the predicted parameter correlations. However, these remain model predictions requiring experimental validation, though they are mathematically sound given the model structure and data constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Blocking glutamate receptors (NMDA and AMPA) in diestrous mice significantly reduces LH pulse frequency from 2.50 \u00b1 0.29 to 0.45 \u00b1 0.15 pulses/hour, and this inhibition is partially rescued by 5 Hz optogenetic stimulation (to 1.58 \u00b1 0.17 pulses/hour). This demonstrates that glutamatergic transmission is critical for endogenous pulsatility and that basal activity can compensate for reduced network excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52, C58-C61 present pharmacological experiments with quantitative data and appropriate controls. The partial rescue by optogenetic stimulation (C59) provides strong evidence for independent pathways of basal activity and network excitability (C61), consistent with model predictions. Statistical significance is reported and the experimental design is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C53",
+      "C62",
+      "C63"
+    ],
+    "result": "In estrous mice, blocking glutamate receptors (NMDA and AMPA) prevents optogenetically-induced LH pulses, while antagonist treatment alone has no effect on basal LH secretion. This demonstrates that glutamatergic transmission is necessary for optogenetically-driven pulse generation in the low-excitability estrous state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C53, C62-C63 describe pharmacological experiments in estrous mice with appropriate controls (C63). The data show that glutamate receptor blockade prevents optogenetically-induced pulses, supporting the role of network excitability. However, the authors acknowledge a caveat that ICV injection may affect additional glutamatergic inputs beyond the KNDy network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C11",
+      "C27",
+      "C44",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The transition between estrus and diestrus involves coordinated changes in neuropeptide signaling and network excitability controlled via glutamate signaling. Network excitability is critical for pulse generation, with glutamate transporters proposed as a key regulatory mechanism. Pulse generation emerges as a network property depending on both single neuron properties and inter-neuronal communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C11, C27, C44, C54-C57 integrate experimental findings with model predictions. The experimental data on glutamate receptor blockade (previous results) combined with mathematical modeling provide strong support. The hypothesis about glutamate transporters (C44) is supported by cited transcriptomic data (C42) showing estradiol increases vGlut2 expression, though direct experimental validation in this study is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C75",
+      "C76"
+    ],
+    "result": "The mathematical model explains cycle-dependent responses to optogenetic stimulation through bifurcation dynamics: in estrous, the system is below the lower bifurcation point and stimulation triggers pulsatility; in diestrous, the system is within the pulsatile regime and high-frequency stimulation moves it across the upper bifurcation point, causing gradual pulse inhibition. Gonadal steroids shift these bifurcation points by modulating key system parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C75-C76 provide a mechanistic interpretation of experimental observations using bifurcation theory. The model prediction of gradual die-out in diestrus (C75) is confirmed by experimental observations (C76, C30). This represents a coherent theoretical framework consistent with the data, though the bifurcation structure itself is inferred from the model rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Published transcriptomic data show that estradiol treatment in ovariectomized mice reduces NKB and Dyn expression while increasing glutamate transporter (vGlut2) expression. This supports the model prediction that correlated changes in NKB/Dyn signaling and network excitability regulation occur through neuropeptide expression levels and glutamate transporter expression, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 cite published transcriptomic data (Qiu et al., 2018) that align with model predictions. While the transcriptomic data are from prior work rather than this study, the consistency between independent data and model predictions strengthens both. However, the mechanistic link (C43) remains a hypothesis requiring direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C77",
+      "C78"
+    ],
+    "result": "The mathematical model predicts that ovarian steroids modulate key parameters controlling system dynamics and response to perturbations in a continuous rather than binary manner. Positive correlation in NKB/Dyn regulation enables robust transitions between pulsatile and quiescent states, while negative correlation would increase sensitivity to parameter change magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C77-C78 describe model predictions about regulatory robustness. The bifurcation analysis (Figure 6 and supplement) provides theoretical support for these claims. The continuous nature of steroid effects (C49) is a reasonable inference from the model structure, though experimental validation across a range of steroid levels would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background knowledge establishing that pulsatile GnRH release is essential for reproduction, that KNDy neurons drive pulsatile GnRH release, and that gonadal steroids regulate GnRH dynamics by altering KNDy neuron signaling properties. ARC kisspeptin neurons are prime mediators of ovarian steroid feedback on GnRH/LH pulsatility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C12-C15 represent established background knowledge supported by appropriate citations. These provide the scientific context for the current work but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior literature establishes that gonadal steroids affect KNDy neuron electrophysiology, that the KNDy network pulses at reduced frequency during estrous, that progesterone and estrogen contribute to LH frequency changes, and that ARC kisspeptin neurons are glutamatergic and synapse on each other. The effects of NMDA and mechanisms of progesterone action show species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 cite relevant prior literature establishing key background facts. The citations appear appropriate and the claims accurately represent the cited work. These establish the foundation for the current study's hypotheses but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C36",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51"
+    ],
+    "result": "Pulsatile dynamics can emerge as a population phenomenon without pulsatile input signals. Changes in dynamical response are driven by gonadal steroid effects on KNDy neuron electrophysiology and neuromodulator signaling. Prior work shows estradiol regulates KNDy excitability, cycle stage regulates glutamatergic activity, and progesterone effects depend on prior estradiol exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C36, C45-C47, C50-C51 combine experimental observations with cited literature. The emergence of pulsatility from sustained stimulation (C29) is directly demonstrated and supported by prior work. The mechanistic interpretations (C36) are reasonable inferences supported by appropriate citations, though direct causal demonstration would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The mathematical model treats Dyn and NKB secretion as independent processes based on their packaging in separate vesicles. A previously published version of this model predicted upper and lower bifurcation points determining the range of pulsatile behavior under external drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe modeling assumptions and prior model predictions. The assumption about independent Dyn/NKB secretion (C64-C65) is supported by cited evidence (Murakawa et al., 2016). The bifurcation prediction (C66) references prior published work (Voliotis et al., 2019), making this established rather than novel.",
+    "result_type": "MINOR"
+  }
+]

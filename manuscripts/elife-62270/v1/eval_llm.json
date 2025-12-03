@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors performed scRNA-seq on 63,287 renal cells from mice at 7 time points (0-48 hr) after 5 mg/kg LPS injection, capturing most renal cell types except podocytes and mesangial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C115-C118 provide comprehensive methodological details including cell numbers, time points, animal characteristics, and LPS dosing. The absence of podocytes/mesangial cells is acknowledged as a technical limitation with appropriate citation (C3). The experimental design is well-documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The UMAP computational layout of epithelial clusters recapitulated the anatomical order of nephron segments, with cluster-defining markers varying during endotoxemia while conserved markers were also identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 describe the computational organization of cell types and marker expression patterns. The observation that UMAP layout mirrors anatomical structure (C4) is supported by Figure 1A. The identification of both time-varying (C6) and conserved markers (C7) provides complementary characterization of cell identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A proliferating cell cluster was identified that migrated among different cell types over time: from proximal tubules at baseline to S1 cells at 1 hr, lymphocytes at 16 hr, and S3 cells at 36 hr, reflecting spatial and temporal injury/repair dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 describe proliferating cell dynamics with supporting data from scRNA-seq (C8-C11, C13) and microscopy validation (C10, Figure 1\u2014figure supplement 2B). The temporal migration pattern is well-documented, though the interpretation of proliferation as injury/repair (C15) is speculative. The absence of stress markers Jun/Fos (C9) strengthens the argument against dissociation artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A distinct S3T2 proximal tubular subtype expressing Agt, Rnf24, Slc22a7, and Slc22a13 was identified and localized to the outer stripe of the outer medulla using spatial transcriptomics and smFISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 describe the identification and spatial localization of S3T2 cells. The finding is supported by multiple orthogonal approaches: scRNA-seq marker identification (C16), spatial transcriptomics (C19), and smFISH validation (C20). The interpretation that differential expression reflects microenvironmental differences (C21) is reasonable, and the acknowledgment of potential cortical dissociation bias (C22) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Two distinct macrophage populations (M\u03c6-A and M\u03c6-B) were identified with different marker expression and differentiation trajectories, with M\u03c6-B appearing as an intermediary type between M\u03c6-A and dendritic cells based on RNA velocity and pseudotime analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 characterize macrophage heterogeneity using multiple analytical approaches. The identification of two populations with distinct markers (C24-C26) is supported by scRNA-seq data. RNA velocity and pseudotime analyses (C32-C33) provide evidence for differentiation trajectories, though the inconclusive pseudotime result at 36 hr (C33) indicates some uncertainty. The identification of M2-like subclusters (C35) adds further complexity. The overall characterization is well-supported despite some analytical ambiguities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "T-cells showed robust Cd8 but minimal Cd4 expression, and plasmacytoid dendritic cells increased at 1 hr, supporting an early antiviral response in the endotoxemia model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 describe immune cell phenotypes with appropriate citations to prior literature (C39) and the authors' previous work (C40). The observations are internally consistent and supported by the scRNA-seq data, though the interpretation relies partly on prior knowledge rather than direct functional validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Pseudotime analysis revealed cell state transitions that accurately predicted future states, with endothelial cells showing changes at 1 hr, S1 at 4 hr, and 16 hr representing a turning point toward recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe pseudotime analysis results. The claim that pseudotime 'accurately predicted future states' (C42) is supported by the correspondence between pseudotime ordering and real-time observations. The identification of 16 hr as a turning point (C44) is a key finding supported by multiple lines of evidence throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Epithelial cells lost function-defining markers (e.g., SGLT2, Aqp1) and gained immune-related genes (e.g., MHC-II, Cd74), with S1-S3 phenotypes converging by 16 hr despite underlying differences in RNA splicing kinetics revealed by velocity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 describe epithelial phenotypic plasticity with convergent support from scRNA-seq (C46, C48), comparison to published data (C47), and RNA velocity analysis (C49-C52). The observation is further supported by prior proteomics work showing enrichment of splicing factors at 16 hr (C53). The multi-modal evidence strengthens the conclusion despite the apparent contradiction between phenotypic convergence and underlying molecular differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Most cell types showed decreased ribosomal/translation/mitochondrial gene expression (peaking at 16 hr) and increased inflammatory/antiviral responses, with endothelial cells, macrophages, and pericytes responding early (1 hr) and epithelial cells responding later (4-16 hr), except S3T2 which maintained baseline functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 describe coordinated transcriptional responses across cell types with clear temporal patterns. The data show asynchronous responses among cell populations (C57-C59) and convergence on immune-related GO terms by 4 hr (C60). The exception of S3T2 cells (C61-C62) is notable and well-documented. The findings are supported by heatmaps and GO analysis (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Multiple cell types contribute to prostaglandin and coagulation pathways, with NF-\u03baB activation maximal at 1 hr, and at 48 hr macrophages show activated phenotypes while pericytes are enriched in immune-related terms suggesting a transducer role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe pathway contributions across cell types. The NF-\u03baB data (C64) is supported by immunohistochemistry and prior work. The late pericyte enrichment in immune terms (C66) is an interesting observation, though the interpretation of pericytes as 'transducers' (C67) is speculative and would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cell-cell communication analysis revealed specific receptor-ligand pairs (Angpt1-Tek, C3-C3ar1, Ccl2-Ccr2) among S1, endothelial, pericyte, and macrophage populations, with communication progressing from broad to specialized by 4 hr, then dramatically dropping at 16 hr before recovering by 27-48 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 describe cell-cell communication dynamics using CellPhoneDB analysis. The identification of specific receptor-ligand pairs is data-driven (C68-C71), and the temporal pattern of communication failure at 16 hr (C75) is a key finding. The interpretation linking communication failure to translation shutdown (C76) is reasonable given prior work, though the causal relationship is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Despite translation shutdown and communication failure at 16 hr, regulon analysis revealed increased activity of transcription factors involved in cell differentiation, development, and proliferation (Sox4, Sox9, Hoxb7, Srf), indicating 16 hr is a transition point where recovery pathways are activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 describe a paradoxical finding: increased regulon activity during apparent organ shutdown. The SCENIC analysis (C78-C79) provides computational evidence for this, and the interpretation (C81) is a central conclusion of the paper. However, the disconnect between transcription factor activity and translation raises questions about how these recovery signals are implemented, which is acknowledged but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Gene expression changes in murine endotoxemia partially mapped to human sepsis kidney biopsies, allowing stratification into early/mid/late stages that correlated with SOFA scores, suggesting conserved injury mechanisms and potential utility for staging human sepsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 describe mouse-to-human translation. The approach using orthologous genes to stratify human samples (C83) is methodologically sound, and the correlation with SOFA scores (C84-C85) provides clinical validation. However, the word 'partially' (C82, C86) appropriately acknowledges limitations in cross-species translation. The sample size (N=22) is modest but reasonable for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Endothelial and stromal cells were first responders, epithelial cells later upregulated immune pathways while downregulating homeostatic functions, and at 16 hr there was global communication failure and organ shutdown despite activation of recovery pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 summarize the main findings from the abstract. These are well-supported by the detailed results described in other claim groups. The temporal orchestration of responses (C88-C89) and the paradoxical nature of the 16 hr time point (C90-C91) represent the paper's key contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study builds on prior knowledge that AKI doubles sepsis mortality and that injured kidneys produce inflammatory mediators, and extends previous work showing endotoxemia progresses through inflammatory, antiviral, and translation shutdown phases, identifying cell-cell communication failure as a major contributor to organ dysfunction that coincides with recovery pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 provide context and summarize key findings. The background claims (C92-C94) are appropriately cited. The main conclusions about communication failure (C96) and recovery pathway activation (C97) are supported by the data, though the causal relationship between communication failure and organ dysfunction is correlative rather than mechanistically proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "S1 proximal tubules lost transporters (e.g., SGLT2) and gained immune genes (antigen presentation), representing a dramatic functional switch from homeostasis to immunity that was reversible, demonstrating epithelial plasticity and suggesting communication failure underlies kidney shutdown beyond hypoperfusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 synthesize findings about epithelial plasticity. The observations are well-supported by scRNA-seq data (C98, C101), and the interpretation of functional switching (C102) is reasonable. The reversibility (C103) is an important finding demonstrating plasticity. However, the claim that communication failure 'underlies' shutdown (C100) implies causation that is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The 16 hr time point has significant clinical implications as recovery begins when serum creatinine is still rising, and molecules like Sox9 could be therapeutic targets for sepsis-associated AKI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 discuss clinical implications. While the 16 hr time point is well-characterized in the mouse model (C105-C106), the therapeutic potential of Sox9 (C107) is speculative and would require extensive validation. The disconnect between molecular recovery and traditional biomarkers (C106) is interesting but needs validation in human studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors acknowledge limitations including that endotoxemia may not perfectly recapitulate human sepsis (though it shows partial molecular similarities), that it is more tractable than CLP for molecular studies, that it is reversible at the dose used, and that young healthy mice were used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 appropriately acknowledge study limitations. The comparison of endotoxemia vs. CLP models (C110-C112) is fair, and the acknowledgment of age/comorbidity limitations (C114) is important. These limitations are standard for this type of study and do not invalidate the findings but do constrain their generalizability.",
+    "result_type": "MINOR"
+  }
+]

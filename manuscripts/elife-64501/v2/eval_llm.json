@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The study employed a novel experimental paradigm using ultra-high-field 7T fMRI to measure BOLD responses in the human subcortical auditory pathway (IC and MGB) with 1.5mm isotropic resolution. Nineteen subjects listened to sequences of eight pure tones (seven standards and one deviant) and reported the deviant position, with abstract rules manipulating expectations orthogonally to local stimulus statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is thoroughly documented with appropriate methodological details including participant characteristics (C116-C118), stimulus parameters (C120-C122), timing design (C124-C128), imaging acquisition (C142-C147), and ethical approval (C114-C115). The paradigm successfully orthogonalizes predictability and local statistics as required to test the competing hypotheses (C25, C26).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "All subjects showed ceiling performance (90-95% accuracy) across all deviant positions, indicating subjects were attentive during the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data (C33) demonstrates high accuracy across conditions with appropriate statistical reporting (means \u00b1 SEM). The inference that ceiling performance indicates attention (C34) is reasonable given the task demands, though alternative explanations (e.g., task ease) are not explicitly ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C62"
+    ],
+    "result": "BOLD responses in IC and MGB showed that more expected deviants elicited more reduced responses, fitting the predictive coding hypothesis. Mean BOLD responses correlated with subjects' expectations of stimulus probability but not with local stimulus statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The visual inspection (C42) is supported by formal statistical tests showing significant differences between deviant positions (referenced in Table 2). The correlation analysis demonstrates strong negative correlations (r=-0.27 to -0.43, p<4\u00d710\u207b\u2077) between predictability and BOLD responses across all four ROIs. The claim that responses do not correlate with local statistics is supported by the experimental design where local statistics were held constant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C63"
+    ],
+    "result": "Deviance detection can be virtually abolished at the mesoscopic level by manipulating subjects' expectations\u2014specifically, by rendering the deviant predictable. Events deviating from local stimulus statistics did not lead to increased responses in IC and MGB if subjects expected these events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding that dev6 (fully expected deviant) elicited similar responses to std2 (expected standards) is well-supported by the statistical comparisons in Table 2, showing negligible differences. This directly demonstrates that expectation, not local statistics, drives the response. The effect sizes and statistical significance support this strong conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C64"
+    ],
+    "result": "Bayesian model comparison showed that the majority of voxels (86-98% in IC, similar in MGB) in both ICs and MGBs were more likely to respond according to predictive coding principles rather than habituation, with only negligible parts (maximum 3%) driven by habituation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Bayesian model comparison methodology is appropriately described and the posterior probability maps (Figure 4) clearly show dominance of predictive coding across the subcortical nuclei. The quantitative percentages are explicitly reported (C54, C55) and the statistical framework follows established methods (Rosa et al., 2010; Stephan et al., 2009).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Both the ventral MGB (vMGB, primary/lemniscal subdivision) and the rest of the MGB showed similar distributions of SSA indices and were dominated by responses driven by predictive coding (97-100% of voxels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subdivision analysis using tonotopic gradients from Mihai et al., 2019 (C56) provides anatomical specificity. The finding that both lemniscal and non-lemniscal subdivisions show predictive coding (C57-C60) is well-supported by the data in Figure 5, though the authors acknowledge limitations in precisely delineating IC subdivisions (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "BOLD responses in most voxels (minimum 96%) of the four nuclei are best explained by the level of predictability of both deviants and standards, not just deviants alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The three-way Bayesian model comparison (habituation vs. predictive coding vs. deviant-only predictive coding) shown in Figure 6 demonstrates that the full predictive coding model (affecting both standards and deviants) best explains the data. The high percentage (\u226596%) across all nuclei strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C65"
+    ],
+    "result": "Abstract expectations can drive response amplitude to tones in the human auditory pathway, providing first unambiguous evidence of abstract processing in a subcortical sensory pathway. The neural representation of the outside world is altered by prior beliefs even at initial points of the processing hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This main conclusion (C5-C7, C65) is well-supported by the convergent evidence from: (1) correlation between BOLD responses and abstract expectations (C42, C62), (2) abolishment of deviance detection for expected deviants (C52, C63), and (3) Bayesian model comparison favoring predictive coding (C53-C55, C64). The claim of 'first unambiguous evidence' (C6) is justified by the novel orthogonalization of expectations and local statistics (C25, C26, C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Previous studies interpreted subcortical SSA within a predictive coding framework but used designs where predictions were based on local stimulus statistics. The current study is the first to define predictions based on abstract rules orthogonal to local statistics in subcortical nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review (C66-C71) accurately characterizes prior work and identifies the key methodological limitation. The claim of novelty (C70) is supported by extensive citations and the explicit statement that only one prior study (Malmierca et al., 2019) attempted abstract rules in anesthetized rats with minimal effects (C71). The distinction between cortical (C68) and subcortical (C69) findings is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "The current findings contrast with Parras et al. 2017, which reported that IC showed little or no difference between deviant and control sounds, whereas the current study found significant prediction error responses in IC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with Parras et al. 2017 (C73-C75) is appropriate and the contrast (C77) is supported by the data showing dev4 > std0 in IC (Table 2). However, the authors could have more thoroughly discussed potential reasons for this discrepancy beyond the brief speculation provided (C85-C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Despite animal literature showing strongest SSA in non-lemniscal areas, the current results suggest predictive coding underlies encoding in both lemniscal and non-lemniscal subdivisions of IC and MGB in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the MGB subdivision analysis (C56-C60) provides some support, the inability to precisely delineate IC subdivisions (C82) limits the strength of this conclusion. The inference that predictive coding operates in both subdivisions (C84) is reasonable given the whole-nucleus analysis (C83), but the authors acknowledge this is an assumption. The discrepancy with animal literature (C81) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Three potential explanations for differences with animal literature are proposed: (1) active task engagement may be required for lemniscal pathway modulation by predictions, (2) fundamental species differences in subcortical modulation, or (3) signal contamination due to fMRI smoothing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative explanations (C85-C87) for the discrepancy with animal studies. While plausible, none are directly tested. The speculation about task engagement (C85) could be tested with passive listening controls. The species difference hypothesis (C86) is untestable with current data. The smoothing artifact concern (C87) is a valid methodological limitation but its impact is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "It is hypothesized that predictions driving subcortical responses are generated in cerebral cortex, consistent with cortico-subcortical feedback connections and lesion studies, though the current paradigm was not optimized to test this and the source of predictions remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as speculation (C88) with supporting anatomical (C89) and functional (C90) evidence from prior work. The authors appropriately acknowledge limitations of their design for addressing this question (C91-C92) and correctly conclude it remains unresolved (C93). This represents an important future direction but is not a supported finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The strong attenuation of responses to fully expected deviants (dev6) is interpreted primarily as predictive coding rather than attentional modulation, based on: (1) strong effects for dev4 vs dev5 which both require attention, and (2) much smaller effect sizes compared to passive listening studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The argument against attention as the primary explanation is well-reasoned. The comparison of effect sizes between dev4 and dev5 (both requiring attention) shows substantial differences (d=-0.69 to -1.05, Table 2), supporting predictive coding. The comparison with Cacciaglia et al. 2015 passive listening data (C100) showing much larger effect sizes (d=3.15) than the current dev6 vs std2 contrast (d=-0.74 to 0.26) provides additional support. However, attention cannot be completely ruled out as a contributing factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The study addresses a fundamental question about whether subcortical sensory pathways maintain veridical representations of the environment or are modulated by expectations, testing between habituation (local statistics) and predictive coding (abstract expectations) frameworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framing (C1-C4, C8-C13) is well-established with appropriate citations. The identification of the key unresolved question (C12) and its implications (C13) provide clear motivation for the study. The distinction between habituation and predictive coding frameworks is clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior work established that subcortical nuclei exhibit stimulus-specific adaptation (SSA), but this phenomenon can be explained by either habituation (local statistics) or predictive coding (expectations). Distinguishing these requires orthogonal manipulation of abstract predictability and local statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review of SSA (C14-C17) and the two competing explanations (C18-C24) is comprehensive and well-cited. The methodological requirement for orthogonal manipulation (C25) is correctly identified as the key to resolving the debate. This provides strong justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Stimulus-specific adaptation has been reported across sensory modalities (visual, olfactory, somatosensory), and it is speculated that abstract expectations may facilitate sensory processing in subcortical nuclei across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The cross-modal SSA literature (C105) is appropriately cited. However, the speculation about abstract expectations in other modalities (C108) is explicitly stated as speculation without supporting data. The theoretical rationale (C106-C107) is sound but the generalization remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Atypical predictive coding in subcortical pathways may have profound cognitive repercussions, as suggested by findings in developmental dyslexia showing altered adaptation dynamics, altered MGB responses, and atypical cortico-thalamic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The dyslexia literature (C110-C112) is appropriately cited and provides suggestive evidence for clinical relevance. However, the causal link between subcortical predictive coding deficits and cognitive outcomes (C109) remains speculative. The potential clinical applications (C113) are reasonable but require further investigation.",
+    "result_type": "MINOR"
+  }
+]

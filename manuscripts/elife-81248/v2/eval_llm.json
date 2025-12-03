@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C32",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors developed an ExLLSM pipeline combining tissue expansion and lattice light sheet microscopy that can image Drosophila brains at ~30\u00d730\u00d7100 nm resolution in ~5 days, with samples prepared and analyzed within a week.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C32, C39, C44-C49 describe the development and capabilities of the ExLLSM method with specific technical parameters. The imaging resolution (C46-C47), throughput (C127-C128), and pipeline components (C48-C49) are demonstrated throughout the manuscript with experimental data and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The automated analysis pipeline achieved 94% precision and 88% recall for presynaptic site detection, and 95% precision and 79% recall for neuron segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report specific performance metrics for the computational pipeline components. These values are directly supported by validation experiments comparing automated segmentation to ground truth data, shown in Figure 2 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C40",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C63",
+      "C64"
+    ],
+    "result": "ExLLSM yields presynaptic site counts similar to EM across three neuron types: L2 neurons (210 vs 207 by EM), DA1-IPN neurons (2251 vs 2274 by EM), and SAG neurons (1440 vs 1198 by EM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 provide direct quantitative comparisons between ExLLSM and published EM datasets for three distinct neuron types. The counts are generally consistent, with ExLLSM values falling within or near the range of EM measurements across 30-48 neurons per type (Figure 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ExLLSM quantified SAG>pC1 connections using two methods: postsynaptic marker labeling (729 connections, 583 presynaptic sites) and membrane contact (501 connections), both comparable to EM counts (938 connections, 677 presynaptic sites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe two connectivity quantification approaches with specific counts. Both methods yielded values lower than but within range of the single EM sample. The authors acknowledge systematic undercounting (C73-C74) and recommend postsynaptic marker use (C76), demonstrating appropriate interpretation of the validation data (Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mated females have 28% fewer SAG>pC1 connections than virgin females (p=0.02), with 25% fewer SAG presynaptic sites connected to pC1 (p=0.03), while total SAG presynaptic sites remain similar (p=0.26).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 report state-dependent connectivity differences with statistical significance. The data from 5 virgin and 6 mated females show significant reductions in connectivity but not total presynaptic sites, supporting the conclusion of mating-induced synaptic remodeling (Figure 4H).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C94",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "ExLLSM can detect electrical connections via innexin 6 labeling, revealing distinct INX6 clusters in the fan-shaped body and punctate signals in DPM-APL neurons in the mushroom body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 describe INX6 visualization in two brain regions with distinct patterns. The same synapse detection pipeline successfully classified putative gap junctions (C101-C102), demonstrating the method's capability to detect electrical connections (Figure 5), though the authors appropriately note that additional work is needed to fully characterize these structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "Structural connectivity between pC2l and pIP10 (average 92 connections) strongly correlates with functional connectivity (r=0.88, p=0.009) and moderately with optogenetic song (r=0.67, p=0.09), but weakly with natural song (r=0.49, p=0.27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 report correlations between structural, functional, and behavioral measures across 7 individual flies. The strong structure-function correlation (C119) is statistically significant, while behavioral correlations are weaker. Control analysis (C123) rules out reporter expression artifacts. The data demonstrate correlative capability but also reveal complexity in structure-behavior relationships (Figure 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C42",
+      "C140"
+    ],
+    "result": "ExLLSM enables comparison of synaptic connectivity across sex and experience, as demonstrated by virgin vs. mated female differences and male-female comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C42, C140 are supported by the virgin/mated comparison (C86-C89) showing significant connectivity differences, and the DA1-IPN male-female comparison (C61) showing non-significant trends. The method successfully detected state-dependent changes where they exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C43",
+      "C143"
+    ],
+    "result": "ExLLSM can correlate structural connectivity, functional connectivity, and behavior from the same samples, as demonstrated in the pC2l-pIP10 circuit analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C43, C143 are directly demonstrated by the pC2l-pIP10 experiments where behavior, calcium imaging, and structural connectivity were all measured from the same 7 flies (C118-C126, Figure 6). This represents a key capability of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C144",
+      "C145"
+    ],
+    "result": "The ExLLSM approach fills a critical methodological gap in studying neural circuit variability and should be a powerful tool for understanding how connectomes work and evolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C144-C145 are broad conclusions supported by the demonstrated capabilities: synaptic resolution matching EM (C11, C40), high throughput (C127-C128), state-dependent detection (C89-C90), and structure-function correlation (C126). The method addresses the stated need for rapid, sparse circuit reconstruction across many samples (C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The ExLLSM method relies on relatively affordable and widely available resources, with freely available software tools, bringing connectomics research within reach of smaller labs and applicable to multiple organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 describe accessibility and generalizability. The software is documented as freely available (C132), alternative light sheet microscopes can be used (C129), and the authors cite established expansion protocols for other organisms (C134). However, the claim about affordability (C130) is somewhat subjective and the lattice light sheet microscope itself requires specialized equipment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "All synapse counting methods, including EM, undercount connections to various degrees, but ExLLSM's higher throughput provides more accurate assessment of relative connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 acknowledge systematic limitations while arguing for ExLLSM's comparative advantage. The statement about EM undercounting is supported by citation (C77), and the logic that larger sample sizes improve relative comparisons is sound (C79), though the magnitude of this advantage is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C142"
+    ],
+    "result": "Future improvements including better labeling methods, cell-type-restricted synaptic markers, and cross-species genetic tools will enable single-cell resolution, denser reconstructions, and evolutionary studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C139, C142 are predictions about future capabilities contingent on development of new reagents and methods. While the predictions are reasonable based on current results, they represent speculation about future work rather than demonstrated capabilities. Some citations support feasibility (C135, C137-C138, C142) but the claims remain prospective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "There is a methodological gulf between EM (dense connectomes, low throughput, no molecular specificity) and traditional LM (high throughput, molecular specificity, no synaptic resolution), limiting studies of circuit variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the scientific context and motivation. These characterizations of EM and LM methods reflect established knowledge in the field (C1-C8 marked as KNOWLEDGE evidence type) and are supported by the comparative data presented (Figure 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Current connectome projects focus on reference maps for selected organisms, analogous to early genomics, creating an urgent need for rapid sparse reconstruction methods across many samples that EM cannot efficiently provide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C24 provide historical context and motivation through analogy to genomics. The characterization of current connectome projects (C15-C18) is supported by multiple citations, the genomics analogy (C19-C21) is reasonable, and EM limitations (C23-C24) are documented by citations and illustrated in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "ExLLSM combining expansion microscopy and lattice light sheet imaging has been shown to afford sufficient resolution for single synapses and molecular labels with sufficient speed for large volumes across many animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 cite prior work (Gao et al., 2019) establishing ExLLSM capabilities. These claims provide foundation for the current study's development of the analysis pipeline and validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In Drosophila, presynaptic active zones are identified by T-bars in EM, which contain Bruchpilot protein that can be detected in LM through ubiquitous or genetically restricted labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe established molecular markers used for validation. These are well-supported by citations and form the basis for the EM-ExLLSM comparisons. The use of both ubiquitous (nc82) and restricted (STaR) BRP labeling is demonstrated in the L2 experiments (C56-C57).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "DA1-IPN and SAG neurons have established functions and connectivity patterns in published EM datasets, but there is no universal postsynaptic marker in Drosophila and the current ExLLSM protocol is limited to three-color imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C62, C65-C67 describe established properties of neurons used for validation, supported by citations. Claims C68-C69 acknowledge technical limitations that motivated the development of two connectivity quantification approaches (postsynaptic marker vs. membrane contact).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "pC1 neurons regulate female receptivity and egg-laying, which change after mating when sensory neurons detect seminal fluid and SAG neurons relay this signal to pC1; both SAG and pC1 have higher basal activity in virgins than mated females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 establish the biological context for the virgin/mated comparison experiment. These are supported by multiple citations describing the mating status circuit and provide the rationale for the hypothesis tested (C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103",
+      "C108"
+    ],
+    "result": "Gap junctions are difficult to detect in EM but are formed by innexin proteins in invertebrates; Drosophila has eight innexin types, and DPM-APL gap junctions are heterotypic (INX6-INX7) and essential for memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93, C95-C98, C103, C108 provide background on gap junctions and innexins, all supported by citations. This establishes the foundation for using INX6 as a marker to demonstrate ExLLSM's capability to detect electrical connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C124"
+    ],
+    "result": "Male courtship song consists of pulse and sine components; pC2l neurons respond to sensory cues and activation elicits song; pIP10 neurons are necessary and sufficient for pulse song and influence song choice; both directly drive pulse with indirect contributions to sine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117, C124 establish the biological context for the structure-function correlation experiments. These are supported by citations and the authors' own behavioral data (C114, Figure 6, Figure 6\u2014supplement 1A-B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Variations in structural connectivity arise through multiple processes, and understanding structure-function relationships requires examining many individuals with structural and functional data from the same samples; ExLLSM should be well suited for this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe the scientific challenge, supported by citation (C36). Claim C38 is a prediction that is subsequently validated by the pC2l-pIP10 experiments (C118-C126), making this prediction retrospectively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Using recently developed antibodies to all eight Drosophila innexins, ExLLSM has the potential to greatly accelerate quantification of electrical connectivity and extend correlative studies to electrical connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is a prediction about future applications based on newly available reagents (Ammer et al., 2022). While the demonstration of INX6 detection (C99-C109) provides proof-of-principle, the claim about comprehensive electrical connectivity mapping remains prospective and dependent on validation with the full antibody suite.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The average DA1-IPN presynaptic site count in males (2466) was higher than in females (2251), but this difference was not statistically significant (p=0.25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 reports a non-significant sex difference with appropriate statistical testing (t-test, p=0.25) across 10 males and 11 females. The lack of significance is correctly interpreted, demonstrating that ExLLSM can detect differences when present (virgin/mated) but also correctly identify when differences are not significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The primary goal was to establish a method to address variation in neural circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 states the study's primary goal, which is directly addressed by the virgin/mated comparison (C86-C90), sex comparison (C61), and individual variation analysis (C118-C126). The goal is clearly achieved through the demonstrated applications.",
+    "result_type": "MINOR"
+  }
+]

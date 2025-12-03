@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C61"
+    ],
+    "result": "Distantly-related wmk homologs (wBol1b, wBif, wCaub, wInn/wBor) do not induce male killing when transgenically expressed in D. melanogaster, while the wMel wmk transgene induces a biased sex ratio with approximately one third of expressing males dying. This suggests that divergent wmk homologs may require host-specific adaptation to function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46, C47, and C61 are directly supported by experimental data in Figure 3, which shows no sex ratio bias for distant homologs while wMel wmk shows male-specific lethality. The experimental design includes appropriate controls and statistical analysis, with sufficient replication (N=50-132 per vial, mean 69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C62"
+    ],
+    "result": "Closely-related wmk homologs from wSuzi and wRec (which differ from wMel by only 1-3 SNPs in native sequences) unexpectedly cause death of all expressing flies (both males and females) when transgenically expressed, while an HA-tagged wMel wmk transgene exhibits male-specific killing comparable to untagged wMel wmk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C42, and C62 are supported by experimental data in Figure 2B showing the all-killing phenotype for wSuzi and wRec transgenes and male-specific killing for HA-wmk. The result is unexpected given the high sequence similarity but is well-documented with appropriate controls and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C77"
+    ],
+    "result": "Gene expression levels (transcript abundance) are not significantly different across wSuzi, wMel, wRec, and HA-tagged wMel wmk transgenes, indicating that transcript levels do not account for the phenotypic differences observed between these constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C77 are supported by qPCR data in Figure 2C showing no significant differences in expression levels despite different phenotypes. Statistical analysis (Kruskal-Wallis with Dunn's correction) was appropriately applied with sufficient biological replicates (at least 8 samples per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The msl-2 transcript levels (a male-specific dosage compensation gene) were comparable across embryos expressing wMel wmk (sex ratio bias), wSuzi wmk (all killing), and wBif wmk (no killing), suggesting that differential msl-2 expression does not explain the phenotypic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by qPCR data in Figure 2D showing comparable msl-2 levels across different phenotypes. This rules out one potential mechanism (differential msl-2 expression) for the observed phenotypic differences. The experimental approach and statistical analysis are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C48",
+      "C49"
+    ],
+    "result": "Addition of nine amino acids to the N-terminus of wmk at the site of a putative alternative start codon ablates the killing phenotype in wRec and wSuzi wmk transgenes, with all expressing flies surviving and showing no sex ratio bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, C48, and C49 are supported by experimental data in Figure 2\u2014figure supplement 1. The result demonstrates N-terminal sensitivity of wmk function and is consistent with previous findings (C34 cites Perlmutter et al., 2020). The experimental design is appropriate with adequate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Adding the corresponding nucleotides at the 5' end of wRec and wSuzi wmk homologs (to include upstream start codons) resulted in predicted differences in RNA secondary structure compared to structures without the additional 5' nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is based on computational RNA structure predictions shown in Figure 2\u2014figure supplement 1. While the predictions show structural differences, these are computational models that have not been experimentally validated. The authors appropriately note caution is warranted with predicted structural analysis. The biological significance of these predicted changes remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "A single synonymous nucleotide change at codon position 16 (encoding Serine) is sufficient to ablate the male-killing phenotype. The wMel wmk transgene with TCG codon causes male-specific death, while transgenes with synonymous codons TCC (wSuzi) or AGC (wRec) at this position result in no killing and normal sex ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C51-C57, and C59 are strongly supported by experimental data in Figure 4, which shows that single synonymous codon changes at position 16 ablate the male-killing phenotype. The experimental design includes appropriate controls (wMel wmk new with no changes), and the result is replicated. This is a key finding demonstrating that synonymous changes can have dramatic phenotypic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "While synonymous nucleotide changes in codon 16 changed the phenotype from male-killing to no killing, they did not recapitulate the all-killing phenotypes of their corresponding native homologs (wRec and wSuzi).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by the observation in Figure 4C that the codon swap variants (wRec codon and wSuzi codon) showed no killing rather than the all-killing phenotype seen with full-length wRec and wSuzi transgenes. This indicates that the single codon change alone is not sufficient to explain all phenotypic differences between homologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C85",
+      "C86",
+      "C122",
+      "C123"
+    ],
+    "result": "Predicted RNA secondary structures correlate somewhat with phenotype, with male-killing transgenes (wMel wmk and HA-wmk) having start codons in the middle of predicted structures, while all-killing transgenes (wSuzi and wRec wmk) have start codons on outer loops or hairpins. This suggests synonymous codons may change transcript structure or other post-transcriptional features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C85, C86, C122, and C123 are based on computational RNA structure predictions shown in Figure 2E. While there is some correlation between predicted structures and phenotypes, these are computational models that have not been experimentally validated. The authors appropriately note caution is warranted. The correlation is suggestive but not definitive, and alternative explanations (e.g., codon usage effects on translation) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C87"
+    ],
+    "result": "Post-transcriptional differences are the source of functional variation in wmk phenotypes, refuting the functional redundancy hypothesis for synonymous codons in this context. The wmk transgene is functionally sensitive to post-transcriptional changes, at least in the N-terminal region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, and C87 are supported by the combination of similar expression levels (C43, C77) despite different phenotypes, and the dramatic effects of synonymous changes (C56, C57). The inference that post-transcriptional mechanisms are responsible is logical given the data, though the specific mechanisms remain to be determined. The conclusion appropriately refutes the functional redundancy hypothesis in this specific context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Codon usage correlates with phenotype in wmk transgenes. The wMel wmk codon at position 16 (TCG) has a frequency of 16.7 per 1000 codons in D. melanogaster, while the wSuzi (TCC, 19.5/1000) and wRec (AGC, 20.5/1000) codons are more common. The more common codons are present in all-killing transgenes, while the male-killing strain has a codon at lower frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by codon usage data from Genscript and the correlation with observed phenotypes. However, the interpretation is somewhat limited because: (1) the codon swap experiments (C56) showed that changing to the more common codons resulted in no killing rather than all-killing, which doesn't fully support the correlation; (2) the analysis is based on only one codon position; (3) the biological mechanism linking codon frequency to phenotype is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C63"
+    ],
+    "result": "Synonymous sequence changes are not necessarily silent in nested endosymbiotic interactions with life-or-death consequences. Endosymbiont phenotypes of reproductive parasites may not simply be governed by DNA sequence alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C63 represent the main conclusions of the paper and are well-supported by the experimental data showing that synonymous changes (C56, C57) and codon optimization differences (C117, C118) can dramatically alter phenotypes. The conclusion is appropriately cautious and acknowledges the specific context (wmk in D. melanogaster transgenic system).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The wmk gene was previously identified as a male-killing candidate from prophage WO in wMel Wolbachia. It is a putative transcription factor with two HTH DNA-binding domains, and transgenic expression recapitulates cytological and molecular aspects of male killing including DNA damage accumulation at dosage compensation sites. The gene is located in the eukaryotic association module (EAM) of prophage WO near cif genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe prior work that is well-supported by citations to previous publications (Bordenstein and Bordenstein, 2016; Perlmutter et al., 2019; Harumoto et al., 2018; LePage et al., 2017). This background information provides essential context for the current study and is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Native wmk homologs in closely-related Wolbachia strains (wMel, wRec, wSuzi) have nearly identical sequences varying by 1-3 SNPs, yet these strains induce different reproductive phenotypes. wMel and wRec cause cytoplasmic incompatibility, wRec also causes male killing in sister species, and wSuzi has no known reproductive phenotype. The wSuzi homolog has one synonymous SNP, while wRec has three SNPs including one non-synonymous change in the first HTH domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C114-C116 are supported by sequence analysis (Figure 2A) and citations to previous studies characterizing these strains. The sequence data is directly shown in the manuscript, and the phenotypic characterizations are well-established in the literature. This provides important context for understanding why these particular strains were chosen for study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Transgenic wSuzi wmk and the original transgenic wMel wmk produce identical proteins but share only 91% nucleotide sequence identity in the codon-optimized transgenes, largely due to an updated codon optimization algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by sequence analysis of the transgenes. This is a critical observation because it demonstrates that codon optimization algorithms can introduce substantial sequence variation while maintaining amino acid identity, and this variation has functional consequences (as shown by the different phenotypes of these transgenes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose that heterologous expression and codon optimization may obscure understanding of wmk biology, and suggest that future work should: (1) test wmk function in native contexts once technically feasible, (2) determine if the codon effects are host-specific or general, (3) assess whether additional synonymous sites contribute to phenotype, and (4) corroborate transgenic findings in natural contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 and C95-C96 represent reasonable inferences and recommendations based on the findings. The speculation is appropriately cautious and identifies important limitations of the transgenic approach. These are logical next steps given the demonstrated sensitivity of wmk function to codon optimization and synonymous changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "It is standard practice to codon optimize endosymbiont genes for heterologous expression with the assumption that synonymous codons will not alter function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C94 accurately describe standard practice in the field, supported by citations to previous work (Perlmutter et al., 2019; LePage et al., 2017; Harumoto and Lemaitre, 2018). This provides important context for why the findings are significant\u2014they challenge a common assumption in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors provide extensive background on mechanisms by which synonymous codons can affect gene function, including effects on: codon bias, tRNA availability, translation rate, mRNA structure, ribosome initiation, translation efficiency, protein folding, and mistranslation. They note that endosymbionts have low GC content and GC content drives codon usage bias and mRNA structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 and C97-C99 represent well-established knowledge in the field, appropriately cited to relevant literature. This background provides important context for interpreting the findings and proposing mechanisms. The citations are appropriate and the knowledge claims are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Resistance to male killing is common in nature, and some Wolbachia strains can cause male killing when transferred to closely-related hosts but not in all recipient species, suggesting host-specific adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by multiple citations to empirical studies. This background information provides important context for interpreting the finding that distant homologs don't cause male killing in D. melanogaster and supports the co-adaptation hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The all-killing phenotype of wRec and wSuzi wmk could indicate targeting of non-sex-specific components of the dosage compensation complex (DCC). Four of five DCC proteins are expressed in both sexes, with only msl-2 being male-specific, suggesting several potential non-sex-specific wmk targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 represent speculation about mechanisms, though based on established knowledge about the DCC (C104, C105 are well-supported by citation). The hypothesis that non-sex-specific DCC components are targeted is logical but not directly tested. The speculation is appropriately presented as such and identifies testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors speculate that protein/transcript divergence may impact host-target specificity and underlie host resistance, that male-killing genes should evolve rapidly to counteradapt to host resistance, and that diverse wmk conformations could contribute to the diversity of Wolbachia male killing across hosts and sex determination systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C113 represent speculation about evolutionary mechanisms and natural variation. While the speculation is logical and based on evolutionary theory (C109, C110 cite relevant literature), these hypotheses are not directly tested in the current study. The speculation is appropriately presented and identifies important questions for future research.",
+    "result_type": "MINOR"
+  }
+]

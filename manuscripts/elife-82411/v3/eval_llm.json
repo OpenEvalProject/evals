@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C49",
+      "C150"
+    ],
+    "result": "SucA expression is repressed under nitrogen limitation in S. enterica and E. coli, inversely correlating with GlnA induction during growth on glutamine as the sole nitrogen source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43, C49, and C150 are consistently supported by western blot data in Figure 1B showing striking reduction of SucA levels during growth on glutamine while GlnA is induced. The counter-correlation between SucA and GlnA levels is clearly demonstrated across multiple nitrogen conditions in both organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C43",
+      "C44",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C152"
+    ],
+    "result": "GlnZ sRNA, generated from the 3'UTR of glnA mRNA, post-transcriptionally represses sucA through base-pairing far upstream of the translation initiation region in an Hfq-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C43, C44, C84-C88, and C152 are well-supported by multiple lines of evidence: GFP reporter assays (Figure 3A-B) demonstrate base-pairing-dependent repression through complementary mutations, northern blots confirm GlnZ expression correlates with nitrogen limitation (Figure 1D), and experiments with Hfq mutants (Figure 5) establish Hfq-dependence. The mechanism is validated across both S. enterica and E. coli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C102"
+    ],
+    "result": "Enterobacterial GlnZ variants contain a conserved seed sequence (5'-UUGCCGUGGAAA-3') that targets sucA and glnP mRNAs across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C77-C79, C83, and C102 are supported by sequence alignment data (Figure 2A) showing conservation of the seed region, computational predictions using CopraRNA identifying sucA as the primary target, and experimental validation through GFP reporter assays (Figure 3A-D) demonstrating functional conservation of sucA and glnP regulation across enterobacteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Deletion of glnA 3'UTR (\u0394glnZ) results in increased SucA expression during growth on glutamine, with ~1.3-fold increase in S. enterica and ~1.4-fold increase in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C107-C109 are supported by western blot data in Figure 4A-B showing modest but statistically significant increases in SucA levels in \u0394glnZ mutants during glutamine growth. The effect is more pronounced when basal SucA expression is low, consistent with the proposed regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C154"
+    ],
+    "result": "In E. coli, the transcriptional regulator Nac works in parallel with GlnZ to repress sucA, with the double mutant (\u0394nac \u0394 glnZ) showing ~2.5-fold increased SucA levels compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C45, C111-C114, and C154 are supported by western blot analysis in Figure 4B demonstrating additive effects of nac and glnZ deletions on SucA expression. The parallel regulation by transcriptional (Nac) and post-transcriptional (GlnZ) mechanisms is clearly established, with both regulators activated by NtrC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C46",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146",
+      "C148",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "RNase E-mediated cleavage is essential for releasing GlnZ from glnA mRNA, and this processing is required for GlnZ to regulate its target mRNA sucA in trans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C46, C138-C143, C145-C146, C148, and C158-C160 are strongly supported by experiments with RNase E temperature-sensitive mutants (Figure 6A) showing loss of GlnZ processing at non-permissive temperature, and by site-directed mutagenesis of RNase E cleavage sites (Figure 6B-D) demonstrating that unprocessed glnA mRNA cannot regulate sucA despite containing the seed sequence. The requirement for sRNA release from the parental mRNA is conclusively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C126",
+      "C133",
+      "C134"
+    ],
+    "result": "Hfq is essential for GlnZ biogenesis and stability, with hfq mutants showing only faint GlnZ fragments and reduced target regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118, C121, C126, C133-C134 are supported by northern blot data (Figure 5A, 5C) showing dramatic reduction of GlnZ in hfq mutants, and western blot data (Figure 5B) demonstrating loss of target regulation. The classification of GlnZ as a class I sRNA is supported by citation. However, the differential requirement for Hfq between E. coli and S. enterica GlnZ processing (C135) adds complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C155"
+    ],
+    "result": "SucB expression patterns differ between E. coli and S. enterica in response to nitrogen availability, with E. coli showing coordinated regulation with SucA while S. enterica shows constant SucB expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C155 are supported by western blot data in Figure 1B showing species-specific differences in SucB regulation. This discoordinated expression in S. enterica (which lacks Nac) versus coordinated expression in E. coli is consistent with the presence of transcriptional regulation by Nac in E. coli but not S. enterica.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C156"
+    ],
+    "result": "E. coli glnA 3'UTRs are phylogenetically diverse and can be classified into at least three types (K-12, O157, O111), while Salmonella glnA 3'UTRs are >99% identical, yet all generate functional GlnZ sRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 and C156 are supported by sequence alignment data (Figure 2A-B) and northern blot analysis (Figure 2C) showing that despite structural diversity in E. coli glnA 3'UTRs, all variants produce GlnZ sRNAs that are induced under nitrogen limitation. The conservation in Salmonella and diversity in E. coli is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Different glnA 3'UTR structures do not significantly affect expression of downstream glnLG genes (encoding NtrBC), suggesting the Rho-independent terminator stabilizes glnA mRNA or that glnLG is transcribed independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by western blot data (Figure 2D) showing that partial deletion of glnA 3'UTR (\u0394glnZ) does not affect GlnA or NtrC levels, while complete terminator deletion (\u0394glnZT) slightly reduces GlnA but not NtrC. Heterologous 3'UTR replacements also show equivalent expression, supporting the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C103"
+    ],
+    "result": "GlnZ regulates additional targets including glnP (Gln ABC transporter) and deoD (purine nucleoside phosphorylase), with species-specific differences in target specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 and C103 are supported by RNA-seq data identifying downregulated genes, computational predictions using IntaRNA, and GFP reporter assays (Figure 3C-D) validating base-pairing-dependent regulation. The species-specific regulation of deoD due to synonymous codon changes is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "E. coli GlnZ regulates aceE (pyruvate dehydrogenase E1 component) through base-pairing far upstream of TIR, but S. enterica GlnZ1 lacks this activity due to a single nucleotide difference (G vs U at position 143).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 and C103 are supported by RNA-RNA interactome data, GFP reporter assays (Figure 3E-F) showing species-specific regulation, and gain-of-function experiments where G143U mutation in S. enterica GlnZ1 confers aceE regulation. The molecular basis for species-specific target recognition is clearly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "A 15-nucleotide purine-rich sequence upstream of sucA TIR is critical for GlnZ-mediated repression, with deletion of this region abolishing both basal translation and GlnZ regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 are supported by GFP reporter assays (Figure 3\u2014figure supplement 1B) showing that deletion of the purine-rich region significantly decreases basal sucA translation and eliminates GlnZ-mediated repression. This suggests a non-canonical mechanism where GlnZ binding far upstream requires this sequence for effective translational repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Multiple GlnZ isoforms are detected in S. enterica (GlnZ1 ~185 nt, GlnZ2 ~50 nt, and precursors >200 nt), while E. coli K-12 shows primarily a single ~200 nt transcript, all induced under nitrogen limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by northern blot data (Figure 1D) showing distinct banding patterns between S. enterica and E. coli, with sizes consistent with genomic structure and known RNase E processing. The induction under nitrogen-limiting conditions is clearly demonstrated for both organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Ectopic expression of GlnZ specifically represses SucA but not SucB, and mutations in the seed region (G15C) abolish this repression while mutations outside the seed (G12C) have minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by western blot data (Figure 5B) showing seed-dependent repression of SucA and AceE but not SucB. The specificity for SucA without affecting the downstream gene SucB in the same operon demonstrates that GlnZ-mediated repression does not extend beyond its direct target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "SucA protein levels are twice as high during growth in ammonium-containing media compared to growth on glutamine, but this difference is not significantly altered by glnZ deletion in rich nitrogen conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by western blot data (Figure 4A) showing that the major difference in SucA levels is between nitrogen sources rather than between wild-type and \u0394glnZ strains in ammonium-rich conditions. This suggests GlnZ contributes to but does not fully account for nitrogen-dependent SucA regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "A GlnZ precursor with 30 nt extension at the 5' end (GlnZ+30) can still repress SucA expression despite not being fully processed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 is based on data in Figure 6C-D showing that mut1 mutation blocks processing to mature GlnZ but the precursor GlnZ+30 still represses SucA. However, this appears to contradict claim C148 that GlnZ needs to be separated from parental mRNA for regulation. The distinction between a 30 nt extension versus full-length glnA mRNA attachment may be critical but is not fully explained. Additional experiments clarifying the minimal processing requirement would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "GlnA protein levels are elevated in hfq mutants despite reduced glnA mRNA processing, suggesting Hfq-mediated post-transcriptional regulation of GlnA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is based on western blot data (Figure 5A) showing elevated GlnA in hfq mutants. While this observation is clear, the interpretation that GlnA is subject to Hfq-mediated post-transcriptional regulation is speculative. Alternative explanations such as indirect effects through other Hfq-dependent regulators or compensatory mechanisms are not ruled out. Direct evidence of Hfq binding to glnA mRNA or identification of specific Hfq-dependent sRNAs targeting glnA would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "Repression of SucA during growth on glutamine leads to increased metabolic flux of 2-oxoglutarate from the TCA cycle to the GS-GOGAT pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C151 is a logical inference from the observed SucA repression and GlnA induction, but direct measurement of metabolic flux or 2-OG levels is not provided in the manuscript. While the model is biochemically reasonable and consistent with prior literature on 2-OG accumulation during nitrogen limitation (C27), experimental validation through metabolomics or isotope tracing would be needed to definitively support this claim about metabolic flux redirection.",
+    "result_type": "MAJOR"
+  }
+]

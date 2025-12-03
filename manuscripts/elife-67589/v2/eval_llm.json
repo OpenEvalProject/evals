@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Experiment 1 (N=24) demonstrated a significant recency effect in working memory, with the 2nd item showing better accuracy (0.79 vs 0.77, p=0.039) and steeper psychometric function slope (0.14 vs 0.11, p=0.015) compared to the 1st item.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging behavioral evidence for the recency effect using appropriate statistical tests (paired t-tests) with adequate sample size (N=24). The effect is demonstrated through both accuracy measures and psychometric function slopes, with significant p-values and moderate effect sizes (Cohen's d = 0.45 and 0.54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Time-resolved inverted encoding model (IEM) successfully decoded orientation information from MEG signals during encoding, showing sequential activation of 1st and 2nd items that decayed to baseline ~0.5s after the 2nd item offset, suggesting entry into activity-silent working memory states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 demonstrate successful application of IEM decoding with appropriate statistical testing (cluster-based permutation tests with multiple comparison correction). The temporal dynamics are clearly documented with specific time windows and corrected p-values. The interpretation of activity-silent states (C6) is appropriately supported by citations and observed decay patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "PING stimulus during retention elicited backward reactivation, with the 2nd item reactivating earlier (0.26-0.43s, p=0.011) than the 1st item (0.67-0.76s, p=0.030), with ~0.3s temporal lag, suggesting items are stored in different latent states of the WM network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 provide the core neural evidence for differential latent states. The temporal dissociation is statistically significant with appropriate correction for multiple comparisons. The inference about different latent states (C9) is reasonable given the distinct temporal reactivation profiles, though it remains an interpretation of the observed pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Neural reactivation profiles correlated with behavioral recency effect: recency effect positively correlated with 2nd item reactivation (r=0.50, p=0.013) and negatively with 1st item reactivation (r=-0.55, p=0.005), with the 2nd-1st reactivation difference also correlating with recency (r=0.47, p=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 establish critical brain-behavior relationships using appropriate correlation analyses. The correlations are moderate in strength and statistically significant. The time windows for correlation analysis were defined independently (based on neural-behavioral correlations), strengthening the validity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Experiment 2 (N=24 new subjects) showed no significant recency effect when subjects memorized the same sequence without needing to retain ordinal structure (1st: 0.77, 2nd: 0.78, p=0.13), suggesting recency effect is weakened when ordinal structure is not required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 provide appropriate control experiment evidence. The lack of significant difference (p=0.13) with adequate sample size supports the conclusion. However, the inference (C15) that ordinal structure requirement is the critical factor is reasonable but could be confounded by the different task demands (big/small comparison vs. ordinal position).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Experiment 2 showed disrupted backward reactivation pattern compared to Experiment 1, with no significant difference between 1st and 2nd item reactivations (p>0.5), significant summed response (p=0.024), marginally significant between-experiment differences (p=0.058, p=0.043), and no reactivation-recency correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide converging evidence that removing ordinal structure requirements disrupts the backward reactivation pattern. The statistical tests are appropriate, though some effects are marginal (C16, C19). The pattern of results (no difference, significant sum, lack of correlations) consistently supports the disruption of differential latent states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Experiment 3 (N=24 behavioral) with varying delay intervals showed significant main effects of both serial position (recency: F(1,23)=7.03, p=0.014) and memory decay (F(2,23)=5.21, p=0.009) with no interaction (p=0.14), confirming memory performance is determined by both passive decay and sequence position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 provide appropriate factorial design evidence using ANOVA. The significant main effects without interaction support the conclusion that both factors independently contribute to memory performance. The experimental design with three delay intervals allows proper estimation of decay effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Computational modeling incorporating passive decay (\u03b2) and sequence structure (\u03c3\u2081, \u03c3\u2082) showed that sequence structure (\u03c3\u2082-\u03c3\u2081) significantly correlated with recency effect (r=-0.84, p<0.001) while decay rate did not (r=0.028, p=0.90), with Bayesian model selection favoring the model with different \u03c3 and same \u03b2 (exceedance probability 0.65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide strong computational evidence using appropriate modeling approaches. The partial correlation analysis properly controls for confounding factors. Bayesian model selection provides quantitative support for the sequence structure account over passive decay. The convergence of modeling with neural and behavioral data strengthens the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Neural representations of WM items could not be generalized from encoding to maintaining periods or across items during retention, supporting the interpretation that items embedded in sequence structure are reorganized in varied latent states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide additional evidence for state reorganization through cross-temporal and cross-item generalization analyses. The lack of generalization supports the interpretation of distinct latent states, though this is an inference from negative results. The analysis is appropriate for testing representational similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Control analysis of alpha-band activities (8-12 Hz) revealed sustained reactivation profiles for both 1st and 2nd orientations before and after PING stimulus, suggesting active sustained representation and STP-based activity-silent storage operate together to mediate working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide important control analyses showing that alpha-band activity patterns differ from broadband responses. The sustained profiles in alpha-band contrast with the transient broadband reactivations, supporting a dual-mechanism interpretation. However, the conclusion about two mechanisms operating together (C41) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Experiment 2 was carefully matched to Experiment 1 in stimuli, task, and difficulty. Control analyses confirmed subjects retained two independent orientations (not relative angle) and orientation information was precisely represented in terms of big/small labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 address important methodological concerns about Experiment 2. The generalized linear mixed-effects model analysis (C51) appropriately tests whether subjects used relative angle encoding. The decoding analysis based on big/small labels (C52) confirms precise representation. These controls strengthen the interpretation of Experiment 2 results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "WM items in the present study were equally task-relevant with equal probability of being tested, thus results could not be explained by attentional modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 appropriately rule out attention-based explanations by noting the equal task relevance of items. This is a valid inference from the experimental design where both items had 50% probability of being tested. However, this does not completely exclude all forms of attentional influence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C35",
+      "C57"
+    ],
+    "result": "Overall conclusion: Sequence structure context shapes how WM items are stored in the human brain by reorganizing them into different latent states of the neural network, essentially influencing memory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C35, C57 represent the main conclusions synthesizing all experimental and modeling results. The conclusion is well-supported by converging evidence from three experiments, neural recordings, and computational modeling. The integration of behavioral, neural, and computational approaches provides strong support for the central thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Methodological details: All subjects had normal vision with no psychiatric/neurological disorders, experiments followed Declaration of Helsinki with ethics approval, appropriate sample sizes and trial numbers were used, MEG recorded at 1000 Hz and preprocessed with 2-30 Hz filtering and downsampling to 100 Hz, with appropriate channel selection and trial balancing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 document standard methodological procedures. The methods are appropriate and clearly described. Sample sizes (N=24 per experiment) are adequate for within-subject designs. The preprocessing steps (filtering, downsampling, artifact rejection) are standard for MEG analysis. Trial balancing (minimum 37 trials per orientation) ensures unbiased decoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "Inverted encoding model (IEM) analysis methods: IEM was used to reconstruct orientation from MEG signals based on linear combination of channel responses, with established precedent in prior literature. Slope time courses were smoothed (40ms Gaussian kernel) and tested using cluster-based permutation tests (1000 permutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe well-established analysis methods with appropriate citations. The IEM approach is validated by prior literature (C70). The statistical testing using cluster-based permutation with multiple comparison correction is appropriate for time-series data. The smoothing kernel width (40ms) is reasonable and cited from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The PING stimulus impulse-response approach can transiently perturb the WM network to reactivate stored information and assess latent states, with prior literature showing attended but not unattended items are reactivated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe the rationale for the PING stimulus approach based on cited literature (Wolff et al., 2017, 2020). The method is appropriately applied to test the hypothesis about differential latent states. However, the mechanism by which PING reactivates representations remains somewhat unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C42",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Literature context: Prior work established activity-silent working memory mechanisms, serial position effects, temporally compressed reactivations during consolidation, attention modulation of latent states, phase-based reactivation models, and reversed replay phenomena in various contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C42, C45-C47 appropriately cite relevant prior literature to contextualize the current findings. The citations are accurate and relevant. These claims establish the theoretical framework and prior empirical findings that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Speculative interpretation: The item in late position might serve as an anchoring point for other items and be maintained in a more excitable state because it receives less interference and is more reliable for retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 are explicitly speculative interpretations of the backward reactivation findings. While plausible, these claims are not directly tested in the experiments. The anchoring point hypothesis and interference-based explanation are reasonable but require additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

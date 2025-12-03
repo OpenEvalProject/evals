@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C21",
+      "C73",
+      "C74"
+    ],
+    "result": "Most SARS-CoV-2 transmissions occur during the pre-symptomatic phase, with 62% of simulated transmissions and 62% of super-spreader events (\u22655 secondary infections) occurring pre-symptomatically. This is attributed to the highly variable incubation period (mean 5.2 days) that often extends beyond peak viral shedding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C21, C73, and C74 collectively demonstrate pre-symptomatic transmission dominance through both cited literature (C2, C3, C21) and model predictions (C73, C74). The model results are consistent with epidemiological observations and provide mechanistic explanation through incubation period variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "SARS-CoV-2 exhibits substantial over-dispersion in secondary infection distribution, with ~75% of infected individuals not transmitting at all, while ~10% of all infected people (producing \u22655 secondary infections) account for ~85% of all transmissions. The model successfully recapitulates this observed over-dispersion pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 establish the empirical observation of over-dispersion from literature, while C24-C28 demonstrate that the model successfully reproduces these patterns. The quantitative agreement between model predictions and observed data (Figure 2a,b) supports the validity of the modeling framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C100"
+    ],
+    "result": "The within-host mathematical model captures observed upper airway viral kinetics from 25 people across four countries, including early viral peak, decelerating clearance, temporary plateau, and rapid elimination phases. However, only half of participants provided early infection data, limiting model reliability during the pre-symptomatic phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C18-C19 claim the model captures observed kinetics, C20 and C100 acknowledge significant data limitations during early infection when transmission is most critical. This limitation undermines confidence in model predictions for the most epidemiologically relevant period, though the authors attempt to address this through imputed heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C76",
+      "C77"
+    ],
+    "result": "The model identifies transmission dose-response thresholds for SARS-CoV-2: ID50 of 10^7 viral RNA copies, TD50 of 10^7.5 copies, with transmission very unlikely below 10^4 copies (~0.00005% probability), unlikely below 10^5 copies (~0.002%), but much more likely above 10^7 copies (39%) and 10^8 copies (75%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C37, C76-C77 present specific quantitative thresholds, but these are model-derived estimates rather than experimentally validated values. The authors acknowledge in C104 that TD50 estimates are 'necessarily imprecise' and should serve only as 'conservative benchmarks.' The lack of direct experimental validation and acknowledged data heterogeneity (C99, C101) limit confidence in precise threshold values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C87"
+    ],
+    "result": "SARS-CoV-2 infected persons are most infectious for a narrow window of ~0.5-1.0 days (averaging less than 2 days total) between days 2-6 after infection, comparable to influenza duration. This high-risk window increases to 2-3 days under pre-lockdown conditions. Transmission after the first week is quite rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C79-C82, and C87 consistently describe a short infectivity window supported by model simulations (Figure 3b-d). The finding that infectivity duration is comparable to influenza (C81) despite much longer SARS-CoV-2 shedding duration provides important mechanistic insight. The pre-lockdown comparison (C80) demonstrates model sensitivity to behavioral factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C70",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SARS-CoV-2 super-spreader events require both high viral load (>10^7 RNA copies) and high exposure contacts, with an inflection point between 10^6-10^7 copies. The exposure contact network is highly dispersed (\u03c1=40) with average 4 contacts/day, allowing occasional days with \u2265150 contacts. Over 50% of infections involve transmitters with 11-100 contacts/day and viral load >10^6. This over-dispersed contact network, likely due to wider airborne dispersal, explains SARS-CoV-2's super-spreading propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 establish the model parameters and conditions for super-spreading, while C70, C93-C95 provide mechanistic interpretation. The high \u03c1 value (C40) is critical for reproducing observed over-dispersion. The airborne transmission hypothesis (C94-C95) is supported by comparative analysis with influenza but remains inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C39",
+      "C83",
+      "C84"
+    ],
+    "result": "The model recapitulates high variance in serial interval (including negative values) observed in transmission pairs. Mean serial interval (4.4 days) accurately approximates mean generation time, but generation time variance is considerably lower. The wide serial interval variance is attributed primarily to variable incubation periods rather than variable shedding patterns or late transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 demonstrate model fit to observed serial interval data (Figure 2c-d), while C39, C83-C84 provide mechanistic interpretation. The distinction between serial interval and generation time variance (C31, C84) is important for understanding transmission dynamics. The attribution to incubation period variability (C39, C83) is a logical inference from model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Influenza exhibits more homogeneous individual transmission than SARS-CoV-2, with only ~40% not transmitting and super-spreader events (\u22655 secondary infections) ~5-fold less common overall (~2% of infected, ~3% of transmitters, contributing ~10% of transmissions). The contact network never exceeds 15 contacts/day, severely limiting super-spreading potential. Influenza is much less predisposed to super-spreader events despite similar high-viral-load shedding frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C51-C53, C57-C58, C90-C92 collectively demonstrate influenza's lower super-spreading propensity through both literature (C8) and model results (C51-C53, C57-C58). The key finding that viral kinetics don't explain the difference (C91-C92) but contact network structure does (C57) is well-supported by comparative modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C69",
+      "C81"
+    ],
+    "result": "Despite differing viral shedding kinetics (SARS-CoV-2 sheds for weeks vs. influenza for ~1 week), the kinetics of infectivity are extremely similar between the two viruses. Median per-contact transmission risk is slightly higher for influenza, but upper percentiles are marginally higher for SARS-CoV-2. Median time above transmission thresholds is nearly equivalent: TD50 is 0 [0, 0.5] days for SARS-CoV-2 vs. 0 [0, 0.4] days for influenza.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65, C69, and C81 demonstrate through quantitative comparison that infectivity kinetics are similar despite different shedding durations. This is a key finding that viral kinetics alone don't explain epidemiological differences. The data in Figure 9a,c support these conclusions, though the comparison relies on different viral load measurements (RNA vs. TCID) which introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C105",
+      "C107"
+    ],
+    "result": "The exposure contact networks of SARS-CoV-2 transmitters are highly dispersed relative to influenza. The most likely explanation is that SARS-CoV-2 is more predisposed to airborne transmission, such that an infected person in a crowded poorly ventilated room generates more exposure contacts than an influenza-infected person in the same room. Fundamental epidemiologic features of both infections can be directly related to viral shedding patterns and exposure contact network nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96, C105, and C107 provide the central mechanistic conclusion of the paper. The contact network difference (C93) is demonstrated through modeling (\u03c1=40 vs. \u03c1=1), and the airborne transmission hypothesis (C94-C95) is the most parsimonious explanation supported by citation (van Doremalen et al., 2020). However, this remains inferential rather than directly proven, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C80"
+    ],
+    "result": "During the early pandemic phase in Wuhan (pre-lockdown, before January 22, 2020), the serial interval was longer (~7.5 days) and the optimized ID50 was ~100-fold lower (10^5 vs. 10^7 viral RNA copies), reflecting more prolonged and intimate exposure contacts. The high-risk transmission window increased to 2-3 days under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C80 demonstrate model flexibility in capturing different pandemic phases with different behavioral patterns. The 100-fold difference in ID50 (C46) is substantial and the interpretation that this reflects contact duration/intimacy rather than viral biology (C47) is reasonable. This analysis strengthens confidence in the modeling approach by showing it can capture temporal variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "An approximately 40% decrease in average exposed contact rate lowers R0 below 1. Limiting exposure contacts to no more than 5 per day is nearly equivalent to limiting contacts altogether, and only a small decrease in mean exposure contact rate can achieve R0 < 1 if exposure events with >20 contacts are eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 present model-based projections for intervention strategies (Figure 10\u2014figure supplements 1-2). These are logical extensions of the model structure and provide actionable public health insights. The finding that targeting large gatherings is particularly effective (C72) follows directly from the over-dispersed contact network structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Predicted distributions of serial interval and generation time were unchanged by shifts in the exposed contact network (varying \u03c1 between influenza and SARS-CoV-2 values).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 demonstrates that contact network structure affects R0 distribution but not temporal transmission patterns (Figure 9g-h, Figure 9\u2014figure supplement 1). This is an important validation that the model correctly separates these epidemiological features and that serial interval/generation time are primarily determined by incubation period rather than contact patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The simulated relationship between viral RNA and probability of positive viral culture qualitatively matches the dose response observed in formal dose challenge experiments performed with SARS-CoV-1 in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 provides external validation by comparing model output to experimental data from a related virus (SARS-CoV-1) in a different species (mice). While this qualitative agreement is encouraging, the cross-species and cross-virus comparison limits the strength of this validation. Direct SARS-CoV-2 human challenge data would be needed for definitive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "Model results suggest that low nasal viral load during late infection may not require full patient isolation, time since first positive test may be predictive of lack of contagion, super-spreader potential may be a signature property of infection rather than characteristic of a subset of people, and newly diagnosed people within small clusters may be past their super-spreading peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86, C88-C89 present practical implications and interpretations of model results. However, C85 explicitly states this is a suggestion requiring experimental verification, C86 acknowledges need for more viral load kinetic studies, and C88-C89 are inferences from model structure. These are reasonable hypotheses but require validation before implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Two theoretical explanations are proposed for why many SARS-CoV-2 infected people don't transmit: (1) high viral load shedding in pre-symptomatic phase may involve lack of cough/sneeze leading to limited spatial virus diffusion, or (2) a proportion of infected people may never shed virus at high enough levels for efficient transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 are explicitly speculative explanations (evidence_type: SPECULATION) for an observed phenomenon. These are reasonable hypotheses but lack supporting data. The authors appropriately present these as theoretical possibilities rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study has several acknowledged limitations: models were fit to different viral load measurements (RNA for SARS-CoV-2, culture for influenza), early SARS-CoV-2 infection data is limited, data came from heterogeneous sources across continents with different sampling/assay techniques, R0 estimates vary temporally and spatially, and social interaction matrices differ among locations. TD50 estimates are necessarily imprecise and should serve only as conservative benchmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 represent appropriate acknowledgment of study limitations. These are honest assessments that properly contextualize the results. The authors correctly note that despite these limitations, the qualitative findings about over-dispersion mechanisms are likely robust (C105-C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Viral load is recognized as a strong determinant of transmission risk across multiple viral infections, including influenza (dose-dependent infection in human challenge studies, reduced household transmission with early antiviral treatment), SARS-CoV-1 (dose-dependent infection in mice), SARS-CoV-2 (suggestive evidence in hamsters), HSV-2 (reduced transmission with antiviral-mediated shedding reduction), and HIV (virtual elimination of sexual transmission with suppressive ART).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 establish the biological plausibility and precedent for the modeling approach by citing multiple examples from literature where viral load correlates with transmission. These citations provide strong foundation for the dose-response modeling framework, though they represent prior work rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C9",
+      "C10",
+      "C106"
+    ],
+    "result": "Background context: SARS-CoV-2 has caused nearly 2 million deaths, super-spreader events are well documented, SARS-CoV-2 is often present in upper airways for many weeks while influenza is rarely shed for more than a week, and super-spreader events are a globally generalizable feature of SARS-CoV-2 epidemiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C9-C10, and C106 provide background context and established facts from literature. These are well-supported by citations and general knowledge, serving to motivate the study rather than present novel findings.",
+    "result_type": "MINOR"
+  }
+]

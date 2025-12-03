@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study collected iEEG data from 30 epilepsy patients performing interleaved quiz and choice tasks. The quiz task manipulated feedback to induce mood fluctuations, while the choice task assessed risky decision-making with varying gain, loss, and difficulty parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C31-C40 provide comprehensive methodological details about data collection, task design, and experimental manipulations. The experimental design is clearly described with appropriate controls (task independence, no challenge feedback) and adequate sample size (n=30) for iEEG studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Choice behavior was significantly modulated by gain (\u03b2=0.12, p=2\u00d710\u207b\u2077), loss (\u03b2=-0.10, p=6\u00d710\u207b\u2076), and difficulty (\u03b2=-0.03, p=6\u00d710\u207b\u00b3). Beyond these factors, mood ratings significantly predicted choice residuals (\u03b2=0.05, p=0.027), indicating mood partially explained choice variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 report statistically significant effects with appropriate statistical tests (t-tests, n=30) and p-values. The finding that mood explains additional variance beyond task parameters is well-supported, though the effect size is modest (\u03b2=0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The mood manipulation was effective: correct feedback rate (0.60 vs 0.21, p=4\u00d710\u207b\u00b2\u2070) and mood ratings (0.22 vs -0.12, p=8\u00d710\u207b\u2074) were significantly higher in high vs low feedback episodes. The computational mood model outperformed the null model at the group level (Xp=1) but showed individual variability (null model better in 6/30 subjects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C52-C54 demonstrate successful mood induction with strong statistical evidence. The acknowledgment of individual variability (C54) strengthens credibility. Bayesian model comparison appropriately accounts for model complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C49",
+      "C50",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A computational model was developed where mood integrates past feedbacks with a forgetting factor (\u03b3=0.69\u00b10.04), and feedback perception is modulated by current mood (\u03b4 significantly positive, p=0.0026). The model outperformed the null model in ~2/3 of subjects, with mood fluctuations occurring on a timescale longer than acute emotions but shorter than mood disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C49-C50, C87-C91 describe a theoretically motivated computational model with significant parameter estimates. The reciprocal feedback-mood relationship is well-supported statistically. The timescale interpretation (C91) is reasonable given the forgetting factor, though somewhat qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The iEEG dataset included 3494 recording sites from 30 patients, with 3154 sites retained for analysis across 42 brain regions (\u226510 sites, \u22654 subjects). Broadband gamma activity (BGA, 50-150 Hz) was chosen as it correlates with both fMRI and spiking activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide clear data quality metrics and justification for focusing on BGA. The selection criteria for brain regions are reasonable and transparent. Citation support for BGA's relationship to fMRI/spiking (C58) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C59",
+      "C63",
+      "C65",
+      "C68",
+      "C70"
+    ],
+    "result": "Elevated BGA in vmPFC (n=91 sites, 20 subjects) positively correlated with both mood rating (pcorr=0.010) and theoretical mood level (TML) (pcorr=8\u00d710\u207b\u00b3). This association remained significant when excluding rating trials (p=5\u00d710\u207b\u2074) and after removing last feedback influence (p=4\u00d710\u207b\u00b3). The effect was specific to high-mood trials (p=0.039) and the high-gamma frequency band (p=0.018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C59, C63, C65, C68, C70 provide converging evidence for vmPFC's role in positive mood with appropriate corrections for multiple comparisons (cluster-level pcorr). The specificity analyses (high-mood trials, frequency bands) strengthen the conclusion. Statistical power is adequate given the number of recording sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C60",
+      "C63",
+      "C66",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "Elevated BGA in daIns (n=86 sites, 28 subjects) negatively correlated with both mood rating (pcorr<1.7\u00d710\u207b\u2075) and TML (pcorr=9\u00d710\u207b\u00b3). This association remained significant when excluding rating trials (p=9\u00d710\u207b\u00b3) and after removing last feedback influence (p=0.010). The effect was specific to low-mood trials (p=0.019) and showed negative correlations in gamma/high-gamma bands but positive correlations in theta/beta bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C60, C63, C66, C69, C71-C72 demonstrate daIns's role in negative mood with strong statistical support. The opposite frequency band patterns (C71-C72) are interesting but the functional significance is unclear. The low-mood specificity (C66) parallels the vmPFC finding, supporting a double dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C67",
+      "C73",
+      "C74",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "vmPFC and daIns BGA carried non-redundant information about mood, with vmPFC signaling above-average mood and daIns signaling below-average mood. BGA-only models best explained TML in both regions (Ef=0.99, Xp=1), with low-frequency bands providing redundant information. The regions showed opposite BGA responses to mood and were specifically concerned with good vs bad mood rather than being simply anti-correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C67, C73-C74, C98-C104 demonstrate functional specialization of vmPFC and daIns through multiple complementary analyses (joint regression, tertile splits, frequency band comparisons, Bayesian model selection). The double dissociation is well-established. However, the interpretation of bidimensional mood (C104-C105) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C84",
+      "C86",
+      "C119"
+    ],
+    "result": "Increased vmPFC baseline BGA promoted risk-taking by overweighting gain prospects. vmPFC BGA positively predicted choice residuals (pcorr=0.020), specifically in high-mood trials (p=2\u00d710\u207b\u2077). When baseline BGA was high, choice-related BGA positively predicted choices (pcorr=0.035), and the gain weight parameter (kg) was significantly enhanced (p=2\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C77-C79, C81-C82, C84, C86, C119 provide converging evidence linking vmPFC activity to risk-taking through multiple analyses (baseline-choice correlations, mood-specific effects, carry-over effects, computational modeling). The mechanistic explanation via gain overweighting is well-supported by the parameter analysis (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C83",
+      "C85",
+      "C86",
+      "C119"
+    ],
+    "result": "Increased daIns baseline BGA tempered risk-taking by overweighting loss prospects. daIns BGA negatively predicted choice residuals (pcorr=0.029), specifically in low-mood trials (p=1\u00d710\u207b\u2075). When baseline BGA was high, choice-related BGA negatively predicted choices (pcorr=0.022), and the loss weight parameter (kl) was significantly enhanced (p=5\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C77-C78, C80-C81, C83, C85-C86, C119 mirror the vmPFC findings with opposite valence, demonstrating a clear opponent-process mechanism. The loss overweighting mechanism (C85) is well-supported. The parallel structure of evidence for vmPFC and daIns strengthens both results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C122"
+    ],
+    "result": "Incidental feedbacks induce brain states (reflected in vmPFC/daIns baseline BGA) that correspond to different moods and bias risky option evaluation. Baseline BGA carried over to decision-making, though the link was lost at offer onset and retrieved before response. Mood-related neural fluctuations impact valuation in a valence-specific way through functionally opponent brain systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C112-C116, C122 synthesize the main findings into a coherent mechanistic account. The temporal dynamics (C115) add important detail about how baseline states influence decisions. The conclusion is well-supported by the convergence of behavioral, computational, and neural evidence, though the causal direction remains correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C75",
+      "C76"
+    ],
+    "result": "Additional brain regions showed associations with mood (dorsolateral PFC, visual cortex, motor cortex, premotor cortex) and choice (mid-cingulate, rostral/dorsal mPFC, vaIns, temporal cortex, parietal cortex). The ventral anterior insula (vaIns) showed negative association with mood rating but not TML.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C75-C76 report additional regions but these are secondary findings. The vaIns dissociation (C62) between mood rating and TML is interesting but unexplained. These regions are not the focus of the study and lack the detailed characterization of vmPFC/daIns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The vmPFC and daIns are known to be involved in reward and punishment learning, respectively. This study shows they integrate feedbacks over longer timescales than single outcomes. The ventral striatum, expected to correlate with mood, was not sampled. iEEG has inherent sampling limitations, but fMRI studies suggest other regions add little to mood decoding with this paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 appropriately contextualize findings within prior literature and acknowledge limitations. The missing ventral striatum (C94-C95) is a significant limitation but honestly reported. The appeal to fMRI data (C97) to justify null results is reasonable but not definitive given methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C123"
+    ],
+    "result": "The correspondence between iEEG BGA and previous fMRI results validates that BGA represents a time-resolved neural index correlating with hemodynamic response and spiking activity. Behavior in epilepsy patients was comparable to healthy young subjects, and iEEG results were compatible with fMRI findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C123 provide important validation of the approach. The consistency with fMRI (C123) and prior iEEG-fMRI comparisons (C109) supports generalizability. However, the claim about behavioral comparability (C123) lacks quantitative comparison and the patient population remains a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Artifacts are unlikely to explain the results because they would not systematically correlate with computational variables across patients with different epilepsy forms. Previous studies showed results were unchanged when removing artifacted trials, and keeping them makes results more robust to replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 provide reasoning about artifact concerns but lack direct evidence. The logic is reasonable (C124) but the appeal to unpublished comparisons (C125) is not verifiable. The argument that artifacts degrade correlations (C126) is valid but doesn't rule out systematic artifacts related to task engagement or arousal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C127",
+      "C128"
+    ],
+    "result": "These findings might explain why people experiencing positive/negative outcomes in one life domain tend to expect success/failure in others. At longer timescales, these mechanisms could explain gambling behavior after incidental events (e.g., sports team outcomes), potentially exacerbated in manic/depressive episodes. This represents a form of generalization that may be catastrophic in pathological cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8, C127-C128 are speculative extrapolations beyond the data. The laboratory task involves short-term mood fluctuations (~2 min timescale) and artificial feedback, while the proposed real-world applications involve much longer timescales and different contexts. These are plausible hypotheses but require additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Mood might be bidimensional with good and bad mood as independent components relying on distinct brain systems, consistent with clinical depression criteria. The finding of distinct brain systems rather than different frequency bands might relate to using events rather than direct cortical stimulation to induce mood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 are speculative interpretations. The bidimensional mood hypothesis (C105) is interesting but the study used unidimensional ratings. The comparison to clinical criteria (C106) is suggestive but not tested. The explanation for differences from prior iEEG studies (C107) is plausible but post-hoc.",
+    "result_type": "MINOR"
+  }
+]

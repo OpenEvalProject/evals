@@ -1,0 +1,981 @@
+{
+  "submission": {
+    "id": "4076c5d0-966b-4d0c-acab-46d7bb1f5969",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:20:20.594910Z",
+    "updated_at": "2025-12-03T16:20:20.594910Z"
+  },
+  "content": [
+    {
+      "id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "submission_id": "4076c5d0-966b-4d0c-acab-46d7bb1f5969",
+      "content_type": "manuscript",
+      "content_text": "# Dynamics of cooperative excavation in ant and robot collectives\n\n## Authors\n\n- S Ganga Prasath<sup>1</sup> ([ORCID: 0000-0002-4545-911X](https://orcid.org/0000-0002-4545-911X))\n- Souvik Mandal<sup>2</sup> ([ORCID: 0000-0002-9552-5613](https://orcid.org/0000-0002-9552-5613))\n- Fabio Giardina<sup>1</sup>\n- Jordan Kennedy<sup>1</sup>\n- Venkatesh N Murthy<sup>2</sup> ([ORCID: 0000-0003-2443-4252](https://orcid.org/0000-0003-2443-4252))\n- L Mahadevan<sup>1</sup> ([ORCID: 0000-0002-5114-0519](https://orcid.org/0000-0002-5114-0519)) \u2020\n\n### Affiliations\n\n1. School of Engineering and Applied Sciences, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n2. Department of Molecular and Cellular Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n3. Center for Brain Science, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n4. Department of Physics, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n5. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe solution of complex problems by the collective action of simple agents in both biologically evolved and synthetically engineered systems involves cooperative action. Understanding the resulting emergent solutions requires integrating across the organismal behavior of many individuals. Here, we investigate an ecologically relevant collective task in black carpenter ants Camponotus pennsylvanicus: excavation of a soft, erodible confining corral. These ants show a transition from individual exploratory excavation at random locations to spatially localized collective exploitative excavation and escape from the corral. Agent-based simulations and a minimal continuum theory that coarse-grains over individual actions and considers their integrated influence on the environment leads to the emergence of an effective phase space of behaviors, characterized in terms of excavation strength and cooperation intensity. To test the theory over the range of both observed and predicted behaviors, we use custom-built robots (RAnts) that respond to stimuli to characterize the phase space of emergence (and failure) of cooperative excavation. Tuning the amount of cooperation between RAnts, allows us to vary the efficiency of excavation and synthetically generate the entire range of macroscopic phases predicted by our theory. Overall, our approach shows how the cooperative completion of tasks can arise from simple rules that involve the interaction of agents with a dynamically changing environment that serves as both an enabler and a modulator of behavior.\n\n## Introduction\n\nCollective behavior is seen in organisms across many length scales, from the microscopic to the macroscopic (Nowak, 2006; Camazine et al., 2020; Gordon, 1999; Seeley, 2009; Couzin and Krause, 2003). These behaviours are often functional and serve as solutions to problems associated with tasks that cannot be solved efficiently at the individual level and range from brood care to foraging for food, protection from enemies and predation of prey, building complex architectures etc (Feinerman et al., 2018; Ocko and Mahadevan, 2014; H\u00f6lldobler and Wilson, 2009; Peleg et al., 2018; Rasse and Deneubourg, 2001). Since collective behavior involves multiple individuals, this necessarily involves some form of communication and/or cooperation that takes different forms across scales - from quorum sensing in unicellular bacterium and slime molds, to the waggle dance in bees, and various forms of physical signal propagation in animal societies and human organizations (Rasse and Deneubourg, 2001; Alcock, 2001; Pennisi, 2009; Nowak, 2006; Elster, 1998; Couzin and Krause, 2003).\n\nThe importance of environmental signals is particularly clearly seen in examples of collective task execution in social insects that have a long history of documented cooperative behavior (H\u00f6lldobler et al., 1990; Gordon, 1999; Perna and Theraulaz, 2017; Mikheyev and Tschinkel, 2004). Super-organisms made of individuals respond to local stimuli with stereotypical actions that leave their \u2018mark\u2019 on the environment, creating a spatio-temporal memory, commonly known as stigmergy (H\u00f6lldobler and Wilson, 2009). While stigmergy is usually associated with scalar pheromone fields, a broader definition might include the use of signaling via chemical, mechanical and hydrodynamic means (Buhl et al., 2005; Mikheyev and Tschinkel, 2004), as has been quantified in recent studies of bees (Ocko and Mahadevan, 2014; Peleg et al., 2018). To understand how collective task execution arises, we need to understand how individuals switch from local uncoordinated behavior to collective cooperation that translates to successful task execution in different social systems. From a biological perspective, this naturally involves understanding the neural circuits, physiology and ethology of an individual. A complementary perspective at the level of the collective is that of characterizing a \u2018crude view of the whole\u2019, which entails the quest for a small set of rules that are sufficient for task completion, along with the range of possible solutions that arise from these rules that might be tested experimentally. And finally, given the ability to engineer minimally responsive biomimetic agents such as robots (Rahwan et al., 2019), a question that suggests itself is that of the synthesis of effective behaviors using these agents. This allows us to explore regions of phase space that are hard to explore with social insects, and also to learn about the robustness of these behaviors using imperfect agents in uncertain and noisy physical environments, before looking for them in-vivo.\n\nHere we use an ecologically relevant task in carpenter ants Camponotus Pennsylvanicus: excavation and tunneling, to quantify the dynamics of successful task execution by tracking individual ants, create a quantitative framework that takes the form of mathematical models for agent behavior, and finally synthesize the behavior using robots that can sense and act. Our work complements and builds on earlier studies on excavation (Buhl et al., 2005; Tschinkel, 2004; Deneubourg and Franks, 1995; Deneubourg et al., 2002) in social insects that looked at the effects of population size and the role of cooperation on the efficiency of digging, while developing 1-dimensional models to understand the excavation process. We go beyond these studies by (i) quantifying the collective behavior of ants by tracking them in space-time, following the dynamics of their interaction, and the process of excavation of the confining substrate, (ii) developing a theoretical framework that couples the change in ant density, substrate density and the rate of antennation in space and time to capture the collective execution of the task in terms of a few non-dimensional parameters that define the range of behaviors of the agents, (iii) synthesizing and recreating this collective task using custom-built robots that can respond to each other and the environment . An important outcome of our study is a phase diagram that shows the emergence of different collective behaviors associated with task completion as a function of just two dimensionless parameters that characterize the local rules underlying individual behavior and the nature of communication between agents such as ants and robots.\n\n## Materials and methods\n\n### Excavation in carpenter ants\n\nWe start with ants drawn from a mature colony of C. Pennsylvanicus that consist of a queen, the sole egg layer, and workers from three morphologically different castes - major, median, and minor (Hansen and Klotz, 2005). Although all ants perform different tasks like foraging, nest-keeping, and brood care to varied degrees, during excavation, major ants, equipped with their large mandibles, generally take the lead role, while median and minor ants transport the debris out of the nest. Ants communicate primarily through their antennae by using them to sense pheromones released by other ants and by touching other ants to identify their caste. It is this inter-organismal information exchange that enables the collective solution of complex tasks.\n\nOur experiments consist of a dozen worker ants from the same colony that are anesthetized (using $C\u2062O_{2}$) and then brought into a confining ring-like corral made out of agarose (height 10mm, inner radius 35mm and outer radius 55mm) flanked above and below by two hard plastic sheets. To mimic their natural environment in a nest, we eliminated visible light and used infrared light to monitor the ants using video (see Figure 1(a)). We performed 4 experiments with a collective of 12 majors ants and 3 sets of experiments with a mixture of 4 major, 4 media and 4 minor ants. Once we introduce O2 into the corral, the ants regain activity but stay still for a while before moving. They first exhibit wall-following until one or more of the ants initiates an exploratory excavation at a random location along the corral (ref Figure 2). After an initial exploratory phase the ants switch to an exploitative strategy in which they excavate a tunnel at a specific location and eventually break through the corral (see Video 1 and the sequence in Figure 1(b)). In contrast with the behavior of the 12 ant collective, when a single Major ant is introduced into the arena, the ant is unable to excavate through the agar barrier (see Video 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig1-v2.jpg)\n\n**Figure 1.:** (a) Colony members of the black carpenter ant Camponotus pennsylvanicus are confined to a porous boundary made out of Agarose. The boundary is represented by its radius $R\u2062(\u03d5,t)$ ($\u03d5$ - polar angle, $t$ - time). Bottom part shows the side-view schematic of the experimental set-up with the boundary made of agarose and background IR light source used to image the ants in the dark. (b) Temporal progression of excavation experiments as 12 ants cooperatively tunnel through the agarose confinement. The white line is the tracked location of the inner wall which grows in size as the excavation progresses. (c) Confinement area $A\u2062(t)$ as a function of time (scaled by time to excavate out of the corral $T$), normalized by initial circular confinement with radius $R_{o}$. (d) Evolution of the orientation distribution of the ant density, $P_{\u03d5}^{a}(\u03d5,t)$ obtained by averaging along the radial direction. Ants start from an initially isotropic state and localize at an angle $\u03d5_{b}$ along the boundary. $T$ here is the excavation time. (e) Dynamics of the radial distribution of ant density $P_{r}^{a}(r,t)$ as a function of radial distance, $r$ obtained by averaging a sector of $\\pi/6$ around the excavation site. We see that the ant density front propagates through the corral. The density is plotted for the same times as in (f) Evolution of the power spectrum $|R^\u2062(k,t)|^{2}$ of first five Fourier modes capturing the number of tunnels formed during excavation $R\u2062(\u03d5,t)=\\sum_{k}R^\u2062(k,t)\u2062e^{i\u2062k\u2062\u03d5}$. Inset shows the real part of the Fourier coefficient, $\u211c\u2061(R^)$ at different time instants indicating that many modes are present in the boundary shape.\n\nWe can quantify this transition from rotationally isotropic exploration to localized excavation by considering both the behavior of individual ants or their effective density $\u03f1_{a}\u2062(r,\u03d5,t)$ as a function of the polar coordinates $(r,\u03d5)$ and time t. We choose to use an effective coarse-grained density for two reasons: it is a more natural variable in the limit of large populations that vary in space and time, and is also amenable to building effective theories with fewer parameters that are easier to analyze and thus also compare to experiments. The ant density is obtained by averaging the position of the ants over a time window larger than the time taken for them to perform one task cycle , that starts with excavation at the boundary and ends with dropping debris in the interior of the corral (see Appendix 1 for further details). Over time, we see that the ant density becomes localized at a particular angle and location along the corral; here large-scale excavation eventually leads to excavation and escape from the corral (see Figure 2 and Appendix 1\u2014figure 1 for the coarse-grained spatio-temporal evolution of the ant density, obtained by this averaging procedure). Simultaneously, collective excavation leads to an increase of the volume of excavated material, as shown in Figure 1(c) (see also Toffin et al., 2009). By averaging the ant density over radial positions, in Figure 1(d) we show the orientation distribution of the ant density $P_{\u03d5}^{a}(\u03d5,t)=\\int\u03f1_{a}(r,\u03d5,t)dr$ is initially isotropic, and gradually starts to localize at a particular (arbitrary) value of the angle as time increases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig2-v2.jpg)\n\n**Figure 2.:** Evolution of the ant density field, $\u03f1_{a}\u2062(x,t)$ (in units of #/mm2) as the tunneling progresses for experiments with 12 major ants.The density field is obtained by averaging the ant locations over 250 s during the tunneling process. In the second columns is the evolution of the boundary shape, $R\u2062(\u03d5)$ as a function of time where we see multiple excavation sites being explored before one of them succeeds. The darker spots in the image are the debris that the ants deposit as they excavate the boundary.\n\n![Video 1.](https://cdn.elifesciences.org/articles/79638/elife-79638-video1.mp4.jpg)\n\n**Video 1.:** $(i)$ Single ant: We confined 1 ant (major, media and minor individually) and capture their dynamics to see if they are capable of tunneling on their own; $(i\u2062i)$ Multiple castes assemblage: We confined 12 ants, 4 for each of major, minor and media castes, and capture the dynamics of excavation as they tunnel through the boundary; $(i\u2062i\u2062i)$ Major ant collective excavation: We confined 12 major ants and capture the dynamics of excavation as they tunnel through the boundary.2.\n\nAveraging the density over the localized region, in Figure 1(e) we show the radial distribution of the ant density $P_{r}^{a}(r,t)=\\int\u03f1_{a}(r,\u03d5,t)S(\u03d5)d\u03d5$ (where $S\u2062(\u03d5)$ is a smoothing kernel localized around the excavation site) starts out by being initially uniform, and gradually propagates radially outwards as time increases. Consistent with localization and concomitant excavation (Figure 1(f) inset, Appendix 1\u2014figure 2(c)), we see that the multiple azimuthal Fourier modes compete with each other initially before an elliptic mode (corresponding to a strongly localized state) is amplified as excavation progresses (shown in Figure 1(f), Appendix 1\u2014figure 2(b)). All together, our quantitative observations show that an initially isotropic and homogeneous distribution of ants in the corral induces exploration of multiple potential tunneling paths that transitions into the exploitative excavation of one specific location that eventually leads to an excavation route.\n\n### Model of cooperative excavation\n\nIn order to understand the dynamics of this cooperative excavation we first model the ants using discrete agents that mimic the microscopic behaviors of ants before turning to a coarse-grained field theoretic model for the evolution of the ant, pheromone and substrate density in space and time. In the agent-based model each ant is represented as a circular disk of radius $a$ with center position $r_{j}\u2062(t)$ and orientation $p^_{j}\u2062(t)$ where $j=1\u2062\u22ef\u2062n$, $n$ being the number of ants in the domain (see Figure 3(a)). We approximate the confining corral in the experiments using discrete boundary elements which the agents can pick and place in the interior of the domain (see Figure 3(b)). Initially, a random collection of agents engages in exploration within the corral in the absence of external gradients, consistent with observations (Trible et al., 2017) but their motion is rectified either by the presence of pheromone gradients or reinforcing antennating signals (H\u00f6lldobler et al., 1990; Reinhard and Srinivasan, 2009; Waters and Bassler, 2005; Gordon et al., 1993; Hillen and Painter, 2009; Toffin et al., 2009). Antennation involves information moving with the ants while pheromone gradients leads to information being laid down in the fixed environment. However, when ants move slowly relative to the time for the decay of the memory associated with antennation with other ants, the dynamics of both these processes is similar. Then the signals laid down (or transported) by ants increases locally at a rate proportional to their density (Gordon, 2021), and is subject to degradation and diffusion slowly. Accounting for these effects, we arrive at the following dynamical equations for the evolution of $r_{j}(t),\\theta_{j}(t),c(x,t)$ as:\n\n$$\nr\u02d9_{j}(t)=v_{o}p^(t)\u23dfSelf-propulsion,\n$$\n\n\n\n$$\n\\theta\u02d9_{j}=G\u2207_{\u22a5}c\u23dfAntennation feedback+\u03b7_{j}(t)\u23dfExploration,\n$$\n\n\n\n$$\n\u2202_{t}c=D_{c}\u2207^{2}c\u23dfDiffusion+\u00a0k_{}+\\sumj=1nH(r_{j}(t);a)\u23dfProduction\u2212k_{\u2212}c\u23dfDecay.\n$$\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of the agents in our simulation captured by their position $r\u2062(t)$ and orientation $p^\u2062(t)$ moving at speed vo. These agents generate an antennating field $c\u2062(x,t)$ at a constant rate $k_{}$ which decays at a rate $k_{\u2212}$. (b) Progression of cooperative excavation of the corral by 5 agents as they pick elements from the boundary and drop them in the interior (see sec. Appendix 2\u2014table 1 for parameters). Color bar shows the magnitude of antennating field and it varies between 0\u2013130. (c) Snapshot of the dynamics at the end of simulations corresponding to $T_{stop}=266$ for the number of agents $n=3,13,100$. We see that agents can go from excavating successfully to being trapped in their own communication field. (d) Box plot showing the time taken to excavate out of the corral $T/t_{s}$ (non-dimensionalized using $t_{s}$ - time taken for an agent to travel the entire domain) as a function of the number of agents $n$ in the corral when $T_{stop}=266$. For very small and very large number of agents the collective does not excavate out as the median $T/t_{s}=T_{stop}$ and they escape fastest for $n=8$.\n\nHere, the orientation of the agent in Equation 1 is given by $p^_{j}=(cos\u2061\\theta_{j},sin\u2061\\theta_{j})$ with $\\theta_{j}$ being the heading angle, vo the characteristic speed of the agent, $\u03b7_{j}$ is a Gaussian white noise with correlation function $\u27e8\u03b7_{j}^{k}\u2062(t)\u2062\u03b7_{j}^{l}\u2062(t^{\u2032})=2\u2062D_{a}\u2062\\delta_{k,l}\u2062\\delta\u2062(t-t^{\u2032})\u27e9$. The agents produce an antennating field at a rate $k_{}$ which decays at a rate $k_{-}$ centered around the agent, and captured by the function $\u210b(r_{j},a)={1$ if $|x\u2212r_{j}|^{2}\u2212a^{2}\\leq0$, and vanishes otherwise}. We assume that the gradient in the antennating field along the local normal, on the right hand side of Equation 2, determines the rotation of the agents with  $G$ being the rotational gain. In order for the agents to initiate the excavation process, they can pick the elements from the boundary and drop them in the interior of the corral only when the local concentration of the antennating field is larger than a critical threshold $c^{*}$, consistent with observations (Gordon, 2021; Gordon et al., 1993). Figure 3(b) shows snapshots (see Video 2 for a movie of the simulations) of the agent-based simulations following Equations 1\u20133 showing that the agents excavate successfully out of the corral when the gradient following behavior is strong (see Appendix 2 for details). Given this, we expect the time taken to escape from the corral is a function of the number of agents. In Figure 3(c and d) we see that as we vary the number of agents from $n=1-100$ , for very small or large number of agents in the corral, the agents are unable to escape over the time of simulations, $T_{stop}$ (ref. Figure 3(c and d)), seen as saturation in the excavation time $T/t_{s}$.\n\n![Video 2.](https://cdn.elifesciences.org/articles/79638/elife-79638-video2.mp4.jpg)\n\n**Video 2.:** Dynamics of excavation from agent-based simulation for different number of agents ($n=1,5,10,22,100$) in the corral for parameters in tab Appendix 2\u2014table 1 We see successful escape as well as trapped dynamics as highlighted in Figures 3 and 4.\n\nIn our agent-based simulations, we can encode the detailed behavior of individual ants and thus account for nuances and variations across the population. However, these simulations are computationally expensive as one needs to couple the dynamics of the antennating field (governed by a partial differential equation) with the motion of discrete agents while also evaluating the mutual interactions between all the agents in the corral. A complementary perspective that allows us to gain insights into the relevant parameters that govern the macroscopic dynamics of the collective is afforded by a theoretical framework that averages over the fast times and short length scale actions of the agents, considering spatial variations over scales much larger than a \u2018mean-free path\u2019 and \u2018collision time\u2019 associated with agent-agent interactions. Our effective theory attempts to couple three slowly-varying spatio-temporal fields: the ant density $\u03f1_{a}\u2062(x,t)$, a communication field $c\u2062(x,t)$ representing antennation and pheromone-based communication, and the corral density $\u03f1_{s}\u2062(x,t)$, shown schematically in Figure 4(a). In the continuum picture, the agents\u2019 random motion is captured using diffusion of the density while the rectified motion due to pheromone gradients is captured through chemotaxis, in addition to being self-propelled with a velocity $u_{a}$ that is related to the local environment. Finally, motivated by observations of antennation (Gordon, 1999; Pagliara et al., 2018), we assume that when the ants are stimulated by the presence of the corral past a threshold of antennation, $c^{*}$ they start excavating. The rate of excavation is assumed to be proportional to the difference in the pheromone concentration relative to the threshold value (see further details). Accounting for these effects, we arrive at the following dynamical equations for the evolution of $\u03f1_{a}\u2062(x,t)$ and $\u03f1_{s}\u2062(x,t)$ that are coupled to Equation 3 for the evolution of the communication field:\n\n$$\n\u2202_{t}\u03f1_{a}=\u2212\u2207\u22c5(u_{a}\u03f1_{a})\u23dfSelf-propulsiveadvection+\u00a0\u2207\u22c5(D_{a}\u2207\u03f1_{a}\u23dfDiffusive flux\u2212\u03c7\u03f1_{a}\u2207c\u23dfTactile feedback),\n$$\n\n\n\n$$\n\u2202_{t}\u03f1_{s}=\u2212k_{s}\u03f1_{s}{\u00a0\u0398(c\u2212c^{\u2217})\u23dfAntennatingfield threshold\u00a0}\\times{\u00a0\u0398(\u03f1_{a}\u2212\u03f1_{a}^{\u2217})\u23dfAnt densitythreshold\u00a0}.\n$$\n\nIn Equation 4, the ant advection velocity is assumed to have the form $u_{a}=v_{o}\u2062(1-\u03f1_{s}/\u03f1_{o})\u2062p^$ where vo is the characteristic speed of the agents, and $p^$ is a unit vector pointing along the radial ($\\theta$) direction, and the term $(1-\u03f1_{s}/\u03f1_{o})$ reflects the fact that excavating ants are slowed down by their labor; $D_{a}$ is the diffusivity of ants, $\u03c7$ is a chemotactic gain associated with the antennating-field-following behavior (related to the gain $G$ in the agent-based model). Here is the average density of the ants defined by where is the domain size. This is a natural scale of the ant density as Equation 4 is in conservative form and the net density of the ants is preserved over the evolution. In Equation 5, ks is the rate of excavation of the corral and $\u03f1_{a}^{*},c^{*}$ are respectively the threshold concentration of ant density and antennating field required to initiate excavation. We assume that the behavioral switches have simple switch-like responses modeled here via the Heaviside function $\u0398\u2062(x)$ (or its regularization via hyperbolic or Hill functions). It is useful to note that in the absence of excavation dynamics, our framework reduces to the well known Keller-Segel model for chemotaxis (see Hillen and Painter, 2009 for a recent review) (also detailed in Appendix 2). The coupling of ant behavior to the dynamics of excavation introduces the all-important notion of functional collective behavior linking active agents, communication channels (the antennating and pheromone fields) and a dynamic, erodible corral that characterizes progress towards task completion.\n\n### Model parametrization and description\n\nThe evolution of the ant density in Equation 4 is a combination of three dynamical processes: ant migration, diffusion and biased motion due to antennating. There are three time-scales associated with these three processes: a diffusion time-scale $\\tau_{a}\u223cl^{2}/D_{a}$, a collective migration time-scale $\\tau_{v}\u223cl/v_{o}$ and a time-scale associated with taxis  $\\tau_{x}\u223cl^{2}/\u03c7\u2062c_{o}$, where $l$ is a characteristic length-scale. This last scale can be either the width of the corral to be excavated $L$ (which is assumed to be of same order as width of initial ant density profile la), the length-scale associated with the balance between antennating field diffusion and decay, $l\u223c(D_{c}/k_{-})^{1/2}$ or the length-scale due to the advection of ant density and diffusion, $l\u223cD_{a}/v_{o}$. The antennating field in Equation 3 is governed by three processes, the generation of the antennating field, as well as its decay and diffusion. This leads to three more time-scales : an antennating field production time-scale $\\tau_{}\u223cc_{o}/(k_{}\u2062\u03f1_{o})$, a diffusion time-scale $\\tau_{c}\u223cl^{2}/D_{c}$, and a decay time-scale $\\tau_{-}\u223c1/k_{-}$. Lastly, the dynamics of excavation from the corral which follows Equation 5 is governed by a characteristic time-scale $\\tau_{s}\u223c1/k_{s}$. The list of all seven time-scales and length-scales associated with the different processes in the model are in Appendix 2\u2014table 2. In terms of the different time-scales (see Appendix 2 for a list along with their ranges), there are a total of six dimensionless parameters, of which two non-dimensional numbers are qualitatively important in capturing the etho-space of collective excavation: (i) the scaled cooperation parameter defined as $C=\\tau_{a}/\\tau_{x}=\u03c7\u2062c_{o}/D_{a}$ which determines the relative strength of antennation (gradient-following) to ant diffusion with co being the maximum amplitude of the antennating field, (ii) the scaled excavation rate, $E=\\tau_{v}/\\tau_{s}=k_{s}\u2062l/v_{o}$. Here, $l/v_{o}$ is the characteristic time-scale of ant motion, with $l\u223cmin\u2062[(D_{c}/k_{-})^{1/2},l_{a}]$, where la is the ant size (see Appendix 2 for details). The other four dimensionless parameters follow from the ratio of the time scale of ant motion and the diffusive time-scale as $V=\\tau_{x}/\\tau_{a}=v_{o}\u2062l/D_{a}$. The ratio of the rate of production of pheromone and the rate of diffusion or decay, leading to the parameters  $k^_{\\pm}=\\tau_{-}/\\tau_{}=k_{}\u2062\u03f1_{o}/(k_{-}\u2062c_{o})$ and $D_{c}=\\tau_{-}/\\tau_{c}=D_{c}/(l^{2}\u2062k_{-})$ so that the complete set of non-dimensional numbers that capture the dynamics of the ant collective is given by\n\n$$\nC=\\frac{\u03c7\u2062c_{o}}{D_{a}},E=\\frac{k_{s}\u2062l}{v_{o}},V=\\frac{v_{o}\u2062l}{D_{a}},k^_{\\pm}=\\frac{k_{}\u2062\u03f1_{o}}{k_{-}\u2062c_{o}},D_{c}=\\frac{D_{c}}{l^{2}\u2062k_{-}}.\n$$\n\nIn terms of these parameters, the dynamics of the ant density, the antennating field and the corral density given by Equations 3\u20135 can be written in non-dimensional form as\n\n$$\n\u2202_{t}\u03f1_{a}+\u2207\u22c5[(C\u2207c+V(1\u2212\u03f1_{s}))\u03f1_{a}]=\u2207^{2}\u03f1_{a},\n$$\n\n\n\n$$\n\u2202_{t}c=D_{c}\u2207^{2}c+k^_{\\pm}\u03f1_{a}\u2212c,\n$$\n\n\n\n$$\n\u2202_{t}\u03f1_{s}=\u2212\\frac{1}{4}E\u03f1_{s}(1+tanh\u2061[\\alpha_{c}(c\u2212c^{\u2217})])\\times(1+tanh\u2061[\\alpha_{c}(\u03f1_{a}\u2212\u03f1_{a}^{\u2217})]).\n$$\n\nTo complete the formulation of our model, we also need to specify some initial conditions and boundary conditions for the ant density, the pheromone density, and the location of the corral boundary which are detailed in the Appendix 2.\n\n## Results\n\n### Linear analysis\n\nBefore we consider the different limits of the phase-space defined by the non-dimensional numbers, we show that the excavation process is an instability triggered by the scaled excavation parameter $E$ in the system. Starting with the homogeneous state $\u03f1_{a}^{ss}=\u03f1_{a}^{\u2217},c^{ss}=c^{\u2217}=k_{+}\u03f1_{o}/k_{\u2212},\u03f1_{s}^{ss}=1$ which satisfies the Equations 6\u20138, and perturbing about this configuration using a plane wave ansatz (in 1D) we write: ${\u03f1_{a}(x,t)\u2212\u03f1_{a}^{ss},c(x,t)\u2212c^{ss},\u03f1_{s}^{ss}\u2212\u03f1_{s}(x,t)}={\u03f1~_{a}(k),c~(k),\u03f1~_{s}(k)}exp\u2061(ikx+\u03a9t)$ where we assume that $||\u03f1~_{a}||,||c~\u2062(k)||,||\u03f1~_{s}\u2062(k)||\u226a1$. Then the linearized counterparts of the Equations 6\u20138 for the ant density, antennating field and the corral density read as: $(\u03a9k^{2})\u03f1~_{a}+ikV\u03f1~_{s}\u03f1_{o}=k^{2}Cc~$ ,: $c~=k^_{\\pm}\u03f1~_{a}/(\u03a9+1+D_{c}k^{2})$,  $\u03a9\u2062\u03f1~_{s}=-E\u2062\u03f1~_{s}/2$. From this, we see that the growth rate $\u03a9=-E/2$, is independent of all other parameters in the system, i.e. excavating begins when $E>0$, once the ants have created a sufficiently large spatially diffuse antennating field. To understand the dynamics of excavation of the corral and the different phases of collective behavior, we now explore the role of the other non-dimensional numbers.\n\n### Limits of phase-space\n\nNext we discuss the different limits of the phase-space defined by the non-dimensional numbers ${C,E,V,k^_{\\pm},D_{c}}$ and the thresholds $\u03f1_{a}^{*},c^{*}$.\n\n#### Small thresholds, when \u03f1*\u226a\u03f1o and c*\u226aco\n\nWhen $\u03f1_{a}^{*}\u226a\u03f1_{o}$ and $c^{*}\u226ac_{o}$, we see the appearance of partial tunneling even with an initially inhomogeneous ant density $\u03f1_{a}$, independent of the pheromone dynamics. However, depending on on the value of the ratio $\\tau_{s}/\\tau_{v}$, the ants can either excavate through the corral completely ($\\tau_{v}/\\tau_{s}\u226a1$) or partially ($\\tau_{v}/\\tau_{s}\\leq1$) (ref Appendix 2\u2014table 3). If the ants are moving randomly, i.e. in the diffusion-dominated regime, they can still tunnel through the corral if $\\tau_{c}\u223c\\tau_{s}$ and partial tunnel through the corral if $\\tau_{c}\u2272\\tau_{s}$. In non-dimensional terms, this translates to the relations  $V\u223cO(1),C\u226a1$ or $V,C\u226a1$ and $E\u223cO(1)$ for the corral evolution. (Appendix 2\u2014figure 1 shows the results of simulations of both the tunneling and the partial tunneling behavioral phases).\n\n#### Cooperation dominated regimes when C\u226b1 and E, V\u21920\n\nFor efficient excavation, the ants need to work collectively by being localized and excavating fast. Spatial localization leads to cooperation via feedback from the antennating field (see Figure 4(b)) while for successful excavation, ants need to migrate towards the corral and tunnel through it, so that their effective speed vo needs to be non-zero. To quantify these behaviors, we first look at the dynamics of the ant density and the antennating field in the absence of migration i.e. $V\u21920$ or corral evolution. This leads to three regimes:\n\n$$\n\u2212D_{c}\u2207^{2}c=\u00a0k_{}\u03f1_{a},\n$$\n\n$$\n\u2202_{t}\u03f1_{a}+\u03c7\u2207\u22c5(\u03f1_{a}\u2207_{c})=D_{a}\u2207_{\u03f1_{a}}^{2}.\n$$\n\n$$\n\u2202_{t}\u03f1_{a}+\\frac{\u03c7k_{}}{k_{\u2212}}\u2207\u22c5(\u03f1_{a}\u2207\u03f1_{a})=\u00a0D_{a}\u2207^{2}\u03f1_{a}.\n$$\n\nTo understand the balance between diffusion of the antennating field and its decay,  we note the appearance of a natural length scale $l\u223c(D_{c}/k_{\u2212})^{1/2}$ which defines the zone of influence of the field and provides a measure of the non-dimensional tunneling rate indicated in Figure 8. All together, our analysis shows that the dynamics of the antennating field controls the aggregation or diffusion of ant density. But for efficient excavation, especially when the activation thresholds for excavation and localization $\u03f1_{a}^{*},c^{*}$ are large, we need both cooperation and finite velocity of migration. A catalog of the various regimes associated with partial tunneling, jamming, or diffusion as the dimensionless problem parameters are varied is listed in Appendix 2\u2014table 3.\n\nTo understand how these different limits translate to the dynamics of excavation from the corral induced by the ants, we now consider the case when $E, V\\neq0$, and solve the governing Equations 4; 5 in a one-dimensional setting (ref Appendix 2). We see that we can capture the two limits of the excavation behavior seen in experiments; for large excavation rates $E>1$ and cooperation parameter, $C>1$, we see coordinated excavation (shown in Figure 4(b) and Figure 5 in a two-dimensional setting), while decreasing the cooperation parameter leads to disorganized excavation (shown in Figure 4(c)) (see Appendix 2\u2014figure 1). While a direct comparison with the behavior of ants is not easy owing to the difficulty of inferring the dynamics of information transfer through antennation, the minimal assumptions we have made about the antennating field dynamics suffice to capture the macroscopic behavior of the collective. All together, our agent-based model and the phase-field model shows the emergence of cooperativity without the need for a plan, optimization principle, or internal representations of the world; instead environmentally mediated communication between agents (Mataric, 1993) coupled to local behavioral rules suffice to realize robust excavation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic of the model showing the interaction between the different spatio-temporal fields required to capture cooperative excavation of ants: ant density, $\u03f1_{a}\u2062(x,t)$; concentration of antennating field, $c\u2062(x,t)$ capturing inter-ant communication; density of corral, $\u03f1_{s}\u2062(x,t)$ representing the soft corral which the ants excavate. We capture the dynamics of excavation by ants close to the excavation site using the one-dimensional version of Equations 3\u20135. (b, c) Temporal progression of the corral density, antennating field and the ant density showing successful excavation for high cooperation captured using the non-dimensional number, C (representing non-dimensional strength of cooperation amongst ants) and faster excavation, captured using E. For reduced cooperation ants\u2019 diffusion dominates and only partial tunnels are formed (see Appendix 2 for details). $T$ here is the time for excavating out of the corral. The agent density is a gaussian function centered around $x=0.5$.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig5-v2.jpg)\n\n**Figure 5.:** Two dimensional simulations showing the evolution of the ant density $\u03f1_{a}$, antennating field $c$ and the corral density $\u03f1_{s}$ by evolving Equations 3\u20135, capturing successful tunneling for non-dimensional numbers $C=0.8,E=1.44$ and time of simulation $T=20.0$.The list of dimensional parameters used in the simulation are indicated in the Appendix 1\u2014figure 1(f). Radius of the outer boundary, $R_{o}$ is 5 non-dimensional units and the inner boundary is $R_{i}=2.5$ (see Appendix 2 for details). Color bar shows the magnitude of different variables and they vary between 0 and 1.\n\n### Robotic collective excavation\n\nAlthough our quantitative observations of the collective behavior of the ants is qualitatively captured by both our agent-based and continuum models, a natural question we can ask is whether the coarse-grained averaging over of the communication field affects the emergence of the task in experiments, especially since we are unable to measure or directly control the microscopic behaviors of the ants. To go beyond our ability to explain the observations of ant behavior using our theoretical framework, we asked if we might be able to recreate the behavior in artificially engineered mimics, and probe a larger range of the parameters and phase-space spanned by the scaled excavation and cooperation parameters $C,E$, than our experiments allowed us to - see Table 1 for a list of the relevant variables across ants, models and robots Figure 5.\n\n**Table 1.**\n List of relevant variables and basic behaviors, for ant experiments, theoretical models and robotic implementation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Ants</th>\n      <th>Theoretical model</th>\n      <th>Robots</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Discrete ants</td>\n      <td>Ant density,\u03f1a\u2062(x,t)</td>\n      <td>Discrete robots</td>\n    </tr>\n    <tr>\n      <td>Antennae communication</td>\n      <td>Communication field,c\u2062(x,t)</td>\n      <td>Photormone field</td>\n    </tr>\n    <tr>\n      <td>Agarose corral</td>\n      <td>Substrate density,\u03f1s\u2062(x,t)</td>\n      <td>Boundary elements</td>\n    </tr>\n    <tr>\n      <td>Motility</td>\n      <td>Self-propulsive advection,ua</td>\n      <td>Mobile agents</td>\n    </tr>\n    <tr>\n      <td>Exploratory behavior</td>\n      <td>Density diffusion,Da\u2062\u2207\u2061\u03f1a</td>\n      <td>Random walk</td>\n    </tr>\n    <tr>\n      <td>Tactile feedback</td>\n      <td>Antennating field taxis,\u03c7\u2062\u03f1a\u2062\u2207\u2061c</td>\n      <td>Phototaxis</td>\n    </tr>\n    <tr>\n      <td>Biting behavior</td>\n      <td>Excavation rate, ks</td>\n      <td>Collection and deposition</td>\n    </tr>\n    <tr>\n      <td>Neural control</td>\n      <td>Dynamics of ant density</td>\n      <td>Behavioral rules</td>\n    </tr>\n  </tbody>\n</table>\n\nFor this, we turn to a robotic platform to synthesize collective functional behaviors that arise from simple behavioral rules underlying individual programmable robots. Our custom designed robot ants (RAnts) are inspired by many earlier attempts to create artificial agents that are mobile and follow simple rules (Braitenberg, 1986; Brooks, 1991; Simon, 1996), can respond to virtual pheromone fields (Sugawara et al., 2004; Garnier et al., 2007) and are capable of robotic excavation (Aguilar et al., 2018). Our autonomous wheeled robots can exhibit emergent embodied behavior (Bricard et al., 2013), and are flexible enough to allow for a range of stigmergic interactions with the environment (Werfel et al., 2014; Petersen et al., 2019). This is made possible by having each RAnt equipped with an infrared distance sensor to detect obstacles and other RAnts, a retractable magnet that can pick up and drop wall elements with a ferromagnetic ring (shown in Figure 6(a)), and the ability to measure a virtual pheromone field generated by a light projected (from below) onto the surface of a transparent arena they operate in (see Figure 6(a, b), Theraulaz and Bonabeau, 1995; Sugawara et al., 2004; Garnier et al., 2007; Wang et al., 2021). The intensity of this \u2018photormone\u2019 field follows the antennating field Equation 2 and thus follows the dynamics of a field that is linked to the locations of the RAnts and diffuses and decays away from it. The photormone field is realized by a projected luminous field on the arena, which the robots can sense. This allows us to use a local form of Equations 4; 5 to define a robot\u2019s behavior in terms of an excavation rate E, a cooperation parameter C, and a threshold concentration for tunneling $c^{*}$. This is encoded in the behavior-based rules (see Figure 6(c) and Appendix 3 for more details), that induces the following behavior: $(i)$ follow gradient of projected photormone field; $(i\u2062i)$ avoid obstacles and other RAnts at higher photormone locations; $(i\u2062i\u2062i)$ pick up obstacles from high photormone locations and drop them at low concentration levels. Since the robots have no symbolic representation of the different signals they sense (e.g. they cannot distinguish another RAnt from a wall element, since both merely produce a bump in the sensor signal), the observed behavior emerges from this simple sequence by depending on the current state of the environment and the robot.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig6-v2.jpg)\n\n**Figure 6.:** (a) Robot Ant (RAnt) set-up. A mobile RAnt is placed in an arena 50 cm in diameter surrounded by three layers of cylindrical boundary elements totalling 200 elements. The outermost layer is prevented from being pushed out of the arena by a circular ring. A scalar concentration field (photormone field) is projected onto a plane whose intensity can be measured by a RAnt. The position of each RAnt is tracked using a webcam. Each RAnt can pick up and drop the discrete boundary elements using a retractable magnet. (b) Series of snapshots at different times of the excavation process for a cooperation parameter C=1. (c) Flowchart of the RAnt programming. A base locomotion speed vb is stored internally and the rate of change $\u03a9$ of the heading is a function of the cooperation parameter C, the photormone concentration $c$, and a stochastic process $W$ (Brownian motion). A photormone threshold $c^{*}$ determines whether an object is grasped (with probability E) after it is detected by the distance sensor. (d) Orientation distribution of the RAnt density $P_{\u03d5}^{r}(\u03d5,t)$ as a function of the azimuthal position $\u03d5$ is the orientation of the excavated tunnel. The density is plotted for different times. (e) Radial distribution of the RAnt density $P_{r}^{r}(r,t)$ within a sector of $\\pi/2$ centered around the position of the excavated tunnel as a function of distance from the center of the arena $r$. The density is plotted for the same times as in (d). (f) Confinement area $A\u2062(t)$ as a function of time, normalized by initial circular confinement with radius $R_{o}$ for different cooperation parameter C. (g) Normalized excavation time $T$ as a function of cooperation parameter C, averaged over 5 experiments per cooperation parameter. Every experiment was run until the first RAnt excavated out or the experiment duration exceeded 15 min.\n\nVarying the parameter $C\\in[0,1]$ allows us to tune the individual behavior from random motion ($C=0$) to tracking the photormone gradient ($C=1$) (see Video 3). Varying the non-dimensional excavation rate $E$ changes the frequency at which the robots execute pick-and-drop behavior with detected objects, and serves to mimic what arises in ants as a function of their morphology and caste (see Appendix 1 for more details). For specific values of these parameters, we followed the collective behavior of RAnts by averaging their position over several pick-and-drop timescales to obtain the RAnt density field $\u03f1_{r}\u2062(r,\u03d5,t)$, just as for ants. When all the RAnts are programmed to have a cooperation parameter $C=1$, RAnts initially explore the region without picking the boundary element until the photormone concentration $c\u223cc^{*}$, which happens once a particular location has enough visits by other RAnts. Just as for ants, we calculate the radially averaged RAnt density $P_{\u03d5}^{r}(\u03d5,t)=\\int\u03f1_{r}(r,\u03d5,t)dr$; Figure 6(d) shows how RAnt density localizes at a (random) value of the azimuthal angle. As excavation progresses, the RAnt density propagates radially outwards as a density front just as in ants, shown in Figure 6(e) in terms of the quantity $P_{r}^{r}(r,t)=\\int\u03f1_{r}(r,\u03d5,t)d\u03d5$ (also shown in Figure 7 for different trails when $C=1$). Concommitantly, as excavation progresses, the corral area increases (Toffin et al., 2009); interestingly the scaled corral area $A\u2062(t)/\\pi\u2062R_{0}^{2}$ is independent of the cooperation parameter $C$ as shown in Figure 6(f) (all RAnts were programmed to have the same excavation rate).\n\n![Video 3.](https://cdn.elifesciences.org/articles/79638/elife-79638-video3.mp4.jpg)\n\n**Video 3.:** $(i)$ Dynamics of excavation by RAnts as they cooperatively tunnel through the corral for $C=1$ and without cooperation, $C=0$; $(i\u2062i)$ Jammed phase: When the pick-and-place in RAnts is deactivated (corresponding to $E=0$), they get jammed for $C=1$; Diffused phase: When the pick-and-place in RAnts is deactivated and the RAnts do not follow the antennating field (corresponding to $C=0$), they diffuse around.3.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig7-v2.jpg)\n\n**Figure 7.:** Ultimate distribution of boundary elements and averaged RAnt density field (in units of #/cm2) over the full duration of experiments for different trials.\n\n![Video 4.](https://cdn.elifesciences.org/articles/79638/elife-79638-video4.mp4.jpg)\n\nHowever, cooperation does change the time for excavation; in Figure 6(g) we show the average excavation time (scaled by the characteristic time it takes for a rant to traverse the arena) and see that $T/t_{s}$ decreases with an increase in the cooperation parameter $C$. RAnts excavated out every time for $C>0.5$, but are unable to complete excavation for low values of the cooperation parameter (within a 15-min time window). Our results show that it is the localized collective excavation of RAnts mediated by photormone-induced cooperation that is responsible for efficient tunneling and excavation; for low values of $C$, tunneling is defocused and global, and thus not as effective (see Appendix 3\u2014figure 2). When $E\u21920$ (vanishing probability for a successful pick up) but $C$ is large(see Figure 8 and Appendix 2 for theoretical predictions), the RAnts get jammed because they follow the photormone field they generate but are unable to tunnel through the boundary constriction. On the other hand, when $E$ <1 and $C$<1 the agents do not cooperate and their diffusive behavior prevents successful tunneling. The range of strategies can be visualized in a two-dimensional phase space spanned by the variables $E$ and $C$ shown in Figure 8. Low values of $C$ and $E$ lead to diffusive (and non-functional) behavior, while high values of these variables lead to coordinated excavation, with the other two quadrants corresponding to jammed states (large $C$, small $E$) and partially tunneled states (large $E$, small $C$). Interestingly, these states are also observed as transients in our ant experiments, for example in the initially diffused state that is characterized by random motion inside the corral, when transiently jammed states and partial tunneling occur (see Videos 1 and 4).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/79638/elife-79638-fig8-v2.jpg)\n\n**Figure 8.:** In the robotic experiments we tune the Cooperation parameter C and the Excavation rate E while in the ant experiments we change the caste mixture. In the ant experiments we see the jammed and diffused phases transiently before the ants relax to cooperative excavation.\n\n## Discussion\n\nOur analysis of collective behavior in a functional task, excavation, uses quantitative observations of ants to build theoretical and computational models to explain them, and recreate these behaviors using a swarm robotic system (see Video 4 for a summary). Our simple dynamical models involving individual agents as well as an effective continuum theory provide a phase diagram that shows how the transition from an individually exploratory strategy to an exploitative cooperative solution is mediated by the local chemical and mechanical environment. Our study suggested algorithms that we then deployed in an engineered system of robots that individually follow a minimal set of behavioral rules that mould the environment and are modulated by it.; the malleable environment serves both as a spatial memory as well as a computational platform (using the spatio-temporal photormone field and the corral). Our simulations of agent-based models and robotic experiments further suggest that a coarse-grained framework linking behavior, communication and a modulated environment is relatively robust to failure of and stochasticity in the behavior of individual agents (i.e. variations in initial conditions and number of agents), in the communication channels and in the corral geometry, in contrast to engineering approaches that aim to control all agents and optimize costs.\n\nDifferent strategies such as collective excavation, jamming, and diffusion then arise as a function of the relative strength of the cooperation (representing the ability to follow gradients and detect threshold values) and excavation parameters (representing the ability to move material), as manifested in a phase diagram, and the emergence of cooperation arises due to the relatively slow decay of an environmental signal (the pheromone/antennating/photormone field), coupled to a threshold excavation rate. Since the ability to solve complex eco-physiological problems such as collective excavation is directly correlated with a selective (functional) advantage in an evolutionary setting, perhaps collective behavior must always be studied in a functional context.\n",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "f7188ae5-c132-4aca-9571-4d44566753ea",
+      "submission_id": "4076c5d0-966b-4d0c-acab-46d7bb1f5969",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Irene Giardina, https://ror.org/02be6w209 Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79638.sa0](https://doi.org/10.7554/eLife.79638.sa0)\n\nThis manuscript presents a quantitative study of how ants collaborate to excavate their escape from a confining barrier. The authors provide a compelling understanding of the main mechanisms driving the excavation process. They show how cooperative escape behavior arises from a non-trivial combination of movement, interaction with the substrate, and communication between individuals. The findings are supported by extensive evidence from experimental data, numerical simulations, theoretical modeling, and robotic implementation. This is an important paper that will be of interest to a broad group of researchers working on decision-making and collective behavior in living systems.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Irene Giardina, https://ror.org/02be6w209 Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79638.sa1](https://doi.org/10.7554/eLife.79638.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Dynamics of cooperative escape in ant and robot collectives\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nComments to the Authors:\n\nAfter consultation with the reviewers, we have decided that the paper cannot be published in the present form and that it requires major revisions.\n\nSince eLife has a 60 day limit for resubmissions, and more time might be required in this case, the manuscript will be formally considered as declined at this stage. However, if you think that you can address the comments reported below and restructure the paper as suggested, you are invited to resubmit. The revised manuscript would be formally treated as a new submission but please refer to this communication and manuscript number in the cover letter. Please also submit a detailed reply to reviewers.\n\nGeneral comments:\n\nBoth the referees and the reviewing editor found many of the results presented in the paper potentially relevant and interesting, but they also believe that the paper should be extensively rewritten and that additional work might be required to support the conclusions.\n\nThe manuscript as it stands presents an analysis of cooperative escape using an integrated approach with experiments, theoretical modelling and a robotic implementation. Even though each of these three aspects is per se potentially interesting, the general impression is that none of them is laid out in conclusive terms and that the paper overall lacks focus.\n\nThe experimental set-up is beautifully designed, in a simple and effective manner. However, the statistics of experiments could be improved, with more experiments, and \u2013 more importantly \u2013 with a larger number of individuals. Besides, the comparison with previous experimental results and the discussion of previous literature is rather scarce (see referee's 1 report).\n\nThe theoretical model, which is in our opinion the strongest part of the paper, is presented only in a qualitative way in the main text, with all quantitative results buried in the supplementary material. Besides, a quantitative comparison with experimental data is missing.\n\nThe robotic part \u2013 even though certainly intriguing \u2013 is in itself too limited to be considered the main result of the paper, and it does not provide \u2013 in the common opinion of both referees \u2013 a solid support to the theoretical findings. Numerical simulations would have been the best way to test the coarse-grained theory and explore its main ingredients beyond the regimes where a theoretical analysis is feasible.\n\nOur suggestion to the authors is to restructure the paper around the theoretical results on the coarse grained model, by shifting the quantitative analysis and its predictions in the main text, together with a quantitative phase diagram (see referee 2). The authors can then corroborate their theoretical predictions either by performing more experiments under varying conditions and larger sizes (referee1), or performing numerical agent-based simulations (referee 1 and 2), or \u2013 even better \u2013 both.\n\nSuch a revised manuscript would be certainly in line with the topics addressed in the Physics of Living systems section of eLife.\n\nAn alternative route is the one suggested by referee 1 in the report, and consists in restructuring the manuscript as a robotics paper, i.e. focusing on the robotic experiments. Even though this is certainly an interesting option, the resulting paper would however be outside the scope of eLife and should be submitted to a more appropriate journal.\n\nThe authors will find detailed comments in the reports attached below.Reviewer #1 (Recommendations for the authors):\n\nStrengths:\n\n\u2013 The manuscript is very well written and easy to follow, including the technical description of the model.\n\n\u2013 The experimental system is elegant and well-suited to the goal of this research.\n\n\u2013 The integration of experiment and theory is elegant, and the robotic platform opens up interesting, applied perspectives.\n\nWeaknesses:\n\n\u2013 The biological insight is limited. Excavation in ants has been fairly well studied since (at least) the 1980s (I was surprised to not see any references to classics in the field, e.g., by Tschinkel, Buhl, Rasse, Toffin, etc.) and a very similar behavioral mechanism to the one described in this study has been proposed already by Buhl in 2005 (also in different forms in 2006 and 2014). Very similar results were also found in termites (e.g., Green in 2017). In that regard, the present study does not really add anything new to our understanding of the individual and collective dynamics of excavation in social organisms, and in ants in particular.\n\n\u2013 The functional context of the study is forced, and possibly unnatural. According to the manuscript, the function of the observed collective behavior is to escape a trap. However, a simpler explanation more in line with existing knowledge of ant behavior is that the function of this behavior is to dig tunnels in the context of underground nest construction. The escaping \"function\" is, here, an artifact of the structure of the experimental setup. To interpret this collective behavior as an escape behavior, the study should provide evidence that, for instance, the ants do not start excavating unless they cannot find a way out in a reasonable amount of time. Or that they would not excavate through a disk of agarose if they can move around it. This is not to say that the experimental setup is flawed (it is rather elegant to study excavation in ants) but that pitching the observed behavior as an escape behavior is grossly overinterpreting (even anthropomorphizing) the reasons behind its evolution.\n\n\u2013 The model's predictions are fairly obvious. What the manuscript is showing is that without enough inter-attraction between the ants and a large enough excavation rate, the ants cannot focus enough activity on a single portion of the wall to get through it in a reasonable amount of time. I wish the model had been used to explore more complex questions (e.g., does the shape of the trap influence where the ants focus their digging activity? does its size/curvature impact the results?). In turn, these less obvious predictions could have been tested experimentally, either with the ants or with the robotic platform.\n\nThe robotic platform is not necessary (maybe even unproductive) for the purpose stated in the manuscript to test whether the microscopic dynamics matter. A simpler and much faster approach would have been to use an agent-based model for that purpose. This would have allowed for exploring a wider range of scenarios and parameters without losing the \"synthesis\" approach to animal behavior. This being said, I understand the applied appeal of the robotic implementation but then, it should have been presented as such. Robots can be useful tools to study behavior, especially when they can interact with the animals, but in this specific instance, it looks like a screwdriver was used to nail a nail. It works but there are more efficient options readily available.\n\n\u2013 The number of experimental replicates appears to be very low. However, this may be just an impression caused by confusion in the description of the methods. The manuscript reports 7 sets of experiments, 4 with 12 major ants and 3 with a mixture of castes. However, Figure 2 seems to instead suggest that only 4 trials were conducted with 12 major ants (and presumably 3 with the mixture). If that is the case, then this study is seriously underpowered, and more trials need to be performed to make the results more robust to luck. If that is not the case, then the manuscript should be clearer regarding the number of trials performed for each experimental condition.\n\n\u2013 First, I would recommend that the authors explore more extensively the literature on excavation behavior in ants and termites. The main biological findings are very similar to existing work done about 15 years ago and almost none of that literature is cited in the manuscript. They should then consider how to reframe their study to differentiate it from that existing knowledge.\n\n\u2013 The manuscript should refrain from making functional claims that are not tested (or maybe even testable).\n\n\u2013 The authors should consider extending the exploration of their model beyond making obvious predictions and they should also consider testing these predictions experimentally.\n\n\u2013 Finally, the authors should consider reorganizing their story. At the moment, the robotic portion is a bit of a lame duck: the goal it is given here raises questions about better, more efficient methods to reach it. I think that a more compelling story would be (1) to start with the applied motivation, (2) then present the ant study as a source of inspiration for the robotic design, (3) present the robotic design and experiments, (4) extend the results from the robotic experiments with the coarse-grained model, and (5) add additional experiments to show how the model can feedback onto the robotic design. This would remove the emphasis on the biological side which does need more work to set itself apart from previous work and is also (potentially) under-powered and put the spotlight on the applied side which is, in my opinion, much stronger and more interesting.\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript describes an interesting study of how ants collaborate to excavate their escape from a confining barrier. The experiments exhibit clear collaborative excavation, presumably induced by pheromone and antenna-driven communications between the ants. The ants aggregate along the barrier, and in these places they excavate a tunnel through the confining barrier.\n\nA continuum model is developed, which includes the main components. This continuum model allows the authors to treat the system in a similar way to models previously developed for chemotaxis of cells, where they move up a chemical-interaction gradient that they themselves create. A simple phase diagram is charted, in terms of the strength of the coupling between the ants, and the difficulty of removing the barrier. For low coupling, the ants tend to stay diffuse, and they escape only if the barrier is soft, so that individual ants can excavate. This is a very inefficient process. At high coupling, the ants aggregate and efficiently break free if the barrier is soft enough.\n\nExperiments using small robots explore how these components and a simple algorithm for ant behavior can capture the observations and explore regimes beyond those of the real ants. The robots interact with each other by contact, and use small magnets to grab and move aside pieces of the barrier. They communicate through a computer-generated light field that mimics the pheromone field of real ants.\n\nThe paper reports interesting work, and should be published.\n\n1) What is the advantage gained here by using the robot-ants as opposed to a simulation on a computer? especially as the robots are not self-contained and independent agents, and require the computer-controlled light field to mimic the pheromones.\n\n2) The continuum model has no fluctuations and noise in it. Would a simulation with self-propelled agents exhibit some behavior that is due to large fluctuations, especially for small number of ants, that is beyond the continuum model?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Dynamics of cooperative excavation in ant and robot collectives\" for further consideration by eLife. Your revised article has been evaluated by Aleksandra Walczak (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nEven though the paper has improved with respect to the original submission, there are still several concerns expressed by the referees. Reviewer 1 (who also reviewed the original submission) is not satisfied with the authors' efforts and believes their concerns have not been addressed adequately. We, therefore, invited a new referee who had access to all previous reports and communications to express a third opinion. In their report also the third referee (referee 2 of this round) agrees that some of the original criticisms have not been addressed in the revised version. However, they believe this can be reasonably fixed.\n\nThe authors are therefore asked to very carefully address the literature comment and the question/new perspective comment. They should reply/address every point of the referee's report and try to make it clear to both referees what is the biological relevance of the work, and that an effort has been made to elucidate this aspect. We believe that this will also strengthen the work within a more biological-oriented audience.\n\nReviewer #1 (Recommendations for the authors):\n\nReviewer's original comment:\n\nThe biological insight is limited. Excavation in ants has been fairly well studied since (at least) the 1980s (I was surprised to not see any references to classics in the field, e.g., by Tschinkel, Buhl, Rasse, Toffin, etc.) and a very similar behavioral mechanism to the one described in this study has been proposed already by Buhl in 2005 (also in different forms in 2006 and 2014). Very similar results were also found in termites (e.g., Green in 2017). In that regard, the present study does not really add anything new to our understanding of the individual and collective dynamics of excavation in social organisms, and in ants in particular.\n\nAuthors' response:\n\nWe thank the reviewer for pointing out some of these references, we have added them to the main manuscript. We would like to highlight that the following ideas are novel to our work compared to earlier research:\n\n\u2013 Driven by the experiments, we are able to construct a minimal model for collective excavation which points out interaction rules between the agent and the environment through the communication channel.\n\nReviewer's response:\n\nThis, in itself, is not new. As I mentioned above, other rather minimal models of excavation have been proposed and studied before.\n\nAuthors' response (continued):\n\n\u2013 The theoretical model extends the classical Patlak-Keller-Segel (PKS) model for bacterial aggregation to include environmental/architectural changes. This leads to the identification of new scales and non-dimensional numbers in the system relevant to our problem, and that does not seem to have been noticed before.\n\n\u2013 We present a unified phase-space of collective behaviors captured using the non-dimensional numbers which encapsulate and generalize the behaviors seen inside the ant nest.\n\nReviewer's response:\n\nYou may have indeed identified new and interesting states of that specific model, but since you never validated it against new experiments with ants, we are left with very little new biological insight. What the model is doing here is formalizing your hypothesis about the collective behavior of the ants (which is very similar to previous studies) and calculating its consequences under various conditions (i.e., making predictions). However, you never verify that these predictions hold true in the real world. For instance, you could have performed experiments with different global densities of ants to verify \u2013 at least qualitatively \u2013 your model prediction that more interaction leads to more collective tunneling activity. Similarly, you could have performed experiments with corral geometries that encourage or force either the accumulation of ants at particular locations or their even-spreading in the corral to demonstrate the same thing. Without validation experiments, the model \u2013 however thoroughly you have analyzed it \u2013 cannot be fully trusted to represent the behavior of the ants.\n\nReviewer's original comment:\n\nThe model's predictions are fairly obvious. What the manuscript is showing is that without enough inter-attraction between the ants and a large enough excavation rate, the ants cannot focus enough activity on a single portion of the wall to get through it in a reasonable amount of time. I wish the model had been used to explore more complex questions (e.g., does the shape of the trap influence where the ants focus their digging activity? does its size/curvature impact the results?). In turn, these less obvious predictions could have been tested experimentally, either with the ants or with the robotic platform.\n\nAuthors' response:\n\nWe are glad that the reviewer thinks our predictions are obvious after they have been pointed out and quantified.\n\nReviewer's response:\n\nThey are not obvious because you pointed them out. They are obvious because:\n\n1. The excavation rate is a proxy of the work performed by each individual ant and, therefore, of the total work produced by the group. If it goes down, so does the total amount of work and, therefore, the likelihood of a successful tunnel forming.\n\n2. The need for enough inter-attraction to generate a self-organized collective behavior is probably the most commonly made and verified prediction in the field (e.g., if ants are not sufficiently attracted toward trail pheromone, then they do not form trails or make collective decisions; if birds or fish are not sufficiently attracted towards each, then they do not form flocks or schools; etc).\n\nAuthors' response (continued):\n\nWe would like to again highlight that the contribution of our theoretical model is multi-fold: (i) the model extends the well-known PKS model to the case of ant excavation; (ii) it identifies a new non-dimensional parameter that captures how cooperation is mediated through antennation;\n\nReviewer's response:\n\nOn that point, why not measure the antennation rate in your experiments to validate that assumption?\n\nReviewer's original comment:\n\nThe robotic platform is not necessary (maybe even unproductive) for the purpose stated in the manuscript to test whether the microscopic dynamics matter. A simpler and much faster approach would have been to use an agent-based model for that purpose. This would have allowed for exploring a wider range of scenarios and parameters without losing the \"synthesis\" approach to animal behavior. This being said, I understand the applied appeal of the robotic implementation but then, it should have been presented as such. Robots can be useful tools to study behavior, especially when they can interact with animals, but in this specific instance, it looks like a screwdriver was used to nail a nail. It works but there are more efficient options readily available.\n\nAuthors' response:\n\nWe respectfully disagree. Building hardware and testing a system in the real world with all the \"unknown unknowns\" is the only real test \u2013 this we have done, in addition to simulations of agents. Furthermore, robots are not only useful because they can interact with animals; they also serve to characterize a set of sufficient rules that capture observed behavior in animals, and can gradually be pruned to understand a plausible set of necessary rules as well. We believe that our paper moves in this direction.\n\nReviewer's response:\n\nA \"real test\" of what exactly? If the answer is \"to test that the proposed behavioral algorithm produces the expected collective behavior given the robotic hardware available\", then you are correct, and this is often considered the hallmark of a good swarm robotic study. However, this corresponds to an engineering question and not to a biological one. Because eLife is a biology journal and your stated goal in the manuscript is to answer a biology question, then the robotic portion felt out of scope in this context and better suited for a swarm robotic journal where, I believe, it would garner a lot of interest.\n\nNow, if the answer is \"to test whether the microscopic dynamics of the proposed behavioral algorithm matters\" (which I believe was your original stated motivation), then it is not incorrect per se to use robots but it is very inefficient and the question could be investigated much more thoroughly with agent-based simulations, for instance, which are now included and make the robotic portion redundant.\n\nFinally, if the answer is \"to test that the proposed behavioral hypothesis is a valid representation of the observed biological collective behavior\", then the robotic approach as it is described in this manuscript is not appropriate in my opinion. Indeed, robots and ants perceive stimuli, process information, and act on their environment using vastly different tools and mechanisms. In this context, showing that a given behavioral algorithm produces in robots something that resembles the collective behavior of the ants is at best showing convergence between the abilities of the two systems but not an equivalence (it would be like saying that because I can swim, I am a good model of a fish). The only \"real test\" in this context is done through experimental modifications of the environment of the ants or of the ants themselves (there is a long history of using drugs or performing a surgical modification to study behavior, including in social insects) in order to (in)validate specific predictions of the model.\n\nReviewer's original comment:\n\nThe number of experimental replicates appears to be very low. However, this may be just an impression caused by confusion in the description of the methods. The manuscript reports 7 sets of experiments, 4 with 12 major ants and 3 with a mixture of castes. However, Figure 2 seems to instead suggest that only 4 trials were conducted with 12 major ants (and presumably 3 with the mixture). If that is the case, then this study is seriously underpowered, and more trials need to be performed to make the results more robust to luck. If that is not the case, then the manuscript should be clearer regarding the number of trials performed for each experimental condition.\n\nAuthors' response:\n\nIn our experiments, we performed 7 trials with 12 ants in each trial, each lasting several hours. Given that the primary motivation of the study is to understand the mechanism of cooperative excavation, we believe increasing the number would not contribute to furthering our understanding of the mechanism.\n\nReviewer's response:\n\nFirst, you still refer to them in the manuscript as \"sets of experiments\" and not individual trials. More importantly, a 7-trial experiment is well below the field's standards (e.g., in a similar experiment in Buhl et al., 2005, I count a total of 40 trials across 5 experimental conditions, each trial lasting 3 days as per the paper's methods). From what I can gather from your methods, the trials are not particularly difficult to set up, record, and automatically process, and you are not limited by the number of animals available for testing (according to AntWiki, Camponotus pennsylvanicus is abundant in the northeastern part of the US and forms large colonies). Even if one would only perform one trial per day (while, for instance, processing the data from the previous day), one would get 3 times more trials than what you have done in just under a month. Besides increasing the confidence in your observations, this could have helped you test different experimental conditions to validate the model as discussed above.\n\nReviewer's original comment:\n\nFirst, I would recommend that the authors explore more extensively the literature on excavation behavior in ants and termites. The main biological findings are very similar to existing work done about 15 years ago and almost none of that literature is cited in the manuscript. They should then consider how to reframe their study to differentiate it from that existing knowledge.\n\nAuthors' response:\n\nWe thank the referee for insisting on improving our knowledge of and representing the existing literature. We have updated our reference list in the article and have included the relevant literature. We have also explained how our work is novel in comparison to the past.\n\nReviewer's response:\n\nI'm afraid that I could not really find that discussion in the new manuscript. Where exactly do you compare your approach/model to that of previous works on the topic of excavation in social insects?\n\nReviewer's original comment:\n\nFinally, the authors should consider reorganizing their story. At the moment, the robotic portion is a bit of a lame duck: the goal it is given here raises questions about better, more efficient methods to reach it. I think that a more compelling story would be (1) to start with the applied motivation, (2) then present the ant study as a source of inspiration for the robotic design, (3) present the robotic design and experiments, (4) extend the results from the robotic experiments with the coarse-grained model, and (5) add additional experiments to show how the model can feedback onto the robotic design. This would remove the emphasis on the biological side which does need more work to set itself apart from previous work and is also (potentially) under-powered and put the spotlight on the applied side which is, in my opinion, much stronger and more interesting.\n\nAuthors' response:\n\nWe thank the reviewer for the suggested reorganization, but we demur. Our goal is not to have efficient robots, but to try and quantify previous observations, create a mathematical model, and finally use both to create a robotic system that has similar properties. However, we agree that some additional work and reorganization would help, and so we have also included a new section on agent-based simulations to the existing results.\n\nReviewer's response:\n\nSee my previous response above about the fact that the robotic component is either inappropriate or redundant if the primary purpose of the manuscript is to investigate a biological question.\n\nReviewer's original comment:\n\nL. 65-68: I am not certain how synthesizing behaviors in silico and in robots is complementary to Tin- bergen's approach. They are just a means to calculate the consequences of hypotheses made about the behavior of interest. They are modern tools to help address the four questions posed by Tinbergen, but they are not a missing part of his general approach.\n\nAuthors' response:\n\nWhat we mean is that a general approach needs to be complemented by specific means to quantify behavior and synthesize it. We think that function, mechanism, development, and evolution of behavior can be complemented by synthesis that can take the form of mathematical models and physical realizations in\n\nas much as they show what is minimally needed as a set of hypotheses framed appropriately.\n\nReviewer's response:\n\nI think I understand better your point but then, I do not see how this is different from a vast majority of the work done in the field of collective behavior since the early 90s (mathematical models and robotic implementations are common in many studies since that time, and even a bit earlier) and, therefore, why it is worth emphasizing as something novel. Also, what you call synthesis is, if I understand it correctly, nothing more than using computational tools (whether embedded or not) to calculate the consequences of hypotheses about the behavior of the animals (or humans, or robots). Tinbergen's four questions were never concerned with technical approaches; they were concerned with providing a general epistemological framework for generating comprehensive explanations of animal behavior, i.e., to generate complete theories of behavior, encompassing both proximate and ultimate causes, regardless of the tools necessary to test the hypotheses underlying these theories. Proposing to \"complement\" them with a technical approach is missing the larger point that Tinbergen's questioning was trying to make.\n\nReviewer's original comment:\n\nL. 118-119: Can you be more specific? Why exactly is that a signature of collective excavation? Even if a single ant was excavating that number would just go up as well, no?\n\nAuthors' response:\n\nAs we have explained in the Appendix, we do not observe excavation by a single ant.\n\nReviewer's response:\n\nThen just say that. \"Signature\" is vague in this context and suggests some form of general law at work.\n\nReviewer's original comment:\n\nFigure 1(d): This figure is hard to read. Why not use circular statistics to show, for instance, that the variance of the angular distribution decreases with time?\n\nAuthors' response:\n\nWe have updated SI Figure 2(f ) with the quantity suggested by the referee.\n\nReviewer's response:\n\nBut that doesn't help with making Figure 1(d) more readable.\n\nReviewer #2 (Recommendations for the authors):\n\nFirst, I went through the manuscript, and then through the referee reports.\n\nI found the problem \u2013 studying collective escalation in ants \u2013 of interest. And personally consider that combining experiments with ants, agent-based modeling, the coarse-grain model, and experiments with robots is a positive aspect of the study. However, the purpose of each of these different approaches to the problem is not always evident to me (e.g. agent-based and PDE models seem to provide very similar information).\n\nOne main criticism raised by the referees is that it was unclear what the objectives (or questions) of the study are. In my opinion, this has not been improved in the new version of the manuscript. Is this issue supposed to be fixed by 4 lines paragraph in red in the discussion? While I do agree that the authors identified a set of rules that reproduce the observations, it is unclear to me whether (mathematically) this is a minimal set of rules. Furthermore, I think these rules are similar to the ones used in other ant studies, including somewhere one of the authors contributed.\n\nThis is connected to another issue raised by the referees: too many relevant references were (and are) missing and there are too many self-references, whose relevance to this work is unclear (e.g. Giomi et al. Proceedings of the Royal Society A (2013)). As a consequence of this, it is difficult to identify the new aspects/contributions of the current study.\n\nIn my opinion, these issues can be easily improved.\n",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4769b101-caf9-41b7-98a2-d111686c34dc",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C1",
+      "claim": "Black carpenter ants (Camponotus pennsylvanicus) show a transition from individual exploratory excavation at random locations to spatially localized collective exploitative excavation and escape from a confining corral.",
+      "claim_type": "EXPLICIT",
+      "source": "These ants show a transition from individual exploratory excavation at random locations to spatially localized collective exploitative excavation and escape from the corral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations described in the manuscript, including tracking of ant positions and excavation dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "2f812ed0-de6f-4501-9c42-dc10fc235a9e",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C2",
+      "claim": "Agent-based simulations and a minimal continuum theory that coarse-grains over individual actions leads to the emergence of an effective phase space of behaviors characterized by excavation strength and cooperation intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Agent-based simulations and a minimal continuum theory that coarse-grains over individual actions and considers their integrated influence on the environment leads to the emergence of an effective phase space of behaviors, characterized in terms of excavation strength and cooperation intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational modeling and theoretical analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "66c64b81-b4d5-48f7-8420-f999864cb080",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C3",
+      "claim": "Custom-built robots (RAnts) that respond to stimuli can characterize the phase space of emergence and failure of cooperative excavation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the theory over the range of both observed and predicted behaviors, we use custom-built robots (RAnts) that respond to stimuli to characterize the phase space of emergence (and failure) of cooperative excavation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by robotic experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "c543b288-b282-493a-9d87-4e81444e3579",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C4",
+      "claim": "Tuning the amount of cooperation between RAnts allows variation of excavation efficiency and synthetic generation of the entire range of macroscopic phases predicted by theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuning the amount of cooperation between RAnts, allows us to vary the efficiency of excavation and synthetically generate the entire range of macroscopic phases predicted by our theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by robotic experiments where cooperation parameters were systematically varied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "427b67d6-6a35-4a32-a0f2-f392e006dc08",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C5",
+      "claim": "Cooperative completion of tasks can arise from simple rules involving the interaction of agents with a dynamically changing environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our approach shows how the cooperative completion of tasks can arise from simple rules that involve the interaction of agents with a dynamically changing environment that serves as both an enabler and a modulator of behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the integration of experimental, theoretical, and robotic results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "272d3803-6d58-44e9-8828-a0139cab5926",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C6",
+      "claim": "Collective behavior is seen in organisms across many length scales, from microscopic to macroscopic.",
+      "claim_type": "EXPLICIT",
+      "source": "Collective behavior is seen in organisms across many length scales, from the microscopic to the macroscopic (Nowak, 2006; Camazine et al., 2020; Gordon, 1999; Seeley, 2009; Couzin and Krause, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature on collective behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "cef89b2f-2569-49c4-917f-71024b2d98c6",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C7",
+      "claim": "Collective behaviors are often functional and serve as solutions to problems that cannot be solved efficiently at the individual level.",
+      "claim_type": "EXPLICIT",
+      "source": "These behaviours are often functional and serve as solutions to problems associated with tasks that cannot be solved efficiently at the individual level and range from brood care to foraging for food, protection from enemies and predation of prey, building complex architectures etc (Feinerman et al., 2018; Ocko and Mahadevan, 2014; H\u00f6lldobler and Wilson, 2009; Peleg et al., 2018; Rasse and Deneubourg, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to literature on functional collective behaviors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "7f87e51a-f21d-4724-9095-2ea12922374c",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C8",
+      "claim": "Collective behavior involves some form of communication and/or cooperation that takes different forms across scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Since collective behavior involves multiple individuals, this necessarily involves some form of communication and/or cooperation that takes different forms across scales - from quorum sensing in unicellular bacterium and slime molds, to the waggle dance in bees, and various forms of physical signal propagation in animal societies and human organizations (Rasse and Deneubourg, 2001; Alcock, 2001; Pennisi, 2009; Nowak, 2006; Elster, 1998; Couzin and Krause, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to literature on communication mechanisms in collective behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "8c233244-4a0d-4cc1-97dd-a2a6f8c5f71a",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C9",
+      "claim": "Social insects have a long history of documented cooperative behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of environmental signals is particularly clearly seen in examples of collective task execution in social insects that have a long history of documented cooperative behavior (H\u00f6lldobler et al., 1990; Gordon, 1999; Perna and Theraulaz, 2017; Mikheyev and Tschinkel, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to literature on social insect behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "19370feb-b648-4451-840c-f727425ff32a",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C10",
+      "claim": "Super-organisms made of individuals respond to local stimuli with stereotypical actions that leave their 'mark' on the environment, creating spatio-temporal memory known as stigmergy.",
+      "claim_type": "EXPLICIT",
+      "source": "Super-organisms made of individuals respond to local stimuli with stereotypical actions that leave their 'mark' on the environment, creating a spatio-temporal memory, commonly known as stigmergy (H\u00f6lldobler and Wilson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to literature on stigmergy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "e40e6ac5-9256-4b94-8ab2-ca8259d937b2",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C11",
+      "claim": "Stigmergy can include signaling via chemical, mechanical and hydrodynamic means.",
+      "claim_type": "EXPLICIT",
+      "source": "While stigmergy is usually associated with scalar pheromone fields, a broader definition might include the use of signaling via chemical, mechanical and hydrodynamic means (Buhl et al., 2005; Mikheyev and Tschinkel, 2004), as has been quantified in recent studies of bees (Ocko and Mahadevan, 2014; Peleg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to literature on different forms of stigmergy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "e93051ef-ffa0-4520-964d-419487f34429",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C12",
+      "claim": "Camponotus pennsylvanicus colonies consist of a queen and workers from three morphologically different castes: major, median, and minor.",
+      "claim_type": "EXPLICIT",
+      "source": "We start with ants drawn from a mature colony of C. Pennsylvanicus that consist of a queen, the sole egg layer, and workers from three morphologically different castes - major, median, and minor (Hansen and Klotz, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to literature on ant colony structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "85ada643-d9f5-492f-a563-92f6472ff611",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C13",
+      "claim": "During excavation, major ants equipped with large mandibles generally take the lead role, while median and minor ants transport debris out of the nest.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all ants perform different tasks like foraging, nest-keeping, and brood care to varied degrees, during excavation, major ants, equipped with their large mandibles, generally take the lead role, while median and minor ants transport the debris out of the nest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of ant behavior during excavation experiments.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "7c42622b-fb74-4bad-8e4b-3531da95691b",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C14",
+      "claim": "Ants communicate primarily through their antennae by sensing pheromones and touching other ants to identify their caste.",
+      "claim_type": "EXPLICIT",
+      "source": "Ants communicate primarily through their antennae by using them to sense pheromones released by other ants and by touching other ants to identify their caste.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of ant communication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "caf389b3-8832-4c56-8979-c054474dc432",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C15",
+      "claim": "Inter-organismal information exchange enables the collective solution of complex tasks in ants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is this inter-organismal information exchange that enables the collective solution of complex tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the role of communication in collective behavior.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "3d8be8ea-d7f5-4bb5-a665-9f2345bfa873",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C17",
+      "claim": "Visible light was eliminated and infrared light was used to monitor ants using video to mimic their natural environment in a nest.",
+      "claim_type": "EXPLICIT",
+      "source": "To mimic their natural environment in a nest, we eliminated visible light and used infrared light to monitor the ants using video (see Figure 1(a)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental conditions and references Figure 1(a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "08cfbef0-5782-4662-b708-2d6c44f060bc",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C18",
+      "claim": "Four experiments were performed with a collective of 12 major ants and 3 sets of experiments with a mixture of 4 major, 4 media and 4 minor ants.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed 4 experiments with a collective of 12 majors ants and 3 sets of experiments with a mixture of 4 major, 4 media and 4 minor ants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "6173da0a-485f-480f-974d-c7857863a663",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C19",
+      "claim": "Once O2 is introduced into the corral, ants regain activity but stay still for a while before moving.",
+      "claim_type": "EXPLICIT",
+      "source": "Once we introduce O2 into the corral, the ants regain activity but stay still for a while before moving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of ant behavior in experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "b80e1c64-1bf8-43fb-b43e-27602c704e57",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C20",
+      "claim": "Ants first exhibit wall-following until one or more initiates exploratory excavation at a random location along the corral.",
+      "claim_type": "EXPLICIT",
+      "source": "They first exhibit wall-following until one or more of the ants initiates an exploratory excavation at a random location along the corral (ref Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations of ant behavior and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "a78f504a-9eca-47bc-9bd7-0d1cc86a692c",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C21",
+      "claim": "After an initial exploratory phase, ants switch to an exploitative strategy in which they excavate a tunnel at a specific location and eventually break through the corral.",
+      "claim_type": "EXPLICIT",
+      "source": "After an initial exploratory phase the ants switch to an exploitative strategy in which they excavate a tunnel at a specific location and eventually break through the corral (see Video 1 and the sequence in Figure 1(b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations of ant behavior and references Video 1 and Figure 1(b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "398eeb79-b968-4126-af0d-20e339378c29",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C22",
+      "claim": "A single Major ant introduced into the arena is unable to excavate through the agar barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with the behavior of the 12 ant collective, when a single Major ant is introduced into the arena, the ant is unable to excavate through the agar barrier (see Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental observations and references Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "4f7ae688-98f8-4ae1-9bbd-d5f62131f087",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C23",
+      "claim": "The ant density becomes localized at a particular angle and location along the corral over time, leading to large-scale excavation and escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, we see that the ant density becomes localized at a particular angle and location along the corral; here large-scale excavation eventually leads to excavation and escape from the corral (see Figure 2 and Appendix 1\u2014figure 1 for the coarse-grained spatio-temporal evolution of the ant density, obtained by this averaging procedure).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of ant density data and references Figure 2 and Appendix 1\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "82d2f67e-87b1-460a-bec2-41d7a8affb89",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C24",
+      "claim": "Collective excavation leads to an increase of the volume of excavated material.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, collective excavation leads to an increase of the volume of excavated material, as shown in Figure 1(c) (see also Toffin et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 1(c) and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "31ea3c8d-2316-4972-915e-b5af2ee61a62",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C27",
+      "claim": "Multiple azimuthal Fourier modes compete with each other initially before an elliptic mode is amplified as excavation progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with localization and concomitant excavation (Figure 1(f) inset, Appendix 1\u2014figure 2(c)), we see that the multiple azimuthal Fourier modes compete with each other initially before an elliptic mode (corresponding to a strongly localized state) is amplified as excavation progresses (shown in Figure 1(f), Appendix 1\u2014figure 2(b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on Fourier analysis of boundary shape data shown in Figure 1(f) and Appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "35317270-538a-4676-beb8-20405423e803",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C28",
+      "claim": "An initially isotropic and homogeneous distribution of ants induces exploration of multiple potential tunneling paths that transitions into exploitative excavation of one specific location.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, our quantitative observations show that an initially isotropic and homogeneous distribution of ants in the corral induces exploration of multiple potential tunneling paths that transitions into the exploitative excavation of one specific location that eventually leads to an excavation route.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the experimental observations of ant behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "4328c39c-0eb2-4391-854e-69a0b6bb2ae6",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C30",
+      "claim": "The confining corral is approximated using discrete boundary elements which agents can pick and place in the interior of the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We approximate the confining corral in the experiments using discrete boundary elements which the agents can pick and place in the interior of the domain (see Figure 3(b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the model representation of the corral and references Figure 3(b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "28e58c40-1b23-4601-bfb8-dea2cb0a4197",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C31",
+      "claim": "Agent motion is rectified by the presence of pheromone gradients or reinforcing antennating signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, a random collection of agents engages in exploration within the corral in the absence of external gradients, consistent with observations (Trible et al., 2017) but their motion is rectified either by the presence of pheromone gradients or reinforcing antennating signals (H\u00f6lldobler et al., 1990; Reinhard and Srinivasan, 2009; Waters and Bassler, 2005; Gordon et al., 1993; Hillen and Painter, 2009; Toffin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to literature on ant behavior and chemotaxis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "85f0b65e-8a6b-468c-ba75-d9d2a567f747",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C32",
+      "claim": "When ants move slowly relative to the time for decay of antennation memory, the dynamics of antennation and pheromone gradients is similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Antennation involves information moving with the ants while pheromone gradients leads to information being laid down in the fixed environment. However, when ants move slowly relative to the time for the decay of the memory associated with antennation with other ants, the dynamics of both these processes is similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the equivalence of two communication mechanisms under certain conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "4593ab6b-9f67-4c38-ad48-d0c64ccfd33c",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C33",
+      "claim": "Signals laid down by ants increase locally at a rate proportional to their density and are subject to degradation and diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Then the signals laid down (or transported) by ants increases locally at a rate proportional to their density (Gordon, 2021), and is subject to degradation and diffusion slowly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation and describes model assumptions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "98c30779-6bc9-475a-a852-6dfec04b381a",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C35",
+      "claim": "Agent-based simulations show that agents excavate successfully out of the corral when gradient following behavior is strong.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3(b) shows snapshots (see Video 2 for a movie of the simulations) of the agent-based simulations following Equations 1\u20133 showing that the agents excavate successfully out of the corral when the gradient following behavior is strong (see Appendix 2 for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 3(b) and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "62183188-12e2-4dbf-9968-5073fbc0ae04",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C36",
+      "claim": "The time taken to escape from the corral is a function of the number of agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this, we expect the time taken to escape from the corral is a function of the number of agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "fa428d95-7d18-4323-aeac-551f8af6a2ff",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C41",
+      "claim": "The rate of excavation is assumed to be proportional to the difference in pheromone concentration relative to the threshold value.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of excavation is assumed to be proportional to the difference in the pheromone concentration relative to the threshold value (see further details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "b95a9ba7-0189-4461-af0f-5feb86e11501",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C42",
+      "claim": "In the absence of excavation dynamics, the framework reduces to the well-known Keller-Segel model for chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is useful to note that in the absence of excavation dynamics, our framework reduces to the well known Keller-Segel model for chemotaxis (see Hillen and Painter, 2009 for a recent review) (also detailed in Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to literature on chemotaxis models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "9032cfc4-6863-4cd4-93b8-8f2bdbc8e7c3",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C43",
+      "claim": "The coupling of ant behavior to excavation dynamics introduces the notion of functional collective behavior linking active agents, communication channels, and a dynamic erodible corral.",
+      "claim_type": "EXPLICIT",
+      "source": "The coupling of ant behavior to the dynamics of excavation introduces the all-important notion of functional collective behavior linking active agents, communication channels (the antennating and pheromone fields) and a dynamic, erodible corral that characterizes progress towards task completion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the significance of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "6ee64015-305b-4f59-afeb-93cdd1624c89",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C49",
+      "claim": "The minimal assumptions about antennating field dynamics suffice to capture the macroscopic behavior of the collective.",
+      "claim_type": "EXPLICIT",
+      "source": "While a direct comparison with the behavior of ants is not easy owing to the difficulty of inferring the dynamics of information transfer through antennation, the minimal assumptions we have made about the antennating field dynamics suffice to capture the macroscopic behavior of the collective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the adequacy of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "7a9fa85b-7db4-4e13-932d-c840da500ca6",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C50",
+      "claim": "The agent-based model and phase-field model show the emergence of cooperativity without the need for a plan, optimization principle, or internal representations of the world.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, our agent-based model and the phase-field model shows the emergence of cooperativity without the need for a plan, optimization principle, or internal representations of the world; instead environmentally mediated communication between agents (Mataric, 1993) coupled to local behavioral rules suffice to realize robust excavation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the implications of the modeling results, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "0341bad7-f08e-44dd-b98e-d8c0d7f02274",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C51",
+      "claim": "Environmentally mediated communication between agents coupled to local behavioral rules suffice to realize robust excavation.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, our agent-based model and the phase-field model shows the emergence of cooperativity without the need for a plan, optimization principle, or internal representations of the world; instead environmentally mediated communication between agents (Mataric, 1993) coupled to local behavioral rules suffice to realize robust excavation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the mechanisms underlying collective excavation, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "a402b9d8-d7bc-448b-a2da-39973dfdd13e",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C52",
+      "claim": "Custom designed robot ants (RAnts) are autonomous wheeled robots that can exhibit emergent embodied behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our custom designed robot ants (RAnts) are inspired by many earlier attempts to create artificial agents that are mobile and follow simple rules (Braitenberg, 1986; Brooks, 1991; Simon, 1996), can respond to virtual pheromone fields (Sugawara et al., 2004; Garnier et al., 2007) and are capable of robotic excavation (Aguilar et al., 2018). Our autonomous wheeled robots can exhibit emergent embodied behavior (Bricard et al., 2013), and are flexible enough to allow for a range of stigmergic interactions with the environment (Werfel et al., 2014; Petersen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the robotic platform and is supported by citations to related work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "5720986b-909a-496b-a274-180c0b6abc10",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C53",
+      "claim": "Each RAnt is equipped with an infrared distance sensor to detect obstacles and other RAnts, a retractable magnet to pick up and drop wall elements, and the ability to measure a virtual pheromone field.",
+      "claim_type": "EXPLICIT",
+      "source": "This is made possible by having each RAnt equipped with an infrared distance sensor to detect obstacles and other RAnts, a retractable magnet that can pick up and drop wall elements with a ferromagnetic ring (shown in Figure 6(a)), and the ability to measure a virtual pheromone field generated by a light projected (from below) onto the surface of a transparent arena they operate in (see Figure 6(a, b), Theraulaz and Bonabeau, 1995; Sugawara et al., 2004; Garnier et al., 2007; Wang et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the RAnt design and references Figure 6(a, b) and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "710cbc0f-d9f5-4e4d-ac66-0d9ca32fa838",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C54",
+      "claim": "The intensity of the 'photormone' field follows the antennating field equation and is linked to the locations of the RAnts and diffuses and decays away from it.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity of this 'photormone' field follows the antennating field Equation 2 and thus follows the dynamics of a field that is linked to the locations of the RAnts and diffuses and decays away from it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the implementation of the communication field in the robotic system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "084d75b9-ae0b-4234-b6a4-3468129ab82b",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C67",
+      "claim": "Jammed states and partial tunneling are observed as transients in ant experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these states are also observed as transients in our ant experiments, for example in the initially diffused state that is characterized by random motion inside the corral, when transiently jammed states and partial tunneling occur (see Videos 1 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations of ant behavior in Videos 1 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "f5daac04-3f70-4490-a47e-89b9c7ff6b43",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C68",
+      "claim": "Simple dynamical models provide a phase diagram showing how the transition from exploratory to exploitative cooperative solution is mediated by the local chemical and mechanical environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simple dynamical models involving individual agents as well as an effective continuum theory provide a phase diagram that shows how the transition from an individually exploratory strategy to an exploitative cooperative solution is mediated by the local chemical and mechanical environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the theoretical contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "4a645f68-3243-4289-a6df-862c02c6cac0",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C69",
+      "claim": "Algorithms deployed in robots that follow minimal behavioral rules can mould the environment and are modulated by it.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggested algorithms that we then deployed in an engineered system of robots that individually follow a minimal set of behavioral rules that mould the environment and are modulated by it.; the malleable environment serves both as a spatial memory as well as a computational platform (using the spatio-temporal photormone field and the corral).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the robotic implementation and its implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "9860b38d-495e-4963-93dc-ebfa7b7465ea",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C70",
+      "claim": "The malleable environment serves both as a spatial memory and a computational platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggested algorithms that we then deployed in an engineered system of robots that individually follow a minimal set of behavioral rules that mould the environment and are modulated by it.; the malleable environment serves both as a spatial memory as well as a computational platform (using the spatio-temporal photormone field and the corral).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the role of the environment in the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "52500298-8dba-4fad-8981-3d7043295949",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C71",
+      "claim": "The coarse-grained framework linking behavior, communication and modulated environment is relatively robust to failure and stochasticity in individual agents, communication channels, and corral geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations of agent-based models and robotic experiments further suggest that a coarse-grained framework linking behavior, communication and a modulated environment is relatively robust to failure of and stochasticity in the behavior of individual agents (i.e. variations in initial conditions and number of agents), in the communication channels and in the corral geometry, in contrast to engineering approaches that aim to control all agents and optimize costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from simulation and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "a0f9c387-fbdc-43bd-b0f5-a18850fc273a",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C72",
+      "claim": "Different strategies such as collective excavation, jamming, and diffusion arise as a function of the relative strength of cooperation and excavation parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Different strategies such as collective excavation, jamming, and diffusion then arise as a function of the relative strength of the cooperation (representing the ability to follow gradients and detect threshold values) and excavation parameters (representing the ability to move material), as manifested in a phase diagram, and the emergence of cooperation arises due to the relatively slow decay of an environmental signal (the pheromone/antennating/photormone field), coupled to a threshold excavation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main findings about the phase space of behaviors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "14bee49e-3fdc-4699-b732-698f7021c4b4",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C73",
+      "claim": "The emergence of cooperation arises due to the relatively slow decay of an environmental signal coupled to a threshold excavation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Different strategies such as collective excavation, jamming, and diffusion then arise as a function of the relative strength of the cooperation (representing the ability to follow gradients and detect threshold values) and excavation parameters (representing the ability to move material), as manifested in a phase diagram, and the emergence of cooperation arises due to the relatively slow decay of an environmental signal (the pheromone/antennating/photormone field), coupled to a threshold excavation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the mechanism underlying cooperative behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "ae950836-69cb-4f74-a64f-24154abd72be",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C74",
+      "claim": "The ability to solve complex eco-physiological problems such as collective excavation is directly correlated with a selective advantage in an evolutionary setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ability to solve complex eco-physiological problems such as collective excavation is directly correlated with a selective (functional) advantage in an evolutionary setting, perhaps collective behavior must always be studied in a functional context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about the evolutionary significance of collective behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "33e1095b-6b7d-46b4-89dc-3f0830c6b7a9",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "claim_id": "C75",
+      "claim": "Collective behavior must always be studied in a functional context.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ability to solve complex eco-physiological problems such as collective excavation is directly correlated with a selective (functional) advantage in an evolutionary setting, perhaps collective behavior must always be studied in a functional context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about the appropriate approach to studying collective behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "811dd908-8527-43b2-a592-97127256fe01",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Carpenter ants confined in an agarose corral exhibit a transition from exploratory behavior (wall-following and random excavation) to exploitative collective excavation at a localized site, eventually escaping the corral. Single ants cannot excavate through the barrier, demonstrating the necessity of collective action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19-C24, C27-C28 collectively describe experimental observations of ant behavior tracked via video and analyzed through density distributions and Fourier analysis (Figures 1-2). The transition from exploration to exploitation is well-documented through spatial localization of ant density, temporal progression of excavation, and the failure of single ants to excavate, providing converging evidence for collective behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "1f697d03-8e79-4241-82a2-aa44fb627ede",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Agent-based simulations and a continuum theoretical model coupling ant density, communication field, and substrate density successfully capture the emergence of cooperative excavation. The models identify a phase space characterized by cooperation intensity (C) and excavation strength (E), showing that environmentally mediated communication and local behavioral rules suffice for robust excavation without centralized planning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C30-C36, C41-C43, C49-C51, C68 describe computational models validated against experimental observations. The agent-based model (Equations 1-3) and continuum model (Equations 4-5) both reproduce key experimental features including localization and successful excavation (Figures 3-5). The reduction to Keller-Segel in limiting cases (C42) provides theoretical grounding, and the identification of dimensionless parameters C and E provides a predictive framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Custom-built robots (RAnts) equipped with sensors and programmed with simple behavioral rules successfully recreate cooperative excavation behaviors predicted by theory. By tuning the cooperation parameter C, RAnts can synthetically generate the full range of predicted behavioral phases, demonstrating robustness of the coarse-grained framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C52-C54, C69-C71 describe robotic experiments that validate theoretical predictions. The RAnts implement the theoretical model through photormone fields and behavioral rules (Figure 6), successfully excavating when C is high and failing when C is low. The systematic variation of C and measurement of excavation times (Figure 6g) provides quantitative validation of the phase diagram, demonstrating that the theoretical framework captures essential dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "cf551bf1-2ff9-4860-adaa-c592fc12ab2f",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The emergence of different collective strategies (cooperative excavation, jamming, diffusion, partial tunneling) arises as a function of cooperation parameter C and excavation rate E, forming a phase diagram. Cooperation emerges from slow decay of environmental signals coupled to threshold excavation rates, with jammed and partial tunneling states observed as transients in ant experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C67, C72-C73 synthesize findings across ants, models, and robots to identify a unified phase space (Figure 8). The phase diagram is supported by theoretical analysis, simulations showing different regimes (Appendix 2), and robotic experiments systematically varying C and E. The observation of predicted transient states in ant experiments (C67, Videos 1 and 4) provides additional validation of the phase space structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "4add4655-3c31-4cd2-bc1f-4fbb0d6b7d6d",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Collective behavior across biological scales is functional, involves communication and cooperation, and in social insects often relies on stigmergy\u2014environmental modification that serves as spatio-temporal memory through chemical, mechanical, or hydrodynamic signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 establish background knowledge about collective behavior and stigmergy, supported by extensive citations to established literature (Nowak 2006, Camazine et al. 2020, H\u00f6lldobler & Wilson 2009, etc.). These claims provide context for the study but represent prior knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "5190b611-9516-4d7e-bf4e-9a61b26ebc12",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experimental methods involved confining Camponotus pennsylvanicus workers (12 major ants or mixed castes) in agarose corrals, monitoring them with infrared light to mimic nest conditions. Major ants with large mandibles lead excavation while other castes transport debris, with communication occurring through antennae-mediated pheromone sensing and tactile contact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15, C17-C18 describe experimental design and ant biology. The methods are clearly documented (Figure 1a, Materials and Methods section) with appropriate sample sizes (4 experiments with 12 majors, 3 with mixed castes). The description of caste roles and communication mechanisms is supported by citations and consistent with established ant biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    },
+    {
+      "id": "49540403-19b5-42e2-bcff-5f07830cf6d6",
+      "content_id": "8c907d31-115b-4622-9b6d-01450d59e908",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The ability to solve complex eco-physiological problems like collective excavation correlates with selective advantage in evolution, suggesting collective behavior should be studied in functional contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 are explicitly speculative (\"perhaps collective behavior must always be studied...\") and represent discussion points rather than tested hypotheses. While the functional advantage of collective excavation is plausible, no evolutionary data or comparative analysis is provided to support the correlation with selective advantage (C74), and the prescriptive claim about how collective behavior \"must\" be studied (C75) is a methodological opinion rather than an empirical result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:20:20.594910Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4769b101-caf9-41b7-98a2-d111686c34dc",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "6173da0a-485f-480f-974d-c7857863a663",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "b80e1c64-1bf8-43fb-b43e-27602c704e57",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "a78f504a-9eca-47bc-9bd7-0d1cc86a692c",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "398eeb79-b968-4126-af0d-20e339378c29",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "4f7ae688-98f8-4ae1-9bbd-d5f62131f087",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "82d2f67e-87b1-460a-bec2-41d7a8affb89",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "31ea3c8d-2316-4972-915e-b5af2ee61a62",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "35317270-538a-4676-beb8-20405423e803",
+      "result_id": "811dd908-8527-43b2-a592-97127256fe01"
+    },
+    {
+      "claim_id": "2f812ed0-de6f-4501-9c42-dc10fc235a9e",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "4328c39c-0eb2-4391-854e-69a0b6bb2ae6",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "28e58c40-1b23-4601-bfb8-dea2cb0a4197",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "85f0b65e-8a6b-468c-ba75-d9d2a567f747",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "4593ab6b-9f67-4c38-ad48-d0c64ccfd33c",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "98c30779-6bc9-475a-a852-6dfec04b381a",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "62183188-12e2-4dbf-9968-5073fbc0ae04",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "fa428d95-7d18-4323-aeac-551f8af6a2ff",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "b95a9ba7-0189-4461-af0f-5feb86e11501",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "9032cfc4-6863-4cd4-93b8-8f2bdbc8e7c3",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "6ee64015-305b-4f59-afeb-93cdd1624c89",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "7a9fa85b-7db4-4e13-932d-c840da500ca6",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "0341bad7-f08e-44dd-b98e-d8c0d7f02274",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "f5daac04-3f70-4490-a47e-89b9c7ff6b43",
+      "result_id": "1f697d03-8e79-4241-82a2-aa44fb627ede"
+    },
+    {
+      "claim_id": "66c64b81-b4d5-48f7-8420-f999864cb080",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "c543b288-b282-493a-9d87-4e81444e3579",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "a402b9d8-d7bc-448b-a2da-39973dfdd13e",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "5720986b-909a-496b-a274-180c0b6abc10",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "710cbc0f-d9f5-4e4d-ac66-0d9ca32fa838",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "4a645f68-3243-4289-a6df-862c02c6cac0",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "9860b38d-495e-4963-93dc-ebfa7b7465ea",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "52500298-8dba-4fad-8981-3d7043295949",
+      "result_id": "2d539d9d-42e9-4dd2-9cb6-b8b25b20165b"
+    },
+    {
+      "claim_id": "427b67d6-6a35-4a32-a0f2-f392e006dc08",
+      "result_id": "cf551bf1-2ff9-4860-adaa-c592fc12ab2f"
+    },
+    {
+      "claim_id": "a0f9c387-fbdc-43bd-b0f5-a18850fc273a",
+      "result_id": "cf551bf1-2ff9-4860-adaa-c592fc12ab2f"
+    },
+    {
+      "claim_id": "14bee49e-3fdc-4699-b732-698f7021c4b4",
+      "result_id": "cf551bf1-2ff9-4860-adaa-c592fc12ab2f"
+    },
+    {
+      "claim_id": "084d75b9-ae0b-4234-b6a4-3468129ab82b",
+      "result_id": "cf551bf1-2ff9-4860-adaa-c592fc12ab2f"
+    },
+    {
+      "claim_id": "272d3803-6d58-44e9-8828-a0139cab5926",
+      "result_id": "4add4655-3c31-4cd2-bc1f-4fbb0d6b7d6d"
+    },
+    {
+      "claim_id": "cef89b2f-2569-49c4-917f-71024b2d98c6",
+      "result_id": "4add4655-3c31-4cd2-bc1f-4fbb0d6b7d6d"
+    },
+    {
+      "claim_id": "7f87e51a-f21d-4724-9095-2ea12922374c",
+      "result_id": "4add4655-3c31-4cd2-bc1f-4fbb0d6b7d6d"
+    },
+    {
+      "claim_id": "8c233244-4a0d-4cc1-97dd-a2a6f8c5f71a",
+      "result_id": "4add4655-3c31-4cd2-bc1f-4fbb0d6b7d6d"
+    },
+    {
+      "claim_id": "19370feb-b648-4451-840c-f727425ff32a",
+      "result_id": "4add4655-3c31-4cd2-bc1f-4fbb0d6b7d6d"
+    },
+    {
+      "claim_id": "e40e6ac5-9256-4b94-8ab2-ca8259d937b2",
+      "result_id": "4add4655-3c31-4cd2-bc1f-4fbb0d6b7d6d"
+    },
+    {
+      "claim_id": "e93051ef-ffa0-4520-964d-419487f34429",
+      "result_id": "5190b611-9516-4d7e-bf4e-9a61b26ebc12"
+    },
+    {
+      "claim_id": "85ada643-d9f5-492f-a563-92f6472ff611",
+      "result_id": "5190b611-9516-4d7e-bf4e-9a61b26ebc12"
+    },
+    {
+      "claim_id": "7c42622b-fb74-4bad-8e4b-3531da95691b",
+      "result_id": "5190b611-9516-4d7e-bf4e-9a61b26ebc12"
+    },
+    {
+      "claim_id": "caf389b3-8832-4c56-8979-c054474dc432",
+      "result_id": "5190b611-9516-4d7e-bf4e-9a61b26ebc12"
+    },
+    {
+      "claim_id": "3d8be8ea-d7f5-4bb5-a665-9f2345bfa873",
+      "result_id": "5190b611-9516-4d7e-bf4e-9a61b26ebc12"
+    },
+    {
+      "claim_id": "08cfbef0-5782-4662-b708-2d6c44f060bc",
+      "result_id": "5190b611-9516-4d7e-bf4e-9a61b26ebc12"
+    },
+    {
+      "claim_id": "ae950836-69cb-4f74-a64f-24154abd72be",
+      "result_id": "49540403-19b5-42e2-bcff-5f07830cf6d6"
+    },
+    {
+      "claim_id": "33e1095b-6b7d-46b4-89dc-3f0830c6b7a9",
+      "result_id": "49540403-19b5-42e2-bcff-5f07830cf6d6"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2105 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "TDLM is a domain-general method for finding neural sequences that respect a pre-specified transition graph.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM is a domain-general method for finding neural sequences that respect a pre-specified transition graph.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is directly made in the abstract describing the method's capabilities.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "TDLM combines nonlinear classification and linear temporal modelling to test for statistical regularities in sequences of task-related reactivations.",
+    "claim_type": "EXPLICIT",
+    "source": "It combines nonlinear classification and linear temporal modelling to test for statistical regularities in sequences of task-related reactivations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodological approach of TDLM as stated in the abstract.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "TDLM is developed on non-invasive neuroimaging data.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM is developed on the non-invasive neuroimaging data and is designed to take care of confounds and maximize sequence detection ability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract explicitly states the data type used for TDLM development.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "TDLM can be extended to capture rodent replay in electrophysiology, including in continuous spaces.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, as a linear framework, TDLM can be easily extended, without loss of generality, to capture rodent replay in electrophysiology, including in continuous spaces, as well as addressing second-order inference questions, for example, its temporal and spatial varying pattern.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract explicitly states TDLM's extensibility to rodent electrophysiology data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Resting, off-task, brain activities are structurally rich.",
+    "claim_type": "EXPLICIT",
+    "source": "At the same time, it is increasingly clear that resting, off-task, brain activities are structurally rich (Smith et al., 2009; Tavor et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Hippocampal place cells spontaneously recapitulate old, and explore new, trajectories through an environment during sleep and quiet wakefulness.",
+    "claim_type": "EXPLICIT",
+    "source": "One seminal example is 'hippocampal replay' (Wilson and McNaughton, 1994; Skaggs and McNaughton, 1996; Louie and Wilson, 2001; Lee and Wilson, 2002): during sleep, and quiet wakefulness, place cells in the hippocampus (that signal self-location during periods of activity) spontaneously recapitulate old, and explore new, trajectories through an environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to foundational replay studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Internally generated sequences are hypothesized to reflect a fundamental feature of neural computation across tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "These internally generated sequences are hypothesized to reflect a fundamental feature of neural computation across tasks (Foster, 2017; \u00d3lafsd\u00f3ttir et al., 2018; Pfeiffer, 2020; Carr et al., 2011; Lisman et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This hypothesis is supported by citations to multiple review and research papers.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Existing rodent replay methods are not domain general and are designed for specific needs such as particular task design, data modality, or research question.",
+    "claim_type": "EXPLICIT",
+    "source": "However, they are not domain general in that they are designed to be most suited for specific needs, such as particular task design, data modality, or research question (van der Meer et al., 2020; Tingley and Peyrache, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to methodological reviews.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Most rodent replay methods apply to invasive electrophysiology signals and aim to detect sequences in a linear track during spatial navigation task.",
+    "claim_type": "EXPLICIT",
+    "source": "Most commonly, these methods apply to invasive electrophysiology signals, aiming to detect sequences in a linear track during spatial navigation task (Tingley and Peyrache, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to a methodological review.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Existing rodent replay algorithms cannot be directly adapted for analysing human resting activity collected using non-invasive neuroimaging techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, they cannot be directly adapted for analysing human resting activity collected using non-invasive neuroimaging techniques.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of existing methods in the introduction.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "TDLM is inspired by existing replay detection methods, especially those analyzing populations of replay events.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM is inspired by existing replay detection methods (Skaggs and McNaughton, 1996; Davidson et al., 2009; Grosmark and Buzs\u00e1ki, 2016), especially those analysis of population of replay events (Grosmark and Buzs\u00e1ki, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior replay detection methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "TDLM is developed based on the general linear modelling (GLM) framework.",
+    "claim_type": "EXPLICIT",
+    "source": "It is developed based on the general linear modelling (GLM) framework and can therefore easily accommodate testing of 'second-order' statistical questions (van der Meer et al., 2020), such as whether there is more forward than reverse replay, or is replay strength changing over time, or differs between behavioural conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodological foundation of TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "TDLM can accommodate testing of second-order statistical questions such as whether there is more forward than reverse replay, or whether replay strength changes over time.",
+    "claim_type": "EXPLICIT",
+    "source": "It is developed based on the general linear modelling (GLM) framework and can therefore easily accommodate testing of 'second-order' statistical questions (van der Meer et al., 2020), such as whether there is more forward than reverse replay, or is replay strength changing over time, or differs between behavioural conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the capabilities of TDLM for second-order inference.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "In TDLM, second-order questions are treated naturally as linear contrasts of effects in a GLM.",
+    "claim_type": "EXPLICIT",
+    "source": "In TDLM, such questions are treated naturally as linear contrasts of effects in a GLM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how TDLM handles second-order statistical questions.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "TDLM is suited to measure the average amount of replay across many events (i.e. replay strength) in linear modelling.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we show TDLM is suited to measure the average amount of replay across many events (i.e. replay strength) in linear modelling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key characteristic of TDLM's measurement approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "TDLM is applicable to both rodent electrophysiology and human neuroimaging.",
+    "claim_type": "EXPLICIT",
+    "source": "This makes it applicable to both rodent electrophysiology and human neuroimaging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the cross-species applicability of TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "TDLM has been used to measure average sequenceness (propensity for replay) in spontaneous neural representations in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying TDLM on non-invasive neuroimaging data in humans, we, and others, have shown it is possible to measure the average sequenceness (propensity for replay) in spontaneous neural representations (Wimmer et al., 2020; Nour et al., 2021; Liu et al., 2019; Liu et al., 2021a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple studies using TDLM.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Results from TDLM in humans resemble key characteristics found in rodent hippocampal replay.",
+    "claim_type": "EXPLICIT",
+    "source": "The results resemble key characteristics found in rodent hippocampal replay and inform key computational principles of human cognition (Liu et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to a study comparing human and rodent replay.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The starting point of TDLM is a set of n time series, each corresponding to a decoded neural representation of a task variable of interest.",
+    "claim_type": "EXPLICIT",
+    "source": "The starting point of TDLM is a set of n time series, each corresponding to a decoded neural representation of a task variable of interest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the input data structure for TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The state space X has dimension of time by states.",
+    "claim_type": "EXPLICIT",
+    "source": "This is what we call the state space, X, with dimension of time by states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines the dimensionality of the state space in TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The aim of TDLM is to identify task-related regularities in sequences of neural representations.",
+    "claim_type": "EXPLICIT",
+    "source": "The aim of TDLM is to identify task-related regularities in sequences of these representations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the primary objective of TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "TDLM uses multiple linear regression to include all states in the same regression model.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, TDLM chooses to include all states in the same regression model for important reasons, detailed in section 'Moving to multiple linear regression'",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key methodological choice in TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The first-level sequence analysis assesses evidence for all possible state-to-state transitions.",
+    "claim_type": "EXPLICIT",
+    "source": "The first-level sequence analysis assesses evidence for all possible state-to-state transitions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what the first-level analysis in TDLM does.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The second-level sequence analysis tests for the strength of a particular hypothesized sequence, specified as a transition matrix T.",
+    "claim_type": "EXPLICIT",
+    "source": "The next step in TDLM is to test for the strength of a particular hypothesized sequence, specified as a transition matrix,T.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what the second-level analysis in TDLM does.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "TDLM relies on a non-parametric permutation-based method for testing statistical significance.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, to test for statistical significance, TDLM relies on a non-parametric permutation-based method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the statistical testing approach used in TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The null distribution in TDLM is constructed by randomly shuffling the identities of the n states many times and re-calculating the second-level analysis for each shuffle.",
+    "claim_type": "EXPLICIT",
+    "source": "The null distribution is constructed by randomly shuffling the identities of the n states many times and re-calculating the second-level analysis for each shuffle (Figure 1g).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes how the null distribution is constructed for permutation testing.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "To correct for multiple comparisons over all tested lags, the maximum Z_F across all tested lags can be used as the test statistic.",
+    "claim_type": "EXPLICIT",
+    "source": "This can be achieved by using the maximum ZF across all tested lags as the test statistic (see details in section 'Correcting for multiple comparisons').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the multiple comparison correction approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The simplest case is to define a state in terms of a neural representation of sensory stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "The simplest case, perhaps, is to define a state in terms of a neural representation of sensory stimuli, for example, face, house.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes one way to define states in TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "A logistic regression model is used for decoding in TDLM.",
+    "claim_type": "EXPLICIT",
+    "source": "This could be any of the multitude of available decoding models. For simplicity, we used a logistic regression model throughout.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the specific decoding model used in the presented work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "In MEG/EEG, whole-brain sensor activity at a single time point (i.e. spatial feature) is chosen as the training data fed into classifier training to avoid potential selection bias.",
+    "claim_type": "EXPLICIT",
+    "source": "To avoid a potential selection bias (given the sequence is expressed in time), we choose whole-brain sensor activity at a single time point (i.e. spatial feature) as the training data fed into classifier training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological choice to avoid bias in MEG/EEG analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The peak decoding accuracy indexes the time point where neural activity can be most truthfully read out.",
+    "claim_type": "EXPLICIT",
+    "source": "Ideally, we would like to select a time point where the neural activity can be most truthfully read out. This can be indexed as the time point that gives the peak decoding accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the rationale for selecting the training time point.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "A leave-one-out cross-validation scheme is used to determine the ability of classifiers to generalize to unseen data of the same stimulus type.",
+    "claim_type": "EXPLICIT",
+    "source": "If the state is defined by the sensory features of stimuli, we can use a classical leave-one-out cross-validation scheme to determine the ability of classifiers to generalize to unseen data of the same stimulus type (decoding accuracy) at each time point (see Appendix 2 for its algorithm box).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the cross-validation approach for sensory stimuli.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Abstract representations can be associated with the presented image or pertain to the sequence or graph itself.",
+    "claim_type": "EXPLICIT",
+    "source": "Such abstractions might be associated with the presented image (e.g. mammal vs. fish), in which case analysis can proceed as above by swapping categories for images (Wimmer et al., 2020). A more subtle example, however, is where the abstraction pertains to the sequence or graph itself.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes different types of abstract representations that can be analyzed with TDLM.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Grid cells encode spatial coordinates in a fashion that abstracts over the sensory particularities of any one environment.",
+    "claim_type": "EXPLICIT",
+    "source": "In space, for example, grid cells encode spatial coordinates in a fashion that abstracts over the sensory particularities of any one environment, and therefore can be reused across environments (Fyhn et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to grid cell research.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "In human studies, similar representations have been observed for the location in a sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "In human studies, similar representations have been observed for the location in a sequence (Liu et al., 2019; Dehaene et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to human sequence representation studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Abstract representations also replay.",
+    "claim_type": "EXPLICIT",
+    "source": "These representations also replay (Liu et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to a replay study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Care is required to ensure that decoders are sensitive to the abstract code rather than the sensory representations.",
+    "claim_type": "EXPLICIT",
+    "source": "Care is required to ensure that the decoders are sensitive to the abstract code rather than the sensory representations (see Appendix 2 for algorithm box of selecting time point for training abstract code).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological consideration for decoding abstract representations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Useful strategies for decoding abstract representations include training classifiers to generalize across stimulus sets and ensuring the classifiers are orthogonal to sensory representations.",
+    "claim_type": "EXPLICIT",
+    "source": "Useful strategies include training classifiers to generalize across stimulus sets and ensuring the classifiers are orthogonal to sensory representations (Figure 2\u2014figure supplement 1; details in Liu et al., 2019).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes strategies for decoding abstract representations, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Unmodelled temporal autocorrelation can inflate statistical scores in standard linear methods.",
+    "claim_type": "EXPLICIT",
+    "source": "In standard linear methods, unmodelled temporal autocorrelation can inflate statistical scores.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a general problem in linear modeling.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Autocorrelation is a particular burden for analysis of sequences, where it interacts with correlations between the decoded neural variables.",
+    "claim_type": "EXPLICIT",
+    "source": "However, autocorrelation is a particular burden for analysis of sequences, where it interacts with correlations between the decoded neural variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a specific challenge for sequence analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Correlations between states are commonplace.",
+    "claim_type": "EXPLICIT",
+    "source": "Correlations between states are commonplace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a general observation about decoded states.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "If states are decoded using an n-way classifier, then the n states will be anti-correlated by construction.",
+    "claim_type": "EXPLICIT",
+    "source": "If these states are decoded using an n-way classifier (forcing exactly one state to be decoded at each moment), then the n states will be anti-correlated by construction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a consequence of using n-way classifiers.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "If states are each classified against a null state corresponding to the absence of stimuli, then the n states will typically be positively correlated with one another.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, if states are each classified against a null state corresponding to the absence of stimuli, then the n states will typically be positively correlated with one another.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a consequence of using binary classifiers against null.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "A downside of computing D = Z_F - Z_B is it prevents measuring forward and backward sequences independently.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a downside is it prevents us from measuring forward and backward sequences independently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the difference measure approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Multiple regression accounts for the correlation structure of the data and allows correct inference to be made.",
+    "claim_type": "EXPLICIT",
+    "source": "The multiple regression accounts for the correlation structure of the data and allows correct inference to be made.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the benefit of multiple regression in TDLM, demonstrated in Figure 3a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Unlike the simple subtraction method, multiple regression permits separate inference on forward and backward sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike the simple subtraction method proposed above (Figure 3a, left panel), the multiple regression permits separate inference on forward and backward sequences.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes an advantage of multiple regression over subtraction, shown in Figure 3a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Background alpha oscillations during rest periods can reduce sensitivity of sequence detection.",
+    "claim_type": "EXPLICIT",
+    "source": "Background alpha oscillations, as seen during rest periods, can reduce sensitivity of sequence detection (left panel), and controlling alpha in TDLM helps recover the true signal (right panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 3b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Controlling for alpha oscillations in TDLM helps recover the true signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Background alpha oscillations, as seen during rest periods, can reduce sensitivity of sequence detection (left panel), and controlling alpha in TDLM helps recover the true signal (right panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 3b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The logic of controlling for oscillations fails when states experience oscillations at different phases.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this logic fails when states experience oscillations at different phases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the basic approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Applying the method of including phase-shifted versions of X(t) to real MEG data during rest shows much diminished 10 Hz oscillation in sequence detection.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying this method to the real MEG data during rest, we see much diminished 10 Hz oscillation in sequence detection during rest (Liu et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to a study applying this method.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Positive or negative correlations between states reduce the sensitivity of sequence detection because it is difficult to distinguish between states within the sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "Unfortunately, positive or negative correlations between states reduce the sensitivity of sequence detection because it is difficult to distinguish between states within the sequence: collinearity impairs estimation of \u03b2 in Equation 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how spatial correlations affect sequence detection.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The ability to detect real sequences goes down as the absolute value of spatial correlation goes up.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 3c, we show in simulation that the ability to detect real sequences goes down as the absolute value of a spatial correlation goes up.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in simulation shown in Figure 3c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The state decoding models should be as independent as possible.",
+    "claim_type": "EXPLICIT",
+    "source": "Ideally, the state decoding models should be as independent as possible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an ideal condition for TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Training models to discriminate one state against a mixture of other states and null data can reduce spatial correlations between states.",
+    "claim_type": "EXPLICIT",
+    "source": "We have suggested the approach of training models to discriminate one state against a mixture of other states and null data (Liu et al., 2019; Kurth-Nelson et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This approach is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Adding more null data causes the states to be positively correlated with each other, while less null data leads to negative correlation.",
+    "claim_type": "EXPLICIT",
+    "source": "Adding more null data causes the states to be positively correlated with each other, while less null data leads to negative correlation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the effect of null data ratio on state correlations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Adjusting the mixture ratio of null data to bring the correlation between states as close to zero as possible benefits sequence detection.",
+    "claim_type": "EXPLICIT",
+    "source": "We adjust the ratio to bring the correlation between states as close to zero as possible. In Figure 3d, we show in simulation the ensuing benefit for sequence detection.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in simulation shown in Figure 3d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "L1 regularization can increase out-of-sample generalization and reduce spatial correlation between classifier weights.",
+    "claim_type": "EXPLICIT",
+    "source": "Regularizing the classifier (e.g. with an L1 norm) is a common technique for increasing out-of-sample generalization (to avoid overfitting). Here, it has the added potential benefit of reducing spatial correlation between classifier weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the benefits of L1 regularization for TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "L1 weight regularization is able to detect sequences more robustly than L2 regularization.",
+    "claim_type": "EXPLICIT",
+    "source": "We also find that L1 weight regularization is able to detect sequences more robustly than L2 regularization, while L2 performs no better than an unregularized model (Figure 3e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in simulation shown in Figure 3e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "L1 models have much lower spatial correlation compared to L2 models.",
+    "claim_type": "EXPLICIT",
+    "source": "The L1 models also have much lower spatial correlation, consistent with L1 achieving better sequence detection by reducing the covariances between classifiers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 3e and explains why L1 performs better.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "L1-induced sparsity encodes weaker assumptions about background noise distributions into the classifiers as compared to L2 regularization.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to minimizing spatial correlations, as discussed above, it can also be shown that L1-induced sparsity encodes weaker assumptions about background noise distributions into the classifiers as compared to L2 regularization (Higgins, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to a technical report.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "All tests described evaluate the consistency of sequences across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "All the tests described in this section evaluate the consistency of sequences across subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the level of inference for statistical tests.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Even in the absence of any real sequences of task-related representations, spontaneous neural activity is not random but follows repeating dynamical motifs.",
+    "claim_type": "EXPLICIT",
+    "source": "This is important because even in the absence of any real sequences of task-related representations spontaneous neural activity is not random but follows repeating dynamical motifs (Vidaurre et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to a study on spontaneous neural dynamics.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Solving the problem of non-random spontaneous activity requires a randomized mapping between the assignment of physical stimuli to task states, which can be done across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "Solving this problem requires a randomized mapping between the assignment of physical stimuli to task states. This can be done across subjects, permitting valid inference at the group level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the rationale for cross-subject permutation testing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The empirical false positives are well predicted by theory when comparing sequenceness to zero in simulation with no real sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "We compare false-positive rates predicted by the statistical tests with false-positive rates measured in simulation (Figure 4a). We see the empirical false positives are well predicted by theory.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in simulation shown in Figure 4a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Predicted and measured false-positive rates match well in real MEG data where there are no sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "To obtain many examples, we randomly permute the eight different stimuli 10,000 times and then compare sequenceness (at 40 ms time lag) to zero using either a signed-rank test or one-sample t test across subjects. Again, predicted and measured false-positive rates match well (Figure 4b, left panel). This holds true across all computed time lags (Figure 4b, right panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in real MEG data shown in Figure 4b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Permuting time uniformly will typically lead to a very high incidence of false positives as time is not exchangeable under the null hypothesis.",
+    "claim_type": "EXPLICIT",
+    "source": "However, permuting time uniformly will typically lead to a very high incidence of false positives as time is not exchangeable under the null hypothesis (Figure 4c, blue colour).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Permuting time destroys the temporal smoothness of neural data, creating an artificially narrow null distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Permuting time destroys the temporal smoothness of neural data, creating an artificially narrow null distribution (Liu et al., 2019; Kurth-Nelson et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why time permutation leads to false positives, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "State permutation only assumes that state identities are exchangeable under the null hypothesis and represents a safer statistical test that is well within 5% false-positive rate.",
+    "claim_type": "EXPLICIT",
+    "source": "State permutation, on the other hand, only assumes that state identities are exchangeable under the null hypothesis, while preserving the temporal dynamics of the neural data represents a safer statistical test that is well within 5% false-positive rate (Figure 4c, purple colour).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "To control for the family-wise error rate when testing multiple lags, the null distribution is formed by taking the peak of sequenceness across all computed time lags of each permutation.",
+    "claim_type": "EXPLICIT",
+    "source": "The null distribution is therefore formed by first taking the peak of sequenceness across all computed time lags of each permutation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the multiple comparison correction method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The max-permutation method for family-wise error correction is the same approach as used for permutation tests in fMRI data.",
+    "claim_type": "EXPLICIT",
+    "source": "This is the same approach as used for family-wise error correction for permutations tests in fMRI data (Nichols, 2012), and in our case it is shown to behave well statistically (Figure 4d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by citation and demonstrated in Figure 4d.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Different choices of which permutations to include in the null distribution can be made depending on the experimental design.",
+    "claim_type": "EXPLICIT",
+    "source": "We can choose which permutations to include in the null distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes flexibility in constructing the null distribution.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Permuting all states has the advantage of many more possible permutations and may make more precise inferential statements in the tail.",
+    "claim_type": "EXPLICIT",
+    "source": "The first case has the advantage of many more possible permutations, and therefore may make more precise inferential statements in the tail.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of permuting all states.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Permuting only between states in different sequences may be more sensitive in the presence of a signal as the null distribution is guaranteed not to include permutations which share any transitions with the test data.",
+    "claim_type": "EXPLICIT",
+    "source": "The second case may be more sensitive in the presence of a signal as the null distribution is guaranteed not to include permutations which share any transitions with the test data (Figure 4e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes an advantage of restricted permutation, shown in Figure 4e.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Low-level factors like visual similarity cannot cause systematic bias in state relationships because states are counterbalanced across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "This cannot be caused by low-level factors (e.g. visual similarity) because states are counterbalanced across subjects, so any such bias would cancel at the population level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why low-level factors don't break exchangeability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Task training might induce systematic bias in state relationships.",
+    "claim_type": "EXPLICIT",
+    "source": "However, such a bias might be induced by task training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies a potential source of bias.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "After extensive training, behavioural pairing of stimuli can result in increased neuronal similarity.",
+    "claim_type": "EXPLICIT",
+    "source": "After extensive training, behavioural pairing of stimuli can indeed result in increased neuronal similarity (Messinger et al., 2001; Sakai and Miyashita, 1991).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to studies on training-induced similarity.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "More recent studies have shown induced representational overlap in human imaging within a single day.",
+    "claim_type": "EXPLICIT",
+    "source": "More recent studies have shown induced representational overlap in human imaging within a single day (Kurth-Nelson et al., 2015; Barron et al., 2013; Wimmer and Shohamy, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to human imaging studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "When analysed across the whole brain, representational changes tend to be localized to discrete brain regions and may have limited impact on whole-brain decodeability.",
+    "claim_type": "EXPLICIT",
+    "source": "However, when analysed across the whole brain, such representational changes tend to be localized to discrete brain regions (Schapiro et al., 2013; Garvert et al., 2017), and as a consequence may have limited impact on whole-brain decodeability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations and suggests limited practical impact.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "This approach for identifying sequence timing is similar to spike-triggered averaging.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach is similar to spike-triggered averaging (Sirota et al., 2008; Buzs\u00e1ki et al., 1983).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This comparison is supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Applying the sequence-triggered averaging approach to real MEG data during rest can detect increased hippocampal power at 120-150 Hz at replay onset.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying this to real MEG data during rest, we can detect increased hippocampal power at 120\u2013150 Hz, at replay onset (Figure 5b, c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in real MEG data shown in Figure 5b and 5c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Source reconstruction in the current analysis was performed using linearly constrained minimum variance (LCMV) beamforming.",
+    "claim_type": "EXPLICIT",
+    "source": "Source reconstruction in the current analysis was performed using linearly constrained minimum variance (LCMV) beamforming, a common method for MEG source localization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the source localization method used.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "LCMV beamforming is known to suffer from distal correlated sources.",
+    "claim_type": "EXPLICIT",
+    "source": "This is known to suffer from distal correlated sources (Hincapi\u00e9 et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "A better method for source localization may be Empirical Bayesian Beamformer for accommodating correlated neural source as a priori.",
+    "claim_type": "EXPLICIT",
+    "source": "A better method may be Empirical Bayesian Beamfomer for accommodating correlated neural source as a priori (O'Neill, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This suggestion is supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "TDLM is compared to rodent methods that work on the posterior decoded position space, normally referred to as Bayesian-based methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that TDLM works on the decoded state space, rather than sensor (with analogy to cell) level, we compared TDLM to rodent methods that work on the posterior decoded position (i.e., state) space, normally referred to as Bayesian-based methods (Tingley and Peyrache, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the comparison approach, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Two commonly used rodent replay methods are Radon transform and linear weighted correlation.",
+    "claim_type": "EXPLICIT",
+    "source": "Two commonly used methods are Radon transform (Davidson et al., 2009) and linear weighted correlation (Grosmark and Buzs\u00e1ki, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies common methods with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The Radon method and linear weighted correlation method are called 'line search' methods because they try to discover if an ordered line is a good description of the relationship between state and parametric time.",
+    "claim_type": "EXPLICIT",
+    "source": "The methods then try to discover if an ordered line is a good description of the relationship between state and (parametric) time. For this reason, we call this family of approaches 'line search'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the conceptual approach of these methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The Radon method uses a discrete Radon transform to find the best line in the 2D matrix and evaluates the radon integral, which will be high if the data lie on a line.",
+    "claim_type": "EXPLICIT",
+    "source": "The radon method uses a discrete Radon transform to find the best line in the 2D matrix (Toft, 1996) and then evaluates the radon integral, which will be high if the data lie on a line (Figure 6a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the Radon method with citation and reference to Figure 6a.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The linear weighted correlation method computes the average correlation between the time and estimated position in the 1D embedding.",
+    "claim_type": "EXPLICIT",
+    "source": "The linear weighted correlation method computes the average correlation between the time and estimated position in the 1D embedding (Figure 6b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the linear correlation method with reference to Figure 6b.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "TDLM does not directly measure the relationship between position and time, but measures the transition strength for each possible state to state transitions.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM also works on the decoded position space, but instead of directly measuring the relationship between position and time, it measures the transition strength for each possible state to state transitions (Figure 6c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a key difference between TDLM and line search methods, shown in Figure 6c.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "TDLM is fundamentally different from line search methods as it works on a graph and examines the statistical likelihood of some transitions happening more than others.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM is fundamentally different as it works on a graph and examines the statistical likelihood of some transitions happening more than others.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the fundamental difference between TDLM and line search methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "TDLM is a more general approach that can be used for sequences drawn from any graph, not just graphs with simple embeddings like a linear track.",
+    "claim_type": "EXPLICIT",
+    "source": "This is therefore a more general approach that can be used for sequences drawn from any graph (e.g. 2D maze, Figure 6d), not just graphs with simple embeddings (like a linear track).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the generality of TDLM with reference to Figure 6d.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Existing 'line search' methods will not work for non-spatial decision-making tasks where there is no linear relationship between time and states.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, in a non-spatial decision-making task (Kurth-Nelson et al., 2016), all states lead to two different states and themselves can be arrived at from two other different states (Figure 6e). Existing 'line search' methods will not work because there is no linear relationship between time and states (Figure 6f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated with citation and Figures 6e and 6f.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "TDLM in its original form may potentially be less sensitive for continuous space analyses than techniques with built-in assumptions about the spatial layout of the state space.",
+    "claim_type": "EXPLICIT",
+    "source": "While continuous spaces can be analysed in TDLM by simply chunking the space into discrete states, TDLM in its original form may potentially be less sensitive for such analyses than techniques with built-in assumptions about the spatial layout of the state space, such as the linear relationship between time and reactivated states (Appendix 5 'Less sensitivity of TDLM to skipping sequences').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential limitation of TDLM for continuous spaces.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "TDLM can be extended to address the sensitivity problem for continuous spaces by applying it at multiple different scales and taking a variance-weighted average of the sequenceness measures across different scales.",
+    "claim_type": "EXPLICIT",
+    "source": "However, TDLM can be extended to address this problem. For continuous state spaces, we first need to decide how to best discretize the space. If we choose a large scale, we will miss replays that occur predominantly within a spatial bin. If we choose a small scale, we will miss transitions that jump spatial bins. A simple solution is to apply TDLM at multiple different scales and take an (variance-weighted) average of the sequenceness measures across different scales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the multi-scale TDLM extension.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Multi-scale TDLM reinstates the Euclidean assumptions by averaging results of the same replay speed together across different scales.",
+    "claim_type": "EXPLICIT",
+    "source": "It is easy to see why this addresses the potential concerns raised above as some scales will capture the 1 -> 2 -> 3 transitions, whilst others will capture the 1 -> 10 -> 20 transitions: because the underlying space is continuous, we can average results of the same replay speed together, and this will reinstate the Euclidean assumptions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains how multi-scale TDLM addresses the sensitivity issue.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "In the \u00d3lafsd\u00f3ttir et al., 2016 study, rats ran multiple laps on a 600 cm Z maze and were then placed in a rest enclosure for 1.5 hr.",
+    "claim_type": "EXPLICIT",
+    "source": "In \u00d3lafsd\u00f3ttir et al., 2016, rats ran multiple laps on a 600 cm Z maze and were then placed in a rest enclosure for 1.5 hr (Figure 7a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design from the cited study, shown in Figure 7a.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The Z maze consists of three tracks, with its ends and corners baited with sweetened rice to encourage running from one end to the other.",
+    "claim_type": "EXPLICIT",
+    "source": "The Z maze consists of three tracks, with its ends and corners baited with sweetened rice to encourage running from one end to the other.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Rate maps were generated separately for inbound and outbound running.",
+    "claim_type": "EXPLICIT",
+    "source": "We generated rate maps separately for inbound (track 1 -> track 2 -> track 3) and outbound (track 3 -> track 2 -> track 1) running (see details in section 'Rodent replay dataset').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data processing approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Cells recorded in CA1 were classified as place cells if their peak firing field during track running was above 1 Hz with a width of at least 20 cm.",
+    "claim_type": "EXPLICIT",
+    "source": "As in \u00d3lafsd\u00f3ttir et al., 2016, cells recorded in CA1 were classified as place cells if their peak firing field during track running was above 1 Hz with a width of at least 20 cm (see an example in Figure 7b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the place cell classification criteria from the cited study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Candidate replay events were identified based on multi-unit activity from place cells during rest time, with periods exceeding the mean rate by three standard deviations identified as possible replay events.",
+    "claim_type": "EXPLICIT",
+    "source": "The candidate replay events were identified based on multi-unit (MU) activity from place cells during rest time. Periods exceeding the mean rate by three standard deviations of MU activity were identified as possible replay events.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the replay event detection criteria.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Events less than 40 ms long, or which included activity from less than 15% of the recorded place cell ensemble, were rejected.",
+    "claim_type": "EXPLICIT",
+    "source": "Events less than 40 ms long, or which included activity from less than 15% of the recorded place cell ensemble, were rejected (see an example of putative replay event in Figure 7c), and the remaining events were labelled putative replay events.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the event filtering criteria.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "58 place cells and 1183 putative replay events were identified from one full recording session from Rat 2192.",
+    "claim_type": "EXPLICIT",
+    "source": "Following the procedure described above, we identified 58 place cells and 1183 putative replay events.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This reports the data characteristics from the analyzed session.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "TDLM is applied directly to the concatenated rather than individual replay events.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that TDLM is applied directly to the concatenated rather than individual replay events.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how TDLM is applied to rodent data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Applying TDLM on each single replay event and then averaging the beta estimates (appropriately weighted by the variances) is equivalent to running TDLM once on the concatenated replay events.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because TDLM is a linear modelling framework. Applying TDLM on each single replay event and then averaging the beta estimates (appropriately weighted by the variances) is equivalent to running TDLM once on the concatenated replay events.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the mathematical equivalence of the two approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "TDLM quantifies the average amount of replay across many events, which is different compared to existing replay methods that focus on single replay events.",
+    "claim_type": "EXPLICIT",
+    "source": "It quantifies the average amount of replay across many events, which is different compared to existing replay methods that focus on single replay events.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key difference between TDLM and other methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "TDLM does not require secondary statistics to ask whether the 'counts' of individual events are more likely than chance or more likely in one situation than another.",
+    "claim_type": "EXPLICIT",
+    "source": "Because TDLM addresses statistical questions in linear modelling, it does not require secondary statistics to ask whether the 'counts' of individual events are more likely than chance or more likely in one situation than another.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of TDLM's statistical framework.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "During the whole sleep period, TDLM identified a significant forward sequence for the outbound map with a wide speed range around from 1 to 10 m/s.",
+    "claim_type": "EXPLICIT",
+    "source": "During the whole sleep period, TDLM identified a significant forward sequence for the outbound map with a wide speed range around from 1 to 10 m/s (Figure 7d, left panel), consistent with recent findings from Denovellis, 2020 on varying replay speed (similar results were obtained for inbound map, not shown here for simplicity).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from applying TDLM to rodent data, shown in Figure 7d and consistent with cited work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The fastest replay speed detected is up to 10 m/s, which is around 20\u00d7 faster than free running speed, representing approximately half a track-arm in a typical replay event.",
+    "claim_type": "EXPLICIT",
+    "source": "In our analysis, the fastest speed is up to 10 m/s, which is around 20\u00d7 faster than its free running speed, representing approximately half a track-arm in a typical replay event, consistent with previous work (Lee and Wilson, 2002; Davidson et al., 2009; Karlsson and Frank, 2009; N\u00e1dasdy et al., 1999).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This characterizes the detected replay speed and is consistent with cited prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "There are two types of statistical questions: a 'first-order' sequence question about whether an observed sequenceness is different from random, and a 'second-order' question requiring a comparison of sequenceness across conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "As pointed out by van der Meer et al., 2020, there are two types of statistical questions: a 'first-order' sequence question, which concerns whether an observed sequenceness is different from random (i.e. do replays exist?); and a 'second-order' question, which requires a comparison of sequenceness across conditions (i.e. do replays differ?).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines two types of statistical questions with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "TDLM is ideally placed to address second-order questions because it is embedded in a linear regression framework.",
+    "claim_type": "EXPLICIT",
+    "source": "Because it is embedded in a linear regression framework, TDLM is ideally placed to address such questions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of TDLM for second-order inference.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "There are two ways of asking second-order questions in linear modelling: contrasts and interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "There are two ways of asking such questions in linear modelling: contrasts and interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the two approaches for second-order inference.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Linear contrasts can test hypotheses about regression coefficients by constructing linear combinations of the coefficients that would be zero under the null hypothesis.",
+    "claim_type": "EXPLICIT",
+    "source": "After fitting a regression model, resulting in coefficients for different regressors, we can test hypotheses about these coefficients by constructing linear combinations of the coefficients that would be zero under the null hypothesis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how linear contrasts work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "In the example dataset, there was a greater preponderance for forward than backward replay.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we demonstrate this by showing in our example dataset that there was a greater preponderance for forward than backward replay. We construct the contrast (forwards \u2013 backwards) and test it against zero using a multiple-comparison-controlled permutation test (Figure 7d, right panel, pink line).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from the rodent data analysis shown in Figure 7d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The total replay strength across both forward and backward replays was significant.",
+    "claim_type": "EXPLICIT",
+    "source": "By constructing a different contrast (forwards + backwards), we can also show that the total replay strength across both types of replays was significant (Figure 7d, right panel, green line).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from the rodent data analysis shown in Figure 7d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Interaction terms can be introduced into the linear regression to perform second-order tests.",
+    "claim_type": "EXPLICIT",
+    "source": "A second method for performing second-order tests is to introduce them into the linear regression as interaction terms, and then perform inference on the regression weights for these interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how interactions work for second-order inference.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Forward replay is decreasing with time during sleep.",
+    "claim_type": "EXPLICIT",
+    "source": "When we perform these tests in our example dataset (Figure 7f, green rectangle), we confirm that there are more forward than backward replay on average. We further show that forward replay is decreasing with time during sleep, and that backward replay is increasing with time.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from the rodent data analysis shown in Figure 7f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Backward replay is increasing with time during sleep.",
+    "claim_type": "EXPLICIT",
+    "source": "When we perform these tests in our example dataset (Figure 7f, green rectangle), we confirm that there are more forward than backward replay on average. We further show that forward replay is decreasing with time during sleep, and that backward replay is increasing with time.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from the rodent data analysis shown in Figure 7f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The difference between forward and backward replay (forwards \u2013 backwards) is significant.",
+    "claim_type": "EXPLICIT",
+    "source": "Their difference (forwards \u2013 backwards) is also significant.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This reports a finding from the rodent data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "It is possible to select a 'region of interest' (ROI), average the measure in question over that ROI, and perform inference on this average measure to avoid multiple comparison correction.",
+    "claim_type": "EXPLICIT",
+    "source": "To avoid such multiple comparison correction, it is possible to select a 'region of interest' (ROI), average the measure in question over that ROI, and perform inference on this average measure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an alternative approach to multiple comparison correction.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "It is critical not to use the measure under test or anything that correlates with that measure as a means to define the ROI, as this will induce a selection bias.",
+    "claim_type": "EXPLICIT",
+    "source": "Critical in this endeavour, however, is that we do not use the measure under test or anything that correlates with that measure as a means to define the ROI. This will induce a selection bias (Kriegeskorte et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a critical consideration for ROI analysis, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "On average, forward replay is stronger at the beginning of the track.",
+    "claim_type": "EXPLICIT",
+    "source": "Since we are still in the linear domain, we can now just average these contrasts across the four scales and get a single measure for spatial modulation of replay. This average measure is significantly negative (Figure 8b). Hence, on average, forward replay is stronger at the beginning of the track.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from spatial modulation analysis shown in Figure 8b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Strength of backward replay is stronger at the end of the track.",
+    "claim_type": "EXPLICIT",
+    "source": "We can do the same thing for backward replay. We found an opposite pattern, that is, strength of backward replay is stronger at the end of the track, and similarly, it is not significant in the smallest scale and becomes significant in the largest scale, and also significant on average across all scales (Figure 8c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from spatial modulation analysis shown in Figure 8c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The difference in spatial modulation effect between forward and backward replay is significant.",
+    "claim_type": "EXPLICIT",
+    "source": "Again, since we are in the linear domain, we can further contrast these contrasts, asking if this effect is different for forward and backward replay. We found that the difference is indeed significant (Figure 8d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports a finding from spatial modulation analysis shown in Figure 8d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "The set of results on spatial modulation is consistent with previous rodent literature.",
+    "claim_type": "EXPLICIT",
+    "source": "This set of results is consistent with previous rodent literature (Diba and Buzs\u00e1ki, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This compares the findings to prior work with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "TDLM is a domain-general sequence analysis method that works at the level of decoded state space, rather than the sensor/cell level of the data.",
+    "claim_type": "EXPLICIT",
+    "source": "We believe that this establishes TDLM as a domain-general sequence analysis method: TDLM works at the level of decoded state space, rather than the sensor/cell level of the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes a key characteristic of TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "TDLM can be applied to a wide range of data types and settings in both humans and rodents.",
+    "claim_type": "EXPLICIT",
+    "source": "It can be applied to a wide range of data types and settings in both humans and rodents, stimulating cross-fertilization across disciplines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the broad applicability of TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "TDLM is based on the GLM framework, which lends it flexibility for regressing out potential confounds while offering an intuitive understanding of the overall approach.",
+    "claim_type": "EXPLICIT",
+    "source": "It is based on the GLM framework, and this lends it flexibility for regressing out potential confounds while offering an intuitive understanding of the overall approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes advantages of TDLM's GLM foundation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "In its original form, TDLM works on discrete states (i.e. nodes in the graph).",
+    "claim_type": "EXPLICIT",
+    "source": "In its original form, TDLM works on discrete states (i.e. nodes in the graph).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a characteristic of TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "Continuous spaces can be incorporated into TDLM by chunking them into discrete spaces.",
+    "claim_type": "EXPLICIT",
+    "source": "Continuous spaces can be incorporated by chunking them into discrete spaces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how TDLM handles continuous spaces.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "By averaging the same replay speeds measured at multiple scales of discretization, the statistical benefits of an assumption of a Euclidean geometry can be recovered.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, by averaging the same replay speeds measured at multiple scales of discretization (see section 'TDLM for rodent replay'), the statistical benefits of an assumption of a Euclidean geometry can be recovered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how multi-scale TDLM recovers Euclidean assumptions.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "The longer the time length, the more accurate the estimates in TDLM because time length is the sample size in the GLM framework.",
+    "claim_type": "EXPLICIT",
+    "source": "The longer the time length, the more accurate the estimates in TDLM. This is because TDLM assesses sequence evidence based on a GLM framework, where time length is the sample size. Higher sample size will lead to more accurate estimates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how time length affects TDLM accuracy.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "It is recommended to apply TDLM to aggregated replay events rather than to a single event because this results in more time samples for estimation and more activated states in the analysis time framework.",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of rodent analysis, we recommend applying TDLM to aggregated replay events rather than to a single event because this results in (1) more time samples for estimation and (2) more activated states in the analysis time framework.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation for applying TDLM to rodent data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "TDLM is able to handle multiple sequences in the same data with respect to different directions, contents, or speeds.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike other techniques which search for a single replay in a single event, this aggregation can be implemented without losing generality as TDLM is able to handle multiple sequences in the same data with respect to different directions, contents, or speeds.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of TDLM's aggregation approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "By aggregating linearly across all replay events of the same condition, TDLM provides a natural measure for comparing replay strength, speed, and direction across different experimental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, by aggregating linearly across all replay events of the same condition, it provides a natural measure for comparing replay strength, speed, and direction across different experimental conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of TDLM for comparative analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "TDLM has already proved important in human experiments where complex state spaces have been used.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM has already proved important in human experiments where complex state spaces have been used (Wimmer et al., 2020; Liu et al., 2019; Liu et al., 2021a; Kurth-Nelson et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "The generality of TDLM will be important as rodent replay experiments move beyond 1D tracks, for example, to foraging in 2D, or in complex mazes.",
+    "claim_type": "EXPLICIT",
+    "source": "We expect this generality will also be important as rodent replay experiments move beyond 1D tracks, for example, to foraging in 2D, or in complex mazes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about future applications of TDLM.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "TDLM adds a new analysis toolkit to the replay field.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM adds a new analysis toolkit to the replay field.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes TDLM's contribution.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "TDLM is especially suited for summarizing replay strength across many events, comparing replay strength between conditions, and analysing replay strength in complex behavioural paradigms.",
+    "claim_type": "EXPLICIT",
+    "source": "It is especially suited for summarizing replay strength across many events, comparing replay strength between conditions, and analysing replay strength in complex behavioural paradigms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes TDLM's particular strengths.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "TDLM's linear modelling nature makes it amenable to standard statistical tests and allows wide use across tasks, modalities, and species.",
+    "claim_type": "EXPLICIT",
+    "source": "Its linear modelling nature makes it amenable to standard statistical tests and thereby allows wide use across tasks, modalities, and species.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes advantages of TDLM's statistical framework.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "TDLM has not been shown applied to individual replay events.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike alternative tools, we have not shown TDLM applied to individual replay events.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges a limitation or difference from other methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "The temporal dynamics of neural states have been studied previously with MEG.",
+    "claim_type": "EXPLICIT",
+    "source": "The temporal dynamics of neural states have been studied previously with MEG (Vidaurre et al., 2017; Baker et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior MEG studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "Resting state networks are normally defined by common physiological features during rest and remain agnostic about the content of neural activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Normally such states are defined by common physiological features (e.g. frequency, functional connectivity) during rest and termed resting state networks (e.g. default mode network [Raichle et al., 2001]). However, these approaches remain agnostic about the content of neural activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes prior approaches to studying resting state with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "The ability to study the temporal dynamics of representational content permits richer investigations into cognitive processes.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to study the temporal dynamics of representational content permits richer investigations into cognitive processes (Higgins et al., 2021) as neural states can be analysed in the context of their roles with respect to a range of cognitive tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "Reactivation of neural representations has been studied previously using approaches similar to the decoding step of TDLM or multivariate pattern analysis (MVPA).",
+    "claim_type": "EXPLICIT",
+    "source": "Reactivation of neural representations has also been studied previously (Tambini and Davachi, 2019) using approaches similar to the decoding step of TDLM or multivariate pattern analysis (MVPA) (Norman et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior reactivation studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "Classification alone does not reveal the rich temporal structures of reactivation dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "However, classification alone does not reveal the rich temporal structures of reactivation dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of classification-only approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "TDLM can be applied to on-task data to test for cued sequential reactivation or sequential decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "We have described the application of TDLM mostly during off-task state in this paper. The very same analysis can be applied to on-task data to test for cued sequential reactivation (Wimmer et al., 2020) or sequential decision-making (Eldar et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes additional applications of TDLM with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "The ability to detect sequences on-task allows teasing apart clustered from sequential reactivation, which may be important for dissociating decision strategies.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the ability to detect sequences on-task allows us to tease apart clustered from sequential reactivation, where this may be important for dissociating decision strategies (Eldar et al., 2018) and their individual differences (Wimmer et al., 2020; Eldar et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an application of TDLM with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "TDLM may allow testing of neural predictions from process models such as reinforcement learning during task performance.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM, therefore, may allow testing of neural predictions from process models such as reinforcement learning during task performance (Dayan and Daw, 2008), which have proved hard to probe previously (Wimmer et al., 2020; Nour et al., 2021; Liu et al., 2019; Liu et al., 2021a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential application of TDLM with citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "TDLM also works well with EEG data.",
+    "claim_type": "EXPLICIT",
+    "source": "In Appendix 4, we show that TDLM also works well with EEG data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a finding demonstrated in the appendix.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "EEG and MEG are effectively measuring the same neural signature, namely local field potential (or associated magnetic field) on the scalp.",
+    "claim_type": "EXPLICIT",
+    "source": "This is not surprising given EEG and MEG are effectively measuring the same neural signature, namely local field potential (or associated magnetic field) on the scalp.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why TDLM works for both EEG and MEG.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "Related work has suggested that it might be possible to measure sequential reactivation using fMRI.",
+    "claim_type": "EXPLICIT",
+    "source": "We do not have suitable fMRI data to test TDLM. However, related work has suggested that it might be possible to measure sequential reactivation using fMRI (Schuck and Niv, 2019), but particular methodological caveats need to be considered (e.g. a bias from last events due to slow haemodynamic response) (Wittkuhn and Schuck, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to fMRI sequence studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "TDLM can deal with the bias from last events in fMRI due to slow haemodynamic response, given it models out non-specific transitions.",
+    "claim_type": "EXPLICIT",
+    "source": "We believe that TDLM can deal with this, given it models out non-specific transitions, although further work is needed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about TDLM's potential capability, with acknowledgment that further work is needed.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "It will be useful to combine the high temporal resolution available in MEG/EEG and the spatial precision available in fMRI to probe region-specific sequential computations.",
+    "claim_type": "EXPLICIT",
+    "source": "In future, we consider it will be useful to combine the high temporal resolution available in MEG/EEG and the spatial precision available in fMRI to probe region-specific sequential computations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future research.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "TDLM's linear framework makes the assessment of time-varying effect on replay or other second-order sequence questions straightforward.",
+    "claim_type": "EXPLICIT",
+    "source": "Most importantly, TDLM works on an arbitrary graph and its generality makes replay studies in complex mazes possible. Its linear framework makes the assessment of time-varying effect on replay (Figure 7) or other second-order sequence questions straightforward.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes advantages of TDLM for rodent studies.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "A promising future direction will be to further separate process noise and measurement noise by building latent state-space models.",
+    "claim_type": "EXPLICIT",
+    "source": "In future work, a promising direction will be to further separate process noise (e.g. intrinsic variability within sequences) and measurement noise (e.g. noise in MEG recording). This might be achieved by building latent state-space models as have been explored recently in rodent community (Maboudi et al., 2018; Denovellis, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future work with citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "TDLM opens doors for novel investigations of human cognition, including language, sequential planning, and inference in non-spatial cognitive tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, we believe that TDLM opens doors for novel investigations of human cognition, including language, sequential planning, and inference in non-spatial cognitive tasks (Eldar et al., 2018; Kurth-Nelson et al., 2016), as well as complicated tasks in rodents, for example, forging in 2D mazes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes potential applications of TDLM with citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "TDLM is particularly suited to test specific neural predictions from process models, such as reinforcement learning.",
+    "claim_type": "EXPLICIT",
+    "source": "TDLM is particularly suited to test specific neural predictions from process models, such as reinforcement learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a particular strength of TDLM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "TDLM can promote an across-species synthesis between experimental and theoretical neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "We hope that TDLM can promote an across-species synthesis between experimental and theoretical neuroscience and, in so doing, shed novel light on neural computation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This expresses a hope for TDLM's impact.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Dengue represents a major and growing global health threat with limited treatment options and increasing case numbers. The disease affects billions globally, with most infections being self-limiting but a small proportion developing complications around days 4-6, and current WHO guidelines have limited utility in identifying at-risk patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide well-supported background context from established knowledge and authoritative sources (WHO, peer-reviewed literature). These claims establish the public health significance of dengue and the clinical need for better prognostic tools, forming the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Dengue pathogenesis involves excessive immune responses leading to inflammatory mediator release, endothelial activation, and glycocalyx disruption. The selected biomarkers (VCAM-1, SDC-1, Ang-2, IL-8, IP-10, IL-1RA, sCD163, sTREM-1, ferritin, CRP) represent key pathways of endothelial activation, immune activation, and inflammation relevant to dengue severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 establish the pathophysiological rationale for biomarker selection, supported by citations to relevant literature. The mechanistic framework linking immune activation, endothelial dysfunction, and clinical manifestations is well-established in dengue research, providing sound justification for the biomarkers studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C94",
+      "C95",
+      "C96",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study analyzed 281 severe/moderate dengue cases and 556 uncomplicated dengue controls from a nested case-control design within the IDAMS study (7428 participants across 8 countries). The majority were from Vietnam (76%), with median ages of 12 and 16 years for cases and controls respectively. Secondary infections were more common in severe/moderate dengue (78% vs 64%), and 38 patients developed severe dengue, predominantly with severe plasma leakage (87%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C126 describe the study population characteristics with clear numerical data. The nested case-control design from a well-characterized parent study (IDAMS) provides appropriate methodology. Sample sizes are adequate for the primary analysis, though the small number of severe dengue cases (n=38) limits power for subgroup analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study measured 10 biomarkers at enrollment (days 1-3) and convalescence (days 10-31) using validated assays. The primary endpoint was combined severe/moderate dengue, justified by the rarity of severe dengue events. Statistical analysis employed logistic regression with restricted cubic splines to model non-linear effects, and a 'best subset' variable selection approach with bootstrap validation (1000 resamples) to identify optimal biomarker combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C113 describe appropriate laboratory and statistical methods. The use of validated commercial assays, log-transformation for skewed data, splines for non-linearity, and bootstrap validation are all sound methodological choices. The composite endpoint is justified given the small number of severe cases, though this may limit interpretation for severe dengue specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In single biomarker models, higher levels of all 10 biomarkers on days 1-3 were associated with increased risk of severe/moderate dengue (except ferritin in adults which showed a downward trend at higher values). Patients progressing to severe/moderate dengue had higher biomarker levels at both enrollment and follow-up. Most biomarkers (VCAM-1, IL-8, IP-10, IL-1RA, CRP) decreased between enrollment and follow-up, while SDC-1 increased slightly. Strong correlations existed between IP-10 and IL-1RA (r>0.6) and between IP-10 and VCAM-1 (r>0.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C48 present consistent findings from single biomarker analyses supported by Figure 2, Figure 3, and Table 2. The associations are biologically plausible and statistically demonstrated. The exception for ferritin in adults is noted and requires further investigation. The correlation findings help interpret subsequent multivariate results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Biomarker associations with severe/moderate dengue differed significantly between children and adults. SDC-1 and IL-8 showed stronger associations in adults, while IL-1RA and ferritin showed stronger associations in children. These age-related differences suggest dengue pathogenesis may differ by age, consistent with known clinical phenotype differences (children experiencing more shock, adults more organ impairment and bleeding). The ferritin difference appears driven by the moderate dengue group, as effects were similar across ages for severe dengue alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C120 demonstrate important age-related heterogeneity in biomarker associations, supported by statistical testing and secondary analyses. The biological interpretation is reasonable given known clinical differences between pediatric and adult dengue. However, the composite endpoint complicates interpretation, and the authors appropriately acknowledge this through secondary analysis of severe dengue alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "In global models including all biomarkers, SDC-1 and IL-1RA maintained stable associations with severe/moderate dengue, while IP-10 changed from a positive to negative association in both children and adults. In children, VCAM-1 and IL-8 also changed direction. The IP-10 reversal may be explained by IL-1RA acting as a mediator or confounder, given their strong correlation (r=0.75) and IL-1RA's stable association across models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C116 identify important changes in biomarker associations when considered jointly versus individually. The reversal of IP-10's association is notable and the proposed explanation involving IL-1RA as a mediator/confounder is plausible given the strong correlation. However, this interpretation remains speculative without formal mediation analysis. The authors appropriately note that direction changes don't preclude selection in optimal combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "For children, the best biomarker combination for severe/moderate dengue included six markers: IL-1RA, Ang-2, IL-8, ferritin, IP-10, and SDC-1 (AIC=465.9). This model was selected in only 13.4% of bootstrap samples, indicating limited robustness. IL-1RA had 100% inclusion frequency, while SDC-1 had 73.5%. The most important biomarkers were IL-1RA, Ang-2, IL-8, and ferritin. Two-marker (IL-1RA + ferritin) and five-marker combinations showed better robustness (43.7% and 44% selection frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C63 present variable selection results with appropriate assessment of model stability through bootstrap validation. The low selection frequency (13.4%) for the 'best' six-marker model indicates substantial model uncertainty, which the authors transparently report. The high inclusion frequency for IL-1RA (100%) and identification of more parsimonious models with better stability are valuable findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "For adults, the best biomarker combination included seven markers: SDC-1, IL-8, ferritin, sTREM-1, IL-1RA, IP-10, and sCD163. This model was selected in 7.9% of bootstrap samples. SDC-1 had the highest inclusion frequency (99.2%), while sCD163 had the lowest (59.1%). The most important biomarkers were SDC-1, IL-8, and ferritin. The two-marker combination (SDC-1 + IL-8) showed the best robustness (56.7% selection frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C69 present adult-specific variable selection results with similar patterns of model instability as seen in children. The very low selection frequency (7.9%) for the seven-marker model indicates even greater uncertainty than in children. However, the two-marker model shows good stability (56.7%), and SDC-1's near-universal inclusion (99.2%) provides confidence in its importance for adults.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C121",
+      "C122"
+    ],
+    "result": "Sensitivity analyses showed that biomarker associations with severe/moderate dengue did not differ between DENV-1 and other serotypes. When viremia was included as an additional biomarker, it was not selected in any best combinations for children, but was selected in the best subset for adults (five markers: SDC-1, IL-8, ferritin, viremia, sCD163).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C122 demonstrate appropriate sensitivity analyses. The lack of serotype-specific effects supports generalizability across dengue serotypes. The differential selection of viremia in adults but not children is interesting and consistent with known age-related differences in dengue pathogenesis, though the clinical significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For practical application, the authors recommend a five-biomarker panel for children (IL-1RA, Ang-2, IL-8, ferritin, IP-10) and a three-biomarker panel for adults (SDC-1, IL-8, ferritin). These combinations had similar AIC values to the best combinations (difference <5) but required fewer biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 present pragmatic recommendations balancing statistical performance, robustness, and parsimony. The AIC differences are appropriately small (<5), and the reduced biomarker panels would be more feasible for clinical implementation. However, these recommendations require prospective validation before clinical adoption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study employed a data-driven 'best subset' approach for variable selection, which was validated against other selection methods showing similar results. Strengths include large sample size, nested case-control design from a prospective multi-country cohort with standardized methods, and biomarker selection guided by pathogenesis studies focusing on early disease pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 accurately describe methodological strengths. The comparison of variable selection methods (Appendix 9) supports robustness of the approach. The nested case-control design from IDAMS is appropriate, though it limits ability to calculate predictive values. The pathogenesis-guided biomarker selection ensures clinical relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C123"
+    ],
+    "result": "Study limitations include analysis of biomarkers at only one early time-point due to resource constraints, lack of prediction model development (motivated by nested case-control design), and need for validation in new studies. Some cases showed biomarkers not returning to normal at convalescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C123 appropriately acknowledge important limitations. Single time-point analysis limits understanding of temporal dynamics. The nested case-control design, while efficient, precludes calculation of predictive values and absolute risk estimates. The observation that some biomarkers don't normalize at convalescence is interesting but unexplored. External validation is essential before clinical application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Higher levels of all ten biomarkers individually are associated with increased risk of adverse dengue outcomes in both children and adults. These findings can assist development of biomarker panels for improved triage and early assessment, potentially aiding patient management, healthcare resource allocation (especially in outbreaks), and serving as biological endpoints for clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93 summarize main findings and propose applications. While C90 is well-supported by the data, claims C91-C93 about clinical utility and public health impact are speculative. The study was not designed to build prediction models (C88), and no predictive performance metrics (sensitivity, specificity, PPV, NPV) are provided. Clinical utility requires prospective validation studies demonstrating improved patient outcomes or resource allocation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82"
+    ],
+    "result": "Given forecasted increases in dengue cases and limited healthcare resources in endemic settings, there is urgent need for rapid identification of high-risk patients. Previous work showed CRP and viremia are useful single biomarkers. Novel multiplex technologies may reduce costs in the future, enabling widespread use in low-to-middle-income countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 provide context for the study's significance and future directions. The public health need is well-established (C75-C76), and prior work on CRP and viremia (C77-C78) is appropriately cited. The speculation about future cost reductions with new technologies (C82) is reasonable but uncertain, depending on technological development and market forces.",
+    "result_type": "MINOR"
+  }
+]

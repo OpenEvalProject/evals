@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides background context on NIH funding disparities, prior literature on blinding in peer review, and the rationale for the current study. These claims establish that Black investigators have persistently lower NIH funding rates compared to White investigators, that the literature on blinding is mixed, and that no prior studies have examined blinded review with respect to race in grant applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide well-documented background information supported by appropriate citations (C2, C3, C4, C8, C9, C10, C11, C13) and NIH data (C1, C5, C7, C14-C18). The claims accurately represent prior work and establish the knowledge gap (C12) that motivates the current study. These are primarily literature review and contextual claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study employed a preregistered experimental design using 1200 real NIH R01 applications (400 from Black PIs, 400 matched White PIs, 400 randomly selected White PIs) reviewed in both standard and redacted formats by experienced NIH reviewers. The sample represented nearly 80% of applications from Black PIs reviewed in 2014-2015, and redaction required 2-8 hours per application plus 2-4 hours for quality assurance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C72 describe the study design, sample characteristics, and procedures with appropriate detail. The preregistration (C25), large sample size (C19, C26), use of real applications, and experienced reviewers (C29) strengthen the design. However, some methodological limitations are noted (C31, C67-C68), including fewer applications per reviewer than planned and variable SRO experience. The labor-intensive redaction process (C28, C52) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C53",
+      "C54",
+      "C63",
+      "C64"
+    ],
+    "result": "Redaction was only partially effective at concealing applicant identity. While redaction reduced correct identification of Black PIs from 58% to 28%, it had minimal effect on identification of White PIs (93% to 87%). Reviewers could still name the PI or research group in 21-22% of redacted applications, and overall correctly identified PI race 70% of the time with redacted applications. Reviewer confidence in race guesses was low for redacted applications (just over 2 on a 1-5 scale).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C33-C37, C53-C54, C63-C64 demonstrate that redaction had differential effectiveness by PI race and was incomplete overall. The statistical test (C36: \u03c7\u00b2(1) = 160.2, p < 0.001) confirms redaction significantly reduced correct identification, but the high residual identification rates (C53, C54) and ability to name PIs (C37) indicate substantial information leakage. This is a critical finding that affects interpretation of the main results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C23",
+      "C24"
+    ],
+    "result": "In the primary preregistered analysis using matched applications, White PIs' applications scored better than Black PIs' applications in standard format (effect size d=0.20). Redaction worsened scores for White PIs but had no effect on Black PIs' scores, reducing the racial gap by approximately half (from d=0.20 to d=0.10). However, the prespecified race \u00d7 format interaction was not statistically significant (p=0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C24, C38-C42 present the primary finding, but interpretation is complicated by the non-significant interaction term (C40). While the pattern shows redaction reduced the White advantage by half (C23), the p=0.17 falls short of conventional significance thresholds. The authors acknowledge this ambiguity and rely on concordance with secondary analyses. The unexpected finding that matched samples scored differently than in original NIH review (C38) raises questions about the matching procedure's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Secondary analyses using the randomly selected White application set found a significant race \u00d7 format interaction. Multiple factors influenced scores: Type 2 applications and resubmissions scored better; early-stage investigator status and low institutional funding were associated with worse scores; PI gender was not significant; and reviewer perception that the PI was Black was associated with slightly better scores when controlling for actual race.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe secondary analyses that found a significant interaction (C43) and identified multiple covariates affecting review outcomes. The findings regarding application type (C44-C45), investigator status (C46), and institutional funding (C47) align with known patterns in NIH review. The counterintuitive finding that perceived Black race improved scores (C49) is appropriately noted as complex to interpret. These analyses provide important context but were not preregistered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C55",
+      "C57",
+      "C62",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study had adequate statistical power (70-90% depending on effect size) and the score distributions approximated actual NIH reviews despite procedural differences. Approximately 28% of reviewers doubted that anonymized applications could be reviewed fairly. Sensitivity analyses excluding cases where reviewers correctly identified PIs did not change results. Study procedures differed from standard NIH review in several ways, including SRO experience and number of applications per reviewer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C55, C57, C62, C88-C91 address study validity and limitations. The power analysis (C57) was appropriate for the revised statistical approach. The similarity of score distributions to actual NIH reviews (C55, C91) supports external validity despite acknowledged procedural differences (C88-C90). The robustness check (C62) strengthens confidence in findings. Reviewer skepticism about anonymized review (C51) is an important contextual finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C73",
+      "C74",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors conclude that post-submission administrative redaction is too labor-intensive for NIH-scale implementation and cannot fully obscure identity. They propose two competing explanations for why redaction worsened White PIs' scores: either it reduced halo effects (suggesting blinding could improve fairness) or it created a mismatch between writing and review conditions (suggesting no lasting benefit). The findings support further evaluation of alternative blinding approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C73-C74, C82-C85, C92-C94 present interpretations and recommendations. The conclusion about labor intensity (C56) is well-supported by data (C28, C52). However, the competing explanations (C74, C82-C83) remain speculative, and the authors cannot definitively determine which mechanism explains their findings. The regression-to-the-mean explanation (C85) for unexpected matched sample results is plausible but speculative. Recommendations for alternative approaches (C92-C93) are reasonable but not empirically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C86",
+      "C87"
+    ],
+    "result": "The discussion contextualizes findings within broader issues of scientific evaluation, including citation metrics, halo effects, and structural factors that favor White PIs. The authors note that NIH applications don't include race fields, reviewers guessed race after scoring, and may have been aware of the study's focus on racial bias. The matched White sample was drawn from a larger population that scored better on average than Black applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C75-C81, C86-C87 provide important context for interpreting results. The discussion of citation metrics (C59), halo effects (C60-C61), and structural advantages (C61) is well-supported by citations. The procedural details about race guessing (C76) and potential demand characteristics (C77-C78) are important caveats. The sampling frame description (C86-C87) helps explain unexpected findings. These contextual claims appropriately acknowledge complexity and alternative explanations.",
+    "result_type": "MINOR"
+  }
+]

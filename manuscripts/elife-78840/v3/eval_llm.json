@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "TRPV4 is expressed in human trophoblasts. The authors demonstrate TRPV4 expression using RNA sequencing data from the Human Protein Atlas, RT-qPCR in primary trophoblasts and BeWo cells, and immunofluorescence in placental tissue and BeWo cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods (database analysis C32, RT-qPCR C33-C34, immunofluorescence C35-C36) converge to demonstrate TRPV4 expression in human trophoblasts. The data are shown in Figure 1 and supplementary figures with appropriate controls including antibody validation (Figure 1\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "TRPV4 is functionally active in human trophoblasts. GSK101 (TRPV4 agonist) induces sustained Ca2+ elevation and outward-rectifying currents that are blocked by GSK219 (TRPV4 antagonist) or TRPV4 siRNA knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Functional TRPV4 expression is demonstrated through pharmacological activation (C38-C39, C42) and inhibition (C40-C41, C43-C44) with appropriate controls. Both Ca2+ imaging and electrophysiology provide converging evidence. The specificity is confirmed by siRNA knockdown and the selectivity of GSK219 for TRPV4 over ionomycin-induced Ca2+ (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "TRPV4 activation by GSK101 triggers TMEM16F-dependent phospholipid scrambling in trophoblasts. GSK101 induces Ca2+ elevation followed by PS exposure and membrane remodeling in wild-type but not TMEM16F KO BeWo cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic control (TMEM16F KO cells, C47-C48) provides strong evidence that PS exposure requires TMEM16F. The temporal sequence (Ca2+ elevation followed by PS exposure, C45) and membrane remodeling (C46) are well-documented in Figure 2 and Videos 1-2. The lack of response in KO cells despite Ca2+ elevation (C47) demonstrates specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "GSK101 activates both TRPV4 and TMEM16F currents sequentially in BeWo cells. An initial rapid TRPV4 current is followed by a delayed (6-8 min) voltage- and time-dependent TMEM16F current that is absent in TMEM16F KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Patch-clamp recordings clearly distinguish two current components based on kinetics and voltage-dependence (C49-C50). The biophysical properties match known TMEM16F characteristics (C51), and the genetic control confirms identity (C52). The simultaneous measurement of current and PS exposure (C53) validates the functional coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "TRPV4 inhibition prevents TMEM16F activation without affecting TMEM16F function directly. Both pharmacological (GSK219) and genetic (siRNA) TRPV4 inhibition block GSK101-induced TMEM16F activation, while ionomycin can still activate TMEM16F in TRPV4 knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The critical control experiment (C58-C59) demonstrates that TMEM16F remains functional after TRPV4 knockdown when activated by ionomycin, proving TRPV4 acts upstream of TMEM16F. Both pharmacological (C54) and genetic (C55-C57) approaches yield consistent results, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TRPV4 and TMEM16F are functionally coupled within Ca2+ microdomains. Using differential Ca2+ buffering with EGTA and BAPTA, the authors demonstrate that BAPTA (fast chelator) but not EGTA (slow chelator) completely blocks TMEM16F activation, indicating microdomain coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The elegant use of Ca2+ chelators with different kinetics (C60-C63) provides strong evidence for microdomain coupling. The differential effects of EGTA concentration (C60-C62) and the complete block by BAPTA (C63) are consistent with established principles of Ca2+ microdomain signaling. The interpretation (C64) is well-supported by the data in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Low-dose TRPV4 stimulation induces transient, reversible, and spatially localized TMEM16F activity. 0.2 nM GSK101 triggers local PS exposure in a subset of wild-type but not TMEM16F KO cells, without causing membrane remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response experiment (C65-C70) demonstrates physiologically relevant TMEM16F activation at low Ca2+ levels. The reversibility (C67), spatial localization (C66), and genetic control (C70) are well-documented in Figure 6. The quantification (C69) shows the effect occurs in a subset of cells, which is appropriately reported. This result challenges the prevailing view that TMEM16F requires very high Ca2+ concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TRPV4 inhibition reduces trophoblast fusion in vitro. Both pharmacological inhibition (GSK219) and siRNA knockdown of TRPV4 significantly decrease fusion in BeWo cells and human trophoblast organoids, without reducing fusogen (SYNCYTIN-1) expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experimental systems (BeWo cells C71-C72, human organoids C79-C81) and approaches (pharmacological and genetic) demonstrate that TRPV4 is required for trophoblast fusion. The control showing SYN1 upregulation (C80-C81) rules out transcriptional effects on fusogens, supporting a post-transcriptional mechanism. The data are shown in Figure 7 with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TRPV4 knockout mice show no obvious placental fusion defects, likely due to species-specific differences in TRPV4 expression. Trpv4 is expressed in maternal decidua but not the labyrinth in mice, unlike the human placenta where TRPV4 is expressed in trophoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result in mice (C73-C74) is appropriately explained by expression pattern differences (C75-C78) documented in prior work. The authors correctly identify this as a limitation and provide a plausible explanation based on species-specific expression patterns. This highlights the importance of using human models for studying TRPV4 in trophoblast fusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "TMEM16F activation in intact cells occurs faster than in whole-cell patch-clamp recordings, suggesting that the whole-cell configuration disrupts cellular factors required for efficient TMEM16F activation and that TMEM16F's Ca2+ sensitivity may be higher than previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation of faster activation in intact cells (C82) is well-documented, the mechanistic explanations (C83-C84) are speculative. The claims about underestimated Ca2+ sensitivity (C84-C85) are inferences that require direct Ca2+ measurements at the site of TMEM16F activation. The hypothesis about spatiotemporal regulation (C86) is reasonable but needs additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C23",
+      "C24",
+      "C25",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "TMEM16F plays critical roles in multiple fusion processes including trophoblast syncytialization, HIV infection, and SARS-CoV-2-mediated syncytialization, as established by prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established findings from prior work (primarily Zhang et al., 2020 for trophoblasts; Zaitseva et al., 2017 for HIV; Braga et al., 2021 for SARS-CoV-2) that provide the context for the current study. The citations are appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on TMEM16F structure, function, and Ca2+ sensitivity. TMEM16F is a Ca2+-activated scramblase with lower apparent Ca2+ sensitivity than TMEM16A/B channels, requiring more robust Ca2+ elevation for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background information from the literature, appropriately cited. They set up the rationale for investigating Ca2+ sources for TMEM16F activation. The claims accurately represent current knowledge about TMEM16F biochemistry and biophysics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Previously known Ca2+ channels in trophoblasts (TRPV6 and L-type CaV) are unlikely to activate TMEM16F due to fast inactivation kinetics (TRPV6) or requirement for strong depolarization (L-type CaV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This reasoning (C26-C31) provides appropriate justification for investigating alternative Ca2+ sources. The claims about TRPV6 inactivation (C28-C29) and L-type channel properties (C30-C31) are well-supported by citations and general knowledge of channel biophysics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TRPV4 is a polymodal sensor with diverse physiological roles, and gain-of-function mutations can be lethal. The authors speculate that TRPV4 GOF mutations may contribute to placental dysfunction and perinatal lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The background on TRPV4 functions (C87-C89) is well-supported by citations. However, the speculation about GOF mutations causing placental dysfunction (C91) is not directly tested and remains hypothetical. This is appropriately presented as speculation for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Speculative discussion of potential mechanisms and therapeutic implications. The authors propose that PS exposure may serve as a 'fuse-me' signal and that targeting TRPV4-TMEM16F coupling might be therapeutic for HIV and COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (C95-C96) that extend beyond the experimental data. While plausible based on the findings, they require substantial additional work to validate. The authors appropriately present these as hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Background on placental syncytiotrophoblast structure and function. The syncytiotrophoblast is a multinucleated layer formed by fusion of cytotrophoblasts that performs critical materno-fetal exchange functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C97-C99) provide essential background on placental biology, appropriately cited to established literature. They contextualize why understanding trophoblast fusion mechanisms is important.",
+    "result_type": "MINOR"
+  }
+]

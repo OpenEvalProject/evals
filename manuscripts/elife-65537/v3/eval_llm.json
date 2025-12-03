@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "FPA co-purifies with proteins involved in mRNA 3\u2032 end processing and transcription termination. IVI-MS identified 203 FPA co-purifying proteins, including 14 cleavage and polyadenylation factors (CPFs), spliceosome components, both Pol II subunits, kinases/phosphatases that modify Pol II CTD, and the exonuclease XRN3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are supported by IVI-MS data with appropriate controls (Col-0 vs 35S::FPA:YFP) and three biological replicates. The identification of CPFs, Pol II-associated factors, and transcription termination machinery is consistent with FPA's proposed role in 3\u2032 end processing. The enrichment criteria (median log2 fold change >2) and validation by orthogonal RNA-binding proteome analysis strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "FPA is enriched at the 3\u2032 end of genes and co-localizes with Pol II phosphorylated at Ser2 of the CTD. ChIP-Seq shows strong correlation between FPA and Pol II Ser2 occupancy (Spearman's \u03c1 = 0.67, p<2\u00d710\u207b\u00b3\u2070\u2078), and FPA is required for proper Pol II Ser2 distribution at PIF5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by ChIP-Seq data showing FPA enrichment at 3\u2032 ends and strong statistical correlation with Pol II Ser2. The PIF5 example provides functional validation. The metagene analysis and genome-wide correlation provide robust evidence for FPA's association with transcription termination machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C102"
+    ],
+    "result": "FPA predominantly controls poly(A) site selection genome-wide. Using three orthogonal RNA sequencing technologies (Nanopore DRS, Helicos DRS, Illumina RNA-Seq), the authors show that loss of FPA function leads to distal poly(A) site selection (77.9-79.0% of affected loci), while FPA overexpression promotes proximal poly(A) site selection (56.7-75.3% of affected loci). Reciprocal regulation was observed at 16-44 loci depending on the technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C42 and C102 are strongly supported by convergent evidence from three independent sequencing technologies with appropriate replicates (3-6 biological replicates per technology). The reciprocal patterns in fpa-8 vs 35S::FPA:YFP provide strong evidence for FPA's direct role in poly(A) site choice. Statistical significance is demonstrated (hypergeometric tests, FDR corrections), and the overlap between technologies (39.6-44.0%) is reasonable given technical differences. The EMD metric appropriately accounts for both abundance and distance of poly(A) sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Illumina RNA-Seq identified 2535 loci with differential RNA processing in fpa-8 and 1747 loci in 35S::FPA:YFP, with most changes representing upregulation in fpa-8 (consistent with readthrough) and both up- and downregulation in 35S::FPA:YFP (consistent with proximal polyadenylation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by Illumina RNA-Seq data with six biological replicates and appropriate statistical thresholds (FDR < 0.05, absolute logFC >1). The patterns of differential expression are consistent with the proposed mechanisms of FPA action. However, the annotation-agnostic approach and the large number of affected loci suggest some findings may be indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "FPA does not influence global levels of mRNA m6A methylation, despite components of the m6A writer complex co-purifying with FPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by LC-MS/MS analysis showing no difference in m6A/A ratios between Col-0, fpa-8, and 35S::FPA:YFP, with vir-1 serving as a positive control. This negative result is important for ruling out an indirect mechanism and distinguishing plant FPA from its human/Drosophila homologs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "FPA-dependent poly(A) site choice is not an indirect consequence of FPA control of IBM1. Only 10.6% of loci with altered poly(A) site choice in 35S::FPA:YFP have altered H3K9me2 in ibm1 mutants (hypergeometric p=0.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by analysis of two independent H3K9me2 ChIP-Seq datasets in ibm1 mutants. The lack of significant overlap (hypergeometric p=0.97) argues against an indirect mechanism through IBM1-mediated chromatin changes. This is an important control for ruling out a major confounding pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "NLR-associated protein domains (NB-ARC, Rx-like CC, LRR) are enriched among loci with increased proximal polyadenylation in 35S::FPA:YFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by protein domain enrichment analysis using InterPro annotations on both Nanopore and Helicos DRS datasets. The enrichment analysis appropriately uses permutation testing to assess significance. This finding establishes NLRs as major targets of FPA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Long-read Nanopore DRS enables correction of NLR gene annotations. AT5G46490 is actually a single locus with a 2.7 kb intron (not two separate genes), and RPS6 has a complex 3\u2032UTR that overlaps with a previously unannotated gene encoding an RPS6-like TIR domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by Nanopore DRS data showing full-length transcripts that span previously mis-annotated gene boundaries. The reannotations are corroborated by nanoPARE data showing capped 5\u2032 ends. These findings demonstrate the value of long-read sequencing for resolving complex NLR loci and have implications for understanding RPS6-dependent autoimmunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Half (50%) of expressed NLR genes show FPA-dependent alternative polyadenylation. FPA-sensitive NLRs are significantly enriched in major gene clusters (59.5%, chi\u00b2p=0.02) and among NLRs under high diversifying selection (71.4%, chi\u00b2p=0.02), suggesting association with rapidly evolving NLRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by systematic analysis of 124 expressed NLRs using Nanopore DRS with manual curation. The statistical associations with gene clusters and diversifying selection are significant, though the association with synteny diversity is not (p=0.09). The high proportion of FPA-sensitive NLRs (50%) is a major finding, though the manual curation approach may introduce some subjectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "FPA controls readthrough and chimeric RNA formation at 17 NLR genes. Examples include increased readthrough into downstream TEs at AT1G58848/AT1G59218 in fpa-8, and chimeric RNA formation between AT1G63730 and AT1G63740 in fpa-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by Nanopore DRS and Helicos DRS data showing readthrough transcripts and chimeric RNAs. The AT1G63730-AT1G63740 chimera is statistically significant (Helicos EMD = 1099, FDR = 0.02). However, the functional consequences of these chimeric RNAs are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "FPA controls intronic polyadenylation at 17 NLR genes. At AT1G69550, a proximal poly(A) site in intron 3 produces transcripts encoding a protein lacking most of the LRR domain; readthrough at this site is increased in fpa-8 (Helicos EMD = 1271, FDR = 1.2\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by Nanopore DRS data showing intronic poly(A) sites and statistical analysis of their usage. The AT1G69550 example is well-documented with significant changes in fpa-8. However, the functional consequences of the truncated protein are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "FPA controls premature termination within protein-coding exons at 45 NLR genes, producing stop-codonless transcripts. At RPP28, multiple exonic poly(A) sites were detected with reciprocal regulation by FPA (Helicos EMD = 859-912, FDR < 10\u207b\u2078). At AT5G40060, exonic polyadenylation produces a transcript that may encode a TIR-only protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by Nanopore and Helicos DRS data showing exonic poly(A) sites with strong statistical significance. The stop-codonless nature of these transcripts is inferred from the data and is consistent with non-stop decay targeting. The AT5G40060 example involving a uORF is well-reasoned but the translation efficiency and protein production are not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "At seven NLR genes, exonic proximal polyadenylation is associated with upstream intron retention. At RPS4, intron 3 retention in 35S::FPA:YFP is associated with proximal polyadenylation in exon 4 (Helicos EMD = 34, not significant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 are partially supported. While Nanopore DRS shows the association between intron retention and exonic polyadenylation at seven genes, the RPS4 example is not statistically significant (EMD = 34, not significant). The mechanistic link between intron retention and polyadenylation is inferred but not directly tested. Additional validation would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "FPA controls complex alternative polyadenylation at RPP4, including chimeric RNA formation with downstream TE AT4G16870, cryptic splicing producing TIR-domain-only transcripts, and intronic proximal polyadenylation. Loss of FPA decreases chimeric RNA formation, while FPA overexpression increases intronic proximal polyadenylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are supported by convergent evidence from Nanopore DRS, Helicos DRS, and Illumina RNA-Seq showing multiple modes of FPA-dependent regulation at RPP4. The cryptic splicing event producing TIR-only transcripts is particularly well-documented. However, the functional consequences of these different transcript isoforms are not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "FPA controls RPP7 expression through multiple mechanisms, with the major effect being premature termination in protein-coding exon 6. Three poly(A) sites in exon 6 produce stop-codonless transcripts; their usage increases from 25% in Col-0 to 63% in 35S::FPA:YFP, reducing protein-coding transcripts from 77% to 23%. RNA gel blot analysis confirms decreased full-length RPP7 transcripts in 35S::FPA:YFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 are strongly supported by convergent evidence from Nanopore DRS, Helicos DRS, and RNA gel blot analysis. The quantification of transcript isoforms is based on read counts and is consistent across technologies. The RNA gel blot provides orthogonal validation of decreased full-length transcripts. This is a comprehensive characterization of FPA's effect on a single NLR gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "FPA overexpression compromises RPP7-dependent immunity to Hpa-Hiks1. While Col-0, fpa-7, and fpa-8 are resistant (median: 0 sporangiophores), 35S::FPA:YFP plants show significantly increased susceptibility (median: 3 sporangiophores, p=3.8\u00d710\u207b\u2079 vs pFPA::FPA control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 are supported by pathogenesis assays with appropriate controls (Col-0, Ksk-1, fpa-7, fpa-8, pFPA::FPA) across three independent experiments. The statistical analysis using negative binomial regression is appropriate for count data. The result demonstrates functional consequences of FPA-dependent alternative polyadenylation. However, the mechanism linking reduced full-length RPP7 transcripts to compromised immunity is inferred rather than directly demonstrated (e.g., through RPP7 protein quantification or complementation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Widespread premature transcription termination of NLR genes by FPA has functional consequences for immunity. Half of expressed NLRs are sensitive to FPA, with FPA predominantly promoting exonic polyadenylation. At RPP7, increased exonic polyadenylation by FPA overexpression compromises immunity to Hpa-Hiks1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 synthesize the major findings and are supported by the combined evidence from genome-wide analysis (50% of NLRs affected) and functional validation at RPP7. The conclusion that transcription termination plays an important role in NLR regulation and evolution is well-supported, though the evolutionary implications are somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Components of the m6A writer complex co-purify with FPA, but unlike related proteins in human and Drosophila, FPA is not required to maintain global levels of m6A modification in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by IVI-MS data showing co-purification and LC-MS/MS data showing no change in m6A levels. This distinguishes plant FPA from its animal homologs and rules out an indirect mechanism through m6A modification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "FPA specifically interacts with CID-containing PCF11 paralogs (PCFS2, PCFS4) but not CID-lacking paralogs (PCFS1, PCFS5), suggesting FPA controls alternative polyadenylation by altering Pol II speed and transcription termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by IVI-MS data showing selective co-purification. The mechanistic interpretation is reasonable given the known functions of PCF11 CID domains in transcription termination, but remains inferential. Direct tests of Pol II elongation rate or termination efficiency would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The FPA SPOC domain may interact with Pol II CTD, possibly in conjunction with CID domains of PCFS2 and PCFS4, based on conservation of electropositive patches with the human SPOC domain protein PHF3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 are supported by citations to structural studies, but C114 is speculative. The conservation of one electropositive patch suggests possible CTD interaction, but this is not experimentally tested. Direct binding assays or structural studies would be needed to support this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Long-read Nanopore DRS reveals that RPS6 is transcribed through a previously unrecognized downstream gene encoding an RPS6-like TIR domain, and expression of this gene is dependent on the RNA exosome component HEN2, which suppresses RPS6-dependent autoimmune phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by Nanopore DRS data showing the novel TIR-encoding gene and its dependence on HEN2. The connection to RPS6-dependent autoimmunity is supported by citation to Takagi et al., 2020. This finding provides important context for understanding RPS6-mediated autoimmunity, though the functional role of the TIR-only protein is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "FPA controls NLR 3\u2032 end formation through three mechanisms: (i) preventing readthrough in 3\u2032UTRs, (ii) promoting intronic polyadenylation, and (iii) promoting exonic polyadenylation producing stop-codonless transcripts. These mechanisms have diverse consequences including NMD targeting, production of protein isoforms (e.g., TIR-only proteins), and altered 3\u2032UTR biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C128 synthesize the findings and are supported by the combined data from multiple NLR genes. The three modes of regulation are well-documented. The consequences are largely inferred from known biology (e.g., NMD targeting of long 3\u2032UTRs, functions of TIR-only proteins) rather than directly tested in this study, but the inferences are reasonable and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Alternative polyadenylation may enable dynamic regulation of NLR expression during pathogen surveillance vs. infection, facilitate rapid NLR evolution while reducing autoimmunity, contribute to cryptic genetic variation, and directly facilitate neofunctionalization through chimeric RNA formation and retrotransposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C134 are largely speculative models for the evolutionary and regulatory significance of FPA-dependent NLR regulation. While the models are plausible and supported by citations to relevant literature, they are not directly tested in this study. These represent interesting hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "FPA-dependent exonic termination at RPP7 is conserved across the RPP7 locus and may modulate hybrid necrosis by limiting expression of RPP7-like proteins and HR4. FPA also controls DM10, which can cause autoimmunity when truncated, suggesting FPA overexpression could trigger autoimmune phenotypes in some genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 are supported by data showing FPA regulation of multiple RPP7-like genes. Claims C137-C142 are supported by citations to hybrid necrosis studies. However, C140 and C142 are speculative - the potential for FPA to rescue or trigger autoimmunity in specific genetic backgrounds is not tested. These are reasonable hypotheses but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "RNA-binding protein-dependent modulation of NLR expression may be a general phenomenon (supported by CPSF30 suppression of autoimmunity) and could be targeted by pathogen effectors (as seen with HopU1 targeting AtGRP7 and Pi4089 targeting StKRBP1). This mechanism might explain quantitative disease resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C151 are supported by citations showing that other RNA-binding proteins affect NLR regulation and that pathogen effectors can target RNA-binding proteins. However, the extension to FPA as a potential effector target and the link to quantitative disease resistance are speculative. These are interesting hypotheses but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Long-read Nanopore DRS provides superior insight into NLR complexity compared to short-read technologies. The EMD metric appropriately captures both abundance and distance of poly(A) sites. A combined approach using long-read sequencing to generate bespoke annotations for short-read analysis is valuable until long-read throughput matches short-read technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C158 are supported by the comparative analysis of three sequencing technologies and the successful application of the EMD metric. The methodological insights are well-demonstrated through the reannotation of complex NLR loci and the complementary strengths of different technologies. The recommendation for combined approaches is practical and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Premature transcription termination of NLR genes is widespread (50% of expressed NLRs). Nanopore DRS improved NLR annotation accuracy and revealed a layer of regulation that may influence NLR evolution. Continued development of full-length RNA sequencing approaches will likely reveal other important aspects of biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 are supported by the systematic analysis of NLR genes and the successful reannotation of complex loci. C161 is a reasonable extrapolation based on the success of the approach. These claims effectively summarize the major contributions of the study.",
+    "result_type": "MAJOR"
+  }
+]

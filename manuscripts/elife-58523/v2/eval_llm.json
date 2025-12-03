@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C34",
+      "C38",
+      "C106"
+    ],
+    "result": "Mice use concentration gradient cues to solve the olfactory search task. Performance decreases with decreasing concentration ratio (\u0394C) while remaining constant when absolute concentration varies but gradient is held constant, demonstrating gradient-guided rather than intensity-based navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C34, C38, and C106 are well-supported by experimental data showing performance varies with gradient magnitude (Figure 2D) but not with absolute concentration when gradient is constant (Figure 2E, 90:30 vs 30:10 conditions). Statistical tests confirm these differences, and the experimental design appropriately controls for alternative strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Stereo olfaction is not necessary for task performance; mice rely primarily on temporal comparisons across sniffs. Naris occlusion did not significantly impact performance or path tortuosity, though trial duration showed a small increase attributable to surgical procedure rather than occlusion itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39, C42, and C43 are supported by naris occlusion experiments (Figure 2F) with appropriate statistical controls including sham surgery. The inference that temporal comparisons play a larger role (C43) is reasonable given the lack of stereo deficit, though direct evidence for temporal comparison mechanisms is cited rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Respiration and nose movement are synchronized with tens of milliseconds precision during task performance. Nose speed peaks at inhalation onset, yaw velocity reaches peak centrifugal velocity at inhalation, and Z-velocity shows coordinated modulation with the sniff cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C52-C55 are well-supported by kinematic data in Figure 5 showing precise temporal alignment between movement parameters and sniffing. Statistical validation against shuffled controls (C55, p<0.001) confirms these modulations exceed chance expectations. The temporal precision is directly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Sniff-synchronized nose movement is a strategic behavioral state selectively deployed during task performance. This synchrony is present during trials but largely absent during inter-trial intervals, even when controlling for movement speed, and appears during premature initiation attempts despite absence of odor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C56-C61 are supported by differential kinematic synchrony between trial and ITI periods (Figure 5), with controls for movement speed (C57, Figure 5\u2014supplement 2). The observation during premature initiations (C59) and post-decision changes (C60) provide additional evidence for strategic deployment. The inference of proactive strategy (C61) is well-justified by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Movement motifs cluster into two behavioral states\u2014investigation and approach\u2014based on transition probabilities. Investigation motifs occur early in trials while approach motifs occur later, though frequent switches between states indicate continuous evidence integration rather than ballistic commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C67-C71 are supported by clustering analysis of transition probability matrix (Figure 7A) and temporal distribution of motif onsets (Figure 7B-D). The observation of frequent state switches (C70) directly supports the inference of continuous integration (C71). The analysis appropriately uses unsupervised methods to identify structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C76",
+      "C77",
+      "C95"
+    ],
+    "result": "Investigation motif onsets are precisely locked to specific phases of the sniff cycle. All investigation motifs show significant modulation in both time and phase coordinates relative to sniffing, while approach motifs show weaker or absent modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C76-C77, and C95 are supported by motif-sniff alignment analysis (Figure 8) with statistical validation via permutation tests (p<0.001 for investigation motifs). The differential modulation between investigation and approach states is clearly demonstrated. The analysis appropriately distinguishes time vs. phase coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C84",
+      "C85",
+      "C98",
+      "C100",
+      "C107"
+    ],
+    "result": "Mice sample both sides of the steepest part of the odor gradient, consistent with a serial-sniff strategy. Correct trials feature significantly increased investigation at and across the midline where gradients are steepest, rather than downwind where absolute concentrations are highest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C84-C85 are supported by occupancy analysis showing correct trials have increased investigation on the unchosen side of midline (Figure 10G, p<0.001). The spatial pattern matches gradient discriminability maps (Figure 1\u2014supplement 2D) rather than absolute concentration maps (Figure 1\u2014supplement 2C), supporting serial-sniff interpretation. Controls for stay/switch trials (C87-C88) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Investigation and approach states differ in movement speed, sniff rate, and kinematic synchrony. Investigation involves slower movement with faster sniffing and stronger sniff-synchronized kinematics, particularly for nose speed and yaw velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by state-specific analysis (Figure 7E-F) with statistical validation (Kolmogorov-Smirnov test, p<0.01). Shuffle controls confirm nose speed and yaw velocity modulation exceeds across-trial tendencies (p<0.001), though Z-velocity does not (p=0.31). The differential characterization of states is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The spatial location of investigation matters for performance. Correct trials show increased investigation in the transition zone (5-10 cm from initiation), while increased investigation near the decision line is associated with incorrect trials, indicating location-dependent utility of investigation behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by longitudinal analysis of investigation-approach index (Figure 10C, p<0.001). The location-dependent relationship between investigation and performance is clearly demonstrated, supporting the inference that investigation is not uniformly beneficial (C83). Statistical validation via permutation tests is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Mice learn the olfactory search task rapidly and robustly. Almost all mice (24/25) performed above chance in the first session of 100:0 training, with most (19/26) exceeding 80% performance within four sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by training data (Figure 2B) with appropriate statistical testing (binomial test, p<0.05). Sample sizes are adequate (n=25-26 mice) and performance criteria are clearly defined. The rapid learning is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Search behavior generalizes to novel odorants and does not rely on the trigeminal system. Mice trained on pinene showed equivalent performance with vanillin, which does not activate trigeminal fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C30 are supported by comparison of pinene and vanillin performance (Figure 2\u2014supplement 2A, p=0.827). However, sample size is small (n=3), limiting confidence. Claim C29 about vanillin's trigeminal properties is supported by citations but not directly tested. The generalization conclusion is reasonable but would benefit from larger sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C51"
+    ],
+    "result": "On odor omission probe trials, mice performed at chance with longer trial durations and more tortuous trajectories compared to odor-present trials. Active sampling increased during omission trials with more fast sniffing and head turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C51 are supported by odor omission data (Figure 2C) with appropriate statistical tests (binomial test for chance performance, Wilcoxon rank-sum for duration and tortuosity, p<0.05). These results confirm odor-dependence of performance and reveal compensatory sampling strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Sniff patterns are consistent across trials, featuring an inhalation before initiation, rapid burst of sniffs early in trial, then slower sniffing approaching target. Sniff durations during task are shorter than in inter-trial intervals and strikingly shorter than in head-fixed rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C49 are supported by sniff analysis (Figure 3A-C, G) with statistical validation (Kolmogorov-Smirnov test, p<<0.01). Comparison with head-fixed literature (C47) is appropriately cited. The characterization of sniff dynamics is thorough and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C93"
+    ],
+    "result": "Movement motif sequences can decode individual mouse identity (8/9 mice above chance) but do not distinguish between concentration gradients. Only odor omission trials produce distinguishable motif patterns, suggesting mice do not modify sampling behavior in a gradient-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C93 are supported by linear classifier analysis (Figure 6D-E) with appropriate statistical validation (p<0.01). The inability to decode gradient conditions despite successful mouse identification indicates the model captures individual differences but not stimulus-dependent modulation. The inference about lack of gradient-dependent modification (C66) is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C92"
+    ],
+    "result": "Movement trajectories vary considerably across trials and are not stereotyped. Individual mice show position biases, but these are not systematic across mice, resulting in even occupancy distribution across arena sides at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C92 are supported by occupancy analysis (Figure 3D-F, Figure 3\u2014supplement 1). The observation of individual biases that cancel at population level is clearly demonstrated. This variability motivates the unsupervised modeling approach used in subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C50"
+    ],
+    "result": "Trial duration and path tortuosity did not differ between 80:20 and 60:40 conditions, though both were slightly longer in 100:0 condition. Active sampling measures were not distinguishable across gradient or naris occlusion conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C50 are supported by behavioral metrics analysis (Figure 2D) with appropriate statistical tests (Wilcoxon rank-sum). The lack of differences between some conditions is properly reported with p>0.05. The small but significant difference in 100:0 (C36) is noted appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "When trials are oriented by choice, the overlap region between investigation and approach occupancy is displaced toward the chosen side in all individual mice, indicating mice primarily switch states while located on the side they ultimately choose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by choice-oriented occupancy analysis (Figure 9\u2014supplement 1B). The consistent displacement across individual mice strengthens the conclusion. The inference about state switching location (C80) follows logically from the spatial distribution data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C96",
+      "C97"
+    ],
+    "result": "Investigation downwind of odor ports (where absolute concentration is maximal) is increased on incorrect trials, suggesting mice do not capitalize on absolute concentration information. This pattern contradicts predictions of a single-sniff absolute concentration strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C96-C97 are supported by lateral occupancy analysis showing incorrect trials have more investigation in regions of high absolute concentration (Figure 10, Figure 1\u2014supplement 2C). This provides additional evidence against absolute concentration strategies and supports gradient-based navigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Both stay and switch trials show increased investigation at and on the unchosen side of midline for correct trials, demonstrating the advantage of midline sampling is not an artifact of trial type asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by separate analysis of stay and switch trials (Figure 10\u2014supplement 1). This control addresses a potential confound in the main analysis and strengthens the conclusion about serial-sniff strategy. The consistency across trial types is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Motif transition times indicate 'decision points' at which the animal chooses its next move.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is a hypothesis proposed by the authors with citation to similar work (Markowitz et al., 2018) but lacks direct experimental validation in this study. While the temporal structure of motif transitions is well-characterized, the interpretation as 'decision points' requires additional evidence such as neural recordings or causal manipulations to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Summary claims about mice navigating noisy gradients with robust, strategic behavioral programs involving sniff-synchronized movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are summary statements well-supported by the collective evidence from multiple experiments. These integrate findings from gradient manipulation, perturbation studies, and kinematic analysis. The characterization is accurate and appropriately synthesizes the major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims about chemotaxis, olfactory navigation strategies across species, and prior work on rodent olfactory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C24 are background statements supported by appropriate citations to established literature. These provide context for the current work and accurately represent prior knowledge in the field. The citations appear appropriate and the characterizations are consistent with the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Comparative claims about off-axis sampling strategies in bats and olfactory navigation regimes across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C101-C105 draw comparisons to other sensory systems and species, supported by appropriate citations. The analogy to bat echolocation (C99) is interesting and well-cited. The characterization of different navigation regimes (C102-C105) provides useful context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Discussion of prior work on stereo olfaction in odor trail following and mole navigation, including distance-dependent role of stereo vs. serial-sniff cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 accurately represent cited prior work on stereo olfaction and serial-sniff comparisons. These provide important context for interpreting the naris occlusion results and support the authors' hypothesis about task-dependent sensory strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Discussion claims about task design forcing serial-sniff regime, potential neural mechanisms, limitations of head-fixed studies, and need for naturalistic paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112, C114, C120-C121 are speculative statements about implications and future directions. While C113 and C116-C119 cite relevant prior work, claims about the task forcing a particular regime (C112) or limitations of head-fixed studies (C114, C120) are reasonable inferences but not directly tested. These represent thoughtful discussion but require additional evidence for full support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Discussion claims about active sensing, sensorimotor integration, technological advances, and the framework established by this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C130 provide appropriate context from prior literature on active sensing and sensorimotor integration. Claims C131-C136 about the contributions of this work are reasonable summaries of the findings. The characterization of the framework (C135-C136) is appropriate given the demonstrated utility of the behavioral analysis methods.",
+    "result_type": "MINOR"
+  }
+]

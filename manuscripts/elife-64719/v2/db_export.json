@@ -1,0 +1,1719 @@
+{
+  "submission": {
+    "id": "e750e4d5-a083-424f-8251-555b20d9105e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:20:20.313692Z",
+    "updated_at": "2025-12-03T05:20:20.313692Z"
+  },
+  "content": [
+    {
+      "id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "submission_id": "e750e4d5-a083-424f-8251-555b20d9105e",
+      "content_type": "manuscript",
+      "content_text": "# A community-led initiative for training in reproducible research\n\n## Authors\n\n- Susann Auer<sup>2</sup> ([ORCID: 0000-0001-6566-5060](https://orcid.org/0000-0001-6566-5060))\n- Nele A Haeltermann<sup>3</sup> ([ORCID: 0000-0002-1431-7581](https://orcid.org/0000-0002-1431-7581))\n- Tracey L Weissgerber<sup>4</sup> ([ORCID: 0000-0002-7490-2600](https://orcid.org/0000-0002-7490-2600))\n- Jeffrey C Erlich<sup>5</sup> ([ORCID: 0000-0001-9073-7986](https://orcid.org/0000-0001-9073-7986))\n- Damar Susilaradeya<sup>6</sup> ([ORCID: 0000-0002-4548-5924](https://orcid.org/0000-0002-4548-5924))\n- Magdalena Julkowska<sup>7</sup>\n- Ma\u0142gorzata Anna Gazda<sup>8</sup> ([ORCID: 0000-0001-8369-1350](https://orcid.org/0000-0001-8369-1350))\n- Benjamin Schwessinger<sup>10</sup> ([ORCID: 0000-0002-7194-2922](https://orcid.org/0000-0002-7194-2922)) \u2020\n- Nafisa M Jadavji<sup>11</sup> ([ORCID: 0000-0002-3557-7307](https://orcid.org/0000-0002-3557-7307)) \u2020\n- Angela Abitua<sup>13</sup>\n- Angela Abitua\n- Anzela Niraulu\n- Aparna Shah\n- April Clyburne-Sherinb\n- Benoit Guiquel\n- Bradly Alicea\n- Caroline LaManna\n- Diep Ganguly\n- Eric Perkins\n- Helena Jambor\n- Ian Man Ho Li\n- Jennifer Tsang\n- Joanne Kamens\n- Lenny Teytelman\n- Mariella Paul\n- Michelle Cronin\n- Nicolas Schmelling\n- Peter Crisp\n- Rintu Kutum\n- Santosh Phuyal\n- Sarvenaz Sarabipour\n- Sonali Roy\n- Susanna M Bachle\n- Tuan Tran\n- Tyler Ford\n- Vicky Steeves\n- Vinodh Ilangovan\n- Ana Baburamani\n- Susanna Bachle\n\n### Affiliations\n\n1. Addgene Boston United States\n2. Department of Plant Physiology, Institute of Botany, Faculty of Biology, Technische Universit\u00e4t Dresden Dresden Germany\n3. Department of Molecular and Human Genetics, Baylor College of Medicine Houston United States\n4. QUEST Center, Berlin Institute of Health, Charit\u00e9 Universit\u00e4tsmedizin Berlin Berlin Germany\n5. Shanghai Key Laboratory of Brain Functional Genomics, East China Normal University Shanghai China\n6. Medical Technology Cluster, Indonesian Medical Education and Research Institute, Faculty of Medicine, Universitas Indonesia Jakarta Indonesia\n7. Boyce Thompson Institute Ithaca United States\n8. CIBO/InBIOO, Centro de Investiga\u00e7\u00e3o em Biodiversidade e Recursos Gen\u00e9ticos, Campus Agr\u00e1rio de Vair\u00e3o Porto Portugal\n9. Departamento de Biologia, Faculdade de Ci\u00eancias, Universidade do Porto Porto Portugal\n10. Research School of Biology, Australian National University Canberra Australia\n11. Department of Biomedical Science, Midwestern University Glendale United States\n12. Department of Neuroscience, Carleton University Ottawa Canada\n13. Reproducibility for Everyone New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOpen and reproducible research practices increase the reusability and impact of scientific research. The reproducibility of research results is influenced by many factors, most of which can be addressed by improved education and training. Here we describe how workshops developed by the Reproducibility for Everyone (R4E) initiative can be customized to provide researchers at all career stages and across most disciplines with education and training in reproducible research practices. The R4E initiative, which is led by volunteers, has reached more than 3000 researchers worldwide to date, and all workshop materials, including accompanying resources, are available under a CC-BY 4.0 license at https://www.repro4everyone.org/.\n\n## Why is training in reproducibility needed?\n\nReproducibility and replicability are central to science. Reproducibility is the ability to regenerate a result using the dataset and data analysis workflow that was used in the original study, while replicability is the ability to obtain similar results in a different experimental system (Leek and Peng, 2015; Schloss, 2018). Despite their importance, studies have shown that it can be quite challenging to reproduce and replicate peer-reviewed results (Baker and Penny, 2016; Freedman et al., 2015). In the past few years, several multi-center projects have assessed the level of reproducibility and replicability in various scientific fields, and have identified major factors that are critical for repeating and confirming scientific results (Alsheikh-Ali et al., 2011; Amaral et al., 2019; Baker et al., 2014; Button et al., 2013; Cova et al., 2021; Errington et al., 2014; Friedl, 2019; Hardwicke et al., 2018; Lazic, 2010; Marqu\u00e9s et al., 2020; Open Science Collaboration, 2015; Shen et al., 2012; Stevens, 2017; Strasak et al., 2007; Weissgerber et al., 2019; Weissgerber et al., 2015). In the rest of this article we will use the term reproducibility as shorthand for reproducibility and replicability, as is often done in the life sciences (Barba, 2018).\n\nThe factors that control the reproducibility of an experiment can be grouped into the four categories shown in Figure 1. The first represents technical factors, such as variability in reagents or materials used to perform research. The second category contains factors related to flaws in study design and/or statistical analysis such as the use of inappropriate controls, insufficient sample sizes to properly power the study, inappropriate statistical analyses, underpowered studies, and others. The third category contains human factors, which includes insufficient description of methods and the use of reagents or organisms that are not shared. In addition, scientific misconduct, such as hypothesizing after results have been obtained (HARKing; Kerr, 1998) or P-hacking (Fraser et al., 2018; Head et al., 2015; Miyakawa, 2020), is hard to detect and contributes to confirmation and publication bias issues. Lastly, external factors that are beyond the researchers' control can negatively impact reproducibility; these can include scientific rewards such as a high impact publication or paywalls that restrict access to crucial information. Going forward, developing solutions to minimize these confounding factors will be of vital importance to improve scientific integrity and to further accelerate the advancement of the scientific enterprise (Botvinik-Nezer et al., 2020; Fomel and Claerbout, 2009; Friedl, 2019; Gentleman and Temple Lang, 2007; Mangul et al., 2019; Mesirov, 2010; NIH, 2020; Peng, 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64719/elife-64719-fig1-v2.jpg)\n\n**Figure 1.:** An approximation of the classification of categories that contribute to irreproducible scientific results, including technical, human, errors in study design and statistical analysis and external. Specific examples have been listed under each category.\n\nWhile the problems with experimental reproducibility have been known for decades, they have only come to the fore over the past ten years (Begley and Ellis, 2012; Munaf\u00f2 et al., 2017; Prinz et al., 2011). Within the scientific community, systemic solutions and tools are being developed that allow scientists to efficiently share research materials, protocols, data, and computational analysis pipelines (some of these tools are covered in our training materials, see Box 1). Despite their transformative potential, these tools are underutilized, as most researchers are unaware of their existence, or do not know how to incorporate them in their daily workflows.\n\nIntegrating these tools into the standard scientific workflow has the potential to shift the scientific community towards a more transparent and reproducible future. Educational initiatives with open-source materials can significantly increase the reach of teaching materials (Lawrence et al., 2015) to accelerate the uptake of best practices and existing tools for reproducible research. Several initiatives exist that offer tutorials or seminars on some aspects of reproducibility (Box 2). While they each have their strengths, none of them individually offer a scalable solution to the existing training gap in reproducibility. Here, we present Reproducibility for Everyone, a set of workshop materials and modules that can be used to train researchers in reproducible research practices. Our trainings are scalable, from a dozen attendees in an intensive workshop to a few hundred participants in an introductory workshop that can attend at once in a virtual format or a large venue. However, the reproducibility movement worldwide is growing, and as different initiatives cover various aspects of the training process, they can together help bridge the reproducible training gap.\n\n## Reproducibility for Everyone (R4E)\n\nR4E was formed in 2018 to address the challenges of integrating reproducible research practices in life science laboratories across the globe. Our mission is to increase awareness of the factors that affect reproducibility, and to promote best practices for reproducible and transparent scientific research. We offer open access introductory materials and workshops to teach scientists at all career stages and across disciplines about concrete steps they can take to improve the transparency and reproducibility of their research. All workshops are offered free of charge. We developed eight modules as independent, in-depth slide sets focusing on different aspects of the day-to-day scientific workflow, allowing trainers to customize the workshop and adapt it to audiences in different disciplines (Box 1). R4E targets mainly biological and medical research practices (reagent and protocol sharing, data management) and in part computer science (bioinformatic tools) as evidenced by the range of trainings offered so far. Tools we discuss could also be useful for disciplines close to biological research like bioengineering, biophysics, (bio)chemistry, etc. Some training modules, especially Data management, Data visualization and Figure design, might be valuable for qualitative research that collects and analyzes text and other non-numerical data.\n\nAll materials, including recordings of previous R4E workshops and webinars, are available at https://www.repro4everyone.org/ (RRID:SCR_018958). The goal of R4E is to provide scientists with a clear overview of existing reproducibility-promoting tools, as well as to give scientists the opportunity to revisit all training material when needed, by providing them with full access to all training materials so they learn at their own pace. In addition, we welcome each trainee to fine-tune the material for their own field of expertise and to train their peers. For trainees who want to help run one of our workshops we offer the train-the-trainer approach: We meet with the trainee before the workshop and decide together which section of the material the trainee will present. Then we go through the material together, share speaker notes and practice with the trainee if needed to stay in time during the workshop.\n\nWe have developed materials for both introductory and intensive workshop formats that are described below:\n\nOver the years, our community has grown and diversified substantially, consisting of scientists who taught one, or many R4E workshops. To date, we have reached more than 3000 researchers through over 30 workshops, which were predominantly held at international conferences and spanned numerous life science disciplines (e.g. ecology, biotechnology, plant sciences, neuroscience and many others). In addition, we have hosted several webinars that allowed researchers from all around the world to join, including webinars for early career scientists participating in the eLife Community Ambassadors Program. Investigators and conference organizers can request to host a workshop led by our volunteers or use our materials to learn more about responsible research practices and offer their own training.\n\nThe goal of our training is to introduce participants to a reproducible scientific workflow. Individual scientists or laboratories can make their research more reproducible by implementing as many of the steps introduced in our workshops as they are comfortable with (Figure 2). Feedback on our workshops indicate that 80% of participants learned important new aspects of reproducibly research practices and are very likely to implement at least some of the presented tools in their own research workflows in the\u00a0future.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64719/elife-64719-fig2-v2.jpg)\n\n**Figure 2.:** From top to bottom, approaches that can be used on their own or in combination to increase the reproducibility of experiments, ordered from least reproducibility to most. The column on the right includes details of tools and resources than can be used to help scientists take each specific approach.\n\nIt is important to point out that this will likely work best as a stepwise, iterative process to avoid scientists from feeling overwhelmed with implementing too many changes at once. When writing a research paper, the largest impact on the reproducibility of your work can be made by incorporating the following changes: adding a detailed list of materials used for the research, that includes research resource identifiers (RRIDs; https://scicrunch.org/resources) and catalog numbers for all materials (kits, antibodies, seeds, cell lines, organisms, etc.) that were created or used during the study. Ideally, newly generated reagents or organisms are deposited at appropriate repositories to enable easy access for other scientists. Incorporating a detailed and specific methods section is crucial to reproduce the research. Ideally, protocols are deposited at a repository, and the DOI number of the respective protocol is incorporated in the methods section. Large data sets, including all metadata, should be deposited in public data repositories to generate findable, accessible, interoperable, and reusable (FAIR) data (Sansone et al., 2019). Finally, bioinformatic analytic pipelines and scripts can easily be shared via Github, Anaconda, or computational containers such as Singularity. At a minimum, authors should list and cite all programs used, including version numbers and parameters.\n\nWe would also like to point out that a supportive environment is critical for these efforts to be properly adopted in a research environment. Being the first one to speak up about irreproducible research practices at your lab or institute can be challenging, or in some cases even isolating. In this case, getting involved with a local ReproducibiliTea journal club or reaching out to the initiative to start a chapter of your own can help you connect with like-minded individuals. Similarly, joining the R4E community and discussing these situations with our community members can help you find solutions to convince your peers and supervisors of the importance of incorporating reproducible research practices.\n\n## How can scientists use the R4E materials?\n\nThere are several ways for researchers to take advantage of the materials presented here to teach reproducible research practices. First, researchers can request a workshop run by the Reproducibility for Everyone team for a conference via email (hello@repro4everyone.org). Alternatively, researchers can use the slides and training materials available on our website to organize their own workshops. Reproducibility can be integrated into the research curriculum by asking trainees to organize and run a poster workshop at an institutional or departmental research day. Trainees can also discuss individual topics at journal clubs or as part of a methods course, after which they can develop plans to implement the identified solutions in their own research. Upcoming workshops and other opportunities to get involved and contribute will be shared through our Twitter account (@repro4everyone) and website (https://www.repro4everyone.org/).\n\n## Conclusions\n\nWidespread adoption of new tools and practices is urgently needed to make scientific publications more transparent and reproducible. This transition will require scalable and adaptable approaches to reproducibility education that allow scientists to efficiently learn new skills and share them with others in their lab, department and field.\n\nR4E demonstrates how a common, public set of materials curated and maintained by a small group may form the basis for a global initiative to improve transparency and reproducibility in the life-sciences. Flexible materials allow instructors to adapt both the content and workshop format to meet the needs of the audience in their discipline. Continued training on reproducibility could be promoted in the laboratory by for instance changing every nth journal club to an educational meeting, discussing the latest developments in the reproducibility field.\n\nOur workshops have reached over 3000 learners on six continents and continue to expand each year, offering a unique opportunity to train the next generation of scientists. Moving forward, R4E plans to broaden our reach by translating the existing materials into different languages and bring reproducibility training to more non-native English-speaking scientists. However, increasing training in reproducible research practices alone will not suffice to make all scientific findings reproducible. To achieve this goal, higher-level changes are needed to reduce the hypercompetitive nature of scientific research. Large structural and cultural changes are needed to transition from rewarding only breakthrough scientific findings, to promoting those that were performed using reproducible and transparent research practices.\n",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "0ae7267e-069f-4adc-a28e-93d5e0076203",
+      "submission_id": "e750e4d5-a083-424f-8251-555b20d9105e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Helena P\u00e9rez Valle, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64719.sa1](https://doi.org/10.7554/eLife.64719.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"A community-led initiative for training in reproducible research\" to eLife for consideration as a Feature Article. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Helena P\u00e9rez Valle, and the eLife Features Editor, Peter Rodgers.\n\nThe reviewers and editors have discussed the reviews and we have drafted this decision letter to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript provides an overview of the community-led project Reproducibility for Everyone (R4E, https://repro4everyone.org/). R4E is already a useful training resource and community that provides introductory training sessions across a range of openness and reproducibility practices. Here the project is described so that researchers can make use of it to develop and teach reproducibility skills. This is a good collection of resources, and an excellent base collection for expansion via community engagement.\n\nEssential revisions:\n\n1. Please edit the first sentence of the abstract to temper it, for example, by being more specific about what conducting reproducible research does for the transparency and usefulness of research, and please avoid references to the scientific method in the article.\n\n2. The article clearly defines replicable and reproducible separately but then uses the word reproducibility to encompass the things discussed in the paragraph from line 88-105 (lines are numbered lines from the PDF) which mainly describe issues with replicability. Please correct slippage of terminology throughout the article.\n\n3. Please edit Figure 1 so that it is not presented as a Venn diagram (i.e. each factor should appear under just one heading, and the label \"lack of training\" should be removed) and edit the caption to describe the figure closely and explain that it is a rough approximation for the taxonomy of factors that contribute to research not being reproducible.\n\n4. If possible, it would be informative for the article to include more statistics and comments about the reach and impact of the Reproducibility for All project. If any participant feedback or similar is available for sharing, please report it in the article. Information on whether the workshops are as successful when delivered virtually as they are in person would be particularly useful given the current context and the fact that scalability may rely on virtual formats.\n\n5. Please consider adding a paragraph at an appropriate place in the paper covering the following comments made by the referees:\n\n\"Between the individual and systemic levels of science is a cultural level, including mentor and peer support, lab culture, and supervision. While the authors are rightly proud of their existing reach and have laudable ambitions for translating materials into different languages, they miss an opportunity to address cultural barriers. Including acknowledgement of and advice for researchers who are in unsupportive environments (or researchers who are pushing the reproducibility envelope for their institutions), with suggestions of where practical and social support can be found, would be a valuable inclusion. Addressing the isolation which can surround being the first in an institution to try to address reproducibility issues is, in my experience organising ReproducibiliTea Journal Clubs, all the more relevant for institutions outside the elite English-speaking universities.\"\n\n\"In my reading there is an implicit assumption throughout the manuscript that improving training and improving access to training should solve issues with reproducibility. I agree that training is part of the solution, but what this manuscript does not discuss in depth is grapple with the dynamics between for example improved training and pervasive incentives to not spend time on reproducibility. I do acknowledge that I may be reading too much into this aspect and that it is not the purpose of this manuscript to discuss the research culture issues around reproducibility other than to introduce R4E.\"\n\n6. Please cite papers (or repositories of papers) that have enacted the practices summarised in Page 8.\n\n7. Please include a discussion about the fields or kinds of research that the reproducibility pipeline refers to. It would be useful for the reader to know whether the approach presented by R4E was developed with different disciplines in mind, or a specific biological research focus that then needs to be ported elsewhere. A limitation of some of the 'open science' projects, for example, has been to narrow focus so much to a specific fields' needs or a specific research type that readers could presume that the approach was simply not valid for their research. R4E seems to cross this boundary nicely and this could be highlighted more in the manuscript. It may also be worth making a note of the applicability of these pipelines to very different research approaches, for example qualitative approaches.\n",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f8446f6-2764-4452-a5a6-bbe40641a76d",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C1",
+      "claim": "Reproducibility is the ability to regenerate a result using the dataset and data analysis workflow that was used in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducibility is the ability to regenerate a result using the dataset and data analysis workflow that was used in the original study, while replicability is the ability to obtain similar results in a different experimental system (Leek and Peng, 2015; Schloss, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition is supported by citations to Leek and Peng, 2015 and Schloss, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "790a2472-e652-4138-abd1-f32b948950ac",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C2",
+      "claim": "Replicability is the ability to obtain similar results in a different experimental system.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducibility is the ability to regenerate a result using the dataset and data analysis workflow that was used in the original study, while replicability is the ability to obtain similar results in a different experimental system (Leek and Peng, 2015; Schloss, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition is supported by citations to Leek and Peng, 2015 and Schloss, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "a7360787-29d9-4a79-b8ce-6f7dddcc3db6",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C3",
+      "claim": "It can be quite challenging to reproduce and replicate peer-reviewed results.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their importance, studies have shown that it can be quite challenging to reproduce and replicate peer-reviewed results (Baker and Penny, 2016; Freedman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies by Baker and Penny, 2016 and Freedman et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "33b47a15-ec7d-4121-9aa0-c487cd8de6e2",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C4",
+      "claim": "Several multi-center projects have assessed the level of reproducibility and replicability in various scientific fields in the past few years.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past few years, several multi-center projects have assessed the level of reproducibility and replicability in various scientific fields, and have identified major factors that are critical for repeating and confirming scientific results (Alsheikh-Ali et al., 2011; Amaral et al., 2019; Baker et al., 2014; Button et al., 2013; Cova et al., 2021; Errington et al., 2014; Friedl, 2019; Hardwicke et al., 2018; Lazic, 2010; Marqu\u00e9s et al., 2020; Open Science Collaboration, 2015; Shen et al., 2012; Stevens, 2017; Strasak et al., 2007; Weissgerber et al., 2019; Weissgerber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to multi-center projects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "b1056ed7-eada-4e1f-ad03-6d920e8afd25",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C5",
+      "claim": "Multi-center projects have identified major factors that are critical for repeating and confirming scientific results.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past few years, several multi-center projects have assessed the level of reproducibility and replicability in various scientific fields, and have identified major factors that are critical for repeating and confirming scientific results (Alsheikh-Ali et al., 2011; Amaral et al., 2019; Baker et al., 2014; Button et al., 2013; Cova et al., 2021; Errington et al., 2014; Friedl, 2019; Hardwicke et al., 2018; Lazic, 2010; Marqu\u00e9s et al., 2020; Open Science Collaboration, 2015; Shen et al., 2012; Stevens, 2017; Strasak et al., 2007; Weissgerber et al., 2019; Weissgerber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to multi-center projects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "92d1ea9b-a797-4307-a950-7a6c70996a2c",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C6",
+      "claim": "The term reproducibility is often used as shorthand for reproducibility and replicability in the life sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rest of this article we will use the term reproducibility as shorthand for reproducibility and replicability, as is often done in the life sciences (Barba, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Barba, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "d85f4ecc-a2f5-4afb-b601-3fe3d027ffc7",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C7",
+      "claim": "The factors that control the reproducibility of an experiment can be grouped into four categories: technical factors, factors related to flaws in study design and/or statistical analysis, human factors, and external factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The factors that control the reproducibility of an experiment can be grouped into the four categories shown in Figure 1. The first represents technical factors, such as variability in reagents or materials used to perform research. The second category contains factors related to flaws in study design and/or statistical analysis such as the use of inappropriate controls, insufficient sample sizes to properly power the study, inappropriate statistical analyses, underpowered studies, and others. The third category contains human factors, which includes insufficient description of methods and the use of reagents or organisms that are not shared. In addition, scientific misconduct, such as hypothesizing after results have been obtained (HARKing; Kerr, 1998) or P-hacking (Fraser et al., 2018; Head et al., 2015; Miyakawa, 2020), is hard to detect and contributes to confirmation and publication bias issues. Lastly, external factors that are beyond the researchers' control can negatively impact reproducibility; these can include scientific rewards such as a high impact publication or paywalls that restrict access to crucial information.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is explicitly stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "8f2cda95-2692-4c72-9198-cc0b8f277f40",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C8",
+      "claim": "Technical factors affecting reproducibility include variability in reagents or materials used to perform research.",
+      "claim_type": "EXPLICIT",
+      "source": "The first represents technical factors, such as variability in reagents or materials used to perform research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of technical factors in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "d5c5aee9-8b38-4f39-9b63-73ea87980c59",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C9",
+      "claim": "Factors related to flaws in study design and/or statistical analysis include the use of inappropriate controls, insufficient sample sizes to properly power the study, inappropriate statistical analyses, and underpowered studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The second category contains factors related to flaws in study design and/or statistical analysis such as the use of inappropriate controls, insufficient sample sizes to properly power the study, inappropriate statistical analyses, underpowered studies, and others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are explicitly listed as examples of study design and statistical analysis flaws.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "152cd9b4-5e02-49c3-9629-25d480fffc45",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C10",
+      "claim": "Human factors affecting reproducibility include insufficient description of methods and the use of reagents or organisms that are not shared.",
+      "claim_type": "EXPLICIT",
+      "source": "The third category contains human factors, which includes insufficient description of methods and the use of reagents or organisms that are not shared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are explicitly stated as examples of human factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "bde6fb1f-8c7e-4510-a7ad-fcc213a036e8",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C11",
+      "claim": "HARKing (hypothesizing after results have been obtained) is a form of scientific misconduct that is hard to detect and contributes to confirmation and publication bias issues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, scientific misconduct, such as hypothesizing after results have been obtained (HARKing; Kerr, 1998) or P-hacking (Fraser et al., 2018; Head et al., 2015; Miyakawa, 2020), is hard to detect and contributes to confirmation and publication bias issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kerr, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "14112369-2611-4eda-841e-923391b66fbe",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C12",
+      "claim": "P-hacking is a form of scientific misconduct that is hard to detect and contributes to confirmation and publication bias issues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, scientific misconduct, such as hypothesizing after results have been obtained (HARKing; Kerr, 1998) or P-hacking (Fraser et al., 2018; Head et al., 2015; Miyakawa, 2020), is hard to detect and contributes to confirmation and publication bias issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fraser et al., 2018; Head et al., 2015; and Miyakawa, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "905f455f-9200-4597-85a1-a3bf000e16bf",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C13",
+      "claim": "External factors beyond researchers' control can negatively impact reproducibility, including scientific rewards such as high impact publications or paywalls that restrict access to crucial information.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, external factors that are beyond the researchers' control can negatively impact reproducibility; these can include scientific rewards such as a high impact publication or paywalls that restrict access to crucial information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the text as examples of external factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "d32eb625-7401-4a9b-833a-fa21402d274e",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C14",
+      "claim": "Developing solutions to minimize confounding factors will be of vital importance to improve scientific integrity and to further accelerate the advancement of the scientific enterprise.",
+      "claim_type": "EXPLICIT",
+      "source": "Going forward, developing solutions to minimize these confounding factors will be of vital importance to improve scientific integrity and to further accelerate the advancement of the scientific enterprise (Botvinik-Nezer et al., 2020; Fomel and Claerbout, 2009; Friedl, 2019; Gentleman and Temple Lang, 2007; Mangul et al., 2019; Mesirov, 2010; NIH, 2020; Peng, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "fb7f702d-4a91-404d-868f-57fa9ea04bdb",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C15",
+      "claim": "Problems with experimental reproducibility have been known for decades but have only come to the fore over the past ten years.",
+      "claim_type": "EXPLICIT",
+      "source": "While the problems with experimental reproducibility have been known for decades, they have only come to the fore over the past ten years (Begley and Ellis, 2012; Munaf\u00f2 et al., 2017; Prinz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Begley and Ellis, 2012; Munaf\u00f2 et al., 2017; and Prinz et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "20dcffcb-4a96-46a1-89bb-39a190cbf60f",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C16",
+      "claim": "Within the scientific community, systemic solutions and tools are being developed that allow scientists to efficiently share research materials, protocols, data, and computational analysis pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the scientific community, systemic solutions and tools are being developed that allow scientists to efficiently share research materials, protocols, data, and computational analysis pipelines (some of these tools are covered in our training materials, see Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about current developments in the scientific community.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "c44a1c98-0651-455c-bdb3-3debaaeccdb1",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C17",
+      "claim": "Most researchers are unaware of the existence of reproducibility tools or do not know how to incorporate them in their daily workflows.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their transformative potential, these tools are underutilized, as most researchers are unaware of their existence, or do not know how to incorporate them in their daily workflows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason for underutilization of reproducibility tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "01abab11-f9d4-4e9c-a49e-709b798776f3",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C18",
+      "claim": "Integrating reproducibility tools into the standard scientific workflow has the potential to shift the scientific community towards a more transparent and reproducible future.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating these tools into the standard scientific workflow has the potential to shift the scientific community towards a more transparent and reproducible future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of tool integration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "79df880e-043d-48df-a0e1-3ea2a851b8e5",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C19",
+      "claim": "Educational initiatives with open-source materials can significantly increase the reach of teaching materials to accelerate the uptake of best practices and existing tools for reproducible research.",
+      "claim_type": "EXPLICIT",
+      "source": "Educational initiatives with open-source materials can significantly increase the reach of teaching materials (Lawrence et al., 2015) to accelerate the uptake of best practices and existing tools for reproducible research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lawrence et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "e70c3dcc-1278-4430-bf9c-a9f84a81fadc",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C20",
+      "claim": "Several initiatives exist that offer tutorials or seminars on some aspects of reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Several initiatives exist that offer tutorials or seminars on some aspects of reproducibility (Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation and references Box 2 for examples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "df3e71fc-017d-45a2-84a1-54ca48cc3886",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C21",
+      "claim": "None of the existing reproducibility initiatives individually offer a scalable solution to the existing training gap in reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "While they each have their strengths, none of them individually offer a scalable solution to the existing training gap in reproducibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of existing initiatives based on the authors' evaluation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "773e8cd8-e37c-48f7-bad5-92c86119ed54",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C22",
+      "claim": "R4E was formed in 2018 to address the challenges of integrating reproducible research practices in life science laboratories across the globe.",
+      "claim_type": "EXPLICIT",
+      "source": "R4E was formed in 2018 to address the challenges of integrating reproducible research practices in life science laboratories across the globe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about when and why R4E was formed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "596aa096-e333-4bcf-bb0f-93244ae45749",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C23",
+      "claim": "R4E's mission is to increase awareness of the factors that affect reproducibility and to promote best practices for reproducible and transparent scientific research.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mission is to increase awareness of the factors that affect reproducibility, and to promote best practices for reproducible and transparent scientific research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of R4E's mission.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "a29f4b30-7291-46d8-99d8-29f8f6d0ce5b",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C24",
+      "claim": "R4E offers open access introductory materials and workshops to teach scientists at all career stages and across disciplines about concrete steps they can take to improve the transparency and reproducibility of their research.",
+      "claim_type": "EXPLICIT",
+      "source": "We offer open access introductory materials and workshops to teach scientists at all career stages and across disciplines about concrete steps they can take to improve the transparency and reproducibility of their research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes what R4E offers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "2fdfae7f-de49-4de2-9197-fcd652c71e97",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C25",
+      "claim": "All R4E workshops are offered free of charge.",
+      "claim_type": "EXPLICIT",
+      "source": "All workshops are offered free of charge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about R4E workshop pricing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "c1ba8472-c6e0-4a31-83ac-b6afac3dd8b7",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C26",
+      "claim": "R4E developed eight modules as independent, in-depth slide sets focusing on different aspects of the day-to-day scientific workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed eight modules as independent, in-depth slide sets focusing on different aspects of the day-to-day scientific workflow, allowing trainers to customize the workshop and adapt it to audiences in different disciplines (Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the number and nature of R4E modules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "62916c1b-a152-4ee8-9a6e-76eef63a7f87",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C27",
+      "claim": "R4E modules allow trainers to customize the workshop and adapt it to audiences in different disciplines.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed eight modules as independent, in-depth slide sets focusing on different aspects of the day-to-day scientific workflow, allowing trainers to customize the workshop and adapt it to audiences in different disciplines (Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility of R4E modules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "98bfee12-a545-4c8b-90d8-864b8ce7d4aa",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C28",
+      "claim": "R4E targets mainly biological and medical research practices (reagent and protocol sharing, data management) and in part computer science (bioinformatic tools).",
+      "claim_type": "EXPLICIT",
+      "source": "R4E targets mainly biological and medical research practices (reagent and protocol sharing, data management) and in part computer science (bioinformatic tools) as evidenced by the range of trainings offered so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the primary target disciplines of R4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "52a2433b-ffc3-450a-8d20-702ea04675e3",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C29",
+      "claim": "R4E tools could be useful for disciplines close to biological research like bioengineering, biophysics, (bio)chemistry, etc.",
+      "claim_type": "EXPLICIT",
+      "source": "Tools we discuss could also be useful for disciplines close to biological research like bioengineering, biophysics, (bio)chemistry, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applicability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "fe6412e8-2fc7-4788-b982-9a37324a9943",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C30",
+      "claim": "Some R4E training modules, especially Data management, Data visualization and Figure design, might be valuable for qualitative research that collects and analyzes text and other non-numerical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Some training modules, especially Data management, Data visualization and Figure design, might be valuable for qualitative research that collects and analyzes text and other non-numerical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applicability to qualitative research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "0ef127da-97df-44c6-bf02-916cc403328e",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C31",
+      "claim": "All R4E materials, including recordings of previous R4E workshops and webinars, are available at https://www.repro4everyone.org/.",
+      "claim_type": "EXPLICIT",
+      "source": "All materials, including recordings of previous R4E workshops and webinars, are available at https://www.repro4everyone.org/ (RRID:SCR_018958).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about where materials are available.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "c7c1d873-5a31-4b39-aa7a-185d2b2f732a",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C32",
+      "claim": "The goal of R4E is to provide scientists with a clear overview of existing reproducibility-promoting tools and to give scientists the opportunity to revisit all training material when needed.",
+      "claim_type": "EXPLICIT",
+      "source": "The goal of R4E is to provide scientists with a clear overview of existing reproducibility-promoting tools, as well as to give scientists the opportunity to revisit all training material when needed, by providing them with full access to all training materials so they learn at their own pace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of R4E's goal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "f0c14c54-1576-408a-b170-81e16b341467",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C33",
+      "claim": "R4E welcomes each trainee to fine-tune the material for their own field of expertise and to train their peers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we welcome each trainee to fine-tune the material for their own field of expertise and to train their peers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes R4E's approach to material adaptation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "86e84163-8e0f-4cbf-b32b-91425150c958",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C34",
+      "claim": "R4E offers a train-the-trainer approach for trainees who want to help run workshops.",
+      "claim_type": "EXPLICIT",
+      "source": "For trainees who want to help run one of our workshops we offer the train-the-trainer approach: We meet with the trainee before the workshop and decide together which section of the material the trainee will present. Then we go through the material together, share speaker notes and practice with the trainee if needed to stay in time during the workshop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the train-the-trainer approach offered by R4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "d6c9fdab-b69a-4b62-8460-ab7e80a5c9b0",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C35",
+      "claim": "R4E has reached more than 3000 researchers to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, we have reached more than 3000 researchers through over 30 workshops, which were predominantly held at international conferences and spanned numerous life science disciplines (e.g. ecology, biotechnology, plant sciences, neuroscience and many others).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about R4E's reach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "78181598-0edd-4dfa-9c0a-f38d7169e808",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C36",
+      "claim": "R4E has conducted over 30 workshops.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, we have reached more than 3000 researchers through over 30 workshops, which were predominantly held at international conferences and spanned numerous life science disciplines (e.g. ecology, biotechnology, plant sciences, neuroscience and many others).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about the number of workshops.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "cfe1311d-5cab-4e36-8b7d-dd195c614165",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C37",
+      "claim": "R4E workshops were predominantly held at international conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, we have reached more than 3000 researchers through over 30 workshops, which were predominantly held at international conferences and spanned numerous life science disciplines (e.g. ecology, biotechnology, plant sciences, neuroscience and many others).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where R4E workshops have been held.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "0262b008-91e7-4c71-a84c-12a8aac2738b",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C38",
+      "claim": "R4E workshops have spanned numerous life science disciplines including ecology, biotechnology, plant sciences, and neuroscience.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, we have reached more than 3000 researchers through over 30 workshops, which were predominantly held at international conferences and spanned numerous life science disciplines (e.g. ecology, biotechnology, plant sciences, neuroscience and many others).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This lists examples of disciplines covered by R4E workshops.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "bedcc267-df31-4d54-900f-ee19ebd3c3dd",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C39",
+      "claim": "R4E has hosted several webinars that allowed researchers from all around the world to join.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we have hosted several webinars that allowed researchers from all around the world to join, including webinars for early career scientists participating in the eLife Community Ambassadors Program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes R4E's webinar activities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "62b0ca79-4a0b-4ce8-a58a-7a6362c85a26",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C40",
+      "claim": "R4E has hosted webinars for early career scientists participating in the eLife Community Ambassadors Program.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we have hosted several webinars that allowed researchers from all around the world to join, including webinars for early career scientists participating in the eLife Community Ambassadors Program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific webinar audience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "b7ad791d-5618-43f4-b770-f0413b454c8f",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C41",
+      "claim": "Investigators and conference organizers can request to host a workshop led by R4E volunteers or use R4E materials to offer their own training.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigators and conference organizers can request to host a workshop led by our volunteers or use our materials to learn more about responsible research practices and offer their own training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how others can engage with R4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "3e2809be-44a1-4401-a8d1-c65549f9cbf2",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C42",
+      "claim": "The goal of R4E training is to introduce participants to a reproducible scientific workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "The goal of our training is to introduce participants to a reproducible scientific workflow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the training goal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "f1f90364-b7ba-4878-a4d1-a37743739e5d",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C43",
+      "claim": "Individual scientists or laboratories can make their research more reproducible by implementing as many of the steps introduced in R4E workshops as they are comfortable with.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual scientists or laboratories can make their research more reproducible by implementing as many of the steps introduced in our workshops as they are comfortable with (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the flexible implementation approach and references Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "65519e92-04d7-4cab-91f2-9005037eae6b",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C44",
+      "claim": "80% of R4E workshop participants learned important new aspects of reproducible research practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback on our workshops indicate that 80% of participants learned important new aspects of reproducibly research practices and are very likely to implement at least some of the presented tools in their own research workflows in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement based on feedback data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "62337a0a-de20-4472-b4f8-de89a35f8e8f",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C45",
+      "claim": "80% of R4E workshop participants are very likely to implement at least some of the presented tools in their own research workflows in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback on our workshops indicate that 80% of participants learned important new aspects of reproducibly research practices and are very likely to implement at least some of the presented tools in their own research workflows in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement based on feedback data about future intentions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "688aed5b-29a7-4ea7-b7e2-bacd812857bd",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C46",
+      "claim": "Implementing reproducibility practices will likely work best as a stepwise, iterative process to avoid scientists from feeling overwhelmed with implementing too many changes at once.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to point out that this will likely work best as a stepwise, iterative process to avoid scientists from feeling overwhelmed with implementing too many changes at once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on inference about how scientists respond to change.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "4389e926-8df4-4626-b9f1-ea264556dc26",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C47",
+      "claim": "When writing a research paper, the largest impact on reproducibility can be made by adding a detailed list of materials used for the research, including RRIDs and catalog numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "When writing a research paper, the largest impact on the reproducibility of your work can be made by incorporating the following changes: adding a detailed list of materials used for the research, that includes research resource identifiers (RRIDs; https://scicrunch.org/resources) and catalog numbers for all materials (kits, antibodies, seeds, cell lines, organisms, etc.) that were created or used during the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation about what has the largest impact on reproducibility.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "692c88c7-fddb-4e36-8dfb-4dd9213e5c36",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C48",
+      "claim": "Newly generated reagents or organisms should ideally be deposited at appropriate repositories to enable easy access for other scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, newly generated reagents or organisms are deposited at appropriate repositories to enable easy access for other scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for best practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "c285e248-59a9-4775-81a1-e6806b337e7d",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C49",
+      "claim": "Incorporating a detailed and specific methods section is crucial to reproduce the research.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating a detailed and specific methods section is crucial to reproduce the research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of detailed methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "b68dbcab-ff5a-4158-999f-c2cd272f4c77",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C50",
+      "claim": "Protocols should ideally be deposited at a repository, and the DOI number of the respective protocol should be incorporated in the methods section.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, protocols are deposited at a repository, and the DOI number of the respective protocol is incorporated in the methods section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for best practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "b143930f-3fc4-42f0-8995-0712d03a4ffd",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C51",
+      "claim": "Large data sets, including all metadata, should be deposited in public data repositories to generate FAIR data.",
+      "claim_type": "EXPLICIT",
+      "source": "Large data sets, including all metadata, should be deposited in public data repositories to generate findable, accessible, interoperable, and reusable (FAIR) data (Sansone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation supported by a citation to Sansone et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "1cb0fd6f-300b-4c44-9223-883170a798dd",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C52",
+      "claim": "Bioinformatic analytic pipelines and scripts can easily be shared via Github, Anaconda, or computational containers such as Singularity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, bioinformatic analytic pipelines and scripts can easily be shared via Github, Anaconda, or computational containers such as Singularity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes methods for sharing computational resources.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "6f3a1a18-feee-4c32-8c46-7b2b8cbbe454",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C53",
+      "claim": "At a minimum, authors should list and cite all programs used, including version numbers and parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "At a minimum, authors should list and cite all programs used, including version numbers and parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for minimum reporting standards.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "798c494b-ede9-4430-8b45-5ae3a3f92511",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C54",
+      "claim": "A supportive environment is critical for reproducible research efforts to be properly adopted in a research environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We would also like to point out that a supportive environment is critical for these efforts to be properly adopted in a research environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of environment for adoption.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "981da248-35c4-4ea3-9348-2451bee472d2",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C55",
+      "claim": "Being the first one to speak up about irreproducible research practices at your lab or institute can be challenging or even isolating.",
+      "claim_type": "EXPLICIT",
+      "source": "Being the first one to speak up about irreproducible research practices at your lab or institute can be challenging, or in some cases even isolating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about potential social challenges.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "295d636d-4eaf-4444-9c01-71a084a51911",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C56",
+      "claim": "Getting involved with a local ReproducibiliTea journal club or starting a chapter can help connect with like-minded individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, getting involved with a local ReproducibiliTea journal club or reaching out to the initiative to start a chapter of your own can help you connect with like-minded individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for addressing isolation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "b065d59a-9c2c-4eb9-aecc-3f2b8528def4",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C57",
+      "claim": "Joining the R4E community and discussing situations with community members can help find solutions to convince peers and supervisors of the importance of incorporating reproducible research practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, joining the R4E community and discussing these situations with our community members can help you find solutions to convince your peers and supervisors of the importance of incorporating reproducible research practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for addressing challenges in promoting reproducibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "d306925f-369a-4506-a5dc-535dbb01d1e8",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C58",
+      "claim": "Researchers can request a workshop run by the Reproducibility for Everyone team for a conference via email.",
+      "claim_type": "EXPLICIT",
+      "source": "First, researchers can request a workshop run by the Reproducibility for Everyone team for a conference via email (hello@repro4everyone.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one way to engage with R4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "9409c016-cca1-4af4-b25c-66bb79a042f3",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C59",
+      "claim": "Researchers can use the slides and training materials available on the R4E website to organize their own workshops.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, researchers can use the slides and training materials available on our website to organize their own workshops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another way to engage with R4E materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "9e158457-3d43-4efa-a5d9-49ba53cf7865",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C60",
+      "claim": "Reproducibility can be integrated into the research curriculum by asking trainees to organize and run a poster workshop at an institutional or departmental research day.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducibility can be integrated into the research curriculum by asking trainees to organize and run a poster workshop at an institutional or departmental research day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for curriculum integration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "12819299-8e25-4a74-9cc4-48fe9186d4c7",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C61",
+      "claim": "Trainees can discuss individual reproducibility topics at journal clubs or as part of a methods course.",
+      "claim_type": "EXPLICIT",
+      "source": "Trainees can also discuss individual topics at journal clubs or as part of a methods course, after which they can develop plans to implement the identified solutions in their own research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for educational integration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "8552c0b0-da6e-4c8c-a87e-995b499ab001",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C62",
+      "claim": "Upcoming R4E workshops and opportunities to get involved will be shared through the R4E Twitter account and website.",
+      "claim_type": "EXPLICIT",
+      "source": "Upcoming workshops and other opportunities to get involved and contribute will be shared through our Twitter account (@repro4everyone) and website (https://www.repro4everyone.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how R4E communicates with the community.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "530b668a-927c-4c38-b4e7-73ed145a5041",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C63",
+      "claim": "Widespread adoption of new tools and practices is urgently needed to make scientific publications more transparent and reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "Widespread adoption of new tools and practices is urgently needed to make scientific publications more transparent and reproducible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for change in scientific practices.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "9ec5d196-4eb9-47bc-bd07-abed324a749c",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C64",
+      "claim": "The transition to more reproducible research will require scalable and adaptable approaches to reproducibility education.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition will require scalable and adaptable approaches to reproducibility education that allow scientists to efficiently learn new skills and share them with others in their lab, department and field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what is needed for the transition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "c613b975-051a-4447-83e4-af3d478e97c1",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C65",
+      "claim": "R4E demonstrates how a common, public set of materials curated and maintained by a small group may form the basis for a global initiative to improve transparency and reproducibility in the life-sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "R4E demonstrates how a common, public set of materials curated and maintained by a small group may form the basis for a global initiative to improve transparency and reproducibility in the life-sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about what R4E demonstrates as a model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "e58717fb-4732-4326-aac6-1ce1402f7211",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C66",
+      "claim": "Flexible materials allow instructors to adapt both the content and workshop format to meet the needs of the audience in their discipline.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexible materials allow instructors to adapt both the content and workshop format to meet the needs of the audience in their discipline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benefit of R4E's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "a81e4148-dc6f-40fd-bb89-eff8fb48cbd1",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C67",
+      "claim": "Continued training on reproducibility could be promoted in the laboratory by changing every nth journal club to an educational meeting discussing the latest developments in the reproducibility field.",
+      "claim_type": "EXPLICIT",
+      "source": "Continued training on reproducibility could be promoted in the laboratory by for instance changing every nth journal club to an educational meeting, discussing the latest developments in the reproducibility field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for ongoing training.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "983158e0-7b46-4664-a654-f522f5bae041",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C68",
+      "claim": "R4E workshops have reached over 3000 learners on six continents.",
+      "claim_type": "EXPLICIT",
+      "source": "Our workshops have reached over 3000 learners on six continents and continue to expand each year, offering a unique opportunity to train the next generation of scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about R4E's reach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "104f6ac8-4586-4006-8aea-52e798cd3481",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C69",
+      "claim": "R4E workshops continue to expand each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Our workshops have reached over 3000 learners on six continents and continue to expand each year, offering a unique opportunity to train the next generation of scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the growth trajectory of R4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "39900cf5-e777-4fc9-8ef8-0858609e2424",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C70",
+      "claim": "R4E offers a unique opportunity to train the next generation of scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Our workshops have reached over 3000 learners on six continents and continue to expand each year, offering a unique opportunity to train the next generation of scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about R4E's role in training.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "dbbbc953-6785-4ea3-8db1-de35ae6fb168",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C71",
+      "claim": "R4E plans to broaden its reach by translating existing materials into different languages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving forward, R4E plans to broaden our reach by translating the existing materials into different languages and bring reproducibility training to more non-native English-speaking scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes R4E's future plans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "2189e077-f1a5-4727-bd8a-4fc56329430d",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C72",
+      "claim": "R4E plans to bring reproducibility training to more non-native English-speaking scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving forward, R4E plans to broaden our reach by translating the existing materials into different languages and bring reproducibility training to more non-native English-speaking scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes R4E's future plans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "339afa32-419f-4144-bd9e-c83527b94ba9",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C73",
+      "claim": "Increasing training in reproducible research practices alone will not suffice to make all scientific findings reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "However, increasing training in reproducible research practices alone will not suffice to make all scientific findings reproducible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of training alone.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "b8d717ab-4b1a-4892-89dc-be78688f4309",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C74",
+      "claim": "Higher-level changes are needed to reduce the hypercompetitive nature of scientific research to achieve reproducible scientific findings.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this goal, higher-level changes are needed to reduce the hypercompetitive nature of scientific research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what systemic changes are needed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "6e29e23c-99c6-4487-a870-575b99d3730e",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C75",
+      "claim": "Large structural and cultural changes are needed to transition from rewarding only breakthrough scientific findings to promoting those that were performed using reproducible and transparent research practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Large structural and cultural changes are needed to transition from rewarding only breakthrough scientific findings, to promoting those that were performed using reproducible and transparent research practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about needed systemic changes in scientific culture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "7b231cf0-9e53-4a8f-ae72-6f5f370b9560",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C76",
+      "claim": "R4E trainings are scalable, from a dozen attendees in an intensive workshop to a few hundred participants in an introductory workshop.",
+      "claim_type": "EXPLICIT",
+      "source": "Our trainings are scalable, from a dozen attendees in an intensive workshop to a few hundred participants in an introductory workshop that can attend at once in a virtual format or a large venue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scalability of R4E trainings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "796b4d5d-0bde-4cb4-9fab-778c7b0ccb57",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C77",
+      "claim": "R4E workshops can accommodate attendees in a virtual format or a large venue.",
+      "claim_type": "EXPLICIT",
+      "source": "Our trainings are scalable, from a dozen attendees in an intensive workshop to a few hundred participants in an introductory workshop that can attend at once in a virtual format or a large venue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the format options for R4E workshops.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "aec70644-edd4-400b-8463-a1869522d664",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C78",
+      "claim": "The reproducibility movement worldwide is growing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reproducibility movement worldwide is growing, and as different initiatives cover various aspects of the training process, they can together help bridge the reproducible training gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the broader reproducibility movement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "07277571-a9a0-4df9-af61-1aadd59e6188",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C79",
+      "claim": "Different reproducibility initiatives covering various aspects of the training process can together help bridge the reproducible training gap.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reproducibility movement worldwide is growing, and as different initiatives cover various aspects of the training process, they can together help bridge the reproducible training gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how multiple initiatives can work together.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "8d642b10-ed24-4cce-a37b-c47e562ef58e",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C80",
+      "claim": "All R4E workshop materials and accompanying resources are available under a CC-BY 4.0 license.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe how workshops developed by the Reproducibility for Everyone (R4E) initiative can be customized to provide researchers at all career stages and across most disciplines with education and training in reproducible research practices. The R4E initiative, which is led by volunteers, has reached more than 3000 researchers worldwide to date, and all workshop materials, including accompanying resources, are available under a CC-BY 4.0 license at https://www.repro4everyone.org/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the licensing of R4E materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "8443a171-894b-4b7e-90e8-9d9064417c05",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C81",
+      "claim": "The R4E initiative is led by volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "The R4E initiative, which is led by volunteers, has reached more than 3000 researchers worldwide to date, and all workshop materials, including accompanying resources, are available under a CC-BY 4.0 license at https://www.repro4everyone.org/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about R4E's organizational structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "3940865b-d52b-4a91-9ffa-5dcee47f0ef1",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C82",
+      "claim": "R4E workshops can be customized to provide researchers at all career stages and across most disciplines with education and training in reproducible research practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe how workshops developed by the Reproducibility for Everyone (R4E) initiative can be customized to provide researchers at all career stages and across most disciplines with education and training in reproducible research practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the customizability and target audience of R4E workshops.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "bb5d55bc-3f44-478b-acb9-81a76e0a2e13",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C83",
+      "claim": "Open and reproducible research practices increase the reusability and impact of scientific research.",
+      "claim_type": "EXPLICIT",
+      "source": "Open and reproducible research practices increase the reusability and impact of scientific research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the benefits of open and reproducible research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "0d4c9380-8d0c-4607-95ea-8ddbe3ba2dc3",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C84",
+      "claim": "The reproducibility of research results is influenced by many factors, most of which can be addressed by improved education and training.",
+      "claim_type": "EXPLICIT",
+      "source": "The reproducibility of research results is influenced by many factors, most of which can be addressed by improved education and training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of education in addressing reproducibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "26ac1df0-fe25-410d-83d1-484dae973026",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "claim_id": "C85",
+      "claim": "Reproducibility and replicability are central to science.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducibility and replicability are central to science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the fundamental importance of reproducibility and replicability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e3a206c5-7b32-4734-b6bb-811b4bb7a19d",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes foundational definitions of reproducibility and replicability, positioning them as central to scientific practice. Reproducibility refers to regenerating results using the same dataset and workflow, while replicability involves obtaining similar results in different experimental systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6, and C85 are well-supported by citations to established literature (Leek and Peng, 2015; Schloss, 2018; Barba, 2018). These definitions are standard in the field and provide a clear conceptual foundation for the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "2af02cdb-710e-42e9-a084-7d27713bb7dd",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript documents that reproducibility challenges in peer-reviewed research are well-established, with multi-center projects identifying critical factors affecting reproducibility across scientific fields. While these problems have existed for decades, they have gained prominence in the past ten years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C15 are supported by extensive citations to empirical studies and multi-center reproducibility projects. The evidence base is strong, though the manuscript relies entirely on prior work without presenting new empirical data on reproducibility rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "4f2defc8-1c3a-418b-a877-97a1a43e481d",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript presents a four-category framework for factors affecting reproducibility: technical factors (reagent variability), study design/statistical flaws (inappropriate controls, insufficient sample sizes), human factors (insufficient methods description, poor sharing practices, HARKing, P-hacking), and external factors (publication incentives, paywalls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 present a comprehensive categorization supported by Figure 1 and citations. The framework is well-established in the reproducibility literature. However, the relative importance of each category is not quantified, and the framework is descriptive rather than empirically validated in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "00fe09f4-869e-41fa-b7d9-0141576a02fa",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript argues that developing solutions to minimize reproducibility barriers is critical for scientific integrity, that tools exist but are underutilized due to lack of awareness, and that educational initiatives with open-source materials can accelerate adoption of best practices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C14, C16-C19, C63-C64, and C84 make assertions about the importance of solutions and the potential of educational initiatives. While C14 and C19 cite supporting literature, claims about tool underutilization (C17) and the transformative potential of integration (C18) lack empirical support. No data are provided on current utilization rates or evidence that education alone drives adoption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "d9813277-86fc-4af2-bc45-96da940813db",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript asserts that while several reproducibility training initiatives exist, none individually offers a scalable solution to the training gap, but collectively they can help bridge this gap as the reproducibility movement grows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C20-C21 and C78-C79 make comparative assessments without providing systematic evaluation criteria or evidence. The claim that no single initiative offers a scalable solution (C21) is unsupported by comparative analysis. Box 2 is referenced but not provided in the manuscript text, limiting verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "2bb6c366-75cb-47fc-890d-a7b663ace639",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript describes the R4E initiative: formed in 2018, volunteer-led, offering free workshops with eight customizable modules targeting biological/medical research and bioinformatics, with all materials available under CC-BY 4.0 license at repro4everyone.org.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28, C31-C34, C80-C82 provide factual descriptions of R4E's structure, mission, and materials. These are verifiable statements about the initiative itself. The claims are internally consistent and specific (e.g., eight modules, CC-BY 4.0 license, website URL).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "3cd6949b-189b-4d28-a658-a786bcf644d5",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript reports that R4E has reached more than 3000 researchers through over 30 workshops across six continents, predominantly at international conferences spanning multiple life science disciplines, plus several webinars including for eLife Community Ambassadors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35-C40 and C68 provide quantitative reach metrics but lack methodological details about how these numbers were determined, whether they represent unique individuals, or how engagement was measured. No data on geographic distribution across the six continents is provided. The claim of 'more than 3000' appears in multiple claims but without supporting documentation or breakdown by workshop type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "caf6be0b-39b0-4e6d-9865-1151344916c3",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript claims that feedback indicates 80% of workshop participants learned important new aspects of reproducible research practices and are very likely to implement presented tools in their future research workflows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C44-C45 present specific quantitative outcomes (80%) but provide no methodological details about feedback collection, sample size, response rates, survey instruments, or statistical analysis. The claim conflates learning (C44) with intention to implement (C45). No data distinguish between 'very likely' and actual implementation. The evidence type is listed as 'DATA' but no data are presented or referenced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "8ed5411a-c764-4337-9df0-5779d144303a",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript outlines R4E's training approach: introducing participants to reproducible workflows with flexible, stepwise implementation. Key recommendations include detailed materials lists with RRIDs, depositing reagents/protocols in repositories, comprehensive methods sections, FAIR data deposition, and sharing computational code with version information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 and C46-C53 describe training goals and best practice recommendations supported by Figure 2 and citations (e.g., Sansone et al., 2019 for FAIR data). These are well-established practices in the reproducibility community. The stepwise approach (C46) is presented as inference but is reasonable given change management principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "87ae5db0-6206-4a46-84b4-2b8abd09e17d",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript emphasizes that a supportive environment is critical for adopting reproducible practices, acknowledges that advocating for reproducibility can be challenging or isolating, and recommends connecting with communities like ReproducibiliTea or R4E for support.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 address social and institutional barriers to reproducibility adoption. While C54-C55 are presented as inferences, they reflect documented challenges in changing research culture. The recommendations (C56-C57) are practical and acknowledge the social dimensions of research practice change.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "0e2d3f56-0015-4227-9c96-3ded91066452",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript speculates that R4E tools could be useful for disciplines adjacent to biological research (bioengineering, biophysics, biochemistry) and that some modules might be valuable for qualitative research involving non-numerical data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C30 are explicitly speculative (evidence type: SPECULATION) about potential applicability beyond the primary target audience. No evidence is provided about actual use or adaptation in these disciplines. These are reasonable hypotheses but remain untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "21b723d3-f371-4d1d-993b-ee683b218825",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript describes multiple pathways for engaging with R4E: requesting workshops via email, using materials to organize independent workshops, integrating reproducibility into curricula through poster workshops or journal clubs, with updates shared via Twitter and website.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C58-C62 provide practical information about accessing and using R4E resources. These are factual statements about available engagement mechanisms. Claims C60-C61 offer suggestions for curriculum integration that are reasonable applications of the materials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "c942ba55-cf29-4c1d-9515-0b2083e25f7f",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript argues that R4E demonstrates how a small group maintaining public materials can form the basis for a global initiative, with flexible materials allowing adaptation to different disciplines and scalable formats from dozen to hundreds of participants in virtual or in-person settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 and C76-C77 describe R4E's model and its scalability. The flexibility and scalability are supported by the description of eight modular components and multiple delivery formats. However, the claim that this 'demonstrates' a viable model (C65) would be stronger with evidence of sustained impact or adoption metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "3debc77f-621a-49be-95f2-4eba547835eb",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript discusses R4E's growth trajectory and future plans: workshops continue to expand annually, offering opportunities to train the next generation of scientists, with plans to translate materials into multiple languages to reach non-native English speakers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 states workshops 'continue to expand' but provides no quantitative growth data or trend analysis. Claims C70-C72 describe future plans and aspirations. C70's claim of offering a 'unique opportunity' is not substantiated through comparison with other initiatives. These are reasonable goals but lack supporting evidence for current growth or future feasibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "1d69d76a-dd11-4f38-a77a-298d04853126",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript concludes that training alone is insufficient for achieving reproducibility; higher-level structural and cultural changes are needed to reduce hypercompetitiveness and shift from rewarding only breakthrough findings to promoting reproducible and transparent research practices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 acknowledge the limitations of education-only approaches and call for systemic change. These are well-reasoned inferences consistent with literature on research culture and incentive structures. The manuscript appropriately recognizes that individual-level interventions must be complemented by institutional and cultural reforms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    },
+    {
+      "id": "1e8a5222-1b19-426d-aebe-6adedd9333e7",
+      "content_id": "6125b549-bd5a-4f04-83d7-1ef8c92dc5e6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript asserts that open and reproducible research practices increase the reusability and impact of scientific research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is a general statement about benefits of open science that is well-supported in the literature, though no specific citation is provided in this instance. This is accepted knowledge in the field and serves as foundational motivation for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:20:20.313692Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f8446f6-2764-4452-a5a6-bbe40641a76d",
+      "result_id": "e3a206c5-7b32-4734-b6bb-811b4bb7a19d"
+    },
+    {
+      "claim_id": "790a2472-e652-4138-abd1-f32b948950ac",
+      "result_id": "e3a206c5-7b32-4734-b6bb-811b4bb7a19d"
+    },
+    {
+      "claim_id": "92d1ea9b-a797-4307-a950-7a6c70996a2c",
+      "result_id": "e3a206c5-7b32-4734-b6bb-811b4bb7a19d"
+    },
+    {
+      "claim_id": "26ac1df0-fe25-410d-83d1-484dae973026",
+      "result_id": "e3a206c5-7b32-4734-b6bb-811b4bb7a19d"
+    },
+    {
+      "claim_id": "a7360787-29d9-4a79-b8ce-6f7dddcc3db6",
+      "result_id": "2af02cdb-710e-42e9-a084-7d27713bb7dd"
+    },
+    {
+      "claim_id": "33b47a15-ec7d-4121-9aa0-c487cd8de6e2",
+      "result_id": "2af02cdb-710e-42e9-a084-7d27713bb7dd"
+    },
+    {
+      "claim_id": "b1056ed7-eada-4e1f-ad03-6d920e8afd25",
+      "result_id": "2af02cdb-710e-42e9-a084-7d27713bb7dd"
+    },
+    {
+      "claim_id": "fb7f702d-4a91-404d-868f-57fa9ea04bdb",
+      "result_id": "2af02cdb-710e-42e9-a084-7d27713bb7dd"
+    },
+    {
+      "claim_id": "d85f4ecc-a2f5-4afb-b601-3fe3d027ffc7",
+      "result_id": "4f2defc8-1c3a-418b-a877-97a1a43e481d"
+    },
+    {
+      "claim_id": "8f2cda95-2692-4c72-9198-cc0b8f277f40",
+      "result_id": "4f2defc8-1c3a-418b-a877-97a1a43e481d"
+    },
+    {
+      "claim_id": "d5c5aee9-8b38-4f39-9b63-73ea87980c59",
+      "result_id": "4f2defc8-1c3a-418b-a877-97a1a43e481d"
+    },
+    {
+      "claim_id": "152cd9b4-5e02-49c3-9629-25d480fffc45",
+      "result_id": "4f2defc8-1c3a-418b-a877-97a1a43e481d"
+    },
+    {
+      "claim_id": "bde6fb1f-8c7e-4510-a7ad-fcc213a036e8",
+      "result_id": "4f2defc8-1c3a-418b-a877-97a1a43e481d"
+    },
+    {
+      "claim_id": "14112369-2611-4eda-841e-923391b66fbe",
+      "result_id": "4f2defc8-1c3a-418b-a877-97a1a43e481d"
+    },
+    {
+      "claim_id": "905f455f-9200-4597-85a1-a3bf000e16bf",
+      "result_id": "4f2defc8-1c3a-418b-a877-97a1a43e481d"
+    },
+    {
+      "claim_id": "d32eb625-7401-4a9b-833a-fa21402d274e",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "20dcffcb-4a96-46a1-89bb-39a190cbf60f",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "c44a1c98-0651-455c-bdb3-3debaaeccdb1",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "01abab11-f9d4-4e9c-a49e-709b798776f3",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "79df880e-043d-48df-a0e1-3ea2a851b8e5",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "530b668a-927c-4c38-b4e7-73ed145a5041",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "9ec5d196-4eb9-47bc-bd07-abed324a749c",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "0d4c9380-8d0c-4607-95ea-8ddbe3ba2dc3",
+      "result_id": "00fe09f4-869e-41fa-b7d9-0141576a02fa"
+    },
+    {
+      "claim_id": "e70c3dcc-1278-4430-bf9c-a9f84a81fadc",
+      "result_id": "d9813277-86fc-4af2-bc45-96da940813db"
+    },
+    {
+      "claim_id": "df3e71fc-017d-45a2-84a1-54ca48cc3886",
+      "result_id": "d9813277-86fc-4af2-bc45-96da940813db"
+    },
+    {
+      "claim_id": "aec70644-edd4-400b-8463-a1869522d664",
+      "result_id": "d9813277-86fc-4af2-bc45-96da940813db"
+    },
+    {
+      "claim_id": "07277571-a9a0-4df9-af61-1aadd59e6188",
+      "result_id": "d9813277-86fc-4af2-bc45-96da940813db"
+    },
+    {
+      "claim_id": "773e8cd8-e37c-48f7-bad5-92c86119ed54",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "596aa096-e333-4bcf-bb0f-93244ae45749",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "a29f4b30-7291-46d8-99d8-29f8f6d0ce5b",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "2fdfae7f-de49-4de2-9197-fcd652c71e97",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "c1ba8472-c6e0-4a31-83ac-b6afac3dd8b7",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "62916c1b-a152-4ee8-9a6e-76eef63a7f87",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "98bfee12-a545-4c8b-90d8-864b8ce7d4aa",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "0ef127da-97df-44c6-bf02-916cc403328e",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "c7c1d873-5a31-4b39-aa7a-185d2b2f732a",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "f0c14c54-1576-408a-b170-81e16b341467",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "86e84163-8e0f-4cbf-b32b-91425150c958",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "8d642b10-ed24-4cce-a37b-c47e562ef58e",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "8443a171-894b-4b7e-90e8-9d9064417c05",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "3940865b-d52b-4a91-9ffa-5dcee47f0ef1",
+      "result_id": "2bb6c366-75cb-47fc-890d-a7b663ace639"
+    },
+    {
+      "claim_id": "d6c9fdab-b69a-4b62-8460-ab7e80a5c9b0",
+      "result_id": "3cd6949b-189b-4d28-a658-a786bcf644d5"
+    },
+    {
+      "claim_id": "78181598-0edd-4dfa-9c0a-f38d7169e808",
+      "result_id": "3cd6949b-189b-4d28-a658-a786bcf644d5"
+    },
+    {
+      "claim_id": "cfe1311d-5cab-4e36-8b7d-dd195c614165",
+      "result_id": "3cd6949b-189b-4d28-a658-a786bcf644d5"
+    },
+    {
+      "claim_id": "0262b008-91e7-4c71-a84c-12a8aac2738b",
+      "result_id": "3cd6949b-189b-4d28-a658-a786bcf644d5"
+    },
+    {
+      "claim_id": "bedcc267-df31-4d54-900f-ee19ebd3c3dd",
+      "result_id": "3cd6949b-189b-4d28-a658-a786bcf644d5"
+    },
+    {
+      "claim_id": "62b0ca79-4a0b-4ce8-a58a-7a6362c85a26",
+      "result_id": "3cd6949b-189b-4d28-a658-a786bcf644d5"
+    },
+    {
+      "claim_id": "983158e0-7b46-4664-a654-f522f5bae041",
+      "result_id": "3cd6949b-189b-4d28-a658-a786bcf644d5"
+    },
+    {
+      "claim_id": "65519e92-04d7-4cab-91f2-9005037eae6b",
+      "result_id": "caf6be0b-39b0-4e6d-9865-1151344916c3"
+    },
+    {
+      "claim_id": "62337a0a-de20-4472-b4f8-de89a35f8e8f",
+      "result_id": "caf6be0b-39b0-4e6d-9865-1151344916c3"
+    },
+    {
+      "claim_id": "3e2809be-44a1-4401-a8d1-c65549f9cbf2",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "f1f90364-b7ba-4878-a4d1-a37743739e5d",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "688aed5b-29a7-4ea7-b7e2-bacd812857bd",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "4389e926-8df4-4626-b9f1-ea264556dc26",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "692c88c7-fddb-4e36-8dfb-4dd9213e5c36",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "c285e248-59a9-4775-81a1-e6806b337e7d",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "b68dbcab-ff5a-4158-999f-c2cd272f4c77",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "b143930f-3fc4-42f0-8995-0712d03a4ffd",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "1cb0fd6f-300b-4c44-9223-883170a798dd",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "6f3a1a18-feee-4c32-8c46-7b2b8cbbe454",
+      "result_id": "8ed5411a-c764-4337-9df0-5779d144303a"
+    },
+    {
+      "claim_id": "798c494b-ede9-4430-8b45-5ae3a3f92511",
+      "result_id": "87ae5db0-6206-4a46-84b4-2b8abd09e17d"
+    },
+    {
+      "claim_id": "981da248-35c4-4ea3-9348-2451bee472d2",
+      "result_id": "87ae5db0-6206-4a46-84b4-2b8abd09e17d"
+    },
+    {
+      "claim_id": "295d636d-4eaf-4444-9c01-71a084a51911",
+      "result_id": "87ae5db0-6206-4a46-84b4-2b8abd09e17d"
+    },
+    {
+      "claim_id": "b065d59a-9c2c-4eb9-aecc-3f2b8528def4",
+      "result_id": "87ae5db0-6206-4a46-84b4-2b8abd09e17d"
+    },
+    {
+      "claim_id": "52a2433b-ffc3-450a-8d20-702ea04675e3",
+      "result_id": "0e2d3f56-0015-4227-9c96-3ded91066452"
+    },
+    {
+      "claim_id": "fe6412e8-2fc7-4788-b982-9a37324a9943",
+      "result_id": "0e2d3f56-0015-4227-9c96-3ded91066452"
+    },
+    {
+      "claim_id": "b7ad791d-5618-43f4-b770-f0413b454c8f",
+      "result_id": "21b723d3-f371-4d1d-993b-ee683b218825"
+    },
+    {
+      "claim_id": "d306925f-369a-4506-a5dc-535dbb01d1e8",
+      "result_id": "21b723d3-f371-4d1d-993b-ee683b218825"
+    },
+    {
+      "claim_id": "9409c016-cca1-4af4-b25c-66bb79a042f3",
+      "result_id": "21b723d3-f371-4d1d-993b-ee683b218825"
+    },
+    {
+      "claim_id": "9e158457-3d43-4efa-a5d9-49ba53cf7865",
+      "result_id": "21b723d3-f371-4d1d-993b-ee683b218825"
+    },
+    {
+      "claim_id": "12819299-8e25-4a74-9cc4-48fe9186d4c7",
+      "result_id": "21b723d3-f371-4d1d-993b-ee683b218825"
+    },
+    {
+      "claim_id": "8552c0b0-da6e-4c8c-a87e-995b499ab001",
+      "result_id": "21b723d3-f371-4d1d-993b-ee683b218825"
+    },
+    {
+      "claim_id": "c613b975-051a-4447-83e4-af3d478e97c1",
+      "result_id": "c942ba55-cf29-4c1d-9515-0b2083e25f7f"
+    },
+    {
+      "claim_id": "e58717fb-4732-4326-aac6-1ce1402f7211",
+      "result_id": "c942ba55-cf29-4c1d-9515-0b2083e25f7f"
+    },
+    {
+      "claim_id": "7b231cf0-9e53-4a8f-ae72-6f5f370b9560",
+      "result_id": "c942ba55-cf29-4c1d-9515-0b2083e25f7f"
+    },
+    {
+      "claim_id": "796b4d5d-0bde-4cb4-9fab-778c7b0ccb57",
+      "result_id": "c942ba55-cf29-4c1d-9515-0b2083e25f7f"
+    },
+    {
+      "claim_id": "a81e4148-dc6f-40fd-bb89-eff8fb48cbd1",
+      "result_id": "3debc77f-621a-49be-95f2-4eba547835eb"
+    },
+    {
+      "claim_id": "104f6ac8-4586-4006-8aea-52e798cd3481",
+      "result_id": "3debc77f-621a-49be-95f2-4eba547835eb"
+    },
+    {
+      "claim_id": "39900cf5-e777-4fc9-8ef8-0858609e2424",
+      "result_id": "3debc77f-621a-49be-95f2-4eba547835eb"
+    },
+    {
+      "claim_id": "dbbbc953-6785-4ea3-8db1-de35ae6fb168",
+      "result_id": "3debc77f-621a-49be-95f2-4eba547835eb"
+    },
+    {
+      "claim_id": "2189e077-f1a5-4727-bd8a-4fc56329430d",
+      "result_id": "3debc77f-621a-49be-95f2-4eba547835eb"
+    },
+    {
+      "claim_id": "339afa32-419f-4144-bd9e-c83527b94ba9",
+      "result_id": "1d69d76a-dd11-4f38-a77a-298d04853126"
+    },
+    {
+      "claim_id": "b8d717ab-4b1a-4892-89dc-be78688f4309",
+      "result_id": "1d69d76a-dd11-4f38-a77a-298d04853126"
+    },
+    {
+      "claim_id": "6e29e23c-99c6-4487-a870-575b99d3730e",
+      "result_id": "1d69d76a-dd11-4f38-a77a-298d04853126"
+    },
+    {
+      "claim_id": "bb5d55bc-3f44-478b-acb9-81a76e0a2e13",
+      "result_id": "1e8a5222-1b19-426d-aebe-6adedd9333e7"
+    }
+  ],
+  "comparisons": []
+}

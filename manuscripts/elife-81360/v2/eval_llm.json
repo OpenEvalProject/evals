@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The Charme locus shows highest expression during embryonic development (E11-E15) with gradual decrease postnatally, with pCharme being 50% more abundant than mCharme at fetal stages. Expression is initially detected in the tubular heart at E8.5, with highest signals in the inflow and outflow tracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are well-supported by converging evidence from FANTOM5 CAGE-seq data (C14), RT-qPCR validation (C15, C16), and in situ hybridization (C17, C18). The temporal expression pattern is consistently demonstrated across multiple independent techniques, and the quantification of isoform abundance is directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "pCharme expression is specifically restricted to cardiomyocytes in embryonic hearts at E12.5, with nearly identical distribution across atrial, ventricular, and other cardiomyocyte subtypes. pCharme positively correlates with Tbx5 and cardiomyocyte identity markers (Myl2, Myl4) while showing anticorrelation with endothelial and neural crest cell markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C24-C26 are strongly supported by scRNA-seq analysis with appropriate cell type clustering and marker gene validation (Figure 1E-G). The correlation analyses use established cell type markers with proper statistical assessment, providing robust evidence for cell-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28"
+    ],
+    "result": "TBX5 transcription factor occupies the pCharme promoter with increased occupancy during cardiomyocyte differentiation. TBX5 knockout decreases pCharme expression in progenitor cardiomyocytes but not in differentiated cardiomyocytes, suggesting stage-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C27-C28 are supported by in silico motif analysis, published ChIP-seq data, and RNA-seq from TBX5 knockout experiments. The stage-specific effect (C28) is particularly well-documented, though the mechanism underlying the differential sensitivity remains to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "RNA-seq analysis identified 913 differentially expressed genes in CharmeKO neonatal hearts (573 upregulated, 340 downregulated). Upregulated genes are enriched in cell cycle/division categories with slight increase in KI-67+ nuclei, while downregulated genes are enriched in anatomical structure morphogenesis and circulatory system development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are well-supported by RNA-seq data with appropriate FDR thresholds (FDR<0.1), RT-qPCR validation, GO enrichment analysis, and immunofluorescence quantification. The lack of local cis-effects (C31) is consistent with trans-acting lncRNA mechanisms. Sample sizes appear adequate with biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Expression of morphogenesis genes and the Myh6/Myh7 maturation ratio are significantly decreased in CharmeKO hearts from E15.5 onward, while cell-cycle gene expression is unaffected during embryonic development. The neonatal upregulation of cell-cycle genes is interpreted as a consequence of maturation impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by RT-qPCR data across developmental timepoints with appropriate controls. However, C39 is inferential and represents an interpretation rather than direct evidence. The temporal pattern is consistent with the proposed model, though alternative explanations for cell cycle gene upregulation are not explicitly ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CharmeKO hearts at E15.5 show pronounced myocardial alterations including decreased ventricular cavity area, reduced NPPA+ trabecular tissues, decreased expression of trabecular markers (Irx3, Sema3a), and diminished capillary endothelium density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by multiple complementary approaches: histological analysis (C40), immunofluorescence quantification (C41), RT-qPCR (C42), and lectin staining (C43). The convergence of morphological and molecular evidence provides strong support for the structural phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C72"
+    ],
+    "result": "CharmeKO mice show progressive deterioration of systolic function that becomes significant at 9 months of age, with initial signs of cardiac dilation indicating early-phase cardiomyopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C72 are supported by echocardiography data with adequate sample sizes (n=10-13). The functional measurements (fractional shortening, ventricular dimensions) are standard and appropriate. The long-term follow-up demonstrates the developmental defects have lasting consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "pCharme localizes predominantly to the nucleus with a punctate pattern in fetal cardiomyocytes, while mCharme is enriched in the cytoplasm. pCharme and MATR3 colocalize and form nuclear condensates as quantified by 3D Pearson's correlation coefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by subcellular fractionation with RT-qPCR (C45), RNA-FISH imaging (C46), and combined IF/RNA-FISH with quantitative colocalization analysis (C47). The use of 3D Pearson's correlation provides rigorous quantification of colocalization, though the number of analyzed condensates should be reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "MATR3-positive condensates appear more diffuse in CharmeKO cardiac muscles compared to wild-type, with MATR3 immunofluorescence showing less discrete and more homogeneous distribution as quantified by coefficient of variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by immunofluorescence imaging and quantitative analysis using coefficient of variation (CV) across large numbers of nuclei (>1300 per condition). The CV metric appropriately captures the difference in spatial distribution, providing objective quantification of the visual observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MATR3 CLIP-seq identified 952 cardiac transcripts significantly bound by MATR3 in wild-type fetal hearts, with enrichment primarily in introns of protein-coding mRNAs. pCharme is the top MATR3 interactor among lncRNAs, with specific binding to pCharme but not mCharme, and strong reduction of MATR3-CLIP signal in CharmeKO samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are well-supported by CLIP-seq data with appropriate enrichment thresholds (log2 FC>2, FDR<0.05), RT-qPCR validation of candidates, and isoform-specific analysis. The intronic enrichment (C51) is consistent with MATR3's known binding preferences. The specificity for pCharme over mCharme (C53) is particularly important for the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The MATR3 consensus sequence (UUCUU) is among the most over-represented motifs in MATR3 CLIP peaks, positioned at peak summits near the strongest MATR3 enrichment. GO analysis reveals 'heart development' as the most significantly enriched category for MATR3-bound protein-coding transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by motif enrichment analysis using established databases (CISBP-RNA), positional enrichment analysis showing motif localization at peak summits, and GO enrichment analysis. The convergence of sequence-specific binding (C55-C56) and functional enrichment (C57) strengthens the biological relevance of MATR3 targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "MATR3-bound RNAs show globally reduced expression in CharmeKO hearts, with 12% of downregulated DEGs (41/340) bound by MATR3. These common MATR3/pCharme targets are significantly enriched in the top GO categories for CharmeKO downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 integrate RNA-seq and CLIP-seq data appropriately. The statistical enrichment of MATR3 targets among downregulated genes (C59) is assessed with Fisher's exact test. The GO enrichment of common targets (C60) provides functional coherence, though the causal relationship between MATR3 binding and expression changes requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Differential binding analysis reveals that pCharme depletion primarily causes decreased MATR3 enrichment on RNA (Loss peaks). Loss peaks are significantly enriched in 50% of downregulated DEGs (20/40), with the majority (13/20) playing roles in embryo development, anatomical structure morphogenesis, and circulatory system development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by differential binding analysis using DiffBind with appropriate statistical thresholds. The enrichment of Loss peaks in downregulated DEGs (C62) is statistically significant. The functional annotation of affected genes (C63) is well-documented, though the claim that these genes \"play important roles\" relies on literature citations rather than direct functional validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "MATR3 depletion in primary cardiac cells leads to downregulation of three out of four tested genes (Cacna1c, Notch3, Myo18b), with Rbm20 showing no significant change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by RT-qPCR data from MATR3 knockdown experiments in primary cardiac cells with appropriate controls (si-SCR). The experiment provides functional validation that MATR3 is required for expression of specific targets. However, the sample size (n=4) is modest, and only a small subset of predicted targets was tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C65"
+    ],
+    "result": "pCharme is a chromatin-associated lncRNA whose functional knockout in mice results in defective myogenesis and cardiac remodeling. Previous work established that only the unspliced nuclear pCharme isoform plays an epigenetic, architectural function in skeletal myogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, and C65 are supported by citations to previous work by the authors (Ballarino et al., 2018; Desideri et al., 2020). These claims establish the prior knowledge foundation for the current study. The characterization of the CharmeKO mouse model and isoform-specific functions are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C66",
+      "C67"
+    ],
+    "result": "pCharme is specifically restricted to cardiomyocytes from early cardiomyogenesis, where it assists formation of MATR3-containing nuclear condensates with important cardiac developmental RNAs. This temporal and cell-type-specific expression is critical for activating pro-differentiation genes, and pCharme ablation results in delayed cardiomyocyte maturation leading to ventricular myocardium alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C66-C67 represent the main conclusions of the study, integrating multiple lines of evidence from expression profiling, imaging, CLIP-seq, and functional analyses. The claims are well-supported by the collective data, though C66 and C67 represent higher-level interpretations that synthesize the individual findings. The mechanistic link between condensate formation and gene activation remains correlative rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing that congenital heart defects are common birth defects with high infant mortality, that heart development involves coordinated proliferation/migration/differentiation, that only 15-20% of defects are linked to known genetic conditions, and that lncRNAs are >200nt transcripts participating in physiological and pathological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 are background/contextual claims supported by citations to established literature and general knowledge. These provide the scientific rationale for studying lncRNAs in cardiac development but are not novel findings of this study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C68",
+      "C69",
+      "C73"
+    ],
+    "result": "TBX5 is a key regulator of heart development that activates genes for cardiomyocyte maturation and morphogenesis, and was recently found to control lncRNA expression. MATR3 is a nuclear matrix DNA/RNA-binding protein abundant in fetal heart, with mutations causing congenital defects. The transition of cardiomyocytes to immature phenotype is associated with dilated cardiomyopathy development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C68-C69, and C73 are supported by citations to relevant literature establishing the roles of TBX5 and MATR3 in cardiac development and disease. These claims provide important context for interpreting the pCharme findings but represent prior knowledge rather than novel discoveries of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In the absence of pCharme, the nuclear distribution of MATR3 is altered in developing cardiomyocytes, and MATR3 binding to specific RNAs is altered with consequent misregulation of their expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by immunofluorescence showing altered MATR3 distribution (C70) and differential CLIP-seq analysis combined with RNA-seq showing altered binding and expression (C71). These claims integrate multiple datasets to support the mechanistic model. However, the causal relationship between altered MATR3 distribution, altered RNA binding, and gene expression changes is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The Myh6/Myh7 ratio measures cardiomyocyte maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by citations to established literature (England and Loughna, 2013; Scheuermann and Boyer, 2013) documenting that the Myh6/Myh7 ratio is an accepted marker of cardiomyocyte maturation. This is a well-established principle in the field rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

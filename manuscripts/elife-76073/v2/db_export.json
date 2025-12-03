@@ -1,0 +1,1515 @@
+{
+  "submission": {
+    "id": "3ab6ced4-4aef-4d30-9048-139d3e4bbd23",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:50:07.029344Z",
+    "updated_at": "2025-12-03T12:50:07.029344Z"
+  },
+  "content": [
+    {
+      "id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "submission_id": "3ab6ced4-4aef-4d30-9048-139d3e4bbd23",
+      "content_type": "manuscript",
+      "content_text": "# Complex fitness landscape shapes variation in a hyperpolymorphic species\n\n## Authors\n\n- Anastasia V Stolyarova<sup>1</sup> ([ORCID: 0000-0002-6546-3052](https://orcid.org/0000-0002-6546-3052)) \u2020\n- Tatiana V Neretina<sup>2</sup>\n- Elena A Zvyagina<sup>2</sup>\n- Anna V Fedotova<sup>1</sup>\n- Alexey S Kondrashov<sup>5</sup>\n- Georgii A Bazykin<sup>1</sup> ([ORCID: 0000-0003-2334-2751](https://orcid.org/0000-0003-2334-2751)) \u2020\n\n### Affiliations\n\n1. Skolkovo Institute of Science and Technology Moscow Russian Federation ([ROR:03f9nc143](https://ror.org/03f9nc143))\n2. White Sea Biological Station, Biological Faculty, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))\n3. Belozersky Institute of Physico-Chemical Biology, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))\n4. Yugra State University Khanty-Mansiysk Russian Federation ([ROR:006strx72](https://ror.org/006strx72))\n5. Department of Ecology and Evolutionary Biology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n6. Institute for Information Transmission Problems of the Russian Academy of Science Moscow Russian Federation\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is natural to assume that patterns of genetic variation in hyperpolymorphic species can reveal large-scale properties of the fitness landscape that are hard to detect by studying species with ordinary levels of genetic variation. Here, we study such patterns in a fungus Schizophyllum commune, the most polymorphic species known. Throughout the genome, short-range linkage disequilibrium (LD) caused by attraction of minor alleles is higher between pairs of nonsynonymous than of synonymous variants. This effect is especially pronounced for pairs of sites that are located within the same gene, especially if a large fraction of the gene is covered by haploblocks, genome segments where the gene pool consists of two highly divergent haplotypes, which is a signature of balancing selection. Haploblocks are usually shorter than 1000 nucleotides, and collectively cover about 10% of the S. commune genome. LD tends to be substantially higher for pairs of nonsynonymous variants encoding amino acids that interact within the protein. There is a substantial correlation between LDs at the same pairs of nonsynonymous mutations in the USA and the Russian populations. These patterns indicate that selection in S. commune involves positive epistasis due to compensatory interactions between nonsynonymous alleles. When less polymorphic species are studied, analogous patterns can be detected only through interspecific comparisons.\n\n## Introduction\n\nAlleles do not affect fitness and other phenotypic traits independently and, instead, engage in epistatic interactions (de Visser et al., 2011; de Visser and Krug, 2014; Gillespie, 1994; Good and Desai, 2015; Kryazhimskiy et al., 2011; Maynard Smith, 1970; McCandlish et al., 2013; Povolotskaya and Kondrashov, 2010). Epistasis is pervasive at the scale of between-species differences, where it is saliently manifested by Dobzhansky-Muller incompatibilities and results in low fitness of interspecific hybrids (Callahan et al., 2011; Corbett-Detig et al., 2013; Dobzhansky, 1936; Kondrashov et al., 2002; Orr, 1995; Taverner et al., 2020). By contrast, at the scale of within-population variation, the importance of epistasis remains controversial (Crow, 2010; Hill et al., 2008; Hivert et al., 2021). This may look like a paradox, because such variation provides an opportunity to detect epistasis through linkage disequilibrium (LD), non-random associations between alleles at different loci (Beissinger et al., 2016; Boyrie et al., 2021; Garcia and Lohmueller, 2021; Wang et al., 2012; Zan et al., 2018). In the case of positive epistasis, a situation when a combination of alleles confers higher fitness than that expected from selection acting on these alleles individually, it can maintain favorable coadapted combinations of alleles at interacting sites, increasing linkage disequilibrium (LD) between them (Barton, 2010; Boyrie et al., 2021; Kouyos et al., 2007; Pedruzzi et al., 2018; Takahasi and Tajima, 2005). In sexual populations, recombination competes with epistasis, disrupting such coupling LD (Neher and Shraiman, 2009; Pedruzzi et al., 2018). Nevertheless, within a single gene, physical proximity alone may suffice to limit recombination, so sets of coadapted variants may evolve (Dobzhansky, 1950; Lewontin and Kojima, 1960). Such positive within-gene epistasis has been proposed to affect variation in natural populations (Arnold et al., 2020; Ragsdale, 2021), but conditions for this are expected to be restrictive (Hansen, 2013; M\u00e4ki-Tanila and Hill, 2014; Sackton and Hartl, 2016).\n\nPerhaps, the fitness landscape is complex macroscopically but is more smooth microscopically or, in other words, epistasis is genuinely more pronounced at a macroscopic scale (Ochs and Desai, 2015). If so, studying epistasis in hyperpolymorphic populations, where differences between genotypes can be as high as those between genomes of species from different genera or even families, holds a great promise because variation within such a population can cover multiple fitness peaks or a sizeable chunk of a curved ridge of high fitness (Bateson, 1909; Dobzhansky, 1937; Gavrilets, 1997; Kondrashov et al., 2002; Muller, 1942; Appendix 1).\n\n## Results\n\n### Elevated LD between nonsynonymous polymorphisms\n\nIn a vast majority of species, nucleotide diversity \u03c0, the evolutionary distance between a pair of randomly chosen genotypes, is, at selectively neutral sites, of the order of 0.001 (as in Homo sapiens) or 0.01 (as in Drosophila melanogaster) (Leffler et al., 2012). Still, a few hyperpolymorphic species with \u03c0>0.1 are known, of which the wood-decaying fungus Schizophyllum commune is the most extreme, where \u03c0=0.20 or 0.13 in the USA or the Russian populations, respectively (Baranova et al., 2015; Appendix 3\u2014figure 1). The two populations of S. commune are highly divergent (dS between populations \u2248 0.34, Fst = 0.58), but there is essentially no structure within either of them (Appendix 3\u2014figure 2). We studied 34 haploid genotypes from the USA and 21 from Russia, each obtained by sequencing and de novo assembly of a haploid culture originated from a single haplospore. The use of haploid samples and de novo assembly of each sample ensures robust identification of haplotypes. We then compared the LD between nonsynonymous SNPs (LDnonsyn) to that between synonymous SNPs (LDsyn).\n\nIn both S. commune populations, at sites with minor allele frequency (MAF) >0.05, LDnonsyn is much higher than LDsyn at the same nucleotide distance (Figure 1A, Figure 1\u2014figure supplement 1A). This excess of LDnonsyn is much stronger for pairs of SNPs located within the same gene, compared to pairs of SNPs from adjacent genes at the same distance. By contrast, the excess of LDnonsyn is independent of whether the two SNPs are located within the same or in different exons of a gene (Figure 1\u2014figure supplement 2). In S. commune, the recombination rate is higher within exons (Seplyarskiy et al., 2014), which may affect the patterns of LD; however, this factor could only reduce within-gene LD, and in any case cannot explain the difference between LDnonsyn and LDsyn. For S. commune, the excess of LDnonsyn over LDsyn holds when we explicitely control for MAFs (Figure 1\u2014figure supplement 3), indicating that differences in MAFs between synonymous and nonsynonymous polymorphisms cannot explain the excess of LDnonsyn.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013C) LD in natural populations for SNPs with MAF >0.05. (A) USA population of S. commune, (B) Zambian population of D. melanogaster, (C) African superpopulation of H. sapiens. Filled areas in (A)-(C) indicate SE of LD calculated for each chromosome or scaffold separately. (D\u2013F) A hyperpolymorphic population (D) may occupy a sizeable chunk of a complex fitness landscape, leading to pervasive positive epistasis, while variation within less polymorphic populations (E and F) is confined to smaller, and approximately linear, portions of the landscape, so that no strong epistasis and LD can emerge. The area of the landscape covered by the population is shown in green.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. (A) Russian population of S. commune, (B) European super-population of H. sapiens. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. Only SNPs with minor allele frequency > 0.05 are analysed. Filled areas indicate SE of LD calculated for each chromosome (for human) or scaffold (for S. commune) separately.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Solid lines indicate LD between pairs of SNPs located within the same exon of the gene; dashed lines correspond to pairs of SNPs located in different exons of the gene. (A) USA population of S. commune, (B) RUS population of S. commune. Only SNPs with minor allele frequency > 0.05 are analysed. Filled areas indicate SE of LD calculated for each scaffold separately.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** For each possible minor allele count and nucleotide distance, the number of corresponding pairs of nonsynonymous variants and LDnonsyn between them is calculated. Then, the same number of synonymous variants on the same nucleotide distance and with the same minor allele count is randomly chosen to calculate LDsyn. Subsampling is performed for 100 times. Filled areas show 95% intervals of LDsyn in the subsamples. (A) All SNPs, (B) SNPs with MAF >0.05.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Filled areas indicate SE of LD calculated for each scaffold separately. (A, B) LD between all pairs of SNPs pooled together. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. (C, D) Pairs of SNPs split by MAF.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Filled areas indicate SE of LD calculated for each chromosome separately. (A) LD between all pairs of SNPs pooled together. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. (B) Pairs of SNPs with MAF <0.05 (large scale). (C) Pairs of SNPs split by MAF.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Filled areas indicate SE of LD calculated for each chromosome separately. (A) LD between all pairs of SNPs pooled together. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. (B) Pairs of SNPs with MAF <0.05 (large scale). (C) Pairs of SNPs split by MAF.\n\nA much weaker excess of LDnonsyn over LDsyn for MAF >0.05 is also observed in the less genetically diverse D. melanogaster population (Figure 1B). In the still less polymorphic human populations, LDnonsyn is indistinguishable from LDsyn at the same distances (Figure 1C, Figure 1\u2014figure supplement 1B).\n\nThe excess of LDnonsyn over LDsyn corresponds to the attraction between minor nonsynonymous alleles. This attraction can only appear due to positive epistasis between such alleles - higher-than-expected fitness of their combinations (Appendix 2). Positive epistasis can be expected to cause stronger LD in more polymorphic populations (Figure 1D\u2013F, Appendix 1) and must be more common for pairs of sites located within the same gene, which are more likely to interact with each other.\n\nFor rare SNPs with MAF <0.05 taken alone, LDnonsyn is similar or lower to LDsyn for all three species, consistent with the effects of random drift, Hill-Robertson interference, and/or negative epistasis (Figure 1\u2014figure supplements 4\u20136; Appendix 2). Decreased LD between negatively selected polymorphisms is expected due to Hill-Robertson interference between deleterious alleles (Hill and Robertson, 1966; Roze and Barton, 2006); this effect has been described previously for H. sapiens (Garcia and Lohmueller, 2021) and D. melanogaster (Sandler et al., 2021) and is observed in our simulations (Appendix 2\u2014figure 4). In addition, LDnonsyn can be reduced by negative epistasis between deleterious alleles (Garcia and Lohmueller, 2021), similarly to the negative LD detected among loss-of-function polymorphisms in humans, flies and plants (Sandler et al., 2021; Sohail et al., 2017).\n\n### Elevated LD between interacting sites\n\nNatural selection acting on physically interacting amino acids that are located close to each other within the three-dimensional structure of a protein is characterized by strong epistasis which leads to their coevolution at the level of between-species differences (Marks et al., 2011; Ovchinnikov et al., 2014; Sjodt et al., 2018). Genome-wide elevated LD between amino acid sites within structural domains was recently demonstrated in human populations (Ragsdale, 2021). Extraordinary diversity of S. commune makes it possible to observe an analogous phenomenon at the level of individual genes in within-population variation.\n\nTo test this, we aligned S. commune proteins to the PDB database of protein structures. In the obtained set of 5188 genes with a good match to a protein with known structure, we identified pairs of codons in the S. commune genome encoding amino acid residues positioned near each other (within 10 \u00c5) in the protein structures, and calculated the average LD between SNPs in such pairs of codons. Naturally, pairs of physically interacting sites are more likely to be closely spaced in the gene sequence and therefore to be under a higher LD than non-interacting ones. To account for this, we discarded pairs of SNPs within five amino acids from each other, and used a controlled permutation test (see Materials and methods) to compare the LD between physically close pairs of sites to that between distant pairs of sites.\n\nIn both S. commune populations, pairs of nonsynonymous SNPs are in stronger LD when they are located at codons encoding physically close than distant amino acids (Figure 2A; permutation test p-value <1e-3). This is not the case for pairs of synonymous SNPs (Figure 2A; permutation test p-value = 0.58).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig2-v2.jpg)\n\n**Figure 2.:** (A) Within pairs of SNPs that correspond to pairs of amino acids that are colocalized within 10 \u00c5 in the protein structure, the LD is elevated between nonsynonymous, but not between synonymous, variants. Dashed lines show the average LD between colocalized sites. Permutations were performed by randomly sampling pairs of non-interacting SNPs while controlling for genetic distance between them, measured in amino acids; pairs of SNPs closer than 5 aa were excluded. (B\u2013D) Examples of proteins with LD patterns matching their three-dimensional structures. Heatmaps show the physical distance between pairs of sites in the protein structure; only positions carrying biallelic SNPs are shown. Black dots correspond to pairs of sites with high LD (>0.9 quantile for the gene). Dashed lines in (c) structure show high LD between physically close SNPs from different segments of high LD. In these examples, LD is calculated in the Russian population of S. commune.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Heatmaps show the physical distance between pairs of sites in the protein structure; only positions carrying biallelic SNPs are shown. Black dots correspond to pairs of sites with high LD (>0.9 quantile for the gene). Grey regions indicate the exon structure of the genes. (A) cog1523 (5Y1B:A); (B) cog2779 (1SXJ:B); (C) cog5375 (1RGI:G); (D), cog5725 (1TA3:B); (E) cog18092 (4QJY:A); (F) cog7878 (4TYW:A). LD statistics and p-values for each gene are listed in Appendix 3\u2014table 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Heatmaps show the physical distance between pairs of sites in the protein structure; only positions carrying biallelic SNPs are shown. Black dots correspond to pairs of sites with high LD (>0.9 quantile for the gene). Grey regions indicate the exon structure of the genes. (A) cog1536 (6AHR:E); (B) cog5725 (1TA3:B); (C) cog8253 (6F87:A); (D) cog9241 (1YCD:A). LD statistics and p-values for each gene are listed in Appendix 3\u2014table 1.\n\nMoreover, it is possible to identify individual proteins with significant associations between the patterns of LD and of physical interactions between sites. At a 5% FDR, we found 22 such proteins in the USA population, and 87 proteins in the Russian population (Appendix 3\u2014table 1); three examples are shown in Figure 2B\u2013D (see also Figure 2\u2014figure supplements 1 and 2). The alignment of ADAT2 protein contains two segments (teal and red in Figure 2B) characterized by high within-segment LD. The boundaries of these segments match those of structural units of the protein, but not the exon structure of its gene. In RadB protein, a similar pattern is observed, and LD is also elevated between pairs of SNPs from different segments on the interface of the corresponding structural units (Figure 2C). The alignment of 4CL protein can be naturally split into four high-LD segments, which also match its structure (Figure 2D).\n\n### Distinct regions of high LD\n\nThe magnitude of LD varies widely along the S. commune genome. Visual inspection of the data shows a salient pattern of regions of relatively low LD, alternating with mostly short regions of high LD (haploblocks, Figure 3\u2014figure supplement 1). We calculated LD along the genome in a sliding window of 250 nucleotides and regarded as a haploblock any continuous genomic region with LD values that belong to the heavy tail of its distribution (see Materials and methods).\n\nIn the USA population, 8.4% of the genome is occupied by 5,316 such haploblocks, 56% consist of regions with background LD level, and the rest cannot be analyzed due to poor alignment quality or low SNP density. Eighty-eight percent of the haploblocks are shorter than 1000 nucleotides, although the longest haploblocks spread for several thousand nucleotides (Figure 3\u2014figure supplement 2). In the Russian population, there are 10,694 haploblocks, occupying 15.9% of the genome, and regions of background LD cover 39% of it. There is only a modest correlation between the USA and Russian haploblocks: the probability that a genomic position belongs to a haploblock in both populations is 2.3% instead of the expected 1.3%, indicating their relatively short persistence time in the populations (examples shown in Figure 3\u2014figure supplement 1).\n\nLD within a haploblock is usually so high that most genotypes can be attributed to one of just two distinct haplotypes, which carry different sets of alleles (Figure 3\u2014figure supplement 3). This results in a bimodal distribution of the fraction of minor alleles in a genotype within a haploblock, because some genotypes belong to the major haplotype and, thus, carry only a small fraction of minor alleles, and other genotypes belong to the minor haplotype and, thus, possess a high fraction of minor alleles (Figure 3A). Polymorphic sites within haploblocks are characterized by higher MAF than that at sites that reside in non-haploblock regions (t-test p-value <2e-16), and in the USA population MAFs within a haploblock are positively correlated with its strength of LD (Figure 3B, Pearson correlation estimate = 0.07, p-value <2e-6).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-v2.jpg)\n\n**Figure 3.:** (A) Distribution of the fraction of polymorphic sites that carry minor alleles in a genotype within haploblocks. Black line shows the distribution of fraction of minor alleles in genotypes in non-haploblock regions. (B) Distributions of the average MAF within a haploblock for haploblocks with different average values of LD. The average MAF in non-haploblock regions is shown as a horizontal black line for comparison. (C) LD between nonsynonymous and synonymous SNPs within individual genes. Linear regression of LDnonsyn on LDnsyn is shown as the red line. To control for the gene length, only SNPs within 300 nucleotides from each other were analyzed. Genes with fewer than 100 such pairs of SNPs were excluded. (D,E) The positive correlation between pn/ps of the gene and its average LD (D) or the difference between LDnonsyn and LDsyn (E). Here, the data on the USA population of S. commune are shown; similar patterns in the Russian population are shown in Figure 3\u2014figure supplement 4.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The heatmaps show LD between polymorphic SNPs in the same genomic regions in the USA and RUS populations of S. commune. Only biallelic polymorphic sites with minor allele frequency >1 are shown, the number of such sites can differ between populations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Region 3097200\u20133097500 of scaffold 4 in the USA population of S. commune is shown. The top line shows the consensus sequence based on 34 genotypes; dot indicates match with the consensus.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Bimodal distribution of the fraction of polymorphic sites carrying minor alleles per genome within the haploblocks. Each count corresponds to a genotype within a haploblock. Black line shows the background distribution of minor alleles in the non-haploblock regions. (B) The increased average minor allele frequency within haploblocks as compared to the non-haploblock regions (dashed line, t-test p-value <2e-16). (C) LD between nonsynonymous and synonymous SNPs within single genes. Each dot represents an individual gene. Linear regression of LDnonsyn over LDnsyn is shown as the red line. To control for the gene length, only SNPs within 300 bp from each other were analyzed. Genes with fewer than 100 such pairs of SNPs were excluded. (D,E) The positive correlation between pn/ps of the gene and its average LD (Spearman correlation p-value = 4e-16) (D) or the difference between LDnonsyn and LDsyn (Spearman correlation p-value = 2e-5) (E).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) The USA population, (B) the RUS population. The genes are stratified by their average LD (the panels) and by the pn/ps. Only pairs of SNPs within 300 bp from each other are analyzed; genes with less than 100 such pairs of nonsynonymous or synonymous SNPs are excluded. Spearman correlation p-values are shown.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) The excess of LDnonsyn over LDsyn under different models of epistasis between two deleterious mutations A \u2192 a and B \u2192 b without balancing selection and in the presence of negative frequency-dependent selection (NFDS) or associate overdominance (AOD) acting in the linked sites. The height of columns shows fitness of the corresponding genotypes. (+) indicate simulations where the excess of LDnonsyn is reproduced. (B) The average LD in the simulations. (C) The difference between LDnonsyn and LDsyn in the simulations.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Red lines show the distribution of LD (r2) in windows of 250 nucleotides in two populations. Black line corresponds to the lognormal distribution with the same mean and variance. The windows with LD higher than the threshold value defined as the intersection point of the two lines (dashed) are attributed to haploblocks.\n\nThere is no one-to-one correspondence between haploblocks and genes, which are, on average, longer. Still, different genes are covered by haploblocks to different extent, which leads to wide variation in the strength of LD and other characteristics among them. Genes with high LD, that is those that contain haploblocks, have the largest excess of LDnonsyn over LDsyn (Figure 3C). Positive correlation between the overall LD within the gene and the excess of LDnonsyn in this gene indicates that the attraction between nonsynonymous variants, driven by epistasis, is stronger if combinations of epistatic alleles are persisting within population for a long time, comprising haplotypes within a haploblock. Since both haplotypes tend to be common in a haploblock (Figure 3), this excess is much stronger for loci with MAF >0.05.\n\nLD between alleles of all kinds is higher within genes with large ratios of nonsynonymous and synonymous polymorphisms pn/ps (Spearman correlation p-value <2e-16, Figure 3D). Genes with elevated pn/ps also have a stronger excess of LDnonsyn over LDsyn (Figure 3E, Spearman correlation p-value = 4.4e-17). This excess is the strongest for genes with high overall LD, but its correlation with pn/ps holds even when the overall LD is controlled for (Figure 3\u2014figure supplement 5).\n\nThere can be multiple non-exclusive mechanisms by which epistasis could lead to the observed positive associations between pn/ps, overall LD, and excess LDnonsyn. First, genes under weaker selection, and therefore higher pn/ps, could be characterized by a higher overall amount and/or strength of epistasis. Second, epistasis, as estimated by excess LDnonsyn, can contribute to increased pn/ps by allowing nonsynonymous polymorphisms to segregate in the population when maintained in coadapted combinations, therefore weakening negative selection against them. Third, epistasis can be more potent in genes with lower overall recombination rate due to competition between epistasis and recombination: recombination breaks positively interacting combinations of alleles, disrupting linkage between them and interfering with epistasis. Fourth, existence of cosegregating combinations of mutually beneficial alleles could select for reduced local recombination rate.\n\n### Excess of LDnonsyn requires stable polymorphism\n\nSimulations show that positive epistasis alone cannot lead to the observed large excess LDnonsyn over LDsyn, for which two extra conditions need to be satisfied. The general reason for this is simple: in order for a substantial LD between not-too-rare alleles to appear, these alleles must persist in the population for a long enough time.\n\nFirst, positive epistasis must lead to a full compensation of deleterious effects of individual alleles. In other words, the fitnesses of at least two most-fit genotypes that are present in the population at substantial frequencies must be (nearly) the same (Figure 3\u2014figure supplement 6). If this is not the case, selection favoring the only most-fit genotype leads to a too low level of genetic variation, which persists only due to recurrent mutation. It is natural to assume that the two major haplotypes that are common within a haploblock correspond to high-fitness genotypes. High-fitness genotypes can represent either isolated fitness peaks of equal heights (corresponding to a situation when two out of the four allele combinations confer high fitness) or a flat, curved ridge of high fitness (corresponding to a situation when three out of four combinations confer high fitness). The available data are insufficient to distinguish between these two options. Of course, with complete selective neutrality of all allele combinations there is no reason for LDnonsyn >LDsyn, so that at least some mixed genotypes, carrying alleles from different high-fitness genotypes, must be maladapted.\n\nSecond, there must be some kind of balancing selection that specifically works to maintain variation, because otherwise random drift does not allow genetic variation to persist for a long enough time even if some, or even all, genotypes are equally fit (Figure 3\u2014figure supplement 6). Here, there are at least two options. On the one hand, a \u2018real\u2019 negative frequency-dependent selection (NFDS) can act either directly at loci that display high LD or at some other tightly linked loci (Charlesworth, 2006; Olendorf et al., 2006). On the other hand, variation can be maintained due to associative overdominance (AOD), resulting from selection against recurrent deleterious mutations at linked loci (Gilbert et al., 2020; Ohta, 1971; Zhao and Charlesworth, 2016).\n\nBalancing selection is also neccessary for the presence of haploblocks, because a pair of divergent haplotypes can evolve in a panmictic population only if they coexist for a considerable time. A single locus under NFDS is enough to maintain a haploblock comprising the region of the genome around it. By contrast, if variation is maintained by AOD, it is more likely that selection against recessive mutations acts at a number of tightly linked loci (Gilbert et al., 2020). Long coexistence of diverged haplotypes that comprise a haploblock enables accumulation of co-adapted combinations of nonsynonymous alleles within them. Thus, it is not surprising that a pronounced excess of LDnonsyn over LDsyn in S. commune is observed primarily within haploblocks and that this excess is higher in genes with higher pn/ps.\n\n### Correlated LDs in two populations\n\nAlthough a high excess of LDnonsyn is observed only within haploblocks, a signature of epistasis can also be seen outside of them in the form of a correlation between LDs in the two populations. This correlation can be high even if LDs by themselves are low.\n\nThe USA and the Russian populations share a large proportion of their SNPs. Given the high divergence between the two populations, few such shared SNPs are expected to have common origin in the ancestral population, and instead they are likely to have arisen from recurrent mutation. Since the haploblocks show little correlation between the two populations, we assume that they arose after their divergence. The high prevalence of coincident SNPs is not surprising because SNPs comprise 0.28 and 0.13 of all the aligned nucleotide sites in the USA and Russian populations, respectively (Baranova et al., 2015, Appendix 3\u2014figure 2). We identified pairs of shared biallelic SNPs located within 2 kb from one another and calculated the LD between them in both populations. To avoid the effects of strong within-population linkage and the occasional co-oc\u0441urrence of haploblocks between populations, we excluded SNPs located within haploblocks or within genes under high LD (>0.8 LD quantile for the corresponding population) in either population.\n\nThe values of LD in the two populations are strongly correlated only for pairs of nonsynonymous SNPs located within the same gene, and only if both populations carry the same pairs of amino acids in the same sites (Figure 4). The correlation of LDs is the strongest if shared SNPs carry the same pairs of nucleotides, but is also observed if they encode the same amino acids by different nucleotides (Figure 4\u2014figure supplement 1). The contrast between correlations within pairs of sites that reside in the same vs. different genes and the correlation of LDs observed for different nucleotides encoding the same amino acid cannot be explained by inheritance of LD from the common ancestral population. Moreover, synonymous SNPs are expected to be on average older than nonsynonymous ones, so that this mechanism should lead to a higher correlation of LDs for pairs of synonymous mutations. Thus, the observed pattern indicates that epistatic selection is shared between the two populations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig4-v2.jpg)\n\n**Figure 4.:** (A) Pairs of SNPs with the same alleles in both sites, (B) pairs of SNPs differing by at least one allele. Asterisks indicate Spearman correlation p-values <0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) All pairs of SNPs pooled together. Pair of SNPs is considered to carry different alleles if at least one allele differs in at least one site. (B) Pairs of SNPs stratified by distance between them. Asterisks indicate Spearman correlation p-values <0.01.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Pairs of SNPs with the same major and minor alleles in both sites, (B) pairs of SNPs differing by at least one allele. Asterisks indicate Spearman correlation p-values <0.001.\n\nThe correlation of LDs between SNPs located within haploblocks in both populations is high regardless of whether they reside in the same or different genes, apparently because of occasional coincidence of haploblocks between populations (Figure 4\u2014figure supplement 2).\n\n## Discussion\n\nOn top of its most salient property, an exceptionally high \u03c0, genetic variation within S. commune possesses two other pervasive features. The first is a high prevalence of mostly short haploblocks, genome segments comprising two or occasionally three distinct haplotypes, which is a signature of balancing selection. The overall fraction of the genome covered by haploblocks is ~10%, which is about an order of magnitude higher than the fraction covered by detectable signatures of balancing selection in genomes of other species (DeGiorgio et al., 2014; Leffler et al., 2013; Rasmussen et al., 2014).\n\nThe second feature is the excessive attraction between nonsynonymous alleles polarized by frequency. This pattern is much stronger within haploblocks, indicating that they were shaped by both balancing and epistatic selection, so that amino acids common within a haplotype together confer a higher fitness. Polymorphisms that involve haplotypes that comprise many interacting genes, such as inversions (Charlesworth and Charlesworth, 1973; Dobzhansky and Pavlovsky, 1958; Singh, 2008; Sturtevant and Mather, 1938) and supergenes (Joron et al., 2011; Mather, 1950), are known from the dawn of population genetics, but here we are dealing with an analogous phenomenon at a much finer scale, because haploblocks are typically shorter than genes. Thus, instead of coadapted gene complexes (Dobzhansky and Pavlovsky, 1958), haplotypes represent coadaptive site complexes within genes.\n\nIn our simulations, equally high fitnesses of two or more genotypes was a necessary condition for a large excess of LDnonsyn, because otherwise the polymorphism did not live long enough for any substantial LD to evolve. However, epistasis between loci responsible for real or apparent balancing selection and those involved in compensatory interactions probably abolished the need for this fine-tuning of fitnesses. For example, if each haploblock carries its own complement of partially recessive deleterious mutations, together with alleles engaged in compensatory interactions with each other which also make these recessive mutations less deleterious, AOD can be expected to cause stable coexistence of these alleles.\n\nWhy are haploblocks and positive LD between minor nonsynonymous alleles so common in S. commune, but not in other, less polymorphic, species? There may be several, not mutually exclusive, reasons for this. Regarding haploblocks, real or apparent balancing selection may be more common in S. commune due to its higher polymorphism. Also, the same balancing selection may protect polymorphism in a huge population of S. commune, but not in populations with lower Ne. Finally, an excess of haploblocks in S. commune may be at least due to better detection of signatures of balancing selection in a species with an extraordinary density of SNPs.\n\nExcessive LDnonsyn in S. commune is also likely to be due to its hyperpolymorphism which increases the probability that mutually compensating alleles at a pair of interacting sites achieve high frequency and encounter each other in the same haplotype before being eliminated by selection. In other words, even if the fitness landscape remains the same, it results in more epistatic selection and, thus, in stronger LD in a species whose genetic variation covers a larger chunk of this landscape (Figure 1).\n\nIn a vast majority of species, \u03c0 is a small parameter <<1. This imposes a severe constraint on operation of selection and obscures signatures of its particular modes. Thus, hyperpolymorphic species where \u03c0 is ~1 provide a unique opportunity to study phenomena which are traditionally viewed as belonging to the domain of macroevolution through data on within-population variation.\n\n## Materials and methods\n\n### S. commune sampling, sequencing, and assembly\n\nHaploid cultures of 24 isolates, each originated from a single haplospore, were obtained from fruit bodies collected in Ann Arbor, MI, USA by T. James and A. Kondrashov and in Moscow and Kostroma regions, Russia by A. Kondrashov, A. Baykalova and T. Neretina in 2009\u20132015. Specimen vouchers are stored in the White Sea Branch of Zoological Museum of Moscow State University (WS). Herbarium numbers are listed in Appendix 3\u2014table 2. To obtain isolates, wild fruit bodies were hung on the top lid of a 10 cm petri dish with agar medium. Petri dish was set at an angle of 60\u201370 degrees to the horizontal surface for 32 hr. A germinated spore was excised together with a square-shaped fragment (approximately 0.7 \u00d7 0.7 mm) of the medium from the maximally rarefied area of the obtained spore print under a stereomicroscope with 100 x magnification. The obtained isolates were cultured in Petri dishes on 2% malt extract agar for a week. For storage, cultures were subcultured into 1.5 ml microcentrifuge tubes with 2% malt extract agar. To obtain sufficient biomass for DNA isolation, isolates were cultured in 20 ml 0.5% malt extract liquid medium in 50 ml microcentrifuge tubes in a horizontal position on a shaker at 100 rpm in daylight for 5\u201310 days. The tubes with the cultures were then centrifuged at 4000 rpm, and the supernatant was decanted. The resulting mycelium was lyophilized. DNA was extracted using Diamond DNA kit according to the manufacturer\u2019s recommendations.\n\nDNA libraries were constructed using the NEBNext Ultra II DNA Library Prep Kit kit by New England Biolabs (NEB) and the NEBNext Multiplex Oligos for Illumina (Index Primers Set 1) by NEB following the manufacturer\u2019s protocol. The samples were amplified using 10 cycles of PCR. The constructed libraries were sequenced on Illumina NextSeq500 with paired-end read length of 151. The genomes were assembled de novo using SPAdes (v3.6.0) (Bankevich et al., 2012); possible contaminations were removed using blobology (Kumar et al., 2013). Average N50 was ~165 kb for USA samples and ~70 kb for Russian samples (assembly statistics are provided in Appendix 3\u2014table 2).\n\nTogether with the 30 samples sequenced previously (Baranova et al., 2015; Bezmenova et al., 2020), the obtained haploid genomes were aligned with TBA and multiz (Blanchette et al., 2004) and projected onto the reference scaffolds (Ohm et al., 2010). Ortholog sequences were extracted on the basis of the reference genome annotation (Ohm et al., 2010) and realigned using macse codon-based aligner (Ranwez et al., 2011). The alignments are available at https://makarich.fbb.msu.ru/astolyarova/schizophyllum_data/. Only the gap-free columns of the whole-genome alignment and the orthologs that were found in all 55 genomes were used for analysis. The total number of detected SNPs was 5.8 million for the USA population (82% of them biallelic) and 2.7 million for the Russian population (93% biallelic). 25% of the USA SNPs were shared with the Russian population (11% with the same major and minor alleles), and 53% of the Russian SNPs were shared with the USA population (23% with the same major and minor alleles, Appendix 3\u2014figure 1).\n\nThe phylogeny of the sequenced genomes was reconstructed with RAxML (Stamatakis, 2014; Appendix 3\u2014figure 2). Nucleotide diversity (\u03c0) was estimated as the average frequency of pairwise nucleotide differences; \u03c0 for different classes of sites is shown in Appendix 3\u2014figure 1B. Two samples from Florida (USA population) were excluded from the further analysis to minimize the possible effect of population structure.\n\nGenome sequence data are deposited at DDBJ/ENA/GenBank under accession numbers JAGVRL000000000-JAGVSI000000000, BioProject PRJNA720428. Sequencing data are deposited at SRA with accession numbers SRR14467839-SRR14467862.\n\n### Data on H. sapiens and D. melanogaster populations\n\nWe used polymorphism data from 347 phased diploid human genomes from African and 301 genomes from European super-populations sequenced as part of the 1000 Genomes project (1,000 1000 Genomes Project Consortium et al., 2015). If several individuals from the same family were sequenced, we included only one of them. As a D. melanogaster dataset, we used 197 haploid genomes from the Zambia population (Lack et al., 2015). Only autosomes were analyzed in both datasets.\n\n### Estimation of LD\n\nAs a measure of linkage disequilibrium between two biallelic sites, we used r2, calculated as follows:\n\n$r^{2}= \\frac{(p(AB) - p(A)p(B))^{2}}{p(A)(1-p(A)) p(B)(1-p(B))}$, where p(A) and p(B) are the minor allele frequencies at these sites, and p(AB) is the frequency of the genotype that carries minor alleles at both sites.\n\nSingletons (sites with minor allele present only in one genotype) were excluded from the analysis if not stated otherwise.\n\n### Haploblocks annotation\n\nIn order to annotate the haploblocks, we calculated LD along the S. commune genome in a sliding window of 250 nucleotides with a step of 20 nucleotides (only non-singleton SNPs are analyzed; the windows with less than 10 SNPs were excluded). Any continuous sequence of overlapping windows with r2 larger than the threshold value was merged together in a haploblock. The LD threshold value was defined independently for each S. commune population as the heavy tail of the within-window LD distribution, as compared with the lognormal distribution with the same mean and variance as in the data (Figure 3\u2014figure supplement 7).\n\n### Estimation of LD between physically interacting amino acid sites\n\nOf 16,319 annotated protein-coding genes of S. commune (Ohm et al., 2010) 9,941 were found in all 55 aligned genomes. We blasted the protein sequences of these orthologous groups against the PDB database of protein structures. About 52% of them (5,188) had a match (e-value threshold = 1e-5) amongst the proteins with the known structure. We realigned the sequences of S. commune protein and the matching PDB protein with clustal and calculated within-population LD and physical distance (\u00c5) for each pair of aligned positions. A pair of amino acid sites was considered physically adjacent if they were located within 10 \u00c5 from each other.\n\nTo compare LD between pairs of physically close and distant sites, we used the controlled permutation test (Figure 2A): for each pair of physically close amino acid sites (within 10 \u00c5) we sampled a pair of physically distant amino acids on the same genetic distance (measured in aa). Pairs of sites closer than 5 aa were excluded from the analysis.\n\nTo examine LD patterns within individual protein structures, we calculated contingency tables of pairs of SNPs being located in codons encoding physically close amino acids and having high LD (no less than 90% quantile for a given gene). Pairs of amino acid sites located closer than 30 aa or more distant than 100 aa from each other were excluded; genes with less than five pairs of physically close sites under high or low LD were also excluded. From these contingency tables, we calculated the odds ratio (OR) and chi-square test p-value for each gene. p-values were adjusted using BH correction. We identified 22 genes with pairs of adjacent sites having significantly higher LD in the USA population (out of 1286 eligible genes in total), and 87 genes in the Russian population (out of 967) under 5% FDR (Appendix 3\u2014table 1). Examples of such genes are shown in Figure 2 and Figure 2\u2014figure supplements 1 and 2.\n\n### Simulations of epistasis\n\nTo simulate evolution of populations with or without epistasis and balancing selection (Figure 3\u2014figure supplement 6), we used an individual-based model implemented by SLiM (Haller and Messer, 2019). Simulations were performed with diploid population size N=1000 and recombination rate 0. To achieve the level of genetic diversity \u03c0 similar to S. commune, mutation rate \u03bc was scaled as \u03bc=\u03c0/2N=5e-5. The length of the simulated sequence was 100 nt. Each simulation started with a monomorphic population and proceeds for 100 N generations. For calculations of synonymous and nonsynonymous LD, random 100 haploid genotypes were sampled from the population. Only SNPs with minor allele frequency >5% in the sample were analyzed.\n\nWe modelled two types of mutations, depending on whether they are neutral (with selection coefficient ssyn = 0) or weakly deleterious (snonsyn \u22640), representing synonymous and nonsynonymous variants correspondingly. There were twice as many nonsynonymous as synonymous sites. Under the non-epistatic model, s was independent of the genetic background. We assumed snonsyn = \u22120.01 with the dominance coefficient h of 0.5.\n\nUnder the pairwise positive epistasis model, we assumed that one nonsynonymous mutation can be partially or fully compensated by a mutation at another site. In this model, all nonsynonymous sites were split into pairs. Each mutation of a pair individually occurring within a genotype was assumed to be deleterious, with selection coefficient snonsyn = \u22120.01; however, the fitness of the double mutant is larger than expected under the additive (non-epistatic) model. We used several models of epistasis, with different strengths of epistasis strength and landscape shapes (Figure 3\u2014figure supplement 6).\n\nIn the NFDS model of balancing selection, a single mutation at a random position was subjected to frequency-dependent selection (so that it is positively selected at frequencies below 0.5, and negatively selected at frequencies above 0.5). In the AOD model, mutations in 10 random positions were fully recessive (h=0) and weakly deleterious (s=\u22120.0025).\n\nTo simulate evolution of populations with different levels of genetic diversity under epistasis (Appendix 1), we used FFPopSim (Zanini and Neher, 2012). To achieve different levels of genetic diversity \u03c0, mutation rate \u03bc was scaled as \u03bc=\u03c0/2N. The calculations were performed the same way as in SLiM, but In this case, we used haploid population size N=2000, population-scaled recombination rate 0.01 and the simulated sequence length of 300 nucleotides.\n",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "70654b3f-2e76-44a1-bf81-c5a642e078e9",
+      "submission_id": "3ab6ced4-4aef-4d30-9048-139d3e4bbd23",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilia Huerta-Sanchez, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76073.sa0](https://doi.org/10.7554/eLife.76073.sa0)\n\nThis study investigates a highly polymorphic species, the fungus Schizophyllum commune, and finds that, compared to synonymous mutations, levels of linkage disequilibrium between nonsynonymous mutations are higher within genes than between genes. The authors propose this observation may be explained by compensatory interactions between nonsynonymous alleles, pointing to the presence of positive epistasis. These exciting results provide insights into what levels of polymorphism can lead to the emergence of positive epistasis. This paper should be of interest to population geneticists and evolutionary biologists studying the role of natural selection.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Emilia Huerta-Sanchez, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76073.sa1](https://doi.org/10.7554/eLife.76073.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Complex fitness landscape shapes variation in a hyperpolymorphic species\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agree that the findings presented in this paper interesting. There were a number of requests for clarifications and analyses that would strengthen the paper. Please find a detailed list of comments and suggestions from each reviewer below.\n\nReviewer #1 (Recommendations for the authors):\n\n1) LD needs to be better defined in the introduction for non-experts. LD in general is a poor way to say that pairs of alleles are found together more or less often than expected.\n\n2) The fact that haplospores can be cultured to sequence haploid DNA needs to be clearly stated in the introduction, as it will dissipate a lot of doubts early on from readers like me who wonder from the start if not all the called variants must be false positives, because how can you map anything properly if heterozygosity is so high? I was by the way pleasantly surprised to find out that the authors used Macse, which is the right choice of aligner but unfortunately not well known and used enough by evolutionary biologists. Was it Macse v1 or v2?\n\n3) Page 5 line 1, about the indistinguishable LD for nonsyn and syn in humans. As stated it sounds in contradiction with Garcia and Lohmueller Plos Genetics 2021. In fact, it is not because the authors focus on MAF>-0.05. But this needs to be better detailed that for that reason there is no contradiction.\n\n4) Page 5 line 3. The authors write about rare alleles but have excluded MAF<0.05? To me, rare alleles is MAF<0.05, so this is a bit confusing to read. The authors need to clarify what they mean by rare alleles here (see my public review main comments). The authors need to better explain why they exclude MAF<0.05. I guess from reading the manuscript that it has to do with (i) the depth of sampling and (ii) negative epistasis between deleterious variants being more prevalent and having the opposite effect and thus potentially masking the positive epistasis signature at lower frequencies? This needs to be much more detailed in the manuscript. About negative epistasis, does it indeed explain why the authors exclude MAF<0.05? In the discussion, I would like to see the authors detailing more if seeing a lot of positive epistasis also implies that there must be abundant negative epistasis between deleterious variants. Is the lack of focus on negative epistasis due to the fact that a proper analysis would require much deeper sampling? These are things I want to know.\n\n5) P3 L19: if the reader misses the first comma in the sentence it takes a completely different meaning. You may want to rephrase.\n\n6) When the authors start mentioning protein structures, I think they should also provide information to the readers in the Results about the nature of protein structure data used (name of the database, number of structures etc.) and not just in the Methods. I like to know about the size of the datasets used in the Results. The authors should also specify in their manuscript that the results with protein structures address potential limitations of the previous nonsyn vs. syn comparison. Clearly this first result cannot be due only to a difference in SFS between nonsyn and syn given the protein structure results.\n\n7) Page 8 line 19. Why only the American and not the Russian population? This needs to be explained.\n\n8) The positive correlation with pN/pS needs to be better explained. Is it because it is more likely then for more positively epistatic variants to find each other? Is it due to lower pN/pS also being correlated to stronger purifying selection/lower frequencies below MAF<0.05?\n\n9) About the proposition of negative frequency-dependent selection, I do think that it explains a lot of the properties of the system. I think however that the authors need to explain better what they mean by that. Is it just about the rare+common allele combinations being deleterious, and too many of those occurring if the rare+rare allele chromosomes reached more intermediate frequencies? Or do the authors think it is more than this and more complicated?\n\n10) A lot of my worries were lifted when I read in the Methods that the authors excluded variants less than 5 amino acids from each other. Up to that point when I was reading, I wondered about how complex multinucleotide mutations could affect the results, and also how the closest nonsynonymous variants may potentially be a bit closer to each other than the closest synonymous variants due to the nature of codons. All these concerns are not valid given the minimal distance of five amino acids, so the authors need to mention it much earlier in the results, together with why they do it.\n",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bfb64ee0-7838-44a6-8d88-20a92bd0112d",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C1",
+      "claim": "Schizophyllum commune is the most polymorphic species known.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we study such patterns in a fungus Schizophyllum commune, the most polymorphic species known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a factual assertion about S. commune's status among known species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "203f5d18-322a-46fa-8142-65f99257ad08",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C2",
+      "claim": "In S. commune, short-range linkage disequilibrium (LD) caused by attraction of minor alleles is higher between pairs of nonsynonymous than of synonymous variants throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the genome, short-range linkage disequilibrium (LD) caused by attraction of minor alleles is higher between pairs of nonsynonymous than of synonymous variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "660aed07-be54-4ff4-ad33-48e8232ec976",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C3",
+      "claim": "The excess of LDnonsyn over LDsyn is especially pronounced for pairs of sites located within the same gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is especially pronounced for pairs of sites that are located within the same gene, especially if a large fraction of the gene is covered by haploblocks, genome segments where the gene pool consists of two highly divergent haplotypes, which is a signature of balancing selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 1 showing within-gene vs between-gene comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "5ac12a36-5067-4f08-b2e5-ddba46b5885b",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C4",
+      "claim": "Haploblocks are genome segments where the gene pool consists of two highly divergent haplotypes, which is a signature of balancing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is especially pronounced for pairs of sites that are located within the same gene, especially if a large fraction of the gene is covered by haploblocks, genome segments where the gene pool consists of two highly divergent haplotypes, which is a signature of balancing selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about haploblocks and their interpretation, drawing on established knowledge about balancing selection.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "4650791c-b037-46a2-a846-d11ad30fea4f",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C5",
+      "claim": "Haploblocks are usually shorter than 1000 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Haploblocks are usually shorter than 1000 nucleotides, and collectively cover about 10% of the S. commune genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "694bb7dd-83c8-4d12-8fa0-0355a31619d6",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C6",
+      "claim": "Haploblocks collectively cover about 10% of the S. commune genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Haploblocks are usually shorter than 1000 nucleotides, and collectively cover about 10% of the S. commune genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by quantitative analysis in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "dce95c64-6a1b-4571-bc9d-028e9791332a",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C7",
+      "claim": "LD tends to be substantially higher for pairs of nonsynonymous variants encoding amino acids that interact within the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "LD tends to be substantially higher for pairs of nonsynonymous variants encoding amino acids that interact within the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 2 showing elevated LD for physically interacting sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "f273169b-0bd8-42bc-b62d-9be6ce413883",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C8",
+      "claim": "There is a substantial correlation between LDs at the same pairs of nonsynonymous mutations in the USA and the Russian populations.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a substantial correlation between LDs at the same pairs of nonsynonymous mutations in the USA and the Russian populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "c51bbc81-0775-4f45-9e6a-908bd5e7f1d7",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C9",
+      "claim": "Selection in S. commune involves positive epistasis due to compensatory interactions between nonsynonymous alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns indicate that selection in S. commune involves positive epistasis due to compensatory interactions between nonsynonymous alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the observed patterns of LD and supported by inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "e1db3299-8256-456f-91f0-54b481b5707f",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C10",
+      "claim": "When less polymorphic species are studied, analogous patterns can be detected only through interspecific comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "When less polymorphic species are studied, analogous patterns can be detected only through interspecific comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a comparative claim about detection of epistasis patterns.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "b76e9cce-72cd-42bd-bccc-e1a932203e46",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C11",
+      "claim": "Epistasis is pervasive at the scale of between-species differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Epistasis is pervasive at the scale of between-species differences, where it is saliently manifested by Dobzhansky-Muller incompatibilities and results in low fitness of interspecific hybrids (Callahan et al., 2011; Corbett-Detig et al., 2013; Dobzhansky, 1936; Kondrashov et al., 2002; Orr, 1995; Taverner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "ec489b72-d58d-4bd4-af6b-606f7942c4e9",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C12",
+      "claim": "At the scale of within-population variation, the importance of epistasis remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, at the scale of within-population variation, the importance of epistasis remains controversial (Crow, 2010; Hill et al., 2008; Hivert et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "78be6ccb-2d92-46c6-a9df-b42686884441",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C13",
+      "claim": "Positive epistasis can maintain favorable coadapted combinations of alleles at interacting sites, increasing linkage disequilibrium (LD) between them.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of positive epistasis, a situation when a combination of alleles confers higher fitness than that expected from selection acting on these alleles individually, it can maintain favorable coadapted combinations of alleles at interacting sites, increasing linkage disequilibrium (LD) between them (Barton, 2010; Boyrie et al., 2021; Kouyos et al., 2007; Pedruzzi et al., 2018; Takahasi and Tajima, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "55aa8318-69d5-41a3-8f89-6e4404ad7853",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C14",
+      "claim": "In sexual populations, recombination competes with epistasis, disrupting coupling LD.",
+      "claim_type": "EXPLICIT",
+      "source": "In sexual populations, recombination competes with epistasis, disrupting such coupling LD (Neher and Shraiman, 2009; Pedruzzi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "efffc3a0-66a1-4574-9342-808152905d0e",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C15",
+      "claim": "Within a single gene, physical proximity alone may suffice to limit recombination, so sets of coadapted variants may evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, within a single gene, physical proximity alone may suffice to limit recombination, so sets of coadapted variants may evolve (Dobzhansky, 1950; Lewontin and Kojima, 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "6a402592-7717-424c-afef-2c2e398e47e8",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C16",
+      "claim": "Nucleotide diversity \u03c0 in S. commune is 0.20 in the USA population.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, a few hyperpolymorphic species with \u03c0>0.1 are known, of which the wood-decaying fungus Schizophyllum commune is the most extreme, where \u03c0=0.20 or 0.13 in the USA or the Russian populations, respectively (Baranova et al., 2015; Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data from prior work and current analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "83fb2b64-7826-4e27-89d9-f1c5d8f30e44",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C17",
+      "claim": "Nucleotide diversity \u03c0 in S. commune is 0.13 in the Russian population.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, a few hyperpolymorphic species with \u03c0>0.1 are known, of which the wood-decaying fungus Schizophyllum commune is the most extreme, where \u03c0=0.20 or 0.13 in the USA or the Russian populations, respectively (Baranova et al., 2015; Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data from prior work and current analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "10c3ca1f-6e6a-4134-acb4-2134ca70b551",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C18",
+      "claim": "The two populations of S. commune are highly divergent with dS between populations \u2248 0.34 and Fst = 0.58.",
+      "claim_type": "EXPLICIT",
+      "source": "The two populations of S. commune are highly divergent (dS between populations \u2248 0.34, Fst = 0.58), but there is essentially no structure within either of them (Appendix 3\u2014figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "cecfa7e3-4776-4ea8-bf56-cc33270082fe",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C19",
+      "claim": "There is essentially no structure within either the USA or Russian populations of S. commune.",
+      "claim_type": "EXPLICIT",
+      "source": "The two populations of S. commune are highly divergent (dS between populations \u2248 0.34, Fst = 0.58), but there is essentially no structure within either of them (Appendix 3\u2014figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Appendix 3\u2014figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "dcce35d7-79be-4854-8384-1075b673bd2f",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C20",
+      "claim": "In both S. commune populations, at sites with minor allele frequency (MAF) >0.05, LDnonsyn is much higher than LDsyn at the same nucleotide distance.",
+      "claim_type": "EXPLICIT",
+      "source": "In both S. commune populations, at sites with minor allele frequency (MAF) >0.05, LDnonsyn is much higher than LDsyn at the same nucleotide distance (Figure 1A, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 1A and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "0f5795da-5ada-4891-9668-e7b77aefdeb0",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C21",
+      "claim": "The excess of LDnonsyn is much stronger for pairs of SNPs located within the same gene, compared to pairs of SNPs from adjacent genes at the same distance.",
+      "claim_type": "EXPLICIT",
+      "source": "This excess of LDnonsyn is much stronger for pairs of SNPs located within the same gene, compared to pairs of SNPs from adjacent genes at the same distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "f5d33905-4bbe-4583-a340-7abbb07caa6b",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C22",
+      "claim": "The excess of LDnonsyn is independent of whether the two SNPs are located within the same or in different exons of a gene.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the excess of LDnonsyn is independent of whether the two SNPs are located within the same or in different exons of a gene (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "9e579e03-28b2-4b50-92c4-72cc3c6c8e95",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C23",
+      "claim": "In S. commune, the recombination rate is higher within exons.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. commune, the recombination rate is higher within exons (Seplyarskiy et al., 2014), which may affect the patterns of LD; however, this factor could only reduce within-gene LD, and in any case cannot explain the difference between LDnonsyn and LDsyn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "94c1d968-ce61-4c9a-9024-f03932e664bf",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C24",
+      "claim": "For S. commune, the excess of LDnonsyn over LDsyn holds when explicitly controlling for MAFs.",
+      "claim_type": "EXPLICIT",
+      "source": "For S. commune, the excess of LDnonsyn over LDsyn holds when we explicitely control for MAFs (Figure 1\u2014figure supplement 3), indicating that differences in MAFs between synonymous and nonsynonymous polymorphisms cannot explain the excess of LDnonsyn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "6b8b910c-063c-4970-8524-06bde73a3b2b",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C25",
+      "claim": "A much weaker excess of LDnonsyn over LDsyn for MAF >0.05 is also observed in the less genetically diverse D. melanogaster population.",
+      "claim_type": "EXPLICIT",
+      "source": "A much weaker excess of LDnonsyn over LDsyn for MAF >0.05 is also observed in the less genetically diverse D. melanogaster population (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "6460b404-2456-42fa-a377-25decf334f98",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C26",
+      "claim": "In human populations, LDnonsyn is indistinguishable from LDsyn at the same distances.",
+      "claim_type": "EXPLICIT",
+      "source": "In the still less polymorphic human populations, LDnonsyn is indistinguishable from LDsyn at the same distances (Figure 1C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "20985b88-4616-4e5f-87e4-858139f607ce",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C27",
+      "claim": "The excess of LDnonsyn over LDsyn corresponds to the attraction between minor nonsynonymous alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The excess of LDnonsyn over LDsyn corresponds to the attraction between minor nonsynonymous alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the observed pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "20711c23-4c47-4feb-88ee-7108c199e766",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C28",
+      "claim": "Attraction between minor nonsynonymous alleles can only appear due to positive epistasis between such alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "This attraction can only appear due to positive epistasis between such alleles - higher-than-expected fitness of their combinations (Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by theoretical reasoning in Appendix 2.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "0d9195e7-b1d9-428f-be0b-807cfd173af3",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C29",
+      "claim": "Positive epistasis can be expected to cause stronger LD in more polymorphic populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive epistasis can be expected to cause stronger LD in more polymorphic populations (Figure 1D\u2013F, Appendix 1) and must be more common for pairs of sites located within the same gene, which are more likely to interact with each other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by theoretical reasoning in Appendix 1 and illustrated in Figure 1D-F.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "1d6b3ab0-719e-4a1d-beb9-57caa9ea48e3",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C30",
+      "claim": "For rare SNPs with MAF <0.05 taken alone, LDnonsyn is similar or lower to LDsyn for all three species.",
+      "claim_type": "EXPLICIT",
+      "source": "For rare SNPs with MAF <0.05 taken alone, LDnonsyn is similar or lower to LDsyn for all three species, consistent with the effects of random drift, Hill-Robertson interference, and/or negative epistasis (Figure 1\u2014figure supplements 4\u20136; Appendix 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1\u2014figure supplements 4\u20136.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "17e0f0ce-fda0-4ccd-9c37-574b346c15da",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C31",
+      "claim": "Natural selection acting on physically interacting amino acids that are located close to each other within the three-dimensional structure of a protein is characterized by strong epistasis which leads to their coevolution at the level of between-species differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural selection acting on physically interacting amino acids that are located close to each other within the three-dimensional structure of a protein is characterized by strong epistasis which leads to their coevolution at the level of between-species differences (Marks et al., 2011; Ovchinnikov et al., 2014; Sjodt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "69faa02a-d479-4996-aeff-2cf3c2b1821f",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C32",
+      "claim": "Genome-wide elevated LD between amino acid sites within structural domains was recently demonstrated in human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide elevated LD between amino acid sites within structural domains was recently demonstrated in human populations (Ragsdale, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "23e663c3-cda0-4931-b625-67b09dba94a1",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C33",
+      "claim": "In both S. commune populations, pairs of nonsynonymous SNPs are in stronger LD when they are located at codons encoding physically close than distant amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "In both S. commune populations, pairs of nonsynonymous SNPs are in stronger LD when they are located at codons encoding physically close than distant amino acids (Figure 2A; permutation test p-value <1e-3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2A with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "0fed98ec-708d-48e9-85b3-6e7d60878292",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C34",
+      "claim": "For pairs of synonymous SNPs, there is no elevated LD when they are located at codons encoding physically close amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not the case for pairs of synonymous SNPs (Figure 2A; permutation test p-value = 0.58).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2A with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "7940361f-85b7-4335-a177-89f6253e75ef",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C35",
+      "claim": "In the USA population, 8.4% of the genome is occupied by 5,316 haploblocks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the USA population, 8.4% of the genome is occupied by 5,316 such haploblocks, 56% consist of regions with background LD level, and the rest cannot be analyzed due to poor alignment quality or low SNP density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and based on quantitative analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "e277c7ef-bc00-43d7-abb8-5e76d69b1a03",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C36",
+      "claim": "Eighty-eight percent of the haploblocks are shorter than 1000 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty-eight percent of the haploblocks are shorter than 1000 nucleotides, although the longest haploblocks spread for several thousand nucleotides (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "cc8cfa59-7409-4804-8e4b-2aea0acf1391",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C37",
+      "claim": "In the Russian population, there are 10,694 haploblocks, occupying 15.9% of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Russian population, there are 10,694 haploblocks, occupying 15.9% of the genome, and regions of background LD cover 39% of it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and based on quantitative analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "74e5ed3b-bd63-418b-8bd9-bc7341ce7fa9",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C38",
+      "claim": "There is only a modest correlation between the USA and Russian haploblocks.",
+      "claim_type": "EXPLICIT",
+      "source": "There is only a modest correlation between the USA and Russian haploblocks: the probability that a genomic position belongs to a haploblock in both populations is 2.3% instead of the expected 1.3%, indicating their relatively short persistence time in the populations (examples shown in Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by quantitative analysis and examples in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "58c96dd1-131e-45da-91a0-16943e470e38",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C39",
+      "claim": "LD within a haploblock is usually so high that most genotypes can be attributed to one of just two distinct haplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "LD within a haploblock is usually so high that most genotypes can be attributed to one of just two distinct haplotypes, which carry different sets of alleles (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "7642593c-1a8e-43e4-92dd-d9e08dd190e8",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C40",
+      "claim": "Polymorphic sites within haploblocks are characterized by higher MAF than that at sites that reside in non-haploblock regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphic sites within haploblocks are characterized by higher MAF than that at sites that reside in non-haploblock regions (t-test p-value <2e-16), and in the USA population MAFs within a haploblock are positively correlated with its strength of LD (Figure 3B, Pearson correlation estimate = 0.07, p-value <2e-6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by statistical testing and data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "68f9b830-61ce-4ffc-9523-12de07cfed9c",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C41",
+      "claim": "Genes with high LD have the largest excess of LDnonsyn over LDsyn.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with high LD, that is those that contain haploblocks, have the largest excess of LDnonsyn over LDsyn (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "318a8b7d-0374-4359-ae0c-03537371c985",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C42",
+      "claim": "LD between alleles of all kinds is higher within genes with large ratios of nonsynonymous and synonymous polymorphisms pn/ps.",
+      "claim_type": "EXPLICIT",
+      "source": "LD between alleles of all kinds is higher within genes with large ratios of nonsynonymous and synonymous polymorphisms pn/ps (Spearman correlation p-value <2e-16, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by statistical testing and data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "4781bb26-6c34-4580-af23-f4167e59f88c",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C43",
+      "claim": "Genes with elevated pn/ps have a stronger excess of LDnonsyn over LDsyn.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with elevated pn/ps also have a stronger excess of LDnonsyn over LDsyn (Figure 3E, Spearman correlation p-value = 4.4e-17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by statistical testing and data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "1880d963-b765-4358-a56f-b2169f1620ed",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C44",
+      "claim": "Positive epistasis alone cannot lead to the observed large excess LDnonsyn over LDsyn.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations show that positive epistasis alone cannot lead to the observed large excess LDnonsyn over LDsyn, for which two extra conditions need to be satisfied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "9c05b0ef-a219-4e91-8e1b-52a21913f810",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C45",
+      "claim": "For a substantial LD between not-too-rare alleles to appear, these alleles must persist in the population for a long enough time.",
+      "claim_type": "EXPLICIT",
+      "source": "The general reason for this is simple: in order for a substantial LD between not-too-rare alleles to appear, these alleles must persist in the population for a long enough time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a theoretical explanation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "c86d4c0a-f4af-4616-9fed-9a4ed182cdd7",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C46",
+      "claim": "Positive epistasis must lead to a full compensation of deleterious effects of individual alleles for excess LDnonsyn to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "First, positive epistasis must lead to a full compensation of deleterious effects of individual alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a necessary condition based on simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "f4e7cdd6-934b-4f89-b7ce-917b91c0cb91",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C47",
+      "claim": "The fitnesses of at least two most-fit genotypes that are present in the population at substantial frequencies must be (nearly) the same for excess LDnonsyn to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the fitnesses of at least two most-fit genotypes that are present in the population at substantial frequencies must be (nearly) the same (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a necessary condition based on simulation results shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "16d3cc55-b18d-4357-971c-414f72d301b6",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C48",
+      "claim": "There must be some kind of balancing selection that specifically works to maintain variation for excess LDnonsyn to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, there must be some kind of balancing selection that specifically works to maintain variation, because otherwise random drift does not allow genetic variation to persist for a long enough time even if some, or even all, genotypes are equally fit (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a necessary condition based on simulation results shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "3702c4d6-f7ff-46b4-91ec-79f1d1471827",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C49",
+      "claim": "Balancing selection is necessary for the presence of haploblocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Balancing selection is also neccessary for the presence of haploblocks, because a pair of divergent haplotypes can evolve in a panmictic population only if they coexist for a considerable time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a theoretical inference.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "54ee5ffc-cb74-483e-bac6-9886d0d7d95d",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C50",
+      "claim": "The USA and the Russian populations share a large proportion of their SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The USA and the Russian populations share a large proportion of their SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "6ce0ec67-feb0-4c1a-bb96-6a9112a6915f",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C51",
+      "claim": "Few shared SNPs between USA and Russian populations are expected to have common origin in the ancestral population.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the high divergence between the two populations, few such shared SNPs are expected to have common origin in the ancestral population, and instead they are likely to have arisen from recurrent mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference based on population divergence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "c14b14e9-a74f-44bc-959c-5118e5408ce5",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C52",
+      "claim": "SNPs comprise 0.28 of all the aligned nucleotide sites in the USA population.",
+      "claim_type": "EXPLICIT",
+      "source": "The high prevalence of coincident SNPs is not surprising because SNPs comprise 0.28 and 0.13 of all the aligned nucleotide sites in the USA and Russian populations, respectively (Baranova et al., 2015, Appendix 3\u2014figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data from prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "45ae859f-76d7-42c8-a50e-1e6d30e1a916",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C53",
+      "claim": "SNPs comprise 0.13 of all the aligned nucleotide sites in the Russian population.",
+      "claim_type": "EXPLICIT",
+      "source": "The high prevalence of coincident SNPs is not surprising because SNPs comprise 0.28 and 0.13 of all the aligned nucleotide sites in the USA and Russian populations, respectively (Baranova et al., 2015, Appendix 3\u2014figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data from prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "869176c8-8aaa-4718-9054-ded1f7b963fa",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C54",
+      "claim": "The values of LD in the two populations are strongly correlated only for pairs of nonsynonymous SNPs located within the same gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The values of LD in the two populations are strongly correlated only for pairs of nonsynonymous SNPs located within the same gene, and only if both populations carry the same pairs of amino acids in the same sites (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "a9c65694-38af-44ca-be7f-496f6243cc53",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C55",
+      "claim": "The correlation of LDs is the strongest if shared SNPs carry the same pairs of nucleotides, but is also observed if they encode the same amino acids by different nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation of LDs is the strongest if shared SNPs carry the same pairs of nucleotides, but is also observed if they encode the same amino acids by different nucleotides (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "20555e33-a17e-4605-9b80-05d72dd44caa",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C56",
+      "claim": "The observed pattern of correlated LDs indicates that epistatic selection is shared between the two populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the observed pattern indicates that epistatic selection is shared between the two populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the observed correlation patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "06e76ab0-ec57-48ff-bd89-0f00a6f3794c",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C57",
+      "claim": "The overall fraction of the genome covered by haploblocks in S. commune is about an order of magnitude higher than the fraction covered by detectable signatures of balancing selection in genomes of other species.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall fraction of the genome covered by haploblocks is ~10%, which is about an order of magnitude higher than the fraction covered by detectable signatures of balancing selection in genomes of other species (DeGiorgio et al., 2014; Leffler et al., 2013; Rasmussen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by comparison to prior work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "42717616-eb93-45c7-970a-76b81cfaacdf",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C58",
+      "claim": "Haploblocks in S. commune were shaped by both balancing and epistatic selection.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is much stronger within haploblocks, indicating that they were shaped by both balancing and epistatic selection, so that amino acids common within a haplotype together confer a higher fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the observed patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "ccd12059-6e8d-492c-ac3b-94db6f612c07",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C59",
+      "claim": "Haploblocks and positive LD between minor nonsynonymous alleles are common in S. commune due to its hyperpolymorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive LDnonsyn in S. commune is also likely to be due to its hyperpolymorphism which increases the probability that mutually compensating alleles at a pair of interacting sites achieve high frequency and encounter each other in the same haplotype before being eliminated by selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an explanation for the observed patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "abf0b0a2-5b83-4ebf-8ddd-8e2e8f5c5b25",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C60",
+      "claim": "In a vast majority of species, \u03c0 is a small parameter <<1.",
+      "claim_type": "EXPLICIT",
+      "source": "In a vast majority of species, \u03c0 is a small parameter <<1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a general observation about genetic diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "79eb8624-e6e2-4d99-a179-7ff710ae6751",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C61",
+      "claim": "Hyperpolymorphic species where \u03c0 is ~1 provide a unique opportunity to study phenomena which are traditionally viewed as belonging to the domain of macroevolution through data on within-population variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hyperpolymorphic species where \u03c0 is ~1 provide a unique opportunity to study phenomena which are traditionally viewed as belonging to the domain of macroevolution through data on within-population variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion about the value of studying hyperpolymorphic species.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "8db76c88-825f-4a89-8790-710166cfe762",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C62",
+      "claim": "34 haploid genotypes from the USA and 21 from Russia were studied.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied 34 haploid genotypes from the USA and 21 from Russia, each obtained by sequencing and de novo assembly of a haploid culture originated from a single haplospore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "d5248c26-bea5-4fbf-bf1c-4e1e33f0937e",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C63",
+      "claim": "The use of haploid samples and de novo assembly of each sample ensures robust identification of haplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of haploid samples and de novo assembly of each sample ensures robust identification of haplotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a methodological justification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "cc4b13f2-aacf-47a0-a8af-db896c0b3b9e",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C64",
+      "claim": "About 52% of S. commune protein-coding genes had a match amongst the proteins with known structure in the PDB database.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 16,319 annotated protein-coding genes of S. commune (Ohm et al., 2010) 9,941 were found in all 55 aligned genomes. We blasted the protein sequences of these orthologous groups against the PDB database of protein structures. About 52% of them (5,188) had a match (e-value threshold = 1e-5) amongst the proteins with the known structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "05600fe7-b5ed-40a3-8914-a916a2869e33",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C65",
+      "claim": "22 proteins with significant associations between the patterns of LD and of physical interactions between sites were found in the USA population at 5% FDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is possible to identify individual proteins with significant associations between the patterns of LD and of physical interactions between sites. At a 5% FDR, we found 22 such proteins in the USA population, and 87 proteins in the Russian population (Appendix 3\u2014table 1); three examples are shown in Figure 2B\u2013D (see also Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Appendix 3\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "7a9c8334-7bfc-4ce9-b38c-43a5773fb605",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C66",
+      "claim": "87 proteins with significant associations between the patterns of LD and of physical interactions between sites were found in the Russian population at 5% FDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is possible to identify individual proteins with significant associations between the patterns of LD and of physical interactions between sites. At a 5% FDR, we found 22 such proteins in the USA population, and 87 proteins in the Russian population (Appendix 3\u2014table 1); three examples are shown in Figure 2B\u2013D (see also Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Appendix 3\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "86776c27-be99-4f62-b6d2-1c9fc4d9f138",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C67",
+      "claim": "In a vast majority of species, nucleotide diversity \u03c0 is of the order of 0.001 (as in Homo sapiens) or 0.01 (as in Drosophila melanogaster) at selectively neutral sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In a vast majority of species, nucleotide diversity \u03c0, the evolutionary distance between a pair of randomly chosen genotypes, is, at selectively neutral sites, of the order of 0.001 (as in Homo sapiens) or 0.01 (as in Drosophila melanogaster) (Leffler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "f29ebe90-cfb1-4960-824a-00fb5c6d9a95",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C68",
+      "claim": "A few hyperpolymorphic species with \u03c0>0.1 are known.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, a few hyperpolymorphic species with \u03c0>0.1 are known, of which the wood-decaying fungus Schizophyllum commune is the most extreme, where \u03c0=0.20 or 0.13 in the USA or the Russian populations, respectively (Baranova et al., 2015; Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "0b837154-f33e-440e-8d31-ecf92163bca4",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C69",
+      "claim": "Two samples from Florida (USA population) were excluded from the analysis to minimize the possible effect of population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Two samples from Florida (USA population) were excluded from the further analysis to minimize the possible effect of population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing data filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "db067634-f96a-4449-95e9-99a305924783",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C70",
+      "claim": "The total number of detected SNPs was 5.8 million for the USA population (82% of them biallelic).",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of detected SNPs was 5.8 million for the USA population (82% of them biallelic) and 2.7 million for the Russian population (93% biallelic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "e2e99285-b034-4a03-a254-fa6622e7c4f6",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C71",
+      "claim": "The total number of detected SNPs was 2.7 million for the Russian population (93% biallelic).",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of detected SNPs was 5.8 million for the USA population (82% of them biallelic) and 2.7 million for the Russian population (93% biallelic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "7ecbb6ca-90a2-412e-b11a-3c045d24939a",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C72",
+      "claim": "25% of the USA SNPs were shared with the Russian population (11% with the same major and minor alleles).",
+      "claim_type": "EXPLICIT",
+      "source": "25% of the USA SNPs were shared with the Russian population (11% with the same major and minor alleles), and 53% of the Russian SNPs were shared with the USA population (23% with the same major and minor alleles, Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "695c36bb-4b06-4281-81bf-a44371f6cbd0",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "claim_id": "C73",
+      "claim": "53% of the Russian SNPs were shared with the USA population (23% with the same major and minor alleles).",
+      "claim_type": "EXPLICIT",
+      "source": "25% of the USA SNPs were shared with the Russian population (11% with the same major and minor alleles), and 53% of the Russian SNPs were shared with the USA population (23% with the same major and minor alleles, Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dd6f143a-c858-43bf-b082-b11dd8049428",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "S. commune is identified as the most polymorphic species known, with nucleotide diversity \u03c0 = 0.20 in the USA population and \u03c0 = 0.13 in the Russian population, which is substantially higher than typical species where \u03c0 is of the order of 0.001 (H. sapiens) or 0.01 (D. melanogaster).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C16, C17, C67, and C68 collectively establish S. commune's status as hyperpolymorphic. The quantitative values for \u03c0 are stated and supported by citations to prior work (C16, C17) and are placed in comparative context with other species (C67). The claim of being 'most polymorphic' (C1) is consistent with the reported \u03c0 values being at the extreme end of the known spectrum.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "f8f06ece-ee60-417b-abb1-64202f47b3c8",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study analyzed 34 haploid genotypes from the USA and 21 from Russia. The two populations are highly divergent (dS \u2248 0.34, Fst = 0.58) but show essentially no structure within either population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C62, and C69 describe the study design and population structure. Sample sizes are clearly stated (C62), quality control measures are described (C69), and population divergence metrics are provided with supporting data (C18, C19). The lack of within-population structure is stated and supported by reference to Appendix 3\u2014figure 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "2a404646-7d8c-43f3-adc3-b8ff11069c3f",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In S. commune, linkage disequilibrium between nonsynonymous variants (LDnonsyn) is substantially higher than between synonymous variants (LDsyn) at the same nucleotide distance, especially for pairs of sites within the same gene. This excess holds when controlling for minor allele frequencies and is independent of whether SNPs are in the same or different exons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C20, C21, C22, and C24 describe the core finding of elevated LDnonsyn. The pattern is supported by data in Figure 1 and multiple supplementary figures. Controls for MAF (C24) and exon structure (C22) strengthen the finding. The within-gene vs between-gene comparison (C21) is clearly demonstrated in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "f0732c6d-9109-448c-99fd-062db69e1c05",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A much weaker excess of LDnonsyn over LDsyn is observed in D. melanogaster, while in human populations LDnonsyn is indistinguishable from LDsyn at the same distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C26 provide comparative context showing that the excess LDnonsyn pattern scales with polymorphism levels across species. Both claims are supported by data in Figure 1B-C and supplementary figures, establishing that the phenomenon is most pronounced in the hyperpolymorphic S. commune.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "b29af783-d76c-4590-8078-e4fd12f13fcb",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The excess of LDnonsyn over LDsyn corresponds to attraction between minor nonsynonymous alleles, which can only appear due to positive epistasis. Positive epistasis is expected to cause stronger LD in more polymorphic populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, and C29 provide the mechanistic interpretation of the observed LD patterns. The inference that attraction between minor alleles requires positive epistasis (C28) is supported by theoretical reasoning in Appendix 2. The prediction that epistasis causes stronger LD in more polymorphic populations (C29) is supported by theoretical work in Appendix 1 and illustrated in Figure 1D-F, and is consistent with the comparative data across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "31723cbd-3a94-4c16-9837-de1d1d61e441",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For rare SNPs with MAF < 0.05, LDnonsyn is similar to or lower than LDsyn for all three species, consistent with effects of random drift, Hill-Robertson interference, and/or negative epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 describes the pattern for rare variants, which contrasts with the pattern for common variants. This is supported by data in Figure 1\u2014figure supplements 4\u20136 and is consistent with established population genetic theory regarding the effects of drift and interference on rare deleterious alleles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LD is substantially higher for pairs of nonsynonymous variants encoding amino acids that physically interact within protein structures (within 10 \u00c5). This pattern is observed genome-wide and in individual proteins, with 22 proteins in the USA population and 87 in the Russian population showing significant associations at 5% FDR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C33, C34, C65, and C66 describe elevated LD between physically interacting sites. The analysis is based on structural data from ~52% of S. commune genes (C64). Statistical testing with permutation controls (C33, C34) and FDR correction (C65, C66) support the findings. Prior work (C31, C32) establishes the biological plausibility. Examples in Figure 2 provide visual confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "a14a4fb0-0c31-4712-b6c6-fc69153de092",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Haploblocks\u2014genome segments consisting of two highly divergent haplotypes\u2014are prevalent in S. commune, covering ~10% of the genome. They are typically shorter than 1000 nucleotides (88% in USA), show modest correlation between populations, and are characterized by high LD and elevated minor allele frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C35-C40 comprehensively describe haploblocks. Quantitative metrics (genome coverage, length distribution, correlation between populations) are provided with supporting data in Figure 3 and supplements. The bimodal distribution of minor alleles within haploblocks (C39, Figure 3A) and elevated MAF (C40, Figure 3B) are statistically supported. The definition and interpretation as signatures of balancing selection (C4) is consistent with population genetic theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "cd976602-768a-483d-9845-9520d5d115ce",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Genes with high LD (containing haploblocks) show the largest excess of LDnonsyn over LDsyn. LD is higher in genes with elevated pn/ps ratios, and these genes also show stronger excess of LDnonsyn over LDsyn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, and C43 describe relationships between gene-level properties and LD patterns. All three claims are supported by statistical testing (Spearman correlations with highly significant p-values) and data visualization in Figure 3C-E. The correlations are consistent with the epistasis hypothesis and provide gene-level validation of the genome-wide patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "a0ddeb53-c73c-41b1-acc1-93b4d91871d6",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that positive epistasis alone cannot produce the observed excess of LDnonsyn over LDsyn. Two additional conditions are required: (1) positive epistasis must fully compensate for deleterious effects of individual alleles, resulting in nearly equal fitness of multiple genotypes, and (2) balancing selection must maintain variation long enough for substantial LD to develop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 present simulation-based mechanistic insights. The necessity of both compensatory epistasis (C46, C47) and balancing selection (C48) is demonstrated through simulations shown in Figure 3\u2014figure supplement 6. The theoretical reasoning (C45, C49) is sound and consistent with population genetic principles. The simulations provide crucial support for the interpretation of empirical patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite high divergence between USA and Russian populations, there is substantial correlation of LD values at the same pairs of nonsynonymous SNPs within genes, particularly when the same amino acids are encoded. This indicates that epistatic selection is shared between populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C50-C56, C72, and C73 describe cross-population LD correlations. The high proportion of shared SNPs (C72, C73) despite population divergence (C18) suggests recurrent mutation (C51). The correlation is specific to nonsynonymous variants within genes encoding the same amino acids (C54, C55), as shown in Figure 4. The inference of shared epistatic selection (C56) is well-supported by the specificity of the correlation pattern and the control for alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "35bc371e-9784-494f-abd6-18883252411a",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observed patterns indicate that selection in S. commune involves positive epistasis due to compensatory interactions between nonsynonymous alleles. Haploblocks were shaped by both balancing and epistatic selection. The prevalence of these patterns in S. commune is attributed to its hyperpolymorphism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C58, and C59 provide the main interpretive conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: elevated LDnonsyn (C2-C3), LD between physically interacting sites (C7), haploblock characteristics (C4-C6), simulation results (C44-C49), and cross-population correlations (C8). The explanation linking hyperpolymorphism to epistasis detection (C59) is theoretically sound and consistent with the comparative data across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "0878be81-6128-41f4-8588-dc053271847e",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Analogous patterns of epistasis can be detected in less polymorphic species only through interspecific comparisons. Hyperpolymorphic species with \u03c0 ~ 1 provide a unique opportunity to study macroevolutionary phenomena through within-population variation. S. commune shows ~10% genome coverage by haploblocks, about an order of magnitude higher than signatures of balancing selection in other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C57, C60, and C61 place the findings in broader evolutionary context. The comparative statement (C10) is supported by the data showing weak or absent patterns in D. melanogaster and H. sapiens (C25, C26). The quantitative comparison of haploblock prevalence (C57) is supported by citations to prior work. The conceptual claim about hyperpolymorphic species bridging micro- and macroevolution (C61) is a reasonable inference from the demonstrated ability to detect epistasis within populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "7c3676f5-0061-4dec-af21-fff9b06e779b",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context: Epistasis is pervasive at the between-species scale but controversial at the within-population scale. Positive epistasis can increase LD between interacting sites, though recombination competes with this effect. Within genes, physical proximity may limit recombination sufficiently for coadapted variants to evolve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 provide established background knowledge from the literature, supported by appropriate citations. These claims set up the motivation for the study and are not novel findings but rather accurate representations of prior work and theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "ba40a3a3-12e9-4f64-8645-9962f7364b8a",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In S. commune, the recombination rate is higher within exons, which could reduce within-gene LD but cannot explain the difference between LDnonsyn and LDsyn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 addresses a potential confounding factor. The elevated recombination rate within exons is supported by citation to prior work (Seplyarskiy et al., 2014). The reasoning that this cannot explain the LDnonsyn excess is sound because: (1) it would reduce, not increase, within-gene LD, and (2) it would affect both synonymous and nonsynonymous variants equally. This is further supported by C22 showing the pattern is independent of exon structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    },
+    {
+      "id": "13da4879-405d-4995-89ab-4400e7456c80",
+      "content_id": "f394dad9-3f78-4acb-9fb8-353c056f739d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological details: The use of haploid samples and de novo assembly ensures robust haplotype identification. The study detected 5.8 million SNPs in the USA population (82% biallelic) and 2.7 million in the Russian population (93% biallelic).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C70, and C71 describe methodological aspects. The justification for using haploid samples (C63) is sound as it avoids phasing errors. The SNP counts (C70, C71) are clearly stated and represent basic descriptive statistics of the dataset. These are well-supported methodological claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:50:07.029344Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bfb64ee0-7838-44a6-8d88-20a92bd0112d",
+      "result_id": "dd6f143a-c858-43bf-b082-b11dd8049428"
+    },
+    {
+      "claim_id": "6a402592-7717-424c-afef-2c2e398e47e8",
+      "result_id": "dd6f143a-c858-43bf-b082-b11dd8049428"
+    },
+    {
+      "claim_id": "83fb2b64-7826-4e27-89d9-f1c5d8f30e44",
+      "result_id": "dd6f143a-c858-43bf-b082-b11dd8049428"
+    },
+    {
+      "claim_id": "86776c27-be99-4f62-b6d2-1c9fc4d9f138",
+      "result_id": "dd6f143a-c858-43bf-b082-b11dd8049428"
+    },
+    {
+      "claim_id": "f29ebe90-cfb1-4960-824a-00fb5c6d9a95",
+      "result_id": "dd6f143a-c858-43bf-b082-b11dd8049428"
+    },
+    {
+      "claim_id": "10c3ca1f-6e6a-4134-acb4-2134ca70b551",
+      "result_id": "f8f06ece-ee60-417b-abb1-64202f47b3c8"
+    },
+    {
+      "claim_id": "cecfa7e3-4776-4ea8-bf56-cc33270082fe",
+      "result_id": "f8f06ece-ee60-417b-abb1-64202f47b3c8"
+    },
+    {
+      "claim_id": "8db76c88-825f-4a89-8790-710166cfe762",
+      "result_id": "f8f06ece-ee60-417b-abb1-64202f47b3c8"
+    },
+    {
+      "claim_id": "0b837154-f33e-440e-8d31-ecf92163bca4",
+      "result_id": "f8f06ece-ee60-417b-abb1-64202f47b3c8"
+    },
+    {
+      "claim_id": "203f5d18-322a-46fa-8142-65f99257ad08",
+      "result_id": "2a404646-7d8c-43f3-adc3-b8ff11069c3f"
+    },
+    {
+      "claim_id": "660aed07-be54-4ff4-ad33-48e8232ec976",
+      "result_id": "2a404646-7d8c-43f3-adc3-b8ff11069c3f"
+    },
+    {
+      "claim_id": "dcce35d7-79be-4854-8384-1075b673bd2f",
+      "result_id": "2a404646-7d8c-43f3-adc3-b8ff11069c3f"
+    },
+    {
+      "claim_id": "0f5795da-5ada-4891-9668-e7b77aefdeb0",
+      "result_id": "2a404646-7d8c-43f3-adc3-b8ff11069c3f"
+    },
+    {
+      "claim_id": "f5d33905-4bbe-4583-a340-7abbb07caa6b",
+      "result_id": "2a404646-7d8c-43f3-adc3-b8ff11069c3f"
+    },
+    {
+      "claim_id": "94c1d968-ce61-4c9a-9024-f03932e664bf",
+      "result_id": "2a404646-7d8c-43f3-adc3-b8ff11069c3f"
+    },
+    {
+      "claim_id": "6b8b910c-063c-4970-8524-06bde73a3b2b",
+      "result_id": "f0732c6d-9109-448c-99fd-062db69e1c05"
+    },
+    {
+      "claim_id": "6460b404-2456-42fa-a377-25decf334f98",
+      "result_id": "f0732c6d-9109-448c-99fd-062db69e1c05"
+    },
+    {
+      "claim_id": "20985b88-4616-4e5f-87e4-858139f607ce",
+      "result_id": "b29af783-d76c-4590-8078-e4fd12f13fcb"
+    },
+    {
+      "claim_id": "20711c23-4c47-4feb-88ee-7108c199e766",
+      "result_id": "b29af783-d76c-4590-8078-e4fd12f13fcb"
+    },
+    {
+      "claim_id": "0d9195e7-b1d9-428f-be0b-807cfd173af3",
+      "result_id": "b29af783-d76c-4590-8078-e4fd12f13fcb"
+    },
+    {
+      "claim_id": "1d6b3ab0-719e-4a1d-beb9-57caa9ea48e3",
+      "result_id": "31723cbd-3a94-4c16-9837-de1d1d61e441"
+    },
+    {
+      "claim_id": "dce95c64-6a1b-4571-bc9d-028e9791332a",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "17e0f0ce-fda0-4ccd-9c37-574b346c15da",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "69faa02a-d479-4996-aeff-2cf3c2b1821f",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "23e663c3-cda0-4931-b625-67b09dba94a1",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "0fed98ec-708d-48e9-85b3-6e7d60878292",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "cc4b13f2-aacf-47a0-a8af-db896c0b3b9e",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "05600fe7-b5ed-40a3-8914-a916a2869e33",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "7a9c8334-7bfc-4ce9-b38c-43a5773fb605",
+      "result_id": "7bee448f-74cc-456b-8eb6-652a6c92dc4d"
+    },
+    {
+      "claim_id": "5ac12a36-5067-4f08-b2e5-ddba46b5885b",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "4650791c-b037-46a2-a846-d11ad30fea4f",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "694bb7dd-83c8-4d12-8fa0-0355a31619d6",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "7940361f-85b7-4335-a177-89f6253e75ef",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "e277c7ef-bc00-43d7-abb8-5e76d69b1a03",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "cc8cfa59-7409-4804-8e4b-2aea0acf1391",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "74e5ed3b-bd63-418b-8bd9-bc7341ce7fa9",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "58c96dd1-131e-45da-91a0-16943e470e38",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "7642593c-1a8e-43e4-92dd-d9e08dd190e8",
+      "result_id": "a14a4fb0-0c31-4712-b6c6-fc69153de092"
+    },
+    {
+      "claim_id": "68f9b830-61ce-4ffc-9523-12de07cfed9c",
+      "result_id": "cd976602-768a-483d-9845-9520d5d115ce"
+    },
+    {
+      "claim_id": "318a8b7d-0374-4359-ae0c-03537371c985",
+      "result_id": "cd976602-768a-483d-9845-9520d5d115ce"
+    },
+    {
+      "claim_id": "4781bb26-6c34-4580-af23-f4167e59f88c",
+      "result_id": "cd976602-768a-483d-9845-9520d5d115ce"
+    },
+    {
+      "claim_id": "1880d963-b765-4358-a56f-b2169f1620ed",
+      "result_id": "a0ddeb53-c73c-41b1-acc1-93b4d91871d6"
+    },
+    {
+      "claim_id": "9c05b0ef-a219-4e91-8e1b-52a21913f810",
+      "result_id": "a0ddeb53-c73c-41b1-acc1-93b4d91871d6"
+    },
+    {
+      "claim_id": "c86d4c0a-f4af-4616-9fed-9a4ed182cdd7",
+      "result_id": "a0ddeb53-c73c-41b1-acc1-93b4d91871d6"
+    },
+    {
+      "claim_id": "f4e7cdd6-934b-4f89-b7ce-917b91c0cb91",
+      "result_id": "a0ddeb53-c73c-41b1-acc1-93b4d91871d6"
+    },
+    {
+      "claim_id": "16d3cc55-b18d-4357-971c-414f72d301b6",
+      "result_id": "a0ddeb53-c73c-41b1-acc1-93b4d91871d6"
+    },
+    {
+      "claim_id": "3702c4d6-f7ff-46b4-91ec-79f1d1471827",
+      "result_id": "a0ddeb53-c73c-41b1-acc1-93b4d91871d6"
+    },
+    {
+      "claim_id": "f273169b-0bd8-42bc-b62d-9be6ce413883",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "54ee5ffc-cb74-483e-bac6-9886d0d7d95d",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "6ce0ec67-feb0-4c1a-bb96-6a9112a6915f",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "c14b14e9-a74f-44bc-959c-5118e5408ce5",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "45ae859f-76d7-42c8-a50e-1e6d30e1a916",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "869176c8-8aaa-4718-9054-ded1f7b963fa",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "a9c65694-38af-44ca-be7f-496f6243cc53",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "20555e33-a17e-4605-9b80-05d72dd44caa",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "7ecbb6ca-90a2-412e-b11a-3c045d24939a",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "695c36bb-4b06-4281-81bf-a44371f6cbd0",
+      "result_id": "61f4c0be-eacb-4e5f-80a2-68d8abea7ebf"
+    },
+    {
+      "claim_id": "c51bbc81-0775-4f45-9e6a-908bd5e7f1d7",
+      "result_id": "35bc371e-9784-494f-abd6-18883252411a"
+    },
+    {
+      "claim_id": "42717616-eb93-45c7-970a-76b81cfaacdf",
+      "result_id": "35bc371e-9784-494f-abd6-18883252411a"
+    },
+    {
+      "claim_id": "ccd12059-6e8d-492c-ac3b-94db6f612c07",
+      "result_id": "35bc371e-9784-494f-abd6-18883252411a"
+    },
+    {
+      "claim_id": "e1db3299-8256-456f-91f0-54b481b5707f",
+      "result_id": "0878be81-6128-41f4-8588-dc053271847e"
+    },
+    {
+      "claim_id": "06e76ab0-ec57-48ff-bd89-0f00a6f3794c",
+      "result_id": "0878be81-6128-41f4-8588-dc053271847e"
+    },
+    {
+      "claim_id": "abf0b0a2-5b83-4ebf-8ddd-8e2e8f5c5b25",
+      "result_id": "0878be81-6128-41f4-8588-dc053271847e"
+    },
+    {
+      "claim_id": "79eb8624-e6e2-4d99-a179-7ff710ae6751",
+      "result_id": "0878be81-6128-41f4-8588-dc053271847e"
+    },
+    {
+      "claim_id": "b76e9cce-72cd-42bd-bccc-e1a932203e46",
+      "result_id": "7c3676f5-0061-4dec-af21-fff9b06e779b"
+    },
+    {
+      "claim_id": "ec489b72-d58d-4bd4-af6b-606f7942c4e9",
+      "result_id": "7c3676f5-0061-4dec-af21-fff9b06e779b"
+    },
+    {
+      "claim_id": "78be6ccb-2d92-46c6-a9df-b42686884441",
+      "result_id": "7c3676f5-0061-4dec-af21-fff9b06e779b"
+    },
+    {
+      "claim_id": "55aa8318-69d5-41a3-8f89-6e4404ad7853",
+      "result_id": "7c3676f5-0061-4dec-af21-fff9b06e779b"
+    },
+    {
+      "claim_id": "efffc3a0-66a1-4574-9342-808152905d0e",
+      "result_id": "7c3676f5-0061-4dec-af21-fff9b06e779b"
+    },
+    {
+      "claim_id": "9e579e03-28b2-4b50-92c4-72cc3c6c8e95",
+      "result_id": "ba40a3a3-12e9-4f64-8645-9962f7364b8a"
+    },
+    {
+      "claim_id": "d5248c26-bea5-4fbf-bf1c-4e1e33f0937e",
+      "result_id": "13da4879-405d-4995-89ab-4400e7456c80"
+    },
+    {
+      "claim_id": "db067634-f96a-4449-95e9-99a305924783",
+      "result_id": "13da4879-405d-4995-89ab-4400e7456c80"
+    },
+    {
+      "claim_id": "e2e99285-b034-4a03-a254-fa6622e7c4f6",
+      "result_id": "13da4879-405d-4995-89ab-4400e7456c80"
+    }
+  ],
+  "comparisons": []
+}

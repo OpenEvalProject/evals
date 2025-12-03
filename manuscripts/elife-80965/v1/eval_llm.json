@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C29",
+      "C30",
+      "C87"
+    ],
+    "result": "A subset of CRP-regulated genes (icl1, umaA, and whiB1) are positively regulated by PhoP in a phosphorylation-dependent manner. PhoP is directly recruited to these promoters as shown by ChIP-qPCR, and the phosphorylation-deficient mutant PhoPD71N cannot restore gene expression. Importantly, crp expression itself is not regulated by PhoP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C24, C29, C30, and C87 are well-supported by RT-qPCR data (Figure 1A-B) and ChIP-qPCR data (Figure 1C). The experiments include appropriate controls (WT-H37Rv, \u0394phoP-H37Rv, complemented strains, and phosphorylation-deficient mutant), and the data show statistically significant differences with reported p-values. The finding that PhoP regulates CRP target genes without regulating crp itself is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PhoP binds to a specific 7-bp direct repeat motif in the whiB1 promoter (nucleotides -97 to -91 and -86 to -80 relative to the transcription start site). Phosphorylated PhoP shows ~20-fold more efficient DNA binding than unphosphorylated PhoP. Mutations in the PhoP binding site abolish both DNA binding in vitro and transcriptional activation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C43 are strongly supported by multiple complementary approaches: EMSA data (Figures 2A-D, Figure 2\u2014figure supplement 1A-B), competition assays, mutagenesis studies (Figure 2C), and \u03b2-galactosidase reporter assays (Figure 2\u2014figure supplement 1C). The mapping of the PhoP binding site is thorough, using overlapping promoter fragments and site-directed mutagenesis. The requirement for phosphorylation is demonstrated both in vitro and in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CRP alone cannot bind the whiB1 promoter fragment (whiB1up1) stably, but when both PhoP and CRP are present together, DNA binding is stimulated 5- to 10-fold, forming a ternary PhoP/CRP/DNA complex. This demonstrates that PhoP promotes CRP recruitment to the promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are well-supported by EMSA data (Figure 3A) showing cooperative DNA binding, and the composition of the ternary complex is confirmed by Western blot (Figure 3B) and Tricine SDS-PAGE (Figure 3C) analysis of the excised gel band. The experimental design appropriately tests individual proteins and combinations, providing clear evidence for cooperative binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CRP and PhoP interact via protein-protein interactions as demonstrated by M-PFC assays. This interaction requires phosphorylation of PhoP, as the phosphorylation-deficient mutant PhoPD71N cannot interact with CRP. The interaction is specific to CRP, as PhoP does not interact with CMR (another cAMP-responsive regulator) under identical conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by M-PFC assays (Figures 3D-E, Figure 3\u2014figure supplement 1A-B) showing bacterial growth in the presence of trimethoprim only when CRP and wild-type PhoP are co-expressed. The specificity is demonstrated by negative controls (empty vectors, PhoPD71N, and CMR), and RT-qPCR confirms comparable expression of CRP and CMR, ruling out expression differences as an explanation for the lack of PhoP-CMR interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CRP and PhoP interact in vivo and in vitro as demonstrated by co-immunoprecipitation and pull-down assays. The interaction requires phosphorylation of PhoP, as the phosphorylation-deficient mutant PhoPD71N does not interact with CRP in pull-down assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by multiple complementary approaches: in vivo co-IP from M. tuberculosis lysates (Figure 4A), in vitro GST pull-down assays (Figure 4B), and pull-down assays with PhoPD71N (Figure 4C). The experiments include appropriate negative controls (empty vector, GST alone, resin alone), and the results are consistent with the M-PFC data, strengthening the conclusion that CRP-PhoP interaction requires PhoP phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The CRP-PhoP interaction is mediated by the N-terminal domains of both proteins. PhoPN (residues 1-141) interacts with CRP, while PhoPC (residues 141-247) does not. Similarly, CRPN (residues 28-116) interacts with PhoP, while CRPC (residues 146-224) does not. The PhoP linker region does not contribute to the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by systematic domain mapping using pull-down assays (Figures 5A-B, Figure 5\u2014figure supplement 1A-B). The experiments test multiple PhoP point mutants, a linker deletion mutant, and domain constructs of both proteins. The consistent results across multiple constructs provide strong evidence that the N-terminal domains mediate the interaction. However, the point mutant analysis (C59) suggests that no single stretch of three residues is critical, indicating a more complex interaction surface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "cAMP binding to CRP is not required for CRP-PhoP interaction. Mutant CRP proteins (CRPG79A and CRPT90A) deficient for cAMP binding interact with PhoP as effectively as wild-type CRP and retain DNA binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by pull-down assays (Figure 5\u2014figure supplement 1C) and EMSA data (Figure 5\u2014figure supplement 1D) showing that cAMP-binding mutants of CRP interact with PhoP and bind DNA comparably to wild-type CRP. This is consistent with prior literature showing cAMP-independent functioning of M. tuberculosis CRP. The functional DNA binding of the mutants (C68) validates that they retain proper folding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Approximately 10 promoters contain both CRP and PhoP binding sites based on published ChIP-seq data. In vivo ChIP-qPCR experiments show that CRP is effectively recruited to icl1 and whiB1 promoters in WT-H37Rv but not in \u0394phoP-H37Rv, while CRP recruitment to the sucC promoter (not part of the PhoP regulon) is comparable in both strains. This demonstrates that PhoP is required for CRP recruitment to co-regulated promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by bioinformatic analysis of published ChIP-seq data (Table 1) and new ChIP-qPCR experiments (Figure 6B). The ChIP-qPCR data show statistically significant differences in CRP recruitment between WT and \u0394phoP strains at co-regulated promoters, with appropriate controls (sucC promoter, 16S rDNA, mock IP). The inset Western blot confirms comparable CRP expression in both strains. This is a key result demonstrating the functional consequence of CRP-PhoP interaction in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C74",
+      "C75",
+      "C90"
+    ],
+    "result": "The authors propose a model where phosphorylated PhoP and CRP function as co-activators of virulence genes. PhoP binding sites are located distal upstream of promoters next to CRP binding sites. The two interacting proteins remain bound to their cognate sites and contribute to stability of the transcription initiation complex through protein-protein interactions, facilitating RNA polymerase binding and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C74-C75, and C90 represent the integrated model proposed by the authors. This model is well-supported by the collective experimental evidence: (1) PhoP directly binds to target promoters (C30, ChIP-qPCR), (2) phosphorylated PhoP is required for gene activation (C24, C39-C40), (3) CRP and PhoP interact (C49-C58), (4) PhoP is required for CRP recruitment in vivo (C70-C73), and (5) both regulators are required for gene activation (C2, C23). The model integrates these findings into a coherent mechanism. However, C75 and C89 involve some speculation about DNA conformation changes and transcription initiation complex stability that are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background information on M. tuberculosis biology, CRP, and PhoP regulons based on prior literature. This includes the global regulatory role of cAMP, characteristics of M. tuberculosis CRP and PhoP, their roles in virulence, and the functions of specific target genes like icl1, umaA, and whiB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C27, C76-C85 represent background knowledge supported by appropriate citations to prior literature. These claims establish the context for the current study and are not new findings. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "phoP expression is higher in the complemented mutant (\u0394phoP::phoP) compared to WT-H37Rv under both normal and low pH conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by RT-qPCR data (Figure 1\u2014figure supplement 1A-B). This observation explains the elevated expression of target genes in the complemented mutant compared to WT (Figure 1A) and is important for interpreting the complementation experiments. The data are clear and include appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C88"
+    ],
+    "result": "This study establishes PhoP as a third cAMP-responsive transcription factor (in addition to CRP and CMR) and identifies a CRP-PhoP associated regulon that is distinct from the reported CRP regulon with respect to mechanism of transcription activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C88 represent major conclusions of the study. C86 is supported by the collective evidence showing PhoP regulates CRP target genes (C2, C23, C87) and interacts with CRP (C49-C58). C88 is supported by the demonstration of a novel co-activation mechanism requiring both regulators (C5, C70-C73) and the identification of ~10 co-regulated promoters (C69). These conclusions are well-justified by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors speculate that PhoP binding may change DNA conformation to facilitate CRP recruitment, and that essential genes like whiB1 and virulence determinants like icl1 are under precise regulation to avoid alerting the immune system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C91, and C92 are speculative and not directly tested. C89 proposes a mechanism for how PhoP facilitates CRP recruitment (DNA conformation change) that is plausible but lacks direct experimental evidence such as DNA footprinting or structural studies. C91-C92 speculate about the biological rationale for the regulatory mechanism but do not provide experimental evidence. These are reasonable hypotheses for future investigation but remain uncertain based on the current data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C27",
+      "C28",
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors expanded a normative model repository to include functional connectivity models (Yeo-17 and Smith-10 atlases) and surface area models, trained on ~22,000 subjects for functional and ~58,000 for structural data. The functional models showed similar evaluation metrics to structural models despite smaller sample size and successfully transferred to new clinical and control datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C22, C27-C28, C48-C49, C54-C57, C70-C73 collectively demonstrate successful expansion of the repository with new functional connectivity models. The evaluation metrics (Figure 3) and transfer performance support the claim that models generalize well to unseen sites. Sample sizes are clearly documented and appropriate quality control procedures are described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C26",
+      "C59",
+      "C60",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In group difference testing (schizophrenia vs. controls), normative modeling deviation scores revealed 117/187 significant brain regions for cortical thickness and 50/136 for functional networks (FDR p<0.05), while raw data showed zero significant differences after multiple comparison correction. Individual deviation patterns showed significant group differences in counts of extreme deviations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C23-C24, C26, C59-C60, C74-C80, C111-C114 provide converging evidence from Table 2, Figure 4, and text descriptions. Statistical significance was established using permutation testing (10,000 permutations). The contrast between deviation scores (many significant regions) and raw data (zero significant regions) is striking and well-documented. FDR correction was appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C64",
+      "C65",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C115"
+    ],
+    "result": "In classification tasks (schizophrenia vs. controls), cortical thickness deviation scores achieved AUC=0.87 compared to raw data AUC=0.43 (difference=0.44, statistically significant). Functional network models showed smaller, non-significant improvements (deviation AUC=0.69 vs. raw AUC=0.68, difference=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C64-C65, C81-C85, C115 are supported by Table 2 and Figure 5. The large performance difference for structural data (0.44) with statistical significance established via permutation testing is compelling. The functional data results show minimal improvement, which is honestly reported. Cross-validation (10-fold) was appropriately used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C40",
+      "C41",
+      "C66",
+      "C67",
+      "C68",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In regression tasks predicting general cognitive ability, cortical thickness deviation scores showed modest improvement (MSE=0.699) over raw data (MSE=0.708, difference=0.008, not significant). Functional models were less accurate overall (deviation MSE=0.877 vs. raw MSE=0.890, difference=0.013, not significant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C40-C41, C66-C68, C86-C89 are supported by Table 2 and methods descriptions. The improvements are small and not statistically significant, which is appropriately acknowledged. The use of Brain Basis Set (BBS) approach is described with citations. However, the authors note this benchmarking task needs improvement in future work, suggesting some uncertainty about optimal implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Across all benchmarking tasks, normative modeling features showed benefits ranging from minor (regression) to strong (group difference testing). The authors conclude that normative modeling captures population trends, uncovers clinical group differences, preserves individual-level information, and accounts for non-clinically meaningful variance better than raw data with nuisance regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 represent the authors' synthesis of results across all three benchmarking tasks. The evidence from group difference testing and classification strongly supports these conclusions. The regression results are weaker but still show trends in the expected direction. The claim that normative modeling helps beyond simple nuisance regression (C94) is supported by the comparison showing deviation scores outperform residualized raw data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C116",
+      "C118",
+      "C120"
+    ],
+    "result": "Three datasets were used for benchmarking: HCP (N=529 for structure, N=499 for function) for regression, COBRE (N=124 structure, N=121 function) and UMich (N=89 structure, N=87 function) for classification and group difference testing. HCP was chosen for its widespread use and prior success in predicting cognitive ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35, C116, C118, C120 are well-supported by Table 1 and methods descriptions. Sample sizes, demographics, and rationale for dataset selection are clearly documented. The choice of datasets is appropriate for the benchmarking tasks, though the relatively small sample sizes for COBRE and UMich (compared to training data) could limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C58"
+    ],
+    "result": "Data quality control, preprocessing, and ethical procedures are described. Structural data used Freesurfer 6.0 with Euler number thresholds. Functional data required \u22655 min low-motion data (FD<0.5mm) and used fMRIPrep with standard preprocessing steps. Informed consent and IRB approval were obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C42-C47, C50, C58 describe standard neuroimaging methods with appropriate citations. Quality control criteria are clearly defined. Preprocessing pipelines follow best practices. Ethical procedures are documented. These methodological details support reproducibility, though some specifics (e.g., exact fMRIPrep versions) are missing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes normative modeling as a framework for mapping population trajectories while preserving individual information, with applications across psychiatry, neurology, developmental psychology, and cognitive neuroscience. The authors argue that normative modeling addresses limitations of case-control frameworks that assume within-group homogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C18 provide background context with extensive citations. The characterization of normative modeling and its applications is well-supported by prior literature. The critique of case-control approaches is appropriately cited, though some claims about 'often' leading to null findings or 'questionable clinical utility' may overstate the generality of these issues across all psychiatric research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors describe active technical development in normative modeling and emphasize open science values including open-source software, sharing pre-trained models, online platforms, documentation, tutorials, and protocol publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by citations and describe the broader context of normative modeling development. The emphasis on open science is demonstrated through the authors' own contributions (shared models, online platform at pcnportal.dccn.nl). These are accurate characterizations of the field and the authors' approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors acknowledge limitations including the choice of Yeo-17 atlas (selected for widespread use and mapping to other parcellations) and demographic representativeness. The training sample likely overrepresents European-ancestry populations, and models do not include race/ethnicity covariates due to data unavailability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 represent honest acknowledgment of limitations with appropriate citations. The rationale for Yeo-17 selection is reasonable given its widespread adoption. The demographic limitation is significant and appropriately flagged, though the authors could have been more explicit about potential biases this introduces. The lack of race/ethnicity covariates is a notable limitation for model generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors clarify that 'normative' is used in a statistical sense (central tendency) rather than moral/ethical sense, and that large deviations are treated as markers predictive of clinical states, not necessarily requiring intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 provide important conceptual clarification about terminology. This is appropriate given potential misinterpretation of 'normative' in other contexts. The distinction between statistical deviation and clinical significance is well-articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose future research directions including expanding to additional imaging modalities, increasing model resolution, replicating benchmarking tasks, and using normative modeling for failure analysis of brain-behavior models. They acknowledge challenges in brain-behavior prediction including reliability issues and large sample size requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C110 are speculative statements about future work and potential applications. While reasonable and well-motivated by the current results, these are proposals rather than demonstrated findings. The acknowledgment of challenges in brain-behavior modeling (C107-C109) is appropriately cited but represents assessment of the field rather than results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C62"
+    ],
+    "result": "Normative model outputs include Z-scores (deviation scores) for all brain regions/connections, where positive scores indicate greater-than-average values and negative scores indicate less-than-average values. Individual deviation maps were summarized by counting extreme deviations (|Z|>2) and compared using Mann-Whitney U-tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C61-C62 describe the interpretation and analysis of normative model outputs. The definitions are clear and standard. The use of Mann-Whitney U-test for count data is appropriate given the non-Gaussian distribution. The threshold of |Z|>2 for 'extreme' deviations is reasonable though somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Figures illustrate the study design (datasets, normative modeling workflow, benchmarking tasks), the Yeo-17 atlas with 136 network pairs, evaluation metrics, group and individual differences in deviation scores, and classification performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C130 accurately describe the content of figures as stated in captions. The figures provide visual evidence supporting the main results. Figure quality appears adequate for conveying the key findings, though some details may be difficult to discern at publication resolution.",
+    "result_type": "MINOR"
+  }
+]

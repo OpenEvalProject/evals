@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the ecological and scientific context for studying the interplay between spatial self-organization and community reassembly in dryland plant communities under climate stress. These claims describe the general problem (climate-induced stress on plant communities), the phenomenon of spatial self-organization in vegetation patterns, and the gap in understanding how these processes interact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by extensive citations to prior literature (C8-C19) and represent established knowledge in the field. The claims about the research gap (C3, C11, C21) are appropriately framed as motivating the current study. The contextual claims provide a solid foundation for the research questions addressed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study provides three main insights: (i) spatial patterning reverses community shifts toward stress-tolerant species and reverses functional diversity loss, (ii) spatial self-organization buffers further stress impacts on community structure, and (iii) multistability of uniform and patterned states enables novel ecosystem management approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the core findings of the manuscript and are supported by modeling results shown in Figures 1, 5, 6, and 7. The mathematical model demonstrates these patterns consistently across different precipitation scenarios. The claims are appropriately framed as model-derived insights rather than empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C91",
+      "C116"
+    ],
+    "result": "Drier climates shift spatially uniform plant communities toward stress-tolerant species (higher \u03c7 values) and reduce functional diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is clearly demonstrated in Figure 5a,b, showing the shift in community composition (\u03c7max) and functional richness (FR) as precipitation decreases in uniform communities. The modeling framework appropriately captures the competitive dynamics leading to this shift through interspecific competition for water and light.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C92",
+      "C72"
+    ],
+    "result": "Self-organization in spatial patterns, triggered by crossing the Turing instability threshold, reverses the trend toward stress-tolerant species, shifting composition back to fast-growing species and increasing functional diversity and total biomass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This counterintuitive result is well-supported by Figure 5c and Figure 6, which show that patterned communities have lower \u03c7max values (more growth-oriented species) and higher functional richness compared to uniform communities at the same precipitation. The mechanistic explanation through differential water availability is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The mechanism underlying the composition shift back to fast-growing species involves population-level spatial self-organization creating bare-soil patches that provide additional water to vegetation patches through overland flow, ameliorating local water stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic explanation is consistent with the model structure (Equations 1) and the pattern-formation feedback illustrated in Figure 2. The logic connecting bare-soil patches to increased water availability and thus favoring fast-growing species is sound and follows from the model's differential infiltration mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C27",
+      "C81",
+      "C98",
+      "C100",
+      "C103"
+    ],
+    "result": "Once periodic patterns form, further precipitation decreases do not significantly change community structure (composition and richness) because spatial self-organization provides buffering through patch size reduction and wavelength transitions that maintain water availability to vegetation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 6 clearly demonstrates this buffering effect, showing nearly horizontal solution branches (\u03c7k\u2081(P) and \u03c7k\u2082(P)) for patterned communities as precipitation decreases, contrasting with the monotonic shift in uniform communities (\u03c7\u2080(P)). The insets show the morphological changes (thinner patches, longer wavelengths) that enable this buffering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The buffering mechanisms extend to two-dimensional systems through morphological transitions (gaps \u2192 stripes \u2192 spots) that increase bare-soil areas adjacent to vegetation, providing additional water sources and maintaining community structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the claims about 2D pattern morphologies are supported by citations (C104, C105), the specific prediction that community structure remains unaffected in 2D systems (C114) is speculative and not directly tested in this study. The 1D model results provide suggestive evidence, but the authors acknowledge these patterns were not studied in their work (C105).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Hybrid states consisting of spatial mixtures of uniform and patterned vegetation domains exhibit significantly higher functional richness than pure uniform or patterned states, with functional evenness controlled by the relative sizes of the domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 7 clearly demonstrates that hybrid states achieve FR \u2248 0.33, higher than either pure state and even higher than the original uniform community (FR = 0.29). The mechanism\u2014niche differentiation with stress-tolerant species in uniform domains and fast-growing species in patterned domains\u2014is logically sound. The relationship between domain size and functional evenness is also well-illustrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Hybrid states enable novel ecosystem management strategies that reconcile provisioning services with biodiversity conservation through non-uniform biomass removal, allowing control of functional richness and evenness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This management application follows logically from the demonstrated properties of hybrid states (C119, C122-C124). The proposal is grounded in the model results showing increased functional diversity in hybrid states. However, practical implementation would require empirical validation, which the authors appropriately acknowledge is lacking (C136).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Additional management strategies involving pattern dilution (removing every second patch) could create water stress gradients within larger patches, promoting niche differentiation and increased diversity, though this requires further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C131 are explicitly speculative, predicting outcomes that have not been tested in the model. The authors appropriately acknowledge this limitation (C132), stating that further studies are needed. While the logic is plausible based on the model's mechanisms, the specific predictions about stress gradients and niche differentiation within patches remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The model focuses on a single pattern-formation mechanism\u2014differential infiltration and overland water flow\u2014that induces Turing instability through a scale-dependent positive feedback between vegetation growth and water transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model formulation (Equations 1) and the mechanistic explanation illustrated in Figure 2 clearly capture this feedback. The mathematical treatment of differential infiltration through the parameter f and the infiltration function I is appropriate. The limitation to a single mechanism is explicitly acknowledged (C29) and justified (C30).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "The model uses a trait-based approach with a dimensionless parameter \u03c7 \u2208 (0,1) representing the tradeoff between shoot growth and water stress tolerance, dividing the species pool into N functional groups that compete on ecological timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trait-based approach is well-justified by citations (C38, C39, C41) and appropriately formulated mathematically. The assumption that all functional groups are present as seeds (C47) is reasonable and supported by citation. The model structure clearly implements interspecific competition for water and light (C48).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Late-stage competition proceeds on long timescales due to self-shading, requiring inclusion of mutations (modeled as trait diffusion) that produce asymptotic biomass distributions of finite width containing information about functional diversity, composition, and total biomass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 3 clearly illustrates the difference between competitive exclusion without trait diffusion (panel a) and the finite-width distribution with trait diffusion (panel b). The need for trait diffusion to prevent unrealistic competitive exclusion is well-justified. The metrics derived from the distribution (\u03c7max, FR, FE) are appropriately defined and illustrated in Figure 3b.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Species investing in growth (low \u03c7) have stronger tendencies to form patchy vegetation at higher precipitation values but are more vulnerable to collapse to bare soil due to wider bistability ranges, because faster growth creates steeper infiltration gradients that enhance the Turing instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 4b clearly shows that PT and PB both increase as \u03c7 decreases, supporting claims C63-C64. The mechanistic explanation (C66) linking faster growth to steeper infiltration gradients is consistent with the model formulation. The inference about vulnerability to disturbances (C67-C68) follows logically from the wider bistability range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The findings are expected to generalize to other pattern-formation mechanisms (soil-water diffusion, lateral root conduction) and other tradeoffs (aboveground vs. belowground biomass) because they share the same bifurcation structure, though empirical validation is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim about generalization (C134) is reasonable given that different mechanisms can produce similar bifurcation structures, but this is not directly demonstrated in the manuscript. The expectation about other tradeoffs (C135) is supported by citation but remains untested. The acknowledgment of lacking empirical data (C136) is appropriate and honest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Spatial self-organization occurs in diverse ecological contexts beyond drylands (peat bogs, seagrass meadows, salt marshes, etc.), and the findings may be relevant to these systems or motivate similar studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim about widespread occurrence of spatial self-organization is well-supported by extensive citations (C139). The suggestion of broader relevance (C140-C141) is appropriately framed as speculative, acknowledging that direct applicability would need to be tested in those specific contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C146",
+      "C147",
+      "C151",
+      "C158",
+      "C159",
+      "C162",
+      "C163",
+      "C165",
+      "C167",
+      "C168",
+      "C170",
+      "C172",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C183",
+      "C186",
+      "C188",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "The model uses a continuum approach with PDEs for biomass densities, restricted to 1D spatial dependence, incorporating growth (with self-shading), differential infiltration, evaporation, mortality, and trait diffusion, with parameters chosen to capture Turing instability and split the community appropriately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical formulation (Equations 1) is clearly presented with all parameters defined in Table 1. The modeling choices are well-justified: continuum approach (C143), 1D restriction (C146), simplifications for atmosphere (C177) and overland flow (C178-C179), and parameter robustness (C197). The numerical methods (C191-C192) and boundary/initial conditions (C193-C195) are appropriate. Code availability (C196) supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Antibodies used at concentrations \u22652.5 \u00b5g/mL show high background and minimal response to fourfold dilution, while antibodies at 0.62-2.5 \u00b5g/mL reach saturation plateau and those \u22640.62 \u00b5g/mL show linear response. The reduction in UMI counts (38% in PBMC, 51% in lung) was markedly less than the fourfold reduction in antibody concentration, and 4/52 antibodies at 10 \u00b5g/mL accounted for >20% of total UMIs without clear positive populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide quantitative data showing non-linear titration response at high concentrations with supporting figures (1F, 1G). The experimental design (C23) is appropriate with proper controls including tissue comparison and cell-type-specific analysis (C32-C33). The categorization into five response types (C39) provides systematic evidence for the concentration-dependent behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27",
+      "C28",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Reducing staining volume from 50 \u00b5L to 25 \u00b5L resulted in only 9% reduction in total UMIs and primarily affected antibodies at low concentrations (0.0125-0.025 \u00b5g/mL) targeting highly abundant epitopes. This effect was largely mitigated by reducing cell number from 1\u00d710\u2076 to 0.2\u00d710\u2076 cells, though signal did not exceed that of intermediate cell density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide quantitative measurements with specific examples (CD31, CD44, CD45) shown in Figures 3-4. The experimental design systematically varies staining volume and cell number with appropriate controls. The finding that reducing cell density counteracts volume effects is mechanistically consistent with antibody-epitope ratio considerations (C74-C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "An adjusted antibody panel using optimized concentrations showed improved performance compared to pre-titration concentrations: 1.9-fold less antibody usage, 3.9-fold cost reduction ($195 to $50), twofold increase in median UMIs per positive cell, 57% increase in median positive signal, and 43% lower background signal (26.3% to 14.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 provide detailed quantitative comparisons between DF1 and adjusted samples with specific examples (CD86, CD5) and supporting figures (Figure 5). The study appropriately controlled for sequencing depth and cell composition (C107-C110). However, C80 notes higher nonspecific binding in adjusted sample monocytes despite same Fc-blocking, suggesting potential confounding from different sample preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C30",
+      "C31",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C91"
+    ],
+    "result": "Background signal from empty droplets constituted 20-50% of total sequencing reads and was primarily derived from antibodies used at high concentrations (\u22652.5 \u00b5g/mL) targeting sparse epitopes. Antibodies targeting abundant epitopes were enriched in cell-containing droplets, and background signal was highly correlated with UMI detection cutoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 provide systematic analysis of empty vs. cell-containing droplets with quantitative data (Figure 6). The identification of empty droplets using mRNA inflection point (C107, Figure 6\u2014supplement 1) is appropriate. The finding is consistent with prior work (C53, C85) and validated across multiple datasets (Figure 6\u2014supplement 2). However, C87 notes that multiplexing obscures individual sample contributions to background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C67",
+      "C68"
+    ],
+    "result": "Antibodies targeting highly expressed epitopes can be further reduced beyond their linear concentration range without affecting positive/negative cell discrimination, enabling more balanced read allocation and reduced sequencing depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C67 are supported by specific examples (CD5, CD8, CD19) with quantitative data (C52). The inference about balanced sequencing (C68) is logical and supported by the adjusted panel results (C47-C49). However, the claim lacks systematic analysis across all antibodies targeting abundant epitopes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Antibody responses to fourfold dilution can be classified into five categories (A-E) based on signal characteristics, background levels, and epitope abundance, each warranting different optimization strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by systematic categorization shown in Figure 2 and Table 1, with detailed examples for each category in supplementary figures. The classification is based on empirical observations from the titration experiments and provides practical guidance. However, C65 acknowledges potential bias from starting concentrations based on prior experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Reducing concentration of five antibodies used at 10 \u00b5g/mL yielded 17% more reads for remaining antibodies. For CD86 specifically, reducing concentration from 10 to 0.667 \u00b5g/mL improved signal while using 79% fewer UMIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C84 provide specific quantitative improvements with CD86 as a detailed example (also in C51). The calculation method (C83) is reasonable. However, the generalizability is limited as this represents only 5/52 antibodies, and C48 shows category A antibodies had disproportionate impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "For antibodies with unknown performance, initial use at 0.625-2.5 \u00b5g/mL is recommended rather than the 5-10 \u00b5g/mL range recommended by vendors and published protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is a reasonable recommendation based on the titration data (C24-C25, C36-C37) showing saturation plateau in this range. However, C65 acknowledges the starting concentrations were biased by prior experience, potentially limiting generalizability. The recommendation is conservative and practical but not systematically validated for truly unknown antibodies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Pre-staining samples with hashtags and pooling before CITE-seq antibody staining may provide advantages including more accurate cross-sample comparison, reduced background, and elimination of epitope abundance differences between samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 present a logical inference about potential benefits of pooling strategy based on antibody-epitope ratio considerations (C74-C77). However, this is speculative (evidence_type: INFERENCE) and not directly tested in the study. The limitation (C79) about sample compatibility is acknowledged but the actual benefits remain unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Free-floating antibodies in solution, rather than nonspecific cell surface binding, are the major source of background signal. Antibodies at high concentration targeting sparse epitopes are enriched in empty droplets, indicating residual unbound antibody persists despite washing. Additional washing is recommended when feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C95-C96 are supported by empty droplet analysis (C55-C57) and consistent with prior work (C53, C85). The inference about residual antibodies (C96) is logical given the enrichment pattern. However, C87 notes multiplexing obscures individual sample contributions, and C88-C89 acknowledge potential underestimation of titration response for high-background markers. The washing recommendation (C97-C98) is reasonable but not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The study used commercially available, extensively tested antibody clones showing high concordance between ADT signals and expected cell-type antigens, though specificity validation is important for unfamiliar clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 describes the antibody validation approach using established clones and concordance with gene expression (C32-C33, Figure 1E). The caveat (C73) about validating unfamiliar clones is appropriate. However, the study lacks formal specificity testing (e.g., knockout controls), relying instead on concordance with transcriptional profiles and prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "CITE-seq enables simultaneous measurement of surface proteins and gene expression with high scalability and sensitivity, not limited by spectral overlap or isotope availability due to unlimited oligo barcodes and discrete sequence counting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C11 describe established capabilities of CITE-seq technology supported by citations (C10) and general knowledge. These are background statements rather than novel findings from this study. The claims accurately represent the technology's advantages over flow/mass cytometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C69"
+    ],
+    "result": "Unlike flow cytometry where signal intensity doesn't affect cost, CITE-seq costs depend on signal intensity through sequencing depth requirements. Optimal CITE-seq panels should use antibodies in their linear range at lowest signal intensity providing sufficient signal-to-noise, rather than at saturation plateau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 present logical inferences about cost structure differences between flow cytometry and CITE-seq, supported by the experimental results showing improved performance with reduced concentrations. Claim C69 correctly identifies the tradeoff. These are conceptual frameworks supported by the data rather than direct experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Free-floating antibodies in cell suspension are a major background source for oligo-conjugated antibodies. In droplet-based methods, these distribute between cell-containing and empty droplets, with empty droplets vastly outnumbering cell-containing droplets, making background a considerable fraction of sequenced reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by citation (C20: Mul\u00e8 et al., 2020) and logical inference about droplet-based methods. The experimental data (C54-C60, C91) validate these background principles. These claims provide important context for interpreting the titration results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C101"
+    ],
+    "result": "The observations and conclusions about oligo-conjugated antibody optimization are applicable to various CITE-seq-related platforms that use high-throughput sequencing to count signal from oligo-conjugated probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C101 are reasonable generalizations supported by the experimental findings and citations to multiple CITE-seq-related platforms (C100). However, the generalizability is somewhat limited as the study used specific conditions (10X Chromium, 5' chemistry, specific antibody panel) and C65 acknowledges bias in starting concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study used lung adenocarcinoma patient samples and healthy donor PBMCs, with computational analysis using kallisto-bustools for alignment (66.9% transcriptome alignment) and KITE for ADT/HTO counting. Quality control removed 19% doublets, 15% low-quality cells, and 392 intra-sample doublets, yielding 19,560 demultiplexed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 describe the materials and methods with specific quantitative details. The computational pipeline is appropriate and well-documented with software versions. The quality control steps are standard for single-cell analysis. These methodological details support reproducibility but represent technical implementation rather than scientific findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2191 @@
+{
+  "submission": {
+    "id": "b988ca14-781a-4303-b5e0-8581dee5a951",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:38:33.828984Z",
+    "updated_at": "2025-12-03T16:38:33.828984Z"
+  },
+  "content": [
+    {
+      "id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "submission_id": "b988ca14-781a-4303-b5e0-8581dee5a951",
+      "content_type": "manuscript",
+      "content_text": "# Cardiovascular disease and subsequent risk of psychiatric disorders: a nationwide sibling-controlled study\n\n## Authors\n\n- Qing Shen<sup>1</sup> ([ORCID: 0000-0002-7214-4797](https://orcid.org/0000-0002-7214-4797)) \u2020\n- Huan Song<sup>1</sup>\n- Thor Aspelund<sup>2</sup> ([ORCID: 0000-0002-7998-5433](https://orcid.org/0000-0002-7998-5433))\n- Jingru Yu<sup>5</sup>\n- Donghao Lu<sup>1</sup> ([ORCID: 0000-0002-4186-8661](https://orcid.org/0000-0002-4186-8661))\n- J\u00f3hanna Jakobsd\u00f3ttir<sup>2</sup>\n- Jacob Bergstedt<sup>1</sup>\n- Lu Yi<sup>5</sup>\n- Patrick Sullivan<sup>5</sup>\n- Arvid Sj\u00f6lander<sup>5</sup>\n- Weimin Ye<sup>5</sup>\n- Katja Fall<sup>1</sup>\n- Fang Fang<sup>1</sup> ([ORCID: 0000-0002-3310-6456](https://orcid.org/0000-0002-3310-6456))\n- Unnur Valdimarsd\u00f3ttir<sup>1</sup> ([ORCID: 0000-0001-5382-946X](https://orcid.org/0000-0001-5382-946X))\n\n### Affiliations\n\n1. Unit of Integrative Epidemiology, Institute of Environmental Medicine, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n2. Centre of Public Health Sciences, Faculty of Medicine, University of Iceland Reykjav\u00edk Iceland ([ROR:01db6h964](https://ror.org/01db6h964))\n3. West China Biomedical Big Data Center, West China Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))\n4. Medical Big Data Center, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))\n5. Department of Medical Epidemiology and Biostatistics, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n6. Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n7. Departments of Genetics and Psychiatry, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n8. Clinical Epidemiology and Biostatistics, School of Medical Sciences, \u00d6rebro University \u00d6rebro Sweden ([ROR:05kytsw45](https://ror.org/05kytsw45))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:The association between cardiovascular disease (CVD) and selected psychiatric disorders has frequently been suggested while the potential role of familial factors and comorbidities in such association has rarely been investigated.Methods:We identified 869,056 patients newly diagnosed with CVD from 1987 to 2016 in Sweden with no history of psychiatric disorders, and 910,178 full siblings of these patients as well as 10 individually age- and sex-matched unrelated population controls (N = 8,690,560). Adjusting for multiple comorbid conditions, we used flexible parametric models and Cox models to estimate the association of CVD with risk of all subsequent psychiatric disorders, comparing rates of first incident psychiatric disorder among CVD patients with rates among unaffected full siblings and population controls.Results:The median age at diagnosis was 60 years for patients with CVD and 59.2% were male. During up to 30 years of follow-up, the crude incidence rates of psychiatric disorder were 7.1, 4.6, and 4.0 per 1000 person-years for patients with CVD, their siblings and population controls. In the sibling comparison, we observed an increased risk of psychiatric disorder during the first year after CVD diagnosis (hazard ratio [HR], 2.74; 95% confidence interval [CI], 2.62\u20132.87) and thereafter (1.45; 95% CI, 1.42\u20131.48). Increased risks were observed for all types of psychiatric disorders and among all diagnoses of CVD. We observed similar associations in the population comparison. CVD patients who developed a comorbid psychiatric disorder during the first year after diagnosis were at elevated risk of subsequent CVD death compared to patients without such comorbidity (HR, 1.55; 95% CI, 1.44\u20131.67).Conclusions:Patients diagnosed with CVD are at an elevated risk for subsequent psychiatric disorders independent of shared familial factors and comorbid conditions. Comorbid psychiatric disorders in patients with CVD are associated with higher risk of cardiovascular mortality suggesting that surveillance and treatment of psychiatric comorbidities should be considered as an integral part of clinical management of newly diagnosed CVD patients.Funding:This work was supported by the EU Horizon 2020 Research and Innovation Action Grant (CoMorMent, grant no. 847776 to UV, PFS, and FF), Grant of Excellence, Icelandic Research Fund (grant no. 163362-051 to UV), ERC Consolidator Grant (StressGene, grant no. 726413 to UV), Swedish Research Council (grant no. D0886501 to PFS), and US NIMH R01 MH123724 (to PFS).\n\n## Introduction\n\nBeing diagnosed and living with a major life-threatening disease is stressful and associated with multiple biologic processes that, when combined, may contribute to the development of psychiatric disorders. It is for instance demonstrated that a cancer diagnosis is associated with subsequent risk of psychiatric disorders (Lu et al., 2016) and self-inflicted injury (Shen et al., 2016), which in turn might be associated with a compromised cancer survival (Zhu et al., 2017). Psychiatric comorbidities have also been reported among patients with cardiovascular disease (CVD), for example, stroke (Lind\u00e9n et al., 2007), heart failure (Rutledge et al., 2006), and myocardial infarction (Thombs et al., 2006; Shemesh et al., 2004), with indications of elevated risk of overall mortality (Doering et al., 2010; Wrenn et al., 2013). Yet, evidence on the association between CVD and subsequent development of psychiatric disorders is still limited as previous research has mainly relied on selected patient populations instead of complete follow-up of general population as well as limited control of reverse causality and important confounding factors, for example, familial factors and comorbidities (Lincoln et al., 2013; Morrison et al., 2005; Romanelli et al., 2002).\n\nWe thoroughly searched the existing literature on the association between CVD and clinically confirmed psychiatric disorders or psychiatric symptoms. After excluding most studies with either cross-sectional or retrospective designs, we only found 12 prospective cohort studies investigating the risk of selected psychiatric disorders following a diagnosis of CVD (Supplementary file 1a). While these prospective studies suggest a positive association of hypertension, heart disease, and stroke with depressive symptoms (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and stress-related disorders (Chang et al., 2017), they were limited to elderly populations (Petersson et al., 2014; Zhang et al., 2015), and used self-reported ascertainment of psychiatric outcomes (Petersson et al., 2014; Zhang et al., 2015) Only few of these studies addressed incident or first diagnosed psychiatric disorders among patients with CVD, for example, excluding patients with history of psychiatric disorders, and no study addressed the issue of familial confounding. Indeed, genetic correlation has recently been document between these two complex disease groups (Barnett and Smoller, 2009; Kathiresan and Srivastava, 2012; R\u00f8devand et al., 2021) as well as the importance of early life environment for the development of both CVD (Kelishadi and Poursafa, 2014) and psychiatric disorders (Rokita et al., 2018). It is therefore unknown to what extent the reported association between CVD and psychiatric disorder can be explained by unmeasured confounding shared within families (Barnett and Smoller, 2009; Kathiresan and Srivastava, 2012; R\u00f8devand et al., 2021). Thus, a comprehensive evaluation of the association between all CVDs and risk of any incident psychiatric disorder, addressing the abovementioned shortcomings, is warranted.\n\nWith up to 30 years of follow-up and with nationwide complete information on family links in Sweden, we aimed to investigate the association between CVD diagnosed in specialist care and subsequent risk of incident psychiatric disorders while accounting for familial factors through a sibling comparison. We further aimed to estimate the potential role of psychiatric comorbidity in cardiovascular mortality among patients with CVD.\n\n## Materials and methods\n\n### Study design\n\nThe Swedish Patient Register contains national information on inpatient care with complete coverage since 1987 and outpatient specialized care since 2001 (Ludvigsson et al., 2011). The Swedish Multi-Generation Register includes nearly complete familial information for Swedish residents born since 1932 (Ekbom, 2011). Using personal identification numbers assigned to all Swedish residents, we identified all individuals born in Sweden after 1932 who received a first diagnosis of any CVD and attended inpatient or outpatient specialized care between January 1, 1987 and December 31, 2016 (N = 986,726). Patients diagnosed with CVD before age 5 (N = 6091, probable congenital heart disease) or with a history of any psychiatric disorder before the diagnosis of CVD (N = 111,579) were excluded, leaving 869,056 patients in the analysis (Supplementary file 2). Date of first CVD diagnosis was used as the index date for the exposed patients.\n\nWe constructed a sibling-controlled matched cohort to control for familial confounding according to guidelines for designing family-based studies (D\u2019Onofrio et al., 2013). Through the Multi-Generation Register, we identified all full siblings of patients with CVD (58.6% of all CVD patients) who were alive and free of CVD and psychiatric disorder at the time when their affected sibling was diagnosed (N = 910,178). In addition, for each patient with CVD, we randomly selected 10 age- and sex-matched individuals from the general population who were free of CVD or psychiatric disorder when the index patient was diagnosed (N = 8,690,560). The date of CVD diagnosis for the index patient was used as the index date for their unaffected siblings and matched population controls.\n\nAll study participants were followed from the index date until first diagnosis of any psychiatric disorder, death, emigration, first diagnosis of CVD (for unaffected siblings and matched population controls), or the end of the study period (December 31, 2016), whichever occurred first.\n\n### Ascertainment of CVD and psychiatric disorder\n\nWe defined CVD as any first inpatient or outpatient hospital visit with CVD as the primary diagnosis from the Swedish Patient Register. Incident psychiatric disorder was defined as any first inpatient or outpatient hospital visit with psychiatric disorder as the primary diagnosis. We used the 9th and 10th Swedish revisions of the International Classification of Diseases (ICD-9 and 10) codes to identify CVD and psychiatric disorders and their subtypes (Supplementary file 1b). In line with previous study (Song et al., 2019), we classified CVD as ischemic heart disease, cerebrovascular disease, emboli/thrombosis, hypertensive disease, heart failure, and arrhythmia/conduction disorder. We classified psychiatric disorders as non-affective psychotic disorders, affective psychotic disorders, alcohol or drug misuse, mood disorders excluding psychotic symptoms, anxiety and stress-related disorders, eating disorders, and personality disorders (Nevriana et al., 2020).\n\n### Covariates\n\nWe extracted socioeconomic information for each participant, including educational level, individualized family income, and cohabitation status, from the Longitudinal Integration Database for Health Insurance and Labor Market (Longitudinell integrationsdatabas f\u00f6r sjukf\u00f6rs\u00e4krings- och arbetsmarknadsstudier (LISA), 2018). Missing information on socioeconomic status was categorized as unknown or missing group. A history of somatic diseases was defined as having any of the following conditions before the index date: chronic pulmonary disease, connective tissue disease, diabetes, renal diseases, liver disease, ulcer diseases, malignancies, and HIV infection/AIDS (Supplementary file 1b). We defined a family history of psychiatric disorders as a diagnosis of any psychiatric disorder among biological parents and full siblings of the study participants before the index date according to the Swedish Patient Register.\n\n### Statistical analysis\n\nWe used flexible parametric survival models to estimate the time-varying association between CVD and subsequent risk of incident psychiatric disorders (Lambert and Royston, 2009), by comparing the rates of incident psychiatric disorders in CVD patients with the corresponding rates in their unaffected full siblings and matched population controls. As we observed a marked risk increase of psychiatric disorders immediately following the CVD diagnosis, we separately assessed the association within 1 year of CVD diagnosis and beyond 1 year. Hazard ratios (HRs) and their 95% confidence intervals (CIs) were derived from stratified Cox regression models, using time since the index date as the underlying time scale. We estimated HRs for any psychiatric disorder and categories of psychiatric disorders. We performed subgroup analyses by sex, age at index date (<50, 50\u201360, or >60 years), age at follow-up (<60 or \u226560 years), history of somatic diseases (no or yes), and family history of psychiatric disorder (no or yes). We also performed subgroup analysis by calendar year at index date (1987\u20131996, 1997\u20132006, or 2007\u20132016) to check for potentially different associations over time (i.e., due to lifestyle factors that changed over time, including smoking and alcohol use) (Sundin and Willner, 2007). In the sibling comparison, all Cox models were stratified by sibling sets and adjusted for sex, birth year, educational level, individualized family income, cohabitation status, and history of somatic diseases. In the population comparison, all Cox models were stratified by the matching variables birth year and sex and adjusted for all abovementioned covariates plus family history of psychiatric disorder.\n\nTo study the impact of additional cardiovascular comorbidity (i.e., patients with another type of CVD after diagnosis of the first CVD), we analyzed the association by the presence or absence of cardiovascular comorbidity after the index date according to the type of first CVD. This analysis was restricted to follow-up beyond 1 year to focus on patients who survived their first CVD to be able to receive the diagnosis of another CVD. As a patient with CVD might have different types of CVD, we identified all diagnoses of CVD during follow-up and considered CVD comorbidity as a time-varying variable through splitting the person-time according to each diagnosis.\n\nBecause the Swedish Patient Register includes only information related to specialist care, we might have misclassified patients with a history of milder psychiatric disorders diagnosed before index date attended only in primary care. To account for the reverse causality of having undetected psychiatric disorders or symptoms before the incident CVD, we performed a sensitivity analysis additionally excluding study participants with prescribed use of psychotropic drugs before the index date (ascertained from the Swedish Prescribed Drug Register including information on all prescribed medication use in Sweden since July 2005), and followed the remaining participants during 2006\u20132016. Use of psychotropic drugs during follow-up was also considered as having psychiatric disorder in this analysis.\n\nTo study rate of cardiovascular mortality (ascertained from the Swedish Causes of Death Register) in relation to psychiatric comorbidities after CVD diagnosis, we estimated Kaplan\u2013Meier survival curves beyond the first year of follow-up for CVD patients with or without a diagnosis of psychiatric disorder during the first year of follow-up, separately. We estimated the survival curves by types of first diagnosed CVD as well as by types of psychiatric comorbidities. In addition to this 1-year time window, we also studied 6 months or 2 years since CVD diagnosis, to assess the robustness of these survival curves. We calculated the HRs of cardiovascular mortality for these two groups of patients using Cox model. To account for potential impact of unmeasured confounding due to lifestyle factors, we performed a sensitivity analysis excluding individuals with a history of alcoholic cirrhosis of liver (ICD-10 code K703) or chronic obstructive pulmonary disease (COPD, ICD-10 code J44), as proxies for heavy drinking or smoking.\n\nAnalyses were performed in STATA 17.0 (StataCorp LP). All tests were two sided and p < 0.05 was considered statistically significant. The study was approved by the Ethical Vetting Board in Stockholm, Sweden (DNRs 2012/1814-31/4 and 2015/1062-32).\n\n### Role of the funding source\n\nThe funders of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report.\n\n## Results\n\nThe median age at index date was 60 years for CVD patients and 55 years for their unaffected full siblings (Table 1). 59.2% of the CVD patients and 48.4% of their unaffected siblings were male. CVD patients were more likely to have a history of somatic diseases than their unaffected siblings and matched population controls (15.6% vs. 8.8% and 11.0%). The most common diagnoses among the CVD patients were ischemic heart diseases (24.5%), arrhythmia/conduction disorders (24.2%), and hypertensive diseases (17.3%). The majority of the CVD patients had only one CVD diagnosis (without additional CVD comorbidities) during follow-up (69.7%).\n\n**Table 1.**\n Characteristics of CVD patients diagnosed in Sweden between 1987 and 2016, their unaffected siblings and matched population controls.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Characteristics</th>\n      <th colspan=\"2\">Sibling comparison</th>\n      <th colspan=\"2\">Population comparison</th>\n    </tr>\n    <tr>\n      <th>CVD patients (N = 509,467)</th>\n      <th>Unaffected full siblings (N = 910,178)</th>\n      <th>CVD patients (N = 869,056)</th>\n      <th>Matched population controls (N = 8,690,560)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Median age at index date in years (IQR)</td>\n      <td>57 (48\u201365)</td>\n      <td>55 (46\u201363)</td>\n      <td>60 (51\u201368)</td>\n      <td>60 (51\u201368)</td>\n    </tr>\n    <tr>\n      <td>Median follow-up time in years (IQR)</td>\n      <td>8.1 (3.7\u201313.7)</td>\n      <td>8.1 (3.8\u201313.7)</td>\n      <td>7.7 (3.3\u201313.2)</td>\n      <td>7.1 (3.2\u201312.4)</td>\n    </tr>\n    <tr>\n      <td>Male sex</td>\n      <td>308,203 (60.5)</td>\n      <td>440,177 (48.4)</td>\n      <td>514,388 (59.2)</td>\n      <td>5,143,880 (59.2)</td>\n    </tr>\n    <tr>\n      <td>Educational level</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;9 years</td>\n      <td>149,555 (29.4)</td>\n      <td>261,752 (28.8)</td>\n      <td>272,960 (31.4)</td>\n      <td>2,294,482 (26.4)</td>\n    </tr>\n    <tr>\n      <td>9\u201312 years</td>\n      <td>225,548 (44.3)</td>\n      <td>413,702 (45.5)</td>\n      <td>376,917 (43.4)</td>\n      <td>3,548,338 (40.8)</td>\n    </tr>\n    <tr>\n      <td>&gt;12 years</td>\n      <td>134,364 (26.4)</td>\n      <td>234,724 (25.8)</td>\n      <td>219,179 (25.2)</td>\n      <td>2,847,740 (32.8)</td>\n    </tr>\n    <tr>\n      <td>Yearly individualized family income level</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Top 20%</td>\n      <td>107,990 (21.2)</td>\n      <td>175,658 (19.3)</td>\n      <td>139,098 (16.0)</td>\n      <td>1,757,726 (20.2)</td>\n    </tr>\n    <tr>\n      <td>Middle</td>\n      <td>301,706 (59.2)</td>\n      <td>549,842 (60.4)</td>\n      <td>535,109 (61.6)</td>\n      <td>5,152,938 (59.3)</td>\n    </tr>\n    <tr>\n      <td>Lowest 20%</td>\n      <td>99,485 (19.5)</td>\n      <td>184,588 (20.3)</td>\n      <td>192,858 (22.2)</td>\n      <td>1,706,931 (19.6)</td>\n    </tr>\n    <tr>\n      <td>Unknown</td>\n      <td>286 (0.1)</td>\n      <td>90 (0.0)</td>\n      <td>1991 (0.2)</td>\n      <td>72,965 (0.8)</td>\n    </tr>\n    <tr>\n      <td>Cohabitation status</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-cohabitating</td>\n      <td>223,134 (43.8)</td>\n      <td>392,256 (43.1)</td>\n      <td>373,337 (43.0)</td>\n      <td>3,744,116 (43.1)</td>\n    </tr>\n    <tr>\n      <td>Cohabitating</td>\n      <td>286,047 (56.2)</td>\n      <td>517,832 (56.9)</td>\n      <td>493,728 (56.8)</td>\n      <td>4,873,479 (56.1)</td>\n    </tr>\n    <tr>\n      <td>Missing</td>\n      <td>286 (0.1)</td>\n      <td>90 (0.0)</td>\n      <td>1991 (0.2)</td>\n      <td>72,965 (0.8)</td>\n    </tr>\n    <tr>\n      <td>History of somatic disease*</td>\n      <td>71,273 (14.0)</td>\n      <td>79,679 (8.8)</td>\n      <td>135,473 (15.6)</td>\n      <td>955,030 (11.0)</td>\n    </tr>\n    <tr>\n      <td>Family history of psychiatric disorder\u2020</td>\n      <td>133,094 (26.1)</td>\n      <td>251,237 (27.6)</td>\n      <td>209,957 (24.2)</td>\n      <td>2,003,161 (23.1)</td>\n    </tr>\n    <tr>\n      <td>Type of first-onset CVD</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ischemic heart disease</td>\n      <td>122,084 (24.0)</td>\n      <td>\u2013</td>\n      <td>212,737 (24.5)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Cerebrovascular disease</td>\n      <td>71,030 (13.9)</td>\n      <td>\u2013</td>\n      <td>126,860 (14.6)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Emboli and thrombosis</td>\n      <td>25,338 (5.0)</td>\n      <td>\u2013</td>\n      <td>42,857 (4.9)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Hypertensive disease</td>\n      <td>89,818 (17.6)</td>\n      <td>\u2013</td>\n      <td>150,337 (17.3)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Heart failure</td>\n      <td>15,726 (3.1)</td>\n      <td>\u2013</td>\n      <td>30,469 (3.5)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Arrhythmia/conduction disorder</td>\n      <td>126,738 (24.9)</td>\n      <td>\u2013</td>\n      <td>210,654 (24.2)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>58,733 (11.5)</td>\n      <td>\u2013</td>\n      <td>95,142 (11.0)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Number of cardiovascular diagnoses during follow-up</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>One</td>\n      <td>365,266 (71.7)</td>\n      <td>\u2013</td>\n      <td>605,615 (69.7)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Two</td>\n      <td>99,921 (19.6)</td>\n      <td>\u2013</td>\n      <td>179,472 (20.7)</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Three or more</td>\n      <td>44,280 (8.7)</td>\n      <td>\u2013</td>\n      <td>83,969 (9.7)</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n_*History of somatic diseases included chronic pulmonary disease, connective tissue disease, diabetes, renal diseases, liver diseases, ulcer diseases, and HIV infection/AIDS that diagnosed before index date.\u2020The difference between exposed patients and unaffected full siblings was due to different number of siblings for exposed patients. The family history of psychiatric disorder was constant within each family.IQR: interquartile range. CVD: cardiovascular disease._\n\nDuring up to 30 years of follow-up, the crude incidence rates of psychiatric disorder were 7.1, 4.6, and 4.0 per 1000 person-years among CVD patients, their unaffected full siblings, and matched population controls, respectively (Supplementary file 1c). Compared with unaffected siblings, CVD patients showed an elevated risk of incident psychiatric disorder, especially immediately after diagnosis (Figure 1). The risk increase declined rapidly within the first few months after diagnosis and decreased gradually thereafter: the HR was 2.74 (95% CI, 2.62\u20132.87) within first year and 1.45 (95% CI, 1.42\u20131.48) beyond first year (Supplementary file 1d). The risk increment was noted in all types of psychiatric disorders within and beyond first year of follow-up (Figure 2 and Supplementary file 1e). Overall, the observed positive association was similar in sibling and population comparisons, although the HR of non-affective psychotic disorders beyond 1 year of CVD diagnosis was smaller in the sibling comparison than in the population comparison. During the entire follow-up, we found similar positive associations across sex, age at index date, age at follow-up, history of somatic diseases, and family history of psychiatric disorders (Supplementary file 1c). A greater risk increment was observed in recent calendar years than earlier years.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sibling comparison. (B) Population comparison. *CVD: cardiovascular disease. Time-varying hazard ratios and 95% confidence intervals were derived from flexible parametric survival models, allowing the effect of psychiatric disorder to vary over time. A spline with 5 df was used for the baseline rate, and 3 df was used for the time-varying effect. All models were adjusted for age at index date, sex, educational level, yearly individualized family income, cohabitation status, history of somatic diseases, as well as family history of psychiatric disorder (for population comparison). P<0.05 was considered level of significance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig2-v2.jpg)\n\n**Figure 2.:** *CVD: cardiovascular disease. Cox regression models were stratified by family identifier for sibling comparison or matching identifier (birth year and sex) for population comparison, controlling for age at index date, sex, educational level, individualized family income, cohabitation status, history of somatic diseases, and family history of psychiatric disorder (in population comparison). Time since index date was used as underlying time scale. P<0.05 was considered level of significance.\n\nWe found a higher risk of incident psychiatric disorder among all groups of CVD patients, with the most marked risk elevation observed among patients with cerebrovascular disease and heart failure (Figure 3 and Supplementary file 1f). A greater risk increment of incident psychiatric disorder was noted among CVD patients with additional cardiovascular comorbidities beyond 1 year of first CVD diagnosis compared with CVD patients without such comorbidities, except among those with heart failure (Figure 3\u2014figure supplement 1). We found a similar positive association between CVD and risk of incident psychiatric disorder, when including use of psychotropic drugs as a definition of psychiatric disorder (Supplementary file 1g).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig3-v2.jpg)\n\n**Figure 3.:** *CVD: cardiovascular disease. Cox regression models were stratified by family identifier for sibling comparison or matching identifier (birth year and sex) for population comparison, controlling for age at index date, sex, education level, individualized family income, cohabitation status, history of somatic diseases, and family history of psychiatric disorder (in population comparison). Time since index date was used as underlying time scale. We identified all cardiovascular diagnoses during follow-up and considered CVD comorbidity as a time-varying variable by grouping the person-time according to each diagnosis. P<0.05 was considered level of significance.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** CVD: cardiovascular disease. aCox regression models, stratified by family identifier for sibling comparison or matching identifier (birth year and sex) for population comparison, and controlled for educational level, individualized family income, cohabitation status, as well as sex and birth year (in sibling comparison). Time since index date was used as underlying time scale. For patients with two or more CVD diagnoses, follow-up time started from diagnosis of that cardiovascular comorbidity. P<0.05 was considered level of significance.\n\nCVD patients diagnosed with subsequent psychiatric disorder showed a lower CVD-specific survival compared with patients without such diagnosis (Figure 4 and Figure 4\u2014figure supplement 1). The HR of CVD death was 1.55 (95% CI 1.44\u20131.67) when comparing CVD patients with a diagnosis of psychiatric disorder to patients without such diagnosis (mortality rate, 9.2 and 7.1 per 1 000 person-years, respectively). The compromised CVD-specific survival differed by types of CVD, and was most pronounced for hypertensive disease, ischemic heart disease, and arrhythmia/conduction disorder (Figure 4\u2014figure supplement 2). When studying categories of psychiatric disorders, we found that the compromised survival among CVD patients was confined to those with comorbid non-affective and affective psychotic disorders, as well as alcohol or drug misuse (Figure 4\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig4-v2.jpg)\n\n**Figure 4.:** aCVD: cardiovascular disease. Time since index date was used as underlying time scale. 90.4% of CVD patients (N = 785,287) survived the first year of follow-up and included in this analysis. P<0.05 was considered level of significance.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** CVD: cardiovascular disease. aTime since index date was used as underlying time scale. 94.1% of CVD patients (N = 817,748) survived the 6 months of follow-up and included in this analysis. The hazard ratio of cardiovascular death was 1.40 (95% confidence interval, 1.27\u20131.54) when comparing CVD patients with psychiatric disorder to patients without such a psychiatric diagnosis (mortality rate, 8.1 and 7.0 per 1000 person-years, respectively). bTime since index date was used as underlying time scale. 83.8% of CVD patients (N = 728,179) survived the 2 years of follow-up and included in this analysis. The hazard ratio of cardiovascular death was 1.52 (95% confidence interval, 1.43\u20131.62) when comparing CVD patients with psychiatric disorder to patients without such a psychiatric diagnosis (mortality rate, 9.1 and 7.4 per 1000 person-years, respectively). P<0.05 was considered level of significance.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** CVD: cardiovascular disease. aTime since index date was used as underlying time scale. 90.4% of CVD patients (N = 785,287) survived the first year of follow-up and included in this analysis. P<0.05 was considered level of significance.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80143/elife-80143-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** CVD: cardiovascular disease. aTime since index date was used as underlying time scale. 90.4% of CVD patients (N = 785,287) survived the first year of follow-up and included in this analysis. P<0.05 was considered level of significance.\n\n## Discussion\n\nOur large population-based sibling-controlled cohort study including all patients diagnosed with first-onset CVD between 1987 and 2016 in Sweden, their unaffected full siblings, as well as a set of randomly selected unaffected population controls reveals a robust association between CVD and subsequent risk of incident psychiatric disorder. We found that patients with CVD were at elevated risk of various types of psychiatric disorders, independent of confounding factors shared within families and history of somatic diseases. The risk increment was greatest during the year after CVD diagnosis, indicating an opportunity for clinical surveillance in a high-risk time window. Further, an occurrence of psychiatric comorbidity after CVD diagnosis was associated with an approximately 55% higher risk of subsequent death from cardiovascular causes. This finding further underscores the importance of surveillance and, if needed, treatment of psychiatric comorbidities among newly diagnosed CVD patients.\n\n### Comparison with other studies\n\nOur findings are consistent with the existing literature suggesting a positive association between CVD and different types of psychiatric disorders. In previous studies, an increased risk of depression (Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and anxiety (Morrison et al., 2005) was noted after diagnosis of stroke (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001), hypertension (Petersson et al., 2014), coronary artery disease (Rutledge et al., 2013), and atrial fibrillation (Baumgartner et al., 2018). Such risk elevations have been suggested to be persistent over time (Lincoln et al., 2013; Zawadzka and Doma\u0144ska, 2014; Berg et al., 2003), and, in parallel with our findings, associated with compromised survival (Doering et al., 2010; Cai et al., 2019; Bod\u00e9n et al., 2015). However, the evidence from prospective cohort studies with a long and complete follow-up as well as with a thorough control of confounding factors and comorbid conditions has, up to this point, been limited. Our study therefore complements previous findings revealing a positive association between a broader range of CVDs and subsequent risk of incident psychiatric disorder, using a large cohort with control of various confounding factors. We found the association to be robust both in sibling and population comparisons, and after additional adjustment for various comorbidities including other additional CVDs, indicating that the association is unlikely explained by shared familial factors and various comorbidities. In addition to common psychiatric disorders, the evidence on CVD and other psychiatric disorders, for example, eating disorder, is limited. Our study therefore provides valuable indication on this association that deserves further research attention. We showed that CVD patients with psychiatric comorbidity were associated with an increased risk of subsequent CVD death, highlighting the importance of surveillance and prevention on psychiatric comorbidities for the newly diagnosed CVD patients. The associations remained similar after excluding individuals with liver cirrhosis and COPD, as proxies for heavy alcohol consumption and smoking, suggesting that residual confounding due to unmeasured lifestyle factors might not have overly substantial impact on the results.\n\nThe association between CVD and psychiatric disorders was noted both in men and women, across all age groups and calendar periods, as well as among individuals with or without a history of somatic diseases and family history of psychiatric disorders. Previous studies have indicated that major depression was more commonly recognized among individuals with multimorbidity (more than one CVD diagnosis) than those with only one condition (Findley et al., 2011). In our study, about 30% of the CVD patients developed one or more cardiovascular comorbidities during follow-up, and a higher risk of psychiatric disorder was indeed noted among patients with multiple CVD diagnoses. A compromised survival from CVD cause was indeed observed among most patients with common types of first CVD diagnosis and comorbid with psychiatric disorder, in particular among patients with hypertensive disease, ischemic heart disease, and arrhythmia/conduction disorder. Thus, particular clinical attention is needed for CVD patients with comorbid psychiatric disorders, particularly alcohol or drug misuse or psychotic disorders.\n\n### Potential mechanisms\n\nThe pathophysiological mechanisms linking CVD and psychiatric disorders are complex and not well understood, and may vary with specific diagnoses of CVD and psychiatric disorders. The highly increased risk noted immediately after CVD diagnosis may indicate a direct impact of stress reaction of being diagnosed with a life-threatening disease (Fang et al., 2012). In addition, it has been proposed that biological alterations in the cardiovascular system to a severe stress response may increase the risk of various psychiatric disorders (Levine et al., 2021). For example, cardiovascular risk factors including hypercoagulability, dyslipidemia, and an impaired immune response have been associated with impaired psychological health (Levine et al., 2021). Some biological changes in patients with coronary heart disease (e.g., decreased heart rate variability, increased arterial stiffness, and endothelial dysfunction) have been observed in patients with depressive and anxiety disorders (Sherwood et al., 2005; Seldenrijk et al., 2011; Stein et al., 2000). Chronic inflammation may induce the development of atherosclerosis and arterial thrombosis, and elevation in inflammatory biomarkers (i.e., IL-6 and C-reactive protein) has been reported in various psychiatric disorders including post-traumatic stress disorder and major depression (Libby, 2006; Sumner et al., 2020; Miller and Raison, 2016). Other behavioral and psychosocial factors may as well interact with these pathways and need to be understood further.\n\n### Strengths and limitations\n\nThe strengths of our study include its large sample size of the entire Swedish nation and the prospective study design with sibling comparison that significantly alleviates concerns of familial confounding from shared genetic and environmental factors between siblings. The Swedish population and health registers provide the opportunity to obtain complete follow-up as well as the prospectively and independently collected information on disease identification, minimizing the risk of selection and information biases. The large sample size of our study further enables detailed subgroup analyses by types of CVD, types of psychiatric disorders, and patient characteristics.\n\nSome limitations need to be acknowledged. First, we identified patients with CVD and psychiatric disorder through inpatient or outpatient hospital visit. The later inclusion of outpatient records in the Swedish Patient Register may lead to underestimation of the actual numbers of patients with CVD and psychiatric disorder, especially those with relatively milder symptoms. Second, we missed individuals attending primary care only, which may underestimate the proportion of individuals with history of psychiatric disorders at cohort entry. To alleviate such concerns, we additionally considered the use of prescribed psychotropic drugs as a proxy of psychiatric disorders and found similar results. Further, patients with CVD have an established contact with health care and may therefore be more likely than others to be diagnosed with psychiatric disorder. Although such surveillance bias may to some extent explain the increased risks during the first few months after CVD diagnosis, it is unlikely that the risk elevation during the entire follow-up is attributed to such bias. Finally, although we found similar results with and without excluding individuals with a history of liver cirrhosis or COPD, as proxies for heavy drinking or smoking (Supplementary file 1h). We did not have direct access to hazardous behaviors that could potentially modify this association, and therefore cannot exclude the possibility of residual confounding.\n\n### Conclusions\n\nUsing a large population-based sibling-controlled cohort with up to 30 years of follow-up, we found patients with CVD are at elevated risk of newly diagnosed psychiatric disorder, independent of familial background shared between siblings, history of somatic diseases, and other cardiovascular comorbidities. Our study further observes higher cardiovascular mortality among CVD patients with subsequent psychiatric comorbidities, providing evidence for increased surveillance of psychiatric comorbidity among newly diagnosed patients with CVD.\n",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "e0dd3cf1-ea03-4166-96a0-23932c264536",
+      "submission_id": "b988ca14-781a-4303-b5e0-8581dee5a951",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Prabhat Jha, https://ror.org/03dbr7087 University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80143.sa0](https://doi.org/10.7554/eLife.80143.sa0)\n\nWhether a diagnosis of cardiovascular disease (CVD) increases risks of psychiatric disorders is not well understood. Using a large population-based case-sibling study in Sweden, this important study suggests that patients diagnosed with CVD are at higher risk of psychiatric disorders, independent of familial factors shared between full siblings and comorbid conditions. While the analysis is solid, additional variables that relate to both CVD risk and mental health need to be incorporated in follow-up analyses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Prabhat Jha, https://ror.org/03dbr7087 University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80143.sa1](https://doi.org/10.7554/eLife.80143.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cardiovascular disease and subsequent risk of psychiatric disorders: a nationwide sibling-controlled study\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor (Prabhat Jha) and Eduardo Franco as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Rajini Nagrani (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Please review each comment carefully.\n\nEssential revisions:\n\n1) Address reverse causality, namely if a psychiatric illness (PI) developed before or about the same time as the CVD. The much steeper risk relationships early after a CVD event are so suggestive.\n\n2) Could adjusting for matched factors in such cohort studies re-introduce bias into these estimates?\n\n3) Address the point about the choice of preselecting exposure (CVD) group, rather than depicting the nationwide cohort of general population followed up for a disease outcome with each category having exposed and unexposed individuals.\n\n4). Realign discussion such that the strength and limitations are the penultimate section of discussion along with reducing the definitive tone of the conclusions.\n\n5). Authors are suggested to redo the flowchart such that the controls and cases are presented at the same level. At the moment it gives an impression that the comparison group (both population and sibling) is a subgroup of the CVD patients group.\n\n6). Align the abstract, introduction, and discussion with the lack of lifestyle data, which would encompass several key potential confounders (notably smoking and alcohol use). Without it, it seems likely that there is a high risk of substantial confounding. It would be helpful if the authors adjusted the language to more accurately reflect this throughout, such as removing allusions to causal inference and tempering statements about adjustment for confounders where appropriate. This would include discussion specifically of alcohol and smoking risks in the Swedish population over time.\n\n7). One of the main findings is that psychiatric disorder comorbidity diagnosed after cardiovascular disease diagnosis was associated with an increased risk of CVD-related mortality (such as shown in Figure 4). There needs to be more discussion of the potential relevance of cardiovascular disease or psychiatric disorder subtype in this relationship, both in the results and the Discussion sections. Intuitively, it would be expected that more severe cardiovascular diseases are associated with higher stress and a greater risk of psychiatric disorders. As such, the greater rate of mortality in those diagnosed with psychiatric disorders may largely be reflective of the initial cardiovascular diagnosis rather than having much to do with the psychiatric disorder diagnosis. Supplementary Figure 4 suggests that different subtypes of cardiovascular disease may have different relationships between psychiatric disorder diagnosis and survival rate, but this doesn't appear to be touched on at all in the results or the discussion.\n\n8). Relatedly, could you please present similar analyses to Supplementary Figure 4 showing different survival curves by psychiatric subtype instead of cardiovascular subtype?\n\nReviewer #2 (Recommendations for the authors):\n\n1. Authors are suggested to realign the discussion such that the strength and limitations are the penultimate sections of the discussion.\n\n2. Authors are suggested to redo the flowchart such that the controls and cases are presented at the same level. At the moment it gives an impression that the comparison group (both population and sibling) is a subgroup of the CVD patients group.\n\nReviewer #3 (Recommendations for the authors):\n\n1. As described in the public review, I feel the current version of the manuscript does not quite align at places in the abstract, introduction, and discussion with the lack of lifestyle data, which would encompass several key potential confounders. Without it, it seems likely that there is a high risk of substantial confounding. It would be helpful if the authors adjusted the language to more accurately reflect this throughout, such as removing allusions to causal inference and tempering statements about adjustment for confounders where appropriate.\n\n2. One of the main findings is that psychiatric disorder comorbidity diagnosed after cardiovascular disease diagnosis was associated with an increased risk of CVD-related mortality (as shown in Figure 4). There needs to be more discussion of the potential relevance of cardiovascular disease or psychiatric disorder subtype in this relationship, both in the results and the Discussion sections. Intuitively, it would be expected that more severe cardiovascular diseases are associated with higher stress and a greater risk of psychiatric disorders. As such, the greater rate of mortality in those diagnosed with psychiatric disorders may largely be reflective of the initial cardiovascular diagnosis rather than having much to do with the psychiatric disorder diagnosis. Supplementary Figure 4 suggests that different subtypes of cardiovascular disease may have different relationships between psychiatric disorder diagnosis and survival rate, but this doesn't appear to be touched on at all in the results or the discussion.\n\n3. Relatedly, could you please present similar analyses to Supplementary Figure 4 showing different survival curves by psychiatric subtype instead of cardiovascular subtype?\n",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "80fbef34-d2e3-46da-bedb-b554a63fc20f",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C1",
+      "claim": "The study identified 869,056 patients newly diagnosed with CVD from 1987 to 2016 in Sweden with no history of psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 869,056 patients newly diagnosed with CVD from 1987 to 2016 in Sweden with no history of psychiatric disorders, and 910,178 full siblings of these patients as well as 10 individually age- and sex-matched unrelated population controls (N = 8,690,560).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of CVD patients identified and their characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "8a341003-836e-4d02-8b30-940ef284fc73",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C2",
+      "claim": "910,178 full siblings of CVD patients were identified as controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 869,056 patients newly diagnosed with CVD from 1987 to 2016 in Sweden with no history of psychiatric disorders, and 910,178 full siblings of these patients as well as 10 individually age- and sex-matched unrelated population controls (N = 8,690,560).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of full siblings identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "7549f868-45f3-4e83-9409-96d80f475493",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C3",
+      "claim": "8,690,560 individually age- and sex-matched unrelated population controls were included.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 869,056 patients newly diagnosed with CVD from 1987 to 2016 in Sweden with no history of psychiatric disorders, and 910,178 full siblings of these patients as well as 10 individually age- and sex-matched unrelated population controls (N = 8,690,560).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of matched population controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "9b3cb1ac-ec5d-4a71-a248-934563fb3a16",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C4",
+      "claim": "The median age at diagnosis was 60 years for patients with CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at diagnosis was 60 years for patients with CVD and 59.2% were male.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the median age at diagnosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "7a5adf9c-e819-4a37-a273-125c5aee8876",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C5",
+      "claim": "59.2% of CVD patients were male.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at diagnosis was 60 years for patients with CVD and 59.2% were male.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the percentage of male patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "0316b5fa-61a5-4083-a977-1de2aa6d5e69",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C6",
+      "claim": "The crude incidence rate of psychiatric disorder was 7.1 per 1000 person-years for patients with CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "During up to 30 years of follow-up, the crude incidence rates of psychiatric disorder were 7.1, 4.6, and 4.0 per 1000 person-years for patients with CVD, their siblings and population controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the crude incidence rate for CVD patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "74a8b338-63b3-4196-b263-22374ebe9a16",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C7",
+      "claim": "The crude incidence rate of psychiatric disorder was 4.6 per 1000 person-years for siblings of CVD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "During up to 30 years of follow-up, the crude incidence rates of psychiatric disorder were 7.1, 4.6, and 4.0 per 1000 person-years for patients with CVD, their siblings and population controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the crude incidence rate for siblings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "77f6d579-39bd-4349-a84f-2bcccc2a61bc",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C8",
+      "claim": "The crude incidence rate of psychiatric disorder was 4.0 per 1000 person-years for population controls.",
+      "claim_type": "EXPLICIT",
+      "source": "During up to 30 years of follow-up, the crude incidence rates of psychiatric disorder were 7.1, 4.6, and 4.0 per 1000 person-years for patients with CVD, their siblings and population controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the crude incidence rate for population controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "69341067-f599-45a0-ac1b-0510b9ef4446",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C9",
+      "claim": "In the sibling comparison, the hazard ratio for psychiatric disorder during the first year after CVD diagnosis was 2.74 (95% CI, 2.62\u20132.87).",
+      "claim_type": "EXPLICIT",
+      "source": "In the sibling comparison, we observed an increased risk of psychiatric disorder during the first year after CVD diagnosis (hazard ratio [HR], 2.74; 95% confidence interval [CI], 2.62\u20132.87) and thereafter (1.45; 95% CI, 1.42\u20131.48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the hazard ratio with confidence interval for the first year.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "baf20498-2b5d-4ccf-8a29-c69c1e0924e5",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C10",
+      "claim": "In the sibling comparison, the hazard ratio for psychiatric disorder after the first year following CVD diagnosis was 1.45 (95% CI, 1.42\u20131.48).",
+      "claim_type": "EXPLICIT",
+      "source": "In the sibling comparison, we observed an increased risk of psychiatric disorder during the first year after CVD diagnosis (hazard ratio [HR], 2.74; 95% confidence interval [CI], 2.62\u20132.87) and thereafter (1.45; 95% CI, 1.42\u20131.48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the hazard ratio with confidence interval for the period after the first year.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d4553547-aa10-41b3-be9c-fe9af6071f2e",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C11",
+      "claim": "Increased risks of psychiatric disorder were observed for all types of psychiatric disorders among CVD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased risks were observed for all types of psychiatric disorders and among all diagnoses of CVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that increased risks were observed for all types of psychiatric disorders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "0566d192-4a25-44b1-a23e-5f9f3d058156",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C12",
+      "claim": "Increased risks of psychiatric disorder were observed among all diagnoses of CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased risks were observed for all types of psychiatric disorders and among all diagnoses of CVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that increased risks were observed among all CVD diagnoses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "40ade2fe-c48a-43b2-bac2-772cec6967a2",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C13",
+      "claim": "CVD patients who developed a comorbid psychiatric disorder during the first year after diagnosis had a hazard ratio of 1.55 (95% CI, 1.44\u20131.67) for subsequent CVD death compared to patients without such comorbidity.",
+      "claim_type": "EXPLICIT",
+      "source": "CVD patients who developed a comorbid psychiatric disorder during the first year after diagnosis were at elevated risk of subsequent CVD death compared to patients without such comorbidity (HR, 1.55; 95% CI, 1.44\u20131.67).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the hazard ratio with confidence interval for CVD death.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "2893722d-3860-43db-b59a-0f20fabccb7e",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C14",
+      "claim": "Patients diagnosed with CVD are at an elevated risk for subsequent psychiatric disorders independent of shared familial factors and comorbid conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients diagnosed with CVD are at an elevated risk for subsequent psychiatric disorders independent of shared familial factors and comorbid conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly states this finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "c1e52ef4-734f-4f30-8e26-1d4911314f6d",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C15",
+      "claim": "Comorbid psychiatric disorders in patients with CVD are associated with higher risk of cardiovascular mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Comorbid psychiatric disorders in patients with CVD are associated with higher risk of cardiovascular mortality suggesting that surveillance and treatment of psychiatric comorbidities should be considered as an integral part of clinical management of newly diagnosed CVD patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly states this association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "2d661592-4a3c-4038-ba2a-338385edd832",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C16",
+      "claim": "A cancer diagnosis is associated with subsequent risk of psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "It is for instance demonstrated that a cancer diagnosis is associated with subsequent risk of psychiatric disorders (Lu et al., 2016) and self-inflicted injury (Shen et al., 2016), which in turn might be associated with a compromised cancer survival (Zhu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a previous study demonstrating this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "98922f55-4062-4ad7-a7a6-75d365dcfb58",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C17",
+      "claim": "A cancer diagnosis is associated with subsequent risk of self-inflicted injury.",
+      "claim_type": "EXPLICIT",
+      "source": "It is for instance demonstrated that a cancer diagnosis is associated with subsequent risk of psychiatric disorders (Lu et al., 2016) and self-inflicted injury (Shen et al., 2016), which in turn might be associated with a compromised cancer survival (Zhu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a previous study demonstrating this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "9fc898c0-0711-4f77-92ef-88f6ff77a4ab",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C18",
+      "claim": "Psychiatric comorbidities have been reported among patients with stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychiatric comorbidities have also been reported among patients with cardiovascular disease (CVD), for example, stroke (Lind\u00e9n et al., 2007), heart failure (Rutledge et al., 2006), and myocardial infarction (Thombs et al., 2006; Shemesh et al., 2004), with indications of elevated risk of overall mortality (Doering et al., 2010; Wrenn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites previous studies reporting psychiatric comorbidities in stroke patients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "8159c3cc-24fa-4a73-a534-f85d0dbdd194",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C19",
+      "claim": "Psychiatric comorbidities have been reported among patients with heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychiatric comorbidities have also been reported among patients with cardiovascular disease (CVD), for example, stroke (Lind\u00e9n et al., 2007), heart failure (Rutledge et al., 2006), and myocardial infarction (Thombs et al., 2006; Shemesh et al., 2004), with indications of elevated risk of overall mortality (Doering et al., 2010; Wrenn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites previous studies reporting psychiatric comorbidities in heart failure patients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d0888c91-9bcd-4463-8b8b-753b18199a33",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C20",
+      "claim": "Psychiatric comorbidities have been reported among patients with myocardial infarction.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychiatric comorbidities have also been reported among patients with cardiovascular disease (CVD), for example, stroke (Lind\u00e9n et al., 2007), heart failure (Rutledge et al., 2006), and myocardial infarction (Thombs et al., 2006; Shemesh et al., 2004), with indications of elevated risk of overall mortality (Doering et al., 2010; Wrenn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites previous studies reporting psychiatric comorbidities in myocardial infarction patients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "6bf6a427-8318-4bc8-aba8-4e2b26a63087",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C21",
+      "claim": "Psychiatric comorbidities in CVD patients are associated with elevated risk of overall mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychiatric comorbidities have also been reported among patients with cardiovascular disease (CVD), for example, stroke (Lind\u00e9n et al., 2007), heart failure (Rutledge et al., 2006), and myocardial infarction (Thombs et al., 2006; Shemesh et al., 2004), with indications of elevated risk of overall mortality (Doering et al., 2010; Wrenn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites previous studies indicating elevated mortality risk.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "3442c9f4-777f-49f5-9563-26e75f8f355a",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C22",
+      "claim": "Previous research on CVD and psychiatric disorders has mainly relied on selected patient populations instead of complete follow-up of general population.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, evidence on the association between CVD and subsequent development of psychiatric disorders is still limited as previous research has mainly relied on selected patient populations instead of complete follow-up of general population as well as limited control of reverse causality and important confounding factors, for example, familial factors and comorbidities (Lincoln et al., 2013; Morrison et al., 2005; Romanelli et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this limitation of previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "376d703a-ccfd-4d16-916d-0771f17c5e9f",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C23",
+      "claim": "Previous research on CVD and psychiatric disorders has had limited control of reverse causality and important confounding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, evidence on the association between CVD and subsequent development of psychiatric disorders is still limited as previous research has mainly relied on selected patient populations instead of complete follow-up of general population as well as limited control of reverse causality and important confounding factors, for example, familial factors and comorbidities (Lincoln et al., 2013; Morrison et al., 2005; Romanelli et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this limitation of previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "6ba9e145-7eb5-42e3-98a7-6d2d1fa625bd",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C24",
+      "claim": "Hypertension is positively associated with depressive symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "While these prospective studies suggest a positive association of hypertension, heart disease, and stroke with depressive symptoms (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and stress-related disorders (Chang et al., 2017), they were limited to elderly populations (Petersson et al., 2014; Zhang et al., 2015), and used self-reported ascertainment of psychiatric outcomes (Petersson et al., 2014; Zhang et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites prospective studies suggesting this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d2aaea0c-78b7-4500-a080-f0502a4df14d",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C25",
+      "claim": "Heart disease is positively associated with depressive symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "While these prospective studies suggest a positive association of hypertension, heart disease, and stroke with depressive symptoms (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and stress-related disorders (Chang et al., 2017), they were limited to elderly populations (Petersson et al., 2014; Zhang et al., 2015), and used self-reported ascertainment of psychiatric outcomes (Petersson et al., 2014; Zhang et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites prospective studies suggesting this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "90f230e2-a421-4593-b68f-1c4c915d47df",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C26",
+      "claim": "Stroke is positively associated with depressive symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "While these prospective studies suggest a positive association of hypertension, heart disease, and stroke with depressive symptoms (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and stress-related disorders (Chang et al., 2017), they were limited to elderly populations (Petersson et al., 2014; Zhang et al., 2015), and used self-reported ascertainment of psychiatric outcomes (Petersson et al., 2014; Zhang et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites prospective studies suggesting this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "6839417a-1622-41b7-a3b4-5a46946df3d8",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C27",
+      "claim": "CVD is positively associated with stress-related disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "While these prospective studies suggest a positive association of hypertension, heart disease, and stroke with depressive symptoms (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and stress-related disorders (Chang et al., 2017), they were limited to elderly populations (Petersson et al., 2014; Zhang et al., 2015), and used self-reported ascertainment of psychiatric outcomes (Petersson et al., 2014; Zhang et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a prospective study suggesting this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "032168bc-347d-46df-9341-f0cf399981fe",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C28",
+      "claim": "Genetic correlation has been documented between CVD and psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, genetic correlation has recently been document between these two complex disease groups (Barnett and Smoller, 2009; Kathiresan and Srivastava, 2012; R\u00f8devand et al., 2021) as well as the importance of early life environment for the development of both CVD (Kelishadi and Poursafa, 2014) and psychiatric disorders (Rokita et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites recent studies documenting genetic correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "abeb9b71-b888-4a3b-93f6-e66ec348edd2",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C29",
+      "claim": "Early life environment is important for the development of CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, genetic correlation has recently been document between these two complex disease groups (Barnett and Smoller, 2009; Kathiresan and Srivastava, 2012; R\u00f8devand et al., 2021) as well as the importance of early life environment for the development of both CVD (Kelishadi and Poursafa, 2014) and psychiatric disorders (Rokita et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study on the importance of early life environment for CVD.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "97d9d6f6-de3e-4e09-9be4-e1b2621c9c5b",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C30",
+      "claim": "Early life environment is important for the development of psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, genetic correlation has recently been document between these two complex disease groups (Barnett and Smoller, 2009; Kathiresan and Srivastava, 2012; R\u00f8devand et al., 2021) as well as the importance of early life environment for the development of both CVD (Kelishadi and Poursafa, 2014) and psychiatric disorders (Rokita et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study on the importance of early life environment for psychiatric disorders.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "49e6d30a-20f7-4738-bf11-b5cf9decaf6a",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C31",
+      "claim": "The Swedish Patient Register contains national information on inpatient care with complete coverage since 1987.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swedish Patient Register contains national information on inpatient care with complete coverage since 1987 and outpatient specialized care since 2001 (Ludvigsson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the Swedish Patient Register.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "2c1cdcc4-b4ad-4f08-8e08-a5d732144e92",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C32",
+      "claim": "The Swedish Patient Register contains information on outpatient specialized care since 2001.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swedish Patient Register contains national information on inpatient care with complete coverage since 1987 and outpatient specialized care since 2001 (Ludvigsson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the Swedish Patient Register.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "f7d69ff6-3bd2-4003-851e-9ebaf45e367e",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C33",
+      "claim": "The Swedish Multi-Generation Register includes nearly complete familial information for Swedish residents born since 1932.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swedish Multi-Generation Register includes nearly complete familial information for Swedish residents born since 1932 (Ekbom, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the Swedish Multi-Generation Register.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "76a84acf-c053-46c1-9bf0-d0da1036b463",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C34",
+      "claim": "Patients diagnosed with CVD before age 5 were excluded from the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients diagnosed with CVD before age 5 (N = 6091, probable congenital heart disease) or with a history of any psychiatric disorder before the diagnosis of CVD (N = 111,579) were excluded, leaving 869,056 patients in the analysis (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly states this exclusion criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "bc4f4084-1dc9-4dc5-a478-5b5a8d51fe59",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C35",
+      "claim": "6,091 patients diagnosed with CVD before age 5 were excluded due to probable congenital heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients diagnosed with CVD before age 5 (N = 6091, probable congenital heart disease) or with a history of any psychiatric disorder before the diagnosis of CVD (N = 111,579) were excluded, leaving 869,056 patients in the analysis (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly states the number and reason for exclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "49103c3b-ba29-4518-8508-2e67e6b7e707",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C36",
+      "claim": "111,579 patients with a history of any psychiatric disorder before the diagnosis of CVD were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients diagnosed with CVD before age 5 (N = 6091, probable congenital heart disease) or with a history of any psychiatric disorder before the diagnosis of CVD (N = 111,579) were excluded, leaving 869,056 patients in the analysis (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly states the number of patients excluded for this reason.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d13896cb-8d3f-4902-953e-197630555921",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C37",
+      "claim": "58.6% of all CVD patients had full siblings identified through the Multi-Generation Register.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the Multi-Generation Register, we identified all full siblings of patients with CVD (58.6% of all CVD patients) who were alive and free of CVD and psychiatric disorder at the time when their affected sibling was diagnosed (N = 910,178).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "3c2ada38-d826-45a5-997c-74f20afda465",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C38",
+      "claim": "For each patient with CVD, 10 age- and sex-matched individuals from the general population were randomly selected.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, for each patient with CVD, we randomly selected 10 age- and sex-matched individuals from the general population who were free of CVD or psychiatric disorder when the index patient was diagnosed (N = 8,690,560).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the matching procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "7ad5de1d-a802-4741-8f5c-dade21e91309",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C39",
+      "claim": "CVD was classified as ischemic heart disease, cerebrovascular disease, emboli/thrombosis, hypertensive disease, heart failure, and arrhythmia/conduction disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous study (Song et al., 2019), we classified CVD as ischemic heart disease, cerebrovascular disease, emboli/thrombosis, hypertensive disease, heart failure, and arrhythmia/conduction disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the CVD classification.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d5d0adb4-1803-4343-832c-2d567e695f5e",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C40",
+      "claim": "Psychiatric disorders were classified as non-affective psychotic disorders, affective psychotic disorders, alcohol or drug misuse, mood disorders excluding psychotic symptoms, anxiety and stress-related disorders, eating disorders, and personality disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified psychiatric disorders as non-affective psychotic disorders, affective psychotic disorders, alcohol or drug misuse, mood disorders excluding psychotic symptoms, anxiety and stress-related disorders, eating disorders, and personality disorders (Nevriana et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the psychiatric disorder classification.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d446aafb-b2ca-4715-b460-75514c3a6aa9",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C41",
+      "claim": "The median age at index date was 57 years for CVD patients in the sibling comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "Median age at index date in years (IQR)\t57 (48\u201365)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 explicitly shows the median age for CVD patients in sibling comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "b9d0be72-1343-4630-9075-e4491d79e2f3",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C43",
+      "claim": "60.5% of CVD patients in the sibling comparison were male.",
+      "claim_type": "EXPLICIT",
+      "source": "Male sex\t308,203 (60.5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 explicitly shows the percentage of male CVD patients in sibling comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "f5373f48-8300-4aea-94d5-2b1fc8a2ef0d",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C45",
+      "claim": "CVD patients were more likely to have a history of somatic diseases than their unaffected siblings (15.6% vs. 8.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "CVD patients were more likely to have a history of somatic diseases than their unaffected siblings and matched population controls (15.6% vs. 8.8% and 11.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "9b53d6dc-4b05-4814-95a0-2ff6f54bb9e5",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C46",
+      "claim": "CVD patients were more likely to have a history of somatic diseases than matched population controls (15.6% vs. 11.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "CVD patients were more likely to have a history of somatic diseases than their unaffected siblings and matched population controls (15.6% vs. 8.8% and 11.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "a9ac005a-1190-43ab-82f3-b624a6fe1f5a",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C47",
+      "claim": "The most common diagnoses among CVD patients were ischemic heart diseases (24.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "The most common diagnoses among the CVD patients were ischemic heart diseases (24.5%), arrhythmia/conduction disorders (24.2%), and hypertensive diseases (17.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the most common diagnoses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "b7af3239-75dd-476f-b9cd-a84bce3dc365",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C48",
+      "claim": "Arrhythmia/conduction disorders accounted for 24.2% of CVD diagnoses.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common diagnoses among the CVD patients were ischemic heart diseases (24.5%), arrhythmia/conduction disorders (24.2%), and hypertensive diseases (17.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d35b80d8-2770-4a96-afb9-fdf7986a0c34",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C49",
+      "claim": "Hypertensive diseases accounted for 17.3% of CVD diagnoses.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common diagnoses among the CVD patients were ischemic heart diseases (24.5%), arrhythmia/conduction disorders (24.2%), and hypertensive diseases (17.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "9cda0281-2b4c-4de8-b00d-944306393eb1",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C50",
+      "claim": "69.7% of CVD patients had only one CVD diagnosis during follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the CVD patients had only one CVD diagnosis (without additional CVD comorbidities) during follow-up (69.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "64fee04a-b129-4dff-a0df-0f8bfe86b79d",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C51",
+      "claim": "CVD patients showed an elevated risk of incident psychiatric disorder compared with unaffected siblings, especially immediately after diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with unaffected siblings, CVD patients showed an elevated risk of incident psychiatric disorder, especially immediately after diagnosis (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "f03d60dd-4075-4361-bce7-76e597709be1",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C52",
+      "claim": "The risk increase of psychiatric disorder declined rapidly within the first few months after CVD diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk increase declined rapidly within the first few months after diagnosis and decreased gradually thereafter: the HR was 2.74 (95% CI, 2.62\u20132.87) within first year and 1.45 (95% CI, 1.42\u20131.48) beyond first year (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes the temporal pattern of risk.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "aa95d89d-85c1-45b0-94d9-4e45fdd5e5b2",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C53",
+      "claim": "The risk increment of psychiatric disorder was noted in all types of psychiatric disorders within and beyond first year of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk increment was noted in all types of psychiatric disorders within and beyond first year of follow-up (Figure 2 and Supplementary file 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "88174dfb-199f-4f8a-b768-7da7bf2672e9",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C54",
+      "claim": "The observed positive association between CVD and psychiatric disorder was similar in sibling and population comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the observed positive association was similar in sibling and population comparisons, although the HR of non-affective psychotic disorders beyond 1 year of CVD diagnosis was smaller in the sibling comparison than in the population comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "512e6198-71e8-4345-89aa-d853f153c74f",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C55",
+      "claim": "The HR of non-affective psychotic disorders beyond 1 year of CVD diagnosis was smaller in the sibling comparison than in the population comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the observed positive association was similar in sibling and population comparisons, although the HR of non-affective psychotic disorders beyond 1 year of CVD diagnosis was smaller in the sibling comparison than in the population comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d0908641-4815-4aaa-928e-0cebc0e3e060",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C56",
+      "claim": "Similar positive associations between CVD and psychiatric disorder were found across sex, age at index date, age at follow-up, history of somatic diseases, and family history of psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "During the entire follow-up, we found similar positive associations across sex, age at index date, age at follow-up, history of somatic diseases, and family history of psychiatric disorders (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states these findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "c659bccc-cf8b-4965-a875-fd08941561e5",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C57",
+      "claim": "A greater risk increment of psychiatric disorder was observed in recent calendar years than earlier years.",
+      "claim_type": "EXPLICIT",
+      "source": "A greater risk increment was observed in recent calendar years than earlier years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this temporal trend.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "4bd0a943-2935-4437-b254-0ab709f08150",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C58",
+      "claim": "A higher risk of incident psychiatric disorder was found among all groups of CVD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a higher risk of incident psychiatric disorder among all groups of CVD patients, with the most marked risk elevation observed among patients with cerebrovascular disease and heart failure (Figure 3 and Supplementary file 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "36795a6e-c24c-40e5-90a0-95c959156274",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C59",
+      "claim": "The most marked risk elevation of psychiatric disorder was observed among patients with cerebrovascular disease and heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a higher risk of incident psychiatric disorder among all groups of CVD patients, with the most marked risk elevation observed among patients with cerebrovascular disease and heart failure (Figure 3 and Supplementary file 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "e1eb344f-7d08-4eab-927e-261d4ff1f35c",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C60",
+      "claim": "A greater risk increment of incident psychiatric disorder was noted among CVD patients with additional cardiovascular comorbidities beyond 1 year of first CVD diagnosis compared with CVD patients without such comorbidities, except among those with heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "A greater risk increment of incident psychiatric disorder was noted among CVD patients with additional cardiovascular comorbidities beyond 1 year of first CVD diagnosis compared with CVD patients without such comorbidities, except among those with heart failure (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "819166b0-0393-4578-88b5-a5122733fd9c",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C61",
+      "claim": "A similar positive association between CVD and risk of incident psychiatric disorder was found when including use of psychotropic drugs as a definition of psychiatric disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a similar positive association between CVD and risk of incident psychiatric disorder, when including use of psychotropic drugs as a definition of psychiatric disorder (Supplementary file 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this sensitivity analysis finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "404a6a5b-e946-40b0-afcd-f595a3d856a9",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C62",
+      "claim": "CVD patients diagnosed with subsequent psychiatric disorder showed a lower CVD-specific survival compared with patients without such diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "CVD patients diagnosed with subsequent psychiatric disorder showed a lower CVD-specific survival compared with patients without such diagnosis (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "53bd069f-594d-48b6-9a2f-5dc960f6942e",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C63",
+      "claim": "The HR of CVD death was 1.55 (95% CI 1.44\u20131.67) when comparing CVD patients with a diagnosis of psychiatric disorder to patients without such diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The HR of CVD death was 1.55 (95% CI 1.44\u20131.67) when comparing CVD patients with a diagnosis of psychiatric disorder to patients without such diagnosis (mortality rate, 9.2 and 7.1 per 1 000 person-years, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the hazard ratio with confidence interval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "add288f0-e8b2-4b5d-98f0-0481bd66f477",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C64",
+      "claim": "The mortality rate from CVD was 9.2 per 1000 person-years for CVD patients with psychiatric disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The HR of CVD death was 1.55 (95% CI 1.44\u20131.67) when comparing CVD patients with a diagnosis of psychiatric disorder to patients without such diagnosis (mortality rate, 9.2 and 7.1 per 1 000 person-years, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the mortality rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "14ddcbcc-9616-4d0b-95cf-d5e172a5bd54",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C65",
+      "claim": "The mortality rate from CVD was 7.1 per 1000 person-years for CVD patients without psychiatric disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The HR of CVD death was 1.55 (95% CI 1.44\u20131.67) when comparing CVD patients with a diagnosis of psychiatric disorder to patients without such diagnosis (mortality rate, 9.2 and 7.1 per 1 000 person-years, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the mortality rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "15b16cd9-da26-49a9-be9b-dddd3cfac129",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C66",
+      "claim": "The compromised CVD-specific survival differed by types of CVD, and was most pronounced for hypertensive disease, ischemic heart disease, and arrhythmia/conduction disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The compromised CVD-specific survival differed by types of CVD, and was most pronounced for hypertensive disease, ischemic heart disease, and arrhythmia/conduction disorder (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "c7429536-17b2-485d-a44f-816cc3f93428",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C67",
+      "claim": "The compromised survival among CVD patients was confined to those with comorbid non-affective and affective psychotic disorders, as well as alcohol or drug misuse.",
+      "claim_type": "EXPLICIT",
+      "source": "When studying categories of psychiatric disorders, we found that the compromised survival among CVD patients was confined to those with comorbid non-affective and affective psychotic disorders, as well as alcohol or drug misuse (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "fd3ec77e-6b9d-484a-b7a8-902f36beafa1",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C68",
+      "claim": "The findings are consistent with existing literature suggesting a positive association between CVD and different types of psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with the existing literature suggesting a positive association between CVD and different types of psychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states consistency with existing literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "e769bc37-6890-45e2-aede-4678e91ecc39",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C69",
+      "claim": "An increased risk of depression was noted after diagnosis of stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, an increased risk of depression (Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and anxiety (Morrison et al., 2005) was noted after diagnosis of stroke (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001), hypertension (Petersson et al., 2014), coronary artery disease (Rutledge et al., 2013), and atrial fibrillation (Baumgartner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites previous studies showing increased depression risk after stroke.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "5f4cde56-d376-4430-9610-6d85e1b38fe9",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C70",
+      "claim": "An increased risk of anxiety was noted after diagnosis of stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, an increased risk of depression (Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and anxiety (Morrison et al., 2005) was noted after diagnosis of stroke (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001), hypertension (Petersson et al., 2014), coronary artery disease (Rutledge et al., 2013), and atrial fibrillation (Baumgartner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites previous studies showing increased anxiety risk after stroke.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "6a5a8466-3d0c-443a-968c-e0df4d0d2e85",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C71",
+      "claim": "An increased risk of depression was noted after diagnosis of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, an increased risk of depression (Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and anxiety (Morrison et al., 2005) was noted after diagnosis of stroke (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001), hypertension (Petersson et al., 2014), coronary artery disease (Rutledge et al., 2013), and atrial fibrillation (Baumgartner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a previous study showing increased depression risk after hypertension diagnosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "85e9146a-d9eb-4317-9476-efe9b21c3b8c",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C72",
+      "claim": "An increased risk of depression was noted after diagnosis of coronary artery disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, an increased risk of depression (Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and anxiety (Morrison et al., 2005) was noted after diagnosis of stroke (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001), hypertension (Petersson et al., 2014), coronary artery disease (Rutledge et al., 2013), and atrial fibrillation (Baumgartner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a previous study showing increased depression risk after coronary artery disease diagnosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "9895da74-80e3-422f-b561-db0a71abfdf9",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C73",
+      "claim": "An increased risk of depression was noted after diagnosis of atrial fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, an increased risk of depression (Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001) and anxiety (Morrison et al., 2005) was noted after diagnosis of stroke (Morrison et al., 2005; Wium-Andersen et al., 2017; Baccaro et al., 2019; Pohjasvaara et al., 2001), hypertension (Petersson et al., 2014), coronary artery disease (Rutledge et al., 2013), and atrial fibrillation (Baumgartner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a previous study showing increased depression risk after atrial fibrillation diagnosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "36c194bd-7726-44a6-b9a3-144463541cc7",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C74",
+      "claim": "Risk elevations of psychiatric disorders after CVD have been suggested to be persistent over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Such risk elevations have been suggested to be persistent over time (Lincoln et al., 2013; Zawadzka and Doma\u0144ska, 2014; Berg et al., 2003), and, in parallel with our findings, associated with compromised survival (Doering et al., 2010; Cai et al., 2019; Bod\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites previous studies suggesting persistent risk elevations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "a3f25dcf-081a-4226-8f91-9097d53eb61a",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C75",
+      "claim": "Psychiatric disorders after CVD have been associated with compromised survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Such risk elevations have been suggested to be persistent over time (Lincoln et al., 2013; Zawadzka and Doma\u0144ska, 2014; Berg et al., 2003), and, in parallel with our findings, associated with compromised survival (Doering et al., 2010; Cai et al., 2019; Bod\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites previous studies showing association with compromised survival.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "99ed0a7d-59f5-4c1e-b31b-fe5ecaa38d32",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C76",
+      "claim": "Major depression was more commonly recognized among individuals with multimorbidity (more than one CVD diagnosis) than those with only one condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that major depression was more commonly recognized among individuals with multimorbidity (more than one CVD diagnosis) than those with only one condition (Findley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a previous study on depression and multimorbidity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "84ab19b7-0fe6-4f84-b0a7-6b4918591784",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C77",
+      "claim": "About 30% of the CVD patients developed one or more cardiovascular comorbidities during follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, about 30% of the CVD patients developed one or more cardiovascular comorbidities during follow-up, and a higher risk of psychiatric disorder was indeed noted among patients with multiple CVD diagnoses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "ffb891a7-ea5d-4de9-9c64-9ac1bc068fd9",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C78",
+      "claim": "The highly increased risk of psychiatric disorder noted immediately after CVD diagnosis may indicate a direct impact of stress reaction of being diagnosed with a life-threatening disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly increased risk noted immediately after CVD diagnosis may indicate a direct impact of stress reaction of being diagnosed with a life-threatening disease (Fang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion proposes this mechanism and cites a reference.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "0b541975-23e8-415a-9030-1233f2dc7b1b",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C79",
+      "claim": "Biological alterations in the cardiovascular system to a severe stress response may increase the risk of various psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been proposed that biological alterations in the cardiovascular system to a severe stress response may increase the risk of various psychiatric disorders (Levine et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a proposal about biological mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "e742f76f-aa54-45b0-a4b5-74a8dd0808e8",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C80",
+      "claim": "Cardiovascular risk factors including hypercoagulability, dyslipidemia, and an impaired immune response have been associated with impaired psychological health.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cardiovascular risk factors including hypercoagulability, dyslipidemia, and an impaired immune response have been associated with impaired psychological health (Levine et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites associations between cardiovascular risk factors and psychological health.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "0d056aa9-6396-40a1-bd55-8fdb7209fe04",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C81",
+      "claim": "Some biological changes in patients with coronary heart disease (e.g., decreased heart rate variability, increased arterial stiffness, and endothelial dysfunction) have been observed in patients with depressive and anxiety disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Some biological changes in patients with coronary heart disease (e.g., decreased heart rate variability, increased arterial stiffness, and endothelial dysfunction) have been observed in patients with depressive and anxiety disorders (Sherwood et al., 2005; Seldenrijk et al., 2011; Stein et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies showing shared biological changes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "35c9b100-ab5e-43d0-a2fa-e622caa79bc8",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C82",
+      "claim": "Chronic inflammation may induce the development of atherosclerosis and arterial thrombosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic inflammation may induce the development of atherosclerosis and arterial thrombosis, and elevation in inflammatory biomarkers (i.e., IL-6 and C-reactive protein) has been reported in various psychiatric disorders including post-traumatic stress disorder and major depression (Libby, 2006; Sumner et al., 2020; Miller and Raison, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study on chronic inflammation and atherosclerosis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "8a672fd1-4bf2-460e-83a0-6194b556fcaa",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C83",
+      "claim": "Elevation in inflammatory biomarkers (i.e., IL-6 and C-reactive protein) has been reported in various psychiatric disorders including post-traumatic stress disorder and major depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic inflammation may induce the development of atherosclerosis and arterial thrombosis, and elevation in inflammatory biomarkers (i.e., IL-6 and C-reactive protein) has been reported in various psychiatric disorders including post-traumatic stress disorder and major depression (Libby, 2006; Sumner et al., 2020; Miller and Raison, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies showing elevated inflammatory biomarkers in psychiatric disorders.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "2177872d-9c3f-4bef-9116-f1b4df972347",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C84",
+      "claim": "The study used a large sample size of the entire Swedish nation.",
+      "claim_type": "EXPLICIT",
+      "source": "The strengths of our study include its large sample size of the entire Swedish nation and the prospective study design with sibling comparison that significantly alleviates concerns of familial confounding from shared genetic and environmental factors between siblings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this as a strength.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "428beb50-faad-4974-a5d8-884f8d02545f",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C85",
+      "claim": "The study used a prospective study design with sibling comparison that significantly alleviates concerns of familial confounding from shared genetic and environmental factors between siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "The strengths of our study include its large sample size of the entire Swedish nation and the prospective study design with sibling comparison that significantly alleviates concerns of familial confounding from shared genetic and environmental factors between siblings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this as a strength.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "cbca2dcd-9470-4847-8ccf-0d1be88720e7",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C86",
+      "claim": "The Swedish population and health registers provide the opportunity to obtain complete follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swedish population and health registers provide the opportunity to obtain complete follow-up as well as the prospectively and independently collected information on disease identification, minimizing the risk of selection and information biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this as a strength.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "b737f7b2-1b9f-4591-a17b-63154d87ec8e",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C87",
+      "claim": "The Swedish population and health registers provide prospectively and independently collected information on disease identification, minimizing the risk of selection and information biases.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swedish population and health registers provide the opportunity to obtain complete follow-up as well as the prospectively and independently collected information on disease identification, minimizing the risk of selection and information biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this as a strength.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "c12e68b6-027c-4482-aa05-14a861833ace",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C88",
+      "claim": "The later inclusion of outpatient records in the Swedish Patient Register may lead to underestimation of the actual numbers of patients with CVD and psychiatric disorder, especially those with relatively milder symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The later inclusion of outpatient records in the Swedish Patient Register may lead to underestimation of the actual numbers of patients with CVD and psychiatric disorder, especially those with relatively milder symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly acknowledges this limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "6e392839-a94c-477c-b925-b00ca9d6b01f",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C89",
+      "claim": "The study missed individuals attending primary care only, which may underestimate the proportion of individuals with history of psychiatric disorders at cohort entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we missed individuals attending primary care only, which may underestimate the proportion of individuals with history of psychiatric disorders at cohort entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly acknowledges this limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "e9ea33c4-f4dd-435e-8471-8bb467750237",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C90",
+      "claim": "Patients with CVD have an established contact with health care and may therefore be more likely than others to be diagnosed with psychiatric disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, patients with CVD have an established contact with health care and may therefore be more likely than others to be diagnosed with psychiatric disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly acknowledges this potential bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "f4e9347c-d41c-4009-afd0-7bbda603e2f5",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C91",
+      "claim": "Surveillance bias may to some extent explain the increased risks during the first few months after CVD diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such surveillance bias may to some extent explain the increased risks during the first few months after CVD diagnosis, it is unlikely that the risk elevation during the entire follow-up is attributed to such bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly discusses surveillance bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "cb6c2666-dd5e-4afa-bef5-143430711dd3",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C92",
+      "claim": "It is unlikely that the risk elevation during the entire follow-up is attributed to surveillance bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such surveillance bias may to some extent explain the increased risks during the first few months after CVD diagnosis, it is unlikely that the risk elevation during the entire follow-up is attributed to such bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "378f550d-65f1-4514-9a2a-f8c997fca52e",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C93",
+      "claim": "Patients with CVD are at elevated risk of newly diagnosed psychiatric disorder, independent of familial background shared between siblings, history of somatic diseases, and other cardiovascular comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a large population-based sibling-controlled cohort with up to 30 years of follow-up, we found patients with CVD are at elevated risk of newly diagnosed psychiatric disorder, independent of familial background shared between siblings, history of somatic diseases, and other cardiovascular comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly states this finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "fd778137-4ce2-49e3-8c47-e7be56bdee07",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C94",
+      "claim": "The study observes higher cardiovascular mortality among CVD patients with subsequent psychiatric comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further observes higher cardiovascular mortality among CVD patients with subsequent psychiatric comorbidities, providing evidence for increased surveillance of psychiatric comorbidity among newly diagnosed patients with CVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "3d951a49-e08f-45d6-8802-fc26335f146f",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C95",
+      "claim": "The study provides evidence for increased surveillance of psychiatric comorbidity among newly diagnosed patients with CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further observes higher cardiovascular mortality among CVD patients with subsequent psychiatric comorbidities, providing evidence for increased surveillance of psychiatric comorbidity among newly diagnosed patients with CVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly states this implication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "2762657e-dde0-4e77-b4a9-e444729231ca",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C96",
+      "claim": "The study was approved by the Ethical Vetting Board in Stockholm, Sweden (DNRs 2012/1814-31/4 and 2015/1062-32).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the Ethical Vetting Board in Stockholm, Sweden (DNRs 2012/1814-31/4 and 2015/1062-32).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly states the ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "f7be1a33-f392-4855-97d5-1bf58054d6d3",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C97",
+      "claim": "The funders of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report.",
+      "claim_type": "EXPLICIT",
+      "source": "The funders of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly states the role of funders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "9a8602b2-8f0e-47a8-aeb2-2cefcac2f649",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C98",
+      "claim": "The median follow-up time was 8.1 years for CVD patients in the sibling comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "Median follow-up time in years (IQR)\t8.1 (3.7\u201313.7)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 explicitly shows the median follow-up time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "e73cfb92-406f-4bac-808b-0e2a1c1422d2",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C102",
+      "claim": "90.4% of CVD patients (N = 785,287) survived the first year of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "aCVD: cardiovascular disease. Time since index date was used as underlying time scale. 90.4% of CVD patients (N = 785,287) survived the first year of follow-up and included in this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 caption explicitly states this survival percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "e7197d91-e1c9-405d-8344-00a1b0d0848b",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C103",
+      "claim": "The association between CVD and psychiatric disorder remained similar after excluding individuals with liver cirrhosis and COPD, as proxies for heavy alcohol consumption and smoking.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations remained similar after excluding individuals with liver cirrhosis and COPD, as proxies for heavy alcohol consumption and smoking, suggesting that residual confounding due to unmeasured lifestyle factors might not have overly substantial impact on the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this sensitivity analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "f6b11536-a850-4ada-b9a2-0f3f396bbed5",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C104",
+      "claim": "Residual confounding due to unmeasured lifestyle factors might not have overly substantial impact on the results.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations remained similar after excluding individuals with liver cirrhosis and COPD, as proxies for heavy alcohol consumption and smoking, suggesting that residual confounding due to unmeasured lifestyle factors might not have overly substantial impact on the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d3c958e5-5db4-4774-81d0-22504bf2e63d",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C105",
+      "claim": "The association between CVD and psychiatric disorders was noted both in men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between CVD and psychiatric disorders was noted both in men and women, across all age groups and calendar periods, as well as among individuals with or without a history of somatic diseases and family history of psychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "d8e5907a-d8d1-4fd6-9cfd-be966cb8d86b",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C106",
+      "claim": "The association between CVD and psychiatric disorders was noted across all age groups and calendar periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between CVD and psychiatric disorders was noted both in men and women, across all age groups and calendar periods, as well as among individuals with or without a history of somatic diseases and family history of psychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "b35b059e-52cf-43c9-9231-eecd6ddb25b1",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C107",
+      "claim": "The association between CVD and psychiatric disorders was noted among individuals with or without a history of somatic diseases and family history of psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between CVD and psychiatric disorders was noted both in men and women, across all age groups and calendar periods, as well as among individuals with or without a history of somatic diseases and family history of psychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "68609758-748e-4dfc-b30f-526d611daf4c",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C108",
+      "claim": "Particular clinical attention is needed for CVD patients with comorbid psychiatric disorders, particularly alcohol or drug misuse or psychotic disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, particular clinical attention is needed for CVD patients with comorbid psychiatric disorders, particularly alcohol or drug misuse or psychotic disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this clinical implication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "298a904a-30fe-4a2f-a1d1-29294fed76e2",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C109",
+      "claim": "Figure 1 shows time-varying hazard ratios comparing CVD patients to their siblings and population controls for psychiatric disorder risk.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1 displays time-varying hazard ratios with 95% confidence intervals for both sibling and population comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "2c120416-d466-4dca-9e70-3c286a0f2ca5",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C110",
+      "claim": "Figure 2 shows hazard ratios for different types of psychiatric disorders in CVD patients compared to siblings and population controls.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 2.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 2 displays hazard ratios for various psychiatric disorder subtypes stratified by follow-up period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "ae356fb2-3dd3-4d5d-9098-814531f3aa56",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C111",
+      "claim": "Figure 3 shows hazard ratios for psychiatric disorders by type of CVD diagnosis.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 3.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 3 displays hazard ratios for different CVD types in both sibling and population comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "a1c54a66-4490-4f86-be37-f267540c3996",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "claim_id": "C112",
+      "claim": "Figure 4 shows Kaplan-Meier survival curves for CVD-specific mortality comparing CVD patients with and without psychiatric disorder.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 4.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 4 displays survival curves over time since CVD diagnosis for patients with and without psychiatric disorder.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc30593a-de1f-4ccf-b706-e91942f968b1",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identified 869,056 CVD patients in Sweden (1987-2016) without prior psychiatric disorders, along with 910,178 full siblings and 8,690,560 matched population controls. Patients with CVD before age 5 (N=6,091) or prior psychiatric disorders (N=111,579) were excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C34-C38 provide consistent cohort identification and exclusion criteria. The numbers are internally consistent across abstract and methods sections, and the exclusion criteria are clearly justified (congenital heart disease, reverse causality). The sibling-controlled design is well-described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "3ef0e140-ce2f-4ec6-906d-8c768ddd794b",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CVD patients had a median age of 60 years at diagnosis (57 years in sibling comparison), 59.2% were male (60.5% in sibling comparison), with median follow-up of 8.1 years in the sibling comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C41, C43, and C98 provide consistent demographic data. Minor differences between full cohort and sibling comparison are expected and explained by the subset nature of the sibling comparison. The data are clearly presented in Table 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "cc32174d-3c8a-4e8b-94fe-7c0b282f63ae",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CVD patients had higher rates of somatic disease history (15.6%) compared to siblings (8.8%) and controls (11.0%). The most common CVD diagnoses were ischemic heart disease (24.5%), arrhythmia/conduction disorders (24.2%), and hypertensive disease (17.3%). Most patients (69.7%) had only one CVD diagnosis during follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 describe baseline characteristics that are clearly presented in Table 1 and the results text. The higher comorbidity burden in CVD patients is expected and appropriately documented. These descriptive statistics are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "0a551a26-a371-49ff-9a00-6e88e0285852",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The crude incidence rates of psychiatric disorder were 7.1, 4.6, and 4.0 per 1000 person-years for CVD patients, siblings, and population controls, respectively, during up to 30 years of follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 report crude incidence rates showing a clear gradient: CVD patients > siblings > controls. This pattern is consistent with the study hypothesis and provides unadjusted baseline comparison data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "f0111273-85f3-4b4c-bbc8-2f4c1afc91ce",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CVD patients showed elevated psychiatric disorder risk compared to siblings, with HR=2.74 (95% CI 2.62-2.87) in the first year and HR=1.45 (95% CI 1.42-1.48) thereafter. Risk was highest immediately after diagnosis and declined rapidly within the first few months.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C51-C52, and C109 consistently report the primary finding with appropriate statistical measures. The temporal pattern is supported by Figure 1, showing time-varying hazard ratios. The confidence intervals are narrow given the large sample size, and the effect sizes are clinically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "48366d8f-6b0f-4dbb-9cd3-8be3c9e0b0fc",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Increased psychiatric disorder risk was observed for all types of psychiatric disorders and all CVD diagnoses, both within and beyond the first year of follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C53, and C110 report comprehensive associations across disorder subtypes. Figure 2 supports these findings with hazard ratios for specific psychiatric disorder categories. The consistency across all subtypes strengthens the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "63582818-114e-46fc-ad45-86d1dfd0d13a",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The positive association between CVD and psychiatric disorder was similar in sibling and population comparisons, though the HR for non-affective psychotic disorders beyond 1 year was smaller in sibling comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 compare the two control strategies. The overall similarity suggests limited familial confounding, while the specific difference for non-affective psychotic disorders suggests some familial factors may be relevant for this subtype. This nuanced finding is appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "2ff834e5-1ecc-4aa3-b14a-b380b049b791",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Similar positive associations were found across sex, age groups, calendar periods, and regardless of history of somatic diseases or family history of psychiatric disorders. Greater risk increments were observed in recent calendar years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C105-C107 report subgroup analyses showing consistency across demographic and clinical factors. The temporal trend toward greater risk in recent years may reflect improved detection or changing risk factors. These analyses support the robustness of the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "246a257c-55ce-4bf0-8d8b-7ad4506150bf",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Higher psychiatric disorder risk was found among all CVD patient groups, with the most marked elevation in cerebrovascular disease and heart failure patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 and C111 report CVD-type-specific analyses supported by Figure 3. The particularly high risk for cerebrovascular disease and heart failure is clinically plausible given the severity and functional impact of these conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "bbb9da82-2b56-4ef3-99a2-be3c0854913d",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CVD patients with additional cardiovascular comorbidities beyond 1 year showed greater psychiatric disorder risk compared to those without comorbidities (except heart failure patients). About 30% of CVD patients developed cardiovascular comorbidities during follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C77 address the impact of CVD multimorbidity. The exception for heart failure may reflect ceiling effects or competing mortality risks. The analysis appropriately treats comorbidity as time-varying and restricts to patients surviving beyond 1 year.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "c9ad0b29-69b2-44e4-beff-5a5bde41bdad",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Similar positive associations were found when including psychotropic drug use as a definition of psychiatric disorder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 reports a sensitivity analysis addressing potential underascertainment of milder psychiatric disorders. The consistency of findings strengthens confidence that results are not solely due to detection bias or registry limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "02468b71-0fb8-42b4-b929-d48d8e336866",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CVD patients with comorbid psychiatric disorder in the first year had HR=1.55 (95% CI 1.44-1.67) for subsequent CVD death compared to those without psychiatric comorbidity. Mortality rates were 9.2 vs 7.1 per 1000 person-years. 90.4% of CVD patients survived the first year.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C62-C65, C102, and C112 report the mortality analysis with appropriate statistical measures and survival data. Figure 4 supports these findings. The 55% increased mortality risk is clinically significant and the analysis appropriately restricts to 1-year survivors to avoid immortal time bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "3dfe968a-f255-4d9c-808a-78804c0bd7de",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Compromised CVD-specific survival was most pronounced for hypertensive disease, ischemic heart disease, and arrhythmia/conduction disorder. The survival deficit was confined to patients with comorbid psychotic disorders or alcohol/drug misuse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 provide detailed mortality analyses by CVD and psychiatric disorder subtypes. The specificity to severe psychiatric disorders (psychotic disorders, substance misuse) is clinically plausible and suggests these conditions may particularly impair treatment adherence or self-care.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "bb2f00db-cf11-491c-8e7f-40259017970b",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Associations remained similar after excluding individuals with liver cirrhosis and COPD (proxies for heavy alcohol consumption and smoking), suggesting residual confounding by unmeasured lifestyle factors may not substantially impact results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C104 report a sensitivity analysis addressing unmeasured confounding. While the proxies are imperfect, the consistency of findings provides some reassurance. However, the authors appropriately acknowledge this limitation cannot fully exclude residual confounding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "23ecfb87-6325-405c-a1e5-8a1c1fc1500c",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CVD patients are at elevated risk for subsequent psychiatric disorders independent of shared familial factors, history of somatic diseases, and cardiovascular comorbidities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C93 state the main conclusion. This is supported by the sibling comparison design (controlling familial factors), adjustment for somatic diseases, and time-varying analysis of CVD comorbidities. The consistency across multiple analytical approaches supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "c1835f48-ec41-451d-b623-8109d39a2911",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Comorbid psychiatric disorders in CVD patients are associated with higher cardiovascular mortality, suggesting surveillance and treatment of psychiatric comorbidities should be integral to CVD patient management, particularly for those with alcohol/drug misuse or psychotic disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C94-C95, and C108 present the clinical implications. The mortality analysis (HR=1.55) supports the recommendation for surveillance. However, this is observational data and cannot prove that treating psychiatric disorders will improve CVD outcomes\u2014this would require intervention studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "3055da4f-f3e7-4766-8eec-9206210b93ae",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study used Swedish national registers (Patient Register with complete inpatient coverage since 1987 and outpatient since 2001; Multi-Generation Register with familial information for residents born since 1932) to classify CVD and psychiatric disorders using ICD codes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 and C39-C40 describe the data sources and disease classification. These are well-established Swedish registers with documented validity. The classification schemes are cited to prior work, providing methodological transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "aaa426c8-e814-42f6-94cb-ee823e543fbb",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Study strengths include large nationwide sample size, prospective sibling-controlled design alleviating familial confounding, and complete follow-up with prospectively collected data minimizing selection and information bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 accurately describe methodological strengths. The sibling design is a major strength for controlling unmeasured familial confounding. The nationwide coverage and long follow-up are genuine advantages. However, the claim about \"complete\" follow-up should be qualified given the exclusion of primary care data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "15227c49-3eec-44e8-8f0d-d840635ba38a",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Study limitations include later inclusion of outpatient records potentially underestimating milder cases, missing primary care-only patients, and potential surveillance bias (CVD patients having more healthcare contact). Surveillance bias may partially explain early risk increases but is unlikely to explain sustained elevation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 appropriately acknowledge limitations. The authors reasonably argue surveillance bias cannot fully explain persistent associations over 30 years. However, the magnitude of surveillance bias contribution remains uncertain, particularly for the first-year findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "41c8db46-2554-4393-8674-7da4dd25e9be",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior research has shown associations between serious diseases (cancer, CVD) and psychiatric disorders/mortality, but previous CVD-psychiatric disorder studies had limitations including selected populations, limited follow-up, and inadequate control of reverse causality and confounding factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 accurately characterize prior literature and its limitations. The citations appear appropriate. This contextualizes the study's contribution in addressing these methodological gaps through population-based design, sibling controls, and exclusion of prevalent psychiatric disorders.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "670b91c1-abab-4e16-9607-3116880df837",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Previous studies have documented associations between various CVDs (hypertension, heart disease, stroke) and psychiatric outcomes (depression, anxiety, stress disorders), with evidence of genetic correlations and shared early-life environmental factors between CVD and psychiatric disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 and C68-C76 summarize prior literature on CVD-psychiatric disorder associations and potential shared etiologies. These appropriately contextualize the current findings and the rationale for sibling-controlled design to address familial confounding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "55baca6c-58c4-49d3-ad6e-78f83895f1b8",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Proposed mechanisms linking CVD and psychiatric disorders include stress reactions to life-threatening diagnosis, biological alterations (cardiovascular risk factors, autonomic dysfunction, endothelial dysfunction), and chronic inflammation with elevated inflammatory biomarkers observed in both conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C83 discuss potential mechanisms but are largely speculative based on cited literature. The current study is observational and cannot establish mechanisms. While the proposed pathways are biologically plausible, they remain hypotheses requiring mechanistic studies for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    },
+    {
+      "id": "c9b78581-2cd7-4a53-8b67-5f6a6f2c55f9",
+      "content_id": "8e571584-09db-4702-90ce-a6ce5be24178",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The study received ethical approval from Stockholm's Ethical Vetting Board, and funders had no role in study design, data collection, analysis, interpretation, or writing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 document ethical approval and funding independence. These are standard reporting elements that are clearly stated in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:33.828984Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "80fbef34-d2e3-46da-bedb-b554a63fc20f",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "8a341003-836e-4d02-8b30-940ef284fc73",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "7549f868-45f3-4e83-9409-96d80f475493",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "76a84acf-c053-46c1-9bf0-d0da1036b463",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "bc4f4084-1dc9-4dc5-a478-5b5a8d51fe59",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "49103c3b-ba29-4518-8508-2e67e6b7e707",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "d13896cb-8d3f-4902-953e-197630555921",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "3c2ada38-d826-45a5-997c-74f20afda465",
+      "result_id": "dc30593a-de1f-4ccf-b706-e91942f968b1"
+    },
+    {
+      "claim_id": "9b3cb1ac-ec5d-4a71-a248-934563fb3a16",
+      "result_id": "3ef0e140-ce2f-4ec6-906d-8c768ddd794b"
+    },
+    {
+      "claim_id": "7a5adf9c-e819-4a37-a273-125c5aee8876",
+      "result_id": "3ef0e140-ce2f-4ec6-906d-8c768ddd794b"
+    },
+    {
+      "claim_id": "d446aafb-b2ca-4715-b460-75514c3a6aa9",
+      "result_id": "3ef0e140-ce2f-4ec6-906d-8c768ddd794b"
+    },
+    {
+      "claim_id": "b9d0be72-1343-4630-9075-e4491d79e2f3",
+      "result_id": "3ef0e140-ce2f-4ec6-906d-8c768ddd794b"
+    },
+    {
+      "claim_id": "9a8602b2-8f0e-47a8-aeb2-2cefcac2f649",
+      "result_id": "3ef0e140-ce2f-4ec6-906d-8c768ddd794b"
+    },
+    {
+      "claim_id": "f5373f48-8300-4aea-94d5-2b1fc8a2ef0d",
+      "result_id": "cc32174d-3c8a-4e8b-94fe-7c0b282f63ae"
+    },
+    {
+      "claim_id": "9b53d6dc-4b05-4814-95a0-2ff6f54bb9e5",
+      "result_id": "cc32174d-3c8a-4e8b-94fe-7c0b282f63ae"
+    },
+    {
+      "claim_id": "a9ac005a-1190-43ab-82f3-b624a6fe1f5a",
+      "result_id": "cc32174d-3c8a-4e8b-94fe-7c0b282f63ae"
+    },
+    {
+      "claim_id": "b7af3239-75dd-476f-b9cd-a84bce3dc365",
+      "result_id": "cc32174d-3c8a-4e8b-94fe-7c0b282f63ae"
+    },
+    {
+      "claim_id": "d35b80d8-2770-4a96-afb9-fdf7986a0c34",
+      "result_id": "cc32174d-3c8a-4e8b-94fe-7c0b282f63ae"
+    },
+    {
+      "claim_id": "9cda0281-2b4c-4de8-b00d-944306393eb1",
+      "result_id": "cc32174d-3c8a-4e8b-94fe-7c0b282f63ae"
+    },
+    {
+      "claim_id": "0316b5fa-61a5-4083-a977-1de2aa6d5e69",
+      "result_id": "0a551a26-a371-49ff-9a00-6e88e0285852"
+    },
+    {
+      "claim_id": "74a8b338-63b3-4196-b263-22374ebe9a16",
+      "result_id": "0a551a26-a371-49ff-9a00-6e88e0285852"
+    },
+    {
+      "claim_id": "77f6d579-39bd-4349-a84f-2bcccc2a61bc",
+      "result_id": "0a551a26-a371-49ff-9a00-6e88e0285852"
+    },
+    {
+      "claim_id": "69341067-f599-45a0-ac1b-0510b9ef4446",
+      "result_id": "f0111273-85f3-4b4c-bbc8-2f4c1afc91ce"
+    },
+    {
+      "claim_id": "baf20498-2b5d-4ccf-8a29-c69c1e0924e5",
+      "result_id": "f0111273-85f3-4b4c-bbc8-2f4c1afc91ce"
+    },
+    {
+      "claim_id": "64fee04a-b129-4dff-a0df-0f8bfe86b79d",
+      "result_id": "f0111273-85f3-4b4c-bbc8-2f4c1afc91ce"
+    },
+    {
+      "claim_id": "f03d60dd-4075-4361-bce7-76e597709be1",
+      "result_id": "f0111273-85f3-4b4c-bbc8-2f4c1afc91ce"
+    },
+    {
+      "claim_id": "298a904a-30fe-4a2f-a1d1-29294fed76e2",
+      "result_id": "f0111273-85f3-4b4c-bbc8-2f4c1afc91ce"
+    },
+    {
+      "claim_id": "d4553547-aa10-41b3-be9c-fe9af6071f2e",
+      "result_id": "48366d8f-6b0f-4dbb-9cd3-8be3c9e0b0fc"
+    },
+    {
+      "claim_id": "0566d192-4a25-44b1-a23e-5f9f3d058156",
+      "result_id": "48366d8f-6b0f-4dbb-9cd3-8be3c9e0b0fc"
+    },
+    {
+      "claim_id": "aa95d89d-85c1-45b0-94d9-4e45fdd5e5b2",
+      "result_id": "48366d8f-6b0f-4dbb-9cd3-8be3c9e0b0fc"
+    },
+    {
+      "claim_id": "2c120416-d466-4dca-9e70-3c286a0f2ca5",
+      "result_id": "48366d8f-6b0f-4dbb-9cd3-8be3c9e0b0fc"
+    },
+    {
+      "claim_id": "88174dfb-199f-4f8a-b768-7da7bf2672e9",
+      "result_id": "63582818-114e-46fc-ad45-86d1dfd0d13a"
+    },
+    {
+      "claim_id": "512e6198-71e8-4345-89aa-d853f153c74f",
+      "result_id": "63582818-114e-46fc-ad45-86d1dfd0d13a"
+    },
+    {
+      "claim_id": "d0908641-4815-4aaa-928e-0cebc0e3e060",
+      "result_id": "2ff834e5-1ecc-4aa3-b14a-b380b049b791"
+    },
+    {
+      "claim_id": "c659bccc-cf8b-4965-a875-fd08941561e5",
+      "result_id": "2ff834e5-1ecc-4aa3-b14a-b380b049b791"
+    },
+    {
+      "claim_id": "d3c958e5-5db4-4774-81d0-22504bf2e63d",
+      "result_id": "2ff834e5-1ecc-4aa3-b14a-b380b049b791"
+    },
+    {
+      "claim_id": "d8e5907a-d8d1-4fd6-9cfd-be966cb8d86b",
+      "result_id": "2ff834e5-1ecc-4aa3-b14a-b380b049b791"
+    },
+    {
+      "claim_id": "b35b059e-52cf-43c9-9231-eecd6ddb25b1",
+      "result_id": "2ff834e5-1ecc-4aa3-b14a-b380b049b791"
+    },
+    {
+      "claim_id": "4bd0a943-2935-4437-b254-0ab709f08150",
+      "result_id": "246a257c-55ce-4bf0-8d8b-7ad4506150bf"
+    },
+    {
+      "claim_id": "36795a6e-c24c-40e5-90a0-95c959156274",
+      "result_id": "246a257c-55ce-4bf0-8d8b-7ad4506150bf"
+    },
+    {
+      "claim_id": "ae356fb2-3dd3-4d5d-9098-814531f3aa56",
+      "result_id": "246a257c-55ce-4bf0-8d8b-7ad4506150bf"
+    },
+    {
+      "claim_id": "e1eb344f-7d08-4eab-927e-261d4ff1f35c",
+      "result_id": "bbb9da82-2b56-4ef3-99a2-be3c0854913d"
+    },
+    {
+      "claim_id": "84ab19b7-0fe6-4f84-b0a7-6b4918591784",
+      "result_id": "bbb9da82-2b56-4ef3-99a2-be3c0854913d"
+    },
+    {
+      "claim_id": "819166b0-0393-4578-88b5-a5122733fd9c",
+      "result_id": "c9ad0b29-69b2-44e4-beff-5a5bde41bdad"
+    },
+    {
+      "claim_id": "40ade2fe-c48a-43b2-bac2-772cec6967a2",
+      "result_id": "02468b71-0fb8-42b4-b929-d48d8e336866"
+    },
+    {
+      "claim_id": "404a6a5b-e946-40b0-afcd-f595a3d856a9",
+      "result_id": "02468b71-0fb8-42b4-b929-d48d8e336866"
+    },
+    {
+      "claim_id": "53bd069f-594d-48b6-9a2f-5dc960f6942e",
+      "result_id": "02468b71-0fb8-42b4-b929-d48d8e336866"
+    },
+    {
+      "claim_id": "add288f0-e8b2-4b5d-98f0-0481bd66f477",
+      "result_id": "02468b71-0fb8-42b4-b929-d48d8e336866"
+    },
+    {
+      "claim_id": "14ddcbcc-9616-4d0b-95cf-d5e172a5bd54",
+      "result_id": "02468b71-0fb8-42b4-b929-d48d8e336866"
+    },
+    {
+      "claim_id": "e73cfb92-406f-4bac-808b-0e2a1c1422d2",
+      "result_id": "02468b71-0fb8-42b4-b929-d48d8e336866"
+    },
+    {
+      "claim_id": "a1c54a66-4490-4f86-be37-f267540c3996",
+      "result_id": "02468b71-0fb8-42b4-b929-d48d8e336866"
+    },
+    {
+      "claim_id": "15b16cd9-da26-49a9-be9b-dddd3cfac129",
+      "result_id": "3dfe968a-f255-4d9c-808a-78804c0bd7de"
+    },
+    {
+      "claim_id": "c7429536-17b2-485d-a44f-816cc3f93428",
+      "result_id": "3dfe968a-f255-4d9c-808a-78804c0bd7de"
+    },
+    {
+      "claim_id": "e7197d91-e1c9-405d-8344-00a1b0d0848b",
+      "result_id": "bb2f00db-cf11-491c-8e7f-40259017970b"
+    },
+    {
+      "claim_id": "f6b11536-a850-4ada-b9a2-0f3f396bbed5",
+      "result_id": "bb2f00db-cf11-491c-8e7f-40259017970b"
+    },
+    {
+      "claim_id": "2893722d-3860-43db-b59a-0f20fabccb7e",
+      "result_id": "23ecfb87-6325-405c-a1e5-8a1c1fc1500c"
+    },
+    {
+      "claim_id": "378f550d-65f1-4514-9a2a-f8c997fca52e",
+      "result_id": "23ecfb87-6325-405c-a1e5-8a1c1fc1500c"
+    },
+    {
+      "claim_id": "c1e52ef4-734f-4f30-8e26-1d4911314f6d",
+      "result_id": "c1835f48-ec41-451d-b623-8109d39a2911"
+    },
+    {
+      "claim_id": "fd778137-4ce2-49e3-8c47-e7be56bdee07",
+      "result_id": "c1835f48-ec41-451d-b623-8109d39a2911"
+    },
+    {
+      "claim_id": "3d951a49-e08f-45d6-8802-fc26335f146f",
+      "result_id": "c1835f48-ec41-451d-b623-8109d39a2911"
+    },
+    {
+      "claim_id": "68609758-748e-4dfc-b30f-526d611daf4c",
+      "result_id": "c1835f48-ec41-451d-b623-8109d39a2911"
+    },
+    {
+      "claim_id": "49e6d30a-20f7-4738-bf11-b5cf9decaf6a",
+      "result_id": "3055da4f-f3e7-4766-8eec-9206210b93ae"
+    },
+    {
+      "claim_id": "2c1cdcc4-b4ad-4f08-8e08-a5d732144e92",
+      "result_id": "3055da4f-f3e7-4766-8eec-9206210b93ae"
+    },
+    {
+      "claim_id": "f7d69ff6-3bd2-4003-851e-9ebaf45e367e",
+      "result_id": "3055da4f-f3e7-4766-8eec-9206210b93ae"
+    },
+    {
+      "claim_id": "7ad5de1d-a802-4741-8f5c-dade21e91309",
+      "result_id": "3055da4f-f3e7-4766-8eec-9206210b93ae"
+    },
+    {
+      "claim_id": "d5d0adb4-1803-4343-832c-2d567e695f5e",
+      "result_id": "3055da4f-f3e7-4766-8eec-9206210b93ae"
+    },
+    {
+      "claim_id": "2177872d-9c3f-4bef-9116-f1b4df972347",
+      "result_id": "aaa426c8-e814-42f6-94cb-ee823e543fbb"
+    },
+    {
+      "claim_id": "428beb50-faad-4974-a5d8-884f8d02545f",
+      "result_id": "aaa426c8-e814-42f6-94cb-ee823e543fbb"
+    },
+    {
+      "claim_id": "cbca2dcd-9470-4847-8ccf-0d1be88720e7",
+      "result_id": "aaa426c8-e814-42f6-94cb-ee823e543fbb"
+    },
+    {
+      "claim_id": "b737f7b2-1b9f-4591-a17b-63154d87ec8e",
+      "result_id": "aaa426c8-e814-42f6-94cb-ee823e543fbb"
+    },
+    {
+      "claim_id": "c12e68b6-027c-4482-aa05-14a861833ace",
+      "result_id": "15227c49-3eec-44e8-8f0d-d840635ba38a"
+    },
+    {
+      "claim_id": "6e392839-a94c-477c-b925-b00ca9d6b01f",
+      "result_id": "15227c49-3eec-44e8-8f0d-d840635ba38a"
+    },
+    {
+      "claim_id": "e9ea33c4-f4dd-435e-8471-8bb467750237",
+      "result_id": "15227c49-3eec-44e8-8f0d-d840635ba38a"
+    },
+    {
+      "claim_id": "f4e9347c-d41c-4009-afd0-7bbda603e2f5",
+      "result_id": "15227c49-3eec-44e8-8f0d-d840635ba38a"
+    },
+    {
+      "claim_id": "cb6c2666-dd5e-4afa-bef5-143430711dd3",
+      "result_id": "15227c49-3eec-44e8-8f0d-d840635ba38a"
+    },
+    {
+      "claim_id": "2d661592-4a3c-4038-ba2a-338385edd832",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "98922f55-4062-4ad7-a7a6-75d365dcfb58",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "9fc898c0-0711-4f77-92ef-88f6ff77a4ab",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "8159c3cc-24fa-4a73-a534-f85d0dbdd194",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "d0888c91-9bcd-4463-8b8b-753b18199a33",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "6bf6a427-8318-4bc8-aba8-4e2b26a63087",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "3442c9f4-777f-49f5-9563-26e75f8f355a",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "376d703a-ccfd-4d16-916d-0771f17c5e9f",
+      "result_id": "41c8db46-2554-4393-8674-7da4dd25e9be"
+    },
+    {
+      "claim_id": "6ba9e145-7eb5-42e3-98a7-6d2d1fa625bd",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "d2aaea0c-78b7-4500-a080-f0502a4df14d",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "90f230e2-a421-4593-b68f-1c4c915d47df",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "6839417a-1622-41b7-a3b4-5a46946df3d8",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "032168bc-347d-46df-9341-f0cf399981fe",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "abeb9b71-b888-4a3b-93f6-e66ec348edd2",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "97d9d6f6-de3e-4e09-9be4-e1b2621c9c5b",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "fd3ec77e-6b9d-484a-b7a8-902f36beafa1",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "e769bc37-6890-45e2-aede-4678e91ecc39",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "5f4cde56-d376-4430-9610-6d85e1b38fe9",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "6a5a8466-3d0c-443a-968c-e0df4d0d2e85",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "85e9146a-d9eb-4317-9476-efe9b21c3b8c",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "9895da74-80e3-422f-b561-db0a71abfdf9",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "36c194bd-7726-44a6-b9a3-144463541cc7",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "a3f25dcf-081a-4226-8f91-9097d53eb61a",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "99ed0a7d-59f5-4c1e-b31b-fe5ecaa38d32",
+      "result_id": "670b91c1-abab-4e16-9607-3116880df837"
+    },
+    {
+      "claim_id": "ffb891a7-ea5d-4de9-9c64-9ac1bc068fd9",
+      "result_id": "55baca6c-58c4-49d3-ad6e-78f83895f1b8"
+    },
+    {
+      "claim_id": "0b541975-23e8-415a-9030-1233f2dc7b1b",
+      "result_id": "55baca6c-58c4-49d3-ad6e-78f83895f1b8"
+    },
+    {
+      "claim_id": "e742f76f-aa54-45b0-a4b5-74a8dd0808e8",
+      "result_id": "55baca6c-58c4-49d3-ad6e-78f83895f1b8"
+    },
+    {
+      "claim_id": "0d056aa9-6396-40a1-bd55-8fdb7209fe04",
+      "result_id": "55baca6c-58c4-49d3-ad6e-78f83895f1b8"
+    },
+    {
+      "claim_id": "35c9b100-ab5e-43d0-a2fa-e622caa79bc8",
+      "result_id": "55baca6c-58c4-49d3-ad6e-78f83895f1b8"
+    },
+    {
+      "claim_id": "8a672fd1-4bf2-460e-83a0-6194b556fcaa",
+      "result_id": "55baca6c-58c4-49d3-ad6e-78f83895f1b8"
+    },
+    {
+      "claim_id": "2762657e-dde0-4e77-b4a9-e444729231ca",
+      "result_id": "c9b78581-2cd7-4a53-8b67-5f6a6f2c55f9"
+    },
+    {
+      "claim_id": "f7be1a33-f392-4855-97d5-1bf58054d6d3",
+      "result_id": "c9b78581-2cd7-4a53-8b67-5f6a6f2c55f9"
+    }
+  ],
+  "comparisons": []
+}

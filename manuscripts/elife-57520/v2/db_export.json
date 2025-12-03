@@ -1,0 +1,1790 @@
+{
+  "submission": {
+    "id": "3f229792-187a-4dc2-9570-e03c3618edab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:13:06.273675Z",
+    "updated_at": "2025-12-03T16:13:06.273675Z"
+  },
+  "content": [
+    {
+      "id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "submission_id": "3f229792-187a-4dc2-9570-e03c3618edab",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell transcriptomics reveals functionally specialized vascular endothelium in brain\n\n## Authors\n\n- Hyun-Woo Jeong<sup>1</sup> ([ORCID: 0000-0002-6976-6739](https://orcid.org/0000-0002-6976-6739)) \u2020\n- Rodrigo Di\u00e9guez-Hurtado<sup>1</sup> ([ORCID: 0000-0002-2055-599X](https://orcid.org/0000-0002-2055-599X))\n- Hendrik Arf<sup>1</sup> ([ORCID: 0000-0002-2038-705X](https://orcid.org/0000-0002-2038-705X))\n- Jian Song<sup>2</sup>\n- Hongryeol Park<sup>1</sup>\n- Kai Kruse<sup>1</sup>\n- Lydia Sorokin<sup>2</sup> ([ORCID: 0000-0001-7704-7921](https://orcid.org/0000-0001-7704-7921))\n- Ralf H Adams<sup>1</sup> ([ORCID: 0000-0003-3031-7677](https://orcid.org/0000-0003-3031-7677)) \u2020\n\n### Affiliations\n\n1. Department of Tissue Morphogenesis, Max Planck Institute for Molecular Biomedicine M\u00fcnster Germany ([ROR:040djv263](https://ror.org/040djv263))\n2. Institute of Physiological Chemistry and Pathobiochemistry, University of M\u00fcnster M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n3. Cells-in-Motion Interfaculty Centre (CiMIC), University of M\u00fcnster M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe blood-brain barrier (BBB) limits the entry of leukocytes and potentially harmful substances from the circulation into the central nervous system (CNS). While BBB defects are a hallmark of many neurological disorders, the cellular heterogeneity at the neurovascular interface, and the mechanisms governing neuroinflammation are not fully understood.Through single-cell RNA sequencing of non-neuronal cell populations of the murine cerebral cortex during development, adulthood, ageing, and neuroinflammation, we identify reactive endothelial venules, a compartment of specialized postcapillary endothelial cells that are characterized by consistent expression of cell adhesion molecules, preferential leukocyte transmigration, association with perivascular macrophage populations, and endothelial activation initiating CNS immune responses. Our results provide novel insights into the heterogeneity of the cerebral vasculature and a useful resource for the molecular alterations associated with neuroinflammation and ageing.\n\n## Introduction\n\nThe blood-brain barrier (BBB) controls the entry of a wide range of molecules from the circulation into the central nervous system (CNS) and thereby maintains the appropriate chemical and cellular composition of the neuronal \u2018milieu\u2019, which is required for the correct function of synapses and neuronal circuits (Zlokovic, 2008; Zlokovic, 2010). The BBB also protects the brain against the entry of leukocytes and potentially harmful substances, a function that is compromised in conditions such as multiple sclerosis, cancer, after stroke, or in response to physical brain damage (Arvanitis et al., 2020; Lopes Pinheiro et al., 2016; Thal and Neuhaus, 2014). The neurovascular unit, the anatomical structure underlying the BBB, comprised different cell types including endothelial cells (ECs), pericytes, and astrocytes, which are all located in close proximity and presumably affect each other through reciprocal interactions (Armulik et al., 2011; Liebner et al., 2018).\n\nPrevious work has established that leukocyte extravasation \u2013 the exit from the blood stream into the tissue \u2013 generally occurs in postcapillary venules of the skin, muscle, and mesentery, whereas in lung and liver this process is confined to microcapillaries (Strell and Entschladen, 2008). Even in the absence of neuroinflammation, peripherally activated circulating T cells can cross the endothelium of postcapillary vessels and reach the adjacent subarachnoid space. Here, T cells can encounter tissue resident antigen-presenting cells (APCs), but they are unable to traverse the astrocytic basement membrane and glia limitans (Mapunda et al., 2022). In the absence of cognate antigen presented by APCs, T cells undergo apoptosis or re-enter the circulation (Mastorakos and McGavern, 2019). Accordingly, immune surveillance and the initiation of CNS immune responses are highly dependent on the cellular and molecular components of the postcapillary venules and the perivascular environment, but we currently lack a comprehensive understanding of the underlying molecular mechanisms.\n\nTranscriptional profiling has recently provided important insights into the cellular composition of the CNS and the arterial-venous zonation of brain vessels during postnatal development and adult homeostasis (Sabbagh et al., 2018; Vanlandewijck et al., 2018; Zeisel et al., 2015). On the other hand, brain ECs demonstrate similar gene expression changes in various BBB dysfunction models, suggesting a common mechanism for compromised BBB function throughout different neurological disorders (Munji et al., 2019). Despite these important insights, the molecular heterogeneity of vascular cells and their dynamic modulation, which is critical for BBB function (Villabona-Rueda et al., 2019), remains insufficiently understood. One critical technical issue is the low abundance of vascular cells relative to neural cell types in the brain.\n\nIn this study, we have established a protocol for the depletion of neurons and oligodendrocytes prior to droplet-based single-cell transcriptome analysis of non-neuronal cells in mouse cerebral cortex. We have generated a comprehensive resource of vascular gene expression at single-cell resolution during postnatal development, adulthood, ageing, and in the demyelinating neuroinflammatory condition of experimental autoimmune encephalomyelitis (EAE), a mouse model of human multiple sclerosis (Ben-Nun et al., 2014). This resulting data, which can be interrogated at single-cell.mpi-muenster.mpg.de, provides useful insights into the cellular and molecular heterogeneity of blood vessels in brain and permits identification of functionally specialized reactive postcapillary venules (REVs), which we propose to regulate the infiltration of activated leukocytes during neuroinflammation. Using a computational framework, we have also constructed a detailed cell-to-cell intercommunication map of the brain vasculature.\n\n## Results\n\n### Single-cell RNA-sequencing of non-neuronal cell population in mouse cerebral cortex\n\nTo enrich vascular and vessel wall-associated cell types while preserving the heterogeneity of these populations, we depleted myelin-associated neurons and oligodendrocytes, the most abundant cell types in CNS, using a bovine serum albumin (BSA)-gradient method (Figure 1\u2014figure supplement 1A, B). Following quality control and data trimming (Figure 1\u2014figure supplement 1C), a total of 29,406 single cells from three different postnatal ages, juvenile (10,796 cells, postnatal day 10), adult (9871 cells, 7\u201311 weeks), and aged (8739 cells, 18 months) were analyzed further (Figure 1\u2014figure supplement 2A). Analysis by a nonlinear dimensionality reduction technique, uniform manifold approximation and projection (UMAP) (Figure 1A\u2013C), and unsupervised hierarchical clustering (Figure 1D and E) established six different non-neuronal cell types, namely ECs, microglia (Micro), astroependymal cells (Astro), perivascular macrophages (PVMs), mural cells (Mural), and cerebral fibroblast-like cells (Fibro). Each cell type was successfully annotated by known marker genes such as Flt1 for ECs, Tmem119 for microglia, Folr1 for astroependymal cells, Mrc1 for PVMs, Rgs5 for mural cells, and Nov for the Fibro population (Figure 1E and F). All these markers are expressed specifically and continuously in all age groups analyzed (Figure 1\u2014figure supplement 2B-D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig1-v2.jpg)\n\n**Figure 1.:** (A) Uniform manifold approximation and projection (UMAP) plot of 29,406 myelin-depleted single cells from murine cerebral cortex. Colors represent endothelial cells (EC), microglia (Micro), astroependymal cells (Astro), perivascular macrophage (PVM), mural cell (Mural), and cerebral fibroblast (Fibro). (B) Split UMAP plots showing separated cells from juvenile, adult, and aged samples, respectively. (C) Bar plots show the relative frequency of cell types for each age. (D) Dendrogram describing the taxonomy of all identified non-neuronal cell types. (E) Heatmap indicates the top 50 marker genes for each cell type. (F) Expression distribution of the top marker genes for each cell type projected onto the UMAP plot. Color represents the scaled expression level.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Workflow for the enrichment of blood vessel-associated cell types from cerebral cortex of juvenile (P10), adult (7\u201311 weeks), aged (18 months), and experimental autoimmune encephalomyelitis (EAE; 7\u201311 weeks, peak of disease) mice. (B) Flow cytometry plots depicting enrichment of endothelial cells from cerebral cortex of P10 Cdh5-H2BGFP/tdTomato transgenic mice using different tissue dissociation methods. (C) Pipeline for the single-cell RNA-seq data analysis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Violin plots displaying number of genes (nFeature_Gene), number of unique molecular identifiers (UMI; nFeature_UMI), and percentage of mitochondrial genes (percent.mito) in juvenile, adult, and aged samples. (B) Dot plot showing the expression of top cell type-specific genes, with the dot size representing the percentage of cells expressing the gene, and colors representing the average expression of the gene within a cluster. (C\u2013D) The top cell type-specific genes are shown in violin plots (C) and uniform manifold approximation and projection plots (D). Color represents the scaled expression level.\n\n### Unsupervised clustering reveals a diversity of EC subtypes\n\nTo gain insight into the heterogeneity of vascular and perivascular cell types, we first analyzed ECs during postnatal development using UMAP dimensionality reduction. Juvenile ECs were annotated to six different subclusters corresponding to arterial, capillary/precapillary arteriolar (CapA), capillary/postcapillary venular (CapV), venous, mitotic, and tip ECs (Figure 2\u2014figure supplement 1A, B). Trajectory analysis indicates that there are one mitotic axis (M) and a tip cell axis (T), which are closely associated with venous populations (V), whereas arterial ECs (A) are found in a different branch of polarization (Figure 2\u2014figure supplement 1C). Distinct transcriptional profiles reveal the expression of venous genes in tip and mitotic ECs (Figure 2\u2014figure supplement 1D, E), while these two populations are also distinguished by specifically expressed transcripts such as Mcam for tip cells and Top2a for mitotic cells (Figure 2\u2014figure supplement 1F). Pseudotime reconstruction analysis reveals a continuum of venous-to-arterial gene expression and also confirmed the presence of venous attributes in tip and mitotic ECs (Figure 2\u2014figure supplement 1G-J), consistent with previous findings that tip and mitotic ECs emerge from veins and are, in part, incorporated into arteries (Pitulescu et al., 2017; Xu et al., 2014).\n\nNext, we analyzed adult and aged EC populations. Although there was no striking change in gene expression profiles between adult and aged ECs (Spearman\u2019s correlation coefficient = 0.9852), 407 genes were identified as differentially expressed (Padj <0.001, Figure 2\u2014figure supplement 2A). Gene set enrichment analysis (GSEA) indicates that genes related to ECM-receptor interaction, focal adhesion, and the P53 signalling pathway are enriched in adult ECs, while genes related to cell adhesion molecules, chemokine signalling, and T cell receptor signalling are enriched in aged ECs (Figure 2\u2014figure supplement 2B, C), indicating that ECs undergo molecular changes toward a proinflammatory state during ageing, which is consistent with recently published work (Chen et al., 2020).\n\nTo investigate EC subtypes during homeostasis, we performed subclustering analysis of adult and aged ECs together. As expected, tip and mitotic EC populations are largely absent in these samples, whereas venous, CapV, CapA, and arterial ECs are clearly segregated (Figure 2A and B and Figure 2\u2014figure supplement 3A, B). Interestingly, we found one additional minor but distinctive subpopulation of venous ECs (Figure 2A and B; boxed area), which we subsequently termed REV. These ECs are characterized by the expression of Icam1 and Vcam1, encoding intercellular adhesion molecules (ICAMs), and the endothelial activation or dysfunction markers Vwf and Irf1 (Figure 2C and D). It has been reported that endothelial expression of ICAM-1 is essential for transcellular diapedesis (Abadier et al., 2015) but is suppressed by sonic hedgehog signalling in the CNS during homeostasis, thereby limiting infiltration of circulating inflammatory leukocytes through the BBB (Alvarez et al., 2011). However, the small subpopulation of venous ECs we found from the single-cell transcriptome data shows consistent expression of Icam1 even in immunologically na\u00efve conditions both in adult and aged mice (Figure 2D and E). To further characterize the Icam1-expressing REVs, we performed gene ontology (GO) term enrichment analysis and revealed that 663 genes (Padj <0.05) predominantly expressed in this cell population were significantly enriched in biological processes involving inflammatory/immune responses, cell adhesion, and leukocyte migration and adhesion (Figure 2F). An alternative, nonlinear dimensionality reduction method called Markov affinity-based graph imputation of cells (MAGIC) (van Dijk et al., 2018) also shows a distinct subpopulation of venous ECs with predominant expression of Icam1 and Irf1 (Figure 2G and Figure 2\u2014figure supplement 3C), excluding the possibility that the heterogeneity of cerebral venous ECs is a computational artifact.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Uniform manifold approximation and projection (UMAP) plots of 10,741 adult and aged mouse ECs. Colors represent cell subclusters (A) or age groups (B), respectively. Box indicates ICAM-1+ reactive endothelial venule (REV) ECs. (C) UMAP plots depicting the expression of ICAM-1+ EC-enriched genes Vcam1, Icam1, Irf1, and Vwf. Color represents scaled expression level. (D) Dot plot showing the expression of top subcluster-specific genes, with the dot size representing the percentage of cells expressing the gene and colors representing the average expression of the gene within a cluster. (E) Bar plot showing frequency of subclusters for adult and aged ECs. (F) Top gene ontology GO0 biological process terms enriched in REV-specific genes. (G) Three-dimensional Principal component analysis (PCA) plots generated by Markov affinity-based graph imputation of cells. Cells are colored representing the expression of selected subtype marker genes (green: Alkbh5 and Tmsb10 for venous ECs; red: Alpl and Fbln5 for arterial ECs; blue: Icam1 and Vcam1 for REVs). (H) Representative immunofluorescence image for ICAM-1 in adult Cdh5-H2BGFP/tdTomato murine brain cortex. Scale bar, 500 \u03bcm. Panels at the bottom show isolated ICAM-1 signal for each area marked in the overview image, representing different cortical areas. Scale bars, 150 \u03bcm. (I) Immunostaining showing alpha-smooth muscle actin (\u03b1SMA), CD31, and ICAM-1 expression. Panels on the right show ICAM-1 signal for arteriole and venule, respectively. Scale bars, 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Uniform manifold approximation and projection (UMAP) plots of juvenile ECs. Colors represent EC subclusters (A) or cell cycle phases (B). (C) Trajectory analysis of juvenile ECs depicting centrally located venous ECs (V) and polarized differentiation paths of mitotic (M), tip (T), capillary (Cap), and arterial (A) ECs. Contour plots indicate two-dimensional Gaussian kernel density estimates, and colors represent each subcluster. (D) Heatmap of the top 12 marker genes for each subcluster of juvenile ECs. (E\u2013F) UMAP plots of marker genes for each subcluster in juvenile ECs. (G\u2013J) Kinetic plots showing relative expression of venous to arterial marker genes across pseudotime. Colors represent subclusters shown in (A).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Scatter dot plot of differentially expressed genes (yellow dots, Padj <0.001) between ECs from adult and aged samples (407 genes). The 25 most significant genes for each sample (red dots) are listed. (B) Representative gene set enrichment analysis plots for overrepresented Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway gene sets in adult or aged ECs. (C) Violin plots of the top 30 differentially expressed genes in adult (red) and aged ECs (green).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Uniform manifold approximation and projection (UMAP) plots depicting the expression of representative marker genes for each subcluster: Alkbh5 (Venous), Tmsb10 (CapV), Alpl (CapA), and Fbln5 (Arterial). Color key indicates scaled expression. (B) Heatmap of the top 12 marker genes for each subcluster of homeostatic ECs. (C) Three-dimensional PCA plots generated by Markov affinity-based graph imputation of cells depicting the expression of selected subtype marker genes. Color represents the scaled expression. (D) Intercellular adhesion molecule-1 (ICAM-1) immunostaining in P10 juvenile Cdh5-H2BGFP/tdTomato brain cortex. Scale bars, 100 \u03bcm (top), 25 \u03bcm (bottom). (E) Quantification of ICAM-1+ vessel diameter in brain cortical parenchyma. Error bars represent mean \u00b1 s.e.m. from three animals. (F) Frequency of Icam1/Vcam1 double-positive ECs among all ECs at different ages, according to the single-cell RNA-seq data. (G) Immunofluorescence image showing CD3+ lymphocytes and ICAM-1+ vessels in the cerebral cortex 2 hr after PBS (Control) or lipopolysaccharides (LPS) injection. Scale bar, 50 \u03bcm (middle), 100 \u03bcm (top and bottom).\n\nUsing immunostaining on 100-\u03bcm thick brain vibratome sections from transgenic reporter mice expressing nuclear green fluorescent protein (GFP) and membrane Tomato specifically in ECs (Cdh5-H2BGFP/tdTomato) (Jeong et al., 2017), we confirmed that ICAM-1+ REVs are present throughout the cortex of immunologically unchallenged juvenile (Figure 2\u2014figure supplement 3D) and adult mouse brain (Figure 2H). ICAM-1+ vessels in the brain parenchyma are predominantly venules with a diameter ranging from 8 to 50 \u03bcm (Figure 2\u2014figure supplement 3E) and low-to-negative coverage by alpha-smooth muscle actin+ (\u03b1SMA+) mural cells (Figure 2I), suggesting that they represent a subpopulation of smaller venules, potentially postcapillary venules where leukocyte extravasation into the brain predominantly occurs. While it was not possible to detect VCAM-1 staining in na\u00efve brains, the cellular frequency of Icam1 and Vcam1 double-positive ECs ranges from 1 to 3% of total ECs in all stages analyzed (Figure 2\u2014figure supplement 3F). Postcapillary venules are the main site of leukocyte extravasation, in most tissues and in the brain, are associated with a perivascular space, defined by the inner endothelial and outer parenchyma or astroglial basement membranes, where activated leukocytes accumulate before entry into the brain parenchyma (Sixt et al., 2001; Zhang et al., 2020). To test whether the ICAM-1+ subpopulation is related to leukocyte trafficking upon an acute inflammation, we intraperitoneally injected adult mice with 10 mg/kg of lipopolysaccharides (LPS), perfused the vasculature with ice-cold PBS after 2 hr to remove nonadherent cells from the vessel lumen, and performed immunostaining. Interestingly, this revealed the accumulation of CD3+ lymphocytes at ICAM-1+ venules prior to significant upregulation of ICAM-1 in other endothelium (Figure 2\u2014figure supplement 3G), suggesting that the ICAM-1+ vessel subset might serve as the first entry site of the activated leukocytes to the brain parenchyma in settings of neuroinflammation. Based on these findings, we refer to this vessel compartment as \u2018reactive endothelial venules\u2019 (REVs).\n\n### PVMs reside in close proximity of ICAM-1 expressing REV ECs\n\nBrain parenchyma-resident myeloid cell types, namely microglia and PVMs, share expression of myeloid surface markers including CD68, Fcgr3 (CD16), Cx3cr1, and Aif1 (Figure 3\u2014figure supplement 1A) and are GFP+ in Cx3cr1 reporter mice (Jung et al., 2000; Figure 3\u2014figure supplement 1B). At the same time, single-cell transcriptome analysis shows molecular differences between the two cell populations (Figure 3A), which also correlate with distinct morphologies and localization (Figure 3\u2014figure supplement 1B, C). As the heterogeneity of microglia during development, ageing, and brain pathogenesis including Alzheimer\u2019s disease, toxic demyelination, and neurodegeneration has been extensively analyzed at the single cell level (Hammond et al., 2019; Keren-Shaul et al., 2017; Masuda et al., 2019), we focused on the characterization of PVMs in this study. CD206 is predominantly expressed by PVMs (Figure 3\u2014figure supplement 1D), and CD206+ PVMs are localized between the subendothelial basement membrane and GFAP+ astrocyte processes (Figure 3B\u2013D). PVMs are clearly distinct from EC-associated pericytes (Figure 3C, asterisks) and Pdgfra-expressing adventitial fibroblast-like cells (Figure 3D). Consistent with previous reports showing that PVMs are associated with both arteries and veins in the CNS (Faraco et al., 2017; Faraco et al., 2016), we found PVMs in the proximity of ICAM-1+ vessels in cortex, thalamus, hippocampus, midbrain, and floor plate (Figure 3E and F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig3-v2.jpg)\n\n**Figure 3.:** (A) Heatmap and expression dot plot for top differentially expressed genes between microglia and PVMs. Dot size represents the percentage of cells expressing each gene, and color keys indicate scaled expression in each age group. (B) Immunostaining showing CD206+ Cx3cr1-GFP+ PVMs in perivascular space (asterisk) between ECs (CD31) and astrocyte limitans (GFAP). Scale bars, 50 \u03bcm (left), 25 \u03bcm (right). (C\u2013D) Spatial arrangement of PVMs (CD206), astrocyte limitans (GFAP), pericytes (CD13, asterisks), perivascular fibroblasts (Pdfgra- GFP+), and endothelial cells (ECs; CD31). Scale bars, 25 \u03bcm. (E) Confocal image showing Cx3cr1-GFP + microglia and vessel-associated PVMs (arrowheads) next to ICAM1+\u03b1SMA- CD31+ REV ECs. Scale bar, 50 \u03bcm. (F) CD206+ PVMs are associated with ICAM-1+ REVs in the indicated brain regions. Scale bars, 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) plots depicting the expression of the known myeloid cell markers Cd68, Fcgr3, Cx3cr1, and Aif1. Color key represents the scaled expression. (B) Immunostaining showing CD13, GFP (Cx3cr1-GFP), CD31, and collagen type IV (ColIV) in adult cortex. Scale bars, 50 \u03bcm. (C) CD68 immunostaining in Cdh5-H2BGFP/tdTomato mouse brain cortex. Scale bar, 100 \u03bcm. (D) Cx3cr1-GFP expression, CD31, and CD206 in sections of adult cortex. Scale bars, 50 \u03bcm.\n\nSubclustering analysis indicated at least two different PVM populations, namely Lyve1+ and MHC class II+ (MHCII+) PVMs (Figure 4A\u2013C), and differential gene expression analysis revealed unique transcriptomic landscapes of the two subtypes (Figure 4D, Figure 4\u2014figure supplement 1A, B). Immunostaining of Lyve1 and MHCII also shows the two subtypes in association with ICAM-1+ vessels (Figure 4E). Interestingly, GSEA for KEGG signalling pathways indicates that Lyve1+ PVMs show enriched expression of genes associated with lysosome activity and endocytosis as well as Wnt signalling, whereas MHCII+ PVMs show enrichment of terms such as antigen processing and presentation, cell adhesion molecules, and Toll-like receptor signalling pathway (Figure 4F, Figure 4\u2014figure supplement 1C). Macrophages can be broadly divided into classical (M1) and alternative (M2) subtypes (Mantovani et al., 2005; Mantovani et al., 2004). M1-polarized macrophages are strongly positive for MHC class II and present antigen to T lymphocytes that neutralize cells with viral or bacterial infections. Macrophages with M2 polarization display homeostatic or anti-inflammatory activity and have a higher endocytic ability compared to M1 macrophages (Tarique et al., 2015). Interestingly, Lyve1+ PVMs express anti-inflammatory or immune-suppressive (M2 macrophage-like) polarization genes, such as Ccr1, Cd163, Cd209a/f, Cd302, Igf1, Il21r, Mrc1, Stab1, Tgfb1, and Tslp, while MHCII+ PVMs show increased levels of proinflammatory (M1-like) genes, Cxcl9, Cxcl10, Cxcl13, Cxcl16, Irf5, Il1a/b, Cxcr4, Il2ra, and Tlr2 (Figure 4G). Both PVM subtypes are found at all stages investigated, but the frequency of MHCII+ PVMs increases with ageing, which correlates with a decrease in the frequency of Lyve1+ PVMs (Figure 4H). Not only the cell population but also the expression levels of MHCII genes are upregulated, whereas Lyve1 or Ccl24 expression is downregulated in aged PVMs (Figure 4I). These results indicate that specific PVM subtypes, characterized by distinct immunological signatures, are associated with ICAM-1+ REVs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig4-v2.jpg)\n\n**Figure 4.:** (A) Uniform manifold approximation and projection (UMAP) plot of 1725 PVMs from juvenile, adult, and aged mice distributed into Lyve1+ and MHCII+ subclusters. (B) Split UMAP plots of PVMs from juvenile, adult, and aged samples. (C) UMAP plots depicting the expression of Mrc1, Cd68, Lyve1, and H2-Aa. Color represents the scaled expression level. (D) Heatmap of top marker genes for Lyve1+ and MHCII+ PVMs. (E) Immunostaining showing Lyve1+ (red arrows) or MHCII+ PVMs (arrow heads) associated to ICAM-1+ REVs. Scale bar, 50 \u03bcm. (F) Representative gene set enrichment analysis plots for overrepresented KEGG pathways in Lyve1+ and MHCII+ PVMs. (G) Dot plot of genes related to M1- or M2-like phenotypes in PVM subtypes. Dot size represents percentage of cells expressing the gene, and colors represent the average expression of each gene. (H) Bar plot showing the frequency of PVM subtypes in different age groups. (I) Ridge plots of Lyve1, Ccl24, and MHCII genes in PVMs at different ages.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) MA plot of differentially expressed genes between Lyve1+ and MHCII+ PVM subtypes. Blue dots, p-adjusted value \u2009<0.001; Red dots, p-adjusted value \u2009<0.001, and Log2 fold change >0.5. (B) Violin plots of the top differentially expressed genes between Lyve1+ and MHCII+ PVM subtypes. (C) Dot plot depicting top 10 enriched KEGG signalling pathways in gene set enrichment analysis for Lyve1+ and MHCII+ PVM subtypes. Dot size represents \u2212log10 adjusted p-values, and colors indicate size of gene set.\n\n### ICAM-1+ ECs are the most reactive EC population in EAE\n\nTo extend our analysis of brain ECs and PVMs to neuroinflammatory disease, we analyzed the transcriptome of non-neuronal cell types in the brain cortex during EAE at single-cell resolution. In contrast to age-matched control mice, brain-infiltrating inflammatory cells, activated macrophages, neutrophils, and lymphocytes were significantly enriched in EAE (Figure 5\u2014figure supplement 1A, B). EAE mice show onset of disease symptoms between 9 and 12 days and peak disease severity between 14 and 18 days after immunization with significant reduction of myelin basic protein (MBP) levels in the brain cortex (Figure 5\u2014figure supplement 1C). The comparative analysis of ECs from healthy adults vs. peak EAE indicates the emergence of inflammatory ECs upon neuroinflammation (Figure 5A, Figure 5\u2014figure supplement 2A). These ECs share the molecular features of CapV (Figure 5\u2014figure supplement 2B) but show higher level of genes related to immune responses such as Ctla2, Lcn2, and Mt2 (Figure 5\u2014figure supplement 2C). REV-specific marker genes, Icam1 and Lrg1 are also upregulated in inflammatory ECs (Figure 5B). Consistent with published reports (Dopp et al., 1994), both the area and level of endothelial ICAM-1 expression are increased in EAE (Figure 5C and D). Interestingly, ICAM-1 expression in the brain parenchyma persists in REVs and, in peak EAE, expands into adjacent vessels (Figure 5C, Figure 5\u2014figure supplement 3A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig5-v2.jpg)\n\n**Figure 5.:** (A) Uniform manifold approximation and projection (UMAP) plots of 11,810 ECs from adult and EAE mice. Colors represent each EC subcluster (left) or condition (right). (B) UMAP plots depict Icam1 and Lrg1 expression in ECs from adult and EAE mice. Color represents the scaled expression level. (C) Immunostaining showing\u03b1SMA, CD31, and ICAM-1 expression in control and EAE mice. Arterial (A) and venous vessels (V) are indicated. Scale bars, 100 \u03bcm. (D) Quantification of ICAM-1+ vessel area and immunohistochemistry signal intensity in the brain cortex of control and EAE mice at disease onset (EAE onset) and peak (EAE peak). Error bars represent mean \u00b1 s.e.m. from three animals. (E) Immunofluorescence images showing CD45+ leukocytes near ICAM-1+ REVs in the cerebral cortex of control and EAE mouse. CD31 indicates all ECs. Scale bars, 70 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) plots of 26,106 myelin-depleted cells from adult and EAE cerebral cortex. Colors represent each cell type. (B) Dot plot displaying the top cell type-specific genes. Dot size represents the percentage of cells expressing the gene, and colors reflect average expression of the gene. (C) Olig2 and myelin basic protein (MBP) immunostaining in different regions (1\u20134) of brain cortex from control, onset, and peak of EAE, as indicated. Each row shows an individual mouse. Scale bars, 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Bar plots indicating the frequency of EC subtypes in healthy adult and EAE brain. (B) Dot plot showing the expression of top subcluster-specific genes, with the dot size representing the percentage of cells expressing the gene and colors representing the average expression of the gene within a cluster. (C) Uniform manifold approximation and projection (UMAP) plots depicting the expression of top marker genes for each EC subcluster. Color represents the scaled expression.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Confocal images showing ICAM-1 immunofluorescence in cortex of control, EAE onset, and peak mice. Arrowheads indicate expansion of ICAM-1 staining from reactive endothelial venules (REVs) into adjacent venules and capillaries. Scale bars, 100 \u03bcm. (B) High-resolution immunofluorescence images for CD3+ lymphocytes, ICAM-1+ REVs, and GFAP+ astrocytes in the cerebral cortex of control and EAE mice. CD31 labels all ECs. Scale bar, 100 \u03bcm (left two columns), 50 \u03bcm (right two columns). (C) Flow cytometry plots depicting brain-infiltrated leukocytes stained with anti-CD45 and anti-CD3e antibodies in control, EAE onset, and peak mice.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Volcano plots depicting differentially expressed genes between adult and EAE EC subtypes. Blue dots, p-adjusted value \u2009<0.001; red dots, p-adjusted value \u2009<0.001, and Log2 fold change >0.5. (B) MA plot of differentially expressed genes between adult and EAE reactive endothelial venules (REVs). Blue dots, p-adjusted value \u2009<0.001; red dots, p-adjusted value \u2009<0.001, and Log2 fold change >0.5. (C) Significantly enriched gene ontology terms for upregulated or downregulated genes in REV by EAE. Graph visualized by REVIGO. (D) Ridge plots of EAE-induced genes Lrg1, Hif1a, Pdgfb, Cd74, Vwf, Ch25h, Maff, and Ctgf in REVs.\n\nIt has been reported that high levels of ICAM-1 expression in ECs promote transcellular diapedesis of encephalitogenic T cells and, in absence of endothelial ICAM-1 and ICAM-2 in mutant mice, EAE symptoms were ameliorated (Abadier et al., 2015). Accordingly, upon EAE, leukocytes accumulate at ICAM-1+ REVs and enter the adjacent brain parenchyma (Figure 5E, Figure 5\u2014figure supplement 3B, C).\n\nEAE alters gene expression in REVs (Figure 5\u2014figure supplement 4A, B), including significant upregulation of regulators of blood vessel development, such as Pdgfb and Ctgf, Cd74 antigen (invariant polypeptide of the major histocompatibility complex, class II antigen-associated), the hemostasis regulator Vwf, an interferon gamma-stimulated gene mediating host immune responses (Ch25h), a gene involved in the cellular stress response (Maff), and numerous other genes related to antigen processing and presentation as well as cellular responses to hydrogen peroxide or radiation (Figure 5\u2014figure supplement 4C, D). Collectively, our results indicate that ICAM-1+ postcapillary venules or REVs are molecularly specialized and function as a gateway for the entry of activated leukocytes through the BBB.\n\n### PVMs in EAE and cell-to-cell interactome analysis of BBB\n\nThe analysis of PVMs in adult and EAE mice indicates that these cells rarely proliferate (Figure 6\u2014figure supplement 1A), and their morphology and localization around ICAM-1+ REVs persist in EAE (Figure 6A and B and Figure 6\u2014figure supplement 1B). Nevertheless, EAE induces profound changes in PVM gene expression. MHCII+ PVM-enriched genes, such as Cxcl16, Ccl8, Cd52, and MHCII genes, are significantly upregulated in most of the PVMs, whereas Lyve1+ PVM-enriched genes, namely Lyve1, Igf1, Cd163, Ccl24, Folr1, and Cd209f, are not changed or decreased (Figure 6D and E). This supports the hypothesis that polarization of macrophages toward inflammatory and non-inflammatory phenotypes is not fixed, and that these cells possess plasticity, integrating diverse inflammatory signals with physiological and pathological functions (Jord\u00e3o et al., 2019; Murray, 2017). In addition, differential gene expression analysis comparing PVMs and brain parenchyma-infiltrated activated macrophages (Mac) further illustrates the molecular differences between PVMs and circulating peripheral monocytes/macrophages (Figure 6F and G), which may prove relevant for potential therapeutic approaches involving the targeting and modulation of different types of macrophages.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative immunohistochemistry images for CD206+ PVMs and ICAM-1+ vessels in control and EAE brain cortical parenchyma. Scale bars, 100 \u03bcm. (B) Frequency of CD206+ PVMs associated to ICAM-1+ vessels in brain cortical parenchyma of control and EAE mice at disease onset (EAE onset) and peak (EAE peak). (C) Uniform manifold approximation and projection (UMAP) plots of 919 PVMs from adult and EAE mice. (D) UMAP plots depicting the expression of Lyve1, H2-Aa, Ccl8, and Cd52 in PVMs of adult control and EAE mice. Color indicates the scaled expression. (E) Ridge plots of Lyve1+ and MHCII+ PVM marker genes in adult and EAE PVMs. (F) MA plot of differentially expressed genes between PVMs from healthy adult and EAE brain. Blue dots, p-adjusted value \u2009<0.001; red dots, p-adjusted value \u2009<0.001, and Log2 fold change >0.5. (G) Heatmap of selected differentially expressed genes (Padj <0.001) across adult and EAE PVMs and activated macrophages (Mac). Color indicates the scaled average expression.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) plot and pie chart of PVMs in adult and EAE brain cortex in the indicated cell cycle phases. (B) CD31 and CD206 immunostaining of brain cortex from control and EAE mice. Scale bars, 100 \u03bcm.\n\nWe next used CellPhoneDB (Vento-Tormo et al., 2018) to identify potential receptor-ligand complexes mediating cell-to-cell communication between different cell populations at the BBB. First, we analyzed the communication between REVs and adjacent CapV and venous ECs. REVs show expression of various autologous signalling molecules regulating fundamental aspects of EC behavior, including Wnt5a, Tnfsf12, Tgfb1, Jag1, collagens, and immune-regulatory genes with their corresponding receptors (Figure 7A). CapV and venous ECs express higher level of Esam, which encodes EC-selective adhesion molecule, an immunoglobulin-like transmembrane protein associated with endothelial tight junctions. CapV and venous ECs also express the chemokine, and Cxcl12 and REVs express the corresponding receptor Ackr3 encoding CXCR-7, which might enable communication between EC subsets. Potential molecular interactions that upregulated in REVs by EAE include members of the tumor necrosis factor receptor superfamily, TGF\u03b2 receptors, integrins, the HLA class II histocompatibility antigen gamma chain CD74, the receptor tyrosine kinase TEK, and the PLXNB2 receptor for semaphorin ligands (Figure 7A and B). These results also suggest that REVs are a major signal distributor among the EC populations in CNS, which is further enhanced by EAE (Figure 7C). We also identify putative signalling interactions between REVs and other cell types in the brain vasculature during homeostasis and neuroinflammation (Figure 7\u2014figure supplement 1). Notably, REVs express growth factors including PDGF-B, CTGF, and TGF\u03b21, which regulate cellular behavior, tissue remodelling, and angiogenesis. Signalling to other cell types is further enhanced by EAE, which involves the activation of various signals in astroependymal cells. By contrast, expression of PDGF-A, IGF2, and PGF in mural cells and of IGF1, TGFB1, and IGFBP4 in PVMs, for example, was not significantly changed upon EAE (Figure 7D). Our results collectively suggest that postcapillary venules form a specialized vessel compartment in the CNS. We propose that REVs might play roles in the regulation of immune surveillance in the CNS not only under homeostatic conditions but also in pathogenic neuroinflammation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig7-v2.jpg)\n\n**Figure 7.:** (A) Overview of potential ligand-receptor interactions for CapV, reactive endothelial venule (REV), and venous EC populations in adult and experimental autoimmune encephalomyelitis (EAE) based on gene expression. Circle size indicates p-values. Color key indicates the means of the average expression levels of interacting molecules. (B) Diagram of the main ligand-receptor interactions regulated by EAE. (C) Diagram of the numbers of ligand-receptor interactions on CapV, REV, and venous EC populations in healthy adult and EAE brain. (D) Circos plots for ligand-receptor interactions between REV ECs, mural cells (Mural), perivascular macrophages (PVMs), and astroependymal cells (Astro) in adult and EAE. Each plot shows top 100 highly expressed interactions. The lines and arrow heads are scaled to indicate the relative expression level of the ligand and receptor, respectively.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Overview of differential ligand-receptor interactions between reactive endothelial venule (REV) endothelial cell (EC), perivascular macrophage (PVM), mural cell (Mural), and astroependymal cells (Astro) populations in adult control and experimental autoimmune encephalomyelitis (EAE) brain. Circle size indicates p-values. Color indicates mean average expression levels of interacting molecules.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57520/elife-57520-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Schematic summary of proposed findings. Reactive endothelial venules (REVs) are specialized cellular gateways in the CNS vasculature with associated perivascular macrophages (PVMs) as gatekeepers in the perivascular space, regulating the infiltration of circulating leukocytes into the brain parenchyma and vascular integrity during homeostasis and neuroinflammation.\n\n## Discussion\n\nHere, we provide a comprehensive single-cell transcriptomic atlas of non-neural components of the murine brain vasculature during growth, adulthood, ageing, and in EAE. Using this data, we establish the existence of a specialized vessel subtype, which is characterized by a distinct endothelial gene expression profile and presence of ICAMs. In response to pro-inflammatory (LPS) stimulation or in the neuroinflammatory condition of EAE, REVs, but not the far more abundant ICAM-1- vessels, are associated with leukocytes, suggesting that the ICAM-1+ subset of postcapillary venules serves as a first site of immune cell accumulation prior to entry into the brain parenchyma. Such a role of REVs as an interface for innate and adaptive immune cells might be also relevant under homeostatic conditions, when the recruitment of these cells is rare and their activity but also their entry into the brain parenchyma is tightly regulated (Schwartz et al., 2013). The association of MHCII+ and Lyve1+ PVM populations with REVs might mediate immunomodulatory responses, and the predominant gene expression changes in REVs upon immunological challenge highlight further that these vessels might be critical for the immune privileged status of the CNS with potential implications for ageing and neurodegenerative diseases.\n\nSeveral previous studies on scRNA-seq analysis of murine or human brain have recovered only a limited number of vascular cells due to the comparably high abundance of neural cells (Han et al., 2020; Zeisel et al., 2015). In other publications, fluorescence-activated cell sorting (FACS) or microbead-mediated isolation of ECs as well as of both ECs and mural cells has provided insight into the organ-specific specialization, transcriptional regulation, and arterial-venous zonation of brain vessels in the healthy organism (He et al., 2018; Kalucka et al., 2020; Sabbagh et al., 2018; Vanlandewijck et al., 2018). While sorting based on certain cell surface markers or fluorescent reporters enables the efficient enrichment of the desired cell populations, it has to be considered that these approaches are biased and will miss cells lacking expression of the relevant markers. This limitation is avoided by our demyelination approach, which does not rely on the expression of specific cell surface proteins or fluorescent reporters. Despite of the differences in the experimental approach, data generated by Vanlandewijck et al., 2018 confirms the enriched expression of Icam1 and Vwf in a fraction of venous ECs, which is consistent with our own findings. Transcriptomic changes in brain ECs associated with the aging have been also investigated previously, and it has been proposed that soluble brain EC-derived Vcam1, generated by shedding, activates microglia and impairs the function of hippocampal neural precursors (Chen et al., 2020; Yousef et al., 2019). Our own study confirms that aging increases transcripts associated with inflammation in brain ECs, and, in particular, in REVs. Similarly, EAE results in the upregulation of proinflammatory gene expression in ECs with potential implications for neuroinflammation and disease development.\n\nIn the healthy organism, the CNS contains a highly selective barrier system to restrict peripheral immune cell entry into brain parenchyma. During pathophysiological conditions, activated T cells can enter the perivascular space independent of antigen specificity (Kawakami et al., 2005) along postcapillary venules (Raine et al., 1990). However, only after acquiring the ability to move across the glia limitans by recognition of cognate antigen displayed by perivascular APCs, T cells traverse into the parenchyma (Lodygin et al., 2013). Firm attachment of T cells to ECs to resist the vascular shear stress and prolonged crawling before diapedesis is also critical for immune cell extravasation (Steiner et al., 2010). Our findings suggest that functionally specialized REV ECs enable the sustained immune surveillance process alongside the postcapillary venules, serving as the cellular gateway of BBB. In this sense, REVs share some functional features with high endothelial venules in secondary lymphoid organs that support circulating lymphocyte extravasation and physical contact with APCs (Girard and Springer, 1995). Because of the restricted afferent and efferent communication with lymphatic tissue in CNS parenchyma, these specialized postcapillary ECs are probably relevant for fine-tuned CNS immune reactions.\n\nOur work also shows transcriptionally distinguishable subtypes of brain resident PVMs, physically associated with REVs in postcapillary venules, which might serve as APCs for CNS immune surveillance and thereby as gate-keepers at the BBB. It has been reported that PVMs are derived from early yolk-sac-derived erythromyeloid progenitors, similar to microglia and have minimal turnover during homeostasis (Goldmann et al., 2016). The transcriptional continuum between the PVM subtypes and the coherent activation upon EAE reflect the ability of PVMs to swiftly adapt to changing immunological and environmental cues. Nevertheless, PVMs retain distinct molecular characteristics relative to infiltrating peripheral macrophages even though all these cells are exposed to the same perivascular microenvironment. More detailed understanding of the mechanisms that determine the behavior of PVMs and peripheral macrophages upon neuroinflammation will be important, especially for attempts to target specific cell populations and modulate local immune responses. Delivery of drugs or therapeutic cells (e.g. chimeric antigen receptor T cells) across the BBB is a limiting factor in the future development of new therapeutics for the brain diseases, such as Alzheimer\u2019s disease and various brain tumours (Pardridge, 2019).\n\nThe sum of our work reveals critical aspects of vascular heterogeneity in the CNS and thereby provides a valuable resource for cell-cell interactions and the molecular modulation of immune cell trafficking into the CNS, with relevance for brain function in health and disease.\n\n## Methods\n\n### Mice\n\nC57BL/6 female mice were used unless stated otherwise. Cdh5- H2BGFP/tdTomato (Jeong et al., 2017), Cx3cr1-GFP (Jung et al., 2000), and Pdgfra-GFP transgenic mice were used to specifically label EC, Micro + PVM, and Fibro, respectively. All animal experiments were performed in compliance with the relevant laws and institutional guidelines, approved by local animal ethic committees, and conducted with permissions (84\u201302.04.2016 .A525, 81\u201302.04.2020 .A471 and 84\u201302.04.2017 .A322) granted by the Landesamt f\u00fcr Natur, Umwelt und Verbraucherschutz (LANUV) of North Rhine-Westphalia, Germany.\n\n### EAE and LPS treatment\n\nEAE was induced as previously described (Gerwien et al., 2016). In brief, 150 \u03bcl of 0.75 mg/ml myelin oligodendrocyte glycoprotein 33\u201355 peptides (MOG35\u201355) mixed with Complete Freund\u2019s Adjuvant (FS8810; Sigma-Aldrich) was injected subcutaneously into the tail base of 7\u201311-week-old female C57Bl/6 mice. On the day of immunization and on day 2, 100 \u03bcl of 2 \u03bcg/ml pertussis toxin (P7208; Sigma-Aldrich) was injected intravenously. Mice were monitored daily for development of disease symptoms. EAE was graded on a 0\u20135 scale as follows: score 0, no clinical symptoms; score 1, flaccid tail; score 2, hindlimb weakness or partial paralysis; score 3, severe hindlimb weakness or paralysis; score 4, forelimb paralysis; and score 5, paralysis in all limbs or death. Mice typically reached a peak of disease symptoms between days 14 and 18 after immunization, before disease resolution. The disease typically correlates with weight loss; killing of mice was required when weight loss exceeded 20\u201330% of the initial body weight.\n\nFor acute LPS treatment, mice were intraperitoneally injected with a single dose of 10 mg/kg LPS (L2630-25MG; Sigma-Aldrich). Control animals received the same volume of PBS (data not shown). Mice were sacrificed at 2 hr after the injection.\n\n### Single-cell RNA-seq library preparation and sequencing\n\nMice were perfused transcardially with ice-cold PBS under anesthesia. Brains were isolated and dabbed with filter paper for the removal of meninges. After the removal of olfactory bulbs and cerebellum, brain cortex tissues were dissected and digested using the enzyme-cocktail solution of 30 U/ml papain (LK003153; Worthington) and 0.125 mg/ml Liberase TM (5401119001; Sigma-Aldrich) in Dulbecco's Modified Eagle Medium (DMEM, Sigma-Aldrich) for 60 min at 37\u00b0C. Homogenized tissues were combined with 1.7-fold volume of 22% BSA in PBS and then centrifuged at 1000\u00d7 g for 10 min for myelin removal. After washing with ice-cold DMEM, dead cells and debris were removed using ClioCell nanoparticles (Amsbio) according to the manufacturer\u2019s instructions. Single cells were counted using Luna-II automated cell counter (Logos Biosystems) and captured using the 10X Chromium system (10X Genomics). We pooled tissues from three (for aged and EAE samples) or six (for juvenile and adult samples) mice to reduce the effect of sample-dependent individual variations. Libraries were prepared according to the manufacturer\u2019s instructions using Chromium Single Cell 3\u2019 Library & Gel Bead Kit v2 (10X Genomics) and sequenced on the Illumina NextSeq 500 using High Output Kit v2.5 (150 cycles, Illumina) for 26 bp +98 bp paired-end reads with 8 bp single-index aiming raw sequencing depth of >20,000 reads per cell for each sample.\n\n### Single-cell RNA-seq data analysis\n\nSequencing data were processed with UMI tools (Smith et al., 2017) (version 1.0.0), aligned to the mouse reference genome (mm10) with STAR (Dobin et al., 2013) (version 2.7.1 a), and quantified with Subread featureCounts (Liao et al., 2014) (version 1.6.4). Data normalization, detailed analysis, and visualization were performed using Seurat package (Butler et al., 2018) (version 3.1.5). For initial quality control of the extracted gene-cell matrices, we filtered cells with parameters nFeature_RNA >500 & nFeature_RNA <6000 for number of genes per cell and percent.mito <25 for percentage of mitochondrial genes and genes with parameter min.cell=3. Filtered matrices were normalized by LogNormalize method with scale factor = 10,000. Variable genes were found by FindVariableFeatures function with parameters of selection.method = \u2018vst\u2019, nfeatures = 2000, trimmed for the genes related to cell cycle (GO:0007049) and then used for principal component analysis. FindIntegrationAnchors and IntegrateData with default options were used for the data integration. Statistically significant principal components were determined by JackStraw method, and the first 12 principal components were used for UMAP nonlinear dimensional reduction. Unsupervised hierarchical clustering analysis was performed using FindClusters function in Seurat package. We tested different resolutions between 0.1 and 0.9 and selected the final resolution using clustree R package to decide the most stable as well as the most relevant for our previous knowledges. Cellular identity of each cluster was determined by finding cluster-specific marker genes using FindAllMarkers function with minimum fraction of cells expressing the gene over 25% (min.pct=0.25), comparing those markers to known cell type-specific genes from previous studies.\n\nData were further trimmed for clusters of multiplets, low-quality cells (mitochondrial gene-enriched), contaminated neurons (Tubb3+), oligodendrocytes (Mbp+), lymphocytes (Igkc+ or Nkg7+), red blood cells (Hba\u2212a1+), and ependymal cells (Tmem212+) and then reanalyzed. For subclustering analysis, we isolated specific cluster(s) using subset function, extracted data matrix from the Seurat objectusing GetAssayData function, and repeated the whole analysis pipeline from data normalization.\n\nDifferentially expressed genes were identified using the nonparametric Wilcoxon rank sum test by FindMarkers function of Seurat package. We used default options for the analysis if not specified otherwise. Results were visualized using EnhancedVolcanoR package (version 1.10.0). FeaturePlot, VlnPlot, and DotPlot functions of Seurat package were used for visualization of selected genes. The \u2018VlnPlot\u2019 function of Seurat package was used for violin plots to show the expression level of selected genes with log normalized value by default.\n\nMonocle (Trapnell et al., 2014) (version 2.12.0) was used for pseudotime trajectory analysis. We imported Seurat objects to Monocle R package and then performed dimensionality reduction with DDRTree method with parameters max_components = 2 and norm_method=\u2018log\u2019. Cell cycle phases were classified by cyclone function of scran (Lun et al., 2016) (version 1.14.5). We also used MAGIC (van Dijk et al., 2018) (version 1.4.0.9000) for an alternative dimensionality reduction and CellPhoneDB (Vento-Tormo et al., 2018) for ligand-receptor interactome analysis. An R package iTALK (https://doi.org/10.1101/507871) was used for the ligand-receptor interactome analysis. For the analysis of each single sample, top 50% of genes in their mean expression values were selected and used for ligand-receptor pair identification using FindLR function with datatype = mean count. All the analysis scripts are available from vignettes of original software webpage of Seurat, Monocle, MAGIC, CellPhoneDB, or iTALK. No custom code or mathematical algorithm other than variable assignment was used in this study.\n\n### Flow cytometry\n\nBrain cortex tissues from transcardially perfused P10 Cdh5- H2BGFP/tdTomato transgenic mice were dissected and treated by different digestion conditions, namely papain solution, papain + liberase cocktail solution, or papain + liberase cocktail solution followed by myelin removal. EC-specific H2BGFP and tdTomato fluorescences were directly analyzed after single/live cell gating in forward scattered/side scattered plot using FACSVerse flow cytometer (BD). For brain-infiltrated leukocyte analysis, brains from transcardially perfused mice were dissected and crushed with FACS buffer (2% FCS, 2 mM EDTA in DPBS) using 100 um mesh and plunger. After collecting the cell suspension with 10 ml of FACS buffer, centrifugation was performed to make cell pellet. Percoll gradient was performed, and a layer that contains mononuclear cells was collected for further FACS analysis. 105 cells were stained with fluorescence conjugated antibodies, CD45-APC-Cy7 (BD 557659) and CD3e-FITC (Thermo 11\u20130031) for 30 min at 4\u00b0C. The analysis is performed with BD FACSymphony A3 Cell Analyzer. FlowJo software (version 10.5.3, FlowJo, LLC) was used for further analysis.\n\n### Immunohistochemistry\n\nMice were perfused transcardially with ice-cold PBS and subsequently with 2% paraformaldehyde (PFA) under anesthesia. Whole brain tissues were dissected and further fixed with 4% PFA or 100% methanol at 4\u00b0C for overnight. Methanol-fixed samples were rehydrated by serial incubation (15\u201320 min each, at RT) in increasing concentrations of PBS:methanol solution (25, 50, 75, and 100% PBS). The fixed brains were glued to a mounting block with cyanoacrylate glue (48700; UHU), submerged in ice-cold PBS, and sliced with 100-\u00b5m thickness using vibrating blade microtome (VT1200, Leica). Sections were blocked and permeablilized by 1% BSA and 0.5% Triton X-100 in PBS for overnight. Incubation with blocking/permeabilization solution containing primary antibodies at 4\u00b0C for overnight was followed by secondary antibody staining using suitable species-specific Alexa Fluor-coupled antibodies (Invitrogen) and flat-mounting in microscope glass slides with Fluoromount-G (0100\u201301; SouthernBiotech). The following primary antibodies were used for immunostaining: rabbit anti-ICAM-1 (Abcam ab222736, 1:100), rat anti-ICAM-1 (BioLegend 116102, 1:100), mouse anti-\u03b1SMA-Cy3 (Sigma C6198, 1:300), mouse anti-\u03b1SMA-660 (eBioscience 50-9760-82, 1:300), chicken anti-GFP (2BScientific Ltd. GFP-1010, 1:300), goat anti CD31 (R&D Systems AF3628, 1:200), rabbit anti-CD206 (Abcam ab64693, 1:100), rat anti-CD206 (BioRad MCA2235T, 1:100), rabbit anti-GFAP (DAO Z0334, 1:200), rat anti-CD13 (AbD Serotec MCA2183GA, 1:100), hamster anti-CD3e-FITC (eBiosciences 11\u20130031, 1:100), rabbit anti ColIV (AbD Serotec 2150\u20131470, 1:100), rat anti-CD68 (Abcam ab53444, 1:200), goat anti-Olig2 (R&D Systems AF2418, 1:100), rabbit anti-MHC Class II (Abcam ab180779, 1:100), rat anti-CD45 (Becton Dickinson 550539, 1:200), and rat anti MBP (Abcam ab7349, 1:200). The following donkey-raised secondary antibodies (all in 1:400 dilution unless otherwise stated) were used for immunostaining: anti-rabbit IgG conjugated to Alexa Fluor (AF) 488 (Thermo Fisher Scientific A21206), anti-chicken IgY AF488 (Jackson ImmunoResearch 703-545-155), anti-goat IgG AF488 (Invitrogen, A-11055), anti-rat IgG Cy3 (Jackson ImmunoResearch 712-165-153), anti-rabbit IgG AF546 (Thermo Fisher Scientific A10040), anti-rat IgG AF594 (Thermo Fisher A21209), anti-rabbit IgG AF594 (Thermo Fisher Scientific A21207), anti-rabbit IgG AF647 (Thermo Fisher Scientific A31573), and anti-goat IgG AF647 (Thermo Fisher Scientific A21447). Streptavidin AF405 (Invitrogen S32351, 1:200) was used for detection of biotinylated-IB4 stained samples. Nuclei were counterstained with 4\u2019,6-diamidino-2-phenylindole (Sigma, D9542) diluted at 1 \u03bcg ml\u20131 together with the secondary antibodies.\n\n### Statistics and reproducibility\n\nNo statistical methods were used to predetermine sample size. The experiments were not randomized, and investigators were not blinded to allocate during experiments and outcome assessment.\n\nData sets with normal distributions were analysed with unpaired Student\u2019s two-tailed t-tests to compare two conditions. Results are depicted as mean \u2009\u00b1 s.e.m. as indicated in figure legends. All experiments for quantitative analysis and representative images were reproduced at least three times.\n",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "2d9eca3a-f70c-4ed6-a5aa-1fbf99b07323",
+      "submission_id": "3f229792-187a-4dc2-9570-e03c3618edab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Victoria L Bautch, https://ror.org/0130frc33 University of North Carolina, Chapel Hill United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57520.sa0](https://doi.org/10.7554/eLife.57520.sa0)\n\nThis study provides insight into an understudied cell type in the neurovascular unit involved in inflammatory disease and provides a resource of scRNA seq data for non-neuronal CNS cells. Further, it provides some interesting areas for future investigations into neuroimmune mechanisms used by the brain vasculature to control leukocyte transmigration in various health and disease conditions. This work will be of interest to vascular and neurovascular biologists, aging biologists, immunologists, and translational/clinical scientists interested in disease therapies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Victoria L Bautch, https://ror.org/0130frc33 University of North Carolina, Chapel Hill United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57520.sa1](https://doi.org/10.7554/eLife.57520.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single cell transcriptomics reveals functionally specialized vascular endothelium in brain\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Carla Rothlin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe editors have judged that your manuscript is of interest, but as described below extensive revision is required before it is published. We would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nJeong et al. employ single cell transcriptional profiling to address cellular heterogeneity of the neurovascular unit. By using the murine cerebral cortex as the anatomical site of interest, the authors dissect cellular heterogeneity within four distinct conditions: aging, inflammation, development and adulthood. This approach has revealed a potential new endothelial subset \u2013 reactive endothelial venules, which are post-capillary endothelial cells with specialized functions particularly for immune cell transmigration and potential communication with perivascular macrophages within the brain parenchyma.\n\nThis study provides insight into largely understudied cell types in the neurovascular unit. Further, it provides for some interesting areas of future investigations into neuroimmune mechanisms that are used by the brain vasculature to control leukocyte transmigration in various health and disease conditions. However, as presented the work is not well-described or annotated, some methodology is not clear, numerous functional claims that are not supported by the data, and relevant work of other labs is not acknowledged and incorporated into the interpretations. The suggestion is to reformat the work as a resource paper with appropriate attributions of work of others, remove extensive unsubstantiated claims, and significantly improve description of the methodology and description of the data.\n\nEssential revisions:\n\n1. What is the gap in knowledge that is filled by this work? The scope of the study is on PVECs and a more suitable introduction with relevant literature citation and gap of knowledge should be included. The current broad claim of \"BBB heterogeneity\" is not very relevant to the current experimental design and findings in this manuscript. The authors should introduce REVs early on as it is a main finding. Although this cell population is in early data (Figure 2A) the first description and discussion of this cell population is towards the end of the main text.\n\n2. There are many areas of bold claims about probable functional roles without functional data to support these ideas. It is suggested to remove these claims and reformat as a resource paper, with appropriate attribution of other work in the field and comparison of analyses. Specifically: (a) the presented work is done using mice, while recently the human cell atlas was published (PMID: 32214235) that should be re-analyzed to find REVs and address relevance of the mouse model for studies of human disorders; (b) work would benefit from comparison of authors' dataset with previously published data, e.g. of Sabbagh MF et al., 2018 (PMID: 30188322), Vanlandewijck M et al., 2018 (PMID:29925939), He L et al., 2018 (PMID:30129931) or Kalucka J et al. 2020 (PMID: 32059779) to examine reproducibility of gene expression, transcriptomic signatures, and EC subtypes for relevant conditions; (c) recently Tony Wyss-Coray and colleagues reported that brain capillary, arterial, and venous cells age differently at the transcriptome level, that aged capillaries upregulate innate immunity and oxidative stress pathways, and that hippocampal neural precursor activity is impaired via endothelial VCAM1 (PMID: 32234477, PMID: 31086348). These results should be discussed and adequately compared to the newly obtained results. Also, there is speculation and claims about a functional module that may exist between ICAM1+ vessels and PVMs, with little molecular detail in terms of validation or functional data to support this hypothesis. Simply having cell types in the same region does not dictate that they communicate in meaningful ways, so this claim should be removed. The model suggests that perhaps LYVE1+ PVMs may actively suppress leukocytes that enter through REVs but there is nothing to support this, so this claim should be removed.\n\n3. Readability is very low, with extensive lack of concordance between text and data, precluding rigorous assessment. The authors submitted 4 main figures and 9 extended data figures, but refer to 7 main figures and 10 (or 11 based on the figure legend numbering) extended data figures. Some of the figures are missing and panels in figures do not match text (and the other way round). Legends poorly describe the panels. Abbreviations in Figures are not explained. Some figures are overcrowded and presented data is not explained in the main text (e.g. for Figure 1d). Authors should provide rationale behind prioritising the data presented in the main figures. There are several mistakes in the figures themselves. For example, in Figure 1a panels are said to represent UMAP, but t-SNE plots are shown.\n\n4. Some provided images do not support validation claims, e.g. Extended Data Figure 8 does not support statement that ICAM-1 expression in the brain parenchyma remains restricted to veins/venules and slightly expands into adjacent vessels. Double or triple staining to clearly illustrate veins/venules vs. arteries is needed to support these assumptions. Also, based on provided representative images in Extended Data Figure 7c, loss of MBP protein is more severe during the onset of EAE and not in its peak as authors describe in the text. How can the authors explain that? It is also unclear why the authors used Olig2 staining for these experiments.\n\n5. Methodology is not clear. Seq analysis cell numbers are a concern \u2013 it is unclear how many cells were obtained in each subpopulations. Methods must include more technical detail. For example, in Figure 2, ~11,000 endothelial cells are analyzed from both adult and aged mice \u2013 it is unclear why these two groups are pooled. Tony Wyss-Coray recently reported via seq that brain ECs are transcriptionally different from aged mice, so this could argue that pooling adult and aged ECs into the same analysis is a potential confound. Further, it is unclear how many cells make up ICAM1+ and other subpopulations (I,e, what are the cell numbers of ICAM1+ PVECs and ICAM1-PVECs?). Limited cell counts from the brain vasculature is a known technical issue for sequencing, so cell numbers are important to understand whether methods are appropriate. Are there thousands, hundreds or dozens of ICAM1+ ECs from this overall population? Also, pooling of 3 PVM groups seems likely to lead to possible confounding factors. Why are these 3 groups chosen? The analysis actually indicates that these populations are likely unique (or at least somewhat different) across these conditions, so pooling may not be appropriate. Is there a biological response for this pooling? If cell numbers needed to be increased, would it be more appropriate to increase the number of mice per condition and keep them separate?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Single cell transcriptomics reveals functionally specialized vascular endothelium in brain\" for further consideration by eLife. Your revised article has been evaluated by Carla Rothlin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n1. Addition of several control panels (Figure 2, Supp 3G; Figure 5E-F).\n\n2. Further proof of T-cell accumulation into the brain under stimulated conditions (see Rev 2 comment below) via images and quantification, and/or careful use of words to exactly describe what is demonstrated by the data in several places.\n\n3. Correction of typos.\n\nFor your convenience, the remarks from reviewers are appended below in their entirety.\n\nReviewer #1 (Recommendations for the authors):\n\nThe reviewer would like to thank the authors for considering the submitted remarks. The current version of the manuscript was an absolute pleasure to read. Although the manuscript is not perfect, for example, the authors could try to validate the results obtained from the ligand-receptor analysis or there are still unfinished sentences/typos, e.g. in lines #348 or #352, I do not have any major criticisms that will improve the paper if answered, only some that will delay publication.\n\nI am confident that this study will lay the foundations for future work and will be an excellent resource for the broader scientific community.\n\nReviewer #2 (Recommendations for the authors):\n\nIn this revision, Jeong et al. have dramatically enhanced the rigor of this study and have addressed most of our major concerns originally brought forward. Notably, the overarching, unsubstantiated claims in the first version have been removed or have had significant data additions to help support these claims. Thank you for the addition of the discussion of how your scRNA-seq dataset compares to previously published datasets. Overall, the text is much more readable and the data progression is logical and clear. Prior to publication, there is still one major concern that needs to be addressed and we bring a few minor corrections below.\n\n1. Figure 2, figure supplement 3G \u2013 the text in lines 161-162 claims that CD3+ T cells accumulate and penetrate the brain but the images do not clearly demonstrate this. Rather, it appears that they are accumulating, and perhaps not penetrating. This is a really important point to clarify \u2013 whether T cells are physically entering the brain at these sites needs to be explored. Better images showing the T cells in the brain parenchyma and/or quantification of the numbers of T cells accumulating and penetrating is warranted. It is also important to note there isn't a control here \u2013 there should be a negative (PBS) control to show that T cells in the LPS condition are actually different. EM would be able to prove these cells are transmigrating and/or flow cytometry quantification of T cell numbers in the brain parenchyma could be helpful.\n\nLine 295 in the discussion states \"recruitment\", but again there is no direct evidence that REVs are actually allowing T cells to recruit to the brain. Even though these sites are likely to be hotspots of leukocyte accumulation, be cautious about using recruitment.\n\n2. Similar to the comments above, for Figures 5 E and F, the authors should show the negative control side-by-side so the reader can really appreciate the differences.\n\n3. In your response to reviewer comments: \"LPS treatment promotes the adhesion of CD3+ cells to ICAM-1+ REVs (Figure 2-supplement 3G). While our findings indeed indicate that REVs are present in the absence of any challenge, leukocyte adhesion is extremely rare under baseline conditions. Thus, while we propose that REVs are poised for leukocyte transmigration, this is prevented by the BBB properties of the brain vasculature in the absence of inflammatory challenge.\"\n\nAre you suggesting that LPS induces loss of BBB features and that controls the difference between the baseline activity of REVs and LPS-induced activity? If so, then presumably REVs are indeed able to allow for attachment of T cells in homeostatic conditions, but only under inflammatory conditions when the BBB is weakened, can recruitment actually occur? Some level of discussion on this topic could be helpful in the discussion.\n",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3befa272-eb88-4f76-ba3a-987b5be9ee46",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C1",
+      "claim": "A total of 29,406 single cells from three different postnatal ages (juvenile: 10,796 cells at postnatal day 10, adult: 9,871 cells at 7-11 weeks, and aged: 8,739 cells at 18 months) were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Following quality control and data trimming (Figure 1\u2014figure supplement 1C), a total of 29,406 single cells from three different postnatal ages, juvenile (10,796 cells, postnatal day 10), adult (9871 cells, 7\u201311 weeks), and aged (8739 cells, 18 months) were analyzed further (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of cells analyzed from each age group with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "63ae6c95-6a18-4b95-84a8-edcfbffdd3c4",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C2",
+      "claim": "Six different non-neuronal cell types were identified: endothelial cells (ECs), microglia (Micro), astroependymal cells (Astro), perivascular macrophages (PVMs), mural cells (Mural), and cerebral fibroblast-like cells (Fibro).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis by a nonlinear dimensionality reduction technique, uniform manifold approximation and projection (UMAP) (Figure 1A\u2013C), and unsupervised hierarchical clustering (Figure 1D and E) established six different non-neuronal cell types, namely ECs, microglia (Micro), astroependymal cells (Astro), perivascular macrophages (PVMs), mural cells (Mural), and cerebral fibroblast-like cells (Fibro).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the six cell types identified through UMAP and clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "b3732f26-af03-44d3-9ace-67c24eedbbcf",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C3",
+      "claim": "Each cell type was annotated by known marker genes: Flt1 for ECs, Tmem119 for microglia, Folr1 for astroependymal cells, Mrc1 for PVMs, Rgs5 for mural cells, and Nov for the Fibro population.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cell type was successfully annotated by known marker genes such as Flt1 for ECs, Tmem119 for microglia, Folr1 for astroependymal cells, Mrc1 for PVMs, Rgs5 for mural cells, and Nov for the Fibro population (Figure 1E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the marker genes used to annotate each cell type.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "94f7a48d-615e-4e8f-8cc6-4eb55c246bfd",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C4",
+      "claim": "All marker genes are expressed specifically and continuously in all age groups analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "All these markers are expressed specifically and continuously in all age groups analyzed (Figure 1\u2014figure supplement 2B-D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that marker expression is consistent across age groups, supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "634f9bf3-0f9e-4299-87e7-b82dc611f29f",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C5",
+      "claim": "Juvenile ECs were annotated to six different subclusters: arterial, capillary/precapillary arteriolar (CapA), capillary/postcapillary venular (CapV), venous, mitotic, and tip ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Juvenile ECs were annotated to six different subclusters corresponding to arterial, capillary/precapillary arteriolar (CapA), capillary/postcapillary venular (CapV), venous, mitotic, and tip ECs (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the six EC subclusters identified in juvenile samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "4d9abca9-d975-4d75-9273-e1206fb4a6cd",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C6",
+      "claim": "Tip and mitotic ECs emerge from veins and are, in part, incorporated into arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudotime reconstruction analysis reveals a continuum of venous-to-arterial gene expression and also confirmed the presence of venous attributes in tip and mitotic ECs (Figure 2\u2014figure supplement 1G-J), consistent with previous findings that tip and mitotic ECs emerge from veins and are, in part, incorporated into arteries (Pitulescu et al., 2017; Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this finding is consistent with previous publications (Pitulescu et al., 2017; Xu et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "79283fee-f458-407a-b2cb-c35ae913e538",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C7",
+      "claim": "There was no striking change in gene expression profiles between adult and aged ECs (Spearman's correlation coefficient = 0.9852).",
+      "claim_type": "EXPLICIT",
+      "source": "Although there was no striking change in gene expression profiles between adult and aged ECs (Spearman's correlation coefficient = 0.9852), 407 genes were identified as differentially expressed (Padj <0.001, Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a specific correlation coefficient and number of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e1d786b0-934c-4890-aaed-6457b286faf1",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C8",
+      "claim": "407 genes were identified as differentially expressed between adult and aged ECs (Padj <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Although there was no striking change in gene expression profiles between adult and aged ECs (Spearman's correlation coefficient = 0.9852), 407 genes were identified as differentially expressed (Padj <0.001, Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of differentially expressed genes with statistical threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "d0c705a8-582f-463b-a2c6-8c76abff9caf",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C9",
+      "claim": "Genes related to ECM-receptor interaction, focal adhesion, and the P53 signalling pathway are enriched in adult ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) indicates that genes related to ECM-receptor interaction, focal adhesion, and the P53 signalling pathway are enriched in adult ECs, while genes related to cell adhesion molecules, chemokine signalling, and T cell receptor signalling are enriched in aged ECs (Figure 2\u2014figure supplement 2B, C), indicating that ECs undergo molecular changes toward a proinflammatory state during ageing, which is consistent with recently published work (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the results of GSEA analysis for adult ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "4aabbd30-5589-484d-ae92-b8d58a6ea208",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C10",
+      "claim": "Genes related to cell adhesion molecules, chemokine signalling, and T cell receptor signalling are enriched in aged ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) indicates that genes related to ECM-receptor interaction, focal adhesion, and the P53 signalling pathway are enriched in adult ECs, while genes related to cell adhesion molecules, chemokine signalling, and T cell receptor signalling are enriched in aged ECs (Figure 2\u2014figure supplement 2B, C), indicating that ECs undergo molecular changes toward a proinflammatory state during ageing, which is consistent with recently published work (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the results of GSEA analysis for aged ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "37950044-6590-40c9-a2a3-bcec4e8b85a6",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C11",
+      "claim": "ECs undergo molecular changes toward a proinflammatory state during ageing.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) indicates that genes related to ECM-receptor interaction, focal adhesion, and the P53 signalling pathway are enriched in adult ECs, while genes related to cell adhesion molecules, chemokine signalling, and T cell receptor signalling are enriched in aged ECs (Figure 2\u2014figure supplement 2B, C), indicating that ECs undergo molecular changes toward a proinflammatory state during ageing, which is consistent with recently published work (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the GSEA results as indicating a proinflammatory shift with aging, consistent with Chen et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "291ca20b-cf11-4ce7-a766-666f67fe612f",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C12",
+      "claim": "A distinctive subpopulation of venous ECs termed REV (reactive endothelial venules) was identified in adult and aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found one additional minor but distinctive subpopulation of venous ECs (Figure 2A and B; boxed area), which we subsequently termed REV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the identification and naming of REV cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "c1f65f2c-5ef0-42dc-8b13-fe2ac310c71a",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C13",
+      "claim": "REVs are characterized by the expression of Icam1 and Vcam1, encoding intercellular adhesion molecules, and the endothelial activation or dysfunction markers Vwf and Irf1.",
+      "claim_type": "EXPLICIT",
+      "source": "These ECs are characterized by the expression of Icam1 and Vcam1, encoding intercellular adhesion molecules (ICAMs), and the endothelial activation or dysfunction markers Vwf and Irf1 (Figure 2C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the marker genes characterizing REVs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "d8646e62-c431-4958-ad42-fd9e5526e9b6",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C14",
+      "claim": "Endothelial expression of ICAM-1 is essential for transcellular diapedesis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that endothelial expression of ICAM-1 is essential for transcellular diapedesis (Abadier et al., 2015) but is suppressed by sonic hedgehog signalling in the CNS during homeostasis, thereby limiting infiltration of circulating inflammatory leukocytes through the BBB (Alvarez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Abadier et al., 2015 as reporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "10d16b04-c404-4c46-924f-2e0dae8ba0cf",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C15",
+      "claim": "ICAM-1 expression is suppressed by sonic hedgehog signalling in the CNS during homeostasis, thereby limiting infiltration of circulating inflammatory leukocytes through the BBB.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that endothelial expression of ICAM-1 is essential for transcellular diapedesis (Abadier et al., 2015) but is suppressed by sonic hedgehog signalling in the CNS during homeostasis, thereby limiting infiltration of circulating inflammatory leukocytes through the BBB (Alvarez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Alvarez et al., 2011 as reporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f7e7e44e-a161-45cc-a3cc-d30ce5fac8b0",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C16",
+      "claim": "The small subpopulation of venous ECs shows consistent expression of Icam1 even in immunologically na\u00efve conditions both in adult and aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the small subpopulation of venous ECs we found from the single-cell transcriptome data shows consistent expression of Icam1 even in immunologically na\u00efve conditions both in adult and aged mice (Figure 2D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that Icam1 expression is consistent in REVs under homeostatic conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "2c1fa249-bb15-4491-8e47-e6eaf9b2bd9b",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C17",
+      "claim": "663 genes (Padj <0.05) predominantly expressed in REVs were significantly enriched in biological processes involving inflammatory/immune responses, cell adhesion, and leukocyte migration and adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "To further characterize the Icam1-expressing REVs, we performed gene ontology (GO) term enrichment analysis and revealed that 663 genes (Padj <0.05) predominantly expressed in this cell population were significantly enriched in biological processes involving inflammatory/immune responses, cell adhesion, and leukocyte migration and adhesion (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of genes and their enriched GO terms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "2cec9533-cf87-4827-bce7-e4ce985fbe3b",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C18",
+      "claim": "ICAM-1+ REVs are present throughout the cortex of immunologically unchallenged juvenile and adult mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunostaining on 100-\u03bcm thick brain vibratome sections from transgenic reporter mice expressing nuclear green fluorescent protein (GFP) and membrane Tomato specifically in ECs (Cdh5-H2BGFP/tdTomato) (Jeong et al., 2017), we confirmed that ICAM-1+ REVs are present throughout the cortex of immunologically unchallenged juvenile (Figure 2\u2014figure supplement 3D) and adult mouse brain (Figure 2H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the presence of ICAM-1+ REVs in juvenile and adult brains based on immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f4e351ff-e0b2-4d50-a902-595ebddc9de4",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C19",
+      "claim": "ICAM-1+ vessels in the brain parenchyma are predominantly venules with a diameter ranging from 8 to 50 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "ICAM-1+ vessels in the brain parenchyma are predominantly venules with a diameter ranging from 8 to 50 \u03bcm (Figure 2\u2014figure supplement 3E) and low-to-negative coverage by alpha-smooth muscle actin+ (\u03b1SMA+) mural cells (Figure 2I), suggesting that they represent a subpopulation of smaller venules, potentially postcapillary venules where leukocyte extravasation into the brain predominantly occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the diameter range of ICAM-1+ vessels based on measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "dd10a2eb-c99b-408a-94ff-f9afd368c13f",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C20",
+      "claim": "ICAM-1+ vessels show low-to-negative coverage by alpha-smooth muscle actin+ (\u03b1SMA+) mural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ICAM-1+ vessels in the brain parenchyma are predominantly venules with a diameter ranging from 8 to 50 \u03bcm (Figure 2\u2014figure supplement 3E) and low-to-negative coverage by alpha-smooth muscle actin+ (\u03b1SMA+) mural cells (Figure 2I), suggesting that they represent a subpopulation of smaller venules, potentially postcapillary venules where leukocyte extravasation into the brain predominantly occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the mural cell coverage of ICAM-1+ vessels based on immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "ceb11d09-8ed0-44d7-8e8d-e67355c777cf",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C21",
+      "claim": "The cellular frequency of Icam1 and Vcam1 double-positive ECs ranges from 1 to 3% of total ECs in all stages analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "While it was not possible to detect VCAM-1 staining in na\u00efve brains, the cellular frequency of Icam1 and Vcam1 double-positive ECs ranges from 1 to 3% of total ECs in all stages analyzed (Figure 2\u2014figure supplement 3F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the frequency range of double-positive ECs based on single-cell RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "dd3cb35d-b229-42e9-8508-d6621afda1e7",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C22",
+      "claim": "CD3+ lymphocytes accumulate at ICAM-1+ venules 2 hours after LPS injection prior to significant upregulation of ICAM-1 in other endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this revealed the accumulation of CD3+ lymphocytes at ICAM-1+ venules prior to significant upregulation of ICAM-1 in other endothelium (Figure 2\u2014figure supplement 3G), suggesting that the ICAM-1+ vessel subset might serve as the first entry site of the activated leukocytes to the brain parenchyma in settings of neuroinflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the observation of lymphocyte accumulation at ICAM-1+ venules after LPS treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "57e1c4d9-6c56-4eaa-ab93-991bf1c512ba",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C23",
+      "claim": "The ICAM-1+ vessel subset might serve as the first entry site of activated leukocytes to the brain parenchyma in settings of neuroinflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this revealed the accumulation of CD3+ lymphocytes at ICAM-1+ venules prior to significant upregulation of ICAM-1 in other endothelium (Figure 2\u2014figure supplement 3G), suggesting that the ICAM-1+ vessel subset might serve as the first entry site of the activated leukocytes to the brain parenchyma in settings of neuroinflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests this interpretation based on the LPS experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f381f261-3da8-4cef-8ed6-6722316d5e63",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C24",
+      "claim": "CD206 is predominantly expressed by PVMs.",
+      "claim_type": "EXPLICIT",
+      "source": "CD206 is predominantly expressed by PVMs (Figure 3\u2014figure supplement 1D), and CD206+ PVMs are localized between the subendothelial basement membrane and GFAP+ astrocyte processes (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states CD206 as a marker for PVMs based on expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f039d36d-efe0-48a1-9166-d140fd55df5e",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C25",
+      "claim": "CD206+ PVMs are localized between the subendothelial basement membrane and GFAP+ astrocyte processes.",
+      "claim_type": "EXPLICIT",
+      "source": "CD206 is predominantly expressed by PVMs (Figure 3\u2014figure supplement 1D), and CD206+ PVMs are localized between the subendothelial basement membrane and GFAP+ astrocyte processes (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the spatial localization of PVMs based on immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "28c49150-2556-4949-bf42-f15a603a05b7",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C26",
+      "claim": "PVMs are associated with both arteries and veins in the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports showing that PVMs are associated with both arteries and veins in the CNS (Faraco et al., 2017; Faraco et al., 2016), we found PVMs in the proximity of ICAM-1+ vessels in cortex, thalamus, hippocampus, midbrain, and floor plate (Figure 3E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous reports (Faraco et al., 2017; Faraco et al., 2016) and confirms this finding with their own data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "6da85291-7f6c-4ef3-82dc-edcefd86820b",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C27",
+      "claim": "PVMs are found in the proximity of ICAM-1+ vessels in cortex, thalamus, hippocampus, midbrain, and floor plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports showing that PVMs are associated with both arteries and veins in the CNS (Faraco et al., 2017; Faraco et al., 2016), we found PVMs in the proximity of ICAM-1+ vessels in cortex, thalamus, hippocampus, midbrain, and floor plate (Figure 3E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the brain regions where PVMs were found near ICAM-1+ vessels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "ba4c910e-c53e-4d2a-b9a8-80bae498b712",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C28",
+      "claim": "At least two different PVM populations were identified: Lyve1+ and MHC class II+ (MHCII+) PVMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Subclustering analysis indicated at least two different PVM populations, namely Lyve1+ and MHC class II+ (MHCII+) PVMs (Figure 4A\u2013C), and differential gene expression analysis revealed unique transcriptomic landscapes of the two subtypes (Figure 4D, Figure 4\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies two PVM subtypes based on subclustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "300316ab-8463-4b34-9d40-51848dbbac0e",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C29",
+      "claim": "Lyve1+ PVMs show enriched expression of genes associated with lysosome activity and endocytosis as well as Wnt signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GSEA for KEGG signalling pathways indicates that Lyve1+ PVMs show enriched expression of genes associated with lysosome activity and endocytosis as well as Wnt signalling, whereas MHCII+ PVMs show enrichment of terms such as antigen processing and presentation, cell adhesion molecules, and Toll-like receptor signalling pathway (Figure 4F, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the GSEA results for Lyve1+ PVMs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "ea109d46-85de-4055-9c4f-9a4589e19aa2",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C30",
+      "claim": "MHCII+ PVMs show enrichment of terms such as antigen processing and presentation, cell adhesion molecules, and Toll-like receptor signalling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GSEA for KEGG signalling pathways indicates that Lyve1+ PVMs show enriched expression of genes associated with lysosome activity and endocytosis as well as Wnt signalling, whereas MHCII+ PVMs show enrichment of terms such as antigen processing and presentation, cell adhesion molecules, and Toll-like receptor signalling pathway (Figure 4F, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the GSEA results for MHCII+ PVMs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "38d7468e-065e-4cb2-ad6e-ac87c852885b",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C31",
+      "claim": "Lyve1+ PVMs express anti-inflammatory or immune-suppressive (M2 macrophage-like) polarization genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Lyve1+ PVMs express anti-inflammatory or immune-suppressive (M2 macrophage-like) polarization genes, such as Ccr1, Cd163, Cd209a/f, Cd302, Igf1, Il21r, Mrc1, Stab1, Tgfb1, and Tslp, while MHCII+ PVMs show increased levels of proinflammatory (M1-like) genes, Cxcl9, Cxcl10, Cxcl13, Cxcl16, Irf5, Il1a/b, Cxcr4, Il2ra, and Tlr2 (Figure 4G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists M2-like genes expressed by Lyve1+ PVMs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "5805a52c-c486-4fc8-a94f-f2de7b189a3a",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C32",
+      "claim": "MHCII+ PVMs show increased levels of proinflammatory (M1-like) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Lyve1+ PVMs express anti-inflammatory or immune-suppressive (M2 macrophage-like) polarization genes, such as Ccr1, Cd163, Cd209a/f, Cd302, Igf1, Il21r, Mrc1, Stab1, Tgfb1, and Tslp, while MHCII+ PVMs show increased levels of proinflammatory (M1-like) genes, Cxcl9, Cxcl10, Cxcl13, Cxcl16, Irf5, Il1a/b, Cxcr4, Il2ra, and Tlr2 (Figure 4G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists M1-like genes expressed by MHCII+ PVMs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "facdff5f-73ff-40ab-856e-5490751c789c",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C33",
+      "claim": "Both PVM subtypes are found at all stages investigated, but the frequency of MHCII+ PVMs increases with ageing, which correlates with a decrease in the frequency of Lyve1+ PVMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both PVM subtypes are found at all stages investigated, but the frequency of MHCII+ PVMs increases with ageing, which correlates with a decrease in the frequency of Lyve1+ PVMs (Figure 4H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the age-related changes in PVM subtype frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "596c25ef-6ce1-4935-9fce-7ccad331ff44",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C34",
+      "claim": "The expression levels of MHCII genes are upregulated in aged PVMs, whereas Lyve1 or Ccl24 expression is downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only the cell population but also the expression levels of MHCII genes are upregulated, whereas Lyve1 or Ccl24 expression is downregulated in aged PVMs (Figure 4I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes gene expression changes in aged PVMs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "52a64fa7-f307-43ba-9bee-d87d1d63af8f",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C35",
+      "claim": "Brain-infiltrating inflammatory cells, activated macrophages, neutrophils, and lymphocytes were significantly enriched in EAE compared to age-matched control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to age-matched control mice, brain-infiltrating inflammatory cells, activated macrophages, neutrophils, and lymphocytes were significantly enriched in EAE (Figure 5\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the enrichment of inflammatory cells in EAE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "9f1f7293-05e0-4486-aac6-0d6564c13a73",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C36",
+      "claim": "EAE mice show onset of disease symptoms between 9 and 12 days and peak disease severity between 14 and 18 days after immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "EAE mice show onset of disease symptoms between 9 and 12 days and peak disease severity between 14 and 18 days after immunization with significant reduction of myelin basic protein (MBP) levels in the brain cortex (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the timeline of EAE disease progression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "d2a9a32d-b7e4-41c3-9edd-6380846369d2",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C37",
+      "claim": "EAE mice show significant reduction of myelin basic protein (MBP) levels in the brain cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "EAE mice show onset of disease symptoms between 9 and 12 days and peak disease severity between 14 and 18 days after immunization with significant reduction of myelin basic protein (MBP) levels in the brain cortex (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the reduction in MBP levels in EAE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "9a5c83ee-58ae-452e-b4da-b8807b9b3415",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C38",
+      "claim": "Inflammatory ECs emerge upon neuroinflammation in EAE.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparative analysis of ECs from healthy adults vs. peak EAE indicates the emergence of inflammatory ECs upon neuroinflammation (Figure 5A, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the emergence of inflammatory ECs in EAE based on comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "d4083247-ec84-4a6c-920a-6610648d8b4d",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C39",
+      "claim": "Inflammatory ECs share the molecular features of CapV but show higher level of genes related to immune responses such as Ctla2, Lcn2, and Mt2.",
+      "claim_type": "EXPLICIT",
+      "source": "These ECs share the molecular features of CapV (Figure 5\u2014figure supplement 2B) but show higher level of genes related to immune responses such as Ctla2, Lcn2, and Mt2 (Figure 5\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the characteristics of inflammatory ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "5a64205a-eceb-48bb-8b58-a8f3192cb2b7",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C40",
+      "claim": "REV-specific marker genes, Icam1 and Lrg1, are upregulated in inflammatory ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "REV-specific marker genes, Icam1 and Lrg1 are also upregulated in inflammatory ECs (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the upregulation of Icam1 and Lrg1 in inflammatory ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "70880e01-ef6c-4c70-8b03-cd30c91c9e2a",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C41",
+      "claim": "Both the area and level of endothelial ICAM-1 expression are increased in EAE.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with published reports (Dopp et al., 1994), both the area and level of endothelial ICAM-1 expression are increased in EAE (Figure 5C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the increase in ICAM-1 expression in EAE, consistent with Dopp et al., 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f6d95fd7-a9c1-487f-b8a1-5ba0d9d59c80",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C42",
+      "claim": "ICAM-1 expression in the brain parenchyma persists in REVs and, in peak EAE, expands into adjacent vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ICAM-1 expression in the brain parenchyma persists in REVs and, in peak EAE, expands into adjacent vessels (Figure 5C, Figure 5\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the pattern of ICAM-1 expression expansion in EAE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "0fb8540c-0e6c-4503-abaf-a0e97203333c",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C43",
+      "claim": "High levels of ICAM-1 expression in ECs promote transcellular diapedesis of encephalitogenic T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that high levels of ICAM-1 expression in ECs promote transcellular diapedesis of encephalitogenic T cells and, in absence of endothelial ICAM-1 and ICAM-2 in mutant mice, EAE symptoms were ameliorated (Abadier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Abadier et al., 2015 as reporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "3c4e947f-006d-4d33-89a3-35f0fa36c6d6",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C44",
+      "claim": "In absence of endothelial ICAM-1 and ICAM-2 in mutant mice, EAE symptoms were ameliorated.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that high levels of ICAM-1 expression in ECs promote transcellular diapedesis of encephalitogenic T cells and, in absence of endothelial ICAM-1 and ICAM-2 in mutant mice, EAE symptoms were ameliorated (Abadier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Abadier et al., 2015 as reporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "08df9058-8964-43e3-8ae5-64b69c1120bf",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C45",
+      "claim": "Upon EAE, leukocytes accumulate at ICAM-1+ REVs and enter the adjacent brain parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, upon EAE, leukocytes accumulate at ICAM-1+ REVs and enter the adjacent brain parenchyma (Figure 5E, Figure 5\u2014figure supplement 3B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes leukocyte accumulation at REVs in EAE based on immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "21522825-c499-4258-ace6-de0b9b522c2b",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C46",
+      "claim": "EAE alters gene expression in REVs, including significant upregulation of regulators of blood vessel development such as Pdgfb and Ctgf.",
+      "claim_type": "EXPLICIT",
+      "source": "EAE alters gene expression in REVs (Figure 5\u2014figure supplement 4A, B), including significant upregulation of regulators of blood vessel development, such as Pdgfb and Ctgf, Cd74 antigen (invariant polypeptide of the major histocompatibility complex, class II antigen-associated), the hemostasis regulator Vwf, an interferon gamma-stimulated gene mediating host immune responses (Ch25h), a gene involved in the cellular stress response (Maff), and numerous other genes related to antigen processing and presentation as well as cellular responses to hydrogen peroxide or radiation (Figure 5\u2014figure supplement 4C, D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists genes upregulated in REVs during EAE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "dc49e7c4-300d-4715-ad55-89e22c0d8047",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C47",
+      "claim": "ICAM-1+ postcapillary venules or REVs are molecularly specialized and function as a gateway for the entry of activated leukocytes through the BBB.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results indicate that ICAM-1+ postcapillary venules or REVs are molecularly specialized and function as a gateway for the entry of activated leukocytes through the BBB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on the collective results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "ed2444f6-c7e4-43d7-957e-4cdcd8799d3a",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C48",
+      "claim": "PVMs rarely proliferate in adult and EAE mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of PVMs in adult and EAE mice indicates that these cells rarely proliferate (Figure 6\u2014figure supplement 1A), and their morphology and localization around ICAM-1+ REVs persist in EAE (Figure 6A and B and Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that PVMs rarely proliferate based on cell cycle analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "dfc3547c-983b-49f1-b02c-40ac7c4881da",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C49",
+      "claim": "PVM morphology and localization around ICAM-1+ REVs persist in EAE.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of PVMs in adult and EAE mice indicates that these cells rarely proliferate (Figure 6\u2014figure supplement 1A), and their morphology and localization around ICAM-1+ REVs persist in EAE (Figure 6A and B and Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that PVM localization persists in EAE based on immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "cd3798dd-4f1e-49a9-9cc3-26523ccb01e5",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C50",
+      "claim": "EAE induces profound changes in PVM gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, EAE induces profound changes in PVM gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that EAE causes profound gene expression changes in PVMs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f008a669-bda1-462f-b898-5f666a6d2042",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C51",
+      "claim": "MHCII+ PVM-enriched genes, such as Cxcl16, Ccl8, Cd52, and MHCII genes, are significantly upregulated in most of the PVMs in EAE.",
+      "claim_type": "EXPLICIT",
+      "source": "MHCII+ PVM-enriched genes, such as Cxcl16, Ccl8, Cd52, and MHCII genes, are significantly upregulated in most of the PVMs, whereas Lyve1+ PVM-enriched genes, namely Lyve1, Igf1, Cd163, Ccl24, Folr1, and Cd209f, are not changed or decreased (Figure 6D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes gene expression changes in PVMs during EAE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "8638d949-79a6-4904-994e-6359726e8edd",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C52",
+      "claim": "Lyve1+ PVM-enriched genes, namely Lyve1, Igf1, Cd163, Ccl24, Folr1, and Cd209f, are not changed or decreased in EAE.",
+      "claim_type": "EXPLICIT",
+      "source": "MHCII+ PVM-enriched genes, such as Cxcl16, Ccl8, Cd52, and MHCII genes, are significantly upregulated in most of the PVMs, whereas Lyve1+ PVM-enriched genes, namely Lyve1, Igf1, Cd163, Ccl24, Folr1, and Cd209f, are not changed or decreased (Figure 6D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes gene expression changes in PVMs during EAE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "bf7526bf-7bf0-4d7a-a0e7-8650df151c28",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C53",
+      "claim": "Polarization of macrophages toward inflammatory and non-inflammatory phenotypes is not fixed, and these cells possess plasticity, integrating diverse inflammatory signals with physiological and pathological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the hypothesis that polarization of macrophages toward inflammatory and non-inflammatory phenotypes is not fixed, and that these cells possess plasticity, integrating diverse inflammatory signals with physiological and pathological functions (Jord\u00e3o et al., 2019; Murray, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this interpretation is supported by their data and cites Jord\u00e3o et al., 2019 and Murray, 2017.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "06fddb33-1bb5-48f0-adf9-74a5dda97065",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C54",
+      "claim": "REVs show expression of various autologous signalling molecules regulating fundamental aspects of EC behavior, including Wnt5a, Tnfsf12, Tgfb1, Jag1, collagens, and immune-regulatory genes with their corresponding receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "REVs show expression of various autologous signalling molecules regulating fundamental aspects of EC behavior, including Wnt5a, Tnfsf12, Tgfb1, Jag1, collagens, and immune-regulatory genes with their corresponding receptors (Figure 7A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists autologous signaling molecules expressed by REVs based on CellPhoneDB analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e35899af-cd88-4f8f-8e4a-1380ef025446",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C55",
+      "claim": "CapV and venous ECs express higher level of Esam, which encodes EC-selective adhesion molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "CapV and venous ECs express higher level of Esam, which encodes EC-selective adhesion molecule, an immunoglobulin-like transmembrane protein associated with endothelial tight junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the expression of Esam in CapV and venous ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e088d467-dd56-4ed2-9450-27ac1bd7b279",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C56",
+      "claim": "CapV and venous ECs express the chemokine Cxcl12 and REVs express the corresponding receptor Ackr3 encoding CXCR-7.",
+      "claim_type": "EXPLICIT",
+      "source": "CapV and venous ECs also express the chemokine, and Cxcl12 and REVs express the corresponding receptor Ackr3 encoding CXCR-7, which might enable communication between EC subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes this ligand-receptor pair between EC subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "23e04a6e-70e4-4a72-b42c-4bb5ec296d50",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C57",
+      "claim": "REVs are a major signal distributor among the EC populations in CNS, which is further enhanced by EAE.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also suggest that REVs are a major signal distributor among the EC populations in CNS, which is further enhanced by EAE (Figure 7C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests this interpretation based on the ligand-receptor interaction analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "065624c9-d6ab-4417-8bc6-378d0df6b98d",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C58",
+      "claim": "REVs express growth factors including PDGF-B, CTGF, and TGF\u03b21, which regulate cellular behavior, tissue remodelling, and angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, REVs express growth factors including PDGF-B, CTGF, and TGF\u03b21, which regulate cellular behavior, tissue remodelling, and angiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists growth factors expressed by REVs and their functions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "731756a2-772b-40b0-8514-db2c378686b7",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C59",
+      "claim": "Signalling from REVs to other cell types is further enhanced by EAE, which involves the activation of various signals in astroependymal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Signalling to other cell types is further enhanced by EAE, which involves the activation of various signals in astroependymal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes enhanced signaling in EAE based on ligand-receptor analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "8d276418-4839-4e29-ad34-553301bf71b5",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C60",
+      "claim": "Expression of PDGF-A, IGF2, and PGF in mural cells and of IGF1, TGFB1, and IGFBP4 in PVMs was not significantly changed upon EAE.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, expression of PDGF-A, IGF2, and PGF in mural cells and of IGF1, TGFB1, and IGFBP4 in PVMs, for example, was not significantly changed upon EAE (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that certain genes in mural cells and PVMs did not change in EAE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e85d48b1-f6f1-4b78-9bfa-e63efbb5631a",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C61",
+      "claim": "Postcapillary venules form a specialized vessel compartment in the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results collectively suggest that postcapillary venules form a specialized vessel compartment in the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion based on collective results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "4328779c-1ba0-48b4-888a-ac550c303db7",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C62",
+      "claim": "REVs might play roles in the regulation of immune surveillance in the CNS not only under homeostatic conditions but also in pathogenic neuroinflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that REVs might play roles in the regulation of immune surveillance in the CNS not only under homeostatic conditions but also in pathogenic neuroinflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this role for REVs based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "b6e79117-dc6d-4902-90cf-ff1f85ecaf13",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C63",
+      "claim": "The blood-brain barrier (BBB) limits the entry of leukocytes and potentially harmful substances from the circulation into the central nervous system (CNS).",
+      "claim_type": "EXPLICIT",
+      "source": "The blood-brain barrier (BBB) limits the entry of leukocytes and potentially harmful substances from the circulation into the central nervous system (CNS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this fundamental function of the BBB in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "ccfe14c0-7989-4fb0-9534-2b3a313e3846",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C64",
+      "claim": "BBB defects are a hallmark of many neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "While BBB defects are a hallmark of many neurological disorders, the cellular heterogeneity at the neurovascular interface, and the mechanisms governing neuroinflammation are not fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this in the abstract as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "4ef9865e-ac0c-468f-9abc-2afb8dd069d3",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C65",
+      "claim": "The cellular heterogeneity at the neurovascular interface and the mechanisms governing neuroinflammation are not fully understood.",
+      "claim_type": "EXPLICIT",
+      "source": "While BBB defects are a hallmark of many neurological disorders, the cellular heterogeneity at the neurovascular interface, and the mechanisms governing neuroinflammation are not fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this knowledge gap in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "20bd926b-bce7-40ea-bafc-5211e36b04a7",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C66",
+      "claim": "The BBB controls the entry of a wide range of molecules from the circulation into the CNS and thereby maintains the appropriate chemical and cellular composition of the neuronal 'milieu'.",
+      "claim_type": "EXPLICIT",
+      "source": "The blood-brain barrier (BBB) controls the entry of a wide range of molecules from the circulation into the central nervous system (CNS) and thereby maintains the appropriate chemical and cellular composition of the neuronal 'milieu', which is required for the correct function of synapses and neuronal circuits (Zlokovic, 2008; Zlokovic, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Zlokovic, 2008 and Zlokovic, 2010 as sources for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "931c2d6c-50f4-48c4-baf8-d0d33a18c386",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C67",
+      "claim": "The BBB protects the brain against the entry of leukocytes and potentially harmful substances, a function that is compromised in conditions such as multiple sclerosis, cancer, after stroke, or in response to physical brain damage.",
+      "claim_type": "EXPLICIT",
+      "source": "The BBB also protects the brain against the entry of leukocytes and potentially harmful substances, a function that is compromised in conditions such as multiple sclerosis, cancer, after stroke, or in response to physical brain damage (Arvanitis et al., 2020; Lopes Pinheiro et al., 2016; Thal and Neuhaus, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Arvanitis et al., 2020; Lopes Pinheiro et al., 2016; Thal and Neuhaus, 2014 as sources for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "9ee14c4f-fe1c-466a-8e9b-47e413cfa766",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C68",
+      "claim": "The neurovascular unit is comprised of different cell types including endothelial cells (ECs), pericytes, and astrocytes, which are all located in close proximity and presumably affect each other through reciprocal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurovascular unit, the anatomical structure underlying the BBB, comprised different cell types including endothelial cells (ECs), pericytes, and astrocytes, which are all located in close proximity and presumably affect each other through reciprocal interactions (Armulik et al., 2011; Liebner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Armulik et al., 2011 and Liebner et al., 2018 as sources for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "8031c025-2b2b-4853-b153-c2a03ab96d17",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C69",
+      "claim": "Leukocyte extravasation generally occurs in postcapillary venules of the skin, muscle, and mesentery, whereas in lung and liver this process is confined to microcapillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has established that leukocyte extravasation \u2013 the exit from the blood stream into the tissue \u2013 generally occurs in postcapillary venules of the skin, muscle, and mesentery, whereas in lung and liver this process is confined to microcapillaries (Strell and Entschladen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Strell and Entschladen, 2008 as the source for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "c8027535-1f73-427c-b0db-949207ade2b5",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C70",
+      "claim": "Even in the absence of neuroinflammation, peripherally activated circulating T cells can cross the endothelium of postcapillary vessels and reach the adjacent subarachnoid space.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the absence of neuroinflammation, peripherally activated circulating T cells can cross the endothelium of postcapillary vessels and reach the adjacent subarachnoid space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "812ddf3b-572e-4c79-af34-123a05f68421",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C71",
+      "claim": "T cells in the subarachnoid space can encounter tissue resident antigen-presenting cells (APCs), but they are unable to traverse the astrocytic basement membrane and glia limitans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, T cells can encounter tissue resident antigen-presenting cells (APCs), but they are unable to traverse the astrocytic basement membrane and glia limitans (Mapunda et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Mapunda et al., 2022 as the source for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "cbb01fb9-bd6c-427d-ac9d-f602ca739ac4",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C72",
+      "claim": "In the absence of cognate antigen presented by APCs, T cells undergo apoptosis or re-enter the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of cognate antigen presented by APCs, T cells undergo apoptosis or re-enter the circulation (Mastorakos and McGavern, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Mastorakos and McGavern, 2019 as the source for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "69f0779c-2dea-47e9-ad46-a9987c52738b",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C73",
+      "claim": "Brain ECs demonstrate similar gene expression changes in various BBB dysfunction models, suggesting a common mechanism for compromised BBB function throughout different neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, brain ECs demonstrate similar gene expression changes in various BBB dysfunction models, suggesting a common mechanism for compromised BBB function throughout different neurological disorders (Munji et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Munji et al., 2019 as the source for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "994097f7-3bda-402e-afde-a31d0bae6dfa",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C74",
+      "claim": "One critical technical issue is the low abundance of vascular cells relative to neural cell types in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these important insights, the molecular heterogeneity of vascular cells and their dynamic modulation, which is critical for BBB function (Villabona-Rueda et al., 2019), remains insufficiently understood. One critical technical issue is the low abundance of vascular cells relative to neural cell types in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies this as a technical challenge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f6b37298-1145-41d8-9178-b8eb392ba462",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C75",
+      "claim": "A protocol was established for the depletion of neurons and oligodendrocytes prior to droplet-based single-cell transcriptome analysis of non-neuronal cells in mouse cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have established a protocol for the depletion of neurons and oligodendrocytes prior to droplet-based single-cell transcriptome analysis of non-neuronal cells in mouse cerebral cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the methodological approach developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "a44e9093-7e13-421f-a697-27e65729ba46",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C76",
+      "claim": "A comprehensive resource of vascular gene expression at single-cell resolution was generated during postnatal development, adulthood, ageing, and in experimental autoimmune encephalomyelitis (EAE).",
+      "claim_type": "EXPLICIT",
+      "source": "We have generated a comprehensive resource of vascular gene expression at single-cell resolution during postnatal development, adulthood, ageing, and in the demyelinating neuroinflammatory condition of experimental autoimmune encephalomyelitis (EAE), a mouse model of human multiple sclerosis (Ben-Nun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the scope of the dataset generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "2f88be97-e493-4e14-920b-55f26b2b2bdf",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C77",
+      "claim": "EAE is a mouse model of human multiple sclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We have generated a comprehensive resource of vascular gene expression at single-cell resolution during postnatal development, adulthood, ageing, and in the demyelinating neuroinflammatory condition of experimental autoimmune encephalomyelitis (EAE), a mouse model of human multiple sclerosis (Ben-Nun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Ben-Nun et al., 2014 as the source for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "b8656554-08cc-4343-abd6-154702fc253c",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C78",
+      "claim": "The data can be interrogated at single-cell.mpi-muenster.mpg.de.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulting data, which can be interrogated at single-cell.mpi-muenster.mpg.de, provides useful insights into the cellular and molecular heterogeneity of blood vessels in brain and permits identification of functionally specialized reactive postcapillary venules (REVs), which we propose to regulate the infiltration of activated leukocytes during neuroinflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the URL for data access.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "3993a973-e9be-49fd-91c1-76eb1b873cf4",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C79",
+      "claim": "A computational framework was used to construct a detailed cell-to-cell intercommunication map of the brain vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a computational framework, we have also constructed a detailed cell-to-cell intercommunication map of the brain vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the construction of an intercommunication map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "11f16608-3a3b-48bd-880e-893d2404849d",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C80",
+      "claim": "Neurons and oligodendrocytes were depleted using a bovine serum albumin (BSA)-gradient method.",
+      "claim_type": "EXPLICIT",
+      "source": "To enrich vascular and vessel wall-associated cell types while preserving the heterogeneity of these populations, we depleted myelin-associated neurons and oligodendrocytes, the most abundant cell types in CNS, using a bovine serum albumin (BSA)-gradient method (Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the depletion method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "aa270c17-d5c3-4aa8-9a4a-a1bfbf3e8286",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C81",
+      "claim": "Postcapillary venules are the main site of leukocyte extravasation in most tissues and in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Postcapillary venules are the main site of leukocyte extravasation, in most tissues and in the brain, are associated with a perivascular space, defined by the inner endothelial and outer parenchyma or astroglial basement membranes, where activated leukocytes accumulate before entry into the brain parenchyma (Sixt et al., 2001; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Sixt et al., 2001 and Zhang et al., 2020 as sources for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "1338a118-9f33-4eab-a11c-17198749d078",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C82",
+      "claim": "Postcapillary venules are associated with a perivascular space, defined by the inner endothelial and outer parenchyma or astroglial basement membranes, where activated leukocytes accumulate before entry into the brain parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "Postcapillary venules are the main site of leukocyte extravasation, in most tissues and in the brain, are associated with a perivascular space, defined by the inner endothelial and outer parenchyma or astroglial basement membranes, where activated leukocytes accumulate before entry into the brain parenchyma (Sixt et al., 2001; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Sixt et al., 2001 and Zhang et al., 2020 as sources for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "2da9ea27-f0de-4a23-94a8-a0cceda8588b",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C83",
+      "claim": "PVMs are derived from early yolk-sac-derived erythromyeloid progenitors, similar to microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that PVMs are derived from early yolk-sac-derived erythromyeloid progenitors, similar to microglia and have minimal turnover during homeostasis (Goldmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Goldmann et al., 2016 as the source for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f2901d0c-f6c6-4e12-940c-d2a886608df8",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C84",
+      "claim": "PVMs have minimal turnover during homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that PVMs are derived from early yolk-sac-derived erythromyeloid progenitors, similar to microglia and have minimal turnover during homeostasis (Goldmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Goldmann et al., 2016 as the source for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "69de6786-7594-4c25-8d4a-d6a029573cf9",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C85",
+      "claim": "PVMs retain distinct molecular characteristics relative to infiltrating peripheral macrophages even though all these cells are exposed to the same perivascular microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, PVMs retain distinct molecular characteristics relative to infiltrating peripheral macrophages even though all these cells are exposed to the same perivascular microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e476c1e5-be6c-4554-a44f-d29962708c96",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C86",
+      "claim": "Delivery of drugs or therapeutic cells (e.g. chimeric antigen receptor T cells) across the BBB is a limiting factor in the future development of new therapeutics for brain diseases, such as Alzheimer's disease and various brain tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Delivery of drugs or therapeutic cells (e.g. chimeric antigen receptor T cells) across the BBB is a limiting factor in the future development of new therapeutics for the brain diseases, such as Alzheimer's disease and various brain tumours (Pardridge, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Pardridge, 2019 as the source for this information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f52f176a-82ce-46b6-a453-5ca7906d0c33",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C87",
+      "claim": "REVs are characterized by consistent expression of cell adhesion molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Through single-cell RNA sequencing of non-neuronal cell populations of the murine cerebral cortex during development, adulthood, ageing, and neuroinflammation, we identify reactive endothelial venules, a compartment of specialized postcapillary endothelial cells that are characterized by consistent expression of cell adhesion molecules, preferential leukocyte transmigration, association with perivascular macrophage populations, and endothelial activation initiating CNS immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists this as a characteristic of REVs in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e29d2cd8-d121-4f7d-9d8e-4f6d4a24c230",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C88",
+      "claim": "REVs show preferential leukocyte transmigration.",
+      "claim_type": "EXPLICIT",
+      "source": "Through single-cell RNA sequencing of non-neuronal cell populations of the murine cerebral cortex during development, adulthood, ageing, and neuroinflammation, we identify reactive endothelial venules, a compartment of specialized postcapillary endothelial cells that are characterized by consistent expression of cell adhesion molecules, preferential leukocyte transmigration, association with perivascular macrophage populations, and endothelial activation initiating CNS immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists this as a characteristic of REVs in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "03f28bca-866a-439f-8a5a-4e9ad3c8db42",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C89",
+      "claim": "REVs are associated with perivascular macrophage populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Through single-cell RNA sequencing of non-neuronal cell populations of the murine cerebral cortex during development, adulthood, ageing, and neuroinflammation, we identify reactive endothelial venules, a compartment of specialized postcapillary endothelial cells that are characterized by consistent expression of cell adhesion molecules, preferential leukocyte transmigration, association with perivascular macrophage populations, and endothelial activation initiating CNS immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists this as a characteristic of REVs in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "37838de2-a002-46f0-bf1e-0dadc2f60423",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "claim_id": "C90",
+      "claim": "REVs show endothelial activation initiating CNS immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Through single-cell RNA sequencing of non-neuronal cell populations of the murine cerebral cortex during development, adulthood, ageing, and neuroinflammation, we identify reactive endothelial venules, a compartment of specialized postcapillary endothelial cells that are characterized by consistent expression of cell adhesion molecules, preferential leukocyte transmigration, association with perivascular macrophage populations, and endothelial activation initiating CNS immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists this as a characteristic of REVs in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a5efe438-b542-40c2-9b9b-7aabe8bf2ca9",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established a protocol for enriching non-neuronal cells from mouse cerebral cortex by depleting neurons and oligodendrocytes using a BSA-gradient method, and analyzed 29,406 single cells from three age groups (juvenile, adult, aged), identifying six non-neuronal cell types based on known marker genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C75, and C80 collectively describe the methodological approach and cell type identification. The BSA-gradient depletion method is explicitly described (C80), cell numbers are provided with quality control (C1), six cell types are identified with specific markers (C2-C3), and marker expression is consistent across ages (C4). The approach is well-documented with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e327b946-3616-4bc2-85dc-fbc66341d197",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Juvenile endothelial cells were classified into six subclusters (arterial, CapA, CapV, venous, mitotic, and tip ECs), with pseudotime analysis confirming that tip and mitotic ECs emerge from veins and are incorporated into arteries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 describe EC subtype classification in juvenile samples. The identification of six subclusters is explicit (C5), and the venous origin of tip/mitotic cells is supported by pseudotime analysis and consistent with prior literature (C6). The trajectory analysis provides computational support for the developmental relationships.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "4fa179e5-9041-4182-85c9-952332d9d583",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adult and aged ECs show high overall similarity (Spearman correlation = 0.9852) but 407 differentially expressed genes, with GSEA indicating aged ECs undergo molecular changes toward a proinflammatory state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 describe age-related changes in ECs. The high correlation coefficient (C7) and specific number of differentially expressed genes with statistical threshold (C8) are provided. GSEA results for both adult (C9) and aged (C10) ECs support the interpretation of proinflammatory shift (C11), which is consistent with cited literature (Chen et al., 2020).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A distinctive subpopulation of venous ECs termed REVs (reactive endothelial venules) was identified, characterized by expression of Icam1, Vcam1, Vwf, and Irf1, representing 1-3% of total ECs, with vessel diameters of 8-50 \u03bcm and low mural cell coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C16-C21, and C87 collectively characterize REVs. The identification is based on single-cell transcriptomics (C12-C13, C16), GO enrichment analysis of 663 genes (C17), immunostaining validation (C18), morphological measurements (C19-C20), and frequency quantification (C21). Multiple independent lines of evidence support the existence and characterization of this cell population.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "28fe59ce-e6fb-4576-93d7-5d9462a43c89",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CD3+ lymphocytes accumulate at ICAM-1+ venules 2 hours after LPS injection prior to significant upregulation of ICAM-1 in other endothelium, suggesting REVs might serve as the first entry site for activated leukocytes during neuroinflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C22 describes an observation from LPS treatment, while C23 is a speculative interpretation. The observation is explicit, but the interpretation as 'first entry site' is not definitively demonstrated. The experiment shows temporal association but does not prove causality or exclude other entry sites. Additional functional experiments would be needed to support this mechanistic claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "0c94eda7-994e-4d70-a0ac-eda406646660",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Perivascular macrophages (PVMs) expressing CD206 are localized between the endothelial and astrocytic basement membranes, associated with both arteries and veins, and found in proximity to ICAM-1+ REVs across multiple brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 and C89 describe PVM localization and association with REVs. CD206 expression is validated (C24), spatial localization is demonstrated by immunostaining (C25), association with both vessel types is confirmed and consistent with prior literature (C26), and regional distribution is documented (C27). Multiple imaging modalities support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Two PVM subtypes were identified: Lyve1+ PVMs expressing M2-like anti-inflammatory genes and MHCII+ PVMs expressing M1-like proinflammatory genes, with the frequency of MHCII+ PVMs increasing with aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 characterize PVM heterogeneity. Subclustering identifies two populations (C28), GSEA reveals distinct functional profiles (C29-C30), specific M1/M2-like gene expression is documented (C31-C32), and age-related frequency changes are quantified (C33-C34). The data support functional specialization of PVM subtypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "f228e712-4586-4588-b649-c671db8bdd71",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the EAE neuroinflammation model, inflammatory ECs emerge with upregulated REV markers (Icam1, Lrg1), ICAM-1 expression expands from REVs to adjacent vessels, leukocytes accumulate at ICAM-1+ REVs, and gene expression changes indicate REVs function as gateways for leukocyte entry through the BBB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C42, C45-C47, and C88 describe REV behavior in EAE. The EAE model is well-characterized (C35-C37), inflammatory EC emergence is documented (C38-C40), ICAM-1 expansion is shown by immunostaining (C41-C42), leukocyte accumulation is demonstrated (C45), and gene expression changes support the gateway function (C46-C47). Multiple complementary approaches support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "e6f3cd52-645b-45b9-ac92-6fae21903054",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PVMs rarely proliferate in EAE but undergo profound gene expression changes, with upregulation of MHCII+ markers and downregulation of Lyve1+ markers, supporting macrophage plasticity in response to inflammatory signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 describe PVM responses to EAE. Cell cycle analysis shows minimal proliferation (C48), localization persists (C49), but gene expression changes dramatically (C50-C52). The interpretation of plasticity (C53) is supported by the data and consistent with cited literature. The findings demonstrate phenotypic switching rather than replacement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cell-to-cell communication analysis using CellPhoneDB reveals REVs express autologous signaling molecules and growth factors, function as major signal distributors among EC populations, and show enhanced signaling to other cell types in EAE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 and C79 describe intercellular communication. CellPhoneDB analysis identifies ligand-receptor pairs (C54-C56), supports REVs as signal hubs (C57), documents growth factor expression (C58), shows EAE-enhanced signaling (C59), and provides negative controls (C60). The computational framework (C79) is appropriate for this analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "51a1299b-bdc7-4daa-bb31-3de21146201f",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that postcapillary venules form a specialized vessel compartment in the CNS, with REVs regulating immune surveillance under homeostatic conditions and during neuroinflammation through endothelial activation initiating CNS immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 and C90 represent the main conclusions. The collective data from REV characterization, PVM association, leukocyte accumulation, and EAE responses support the specialized compartment concept (C61). The proposed regulatory role (C62, C90) is well-supported by the presented evidence, though some mechanistic details remain to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "8aeec13b-43c5-4352-b8f2-348b421e8ad3",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature reports that ICAM-1 is essential for transcellular diapedesis, is suppressed by sonic hedgehog signaling during homeostasis, and that absence of endothelial ICAM-1/ICAM-2 ameliorates EAE symptoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 and C43-C44 cite prior work (Abadier et al., 2015; Alvarez et al., 2011). These are appropriately attributed to the original sources and provide context for the current findings. The citations appear accurate based on the described findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "aae03ad7-09b8-41fc-8207-4e32f1b65390",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A comprehensive single-cell transcriptomic resource of vascular gene expression was generated across development, adulthood, aging, and EAE, made publicly available at single-cell.mpi-muenster.mpg.de.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C78 describe the dataset scope and availability. The comprehensive nature is supported by the cell numbers and conditions analyzed (C1, C35-C37), and public data access is explicitly stated (C78). This represents a valuable resource for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "13f9b8fa-a91e-4268-853e-ca80d07f86d2",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PVMs retain distinct molecular characteristics relative to infiltrating peripheral macrophages despite exposure to the same perivascular microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by differential gene expression analysis comparing PVMs to infiltrating macrophages in EAE (referenced in C50-C52 context). This demonstrates that cellular identity is maintained despite environmental changes, supporting the concept of cell-intrinsic programming.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    },
+    {
+      "id": "afcb06f1-fcc5-4de4-8a41-316df12dc531",
+      "content_id": "cb4a6277-48b8-4d62-80fa-5b0b503bfdf3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on BBB function, neurovascular unit composition, leukocyte extravasation, immune surveillance mechanisms, and technical challenges in studying vascular cells, citing appropriate literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C74 and C77-C86 represent background knowledge and context from the introduction and discussion. These are appropriately cited and provide necessary context for the study. The citations appear accurate and relevant to the stated claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:06.273675Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3befa272-eb88-4f76-ba3a-987b5be9ee46",
+      "result_id": "a5efe438-b542-40c2-9b9b-7aabe8bf2ca9"
+    },
+    {
+      "claim_id": "63ae6c95-6a18-4b95-84a8-edcfbffdd3c4",
+      "result_id": "a5efe438-b542-40c2-9b9b-7aabe8bf2ca9"
+    },
+    {
+      "claim_id": "b3732f26-af03-44d3-9ace-67c24eedbbcf",
+      "result_id": "a5efe438-b542-40c2-9b9b-7aabe8bf2ca9"
+    },
+    {
+      "claim_id": "94f7a48d-615e-4e8f-8cc6-4eb55c246bfd",
+      "result_id": "a5efe438-b542-40c2-9b9b-7aabe8bf2ca9"
+    },
+    {
+      "claim_id": "f6b37298-1145-41d8-9178-b8eb392ba462",
+      "result_id": "a5efe438-b542-40c2-9b9b-7aabe8bf2ca9"
+    },
+    {
+      "claim_id": "11f16608-3a3b-48bd-880e-893d2404849d",
+      "result_id": "a5efe438-b542-40c2-9b9b-7aabe8bf2ca9"
+    },
+    {
+      "claim_id": "634f9bf3-0f9e-4299-87e7-b82dc611f29f",
+      "result_id": "e327b946-3616-4bc2-85dc-fbc66341d197"
+    },
+    {
+      "claim_id": "4d9abca9-d975-4d75-9273-e1206fb4a6cd",
+      "result_id": "e327b946-3616-4bc2-85dc-fbc66341d197"
+    },
+    {
+      "claim_id": "79283fee-f458-407a-b2cb-c35ae913e538",
+      "result_id": "4fa179e5-9041-4182-85c9-952332d9d583"
+    },
+    {
+      "claim_id": "e1d786b0-934c-4890-aaed-6457b286faf1",
+      "result_id": "4fa179e5-9041-4182-85c9-952332d9d583"
+    },
+    {
+      "claim_id": "d0c705a8-582f-463b-a2c6-8c76abff9caf",
+      "result_id": "4fa179e5-9041-4182-85c9-952332d9d583"
+    },
+    {
+      "claim_id": "4aabbd30-5589-484d-ae92-b8d58a6ea208",
+      "result_id": "4fa179e5-9041-4182-85c9-952332d9d583"
+    },
+    {
+      "claim_id": "37950044-6590-40c9-a2a3-bcec4e8b85a6",
+      "result_id": "4fa179e5-9041-4182-85c9-952332d9d583"
+    },
+    {
+      "claim_id": "291ca20b-cf11-4ce7-a766-666f67fe612f",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "c1f65f2c-5ef0-42dc-8b13-fe2ac310c71a",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "f7e7e44e-a161-45cc-a3cc-d30ce5fac8b0",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "2c1fa249-bb15-4491-8e47-e6eaf9b2bd9b",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "2cec9533-cf87-4827-bce7-e4ce985fbe3b",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "f4e351ff-e0b2-4d50-a902-595ebddc9de4",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "dd10a2eb-c99b-408a-94ff-f9afd368c13f",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "ceb11d09-8ed0-44d7-8e8d-e67355c777cf",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "f52f176a-82ce-46b6-a453-5ca7906d0c33",
+      "result_id": "6edf48c9-e6fe-4ae7-acec-975d441c0b63"
+    },
+    {
+      "claim_id": "dd3cb35d-b229-42e9-8508-d6621afda1e7",
+      "result_id": "28fe59ce-e6fb-4576-93d7-5d9462a43c89"
+    },
+    {
+      "claim_id": "57e1c4d9-6c56-4eaa-ab93-991bf1c512ba",
+      "result_id": "28fe59ce-e6fb-4576-93d7-5d9462a43c89"
+    },
+    {
+      "claim_id": "f381f261-3da8-4cef-8ed6-6722316d5e63",
+      "result_id": "0c94eda7-994e-4d70-a0ac-eda406646660"
+    },
+    {
+      "claim_id": "f039d36d-efe0-48a1-9166-d140fd55df5e",
+      "result_id": "0c94eda7-994e-4d70-a0ac-eda406646660"
+    },
+    {
+      "claim_id": "28c49150-2556-4949-bf42-f15a603a05b7",
+      "result_id": "0c94eda7-994e-4d70-a0ac-eda406646660"
+    },
+    {
+      "claim_id": "6da85291-7f6c-4ef3-82dc-edcefd86820b",
+      "result_id": "0c94eda7-994e-4d70-a0ac-eda406646660"
+    },
+    {
+      "claim_id": "03f28bca-866a-439f-8a5a-4e9ad3c8db42",
+      "result_id": "0c94eda7-994e-4d70-a0ac-eda406646660"
+    },
+    {
+      "claim_id": "ba4c910e-c53e-4d2a-b9a8-80bae498b712",
+      "result_id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7"
+    },
+    {
+      "claim_id": "300316ab-8463-4b34-9d40-51848dbbac0e",
+      "result_id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7"
+    },
+    {
+      "claim_id": "ea109d46-85de-4055-9c4f-9a4589e19aa2",
+      "result_id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7"
+    },
+    {
+      "claim_id": "38d7468e-065e-4cb2-ad6e-ac87c852885b",
+      "result_id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7"
+    },
+    {
+      "claim_id": "5805a52c-c486-4fc8-a94f-f2de7b189a3a",
+      "result_id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7"
+    },
+    {
+      "claim_id": "facdff5f-73ff-40ab-856e-5490751c789c",
+      "result_id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7"
+    },
+    {
+      "claim_id": "596c25ef-6ce1-4935-9fce-7ccad331ff44",
+      "result_id": "595365bf-9c30-4d8b-abab-5ab858e9a6a7"
+    },
+    {
+      "claim_id": "52a64fa7-f307-43ba-9bee-d87d1d63af8f",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "9f1f7293-05e0-4486-aac6-0d6564c13a73",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "d2a9a32d-b7e4-41c3-9edd-6380846369d2",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "9a5c83ee-58ae-452e-b4da-b8807b9b3415",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "d4083247-ec84-4a6c-920a-6610648d8b4d",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "5a64205a-eceb-48bb-8b58-a8f3192cb2b7",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "70880e01-ef6c-4c70-8b03-cd30c91c9e2a",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "f6d95fd7-a9c1-487f-b8a1-5ba0d9d59c80",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "08df9058-8964-43e3-8ae5-64b69c1120bf",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "21522825-c499-4258-ace6-de0b9b522c2b",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "dc49e7c4-300d-4715-ad55-89e22c0d8047",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "e29d2cd8-d121-4f7d-9d8e-4f6d4a24c230",
+      "result_id": "f228e712-4586-4588-b649-c671db8bdd71"
+    },
+    {
+      "claim_id": "ed2444f6-c7e4-43d7-957e-4cdcd8799d3a",
+      "result_id": "e6f3cd52-645b-45b9-ac92-6fae21903054"
+    },
+    {
+      "claim_id": "dfc3547c-983b-49f1-b02c-40ac7c4881da",
+      "result_id": "e6f3cd52-645b-45b9-ac92-6fae21903054"
+    },
+    {
+      "claim_id": "cd3798dd-4f1e-49a9-9cc3-26523ccb01e5",
+      "result_id": "e6f3cd52-645b-45b9-ac92-6fae21903054"
+    },
+    {
+      "claim_id": "f008a669-bda1-462f-b898-5f666a6d2042",
+      "result_id": "e6f3cd52-645b-45b9-ac92-6fae21903054"
+    },
+    {
+      "claim_id": "8638d949-79a6-4904-994e-6359726e8edd",
+      "result_id": "e6f3cd52-645b-45b9-ac92-6fae21903054"
+    },
+    {
+      "claim_id": "bf7526bf-7bf0-4d7a-a0e7-8650df151c28",
+      "result_id": "e6f3cd52-645b-45b9-ac92-6fae21903054"
+    },
+    {
+      "claim_id": "06fddb33-1bb5-48f0-adf9-74a5dda97065",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "e35899af-cd88-4f8f-8e4a-1380ef025446",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "e088d467-dd56-4ed2-9450-27ac1bd7b279",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "23e04a6e-70e4-4a72-b42c-4bb5ec296d50",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "065624c9-d6ab-4417-8bc6-378d0df6b98d",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "731756a2-772b-40b0-8514-db2c378686b7",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "8d276418-4839-4e29-ad34-553301bf71b5",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "3993a973-e9be-49fd-91c1-76eb1b873cf4",
+      "result_id": "7b858dba-a6af-415e-b45b-a4f7e7f51b29"
+    },
+    {
+      "claim_id": "e85d48b1-f6f1-4b78-9bfa-e63efbb5631a",
+      "result_id": "51a1299b-bdc7-4daa-bb31-3de21146201f"
+    },
+    {
+      "claim_id": "4328779c-1ba0-48b4-888a-ac550c303db7",
+      "result_id": "51a1299b-bdc7-4daa-bb31-3de21146201f"
+    },
+    {
+      "claim_id": "37838de2-a002-46f0-bf1e-0dadc2f60423",
+      "result_id": "51a1299b-bdc7-4daa-bb31-3de21146201f"
+    },
+    {
+      "claim_id": "d8646e62-c431-4958-ad42-fd9e5526e9b6",
+      "result_id": "8aeec13b-43c5-4352-b8f2-348b421e8ad3"
+    },
+    {
+      "claim_id": "10d16b04-c404-4c46-924f-2e0dae8ba0cf",
+      "result_id": "8aeec13b-43c5-4352-b8f2-348b421e8ad3"
+    },
+    {
+      "claim_id": "0fb8540c-0e6c-4503-abaf-a0e97203333c",
+      "result_id": "8aeec13b-43c5-4352-b8f2-348b421e8ad3"
+    },
+    {
+      "claim_id": "3c4e947f-006d-4d33-89a3-35f0fa36c6d6",
+      "result_id": "8aeec13b-43c5-4352-b8f2-348b421e8ad3"
+    },
+    {
+      "claim_id": "a44e9093-7e13-421f-a697-27e65729ba46",
+      "result_id": "aae03ad7-09b8-41fc-8207-4e32f1b65390"
+    },
+    {
+      "claim_id": "b8656554-08cc-4343-abd6-154702fc253c",
+      "result_id": "aae03ad7-09b8-41fc-8207-4e32f1b65390"
+    },
+    {
+      "claim_id": "69de6786-7594-4c25-8d4a-d6a029573cf9",
+      "result_id": "13f9b8fa-a91e-4268-853e-ca80d07f86d2"
+    },
+    {
+      "claim_id": "b6e79117-dc6d-4902-90cf-ff1f85ecaf13",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "ccfe14c0-7989-4fb0-9534-2b3a313e3846",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "4ef9865e-ac0c-468f-9abc-2afb8dd069d3",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "20bd926b-bce7-40ea-bafc-5211e36b04a7",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "931c2d6c-50f4-48c4-baf8-d0d33a18c386",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "9ee14c4f-fe1c-466a-8e9b-47e413cfa766",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "8031c025-2b2b-4853-b153-c2a03ab96d17",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "c8027535-1f73-427c-b0db-949207ade2b5",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "812ddf3b-572e-4c79-af34-123a05f68421",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "cbb01fb9-bd6c-427d-ac9d-f602ca739ac4",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "69f0779c-2dea-47e9-ad46-a9987c52738b",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "994097f7-3bda-402e-afde-a31d0bae6dfa",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "2f88be97-e493-4e14-920b-55f26b2b2bdf",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "aa270c17-d5c3-4aa8-9a4a-a1bfbf3e8286",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "1338a118-9f33-4eab-a11c-17198749d078",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "2da9ea27-f0de-4a23-94a8-a0cceda8588b",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "f2901d0c-f6c6-4e12-940c-d2a886608df8",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    },
+    {
+      "claim_id": "e476c1e5-be6c-4554-a44f-d29962708c96",
+      "result_id": "afcb06f1-fcc5-4de4-8a41-316df12dc531"
+    }
+  ],
+  "comparisons": []
+}

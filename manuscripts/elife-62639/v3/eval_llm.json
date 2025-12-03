@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C91",
+      "C92"
+    ],
+    "result": "Embryonic V1R interneurons display functional heterogeneity at E11.5-E12.5, subdividing into five distinct functional clusters based on firing patterns: single spiking (SS), repetitive spiking (RS), mixed events (ME), and plateau potential (PP). Cluster analysis of 163 V1R cells revealed that RS neurons represent 41% of the population at E12.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by hierarchical cluster analysis (C40-C44) using quantitative firing pattern parameters, with clear statistical validation via silhouette width measurement. The experimental data in Figures 3 and 4 demonstrate distinct clusters with specific electrophysiological characteristics. Sample sizes are adequate (n=163 cells from N=140 embryos), and the methodology is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C94",
+      "C95",
+      "C98"
+    ],
+    "result": "V1R undergo a transient functional involution between E13.5 and E15.5, losing their ability to sustain tonic firing. The proportion of SS V1R increases to >90% at E14.5-E15.5, with PP disappearing by E13.5 and ME by E14.5. This challenges the conventional view that single spiking is the most primitive form of excitability, as repetitive firing and plateau potentials dominated at early stages (E11.5-E12.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The developmental trajectory is well-documented with longitudinal data across multiple embryonic stages (C53-C58) and supported by statistical analysis showing significant changes in firing pattern proportions (Figure 4C). The absence of activated caspase3 staining (C59) rules out cell death as an explanation. The finding is counterintuitive but rigorously demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C23",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C70",
+      "C111",
+      "C122"
+    ],
+    "result": "The ratio of persistent sodium conductance (GNap) to delayed rectifier potassium conductance (GKdr) is the essential factor controlling the diversity of discharge patterns in embryonic V1R. Pharmacological manipulation with 4-AP, which blocks IKdr, transforms SS V1R into RS, ME, and PP patterns in a concentration-dependent manner following the sequence SS\u2192RS\u2192ME\u2192PP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is strongly supported by both experimental pharmacology (C35-C39) and computational modeling (C5, C111). The 4-AP experiments demonstrate concentration-dependent effects with appropriate controls (TTX blockade, C38, C70), and the dose-response relationship is well-characterized (IC50 = 2.9 \u03bcM). The absence of calcium-dependent potassium currents (C22-C23) strengthens the conclusion that GNap/GKdr ratio is the primary determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "V1R undergo significant developmental changes in intrinsic properties at the transition between E13.5 and E15.5, including increased input capacitance (to ~23.5 pF) and more hyperpolarized spike threshold (from -34 mV to -41 mV). This transition corresponds to the critical stage when spontaneous network activity gives way to locomotor-like activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The developmental changes are well-documented with appropriate statistical analysis (Kruskal-Wallis tests with post-hoc comparisons) and adequate sample sizes across developmental stages. The correlation with the functional transition in spinal cord networks (C51-C52) is supported by multiple citations and provides important context for the observed changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The transient functional involution of V1R is not due to developmental cell death, as no activated caspase3 staining was detected in V1R at E14.5, consistent with reports that V1R cell death does not occur before birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunohistochemical evidence (C59) with adequate sample size (n=10 spinal cords) directly addresses a key alternative explanation for the loss of firing diversity. The finding is consistent with prior literature (C60), strengthening the conclusion that the involution represents a genuine change in cellular properties rather than selective cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "A conductance-based computational model incorporating INap, IKdr, and slow inactivation of INap accounts for all observed firing patterns, including bursting behaviors. The model explains pseudo-plateau bursting (observed in 50% of PP V1R) and mixed events through slow inactivation dynamics, providing a mathematical interpretation for the experimental clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational model successfully reproduces experimental observations and provides mechanistic insight. The model accounts for the effects of pharmacological manipulations (4-AP, riluzole) and explains the clustering observed in hierarchical analysis (C103-C104). The identification of pseudo-plateau bursting mechanism (C85) is well-grounded in dynamical systems theory, though the model's predictive power for individual cells could be limited by parameter variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C116",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The simple mechanism involving only two opposing voltage-gated conductances (INap and IKdr) is sufficient to produce functional diversity in immature neurons with limited channel repertoires. The wide spread of conductances at E12.5 likely results from random, uncorrelated channel expression, with no homeostatic regulation or channel degeneracy at this early developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims represent well-supported interpretations of the experimental and modeling data. The conclusion about lack of homeostatic regulation (C123) is supported by the observation that firing patterns change dramatically with conductance manipulations. However, the inference about 'random and uncorrelated expression' (C116) is somewhat speculative, as direct measurements of channel expression were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the developmental context for V1R function, noting that spontaneous network activity (SNA) emerges around E12.5 in the mouse spinal cord, driven by cholinergic-GABAergic loops with depolarizing GABA, and that V1R are likely the first GABAergic partners of motoneurons during this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are well-supported by appropriate citations to prior literature (C6-C17). The claims accurately represent the current understanding of spinal cord development and establish the rationale for studying V1R at these developmental stages. However, these are primarily literature-based contextual claims rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The manuscript contextualizes the findings within broader developmental neuroscience, noting that V1R are homogeneous in transcription factors and postnatal function despite embryonic heterogeneity, and that functional involution has been rarely described in other systems. V1R recover tonic firing capability when locomotor-like activity emerges, before forming recurrent synaptic loops with motoneurons around E18.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important context from prior literature and are appropriately cited. The comparison to other systems showing functional involution (C96-C97) strengthens the novelty of the findings. The developmental timeline for V1R maturation (C99-C100) is well-established in the literature and provides important context for interpreting the functional involution.",
+    "result_type": "MINOR"
+  }
+]

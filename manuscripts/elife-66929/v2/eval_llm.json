@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The simulated actomyosin network mimics mesoscale properties of actomyosin networks reconstituted in vitro. Specifically, activated circles contract isotropically, solid squares develop concave edges, thin hollow squares develop convex outer edges, and thick hollow squares show concave outer edges with oppositely bent inner edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C32-C35 demonstrate that the simulation reproduces in vitro behaviors reported by Schuppler et al., 2016 and in vivo behaviors by Izquierdo et al., 2018. The simulation data in Figure 1B-E directly matches the cited experimental observations, validating the actomyosin network model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The simulated Arp2/3 network mimics properties of Arp2/3 networks reconstituted in vitro. When growing against a wall, plus end node density increases at the interface without accumulating elastic energy, matching in vitro observations by Bieling et al., 2016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 show that the Arp2/3 simulation reproduces key in vitro behaviors: centrifugal growth with non-aligned plus ends (C36), increased plus end density at interfaces with obstacles (C37-C39), and lack of elastic energy accumulation (C40). The quantitative measurements from simulations (1.57-fold increase with wall, 0.77-fold decrease without) support the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The network-network interface simulation maintains segregation and allows mutual displacement. Without myosin activity, rings maintain structure; with full activity, rings constrict. Adding Arp2/3 networks causes centrifugal displacement and myosin node aggregation at interfaces, with the two networks remaining segregated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 demonstrate that the interface rules work as intended. The simulations show appropriate responses to varying myosin activity (C42-C43), proper network segregation during Arp2/3 growth (C44-C46), and mutual force balance (C47). Figure 2 provides clear visual and quantitative evidence supporting these behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In vivo, Arp2/3 is required for forming smooth and circular boundaries between actin caps and actomyosin borders in Drosophila embryos. Arp3 RNAi embryos fail to form smooth boundaries, lack myosin accumulation at interfaces, and show failed furrow ingression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C48-C53 are strongly supported by in vivo imaging data in Figure 3A showing the rough-to-smooth transition in control embryos and persistent rough boundaries in Arp3 RNAi embryos. The correlation between smooth interface formation, myosin accumulation, and furrow initiation provides converging evidence for Arp2/3's requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In simulations without Arp2/3 networks, low myosin activity (0.1) results in persistent rough boundaries, mimicking Arp3 RNAi embryos, while high myosin activity (0.2-1.0) produces smooth boundaries. This suggests myosin activity is relatively low in early Drosophila embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C56-C61 are well-supported by simulation data in Figure 3C-D showing the activity-dependent boundary formation. The resemblance between low-activity simulations and Arp3 RNAi phenotypes (C59) is compelling, and the inference about low in vivo myosin activity (C60-C61) is supported by cited literature on myosin inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Adding expanding Arp2/3 networks to weakly contractile actomyosin networks (0.1 activity) results in wavy, non-circular interfaces despite myosin node aggregation and increased tension at the interface. Sensitivity analyses confirm this failure across a wide parameter range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C63-C69 are supported by simulation data in Figure 4A-B and supplementary figures showing hexagonal clearances, myosin node accumulation, and quantified increases in stretched connections (0.48\u00b10.01% at step 500 to 2.05\u00b10.06% at step 2500, p<0.001). The extensive sensitivity analyses strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Incorporating mechanosensitive myosin activation into simulations allows Arp2/3 network growth to locally induce a contractile actomyosin ring that smoothens and circularizes the interface. This mechanism is evident both in silico and in vivo, with myosin accumulation at smooth interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C70-C80 are strongly supported by simulation data (Figure 4C-E) showing interface-localized myosin activations and resulting smooth boundaries, matching in vivo observations (Figure 3A). Quantifications in Figure 4E demonstrate significant improvements in smoothness, circularity, and area. Sensitivity analyses (Figure 4 supplements 1-6) confirm robustness across parameter ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Analysis of node movements reveals that mechanosensitive myosin activation by Arp2/3 network growth produces a contractile actomyosin ring. Nodes display back-and-forth oscillations aligned with local radii, providing a signature of ring formation that smoothens and circularizes the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C90 are supported by detailed node tracking analyses in Figure 5 showing the transition from broad to bimodal angular distributions (0\u00b0 and 180\u00b0 relative to radii) in both single-ring and two-network simulations. The oscillatory behavior and its correlation with interface smoothening provide mechanistic insight, though the authors appropriately note uncertainty about in vivo relevance of rapid oscillations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The simulations demonstrate that disruptive effects of widespread contractility can be avoided by local induction of contractility in response to pushing forces from a neighboring material. In Drosophila embryos, the smooth interface demarcates membrane folding sites, and disruption of either network component causes morphological defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 synthesize the main findings, supported by the complete simulation dataset and in vivo observations. The mechanistic explanation (C100) is well-supported by Figures 4-5, and the functional consequences (C101-C103) are supported by Figure 3A and cited literature (Stevenson et al., 2002; Zallen et al., 2002; Zhang et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims about cytoskeletal polymer properties: microtubules have high rigidity for transport, individual actin polymers have lower rigidity, but cross-linking can bundle actin into straight structures supporting protrusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are standard textbook knowledge supported by appropriate citations (Hawkins et al., 2010; Salbreux et al., 2012; Svitkina, 2018). These provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background examples of mechanical self-organization in biological systems: wing disc compartment boundaries require myosin, mesenchymal migration involves follower cell smoothening, and cytokinesis involves myosin-dependent ring smoothening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 cite established literature (Harris, 2018; Wang and Dahmann, 2020; Livne and Geiger, 2016; van Helvert et al., 2018; Schwayer et al., 2016) to provide biological context. These are accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on cell cortex structure: it is a thin sheet-like material underlying the plasma membrane, composed of distinct formin-induced and Arp2/3-induced actin networks, with cortical asymmetry capable of eliciting flow and filament alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 accurately summarize established knowledge about cortex structure and properties, supported by appropriate citations (Chugh and Paluch, 2018; Svitkina, 2020; Munro, 2006; Reymann et al., 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Background on polar body budding: involves an Arp2/3-enriched domain surrounded by a smooth actomyosin ring, with the Arp2/3 domain preventing full ring contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 accurately cite Yi and Li, 2012 to provide biological context for similar network interactions in a different system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on Drosophila embryo cortical organization: centrosomes induce Arp2/3-enriched caps surrounded by actomyosin borders, which initially have rough boundaries but form smooth interfaces. Network assembly is induced by small G proteins, and networks physically restrict each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 accurately summarize prior work on Drosophila embryo cortical organization, supported by multiple citations (Foe et al., 2000; Raff and Glover, 1989; Stevenson et al., 2001-2002; Zallen et al., 2002; Zhang et al., 2018; Blake-Hedges and Megraw, 2019; Lv et al., 2021; Royou et al., 2004). These provide essential biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior in vitro and in vivo studies show that actomyosin network reshaping is influenced by initial activation patterns: circles contract isotropically, solid squares develop concave edges, and hollow square outlines develop convex edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 accurately cite Schuppler et al., 2016 (in vitro) and Izquierdo et al., 2018 (in vivo) to establish the experimental basis for validating the simulation model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background on mechanosensitive actomyosin activation: mechanical enhancement of actomyosin activity occurs in vivo through mechanisms including myosin-actin interaction stabilization and actin filament alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 cite appropriate literature (Effler et al., 2006; Fernandez-Gonzalez et al., 2009; Kobb et al., 2017; Kov\u00e1cs et al., 2007; Yamashiro et al., 2018; Ennomani et al., 2016) to justify the mechanosensitivity mechanism incorporated into the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Methodological justification: actomyosin and Arp2/3 networks have been simulated previously, but investigating rough-to-smooth transitions required an agent-based approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 appropriately cite prior modeling work (Berro, 2018; Cortes et al., 2018; Mogilner and Manhart, 2016) and justify the methodological choice based on the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion of smoothening mechanisms: forming smooth interfaces in 2D is non-trivial, tensile forces require anchorage, and low contractility is important in various biological contexts including Drosophila embryos, podosomes, and polar body budding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 synthesize general principles and cite appropriate literature (Schwayer et al., 2016; Lee and Harris, 2013; Mason et al., 2016; Zhang et al., 2018; Rafiq et al., 2017; Yi and Li, 2012) to contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Discussion of broader implications: the mechanism is relevant to other biological processes (polar body budding, podosome protrusion) and to advanced manufacturing with smart materials, nanocomposites, and metamaterials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C109 make speculative connections to other systems and applications. While C105 cites relevant biological examples (Yi and Li, 2012; van den Dries et al., 2019), claims C106-C109 about materials science applications are largely speculative despite citations (Begley et al., 2019; Holmes, 2019; Eder et al., 2018; Wang et al., 2020; Galland et al., 2013). The relevance requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Model parameters are based on biological measurements: cortex thickness (50-400 nm), myosin mini-filament properties (28-58 motor domains at angles up to 180\u00b0), optimal actin filament length (~500 nm), Arp2/3 branching angle (70\u00b0), and network mechanical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C119 cite appropriate literature to justify model parameters (Chugh and Paluch, 2018; Salbreux et al., 2012; Svitkina, 2020; Billington et al., 2013; Niederman and Pollard, 1975; Laplante et al., 2016; Sellers and Kachar, 1990; Chugh et al., 2017; Banerjee et al., 2020; Pollard, 2016; Amann and Pollard, 2001; Pollard and Borisy, 2003). These provide essential methodological details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Both actomyosin and Arp2/3 networks initially have rough boundaries, and the smooth interface arises from their lateral interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by in vivo imaging (Figure 3A) and cited literature (Zhang et al., 2018). This observation motivates the mechanistic investigation but is itself a relatively straightforward observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "A specific mechanism locally elevates myosin activity for primordial germ cell budding and division from the syncytium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 cites Cinalli and Lehmann, 2013 to provide context about regulated myosin activity in a specific developmental process. This is accurate background information.",
+    "result_type": "MINOR"
+  }
+]

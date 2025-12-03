@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Local inter-nucleosomal interaction patterns differ fundamentally between log and quiescent cells. In log phase, n+1 interactions dominate with sharp distance-dependent decay, while quiescent cells show decreased short-range (n+1, n+2) contacts and increased long-range (500-1000 bp) interactions. This shift occurs genome-wide, independent of transcriptional state, and is inconsistent with a homogeneous zig-zag chromatin fiber conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C13-C15 are well-supported by Micro-C XL contact probability analysis (Figure 1A), hierarchical clustering of Pol II ChIP-seq data (Figure 1\u2014figure supplement 1B,C), and metaplot analysis (Figure 1D). The data consistently demonstrate distinct interaction patterns between cell states, with appropriate controls for transcriptional activity. The conclusion that patterns are inconsistent with zig-zag conformation is justified by the observed n+1 and n+3 interaction frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "DSG crosslinker omission differentially affects Micro-C XL results between cell states. In quiescent cells, omitting DSG has minimal impact (SCC=0.95), while in log cells it substantially diminishes long-range interactions (SCC=0.82), suggesting that log cells have a more dynamic chromatin fiber requiring long crosslinkers to capture transient inter-nucleosomal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 are supported by systematic comparison of Micro-C XL data with and without DSG (Figures 1B,C, Figure 1\u2014figure supplement 3), quantified using HiCRep SCC scores (Figure 1\u2014figure supplement 2). The differential effect between cell states is clear and reproducible across biological replicates. The interpretation regarding fiber dynamics is reasonable given the crosslinker-dependency data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Quiescent cells exhibit increased chromatin fiber compaction at the individual fiber level. HAADF-STEM tomography reveals quiescent cell fibers are qualitatively more compact with 15% greater average diameter than log cells, though less compact than chicken erythrocyte nuclei. The fibers adopt a compact, heterogeneous folded structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by HAADF-STEM tomography imaging (Figure 2A-C), surface thickness analysis, and morphological erosion analysis (Figure 2\u2014figure supplement 1). The use of chicken erythrocyte nuclei as a positive control is appropriate. Quantitative measurements (15% diameter increase) are provided with clear methodology. The conclusion of heterogeneous folding is consistent with both imaging and Micro-C data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mesoscale chromatin modeling of a 40 kb region predicts increased compaction in quiescent cells with decreased radius of gyration, increased nucleosome packing, and a shift toward longer-range (n+2 to n+6) inter-nucleosomal interactions. H3 and H4 tails show striking increases in interactions with separate nucleosome cores in quiescence, with greater variability in log simulations consistent with a more dynamic fiber.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by mesoscale chromatin modeling incorporating experimental nucleosome positions, acetylation, and linker histone data (Figure 2D,E, Figure 2\u2014figure supplement 2-3). The modeling uses established methods with 50 independent trajectories and careful convergence monitoring. While the predicted contact probability shift is more modest than experimental data (C22), the overall trends are consistent. The tail-core interaction analysis provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Global histone deacetylation by Rpd3 is required for quiescence-specific chromatin fiber folding. TSA treatment of quiescent cells restores H4 tail acetylation to log-equivalent levels, significantly increases chromatin volume, and shifts nucleosome contacts from long-range to short-range patterns, demonstrating that ongoing deacetylation maintains the compacted state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are well-supported by H4 penta-acetylation ChIP-seq (Figure 3A), Western blot (Figure 3\u2014figure supplement 1A), DAPI staining with chromatin volume measurements (Figure 3B), and Micro-C XL analysis (Figure 3C-D). The experimental design appropriately tests the role of deacetylation using TSA, a histone deacetylase inhibitor. Statistical significance is demonstrated (Supplementary file 1). The inference about ongoing deacetylation (C29) is reasonable given TSA can restore acetylation levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The H4 tail basic patch mediates quiescence-specific chromatin fiber folding. Alanine substitutions of K16, R17/R19, and the full basic patch (5toA) progressively increase chromatin volume in quiescent cells but not in G1 cells. Micro-C XL shows dramatic shifts from long-range to short-range nucleosome contacts in basic patch mutants, demonstrating that local chromatin fiber folding in quiescence is driven by H4 basic patch-mediated inter-nucleosomal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C40-C42 are strongly supported by systematic analysis of H4 mutants using DAPI staining/volume measurements (Figure 4A,B, Supplementary file 1) and Micro-C XL (Figure 4C-F). The progressive effect with increasing substitutions provides dose-response evidence. The specificity to quiescence (C36) is demonstrated by G1 controls. Statistical analysis using Welch's ANOVA with Games-Howell's test is appropriate. The conclusion about H4 basic patch-mediated folding is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Local chromatin fiber folding represses transcription in quiescent cells, but unfolding is not sufficient for activation. H4 basic patch mutants show dramatic increases in Pol II occupancy proportional to the number of substitutions (~40% of genes in 5toA). However, fiber unfolding occurs genome-wide regardless of transcriptional state, and phenanthroline treatment abolishes transcription without affecting chromatin volume in 5toA cells, demonstrating that decompaction is causal for transcriptional derepression but not sufficient for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are well-supported by Rpb3 ChIP-seq in H4 mutants (Figure 5A-D), overlay with Micro-C data (Figure 5E), and phenanthroline treatment experiments (Figure 5F-G). The dose-response relationship (C43) and MACS2 peak calling (C44) provide quantitative support. The critical phenanthroline experiment (C47-C49) directly tests causality by blocking transcription while maintaining decompaction, strongly supporting the conclusion that decompaction is necessary but not sufficient for activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "H4 tail substitutions affect condensin loop extrusion, revealed by the appearance of stripes in Micro-C data. While stripes overlapping Brn1 ChIP-seq peaks are not observable in WT quiescent cells, they appear clearly in H4 basic patch mutants (R17R19A, 5toA) at aggregate peak metaplots. Brn1 peaks show reduced magnitude and spreading across gene bodies in mutants, with progressive Brn1 binding within L-CIDs consistent with active loop extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are supported by overlay of Brn1 ChIP-seq and Micro-C XL data (Figure 6A, Figure 6\u2014figure supplement 1A-C), aggregate peak analysis (Figure 6C), and Brn1 ChIP-seq analysis (Figure 6D-F). The interpretation of stripes as loop extrusion signatures is based on established models (C51, cited). The appearance of stripes specifically in mutants but not WT is clear in the data. MACS peak calling shows decreased peak numbers but this is reasonably interpreted as spreading below detection threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "H4 tail-mediated chromatin fiber folding sterically impedes condensin loop extrusion. The emergence of stripes in H4 mutants likely results from increased extrusion rate, as modeling predicts faster extrusion retains 'memory' of being extruded. The change is not due to increased transcription, as stripes occur uniformly between L-CID boundaries regardless of Pol II occupancy, and appear equally strong in R17R19A (less transcription) and 5toA mutants. The model proposes that fiber folding slows extrusion, potentially stabilizing loops in WT quiescent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by modeling predictions (C57, cited Nuebler et al., 2018) and multiple lines of evidence excluding transcription as the cause (C58-C59): uniform stripe occurrence regardless of Pol II occupancy, similar stripe strength in R17R19A vs 5toA despite different transcription levels, and overlap of Brn1 sites with Pol II-occupied genes even in WT. The proposed model (C60) is reasonable given the data, though C61 is appropriately speculative about functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Chromatin fiber folding and condensin looping are complementary mechanisms of transcriptional repression with distinct genomic targets. The 5toA mutant shows nearly double the distinct Pol II peaks compared to SMC4-off cells, with different genomic distributions: SMC4-off affects genes near Brn1 sites while 5toA affects genes genome-wide. H4 mutants show significantly more fiber decompaction than SMC4-off cells while retaining boundary insulation, and condensin affects local contacts differently and to a lesser extent than the H4 tail, indicating that condensin loop extrusion inhibition is complementary rather than primary to H4-mediated transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are well-supported by systematic comparison of SMC4-off and H4 mutant phenotypes using MACS2 differential peak calling (Figure 7A), Brn1/Pol II ChIP-seq heatmaps (Figure 7B), Micro-C XL metaplot analysis (Figure 7C), and contact probability analysis (Figure 7D). The data clearly demonstrate distinct but overlapping effects, with appropriate quantification. The conclusion that these are complementary mechanisms is justified by the different genomic distributions and degrees of effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Between log and quiescence, chromatin fibers undergo genome-wide compaction into disordered structures distinct from 30 nm fibers. Quiescent fibers lack the expected n+2 interaction increase of zig-zag 30 nm conformations and are smaller in diameter (by HAADF-STEM) than 30 nm fibers. They display decreased n+1/n+2 contacts and increased long-range (>500 bp) interactions, consistent with extensive but disordered compaction. Despite differences in interaction patterns, quiescent fibers rely on the H4 basic patch like 30 nm fibers, suggesting shared mechanisms between disordered physiological and ordered reconstituted structures. The authors propose that extended log and compacted quiescent fibers represent physiological versions of distinct folding states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 represent the major synthesis of results from Micro-C (contact probability patterns), HAADF-STEM (fiber diameter measurements), and H4 mutant experiments (basic patch dependence). The characterization as distinct from 30 nm fibers is well-supported by both contact probability data (C71) and diameter measurements (C72). The conclusion about disordered compaction (C74) is justified by the heterogeneous structure observed in STEM and contact patterns. The proposed model (C77) is reasonable speculation based on the totality of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The role of histone deacetylases in regulating transcription during quiescence appears conserved between yeast and mammals. Rpd3 targets the genome during quiescence entry and massively deacetylates H3/H4 tails, with loss causing defects in quiescence entry, longevity, and transcriptional repression. Mammalian quiescent cells similarly exhibit widespread histone deacetylation. H4K16Ac is commonly implicated in state transitions, including B-cell activation, zygotic genome activation, and dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by citations to previous work (McKnight et al., 2015 for C78-C79; multiple citations for C80, C82-C84). The inference about conservation (C81) is reasonable given the similarities between yeast and mammalian systems. However, this result primarily synthesizes prior work rather than presenting new findings, though it provides important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Local chromatin fiber compaction mediated by the H4 basic patch drives transcriptional repression in quiescent cells, though the mechanism may differ from mammalian B cells where nanodomains don't decompact without transcriptional activation. TSA treatment doesn't decompact chromatin as extensively as basic patch abrogation, suggesting chromatin decompaction upon quiescence exit likely requires additional pathways beyond H4K16Ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 synthesize the major findings with appropriate comparison to mammalian systems (C86, cited Kieffer-Kwon et al., 2017). The conclusion about H4 basic patch-mediated repression (C85) is strongly supported by the H4 mutant and TSA experiments. The comparison showing TSA is less effective than basic patch abrogation (C87) is supported by the data, and the speculation about additional pathways (C88) is reasonable and appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose a model where condensin forms L-CID loops by extrusion during quiescence entry, with extrusion rate decreasing or stalling as fibers compact, resulting in persisting loops but not stripes. Stripes and condensin spreading emanate bidirectionally from boundaries, supporting a model where multiple condensins bind L-CID boundaries and extrude in opposite directions, possibly through an anti-parallel dimer handcuff model. Stripes can extend across multiple L-CID boundaries, suggesting boundaries are not always sufficient to block extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 present a mechanistic model supported by the stripe data (C94, Figure 6), comparison to mammalian B cells (C91-C92, cited Vian et al., 2018), and comparison to in vitro data (C93, cited Ganji et al., 2018). The bidirectional extrusion observation (C94) is clear in the data. The proposed handcuff model (C95) is reasonable speculation based on the bidirectional pattern. The observation of stripes crossing boundaries (C96-C97) is supported by the data and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Local chromatin fiber contacts can fundamentally change during physiologically relevant conditions, and contacts consistent with local chromatin fiber folding can repress transcription and loop extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 represent the overarching conclusions of the study, synthesizing results from Micro-C, STEM, H4 mutants, TSA treatment, and condensin analysis. These conclusions are well-supported by the totality of evidence presented. The demonstration that fiber contacts change between physiological states (C98) is clear from the Micro-C data, and the functional consequences for transcription and loop extrusion (C99) are demonstrated by the mutant and perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Background and context claims establishing the state of the field regarding chromatin structure, nucleosome organization, higher-order chromatin structures, technical challenges, previous findings from chromEMT and Micro-C studies, chromatin domains, loop extrusion, and quiescence biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C121 represent established scientific knowledge and prior work, appropriately cited throughout. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the characterization of the field's state is reasonable, including acknowledgment of technical challenges (C104) and unresolved questions (C111, C115).",
+    "result_type": "MINOR"
+  }
+]

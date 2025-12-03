@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Fan cells in layer 2a (L2a) of the lateral entorhinal cortex (LEC) project to both the hippocampal dentate gyrus and layer 1 (L1) of the medial entorhinal cortex (MEC). These projections arise as axon collaterals from the same hippocampal-projecting fan cells, with axons extending dorsally and terminating in both structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary tracing approaches (retrograde AAV, anterograde AAV in Sim1Cre mice, and combined retrograde-anterograde labeling) consistently demonstrate that fan cells in L2a of LEC send collateral projections to both dentate gyrus and MEC L1 (C54-C69). The anatomical data are well-documented with quantification and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Fan cell synaptic terminals in MEC show layer-specific and mediolateral distribution patterns, with highest density in L1, intermediate density in L2 and L5b, and lowest in L3. Terminal density is also highest in medial MEC near the parasubiculum border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantification of synaptophysin-mRuby labeled terminals provides statistical evidence for layer-specific (Friedman test, p<0.000001) and mediolateral (p=0.0006) differences in puncta density (C61-C64). The use of synaptophysin labeling specifically marks synaptic terminals, strengthening the anatomical claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Fan cells that project to MEC receive direct synaptic inputs from medial prefrontal cortex (mPFC) and piriform cortex, suggesting a pathway for cortical sensory and cognitive signals to reach MEC via LEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Anterograde tracing from mPFC and piriform cortex combined with Cre-dependent labeling in LEC demonstrates that fan cells projecting to MEC receive cortical inputs (C70-C71). The conclusion that this provides a route for cortical signals to MEC (C72) is a reasonable inference supported by the anatomical connectivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Optogenetic activation of fan cell inputs evokes postsynaptic responses in principal neurons across all MEC layers, with highest connectivity in superficial layers (L2: 80.4%, L3: 52.1%) and lower connectivity in deep layers (L5a: 18.2%, L5b: 20.0%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Whole-cell patch-clamp recordings from 197 neurons across MEC layers provide robust evidence for layer-specific connectivity patterns (C73-C77). Sample sizes are adequate for L2 (158 cells) and L3 (23 cells), though smaller for L5a (11 cells) and L5b (5 cells), which may limit confidence in deep layer estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "L2 principal cells show diverse response patterns to fan cell activation, with most exhibiting biphasic EPSP-IPSP responses (L2 SCs: 64.4%, L2 PCs: 56.8%). EPSPs are significantly larger in L2 PCs compared to L2 SCs and other cell types, while IPSP amplitudes do not differ between cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Detailed characterization of postsynaptic responses with adequate sample sizes (L2 SCs: 90 cells, L2 PCs: 37 cells) supports the diversity of response patterns (C78-C83). Statistical comparison confirms larger EPSPs in L2 PCs (Kruskal-Wallis, p=0.002) but no difference in IPSPs (p=0.305) (C84-C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Response latencies differ between MEC layers, with L2 neurons showing short latencies (L2 SCs: 3.12\u00b10.16ms, L2 PCs: 3.97\u00b10.68ms) consistent with monosynaptic inputs, while L3 and L5 neurons show longer latencies suggesting multisynaptic pathways or dendritic filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Latency measurements support monosynaptic connectivity to L2 neurons (C87), though the interpretation of longer latencies in L3/L5 neurons (C88) as either dendritic filtering or multisynaptic transmission remains uncertain without additional experiments. The data are consistent with both interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C122"
+    ],
+    "result": "EPSPs evoked by fan cell inputs in L2 principal cells are mediated by monosynaptic glutamatergic transmission, as demonstrated by abolition with AMPA/NMDA receptor antagonists, low latency variability, and recovery after TTX block with 4-AP application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple pharmacological and electrophysiological criteria converge to support monosynaptic glutamatergic transmission (C89-C92, C122). The TTX/4-AP experiment is particularly strong evidence for monosynaptic connections. Sample sizes for pharmacology experiments are adequate (n=5 L2 SCs, n=4 L2 PCs for NBQX/APV; n=8 L2 SCs, n=4 L2 PCs for TTX/4-AP).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C123"
+    ],
+    "result": "Inhibitory responses to fan cell activation are indirect, requiring glutamatergic excitation of interneurons, and comprise fast GABAA-mediated and slow GABAB-mediated components. Fast inhibition primarily controls the duration rather than amplitude of excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sequential pharmacological blockade with glutamate and GABA receptor antagonists demonstrates that inhibition is indirect and mediated by both GABAA and GABAB receptors (C93-C95, C123). The finding that GABA antagonists increase EPSP half-width but have modest effects on amplitude (C96-C98) supports the conclusion about temporal control, though population-level statistics show limited significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C124"
+    ],
+    "result": "Fan cell inputs directly activate interneurons in L1 (100% connectivity) and L2 (76.2% connectivity) of MEC through monosynaptic glutamatergic transmission, with responses often sufficient to drive spiking (L1: 28.6%, L2: 21.9% suprathreshold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comprehensive characterization of interneuron responses with pharmacological validation (NBQX/APV and TTX/4-AP) supports monosynaptic glutamatergic activation (C99-C105, C124). Sample sizes are adequate (L1: 17 cells, L2: 42 cells). The high connectivity rate and suprathreshold responses support the conclusion of powerful excitatory input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C125",
+      "C126"
+    ],
+    "result": "L1 interneurons form unidirectional inhibitory connections with L2 principal cells (L2 SCs: 27.3%, L2 PCs: 40.0%), mediating slow biphasic IPSPs that account for slow feedforward inhibition following fan cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Paired recordings provide direct evidence for L1 interneuron to L2 principal cell connectivity (C106-C111). The time course similarity between L1 interneuron-evoked IPSPs and slow components of fan cell-evoked responses (C112) supports the circuit model (C125-C126). Sample sizes are modest (22 L2 SC pairs, 5 L2 PC pairs) but adequate for establishing connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The balance of excitation and inhibition (E-I ratio) differs between L2 cell types, with L2 PCs showing consistently greater net excitation while L2 SCs display heterogeneous responses ranging from excitation-dominated to inhibition-dominated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical comparison shows significantly higher E-I ratios in L2 PCs compared to L2 SCs (Wilcoxon test, p=0.034) (C113). The characterization of L2 PC responses as uniformly excitation-biased and L2 SC responses as heterogeneous (C114-C115) is supported by the data distribution shown in Figure 9A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The E-I ratio of responses to fan cell inputs in L2 principal cells is independent of neuronal location on both the mediolateral and dorsoventral axes of MEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Linear regression analyses show no relationship between E-I ratio and mediolateral or dorsoventral position for either L2 SCs or L2 PCs (C116). This finding is important for ruling out spatial organization of the E-I balance, though supplementary data show some position-dependent effects on IPSP amplitude in L2 PCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The heterogeneity of L2 SC responses and excitatory bias of L2 PC responses are maintained during 10 Hz theta-frequency stimulation, with similar E-I ratios at the start and end of stimulus trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Analysis of responses to 10 Hz stimulation trains demonstrates that cell-type-specific response patterns are preserved during sustained activation (C117-C118). The finding that E-I ratios remain similar between pulse 1 and pulse 10 for both cell types supports the conclusion, though there is a trend toward increased heterogeneity in L2 SCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The relative strength of excitation and inhibition following fan cell activation differs substantially between individual neurons and is largely independent of anatomical location within MEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim is supported by the detailed analyses of E-I ratios showing substantial inter-neuronal variability (C12) and lack of correlation with anatomical position (C13, C116). The claim integrates findings from multiple experimental approaches and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The LEC can directly influence the hippocampus and can both activate and inhibit major hippocampal inputs arising from the MEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C14-C16) is supported by the anatomical demonstration of LEC fan cell projections to both dentate gyrus and MEC, combined with functional evidence that fan cell activation can produce both excitation and inhibition in MEC principal cells. The conclusion appropriately synthesizes the major findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Local circuits in the superficial MEC may combine spatial information with sensory and higher order signals from the LEC, providing a substrate for integration of 'what' and 'where' components of episodic memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C17) is explicitly speculative and represents a functional interpretation that extends beyond the anatomical and physiological data presented. While the circuit connectivity demonstrated in the study is consistent with this possibility, direct evidence for integration of spatial and non-spatial information in MEC is not provided. This would require additional experiments examining responses to combined spatial and sensory stimuli.",
+    "result_type": "MAJOR"
+  }
+]

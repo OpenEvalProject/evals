@@ -1,0 +1,2136 @@
+{
+  "submission": {
+    "id": "fe186180-d0bc-40c6-b200-dca5767a4dfd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:47:34.525539Z",
+    "updated_at": "2025-12-03T11:47:34.525539Z"
+  },
+  "content": [
+    {
+      "id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "submission_id": "fe186180-d0bc-40c6-b200-dca5767a4dfd",
+      "content_type": "manuscript",
+      "content_text": "# Author-level data confirm the widening gender gap in publishing rates during COVID-19\n\n## Authors\n\n- Emil Bargmann Madsen<sup>1</sup> ([ORCID: 0000-0003-4394-5373](https://orcid.org/0000-0003-4394-5373))\n- Mathias Wullum Nielsen<sup>2</sup> ([ORCID: 0000-0001-8759-7150](https://orcid.org/0000-0001-8759-7150))\n- Josefine Bj\u00f8rnholm<sup>1</sup>\n- Reshma Jagsi<sup>3</sup> ([ORCID: 0000-0001-6562-1228](https://orcid.org/0000-0001-6562-1228))\n- Jens Peter Andersen<sup>1</sup> ([ORCID: 0000-0003-2444-6210](https://orcid.org/0000-0003-2444-6210)) \u2020\n\n### Affiliations\n\n1. Danish Centre for Studies in Research and Research Policy, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))\n2. Department of Sociology, Copenhagen University Copenhagen Denmark ([ROR:05bpbnx46](https://ror.org/05bpbnx46))\n3. Department of Radiation Oncology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPublications are essential for a successful academic career, and there is evidence that the COVID-19 pandemic has amplified existing gender disparities in the publishing process. We used longitudinal publication data on 431,207 authors in four disciplines - basic medicine, biology, chemistry and clinical medicine - to quantify the differential impact of COVID-19 on the annual publishing rates of men and women. In a difference-in-differences analysis, we estimated that the average gender difference in publication productivity increased from \u20130.26 in 2019 to \u20130.35 in 2020; this corresponds to the output of women being 17% lower than the output of men in 2109, and 24% lower in 2020. An age-group comparison showed a widening gender gap for both early-career and mid-career scientists. The increasing gender gap was most pronounced among highly productive authors and in biology and clinical medicine. Our study demonstrates the importance of reinforcing institutional commitments to diversity through policies that support the inclusion and retention of women in research.\n\n## Introduction\n\nGender disparities in academic publishing have widened during the COVID-19 pandemic. The proportion of preprints and manuscript submissions with women as authors has decreased (Cui et al., 2021; Kibbe, 2020; Mogensen et al., 2021; Squazzoni et al., 2020; Williams et al., 2021), as has the proportions of preprints and published articles with women as either the first author or the senior author (Andersen et al., 2020; Inno et al., 2020; Lerchenm\u00fcller et al., 2021; Muric et al., 2021; Ribarovska et al., 2021). Gender gaps in self-reported research activities have also increased (Andersen et al., 2020; Inno et al., 2020; Lerchenm\u00fcller et al., 2021; Muric et al., 2021; Ribarovska et al., 2021). However, the longitudinal effects of the pandemic on differences in annual publication outputs remain uncertain. In this study, we used individual-level panel data on the publication activities of 431,207 authors globally to quantify the differential impact of COVID-19 on the publishing rates of women and men.\n\nResearch on gender and publication productivity suggests that women (on average) publish fewer articles than men (Mairesse and Pezzoni, 2015), although the magnitude of this difference varies by career stage, discipline and country, and has diminished over time (Huang et al., 2020; Sax et al., 2002; Xie and Schauman, 2005). The gender imbalance in publishing rates should be understood in the context of broader disparities in the science system. Structural variables such as employment rank, access to resources, university prestige, appointment type, teaching loads (Eagly, 2020; Taylor et al., 2006) and available time for research (Guarino and Borden, 2017; Lei\u0161yt\u0117, 2016) all partially explain the observed gender imbalances in publication productivity (Allison and Long, 1990; Bland et al., 2006; Xie and Shauman, 1998). In addition, research finds that women scientists (compared to men) tend to span more topics in their research activities, face stricter editorial standards in peer reviewing (Hengel, 2017), and take on greater shares of parenthood responsibilities (Derrick et al., 2021), which also likely perpetuate publishing disparities.\n\nRecent research has identified two primary mechanisms through which the pandemic may have amplified existing disparities in publishing (King and Frederickson, 2021). First, evidence from national and international surveys indicates that women scientists have taken the lion\u2019s share of the extra childcare and domestic responsibilities imposed by lockdowns of schools and daycares (Deryugina et al., 2021; Staniscuaski et al., 2021; Yildirim and Eslen-Ziya, 2020). According to surveys of self-reported research activities, women scientists \u2013 especially those with young dependents \u2013 have seen notable productivity decreases in the wake of the pandemic (Deryugina et al., 2021; Myers et al., 2020; Staniscuaski et al., 2021). Second, transitions to online teaching during university lockdowns required extra hours of planning and preparation and may have affected women scientists more than men due to observed disparities in average teaching loads (Barber et al., 2021; Eagly, 2020; King and Frederickson, 2021; Taylor et al., 2006). Survey-based evidence from the United States also indicates that the extra time spent on teaching partially accounts for observed decreases in scientists\u2019 self-reported publication rates (Barber et al., 2021). In clinical medicine, service demands related to care for COVID-19 patients and transitions to virtual care delivery for many others may also have disproportionately affected women, who are more likely to be represented on clinician-educator rather than traditional tenure tracks at medical schools (Mayer et al., 2014).\n\nThis study is, to our knowledge, the first to quantify the differential impact of COVID-19 on the annual publishing rates of women and men. We used a linked dataset of 431,207 authors and 2,113,108 publications and a difference-in-differences specification to estimate how the gender difference in average publishing rates changed from 2019\u20132020.\n\nWe rely on author-disambiguated publication data from Clarivate\u2019s Web of Science, restricting our focus to scientists with >2 publications within basic medicine, biology, chemistry and clinical medicine. We chose these fields as they are well-represented in Web of Science (more than 90% of references are included in Web of Science), their primary knowledge production mode is through journal publication (unlike, for example, computer science, many fields of engineering, and the humanities), research is comparatively collaborative (although some areas of clinical research have somewhat more authors), publishing is relatively fast (compared to, for example, the social sciences). Basic medicine, biology and clinical medicine also have some of the highest shares of women scientists in the natural sciences.\n\nWe report annual, per-author publishing rates based on a full and fractional counting. The full counting gives the raw sum of all papers published by a scientist in a given year. The fractional counting gives the sum of the reciprocal of the number of authors per paper published by a scientist.\n\n## Results\n\nThe following results use a main sample consisting of two scientist cohorts, one with first publication year in 2009 or 2010 (\"mid-career\", n = 137,767) and one with first publication year in 2016 or 2017 (\"early-career\", n = 293,440). Unless mentioned otherwise, the combined cohort (n = 431,207) is used. A third, counterfactual cohort (n = 276,793) is used to contrast the early-career sample, as a means of estimating the expected attrition in the early-career stage, when a proportion of scientists leave academia. Each analysis referring to a \"treatment\", indicated in figures as a dotted line between 2019 and 2020, refers to the changes in working environments in 2020 due to the COVID-19 pandemic.\n\n### Descriptive results\n\nOur analysis suggests that gender disparities in annual publication outputs have widened during COVID-19. A descriptive comparison of changes in publishing rates in 2020 compared to 2019 (Figure 1) indicates a 15% decrease in women\u2019s average full- and fractional-count publication output and a 6%\u20137% decrease in men\u2019s average full- and fractional-count publication output.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig1-v3.jpg)\n\n**Figure 1.:** Differences are in percentages of average publication rates in 2019. Results are presented for full and fractionalized publication counts. Men experience a smaller productivity decrease in 2020 compared to 2019 (6.3%) than women (14.9%) using full counts of publications. For fractional counts (each paper counts as a fraction of the number of co-authors), the difference in decrease is greater, with a 7.1% decrease for men and 14.7% decrease for women. Average publication counts are presented with 99% confidence bounds.\n\n### Difference-in-differences estimates\n\nFigure 2 displays the dynamic effects of the COVID-19 pandemic and summarizes the main result of the difference-in-differences estimation. As shown in panel A, the gender difference in annual publishing rates remained relatively stable between 2017 and 2019 (implying parallel trends prior to COVID-19), while increasing in 2020. From 2019 to 2020, the average-marginal gender difference increased from \u20130.260 (corresponding to a 17% lower output for women than for men) to \u20130.354 (corresponding to a 24% lower output for women than for men) in full-count output. Figure 2\u2014figure supplement 1 presents results from a complementary analysis with fractional-count publication output as outcome and shows a change in the average-marginal gender difference from \u20130.048 (corresponding to a 22% lower output for women than for men) to 0.059 (corresponding to a 27% lower output for women than for men).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig2-v3.jpg)\n\n**Figure 2.:** Panel A shows the estimated average gender difference in publication rates by year. Each point shows the relative difference between men and women per year, with 99.9% confidence bounds shown as a gray area around the line. From 2019 to 2020, the average-marginal gender difference increased from \u20130.260 (17% lower output for women) to \u20130.354 (24% lower output for women). Panel B shows the predicted publishing rates for men and women authors, with solid lines showing the trend per gender, and the dashed, orange line showing the counterfactual trend for women if they had similar 2019\u20132020 trajectories as men (i.e. the trend for men is projected to the 2019 estimate for women). The difference between the dashed line and the straight line in Panel B specifies the average treatment effect for women. Point estimates are reported with 99.9% confidence bounds, with robust standard errors clustered at the individual-author level. For information on how average marginal and predicted values are calculated, please refer to Materials and Methods: Difference-in-Differences model.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dynamic effects of the COVID-19 pandemic on women\u2019s and men\u2019s fractional-count output. Panel A shows the estimated average gender difference in fractional-count publication rates by year. Panel B shows the predicted fractional-count publishing rates for male and female authors. Dashed, colored, lines represent the counterfactual trend for women if they had similar 2019\u20132020 trajectories as men. The difference between the dashed line and the straight line in Panel B specify the average treatment effect for women. Point estimates are reported with 99.9% confidence bounds, with robust standard errors clustered at the individual-author level.\n\nTo verify that the change in the gender productivity gap was in fact due to COVID-19 and did not represent a more generic dip in women\u2019s productivity (compared to men\u2019s) during the fifth year of their publication career, we ran a counterfactual analysis for a sample of researchers, who published their first paper in 2011. For this sample, we observed a small but consistent annual increase in the marginal gender difference across years (from 2011\u20132015). In this case, the gender difference in productivity increased by 1/20 of a full publication (full count: \u20130.05, 99% CI: \u20130.0665; \u20130.0337) between year four (2014) and five (2015), amounting to 53% of the treatment effect observed in Figure 2.\n\n### Career-stage differences\n\nResearch suggests that the working conditions of early-career women scientists have been especially affected by the pandemic (Andersen et al., 2020; Krukowski et al., 2021). We examined this question by conducting sub-group analyses by career-age. As shown in Figure 3 the widening gender gap was salient for early-career scientists with four years of publication experience as well as for mid-career scientists with ten years of publication experience. From 2019 to 2020, the average marginal publication disadvantage for early-career women increased from \u20130.133 (corresponding to an 11% lower output for women than for men) to \u20130.20 (corresponding to an 18% lower output for women than for men) in full-count output. In comparison, the average marginal publication disadvantage for mid-career women changed from \u20130.452 (corresponding to a 21% lower output for women than for men) to \u20130.592 (corresponding to a 27% lower output for women than for men). This is a relative increase in the gender gap of 61% for early-career scientists and 29% for mid-career scientists. We obtained comparable results in an age-differentiated analysis with fractional-count publications as outcome (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig3-v3.jpg)\n\n**Figure 3.:** Panels A and B show the estimated average gender difference in full-count publication rates by year for early-career and mid-career researchers. Panels C and D show men\u2019s and women\u2019s predicted full-count publication rates per year by author status (early-career vs. mid-career researcher). Point estimates are reported with 99.9% confidence bounds and robust standard errors clustered at the individual-author level. For information on how average marginal and predicted values are calculated, please refer to Materials and Methods: Difference-in-Differences model.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The upper panels show the estimated average gender difference in fractional-count publication rates by year for early-career and senior researchers. The lower panels show men\u2019s and women\u2019s predicted fractional-count publication rates per year by author status (early-career vs. senior researcher). Point estimates are reported with 99.9% confidence bounds, with robust standard errors clustered at the individual-author level.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Gender differences in publication productivity for at counterfactual sample. Black lines show average marginal effects of female author gender each year, and colored lines show predicted publication counts (both full and fractionalized) for male and female authors. Predicted differences and counts are based on the difference-in-differences estimates from Figure 3\u2014source data 1 and Figure 3\u2014source data 2 in the supplementary material. 99.9% confidence intervals based on clustered standard errors are shown.\n\n### Productivity-dependant differences\n\nAs indicated in Figure 4 panel A, the effect of the pandemic on women\u2019s and men\u2019s publishing rates also varied considerably across different strata of the publication-productivity distribution. Indeed, a considerable share of the average marginal gender difference appeared to be attributable to differences occurring among the top-10% most prolific men and women authors. In contrast, changes in the average gender gap were marginal for authors below the 80th percentile of the publication distribution. This can clearly be seen in panel B, where the trends for men per quantile in 2019\u20132020 (solid, black dots) is projected unto the same trends for women (hollow dots). While the differences in trends below the 80th percentile are not visible in the figure, and the absolute differences are very small, the relative differences are noticeable. At the highest decile, the average difference increases from \u20131.35 (corresponding to 23% lower output for women) to \u20131.74 (31% lower output for women) from 2019\u20132020,, which is a relative change of 22.3%. Correspondingly the relative change is 25.8% in the 81st to 90th percentile and 25.9% in the 51st to 80th percentile.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig4-v3.jpg)\n\n**Figure 4.:** Panel A shows the estimated average gender difference in publication rates by year. Panel B shows the predicted publishing rates for men and women authors. In each panel, scientists are divided into strata according to their total number of publications in the period 2016\u20132020. The difference between the thinner, dashed line with the black circle in 2020 and the thicker, dashed line with hollow circles in panel B specifies the average treatment effect for women. Point estimates are reported with 99.9% confidence bounds and robust standard errors clustered at the individual-author level. For information on how average marginal and predicted values are calculated, please refer to Materials and methods: Difference-in-differences model.\n\n### Country-level differences\n\nThe estimated change in the magnitude of the gender gap also varied across countries (Figure 5), with the smallest changes observed in Denmark, Australia, Pakistan and Belgium, and the largest increases found in Russia, Italy, Austria and Iran. The horizontal bar diagram to the right in Figure 5 shows that the vast majority of scientists are from the USA. This means that the average treatment effect on the treated ($A\u2062T\u2062T$) also gravitates towards the effect observed for the US population. Surprisingly, the estimated effects at the country-level were only weakly and inconsistently correlated with the severity of COVID-19 restrictions (Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig5-v3.jpg)\n\n**Figure 5.:** The hollow circles show the gender differences per country in full publications counts in 2020 relative to 2019, with error bars showing the 99% confidence intervals based on robust clustered standard errors. Countries are ranked by the estimated gender difference. The horizontal histogram shows the distribution of authors from each country, showing that the vast majority are from the USA. We only list the first 30 countries by number of authors, comprising 90% of authors in our sample. The orange and green lines and bands show the overall treatment effect on the sample and the counterfactual sample. (ATT is the Average Treatment effect on the Treated).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Gender differences in full-count publication productivity, 2019 vs 2020, across four different lockdown severity indicators. All indicators are summed values as stipulated in Equation 3. 99% confidence intervals based on clustered standard errors are shown.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Gender differences in full-count publication productivity, 2019 vs 2020, across three different lockdown severity indicators. All indicators are counts of the maximum values as stipulated in Equation 4. 99% confidence intervals based on clustered standard errors are shown.\n\n### Discipline-level differences\n\nAs a final step in the analysis, we disaggregated results by discipline. As shown in Figure 6 panel A, the widening gender gap was persistent across all four disciplines but with markedly larger effects observed for clinical medicine (Average marginal gender difference = \u22120.117, CI: \u20130.138\u2013\u20130.095) and biology (Average marginal gender difference = \u22120.089, CI: \u20130.117\u2013\u20130.063) compared to basic medicine (Average marginal gender difference = 0.058, CI: \u20130.093\u2013\u20130.022) and chemistry (Average marginal gender difference = 0.062, CI: \u20130.100\u2013\u20130.023). Figure 6 panel B specifies the representation of authors according to their position in the publication-productivity distribution, across the four disciplines. As shown in the figure, we observe an over-representation of highly productive authors in clinical medicine implying that the large average marginal gender difference effect observed for this discipline may partially be driven by a higher proportion of prolific scientists.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig6-v3.jpg)\n\n**Figure 6.:** Difference-in-differences estimate from Figure 6\u2014source data 1. 99% confidence intervals based on clustered standard errors are shown. Histograms show the distribution of authors who mainly publish within a given discipline, and orange and green lines and bands show the overall treatment effect on the sample and the counterfactual sample from Figure 2\u2014source data 1 and Figure 5\u2014source data 1. Panel B shows the distribution of authors per discipline in deciles of total publications over the time period.\n\n### Robustness checks\n\nWe conducted two (Figure 7) placebo tests, simulating a placebo pandemic incident between 2017\u20132018 and 2018\u20132019. shows the difference-in-differences estimate for both full and fractionalized publication counts. In both cases, the estimates are very small in magnitude (ranging from 7%\u201317% of our 2020 estimate, $\\delta_{t=0}$), and only statistically significant for the 2017\u20132018, full count, estimate at the 99% level (the 2017\u20132018 estimate is significant for the fractionalized count at a 95% level). Taken together, there does not appear to be a substantial difference in publication counts in the immediate years prior to the onset of the pandemic.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig7-v3.jpg)\n\n**Figure 7.:** (A) Difference in differences of publication productivity for placebo tests. Points show the difference in publication productivity for women relative to men for two placebo periods, using both full publication counts and fractionalized counts. Estimates are based on Figure 7\u2014source data 1 and Figure 7\u2014source data 2. Errorbars are 99% confidence intervals, with accompanying p-values based on clustered standard errors. (B) Ratio of women\u2019s first author share to women\u2019s share of all authorships. Each line shows the share of women who occupy the first author position divided by women\u2019s share of all authorships by year for each of the four disciplines. A ratio > 1 shows a greater share of women first authors relative to all women\u2019s authorships. Authorships counts are made for a larger sample than used in the main analysis, comprising all authorships registered in the Web of Science for each discipline and year.\n\nWe also check whether there are changes in the position in the author byline of women authors (see Figure 7B). We first observe, that the share of women first authors is higher than expected, considering the share of women in total. Some variation occurs over time, but there are no changes from 2019\u20132020 which could indicate a general shift in women appearing less often as first authors than before the pandemic.\n\n## Discussion\n\nIn this paper, we estimated the differential impact of COVID-19 on the annual publication rates of women and men in 2020 compared to 2019. Using individual-level panel data on a global sample of 431,207 authors, we observed small but consistent average increases in the gap between women\u2019s and men\u2019s annual publishing rates. This finding is consistent with extant research suggesting amplified gender disparities in manuscript submissions, first and last authorships, and self-reported research activities during COVID-19. However, unlike prior studies, we find that the gendered effects of COVID-19 are salient for early-career-scientists with four years of publication experience as well as for mid-career scientists with ten years of publication experience. While the numerical increase in the gender gap is largest for mid-career scientists, the relative change in the gender gap is biggest for early-career scientists. Moreover, we add to existing evidence by showing that the increase in the gender gap (in absolute terms) was most pronounced among highly productive authors and scientists working in clinical medicine and biology. Lastly, the widening gender gap appears to represent a genuine decline in publication productivity and not just a shift in author roles, as women continue to first author publications at similar rates as in prior years (Figure 7).\n\nDespite clear country variations in the observed effects, we found negligible and inconsistent associations between local COVID-19 restrictions and estimated changes in the productivity gender gap. Further, the ordering of countries in Figure 5 does not seem to suggest that the gender-differentiated changes in productivity rates vary systematically according to a country\u2019s level of gender equality, welfare model, or infection rate.\n\nTaken together, these results indicate that the publication productivity of already prolific women scientists have been affected the most by the pandemic. Those designing interventions to promote equity in academic science and medicine should strive to understand the reasons why highly prolific men appeared able to maintain their annual publication rates while highly prolific women were not. Prior research suggests that it is possible that men with the highest levels of productivity may have been more likely to have been rewarded with access to additional workplace supports, such as endowed professorships, in recognition of their achievements (Gold et al., 2020). If so, this might have served as a cushion against the impact of the pandemic on those individuals. Moreover, if institutions prioritized protecting a few \"superstar\" researchers from teaching or clinical demands without clear processes for identifying which individuals received preferential treatment, the vast literature on unconscious bias suggests that such efforts might preferentially have protected outstanding men as compared to similarly outstanding women (NASEM, 2007). Prior research also suggests that high-achieving women scientists may be more likely than their male peers to state that their partners\u2019 careers take priority (Mody et al., 2022). Indeed, it is possible that high-achieving men scientists\u2019 partners may be particularly likely to be willing to make sacrifices in their own careers to take on additional domestic labor to allow continuation of their extraordinary partners\u2019 work. If partners of extraordinarily productive women scientists are less willing to do so, and if this difference is even more marked than any differences that may exist when a scientist is less highly productive, this could also serve as a mechanism to drive the differences observed. Further research is necessary to investigate these and other possibilities.\n\nThe amplified effect in clinical medicine may be due to the dual research and clinical roles taken on by scientists in this discipline. Early research suggested that initial funding for COVID-19 related research was biased toward applications from men (Witteman et al., 2021), supporting a hypothesis that women spent disproportionally more time on clinical work or other demands around the time of the outbreak. However, further research is required to provide conclusive evidence on this question. The consequences of a systematically biased change in the work priorities for men and women in particularly clinical medicine can potentially reach far beyond the individual careers of those women affected by it. Research suggests a positive association between women\u2019s participation as leading authors in medical research and a study\u2019s likelihood of including sex and gender as analytical variables (Nielsen et al., 2017). The omission of gender and sex analysis has been widespread in COVID-19-related clinical trials (Brady et al., 2021), despite early evidence of sex-differences in the prognosis and outcome of the disease.\n\nThe widening gender-gap in publishing may be a detectable symptom of larger setbacks on issues of gender equity in science (King and Frederickson, 2021). Indeed, recent research also shows widening gender disparities in research project initiation (Gao et al., 2021) and clinical-trial leadership (Cevik et al., 2021).\n\nOur study demonstrates the importance of reinforcing institutional commitments to gender equity through policies that support the inclusion and retention of women researchers (Andersen et al., 2020; Fulweiler et al., 2021; King and Frederickson, 2021; Narayana et al., 2020). While our study focuses on gender, other marginalized groups are likely to suffer from similar set-backs, potentially to an even higher degree. These groups are generally under-studied in the the literature on productivity gaps, as they are much more difficult to identify quantitatively. Further research, with reliable data on especially ethnicity, and with an inter-sectional perspective is needed.\n\nData on individual publication rates gives us a better estimate of the effects of the pandemic on researcher productivity than most previously published analyses focusing on publication-level effects. Despite this, the data do not allow us to disentangle how much of the widening gender gap is due to attrition. If the relative share of women scientists opting out of an academic career is higher in 2020 compared to 2019, this may inflate the observed change in productivity. Future research should examine the potential changes in women\u2019s and men\u2019s attrition rates in closer detail. Further, the counter-factual analysis presented in Figure 3\u2014figure supplement 2 suggests a consistent increase in the size of gender productivity gap over time with a marginal annual change in the gender difference from year four to five amounting to 53% of the treatment effect observed in our main analysis. The estimated change from a 17% lower output for women than men in 2019 compared to 24% percent lower output for women than men in 2020 should thus be interpreted with some caution. However, both mechanisms - lower publication productivity and attrition - result in lower total publication outputs for women and lead to enlarged gender disparities. While we can not currently estimate the relationship between the two mechanisms, the conclusions above remain the same.\n\nOur study design has four limitations. First, our analysis focused on annual publishing rates, which may obscure some of the potential effects of e.g. school closures on the immediate publishing rates. A more granular analysis of monthly publishing rates may reveal a more direct correlation between lockdowns and decreased publishing rates. However, information on when something is published is not available on a monthly basis for a large proportion of articles, and information on submission and review dates are even harder to obtain, often completely missing. Further, many of the delays occurring in the publishing process are out of the hand of authors and thus unrelated to the lockdown effect that they may be experiencing. By looking at annual data, we can estimate a more reliable effect overall. We strongly encourage publishers to make available transparent, open machine- and human-accessible information on which date a manuscript was received, reviewed, revised, accepted and published. Similarly, the weak relationship between country-level gender gaps and the severity of lockdown policies could be due to aggregation. Using survey data on self-reported time-use, Deryugina et al., 2022 show that e.g. the fraction of days with at least partial primary school closures negatively affected time loss for women researchers relative to men in the period Feb. 16 - July 31, 2020. To compare our yearly publication data with lockdown severity, we aggregated day-to-day data on school closures, workplace closures, stay at home requirements, and overall lockdown severity across the entire year of 2020.\n\nSecond, the author-disambiguation approach used to establish individual-level panel data unavoidably introduces some level of uncertainty into our analysis, and errors are more likely to occur for individuals with East Asian names (Nielsen and Andersen, 2021) (see Materials and Methods). The country-specific evidence for China and South-Korea (Figure 5) should thus also be interpreted with caution.\n\nThird, the gender-assignment algorithm used in this study did not infer the gender of 20% of the author sample. This introduces potential sampling bias into our analysis. Moreover, the algorithm reduces author gender to a binary category (woman or man), but not all individuals identify as women or men. Despite this clear limitation, we find the algorithm useful in quantifying COVID-19-related disparities on a large scale (D\u2019Ignazio and Klein, 2020).\n\nFourth, academic publishing is a slow endeavor, and article submissions may undergo many rounds of revisions before they are published (Homolak et al., 2020). This introduces two types of potential bias into our analysis: (a) some of the articles published in 2020 are based on research conducted in 2019; and (b) some of the research conducted in 2020 will not appear in print before 2021, or later. Thus, in the coming years, scientists should continue to monitor disparities in women\u2019s and men\u2019s publishing rates.\n\nIn science, even small negative kicks or setbacks may add up over time and become cumulative disadvantages (Valian, 1999; Cole and Singer, 1991). We observe a decreased growth in publications for all but the most productive men, and especially early-career researchers. This has the potential to reinforce disparities in an already heavily skewed system, if not given special attention, especially with regard to women. The widening gender gap in publishing observed in this study should thus be taken seriously by universities and funding agencies and factored into policies that allocate resources and support, as well as those that determine advancement and compensation, in order to mitigate inequities resulting from the unequal impact of the pandemic and its associated disruptions. Such inequities are deeply troubling both because they demonstrate how morally arbitrary characteristics like gender affect the opportunity to succeed in science and because they hinder the inclusion of diverse perspectives necessary to optimally advance scientific inquiry itself.\n\n## Materials and methods\n\nData on authors and their publications. Publication data were retrieved from the Web of Science (WoS) in-house implementation at CWTS, Leiden University. This version of the WoS has linked tables between authors, their publications and information on the probable gender of authors.\n\nThe CWTS WoS includes a high-quality disambiguated table of authors and links to their publications. This list is produced through an algorithmic identification of publication clusters, using author, publication, source and citation data (Caron and Eck, 2014; D\u2019Angelo and van Eck, 2020). This algorithm greatly improves the likelihood of an author profile containing the correct links to a scientist\u2019s publications, without including those of another author with the same name, and also including their own publications published under variations of their name. This algorithm so far has the highest precision and recall for this task (Tekles and Bornmann, 2020).\n\nAuthor gender was inferred using a combination of Gender-API (https://gender-api.com/) and genderize (https://genderize.io/), in order to find the most likely gender of an author using their first name and country. The inferred gender is only applied in cases with >90% confidence, meaning gender ambiguous names, or names with very few observations for a country, are not included. This leads to an exclusion of 20% of all authors, with a majority of those from China and South Korea, as first names in these countries tend to be less gendered than for most other countries.\n\nDisciplines were inferred from the journal in which articles were published, using the translation table (http://help.prod-incites.com/inCites2Live/filterValuesGroup/researchAreaSchema/oecdCategoryScheme.html) between WoS Subject Categories and the OECD Fields of Science from the Frascati Manual (OECD Working OECD Working Party of National Experts on Science and Technology Indicators, 2007). For each author, we summed the weighted major scientific fields and assigned the most frequent as their main discipline.\n\nWe queried the WoS for all authors with their first publication in either 2009 or 2010 (mid-career researchers) or 2016 or 2017 (early-career researchers). We excluded authors with fewer than three publications in total, and further limited the sample to authors with at least one publication in 2018 or 2019. The last step was done to create a sample of actively publishing scientists. We assigned main discipline codes to all authors and limited the sample to authors from 1.4 Chemical sciences, 1.6 Biological sciences, 3.1 Basic medicine and 3.2 Clinical medicine. This sample consisted of 431,207 authors linked to 2,113,108 publications in the period 2016\u20132020. The counterfactual sample was constructed identically, but for authors with their first publication in 2011 or 2012, counting their publications until 2015. This sample included 276,793 authors linked to 1,060,330 publications.\n\n### Difference-in-differences model\n\nTo estimate the differential impact of the COVID-19 pandemic on the gender gap in publication productivity, we leveraged a difference-in-differences strategy. Because of a persistent gender gap in the number of publications over time, we used the yearly data on journal article publications prior to 2020 as baselines for estimating how the pandemic impacted the scholarly productivity of men and women differently. Although, not a randomized treatment, we treated the yearly gender difference in publication numbers (for 2016, 2017, 2018, and 2020) relative to the difference in 2019 as our key estimand. To estimate the average treatment effect on the treated ($A\u2062T\u2062T$), the gender difference relative to the baseline 2019 difference, we specified the following regression model:\n\n$$\nY_{i\u2062t}=\\alpha_{i}+\\gamma_{t}+\\sumt=-44\\delta_{t}\u2062Gender_{i}\u22c5Year_{t}+\u03f5_{i\u2062t}\n$$\n\nWhere $Y_{i\u2062t}$ denotes the number of published articles by individual $i$ in year $t$, $\\alpha_{i}$ are the author fixed effects, $\\gamma_{t}$ are the year fixed effects, and $\\delta_{t}$ are a set of parameters with $t\\in{-4,-3,-2,0}$ estimating the difference in publication numbers between men and women each year, relative to the difference in 2019 ($t=-1$), which we left out of the estimation. The indicator $t$ is here the year relative to 2020. The $A\u2062T\u2062T$ for a given year $k$ relative to 2019 is then:\n\n$$\nA\u2062T\u2062T_{t=k}=E\u2062[Y_{women}^{1}|t=k]-E\u2062[Y_{women}^{0}|t=k]+[E\u2062[Y_{women}^{0}|t=k]-E\u2062[Y_{women}^{0}|t=-1]]-[E\u2062[Y_{men}^{0}|t=k]-E\u2062[Y_{men}^{0}|t=-1]]\n$$\n\nWhen used in the analysis, predicted values are the average partial effects at specified combinations of gender and year. We calculate the linear predicted value based on the regression model for each unit of observation (person i at year t), and average over these units for each specified subset of units (e.g. women in 2019 or men in 2018). This provides average predicted publications counts for each group at each time. Estimated differences in publication counts are the average marginal effects for each year derived from the regression model. The marginal effects are the partial derivative with respect to gender for each unit of observation, and the estimated average differences are then the mean of the unit-specific derivatives at each year.\n\n### Parallel trends and counterfactual samples\n\nValid identification of the differential impact of the COVID-19 pandemic on researchers of different genders relies on a strong assumption of parallel trends of publication outcomes in pre-pandemic years. I.e. identification of the average treatment effect on women essentially assumes that $[E[Y_{women}^{0}|t=k]\u2212E[Y_{women}^{0}|t=\u22121]]$ $\u2212[E[Y_{men}^{0}|t=k]\u2212E[Y_{men}^{0}|t=\u22121]]=0$. A large literature (e.g. Hart and Perlis, 2019; Mairesse and Pezzoni, 2015) has documented persistent gender gaps in publication productivity. Our dynamic difference-in-differences model confirms this. A consistent gap between men and women is present in all years prior to 2020 for our full sample (Figure 2). This gap also tends to slightly increase over time, casting doubt on the assumption of similar publication trends for men and women scientists. Figure 2\u2014source data 1 shows a statistically significant difference in the publication gender gap between 2016 and 2019, and 2017 and 2019. However, the difference is much smaller, and statistically non-significant, when comparing 2018 and 2019.\n\nWe also modeled the differential publications rates for a counterfactual sample of researchers, who started publishing (or who\u2019s first publication was registered in the Web of Science database) in 2011, across the following five years. As shown in Figure 3\u2014figure supplement 1, the gender gap in publication rates increased from almost parity in the first year to an average difference of 0.2 full publications five years after (0.05 fractionalized). Again, the gender gap increased with 1/20 of a full publication (full count: \u20130.05, 99% CI: [\u20130.0665; \u20130.0337], fractionalized count: \u20130.006, 99% CI: [\u20130.0094; \u20130.0028]) between four and five years after first publication, amounting to 53% of our $A\u2062T\u2062T$ from the full sample.\n\n### Data on lockdown severity\n\nTo assess how the pandemic may entail different gender effects across countries and lockdown severity, we use data from the Oxford COVID-19 Government Response Tracker. We construct seven lockdown indicators at the country level by aggregating four measures of daily government COVID-policies across a whole year (from March 1st 2020 to December 31st 2020) in two ways. Table 1 summarizes the seven indicators. We use four of the Oxford COVID-19 Government Response Tracker indicators (Hale et al., 2021) related to the coordinated close-downs of schools (C1) or workplaces (C2), stay at home requirements (C6), and the combined policy stringency index. First, we sum the indicator value across the whole year to create a cumulative sum of restriction severity for all four indicators, such that a lockdown indicator $L_{k}$ is the summarized values across 305 days:\n\n$$\nL_{k}=\\sumi=1305I_{i}\n$$\n\n**Table 1.**\n Seven indicators of COVID-19 lockdown severity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Sum indicator</th>\n      <th>Count of maximum values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>School lockdowns</td>\n      <td>+</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>Workplace lockdowns</td>\n      <td>+</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>Stay at home requirements</td>\n      <td>+</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>Stringency index</td>\n      <td>+</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\nSecond, we count the number of days across the same period with the maximum indicator value for three indicators relating to school lockdowns, workplace lockdowns, and stay at home requirements. Each of these indicators can take the values 0, 1, 2, and three per day (where three indicates the most severe policy situation for the three indicators in question). For these three indicators we create a conditional sum across 305 days. We then let $L_{k}$ be the number of days an indicator $I_{1},\u2026,I_{305}$ equals 3:\n\n$$\nL_{k}=\\sumi=1305[I_{i}=3]\n$$\n\nTogether, this gives us seven different indicators of lockdown severity at the national level. It is important to note that we use national-level policy indicators capturing only COVID-19 policy responses enacted at the country or federal level. In cases where sub-national policies supersede country-level restrictions, more or less severe policies are not reflected in the indicators.\n\n### Heterogeneity in COVID-19 effects\n\nTo show the heterogeneity in possible COVID-19 induced treatment effects, we estimated our difference-in-differences model separately for each country, focusing on the 40 countries contributing 95% of all authors in our sample. We also investigated the degree to which this heterogeneity could be attributed to variations in the severity of policy restrictions across countries. Using the seven lockdown indicators described above, we compared country-level gender gaps with the measures of severity as shown in Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2.\n",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "160694b8-7f6d-4316-bb24-3c7ba9771b7e",
+      "submission_id": "fe186180-d0bc-40c6-b200-dca5767a4dfd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76559.sa1](https://doi.org/10.7554/eLife.76559.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Individual-level researcher data confirm the widening gender gap in publishing rates during COVID-19\" to eLife for consideration as a Feature Article. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by the eLife Features Editor, Peter Rodgers. The reviewers opted to remain anonymous.\n\nThe reviewers and editors have discussed the reviews and we have drafted this decision letter to help you prepare a revised submission. Please also note the following\n\ni) If your article is accepted, we would like to publish some of the relevant code with the article: please let me know if this will be a problem.\n\nii) The eLife Features Editor will also contact you separately about some editorial issues that you will need to address regarding the appendixes and figure supplements.\n\nSummary:\n\nThis very interesting paper estimates the differential impact of COVID-19 on the annual publication rates of male and female authors working in the disciplines of biology, chemistry, and clinical and basic medicine relative to the pre-pandemic publication rate. When the pandemic began early in 2020, a number of studies of preprints predicted that gender gaps in productivity would get larger. Using data on a global sample of 431,207 authors (2,113,108 publications), this paper documents a small but consistent average worsening in the gap between women's and men's annual publishing rates. The largest differential impacts by gender were observed for particularly prolific researchers, in the top-10% of the productivity distribution. The paper also performs heterogeneity analyses by career stage and discipline. In addition, the authors compared their results to a counterfactual sample of authors and their publications from 2011 to 2015, to see how much the gender gap widened over a 5-year period with no pandemic. Overall, this is a well-designed study with compelling results. However, there are a number of points that need to be addressed to make the article suitable for publication.\n\nMajor/Essential revisions:\n\n1) I am curious as to why the authors decided to focus on the particular disciplines they do. In terms of generalizability of findings, this particular selection might present difficulties if these fields had different post-covid policy responses, as well as unique challenges due to the pandemic, as compared to others. It would be important to understand why these fields were selected and how this might affect the overarching conclusions.\n\n2) The study looks at the annual publication rate pre and post covid, focusing on how the gender gap in 2020 compared to 2019. The disruptions due to the pandemic did not start in most parts of the world until March of 2020. I would encourage the authors to conduct the analysis at a more granular level (by, say, looking at monthly publications rather than annual averages)? This could also potentially enrich the country-level analysis, as there was considerable time variable in lockdowns.\n\nNote from editor: Addressing this point is optional, but I would encourage you to perform this analysis if possible. If you decide not to address this point, please discuss it as a topic that could be explored in future research.\n\n3) One of the contributions that the paper emphasizes on p. 1 line 30 is that the study considers longer-term publication impacts. I would caution against using \"long-term\" to refer to 2020. As the paper rightly points out on p. 9, line 212, publishing takes quite a long time. From the start of the research project to the publication stage, we might expect to see much longer lags than just a few months. Even in the sciences, where the publication process is quicker than in other disciplines, it's highly unlikely that we are seeing an impact on new projects. The 2020 papers being published are likely old projects that were already in the publication pipeline and are now coming out at journals. Therefore, these are much more likely to pick up the pre-pandemic trend, which we see in fact \u2013 Figure 2 shows a slight widening of the gender gap pre-treatment (from -.2 to roughly around -.27 or so). I would encourage the authors to reframe the article with this in mind.\n\n4) The analysis can be expanded to look at the quality dimension of publications (control for journal rankings in some systematic manner), as well as how the female authors stack up against male authors in terms of contributions. In science, we can tell clearly which author contributed the most to the project (first author). It would be interesting to see an analysis by first author only.\n\nNote from editor: Addressing this point is optional: however, if you decide not to address it please discuss it as a topic that could be explored in future research.\n\n5) I would like to know more details about the country-level comparisons. In a recent NBER Working Paper 29668, Deryugina et al. (2022) show that school openness at the country level correlates with a reduction in the gender gap in research time lost by men and women. It would also be important to know how the data sources treats partial closures, timing of closures, as well as academic breaks.\n\n6) As regards severity, I am not sure why the authors lump countries into severity bins rather than using country-level openness measures. There also needs to be greater discussion of the results of the lockdown severity analysis. Why did you find no pattern? Is it because there is too much within-country heterogeneity in the timing, type, and severity of lockdown measures to observe a pattern, and finer-grain analyses (e.g., on a city-by-city basis) are needed? Is it that the demographics of women scientists differ substantially among countries, affecting, for example, the fraction of women scientists with young children? Is it that institutional responses and supports counteracted lockdown effects in some places but not others?\n\n7) My main criticism is that the paper's Discussion section is rather boilerplate; it covers much of the same ground as previous papers on the pandemic's effects on women academics. Instead, I think I would be better to highlight some of the unique insights derived from the present analysis that currently get little attention in the Discussion. For example, I was struck by the analysis in Figure 4, which clearly shows that the gender gap is widest among the most productive scientists. This was true before COVID-19 and has become more pronounced during the pandemic. Why is this? What does it suggest about the pandemic's impacts on women versus men scientists? At the risk of over-interpreting Figure 4, it appears from panel B that the most productive men either maintained or improved their productivity during the pandemic, while the pandemic hurt the productivity of everyone else. Are highly productive men, but not women, most likely to have partners that do not work and who could thus shoulder additional caregiving or domestic duties? Are highly productive men, but not women, most likely to be spared the additional teaching or service burdens during the pandemic? I realize the present analysis cannot answer these questions, but the authors should discuss these possibilities.\n\n8) Several figures (Figure 2 and the early-career panel of Figure 3, as well as the fractional-count versions in the supplement) suggest that publication rate declined for both men and women authors during the pandemic, it just declined more among women. This is worth discussing as it suggests that tenure committees and grant panels, etc., need to revise their expectations vis-\u00e0-vis productivity for all researchers, and especially so for women scientists.\n\n9) The discussion says, \"unlike prior studies, we find that the gendered effects of COVID-19 are salient for early career-scientists with four years of publication experience as well as for mid-career scientists with ten years of publication experience\" (Lines 154-156), but I found this a bit misleading. Similarly, Lines 16-17 in the abstract imply that the gender gap widened similarly for early-career and mid-career scientists. But from Figure 3, it appears there is a growing gender gap during the pandemic for both early-career and mid-career researchers, but that the gender gap grows larger for mid-career than for early-career scientists. Please rephrase the abstract and discussion to reflect Figure 3.\n",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cae937cb-53e9-4608-b5a4-17b895c31eee",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C1",
+      "claim": "Publications are essential for a successful academic career.",
+      "claim_type": "EXPLICIT",
+      "source": "Publications are essential for a successful academic career, and there is evidence that the COVID-19 pandemic has amplified existing gender disparities in the publishing process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a premise in the abstract without specific supporting data in the manuscript, drawing on established scientific knowledge about academic career progression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "784f2298-d209-41b3-aeaa-5bf244c84baa",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C2",
+      "claim": "The COVID-19 pandemic has amplified existing gender disparities in the publishing process.",
+      "claim_type": "EXPLICIT",
+      "source": "Publications are essential for a successful academic career, and there is evidence that the COVID-19 pandemic has amplified existing gender disparities in the publishing process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and by the data presented in the manuscript showing widening gender gaps.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "32677b8d-f424-4ffd-bae7-151027cc7ffc",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C3",
+      "claim": "The study analyzed longitudinal publication data on 431,207 authors in four disciplines: basic medicine, biology, chemistry and clinical medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "We used longitudinal publication data on 431,207 authors in four disciplines - basic medicine, biology, chemistry and clinical medicine - to quantify the differential impact of COVID-19 on the annual publishing rates of men and women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the study's methodology and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "a6082246-b224-4fbc-9d57-a73b7746de7f",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C4",
+      "claim": "The average gender difference in publication productivity increased from \u20130.26 in 2019 to \u20130.35 in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In a difference-in-differences analysis, we estimated that the average gender difference in publication productivity increased from \u20130.26 in 2019 to \u20130.35 in 2020",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the difference-in-differences statistical analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "96aaeecb-8d53-4cc9-a26e-698187e1ec3d",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C5",
+      "claim": "Women's output was 17% lower than men's output in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "this corresponds to the output of women being 17% lower than the output of men in 2109, and 24% lower in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the difference-in-differences analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ef60340a-831e-4684-a199-20b16daecbf2",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C6",
+      "claim": "Women's output was 24% lower than men's output in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "this corresponds to the output of women being 17% lower than the output of men in 2109, and 24% lower in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the difference-in-differences analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "73584e39-2890-41cf-ab5f-7602e3a8b1fc",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C7",
+      "claim": "The widening gender gap was observed for both early-career and mid-career scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "An age-group comparison showed a widening gender gap for both early-career and mid-career scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the age-stratified analysis presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "5f2e330d-51c5-41ef-8ecc-13e223b8bb89",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C8",
+      "claim": "The increasing gender gap was most pronounced among highly productive authors.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing gender gap was most pronounced among highly productive authors and in biology and clinical medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the productivity-stratified analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "c02d4e8b-3cad-41f8-88c6-4b4abe94971b",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C9",
+      "claim": "The increasing gender gap was most pronounced in biology and clinical medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing gender gap was most pronounced among highly productive authors and in biology and clinical medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the discipline-specific analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ddc5e9ad-30c8-4834-948b-feef0461cc38",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C10",
+      "claim": "The proportion of preprints and manuscript submissions with women as authors has decreased during COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of preprints and manuscript submissions with women as authors has decreased (Cui et al., 2021; Kibbe, 2020; Mogensen et al., 2021; Squazzoni et al., 2020; Williams et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "6d9f4716-5bbf-4600-bb28-9bb5dde6dbd6",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C11",
+      "claim": "The proportions of preprints and published articles with women as either the first author or the senior author decreased during COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "as has the proportions of preprints and published articles with women as either the first author or the senior author (Andersen et al., 2020; Inno et al., 2020; Lerchenm\u00fcller et al., 2021; Muric et al., 2021; Ribarovska et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "f27241b8-3f62-4f49-afd3-15b22960bbb8",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C12",
+      "claim": "Gender gaps in self-reported research activities have increased during COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Gender gaps in self-reported research activities have also increased (Andersen et al., 2020; Inno et al., 2020; Lerchenm\u00fcller et al., 2021; Muric et al., 2021; Ribarovska et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "eccc686e-bd65-453d-a23a-d76a5d860414",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C13",
+      "claim": "Women on average publish fewer articles than men.",
+      "claim_type": "EXPLICIT",
+      "source": "Research on gender and publication productivity suggests that women (on average) publish fewer articles than men (Mairesse and Pezzoni, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "cd736a36-d113-4fa6-9b30-d85f6bd73e3e",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C14",
+      "claim": "The magnitude of the gender difference in publication productivity varies by career stage, discipline and country.",
+      "claim_type": "EXPLICIT",
+      "source": "although the magnitude of this difference varies by career stage, discipline and country, and has diminished over time (Huang et al., 2020; Sax et al., 2002; Xie and Schauman, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "d11f5590-1ffd-4be9-a137-4cab049dd6f4",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C15",
+      "claim": "The gender difference in publication productivity has diminished over time.",
+      "claim_type": "EXPLICIT",
+      "source": "although the magnitude of this difference varies by career stage, discipline and country, and has diminished over time (Huang et al., 2020; Sax et al., 2002; Xie and Schauman, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "965278e0-70ca-4849-aff2-57355c3adc46",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C16",
+      "claim": "Structural variables such as employment rank, access to resources, university prestige, appointment type, and teaching loads partially explain observed gender imbalances in publication productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural variables such as employment rank, access to resources, university prestige, appointment type, teaching loads (Eagly, 2020; Taylor et al., 2006) and available time for research (Guarino and Borden, 2017; Lei\u0161yt\u0117, 2016) all partially explain the observed gender imbalances in publication productivity (Allison and Long, 1990; Bland et al., 2006; Xie and Shauman, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "9179f329-8697-4169-9271-9efb5ed2728b",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C17",
+      "claim": "Women scientists tend to span more topics in their research activities compared to men.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, research finds that women scientists (compared to men) tend to span more topics in their research activities, face stricter editorial standards in peer reviewing (Hengel, 2017), and take on greater shares of parenthood responsibilities (Derrick et al., 2021), which also likely perpetuate publishing disparities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from research, though the specific citation for this particular claim is not provided in the sentence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "c922e283-36e7-48b7-a6ae-639d59214b79",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C18",
+      "claim": "Women scientists face stricter editorial standards in peer reviewing compared to men.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, research finds that women scientists (compared to men) tend to span more topics in their research activities, face stricter editorial standards in peer reviewing (Hengel, 2017), and take on greater shares of parenthood responsibilities (Derrick et al., 2021), which also likely perpetuate publishing disparities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hengel, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "f0f627c5-7ebc-47f3-9901-a6c12d52257e",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C19",
+      "claim": "Women scientists take on greater shares of parenthood responsibilities compared to men.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, research finds that women scientists (compared to men) tend to span more topics in their research activities, face stricter editorial standards in peer reviewing (Hengel, 2017), and take on greater shares of parenthood responsibilities (Derrick et al., 2021), which also likely perpetuate publishing disparities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Derrick et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "e46e350e-1a9c-40ad-8d54-c4fe7259c0e8",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C20",
+      "claim": "Women scientists have taken the lion's share of the extra childcare and domestic responsibilities imposed by lockdowns of schools and daycares.",
+      "claim_type": "EXPLICIT",
+      "source": "First, evidence from national and international surveys indicates that women scientists have taken the lion's share of the extra childcare and domestic responsibilities imposed by lockdowns of schools and daycares (Deryugina et al., 2021; Staniscuaski et al., 2021; Yildirim and Eslen-Ziya, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to survey-based research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "92755bf3-e78b-4b99-8327-6ed29deda844",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C21",
+      "claim": "Women scientists, especially those with young dependents, have seen notable productivity decreases in the wake of the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "According to surveys of self-reported research activities, women scientists \u2013 especially those with young dependents \u2013 have seen notable productivity decreases in the wake of the pandemic (Deryugina et al., 2021; Myers et al., 2020; Staniscuaski et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to survey-based research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "3cdafe63-d590-428b-aa0c-ceba223720a4",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C22",
+      "claim": "Transitions to online teaching during university lockdowns required extra hours of planning and preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, transitions to online teaching during university lockdowns required extra hours of planning and preparation and may have affected women scientists more than men due to observed disparities in average teaching loads (Barber et al., 2021; Eagly, 2020; King and Frederickson, 2021; Taylor et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the pandemic's impact on teaching, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "95a8ea31-8078-45ac-8d71-efe17b244298",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C23",
+      "claim": "Transitions to online teaching may have affected women scientists more than men due to observed disparities in average teaching loads.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, transitions to online teaching during university lockdowns required extra hours of planning and preparation and may have affected women scientists more than men due to observed disparities in average teaching loads (Barber et al., 2021; Eagly, 2020; King and Frederickson, 2021; Taylor et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on cited research about teaching load disparities.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "baf4b14e-6c3d-4ec8-8f9e-ed0da8446bb0",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C24",
+      "claim": "Extra time spent on teaching partially accounts for observed decreases in scientists' self-reported publication rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Survey-based evidence from the United States also indicates that the extra time spent on teaching partially accounts for observed decreases in scientists' self-reported publication rates (Barber et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to survey-based research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "0f058c96-0636-45c3-8f45-804b9bccafa1",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C25",
+      "claim": "Service demands related to care for COVID-19 patients may have disproportionately affected women in clinical medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical medicine, service demands related to care for COVID-19 patients and transitions to virtual care delivery for many others may also have disproportionately affected women, who are more likely to be represented on clinician-educator rather than traditional tenure tracks at medical schools (Mayer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on cited research about career track representation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "59cbf137-eec4-4c81-8649-9e2f36c60545",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C26",
+      "claim": "Women in clinical medicine are more likely to be represented on clinician-educator rather than traditional tenure tracks at medical schools.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical medicine, service demands related to care for COVID-19 patients and transitions to virtual care delivery for many others may also have disproportionately affected women, who are more likely to be represented on clinician-educator rather than traditional tenure tracks at medical schools (Mayer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mayer et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "72cc8ea3-9f37-429e-b078-abbf503ed813",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C27",
+      "claim": "This study is the first to quantify the differential impact of COVID-19 on the annual publishing rates of women and men.",
+      "claim_type": "EXPLICIT",
+      "source": "This study is, to our knowledge, the first to quantify the differential impact of COVID-19 on the annual publishing rates of women and men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ddf5b460-2236-46ec-afbb-238f3f7bf0ed",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C28",
+      "claim": "The study used a linked dataset of 431,207 authors and 2,113,108 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a linked dataset of 431,207 authors and 2,113,108 publications and a difference-in-differences specification to estimate how the gender difference in average publishing rates changed from 2019\u20132020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "de26608e-0500-44e7-be4a-30f3a98789c7",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C29",
+      "claim": "The study used author-disambiguated publication data from Clarivate's Web of Science.",
+      "claim_type": "EXPLICIT",
+      "source": "We rely on author-disambiguated publication data from Clarivate's Web of Science, restricting our focus to scientists with >2 publications within basic medicine, biology, chemistry and clinical medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "5cc97092-2b6d-4097-a407-ad0a743c54d2",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C30",
+      "claim": "More than 90% of references in basic medicine, biology, chemistry and clinical medicine are included in Web of Science.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose these fields as they are well-represented in Web of Science (more than 90% of references are included in Web of Science)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about Web of Science coverage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "b4fce6ff-4dc0-40e5-9de4-fe2697932dea",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C31",
+      "claim": "The primary knowledge production mode in basic medicine, biology, chemistry and clinical medicine is through journal publication.",
+      "claim_type": "EXPLICIT",
+      "source": "their primary knowledge production mode is through journal publication (unlike, for example, computer science, many fields of engineering, and the humanities)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of these fields based on disciplinary knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "82b578d6-ed0e-432c-acb0-334e46892156",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C32",
+      "claim": "Research in basic medicine, biology, chemistry and clinical medicine is comparatively collaborative.",
+      "claim_type": "EXPLICIT",
+      "source": "research is comparatively collaborative (although some areas of clinical research have somewhat more authors)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of these fields based on disciplinary knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "bd1f9ddf-ed7c-40e0-a103-d31c792ca3ba",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C33",
+      "claim": "Publishing is relatively fast in basic medicine, biology, chemistry and clinical medicine compared to the social sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "publishing is relatively fast (compared to, for example, the social sciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of these fields based on disciplinary knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "e71970ea-207c-4dff-918a-1e76117cb911",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C34",
+      "claim": "Basic medicine, biology and clinical medicine have some of the highest shares of women scientists in the natural sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "Basic medicine, biology and clinical medicine also have some of the highest shares of women scientists in the natural sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about gender representation in these fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "e4038e53-cd2b-474f-8443-cebe727e98ff",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C35",
+      "claim": "Men experienced a 6.3% decrease in average full-count publication output from 2019 to 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Men experience a smaller productivity decrease in 2020 compared to 2019 (6.3%) than women (14.9%) using full counts of publications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "7b1fec4f-4dc7-44f9-b8e7-217b8e9fca0c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C36",
+      "claim": "Women experienced a 14.9% decrease in average full-count publication output from 2019 to 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Men experience a smaller productivity decrease in 2020 compared to 2019 (6.3%) than women (14.9%) using full counts of publications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "2b9c0686-14ae-4993-bdc4-ac6518f309d8",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C37",
+      "claim": "Men experienced a 7.1% decrease in fractional-count publication output from 2019 to 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "For fractional counts (each paper counts as a fraction of the number of co-authors), the difference in decrease is greater, with a 7.1% decrease for men and 14.7% decrease for women.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "fefc9688-dc7d-40cc-ac2a-4a50bab08b94",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C38",
+      "claim": "Women experienced a 14.7% decrease in fractional-count publication output from 2019 to 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "For fractional counts (each paper counts as a fraction of the number of co-authors), the difference in decrease is greater, with a 7.1% decrease for men and 14.7% decrease for women.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "d8d8ab1b-e4a8-4adf-bbb3-d9cb93438cba",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C39",
+      "claim": "The gender difference in annual publishing rates remained relatively stable between 2017 and 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in panel A, the gender difference in annual publishing rates remained relatively stable between 2017 and 2019 (implying parallel trends prior to COVID-19), while increasing in 2020.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 panel A and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "da068a82-67f9-4722-b2dc-28f410a39639",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C40",
+      "claim": "The average-marginal gender difference in fractional-count output changed from \u20130.048 in 2019 to \u20130.059 in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2\u2014figure supplement 1 presents results from a complementary analysis with fractional-count publication output as outcome and shows a change in the average-marginal gender difference from \u20130.048 (corresponding to a 22% lower output for women than for men) to 0.059 (corresponding to a 27% lower output for women than for men).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "9123a672-950d-4959-bd73-609b8498dcd4",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C41",
+      "claim": "Women's fractional-count output was 22% lower than men's in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2\u2014figure supplement 1 presents results from a complementary analysis with fractional-count publication output as outcome and shows a change in the average-marginal gender difference from \u20130.048 (corresponding to a 22% lower output for women than for men) to 0.059 (corresponding to a 27% lower output for women than for men).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the fractional-count analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "c0d6ca91-bd2e-409c-b3ae-5b1c37622125",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C42",
+      "claim": "Women's fractional-count output was 27% lower than men's in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2\u2014figure supplement 1 presents results from a complementary analysis with fractional-count publication output as outcome and shows a change in the average-marginal gender difference from \u20130.048 (corresponding to a 22% lower output for women than for men) to 0.059 (corresponding to a 27% lower output for women than for men).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the fractional-count analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "d5c37202-8d1a-4d73-ac9e-8c24dc424a3b",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C43",
+      "claim": "For early-career scientists, the average marginal publication disadvantage for women increased from \u20130.133 in 2019 to \u20130.20 in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "From 2019 to 2020, the average marginal publication disadvantage for early-career women increased from \u20130.133 (corresponding to an 11% lower output for women than for men) to \u20130.20 (corresponding to an 18% lower output for women than for men) in full-count output.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "3d4897a1-0221-425f-a922-0db5f88f7099",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C44",
+      "claim": "For early-career scientists, women's output was 11% lower than men's in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "From 2019 to 2020, the average marginal publication disadvantage for early-career women increased from \u20130.133 (corresponding to an 11% lower output for women than for men) to \u20130.20 (corresponding to an 18% lower output for women than for men) in full-count output.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "84a73fdd-0786-4304-9213-14dc177142bf",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C45",
+      "claim": "For early-career scientists, women's output was 18% lower than men's in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "From 2019 to 2020, the average marginal publication disadvantage for early-career women increased from \u20130.133 (corresponding to an 11% lower output for women than for men) to \u20130.20 (corresponding to an 18% lower output for women than for men) in full-count output.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "780e489a-1d4e-440b-96c2-4e3afff46af7",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C46",
+      "claim": "For mid-career scientists, the average marginal publication disadvantage for women changed from \u20130.452 in 2019 to \u20130.592 in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the average marginal publication disadvantage for mid-career women changed from \u20130.452 (corresponding to a 21% lower output for women than for men) to \u20130.592 (corresponding to a 27% lower output for women than for men).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "9bd45f98-757d-4973-91dd-651ad95d954c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C47",
+      "claim": "For mid-career scientists, women's output was 21% lower than men's in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the average marginal publication disadvantage for mid-career women changed from \u20130.452 (corresponding to a 21% lower output for women than for men) to \u20130.592 (corresponding to a 27% lower output for women than for men).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "d9bff7c9-f356-4510-b48e-9fdc5d543a48",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C48",
+      "claim": "For mid-career scientists, women's output was 27% lower than men's in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the average marginal publication disadvantage for mid-career women changed from \u20130.452 (corresponding to a 21% lower output for women than for men) to \u20130.592 (corresponding to a 27% lower output for women than for men).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "6014ab50-75f0-435b-94b4-3e7b7bc3b716",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C49",
+      "claim": "The relative increase in the gender gap was 61% for early-career scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a relative increase in the gender gap of 61% for early-career scientists and 29% for mid-career scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the data presented for early-career scientists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "f00c018a-0be3-4708-b14c-c937c4250311",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C50",
+      "claim": "The relative increase in the gender gap was 29% for mid-career scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a relative increase in the gender gap of 61% for early-career scientists and 29% for mid-career scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the data presented for mid-career scientists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "47a92c70-db31-49b4-9406-8f5a29e8afd5",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C51",
+      "claim": "A considerable share of the average marginal gender difference is attributable to differences occurring among the top-10% most prolific men and women authors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a considerable share of the average marginal gender difference appeared to be attributable to differences occurring among the top-10% most prolific men and women authors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "698e7d11-d780-40b8-b91e-42c3f439156f",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C52",
+      "claim": "Changes in the average gender gap were marginal for authors below the 80th percentile of the publication distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, changes in the average gender gap were marginal for authors below the 80th percentile of the publication distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "fda24398-d3f2-4294-96f7-fd18d73bda23",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C53",
+      "claim": "At the highest decile, the average difference increased from \u20131.35 in 2019 to \u20131.74 in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "At the highest decile, the average difference increases from \u20131.35 (corresponding to 23% lower output for women) to \u20131.74 (31% lower output for women) from 2019\u20132020,, which is a relative change of 22.3%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "f8f793f8-7c00-4ee1-9895-fcabd876a8a3",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C54",
+      "claim": "At the highest decile, women's output was 23% lower than men's in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "At the highest decile, the average difference increases from \u20131.35 (corresponding to 23% lower output for women) to \u20131.74 (31% lower output for women) from 2019\u20132020,, which is a relative change of 22.3%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "a47d6a62-704e-4493-ac57-80c25e85df3e",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C55",
+      "claim": "At the highest decile, women's output was 31% lower than men's in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "At the highest decile, the average difference increases from \u20131.35 (corresponding to 23% lower output for women) to \u20131.74 (31% lower output for women) from 2019\u20132020,, which is a relative change of 22.3%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "25271619-9019-4a7b-8d28-b0aecbf9a089",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C56",
+      "claim": "At the highest decile, the relative change in the gender gap was 22.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "At the highest decile, the average difference increases from \u20131.35 (corresponding to 23% lower output for women) to \u20131.74 (31% lower output for women) from 2019\u20132020,, which is a relative change of 22.3%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "a7c1b1b0-8103-4a87-9678-6d03a9a0605d",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C57",
+      "claim": "The estimated change in the magnitude of the gender gap varied across countries.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated change in the magnitude of the gender gap also varied across countries (Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "9d38f514-3cca-422c-928e-08bf5e159767",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C58",
+      "claim": "The smallest changes in the gender gap were observed in Denmark, Australia, Pakistan and Belgium.",
+      "claim_type": "EXPLICIT",
+      "source": "with the smallest changes observed in Denmark, Australia, Pakistan and Belgium, and the largest increases found in Russia, Italy, Austria and Iran.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "3cd1382d-ed28-45de-b339-16420970efd0",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C59",
+      "claim": "The largest increases in the gender gap were found in Russia, Italy, Austria and Iran.",
+      "claim_type": "EXPLICIT",
+      "source": "with the smallest changes observed in Denmark, Australia, Pakistan and Belgium, and the largest increases found in Russia, Italy, Austria and Iran.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "54ff8893-1b16-474e-8b56-8390763d289b",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C60",
+      "claim": "The vast majority of scientists in the sample are from the USA.",
+      "claim_type": "EXPLICIT",
+      "source": "The horizontal bar diagram to the right in Figure 5 shows that the vast majority of scientists are from the USA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "22550157-9bd9-4298-a8af-a8b346c49e99",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C61",
+      "claim": "The estimated effects at the country-level were only weakly and inconsistently correlated with the severity of COVID-19 restrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the estimated effects at the country-level were only weakly and inconsistently correlated with the severity of COVID-19 restrictions (Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "fea03b9f-ea3a-4ad3-a95e-fafabef73c72",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C62",
+      "claim": "The widening gender gap was persistent across all four disciplines.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6 panel A, the widening gender gap was persistent across all four disciplines but with markedly larger effects observed for clinical medicine (Average marginal gender difference = \u22120.117, CI: \u20130.138\u2013\u20130.095) and biology (Average marginal gender difference = \u22120.089, CI: \u20130.117\u2013\u20130.063) compared to basic medicine (Average marginal gender difference = 0.058, CI: \u20130.093\u2013\u20130.022) and chemistry (Average marginal gender difference = 0.062, CI: \u20130.100\u2013\u20130.023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "b1fefd55-4c4d-46d3-bcce-2d29921cd7a5",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C63",
+      "claim": "Markedly larger effects on the gender gap were observed for clinical medicine compared to basic medicine and chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6 panel A, the widening gender gap was persistent across all four disciplines but with markedly larger effects observed for clinical medicine (Average marginal gender difference = \u22120.117, CI: \u20130.138\u2013\u20130.095) and biology (Average marginal gender difference = \u22120.089, CI: \u20130.117\u2013\u20130.063) compared to basic medicine (Average marginal gender difference = 0.058, CI: \u20130.093\u2013\u20130.022) and chemistry (Average marginal gender difference = 0.062, CI: \u20130.100\u2013\u20130.023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "dc136164-0c3b-4397-87e2-b86dc779eede",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C64",
+      "claim": "Markedly larger effects on the gender gap were observed for biology compared to basic medicine and chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6 panel A, the widening gender gap was persistent across all four disciplines but with markedly larger effects observed for clinical medicine (Average marginal gender difference = \u22120.117, CI: \u20130.138\u2013\u20130.095) and biology (Average marginal gender difference = \u22120.089, CI: \u20130.117\u2013\u20130.063) compared to basic medicine (Average marginal gender difference = 0.058, CI: \u20130.093\u2013\u20130.022) and chemistry (Average marginal gender difference = 0.062, CI: \u20130.100\u2013\u20130.023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "50346526-5aba-44f7-87fa-805e784f725c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C65",
+      "claim": "There is an over-representation of highly productive authors in clinical medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the figure, we observe an over-representation of highly productive authors in clinical medicine implying that the large average marginal gender difference effect observed for this discipline may partially be driven by a higher proportion of prolific scientists.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6 panel B and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "e189071a-f20e-42b0-9ad7-b048b68efbd0",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C66",
+      "claim": "The large average marginal gender difference effect observed for clinical medicine may partially be driven by a higher proportion of prolific scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the figure, we observe an over-representation of highly productive authors in clinical medicine implying that the large average marginal gender difference effect observed for this discipline may partially be driven by a higher proportion of prolific scientists.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "7dbe4646-d83c-414e-9cb0-efacdbdb40cb",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C67",
+      "claim": "The widening gender gap appears to represent a genuine decline in publication productivity and not just a shift in author roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the widening gender gap appears to represent a genuine decline in publication productivity and not just a shift in author roles, as women continue to first author publications at similar rates as in prior years (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "25a86fca-d5f3-444f-a292-a2e921a1cc23",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C68",
+      "claim": "Women continue to first author publications at similar rates as in prior years.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the widening gender gap appears to represent a genuine decline in publication productivity and not just a shift in author roles, as women continue to first author publications at similar rates as in prior years (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "0af28f8b-1b9b-4c1e-b38e-8cc75babeaf4",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C69",
+      "claim": "The ordering of countries does not suggest that gender-differentiated changes in productivity rates vary systematically according to a country's level of gender equality, welfare model, or infection rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the ordering of countries in Figure 5 does not seem to suggest that the gender-differentiated changes in productivity rates vary systematically according to a country's level of gender equality, welfare model, or infection rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the country-level data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "4fa72846-a804-4ad4-b912-dafdf723dd3c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C70",
+      "claim": "The publication productivity of already prolific women scientists have been affected the most by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the publication productivity of already prolific women scientists have been affected the most by the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the productivity-stratified analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "b7068093-2139-4204-88f0-9c16d62f0e4f",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C71",
+      "claim": "Highly prolific men appeared able to maintain their annual publication rates while highly prolific women were not.",
+      "claim_type": "EXPLICIT",
+      "source": "Those designing interventions to promote equity in academic science and medicine should strive to understand the reasons why highly prolific men appeared able to maintain their annual publication rates while highly prolific women were not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the productivity-stratified analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "c43b9866-0bc5-44f7-90a4-51508d4e4b04",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C72",
+      "claim": "Men with the highest levels of productivity may have been more likely to have been rewarded with access to additional workplace supports in recognition of their achievements.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior research suggests that it is possible that men with the highest levels of productivity may have been more likely to have been rewarded with access to additional workplace supports, such as endowed professorships, in recognition of their achievements (Gold et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on cited prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "bea30afd-30f4-4256-b924-ec13a061f4ce",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C73",
+      "claim": "If institutions prioritized protecting a few 'superstar' researchers without clear processes, such efforts might preferentially have protected outstanding men as compared to similarly outstanding women.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if institutions prioritized protecting a few \"superstar\" researchers from teaching or clinical demands without clear processes for identifying which individuals received preferential treatment, the vast literature on unconscious bias suggests that such efforts might preferentially have protected outstanding men as compared to similarly outstanding women (NASEM, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on cited research on unconscious bias.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "2b5bf283-a283-4596-b4fe-c1dfc30d134c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C74",
+      "claim": "High-achieving women scientists may be more likely than their male peers to state that their partners' careers take priority.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior research also suggests that high-achieving women scientists may be more likely than their male peers to state that their partners' careers take priority (Mody et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "baa80d09-324c-4499-8a84-b9b2c5377260",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C75",
+      "claim": "Partners of extraordinarily productive men scientists may be particularly likely to be willing to make sacrifices in their own careers to take on additional domestic labor.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is possible that high-achieving men scientists' partners may be particularly likely to be willing to make sacrifices in their own careers to take on additional domestic labor to allow continuation of their extraordinary partners' work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "1c844282-40e4-452d-bbb4-16198a136123",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C76",
+      "claim": "The amplified effect in clinical medicine may be due to the dual research and clinical roles taken on by scientists in this discipline.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplified effect in clinical medicine may be due to the dual research and clinical roles taken on by scientists in this discipline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "89455f02-542f-44e8-9c44-cdf4fe45ee40",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C77",
+      "claim": "Initial funding for COVID-19 related research was biased toward applications from men.",
+      "claim_type": "EXPLICIT",
+      "source": "Early research suggested that initial funding for COVID-19 related research was biased toward applications from men (Witteman et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "33c7312c-6543-4ab0-a32e-9305ef0604fe",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C78",
+      "claim": "There is a positive association between women's participation as leading authors in medical research and a study's likelihood of including sex and gender as analytical variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Research suggests a positive association between women's participation as leading authors in medical research and a study's likelihood of including sex and gender as analytical variables (Nielsen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "20f6b885-1b30-47d8-9eeb-c7dc403d4404",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C79",
+      "claim": "The omission of gender and sex analysis has been widespread in COVID-19-related clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The omission of gender and sex analysis has been widespread in COVID-19-related clinical trials (Brady et al., 2021), despite early evidence of sex-differences in the prognosis and outcome of the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "91bd65ab-6336-499b-a821-f6ee40a1fdc8",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C80",
+      "claim": "There is early evidence of sex-differences in the prognosis and outcome of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The omission of gender and sex analysis has been widespread in COVID-19-related clinical trials (Brady et al., 2021), despite early evidence of sex-differences in the prognosis and outcome of the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact based on early evidence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "5f2a6510-f7a6-46cb-94cf-3a9994f7a227",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C81",
+      "claim": "Recent research shows widening gender disparities in research project initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent research also shows widening gender disparities in research project initiation (Gao et al., 2021) and clinical-trial leadership (Cevik et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "af95ecfb-2bba-4c97-b8fc-0e290a7aceae",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C82",
+      "claim": "Recent research shows widening gender disparities in clinical-trial leadership.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent research also shows widening gender disparities in research project initiation (Gao et al., 2021) and clinical-trial leadership (Cevik et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "518025f1-a99c-4980-b22e-f4f93d7468c4",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C83",
+      "claim": "Other marginalized groups are likely to suffer from similar set-backs, potentially to an even higher degree.",
+      "claim_type": "EXPLICIT",
+      "source": "While our study focuses on gender, other marginalized groups are likely to suffer from similar set-backs, potentially to an even higher degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on inference from the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "489bbe06-324e-425d-8db9-1bdc5f03ada8",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C84",
+      "claim": "Marginalized groups other than women are generally under-studied in the literature on productivity gaps.",
+      "claim_type": "EXPLICIT",
+      "source": "These groups are generally under-studied in the the literature on productivity gaps, as they are much more difficult to identify quantitatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the literature based on the authors' knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "3ff9b56c-d09b-46f4-85c4-26588c608525",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C85",
+      "claim": "Data on individual publication rates gives a better estimate of the effects of the pandemic on researcher productivity than most previously published analyses focusing on publication-level effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Data on individual publication rates gives us a better estimate of the effects of the pandemic on researcher productivity than most previously published analyses focusing on publication-level effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the methodological advantage of the study's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "2723cc25-23a0-48e6-8225-1ce11111d5a9",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C86",
+      "claim": "If the relative share of women scientists opting out of an academic career is higher in 2020 compared to 2019, this may inflate the observed change in productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "If the relative share of women scientists opting out of an academic career is higher in 2020 compared to 2019, this may inflate the observed change in productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about a potential confounding factor.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "a7a47e3e-fa61-4ed2-82f1-486607c1e402",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C87",
+      "claim": "The counter-factual analysis suggests a consistent increase in the size of gender productivity gap over time with a marginal annual change in the gender difference from year four to five amounting to 53% of the treatment effect observed in the main analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the counter-factual analysis presented in Figure 3\u2014figure supplement 2 suggests a consistent increase in the size of gender productivity gap over time with a marginal annual change in the gender difference from year four to five amounting to 53% of the treatment effect observed in our main analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the counterfactual analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "c960937f-15cc-48c5-ba4d-4c617b11ebd0",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C88",
+      "claim": "Both lower publication productivity and attrition result in lower total publication outputs for women and lead to enlarged gender disparities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both mechanisms - lower publication productivity and attrition - result in lower total publication outputs for women and lead to enlarged gender disparities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of the two mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ce298cb6-195e-4bfe-b882-aa160b8002fb",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C89",
+      "claim": "A more granular analysis of monthly publishing rates may reveal a more direct correlation between lockdowns and decreased publishing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "A more granular analysis of monthly publishing rates may reveal a more direct correlation between lockdowns and decreased publishing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about what future research might reveal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "215f56b4-55fd-4162-a07a-600e01008aab",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C90",
+      "claim": "Information on when something is published is not available on a monthly basis for a large proportion of articles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, information on when something is published is not available on a monthly basis for a large proportion of articles, and information on submission and review dates are even harder to obtain, often completely missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about data availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "c4052358-0e6b-45ad-bbca-f7f2889837ce",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C91",
+      "claim": "Many of the delays occurring in the publishing process are out of the hand of authors and thus unrelated to the lockdown effect that they may be experiencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, many of the delays occurring in the publishing process are out of the hand of authors and thus unrelated to the lockdown effect that they may be experiencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the publishing process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "05090786-accb-4e03-b1d6-269e6cd66e5f",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C92",
+      "claim": "The weak relationship between country-level gender gaps and the severity of lockdown policies could be due to aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the weak relationship between country-level gender gaps and the severity of lockdown policies could be due to aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about a potential explanation for the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "a0daa200-61fb-4bdb-8234-d638c05c40bf",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C93",
+      "claim": "The fraction of days with at least partial primary school closures negatively affected time loss for women researchers relative to men in the period Feb. 16 - July 31, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Using survey data on self-reported time-use, Deryugina et al., 2022 show that e.g. the fraction of days with at least partial primary school closures negatively affected time loss for women researchers relative to men in the period Feb. 16 - July 31, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ca7ee976-60a0-4ba1-bf39-d9a74b0def00",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C94",
+      "claim": "The author-disambiguation approach used to establish individual-level panel data unavoidably introduces some level of uncertainty into the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the author-disambiguation approach used to establish individual-level panel data unavoidably introduces some level of uncertainty into our analysis, and errors are more likely to occur for individuals with East Asian names (Nielsen and Andersen, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the methodology, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "2c0213ad-e17d-4820-b618-c7dbb2d68868",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C95",
+      "claim": "Errors in author disambiguation are more likely to occur for individuals with East Asian names.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the author-disambiguation approach used to establish individual-level panel data unavoidably introduces some level of uncertainty into our analysis, and errors are more likely to occur for individuals with East Asian names (Nielsen and Andersen, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "5dd9b34d-26f2-4223-b9ef-5b4b4c457252",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C96",
+      "claim": "The gender-assignment algorithm did not infer the gender of 20% of the author sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the gender-assignment algorithm used in this study did not infer the gender of 20% of the author sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data and methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "64ddc0d4-0d05-435e-b57a-e442329a91c6",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C97",
+      "claim": "The gender-assignment algorithm introduces potential sampling bias into the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This introduces potential sampling bias into our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of the missing gender data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ee60119a-c558-4758-9d0e-05649a07d252",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C98",
+      "claim": "Not all individuals identify as women or men.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the algorithm reduces author gender to a binary category (woman or man), but not all individuals identify as women or men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact based on knowledge about gender identity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "f8faf950-062f-4e36-a513-281b2cc2a9b4",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C99",
+      "claim": "Some of the articles published in 2020 are based on research conducted in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "This introduces two types of potential bias into our analysis: (a) some of the articles published in 2020 are based on research conducted in 2019; and (b) some of the research conducted in 2020 will not appear in print before 2021, or later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the publication process and a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "b7702b40-6ff1-4b8c-9f44-26822f5ef95c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C100",
+      "claim": "Some of the research conducted in 2020 will not appear in print before 2021, or later.",
+      "claim_type": "EXPLICIT",
+      "source": "This introduces two types of potential bias into our analysis: (a) some of the articles published in 2020 are based on research conducted in 2019; and (b) some of the research conducted in 2020 will not appear in print before 2021, or later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the publication process and a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "2aeb343a-94d3-4944-9e71-5b129e1094e6",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C101",
+      "claim": "Even small negative kicks or setbacks may add up over time and become cumulative disadvantages in science.",
+      "claim_type": "EXPLICIT",
+      "source": "In science, even small negative kicks or setbacks may add up over time and become cumulative disadvantages (Valian, 1999; Cole and Singer, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited research about cumulative disadvantage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "34fab911-3604-4f79-a8e5-6681d7d9a0cf",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C102",
+      "claim": "A decreased growth in publications was observed for all but the most productive men.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a decreased growth in publications for all but the most productive men, and especially early-career researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "8147c503-baef-4913-8376-d3ba7c3e5c9f",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C103",
+      "claim": "Early-career researchers experienced a decreased growth in publications.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a decreased growth in publications for all but the most productive men, and especially early-career researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "fa296548-f1c5-41ab-b35c-b11da556c0a7",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C104",
+      "claim": "The widening gender gap in publishing has the potential to reinforce disparities in an already heavily skewed system.",
+      "claim_type": "EXPLICIT",
+      "source": "This has the potential to reinforce disparities in an already heavily skewed system, if not given special attention, especially with regard to women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential consequences of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "de10de22-7964-474f-be90-b832f8793e01",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C105",
+      "claim": "Publication data were retrieved from the Web of Science (WoS) in-house implementation at CWTS, Leiden University.",
+      "claim_type": "EXPLICIT",
+      "source": "Publication data were retrieved from the Web of Science (WoS) in-house implementation at CWTS, Leiden University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "8bd48af9-0317-49de-a86a-9c6f13e38b6b",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C106",
+      "claim": "The CWTS WoS includes a high-quality disambiguated table of authors and links to their publications.",
+      "claim_type": "EXPLICIT",
+      "source": "The CWTS WoS includes a high-quality disambiguated table of authors and links to their publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "8953961f-0bde-4c43-bef9-37d4bbdbf0da",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C107",
+      "claim": "The author disambiguation algorithm has the highest precision and recall for this task.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm so far has the highest precision and recall for this task (Tekles and Bornmann, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on cited research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "9455fe69-7581-4d06-be9e-7d56a5adc2db",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C108",
+      "claim": "Author gender was inferred using a combination of Gender-API and genderize.",
+      "claim_type": "EXPLICIT",
+      "source": "Author gender was inferred using a combination of Gender-API (https://gender-api.com/) and genderize (https://genderize.io/), in order to find the most likely gender of an author using their first name and country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "5cfb8bbc-60a2-41a9-9a3d-a7a0d67c4854",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C109",
+      "claim": "The inferred gender is only applied in cases with >90% confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred gender is only applied in cases with >90% confidence, meaning gender ambiguous names, or names with very few observations for a country, are not included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "e2df2d9a-aa10-4eb2-88e7-812c165adba6",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C110",
+      "claim": "The gender inference approach leads to an exclusion of 20% of all authors.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to an exclusion of 20% of all authors, with a majority of those from China and South Korea, as first names in these countries tend to be less gendered than for most other countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data and methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "410ce143-a590-4e3f-a60b-2ce1d8437320",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C111",
+      "claim": "A majority of excluded authors are from China and South Korea.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to an exclusion of 20% of all authors, with a majority of those from China and South Korea, as first names in these countries tend to be less gendered than for most other countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ad680765-9023-4dfa-bd7b-05b71a0f12ff",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C112",
+      "claim": "First names in China and South Korea tend to be less gendered than for most other countries.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to an exclusion of 20% of all authors, with a majority of those from China and South Korea, as first names in these countries tend to be less gendered than for most other countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about naming conventions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "66c523d4-f976-4425-9dcc-ed9a081c5c8e",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C113",
+      "claim": "The sample consisted of 431,207 authors linked to 2,113,108 publications in the period 2016\u20132020.",
+      "claim_type": "EXPLICIT",
+      "source": "This sample consisted of 431,207 authors linked to 2,113,108 publications in the period 2016\u20132020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "098bce72-67e7-4452-a2cb-a2580149551f",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C114",
+      "claim": "The counterfactual sample included 276,793 authors linked to 1,060,330 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "This sample included 276,793 authors linked to 1,060,330 publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the counterfactual sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "032787f7-d496-4ba3-b6c9-db831dc2e473",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C115",
+      "claim": "Valid identification of the differential impact of COVID-19 relies on a strong assumption of parallel trends of publication outcomes in pre-pandemic years.",
+      "claim_type": "EXPLICIT",
+      "source": "Valid identification of the differential impact of the COVID-19 pandemic on researchers of different genders relies on a strong assumption of parallel trends of publication outcomes in pre-pandemic years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological assumptions of the difference-in-differences approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "8c3d34e3-1f4e-4ed1-9b4c-39e2fcd78fc3",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C116",
+      "claim": "A large literature has documented persistent gender gaps in publication productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "A large literature (e.g. Hart and Perlis, 2019; Mairesse and Pezzoni, 2015) has documented persistent gender gaps in publication productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim based on citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "17ab2c8c-bf15-477d-aedf-a035f378c3bc",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C117",
+      "claim": "A consistent gap between men and women is present in all years prior to 2020 for the full sample.",
+      "claim_type": "EXPLICIT",
+      "source": "A consistent gap between men and women is present in all years prior to 2020 for our full sample (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "a11d5550-e73b-42dd-9460-96819834533c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "claim_id": "C118",
+      "claim": "The gender gap in publication rates increased from almost parity in the first year to an average difference of 0.2 full publications five years after for the counterfactual sample.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3\u2014figure supplement 1, the gender gap in publication rates increased from almost parity in the first year to an average difference of 0.2 full publications five years after (0.05 fractionalized).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The gender gap in publication productivity widened significantly from 2019 to 2020. Using difference-in-differences analysis on 431,207 authors, the average marginal gender difference increased from -0.26 (17% lower output for women) to -0.35 (24% lower output for women) in full-count publications, with similar patterns in fractional counts. The gender difference remained relatively stable from 2017-2019 before increasing in 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are well-supported by the difference-in-differences analysis with appropriate statistical methods and large sample size (C3, C28). The parallel trends assumption is reasonably satisfied for 2018-2019 (C39), though some pre-existing trend exists (C87). The consistency across both full and fractional counting methods strengthens the finding. However, the inability to fully separate attrition from reduced productivity (C86-C88) and publication lag issues (C99-C100) introduce some uncertainty about the magnitude of the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "1af7773b-43b1-48e7-a0f2-0a24c9479888",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The widening gender gap was observed for both early-career and mid-career scientists, with differential impacts. For early-career scientists, women's disadvantage increased from -0.133 (11% lower) to -0.20 (18% lower), representing a 61% relative increase. For mid-career scientists, the disadvantage increased from -0.452 (21% lower) to -0.592 (27% lower), representing a 29% relative increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The career-stage stratified analysis is well-executed and shows clear differential effects (C43-C50). The larger relative increase for early-career scientists (61% vs 29%) is particularly notable. However, the counterfactual analysis (C87, C118) shows that some widening of the gender gap occurs naturally over career progression, suggesting the 2020 effect may be partially confounded with normal career dynamics, especially for the early-career cohort. The absolute changes are still substantial and statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The widening gender gap was most pronounced among highly productive authors (top 10%), with minimal changes below the 80th percentile. At the highest decile, the gender difference increased from -1.35 (23% lower for women) to -1.74 (31% lower), a 22.3% relative change. Highly prolific men maintained publication rates while highly prolific women did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The productivity-stratified analysis (C51-C56) provides compelling evidence that the pandemic's impact was concentrated among the most productive researchers. The finding that changes were marginal below the 80th percentile (C52) is important for understanding the mechanism. However, the manuscript does not adequately address potential selection effects\u2014highly productive authors may differ systematically in ways that affect their pandemic response. The proposed mechanisms (C72-C75) are speculative and lack direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "83b9cba8-e752-433c-9ea2-e3515176714a",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The widening gender gap was persistent across all four disciplines but most pronounced in clinical medicine (average marginal difference = -0.117) and biology (-0.089) compared to basic medicine (-0.058) and chemistry (-0.062). Clinical medicine has an over-representation of highly productive authors, which may partially explain the larger effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discipline-specific analysis is well-documented (C62-C64) with clear quantitative differences. The observation about over-representation of highly productive authors in clinical medicine (C65) provides a plausible partial explanation (C66), though this is somewhat circular given the productivity-stratified findings. The proposed mechanism about dual research/clinical roles (C76) is speculative. The confidence intervals for discipline-specific effects overlap considerably, suggesting the differences may not be as pronounced as stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "44fb887b-3cd7-4d3f-97ba-df352941224c",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Country-level variation in the gender gap change was substantial, with smallest changes in Denmark, Australia, Pakistan, and Belgium, and largest in Russia, Italy, Austria, and Iran. However, these effects were only weakly and inconsistently correlated with COVID-19 restriction severity and did not vary systematically with gender equality, welfare models, or infection rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The country-level analysis reveals substantial heterogeneity (C57-C59), but the lack of correlation with lockdown severity (C61) and other country characteristics (C69) is puzzling and undermines causal interpretation. The authors acknowledge aggregation issues (C92) and temporal mismatch between annual publication data and daily lockdown measures. The US dominance in the sample (C60) means most of the overall effect is driven by US patterns. The weak correlations suggest unmeasured confounders or that the mechanisms are more complex than lockdown severity alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "61b80564-5eaf-4a6b-b071-7c15d0c8c1a0",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The widening gender gap represents a genuine decline in publication productivity rather than a shift in author roles, as women continued to first-author publications at similar rates as in prior years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The analysis of first-authorship rates (C68) provides important validation that the observed effects reflect actual productivity changes rather than changes in authorship position. Figure 7B shows stable first-authorship ratios across years. This addresses a potential alternative explanation and strengthens the interpretation of the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "03793756-de53-45f3-b555-738bd65758f4",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The parallel trends assumption required for difference-in-differences analysis is partially satisfied. The gender gap remained relatively stable 2017-2019 for the main sample, though a counterfactual analysis shows some natural widening over career progression (53% of the observed 2020 effect).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The parallel trends assumption is critical for causal inference but is only partially met. While 2018-2019 trends are relatively stable (C39), the counterfactual analysis (C87, C118) reveals that gender gaps naturally widen over early career stages, accounting for 53% of the observed 2020 effect. This substantially undermines the causal attribution to COVID-19, particularly for the early-career cohort. The authors acknowledge this (C87) but do not adequately adjust their conclusions. The difference-in-differences estimates may overstate the COVID-19 effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "aff510ba-8e24-4539-824a-6cac656cdb86",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study has important methodological limitations including author disambiguation errors (more likely for East Asian names), exclusion of 20% of authors due to gender inference limitations (majority from China and South Korea), and reduction of gender to a binary category.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors transparently acknowledge significant methodological limitations (C94-C98). The 20% exclusion rate (C96, C110) with geographic concentration (C111) introduces substantial sampling bias that could affect generalizability. The binary gender classification (C98) is a known limitation of algorithmic approaches. The >90% confidence threshold for gender inference (C109) is reasonable but conservative. These limitations are honestly reported but their impact on the main findings is not quantitatively assessed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "b4d61440-e684-4fdd-85e4-fd2a80499566",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Publication lag creates temporal ambiguity\u2014some 2020 publications reflect 2019 research and some 2020 research will appear later. Additionally, the analysis cannot fully distinguish between reduced productivity and increased attrition of women from academia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are important acknowledged limitations (C99-C100, C86). Publication lag is a fundamental challenge for studying immediate pandemic impacts and could bias results in either direction. The inability to separate attrition from productivity decline (C86, C88) is particularly problematic\u2014both mechanisms lead to the same observed outcome but have different policy implications. The authors note both lead to enlarged disparities (C88) but this doesn't resolve the interpretive ambiguity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "597adfed-3da2-4532-9f02-54126c21f023",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study analyzed 431,207 authors linked to 2,113,108 publications from Web of Science using high-quality author disambiguation and gender inference algorithms with >90% confidence thresholds. A counterfactual sample of 276,793 authors was used for validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The data sources and methods are clearly described (C105-C108) and represent state-of-the-art approaches. The sample size is substantial (C3, C28, C113). The use of CWTS disambiguation (C106-C107) is appropriate given its high precision and recall. The inclusion of a counterfactual cohort (C114) for validation is a strength. However, the restriction to four disciplines and >2 publications may limit generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "ad1fd89a-832a-4644-9b3e-675d74a551c3",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior research establishes that COVID-19 amplified existing gender disparities in publishing, with women taking on disproportionate childcare and domestic responsibilities during lockdowns, facing increased teaching burdens, and experiencing notable productivity decreases, especially those with young dependents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about prior work are well-supported by multiple citations (C10-C26) and provide important context. The literature review appropriately establishes the background for the study. However, most cited evidence comes from surveys and self-reports rather than objective publication data, which is why the current study's contribution is valuable. The mechanisms proposed (childcare, teaching, clinical demands) are plausible but the current study does not directly test them.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    },
+    {
+      "id": "6094e783-93e3-4781-8c34-b511d22b240a",
+      "content_id": "44508b82-a5bf-4aaf-a8b4-eaa900bb1d16",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Proposed mechanisms for the differential impact on highly productive women include: men receiving more institutional support and protection from teaching/clinical demands due to unconscious bias, women's partners' careers taking priority, and dual research/clinical roles in clinical medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "These mechanistic explanations (C72-C76) are entirely speculative and not tested in the current study. While they cite some prior research, the claims about pandemic-specific mechanisms are conjectures. The authors appropriately use hedging language ('may have,' 'it is possible'), but these remain unsupported hypotheses that require direct empirical testing. They belong in the discussion as potential explanations requiring future research, not as established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:47:34.525539Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a6082246-b224-4fbc-9d57-a73b7746de7f",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "96aaeecb-8d53-4cc9-a26e-698187e1ec3d",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "ef60340a-831e-4684-a199-20b16daecbf2",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "e4038e53-cd2b-474f-8443-cebe727e98ff",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "7b1fec4f-4dc7-44f9-b8e7-217b8e9fca0c",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "2b9c0686-14ae-4993-bdc4-ac6518f309d8",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "fefc9688-dc7d-40cc-ac2a-4a50bab08b94",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "d8d8ab1b-e4a8-4adf-bbb3-d9cb93438cba",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "da068a82-67f9-4722-b2dc-28f410a39639",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "9123a672-950d-4959-bd73-609b8498dcd4",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "c0d6ca91-bd2e-409c-b3ae-5b1c37622125",
+      "result_id": "0c8feddf-dae5-4ff8-a97b-c7ead44533af"
+    },
+    {
+      "claim_id": "73584e39-2890-41cf-ab5f-7602e3a8b1fc",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "d5c37202-8d1a-4d73-ac9e-8c24dc424a3b",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "3d4897a1-0221-425f-a922-0db5f88f7099",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "84a73fdd-0786-4304-9213-14dc177142bf",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "780e489a-1d4e-440b-96c2-4e3afff46af7",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "9bd45f98-757d-4973-91dd-651ad95d954c",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "d9bff7c9-f356-4510-b48e-9fdc5d543a48",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "6014ab50-75f0-435b-94b4-3e7b7bc3b716",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "f00c018a-0be3-4708-b14c-c937c4250311",
+      "result_id": "1af7773b-43b1-48e7-a0f2-0a24c9479888"
+    },
+    {
+      "claim_id": "5f2e330d-51c5-41ef-8ecc-13e223b8bb89",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "47a92c70-db31-49b4-9406-8f5a29e8afd5",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "698e7d11-d780-40b8-b91e-42c3f439156f",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "fda24398-d3f2-4294-96f7-fd18d73bda23",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "f8f793f8-7c00-4ee1-9895-fcabd876a8a3",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "a47d6a62-704e-4493-ac57-80c25e85df3e",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "25271619-9019-4a7b-8d28-b0aecbf9a089",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "4fa72846-a804-4ad4-b912-dafdf723dd3c",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "b7068093-2139-4204-88f0-9c16d62f0e4f",
+      "result_id": "23e5e0ac-53c5-4c1c-8ca6-e72efb180028"
+    },
+    {
+      "claim_id": "c02d4e8b-3cad-41f8-88c6-4b4abe94971b",
+      "result_id": "83b9cba8-e752-433c-9ea2-e3515176714a"
+    },
+    {
+      "claim_id": "fea03b9f-ea3a-4ad3-a95e-fafabef73c72",
+      "result_id": "83b9cba8-e752-433c-9ea2-e3515176714a"
+    },
+    {
+      "claim_id": "b1fefd55-4c4d-46d3-bcce-2d29921cd7a5",
+      "result_id": "83b9cba8-e752-433c-9ea2-e3515176714a"
+    },
+    {
+      "claim_id": "dc136164-0c3b-4397-87e2-b86dc779eede",
+      "result_id": "83b9cba8-e752-433c-9ea2-e3515176714a"
+    },
+    {
+      "claim_id": "50346526-5aba-44f7-87fa-805e784f725c",
+      "result_id": "83b9cba8-e752-433c-9ea2-e3515176714a"
+    },
+    {
+      "claim_id": "e189071a-f20e-42b0-9ad7-b048b68efbd0",
+      "result_id": "83b9cba8-e752-433c-9ea2-e3515176714a"
+    },
+    {
+      "claim_id": "a7c1b1b0-8103-4a87-9678-6d03a9a0605d",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "9d38f514-3cca-422c-928e-08bf5e159767",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "3cd1382d-ed28-45de-b339-16420970efd0",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "54ff8893-1b16-474e-8b56-8390763d289b",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "22550157-9bd9-4298-a8af-a8b346c49e99",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "0af28f8b-1b9b-4c1e-b38e-8cc75babeaf4",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "05090786-accb-4e03-b1d6-269e6cd66e5f",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "a0daa200-61fb-4bdb-8234-d638c05c40bf",
+      "result_id": "44fb887b-3cd7-4d3f-97ba-df352941224c"
+    },
+    {
+      "claim_id": "7dbe4646-d83c-414e-9cb0-efacdbdb40cb",
+      "result_id": "61b80564-5eaf-4a6b-b071-7c15d0c8c1a0"
+    },
+    {
+      "claim_id": "25a86fca-d5f3-444f-a292-a2e921a1cc23",
+      "result_id": "61b80564-5eaf-4a6b-b071-7c15d0c8c1a0"
+    },
+    {
+      "claim_id": "d8d8ab1b-e4a8-4adf-bbb3-d9cb93438cba",
+      "result_id": "03793756-de53-45f3-b555-738bd65758f4"
+    },
+    {
+      "claim_id": "a7a47e3e-fa61-4ed2-82f1-486607c1e402",
+      "result_id": "03793756-de53-45f3-b555-738bd65758f4"
+    },
+    {
+      "claim_id": "032787f7-d496-4ba3-b6c9-db831dc2e473",
+      "result_id": "03793756-de53-45f3-b555-738bd65758f4"
+    },
+    {
+      "claim_id": "8c3d34e3-1f4e-4ed1-9b4c-39e2fcd78fc3",
+      "result_id": "03793756-de53-45f3-b555-738bd65758f4"
+    },
+    {
+      "claim_id": "17ab2c8c-bf15-477d-aedf-a035f378c3bc",
+      "result_id": "03793756-de53-45f3-b555-738bd65758f4"
+    },
+    {
+      "claim_id": "a11d5550-e73b-42dd-9460-96819834533c",
+      "result_id": "03793756-de53-45f3-b555-738bd65758f4"
+    },
+    {
+      "claim_id": "ca7ee976-60a0-4ba1-bf39-d9a74b0def00",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "2c0213ad-e17d-4820-b618-c7dbb2d68868",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "5dd9b34d-26f2-4223-b9ef-5b4b4c457252",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "64ddc0d4-0d05-435e-b57a-e442329a91c6",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "ee60119a-c558-4758-9d0e-05649a07d252",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "5cfb8bbc-60a2-41a9-9a3d-a7a0d67c4854",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "e2df2d9a-aa10-4eb2-88e7-812c165adba6",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "410ce143-a590-4e3f-a60b-2ce1d8437320",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "ad680765-9023-4dfa-bd7b-05b71a0f12ff",
+      "result_id": "aff510ba-8e24-4539-824a-6cac656cdb86"
+    },
+    {
+      "claim_id": "f8faf950-062f-4e36-a513-281b2cc2a9b4",
+      "result_id": "b4d61440-e684-4fdd-85e4-fd2a80499566"
+    },
+    {
+      "claim_id": "b7702b40-6ff1-4b8c-9f44-26822f5ef95c",
+      "result_id": "b4d61440-e684-4fdd-85e4-fd2a80499566"
+    },
+    {
+      "claim_id": "2723cc25-23a0-48e6-8225-1ce11111d5a9",
+      "result_id": "b4d61440-e684-4fdd-85e4-fd2a80499566"
+    },
+    {
+      "claim_id": "c960937f-15cc-48c5-ba4d-4c617b11ebd0",
+      "result_id": "b4d61440-e684-4fdd-85e4-fd2a80499566"
+    },
+    {
+      "claim_id": "32677b8d-f424-4ffd-bae7-151027cc7ffc",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "ddf5b460-2236-46ec-afbb-238f3f7bf0ed",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "de26608e-0500-44e7-be4a-30f3a98789c7",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "de10de22-7964-474f-be90-b832f8793e01",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "8bd48af9-0317-49de-a86a-9c6f13e38b6b",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "8953961f-0bde-4c43-bef9-37d4bbdbf0da",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "9455fe69-7581-4d06-be9e-7d56a5adc2db",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "66c523d4-f976-4425-9dcc-ed9a081c5c8e",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "098bce72-67e7-4452-a2cb-a2580149551f",
+      "result_id": "597adfed-3da2-4532-9f02-54126c21f023"
+    },
+    {
+      "claim_id": "784f2298-d209-41b3-aeaa-5bf244c84baa",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "ddc5e9ad-30c8-4834-948b-feef0461cc38",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "6d9f4716-5bbf-4600-bb28-9bb5dde6dbd6",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "f27241b8-3f62-4f49-afd3-15b22960bbb8",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "eccc686e-bd65-453d-a23a-d76a5d860414",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "cd736a36-d113-4fa6-9b30-d85f6bd73e3e",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "d11f5590-1ffd-4be9-a137-4cab049dd6f4",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "965278e0-70ca-4849-aff2-57355c3adc46",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "9179f329-8697-4169-9271-9efb5ed2728b",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "c922e283-36e7-48b7-a6ae-639d59214b79",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "f0f627c5-7ebc-47f3-9901-a6c12d52257e",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "e46e350e-1a9c-40ad-8d54-c4fe7259c0e8",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "92755bf3-e78b-4b99-8327-6ed29deda844",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "3cdafe63-d590-428b-aa0c-ceba223720a4",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "95a8ea31-8078-45ac-8d71-efe17b244298",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "baf4b14e-6c3d-4ec8-8f9e-ed0da8446bb0",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "0f058c96-0636-45c3-8f45-804b9bccafa1",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "59cbf137-eec4-4c81-8649-9e2f36c60545",
+      "result_id": "ad1fd89a-832a-4644-9b3e-675d74a551c3"
+    },
+    {
+      "claim_id": "c43b9866-0bc5-44f7-90a4-51508d4e4b04",
+      "result_id": "6094e783-93e3-4781-8c34-b511d22b240a"
+    },
+    {
+      "claim_id": "bea30afd-30f4-4256-b924-ec13a061f4ce",
+      "result_id": "6094e783-93e3-4781-8c34-b511d22b240a"
+    },
+    {
+      "claim_id": "2b5bf283-a283-4596-b4fe-c1dfc30d134c",
+      "result_id": "6094e783-93e3-4781-8c34-b511d22b240a"
+    },
+    {
+      "claim_id": "baa80d09-324c-4499-8a84-b9b2c5377260",
+      "result_id": "6094e783-93e3-4781-8c34-b511d22b240a"
+    },
+    {
+      "claim_id": "1c844282-40e4-452d-bbb4-16198a136123",
+      "result_id": "6094e783-93e3-4781-8c34-b511d22b240a"
+    }
+  ],
+  "comparisons": []
+}

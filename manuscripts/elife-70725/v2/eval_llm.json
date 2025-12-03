@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript establishes the context and challenges of EV research, stating that EVs are released by all cells into biofluids, hold promise as disease biomarkers, but are heterogeneous, present at low levels, difficult to quantify, and lack consensus on optimal isolation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C14) are well-supported by established knowledge and multiple citations to prior work. They provide appropriate background context for the study and accurately represent the state of the field regarding EV biology and methodological challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Existing physical methods for EV quantification (NTA, dynamic light scattering, tunable resistive pulse sensing, lipid dyes, flow cytometry) have major limitations: they cannot discriminate EVs from lipoproteins and protein aggregates, provide no biological information, and lack sufficient sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 are well-supported by multiple citations to prior work and represent an accurate assessment of the limitations of existing EV quantification methods. This establishes the rationale for the authors' approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Transmembrane proteins, specifically the tetraspanins CD9, CD63, and CD81, distinguish EVs from lipoproteins and protein aggregates. Although no single tetraspanin is present on every EV, measuring all three should provide a reliable proxy for EV abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by citations and established knowledge about EV structure. The reasoning that measuring three tetraspanins minimizes bias toward rare EV subsets (C28) is logical and is validated by the experimental correlation observed (C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Simoa technology converts ELISA to a digital readout by isolating individual immuno-complexes in femtoliter wells, enabling single-molecule counting. Simoa assays are orders of magnitude more sensitive than traditional ELISA, which is particularly useful for low-abundance EV proteins in clinical samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 are well-supported by citations to prior work, including the authors' previous validation (C39). The technical description of Simoa is accurate and the sensitivity advantage is documented. The prior application to L1CAM (C33) demonstrates the authors' experience with the technology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C91"
+    ],
+    "result": "The authors developed a framework using Simoa assays to measure three tetraspanins (CD9, CD63, CD81) for EV quantification and albumin for protein contamination assessment. SEC separates EVs from free proteins based on size. All samples were pre-processed by centrifugation and 0.45-\u03bcm filtration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C40-C42, and C91 describe the methodological framework that is clearly demonstrated throughout the manuscript with detailed protocols and experimental data. The approach is logical and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Comparison of commercial EV isolation methods showed that in plasma, the Izon qEVoriginal 35 nm SEC column (fractions 7-10) yielded the highest EV recovery and purity. In CSF, ExoQuick yielded the highest EV recovery while Izon qEVoriginal 70 nm yielded the highest purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are directly supported by experimental data shown in Figure 2. The comparison used identical starting samples and measured both yield and purity on the same platform, enabling valid quantitative comparisons. The results are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Systematic optimization of custom SEC columns revealed that smaller resin pore sizes (Sepharose CL-6B) yielded higher EV recovery but with increased albumin contamination. Doubling column height (10 to 20 ml) improved purity but reduced recovery. Larger loading volumes decreased purity. Collecting fewer fractions increased purity at the expense of yield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are well-supported by comprehensive experimental data in Figures 3-4 and supplements. The systematic variation of parameters (resin type, column height, loading volume, fraction collection) provides clear evidence for each conclusion. Western blot validation (Figure 3\u2014supplement 2) confirms the Simoa results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Direct quantitative comparison of optimized SEC methods showed that in plasma, Sepharose CL-6B 10 ml provided >2-fold more EVs than CL-2B 10 ml but with 6-fold more albumin, while CL-4B 20 ml had similar EV levels to CL-2B 10 ml but 6-fold less albumin. In CSF, CL-6B 10 ml greatly increased EV yield over CL-2B 10 ml, but CL-4B 10 ml did not improve purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are strongly supported by experimental data in Figure 5 with four replicates per condition. The quantitative comparisons are precise and statistically meaningful. The biofluid-specific differences (plasma vs CSF) are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sepharose CL-6B, which is seldom used for EV isolation, yields considerably higher levels of EVs than the commonly used CL-2B or CL-4B. This is attributed to CL-6B having smaller pore size (24 nm vs 42 nm for CL-4B and 75 nm for CL-2B), reducing the probability that EVs enter the beads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by experimental data and a mechanistic explanation based on cited pore size measurements (C75). The reasoning linking pore size to EV retention (C76) is logical and consistent with SEC principles. The finding that CL-6B is seldom used (C72) is supported by literature review (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "There is a tradeoff between EV yield and albumin contamination in SEC. For maximum yield when protein contamination is acceptable, 10 ml Sepharose CL-6B is recommended for both plasma and CSF. For high purity from plasma, 20 ml Sepharose CL-4B is recommended. For CSF, 10 ml columns are preferable to 20 ml due to lower protein content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 represent well-reasoned recommendations based on the comprehensive experimental data. The tradeoff between yield and purity (C77) is clearly demonstrated throughout the results. The application-specific recommendations (C78-C80) logically follow from the data and account for biofluid differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Previous EV isolation method comparisons using particle detection methods have been difficult to interpret due to inability to differentiate EVs from contaminants. Measuring transmembrane proteins (CD9, CD63, CD81) overcomes these limitations because these tetraspanins are present on EVs but not in lipoproteins or protein aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 provide a well-supported critique of prior work and justification for the authors' approach. The limitations of particle detection methods (C58-C60) are supported by multiple citations. The advantage of measuring transmembrane proteins (C61-C63) is based on established structural knowledge and is validated by the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "By detecting three tetraspanins per sample with Simoa, the chance of measuring a rare EV subset is minimized. Strong correlation of the three tetraspanins across SEC fractions was observed. Simoa's high sensitivity is necessary for low EV levels in human biofluids and can detect EV markers where traditional ELISA cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by the experimental design rationale, observed data (C65), and prior validation work (C68). The correlation of the three tetraspanins (C65) validates the assumption that measuring multiple markers captures the general EV population rather than rare subsets (C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "While combining techniques like density gradient centrifugation (DGC) and SEC can achieve highest purity, DGC is not scalable for biomarker studies. SEC requires no instrumentation and allows parallel processing of many samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by citations (C69) and practical considerations about method scalability (C70-C71). The focus on SEC for biomarker applications is well-justified based on throughput requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Albumin is the most abundant protein in plasma and the main contaminant when isolating EVs. A Simoa assay for albumin was developed to assess EV preparation purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by established knowledge about plasma composition (C81) and the experimental data showing albumin distribution in SEC fractions. The use of albumin as a purity marker is well-justified and effectively demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Simoa measurements showed high reproducibility between technical replicates. SEC columns stored at 4\u00b0C for 1 week showed comparable performance to freshly prepared columns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by data in supplementary figures (C92) and experimental observations (C93). These technical validation points support the reliability of the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors suggest future applications including: adding ApoB100 assays to assess lipoprotein contamination, evaluating dual mode chromatography, applying the framework to other biofluids (urine, saliva) or cell culture media, and broader use of Simoa for EV isolation method assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C90 are speculative suggestions for future work. While these are reasonable extensions based on the demonstrated approach, they represent proposed rather than completed work. The suggestions are logical but cannot be evaluated as supported results.",
+    "result_type": "MINOR"
+  }
+]

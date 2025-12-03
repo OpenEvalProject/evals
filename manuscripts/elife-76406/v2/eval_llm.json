@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C89",
+      "C90",
+      "C101",
+      "C102",
+      "C104",
+      "C189",
+      "C190",
+      "C226"
+    ],
+    "result": "The authors develop a mean-field analytical theory showing that cell shape variability in confluent epithelial monolayers is governed by a single parameter \u03b1, which encapsulates all system-specific details from the energy function describing contractility and adhesion. The theory predicts that the perimeter term dominates shape determination, and the mathematical property of closed-loop objects (degeneracy 2 of the lowest non-zero eigenvalue) leads to the observed k\u22482.5 in aspect ratio distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C54, C89, C90, C101, C102, C104 collectively establish the theoretical framework and its key predictions. The derivation is mathematically justified (C101, C102, C104), the assumptions are biologically motivated (C89, C90, C190), and the constraint of confluency is appropriately handled (C189, C226). The theory is validated through simulations in both CPM and VM models as shown in multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C111",
+      "C154",
+      "C155"
+    ],
+    "result": "The theory predicts a universal relationship between the standard deviation (sd) and mean aspect ratio (r\u0304) across diverse epithelial systems, independent of system-specific parameters. This universality arises because \u03b1 is the only parameter governing the distribution, creating a unique relationship between sd and r\u0304.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C111, C154, C155 establish both the theoretical prediction and experimental validation of the universal sd vs r\u0304 relationship. Figure 4d shows remarkable agreement between theory and experimental data from diverse systems (cancer cells, MDCK, HBEC). The logical basis (C111) that no other system-dependent parameters exist in this relation is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C58",
+      "C59",
+      "C79",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The PDF of scaled aspect ratio rs is nearly but not strictly universal across diverse epithelial systems. The k-Gamma distribution with k\u22482.5 is a rough approximation of the analytical expression, and this near-universality holds even in the fluid regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C58, C59, C79, C151, C152, C153 establish the near-universality of the scaled aspect ratio distribution. Figure 4c demonstrates this across a spectacular variety of systems (cancer cell lines, HBEC, MDCK, Drosophila, simulations). The theory explains why the distribution is nearly but not strictly universal, and importantly shows this holds in the fluid regime (C59), distinguishing it from prior theories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C81",
+      "C126",
+      "C159",
+      "C231",
+      "C232",
+      "C233",
+      "C241"
+    ],
+    "result": "The scaled area distribution follows a Gamma function characterized by parameter \u03bc, which is independent of \u03bbP but depends on \u03bbA and T. Unlike previous claims of universality, the area distribution functional form is the same across systems, but the parameter \u03bc varies, making the distributions non-universal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C81, C126, C159 establish the area distribution result, while C231, C232, C233 justify the phenomenological approach to the confluency constraint. C241 provides simulation validation that \u03bc is independent of \u03bbP. Figure 4e shows fits to experimental data from different systems with varying \u03bc values, supporting the non-universality claim and contradicting Wilk et al., 2014 (C159).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C77",
+      "C147",
+      "C168",
+      "C169"
+    ],
+    "result": "Simultaneous measurement of \u03b1 and \u03bc can distinguish the effects of changing physical conditions (such as maturation) on different system properties. The parameter \u03b1 increases with maturation in MDCK, asthmatic HBEC, and non-asthmatic HBEC cells, allowing characterization of systems even without detailed molecular knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C77, C147 demonstrate the practical application of the theory to distinguish maturation effects. Table 1 shows \u03b1 increases with maturation across three different cell types. Claims C168, C169 establish that \u03b1 encapsulates all perturbation effects, allowing system characterization as a control parameter. This is validated by agreement with experimental interpretations (C147).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C62",
+      "C63",
+      "C145",
+      "C176",
+      "C188"
+    ],
+    "result": "The analytical theory is verified through simulations of two distinct models (CPM on square and hexagonal lattices, and VM) and shows excellent agreement with existing experimental data on diverse epithelial systems. The results are independent of microscopic model details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C62, C63, C145, C176 establish comprehensive validation. Multiple figures (Figures 2, 3, 4) show excellent agreement between theory, simulations (CPM and VM), and experiments. The independence from microscopic details (C176) is demonstrated by agreement across different lattice types and model formulations. C188 confirms assumptions are justified in simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C171",
+      "C172"
+    ],
+    "result": "The parameter \u03b1 describes both static properties (shape variability) and dynamics (relaxation time \u03c4). In confluent monolayers, average shape determines both shape variability and dynamics, with \u03c4 increasing as \u03b1 increases or r\u0304 decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C171, C172 establish the connection between statics and dynamics through \u03b1. Figure 3g shows \u03c4 as a function of \u03b1 and r\u0304, demonstrating that the same parameter governs both aspects. This provides a unified framework for analyzing epithelial systems, though the dynamic measurements are from simulations rather than experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C164",
+      "C165"
+    ],
+    "result": "Cell shape variability is inevitable in confluent epithelial monolayers, resulting from geometric constraints imposed by the energy function. The universal properties are consequences of a mathematical property (closed-loop degeneracy) and are valid even in the fluid regime, in contrast to existing theories that assume solid-like behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C164, C165 establish the inevitability of shape variability and its mathematical origin. The excellent agreement between theory and experiments (C164) demonstrates this is not a choice but a consequence of geometric constraints. Crucially, C15 distinguishes this work from prior theories by showing validity in the fluid regime, which is biologically relevant since most systems are fluid-like due to activity (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C163",
+      "C166",
+      "C169",
+      "C170"
+    ],
+    "result": "The theory has predictive power: knowledge of the average aspect ratio r\u0304 alone determines the entire statistical distribution and other properties. This allows characterization of diverse systems by treating \u03b1 as a control parameter, even without detailed molecular knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C163, C166, C169, C170 establish the predictive and practical utility of the theory. Figure 4f demonstrates this predictive power by calculating PDFs from measured r\u0304 values with excellent agreement to experimental data. The ability to characterize systems without detailed molecular knowledge (C169, C170) is a significant practical advantage, though the mechanistic insights remain somewhat speculative (C170).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C177",
+      "C179",
+      "C143"
+    ],
+    "result": "Cell division and apoptosis are neglected in the main simulations, but the general conclusions remain valid when their rates are not very large, as shown in Appendix 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177, C179, C143 acknowledge a limitation and provide validation. The neglect is justified by low rates in epithelial monolayers (C177 with citations). Appendix 4 simulations (C143, C179) support the hypothesis that main results hold when these processes are not dominant. However, the boundary of 'not very large' is not precisely defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C182"
+    ],
+    "result": "The Boltzmann distribution at an effective temperature T is justified within simulations and validated by excellent agreement with experiments. This description applies to both equilibrium and active (self-propelled) variants of confluent models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184, C185, C186 establish the validity of the Boltzmann distribution assumption. Appendix 1 provides simulation justification (C184), and excellent experimental agreement (C185) along with prior work (C186) validate this approach. C182 clarifies the two model variants. However, the exact interpretation of effective temperature in active systems remains somewhat phenomenological.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C204",
+      "C205"
+    ],
+    "result": "The use of the Cauchy-Schwartz inequality in the derivation only affects the constant in the exponential, which is treated as a fitting parameter. Since no transition is investigated, this approximation is justified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204, C205 address a mathematical approximation in the theory. The justification is reasonable: the inequality only affects a fitting parameter (C204), and since no phase transition is being studied (C205), the approximation does not compromise the main results. The key exponent 3/2 comes from a different mathematical property (closed-loop degeneracy).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Simplified polygon-based models (VM, Voronoi, CPM) have been remarkably successful in describing epithelial monolayers. The CPM is particularly appropriate for variable cellular shapes and sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173, C174, C175 provide context for the modeling approach. Multiple citations (C173, C174) support the success of these models. C175 justifies the focus on CPM with a citation. This is well-established background rather than a novel result of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Previous work has shown similarities between cellular monolayers and glassy systems, with insights from polygon-based models. However, jamming and glass transitions are distinct phenomena controlled by different physics, and these terms are often used imprecisely in biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 provide important context and clarification of terminology. The distinction between jamming and glass transitions (C34, C35, C38, C39) is well-supported by citations and is crucial for understanding the field. The observation about imprecise terminology (C40) is important for avoiding confusion. This is primarily literature review and clarification rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C45",
+      "C48",
+      "C49",
+      "C51",
+      "C53"
+    ],
+    "result": "Prior theoretical work (Atia et al., 2018; Li et al., 2021) lacked rigorous basis for k-Gamma distribution applicability and assumed solid-like properties. Most biological systems are fluid-like due to activity, requiring a more general theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C45, C48, C49, C51, C53 establish the limitations of prior work and motivation for the current study. The quote from Atia et al. (C45) acknowledges the lack of rigorous basis. The characterization of existing theories (C48, C51) and the observation about biological systems (C53) are well-supported. This provides important context for the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C192",
+      "C195"
+    ],
+    "result": "Cell heights remain nearly constant in epithelial monolayers. The perimeter term in the energy function describes cortical contractility and adhesion, though the precise mathematical description of adhesion remains unclear. Cell boundaries are in contact with other cells and perimeters are often irregular.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86, C192, C195 provide biological and modeling context. C85 and C195 are supported by citations and observations. C86 explains the perimeter term with citations. C192 acknowledges uncertainty in adhesion modeling. These are well-established facts that justify modeling choices rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C208",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "Contractility and adhesion act as competing effects. The mathematical structure of the cell shape problem becomes equivalent to a polymer physics problem at a certain stage, though the physics are quite different and the assumptions don't hold in the polymer regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208, C211, C212, C213, C214 establish a mathematical connection to polymer physics. The competing effects (C208) are illustrated in Figure 1a. The mathematical equivalence (C211) is used to leverage established notation (C214), while carefully noting the physical differences (C212, C213). This is a methodological choice that aids calculation rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Cell shape is fundamental in biology and influences crucial functions including cell fate, division orientation, apoptosis, stem cell lineage, and differentiation. While historically regarded as noise, shape variability is now recognized as a fundamental property, with recent work showing nearly universal distributions whose origin remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide comprehensive background on the biological importance of cell shape and shape variability. All claims are well-supported by multiple citations. This establishes the motivation and context for the study but represents established knowledge rather than novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C226"
+    ],
+    "result": "Treating the area part of the energy function as constant is justified because the constraint of confluency is not crucial for obtaining the aspect ratio distribution, and the energy variation from the area term is small (<10% for 300% change in \u03bbA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C226 justify a key assumption of the theory. The justification is supported by simulation evidence showing small energy variation and independence of aspect ratio distribution from \u03bbA (Figure 2). However, this assumption is specific to the 'regime of interest' where cells are compact objects, and the boundaries of this regime are not precisely defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Monolayers fluidize under compressive or stretching experiments where cell shape changes but not cell area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 describes experimental observations supported by citations. This is an established experimental fact that provides context for understanding the theory's predictions about shape changes and dynamics, but is not a result of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "Cell shape controls several crucial biological functions such as mitotic orientation and cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is well-supported by multiple citations. This reiterates the biological importance established in the introduction and motivates the practical applications of the theory, but is not a novel finding of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C167"
+    ],
+    "result": "It is often hard to control a specific property in a biological system as perturbations can significantly affect other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 describes a general challenge in biological experiments. This is common knowledge in the field and motivates why having a single parameter (\u03b1) that captures all effects is valuable, but is not a result of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C218",
+      "C220"
+    ],
+    "result": "The radius of gyration is defined as the root-mean-square distance from the center of mass or around an axis. The two radii of gyration around principal axes are calculated by diagonalizing the inertia tensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C218, C220 provide standard definitions and methods from physics. These are well-established mathematical concepts used in the derivation rather than results of the work.",
+    "result_type": "MINOR"
+  }
+]

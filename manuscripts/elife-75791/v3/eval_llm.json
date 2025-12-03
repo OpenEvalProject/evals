@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on the emergence of SARS-CoV-2 variants of concern, including D614G (Spring 2020), Alpha (Fall 2020, first detected in England September 2020), and Delta (Spring 2021), noting their rapid spread and epidemic impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by multiple citations to published literature and represent established epidemiological knowledge about SARS-CoV-2 variant emergence and spread. These are background claims appropriately documenting the context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Previous estimates of R advantage for Alpha and Delta variants have shown substantial variability across time and geography, with Alpha's estimated R advantage declining from +89% to +54% in the UK from December to mid-January.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 document observed instability in prior R advantage estimates, supported by citations. This motivates the need for the current study's methodological approach and represents accurate characterization of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The growth rate of emerging variants depends on both the effective reproduction number (R) and generation time distribution, with natural selection acting on the full infectivity profile combining both factors, and selection on variants with larger R increasing with transmission levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 represent fundamental epidemiological principles that are well-established in the literature. These provide the theoretical foundation for the study and are appropriately cited or presented as established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C40",
+      "C41"
+    ],
+    "result": "Variants conferring earlier transmission are more strongly favored during fast epidemic growth (high transmission), while variants conferring later transmission are favored during slow or declining epidemics, because the age-of-infection distribution differs between growing and declining epidemics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C15-C16, C18-C19, and C40-C41 present the core theoretical finding supported by mathematical modeling (Figure 1) and logical inference from demographic principles. The reasoning is sound: in growing epidemics, most infections are recent, favoring early transmission; in declining epidemics, infections are older, favoring later transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C22"
+    ],
+    "result": "Variants with larger standard deviation in generation time are always selected for, and at a specific transmission level (R_H = 1/(1+\u03b4\u2081)), the infectivity profile does not affect variant selection because the age-of-infection distribution is uniform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C22 represent theoretical predictions from the Euler-Lotka framework. The logic is sound: larger variance provides advantages at both early and late times, while uniform age distribution eliminates timing advantages. These are mathematical consequences of the model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C51"
+    ],
+    "result": "Simulation results demonstrate that variants with the same R but different generation time distributions exhibit diverse epidemiological and frequency dynamics, including non-monotonous frequency trajectories, which may explain observed variability in selection coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C51 are supported by simulation results shown in Figure 2. The simulations appropriately test the theoretical predictions under more realistic conditions including population immunity and case isolation, demonstrating robustness of the conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In simulation studies, R advantage was precisely inferred even with small samples and limited R variability, while relative mean generation time required large sample sizes and substantial R variability for accurate inference, with weekly data aggregation improving inference for small samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by systematic simulation studies shown in Figure 3. The results appropriately characterize the statistical power requirements for the inference framework, demonstrating that generation time is harder to infer than R advantage due to the subtlety of the signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C61"
+    ],
+    "result": "Robustness analyses show that temporal lag between infections and cases does not affect inference accuracy, mismatch in assumed generation time distribution causes small overestimation, and infectivity profiles can sometimes be inferred with as little as 10 days of data after sharp transmission decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C61 document robustness checks supported by Figure 3 supplements. These appropriately test key assumptions and demonstrate the framework's performance under various violations of idealized conditions, strengthening confidence in the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C31",
+      "C32",
+      "C37",
+      "C38",
+      "C63"
+    ],
+    "result": "Analysis of Alpha variant data from England reveals a +54% [45-63%] R advantage compared to historical strains with no evidence of altered mean generation time, based on 25 weeks of high-quality SGTF data tracking Alpha's sweep from 0% to nearly 100% frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C14, C31-C32, C37-C38, and C63 present the main empirical finding for Alpha, supported by Figure 4-5 and appropriate statistical inference. The use of SGTF data provides high-quality frequency estimates, and the temporal variation in R_H during the study period enables disentangling R advantage from generation time effects. The confidence intervals are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C35",
+      "C47"
+    ],
+    "result": "Delta variant shows a +140% [98-182%] R advantage compared to Alpha based on spatial variation across 11 European countries, with temporal data from England alone insufficient to disentangle R advantage from generation time due to limited epidemic variability during the short observation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C35, and C47 present the Delta variant findings. The use of spatial rather than temporal variation is appropriately justified by the limited temporal variability in England (Figure 5 supplement 2). The assumption that R advantage and generation time are constant across countries is a limitation but reasonable given the alternative of no inference. The consistency with other studies (+70 to +200%) supports the estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "The main finding is that transmission levels (reflected in R(t)) change selection on different variant types, with selection coefficients potentially increasing, decreasing, or showing non-monotonous relationships with transmission, and this variation provides insight into both R advantage and infectivity profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C42-C43 summarize the study's main conceptual contributions. These are well-supported by the theoretical analysis (Figure 1), simulations (Figure 2), and empirical applications (Figures 4-5). The framework successfully extends prior work by considering selection on generation time in addition to R.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Prior studies on generation time changes in Alpha and Delta variants have produced conflicting results, with some suggesting longer shedding for Alpha and shorter generation time for Delta, while more controlled studies found similar generation times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 appropriately summarize conflicting prior literature on generation time changes, supported by multiple citations. This contextualizes the current study's findings and acknowledges uncertainty in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Counterfactual analysis shows that if Delta had a 1-2 day shorter generation time, the estimated R advantage would drop to +106% or +77%, and the large R advantage with unchanged generation time makes Delta harder to control with transmission-reducing interventions than if it had smaller R advantage with shorter generation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 present appropriate sensitivity analysis and public health implications. The counterfactual calculations correctly apply the Euler-Lotka relationship, and the intervention implications logically follow from the findings about R advantage versus generation time effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Stronger selection on variants implies larger variant incidence and healthcare burden at given transmission levels, but transmission-reducing measures always reduce variant absolute growth rate despite potentially increasing the selection coefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 present important clarifications about the relationship between selection coefficients and public health outcomes. The distinction between relative (selection coefficient) and absolute (growth rate) effects is crucial and correctly explained, supported by Figure 2A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The framework has several limitations: it does not consider interventions that shorten generation time (contact tracing, isolation), vaccination effects on selection, assumes constant variant properties across countries, and requires precise frequency measures with varying transmission levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 appropriately acknowledge study limitations. These are reasonable constraints given the scope of the work, and the authors correctly identify how these factors could affect selection dynamics. The transparency about limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The framework's minimal assumptions (exponential growth, stable age-of-infection structure) proved robust when tested against simulations with more complex features including immunity buildup, case isolation, and explicit dynamics under changing transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the simulation studies (Figures 2-3 and supplements) that systematically test the framework under more realistic conditions. The validation demonstrates that the analytical approximations perform well despite simplifying assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C67",
+      "C69"
+    ],
+    "result": "The model assumes exponential age-of-infection distribution at equilibrium (established result), gamma-distributed generation time for historical strains (mean 6.5 days, sd 4 days), and detection lag with mean 7.3 days (5.1 days to symptoms, 2.2 days to detection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C67, and C69 document key model assumptions and parameterizations, all appropriately cited to prior literature. These are standard assumptions in epidemic modeling and the parameter values are reasonable for SARS-CoV-2.",
+    "result_type": "MINOR"
+  }
+]

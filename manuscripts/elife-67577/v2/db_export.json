@@ -1,0 +1,1654 @@
+{
+  "submission": {
+    "id": "ca529335-793d-4f93-936d-98ef54f4c880",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:22:48.385037Z",
+    "updated_at": "2025-12-03T05:22:48.385037Z"
+  },
+  "content": [
+    {
+      "id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "submission_id": "ca529335-793d-4f93-936d-98ef54f4c880",
+      "content_type": "manuscript",
+      "content_text": "# Broad geographic sampling reveals the shared basis and environmental correlates of seasonal adaptation in Drosophila\n\n## Authors\n\n- Heather E Machado<sup>1</sup> ([ORCID: 0000-0002-1523-3937](https://orcid.org/0000-0002-1523-3937)) \u2020\n- Alan O Bergland<sup>1</sup> ([ORCID: 0000-0001-7145-7575](https://orcid.org/0000-0001-7145-7575)) \u2020\n- Ryan Taylor<sup>1</sup> ([ORCID: 0000-0002-9003-6378](https://orcid.org/0000-0002-9003-6378))\n- Susanne Tilk<sup>1</sup> ([ORCID: 0000-0002-9156-9360](https://orcid.org/0000-0002-9156-9360))\n- Emily Behrman<sup>4</sup> ([ORCID: 0000-0002-2472-9635](https://orcid.org/0000-0002-2472-9635))\n- Kelly Dyer<sup>5</sup>\n- Daniel K Fabian<sup>6</sup>\n- Thomas Flatt<sup>6</sup> ([ORCID: 0000-0002-5990-1503](https://orcid.org/0000-0002-5990-1503))\n- Josefa Gonz\u00e1lez<sup>9</sup>\n- Talia L Karasov<sup>10</sup>\n- Bernard Kim<sup>1</sup> ([ORCID: 0000-0002-5025-1292](https://orcid.org/0000-0002-5025-1292))\n- Iryna Kozeretska<sup>11</sup>\n- Brian P Lazzaro<sup>13</sup>\n- Thomas JS Merritt<sup>14</sup> ([ORCID: 0000-0002-4795-7534](https://orcid.org/0000-0002-4795-7534))\n- John E Pool<sup>15</sup>\n- Katherine O'Brien<sup>4</sup> ([ORCID: 0000-0003-4660-0338](https://orcid.org/0000-0003-4660-0338))\n- Subhash Rajpurohit<sup>4</sup>\n- Paula R Roy<sup>16</sup>\n- Stephen W Schaeffer<sup>17</sup>\n- Svitlana Serga<sup>11</sup>\n- Paul Schmidt<sup>4</sup> \u2020\n- Dmitri A Petrov<sup>1</sup> ([ORCID: 0000-0002-3664-9130](https://orcid.org/0000-0002-3664-9130)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Stanford University Stanford United States\n2. Wellcome Sanger Institute Hinxton United Kingdom\n3. Department of Biology, University of Virginia Charlottesville United States\n4. Department of Biology, University of Pennsylvania Philadelphia United States\n5. Department of Genetics, University of Georgia Athens United States\n6. Institute of Population Genetics, Vetmeduni Vienna Vienna Austria\n7. Centre for Pathogen Evolution, Department of Zoology, University of Cambridge Cambridge United Kingdom\n8. Department of Biology, University of Fribourg Fribourg Switzerland\n9. Institute of Evolutionary Biology, CSIC- Universitat Pompeu Fabra Barcelona Spain\n10. Department of Biology, University of Utah Salt Lake City United States\n11. Taras Shevchenko National University of Kyiv Kyiv Ukraine\n12. National Antarctic Scientific Centre of Ukraine, Taras Shevchenko Blvd. Kyiv Ukraine\n13. Department of Entomology, Cornell University Ithaca United States\n14. Department of Chemistry & Biochemistry, Laurentian University Sudbury Canada\n15. Laboratory of Genetics, University of Wisconsin-Madison Madison United States\n16. Department of Ecology and Evolutionary Biology, University of Kansas Lawrence United States\n17. Department of Biology, The Pennsylvania State University University Park United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo advance our understanding of adaptation to temporally varying selection pressures, we identified signatures of seasonal adaptation occurring in parallel among Drosophila melanogaster populations. Specifically, we estimated allele frequencies genome-wide from flies sampled early and late in the growing season from 20 widely dispersed populations. We identified parallel seasonal allele frequency shifts across North America and Europe, demonstrating that seasonal adaptation is a general phenomenon of temperate fly populations. Seasonally fluctuating polymorphisms are enriched in large chromosomal inversions, and we find a broad concordance between seasonal and spatial allele frequency change. The direction of allele frequency change at seasonally variable polymorphisms can be predicted by weather conditions in the weeks prior to sampling, linking the environment and the genomic response to selection. Our results suggest that fluctuating selection is an important evolutionary force affecting patterns of genetic variation in Drosophila.\n\n## Introduction\n\nFluctuations in the environment are an inescapable condition for all organisms. While many of these fluctuations are entirely unpredictable, some are predictable to a degree, including those that occur on diurnal and seasonal time scales. The predictability of cyclic fluctuations is reflected in the fact that many species exhibit plastic physiological and behavioral strategies that enable them to survive the unfavorable season and exploit the favorable one (Denlinger, 2002; Kost\u00e1l, 2006); such plastic responses represent the classical form of seasonal adaptation (Tauber et al., 1986). However, seasonally varying selection can \u2013 in principle \u2013 maintain fitness-related genetic variation if some genotypes have high fitness in one season but not another (Gillespie, 1973; Haldane and Jayakar, 1963). Thus, in organisms that undergo multiple generations per year, a distinct form of seasonal adaptation occurs when the frequency of alternate genotypes changes in response to seasonal fluctuations in the environment.\n\nSeasonal adaptation can be seen as a form of local adaptation \u2013\u00a0local adaptation in time to temporally varying selection pressures rather than in space. Such adaptation in time has often been considered to be uncommon and, when present, unlikely to result in long-term balancing selection (Ewing, 1979; Hedrick, 1976). Classic quantitative genetic theory suggests that an optimal, plastic genotype will eventually dominate a population that is exposed to periodically changing environments (B\u00fcrger and Gimelfarb, 1999; Korol et al., 1996; Lande, 2008; Scheiner, 1993). This is particularly so when certain environmental cues are reliable indicators of changes in selection pressure (Levins, 1974; Via and Lande, 1985). Predictions from traditional population genetic models suggest that periodically changing environments will lead to the rapid loss of seasonally favored ecotypes as slight changes in selection pressure from one year to another eventually push allele frequencies at causal alleles to fixation (Hedrick, 1976).\n\nRecent theoretical models have called these classical predictions into question. For instance, a population genetic model by Wittmann et al., 2017 has demonstrated that seasonally varying selection can indeed maintain fitness-related genetic variation at many loci throughout the genome provided that dominance shifts from season to season in such a way that, on average, the seasonally favored allele remains slightly dominant (Curtsinger et al., 1994). This model, along with others that highlight the importance of population cycles (Bertram and Masel, 2019), as well as overlapping generations and age structure (Bertram and Masel, 2019; Ellner, 1996; Ellner and Hairston, 1994; Ellner and Sasaki, 1996), suggest that seasonal adaptation and adaptive tracking (Kain et al., 2015) could be an important feature of organisms such as Drosophila that have multiple generations per year (Behrman et al., 2015, but see Botero et al., 2015). More generally, it is possible that adaptive tracking of environmental fluctuations on rapid time scales might be more common than generally acknowledged and has been hidden from us due to the difficulty of detecting such adaptive tracking reliably (Lynch and Ho, 2020) and from the lack of finely resolved temporal data (Buffalo and Coop, 2020).\n\nDespite the lack of theoretical consensus on whether and how seasonal adaptation operates, there is substantial empirical evidence for seasonal adaptation in many organisms including Drosophila. Seasonal adaptation was first observed in D. pseudoobscura by Dobzhansky and colleagues (e.g., Dobzhansky, 1943) by tracking frequencies of inversion polymorphisms over seasons. Later studies confirmed and extended these early findings to other species including D. melanogaster (Kapun et al., 2016; Stalker, 1980; Stalker, 1976) and D. subobscura (Rodr\u00edguez-Trelles et al., 2013).\n\nIn D. melanogaster, multiple additional lines of evidence from phenotypic and genetic analyses demonstrate the presence of seasonal adaptation. When reared in a common laboratory environment, flies collected in winter or spring (close descendants of flies that successfully overwintered) show higher stress tolerance (Behrman et al., 2015), greater propensity to enter reproductive dormancy (Schmidt and Conde, 2006), increased innate immune function (Behrman et al., 2018), and modulated cuticular hydrocarbon profiles (Rajpurohit et al., 2017) as compared to flies collected in the fall (the descendants of those flies who prospered during the summer). Rapid adaptation over seasonal time scales in these and related phenotypes has also been observed in laboratory (Schmidt and Conde, 2006) and field-based mesocosm experiments (Erickson et al., 2020;\u00a0Grainger et al., 2021; Rajpurohit et al., 2018; Rajpurohit et al., 2017; Rudman et al., 2019;\u00a0Rudman et al., 2021). Genome-wide analysis indicated that a large number of common polymorphisms change in frequency over seasonal time scales in one mid-latitude orchard (Bergland et al., 2014), and allele frequency change among seasons has been observed using candidate gene approaches (Cogni et al., 2014). In several cases, these adaptively oscillating polymorphisms have been linked to seasonally varying phenotypes (Behrman et al., 2018; Erickson et al., 2020; Paaby et al., 2014).\n\nDespite ample evidence of seasonal adaptation in D. melanogaster, many aspects of this system remain unexplored. First, we do not know whether seasonal adaptation is a general feature of D. melanogaster populations across its range. Previous work (Schmidt and Conde, 2006; Bergland et al., 2014; Cogni et al., 2014; Behrman et al., 2015; Behrman et al., 2018) detected seasonal allele frequency fluctuations in a single locality over the span of 1\u20133 years. These results need to be confirmed at other locations. Second, as many ecological and environmental variables covary with season, it is unclear which specific factors drive the observed changes in phenotype and genotype in populations sampled over seasonal time. One straightforward and statistically powerful way to start answering these questions is to assess the extent of parallel shifts in allele frequencies over seasonal time in many populations across the D. melanogaster range. Should such parallel shifts be detected we can then infer that seasonal adaptation is widespread and at least partly driven by a common set of variants. We can also attempt to associate the magnitude and direction of allelic shifts with local environmental conditions (e.g., temperature) that may vary among populations sampled at equivalent points in seasonal time. Broad sampling will also allow us to determine the magnitude of the shared seasonal fluctuations and give us a glimpse into the genetic architecture of seasonal adaptation: for instance, whether or not the seasonally\u00a0responsive variants are found genome-wide or clustered into linked blocks or even supergenes.\n\nHere we carry out such a study by using allele frequency data from 20 paired seasonal samples from 15 localities in North America and Europe. First, we demonstrate that seasonal adaptation is a general phenomenon that occurs in multiple populations of D. melanogaster on two continents by providing evidence that at least some of the same polymorphisms cycle between seasons in populations sampled across vast geographic distances. Seasonal alleles tend to show clinal variation, with the alleles that increase in frequency through the summer generally being more frequent in lower latitude (more \u2018summer-like\u2019) locations. We also show that seasonal signal is enriched near inversion breakpoints or within inverted regions on chromosome 2L, 3L, and 3R, although these inverted regions do not account for all of the signal that we observe. Furthermore, we show that allele frequency change between seasons is most predictable when taking into account the local temperature prior to sample collections both in the spring and in the fall, which hints at the complex and nonlinear nature of adaptation with adaptive tracking occurring at sub-seasonal timescales. Taken together, our work demonstrates that seasonal adaptation is a general and predictable feature of D. melanogaster populations and has pervasive effects on patterns of allele frequencies genome-wide. More generally, we establish that metazoan populations can exhibit adaptive tracking of environmental conditions on extremely short time scales, most likely shorter than a single growing season encompassing\u00a0~10 generations.\n\n## Results\n\n### Fly samples and sequence data\n\nWe assembled 73 samples of D. melanogaster collected from 23 localities in North America and Europe (Supplementary file 1, Figure 1\u2014figure supplement 1). For 15 sampling localities, flies were collected in the spring and fall over the course of 1\u20136 years (Figure 1A). Our sampling and sequencing efforts also complement other genome-wide datasets that investigate genetic variation within and among D. melanogaster populations throughout their range (Campo et al., 2013; Fabian et al., 2012; Grenier et al., 2015; Kao et al., 2015; Kapun et al., 2020; Kim et al., 2014; Kolaczkowski et al., 2011; Lack et al., 2016; Mackay et al., 2012; Pool et al., 2012; Reinhardt et al., 2014; Svetec et al., 2016; Zhao and Begun, 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig1-v2.jpg)\n\n**Figure 1.:** (A) Distribution of collection times during the spring (red) and fall (blue) in relation to latitude. For samples where the collection month, but not day, was recorded, we specified the 15th of the month to calculate Julian Day. (B) Sampling localities for the primary seasonal analysis (\u2018Core20\u2019: green) and the latitudinal cline analysis (\u2018Clinal\u2019: red), distributed across North America and Europe. Numbers represent the number of years of spring/fall comparisons at that locality. The dotted circle shows the one locality (PA_li) with both Core20 and Clinal samples. (C) Principal component analysis of SNP allele frequencies. Circles are placed around samples from three geographic regions: Europe (EU), California (CA), and Eastern North America (East NA); points are colored by latitude and shapes represent seasons, as defined by collection time.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sampling localities in (A) North America and (B) Europe for all samples collected, regardless of use in the present analysis. Sizes of circles reflect number of samples per locality.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Distributions of the mean spring (A,\u00a0B) and mean fall (C,\u00a0D) allele frequencies for the dataset before (A,\u00a0C) and after (B,\u00a0D) filtering SNP found to be monomorphic in any population.\n\nFor our analysis, we divided our samples into two subsets (Figure 1B). The first subset (\u2018Core20\u2019) is composed of 20 pairs of spring and fall samples from the same location. Samples in the Core20 set are drawn from 15 localities in North America and Europe and we use at most 2\u00a0years of sampling from any one locality. The second subset of samples (\u2018Clinal\u2019) was used to examine patterns of clinal variation along the East Coast of North America and consists of four populations sampled in the spring (see Materials and methods and Supplementary file 1).\n\nTo estimate allele frequencies genome-wide, we performed pooled DNA sequencing of multiple individual flies per population (Schl\u00f6tterer et al., 2014; Zhu et al., 2012). For each sample, we resequenced pools of\u00a0~75 individuals (range 27\u2013164) to an average of 94\u00d7 coverage (range 22\u2013220, Supplementary file 1). Analyses presented here use a total of 43 samples in the Core20 and Clinal sets described above. Data from the remaining 30 samples, including those that do not constitute paired spring/fall samples, are not included in our analyses here but nonetheless form a part of our larger community-based sampling and resequencing effort and are deposited with the rest of the data (NCBI SRA; BioProject Accession #PRJNA308584; accession numbers for each sample can be found in Supplementary file 1).\n\nPooled resequencing identified\u00a0~1.75M SNPs following quality control and filtering for read depth and average minor allele frequency (minor allele frequency\u00a0>\u00a00.01). We applied a second filtering and retained\u00a0~775,000 SNPs that have observed polymorphism in each population sampled. This biases us toward assessing fluctuations at higher frequency polymorphisms (Figure 1\u2014figure supplement 2).\n\nTo gain insight into basic patterns of differentiation among the sampled populations, we performed a principal component (PC) analysis across all samples. Samples cluster by locality and geography (Figure 1C) with PC one separating European, North American West Coast, and East Coast populations, while PC two separates the eastern North America samples by latitude (linear regression p=3*10\u221215, R2\u00a0=\u00a00.84). No PC is associated with season, following correction for multiple testing, implying that the spatial differentiation dominates patterns of SNP variation across these samples.\n\n### Seasonal adaptation is a general feature of D. melanogaster populations\n\nOur first objective was to determine whether or not we find evidence of parallel seasonal cycling of allele frequencies across multiple populations. To identify a signal of parallel allele frequency change over time we assessed the per-SNP change in allele frequency between spring and fall among the Core20 set of populations using three complementary methods that rely on different statistical models. For all three methods, we contrast the observed signal to permutations in which we shuffled the seasonal labels within each spring\u2013fall paired sample. With the exception of the seasonal labels within paired samples, these permutations have the advantage of retaining all of the features of the data including patterns of genetic covariation and all of the noise in the allele frequency estimation.\n\nWe first used a generalized linear model (GLM), regressing allele frequency at each SNP on season across all of the populations. We find that the observed genome-wide distribution of \u2018seasonal\u2019 p-values from this model is not uniform and there is a pronounced excess of SNPs with low p-values (Figure 2A). The observed data have a stronger seasonal signal than most permutations. For example, at a p-value of\u00a0~4*10\u22123, which corresponds to the top 1% (Supplementary file 1B), the observed data have a greater number of seasonal SNPs than 96.8% of the permutations (Figure 2B). This enrichment is robust to the choice of quantile (Figure 2\u2014figure supplement 1). Seasonal SNPs identified by Bergland et al., 2014 are slightly enriched among the top 1% of SNPs identified using the GLM, relative to matched genomic controls, after excluding the overlapping Pennsylvanian populations (log2 odds ratio\u00a0\u00b1\u00a0SD\u00a0=\u00a00.59\u00a0\u00b1\u00a00.37, pperm\u00a0=\u00a00.0512). Our top set of seasonally variable SNPs shift in frequency by\u00a0~4\u20138% (Figure 2C). Taken at face value, this corresponds to effective selection coefficients of\u00a0~10\u201330% per season (~1\u20133% per generation assuming 10 generations per season).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig2-v2.jpg)\n\n**Figure 2.:** (A) p-value distribution of GLM seasonal regression (red line), permutations (solid black lines, 50/500 plotted), and expected values (dashed black line). (B) Comparison of seasonal test statistics (quantile\u00a0=\u00a00.01) for observed (red) and permuted (black) datasets, for the three analyses: i: GLM (\u2212log p-value), ii: Bayenv (Bayes factor; outlier of a Bayes factor of 10 excluded from plotting), iii: RFM (X2). (C) Average spring/fall allele frequency change for each of the top 1% of seasonally varying SNPs (red) and non-seasonal, matched control SNPs (black), as a function of the folded spring allele frequency. Lines represent a moving average across SNPs with a given spring allele frequency. (D) Enrichment of seasonal SNPs (median of 500 permutations). Enrichment is calculated as the observed number of seasonal SNPs over the number of seasonal SNPs in each permutation at p<0.004. The genome is subset by chromosome and location relative to major cosmopolitan inversions (bkpts.: inversion breakpoints\u00a0\u00b1\u00a01 Mb, inside: interior to the breakpoints excluding 1 Mb buffer, outside: exterior to the breakpoints excluding the 1 Mb buffers). Error bars are 95% confidence intervals and asterisks denote greater seasonal enrichment than more than 95% of permutations. (E,\u00a0F) Concordance rates of seasonal and clinal polymorphisms by (E) geographic region and (F) genomic region. The y-axis represents the concordance rate of allele frequency change across time and space, assuming that the winter favored allele is the same as the allele favored in high latitudes. Clinal polymorphisms were identified along the East Coast of North America. Seasonal sites were identified using all populations not used in the clinal analysis (n\u00a0=\u00a018). (E) Seasonal sites were also identified using exclusively the California populations (purple: n\u00a0=\u00a03) or the Europe populations (green: n\u00a0=\u00a03). Shaded areas are the 95% confidence intervals of 100 matched control datasets for the Californian (purple) and European (green) analyses. (F) Concordance by genomic region. Error bars are 95% confidence intervals (binomial error) and asterisks denote concordance significantly greater than 0.5 (binomial test p<0.05).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Enrichment is calculated as the observed number of seasonal SNPs over the number of seasonal SNPs in each permutation (median of 500 permutations). Error bars are 95% confidence intervals, and asterisks denote greater seasonal enrichment than more than 95% of permutations.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Proportion of SNPs found highly seasonal in both the GLM and the bayenv seasonal analyses. (B) Seasonal and latitudinal concordance for both the GLM and the bayenv analyses.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The effect of artificial increases of sample size on the Core20 seasonal analysis using (A,\u00a0C) the RFM and (B,\u00a0D) the GLM analyses. Top row: sample size inflated by a fixed amount. Bottom row: sample size inflated by a Poisson sampled amount. Shown is the proportion of SNPs in each bin (solid lines) compared with the null expectation (dashed line). Black: original dataset. Dark gray: 10 reads added to each sample (same allele frequencies). Light gray: 100 reads added to each sample (same allele frequencies).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) The \u2018joint quantile threshold\u2019 is the quantile threshold for both the seasonal and the clinal analysis, and includes all SNPs at that quantile or less. (B) The \u2018joint quantile bin\u2019 includes only those SNPs at that specific quantile.\n\nNext, we performed a parallel analysis using a Bayesian model, Bayenv, which uses a population covariance matrix to account for structure among samples (G\u00fcnther and Coop, 2013). We found an enrichment of seasonal SNPs at high test statistic values (quantile\u00a0=\u00a00.01: Bayes factor\u00a0=\u00a02.6), with a greater enrichment of seasonal SNPs compared with 94% of permutations (Figure 2B). The set of seasonal SNPs identified in the Bayenv analysis shows substantial overlap with the GLM set. Specifically, for the top 1% of SNPs in the GLM analysis, 20% are also in the top 1% of the Bayenv analysis, compared with a naive expectation of 1% (Figure 2\u2014figure supplement 2).\n\nFinally, we developed a method derived from combining ranked-normalized p-values from Fisher\u2019s exact tests that compares allele frequencies within each pair of seasonal samples (see Materials and methods, Figure 2\u2014figure supplement 3). We again find a deviation from the expected test statistic distribution indicating an excess of seasonally varying polymorphisms (Figure 2B) with the observed enrichment of high scores (quantile\u00a0=\u00a00.01: X2\u00a0=\u00a032) to be greater than more than 98% of permutations. These three analyses, using entirely distinct statistical machinery and assumptions, together provide strong evidence of the genome-wide excess of seasonal SNPs indicating a robust signal of parallel seasonal adaptation across multiple populations.\n\nWe examined whether seasonally variable SNPs are enriched on any particular chromosome. To perform this test, we calculated the enrichment of seasonal SNPs per chromosome in the observed data relative to the permutations (Figure 2D). Chromosomes 2L and 3R have the greatest nominal enrichment of seasonal SNPs relative to permutations, with a mean increase of 30% (pperm\ufeff\u00a0=\u00a00.06) and of 18% (pperm\u00a0=\u00a00.08), respectively. Enrichment is much lower for chromosomes 2R and 3L (\u22122 and 4%, pperm\u00a0=\u00a00.54 and pperm\u00a0=\u00a00.20, respectively). The variation of the seasonal signal across chromosomes is statistically significant (ANOVA, p<10\u221215).\n\nAs chromosomal inversions have been observed to fluctuate in frequency over seasonal time (Dobzhansky, 1948; Dobzhansky, 1943; Kapun et al., 2016), we extended the analysis to focus on large cosmopolitan inversions. We find that regions near inversion breakpoints (\u00b10.5 Mb) on chromosomes 2L (85% enrichment, pperm\u00a0=\u00a00.03, inversion In(2L)t) and 3L (30% enrichment, pperm\u00a0=\u00a00.01, inversion In(3L)Payne) are strongly enriched for seasonal SNPs. Regions within the three inversions on chromosome 3R (In(3R)Mo, In(3R)K, In(3R)Payne) are also enriched for seasonal SNPs (26% enrichment, pperm\u00a0=\u00a00.05). We do not find evidence for enrichment of seasonal SNPs associated with In(2R)NS as previously reported by Kapun et al., 2016. The regions outside inversions (also excluding the 0.5 Mb flanking the inversions) represent the most centromeric/telomeric SNPs (36% of total SNPs). In these regions, the seasonal signal is weaker, with a 2.5% enrichment of seasonal SNPs (pperm\u00a0=\u00a00.31). These data confirm that inversions may play a role in the adaptive response to seasonally variable environments, similar to that of structural variants or large haplotype blocks in other systems (Hager et al., 2021; Jones et al., 2012; Samuk et al., 2017; Tuttle et al., 2016).\n\n### Latitudinal differentiation parallels signatures of seasonal adaptation\n\nParallel changes in phenotype and genotype across time and space have been observed in D. melanogaster (Bergland et al., 2014; Cogni et al., 2015; Cogni et al., 2014; Kapun et al., 2016; Kapun and Flatt, 2019; Paaby et al., 2014; Rajpurohit et al., 2018; Rajpurohit et al., 2017). To assess whether we observe similar patterns in our data, we tested whether SNPs that change in allele frequency along a latitudinal cline and across seasons do so in a parallel fashion. Parallel changes in allele frequency occur when the sign of the allele frequency change between spring and fall is the same as between high- and low-latitude populations. Using four populations along the East Coast latitudinal cline, we identified clinally varying polymorphisms using single-locus models (GLM, with allele frequency regressed against latitude) as well as a model that accounts for population structure (Bayenv; G\u00fcnther and Coop, 2013). We re-identified seasonally varying SNPs using a GLM (as done previously) using 18 of the Core20 populations to avoid two samples drawn from a shared collection locale with the clinal set (PA_li; Supplementary file 1).\n\nWe find significant seasonal and latitudinal parallelism, with the magnitude of parallelism increasing with increasing GLM significance thresholds (Figure 2E). Among the polymorphisms that are in the top 1% of both seasonal and clinal GLMs (n\u00a0=\u00a0115), 74% have parallel allele frequency change (greater than 100/100 matched controls; naive expectation: 50%). This pattern of parallelism is also observed when using a Bayenv model of clinality (Figure 2\u2014figure supplement 4). Parallel changes in allele frequency between seasons and clines that we observe here is similar to previously published genome-wide (Bergland et al., 2014) and locus-specific results (Cogni et al., 2014; Kapun et al., 2016; Stalker, 1980; Stalker, 1976, p. 197).\n\nTo evaluate whether parallel allele frequency change across time and space are likely to be independent of shared demographic processes such as local seasonal migration, we compared East Coast clinal variation to seasonal variation identified in two groups of populations that are geographically and genetically distant from the East Coast (Campo et al., 2013 and see Figure 1B) and that are unlikely to be connected via common seasonal migration. We assessed seasonal changes in allele frequency separately for Californian (n\u00a0=\u00a03) and European (n\u00a0=\u00a03) populations and tested for parallelism with polymorphisms that vary along the East Coast of North America. We found a clear signal of parallelism between seasonal and latitudinal variation in both the California and the Europe comparisons: for the top 1% of seasonal and clinal polymorphism, 70% and 63% have parallel allele frequency change, for California and Europe, respectively (greater than 100/100 and 99/100 matched controls; Figure 2E).\n\nAs SNPs in or near a number of major inversions are enriched for seasonal variation (Figure 2D), we tested whether there is increased seasonal and latitudinal parallelism in these regions. For the top 5% of clinal and seasonal SNPs (n\u00a0=\u00a02132), parallel allele frequency change is highest near inversion breakpoints on chromosomes 2L and 3R (92%, CI95: 87\u201396%, and 86%, CI95: 78\u201393%, respectively) and inside the 2L inversion (83%, CI95: 80\u201387%; Figure 2F). While parallelism is greatest overall around inversion breakpoints (concordance: 81%, CI95: 77\u201384%) and inside inversions (concordance: 70%, CI95: 67\u201373%), we also observe a statistically significant excess of latitudinal and seasonal parallelism outside of inversions (concordance: 57%, CI95: 53\u201362%). The elevated signal of parallelism between spatial and seasonal allele frequency fluctuations across the whole genome, and in particular outside of inverted regions, suggests that inversions themselves, while important, are not the sole drivers of allele frequency change between seasons.\n\n### Predictability of seasonal adaptation based on local environmental conditions\n\nThe signature of seasonal adaptation that we observe indicates that there are consistent changes in allele frequencies between seasons, broadly defined, among populations sampled across multiple years, and localities separated by thousands of miles (Figure 1A,B). Next, we asked if seasonal fluctuations in allele frequencies are predictable within any particular population or year and if the extent of predictability is related to aspects of local climate or other factors.\n\nTo address this question, we performed a leave-one-out analysis. In this analysis, we sequentially removed each of the 20 paired spring\u2013fall populations within the Core20 set and re-identified seasonally variable SNPs among the remaining 19 populations as well as for the dropped, 20th population. To evaluate predictability, we calculated the proportion of SNPs that have the same direction of allele frequency change between spring and fall in both the discovery and test models (i.e., concordant allele frequency change). We estimated concordance across the range of joint significance thresholds of both models. For each population, we then calculated a \u2018predictability score\u2019. This score reflects the change in concordance rate as a function of the joint significance threshold (see Materials and methods for details). Note that populations with a positive predictability score are those in which the concordance rate is greater than 50% over the bulk of the genome or chromosome.\n\nWe find that the majority of populations show a positive predictability score (Figure 3A). For these populations, the concordance rate reaches 60\u201370% among SNPs passing a stringent joint significance threshold (top 0.1% in both models). At more modest joint significance thresholds (e.g., the top 10% in both sets), the concordance rate is lower but still statistically different from 50% (maximum nominal p-value at the top 5% of sites is 0.008). At the same time, intriguingly, we found that four of the 20 populations had negative predictability scores (Benton Harbor, Michigan 2014; Lancaster, Massachusetts 2012; Topeka, Kansas 2014; and Esparto, California 2012). Strong allele frequency changes in these four populations occur, but the direction of allele frequency change from spring to fall at many SNPs is opposite that of the remaining populations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67577/elife-67577-fig3-v2.jpg)\n\n**Figure 3.:** The thermal limit model argues that weather in the weeks prior to sampling can explain variation in the predictability of allele frequency change. (A) Each line represents the comparison between one population and the remaining 19. The x-axis represents the upper threshold of quantile-ranked p-values from the single-population test (Fisher\u2019s exact test) and the 19-population test (GLM), e.g., the top 1% in both tests. The y-axis is the fraction of SNPs where the sign of allele frequency change in the single population test matches the average sign change among the remaining 19. The color scheme represents the slope of this line and is used as a summary statistic for each population. (B,\u00a0C). We regressed the summary score from (A) onto a number of characterizations of average temperature (B, first four rows), geography (B, fifth row), technical (B, sixth to 8th rows), and thermal extremes (C), considering weather 14. Diamonds represent the observed R2 for (B) and observed maximum R2 across all thermal limits for (C). Violin plots represent the expected distribution of R2 based on permutations. The red diamond represents the model with nominal p-value<0.01. The empirical p-values for these models are listed next to the corresponding red diamond. The 14 day model that uses the counts of hot spring days and cold fall days has a false discovery rate of 17% based on multiple testing correction across all environmental models. (D) The distribution of spring maximum (S-Max) daily temperature and fall minimum (F-min) daily temperature in the 2 weeks prior to sampling. Discordant (blue) populations do not cluster in time or space. Populations shown here are those in which we have weather data (15 populations, in total). (E) The stand-out model uses the number of hot spring days and cold fall days. To determine the optimal threshold for what defines hot and cold, we systematically varied the upper and lower thermal limits from 0\u00b0C to 40\u00b0C and used the count of hot spring (x1) and cold fall (x2) days as independent, additive variables in a regression model; the genome-wide predictability score was used as the dependent variable (y). The best-fit model uses a spring max (S-Max) temp of\u00a0~32\u00b0C and a fall min (F-Min) temp of\u00a0~5\u00b0C and explains\u00a0~82% of the variation in the population predictability scores.\n\nWe then asked why predictability scores vary among populations. To address this question we built models that related the genome-wide predictability score (Figure 3A) for each population with a number of different potential explanatory variables (Figure 3B,C,D). We first considered a number of nuisance variables such as collection method and substrate, as well as contamination rates by D. simulans. None of these variables are correlated with the genome-wide predictability score more than expected by chance (Figure 3B). Latitude and longitude are also not strong predictors of variation in genome-wide predictability score (Figure 3B).\n\nWe next focused on an environmental model based on aspects of the thermal environment. The motivation for these characterizations of temperature is based on the hypothesis that populations with negative genome-wide predictability scores were exposed to particularly warm springs and/or particularly cool falls prior to our sampling. This hypothesis is plausible considering that short-term changes in temperature have been linked, either directly or indirectly, to dramatic and partly predictable changes in allele frequencies in the wild and in the laboratory in multiple Drosophilid species (Barghi et al., 2019; Bergland et al., 2014; Mallard et al., 2018; Rodr\u00edguez-Trelles et al., 2013; Tobler et al., 2014). We evaluated a number of features of temperature by calculating daily averages, average minimum and maximums, as well as the cumulative degree days (Figure 3B). Finally, we calculated the number of days below and above thermal limits, with the thermal limits defined across a range of possible values (Figure 3C).\n\nWe find that the only set of features of the population that is significantly correlated with genome-wide predictability score is the number of hot spring days and number of cold fall days prior to sampling. The best fit thermal limit model explains 82.2% of the variation in genome-wide predictability scores (Figure 3C and E) and beats\u00a0>99.5% of permutations (false discovery rate\u00a0=\u00a017%) (Figure 3C). Specifically, the thermal limits identified by this best-fit model are the number of days in the 2 weeks prior to spring sampling with maximum temperature above\u00a0~32\u00b0C and the number of days in the fall with minimum temperature below\u00a0~5\u00b0C. These values roughly correspond to upper and lower thermal limits for flies (Hoffmann, 2010; Kellermann et al., 2012; Overgaard and MacMillan, 2017). Taken together, these results suggest that exposure to temperature extremes, or to associated environmental variables, acts as a selective pressure in the wild, causing large fluctuations in allele frequency throughout the genome.\n\n## Discussion\n\nIn this study, we have focused on the identification of genomic signatures of seasonal adaptation in D. melanogaster. Our approach relies on the detection of parallel changes in allele frequency from spring to fall across 20 populations. We use coarse definitions of spring and fall, with spring as the time of year close to when D. melanogaster first becomes locally abundant and fall as the time close to the end of the growing season but before populations become too scarce to sample (Behrman et al., 2015; Ives, 1970). We sampled populations across a wide geographic range, such that the length of the growing season as well as other environmental conditions varied substantially. Despite this environmental heterogeneity and the coarseness of the definitions of spring and fall, we detect clear signals of parallel seasonal allele frequency shifts across these populations (Figure 2A,B). Specifically, we demonstrate that seasonal adaptation is a general phenomenon of temperate D. melanogaster populations, and not restricted to a single orchard (Linvilla Orchard, Media, Pennsylvania: Behrman et al., 2015; Bergland et al., 2014; Cogni et al., 2014; Schmidt and Conde, 2006), biogeographic region (East Coast of North America: Behrman et al., 2018), or even a continent.\n\nBy detecting consistent seasonal changes in allele frequencies among multiple populations in North America and Europe, we can argue that seasonal adaptation across this whole range is at least partly driven by a consistent set of loci. Although parallel responses to selection in polygenic models of adaptation may be the exception rather than the norm due to redundancy (Barghi et al., 2019), we lack power to detect alleles that cycle in a small subset of populations or are private to a single population. We therefore focus only on the polymorphisms that segregate in all populations \u2013 and which consequently have a higher population frequency \u2013 and only look at the signal of parallel cycling. Thus, our conclusions are limited to the shared genetic basis of seasonal adaptation as revealed by the cycling of\u00a0~750,000 common SNPs which represent roughly half of all detected SNPs.\n\nThe detected seasonal SNPs can either be causal or, vastly more likely, linked to nearby causal genetic variants, be they SNPs, indels, structural variants, or transposable element insertions. We detected stronger seasonal signal near or inside inversions on chromosomes 2L, 3L, and 3R, suggesting that inversions are important drivers of seasonal adaptation (Dobzhansky, 1948; Dobzhansky, 1943; Kapun et al., 2016; Kapun and Flatt, 2019; Rodr\u00edguez-Trelles et al., 2013). Furthermore, the power to detect parallel seasonal evolution should be stronger for regions with reduced recombination, plausibly increasing the power of our approach to detect parallel adaptation linked to structural variants. Note that, by focusing on the subset of seasonal sites that also show clinal patterns of geographic differentiation, we were able to detect seasonal signal outside inversions as well. The cosmopolitan inversions span a substantial portion of the genome, and there is also likely to be substantial genetic diversity within these cytologically defined elements further complicating the inference. Thus, our study suggests that the complicated architecture of seasonal adaptation will require a much broader seasonal sampling of populations to fine-map the causal variants and that such an endeavor is not futile, given that it is possible to detect a set of loci that show consistent seasonal fluctuations with all the limitation of the approach notwithstanding. It is also clearly important in the future to obtain genomic data capable of identifying structural variation, including inversions, that plausibly underlie much of seasonal adaptation in Drosophila.\n\nOne key and poorly understood aspect of Drosophila seasonal adaptation is how the populations survive annual population collapse during the winter, manage to overwinter, and then manage to expand and recolonize the available resources during the summer (Ives, 1970; Shpak et al., 2010). Also poorly understood is the extent to which these patterns of collapse-overwintering-repopulation involve migration and refugia (Coyne and Milstead, 1987; Ives, 1970). However, it is clear that seasonal adaptation in D. melanogaster cannot involve wholesale population replacements by migration because the spatial structure of the D. melanogaster populations is robust year after year as evidenced by strong spatial population structure (Figure 1C) and persistent clinal patterns (Machado et al., 2016; van Heerwaarden and Hoffmann, 2007). While one can conceive of migration from local refugia playing a role, any such scenario still requires natural selection to operate in order to reset populations back to the \u2018spring\u2019 state every year. The full metapopulation dynamics and the ways that local D. melanogaster survive seasonal crashes and expansions remains to be understood.\n\nOur ability to detect a shared genetic basis of seasonal adaptation across these broadly distributed populations implies that there are generic features in the environment that exert consistent selective pressures despite the environmental heterogeneity across sampling times and locations. It is possible that such generic selective pressures relate to temperature, humidity, population density, resource availability, or other biotic and abiotic factors (Bogaerts-M\u00e1rquez et al., 2021). The seasonal and latitudinal parallelism in allele frequency change that we observe (Figure 2E) suggests that the environmental factors that drive these patterns must both shift between seasons locally and vary spatially from south to north.\n\nWhile the exact nature of the environmental variables that drive seasonal selection remain to be determined, here we provide evidence that temperature extremes in the weeks prior to sampling are a strong proximate or even ultimate selective agent (Figure 3). Specifically, we show that the seasonal behavior of any one population could be statistically associated with temperature extremes in the 2 weeks prior to sampling both in the spring and in the fall. This model accounts for why several populations showed reversal of direction of movement of seasonal SNPs relative to the bulk of the populations; these populations had unusually warm springs and unusually cool falls prior to sampling. We thus hypothesize that, at the time of sampling, some of our spring samples had already experienced sufficiently strong selection in the generically summer way and that the fall samples had experienced selective pressures in the generically winter way. This would result in seasonal alleles in the spring already showing fall-like patterns and the ones in the fall showing spring-like patterns.\n\nThese findings also raise an intriguing possibility that natural selection may not push populations in the same consistent direction across the entire growing season but rather that natural selection and adaptation may be more heterogeneous through time (Grant, 2002; Nosil et al., 2020; Siepielski et al., 2009). In the future, more dense temporal sampling might help map the action of natural selection to more specific environmental factors and to quantify how fast the selective pressures change in strength and even direction across a single growing season. Our results thus illustrate that evolution and ecology do operate on similar timescales in this system (Hendry, 2020; Schoener, 2011; Thompson, 1998; Yoshida et al., 2003) and that evolutionary adaptation cannot be generally ignored a priori in demographic or ecological investigations even on extremely short timescales (Rudman et al., 2018).\n\nWhile the number of detected seasonal loci is likely to be a vast overestimate of the number of causal seasonal variants, particularly if there is selection on large inversions, the strength of selection implied by the magnitude of fluctuations at seasonal sites is likely to be an underestimate. Partially linked loci should show a smaller magnitude of fluctuation than the true causal sites. Thus the 4\u20138% seasonal frequency shifts at the top 1% of the seasonal sites and the corresponding effective selection coefficients of\u00a0~10\u201330% per season (~1\u20133% per generation) imply even larger magnitudes of selection at the causal sites. Furthermore, given that we can only detect patterns of seasonal cycling that are at least partially consistent across all or most sampled populations,\u00a0we are likely to underestimate the impact of linked seasonal selection due to selection that is occurring in a population-specific manner. While given our dataset it is impossible to know the true extent of polygenicity, our results suggest that seasonal adaptation acts on at least several but potentially a large number of dispersed loci affecting linked variation genome-wide. This seasonal selection force could rival in strength genetic draft due to selective sweeps and should be much stronger over seasonal timescales than random genetic drift in populations as large as D. melanogaster (Karasov et al., 2010).\n\nOur observation of signals of seasonal adaptation at common SNPs demonstrates that polymorphism is maintained across the range of D. melanogaster despite strong fluctuating selection. The most straightforward explanation of these results is that these polymorphisms are subject to balancing selection (Bertram and Masel, 2019; Charlesworth, 2015; Gulisija and Kim, 2015, Levene, 1953; Wittmann et al., 2017). Pervasive balancing selection is consistent with the recent realization that simple models of mutation-selection balance are inconsistent with the extent of quantitative genetic variation in a variety of fitness-related traits (Charlesworth, 2015). A full understanding of the genomic consequences of balancing selection caused by strong fluctuating selection will require the identification of individual causal loci. Doing so will require substantial additional sampling across seasons as well as from closely and broadly distributed locales throughout the whole geographic range of D. melanogaster in combination with the genetic mapping of seasonally fluctuating phenotypes (Behrman et al., 2018; Behrman et al., 2015; Erickson et al., 2020; Rajpurohit et al., 2018; Rajpurohit et al., 2017; Schmidt and Conde, 2006). Finally, such efforts can be strongly augmented by manipulative field experiments and functional work to investigate the molecular effects of putatively causal genetic variants. All of this work will need to be done in the context of other processes that underlie persistence of populations in the face of environmental heterogeneity such as phenotypic plasticity and bet hedging (Ayrinhac et al., 2004; Bergland et al., 2008; Kain et al., 2015; MacMillan et al., 2015; Overgaard et al., 2011; Via and Lande, 1985). Overall, it is becoming clear that all of the key ecological and evolutionary processes, including demographic changes, mutation, migration, phenotypic plasticity, and rapid evolution by natural selection, can and do occur on very short and overlapping timescales and thus must be investigated as part of one complex evolving and interacting system.\n\n## Materials and methods\n\n### Population sampling and sequence data\n\nWe assembled 73 samples of D. melanogaster, 61 representing newly collected and sequenced samples, and 12 representing previously published samples (Bergland et al., 2014; Kapun et al., 2016). Locations, collection dates, number of individuals sampled, and depth of sequencing for all samples are listed in Supplementary file 1. For each sample, members of the Drosophila Real-Time Evolution Consortium (DrosRTEC) collected an average of 75 male flies using direct aspiration from substrate, netting, or trapping at orchards and residential areas. Flies were confirmed to be D. melanogaster by examination of the male genital arch. We extracted DNA by first pooling all individuals from a sample, grinding the tissue together in an extraction buffer, and using a lithium chloride \u2013 potassium acetate extraction protocol (see Bergland et al., 2014 for details on buffers and solutions). We prepared sequencing libraries using a modified Illumina protocol (Bergland et al., 2014) and Illumina TrueSeq adapters. Paired-end 125 bp libraries were sequenced to an average of 94\u00d7 coverage either at the Stanford Sequencing Service Center on an Illumina HiSeq 2000 or at the Stanford Functional Genomics facility on an Illumina HiSeq 4000.\n\nThe following sequence data processing was performed on both the new and the previously published data. We trimmed low-quality 3\u2019 and 5\u2019 read ends (sequence quality\u00a0<\u00a020) using the program cutadapt v1.8.1 (Martin, 2011). We mapped the raw reads to the D. melanogaster genome v5.5 (and for D. simulans genome v2.01, flybase.org) using bwa v0.7.12 mem algorithms, with default parameters (Li and Durbin, 2009), and used the program SAMtools v1.2 for bam file manipulation (functions index, sort, and mpileup) (Li et al., 2009). We used the program picard v2.0.1 to remove PCR duplicates (http://picard.sourceforge.net) and the program GATK v3.2\u20132 for indel realignment (McKenna et al., 2010). We called SNPs and indels using the program VarScan v2.3.8 using a p-value of 0.05, minimum variant frequency of 0.005, minimum average quality of 20, and minimum coverage of 10 (Koboldt et al., 2012). We filtered out SNPs within 10 bp of an indel (they are more likely to be spurious), variants in repetitive regions (identified by RepeatMasker and downloaded from the UCSC Genome browser), SNPs with a median frequency of less than 1% across populations, regions with low recombination rates (~0 cM/Mb; Comeron et al., 2012), and nucleotides with more than two alleles. Because we sequenced only male individuals, the X chromosome had lower coverage and was not used in our analysis. After filtering, we had a total of 1,763,522 autosomal SNPs. This set was further filtered to include only SNPs found polymorphic in all samples (\u2018common polymorphisms\u2019), resulting in 774,651 SNPs that represent the core set used in our analyses.\n\nDue to the phenotypic similarity of the species D. melanogaster and D. simulans, we tested for D. simulans contamination by competitively mapping reads to both genomes. We omitted any of our pooled samples with greater than 5% of reads mapping preferentially to D. simulans (Charlottesville, VA 2012, fall; Media, PA 2013 fall). For the remaining samples, reads that mapped better to the D. simulans were removed from the analysis. For the populations used in this analysis, the average proportion of reads mapping preferentially to D. simulans was less than 1% (see Supplementary file 1), and there was no significant difference in the level of D. simulans contamination between spring and fall samples (t-test p=0.90).\n\nIn silico simulation analysis shows that competitive mapping accurately estimates the fraction of D. simulans contamination. To conduct these simulations, we used a single D. simulans genome from an inbred line derived from an individual caught California (Signor, 2017) and a single D. melanogaster genome from a DGRP line (Mackay et al., 2012). We used wgsim to generate simulated short\u00a0reads from each genome and mixed these short reads together in various proportions. We then mapped the short reads back to the composite genome for competitive mapping, as described above. We calculated contamination rate as the number of total reads mapping to the D. simulans reference genome divided by the number of reads mapping to both D. simulans and D. melanogaster. These simulations demonstrate that the estimation of the cross species mapping is precise (Pearson\u2019s r\u00a0=\u00a00.9999, p=1.6\u00d710\u221224), but underestimates the true contamination rate by\u00a0~2%.\n\nTo assess seasonal variation, we analyzed population genomic sequence data from 20 spring and 20 fall samples (\u2018Core20\u2019). These samples represent a subset of the sequenced samples. We used samples that had both a spring and a fall collection taken from the same locality in the same year. We also used a maximum of\u00a02 years of samples for a given locality to prevent the analysis from being dominated by characteristics of a single population. When there were more than 2\u00a0years of samples for a given population, we chose to use the 2 years with the earliest spring collection time. This decision was made on the assumption that the earlier spring collection would better represent allele frequencies following overwintering selection. This left 20 paired spring/fall samples, taken from 12 North American localities spread across 6 years and 3 European localities across 2 years (Supplementary file 1). The localities and years of sampling are as follows: Esparto, California 2012 and 2013; Tuolumne, California 2013; Lancaster, Massachusetts 2012 and 2014; Media, Pennsylvania 2010 and 2011; Ithaca, New York 2012; Cross Plains, Wisconsin 2012 and 2014; Athens, Georgia 2014; Charlottesville, Virginia 2014 and 2015, State College, Pennsylvania 2014; Topeka, Kansas 2014; Sudbury, Ontario, Canada 2015; Benton Harbor, Michigan 2014, Barcelona, Spain 2012; Gross-Enzersdorf, Vienna 2012; Odesa, Ukraine 2013. For comparison of seasonal with latitudinal variation, we used sequence data from four spring samples along the east coast of the United States (Homestead, Florida 2010; Hahia, Georgia 2008; Eutawville, South Carolina 2010, Linvilla, Pennsylvania 2009). We performed a principal component analysis of allele frequency per SNP per sample using the prcomp function in R.\n\n### Identification of seasonal sites\n\nWe identified seasonal sites using three separate methods: a general linear regression model (GLM), a Bayesian model (Bayenv; Coop et al., 2010; G\u00fcnther and Coop, 2013), and a model based on the rank Fisher\u2019s method (RFM). Statistical analyses were performed in R (R Development Core Team, 2014).\n\nTo perform the GLM we used the glm function with binomial error, weighted by the \u2018effective coverage\u2019 per SNP per population (Nc) \u2013\u00a0a measure of the number of chromosomes sampled, adjusted by the read depth:\n\n$$\nN_{c}=(1/N+1/R)\u22121\n$$\n\nwhere N is the number of chromosomes in the pool and R is the read depth at that site (Kolaczkowski et al., 2011; Feder et al., 2012; Bergland et al., 2014; Machado et al., 2016). This adjusts for the additional error introduced by sampling of the pool at the time of sequencing. The seasonal GLM is a regression of allele frequency by season (e.g., spring versus fall): yi\u00a0=\u00a0season\u00a0+ population+ei where yi is the allele frequency at the ith SNP, population is the unordered categorical variable denoting each of the 20 populations, and ei is the binomial error at the ith SNP. Although the GLM is a powerful test, the corrected binomial sampling variance (Nc) is likely an anti-conservative estimate of the true sampling variance associated with pooled sequencing (Machado et al., 2016). Therefore, we use the results of this test as a seasonal outlier test, rather than an absolute measure of the deviation from genome-wide null expectation of no allele frequency change between seasons. Results are compared to 500 permutations of the spring and fall labels within each population pair.\n\nWe tested for signals of seasonality using Bayenv. First, we calculated the genetic-covariance matrix between the Core20 set. Next, we calculated Bayes Factor scores for each SNP using the observed spring and fall labels. We used the read counts of reference and alternate based on the corrected binomial sampling variance (Nc). We conducted 100 permutations of the spring and fall labels within each population pair.\n\nFinally, we developed a test to identify signals of seasonality which we call the \u2018RFM' that is robust to the inflated sample size estimates that can arise when using pooled allele frequencies (Machado et al., 2016). For this method, we first perform a Fisher\u2019s exact test for spring\u2013fall allele frequency differentiation within each population pair. We then rank-normalize the resulting p-values for any given population by grouping SNPs into categories based on the number of total number of reads and the number of alternate reads, summed between spring and fall. The class-based rank of each SNP becomes its new p-value, providing uniform sets of p-values across the genome. As the power (minimum p-value) is relative to the number of SNPs being ranked per bin, and as the bin sizes are equivalent across populations, each population has equivalent power. Additionally, we find that this method is robust to inaccurate estimates of allele frequency precision (Figure 2\u2014figure supplement 3). We then combine ranked p-values using Fisher\u2019s method for each SNP, taking two times the negative sum of logged p-values across the 20 spring/fall comparisons (each tail tested separately). The null distribution for this statistic (X2) is a chi-squared distribution with degrees of freedom equal to 40 (two times the number of comparisons). We used the distribution of these per-SNP X2 test statistics to test for a seasonal signal above noise and compared to 200 spring/fall permutations.\n\n### Inversions\n\nWe analyzed seasonal variation associated with six major cosmopolitan inversions found in D. melanogaster: In(2L)t (2L:2225744\u201313154180), In(2R)NS (2R:11278659\u201316163839), In(3L)P (3L:3173046\u201316301941), In(3R)K (3R:7576289\u201321966092), In(3R)Mo (3R:17232639\u201324857019),\u00a0and In(3R)P (3R:12257931\u201320569732). As the three inversions on 3R are overlapping, we combined them. We classified the genome into three categories: inversion breakpoints (500\u00a0kb\u00a0\u00b1\u00a0each inversion breakpoint; 104\u00a0k SNPs), inside inversions (excluding breakpoint regions; 390\u00a0k SNPs), and outside inversions (excluding breakpoint regions; 281 k\u00a0SNPs).\n\n### Matched controls\n\nWith the assumption that the majority of the genome is not seasonal, we can use matched genomic controls as a null distribution to test for enrichment of different features of seasonal polymorphisms. The use of matched control SNP sets was employed for the tests of seasonal and latitudinal parallelism. We matched each SNP identified as significantly seasonal (at a range p-values) to another SNP, matched for chromosome, effective coverage, median spring allele frequency (across populations), inversion status either within or outside of the major inversions In(2L)t, In(2R)NS, In(3L)P, In(3R)K, In(3R)Mo, and In(3R)P, and recombination rate. We used the same D. melanogaster inversion breakpoints used in Corbett-Detig and Hartl, 2012 and the recombination rates from Comeron et al., 2012. We randomly sampled 100 of the possible matches per SNP (excluding the focal SNP) to produce 100 matched control sets. Any SNPs with fewer than 10 possible matches were discarded from the matched control analyses. We defined 95% confidence intervals from the matched controls as the 3rd and 98th ranked values for the quantity being tested (e.g., percent concordance or proportion of genic classes).\n\n### Latitudinal cline concordance\n\nTo identify SNPs that changed consistently in allele frequency with latitude (clinal), we first identified SNPs that varied in allele frequency along a 14.4\u00b0 latitudinal transect up the east coast of the United States. We used one spring sample from each of the following populations (identified as \u2018Region_City_Year\u2019): PA_li_2011 (39.9\u00b0N), SC_eu_2010 (33.4\u00b0N), GA_ha_2008 (30.1\u00b0N), and FL_ho_2010 (25.5\u00b0N).\n\nFirst, we regressed allele frequency with population latitude in a general linear model (glm: R v3.1.0), using a binomial error model and weights proportional to the effective coverage (Nc): yi\u00a0=\u00a0latitude\u00a0+ ei where yi is the allele frequency at the ith SNP, and ei is the binomial error given the ith at the SNP. To confirm the robustness of the clinal GLM results, clinality also was assessed using a second, more complex model that accounts for existing covariance in the dataset (Bayenv: Coop et al., 2010; G\u00fcnther and Coop, 2013).\n\nWe then tested the concordance in allele frequency change by season with the allele frequency change by latitude. We performed three separate seasonal regressions (see above) for comparison with the latitudinal regression: spring verses fall for the 18 non-Pennsylvania paired samples, spring versus fall for the three California paired samples, and spring versus fall for the three Europe paired samples. With the removal of the Pennsylvania samples, none of these three seasonal regressions contained samples from any of the four populations used for the latitudinal regression. Taking sets of increasingly clinal and increasingly seasonal SNPs, we assessed the proportion of sites that both increase in frequency from spring to fall and increase in frequency from north to south or that decrease in frequency from spring to fall and decrease in frequency from north to south. We compared this concordance with the concordance of 100 sets of matched controls.\n\n### Predictability analysis\n\nTo test the general predictability of seasonal change in our dataset, we performed a leave-one-out analysis. In this analysis, we performed seasonal regressions for subsets of the data, dropping one paired sample and comparing it to a seasonal test of the remaining 19. For the single population model, we used a Fisher\u2019s exact test. For the multi-population model, we used a GLM. For either model, we used the effective number of reads (Nc, defined above). We then measured the percent concordance of spring/fall allele frequency change, defined as the proportion of SNPs that agree in the direction of allele frequency change between spring and fall. This was performed 20 times, once for each paired sample.\n\nTo estimate the predictability scores, we calculated the rate of change of the concordance score as a function of quantile threshold. To estimate this rate, we used the GLM\u00a0with binomial error, concordancei\u00a0=\u00a0quantilei\u00a0+ ei, where \u2018concordance\u2019 is the fraction of SNPs falling below the ith quantile threshold of both the target (19 population) and test (1 population) models that changed in frequency in a concordant fashion and e is the binomial error with weights corresponding to the total number of SNPs falling below that threshold. Thus, the genome-wide (or chromosome specific) predictability score is heavily influenced by concordance rates of higher quantiles because that is where the bulk of SNPs reside.\n\nWe tested whether the variation in genome-wide predictability scores among populations is correlated with different features of the samples. We evaluated different nuisance parameters, such as collection method, substrate, and D. simulans contamination rate, as well as a number of features related to temperature. Daily minimum and maximum temperatures were obtained from the Global Historical Climatology Network-Daily\u00a0(GHCND) database (Menne et al., 2012). We matched each locality to a weather station based on geographic distance. For the Core20 set of populations, four of the collections did not have precise collection dates for one or both seasonal collections (Athens, Georgia 2014; Media, Pennsylvania 2010, 2011; Barcelona, Spain 2012) or were not associated with any climate data from the GHCND database (Odessa, Ukraine 2013). These five populations were omitted from the analysis, leaving 15 populations for the remainder of the predictability analysis (Figure 3D). Using daily temperature data, we calculated the cumulative growing degree days following a model developed for D. suzukii by Wiman et al., 2014.\n\nWe regressed the predictability score onto each potential explanatory variable, recorded the proportion of variation explained (R2), and contrasted the observed R2 to null distributions generated via permutation (n\u00a0=\u00a025,000). For most variables, we performed a univariate model (e.g., latitude or longitude). In some cases, we used a bivariate model (e.g., latitude\u00a0+\u00a0longitude). To test the thermal limit model, we regressed the observed predictability score on the number of days above and below the thermal limits. We varied thermal limits from \u22125 to 40\u00b0C with a step size of 0.1\u00b0C.\n",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "9db5e34d-8ab6-4c68-93fd-13f8e6355f64",
+      "submission_id": "ca529335-793d-4f93-936d-98ef54f4c880",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Magnus Nordborg, Austrian Academy of Sciences Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67577.sa1](https://doi.org/10.7554/eLife.67577.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper shows convincing evidence of correlated seasonal changes in allele frequency over large geographical scales.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Broad geographic sampling reveals predictable, pervasive, and strong seasonal adaptation in Drosophila\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Magnus Nordborg as the Reviewing Editor and Reviewer #3, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jeffrey Ross-Ibarra (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife at this stage.\n\nThis decision is not based on the quality of the study, or of the importance of the work, but rather on problems with the analysis, which we think will require months to rectify\". Therefore, our decision should be seen as \"reject, but encourage to resubmit\".\n\nAs is evident from the individual reviews below, there is no doubt that this is an important and interesting study. However, while we are generally inclined to believe most of your results, the quality of the analysis leaves much to be desired. It needs to be simplified, and the many ad hoc assumptions justified or dropped.\n\nThere are also serious concerns about sampling (reviewer #1) and about whether the proposed model would actually work.\n\nWe hope these comments are helpful.\n\nReviewer #1:\n\nIn this manuscript the authors present an analysis of seasonal allele frequency change in multiple population samples of D. melanogaster that have been sampled in spring and fall from a number of collection sites within North America and Europe. Briefly, the authors search for seasonality of allele frequencies using simple linear models and then look for coordinated changes among populations. The authors report decent overlap among \"seasonal\" snps, overlap with sites found to be clinal, as well as a number of ancillary results.\n\nIn general I think the dataset is quite interesting and the study to be timely. While that is so there are a number of technical issues throughout the paper and it suffers in numerous places from what I think are inappropriate statistical assumptions. While this is so I'm sympathetic to what the authors are attempting to do-it is hard to do correctly.\n\n1) I have a number of concerns about the sampling design of this study:\n\na. First and foremost there is no consistency to the sampling date between years or localities. For instance the Fall samples from Linvilla, PA were collected either in October or November. Indeed a quick search for average temps reveals that at their collection site the average daily temperature differs by ~ 10 degrees F between those two dates. Thus I'm concerned that \"season\" is not a properly replicated factor across the design and instead there could be significant batch effects.\n\nb. I'm concerned about the possibility of contamination from accidental collection of D. simulans that should vary systematically between the seasons (we know that the abundance of sim vs mel in local collections changes dramatically throughout the season. While the authors are rightly trying to account for this by competitive mapping more assurances should be given that this is working. I would like to see a simple simulation demonstrating the power of the competitive mapping proceedure-a straightforward way to do this would be to make synthetic pools of reads from melanogaster and simulans, while varying the percentage of simulans in the pool, and then take those simulated pools through the authors' mapping procedure. In addition, the authors should provide the percentage of reads that mapped to the sim assembly for each sample in Suppl Table 1. Once they have those they should test for an effect of season on that percentage.\n\nc. I notice from the methods that collections varied with respect to baits used (banana or yeast), versus aspiration versus netting. The authors should provide the associated details on the Suppl Table as well check for batch effects again. It would be a shame if collection strategy were a hidden confounder.\n\nd. Finally a question: the authors examine the genital arch of collected males to try to exclude simulans from the pools that way?\n\n2) The heavy filtering of SNPs here will lead to some interesting ascertainment biases. Not only are they filtering out rare and private SNPs but the authors are requiring that the SNPs are found in EVERY population. We should expect this to be quite a biased set of SNPs, likely in the direction of enriching for balanced polymorphisms. While this is what the authors want to find I guess, it means that any statements regarding the percentage of SNPs that are under seasonally varying selection (and thus temporally balanced) will be significant overestimates. The authors at the very least will need to add significant caveats to their interpretations, but I would encourage them to consider redoing the analysis on an unfiltered set of SNPs as well, even if that means that the authors have to restrict portions of the analysis to within populations.\n\n3) Line 742-I'm concerned that the authors are using too simple a regression here. They are assuming that allele frequency in fall is independent of allele frequency of spring within a population, which of course it is not. At the very least I think the authors' should be doing a repeated measures regression, but I wonder if there are even better ways to do this statistical testing, perhaps using a method of regression appropriate for autocorrelated timeseries observations.\n\n4) Line 821-this model is not appropriate as observations of allele frequencies among populations are correlated via shared population history. The authors need to account for that covariance structure in this regression. See for instance Coop et al. 2010\n\n5) Line 841-among population comparisons of the \"rank p-value Fisher's method\" test (can the authors come up with a better name?) are concerning as the authors are using number of reads as the data. If there are differences in read depth between samples, and there are, won't this test will have different power among different populations?\n\n6) Lines 309-314. This analysis is unconvincing and the result quite weak. I note that the authors in this one tiny section are now presenting Pearson's R instead of R2. The coefficient of determination is very low for each sample here. Thus I feel that the authors are over interpreting what they have done.\n\n7) The \"Flipped model\" strikes me as troubling philosophically. The authors' report a negative relation, so to make it line up with observations from other populations they are flipping the season labels? The authors need to do quite a bit of work to justify this as anything other than p-hacking, and the authors in my opinion should remove analysis of the \"flipped\" set from the paper.\n\nReviewer #2:\n\nOverall this is a very nice study that convincingly shows an impact of seasonality on allele frequencies across many Drosophila populations, suggesting temporally-variable balancing selection may impact a large proportion of the Drosophila genome.\n\nAre the estimates of the number of SNPs and strength of selection consistent with the observed patterns and decay of Fst? That is, how well does Fst and the decay of Fst in your simulations match the observed data?\n\nGiven these same parameters it might be fun (but admittedly speculative) to estimate what proportion of sites in the genome are affected by \"seasonal draft\".\n\nWhat does the estimate of the strength of selection and number of sites affected tell us about load? Are local Drosophila population sizes sufficient that this is plausible without leading to extinction?\n\nOf course the flipped model does provide more convincing evidence of some sort of seasonal effect, but I think I need a bit more convincing that the flipped model is justified other than the fact that it makes everything fit the preconceived model better.\n\nHow important is identication of individual causal loci (Line 653)? If the trait really is highly polygenic and there is limited concordance in loci among populations, how likely is this to be succesful? This doesn't seem to me the natural conclusion from the work presented. It seems to me that careful quant gen studies of phenotypes, selection gradients, and how Vg or Va change among populations and over time might be of more interest.\n\nI'm generally not a fan of GO analyses but recognize that many readers will ask for such tests; I thought the paragraph presenting these results was appropriately cautious.\n\nThe definitions of spring and fall confused me somewhat. Are they based on per-location information on sampling abundance of Drosophila? It seems like there must be good weather station data for most of these locations; could a definition based on known thermal tolerances of Drosophila could be used?\n\nWhat proportion of the ~1M SNPs filtered because they were not found across all populations show evidence of seasonal allele frequency change? It seems like population-specific variation is an interesting area that was left unexplored? Does this also explain some of the difference between Bergland 2014 and the present study?\n\nReviewer #3:\n\nThis manuscript addresses a classical question with unique data set. I was looking forward to reading it, but was disappointed by the statistical analysis, which I found both baffling and inappropriate.\n\nI think the core of the problem is clearly and explicitly specified models and questions. Instead, you use a series of ad hoc tests that quickly made me lose faith in your conclusions.\n\nIt starts at the beginning (l. 186), where you perform a \"test\" of allele frequency change without specifying what you are testing, and why. After flipping between the 3-4 copies of the file I needed to have open to simultaneously look at text, figures, supplementary figures, and methods (which are not well written, see, e.g., the meaningless equation on l. 742), I think you are simply testing whether the spring frequencies at each SNP in each population differ significantly between spring and autumn under a very naive model, which you reject genome-wide (Figure 2A). But rather than tossing out this model and going back to the drawing board, you base all the remaining analyses on complicated intersections of p-values (which are inherently irrelevant in this paper, since you are not trying to identify individual loci).\n\nThis seems very odd. The main question of the paper is whether allele frequencies change consistently across populations, and the natural way to test this is using some kind of permutation scheme using the allele frequencies differences. You have naturally paired data, which probably can be treated as independent replicated (although this requires an argument about migration).\n\nHaving established this, why not fit the whole data set into a generalized mixed linear model, without a priori assumptions about the distribution of the random changes in allele frequencies (which must reflect both estimation error and random drift), and with explicit terms for selection (as a function of local climate) and (possibly) migration.\n\nThis would be so much easier to interpret than the ad hoc analyses you carry out, and would also avoid possible biases due to arbitrary p-value cut-offs for SNPs.\n\nUsing such an approach, it should be possible to estimate what fraction of the genome changes in a non-random fashion. Less sure about the strength selection, as I think this only has meaning within an accurate demographic model (which you do not have).\n\nTo sum up, I don't think you are doing your data justice here.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your work entitled \"Broad geographic sampling reveals predictable, pervasive, and strong seasonal adaptation in Drosophila\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Magnus Nordborg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that our decision remains the same as after the first round: you are welcome to resubmit, but dramatic changes are (still) necessary. We are sorry if we didn't manage to explain this the first time around.\n\nAlthough we remain convinced that your study may contain an important and interesting result \u2013 strong selection related to season/climate on a wide geographic scale \u2013 your analyses largely obscure this. A much simpler (and shorter!) paper that focused on convincingly demonstrating this fact would be much better.\n\nOther major problems include the \"flipped\" analysis, which is not only post-hoc, but serves to illustrate that you should use climate data directly since the seasons obviously aren't really seasons, and the selection simulations which are based on models that are too simplistic.\n\nFinally, arguing that the \"haphazard\" sampling is a strength, is, well, not convincing.\n\nOur recommendation remains the same: given that the sampling is haphazard, simplify both claims and analysis in order to make the former rock solid. As you know, a recent pre-print by Buffalo and Coop argues that there is no signal in your first paper: here is your chance to prove that you were right after all.\n\nReviewer #1:\n\nThis version is much better than the previous one, but I still find the analysis confused and confusing. I will comment further below, but before getting to this, I should state clearly that I know how difficult this is. We are currently struggling with analogous data from Arabidopsis, and it clear that we lack an established framework for thinking about them. This is not textbook stuff.\n\nA related, high-level comment is how ridiculously primitive we are from the point of view of basic ecology. We have no idea how selection is working, either in time or space, much less what the main selective pressures are. You write in your introduction that you \"elected to solve these two related problems by (i) working as a consortium of Drosophila biologists (DrosRTEC or the Drosophila Real Time Evolution Consortium) and (ii) sampling in a somewhat haphazard manner.\" The first point is good, but the second is nonsense. The solution is surely not the kind of haphazard sampling described in this paper, but rather dense and non-random sampling in both time and space. (This is needed for Arabidopsis as well, btw)\n\nWhen I first read this, I didn't even realize that all your samples were not collected in a single year. This raises the issue of why you don't take this into account. In our multi-year Arabidopsis field experiments, we find that there is often greater variability between years than between sites located near 1000 km from each other in a north to south direction (moving from deciduous forest to taiga).\n\nFirst, what is the temporal correlation? The effect of space is clear from you PCA, but does time explain anything? How far do these flies move?\n\nSecond, you don't use climate data except to carry out your post hoc \"flipping\" of fall/spring labels. Did you try using climate data to explain what you see instead of a priori notions of spring and fall that you yourself dismiss as inadequate? We found that PCAs of multi-dimensional climate data was more strongly correlated with fitness than geographic proxies.\n\nAnother major unknown is the demographics of fruit flies. Your analyses assume (explicitly when you simulate selection) that each sampling location is a population (that dreaded population genetics abstraction that we all know doesn't really exist). You convincingly demonstrate that what you see cannot be due migration of randomly differentiated flies (because there is some kind concordance in changes globally), but this does not preclude that most of the allele frequencies be due to migration of selectively differentiated flies. Perhaps what happens is that there is selective die-off each winter, leading to cold-hardy survivors being overrepresented each spring \u2013 until they are swamped by southern migrants with vastly greater population sizes? Still selection, still adaptation, but with rather different predictions for the dynamics of allele frequencies. Talk about how fast populations adapt is less meaningful when we don't know what a population is. Returning to my initial point, to understand adaptation, we must understand the spatial and temporal scales over which allele frequencies chance. You don't have the sampling density to do this.\n\nGlass half full: if you really see consistent changes despite all this, there must be some BIG signals out there\u2026\n\nI am convinced that you do see such changes, but my main comment remains that I think you could learn more from these data if you took several steps back and thought carefully about alternative models, and the simplest possible way to test. I suggested using the paired structure (you still need to show that pairs can be treated as independent, btw), but I think you can take it further than you have in estimating effects at individual SNPs. But it is not my job as reviewer to tell you how I would approach this, but rather to check whether I think your claims hold.\n\nPoint-by-point then, I am convinced by your permutations that there are large coordinated changes, but you still need to discuss the possible role of spatial and temporal correlations between pairs. Also think this point could be made better by going directly to estimates of allele frequency change, or beta from regression rather than involving p-values.\n\nI find the whole \"predictability\" analysis convoluted and unconvincing. An attempt to shoehorn observations into an a priori framework. The leave-one-out analysis also requires some discussion of whether these points are independent, and I think it would not be necessary if you directly estimated consistent effects using permutation.\n\nThe comparison with clinal data is interesting, but again suffers from too strong priors of what is going on. You have climate data \u2013 why not simply check whether there are variables that explain both spatial and temporal shifts?\n\nI find your analysis of the strength of selection across the genome unconvincing for the reasons outlined above: you have absolutely no idea of the demographic model, and treating each population as a close system (i.e. generating fall by sampling from spring) is simply not warranted.\n\nThe analysis of which SNPs are under selection is not convincing. The complete lack of correspondence between the original and the \"flipped\" model strongly suggests that the peaks are not to be trusted. Here is where jack-knifing and bootstrapping might be useful: to assess the robustness of your p-value estimates. My guess is that while your data is strong enough to show that there is selection in aggregate, getting down to individual loci is not possible. This also militates against relying of high-significance filters rather than the whole distribution of effect sizes.\n\nReviewer #2:\n\nI have read the revised submission and the responses to review carefully. I still have major issues with the analysis done in this manuscript.\n\n1) The authors still provide textbook case of p-hacking through their \"flipped\" analysis. Their justification-that the leave-one-out analysis tipped them off to a flipped effect-is not a justification at all. This entire section of the paper needs to be removed.\n\n2) The binomial GLM that the authors are doing is inappropriate, as I pointed out in the initial submission. The \"paired-fashion\" of sampling helps nothing-the authors are simply testing against the null of their being no-difference in frequency between seasons assuming a binomial error model. The binomial error model here is inappropriate because spring and fall are not independent draws from the same parameterized distribution-allele frequency change is expected to occur do to drift. The authors are not accounting for this and it is a major flaw. I would suggest at the very least that the authors using a Nicholson et al. type framework for accounting properly for allele frequency change between seasons.\n\n3) The justification that the authors give about \"haphazard sampling\" is risible. Adding noise does not add \"inferential power\" as the authors claim on line 174\n\n4) The issue of biased ascertainment of SNPs has not been dealt with. The authors simply give their same estimates of genome-wide numbers of SNPs affected by seasonal selection and then follow it with a caveat. All such genome-wide estimates should be removed-you can't estimate them given your ascertainment conditions. Moreover you say on line 235 \"Whether this SNP selection process generates bias in our estimates [\u2026] remains to be determined.\" This is unacceptable- your ascertainment definitely creates bias- this language brushes that under the rug.\n\n5) The code for the permutation routines and the control SNP matching needs to be shared.\n\n6) Lines 293-295 The authors are reporting that permution suggests the p-value of enrichment > 0.1. This suggests chance and nothing else is responsible for the observed effect despite the authors' conclusion of \"robust evidence that parallele seasonal adaptation is a general feature\u2026\"\n\n7) Line 309-no enrichment test has been described.\n\n8) Line 330-Citing Gould here is silly. Pick a more appropriate citation.\n\n9) Supplemental Figure 7-in the Bayesenv analysis that I asked for the \"All\" curve looks very different and goes against the conclusion that the authors are making. No explanation is given.\n\n10) The ABC analysis, now described, is not using proper population genetic simulations of allele frequency change per generation due to drift + selection. As written there is only one generation of drift. This needs to be changed to take this analysis even moderately seriously. Moreover the code for these simulations needs to be shared.\n\n11) Line 1020-In the corcordance regression the authors are doing a binned regression-this is never appropriate and the authors need to redo this analysis without binning.\n\nReviewer #3:\n\nOverall this is an improved manuscript. Easier to read and follow, and better explained. There are several points I think that should still be addressed.\n\nI am still not a fan of the flipped model. I agree that some of the evidence (predicting into the validation set, etc.) does indeed argue it's a better fit, but it still feels like ad-hoc subjective tweaking of the data until it fits well. I would prefer it to be removed from the paper -- I think show the original model and point out that some population show the reverse pattern and that matches with temperature. Perhaps even include the flipped model in the supplement. I would find that more convincing than the flipped model I think. In either case, the paragraph starting on line 445 should go, as even the authors admit this doesn't really show anything meaningful. The flipped model should also be removed from figures 2A and 2B as again it will by definition show a more convincing signal here.\n\nAs an alternative to the flipped model or presenting the data with the course labels of spring and fall, why not actually model the temperature data available? It would seem an objective a priori approach that should allow for differences in the flipped populations (i.e. presumably the difference in temperature the 3 weeks prior between Fall and Spring behaves differently for the flipped populations). Perhaps use mean temperature in the 3 weeks prior and/or the slope of the change of temperature over that time? I'm sure there are more creative/intelligent options, but I don't quite understand why the authors can't use this data instead of grossly categorizing things as spring or fall. I didn't see a good reason for not doing so in the response?\n\nI find the authors treatment of enrichment odd. In some places it is presented as convincing evidence, and in others (line 563) it is disregarded because of absolute numbers. The logic on line 563 is fine of course, but I would like to see enrichment treated the same way throughout. On line 477 it is convincing as a log odds score, and in the paragraph starting on line 318 a modest percentage enrichment is considered good evidence.\n\nI'd like to see a bit more exploration of the clustering. Figure 5D (visually) and the 100kb window analysis seem to suggest that clustering is on a relatively large scale, yet the analysis presented on 629 for % genome and s only investigates 5kb windows. If I'm understanding the ABC correctly it should be pretty fast to run, and it seems like running it on 50, 100, or even 500kb scale might be of interest. (To my eye some of the figures in S10 start to suggest a flattening of the ridge when done at 5kb scale). Certainly the data do appear to argue for a polygenic architecture, but whether this is ~50 windows or 5% of the genome I think isn't well differentiated.\n\nLine 800: I agree with this logic about temperature and why some populations behave differently. I would have liked to see this prediction about temperature earlier in the introduction. Naively my first impression was that Fall populations would be adapted to cooler conditions and Spring to warmer. I see now why that is wrong, but I think stating up front that Fall populations are expected to reflect adaptation to warm summers would help some readers.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Broad geographic sampling reveals predictable, pervasive, and strong seasonal adaptation in Drosophila\" for further consideration by eLife. Your revised article has been evaluated by Patricia Wittkopp as the Senior Editor and Magnus Nordborg as the Reviewing Editor.\n\nAlmost there! As you will see from the comments below, we got a fresh 3rd reviewer, who picked up on something we agree should be addressed, namely the likely role of inversions. We have two suggestions for how to proceed. Either: a) go through the manuscript and make sure you emphasize that much of the signal may be driven by inversions, and that it is impossible to know how polygenic this really is, or; b) provide additional analyses (e.g., of the X chromosome), to demonstrate that there is a signal independent of inversions.\n\nReviewer #1:\n\nThe authors were trying to confirm preliminary results suggesting that environmental changes accompanying seasonal change drive genome-wide allele frequency changes in Drosophila. This would give new insight into how selection works, and what factors might maintain genetic variation \u2013 at least in short-lived organisms. Although the detailed mechanisms are obscure, the authors use parallel changes over large geographic distances to argue convincingly that some form of seasonal selection must be taking place.\n\nThis is the third time I see this manuscript, so I will say no more than that it is greatly improved. I'm happy with it.\n\nReviewer #2:\n\nThis is a much improved, clearer version of the manuscript. The analyses are simpler and better explained, and the results I think come out clearer as a result.\n\nReviewer #3:\n\nThe strongest seasonal signal comes from inversions. If inversions are responding to seasonal selection, it is not surprising that the authors find parallel SNP changes across populations as the same inversions are shared globally. Unless the authors refocus the manuscript on parallel selection on inversions, their analyses need to be modified: almost all analyses use the full SNP set, but to study real parallel selection responses on the SNP level, the authors need to restrict their analysis on SNPs, which are not affected by inversions. To this end, it is important to keep in mind that inversions may suppress recombination also outside of the inversion, which makes it a bit challenging to determine the autosomal fraction that is not affected by inversions. A much better strategy would be to analyze the X-chromosome, which is the only major chromosome free of inversions. Unfortunately, the authors excluded this chromosome from their analyses.\n\nAnyway, inspection of Figure 2D shows that the signal for seasonal SNPs is erased for regions outside of the inversions. Furthermore, a significant concordance pattern between seasonal and clinal SNPs outside of the inversion is restricted to 2L and 3R, the chromosomes with the strongest inversion effects. This could be interpreted as an effect of inversions on the genomic regions flanking the inversion.\n\nHow do the authors interpret a (presumably significant) underrepresentation of concordance SNPs on 3L?\n\nApart from my doubts about the significance of the seasonal selection signal, I would like to come back to the novel aspect of the manuscript-sharing seasonal SNPs across populations. The authors highlight, probably correctly, that seasonal adaptation is polygenic. This raises the question of whether parallel selection signatures are expected in differentiated populations. In my opinion two lines of reasoning speak against it: 1) probably more variants are segregating in the populations than required for seasonal adaptation (redundancy) 2) the frequencies of the seasonal SNPs most likely differ between the populations. Hence, SNPs closer to 50% are expected to respond more to the same selection pressure than SNPs with more extreme allele frequencies. This will lead to different power to detect the same selection response in differentiated populations.\n\nAnalyze the X-chromosome.\n\nRemove the second season from the locations where two spring-fall pairs were included-only this makes the comparison unbiased.\n\nEvaluate whether the spring-fall permutations remove the statistical issues of the GLM and Fisher's exact tests mentioned by the previous reviewers. Clarify that the matched controls were done on a sample basis, rather than across samples.\n\nClarify that the effective coverage was calculated per SNP.\n\nThe authors cite theoretical work, which suggests that seasonal SNPs may be maintained for highly restricted conditions (changing dominance)-do they find empirical support that these conditions are met in their data?\n\nThe significance of the manuscript to a broader audience could be increased by:\n\n\u2013 A statement that the seasonal selection response is restricted to inversions-but I doubt that this is the message the authors would like to portray.\n\n\u2013 A general discussion about the expectations of parallel selection signatures on the SNP level across populations and why the authors expect to see it (or find it against the expectations).\n",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88c882ed-6b2e-41a3-a315-c2f3d227a754",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C1",
+      "claim": "73 samples of D. melanogaster were assembled from 23 localities in North America and Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "We assembled 73 samples of D. melanogaster collected from 23 localities in North America and Europe (Supplementary file 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript with reference to supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "5ef73347-8de4-4d9c-a1c2-920df4d4a023",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C2",
+      "claim": "For 15 sampling localities, flies were collected in the spring and fall over the course of 1\u20136 years.",
+      "claim_type": "EXPLICIT",
+      "source": "For 15 sampling localities, flies were collected in the spring and fall over the course of 1\u20136 years (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "fd8dea3b-cc0b-4212-a194-b590270e458d",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C3",
+      "claim": "Pooled resequencing identified ~1.75M SNPs following quality control and filtering for read depth and average minor allele frequency (minor allele frequency > 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled resequencing identified ~1.75M SNPs following quality control and filtering for read depth and average minor allele frequency (minor allele frequency > 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result of the sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "66583ecf-5f04-445d-a2bc-ffb919c7d20a",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C4",
+      "claim": "After a second filtering, ~775,000 SNPs were retained that have observed polymorphism in each population sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a second filtering and retained ~775,000 SNPs that have observed polymorphism in each population sampled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result of additional filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "34e46524-407e-4574-be7f-3bc16cee9d1a",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C5",
+      "claim": "Samples cluster by locality and geography in principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples cluster by locality and geography (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "9688552a-c2bb-4b3a-b64e-393193fb9049",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C6",
+      "claim": "PC two separates the eastern North America samples by latitude with a linear regression p=3*10\u221215, R2 = 0.84.",
+      "claim_type": "EXPLICIT",
+      "source": "PC two separates the eastern North America samples by latitude (linear regression p=3*10\u221215, R2 = 0.84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result directly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "7a92b75a-d4e1-4e61-bbc8-3c4155c0a281",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C7",
+      "claim": "No PC is associated with season, following correction for multiple testing.",
+      "claim_type": "EXPLICIT",
+      "source": "No PC is associated with season, following correction for multiple testing, implying that the spatial differentiation dominates patterns of SNP variation across these samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result of the PCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "2d575d6c-a5f6-4877-8e2e-5149eed86448",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C8",
+      "claim": "The observed genome-wide distribution of 'seasonal' p-values from the GLM model is not uniform and there is a pronounced excess of SNPs with low p-values.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the observed genome-wide distribution of 'seasonal' p-values from this model is not uniform and there is a pronounced excess of SNPs with low p-values (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "365d19fc-5094-424b-a1df-0509ff48ce3b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C9",
+      "claim": "At a p-value of ~4*10\u22123, which corresponds to the top 1%, the observed data have a greater number of seasonal SNPs than 96.8% of the permutations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at a p-value of ~4*10\u22123, which corresponds to the top 1% (Supplementary file 1B), the observed data have a greater number of seasonal SNPs than 96.8% of the permutations (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison to permutations stated in text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "6c473a43-fc84-4e2a-92cb-65300578296c",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C10",
+      "claim": "Seasonal SNPs identified by Bergland et al., 2014 are slightly enriched among the top 1% of SNPs identified using the GLM, relative to matched genomic controls, after excluding the overlapping Pennsylvanian populations (log2 odds ratio \u00b1 SD = 0.59 \u00b1 0.37, pperm = 0.0512).",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal SNPs identified by Bergland et al., 2014 are slightly enriched among the top 1% of SNPs identified using the GLM, relative to matched genomic controls, after excluding the overlapping Pennsylvanian populations (log2 odds ratio \u00b1 SD = 0.59 \u00b1 0.37, pperm = 0.0512).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison to previous study stated with specific values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "48d6757a-0fd2-4c60-a66f-f7be8c550b2f",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C11",
+      "claim": "Top set of seasonally variable SNPs shift in frequency by ~4\u20138%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our top set of seasonally variable SNPs shift in frequency by ~4\u20138% (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "452bbe8a-7302-470e-8df2-34bec98e272d",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C12",
+      "claim": "The ~4\u20138% seasonal frequency shifts correspond to effective selection coefficients of ~10\u201330% per season (~1\u20133% per generation assuming 10 generations per season).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken at face value, this corresponds to effective selection coefficients of ~10\u201330% per season (~1\u20133% per generation assuming 10 generations per season).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on observed frequency shifts, stated in text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "d382f59b-dc24-47f7-8573-68fbd644d16f",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C13",
+      "claim": "Chromosomes 2L and 3R have the greatest nominal enrichment of seasonal SNPs relative to permutations, with a mean increase of 30% (pperm\ufeff = 0.06) and of 18% (pperm = 0.08), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosomes 2L and 3R have the greatest nominal enrichment of seasonal SNPs relative to permutations, with a mean increase of 30% (pperm\ufeff = 0.06) and of 18% (pperm = 0.08), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "4d3f5657-2366-4c4b-9637-8542f5ed530c",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C14",
+      "claim": "Enrichment is much lower for chromosomes 2R and 3L (\u22122 and 4%, pperm = 0.54 and pperm = 0.20, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichment is much lower for chromosomes 2R and 3L (\u22122 and 4%, pperm = 0.54 and pperm = 0.20, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "31718a8c-8d0b-41c8-bb64-ece6802d5d29",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C15",
+      "claim": "The variation of the seasonal signal across chromosomes is statistically significant (ANOVA, p<10\u221215).",
+      "claim_type": "EXPLICIT",
+      "source": "The variation of the seasonal signal across chromosomes is statistically significant (ANOVA, p<10\u221215).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "dca8ad13-81f2-41db-a662-03380cfaf102",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C16",
+      "claim": "Regions near inversion breakpoints (\u00b10.5 Mb) on chromosomes 2L (inversion In(2L)t) are strongly enriched for seasonal SNPs (85% enrichment, pperm = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that regions near inversion breakpoints (\u00b10.5 Mb) on chromosomes 2L (85% enrichment, pperm = 0.03, inversion In(2L)t)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "2e12f0c0-d085-48e5-9995-1d185033aa82",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C17",
+      "claim": "Regions near inversion breakpoints on chromosome 3L (inversion In(3L)Payne) are strongly enriched for seasonal SNPs (30% enrichment, pperm = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "and 3L (30% enrichment, pperm = 0.01, inversion In(3L)Payne) are strongly enriched for seasonal SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "1cbbd87e-ae49-4429-a88b-620d66c5440b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C18",
+      "claim": "Regions within the three inversions on chromosome 3R (In(3R)Mo, In(3R)K, In(3R)Payne) are enriched for seasonal SNPs (26% enrichment, pperm = 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Regions within the three inversions on chromosome 3R (In(3R)Mo, In(3R)K, In(3R)Payne) are also enriched for seasonal SNPs (26% enrichment, pperm = 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "bb475d8b-1614-4ee1-8e7f-1605d3921c5c",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C19",
+      "claim": "No evidence was found for enrichment of seasonal SNPs associated with In(2R)NS as previously reported by Kapun et al., 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not find evidence for enrichment of seasonal SNPs associated with In(2R)NS as previously reported by Kapun et al., 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a negative result with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "4d31e4dd-7b97-43d8-815f-f82737226bff",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C20",
+      "claim": "In regions outside inversions (excluding the 0.5 Mb flanking the inversions), the seasonal signal is weaker, with a 2.5% enrichment of seasonal SNPs (pperm = 0.31).",
+      "claim_type": "EXPLICIT",
+      "source": "In these regions, the seasonal signal is weaker, with a 2.5% enrichment of seasonal SNPs (pperm = 0.31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "7dc2b187-4ee7-4508-9340-b43a56fdef45",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C21",
+      "claim": "Among the polymorphisms that are in the top 1% of both seasonal and clinal GLMs (n = 115), 74% have parallel allele frequency change (greater than 100/100 matched controls; naive expectation: 50%).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the polymorphisms that are in the top 1% of both seasonal and clinal GLMs (n = 115), 74% have parallel allele frequency change (greater than 100/100 matched controls; naive expectation: 50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison to matched controls stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "278fc23a-587b-424c-b829-d704bf47ce9e",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C22",
+      "claim": "For the top 1% of seasonal and clinal polymorphism in California populations, 70% have parallel allele frequency change (greater than 100/100 matched controls).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a clear signal of parallelism between seasonal and latitudinal variation in both the California and the Europe comparisons: for the top 1% of seasonal and clinal polymorphism, 70% and 63% have parallel allele frequency change, for California and Europe, respectively (greater than 100/100 and 99/100 matched controls; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison to matched controls stated in text and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "175181ef-344a-43d1-a935-b40d62ac2ca6",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C23",
+      "claim": "For the top 1% of seasonal and clinal polymorphism in European populations, 63% have parallel allele frequency change (greater than 99/100 matched controls).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a clear signal of parallelism between seasonal and latitudinal variation in both the California and the Europe comparisons: for the top 1% of seasonal and clinal polymorphism, 70% and 63% have parallel allele frequency change, for California and Europe, respectively (greater than 100/100 and 99/100 matched controls; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison to matched controls stated in text and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "6955ef72-71e5-4688-bf1e-b040022799cb",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C24",
+      "claim": "For the top 5% of clinal and seasonal SNPs (n = 2132), parallel allele frequency change is highest near inversion breakpoints on chromosomes 2L (92%, CI95: 87\u201396%) and 3R (86%, CI95: 78\u201393%).",
+      "claim_type": "EXPLICIT",
+      "source": "For the top 5% of clinal and seasonal SNPs (n = 2132), parallel allele frequency change is highest near inversion breakpoints on chromosomes 2L and 3R (92%, CI95: 87\u201396%, and 86%, CI95: 78\u201393%, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results with confidence intervals stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "d1179368-3d8d-426f-9490-e1e357085267",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C25",
+      "claim": "For the top 5% of clinal and seasonal SNPs, parallel allele frequency change inside the 2L inversion is 83% (CI95: 80\u201387%).",
+      "claim_type": "EXPLICIT",
+      "source": "and inside the 2L inversion (83%, CI95: 80\u201387%; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical results with confidence intervals stated in text and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "b255fb92-20b2-416e-96fd-115158ce2cbb",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C26",
+      "claim": "Parallelism is greatest overall around inversion breakpoints (concordance: 81%, CI95: 77\u201384%).",
+      "claim_type": "EXPLICIT",
+      "source": "While parallelism is greatest overall around inversion breakpoints (concordance: 81%, CI95: 77\u201384%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results with confidence intervals stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "4ea85152-9a0b-44ca-97b3-60dbb90c3e66",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C27",
+      "claim": "Parallelism inside inversions is 70% (CI95: 67\u201373%).",
+      "claim_type": "EXPLICIT",
+      "source": "and inside inversions (concordance: 70%, CI95: 67\u201373%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results with confidence intervals stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "3510142e-612b-4e92-886c-512e6f4dc2fc",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C28",
+      "claim": "A statistically significant excess of latitudinal and seasonal parallelism is observed outside of inversions (concordance: 57%, CI95: 53\u201362%).",
+      "claim_type": "EXPLICIT",
+      "source": "we also observe a statistically significant excess of latitudinal and seasonal parallelism outside of inversions (concordance: 57%, CI95: 53\u201362%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results with confidence intervals stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "b97ea064-906d-47cd-8dcf-586cf98e328c",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C29",
+      "claim": "The majority of populations show a positive predictability score.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the majority of populations show a positive predictability score (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "65f76a69-3863-4995-bfef-90ed18a0ab45",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C30",
+      "claim": "For populations with positive predictability scores, the concordance rate reaches 60\u201370% among SNPs passing a stringent joint significance threshold (top 0.1% in both models).",
+      "claim_type": "EXPLICIT",
+      "source": "For these populations, the concordance rate reaches 60\u201370% among SNPs passing a stringent joint significance threshold (top 0.1% in both models).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text as a result of the leave-one-out analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "e2aaa273-392b-4210-80d9-716a02db2f58",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C31",
+      "claim": "Four of the 20 populations had negative predictability scores (Benton Harbor, Michigan 2014; Lancaster, Massachusetts 2012; Topeka, Kansas 2014; and Esparto, California 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, intriguingly, we found that four of the 20 populations had negative predictability scores (Benton Harbor, Michigan 2014; Lancaster, Massachusetts 2012; Topeka, Kansas 2014; and Esparto, California 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "c68d86db-eef2-466c-9b75-5a84ab25e285",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C32",
+      "claim": "Collection method, substrate, and D. simulans contamination rates are not correlated with the genome-wide predictability score more than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these variables are correlated with the genome-wide predictability score more than expected by chance (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "056176ea-4a5e-4ff1-a818-e0789de9b984",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C33",
+      "claim": "Latitude and longitude are not strong predictors of variation in genome-wide predictability score.",
+      "claim_type": "EXPLICIT",
+      "source": "Latitude and longitude are also not strong predictors of variation in genome-wide predictability score (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "c70d8b42-cb0e-49f1-aecb-41ac4e68016e",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C34",
+      "claim": "The number of hot spring days and number of cold fall days prior to sampling is significantly correlated with genome-wide predictability score.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the only set of features of the population that is significantly correlated with genome-wide predictability score is the number of hot spring days and number of cold fall days prior to sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the result of environmental model testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "b9e01c8a-df08-48d9-a73f-83245be7d191",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C35",
+      "claim": "The best fit thermal limit model explains 82.2% of the variation in genome-wide predictability scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The best fit thermal limit model explains 82.2% of the variation in genome-wide predictability scores (Figure 3C and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical result stated in text and shown in Figures 3C and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "1ae5c306-2272-453d-b559-51e9f4474bce",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C36",
+      "claim": "The best fit thermal limit model beats >99.5% of permutations (false discovery rate = 17%).",
+      "claim_type": "EXPLICIT",
+      "source": "and beats >99.5% of permutations (false discovery rate = 17%) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison to permutations stated in text and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "76ea3d81-57c9-45e9-97a4-36564c131720",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C37",
+      "claim": "The thermal limits identified by the best-fit model are the number of days in the 2 weeks prior to spring sampling with maximum temperature above ~32\u00b0C and the number of days in the fall with minimum temperature below ~5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the thermal limits identified by this best-fit model are the number of days in the 2 weeks prior to spring sampling with maximum temperature above ~32\u00b0C and the number of days in the fall with minimum temperature below ~5\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the result of the thermal limit model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "a8d3daab-bea9-4192-8cb2-5b6be905ea19",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C38",
+      "claim": "The thermal limits of ~32\u00b0C and ~5\u00b0C roughly correspond to upper and lower thermal limits for flies.",
+      "claim_type": "EXPLICIT",
+      "source": "These values roughly correspond to upper and lower thermal limits for flies (Hoffmann, 2010; Kellermann et al., 2012; Overgaard and MacMillan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to supporting literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "9327e637-a8fa-4ded-8f92-d59ef3ed3053",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C39",
+      "claim": "Seasonal adaptation is a general phenomenon of temperate D. melanogaster populations, and not restricted to a single orchard, biogeographic region, or continent.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we demonstrate that seasonal adaptation is a general phenomenon of temperate D. melanogaster populations, and not restricted to a single orchard (Linvilla Orchard, Media, Pennsylvania: Behrman et al., 2015; Bergland et al., 2014; Cogni et al., 2014; Schmidt and Conde, 2006), biogeographic region (East Coast of North America: Behrman et al., 2018), or even a continent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "9f813ff4-8de2-47c7-a76d-83c2cc31f6e9",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C40",
+      "claim": "Seasonal adaptation across the range is at least partly driven by a consistent set of loci.",
+      "claim_type": "EXPLICIT",
+      "source": "By detecting consistent seasonal changes in allele frequencies among multiple populations in North America and Europe, we can argue that seasonal adaptation across this whole range is at least partly driven by a consistent set of loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference from the observed parallel seasonal changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "b4489c87-db10-4de1-a656-85844ffa7e91",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C41",
+      "claim": "Inversions are important drivers of seasonal adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected stronger seasonal signal near or inside inversions on chromosomes 2L, 3L, and 3R, suggesting that inversions are important drivers of seasonal adaptation (Dobzhansky, 1948; Dobzhansky, 1943; Kapun et al., 2016; Kapun and Flatt, 2019; Rodr\u00edguez-Trelles et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the enrichment results with citations to supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "9e23b8ab-cc88-45ae-8b57-4cc8fa00beee",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C42",
+      "claim": "Seasonal adaptation in D. melanogaster cannot involve wholesale population replacements by migration because the spatial structure of the D. melanogaster populations is robust year after year.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is clear that seasonal adaptation in D. melanogaster cannot involve wholesale population replacements by migration because the spatial structure of the D. melanogaster populations is robust year after year as evidenced by strong spatial population structure (Figure 1C) and persistent clinal patterns (Machado et al., 2016; van Heerwaarden and Hoffmann, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an inference from observed population structure with citations to supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "ff124cc7-45ee-4181-9685-0255ad5638bb",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C43",
+      "claim": "Exposure to temperature extremes, or to associated environmental variables, acts as a selective pressure in the wild, causing large fluctuations in allele frequency throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that exposure to temperature extremes, or to associated environmental variables, acts as a selective pressure in the wild, causing large fluctuations in allele frequency throughout the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the thermal limit model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "cd104cf2-b236-47ba-b270-a42e4effcfbf",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C44",
+      "claim": "When reared in a common laboratory environment, flies collected in winter or spring show higher stress tolerance compared to flies collected in the fall.",
+      "claim_type": "EXPLICIT",
+      "source": "When reared in a common laboratory environment, flies collected in winter or spring (close descendants of flies that successfully overwintered) show higher stress tolerance (Behrman et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "9630e0ab-e056-4853-a61d-0780de99c798",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C45",
+      "claim": "When reared in a common laboratory environment, flies collected in winter or spring show greater propensity to enter reproductive dormancy compared to flies collected in the fall.",
+      "claim_type": "EXPLICIT",
+      "source": "greater propensity to enter reproductive dormancy (Schmidt and Conde, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "a5ea55d4-08da-40d0-b925-8a2bd4fc183b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C46",
+      "claim": "When reared in a common laboratory environment, flies collected in winter or spring show increased innate immune function compared to flies collected in the fall.",
+      "claim_type": "EXPLICIT",
+      "source": "increased innate immune function (Behrman et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "fed26dbd-a5e7-49f2-9259-72af577026c9",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C47",
+      "claim": "When reared in a common laboratory environment, flies collected in winter or spring show modulated cuticular hydrocarbon profiles compared to flies collected in the fall.",
+      "claim_type": "EXPLICIT",
+      "source": "and modulated cuticular hydrocarbon profiles (Rajpurohit et al., 2017) as compared to flies collected in the fall (the descendants of those flies who prospered during the summer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "81331cd7-be71-4d76-a79c-134bc81a0c4b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C48",
+      "claim": "A large number of common polymorphisms change in frequency over seasonal time scales in one mid-latitude orchard.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide analysis indicated that a large number of common polymorphisms change in frequency over seasonal time scales in one mid-latitude orchard (Bergland et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "2bfdf2c1-947f-4b30-b884-134e041155e5",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C49",
+      "claim": "Allele frequency change among seasons has been observed using candidate gene approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "and allele frequency change among seasons has been observed using candidate gene approaches (Cogni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "51e4c555-e219-452f-9d84-0ba956bcaba3",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C50",
+      "claim": "Adaptively oscillating polymorphisms have been linked to seasonally varying phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In several cases, these adaptively oscillating polymorphisms have been linked to seasonally varying phenotypes (Behrman et al., 2018; Erickson et al., 2020; Paaby et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "a5022f51-37a8-40fa-9483-6aa874c86fb1",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C51",
+      "claim": "Seasonal adaptation was first observed in D. pseudoobscura by Dobzhansky and colleagues by tracking frequencies of inversion polymorphisms over seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal adaptation was first observed in D. pseudoobscura by Dobzhansky and colleagues (e.g., Dobzhansky, 1943) by tracking frequencies of inversion polymorphisms over seasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to historical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "14e25d04-0e56-4eb2-bed0-0e716e53c111",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C52",
+      "claim": "Later studies confirmed and extended early findings on seasonal adaptation to other species including D. melanogaster and D. subobscura.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies confirmed and extended these early findings to other species including D. melanogaster (Kapun et al., 2016; Stalker, 1980; Stalker, 1976) and D. subobscura (Rodr\u00edguez-Trelles et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to supporting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "de1a25c3-5db8-4c8c-9947-d14167273956",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C53",
+      "claim": "A population genetic model by Wittmann et al., 2017 has demonstrated that seasonally varying selection can maintain fitness-related genetic variation at many loci throughout the genome provided that dominance shifts from season to season.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a population genetic model by Wittmann et al., 2017 has demonstrated that seasonally varying selection can indeed maintain fitness-related genetic variation at many loci throughout the genome provided that dominance shifts from season to season in such a way that, on average, the seasonally favored allele remains slightly dominant (Curtsinger et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to theoretical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "2923b98c-35af-4849-8793-230b63c66817",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C54",
+      "claim": "Classic quantitative genetic theory suggests that an optimal, plastic genotype will eventually dominate a population that is exposed to periodically changing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Classic quantitative genetic theory suggests that an optimal, plastic genotype will eventually dominate a population that is exposed to periodically changing environments (B\u00fcrger and Gimelfarb, 1999; Korol et al., 1996; Lande, 2008; Scheiner, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to theoretical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "0ce6ea61-0da9-4b4f-8e94-335abda58674",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C55",
+      "claim": "Predictions from traditional population genetic models suggest that periodically changing environments will lead to the rapid loss of seasonally favored ecotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions from traditional population genetic models suggest that periodically changing environments will lead to the rapid loss of seasonally favored ecotypes as slight changes in selection pressure from one year to another eventually push allele frequencies at causal alleles to fixation (Hedrick, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to theoretical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "2672938f-d0a8-4945-8d14-6da4a389a7a5",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C56",
+      "claim": "For each sample, an average of 75 male flies were collected using direct aspiration from substrate, netting, or trapping at orchards and residential areas.",
+      "claim_type": "EXPLICIT",
+      "source": "For each sample, members of the Drosophila Real-Time Evolution Consortium (DrosRTEC) collected an average of 75 male flies using direct aspiration from substrate, netting, or trapping at orchards and residential areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "03ab362c-1380-4912-bf0a-b3ba07b3cd08",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C57",
+      "claim": "Paired-end 125 bp libraries were sequenced to an average of 94\u00d7 coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired-end 125 bp libraries were sequenced to an average of 94\u00d7 coverage either at the Stanford Sequencing Service Center on an Illumina HiSeq 2000 or at the Stanford Functional Genomics facility on an Illumina HiSeq 4000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "3ccb2492-2689-4653-8254-5f2cbed2d67b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C58",
+      "claim": "For the populations used in this analysis, the average proportion of reads mapping preferentially to D. simulans was less than 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "For the populations used in this analysis, the average proportion of reads mapping preferentially to D. simulans was less than 1% (see Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "3461a2ef-194c-4b30-b324-d7437c32c26c",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C59",
+      "claim": "There was no significant difference in the level of D. simulans contamination between spring and fall samples (t-test p=0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "and there was no significant difference in the level of D. simulans contamination between spring and fall samples (t-test p=0.90).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "f1a34b6a-4837-47ce-a452-b0d9126e6b13",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C60",
+      "claim": "In silico simulation analysis shows that competitive mapping accurately estimates the fraction of D. simulans contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico simulation analysis shows that competitive mapping accurately estimates the fraction of D. simulans contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result of simulation analysis in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "85fe96fc-f002-4bfd-b7f3-0cb93d5c7213",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C61",
+      "claim": "Simulations demonstrate that the estimation of the cross species mapping is precise (Pearson's r = 0.9999, p=1.6\u00d710\u221224), but underestimates the true contamination rate by ~2%.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations demonstrate that the estimation of the cross species mapping is precise (Pearson's r = 0.9999, p=1.6\u00d710\u221224), but underestimates the true contamination rate by ~2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical results from simulation stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "1c1443d7-049c-40d5-a469-aed39546531e",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C62",
+      "claim": "The Core20 set is composed of 20 pairs of spring and fall samples from the same location.",
+      "claim_type": "EXPLICIT",
+      "source": "The first subset ('Core20') is composed of 20 pairs of spring and fall samples from the same location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "b0bbfd88-cb19-467e-aeae-055854d3dacf",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C63",
+      "claim": "Samples in the Core20 set are drawn from 15 localities in North America and Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples in the Core20 set are drawn from 15 localities in North America and Europe and we use at most 2 years of sampling from any one locality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "0bd88e6a-ff3b-464e-8a19-27c685ed3a75",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C64",
+      "claim": "The Clinal subset consists of four populations sampled in the spring along the East Coast of North America.",
+      "claim_type": "EXPLICIT",
+      "source": "The second subset of samples ('Clinal') was used to examine patterns of clinal variation along the East Coast of North America and consists of four populations sampled in the spring (see Materials and methods and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "81673387-5be9-401e-903e-0e50efe1b4ef",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C65",
+      "claim": "The strength of selection implied by the magnitude of fluctuations at seasonal sites is likely to be an underestimate.",
+      "claim_type": "EXPLICIT",
+      "source": "While the number of detected seasonal loci is likely to be a vast overestimate of the number of causal seasonal variants, particularly if there is selection on large inversions, the strength of selection implied by the magnitude of fluctuations at seasonal sites is likely to be an underestimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "1d9a8116-4828-497a-a0d1-8648a1b679ca",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C66",
+      "claim": "Partially linked loci should show a smaller magnitude of fluctuation than the true causal sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Partially linked loci should show a smaller magnitude of fluctuation than the true causal sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a theoretical expectation in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "7d018cdd-7b8d-41a5-bd15-f99a1cecbf27",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C67",
+      "claim": "The 4\u20138% seasonal frequency shifts at the top 1% of the seasonal sites and the corresponding effective selection coefficients of ~10\u201330% per season (~1\u20133% per generation) imply even larger magnitudes of selection at the causal sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the 4\u20138% seasonal frequency shifts at the top 1% of the seasonal sites and the corresponding effective selection coefficients of ~10\u201330% per season (~1\u20133% per generation) imply even larger magnitudes of selection at the causal sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference from the observed data in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "cc5491d4-d89e-4796-a293-9559aaa23105",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C68",
+      "claim": "Seasonal selection force could rival in strength genetic draft due to selective sweeps and should be much stronger over seasonal timescales than random genetic drift in populations as large as D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "This seasonal selection force could rival in strength genetic draft due to selective sweeps and should be much stronger over seasonal timescales than random genetic drift in populations as large as D. melanogaster (Karasov et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation with citation to supporting literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "05c3a287-7157-4aac-9516-7656868d7414",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C69",
+      "claim": "The most straightforward explanation of the observation of signals of seasonal adaptation at common SNPs is that these polymorphisms are subject to balancing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The most straightforward explanation of these results is that these polymorphisms are subject to balancing selection (Bertram and Masel, 2019; Charlesworth, 2015; Gulisija and Kim, 2015, Levene, 1953; Wittmann et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation with citations to theoretical literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "20763fc8-66b3-485a-9406-06f28d3fe306",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C70",
+      "claim": "Pervasive balancing selection is consistent with the recent realization that simple models of mutation-selection balance are inconsistent with the extent of quantitative genetic variation in a variety of fitness-related traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Pervasive balancing selection is consistent with the recent realization that simple models of mutation-selection balance are inconsistent with the extent of quantitative genetic variation in a variety of fitness-related traits (Charlesworth, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to supporting literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "b4aa636e-6398-4b94-9a86-d43a1fca5608",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C71",
+      "claim": "Natural selection may not push populations in the same consistent direction across the entire growing season but rather may be more heterogeneous through time.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings also raise an intriguing possibility that natural selection may not push populations in the same consistent direction across the entire growing season but rather that natural selection and adaptation may be more heterogeneous through time (Grant, 2002; Nosil et al., 2020; Siepielski et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation with citations to supporting literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "83dbf1fb-ad57-4052-b845-93717eaf6250",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C72",
+      "claim": "Evolution and ecology do operate on similar timescales in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus illustrate that evolution and ecology do operate on similar timescales in this system (Hendry, 2020; Schoener, 2011; Thompson, 1998; Yoshida et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion with citations to supporting literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "ea517f4d-cfcc-4f0a-8469-8690e21e4425",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C73",
+      "claim": "Evolutionary adaptation cannot be generally ignored a priori in demographic or ecological investigations even on extremely short timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "and that evolutionary adaptation cannot be generally ignored a priori in demographic or ecological investigations even on extremely short timescales (Rudman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion with citation to supporting literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "0905cfc1-139c-4ccf-8be0-b5863f80924b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C74",
+      "claim": "The detected seasonal SNPs can either be causal or, vastly more likely, linked to nearby causal genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The detected seasonal SNPs can either be causal or, vastly more likely, linked to nearby causal genetic variants, be they SNPs, indels, structural variants, or transposable element insertions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "422a9d31-4d5e-48a1-ba9b-d36c66667773",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C75",
+      "claim": "The power to detect parallel seasonal evolution should be stronger for regions with reduced recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the power to detect parallel seasonal evolution should be stronger for regions with reduced recombination, plausibly increasing the power of our approach to detect parallel adaptation linked to structural variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a theoretical expectation in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "eaafc838-c9b6-48b7-98bc-9c4117636f7a",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C76",
+      "claim": "The complicated architecture of seasonal adaptation will require a much broader seasonal sampling of populations to fine-map the causal variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our study suggests that the complicated architecture of seasonal adaptation will require a much broader seasonal sampling of populations to fine-map the causal variants and that such an endeavor is not futile, given that it is possible to detect a set of loci that show consistent seasonal fluctuations with all the limitation of the approach notwithstanding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion and recommendation in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "a2dd99ca-ec0a-4a83-86fc-7278df0c31eb",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C77",
+      "claim": "It is important in the future to obtain genomic data capable of identifying structural variation, including inversions, that plausibly underlie much of seasonal adaptation in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also clearly important in the future to obtain genomic data capable of identifying structural variation, including inversions, that plausibly underlie much of seasonal adaptation in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a recommendation in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "d7d2794b-2faa-455c-af29-8521b1ca0971",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C78",
+      "claim": "The spatial structure of the D. melanogaster populations is robust year after year as evidenced by strong spatial population structure and persistent clinal patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is clear that seasonal adaptation in D. melanogaster cannot involve wholesale population replacements by migration because the spatial structure of the D. melanogaster populations is robust year after year as evidenced by strong spatial population structure (Figure 1C) and persistent clinal patterns (Machado et al., 2016; van Heerwaarden and Hoffmann, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated with reference to data and citations to supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "e1fe947b-83cf-4c63-a0dd-b20e85fed749",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C79",
+      "claim": "Generic selective pressures that drive seasonal adaptation must both shift between seasons locally and vary spatially from south to north.",
+      "claim_type": "EXPLICIT",
+      "source": "The seasonal and latitudinal parallelism in allele frequency change that we observe (Figure 2E) suggests that the environmental factors that drive these patterns must both shift between seasons locally and vary spatially from south to north.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an inference from the observed parallelism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "a723ae5a-ce7a-49ad-bb78-091c51605c05",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C80",
+      "claim": "At the time of sampling, some spring samples had already experienced sufficiently strong selection in the generically summer way and fall samples had experienced selective pressures in the generically winter way.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus hypothesize that, at the time of sampling, some of our spring samples had already experienced sufficiently strong selection in the generically summer way and that the fall samples had experienced selective pressures in the generically winter way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a hypothesis to explain the observed patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "865d2fb2-aa84-4d68-bf1b-331697dc95db",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C81",
+      "claim": "The elevated signal of parallelism between spatial and seasonal allele frequency fluctuations across the whole genome, and in particular outside of inverted regions, suggests that inversions themselves, while important, are not the sole drivers of allele frequency change between seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "The elevated signal of parallelism between spatial and seasonal allele frequency fluctuations across the whole genome, and in particular outside of inverted regions, suggests that inversions themselves, while important, are not the sole drivers of allele frequency change between seasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the parallelism results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "f6c58154-1843-41a7-a29e-8ef0fe82351b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "claim_id": "C82",
+      "claim": "The Bayenv analysis shows substantial overlap with the GLM set, with 20% of the top 1% of SNPs in the GLM analysis also in the top 1% of the Bayenv analysis, compared with a naive expectation of 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, for the top 1% of SNPs in the GLM analysis, 20% are also in the top 1% of the Bayenv analysis, compared with a naive expectation of 1% (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison stated in text and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study assembled 73 D. melanogaster samples from 23 localities across North America and Europe, with 15 localities sampled in spring and fall over 1-6 years. Pooled sequencing identified ~1.75M SNPs, filtered to ~775,000 common polymorphisms. The Core20 dataset consists of 20 paired spring/fall samples from 15 localities, and a Clinal dataset includes 4 East Coast populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C56-C57, C62-C64 provide comprehensive methodological details that are internally consistent and well-documented. The sample sizes (average 75 flies per pool, 94\u00d7 coverage) are appropriate for pooled sequencing approaches. The filtering strategy is clearly described and justified, though the second filtering step that requires polymorphism in all populations introduces ascertainment bias toward higher frequency variants (acknowledged in Figure 1\u2014figure supplement 2).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "4fa5a92a-c9d3-45fd-9352-c5016cb1fa0d",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Principal component analysis reveals that samples cluster by locality and geography rather than season. PC2 separates eastern North American samples by latitude (p=3\u00d710\u207b\u00b9\u2075, R\u00b2=0.84), while no PC associates with season after multiple testing correction. This spatial structure persists year after year, indicating stable population structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C78 are well-supported by Figure 1C and statistical tests. The strong latitudinal signal (R\u00b2=0.84) and absence of seasonal clustering in PCA is important context for subsequent analyses. However, the lack of seasonal signal in PCA doesn't preclude seasonal adaptation at individual loci\u2014it indicates that spatial differentiation dominates genome-wide patterns. The multiple testing correction for seasonal association is appropriate but the specific method is not described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "78b0fe1d-70cd-426d-ad28-2db26f1c5c42",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "D. simulans contamination was minimal (<1% on average) and did not differ between spring and fall samples (t-test p=0.90). Competitive mapping accurately estimates contamination rates (Pearson's r=0.9999, p=1.6\u00d710\u207b\u00b2\u2074) but underestimates by ~2%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 demonstrate appropriate quality control for species contamination. The in silico validation (C60-C61) strengthens confidence in the competitive mapping approach. The lack of seasonal bias in contamination (C59) is important for ruling out this technical artifact as a driver of seasonal signals. The systematic 2% underestimation is minor and unlikely to affect conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "525a5026-8da0-4bf1-9584-142c0f8185d6",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Three independent statistical methods (GLM, Bayenv, and RFM) detect excess seasonal SNPs compared to permutations. At the top 1% threshold, observed data exceed 96.8% of permutations (GLM), 94% (Bayenv), and 98% (RFM). The GLM and Bayenv analyses show 20% overlap at top 1%, versus 1% expected by chance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 and C82 provide strong convergent evidence for seasonal signals using three distinct statistical frameworks. The permutation approach appropriately controls for population structure and sampling variance. The 20-fold enrichment in overlap between methods (C82) indicates robust signal. However, the manuscript acknowledges that the corrected binomial variance (Nc) may be anticonservative, potentially inflating significance. The RFM method was specifically designed to address this concern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "bcfcf6c4-c27e-4793-afa3-185dbfe2713f",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Top seasonal SNPs show 4-8% frequency shifts between seasons, corresponding to effective selection coefficients of ~10-30% per season (~1-3% per generation). These estimates likely underestimate true selection at causal sites because partially linked loci show smaller fluctuations. Seasonal SNPs show slight enrichment with those identified by Bergland et al. 2014 (log2 OR=0.59\u00b10.37, pperm=0.0512).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C65-C67 present effect size estimates with appropriate caveats. The 4-8% frequency shifts (C11) are substantial and the selection coefficient calculations (C12) are reasonable given stated assumptions (10 generations/season). The acknowledgment that these are underestimates due to linkage (C65-C66) is scientifically sound. The marginal enrichment with Bergland et al. 2014 (C10, pperm=0.0512) provides weak validation but the p-value is not significant at conventional thresholds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "37a402e7-4fae-47b2-9b16-71df6476b1da",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Seasonal SNP enrichment varies significantly across chromosomes (ANOVA p<10\u207b\u00b9\u2075). Chromosomes 2L and 3R show greatest enrichment (30% and 18%, pperm=0.06 and 0.08), while 2R and 3L show minimal enrichment (-2% and 4%, pperm=0.54 and 0.20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 demonstrate chromosome-specific patterns with appropriate statistical testing. The ANOVA (C15) provides strong evidence for heterogeneity. However, none of the individual chromosome enrichments reach conventional significance thresholds (all pperm>0.05), though 2L and 3R are nominally enriched. This suggests the signal is real but modest at the chromosome level, with stronger effects localized to specific regions (inversions).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "02d9d958-45f9-491e-ba00-973bf6984c3e",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Regions near inversion breakpoints on 2L (In(2L)t: 85% enrichment, pperm=0.03) and 3L (In(3L)Payne: 30%, pperm=0.01) and within inversions on 3R (In(3R)Mo/K/Payne: 26%, pperm=0.05) show strong seasonal enrichment. No enrichment was found for In(2R)NS. Outside inversions, seasonal signal is weaker (2.5% enrichment, pperm=0.31), indicating inversions are important but not sole drivers of seasonal adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 and C41 demonstrate inversion-associated seasonal signals with appropriate statistical support. The enrichments near 2L and 3L breakpoints reach significance (pperm<0.05), while 3R inversions are marginally significant. The lack of In(2R)NS enrichment (C19) contrasts with Kapun et al. 2016, which could reflect methodological differences or population-specific effects. The weak but positive signal outside inversions (C20) is important for establishing that seasonal adaptation is not solely inversion-driven, though this result is not statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "e818dcb1-d67d-45b9-814e-acd89d646873",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Seasonal and latitudinal allele frequency changes show significant parallelism. Among top 1% SNPs in both analyses, 74% show parallel change across all populations, 70% in California, and 63% in Europe (all exceeding matched controls). Parallelism is highest near inversion breakpoints (81%, CI95: 77-84%) and inside inversions (70%, CI95: 67-73%), but also significant outside inversions (57%, CI95: 53-62%), indicating inversions are not the sole drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 and C81 provide strong evidence for parallel seasonal and spatial adaptation using matched control comparisons. The concordance rates substantially exceed 50% expectation and matched controls across all genomic regions and geographic comparisons. The confidence intervals (C24-C28) are appropriately calculated. The geographic replication (California and Europe vs. East Coast) strengthens causal inference by reducing confounding from shared migration. The significant parallelism outside inversions (C28: 57%, CI95: 53-62%) is particularly important for establishing genome-wide seasonal adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "178ddf42-72ef-4424-9c87-f44098972692",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Leave-one-out analysis reveals that most populations (16/20) show positive predictability scores, with concordance reaching 60-70% at stringent thresholds (top 0.1%). However, four populations (Benton Harbor MI 2014, Lancaster MA 2012, Topeka KS 2014, Esparto CA 2012) show negative predictability scores, indicating reversed seasonal patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 describe population-level heterogeneity in seasonal patterns using a novel predictability metric. The majority showing positive scores (C29-C30) supports generality of seasonal adaptation, while the four outliers (C31) are intriguing exceptions that motivate subsequent environmental analyses. The leave-one-out approach is appropriate for assessing generalizability. However, the predictability score methodology is complex and could benefit from more detailed validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "403b5269-6f87-47c2-96e1-bdc50d217909",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Variation in predictability scores is not explained by technical factors (collection method, substrate, D. simulans contamination) or simple geography (latitude, longitude). Instead, the best-fit thermal limit model explains 82.2% of variance and beats >99.5% of permutations (FDR=17%). This model identifies critical thermal thresholds: >~32\u00b0C maximum in spring and <~5\u00b0C minimum in fall during the 2 weeks prior to sampling, corresponding to known thermal limits for flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32-C38 and C43 present an innovative environmental model linking temperature extremes to seasonal predictability. The high R\u00b2 (82.2%, C35) and permutation test (C36) are impressive, but the 17% FDR indicates moderate uncertainty. The thermal thresholds (~32\u00b0C and ~5\u00b0C, C37-C38) are biologically plausible and match literature values. However, several concerns arise: (1) only 15/20 populations had weather data, reducing power; (2) the model tests many temperature variables, raising multiple testing concerns despite permutation controls; (3) the 2-week window is post-hoc; (4) correlation doesn't establish causation\u2014temperature may covary with other selective factors. The model is compelling but requires independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "5d6d2b40-f6f8-42e2-9de8-5081b622481d",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Seasonal adaptation is a general phenomenon across temperate D. melanogaster populations in North America and Europe, driven by a consistent set of loci. This cannot result from wholesale population replacement via migration because spatial structure persists year-to-year. Environmental selective pressures must shift seasonally within locations and vary spatially across latitudes. Some populations may have experienced atypical seasonal selection prior to sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C42 represent major conclusions well-supported by the parallel seasonal signals across continents and the persistent spatial structure. The inference that migration doesn't drive seasonal patterns (C42) is logical given stable population structure (Figure 1C) and cited clinal persistence. Claims C79-C80 provide reasonable interpretations of the parallelism and predictability results, though C80 is explicitly presented as a hypothesis. The conclusions appropriately acknowledge limitations in identifying specific causal loci.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "6cae22cf-33a5-47c9-b012-759c6bceab22",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observation of seasonal adaptation at common SNPs suggests these polymorphisms are maintained by balancing selection. This is consistent with recent theoretical work (Wittmann et al. 2017) showing seasonally varying selection can maintain variation if dominance shifts between seasons, and with evidence that mutation-selection balance cannot explain observed quantitative genetic variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 and C53 present a reasonable evolutionary interpretation supported by appropriate theoretical citations. The maintenance of common polymorphisms despite strong seasonal selection (C69) does suggest balancing selection. The connection to Wittmann et al. 2017 model (C53) and broader population genetic theory (C70) is appropriate. However, alternative explanations (e.g., polygenic adaptation with redundancy, soft sweeps, migration-selection balance) are not fully explored. The inference is plausible but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "e3edcb40-1a95-4224-b85b-bdf2f9cfdb31",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Seasonal selection forces could rival genetic draft from selective sweeps and exceed genetic drift in large populations. Natural selection may be heterogeneous within growing seasons rather than consistently directional. Evolution and ecology operate on similar timescales in this system, and evolutionary adaptation cannot be ignored in demographic/ecological studies even on short timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C71-C73 present broad evolutionary implications with appropriate citations. The comparison to drift and draft (C68) is reasonable given the strong selection coefficients (10-30% per season). The suggestion of within-season heterogeneity (C71) is supported by the thermal limit model showing sub-seasonal selection. The eco-evolutionary dynamics conclusions (C72-C73) are well-supported by the rapid timescales observed. These represent important conceptual advances in understanding rapid evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "c9cf7f79-3355-4851-b095-2563ac57dc8b",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Detected seasonal SNPs are likely linked to causal variants rather than causal themselves. Power to detect parallel evolution should be stronger in low-recombination regions. Fine-mapping causal variants will require broader sampling, and future work should obtain genomic data capable of identifying structural variation including inversions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 provide appropriate caveats and future directions. The acknowledgment that detected SNPs are likely linked rather than causal (C74) is scientifically sound. The expectation of stronger signal in low-recombination regions (C75) is theoretically justified. The recommendations for future work (C76-C77) are reasonable and acknowledge current limitations. These represent honest assessment of what can and cannot be concluded from the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    },
+    {
+      "id": "3a620f48-569e-4e52-a79e-706e615856ac",
+      "content_id": "db29d80b-7e97-48f1-bd53-ca777ea54bbd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has established seasonal phenotypic variation in D. melanogaster (stress tolerance, dormancy, immunity, cuticular hydrocarbons) and genetic variation (genome-wide and candidate gene approaches). Historical studies documented seasonal inversion frequency changes in Drosophila. Classical theory predicted plastic genotypes would dominate in fluctuating environments and seasonally favored alleles would be lost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52 and C54-C55 accurately summarize prior literature with appropriate citations. These provide essential context for the current study. The citations appear accurate and the characterizations of prior work are fair. This background establishes that seasonal adaptation in Drosophila has historical precedent but required genome-wide confirmation across populations, which the current study provides.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:22:48.385037Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "88c882ed-6b2e-41a3-a315-c2f3d227a754",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "5ef73347-8de4-4d9c-a1c2-920df4d4a023",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "fd8dea3b-cc0b-4212-a194-b590270e458d",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "66583ecf-5f04-445d-a2bc-ffb919c7d20a",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "2672938f-d0a8-4945-8d14-6da4a389a7a5",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "03ab362c-1380-4912-bf0a-b3ba07b3cd08",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "1c1443d7-049c-40d5-a469-aed39546531e",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "b0bbfd88-cb19-467e-aeae-055854d3dacf",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "0bd88e6a-ff3b-464e-8a19-27c685ed3a75",
+      "result_id": "ae511318-feb3-4f8a-a01b-c37e27dafcf1"
+    },
+    {
+      "claim_id": "34e46524-407e-4574-be7f-3bc16cee9d1a",
+      "result_id": "4fa5a92a-c9d3-45fd-9352-c5016cb1fa0d"
+    },
+    {
+      "claim_id": "9688552a-c2bb-4b3a-b64e-393193fb9049",
+      "result_id": "4fa5a92a-c9d3-45fd-9352-c5016cb1fa0d"
+    },
+    {
+      "claim_id": "7a92b75a-d4e1-4e61-bbc8-3c4155c0a281",
+      "result_id": "4fa5a92a-c9d3-45fd-9352-c5016cb1fa0d"
+    },
+    {
+      "claim_id": "d7d2794b-2faa-455c-af29-8521b1ca0971",
+      "result_id": "4fa5a92a-c9d3-45fd-9352-c5016cb1fa0d"
+    },
+    {
+      "claim_id": "3ccb2492-2689-4653-8254-5f2cbed2d67b",
+      "result_id": "78b0fe1d-70cd-426d-ad28-2db26f1c5c42"
+    },
+    {
+      "claim_id": "3461a2ef-194c-4b30-b324-d7437c32c26c",
+      "result_id": "78b0fe1d-70cd-426d-ad28-2db26f1c5c42"
+    },
+    {
+      "claim_id": "f1a34b6a-4837-47ce-a452-b0d9126e6b13",
+      "result_id": "78b0fe1d-70cd-426d-ad28-2db26f1c5c42"
+    },
+    {
+      "claim_id": "85fe96fc-f002-4bfd-b7f3-0cb93d5c7213",
+      "result_id": "78b0fe1d-70cd-426d-ad28-2db26f1c5c42"
+    },
+    {
+      "claim_id": "2d575d6c-a5f6-4877-8e2e-5149eed86448",
+      "result_id": "525a5026-8da0-4bf1-9584-142c0f8185d6"
+    },
+    {
+      "claim_id": "365d19fc-5094-424b-a1df-0509ff48ce3b",
+      "result_id": "525a5026-8da0-4bf1-9584-142c0f8185d6"
+    },
+    {
+      "claim_id": "f6c58154-1843-41a7-a29e-8ef0fe82351b",
+      "result_id": "525a5026-8da0-4bf1-9584-142c0f8185d6"
+    },
+    {
+      "claim_id": "6c473a43-fc84-4e2a-92cb-65300578296c",
+      "result_id": "bcfcf6c4-c27e-4793-afa3-185dbfe2713f"
+    },
+    {
+      "claim_id": "48d6757a-0fd2-4c60-a66f-f7be8c550b2f",
+      "result_id": "bcfcf6c4-c27e-4793-afa3-185dbfe2713f"
+    },
+    {
+      "claim_id": "452bbe8a-7302-470e-8df2-34bec98e272d",
+      "result_id": "bcfcf6c4-c27e-4793-afa3-185dbfe2713f"
+    },
+    {
+      "claim_id": "81673387-5be9-401e-903e-0e50efe1b4ef",
+      "result_id": "bcfcf6c4-c27e-4793-afa3-185dbfe2713f"
+    },
+    {
+      "claim_id": "1d9a8116-4828-497a-a0d1-8648a1b679ca",
+      "result_id": "bcfcf6c4-c27e-4793-afa3-185dbfe2713f"
+    },
+    {
+      "claim_id": "7d018cdd-7b8d-41a5-bd15-f99a1cecbf27",
+      "result_id": "bcfcf6c4-c27e-4793-afa3-185dbfe2713f"
+    },
+    {
+      "claim_id": "d382f59b-dc24-47f7-8573-68fbd644d16f",
+      "result_id": "37a402e7-4fae-47b2-9b16-71df6476b1da"
+    },
+    {
+      "claim_id": "4d3f5657-2366-4c4b-9637-8542f5ed530c",
+      "result_id": "37a402e7-4fae-47b2-9b16-71df6476b1da"
+    },
+    {
+      "claim_id": "31718a8c-8d0b-41c8-bb64-ece6802d5d29",
+      "result_id": "37a402e7-4fae-47b2-9b16-71df6476b1da"
+    },
+    {
+      "claim_id": "dca8ad13-81f2-41db-a662-03380cfaf102",
+      "result_id": "02d9d958-45f9-491e-ba00-973bf6984c3e"
+    },
+    {
+      "claim_id": "2e12f0c0-d085-48e5-9995-1d185033aa82",
+      "result_id": "02d9d958-45f9-491e-ba00-973bf6984c3e"
+    },
+    {
+      "claim_id": "1cbbd87e-ae49-4429-a88b-620d66c5440b",
+      "result_id": "02d9d958-45f9-491e-ba00-973bf6984c3e"
+    },
+    {
+      "claim_id": "bb475d8b-1614-4ee1-8e7f-1605d3921c5c",
+      "result_id": "02d9d958-45f9-491e-ba00-973bf6984c3e"
+    },
+    {
+      "claim_id": "4d31e4dd-7b97-43d8-815f-f82737226bff",
+      "result_id": "02d9d958-45f9-491e-ba00-973bf6984c3e"
+    },
+    {
+      "claim_id": "b4489c87-db10-4de1-a656-85844ffa7e91",
+      "result_id": "02d9d958-45f9-491e-ba00-973bf6984c3e"
+    },
+    {
+      "claim_id": "7dc2b187-4ee7-4508-9340-b43a56fdef45",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "278fc23a-587b-424c-b829-d704bf47ce9e",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "175181ef-344a-43d1-a935-b40d62ac2ca6",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "6955ef72-71e5-4688-bf1e-b040022799cb",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "d1179368-3d8d-426f-9490-e1e357085267",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "b255fb92-20b2-416e-96fd-115158ce2cbb",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "4ea85152-9a0b-44ca-97b3-60dbb90c3e66",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "3510142e-612b-4e92-886c-512e6f4dc2fc",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "865d2fb2-aa84-4d68-bf1b-331697dc95db",
+      "result_id": "e818dcb1-d67d-45b9-814e-acd89d646873"
+    },
+    {
+      "claim_id": "b97ea064-906d-47cd-8dcf-586cf98e328c",
+      "result_id": "178ddf42-72ef-4424-9c87-f44098972692"
+    },
+    {
+      "claim_id": "65f76a69-3863-4995-bfef-90ed18a0ab45",
+      "result_id": "178ddf42-72ef-4424-9c87-f44098972692"
+    },
+    {
+      "claim_id": "e2aaa273-392b-4210-80d9-716a02db2f58",
+      "result_id": "178ddf42-72ef-4424-9c87-f44098972692"
+    },
+    {
+      "claim_id": "c68d86db-eef2-466c-9b75-5a84ab25e285",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "056176ea-4a5e-4ff1-a818-e0789de9b984",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "c70d8b42-cb0e-49f1-aecb-41ac4e68016e",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "b9e01c8a-df08-48d9-a73f-83245be7d191",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "1ae5c306-2272-453d-b559-51e9f4474bce",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "76ea3d81-57c9-45e9-97a4-36564c131720",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "a8d3daab-bea9-4192-8cb2-5b6be905ea19",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "ff124cc7-45ee-4181-9685-0255ad5638bb",
+      "result_id": "403b5269-6f87-47c2-96e1-bdc50d217909"
+    },
+    {
+      "claim_id": "9327e637-a8fa-4ded-8f92-d59ef3ed3053",
+      "result_id": "5d6d2b40-f6f8-42e2-9de8-5081b622481d"
+    },
+    {
+      "claim_id": "9f813ff4-8de2-47c7-a76d-83c2cc31f6e9",
+      "result_id": "5d6d2b40-f6f8-42e2-9de8-5081b622481d"
+    },
+    {
+      "claim_id": "9e23b8ab-cc88-45ae-8b57-4cc8fa00beee",
+      "result_id": "5d6d2b40-f6f8-42e2-9de8-5081b622481d"
+    },
+    {
+      "claim_id": "e1fe947b-83cf-4c63-a0dd-b20e85fed749",
+      "result_id": "5d6d2b40-f6f8-42e2-9de8-5081b622481d"
+    },
+    {
+      "claim_id": "a723ae5a-ce7a-49ad-bb78-091c51605c05",
+      "result_id": "5d6d2b40-f6f8-42e2-9de8-5081b622481d"
+    },
+    {
+      "claim_id": "05c3a287-7157-4aac-9516-7656868d7414",
+      "result_id": "6cae22cf-33a5-47c9-b012-759c6bceab22"
+    },
+    {
+      "claim_id": "20763fc8-66b3-485a-9406-06f28d3fe306",
+      "result_id": "6cae22cf-33a5-47c9-b012-759c6bceab22"
+    },
+    {
+      "claim_id": "de1a25c3-5db8-4c8c-9947-d14167273956",
+      "result_id": "6cae22cf-33a5-47c9-b012-759c6bceab22"
+    },
+    {
+      "claim_id": "cc5491d4-d89e-4796-a293-9559aaa23105",
+      "result_id": "e3edcb40-1a95-4224-b85b-bdf2f9cfdb31"
+    },
+    {
+      "claim_id": "b4aa636e-6398-4b94-9a86-d43a1fca5608",
+      "result_id": "e3edcb40-1a95-4224-b85b-bdf2f9cfdb31"
+    },
+    {
+      "claim_id": "83dbf1fb-ad57-4052-b845-93717eaf6250",
+      "result_id": "e3edcb40-1a95-4224-b85b-bdf2f9cfdb31"
+    },
+    {
+      "claim_id": "ea517f4d-cfcc-4f0a-8469-8690e21e4425",
+      "result_id": "e3edcb40-1a95-4224-b85b-bdf2f9cfdb31"
+    },
+    {
+      "claim_id": "0905cfc1-139c-4ccf-8be0-b5863f80924b",
+      "result_id": "c9cf7f79-3355-4851-b095-2563ac57dc8b"
+    },
+    {
+      "claim_id": "422a9d31-4d5e-48a1-ba9b-d36c66667773",
+      "result_id": "c9cf7f79-3355-4851-b095-2563ac57dc8b"
+    },
+    {
+      "claim_id": "eaafc838-c9b6-48b7-98bc-9c4117636f7a",
+      "result_id": "c9cf7f79-3355-4851-b095-2563ac57dc8b"
+    },
+    {
+      "claim_id": "a2dd99ca-ec0a-4a83-86fc-7278df0c31eb",
+      "result_id": "c9cf7f79-3355-4851-b095-2563ac57dc8b"
+    },
+    {
+      "claim_id": "cd104cf2-b236-47ba-b270-a42e4effcfbf",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "9630e0ab-e056-4853-a61d-0780de99c798",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "a5ea55d4-08da-40d0-b925-8a2bd4fc183b",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "fed26dbd-a5e7-49f2-9259-72af577026c9",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "81331cd7-be71-4d76-a79c-134bc81a0c4b",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "2bfdf2c1-947f-4b30-b884-134e041155e5",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "51e4c555-e219-452f-9d84-0ba956bcaba3",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "a5022f51-37a8-40fa-9483-6aa874c86fb1",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "14e25d04-0e56-4eb2-bed0-0e716e53c111",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "2923b98c-35af-4849-8793-230b63c66817",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    },
+    {
+      "claim_id": "0ce6ea61-0da9-4b4f-8e94-335abda58674",
+      "result_id": "3a620f48-569e-4e52-a79e-706e615856ac"
+    }
+  ],
+  "comparisons": []
+}

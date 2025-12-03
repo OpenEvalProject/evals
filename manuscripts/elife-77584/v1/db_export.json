@@ -1,0 +1,2031 @@
+{
+  "submission": {
+    "id": "13e3a781-1030-47bf-a3a4-2e28b5504614",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:43:22.956505Z",
+    "updated_at": "2025-12-03T16:43:22.956505Z"
+  },
+  "content": [
+    {
+      "id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "submission_id": "13e3a781-1030-47bf-a3a4-2e28b5504614",
+      "content_type": "manuscript",
+      "content_text": "# Combining transgenesis with paratransgenesis to fight malaria\n\n## Authors\n\n- Wei Huang<sup>1</sup> ([ORCID: 0000-0003-0300-7470](https://orcid.org/0000-0003-0300-7470))\n- Joel Vega-Rodriguez<sup>2</sup> ([ORCID: 0000-0002-9576-0058](https://orcid.org/0000-0002-9576-0058))\n- Chritopher Kizito<sup>1</sup>\n- Sung-Jae Cha<sup>1</sup>\n- Marcelo Jacobs-Lorena<sup>1</sup> ([ORCID: 0000-0003-0449-432X](https://orcid.org/0000-0003-0449-432X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Microbiology and Immunology, Malaria Research Institute, Johns Hopkins Bloomberg School of Public Health Baltimore United States\n2. Laboratory of Malaria and Vector Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health Rockville United States ([ROR:043z4tv69](https://ror.org/043z4tv69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMalaria is among the deadliest infectious diseases, and Plasmodium, the causative agent, needs to complete a complex development cycle in its vector mosquito for transmission to occur. Two promising strategies to curb transmission are transgenesis, consisting of genetically engineering mosquitoes to express antimalarial effector molecules, and paratransgenesis, consisting of introducing into the mosquito commensal bacteria engineered to express antimalarial effector molecules. Although both approaches restrict parasite development in the mosquito, it is not known how their effectiveness compares. Here we provide an in-depth assessment of transgenesis and paratransgenesis and evaluate the combination of the two approaches. Using the Q-system to drive gene expression, we engineered mosquitoes to produce and secrete two effectors \u2013 scorpine and the MP2 peptide \u2013 into the mosquito gut and salivary glands. We also engineered Serratia, a commensal bacterium capable of spreading through mosquito populations to secrete effectors into the mosquito gut. Whereas both mosquito-based and bacteria-based approaches strongly reduced the oocyst and sporozoite intensity, a substantially stronger reduction of Plasmodium falciparum development was achieved when transgenesis and paratransgenesis were combined. Most importantly, transmission of Plasmodium berghei from infected to na\u00efve mice was maximally inhibited by the combination of the two approaches. Combining these two strategies promises to become a powerful approach to combat malaria.\n\n## Introduction\n\nAn estimated 241 million malaria cases and 627,000 malaria deaths worldwide were reported in 2020 (WHO, 2021). Whereas world malaria incidence has declined by 27% during the first 15 years of this century, in the last 4 years it declined by less than 2%, indicating that current interventions to control this deadly disease are waning (WHO, 2021). The development of innovative approaches to reduce this intolerable burden is sorely needed.\n\nThe strategy of targeting the mosquito to fight malaria is based on two premises: (1) the mosquito is an obligatory vector for parasite transmission and (2) strong bottlenecks limit parasite development in the mosquito and during transmission to the mammalian host (Smith et al., 2014). The mosquito acquires the parasite when it bites an infected individual. Of the large number of gametocytes (~103) ingested by the mosquito, only a few (single digits) ookinetes succeed in traversing the mosquito gut and differentiate into oocysts, defining the first strong bottleneck (Wang and Jacobs-Lorena, 2013). Each oocyst produces thousands of sporozoites, a good proportion of which invade the salivary glands, where they are stored. Only a small number of these sporozoites (on the order of 1% of total salivary gland content) are delivered when an infected mosquito bites a new individual, defining a second strong bottleneck (Vanderberg, 1977).\n\nSince the early demonstration that mosquitoes can be engineered to be refractory to the parasite (Ito et al., 2002), the effectiveness of this approach has been robustly demonstrated in the laboratory by simultaneous expression of multiple effector genes (genes that stop parasite development without affecting the mosquito vector) (Wang et al., 2012; Dong et al., 2020). The major current challenge is to devise means to introduce the genes that confer refractoriness into mosquito populations. This will most likely be achieved by use of CRISPR/Cas9 gene drives (Carballar-Lejaraz\u00fa et al., 2020; Quinn and Nolan, 2020). In addition to technical aspects, topics to be resolved include regulatory and ethical issues related to the release of genetically modified organisms in nature.\n\nAn independent approach to suppress the mosquito vectorial capacity is to express effector genes from symbiotic bacteria rather than from the mosquito itself, an approach referred to as paratransgenesis. Paratransgenesis has the advantage that the bacteria occur in the mosquito gut in large numbers, in close proximity to the most vulnerable parasite forms. Since the early demonstration of the effectiveness of paratransgenesis to contain the spread of Trypanosoma cruzi, the causative agent of Chagas disease, by the Rhodnius prolixus vector (Durvasula et al., 1997), this approach has been developed for suppressing the mosquito\u2019s ability to vector the malaria parasite (Wang et al., 2012; Yoshida et al., 1999; Shane et al., 2018; Riehle et al., 2007). As is the case for gene drive, the mosquito symbiont Serratia AS1 can spread through mosquito populations and be engineered to secrete effector proteins (Wang et al., 2017).\n\nThis work addresses two unanswered questions: (1) which of the two genetic approaches \u2013 transgenesis and paratransgenesis \u2013 is the most effective, and (2) can the two approaches be combined to enhance the effectiveness of the intervention? We use transgenic mosquitoes engineered to express effector genes in the midgut and/or salivary glands and Serratia bacteria engineered to express the effector genes. We measured the ability of these two strategies, individually and in combination, to inhibit malaria parasite transmission.\n\n## Results\n\n### Generation of Anopheles stephensi mosquitoes expressing antimalaria effectors\n\nTo constitutively and robustly express antimalaria effector proteins in the midgut and salivary glands of An. stephensi mosquitoes, we used the QF-QUAS binary expression system previously adapted for expression in Anopheles gambiae (Potter et al., 2010b; Riabinina et al., 2016). We constructed two \u2018driver\u2019 mosquito lines that express the QF transcription factor, one driven by the constitutive salivary gland-specific anopheline antiplatelet protein (AAPP) promoter (Shen and Jacobs-Lorena, 1998) and the other driven by the constitutive midgut-specific peritrophin 1 (Aper1) promoter (Abraham et al., 2005; Yoshida and Watanabe, 2006; Figure 1A). We also constructed a third \u2018effector\u2019 mosquito line that encodes two parasite inhibiting factors (MP2 and scorpine) downstream of the QUAS promoter and driven by the QF transcription factor (Figure 1A). Crossing this effector line with either or both driver lines leads to the salivary gland and/or midgut expression of parasite-inhibiting factors. The midgut peptide 2 (MP2) dodecapeptide, identified from a phage display screen, binds tightly to the mosquito midgut epithelium, and inhibits Plasmodium falciparum invasion with high efficiency (Vega-Rodr\u00edguez et al., 2014), whereas the scorpion (Pandinus imperator) peptide scorpine lyses malaria parasites without affecting mosquito fitness (Conde et al., 2000; Gao et al., 2010). Each of the three constructs also expresses YFP (yellow eyes, salivary gland QF driver), dsRed (red eyes, midgut QF driver), or CFP (blue eyes, QUAS effector) fluorescent selection markers (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77584/elife-77584-fig1-v1.jpg)\n\n**Figure 1.:** (A) Diagram of the salivary gland (Sg) and midgut (Mg) driver constructs expressing the QF2 transcription factor and the effector (E) constructs expressing the MP2 and scorpine effector proteins under control of the QUAS promoter. Each construct also includes sequences encoding a yellow (YFP), red (DsRed), or blue (CFP) fluorescent protein under the control of the 3xP3 eye promoter. pBac: piggyBac inverted terminal repeats; SV40: transcription terminator sequence; SP: An. stephensi carboxypeptidase signal peptide. Primers used for validation of insertion into mosquito lines (Appendix 1\u2014figure 1 and Appendix 1\u2014table 7) are indicated in red font. Primers used for qRT-PCR are indicated in black font (Appendix 1\u2014table 7). (B) Detection of fluorescent eye markers in wild-type (WT) and transgenic mosquitoes carrying different combinations of midgut driver (Mg), salivary gland driver (Sg), and effector (E) sequences. (C, D) Tissue-specific expression of MP2 and scorpine mRNA in transgenic mosquitoes quantified by qRT-PCR in the midgut relative to the endogenous Aper mRNA (C) and the salivary glands relative to the endogenous AAPP mRNA (D). Mosquito rpS7 was used as a reference. Data pooled from three independent biological replicates. Statistical analysis was determined by Student\u2032s t-test. (E , F) Immunoblotting showing MP2 (6.17 kDa) and scorpine peptide (8.46 kDa) protein expression in midgut and salivary gland lysates from WT and transgenic lines. \u03b1-Tubulin was used as a loading control. E1 and E2 refer to independent mosquito transgenic lines. Antibodies used are shown to the right of (F).\n\nTwo midgut driver lines (Mg1 and Mg2), two salivary gland driver lines (Sg1 and Sg2), and two effector lines (E1 and E2) were obtained. Transgenic mosquitoes were screened by fluorescence microscopy (Figure 1B), and plasmid insertion was verified by PCR (Appendix 1\u2014figure 1). The position of genome integration was determined for each parental line by splinkerette PCR (Potter and Luo, 2010a) and sequencing (Appendix 1\u2014table 1). All the parental lines, except for Sg2, have insertions in intergenic regions. Two of the three Sg2 insertions are in intergenic regions, and one in the open-reading frame of the gamma-glutamyltranspeptidase gene (ASTE010947). Each transgenic line was propagated for over 10 generations, discarding at each generation mosquitoes not displaying the correct combination of fluorescent eyes. After the 10th generation, 20 transgenic female mosquitoes from each line were mated with wild-type (WT) males, and 100% the offspring showed the same fluorescence as the parent females, consistent with all transgenic lines being homozygous (Appendix 1\u2014table 2).\n\n### Quantification of effector mRNA and protein expression\n\nUsing reverse transcription quantitative polymerase chain reaction (RT-qPCR), we compared abundance of the endogenous mosquito Aper and AAPP transcripts with the abundance of effector transcripts originating from the same promoters but driven by the Q-system. Transcripts derived from the Q-system were substantially higher. In the midgut, the scorpine transcript was between 44- (p<0.01) and 56-fold (p<0.01) higher than that of the endogenous Aper mRNA and the MP2 transcript abundance was between 49- (p<0.001) and 36-fold (p<0.01) higher, depending on the transgenic line (Figure 1C, Appendix 1\u2014table 3). In the salivary glands, scorpine transcript abundance varied between 27- (p<0.05) and 63-fold (p<0.01) higher and MP2 transcript between 49- (p<0.001) and 140-fold (p<0.01) higher than that of the endogenous AAPP mRNA, depending on the transgenic line (Figure 1D, Appendix 1\u2014table 4). Moreover, in the absence of a driver, transgene expression in \u2018E\u2019 effector mosquitoes (see Figure 1A) was undetectable (Appendix 1\u2014table 3 and Appendix 1\u2014table 4). These results attest to the high effectiveness of the Q-system in enhancing tissue-specific transgene expression. Western blot analysis using anti-MP2 and anti-scorpine antibodies confirmed the tissue-specific expression of the MP2 (6.17 kDa) and scorpine (8.46 kDa) proteins (Figure 1E and F).\n\n### Mosquito fitness is not affected by effector gene expression and paratransgenesis\n\nTo determine whether DNA integration or antimalaria effector expression affects mosquito fitness, we analyzed the survival of WT, parental transgenic (Mg, Sg, and E), and transgene-expressing mosquitoes. No significant longevity differences were detected for any female (Appendix 1\u2014figure 2A) or male (Appendix 1\u2014figure 2B) transgenic mosquitoes compared to WT. Next, we determined the fecundity (number of laid eggs) and fertility (percentage of hatched eggs) of WT, parental, and antimalaria transgenic lines. Mosquitoes from all parental and antimalaria-expressing transgenic lines showed no difference in fecundity when compared to WT mosquitoes (Appendix 1\u2014figure 2C). As for fertility, no significant differences were detected for the Mg and Sg/E lines when compared to WT, while only marginal differences were detected for the Sg, E, Mg/E, and Mg/Sg/E lines (2.0, 3.1, 2.0, and 2.0% reduction, respectively) (Appendix 1\u2014figure 2D).\n\nTo determine whether transgenesis or antimalaria gene expression in the midgut and/or in the salivary glands affects blood feeding, we quantified the proportion of mosquitoes that take a blood meal (feeding rate) and the amount of blood ingested per mosquito. We found no significant differences (Appendix 1\u2014figure 2E and F), suggesting that neither transgenesis nor antimalaria gene expression affects blood ingestion. In further experiments, we found that there are no differences in lifespan, fertility, or fecundity among WT, transgenic, and (transgenic plus paratransgenic) mosquitoes (Appendix 1\u2014figure 3A\u2013D).\n\nIn summary, our data show that transgenesis, antimalaria gene expression in the midgut and/or salivary glands, and paratransgenesis do not impair mosquito survival, fecundity, fertility (only minor differences), and blood feeding under laboratory conditions.\n\n### Effector-expressing Serratia populate the mosquito reproductive organs and are transmitted vertically and horizontally\n\nThe Serratia AS1-multi strain that produces and secretes multiple effector proteins, including scorpine and MP2 (Wang et al., 2017), was tested here. This strain can populate mosquitoes and be transmitted through multiple generations (Wang et al., 2017). We fed WT and Mg/Sg/E transgenic female mosquitoes with Serratia AS1-multi bacteria and quantified their ability to colonize different mosquito organs, and to be transmitted along consecutive mosquito generations. We found that Serratia AS1-multi equally populate WT and transgenic mosquito midguts, ovaries, and accessory glands and are transmitted for at least three generations (Figure 2A\u2013D). Moreover, we found that WT and transgenic male mosquitoes colonized with Serratia AS1-multi transferred the bacteria horizontally (sexually) to virgin WT and transgenic female mosquitoes (Figure 2E). Horizontal transfer did not take place when male mosquitoes were placed with mated females, showing that transfer occurs during copulation (Appendix 1\u2014table 5; female mosquitoes mate only once in their lifetime). These results suggest that recombinant Serratia AS1 can effectively populate transgenic mosquitoes and be transmitted through multiple generations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77584/elife-77584-fig2-v1.jpg)\n\n**Figure 2.:** A total of 100 wild-type (WT) or transgenic (Trans) virgin females that had been fed with AS1-multi-effector bacteria were placed in a cage with 100 WT or transgenic virgin males (not fed with bacteria) and allowed to mate. Mosquitoes were then fed blood and allowed to lay eggs. These eggs were allowed to hatch and reared to adults following standard protocol (F1). The F1 mosquitoes were propagated through two additional generations (F2 and F3) without providing additional genetically modified bacteria. At each generation, 10 mosquitoes were dissected, and bacterial load was determined by plating serial dilutions of tissue homogenates on apramycin and ampicillin agar plates and counting colonies. (A) Colony-forming units (CFUs) per female midgut fed or not on blood. (B) CFUs per female ovary fed or not on blood. (C) CFUs per male midgut. (D) CFUs per male accessory gland. Data pooled from three independent experiments. (E) Serratia horizontal (sexual) transmission. Newly emerged virgin male adult mosquitoes were fed on 5% sugar solution containing 107 AS1-multi-effector bacteria/ml and then allowed to mate with virgin females. Three days later, 10 females were assayed for the presence of Serratia AS1 by plating spermatheca, midgut, and ovary homogenates on apramycin and ampicillin agar plates and counting colonies. Trans: Mg/Sg/E transgenic mosquitoes. Error bars indicate standard deviation of the mean. Data pooled from three independent biological experiments. Statistical analysis was determined by Student\u2032s t-test.\n\nThe possibility that Serratia bacteria carried by the mosquito are incorporated into its salivary glands and then delivered to the mammalian host when it bites raises concern. To address this possibility, mosquitoes previously fed with fluorescently labeled Serratia were allowed to feed on blood using a membrane feeder. The remaining blood in the feeder was collected, grown overnight in LB medium, and plated. No bacteria were detected (Appendix 1\u2014figure 4). We note that this assay is very sensitive as one life bacterium in the blood is expected to result in abundant growth during the overnight incubation.\n\n### Transgenic and paratransgenic expression of effector genes inhibits Plasmodium development in the mosquito\n\nMosquitoes carrying or not experimental bacteria were fed with the same P. falciparum infectious blood. Infections were followed by verifying the presence of the effector proteins in the blood meal of the experimental mosquitoes. In paratransgenic mosquitoes, only the multi-effector protein was detected, while in the (paratransgenic + transgenic) mosquitoes scorpine and MP2 peptides originating from the bacteria were detected, in addition to the multi-effector protein expressed by the mosquitoes (Appendix 1\u2014figure 6). As shown in Figure 3, expression of effector molecules in the midgut or in the salivary glands of transgenic mosquitoes significantly reduced parasite burden, whereas concomitant effector expression in both organs reduced burden to the greatest extent (81.0 and 85.2% inhibition of mean oocyst and sporozoite numbers, respectively). Effector-expressing recombinant bacteria also significantly reduced parasite burden in WT mosquitoes (69.6 and 65.4% inhibition of oocyst and sporozoite numbers, respectively). As found previously (Wang et al., 2017), WT bacteria also inhibited to some extent oocyst formation in WT mosquitoes. Importantly, combining mosquito transgenesis with paratransgenesis led to the strongest inhibition of parasite development. Oocyst prevalence was reduced from 98.0% to 49.0% for transgenic-only mosquitoes and to 47.8% when transgenesis and paratransgenesis were combined. Sporozoite prevalence was reduced from 97.4% to 42.4% for transgenic-only mosquitoes and to 24.1% when transgenesis and paratransgenesis were combined.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77584/elife-77584-fig3-v1.jpg)\n\n**Figure 3.:** Two-day-old An. stephensi mosquitoes were fed (or not) overnight with wild-type or recombinant Serratia AS1-multi bacteria, as indicated. After 48 hr, all mosquito groups were fed on the same P. falciparum gametocyte culture and midgut oocyst number was determined on day 7 (A) and salivary gland sporozoite number was determined on day 14 (B) post-feeding. Horizontal lines represent median oocyst or sporozoite number. Data pooled from three independent biological experiments. Statistical analysis was done by Mann\u2013Whitney U-test. \u2018multi\u2019: Serratia AS1-multi bacteria expressing multiple effectors; N: number of mosquitoes assayed; Prevalence: proportion of mosquitoes carrying one or more parasite.\n\nIn an attempt to determine which parasite stage parasite was affected by effector expression, we measured ookinete formation in the midgut of mosquitoes fed with an infectious blood meal (Appendix 1\u2014figure 5). For all transgenic and paratransgenic combinations, ookinete formation was strongly inhibited, suggesting that the effector molecules affect the early parasite stages in the mosquito midgut.\n\nThe results so far suggest that the ability of (transgenic + paratransgenic) mosquitoes to transmit the parasite may be strongly impaired, a hypothesis that was tested next.\n\n### Malaria transmission is maximally impaired by combining transgenesis and paratransgenesis\n\nTo investigate the ability of mosquitoes to transmit the parasite from an infected to a na\u00efve animal, we challenged na\u00efve mice with the bite of mosquitoes that had ingested the same infectious blood meal. Four mosquito groups were investigated: (1) WT mosquitoes, (2) WT mosquitoes carrying Serratia AS1-multi (paratransgenic), (3) transgenic mosquitoes that express effectors in the midgut and salivary glands (transgenic), and (4) transgenic mosquitoes carrying Serratia AS1-multi (paratransgenic + transgenic) (Figure 4A). All four mosquito groups fed on the same Plasmodium berghei-infected mouse, ensuring that all mosquitoes ingested blood with the same parasitemia. At 21\u201323 days post-feeding, after the mosquito salivary glands were populated by sporozoites, either three (Figure 4B) or five (Figure 4D) mosquitoes were randomly selected and allowed to bite na\u00efve mice. For each experiment, salivary gland sporozoite numbers were determined (Figure 4C and E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77584/elife-77584-fig4-v1.jpg)\n\n**Figure 4.:** (A) Experimental design. Wild-type (WT), paratransgenic, transgenic, and (paratransgenic + transgenic) mosquitoes were fed on the same P. berghei-infected mouse, assuring that all mosquitoes ingested infected blood with the same parasitemia. After 21~23 days, when sporozoites had reached the salivary glands (C, E), three (B) or five (D) mosquitoes were randomly selected and allowed to bite na\u00efve mice. The parasitemia of these mice was followed for 14 days. Data pooled from three independent experiments, each using five mice per challenged group for a total of 15 mice. Transgenic mosquitoes express effectors in both midgut and salivary glands. Statistical analysis was determined by log-rank (Mantel\u2013Cox) test (B, D) or Mann\u2013Whitney U-test (C, E).\n\nWhen mice were challenged with the bite of three WT mosquitoes (three independent experiments with five mice each), 100% became infected (half-infection time = 5.5 \u00b1 0.5 days) (Figure 4B) and their salivary glands had a median 8400 sporozoites (Figure 4C). With mosquitoes carrying Serratia AS1-multi (paratransgenic), 26.7% of the mice were not infected (half-infection time 7.1 \u00b1 0.7 days), and their salivary glands had a median of 2100 sporozoites (74% lower than WT mosquitoes). With transgenic mosquitoes, 67% of the mice were not infected, and their salivary glands had a median of 900 sporozoites (92% lower than WT mosquitoes). With (paratransgenic + transgenic) mosquitoes, 93% mice were not infected, and their salivary glands had a median of zero sporozoites (100% lower than WT mosquitoes).\n\nWhen mice were challenged with the bite of five WT mosquitoes (Figure 4D and E), only 1 mouse out of 15 (6.7%) did not get infected (half-infection time = 5.6 \u00b1 0.7 days). With paratransgenesis, 26.7% of the mice were not infected (half-infection time = 8.3 \u00b1 1.0), with transgenesis 47% of the mice were not infected (half-infection time = 10.1 \u00b1 1.0 days) and with (paratransgenesis + transgenesis) 80% of the mice were not infected. The salivary gland sporozoite number (Figure 4E) was similar to that observed for experiments with three mosquito bites (Figure 4C).\n\nIn summary, our data shows that transgenic and paratransgenic expression of effector molecules are both effective in impairing transmission, but that the combination of the two strategies is considerably more effective. An even higher effectiveness is expected from the bite of one infected mosquito, which is the most likely scenario in the field.\n\n## Discussion\n\nIn this study, we report the development of a new class of transgenic mosquitoes driven by the Q-system. We also assess the effectiveness of transgenesis and paratransgenesis, individually or in combination, in thwarting Plasmodium parasite transmission. Notably, effector mRNA abundance was about 50 times higher than that of the endogenous genes, consistent with the high effectiveness of the Q-system in Drosophila (Potter et al., 2010b). Some QF toxicity was reported when the Q-system was first used in Drosophila (Potter et al., 2010b; Riabinina et al., 2016). Of note, expression of neither the QF transcription factor nor the antimalaria effectors affected mosquito longevity, blood meal uptake, or offspring production under laboratory conditions. Additional experiments are required to test the fitness of these transgenic mosquitoes under field conditions.\n\nWe selected two potent effector molecules, MP2 and scorpine, to block the development of Plasmodium in the mosquito. MP2 is a 12-amino-acid peptide that likely targets a midgut receptor for ookinete traversal (Vega-Rodr\u00edguez et al., 2014), and scorpine is an antimicrobial toxin hybrid between a cecropin and a defensin that lyses Plasmodium ookinetes (Conde et al., 2000). Scorpine expressed by the entomopathogenic fungus Metarhizium in the mosquito hemocoel strongly inhibits (~90%) salivary gland sporozoite numbers (Fang et al., 2011). Transgenic mosquitoes expressing this effector in the salivary glands were also highly effective in reducing sporozoite numbers (this work). Furthermore, expression of both effector genes in the midgut and the salivary glands led to a much stronger decrease of salivary gland sporozoite numbers than the expression of the effectors in either of these organs alone. A number of effectors have already been individually tested in paratransgenesis experiments (Wang et al., 2017). Going forward, the combination of different effectors and the use of mosquitoes and bacteria expressing different effector sets should be explored to achieve maximum blocking activity.\n\nThat expression of antimalaria effectors in the salivary glands inhibited oocyst development in the midgut (Sg/E; Figure 3A) is most likely explained by the fact that mosquitoes ingest saliva with the blood meal, in this way incorporating effector proteins into the blood bolus (Luo et al., 2000). A similar phenomenon was also observed in a recent report showing that human PAI-1 expressed in salivary glands was ingested together with the saliva and inhibited oocyst formation (Pascini et al., 2022). In our study, we confirmed the presence of the multi-effector protein, in addition to the AAPP salivary gland protein (control), in the midguts of Sg/E mosquitoes that express the multi-effector protein only in the salivary glands (Appendix 1\u2014figure 7). Scorpine has been shown to be nontoxic to insect cells (Carballar-Lejaraz\u00fa et al., 2008), whereas MP2 toxicity was not determined previously. Further studies are needed to determine whether the delivery of these molecules by the mosquito bite could induce physiological responses. As effector molecules in the mosquito saliva are injected into the host dermis during blood feeding, the introduction in the field of transgenic mosquitoes that produce nonhuman proteins in their saliva needs to be considered with much caution.\n\nExperiments seeking evidence for possible bacteria transmission with a mosquito bite yielded negative results (Appendix 1\u2014figure 4), suggesting that mosquitoes cannot inoculate the bacteria while feeding on a host. It was previously shown that secretion of effector proteins by recombinant Pantoea (Wang et al., 2012), Serratia (Wang et al., 2017), or Asaia (Shane et al., 2018) bacteria into the midgut inhibits Plasmodium development and that WT Serratia AS1 is transmitted from one mosquito generation to the next (Wang et al., 2017). What was not known is whether engineering Serratia to produce and secrete large amounts of proteins would affect their fitness and ability to be transmitted. Our experiments showed that the engineered Serratia were efficiently transmitted from one mosquito generation to the next, a result that bodes well for the implementation of the paratransgenesis strategy in the field. For introduction of bacteria in the field, we envision placing around villages, cotton baits soaked with a mosquito attractant dissolved in sugar and containing suspended bacteria. This is similar to how we introduce bacteria into mosquitoes in the laboratory. The continuous introduction of bacteria into the local mosquito population, combined with the seeding the breeding sites when female mosquitoes lay eggs covered with bacteria (Wang et al., 2017), is expected to compensate for the decrease of transmission through mosquito generations.\n\nThis project was based on two basic premises: (1) transgenesis and paratransgenesis are not mutually exclusive and (2) both strategies result in impairment of parasite development in the mosquito. As such, our experiments addressed the question of whether a combination of the two strategies would result in enhanced transmission-blocking effectiveness. The combination of transgenesis and paratransgenesis greatly reduced parasite development in the mosquito, and most importantly, it resulted in a high-level reduction of transmission from an infected to a na\u00efve mouse compared to the individual interventions. When na\u00efve mice were bitten by three (transgenic + paratransgenic) mosquitoes, 93% of the mice (14 out of 15) did not develop an infection compared with 100% infection when mice were bitten by WT mosquitoes. In the field, where the density of infected mosquitoes is low even in high-transmission areas, it is unlikely that people will be consecutively bitten by more than one infected mosquito, and protection from transmission is expected to be very high. For translating these findings to the field, the testing of different combinations of effectors, both for transgenesis and paratransgenesis, may further improve the effectiveness of the approach.\n\nWhereas both transgenesis and paratransgenesis have been shown to be highly effective in a lab setting, the challenge will be to implement these new strategies in the field. In addition to address regulatory and ethical issues connected with the release of recombinant organisms in nature, a major technical issue to be solved is how to introduce the blocking transgenes into mosquito populations in the field. In this respect, CRISPR/Cas9 technology has afforded the development of promising gene drive systems focused on population suppression or population modification strategies (Scudellari, 2019; Nolan, 2021; Simoni et al., 2020; Adolfi et al., 2020). Population reduction leaves an empty biological niche that upon cessation of reduction pressure will result in recolonization by the same or other mosquito species. In contrast, population modification results in a more stable state, with a biological niche occupied by mosquitoes that are poor transmitters. Similarly, efficient spread of recombinant bacteria into mosquito populations has been demonstrated in a laboratory setting (reference Wang et al., 2017 and this work), indicating a promising path toward the field implementation of the most efficient (transgenesis + paratransgenesis) strategy. The recent finding that a naturally occurring and nonmodified Serratia can spread through mosquito populations while strongly suppressing Plasmodium development (Gao et al., 2021) significantly increases the feasibility of moving a paratransgenesis-like approach into the field as it bypasses concerns relating to the release of genetically modified organisms in nature. Notably, transgenesis and paratransgenesis are not envisioned to be implemented by themselves. Both are compatible with current vector and malaria control measures such as insecticide-based mosquito control, mass drug administration, and vaccines, and their added implementation promises to substantially enhance the effectiveness of intervention of disease transmission.\n\nIn summary, we show that the Q-binary system to express anti-Plasmodium effectors in the mosquito is highly efficient. We also show that in addition to inhibiting parasite development, recombinant Serratia AS1 is horizontally and vertically transmitted across multiple mosquito generations, which is a bacteria counterpart of gene drive. A major conclusion of this work is that the combination of transgenesis with paratransgenesis provides maximum parasite blocking activity and has high potential for fighting malaria.\n\n## Materials and methods\n\n### Mosquitoes rearing and parasite culture\n\nAn. stephensi Nijmegen strain (Feldmann and Ponnudurai, 1989) and An. stephensi transgenic lines were reared as previously described Huang et al., 2020. For fitness evaluation, the mosquitoes were fed on Swiss Webster mice.\n\nFemale An. stephensi were infected with P. falciparum gametocyte cultures via membrane feeding. P. falciparum NF54 gametocytes were produced according to Tripathi et al., 2020. Briefly, the parasites were maintained in O+ human erythrocytes using RPMI 1640 medium supplemented with 25 mM HEPES, 50 mg/l hypoxanthine, 25 mM NaHCO3, and 10% (v/v) heat-inactivated type O+ human serum (Interstate Blood Bank, Inc) at 37\u00b0C and with a gas mixture of 5% O2, 5% CO2, and balanced N2. For feeding, 14\u201317-day-old mature gametocytes were pelleted by centrifugation (5 min, 2500 \u00d7 g), resuspended with O+ human RBC to 0.15\u20130.2% gametocytemia, and diluted to 40% hematocrit with human serum. All manipulations were done maintaining the cultures, tubes, and feeders at 37\u00b0C.\n\n### Plasmid constructs\n\nThe pXL-BACIIECFP-15XQUAS-TATA-MP2-SV40-15XQUAS-TATA-scorpine-SV40 containing the MP2 and Scorpine expression cassette and the ECFP gene under the eye-specific promoter 3xP3 was used to generate the parental QUAS-[MP2 + scorpine] effector lines (Appendix 1\u2014table 6). The coding DNA for MP2-SV40-15XQUAS-TATA-Scorpine was synthetized by GeneScript (Appendix 1\u2014figure 8). The sequence was amplified using primers MP2-ScopineF and MP2-ScopineR (Appendix 1\u2014table 7), and In-Fusion-cloned into plasmid pXL-BACIIECFP-15XQUAS-TATA-SV40 (Wang et al., 2017) previously linearized with XhoI.\n\nThe pXL-BACII-DsRed-AsAper-QF2-hsp70 containing the QF2 transcription factor under the control of the midgut specific AsAper promoter and the DsRed marker driven by the eye-specific promoter 3xP3 was used to generate the parental Mg-QF driver line. The AsAper promoter (1.5 kb) (Appendix 1\u2014figure 8) was PCR-amplified from An. stephensi gDNA with primers MgPF and MgPR (Appendix 1\u2014table 7). The PCR product was In-Fusion-cloned into plasmid pXL-BACII- DsRed-QF2-hsp70 (Potter et al., 2010b) previously linearized with XhoI.\n\nThe pXL-BACII-YFP-AsAAPP-QF2-hsp70 containing the QF2 transcription factor under the control of the midgut specific AsAAP promoter and the YFP marker driven by the eye-specific promoter 3xP3 was used to generate the parental Sg-QF driver lines. The YFP coding sequence was amplified using primers YFPF and YFPR (Appendix 1\u2014table 7, Appendix 1\u2014figure 8). The PCR product was In-Fusion-cloned into plasmid pXL-BACII-DsRed-QF2-hsp70 previously digested with ApaI and NotI to produce plasmid pXL-BACII-YFP-QF2-hsp70. The AsAAPP promoter consisting of a 1.7 kb upstream of the start codon (Yoshida and Watanabe, 2006) was PCR-amplified from An. stephensi gDNA using primers SgPF and SgPR (Appendix 1\u2014table 7, Appendix 1\u2014figure 8). The PCR product was In-Fusion-cloned into plasmid pXL-BACII-YFP-QF2-hsp70 previously linearized with XhoI.\n\n### Generation of transgenic mosquitoes\n\nThe plasmid constructs were microinjected into An. stephensi embryos as described (Volohonsky et al., 2015). Briefly, transformation plasmids were purified using the EndoFree Maxi Prep Kit (QIAGEN) and resuspended in injection buffer (0.1 mM NaHPO4 pH 6.8 and 5 mM KCl) at a concentration of 250 ng/\u00b5l for the transformation plasmid and 200 ng/\u00b5l for the helper plasmid encoding the transposase. The plasmid mix was injected into An. stephensi embryos using a FemtoJet Microinjector (Eppendorf). Third-instar larvae of G0 survivors were screened for transient expression of the 3xP3-dsRed marker (red eyes), 3xP3-YFP marker (yellow eyes), and 3xP3-CFP marker (blue eyes). Adults obtained from the fluorescent marker screening were crossed to WT mosquitoes to generate independent transgenic lines. The data for these injections are summarized in Appendix 1\u2014table 8.\n\nFor each of the parental transgenic lines, splinkerette PCR (Potter and Luo, 2010a) and PCR sequencing were used to determine the transgene insertion site into the An. stephensi genome. Two rounds of amplifications were conducted with 1X Phusion High-Fidelity PCR Master Mix with HF Buffer (Thermo Fisher Scientific). The primers used are shown in Appendix 1\u2014table 7. The amplified PCR products were resolved in a 1.5% agarose gel stained with ethidium bromide, and the amplified DNA bands from the 5\u2032 and 3\u2032 ends were individually excised and purified with QIAquick Gel Extraction Kit (QIAGEN). Purified PCR products were cloned into pJET1.2/blunt plasmid (Thermo Fisher Scientific) and transformed into NEB 5-alpha Competent Escherichia coli (High Efficiency, Thermo Fisher Scientific). Plasmids were isolated from individual colonies and sequenced with the universal primers pJET12F and pJET12R (Eurofins). The sequences were aligned to the An. stephensi genome using VectorBase and NCBI BLAST to identify the location of transgene insertion sites (Appendix 1\u2014figure 1).\n\nTo obtain homozygous lines, each transgenic line was propagated for more than 10 generations, discarding at each generation mosquito larvae not displaying the expected fluorescent eyes. To verify homozygosity of the transgenic lines, 10 females of each line were mated with 10 WT male mosquitoes, fed blood, and eggs were collected and reared to larvae. The larvae were individually inspected for expression of the fluorescent protein marker(s). Absence of the expected fluorescence would indicate that the parent female was heterozygous for this dominant marker.\n\nTo induce midgut- or salivary gland-specific expression of MP2 and scorpine, QF driver lines were crossed to QUAS-[MP2 + scorpine] effector lines. The offspring of each cross was selected by the specific combination of eye fluorescence reporters (Figure 1B).\n\n### Quantitative reverse transcription polymerase chain reaction (qRT-PCR)\n\nTissue-specific expression of MP2 and scorpine mRNAs in An. stephensi transgenic lines was evaluated by RT-PCR. Salivary glands and midguts were dissected from female mosquitoes in ice-cold 200 \u00b5l TRIzol (Thermo Fisher Scientific). Total RNA was extracted according to TRIzol manufacturer\u2019s protocol, resuspended in RNAse-free water, and treated with RQ1 RNase-Free DNase (Promega, Madison, WI). After RNA quantification using a DeNovix DS-11 spectrophotometer, first-strand cDNA was synthesized for each sample using Superscript III (Invitrogen) with random hexamers (Invitrogen) and 500 ng of total RNA per sample. cDNA was treated with RNase H (New England Biolabs) for 10 min at 37\u00b0C and stored at \u201370\u00b0C until use. The cDNA was used as template in PCR reactions containing the Taq 2X Master Mix (New England Biolabs) and 5 \u03bcM of MP2- and scorpine-specific primers (Appendix 1\u2014table 7). Amplification of S7 ribosomal mRNA was used as reference (Zhang et al., 2011). PCR conditions were 1 hot start at 95\u00b0C for 30 s; 35 cycles of denaturation at 95\u00b0C for 30 s, annealing at 56\u00b0C for 30 s, and elongation at 68\u00b0C for 30 s; followed by a final extension at 68\u00b0C for 5 min; and 4\u00b0C indefinitely.\n\n### Mice immunization\n\nScorpine epitope (CEKHCQTSGEKGYCHGT, the N-terminus was conjugated to KLH) and MP2 epitope (ACYIKTLHPPCS, the N-terminus was conjugated to KLH) were synthesized by Peptide 2.0 Inc About 6\u20138-week-old C57BL/6 mice were immunized with 20 \u00b5g (50 \u00b5l) purified antigen in PBS using Addavax (Invivogen, San Diego, CA) as the adjuvant. A total of 50 \u00b5l adjuvant was mixed with 50 \u00b5l antigen, and the mixture was administered intramuscularly in both anterior tibialis muscles (50 \u00b5l per leg). Mice were immunized twice at 2-week intervals. Serum was collected 14\u201321 days after administration of the last booster (Cha et al., 2018).\n\n### Commercial antibodies\n\nRabbit anti-\u03b1-tubulin was purchased from Sigma (Cat# SAB3501072) and goat anti-rabbit IgG HRP-conjugated and goat anti-mouse IgG HRP-conjugated were purchased from Cell Signaling (Cat# 7076S).\n\n### Western blotting\n\nMP2 and scorpine protein synthesis in midgut and salivary glands of the transgenic lines was evaluated by Western blot. Also, 5 midguts and 10 salivary glands were dissected in PBS and placed in microtubes containing RIPA Buffer (Thermo Fisher Scientific), 1% Halt Protease Inhibitor Cocktail (Thermo Fisher Scientific), and 0.1 mM PMSF (Sigma-Aldrich). Samples were homogenized and stored at \u201370\u00b0C. An equivalent of 0.25 midgut and 5 salivary glands were resolved in a NuPAGE 10% Bis-Tris Protein Gel (Invitrogen) under reducing conditions and transferred to a PVDF membrane Invitrogen Power Blotter Select Transfer Stacks. After the transfer, the membrane was washed with TBST 1% (Sigma-Aldrich), incubated with blocking buffer (5% milk powder in TBST 1%) overnight at 4\u00b0C, and probed with mouse anti-MP2 or anti-scorpine at a 1:1000 dilution in TBST 1% overnight at 4\u00b0C. The membrane was washed and incubated with an anti-mouse HRP-linked antibody (Cell Signaling) at a 1:10,000 dilution in TBST 1% for 2 hr at room temperature. Detection was done with the SuperSignal West Dura Extended Duration Substrate Chemiluminescent Substrate (Thermo Fisher Scientific) and imaged using an Azure Imager c600 (Azure Biosystems).\n\n### Mosquito survival, fecundity, and fertility\n\nTo measure mosquito survival, 2-day-old adult male and female mosquitoes (n = 100) were separately placed in a cage with cotton pads soaked in 10% sucrose solution and kept in the insectary. Female mosquitoes were allowed to blood feed on an anesthetized mouse for 30 min and allowed to lay eggs. Mortality of female and male mosquitoes was monitored three times per week. The differences among the survival curves (three independent replicates) were analyzed with log-rank (Mantel\u2013Cox) test using the WT as controls.\n\nTo assess fecundity (number of laid eggs) and fertility (percentage of hatched eggs), 2-day-old adult females were blood-fed on anesthetized mice for 30 min. Only fully engorged females were used for these experiments. Two days after blood feeding, 20 females were individually placed in 50 ml tubes containing a small cup with filter paper soaked in 2\u2009ml of distilled water as a oviposition substrate. After 3 days, the filter papers with eggs were removed, and the number of eggs per mosquito was counted using a dissecting microscope. After counting, the eggs were placed in paper cups with 50\u2009ml of distilled water to allow hatching. Fertility was determined as the number of larvae divided by the total number of eggs. Fecundity and fertility of the transgenic lines were compared to WT mosquitoes, and all the experiments were repeated for a total of three biological replicates.\n\nTo measure mosquito survival with paratransgenesis, Serratia bacteria were administered overnight to female An. stephensi with a cotton pad soaked with a 5% sucrose solution containing 107 bacteria/ml or no bacteria, and 2 days later, female mosquitoes were allowed to blood feed on an anesthetized mouse for 30 min and allowed to lay eggs. Mortality of female and male mosquitoes was monitored three times per week. The differences among the survival curves (three independent replicates) were analyzed with log-rank (Mantel\u2013Cox) test using the WT as controls.\n\nTo assess fecundity (number of laid eggs) and fertility (percentage of hatched eggs) with paratransgenesis, Serratia bacteria were administered overnight to female An. stephensi with a cotton pad soaked with a 5% sucrose solution containing 107 bacteria/ml or no bacteria, and 2 days later, female mosquitoes were allowed to blood feed on an anesthetized mouse for 30 min and allowed to lay eggs. Only fully engorged females were used for these experiments. Two days after blood feeding, 20 females were individually placed in 50 ml tubes containing a small cup with filter paper soaked in 2\u2009ml of distilled water as an oviposition substrate. After 3 days, the filter papers with eggs were removed, and the number of eggs per mosquito was counted using a dissecting microscope. After counting, the eggs were placed in cups with 50\u2009ml of distilled water to allow hatching. Fertility was determined as the number of larvae divided by the total number of eggs. Fecundity and fertility of the transgenic lines were compared to WT mosquitoes, and all the experiments were repeated for a total of three biological replicates.\n\n### Quantification of blood uptake\n\nThe amount of blood ingested by An. stephensi transgenic mosquitoes was determined by measuring the amount of protein-bound heme detected in the mosquito midgut after a blood meal (Alves E Silva et al., 2021). Transgenic and WT mosquitoes were fed with a 1:1 mixture of plasma and RBCs (Interstate Blood Bank Inc) using membrane feeders. After feeding, the midguts of 10 fully engorged females were dissected and homogenized individually in 1 ml of distilled water. Unfed mosquitoes were used as the negative control. Protein-bound heme (410 nm) was measured for each individual midgut with a Versa max microscope Reader and recorded with Softmax pro 5.3. Readings were compared among the groups using Student\u2019s t-test.\n\n### Bacteria administration to An. stephensi mosquitoes\n\nAfter culturing at 28\u00b0C overnight, bacteria were washed with sterile PBS and resuspended to a final concentration of 109/ml. After a 3 hr starvation, mosquitoes were fed overnight on 107 CFU bacteria (AS1-multi, apramycin resistance) per ml of 5% sugar. Mosquitoes were surface sterilized with cold 75% ethanol for 3 min and washed three times with sterile PBS. Midguts were dissected under sterile conditions at different time points before and after a blood meal and homogenized in sterile PBS. Bacterial number was determined by plating tenfold serial dilutions of the homogenates on LB agar plates containing 50 \u00b5g/ml apramycin and ampicillin (bacteria from noninfected mosquitoes cannot grow on LB agar plates containing 50 \u00b5g/ml apramycin and ampicillin) and incubating at 28\u00b0C for 24 hr.\n\n### Effect of bacteria on mosquito infection by P. falciparum\n\nSerratia bacteria were administered overnight to female An. stephensi with a cotton pad soaked with a 5% sucrose solution containing 107 bacteria/ml or no bacteria, and 2 days later, allowed to feed on P. falciparum NF54 gametocyte-containing blood as described (Fang et al., 2011). Engorged mosquitoes were kept at 27\u00b0C and 80% relative humidity. Midguts were dissected in 1\u00d7 PBS at 7 days post-infection, stained with 0.1% mercurochrome, and oocysts were counted. Salivary glands from mosquitoes were dissected at 14 days post-infection and individually homogenized on ice in 30 \u00b5l of PBS using a disposable pestle. The homogenate was centrifuged at 2000 rpm for 10 min to pellet tissue debris. Then, 10 \u00b5l of the suspension was placed in a Neubauer counting chamber, waiting for at least 5 min to allow sporozoites to sediment to the bottom of the chamber. Sporozoites were counted using a Leica phase-contrast microscope. Parasite numbers among control and experimental groups were compared using the nonparametric Mann\u2013Whitney test (GraphPad Prism).\n\nSerratia bacteria were administered overnight to female An. stephensi with a cotton pad soaked with a 5% sucrose solution containing 107 bacteria/ml or no bacteria, and 2 days later, allowed to feed on P. falciparum NF54 gametocyte-containing blood as described. The number of ookinetes in the midgut were determined 22 hr post feeding. Each midgut was disrupted in 20 \u03bcl PBS by pipetting and transferred to 8-well slides, 1 midgut/well. After drying at room temperature, the samples were fixed in 80% methanol for 15 s and allowed to dry at room temperature. Samples were blocked with 5% BSA for 1 hr at room temperature and then incubated for 1 hr at room temperature with Pfs25 antibody (Mab4b7) (Barr et al., 1991) in blocking buffer (1:250\u20131:500 dilution). After three washes with PBS for 5 min, samples were incubated for 1 hr at room temperature with Alexa Fluor 488 goat anti-mouse IgG (Life Technologies, Cat# A11001) in blocking buffer (1:250\u20131:500 dilution). After washing three times with PBS for 5 min, slides were allowed to dry and covered with cover slips. Ookinetes were counted using fluorescent microscopy. Parasite numbers among control and experimental groups were compared using the nonparametric Mann\u2013Whitney test (GraphPad Prism).\n\n### Effect of bacteria on mosquito infection by P. berghei\n\nBacteria were cultured overnight in LB medium and washed three times with sterile PBS. Two-day-old mosquitoes were fed overnight on a cotton pad soaked with a 5% sucrose solution containing or not 107 bacteria/ml. Two days later, mosquitoes were fed on a P. berghei-infected mouse (1\u20132% of parasitemia and 1 exflagellation per 10 fields). Unfed mosquitoes were removed, and fully engorged mosquitoes were provided with 5% (wt/vol) sterile sucrose solution and maintained at 19\u00b0C and 80% relative humidity. Midguts were dissected on day 12 after the blood meal, stained with 0.1% (wt/vol) mercurochrome for determining oocyst load. Salivary glands were dissected at 21 days post-infection for sporozoite determination. Transgenic and WT mosquitoes were simultaneously fed on the same P. berghei-infected mouse to assure that control and experimental mosquitoes ingested the same number of parasites.\n\n### Serratia vertical, venereal, and transstadial transmission\n\nTo test vertical transmission, AS1-multi were introduced into 2-day-old adult female mosquitoes by feeding them overnight on a cotton pad moistened with 5% sterile sucrose containing 107 bacteria/ml. Two days later, mosquitoes were fed on a healthy mouse and were then allowed to lay eggs on a damp filter paper in individual oviposition tubes. Eggs were collected into a tube containing 300 \u03bcl sterile 1\u00d7 PBS and homogenized. The bacterial load was determined by plating tenfold serial dilutions of the egg homogenates on LB agar plates containing 50 \u00b5g/ml of apramycin and ampicillin and incubating the plates at 28\u00b0C for 24 hr for colony counting. Rearing of larvae to adults followed standard protocol. A total of 10 male and 10 female adults were sampled and examined by plating adult midgut homogenates on LB agar plates containing apramycin and ampicillin. To test the efficiency of Serratia transmission through multiple generations, the mosquitoes were reared without providing additional Serratia AS1 and maintained for three consecutive generations. At each generation, 10 female and male adults were sampled for examining the presence of AS1-multi effectors.\n\nFor male-to-female venereal transmission tests, Serratia were introduced into newly emerged virgin male mosquitoes by feeding them overnight on a cotton pad moistened with 5% sugar solution containing 107 bacteria/ml. Twenty Serratia-carrying males were then allowed to mate with 20 three-day-old virgin females. Three days after mating, 10 females were sampled and examined for bacteria in the female midgut, ovary, and spermatheca.\n\n### Transmission from infected to na\u00efve mice\n\nTransgenic and WT mosquitoes were simultaneously fed on the same P. berghei-infected mouse and unfed or partially fed mosquitoes were removed. Midguts from a small number of mosquitoes were dissected at 12 days post-feeding to determine the infection status by counting oocyst numbers. At ~21\u201323 days post-feeding, three or five mosquitoes were randomly selected from the cage and allowed to feed on noninfected mice (challenge). Mosquitoes that did not take a blood meal were replaced until the final number of mosquitoes for each group (three or five) was reached. The salivary glands of most mosquitoes were dissected for counting sporozoites. A total of five mice were used per experiment and three biological replicates were conducted for a total of 15 mice per mosquito group. After mosquito challenge, mice were monitored daily for 14 days to determine blood stage infection using Giemsa-stained blood smears.\n\n### Detection of MP2 and scorpine protein ingestion\n\nIngestion of salivary gland-expressed MP2 and scorpine into the midgut lumen was analyzed with a low-melting agarose feeding assay (Oliveira et al., 2011). WT and Sg/E females were fed with a 1% low-melting agarose solution for 15\u2009min. One half hour later, midguts were collected from five mosquitoes on ice-cold PBS. The midgut agarose bolus was placed in 1% protease inhibitor cocktail (Sigma, Cat# P8340-1 ML) and 0.1 mM PMSF, homogenized, and stored at \u221280\u00b0C. Proteins in the homogenate were resolved by SDS-PAGE and transferred to a PVDF membrane. The membrane was probed with a mouse anti-MP2 and scorpine antibodies (1:2000) and developed as described before. An antibody against the saliva protein AAPP (Hayashi et al., 2012) was used as a positive saliva control (1:2000).\n",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5fbcff1c-75a9-4da7-a55a-fd8b4df1088f",
+      "submission_id": "13e3a781-1030-47bf-a3a4-2e28b5504614",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Flaminia Catteruccia, https://ror.org/03vek6s52 Harvard School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77584.sa0](https://doi.org/10.7554/eLife.77584.sa0)\n\nThis article provides convincing evidence that combining transgenic with paratransgenic approaches can provide a useful tool to reduce malaria transmission by Anopheles mosquitoes. The study provides a series of well-designed experiments that will be of interest to malaria and vector control specialists as well as to a broader audience interested in genetic manipulation of insects and paratransgenesis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Flaminia Catteruccia, https://ror.org/03vek6s52 Harvard School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77584.sa1](https://doi.org/10.7554/eLife.77584.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Combining transgenesis with paratransgenesis to fight malaria\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Dominique Soldati-Favre as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n(1) Fitness studies should be performed in Serratia-infected mosquitoes, and in the transgenic-paratransgenic combination.\n\n(2) The hypothesis that inhibition of oocyst development in the Sg/E line is due to mosquitoes ingesting saliva with the blood meal needs to be tested by determining the presence of Scorpine and MP2 protein in the blood bolus.\n\n(3) More data on the stage at which parasites are killed need to be provided, and levels of Scorpine and MP2 need to be determined in paratransgenic mosquitoes.\n\n(4) Limitations of the study need to be more amply discussed.\n\nReviewer #2 (Recommendations for the authors):\n\nThe bulk of my review is confined to the 'public review' section.\n\nBelow are mostly style elements or requests for points of clarification:\n\nAccording to Figure 3, you do see an anti-parasite effect just from the addition of wild-type Serratia to the mosquito, correct? The possibility of this, and the fact that it has been found in previous literature, is mentioned but that you also found it in 'this' work does not seem to be explicitly stated.\n\nLine 300-302 would that case still be 'paratransgenesis' then, as implied if there is no transgene?\n\nLine 179 'would have been easily detected' this is a bit difficult to conclude, without any controls.\n\nLine 215 re: mice infections. Authors first talk about % infected (in controls) but then go on to talk about %protected in test experiments. This can be confusing.\n\nLine 220 what is the justification for using median here, rather than mean plus/minus SE? (I get that median of 0% infected sounds better).\n\n116 'this resulted in homozygous lines' needs some more precision \u2013 under some scenarios it 'could' result in homozygosity. Similarly, and this is possibly pedantic, but (line 390) 'absence of' does not indicate heterozygosity. It would be better to state all gave 100% inheritance of\u2026.consistent with them all being homozygous'.\n\n288 'containment' can have two quite different meanings: containment of parasites or containment of released GM organisms.\n\nPanel B on Figure 1 is redundant and excessive \u2013 I initially thought this said something about effector expression in different tissues but it is just whether eyes were red, green, or blue, indicating transgenes. Since this is already done and confirmed molecularly, there is no value in this panel.\n\nOn a related note, the splinkerette PCR to identify transgene integrations is well done but the Figure S1 is incorrectly labelled as PCR validation of the plasmid insertion site. Since the primer pair are internal to the transgenes they are not validating the integration sites.\n\n'Significance' section needs a grammar check 'thousand persons yearly' etc. Overall though, I found the manuscript really well written and easy to follow in terms of experimental flow and logic.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Combining transgenesis with paratransgenesis to fight malaria\" for further consideration by eLife. Your revised article has been evaluated by Dominique Soldati-Favre (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nSpecifically, the expression levels of Scorpine and MP2 in paratransgenic mosquitoes still need to be tested in order to determine whether levels are correlated to the effects on parasite development.\n\nMoreover, rather than referring to published literature, the presence of Scorpine and MP2 protein in the blood bolus still need to be determined to conclusively demonstrate these effectors affect parasite numbers.\n\nFinally, the discussion of the hurdles to field deployment needs to be more nuanced. For instance, Line 289 concerning \"we envision cotton baits soaked with mosquito attractant etc. \" is simplistic in its appraisal of the next steps.\n",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "10d0f0fb-9109-4c2c-ab7a-af479601c30e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C1",
+      "claim": "An estimated 241 million malaria cases and 627,000 malaria deaths worldwide were reported in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 241 million malaria cases and 627,000 malaria deaths worldwide were reported in 2020 (WHO, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO 2021 report",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "c7b8662c-9202-4b6c-b368-3b95500a1c17",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C2",
+      "claim": "World malaria incidence declined by 27% during the first 15 years of this century.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas world malaria incidence has declined by 27% during the first 15 years of this century, in the last 4 years it declined by less than 2%, indicating that current interventions to control this deadly disease are waning (WHO, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO 2021 report",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "bac9d90f-236d-44c7-ba92-3ae28313fb53",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C3",
+      "claim": "In the last 4 years, malaria incidence declined by less than 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas world malaria incidence has declined by 27% during the first 15 years of this century, in the last 4 years it declined by less than 2%, indicating that current interventions to control this deadly disease are waning (WHO, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO 2021 report",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "99ab7c35-18f8-454b-91f9-7d306f920529",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C4",
+      "claim": "Current interventions to control malaria are waning.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas world malaria incidence has declined by 27% during the first 15 years of this century, in the last 4 years it declined by less than 2%, indicating that current interventions to control this deadly disease are waning (WHO, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the declining effectiveness of interventions as evidenced by reduced rate of malaria incidence decline, supported by WHO citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "a2e8fb4d-f943-43b6-a92e-b35476bc1d39",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C5",
+      "claim": "The mosquito is an obligatory vector for parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategy of targeting the mosquito to fight malaria is based on two premises: (1) the mosquito is an obligatory vector for parasite transmission and (2) strong bottlenecks limit parasite development in the mosquito and during transmission to the mammalian host (Smith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2014 and established scientific knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "c21f0b1b-33e8-429f-bd37-82b679a86b51",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C6",
+      "claim": "Strong bottlenecks limit parasite development in the mosquito and during transmission to the mammalian host.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategy of targeting the mosquito to fight malaria is based on two premises: (1) the mosquito is an obligatory vector for parasite transmission and (2) strong bottlenecks limit parasite development in the mosquito and during transmission to the mammalian host (Smith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "fd53e711-30d9-41fa-8389-d979eb5b8f32",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C7",
+      "claim": "Of the large number of gametocytes (~10\u00b3) ingested by the mosquito, only a few (single digits) ookinetes succeed in traversing the mosquito gut and differentiate into oocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the large number of gametocytes (~103) ingested by the mosquito, only a few (single digits) ookinetes succeed in traversing the mosquito gut and differentiate into oocysts, defining the first strong bottleneck (Wang and Jacobs-Lorena, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang and Jacobs-Lorena, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "521556d3-26f9-48d3-be67-dad65f1511b2",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C8",
+      "claim": "Only a small number of sporozoites (on the order of 1% of total salivary gland content) are delivered when an infected mosquito bites a new individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small number of these sporozoites (on the order of 1% of total salivary gland content) are delivered when an infected mosquito bites a new individual, defining a second strong bottleneck (Vanderberg, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vanderberg, 1977",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "07ecabcb-33ad-467d-bb5e-26d8cecab148",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C9",
+      "claim": "Mosquitoes can be engineered to be refractory to the parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the early demonstration that mosquitoes can be engineered to be refractory to the parasite (Ito et al., 2002), the effectiveness of this approach has been robustly demonstrated in the laboratory by simultaneous expression of multiple effector genes (genes that stop parasite development without affecting the mosquito vector) (Wang et al., 2012; Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ito et al., 2002; Wang et al., 2012; Dong et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "0787604d-2744-408b-a8d8-7ba8c92d65de",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C10",
+      "claim": "The effectiveness of engineering mosquitoes to be refractory to parasites has been robustly demonstrated in the laboratory by simultaneous expression of multiple effector genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the early demonstration that mosquitoes can be engineered to be refractory to the parasite (Ito et al., 2002), the effectiveness of this approach has been robustly demonstrated in the laboratory by simultaneous expression of multiple effector genes (genes that stop parasite development without affecting the mosquito vector) (Wang et al., 2012; Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2012; Dong et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "b12e6985-bc1a-40e7-b946-babf32441e7b",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C11",
+      "claim": "Effector genes are genes that stop parasite development without affecting the mosquito vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the early demonstration that mosquitoes can be engineered to be refractory to the parasite (Ito et al., 2002), the effectiveness of this approach has been robustly demonstrated in the laboratory by simultaneous expression of multiple effector genes (genes that stop parasite development without affecting the mosquito vector) (Wang et al., 2012; Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition provided in the text with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "4bf765ab-4aa5-4872-aa9e-5847a04eb778",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C12",
+      "claim": "Introduction of genes that confer refractoriness into mosquito populations will most likely be achieved by use of CRISPR/Cas9 gene drives.",
+      "claim_type": "EXPLICIT",
+      "source": "This will most likely be achieved by use of CRISPR/Cas9 gene drives (Carballar-Lejaraz\u00fa et al., 2020; Quinn and Nolan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carballar-Lejaraz\u00fa et al., 2020; Quinn and Nolan, 2020",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "1a352e10-daf7-477f-9788-aa1ed86ec586",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C13",
+      "claim": "Paratransgenesis has the advantage that the bacteria occur in the mosquito gut in large numbers, in close proximity to the most vulnerable parasite forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Paratransgenesis has the advantage that the bacteria occur in the mosquito gut in large numbers, in close proximity to the most vulnerable parasite forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about bacterial colonization and parasite development in mosquito gut",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "b6cae22f-c244-4d7b-aad3-a5a274e3b08e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C14",
+      "claim": "Paratransgenesis has been demonstrated to be effective in containing the spread of Trypanosoma cruzi by the Rhodnius prolixus vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the early demonstration of the effectiveness of paratransgenesis to contain the spread of Trypanosoma cruzi, the causative agent of Chagas disease, by the Rhodnius prolixus vector (Durvasula et al., 1997), this approach has been developed for suppressing the mosquito's ability to vector the malaria parasite (Wang et al., 2012; Yoshida et al., 1999; Shane et al., 2018; Riehle et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Durvasula et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "1ddbab61-e082-48b9-90aa-32e88a80a3d5",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C15",
+      "claim": "Paratransgenesis has been developed for suppressing the mosquito's ability to vector the malaria parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the early demonstration of the effectiveness of paratransgenesis to contain the spread of Trypanosoma cruzi, the causative agent of Chagas disease, by the Rhodnius prolixus vector (Durvasula et al., 1997), this approach has been developed for suppressing the mosquito's ability to vector the malaria parasite (Wang et al., 2012; Yoshida et al., 1999; Shane et al., 2018; Riehle et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2012; Yoshida et al., 1999; Shane et al., 2018; Riehle et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "2ebe7aab-9aa6-425c-bdc7-fb5d66e84908",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C16",
+      "claim": "The mosquito symbiont Serratia AS1 can spread through mosquito populations.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case for gene drive, the mosquito symbiont Serratia AS1 can spread through mosquito populations and be engineered to secrete effector proteins (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "c76ad9df-067d-4d04-ab93-a0819c3b2677",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C17",
+      "claim": "Serratia AS1 can be engineered to secrete effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case for gene drive, the mosquito symbiont Serratia AS1 can spread through mosquito populations and be engineered to secrete effector proteins (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5ca9edb5-9e9f-40a5-9496-c409ae765548",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C18",
+      "claim": "The Q-system was used to constitutively and robustly express antimalaria effector proteins in the midgut and salivary glands of An. stephensi mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "To constitutively and robustly express antimalaria effector proteins in the midgut and salivary glands of An. stephensi mosquitoes, we used the QF-QUAS binary expression system previously adapted for expression in Anopheles gambiae (Potter et al., 2010b; Riabinina et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Potter et al., 2010b; Riabinina et al., 2016 and described in methods",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "239d6e68-59b1-45ef-a657-2f66a2e34722",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C19",
+      "claim": "Two driver mosquito lines were constructed that express the QF transcription factor, one driven by the constitutive salivary gland-specific AAPP promoter and the other driven by the constitutive midgut-specific peritrophin 1 (Aper1) promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed two 'driver' mosquito lines that express the QF transcription factor, one driven by the constitutive salivary gland-specific anopheline antiplatelet protein (AAPP) promoter (Shen and Jacobs-Lorena, 1998) and the other driven by the constitutive midgut-specific peritrophin 1 (Aper1) promoter (Abraham et al., 2005; Yoshida and Watanabe, 2006; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Shen and Jacobs-Lorena, 1998; Abraham et al., 2005; Yoshida and Watanabe, 2006 and shown in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "21959284-cf67-495d-88f9-e90ed858a632",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C20",
+      "claim": "An effector mosquito line was constructed that encodes two parasite inhibiting factors (MP2 and scorpine) downstream of the QUAS promoter and driven by the QF transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "We also constructed a third 'effector' mosquito line that encodes two parasite inhibiting factors (MP2 and scorpine) downstream of the QUAS promoter and driven by the QF transcription factor (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in text and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "2ddd8dbe-86e2-47e3-b855-2e5e29f83415",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C21",
+      "claim": "The midgut peptide 2 (MP2) dodecapeptide binds tightly to the mosquito midgut epithelium and inhibits Plasmodium falciparum invasion with high efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The midgut peptide 2 (MP2) dodecapeptide, identified from a phage display screen, binds tightly to the mosquito midgut epithelium, and inhibits Plasmodium falciparum invasion with high efficiency (Vega-Rodr\u00edguez et al., 2014), whereas the scorpion (Pandinus imperator) peptide scorpine lyses malaria parasites without affecting mosquito fitness (Conde et al., 2000; Gao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vega-Rodr\u00edguez et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "8b7b04f1-1f06-4bbe-921c-3de87fb4be11",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C22",
+      "claim": "The scorpion peptide scorpine lyses malaria parasites without affecting mosquito fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The midgut peptide 2 (MP2) dodecapeptide, identified from a phage display screen, binds tightly to the mosquito midgut epithelium, and inhibits Plasmodium falciparum invasion with high efficiency (Vega-Rodr\u00edguez et al., 2014), whereas the scorpion (Pandinus imperator) peptide scorpine lyses malaria parasites without affecting mosquito fitness (Conde et al., 2000; Gao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Conde et al., 2000; Gao et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "fc5c098a-fda1-424b-8022-00e5767f3db3",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C23",
+      "claim": "Two midgut driver lines (Mg1 and Mg2), two salivary gland driver lines (Sg1 and Sg2), and two effector lines (E1 and E2) were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Two midgut driver lines (Mg1 and Mg2), two salivary gland driver lines (Sg1 and Sg2), and two effector lines (E1 and E2) were obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "23307c0f-315b-46a7-8cd8-a04489e2eaf1",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C24",
+      "claim": "All the parental lines, except for Sg2, have insertions in intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "All the parental lines, except for Sg2, have insertions in intergenic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on splinkerette PCR and sequencing data presented in Appendix 1\u2014table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "7a8c2313-4af4-4060-ae20-b029121e753a",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C25",
+      "claim": "Two of the three Sg2 insertions are in intergenic regions, and one in the open-reading frame of the gamma-glutamyltranspeptidase gene (ASTE010947).",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the three Sg2 insertions are in intergenic regions, and one in the open-reading frame of the gamma-glutamyltranspeptidase gene (ASTE010947).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on splinkerette PCR and sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "71094fb2-d52c-43bf-9e7e-f1c79fb0fc7e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C26",
+      "claim": "After the 10th generation, 100% of offspring from transgenic lines showed the same fluorescence as the parent females, consistent with all transgenic lines being homozygous.",
+      "claim_type": "EXPLICIT",
+      "source": "After the 10th generation, 20 transgenic female mosquitoes from each line were mated with wild-type (WT) males, and 100% the offspring showed the same fluorescence as the parent females, consistent with all transgenic lines being homozygous (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data presented in Appendix 1\u2014table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "b34fb8d9-f9bd-4f2f-9662-6b44db31d2f7",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C27",
+      "claim": "In the midgut, the scorpine transcript was between 44-fold and 56-fold higher than that of the endogenous Aper mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the midgut, the scorpine transcript was between 44- (p<0.01) and 56-fold (p<0.01) higher than that of the endogenous Aper mRNA and the MP2 transcript abundance was between 49- (p<0.001) and 36-fold (p<0.01) higher, depending on the transgenic line (Figure 1C, Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RT-qPCR data shown in Figure 1C and Appendix 1\u2014table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "02114c5a-dff6-4854-bd54-cbf1fab3929a",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C28",
+      "claim": "In the midgut, the MP2 transcript abundance was between 49-fold and 36-fold higher than that of the endogenous Aper mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the midgut, the scorpine transcript was between 44- (p<0.01) and 56-fold (p<0.01) higher than that of the endogenous Aper mRNA and the MP2 transcript abundance was between 49- (p<0.001) and 36-fold (p<0.01) higher, depending on the transgenic line (Figure 1C, Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RT-qPCR data shown in Figure 1C and Appendix 1\u2014table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "d0f82f06-d68b-414a-86ad-167905bacec0",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C29",
+      "claim": "In the salivary glands, scorpine transcript abundance varied between 27-fold and 63-fold higher than that of the endogenous AAPP mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the salivary glands, scorpine transcript abundance varied between 27- (p<0.05) and 63-fold (p<0.01) higher and MP2 transcript between 49- (p<0.001) and 140-fold (p<0.01) higher than that of the endogenous AAPP mRNA, depending on the transgenic line (Figure 1D, Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RT-qPCR data shown in Figure 1D and Appendix 1\u2014table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "6dd8d9fb-138c-4e52-bc6a-916a87e10bd6",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C30",
+      "claim": "In the salivary glands, MP2 transcript abundance varied between 49-fold and 140-fold higher than that of the endogenous AAPP mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the salivary glands, scorpine transcript abundance varied between 27- (p<0.05) and 63-fold (p<0.01) higher and MP2 transcript between 49- (p<0.001) and 140-fold (p<0.01) higher than that of the endogenous AAPP mRNA, depending on the transgenic line (Figure 1D, Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RT-qPCR data shown in Figure 1D and Appendix 1\u2014table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5f8b410b-0701-4f12-86d1-8fc72e7b11b7",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C31",
+      "claim": "In the absence of a driver, transgene expression in 'E' effector mosquitoes was undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the absence of a driver, transgene expression in 'E' effector mosquitoes (see Figure 1A) was undetectable (Appendix 1\u2014table 3 and Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RT-qPCR data presented in Appendix 1\u2014table 3 and Appendix 1\u2014table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "476b6d65-0fed-46ec-9b7b-bf23c0a41f61",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C32",
+      "claim": "Western blot analysis confirmed the tissue-specific expression of the MP2 (6.17 kDa) and scorpine (8.46 kDa) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis using anti-MP2 and anti-scorpine antibodies confirmed the tissue-specific expression of the MP2 (6.17 kDa) and scorpine (8.46 kDa) proteins (Figure 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Western blot data shown in Figure 1E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "00f79d3e-268e-4e3a-90bc-6bf0b90ef67a",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C33",
+      "claim": "No significant longevity differences were detected for any female or male transgenic mosquitoes compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant longevity differences were detected for any female (Appendix 1\u2014figure 2A) or male (Appendix 1\u2014figure 2B) transgenic mosquitoes compared to WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on survival data presented in Appendix 1\u2014figure 2A and 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "d4c6987c-61a7-4d04-8cc9-6e5228951de1",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C34",
+      "claim": "Mosquitoes from all parental and antimalaria-expressing transgenic lines showed no difference in fecundity when compared to wild-type mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquitoes from all parental and antimalaria-expressing transgenic lines showed no difference in fecundity when compared to WT mosquitoes (Appendix 1\u2014figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fecundity data presented in Appendix 1\u2014figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "120ec42a-c86d-463e-8cab-4baa56a43be5",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C35",
+      "claim": "No significant differences in fertility were detected for the Mg and Sg/E lines when compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "As for fertility, no significant differences were detected for the Mg and Sg/E lines when compared to WT, while only marginal differences were detected for the Sg, E, Mg/E, and Mg/Sg/E lines (2.0, 3.1, 2.0, and 2.0% reduction, respectively) (Appendix 1\u2014figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fertility data presented in Appendix 1\u2014figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5e389f4c-c9fb-49af-b917-f962ac270916",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C36",
+      "claim": "Only marginal differences in fertility were detected for the Sg, E, Mg/E, and Mg/Sg/E lines (2.0, 3.1, 2.0, and 2.0% reduction, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "As for fertility, no significant differences were detected for the Mg and Sg/E lines when compared to WT, while only marginal differences were detected for the Sg, E, Mg/E, and Mg/Sg/E lines (2.0, 3.1, 2.0, and 2.0% reduction, respectively) (Appendix 1\u2014figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fertility data presented in Appendix 1\u2014figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "c4a1c604-0c0f-42e4-a549-dd00143ae484",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C37",
+      "claim": "Neither transgenesis nor antimalaria gene expression affects blood ingestion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant differences (Appendix 1\u2014figure 2E and F), suggesting that neither transgenesis nor antimalaria gene expression affects blood ingestion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on blood feeding data presented in Appendix 1\u2014figure 2E and F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5f1ea7b3-af6f-4c77-bac6-c73a95b32884",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C38",
+      "claim": "There are no differences in lifespan, fertility, or fecundity among wild-type, transgenic, and (transgenic plus paratransgenic) mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "In further experiments, we found that there are no differences in lifespan, fertility, or fecundity among WT, transgenic, and (transgenic plus paratransgenic) mosquitoes (Appendix 1\u2014figure 3A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fitness data presented in Appendix 1\u2014figure 3A\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "e3ece15c-07a6-4add-b583-1294ece3b34a",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C39",
+      "claim": "Transgenesis, antimalaria gene expression in the midgut and/or salivary glands, and paratransgenesis do not impair mosquito survival, fecundity, fertility, and blood feeding under laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data show that transgenesis, antimalaria gene expression in the midgut and/or salivary glands, and paratransgenesis do not impair mosquito survival, fecundity, fertility (only minor differences), and blood feeding under laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of fitness data from multiple experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "275a0413-c392-44a5-8741-f1f4729594ec",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C40",
+      "claim": "Serratia AS1-multi equally populate wild-type and transgenic mosquito midguts, ovaries, and accessory glands.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Serratia AS1-multi equally populate WT and transgenic mosquito midguts, ovaries, and accessory glands and are transmitted for at least three generations (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on bacterial colonization data shown in Figure 2A\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "9bb7fb09-4177-4f03-aba7-9c21af06f9a1",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C41",
+      "claim": "Serratia AS1-multi are transmitted for at least three generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Serratia AS1-multi equally populate WT and transgenic mosquito midguts, ovaries, and accessory glands and are transmitted for at least three generations (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on vertical transmission data shown in Figure 2A\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "d35a4085-4f17-41f9-a291-7142694ea49b",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C42",
+      "claim": "Wild-type and transgenic male mosquitoes colonized with Serratia AS1-multi transferred the bacteria horizontally (sexually) to virgin wild-type and transgenic female mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that WT and transgenic male mosquitoes colonized with Serratia AS1-multi transferred the bacteria horizontally (sexually) to virgin WT and transgenic female mosquitoes (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on horizontal transmission data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "a1c5f656-4e0f-4e2f-a88b-ac511738f006",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C43",
+      "claim": "Horizontal transfer of Serratia did not take place when male mosquitoes were placed with mated females, showing that transfer occurs during copulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Horizontal transfer did not take place when male mosquitoes were placed with mated females, showing that transfer occurs during copulation (Appendix 1\u2014table 5; female mosquitoes mate only once in their lifetime).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data in Appendix 1\u2014table 5 and established knowledge about mosquito mating behavior",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "b3b41feb-065d-4e29-92a5-358803542c69",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C44",
+      "claim": "Recombinant Serratia AS1 can effectively populate transgenic mosquitoes and be transmitted through multiple generations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that recombinant Serratia AS1 can effectively populate transgenic mosquitoes and be transmitted through multiple generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the colonization and transmission data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "f4841f28-522e-41b3-8476-01e0f195df89",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C45",
+      "claim": "Mosquitoes cannot inoculate Serratia bacteria while feeding on a host.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments seeking evidence for possible bacteria transmission with a mosquito bite yielded negative results (Appendix 1\u2014figure 4), suggesting that mosquitoes cannot inoculate the bacteria while feeding on a host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data in Appendix 1\u2014figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "36c96a1e-a3f3-4949-b3da-bf3fe21f5295",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C46",
+      "claim": "Expression of effector molecules in the midgut or in the salivary glands of transgenic mosquitoes significantly reduced parasite burden.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, expression of effector molecules in the midgut or in the salivary glands of transgenic mosquitoes significantly reduced parasite burden, whereas concomitant effector expression in both organs reduced burden to the greatest extent (81.0 and 85.2% inhibition of mean oocyst and sporozoite numbers, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on parasite burden data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "782748de-3e61-49af-8e55-b867e7ab4462",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C47",
+      "claim": "Concomitant effector expression in both midgut and salivary glands reduced parasite burden to the greatest extent (81.0 and 85.2% inhibition of mean oocyst and sporozoite numbers, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, expression of effector molecules in the midgut or in the salivary glands of transgenic mosquitoes significantly reduced parasite burden, whereas concomitant effector expression in both organs reduced burden to the greatest extent (81.0 and 85.2% inhibition of mean oocyst and sporozoite numbers, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on parasite burden data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "44646605-24a9-4d55-a7fb-3f9b69e87e4e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C48",
+      "claim": "Effector-expressing recombinant bacteria significantly reduced parasite burden in wild-type mosquitoes (69.6 and 65.4% inhibition of oocyst and sporozoite numbers, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Effector-expressing recombinant bacteria also significantly reduced parasite burden in WT mosquitoes (69.6 and 65.4% inhibition of oocyst and sporozoite numbers, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on parasite burden data from paratransgenic experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "4501a7b1-c610-40b6-9aee-2b966f0c8f62",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C49",
+      "claim": "Wild-type bacteria also inhibited to some extent oocyst formation in wild-type mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "As found previously (Wang et al., 2017), WT bacteria also inhibited to some extent oocyst formation in WT mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2017 and data from current study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "bf716c5f-6184-4c51-83c4-d1df1f1e9b76",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C50",
+      "claim": "Combining mosquito transgenesis with paratransgenesis led to the strongest inhibition of parasite development.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, combining mosquito transgenesis with paratransgenesis led to the strongest inhibition of parasite development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative analysis of parasite burden data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "bf1b8a2f-b66a-49d4-b47d-6b2d6d842346",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C51",
+      "claim": "Oocyst prevalence was reduced from 98.0% to 49.0% for transgenic-only mosquitoes and to 47.8% when transgenesis and paratransgenesis were combined.",
+      "claim_type": "EXPLICIT",
+      "source": "Oocyst prevalence was reduced from 98.0% to 49.0% for transgenic-only mosquitoes and to 47.8% when transgenesis and paratransgenesis were combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on oocyst prevalence data from infection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "453c61e7-9908-49c3-9d7d-90ed25919519",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C52",
+      "claim": "Sporozoite prevalence was reduced from 97.4% to 42.4% for transgenic-only mosquitoes and to 24.1% when transgenesis and paratransgenesis were combined.",
+      "claim_type": "EXPLICIT",
+      "source": "Sporozoite prevalence was reduced from 97.4% to 42.4% for transgenic-only mosquitoes and to 24.1% when transgenesis and paratransgenesis were combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sporozoite prevalence data from infection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "78000c06-9a32-4c65-87d8-38626659072d",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C53",
+      "claim": "For all transgenic and paratransgenic combinations, ookinete formation was strongly inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "For all transgenic and paratransgenic combinations, ookinete formation was strongly inhibited, suggesting that the effector molecules affect the early parasite stages in the mosquito midgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ookinete formation data in Appendix 1\u2014figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5ea19383-ff14-49f2-8112-6b95146c581f",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C54",
+      "claim": "The effector molecules affect the early parasite stages in the mosquito midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "For all transgenic and paratransgenic combinations, ookinete formation was strongly inhibited, suggesting that the effector molecules affect the early parasite stages in the mosquito midgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from ookinete inhibition data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "f7f2f26d-3ab9-4bef-bdd9-64c5e88d807f",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C55",
+      "claim": "When mice were challenged with the bite of three wild-type mosquitoes, 100% became infected (half-infection time = 5.5 \u00b1 0.5 days).",
+      "claim_type": "EXPLICIT",
+      "source": "When mice were challenged with the bite of three WT mosquitoes (three independent experiments with five mice each), 100% became infected (half-infection time = 5.5 \u00b1 0.5 days) (Figure 4B) and their salivary glands had a median 8400 sporozoites (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on transmission data shown in Figure 4B and 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "159cd3df-a320-491b-b0ef-9d6e0342def2",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C56",
+      "claim": "With paratransgenic mosquitoes (three mosquito bites), 26.7% of the mice were not infected (half-infection time 7.1 \u00b1 0.7 days), and their salivary glands had a median of 2100 sporozoites (74% lower than wild-type mosquitoes).",
+      "claim_type": "EXPLICIT",
+      "source": "With mosquitoes carrying Serratia AS1-multi (paratransgenic), 26.7% of the mice were not infected (half-infection time 7.1 \u00b1 0.7 days), and their salivary glands had a median of 2100 sporozoites (74% lower than WT mosquitoes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from paratransgenic mosquito experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "75571367-9e00-4ca3-b0a9-5c10f16b5c8e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C57",
+      "claim": "With transgenic mosquitoes (three mosquito bites), 67% of the mice were not infected, and their salivary glands had a median of 900 sporozoites (92% lower than wild-type mosquitoes).",
+      "claim_type": "EXPLICIT",
+      "source": "With transgenic mosquitoes, 67% of the mice were not infected, and their salivary glands had a median of 900 sporozoites (92% lower than WT mosquitoes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from transgenic mosquito experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "e990994a-06fb-4aec-ab37-c311029e45a5",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C58",
+      "claim": "With (paratransgenic + transgenic) mosquitoes (three mosquito bites), 93% mice were not infected, and their salivary glands had a median of zero sporozoites (100% lower than wild-type mosquitoes).",
+      "claim_type": "EXPLICIT",
+      "source": "With (paratransgenic + transgenic) mosquitoes, 93% mice were not infected, and their salivary glands had a median of zero sporozoites (100% lower than WT mosquitoes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from combined transgenic and paratransgenic mosquito experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "dfc7fb97-a3e6-44fc-be42-9269614f48da",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C59",
+      "claim": "When mice were challenged with the bite of five wild-type mosquitoes, only 1 mouse out of 15 (6.7%) did not get infected (half-infection time = 5.6 \u00b1 0.7 days).",
+      "claim_type": "EXPLICIT",
+      "source": "When mice were challenged with the bite of five WT mosquitoes (Figure 4D and E), only 1 mouse out of 15 (6.7%) did not get infected (half-infection time = 5.6 \u00b1 0.7 days).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on transmission data shown in Figure 4D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "0d3cb135-14f9-491a-aaab-9e9ef4a5086f",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C60",
+      "claim": "With paratransgenesis (five mosquito bites), 26.7% of the mice were not infected (half-infection time = 8.3 \u00b1 1.0).",
+      "claim_type": "EXPLICIT",
+      "source": "With paratransgenesis, 26.7% of the mice were not infected (half-infection time = 8.3 \u00b1 1.0), with transgenesis 47% of the mice were not infected (half-infection time = 10.1 \u00b1 1.0 days) and with (paratransgenesis + transgenesis) 80% of the mice were not infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from five mosquito bite experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "d53cb5ba-aa2d-4994-8ea3-b04d2b31a211",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C61",
+      "claim": "With transgenesis (five mosquito bites), 47% of the mice were not infected (half-infection time = 10.1 \u00b1 1.0 days).",
+      "claim_type": "EXPLICIT",
+      "source": "With paratransgenesis, 26.7% of the mice were not infected (half-infection time = 8.3 \u00b1 1.0), with transgenesis 47% of the mice were not infected (half-infection time = 10.1 \u00b1 1.0 days) and with (paratransgenesis + transgenesis) 80% of the mice were not infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from five mosquito bite experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "09876352-7641-4ca1-977c-36b5d0ebd64d",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C62",
+      "claim": "With (paratransgenesis + transgenesis) (five mosquito bites), 80% of the mice were not infected.",
+      "claim_type": "EXPLICIT",
+      "source": "With paratransgenesis, 26.7% of the mice were not infected (half-infection time = 8.3 \u00b1 1.0), with transgenesis 47% of the mice were not infected (half-infection time = 10.1 \u00b1 1.0 days) and with (paratransgenesis + transgenesis) 80% of the mice were not infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from five mosquito bite experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "ac1a2f76-5847-4316-9962-d2806db2e66b",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C63",
+      "claim": "Transgenic and paratransgenic expression of effector molecules are both effective in impairing transmission, but the combination of the two strategies is considerably more effective.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data shows that transgenic and paratransgenic expression of effector molecules are both effective in impairing transmission, but that the combination of the two strategies is considerably more effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on transmission data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "e11ea0d6-49b7-4e25-abbe-a1909cfde326",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C64",
+      "claim": "Effector mRNA abundance was about 50 times higher than that of the endogenous genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, effector mRNA abundance was about 50 times higher than that of the endogenous genes, consistent with the high effectiveness of the Q-system in Drosophila (Potter et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RT-qPCR data and supported by citation to Potter et al., 2010b",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "9a20975d-5e6a-4589-932f-3a1d04d6dcda",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C65",
+      "claim": "Some QF toxicity was reported when the Q-system was first used in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Some QF toxicity was reported when the Q-system was first used in Drosophila (Potter et al., 2010b; Riabinina et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Potter et al., 2010b; Riabinina et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "343ecf2b-9a6d-4804-a976-330e75ef8485",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C66",
+      "claim": "Expression of neither the QF transcription factor nor the antimalaria effectors affected mosquito longevity, blood meal uptake, or offspring production under laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, expression of neither the QF transcription factor nor the antimalaria effectors affected mosquito longevity, blood meal uptake, or offspring production under laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fitness data from multiple experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "7faabcab-3a95-4dcc-aaed-0725f6cdabb4",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C67",
+      "claim": "MP2 is a 12-amino-acid peptide that likely targets a midgut receptor for ookinete traversal.",
+      "claim_type": "EXPLICIT",
+      "source": "MP2 is a 12-amino-acid peptide that likely targets a midgut receptor for ookinete traversal (Vega-Rodr\u00edguez et al., 2014), and scorpine is an antimicrobial toxin hybrid between a cecropin and a defensin that lyses Plasmodium ookinetes (Conde et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vega-Rodr\u00edguez et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "85cfd5f6-3896-46c2-8731-3bb468f42428",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C68",
+      "claim": "Scorpine is an antimicrobial toxin hybrid between a cecropin and a defensin that lyses Plasmodium ookinetes.",
+      "claim_type": "EXPLICIT",
+      "source": "MP2 is a 12-amino-acid peptide that likely targets a midgut receptor for ookinete traversal (Vega-Rodr\u00edguez et al., 2014), and scorpine is an antimicrobial toxin hybrid between a cecropin and a defensin that lyses Plasmodium ookinetes (Conde et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Conde et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "7584a3be-e148-4f2b-8afc-2d86f114f3ec",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C69",
+      "claim": "Scorpine expressed by the entomopathogenic fungus Metarhizium in the mosquito hemocoel strongly inhibits (~90%) salivary gland sporozoite numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Scorpine expressed by the entomopathogenic fungus Metarhizium in the mosquito hemocoel strongly inhibits (~90%) salivary gland sporozoite numbers (Fang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fang et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5d42ffd2-184d-4c63-8310-2f8453d9e416",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C70",
+      "claim": "Transgenic mosquitoes expressing scorpine in the salivary glands were highly effective in reducing sporozoite numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic mosquitoes expressing this effector in the salivary glands were also highly effective in reducing sporozoite numbers (this work).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "da67f42c-e3ae-40e7-99af-5d3848bdeab7",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C71",
+      "claim": "Expression of both effector genes in the midgut and the salivary glands led to a much stronger decrease of salivary gland sporozoite numbers than the expression of the effectors in either of these organs alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of both effector genes in the midgut and the salivary glands led to a much stronger decrease of salivary gland sporozoite numbers than the expression of the effectors in either of these organs alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative analysis of sporozoite data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "c656cad6-7ae3-493a-b1c0-47bfc876b879",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C72",
+      "claim": "Expression of antimalaria effectors in the salivary glands inhibited oocyst development in the midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "That expression of antimalaria effectors in the salivary glands inhibited oocyst development in the midgut (Sg/E; Figure 3A) is most likely explained by the fact that mosquitoes ingest saliva with the blood meal, in this way incorporating effector proteins into the blood bolus (Luo et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on oocyst data in Figure 3A and supported by citation to Luo et al., 2000",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "7a6a471a-6757-45e4-8f10-6ff67f73c803",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C73",
+      "claim": "Mosquitoes ingest saliva with the blood meal, incorporating effector proteins into the blood bolus.",
+      "claim_type": "EXPLICIT",
+      "source": "That expression of antimalaria effectors in the salivary glands inhibited oocyst development in the midgut (Sg/E; Figure 3A) is most likely explained by the fact that mosquitoes ingest saliva with the blood meal, in this way incorporating effector proteins into the blood bolus (Luo et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Luo et al., 2000",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "f1dc9a66-402e-4817-b68e-a9a32a99b1c6",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C74",
+      "claim": "Human PAI-1 expressed in salivary glands was ingested together with the saliva and inhibited oocyst formation.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar phenomenon was also observed in a recent report showing that human PAI-1 expressed in salivary glands was ingested together with the saliva and inhibited oocyst formation (Pascini et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pascini et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "7a268741-472f-4c65-81d8-8bdfa7ededb5",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C75",
+      "claim": "The multi-effector protein, in addition to the AAPP salivary gland protein, was present in the midguts of Sg/E mosquitoes that express the multi-effector protein only in the salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we confirmed the presence of the multi-effector protein, in addition to the AAPP salivary gland protein (control), in the midguts of Sg/E mosquitoes that express the multi-effector protein only in the salivary glands (Appendix 1\u2014figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Western blot data in Appendix 1\u2014figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "257ae82b-db7d-4efa-9001-cc03a0f5a1f2",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C76",
+      "claim": "Scorpine has been shown to be nontoxic to insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Scorpine has been shown to be nontoxic to insect cells (Carballar-Lejaraz\u00fa et al., 2008), whereas MP2 toxicity was not determined previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Carballar-Lejaraz\u00fa et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "0ec95313-ef71-497f-ae37-a10067e0835e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C77",
+      "claim": "MP2 toxicity was not determined previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Scorpine has been shown to be nontoxic to insect cells (Carballar-Lejaraz\u00fa et al., 2008), whereas MP2 toxicity was not determined previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about lack of prior data",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "de21809f-6d10-4285-904c-5f1624a6103b",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C78",
+      "claim": "Mosquitoes cannot inoculate Serratia bacteria while feeding on a host.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments seeking evidence for possible bacteria transmission with a mosquito bite yielded negative results (Appendix 1\u2014figure 4), suggesting that mosquitoes cannot inoculate the bacteria while feeding on a host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data in Appendix 1\u2014figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "be8a879a-eac3-4721-97e7-89c0f03379d2",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C79",
+      "claim": "Secretion of effector proteins by recombinant Pantoea, Serratia, or Asaia bacteria into the midgut inhibits Plasmodium development.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that secretion of effector proteins by recombinant Pantoea (Wang et al., 2012), Serratia (Wang et al., 2017), or Asaia (Shane et al., 2018) bacteria into the midgut inhibits Plasmodium development and that WT Serratia AS1 is transmitted from one mosquito generation to the next (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2012; Wang et al., 2017; Shane et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "f3450bb7-8195-4324-b576-f6020635931f",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C80",
+      "claim": "Wild-type Serratia AS1 is transmitted from one mosquito generation to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that secretion of effector proteins by recombinant Pantoea (Wang et al., 2012), Serratia (Wang et al., 2017), or Asaia (Shane et al., 2018) bacteria into the midgut inhibits Plasmodium development and that WT Serratia AS1 is transmitted from one mosquito generation to the next (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "e5727377-1700-401e-ae27-3571eb1e013d",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C81",
+      "claim": "The engineered Serratia were efficiently transmitted from one mosquito generation to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments showed that the engineered Serratia were efficiently transmitted from one mosquito generation to the next, a result that bodes well for the implementation of the paratransgenesis strategy in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on vertical transmission data from current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "6e7f2753-8532-449d-abd0-ac5db955cd93",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C82",
+      "claim": "The combination of transgenesis and paratransgenesis greatly reduced parasite development in the mosquito.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of transgenesis and paratransgenesis greatly reduced parasite development in the mosquito, and most importantly, it resulted in a high-level reduction of transmission from an infected to a na\u00efve mouse compared to the individual interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on parasite development and transmission data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "41d4df04-9e38-4332-af5e-50ef736f5e02",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C83",
+      "claim": "The combination of transgenesis and paratransgenesis resulted in a high-level reduction of transmission from an infected to a na\u00efve mouse compared to the individual interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of transgenesis and paratransgenesis greatly reduced parasite development in the mosquito, and most importantly, it resulted in a high-level reduction of transmission from an infected to a na\u00efve mouse compared to the individual interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from mouse challenge experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "75756837-7c26-4e8f-aaec-52070d3cbe30",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C84",
+      "claim": "When na\u00efve mice were bitten by three (transgenic + paratransgenic) mosquitoes, 93% of the mice (14 out of 15) did not develop an infection compared with 100% infection when mice were bitten by wild-type mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "When na\u00efve mice were bitten by three (transgenic + paratransgenic) mosquitoes, 93% of the mice (14 out of 15) did not develop an infection compared with 100% infection when mice were bitten by WT mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from three mosquito bite experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5e85990c-2770-48a8-932b-8e75e6bd2c98",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C85",
+      "claim": "In the field, where the density of infected mosquitoes is low even in high-transmission areas, it is unlikely that people will be consecutively bitten by more than one infected mosquito.",
+      "claim_type": "EXPLICIT",
+      "source": "In the field, where the density of infected mosquitoes is low even in high-transmission areas, it is unlikely that people will be consecutively bitten by more than one infected mosquito, and protection from transmission is expected to be very high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about mosquito density in field conditions",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "09d3569d-e6ae-46a8-8e73-9606cfb293de",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C86",
+      "claim": "Protection from transmission is expected to be very high in field conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the field, where the density of infected mosquitoes is low even in high-transmission areas, it is unlikely that people will be consecutively bitten by more than one infected mosquito, and protection from transmission is expected to be very high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on laboratory data and field conditions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5330e2bf-95d2-4e77-8e04-e99bf426aa09",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C87",
+      "claim": "CRISPR/Cas9 technology has afforded the development of promising gene drive systems focused on population suppression or population modification strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, CRISPR/Cas9 technology has afforded the development of promising gene drive systems focused on population suppression or population modification strategies (Scudellari, 2019; Nolan, 2021; Simoni et al., 2020; Adolfi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scudellari, 2019; Nolan, 2021; Simoni et al., 2020; Adolfi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "7a4a929c-82fd-4b96-ad76-5f4bbfca45ae",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C88",
+      "claim": "Population reduction leaves an empty biological niche that upon cessation of reduction pressure will result in recolonization by the same or other mosquito species.",
+      "claim_type": "EXPLICIT",
+      "source": "Population reduction leaves an empty biological niche that upon cessation of reduction pressure will result in recolonization by the same or other mosquito species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ecological principles and inference",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "0d99398a-a92f-4b48-92ef-d3e70555a91e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C89",
+      "claim": "Population modification results in a more stable state, with a biological niche occupied by mosquitoes that are poor transmitters.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, population modification results in a more stable state, with a biological niche occupied by mosquitoes that are poor transmitters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ecological principles and inference",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "4d9b018d-29be-4e44-b10c-5a7e2c9de4da",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C90",
+      "claim": "Efficient spread of recombinant bacteria into mosquito populations has been demonstrated in a laboratory setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, efficient spread of recombinant bacteria into mosquito populations has been demonstrated in a laboratory setting (reference Wang et al., 2017 and this work), indicating a promising path toward the field implementation of the most efficient (transgenesis + paratransgenesis) strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2017 and data from current study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "ba266586-7ec4-4901-849d-b48a4f0225a8",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C91",
+      "claim": "A naturally occurring and nonmodified Serratia can spread through mosquito populations while strongly suppressing Plasmodium development.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent finding that a naturally occurring and nonmodified Serratia can spread through mosquito populations while strongly suppressing Plasmodium development (Gao et al., 2021) significantly increases the feasibility of moving a paratransgenesis-like approach into the field as it bypasses concerns relating to the release of genetically modified organisms in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gao et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "b76bff38-0872-4de2-b0ba-ca41c37f31e2",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C92",
+      "claim": "Transgenesis and paratransgenesis are compatible with current vector and malaria control measures such as insecticide-based mosquito control, mass drug administration, and vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, transgenesis and paratransgenesis are not envisioned to be implemented by themselves. Both are compatible with current vector and malaria control measures such as insecticide-based mosquito control, mass drug administration, and vaccines, and their added implementation promises to substantially enhance the effectiveness of intervention of disease transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about compatibility of different intervention strategies",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "c13d50f0-779b-4e36-9b0f-53acd7d518a3",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C93",
+      "claim": "The Q-binary system to express anti-Plasmodium effectors in the mosquito is highly efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we show that the Q-binary system to express anti-Plasmodium effectors in the mosquito is highly efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "3280c0c3-c4d3-4149-b249-0a35544348e1",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C94",
+      "claim": "Recombinant Serratia AS1 is horizontally and vertically transmitted across multiple mosquito generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that in addition to inhibiting parasite development, recombinant Serratia AS1 is horizontally and vertically transmitted across multiple mosquito generations, which is a bacteria counterpart of gene drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "a0650e1e-7bde-44a9-98d6-96f952a82bc3",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C95",
+      "claim": "The combination of transgenesis with paratransgenesis provides maximum parasite blocking activity and has high potential for fighting malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "A major conclusion of this work is that the combination of transgenesis with paratransgenesis provides maximum parasite blocking activity and has high potential for fighting malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on all experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "90995c7f-bf57-4435-860a-b7a9bea38065",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C96",
+      "claim": "Both mosquito-based and bacteria-based approaches strongly reduced the oocyst and sporozoite intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas both mosquito-based and bacteria-based approaches strongly reduced the oocyst and sporozoite intensity, a substantially stronger reduction of Plasmodium falciparum development was achieved when transgenesis and paratransgenesis were combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on parasite burden data from P. falciparum experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "18ffb0bc-f725-4ac3-90e1-2f5f8718647c",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C97",
+      "claim": "A substantially stronger reduction of Plasmodium falciparum development was achieved when transgenesis and paratransgenesis were combined.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas both mosquito-based and bacteria-based approaches strongly reduced the oocyst and sporozoite intensity, a substantially stronger reduction of Plasmodium falciparum development was achieved when transgenesis and paratransgenesis were combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative parasite burden data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "ed33390b-b500-40fa-82c8-5aabcb6eea64",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C98",
+      "claim": "Transmission of Plasmodium berghei from infected to na\u00efve mice was maximally inhibited by the combination of transgenesis and paratransgenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, transmission of Plasmodium berghei from infected to na\u00efve mice was maximally inhibited by the combination of the two approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transmission data from P. berghei experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "1fa5771a-70b8-4bf8-bb75-5edee755b51b",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "claim_id": "C99",
+      "claim": "Combining transgenesis and paratransgenesis promises to become a powerful approach to combat malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining these two strategies promises to become a powerful approach to combat malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on experimental data and future potential",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8170ab49-9643-47ec-9f62-143a16368f03",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Transgenic mosquito lines were successfully generated using the Q-system with tissue-specific drivers for midgut (Aper1 promoter) and salivary glands (AAPP promoter), and an effector line expressing MP2 and scorpine. Multiple independent lines were obtained and characterized for transgene insertion sites, with all lines becoming homozygous after 10 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26 describe the construction and characterization of transgenic mosquito lines. The methodology is well-documented with appropriate molecular biology techniques (splinkerette PCR, sequencing), and homozygosity was confirmed through genetic crosses. The insertion site characterization (C24-C25) provides important genomic context, though one line (Sg2) has an insertion in a coding region which could affect interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "3d6618b4-5d19-4bb8-be82-a58faccab40c",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Q-system achieved highly efficient tissue-specific expression of effector genes, with transcript levels 36-140 fold higher than endogenous promoters in both midgut and salivary glands. Protein expression was confirmed by Western blot, and expression was undetectable without the driver component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 and C64 demonstrate robust transgene expression with appropriate controls. RT-qPCR data show statistically significant increases with p-values provided, and Western blots confirm protein production. The tight regulation (C31) validates the binary system design. However, the claim of ~50-fold increase (C64) appears to be a rounded average of the range reported in C27-C30.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Transgenic mosquitoes expressing effector genes showed no significant fitness costs under laboratory conditions, with no differences in longevity, fecundity, or blood feeding behavior. Only marginal differences in fertility (2-3% reduction) were detected in some lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 and C66 present comprehensive fitness assessments. The data show no significant effects on most parameters, with only minor fertility reductions in some lines. However, the caveat 'under laboratory conditions' is important - field fitness may differ. Sample sizes appear adequate (n=100 for survival, n=20 for fecundity), though statistical tests used are not always specified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Recombinant Serratia AS1-multi bacteria efficiently colonized both wild-type and transgenic mosquitoes, populating midguts, ovaries, and accessory glands. The bacteria were transmitted vertically for at least three generations and horizontally through mating, with transmission occurring specifically during copulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44, C81, and C94 demonstrate bacterial transmission capabilities. The data show equal colonization of WT and transgenic mosquitoes (Figure 2A-D), vertical transmission across three generations, and sexual transmission (Figure 2E). The control experiment with mated females (C43) strengthens the conclusion about copulation-mediated transfer. However, 'at least three generations' is limited - longer-term stability is unknown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "3ea0b918-9aaf-493f-9bce-edcb60dd6dd7",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mosquitoes do not transmit Serratia bacteria to hosts during blood feeding, as demonstrated by negative detection in blood collected after mosquito feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C78 (duplicates) address an important safety concern. The experimental approach using fluorescently labeled bacteria and culture-based detection is appropriate and sensitive. However, the methods describe only one experimental approach, and the sample size/number of replicates is not clearly stated. This is an important negative result but could benefit from additional validation methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Expression of effector molecules in transgenic mosquitoes or through paratransgenic bacteria significantly reduced P. falciparum parasite burden. Dual expression in both midgut and salivary glands achieved the greatest reduction (81% oocysts, 85.2% sporozoites). Combining transgenesis with paratransgenesis produced the strongest inhibition, reducing oocyst prevalence to 47.8% and sporozoite prevalence to 24.1%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52, C96-C97 present the core P. falciparum inhibition data (Figure 3). Statistical significance is demonstrated (Mann-Whitney test), and the additive/synergistic effect of combining approaches is clear. However, the manuscript notes that all mosquito groups fed on the same infectious blood, but doesn't provide the initial parasitemia level. The prevalence reductions are substantial but still leave ~25-48% of mosquitoes infected.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "41a61bf1-1e77-4977-8045-006a596ba577",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Effector molecules strongly inhibited ookinete formation in the mosquito midgut, suggesting they affect early parasite stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 provide mechanistic insight into the stage of parasite inhibition. The ookinete data (Appendix 1-figure 5) support early-stage effects. However, C54 is presented as a suggestion/inference rather than a definitive conclusion, which is appropriate given that multiple parasite stages could be affected. The claim would be stronger with quantitative data on ookinete inhibition levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "ed86af25-002d-4eab-9b5c-f88115be46b9",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In transmission experiments with three mosquito bites, 100% of mice were infected by wild-type mosquitoes, while transgenic mosquitoes protected 67% of mice, paratransgenic mosquitoes protected 26.7%, and the combination protected 93% of mice (14/15) from infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 and C84 present the key transmission-blocking data with three mosquitoes (Figure 4B-C). The experimental design is rigorous with all mosquito groups feeding on the same infected mouse. Sample size is adequate (15 mice per group across three experiments). The 93% protection with combined approach is impressive, though one mouse still became infected. Statistical analysis (log-rank test) is appropriate for survival data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "ddb18527-7e5e-4747-a604-87a0619329b3",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "With five mosquito bites, wild-type mosquitoes infected 93.3% of mice (14/15), while paratransgenic mosquitoes protected 26.7%, transgenic mosquitoes protected 47%, and the combination protected 80% of mice from infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 show dose-dependent effects with increased mosquito numbers (Figure 4D-E). As expected, protection decreases with more mosquito bites, but the combined approach still protects 80% of mice. This is more realistic for field conditions where multiple bites may occur. The data support the superiority of the combined approach across different challenge doses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "fde2246e-80ca-4237-ae55-75ac6a93e860",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The combination of transgenesis and paratransgenesis provides maximum parasite blocking activity, greatly reducing both parasite development in mosquitoes and transmission to na\u00efve mice compared to individual interventions. This combined approach has high potential for fighting malaria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C82-C83, C95, C98-C99 represent the main conclusions of the study. The data from both P. falciparum (parasite burden) and P. berghei (transmission) experiments consistently support the superiority of the combined approach. However, C99 includes speculative language ('promises to become') about future potential, which extends beyond the experimental data. The conclusion is well-supported for laboratory conditions but field effectiveness remains to be demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "eb7b072e-be97-44ea-bf43-b07b01664f39",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Expression of effector molecules in salivary glands inhibited oocyst development in the midgut, explained by mosquitoes ingesting saliva during blood feeding, thereby incorporating effector proteins into the blood bolus. This was confirmed by detecting effector proteins in midguts of mosquitoes expressing them only in salivary glands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 explain an unexpected observation with a plausible mechanism. The Western blot data (Appendix 1-figure 7) confirm protein presence in midguts of Sg/E mosquitoes. The mechanism is supported by prior literature (C73-C74). However, the quantitative contribution of this route versus direct midgut expression is not determined. This is an interesting mechanistic finding but doesn't change the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "21ea67dc-0787-44c5-84de-e1883252e738",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In field conditions where infected mosquito density is low, people are unlikely to be bitten consecutively by multiple infected mosquitoes, and protection from transmission is expected to be very high.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C86 extrapolate laboratory findings to field conditions. While C85 about mosquito density is based on established knowledge, C86 is speculative. The laboratory data show 93% protection with three bites and 80% with five bites, but field conditions involve many additional variables (mosquito fitness, environmental factors, parasite diversity, human behavior) not tested here. This extrapolation requires field validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "bbb15a1a-9d88-44f7-8760-b74de84fd619",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MP2 and scorpine are effective antimalarial effector molecules. MP2 binds mosquito midgut epithelium and inhibits P. falciparum invasion, while scorpine lyses Plasmodium parasites. Expression in both midgut and salivary glands produces stronger inhibition than expression in either organ alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22, C67-C71 describe the effector molecules and their mechanisms. Most information comes from prior literature (citations provided), with C70-C71 representing new data from this study. The synergistic effect of dual-organ expression (C71) is well-supported by the data. However, the specific mechanisms by which these peptides work in this system are not deeply investigated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "6dfcaeba-855d-474b-82b7-cd3e6da1c4a2",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Scorpine is nontoxic to insect cells, while MP2 toxicity to mosquitoes was not previously determined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 provide context about effector safety. C76 is supported by citation, while C77 acknowledges a knowledge gap. The fitness data (C33-C39) indirectly suggest MP2 is not highly toxic to mosquitoes, but direct toxicity testing was not performed. This is a minor limitation but doesn't undermine the main findings since no fitness costs were observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "dec0b123-2fa4-47f8-95b9-00940a7944ed",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Malaria remains a major global health burden with 241 million cases and 627,000 deaths in 2020. While incidence declined 27% in the first 15 years of this century, it declined less than 2% in the last 4 years, indicating current interventions are waning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide epidemiological context from WHO 2021 report. The statistics are properly cited, though C4 (interventions are waning) is an interpretation of the trend data. The slowing decline could have multiple explanations beyond intervention effectiveness (e.g., reaching harder-to-access populations, resistance, funding changes). This contextualizes the need for new approaches but the interpretation in C4 is somewhat simplified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "a5104964-55ac-426a-b40c-8a052637090d",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Targeting mosquitoes to fight malaria is based on mosquitoes being obligatory vectors and strong bottlenecks limiting parasite development. Only single-digit ookinetes succeed from ~1000 ingested gametocytes, and only ~1% of salivary gland sporozoites are transmitted per bite.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 establish the scientific rationale for mosquito-targeted interventions. All claims are supported by appropriate citations to established literature. These bottlenecks are well-documented phenomena in malaria biology. This provides solid justification for the approach but represents background knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "d85df06f-da35-4056-b969-b541164f964b",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mosquitoes can be engineered to be refractory to parasites through expression of effector genes, with effectiveness demonstrated in laboratory settings. Gene drives using CRISPR/Cas9 will most likely be used to introduce refractoriness genes into mosquito populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 review prior work on mosquito genetic modification. C9-C11 are well-supported by citations, while C12 is speculative ('will most likely'). Gene drives are indeed a leading approach but face technical, regulatory, and ethical challenges not discussed here. This provides important context but C12 overstates certainty about future implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "2c388cba-4a7c-415e-9e16-b9c7731871f2",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Paratransgenesis, where symbiotic bacteria are engineered to express effector molecules, has advantages due to high bacterial numbers in the mosquito gut near vulnerable parasite forms. This approach has been demonstrated for Chagas disease and developed for malaria, with Serratia AS1 capable of spreading through populations and secreting effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17, C79-C80 review paratransgenesis background. All claims are supported by appropriate citations. C13 states an advantage but doesn't provide comparative data. The prior work on Serratia transmission (C16-C17, C80) is important context for the current study. This establishes the foundation for the experimental work but represents literature review rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "23b742ab-6d7e-418e-84b3-590623ad0c72",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "While QF toxicity was reported in Drosophila, expression of neither QF nor antimalarial effectors affected mosquito fitness under laboratory conditions in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 address potential toxicity concerns. C65 cites prior Drosophila work, while C66 summarizes the fitness data from this study. The fitness assessments (C33-C39) support C66. However, the caveat 'under laboratory conditions' is crucial - field fitness may differ. The lack of toxicity is reassuring but doesn't guarantee field performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "ce21c154-1c6f-4b19-8d30-7b5473d4be4d",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 gene drives show promise for population suppression or modification strategies. Population modification is more stable than suppression. Recombinant bacteria spread has been demonstrated in laboratory settings. These approaches are compatible with existing malaria control measures and could enhance intervention effectiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C92 discuss implementation strategies and future directions. C87 and C91 cite relevant literature, while C88-C89 present ecological reasoning. C90 references this work and prior studies. However, C92 is largely speculative about compatibility and enhanced effectiveness without supporting data. The discussion of field implementation is important but extends well beyond the experimental evidence. Laboratory demonstration (C90) doesn't guarantee field success.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    },
+    {
+      "id": "5b9b80bc-9489-497a-a764-250240729631",
+      "content_id": "379fb5fc-7df5-49d0-9c18-5a141d905171",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The Q-binary system for expressing anti-Plasmodium effectors in mosquitoes is highly efficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is a summary conclusion supported by the expression data (C27-C32, C64). The 36-140 fold increase over endogenous promoters and tight regulation demonstrate efficiency. However, 'highly efficient' is somewhat subjective - comparison to other expression systems would strengthen this claim. The system worked well for this application but may not be optimal for all contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:43:22.956505Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ca9edb5-9e9f-40a5-9496-c409ae765548",
+      "result_id": "8170ab49-9643-47ec-9f62-143a16368f03"
+    },
+    {
+      "claim_id": "239d6e68-59b1-45ef-a657-2f66a2e34722",
+      "result_id": "8170ab49-9643-47ec-9f62-143a16368f03"
+    },
+    {
+      "claim_id": "21959284-cf67-495d-88f9-e90ed858a632",
+      "result_id": "8170ab49-9643-47ec-9f62-143a16368f03"
+    },
+    {
+      "claim_id": "fc5c098a-fda1-424b-8022-00e5767f3db3",
+      "result_id": "8170ab49-9643-47ec-9f62-143a16368f03"
+    },
+    {
+      "claim_id": "23307c0f-315b-46a7-8cd8-a04489e2eaf1",
+      "result_id": "8170ab49-9643-47ec-9f62-143a16368f03"
+    },
+    {
+      "claim_id": "7a8c2313-4af4-4060-ae20-b029121e753a",
+      "result_id": "8170ab49-9643-47ec-9f62-143a16368f03"
+    },
+    {
+      "claim_id": "71094fb2-d52c-43bf-9e7e-f1c79fb0fc7e",
+      "result_id": "8170ab49-9643-47ec-9f62-143a16368f03"
+    },
+    {
+      "claim_id": "b34fb8d9-f9bd-4f2f-9662-6b44db31d2f7",
+      "result_id": "3d6618b4-5d19-4bb8-be82-a58faccab40c"
+    },
+    {
+      "claim_id": "02114c5a-dff6-4854-bd54-cbf1fab3929a",
+      "result_id": "3d6618b4-5d19-4bb8-be82-a58faccab40c"
+    },
+    {
+      "claim_id": "d0f82f06-d68b-414a-86ad-167905bacec0",
+      "result_id": "3d6618b4-5d19-4bb8-be82-a58faccab40c"
+    },
+    {
+      "claim_id": "6dd8d9fb-138c-4e52-bc6a-916a87e10bd6",
+      "result_id": "3d6618b4-5d19-4bb8-be82-a58faccab40c"
+    },
+    {
+      "claim_id": "5f8b410b-0701-4f12-86d1-8fc72e7b11b7",
+      "result_id": "3d6618b4-5d19-4bb8-be82-a58faccab40c"
+    },
+    {
+      "claim_id": "476b6d65-0fed-46ec-9b7b-bf23c0a41f61",
+      "result_id": "3d6618b4-5d19-4bb8-be82-a58faccab40c"
+    },
+    {
+      "claim_id": "e11ea0d6-49b7-4e25-abbe-a1909cfde326",
+      "result_id": "3d6618b4-5d19-4bb8-be82-a58faccab40c"
+    },
+    {
+      "claim_id": "00f79d3e-268e-4e3a-90bc-6bf0b90ef67a",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "d4c6987c-61a7-4d04-8cc9-6e5228951de1",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "120ec42a-c86d-463e-8cab-4baa56a43be5",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "5e389f4c-c9fb-49af-b917-f962ac270916",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "c4a1c604-0c0f-42e4-a549-dd00143ae484",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "5f1ea7b3-af6f-4c77-bac6-c73a95b32884",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "e3ece15c-07a6-4add-b583-1294ece3b34a",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "343ecf2b-9a6d-4804-a976-330e75ef8485",
+      "result_id": "6ba9d5d1-6d32-49c7-9555-c7ac6da97ab3"
+    },
+    {
+      "claim_id": "275a0413-c392-44a5-8741-f1f4729594ec",
+      "result_id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578"
+    },
+    {
+      "claim_id": "9bb7fb09-4177-4f03-aba7-9c21af06f9a1",
+      "result_id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578"
+    },
+    {
+      "claim_id": "d35a4085-4f17-41f9-a291-7142694ea49b",
+      "result_id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578"
+    },
+    {
+      "claim_id": "a1c5f656-4e0f-4e2f-a88b-ac511738f006",
+      "result_id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578"
+    },
+    {
+      "claim_id": "b3b41feb-065d-4e29-92a5-358803542c69",
+      "result_id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578"
+    },
+    {
+      "claim_id": "e5727377-1700-401e-ae27-3571eb1e013d",
+      "result_id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578"
+    },
+    {
+      "claim_id": "3280c0c3-c4d3-4149-b249-0a35544348e1",
+      "result_id": "7838cc42-f81e-4da2-a0b8-1fdc09ff5578"
+    },
+    {
+      "claim_id": "f4841f28-522e-41b3-8476-01e0f195df89",
+      "result_id": "3ea0b918-9aaf-493f-9bce-edcb60dd6dd7"
+    },
+    {
+      "claim_id": "de21809f-6d10-4285-904c-5f1624a6103b",
+      "result_id": "3ea0b918-9aaf-493f-9bce-edcb60dd6dd7"
+    },
+    {
+      "claim_id": "36c96a1e-a3f3-4949-b3da-bf3fe21f5295",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "782748de-3e61-49af-8e55-b867e7ab4462",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "44646605-24a9-4d55-a7fb-3f9b69e87e4e",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "4501a7b1-c610-40b6-9aee-2b966f0c8f62",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "bf716c5f-6184-4c51-83c4-d1df1f1e9b76",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "bf1b8a2f-b66a-49d4-b47d-6b2d6d842346",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "453c61e7-9908-49c3-9d7d-90ed25919519",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "90995c7f-bf57-4435-860a-b7a9bea38065",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "18ffb0bc-f725-4ac3-90e1-2f5f8718647c",
+      "result_id": "ab3a7bd2-6f64-4be4-99ec-f86f38e65e8e"
+    },
+    {
+      "claim_id": "78000c06-9a32-4c65-87d8-38626659072d",
+      "result_id": "41a61bf1-1e77-4977-8045-006a596ba577"
+    },
+    {
+      "claim_id": "5ea19383-ff14-49f2-8112-6b95146c581f",
+      "result_id": "41a61bf1-1e77-4977-8045-006a596ba577"
+    },
+    {
+      "claim_id": "f7f2f26d-3ab9-4bef-bdd9-64c5e88d807f",
+      "result_id": "ed86af25-002d-4eab-9b5c-f88115be46b9"
+    },
+    {
+      "claim_id": "159cd3df-a320-491b-b0ef-9d6e0342def2",
+      "result_id": "ed86af25-002d-4eab-9b5c-f88115be46b9"
+    },
+    {
+      "claim_id": "75571367-9e00-4ca3-b0a9-5c10f16b5c8e",
+      "result_id": "ed86af25-002d-4eab-9b5c-f88115be46b9"
+    },
+    {
+      "claim_id": "e990994a-06fb-4aec-ab37-c311029e45a5",
+      "result_id": "ed86af25-002d-4eab-9b5c-f88115be46b9"
+    },
+    {
+      "claim_id": "75756837-7c26-4e8f-aaec-52070d3cbe30",
+      "result_id": "ed86af25-002d-4eab-9b5c-f88115be46b9"
+    },
+    {
+      "claim_id": "dfc7fb97-a3e6-44fc-be42-9269614f48da",
+      "result_id": "ddb18527-7e5e-4747-a604-87a0619329b3"
+    },
+    {
+      "claim_id": "0d3cb135-14f9-491a-aaab-9e9ef4a5086f",
+      "result_id": "ddb18527-7e5e-4747-a604-87a0619329b3"
+    },
+    {
+      "claim_id": "d53cb5ba-aa2d-4994-8ea3-b04d2b31a211",
+      "result_id": "ddb18527-7e5e-4747-a604-87a0619329b3"
+    },
+    {
+      "claim_id": "09876352-7641-4ca1-977c-36b5d0ebd64d",
+      "result_id": "ddb18527-7e5e-4747-a604-87a0619329b3"
+    },
+    {
+      "claim_id": "ac1a2f76-5847-4316-9962-d2806db2e66b",
+      "result_id": "fde2246e-80ca-4237-ae55-75ac6a93e860"
+    },
+    {
+      "claim_id": "6e7f2753-8532-449d-abd0-ac5db955cd93",
+      "result_id": "fde2246e-80ca-4237-ae55-75ac6a93e860"
+    },
+    {
+      "claim_id": "41d4df04-9e38-4332-af5e-50ef736f5e02",
+      "result_id": "fde2246e-80ca-4237-ae55-75ac6a93e860"
+    },
+    {
+      "claim_id": "a0650e1e-7bde-44a9-98d6-96f952a82bc3",
+      "result_id": "fde2246e-80ca-4237-ae55-75ac6a93e860"
+    },
+    {
+      "claim_id": "ed33390b-b500-40fa-82c8-5aabcb6eea64",
+      "result_id": "fde2246e-80ca-4237-ae55-75ac6a93e860"
+    },
+    {
+      "claim_id": "1fa5771a-70b8-4bf8-bb75-5edee755b51b",
+      "result_id": "fde2246e-80ca-4237-ae55-75ac6a93e860"
+    },
+    {
+      "claim_id": "c656cad6-7ae3-493a-b1c0-47bfc876b879",
+      "result_id": "eb7b072e-be97-44ea-bf43-b07b01664f39"
+    },
+    {
+      "claim_id": "7a6a471a-6757-45e4-8f10-6ff67f73c803",
+      "result_id": "eb7b072e-be97-44ea-bf43-b07b01664f39"
+    },
+    {
+      "claim_id": "f1dc9a66-402e-4817-b68e-a9a32a99b1c6",
+      "result_id": "eb7b072e-be97-44ea-bf43-b07b01664f39"
+    },
+    {
+      "claim_id": "7a268741-472f-4c65-81d8-8bdfa7ededb5",
+      "result_id": "eb7b072e-be97-44ea-bf43-b07b01664f39"
+    },
+    {
+      "claim_id": "5e85990c-2770-48a8-932b-8e75e6bd2c98",
+      "result_id": "21ea67dc-0787-44c5-84de-e1883252e738"
+    },
+    {
+      "claim_id": "09d3569d-e6ae-46a8-8e73-9606cfb293de",
+      "result_id": "21ea67dc-0787-44c5-84de-e1883252e738"
+    },
+    {
+      "claim_id": "2ddd8dbe-86e2-47e3-b855-2e5e29f83415",
+      "result_id": "bbb15a1a-9d88-44f7-8760-b74de84fd619"
+    },
+    {
+      "claim_id": "8b7b04f1-1f06-4bbe-921c-3de87fb4be11",
+      "result_id": "bbb15a1a-9d88-44f7-8760-b74de84fd619"
+    },
+    {
+      "claim_id": "7faabcab-3a95-4dcc-aaed-0725f6cdabb4",
+      "result_id": "bbb15a1a-9d88-44f7-8760-b74de84fd619"
+    },
+    {
+      "claim_id": "85cfd5f6-3896-46c2-8731-3bb468f42428",
+      "result_id": "bbb15a1a-9d88-44f7-8760-b74de84fd619"
+    },
+    {
+      "claim_id": "7584a3be-e148-4f2b-8afc-2d86f114f3ec",
+      "result_id": "bbb15a1a-9d88-44f7-8760-b74de84fd619"
+    },
+    {
+      "claim_id": "5d42ffd2-184d-4c63-8310-2f8453d9e416",
+      "result_id": "bbb15a1a-9d88-44f7-8760-b74de84fd619"
+    },
+    {
+      "claim_id": "da67f42c-e3ae-40e7-99af-5d3848bdeab7",
+      "result_id": "bbb15a1a-9d88-44f7-8760-b74de84fd619"
+    },
+    {
+      "claim_id": "257ae82b-db7d-4efa-9001-cc03a0f5a1f2",
+      "result_id": "6dfcaeba-855d-474b-82b7-cd3e6da1c4a2"
+    },
+    {
+      "claim_id": "0ec95313-ef71-497f-ae37-a10067e0835e",
+      "result_id": "6dfcaeba-855d-474b-82b7-cd3e6da1c4a2"
+    },
+    {
+      "claim_id": "10d0f0fb-9109-4c2c-ab7a-af479601c30e",
+      "result_id": "dec0b123-2fa4-47f8-95b9-00940a7944ed"
+    },
+    {
+      "claim_id": "c7b8662c-9202-4b6c-b368-3b95500a1c17",
+      "result_id": "dec0b123-2fa4-47f8-95b9-00940a7944ed"
+    },
+    {
+      "claim_id": "bac9d90f-236d-44c7-ba92-3ae28313fb53",
+      "result_id": "dec0b123-2fa4-47f8-95b9-00940a7944ed"
+    },
+    {
+      "claim_id": "99ab7c35-18f8-454b-91f9-7d306f920529",
+      "result_id": "dec0b123-2fa4-47f8-95b9-00940a7944ed"
+    },
+    {
+      "claim_id": "a2e8fb4d-f943-43b6-a92e-b35476bc1d39",
+      "result_id": "a5104964-55ac-426a-b40c-8a052637090d"
+    },
+    {
+      "claim_id": "c21f0b1b-33e8-429f-bd37-82b679a86b51",
+      "result_id": "a5104964-55ac-426a-b40c-8a052637090d"
+    },
+    {
+      "claim_id": "fd53e711-30d9-41fa-8389-d979eb5b8f32",
+      "result_id": "a5104964-55ac-426a-b40c-8a052637090d"
+    },
+    {
+      "claim_id": "521556d3-26f9-48d3-be67-dad65f1511b2",
+      "result_id": "a5104964-55ac-426a-b40c-8a052637090d"
+    },
+    {
+      "claim_id": "07ecabcb-33ad-467d-bb5e-26d8cecab148",
+      "result_id": "d85df06f-da35-4056-b969-b541164f964b"
+    },
+    {
+      "claim_id": "0787604d-2744-408b-a8d8-7ba8c92d65de",
+      "result_id": "d85df06f-da35-4056-b969-b541164f964b"
+    },
+    {
+      "claim_id": "b12e6985-bc1a-40e7-b946-babf32441e7b",
+      "result_id": "d85df06f-da35-4056-b969-b541164f964b"
+    },
+    {
+      "claim_id": "4bf765ab-4aa5-4872-aa9e-5847a04eb778",
+      "result_id": "d85df06f-da35-4056-b969-b541164f964b"
+    },
+    {
+      "claim_id": "1a352e10-daf7-477f-9788-aa1ed86ec586",
+      "result_id": "2c388cba-4a7c-415e-9e16-b9c7731871f2"
+    },
+    {
+      "claim_id": "b6cae22f-c244-4d7b-aad3-a5a274e3b08e",
+      "result_id": "2c388cba-4a7c-415e-9e16-b9c7731871f2"
+    },
+    {
+      "claim_id": "1ddbab61-e082-48b9-90aa-32e88a80a3d5",
+      "result_id": "2c388cba-4a7c-415e-9e16-b9c7731871f2"
+    },
+    {
+      "claim_id": "2ebe7aab-9aa6-425c-bdc7-fb5d66e84908",
+      "result_id": "2c388cba-4a7c-415e-9e16-b9c7731871f2"
+    },
+    {
+      "claim_id": "c76ad9df-067d-4d04-ab93-a0819c3b2677",
+      "result_id": "2c388cba-4a7c-415e-9e16-b9c7731871f2"
+    },
+    {
+      "claim_id": "be8a879a-eac3-4721-97e7-89c0f03379d2",
+      "result_id": "2c388cba-4a7c-415e-9e16-b9c7731871f2"
+    },
+    {
+      "claim_id": "f3450bb7-8195-4324-b576-f6020635931f",
+      "result_id": "2c388cba-4a7c-415e-9e16-b9c7731871f2"
+    },
+    {
+      "claim_id": "9a20975d-5e6a-4589-932f-3a1d04d6dcda",
+      "result_id": "23b742ab-6d7e-418e-84b3-590623ad0c72"
+    },
+    {
+      "claim_id": "343ecf2b-9a6d-4804-a976-330e75ef8485",
+      "result_id": "23b742ab-6d7e-418e-84b3-590623ad0c72"
+    },
+    {
+      "claim_id": "5330e2bf-95d2-4e77-8e04-e99bf426aa09",
+      "result_id": "ce21c154-1c6f-4b19-8d30-7b5473d4be4d"
+    },
+    {
+      "claim_id": "7a4a929c-82fd-4b96-ad76-5f4bbfca45ae",
+      "result_id": "ce21c154-1c6f-4b19-8d30-7b5473d4be4d"
+    },
+    {
+      "claim_id": "0d99398a-a92f-4b48-92ef-d3e70555a91e",
+      "result_id": "ce21c154-1c6f-4b19-8d30-7b5473d4be4d"
+    },
+    {
+      "claim_id": "4d9b018d-29be-4e44-b10c-5a7e2c9de4da",
+      "result_id": "ce21c154-1c6f-4b19-8d30-7b5473d4be4d"
+    },
+    {
+      "claim_id": "ba266586-7ec4-4901-849d-b48a4f0225a8",
+      "result_id": "ce21c154-1c6f-4b19-8d30-7b5473d4be4d"
+    },
+    {
+      "claim_id": "b76bff38-0872-4de2-b0ba-ca41c37f31e2",
+      "result_id": "ce21c154-1c6f-4b19-8d30-7b5473d4be4d"
+    },
+    {
+      "claim_id": "c13d50f0-779b-4e36-9b0f-53acd7d518a3",
+      "result_id": "5b9b80bc-9489-497a-a764-250240729631"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript provides background on EGFR/RON crosstalk from prior literature, establishing that RTK crosstalk drives oncogenesis, that EGFR and RON co-expression correlates with poor patient outcomes, and that the structural differences between EGFR and RON make traditional dimerization models difficult to apply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C27 are all supported by citations to prior literature (CITATION evidence type) and represent established knowledge in the field. These background claims appropriately contextualize the study and are well-documented in the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors generated two cell line models: A431RON cells with high EGFR (~2.2 million) and modest RON (~92,000) at a 24:1 ratio, and HEKRON/EGFR cells with balanced expression at a 2:1 ratio (~600,000 EGFR; ~275,000 RON).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 describe the cell line models and receptor quantification. The receptor numbers are supported by flow cytometry data (C32, C34, C35), and the rationale for using these cell lines is clearly stated. The quantification methods appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C106"
+    ],
+    "result": "EGFR/RON crosstalk is unidirectional: EGF stimulation promotes EGFR-dependent phosphorylation of RON (detectable at doses as low as 2 nM), but MSP stimulation of RON does not trigger EGFR phosphorylation at any dose tested (2-50 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C36-C41, C43, and C106 are well-supported by western blot data in Figure 1 and supplements showing dose-dependent RON phosphorylation with EGF but no EGFR phosphorylation with MSP across multiple phosphorylation sites. The unidirectionality conclusion is strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Combining EGF and MSP leads to synergistic enhancement in RON phosphorylation beyond the additive effects of either ligand alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by western blot data in Figure 1D showing enhanced RON phosphorylation with dual ligand treatment. The synergistic effect is clearly demonstrated, though the mechanism underlying this synergy is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "EGFR was detected in RON immunoprecipitates in both resting and stimulated cells, but co-IP was not always evident and did not increase with ligand stimulation, suggesting weak interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by co-IP data (Figure 1\u2014figure supplement 1) and mass spectrometry. The authors appropriately note the variability and weakness of the interaction, and acknowledge differences from prior studies in timing of experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "EGF-induced EGFR and RON phosphorylation kinetics are closely aligned (both peaking by 1-2 min), while MSP-induced RON phosphorylation is slower (peaking at 2 min or later), leading to the hypothesis that RON is a substrate for EGF-activated EGFR kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by time course data in Figure 1E. The kinetics data are clear and support the hypothesis, though C52 is appropriately labeled as speculation about ligand affinity differences. The inference in C53 is reasonable given the aligned kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C6"
+    ],
+    "result": "RON and EGFR co-localize on the plasma membrane and co-cluster in membrane microdomains in both resting and EGF-stimulated cells, suggesting pre-existing protein complexes contribute to crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 and C6 are supported by confocal microscopy (Figure 2A) and TEM with Ripley's K statistical analysis (Figure 2B). The co-clustering is statistically significant and maintained after EGF treatment. The inference about pre-existing complexes (C59) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C68"
+    ],
+    "result": "RON mobility decreases upon both MSP and EGF stimulation, and the EGF-induced mobility change is prevented by EGFR kinase inhibitor (PD153035), demonstrating that EGFR-mediated RON activation is dependent on EGFR kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C68 are supported by single particle tracking data in Figure 3A-B. The mobility changes are statistically significant and the inhibitor control appropriately demonstrates EGFR kinase dependence. The methodology is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "EGF-bound EGFR is rapidly endocytosed and co-localizes with early endosomes (EEA1), but RON is not readily found in early endosomes and co-endocytosis is rare, supporting that EGFR-mediated RON activation occurs at the plasma membrane rather than in endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by confocal microscopy (Figure 3C-D) with quantification (Figure 3\u2014figure supplement 2) and TEM (Figure 3E). The differential endocytosis is clearly demonstrated and the inference about plasma membrane localization of crosstalk is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C110",
+      "C111"
+    ],
+    "result": "Two-color single particle tracking directly captured formation of complexes between RON and EGF-bound EGFR with correlated motion, providing direct evidence of hetero-interactions on live cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C69-C72, C110-C111 are supported by two-color SPT data in Figure 4 with correlated motion analysis. This is a technically sophisticated approach that provides direct evidence of receptor interactions. The methodology is appropriate and the analysis is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "RON forms ligand-independent homodimers with an off-rate of 0.18 \u00b1 0.02 s\u207b\u00b9 (average lifetime ~5.5 s), consistent with prior structural studies and evidence of ligand-independent RON activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by two-color SPT data analyzed with hidden Markov modeling. The kinetic parameters are quantified with appropriate error estimates. The conclusion is consistent with cited structural and functional studies (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "EGFR/RON hetero-interactions have an off-rate of 0.49 \u00b1 0.05 s\u207b\u00b9 (average lifetime ~2 s), and this transient interaction is consistent with EGFR phosphorylating RON without subsequent co-endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by two-color SPT data with HMM analysis. The shorter lifetime compared to RON homodimers is consistent with the endocytosis data (C64-C66). The integration of kinetics and localization data strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Afatinib (pan-ErbB inhibitor) completely blocks EGF-dependent phosphorylation of both EGFR and RON but not MSP-dependent RON phosphorylation, while BMS777607 (RON/Met inhibitor) blocks MSP-dependent RON phosphorylation but only partially blocks EGF-dependent RON phosphorylation, indicating both EGFR and RON kinase activity contribute to EGF-mediated RON phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by western blot data in Figure 5A-B with appropriate statistical analysis. The differential inhibitor effects clearly demonstrate the contributions of both kinases. The experimental design with complementary inhibitors is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The kinase-dead RON mutant (RON-K1114M) is phosphorylated by EGF in an afatinib-sensitive manner and undergoes mobility changes with EGF stimulation, and BMS777607 does not reduce this phosphorylation, ruling out Met involvement in EGFR/RON crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by western blot data (Figure 5\u2014figure supplement 1) and SPT data (Figure 5\u2014figure supplement 2). The kinase-dead mutant is an appropriate control that demonstrates EGFR can phosphorylate RON independently of RON's own kinase activity and rules out Met as an intermediary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Dasatinib treatment did not alter EGF-induced RON phosphorylation, demonstrating that EGFR/RON crosstalk does not depend on Src kinase activity and likely reflects direct action of EGFR kinase on RON.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by western blot data in Figure 6A with appropriate Src inhibition controls (Figure 6\u2014figure supplement 1). The conclusion that crosstalk is independent of Src is well-supported, ruling out an important alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "EGFR-\u0394998 (lacking the C-terminal tail) shows enhanced RON phosphorylation compared to wild-type EGFR, demonstrating that recruitment of downstream signaling molecules to the EGFR tail is not required for crosstalk, though the tail or its binding partners appear to limit RON phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C94, and C97 are supported by western blot data in Figure 6B. The enhanced phosphorylation with the truncation mutant is unexpected but clearly demonstrated. C93 is appropriately labeled as speculation. The conclusion that downstream signaling molecules are not required is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "RON dephosphorylation kinetics are similar for full-length and truncated EGFR, with phosphorylation lost after 20 s of afatinib treatment in both cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by afatinib chase experiments in Figure 6\u2014figure supplement 2. This control experiment appropriately rules out differential phosphatase recruitment as an explanation for the enhanced phosphorylation with EGFR-\u0394998.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C98",
+      "C99"
+    ],
+    "result": "RON is a direct substrate for EGFR kinase, as demonstrated by in vitro kinase assays showing EGFR kinase domain directly phosphorylates kinase-dead RON in an ATP-dependent and EGFR concentration-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C98-C99 are supported by in vitro kinase assay data in Figure 6C. The use of purified EGFR kinase domain and kinase-dead RON is appropriate, and the ATP-dependence and concentration-dependence controls are rigorous. This is direct biochemical evidence of RON as an EGFR substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C121",
+      "C122"
+    ],
+    "result": "RON cannot substitute as activator or receiver in EGFR asymmetric dimers: neither EGFR-I682Q (receiver-impaired) nor EGFR-V924R (activator-impaired) can phosphorylate RON, but co-expressing both mutants to restore functional EGFR dimers rescues RON phosphorylation, demonstrating that formation of a signaling-competent EGFR homodimer is required before RON phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C100-C104, C121-C122 are supported by western blot data in Figure 7 using well-characterized EGFR dimer mutants. The experimental design is rigorous and the conclusion that EGFR must first form an active homodimer is well-supported. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C118"
+    ],
+    "result": "Crosstalk between EGFR and RON occurs through direct receptor-receptor interactions, where EGFR transactivates RON within hetero-complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C118 represent the main conclusion of the study, supported by multiple converging lines of evidence: co-clustering (C56-C58), two-color tracking (C7, C69-C72), kinase assays (C99), and inhibitor studies (C78-C91). The conclusion is well-supported by the comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "EGFR can stimulate RON signaling in the absence of MSP and even when RON kinase activity is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by the RON-K1114M experiments (C85-C87) showing EGF-induced phosphorylation and mobility changes of kinase-dead RON. This demonstrates EGFR can activate RON independently of both MSP and RON's own kinase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The hetero-complex likely consists of a RON dimer interacting with either a ligand-bound EGFR dimer or an activated EGFR monomer that has recently dissociated from a homodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 are postulated based on RON homo-interaction data (C73-C74) and EGFR dimer mutant experiments (C100-C104). While the reasoning is logical, the exact stoichiometry and structure of the hetero-complex are not directly demonstrated. C124 is appropriately labeled as speculation. Further structural studies would be needed to definitively establish the complex composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Previous reports of bidirectional EGFR/RON transactivation may be explained by cross-reactivity of commercially available phospho-RON antibodies with phospho-EGFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by antibody cross-reactivity data in Figure 1\u2014figure supplement 4. This is an important technical observation that explains discrepancies with prior literature and validates the authors' methodological approach of resolving RON and EGFR contributions separately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Unlike some prior studies suggesting adaptor proteins (particularly c-Src) mediate EGFR/Met family crosstalk, neither c-Src inhibition nor removal of the EGFR cytoplasmic tail prevented EGFR/RON crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by dasatinib experiments (Figure 6A) and EGFR-\u0394998 experiments (Figure 6B), with appropriate citations to prior work. The authors appropriately distinguish their findings from prior EGFR/MET studies and demonstrate direct receptor-receptor interactions rather than adaptor-mediated crosstalk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Possible mechanisms for enhanced RON phosphorylation with EGFR-\u0394998 include reduced local Grb2 concentration (which inhibits RON autophosphorylation) or reduced substrate competition from EGFR tail phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 are speculative explanations for the unexpected enhanced RON phosphorylation with EGFR-\u0394998. C115 is supported by a citation, but C116-C117 are appropriately labeled as speculation. These hypotheses are reasonable but not directly tested in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The mechanisms of EGFR/RON crosstalk show similarities to EGFR/ErbB3 interactions, including unidirectional phosphorylation requiring EGFR dimers and lack of co-endocytosis, suggesting these mechanisms may be applicable to understanding other receptor interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by citations to prior work on EGFR/ErbB3. The comparison is appropriate and the inference that similar mechanisms may apply to other receptor pairs is reasonable, though this remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Disruption of EGFR/RON interactions might provide a therapeutic advantage in tumors that co-express EGFR and RON.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 is appropriately labeled as speculation about future therapeutic applications. While the biological rationale is sound given the crosstalk mechanism and clinical correlations (C13-C15), no therapeutic intervention studies are presented in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

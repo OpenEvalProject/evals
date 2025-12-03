@@ -1,0 +1,1691 @@
+{
+  "submission": {
+    "id": "8733aa25-ccdf-434a-a03d-1f5965460359",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:34:42.412697Z",
+    "updated_at": "2025-12-03T13:34:42.412697Z"
+  },
+  "content": [
+    {
+      "id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "submission_id": "8733aa25-ccdf-434a-a03d-1f5965460359",
+      "content_type": "manuscript",
+      "content_text": "# RNA-binding proteins direct myogenic cell fate decisions\n\n## Authors\n\n- Joshua R Wheeler<sup>1</sup> ([ORCID: 0000-0002-7315-8269](https://orcid.org/0000-0002-7315-8269))\n- Oscar N Whitney<sup>6</sup> ([ORCID: 0000-0002-4858-2615](https://orcid.org/0000-0002-4858-2615))\n- Thomas O Vogler<sup>2</sup> ([ORCID: 0000-0002-4537-8248](https://orcid.org/0000-0002-4537-8248))\n- Eric D Nguyen<sup>2</sup>\n- Bradley Pawlikowski<sup>7</sup>\n- Evan Lester<sup>1</sup>\n- Alicia Cutler<sup>7</sup> ([ORCID: 0000-0003-3365-0328](https://orcid.org/0000-0003-3365-0328))\n- Tiffany Elston<sup>7</sup>\n- Nicole Dalla Betta<sup>7</sup>\n- Kevin R Parker<sup>10</sup>\n- Kathryn E Yost<sup>10</sup> ([ORCID: 0000-0001-6807-950X](https://orcid.org/0000-0001-6807-950X))\n- Hannes Vogel<sup>4</sup>\n- Thomas A Rando<sup>11</sup> ([ORCID: 0000-0001-5843-8564](https://orcid.org/0000-0001-5843-8564))\n- Howard Y Chang<sup>10</sup> ([ORCID: 0000-0002-9459-4393](https://orcid.org/0000-0002-9459-4393))\n- Aaron M Johnson<sup>9</sup> ([ORCID: 0000-0003-4553-1078](https://orcid.org/0000-0003-4553-1078))\n- Roy Parker<sup>3</sup> ([ORCID: 0000-0002-8412-4152](https://orcid.org/0000-0002-8412-4152)) \u2020\n- Bradley B Olwin<sup>7</sup> ([ORCID: 0000-0001-6977-2509](https://orcid.org/0000-0001-6977-2509)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, University of Colorado Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))\n2. Medical Scientist Training Program, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n3. Howard Hughes Medical Institute, University of Colorado Boulder United States ([ROR:006w34k90](https://ror.org/006w34k90))\n4. Department of Pathology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n5. Department of Neuropathology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n6. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n7. Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))\n8. Department of Surgery, University of Colorado Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n9. Molecular Biology Program and Department of Biochemistry and Molecular Genetics, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n10. Center for Personal and Dynamic Regulomes, Stanford University Palo Alto United States ([ROR:00f54p054](https://ror.org/00f54p054))\n11. Department of Neurology and Neurological Sciences, Stanford University School of Medicine Stanford United States ([ROR:03mtd9a03](https://ror.org/03mtd9a03))\n12. Paul F. Glenn Center for the Biology of Aging, Stanford University School of Medicine Stanford United States ([ROR:03mtd9a03](https://ror.org/03mtd9a03))\n13. Center for Tissue Regeneration, Repair, and Restoration, Veterans Affairs Palo Alto Health Care System Palo Alto United States ([ROR:00nr17z89](https://ror.org/00nr17z89))\n14. Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:006w34k90](https://ror.org/006w34k90))\n15. University of Colorado School of Medicine, RNA Bioscience Initiative, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRNA-binding proteins (RBPs), essential for skeletal muscle regeneration, cause muscle degeneration and neuromuscular disease when mutated. Why mutations in these ubiquitously expressed RBPs orchestrate complex tissue regeneration and direct cell fate decisions in skeletal muscle remains poorly understood. Single-cell RNA-sequencing of regenerating Mus musculus skeletal muscle reveals that RBP expression, including the expression of many neuromuscular disease-associated RBPs, is temporally regulated in skeletal muscle stem cells and correlates with specific stages of myogenic differentiation. By combining machine learning with RBP engagement scoring, we discovered that the neuromuscular disease-associated RBP Hnrnpa2b1 is a differentiation-specifying regulator of myogenesis that controls myogenic cell fate transitions during terminal differentiation in mice. The timing of RBP expression specifies cell fate transitions by providing post-transcriptional regulation of messenger RNAs that coordinate stem cell fate decisions during tissue regeneration.\n\n## Introduction\n\nSkeletal muscle is among the longest-lived tissues in the human body, is essential for locomotion, respiration, and longevity, and thus requires constant maintenance (Sharples et al., 2015). Skeletal muscle is comprised of postmitotic myofibers that house resident muscle stem cells (MuSCs), which can repair skeletal muscle following damage (Lepper et al., 2011; Murphy et al., 2011; Sambasivan et al., 2011; Shi and Garry, 2006). MuSCs are typically quiescent, but (Feige et al., 2018) in response to muscle injury, MuSCs activate, proliferate, and then either self-renew or differentiate and fuse to repair myofibers (Baghdadi and Tajbakhsh, 2018; Sincennes et al., 2016).\n\nSingle-cell analyses of regenerating muscle demonstrate the rich cellular complexity governing myogenesis and make two key observations (De Micheli et al., 2020; Dell\u2019Orso et al., 2019; Giordani et al., 2019). First, in response to damage, MuSCs exit quiescence and progress through a hierarchical, dynamic myogenic program and either commit to terminal differentiation or self-renew and reacquire a quiescent state. Second, as activated MuSCs progress through myogenesis, MuSCs experience dramatic global changes in gene expression (Barruet et al., 2020). This rapid change in gene expression requires MuSCs to regulate a vast amount of newly transcribed RNA encoding fate-specifying transcription factors and skeletal muscle contractile apparatus constituents, among other myogenic proteins.\n\nRNA is regulated by an arsenal of abundant RNA-binding proteins (RBPs). Although much of the effort to understand the roles of RBPs in myogenesis has focused on specific RBPs associated with disease (Apponi et al., 2011), recent work has identified functions for RBPs not involved in neuromuscular diseases that include (1) maintenance of MuSCs quiescence (de Morr\u00e9e et al., 2017), (2) MuSC activation and expansion (Cho and Doles, 2017; Farina et al., 2012), (3) myogenic differentiation (Hausburg et al., 2015; Vogler et al., 2018), and (4) MuSC-self-renewal (Chenette et al., 2016; Hausburg et al., 2015).\n\nRBPs regulate RNA splicing, where RNA is targeted and bound by RBPs co-transcriptionally to ensure correct splicing of nascent RNA transcripts (Dassi, 2017; Hentze et al., 2018) where alternative RBP-mediated splicing yields a rich diversity of RNA isotypes critical for translating proteins that regulate myogenesis (Brinegar et al., 2017; Imbriano and Molinari, 2018; Nakka et al., 2018; Weskamp et al., 2020). The loss of specific RBPs and the resultant effects on splicing affect MuSC quiescence, MuSC activation, and differentiation; mutations in RBPs are associated with muscular dystrophies and age-related neuromuscular diseases (Calado et al., 2000; Hinkle et al., 2019; Xue et al., 2020; Yu et al., 2009). Amyotrophic lateral sclerosis, inclusion body myopathy, and muscular dystrophies are caused by RBP mutations, leading to progressive muscle degeneration (Lukong et al., 2008; Xue et al., 2020). In these disorders, disease-causing mutations frequently impair RBP splicing function (Cortese et al., 2014; Singh et al., 2018; Taylor et al., 2016). Restoring RBP splicing function prevents or delays the onset of these disorders, identifying splicing dysregulation as a key driver of pathology (Naryshkin et al., 2014; Scotti and Swanson, 2016; Wirth et al., 2020).\n\nEven though RBPs are essential for skeletal muscle regeneration and are frequently mutated in neuromuscular disease, little is known regarding the mechanisms regulating the timing of RBP function during myogenesis or the mechanisms by which RBPs influence myogenic cell fate decisions. Using single-cell RNA-sequencing, we examined temporal RBP expression of several neuromuscular disease-associated RBPs in MuSCs during myogenic differentiation to clarify the timing of RPB expression during muscle regeneration and identify networks of RBPs involved in myogenic cell fate transitions.\n\n## Results\n\n### Myogenic cell fate transitions revealed by single-cell RNA-sequencing\n\nSkeletal muscle has a remarkable ability to repair following injury mediated by MuSCs, which activate, proliferate, and differentiate to produce the majority of myonuclei by 4 days post injury (dpi) (De Micheli et al., 2020; Cuter et al., 2019). During this time, MuSCs self-renew to replenish the quiescent MuSC stem cell population as demonstrated by DNA-lineage-tracing experiments (De Micheli et al., 2020; Cuter et al., 2019). MuSCs undergo dramatic transcriptional changes during myogenesis, of which the resultant RNA is regulated by RBPs. Yet, the timing and function of RBPs during myogenesis remain understudied. Here, we sought to define RBP function in individual cells during MuSC activation, proliferation, differentiation, and self-renewal.\n\nWe performed single-cell RNA-sequencing on regenerating skeletal muscle at 4 dpi and 7 dpi following an injury by BaCl2 injection into adult mouse tibialis anterior (TA) muscles (Caldwell et al., 1990). We observed infiltration of immune cells, dynamic cycling of individual fibro/adipogenic progenitors (FAPs), and a robust myogenic progenitor population in the sequencing datasets (Figure 1A, Figure 1\u2014figure supplement 1A and B). Sequencing dataset analyses show strong reproducibility amongst biological replicates (Figure 1\u2014figure supplement 1A and B) defining the cellular composition of regenerating skeletal muscle. The cellular constituents we identified overlap with recently published muscle single-cell RNA-sequencing datasets (Barruet et al., 2020; De Micheli et al., 2020; Dell\u2019Orso et al., 2019). Thus, acutely injured muscle undergoes similar cellular regeneration irrespective of the inciting injury.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig1-v2.jpg)\n\n**Figure 1.:** (A) Single-cell atlas of regenerating skeletal muscle at 4 and 7 days post injury (dpi). (B) Cell cycle scoring in regenerating myogenic subclusters. (C) Violin plots showing expression of myogenic markers of regeneration per myogenic clusters. (D) Myogenic subclusters comprising the regenerating myogenic cellular population. (E) RNA velocity-inferred myogenic cell fate trajectories. See also Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) of regenerating skeletal muscle at 4 and 7 days post injury (dpi) with colored individual sequencing libraries (B) and by individual cellular clusters. (C) RNA velocity of myogenic subclusters. (D) Velocity-inferred cell\u2013cell connectivity between myogenic subclusters.\n\nGene expression and cell cycle scoring analysis of the myogenic cells reveals three dominant myogenic clusters: (i) a proliferative Pax7-positive MuSC population, (ii) a differentiating Myogenin (Myog)-positive population exiting cell cycle, and (iii) a postmitotic, terminally differentiating muscle population expressing sarcomeric mRNAs (Figure 1B and C, Figure 1\u2014figure supplement 1C). These dominant myogenic populations are further subclassified into nine subclusters that define the regenerating myogenic population (Figure 1D) and may represent cells at various points along a more continuous differentiation trajectory or may reflect specific cell state transition points during myogenesis.\n\nWe next identified temporal dynamics between each of the nine myogenic subclusters using RNA velocity (Bergen et al., 2020), which infers cellular dynamics for a single cell by comparing the ratio of unspliced, pre-mRNA to mature mRNA (La Manno et al., 2018). RNA velocity shows myogenic differentiation directionality within specific subclusters (Figure 1\u2014figure supplement 1C), resolving myogenic differentiation trajectories using processed and unprocessed RNA (Figure 1\u2014figure supplement 1C). To infer connectivity and directionality between the nine subclusters, we employed partition-based graph abstraction (PAGA), which estimates connectivity among different subclusters while preserving global data topology, providing a more granular analysis than traditional pseudotemporal analyses (Wolf et al., 2019). PAGA identified a directed connectivity between the myogenic subclusters 0\u20136 (Figure 1E, Figure 1\u2014figure supplement 1D) where we see robust connections between MuSC clusters and differentiating clusters. These connections highlight the inherent complexity of MuSC cell fate decisions (Figure 1\u2014figure supplement 1D). Very few connections lead to mature muscle, suggesting that progenitor MuSC fate decisions are plastic. By contrast, the commitment to terminal differentiation may follow a single universal pathway. Together, these data reveal a trajectory map of in vivo myogenesis during muscle regeneration.\n\n### RNA-binding protein expression is temporally defined during myogenesis\n\nThe mechanisms of myogenic cell fate change are likely multifactorial and include post-transcriptional regulation of mRNAs. Post-transcriptional regulation permits rapid and dynamic cell fate changes in myogenic cells that is critical for cell fate transitions (Hausburg et al., 2015), but is poorly understood during myogenesis at a cellular resolution (Apponi et al., 2011; Hinkle et al., 2019; Weskamp et al., 2020). Since a number of RBP transcripts increase during muscle regeneration, examining the timing and magnitude of expression for RBPs in individual MuSCs may reveal an unexplored role for RBPs in mediating myogenic cell fate transitions (Weskamp et al., 2020). We hypothesize that RBP expression timing influences myogenic cell fates by post-transcriptionally regulating RNA. We defined RBP expression in MuSCs, focusing on myogenic subclusters 0\u20136. The MuSCs in these subclusters undergoing cell fate changes to either self-renew, continue to proliferate, or terminally differentiate. Thus, examining RNA regulation in these cells may reveal roles for RBPs in directing cell fate decisions.\n\nWe first examined which RBPs are expressed in MuSCs in subclusters 0\u20136 (Castello et al., 2012; Perez-Perri et al., 2018) and subsequently performed hierarchical clustering for the expressed RBP transcripts in each subcluster (Figure 2A). These results identify networks of RBPs that are either upregulated or downregulated in specific subclusters. Thus, as the transcriptional state of MuSCs changes so too does the expression of RBP networks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig2-v2.jpg)\n\n**Figure 2.:** (A) Hierarchical clustering of RNA-binding protein expression in myogenic subclusters 1\u20136 during myogenesis. (B) Line plot of select myopathy-associated RNA-binding protein expression in subclusters 0\u20138 during myogenesis.\n\nWe hypothesized that RBP expression timing relates to the times in which those RBPs are functioning. Thus, dysfunction of RBPs at specific cell states may disrupt cell fate decisions and explain broadly why mutations or dysfunction in many RBPs cause neuromuscular diseases. For example, Tardbp (TDP-43) dysfunction impairs myogenic proliferation, whereas loss of Hnrnpa1 disrupts terminal myogenic differentiation (Liu et al., 2017; Vogler et al., 2018). Focusing on these disease-associated RBPS, we found that Tardbp expression is highest in subcluster 1, and in contrast, Hnrnpa2b1 expression is highest in subcluster 3, while Tia1 expression is highest in subcluster 6 (Figure 2B). Thus, distinct disease-associated RBP expression profiles peak in different subclusters, corresponding to different time points during myogenesis and distinct cell fate decisions.\n\nTwo of the most highly expressed RBPs are Hnrnpa1 and Hnrnpa2b1 (Figure 2B), and when disrupted cause inclusion body myopathy (Kim et al., 2013). Hnrnpa1 and Hnrnpa2b1 expression is highest in select proliferating and differentiating subclusters. While Hnrnpa1 function is essential for muscle differentiation, Hnrnpa2b1 function in muscle is unknown (Li et al., 2020). Thus, we focused on Hnrnpa2b1 as a model RBP for understanding cell state-specific RBP function. Defining the role for Hnrnpa2b1 in specific cell states may provide insight into how disruption of this RBP causes inclusion body myopathy.\n\n### Hnrnpa2b1 expression dynamics in regenerating skeletal muscle\n\nHnrnpa2b1 regulates RNA splicing, stability, and transport (Alarc\u00f3n et al., 2015; Geissler et al., 2016; Percipalle et al., 2002) and, in stem cells, Hnrnpa2b1 regulates differentiation (Wang et al., 2018) and proliferation (He and Smith, 2009). Thus, we hypothesized that Hnrnpa2b1 may function as a myogenic RNA regulator during differentiation.\n\nWe examined the levels of Hnrnpa2b1 protein in regenerating muscle in vivo where in uninjured muscle, Hnrnpa2b1 is present in a subset of Pax7-postitive MuSCs and in some peripherally located myonuclei in mature skeletal muscle fibers (Figure 3A and B, Figure 3\u2014figure supplement 1A). By 5 dpi, Hnrnpa2b1 protein levels increase and Hnrnpa2b1 is present in the majority of Pax7-postitive MuSCs and centrally located myonuclei of immature regenerating myofibers (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A and B). Hnrnpa2b1 levels peak at 10 dpi in both Pax7-positive MuSCs and regenerating myofibers and then Hnrnpa2b1 levels decline as myofibers fully regenerate by 28 dpi (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A,C and D). Therefore, the changes in Hnrnpa2b1 protein levels correlate well with expression dynamics detected by single-cell sequencing in regenerating muscle.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig3-v2.jpg)\n\n**Figure 3.:** (A) Hnrnpa2b1 immunoreactivity in uninjured (UI), 5, 10, and 30 days post injury (dpi) regenerating mouse muscle. All images represent n = 3 biological replicates; scale = 20 \u00b5M. (B) Nuclear Hnrnpa2b1 immunoreactivity in UI, 5, 10, and 28 dpi regenerating muscle. (C) Nuclear Hnrnpa2b1 immunoreactivity intensity in either myonuclei or non-myonuclei in UI, 5, 10, and 28 dpi regenerating muscle. See also Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Secondary-only immunoreactivity controls of muscle sections for all time points assessed by immunofluorescence (IF) in Figure 1A. (B) Quantified Western blot analysis of Hnrnpa2b1 protein expression from whole uninjured (UI) and 5 days post injury (dpi) regenerating muscle (one-tailed Student\u2019s t-test). (C) Hnrnpa2b1 nuclear intensity in Pax7-positive myonuclei in UI, 5, 10, and 28 dpi regenerating muscle. (D) Scatter plot and R2 values for expression changes in myonuclear Pax7 and Hnrnpa2b1 in UI, 5, 10, and 28 dpi regenerating muscle. (E) Immunoreactivity in 5 dpi regenerating muscle for Tardbp, myosin heavy chain (Myhc), and Pax7. (F) Scatter plot and R2 values for Tardbp expression changes in Pax7 myonuclei in UI and 5 dpi. (G) Tardbp nuclear protein in UI, 5 dpi , and 10 dpi regenerating muscle. All images represent n = 3 biological replicates; scale = 20 \u00b5M. All quantified data represent mean \u00b1 SD, two-tailed Student\u2019s t-test p-value: *<0.05, **<0.01, ***<0.001, ****<0.0001 unless otherwise stated.\n\nThese results show that Hnrnpa2b1 expression increases in both Pax7-positive MuSCs and regenerating myofibers early during regeneration . By contrast, Tardbp expression peaks at 5 dpi, near the peak of muscle progenitor proliferation (Figure 3\u2014figure supplement 1E\u2013G). As Tardbp is critical for early muscle regeneration, Hnrnpa2b1 may play a similarly critical role later during muscle regeneration.\n\n### Hnrnpa2b1 is required for myoblast differentiation\n\nTo better understand the role of Hnrnpa2b1 during myogenesis, we examined the protein levels of Hnrnpa2b1 in both proliferating and differentiating myoblasts. Hnrnpa2b1 immunoreactivity increases during myoblast differentiation, peaking by 3 days of differentiation, and declines as differentiating myoblasts and myotubes mature (Figure 4A and B). The levels of transcript mirror Hnrnpa2b1 expression in vivo and suggest a role for Hnrnpa2b1 in regulating differentiation, and thus, we predict that a functional requirement for Hnrnpa2b1 is highest during differentiation. To test this hypothesis, we knocked out Hnrnpa2b1 in myoblasts using CRISPR/Cas9 and assessed the consequences of Hnrnpa2b1 loss on myoblast proliferation and differentiation (Figure 4C, Figure 4\u2014figure supplement 1A and B). Hnrnpa2b1 wild type (WT) and knockout (KO) cells show no significant differences in proliferation when labeled with a timed pulse of the thymidine analog 5-ethynyl-2\u2032-deoxyuridine (EdU; Figure 4D and E). The Hnrnpa2b1 WT and KO populations exhibit no differences in nuclear morphology (Figure 4\u2014figure supplement 1E and F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig4-v2.jpg)\n\n**Figure 4.:** (A) Hnrnpa2b1 nuclear protein in exponentially growing myoblasts (0 hr) and differentiating myotubes at 72 and 168 hr. (B) Immunoreactivity of Hnrnpa2b1 in myoblasts and differentiating myotubes. (C) Western blot analysis of CRISPR-Cas9 knockout (KO) and scrambled sequence Hnrnpa2b1 sgRNA-treated C2C12 myoblasts. (D) EdU-pulsed wild type (WT) myoblasts and Hnrnpa2b1 KO myoblasts (scale = 10 \u00b5M). (E) Quantification of EdU incorporation in WT and KO Hnrnpa2b1 myoblasts (ns = nonsignificant). (F) Immunoreactivity for Myhc in differentiating WT and KO Hnrnpa2b1 myotubes (scale = 200 \u00b5M). (G) Quantification of Fusion Index (percentage of nuclei fused into myotubes) during differentiation in either WT or KO Hnrnpa2b1 myotubes. All quantified data represent mean \u00b1 SD, two-tailed Student\u2019s t-test p-value: *<0.05, **<0.01, ***<0.001, ****<0.0001 unless otherwise stated. See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Hnrnpa2b1 protein in wild type (WT) and Hnrnpa2b1 knockout (KO) myoblasts (scale = 10 \u00b5M). (B) Western blot intensity quantification of Hnrnpa2b1 in WT and Hnrnpa2b1 KO C2C12 myoblasts. (C) Western blot image of Hnrnpa2b1 in WT and Hnrnpa2b1 KO C2C12 myoblasts. (D) Myhc immunoreactivity in Hnrnpa2b1 WT and KO 168 hr differentiated C2C12 myotubes. (E, F) Quantification of Hnrnpa2b1 WT and KO myoblast nuclear area and circularity during differentiation. All images represent n = 3 biological replicates from three independent Hnrnpa2b1 WT and KO clones: scale = 20 \u00b5M. All quantified data represent mean \u00b1 SD, two-tailed Student\u2019s t-test p-value: **<0.01.\n\nDifferentiation is impaired upon loss of Hnrnpa2b1. After 48 hr of differentiation, Hnrnpa2b1 WT myoblasts had largely differentiated into multinucleated, myosin heavy chain-positive myotubes (Figure 4F and G). Conversely, Hnrnpa2b1 KO myoblasts were unable to form large multinucleated myotubes (Figure 4F and G). The Hnrnpa2b1 KO differentiation defect persisted after 3 days of differentiation in culture. These results suggest that Hnrnpa2b1 KO myoblasts are unable to effectively differentiate (Figure 4G, Figure 4\u2014figure supplement 1C). Thus, Hnrnpa2b1 function is required for differentiation, but not proliferation.\n\n### Hnrnpa2b1 is a myogenic splicing regulator critical for terminal myogenic differentiation\n\nWe hypothesized that Hnrnpa2b1 regulates RNA splicing during muscle differentiation, and that altered Hnrnpa2b1-mediated splicing may lead to impaired muscle differentiation. To test this hypothesis, we performed high-coverage RNA-sequencing of Hnrnpa2b1 KO cells and WT differentiating myotubes. The transcripts detected correlate closely to previously published myogenic differentiation datasets, indicating negligible effects due to differing growth conditions (Figure 5\u2014figure supplement 2A and B). Differential splicing analysis identifies 2167 alternatively spliced RNAs of which 40% are differentially expressed (Figure 5A, Figure 5\u2014figure supplement 2E). Differential splicing analysis reveals that Hnrnpa2b1 regulates the splicing of other RBPs. Many of these RBPs in turn regulate RNA splicing, including Mbnl1, Mbnl2, and Rbfox2 (Figure 5B). Loss of Rbfox2 or loss of both Mbnl1 and Mbnl2 impairs myogenic differentiation (Lee et al., 2013; Singh et al., 2014), and thus Hnrnpa2b1 loss appears to lead to the exclusion of Mbnl1, Mbnl2, and Rbfox2 exons encoding zinc fingers and RNA recognition motifs, respectively, which are predicted to disrupt function of these RBPs (Figure 5B). Thus, the splicing regulator cascade resulting from Hnrnpa2b1 loss disrupts Mbnl1, Mbnl2, and Rbfox2 splicing and may impair myogenesis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig5-v2.jpg)\n\n**Figure 5.:** (A) Differential gene expression identified by DESeq2 in wild type (WT) and Hnrnpa2b1 knockout (KO) myotubes after 48 hr of differentiation with alternative splicing changes identified by LeafCutter (differential gene expression significance p-adjusted<0.05, splicing false discovery rate [FDR] p-value<0.05). (B) Sashimi plots of significant alternative splicing changes (delta percent spliced in [dPSI]) for Mbnl1, Mbnl2, Rbfox2 in differentiating Hnrnpa2b1 KO myotubes. (C) Venn diagram of significantly altered spliced transcripts in Hnrnpa2b1 KO, Mbnl1/Mbnl2 double KO (Thomas et al., 2017), and Rbfox2 KO (Singh et al., 2014) differentiating myogenic cultures. (D) Myogenic-trained CIBERSORTx-imputed stacked bar chart of myogenic subcluster percentages in C2C12 differentiation time course (Trapnell et al., 2010). (E) Myogenic-trained CIBERSORTx machine learning imputed percentages of myogenic clusters from WT and KO Hnrnpa2b1 differentiating myotubes. Y-axis refers to fold change between myogenic cluster percentages. See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Hnrnpa2b1-Rbfox or Hnrnpa2b1-Mbnl1/Mbnl2 delta percent spliced in (dPSI) changes in shared significantly altered spliced RNAs. (B, C) Myogenic-trained CIBERSORTx-imputed percentages of myogenic clusters from RNA-sequencing performed in biological duplicate of C2C12 differentiation time course (Trapnell et al., 2010). (D) Myogenin immunoreactivity and DAPI nuclear staining of exponentially proliferating C2C12 myoblasts. Bar plot represents percentage of myogenin+ proliferating C2C12 myoblasts, n = 3 biological replicates, scale = 50 \u00b5M. (E) Percentage of Hnrnpa2b1 knockout (KO) splicing alterations in significantly differentially expressed transcripts identified per myogenic cluster.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A, B) Correlation of base mean and log2 fold change between Hnrnap2b1KO myoblasts and WT myoblasts differentiated for 48 hr and C2C12 myoblasts differentiated for 48 hr from Xue et al., 2020. RNA-sequencing data was compared against 0 hr proliferating myoblasts from Xue et al., 2020. (C, D) Venn diagrams showing differentially expressed genes identified by DESeq2 and alternative spliced transcripts identified by LeafCutter for 48 hr differentiation (Xue et al., 2020) for Hnrnpa2b1 WT cells and Hnrnpa2b1 KO cells. All data are compared to 0 hr proliferating myoblasts from Xue et al., 2020. (E) MA plot for differential gene expression changes identified in Hnrnpa2b1 KO cells compared to 0 hr proliferating myoblasts from Xue et al., 2020. Specific alternatively spliced transcripts identified in (D) are highlighted. (F) Impact of Hrnpa2b1 KO-specific alternatively spliced transcripts identified in (D) on differentially expressed transcripts present in single-cell myogenic clusters. Three independent RNA-sequencing datasets were analyzed for 0 and 48 hr cultures from Liu et al., and for Hnrnpa2b1 WT and KO.\n\nWe performed differential splicing analysis of Mbnl1, Mbnl2, and Rbfox2 in differentiating Hnrnpa2b1 KO cells (Lee et al., 2013; Singh et al., 2014). The alternatively spliced RNAs in Hnrnpa2b1 KO cells, compared to Mbnl1, Mbnl2 double KO cells, significantly overlap (hypergeometric p-value=1.2 \u00d7 10-77). Similarly, alternatively spliced RNAs in Hnrnpa2b1 KO cells and Rbfox2 KO cells also overlap (hypergeometric p-value=6.1 \u00d7 10-143) (Figure 5C), demonstrating that Hnrnpa2b1 loss likely leads to altered splicing of RNAs regulated by Mbnl1, Mbnl2, and Rbfox2, respectively. As RBPs function together to co-regulate the splicing of target RNAs (Klinck et al., 2014; Venables et al., 2013), Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 may cooperatively regulate target RNA splicing. Indeed, Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 KOs exhibit identical splice site location and share changes in splicing of target RNAs (Figure 5\u2014figure supplement 1A). Thus, a network of RBPs, including Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1, appear to cooperatively regulate RNA splicing during muscle differentiation.\n\nThe RBPs cooperating in regulating splicing during muscle differentiation may function at different stages of differentiation, and thus, whether Hnrnpa2b1 regulates the splicing of Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 directly or whether the cooperation is in part due to sequencing cell populations at different stages of differentiation is unclear. To distinguish these possibilities, we mapped Hnrnpa2b1 splicing at the single-cell level. To test whether Hnrnpa2b1 loss results arrests myogenic cells at specific myogenic stages, we quantified the impact of Hnrnpa2b1 KO on myogenic subcluster abundances. We employed CIBERSORTx, a machine learning tool, to impute myogenic subcluster percentages as CIBERSORTx is trained on single-cell sequencing data to estimate cell-type abundances present in bulk RNA-sequencing (Newman et al., 2019).\n\nWe first trained CIBERSORTx on our myogenic single-cell dataset and then imputed cell-type abundances in a muscle differentiation time course with bulk RNA sequences obtained from proliferating myoblasts and differentiating myotubes at 60 and 120 hr (Trapnell et al., 2010). Myogenic-trained CIBERSORTx reveals enrichment for proliferative MuSCs subclusters in the proliferating myoblast population. Conversely, the differentiating myotubes show a shift towards differentiating subclusters and are proportional to differentiation duration (Figure 5\u2014figure supplement 1B and C). Myogenic-trained CIBERSORTx identifies a small fraction of differentiated cells within the proliferating myoblasts population (Figure 5\u2014figure supplement 1B and C). To confirm whether the machine learning was accurate, we assessed immunoreactivity for myogenin, a marker of differentiation, in proliferating myoblasts and found myogenin-positive cells present at similar percentages as predicted by CIBERSORTx (Figure 5\u2014figure supplement 1C and D). Together, these results demonstrate that myogenic-trained CIBERSORTx is capable of imputing myogenic subcluster abundances from bulk RNA-sequencing data.\n\nNext, we tested the impact of Hnrnpa2b1 KO using myogenic-trained CIBERSORTx. Hnrnpa2b1 KO cells show an enrichment for subcluster 5 myogenic cell signatures and a decrease in subcluster 7 (Figure 5D), demonstrating that Hnrnpa2b1 KO cells are slow to transition to subcluster 7 and accumulate in subcluster 5. We then used CIBERSORTx to examine the impact of Hnrnpa2b1 KO on specific myogenic cell states. We first performed differential gene expression analysis for each of the subclusters identified by CIBERSORTx (clusters 2\u20135, 7) to identify differentially expressed genes enriched in the cells of each specific cluster. These differentially expressed genes provide a molecular signature for the cells at each of these specific stages embedded in bulk RNA-sequencing data. By examining the splicing changes for the differentially expressed genes, we found that Hnrnpa2b1 KO alters splicing in each of these clusters, with cluster 5 showing the most changes in splicing (Figure 5E, Figure 5\u2014figure supplement 1E, Figure 5\u2014figure supplement 2F). Using this approach, we can control for population-wide cell state differences and demonstrate that Hnrnpa2b1 is a key splicing regulator in specific differentiating myogenic cell states.\n\n### RBP engagement scoring delineates timing of RBP function during myogenesis\n\nThe expression of an RBP and RBP target RNAs is necessary for an RBP to alter splicing of the RPB target. Therefore, expression of Hnrnpa2b1 target RNAs during myogenic differentiation governs when Hnrnpa2b1 is capable of splicing target transcripts. To identify Hnrnpa2b1 target RNAs during myogenesis, we performed Hnrnpa2b1 enhanced UV crosslinking and immunoprecipitation (eCLIP) in both myoblasts and myotubes (Figure 6A, Figure 6\u2014figure supplement 1A\u2013C). Hnrnpa2b1 eCLIP reveals 808 binding sites across 247 genes for myoblasts and 1030 binding sites across 137 genes for myotubes, which are significantly enriched compared to size-matched input (reflecting all RNA\u2013protein interactions in the input) (Figure 6\u2014figure supplement 1D). Hnrnpa2b1 RNA target eCLIP peaks were highly correlated between biological replicates, had thousands of reproducible eCLIP clusters by irreproducible discovery rate analysis, and capture prior identified Hnrnpa2b1 RNA targets including Hnrnpa2b1\u2019s own 3\u2032UTR (Figure 6\u2014figure supplement 1D\u2013G; Martinez et al., 2016). Analysis of Hnrnpa2b1 RNA-binding sites reveals an enrichment for binding sites in the 3\u2032UTR and proximal introns of target RNAs, potentially indicating a role of Hnrnpa2b1 in RNA localization or translation (Figure 6A). Further, Hnrnpa2b1 binding maps closely to splicing clusters, indicating a role for Hnrnpa2b1 in splicing regulation (Figure 6\u2014figure supplement 2B and C). Hnrnpa2b1 binding spatially correlates to splicing changes in the two significantly differentially spliced transcripts Hnrnpa2b1 and Myl1 (Figure 6\u2014figure supplement 3A and B). We validated the interaction of Hnrnpa2b1 with several target RNAs using RIP qRT-PCR (Figure 6B, Figure 6\u2014figure supplement 1H).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-v2.jpg)\n\n**Figure 6.:** (A) Genomic distribution of Hnrnpa2b1 enhanced UV crosslinking and immunoprecipitation (eCLIP) peaks in myoblasts and myotubes. (B) Native (non-denaturing) Hnrnpa2b1 RNA immunoprecipitation (RIP)-qRT-PCR of RNA targets identified by eCLIP. (C) Schematic for RBP-Target RNA engagement scoring. (D) RBP-Target RNA engagement scoring of Tardbp and Hnrnpa2b1 in myogenic subclusters (median \u00b1 95% CI across all RBP-RNA engagement scores in each myogenic subcluster). (E) Differential gene expression analysis of myogenic subcluster 5. (F) Myog immunoreactivity in wild type (WT) and Hnrnpa2b1 knockout (KO) 48 hr differentiated myotubes. (G) Myog immunoreactivity signal intensity in differentiating WT and Hnrnpa2b1 KO myotubes (mean \u00b1 SD, two-tailed Student\u2019s t-test p-value: ****<0.0001). See also Figure 6\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Autoradiogram of 32P-labeled Hnrnpa2b1 RNA\u2013RNA complexes fractionated by PAGE (B) and (C) immunoprecipitation of Hnrnpa2b1 RNA complexes used for enhanced UV crosslinking and immunoprecipitation (eCLIP) in C2C12 myoblasts or myotubes (n = 2 biologically independent samples). (D) Scatter plots indicate correlation between significant Hnrnpa2b1 RNA eCLIP peaks in biological replicates. Scatter plots represent fold enrichment for each region in Hnrnpa2b1 RNA eCLIP relative to paired size-matched input with significant peaks in red (p\u226410\u20138 over size-matched input). (E) Irreproducible discovery rate (IDR) analysis comparing peak fold enrichment across indicated eCLIP datasets. (F) Integrative Genomics Viewer (IGV) tracing showing Hnrnpa2b1 RNA 3\u2032UTR eCLIP peaks in Hnrnpa2b1 RNA transcript in myoblasts and (G) myotubes (H), where dark boxes denote significantly enriched binding sites above SMInput (p<10\u20138). Western blot for Hnrnpa2b1 used in RNA immunoprecipitation experiments in both Hnrnpa2b1 RNA wild type and knockout (KO) C2C12 cells. (I) Uniform manifold approximation and projection (UMAP) displaying Myog expression across myogenic single cells.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Volcano plot showing delta percent spliced in (dPSI) versus p-value (false discovery rate [FDR]) for significant splicing changes detected in Hnrnpa2b1 KO cells. (B) Global proximity mapping of Hnrnpa2b1 enhanced UV crosslinking and immunoprecipitation (eCLIP) sites and significantly alternatively spliced clusters. (C) Relative distance mapping for eCLIP sites to alternative splice clusters using bedtools reldist.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) UCSC gene track mapping delta percent sliced in (dPSI) (splicing changes) in reference to annotated Hnrnpa2b1 exons, introns, and Hnrnpa2b1 eCLIP-binding sites. (B) UCSC gene track showing dPSI (splicing changes) in reference to annotated Myl1 exons, introns, and Hnrnpa2b1 eCLIP-binding sites.\n\nHaving defined Hnrnpa2b1 mRNA targets, we next looked to develop a computational toolset to identify myogenic cells in which Hnrnpa2b1 is functioning. We reasoned that many RBPs engage with target RNAs co-transcriptionally to regulate RNA splicing (Fu and Ares, 2014). Newly transcribed RNAs or pre-mRNAs can be identified as RNAs that contain introns. These newly transcribed pre-mRNAs can then be computationally defined in single-cell data (La Manno et al., 2018) where RBP function will correlate with the expression level of an RBP and the RBP\u2019s target pre-mRNA. For example, RBP function is predicted to occur in cells with both high RBP expression and target pre-mRNAs expression, which we term \u2018RBP engagement scoring\u2019 (Figure 6C).\n\nWe validated RBP engagement scoring on a well-characterized RBP, Tardbp, a splicing RBP required for myoblast proliferation. Prior eCLIP experiments identified Tardbp RNA targets (Vogler et al., 2018), and if our computation approach is valid, Tardbp engagement scores should be higher in proliferating myoblasts than differentiated myotubes. We quantified Tardbp and target RNA expression in single cells, assigned engagement scores to each of these cells, and then examined the engagement scores for all the cells in a given subcluster to examine the impact of Tardbp at each stage of myogenesis. Tardbp engagement scores are higher in proliferating myoblasts than in myogenic cells undergoing differentiation (Figure 6D), consistent with the functional requirement of Tardbp in proliferating myoblasts. We then performed RBP engagement scoring for Hnrnpa2b1 by examining the pre-mRNA levels of Hnrnpa2b1 target RNAs and Hnrnpa2b1 in single cells and correlated the expression of Hnrnpa2b1 target RNAs to Hnrnpa2b1 expression. Myogenic subclusters 5 and 6 showed the highest Hnrnpa2b1 engagement scores (Figure 6D), suggesting that Hnrnpa2b1 splicing function is highest in cells in subclusters 5 and 6. Thus, an Hnrnpa2b1 KO may arrest cells at these stages, causing impaired differentiation.\n\nDelayed or slowed progression through subcluster 6 would lead to cells accumulating in the preceding subcluster 5. To test if Hnrnpa2b1 KO leads to an accumulation of cells in subcluster 5, we performed differential gene expression analysis on myogenic subclusters 5 and 6. Myog is significantly enriched in subcluster 5 (p-value=1 \u00d7 10-67) (Figure 6E, Figure 6\u2014figure supplement 1I). We examined myogenin immunoreactivity in differentiated Hnrnpa2b1 KO and WT cells. Hnrnpa2b1 KO cells are significantly enriched in the myogenin-positive cell population (Figure 6F and G), demonstrating a requirement for Hnrnpa2b1 for commitment to terminal differentiation.\n\n## Discussion\n\nRBP dysfunction contributes to neuromuscular disease (Apponi et al., 2011; Farina et al., 2012), yet the mechanisms leading to disease phenotypes and the roles of RBPs in regulating myogenic cell fate decisions remain poorly understood. Using multiomic and single-cell technologies, we finely mapped RBP expression during myogenesis, discovering that RBP expression and function correlates with specific myogenic cell states. We define a role for the disease-associated RBP, Hnrnpa2b1, in directing MuSC commitment to terminal differentiation where Hnrnpa2b1 influences global RNA splicing by regulating RBPs that splice distinct target mRNAs. The computational tools we employed allowed us to pinpoint the precise cell state in which Hnrnpa2b1 functions to guide cell fate decisions.\n\nWe propose a model to temporally define RBP function during muscle regeneration whereby the expression of an RBP and the RBP\u2019s target RNAs is required, providing precise timing for RPB function (Figure 7). Whether an RBP is functioning will depend upon the expression of the RBP as well as expression of the RBP target RNAs. Thus, even though an RBP transcript is present, the RBP will not function unless the target RNAs are present, ensuring that RBPs do not function ubiquitously during muscle repair or muscle development. The observation that one splicing RBP regulates the splicing of an RBP that in turn regulates splicing of RNA targets adds combinatorial control and redundancy to myogenic differentiation. The network of shared RBPs ensures that splicing and RNA regulation function during a specific cell state, which we propose is a universal property occurring during development and in a number of regenerating tissues and organs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig7-v2.jpg)\n\nThe model we propose explains the seemingly discordant myogenic phenotypes resulting from mutations in different RBPs that are consistent with the observation that KOs of distinct RBPs exhibit overlapping phenotypes . We speculate that RBPs function in concert at a specific cell state to regulate a wide array of messenger RNA targets that coordinate cell fate transitions. RBP dysfunction in diseases is therefore likely cell state-defined and RBP mutations disproportionately impact a specific cell\u2019s state. The resultant effect of an RPB mutation is delayed cell fate transition, a complete block of cell fate transition, or selection of an alternative cell fate. A better understanding of the complex events contributing to alterations in cell state transitions occurring when RBPs are mutated could lead to the development of new approaches for cell-state-specific therapeutic intervention (Ferlini et al., 2021).\n\n## Materials and methods\n\n### Mice\n\nMice were bred and housed according to the National Institutes of Health (NIH) guidelines for the ethical treatment of animals in a pathogen-free facility at the University of Colorado at Boulder. The University of Colorado Institutional Animal Care and Use Committee (IACUC) approved all animal protocols and procedures and studies complied with all ethical regulations. IACUC protocol number 2516, Animal Welfare Assurance number A3646-01. WT mice were genotype C57BL/6 (Jackson Laboratories). Cells and TA muscles were isolated from 3- to 6-month-old male and female WT mice.\n\n### Mouse injuries\n\nMale and female mice between 3 and 6 months of age were anesthetized with isoflurane and the left TA muscle was injected with 50 \u03bcl of 1.2% BaCl2. The injured and contralateral TA muscles were harvested at the indicated time points.\n\n### TA collections and cell isolations\n\nTA muscles were dissected and placed into 400 U/ml collagenase at 37\u00b0C for 1 hr with shaking and then placed into Ham\u2019s F-12C supplemented with 15% horse serum to inactivate the collagenase. Cells were passed through three strainers of 100, 70, and 40 \u00b5m (BD Falcon) and flow through was centrifuged at 1500 \u00d7 g for 5 min, and the cell pellets were resuspended in Ham\u2019s F-12C. To remove dead cells and debris, cells were passed over Miltenyi dead cell removal kit columns (Cat# 130-090-101). To remove RBCs, cells were incubated with antiTer119 micro magnetic beads and passed over a Miltenyi column (Cat# 130-049-901). For adult uninjured Tas, six TA muscles (from three mice) were pooled together. For injured TA muscles, two TA muscles from two different mice were pooled together. Cells were then counted using a Bio-Rad TC20 automated cell counter and processed with a 10X Genomics single-cell sequencing kit.\n\n### Single-cell sequencing\n\nTo capture, label, and generate transcriptome libraries of individual cells, we used the 10X Genomics Chromium Single Cell 3\u2032 Library and Gel Bead Kit v2 (Cat# PN-120237) following the manufacturer\u2019s protocols. Briefly, the single-cell suspension, RT-PCR master mix, gel beads, and partitioning oil were loaded into a Single Cell A Chip 10 genomics chip, placed into the chromium controller, and the Chromium Single Cell A program was run to generate Gel Bead-In-EMulsion (GEMs) that contain RT-PCR enzymes, cell lysates and primers for Illumina sequencing, barcoding, and poly-DT sequences. GEMs were then transferred to PCR tubes and the RT-PCR reaction was run to generate barcoded single-cell identified cDNA. Barcoded cDNA was used to make sequencing libraries for analysis with Illumina sequencing. We captured 1709 cells from young uninjured muscle, 5077 from the 4 dpi muscle, and 2668 from the 7 dpi muscle. Sequencing was completed on an Illumina NovaSeq 6000 using paired-end 150 cycle 2 \u00d7 150 reads by the genomics and microarray core at the University of Colorado Anschutz Medical Campus.\n\n### Single-cell Informatics\n\nPreprocessing was performed using Cellranger v3.0.1 (10X Genomics) count module that was used for alignment using cellranger-mm10-3.0.0 refdata, filtering, barcode counting, and UMI counting of the single-cell FASTQs. Postprocessing was performed using Seurat according to standardized workflows (Butler et al., 2018; Stuart et al., 2019). In brief, using RStudio (v4.0.0), Seurat objects were created for each Cellranger processed sample by importing filtered_gene_bc_matrices. Multiple Seurat objects then were merged, filtered, normalized, feature selected, scaled, and clustered. Nonlinear dimensional reduction was performed using uniform manifold approximation and projection (UMAP).\n\nRNA velocity using the scVelo pipeline was performed according to standardized workflows (La Manno et al., 2018). In brief, Velocyto was run in Python v3.6.3 using Samtools v1.8, cellranger-mm10-3.0.0 refdata, and masking repetitive elements to generate unspliced/spliced/ambiguous read count Loom file for each 10X cellranger preprocessed library. Seurat objects of myogenic clusters (.rds files) were converted in RStudio to loom files using LoomR. In a virtual environment, Velocyto Loom files were concatenated and merged with Seurat exported myogenic Loom in Scanpy. The scVelo pipeline was then used to perform log normalization and filtering. RNA velocity was then imputed using stochastic modeling. RNA velocities were projected on pre-computed UMAP embeddings and annotated clusters.\n\nRBP Engagement Scoring was performed by first determining the raw unspliced reads for every gene at single-cell level using Veloctyo as above. Metadata containing raw reads counts and unspliced reads imputed using Veloctyo were exported from Scanpy anndata objects for single cells contained within myogenic clusters and were exported and reimported into RStudio (v.4.0.0). To calculate an RBP-RNA engagement score for a given RBP, CLIP target genes of a given RBP genes were subset and unspliced read counts and total RBP counts were normalized to total read counts in a given cell. Scoring then represents the fraction of normalized unspliced reads of target RNAs to normalized amounts of a given RBP. To extrapolate to a given cluster, scores were then summed across all cells in a given cluster and data was represented by the median of these scores for a given cluster of cells. Target genes were identified using publicly available eCLIP datasets for Tardbp.\n\nCIBERSORTx of myogenic clusters was performed according to published workflows (Newman et al., 2019). In brief, a single-cell reference txt file was created from our Seurat processed single-cell RNA-seq dataset. A mixture file for bulk RNA-sequencing samples was created using TPM values extracted from StringTie serve as input. A single-cell reference txt matrix of cells organized by myogenic clusters was then used to train CIBERSORTx using default parameters (Supplementary file 3). Cell fractions were then imputed using 100 permutations for significance analysis.\n\n### Immunofluorescence staining of tissue sections\n\nTA muscles were dissected, fixed on ice for 2 hr with 4% paraformaldehyde, and then transferred to PBS with 30% sucrose at 4\u00b0C overnight. Muscle was mounted in O.C.T. (Tissue-Tek) and cryo-sectioned on a Leica cryostat to generate 10-\u03bcm-thick sections. Frozen tissues and sections were stored at \u201380\u00b0C. Prior to immunofluorescent staining, tissue sections were post-fixed in 4% paraformaldehyde for 10 min at room temperature (RT) and washed three times for 5 min in PBS. Staining with anti-Pax7, Laminin, and Hnrnpa2b1 antibodies required heat-induced epitope retrieval, which was performed by placing post-fixed slides in citrate buffer, pH 6.0, and subjected them to 6 min of high-pressure cooking in a Cuisinart model CPC-600 pressure cooker. For immunostaining, tissue sections were permeabilized with 0.25% Triton-X100 (Sigma) in PBS containing 2% bovine serum albumin (Sigma) for 60 min at RT. Incubation with primary antibody occurred at 4\u00b0C overnight followed by incubation with secondary antibody at RT for 1 hr. Primary antibodies included anti-Pax7 (Developmental Studies Hybridoma Bank, University of Iowa, USA) at 1:750, rabbit anti-laminin (Sigma-Aldrich) at 1:200, and a mouse anti-Hnrnpa2b1 (ab6102, Abcam) at 1:200. Alexa Fluor secondary antibodies (Molecular Probes) were used at a 1:1000 dilution. For analysis that included EdU detection, EdU staining was completed prior to antibody staining using the Click-iT EdU Alexa Fluor 488 detection kit (Molecular Probes) following the manufacturer\u2019s protocols. Sections were incubated with 1 \u03bcg/ml DAPI for 10 min at RT then mounted in Mowiol supplemented with DABCO (Sigma-Aldrich) or ProLong Gold (Thermo) as an anti-fade agent. All microscopy images used for quantitation were taken of samples cultured, immunohistochemically stained, and imaged in parallel and under identical conditions to enable quantitative comparison.\n\n### Cell culture and growth conditions\n\n#### C2C12 myoblast cells\n\nImmortalized murine myoblasts (American Type Culture Collection CRL-1772) were maintained on uncoated standard tissue culture plastic or gelatin-coated coverslips for imaging experiments at 37\u00b0C with 5% CO2 in Dulbecco's Modified Eagle Medium (DMEM) with 20% fetal bovine serum and 1% penicillin/streptomycin. To induce myoblast differentiation and fusion into myotubes, C2C12 myoblasts at 80% confluence were switched to DMEM media supplemented with 5% horse serum, 1% penicillin/streptomycin, and 1X Insulin-Transferrin-Selenium in DMEM. Cell lines were validated using RNA deep sequencing concurrent with certification provided by the manufacturer. Cells tested negative for mycoplasma contamination by the BioFrontiers cell culture core facility.\n\n### Hnrnpa2b1 CRISPR-Cas9 knockout and EdU incorporation\n\nCRISPR-Cas9 knockout was performed in C2C12 myoblasts. Single-guide RNA (sgRNA) against Hnrnpa2b1 (5\u2032-GAGTCCGCGATGGAG) were designed using (crispr.mit.edu) and cloned into pSpCas9(BB)\u20132A-Puro (PX459). C2C12 myoblasts were transfected with JetPrime using the manufacturer\u2019s protocols. Myoblasts that integrated the CRISPR construct were selected with puromycin (1 \u00b5g/ml) for 1 week. Three independent myoblasts KO and WT clones were isolated using a cloning ring to selectively detach clonal populations via trypsinization. Clonal population KO was validated via immunofluorescence (IF) and Western blotting against Hnrnpa2b1 with anti-Hnrnpa2b1 antibodies (ab6102 and ab31645). EdU incorporation: C2C12 myoblasts were incubated with 10 \u00b5M EdU (Life Technologies) for 3 hr. Cells were washed, fixed, and stained using the methods described below.\n\n### Immunofluorescence staining of cells\n\nC2C12 myoblast cells were washed with PBS in a laminar flow hood and fixed with 4% paraformaldehyde for 10 min at RT in a chemical hood. Cells were permeabilized with 0.25% Triton-X100 in PBS containing 2% bovine serum albumin (Sigma) for 1 hr at RT. Cells were incubated with primary antibody at 4\u00b0C overnight, then incubated with secondary antibody at RT for 1 hr. Primary antibodies included mouse anti-Hnrnpa2b1 (ab6102, Abcam) at 1:200, mouse-anti-myogenin (ab82843, Abcam), and a mouse anti-MHC MF-20 (Developmental Studies Hybridoma Bank, University of Iowa) at undiluted, \u2018neat\u2019 concentration. Alexa Fluor secondary antibodies (Molecular Probes) were used at a 1:1,000 dilution.\n\n### Microscopy and image analyses\n\nImages were captured on a Nikon inverted spinning disk confocal microscope. Objectives used on the Nikon were \u00d710/0.45 NA Plan Apo, \u00d720/0.75 NA Plan Apo, and \u00d740/0.95 Plan Apo. Confocal stacks were projected as maximum intensity images for each channel and merged into a single image. Brightness and contrast were adjusted for the entire image as necessary against secondary antibody-treated control immunofluorescent sections. Cellprofiler was used to quantify immunohistochemistry (IHC) and IF images using custom analysis pipelines unless otherwise stated.\n\n### Western blotting of cell and tissue lysates\n\nWestern blot was performed according to standard protocols. Equal volumes (20 \u00b5l) of fractions were then resolved on a 4\u201312% Bis-Tris SDS-PAGE gel and transferred to a nitrocellulose membrane (Bio-Rad). Primary antibodies included mouse anti-Hnrnpa2b1 (1:200; ab6102, Abcam) and monoclonal rabbit anti-GAPDH (14C10) conjugated to HRP (1:2000; Cell Signaling, 3683S).\n\n### Hnrnpa2b1 eCLIP sequencing\n\nC2C12 myoblasts were seeded at 6 \u00d7 106 cells per 15 cm plate, grown 24 hr at 37\u00b0C, 5% CO2, and either harvested (undifferentiated myoblasts) or differentiated in differentiation media for 4 days. Hnrnpa2b1 eCLIP was performed according to established protocols (Nguyen et al., 2018; Van Nostrand et al., 2016). In brief, Hnrnpa2b1-RNA interactions were stabilized with UV crosslinking (254 nm, 150 mJ/cm2). Cell pellets were collected and snap-frozen in liquid N2. Cells were thawed, lysed in eCLIP lysis buffer (50 mM Tris-HCl pH 7.4, 100 mM NaCl, 1% NP-40, 0.1% SDS, 0.5% sodium deoxycholate, and 1\u00d7 protease inhibitor), and sonicated (Bioruptor). Lysate was RNAse I (Ambion, 1:25) treated to fragment RNA. Protein-RNA complexes were immunoprecipitated using the rabbit polyclonal anti-Hnrnpa2b1 (ab31645, Abcam) antibody. One size-matched input (SMInput) library was generated per biological replicate using an identical procedure without immunoprecipitation. Stringent washes were performed as described, RNA was dephosphorylated (FastAP, Fermentas), T4 PNK (NEB), and a 3\u2032 end RNA adaptor was ligated with T4 RNA ligase (NEB). Protein-RNA complexes were resolved on an SDS-PAGE gel, transferred to nitrocellulose membranes, and RNA was extracted from membrane. After RNA precipitation, RNA was reverse-transcribed using SuperScript IV (Thermo Fisher Scientific), free primer was removed, and a 3\u2032 DNA adapter was ligated onto cDNA products with T4 RNA ligase (NEB). Libraries were PCR-amplified and dual-indexed (Illumina TruSeq HT). Pair-end sequencing was performed on Illumina NextSeq sequencer.\n\n### eCLIP bioinformatic and statistical analysis\n\nRead processing and cluster analysis for Hnrnpa2b1 eCLIP were performed as previously described (Van Nostrand et al., 2016; Vogler et al., 2018). Briefly, 3\u2032 barcodes and adapter sequences were removed using standard eCLIP scripts. Reads were trimmed, filtered for repetitive elements, and aligned to the mm9 reference sequence using STAR. PCR duplicate reads were removed based on the read start positions and randomer sequence. Bigwig files for genome browser display were generated based on the location of the second paired-end reads. Peaks were identified using the encode_branch version of CLIPPER using the parameter \u2018-s mm9.\u2019 Peaks were normalized against size-matched input by calculating fold enrichment of reads in IP versus input and were designated as significant if the number of reads in the IP sample was greater than in the input sample, with a Bonferroni corrected Fisher\u2019s exact p-value<10\u20138.\n\n### RNA-sequencing library preparation and sequencing\n\nC2C12 Hnrnpa2b1-WT and KO myoblasts were seeded at 6 \u00d7 106 cells per 15 cm plate, grown for 24 hr at 37\u00b0C, 5% CO2, and differentiated via serum withdrawal and ITS supplementation for 2 days. Differentiated C2C12 myoblasts and myotubes were washed with PBS in a laminar flow hood and scraped from the tissue culture plate. Total RNA was extracted using a QIAGEN RNeasy Plus Mini Kit, following the manufacturer\u2019s instructions. Isolated RNA quality was assessed by the CU Boulder BioFrontiers Next-Gen Sequencing core facility using an Agilent tape station. Isolated RNA was sent to the University of Colorado Cancer Center Genomics and Microarray Core for \u2018Ribominus\u2019 Ribosomal RNA depletion, NGS library preparation, and total RNA sequencing.\n\n### RNA-sequencing informatics\n\nAll RNA-sequencing data preprocessing was carried using standardized Nextflow RNA-sequencing (nf-core/rnaseq) with STAR alignment (genome GRCm39), transcriptome mapping with Salmon, and in silico ribosomal depletion using SortMeRNA. Differential gene expression was performed on feature counts tables using DESeq2 (Love et al., 2014). RNA splicing analysis was performed using LeafCutter (Li et al., 2018).\n\n#### CLIP/splicing cluster analysis\n\nThe locations of splicing clusters generated using LeafCutter and Hnrnpa2b1 eCLIP peaks from myotubes were each compared against genes in the mm10 refGene table from the UCSC Genome Browser to determine the number of clusters or peaks overlapping each gene. The overlap of each cluster or peak was then subdivided into coverage of either UTR or segments of the gene, divided into percentiles along the gene. These were normalized and plotted against each other using R and ggplot2.\n\n#### Relative distance\n\nRelative distance between splicing clusters generated using LeafCutter and Hnrnpa2b1 eCLIP peaks from myotubes were generated using the bedtools reldist command, using eCLIP peaks as the first input, and splicing clusters in genes with eCLIP peaks as the second input (Favorov et al., 2012).\n\n#### QAPA poly-A analysis\n\nAs previously described, RNA-sequencing reads were trimmed,\u202fin silico\u202fribodepleted, and reads were mapped to an mm10 3\u2032UTR annotation file using Salmon v0.13.1. Quantification of alternative polyadenylation (QAPA) was then used to estimate relative alternative 3\u2032UTR isoform usage (Ha et al., 2018). Lengthening or shortening of a gene\u2019s poly(A) tail was determined by first calculating a proximal poly(A) site usage (PPAU) defined as the percentage of reads mapping to the most proximal poly(A) site relative to reads mapping to the whole 3\u2032UTR.\u202f\u0394PPAU was then calculated as the median PPAU Hnrnpa2b1 KO \u2013 median PPAU WT (three replicates per condition). A gene with a\u202f\u0394PPAU >20 was defined as having a shortened poly(A) tail, and a gene with a\u202f\u0394PPAU < \u201320 was defined as having a lengthened poly(A) tail.\n\n### Hnrnpa2b1 immunoprecipitation and qRT-PCR\n\nC2C12 Hnrnpa2b1-WT and KO myoblasts were seeded at 6 \u00d7 106 cells per 15 cm plate, grown 24 hr at 37\u00b0C, 5% CO2, and harvested as undifferentiated myoblasts. Myoblasts were lysed in a CHAPS-based buffer and pre-cleared using protein-A bound Dynabeads (Thermo, 10001D). Pre-cleared cell lysates were incubated with rabbit polyclonal anti-Hnrnpa2b1 antibody (ab31645, Abcam). Antibody-bound Hnrnpa2b1 was bound to protein-A Dynabeads overnight and magnetically isolated from the whole-cell lysate. Hnrnpa2b1-bound RNA was isolated from the Dynabead-Antibody-Hnrnpa2b1 complex via TRIZol RNA purification. cDNA libraries were created from purified RNA via oligo-DT priming and SuperScriptIII-enzyme reverse transcription. cDNA libraries were probed against Hnrnpa2b1-eCLIP hits chosen as a subset of the significantly enriched Gene Ontology terms via quantitative, real-time PCR (qRT-PCR). Primers used target Gapdh, Hnrnpa2b1, Prpf19, Snrnp70, Sfpq, Mbnl1, Hnrnpa3, and Mef2a. (Primer sequence is given in Supplementary file 1.) qRT-PCR was performed using SYBR-Green qRT-PCR reagent (Bio-Rad), and fluorescent emission was measured using a Bio-Rad CFX384 Real-Time PCR Detection system.\n",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "c5fae39a-bdee-4dbd-98a1-8361b6d38a29",
+      "submission_id": "8733aa25-ccdf-434a-a03d-1f5965460359",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Douglas L Black, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75844.sa0](https://doi.org/10.7554/eLife.75844.sa0)\n\nWheeler and colleagues examine genetic pathways of myogenesis in regenerating muscle. Using extensive single cell and whole-genome analyses, they uncover a new role for the RNA binding protein hnRNP A2B1, showing that it plays a key role in defining muscle-specific splicing patterns during development.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Douglas L Black, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75844.sa1](https://doi.org/10.7554/eLife.75844.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"RNA-binding proteins direct myogenic cell fate decisions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Maurice Swanson (Reviewer #3).\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that your work cannot be considered further for publication by eLife.\n\nAll of the reviewers found the single cell analysis to be a valuable contribution to the field. However, none of the reviewers were convinced by the evidence that hnRNP A2B1 is a key mediator of the myogenic program. These findings were felt to be overstated. It was not clear why this particular factor was chosen for detailed analysis. Given these concerns, it was felt that the manuscript would require very extensive revisions, which would go beyond the revision policy of eLife.\n\nReviewer #1:\n\nThe authors used single cell sequencing at days 4 and 7 following mouse skeletal muscle injury to identify nine myogenic subclusters. RNA velocity and partition-based graph abstraction were used to identify temporal dynamics and connectivity between clusters. Analysis of RBP mRNA levels shows striking differences between clusters. This is not particularly surprising as one would expect the same if a class of 1500 or, so genes of another category were analyzed. They focus on several RBP known to be involved in disease and specifically Hnrnpa2b1 early during muscle regeneration which they show is increased in Pax7+ cells and in centrally localized nuclei of regenerating myofibers and decline four weeks later. Loss of Hnrnpa2b1 by CRISPR KO in the mouse C2C12 myoblast cell line reduces muscle differentiation (although it is unclear whether whether this result is derived from multiple independent clones or a single clone, and clonal isolates of C2C12 can have a wide variation in differentiation potential) and results in altered splicing of >2000 RNAs including other RNA binding proteins that regulate splicing as well as other RNA processing. To address the possibility that Hnrnpa2b1a is required for myogenic cell population transitions during regeneration, they used a machine learning approach inputting single cell sequence, C2C12 differentiation and Hnrnpa2b1 RNA-seq data. The result suggests a hypothesis that Hnrnpa2b1 splicing function is required for transitions of specific myogenic populations, which unfortunately the authors take as fact. eCLIP analysis of Hnrnpa2b1-associated RNAs in C2C12 proliferating and differentiated cultures was used to identify surprisingly small numbers of genes (247 and 137, respectively) perhaps owing to the high quality of the approach. The data was used to derive a so-called RBP engagement score correlating the expression of the RBP and its target pre-mRNA at the level of single cells. The results were used to support the hypothesis that Hnrnpa2b1 is required for transition from subclusters during myogenic cell transitions.\n\nThe results presented are of high quality and when released it will be a very useful data set. The analyses performed lead to reasonable hypothesis but, unfortunately, rarely are they tested and done so directly and rigorously. The authors generated a great deal of data that appears to be of high quality and then tried to make several attempts at connections to RNA binding proteins in human disease, splicing regulation and cross regulation of other RNA binding proteins with Hnrnpa2b1 as a major central regulator of muscle differentiation. Conclusions were often based on inference and correlation or lacked sufficient experimental support.\n\nThe results presented are of high quality and when released it will be a very useful data set. One main and in fact disturbing issue with the paper is the superficiality of many of the conclusions and a lack of rigor with regard to making conclusions, a list of only some examples is below. There are many examples of possibilities suggested, implied and what could be the case based on the data, but often the conclusions are based on highly derivative data and the likelihood of coming away with a solid new piece of information is quite weak. The analyses performed lead to reasonable hypothesis but rarely are they tested and done so directly and rigorously to a satisfying endpoint. A few conjectures are reasonable to present; however, some of their major conclusions are very weakly supported and other explanations are just as likely. One example is the conclusions that Hnrnpa2b1 is required for myogenic differentiation and that it is implied to be \"a central regulator within a network of splicing factors that directs specific myogenic cell fate\". The direct evidence that Hnrnpa2b1 is required for myogenic differentiation comes from CRISPR/Cas9 mediated knock out in C2C12. Clonal Hnrnpa2b1 knock out mouse C2C12 cell lines were generated and Figure 4 shows statistically significant reduced differentiation; however, it is very important to know whether this result is derived from multiple independent clones or a single clone. This information is not available in the manuscript. Clonal isolates of C2C12 will have a wide variation in differentiation potential given the heterogeneity of cells within the parental population. The authors need to demonstrate that the reduced differentiation potential is consistent among several KO cell lines; or show that the phenotype can be rescued by Hnrnpa2b1 expression. Another approach to avoid issues of clonal variability is to use siRNA knock down in a standard C2C12 culture that is known to be efficient throughout the period required for differentiation. With regard to the conclusion that Hnrnpa2b1 is among central regulators, like many statements and conclusions presented, it is quite possible but without a clear demonstration that loss of Hnrnpa2b1 has a consistent physiological effect, it could also be a minor player.\n\nIf the authors were to generate a conditional Hnrnpa2b1 KO that was muscle specific and tamoxifen-induced in adult mice (all doable), then did a regeneration assay as in Figure 1, would they find a critical role for Hnrnpa2b1 in regeneration and would they find blockage between subcluster 5 and 6? This would be the definitive experiment to support what is proposed but this is too much to ask.\n\nIn the end the technology the single cell Seq, eCLIP etc, are fantastic approaches but are also screens that need to be validated and while I don't understand the computational analysis (and who among the majority of reviewers of such work do), it does require subjective decisions of filtering and criteria selection that is largely opaque so also needs strong experimental validation to produce conclusions that will stand the test of time. In this manuscript I worry that the use of sophisticated technologies and derivative computational analysis supplants definitive experiments, independent validation and well supported conclusions.\n\nReviewer #2:\n\nIn this manuscript, the authors used single cell RNA-sequencing, machine learning and other strong techniques to determine the timing of RPB expression during muscle regeneration and identify the networks of RBPs involved in myogenic cell fate transitions.\n\nAuthors goal is novel and well framed. Their conclusions are mostly well supported by their extensive set of experiments and deep analysis of their result.\n\nThrough the data and analysis presented in the manuscript, the authors achieved their goal. Furthermore, the new information presented here has the potential to be used by several groups with expertise in specific muscle disorders to more deeply understand the mechanism behind those diseases.\n\nStrengths\n\n1. The research in this paper is novel in an area that is under-explored in the splicing field and furthermore it has strong implications in muscle diseases and muscle cell regeneration. I agree with authors' statement: \"little is known regarding the mechanisms regulating the timing of RBP function during myogenesis or the mechanisms by which RBPs influence myogenic cell fate decision\". Thus, this manuscript has the potential to fill this interesting gap of knowledge in the muscle field.\n\n2. The usage of machine learning is to explore post-transcriptional regulation during cell differentiation is very interesting\n\n3. Using single cell RNA-sequencing in muscle stem cells is a strong novelty and appropriate to achieve the goal of the study.\n\nWeakness\n\n1. It is unclear how the authors discriminate the direct effect of Hnrnpa2b1 on splicing and expression from the fact that cells are not differentiating. This is my main concern since we know that there are extensive changes during normal myogenesis and C2C12 myoblast differentiation into myotubes. I personally think that many, many of the changes that you are detecting are due to the absence of differentiation. I think this aspect / caveat should be discussed and/or rule out.\n\n1. Please, justify some of your statements with references or rationale from your side. One example is in line 169-171: \"Although the mechanism of myogenic cell fate change is clearly multifactorial, a likely driver of rapid and dynamic cell fate changes is post-transcriptional control of RNA.\". Why? Where are you basing this hypothesis on?\n\n2. Same here (lines 177-178): \"While RBP expression increases during muscle regeneration\u2026\". All RBPs are upregulated during muscle regeneration?? If so, please, provide the evidence.\n\n3. Figure 4 A-B: please support the microscopy evidence with a more quantitative method for protein expression such as Western blotting. Measuring intensity in microscopy images from immunofluorescence experiments is not an accurate way to quantify levels of protein expression especially when comparing different images. Please, also state which cells are you using in the text and the figure legend. Are those C2C12 cells? I guess so since those cells are used in other panels of Figure 4. But, please, clarify this.\n\n4. How are you discriminating the direct effect of Hnrnpa2b1 on splicing and expression from the fact that myoblasts are not differentiating into myotubes? This is my main concern since we know that there are extensive transcriptional and post-transcriptional changes during in vivo myogenesis and in vitro C2C12 myoblast differentiation into myotubes. I personally think that many of the changes that you are detecting might due to the absence of differentiation.\n\nReviewer #3:\n\nWheeler et al. use a number of informative tools to investigate the roles of RNA binding proteins (RBPs) in skeletal muscle cell fate decisions initially with scRNAseq of BaCl2 damaged TA muscle 4- and 7-days post injury (dpi) combined with machine learning and RBP engagement scoring to highlight a prominent role for Hnrnpa2b1 as a key myogenic differentiation factor. This conclusion is substantiated by analysis of C2C12 myogenic differentiation in vitro, where the authors unexpectedly discover that this RBP is not essential for myoblast proliferation but is required for myogenic differentiation. Identification of direct downstream splicing targets using RNAseq and eCLIP revealed that Mbnl1, Mbnl2 and Rbfox2, known RBP regulators of myogenesis, were altered in Hnrnpa2b1 KOs suggesting that this RBP is a central splicing and differentiation regulator. To differentiate direct vs indirect effects on splicing, eCLIP is performed and together with RBP engagement scoring and assignment of gene expression signatures to specific clusters indicates a subcluster 5 to 6 block due to Hnrnpa2b1 loss. While previous work has highlighted functions for various RBPs in muscle diseases, this study constitutes a significant addition since it alters our prior views of Hnrnpa2b1 functions during cell proliferation and differentiation, provides insights into stage-specific functions, and details an experimental pathway to similarly classify other ubiquitously expressed RBPs.\n\nThe presentation is generally clear but several issues should be addressed.\n\n1. Figures 2A, B and 3. Given the RBP hierarchical clustering and scRNA expression analysis of myogenic clusters, which revealed similar patterns for Hnrnpa1 and Hnrnpa2b1 (except for Subcluster 3), additional justification should be included for the subsequent exclusive focus on Hnrnpa2b1. For example, in Figure 3, do expression characteristics following injury differ between these two RBPs?\n\n2. Figure 4F. Additional information on the differentiation defect in Hnrnpa1b1 KO myoblasts would be helpful \u2013 do the KO myoblasts show any morphological changes after differentiation induction?\n\n4. Figure 5B. The exon/intron patterns for Mbnl1, Mbnl2 and Rbfox2 appear to differ significantly from the UCSC browser view (in contrast, Hnrnpa2b1 in Figure S6F/G is correct) so confirm genomic coordinates. In addition, discuss the exons that are up/down in the Hnrnpa2b1 KO and how these alternative splicing patterns might affect the activity or localization of the encoded RBP isoforms.\n\n5. Figure 6A. The majority of Hnrnpa2b1 eCLIP tags are in the 3'UTR (myoblasts, ~47%; myotubes ~65%) so does this suggest that the predominant problem in Hnrnpa2b1 KOs is RNA localization, translation and/or turnover. On p16 (last sentence), note that in myoblasts distal intron binding sites predominate over proximal.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"RNA-binding proteins direct myogenic cell fate decisions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Reviewing Editor Douglas Black and Senior Editor James Manley. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nSince this study was previously rejected for publication in eLife, this submission is considered a new manuscript.\n\nWheeler and colleagues investigate the roles of RNA binding proteins in muscle cell fate decisions initially using single cell (sc)RNAseq analysis of injured skeletal muscle at 4- and 7-days post injury. They develop a myogenesis trajectory map and focus on three cell populations that are divided into 9 subclusters defined for connectivity. MuSC RBP expression in subclusters 0-6 revealed high expression of Hnrnpa1 and Hnrnpa2b1. Hnrnpa2b1 levels were seen to increase during regeneration in Pax7+ MuSCs and myofibers. Hnrnpa2b1 knockout clones continue to proliferate but fail to differentiate, and exhibit a large number splicing alterations from wildtype cells, including in the developmental regulators Mbnl1, Mbnl2 and Rbfox2. Direct RNA targets of Hnrnpa2b1 were identified by eCLIP. They use a machine learning tool to estimate myogenic subcluster contributions to bulk RNAseq datasets of proliferating and differentiating myoblasts, with Hnrnpa2b1 loss predicted to lead to subcluster-specific splicing changes.\n\nAll of the reviewers found this study to be of interest \u2013 providing new insights into RNA metabolism in differentiating muscle and defining stage-specific functions of an important RBP. Nevertheless, a number of issues were raised regarding the data interpretation as well as aspects of the bioinformatics analysis. Addressing these will require additional analyses and other modifications to the study.\n\nEssential revisions\n\n1. There are extensive changes in splicing during normal myogenesis and C2C12 myoblast differentiation into myotubes. The Hnrnpa2b1 C2C12 knockout clones fail to differentiate, so many of the splicing effects may simply reflect failed differentiation and not direct regulation by Hnrnpa2b1. This question was brought up in reviews of the earlier study and is still a concern that is not resolved by the new analyses and bioinformatics. Transcriptional and posttranscriptional changes observed in the Hnrnpa2b1 KO cells should be compared to those known to occur during normal C2C12 cell differentiation (data available in Singh et al., Molecular Cell 2014 PMID: 25087874 and possibly elsewhere). This analysis will allow the authors to discuss how the Hnrnpa2b1 splicing program might differ from a presumably larger program occurring with differentiation.\n\n2. The majority of Hnrnpa2b1 eCLIP tags are in the 3'UTR (myoblasts, ~47%; myotubes ~65%). However, the final model is that Hnrnpa2b1 regulates cell fate decisions via modulation of RNA splicing of both direct targets and alterations in other splicing regulators. It seems likely that other Hnrnpa2b1-mediated events will be equally if not more important. Processes potentially affected by 3' UTR binding include mRNA translation, localization and decay, all of which likely contribute to a differentiation program. The authors should assess whether transcripts bound by Hnrnpa2b1 in their 3' UTR show changes in overall expression rather than splicing in response to Hnrnpa2b1 depletion. Are these 3' UTR binding sites found adjacent to recognition elements for muscle specific microRNAs? Given the many examples of RNA binding proteins of this type affecting differentiation by modulating the processing of pri or pre-miRNAs to mature miRNAs, the authors should examine their existing RNAseq and iCLIP data for evidence of Hnrnpa2b1 affecting miRNA precursors. They should consider profiling the miRNAs in their cells by short RNA sequencing.\n\n3. The genomic data and bioinformatic analyses are not sufficiently described to be adequately assessed.\n\nA. The authors identified over 2000 target RNAs altered in Hnrnpa2b1 KO cells, were these genes or alternative splicing events? It is not clear what degree of confidence can be placed on these findings. How many replicates were profiled? What is the magnitude of the splicing changes? What criteria were used to determine if these changes resulted from direct regulation by Hnrnpa2b1 or were due to indirect effects such as failure to differentiate as described above?\n\nB. The authors point out altered splicing in the splicing regulators Mbnl1/2 and Rbfox2. From the data shown, it is difficult to judge the magnitude of splicing changes, and whether they are sufficient to actually have an impact on their downstream targets.\n\nC. The quality of eCLIP data is unclear. The number of tags before cluster identification is not described in the main text. From the examples shown in Figure S6 F,G, the CLIP tags are widely distributed and somewhat similar to the input. This is an indication of a possible high background in the IP, which may explain the small number of significant peaks when normalized to input. It is unclear whether the binding sites identified by CLIP support splicing changes identified by RNA-seq.\n\nD. Validation of the engagement scoring is not presented. While an RBP and its target need to be coexpressed for a regulatory process to occur, it is not clear how co-expression alone will provide a measure of regulatory activity. For example, if an RBP suppresses gene expression, it might be anticorrelated with its targets.\n\nReviewer #1:\n\nRNA binding proteins (RBPs) play key roles in muscle stem cell (MuSC) quiescence, activation and self-renewal, and disease-associated RBP mutations have been linked to severe muscle loss. In this study, Wheeler and colleagues investigate RBP roles in muscle cell fate decisions initially using single cell (sc)RNAseq analysis of injured skeletal muscle at 4- and 7-days post injury. To define the myogenesis trajectory map they subsequently focus on three cell populations that are further divided into 9 subclusters followed by RNA velocity and partition-based abstraction to highlight inter-cluster connectivity and directionality. MuSC RBP expression in subclusters 0-6 revealed high expression of Hnrnpa1 and Hnrnpa2b1, and since a previous study demonstrated myofibril hypoplasia in mouse Hnrnpa1 knockout mice, they pursued Hnrnpa2b1. Hnrnpa2b1 levels increase during regeneration in Pax7+ MuSCs and myofibers. Multiple Hnrnpa2b1 knockout clones show significant myoblast fusion, but not proliferation, defects and splicing alterations in the developmental regulators Mbnl1, Mbnl2 and Rbfox2. Since the observed splicing changes could result from indirect effects of differentiation failure, they used a machine learning tool to determine myogenic subcluster levels from bulk RNAseq datasets of proliferating and differentiating myoblasts. They find that Hnrnpa2b1 loss leads to subcluster-specific splicing changes, and direct vs indirect RNA targets were identified by eCLIP and RNA engagement scoring. While previous studies have analyzed scRNAseq of regenerating muscle, this study provides novel insights into stage-specific functions of an important RBP and thus provides an experimental pathway to similarly classify additional RBPs. Although prior studies have also analyzed scRNAseq of regenerating muscle, the RBP emphasis and experimental strategy is novel and the observed effects of Hnrnpa2b1 loss on the splicing of other developmental splicing factors is an important contribution. Hnrnpa21 C2C12 knockout clones fail to differentiate, so a remaining concern is that many of the splicing effects may simply reflect failed differentiation although the authors could address this issue by knockout an unrelated gene that is required for C2C12 differentiation.\n\nReviewer #2:\n\nIn this manuscript, the authors used single cell RNA-sequencing, machine learning and other novel techniques to determine the timing of RPB expression during muscle regeneration and identify the networks of RBPs involved in myogenic cell fate transitions.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"RNA-binding proteins direct myogenic cell fate decisions\" for further consideration by eLife. Your revised article has been evaluated by James Manley (Senior Editor) and Douglas Black (Reviewing Editor).\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nRegarding the correlation of the hnRNP A2B1 binding to splicing regulation, you should consider the standard approach of generating an RBP map that shows clip binding density in relation to a metagene derived from all the up and downregulated exons. There are several tools available for doing this and you should assess whether they can be applied to your data. Such a map would be useful to determine whether splicing activation and repression by hnRNP A2B1 showed similar dependence on binding site position relative the exon as seen with some other regulators, and whether hnRNP A2B1 behaves similarly to its homolog hnRNP A1. In the absence of such a map or in addition, it would also be helpful to show an example or two of a clip peak mapping to a strongly regulated exon. As the data are currently presented it is difficult to assess the Clip in relation to the splicing changes, which your response indicates you want to emphasize.\n",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3d453eba-2477-4943-8a95-0909827b19f3",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C1",
+      "claim": "RNA-binding proteins (RBPs) are essential for skeletal muscle regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-binding proteins (RBPs), essential for skeletal muscle regeneration, cause muscle degeneration and neuromuscular disease when mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "d9dc8c60-119d-4e80-94ce-3c83f323c532",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C2",
+      "claim": "Mutations in RBPs cause muscle degeneration and neuromuscular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-binding proteins (RBPs), essential for skeletal muscle regeneration, cause muscle degeneration and neuromuscular disease when mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "23e0d83b-4158-4382-887a-d537a4a5955a",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C3",
+      "claim": "RBP expression is temporally regulated in skeletal muscle stem cells during myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA-sequencing of regenerating Mus musculus skeletal muscle reveals that RBP expression, including the expression of many neuromuscular disease-associated RBPs, is temporally regulated in skeletal muscle stem cells and correlates with specific stages of myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-cell RNA-sequencing data presented in the manuscript, specifically in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "d74872a2-b7d8-4dbe-923e-a7397bbded9a",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C4",
+      "claim": "RBP expression correlates with specific stages of myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA-sequencing of regenerating Mus musculus skeletal muscle reveals that RBP expression, including the expression of many neuromuscular disease-associated RBPs, is temporally regulated in skeletal muscle stem cells and correlates with specific stages of myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through hierarchical clustering analysis in Figure 2A and expression profiles in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "e03f7f6a-c7b3-4264-99ae-a310772f7213",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C5",
+      "claim": "Hnrnpa2b1 is a differentiation-specifying regulator of myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining machine learning with RBP engagement scoring, we discovered that the neuromuscular disease-associated RBP Hnrnpa2b1 is a differentiation-specifying regulator of myogenesis that controls myogenic cell fate transitions during terminal differentiation in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental approaches including knockout studies, RNA-sequencing, and machine learning analysis presented in Figures 4-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "121f2094-4a9f-48dc-baa9-1e69be9e272e",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C6",
+      "claim": "Hnrnpa2b1 controls myogenic cell fate transitions during terminal differentiation in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining machine learning with RBP engagement scoring, we discovered that the neuromuscular disease-associated RBP Hnrnpa2b1 is a differentiation-specifying regulator of myogenesis that controls myogenic cell fate transitions during terminal differentiation in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through CIBERSORTx analysis showing accumulation of cells in specific subclusters upon Hnrnpa2b1 knockout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "d4025e29-61ed-4e48-9fe5-da14df9e633b",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C7",
+      "claim": "The timing of RBP expression specifies cell fate transitions by providing post-transcriptional regulation of messenger RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of RBP expression specifies cell fate transitions by providing post-transcriptional regulation of messenger RNAs that coordinate stem cell fate decisions during tissue regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central conclusion of the study, supported by the temporal expression patterns and functional studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "bb98e918-3b99-4441-b128-2ca6539c2b12",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C8",
+      "claim": "Skeletal muscle is among the longest-lived tissues in the human body.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle is among the longest-lived tissues in the human body, is essential for locomotion, respiration, and longevity, and thus requires constant maintenance (Sharples et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "0fbb5cf5-ea6d-4c5a-9e04-80ee1cd6e0e2",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C9",
+      "claim": "Skeletal muscle is essential for locomotion, respiration, and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle is among the longest-lived tissues in the human body, is essential for locomotion, respiration, and longevity, and thus requires constant maintenance (Sharples et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "ab66024c-992f-4553-a12f-54d3ebd4a865",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C10",
+      "claim": "Skeletal muscle requires constant maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle is among the longest-lived tissues in the human body, is essential for locomotion, respiration, and longevity, and thus requires constant maintenance (Sharples et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "d1f184ff-9f9c-4640-ad63-d6969036b63d",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C11",
+      "claim": "Skeletal muscle is comprised of postmitotic myofibers that house resident muscle stem cells (MuSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle is comprised of postmitotic myofibers that house resident muscle stem cells (MuSCs), which can repair skeletal muscle following damage (Lepper et al., 2011; Murphy et al., 2011; Sambasivan et al., 2011; Shi and Garry, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "387a40cb-e618-46e2-bdd8-5a2d99f79c51",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C12",
+      "claim": "MuSCs can repair skeletal muscle following damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle is comprised of postmitotic myofibers that house resident muscle stem cells (MuSCs), which can repair skeletal muscle following damage (Lepper et al., 2011; Murphy et al., 2011; Sambasivan et al., 2011; Shi and Garry, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "e3290164-0a4f-4d94-a109-02f61c71a257",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C13",
+      "claim": "MuSCs are typically quiescent.",
+      "claim_type": "EXPLICIT",
+      "source": "MuSCs are typically quiescent, but (Feige et al., 2018) in response to muscle injury, MuSCs activate, proliferate, and then either self-renew or differentiate and fuse to repair myofibers (Baghdadi and Tajbakhsh, 2018; Sincennes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "93d6ab80-989a-4051-a012-9911d6194701",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C14",
+      "claim": "In response to muscle injury, MuSCs activate, proliferate, and then either self-renew or differentiate and fuse to repair myofibers.",
+      "claim_type": "EXPLICIT",
+      "source": "MuSCs are typically quiescent, but (Feige et al., 2018) in response to muscle injury, MuSCs activate, proliferate, and then either self-renew or differentiate and fuse to repair myofibers (Baghdadi and Tajbakhsh, 2018; Sincennes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "4506afd6-5ca6-4902-b5f9-f6ec8972eb41",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C15",
+      "claim": "In response to damage, MuSCs exit quiescence and progress through a hierarchical, dynamic myogenic program.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in response to damage, MuSCs exit quiescence and progress through a hierarchical, dynamic myogenic program and either commit to terminal differentiation or self-renew and reacquire a quiescent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key observation from single-cell analyses with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "1e3e57d1-fdcd-4cdd-8cd5-d42884b096fd",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C16",
+      "claim": "As activated MuSCs progress through myogenesis, MuSCs experience dramatic global changes in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, as activated MuSCs progress through myogenesis, MuSCs experience dramatic global changes in gene expression (Barruet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "975b105e-676c-4290-8291-b4663a2e59e4",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C17",
+      "claim": "RBPs regulate RNA splicing where RNA is targeted and bound by RBPs co-transcriptionally to ensure correct splicing of nascent RNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "RBPs regulate RNA splicing, where RNA is targeted and bound by RBPs co-transcriptionally to ensure correct splicing of nascent RNA transcripts (Dassi, 2017; Hentze et al., 2018) where alternative RBP-mediated splicing yields a rich diversity of RNA isotypes critical for translating proteins that regulate myogenesis (Brinegar et al., 2017; Imbriano and Molinari, 2018; Nakka et al., 2018; Weskamp et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "edf7f598-a98a-47a7-a590-2fd52f25b334",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C18",
+      "claim": "Alternative RBP-mediated splicing yields a rich diversity of RNA isotypes critical for translating proteins that regulate myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "RBPs regulate RNA splicing, where RNA is targeted and bound by RBPs co-transcriptionally to ensure correct splicing of nascent RNA transcripts (Dassi, 2017; Hentze et al., 2018) where alternative RBP-mediated splicing yields a rich diversity of RNA isotypes critical for translating proteins that regulate myogenesis (Brinegar et al., 2017; Imbriano and Molinari, 2018; Nakka et al., 2018; Weskamp et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "36680dd3-208d-4bd3-9459-facac744c38b",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C19",
+      "claim": "The loss of specific RBPs and the resultant effects on splicing affect MuSC quiescence, MuSC activation, and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of specific RBPs and the resultant effects on splicing affect MuSC quiescence, MuSC activation, and differentiation; mutations in RBPs are associated with muscular dystrophies and age-related neuromuscular diseases (Calado et al., 2000; Hinkle et al., 2019; Xue et al., 2020; Yu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "741155f8-3a46-4d53-95ef-2848e3699201",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C20",
+      "claim": "Mutations in RBPs are associated with muscular dystrophies and age-related neuromuscular diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of specific RBPs and the resultant effects on splicing affect MuSC quiescence, MuSC activation, and differentiation; mutations in RBPs are associated with muscular dystrophies and age-related neuromuscular diseases (Calado et al., 2000; Hinkle et al., 2019; Xue et al., 2020; Yu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "6e01bcf2-9dc6-47d4-88c6-291fe05d40c0",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C21",
+      "claim": "Amyotrophic lateral sclerosis, inclusion body myopathy, and muscular dystrophies are caused by RBP mutations, leading to progressive muscle degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Amyotrophic lateral sclerosis, inclusion body myopathy, and muscular dystrophies are caused by RBP mutations, leading to progressive muscle degeneration (Lukong et al., 2008; Xue et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "b3959f5c-5966-4d8b-a599-4cc7374b9e62",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C22",
+      "claim": "Disease-causing mutations in RBPs frequently impair RBP splicing function.",
+      "claim_type": "EXPLICIT",
+      "source": "In these disorders, disease-causing mutations frequently impair RBP splicing function (Cortese et al., 2014; Singh et al., 2018; Taylor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "d3165508-fa05-49c5-bb22-3d24c5b7eb78",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C23",
+      "claim": "Restoring RBP splicing function prevents or delays the onset of neuromuscular disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Restoring RBP splicing function prevents or delays the onset of these disorders, identifying splicing dysregulation as a key driver of pathology (Naryshkin et al., 2014; Scotti and Swanson, 2016; Wirth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "ba508a6f-655b-4f14-9bc5-b30f00c993e4",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C24",
+      "claim": "Splicing dysregulation is a key driver of pathology in neuromuscular disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Restoring RBP splicing function prevents or delays the onset of these disorders, identifying splicing dysregulation as a key driver of pathology (Naryshkin et al., 2014; Scotti and Swanson, 2016; Wirth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "686ed839-2012-4b2f-8636-7d764ef46b96",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C25",
+      "claim": "MuSCs produce the majority of myonuclei by 4 days post injury (dpi).",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle has a remarkable ability to repair following injury mediated by MuSCs, which activate, proliferate, and differentiate to produce the majority of myonuclei by 4 days post injury (dpi) (De Micheli et al., 2020; Cuter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "108f11df-dfa2-4fd8-b418-3add6ac76246",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C26",
+      "claim": "Single-cell RNA-sequencing was performed on regenerating skeletal muscle at 4 dpi and 7 dpi following BaCl2 injection into adult mouse tibialis anterior muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed single-cell RNA-sequencing on regenerating skeletal muscle at 4 dpi and 7 dpi following an injury by BaCl2 injection into adult mouse tibialis anterior (TA) muscles (Caldwell et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "362f572b-41ca-4810-9186-c78329511ae8",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C27",
+      "claim": "Sequencing dataset analyses show strong reproducibility amongst biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing dataset analyses show strong reproducibility amongst biological replicates (Figure 1\u2014figure supplement 1A and B) defining the cellular composition of regenerating skeletal muscle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "71aa9841-201e-4bac-b26b-1b0fb258d74e",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C28",
+      "claim": "The cellular constituents identified overlap with recently published muscle single-cell RNA-sequencing datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular constituents we identified overlap with recently published muscle single-cell RNA-sequencing datasets (Barruet et al., 2020; De Micheli et al., 2020; Dell'Orso et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "920d11bc-a804-4e78-ba0f-dffb048ac5de",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C29",
+      "claim": "Gene expression and cell cycle scoring analysis reveals three dominant myogenic clusters: a proliferative Pax7-positive MuSC population, a differentiating Myogenin-positive population exiting cell cycle, and a postmitotic, terminally differentiating muscle population expressing sarcomeric mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression and cell cycle scoring analysis of the myogenic cells reveals three dominant myogenic clusters: (i) a proliferative Pax7-positive MuSC population, (ii) a differentiating Myogenin (Myog)-positive population exiting cell cycle, and (iii) a postmitotic, terminally differentiating muscle population expressing sarcomeric mRNAs (Figure 1B and C, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 1B, 1C, and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "d0980a00-0064-4f4b-a69b-dc7c07d78430",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C30",
+      "claim": "The dominant myogenic populations are further subclassified into nine subclusters.",
+      "claim_type": "EXPLICIT",
+      "source": "These dominant myogenic populations are further subclassified into nine subclusters that define the regenerating myogenic population (Figure 1D) and may represent cells at various points along a more continuous differentiation trajectory or may reflect specific cell state transition points during myogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "449c68d5-0ebf-4fbd-ba55-a769736dca78",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C31",
+      "claim": "RNA velocity shows myogenic differentiation directionality within specific subclusters.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA velocity shows myogenic differentiation directionality within specific subclusters (Figure 1\u2014figure supplement 1C), resolving myogenic differentiation trajectories using processed and unprocessed RNA (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "20c1eb0e-f512-4cc3-9374-00fe066d2c3b",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C32",
+      "claim": "PAGA identified a directed connectivity between the myogenic subclusters 0\u20136.",
+      "claim_type": "EXPLICIT",
+      "source": "PAGA identified a directed connectivity between the myogenic subclusters 0\u20136 (Figure 1E, Figure 1\u2014figure supplement 1D) where we see robust connections between MuSC clusters and differentiating clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1E and Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "c0205c3a-9a6a-404e-9945-4b27c0495949",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C33",
+      "claim": "Very few connections lead to mature muscle, suggesting that progenitor MuSC fate decisions are plastic.",
+      "claim_type": "EXPLICIT",
+      "source": "Very few connections lead to mature muscle, suggesting that progenitor MuSC fate decisions are plastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the PAGA connectivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "9552cad6-06b6-4a36-88c3-f4ea01a96a34",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C34",
+      "claim": "The commitment to terminal differentiation may follow a single universal pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the commitment to terminal differentiation may follow a single universal pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the PAGA connectivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "0ee86dcc-0912-46ee-95e4-5e5f1ad3e4a7",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C35",
+      "claim": "Hierarchical clustering identifies networks of RBPs that are either upregulated or downregulated in specific subclusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We first examined which RBPs are expressed in MuSCs in subclusters 0\u20136 (Castello et al., 2012; Perez-Perri et al., 2018) and subsequently performed hierarchical clustering for the expressed RBP transcripts in each subcluster (Figure 2A). These results identify networks of RBPs that are either upregulated or downregulated in specific subclusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "91bcdab4-0ffc-4577-8a85-735630516f78",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C36",
+      "claim": "As the transcriptional state of MuSCs changes, the expression of RBP networks also changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as the transcriptional state of MuSCs changes so too does the expression of RBP networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the hierarchical clustering results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "9acedf20-0ed8-4500-8c00-7c5dabd99abb",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C37",
+      "claim": "Tardbp expression is highest in subcluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on these disease-associated RBPS, we found that Tardbp expression is highest in subcluster 1, and in contrast, Hnrnpa2b1 expression is highest in subcluster 3, while Tia1 expression is highest in subcluster 6 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "b73bb47f-a1ab-4642-ac01-6d26ba36091f",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C38",
+      "claim": "Hnrnpa2b1 expression is highest in subcluster 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on these disease-associated RBPS, we found that Tardbp expression is highest in subcluster 1, and in contrast, Hnrnpa2b1 expression is highest in subcluster 3, while Tia1 expression is highest in subcluster 6 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "8ea8cea5-a048-4327-b029-022a58b927e1",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C39",
+      "claim": "Tia1 expression is highest in subcluster 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on these disease-associated RBPS, we found that Tardbp expression is highest in subcluster 1, and in contrast, Hnrnpa2b1 expression is highest in subcluster 3, while Tia1 expression is highest in subcluster 6 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "2907de50-14f5-4938-ad05-9fb5b37afd7b",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C40",
+      "claim": "Hnrnpa1 and Hnrnpa2b1 are two of the most highly expressed RBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the most highly expressed RBPs are Hnrnpa1 and Hnrnpa2b1 (Figure 2B), and when disrupted cause inclusion body myopathy (Kim et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "ac643dc4-a1c6-46ef-ba7c-3f564924c44f",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C41",
+      "claim": "Disruption of Hnrnpa1 and Hnrnpa2b1 causes inclusion body myopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the most highly expressed RBPs are Hnrnpa1 and Hnrnpa2b1 (Figure 2B), and when disrupted cause inclusion body myopathy (Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "da8a5e40-d37a-4111-af92-99d7042d555e",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C42",
+      "claim": "Hnrnpa1 function is essential for muscle differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "While Hnrnpa1 function is essential for muscle differentiation, Hnrnpa2b1 function in muscle is unknown (Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "85c08b43-7d79-4ce0-809a-c3bd8960f817",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C43",
+      "claim": "Hnrnpa2b1 function in muscle is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "While Hnrnpa1 function is essential for muscle differentiation, Hnrnpa2b1 function in muscle is unknown (Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "67b9b376-5935-4b78-8421-873abbf7c584",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C44",
+      "claim": "Hnrnpa2b1 regulates RNA splicing, stability, and transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 regulates RNA splicing, stability, and transport (Alarc\u00f3n et al., 2015; Geissler et al., 2016; Percipalle et al., 2002) and, in stem cells, Hnrnpa2b1 regulates differentiation (Wang et al., 2018) and proliferation (He and Smith, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "26735d11-a6c5-495d-a229-4495fa367709",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C45",
+      "claim": "In stem cells, Hnrnpa2b1 regulates differentiation and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 regulates RNA splicing, stability, and transport (Alarc\u00f3n et al., 2015; Geissler et al., 2016; Percipalle et al., 2002) and, in stem cells, Hnrnpa2b1 regulates differentiation (Wang et al., 2018) and proliferation (He and Smith, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "a76285d4-4ee8-49c1-bb47-c14d384412bc",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C46",
+      "claim": "In uninjured muscle, Hnrnpa2b1 is present in a subset of Pax7-positive MuSCs and in some peripherally located myonuclei in mature skeletal muscle fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the levels of Hnrnpa2b1 protein in regenerating muscle in vivo where in uninjured muscle, Hnrnpa2b1 is present in a subset of Pax7-postitive MuSCs and in some peripherally located myonuclei in mature skeletal muscle fibers (Figure 3A and B, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3A, 3B, and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "772b4fa9-4991-4cd4-989f-e0ea84e7c382",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C47",
+      "claim": "By 5 dpi, Hnrnpa2b1 protein levels increase and Hnrnpa2b1 is present in the majority of Pax7-positive MuSCs and centrally located myonuclei of immature regenerating myofibers.",
+      "claim_type": "EXPLICIT",
+      "source": "By 5 dpi, Hnrnpa2b1 protein levels increase and Hnrnpa2b1 is present in the majority of Pax7-postitive MuSCs and centrally located myonuclei of immature regenerating myofibers (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 3A-C and Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "4b278d7a-4f74-46fd-9c96-32889ce9f35f",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C48",
+      "claim": "Hnrnpa2b1 levels peak at 10 dpi in both Pax7-positive MuSCs and regenerating myofibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 levels peak at 10 dpi in both Pax7-positive MuSCs and regenerating myofibers and then Hnrnpa2b1 levels decline as myofibers fully regenerate by 28 dpi (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A,C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 3A-C and Figure 3\u2014figure supplement 1A, C, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "7c381fe1-1574-481c-8497-e82aa404d3f0",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C49",
+      "claim": "Hnrnpa2b1 levels decline as myofibers fully regenerate by 28 dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 levels peak at 10 dpi in both Pax7-positive MuSCs and regenerating myofibers and then Hnrnpa2b1 levels decline as myofibers fully regenerate by 28 dpi (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A,C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 3A-C and Figure 3\u2014figure supplement 1A, C, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "a688b407-6cb6-4371-8e5e-e71081a046e8",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C50",
+      "claim": "The changes in Hnrnpa2b1 protein levels correlate well with expression dynamics detected by single-cell sequencing in regenerating muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the changes in Hnrnpa2b1 protein levels correlate well with expression dynamics detected by single-cell sequencing in regenerating muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation comparing protein levels to RNA-sequencing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "78bea267-9287-4c7b-92f4-d78ed3302c09",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C51",
+      "claim": "Hnrnpa2b1 immunoreactivity increases during myoblast differentiation, peaking by 3 days of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 immunoreactivity increases during myoblast differentiation, peaking by 3 days of differentiation, and declines as differentiating myoblasts and myotubes mature (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "89179913-c560-4729-b949-228fc98b498e",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C52",
+      "claim": "Hnrnpa2b1 WT and knockout cells show no significant differences in proliferation when labeled with EdU.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 wild type (WT) and knockout (KO) cells show no significant differences in proliferation when labeled with a timed pulse of the thymidine analog 5-ethynyl-2\u2032-deoxyuridine (EdU; Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "668d9855-b26a-4dcc-a07e-6633e99a0f63",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C53",
+      "claim": "The Hnrnpa2b1 WT and KO populations exhibit no differences in nuclear morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hnrnpa2b1 WT and KO populations exhibit no differences in nuclear morphology (Figure 4\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 4\u2014figure supplement 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "d966a973-35cf-4e78-8972-7563d08bd3ad",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C54",
+      "claim": "Differentiation is impaired upon loss of Hnrnpa2b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiation is impaired upon loss of Hnrnpa2b1. After 48 hr of differentiation, Hnrnpa2b1 WT myoblasts had largely differentiated into multinucleated, myosin heavy chain-positive myotubes (Figure 4F and G). Conversely, Hnrnpa2b1 KO myoblasts were unable to form large multinucleated myotubes (Figure 4F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "2eb4a7fa-3949-40fa-9d36-3d71f5718ac4",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C55",
+      "claim": "Hnrnpa2b1 KO myoblasts are unable to form large multinucleated myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Hnrnpa2b1 KO myoblasts were unable to form large multinucleated myotubes (Figure 4F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "92bfd8fc-2ad0-42b8-81e0-ee0357d5f02b",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C56",
+      "claim": "Hnrnpa2b1 function is required for differentiation, but not proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Hnrnpa2b1 function is required for differentiation, but not proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EdU incorporation and differentiation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "dc5a3469-1046-4d78-96a2-82fc0a94a81e",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C57",
+      "claim": "Differential splicing analysis identifies 2167 alternatively spliced RNAs of which 40% are differentially expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential splicing analysis identifies 2167 alternatively spliced RNAs of which 40% are differentially expressed (Figure 5A, Figure 5\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 5A and Figure 5\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "6a38312e-b80f-45c2-b60e-5f2db24055a9",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C58",
+      "claim": "Hnrnpa2b1 regulates the splicing of other RBPs including Mbnl1, Mbnl2, and Rbfox2.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential splicing analysis reveals that Hnrnpa2b1 regulates the splicing of other RBPs. Many of these RBPs in turn regulate RNA splicing, including Mbnl1, Mbnl2, and Rbfox2 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "c9e8d5b0-dfef-41ad-98db-1653647f9a10",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C59",
+      "claim": "Loss of Rbfox2 or loss of both Mbnl1 and Mbnl2 impairs myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rbfox2 or loss of both Mbnl1 and Mbnl2 impairs myogenic differentiation (Lee et al., 2013; Singh et al., 2014), and thus Hnrnpa2b1 loss appears to lead to the exclusion of Mbnl1, Mbnl2, and Rbfox2 exons encoding zinc fingers and RNA recognition motifs, respectively, which are predicted to disrupt function of these RBPs (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "c1475f2b-2b04-4570-917d-5ca38d8e36a7",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C60",
+      "claim": "Hnrnpa2b1 loss leads to the exclusion of Mbnl1, Mbnl2, and Rbfox2 exons encoding zinc fingers and RNA recognition motifs, which are predicted to disrupt function of these RBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rbfox2 or loss of both Mbnl1 and Mbnl2 impairs myogenic differentiation (Lee et al., 2013; Singh et al., 2014), and thus Hnrnpa2b1 loss appears to lead to the exclusion of Mbnl1, Mbnl2, and Rbfox2 exons encoding zinc fingers and RNA recognition motifs, respectively, which are predicted to disrupt function of these RBPs (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "7a8c3be9-b194-435c-beb4-ccdd77aa62dc",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C61",
+      "claim": "The alternatively spliced RNAs in Hnrnpa2b1 KO cells, compared to Mbnl1, Mbnl2 double KO cells, significantly overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternatively spliced RNAs in Hnrnpa2b1 KO cells, compared to Mbnl1, Mbnl2 double KO cells, significantly overlap (hypergeometric p-value=1.2 \u00d7 10-77).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a statistical p-value to support the claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "95d7391f-cf91-4c03-a237-1444b9a45797",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C62",
+      "claim": "Alternatively spliced RNAs in Hnrnpa2b1 KO cells and Rbfox2 KO cells also overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, alternatively spliced RNAs in Hnrnpa2b1 KO cells and Rbfox2 KO cells also overlap (hypergeometric p-value=6.1 \u00d7 10-143) (Figure 5C), demonstrating that Hnrnpa2b1 loss likely leads to altered splicing of RNAs regulated by Mbnl1, Mbnl2, and Rbfox2, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with a statistical p-value and supported by Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "a6663b26-ed9e-47d2-afce-4765ea5a13aa",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C63",
+      "claim": "Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 may cooperatively regulate target RNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "As RBPs function together to co-regulate the splicing of target RNAs (Klinck et al., 2014; Venables et al., 2013), Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 may cooperatively regulate target RNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations and is an inference from the data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "7f5e30a7-2a62-4daa-b5f3-aa2b096f05ad",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C64",
+      "claim": "Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 KOs exhibit identical splice site location and share changes in splicing of target RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 KOs exhibit identical splice site location and share changes in splicing of target RNAs (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "560e2f11-82a3-49f1-841f-843d22fa7f3a",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C65",
+      "claim": "Hnrnpa2b1 KO cells show an enrichment for subcluster 5 myogenic cell signatures and a decrease in subcluster 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 KO cells show an enrichment for subcluster 5 myogenic cell signatures and a decrease in subcluster 7 (Figure 5D), demonstrating that Hnrnpa2b1 KO cells are slow to transition to subcluster 7 and accumulate in subcluster 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "bf54f9fd-759d-41bf-9324-0cd638563b00",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C66",
+      "claim": "Hnrnpa2b1 KO cells are slow to transition to subcluster 7 and accumulate in subcluster 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 KO cells show an enrichment for subcluster 5 myogenic cell signatures and a decrease in subcluster 7 (Figure 5D), demonstrating that Hnrnpa2b1 KO cells are slow to transition to subcluster 7 and accumulate in subcluster 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the CIBERSORTx results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "72d63794-afa5-47c1-b31b-f4c9aec080fa",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C67",
+      "claim": "Hnrnpa2b1 KO alters splicing in each of the myogenic clusters, with cluster 5 showing the most changes in splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the splicing changes for the differentially expressed genes, we found that Hnrnpa2b1 KO alters splicing in each of these clusters, with cluster 5 showing the most changes in splicing (Figure 5E, Figure 5\u2014figure supplement 1E, Figure 5\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 5E, Figure 5\u2014figure supplement 1E, and Figure 5\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "5dd59326-ffef-455f-85e0-9068b4d41bd9",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C68",
+      "claim": "Hnrnpa2b1 eCLIP reveals 808 binding sites across 247 genes for myoblasts and 1030 binding sites across 137 genes for myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 eCLIP reveals 808 binding sites across 247 genes for myoblasts and 1030 binding sites across 137 genes for myotubes, which are significantly enriched compared to size-matched input (reflecting all RNA\u2013protein interactions in the input) (Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 6\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "f21280a2-44f0-4081-8c27-4f1129476369",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C69",
+      "claim": "Hnrnpa2b1 RNA target eCLIP peaks were highly correlated between biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Hnrnpa2b1 RNA target eCLIP peaks were highly correlated between biological replicates, had thousands of reproducible eCLIP clusters by irreproducible discovery rate analysis, and capture prior identified Hnrnpa2b1 RNA targets including Hnrnpa2b1's own 3\u2032UTR (Figure 6\u2014figure supplement 1D\u2013G; Martinez et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 6\u2014figure supplement 1D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "194a87a5-3978-4219-ae0c-cad5ddbba7e8",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C70",
+      "claim": "Analysis of Hnrnpa2b1 RNA-binding sites reveals an enrichment for binding sites in the 3\u2032UTR and proximal introns of target RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Hnrnpa2b1 RNA-binding sites reveals an enrichment for binding sites in the 3\u2032UTR and proximal introns of target RNAs, potentially indicating a role of Hnrnpa2b1 in RNA localization or translation (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "7008cf6c-9db8-47d7-96a0-48e966d4aa80",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C71",
+      "claim": "Hnrnpa2b1 binding maps closely to splicing clusters, indicating a role for Hnrnpa2b1 in splicing regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, Hnrnpa2b1 binding maps closely to splicing clusters, indicating a role for Hnrnpa2b1 in splicing regulation (Figure 6\u2014figure supplement 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 6\u2014figure supplement 2B and C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "de638289-b033-4fc8-bc78-96c6a27696a2",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C72",
+      "claim": "Tardbp engagement scores are higher in proliferating myoblasts than in myogenic cells undergoing differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Tardbp engagement scores are higher in proliferating myoblasts than in myogenic cells undergoing differentiation (Figure 6D), consistent with the functional requirement of Tardbp in proliferating myoblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "57fc252c-2db7-489a-a965-4fa3881c4f1f",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C73",
+      "claim": "Myogenic subclusters 5 and 6 showed the highest Hnrnpa2b1 engagement scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Myogenic subclusters 5 and 6 showed the highest Hnrnpa2b1 engagement scores (Figure 6D), suggesting that Hnrnpa2b1 splicing function is highest in cells in subclusters 5 and 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "ab9f560c-6c84-419a-ada8-32a77507d711",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C74",
+      "claim": "Myog is significantly enriched in subcluster 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Myog is significantly enriched in subcluster 5 (p-value=1 \u00d7 10-67) (Figure 6E, Figure 6\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with a statistical p-value and supported by Figure 6E and Figure 6\u2014figure supplement 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "6d590515-8493-4f26-bd7f-e5f4f53a3ea4",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C75",
+      "claim": "Hnrnpa2b1 KO cells are significantly enriched in the myogenin-positive cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined myogenin immunoreactivity in differentiated Hnrnpa2b1 KO and WT cells. Hnrnpa2b1 KO cells are significantly enriched in the myogenin-positive cell population (Figure 6F and G), demonstrating a requirement for Hnrnpa2b1 for commitment to terminal differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figures 6F and 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "101cb83a-5632-4789-a6ea-b8af3bbd69e9",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C76",
+      "claim": "There is a requirement for Hnrnpa2b1 for commitment to terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined myogenin immunoreactivity in differentiated Hnrnpa2b1 KO and WT cells. Hnrnpa2b1 KO cells are significantly enriched in the myogenin-positive cell population (Figure 6F and G), demonstrating a requirement for Hnrnpa2b1 for commitment to terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the myogenin immunoreactivity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "4c60ca43-44d7-4ed3-9f82-7d5711307969",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C77",
+      "claim": "RBP expression and function correlates with specific myogenic cell states.",
+      "claim_type": "EXPLICIT",
+      "source": "Using multiomic and single-cell technologies, we finely mapped RBP expression during myogenesis, discovering that RBP expression and function correlates with specific myogenic cell states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "4f6e1a0c-7fc3-43bc-8bdb-7cd73f91a958",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C78",
+      "claim": "Hnrnpa2b1 influences global RNA splicing by regulating RBPs that splice distinct target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We define a role for the disease-associated RBP, Hnrnpa2b1, in directing MuSC commitment to terminal differentiation where Hnrnpa2b1 influences global RNA splicing by regulating RBPs that splice distinct target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "5bf6103c-b874-4471-b642-fbb335b7757a",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C79",
+      "claim": "The expression of an RBP and the RBP's target RNAs is required for RBP function.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a model to temporally define RBP function during muscle regeneration whereby the expression of an RBP and the RBP's target RNAs is required, providing precise timing for RPB function (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "98e6511e-d6c6-4c37-a8b8-421f98308d09",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C80",
+      "claim": "Even though an RBP transcript is present, the RBP will not function unless the target RNAs are present.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether an RBP is functioning will depend upon the expression of the RBP as well as expression of the RBP target RNAs. Thus, even though an RBP transcript is present, the RBP will not function unless the target RNAs are present, ensuring that RBPs do not function ubiquitously during muscle repair or muscle development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "79a22ff7-973e-4364-b671-13a75e7ab621",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C81",
+      "claim": "One splicing RBP regulates the splicing of an RBP that in turn regulates splicing of RNA targets, adding combinatorial control and redundancy to myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that one splicing RBP regulates the splicing of an RBP that in turn regulates splicing of RNA targets adds combinatorial control and redundancy to myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "8a62c8db-f3f1-4800-8938-82a39fa2d4f7",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C82",
+      "claim": "The network of shared RBPs ensures that splicing and RNA regulation function during a specific cell state.",
+      "claim_type": "EXPLICIT",
+      "source": "The network of shared RBPs ensures that splicing and RNA regulation function during a specific cell state, which we propose is a universal property occurring during development and in a number of regenerating tissues and organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "b0d59abb-5210-47a1-911c-6de6d16eb917",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C83",
+      "claim": "RBPs function in concert at a specific cell state to regulate a wide array of messenger RNA targets that coordinate cell fate transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that RBPs function in concert at a specific cell state to regulate a wide array of messenger RNA targets that coordinate cell fate transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "6462f7d6-84ea-4d4b-810a-1261728e1bf8",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C84",
+      "claim": "RBP dysfunction in diseases is likely cell state-defined and RBP mutations disproportionately impact a specific cell's state.",
+      "claim_type": "EXPLICIT",
+      "source": "RBP dysfunction in diseases is therefore likely cell state-defined and RBP mutations disproportionately impact a specific cell's state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "bb734923-42a6-4743-a8a0-b5d8688a22a1",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "claim_id": "C85",
+      "claim": "The resultant effect of an RBP mutation is delayed cell fate transition, a complete block of cell fate transition, or selection of an alternative cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "The resultant effect of an RPB mutation is delayed cell fate transition, a complete block of cell fate transition, or selection of an alternative cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4612746a-51e5-447c-82c2-7bc5fe35a1af",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA-sequencing of regenerating mouse skeletal muscle at 4 and 7 days post-injury identifies nine myogenic subclusters representing distinct stages of differentiation, with RNA velocity and PAGA analyses revealing directed connectivity and differentiation trajectories between subclusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 collectively describe the single-cell RNA-seq experimental design, data quality, and computational analyses. The reproducibility between replicates (C27), overlap with published datasets (C28), identification of three dominant clusters and nine subclusters (C29-C30), and trajectory analyses (C31-C32) are all supported by the presented figures and methods. The experimental approach and analytical pipeline are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "4f118fe9-7464-4745-9973-fadfcc5e107d",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PAGA connectivity analysis suggests that progenitor MuSC fate decisions are plastic with few connections leading to mature muscle, while commitment to terminal differentiation may follow a single universal pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C34 are interpretations of PAGA connectivity patterns. While the data show connectivity patterns, the conclusions about plasticity and a 'single universal pathway' are speculative interpretations not directly tested. Alternative explanations for the connectivity patterns are not explored, and no functional validation of these proposed mechanisms is provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "3f385ee0-dca5-40cb-ba13-799af2175cef",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RBP expression is temporally regulated during myogenesis, with hierarchical clustering revealing networks of RBPs that are upregulated or downregulated in specific subclusters, and disease-associated RBPs (Tardbp, Hnrnpa2b1, Tia1) showing distinct peak expression patterns across different subclusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C35-C40 are well-supported by the hierarchical clustering analysis (Figure 2A) and expression profiles (Figure 2B). The temporal regulation of RBP expression across subclusters is clearly demonstrated, and the specific expression patterns of disease-associated RBPs are documented with appropriate visualization. The data directly support these descriptive claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "91b185fc-640b-490b-b1d5-578506842d34",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hnrnpa2b1 protein levels increase during muscle regeneration in vivo, peaking at 10 days post-injury in both Pax7-positive MuSCs and regenerating myofibers, then declining by 28 days post-injury, with similar dynamics observed during in vitro myoblast differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 are supported by immunofluorescence data (Figures 3A-C and supplements) showing temporal changes in Hnrnpa2b1 protein levels during regeneration and differentiation. Quantification is provided, and the correlation between protein levels and RNA-seq data (C50) strengthens the findings. The in vitro data (C51, Figure 4A-B) corroborate the in vivo observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "fb1c857b-2c86-474c-85e5-beef172b2d10",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Hnrnpa2b1 knockout in myoblasts impairs differentiation and myotube formation but does not affect proliferation or nuclear morphology, demonstrating that Hnrnpa2b1 function is specifically required for differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by EdU incorporation assays (Figures 4D-E) showing no proliferation defect, nuclear morphology analysis (Figure 4 supplement 1E-F), and differentiation assays (Figures 4F-G) showing impaired myotube formation. The conclusion (C56) is appropriately drawn from the experimental data. Multiple independent knockout clones were tested, strengthening the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Hnrnpa2b1 regulates splicing of 2167 RNAs including other splicing RBPs (Mbnl1, Mbnl2, Rbfox2), with significant overlap between alternatively spliced RNAs in Hnrnpa2b1 KO and Mbnl1/Mbnl2 or Rbfox2 KO cells, suggesting cooperative regulation of RNA splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 are supported by RNA-seq differential splicing analysis (Figure 5A-C) with appropriate statistical testing (hypergeometric p-values for overlaps). The identification of splicing changes in other RBPs (C58, Figure 5B) and significant overlaps with published KO datasets (C61-C62) provide strong evidence for the regulatory cascade. The cooperative regulation model (C63-C64) is reasonably inferred from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "88701baf-2d94-468c-9858-014660dc2407",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CIBERSORTx analysis reveals that Hnrnpa2b1 KO cells accumulate in subcluster 5 with reduced representation in subcluster 7, and Hnrnpa2b1 KO alters splicing across all myogenic clusters with the most changes in cluster 5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by CIBERSORTx machine learning analysis (Figure 5D-E). The method is validated on control datasets (Figure 5 supplement 1B-C), and the cell state-specific splicing analysis (C67) provides mechanistic insight. The interpretation that cells are 'slow to transition' (C66) is reasonable given the accumulation pattern, though alternative explanations are not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "a65eb144-f68b-4eef-b812-fec3234f37b5",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hnrnpa2b1 eCLIP identifies 808 binding sites in myoblasts and 1030 in myotubes, with enrichment in 3'UTR and proximal introns, and binding sites mapping closely to splicing clusters, indicating roles in both RNA localization/translation and splicing regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by eCLIP data with appropriate controls (Figure 6A, supplements). High correlation between replicates (C69), enrichment analysis (C70), and proximity mapping to splicing clusters (C71, Figure 6 supplement 2B-C) are all documented. The dual functional roles suggested (localization/translation and splicing) are appropriately qualified as potential based on binding site locations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "2880c7f1-1149-4937-bfe1-7d7703a1d9c5",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RBP engagement scoring shows Tardbp engagement is highest in proliferating myoblasts while Hnrnpa2b1 engagement peaks in subclusters 5-6, and Hnrnpa2b1 KO cells are enriched for myogenin-positive cells, demonstrating a requirement for Hnrnpa2b1 in commitment to terminal differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 are supported by the novel RBP engagement scoring method (Figure 6C-D), which is validated using Tardbp (C72) as a positive control with known function. The Hnrnpa2b1 engagement scores (C73), myogenin enrichment in subcluster 5 (C74), and experimental validation showing myogenin accumulation in KO cells (C75-C76, Figures 6F-G) provide converging evidence for the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "7432a5cd-59d7-4629-a8f8-7283adc190af",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hnrnpa2b1 is a differentiation-specifying regulator that controls myogenic cell fate transitions during terminal differentiation, with RBP expression timing specifying cell fate transitions through post-transcriptional regulation of mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C77-C78 represent the main conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: temporal expression patterns, knockout phenotypes, splicing analysis, eCLIP data, and RBP engagement scoring. The integration of computational and experimental approaches provides strong support for the role of Hnrnpa2b1 in differentiation and the broader principle of temporal RBP function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "c3809755-8780-47b0-b98f-b010b7a7b441",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a model where RBP function requires co-expression of both the RBP and its target RNAs, with one splicing RBP regulating other RBPs to add combinatorial control, ensuring that splicing functions during specific cell states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C82 represent a proposed model based on the findings. While the model is consistent with the data (temporal expression, engagement scoring, regulatory cascades), it remains largely speculative. The necessity of co-expression (C79-C80) is inferred but not directly tested through gain-of-function experiments or temporal manipulation. The universality claim (C82) extends beyond the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "cfecda93-b22c-46ad-a175-faa96b53e760",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that RBPs function in concert at specific cell states to coordinate cell fate transitions, and that RBP dysfunction in diseases is cell state-defined, resulting in delayed, blocked, or alternative cell fate transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C85 are explicitly stated as speculation and represent extrapolations from the findings to disease mechanisms. While the cell state-specific function of Hnrnpa2b1 is demonstrated, the broader claims about disease mechanisms (C84-C85) are not tested in disease models. These represent reasonable hypotheses for future work but lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "6029a3dd-be8f-47f8-8608-e37817effcc3",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that RBPs are essential for muscle regeneration, mutations cause neuromuscular diseases, MuSCs repair muscle through activation and differentiation, and RBPs regulate RNA splicing which is critical for myogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C25 are background/introduction claims supported by appropriate citations to prior literature. These establish the context and rationale for the study. While the authors do not generate new data for these claims, they are appropriately cited and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    },
+    {
+      "id": "6d3b7a97-34e8-4f4c-8cd6-4284e6a7efc7",
+      "content_id": "47ee6986-17b7-47ab-a234-9914f571564a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work shows that Hnrnpa1 and Hnrnpa2b1 disruption causes inclusion body myopathy, Hnrnpa1 is essential for muscle differentiation, while Hnrnpa2b1 function in muscle was unknown, though it regulates RNA splicing, stability, transport, and stem cell differentiation/proliferation in other contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are background claims about Hnrnpa2b1 supported by appropriate citations. These establish the rationale for studying Hnrnpa2b1 in muscle differentiation. The claim that Hnrnpa2b1 function in muscle was unknown (C43) provides justification for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:34:42.412697Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "108f11df-dfa2-4fd8-b418-3add6ac76246",
+      "result_id": "4612746a-51e5-447c-82c2-7bc5fe35a1af"
+    },
+    {
+      "claim_id": "362f572b-41ca-4810-9186-c78329511ae8",
+      "result_id": "4612746a-51e5-447c-82c2-7bc5fe35a1af"
+    },
+    {
+      "claim_id": "71aa9841-201e-4bac-b26b-1b0fb258d74e",
+      "result_id": "4612746a-51e5-447c-82c2-7bc5fe35a1af"
+    },
+    {
+      "claim_id": "920d11bc-a804-4e78-ba0f-dffb048ac5de",
+      "result_id": "4612746a-51e5-447c-82c2-7bc5fe35a1af"
+    },
+    {
+      "claim_id": "d0980a00-0064-4f4b-a69b-dc7c07d78430",
+      "result_id": "4612746a-51e5-447c-82c2-7bc5fe35a1af"
+    },
+    {
+      "claim_id": "449c68d5-0ebf-4fbd-ba55-a769736dca78",
+      "result_id": "4612746a-51e5-447c-82c2-7bc5fe35a1af"
+    },
+    {
+      "claim_id": "20c1eb0e-f512-4cc3-9374-00fe066d2c3b",
+      "result_id": "4612746a-51e5-447c-82c2-7bc5fe35a1af"
+    },
+    {
+      "claim_id": "c0205c3a-9a6a-404e-9945-4b27c0495949",
+      "result_id": "4f118fe9-7464-4745-9973-fadfcc5e107d"
+    },
+    {
+      "claim_id": "9552cad6-06b6-4a36-88c3-f4ea01a96a34",
+      "result_id": "4f118fe9-7464-4745-9973-fadfcc5e107d"
+    },
+    {
+      "claim_id": "23e0d83b-4158-4382-887a-d537a4a5955a",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "d74872a2-b7d8-4dbe-923e-a7397bbded9a",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "0ee86dcc-0912-46ee-95e4-5e5f1ad3e4a7",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "91bcdab4-0ffc-4577-8a85-735630516f78",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "9acedf20-0ed8-4500-8c00-7c5dabd99abb",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "b73bb47f-a1ab-4642-ac01-6d26ba36091f",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "8ea8cea5-a048-4327-b029-022a58b927e1",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "2907de50-14f5-4938-ad05-9fb5b37afd7b",
+      "result_id": "3f385ee0-dca5-40cb-ba13-799af2175cef"
+    },
+    {
+      "claim_id": "a76285d4-4ee8-49c1-bb47-c14d384412bc",
+      "result_id": "91b185fc-640b-490b-b1d5-578506842d34"
+    },
+    {
+      "claim_id": "772b4fa9-4991-4cd4-989f-e0ea84e7c382",
+      "result_id": "91b185fc-640b-490b-b1d5-578506842d34"
+    },
+    {
+      "claim_id": "4b278d7a-4f74-46fd-9c96-32889ce9f35f",
+      "result_id": "91b185fc-640b-490b-b1d5-578506842d34"
+    },
+    {
+      "claim_id": "7c381fe1-1574-481c-8497-e82aa404d3f0",
+      "result_id": "91b185fc-640b-490b-b1d5-578506842d34"
+    },
+    {
+      "claim_id": "a688b407-6cb6-4371-8e5e-e71081a046e8",
+      "result_id": "91b185fc-640b-490b-b1d5-578506842d34"
+    },
+    {
+      "claim_id": "78bea267-9287-4c7b-92f4-d78ed3302c09",
+      "result_id": "91b185fc-640b-490b-b1d5-578506842d34"
+    },
+    {
+      "claim_id": "89179913-c560-4729-b949-228fc98b498e",
+      "result_id": "fb1c857b-2c86-474c-85e5-beef172b2d10"
+    },
+    {
+      "claim_id": "668d9855-b26a-4dcc-a07e-6633e99a0f63",
+      "result_id": "fb1c857b-2c86-474c-85e5-beef172b2d10"
+    },
+    {
+      "claim_id": "d966a973-35cf-4e78-8972-7563d08bd3ad",
+      "result_id": "fb1c857b-2c86-474c-85e5-beef172b2d10"
+    },
+    {
+      "claim_id": "2eb4a7fa-3949-40fa-9d36-3d71f5718ac4",
+      "result_id": "fb1c857b-2c86-474c-85e5-beef172b2d10"
+    },
+    {
+      "claim_id": "92bfd8fc-2ad0-42b8-81e0-ee0357d5f02b",
+      "result_id": "fb1c857b-2c86-474c-85e5-beef172b2d10"
+    },
+    {
+      "claim_id": "dc5a3469-1046-4d78-96a2-82fc0a94a81e",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "6a38312e-b80f-45c2-b60e-5f2db24055a9",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "c9e8d5b0-dfef-41ad-98db-1653647f9a10",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "c1475f2b-2b04-4570-917d-5ca38d8e36a7",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "7a8c3be9-b194-435c-beb4-ccdd77aa62dc",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "95d7391f-cf91-4c03-a237-1444b9a45797",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "a6663b26-ed9e-47d2-afce-4765ea5a13aa",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "7f5e30a7-2a62-4daa-b5f3-aa2b096f05ad",
+      "result_id": "a276d927-dcd3-4dac-b9a9-fd6c1255be4e"
+    },
+    {
+      "claim_id": "560e2f11-82a3-49f1-841f-843d22fa7f3a",
+      "result_id": "88701baf-2d94-468c-9858-014660dc2407"
+    },
+    {
+      "claim_id": "bf54f9fd-759d-41bf-9324-0cd638563b00",
+      "result_id": "88701baf-2d94-468c-9858-014660dc2407"
+    },
+    {
+      "claim_id": "72d63794-afa5-47c1-b31b-f4c9aec080fa",
+      "result_id": "88701baf-2d94-468c-9858-014660dc2407"
+    },
+    {
+      "claim_id": "5dd59326-ffef-455f-85e0-9068b4d41bd9",
+      "result_id": "a65eb144-f68b-4eef-b812-fec3234f37b5"
+    },
+    {
+      "claim_id": "f21280a2-44f0-4081-8c27-4f1129476369",
+      "result_id": "a65eb144-f68b-4eef-b812-fec3234f37b5"
+    },
+    {
+      "claim_id": "194a87a5-3978-4219-ae0c-cad5ddbba7e8",
+      "result_id": "a65eb144-f68b-4eef-b812-fec3234f37b5"
+    },
+    {
+      "claim_id": "7008cf6c-9db8-47d7-96a0-48e966d4aa80",
+      "result_id": "a65eb144-f68b-4eef-b812-fec3234f37b5"
+    },
+    {
+      "claim_id": "de638289-b033-4fc8-bc78-96c6a27696a2",
+      "result_id": "2880c7f1-1149-4937-bfe1-7d7703a1d9c5"
+    },
+    {
+      "claim_id": "57fc252c-2db7-489a-a965-4fa3881c4f1f",
+      "result_id": "2880c7f1-1149-4937-bfe1-7d7703a1d9c5"
+    },
+    {
+      "claim_id": "ab9f560c-6c84-419a-ada8-32a77507d711",
+      "result_id": "2880c7f1-1149-4937-bfe1-7d7703a1d9c5"
+    },
+    {
+      "claim_id": "6d590515-8493-4f26-bd7f-e5f4f53a3ea4",
+      "result_id": "2880c7f1-1149-4937-bfe1-7d7703a1d9c5"
+    },
+    {
+      "claim_id": "101cb83a-5632-4789-a6ea-b8af3bbd69e9",
+      "result_id": "2880c7f1-1149-4937-bfe1-7d7703a1d9c5"
+    },
+    {
+      "claim_id": "e03f7f6a-c7b3-4264-99ae-a310772f7213",
+      "result_id": "7432a5cd-59d7-4629-a8f8-7283adc190af"
+    },
+    {
+      "claim_id": "121f2094-4a9f-48dc-baa9-1e69be9e272e",
+      "result_id": "7432a5cd-59d7-4629-a8f8-7283adc190af"
+    },
+    {
+      "claim_id": "d4025e29-61ed-4e48-9fe5-da14df9e633b",
+      "result_id": "7432a5cd-59d7-4629-a8f8-7283adc190af"
+    },
+    {
+      "claim_id": "4c60ca43-44d7-4ed3-9f82-7d5711307969",
+      "result_id": "7432a5cd-59d7-4629-a8f8-7283adc190af"
+    },
+    {
+      "claim_id": "4f6e1a0c-7fc3-43bc-8bdb-7cd73f91a958",
+      "result_id": "7432a5cd-59d7-4629-a8f8-7283adc190af"
+    },
+    {
+      "claim_id": "5bf6103c-b874-4471-b642-fbb335b7757a",
+      "result_id": "c3809755-8780-47b0-b98f-b010b7a7b441"
+    },
+    {
+      "claim_id": "98e6511e-d6c6-4c37-a8b8-421f98308d09",
+      "result_id": "c3809755-8780-47b0-b98f-b010b7a7b441"
+    },
+    {
+      "claim_id": "79a22ff7-973e-4364-b671-13a75e7ab621",
+      "result_id": "c3809755-8780-47b0-b98f-b010b7a7b441"
+    },
+    {
+      "claim_id": "8a62c8db-f3f1-4800-8938-82a39fa2d4f7",
+      "result_id": "c3809755-8780-47b0-b98f-b010b7a7b441"
+    },
+    {
+      "claim_id": "b0d59abb-5210-47a1-911c-6de6d16eb917",
+      "result_id": "cfecda93-b22c-46ad-a175-faa96b53e760"
+    },
+    {
+      "claim_id": "6462f7d6-84ea-4d4b-810a-1261728e1bf8",
+      "result_id": "cfecda93-b22c-46ad-a175-faa96b53e760"
+    },
+    {
+      "claim_id": "bb734923-42a6-4743-a8a0-b5d8688a22a1",
+      "result_id": "cfecda93-b22c-46ad-a175-faa96b53e760"
+    },
+    {
+      "claim_id": "3d453eba-2477-4943-8a95-0909827b19f3",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "d9dc8c60-119d-4e80-94ce-3c83f323c532",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "bb98e918-3b99-4441-b128-2ca6539c2b12",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "0fbb5cf5-ea6d-4c5a-9e04-80ee1cd6e0e2",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "ab66024c-992f-4553-a12f-54d3ebd4a865",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "d1f184ff-9f9c-4640-ad63-d6969036b63d",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "387a40cb-e618-46e2-bdd8-5a2d99f79c51",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "e3290164-0a4f-4d94-a109-02f61c71a257",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "93d6ab80-989a-4051-a012-9911d6194701",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "4506afd6-5ca6-4902-b5f9-f6ec8972eb41",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "1e3e57d1-fdcd-4cdd-8cd5-d42884b096fd",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "975b105e-676c-4290-8291-b4663a2e59e4",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "edf7f598-a98a-47a7-a590-2fd52f25b334",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "36680dd3-208d-4bd3-9459-facac744c38b",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "741155f8-3a46-4d53-95ef-2848e3699201",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "6e01bcf2-9dc6-47d4-88c6-291fe05d40c0",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "b3959f5c-5966-4d8b-a599-4cc7374b9e62",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "d3165508-fa05-49c5-bb22-3d24c5b7eb78",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "ba508a6f-655b-4f14-9bc5-b30f00c993e4",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "686ed839-2012-4b2f-8636-7d764ef46b96",
+      "result_id": "6029a3dd-be8f-47f8-8608-e37817effcc3"
+    },
+    {
+      "claim_id": "ac643dc4-a1c6-46ef-ba7c-3f564924c44f",
+      "result_id": "6d3b7a97-34e8-4f4c-8cd6-4284e6a7efc7"
+    },
+    {
+      "claim_id": "da8a5e40-d37a-4111-af92-99d7042d555e",
+      "result_id": "6d3b7a97-34e8-4f4c-8cd6-4284e6a7efc7"
+    },
+    {
+      "claim_id": "85c08b43-7d79-4ce0-809a-c3bd8960f817",
+      "result_id": "6d3b7a97-34e8-4f4c-8cd6-4284e6a7efc7"
+    },
+    {
+      "claim_id": "67b9b376-5935-4b78-8421-873abbf7c584",
+      "result_id": "6d3b7a97-34e8-4f4c-8cd6-4284e6a7efc7"
+    },
+    {
+      "claim_id": "26735d11-a6c5-495d-a229-4495fa367709",
+      "result_id": "6d3b7a97-34e8-4f4c-8cd6-4284e6a7efc7"
+    }
+  ],
+  "comparisons": []
+}

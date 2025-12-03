@@ -1,0 +1,430 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "CRISPR/Cas9-mediated knockout of MITF in SkMel28 cells generated two cell lines (\u0394MITF-X2 and \u0394MITF-X6) with distinct mutations. \u0394MITF-X2 contains frameshift mutations in exon 2 resulting in truncated MITF proteins, while \u0394MITF-X6 contains mutations in exon 6 that eliminate functional MITF protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 provide comprehensive characterization of the MITF-KO cell lines through whole genome sequencing, Sanger sequencing, Western blot, and RT-PCR analyses. The mutations are well-documented with specific percentages and molecular consequences, and the absence of wild-type MITF is confirmed. The inference about alternative translation start sites (C38) is reasonable given the supporting negative data for alternative splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "MITF-KO cells exhibit altered morphology compared to controls, with 1.7-fold larger cell size and formation of aggregates rather than flat sheets when cultured on matrigel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by quantitative microscopy data (Figure 1e-h) showing consistent morphological changes across both MITF-KO cell lines. The quantification provides statistical support with clear fold-change measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Loss of MITF in \u0394MITF-X6 cells results in 2136 differentially expressed genes, with reduced expression of pigmentation genes (DCT, MLANA, OCA2, IRF4) and increased expression of ECM and focal adhesion genes (SERPINA3, ITGA2, PXDN, TGF\u03b21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by RNA-seq data with appropriate statistical thresholds (qval <0.05) and GO/KEGG pathway enrichment analysis. The findings are consistent with known MITF biology and provide the foundation for the main conclusions of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CUT-and-RUN analysis identified 37,643 MITF binding peaks associated with 8,288 genes. A significant proportion of both induced (695/1284) and repressed (535/852) genes upon MITF loss are directly bound by MITF, with distinct E-box motifs enriched in each category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by CUT-and-RUN sequencing data with appropriate statistical testing (hypergeometric tests with significant p-values). The integration with ChIP-seq data from multiple cell lines (C50) strengthens the conclusions. Motif analysis provides mechanistic insight into MITF's dual role as activator and repressor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "siRNA-mediated MITF knockdown in SkMel28 and 501Mel cells produces gene expression changes that significantly correlate with those observed in \u0394MITF-X6 cells (Pearson r=0.66 and 0.57, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by RNA-seq data from independent cell lines with strong statistical correlations (p<2.2e-16). This validates that the effects observed in MITF-KO cells are reproducible with transient knockdown and not artifacts of the knockout system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Analysis of TCGA melanoma tumors shows that MITFlow tumors exhibit gene expression patterns highly correlated with \u0394MITF-X6 cells (R=0.76, p<2.2e-16) and cluster together in PCA analysis, while MITFhigh tumors cluster with control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by rigorous analysis of TCGA data with strong statistical correlations and PCA visualization. This demonstrates clinical relevance of the cell line findings and validates the \u0394MITF-X6 cells as a model for MITFlow tumor states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MITF overexpression in A375P cells leads to repression of ECM genes, with 213 ECM genes reduced (82 direct MITF targets), showing anti-correlation with MITF-KO effects (Pearson r=-0.46, p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by RNA-seq from MITF overexpression experiments with appropriate statistical analysis and RT-qPCR validation. The anti-correlation with knockout data and identification of direct targets through ChIP-seq integration provide strong evidence for MITF's repressive role on ECM genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ECM genes are enriched in MITFlow TCGA tumors even after removing samples with high fibroblast markers, in both primary and metastatic tumors, independent of BRAF, NRAS, and NF1 mutation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by GSEA analysis with appropriate controls for fibroblast contamination. The analysis across tumor types and mutation status strengthens the conclusion that ECM enrichment is specifically related to MITF levels rather than confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MITF regulates expression of EMT markers in melanoma, with CDH2, TGF\u03b21, and ZEB1 anti-correlated with MITF, while CDH1 and SNAI2 are positively correlated. These relationships are validated at mRNA and protein levels across multiple experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 are supported by comprehensive analysis including TCGA correlations, RNA-seq across multiple perturbations, RT-qPCR, and Western blot validation. The consistency across different experimental approaches and cell lines provides strong support for MITF's role in EMT regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "ZEB1, SOX2, CDH1, and CDH2 contain MITF-binding peaks in their regulatory regions, while TGF\u03b21 does not, suggesting direct versus indirect regulation by MITF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by CUT-and-RUN and ChIP-seq data from multiple sources. The distinction between genes with and without MITF binding provides mechanistic insight, though the indirect regulation of TGF\u03b21 requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The effects of MITF on ECM and EMT gene expression are reversible, as demonstrated by rescue experiments with exogenous MITF and doxycycline-inducible knockdown/restoration systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by RT-qPCR and Western blot data from rescue experiments and time-course studies with dox-inducible systems. The reversibility is demonstrated at both mRNA and protein levels, supporting the rheostat model of MITF function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Loss of MITF increases the number of paxillin-positive focal adhesion points approximately 2-fold in both knockout and knockdown cells. Paxillin expression is inversely correlated with MITF in TCGA tumors and patient-derived cell lines, and MITF directly binds to the PXN gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by quantitative immunostaining, TCGA correlation analysis, patient cell line data, and ChIP-seq showing direct MITF binding to PXN. The consistency across multiple experimental systems and the identification of a MITF-binding motif in PXN provide strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Vemurafenib treatment increases focal adhesion formation in melanoma cells, with effects dependent on MITF expression levels. The response varies between cell lines based on whether vemurafenib increases or decreases MITF expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are supported by immunostaining and Western blot data showing cell line-specific responses to vemurafenib. The differential effects in SkMel28 (MITF decreased) versus 501Mel (MITF increased) provide evidence for MITF-dependent mechanisms, though additional factors beyond MITF are also implicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "FAK inhibitor treatment significantly reduces viability of MITF-KO cells compared to control cells, with \u0394MITF-X6 cells showing greater sensitivity than \u0394MITF-X2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by cell viability assay data (Figure 6g,h) showing dose-dependent effects. The differential sensitivity between the two KO lines correlates with their degree of MITF loss, supporting the conclusion that MITF-low cells depend on FAK signaling for survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "\u0394MITF-X6 cells are enriched for minimal residual disease (MRD) gene signatures from human and zebrafish melanomas, including ECM genes (COL4A1, ITGA1, ITGA6, LAMC1, VCAN), but not invasive signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by GSEA analysis comparing \u0394MITF-X6 cells to published MRD signatures from multiple species and experimental systems. The specific enrichment for MRD but not invasive signatures provides important context for interpreting the MITF-KO phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "MITF-KO cells show reduced proliferation with 2-fold lower growth rates and 20-25% BrdU-positive cells compared to 45% in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by IncuCyte live cell imaging and BrdU incorporation assays. The consistency between two independent proliferation assays strengthens the conclusion that MITF loss reduces proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "MITF-KO cells show reduced migration and invasion capacity, failing to close wounds in 24 hours and displaying severely reduced transwell invasion compared to controls. MITF knockdown produces minor migration defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by wound scratch and transwell invasion assays. However, these findings contradict the expected invasive phenotype from the rheostat model, which the authors acknowledge and discuss extensively. The data are sound but the biological interpretation is complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "MITF directly represses ECM, focal adhesion, and EMT genes in melanoma cells, affecting cell morphology and matrix interactions in a reversible manner. MITF-KO cells resemble minimal residual disease cells and MITF shapes the melanoma microenvironment cell-autonomously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 represent the main conclusions of the paper and are supported by the comprehensive experimental evidence from multiple complementary approaches (knockout, knockdown, overexpression, CUT-and-RUN, ChIP-seq, TCGA analysis). The reversibility experiments and MRD correlation strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "MITF functions as a transcriptional repressor of ECM and focal adhesion genes through direct DNA binding to E-boxes in regulatory regions, consistent with previous reports of MITF repressor function in melanoma and immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by the current study's CUT-and-RUN and motif analysis data, integrated with prior literature. The mechanistic model is well-supported, though the specific co-factors mediating repression versus activation remain to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "MITF knockdown increases TGF\u03b21 expression, but this appears to be indirect as no MITF-binding peaks are found near the TGF\u03b21 gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by RT-qPCR/RNA-seq data showing increased TGF\u03b21 expression and CUT-and-RUN/ChIP-seq data showing absence of MITF binding. The indirect regulation hypothesis is reasonable but the intermediary factor(s) remain unidentified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "MITF loss increases paxillin expression and focal adhesion formation, along with increased expression of integrins (ITGA1, ITGA2, ITGA6, ITGA10, ITGB3) and VEGF signaling components (FLT1, VEGFA) that have MITF-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 are supported by immunostaining, RNA-seq, and ChIP-seq data. The integration of multiple focal adhesion pathway components provides a comprehensive view of how MITF regulates this process both directly and through signaling pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "MITF-KO cells show 200-fold induction of NGFR and 50-80-fold reduction of MLANA, with MITF binding detected in the NGFR 3'UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by RT-qPCR and CUT-and-RUN/ChIP-seq data. These findings validate the MITF-KO cells as exhibiting expected changes in melanocyte differentiation markers and drug resistance markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "MITF-KO cells show altered expression of EMT markers and increased SOX2 expression. The effects on E-cadherin, N-cadherin, and ECM genes are reversible, suggesting MITF enables epithelial-mesenchymal plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 are supported by RT-qPCR, Western blot, and reversibility experiments. The connection to EMT plasticity is well-supported, though the functional consequences for melanoma progression require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "\u0394MITF-X6 cells correlate with MRD gene signatures from human and zebrafish melanomas. MRD cells in zebrafish express little MITF and have increased ECM gene expression, suggesting this is a conserved marker of MRD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by GSEA analysis across species and experimental systems. The conservation across species strengthens the biological significance, though the inference about MRD markers (C140) requires validation in additional contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "In the absence of MITF, melanoma cells may become MRD cells by reshaping their ECM and enhancing surface attachment to form quiescent cells. This process is cell-autonomous and directed by MITF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C142 are speculative interpretations based on the experimental data. While the cell-autonomous effects are demonstrated (C142), the model of MRD cell formation (C141) is a hypothesis that requires direct testing with in vivo models and functional validation of the quiescent-to-proliferative transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C25",
+      "C122",
+      "C123",
+      "C129",
+      "C130"
+    ],
+    "result": "Background claims establishing the context for melanoma biology, MITF function, neural crest origins, ECM/focal adhesion signaling, and drug resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19, C25, C122-C123, C129-C130 are background information supported by appropriate literature citations. These establish the scientific context but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  }
+]

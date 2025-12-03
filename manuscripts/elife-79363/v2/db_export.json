@@ -1,0 +1,1892 @@
+{
+  "submission": {
+    "id": "689aef34-490b-4387-9535-539d70a2cc20",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:18:15.979468Z",
+    "updated_at": "2025-12-03T18:18:15.979468Z"
+  },
+  "content": [
+    {
+      "id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "submission_id": "689aef34-490b-4387-9535-539d70a2cc20",
+      "content_type": "manuscript",
+      "content_text": "# Uncovering perturbations in human hematopoiesis associated with healthy aging and myeloid malignancies at single-cell resolution\n\n## Authors\n\n- Marina Ainciburu<sup>1</sup> ([ORCID: 0000-0001-6483-1901](https://orcid.org/0000-0001-6483-1901))\n- Teresa Ezponda<sup>1</sup>\n- Nerea Berastegui<sup>1</sup>\n- Ana Alfonso-Pierola<sup>2</sup>\n- Amaia Vilas-Zornoza<sup>1</sup>\n- Patxi San Martin-Uriz<sup>1</sup>\n- Diego Alignani<sup>4</sup>\n- Jose Lamo-Espinosa<sup>3</sup>\n- Mikel San-Julian<sup>3</sup>\n- Tamara Jim\u00e9nez-Solas<sup>5</sup> ([ORCID: 0000-0001-5894-2023](https://orcid.org/0000-0001-5894-2023))\n- Felix Lopez<sup>5</sup>\n- Sandra Muntion<sup>5</sup>\n- Fermin Sanchez-Guijo<sup>5</sup>\n- Antonieta Molero<sup>7</sup>\n- Julia Montoro<sup>7</sup>\n- Guillermo Serrano<sup>8</sup>\n- Aintzane Diaz-Mazkiaran<sup>2</sup>\n- Miren Lasaga<sup>9</sup>\n- David Gomez-Cabrero<sup>9</sup>\n- Maria Diez-Campelo<sup>5</sup>\n- David Valcarcel<sup>7</sup>\n- Mikel Hernaez<sup>8</sup>\n- Juan P Romero<sup>1</sup> ([ORCID: 0000-0002-0441-4791](https://orcid.org/0000-0002-0441-4791)) \u2020\n- Felipe Prosper<sup>1</sup> ([ORCID: 0000-0001-6115-8790](https://orcid.org/0000-0001-6115-8790)) \u2020\n\n### Affiliations\n\n1. Area de Hemato-Oncolog\u00eda, Centro de Investigaci\u00f3n M\u00e9dica Aplicada, Universidad de Navarra, Instituto de investigaci\u00f3n sanitaria de Navarra (IDISNA) Pamplona Spain ([ROR:02rxc7m23](https://ror.org/02rxc7m23))\n2. Centro de Investigaci\u00f3n Biom\u00e9dica en Red de C\u00e1ncer Madrid Spain ([ROR:04hya7017](https://ror.org/04hya7017))\n3. Clinica Universidad de Navarra Pamplona Spain ([ROR:03phm3r45](https://ror.org/03phm3r45))\n4. Flow Cytometry Core, Universidad de Navarra Pamplona Spain ([ROR:02rxc7m23](https://ror.org/02rxc7m23))\n5. Hospital Universitario de Salamanca Salamanca Spain\n6. Red de Investigaci\u00f3n Cooperativa en Terapia Celular TerCel, ISCIII. Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))\n7. Department of Hematology, Vall d'Hebron Hospital Universitari Barcelona Spain ([ROR:03ba28x55](https://ror.org/03ba28x55))\n8. Computational Biology Program, Universidad de Navarra Pamplona Spain ([ROR:02rxc7m23](https://ror.org/02rxc7m23))\n9. Translational Bioinformatics Unit, NavarraBiomed Pamplona Spain ([ROR:03atdda90](https://ror.org/03atdda90))\n10. Biological & Environmental Sciences & Engineering Division, King Abdullah University of Science and Technology Thuwal Saudi Arabia ([ROR:01q3tbs38](https://ror.org/01q3tbs38))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEarly hematopoiesis is a continuous process in which hematopoietic stem and progenitor cells (HSPCs) gradually differentiate toward specific lineages. Aging and myeloid malignant transformation are characterized by changes in the composition and regulation of HSPCs. In this study, we used single-cell RNA sequencing (scRNA-seq) to characterize an enriched population of human HSPCs obtained from young and elderly healthy individuals.Based on their transcriptional profile, we identified changes in the proportions of progenitor compartments during aging, and differences in their functionality, as evidenced by gene set enrichment analysis. Trajectory inference revealed that altered gene expression dynamics accompanied cell differentiation, which could explain aging-associated changes in hematopoiesis. Next, we focused on key regulators of transcription by constructing gene regulatory networks (GRNs) and detected regulons that were specifically active in elderly individuals. Using previous findings in healthy cells as a reference, we analyzed scRNA-seq data obtained from patients with myelodysplastic syndrome (MDS) and detected specific alterations of the expression dynamics of genes involved in erythroid differentiation in all patients with MDS such as TRIB2. In addition, the comparison between transcriptional programs and GRNs regulating normal HSPCs and MDS HSPCs allowed identification of regulons that were specifically active in MDS cases such as SMAD1, HOXA6, POU2F2, and RUNX1 suggesting a role of these transcription factors (TFs) in the pathogenesis of the disease.In summary, we demonstrate that the combination of single-cell technologies with computational analysis tools enable the study of a variety of cellular mechanisms involved in complex biological systems such as early hematopoiesis and can be used to dissect perturbed differentiation trajectories associated with perturbations such as aging and malignant transformation. Furthermore, the identification of abnormal regulatory mechanisms associated with myeloid malignancies could be exploited for personalized therapeutic approaches in individual patients.\n\n## Introduction\n\nMature blood and immune cells are generated by hematopoiesis, which is a well-characterized process that has been studied for more than a century (Jagannathan-Bogdan and Zon, 2013). Classically, hematopoiesis has been modeled as a stepwise differentiation process, at the core of which reside hematopoietic stem cells (HSCs), which are common precursors with self-renewal capacity. A tree-like hierarchy arises from HSCs, in which lineage commitment occurs at binary branching points, giving rise to functionally and phenotypically homogeneous progenitor populations (Laurenti and G\u00f6ttgens, 2018; Notta et al., 2016). However, recent single-cell studies have questioned the validity of the classical model of hematopoiesis and have revealed heterogeneity within the HSC compartment and within progenitor populations that were previously considered homogeneous (Haas et al., 2018). Furthermore, it is difficult to establish boundaries between populations, which has led to the replacement of this concept by the idea of smooth transitions. Thus, early hematopoiesis is now viewed as a continuous landscape composed of undifferentiated HSPCs with a variable degree of priming toward specific lineages (lymphoid, myeloid, or erythroid) (Velten et al., 2017; Karamitros et al., 2018; Watcham et al., 2019; Buenrostro et al., 2018).\n\nDuring aging, the hematopoietic system undergoes various changes. There is evidence of an aging-related increase in the relative number of HSCs, that presumably aims to compensate for a loss of repopulation ability (Dykstra et al., 2011; Pang et al., 2011). Despite this increase in the number of HSCs, the total bone marrow cellularity decreases (Ogawa et al., 2000). Additionally, a loss of lymphocyte production and a skewing toward myeloid differentiation have been demonstrated (Young et al., 2016). Moreover, recent studies have revealed an increase in the number of platelet primed HSCs (Grover et al., 2016). A general loss of immune function that affects both innate and adaptive immunity has also been associated with aging (Weiskopf et al., 2009). The molecular basis of these phenotypic changes includes an increased rate of random mutations in hematopoietic progenitors. Clonal hematopoiesis is a common trait of elderly individuals, in which blood cell subpopulations are clonally derived from a single HSC or progenitor with acquired mutations. Notably, some of these mutations are also associated with hematopoietic malignancies (Xie et al., 2014; Jaiswal et al., 2014; McKerrell et al., 2015; Genovese et al., 2014). Additionally, aging is also accompanied by transcriptional dysregulation. Gene expression analyses have revealed changes in cell cycle regulators (Kowalczyk et al., 2015), higher expression of myeloid signatures (Grover et al., 2016; Kowalczyk et al., 2015) and genes associated with leukemia (Rossi et al., 2005), stronger response to inflammatory stimuli (Martinez-Jimenez et al., 2017; Mann et al., 2018), and upregulation of pathways such as nuclear factor kappa beta (NF-\u03baB) or tumor necrosis factor alpha (TNF-\u03b1) and downregulation of DNA repair (Chambers et al., 2007). Lastly, epigenetic modifications that are in line with the transcriptional lesions detected have been observed in HSPCs obtained from elderly individuals (Sun et al., 2014).\n\nAging is associated with a higher risk of developing myeloid malignancies (Zeidan et al., 2019; Deschler and L\u00fcbbert, 2006), suggesting a strong predisposition of hematopoietic cells from elderly individuals to lead to further alterations. Myelodysplastic syndromes (MDS) are among the main aging-related hematological disorders. MDS are characterized by ineffective hematopoiesis and predisposition to transformation into acute myeloid leukemia (Shallis et al., 2018), a highly aggressive neoplasm.\n\nCollectively, previous evidence suggests the existence of a progressive decline in the hematopoietic system with age, which can result in disease if certain pathological events occur. HSC damage is the primary consequence of this process and its outcomes range from lineage bias to differentiation blockade and leukemic transformation (Chung and Park, 2017).\n\nIn this work we present a computational roadmap that can be used as a basis to fully exploit the potential of single-cell RNA sequencing (scRNA-seq) data. We applied a set of computational algorithms to assess cellular subpopulations, differentiation trajectories, and gene regulatory elements in the human hematopoietic system. This proposed methodology not only allows the characterization of healthy or control scenarios, but also the identification of specific perturbations. This is demonstrated by describing aging-dependent and pathological alterations in hematopoiesis.\n\n## Results\n\n### Transcriptional profiling of human young and elderly hematopoietic progenitor systems\n\nTo investigate the aging-dependent changes in the hematopoietic system, we performed scRNA-seq of bone marrow CD34+ cells obtained from five young (18\u201320 years of age) and three elderly (>65 years of age) healthy donors (Figure 1A). Briefly, single-cell libraries were prepared using a Chromium controller instrument (10\u00d7 Genomics) and sequenced up to an average depth of 30,000 reads per cell. A total of 34,590 and 40,641 cells were profiled from young and elderly donors, respectively. We first constructed an integrated dataset with cells from both young and elderly donors using an integration procedure implemented in the Seurat R package (Stuart et al., 2019). Subsequently, we subjected the integrated dataset to quality control filtering and dimensionality reduction to obtain a reference map for visualization (Supplementary file 1). Secondary analyses including unsupervised clustering, identification of cluster markers, trajectory inference, and gene regulatory network (GRN) reconstruction were performed independently for each group.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig1-v2.jpg)\n\n**Figure 1.:** (A) CD34+ cells were obtained from bone marrow aspirates of young (n=5) and elderly (n=3) donors and subjected to single-cell RNA sequencing. (B) UMAP plot with young cells colored according to unsupervised clustering results (left) and elderly cells labeled using an in-house cell classifier (right). (C) Dot plot of cluster markers (adjusted p-value <0.05) for the different cellular subpopulations identified. Dot size represents the percentage of cells that express each marker, and color represents scaled expression values. (D) Bar plots showing the proportion of cells assigned to each cellular subpopulation for each donor independently. (E) Dot plot of enriched terms after performing gene set enrichment analysis (GSEA) for each identified cluster. Dot color represents the enriched group, size indicates the NES absolute value, and transparency indicates the adjusted p-value.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) UMAP plots of the three elderly donors\u2019 cells. They are colored by the probability of belonging to a specific identity, as computed on each of the binary classification models. (B) CD34+ cells from Granja et al. data. (Left) Cells are colored by the original classification. (Middle) Colored as the result of the GLMnet classification, using young donor data and identities as reference. (Right) Colored according to the predicted cellular identities using Seurat. (C) Heatmap showing the proportion of cells predicted within each of the ground truth groups. The sum per column equals to 100%.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** UMAP plots with cells colored by cellular subpopulation, separated by donor. (Top) Cells from young donors labeled by unsupervised clustering and manual labeling (bottom) cells from elderly donors classified with GLMnet.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Plot depicting the percentage of hematopoietic stem cells (HSCs), granulocyte-monocyte progenitors (GMPs), and megakaryocyte-erythroid progenitors (MEPs) from total CD34+ subpopulation detected in healthy young and elderly individuals. Each point represents an individual and the mean \u00b1 standard deviation (SD) is shown for each group. **p-Value from t test <0.01.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Violin plots showing normalized expression of genes involved in differentially enriched pathways. Expression levels are divided by cell subpopulation and age (young cells colored in red and elderly cells in blue). (A) Genes upregulated in elderly subpopulations. (B) Genes upregulated in young subpopulations. *Adjusted p-value <0.05, **adjusted p-value <0.01, ***adjusted p-value <0.001.\n\nAfter integration, we extracted the cells obtained from young donors and subjected them to unsupervised clustering and differential expression analysis to identify cluster markers for manual cell-type annotation and labeling (Supplementary file 2). This analysis identified 14 cellular subpopulations comprising the landscape of HSCs, early progenitors: megakaryocyte-erythroid progenitors (MEPs), lympho-myeloid primed progenitors (LMPPs), common lymphoid progenitors (CLPs), and granulocyte-monocyte progenitors (GMPs), and cells already committed to specific lineages (pro-B cells, monocytic, erythroid, megakaryocytic, basophil and dendritic cell progenitors) (Figure 1B). Early progenitors were characterized by the expression of genes such as CRHBP, HOPX (initial lympho-myeloid differentiation), and PBX1 (initial megakaryocyte and erythroid lineage). More mature progenitors presented myeloid (MPO, CTSG, PRTN3, LYZ, and IRF8), lymphoid (DNTT, VPREB1, and EBF1), erythroid (HBD and CA1), and basophil (HDC and MS4A2)-specific markers (Figure 1C). Once cellular subpopulations from the young donors were identified, we labeled cells of elderly individuals using a classification method based on a logistic regression with elastic-net regularization (see Materials and methods). Regularized logistic regression has been previously applied to scRNA-seq data, due to its high interpretability and good performance with sparse input (Torang et al., 2019; Nguyen et al., 2018). Briefly, we created one classifier per cell type that receives as input the normalized gene by cell expression matrix and returns a per-cell probability to be a specific cell type. Using this method we classified the integrated elderly dataset to assign cell-type probabilities (Figure 1\u2014figure supplement 1A). The performance of our classifier was determined by using a publicly available dataset containing 8176 human CD34+ progenitors with known identities (Granja et al., 2019). This dataset was labeled using our method and Seurat (Figure 1\u2014figure supplement 1B) for benchmarking purposes. We obtained the proportion of cells classified within each cell type using both approaches (Figure 1\u2014figure supplement 1C). Overall, both methods provided similar results. We observed the biggest differences when assessing progenitor cell types such as HSCs, MEPs, and LMPPs. Seurat classified 38% of HSCs in the reference as MEPs, compared to 12% by GLMnet. We also observed that 83.31% of LMPPs were correctly classified by GLMnet compared to 57.91% by Seurat. The lymphoid lineage showed the biggest proportion changes; however, this is related to the low number of B cells in the reference. Based on these results, we decided to use our method in the rest of the analyses.\n\nWhen we applied the GLMnet classifier to the elderly individuals, we noted a significant increase in the proportion of HSCs and a reduction in the number of both committed lymphoid and myeloid lineages (adjusted p-value <0.05, Supplementary file 3) as well as an increase in the proportion of erythroid-committed cells in the overall proportion, both in the integrated and individual datasets (Figure 1D and Figure 1\u2014figure supplement 2). We used flow activated cell sorting (FACS) as an orthogonal method and observed similar results for HSCs. However, changes in the proportion of GMPs and MEPs were less obvious than in the case of the transcriptomic analysis (Figure 1\u2014figure supplement 3).\n\nNext, we checked for functional differences between the young and elderly populations using gene set enrichment analysis (GSEA) after performing differential expression per cluster and using the genes overexpressed in each condition (young and elderly) within each cell type (Supplementary file 4) as an input to GSEA. Cells from elderly donors exhibited a generalized enrichment of pathways activated in response to external molecules and insults, such as TNF-\u03b1, transforming growth factor beta (TGF-\u03b2), hypoxia, or inflammation. Furthermore, the p53 pathway and apoptosis programs, which are activated by stressor stimuli, were also enriched in these elderly cells (Figure 1E). In particular, the TGF-\u03b2 response and apoptosis genes, together with genes upregulated in response to ultraviolet radiation, were specially enriched in aging-associated HSCs. These results suggested the presence of an aging-related response to the known more inflammatory microenvironment that is present in elderly individuals (Leimk\u00fchler and Schneider, 2019). Shifts in the abovementioned stress-related pathways were associated with increased expression in the elderly of potential drivers of such pathways, including JUNB, FOSB, FOS, ID2, or DDIT4 (Figure 1\u2014figure supplement 4). Hematopoietic progenitors from young donors were characterized by an increase in metabolism, including signatures related to glycolysis, fatty acid metabolism, and oxidative phosphorylation, in components of the respiratory chain (UQCR, NDUF, and COX), and the glycolytic enzymes PGK1 and TPI1. These findings point toward an increased metabolic activity in progenitors from young donors. We also found that cell cycle progression (E2F targets) and proliferation (MYC targets) pathways were enriched in multiple cell populations from young donors (Figure 1E), whereas MYC expression was generally downregulated in cells from elderly individuals, suggesting an aging-mediated decreased proliferative activity. DNA repair was also found to be more active in cells isolated from young individuals. This goes in agreement with the known predisposition of aging-associated progenitors to accumulate genetic lesions (Jaiswal and Ebert, 2019; Mohrin et al., 2010; Beerman et al., 2014).\n\nOverall, we found that the proportion of cell types changed with age, observing a decrease in the most mature lymphoid and myelomonocytic compartments. Furthermore, GSEA revealed aging-related transcriptional alterations in all compartments, which suggests an altered biological behavior of HSPCs with age.\n\n### Trajectory inference revealed age-specific drivers along lineages\n\nTo study the distinct differentiation trajectories observed during hematopoiesis and, specifically, alterations during aging, we subjected the single-cell expression datasets to trajectory inference using STREAM (Chen et al., 2019). We first inferred the differentiation trajectories of the young donors to obtain a reference that could serve as a basis for comparison. These trajectories revealed a common starting point that comprised early progenitors (HSCs, LMPPs, and MEPs). This initial root reached the branching point that divides cellular differentiation into the three main branches that resemble the main hematopoietic lineages: the myeloid, erythroid, and lymphoid lineages (Figure 2\u2014figure supplement 1A). The identity of these branches was confirmed by plotting the expression profiles of previously described genes, such as IRF8, GATA1, and EBF1 (Figure 2\u2014figure supplement 1B). Then, in order to identify aging-dependent alterations, the elderly dataset was projected onto the reference trajectories using the approach described in STREAM (Figure 2\u2014figure supplement 1C). We observed an increased proportion of HSCs in the root node, a reduced number of cells biased to both the myeloid and lymphoid lineages, and an increased number of progenitor cells committed to the erythroid compartment in the elderly individuals (Figure 2\u2014figure supplement 1D).\n\nNext, we aimed to identify shifts in the gene expression dynamics along differentiation trajectories. We applied the Palantir algorithm (Setty et al., 2019), with which we recovered a general pseudotime (Figure 2A) and differentiation potential (Figure 2B) for each cell. To measure the similarity between both methods, we performed a correlation analysis and noticed that the pseudotime values were strongly correlated (r=0.78) (Figure 2\u2014figure supplement 1E). We observed significant differences in the distributions of differentiation potential and pseudotime, with aging-associated HSPCs accumulating greater differentiation potential and lower pseudotime (Figure 2\u2014figure supplement 1F). This suggested an immature cell state, which was consistent with our previous analysis. We could also define six trajectories corresponding to six committed compartments: that is, erythroid, lymphoid, dendritic cells, monocytes, basophils, and megakaryocytes, and assigned each cell a probability of belonging to a specific branch (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig2-v2.jpg)\n\n**Figure 2.:** (A) UMAP plots showing the results from applying Palantir algorithm to young and elderly cells. For both datasets, a hematopoietic stem cell (HSC) was established as initial state, based on UMAP coordinates. Final states were only indicated for the elderly dataset, as the UMAP nearest neighbors to the six young final points. Cells are colored by pseudotime and (B) differentiation potential. (C) Branch probabilities for each of the six differentiation paths retrieved. (D) Scatter plot of pseudotime vs. branch probabilities for the monocytic trajectory obtained using Palantir for young and elderly donors. Color represents the cellular subpopulation. (E) Heatmap of gene expression trends for dynamic genes along the monocytic trajectory in young and elderly donors. The columns are arranged according to pseudotime values, and the rows are grouped according to gene clustering results. A summary of enriched terms for the gene clusters in young donors is shown. (F) Expression trends in the comparison of young and elderly cells regarding the different genes involved in the monocytic trajectory (NS = not significant, *adjusted p-value <0.05, **adjusted p-value <0.01, ***adjusted p-value <0.001).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) STREAM plot obtained using cells from young healthy donors. Color denotes cellular subpopulations. The x-axis displays inferred pseudotime values. (B) Expression of known cell-type markers for the different hematopoietic lineages projected in the STREAM plot. Color represents normalized expression values. (C) STREAM plot of elderly differentiation trajectories projected in the young reference. Color indicates the proportion of cells belonging to each condition under study. (D) STREAM plot of elderly differentiation trajectories projected in the young reference. Color represents the cell-type identity (gray color represents the proportion of young cells). (E) Scatter plot of recovered pseudotime values with Palantir (x-axis) and Stream (y-axis) points are colored by cell type. (F) Violin plots colored by condition and representing the pseudotime and differentiation potential per cell type. (Bottom) Branch probability for the differentiation route from hematopoietic stem cells (HSCs) to monocytes. Wilcoxon two-sample test, *adjusted p-value <0.05, **adjusted p-value <0.01, ***adjusted p-value <0.001, NS = non-significant.\n\nAs an example of study of a particular trajectory, we focused on early monocytic differentiation, as it appeared to be impaired in the elderly donors. We plotted, in a per-cell basis, the associated pseudotime along the monocytic trajectory with the Palantir probability of reaching the final stage of the studied route (Figure 2D). This analysis revealed that HSCs and LMPPs from elderly donors had a higher probability of attaining the monocyte progenitor state, suggesting a stronger bias toward the monocytic compartment. However, GMPs displayed the opposite behavior which suggested that although aging-associated progenitors appeared to have a stronger initial bias toward this lineage, a large number of more advanced progenitor cells lost the capacity for monocytic differentiation. This result is in line with the aging-associated decrease in monocytic progenitors described above.\n\nTo determine the transcriptional lesions that potentially alter monocytic differentiation during aging, we computed gene expression trends and clustered them based on their dynamics along the monocytic differentiation trajectory, following the Palantir pipeline. We characterized young gene clusters by over-representation analysis. Terms related to the immune system and monocytic function were enriched as the trajectory progressed, such as antimicrobial response or regulation of the actin cytoskeleton in intermediate stages, and antigen processing and presentation, or interferon gamma signaling, in gene clusters expressed near the terminal state. On computing trends for the cells of elderly donors, we observed that the overall behavior was similar. Nevertheless, genes with altered expression patterns in the elderly donors were visible (Figure 2E). Several myeloid differentiation markers (CST7, PRTN3, MPO, CD74, CALR, and GNAS) were expressed at lower levels across monocytic differentiation in the elderly donors, suggesting a less differentiated state. Accordingly, genes characteristic of stem or very early progenitor cells (MYCT1, MLLT3, and ALDH1A1) showed higher levels of expression in cells from the elderly donors across differentiation. Genes related to stress and inflammation response (FOS, JUNB, TSC22D3, DUSP1, and DDIT4), or monocyte chemotaxis and extravasation (ANXA1, LGALS3, and JAML), exhibited higher expression levels at the start of differentiation in the elderly, with several genes showing decreased expression at the terminal state (Figure 2F), further reinforcing the idea of a loss of capacity for monocytic differentiation in cells from elderly donors.\n\nThese analyses of the differentiation trajectory provided data regarding the genes that may be involved in the aberrant differentiation of aging-associated HSCs. However, the regulation of these transcriptional programs cannot be inferred from this analysis.\n\n### GRNs guiding young and elderly hematopoiesis\n\nTo elucidate the regulatory mechanisms underlying healthy hematopoietic differentiation, we constructed lineage-specific GRNs using SCENIC (Van de Sande et al., 2020) for each of the datasets independently. Briefly, we obtained the set of activation regulons (transcription factor [TF] and their associated targets) for each of the cellular subpopulations and binarized its activity (on/off) in a per-cell basis using AUC values provided by SCENIC (through the AUCell algorithm). This approach enabled quantification of the proportion of cells that displayed an activated state for each regulon in each cluster. We then selected the top ranked regulons based on the regulon specificity score (RSS) (Figure 3\u2014figure supplement 1A and B) to identify specific regulatory mechanisms per cell type. For the young donors, we obtained a series of GRNs guided by TFs known to be relevant for specific cell populations, such as HOXA9 in early progenitor cells, or CEBPG, PAX5, and GATA1 in the myeloid, lymphoid, and erythroid compartment, respectively (Figure 3A). For some regulons AUC values were highly correlated with the corresponding gene expression profiles of the guiding TF, whereas others such as CEBPG or TCF3 displayed a more specific dynamism of GRN activity that is not observed with gene expression. For each of the hematopoietic lineages, we observed sets of regulons that regulated the transcriptional state of specific cellular differentiation programs and also the presence of common targets among different TFs (Figure 3B). This observation indicates that a single TF might not only regulate cellular differentiation toward a specific route, but also contribute to other regulatory elements in other differentiation trajectories.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig3-v2.jpg)\n\n**Figure 3.:** (A) (Left) Heatmap showing the proportion of cells per cluster that have an activated state for different regulons in young cells. (Right) UMAP plots with normalized expression and AUC values for specific transcription factors. (B) Gene regulatory network of the identified regulons for the hematopoietic system in young donors. Regulons were trimmed to include only targets with an importance score higher than the third quartile in each regulon. Node shape denotes gene-type identity, and color denotes cell population. Any target that can be assigned to multiple transcription factors is colored in gray. (C) (Left) Heatmap showing the proportion of cells per cluster that have an activated state for different regulons in elderly cells. (Right) UMAP plots with normalized expression and AUC values for specific transcription factors. (D) Gene regulatory network of the identified regulons for the hematopoietic system in elderly donors. Regulons were trimmed to include only the targets with an importance score higher than the third quantile in each regulon. Node shape denotes gene-type identity, and color denotes cell population. Any target that can be assigned to multiple transcription factors is colored in gray. (E) Bar plot with enriched gene ontology categories after over-representation analysis. Categories are grouped per cell type, and color denotes the enriched group. Bar length represents statistical significance of the enrichment, as -log10 p-value.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Regulons ranked by their specificity score (RSS), computed with pyscenic for each subpopulation. Names for the top five regulons with the most specific activity per subpopulation are shown. (A) Young regulons. (B) Elderly regulons.\n\nWe performed the same analysis using the elderly dataset and observed that progenitor populations displayed a reduced proportion of cells with activated regulons. Specifically, HSCs showed a less active state of TFs, such as MECOM and GATA3, that were deemed specific to young donors (Figure 3C). In already committed cellular subpopulations, we observed similar proportions of activated cells between young and elderly donors, with the erythroid lineage showing the most similar profiles. However, progenitors (GMP, MEP, and CLP cells) from elderly donors showed a lower number of cells with specific regulons activated. Overall, we observed that the predicted regulatory network of elderly HSCs (Figure 3D) appeared as an isolated network compared to the young GRN. This finding could result in the loss of co-regulatory mechanisms in the elderly donors.\n\nWe then performed gene ontology enrichment analyses using as input the genes composing the highest ranked regulons in early progenitor compartments (HSC, LMPP, GMP, CLP, and MEP cells). HSCs from young donors displayed enriched terms related to the differentiation of hematopoietic lineages, such as myeloid cell differentiation, lymphocyte cell differentiation, and regulation of hematopoiesis, whereas HSCs from the elderly donors did not exhibit such enrichment (Figure 3E), suggesting a putative alteration of differentiation potential among aged HSCs. Although no increase in the percentage of LMPPs was observed in the elderly donors, this analysis indicated a clear enrichment in terms related to DNA replication in the elderly but not in the young donors, suggesting an aging-mediated alteration of the proliferative rate of this cell type. More mature progenitors also showed a youth-specific enrichment of differentiation processes such as lymphocyte differentiation, B-cell receptor signaling pathway, or T- and B-cell activation for CLPs, and erythrocyte differentiation and homeostasis for MEPs. This suggests that in aging-associated progenitor cells, relevant regulators of hematopoiesis undergo functional alterations that result in the loss of expression of genes that are required for proper hematopoietic differentiation. Collectively, these results show aging-dependent alterations in the GRNs that guide hematopoiesis, which may be associated with the diminished differentiation capabilities that early progenitors present in the elderly.\n\n### scRNA-seq analysis of MDS specimens reveals molecular lesions affecting normal hematopoietic differentiation\n\nTo further demonstrate the potential of the used computational methods in the prediction of the mechanisms underlying aberrant hematopoietic differentiation, we explored the transcriptional alterations that distinguish normal hematopoiesis during aging from abnormal hematopoiesis associated with the development of MDS. To this end, we performed scRNA-seq from bone marrow CD34+ cells obtained from four patients with MDS. In order to homogenize the group of study, and due to the great clinical and molecular heterogeneity of this disease, we focused our analyses in patients with a diagnosis of MDS with multilineage dysplasia.\n\nWe recovered 41,749 cells that passed the quality control filters (Supplementary file 5). All the analysis for the MDS samples was performed following the same methods used for the elderly individuals. For cell-type annotation, we predicted cell labels using our GLMnet classifier (Figure 4A). We noted the absence of lymphoid compartments, considerable reduction in the number of HSCs, and increase in LMPPs and GMPs subpopulations compared to healthy elderly individuals. The total percentage of erythroid compartments varied among patients, although in general it was similar to that of normal counterparts (Figure 4B); nevertheless, the proportion of specific erythroid populations varied, with most MDS patients showing less MEPs and more late erythroid progenitors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig4-v2.jpg)\n\n**Figure 4.:** (A) UMAP plot of CD34+ cells from MDS (n=4). Cells are colored according to identity, as assessed using a previously described cell-type classification method. (B) Bar plots showing the proportion of cells assigned to each cellular subpopulation for each donor independently. Color denotes the cellular subpopulation. (C) Gene set enrichment analysis (GSEA) results after performing differential expression between MDS and elderly donors. Dot color represents enrichment direction, transparency the statistical significance, and size NES absolute value. (D) Expression trends in the comparison of healthy and pathological cells regarding the different genes involved in the erythroid trajectory (NS = not significant, *adjusted p-value <0.05, **adjusted p-value <0.01, ***adjusted p-value <0.001). (E) Heatmap showing the proportion of cells per cluster that had an activated state for different regulons in the four samples of patients with MDS among AML cells.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79363/elife-79363-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Gene set enrichment analysis (GSEA) results after performing differential expression between MDS and young donors. Dot color represents enrichment direction, transparency the statistical significance, and size NES absolute value. (B) UMAP with cells colored by Palantir probabilities for the erythroid trajectory. (C) Heatmap of gene expression trends for dynamic genes along the erythroid trajectory in young, elderly, and MDS donors. (D) Gene regulatory network of the identified regulons for MDS donors. Regulons were trimmed to include only the targets with an importance score higher than the third quantile in each regulon. Node shape denotes gene-type identity, and color denotes cell population. Any target that can be assigned to multiple transcription factors is colored in gray. Important genes are labeled in red.\n\nNext, we carried out GSEA of genes differentially expressed between healthy elderly donors and each of the patients for the detected subpopulations. Results showed potential aberrant functionality of MDS cells. The most evident alteration was the enrichment of MDS patients in genes related to interferon alpha and gamma response, which was more evident for cases MDS1 and MDS2. This observation is in accordance with previous reports demonstrating increased inflammatory signaling in the disease (Kim et al., 2015; Ga\u00f1\u00e1n-G\u00f3mez et al., 2015; Ivy and Brent Ferrell, 2018). Interestingly, genes associated with oxidative phosphorylation, a process that is very relevant for the metabolism of several types of cancer and that is considered as an emerging target (Ashton et al., 2018), were more prominent in MDS. MDS patients also showed alterations of hallmarks related to cell proliferation, including E2F targets, mitotic spindle, or G2/M checkpoint, suggesting an aberrant proliferative activity of hematopoietic progenitors in these patients (Figure 4C). We also performed GSEA using the young donors as controls, and again found enrichment of interferon response in MDS patients. However, we observed variability in other potentially altered pathways, highlighting the importance of using age-matched controls for comparisons (Figure 4\u2014figure supplement 1A).\n\nMost MDS patients are characterized by defects in erythropoiesis, showing dysplasia and/or citopenia of this lineage. Thus, as an example of the applicability of the trajectory inference analyses to identify MDS-related transcriptional alterations, we explored gene dynamics along the HSC-erythroid branch. We reconstructed the erythroid trajectory and computed gene trends along pseudotime using Palantir (Figure 4\u2014figure supplement 1B). Genes that were specifically expressed by any of the progenitors belonging to this branch (HSCs, MEPs, and erythroid progenitors) were selected and clustered according to their expression pattern (Figure 4\u2014figure supplement 1C). Although we did not detect broad changes in the transcriptional profiles among the conditions, we identified specific genes participating in erythroid differentiation that displayed different dynamics from both young and elderly healthy samples (Figure 4D). Examples of genes with altered dynamics included increased levels of genes with a negative role in erythropoiesis such as JUN and YBX1 (Bhullar and Sollars, 2011; Lee et al., 2014) and NME4, previously associated with poor prognosis in MDS (Kracmarova et al., 2008). Moreover, we also observed decreased expression across the trajectory of factors that promote erythroid differentiation, such as TRIB2, PHF6, and PDCD4 (Loontiens et al., 2020; Cho et al., 2015) and involved in erythroleukemia: PVT1 (Salehi and Sharifi, 2018). Interestingly, whereas some of the genes showed aberrant dynamics in all the patients analyzed (i.e. TRIB2), most of them were altered in a subset or in individual patients, reinforcing the heterogeneity of MDS at the molecular level. Despite these changes, we observed that erythroid specific markers such as ANK1, CA2, or AHSP followed trends similar to those of healthy HSPCs, which is in agreement with the apparently normal progression of differentiation at the progenitor stages. These results indicate that, although at very early progenitor stages some drivers of erythroid differentiation exhibit normal trends of expression, others show clear abnormalities that may manifest in more mature stages as erythroid differentiation is altered and may be responsible for the anemia and/or erythroid dysplasia that characterizes MDS patients.\n\nUsing SCENIC we analyzed the transcriptional programs regulating HSPCs and reconstructed GRNs by extracting those regulons that were specifically active in each of the cellular compartments (Supplementary file 6). We identified active GRNs that were guided by TFs characteristic of the different populations (Figure 4E and Figure 4\u2014figure supplement 1D), and observed that a great number of the most prevalent regulons for each cell type were different from that of healthy donors. Interestingly, MDS cases showed regulons that were very active in most cell types, and that were not present in HSPCs from young or elderly samples, such as SMAD1 (MDS1); ATF3 and HOXA6 (MDS2); POU2F2, NR4A1, and HMG20B (MDS3); YEATS4, E2F1, and RUNX1 (MDS4). Interestingly, despite representing the same subtype, the individual MDS cases showed alterations of very specific regulons, demonstrating that the heterogeneity of the disease also takes place at the GRN level. Furthermore, some of the TFs guiding the regulons showing aberrant activity had previously been involved in the regulation of hematopoietic differentiation or the development of myeloid malignancies. For example, SMAD1 regulon was active in most cell types in patient MDS1, showing its highest activity in HSCs, LMPPs, and erythroid precursors. SMAD1 knockdown has been shown to promote erythropoiesis, suggesting that high activity of this factor may negatively impact erythroid differentiation (McReynolds et al., 2007). Furthermore, SMAD1 pathway has been shown to be active in a model of persisting LSCs, suggesting that this factor may be relevant in the development of myeloid malignancies (Lefort and Maguer-Satta, 2020). Patient MDS2 demonstrated aberrant high activity of the regulon guided by ATF3, which has been shown to drive cell cycle progression in AML, and of that of HOXA6, a TF which potentiates hematopoietic cell differentiation and self-renewal. Patient MDS3 presented a ubiquitous activity of the regulon guided by POU2F2/OCT2, a TF overexpressed in AML, in all the subpopulations analyzed. This patient also showed high activity of NR4A1, a factor that has been shown to specify a distinct subpopulation of quiescent myeloid-biased HSCs (Land et al., 2015), in HSCs and LMPPs. Moreover, we also detected that HMG20B, a known repressor of erythropoiesis (Esteghamat et al., 2011), was prominently active in several cell types, including erythroid precursors. Finally, patient MDS4 demonstrated aberrant high activity of the regulons guided by YEATS4, which is amplified in different tumors, and E2F1, a TF whose increased activity has been previously described in MDS. These results suggested that aberrant activity of specific regulons in MDS patients could drive aberrant gene expression and ultimately promote a myelodysplastic phenotype.\n\nCollectively, the combination of computational methods and scRNA-seq demonstrate the power of these analyses to identify novel transcriptional alterations in a personalized manner, and therefore to help uncover the molecular heterogeneity of the disease. Moreover, the approaches used do not only have the power to characterize genes with altered expression across MDS hematopoietic differentiation or any other pathological condition, but also to identify deregulated GRNs that could act as master regulators in the disease, which could be exploited therapeutically in individual patients.\n\n## Discussion\n\nIn this study we report how the combination of computational tools can be used to generate high-resolution scRNA maps of human HSPCs and unravel changes associated with aging and disease. Although previous studies focused on other species (Mann et al., 2018; Flohr Svendsen et al., 2021) and other layers of information such as mutations (Jaiswal and Ebert, 2019), proteomics (Hennrich et al., 2018), and proteo-genomics (Triana et al., 2021), our study represents one of the first analyses that describes early human hematopoiesis based on its dynamic gene expression and transcriptional regulation by identifying changes that may be responsible for some of the phenotypic modifications observed during healthy aging. Applying this knowledge to HSPCs obtained from patients with MDS, we show how these analyses can help identify transcriptional alterations that play potential roles during disease development. We used MDS as a model to identify pathological alterations in the hematopoietic system, but we consider that the proposed methodology can be translated into other biological systems or pathological contexts.\n\nSingle-cell experiments are providing data at an unprecedented scale, which has allowed the identification of novel cell types and alterations that occur in biological systems. This increase in resolution has proceeded concurrently with the development of multiple computational tools that aspire to solve common problems arising with these technologies. An essential dilemma of this approach is how to establish reliable identities of the cells that will be used for subsequent analysis (Abdelaal et al., 2019). In this study, we generated a reference system based on the transcriptional profile of HSPCs from healthy young donors and used it to assign labels to cells from elderly healthy and pathological donors. We generated an in-house cell classifier that allowed us to reduce the effect of technical artifacts that can contribute to erroneous prediction of cell identity. This classifier was applied to cells that underwent the same sorting, library preparation, and sequencing procedures; thus, we expected to identify similar cell populations in each dataset. Additionally, when applied to external data, we found minor differences from the originally established labels, with the three lineages as well as the most immature states being precisely identified.\n\nThe results from our computational analysis go in line with previous studies, while also pointing toward genes and pathways of potential interest for further studies of hematopoiesis alterations. On one hand, we encountered an age-driven expansion of HSCs, as well as a decrease in the proportion of lymphoid precursors. Both events have been previously associated with aging (Dykstra et al., 2011; Dykstra et al., 2011; Pang et al., 2011; Pang et al., 2011; Young et al., 2016). Using functional analyses, we also detected an enrichment of pathways related to apoptosis and inflammatory conditions in early progenitors among elderly donors, which can be explained by the inflammatory microenvironment known to be present in elderly individuals (Leimk\u00fchler and Schneider, 2019). Conversely, cells from young donors showed highly active differentiation and proliferation profiles, reinforcing the idea of the higher differentiation capacity among young individuals (Chung and Park, 2017). On the other hand, trajectory analyses pointed toward abnormal transcriptional dynamics across monocytic development during aging. We observed that although the most immature clusters (HSCs and LMPPs) showed an increased monocytic potential of differentiation in the elderly, more mature precursor cells presented reduced potential. This could suggest an increased priming toward the monocytic lineage of early progenitors during aging. However, alterations at later stages could result in a loss of monocytic differentiation capacity and, accordingly, a delay in the expression of genes that characterize the monocytic lineage. In agreement with our results, an aging-associated skewing toward myeloid-biased HSCs and multipotent progenitor compartments has been described in mice (Elias et al., 2017). By focusing on GRNs, we observed that aged progenitor cell types showed a decrease in the activity of specific regulons, a lower degree of interaction between TFs and targets, and no enrichment of pathways involved in the cellular differentiation of specific lineages. Therefore, we were able to point toward regulatory factors guiding differentiation defects in the elderly. As computational methods used to predict regulatory mechanisms in single-cell RNA-seq datasets can provide false-positive and -negative predictions (Aibar et al., 2017; Pratapa et al., 2020), other types of assays, such as ATAC-seq, or functional assays could be used as a validation strategy.\n\nWe also shed light into the molecular pathogenesis of MDS. These syndromes are characterized by a significant phenotypic and genomic heterogeneity. In that context, our methodology could have a direct clinical application by promoting the identification of patient-specific transcriptional lesions with a potential involvement in the differentiation defects. Although previous studies focused on the transcriptional lesions of MDS exist (Hofmann et al., 2002; Pellagatti et al., 2006; Ueda et al., 2003; Miyazato et al., 2001; Im et al., 2018; Montalban-Bravo et al., 2020; Pellagatti et al., 2010), they were performed using bulk populations of mononuclear cells and, thus, provide a limited perspective of the pathology in these patients. The detailed analysis of erythroid differentiation in our patients with MDS led to the identification of genes with altered expression dynamics, which may play a key role in promoting dyserythropoiesis. Furthermore, GRN analysis revealed key regulons, whose activity could contribute to the phenotype of these cells. Further investigations will be needed to validate the roles of these regulators in the disease.\n\nOverall, we propose the results of this work as an in silico basis for future, in-depth studies of early hematopoietic alterations. We performed a complex analysis, taking multiple approaches, that pointed toward genes and pathways potentially involved in aging and MDS. In addition, the methodology that we developed could be applied to fully analyze datasets set in other pathological scenarios.\n\n## Materials and methods\n\n### Sample collection\n\nThe samples and data from the patients included in the study were provided by the Biobank of the University of Navarra and were processed according to standard operating procedures. Patients and healthy donors provided informed consent, and the study was approved by the Clinical Research Ethics Committee of the Clinica Universidad de Navarra. Bone marrow aspirates were obtained from healthy controls (young individuals [n=5], median age, 20 years, range, 19\u201323 years) or patients undergoing orthopedic surgery (elderly donors [n=3], median age, 72 years, range, 61\u201384 years). Samples from newly diagnosed patients with MDS were obtained from the Clinica Universidad de Navarra and collaborating hospitals. The patient\u2019s clinical characteristics are shown in Supplementary file 5.\n\n### Fluorescence-activated cell sorting\n\nFor the CD34+ cells purification, bone marrow mononuclear cells were isolated by Ficoll-Paque Plus (GE HealthCare) density gradient centrifugation and stained using CD34 (clone 8G12; BD Biosciences) CD64 (clone 10.1; BioLegend) CD19 (clone SJ25C1; BioLegend) CD10 (clone HI10A; BioLegend) CD3 (clone OKT3; BioLegend) CD36 (clone CLB-IVC7; Sanquin Plesmanlaan) CD61 (clone RUU-PL7F12; BD Biosciences) for 15 min at RT. CD34+ CD64- CD19- CD10- CD3- CD36+ CD61+ cells were then sorted in a BD FACSAria II (BD Biosciences). Purified CD34+ cells were directly used for scRNA-seq analysis.\n\n### scRNA library preparation\n\nThe transcriptome of the bone marrow CD34+ cells were examined using NEXTGEM Single Cell 3' Reagent Kits v3.1 (10\u00d7 Genomics) according to the manufacturer\u2019s instructions. Between 5000 and 17,000 cells, depending on the donor, were loaded at a concentration of 700\u20131200 cells/\u00b5L onto a Chromium Controller instrument (10\u00d7 Genomics) to generate single-cell gel bead-in-emulsions (GEMs). In this step, each cell was encapsulated with primers containing a fixed Illumina Read 1 sequence, a cell identifying 16 bp 10\u00d7 barcode, a 10 bp unique molecular identifier (UMI), and a poly-dT sequence. Upon cell lysis, reverse transcription yielded full-length, barcoded cDNA, which was then released from the GEMs, amplified using polymerase chain reaction, and purified using magnetic beads (SPRIselect, Beckman Coulter). Enzymatic fragmentation and size selection were used to optimize the cDNA size prior to library construction. Fragmented cDNA was then end-repaired, A-tailed, and ligated to Illumina adaptors. A final polymerase chain reaction amplification using barcoded primers was performed for sample indexing. Library quality control and quantification were performed using a Qubit 3.0 Fluorometer (Life Technologies) and an Agilent 4200 TapeStation System (Agilent), respectively. Sequencing was performed on a NextSeq500 instrument (Illumina) (Read1: 28 cycles; Read 55 cycles; i7 index: 8 cycles) at an average depth of 30,000 reads/cell.\n\n### scRNA preprocessing\n\nThe demultiplexing of raw base call files (BCL) was performed using the 10\u00d7 software cellranger mkfastq. The generated FASTQ files were aligned to the GRCh38 version of the human genome, and count matrices were constructed using cellranger count. The default barcode filtering was performed at this step. To remove doublets, we plotted the distribution of total genes and UMIs detected per cell and established a customized superior threshold for each sample (Supplementary file 1). Additionally, we filtered out cells with >5% or 10% of counts landing in mitochondrial genes, as this is an indicator of dying cells. In the elderly and pathological samples, we detected a small number of cells in which <1% of the mitochondrial genes clustered together; thus, we excluded them from the analysis.\n\n### Data integration, clustering, and visualization\n\nSamples from the same condition (young, elderly, or MDS) were integrated using the Seurat pipeline. Gene counts were divided by the total expression per cell, multiplied by a scaling factor of 10,000, and log transformed. Normalized counts were scaled across cells. The 2000 genes with highest variance were selected using the variance stabilizing transformation method. Next, we performed integration as described previously (Stuart et al., 2019) using 50 dimensions. After integration, we rescaled the data, regressed the cell cycle effect, and conducted principal component analysis (PCA). Based on the visual exploration of the scree plot, we selected the appropriate number of components to continue the analysis (Supplementary file 1).\n\nNext, we performed unsupervised clustering on the young integrated data, using the algorithm implemented in Seurat. We constructed a shared nearest neighbor graph based on Euclidean distances in the PCA space with the chosen dimensionality and clustered the cells using the default Louvain algorithm. We tested several resolutions and assessed the results by calculating the average silhouette for each cluster. We determined the cluster markers using the Seurat function FindAllMarkers with the MAST method. Next, we annotated the clusters by manually inspecting the most specific markers and searching for curated markers in the literature.\n\nTo ease visualization, we embedded the cells from the young and elderly samples under the same coordinates. Thus, we integrated the young and elderly datasets using the pipeline described above. Using the first 30 principal components, we calculated the UMAP coordinates, as implemented in Seurat, which were then used in all the figures.\n\n### Classification model\n\nWe constructed a classification model to predict the cell identity of elderly and MDS single cells using the previously annotated young dataset as a reference. To this end, we performed logistic regression with elastic-net regularization in the glmnet R package. This approach is appropriate for sparse input data, and the elastic-net penalty allows flexible selection of variables.\n\nWe constructed an individual binary prediction model for each of the 14 identities established. To train and validate each model, we selected all the cells from the appropriate cluster and an equal number of random cells from the remaining clusters. This set was then randomly divided in two: 75% was destined to training the model and 25% was dedicated to validation. We also performed an initial feature selection by selecting the subset of highly variable genes present in both the training-validation data (young) and the data to be classified (elderly, MDS, or AML). Initially, we trained models with different \u03b1 values (1, 0.75, 0.5, 0.25, and 0.1). For each model, we used 10-fold cross-validation, and the algorithm selected the optimal value for \u03bb. Subsequently, we selected the most appropriate \u03b1 value by evaluating the performance of the models on the validation dataset. If possible, we only retained the models that used between 20 and 150 variables. Among them, we selected the model with the maximum AUC and, in case of a tie, we successively searched for the minimum false-positive rate, minimum false-negative rate, and maximum number of variables. After the optimal model was selected, we used it to classify new data as positive or negative for a particular identity.\n\nWe repeated the steps from the creation of the training and validation sets to binary prediction, 10 times and stored the resulting predictions: both the class (positive or negative) and its associated probability of being positive. Finally, we averaged the 10 resulting probabilities for each binary model and assigned the identity that corresponded to the highest probability. In cases in which none of the identities were associated with a probability of >0.5, the cell was labeled as not assigned.\n\n### GSEA\n\nWe performed differential expression analysis of cells belonging to the same identity to identify differences between conditions. We applied the Seurat FindMarkers function to the log-normalized counts using the MAST method and the options logfc.threshold=0 and min.pct=0. In order to control for batch effect, we set patients as latent variables. In addition, we tested for all genes expressed in every sample. Only cell types with at least 25 cells per condition were used. We ranked the genes according to their average log fold change. We performed GSEA using the fgsea R package and tested for hallmark gene sets.\n\n### Trajectory analysis using STREAM\n\nWe extracted the differentiation branches in our data using STREAM. We then used the young batch-corrected matrix to establish the reference structure, onto which we then mapped the elderly cells. Using the STREAM pipeline, we computed the 2000 most variable genes and 20 principal components. Then, we performed nonlinear dimensionality reduction using modified locally linear embedding. We projected cells onto a three-dimensional space and set the algorithm to use the 30 nearest neighbors. An elastic principal graph was constructed by computing 20 clusters and was refined using the following parameters: epg_alpha = 0.02, epg_mu = 0.05, and epg_lambda = 0.01. Subsequently, mapping was performed using the default STREAM parameters. For this step, we used the elderly batch-corrected matrix.\n\n### Trajectory analysis using Palantir\n\nPalantir was used to reconstruct hematopoietic lineages and recover gene expression dynamics along the lineages. This algorithm models differentiation and fate choice as a continuous probabilistic process. It orders cells along a global pseudotime, determines final states, and assigns each cell a probability to reach each terminal state.\n\nWe used the batch-corrected matrices to infer trajectories in young and elderly conditions. PCA was performed, and 30 diffusion components were calculated. For the young dataset, we selected 10 HSCs according to their position in the UMAP coordinates. We sequentially applied the Palantir algorithm using each of these cells as the initial state. Terminal states were stored for each run, and we retained those that appeared in more than five cases. If more than one terminal state corresponded to the same cell identity, we randomly selected one of them. We ran Palantir a final time adding the selected terminal states as prior information. For the elderly dataset, we selected the HSC with the highest probability, as determined by the GLMnet model, as the initial state. We then searched for cells with the highest similarity to the terminal states found in the young dataset. To this end, we calculated the nearest neighbor in the UMAP space. In the case of the MDS samples, we independently analyzed each patient. We used the normalized counts matrices, calculated 30 diffusion components, and set 10 eigen vectors to determine the multiscale space.\n\nFor each dataset, gene expression trends along pseudotime were calculated as described in Palantir using generalized additive models, with the addition of the branch probabilities as prior weights for the model.\n\n### GRNs\n\nPython implementation of SCENIC was used for GRN inference. All required inputs were downloaded from https://resources.aertslab.org/cistarget/ and https://pyscenic.readthedocs.io/en/latest/installation.html. Raw UMI matrices were provided as input for the pyscenic algorithm, as described in https://pyscenic.readthedocs.io/en/latest/tutorial.html. RSS were obtained using the regulon_specificity_scores command.\n\nAUC matrices were imported into R and batch-corrected using the removeBatchEffect implemented in the limma R package. Batch-corrected AUC matrices were binarized using the BinarizeAUC function implemented in the AUCell R package. The percentage of active regulons per cell type was determined by counting the number of cells with a value of 1 in the binarized AUC matrix and dividing it by the number of cells per cell type. The top five regulons per cell type were selected according to the RSS.\n\nNetworks were drawn in Cytoscape, and only edges with an importance value larger than the third quartile (per regulon) were retained.\n\nWe performed over-representation analysis for the different sets of genes that compose the top five specific regulons for HSC, LMPP, GMP, CLP, and MEP, both in data from young and elderly donors. We tested for the gene ontology biological processes gene sets.\n\n### Basic statistical analysis\n\nWe carried out pairwise comparison between pairs of proportions to test for significant differences in cell population proportions. We did so both among individuals from the same condition and between conditions. Two-sample Wilcoxon test was performed to test for differences in Palantir pseudotime, differentiation potential, and branch probabilities between young and elderly and per cell population. It was also used to find significant differences in gene expression trends across pseudotime between conditions. Multiple testing was addressed by adjusting p-values using the Bonferroni-Holm correction method. Results were considered significant when adjusted p-values <0.05.\n",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "da65b97f-b3a7-40f5-b30e-0630e870b409",
+      "submission_id": "689aef34-490b-4387-9535-539d70a2cc20",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jiwon Shim, https://ror.org/046865y68 Hanyang University Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79363.sa0](https://doi.org/10.7554/eLife.79363.sa0)\n\nThis study generated an important single-cell transcriptome dataset using young/aged hematopoietic stem/progenitor cells obtained from normal individuals and those with MDS. The new resource provides a convincing dataset to understand a unique transcriptional landscape in elderly individuals, compared to young individuals, proving the hematopoietic aging at a transcriptome level. This manuscript will be of interest to readers in the field of hematopoiesis and associated diseases, aging, and single-cell RNA sequencing.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jiwon Shim, https://ror.org/046865y68 Hanyang University Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79363.sa1](https://doi.org/10.7554/eLife.79363.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Uncovering perturbations in human hematopoiesis associated with healthy aging and myeloid malignancies at single cell resolution\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Utpal Banerjee as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Jong Kyoung Kim (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Validate GLMnet and apply a consistent analysis platform throughout (e.g. STREAM or Palantir for pseudotime, manual annotation): All reviewers\n\n2. Substantiate and clarify MDS analysis: (1) Same analytical strategy should be applied for young/old and MDS patients, (2) a detailed comparison between MDS-aging, (3) add clinical details: All reviewers\n\n3. Additional supports required for the HSC population analysis, clarify young/elderly data analysis from the clonal hematopoiesis perspective: Reviewers 1 and 2\n\n4. Consistent data description and additional validation for age-dependent cell type changes: Reviewers 1 and 3\n\n5. Additional data/quantitation/explanation required for GRN analysis between young and old: Reviewers 2 and 3\n\nReviewer #1 (Recommendations for the authors):\n\n1. In Figure 1b and d, elderly2 individual expresses a significantly higher HSC proportion than the other two with reductions in other populations, which can skew an entire landscape of elderly populations. Is there any other data supporting that the proportions of HSCs from elderly donors shown in Figures 1b,d are representative?\n\n2. Regarding the above concern, what is the age distribution of elderly individuals? In a very recent study showing the clonal diversity of HSC/MPP cells in humans (for example, Mitchell et al., Nature 2022), it has been shown that the elderly over 65 yrs dramatically reduce the clonal diversity and this might be contributed to the biased HSC proportions shown in elderly2 data. Brief information, at least an age, of individuals needs to be provided as in sup table 5 for healthy donors, if possible, and discuss the extreme bias generated in elderly2 data.\n\n3. In Figure 1e, the authors concluded that Myc is downregulated, and proliferative activity is decreased in cells of elderly individuals. However, some of the populations are rather expanded in elderly individuals; for example, the numbers of HSC or MEP are rather higher in elderly individuals. How would the authors explain such discrepancies?\n\n4. As a nonexpert, it is not clear to me why Seurat or GLMnet-based labeling results in dissimilar proportions of cell populations. Would differing cutoffs or measurements of Seurat have given similar numbers to GLMnet? Or would it be possible to acquire numbers similar to Seurat or GLMnet with an alternative method? It would become a much-valued resource for the community if the data presented here, from young, and elderly to MDS, are analyzed in a consistent platform with a clear rationale.\n\n5. In Figure 3e, the authors claim that HSCs from young donors show enriched terms related to differentiation of hematopoietic lineages while elderly donors do not display such an increase. However, it is not clear whether changes in the gene expression of HSCs from young donors are attributed to uniform alterations in HSC gene expressions or due to changes in the composition of HSC subsets.\n\n1) The gene regulatory network of HSCs in elderly donors might have undergone a global change, but it is also possible that a landscape of HSC subsets (for example, long-term, short-term, or different subsets segregated by different niche interactions) could change, consequently leading to altered gene expressions.\n\n2) Is it possible to subcategorize HSCs, for example, cells with high differentiation genes versus low, and compare them between young versus elderly?\n\n3) Are HSCs in both young and elderly clear enough? It is possible that intermediate/committed cells, simultaneously holding stem cell characteristics, are mixed in HSC populations.\n\n6. Even though this paper is a resource article, explanations of the MDS data are not clear enough and additional analysis may be required to better understand the disease.\n\n1) Are the same cell types annotated when the same method used in young/elderly is applied to MDS patients?\n\n2) It is reasonable to conclude that MDS cases show high heterogeneity of the GRN levels and each patient has specific regulons for the disease development. If so, do the four MDS patients show differential trajectories of HSC differentiation? And how are these single-cell landscapes from 4 patients associated with genetic mutations in each case (shown in sup table5)?\n\n3) If MDS is a heterogenic disease, what would be a common idea, which can be used for future studies and therapeutics, extracted from single-cell RNA analyses?\n\nReviewer #2 (Recommendations for the authors):\n\nI do not recommend this manuscript for publication form based on the following reasons:\n\n1. The main claims derived from computational predictions were not well supported by the data presented and were not experimentally validated (Major points 1 to 6 of the Public Review).\n\n2. I think if the authors address Major point 7 of the Public Review, the value of the single-cell dataset as a resource for understanding the age-associated cellular and molecular alterations during human hematopoiesis will be greatly improved. However, I agree that this would be beyond the scope of this manuscript.\n\nIf the manuscript is revised to address these concerns, I can reconsider my recommendation.\n\nReviewer #3 (Recommendations for the authors):\n\n1. Section 'GRNs guiding young and elderly hematopoiesis' focuses on differences in transcription factor regulatory networks between young and old. Whilst an elegant analysis, it does not appear to add much more insight than the previous sections which identify expanded HSC and impaired differentiation in the elderly datasets. We would consider reducing this section and merging it with the previous one.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Uncovering perturbations in human hematopoiesis associated with healthy aging and myeloid malignancies at single cell resolution\" for further consideration by eLife. Your revised article has been evaluated by Utpal Banerjee (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nAlthough the authors addressed most of the concerns, some of the major comments require additional changes to warrant publication in eLife. Please find the concerns raised by reviewer 2, especially ones regarding the previous major comments 2 and 3.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors performed additional analyses and experiments and adequately addressed all of my major concerns.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors should specify or highlight changes in their manuscript and rebuttal. It is difficult for me to follow changes in this revised manuscript. The revised manuscript addressed some of my previous concerns but failed to address the following points:\n\n1. Previous major comment 2 (cell-type composition changes): The newly added flow cytometry data did not support an expansion of MEPs and a reduction of GMPs in elderly individuals predicted by scRNA-seq analysis. The sentence at line 178-179 (\"We used Flow Activated Cell Sorting (FACS) as an orthogonal method to support our findings (Figure 1\u2014figure supplement 3) and observed similar results.\") should be toned down accordingly.\n\n2. Previous major comment 3 (STREAM and Palantir): I strongly disagree with the authors's opinion that mixing the results of two different methods in the same figure can be helpful for deciding which method is better suited to specific problems. Figure 2F and G can be equally well presented with pseudotime computed by STREAM as the authors showed that pseudotime values from two methods are highly correlated. To avoid any confusion and be consistent, the authors should not mix the results of two different methods in the same figure. The results generated by Palantir should be presented in a supplementary figure to demonstrate the robustness of pseudotime analysis.\n\n3. Previous major comment 5: What does \"independent network\" mean?\n\n4. Previous major comment 6: Even though this manuscript was submitted as a \"Tools and Resources\" article, the authors should demonstrate the robustness of their constructed GRNs. All research papers should convincingly show that the results and predictions presented in the manuscript are robust and consistent regardless of the category of the submitted manuscript. The benchmarking papers and other research papers have already shown that all methods for constructing GRNs from scRNA-seq data (including SCENIC) have an issue of false positive and negative predictions.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors comprehensively addressed the comments. I have no further concerns.\n",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7f739dce-03a6-4900-a2fc-ae2a8cfb0cdc",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C1",
+      "claim": "A total of 34,590 cells were profiled from young donors.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34,590 and 40,641 cells were profiled from young and elderly donors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of cells profiled from young donors in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "b53f6ab9-4394-4a77-921e-4cea617ff22e",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C2",
+      "claim": "A total of 40,641 cells were profiled from elderly donors.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34,590 and 40,641 cells were profiled from young and elderly donors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of cells profiled from elderly donors in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "8f8a1c50-14aa-4045-9ff4-a0163793cc8e",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C3",
+      "claim": "Single-cell libraries were sequenced up to an average depth of 30,000 reads per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, single-cell libraries were prepared using a Chromium controller instrument (10\u00d7 Genomics) and sequenced up to an average depth of 30,000 reads per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the sequencing depth in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "e4dd5780-4926-45b2-9fd0-c8fb1df5fefa",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C4",
+      "claim": "14 cellular subpopulations were identified in the landscape of HSCs and progenitors from young donors.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified 14 cellular subpopulations comprising the landscape of HSCs, early progenitors: megakaryocyte-erythroid progenitors (MEPs), lympho-myeloid primed progenitors (LMPPs), common lymphoid progenitors (CLPs), and granulocyte-monocyte progenitors (GMPs), and cells already committed to specific lineages (pro-B cells, monocytic, erythroid, megakaryocytic, basophil and dendritic cell progenitors) (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number and types of cellular subpopulations identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "0d7bfce8-c4b0-489d-8d82-ba095f0883d1",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C5",
+      "claim": "Early progenitors were characterized by the expression of genes such as CRHBP, HOPX, and PBX1.",
+      "claim_type": "EXPLICIT",
+      "source": "Early progenitors were characterized by the expression of genes such as CRHBP, HOPX (initial lympho-myeloid differentiation), and PBX1 (initial megakaryocyte and erythroid lineage).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states which genes characterize early progenitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "d8ca219d-470a-498f-998a-890b97628c88",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C6",
+      "claim": "More mature progenitors presented myeloid-specific markers including MPO, CTSG, PRTN3, LYZ, and IRF8.",
+      "claim_type": "EXPLICIT",
+      "source": "More mature progenitors presented myeloid (MPO, CTSG, PRTN3, LYZ, and IRF8), lymphoid (DNTT, VPREB1, and EBF1), erythroid (HBD and CA1), and basophil (HDC and MS4A2)-specific markers (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists myeloid-specific markers for mature progenitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "3738b71f-d02e-4f65-b496-62b30671ec98",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C7",
+      "claim": "More mature progenitors presented lymphoid-specific markers including DNTT, VPREB1, and EBF1.",
+      "claim_type": "EXPLICIT",
+      "source": "More mature progenitors presented myeloid (MPO, CTSG, PRTN3, LYZ, and IRF8), lymphoid (DNTT, VPREB1, and EBF1), erythroid (HBD and CA1), and basophil (HDC and MS4A2)-specific markers (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists lymphoid-specific markers for mature progenitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "5a0d9271-87b5-49e3-adc8-9be23f9a6cc4",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C8",
+      "claim": "More mature progenitors presented erythroid-specific markers including HBD and CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "More mature progenitors presented myeloid (MPO, CTSG, PRTN3, LYZ, and IRF8), lymphoid (DNTT, VPREB1, and EBF1), erythroid (HBD and CA1), and basophil (HDC and MS4A2)-specific markers (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists erythroid-specific markers for mature progenitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "a60fc210-1e93-410c-aca3-d77acbd3280a",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C9",
+      "claim": "More mature progenitors presented basophil-specific markers including HDC and MS4A2.",
+      "claim_type": "EXPLICIT",
+      "source": "More mature progenitors presented myeloid (MPO, CTSG, PRTN3, LYZ, and IRF8), lymphoid (DNTT, VPREB1, and EBF1), erythroid (HBD and CA1), and basophil (HDC and MS4A2)-specific markers (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists basophil-specific markers for mature progenitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "fbdca700-807c-46ad-8e4d-bca545346995",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C10",
+      "claim": "There was a significant increase in the proportion of HSCs in elderly individuals compared to young individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "When we applied the GLMnet classifier to the elderly individuals, we noted a significant increase in the proportion of HSCs and a reduction in the number of both committed lymphoid and myeloid lineages (adjusted p-value <0.05, Supplementary file 3) as well as an increase in the proportion of erythroid-committed cells in the overall proportion, both in the integrated and individual datasets (Figure 1D and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states a significant increase in HSCs in elderly individuals with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "af1dcef4-3bd7-4be4-9ff3-5e4ff9e57eec",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C11",
+      "claim": "There was a reduction in the number of both committed lymphoid and myeloid lineages in elderly individuals compared to young individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "When we applied the GLMnet classifier to the elderly individuals, we noted a significant increase in the proportion of HSCs and a reduction in the number of both committed lymphoid and myeloid lineages (adjusted p-value <0.05, Supplementary file 3) as well as an increase in the proportion of erythroid-committed cells in the overall proportion, both in the integrated and individual datasets (Figure 1D and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states a reduction in committed lymphoid and myeloid lineages in elderly individuals with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "1504dc0a-4bed-4e99-88da-2bd1aff543fc",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C12",
+      "claim": "There was an increase in the proportion of erythroid-committed cells in elderly individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "When we applied the GLMnet classifier to the elderly individuals, we noted a significant increase in the proportion of HSCs and a reduction in the number of both committed lymphoid and myeloid lineages (adjusted p-value <0.05, Supplementary file 3) as well as an increase in the proportion of erythroid-committed cells in the overall proportion, both in the integrated and individual datasets (Figure 1D and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states an increase in erythroid-committed cells in elderly individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "b40e142d-0fc9-4999-85d0-3cf0056a7761",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C13",
+      "claim": "Cells from elderly donors exhibited a generalized enrichment of pathways activated in response to external molecules and insults, such as TNF-\u03b1, TGF-\u03b2, hypoxia, or inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from elderly donors exhibited a generalized enrichment of pathways activated in response to external molecules and insults, such as TNF-\u03b1, transforming growth factor beta (TGF-\u03b2), hypoxia, or inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the enrichment of specific pathways in elderly donor cells based on GSEA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "4b8663fb-d79f-4640-b766-b308e3244b7b",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C14",
+      "claim": "The p53 pathway and apoptosis programs were enriched in cells from elderly donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the p53 pathway and apoptosis programs, which are activated by stressor stimuli, were also enriched in these elderly cells (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the enrichment of p53 pathway and apoptosis programs in elderly cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "e4903e7f-a142-44f4-b28f-d0bedb4a0298",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C15",
+      "claim": "TGF-\u03b2 response and apoptosis genes were specially enriched in aging-associated HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the TGF-\u03b2 response and apoptosis genes, together with genes upregulated in response to ultraviolet radiation, were specially enriched in aging-associated HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states specific pathway enrichment in aging-associated HSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "b4e44326-248d-41fa-adee-50f6fd0bd456",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C16",
+      "claim": "Hematopoietic progenitors from young donors were characterized by an increase in metabolism, including signatures related to glycolysis, fatty acid metabolism, and oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hematopoietic progenitors from young donors were characterized by an increase in metabolism, including signatures related to glycolysis, fatty acid metabolism, and oxidative phosphorylation, in components of the respiratory chain (UQCR, NDUF, and COX), and the glycolytic enzymes PGK1 and TPI1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states increased metabolic signatures in young donor progenitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "f03408d4-5acd-45d0-b1e8-c9c799d735e3",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C17",
+      "claim": "Cell cycle progression (E2F targets) and proliferation (MYC targets) pathways were enriched in multiple cell populations from young donors.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that cell cycle progression (E2F targets) and proliferation (MYC targets) pathways were enriched in multiple cell populations from young donors (Figure 1E), whereas MYC expression was generally downregulated in cells from elderly individuals, suggesting an aging-mediated decreased proliferative activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states enrichment of cell cycle and proliferation pathways in young donors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "4c7a8c65-8ed4-46a8-b1a8-727dfbbeb8d7",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C18",
+      "claim": "MYC expression was generally downregulated in cells from elderly individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that cell cycle progression (E2F targets) and proliferation (MYC targets) pathways were enriched in multiple cell populations from young donors (Figure 1E), whereas MYC expression was generally downregulated in cells from elderly individuals, suggesting an aging-mediated decreased proliferative activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states MYC downregulation in elderly individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "91ddf18d-eadf-4f4b-acd1-0a9f87004cb4",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C19",
+      "claim": "DNA repair was more active in cells isolated from young individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA repair was also found to be more active in cells isolated from young individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states increased DNA repair activity in young individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "b501d343-9519-4ad2-9530-fb1230c50f41",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C20",
+      "claim": "The pseudotime values from STREAM and Palantir were strongly correlated (r=0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the similarity between both methods, we performed a correlation analysis and noticed that the pseudotime values were strongly correlated (r=0.78) (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the correlation coefficient between the two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "a423d384-f95a-4713-9afd-cc2ea19b4253",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C21",
+      "claim": "Aging-associated HSPCs accumulated greater differentiation potential and lower pseudotime.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant differences in the distributions of differentiation potential and pseudotime, with aging-associated HSPCs accumulating greater differentiation potential and lower pseudotime (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the differences in differentiation potential and pseudotime for aging-associated HSPCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "0c77745e-7ec7-4480-9111-94fc580da56f",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C22",
+      "claim": "HSCs and LMPPs from elderly donors had a higher probability of attaining the monocyte progenitor state.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that HSCs and LMPPs from elderly donors had a higher probability of attaining the monocyte progenitor state, suggesting a stronger bias toward the monocytic compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the higher probability of monocyte progenitor state in elderly HSCs and LMPPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "80844b3c-8110-4943-b822-a0182c2ae7dc",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C23",
+      "claim": "GMPs from elderly donors displayed lower probability of monocytic differentiation compared to young donors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GMPs displayed the opposite behavior which suggested that although aging-associated progenitors appeared to have a stronger initial bias toward this lineage, a large number of more advanced progenitor cells lost the capacity for monocytic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that GMPs from elderly donors showed opposite behavior in monocytic differentiation probability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "29cc2db6-3330-4838-bf3e-f47d2777091a",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C24",
+      "claim": "Several myeloid differentiation markers (CST7, PRTN3, MPO, CD74, CALR, and GNAS) were expressed at lower levels across monocytic differentiation in the elderly donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several myeloid differentiation markers (CST7, PRTN3, MPO, CD74, CALR, and GNAS) were expressed at lower levels across monocytic differentiation in the elderly donors, suggesting a less differentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states lower expression of specific myeloid markers in elderly donors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "8b530bce-d86f-47ed-b46b-e80ac4e02877",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C25",
+      "claim": "Genes characteristic of stem or very early progenitor cells (MYCT1, MLLT3, and ALDH1A1) showed higher levels of expression in cells from the elderly donors across differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, genes characteristic of stem or very early progenitor cells (MYCT1, MLLT3, and ALDH1A1) showed higher levels of expression in cells from the elderly donors across differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states higher expression of stem cell markers in elderly donors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "5d64f3d1-07f3-4af0-905d-1a194f8be8cb",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C26",
+      "claim": "Genes related to stress and inflammation response (FOS, JUNB, TSC22D3, DUSP1, and DDIT4) exhibited higher expression levels at the start of differentiation in the elderly.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes related to stress and inflammation response (FOS, JUNB, TSC22D3, DUSP1, and DDIT4), or monocyte chemotaxis and extravasation (ANXA1, LGALS3, and JAML), exhibited higher expression levels at the start of differentiation in the elderly, with several genes showing decreased expression at the terminal state (Figure 2F), further reinforcing the idea of a loss of capacity for monocytic differentiation in cells from elderly donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states higher expression of stress and inflammation genes in elderly donors at the start of differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "894ff8d7-d44e-45df-a3e5-59544a6f8341",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C27",
+      "claim": "HSCs from young donors displayed enriched terms related to the differentiation of hematopoietic lineages, such as myeloid cell differentiation, lymphocyte cell differentiation, and regulation of hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "HSCs from young donors displayed enriched terms related to the differentiation of hematopoietic lineages, such as myeloid cell differentiation, lymphocyte cell differentiation, and regulation of hematopoiesis, whereas HSCs from the elderly donors did not exhibit such enrichment (Figure 3E), suggesting a putative alteration of differentiation potential among aged HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the enriched terms in young HSCs based on gene ontology analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "4cdb37d7-feda-4be3-b181-3da8da00b2c4",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C28",
+      "claim": "HSCs from the elderly donors did not exhibit enrichment of terms related to the differentiation of hematopoietic lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "HSCs from young donors displayed enriched terms related to the differentiation of hematopoietic lineages, such as myeloid cell differentiation, lymphocyte cell differentiation, and regulation of hematopoiesis, whereas HSCs from the elderly donors did not exhibit such enrichment (Figure 3E), suggesting a putative alteration of differentiation potential among aged HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the lack of enrichment of differentiation terms in elderly HSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "dff85c8f-753b-48e3-b408-5315dcd24d47",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C29",
+      "claim": "LMPPs from elderly donors showed enrichment in terms related to DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no increase in the percentage of LMPPs was observed in the elderly donors, this analysis indicated a clear enrichment in terms related to DNA replication in the elderly but not in the young donors, suggesting an aging-mediated alteration of the proliferative rate of this cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states enrichment of DNA replication terms in elderly LMPPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "5b1c4dcf-9ee5-42cd-9c2d-2dcf7a776231",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C30",
+      "claim": "41,749 cells from MDS patients passed the quality control filters.",
+      "claim_type": "EXPLICIT",
+      "source": "We recovered 41,749 cells that passed the quality control filters (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of MDS cells that passed quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "15fd6ca1-e1f8-4399-962a-b49f0d71ca85",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C31",
+      "claim": "MDS samples showed absence of lymphoid compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted the absence of lymphoid compartments, considerable reduction in the number of HSCs, and increase in LMPPs and GMPs subpopulations compared to healthy elderly individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the absence of lymphoid compartments in MDS samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "5ea43a1c-5b84-4d60-bacd-4bcf53b10577",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C32",
+      "claim": "MDS samples showed considerable reduction in the number of HSCs compared to healthy elderly individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted the absence of lymphoid compartments, considerable reduction in the number of HSCs, and increase in LMPPs and GMPs subpopulations compared to healthy elderly individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the reduction in HSCs in MDS samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "d16ec8c1-d16e-4fa1-b7db-4062835769e3",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C33",
+      "claim": "MDS samples showed increase in LMPPs and GMPs subpopulations compared to healthy elderly individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted the absence of lymphoid compartments, considerable reduction in the number of HSCs, and increase in LMPPs and GMPs subpopulations compared to healthy elderly individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the increase in LMPPs and GMPs in MDS samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "af009881-e526-4d21-9d54-e6d6bc33d24b",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C34",
+      "claim": "MDS patients showed enrichment of genes related to interferon alpha and gamma response, which was more evident for cases MDS1 and MDS2.",
+      "claim_type": "EXPLICIT",
+      "source": "The most evident alteration was the enrichment of MDS patients in genes related to interferon alpha and gamma response, which was more evident for cases MDS1 and MDS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the enrichment of interferon response genes in MDS patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "8dcca2e9-e3a7-46b7-bfca-75d7018ca2de",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C35",
+      "claim": "Genes associated with oxidative phosphorylation were more prominent in MDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes associated with oxidative phosphorylation, a process that is very relevant for the metabolism of several types of cancer and that is considered as an emerging target (Ashton et al., 2018), were more prominent in MDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the prominence of oxidative phosphorylation genes in MDS with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "73cb19b3-1331-4491-a75d-1cae7aced807",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C36",
+      "claim": "MDS patients showed alterations of hallmarks related to cell proliferation, including E2F targets, mitotic spindle, or G2/M checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "MDS patients also showed alterations of hallmarks related to cell proliferation, including E2F targets, mitotic spindle, or G2/M checkpoint, suggesting an aberrant proliferative activity of hematopoietic progenitors in these patients (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states alterations in cell proliferation hallmarks in MDS patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "580adc1c-aff3-4ec4-9b5b-2da9d5b83602",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C37",
+      "claim": "Genes with a negative role in erythropoiesis such as JUN and YBX1 showed increased levels in MDS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of genes with altered dynamics included increased levels of genes with a negative role in erythropoiesis such as JUN and YBX1 (Bhullar and Sollars, 2011; Lee et al., 2014) and NME4, previously associated with poor prognosis in MDS (Kracmarova et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states increased levels of JUN and YBX1 in MDS patients with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "8428482f-a15b-4968-b079-ea91ccb8caad",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C38",
+      "claim": "NME4 showed increased levels in MDS patients and was previously associated with poor prognosis in MDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of genes with altered dynamics included increased levels of genes with a negative role in erythropoiesis such as JUN and YBX1 (Bhullar and Sollars, 2011; Lee et al., 2014) and NME4, previously associated with poor prognosis in MDS (Kracmarova et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states increased NME4 levels in MDS patients with citation support for its association with poor prognosis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "1873c26b-de47-4aec-a15c-c1b63851a128",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C39",
+      "claim": "Factors that promote erythroid differentiation, such as TRIB2, PHF6, and PDCD4, showed decreased expression across the trajectory in MDS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also observed decreased expression across the trajectory of factors that promote erythroid differentiation, such as TRIB2, PHF6, and PDCD4 (Loontiens et al., 2020; Cho et al., 2015) and involved in erythroleukemia: PVT1 (Salehi and Sharifi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states decreased expression of erythroid differentiation factors in MDS patients with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "78eae7ce-3ae1-47e9-a7a6-2b147282b4a5",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C40",
+      "claim": "PVT1, involved in erythroleukemia, showed decreased expression across the trajectory in MDS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also observed decreased expression across the trajectory of factors that promote erythroid differentiation, such as TRIB2, PHF6, and PDCD4 (Loontiens et al., 2020; Cho et al., 2015) and involved in erythroleukemia: PVT1 (Salehi and Sharifi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states decreased PVT1 expression in MDS patients with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "59936050-fdb2-453a-b940-a50ec546dff9",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C41",
+      "claim": "TRIB2 showed aberrant dynamics in all MDS patients analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas some of the genes showed aberrant dynamics in all the patients analyzed (i.e. TRIB2), most of them were altered in a subset or in individual patients, reinforcing the heterogeneity of MDS at the molecular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that TRIB2 showed aberrant dynamics in all MDS patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "b99cf1c8-3e2e-44fc-8468-f6e0e559f743",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C42",
+      "claim": "Erythroid specific markers such as ANK1, CA2, or AHSP followed trends similar to those of healthy HSPCs in MDS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these changes, we observed that erythroid specific markers such as ANK1, CA2, or AHSP followed trends similar to those of healthy HSPCs, which is in agreement with the apparently normal progression of differentiation at the progenitor stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that certain erythroid markers followed normal trends in MDS patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "e3cdcee5-6eb4-4a06-956b-8f2ff924792f",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C43",
+      "claim": "MDS cases showed regulons that were very active in most cell types, and that were not present in HSPCs from young or elderly samples, such as SMAD1 (MDS1); ATF3 and HOXA6 (MDS2); POU2F2, NR4A1, and HMG20B (MDS3); YEATS4, E2F1, and RUNX1 (MDS4).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MDS cases showed regulons that were very active in most cell types, and that were not present in HSPCs from young or elderly samples, such as SMAD1 (MDS1); ATF3 and HOXA6 (MDS2); POU2F2, NR4A1, and HMG20B (MDS3); YEATS4, E2F1, and RUNX1 (MDS4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists specific regulons active in MDS cases but not in healthy samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "fea66f3f-cde5-4196-9dee-62abedee2092",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C44",
+      "claim": "SMAD1 regulon was active in most cell types in patient MDS1, showing its highest activity in HSCs, LMPPs, and erythroid precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SMAD1 regulon was active in most cell types in patient MDS1, showing its highest activity in HSCs, LMPPs, and erythroid precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the activity pattern of SMAD1 regulon in MDS1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "7709b2a6-d00c-486a-b914-d0632653d6d3",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C45",
+      "claim": "SMAD1 knockdown has been shown to promote erythropoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD1 knockdown has been shown to promote erythropoiesis, suggesting that high activity of this factor may negatively impact erythroid differentiation (McReynolds et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing SMAD1 knockdown promotes erythropoiesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "979827e1-65b3-449e-bf9f-15e94ee5c967",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C46",
+      "claim": "SMAD1 pathway has been shown to be active in a model of persisting LSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SMAD1 pathway has been shown to be active in a model of persisting LSCs, suggesting that this factor may be relevant in the development of myeloid malignancies (Lefort and Maguer-Satta, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing SMAD1 pathway activity in LSCs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "be6c9613-ea6e-4a0e-8a95-4c0baae407fe",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C47",
+      "claim": "ATF3 has been shown to drive cell cycle progression in AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient MDS2 demonstrated aberrant high activity of the regulon guided by ATF3, which has been shown to drive cell cycle progression in AML, and of that of HOXA6, a TF which potentiates hematopoietic cell differentiation and self-renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that ATF3 drives cell cycle progression in AML based on prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "4b1fcb4d-02e3-440d-94ae-3cf62431fab8",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C48",
+      "claim": "HOXA6 is a TF which potentiates hematopoietic cell differentiation and self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient MDS2 demonstrated aberrant high activity of the regulon guided by ATF3, which has been shown to drive cell cycle progression in AML, and of that of HOXA6, a TF which potentiates hematopoietic cell differentiation and self-renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that HOXA6 potentiates hematopoietic cell differentiation and self-renewal based on prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "92b60745-fab0-432f-b22b-17701f4a0880",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C49",
+      "claim": "POU2F2/OCT2 is a TF overexpressed in AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient MDS3 presented a ubiquitous activity of the regulon guided by POU2F2/OCT2, a TF overexpressed in AML, in all the subpopulations analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that POU2F2/OCT2 is overexpressed in AML based on prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "368b4ee8-5d20-4550-83a3-130e295f874c",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C50",
+      "claim": "NR4A1 has been shown to specify a distinct subpopulation of quiescent myeloid-biased HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This patient also showed high activity of NR4A1, a factor that has been shown to specify a distinct subpopulation of quiescent myeloid-biased HSCs (Land et al., 2015), in HSCs and LMPPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing NR4A1 specifies quiescent myeloid-biased HSCs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "929f3ca8-cd8d-44b0-825a-112323c3cb73",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C51",
+      "claim": "HMG20B is a known repressor of erythropoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also detected that HMG20B, a known repressor of erythropoiesis (Esteghamat et al., 2011), was prominently active in several cell types, including erythroid precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing HMG20B is a repressor of erythropoiesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "6e286f61-76df-48f4-8416-22c32062964f",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C52",
+      "claim": "YEATS4 is amplified in different tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, patient MDS4 demonstrated aberrant high activity of the regulons guided by YEATS4, which is amplified in different tumors, and E2F1, a TF whose increased activity has been previously described in MDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that YEATS4 is amplified in different tumors based on prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "de2a54cb-467a-4d64-b5cc-05e2fcba7ec4",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C53",
+      "claim": "E2F1 is a TF whose increased activity has been previously described in MDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, patient MDS4 demonstrated aberrant high activity of the regulons guided by YEATS4, which is amplified in different tumors, and E2F1, a TF whose increased activity has been previously described in MDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that E2F1 increased activity has been previously described in MDS based on prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "3708c4f1-645b-4874-b83e-2acfe37984b4",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C54",
+      "claim": "Bone marrow aspirates were obtained from healthy controls (young individuals [n=5], median age, 20 years, range, 19\u201323 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Bone marrow aspirates were obtained from healthy controls (young individuals [n=5], median age, 20 years, range, 19\u201323 years) or patients undergoing orthopedic surgery (elderly donors [n=3], median age, 72 years, range, 61\u201384 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number and age characteristics of young healthy controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "10c64d12-2216-4b37-b46f-ec414014c9d0",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C55",
+      "claim": "Bone marrow aspirates were obtained from patients undergoing orthopedic surgery (elderly donors [n=3], median age, 72 years, range, 61\u201384 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Bone marrow aspirates were obtained from healthy controls (young individuals [n=5], median age, 20 years, range, 19\u201323 years) or patients undergoing orthopedic surgery (elderly donors [n=3], median age, 72 years, range, 61\u201384 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number and age characteristics of elderly donors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "3138015d-e0c3-4663-90be-7f02b72f0947",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C56",
+      "claim": "The study was approved by the Clinical Research Ethics Committee of the Clinica Universidad de Navarra.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients and healthy donors provided informed consent, and the study was approved by the Clinical Research Ethics Committee of the Clinica Universidad de Navarra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "54749cf8-e5cf-4c28-b68e-c634b6a7c609",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C57",
+      "claim": "Between 5000 and 17,000 cells, depending on the donor, were loaded at a concentration of 700\u20131200 cells/\u00b5L onto a Chromium Controller instrument.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 5000 and 17,000 cells, depending on the donor, were loaded at a concentration of 700\u20131200 cells/\u00b5L onto a Chromium Controller instrument (10\u00d7 Genomics) to generate single-cell gel bead-in-emulsions (GEMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number and concentration of cells loaded for scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "36e93b68-b26d-4430-aa91-405aa4b82e18",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C58",
+      "claim": "Sequencing was performed on a NextSeq500 instrument (Illumina) (Read1: 28 cycles; Read 55 cycles; i7 index: 8 cycles).",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing was performed on a NextSeq500 instrument (Illumina) (Read1: 28 cycles; Read 55 cycles; i7 index: 8 cycles) at an average depth of 30,000 reads/cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the sequencing platform and parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "42cd2267-a26e-44df-88fc-4159b9b1487e",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C59",
+      "claim": "The 2000 genes with highest variance were selected using the variance stabilizing transformation method.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2000 genes with highest variance were selected using the variance stabilizing transformation method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the method and number of genes selected for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "bd4770ac-d41e-47fe-a2df-443bd26ed386",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C60",
+      "claim": "Regularized logistic regression has been previously applied to scRNA-seq data, due to its high interpretability and good performance with sparse input.",
+      "claim_type": "EXPLICIT",
+      "source": "Regularized logistic regression has been previously applied to scRNA-seq data, due to its high interpretability and good performance with sparse input (Torang et al., 2019; Nguyen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing the application of regularized logistic regression to scRNA-seq data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "9e71a3eb-2c0f-4d46-a311-f940a7306be9",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C61",
+      "claim": "GLMnet classified 83.31% of LMPPs correctly compared to 57.91% by Seurat.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that 83.31% of LMPPs were correctly classified by GLMnet compared to 57.91% by Seurat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the classification accuracy comparison between GLMnet and Seurat for LMPPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "ac11e89d-5cf7-4f08-af49-4b1cce36828d",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C62",
+      "claim": "Seurat classified 38% of HSCs in the reference as MEPs, compared to 12% by GLMnet.",
+      "claim_type": "EXPLICIT",
+      "source": "Seurat classified 38% of HSCs in the reference as MEPs, compared to 12% by GLMnet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the misclassification rates for HSCs by both methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "4506509a-c34c-400e-bc9c-630136cf176b",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C63",
+      "claim": "Early hematopoiesis is now viewed as a continuous landscape composed of undifferentiated HSPCs with a variable degree of priming toward specific lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, early hematopoiesis is now viewed as a continuous landscape composed of undifferentiated HSPCs with a variable degree of priming toward specific lineages (lymphoid, myeloid, or erythroid) (Velten et al., 2017; Karamitros et al., 2018; Watcham et al., 2019; Buenrostro et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting the view of early hematopoiesis as a continuous landscape.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "b22fde8d-907c-4604-ac82-d02cd20716cb",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C64",
+      "claim": "There is evidence of an aging-related increase in the relative number of HSCs, that presumably aims to compensate for a loss of repopulation ability.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence of an aging-related increase in the relative number of HSCs, that presumably aims to compensate for a loss of repopulation ability (Dykstra et al., 2011; Pang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing aging-related increase in HSCs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "80f784b3-89a5-4076-8cfa-faece2dd8ef4",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C65",
+      "claim": "The total bone marrow cellularity decreases during aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this increase in the number of HSCs, the total bone marrow cellularity decreases (Ogawa et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing decreased bone marrow cellularity during aging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "9ad6b96b-5a1f-4e4b-ab6b-8c148a6fe33b",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C66",
+      "claim": "A loss of lymphocyte production and a skewing toward myeloid differentiation have been demonstrated during aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a loss of lymphocyte production and a skewing toward myeloid differentiation have been demonstrated (Young et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing loss of lymphocyte production and myeloid skewing during aging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "021f7db3-5f61-4d36-8e8d-23b57163d46b",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C67",
+      "claim": "Recent studies have revealed an increase in the number of platelet primed HSCs during aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent studies have revealed an increase in the number of platelet primed HSCs (Grover et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing increased platelet primed HSCs during aging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "0787840f-1eaa-4cd1-941d-bcfe6c4ef31b",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C68",
+      "claim": "A general loss of immune function that affects both innate and adaptive immunity has been associated with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "A general loss of immune function that affects both innate and adaptive immunity has also been associated with aging (Weiskopf et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing loss of immune function during aging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "17347129-3df9-4399-9dbc-bc7e28f792ec",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C69",
+      "claim": "Clonal hematopoiesis is a common trait of elderly individuals, in which blood cell subpopulations are clonally derived from a single HSC or progenitor with acquired mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal hematopoiesis is a common trait of elderly individuals, in which blood cell subpopulations are clonally derived from a single HSC or progenitor with acquired mutations. Notably, some of these mutations are also associated with hematopoietic malignancies (Xie et al., 2014; Jaiswal et al., 2014; McKerrell et al., 2015; Genovese et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies showing clonal hematopoiesis in elderly individuals and its association with malignancies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "98c1f750-d099-429d-9ded-3624c1bdd037",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C70",
+      "claim": "Gene expression analyses have revealed changes in cell cycle regulators during aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression analyses have revealed changes in cell cycle regulators (Kowalczyk et al., 2015), higher expression of myeloid signatures (Grover et al., 2016; Kowalczyk et al., 2015) and genes associated with leukemia (Rossi et al., 2005), stronger response to inflammatory stimuli (Martinez-Jimenez et al., 2017; Mann et al., 2018), and upregulation of pathways such as nuclear factor kappa beta (NF-\u03baB) or tumor necrosis factor alpha (TNF-\u03b1) and downregulation of DNA repair (Chambers et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies showing various transcriptional changes during aging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "524eae3a-1807-4b85-a2cf-4f4d6a554a9a",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C71",
+      "claim": "Epigenetic modifications that are in line with the transcriptional lesions detected have been observed in HSPCs obtained from elderly individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, epigenetic modifications that are in line with the transcriptional lesions detected have been observed in HSPCs obtained from elderly individuals (Sun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing epigenetic modifications in elderly HSPCs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "cf74ae01-8932-471b-97a2-4089b9eb0ca8",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C72",
+      "claim": "Aging is associated with a higher risk of developing myeloid malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is associated with a higher risk of developing myeloid malignancies (Zeidan et al., 2019; Deschler and L\u00fcbbert, 2006), suggesting a strong predisposition of hematopoietic cells from elderly individuals to lead to further alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing the association between aging and myeloid malignancies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "e4fe8f0f-8ec5-4eab-a3af-3f39197d6193",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C73",
+      "claim": "MDS are characterized by ineffective hematopoiesis and predisposition to transformation into acute myeloid leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "MDS are characterized by ineffective hematopoiesis and predisposition to transformation into acute myeloid leukemia (Shallis et al., 2018), a highly aggressive neoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study characterizing MDS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "9966a986-a803-415c-8028-98b3fd526d77",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C74",
+      "claim": "Increased inflammatory signaling has been previously reported in MDS.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is in accordance with previous reports demonstrating increased inflammatory signaling in the disease (Kim et al., 2015; Ga\u00f1\u00e1n-G\u00f3mez et al., 2015; Ivy and Brent Ferrell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing increased inflammatory signaling in MDS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "a7da9d11-24f8-41fd-be06-8f6c81e34d14",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C75",
+      "claim": "Oxidative phosphorylation is considered as an emerging target in cancer metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes associated with oxidative phosphorylation, a process that is very relevant for the metabolism of several types of cancer and that is considered as an emerging target (Ashton et al., 2018), were more prominent in MDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study discussing oxidative phosphorylation as an emerging cancer target.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "1e2bb171-955a-431b-b432-dcb56a06ef88",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C76",
+      "claim": "The combination of single-cell technologies with computational analysis tools enable the study of cellular mechanisms involved in complex biological systems such as early hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we demonstrate that the combination of single-cell technologies with computational analysis tools enable the study of a variety of cellular mechanisms involved in complex biological systems such as early hematopoiesis and can be used to dissect perturbed differentiation trajectories associated with perturbations such as aging and malignant transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as a conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "edd82e60-cdf3-4b75-9432-1aff573f728d",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C77",
+      "claim": "The identification of abnormal regulatory mechanisms associated with myeloid malignancies could be exploited for personalized therapeutic approaches in individual patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the identification of abnormal regulatory mechanisms associated with myeloid malignancies could be exploited for personalized therapeutic approaches in individual patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as a potential application of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "03a78a8b-d1ad-4ba4-8e11-3db915afa6f5",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C78",
+      "claim": "The proposed methodology can be translated into other biological systems or pathological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We used MDS as a model to identify pathological alterations in the hematopoietic system, but we consider that the proposed methodology can be translated into other biological systems or pathological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the potential broader applicability of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "97e8a426-b35c-4542-a4cf-7108c0b72c5c",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C79",
+      "claim": "The aging-associated decrease in monocytic progenitors is consistent with the trajectory analysis showing loss of monocytic differentiation capacity in more advanced progenitor cells.",
+      "claim_type": "IMPLICIT",
+      "source": "However, GMPs displayed the opposite behavior which suggested that although aging-associated progenitors appeared to have a stronger initial bias toward this lineage, a large number of more advanced progenitor cells lost the capacity for monocytic differentiation. This result is in line with the aging-associated decrease in monocytic progenitors described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers consistency between trajectory analysis results and the observed decrease in monocytic progenitors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "74748ee0-b8c2-4fe8-ac9a-83ea244fc880",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C80",
+      "claim": "The presence of an aging-related response to the more inflammatory microenvironment is suggested by the enrichment of stress-related pathways in elderly cells.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggested the presence of an aging-related response to the known more inflammatory microenvironment that is present in elderly individuals (Leimk\u00fchler and Schneider, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers the presence of an aging-related response based on pathway enrichment results and cites a study about inflammatory microenvironment.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "150e6c3c-2ec2-4153-9c30-eada8f6805ae",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C81",
+      "claim": "The findings point toward an increased metabolic activity in progenitors from young donors.",
+      "claim_type": "IMPLICIT",
+      "source": "Hematopoietic progenitors from young donors were characterized by an increase in metabolism, including signatures related to glycolysis, fatty acid metabolism, and oxidative phosphorylation, in components of the respiratory chain (UQCR, NDUF, and COX), and the glycolytic enzymes PGK1 and TPI1. These findings point toward an increased metabolic activity in progenitors from young donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers increased metabolic activity from the observed enrichment of metabolic pathways.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "9d4e0812-4182-43c2-a340-9b9f78b5e005",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C82",
+      "claim": "The downregulation of MYC in elderly cells suggests an aging-mediated decreased proliferative activity.",
+      "claim_type": "IMPLICIT",
+      "source": "We also found that cell cycle progression (E2F targets) and proliferation (MYC targets) pathways were enriched in multiple cell populations from young donors (Figure 1E), whereas MYC expression was generally downregulated in cells from elderly individuals, suggesting an aging-mediated decreased proliferative activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers decreased proliferative activity from the observed MYC downregulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "3e5ac50e-e488-49de-b0c8-000a941095c3",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C83",
+      "claim": "The predisposition of aging-associated progenitors to accumulate genetic lesions is consistent with the observed enrichment of DNA repair pathways in young donors.",
+      "claim_type": "IMPLICIT",
+      "source": "DNA repair was also found to be more active in cells isolated from young individuals. This goes in agreement with the known predisposition of aging-associated progenitors to accumulate genetic lesions (Jaiswal and Ebert, 2019; Mohrin et al., 2010; Beerman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers consistency between DNA repair activity and genetic lesion accumulation, citing relevant studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "0ade49b5-28d3-441f-b357-8f0916fce677",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C84",
+      "claim": "The lower expression of myeloid differentiation markers in elderly donors suggests a less differentiated state.",
+      "claim_type": "IMPLICIT",
+      "source": "Several myeloid differentiation markers (CST7, PRTN3, MPO, CD74, CALR, and GNAS) were expressed at lower levels across monocytic differentiation in the elderly donors, suggesting a less differentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers a less differentiated state from the observed lower expression of differentiation markers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "614e6571-6452-4d61-9bb5-325a4ee73cd1",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C85",
+      "claim": "The accumulation of greater differentiation potential and lower pseudotime in aging-associated HSPCs suggests an immature cell state.",
+      "claim_type": "IMPLICIT",
+      "source": "We observed significant differences in the distributions of differentiation potential and pseudotime, with aging-associated HSPCs accumulating greater differentiation potential and lower pseudotime (Figure 2\u2014figure supplement 1F). This suggested an immature cell state, which was consistent with our previous analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers an immature cell state from the observed differentiation potential and pseudotime distributions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "9627153b-220f-4ec1-b026-8ba6cf227e54",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C86",
+      "claim": "High activity of SMAD1 may negatively impact erythroid differentiation in MDS patient 1.",
+      "claim_type": "IMPLICIT",
+      "source": "SMAD1 knockdown has been shown to promote erythropoiesis, suggesting that high activity of this factor may negatively impact erythroid differentiation (McReynolds et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers negative impact on erythroid differentiation from cited evidence about SMAD1 knockdown effects.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "8526cdf6-97b8-471a-95b4-d7c85e34eb98",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C87",
+      "claim": "SMAD1 may be relevant in the development of myeloid malignancies.",
+      "claim_type": "IMPLICIT",
+      "source": "Furthermore, SMAD1 pathway has been shown to be active in a model of persisting LSCs, suggesting that this factor may be relevant in the development of myeloid malignancies (Lefort and Maguer-Satta, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers potential relevance in myeloid malignancies from cited evidence about SMAD1 pathway activity in LSCs.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "c7c417da-3908-4f9b-8b3a-b2d48c9d650f",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C88",
+      "claim": "Aberrant activity of specific regulons in MDS patients could drive aberrant gene expression and ultimately promote a myelodysplastic phenotype.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggested that aberrant activity of specific regulons in MDS patients could drive aberrant gene expression and ultimately promote a myelodysplastic phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers a causal relationship between regulon activity and myelodysplastic phenotype based on the observed aberrant regulon activities.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "117f67a8-8ab4-41b6-a6b5-0655c30fc317",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C89",
+      "claim": "The lack of enrichment of differentiation terms in elderly HSCs suggests a putative alteration of differentiation potential among aged HSCs.",
+      "claim_type": "IMPLICIT",
+      "source": "HSCs from young donors displayed enriched terms related to the differentiation of hematopoietic lineages, such as myeloid cell differentiation, lymphocyte cell differentiation, and regulation of hematopoiesis, whereas HSCs from the elderly donors did not exhibit such enrichment (Figure 3E), suggesting a putative alteration of differentiation potential among aged HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers altered differentiation potential from the lack of enrichment of differentiation-related terms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "bd0eb098-989c-4559-904e-2c674008b59c",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C90",
+      "claim": "The enrichment of DNA replication terms in elderly LMPPs suggests an aging-mediated alteration of the proliferative rate of this cell type.",
+      "claim_type": "IMPLICIT",
+      "source": "Although no increase in the percentage of LMPPs was observed in the elderly donors, this analysis indicated a clear enrichment in terms related to DNA replication in the elderly but not in the young donors, suggesting an aging-mediated alteration of the proliferative rate of this cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers altered proliferative rate from the enrichment of DNA replication terms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "7d0c268c-2ca9-4a32-8a82-decaf703bc73",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C91",
+      "claim": "The enrichment of interferon response in MDS patients is in accordance with previous reports demonstrating increased inflammatory signaling in the disease.",
+      "claim_type": "IMPLICIT",
+      "source": "The most evident alteration was the enrichment of MDS patients in genes related to interferon alpha and gamma response, which was more evident for cases MDS1 and MDS2. This observation is in accordance with previous reports demonstrating increased inflammatory signaling in the disease (Kim et al., 2015; Ga\u00f1\u00e1n-G\u00f3mez et al., 2015; Ivy and Brent Ferrell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers consistency with previous reports based on the observed interferon response enrichment.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "4e19bbad-3672-41ef-b78e-2bfa87f32080",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C92",
+      "claim": "The alterations of cell proliferation hallmarks in MDS patients suggest an aberrant proliferative activity of hematopoietic progenitors.",
+      "claim_type": "IMPLICIT",
+      "source": "MDS patients also showed alterations of hallmarks related to cell proliferation, including E2F targets, mitotic spindle, or G2/M checkpoint, suggesting an aberrant proliferative activity of hematopoietic progenitors in these patients (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers aberrant proliferative activity from the observed alterations in cell proliferation hallmarks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "7caf4b62-2a77-4f3a-a863-b751fe5571ad",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C93",
+      "claim": "The normal trends of erythroid specific markers in MDS patients are in agreement with the apparently normal progression of differentiation at the progenitor stages.",
+      "claim_type": "IMPLICIT",
+      "source": "Despite these changes, we observed that erythroid specific markers such as ANK1, CA2, or AHSP followed trends similar to those of healthy HSPCs, which is in agreement with the apparently normal progression of differentiation at the progenitor stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers apparently normal differentiation progression from the observed normal marker trends.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "46c50078-d51a-44fe-a26c-2f19926847f7",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C94",
+      "claim": "Alterations at early progenitor stages may manifest in more mature stages as erythroid differentiation is altered and may be responsible for the anemia and/or erythroid dysplasia that characterizes MDS patients.",
+      "claim_type": "IMPLICIT",
+      "source": "These results indicate that, although at very early progenitor stages some drivers of erythroid differentiation exhibit normal trends of expression, others show clear abnormalities that may manifest in more mature stages as erythroid differentiation is altered and may be responsible for the anemia and/or erythroid dysplasia that characterizes MDS patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers a causal relationship between early alterations and later manifestations of disease.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "0ffacbb7-a061-48bc-83d7-edc07ceafe1a",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C95",
+      "claim": "The heterogeneity of MDS takes place at the GRN level.",
+      "claim_type": "IMPLICIT",
+      "source": "Interestingly, despite representing the same subtype, the individual MDS cases showed alterations of very specific regulons, demonstrating that the heterogeneity of the disease also takes place at the GRN level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers GRN-level heterogeneity from the observed patient-specific regulon alterations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "bc703a5d-4e4e-4c58-92c0-c280e5d51975",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "claim_id": "C96",
+      "claim": "The study represents one of the first analyses that describes early human hematopoiesis based on its dynamic gene expression and transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although previous studies focused on other species (Mann et al., 2018; Flohr Svendsen et al., 2021) and other layers of information such as mutations (Jaiswal and Ebert, 2019), proteomics (Hennrich et al., 2018), and proteo-genomics (Triana et al., 2021), our study represents one of the first analyses that describes early human hematopoiesis based on its dynamic gene expression and transcriptional regulation by identifying changes that may be responsible for some of the phenotypic modifications observed during healthy aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly claims novelty of the study with citations to previous work in other areas.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "08127f6d-0cac-4d02-9024-d7d395e77b1a",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study profiled 34,590 cells from young donors (n=5, median age 20 years) and 40,641 cells from elderly donors (n=3, median age 72 years) using single-cell RNA sequencing at an average depth of 30,000 reads per cell. The study received ethical approval and informed consent was obtained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C54-C58 provide explicit methodological details about sample collection, cell numbers, sequencing depth, and ethical approval. These are straightforward descriptive claims that are well-documented in the manuscript with appropriate detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "91026aac-8104-4f36-82a8-45739d1fca60",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Fourteen cellular subpopulations were identified in young donors, including HSCs, early progenitors (MEPs, LMPPs, CLPs, GMPs), and lineage-committed cells. These populations were characterized by specific marker genes including CRHBP, HOPX, and PBX1 for early progenitors, and lineage-specific markers for myeloid (MPO, CTSG, PRTN3, LYZ, IRF8), lymphoid (DNTT, VPREB1, EBF1), erythroid (HBD, CA1), and basophil (HDC, MS4A2) compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 describe the identification and characterization of cellular subpopulations using established marker genes. The manuscript provides explicit evidence through clustering analysis and marker gene expression (Figure 1B-C), which is a standard approach in single-cell analysis. The markers used are well-established in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "5c0d21b6-1ba5-4c9a-95b2-0d37d110f45b",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Elderly individuals showed a significant increase in HSC proportion, reduction in committed lymphoid and myeloid lineages, and increase in erythroid-committed cells compared to young individuals (adjusted p-value <0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 report statistically significant compositional changes with appropriate statistical testing (adjusted p-value <0.05). The findings are supported by both computational classification (GLMnet) and orthogonal validation by FACS for HSCs (Figure 1\u2014figure supplement 3), though FACS showed less obvious changes for GMPs and MEPs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "9b042992-cca0-4a1d-8c90-f9fd48b29c26",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Elderly donor cells exhibited enrichment of stress response pathways including TNF-\u03b1, TGF-\u03b2, hypoxia, inflammation, p53 pathway, and apoptosis programs, particularly in HSCs. This suggests an aging-related response to the inflammatory microenvironment present in elderly individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 and C80 describe pathway enrichment results from GSEA analysis with supporting citation (C80). The enrichment patterns are consistent with known aging biology and the inflammatory microenvironment in elderly individuals. The analysis methodology (GSEA) is appropriate and the interpretation is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Young donor progenitors showed increased metabolic activity (glycolysis, fatty acid metabolism, oxidative phosphorylation), enriched cell cycle progression (E2F targets) and proliferation (MYC targets) pathways, and more active DNA repair. MYC downregulation in elderly cells suggests decreased proliferative activity, consistent with predisposition to accumulate genetic lesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 and C81-C83 describe functional differences between young and elderly cells based on GSEA and gene expression analysis. The findings are internally consistent and supported by cited literature (C83). The inference of increased metabolic activity and decreased proliferation in elderly cells is reasonable given the pathway enrichment data, though direct functional validation would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "78288c95-c02f-4717-8314-6f9b61353966",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Trajectory inference using STREAM and Palantir showed strong correlation (r=0.78) between methods. Aging-associated HSPCs accumulated greater differentiation potential and lower pseudotime, suggesting an immature cell state consistent with other analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 and C85 demonstrate methodological validation through comparison of two independent trajectory inference methods with strong correlation. The finding of greater differentiation potential and lower pseudotime in elderly HSPCs is statistically significant and consistent with the compositional changes observed. The inference of immature state is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Trajectory analysis of monocytic differentiation revealed that elderly HSCs and LMPPs had higher probability of monocyte progenitor state, but GMPs showed opposite behavior with loss of monocytic differentiation capacity. This was accompanied by lower expression of myeloid differentiation markers (CST7, PRTN3, MPO, CD74, CALR, GNAS) and higher expression of stem cell markers (MYCT1, MLLT3, ALDH1A1) and stress/inflammation genes (FOS, JUNB, TSC22D3, DUSP1, DDIT4) in elderly donors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26, C79, and C84 describe trajectory-specific alterations in monocytic differentiation during aging. The findings are internally consistent, showing increased early bias but loss of later differentiation capacity. The gene expression patterns support the interpretation of less differentiated state. The consistency between trajectory analysis and compositional changes (C79) strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "74b3e441-69f4-4f63-a147-94d3a109a509",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gene ontology analysis revealed that young HSCs showed enrichment of hematopoietic differentiation terms (myeloid cell differentiation, lymphocyte cell differentiation, regulation of hematopoiesis) that were absent in elderly HSCs, suggesting altered differentiation potential. Elderly LMPPs showed enrichment of DNA replication terms, suggesting altered proliferative rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29, C89, and C90 describe functional enrichment differences based on gene ontology analysis of regulon targets. The absence of differentiation-related enrichment in elderly HSCs is consistent with other findings of impaired differentiation. The DNA replication enrichment in elderly LMPPs suggests altered proliferation, though the manuscript notes no change in LMPP proportion, indicating complexity in the relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "3d0948fd-bd0f-4222-91ac-731df47aaa5a",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A GLMnet-based classifier was developed and validated, showing superior performance to Seurat for classifying HSPCs. GLMnet correctly classified 83.31% of LMPPs compared to 57.91% by Seurat, and showed lower misclassification of HSCs as MEPs (12% vs 38%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 describe the development and benchmarking of a classification method with explicit performance metrics. The comparison to Seurat using an external dataset (Granja et al., 2019) provides appropriate validation. The citation support (C60) for using regularized logistic regression with scRNA-seq data strengthens the methodological choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "6e35ac5c-7ec7-43d0-b8b3-005fa56d3ab7",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of 41,749 MDS patient cells revealed absence of lymphoid compartments, considerable reduction in HSCs, and increase in LMPPs and GMPs compared to healthy elderly individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 describe compositional changes in MDS samples compared to healthy elderly controls. The findings are explicitly stated and consistent with known MDS pathology. However, the small sample size (n=4 MDS patients) and focus on one MDS subtype (multilineage dysplasia) limit generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MDS patients showed enrichment of interferon alpha/gamma response (particularly MDS1 and MDS2), oxidative phosphorylation genes, and altered cell proliferation hallmarks (E2F targets, mitotic spindle, G2/M checkpoint), suggesting aberrant proliferative activity. These findings are consistent with previous reports of increased inflammatory signaling in MDS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C74-C75, C91-C92 describe pathway alterations in MDS with appropriate citation support for inflammatory signaling (C74, C91) and oxidative phosphorylation as cancer target (C75). The GSEA analysis is appropriate, though the manuscript notes variability when using young vs elderly controls, highlighting importance of age-matched comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "58ada02c-3340-4538-b957-a3967d0e65cc",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Trajectory analysis of erythroid differentiation in MDS revealed altered dynamics of specific genes: increased expression of negative regulators (JUN, YBX1, NME4) and decreased expression of positive regulators (TRIB2, PHF6, PDCD4, PVT1). TRIB2 showed aberrant dynamics in all MDS patients. Despite these changes, some erythroid markers (ANK1, CA2, AHSP) followed normal trends, suggesting early alterations may manifest later as erythroid dysplasia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42, C93-C94 describe gene expression dynamics along erythroid trajectory with appropriate citation support for gene functions. The finding that TRIB2 is altered in all patients while others show patient-specific patterns demonstrates disease heterogeneity. The inference that early alterations lead to later dysplasia (C94) is reasonable but speculative without direct validation of causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "02113f2e-344e-4471-a776-dcf508ebbf76",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GRN analysis identified patient-specific regulons active in MDS but not in healthy samples: SMAD1 (MDS1), ATF3 and HOXA6 (MDS2), POU2F2, NR4A1, and HMG20B (MDS3), YEATS4, E2F1, and RUNX1 (MDS4). These transcription factors have known roles in hematopoietic differentiation or myeloid malignancies, suggesting aberrant regulon activity could drive myelodysplastic phenotype. The heterogeneity demonstrates disease complexity at the GRN level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C53, C86-C88, C95 describe patient-specific GRN alterations with appropriate citation support for TF functions (C45-C46, C50-C51) and some knowledge-based claims (C47-C49, C52-C53). The SCENIC analysis identifies regulons not present in healthy samples, though the method can produce false positives. The inference of causal role (C88) is speculative without functional validation, but the pattern is consistent with known biology of these factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "4221367c-81ee-4da2-8f18-c6eef5a2f636",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study employed standard computational methods (2000 most variable genes, variance stabilizing transformation) and contextualized findings within established aging biology literature, including increased HSC numbers, decreased bone marrow cellularity, loss of lymphocyte production, myeloid skewing, increased platelet-primed HSCs, loss of immune function, clonal hematopoiesis, transcriptional changes, epigenetic modifications, and association with myeloid malignancies including MDS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C63-C73 provide methodological details and literature context with appropriate citations. These claims establish the study within the existing knowledge framework and justify the research questions. The citations support the stated prior knowledge about aging-related hematopoietic changes and MDS characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    },
+    {
+      "id": "e29d6a73-d605-4ed6-bec2-6cb25a2375cf",
+      "content_id": "2211b85e-d5c9-4a79-9383-fe30211cff9c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study demonstrates that combining single-cell technologies with computational analysis enables study of cellular mechanisms in complex biological systems like hematopoiesis and can dissect perturbed differentiation trajectories in aging and malignant transformation. The methodology could be translated to other biological systems, and identified regulatory mechanisms could be exploited for personalized therapeutic approaches. The study represents one of the first analyses describing early human hematopoiesis based on dynamic gene expression and transcriptional regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C78 and C96 represent broad conclusions and future applications. While C76 is supported by the presented analyses, C77-C78 are speculative about future therapeutic applications without validation. C96 claims novelty with appropriate citations to distinguish from prior work in other species or data types, though the claim of being 'one of the first' is difficult to verify definitively. The conclusions are reasonable given the data but require future work for full validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:18:15.979468Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f739dce-03a6-4900-a2fc-ae2a8cfb0cdc",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "b53f6ab9-4394-4a77-921e-4cea617ff22e",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "8f8a1c50-14aa-4045-9ff4-a0163793cc8e",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "3708c4f1-645b-4874-b83e-2acfe37984b4",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "10c64d12-2216-4b37-b46f-ec414014c9d0",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "3138015d-e0c3-4663-90be-7f02b72f0947",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "54749cf8-e5cf-4c28-b68e-c634b6a7c609",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "36e93b68-b26d-4430-aa91-405aa4b82e18",
+      "result_id": "08127f6d-0cac-4d02-9024-d7d395e77b1a"
+    },
+    {
+      "claim_id": "e4dd5780-4926-45b2-9fd0-c8fb1df5fefa",
+      "result_id": "91026aac-8104-4f36-82a8-45739d1fca60"
+    },
+    {
+      "claim_id": "0d7bfce8-c4b0-489d-8d82-ba095f0883d1",
+      "result_id": "91026aac-8104-4f36-82a8-45739d1fca60"
+    },
+    {
+      "claim_id": "d8ca219d-470a-498f-998a-890b97628c88",
+      "result_id": "91026aac-8104-4f36-82a8-45739d1fca60"
+    },
+    {
+      "claim_id": "3738b71f-d02e-4f65-b496-62b30671ec98",
+      "result_id": "91026aac-8104-4f36-82a8-45739d1fca60"
+    },
+    {
+      "claim_id": "5a0d9271-87b5-49e3-adc8-9be23f9a6cc4",
+      "result_id": "91026aac-8104-4f36-82a8-45739d1fca60"
+    },
+    {
+      "claim_id": "a60fc210-1e93-410c-aca3-d77acbd3280a",
+      "result_id": "91026aac-8104-4f36-82a8-45739d1fca60"
+    },
+    {
+      "claim_id": "fbdca700-807c-46ad-8e4d-bca545346995",
+      "result_id": "5c0d21b6-1ba5-4c9a-95b2-0d37d110f45b"
+    },
+    {
+      "claim_id": "af1dcef4-3bd7-4be4-9ff3-5e4ff9e57eec",
+      "result_id": "5c0d21b6-1ba5-4c9a-95b2-0d37d110f45b"
+    },
+    {
+      "claim_id": "1504dc0a-4bed-4e99-88da-2bd1aff543fc",
+      "result_id": "5c0d21b6-1ba5-4c9a-95b2-0d37d110f45b"
+    },
+    {
+      "claim_id": "b40e142d-0fc9-4999-85d0-3cf0056a7761",
+      "result_id": "9b042992-cca0-4a1d-8c90-f9fd48b29c26"
+    },
+    {
+      "claim_id": "4b8663fb-d79f-4640-b766-b308e3244b7b",
+      "result_id": "9b042992-cca0-4a1d-8c90-f9fd48b29c26"
+    },
+    {
+      "claim_id": "e4903e7f-a142-44f4-b28f-d0bedb4a0298",
+      "result_id": "9b042992-cca0-4a1d-8c90-f9fd48b29c26"
+    },
+    {
+      "claim_id": "74748ee0-b8c2-4fe8-ac9a-83ea244fc880",
+      "result_id": "9b042992-cca0-4a1d-8c90-f9fd48b29c26"
+    },
+    {
+      "claim_id": "b4e44326-248d-41fa-adee-50f6fd0bd456",
+      "result_id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f"
+    },
+    {
+      "claim_id": "f03408d4-5acd-45d0-b1e8-c9c799d735e3",
+      "result_id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f"
+    },
+    {
+      "claim_id": "4c7a8c65-8ed4-46a8-b1a8-727dfbbeb8d7",
+      "result_id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f"
+    },
+    {
+      "claim_id": "91ddf18d-eadf-4f4b-acd1-0a9f87004cb4",
+      "result_id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f"
+    },
+    {
+      "claim_id": "150e6c3c-2ec2-4153-9c30-eada8f6805ae",
+      "result_id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f"
+    },
+    {
+      "claim_id": "9d4e0812-4182-43c2-a340-9b9f78b5e005",
+      "result_id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f"
+    },
+    {
+      "claim_id": "3e5ac50e-e488-49de-b0c8-000a941095c3",
+      "result_id": "e02602f1-cadc-40b8-b01e-ec9ade6c668f"
+    },
+    {
+      "claim_id": "b501d343-9519-4ad2-9530-fb1230c50f41",
+      "result_id": "78288c95-c02f-4717-8314-6f9b61353966"
+    },
+    {
+      "claim_id": "a423d384-f95a-4713-9afd-cc2ea19b4253",
+      "result_id": "78288c95-c02f-4717-8314-6f9b61353966"
+    },
+    {
+      "claim_id": "614e6571-6452-4d61-9bb5-325a4ee73cd1",
+      "result_id": "78288c95-c02f-4717-8314-6f9b61353966"
+    },
+    {
+      "claim_id": "0c77745e-7ec7-4480-9111-94fc580da56f",
+      "result_id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d"
+    },
+    {
+      "claim_id": "80844b3c-8110-4943-b822-a0182c2ae7dc",
+      "result_id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d"
+    },
+    {
+      "claim_id": "29cc2db6-3330-4838-bf3e-f47d2777091a",
+      "result_id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d"
+    },
+    {
+      "claim_id": "8b530bce-d86f-47ed-b46b-e80ac4e02877",
+      "result_id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d"
+    },
+    {
+      "claim_id": "5d64f3d1-07f3-4af0-905d-1a194f8be8cb",
+      "result_id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d"
+    },
+    {
+      "claim_id": "97e8a426-b35c-4542-a4cf-7108c0b72c5c",
+      "result_id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d"
+    },
+    {
+      "claim_id": "0ade49b5-28d3-441f-b357-8f0916fce677",
+      "result_id": "597dcf8a-171e-4a05-a1b5-95e76f1da31d"
+    },
+    {
+      "claim_id": "894ff8d7-d44e-45df-a3e5-59544a6f8341",
+      "result_id": "74b3e441-69f4-4f63-a147-94d3a109a509"
+    },
+    {
+      "claim_id": "4cdb37d7-feda-4be3-b181-3da8da00b2c4",
+      "result_id": "74b3e441-69f4-4f63-a147-94d3a109a509"
+    },
+    {
+      "claim_id": "dff85c8f-753b-48e3-b408-5315dcd24d47",
+      "result_id": "74b3e441-69f4-4f63-a147-94d3a109a509"
+    },
+    {
+      "claim_id": "117f67a8-8ab4-41b6-a6b5-0655c30fc317",
+      "result_id": "74b3e441-69f4-4f63-a147-94d3a109a509"
+    },
+    {
+      "claim_id": "bd0eb098-989c-4559-904e-2c674008b59c",
+      "result_id": "74b3e441-69f4-4f63-a147-94d3a109a509"
+    },
+    {
+      "claim_id": "bd4770ac-d41e-47fe-a2df-443bd26ed386",
+      "result_id": "3d0948fd-bd0f-4222-91ac-731df47aaa5a"
+    },
+    {
+      "claim_id": "9e71a3eb-2c0f-4d46-a311-f940a7306be9",
+      "result_id": "3d0948fd-bd0f-4222-91ac-731df47aaa5a"
+    },
+    {
+      "claim_id": "ac11e89d-5cf7-4f08-af49-4b1cce36828d",
+      "result_id": "3d0948fd-bd0f-4222-91ac-731df47aaa5a"
+    },
+    {
+      "claim_id": "5b1c4dcf-9ee5-42cd-9c2d-2dcf7a776231",
+      "result_id": "6e35ac5c-7ec7-43d0-b8b3-005fa56d3ab7"
+    },
+    {
+      "claim_id": "15fd6ca1-e1f8-4399-962a-b49f0d71ca85",
+      "result_id": "6e35ac5c-7ec7-43d0-b8b3-005fa56d3ab7"
+    },
+    {
+      "claim_id": "5ea43a1c-5b84-4d60-bacd-4bcf53b10577",
+      "result_id": "6e35ac5c-7ec7-43d0-b8b3-005fa56d3ab7"
+    },
+    {
+      "claim_id": "d16ec8c1-d16e-4fa1-b7db-4062835769e3",
+      "result_id": "6e35ac5c-7ec7-43d0-b8b3-005fa56d3ab7"
+    },
+    {
+      "claim_id": "af009881-e526-4d21-9d54-e6d6bc33d24b",
+      "result_id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3"
+    },
+    {
+      "claim_id": "8dcca2e9-e3a7-46b7-bfca-75d7018ca2de",
+      "result_id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3"
+    },
+    {
+      "claim_id": "73cb19b3-1331-4491-a75d-1cae7aced807",
+      "result_id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3"
+    },
+    {
+      "claim_id": "9966a986-a803-415c-8028-98b3fd526d77",
+      "result_id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3"
+    },
+    {
+      "claim_id": "a7da9d11-24f8-41fd-be06-8f6c81e34d14",
+      "result_id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3"
+    },
+    {
+      "claim_id": "7d0c268c-2ca9-4a32-8a82-decaf703bc73",
+      "result_id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3"
+    },
+    {
+      "claim_id": "4e19bbad-3672-41ef-b78e-2bfa87f32080",
+      "result_id": "2505e166-c772-43a3-bc83-7a1ae1a85ae3"
+    },
+    {
+      "claim_id": "580adc1c-aff3-4ec4-9b5b-2da9d5b83602",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "8428482f-a15b-4968-b079-ea91ccb8caad",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "1873c26b-de47-4aec-a15c-c1b63851a128",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "78eae7ce-3ae1-47e9-a7a6-2b147282b4a5",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "59936050-fdb2-453a-b940-a50ec546dff9",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "b99cf1c8-3e2e-44fc-8468-f6e0e559f743",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "7caf4b62-2a77-4f3a-a863-b751fe5571ad",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "46c50078-d51a-44fe-a26c-2f19926847f7",
+      "result_id": "58ada02c-3340-4538-b957-a3967d0e65cc"
+    },
+    {
+      "claim_id": "e3cdcee5-6eb4-4a06-956b-8f2ff924792f",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "fea66f3f-cde5-4196-9dee-62abedee2092",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "7709b2a6-d00c-486a-b914-d0632653d6d3",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "979827e1-65b3-449e-bf9f-15e94ee5c967",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "be6c9613-ea6e-4a0e-8a95-4c0baae407fe",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "4b1fcb4d-02e3-440d-94ae-3cf62431fab8",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "92b60745-fab0-432f-b22b-17701f4a0880",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "368b4ee8-5d20-4550-83a3-130e295f874c",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "929f3ca8-cd8d-44b0-825a-112323c3cb73",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "6e286f61-76df-48f4-8416-22c32062964f",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "de2a54cb-467a-4d64-b5cc-05e2fcba7ec4",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "9627153b-220f-4ec1-b026-8ba6cf227e54",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "8526cdf6-97b8-471a-95b4-d7c85e34eb98",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "c7c417da-3908-4f9b-8b3a-b2d48c9d650f",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "0ffacbb7-a061-48bc-83d7-edc07ceafe1a",
+      "result_id": "02113f2e-344e-4471-a776-dcf508ebbf76"
+    },
+    {
+      "claim_id": "42cd2267-a26e-44df-88fc-4159b9b1487e",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "4506509a-c34c-400e-bc9c-630136cf176b",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "b22fde8d-907c-4604-ac82-d02cd20716cb",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "80f784b3-89a5-4076-8cfa-faece2dd8ef4",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "9ad6b96b-5a1f-4e4b-ab6b-8c148a6fe33b",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "021f7db3-5f61-4d36-8e8d-23b57163d46b",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "0787840f-1eaa-4cd1-941d-bcfe6c4ef31b",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "17347129-3df9-4399-9dbc-bc7e28f792ec",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "98c1f750-d099-429d-9ded-3624c1bdd037",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "524eae3a-1807-4b85-a2cf-4f4d6a554a9a",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "cf74ae01-8932-471b-97a2-4089b9eb0ca8",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "e4fe8f0f-8ec5-4eab-a3af-3f39197d6193",
+      "result_id": "4221367c-81ee-4da2-8f18-c6eef5a2f636"
+    },
+    {
+      "claim_id": "1e2bb171-955a-431b-b432-dcb56a06ef88",
+      "result_id": "e29d6a73-d605-4ed6-bec2-6cb25a2375cf"
+    },
+    {
+      "claim_id": "edd82e60-cdf3-4b75-9432-1aff573f728d",
+      "result_id": "e29d6a73-d605-4ed6-bec2-6cb25a2375cf"
+    },
+    {
+      "claim_id": "03a78a8b-d1ad-4ba4-8e11-3db915afa6f5",
+      "result_id": "e29d6a73-d605-4ed6-bec2-6cb25a2375cf"
+    },
+    {
+      "claim_id": "bc703a5d-4e4e-4c58-92c0-c280e5d51975",
+      "result_id": "e29d6a73-d605-4ed6-bec2-6cb25a2375cf"
+    }
+  ],
+  "comparisons": []
+}

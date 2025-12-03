@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "NEAdriver is a novel computational method that combines two network analysis channels (MutSet and PathReg) to identify cancer driver genes in individual tumor genomes. The MutSet channel evaluates network enrichment between each altered gene and other mutations in the same genome, while PathReg uses pathway enrichment scores derived from lasso regression models. The method does not rely on mutation frequency and combines probabilistic estimates from both channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C28-C30, C35-C45 collectively describe the NEAdriver methodology with specific technical details including the two-channel approach, lasso regression with 31-83 pathways (C40), model performance metrics (Spearman R=0.62-0.79, C41), and the independence from mutation frequency (C44). The methodological description is internally consistent and supported by quantitative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "NEAdriver was applied to 10 cancer cohorts (9 TCGA cohorts plus medulloblastoma) using a network of 19,035 nodes and 1,731,648 edges. The analysis included all mutations regardless of functional impact, and used 318 KEGG pathways for PathReg and 1,659 functional gene sets for survival analysis. Driver predictions at q<0.05 were 14-67% larger than at q<0.01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C31, C46-C54 provide specific quantitative details about data sources, network construction, and analysis scope that are internally consistent. The inclusion of all mutation types (C49-C51) is justified with citation support (C50). The network construction methodology is clearly described with specific numbers (C47-C48).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "NEAdriver predictions showed significant overlap with reference gene sets (90/110 comparisons by Fisher's test, 61/110 by Mann-Whitney test at Bonferroni-adjusted p<0.05) but occupied a different functional space than computational methods. NEAdriver genes clustered with curated cancer pathway sets and showed enrichment in EMT, angiogenesis, and inflammatory response while being depleted in cell cycle and DNA repair pathways. NEAdriver genes had network degrees closer to average levels compared to other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61, C129-C132 present comprehensive comparison results with specific statistical measures and functional characterization. The observations about network degree distributions (C59-C61) and functional enrichment patterns (C56-C58) are supported by references to figures and are internally consistent with the method's design to avoid hub bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C133"
+    ],
+    "result": "NEAdriver achieved best performance against cancer-site-specific gold standard sets with PPV ranging 30-70% at TPR=10% and 44-68% for literature/KEGG sets. When accounting for incomplete gold standards (50% completeness assumption), PPV estimates increased by 20-30%, reaching 78-88% at q<0.05. Cancer site-specific estimates were remarkably consistent across the 10 cohorts at PPV=30-70%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C133 provide detailed performance evaluation with specific quantitative metrics across multiple benchmarks. The sensitivity analysis accounting for incomplete gold standards (C65, C67) is methodologically sound. The consistency across cohorts (C66) supports robustness. However, the adjusted PPV estimates rely on assumptions about gold standard completeness that cannot be independently verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "NEAdriver showed weak but significant agreement with integrated ranks from other network-based methods (Spearman R=0.22-0.30). Out of top 50 driver lists from alternative methods, 9-41 genes received NEAdriver q<0.05. Genes from alternative methods had higher mutation frequencies than NEAdriver predictions, but differences became less pronounced after normalization by coding sequence length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 present comparative results with specific correlation coefficients and overlap statistics. The observation that normalization by gene length reduces differences (C72) is consistent with NEAdriver's design to be less frequency-dependent. The weak correlations (C68) are expected given the methodological differences and support the novelty claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "NEAdriver predictions showed weak correlations with potential confounders: replication rate and expression level (Kendall tau <0.05), but stronger association with gene length (Kendall tau=0.07-0.15). After adjustment for gene length and tumor mutation burden, associations remained weak (Kendall tau <0.05 in 7/10 cohorts). Only 0.5-3% of predictions were known artifacts, with significant associations in only 5/30 cohort-specific models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 address important potential confounders with specific statistical measures. The low artifact prevalence (C78-C81) and weak associations with confounders after adjustment (C77) support the method's validity. However, the association with gene length (C75) is acknowledged and present in alternative methods as well (C75), suggesting this may be a general feature rather than a specific bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "NEAdriver identified mostly novel driver candidates with modest overlap with alternative methods. Modal driver counts ranged from M=0-1 in MB to M=50 in SKCM for NEAdriver (q<0.05), compared to M=1-3 to M=55 for alternative methods. Jaccard coefficients rarely exceeded 0.3 (except MB and GBM), confirming novelty. With PPV estimates of 50-75% when allowing for novel drivers, predictions appeared fairly confident.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 demonstrate the novelty of NEAdriver findings with specific quantitative metrics. The low Jaccard coefficients (C87) and modest overlaps (C85) support novelty claims. The interpretation of confidence (C88) is reasonable given the PPV estimates, though it relies on the assumption that gold standards are incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Driver gene sets (DGS) at q<0.05 were informative for patient survival, with 7-14.8% of tests yielding significant Cox models (FDR<0.25) and up to 21.1% of significant partitions recapitulated on test sets. Thirty-one cases showed associations with survival for both mutation-based DGS and expression-based AGS scores (permutation p<0.0001). Opposite survival relations were observed between DGS and expression-based scores in most cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 present survival analysis results with appropriate statistical testing including Cox models, permutation tests, and multiple testing correction. The concordance between mutation and expression analyses (C93-C94) provides orthogonal validation. The negative control (C92) strengthens the findings. The opposite directionality (C95) is biologically plausible and interesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "NEAdriver identified recurrent mutations in collagen, laminin, and integrin gene families across cohorts. These genes are in the 2nd quartile by CDS length with mutation frequencies only 1.5-2.5 times higher than average per base pair. Genomic alterations occurred in 2-7 genes of these families per sample on average, with significant pairwise co-occurrence patterns (FDR<0.05). These genes were largely missed by prior computational analyses despite known roles in cancer biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C99-C105 identify a specific novel finding with quantitative support. The observation that these genes have moderate mutation frequencies when normalized by length (C101) explains why they were missed by frequency-based methods. The co-occurrence analysis (C103) and prior biological knowledge (C104) support functional relevance. This represents a concrete example of NEAdriver's ability to detect rare drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "NEAdriver proved robust across a broad range of mutation rates (very low in MB to very high in SKCM) with consistent statistical performance and functional profiles across 10 cohorts. Three pathways were systematically included in models: calcium signaling, ARVC, and DCM, contributing 22-45 median edge counts in MB and 497-890 in LUAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C124-C128 demonstrate method robustness with specific examples. The systematic inclusion of calcium signaling pathways (C125-C126) is supported by biological rationale and citations. The quantitative network connectivity data (C128) supports the mechanistic interpretation. The consistency across diverse cohorts (C124) is a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C134"
+    ],
+    "result": "The discovered driver combinations were informative on cancer outcome, with functional relations demonstrated between driver mutation patterns, gene expression in affected pathways, and patient survival. The efficiency of NEAdriver was confirmed by DGS ability to stratify patients by survival and concordance between mutation- and expression-based pathway associations with survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C33, C134 summarize the clinical relevance findings that are detailed in other claim groups (particularly C89-C95). These high-level summary claims are supported by the specific survival analysis results with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C34",
+      "C136",
+      "C137"
+    ],
+    "result": "NEAdriver revealed driver genes with individually sparse mutation patterns that would not be detectable by other computational methods, exposing underestimated protein categories with rare genomic alterations essential for cancer hallmarks. The analysis identified hundreds of somatic alterations not previously deemed functional, with predictions appearing confident after multiple evaluation approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C34, C136-C137 present high-level conclusions about the method's novel contributions. These are supported by the specific findings about collagens/laminins/integrins (C99-C105), the novelty analysis (C82-C88), and performance evaluation (C62-C67). The confidence statement (C137) is reasonable given the multiple validation approaches, though somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Specific biological examples support the survival associations: MB cells produce granulocyte colony-stimulating factor affecting prognosis, and ALK fusion events are established lung cancer therapy targets. In LUAD cohort, ALK1 pathway scores were informative on survival despite no patients receiving ALK inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide biological context for survival findings with appropriate citations (C96-C97). The LUAD example (C98) is interesting as it suggests prognostic rather than predictive value. These specific examples strengthen the biological plausibility of the survival associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C135"
+    ],
+    "result": "Most prior cancer driver discovery projects generalized findings at pan-cancer or site-specific levels, possessing lower statistical power for short genes and rare drivers. NEAdriver addresses limitations of frequency-based methods by evaluating individual mutation events independently in their genomic context using network analysis less biased toward hubs. The method is more focused than prior guilt-by-association approaches and can be applied to single patients without cohort-level training (MutSet channel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C123, C135 provide context and rationale for the method with appropriate citations. The critiques of existing approaches (C107, C114, C121) are supported by citations and logical arguments. The claimed advantages (C117-C119, C122-C123) are consistent with the methodological design and empirical results. The acknowledgment of limitations (C135) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background context establishes that genome sequencing expanded known cancer drivers several-fold through computational analysis of mutation frequencies, while experimental research accounted for functional context. Cancer genomes contain mixtures of driver and passenger mutations, with drivers conferring selective advantages corresponding to cancer hallmarks. Network analysis is an important tool for driver discovery, though existing methods have limitations including hub bias and high false positive rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C27 provide established background knowledge with appropriate citations. These contextual claims set up the rationale for NEAdriver and are generally well-supported by the cited literature. The characterization of existing methods' limitations (C21, C23) provides motivation for the new approach.",
+    "result_type": "MINOR"
+  }
+]

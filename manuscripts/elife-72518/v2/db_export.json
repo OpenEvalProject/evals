@@ -1,0 +1,2294 @@
+{
+  "submission": {
+    "id": "0359ab77-c9d1-44eb-aff6-14ad1ed5f7da",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:08:52.691346Z",
+    "updated_at": "2025-12-03T15:08:52.691346Z"
+  },
+  "content": [
+    {
+      "id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "submission_id": "0359ab77-c9d1-44eb-aff6-14ad1ed5f7da",
+      "content_type": "manuscript",
+      "content_text": "# Data-driven causal analysis of observational biological time series\n\n## Authors\n\n- Alex Eric Yuan<sup>1</sup> ([ORCID: 0000-0002-8972-7497](https://orcid.org/0000-0002-8972-7497)) \u2020\n- Wenying Shou<sup>3</sup> ([ORCID: 0000-0001-5693-381X](https://orcid.org/0000-0001-5693-381X)) \u2020\n\n### Affiliations\n\n1. Molecular and Cellular Biology PhD program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n2. Basic Sciences Division, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n3. Centre for Life\u2019s Origins and Evolution, Department of Genetics, Evolution and Environment, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nComplex systems are challenging to understand, especially when they defy manipulative experiments for practical or ethical reasons. Several fields have developed parallel approaches to infer causal relations from observational time series. Yet, these methods are easy to misunderstand and often controversial. Here, we provide an accessible and critical review of three statistical causal discovery approaches (pairwise correlation, Granger causality, and state space reconstruction), using examples inspired by ecological processes. For each approach, we ask what it tests for, what causal statement it might imply, and when it could lead us astray. We devise new ways of visualizing key concepts, describe some novel pathologies of existing methods, and point out how so-called \u2018model-free\u2019 causality tests are not assumption-free. We hope that our synthesis will facilitate thoughtful application of methods, promote communication across different fields, and encourage explicit statements of assumptions. A video walkthrough is available (Video 1 or https://youtu.be/AlV0ttQrjK8).\n\n## Introduction\n\nEcological communities perform important activities, from facilitating digestion in the human gut to driving biogeochemical cycles. Communities are often highly complex, with many species engaging in diverse interactions. To control communities, it helps to know causal relationships between variables (e.g. whether perturbing the abundance of one species might alter the abundance of another species). We can express these relationships either explicitly by proposing causal networks (Spirtes and Zhang, 2016; Chattopadhyay et al., 2019; Glymour et al., 2019; Runge et al., 2019b; Runge et al., 2019a; Sanchez-Romero et al., 2019; Leng et al., 2020), or implicitly by simply predicting the effects of new perturbations (Daniels and Nemenman, 2015; Mangan et al., 2016).\n\nIdeally, biologists discover such causal relations from manipulative experiments. However, manipulative experiments can be infeasible or inappropriate: Natural ecosystems may not offer enough replicates for comprehensive manipulative experiments, and perturbations can be impractical at large scales and may have unanticipated negative consequences. On the other hand, there exists an ever-growing abundance of observational time series (i.e. without intentional perturbations). The goal of obtaining accurate causal predictions from these or similar data sets has motivated several complementary lines of investigation.\n\nDetermining causal relationships can become more straightforward if one already knows, or is willing to assume, a model that captures key aspects of the underlying process. For example, the Lotka-Volterra model popular in mathematical ecology assumes that species interact in a pairwise fashion, that the fitness effects from different interactions are additive, and that all pairwise interactions can be represented by a single equation form where parameters can vary to reflect signs and strengths of fitness effects. By fitting such a model to time series of species abundances and environmental factors, one can predict, for instance, which species interact or how a community might respond to certain perturbations (Stein et al., 2013; Fisher and Mehta, 2014; Bucci et al., 2016). However, the Lotka-Volterra equations often fail to describe complex ecosystems and chemically mediated interactions (Levine, 1976; Wootton, 2002; Momeni et al., 2017).\n\nWhen our understanding is insufficient to support knowledge-based modeling, how might we formulate causal hypotheses? A large and rapidly growing literature attempts to infer causal relations from time series data without using a mechanistic model. Such methods are sometimes called \u2018model-free\u2019 (Coenen et al., 2020), although they typically rely on statistical models. Some of these methods avoid any equation-based description of the dynamics and instead examine some notion of \u2018information flow\u2019 between time series (Granger, 1980; Sugihara et al., 2012). Others deploy highly flexible equations that are not necessarily mechanistic (Granger, 1969; Barnett and Seth, 2014).\n\nHere, we focus on three model-free approaches that have been commonly used to make causal claims in ecology research: pairwise correlation, Granger causality, and state space reconstruction. For each, we ask (1) what information does the method give us, (2) what causal statement might that information imply, and (3) when might the method lead us astray?\n\nWe found that answering these seemingly basic questions was at first surprisingly challenging for several reasons. First, modern causal discovery approaches have intellectual roots in several communities including philosophy, statistics, econometrics, and chaos theory, which sometimes use different words for the same idea, and the same word for different ideas. The word causality itself is a prime example: Many philosophers (and scientists) would say that $X$ causes $Y$ if an intervention upon $X$ would result in a change in $Y$ (Woodward, 2016; Pearl, 2000). Granger\u2019s original works instead defined causality to be about how important the history of $X$ is in predicting $Y$ (Granger, 1969; Granger, 1980), and in the nonlinear dynamics field, causality is sometimes used to mean that the trajectories of $X$ and $Y$ have certain shared geometric or topological properties (Harnack et al., 2017). Such language, while unproblematic when confined to a single community, can nevertheless obscure important differences between methods from different communities. A second challenge is that in methodological articles, key assumptions are sometimes hidden in algorithmic details, or simply not mentioned. Finally, some methods deal with nuanced or advanced mathematical ideas that can be difficult even for those with quantitative training. Given these challenges, it is no surprise that efforts to infer causal relationships from observational time series have sometimes been highly controversial, with an abundance of \u2018letters to the editor\u2019, sometimes followed by impassioned dialogue (Luo et al., 2015; Baskerville and Cobey, 2017; Tiokhin and Hruschka, 2017; Schaller et al., 2017; Barnett et al., 2018).\n\nWe have tried to balance precision and readability in this review. To accomplish this, we devised new ways to visualize key concepts. We also compare all methods to a common definition of causality that is useful to experimental scientists. We provide refreshers and discussions of mathematical notions in the Appendices. Lastly, a video walkthrough covering many of the key concepts and takeaway messages is available at https://youtu.be/AlV0ttQrjK8; and as Video 1. Our goals are to inform, to facilitate communication across different fields, and to encourage explicit statements of methodological assumptions and caveats. For a broad overview of time series causal methods in Earth sciences or more technical reviews, see Runge et al., 2019b and Peters et al., 2017; Runge, 2018b respectively.\n\n![Video 1.](https://cdn.elifesciences.org/articles/72518/elife-72518-video1.mp4.jpg)\n\n## Dependence, correlation, and causality\n\n### Causality\n\nIn this article, we use the definition of \u2018causality\u2019 that is common in statistics and intuitive to scientists: $X$ has a causal effect on $Y$ (\u2018$X$ causes $Y$\u2019 or \u2018$X$ is a causer; $Y$ is a causee\u2019 or \u2018$X$ is a cause; $Y$ is an effect\u2019) if some externally applied perturbation of $X$ can result in a perturbation in $Y$ (Figure 1A). We say that $X$ and $Y$ are causally related if $X$ causes $Y$, $Y$ causes $X$, or some other variable causes both. Otherwise, $X$ and $Y$ are causally unrelated. Additionally, one can talk about direct versus indirect causality (Figure 1B; see legend for definitions). A surprising result from past several decades of causality research is that there are in fact some conditions under which directional causal structures can be correctly inferred (\u2018identified\u2019) from purely observational data (Spirtes and Zhang, 2016; Peters et al., 2017; Hitchcock, 2020b) (e.g. Appendix 2\u2014figure 2, last row). However, empirical time series often do not contain enough information for easy causal identifiability (Spirtes and Zhang, 2016; Glymour et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72518/elife-72518-fig1-v2.jpg)\n\n**Figure 1.:** (A) Definition. If a perturbation in $X$ can result in a change in future values of $Y$, then $X$ causes $Y$. This definition does not require that any perturbation in $X$ will perturb $Y$. For example, if the effect of $X$ on $Y$ has saturated, then a further increase in $X$ will not affect $Y$. In this article, causality is represented by a hollow arrow. To embody probabilistic thinking (e.g. drunk driving increases the chance of car accidents; Pearl, 2000), $X$ and $Y$ are depicted as histograms. Sometimes, perturbations in one variable can change the current value of another variable if, for example, the two variables are linked by a conservation law (e.g. conservation of energy). Some have argued that these are also causal relationships (Woodward, 2016). (B) Direct versus indirect causality. The direct causers of $Y$ are given by the minimal set of variables such that once the entire set is fixed, no other variables can cause $Y$. Here, three variables $X$, $Z$, and $U$ activate $Y$. The set ${X,Z}$ constitutes the direct causers of $Y$ (or $Y$\u2019s \u2018parents\u2018 [Hausman and Woodward, 1999; Pearl, 2000]), since if we fix both $X$ and $Z$, then $Y$ becomes independent of $U$. If a causer is not direct, we say that it is indirect. Whether a causer is direct or indirect can depend on the scope of included variables. For example, suppose that yeast releases acetate, and acetate inhibits the growth of bacteria. If acetate is not in our scope, then yeast density has a direct causal effect on bacterial density. Conversely, if acetate is included in our scope, then acetate (but not yeast) is the direct causer of bacterial density (since fixing acetate concentration would fix bacterial growth regardless of yeast density). When we draw interaction networks with more than two variables, hollow arrows between variables denote direct causation.\n\n### Correlation versus dependence\n\nThe adage \u2018correlation is not causality\u2019 is well-known to the point of being clich\u00e9 (Sugihara et al., 2012; Coenen and Weitz, 2018; Carr et al., 2019; Mainali et al., 2019). Yet, to dismiss correlative evidence altogether seems too extreme. To make use of correlative evidence without being reckless, it helps to distinguish between the terms \u2018correlation\u2019 and \u2018dependence\u2019. When applied to ecological time series, the term \u2018correlation\u2019 is often used to describe some statistic that quantifies the similarity between two observed time series (Weiss et al., 2016; Coenen and Weitz, 2018). Examples include Pearson\u2019s correlation coefficient and local similarity (Ruan et al., 2006). In contrast, statistical dependence is a hypothesis about the probability distributions that produced those time series, and has close connections to causality.\n\nDependence has a precise definition in statistics, and is most easily described for two binary events. For instance, if the incidence of vision loss is higher among diabetics than among the general population, then vision loss and diabetes are statistically dependent. In general, events $A$ and $B$ are dependent if across many independent trials (e.g. patients), the probability that $A$ occurs given that $B$ has occurred (e.g. incidence of vision loss among diabetics only) is different from the background probability that $A$ occurs (e.g. background incidence of vision loss). If $A$ and $B$ are not dependent, then they are called independent. The concept of dependence is readily generalized from binary events to numerical variables, and also to vectors such as time series (Appendix 1).\n\nDependence is connected to causation by the widely accepted \u2018Common Cause Principle\u2019: if two variables are dependent, then they are causally related (i.e. one causes the other, or both share a common cause; Peters et al., 2017; Runge et al., 2019a; Hitchcock, 2020b; Hitchcock and R\u00e9dei, 2020a). Note however that if one mistakenly introduces selection bias, then two independent variables can appear to be dependent (Appendix 2\u2014figure 3). The closely related property of conditional dependence (i.e. whether two variables are dependent after statistically controlling for certain other variables; Appendix 1) can be even more causally informative. In fact, when conditional dependence (and conditional independence) relationships are known, it is sometimes possible to infer most or all of the direct causal relationships at play, even without manipulative experiments or temporal information. Many of the algorithms that accomplish this rely on two technical but often reasonable assumptions: the \u2018causal Markov condition\u2019, which allows one to infer causal information from conditional dependence, and the \u2018causal faithfulness condition\u2019, which allows one to infer causal information from conditional independence (Appendix 2; Peters et al., 2017; Glymour et al., 2019; Hitchcock, 2020b).\n\nIn sum, whereas a correlation is a statistical description of data, statistical dependence is a hypothesis about the relationship between the underlying probability distributions. Dependence is in turn linked to causality. Below, we discuss tests that use correlation to detect dependence in time series.\n\n### Testing for dependence between time series using surrogate data\n\nDespite its scientific usefulness, dependence between time series can be treacherous to test for. This is because time series are often autocorrelated (e.g. what occurs today influences what occurs tomorrow), so that a single pair of time series contains information from only a single trial. If one has many trials that are independent and free of systematic differences (e.g. $\\geq20$ as in some laboratory microcosm experiments), the task is relatively easy: One can test whether the abundances of species $X$ and $Y$ are statistically dependent by comparing the correlation between $X$ and $Y$ abundance series from the same trial with those between $X$ and $Y$ abundance series from different trials (Appendix 1\u2014figure 4; see also Moulder et al., 2018). However, a large trial number is generally a luxury and often only one trial is available. In such cases, attempting to discern whether two time series are statistically dependent is like attempting to divine whether diabetes and vision loss are dependent with only a single patient (i.e. we have an \u2018$n$-of-one problem\u2019). As one possible remedy, there are parametric tests using the Pearson correlation coefficient that account for autocorrelation. In these tests, one estimates the correlation coefficient between time series, and evaluates its statistical significance using the variance of the null distribution (Afyouni et al., 2019). However, the calculation of this variance relies on estimates of the autocorrelation at each lag for both time series, which can be highly uncertain (Pyper and Peterman, 1998; Ebisuzaki, 1997). Furthermore, after estimating the variance, one must also assume the shape of the null distribution before a p-value can be assigned to the correlation.\n\nAlternatively, the $n$-of-one problem is often addressed by a technique called surrogate data testing. Specifically, one computes some measure of correlation between two time series $X$ and $Y$. Next, one uses a computer to simulate replicates of $Y$ that might have been obtained if $X$ and $Y$ were independent (see below). Each simulated replicate is called a \u2018surrogate\u2019 $Y$. Finally, one computes the correlation between $X$ and each surrogate $Y$. A p-value (representing evidence against the null hypothesis that $X$ and $Y$ are independent) is then determined by counting how many of the surrogate $Y$s produce a correlation at least as strong as the real $Y$. For example, if we produced 19 surrogates and found the real correlation to be stronger than all 19 surrogate correlations, then we would write down a p-value of $1/(1+19)=0.05$. Ideally, if two time series are independent, then we should register a a p-value of 0.05 (or less) in only 5% of cases.\n\nSeveral procedures can be used to produce surrogate time series, each corresponding to an assumption about how the original time series was generated (Lancaster et al., 2018). One popular procedure is to simply shuffle the values of a time series (Ruan et al., 2006; Eiler et al., 2012; Shade et al., 2013; Cyriaque et al., 2020). This procedure, often called permutation, assumes that all possible orderings of the time points in the series are equally likely. This assumption is commonly violated in time series due to autocorrelation, and thus the test is often invalid. For example, for independent time series in Figure 2B\u2013C, this test returns $p<0.05$ at rates of $30\u223c92%$, much higher than 5%. Nevertheless, permutation testing has appeared in many applied works, perhaps because it has been the default option in some popular software packages. Another procedure for generating surrogates is called phase randomization. It first uses the Fourier transform to represent a time series as a sum of sine waves, then randomly shifts each of the component sine waves in time, and finally sums the phase-shifted components (Ebisuzaki, 1997; Schreiber and Schmitz, 2000; Andrzejak et al., 2003; Appendix 3\u2014figure 1). This procedure is considered appropriate when the original time series is obtained from a linear, Gaussian, and stationary process (Andrzejak et al., 2003; Lancaster et al., 2018), where \u2018linear\u2019 means that future values depend linearly on past values, \u2018Gaussian\u2019 means that any subsequence follows a multivariate Gaussian distribution, and \u2018stationary\u2019 means that this distribution does not change over time. See Chan, 1997 for a discussion of exact requirements. Indeed, this test performed well (with a false positive rate of 4%) when time series satisfied its assumptions (Figure 2C), and poorly when the stationarity assumption was violated (with a false positive rate of 21%; Figure 2B). Other surrogate data procedures include time shifting (Andrzejak et al., 2003), the block bootstrap (Papana et al., 2017), and the twin method (Thiel et al., 2006). Some surrogate data tests have been shown to perform reasonably well even when the exact theoretical requirements are unmet or unknown (Thiel et al., 2006; Papana et al., 2017), but a more comprehensive benchmarking effort is needed to map out each method\u2019s valid domain in practice.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72518/elife-72518-fig2-v2.jpg)\n\n**Figure 2.:** (A) Densities of independent yeast and bacteria cultures growing exponentially are correlated. (B, C) Correlation between time series of two independent island populations can appear significant if inappropriate tests are used. (B) In an island (\u201cisl\u201d), individuals stochastically migrate to and from the mainland in roughly equal numbers so that total island biomass follows a random walk. At each time step, the net change in island biomass is drawn from a standard normal distribution (mean = 0; standard deviation = 1 biomass unit). (C) An island population receives cells through migration and loses cells via death. Observations are made after 1000 steps, so that the population size has reached an equilibrium. For both (B) and (C), we performed 1000 simulations in which we calculated the Pearson correlation coefficient of a pair of independent islands populations. Both panels contain: example time series (upper right), a scatterplot comparing two independent islands (lower left), the distribution of Pearson correlation coefficient strength (blue shading), and the proportion of simulations in which the correlation was deemed significant ($p\\leq0.05$) by surrogate data tests using either permutation or phase randomization (see main text). Ideally, the proportion of correlations that are significant (false positives) should not exceed 5%. The strength of correlation is weaker in (C) compared to (B), yet still often significant according to the permutation test. See Appendix 5 for more details.\n\nIn sum, surrogate data allow a researcher to use an observed correlation statistic to test for dependence under some assumption about the data-generating process. Dependence indicates the presence of a causal relationship, and conditional dependence can sometimes even indicate the direction (Hitchcock, 2020b; Glymour et al., 2019; Heinze-Deml et al., 2018; Appendix 2\u2014figure 2). Below we consider Granger causality and state space reconstruction, two approaches that can be used to directly infer the direction of causality from time series.\n\n## Granger causality: intuition, pitfalls, and implementations\n\n### Intuition and formal definitions\n\nIn simple language, $X$ is said to Granger-cause $Y$ if a collection of time series containing all historical measurements predicts $Y$\u2019s future behavior better than a similar collection that excludes the history of $X$. An important consequence of this definition is that Granger causality excludes indirect causes, as illustrated in Figure 3A. In practice, whether a causal relationship is direct or indirect depends on which variables are observed. For instance, in Figure 3A, if $Y$ were not observed, then $X$ would \u201cdirectly\u201d cause (and Granger-cause) $Z$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72518/elife-72518-fig3-v2.jpg)\n\n**Figure 3.:** (A) Granger causality is designed to reveal direct causes, not indirect causes. Although $X$ causes $Z$, $X$ does not Granger-cause $Z$ because with the history of $Y$ available, the history of $X$ no longer adds value for predicting $Z$. This also shows that Granger causality is not transitive: $X$ Granger-causes $Y$ and $Y$ Granger-causes $Z$, but $X$ does not Granger-cause $Z$. (B) Failure modes of Granger causality when inferring direct causality. (i) False negative due to lack of stochasticity. $X$ and $Y$ mutually and deterministically cause one another through a copy operation (Ay and Polani, 2011; Peters et al., 2017): $X\u2062(t)$ copies $Y\u2062(t-1)$ and vice versa. Since $X\u2062(t-2)$ already contains sufficient information to know $X\u2062(t)$ exactly, the history of $Y$ cannot improve prediction of $X$, and so $Y$ does not Granger-cause $X$. By symmetry, $X$ does not Granger-cause $Y$. (ii) False positive due to unobserved common cause. $X$ causes $Y$ with a delay of 1, and causes $Z$ with a delay of 2. We only observe $Y$ and $Z$. Since $Y$ receives the same \u201cinformation\u201d before $Z$, the history of $Y$ helps to predict $Z$, and thus $Y$ Granger-causes $Z$, resulting in a false positive. (iii) Infrequent sampling can induce false negatives. Although there is a Granger causality signal when we sample once per time step, the signal is lost when we sample only once per two steps (Gong et al., 2015). (iv) Measurement noise can lead Granger causality to suffer both false positives and false negatives. $\u03f5_{X}(t)$, $\u03f5_{Y}(t)$, and $\u03f5_{Z}(t)$ represent process noise and are normal random variables with mean of 0 and variance of 1. All process noise terms are independent of one another.\n\nGranger causality has many related but nonequivalent quantitative incarnations in the literature, including several that were proposed by Granger himself (Granger, 1969; Granger, 1980). Box 1 presents two definitions: one based on a linear regression which we call \u2018linear Granger causality\u2019 (Gibbons et al., 2017; Ai et al., 2019; Barraquand et al., 2020; Mainali et al., 2019) and another more general definition which we call \u2018general Granger causality\u2019 (also sometimes called nonlinear Granger causality; Granger, 1980; Diks and Panchenko, 2006; Bekiros and Diks, 2008; Vicente et al., 2011; Roux et al., 2013; Papana et al., 2017). See theorem 10.3 of Peters et al., 2017 for a discussion of the theoretical relationship between general Granger causality and (true) causality.\n\n### Granger causality failure modes\n\nWe discuss four important instances where Granger causality can fail as an indicator of direct causality (Figure 3B). These pathologies can be understood intuitively and can apply to both linear and general Granger causality. First, if a system has deterministic dynamics (see Appendix 3), then Granger causality may fail to detect causal relations (Figure 3Bi). More generally, if dynamics have a low degree of randomness, Granger causality signals can be very weak (e.g. knowing $X$\u2019s past improves predictions of $Y$\u2019s future only slightly; Janzing et al., 2013; Peters et al., 2017). Moreover, as we will discuss later, this limitation has motivated other methods that take a primarily deterministic view (Sugihara et al., 2012). Second, Granger causality may erroneously assign a direct causal relation between a pair of variables that have an unobserved common cause (Figure 3Bii). Third, recording data at a frequency below that of the original process by \u2018subsampling\u2019 (e.g. taking weekly measurements of a daily process) or by \u2018temporal aggregation\u2019 (e.g. taking weekly averages of a daily process) can alter the inferred causal structure (Figure 3Biii), although recent techniques can help with these issues (Gong et al., 2015; Hyttinen et al., 2016; Gong et al., 2017). Lastly, when measurements are noisy (Figure 3Biv), Granger causality can assign false interactions and also fail to detect true causality (Newbold, 1978), although some progress has been made on this front (Nalatore et al., 2007).\n\n### Practical testing for linear and general Granger causality\n\nOne might still attempt to infer Granger causality despite the above caveats, especially in situations where caveats can be largely avoided. Linear Granger causality has standard parametric tests: if any of the $\\alpha_{k}$ terms in Equation 1 is nonzero, then $X$ linearly Granger-causes $Y$. Parametric tests are computationally inexpensive and available in multiple free and well-documented software packages (Seabold and Perktold, 2010; Barnett and Seth, 2014). These tests assume that time series are \u2018covariance-stationary\u2019, which means that certain statistical properties of the series are time-independent (Barnett and Seth, 2014; see also Appendix 3), and can fail when this assumption is violated (Toda and Phillips, 1993; Ohanian, 1988; He and Maekawa, 2001). Additionally, applying linear Granger causality to nonlinear systems can lead to incorrect causal conclusions (Li et al., 2018). One can assess whether the linear model (Equation 1) is a reasonable approximation, for instance by checking whether the model residuals $\\epsilon_{t}$ are uncorrelated across time (Feige and Pearce, 1979) as is assumed by Equation 1.\n\nTests for general Granger causality often use a statistic known as transfer entropy (Papana et al., 2012). Roughly, the transfer entropy from $X$ to $Y$ is the extent to which the entropy (a measurement of uncertainty) of $Y$\u2019s future is reduced when we account for (specifically, condition on) the past of $X$ (Schreiber, 2000; Cover and Thomas, 2006; Montalto et al., 2014; Papana et al., 2017). A significant transfer entropy thus indicates the presence of general Granger causality. Surrogate data are typically used to evaluate significance (Montalto et al., 2014; Papana et al., 2017; Shorten et al., 2021). However, the previously discussed surrogate data procedures are designed to test the null hypothesis of independence, which is different from the null hypothesis of general Granger non-causality (i.e. Equation 2, but replace \u2018\u2260\u2019 with \u2018=\u2019). More recent surrogate procedures have been proposed to address this issue (Runge, 2018a; Shorten et al., 2021). Several software implementations of Granger causality tests based on transfer entropy statistics are available (e.g. Montalto et al., 2014; Behrendt et al., 2019; Wollstadt et al., 2019).\n\nGranger causality methods face challenges when datasets have a large number of variables (e.g. in microbial ecology). In this case, the summation in Equation 1 will contain a large number of terms, and so a regression procedure may fail to detect many true interactions (Runge et al., 2019a; Runge et al., 2019b). To handle systems with many variables, one can impose the assumption that only a small number of causal links exist (Gibbons et al., 2017; Mainali et al., 2019). This is sometimes called sparse regression or regularization. Additionally, under certain technical assumptions, it is possible to use a series of logical rules to remove unnecessary terms in a purely data-driven way (Runge et al., 2019b; Runge et al., 2019a). As an example, suppose that we wish to test whether pH is a Granger-cause of chlorophyll concentration in some aquatic environment and we infer based on a prior analysis that chlorophyll concentration is always independent of fluctuations in salinity. Then, most likely, salinity is irrelevant to the pH-chlorophyll relationship and can be safely omitted from our Granger causality analysis. As an aside, this reasoning could theoretically fail in pathological cases where, for instance, the \u2018faithfulness\u2019 condition (Appendix 2) is violated (see Example 7 of Runge, 2018b for a worked counterexample). These rules and their associated assumptions are formalized in \u2018constraint-based\u2019 causal discovery algorithms (Appendix 2; Peters et al., 2017; Glymour et al., 2019). The development of new causal discovery algorithms, and their application to time series, is a very active area of research (Hyv\u00e4rinen et al., 2010; Runge et al., 2019b; Runge et al., 2019a; Sanchez-Romero et al., 2019).\n\n## State space reconstruction (SSR): intuition, pitfalls, and implementations\n\nThe term \u2018state space reconstruction\u2019 (SSR) refers to a broad swath of techniques for prediction, inference, and estimation in time series analysis (Casdagli et al., 1991; Kugiumtzis et al., 1994; Asefa et al., 2005; Sugihara et al., 2012; Cummins et al., 2015). In this article, when we use the term SSR, we refer only to SSR methods for causality detection. The SSR approach is especially popular in empirical ecology (Brookshire and Weaver, 2015; Cramer et al., 2017; Hannisdal et al., 2017; Matsuzaki et al., 2018; Wang et al., 2019). SSR methods are intended to complement Granger causality: Whereas Granger causality has trouble with deterministic dynamics (Figure 3B), the SSR approach is explicitly designed for systems that are primarily deterministic (Sugihara et al., 2012). Since SSR is less intuitive than correlation or Granger causality, we introduce it with an example rather than a definition.\n\n### Visualizing SSR causal discovery\n\nConsider the deterministic dynamical system in Figure 4. Here, $Z$ is causally driven by $X$ and $Y$, but not by $W$ or $V$. We can make a vector out of the current value $Z\u2062(t)$ and two past values $Z\u2062(t-\\tau)$ and $Z\u2062(t-2\u2062\\tau)$, where \u03c4 is the time delay and $[Z\u2062(t),Z\u2062(t-\\tau),Z\u2062(t-2\u2062\\tau)]$ is called a \u2018delay vector\u2019 (Figure 4B, red dots). The delay vector can be represented as a single point in the three-dimensional $Z$ \u2018delay space\u2019 (Figure 4C, red dot). We then shade each point of the trajectory in $Z$ delay space according to the contemporaneous value of $Y$, which causally influences $Z$. Since in this example each point of the trajectory in $Z$ delay space corresponds to one and only one $Y\u2062(t)$ value, we call this a \u2018delay map\u2019 from $Z$ to $Y$. Notice that the $Y\u2062(t)$ gradient in this plot looks gradual in the sense that if two points are nearby in the delay space of $Z$, then their corresponding $Y\u2062(t)$ shades are also similar. This property is called \u2018continuity\u2019 (Appendix 4\u2014figure 1). Overall, there is a continuous map from the $Z$ delay space to $Y$, or more concisely, a \u2018continuous delay map\u2019 from $Z$ to $Y$. A similar continuous delay map also exists from $Z$ to its other causer $X$. On the other hand, if we shade the delay space of $Z$ by $W$ or $V$ (neither of which causes $Z$), we do not get a continuous delay map (Figure 4D\u2013E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72518/elife-72518-fig4-v2.jpg)\n\n**Figure 4.:** (A) A toy 5-variable linear system. (B) Time series. The delay vector $[Z\u2062(t),Z\u2062(t-\\tau),Z\u2062(t-2\u2062\\tau)]$ (shown as three red dots) can be represented as a single point in the 3-dimensional $Z$ delay space (C, red dot). (C) We then shade each point of the $Z$ delay space trajectory by its corresponding contemporaneous value of $Y\u2062(t)$ (without measurement noise). The shading is continuous (with gradual transitions in shade), which the SSR approach interprets as indicating that $Y$ causes $Z$ (correctly in this case). (D) When we repeat this procedure, but now shade the $Z$ delay space trajectory by $W\u2062(t)$, the shading is bumpy, which the SSR approach correctly interprets to indicate that $W$ does not cause $Z$. (E) Shading the delay space trajectory of $Z$ by the causally unrelated $V$ also gives a bumpy result. (F) Dynamics as in (C), but now with noisy measurements of $Y$ (purple in B). The shading is no longer gradual. Thus with noisy data, inferring causal relationships becomes more difficult.\n\nIn this example, there is a continuous delay map from a causee to a causer, but not the other way around, and also no continuous delay map between causally unrelated variables. If this behavior reflects a broader principle, then perhaps continuous delay maps can be used to infer the presence and direction of causation. Is there in fact a broader principle?\n\nIn fact, there is a sort of broader principle, but it may not be fully satisfying for causality testing. The principle stems from a classic theorem due to Takens, 1980. A rough translation of Takens\u2019 theorem is the following: If a particle follows a deterministic trajectory which forms a surface (e.g. an ant crawling all over a doughnut), and if we take one-dimensional measurements of that particle\u2019s position over time (e.g. the distance from the ant\u2019s starting position), then we are almost guaranteed to find a continuous delay map from our measurements (of current distance) to the original surface (the donut), as long as we use enough delays. (We walk through visual examples of these ideas in detail in Appendix 4.) A key result that follows from this theorem is that we can typically (\u2018generically\u2019) expect to find continuous delay maps from \u2018dynamically driven\u2019 variables to \u2018dynamically driving\u2019 variables in a coupled deterministic dynamical system, as long as certain technical requirements are met (Cummins et al., 2015). Although the notion of \u2018dynamic driving\u2019 (Cummins et al., 2015) differs from our definition of causation, the two are related and we will still use the standard notion of causation when evaluating the performance of SSR methods. In theory, Takens\u2019 theorem says that almost any choice of delay vector should work as long as it contains enough delays. However in practice, with finite noisy data, the behavior of SSR methods can depend on the delay vector selection procedure (Cobey and Baskerville, 2016; see also Appendix 4). Overall, Takens\u2019 theorem and later results (Sauer et al., 1991; Cummins et al., 2015) form the theoretical basis of SSR techniques.\n\nSSR techniques attempt to detect a continuous delay map (or a related feature) between two variables and use this to infer the presence and direction of causation (Sugihara et al., 2012; Ma et al., 2014; Harnack et al., 2017): A continuous delay map from $Y$ to $X$ is taken as an indication that $X$ causes $Y$. The fact that the map points in the opposite direction as the expected causation is potentially counterintuitive. One informal explanation is that the delay vectors of the causee can contain a record of past influence from the causer (Sugihara et al., 2012). As a word of warning, while causation is one possible explanation for a continuous delay map, it is not the only possible explanation. Indeed, we now illustrate scenarios where a causal relationship and a continuous delay map do not coincide.\n\n### SSR failure modes\n\nFigure 5 illustrates four failure modes of SSR. In the first failure mode, which we refer to as \u2018nonreverting continuous dynamics\u2019 (top row of Figure 5; see also Appendix 4), a continuous map arises from the delay space of $X$ to $Z$ because a continuous map can be found from the delay space of $X$ to time (\u2018nonreverting $X$\u2019) and from time to $Z$ (\u2018continuous $Z$\u2019). This pathology leads to false causal conclusions and may explain apparently causal results in some early works where SSR methods were applied to data with a clear temporal trend. We are not aware of statistical tests for this problem, but Clark et al., 2015 recommend shading points in the delay space with their corresponding time to visually check for a time trend. In the second failure mode (Figure 5, second row; see also Sugihara et al., 2012), one variable drives another variable in such a way that the dynamics of the two variables are synchronized. Consequently, although the true causal relationship is unidirectional, bidirectional causality is inferred. Although the \u2018prediction lag test\u2019 (Figure 6B right panel) can sometimes alleviate this problem (Ye et al., 2015; Cobey and Baskerville, 2016), it is not foolproof as we demonstrate in Appendix 4. In the third failure mode (Figure 5 third row), $X$ and $Z$ both oscillate and $X$\u2019s period is an integer multiple of $Z$\u2019s period. In this case, $Z$ is inferred to cause $X$ even though they are causally unrelated (see also Cobey and Baskerville, 2016). In the fourth failure mode (Figure 5, bottom row), SSR gives a false negative error due to \u2018pathological symmetry\u2019, although this may be rare in practice.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72518/elife-72518-fig5-v2.jpg)\n\n**Figure 5.:** Top row: Nonreverting continuous dynamics may lead SSR to infer causality where there is none. This example consists of two time series: a wavy linear increase and a parabolic trajectory. Although they are causally unrelated, we can find continuous delay maps between them. This is because there is (i) a continuous map from the delay vector $[X\u2062(t),X\u2062(t-\\tau)]$ to $t$ ($X$ is \u2018nonreverting\u2019), and (ii) a continuous map from $t$ to $Z$ ($Z$ is \u2018continuous\u2019), and thus there is a continuous delay map from $X$ to $Z$ (\u2018nonreverting continuous dynamics\u2019; Appendix 4\u2014figure 3). Thus, one falsely infers that $Z$ causes $X$, and with similar reasoning that $X$ causes $Z$. Second row: $X$ drives $Z$ such that their dynamics are \u2018synchronized\u2019, and consequently, we find a continuous delay map also from $X$ to $Z$ even though $Z$ does not drive $X$. Note that the extent of synchronization is not always apparent from inspecting equations (e.g. Figure 12 of M\u00f8nster et al., 2017) or dynamics (row 5 of Appendix 4\u2014figure 5). Third row: $X$ oscillates at a period that is five times the oscillatory period of $Z$. There is a continuous delay map from $X$ to $Z$ even through $X$ and $Z$ are causally unrelated. Note that true causality sometimes also induces oscillations where the period of one variable is an integer multiple of the period of another (e.g. in Figure 4, the period of $Z$ is three times the period of $X$). Bottom row: In the classic chaotic Lorenz attractor, $X$ and $Z$ cause one another, but we do not see a continuous map from the delay space of $Z$ to $X$. This is because, as mentioned earlier, satisfying the conditions in Takens\u2019 theorem makes a continuous mapping likely but not guaranteed (Appendix 4). Here, $Z$ is an example of this lack of guarantee (Deyle and Sugihara, 2011) due to a symmetry in the system (see \u2018Background definitions for causation in dynamic systems\u2019 in the supplementary information of Sugihara et al., 2012).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72518/elife-72518-fig6-v2.jpg)\n\n**Figure 6.:** Illustration of the convergent cross mapping (CCM) procedure for testing whether $X$ causes $Y$.(A) Computing cross map skill. Consider the point $X\u2062(T)$ denoted by the red dot (\u201cactual $X\u2062(T)$\u201d in \u2460), which we want to predict from $Y$ delay vectors. We first look up the contemporaneous $Y$ delay vector $[Y\u2062(T),Y\u2062(T-1),Y\u2062(T-2)]$ (\u2461, red dynamics), and identify times within our training data when delay vectors of $Y$ were the most similar (i.e. least Euclidean distance) to our red delay vector (\u2462, blue segments). We then look up their contemporaneous values of $X$ (\u2463, blue crosses), and use their weighted average to predict $X\u2062(T)$ (\u2464, open magenta circle; weights are given as equations S2 and S3 in the supplement of Sugihara et al., 2012). We repeat this procedure for many choices of $T$ and calculate the Pearson correlation coefficient between the actual $X\u2062(T)$ and predicted $X\u2062(T)$ (\u2465). This correlation is called the \u201ccross map skill\u201d. While other measures of cross map skill, such as mean squared error, may also be used (Sugihara et al., 2012), here we follow the convention of Sugihara et al., 2012. (B) Four criteria for inferring causality from the cross map skill. Data points in (A) are marked by dots and connecting lines are visual aids.\n\n### Convergent cross mapping: detecting SSR causal signals from real data\n\nSSR causal discovery methods require testing for the existence of continuous delay maps between variables. However, testing for continuity in real data is complicated by noise and discrete sampling (Figure 4, compare panels C and F; see also Appendix 4\u2014figure 1).\n\nSeveral methods have been used to detect SSR causal signals by detecting approximate continuity (Cummins et al., 2015) or related properties (Sugihara et al., 2012; Ma et al., 2014; Harnack et al., 2017). The most popular is convergent cross mapping (CCM), which has been applied to nonlinear (Sugihara et al., 2012) or linear deterministic systems (Barraquand et al., 2020). CCM is based on a statistic called \u2018cross map skill\u2019 that quantifies how well a causer can be predicted from delay vectors of its causee (Figure 6A), conceptually similar to checking for gradual transitions when shading the causee delay space by causer values (Figure 4). Four criteria have been proposed to infer causality (Sugihara et al., 2012; Ye et al., 2015; Cobey and Baskerville, 2016; Figure 6B): First, the cross map skill must be positive. Second, the cross map skill must be significant according to some surrogate data test. Third, the cross map skill must increase with an increasing amount of training data. Lastly, the cross map skill must be greater when predicting past values of the causer than when predicting future values of the causer (the prediction lag test [Ye et al., 2015; Cobey and Baskerville, 2016] in the right panel of Figure 6B, but see Appendix 4 for caveats of this test). In practice, many if not most CCM analyses use only a subset of these four criteria (Sugihara et al., 2012; Brookshire and Weaver, 2015; Cramer et al., 2017; Wang et al., 2018). Other approaches to detect various aspects of continuous delay maps have also been proposed (Ma et al., 2014; Cummins et al., 2015; Harnack et al., 2017; Leng et al., 2020). We do not know of a systematic comparison of these alternatives.\n\n## Simulation examples: external drivers and noise jointly influence causal discovery performance\n\nIn this section, we examine how environmental drivers, process noise, and measurement noise can influence the performance of Granger causality and CCM, using computer simulations. We constructed a toy ecological system with a known causal structure, obtained its dynamics (with noise) through simulations, and applied a linear Granger causality test (using the MVGC package of Barnett and Seth, 2014) and CCM (using the R language package rEDM) to test how well we could infer causal relationships.\n\nWe simulated a two-species community in which one species (S1) causally influences the other species (S2) but S2 has no influence on S1 (Figure 7B). Additionally, S1 is causally influenced by an unobserved periodic external driver and S2 either is (Figure 7D) or is not (Figure 7E) causally influenced by its own (also unobserved) periodic external driver. In an ecosystem, external drivers might appear as changes in temperature, light, or water levels, for example. We also added process noise to model the stochastic nature of natural ecosystems and added measurement noise to model measurement uncertainty. Process noise propagates to future times and can result from, for instance, stochastic migration and death (Figure 7A). In contrast, measurement noise does not propagate over time, and includes instrument noise as well as ecological processes that occur during sampling. Since tests for CCM causality criteria have varied widely (Cobey and Baskerville, 2016; Chang et al., 2017; Barraquand et al., 2020), we tested for CCM criteria using two different procedures (Figure 7 legend and Appendix 5).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72518/elife-72518-fig7-v2.jpg)\n\n**Figure 7.:** (A) The effect of a time points\u2019s process noise, but not its measurement noise, propagates to subsequent time points. (B) We simulated a two-species community. The process noise terms $\u03f5_{p\u20621}\u2062(t)$ and $\u03f5_{p\u20622}\u2062(t)$, as well as the measurement noise terms $\u03f5_{m\u20621}\u2062(t)$ and $\u03f5_{m\u20622}\u2062(t)$, are IID normal random variables with a mean of zero and a standard deviation whose value we vary. (C) Five possible outcomes of the causal analysis. (D, E) Community dynamics and causal analysis outcomes. We varied the level (i.e. standard deviation) of process noise and measurement noise. For Granger causality, we used the MVGC package (Appendix 5). For convergent cross mapping, we used the rEDM package to calculate cross map skill and to construct surrogate data, and custom codes for other tasks (Appendix 5). Each pie chart shows the distribution of inference outcomes from 1,000 independent replicates. Note that the MVGC package does not necessarily flag data corrupted by a problematic level of measurement noise (Lusch et al., 2016). In both the main and alternative CCM procedures, criterion 1 (positive \u03c1) was checked directly and random phase surrogate data were used to test criterion 2 (significance of \u03c1). Criterion 4 (prediction lag test) was not used, because the test is difficult to interpret for periodic dynamics where cross map skill can oscillate as a function of prediction lag length (Appendix 4\u2014figure 5). The two procedures differ only in how they test criterion 3 (\u03c1 increases with more training data): the main procedure uses bootstrap testing following Cobey and Baskerville, 2016 while the alternative procedure uses a Kendall\u2019s \u03c4 as suggested by Chang et al., 2017.\n\nGranger causality and CCM can perform well when their respective requirements are met, but both are fairly sensitive to the levels of process and measurement noise (Figure 7D and E, correct inferences colored as green in pie charts) and to details of the ecosystem (whether or not S2 has its own external driver; compare Figure 7D and E). In both methods, detection of the true causal link is disrupted by either the strongest measurement noise (standard deviation of 1) or the strongest process noise (standard deviation of 8) used here.\n\nFor Granger causality (Figure 7D and E, left panels), the MVGC package correctly rejects the data as inappropriate in the deterministic setting (lower left corner). When process and/or measurement noise is present, their relative amount is important: As measurement noise increases (from bottom to top), process noise often needs to increase (from left to right) for Granger causality to perform well. Indeed, prior analytical results (Newbold, 1978; Nalatore et al., 2007) show that measurement noise can induce false positives (e.g. red slices in row 2, column 2) and hide true positives (e.g. grey slices in row 1). Surprisingly, increasing measurement noise can sometimes improve performance (in column 3 of both panels, row two has a larger green slice than row 3).\n\nTo understand the CCM results (Figure 7D and E, right panels), recall that CCM is designed for deterministic systems, and fails when dynamics of variables are synchronized. When S2 has its own external driver (Figure 7D), there is no synchrony, and CCM performs admirably in the deterministic setting (lower left corner). CCM performs less well when measurement or process noise is introduced. Strikingly, when we remove the external driver of S1 (Figure 7E), CCM performs poorly. This is likely because the two species are now synchronized in the absence of noise (violating the \u2018no synchrony\u2019 requirement of CCM). However, adding noise, which removes the synchrony problem, violates the determinism requirement. So CCM is frustrated either way. Note that unlike CCM, Granger causality is less sensitive to the presence of underlying synchrony as long as this synchrony is disrupted by process noise. Additionally, the performance of CCM (Figure 7D and E, right panels) is sensitive to the test procedure (olive brackets).\n\nIn reality, where a system lies in the spectrum of process versus measurement noise is often unknown, and we are not aware of any method that reliably distinguishes between process noise and measurement noise without knowing the functional form of the system. Furthermore, how might one tell if a time series is stochastic or deterministic so that one can choose between Granger causality versus CCM? One idea is that deterministic processes tend to be more predictable than stochastic processes, at least in the short term (Hastings et al., 1993). Indeed, the inventors of CCM have recommended checking whether historical values of a time series can be used to accurately predict future values (Sugihara and May, 1990) before applying CCM (i.e. Clark et al., 2015). However, practical time series found in nature are most likely somewhere between the extremes of \u2018fully deterministic\u2019 (i.e. no measurement or process noise) and \u2018fully stochastic\u2019 (i.e. IID). Time series are often partly deterministic due to autocorrelation and partly stochastic due to random fluctuations. Indeed, simulations have found that SSR-based and Granger causality-based methods can both potentially succeed for such systems (Barraquand et al., 2020). Future work is needed to flesh out the nuances of when and why methods from these two classes provide similar or different performance (Barraquand et al., 2020).\n\n## Summary: model-free causality tests are not assumption-free\n\nWe have described three causal discovery approaches for observational time series (Table 1). Although the techniques explored in this article have been called model-free and do not depend on prior mechanistic knowledge, they are by no means free from assumptions (Coenen et al., 2020). The danger that arises when we replace knowledge-based modeling with model-free inference is that we can replace explicitly stated assumptions with unstated and unscrutinized assumptions. Too frequently, both methodological and applied works fall into this trap. Nevertheless, when assumptions are clearly articulated and shown to be reasonable, model-free causal discovery techniques have the potential to jump-start the discovery process where little mechanistic information is known. Still, experimental follow-up (when possible) remains valuable since any technique that seeks to infer causality from observational measurements will typically require at least some assumptions that are difficult to fully verify.\n\n**Table 1.**\n A comparison of three statistical causal discovery approaches.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>What does it mean if the method detects a link?</th>\n      <th>Implied causal statement</th>\n      <th>What are some possible failure modes?</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Correlation</td>\n      <td>X and Y are statistically dependent.</td>\n      <td>X causes Y, Y causes X, or Z causes both.</td>\n      <td>Surrogate null model may make incorrect assumptions about the data-generating process.</td>\n    </tr>\n    <tr>\n      <td>Granger causality</td>\n      <td>The history of X contains unique information that is useful for predicting the future of Y.</td>\n      <td>X directly causes Y.</td>\n      <td>Hidden common cause; infrequent sampling; deterministic system (no process noise); excessive process noise; measurement noise</td>\n    </tr>\n    <tr>\n      <td>State space reconstruction</td>\n      <td>The delay space of X can be used to estimate Y.</td>\n      <td>Y causes X.</td>\n      <td>Nonreverting continuous dynamics; synchrony; integer multiple periods; pathological symmetry; measurement or process noise</td>\n    </tr>\n  </tbody>\n</table>\n\nWe have discussed several failure modes of various causal discovery approaches (Table 1). Among these failure modes, measurement noise and nonstationarity have been repeatedly singled out as crucial considerations for real data (Stokes and Purdon, 2017; Barnett et al., 2018; Munch et al., 2020). While the deleterious effect of excessive measurement noise is intuitive, the pernicious effect of nonstationarity is not always appreciated. This is perhaps because the stationarity requirement, although ubiquitous, is sometimes hidden in the analysis pipeline. For example, when testing whether cross map skill (or correlation) is significant, surrogate data tests are commonly used (e.g. Lancaster et al., 2018), and nearly all of them require stationary data. Granger causality tests also typically require data to be stationary.\n\nWhat comes next? We cannot cover all open fronts in data-driven causal discovery from time series, but do note a few directions that we think are important. First, given that practical ecological time series can rarely be shown to satisfy the assumptions of tests with mathematical exactness, we would benefit from a more complete understanding of how well tests for dependence and/or causality tolerate moderate deviations from assumptions. In a different direction, one may sometimes possess not a complete mathematical model, but instead some pieces of a model, such as the knowledge that nutrients influence the growth of organisms according to largely monotonic saturable functions. Techniques that attempt to make use of such partial models have recently obtained intriguing results (Daniels and Nemenman, 2015; Brunton et al., 2016; Mangan et al., 2016), and more would be welcome. Moreover, natural experiments often involve known external perturbations that are random or whose effects are poorly understood. An important question is how inference techniques might best take advantage of such perturbations (Eaton and Murphy, 2007; Rothenh\u00e4usler et al., 2015).\n\nPerhaps most importantly, how can method developers best communicate their assumptions and caveats to method users who are potentially unfamiliar with technical terms or concepts? One effective strategy is to provide simulation examples of how applying techniques to pathological data may give incorrect results (Clark et al., 2015; Brunton et al., 2016). Video walkthroughs (e.g. Video 1; Brunton et al., 2017; Xie and Shou, 2021) may be another useful way to communicate how a method works as well as method assumptions. Finally, we recommend that editors and reviewers work with authors to ensure that failure modes and caveats are clearly articulated in the main text, along with accessible explanations of any necessary technical terms or concepts.\n",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "68584a2d-a137-4ff5-96d1-85dee3a4d5c1",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C1",
+      "claim": "Complex systems are challenging to understand, especially when they defy manipulative experiments for practical or ethical reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex systems are challenging to understand, especially when they defy manipulative experiments for practical or ethical reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the challenges of studying complex systems, drawing on established scientific knowledge about experimental limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "f38db7c4-df3c-4f17-8dc5-9d162847c2da",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C2",
+      "claim": "Several fields have developed parallel approaches to infer causal relations from observational time series.",
+      "claim_type": "EXPLICIT",
+      "source": "Several fields have developed parallel approaches to infer causal relations from observational time series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the existence of the methods discussed in the manuscript and references to multiple fields.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "23f2000c-1abd-4310-8491-bd3a83e8448b",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C3",
+      "claim": "Statistical causal discovery methods are easy to misunderstand and often controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, these methods are easy to misunderstand and often controversial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript later provides citations to controversial exchanges in the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "f0eddfdc-c6f9-4876-a2e3-0678109b7978",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C4",
+      "claim": "Ecological communities perform important activities, from facilitating digestion in the human gut to driving biogeochemical cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecological communities perform important activities, from facilitating digestion in the human gut to driving biogeochemical cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws on established scientific knowledge about the roles of ecological communities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "e11e723b-27d1-499d-8e77-1f79241f41d3",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C5",
+      "claim": "Communities are often highly complex, with many species engaging in diverse interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Communities are often highly complex, with many species engaging in diverse interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established ecological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "cf82bd03-8fb9-4ce9-a15c-e5af9870ecb0",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C6",
+      "claim": "To control communities, it helps to know causal relationships between variables.",
+      "claim_type": "EXPLICIT",
+      "source": "To control communities, it helps to know causal relationships between variables (e.g. whether perturbing the abundance of one species might alter the abundance of another species).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the utility of causal knowledge for control.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "22578ce4-5c01-47c4-8d64-7f93225da284",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C7",
+      "claim": "Causal relationships can be expressed explicitly by proposing causal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We can express these relationships either explicitly by proposing causal networks (Spirtes and Zhang, 2016; Chattopadhyay et al., 2019; Glymour et al., 2019; Runge et al., 2019b; Runge et al., 2019a; Sanchez-Romero et al., 2019; Leng et al., 2020), or implicitly by simply predicting the effects of new perturbations (Daniels and Nemenman, 2015; Mangan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on causal networks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "09a71de5-3cd7-4cd8-9bcc-3c78acc3fd5e",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C8",
+      "claim": "Causal relationships can be expressed implicitly by predicting the effects of new perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "We can express these relationships either explicitly by proposing causal networks (Spirtes and Zhang, 2016; Chattopadhyay et al., 2019; Glymour et al., 2019; Runge et al., 2019b; Runge et al., 2019a; Sanchez-Romero et al., 2019; Leng et al., 2020), or implicitly by simply predicting the effects of new perturbations (Daniels and Nemenman, 2015; Mangan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on prediction-based approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "5abc9d67-4e04-4449-b35c-508d805a5ed8",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C9",
+      "claim": "Manipulative experiments can be infeasible or inappropriate for natural ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, manipulative experiments can be infeasible or inappropriate: Natural ecosystems may not offer enough replicates for comprehensive manipulative experiments, and perturbations can be impractical at large scales and may have unanticipated negative consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on practical knowledge about ecological research constraints.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "0a694879-3411-4cc6-8c2c-1a98c2020384",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C10",
+      "claim": "There exists an ever-growing abundance of observational time series.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, there exists an ever-growing abundance of observational time series (i.e. without intentional perturbations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about trends in data availability in science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "99c859f7-5022-4499-904f-c468a9d8c7d9",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C11",
+      "claim": "The Lotka-Volterra model assumes that species interact in a pairwise fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Lotka-Volterra model popular in mathematical ecology assumes that species interact in a pairwise fashion, that the fitness effects from different interactions are additive, and that all pairwise interactions can be represented by a single equation form where parameters can vary to reflect signs and strengths of fitness effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a well-known property of the Lotka-Volterra model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d28ce5c0-bbc9-4e00-981d-cd65abea81a3",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C12",
+      "claim": "The Lotka-Volterra model assumes that fitness effects from different interactions are additive.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Lotka-Volterra model popular in mathematical ecology assumes that species interact in a pairwise fashion, that the fitness effects from different interactions are additive, and that all pairwise interactions can be represented by a single equation form where parameters can vary to reflect signs and strengths of fitness effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a well-known property of the Lotka-Volterra model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "181c6f5b-3a77-48ab-897f-cbfdb1bd6fc4",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C13",
+      "claim": "Fitting the Lotka-Volterra model to time series can predict which species interact or how a community might respond to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting such a model to time series of species abundances and environmental factors, one can predict, for instance, which species interact or how a community might respond to certain perturbations (Stein et al., 2013; Fisher and Mehta, 2014; Bucci et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works that have applied this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "233f4394-69aa-45c7-ba7d-9a439d19bd38",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C14",
+      "claim": "The Lotka-Volterra equations often fail to describe complex ecosystems and chemically mediated interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Lotka-Volterra equations often fail to describe complex ecosystems and chemically mediated interactions (Levine, 1976; Wootton, 2002; Momeni et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works documenting these failures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "ec3512c5-259c-4a9f-bf00-e82387e1e1f0",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C15",
+      "claim": "Model-free methods typically rely on statistical models.",
+      "claim_type": "EXPLICIT",
+      "source": "Such methods are sometimes called 'model-free' (Coenen et al., 2020), although they typically rely on statistical models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of so-called model-free methods, with a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "813d8758-b1ae-4abc-b7ed-ef5ac56ff648",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C16",
+      "claim": "Some causal discovery methods examine 'information flow' between time series without using equation-based descriptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these methods avoid any equation-based description of the dynamics and instead examine some notion of 'information flow' between time series (Granger, 1980; Sugihara et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works using information flow concepts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "4e293559-01d7-4b7d-bd47-c4a340271d04",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C17",
+      "claim": "Some causal discovery methods deploy highly flexible equations that are not necessarily mechanistic.",
+      "claim_type": "EXPLICIT",
+      "source": "Others deploy highly flexible equations that are not necessarily mechanistic (Granger, 1969; Barnett and Seth, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works using flexible equation-based approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "2b9fbbcc-4a7c-424c-b545-d340c92800fb",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C18",
+      "claim": "Modern causal discovery approaches have intellectual roots in several communities including philosophy, statistics, econometrics, and chaos theory.",
+      "claim_type": "EXPLICIT",
+      "source": "First, modern causal discovery approaches have intellectual roots in several communities including philosophy, statistics, econometrics, and chaos theory, which sometimes use different words for the same idea, and the same word for different ideas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical observation about the development of causal discovery methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "0e436c1a-cf03-4a6b-8e63-f5e9061fa4fe",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C19",
+      "claim": "Different communities sometimes use different words for the same idea in causal discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "First, modern causal discovery approaches have intellectual roots in several communities including philosophy, statistics, econometrics, and chaos theory, which sometimes use different words for the same idea, and the same word for different ideas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about terminology differences across fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "a1628769-5fea-4eeb-8536-6bcbd341ec09",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C23",
+      "claim": "Key assumptions in methodological articles are sometimes hidden in algorithmic details or not mentioned.",
+      "claim_type": "EXPLICIT",
+      "source": "A second challenge is that in methodological articles, key assumptions are sometimes hidden in algorithmic details, or simply not mentioned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about methodological literature practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "9cee47a9-d9d8-43f2-8848-e9a94cc0dab9",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C24",
+      "claim": "Some causal discovery methods deal with nuanced or advanced mathematical ideas that can be difficult even for those with quantitative training.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, some methods deal with nuanced or advanced mathematical ideas that can be difficult even for those with quantitative training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the complexity of certain methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "68010145-b8de-427e-9b6d-bd26aa8d8182",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C25",
+      "claim": "Efforts to infer causal relationships from observational time series have sometimes been highly controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these challenges, it is no surprise that efforts to infer causal relationships from observational time series have sometimes been highly controversial, with an abundance of 'letters to the editor', sometimes followed by impassioned dialogue (Luo et al., 2015; Baskerville and Cobey, 2017; Tiokhin and Hruschka, 2017; Schaller et al., 2017; Barnett et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to controversial exchanges in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "2b376364-687c-433b-8e76-a1331cc4d33e",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C30",
+      "claim": "Whether a causer is direct or indirect can depend on the scope of included variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether a causer is direct or indirect can depend on the scope of included variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is illustrated with an example about yeast, acetate, and bacteria.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "1808803d-9c8a-474f-8656-d111ee33fce3",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C31",
+      "claim": "The term 'correlation' is often used to describe some statistic that quantifies the similarity between two observed time series.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to ecological time series, the term 'correlation' is often used to describe some statistic that quantifies the similarity between two observed time series (Weiss et al., 2016; Coenen and Weitz, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works using correlation in this way.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "3901be54-2529-4c38-a224-84bd4c8c7d9f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C32",
+      "claim": "Statistical dependence is a hypothesis about the probability distributions that produced time series and has close connections to causality.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, statistical dependence is a hypothesis about the probability distributions that produced those time series, and has close connections to causality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual distinction made by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "b462115a-949c-4ff9-bfd7-dcf47d5ac74a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C34",
+      "claim": "The Common Cause Principle states that if two variables are dependent, then they are causally related.",
+      "claim_type": "EXPLICIT",
+      "source": "Dependence is connected to causation by the widely accepted 'Common Cause Principle': if two variables are dependent, then they are causally related (i.e. one causes the other, or both share a common cause; Peters et al., 2017; Runge et al., 2019a; Hitchcock, 2020b; Hitchcock and R\u00e9dei, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on causal principles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "c67e26ae-8a1a-43c3-b71b-190690c7ff0b",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C35",
+      "claim": "If one mistakenly introduces selection bias, then two independent variables can appear to be dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Note however that if one mistakenly introduces selection bias, then two independent variables can appear to be dependent (Appendix 2\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Appendix 2\u2014figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "dcd7f05e-9e14-4580-927f-8aac65a05e0c",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C36",
+      "claim": "When conditional dependence and conditional independence relationships are known, it is sometimes possible to infer most or all of the direct causal relationships at play.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when conditional dependence (and conditional independence) relationships are known, it is sometimes possible to infer most or all of the direct causal relationships at play, even without manipulative experiments or temporal information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the power of conditional dependence analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "2e305d27-7345-4f83-b437-c05c3df349b5",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C37",
+      "claim": "Many algorithms for inferring causal structure rely on the causal Markov condition and the causal faithfulness condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the algorithms that accomplish this rely on two technical but often reasonable assumptions: the 'causal Markov condition', which allows one to infer causal information from conditional dependence, and the 'causal faithfulness condition', which allows one to infer causal information from conditional independence (Appendix 2; Peters et al., 2017; Glymour et al., 2019; Hitchcock, 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on causal discovery algorithms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d1abb647-9ae1-421a-b65a-a1b2cad1a007",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C38",
+      "claim": "Time series are often autocorrelated, so that a single pair of time series contains information from only a single trial.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because time series are often autocorrelated (e.g. what occurs today influences what occurs tomorrow), so that a single pair of time series contains information from only a single trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the statistical properties of time series.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "74755928-f91e-43c7-a2c1-b909f2b54dc6",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C41",
+      "claim": "Parametric tests using the Pearson correlation coefficient that account for autocorrelation rely on estimates of the autocorrelation at each lag for both time series, which can be highly uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the calculation of this variance relies on estimates of the autocorrelation at each lag for both time series, which can be highly uncertain (Pyper and Peterman, 1998; Ebisuzaki, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on autocorrelation estimation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "b8a8db65-1d5b-46b4-ac5e-1904855da800",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C43",
+      "claim": "If two time series are independent, surrogate data testing should register a p-value of 0.05 or less in only 5% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, if two time series are independent, then we should register a a p-value of 0.05 (or less) in only 5% of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the expected behavior of a valid statistical test.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "70055d5c-9816-421f-a53b-ccd398b35cb2",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C44",
+      "claim": "Permutation assumes that all possible orderings of the time points in a series are equally likely.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure, often called permutation, assumes that all possible orderings of the time points in the series are equally likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assumption underlying permutation testing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "78affd0a-14b2-46d5-a408-5d344ce40efd",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C45",
+      "claim": "The permutation assumption is commonly violated in time series due to autocorrelation, and thus the test is often invalid.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is commonly violated in time series due to autocorrelation, and thus the test is often invalid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the validity of permutation testing for autocorrelated data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "35794e9e-22f0-4b80-a365-d2b10cb77446",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C47",
+      "claim": "Permutation testing has appeared in many applied works, perhaps because it has been the default option in some popular software packages.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, permutation testing has appeared in many applied works, perhaps because it has been the default option in some popular software packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why permutation testing is commonly used despite its problems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "3eaab925-9d4c-40f5-b7b7-da19f9ab1e98",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C48",
+      "claim": "Phase randomization uses the Fourier transform to represent a time series as a sum of sine waves, then randomly shifts each component sine wave in time.",
+      "claim_type": "EXPLICIT",
+      "source": "It first uses the Fourier transform to represent a time series as a sum of sine waves, then randomly shifts each of the component sine waves in time, and finally sums the phase-shifted components (Ebisuzaki, 1997; Schreiber and Schmitz, 2000; Andrzejak et al., 2003; Appendix 3\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the phase randomization procedure with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "af12adb5-2564-4973-bab4-d3dc01a8e46a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C49",
+      "claim": "Phase randomization is considered appropriate when the original time series is obtained from a linear, Gaussian, and stationary process.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure is considered appropriate when the original time series is obtained from a linear, Gaussian, and stationary process (Andrzejak et al., 2003; Lancaster et al., 2018), where 'linear' means that future values depend linearly on past values, 'Gaussian' means that any subsequence follows a multivariate Gaussian distribution, and 'stationary' means that this distribution does not change over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on phase randomization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d39a7005-b677-4879-9fc4-1f3ca4a1cb10",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C50",
+      "claim": "Phase randomization performed well (with a false positive rate of 4%) when time series satisfied its assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this test performed well (with a false positive rate of 4%) when time series satisfied its assumptions (Figure 2C), and poorly when the stationarity assumption was violated (with a false positive rate of 21%; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "2c712e10-0b3c-4b01-892c-0a841d004370",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C51",
+      "claim": "Phase randomization performed poorly when the stationarity assumption was violated (with a false positive rate of 21%).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this test performed well (with a false positive rate of 4%) when time series satisfied its assumptions (Figure 2C), and poorly when the stationarity assumption was violated (with a false positive rate of 21%; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "249d4044-6dbc-4b23-8147-8f53d6811d8a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C52",
+      "claim": "Some surrogate data tests have been shown to perform reasonably well even when the exact theoretical requirements are unmet or unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Some surrogate data tests have been shown to perform reasonably well even when the exact theoretical requirements are unmet or unknown (Thiel et al., 2006; Papana et al., 2017), but a more comprehensive benchmarking effort is needed to map out each method's valid domain in practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on surrogate data testing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "0727cce3-6c4b-4abd-967a-dc8f3e65b90b",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C53",
+      "claim": "A more comprehensive benchmarking effort is needed to map out each surrogate data method's valid domain in practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Some surrogate data tests have been shown to perform reasonably well even when the exact theoretical requirements are unmet or unknown (Thiel et al., 2006; Papana et al., 2017), but a more comprehensive benchmarking effort is needed to map out each method's valid domain in practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d8ecccf3-f972-43bd-b3c5-2ab464132f5d",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C55",
+      "claim": "Granger causality excludes indirect causes.",
+      "claim_type": "EXPLICIT",
+      "source": "An important consequence of this definition is that Granger causality excludes indirect causes, as illustrated in Figure 3A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "69d5d4be-07b2-475e-b72a-4dc18ebdaf9a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C56",
+      "claim": "Whether a causal relationship is direct or indirect depends on which variables are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, whether a causal relationship is direct or indirect depends on which variables are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual point about the relativity of direct causation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "a354be95-ac6b-4fa0-9455-a0ae349dcb29",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C57",
+      "claim": "If a system has deterministic dynamics, then Granger causality may fail to detect causal relations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, if a system has deterministic dynamics (see Appendix 3), then Granger causality may fail to detect causal relations (Figure 3Bi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3Bi.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "17695a78-2dea-4599-989a-f1fcfa81ef13",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C59",
+      "claim": "Granger causality may erroneously assign a direct causal relation between a pair of variables that have an unobserved common cause.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Granger causality may erroneously assign a direct causal relation between a pair of variables that have an unobserved common cause (Figure 3Bii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3Bii.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "7d79d48d-9eec-4753-b9ae-22163f21bf5f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C60",
+      "claim": "Recording data at a frequency below that of the original process can alter the inferred causal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, recording data at a frequency below that of the original process by 'subsampling' (e.g. taking weekly measurements of a daily process) or by 'temporal aggregation' (e.g. taking weekly averages of a daily process) can alter the inferred causal structure (Figure 3Biii), although recent techniques can help with these issues (Gong et al., 2015; Hyttinen et al., 2016; Gong et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3Biii and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "fd97769e-9827-495e-bf6b-f723cef15802",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C61",
+      "claim": "When measurements are noisy, Granger causality can assign false interactions and also fail to detect true causality.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, when measurements are noisy (Figure 3Biv), Granger causality can assign false interactions and also fail to detect true causality (Newbold, 1978), although some progress has been made on this front (Nalatore et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 3Biv and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "7174552d-d7ae-436d-b95a-0b69237cfe90",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C62",
+      "claim": "Linear Granger causality has standard parametric tests available in multiple free and well-documented software packages.",
+      "claim_type": "EXPLICIT",
+      "source": "Parametric tests are computationally inexpensive and available in multiple free and well-documented software packages (Seabold and Perktold, 2010; Barnett and Seth, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to software packages.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "4aa85aa9-9856-420a-9759-6d16c422cb25",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C63",
+      "claim": "Linear Granger causality tests assume that time series are covariance-stationary.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests assume that time series are 'covariance-stationary', which means that certain statistical properties of the series are time-independent (Barnett and Seth, 2014; see also Appendix 3), and can fail when this assumption is violated (Toda and Phillips, 1993; Ohanian, 1988; He and Maekawa, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on stationarity requirements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "1319c253-4561-48d2-a89c-50169aadaaaf",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C64",
+      "claim": "Linear Granger causality tests can fail when the covariance-stationarity assumption is violated.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests assume that time series are 'covariance-stationary', which means that certain statistical properties of the series are time-independent (Barnett and Seth, 2014; see also Appendix 3), and can fail when this assumption is violated (Toda and Phillips, 1993; Ohanian, 1988; He and Maekawa, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works documenting these failures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "b342efed-ae40-4628-928b-dc97c08db07f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C65",
+      "claim": "Applying linear Granger causality to nonlinear systems can lead to incorrect causal conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, applying linear Granger causality to nonlinear systems can lead to incorrect causal conclusions (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to work on this issue.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "74ec1ece-1c0e-4b10-a5a4-063daa4ccb6d",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C67",
+      "claim": "Tests for general Granger causality often use a statistic known as transfer entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Tests for general Granger causality often use a statistic known as transfer entropy (Papana et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to work on transfer entropy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "0d826586-bbfe-42cb-a1cb-d12069cab5f8",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C69",
+      "claim": "A significant transfer entropy indicates the presence of general Granger causality.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant transfer entropy thus indicates the presence of general Granger causality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the interpretation of transfer entropy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "263d0fa0-f3b9-4113-85c6-89e19e0fa0bc",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C70",
+      "claim": "Surrogate data are typically used to evaluate significance of transfer entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Surrogate data are typically used to evaluate significance (Montalto et al., 2014; Papana et al., 2017; Shorten et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on transfer entropy testing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "29b2ec68-f5c9-4910-b1e9-ff01e71fdfd0",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C71",
+      "claim": "Previously discussed surrogate data procedures are designed to test the null hypothesis of independence, which is different from the null hypothesis of general Granger non-causality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the previously discussed surrogate data procedures are designed to test the null hypothesis of independence, which is different from the null hypothesis of general Granger non-causality (i.e. Equation 2, but replace '\u2260' with '=').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the mismatch between null hypotheses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "be7c7174-e31b-45a5-bcfe-d57402e90d88",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C72",
+      "claim": "More recent surrogate procedures have been proposed to address the issue of testing for general Granger non-causality.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent surrogate procedures have been proposed to address this issue (Runge, 2018a; Shorten et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d251fc55-c013-4848-801f-770e76e511a0",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C73",
+      "claim": "When datasets have a large number of variables, a regression procedure may fail to detect many true interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Granger causality methods face challenges when datasets have a large number of variables (e.g. in microbial ecology). In this case, the summation in Equation 1 will contain a large number of terms, and so a regression procedure may fail to detect many true interactions (Runge et al., 2019a; Runge et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on high-dimensional causal discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "4ef6eca1-513d-44c2-992e-6310a0e6006a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C74",
+      "claim": "To handle systems with many variables, one can impose the assumption that only a small number of causal links exist.",
+      "claim_type": "EXPLICIT",
+      "source": "To handle systems with many variables, one can impose the assumption that only a small number of causal links exist (Gibbons et al., 2017; Mainali et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on sparse regression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "755acdc3-a68c-4e67-a96c-548cac435f20",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C75",
+      "claim": "Under certain technical assumptions, it is possible to use a series of logical rules to remove unnecessary terms in a purely data-driven way.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, under certain technical assumptions, it is possible to use a series of logical rules to remove unnecessary terms in a purely data-driven way (Runge et al., 2019b; Runge et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works on constraint-based causal discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "5fce4210-ca5b-48e3-8a97-aa2a1f5f30c9",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C76",
+      "claim": "SSR methods are intended to complement Granger causality by being explicitly designed for systems that are primarily deterministic.",
+      "claim_type": "EXPLICIT",
+      "source": "SSR methods are intended to complement Granger causality: Whereas Granger causality has trouble with deterministic dynamics (Figure 3B), the SSR approach is explicitly designed for systems that are primarily deterministic (Sugihara et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to work on SSR methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "10c39e90-bfdf-478b-abaa-c25aa57c21c3",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C77",
+      "claim": "Takens' theorem states that if a particle follows a deterministic trajectory which forms a surface, and if we take one-dimensional measurements of that particle's position over time, then we are almost guaranteed to find a continuous delay map from our measurements to the original surface, as long as we use enough delays.",
+      "claim_type": "EXPLICIT",
+      "source": "A rough translation of Takens' theorem is the following: If a particle follows a deterministic trajectory which forms a surface (e.g. an ant crawling all over a doughnut), and if we take one-dimensional measurements of that particle's position over time (e.g. the distance from the ant's starting position), then we are almost guaranteed to find a continuous delay map from our measurements (of current distance) to the original surface (the donut), as long as we use enough delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a simplified explanation of Takens' theorem.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "147f3776-cfed-4e39-8273-d67e1475f2a2",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C78",
+      "claim": "We can typically expect to find continuous delay maps from dynamically driven variables to dynamically driving variables in a coupled deterministic dynamical system, as long as certain technical requirements are met.",
+      "claim_type": "EXPLICIT",
+      "source": "A key result that follows from this theorem is that we can typically ('generically') expect to find continuous delay maps from 'dynamically driven' variables to 'dynamically driving' variables in a coupled deterministic dynamical system, as long as certain technical requirements are met (Cummins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to work on SSR theory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "e64f7fab-3822-4a86-9c23-f0ee936add36",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C79",
+      "claim": "In theory, Takens' theorem says that almost any choice of delay vector should work as long as it contains enough delays.",
+      "claim_type": "EXPLICIT",
+      "source": "In theory, Takens' theorem says that almost any choice of delay vector should work as long as it contains enough delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the theoretical implications of Takens' theorem.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "904cb067-6d2b-4cd5-8d39-c01e1b23033f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C80",
+      "claim": "In practice, with finite noisy data, the behavior of SSR methods can depend on the delay vector selection procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "However in practice, with finite noisy data, the behavior of SSR methods can depend on the delay vector selection procedure (Cobey and Baskerville, 2016; see also Appendix 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to work on SSR method sensitivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "9ac3d572-8890-476e-9d72-2a12d14024c7",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C83",
+      "claim": "While causation is one possible explanation for a continuous delay map, it is not the only possible explanation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a word of warning, while causation is one possible explanation for a continuous delay map, it is not the only possible explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about interpreting continuous delay maps.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "5691212e-70ad-4f02-a15c-b9d319ae7d0d",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C85",
+      "claim": "The nonreverting continuous dynamics pathology may explain apparently causal results in some early works where SSR methods were applied to data with a clear temporal trend.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathology leads to false causal conclusions and may explain apparently causal results in some early works where SSR methods were applied to data with a clear temporal trend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the cause of false positives in early SSR applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "53bc3917-921a-4120-a711-88f0634297a0",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C86",
+      "claim": "Clark et al., 2015 recommend shading points in the delay space with their corresponding time to visually check for a time trend.",
+      "claim_type": "EXPLICIT",
+      "source": "We are not aware of statistical tests for this problem, but Clark et al., 2015 recommend shading points in the delay space with their corresponding time to visually check for a time trend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recommendation in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "3803945c-7971-4ba9-82cf-0aa5698afeb2",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C87",
+      "claim": "When one variable drives another variable in such a way that the dynamics of the two variables are synchronized, bidirectional causality is inferred even though the true causal relationship is unidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second failure mode (Figure 5, second row; see also Sugihara et al., 2012), one variable drives another variable in such a way that the dynamics of the two variables are synchronized. Consequently, although the true causal relationship is unidirectional, bidirectional causality is inferred.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 5 second row and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "3ff96f96-0c97-4204-b9a1-b1cb22b0570a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C88",
+      "claim": "The prediction lag test can sometimes alleviate the synchrony problem, but it is not foolproof.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the 'prediction lag test' (Figure 6B right panel) can sometimes alleviate this problem (Ye et al., 2015; Cobey and Baskerville, 2016), it is not foolproof as we demonstrate in Appendix 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and demonstrated in Appendix 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "36b0ddaa-4495-415c-8074-79c2543ef2d4",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C90",
+      "claim": "SSR can give a false negative error due to pathological symmetry, although this may be rare in practice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fourth failure mode (Figure 5, bottom row), SSR gives a false negative error due to 'pathological symmetry', although this may be rare in practice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 5 bottom row.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "dc5ae7af-6cd9-444e-a46a-59fd56502c49",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C91",
+      "claim": "Convergent cross mapping (CCM) is the most popular SSR method for detecting causal signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Several methods have been used to detect SSR causal signals by detecting approximate continuity (Cummins et al., 2015) or related properties (Sugihara et al., 2012; Ma et al., 2014; Harnack et al., 2017). The most popular is convergent cross mapping (CCM), which has been applied to nonlinear (Sugihara et al., 2012) or linear deterministic systems (Barraquand et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works using CCM.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "a142763e-b38e-4f5b-a2f2-63cfcc142756",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C92",
+      "claim": "CCM is based on a statistic called cross map skill that quantifies how well a causer can be predicted from delay vectors of its causee.",
+      "claim_type": "EXPLICIT",
+      "source": "CCM is based on a statistic called 'cross map skill' that quantifies how well a causer can be predicted from delay vectors of its causee (Figure 6A), conceptually similar to checking for gradual transitions when shading the causee delay space by causer values (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 6A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "7b2b74f4-fe6b-4d67-8bf1-8a2961129835",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C93",
+      "claim": "Four criteria have been proposed to infer causality from CCM: positive cross map skill, significant cross map skill, increasing cross map skill with more training data, and greater cross map skill when predicting past values than future values.",
+      "claim_type": "EXPLICIT",
+      "source": "Four criteria have been proposed to infer causality (Sugihara et al., 2012; Ye et al., 2015; Cobey and Baskerville, 2016; Figure 6B): First, the cross map skill must be positive. Second, the cross map skill must be significant according to some surrogate data test. Third, the cross map skill must increase with an increasing amount of training data. Lastly, the cross map skill must be greater when predicting past values of the causer than when predicting future values of the causer (the prediction lag test [Ye et al., 2015; Cobey and Baskerville, 2016] in the right panel of Figure 6B, but see Appendix 4 for caveats of this test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 6B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "62033941-25fd-4e5a-b2c0-ea75c3d6effd",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C94",
+      "claim": "Many CCM analyses use only a subset of the four criteria for inferring causality.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, many if not most CCM analyses use only a subset of these four criteria (Sugihara et al., 2012; Brookshire and Weaver, 2015; Cramer et al., 2017; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to applied works.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "7c86e684-cf6c-44b4-a86b-9b459186bb78",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C95",
+      "claim": "Other approaches to detect various aspects of continuous delay maps have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Other approaches to detect various aspects of continuous delay maps have also been proposed (Ma et al., 2014; Cummins et al., 2015; Harnack et al., 2017; Leng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to alternative methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "768ae132-57aa-4f1c-9243-7ae4762fc5c6",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C96",
+      "claim": "There is no systematic comparison of alternative SSR methods for detecting continuous delay maps.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not know of a systematic comparison of these alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of comparative studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "40def51f-a0d1-426d-8627-34d41f90f8cc",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C97",
+      "claim": "Granger causality and CCM can perform well when their respective requirements are met.",
+      "claim_type": "EXPLICIT",
+      "source": "Granger causality and CCM can perform well when their respective requirements are met, but both are fairly sensitive to the levels of process and measurement noise (Figure 7D and E, correct inferences colored as green in pie charts) and to details of the ecosystem (whether or not S2 has its own external driver; compare Figure 7D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "467edba5-58f6-4b6c-a919-1b88f0a9dcf2",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C98",
+      "claim": "Both Granger causality and CCM are fairly sensitive to the levels of process and measurement noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Granger causality and CCM can perform well when their respective requirements are met, but both are fairly sensitive to the levels of process and measurement noise (Figure 7D and E, correct inferences colored as green in pie charts) and to details of the ecosystem (whether or not S2 has its own external driver; compare Figure 7D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "fa6b8a3a-7a6e-4895-9e14-312718e10836",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C99",
+      "claim": "In both Granger causality and CCM, detection of the true causal link is disrupted by either the strongest measurement noise or the strongest process noise used in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In both methods, detection of the true causal link is disrupted by either the strongest measurement noise (standard deviation of 1) or the strongest process noise (standard deviation of 8) used here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "5aa03735-4cf6-41b2-b99e-425b5e200860",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C100",
+      "claim": "For Granger causality, as measurement noise increases, process noise often needs to increase for Granger causality to perform well.",
+      "claim_type": "EXPLICIT",
+      "source": "When process and/or measurement noise is present, their relative amount is important: As measurement noise increases (from bottom to top), process noise often needs to increase (from left to right) for Granger causality to perform well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "e4b041c1-a704-4c5f-9caa-946bfff258c8",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C101",
+      "claim": "Measurement noise can induce false positives in Granger causality.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, prior analytical results (Newbold, 1978; Nalatore et al., 2007) show that measurement noise can induce false positives (e.g. red slices in row 2, column 2) and hide true positives (e.g. grey slices in row 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 7.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "b50ca4d6-d9c3-4ef3-b352-387bcf87986d",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C102",
+      "claim": "Measurement noise can hide true positives in Granger causality.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, prior analytical results (Newbold, 1978; Nalatore et al., 2007) show that measurement noise can induce false positives (e.g. red slices in row 2, column 2) and hide true positives (e.g. grey slices in row 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 7.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "38b70028-9411-4245-9ba4-f38b0c28598f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C103",
+      "claim": "Increasing measurement noise can sometimes improve Granger causality performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, increasing measurement noise can sometimes improve performance (in column 3 of both panels, row two has a larger green slice than row 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "77dc35e7-97d0-4972-8248-62f8b4803fee",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C104",
+      "claim": "When S2 has its own external driver, there is no synchrony, and CCM performs admirably in the deterministic setting.",
+      "claim_type": "EXPLICIT",
+      "source": "When S2 has its own external driver (Figure 7D), there is no synchrony, and CCM performs admirably in the deterministic setting (lower left corner).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulation results shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "43c3195a-6951-46f4-be9d-fc78e879560f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C105",
+      "claim": "CCM performs less well when measurement or process noise is introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "CCM performs less well when measurement or process noise is introduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "dd95ac26-ab5c-40d7-8d1c-8a5d9dacbb13",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C106",
+      "claim": "When the external driver of S1 is removed, CCM performs poorly, likely because the two species are now synchronized in the absence of noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when we remove the external driver of S1 (Figure 7E), CCM performs poorly. This is likely because the two species are now synchronized in the absence of noise (violating the 'no synchrony' requirement of CCM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulation results shown in Figure 7E and inference about the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "de8e61b9-bf0d-4d98-b3de-b5f4be067797",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C107",
+      "claim": "Adding noise to a synchronized system removes the synchrony problem but violates the determinism requirement of CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, adding noise, which removes the synchrony problem, violates the determinism requirement. So CCM is frustrated either way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the trade-off between CCM requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "fcaf8cb8-1ad5-445c-b162-9a4892dffc39",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C108",
+      "claim": "Unlike CCM, Granger causality is less sensitive to the presence of underlying synchrony as long as this synchrony is disrupted by process noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that unlike CCM, Granger causality is less sensitive to the presence of underlying synchrony as long as this synchrony is disrupted by process noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d469d41c-f761-4e7a-868e-434f7f8b7569",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C109",
+      "claim": "The performance of CCM is sensitive to the test procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the performance of CCM (Figure 7D and E, right panels) is sensitive to the test procedure (olive brackets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "071525ad-01b9-4338-ae71-bcc9272a179c",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C110",
+      "claim": "Where a system lies in the spectrum of process versus measurement noise is often unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, where a system lies in the spectrum of process versus measurement noise is often unknown, and we are not aware of any method that reliably distinguishes between process noise and measurement noise without knowing the functional form of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about practical limitations in distinguishing noise types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "2e75061b-f316-4726-ae06-083ae7e3db8b",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C111",
+      "claim": "There is no known method that reliably distinguishes between process noise and measurement noise without knowing the functional form of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, where a system lies in the spectrum of process versus measurement noise is often unknown, and we are not aware of any method that reliably distinguishes between process noise and measurement noise without knowing the functional form of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of methods for noise type identification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "3eccaf65-1f7e-451e-911b-4b5e48fc58e3",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C112",
+      "claim": "Deterministic processes tend to be more predictable than stochastic processes, at least in the short term.",
+      "claim_type": "EXPLICIT",
+      "source": "One idea is that deterministic processes tend to be more predictable than stochastic processes, at least in the short term (Hastings et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to work on predictability.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "882c0b12-b3fc-429a-87cd-c6f8a02af13a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C113",
+      "claim": "The inventors of CCM have recommended checking whether historical values of a time series can be used to accurately predict future values before applying CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the inventors of CCM have recommended checking whether historical values of a time series can be used to accurately predict future values (Sugihara and May, 1990) before applying CCM (i.e. Clark et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recommendations in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "ec5fca91-e401-47ad-bac9-cbccc9f4b18b",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C114",
+      "claim": "Practical time series found in nature are most likely somewhere between the extremes of fully deterministic and fully stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, practical time series found in nature are most likely somewhere between the extremes of 'fully deterministic' (i.e. no measurement or process noise) and 'fully stochastic' (i.e. IID).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of real-world time series.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "e631beb0-966f-4209-9817-fecba7544d0c",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C115",
+      "claim": "Time series are often partly deterministic due to autocorrelation and partly stochastic due to random fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Time series are often partly deterministic due to autocorrelation and partly stochastic due to random fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of real-world time series.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "5a686690-d83b-4918-bed5-d4d042919708",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C116",
+      "claim": "Simulations have found that SSR-based and Granger causality-based methods can both potentially succeed for systems that are partly deterministic and partly stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, simulations have found that SSR-based and Granger causality-based methods can both potentially succeed for such systems (Barraquand et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to simulation work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d19dcfa2-5678-446c-a3c3-c9fa2573eba1",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C117",
+      "claim": "Future work is needed to flesh out the nuances of when and why SSR-based and Granger causality-based methods provide similar or different performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work is needed to flesh out the nuances of when and why methods from these two classes provide similar or different performance (Barraquand et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "260a1d54-7240-4241-b276-5998f89b22e3",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C118",
+      "claim": "Model-free causal discovery techniques do not depend on prior mechanistic knowledge but are not free from assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the techniques explored in this article have been called model-free and do not depend on prior mechanistic knowledge, they are by no means free from assumptions (Coenen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and is a key message of the manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "ae7cdc80-0781-4180-96d2-59580e6dd7d6",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C119",
+      "claim": "The danger of model-free inference is that we can replace explicitly stated assumptions with unstated and unscrutinized assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "The danger that arises when we replace knowledge-based modeling with model-free inference is that we can replace explicitly stated assumptions with unstated and unscrutinized assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about the use of model-free methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "238f1332-03be-4c86-861e-3118877f3697",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C120",
+      "claim": "Both methodological and applied works too frequently fall into the trap of not stating assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Too frequently, both methodological and applied works fall into this trap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical observation about the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "98aee0b5-c9be-4b43-8ea1-5b2c36eef589",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C121",
+      "claim": "When assumptions are clearly articulated and shown to be reasonable, model-free causal discovery techniques have the potential to jump-start the discovery process where little mechanistic information is known.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, when assumptions are clearly articulated and shown to be reasonable, model-free causal discovery techniques have the potential to jump-start the discovery process where little mechanistic information is known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential value of model-free methods when used appropriately.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "823139e8-8aaf-46d1-8310-2bec951ab1b8",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C122",
+      "claim": "Experimental follow-up remains valuable since any technique that seeks to infer causality from observational measurements will typically require at least some assumptions that are difficult to fully verify.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, experimental follow-up (when possible) remains valuable since any technique that seeks to infer causality from observational measurements will typically require at least some assumptions that are difficult to fully verify.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of observational causal inference.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "92f4fa94-7350-4b31-94d3-f9c468f9677f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C123",
+      "claim": "Measurement noise and nonstationarity have been repeatedly singled out as crucial considerations for real data.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these failure modes, measurement noise and nonstationarity have been repeatedly singled out as crucial considerations for real data (Stokes and Purdon, 2017; Barnett et al., 2018; Munch et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works emphasizing these issues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "c374f6d8-2995-42c4-9b51-15e39f27ebaf",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C124",
+      "claim": "The pernicious effect of nonstationarity is not always appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "While the deleterious effect of excessive measurement noise is intuitive, the pernicious effect of nonstationarity is not always appreciated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about awareness of nonstationarity issues.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "0d4a4d3a-00b6-4df6-bbd0-70843575b130",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C125",
+      "claim": "The stationarity requirement is sometimes hidden in the analysis pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "This is perhaps because the stationarity requirement, although ubiquitous, is sometimes hidden in the analysis pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about how stationarity requirements are often not made explicit.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "9d607aa4-bb78-4608-bb6a-394a5eac3571",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C126",
+      "claim": "When testing whether cross map skill or correlation is significant, surrogate data tests are commonly used, and nearly all of them require stationary data.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when testing whether cross map skill (or correlation) is significant, surrogate data tests are commonly used (e.g. Lancaster et al., 2018), and nearly all of them require stationary data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to work on surrogate data tests.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "b95a6c7e-7b90-4913-84c2-291ec2b5a780",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C127",
+      "claim": "Granger causality tests typically require data to be stationary.",
+      "claim_type": "EXPLICIT",
+      "source": "Granger causality tests also typically require data to be stationary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about requirements of Granger causality tests.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "9c57173c-5d32-4e9c-b4df-ee94ab3517ce",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C128",
+      "claim": "We would benefit from a more complete understanding of how well tests for dependence and/or causality tolerate moderate deviations from assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, given that practical ecological time series can rarely be shown to satisfy the assumptions of tests with mathematical exactness, we would benefit from a more complete understanding of how well tests for dependence and/or causality tolerate moderate deviations from assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research on robustness.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "98dc0a37-1f0e-40be-b3e7-b5fcc2e6e837",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C129",
+      "claim": "Techniques that attempt to make use of partial models have recently obtained intriguing results.",
+      "claim_type": "EXPLICIT",
+      "source": "Techniques that attempt to make use of such partial models have recently obtained intriguing results (Daniels and Nemenman, 2015; Brunton et al., 2016; Mangan et al., 2016), and more would be welcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "8ff9bac6-ee86-4cb0-944f-156a135f4148",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C130",
+      "claim": "An important question is how inference techniques might best take advantage of known external perturbations that are random or whose effects are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, natural experiments often involve known external perturbations that are random or whose effects are poorly understood. An important question is how inference techniques might best take advantage of such perturbations (Eaton and Murphy, 2007; Rothenh\u00e4usler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and is a statement about future research directions.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "2daef3c7-f9ae-46a7-90a1-9d5bc5ea45bb",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C131",
+      "claim": "One effective strategy for communicating assumptions and caveats is to provide simulation examples of how applying techniques to pathological data may give incorrect results.",
+      "claim_type": "EXPLICIT",
+      "source": "One effective strategy is to provide simulation examples of how applying techniques to pathological data may give incorrect results (Clark et al., 2015; Brunton et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to works using this strategy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "737bf101-6b96-4694-a286-bd45ca39b3b4",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C132",
+      "claim": "Video walkthroughs may be a useful way to communicate how a method works as well as method assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Video walkthroughs (e.g. Video 1; Brunton et al., 2017; Xie and Shou, 2021) may be another useful way to communicate how a method works as well as method assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to video walkthroughs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "ed8353bd-82f9-4c43-b680-0f7b312f455a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "claim_id": "C133",
+      "claim": "The authors recommend that editors and reviewers work with authors to ensure that failure modes and caveats are clearly articulated in the main text.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we recommend that editors and reviewers work with authors to ensure that failure modes and caveats are clearly articulated in the main text, along with accessible explanations of any necessary technical terms or concepts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation from the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9bf7331c-ceec-4b3d-8f41-71372a138942",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Permutation-based surrogate data testing for time series dependence is often invalid due to autocorrelation, while phase randomization performs well when assumptions are met but fails when stationarity is violated. Simulations show phase randomization had 4% false positive rate under appropriate conditions but 21% when stationarity was violated, while permutation had 30-92% false positive rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 correctly identify the key assumption and violation of permutation testing. Claims C50-C51 provide quantitative simulation evidence from Figure 2 showing the differential performance of phase randomization under different conditions. The empirical results directly support the theoretical concerns raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "797ff761-7aa1-4565-86cb-26431ca88e1a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Granger causality has four major failure modes: it fails to detect causality in deterministic systems, erroneously assigns causality when unobserved common causes exist, is disrupted by infrequent sampling, and produces both false positives and false negatives in the presence of measurement noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These failure modes are illustrated in Figure 3B and supported by citations to prior theoretical and empirical work (C61 cites Newbold 1978, Nalatore et al. 2007). The claims are conceptually sound and represent well-established limitations in the causal inference literature. Each failure mode is clearly illustrated with examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "6478ff01-6cd7-4eed-bbff-292bc3c050bf",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "State space reconstruction (SSR) methods are designed for deterministic systems and rely on Takens' theorem, which guarantees continuous delay maps from driven to driving variables under certain conditions. However, practical performance depends on delay vector selection with finite noisy data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 accurately describe the theoretical foundation of SSR methods with appropriate citations (Sugihara et al. 2012, Cummins et al. 2015, Takens 1980). Claims C79-C80 appropriately distinguish between theoretical guarantees and practical limitations, with C80 citing empirical evidence (Cobey and Baskerville 2016). The explanation is conceptually accurate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "29d5b69a-8257-43e2-b6fa-ae225a31362f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SSR methods have four major failure modes: nonreverting continuous dynamics (false positives from temporal trends), synchrony (bidirectional inference from unidirectional causation), integer multiple periods (false positives), and pathological symmetry (false negatives). The prediction lag test can sometimes address synchrony but is not foolproof.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These failure modes are illustrated in Figure 5 with clear visual examples. Claims C85-C86 acknowledge limitations (speculation about early works, lack of statistical tests) appropriately. Claim C88 is supported by citations and demonstration in Appendix 4. The failure modes represent important contributions to understanding SSR limitations, though some (C90) are noted as potentially rare.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulation studies demonstrate that both Granger causality and CCM perform well under appropriate conditions but are sensitive to process and measurement noise levels. Performance depends on the relative amounts of noise types and system details like external drivers. CCM is particularly challenged by synchrony, while Granger causality is less sensitive to synchrony when disrupted by process noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are directly supported by simulation results in Figure 7, which systematically varies noise levels and system configurations. The quantitative results (false positive rates, performance patterns) are clearly presented in pie charts. Claims C100-C103 describe specific patterns in the data with appropriate citations to prior analytical work. The simulations are well-designed to test the theoretical predictions, though limited to specific model systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "0490f265-3650-4e3c-a579-57b41c513ffc",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Statistical dependence is connected to causation through the Common Cause Principle, and conditional dependence relationships can sometimes reveal direct causal structure through algorithms relying on the causal Markov and faithfulness conditions. However, selection bias can create spurious dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C37 are well-supported by citations to foundational work in causal inference (Peters et al. 2017, Glymour et al. 2019, Hitchcock 2020). Claim C35 correctly identifies a known pitfall with reference to Appendix 2-figure 3. Claim C36 accurately describes the power of constraint-based causal discovery. These represent established theoretical results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "ecc11107-3a41-4bb1-b1b8-e87b94cef301",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Granger causality excludes indirect causes by definition, and whether a causal relationship is classified as direct or indirect depends on which variables are observed in the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is illustrated in Figure 3A and follows logically from the definition of Granger causality. Claim C56 is a conceptual point about the relativity of direct causation that is well-established in the causal inference literature. Both claims are conceptually sound and important for interpreting Granger causality results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "0f7061bf-7bc6-4e21-87db-225b89e4950d",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Linear Granger causality has standard parametric tests available in software packages, but these tests assume covariance-stationarity and can fail when this assumption is violated or when applied to nonlinear systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by citations to software packages (Seabold and Perktold 2010, Barnett and Seth 2014). Claims C63-C65 describe well-known limitations with appropriate citations to theoretical work (Toda and Phillips 1993, Ohanian 1988, He and Maekawa 2001, Li et al. 2018). These are accurate descriptions of method requirements and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "3a7ce292-2f24-46fc-8367-81612ffbc1ff",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "General Granger causality is often tested using transfer entropy with surrogate data, but standard surrogate procedures test independence rather than Granger non-causality. Recent procedures have been proposed to address this mismatch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C70 are supported by citations to methodological work (Papana et al. 2012, Montalto et al. 2014). Claim C71 makes an important conceptual distinction about null hypotheses. Claim C72 cites recent methodological advances (Runge 2018a, Shorten et al. 2021). This represents an accurate description of current practice and recent improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "42eb354d-25ae-4a03-95e5-f18124a0caa8",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Granger causality faces challenges with high-dimensional data, which can be addressed through sparse regression assumptions or constraint-based algorithms that remove unnecessary terms using logical rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three claims are supported by appropriate citations to methodological work (Runge et al. 2019a/b, Gibbons et al. 2017, Mainali et al. 2019). These describe established approaches for handling high-dimensional causal discovery. The claims accurately represent current methodological solutions to a known problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "7debd5fe-405c-42cd-a335-414d354e7e04",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Convergent cross mapping (CCM) is the most popular SSR method, using cross map skill to quantify prediction quality. Four criteria have been proposed for inferring causality, though many applications use only a subset of these criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 accurately describe CCM methodology with appropriate citations (Sugihara et al. 2012, Ye et al. 2015, Cobey and Baskerville 2016) and illustration in Figure 6. Claim C94 is supported by citations to applied works showing incomplete criterion use. This represents an accurate description of CCM methodology and current practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Distinguishing process from measurement noise is difficult without knowing system dynamics. Real time series are likely intermediate between fully deterministic and fully stochastic. Both SSR and Granger causality methods can potentially succeed for such systems, but more work is needed to understand when each performs better.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 acknowledge a practical limitation. Claims C112-C113 describe recommendations with citations (Hastings et al. 1993, Sugihara and May 1990, Clark et al. 2015). Claims C114-C115 make reasonable statements about real data. Claim C116 cites simulation evidence (Barraquand et al. 2020). Claim C117 appropriately identifies need for future work. These represent honest assessment of current knowledge and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "c5302c0f-751d-4893-997c-b6aea382486a",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Model-free causal discovery techniques do not depend on mechanistic knowledge but are not assumption-free. The danger is replacing explicit assumptions with unstated ones. When assumptions are clearly articulated, these methods can be valuable, but experimental follow-up remains important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the central message of the review paper. Claim C118 is supported by citation (Coenen et al. 2020) and is the main thesis. Claims C119-C120 make critical observations about current practice. Claims C121-C122 provide balanced assessment of method utility and limitations. These are well-reasoned conclusions supported by the detailed analysis throughout the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "c95196c0-f453-4180-88e6-e5419931f6a7",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Measurement noise and nonstationarity are crucial considerations for real data. The stationarity requirement is ubiquitous but often hidden in analysis pipelines, particularly in surrogate data tests and Granger causality tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C123 is supported by citations emphasizing these issues (Stokes and Purdon 2017, Barnett et al. 2018, Munch et al. 2020). Claims C124-C125 make observations about awareness of these issues. Claims C126-C127 are supported by citations (Lancaster et al. 2018) and established knowledge. These represent important practical considerations well-supported by the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "c1696f5f-d14d-4347-a70a-7f986646572f",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Future research directions include understanding robustness to assumption violations, developing methods that use partial mechanistic models, and leveraging known external perturbations in natural experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately identify important research directions. Claim C129 cites recent promising work (Daniels and Nemenman 2015, Brunton et al. 2016, Mangan et al. 2016). Claim C130 cites relevant methodological work (Eaton and Murphy 2007, Rothenh\u00e4usler et al. 2015). These represent reasonable and well-motivated suggestions for future work based on current limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "1c1c4d7d-46f5-4ba5-bd16-826497d0fafb",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Effective strategies for communicating method assumptions include providing simulation examples of failures, creating video walkthroughs, and ensuring editors and reviewers work with authors to clearly articulate caveats in main text.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C131-C132 cite examples of these communication strategies (Clark et al. 2015, Brunton et al. 2016, 2017, Xie and Shou 2021). Claim C133 is a reasonable recommendation from the authors. These represent practical suggestions for improving methodological communication, supported by examples from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "12ed584c-ec59-455e-9f94-535493d1310e",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Complex systems, including ecological communities, are challenging to study through manipulative experiments, motivating the development of causal inference methods for observational time series data. These methods are often controversial and easy to misunderstand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide background motivation for the review. Claims C1-C10 draw on established knowledge about experimental limitations, ecological systems, and data availability. Claim C3 is supported by citations to controversial exchanges (C25). Claims C7-C8 cite relevant methodological work. These represent accurate framing of the problem domain and are well-supported by general scientific knowledge and citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Knowledge-based modeling approaches like Lotka-Volterra have specific assumptions and limitations. Model-free methods avoid mechanistic equations but still rely on statistical models, examining information flow or using flexible equations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 accurately describe Lotka-Volterra model properties and applications with citations (Stein et al. 2013, Fisher and Mehta 2014, Bucci et al. 2016). Claim C14 cites work documenting failures (Levine 1976, Wootton 2002, Momeni et al. 2017). Claims C15-C17 describe model-free approaches with appropriate citations. These provide accurate background on alternative modeling approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "80223124-e99b-4854-af85-761bb61dcaaf",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Causal discovery methods have roots in multiple disciplines that use inconsistent terminology. Key assumptions are sometimes hidden or not mentioned in methodological articles. Some methods involve advanced mathematics, and efforts to infer causality from observational data have been controversial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims explain challenges in understanding causal discovery methods. Claims C18-C19 describe historical development and terminology issues. Claims C23-C24 identify communication problems in methodological literature. Claim C25 is supported by citations to controversial exchanges (Luo et al. 2015, Baskerville and Cobey 2017, etc.). These accurately characterize challenges in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "f175a625-8211-44d3-b469-843bff3173ac",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The distinction between correlation (a statistical description) and dependence (a hypothesis about probability distributions) is important. Dependence is connected to causality through the Common Cause Principle, though selection bias can create spurious dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 make important conceptual distinctions with citations (Weiss et al. 2016, Coenen and Weitz 2018). Claim C34 describes the Common Cause Principle with citations (Peters et al. 2017, Runge et al. 2019a, Hitchcock 2020b). Claim C35 identifies a known pitfall. These represent accurate descriptions of fundamental concepts in causal inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "ba3380d2-43c8-4847-afd0-048ac7b16f1c",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Time series autocorrelation creates an n-of-one problem for dependence testing. Parametric tests accounting for autocorrelation have uncertain variance estimates. Valid tests should show p\u22640.05 in only 5% of cases when variables are independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 accurately describes the autocorrelation problem. Claim C41 identifies limitations of parametric approaches with citations (Pyper and Peterman 1998, Ebisuzaki 1997). Claim C43 states the expected behavior of valid statistical tests. These represent accurate descriptions of statistical testing challenges for time series.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "e474433d-e1b1-42e7-bec2-7d9bc38598ac",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Phase randomization is a surrogate data procedure appropriate for linear, Gaussian, stationary processes. Some surrogate tests perform reasonably even when requirements are not exactly met, but comprehensive benchmarking is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 describes the phase randomization procedure with citations (Ebisuzaki 1997, Schreiber and Schmitz 2000, Andrzejak et al. 2003). Claim C49 specifies appropriate conditions with citations (Andrzejak et al. 2003, Lancaster et al. 2018). Claims C52-C53 cite evidence of robustness (Thiel et al. 2006, Papana et al. 2017) while identifying need for more work. These accurately describe current knowledge and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    },
+    {
+      "id": "d16d4d7f-adff-4da3-99b1-403e0baa4961",
+      "content_id": "1c20b387-85d8-41f5-b810-8dcc107a94fe",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Alternative approaches to CCM exist for detecting continuous delay maps, but no systematic comparison of these methods has been conducted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 cites alternative methods (Ma et al. 2014, Cummins et al. 2015, Harnack et al. 2017, Leng et al. 2020). Claim C96 honestly acknowledges lack of comparative studies. These represent accurate assessment of the current state of the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:08:52.691346Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "70055d5c-9816-421f-a53b-ccd398b35cb2",
+      "result_id": "9bf7331c-ceec-4b3d-8f41-71372a138942"
+    },
+    {
+      "claim_id": "78affd0a-14b2-46d5-a408-5d344ce40efd",
+      "result_id": "9bf7331c-ceec-4b3d-8f41-71372a138942"
+    },
+    {
+      "claim_id": "35794e9e-22f0-4b80-a365-d2b10cb77446",
+      "result_id": "9bf7331c-ceec-4b3d-8f41-71372a138942"
+    },
+    {
+      "claim_id": "d39a7005-b677-4879-9fc4-1f3ca4a1cb10",
+      "result_id": "9bf7331c-ceec-4b3d-8f41-71372a138942"
+    },
+    {
+      "claim_id": "2c712e10-0b3c-4b01-892c-0a841d004370",
+      "result_id": "9bf7331c-ceec-4b3d-8f41-71372a138942"
+    },
+    {
+      "claim_id": "a354be95-ac6b-4fa0-9455-a0ae349dcb29",
+      "result_id": "797ff761-7aa1-4565-86cb-26431ca88e1a"
+    },
+    {
+      "claim_id": "17695a78-2dea-4599-989a-f1fcfa81ef13",
+      "result_id": "797ff761-7aa1-4565-86cb-26431ca88e1a"
+    },
+    {
+      "claim_id": "7d79d48d-9eec-4753-b9ae-22163f21bf5f",
+      "result_id": "797ff761-7aa1-4565-86cb-26431ca88e1a"
+    },
+    {
+      "claim_id": "fd97769e-9827-495e-bf6b-f723cef15802",
+      "result_id": "797ff761-7aa1-4565-86cb-26431ca88e1a"
+    },
+    {
+      "claim_id": "5fce4210-ca5b-48e3-8a97-aa2a1f5f30c9",
+      "result_id": "6478ff01-6cd7-4eed-bbff-292bc3c050bf"
+    },
+    {
+      "claim_id": "10c39e90-bfdf-478b-abaa-c25aa57c21c3",
+      "result_id": "6478ff01-6cd7-4eed-bbff-292bc3c050bf"
+    },
+    {
+      "claim_id": "147f3776-cfed-4e39-8273-d67e1475f2a2",
+      "result_id": "6478ff01-6cd7-4eed-bbff-292bc3c050bf"
+    },
+    {
+      "claim_id": "e64f7fab-3822-4a86-9c23-f0ee936add36",
+      "result_id": "6478ff01-6cd7-4eed-bbff-292bc3c050bf"
+    },
+    {
+      "claim_id": "904cb067-6d2b-4cd5-8d39-c01e1b23033f",
+      "result_id": "6478ff01-6cd7-4eed-bbff-292bc3c050bf"
+    },
+    {
+      "claim_id": "9ac3d572-8890-476e-9d72-2a12d14024c7",
+      "result_id": "29d5b69a-8257-43e2-b6fa-ae225a31362f"
+    },
+    {
+      "claim_id": "5691212e-70ad-4f02-a15c-b9d319ae7d0d",
+      "result_id": "29d5b69a-8257-43e2-b6fa-ae225a31362f"
+    },
+    {
+      "claim_id": "53bc3917-921a-4120-a711-88f0634297a0",
+      "result_id": "29d5b69a-8257-43e2-b6fa-ae225a31362f"
+    },
+    {
+      "claim_id": "3803945c-7971-4ba9-82cf-0aa5698afeb2",
+      "result_id": "29d5b69a-8257-43e2-b6fa-ae225a31362f"
+    },
+    {
+      "claim_id": "3ff96f96-0c97-4204-b9a1-b1cb22b0570a",
+      "result_id": "29d5b69a-8257-43e2-b6fa-ae225a31362f"
+    },
+    {
+      "claim_id": "36b0ddaa-4495-415c-8074-79c2543ef2d4",
+      "result_id": "29d5b69a-8257-43e2-b6fa-ae225a31362f"
+    },
+    {
+      "claim_id": "40def51f-a0d1-426d-8627-34d41f90f8cc",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "467edba5-58f6-4b6c-a919-1b88f0a9dcf2",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "fa6b8a3a-7a6e-4895-9e14-312718e10836",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "5aa03735-4cf6-41b2-b99e-425b5e200860",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "e4b041c1-a704-4c5f-9caa-946bfff258c8",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "b50ca4d6-d9c3-4ef3-b352-387bcf87986d",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "38b70028-9411-4245-9ba4-f38b0c28598f",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "77dc35e7-97d0-4972-8248-62f8b4803fee",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "43c3195a-6951-46f4-be9d-fc78e879560f",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "dd95ac26-ab5c-40d7-8d1c-8a5d9dacbb13",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "de8e61b9-bf0d-4d98-b3de-b5f4be067797",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "fcaf8cb8-1ad5-445c-b162-9a4892dffc39",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "d469d41c-f761-4e7a-868e-434f7f8b7569",
+      "result_id": "667f8c0c-754b-4188-8a9e-5352c5c5bee2"
+    },
+    {
+      "claim_id": "b462115a-949c-4ff9-bfd7-dcf47d5ac74a",
+      "result_id": "0490f265-3650-4e3c-a579-57b41c513ffc"
+    },
+    {
+      "claim_id": "c67e26ae-8a1a-43c3-b71b-190690c7ff0b",
+      "result_id": "0490f265-3650-4e3c-a579-57b41c513ffc"
+    },
+    {
+      "claim_id": "dcd7f05e-9e14-4580-927f-8aac65a05e0c",
+      "result_id": "0490f265-3650-4e3c-a579-57b41c513ffc"
+    },
+    {
+      "claim_id": "2e305d27-7345-4f83-b437-c05c3df349b5",
+      "result_id": "0490f265-3650-4e3c-a579-57b41c513ffc"
+    },
+    {
+      "claim_id": "d8ecccf3-f972-43bd-b3c5-2ab464132f5d",
+      "result_id": "ecc11107-3a41-4bb1-b1b8-e87b94cef301"
+    },
+    {
+      "claim_id": "69d5d4be-07b2-475e-b72a-4dc18ebdaf9a",
+      "result_id": "ecc11107-3a41-4bb1-b1b8-e87b94cef301"
+    },
+    {
+      "claim_id": "7174552d-d7ae-436d-b95a-0b69237cfe90",
+      "result_id": "0f7061bf-7bc6-4e21-87db-225b89e4950d"
+    },
+    {
+      "claim_id": "4aa85aa9-9856-420a-9759-6d16c422cb25",
+      "result_id": "0f7061bf-7bc6-4e21-87db-225b89e4950d"
+    },
+    {
+      "claim_id": "1319c253-4561-48d2-a89c-50169aadaaaf",
+      "result_id": "0f7061bf-7bc6-4e21-87db-225b89e4950d"
+    },
+    {
+      "claim_id": "b342efed-ae40-4628-928b-dc97c08db07f",
+      "result_id": "0f7061bf-7bc6-4e21-87db-225b89e4950d"
+    },
+    {
+      "claim_id": "74ec1ece-1c0e-4b10-a5a4-063daa4ccb6d",
+      "result_id": "3a7ce292-2f24-46fc-8367-81612ffbc1ff"
+    },
+    {
+      "claim_id": "0d826586-bbfe-42cb-a1cb-d12069cab5f8",
+      "result_id": "3a7ce292-2f24-46fc-8367-81612ffbc1ff"
+    },
+    {
+      "claim_id": "263d0fa0-f3b9-4113-85c6-89e19e0fa0bc",
+      "result_id": "3a7ce292-2f24-46fc-8367-81612ffbc1ff"
+    },
+    {
+      "claim_id": "29b2ec68-f5c9-4910-b1e9-ff01e71fdfd0",
+      "result_id": "3a7ce292-2f24-46fc-8367-81612ffbc1ff"
+    },
+    {
+      "claim_id": "be7c7174-e31b-45a5-bcfe-d57402e90d88",
+      "result_id": "3a7ce292-2f24-46fc-8367-81612ffbc1ff"
+    },
+    {
+      "claim_id": "d251fc55-c013-4848-801f-770e76e511a0",
+      "result_id": "42eb354d-25ae-4a03-95e5-f18124a0caa8"
+    },
+    {
+      "claim_id": "4ef6eca1-513d-44c2-992e-6310a0e6006a",
+      "result_id": "42eb354d-25ae-4a03-95e5-f18124a0caa8"
+    },
+    {
+      "claim_id": "755acdc3-a68c-4e67-a96c-548cac435f20",
+      "result_id": "42eb354d-25ae-4a03-95e5-f18124a0caa8"
+    },
+    {
+      "claim_id": "dc5ae7af-6cd9-444e-a46a-59fd56502c49",
+      "result_id": "7debd5fe-405c-42cd-a335-414d354e7e04"
+    },
+    {
+      "claim_id": "a142763e-b38e-4f5b-a2f2-63cfcc142756",
+      "result_id": "7debd5fe-405c-42cd-a335-414d354e7e04"
+    },
+    {
+      "claim_id": "7b2b74f4-fe6b-4d67-8bf1-8a2961129835",
+      "result_id": "7debd5fe-405c-42cd-a335-414d354e7e04"
+    },
+    {
+      "claim_id": "62033941-25fd-4e5a-b2c0-ea75c3d6effd",
+      "result_id": "7debd5fe-405c-42cd-a335-414d354e7e04"
+    },
+    {
+      "claim_id": "071525ad-01b9-4338-ae71-bcc9272a179c",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "2e75061b-f316-4726-ae06-083ae7e3db8b",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "3eccaf65-1f7e-451e-911b-4b5e48fc58e3",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "882c0b12-b3fc-429a-87cd-c6f8a02af13a",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "ec5fca91-e401-47ad-bac9-cbccc9f4b18b",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "e631beb0-966f-4209-9817-fecba7544d0c",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "5a686690-d83b-4918-bed5-d4d042919708",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "d19dcfa2-5678-446c-a3c3-c9fa2573eba1",
+      "result_id": "79d816e3-fe19-4ea0-bd46-2a14b27115f1"
+    },
+    {
+      "claim_id": "260a1d54-7240-4241-b276-5998f89b22e3",
+      "result_id": "c5302c0f-751d-4893-997c-b6aea382486a"
+    },
+    {
+      "claim_id": "ae7cdc80-0781-4180-96d2-59580e6dd7d6",
+      "result_id": "c5302c0f-751d-4893-997c-b6aea382486a"
+    },
+    {
+      "claim_id": "238f1332-03be-4c86-861e-3118877f3697",
+      "result_id": "c5302c0f-751d-4893-997c-b6aea382486a"
+    },
+    {
+      "claim_id": "98aee0b5-c9be-4b43-8ea1-5b2c36eef589",
+      "result_id": "c5302c0f-751d-4893-997c-b6aea382486a"
+    },
+    {
+      "claim_id": "823139e8-8aaf-46d1-8310-2bec951ab1b8",
+      "result_id": "c5302c0f-751d-4893-997c-b6aea382486a"
+    },
+    {
+      "claim_id": "92f4fa94-7350-4b31-94d3-f9c468f9677f",
+      "result_id": "c95196c0-f453-4180-88e6-e5419931f6a7"
+    },
+    {
+      "claim_id": "c374f6d8-2995-42c4-9b51-15e39f27ebaf",
+      "result_id": "c95196c0-f453-4180-88e6-e5419931f6a7"
+    },
+    {
+      "claim_id": "0d4a4d3a-00b6-4df6-bbd0-70843575b130",
+      "result_id": "c95196c0-f453-4180-88e6-e5419931f6a7"
+    },
+    {
+      "claim_id": "9d607aa4-bb78-4608-bb6a-394a5eac3571",
+      "result_id": "c95196c0-f453-4180-88e6-e5419931f6a7"
+    },
+    {
+      "claim_id": "b95a6c7e-7b90-4913-84c2-291ec2b5a780",
+      "result_id": "c95196c0-f453-4180-88e6-e5419931f6a7"
+    },
+    {
+      "claim_id": "9c57173c-5d32-4e9c-b4df-ee94ab3517ce",
+      "result_id": "c1696f5f-d14d-4347-a70a-7f986646572f"
+    },
+    {
+      "claim_id": "98dc0a37-1f0e-40be-b3e7-b5fcc2e6e837",
+      "result_id": "c1696f5f-d14d-4347-a70a-7f986646572f"
+    },
+    {
+      "claim_id": "8ff9bac6-ee86-4cb0-944f-156a135f4148",
+      "result_id": "c1696f5f-d14d-4347-a70a-7f986646572f"
+    },
+    {
+      "claim_id": "2daef3c7-f9ae-46a7-90a1-9d5bc5ea45bb",
+      "result_id": "1c1c4d7d-46f5-4ba5-bd16-826497d0fafb"
+    },
+    {
+      "claim_id": "737bf101-6b96-4694-a286-bd45ca39b3b4",
+      "result_id": "1c1c4d7d-46f5-4ba5-bd16-826497d0fafb"
+    },
+    {
+      "claim_id": "ed8353bd-82f9-4c43-b680-0f7b312f455a",
+      "result_id": "1c1c4d7d-46f5-4ba5-bd16-826497d0fafb"
+    },
+    {
+      "claim_id": "68584a2d-a137-4ff5-96d1-85dee3a4d5c1",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "f38db7c4-df3c-4f17-8dc5-9d162847c2da",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "23f2000c-1abd-4310-8491-bd3a83e8448b",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "f0eddfdc-c6f9-4876-a2e3-0678109b7978",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "e11e723b-27d1-499d-8e77-1f79241f41d3",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "cf82bd03-8fb9-4ce9-a15c-e5af9870ecb0",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "22578ce4-5c01-47c4-8d64-7f93225da284",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "09a71de5-3cd7-4cd8-9bcc-3c78acc3fd5e",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "5abc9d67-4e04-4449-b35c-508d805a5ed8",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "0a694879-3411-4cc6-8c2c-1a98c2020384",
+      "result_id": "12ed584c-ec59-455e-9f94-535493d1310e"
+    },
+    {
+      "claim_id": "99c859f7-5022-4499-904f-c468a9d8c7d9",
+      "result_id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8"
+    },
+    {
+      "claim_id": "d28ce5c0-bbc9-4e00-981d-cd65abea81a3",
+      "result_id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8"
+    },
+    {
+      "claim_id": "181c6f5b-3a77-48ab-897f-cbfdb1bd6fc4",
+      "result_id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8"
+    },
+    {
+      "claim_id": "233f4394-69aa-45c7-ba7d-9a439d19bd38",
+      "result_id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8"
+    },
+    {
+      "claim_id": "ec3512c5-259c-4a9f-bf00-e82387e1e1f0",
+      "result_id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8"
+    },
+    {
+      "claim_id": "813d8758-b1ae-4abc-b7ed-ef5ac56ff648",
+      "result_id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8"
+    },
+    {
+      "claim_id": "4e293559-01d7-4b7d-bd47-c4a340271d04",
+      "result_id": "27802c28-ecbb-48e0-b1d8-42f63a2040a8"
+    },
+    {
+      "claim_id": "2b9fbbcc-4a7c-424c-b545-d340c92800fb",
+      "result_id": "80223124-e99b-4854-af85-761bb61dcaaf"
+    },
+    {
+      "claim_id": "0e436c1a-cf03-4a6b-8e63-f5e9061fa4fe",
+      "result_id": "80223124-e99b-4854-af85-761bb61dcaaf"
+    },
+    {
+      "claim_id": "a1628769-5fea-4eeb-8536-6bcbd341ec09",
+      "result_id": "80223124-e99b-4854-af85-761bb61dcaaf"
+    },
+    {
+      "claim_id": "9cee47a9-d9d8-43f2-8848-e9a94cc0dab9",
+      "result_id": "80223124-e99b-4854-af85-761bb61dcaaf"
+    },
+    {
+      "claim_id": "68010145-b8de-427e-9b6d-bd26aa8d8182",
+      "result_id": "80223124-e99b-4854-af85-761bb61dcaaf"
+    },
+    {
+      "claim_id": "2b376364-687c-433b-8e76-a1331cc4d33e",
+      "result_id": "f175a625-8211-44d3-b469-843bff3173ac"
+    },
+    {
+      "claim_id": "1808803d-9c8a-474f-8656-d111ee33fce3",
+      "result_id": "f175a625-8211-44d3-b469-843bff3173ac"
+    },
+    {
+      "claim_id": "3901be54-2529-4c38-a224-84bd4c8c7d9f",
+      "result_id": "f175a625-8211-44d3-b469-843bff3173ac"
+    },
+    {
+      "claim_id": "b462115a-949c-4ff9-bfd7-dcf47d5ac74a",
+      "result_id": "f175a625-8211-44d3-b469-843bff3173ac"
+    },
+    {
+      "claim_id": "c67e26ae-8a1a-43c3-b71b-190690c7ff0b",
+      "result_id": "f175a625-8211-44d3-b469-843bff3173ac"
+    },
+    {
+      "claim_id": "d1abb647-9ae1-421a-b65a-a1b2cad1a007",
+      "result_id": "ba3380d2-43c8-4847-afd0-048ac7b16f1c"
+    },
+    {
+      "claim_id": "74755928-f91e-43c7-a2c1-b909f2b54dc6",
+      "result_id": "ba3380d2-43c8-4847-afd0-048ac7b16f1c"
+    },
+    {
+      "claim_id": "b8a8db65-1d5b-46b4-ac5e-1904855da800",
+      "result_id": "ba3380d2-43c8-4847-afd0-048ac7b16f1c"
+    },
+    {
+      "claim_id": "3eaab925-9d4c-40f5-b7b7-da19f9ab1e98",
+      "result_id": "e474433d-e1b1-42e7-bec2-7d9bc38598ac"
+    },
+    {
+      "claim_id": "af12adb5-2564-4973-bab4-d3dc01a8e46a",
+      "result_id": "e474433d-e1b1-42e7-bec2-7d9bc38598ac"
+    },
+    {
+      "claim_id": "249d4044-6dbc-4b23-8147-8f53d6811d8a",
+      "result_id": "e474433d-e1b1-42e7-bec2-7d9bc38598ac"
+    },
+    {
+      "claim_id": "0727cce3-6c4b-4abd-967a-dc8f3e65b90b",
+      "result_id": "e474433d-e1b1-42e7-bec2-7d9bc38598ac"
+    },
+    {
+      "claim_id": "7c86e684-cf6c-44b4-a86b-9b459186bb78",
+      "result_id": "d16d4d7f-adff-4da3-99b1-403e0baa4961"
+    },
+    {
+      "claim_id": "768ae132-57aa-4f1c-9243-7ae4762fc5c6",
+      "result_id": "d16d4d7f-adff-4da3-99b1-403e0baa4961"
+    }
+  ],
+  "comparisons": []
+}

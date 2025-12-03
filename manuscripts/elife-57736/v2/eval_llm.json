@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "KAT2A/2B directly acetylate PALB2 at a cluster of seven lysine residues (K436, K437, K438, K441, K443, K445, K449) within the ChAM domain, termed the 7K-patch. This region is evolutionarily enriched in lysine residues and is preferentially targeted for acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, and C38 are strongly supported by in vitro acetylation assays (Figure 1B) and mass spectrometry identification (Figure 1C). The evolutionary conservation (C39) and comparison to other KAT2A/2B substrates (C40) provide additional context supporting that this is a bona fide acetylation target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C42",
+      "C43"
+    ],
+    "result": "In unperturbed cells, the ChAM 7K-patch is acetylated on chromatin, with all seven lysine residues detected as acetylated in chromatin-associated GFP-ChAM. The 7K-patch region is essential for ChAM chromatin association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, and C49 are supported by mass spectrometry analysis of chromatin-associated GFP-ChAM (Figure 3A) and subcellular fractionation showing higher acetylation in chromatin fractions (Figure 2\u2014supplement 1B). Claims C42 and C43 are supported by fractionation data (Figure 2B) showing the 7K-patch is required for chromatin enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Deletion or K-to-Q substitutions of the 7K-patch impair ChAM nucleosome binding in vitro, while K-to-R substitutions largely maintain nucleosome binding. The 7Q variant behaves as a ChAM null mutant rather than an acetyl-mimetic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by in vitro nucleosome pull-down assays (Figures 2C, 2E, 2F, 2G). The data clearly show that 7Q abolishes nucleosome binding while 7R maintains it, leading to the conclusion that 7Q is a null mutant. This is an important methodological finding about the limitations of K-to-Q substitutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C5"
+    ],
+    "result": "Acetylation within the 7K-patch enhances ChAM nucleosome binding. Synthetic acetylated ChAM peptides bind nucleosomes in vitro while non-acetylated peptides do not, with even mono-acetylation at K438 being sufficient to enhance binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are strongly supported by nucleosome pull-down assays with synthetic acetylated peptides (Figure 3B). The use of synthetic peptides with defined acetylation states provides direct evidence that acetylation enhances nucleosome binding through a non-electrostatic mechanism, addressing the limitations of amino acid substitutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PALB2 chromatin association is regulated by lysine acetylation. KAT2A/2B knockdown increases PALB2 mobility (reduced chromatin association), while KDAC inhibition decreases PALB2 mobility (increased chromatin association).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by FRAP analyses (Figures 3C-F) showing bidirectional regulation of PALB2 mobility by acetylation status. The opposing effects of KAT2A/2B depletion and KDAC inhibition provide strong evidence for acetylation-dependent regulation of PALB2 chromatin dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C7"
+    ],
+    "result": "DNA damage triggers rapid ChAM deacetylation (within 15 minutes) and increases PALB2 mobility. IR treatment reduces ChAM acetylation and decreases FRAP t1/2 by 22%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56, and C57 are supported by western blot analysis showing ChAM deacetylation following IR (Figure 4B-C) and FRAP analysis showing increased PALB2 mobility after IR (Figure 4D-E). The temporal correlation and magnitude of changes provide strong evidence for damage-induced regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The PALB2 7Q mutant exhibits reduced chromatin enrichment and increased mobility compared to WT and 7R, behaving as constitutively highly mobile and unable to engage with chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C59, C60, and C62 are supported by subcellular fractionation (Figure 5B-C) and FRAP analyses (Figure 5D-E) showing 7Q has reduced chromatin association and increased mobility. The \u0394ChAM control (C61) provides additional validation that loss of ChAM function increases mobility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C63",
+      "C65"
+    ],
+    "result": "The PALB2 7R mutant exhibits impaired recruitment to DNA damage sites despite maintaining bulk chromatin association, suggesting it binds chromatin randomly with reduced capacity for mobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C63, and C65 are supported by laser micro-irradiation experiments (Figure 6C-D) showing 7R is poorly recruited to damage sites. The interpretation that 7R binds randomly is logical given it maintains chromatin association (Figure 5) but fails to localize properly to damage sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C66",
+      "C67",
+      "C68",
+      "C114"
+    ],
+    "result": "Both 7Q and 7R mutations impair IR-induced RAD51 foci formation in S phase. PALB2 WT efficiently rescues RAD51 foci formation in PALB2-depleted cells, while 7R and 7Q provide only partial rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C66-C68, and C114 are supported by immunofluorescence analysis of RAD51 foci in EdU-labeled S phase cells (Figures 7B, 7D, 8B, 8D). The data show statistically significant reductions in RAD51 foci for both mutants after 4-5 days of endogenous PALB2 depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Both 7Q and 7R mutations increase DNA damage in S phase, as measured by \u03b3-H2A.X foci. This phenotype is observed both with and without IR treatment, suggesting defects in both spontaneous and induced DNA damage repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C69, C71, and C72 are supported by immunofluorescence analysis showing increased \u03b3-H2A.X foci in 7Q and 7R cells (Figures 7D-F, 8C, 8E-F). The observation in both untreated and IR-treated conditions strengthens the conclusion that these mutations compromise genome stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C73",
+      "C74"
+    ],
+    "result": "Both 7Q and 7R mutations reduce cell survival in untreated conditions, with 7R showing a more significant effect than 7Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C73, and C74 are supported by WST-1 cell survival assays (Figure 9B) showing statistically significant reductions in survival for both mutants. The data indicate that proper regulation of PALB2 chromatin association is important for cell viability even without exogenous DNA damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PALB2 7R and 7Q show impaired occupancy at known PALB2-bound active genes (ACTB, TCOF1, WEE1). IR treatment reduces WT PALB2 occupancy at these genes to levels comparable to untreated 7Q/7R mutants, indicating the mutations prevent proper localization to active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by ChIP-qPCR data (Figure 9D) showing reduced PALB2 occupancy at specific gene loci for both mutants. The observation that IR reduces WT occupancy to mutant levels supports the model that deacetylation releases PALB2 from active genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C117"
+    ],
+    "result": "Acetylation of the ChAM 7K-patch acts as a molecular switch: in undamaged cells, KAT2A/2B-mediated acetylation (with MRG15) enriches PALB2 at active genes; upon DNA damage, deacetylation releases PALB2 for recruitment to damage sites with BRCA1/BRCA2/RAD51 to promote HR repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching model (C13, C78-C81, C117) integrates multiple supported findings: acetylation enhances chromatin binding (C50-C52), damage triggers deacetylation (C56-C58), mutations disrupting this switch impair RAD51 recruitment (C10, C114) and increase DNA damage (C11, C69-C72). The model is well-supported by the collective evidence, though C81 contains some speculative elements about the precise mechanism of RAD51 loading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C110"
+    ],
+    "result": "All PALB2 variants (WT, 7Q, 7R) maintain equivalent interactions with BRCA1, BRCA2, and RAD51 in IR-treated cells, indicating the 7K-patch mutations do not disrupt protein complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C110 are supported by immunoprecipitation data (Figure 6\u2014supplement 1) showing comparable binding of BRCA1, BRCA2, and RAD51 to all PALB2 variants. This is an important control demonstrating that the functional defects of 7Q and 7R are due to altered chromatin dynamics rather than disrupted protein-protein interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The C-terminal 7K basic patch is essential for context-dependent ChAM-nucleosome interaction. Acetylation of the 7K patch promotes binding to nucleosomes at active genes, while deacetylation facilitates recruitment to damaged chromatin through a non-electrostatic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 synthesize findings from multiple experiments showing the 7K-patch is required for chromatin binding (C43-C44), acetylation enhances nucleosome binding (C50-C52), and this occurs despite charge neutralization (C87). The non-electrostatic mechanism is inferred from the observation that acetylation enhances binding despite reducing positive charge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Flanking regions of ChAM influence nucleosome binding, with N-terminal extensions enhancing binding and C-terminal extensions reducing it. These regions are rich in potential phosphorylation sites, suggesting additional PTMs may regulate ChAM-nucleosome association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by nucleosome binding assays with ChAM truncations (Figure 2C). Claims C90-C91 are supported by sequence analysis (Figure 9\u2014supplement 1) showing potential kinase target sites. However, C91 is speculative as no phosphorylation data are presented. This represents an interesting observation warranting future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The increase in PALB2 mobility upon DNA damage is consistent with previous reports of increased RAD51 and BRCA2 mobility upon genotoxic stress, suggesting the BRCA2-PALB2-RAD51 complex is mobilized together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 place the current findings in context of prior literature. C92-C95 accurately cite previous work on RAD51 and BRCA2 mobility. C96 is a reasonable inference given that PALB2 forms stable complexes with BRCA2 and RAD51, though direct evidence for co-mobilization is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In undamaged cells, PALB2 is enriched at active genes through KAT2A/2B-mediated acetylation and MRG15 interaction while maintaining transient chromatin association. The 7R mutant, which binds chromatin but fails to localize to specific active genes, exhibits increased basal \u03b3-H2A.X and reduced survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C99, and C100 are supported by ChIP-qPCR (Figure 9D), immunofluorescence (Figure 8F), and survival assays (Figure 9B). C98 is a speculative interpretation of the transient binding mode. The 7R phenotype supports the importance of proper localization to active genes for genome stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Upon DNA damage, ChAM deacetylation reduces PALB2 affinity for undamaged chromatin, with PALB2 occupancy at active genes reduced to near-background levels following IR. This allows PALB2 recruitment to damage sites through interaction with damage-sensing factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C103 are supported by ChIP-qPCR data (Figure 9D) showing dramatic reduction in PALB2 occupancy at active genes after IR. C102 is a logical inference from the deacetylation data (Figure 4B-C) and recruitment data (Figure 6), though the precise mechanism of recruitment is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "The 7R mutant shows more impaired recruitment to DNA damage sites than 7Q, possibly because random chromatin binding prevents damage-induced mobilization. PALB2 recruitment itself does not guarantee RAD51 assembly, as both 7R and 7Q impair RAD51 foci despite different recruitment behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C113 are supported by laser micro-irradiation data (Figure 6C-D) and RAD51 foci data (Figures 7-8). C112 is a speculative interpretation of the 7R phenotype. C115 is a reasonable inference supported by the observation that 7Q is recruited but still fails to promote RAD51 foci, though the mechanistic basis remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "K-to-Q and K-to-R substitutions alter side chain size in addition to charge, and do not accurately mimic acetyl-lysine or non-acetylatable lysine. ChAM variants with amino acid substitutions show different properties than synthetic acetylated peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are based on structural knowledge of amino acid properties. C120 is supported by comparing nucleosome binding data for ChAM variants (Figure 2G) versus synthetic peptides (Figure 3B). This is an important methodological point about limitations of using amino acid substitutions to study acetylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "This study reveals a new mechanism by which KAT2A/2B controls genome stability. KAT2A/2B function within SAGA and ATAC complexes at active chromatin, and may concurrently regulate HR machinery and chromatin to ensure HR activation only when needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by the collective findings of the study and prior acetylome work (C122, citing Fournier et al., 2016). Claims C124-C126 accurately cite established knowledge about KAT2A/2B complexes. C127 is a speculative synthesis but reasonable given the findings and prior work on SAGA components in HR regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Lysine acetylation controls biological processes based on metabolic status. Reprogrammed metabolism in cancer cells could alter the PTM landscape of DDR proteins and contribute to genome instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C128 is supported by citation to Lee et al., 2014. However, C129 is highly speculative and not directly tested in this study. While the connection between metabolism, acetylation, and genome stability is conceptually reasonable, no data are presented linking cancer metabolism to PALB2 acetylation or function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C82",
+      "C83",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background and context claims about PALB2 function, disease associations, protein interactions, and prior findings on ChAM and PALB2 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C14-C36, C82-C83, C104-C106) provide established background information supported by appropriate citations to prior literature. They accurately represent known functions of PALB2 in HR repair, disease associations, protein interactions, and previous findings about ChAM and PALB2 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C116"
+    ],
+    "result": "Speculative interpretations about PALB2 function and localization under endogenous conditions and the importance of the 7K-patch for HR repair at different genomic locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 and C116 are speculative interpretations not directly tested. C107-C108 propose that endogenous PALB2 primarily associates with active genes and must be mobilized for damage elsewhere, but this is inferred rather than demonstrated. C109 speculates about consequences of PALB2 depletion from active genes after IR. C116 attempts to explain why HR reporter assays showed no defect, but this remains speculative.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,481 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "m6A regulators, including YTHDC1, YTHDF1, and YTHDF2, are dynamically expressed during satellite cell lineage progression. YTHDC1 mRNA is expressed at all stages with highest levels in freshly isolated SCs (FISCs), while YTHDC1 protein shows low levels in FISCs but increases during activation (ASC-24hr) and proliferation (ASC-48hr). YTHDC1 is predominantly localized to the nucleus in both satellite cells and C2C12 myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are well-supported by RNA-seq data (Figure 1B-D), western blotting, immunofluorescence (Figure 1E-F), and fractionation assays (Figure 1G). The data consistently demonstrate dynamic expression patterns of m6A regulators during SC lineage progression and confirm nuclear localization of YTHDC1, which is consistent with prior literature (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Inducible YTHDC1 knockout in satellite cells abolishes acute injury-induced muscle regeneration. YTHDC1 depletion results in nearly complete loss of muscle regeneration, with excessive immune infiltration, sharp decrease in eMyHC+ myofibers, and complete loss of Pax7+ cells at 5-7 days post-injury. Regeneration is never observed even at 28 days post-injury in iKO muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C45-C52 are strongly supported by comprehensive in vivo data including H&E staining (Figure 2D), immunostaining for eMyHC and Pax7 (Figure 2E-G), and muscle size measurements (Figure 2\u2014figure supplement 1). The phenotype is severe and consistent across multiple time points and assays, demonstrating YTHDC1's essential role in muscle regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "YTHDC1 knockout impairs satellite cell activation and proliferation in vitro and in vivo. iKO cells show growth arrest, drastically reduced EdU incorporation at 24hr and 48hr, decreased Pax7+MyoD+ double positive cells, and reduced proliferation on isolated myofibers. In vivo EdU assays confirm significant reduction in proliferating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are well-supported by multiple complementary assays: cell culture observations (Figure 3\u2014figure supplement 1A-B), EdU staining (Figure 3A-B), immunofluorescence for Pax7/MyoD (Figure 3C-D), western blotting (Figure 3\u2014figure supplement 1C), and in vivo EdU assays (Figure 3E-F). The consistency across different experimental systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Transcriptomic analysis reveals that YTHDC1 knockout causes differential expression of genes enriched for cell cycle functions. 547 DEGs were identified in ASC-24hr (431 down, 116 up) and 1272 DEGs in ASC-48hr (556 down, 716 up), with downregulated genes enriched for GO terms including 'Nuclear division' and 'Chromosome segregation'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by RNA-seq data and GO analysis (Figure 3G-H, Supplementary file 1). The enrichment of cell cycle-related GO terms is consistent with the observed proliferation defects. However, the manuscript does not provide details on statistical methods for DEG calling or multiple testing correction, which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "YTHDC1's function in promoting myoblast proliferation is dependent on its m6A binding capacity. In C2C12 cells with inducible YTHDC1 degradation (AID system), proliferation is reduced at 48hr and 72hr. Rescue experiments show that only wild-type YTHDC1, but not m6A binding mutants (W429A or triple mutant), can partially rescue the proliferation defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by EdU assays in AID-YTHDC1 C2C12 cells (Figure 3I, Figure 3\u2014figure supplement 1G-H) and rescue experiments (Figure 3J, Figure 3\u2014figure supplement 1I). The use of m6A binding mutants provides strong evidence for the mechanistic requirement of m6A binding. The rescue is partial, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "LACE-seq identifies transcriptome-wide YTHDC1 binding targets in satellite cells and C2C12 myoblasts. In ASC-48hr, 2444 peaks (951 genes) were identified with high replicate correlation (r=0.82-0.91). In C2C12, 29,107 peaks (5897 genes) were identified with very high correlation (r=0.96). Targets are enriched for GO terms including 'Cell projection organization' and 'Cell junction assembly', with 1501 peaks shared between ASCs and C2C12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are well-supported by LACE-seq data (Figure 4B-E). The high correlation coefficients indicate good technical quality. The overlap between ASC and C2C12 datasets (1501/2444 peaks) validates the approach. GO enrichment analysis is appropriate, though the manuscript does not specify the statistical method or correction for multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "YTHDC1 binding peaks are predominantly mapped to protein coding genes (73% in C2C12, 43% in ASCs), consistent with prior reports in other cell types. Small portions map to lincRNAs, snRNAs, snoRNAs, and repeat regions (SINE 4%, LINE 3%), suggesting mRNA processing is the dominant role of YTHDC1 in myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by genomic distribution analysis (Figure 4F-G) and are consistent with prior CLIP-seq/RIP-seq studies cited (C76). The inference that mRNA processing is the dominant role (C77) is reasonable given the data, though it remains an interpretation. The difference in protein-coding gene mapping between C2C12 (73%) and ASCs (43%) is notable but not explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Integration of LACE-seq with MeRIP-seq identifies m6A-dependent YTHDC1 targets in C2C12. 5356 peaks (1771 genes) were identified, with 41% in exons, 26% in 3'UTRs, 19% in introns, and 12% in promoters. These targets are enriched for GO terms including Wnt signaling pathway (related to myoblast proliferation) and mRNA processing. Ythdf2 and Ythdf3 are among the targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by integration of LACE-seq and published MeRIP-seq data (Figure 4H-I, Figure 4\u2014figure supplement 1). The use of published MeRIP-seq data is appropriate but introduces potential batch effects. The identification of Ythdf2 and Ythdf3 as targets is interesting and suggests regulatory feedback. GO enrichment for Wnt signaling is supported by citation (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Integration of ASC LACE-seq with C2C12 MeRIP-seq identifies 56 peaks (50 genes) as m6A-YTHDC1 targets in ASCs. These genes are highly enriched for GO terms including 'RNA splicing' and 'mRNA processing', suggesting m6A-YTHDC1 controls the processing of RNA processing factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by integration analysis (Figure 4J-K). The cross-species integration (ASC LACE-seq with C2C12 MeRIP-seq) is a limitation, as m6A patterns may differ between cell types. The inference that YTHDC1 controls RNA processing factors (C87) is reasonable given the GO enrichment but remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Treatment with the m6A writer inhibitor STM2457 reduces m6A modification levels on selected YTHDC1 targets (Ythdf2, Ythdf3, Pi4kb) and concomitantly decreases YTHDC1 binding to these targets, demonstrating that YTHDC1's regulatory function relies on m6A binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by MeRIP-qPCR and RIP-qPCR data (Figure 4L-M). The use of STM2457 to reduce m6A levels and the corresponding decrease in YTHDC1 binding provides strong mechanistic evidence. However, only three targets were validated, and the inference (C90) would be strengthened by testing more targets or using genetic approaches to deplete m6A writers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "YTHDC1 depletion causes differential splicing events in satellite cells, with skipped exons and mutually exclusive exons dominating, consistent with YTHDC1's role in promoting exon inclusion. Among 951 YTHDC1 targets, 189 show differential splicing and are enriched for 'Regulation of actin filament-based process' and 'Dendrite development'. Altered splicing of Palb2, Scn5a, and Lrp8 was validated by RT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by splicing analysis of RNA-seq data (Figure 5A-B) and RT-PCR validation (Figure 5C). The dominance of skipped exons is consistent with prior work (C93). The GO enrichment and RT-PCR validation strengthen the findings. However, only three targets were validated, and quantification shows variability (n=3 mice for some targets).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Among 50 m6A-YTHDC1 targets in ASCs, 11 are defined as m6A-YTHDC1 splicing targets. Altered splicing of Itgb3bp and Nek1 was experimentally validated by RT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by integration analysis (Figure 5D) and RT-PCR validation (Figure 5E). The validation of two targets is appropriate given the small number of m6A-YTHDC1 splicing targets identified. The identification of Nek1, which regulates cell cycle (C108), is particularly relevant to the proliferation phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In C2C12 cells, 2555 genes show differential splicing upon YTHDC1 degradation, with 1040 being YTHDC1 binding targets, suggesting YTHDC1 plays a dominant role as a splicing regulator in C2C12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by splicing analysis of RNA-seq data from C2C12 cells (Figure 5F). The high proportion of YTHDC1 binding targets showing differential splicing (1040/5897 = 18%) supports the inference that splicing regulation is a dominant function (C101). However, the inference remains qualitative without comparison to other RNA binding proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "YTHDC1 splicing targets in C2C12 are enriched for 'Chromatin organization' and 'Histone modification'. 75 YTHDC1 splicing targets are shared between ASC and C2C12, enriched for 'Transcription coregulator activity' and 'Transcription corepressor activity'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by GO analysis (Figure 5\u2014figure supplement 1B-C) and overlap analysis (Figure 5G). The enrichment for chromatin and transcriptional regulators is interesting and suggests YTHDC1 may have indirect effects on transcription through splicing regulation. However, no functional validation of these enrichments is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "350 out of 1771 m6A-YTHDC1 targets in C2C12 show differential splicing upon YTHDC1 degradation, enriched for 'mRNA processing', 'regulation of mRNA metabolic process', and 'Wnt signaling pathway'. Five targets are shared with ASCs: Zc3h13, Nek1, Cep55, Zmynd6, and Clip1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by integration analysis (Figure 5H-I) and GO analysis (Figure 5\u2014figure supplement 1D). The enrichment for Wnt signaling is consistent with the proliferation phenotype. The identification of shared targets between ASCs and C2C12 strengthens the findings, though the small number (5) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Subcellular RNA-seq analysis of 11,637 expressed mRNAs in ASC-48hr shows no significant difference in average cyto/nuc ratio between iKO and Ctrl, suggesting YTHDC1 loss may not cause global alteration in mRNA nuclear export. However, 1045 mRNAs show altered cyto/nuc ratio, enriched for 'Methylation' and 'Chromatin modification'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by subcellular RNA-seq data (Figure 6\u2014figure supplement 1A-C). The lack of global effect on nuclear export (C111) is an important negative result that is appropriately reported. The identification of 1045 mRNAs with altered export suggests specific effects. However, the manuscript does not specify the statistical threshold for defining altered cyto/nuc ratio.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Among 687 YTHDC1 binding targets expressed in cyto/nuc fractions in ASCs, no significant difference in average cyto/nuc ratio is detected in iKO vs. Ctrl, suggesting YTHDC1 binding may not have major impact on global nuclear export. However, 54 mRNAs show significant cyto/nuc decrease and are defined as YTHDC1 export targets, enriched for 'Protein serine kinase activity'. 13 of these are also splicing targets, suggesting dual regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 are supported by subcellular RNA-seq analysis (Figure 6A-D, Figure 6\u2014figure supplement 1G). The lack of global effect on YTHDC1 targets (C116) is appropriately reported. The identification of 54 export targets and overlap with splicing targets (C119-C120) is interesting, though the inference of dual regulation (C120) requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "In C2C12, 5000 YTHDC1 bound mRNAs are expressed in cyto/nuc fractions, showing significant decrease in average cyto/nuc ratio upon YTHDC1 degradation, suggesting global impact on target mRNA nuclear export. 813 binding targets are defined as YTHDC1 export targets, enriched for 'Histone modification' and 'Chromatin organization', with ~25% also being splicing targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 are supported by subcellular RNA-seq analysis in C2C12 (Figure 6E-I). The global effect on YTHDC1 targets in C2C12 (C123) contrasts with the lack of global effect in ASCs (C116), which may reflect differences in cell type or number of targets identified. The overlap between export and splicing targets (C126) is consistent with ASC findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "322 m6A-YTHDC1 export targets are defined in C2C12, enriched for 'Histone modification' and 'Chromatin organization'. 75 of these are also splicing targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by integration analysis (Figure 6J-N). The enrichment for chromatin-related functions is consistent with YTHDC1 export targets (C125, C128). The overlap between export and splicing targets (C129) further supports the pleiotropic role of YTHDC1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "YTHDC1 binding promotes nuclear export of target mRNAs in myoblast cells and plays pleiotropic roles in regulating both splicing and export of mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are conclusions drawn from the combined subcellular RNA-seq and splicing analyses (Figures 5-6). The evidence for export regulation is stronger in C2C12 than ASCs. The pleiotropic role (C131) is supported by the overlap between splicing and export targets, though the mechanistic basis for dual regulation is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Co-IP/MS identifies 912 potential YTHDC1 interacting partners in myoblasts, highly enriched for RNA splicing and mRNA export factors, solidifying that splicing and export regulations are dominant functions of YTHDC1 in myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 are supported by co-IP/MS data (Figure 7C-D). The enrichment for splicing and export factors is consistent with the functional data. However, the manuscript does not provide details on how unique interacting partners were defined or statistical methods for enrichment analysis. The conclusion (C135) is an inference that is well-supported by the combined functional and interactome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "hnRNPG physically interacts with YTHDC1, validated by co-IP/WB in C2C12 myoblasts (both exogenously and endogenously expressed) and 293T cells. Knockdown of hnRNPG in ASCs reduces cell proliferation, phenocopying YTHDC1 loss, demonstrating that hnRNPG functions synergistically with YTHDC1 in promoting SC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by co-IP/WB validation (Figure 7H-J) and hnRNPG knockdown experiments (Figure 7K). The validation in multiple systems (exogenous, endogenous, different cell types) strengthens the interaction data. The functional synergy (C141) is inferred from similar phenotypes but would be strengthened by double knockdown experiments or rescue with hnRNPG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "SRSF3 and all known THOC complex members (THOC7, 1, 6, 3, 5, 2) are identified as YTHDC1 interacting partners by co-IP/MS. The interaction with THOC7 was validated by co-IP/WB in C2C12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by co-IP/MS data (Figure 7E-F) and validation (Figure 7L). The identification of SRSF3 is consistent with prior reports (C142). The identification of all THOC members is striking and supports YTHDC1's role in mRNA export. However, only THOC7 was validated, and functional significance of these interactions is not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "Transcriptional regulators including RTRAF, MED29, and MED11 are identified as YTHDC1 interacting partners, pointing to previously unknown means by which YTHDC1 may regulate transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C148 are supported by co-IP/MS data (Figure 7G). However, C148 is explicitly speculative ('may regulate'), and no validation or functional testing of these interactions is provided. The identification is interesting but requires follow-up work to determine if these interactions are functionally relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C152"
+    ],
+    "result": "This is the first study to identify functional m6A regulators in satellite cells and provide holistic investigation of YTHDC1 function in SCs and muscle regeneration. YTHDC1 plays an indispensable role in SCs that is not replaceable by other m6A readers, with incompetence of SC activation/proliferation being the major cause of blocked regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150, C152 are conclusions supported by the comprehensive experimental data. The novelty claim (C149) is supported by citations showing limited prior work. The inference that activation/proliferation defects cause blocked regeneration (C150) is reasonable given the data, though other defects (differentiation, self-renewal) were not fully explored. The claim that YTHDC1 is not replaceable (C152) is supported by the severe phenotype but is somewhat speculative without testing other readers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "YTHDC1 selectively binds a subset but not all m6A-modified RNAs. This selectivity could be achieved by dynamic multivalent interactions forming distinct nuclear condensates. A large portion of YTHDC1 binding targets lack m6A modification, suggesting potential m6A-independent functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C155 are inferences from the LACE-seq and MeRIP-seq integration data. C153 is supported by the observation that not all m6A sites are bound by YTHDC1. However, C154 and C155 are explicitly speculative, supported only by citations to prior work on condensates. The suggestion of m6A-independent functions (C155) contradicts the rescue experiments showing m6A binding is required (C66). These claims require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "The observed proliferative defects upon YTHDC1 loss could be a combinatorial effect of many downstream targets enriched for diverse GO functions important for SC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is a reasonable inference from the large number of splicing and export targets identified and their diverse GO enrichments (Figures 5-6). This interpretation is appropriate given the pleiotropic nature of YTHDC1 function. However, it remains an inference without validation of individual targets' contributions to the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C40",
+      "C44",
+      "C82",
+      "C108",
+      "C132",
+      "C136",
+      "C145",
+      "C146",
+      "C156",
+      "C159",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Background and context claims about satellite cells, m6A modification, YTHDC1, and related proteins based on established knowledge and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5, C15-C32, C40, C44, C82, C108, C132, C136, C145-C146, C156, C159, C161-C165) are background statements supported by citations to prior work or reflect established knowledge in the field. They provide appropriate context for the study and are generally accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C151",
+      "C157",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Speculative claims about potential future research directions and mechanisms, including YTHDC1's role in QSC maintenance, condensate formation, transcriptional regulation, and cytoplasmic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151, C157, C166-C170 are explicitly speculative statements about future research directions or potential mechanisms. C151 mentions unpublished data. These are appropriately presented as speculation in the Discussion but lack experimental support in the current manuscript. They represent hypotheses for future testing rather than supported results.",
+    "result_type": "MINOR"
+  }
+]

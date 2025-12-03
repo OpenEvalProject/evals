@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The extant EnvZ-OmpR paralogs in C. crescentus exhibit phosphotransfer specificity, with each histidine kinase showing a clear preference for its cognate response regulator. EnvZ1 and EnvZ2 transfer phosphoryl groups more rapidly to their cognate partners (OmpR1 and OmpR2, respectively) than to non-cognate partners, as demonstrated by in vitro phosphotransfer assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 collectively demonstrate that the extant C. crescentus EnvZ-OmpR paralogs exhibit specificity through phosphotransfer assays (C16-C18) and competition experiments (C19). The phylogenetic evidence (C12) and sequence divergence data (C14-C15) provide context for this specificity. The experimental data in Figures 1D-E directly support the specificity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Ancestral protein reconstruction successfully generated functional ancestral histidine kinases and response regulators that existed before and after the duplication event ~1900 million years ago. All reconstructed ancestors showed clear phosphotransfer activity, including the most ancient ancHK-ancRR pair, and were reconstructed with high confidence (mean posterior probabilities >0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe the ancestral reconstruction methodology and validation. The high posterior probabilities (C23), functional activity in phosphotransfer assays (C24-C25), and concordance between different phylogenetic approaches (C21) provide strong support for the quality of the reconstructions. The methods are well-documented (C20, C71-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Phosphotransfer specificity was established shortly after duplication, with only two of the four paralogs (ancHK2 and ancRR1) acquiring mutations that significantly altered their interaction specificity. ancHK2 showed ~28-fold kinetic preference for ancRR2 over ancRR1, while ancRR1 showed ~4.5-fold preference for ancHK1 over ancHK2. In contrast, ancHK1 and ancRR2 did not acquire mutations preventing crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 present a coherent model supported by systematic phosphotransfer experiments comparing ancestral proteins (Figures 3A-F). The quantitative kinetic data (C32-C33) and comparative transfer experiments (C27-C30) provide strong evidence that specificity arose through mutations in only two proteins. The conclusion (C31) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "Three key mutations (R27Q and E29A in ancHK2, and R11E in ancRR1) were sufficient to establish specificity between the paralogous systems. These mutations occur in only two of the four proteins (ancHK2 and ancRR1, which are not cognate partners). The R27Q and E29A substitutions in ancHK slowed transfer to ancRR1 without affecting transfer to ancRR2, while R11E in ancRR slowed transfer from ancHK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 identify specific mutations responsible for specificity through sequence analysis (C34-C38) and mutagenesis experiments (C39-C42). The sequence conservation data from >1800 sequences (C35-C36, C38) and the functional validation through site-directed mutagenesis (Figure 4E-I) provide strong support. The conclusion that only three mutations in two proteins are sufficient (C44) is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The R11E substitution in ancRR both improved the ancestral ancHK-ancRR interaction and prevented crosstalk with ancHK2, indicating that the ancestral interaction was not optimized for rapid phosphotransfer. Structural modeling suggests this mutation enables formation of a salt bridge between E11 in ancRR1 and R27 in ancHK/ancHK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 demonstrate dual functionality of the R11E mutation through phosphotransfer experiments (C45, Figure 5A-B) and structural modeling (C48-C49, Figure 5D). The observation that this mutation both improves cognate interaction and prevents crosstalk (C46) is well-supported by experimental data. The structural explanation (C48-C49) is based on AlphaFold2 predictions, which provide a plausible mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Additional mutations beyond the initial three continued to refine specificity. A leucine to phenylalanine substitution at position 26 (L26F) in the lineage from ancHK1 to C. crescentus EnvZ1 provided further insulation by improving cognate transfer to OmpR1 and reducing non-cognate transfer to OmpR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 identify subsequent evolutionary refinements through sequence analysis (C51) and mutagenesis (C52-C53, Figure 6C-D). The observation that extant proteins show greater specificity than immediate post-duplication ancestors (C50) is supported by comparing Figures 1D and 3A. The L26F mutation's effects are experimentally validated (C52-C53).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "The study's main finding is that just three mutations in two non-cognate proteins were sufficient to establish specificity of the duplicated EnvZ-OmpR systems. Insulation was accomplished through both weakening non-cognate interactions (ancHK2-ancRR1) and strengthening cognate interactions (ancHK1-ancRR1), exploiting the fact that the ancestral interaction was not fully optimized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C62-C65, and C68 summarize the study's central findings. These conclusions are well-supported by the comprehensive experimental data on ancestral proteins and site-directed mutants. The dual mechanism of specificity evolution (weakening and strengthening interactions, C3-C4, C64) is directly demonstrated through the mutagenesis experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Ancestral sequence reconstruction can successfully reconstruct interacting protein pairs to determine evolutionary trajectories. For the EnvZ-OmpR duplication, mutations in both paralogous systems (specifically ancHK2 and ancRR1) were required for insulation, representing a model where both interfaces were impacted rather than complete neofunctionalization of one system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 present methodological and conceptual conclusions. The successful reconstruction and characterization of interacting ancestral protein pairs (C56) is demonstrated throughout the study. The finding that mutations in both systems were required (C57-C58) is supported by the experimental data showing changes in ancHK2 and ancRR1. The interpretation regarding neofunctionalization (C59) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "The authors speculate that protein-protein interactions that are non-optimal may be particularly well-suited to duplication and divergence, and that strong selection against crosstalk occurs immediately post-duplication followed by long periods of stasis. They note that a single model may not account for divergence of two-component systems in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C67, and C69 are explicitly speculative statements (C66, C69) or interpretations (C67) that extend beyond the direct experimental evidence. While these speculations are reasonable given the findings, they represent hypotheses that would require additional studies of other systems to validate. The authors appropriately frame these as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study employed standard methods for ancestral reconstruction (HMMER, PAML, PhyML) and protein characterization (expression in E. coli, Ni-NTA purification, phosphotransfer assays with radiolabeled ATP, AlphaFold2 structure prediction). Cognate HK-RR pairs were matched based on genome proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 describe methodological details that are standard and well-established in the field. The methods are clearly documented and appropriate for the study's goals. The use of genome proximity to match cognate pairs (C72) is a reasonable approach for two-component systems that are typically co-operonic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C60",
+      "C61",
+      "C70"
+    ],
+    "result": "The introduction establishes background knowledge about gene duplication, paralogous proteins, two-component signaling systems, and prior work on protein specificity evolution. These claims provide context for the study but are primarily based on citations to prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C11, C60-C61, and C70 present established background knowledge supported by appropriate citations to prior literature. These claims accurately represent the current understanding in the field and provide necessary context for the study. The citations appear appropriate and relevant.",
+    "result_type": "MINOR"
+  }
+]

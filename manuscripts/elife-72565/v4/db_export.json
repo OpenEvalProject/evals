@@ -1,0 +1,1095 @@
+{
+  "submission": {
+    "id": "def355b7-e12a-4a2f-a605-4bf00e8fb845",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:20:16.166013Z",
+    "updated_at": "2025-12-03T09:20:16.166013Z"
+  },
+  "content": [
+    {
+      "id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "submission_id": "def355b7-e12a-4a2f-a605-4bf00e8fb845",
+      "content_type": "manuscript",
+      "content_text": "# Distinguishing different modes of growth using single-cell data\n\n## Authors\n\n- Prathitha Kar<sup>1</sup> ([ORCID: 0000-0002-4091-6860](https://orcid.org/0000-0002-4091-6860))\n- Sriram Tiruvadi-Krishnan<sup>3</sup>\n- Jaana M\u00e4nnik<sup>3</sup> ([ORCID: 0000-0002-0777-7846](https://orcid.org/0000-0002-0777-7846))\n- Jaan M\u00e4nnik<sup>3</sup> ([ORCID: 0000-0002-6759-3053](https://orcid.org/0000-0002-6759-3053)) \u2020\n- Ariel Amir<sup>1</sup> ([ORCID: 0000-0003-2611-0139](https://orcid.org/0000-0003-2611-0139)) \u2020\n\n### Affiliations\n\n1. Harvard John A. Paulson School of Engineering and Applied Sciences, Harvard University Cambridge United States\n2. Department of Chemistry and Chemical Biology, Harvard University Cambridge United States\n3. Department of Physics and Astronomy, University of Tennessee Knoxville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCollection of high-throughput data has become prevalent in biology. Large datasets allow the use of statistical constructs such as binning and linear regression to quantify relationships between variables and hypothesize underlying biological mechanisms based on it. We discuss several such examples in relation to single-cell data and cellular growth. In particular, we show instances where what appears to be ordinary use of these statistical methods leads to incorrect conclusions such as growth being non-exponential as opposed to exponential and vice versa. We propose that the data analysis and its interpretation should be done in the context of a generative model, if possible. In this way, the statistical methods can be validated either analytically or against synthetic data generated via the use of the model, leading to a consistent method for inferring biological mechanisms from data. On applying the validated methods of data analysis to infer cellular growth on our experimental data, we find the growth of length in E. coli to be non-exponential. Our analysis shows that in the later stages of the cell cycle the growth rate is faster than exponential.\n\n## Introduction\n\nThe last decade has seen a tremendous increase in the availability of high-quality large datasets in biology, in particular in the context of single-cell level measurements. Such data are complementary to \u2018bulk\u2019 measurements made over a population of cells. They have led to new biological paradigms and motivated the development of quantitative models (Osella et al., 2017; Facchetti et al., 2017; Ho et al., 2018; Soifer et al., 2016; Jun et al., 2018; Amir and Balaban, 2018; Kohram et al., 2021). Nevertheless, they have also led to new challenges in data analysis, and here we will point out some of the pitfalls that exist in handling such data. In particular, we will show that the commonly used procedure of binning data and linear regression may hint at specific functional relations between the two variables plotted that are inconsistent with the true functional relations. As we shall show, this may come about due to the \u2018hidden\u2019 noise sources that affect the binning procedure and the phenomenon of \u2018inspection bias\u2019 where certain bins have biased contributions. One of our main take home messages is the significance of having an underlying model (or models) to guide/test/validate data analysis methods. The underlying model is referred to as a generative model in the sense that it leads to similar data to that observed in the experiments. The importance of a so-called generative model has been beautifully advocated in the context of astrophysical data analysis (Hogg et al., 2010), yet biology brings in a plethora of exciting differences: while in physics noise from measurement instruments often dominates, in the biological examples we will dwell on here it is the intrinsic biological noise that can obscure the mathematical relation between variables when not handled properly. In the following, we will illustrate this rather philosophical introduction on a concrete and fundamental example, albeit e pluribus unum. We will focus on the analysis of the Escherichia coli growth curves obtained via high throughput optical microscopy. Nevertheless we anticipate the conceptual points made here \u2013 and demonstrated on a particular example of interest \u2013 will translate to other types of measurements, which make use of microscopy but also beyond.\n\nBinning corresponds to grouping data based on the value of the x-axis variable, and finding the mean of the fluctuating y-axis variable for this group. By removing the fluctuations of the y-variable, the binning process often aims to expose the \u2018true\u2019 functional relation between the two variables which can be used to infer the underlying biological mechanism. While binning may provide a smooth non-linear relation between variables, linear regression is used to find a linear relationship between the variables. In addition to binning, we use the ordinary least squares regression where the slope and the intercept of the best linear fit line are obtained by minimizing the squared sum of the difference between the dependent variable raw data and the predicted value. Here, the best fit/the best linear fit is obtained using the raw data and not the binned data. Similar to binning, the assumption underlying linear regression is that our knowledge of x-axis variable is precise while the noise is in the y-axis variable.\n\nIt is important to discuss the sources of fluctuations in the y-axis variable before we proceed. In biology, fluctuations in the variables arise inevitably from the intrinsic variability within a cell population. Cells growing in the same medium and environment have different characteristics (e.g. growth rate) due to the stochastic nature of biochemical reactions in the cell (Kiviet et al., 2014). For example, the division event is controlled by stochastic reactions, whose variability leads to cell dividing at a size smaller or larger than the mean. In this paper, when modeling the data, we will consider the intrinsic noise as the only source of variability and assume that the measurement error is much smaller than the intrinsic variation in the population.\n\nOne example of the use of binning and linear regression is shown in Figure 1A where size at division ($L_{d}$) vs size at birth ($L_{b}$) is plotted using experimental data obtained by Tanouchi et al. for E. coli growing at 25 \u00b0C (Tanouchi et al., 2017). In Figure 1A, the functional relation between length at division and length at birth for E. coli is observed to be linear and close to $L_{d}=L_{b}+\u0394\u2062L$ (see the Experimental data section for details). The relation obtained allows us to hypothesize a coarse-grained biological model known as the adder model as shown in Figure 1B in which the length at division is set by addition of length $\u0394\u2062L$ from birth (Soifer et al., 2016; Harris and Theriot, 2016; Si et al., 2019; Amir, 2014; Campos et al., 2014; Taheri-Araghi et al., 2015; Eun et al., 2018). This previously discussed example demonstrates and reiterates the use of statistical analysis on single-cell data to understand the underlying cell regulation mechanisms. Using statistical methods such as binning and linear regression, other phenomenological models apart from adder have also been proposed in E. coli where the division length ($L_{d}$) is not directly \u2018set\u2019 by that at birth (Ho and Amir, 2015; Micali et al., 2018; Witz et al., 2019). The phenomenological models, in turn, can be related to mechanistic (molecular-level) models of cell size and cell cycle regulation (Barber et al., 2017). Recent work has shed light on the subtleties involved in interpreting the linear regression results for the $L_{d}$ vs $L_{b}$ plot where seemingly adder behavior in length can be obtained from a sizer model (division occurring on reaching a critical size) due to the interplay of multiple sources of variability (Facchetti et al., 2019). This issue is similar in spirit to those we highlight here.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig1-v4.jpg)\n\n**Figure 1.:** (A) Length at division ($L_{d}$) vs length at birth ($L_{b}$) is plotted using data obtained by Tanouchi et al., 2017. Raw data is shown as blue dots. We find the trend in binned data (red) to be linear with the underlying best linear fit (yellow) following the equation, $L_{d}=1.09\u2062L_{b}+2.24\u2062\\mu\u2062m$. This is close to the adder behavior with an underlying equation given by $L_{d}=L_{b}+\u0394\u2062L$, where $\u0394\u2062L$ is the mean size added between birth and division (shown as black dashed line). B. A schematic of the adder mechanism is shown where the cell grows over its generation time ($T_{d}$) and divides after addition of length $\u0394\u2062L$ from birth. This ensures cell size homeostasis in single cells.\n\nThe volume growth of single bacterial cells has been typically assumed to be exponential (Godin et al., 2010; Wang et al., 2010; Campos et al., 2014; Cermak et al., 2016; Soifer et al., 2016; Iyer-Biswas et al., 2014). Assuming ribosomes to be the limiting component in translation, growth is predicted to be exponential and growth rate depends on the active ribosome content in the cell (Scott et al., 2010; Lin and Amir, 2018; Metzl-Raz et al., 2017). Under the assumption of exponential growth, the size at birth ($L_{b}$), the size at division ($L_{d}$), and the generation time ($T_{d}$) are related to each other by,\n\n$$\nln\u2061(\\frac{L_{d}}{L_{b}})=\\lambda\u2062T_{d},\n$$\n\nwhere $\\lambda$ is the growth rate. Understanding the mode of growth is important for example, due to its potential effects on cell size homeostasis. Exponentially growing cells cannot employ a mechanism where they control division by timing a constant duration from birth but such a mechanism is possible in case of linear growth (Amir, 2014; Kafri et al., 2016; Ho et al., 2018). Linear regression performed on $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plot, where $\u27e8\\lambda\u27e9$ is the mean growth rate, was used to infer the mode of growth in the archaeon H. salinarum (Eun et al., 2018), and in the bacteria M. smegmatis (Logsdon et al., 2017) and C. glutamicum (Messelink et al., 2020), for example. If the best linear fit follows the y = x trend, the resulting functional relation might point to growth being exponential. A corollary to this is the rejection of exponential growth when the slope and intercept of the best linear fit deviate from one and zero, respectively (Messelink et al., 2020). Thus, binning and linear regression applied on single-cell data appear to provide information about the underlying biology, in this case, the mode of cellular growth. We will test the validity of such inference by analyzing synthetic data generated using generative models. We find that linear regression performed on the plot $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$, surprisingly, does not provide information about the mode of growth. Nonetheless, we show that other methods of statistical analysis such as binning growth rate vs age plots are adequate in addressing the problem. Using these validated methods on experimental data, we find that E. coli grows non-exponentially. In later stages of the cell cycle, the growth rate is higher than that in early stages.\n\n## Results\n\n### Statistical methods like binning and linear regression should be interpreted based on a model\n\nTo illustrate the pitfalls associated with binning, we use data from recent experiments on E. coli where the length at birth, the length at division and the generation time were obtained for multiple cells (see Experimental methods and [Tiruvadi-Krishnan et al., 2021]). Phase-contrast microscopy was used to obtain cell length at equal intervals of time. Note that we consider length to reflect cell size in this paper rather than other cell geometry characteristics such as surface area and volume. The length growth rate that we elucidate in the paper can be different from the cell volume growth rate as shown in Appendix 1 assuming a simple cell morphology and exponential growth. Using the same cell morphology, we also find the length growth rate to be identical to cell surface growth rate. To investigate if the cell growth was exponential, we plotted $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ for cells growing in M9 alanine minimal medium at 28 \u00b0C ($\u27e8T_{d}\u27e9$ = 214 min). The linear regression of these data yields a slope of 0.3 and an intercept of 0.4 as shown in Figure 2A. The binned data and the best linear fit deviate significantly from the y = x line (see Supplementary file 1). Additionally, the binned data follows a non-linear trend and flattens out at longer generation times. We also found similar deviations in the binned data and best linear fit in glycerol medium ($\u27e8T_{d}\u27e9$ = 164 min) shown in Figure 2\u2014figure supplement 1A, and glucose-cas medium ($\u27e8T_{d}\u27e9$ = 65 min) shown in Figure 2\u2014figure supplement 1B. Qualitatively similar results have been recently obtained for another bacterium, C. glutamicum, in Messelink et al., 2020. These results might point to growth being non-exponential.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig2-v4.jpg)\n\n**Figure 2.:** (A, B) Data is obtained from experiments in M9 alanine medium ($\u27e8T_{d}\u27e9$ = 214 min, N = 816 cells). (A) $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plot is shown. The blue dots are the raw data, the red correspond to the binned data trend, the yellow line is the best linear fit obtained by performing linear regression on the raw data and the black dashed line is the y = x line. A priori, non-linear trend in binned data might point to growth being non-exponential. (B) $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot is shown for the same experiments. (C, D) Simulations of exponentially growing cells following the adder model are carried out for N = 2500 cells. The parameters used are provided in the Simulations section. (C) $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plot is shown. The trend in binned data shown in red is non-linear and the best linear fit of raw data (yellow) deviates from the y = x line (black dashed line). The black dotted line is the expected trend obtained from theory (Equation 2). For parameters used in the simulations here, the black dotted line follows $ln\u2061(\\frac{L_{d}}{L_{b}})=1.26\u2062\u27e8\\lambda\u27e9\u2062T_{d}-0.38\u2062(\u27e8\\lambda\u27e9\u2062T_{d})^{2}$. (D) $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot is shown with binned data in red and the best linear fit on raw data in yellow closely following the expected trend of y = x line (black dashed line). The theoretical binned data trend (black dotted line) is expected to follow the y = x trend. In all of these plots, the binned data is shown only for those bins with more than 15 data points in them.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Experimental data: $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ (left) and $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot (right) is shown for, (A).Cells growing in glycerol medium ($\u27e8T_{d}\u27e9$ = 164 min, N = 648 cells). (B) Cells growing in glucose-cas medium ($\u27e8T_{d}\u27e9$ = 65 min, N = 737 cells). Binned data (red), and the best linear fit (yellow) obtained by performing linear regression on the raw data deviate from the y = x line (black dashed line) in the case of $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plots in both media. However, both binned data and the best linear fit are in close agreement with the y = x line (black dashed line) on interchanging the axes. In all of these plots, the binned data is shown only for those bins with more than 15 data points in them.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig2-figsupp2-v4.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Binned data trend in growth rate ($\\lambda$) and inverse generation time ($\\frac{1}{T_{d}}$) plots.(A-B) Simulations of the adder model for exponentially growing cells were carried out at multiple growth rates for N = 2500 cells. The size added between birth and division and the mean growth rates were extracted from Kennard et al., 2016. The CV of growth rates was greater for cells growing in slower-growth media. See the Simulations section for the parameter values. For these simulations, we show (A) $\\lambda$ vs $\\frac{1}{T_{d}}$ plot. (B) $\\frac{1}{T_{d}}$ vs $\\lambda$ plot. The smaller circles show the trend in binned data within a growth medium. Different colors correspond to different growth media. Population means are shown as larger markers. The population means agree with the expected y = $ln\u2061(2)$ x line (black dashed line) in (A) but the trend within a single growth medium is non-linear and deviates from the y = $ln\u2061(2)$ x line. However, in (B), population means across growth conditions and the trend in binned data within a single growth medium follow the expected y = $\\frac{1}{ln\u2061(2)}$ x line (black dotted line).\n\nNext, we will approach the same problem but with a generative model. We will first show that the $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ binned plot could not distinguish exponential growth from non-exponential growth. For that purpose, we use a previously studied model (Eun et al., 2018) which considers growth to be exponential with the growth rate distributed normally and independently between cell cycles with mean growth rate $\u27e8\\lambda\u27e9$ and standard deviation $CV_{\\lambda}\u27e8\\lambda\u27e9$. $CV_{\\lambda}$ is thus the coefficient of variation (CV) of the growth rate and is assumed to be small. To maintain a narrow distribution of cell size, cells must employ regulatory mechanisms. In our model, we assume that, barring the noise due to stochastic biochemical reactions, cells attempt to divide at a particular size $L_{d}$ given size at birth $L_{b}$. Keeping the model as generic as possible, we can write $L_{d}$ as a function of $L_{b}$, f($L_{b}$) which can be thought of as a coarse-grained model for the regulatory mechanism. Amir, 2014 provides a framework to capture the regulatory mechanisms by choosing f($L_{b}$) = 2 $L_{b}^{1-\\alpha}\u2062L_{0}^{\\alpha}$. L0 is the typical size at birth and $\\alpha$, which can take values between 0 and 2, reflects the strength of regulation strategy. $\\alpha$ = 0 corresponds to the timer model where division occurs on average after a constant time from birth, and $\\alpha$ = 1 is the sizer model where a cell divides upon reaching a critical size. $\\alpha$ = 1/2 can be shown to be equivalent to the adder model where division is controlled by addition of constant size from birth (Amir, 2014). In addition to the deterministic function (f) specifying division, the size at division is affected by noise ($\\frac{\u03b6}{\u27e8\\lambda\u27e9}$) in division timing. We assume it has a Gaussian distribution with mean zero and standard deviation $\\frac{\\sigma_{n}}{\u27e8\\lambda\u27e9}$ and that it is independent of the growth rate. Thus, the generation time ($T_{d}$) can be mathematically written as $T_{d}=\\frac{1}{\\lambda}\u2062ln\u2061(\\frac{f\u2062(L_{b})}{L_{b}})+\\frac{\u03b6}{\u27e8\\lambda\u27e9}$ and is influenced by growth rate noise and division timing noise. Note that replacing the time additive division timing noise with a size additive division timing noise will not affect the results qualitatively (see \u2018Model\u2019 and \u2018Exponential growth\u2019 sections for details and Supplementary file 1 for variable definitions).\n\nFor perfectly symmetrically dividing cells whose sizes are narrowly distributed, we find the trend in the binned data for $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9T_{d}$ plot to be (see section \u2018Predicting the results of statistical constructs applied on $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9T_{d}$ and $\u27e8\\lambda\u27e9T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$\u2019),\n\n$$\ny=x(1+\\frac{1\u2212\\frac{x}{ln\u2061(2)}}{1+\\frac{2}{2\u2212\\alpha}\\frac{\\sigma_{n}^{2}}{CV_{\\lambda}^{2}ln^{2}\u2061(2)}}).\n$$\n\nFixing $C\u2062V_{\\lambda}$ = $\\sigma_{n}$ = 0.15, we show using simulations in Figure 2C the non-linear trend in the binned data even though we assumed exponential growth. Similarly, on performing linear regression on the raw data of $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plot, we find that the slope of the best linear fit is not equal to one and the intercept is non-zero (see Equation 27 and 28 and Figure 2C). Equation 2 shows that the trend in the binned data depends on the ratio of growth rate noise and division timing noise. The slope is equal to one and intercept is zero only if the noise in growth rate is negligible as compared to the division timing noise. In experiments that is rarely the case, hence, the binned data trend and the best linear fit deviate from the y = x line even though growth might be exponential. Thus, we cannot rule out exponential growth in the E. coli experiments despite the binned data trend being non-linear and the best-fit line deviating from the y = x line.\n\nWhy does a non-linear relationship in the binned data for the plot $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ arise even for exponential growth? According to the model, $L_{d}$ is determined by a deterministic strategy, f($L_{b}$) and a time/size additive division timing noise. The noise component which affects $L_{d}$ and subsequently the quantity $ln\u2061(\\frac{L_{d}}{L_{b}})$ is thus the noise in division timing and not the growth rate. The generation time ($T_{d}$) plotted on the x-axis is influenced by the noise in division timing as well as the noise in growth rate. Binning assumes that for a fixed value of the x-axis variable, the noise from other sources affects only the y-axis variable (the binned variable). Similarly for linear regression, the underlying assumption is that the independent variable on x-axis is precisely known while the dependent variable on the y-axis is influenced by the independent variable and from external factors other than the independent variable. In this case, only $\u27e8\\lambda\u27e9\u2062T_{d}$ plotted on x-axis is influenced by growth rate noise while both $\u27e8\\lambda\u27e9\u2062T_{d}$ and $ln\u2061(\\frac{L_{d}}{L_{b}})$ are influenced by noise in division time. This does not fit the assumption for binning and linear regression and hence, the best linear fit for $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plot might deviate from the y = x line even in the case of exponential growth.\n\nAnother way of explaining the deviation from the linear y = x trend is by inspection bias, which arises when certain data is over-represented (Stein and Dattero, 2018). Cells which have a longer generation time than the mean will most likely have a slower growth rate. Thus, in Figure 2A and C, at larger values of $\u27e8\\lambda\u27e9\u2062T_{d}$ or $T_{d}$, the bin averages are biased by slower growing cells, thus making $ln\u2061(\\frac{L_{d}}{L_{b}})$ or $\\lambda\u2062T_{d}$ to be lower than expected. This provides an explanation for the flattening of the trend.\n\nIt follows from the previous discussion that if one bins data by $ln\u2061(\\frac{L_{d}}{L_{b}})$ then the assumption for binning is met. Both of the variables $\u27e8\\lambda\u27e9\u2062T_{d}$ and $ln\u2061(\\frac{L_{d}}{L_{b}})$ are influenced by the noise in division time but $\u27e8\\lambda\u27e9\u2062T_{d}$ plotted on the y-axis is also influenced by the growth rate noise. Thus, the y-axis variable, $\u27e8\\lambda\u27e9\u2062T_{d}$ is determined by the x-axis variable, $ln\u2061(\\frac{L_{d}}{L_{b}})$, and an external source of noise, in this case, the growth rate noise. Thus, based on our model, we expect the trend in binned data and linear regression performed on the interchanged axes to follow the y = x trend for exponentially growing cells (see section \u2018Predicting the results of statistical constructs applied on $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9T_{d}$ and $\u27e8\\lambda\u27e9T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$\u2019). Indeed, on interchanging the axis and plotting $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ for synthetic data, we find that the trend in the binned data and the best linear fit closely follows the y = x line (Figure 2D). We also find that the best linear fit follows the y = x line in the case of alanine (Figure 2B), glycerol (Figure 2\u2014figure supplement 1A) and glucose-cas (Figure 2\u2014figure supplement 1B). A change from non-linear behavior to that of linear on interchanging the axes is also observed in a related problem where growth rate ($\\lambda$) and inverse generation time ($\\frac{1}{T_{d}}$) are considered (Figure 2\u2014figure supplement 2 and Section \u2018Interchanging axes in growth rate vs inverse generation time plot might lead to different interpretations\u2019).\n\nThus far, we showed for a range of models where birth controls division that the binned data trend for $ln\u2061(\\frac{L_{d}}{L_{b}})$ as function of $\u27e8\\lambda\u27e9\u2062T_{d}$ is non-linear and dependent on the noise ratio $\\frac{\\sigma_{n}}{C\u2062V_{\\lambda}}$ in the case of exponential growth. On interchanging the axes the binned data trend agrees with the y = x line independent of the growth rate and division time noise. However, we will show next that this agreement with the y = x trend cannot be used as a \u2018smoking gun\u2019 for inferring exponential growth from the data.\n\nTo investigate this further, let us consider linear growth, which has also been suggested to be followed by E. coli cells (Mitchison, 2005; Abner et al., 2014). The underlying equation for linear growth is,\n\n$$\nL_{d}-L_{b}=\\lambda^{\u2032}\u2062T_{d},\n$$\n\nwhere $\\lambda^{\u2032}$ is the the elongation speed that is, $\\frac{d\u2062L}{d\u2062t}$. For cells growing linearly, the best linear fit for the plot $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ is expected to deviate from the y = x line. As before, we fix $\u27e8\\lambda\u27e9$ to be the mean of $\\frac{1}{T_{d}}\u2062ln\u2061(\\frac{L_{d}}{L_{b}})$, agnostic of the linear mode of growth. Surprisingly, we found that for the class of models where birth controls division by a strategy f($L_{b}$) and cells grow linearly, the best linear fit for $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ agrees closely with the y = x trend. On carrying out analytical calculations based on this model, we obtain the slope and the intercept of the $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot to be $\\frac{3}{2}\u2062ln\u2061(2)\u2248$ 1.04 and \u20130.03 respectively, which is very close to that for exponential growth (see section \u2018Differentiating linear from exponential growth\u2019). This is shown for simulations of linear growth with cells following an adder model in Figure 3A. Given no information about the underlying model, Figure 3A could be interpreted as cells undergoing exponential growth contrary to the assumption of linear growth in simulations. Thus, when handling experimental data, cells undergoing either exponential or linear growth might seem to agree closely with the y = x trend. Deforet et al., 2015 used the linear binned data trend in case of $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot to infer exponential growth but as we showed in this section, the linear trend does not rule out linear growth. This again reiterates our message of having a generative model to guide the data analysis methods such as binning and linear regression. For completeness, we also test the utility of $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8T_{d}\u27e9\u2062\\lambda$ and its interchanged axes plots to elucidate the mode of growth (Appendix 2). We find that binning and linear regression applied on these plots can not differentiate between exponential and linear growth.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig3-v4.jpg)\n\n**Figure 3.:** (A) $\u27e8\\lambda\u27e9T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot is shown for simulations of linearly growing cells following the adder model for N = 2500 cell cycles. The binned data (red) and the best linear fit on raw data (yellow) closely follows the y = x trend (black dashed line) which could be incorrectly interpreted as cells undergoing exponential growth. (B) The binned data trend for growth rate vs age plot is shown as purple circles for simulations of N = 2500 cell cycles of exponentially growing cells following the adder model. We observe the trend to be nearly constant as expected for exponential growth (purple dotted line). Since the growth rate is fixed at the beginning of each cell cycle in the above simulations, we do not show error bars for each bin within the cell cycle. Also shown as green squares is the growth rate vs age plot for simulations of N = 2500 cell cycles of linearly growing cells following the adder model. As expected for linear growth, the binned growth rate decreases with age as $\\lambda\u221d\\frac{1}{1+a\u2062g\u2062e}$ (green dotted line). The binned growth rate trend (shown as magenta diamonds) is also found to be nearly constant as expected (shown as magenta dotted line) for the simulations of exponentially growing cells following the adder per origin model. We also show that the binned growth rate trend (red triangles) increases for simulations of the adder model with the cells undergoing faster than exponential growth. The trend is in agreement with the underlying growth rate function (shown as red dotted line) used in the simulations of super-exponential growth. Thus, the plot growth rate vs age provides a consistent method to identify the mode of growth. Parameters used in the above simulations of exponential, linear and super-exponential growth are derived from the experimental data in alanine medium. Details are provided in the Simulations section.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A-B) Simulations of linearly growing cells following the adder model are carried out for N = 2500 cell cycles. (A) $l_{d}-l_{b}$ vs $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ plot is shown. The raw data is shown as blue dots. The binned data (in red) and the best linear fit on raw data (in yellow) deviate from the y = x line (black dashed line). Such a deviation can be predicted based on a model as discussed in detail in the Linear growth section. (B) $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ plot is shown. The binned data (in red) and the best linear fit on raw data (in yellow) agree with the y = x line (in black). (C) Simulations of exponentially growing cells following the adder model are carried out for N = 2500 cell cycles. $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ plot is shown. The binned data (in red) and the best linear fit on raw data (in yellow) deviate from the y = x line (in black) as expected for exponential growth. Parameters used in the simulations above are provided in the Simulations section.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig3-figsupp2-v4.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The binned growth rate trend as a function of time from the onset of constriction (t- $T_{n}$) is shown in red. Time t- $T_{n}=$ 0 corresponds to onset of constriction. The plot is shown for simulations of exponentially growing cells carried out over N = 2500 cell cycles. Constriction length is determined by a constant length addition from birth and division occurs after a constant length addition from constriction. (B) The average generation time for the cells present in each bin of (A) is shown. (C) For simulations of exponentially growing cells following the adder model (N = 2500), the binned growth rate (in red) vs time from birth plot is shown. (D) The average generation time for the cells present in each bin of (C) is shown. The vertical dashed lines show the time range in which the generation times are approximately constant and hence, the effects of inspection bias are negligible. Within that time range, the growth rate trend is found to be constant, consistent with the assumption of exponential growth.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig3-figsupp3-v4.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A-B) Simulations of linearly growing cells following the adder model are carried out for N = 2500 cell cycles. Cell size ($L$) data is recorded as a function of time within the cell cycle. (A) The red dots show the binned data for elongation speed as a function of age. The trend is almost constant in agreement with the linear growth assumption. (B) Elongation speed is also constant with cell size as expected for linear growth. The intercept value of the best linear fit on raw data (in yellow) provides the average elongation speed. (C-D) Simulations of exponentially growing cells following the adder model are carried out for N = 2500 cell cycles. (C) Elongation speed trend (in red) increases with age in agreement with the exponential growth assumption. (D) Elongation speed trend (in red) increases linearly with size. The slope of the best linear fit on raw data (in yellow) is equal to the average growth rate. (E-F) Simulations of exponentially growing cells following the adder per origin model are carried out for N = 2500 cell cycles. (E) Again, the elongation speed trend (in red) increases with age in agreement with the exponential growth assumption. (F) Elongation speed trend (in red) and the best linear fit on raw data (in yellow) deviates from the expected linear trend (black dashed line). This could be misinterpreted as non-exponential growth. Thus, we find that the binned data trend for the plot elongation speed vs size is model-dependent.\n\nTo conclude the discussion of linear growth, we note that the natural plot for this growth regime is $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ and the plot obtained on interchanging the axes (see the Linear growth section and Figure 3\u2014figure supplement 1A and B). Here lb, ld and $\\lambda_{l\u2062i\u2062n}$ are defined to be quantities $L_{b}$, $L_{d}$ and $\\lambda^{\u2032}$, respectively, normalized by the mean length at birth. For cells growing exponentially, the best linear fit for the $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ plot is expected to deviate from the y = x line. This is indeed what is observed in Figure 3\u2014figure supplement 1 where simulations of exponentially growing cells following the adder model are presented (see \u2018Differentiating linear from exponential growth\u2019 for extended discussion).\n\nIn all the cases above, the problem at hand deals with distilling the biologically relevant functional relation between two variables. However, the data is assumed to be subjected to fluctuations of various sources, and it is important to ensure that the statistical construct we are using (e.g. binning) is robust to these. How can we know a priori whether the statistical method is appropriate and a \u2018smoking gun\u2019 for the functional relation we are conjecturing? The examples shown above suggest that performing statistical tests on synthetic data obtained using a generative model is a convenient and powerful approach. Note that in cases such as the ones studied here where analytical calculations may be performed, one may not even need to perform any numerical simulations to test the validity of the methods.\n\n### Growth rate vs age plots are consistent with the underlying growth mode\n\nIn the last section, we showed that the plots $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ and $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ are not decisive in identifying the mode of growth. Recent works on B. subtilis (Nordholt et al., 2020) and fission yeast (Knapp et al., 2019) have used differential methods of quantifying growth namely growth rate ( = $\\frac{1}{L}\u2062\\frac{d\u2062L}{d\u2062t}$) vs age plots and elongation speed (=$\\frac{d\u2062L}{d\u2062t}$) vs age plots to probe the mode of growth within a cell cycle. Here, $L$ denotes the size of the cell after time $t$ from birth in the cell cycle and age denotes the ratio of time $t$ to $T_{d}$ within a cell cycle (hence it ranges from 0 to 1 by construction within a cell cycle). In this section, using various models of cell growth and cell cycle, we test the growth rate vs age method. Note that the growth rate vs age and the elongation speed vs age plots are not dimensionless unlike the previous plots. Using the growth rate vs age and elongation speed vs age plots, we aim to quantify the growth rate changes within a cell cycle. For cells assumed to be growing exponentially, growth rate is constant throughout the cell cycle. On averaging over multiple cell cycles, the trend of binned data is expected to be a horizontal line with value equal to mean growth rate which is indeed what we find in the numerical simulations of the adder and the adder per origin model (Ho and Amir, 2015), as shown in Figure 3B. The binned data trend in each of the models matches the theoretical predictions of growth rate (shown as dotted lines). In contrast, for linearly growing cells, the elongation speed is expected to remain constant. We show this constancy using numerical simulations of linearly growing cells following the adder model (Figure 3\u2014figure supplement 3A). In accordance with this result, the growth rate is expected to decrease with cell age as $\\lambda\u221d\\frac{1}{1+age}$. This is verified in Figure 3B by again using the numerical simulations of linear growth with cells following the adder model. The binned data trend for linear growth (green squares) matches the theoretical predictions of $\\lambda\u221d\\frac{1}{1+a\u2062g\u2062e}$ (green dotted line).\n\nThus, the two growth modes (exponential and linear) could be differentiated using the growth rate vs age plot (for details see \u2018Growth rate vs age and elongation speed vs age plots\u2019 section). However, the growth rate vs age plots can be used to infer the mode of growth beyond the two discussed above. We show this by using simulations of cells following the adder model and undergoing faster than exponential or super-exponential growth (see the Simulations section for details). In such a case, the growth rate is expected to increase. This increase in growth rate is shown in Figure 3B using simulations. The binned data trend (red triangles) again matches the growth rate mode used in the simulations (red dotted line). Thus, the growth rate vs age plots are a consistent method to distinguish linear from exponential and super-exponential growths.\n\nUsing the validated growth rate vs age plots, we obtained the growth rate trend for experimental data on E. coli for the three growth conditions studied in this paper (Figure 4A-C). We found an increase in growth rate in all growth conditions during the course of the cell cycle. One may wonder whether such an increase may be explained by the E. coli morphology alone, due to the presence of hemispherical poles. For exponentially growing cell volume and considering a geometry of E. coli with spherical caps at the poles, the percentage increase in the growth rate of length over a cell cycle is around 3 % which is significantly smaller than that observed in our experimental data. Considering cell size trajectories (cell size, $L$ at time, $t$ data) where cell lengths were tracked beyond the cell division event (by considering cell size in both daughter cells), we also found that the growth rate decreases close to division (age \u2248 1) and returns to a value nearly equal to that observed at the beginning of cell cycle (age \u2248 0) as shown in Figure 4\u2014figure supplement 1 (see \u2018Growth rate vs age and elongation speed vs age plots\u2019 section for extended discussion).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig4-v4.jpg)\n\n**Figure 4.:** The red dots correspond to the binned data trends showing the variation in growth rate. The medium in which the experiments were conducted are (A) Alanine ($\u27e8T_{d}\u27e9$ = 214 min) (B) Glycerol ($\u27e8T_{d}\u27e9$ = 164 min) (C) Glucose-cas ($\u27e8T_{d}\u27e9$ = 65 min). The error bars show the standard deviation of the growth rate in each bin scaled by $\\frac{1}{\\sqrt{N}}$, where N is the number of cells in that bin. The dashed vertical lines mark the age at initiation of DNA replication (left line) and the start of septum formation (right line). In case of glucose-cas, the initiation age is not marked as it occurs in the mother cell.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A,B,C) The binned growth rate trend is shown in red as a function of age for E. coli experimental data. The trends are obtained using the cell size trajectories extending beyond the division event (age >1). The plots are shown for (A) Alanine medium (N = 720 cells) (B) Glycerol medium (N = 594 cells). (C) Glucose-cas medium (N = 664 cells). The error bars in all three plots represent the standard deviation of the growth rate in each bin scaled by $\\frac{1}{\\sqrt{N}}$, where N is the number of cells in that bin. The growth rate trend appears to be periodic in each of the growth media that is, $\\lambda$ at age \u2248one is close to $\\lambda$ at age \u2248 0. These trends agree with that of Figure 4 in the appropriate age ranges. (D) Simulations are carried out for N = 2500 cell cycles. The cell size trajectories are collected beyond the division event (age >1). The binned data trend for growth rate vs age plot is shown as purple circles for exponentially growing cells following the adder model. We observe the trend to be nearly constant as expected for exponential growth. The binned growth rate trend is also found to be nearly constant for the simulations of exponential growing cells following the adder per origin model (shown as magenta diamonds). (Inset) Shown as green squares is the elongation speed vs age plot for simulations of N = 2500 cell cycles of linearly growing cells following the adder model. As expected for linear growth, the binned elongation speed trend remains approximately constant with age. The growth rate trends for the models with exponential growth agree with that of Figure 3B. The elongation speed trend (inset) also agrees with the trend in Figure 3\u2014figure supplement 3.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig4-figsupp2-v4.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A,C,E) The binned growth rate trend is shown in red as a function of time from the onset of constriction (t-$T_{n}$). Time t- $T_{n}=$ 0 corresponds to the onset of constriction for all cells considered. The plots are shown for (A). Alanine medium. (C) Glycerol medium. (E) Glucose-cas medium. The error bars in all three plots represent the standard deviation of the growth rate in each bin scaled by $\\frac{1}{\\sqrt{N}}$, where N is the number of cells in that bin. (B,D,F) The average generation time for the cells present in each bin of (B) Alanine medium (A) (D) Glycerol medium (C) (F) Glucose-cas medium (E) are shown. The vertical dashed lines represent the time range within which the average generation time remains approximately constant. The growth rate trends within this time range are consistent with that in Figure 4 for the respective growth condition as there is negligible inspection bias.\n\nThe above question of mode of growth within a cell cycle can also be analyzed in relation to a specific event. Several studies have pointed to a change in growth rate at the onset of constriction (Reshes et al., 2008; Banerjee et al., 2017). This change in growth rate can be probed using growth rate vs time plots where time is taken relative to the onset of constriction as shown in Figure 4\u2014figure supplement 2. These plots show a decrease in growth rates at the two extremes of the plot. These decreases are due to inspection bias, where the growth rate trend is affected by the biased contribution of cells with a higher than average generation time or equivalently slower growth rate (see \u2018Growth rate vs time from specific event plots are affected by inspection bias\u2019 section for extended discussion). Inspection bias is also observed when timing is considered relative to other cell events such as cell birth (see \u2018Growth rate vs time from specific event plots are affected by inspection bias\u2019 section and Figure 3\u2014figure supplement 2).\n\nIt might not always be possible to obtain growth rate trajectories as a function of time/cell age. Godin et al. instead obtained the instantaneous biomass growth speed ($\\frac{d\u2062M}{d\u2062t}$) as a function of its buoyant mass ($M$) (Godin et al., 2010). On applying linear regression for instantaneous mass growth speed vs mass, we expect the slope of the best linear fit obtained to provide the average growth rate ($\u27e8\\frac{1}{M}\u2062\\frac{d\u2062M}{d\u2062t}\u27e9$) under the assumption of exponential growth while for linear growth the intercept provides the average growth speed. Using this method, biomass was suggested to be growing exponentially. This method can be applied to study the length growth rate within the cell cycle by plotting elongation speed as a function of length (Cadart et al., 2019). We find that the binned data trend and the best linear fit of this plot follow the expected trend for linear and exponential growth as shown in Figure 3\u2014figure supplement 3B and Figure 3\u2014figure supplement 3D, respectively, for a cell cycle model where division is controlled via an adder mechanism from birth. However, the trend obtained appears to be model-dependent as shown in Figure 3\u2014figure supplement 3F where the underlying cell cycle model used in the simulations is the adder per origin model. For this model, the binned data trend is found to be non-linear with the growth rate speeding up at large sizes, despite the synthetic data being generated for perfectly exponential growth. This non-linear trend can lead to growth rate being misinterpreted as non-exponential within the cell cycle (see \u2018Results of elongation speed vs size plots are model-dependent\u2019 section for details). Thus, an analysis using the elongation speed vs size plot must be accompanied with an underlying cell cycle model.\n\nIn summary, we found that the growth rate vs age plot was a consistent method to determine the changes in growth rate within a cell cycle. Unlike the growth rate vs age plots, the inference from the growth rate vs size plots was found to be model-dependent. Using the growth rate vs age plots, we show that the length growth of E. coli can be faster than exponential.\n\n## Discussion\n\nStatistical methods such as binning and linear regression are useful for interpreting data and generating hypotheses for biological models. However, we show in this paper that predicting the relationships between experimentally measured quantities based on these methods might lead to misinterpretations. Constructing a generic model and verifying the statistical analysis on the synthetic data generated by this model provides a more rigorous way to mitigate these risks.\n\nIn the paper, we provide examples in which $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ and $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plots fail as a method to infer the mode of growth. The binned data trend and the best linear fit for the $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plot was found to be dependent upon the noise parameters in the class of models where birth controlled division (Equation 2). We also show that $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot could not differentiate between exponential and linear modes of growth (Figures 2D and 3A). Thus, we conclude that the best linear fit for the above plots might not be a suitable method to infer the mode of growth but they are just one of the many correlations which the correct cell cycle model should be able to predict.\n\nWe found growth rate vs age and elongation speed vs age plots to be consistent methods to probe growth within a cell cycle. The method was validated using simulations of various cell cycle models (such as the adder, and adder per origin model, where in the latter, control over division is coupled to DNA replication) and the binned growth rate trend agreed closely with the underlying mode of growth for the wide range of models considered (Figure 3B). In the case of growth rate vs time plots, it was important to take into consideration the effects of inspection bias. We used cell cycle models to show the time regimes where inspection bias could be observed (Figure 3\u2014figure supplement 2). In the regime with negligible inspection bias, we could reconcile the growth rate trend obtained using growth rate vs age (Figure 4A-C) and growth rate vs time plots (Figure 4\u2014figure supplement 2). The authors in Messelink et al., 2020 circumvent inspection bias in the elongation speed vs time from birth plots by focusing their analysis on the time period from cell birth to the generation time of the fastest dividing cell. The authors of Panlilio et al., 2021, while investigating the division behavior in the cells undergoing nutrient shift within their cell cycle, use both models and experimental data from steady-state conditions to identify inspection bias. These serve as good examples of using models to aid data analysis.\n\nStatistics obtained from linear regression such as in Figure 1A help narrow down the landscape of cell cycle models, but many have potential pitfalls lurking which might lead to misinterpretations (Figures 2C and 3A). There are additional issues beyond those concerning linear regression and binning discussed here. For example, Willis and Huang, 2017 discusses Simpson\u2019s paradox (Simpson, 1951) where distinct cellular sub-populations might lead to erroneous interpretation of cell cycle mechanisms. Examples of such distinct sub-populations are found in asymmetrically dividing bacteria such as M. smegmatis (Aldridge et al., 2012; Logsdon et al., 2017). Another source of misinterpretation could arise from presence of measurement errors. Throughout this work, we deal with intrinsic noise and neglect measurement error. However, when measurement noise affects both x-axis and y-axis variables, the slope of the best linear fit is biased towards zero. This can lead to potentially related variables being misinterpreted as uncorrelated. Measurement errors can, however, be handled based on a model. Using a model which includes measurement error as a source of noise, we can guide the binning analysis. Using this methodology, we verified that typical measurement errors ($\u22480.02\u2062L_{b}$) Messelink et al., 2020; Kaiser et al., 2018 have negligible effects on the growth rate trends obtained from the experimental data used in our work.\n\nSingle cell size in E. coli has been reported to grow exponentially (Campos et al., 2014; Wang et al., 2010; Cermak et al., 2016; Soifer et al., 2016; Iyer-Biswas et al., 2014; Godin et al., 2010), linearly (Mitchison, 2005), bilinearly (Kubitschek, 1981) or trilinearly (Reshes et al., 2008). These are inconsistent with our observations in Figure 4A-C where we find that growth can be super-exponential. The non-monotonic behavior in the fastest-growth condition is reminiscent of the results reported in Nordholt et al., 2020 for B. subtilis. The authors of Nordholt et al., 2020 attribute the increase in growth rate to a multitude of cell cycle processes such as initiation of DNA replication, divisome assembly, septum formation. In the two slower growth conditions (Figure 4A-B), we find that the growth rate increase starts before the time when the septal cell wall synthesis starts i.e., the constriction event. However, in the fastest growth condition (Figure 4C), the timing of growth rate increase seems to coincide with the onset of constriction which is in agreement with previous findings (Reshes et al., 2008; Banerjee et al., 2017).\n\nIt is important to distinguish between length growth and biomass growth. Oldewurtel et al., 2021 measures biomass and cell volume and finds the mass-density variations within the cell-cycle to be small. In this paper, since we observe the length growth to be non-exponential (Figure 4), it remains to be seen whether biomass growth also follows a similar non-exponential behavior or if it is exponential as previously suggested (Godin et al., 2010; Oldewurtel et al., 2021).\n\nIn conclusion, the paper draws the attention of the readers to the careful use of statistical methods such as linear regression and binning. Although shown in relation to cell growth, this approach to data analysis seems ubiquitous. The general framework of carrying out data analysis is presented in Figure 5. It proposes the construction of a generative model based on the experimental data collected. Of course, we do not always know whether the model used is an adequate description of the system. What is the fate of the methodology described here in such cases? First, we should be reminded of Box\u2019s famous quote \u2018all models are wrong, some are useful\u2019. The goal of a model is not to provide as accurate a description of a system as possible, but rather to capture the essence of the phenomena we are interested in and stimulate further ideas and understanding. In our context, the goal of the model is to provide a rigorous framework in which data analysis tools can be critically tested. If verified within the model, it is by no means proof of the success of the model and the method itself, and further comparisons with the data may falsify it leading to the usual (and productive) cycle of model rejection and improvement via comparison with experiments. However, if the best model we have at hand shows that the data analysis method is non-informative, as we have shown here on several methods used to identify the mode of growth, then clearly we should revise the analysis as it provides us with a non-consistent framework, where our modeling is at odds with our data analysis. Furthermore, testing the methods on a simplified model is still advantageous compared with the option of using the methods without any validation. To mitigate the risk of using irrelevant models, in some cases it may be desirable to test the analysis methods on as broad a class of models as possible as we have done in the paper, for example by our use of a general value of $\\alpha$ to describe the size-control strategy within our models. Thus, guided by the model, the data analysis methods can be ultimately applied to experimental data and underlying functional relationships can be inferred. Reiterating the message of the authors in Hogg et al., 2010, the data analysis using this framework aims to justify the methods being used, thus, reducing arbitrariness and promoting consensus among the scientists working in the field.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72565/elife-72565-fig5-v4.jpg)\n\n## Materials and methods\n\n### Experimental methods\n\nStrain engineering: STK13 strain (\u0394ftsN::frt-Ypet-FtsN, \u0394dnaN::frt-mCherry-dnaN) is derivative of E. coli K12 BW27783 (CGSC#: 12119) constructed by $\\lambda$-Red engineering (Datsenko and Wanner, 2000) and by P1 transduction (Thom, 2007). For chromosomal replacement of ftsN with fluorescence derivative, we used primers carrying 40nt tails with identical sequence to the ftsN chromosomal locus and a plasmid carrying a copy of ypet preceded by a kanamycin resistance cassette flanked by frt sites (frt-kanR-frt-Ypet-linker) as PCR template (a kind gift from R. Reyes-Lamothe McGill University, Canada; Reyes-Lamothe et al., 2010). The resulting PCR product was transformed by electroporation into a strain carrying the $\\lambda$-Red-expressing plasmid pKD46. Colonies were selected by kanamycin resistance, verified by fluorescence microscopy and by PCR using primers annealing to regions flanking ftsN gene. After removal of kanamycin resistance by expressing the Flp recombinase from plasmid pCP20 (Cherepanov and Wackernagel, 1995), we transferred the mCherry-dnaN gene fusion (BN1682 strain; a kind gift from Nynke Dekker from TUDelft, The Netherlands, Moolman et al., 2014) into the strain by P1 transduction. To minimize the effect of the insertion on the expression levels of the gene we removed the kanamycin cassette using Flp recombinase expressing plasmid pCP20.\n\nCells growth, preparation, and culturing E. coli in mother machine microfluidic devices: All cells were grown and imaged in M9 minimal medium (Teknova) supplemented with 2 mM magnesium sulfate (Sigma) and corresponding carbon sources at 28 \u00b0C. Three different carbon sources were used: 0.5 % glucose supplemented by 0.2 % casamino acids (Cas) (Sigma), 0.3 % glycerol (Fisher), and 0.3 % alanine (Fisher) supplemented with 1 x trace elements (Teknova).\n\nFor microscopy, we used mother machine microfluidic devices made of PDMS (polydimethylsiloxane). These were fabricated following to previously described procedure (Yang et al., 2018). To grow and image cells in microfluidic device, we pipetted 2\u20133 \u00b5l of resuspended concentrated overnight culture of OD600\u223c 0.1 into main flow channel of the device and let cells to populate the dead-end channels. Once these channels were sufficiently populated (about 1 hr), tubing was connected to the device, and the flow of fresh M9 medium with BSA (0.75 \u00b5g/ml) was started. The flow was maintained at 5 \u00b5l/min during the entire experiment by an NE-1000 Syringe Pump (New Era Pump Systems, NY). To ensure steady-state growth, the cells were left to grow in channels for at least 14 hr before imaging started.\n\nMicroscopy: A Nikon Ti-E inverted epifluorescence microscope (Nikon Instruments, Japan) with a 100 X (NA = 1.45) oil immersion phase contrast objective (Nikon Instruments, Japan), was used for imaging the bacteria. Images were captured on an iXon DU897 EMCCD camera (Andor Technology, Ireland) and recorded using NIS-Elements software (Nikon Instruments, Japan). Fluorophores were excited by a 200 W Hg lamp through an ND8 neutral density filter. A Chroma 41,004 filtercube was used for capturing mCherry images, and a Chroma 41,001 (Chroma Technology Corp., VT) for Ypet images. A motorized stage and a perfect focus system were utilized throughout time-lapse imaging. Images in all growth conditions were obtained at 4 min frame rate.\n\nImage analysis: Image analysis was carried out using Matlab (MathWorks, MA) scripts based on Matlab Image Analysis Toolbox, Optimization Toolbox, and DipImage Toolbox (https://www.diplib.org/). Cell lengths were determined based on segmented phase contrast images. Dissociation of Ypet-FtsN label from cell middle was used to determine the exact timing of cell divisions.\n\nFurther experimental details can also be found in Tiruvadi-Krishnan et al., 2021.\n\n### Model\n\nConsider a model of cell cycle characterized by two events: cell birth and division. In our model, we assume that, barring the noise, cells tend to divide at a particular size vd given size at birth vb, via some regulatory mechanism. Hence, we can write vd as a function of vb, f(vb). Amir, 2014 provides a framework to capture the regulatory mechanisms by choosing f(vb) = 2 $v_{b}^{1-\\alpha}\u2062v_{0}^{\\alpha}$. v0 is the typical size at birth and $\\alpha$ captures the strength of regulation strategy. $\\alpha$ = 0 corresponds to the timer model where division occurs after a constant time from birth, and $\\alpha$ = 1 is the sizer where a cell divides on reaching a critical size. $\\alpha$ = 1/2 can be shown to be equivalent to an adder where division is controlled by addition of constant size from birth (Amir, 2014). From here on, we would be using the length of the cell ($L_{b}$, $L_{d}$, etc.) as a proxy for size (vb, vd, etc.). To reiterate, the length growth is not the same as cell volume growth as shown in Appendix 1. All of the variable definitions are summarized in Supplementary file 1. We also define $l_{b}=\\frac{L_{b}}{\u27e8L_{b}\u27e9}$ and $l_{d}=\\frac{L_{d}}{\u27e8L_{b}\u27e9}$. Using this, we can write the division strategy f(lb) to be ld = f(lb) = 2 $l_{b}^{1-\\alpha}$. The total division size obtained will be a combination of f(lb) and noise in the division timing, the source of which could be the stochasticity in biochemical reactions controlling division.\n\nWe will assume that division is perfectly symmetric i.e., size at birth in the $(n+1)^{t\u2062h}$ generation ($l_{b}^{n+1}$) is half of size at division in the $n^{t\u2062h}$ generation ($l_{d}^{n}$). Using the size additive division timing noise ($\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$) and f(lb) specified above, we obtain,\n\n$$\nx_{n+1}=(1-\\alpha)\u2062x_{n}+ln\u2061(1+\\frac{\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{2\u2062(1+x_{n})^{1-\\alpha}}),\n$$\n\nwhere xn = $ln\u2061(l_{b}^{n})$. Size at birth ($L_{b}$) is narrowly distributed, hence $l_{b}\u22481$ and we can write $x$ = $ln\u2061(l_{b})$ = $ln\u2061(1+\\delta)$ where $\\delta$ is a small number. We obtain $x\u226a1$ and,\n\n$$\nx\u2248\\delta=l_{b}-1.\n$$\n\nThe size additive noise, $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ is assumed to be small and has a normal distribution with mean 0 and standard deviation $\\sigma_{b\u2062d}$. Note that $\\sigma_{b\u2062d}$ is a dimensionless quantity. Since $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ is assumed to be small and $x_{n}\u226a1$, we can Taylor expand the last term of Equation 4 to first order,\n\n$$\nx_{n+1}\u2248(1-\\alpha)\u2062x_{n}+\\frac{\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{2}.\n$$\n\nEquation 6 shows a recursive relation for cell size and it is agnostic of the mode of growth. We will show later for exponential growth that replacing the size additive noise with time additive noise does not change the structure of Equation 6.\n\n### Exponential growth\n\nNext, we will try to obtain the generation time ($T_{d}$) in the case of exponentially growing cells. For exponential growth, the time at division $T_{d}$ is given by,\n\n$$\nT_{d}=\\frac{1}{\\lambda}\u2062ln\u2061(\\frac{L_{d}}{L_{b}}).\n$$\n\nFor simplicity, we will assume a constant growth rate ($\\lambda$) within the cell-cycle. Growth rate is fixed at the start of the cell-cycle and is given by $\\lambda$ = $\u27e8\\lambda\u27e9$ + $\u27e8\\lambda\u27e9\u2062\u03be\u2062(0,C\u2062V_{\\lambda})$, where $\u27e8\\lambda\u27e9$ is the mean growth rate and $\u03be\u2062(0,C\u2062V_{\\lambda})$ is assumed to be small with a normal distribution that has mean 0 and standard deviation $CV_{\\lambda}$ . $CV_{\\lambda}$ denotes the coefficient of variation (CV) of the growth rate. This captures the variability in growth rate within cells arising from the stochastic nature of biochemical reactions occurring within the cell.\n\n#### Size additive noise\n\nHere we will calculate the generation time using the division strategy f(lb) and a size additive division timing noise ($\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$) as described previously. On substituting $L_{d}=(f\u2062(l_{b})+\u03b6_{s})\u2062\u27e8L_{b}\u27e9$ into Equation 7 we obtain,\n\n$$\nT_{d}=\\frac{1}{\u27e8\\lambda\u27e9+\u27e8\\lambda\u27e9\u2062\u03be\u2062(0,C\u2062V_{\\lambda})}\u2062ln\u2061(\\frac{2\u2062l_{b}^{1-\\alpha}+\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{l_{b}}),\n$$\n\nwhere the size additive noise ($\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$) is Gaussian with mean 0 and standard deviation $\\sigma_{b\u2062d}$.\n\nThe noise $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ is assumed to be small, and we obtain to first order,\n\n$$\nT_{d}\u2248\\frac{1}{\\lambda}\u2062(ln\u2061(2)-\\alpha\u2062x_{n}+\\frac{\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{2\u2062(1+x_{n})^{1-\\alpha}}).\n$$\n\nSince $x_{n}\u226a$ 0, on Taylor expanding $\\frac{1}{(1+x_{n})^{1-\\alpha}}$ to first order,\n\n$$\nT_{d}\u2248\\frac{1}{\\lambda}\u2062(ln\u2061(2)-\\alpha\u2062x_{n}+\\frac{\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{2}\u2062(1+(1-\\alpha)\u2062x_{n})).\n$$\n\nAssuming noise in growth rate to be small and expanding to first order, we obtain,\n\n$$\nT_{d}\u2248\\frac{1}{\u27e8\\lambda\u27e9}\u2062(ln\u2061(2)-\\alpha\u2062x_{n}-ln\u2061(2)\u2062\u03be\u2062(0,C\u2062V_{\\lambda})+\\frac{\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{2}).\n$$\n\nEquation 11 gives the generation time for the class of models where birth controls division under the assumption that growth is exponential.\n\n#### Time additive noise\n\nNext, we ensure that the recursive relation for size at birth and the expression for the generation time given by Equations 6 and 11, respectively, are robust to the nature of noise assumed. In this section, the generation time is obtained using the division strategy f(lb) as described previously along with a time additive division timing noise ($\\frac{\u03b6}{\u27e8\\lambda\u27e9}$). In such a case, $T_{d}$ is obtained to be,\n\n$$\nT_{d}=\\frac{1}{\\lambda}\u2062(ln\u2061(2)-\\alpha\u2062x_{n})+\\frac{\u03b6\u2062(0,\\sigma_{n})}{\u27e8\\lambda\u27e9}.\n$$\n\nThe time additive noise, $\\frac{\u03b6\u2062(0,\\sigma_{n})}{\u27e8\\lambda\u27e9}$, is assumed to be small and has a normal distribution with mean 0 and standard deviation $\\frac{\\sigma_{n}}{\u27e8\\lambda\u27e9}$. Note that $\\sigma_{n}$ is a dimensionless quantity.\n\nAssuming noise in growth rate to be small, we find $T_{d}$ to first order to be,\n\n$$\nT_{d}\u2248\\frac{1}{\u27e8\\lambda\u27e9}\u2062(ln\u2061(2)-\\alpha\u2062x_{n}-ln\u2061(2)\u2062\u03be\u2062(0,C\u2062V_{\\lambda})+\u03b6\u2062(0,\\sigma_{n})).\n$$\n\nEquation 13 is same as Equation 11, if the time additive noise term, $\u03b6\u2062(0,\\sigma_{n})$, in Equation 12 is replaced by $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})/2$. Using Equation 13, the variance in $T_{d}$ ($\\sigma_{t}^{2}$) is,\n\n$$\n\\sigma_{t}^{2}=\\frac{1}{\u27e8\\lambda\u27e9^{2}}\u2062(ln^{2}\u2061(2)\u2062C\u2062V_{\\lambda}^{2}+\\frac{2\u2062\\sigma_{n}^{2}}{2-\\alpha}).\n$$\n\nFor exponential growth, we also find,\n\n$$\nln\u2061(\\frac{L_{d}}{L_{b}})=x_{n+1}-x_{n}+ln\u2061(2)=\\lambda\u2062T_{d}.\n$$\n\nOn substituting Equation 12 into Equation 15 we obtain to first order,\n\n$$\nx_{n+1}\u2248(1-\\alpha)\u2062x_{n}+\u03b6\u2062(0,\\sigma_{n}).\n$$\n\nOn replacing the time additive noise term, $\u03b6\u2062(0,\\sigma_{n})$, in Equation 16 with $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})/2$, we recover the recursive relation for size at birth obtained in the case of size additive noise shown in Equation 6. Hence, the model is insensitive to noise being size additive or time additive with a simple mapping for going from one noise type to another in the small noise limit.\n\nAt steady state, $x$ has a normal distribution with mean 0 and variance $\\sigma_{x}^{2}$ whose value is given by,\n\n$$\n\\sigma_{x}^{2}=\\frac{\\sigma_{n}^{2}}{\\alpha\u2062(2-\\alpha)}.\n$$\n\nWe note that some of the derivations above have also been presented in Eun et al., 2018, but are provided here for completeness.\n\n#### Predicting the results of statistical constructs applied on ln\u2061(LdLb) vs \u27e8\u03bb\u27e9\u2062Td and \u27e8\u03bb\u27e9\u2062Td vs ln\u2061(LdLb)\n\n##### Obtaining the best linear fit\n\nNext, we calculate the equation for the best linear fit for the choice of $ln\u2061(\\frac{L_{d}}{L_{b}})$ as y-axis and $\u27e8\\lambda\u27e9\u2062T_{d}$ as x-axis and vice versa. For simplicity, in this section, we will consider time additive division timing noise. However, the results obtained here will hold for size additive noise as well because the model is robust to the type of noise added as shown in the previous section.\n\nFirst, we calculate the correlation coefficient ($\u03c1_{e\u2062x\u2062p}$) for $ln\u2061(\\frac{L_{d}}{L_{b}})$ and time of division $T_{d}$,\n\n$$\n\u03c1_{exp}=\\frac{\u27e8(ln\u2061(\\frac{L_{d}}{L_{b}})\u2212\u27e8ln\u2061(\\frac{L_{d}}{L_{b}})\u27e9)(T_{d}\u2212\u27e8T_{d}\u27e9)\u27e9}{\\sigma_{l}\\sigma_{t}},\n$$\n\nwhere $\\sigma_{l}$ is the standard deviation in $ln\u2061(\\frac{L_{d}}{L_{b}})$. Using Equations 15 and 16 we obtain,\n\n$$\nln\u2061(\\frac{L_{d}}{L_{b}})\u2248ln\u2061(2)-\\alpha\u2062x_{n}+\u03b6\u2062(0,\\sigma_{n}).\n$$\n\nSubstituting Equations 13 and 19 into the numerator of Equation 18,\n\n$$\n\u27e8(ln\u2061(\\frac{L_{d}}{L_{b}})-\u27e8ln\u2061(\\frac{L_{d}}{L_{b}})\u27e9)\u2062(T_{d}-\u27e8T_{d}\u27e9)\u27e9=\u27e8(-\\alpha\u2062x_{n}+\u03b6\u2062(0,\\sigma_{n}))\u2062\\frac{(-\\alpha\u2062x_{n}-ln\u2061(2)\u2062\u03be\u2062(0,C\u2062V_{\\lambda})+\u03b6\u2062(0,\\sigma_{n}))}{\u27e8\\lambda\u27e9}\u27e9.\n$$\n\nAs the terms $\u03b6\u2062(0,\\sigma_{n})$, $\u03be\u2062(0,C\u2062V_{\\lambda})$ and xn are independent of each other, $\u27e8\u03be\u2062(0,C\u2062V_{\\lambda})\u2062\u03b6\u2062(0,\\sigma_{n})\u27e9$ = 0, $\u27e8\u03be\u2062(0,C\u2062V_{\\lambda})\u2062x_{n}\u27e9$ = 0 and $\u27e8x_{n}\u2062\u03b6\u2062(0,\\sigma_{n})\u27e9$ = 0. Equation 20 simplifies to,\n\n$$\n\u27e8(ln\u2061(\\frac{L_{d}}{L_{b}})-\u27e8ln\u2061(\\frac{L_{d}}{L_{b}})\u27e9)\u2062(T_{d}-\u27e8T_{d}\u27e9)\u27e9=(\\alpha^{2}\u2062\\sigma_{x}^{2}+\\sigma_{n}^{2})\u2062\\frac{1}{\u27e8\\lambda\u27e9}.\n$$\n\nThe variance of $ln\u2061(\\frac{L_{d}}{L_{b}})$ obtained using Equation 19 is,\n\n$$\n\\sigma_{l}^{2}=\\alpha^{2}\u2062\\sigma_{x}^{2}+\\sigma_{n}^{2}=\\frac{2\u2062\\sigma_{n}^{2}}{2-\\alpha}.\n$$\n\nInserting Equations 14, 21 and 22 into Equation 18, we get,\n\n$$\n\u03c1_{e\u2062x\u2062p}=\\sqrt{\\frac{1}{1+\\frac{(1-\\frac{\\alpha}{2})\u2062ln^{2}\u2061(2)\u2062C\u2062V_{\\lambda}^{2}}{\\sigma_{n}^{2}}}}.\n$$\n\nThe slope of a linear regression line is given by,\n\n$$\nm=\u03c1\u2062\\frac{\\sigma_{y}}{\\sigma_{x}},\n$$\n\nwhere $\\sigma_{x}$, $\\sigma_{y}$, and $\u03c1$ are the standard deviation of the x-variable, the standard deviation of the y-variable and the correlation coefficient of the (x,y) pair, respectively. The intercept is,\n\n$$\nc=\u27e8y\u27e9-m\u2062\u27e8x\u27e9.\n$$\n\nOn the x-axis, we plot $\u27e8\\lambda\u27e9\u2062T_{d}$ and the y-axis is chosen as $ln\u2061(\\frac{L_{d}}{L_{b}})$. The slope for this choice ($m_{t\u2062l}$) can be calculated by,\n\n$$\nm_{t\u2062l}=\u03c1_{e\u2062x\u2062p}\u2062\\frac{\\sigma_{l}}{\\sigma_{t}\u2062\u27e8\\lambda\u27e9}.\n$$\n\nOn substituting the values we get,\n\n$$\nm_{tl}=\\frac{1}{1+\\frac{(1\u2212\\frac{\\alpha}{2})ln^{2}\u2061(2)CV_{\\lambda}^{2}}{\\sigma_{n}^{2}}}.\n$$\n\nOnly for $C\u2062V_{\\lambda}\u226a\\sigma_{n}$ we would expect a slope close to 1.\n\nThe intercept ($c_{tl}$) for the $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9T_{d}$ plot is given by,\n\n$$\nc_{tl}=\u27e8ln\u2061(\\frac{L_{d}}{L_{b}})\u27e9\u2212m_{tl}\u27e8\u27e8\\lambda\u27e9T_{d}\u27e9=ln\u2061(2)(1\u2212\\frac{1}{1+\\frac{(1\u2212\\frac{\\alpha}{2})ln^{2}\u2061(2)CV_{\\lambda}^{2}}{\\sigma_{n}^{2}}}).\n$$\n\nHowever, if we choose the x-axis as $ln\u2061(\\frac{L_{d}}{L_{b}})$ and the y-axis is chosen as $\u27e8\\lambda\u27e9\u2062T_{d}$, we obtain the slope $m_{l\u2062t}$,\n\n$$\nm_{l\u2062t}=\u03c1_{e\u2062x\u2062p}\u2062\\frac{\\sigma_{t}\u2062\u27e8\\lambda\u27e9}{\\sigma_{l}}.\n$$\n\nOn substituting the values we obtain $m_{l\u2062t}$ = 1 independent of the noise parameters and find that the intercept is zero.\n\n##### Non-linearity in binned data\n\nIn the Main text, for the plot $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$, we find the binned data to be non-linear (see Figure 2C of the Main text). In this section, we explain the non-linearity observed using the model developed in the previous sections.\n\nBinning data based on the x-axis means taking an average of the y-variable conditioned on the value of the x-variable. Mathematically, this amounts to calculating $E[y\u2223x]$ i.e., the conditional expectation of the y-variable given that x is fixed. In our case, we need to calculate $E[ln\u2061(\\frac{L_{d}}{L_{b}})\u2223\u27e8\\lambda\u27e9T_{d}]$ . $ln\u2061(\\frac{L_{d}}{L_{b}})$= $\\lambda\u2062T_{d}$ by definition of exponential growth, hence,\n\n$$\nE[ln\u2061(\\frac{L_{d}}{L_{b}})\u2223\u27e8\\lambda\u27e9T_{d}]=E[\\lambdaT_{d}\u2223\u27e8\\lambda\u27e9T_{d}].\n$$\n\nSince $T_{d}$ is fixed, this is equivalent to calculating $E[\\lambda\u2223T_{d}]$. Using Equation 13,\n\n$$\nE[\\lambda\u2223T_{d}]=\\frac{\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}\\lambdap(x,\u03be,\u03b6)\u00a0\\delta(T_{d}\u2212(\\frac{ln\u2061(2)}{\u27e8\\lambda\u27e9}\u2212\\alpha\\frac{x}{\u27e8\\lambda\u27e9}\u2212\\frac{ln\u2061(2)\u03be}{\u27e8\\lambda\u27e9}+\\frac{\u03b6}{\u27e8\\lambda\u27e9})\u00a0dx\u00a0d\u03be\u00a0d\u03b6)}{\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}p(x,\u03be,\u03b6)\u00a0\\delta(T_{d}\u2212(\\frac{ln\u2061(2)}{\u27e8\\lambda\u27e9}\u2212\\alpha\\frac{x}{\u27e8\\lambda\u27e9}\u2212\\frac{ln\u2061(2)\u03be}{\u27e8\\lambda\u27e9}+\\frac{\u03b6}{\u27e8\\lambda\u27e9})\u00a0dx\u00a0d\u03be\u00a0d\u03b6)}.\n$$\n\n$p\u2062(x,\u03be,\u03b6)$ is the joint probability distribution of $x$ and noise parameters $\u03be$ and $\u03b6$. Since, they are independent of each other, the joint distribution is product of the individual distributions $f_{1}\u2062(x)$, $f_{2}\u2062(\u03be)$ and $f_{3}\u2062(\u03b6)$, the distributions being Gaussian with mean 0 and standard deviation $\\sigma_{x}$, $C\u2062V_{\\lambda}$ and $\\sigma_{n}$, respectively. $\\sigma_{x}$, $\\sigma_{n}$ are related by Equation 17. Since $x$, $\u03be$, and $\u03b6$ are narrowly distributed around zero, the contribution from large positive or negative values is extremely small. This ensures that $T_{d}$ is also close to its mean and non-negative despite the limits of the integral being $-\u221e$ to $\u221e$. Using $\\lambda$ = $\u27e8\\lambda\u27e9+\u27e8\\lambda\u27e9\u2062\u03be\u2062(0,C\u2062V_{\\lambda})$ in Equation 31,\n\n$$\nE[\\lambda\u2223T_{d}]=\u27e8\\lambda\u27e9(1+\\frac{\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}\u03bef_{1}(x)f_{2}(\u03be)f_{3}(\u03b6)\u00a0\\delta(T_{d}\u2212(\\frac{ln\u2061(2)}{\u27e8\\lambda\u27e9}\u2212\\alpha\\frac{x}{\u27e8\\lambda\u27e9}\u2212\\frac{ln\u2061(2)\u03be}{\u27e8\\lambda\u27e9}+\\frac{\u03b6}{\u27e8\\lambda\u27e9}))\u00a0dx\u00a0d\u03be\u00a0d\u03b6}{\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}f_{1}(x)f_{2}(\u03be)f_{3}(\u03b6)\u00a0\\delta(T_{d}\u2212(\\frac{ln\u2061(2)}{\u27e8\\lambda\u27e9}\u2212\\alpha\\frac{x}{\u27e8\\lambda\u27e9}\u2212\\frac{ln\u2061(2)\u03be}{\u27e8\\lambda\u27e9}+\\frac{\u03b6}{\u27e8\\lambda\u27e9}))\u00a0dx\u00a0d\u03be\u00a0d\u03b6}).\n$$\n\nOn evaluating the integrals, we obtain,\n\n$$\nE[\\lambda\u2223T_{d}]=\u27e8\\lambda\u27e9(1+\\frac{1}{1+\\frac{2}{2\u2212\\alpha}\\frac{\\sigma_{n}^{2}}{CV_{\\lambda}^{2}ln^{2}\u2061(2)}}\u2212\\frac{\\frac{\u27e8\\lambda\u27e9T_{d}}{ln\u2061(2)}}{1+\\frac{2}{2\u2212\\alpha}\\frac{\\sigma_{n}^{2}}{CV_{\\lambda}^{2}ln^{2}\u2061(2)}}).\n$$\n\nThus, the trend of binned data is found to be,\n\n$$\nE[ln\u2061(\\frac{L_{d}}{L_{b}})\u2223\u27e8\\lambda\u27e9T_{d}]=\u27e8\\lambda\u27e9T_{d}(1+\\frac{1}{1+\\frac{2}{2\u2212\\alpha}\\frac{\\sigma_{n}^{2}}{CV_{\\lambda}^{2}ln^{2}\u2061(2)}}\u2212\\frac{\\frac{\u27e8\\lambda\u27e9T_{d}}{ln\u2061(2)}}{1+\\frac{2}{2\u2212\\alpha}\\frac{\\sigma_{n}^{2}}{CV_{\\lambda}^{2}ln^{2}\u2061(2)}}).\n$$\n\nIn the regime $C\u2062V_{\\lambda}\u226a\\sigma_{n}$ , the last two terms on the RHS of Equation 34 vanish and the binned data follows the trend y = x.\n\nFor the $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot, we need to calculate $E[\u27e8\\lambda\u27e9T_{d}\u2223ln\u2061(\\frac{L_{d}}{L_{b}})]$. Using Equations 13 and 19, we obtain,\n\n$$\n\u27e8\\lambda\u27e9\u2062T_{d}=ln\u2061(\\frac{L_{d}}{L_{b}})-ln\u2061(2)\u2062\u03be\u2062(0,C\u2062V_{\\lambda}).\n$$\n\n$ln\u2061(\\frac{L_{d}}{L_{b}})$ is independent of $\u03be\u2062(0,C\u2062V_{\\lambda})$. Using this, we can write $E[\u27e8\\lambda\u27e9T_{d}\u2223ln\u2061(\\frac{L_{d}}{L_{b}})]$ as,\n\n$$\nE[\u27e8\\lambda\u27e9T_{d}\u2223ln\u2061(\\frac{L_{d}}{L_{b}})]=\\frac{\\int_{\u2212\u221e}^{\u221e}\\int_{\u2212\u221e}^{\u221e}(\u27e8\\lambda\u27e9T_{d})\u00a0f_{2}(\u03be)\u00a0f_{4}(ln\u2061(\\frac{L_{d}}{L_{b}}))\u00a0\\delta(\u27e8\\lambda\u27e9T_{d}\u00a0\u2212(ln\u2061(\\frac{L_{d}}{L_{b}})\u2212ln\u2061(2)\u03be))\u00a0d(\u27e8\\lambda\u27e9T_{d})\u00a0d\u03be}{f_{4}(ln\u2061(\\frac{L_{d}}{L_{b}}))}.\n$$\n\nNote that the integral over $\u27e8\\lambda\u27e9\u2062T_{d}$ goes from $-\u221e$ to $\u221e$ although $\u27e8\\lambda\u27e9\u2062T_{d}$ cannot be negative. As before, this is not an issue because we assume $\u27e8\\lambda\u27e9\u2062T_{d}$ to be tightly regulated around $ln\u2061(2)$ and the contribution to the integral from $-\u221e$ to 0 is negligible. $f_{4}\u2062(ln\u2061(\\frac{L_{d}}{L_{b}}))$ denotes the probability distribution for $ln\u2061(\\frac{L_{d}}{L_{b}})$, the distribution being Gaussian with mean $ln\u2061(2)$, and standard deviation $\\sigma_{l}$ which is calculated in Equation 22. Putting the Gaussian form of $f_{2}\u2062(\u03be)$ into the integral and simplifying we get,\n\n$$\nE[\u27e8\\lambda\u27e9T_{d}\u2223ln\u2061(\\frac{L_{d}}{L_{b}})]=ln\u2061(\\frac{L_{d}}{L_{b}}).\n$$\n\nThe trend of binned data to first order in noise and $x$ is $E[\u27e8\\lambda\u27e9T_{d}\u2223ln\u2061(\\frac{L_{d}}{L_{b}})]$ = $ln\u2061(\\frac{L_{d}}{L_{b}})$. This is shown in Figure 2D of the Main text where the binned data follows the y = x line.\n\n### Linear growth\n\nIn this section, we will focus on finding the equation of the best linear fit for relevant plots in the case of linear growth. The time at division for linear growth is given by,\n\n$$\nT_{d}=\\frac{L_{d}-L_{b}}{\\lambda^{\u2032}}.\n$$\n\nNote that $\\lambda^{\u2032}$ has units of [length/time] and is defined as the elongation speed. This is different from the exponential growth rate which has units [1/time]. Here, we will work with the normalized length at birth (lb) and division (ld),\n\n$$\nT_{d}=\\frac{l_{d}-l_{b}}{\\lambda_{l\u2062i\u2062n}}.\n$$\n\nConsider the normalized elongation speed to be $\\lambda_{l\u2062i\u2062n}$ = $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9+\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$, where $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9$ is the mean normalized elongation speed for a lineage of cells and $\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$ is normally distributed with mean 0 and standard deviation $C\u2062V_{\\lambda,l\u2062i\u2062n}$. Thus, the CV of elongation speed is $C\u2062V_{\\lambda,l\u2062i\u2062n}$. The regulation strategy which the cell undertakes is equivalent to that in previous sections and is given by g(lb) = $2+2\u2062(1-\\alpha)\u2062(l_{b}-1)$. Note that we can obtain g(lb) by Taylor expanding f(lb) around lb = 1. Using the regulation strategy g(lb) and adding a size additive noise $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ which is independent of lb, we find,\n\n$$\nT_{d}=\\frac{2+2(1\u2212\\alpha)(l_{b}^{n}\u22121)+\u03b6_{s}(0,\\sigma_{bd})\u2212l_{b}^{n}}{\u27e8\\lambda_{lin}\u27e9(1+\u03be_{lin}(0,CV_{\\lambda,lin}))}.\n$$\n\nNote that we chose size additive division timing noise ($\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$) for convenience in this section. However, it can be shown as done previously that the model is robust to the noise in division timing being size additive or time additive. Assuming that the noise terms $\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$ and $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ are small, we obtain to first order,\n\n$$\nT_{d}\u2248\\frac{(1-2\u2062\\alpha)\u2062(l_{b}-1)+1+\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})-\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})}{\u27e8\\lambda_{l\u2062i\u2062n}\u27e9}.\n$$\n\nThe terms lb, $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ and $\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$ are independent of each other. The standard deviation of $T_{d}$ ($\\sigma_{t}$) can be calculated to be,\n\n$$\n\\sigma_{t}^{2}=\\frac{(1-2\u2062\\alpha)^{2}\u2062\\sigma_{b}^{2}+\\sigma_{b\u2062d}^{2}+C\u2062V_{\\lambda,l\u2062i\u2062n}^{2}}{\u27e8\\lambda_{l\u2062i\u2062n}\u27e9^{2}}.\n$$\n\nAssuming perfectly symmetric division and using $l_{d}^{n}=g\u2062(l_{b}^{n})+\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$, we find the recursive relation for $l_{b}^{n}$ to be,\n\n$$\nl_{d}^{n}-l_{b}^{n}=2\u2062l_{b}^{n+1}-l_{b}^{n}=(1-2\u2062\\alpha)\u2062l_{b}^{n}+2\u2062\\alpha+\u03b6_{s}\u2062(0,\\sigma_{b\u2062d}).\n$$\n\nNote that Equation 43 is the same as Equation 6 under the approximation $x_{n}=l_{b}^{n}-1$. At steady state, the standard deviation of lb is denoted by $\\sigma_{b}$ and using Equation 43 its value is obtained to be,\n\n$$\n\\sigma_{b}^{2}=\\frac{\\sigma_{b\u2062d}^{2}}{4\u2062\\alpha\u2062(2-\\alpha)}.\n$$\n\nSimilarly, the standard deviation of ld-lb, or equivalently $\\lambda_{l\u2062i\u2062n}\u2062T_{d}$, denoted by $\\sigma_{l,l\u2062i\u2062n}$, is calculated to be,\n\n$$\n\\sigma_{l,l\u2062i\u2062n}^{2}=\\frac{4\u2062\\alpha+1}{4\u2062\\alpha\u2062(2-\\alpha)}\u2062\\sigma_{b\u2062d}^{2}.\n$$\n\nFor linear growth, a natural plot is ld-lb vs $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ (reminiscent of the $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$ plot for exponential growth). To calculate the slope of the best linear fit, we have to calculate the correlation coefficient $\u03c1_{l\u2062i\u2062n}$ given by,\n\n$$\n\u03c1_{l\u2062i\u2062n}=\\frac{\u27e8(l_{d}-l_{b}-\u27e8l_{d}-l_{b}\u27e9)\u2062(\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}-\u27e8\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}\u27e9)\u27e9}{\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062\\sigma_{l,l\u2062i\u2062n}\u2062\\sigma_{t}}.\n$$\n\nAgain using the independence of terms lb, $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ and $\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$ from each other, we get,\n\n$$\n\u03c1_{l\u2062i\u2062n}=\\frac{(1-2\u2062\\alpha)^{2}\u2062\\sigma_{b}^{2}+\\sigma_{b\u2062d}^{2}}{\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062\\sigma_{l,l\u2062i\u2062n}\u2062\\sigma_{t}}=\\frac{\\sigma_{l,l\u2062i\u2062n}}{\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062\\sigma_{t}}.\n$$\n\nThe slope of best linear fit for the plot $l_{d}-l_{b}$ vs $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ is given by,\n\n$$\nm_{tl,lin}=\u03c1_{lin}\\frac{\\sigma_{l,lin}}{\u27e8\\lambda_{lin}\u27e9\\sigma_{t}}=\\frac{1}{1+\\frac{CV_{\\lambda,lin}^{2}4\\alpha(2\u2212\\alpha)}{\\sigma_{bd}^{2}(4\\alpha+1)}}.\n$$\n\nThe intercept $c_{t\u2062l,l\u2062i\u2062n}$ is found to be,\n\n$$\nc_{tl,lin}=\u27e8l_{d}\u2212l_{b}\u27e9\u2212m_{tl,lin}\u27e8\u27e8\\lambda_{lin}\u27e9T_{d}\u27e9=1\u2212\\frac{1}{1+\\frac{CV_{\\lambda,lin}^{2}4\\alpha(2\u2212\\alpha)}{\\sigma_{bd}^{2}(4\\alpha+1)}}.\n$$\n\nOn flipping the axis, the slope ($m_{l\u2062t,l\u2062i\u2062n}$) for the plot $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ is obtained to be,\n\n$$\nm_{l\u2062t,l\u2062i\u2062n}=\u03c1_{l\u2062i\u2062n}\u2062\\frac{\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062\\sigma_{t}}{\\sigma_{l,l\u2062i\u2062n}}=1.\n$$\n\nThe intercept $c_{l\u2062t,l\u2062i\u2062n}$ is found to be,\n\n$$\nc_{l\u2062t,l\u2062i\u2062n}=\u27e8\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}\u27e9-m_{l\u2062t,l\u2062i\u2062n}\u2062\u27e8l_{d}-l_{b}\u27e9=0.\n$$\n\nThe best linear fit for the $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ plot follows the trend y = x.\n\nSimulations of the adder model for linearly growing cells were carried out. The deviation of the best linear fit for the $l_{d}-l_{b}$ vs $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ plot from the y = x line is shown in Figure 3\u2014figure supplement 1A, while in Figure 3\u2014figure supplement 1B, the best linear fit for the plot $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ is shown to agree with the y = x line.\n\n### Differentiating linear from exponential growth\n\nIn this section, we explore the equation for the best linear fit of $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ plot in the case of exponential growth and $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot for linear growth. Intuitively, we expect the best linear fit in both cases to deviate from the y = x line. In this section, we will calculate the best linear fit explicitly. Surprisingly, we will find that, in the case of linear growth, the best linear fit for the $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot follows the y = x line closely.\n\nLet us begin with exponential growth with growth rate, $\\lambda$ = $\u27e8\\lambda\u27e9$ + $\u27e8\\lambda\u27e9\u2062\u03be\u2062(0,C\u2062V_{\\lambda})$ as defined previously. Again, $\u03be\u2062(0,C\u2062V_{\\lambda})$ has a normal distribution with mean 0 and standard deviation $C\u2062V_{\\lambda}$, it being the CV of the growth rate. The time at division is given by Equation 7. The average growth rate $\u27e8\\lambda\u27e9$ = $\u27e8\\frac{ln\u2061(2)}{T_{d}}\u27e9\u2248\\frac{ln\u2061(2)}{\u27e8T_{d}\u27e9}$. For exponential growth, we will plot $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$. As previously defined, $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9$ is the mean normalized elongation speed and $\u27e8\\lambda_{lin}\u27e9=\u27e8\\frac{1}{T_{d}}\u27e9\u2248\\frac{1}{\u27e8T_{d}\u27e9}$. $\u27e8\\lambda_{lin}\u27e9$ is related to $\u27e8\\lambda\u27e9$ by,\n\n$$\n\u27e8\\lambda_{l\u2062i\u2062n}\u27e9=\\frac{\u27e8\\lambda\u27e9}{ln\u2061(2)}.\n$$\n\n$l_{d}-l_{b}$can be calculated by using the regulation strategy f(lb) introduced in the Model section and a normally distributed size additive noise $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$. Note that we have chosen the noise in division timing to be size additive. However, the model is robust to the choice of type of noise as we showed in the Exponential growth section. Using Equations 5 and 6 we obtain,\n\n$$\nl_{d}^{n}-l_{b}^{n}\u22481+(1-2\u2062\\alpha)\u2062x_{n}+\u03b6_{s}\u2062(0,\\sigma_{b\u2062d}).\n$$\n\nUsing Equation 11, $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ is obtained to be,\n\n$$\n\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}=1-\\frac{\\alpha\u2062x}{ln\u2061(2)}-\u03be\u2062(0,C\u2062V_{\\lambda})+\\frac{\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{2\u2062ln\u2061(2)}.\n$$\n\nTo calculate the expression for $m_{l\u2062t,l\u2062i\u2062n}$, the slope of the best linear fit for $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ plot, we first calculate $\u03c1_{l\u2062i\u2062n}$ given by Equation 46. The expression for $\\sigma_{l,l\u2062i\u2062n}$ (standard deviation of $l_{d}-l_{b}$) and $\\sigma_{t}$ (standard deviation of $T_{d}$) are found to be,\n\n$$\n\\sigma_{l,l\u2062i\u2062n}^{2}=(1-2\u2062\\alpha)^{2}\u2062\\sigma_{x}^{2}+\\sigma_{b\u2062d}^{2},\n$$\n\n\n\n$$\n\\sigma_{t}^{2}=\\frac{1}{\u27e8\\lambda_{lin}\u27e9^{2}}(\u00a0(\\frac{\\alpha\\sigma_{x}}{ln\u2061(2)})^{2}+CV_{\\lambda}^{2}+(\\frac{\\sigma_{bd}}{2ln\u2061(2)})^{2}\u00a0).\n$$\n\n$\\sigma_{x}$is related to $\\sigma_{n}$ via Equation 17. In Exponential growth section, we also showed that $\\sigma_{n}$ = $\\frac{\\sigma_{b\u2062d}}{2}$. Using these, we can write,\n\n$$\n\\sigma_{x}^{2}=\\frac{\\sigma_{b\u2062d}^{2}}{4\u2062\\alpha\u2062(2-\\alpha)}.\n$$\n\nNow using the expressions for $\\sigma_{t}$, $\\sigma_{l,l\u2062i\u2062n}$ and the fact that $x$, $\u03be\u2062(0,C\u2062V_{\\lambda})$ and $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ are independent of each other, we get,\n\n$$\n\u03c1_{lin}=\\frac{\\frac{(2\\alpha\u22121)\\alpha\\sigma_{x}^{2}}{ln\u2061(2)}+\\frac{\\sigma_{bd}^{2}}{2ln\u2061(2)}}{\u27e8\\lambda_{lin}\u27e9\\sigma_{l,lin}\\sigma_{t}}.\n$$\n\nFor the plot $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$, the slope $m_{l\u2062t,l\u2062i\u2062n}$ is given by,\n\n$$\nm_{lt,lin}=\u03c1_{lin}\\frac{\\sigma_{t}\u27e8\\lambda_{lin}\u27e9}{\\sigma_{l,lin}}=\\frac{\\frac{(2\\alpha\u22121)\\alpha\\sigma_{x}^{2}}{ln\u2061(2)}+\\frac{\\sigma_{bd}^{2}}{2ln\u2061(2)}}{\\sigma_{l,lin}^{2}}.\n$$\n\nInserting Equation 55 into Equation 59 and substituting $\\sigma_{x}^{2}$ given by Equation 57, we obtain,\n\n$$\nm_{l\u2062t,l\u2062i\u2062n}=\\frac{1}{ln\u2061(2)}\u2062\\frac{3\u2062\\alpha}{4\u2062\\alpha+1}.\n$$\n\nThe intercept $c_{l\u2062t,l\u2062i\u2062n}$ is found to be,\n\n$$\nc_{l\u2062t,l\u2062i\u2062n}=\u27e8\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}\u27e9-m_{l\u2062t,l\u2062i\u2062n}\u2062\u27e8l_{d}-l_{b}\u27e9=1-\\frac{1}{ln\u2061(2)}\u2062\\frac{3\u2062\\alpha}{4\u2062\\alpha+1}.\n$$\n\nFor the adder model ($\\alpha$ = $\\frac{1}{2}$), we get the value of slope $m_{l\u2062i\u2062n,l\u2062t}$ = $\\frac{1}{2\u2062ln\u2061(2)}\u22480.7213$ and intercept $c_{l\u2062i\u2062n,l\u2062t}$ = $1-\\frac{1}{2\u2062ln\u2061(2)}\u22480.279$. This is different from the best linear fit obtained for same regulatory mechanism controlling division in linearly growing cells where we found that the best linear fit follows the y = x line. Intuitively, we expect the best linear fit of $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062T_{d}$ vs $l_{d}-l_{b}$ plot to deviate from y = x line in the case of exponential growth. We showed analytically that for a class of models where birth controls division, it is indeed the case. This is also shown using simulations of the adder model in Figure 3\u2014figure supplement 1C.\n\nIn the \u2018 Obtaining the best linear fit\u2019 section, we found the best linear fit for $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot to follow the y = x line for exponentially growing cells where division is regulated by birth event via regulation strategy f(lb). Next, we calculate the equation for the best linear fit of $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ plot given that growth is linear. The model for division control will be same as that in the Linear growth section that is, the regulation strategy for division is given by g(lb) = $2+2\u2062(1-\\alpha)\u2062(l_{b}-1)$ which is also equivalent to f(lb). The linearly growing cells grow with elongation speed $\\lambda_{l\u2062i\u2062n}$ = $\u27e8\\lambda_{l\u2062i\u2062n}\u27e9\u2062(1+\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n}))$. As discussed before, $\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$ has a normal distribution with mean 0 and standard deviation $C\u2062V_{\\lambda,l\u2062i\u2062n}$, it being the CV of the elongation speed. Using Equations 5 and 6, we get,\n\n$$\nln\u2061(\\frac{L_{d}}{L_{b}})=ln\u2061(2)-\\alpha\u2062x^{n}+\\frac{\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})}{2}.\n$$\n\nUsing Equations 5 and 52, we obtain from Equation 41,\n\n$$\n\u27e8\\lambda\u27e9\u2062T_{d}=ln\u2061(2)+(1-2\u2062\\alpha)\u2062ln\u2061(2)\u2062x+ln\u2061(2)\u2062\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})-ln\u2061(2)\u2062\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n}).\n$$\n\nSince $x$, $\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$ and $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$ are uncorrelated, the standard deviation of $ln\u2061(\\frac{L_{d}}{L_{b}})$ and $T_{d}$ denoted by $\\sigma_{l}$ and $\\sigma_{t}$ respectively are calculated to be,\n\n$$\n\\sigma_{l}^{2}=\\alpha^{2}\u2062\\sigma_{x}^{2}+\\frac{\\sigma_{b\u2062d}^{2}}{4},\n$$\n\n\n\n$$\n\\sigma_{t}^{2}=\\frac{ln^{2}\u2061(2)}{\u27e8\\lambda\u27e9^{2}}\u2062((1-2\u2062\\alpha)^{2}\u2062\\sigma_{x}^{2}+\\sigma_{b\u2062d}^{2}+C\u2062V_{\\lambda,l\u2062i\u2062n}^{2}).\n$$\n\nWe calculate the correlation coefficient for the pair ($ln\u2061(\\frac{L_{d}}{L_{b}})$, $\u27e8\\lambda\u27e9\u2062T_{d}$). Since the correlation coefficient is unaffected by multiplying one of the variables with a positive constant, we can calculate the correlation coefficient for the pair ($ln\u2061(\\frac{L_{d}}{L_{b}})$, $T_{d}$) or $\u03c1_{e\u2062x\u2062p}$ as given by Equation 18. Using the independence of terms $x$, $\u03be_{l\u2062i\u2062n}\u2062(0,C\u2062V_{\\lambda,l\u2062i\u2062n})$ and $\u03b6_{s}\u2062(0,\\sigma_{b\u2062d})$,\n\n$$\n\u03c1_{exp}=\\frac{ln\u2061(2)(\\sigma_{x}^{2}(2\\alpha\u22121)\\alpha+\\frac{\\sigma_{bd}^{2}}{2})}{\u27e8\\lambda\u27e9\\sigma_{l}\\sigma_{t}}.\n$$\n\nFor the plot $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$, the slope $m_{l\u2062t}$ of the best linear fit is given by,\n\n$$\nm_{lt}=\u03c1_{exp}\\frac{\\sigma_{t}\u27e8\\lambda\u27e9}{\\sigma_{l}}=\\frac{ln\u2061(2)(\\sigma_{x}^{2}(2\\alpha\u22121)\\alpha+\\frac{\\sigma_{bd}^{2}}{2})}{\\sigma_{l}^{2}}.\n$$\n\nInserting Equation 64 into Equation 67 and using Equation 57, we get,\n\n$$\nm_{l\u2062t}=\\frac{3}{2}\u2062ln\u2061(2)\u22481.0397.\n$$\n\nSimilarly the intercept ($c_{l\u2062t}$) for the plot $\u27e8\\lambda\u27e9\u2062T_{d}$ vs $ln\u2061(\\frac{L_{d}}{L_{b}})$ is found to be,\n\n$$\nc_{l\u2062t}=\u27e8\u27e8\\lambda\u27e9\u2062T_{d}\u27e9-m_{l\u2062t}\u2062\u27e8ln\u2061(\\frac{L_{d}}{L_{b}})\u27e9=ln\u2061(2)\u2062(1-\\frac{3}{2}\u2062ln\u2061(2))\u2248-0.0275.\n$$\n\nThis is very close to y = x trend obtained for the same regulatory mechanism controlling division in exponentially growing cells (Figure 3A).\n\n### Growth rate vs age and elongation speed vs age plots\n\nIn the previous sections, we found that binning and linear regression on the plot $ln\u2061(\\frac{L_{d}}{L_{b}})$ vs $\u27e8\\lambda\u27e9\u2062T_{d}$, and the plot obtained by interchanging the axes, were inadequate to identify the mode of growth. In this section, we try to validate the growth rate vs age plot as a method to elucidate the mode of growth.\n\nIn addition to cell size at birth and division and the generation time, cell size trajectories (cell size, $L$ vs time from birth, $t$) were obtained for multiple cell cycles. In our case, the cell size trajectories were collected either via simulations (in Figure 3B) or from experiments (for Figure 4A-C) at intervals of 4 min. Note that if the measurements were to be carried out at equal length intervals instead of time, the results discussed in the paper would still remain unchanged. For each trajectory, growth rate at time $t$ or age $\\frac{t}{T_{d}}$ is calculated as $\\frac{1}{L\u2062(t)}\u2062\\frac{L\u2062(t+\u0394\u2062t)-L\u2062(t)}{\u0394\u2062t}$ where $\u0394\u2062t$ is the time between consecutive measurements. To obtain elongation speed vs age plots, the formula before needs to be replaced with $\\frac{L\u2062(t+\u0394\u2062t)-L\u2062(t)}{\u0394\u2062t}$. The growth rate is interpolated to contain 200 points at equal intervals of time for each cell trajectory. The growth rate trends appear to be robust with regards to a different number of interpolated points (from 100 to 500 points). To obtain the growth rate trend as a function of cell age, we use the method previously applied in Nordholt et al., 2020. In this method, growth rate is binned based on age for each individual trajectory (50 bins) and the average growth rate is obtained in each of the bins. The binned data trend for growth rate vs age is then found by taking the average of the growth rate in each bin over all trajectories. Binning the growth rate for each trajectory ensures that each trajectory has an equal contribution to the final growth rate trend so as to avoid inspection bias. This step is especially important when data collected at equal intervals of time is analyzed. In such a case, cells with larger generation times have a greater number of measurements than cells with smaller generation times. Obtaining the growth rate trend without binning growth rate for each trajectory would have biased the binned data trend for the growth rate vs age plot to a smaller value because of over-representation by slower-growing cells (or equivalently cells with longer generation time). This bias toward lower growth rate values in the growth rate vs age plots is an instance of inspection bias.\n\nIn Figure 4A-C, we find the growth rate obtained from E. coli experiments to change within the cell cycle. In the two slower growth media (Figure 4A and B), the growth rate is found to increase with cell age while for the fastest growth media (Figure 4C) the growth rate follows a non-monotonic behaviour similar to that observed in Nordholt et al., 2020 for B. subtilis. Abrupt changes in growth rate are reported at constriction in Reshes et al., 2008; Banerjee et al., 2017. We find that the growth rate changes start before constriction in the two slower growth conditions considered. One possibility is that this increase is due to preseptal cell wall synthesis (Pazos et al., 2018). Preseptal cell wall synthesis does not require activity of PBP3 (FtsI) but instead relies on bifunctional glycosyltransferases PBP1A and PBP1B that link to FtsZ via ZipA. One hypothesis that can be tested in future works is that at the onset of constriction, activity from PBP1A and PBP1B starts to gradually shift to the PBP3/FtsW complex and therefore no abrupt change in growth rate is observed. In the fastest growth condition (glucose-cas medium), we find that the increase in growth rate approximately coincides with onset of constriction, in agreement with the previous findings (Reshes et al., 2008; Banerjee et al., 2017).\n\nIn Figure 4A-C, the growth rate trends are not obtained for age close to one. This is because growth rate at age = 1 is given by $\\frac{1}{L\u2062(T_{d})}\u2062\\frac{L\u2062(T_{d}+\u0394\u2062t)-L\u2062(T_{d})}{\u0394\u2062t}$ and this requires knowing the cell lengths beyond the division event ($L\u2062(T_{d}+\u0394\u2062t)$). To estimate growth rates at age close to one, we approximate $L\u2062(T_{d}+\u0394\u2062t)$ to be the sum of cell sizes of the two daughter cells. In order to minimize inspection bias, we considered only those cell size trajectories which had $L\u2062(t)$ data for 12 min after division (corresponding to an age of approximately 1.1). However, the growth rate trends in all three growth media were robust with regards to a different time for which $L\u2062(t)$ was considered (4 min to 20 min after division). We use the binning procedure discussed before in this section. To validate this method, we applied it on synthetic data obtained from the simulations of exponentially growing cells following the adder and the adder per origin model. Cells were assumed to divide in a perfectly symmetric manner and both of the daughter cells were assumed to grow with the same growth rate, independent of the growth rate in the mother cell. The growth rate trends for the two models considered (adder and adder per origin) are expected to be constant even for cell age >1. We found that the growth rate trends were indeed approximately constant as shown in Figure 4\u2014figure supplement 1D. We also considered linear growth with division controlled via an adder model. The daughter cells were assumed to grow with the same elongation speed, independent of the elongation speed in the mother cell. In this case, we expect the elongation speed trend to be constant for cell age >1. This is indeed what we observed as shown in the inset of Figure 4\u2014figure supplement 1D. We used this method on E. coli experimental data and found that the growth rate trends obtained for the three growth conditions (Figure 4\u2014figure supplement 1A\u20131C) were consistent with that shown in Figure 4A-C in the relevant age ranges. For cell age close to one, we found that the growth rate decreased to a value close to the growth rate near cell birth (age \u2248 0) for all three growth conditions considered.\n\nIn summary, we find that the growth rate vs age plots are a consistent method to probe the mode of cell growth within a cell cycle.\n\n### Growth rate vs time from specific event plots are affected by inspection bias\n\nTo probe the growth rate trend in relation to a specific cell cycle event, for example cell birth, growth rate vs time from birth plots are obtained for simulations of exponentially growing cells following the adder model. In the growth rate vs time from birth plot, the rate is found to stay constant and then decrease at longer times (Figure 3\u2014figure supplement 2C) even though cells are exponentially growing. Because of inspection bias (or survivor bias), at later times, only the cells with larger generation times (or slower growth rates) \u2018survive\u2019. The average generation time of the cells averaged upon in each bin of Figure 3\u2014figure supplement 2C is shown in Figure 3\u2014figure supplement 2D. The decrease in growth rate in Figure 3\u2014figure supplement 2C occurs around the same time when an increase in generation time is observed in Figure 3\u2014figure supplement 2D. Thus, the trend in growth rate is biased toward lower values at longer times. The problem might be circumvented by restricting the time on the x-axis to the smallest generation time of all the cell cycles considered (Messelink et al., 2020).\n\nTo check for growth rate changes at constriction, we used plots of growth rate vs time from constriction ($t-T_{n}$). Growth rate trends obtained from E. coli experimental data show a decrease at the edges of the plots (Figure 4\u2014figure supplement 2A and C, and 2E). These deviate from the trends obtained using the growth rate vs age plots (Figure 4A-C). To investigate this discrepancy, we use a model which takes into account the constriction and the division event. Currently, it is unknown how constriction is related to division. For the purpose of methods validation, we use a model where cells grow exponentially, constriction occurs after a constant size addition from birth, and division occurs after a constant size addition from constriction. Note that other models where constriction occurs after a constant size addition from birth while division occurs after a constant time from constriction, as well as a mixed timer-adder model proposed in Banerjee et al., 2017, lead to similar results. We expect the growth rate trend to be constant for exponentially growing cells. However, we find using numerical simulations that it decreases at the plot edges both before and after the constriction event (Figure 3\u2014figure supplement 2A). This decrease can be attributed to inspection bias. The average growth rate in time bins at the extremes are biased by cells with smaller growth rates. This is shown in Figure 3\u2014figure supplement 2B where the average generation time for the cells contributing in each of the bins of Figure 3\u2014figure supplement 2A is plotted. The time at which the growth rate decreases on both sides of the constriction event is close to the time at which the average generation time increases. For example, in alanine medium, the generation time for each of the bins is plotted in Figure 4\u2014figure supplement 2B. The average generation time for the cells contributing to each of the bins is almost constant for the timings between \u201380 min and 20 min. Thus, for this time range the changes in growth rate are not because of inspection bias but are a real biological effect. The behavior of growth rate within this time range in Figure 4\u2014figure supplement 2A is in agreement with the trend in growth rate vs age plot of Figure 4A. On accounting for inspection bias, the growth rate vs age plots agree with the growth rate vs time from constriction plots in other growth media as well (Figure 4\u2014figure supplement 2C, Figure 4\u2014figure supplement 2E). Thus, growth rate vs time plots are also a consistent method to probe growth rate modulation in the time range when avoiding the regimes prone to inspection bias.\n\n### Results of elongation speed vs size plots are model-dependent\n\nCells assumed to undergo exponential growth have elongation speed proportional to their size. In the case of exponential growth, the binned data trend of the plot elongation speed vs size is expected to be linear with the slope of the best linear fit providing the value of growth rate and intercept being zero. In this section, we use the simulations to test if binning and linear regression on the elongation speed vs size plots are suitable methods to differentiate exponential growth from linear growth (Cadart et al., 2019).\n\nTo test the method, we generate cell size trajectories using simulations of the adder model with a size additive division timing noise and assuming exponential growth. Elongation speed at size $L\u2062(t)$ is calculated for each trajectory as $\\frac{L\u2062(t+\u0394\u2062t)-L\u2062(t)}{\u0394\u2062t}$ where $\u0394\u2062t$ is the time between consecutive measurements ( = 4 min in our case). Each trajectory is binned into 10 equally sized bins based on their cell sizes and the average elongation speed is obtained for each bin. The final trend of elongation speed as a function of size is then obtained by binning (based on size) the pooled average elongation speed data of all the cell cycles.\n\nWe find that the binned data trend is linear with the slope of the best linear fit close to the average growth rate considered in the simulations (Figure 3\u2014figure supplement 3D). This is in agreement with our expectations for exponential growth. In order to check if this method could differentiate between exponential growth and linear growth, we used simulations of the adder model undergoing linear growth to generate cell size trajectories for multiple cell cycles. For linear growth, elongation speed is expected to be constant, independent of its cell size. The binned data trend for the elongation speed vs size plot is also obtained to be constant for the simulations of linearly growing cells (Figure 3\u2014figure supplement 3B). The intercept of the best linear fit obtained is close to the average elongation speed considered in the simulations. The binned data trend for linear and exponential growth are clearly different as shown in Figure 3\u2014figure supplement 3B and Figure 3\u2014figure supplement 3D, respectively, and this result holds for a broad class of models where the division event is controlled by birth and the growth rate (for exponential growth)/elongation speed (for linear growth) is distributed normally and independently between cell-cycles.\n\nNext, we consider the adder per origin cell cycle model for exponentially growing cells (Ho and Amir, 2015). In this model space, the cell initiates DNA replication by adding a constant size per origin from the previous initiation size. The division occurs on average after a constant time from initiation. For exponentially growing cells, the binned data trend is still expected to be linear as before. Instead, we find using simulations that the trend is non-linear and it might be misinterpreted as non-exponential growth (Figure 3\u2014figure supplement 3F).\n\nThus, the results of binning and linear regression for the plot elongation speed vs size is model-dependent.\n\n### Interchanging axes in growth rate vs inverse generation time plot might lead to different interpretations\n\nSo far, our discussion was focused on the question of mode of single-cell growth. A related problem regards the relation between growth rate ($\\lambda$) and the inverse generation time ($\\frac{1}{T_{d}}$). On a population level, the two are clearly proportional to each other. However, single-cell studies based on binning showed an intriguing non-linear dependence between the two, with the two variables becoming uncorrelated in the faster-growth media (Kennard et al., 2016; Iyer-Biswas et al., 2014). Within the same medium, the binned data curve for the plot $\\lambda$ vs $\\frac{1}{T_{d}}$ flattened out for faster dividing cells. The trend in the binned data was different from the trend of y = $ln\u2061(2)$ x line as observed for the population means. A priori one might speculate that the flattening in faster dividing cells could be because the faster dividing cells might have less time to adapt their division rate to transient fluctuations in the environment. Kennard et al., 2016 insightfully also plotted $\\frac{1}{T_{d}}$ vs $\\lambda$ and found a collapse of the binned data for all growth conditions onto the y = $\\frac{1}{ln\u2061(2)}$ x line. These results are reminiscent of what we previously showed for the relation of $ln\u2061(\\frac{L_{d}}{L_{b}})$ and $\u27e8\\lambda\u27e9\u2062T_{d}$.\n\nIn the following, we will elucidate why this occurs in this case using an underlying model and predicting the trend based on it. We use simulations of the adder model undergoing exponential growth. The parameters for size added in a cell cycle and mean growth rates are extracted from the experimental data. CV of growth rate is assumed lower in faster growth media as observed by Kennard et al. Using this model, we could obtain the same pattern of flattening at faster growth conditions that is observed in the experiments (Figure 2\u2014figure supplement 2A). The population mean for $\\lambda$ and $\\frac{1}{T_{d}}$ follows the expected y = $ln\u2061(2)$ x equation (shown as black dashed line) as was the case in experiments. Intuitively, such a departure from the expected y = $ln\u2061(2)$ x line for the single-cell data can again be explained by determining the effect of noise on variables plotted on both axes. As previously stated $T_{d}$ is affected by both growth rate noise and noise in division timing while growth rate fluctuates independently of other sources of noise. This does not agree with the assumption for binning as noise in division timing affects the x-axis variable rather than the y-axis variable. In such a case, the trend in the binned data might not follow the expected y = $ln\u2061(2)$ x line. However, on interchanging the axes, we would expect the assumptions of binning to be met and the trend to follow the y = $\\frac{1}{ln\u2061(2)}$ x line (Figure 2\u2014figure supplement 2B).\n\n### Data and simulations\n\n#### Experimental data\n\nExperimental data obtained by Tanouchi et al., 2017 was used to plot $L_{d}$ vs $L_{b}$ shown in Figure 1A. E. coli cells were grown at 25 \u00b0C in a mother machine device and the length at birth and division were collected for multiple cell cycles. $L_{d}$ vs $L_{b}$ plot was obtained using these cells and linear regression performed on it provided a best linear fit.\n\nData from recent mother machine experiments on E. coli was used to make all other plots. Details are provided in the Experimental methods and Tiruvadi-Krishnan et al., 2021. The experiments were conducted at 28 \u00b0C in three different growth conditions - alanine, glycerol, and glucose-cas (also see Experimental methods). Cell size trajectories were collected for multiple cell cycles and all of the data collected were considered while making the plots in the paper.\n\n#### Simulations\n\nMATLAB R2021a was used for simulations. Simulations of the adder model for exponentially growing cells were carried out over a single lineage of 2500 generations (Figure 2C and D, Figure 3\u2014figure supplement 1C). The mean length added between birth and division was set to 1.73 $\\mu\u2062m$ in line with the experimental results for alanine medium. Growth rate was variable and sampled from a normal distribution at the start of each cell cycle. The mean growth rate was set to $\\frac{ln\u2061(2)}{\u27e8T_{d}\u27e9}$, where $\u27e8T_{d}\u27e9$ = 212 min and coefficient of variation (CV) = $C\u2062V_{\\lambda}$ = 0.15. The noise in division timing was assumed to be time additive with mean 0 and standard deviation $\\frac{\\sigma_{n}}{\u27e8\\lambda\u27e9}$, where $\\sigma_{n}$ = 0.15. The binning data trends and the best linear fits obtained using these simulations could be compared with the analytical results obtained in sections \u2018Non-linearity in binned data\u2019 and \u2018Differentiating linear from exponential growth\u2019.\n\nFor simulations of linear growth (Figure 3A-B, Figure 3\u2014figure supplement 1A and B, Figure 3\u2014figure supplement 3A, B , Figure 4\u2014figure supplement 1D), the mean growth rate was set to $\\frac{\u27e8L_{d}-L_{b}\u27e9}{\u27e8T_{d}\u27e9}$, with the values of $\u27e8L_{d}-L_{b}\u27e9$ and $\u27e8T_{d}\u27e9$ used as mentioned previously. The noise in division timing was size additive with standard deviation = 0.15 $\u27e8L_{b}\u27e9$. Noise was also considered to be size additive with the same standard deviation for the simulations of exponentially growing cells shown in Figure 3B, Figure 3\u2014figure supplement Figure 3\u2014figure supplements 2C and 3C. D, and Figure 4\u2014figure supplement 1D.\n\nIn the simulations of super-exponential growth carried over a single lineage of 2500 generations (Figure 3B), the cells initially grew exponentially but in the later stages of the cell cycle, the growth rate increased as,\n\n$$\n\\frac{d\u2062\\lambda}{d\u2062t}=2\u2062k\u2062(t-t_{c}),\n$$\n\nwhere k was fixed to be $\\frac{2}{T_{d}^{3}}$ and tc was the time from birth at which the growth rate changed from exponential to super-exponential growth. tc was fixed to be half of the generation time of the cell or equivalently an age of 0.5. The division size was set by the adder model with a time additive noise with similar parameters as before for exponential growth simulations. The exponential growth rate at the start of each cell cycle was drawn from a normal distribution with mean set to $\\frac{ln\u2061(2)}{242}\u2062m\u2062i\u2062n^{-1}$ and CV = 0.15.\n\nFor Figure 3B, Figure 3\u2014figure supplement 3E and F, Figure 4\u2014figure supplement 1D, simulations were carried out over a lineage of 2500 generations for exponentially growing cells following the adder per origin model. In the simulations, the time increment is 0.01 min. The initial condition for the simulations is that cells are born and initiate DNA replication at time t = 0 but the results are independent of initial conditions. The number of origins is also tracked throughout the simulations beginning with an initial value of 2. Cells divide into two daughter cells in a perfectly symmetrical manner (no noise in division ratio), and one of the daughter cells is discarded for the next cell cycle. In simulations, the growth rate was fixed within a cell cycle but varied between different cell cycles. On division, the growth rate for that cell cycle was drawn from a normal distribution with mean $\u27e8\\lambda\u27e9$ and coefficient of variation ($C\u2062V_{\\lambda}$) whose values were fixed using the experimental data from alanine medium. The total length at which the next initiation happens is determined by,\n\n$$\nL_{i}^{t\u2062o\u2062t,n\u2062e\u2062x\u2062t}=L_{i}+O\u2062\u0394_{i\u2062i},\n$$\n\nwhere $\u0394_{i\u2062i}$ is the length added per origin and O is the number of origins. To determine $L_{i}^{t\u2062o\u2062t,n\u2062e\u2062x\u2062t}$, $\u0394_{i\u2062i}$ was drawn on reaching initiation length from a normal distribution. The mean and CV of $\u0394_{i\u2062i}$ was obtained from experiments done in alanine medium. In the adder per origin model, division happens after a C + D time from initiation. The division length ($L_{d}$) is obtained to be,\n\n$$\nL_{d}=L_{i}\u2062e^{\\lambda\u2062(C+D)}.\n$$\n\nIn the simulations, once the initiation length was reached, the corresponding division occurred a time C + D after initiation. C + D timings for each initiation event were again drawn from a normal distribution with the same mean and CV as that of the experiments in alanine medium.\n\nFor Figure 3\u2014figure supplement 2A, cells were assumed to grow exponentially in the simulations. The constriction length ($L_{n}$) was set to be,\n\n$$\nL_{n}=L_{b}+\u0394_{b\u2062n}.\n$$\n\nThe length added ($\u0394_{b\u2062n}$) was assumed to have a normal distribution with the mean length added between birth and constriction set to 1.18 $\\mu\u2062m$ and the CV = 0.23, in line with the experimental results for alanine medium. The length at division was set as,\n\n$$\nL_{d}=L_{n}+\u0394_{n\u2062d}.\n$$\n\nThe length added ($\u0394_{n\u2062d}$) was also assumed to have a normal distribution with the mean length added set to 0.53 \u00b5m and the CV = 0.26, again in line with the experimental results for alanine medium.\n\nFor Figure 3B, Figure 3\u2014figure supplement 2A\u20132D, 3 A-3F, Figure 4\u2014figure supplement 1D, the cell sizes are recorded within the cell cycle at equal intervals of 4 min, similar to that in the E. coli experiments of Tiruvadi-Krishnan et al., 2021.\n\nFor simulations shown in Figure 4\u2014figure supplement 1D, the cell size trajectories are obtained at intervals of 4 min beyond the current cell-cycle. The size after the division event is said to be the sum of the sizes of the daughter cells. It is also further assumed that the daughter cells are equal in size (perfectly symmetric division) and they both grow with the same growth rate (for exponential growth) or elongation speed (for linear growth). The growth rates/elongation speeds for the daughter cells are sampled from a normal distribution with a mean and CV as discussed before. The cell size trajectories are recorded for 80 min after the division event in the current cell cycle.\n\nIn Figure 2\u2014figure supplement 2, simulations of the adder model for exponentially growing cells were carried out until a population of 5000 cells was reached. The parameters for size added in a cell cycle and mean growth rates were extracted from the experimental data (Kennard et al., 2016). The value of $\\sigma_{n}$ used in all growth conditions was 0.17 while $C\u2062V_{\\lambda}$ decreased in faster growth conditions (0.2 in the three slowest growth conditions, 0.12 and 0.07 in the second fastest and fastest growth conditions, respectively).\n",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "e34c1651-da9c-4f9a-a364-dbd20a1830a3",
+      "submission_id": "def355b7-e12a-4a2f-a605-4bf00e8fb845",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72565.sa0](https://doi.org/10.7554/eLife.72565.sa0)\n\nIn this manuscript, the authors describe a generative model-based framework to better analyze stochastic growth data, including bacterial cell growth. They show how this framework can be applied to gain insight into the processes underlying these phenomena. This work is well-supported by simulations and data analysis and will likely be of interest to those trying to understand the processes governing bacterial growth, as well as those studying stochastic growth processes in biology more broadly.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72565.sa1](https://doi.org/10.7554/eLife.72565.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"To bin or not to bin: analyzing single-cell growth data\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Benjamin P Bratton (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The final result (Figure 4) is somewhat disconnected from the majority of the paper that precedes it. Specifically, the authors' procedure that resolves exponential vs. non-exponential growth results in E. coli in alanine being deemed exponential (Figure 2B) only to later be revealed as non-exponential (Figure 4A), albeit weakly. Furthermore, the procedure advertised as distinguishing exponential from linear growth (Figure 3B), when applied to the data, reveals neither (Figure 4). This makes the main point of the paper (the demonstration and resolution of pitfalls) feel disconnected from its application to a particular case, which is more nuanced and likely leaves many questions unanswered.\n\n2) The title (\"To bin or not to bin\u2026\") implies that binning is the main culprit behind potentially misleading analyses, but one of the reviewers argued that in the end, it is linear regression. Each of the two main pitfalls and their resolution would be unchanged if the data were never binned. Binning affects the apparent curvature of the y vs x relationship, but this reads as a more minor point. Therefore, the title may be a bit misleading in service of its poeticism.\n\n3) The authors look at different choices of binning dimensions but do not sufficiently explore the power of their generative model to perform (un)weighted regression or parameter estimation from the not-binned data. They do explore the unbinned data from an analytical statistics approach in sections 5.4.1 and 5.5 but this is not yet extensively explored in the figures and/or discussion.\n\n4) This manuscript could be improved by including a discussion on binning single-cell length trajectories, those taken on a single cell within one division cycle, either based on the length or on time. Experimentally, my understanding is that most growth measurements are done on a fixed \\\u0394 t basis, and therefore measurements are averaged using length as a function of time. Another option, one that I have not seen used, is to use a \\\u0394 L basis and measure the time to grow either a specific amount or a specific fractional amount. Of course, these are different ways to slice the same cake, and such an extension may be useful to expand the authors' argument that one needs to utilize a generative model to be able to assess their choice in statistical analysis.\n\n5) As the formulation of this approach borrows from and is built heavily on previous data and previous statistical frameworks, it would be helpful to have more discussion on what is new to this particular manuscript. This is always a difficult balance as one needs the context of the previous work to understand the symbology used, but just reiterating what is already in the literature can lead to a dilution of the new/novel/important discoveries of the manuscript.\n\n6) The authors should resolve the use of the term \"cell size\" to mean both \"cell length\" and \"cell volume\" (line 107, line 431/432). The authors briefly touch on a related concept of length growth vs biomass growth in 343-357. As a first, naively simple model of cell growth, it is possible to come up with a simple model for linear vs volumetric growth by imagining that a cell grows exponentially in length from birth to death. In this simple model, at the appropriate time, it switches from growing a cylinder to growing hemispherically endcaps, as it needs to perfectly duplicate its shape. In this simple model, one can easily see that the instantaneous, relative volumetric and length growth rates are not identical; vary throughout the cell cycle; and even their average over the whole cell cycle is not 1. While the authors mention that the average diameter is quite robust between growth conditions, only in the limit that the cell is very long and not a spherocylinder does the approximation that shape does not matter come in to play. Granted, this na\u00efve model does not incorporate the wealth of information known about division timing or geometric changes during growth, and underscores the authors' main point that a specific model of the dynamical process should be included.Reviewer #1:\n\nIn this manuscript, the authors describe a generative model-based framework to better analyze stochastic growth data, including bacterial cell growth. They show how this framework can be applied to gain insight into the processes underlying these phenomena. More specifically, they start by showing how binning along different axes in the\n\nThis work is well-supported by simulations and data analysis and will likely be of interest to those trying to understand the processes governing bacterial growth, as well as those studying stochastic growth processes in biology more broadly.\n\nStrengths:\n\n\u2013 The choice and execution of the simulations were sensible and well-done, respectively, and they provided clarity as to the overall message of the manuscript.\n\n\u2013 The conclusions are well-supported by the data.\n\n\u2013 I found the writing to be clear throughout.\n\nWeaknesses:\n\n\u2013 It would be good to have a more extensive discussion about what is specifically new here. This is not my particular field, so having a bit more of an introduction about methods beyond binning (if any) that have emerged to understand these data.Reviewer #2:\n\nThe manuscript by Kar et al., uses single-cell experiments, simulations, and theory to investigate a common method of determining whether cell size grows exponentially. Specifically, they show that a relationship that should adhere to y = x for exponential growth on average (where x is the product of the division time and mean growth rate, and y is the log of the ratio of the birth and division size), in fact deviates from y = x with noise, because x contains noise that y does not (growth rate noise). This makes exponential growth seem non-exponential. The resolution, they show, is to plot x vs. y instead. Additionally, they show that when plotting x vs. y for linear growth, the relationship is coincidentally very close to x = y. This makes linear growth seem exponential. The resolution, they show, is to plot the instantaneous growth rate vs. the normalized cell age, which will decrease for linear growth and will be constant for exponential growth. Applying this protocol to E. coli size data, they find that the growth rate actually increases weakly with age, indicating somewhat superexponential growth.\n\nStrengths\n\nThe insights in this manuscript are highly important for the field to know. The fact that exponential growth can masquerade as non-exponential growth and vice versa means that much confusion likely exists in a field that is already surprisingly complex given how simple its questions are to state. The fact that the authors offer resolutions to these pitfalls means that this work should add clarity to the field and move it forward in a meaningful way.\n\nThe conclusions are well supported by the data. For example, in the case of seemingly non-exponential growth, the problem is presented by the experimental data, reproduced by the simulations, and explained by the theory, while the resolution is inspired by the theory, proven by the simulations, and demonstrated by the experimental data.\n\nThe manuscript is well written. While it is rooted in careful analysis, it remains understandable to a largely non-quantitative audience.\n\nWeaknesses\n\nThe final result (Figure 4) is somewhat disconnected from the majority of the paper that precedes it. Specifically, the authors' procedure that resolves exponential vs. non-exponential growth results in E. coli in alanine being deemed exponential (Figure 2B) only to later be revealed as non-exponential (Figure 4A), albeit weakly. Furthermore, the procedure advertised as distinguishing exponential from linear growth (Figure 3B), when applied to the data, reveals neither (Figure 4). This makes the main point of the paper (the demonstration and resolution of pitfalls) feel disconnected from its application to a particular case, which is more nuanced and likely leaves many questions unanswered.\n\nThe title (\"To bin or not to bin\u2026\") implies that binning is the main culprit behind potentially misleading analysis, but I would argue that in the end, it is linear regression. Each of the two main pitfalls and their resolution would be unchanged if the data were never binned, I believe. Binning affects the apparent curvature of the y vs x relationship, but this reads as a more minor point. Therefore, the title may be a bit misleading in service of its poeticism.Reviewer #3:\n\nKar et al., examine an interesting and important question of how to make sense of large sets of observational data, specifically cell length data, which may or may not be consistent with various underlying biological mechanisms. As datasets improve in their technical quality (increasing spatiotemporal resolution, increasing numbers of observations), there is hope that the community will be able to resolve differences between underlying cell biological mechanisms of cell size homeostasis. As the authors point out, these interpretations and analyses require statistical analysis that can accurately perform the model selection or parameter estimation task of interest.\n\n1) The authors succeed in bringing attention to the issue of appropriate binning when analyzing large datasets. The authors focus their figures and discussion on an important, and practical issue, as many researchers perform linear regression on binned data. The title and framing of the manuscript imply that it will provide a comparison with statistical methods that do not involve binning. The authors look at different choices of binning dimensions, but do not sufficiently explore the power of their generative model to perform (un)weighted regression or parameter estimation from the not-binned data. They do explore the unbinned data from an analytical statistics approach in section 5.4.1 and 5.5 but this not yet extensively explored in the figures and/or discussion.\n\n2) The authors succeed in walking the reader through the power of examining a specific mechanism/model and the statistical properties of that model. In this case, the authors do this with both a model of cell length homeostasis that comes from exponential growth or linear growth with homeostatic feedback. This approach rests heavily on previous work from the same group including a reframing of the statistical correlations between different observables that was explored in the included references [13] and [16]. This reframing is complemented by additional experiments and reanalysis of various published experimental datasets.\n",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f26d5546-7530-4b54-83d8-c2d76563257c",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C1",
+      "claim": "Collection of high-throughput data has become prevalent in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Collection of high-throughput data has become prevalent in biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the current state of biological research presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "c62d3c06-8e31-4f84-915d-5fdbe8755db0",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C2",
+      "claim": "Large datasets allow the use of statistical constructs such as binning and linear regression to quantify relationships between variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Large datasets allow the use of statistical constructs such as binning and linear regression to quantify relationships between variables and hypothesize underlying biological mechanisms based on it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities enabled by large datasets in biological research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "6a984cb8-9e42-4390-98df-005c8185d41f",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C3",
+      "claim": "What appears to be ordinary use of statistical methods can lead to incorrect conclusions such as growth being non-exponential as opposed to exponential and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we show instances where what appears to be ordinary use of these statistical methods leads to incorrect conclusions such as growth being non-exponential as opposed to exponential and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis and examples presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "22a9e345-ad2e-4c2e-8efe-4758c066bd5c",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C4",
+      "claim": "Data analysis and its interpretation should be done in the context of a generative model, if possible.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the data analysis and its interpretation should be done in the context of a generative model, if possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation proposed by the authors based on their analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "164f6dcd-5650-4fa7-a98d-a5ecc402c0c0",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C5",
+      "claim": "Statistical methods can be validated either analytically or against synthetic data generated via the use of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the statistical methods can be validated either analytically or against synthetic data generated via the use of the model, leading to a consistent method for inferring biological mechanisms from data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation approach demonstrated throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "f08788b7-ac38-4660-8bdb-80fe66531214",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C6",
+      "claim": "The growth of length in E. coli is non-exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "On applying the validated methods of data analysis to infer cellular growth on our experimental data, we find the growth of length in E. coli to be non-exponential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on experimental data analysis using validated methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "5886ecef-64bb-46b0-a586-5c0ceaa6bfb9",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C7",
+      "claim": "In the later stages of the cell cycle the growth rate is faster than exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that in the later stages of the cell cycle the growth rate is faster than exponential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding about growth rate dynamics within the cell cycle based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "06ba3f3e-8ea0-4a4a-a9e8-6c9a16ba288a",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C8",
+      "claim": "Single-cell level measurements have led to new biological paradigms and motivated the development of quantitative models.",
+      "claim_type": "EXPLICIT",
+      "source": "They have led to new biological paradigms and motivated the development of quantitative models (Osella et al., 2017; Facchetti et al., 2017; Ho et al., 2018; Soifer et al., 2016; Jun et al., 2018; Amir and Balaban, 2018; Kohram et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "69afe277-9b8d-40b7-8d65-bf65338a9339",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C9",
+      "claim": "Single-cell data have led to new challenges in data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, they have also led to new challenges in data analysis, and here we will point out some of the pitfalls that exist in handling such data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about challenges in the field that the manuscript addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "3c96a099-2e24-444b-b627-468574bd0c1f",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C10",
+      "claim": "The commonly used procedure of binning data and linear regression may hint at specific functional relations between the two variables plotted that are inconsistent with the true functional relations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we will show that the commonly used procedure of binning data and linear regression may hint at specific functional relations between the two variables plotted that are inconsistent with the true functional relations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding demonstrated through analysis in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "6aa95a61-caa5-43b6-a0a8-700e526641aa",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C11",
+      "claim": "Misinterpretation may come about due to 'hidden' noise sources that affect the binning procedure and the phenomenon of 'inspection bias' where certain bins have biased contributions.",
+      "claim_type": "EXPLICIT",
+      "source": "As we shall show, this may come about due to the 'hidden' noise sources that affect the binning procedure and the phenomenon of 'inspection bias' where certain bins have biased contributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the mechanism behind the misinterpretations identified in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "205029a4-c3b7-402f-a1a0-b1fc877f36bc",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C12",
+      "claim": "In biology, intrinsic biological noise can obscure the mathematical relation between variables when not handled properly.",
+      "claim_type": "EXPLICIT",
+      "source": "while in physics noise from measurement instruments often dominates, in the biological examples we will dwell on here it is the intrinsic biological noise that can obscure the mathematical relation between variables when not handled properly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This distinguishes biological from physical systems in terms of noise sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "359c5c46-8f54-46ef-8232-0eb8a2f50121",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C13",
+      "claim": "Binning corresponds to grouping data based on the value of the x-axis variable, and finding the mean of the fluctuating y-axis variable for this group.",
+      "claim_type": "EXPLICIT",
+      "source": "Binning corresponds to grouping data based on the value of the x-axis variable, and finding the mean of the fluctuating y-axis variable for this group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the binning procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "2fe31609-adf5-41f6-b781-28383ae5d628",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C14",
+      "claim": "The binning process often aims to expose the 'true' functional relation between the two variables which can be used to infer the underlying biological mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "By removing the fluctuations of the y-variable, the binning process often aims to expose the 'true' functional relation between the two variables which can be used to infer the underlying biological mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the intended purpose of binning in biological data analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "7199e73c-9b94-4db8-bf72-324f5ac37acf",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C15",
+      "claim": "The assumption underlying linear regression is that our knowledge of x-axis variable is precise while the noise is in the y-axis variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to binning, the assumption underlying linear regression is that our knowledge of x-axis variable is precise while the noise is in the y-axis variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a fundamental assumption of linear regression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "d39c7b0c-d05a-4bb7-b6fe-0d961bdd629f",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C16",
+      "claim": "Cells growing in the same medium and environment have different characteristics due to the stochastic nature of biochemical reactions in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells growing in the same medium and environment have different characteristics (e.g. growth rate) due to the stochastic nature of biochemical reactions in the cell (Kiviet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on stochastic biochemical reactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "db17e3e8-dbb8-4f5f-905a-a6ee6d967386",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C17",
+      "claim": "The division event is controlled by stochastic reactions, whose variability leads to cell dividing at a size smaller or larger than the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the division event is controlled by stochastic reactions, whose variability leads to cell dividing at a size smaller or larger than the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of how stochastic reactions affect cell behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "6bd8aa66-62fd-4f9b-bec3-5d0eed049fab",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C18",
+      "claim": "In the paper, intrinsic noise is considered as the only source of variability and measurement error is assumed to be much smaller than the intrinsic variation in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, when modeling the data, we will consider the intrinsic noise as the only source of variability and assume that the measurement error is much smaller than the intrinsic variation in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling assumption made in the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "24e93309-77dc-4da8-91e2-590e0d3eba48",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C22",
+      "claim": "Phenomenological models can be related to mechanistic (molecular-level) models of cell size and cell cycle regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenological models, in turn, can be related to mechanistic (molecular-level) models of cell size and cell cycle regulation (Barber et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "0a0d1ed4-534d-497f-a71d-613d5631fbe3",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C24",
+      "claim": "The volume growth of single bacterial cells has been typically assumed to be exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume growth of single bacterial cells has been typically assumed to be exponential (Godin et al., 2010; Wang et al., 2010; Campos et al., 2014; Cermak et al., 2016; Soifer et al., 2016; Iyer-Biswas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "b4db9763-f257-4ac4-a940-4a125e0e812d",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C25",
+      "claim": "Assuming ribosomes to be the limiting component in translation, growth is predicted to be exponential and growth rate depends on the active ribosome content in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming ribosomes to be the limiting component in translation, growth is predicted to be exponential and growth rate depends on the active ribosome content in the cell (Scott et al., 2010; Lin and Amir, 2018; Metzl-Raz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "b958b691-bc06-4ac3-b462-e34762cf8957",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C27",
+      "claim": "Understanding the mode of growth is important due to its potential effects on cell size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the mode of growth is important for example, due to its potential effects on cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the biological significance of determining growth mode.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "5140196c-92e5-4310-aa6d-af76e42c2349",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C28",
+      "claim": "Exponentially growing cells cannot employ a mechanism where they control division by timing a constant duration from birth but such a mechanism is possible in case of linear growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Exponentially growing cells cannot employ a mechanism where they control division by timing a constant duration from birth but such a mechanism is possible in case of linear growth (Amir, 2014; Kafri et al., 2016; Ho et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "0ff048cf-24ef-4507-b8d2-d10f790724a6",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C30",
+      "claim": "If the best linear fit follows the y = x trend, the resulting functional relation might point to growth being exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "If the best linear fit follows the y = x trend, the resulting functional relation might point to growth being exponential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common interpretation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "86f86ef3-9447-46ee-87ab-ff9a35a3e3bc",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C31",
+      "claim": "Exponential growth has been rejected when the slope and intercept of the best linear fit deviate from one and zero, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "A corollary to this is the rejection of exponential growth when the slope and intercept of the best linear fit deviate from one and zero, respectively (Messelink et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "2d229dd6-f516-45bd-93f3-d87405215a6e",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C33",
+      "claim": "Binning growth rate vs age plots are adequate in addressing the problem of determining growth mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we show that other methods of statistical analysis such as binning growth rate vs age plots are adequate in addressing the problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological finding validated through simulations and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "839c595e-aadd-479e-bb65-1f8d33162db1",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C34",
+      "claim": "E. coli grows non-exponentially, with growth rate in later stages of the cell cycle being higher than in early stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these validated methods on experimental data, we find that E. coli grows non-exponentially. In later stages of the cell cycle, the growth rate is higher than that in early stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "bd61ec53-8a78-4eda-be02-705a279a4d45",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C35",
+      "claim": "The linear regression of ln(Ld/Lb) vs \u27e8\u03bb\u27e9Td for cells growing in M9 alanine minimal medium at 28\u00b0C yields a slope of 0.3 and an intercept of 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear regression of these data yields a slope of 0.3 and an intercept of 0.4 as shown in Figure 2A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "4505ce8e-fb3d-4fa3-b4e3-0fd7c223473e",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C36",
+      "claim": "The binned data and the best linear fit deviate significantly from the y = x line for E. coli in M9 alanine medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The binned data and the best linear fit deviate significantly from the y = x line (see Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "2ae03e5f-d72e-400e-b7e4-770d18c57b26",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C37",
+      "claim": "The binned data follows a non-linear trend and flattens out at longer generation times for E. coli in M9 alanine medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the binned data follows a non-linear trend and flattens out at longer generation times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "206bf9b3-df55-4f6a-b12d-71bf5aa032b5",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C39",
+      "claim": "Qualitatively similar results have been obtained for C. glutamicum.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively similar results have been recently obtained for another bacterium, C. glutamicum, in Messelink et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "e4d16df3-adaf-4d53-8514-181fc77e3b38",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C42",
+      "claim": "The trend in the binned data depends on the ratio of growth rate noise and division timing noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Equation 2 shows that the trend in the binned data depends on the ratio of growth rate noise and division timing noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from analytical calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "e5931c70-9a99-4008-93ef-4ed938423b89",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C43",
+      "claim": "The slope is equal to one and intercept is zero only if the noise in growth rate is negligible as compared to the division timing noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope is equal to one and intercept is zero only if the noise in growth rate is negligible as compared to the division timing noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from analytical calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "098d5ce3-7c5e-468e-bd6e-24d8c26a57d0",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C44",
+      "claim": "Exponential growth cannot be ruled out in E. coli experiments despite the binned data trend being non-linear and the best-fit line deviating from the y = x line.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we cannot rule out exponential growth in the E. coli experiments despite the binned data trend being non-linear and the best-fit line deviating from the y = x line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analysis of simulations and experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "abb0bdc8-5497-4b25-a2a6-3e5d39e9b7be",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C46",
+      "claim": "Inspection bias arises when certain data is over-represented.",
+      "claim_type": "EXPLICIT",
+      "source": "Another way of explaining the deviation from the linear y = x trend is by inspection bias, which arises when certain data is over-represented (Stein and Dattero, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on inspection bias.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "be0f94fc-2858-474a-bbd2-cb81f83c9bca",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C50",
+      "claim": "The best linear fit follows the y = x line for E. coli in alanine, glycerol, and glucose-cas media when plotting \u27e8\u03bb\u27e9Td vs ln(Ld/Lb).",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that the best linear fit follows the y = x line in the case of alanine (Figure 2B), glycerol (Figure 2\u2014figure supplement 1A) and glucose-cas (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "e582446b-30bb-4e7f-987f-1fe2955b317e",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C53",
+      "claim": "When handling experimental data, cells undergoing either exponential or linear growth might seem to agree closely with the y = x trend for \u27e8\u03bb\u27e9Td vs ln(Ld/Lb).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when handling experimental data, cells undergoing either exponential or linear growth might seem to agree closely with the y = x trend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analysis showing both growth modes can produce similar trends.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "7b1c8c2c-34cb-4907-9543-efe4b9b25a20",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C55",
+      "claim": "The binned growth rate trend is nearly constant for simulations of exponentially growing cells following the adder model.",
+      "claim_type": "EXPLICIT",
+      "source": "The binned data trend for growth rate vs age plot is shown as purple circles for simulations of N = 2500 cell cycles of exponentially growing cells following the adder model. We observe the trend to be nearly constant as expected for exponential growth (purple dotted line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "4c0da9ce-2ef8-4585-b17e-0fe0439c5b9a",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C57",
+      "claim": "The binned growth rate trend is nearly constant for simulations of exponentially growing cells following the adder per origin model.",
+      "claim_type": "EXPLICIT",
+      "source": "The binned growth rate trend (shown as magenta diamonds) is also found to be nearly constant as expected (shown as magenta dotted line) for the simulations of exponentially growing cells following the adder per origin model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "495b8ce1-e606-48c0-9edc-9a2d3c2a780c",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C58",
+      "claim": "The binned growth rate trend increases for simulations of the adder model with cells undergoing faster than exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that the binned growth rate trend (red triangles) increases for simulations of the adder model with the cells undergoing faster than exponential growth. The trend is in agreement with the underlying growth rate function (shown as red dotted line) used in the simulations of super-exponential growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "581ab3a2-03d9-4a75-8024-572a37891a03",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C59",
+      "claim": "The plot growth rate vs age provides a consistent method to identify the mode of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the plot growth rate vs age provides a consistent method to identify the mode of growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on validation through simulations of various growth modes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "822f6dee-3acd-4ac3-9b8b-a18a3cfefe3e",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C60",
+      "claim": "An increase in growth rate was found in all three growth conditions (alanine, glycerol, glucose-cas) during the course of the cell cycle for E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the validated growth rate vs age plots, we obtained the growth rate trend for experimental data on E. coli for the three growth conditions studied in this paper (Figure 4A-C). We found an increase in growth rate in all growth conditions during the course of the cell cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data analysis shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "3c14cdd4-05dd-4323-8543-5cd07afb2b53",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C61",
+      "claim": "For exponentially growing cell volume with E. coli geometry, the percentage increase in the growth rate of length over a cell cycle is around 3%, which is significantly smaller than that observed in experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "For exponentially growing cell volume and considering a geometry of E. coli with spherical caps at the poles, the percentage increase in the growth rate of length over a cell cycle is around 3 % which is significantly smaller than that observed in our experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation comparing expected geometric effects to observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "cd94dbd3-b465-4c9d-88cf-d9731d48f42f",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C63",
+      "claim": "In the two slower growth conditions (alanine and glycerol), the growth rate increase starts before the time when the septal cell wall synthesis starts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two slower growth conditions (Figure 4A-B), we find that the growth rate increase starts before the time when the septal cell wall synthesis starts i.e., the constriction event.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data analysis shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "543d60af-5fe0-4ffb-b23e-164c31f07aab",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C64",
+      "claim": "In the fastest growth condition (glucose-cas), the timing of growth rate increase seems to coincide with the onset of constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the fastest growth condition (Figure 4C), the timing of growth rate increase seems to coincide with the onset of constriction which is in agreement with previous findings (Reshes et al., 2008; Banerjee et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data analysis shown in Figure 4C and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "f129fa7c-f4ed-4eab-95f3-23e32aee3236",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C65",
+      "claim": "Oldewurtel et al., 2021 measures biomass and cell volume and finds the mass-density variations within the cell-cycle to be small.",
+      "claim_type": "EXPLICIT",
+      "source": "Oldewurtel et al., 2021 measures biomass and cell volume and finds the mass-density variations within the cell-cycle to be small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "4f98ee28-000a-4801-9396-876627e2dc91",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C66",
+      "claim": "It remains to be seen whether biomass growth follows a similar non-exponential behavior or if it is exponential as previously suggested.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, since we observe the length growth to be non-exponential (Figure 4), it remains to be seen whether biomass growth also follows a similar non-exponential behavior or if it is exponential as previously suggested (Godin et al., 2010; Oldewurtel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions based on the current findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "caeabd2d-3cca-437a-b5d7-7aad8a34d0f9",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C67",
+      "claim": "The general framework proposes construction of a generative model based on experimental data collected.",
+      "claim_type": "EXPLICIT",
+      "source": "The general framework of carrying out data analysis is presented in Figure 5. It proposes the construction of a generative model based on the experimental data collected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological framework proposed by the authors and illustrated in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "21308882-689c-4a06-a655-966a6eb9cf09",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C68",
+      "claim": "The goal of a model is not to provide as accurate a description of a system as possible, but rather to capture the essence of the phenomena we are interested in and stimulate further ideas and understanding.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we should be reminded of Box's famous quote 'all models are wrong, some are useful'. The goal of a model is not to provide as accurate a description of a system as possible, but rather to capture the essence of the phenomena we are interested in and stimulate further ideas and understanding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a philosophical statement about the purpose of modeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "abe3f6f4-2b2c-4ab0-bae4-5a7cb52676b7",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C69",
+      "claim": "The goal of the model is to provide a rigorous framework in which data analysis tools can be critically tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In our context, the goal of the model is to provide a rigorous framework in which data analysis tools can be critically tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific purpose of modeling in the context of this work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "5c002003-f18a-40fd-8549-c6212bfce31c",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C70",
+      "claim": "If the best model shows that the data analysis method is non-informative, then we should revise the analysis as it provides us with a non-consistent framework.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the best model we have at hand shows that the data analysis method is non-informative, as we have shown here on several methods used to identify the mode of growth, then clearly we should revise the analysis as it provides us with a non-consistent framework, where our modeling is at odds with our data analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the analysis presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "7149e6cf-760f-428d-9964-c3deae4b1b6a",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C71",
+      "claim": "Testing the methods on a simplified model is still advantageous compared with the option of using the methods without any validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, testing the methods on a simplified model is still advantageous compared with the option of using the methods without any validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological argument for the approach taken in the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "a346fbc3-c28c-478a-8bd3-511051945839",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C73",
+      "claim": "The data analysis using this framework aims to justify the methods being used, thus reducing arbitrariness and promoting consensus among scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Reiterating the message of the authors in Hogg et al., 2010, the data analysis using this framework aims to justify the methods being used, thus, reducing arbitrariness and promoting consensus among the scientists working in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader impact of the methodological approach, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "959a85a0-9c5a-4ca4-a4c3-716b8b0b0f1a",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C74",
+      "claim": "Phase-contrast microscopy was used to obtain cell length at equal intervals of time in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase-contrast microscopy was used to obtain cell length at equal intervals of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "f31ce5c7-fb7b-4f6b-a244-f56f268d4427",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C75",
+      "claim": "Cell lengths were determined based on segmented phase contrast images.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell lengths were determined based on segmented phase contrast images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image analysis method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "1ee554b6-6280-4455-b739-e040ec93d769",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C76",
+      "claim": "Dissociation of Ypet-FtsN label from cell middle was used to determine the exact timing of cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissociation of Ypet-FtsN label from cell middle was used to determine the exact timing of cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for determining division timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "7673447e-cd10-45f5-b50f-08d3acb4fc65",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "claim_id": "C77",
+      "claim": "Images in all growth conditions were obtained at 4 min frame rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Images in all growth conditions were obtained at 4 min frame rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal resolution of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4079fee6-b78e-4151-ac51-ef56ee52d1be",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Binning and linear regression on ln(Ld/Lb) vs \u27e8\u03bb\u27e9Td plots can produce misleading results about growth mode. The authors demonstrate through modeling and simulations that exponentially growing cells can produce non-linear binned data trends and best-fit lines deviating from y=x due to hidden noise sources and inspection bias, making it impossible to rule out exponential growth based on these deviations alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 provide experimental observations, while C42-C44 provide theoretical explanations validated through simulations (Figure 2C). The analytical derivation (Equation 2) and simulations demonstrate that the binned data trend depends on the ratio of growth rate noise to division timing noise, explaining why exponential growth cannot be ruled out despite apparent deviations. The convergence of theory, simulation, and experimental data strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "0bfa274d-a5a9-471d-b84e-300d595ed92e",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When axes are interchanged to plot \u27e8\u03bb\u27e9Td vs ln(Ld/Lb), both exponentially and linearly growing cells produce best-fit lines that closely follow the y=x trend. This demonstrates that this plot cannot distinguish between exponential and linear growth modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C53 are supported by both experimental data (Figure 2B, Figure 2\u2014figure supplement 1) and simulations (Figure 3A). The analytical calculations in the 'Differentiating linear from exponential growth' section show that linear growth produces a slope of ~1.04 and intercept of -0.03, nearly identical to exponential growth. This convergence of theory, simulation, and experiment provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "dbd423f1-a66d-4f79-812f-ecdd882da78a",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Growth rate vs age plots provide a consistent method to distinguish between different growth modes. Simulations show that exponential growth produces constant growth rates, linear growth produces decreasing growth rates (\u221d1/(1+age)), and super-exponential growth produces increasing growth rates, with binned data trends matching theoretical predictions across multiple cell cycle models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 demonstrate validation through simulations of multiple models (adder, adder per origin, super-exponential) shown in Figure 3B. The binned data trends consistently match theoretical predictions for each growth mode. C59 synthesizes these findings into a methodological conclusion. The systematic validation across different models and growth modes provides strong support for this method's reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "5bfe9320-605a-4c40-8561-105969d0e646",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "E. coli length growth is non-exponential, with growth rate increasing during the cell cycle and becoming faster than exponential in later stages. This was observed across three growth conditions (alanine, glycerol, glucose-cas) using validated growth rate vs age analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 provide experimental evidence from Figure 4A-C showing growth rate increases in all three conditions. C61 demonstrates that the observed increase (~more than 3%) significantly exceeds what would be expected from geometric effects alone. The use of the validated growth rate vs age method (established in the previous result) strengthens confidence in these findings. The consistency across multiple growth conditions provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "5d1e7b2d-d511-490e-bf2c-437f184bd125",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The timing of growth rate increase relative to constriction varies with growth rate. In slower growth conditions (alanine, glycerol), growth rate increase begins before constriction onset, while in the fastest condition (glucose-cas), the increase coincides with constriction onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are based on experimental data analysis shown in Figure 4A-C. C64 is additionally supported by citations to prior work (Reshes et al., 2008; Banerjee et al., 2017). The observations are clear from the figures where timing of initiation, constriction, and growth rate changes are marked. However, the mechanistic interpretation remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose a methodological framework where data analysis should be conducted in the context of generative models that can be validated analytically or through synthetic data. This framework aims to reduce arbitrariness in statistical method selection and ensure consistency between modeling and data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C67-C73 articulate the methodological framework illustrated in Figure 5. The entire manuscript demonstrates this approach by validating statistical methods (binning, linear regression) against generative models before applying them to experimental data. The framework is not just proposed but actively demonstrated throughout the work, showing its practical utility in identifying when methods are non-informative (C70).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "20d860a1-f940-421a-8227-249f37ccaf37",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inspection bias, where certain data are over-represented, contributes to deviations from expected trends in binned data. This occurs when cells with longer generation times (slower growth rates) disproportionately contribute to certain bins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C46 explain inspection bias as a mechanism for observed deviations. This is demonstrated through simulations in Figure 3\u2014figure supplement 2, where growth rate trends show artifacts at time extremes that correlate with changes in average generation time of cells in those bins. The concept is well-established (C46 cites Stein and Dattero, 2018) and its application here is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "a6cc72db-a8a7-4b89-a411-d67be9fd2c65",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The modeling assumes intrinsic biological noise is the dominant source of variability, with measurement error being much smaller than intrinsic population variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 explicitly states this modeling assumption. The Discussion section notes that typical measurement errors (~0.02\u27e8Lb\u27e9) have negligible effects on the growth rate trends, providing post-hoc validation. However, this assumption limits the generalizability of the findings to systems where measurement error is non-negligible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "1bb90ffc-c8c2-48ba-b9f9-6f8be5b0169a",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While length growth is observed to be non-exponential, it remains unclear whether biomass growth follows similar non-exponential behavior or is exponential as previously suggested, given that mass-density variations within the cell cycle are small.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 cites recent work (Oldewurtel et al., 2021) showing small mass-density variations, while C66 explicitly states uncertainty about biomass growth mode. The relationship between length growth and biomass growth depends on cell geometry and density, which are not fully characterized here. This represents an important open question rather than a resolved finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    },
+    {
+      "id": "b7b2d3ed-5473-42db-8d6c-909121f6026d",
+      "content_id": "dc59c8e4-4937-49c1-adda-866a0be9d2f2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Experimental methods included phase-contrast microscopy at 4-minute intervals, with cell lengths determined from segmented images and division timing determined by Ypet-FtsN dissociation from the cell middle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 describe the experimental methodology, which is standard and well-established. The methods are described in sufficient detail in the Materials and Methods section and reference additional details in Tiruvadi-Krishnan et al., 2021. The 4-minute temporal resolution is appropriate for the cell cycle timescales studied (65-214 minutes).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:20:16.166013Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6a984cb8-9e42-4390-98df-005c8185d41f",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "3c96a099-2e24-444b-b627-468574bd0c1f",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "6aa95a61-caa5-43b6-a0a8-700e526641aa",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "0ff048cf-24ef-4507-b8d2-d10f790724a6",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "86f86ef3-9447-46ee-87ab-ff9a35a3e3bc",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "bd61ec53-8a78-4eda-be02-705a279a4d45",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "4505ce8e-fb3d-4fa3-b4e3-0fd7c223473e",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "2ae03e5f-d72e-400e-b7e4-770d18c57b26",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "e4d16df3-adaf-4d53-8514-181fc77e3b38",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "e5931c70-9a99-4008-93ef-4ed938423b89",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "098d5ce3-7c5e-468e-bd6e-24d8c26a57d0",
+      "result_id": "4079fee6-b78e-4151-ac51-ef56ee52d1be"
+    },
+    {
+      "claim_id": "be0f94fc-2858-474a-bbd2-cb81f83c9bca",
+      "result_id": "0bfa274d-a5a9-471d-b84e-300d595ed92e"
+    },
+    {
+      "claim_id": "e582446b-30bb-4e7f-987f-1fe2955b317e",
+      "result_id": "0bfa274d-a5a9-471d-b84e-300d595ed92e"
+    },
+    {
+      "claim_id": "2d229dd6-f516-45bd-93f3-d87405215a6e",
+      "result_id": "dbd423f1-a66d-4f79-812f-ecdd882da78a"
+    },
+    {
+      "claim_id": "7b1c8c2c-34cb-4907-9543-efe4b9b25a20",
+      "result_id": "dbd423f1-a66d-4f79-812f-ecdd882da78a"
+    },
+    {
+      "claim_id": "4c0da9ce-2ef8-4585-b17e-0fe0439c5b9a",
+      "result_id": "dbd423f1-a66d-4f79-812f-ecdd882da78a"
+    },
+    {
+      "claim_id": "495b8ce1-e606-48c0-9edc-9a2d3c2a780c",
+      "result_id": "dbd423f1-a66d-4f79-812f-ecdd882da78a"
+    },
+    {
+      "claim_id": "581ab3a2-03d9-4a75-8024-572a37891a03",
+      "result_id": "dbd423f1-a66d-4f79-812f-ecdd882da78a"
+    },
+    {
+      "claim_id": "f08788b7-ac38-4660-8bdb-80fe66531214",
+      "result_id": "5bfe9320-605a-4c40-8561-105969d0e646"
+    },
+    {
+      "claim_id": "5886ecef-64bb-46b0-a586-5c0ceaa6bfb9",
+      "result_id": "5bfe9320-605a-4c40-8561-105969d0e646"
+    },
+    {
+      "claim_id": "839c595e-aadd-479e-bb65-1f8d33162db1",
+      "result_id": "5bfe9320-605a-4c40-8561-105969d0e646"
+    },
+    {
+      "claim_id": "822f6dee-3acd-4ac3-9b8b-a18a3cfefe3e",
+      "result_id": "5bfe9320-605a-4c40-8561-105969d0e646"
+    },
+    {
+      "claim_id": "3c14cdd4-05dd-4323-8543-5cd07afb2b53",
+      "result_id": "5bfe9320-605a-4c40-8561-105969d0e646"
+    },
+    {
+      "claim_id": "cd94dbd3-b465-4c9d-88cf-d9731d48f42f",
+      "result_id": "5d1e7b2d-d511-490e-bf2c-437f184bd125"
+    },
+    {
+      "claim_id": "543d60af-5fe0-4ffb-b23e-164c31f07aab",
+      "result_id": "5d1e7b2d-d511-490e-bf2c-437f184bd125"
+    },
+    {
+      "claim_id": "22a9e345-ad2e-4c2e-8efe-4758c066bd5c",
+      "result_id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1"
+    },
+    {
+      "claim_id": "164f6dcd-5650-4fa7-a98d-a5ecc402c0c0",
+      "result_id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1"
+    },
+    {
+      "claim_id": "caeabd2d-3cca-437a-b5d7-7aad8a34d0f9",
+      "result_id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1"
+    },
+    {
+      "claim_id": "abe3f6f4-2b2c-4ab0-bae4-5a7cb52676b7",
+      "result_id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1"
+    },
+    {
+      "claim_id": "5c002003-f18a-40fd-8549-c6212bfce31c",
+      "result_id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1"
+    },
+    {
+      "claim_id": "7149e6cf-760f-428d-9964-c3deae4b1b6a",
+      "result_id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1"
+    },
+    {
+      "claim_id": "a346fbc3-c28c-478a-8bd3-511051945839",
+      "result_id": "4c6f6231-1a0d-413c-9e86-f6fa0d1448f1"
+    },
+    {
+      "claim_id": "abb0bdc8-5497-4b25-a2a6-3e5d39e9b7be",
+      "result_id": "20d860a1-f940-421a-8227-249f37ccaf37"
+    },
+    {
+      "claim_id": "6aa95a61-caa5-43b6-a0a8-700e526641aa",
+      "result_id": "20d860a1-f940-421a-8227-249f37ccaf37"
+    },
+    {
+      "claim_id": "6bd8aa66-62fd-4f9b-bec3-5d0eed049fab",
+      "result_id": "a6cc72db-a8a7-4b89-a411-d67be9fd2c65"
+    },
+    {
+      "claim_id": "f129fa7c-f4ed-4eab-95f3-23e32aee3236",
+      "result_id": "1bb90ffc-c8c2-48ba-b9f9-6f8be5b0169a"
+    },
+    {
+      "claim_id": "4f98ee28-000a-4801-9396-876627e2dc91",
+      "result_id": "1bb90ffc-c8c2-48ba-b9f9-6f8be5b0169a"
+    },
+    {
+      "claim_id": "959a85a0-9c5a-4ca4-a4c3-716b8b0b0f1a",
+      "result_id": "b7b2d3ed-5473-42db-8d6c-909121f6026d"
+    },
+    {
+      "claim_id": "f31ce5c7-fb7b-4f6b-a244-f56f268d4427",
+      "result_id": "b7b2d3ed-5473-42db-8d6c-909121f6026d"
+    },
+    {
+      "claim_id": "1ee554b6-6280-4455-b739-e040ec93d769",
+      "result_id": "b7b2d3ed-5473-42db-8d6c-909121f6026d"
+    },
+    {
+      "claim_id": "7673447e-cd10-45f5-b50f-08d3acb4fc65",
+      "result_id": "b7b2d3ed-5473-42db-8d6c-909121f6026d"
+    }
+  ],
+  "comparisons": []
+}

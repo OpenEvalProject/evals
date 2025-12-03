@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "GENESPACE integrates conserved gene order and orthology to define the expected physical position of all genes across multiple genomes by operating on a foundational assumption that homologs should be exactly single copy within any syntenic region, addressing violations from tandem arrays and gene presence-absence variation through specific computational steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C8, and C98-C102 collectively describe the core methodology of GENESPACE. The foundational assumption (C6) is clearly stated, violations are identified (C7-C8), and the computational pipeline is described (C98-C102). These claims are internally consistent and describe the method comprehensively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C59",
+      "C60"
+    ],
+    "result": "GENESPACE outperformed OrthoFinder and MCScanX in isolation across all seven genome pairs tested, producing higher percentages of single-copy syntenic blocks and genes in single chromosome orthogroups, with the most pronounced benefits in recently diverged genomes with whole-genome duplications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17, C59-C60 present quantitative comparisons from Table 1 showing GENESPACE's superior performance. The data consistently demonstrate improvements across different evolutionary scenarios, with specific percentages provided for cotton (C14-C17) and human-chicken (C11-C12) comparisons. The pattern of greater improvement in polyploid genomes (C13) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "GENESPACE analysis of 15 avian and mammalian genomes plus 2 reptile outgroups revealed that mammalian X and avian Z chromosomes have remained intact over >100 million years, with the avian Z chromosome not evolving from sampled reptile Z chromosomes but the mammalian X and sand lizard Z chromosomes sharing partial syntenic orthology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30, C64-C69 describe the vertebrate sex chromosome analysis with specific quantitative results (e.g., C26: 91.7 Mbp shared region, C30: 107.2 Mbp syntenic segment). The conclusions about evolutionary relationships are supported by synteny data shown in Figure 2, though some interpretations (C24) are appropriately qualified as speculative. The dataset composition (C64-C66) and prior knowledge (C28, C67-C68) provide proper context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C70",
+      "C71"
+    ],
+    "result": "The avian Z chromosome is conserved across all five avian genomes except for a partial fusion in budgie, while monotreme sex chromosomes are only partially syntenic between sampled genomes and evolved independently from other mammalian sex chromosomes, with echidna X4 and platypus X5 showing synteny with the avian Z chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37, C70-C71 describe specific findings about avian and monotreme sex chromosomes with quantitative data (C32: 19.5 Mbp fusion, C37: 47.6 Mbp/67.9% synteny). The observations are supported by Figure 2 data and prior work citations (C34-C35, C71). The speculative interpretation about neo-sex chromosome fusion (C33) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "GENESPACE produced contiguous synteny maps across grass genomes including challenging paleo-homeologs in maize, and analysis of C3/C4 photosynthesis genes revealed lower presence-absence variation than background (9.7% vs 38.2%), with C3 species showing significantly more absences than C4 species even when controlling for global gene absence rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 present specific quantitative results with statistical tests (C42: odds ratio=5.7, p<1\u00d710\u207b\u00b9\u2076; C43: odds ratio=3.1, p=6.25\u00d710\u207b\u2078). The analysis is properly contextualized with background about grass family characteristics (C72-C74). The statistical comparisons are appropriate and the conclusions about C3/C4 gene PAV patterns are well-supported by the data in Figure 3B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "GENESPACE analysis of maize NAM population QTL intervals revealed that two Mo18W QTL regions exist within an 11.7 Mbp inversion unique to Mo18W, and identified parent-specific genes (2-3 in Mo18W intervals, 4 in Ki11 interval) that would not have been discovered using only the B73 reference genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C83-C90 describe the QTL analysis with specific findings about the inversion (C45) and private genes (C46-C48). The analysis is properly motivated (C83-C86) and the inference about linkage disequilibrium (C88) is appropriately qualified as speculative. The limitation that identified genes lack drought-related annotations (C89) is honestly reported, and the utility claim (C90) is reasonable given the discovery of previously undetectable variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C95"
+    ],
+    "result": "Analysis of the ~70 million year old Rho whole-genome duplication in grasses revealed that Rho-derived paralogous regions show much lower peptide identity than orthologs between species, but S. viridis chromosome 8 contains a 2.7 Mbp over-retained paralogous region where paralogs are not significantly less conserved than primary orthologous regions (91.6% vs 91.9%, p=0.13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53, C78-C81, C95 describe the Rho WGD analysis with specific quantitative results and statistical tests (C50: W=88,094,632, p<1\u00d710\u207b\u00b9\u2076; C51: 26.9% difference, W=87,842, p<1\u00d710\u207b\u00b9\u2076; C53: W=14,830, p=0.13). The method for identifying secondary hits is described (C95), and the findings about over-retained regions are supported by Figure 4B data. The statistical tests are appropriate for the comparisons made.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C82"
+    ],
+    "result": "Over-retained Rho-derived paralogous regions are located at chromosome termini in most grasses except wheat, which shows complete segregation of paralogs with regions in chromosome centers, consistent with a proposed evolutionary mechanism involving concerted evolution and illegitimate homeologous recombination that would be less effective in pericentromeric regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58, C82 describe the chromosomal distribution pattern of over-retained regions with specific observations (C54-C56) supported by Figure 4C. The interpretation (C57-C58, C82) is appropriately linked to prior work (Wang et al., 2011) and provides a mechanistic explanation for the observed pattern. The reasoning about recombination effectiveness at different chromosomal locations is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Non-syntenic orthologs exist between genomes, with closely related genomes without WGD history having few (e.g., 1096/6.3% between human-chimpanzee) while more diverged genomes with WGD history have many more (e.g., 9002 between Sorghum-Brachypodium), and GENESPACE includes and flags these non-syntenic orthologs in the pan-genome annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C61-C63 describe the handling of non-syntenic orthologs with specific quantitative examples (C18-C19). The pattern observation (C62) is supported by the data, and the interpretation about Rho WGD-derived paralogs (C20) is consistent with later analysis. The methodological feature of including non-syntenic orthologs (C63) is described and shown in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Orthologs arise from speciation events while paralogs arise from sequence duplications, and synteny can be preserved across hundreds of millions of years of evolution and retained over multiple whole-genome duplications in some taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 present established definitions and knowledge in the field, supported by citations (C4-C5: Jiao et al., 2014; Simakov et al., 2020; Zhao and Schranz, 2019). These are foundational concepts that provide context for the work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C75",
+      "C76",
+      "C77",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Grass genomes have undergone various whole-genome duplications at different times (maize 11.4-12 Mya, switchgrass 4-6 Mya, wheat 8 kya, Rho WGD ~70 Mya), and most plant families have undergone WGDs unlike nearly all animal lineages, with the resulting gene family redundancy hypothesized to underlie grass diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C75-C77, C91-C94 present established knowledge about polyploidy in grasses and plants, supported by multiple citations. These provide important context for the analyses but represent prior knowledge rather than novel findings. Minor inconsistency exists between C38 (11.4 Mya) and C75 (12 Mya) for maize WGD age, but both are approximations within acceptable range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "All GENESPACE analyses were performed in R 4.1.2 on macOS using specific package versions and third-party software, with results generated programmatically from publicly available genome annotations downloaded by October 8, 2021, using default parameters with specific exceptions and appropriate statistical tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 provide comprehensive methodological details including software versions (C103-C105), reproducibility information (C106), data sources (C107), parameterization (C108-C109), and statistical methods (C110-C112). These details are essential for reproducibility and are clearly documented with appropriate citations for software packages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "OrthoFinder defines orthogroups based on common ancestry in the last common ancestor of all species considered, making the phylogenetic scale of the analysis important, and GENESPACE provides parameters (outgroup, nSecondaryHits, orthofinderInBlk) to handle different evolutionary scenarios including polyploids and paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C124 explain important methodological considerations about orthology inference and how GENESPACE handles different scenarios. The explanation of how phylogenetic scale affects orthogroup composition (C113-C118) is clear and supported by the example shown in Figure 3A vs 3D. The description of parameter options (C119, C122-C124) provides users with guidance for different applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "GENESPACE is presented as a framework to bridge gaps between comparative and quantitative genomics, especially in complex evolutionary systems, by incorporating synteny and orthology into comparative genomics and quantitative genetics pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 present the overall contribution and purpose of GENESPACE. These are supported by the demonstrated applications across vertebrate sex chromosomes, grass genomes, and maize QTL analysis. The claim about bridging disciplines is substantiated by the diverse use cases presented.",
+    "result_type": "MAJOR"
+  }
+]

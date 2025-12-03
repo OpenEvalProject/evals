@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C76",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors identify three discrete phases of cortical actin dynamics during neuroblast division. During interphase, the cortex contains patches of concentrated actin, highly dynamic pulsatile waves traveling across the cell, and areas with little detectable actin. These pulsatile movements are sporadic in early interphase but become more regular near mitosis, with variable direction often along the cell's equator, and are correlated with cellular-scale morphological deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37, C76, and C89-C91 collectively describe the interphase actin dynamics with consistent observations from imaging data (Figure 1, Video 1). The characterization is based on full-volume rapid imaging at 10s intervals, which provides temporal and spatial resolution to detect these dynamics. The observations are internally consistent and well-documented with visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C77",
+      "C92"
+    ],
+    "result": "Near nuclear envelope breakdown (NEB), cortical actin dynamics undergo a transition where static patches disappear and dynamic actin reorients toward the apical pole, becoming highly regular and apically-directed. This phase continues until anaphase when movements rapidly reverse direction, with actin moving basally toward the emerging cleavage furrow. Actin becomes more evenly distributed following the transition to mitosis compared to interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C77, and C92 describe the mitotic transition in actin dynamics with direct observational support from imaging data (Figure 1, Video 1). The temporal correlation with NEB is clearly documented, and the reversal at anaphase is consistent with prior literature (C43). The characterization of distribution changes is supported by medial section comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cortical actin and aPKC dynamics become highly correlated beginning in early mitosis. While interphase actin pulses have no noticeable effect on aPKC enrichments, when cortical actin begins flowing apically near NEB, aPKC patches also move toward the apical pole. The transition to apically directed movement is nearly simultaneous for both proteins (actin: 1.9 \u00b1 1.0 min prior to NEB; aPKC: 1.3 \u00b1 1.1 min; n=13), though actin dynamics occur over the entire cortex while aPKC movements are limited to the apical hemisphere. Once aPKC forms an apical cap, it appears static while cortical actin continues flowing apically, until both reverse direction simultaneously at anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C59 describe the coupling between actin and aPKC dynamics with strong support from dual-channel imaging (Figure 2, Video 2). The quantitative timing measurements (C53, C54) provide statistical support with n=13 neuroblasts. The spatial distinction between whole-cortex actin dynamics and apical-hemisphere-limited aPKC movements (C55) is clearly documented. The temporal correlation and subsequent decoupling during cap maintenance are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Cytochalasin D (CytoD) treatment inhibits apically directed actin movements during early mitosis, causing immediate cessation of apically directed aPKC movement and failure to form an apical cap (n=11). Both LatA and CytoD inhibit aPKC coalescence, but aPKC is maintained in the apical hemisphere longer in CytoD-treated neuroblasts compared to LatA-treated cells, with aPKC signal entering the basal hemisphere more rapidly in LatA treatment. The authors conclude that cortical dynamics driving aPKC apical cap formation require the apically directed phase of actin dynamics during late prophase and metaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C67-C69 describe drug perturbation experiments with clear observational support (Figure 3, associated videos). The sample size for CytoD experiments (n=11) is stated. The differential effects of LatA versus CytoD are quantified (Figure 3D) and provide mechanistic insight. However, the statistical analysis of the difference between LatA and CytoD treatments could be more robust\u2014while a bootstrap confidence interval is shown, the sample sizes for each condition are not explicitly stated in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose that cortical actin structure may prolong the aPKC polarized state by slowing its diffusion into the basal hemisphere, based on the more rapid depolarization of aPKC in LatA- versus CytoD-treated neuroblasts. They conclude that the actin cytoskeleton participates in Par polarity via at least two mechanisms: generating non-diffusive movements through actomyosin-generated cortical flows, and maintaining the polarized state by slowing diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C83-C86 propose a dual mechanism for actin's role in polarity. While the differential effects of LatA and CytoD are observed (C84), the mechanistic interpretation that this reflects changes in cortical diffusion (C85) is speculative. The authors acknowledge this is a potential explanation ('could arise'), but no direct measurements of diffusion rates or cortical mobility are provided. The conclusion of two distinct mechanisms (C86) is reasonable but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "For each phase of actin dynamics, myosin II is localized to the cortex in a similar pattern, including during the apically directed continuous movements that polarize aPKC. However, the localization between actin and myosin II is not absolute, with large cortical regions where the two do not colocalize in addition to regions where they overlap. The authors conclude that the phases of cortical actin dynamics include both actin and myosin II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe myosin II dynamics with direct observational support from dual-channel imaging (Figure 4, Video 3). The observation of partial colocalization is clearly documented and is consistent with similar patterns reported in C. elegans (C74). The conclusion that these are actomyosin dynamics (C75) is well-supported by the imaging data showing coordinated but not perfectly overlapping localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C78"
+    ],
+    "result": "The authors report the discovery of cortical actomyosin dynamics that begin in interphase when the Par complex is cytoplasmic but ultimately become tightly coupled to cortical Par dynamics. Interphase dynamics are unoriented and pulsatile but rapidly become sustained and apically-directed in early mitosis when aPKC accumulates on the cortex. Apical actomyosin flows drive aPKC coalescence into an apical cap that depolarizes in anaphase when flow reverses direction. Together with the previously characterized role of anaphase flows in daughter cell size asymmetry, multiple phases of cortical actomyosin dynamics regulate asymmetric cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8, C10, and C78 represent the main conclusions of the study, synthesizing the observations from the other result groups. These conclusions are well-supported by the imaging data (Figures 1-5, Videos 1-3) and drug perturbation experiments (Figure 3). The integration with prior knowledge about anaphase flows (C9) appropriately contextualizes the findings. The summary diagram (Figure 5) effectively illustrates the multiple phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors infer that cortical actomyosin dynamics are force-generating processes based on morphological changes in interphase cells and cortical aPKC movements correlated with actin dynamics. They note that contractile forces are generated by the combined activity of F-actin and myosin II (actomyosin), and that cortical pulsatile contractions of actomyosin have been observed in many other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is an inference from observed morphological deformations (C37) and protein movements (C51-C58), which is reasonable given the context. Claims C94-C95 provide established knowledge about actomyosin contractility supported by citations. While direct force measurements are not provided, the inference is well-justified by the observed cellular deformations and the presence of both actin and myosin II in the dynamic regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors note that no apically directed cortical actomyosin dynamics had been observed during neuroblast polarization despite extensive prior examination, with F-actin and myosin II reported as cytoplasmic or uniformly cortical in interphase and apically enriched at metaphase. They attribute this to limitations of prior methods (fixed cells or limited medial sections) and demonstrate that rapid imaging of the full neuroblast volume can reveal dynamic phases not detected with other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 appropriately contextualize the current findings relative to prior work, with extensive citations (C26-C28). The methodological advance (C30) is well-supported by the authors' prior work and is validated by the current observations. This represents an important technical contribution that enabled the discovery of the previously unobserved dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors note that apically directed movements of actomyosin are consistent with the requirement for F-actin in aPKC coalescence. They compare this to the C. elegans zygote where pulsatile contractions generate bulk cortical flows (advection) that lead to non-specific transport of cortically localized components, but acknowledge that whether neuroblast polarity protein movements are driven by advection requires further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 appropriately connect the current findings to established mechanisms in C. elegans (C81, supported by citations) while acknowledging uncertainty about the specific mechanism in neuroblasts (C82). This represents responsible interpretation that avoids overextending the conclusions beyond what the data support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors note that some localized aPKC enrichments remain in the apical hemisphere in drug-treated neuroblasts, possibly due to association with localized membrane enrichments. They also note that a neuroblast membrane polarity cycle was recently discovered that requires the actin cytoskeleton, and speculate that the mechanical phases of the membrane polarity cycle may be related to the phases of cortical actomyosin dynamics reported here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is an observation with a speculative explanation supported by citation to recent work. Claims C87-C88 appropriately reference related recent findings and suggest a potential connection, but this remains speculative (C88). These represent reasonable hypotheses for future investigation but are not tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C43",
+      "C44",
+      "C45",
+      "C60",
+      "C61",
+      "C79",
+      "C96"
+    ],
+    "result": "The manuscript provides extensive background on Par complex function, neuroblast polarity, the role of F-actin in Par polarization, and comparisons to C. elegans zygote polarization. This includes established knowledge about Par complex dynamics, the requirement for F-actin in neuroblast polarity, and actomyosin-driven polarization in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C28, C43-C45, C60-C61, C79, and C96 represent background knowledge and prior work that appropriately contextualizes the current study. These claims are well-supported by citations to relevant literature and the authors' own prior work. This background is essential for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  }
+]

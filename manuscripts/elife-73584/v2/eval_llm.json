@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "An ensemble of nine mechanistic models was used to produce 6-month COVID-19 scenario projections for July-December 2021 across the United States. The models projected weekly cases, hospitalizations, and deaths under four scenarios varying by vaccination coverage (70% vs 80%) and Delta variant transmissibility (40% vs 60% increase over Alpha). Models were calibrated using Johns Hopkins and federal data, combined using an equally-weighted linear opinion pool method with trimming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C2, C64-C76) are well-documented and internally consistent, describing a standard multi-model ensemble approach. The data sources, scenario specifications, and ensemble methodology are clearly stated with appropriate citations. The approach is transparent and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C57",
+      "C58"
+    ],
+    "result": "The high transmissibility scenarios (60% increase) projected substantial COVID-19 resurgences across the US, with the most pessimistic scenario projecting peak weekly cases of 414,000 and 5,900 deaths, and cumulative totals of 7.5 million cases and 96,000 deaths during July 2021-January 2022. Higher vaccination coverage (80% vs 70%) was projected to reduce peak cases by 16% and deaths by 21%, with resurgences expected to be more pronounced in low-vaccination jurisdictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C12, C57-C58 present specific quantitative projections with uncertainty intervals from the ensemble models. These are internally consistent findings from the modeling exercise, properly documented with references to figures. The projections represent the models' outputs given the specified scenarios and assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C6"
+    ],
+    "result": "Higher vaccination coverage was estimated to substantially reduce the size and duration of the projected Delta resurgence, with 80% coverage projected to avert 1.5 million cases and 21,000 deaths compared to 70% coverage during July 2021-January 2022.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C6 present comparative scenario results showing the projected impact of increased vaccination. These are direct outputs from the modeling ensemble comparing the two vaccination scenarios, with specific quantitative estimates provided. The methodology for calculating averted outcomes is described in C74.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C46",
+      "C47"
+    ],
+    "result": "State-level projections showed substantial geographic heterogeneity, with the ten states having the largest projected resurgences (Louisiana, Hawaii, Nevada, Arkansas, Florida, Missouri, Georgia, Alabama, Alaska, Arizona) having median vaccination coverage of 56% compared to 70% in the ten states with smallest projected resurgences. A strong negative correlation (r=-0.66) was found between projected cumulative deaths and vaccination coverage, with states having younger populations and higher elderly vaccination (\u226576% in all states) expected to experience lower severe disease burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19, C46-C47 present state-level analysis results with specific statistical correlations and vaccination coverage data. The correlation analysis is appropriately conducted and the relationship between vaccination coverage and projected outcomes is clearly documented with reference to Figure 2. The inference about elderly vaccination impact (C19, C46) is reasonable given the documented high coverage in this age group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Observed case fatality ratios (CFR) showed reductions comparing August-December 2020 to January-July 2021: 9% reduction in the 10 states with largest projected resurgence and 21% reduction in the 10 states with smallest projected resurgence. The models projected CFR reductions of 14-15% during the projection period compared to August-December 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 present both observed historical CFR data and projected CFR changes. The observed reductions are data-driven comparisons between time periods, while the projected reductions are model outputs. Both are clearly stated with specific percentages and time periods defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Lower transmissibility variant scenarios (40% increase) projected significantly reduced resurgences, with cumulative national cases of only 9-13% compared to the winter 2020-21 peak. Similarly, a previous projection round (Round 6) assuming only 20% transmissibility increase projected resurgence producing only 8% of winter 2020-21 peak cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 present projection results from lower transmissibility scenarios and comparison to prior modeling rounds. These are straightforward reporting of model outputs with appropriate citation to prior work (C24). The comparison demonstrates sensitivity to transmissibility assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38"
+    ],
+    "result": "The models substantially underestimated the magnitude of the Delta wave despite accurately projecting timing. Weekly case observations exceeded the 95% projection interval in the first 9 weeks for all scenarios. Peak cases were under-projected by 64-70% (observed 1.15M vs projected 349K-414K), hospitalizations by 36-47% (observed 87K vs projected 46K-56K), and deaths by 59-67% (observed 14K vs projected 4.7K-6K), though the 95% projection intervals captured the observed peaks. Despite magnitude underestimation, state-level ranking showed strong correlation (Spearman's \u03c1=0.87) between projected and observed cases, with 7 of 10 highest projected states ranking in the 10 worst observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25-C35, C38 present comprehensive comparison between projections and observed outcomes with specific quantitative discrepancies. The analysis appropriately distinguishes between point estimate accuracy and interval coverage, noting that while median projections underestimated magnitude, the uncertainty intervals captured observed values. The strong rank correlation (C28-C29) demonstrates that relative state-level predictions were accurate even when absolute magnitudes were not. This is a critical self-assessment of model performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C69"
+    ],
+    "result": "Scenarios were designed in late June 2021 based on available information at that time, with projections generated by July 4, 2021. Eight of nine modeling teams did not include waning immunity, which resulted in smaller susceptible populations and reduced projected magnitude. When scenarios were designed, little information was available on Delta-specific vaccine efficacy or waning immunity. Multiple factors may have driven underestimation including inaccurate assumptions about Delta transmissibility/severity, vaccine effectiveness, waning immunity, testing changes, and NPI/behavior interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C69 provide critical context about model limitations and timing. The acknowledgment that 8 of 9 teams omitted waning immunity (C42) with citation is an important methodological limitation. The inference that this omission reduced projected magnitude (C43) is logical. The discussion of possible mechanisms for underestimation (C41) is appropriately speculative with supporting citations. These represent honest assessment of model assumptions and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The Delta variant rose quickly in the US between May-June 2021, achieving dominance by late June 2021 and accounting for over 90% of SARS-CoV-2 infections from late July to early December 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 present factual statements about Delta variant prevalence with CDC citation. These are well-established epidemiological facts from surveillance data, appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C44",
+      "C77"
+    ],
+    "result": "In Spring 2021, the Delta variant began causing increases in cases, hospitalizations, and deaths in parts of the US, coinciding with lifting of NPIs including mask mandates in almost every jurisdiction. US cases reached a nadir in June 2021 despite increased testing. By July 1, 2021, only 13 states and DC had achieved \u226570% vaccination coverage among eligible populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8, C44, C77 present contextual background about the epidemiological and policy situation in Spring-Summer 2021. These are factual statements about timing of Delta emergence, case trends, NPI policy changes, and vaccination coverage, supported by CDC citations where appropriate. These establish the context for the modeling exercise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C45",
+      "C48",
+      "C60"
+    ],
+    "result": "The COVID-19 Scenario Modeling Hub was established in December 2020 to produce multi-model scenario projections. Prior rounds demonstrated effectiveness of NPIs combined with vaccination to moderate spread of highly transmissible variants. Projections from this round were made publicly available in early July 2021, two months ahead of the Delta peak. Observed increases in vaccinations occurred particularly among young age groups and in jurisdictions most impacted by Delta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C45, C48, C60 provide background on the modeling hub and observed responses. These are factual statements about the hub's establishment (C9), findings from prior work (C45), timing of projection release (C60), and observed vaccination trends (C48), all with appropriate citations. These establish credibility and context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "Long-term projections have inherent uncertainty from multiple sources including unpredictable events (e.g., Omicron emergence in December 2021), model structural differences, and input assumptions. Notable variation existed among individual model projections regarding timing and magnitude, reflecting differences in model structure, vaccine coverage projections, variant growth, and seasonal effects. Model estimates depend on vaccine hesitancy surveys which may underestimate true hesitancy due to selection bias. There is a trade-off between timely projection release and accuracy that improves with recent information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56, C61 discuss sources of uncertainty and limitations in projection modeling. These represent thoughtful discussion of inherent challenges in long-term forecasting, with specific examples (Omicron emergence C50, mid-fall resurgence C51) and acknowledgment of survey bias (C56). The discussion of model variation (C52-C54) and the value of ensemble approaches is well-reasoned. These demonstrate appropriate scientific humility about projection limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "The projections indicated that highly transmissible variants like Delta can challenge pandemic control even with substantial vaccination coverage. While projections dramatically underestimated magnitude, they provided value in projecting timing and emphasizing vaccination importance. Multi-model ensemble efforts are particularly well-suited to provide disease projections under changing epidemiological and behavioral situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C62-C63 present conclusions and lessons learned from the modeling exercise. These are reasonable inferences from the results: C59 is supported by the projection results showing resurgence even with high vaccination; C62 appropriately acknowledges both limitations (magnitude underestimation) and value (timing, policy implications); C63 draws a reasonable conclusion about the utility of ensemble approaches based on the experience described. These represent balanced interpretation of the work's contributions and limitations.",
+    "result_type": "MAJOR"
+  }
+]

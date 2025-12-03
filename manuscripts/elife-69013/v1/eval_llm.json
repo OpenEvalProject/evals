@@ -1,0 +1,647 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript distinguishes between hypothesis-driven and data-driven modeling approaches in neuroscience, noting that while they are not mutually exclusive, the proliferation of modeling formalisms, simulation platforms, and data formats has fragmented the neuroscience modeling community, particularly across different biological scales and levels of abstraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C8 provide consistent definitional statements about hypothesis-driven and data-driven modeling that are well-established in the field. Claims C9 and C10 present reasonable assessments of the current state of the neuroscience modeling community, supported by the authors' expertise and the context provided throughout the manuscript. These are descriptive claims about the field rather than novel empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C14",
+      "C25"
+    ],
+    "result": "The authors argue that a lack of interoperability, transparency, and reusability of models and workflows creates barriers for model integration, and that applying FAIR principles to models and workflows would have significant benefits for the neuroscience community, including enabling researchers to find, reuse, validate, and extend published models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3 and C11 are assertions about barriers and potential benefits that are plausible but not empirically demonstrated in this manuscript. Claims C14 and C25 are speculative recommendations about the value of FAIR principles. While these claims are reasonable and well-argued, they represent the authors' perspective and proposed framework rather than validated findings. The manuscript is primarily a position paper advocating for FAIR principles rather than providing empirical evidence of their effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C26",
+      "C27"
+    ],
+    "result": "The FAIR principles (Findable, Accessible, Interoperable, Reusable) have been widely discussed and implemented for data management and recently for computational workflows, with the original intent to consider not only data but also algorithms, tools, and workflows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C12, C13, C26, and C27 are well-supported by citations to the original FAIR principles paper (Wilkinson et al., 2016) and subsequent work. These are factual statements about established principles in the field, properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript defines how FAIR principles apply to models and modeling workflows: findability and accessibility require databases, repositories, and persistent identifiers; interoperability concerns the ability to run models on different platforms and across scales; and reusability requires that laboratories can efficiently reuse and rebuild each other's models while acknowledging provenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide clear, logical interpretations of how FAIR principles apply to the modeling context. These are definitional and conceptual claims that are well-reasoned and consistent with the original FAIR principles. They represent the authors' framework for applying FAIR to modeling, which is appropriate for a perspective/review article.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A recent study found that only about half of over 400 kinetic models published in peer-reviewed articles could be directly reproduced. The manuscript distinguishes between repeatability (running the same code to get the same results) and reproducibility (different implementation reaching the same result), with reproducibility providing a stronger quality check.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by citation to Tiwari et al., 2021, providing empirical evidence of reproducibility challenges. Claims C33-C35 provide clear definitions that are standard in the computational science community. These claims effectively motivate the need for FAIR principles in modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The computational neuroscience field has developed open-source simulation environments, model databases (including ModelDB and GitHub), standardized model specifications (SBML, NeuroML), and frameworks for model calibration and validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are factual statements about existing resources in the field, each supported by appropriate citations. These claims accurately describe the current state of infrastructure for computational neuroscience modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The original BCM (Bienenstock-Cooper-Munro) synaptic plasticity model, published in 1982, describes bidirectional plasticity with domains inducing either depression or potentiation. While the model is not difficult to reproduce due to its abstract nature, it lacks reference implementation, complete parameters, and is not consistent with modern FAIR principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 accurately describe the BCM model with proper citation. Claims C49-C55 provide reasonable assessments of the model's reproducibility and FAIR compliance, acknowledging historical context (predating FAIR principles). These are fair evaluations of a historical model used as an illustrative example throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C65",
+      "C66"
+    ],
+    "result": "Mechanistic implementations of the BCM rule using known molecular pathways (involving calcineurin, CaMKII, and AMPA receptors) can reproduce the BCM curve. The properties of these molecules, including calcineurin's high affinity for calcium-bound calmodulin and CaMKII's activation at higher calcium concentrations, result in a response resembling the BCM curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C65 are supported by reference to Figure 3C showing the model output. Claims C59-C60 are supported by citation to Creamer, 2020. Claim C66 is supported by citations to Lisman, 1989 and Hayer and Bhalla, 2005. These claims effectively demonstrate how mechanistic models can implement abstract principles, which is a key point of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The evolution of BCM models demonstrates progression in FAIR compliance: the Lisman 1989 model provides equations but requires reimplementation; the Hayer and Bhalla 2005 model exists in open-access databases (DOQCS, BioModels) in standardized SBML format with some provenance documentation, though not all parameter provenance is included. Access to FAIR-compliant databases facilitated the Hayer and Bhalla model construction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 provide well-supported assessments of different BCM model implementations against FAIR criteria. The claims are based on examination of the cited models and databases, with appropriate acknowledgment of limitations. This effectively illustrates the manuscript's main argument about the value of FAIR principles using a concrete historical example.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The history of BCM models demonstrates a clear progression from abstract, qualitative, and non-FAIR formulations to more mechanistic, quantitative, and FAIR formulations, driven by accumulation of experimental data and nascent concepts of FAIR principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 provide a reasonable synthesis of the BCM model evolution described in the manuscript. This interpretation is well-supported by the detailed examination of different BCM implementations (C40-C74) and effectively illustrates the manuscript's central thesis about the value of FAIR principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript proposes a modeling workflow with distinct stages: (1) model foundation - collecting experimental data and prior knowledge to plan model structure; (2a) specification - formalizing information into standardized, machine-readable format; (2b) model refinement - mathematical formalism, simulation, calibration, and refinement; (3) model usage - validation, analysis, and prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 describe the proposed workflow framework with reference to Figure 2. These are clear, logical descriptions of modeling stages that are well-established in the field. The framework provides a useful structure for discussing FAIR principles at each stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Qualitative data are useful for defining model structure (entities and interactions), while quantitative data are needed to specify parameters (rate constants, equilibrium constants, concentrations). Findable data, data provenance, and data reusability are key FAIR components important for the model foundation stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide clear, accurate descriptions of the roles of different data types in modeling. Claim C88 is supported by citation to Wittig et al., 2017. These are well-established concepts in computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Multiple databases support neuroscience modeling at cellular and subcellular levels, including: summary statistics and morphological data (NeuroElectro, NeuroMorpho, Allen Brain Atlas), computational models (ModelDB with >1700 models, NeuroML-DB with >1500 models, Open Source Brain), and systems biology data (BRENDA, SABIO-RK, BioModels). Ontology references enable use of domain knowledge in search strategies and model building.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 provide factual descriptions of existing databases and resources, each supported by appropriate citations. These claims accurately catalog the infrastructure available for FAIR modeling in neuroscience. The specific numbers (>1700 models, >1500 models) are cited to appropriate sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "BCM models have progressively used more information from databases as new models were developed. Mechanistically detailed versions use reaction schemes and rates from DOQCS and BioModels, and several subsequent cellular and network models in ModelDB rely on various BCM versions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide specific examples of how the BCM model has benefited from FAIR resources, supported by citations to the relevant databases and models. This effectively demonstrates the practical value of FAIR principles using the manuscript's running example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Despite large amounts of data at different scales, data remain sparse for building mechanistic 'bottom-up' multiscale models. However, predictions from finer-resolution models can constrain parameters at coarser scales. Molecular dynamics simulations using structural data can constrain kinetic parameters in signaling pathway models, and tools exist to facilitate this (e.g., SYCAMORE). The combination and reuse of model components at multiple scales emphasizes the importance of FAIR principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 are well-supported by citations to relevant work (Klipp et al., 2010; Boras et al., 2015; Bruce et al., 2019a,b; Stein et al., 2007; Weidemann et al., 2008). These claims accurately describe both challenges and opportunities in multiscale modeling, with appropriate acknowledgment of data limitations and existing solutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Standardized model formats are critical for interoperability and reuse. To reproduce the entire modeling process requires machine-readable information about the model, quantitative data for calibration/validation, simulation experiments, and prior parameter assumptions. This is similar to MIASE compliance. COMBINE coordinates development of community standards for computational models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C116 provide clear, well-reasoned requirements for reproducible modeling. Claim C113 appropriately references MIASE (Waltemath et al., 2011), and claim C115 cites COMBINE (Hucka et al., 2015). These are established best practices in the computational modeling community.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Several formats exist for model and data specification: SBtab is machine and human readable, capturing model and calibration data with defined fields for ontology terms and database identifiers; FindSim codifies experiments with stimuli, readouts, and mapping to model output; SBML provides standardized markup for model description supported by many simulators (e.g., MOOSE, STEPS), though SBML files are typically created via API rather than by hand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 accurately describe existing formats and their features, with appropriate acknowledgment of advantages and limitations. These are factual descriptions of established tools in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Various approaches exist for model specification: some platforms provide APIs (e.g., rxd); VFGEN converts differential equation descriptions to code for multiple solvers; standards exist for neuron/circuit models (NeuroML, CellML, SONATA). NeuroML is an INCF-endorsed standard supported by dozens of packages, with libraries to convert to simulator code and fields for ontological metadata. Data standards (NWB, NIX) aid comparison of model outputs to experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C132 provide accurate descriptions of various model specification approaches and standards, each supported by appropriate citations (Newton et al., 2018; Weckesser, 2008; Abrams et al., 2021; Gleeson et al., 2010; Bug et al., 2008; Teeters et al., 2015; R\u00fcbel et al., 2019; Stoewer et al., 2014). These are factual descriptions of existing tools and standards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The manuscript recommends that the abstract BCM model should be defined using simulator-independent standards (SBtab or SBML) including published curve data, and the mechanistic version should be specified similarly with experiments defined in SBtab or JSON. Validation should demonstrate convergence between formulations. Reproducible parameter estimation requires documenting prior assumptions and optimization procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 provide reasonable, specific recommendations for making BCM models FAIR-compliant. Claim C133 appropriately cites the data source (Kirkwood et al., 1996). These are practical applications of the FAIR principles to the manuscript's running example, though they are recommendations rather than implemented solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Many simulation tools have been developed for modeling biochemical and biophysical events at multiple scales. Simulations typically use ordinary or stochastic differential equations, with standardized specifications interpreted as equation terms and parameters. Deterministic approaches (mass action, Michaelis-Menten kinetics) are efficient for large molecule numbers, while stochastic methods are necessary at low numbers. Reaction-diffusion simulations require geometrical information and some simulators (MOOSE, NeuroRD, STEPS) support both modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C147 provide accurate descriptions of simulation approaches and tools, supported by appropriate citations (Hodgkin and Huxley, 1952; Manninen et al., 2006; Calzone et al., 2010; Boutillier et al., 2018; Ray et al., 2008; Jedrzejewski-Szmek and Blackwell, 2016; Hepburn et al., 2012). These are well-established concepts and tools in computational neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Interoperability among simulators and software is valuable and facilitated by standardized, machine-readable model formats. Interoperability also includes cosimulation - running two simulation frameworks in parallel at different scales with communication between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 state obvious benefits of interoperability. Claim C150 is supported by citations to examples of cosimulation (Cannon et al., 2007; Djurfeldt et al., 2010; Newton et al., 2018). These are accurate descriptions of interoperability concepts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Model refinement (adjusting structure and parameter values) is a critical step after simulation capability is established. The manuscript emphasizes automation and data science methodologies to improve this process, which is important as data increases and models become more complex. Important aspects include incorporating uncertainty measures and ensuring reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151 and C154 describe well-established aspects of model refinement. Claims C152-C153 present reasonable arguments for automation, though these are more speculative recommendations than demonstrated findings. Overall, these claims provide a sound framework for discussing model refinement in the context of FAIR principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Model structure refinement involves respecting physical/mathematical constraints to ensure validity. Automatic methods require machine-readable standardized specifications. For neuron/circuit models, this includes checking morphologies and unit checking. For subcellular models, this includes mass conservation and thermodynamic constraints. Tools exist for semi-automatic checking (e.g., Copasi for conservation laws, software for SBtab format).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C165 provide accurate descriptions of model structure constraints and refinement approaches, supported by appropriate citations (Ascoli et al., 2007; Cannon et al., 2014; Wegscheider, 1902; Klipp et al., 2016; Hoops et al., 2006; Santos et al., 2021). These are well-established concepts in computational modeling with specific examples of available tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Parameter estimation is an iterative process of simulation, comparison to data, and updating. It requires machine-readable model and data, and software for parameter space search. While ideally parameters would be directly reported, often they must be inferred from experimental data. Numerous optimization approaches exist, typically using objective functions like sum of squared differences weighted by measurement error, and must handle multiple local minima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C175 provide accurate descriptions of parameter estimation concepts and challenges. Claims C171 and C175 are supported by citations to relevant reviews (Ashyraliyev et al., 2009; Villaverde et al., 2019). These are well-established concepts in computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Mechanistic model structure constrains possible behaviors, and parameters mapped to biological entities are restricted by physiological constraints, increasing specificity. While fitting specific datasets can be difficult or impossible, when solutions exist, multiple parameter sets often fit data equally well but may give different predictions. Uncertainty can arise from sparse data, structural unidentifiability, or biological variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C178 provide reasonable arguments about mechanistic model constraints. Claims C179-C181 are supported by citations to relevant work (Gutenkunst et al., 2007; Eriksson et al., 2019; Raue et al., 2009; Marder et al., 2015). These claims accurately describe important challenges in parameter estimation and the need for uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Studies by Prinz et al. (2004) showed that similar oscillatory network activity in crustacean stomatogastric ganglion models could arise from widely disparate circuit parameters, suggesting considerable biological variability, which was confirmed experimentally. Bayesian approaches (using MCMC methods) provide tools for describing parameter uncertainty but are currently limited to models with dozens of parameters. Less costly alternatives include profile likelihood and global sensitivity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C189 are well-supported by citations to relevant work (Prinz et al., 2004; Schulz et al., 2006; Vanlier et al., 2013; Girolami and Calderhead, 2011; Raue et al., 2009; Tenn\u00f8e et al., 2018). These claims accurately describe important findings about parameter variability and available methods for uncertainty quantification, with appropriate acknowledgment of current limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Parameter space exploration could benefit from additional automation. While many plasticity models are manually tuned, parameter optimization has been integrated into workflows using custom scripts. Several frameworks exist: FindSim integrates experiments with multiscale models; Santos et al. (2021) describe automatic workflow using SBtab; Ajustador optimizes MOOSE/NeuroRD models; SciUnit/NeuronUnit provide testing frameworks that can be used for optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C190 is a reasonable speculation. Claims C191-C198 are supported by citations to relevant tools and frameworks (Viswan et al., 2018; Santos et al., 2021; Jedrzejewski-Szmek et al., 2018; Omar et al., 2014; Gerkin et al., 2018). These claims accurately describe existing tools and their capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Reproducible model refinement requires well-described models, data, and parameter assumptions. Parameter estimation applies to both mechanistic and abstract models, as even abstract models reflect observables. The original BCM and Lisman models used parameter tuning. Today more efficient methods are used, and future work could include uncertainty quantification through Bayesian methods or global sensitivity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C203 provide reasonable statements about reproducibility and the applicability of parameter estimation. Claims C204-C205 are supported by citations to the original BCM and Lisman papers. Claims C206-C207 describe current practices and suggest future directions, which are reasonable recommendations based on the manuscript's framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "After model refinement, the final model can be validated, analyzed, and used for predictions and hypothesis testing. In multiscale modeling, model output can be input for another scale. Ideally, validation uses data not used in construction/refinement, though sparse data may require validation through experimental tests of predictions. Model analysis can extend predictions through sensitivity analysis, dynamical systems theory tools, or experimental design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C213 provide accurate descriptions of the model usage stage and various analysis approaches. These are well-established concepts in computational modeling, appropriately described in the context of the manuscript's workflow framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "Sensitivity analysis investigates how input factors affect model output, using either local methods (computationally efficient but limited range) or global methods (larger region but computationally costly). Various approaches exist including one-at-a-time perturbation and combinations of Bayesian uncertainty quantification with global sensitivity analysis. Software tools are available (e.g., Tenn\u00f8e et al., 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C214-C222 provide accurate descriptions of sensitivity analysis methods, supported by appropriate citations (Saltelli et al., 2007; Zi, 2011; Halnes et al., 2009; Gutierrez-Arenas et al., 2014; Eriksson et al., 2019; Tenn\u00f8e et al., 2018). These are well-established methods with specific examples and available tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "Models can be used for experimental design by simulating different scenarios to identify experiments providing the most information, often using Bayesian methodology. Dynamical systems theory tools (examining stability, phase diagrams, bifurcations) have been used to understand mechanisms like cell spiking transitions, oscillatory network control, and subcellular phenomena including calcium release and switch-like behaviors in CaMKII and PP2A systems. The original BCM study included stability analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C223-C230 are well-supported by citations to relevant work (Kreutz and Timmer, 2009; Liepe et al., 2013; Ermentrout et al., 2019; Keeley et al., 2017; Li and Rinzel, 1994; Graupner and Brunel, 2007; Helfer and Shultz, 2018; Pi and Lisman, 2008). These claims accurately describe established methods and their applications in neuroscience modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246"
+    ],
+    "result": "The manuscript provides three example workflows (Figure 5) illustrating steps toward FAIR workflows. For findability, metadata and unique identifiers (DOIs, RRIDs) are important. For packaging and dissemination, various approaches exist: FAIRDOMhub and EBRAINS provide collaboration environments; virtual machines/containers aid reproducibility; Jupyter notebooks aid interoperability; Common Workflow Language specifies execution details; protocols.io can publish workflows; RO-Crate packages research artifacts with metadata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C232-C246 provide practical recommendations for implementing FAIR workflows, supported by appropriate citations (Vasilevsky et al., 2013; Bandrowski and Martone, 2016; European Organization For Nuclear Research, 2013; Wolstencroft et al., 2017; Merkel, 2014; Kluyver et al., 2016; Piccolo et al., 2021; Teytelman and Stoliartchouk, 2015; Soiland-Reyes et al., 2022). Figure 5 provides concrete examples. These are practical, actionable recommendations based on existing tools and standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253",
+      "C254",
+      "C255",
+      "C256",
+      "C257",
+      "C258",
+      "C259"
+    ],
+    "result": "The manuscript considers how to make historical BCM studies FAIR-compliant retrospectively. Ideally, studies would be findable through PubMed with easy-to-locate metadata and data. Later models like Hayer and Bhalla (2005) in DOQCS are more accessible and interoperable. For reusability, data could be specified in FindSim or SBtab formats supporting model-data comparison. Reproducible refinement requires documenting parameter assumptions. The Hayer model's provenance is not machine-readable and needs more comprehensive metadata and license information. SBML-formatted models could be used on multiple simulator platforms and uploaded to databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C247-C259 provide reasonable recommendations for making the BCM example FAIR-compliant, with appropriate acknowledgment of current limitations and suggestions for improvement. Claim C251 is supported by citation to Sivakumaran et al., 2003. These claims effectively demonstrate how FAIR principles could be applied to improve existing models, though they are recommendations rather than implemented solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C260",
+      "C261",
+      "C262",
+      "C263",
+      "C264",
+      "C265",
+      "C266",
+      "C267",
+      "C268"
+    ],
+    "result": "The manuscript's main conclusions are: (1) data- and hypothesis-driven approaches can be combined through FAIR infrastructure to improve modeling capabilities; (2) a minimal format for model and data specification is suggested for reproducibility; (3) FAIR workflows would increase capacity for combining models, extending them with new data, and validation; (4) uncertainty quantification (e.g., Bayesian methods) is important but currently limited to models with dozens of parameters; (5) objective model characterization is important to avoid tuning bias; (6) many models now conduct sensitivity analysis and parameter exploration for unbiased property overview.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C260-C268 provide reasonable summaries of the manuscript's main arguments and recommendations. These are well-supported by the detailed discussions throughout the manuscript. Claims C263-C264 appropriately acknowledge current limitations of Bayesian methods. These conclusions are appropriate for a perspective/review article proposing a framework for FAIR modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C269",
+      "C270",
+      "C271",
+      "C272"
+    ],
+    "result": "The manuscript's outlook includes: (1) machine learning tools will likely be increasingly integrated with traditional modeling as complement and necessity for high-throughput data; (2) while machine learning finds correlations, mechanistic models reveal causal relationships and can generalize to new situations; (3) understanding the brain from molecules to behavior requires modeling at all biological scales to integrate heterogeneous data across scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C269-C272 provide reasonable perspectives on future directions. Claim C269 is supported by citation to Alber et al., 2019. Claims C270-C271 make valid distinctions between machine learning and mechanistic modeling approaches. Claim C272 articulates the need for multiscale modeling. These are appropriate forward-looking statements for a perspective article.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C273",
+      "C274",
+      "C275",
+      "C276"
+    ],
+    "result": "Development of FAIR resources in computational neuroscience has progressed over the last decade, but standards and best practices still need further development and alignment (coordinated by INCF). The adoption of FAIR principles is timely given recent brain initiatives worldwide, including the International Brain Initiative, which will help promote data and model exchange through international collaborations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C273-C276 provide reasonable assessments of the current state and future prospects for FAIR principles in neuroscience, supported by citations to relevant work (De Schutter, 2008; Abrams et al., 2021; Grillner et al., 2016; International Brain Initiative, 2020). These are appropriate concluding statements about the field's trajectory.",
+    "result_type": "MINOR"
+  }
+]

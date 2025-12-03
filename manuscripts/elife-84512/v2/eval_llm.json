@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors demonstrate a phase reversal in spike-field coupling that reliably corresponds to the laminar boundary between input and deep cortical layers. This pattern was observed across multiple cortical areas (V4, MT, PFC) in two primate species (marmosets and macaques), with significant differences in spike-phase index (SPI) and preferred phase angles across layers. The depth estimates from this laminar-phase coupling (LPC) method correlated significantly with CSD-based estimates (r=0.64, p=0.00005) with no significant difference in absolute depth values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 provide converging evidence for the main finding through quantitative measurements, statistical comparisons, and cross-validation with the gold-standard CSD method. The statistical tests are appropriate (Wilcoxon signed-rank, Watson-Williams, Pearson correlation), sample sizes are adequate (N=34 sessions), and the finding replicates across species and cortical areas. The correlation between methods and lack of significant difference in depth estimates provide strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The phase reversal pattern is robust across multiple analysis parameters including different frequency bands (4-8, 8-14, 15-30, 30-50 Hz), phase computation methods (Generalized Phase vs. Hilbert Transform), spike sorting approaches (single-unit vs. multi-unit), experimental conditions (fixation, free viewing, darkness, receptive field mapping), and referencing schemes (shallowest, deepest, or common average reference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 systematically test the robustness of the main finding across multiple methodological variations. The authors provide appropriate controls and demonstrate consistency across parameters, which strengthens confidence in the generalizability of the method. The testing is comprehensive and addresses potential confounds related to signal processing choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The LPC method can detect laminar boundaries from as little as one minute of continuous recording data and can track electrode drift over time. Across recordings, the estimated input layer depth drifted deeper by an average of 132\u00b126 \u03bcm between the first and last 2 minutes of recording (p=0.005), consistent with tissue settling after electrode insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 demonstrate practical advantages of the LPC method for online depth estimation and drift tracking. The statistical evidence for drift (p=0.005) is significant, and the interpretation as tissue settling is reasonable. However, the claim about 'as little as a minute' being sufficient is somewhat qualitative - more systematic analysis of minimum data requirements would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "LFP phase correlations alone can sometimes identify laminar boundaries, but this pattern is variable across recording sessions. The spike-LFP phase relationship (LPC) provides a more robust measure of contact depth than LFP phase correlations alone, with improved reliability when combining LFP phase with spiking activity timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C50-C52 acknowledge limitations of using LFP phase alone while demonstrating the added value of incorporating spiking data. The comparative assessment is honest about variability and provides a balanced evaluation of different approaches. This strengthens confidence in the proposed LPC method by showing it outperforms simpler alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In cases where CSD and LPC estimates disagreed by >200 \u03bcm (14/34 sessions), the LPC method better captured known laminar features including higher firing rates in input/deep layers (p=0.0003 for LPC vs. p=0.09 for CSD) and the inversion of high/low frequency LFP power (r=0.87 for LPC vs. r=0.65 for CSD). This suggests LPC provides more reliable depth estimates when CSD analysis is noisy or ambiguous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 provide critical validation by comparing both methods against independent ground-truth features (firing rates and spectral power patterns) from prior literature. The statistical evidence favoring LPC in ambiguous cases is compelling. However, the analysis is somewhat circular since 'disagreement' sessions were selected post-hoc, and true histological validation is absent. The inference that LPC is 'better aligned to ground truth' (C39, C45) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Superficial and input layers show stronger spike-LFP coupling than deep layers, which may reflect shared synaptic inputs in these layers. This pattern is consistent with spike-count correlation measurements in V2 and V4, though different patterns have been observed in V1, suggesting potential area-specific differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C58 present an interesting observation about laminar differences in coupling strength, but the mechanistic explanation (C54) is speculative. The comparison to prior spike-count correlation studies (C55-C57) provides some support, but these are different measures. The prediction about V1 (C58) is untested speculation. This result identifies an interesting pattern but lacks sufficient mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The LPC pattern was reliable across V4, MT, and PFC in two primate species performing visually guided tasks, but generalizability to non-sensory cortical areas, sleep/anesthesia conditions, or other species remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 appropriately summarize the scope and limitations of the findings. The authors are transparent about what has been tested (awake, sensory areas, two primate species) and what remains unknown. This honest assessment of generalizability is appropriate given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors propose that the observed spike-phase reversal may result from LFP phase inversion across an electrical dipole generated by radial pyramidal cell architecture spanning cortical layers. While the mechanism remains unclear, the reversal consistently aligns with the input/deep layer boundary across multiple cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C63 present a mechanistic hypothesis but acknowledge it as speculative. The dipole hypothesis (C61-C62) is plausible and cited, but not tested in this study. The empirical observation (C63) is well-supported, but the mechanistic explanation requires future experimental validation. The authors appropriately distinguish between demonstrated patterns and proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C48"
+    ],
+    "result": "The LPC method provides a fast, simple supplement or alternative to CSD analysis for estimating laminar depth. It can be applied to ongoing activity across various experimental conditions and analysis parameters, and successfully replicates the histologically-validated pattern of LFP power inversion across the input layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C48 summarize the practical utility and validation of the method. The replication of the power inversion pattern (C48) provides important validation against a histologically-confirmed feature. The practical advantages (speed, simplicity, no stimulus requirement) are well-demonstrated. These claims appropriately synthesize the main contributions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study used appropriate methods including 32-channel linear probes in V4 (macaques) and MT/PFC (marmosets), with proper surgical procedures, ethical approvals, and data acquisition parameters. Recording sessions were included only if CSD analysis revealed recognizable laminar patterns, yielding 34 total sessions across areas and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C67-C76 describe standard methodological details that are appropriate for this type of study. The inclusion criteria (C75) introduce potential selection bias by requiring 'recognizable' CSD patterns, which could exclude difficult cases where the LPC method might be most valuable. However, this is a reasonable approach for initial validation. Sample sizes are adequate though modest (N=34 sessions total).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors establish the context and limitations of current methods for identifying cortical layers. CSD analysis is the gold standard but requires averaging across repeated sensory-evoked responses, limiting its application to well-characterized sensory areas. Spike-field coupling is known to be diagnostic of circuit interactions, motivating the investigation of spike-phase relationships for laminar identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10, C46-C47 accurately represent prior work through appropriate citations and establish the scientific rationale for the study. The characterization of CSD limitations (C7, C46) and spike-field coupling properties (C9-C10) is well-supported by literature. This provides appropriate context for the novel contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C36"
+    ],
+    "result": "Prior work has established that superficial layers exhibit higher high-frequency LFP power (80-200 Hz) while deep layers show more low-frequency power (8-20 Hz), with crossover at the input layer. Additionally, superficial layers have lower firing rates compared to input and deep layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C40-C41 accurately cite prior findings that serve as validation benchmarks in this study. These are well-established patterns in the literature with histological validation, making them appropriate ground-truth features for comparing CSD and LPC methods.",
+    "result_type": "MINOR"
+  }
+]

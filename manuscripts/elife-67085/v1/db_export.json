@@ -1,0 +1,2416 @@
+{
+  "submission": {
+    "id": "ebd13935-4c95-441c-9256-0b9fce8845a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:37:46.811518Z",
+    "updated_at": "2025-12-03T06:37:46.811518Z"
+  },
+  "content": [
+    {
+      "id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "submission_id": "ebd13935-4c95-441c-9256-0b9fce8845a9",
+      "content_type": "manuscript",
+      "content_text": "# Expanding the MECP2 network using comparative genomics reveals potential therapeutic targets for Rett syndrome\n\n## Authors\n\n- Irene Unterman<sup>1</sup> ([ORCID: 0000-0002-5697-9612](https://orcid.org/0000-0002-5697-9612))\n- Idit Bloch<sup>1</sup>\n- Simona Cazacu<sup>2</sup> ([ORCID: 0000-0002-6085-4177](https://orcid.org/0000-0002-6085-4177))\n- Gila Kazimirsky<sup>3</sup>\n- Bruria Ben-Zeev<sup>4</sup>\n- Benjamin P Berman<sup>1</sup> ([ORCID: 0000-0002-2099-9005](https://orcid.org/0000-0002-2099-9005)) \u2020\n- Chaya Brodie<sup>3</sup> \u2020\n- Yuval Tabach<sup>1</sup> ([ORCID: 0000-0001-9521-3217](https://orcid.org/0000-0001-9521-3217)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Biology and Cancer Research, Institute for Medical Research Israel-Canada Jerusalem Israel\n2. Hermelin Brain Tumor Center, Henry Ford Hospital Detroit United States\n3. The Mina and Everard Goodman Faculty of Life Sciences, Bar-Ilan University Ramat-Gan Israel\n4. Edmond and Lily Safra Children's Hospital, Chaim Sheba Medical Center Ramat Gan Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nInactivating mutations in the Methyl-CpG Binding Protein 2 (MECP2) gene are the main cause of Rett syndrome (RTT). Despite extensive research into MECP2 function, no treatments for RTT are currently available. Here, we used an evolutionary genomics approach to construct an unbiased MECP2 gene network, using 1028 eukaryotic genomes to prioritize proteins with strong co-evolutionary signatures with MECP2. Focusing on proteins targeted by FDA-approved drugs led to three promising targets, two of which were previously linked to MECP2 function (IRAK, KEAP1) and one that was not (EPOR). The drugs targeting these three proteins (Pacritinib, DMF, and EPO) were able to rescue different phenotypes of MECP2 inactivation in cultured human neural cell types, and appeared to converge on Nuclear Factor Kappa B (NF-\u03baB) signaling in inflammation. This study highlights the potential of comparative genomics to accelerate drug discovery, and yields potential new avenues for the treatment of RTT.\n\n## Introduction\n\nRett syndrome (RTT [MIM: #312750]) is a rare genetic disorder caused by mutations in the methyl-CpG binding protein 2 (MECP2) gene (Amir et al., 1999). It is an X-linked dominant disorder, almost exclusively affecting females. RTT is characterized by normal early development followed by regression, loss of purposeful hand movements, and intellectual disability (Liyanage and Rastegar, 2014). Characteristics of the disease such as age of onset, range of symptoms, and their severity vary between patients (Neul et al., 2008). The MECP2 protein has a role in transcriptional regulation but its exact mechanism of action, co-factors and downstream targets, are not fully characterized (Picard and Fagiolini, 2019).\n\nThe MECP2 protein, as a transcriptional regulator, has been linked to both gene silencing and activation (Horvath and Monteggia, 2018). It binds methylated CG dinucleotides through its methyl-binding domain and has a transcriptional repression domain that mediates binding to co-repressor proteins (Lyst et al., 2013). These two domains are hotspots for missense, nonsense, and frameshift mutations for RTT disease (Ragione et al., 2016; Krishnaraj et al., 2017). Transcriptomic analyses of RTT patient postmortem brain tissues, blood samples, cell lines, and murine models (Shovlin and Tropea, 2018) have revealed hundreds of affected genes but with a low degree of overlap between studies (Picard and Fagiolini, 2019).\n\nTherapies aiming to restore MECP2 loss of function are in early development stages and are not approved for patients. These include attempts at read-through inducing drugs to overcome nonsense mutations (Brendel et al., 2011; Merritt et al., 2020), X reactivating therapies to allow expression of silenced endogenous MECP2 (12), and gene therapy treatments to introduce wild-type MECP2 copies into the brain (Guy et al., 2007; Garg et al., 2013). Furthermore, current gene therapy methods show limited transduction efficiency and are unable to modify all cells in the target tissue (Gadalla et al., 2013). Targeting factors downstream of MECP2 offers a promising avenue which could allow for partial amelioration of Rett symptoms, without the severe neurological phenotypes associates with MECP2 overexpression (Chao and Zoghbi, 2012; Ramocki et al., 2009).\n\nOne major downstream target of MECP2 is brain-derived neurotrophic factor (BDNF) (Chen et al., 2003), a key modulator of neuronal development and function. BDNF levels are reduced in symptomatic MECP2 KO mice (Kline et al., 2010) and experimental interventions that increase BDNF levels improve RTT-like phenotypes (Chang et al., 2006). The IGF-1 protein potentiates BDNF activity, and treatments with recombinant human IGF-1 and its analogs have led to improvement in several clinical measurements (Khwaja et al., 2014; Glaze et al., 2019), with a trial of an IGF-1 synthetic analog currently in Phase 3 (NCT04181723). Additional trials include the administration of triheptanoin supplementation which is being investigated in a Phase two clinical trial (NCT02696044) to target mitochondrial dysfunction in RTT\u00a0(Park et al., 2014). Other interventions, such as ketamine (NCT03633058), targeting N-methyl-D-aspartate receptor (NMDAR) dysfunction, and Anavex 2\u201373 (NCT03758924), aimed at restoring mitochondrial dysfunction (Kaufmann et al., 2019), are currently being studied. Histone deacetylases (HDACs) mediate MECP2 gene repression, and have also been suggested as therapeutic targets for Rett syndrome (Shukla and Tekwani, 2020), which may act on BDNF trafficking (Xu et al., 2014). The lack of a successful therapy to date emphasizes the need for accurate and comprehensive mapping of the MECP2 network with a focus on targetable proteins that could be used for interventions (Vashi and Justice, 2019). Here, we use a genomics approach that has thus far not been applied to MECP2 (phylogenetic profiling), combined with data from drug target databases, to construct such a map.\n\nA well-tested approach for gene functional prediction and identification of functional gene networks is phylogenetic profiling (PP), which analyzes gene conservation patterns across an evolutionary related set of organisms (Pellegrini et al., 1999). Genes with similar evolutionary patterns are functionally coupled, irrespective of sequence homology (Date and Marcotte, 2003). PP was used successfully to predict protein function (Enault et al., 2004; Eisen and Wu, 2002; Jiang, 2008; Merchant et al., 2007), protein interactions (Kim and Subramaniam, 2006; Sun et al., 2005) and protein localization within the cell (Marcotte et al., 2000; Pagliarini et al., 2008; Avidor-Reiss et al., 2004; Hodges et al., 2012). When a pathway becomes non-functional in a specific lineage (often due to loss of a key gene in the pathway), then other genes involved in the pathway may lose the fitness advantage they provide to the organism if they are not involved in other important pathways/functions. PP captures these pathway-level loss events, providing a quantitative measurement of functional relatedness and prioritizing those genes minimally involved in the same pathway over pleiotropic genes required in multiple pathways. This property is especially attractive for drug development, where the goal to is target the most specific proteins possible. Because PP is based on evolutionary dynamics rather than protein expression or sequence/structure features, it produces results that are highly complementary to traditional methods (Dey et al., 2015; Arkadir et al., 2019).\n\nIn our recent work, we developed an improved version of PP that normalizes signals across hundreds of eukaryotic genomes to identify important new members of cellular and disease pathways (Arkadir et al., 2019; Sherill-Rofe et al., 2019; Tabach et al., 2013a; Tabach et al., 2013b; Schwartz et al., 2013). As protein function and evolution are very complex (Bloch et al., 2020), co-evolution within a local lineage (i.e. mammals, vertebrates, fungi, etc.) can provide complementary evidence, and is especially informative for genes with multiple functions that show complex or recent evolution (Sherill-Rofe et al., 2019). We recently incorporated a clade-specific analysis into our Normalized Phylogenetic Profile (NPP) software pipeline (Tsaban et al., 2021), which is used for all the analyses in this study. We have used several functional databases including CORUM (Ruepp et al., 2008), KEGG (Kanehisa and Goto, 2000), and REACTOME (Jassal et al., 2020) to validate the NPP method and show that it recovers known protein complexes and pathways with higher specificity and sensitivity than other phylogenetic methods (Bloch et al., 2020; Tsaban et al., 2021).\n\nWe combined our PP-derived interaction map of MECP2 with drug targeting databases to select new candidate drugs for RTT. There are thousands of known bioactive compounds collected in databases such as Drug-Gene interaction database (DGIdb) (Cotto et al., 2018) and Open Targets (Oxford Academic, 2019), that contain information about validated direct or indirect effect on specific proteins or pathways. Network-based drug discovery methods are emerging as important tools to identify novel drug targets and predict the drug\u2019s mode of action and potential side-effects (Iorio et al., 2013), and have been associated with higher success rates in clinical trials (Nelson et al., 2015; Pushpakom et al., 2019). From our PP network, we selected three proteins that showed robust co-evolution with MECP2 across multiple evolutionary scales, had related roles in inflammation, and could be targeted by pharmacologically-validated compounds. These three compounds \u2013 pacritinib, EPO and DMF \u2013 were then functionally validated in MECP2 Knock-Down (KD) human neural cells, including microglia, astrocytes and neural stem cells. The ability of all these drugs to reverse some aspects of the MECP2-KD phenotypes demonstrates how comparative genome analysis can be used to understand and target this disease network.\n\n## Results\n\n### Phylogenetic profile analysis of MECP2 in eukaryotes and mammals identifies MECP2 co-evolved genes\n\nTo trace the evolutionary history of MECP2, we used BLASTP (Camacho et al., 2009) to compare the MECP2 protein to the proteomes of 1028 eukaryotic species. We repeated the process for each of 20,192 human transcripts to generate a profile of conservation for each human gene. The scores were normalized according to sequence length and the evolutionary distance between humans and the queried species as described previously (Tabach et al., 2013b; Bloch et al., 2020). This Normalized Phylogenetic Profile (NPP) describes how conserved a transcript is in each species across the tree of life, compared to its expected conservation. Genes with similar NPPs (i.e. genes that are either conserved or lost as a group) are functionally related, often belonging to the same pathway (Sherill-Rofe et al., 2019; Tabach et al., 2013a; Tabach et al., 2013b; Schwartz et al., 2013). We have shown that both across-clade and within-clade measures of co-evolution can be informative, and thus we computed NPPs both across all eukaryotes (Figure 1A and Figure 1\u2014figure supplement 1A) and within mammals (Figure 1B and Figure 1\u2014figure supplement 1B) as described previously (Sherill-Rofe et al., 2019; Bloch et al., 2020; Tsaban et al., 2021; Braun et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig1-v1.jpg)\n\n**Figure 1.:** (A)\u00a0The Normalized Phylogenetic Profile (NPP) of MECP2 in eukaryotes along with the top 5000 co-evolved proteins. Each row represents one human protein, ordered by Pearson correlation to MECP2, with the top 200 proteins labeled as E200. Darker color indicates higher normalized conservation of the protein in each species. Organisms are grouped by phylogenetic clade, and clustered within each clade. (B) The NPP of MECP2 in 51 mammals along with the 5000 top co-evolved proteins, ordered by Pearson correlation to MECP within mammals. The top 200 proteins are labeled as M200. (C) Gene overlap of the top 200 most co-evolved genes in eukaryotes and mammals, listing the 10 gene names listed in both.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) NPP profiles of human genes in 1028 eukaryote species, ordered by the Pearson correlation to the profile of MECP2. (B) Phylogenetic profiles of human genes in 51 mammals, scaled to highlight the conservation patterns within the clade. (C) GeneAnalytics enrichment for the 390 union set of E200 and M200. Within each organ, individual anatomical compartment scores are displayed in dots. (D) Overlap between the 390 union set of E200 and M200 with all STRING MECP2 coexpression, experimental and textmining categories. (E) Overlap between the 200 genes most correlated to MECP2 in mammals (M200) and eukaryotes (E200) with the 390 genes most correlated to MECP2 through STRING.\n\nWe first used NPP scores to sort all human genes by their phylogenetic similarity to MECP2 across eukaryotes (Figure 1A and Figure 1\u2014figure supplement 1A). We selected the top 200 genes (the \u2018E200\u2019 set), which showed high correlation (R>0.47) with MECP2. Similarly, we used NPP scores within the mammalian clade (Figure 1B and Figure 1\u2014figure supplement 1B) to select the top 200 mammal-centric genes (the \u2018M200\u2019 set), which also showed high MECP2 correlations (R>0.49)\u00a0(Supplementary file 1) [code is available on GitHub\u00a0(Unterman et al., 2021; copy archived at swh:1:rev:14063b44a40688a8024a06347b63cfdac74b96ad)].\u00a0These two lists find correlated evolution at different scales, billions of years for eukaryotes and hundreds of millions for mammals. Therefore, the M200 set may show genes more recently co-evolved with MECP2. E200 and M200 had very different functional properties, based on STRING enrichment to Gene Ontology and other annotation sets (Supplementary file 2) The E200 list was enriched in a number of different functional categories, with some of the most significant related to innate immunity and the immune response. These included MHC Class II receptor activity and peptidoglycan receptor activity in GO, and the associated autoimmunity Asthma, Allograft rejection, and Type I in KEGG. In contrast, the M200 list had almost no functional enrichment, except for the general \u2018Disease\u2019 category within Uniprot annotated keywords.\n\nThe E200 and M200 lists had 10 genes in common (Figure 1C). As mammals are included within the eukaryote analysis, the two lists are not independent and thus the expected degree of overlap is hard to determine. Nevertheless, in two independent gene lists of this size we would only expect two overlapping genes. We thus considered the set of 10 overlapping genes, as well as the full union set of 390 genes, as two tiers of candidates for further exploration. A GeneAnalytics query of the 390 gene union set revealed it was enriched with genes expressed in the brain (p-value < 0.00024), with 79 genes linked to the cerebral cortex and 54 to the cerebellum (Figure 1\u2014figure supplement 1C; Ben-Ari Fuchs et al., 2016). Only 24 of the 390 gene list were overlapping with a length-matched list of MECP2 interactions from STRING (Figure 1\u2014figure supplement 1D,E), highlighting the complementary role phylogenetic analysis to other measurements and predictions of protein interaction.\n\n### MECP2 druggable protein network identifies several drug targets located in evolutionarily conserved chromosomal clusters\n\nWe chose to focus on the subset of MECP2 co-evolved genes that could be targeted by readily available compounds. This approach allows for straightforward functional testing in both in vitro and animal models of MECP2 inactivation and moves us closer to the ultimate goal of identifying a candidate therapeutic for RTT. Using DGIdb (Cotto et al., 2018) and Open Targets (Oxford Academic, 2019), we searched specific drug-gene interaction types (e.g. inhibitory, activating) to identify direct effects on the 390 candidate genes. Open Targets identified such protein-compound interactions for 11 proteins from our list, and DGIdb identified an additional 22, resulting in 33 druggable proteins in the MECP2 phylogenetic network. MECP2-linked proteins were neither more or less druggable than other proteins in the genome, since the number expected by chance was 39.9\u00b16.0.\n\nTwo of the 33 druggable NPP-linked proteins (IRAK1 and EPOR) were found in both the eukaryotic E200 and the mammalian M200 lists, and were targeted by compounds with clinical efficacy and acceptable safety profiles (Pacritinib and EPI), making these immediately attractive for further study. In a STRING (Szklarczyk et al., 2019) functional interaction map, which is based on independent data types, IRAK1 was one of the six proteins functionally linked to MECP2, whereas EPOR had no known functional links (Figure 2A). To identify additional targets among the 31 druggable NPP-linked proteins found in only one of the E200 and M200 lists, we investigated chromosomal clusters of genes with MECP2-linked genes, since clustered genes often indicate a shared evolutionary function. Indeed, IRAK1 is directly adjacent to MECP2 on an evolutionary conserved chromosomal band on the X chromosome (Figure 2B and Figure 2\u2014figure supplement 1). In a chromosomal clustering analysis of all MECP2-linked genes, the chr19p13.2 band contained more MECP2 co-evolved genes than any other in the genome (Figure 2C). Unexpectedly, this 5.6 Mb domain contained 5 of the 33 druggable MECP2 coevolved genes - EPOR, DNMT1, ICAM1, ICAM3, and KEAP1 (Figure 2D), making this the most strongly enriched band in the genome (p<1E-5, Figure 2D and Figure 2\u2014figure supplement 2). Topologically Associated Domains (TADs) define the 3D organization of functionally co-regulated gene clusters (Fritz et al., 2019), and the entire chr19p13.2 gene cluster defines a single TAD-based high-resolution Hi-C mapping (Rao et al., 2014; Figure 2E). Additionally, this region has been shown to be bound by MECP2 (Yasui et al., 2007).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig2-v1.jpg)\n\n**Figure 2.:** (A)\u00a0The 390 genes co-evolved with MECP2 in either eukaryotes or mammals contain 33 genes that are targets of known drugs/compounds. These genes are shown in a STRING interaction graph, with known gene-gene interactions shown as colored edges, and those with very strong co-evolution (Pearson correlation > 0.7) shown as gray edges. The two proteins co-evolved in both eukaryotes and mammals (EPOR and IRAK1) are colored yellow and the four other genes found at chr19p13.2 are colored purple. (B) Genomic location of MECP2 interacting genes along chromosome X in humans and mice. (C) Karyotype band locations of MECP2 and the 390 co-evolved genes. * p<0.05, **p<0.01, *** p<0.001 (D) Genomic location of MECP2 interacting genes along chr19p13.2 in humans and chromosome nine in mice. (E) Intra-chromosomal Hi-C contact heatmap for the chr19p13.2 locus in GM12878 cells, adapted from the 3D Genome Browser (Wang et al., 2018). Genes in the MECP2 network are shown, with other genes hidden for clarity. TADs called by 3D Genome Browser shown in blue/yellow track, with a super-TAD containing MECP2 genes outlined in red.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) NCBI Genome Data Viewer view of the genomic locations of DNMT1, ICAM1, ICAM3, KEAP1, and EPOR (top panel, genes highlighted). The gene orthologs are shown in Mus musculus chromosome 9 (bottom panel). (B) Inference of the synteny in ancestral species from Genomicus. Each row represents the same genomic locus at an ancestral state. Each gene is represented by a different color, and selected genes are annotated below. EPOR, ICAM1, ICAM3, KEAP1, and DNMT1 maintain their relative positions as far as the mammalian ancestral genome.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) NCBI Genome Data Viewer view of the genomic locations of MECP2 and IRAK1 (top panel). The gene orthologs are shown in Mus musculus chromosome X (bottom panel). (B) Inference of the synteny in ancestral species from Genomicus.\n\nFor the two druggable proteins found in both NPP lists (IRAK1, EPO1) and the other four proteins located in the chr19p13.2 TAD (DNMT1, ICAM1, ICAM3, KEAP1), we further investigated the associated drug\u2019s mode of action and efficacy and safety profile in other contexts. IRAK1 has been identified as a key intermediary in NF-\u03baB signaling in RTT, with MECP2 directly binding the IRAK1 promoter to regulate its expression in MECP2-null mouse brains and NF\u039aB1 dramatically increasing lifespan in MECP2 null mice (Kishi et al., 2016). Pacritinib is a JAK2/FLT3 inhibitor with IRAK1 inhibiting capabilities (Jensen et al., 2017), presently under clinical investigation for myelofibrosis and glioblastoma. As it is currently the only clinical stage IRAK1 inhibitor with known clinical efficacy and acceptable safety even after prolonged administration (Singer et al., 2018), we chose this compound for our functional studies to target IRAK1.\n\nEPOR forms a heterodimer with \u03b2 common receptor (\u03b2CR), also known as the Tissue-Protective Receptor (TPR) (Brines et al., 2004). The endogenous hormone EPO binds the TPR activating signaling cascades with roles in neuroprotection (Rey et al., 2019). EPO has a very well understood pharmacological profile, and several variants of erythropoietin lacking hematopoietic effects have been developed and shown to preserve the neuroprotective effects of EPO administration (Chen et al., 2015; Patel et al., 2011).\n\nKEAP1 is the key repressor of the transcription factor nuclear factor erythroid 2-related factor 2 (NFE2L2), which is involved in response to antioxidants through its transcriptional regulation of inflammatory pathways. Dimethyl fumarate (DMF) is an approved treatment for both multiple sclerosis and psoriasis (Torkildsen et al., 2016; Blair, 2018). Its administration decreases KEAP1 levels, increases NFE2L2 levels and causes dissociation and nuclear transport of NFE2L2. DMF treatment has proven to be effective and safe in conferring neuroprotection (Montes Diaz et al., 2018).\n\nSince the three candidate proteins targeted by these drug products (IRAK1, EPOR, and KEAP1) all have possible roles mediating inflammation, we chose to proceed with these for functional studies in cells modeling neural inflammatory phenotypes. The other three proteins identified (DNMT1, ICAM1, and ICAM3) may also be interesting targets for future study.\n\n### Human neural cell cultures exhibit Rett-like phenotypes when MECP2 is silenced\n\nTo analyze the effects of the three selected compounds on a RTT model system, we employed human immortalized primary neural cells silenced for MECP2. We chose to use a human in\u00a0vitro model system for preliminary validation due to the significant differences in the phenotypes and functions of mouse and human neural cells (Xu et al., 2018). Indeed, recent studies reported the use of iPSCs and immortalized glial cells as reliable human models for analyzing specific therapeutic targets for various diseases including autism (Tsilioni et al., 2020), neuroinflammation (Chiavari et al., 2019; Timmerman et al., 2018) and for analyzing the crosstalk of glioma with glial cells (Henrik Heiland et al., 2019; Zeng et al., 2020; Bier et al., 2020).\n\nSince all three selected compounds were associated with changes in neuroinflammation, we first focused on microglia and astrocytes. Loss or impaired function of MECP2 has been reported to affect the functions of glial cells and these changes have been implicated in the pathogenesis of RTT (Kahanovitch et al., 2019; Jin et al., 2017). We first characterized the effects of MECP2 silencing on the phenotypes of microglia (Figure 3). For these experiments, we transduced the cells with lentivirus vectors expressing control or MECP2 shRNAs. The expression of MECP2 was silenced by over 80% in these cells (Figure 3\u2014figure supplement 1). MECP2 silencing induced a relative increase in the expression of M1 markers (IL1, and CD86) and a relative decrease of M2 markers (CD206 and IL-13) (Figure 3A), suggesting an increase in neuroinflammation. We also found that MECP2 silencing decreased the phagocytosis of the microglia cells (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig3-v1.jpg)\n\n**Figure 3.:** Human microglia (A,B), NSCs (C), astrocytes (D,E), and neurons (E) were silenced for MECP2 using lentivirus vector. The relative expression of M1 and M2 markers was analyzed in microglia cells using RT-PCR (A) and degree of phagocytosis using the pHrodo assay (B). NSCs were transduced with lentivirus vectors expressing the differentiation reporters GFAP and MAP2 and were differentiated as described in the methods. Ten days later, luciferase activity was determined (C). Astrocytes silenced for MECP2 were analyzed for the expression of EAAT2 using western blot analysis (D) and the expression of BDNF mRNA in both MECP2 silenced astrocytes and neurons was determined using RT-PCR (E). The results are a representative experiment of three separate tests analyzed in quadruplet. **p<0.01, ***p<0.001,****p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Neurons, astrocytes, and microglia cells were transduced with lentivirus vectors expressing a control or MECP2 shRNAs. Following 3 days, the expression of MECP2 and actin were determined using western blot analysis. The results are representative of three experiments with similar results.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Human microglia (A), astrocytes (B), neurons (C), and neuronal stem cells (D) were treated with different concentrations of DMF (1, 10, and 50 \u00b5M), EPO (10, 30, and 50 ng/ml), and pacrinitib (1 and 10 \u00b5M). Following 3 days of treatment, the cells were analyzed for cell death using LDH assay. The results are the means \u00b1 SD of six samples for each compound.\n\nWe next analyzed the effect of MECP2 silencing on human astrocyte differentiation and functions. For these experiments, neural stem cells (NSCs) were transduced with lentivirus vectors expressing the differentiation reporters, GFP/fLuc GFAP or the mCherry/Luc MAP2. The cells were plated on laminin coated plates and luciferase activity was determined 10 days later. In accordance with previous reports (Andoh-Noda et al., 2015; Mok et al., 2020), we found that MECP2 silenced NSCs displayed preferential expression of the glial differentiation marker (GFAP) with a concomitant decrease in expression of the neuronal differentiation marker (MAP2) (Figure 3C). The MECP2 silenced astrocytes expressed lower levels of Excitatory Amino Acid Transporter 2 (EAAT2), indicating impaired function of these cells, as was suggested for mouse astrocytes (Okabe et al., 2012; Figure 3D).\n\nWe finally examined the effects of MECP2 silencing on the expression of BDNF in human neurons and astrocytes and found that, as reported for mouse cells (Chang et al., 2006; Li et al., 2012), MECP2 silencing decreased the expression of BDNF mRNA in both astrocyte and neuronal cultures (Figure 3E). Altogether, these finding indicate that the immortalized human cells employed in this study represent a reliable model for studying MECP2-related pathways and potential treatments.\n\n### DMF, EPO, and pacritinib differentially abrogate the effects of MECP2 silencing on microglia polarization\n\nWe then analyzed the effects of the three selected compounds, DMF, EPO and pacritinib, on MECP2 silenced cells. We first demonstrated that in the concentrations range we used, none of these compounds exerted a toxic effect on neither microglia cells, astrocytes, primary neuronal cells nor NSCs (Figure 3\u2014figure supplement 2).\n\nControl and MECP2 silenced microglia were treated with the DMF, EPO, and pacritinib, and their effects on the relative expression M1 (IL1, TNF\u03b1 and CD86) and M2 (CD206 and IL-13) markers were determined using RT-PCR. While MECP2 wild-type cells were unchanged by the three compounds, all three abrogated the M1 shift induced by MECP2 silencing, albeit to a different degree (Figure 4A\u2013C). EPO exerted the most significant effect, abrogating the effects of MECP2 silencing in all five marker genes (Figure 4A). In contrast, both DMF and pacritinib exerted only partial effects, abrogating the effects of MECP2 silencing in CD206, CD86, and IL-1, but failing to abrogate the effects on IL-13 and TNF-\u03b1 (Figure 4B\u2013C). We also analyzed the effects on phagocytosis in microglia cells. Treatment of MECP2 silenced cells with DMF exerted a significant increase in the phagocytosis of the silenced cells, whereas EPO and pacritinib did not (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig4-v1.jpg)\n\n**Figure 4.:** Human microglia cells were silenced for MECP2 using lentivirus vectors expressing MECP2 shRNA. Control cells were transduced with lentivirus vectors expressing a control shRNA. After 5 days, the expression of MECP2 was determined by western blot analysis (Figure 3\u2014figure supplement 1). Control and silenced cells were treated with EPO 10 ng/ml (A), DMF 10 \u00b5M (B) and pacritinib 10 \u00b5M (C), and the expression of M1 and M2-associated markers were determined after 72 hr using RT-PCR. MECP2 silenced microglia cells treated with EPO, DMF, or pacritinib were also analyzed for phagocytosis using the pHrodo assay (D). MECP2-silenced microglia cells were transduced with lentivirus vectors expressing the NF-kB reporter followed by treatment with EPO, DMF, and pacritinib for 24 hr. Luciferase activity was determined (E). The results demonstrate the means \u00b1 SD of a representative experiment of three separate tests analyzed in quadruplet. *p<0.05, **p<0.01, ***p<0.001,****p<0.0001.\n\n### EPO and DMF inhibit NF-\u03baB activation in MECP2 silenced microglia cells\n\nKnockdown of MECP2 has been reported to lead to increased NF-\u03baB activity in neuronal and myeloid cells (O'Driscoll et al., 2015) and this deregulated activity has been associated with neuroinflammation and decreased dendritic arborization and spine density in a mouse model of RTT (Kishi et al., 2016). We therefore examined the ability of our three candidate compounds to abrogate the increased NF-\u03baB activity in MECP2 KD microglia cells. MECP2-silenced microglia cells were transfected with lentivirus vectors expressing the NF-\u03baB luciferase reporter and a constitutively active Renilla luciferase construct (as a transfection control). The cells were treated with EPO, DMF and pacritinib for 24 hr and luciferase activity was determined thereafter. A significant increase in NF-\u03baB-dependent luciferase activation was observed for EPO and DMF in the MECP2-silenced cells (Figure 4E), indicating that EPO and DMF were able to downregulate the increased NF-\u03baB activation in MECP2 KD cells.\n\n### EPO, but not DMF or pacritinib, abrogate improper astrocytic differentiation and astrocyte function in MECP2-silenced neural cells\n\nVarious studies support a non-cell-autonomous effect of astrocytes on neuronal cell functions and contribution of astrocytes to various aspects of Rett syndrome pathogenesis via regulation of glutamate levels, homeostasis, and neuroinflammation (Kahanovitch et al., 2019; Maezawa et al., 2009). As presented in Figure 3C, MECP2 silencing increased astrocytic differentiation of NSCs at the expense of neuronal differentiation. Treatment of the silenced NSCs with pacritinib or DMF did not have significant effects on markers of neuronal (\u03b2III tubulin) or astrocytic (GFAP) differentiation (Figure 5A). In contrast, EPO abrogated the impaired NSC differentiation as reflected by an increase of \u03b2III tubulin and a decrease of GFAP (Figure 5A). In human astrocytes, MECP2 silencing decreased the expression of the glutamate transporter EAAT2 (Figure 3D). Treatment of these cells with EPO inhibited the decreased EAAT2 expression, whereas pacritinib and DMF did not have a significant effect (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig5-v1.jpg)\n\n**Figure 5.:** Human NSCs (A) and astrocytes (B) were silenced for MECP2 using lentivirus vectors expressing MECP2 shRNA. Control cells were transduced with lentivirus vectors expressing a control shRNA. After 5 days, the expression of MECP2 was determined by western blot analysis (Figure 3\u2014figure suppplement 1). (A) Control and silenced NSCs were allowed to differentiate for 10 days and the expression of differentiation markers GFAP and \u03b2III tubulin were determined using RT-PCR. (B) Silenced astrocytes treated with the different compounds or with medium were analyzed for the expression of EAAT2 using RT-PCR. The results are of a representative experiment of three separate tests analyzed in quadruplet. *p<0.05, **p<0.01, ***p<0.001,****p<0.0001.\n\n### DMF and EPO upregulate BDNF expression in MECP2-silenced cells\n\nBDNF plays important roles in neuronal growth and development and represents a well-recognized transcriptional target of MECP2 (Chen et al., 2003). Silencing of MECP2 decreased BDNF expression in both neurons and astrocytes (Figure 6A\u2013B). DMF and EPO induced an increase in BDNF mRNA in the silenced neurons (Figure 6A) and in the silenced astrocytes (Figure 6B), whereas pacritinib did not exert a significant effect in either. We replicated this experiment in astrocytes, testing DMF and EPI both individually and in combination (Figure 6C). This showed a modest increase in the level of BDNF in the in the combined treatment, suggesting potentially independent modes of action.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig6-v1.jpg)\n\n**Figure 6.:** MECP2 expression was silenced in human neurons (A) and astrocytes (B, C) and BDNF expression was analyzed in cells treated with a medium or the specific tested compounds using both RT-PCR (A) and ELISA (B, C). The combinatorial effect of EPO and DMF was assessed on BDNF expression in astrocytes (C). *p<0.05, **p<0.01, ***p<0.001,****p<0.0001.\n\n## Discussion\n\nRett syndrome is a neurodevelopmental disease without evidence of degeneration and thus rescuing MECP2 downstream activity might improve disease pathophysiology even in adulthood (Faundez et al., 2019). In murine models, reintroduction of MECP2 to adult animals led to vast phenotypic improvements (Guy et al., 2007). In parallel with approaches aimed at increasing MECP2 levels directly (Brendel et al., 2011; Merritt et al., 2020; Przanowski et al., 2018), accurate mapping of the MECP2 gene network is important to provide additional avenues for intervention, and avoid the toxicity associated with overexpression of MECP2 (Ramocki et al., 2009). Here, we have presented a framework for identifying potential drug-gene interactions based on comparative genomics, and validate these interactions in human immortalized primary neural cells. We analyzed phylogenetic profiling across mammals and hundreds of eukaryotes to infer functional links and generated a network of co-evolved genes, identifying known targets such as IRAK1 as well as new candidates such as EPOR. We then mined this network to identify actionable drug targets, prioritizing a list of associated compounds using a combination of strong co-evolutionary evidence of the target proteins and a proven safety profile of approved pharmaceutical compounds (Pacritinib, DMF, and EPO). While we prioritized based on the potential for drug repurposing, our evolutionary analysis could also be used to identify additional targets for drug design. Furthermore, we only performed functional validation 3 of the 33 co-evolved genes associated with approved drugs, leaving others for potential future study.\n\nWe reproduced a number of RTT phenotypes by reducing expression of MECP2 in human neural cell cultures. When treated with the three selected compounds, these phenotypes could all be reversed to different degrees in a cell-dependent manner. While all the compounds restored the polarization of microglia and reduced the hyperactivity of NF-\u03baB signaling in microglia, only DMF abrogated decreased phagocytosis. EPO alone reversed the impaired neuronal/astrocyte differentiation of NSCs. In neurons and astrocytes, DMF and EPO abrogated the inhibitory effect of MECP2 silencing on BDNF expression and secretion, whereas pacritinib did not have a significant effect.\n\nThe activity of these compounds on microglia polarization and NF-\u03baB activity is mechanistically interesting. Activation of microglia cells has been reported in MECP2 KO mice (Zhao et al., 2017) and has been associated with pathological process in RTT (Kahanovitch et al., 2019). An MECP2 KO mouse model also implicated NF-\u03baB signaling and IRAK1 as important mediators of the neuroinflammatory response in RTT (Kishi et al., 2016). While the mechanisms involved in the reversing effects of these three compounds remains to be determined, NF-\u03baB signaling downstream of MECP2 is an attractive candidate (Figure 7). EPOR and KEAP1 have also been implicated as NF-\u03baB modulators involved in the inflammatory response. The endogenous hormone EPO binds the TPR to suppresses inflammatory cytokines in immune cells, a process which involves inhibition of the NF-\u03baB pathway through GSK3\u03b2 (Patel et al., 2011). NFE2L2, usually bound by KEAP1, also has a direct cytoplasmic role in modulating NF-\u03baB signaling through degradation of I\u03baB and nuclear translocation of NF-\u03baB (Ganesh Yerra et al., 2013). The three compounds tested all inhibited NF-\u03baB-dependent luciferase activation in microglia cells to a certain extent, validating their involvement in this context.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/67085/elife-67085-fig7-v1.jpg)\n\n**Figure 7.:** (A) We propose that reduced MECP2 levels could lead to increase in ICAM1, ICAM3, IRAK1, and KEAP1 levels, and a decrease of EPOR levels within the tissue-protective receptor.\u00a0(B) IRAK-1 plays a role in NF-\u03baB activation through IKK activation, which leads to I\u03baB phosphorylation and subsequent degradation, NF-\u03baB nuclear translocation and the expression of its pro-inflammatory target genes. KEAP1 binds NFE2L2 and prevents its nuclear localization. NFE2L2 target genes inhibits NF-\u03baB signaling through a non-transcriptional mechanism involving degradation of I\u03baB\u03b1. EPO binds EPOR and enhances the activation of Akt, resulting in inhibition of GSK-3\u03b2 and inhibition of NF-\u03baB nuclear transport.\n\nIn addition to the inflammatory effect, we found that MECP2 silencing decreased the neuronal while increasing the astrocytic differentiation of NSCs. However, human astrocyte function was impaired in the MECP2 silenced cells and these cells expressed lower levels of the glutamate transporter EAAT2. The signaling pathways involved in these effects of EPO are not fully characterized; however, NF-\u03baB has been recently reported to regulate EAAT2 expression in astrocytes (Wei et al., 2019).\n\nFinally, we found that both DMF and EPO rescued the decreased BDNF expression in MECP2-silenced microglia and astrocytes. Indeed, both NF-\u03baB and NFE2L2 pathways have been reported to be associated with the regulation of BDNF expression (Caviedes et al., 2017; Nair and Wong-Riley, 2016). Thus, DMF can increase BDNF levels through an increase in NFE2L2, which binds the BDNF promotor and acts as a transcriptional activator (Nair and Wong-Riley, 2016). EPO administration activates the STAT3 signaling pathway (Rey et al., 2019), which can in turn elevate BDNF expression (Chen et al., 2016).\n\nWhile the strong evolutionary linkage of our target proteins to MECP2 strongly suggest that they are mediating the reversal of MECP2 silencing phenotypes by their associated drugs, we have not ruled out the possibility for alternative action of these drugs or joint action upon our involving other protein targets. A good example of this are the HDAC chromatin modifiers, a group of genes which did not come up as specifically linked to MECP2 in our evolutionary analysis but are well-known interactors. HDACs play a crucial role in neuronal development, and MECP2-mediated gene repression occurs mainly through HDAC recruitment via the Sin3a and NCoR complexes (Lyst et al., 2013; Ebert et al., 2013; Nan et al., 1998). HDACs have been suggested as therapeutic targets for Rett Syndrome (Shukla and Tekwani, 2020) and HDAC6 inhibition has been linked to improved BDNF trafficking in a Rett mouse model (Xu et al., 2014). Importantly, one of the compounds we examined, DMF, can reduce HDAC1/2/4 expression in rat astrocytes (Kalinin et al., 2013), and EPO can promote phosphorylation of HDAC5 in rat hippocampal neurons (Jo et al., 2016). It is thus plausible that HDAC inhibition mediates the effects we observe for these drugs, at least in part. However, the effects on HDAC activity are not the principal mechanisms of action of either of the proposed compounds (Kalinin et al., 2013; Jo et al., 2016), nor do they have established interactions with the HDAC most implicated in RTT biology (HDAC6). Future studies should investigate if any of the MECP2-rescuing activities of these drugs act through HDACs in concert with or independent of the target proteins identified here.\n\nIn summary, EPO, DMF and pacritinib act differentially on MECP2-silenced NSCs, microglia and astrocytes, providing a preliminary validation of our approach. The investigation into specific drug effects and mechanisms of actions are important areas for future studies, as are drug combination assays and in-vivo studies of EPO, DMF and pacritinib using MECP2 KO mice. These will be to assess whether any of the identified drugs can be further be explored for clinical use.\n\n## Materials and methods\n\n### Mapping MECP2 conservation along 1028 eukaryotic species and identifying correlated genes\n\nWe used the pipeline we described in Tsaban et al., 2021 to calculate the Normalized Phylogenetic Profile (NPP) of 1028 eukaryotic species and rank genes based on their evolutionary similarity to MECP2. Briefly, 20,192 human proteins (one representative protein sequence per gene) were downloaded from UniProt reference proteomes (June 2018 release) (Bateman and UniProt Consortium, 2019). We used the Uniprot canonical isoform for each gene. For the 29 genes with more than one canonical isoform, we selected the longest isoform to maximize sequence information. The proteins were searched with BLASTP (Camacho et al., 2009) against the proteomes of the 1028 eukaryotes. A bit-score of 20.4, corresponding to a BLAST e-value of 0.05, was set as a minimal similarity threshold. The top scoring protein in each organism was selected. The bit-scores were normalized to protein length and phylogenetic distance from humans. The output is a matrix P of size 20,242 x 1028 where each entry Pab is the best BLASTP bit score between a human protein sequence \u2018a\u2019 and the top result in organism \u2018b\u2019. The Pearson correlation was calculated for each profile with the MECP2 profile. The top 200 genes in all eukaryotes were selected as the E200 group for further analysis. This procedure was repeated using only the 51 mammal species, and the top 200 genes in were selected as the M200 group for further analysis.\n\n### Filtering genes with drug interactions and constructing protein network\n\nDrug gene interactions were collected from DGIdb (Cotto et al., 2018) and from Open Targets (Oxford Academic, 2019). Drugs at any stage of development were included in the search as long as the interaction with the target gene had known directionality (e.g. inhibitory, activating). Drug-gene interactions were validated through a literature review and known gene-gene interactions were collected from STRING (Szklarczyk et al., 2019). Network diagram was constructed using STRING and Cytoscape (Lopes et al., 2011).\n\n### Synteny and co-localization analysis\n\nGene locations were retrieved from BioMart (Kasprzyk, 2011), the NCBI genome data viewer (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 2A), and Genomicus (Nguyen et al., 2018; Figure 3A). Synteny in ancestral species was obtained from Genomicus (Nguyen et al., 2018). Intra-chromosomal Hi-C contact heatmaps and TAD borders were collected from the 3D Genome Browser (Wang et al., 2018), using GM12878 cell data from the high-resolution Hi-C dataset of Rao et al., 2014.\n\n### Neural cell cultures\n\nImmortalized human microglial cells and astrocytes were obtained from Applied Biological Material (Richmond, BC, Canada). Human NSCs (H9, hESC-derived) (ReNcell) were obtained from Invitrogen, Merck (Germany). Human neurons were obtained from ScienCell (Carlsbad, CA, USA). All cells employed in this study were tested for mycoplasma contamination (Mycoplasma PCR Detection Kit) and found negative.\n\n### Transduction of neural cells\n\nLentivirus vectors (System Biosciences, Mountain View, CA, USA) expressing the MECP2 or control shRNAs and the reporters GFP/fLuc GFAP, mCherry/Luc MAP2 and NF-kB luciferase were packaged and used to transduce the cells according to the manufacturer's protocol and as previously described (Giladi et al., 2015).\n\n### NSC differentiation\n\nHuman NSCs were maintained as spheroids in an NSC maintenance medium containing fibroblast growth factor 2 (FGF-2) and an epidermal growth factor (EGF, 20 ng/ml) on laminin-coated flasks. For differentiation, the cells were maintained in NSC maintenance medium without FGF-2 and EGF and neuronal and glial differentiation were observed.\n\n### Microglia polarization\n\nHuman microglia cells were silenced for MECP2 using lentivirus vectors expressing MECP2 or control shRNAs. After 5e days, the expression of MECP2 was determined by western blot analysis and cells exhibiting a decrease of at least 80% were employed in further studies. Control and silenced cells were treated with the specific compounds and the expression of M1- and M2-associated markers were determined after 72 hr using RT-PCR. All experiments were done in triplicates and were repeated three times.\n\n### Cytotoxicity assay\n\nCells were treated with different concentrations of DMF (1 10 and 50 mM), EPO (10, 30 and 50 ng/ml), and Pacritinib (1 and 10 mM). Following 3 days of treatment, the cells were analyzed for cell death using LDH assay. The results are presented as the means \u00b1 SD of six samples for each compound.\n\n### Western blot analysis\n\nCell pellet preparation and Western blot analyses were performed as previously described (Lomonaco et al., 2009). Equal loading was verified using an anti-\u03b2-actin or tubulin antibodies as described (Giladi et al., 2015; Bier et al., 2018).\n\n### Real-time PCR\n\nTotal RNA was extracted using RNeasy midi kit according to the manufacturer\u2019s instructions (Qiagen, Frederick, MD, USA). Reverse transcription reaction was carried out using 2 \u03bcg total RNA (Bier et al., 2018). The primer sequences are described in the supplementary files (Supplementary file 3).\n\n### Phagocytosis analysis\n\nHuman microglial cells were silenced for MECP2. Phagocytosis was determined using the pHrodo Green zymosan bioparticle assay (Invitrogen, Carlsbad, CA, USA) according to the manufacturer\u2019s instructions. Briefly, microglia were incubated with a solution of pHrodo Green zymosan bioparticles in Live Cell Imaging Solution (0.5 mg/ml) for 2 hr. Phagocytosis was determined using a fluorescence plate reader at Ex/Em 509/533.\n\n### Luciferase activity\n\nThe firefly luciferase activity of the NF-kB, GFAP and MAP two activities and the control Renilla luciferase activity were analyzed using the Dual-Luciferase Reporter Assay System (Promega Corporation).\n\n### Statistical analysis for cell assays\n\nThe results are presented as the mean values \u00b1 SD. Data were analyzed using a Student's t-test with correction for data sets with unequal variances (Welch's unequal variances t-test).\n",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "3e457e7e-54b7-434f-95bb-b5c707f02e26",
+      "submission_id": "ebd13935-4c95-441c-9256-0b9fce8845a9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- George H Perry, Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67085.sa1](https://doi.org/10.7554/eLife.67085.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis manuscript will interest scientists who are aiming to leverage concepts and tools of evolutionary biology to identify novel gene targets, in this case towards much-needed therapeutic interventions for Rett syndrome. The follow up experiments presented in the paper are detailed, well thought out, and help establish the potential of the identified drugs in alleviating molecular signatures in in vitro disease models.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Expanding the MECP2 network using comparative genomics reveals potential therapeutic targets for Rett syndrome\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by George Perry as the Senior and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe manuscript has potential but requires major revisions for further consideration by eLife. In consultation, the editor and reviewers considered the level of revision to be possible, but we emphasize that we have high expectations, expecting at least the major comments made by each reviewer (below) to be robustly addressed. These essential revisions include improving the comprehensiveness of the comparative genomics pipeline and the need for more explicit validation experiments.\n\nReviewer #1 (Recommendations for the authors):\n\nOn line 367 \u2013 The differential mechanisms of restoration are interesting in the face of MeCP2s broad genomic role. While this is more of a future direction, could these treatments have a combinatorial beneficial effect? The in-vivo experiments that the authors are conducting should be very interesting. I wonder if all 33 identified genes could be screened for their toxicity/efficacy in these KD cells. The chosen 3 candidate proteins are all from the same evolutionarily conserved chromosomal cluster yet have meaningfully different cell specific mechanisms of RTT amelioration. Perhaps the other 33 identified genes with actionable druggable targets might have even more diverse mechanisms.\n\nOn line 51 there is a small typo, intro -> into.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Addressing/answering the following comments would help provide supporting evidence for the comparative evolutionary pipeline used by the authors:\n\na. Can the authors elaborate on their NPP methodology and how did they avoid the false positives?\n\nb. Is the functional nature of genes different between E200 and M200?\n\nc. Is the overlap of 10 genes between E200 and M200 statistically significant, given that overlapping input data was used? Is it higher or lower than expected?\n\nd. Among the 390 genes, how many well established functional and biophysical partners of MECP2 were identified? What positive controls did the authors use to validate the robustness of their comparative genomic pipeline?\n\ne. HDACs appear to be highly connected functional and biophysical partners of MECP2. Yet the authors do not seem to have identified any of them. Can the authors speculate on the reasons behind that?\n\nf. How many novel MECP2 partners (without any previously known links) do the authors identify?\n\ng. Some of the partners identified by the authors have functional association in Stringdb. Can the authors perform an enrichment analysis, with randomized controls, to demonstrate whether this functional enrichment is significantly more than expected? It will be an important validation for the authors PP approach.\n\n2. The authors detect that 33 out of the 390 genes are druggable targets. Is that higher/lower than expected?\n\n3. The authors show a series of sophisticated experiments to demonstrate the impact of the three drugs. The following clarifications will help strengthen the importance of the evolutionary pipeline to identify these drugs:\n\na. Are any of the previously known MECP2 functional partners targeted by EPO, DMF and Pacritinib in DGIdb and Open Targets? For example, a quick literature survey shows that all three molecules have direct or indirect effects on HDAC activity, which are functional and biophysical interaction partners of MECP2.\n\nb. If the authors were to use known functional partners of MECP2 from Stringdb, PDB, or biogrid and check for their druggability in DGIdb and Open Targets, will the authors identify EPO, DMF and Pacritinib? If not, it proves that the comparative genomic pipeline was critical for identification of these drugs. If yes, it shows that the authors didn't need the pipeline. Or perhaps the authors mean to demonstrate that EPOR, KEAP1 and IRAK work upstream of HDACs and are therefore contributing to a better understanding of the mechanism of action of MECP2. If so, the authors do not have enough text, analysis or experiments to demonstrate that.\n\nc. Can the authors perform silencing or knockdown experiment to demonstrate that the effects of the three drugs are mediated through EPOR, KEAP1 and IRAK and not through other targets?\n",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e9c4469f-a359-4fe8-8ba4-adc2f4f5d8a5",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C1",
+      "claim": "Inactivating mutations in the MECP2 gene are the main cause of Rett syndrome (RTT).",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivating mutations in the Methyl-CpG Binding Protein 2 (MECP2) gene are the main cause of Rett syndrome (RTT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background knowledge about RTT etiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "e3a5f432-b8dd-4562-993b-5974f97f3844",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C2",
+      "claim": "No treatments for RTT are currently available despite extensive research into MECP2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive research into MECP2 function, no treatments for RTT are currently available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact in the abstract about the current state of RTT treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "264a4403-1c97-43a6-9bc0-34d074bedf15",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C3",
+      "claim": "An evolutionary genomics approach using 1028 eukaryotic genomes was used to construct an unbiased MECP2 gene network.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used an evolutionary genomics approach to construct an unbiased MECP2 gene network, using 1028 eukaryotic genomes to prioritize proteins with strong co-evolutionary signatures with MECP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "180d9584-5937-4b9a-9480-ad8d82450cb2",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C4",
+      "claim": "Three promising drug targets were identified: IRAK, KEAP1, and EPOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on proteins targeted by FDA-approved drugs led to three promising targets, two of which were previously linked to MECP2 function (IRAK, KEAP1) and one that was not (EPOR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "0d61aaf5-7def-4b6b-8197-ce3ae43a2096",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C5",
+      "claim": "IRAK and KEAP1 were previously linked to MECP2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on proteins targeted by FDA-approved drugs led to three promising targets, two of which were previously linked to MECP2 function (IRAK, KEAP1) and one that was not (EPOR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as prior knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "fcbb4067-35f6-4496-a283-35b74093677c",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C6",
+      "claim": "EPOR was not previously linked to MECP2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on proteins targeted by FDA-approved drugs led to three promising targets, two of which were previously linked to MECP2 function (IRAK, KEAP1) and one that was not (EPOR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a novel finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "8ff7612b-a390-4f0d-b109-408f0b8c31ee",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C7",
+      "claim": "Pacritinib, DMF, and EPO were able to rescue different phenotypes of MECP2 inactivation in cultured human neural cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The drugs targeting these three proteins (Pacritinib, DMF, and EPO) were able to rescue different phenotypes of MECP2 inactivation in cultured human neural cell types, and appeared to converge on Nuclear Factor Kappa B (NF-\u03baB) signaling in inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "8db250f0-5ff9-48bb-b861-45de44a664d2",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C8",
+      "claim": "The three drugs appeared to converge on NF-\u03baB signaling in inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "The drugs targeting these three proteins (Pacritinib, DMF, and EPO) were able to rescue different phenotypes of MECP2 inactivation in cultured human neural cell types, and appeared to converge on Nuclear Factor Kappa B (NF-\u03baB) signaling in inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the abstract based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a4c403df-4bac-416a-b6d6-0d328f4e858b",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C9",
+      "claim": "RTT is an X-linked dominant disorder, almost exclusively affecting females.",
+      "claim_type": "EXPLICIT",
+      "source": "It is an X-linked dominant disorder, almost exclusively affecting females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about RTT genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "80ead21b-068a-4f3c-b28c-f1d7e24ab2e4",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C10",
+      "claim": "RTT is characterized by normal early development followed by regression, loss of purposeful hand movements, and intellectual disability.",
+      "claim_type": "EXPLICIT",
+      "source": "RTT is characterized by normal early development followed by regression, loss of purposeful hand movements, and intellectual disability (Liyanage and Rastegar, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "5492c9dd-5316-4111-a3dd-b35428745c3d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C11",
+      "claim": "Characteristics of RTT such as age of onset, range of symptoms, and their severity vary between patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Characteristics of the disease such as age of onset, range of symptoms, and their severity vary between patients (Neul et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "ada03cae-4b85-470e-b160-5b33ff81a929",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C12",
+      "claim": "The MECP2 protein has a role in transcriptional regulation but its exact mechanism of action, co-factors and downstream targets are not fully characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "The MECP2 protein has a role in transcriptional regulation but its exact mechanism of action, co-factors and downstream targets, are not fully characterized (Picard and Fagiolini, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support about current knowledge gaps.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "1e4086e3-8a6e-4dda-b89f-7873d74e4f63",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C13",
+      "claim": "The MECP2 protein has been linked to both gene silencing and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The MECP2 protein, as a transcriptional regulator, has been linked to both gene silencing and activation (Horvath and Monteggia, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "9c36f92a-59e7-4a84-be76-55d200bcc73a",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C14",
+      "claim": "MECP2 binds methylated CG dinucleotides through its methyl-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It binds methylated CG dinucleotides through its methyl-binding domain and has a transcriptional repression domain that mediates binding to co-repressor proteins (Lyst et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support about MECP2 protein function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "cafa23c2-210c-4e47-9817-e8ccb4139c41",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C15",
+      "claim": "MECP2 has a transcriptional repression domain that mediates binding to co-repressor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It binds methylated CG dinucleotides through its methyl-binding domain and has a transcriptional repression domain that mediates binding to co-repressor proteins (Lyst et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "432ad686-9c58-40e4-bf24-687c5da71443",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C16",
+      "claim": "The methyl-binding domain and transcriptional repression domain are hotspots for missense, nonsense, and frameshift mutations for RTT disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These two domains are hotspots for missense, nonsense, and frameshift mutations for RTT disease (Ragione et al., 2016; Krishnaraj et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "289f644f-c7d4-4348-b1e8-3db84c2e4e96",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C17",
+      "claim": "Transcriptomic analyses of RTT patient postmortem brain tissues, blood samples, cell lines, and murine models have revealed hundreds of affected genes but with a low degree of overlap between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomic analyses of RTT patient postmortem brain tissues, blood samples, cell lines, and murine models (Shovlin and Tropea, 2018) have revealed hundreds of affected genes but with a low degree of overlap between studies (Picard and Fagiolini, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support about transcriptomic findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "f4605351-f96e-46ee-8c72-4c00333e889f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C18",
+      "claim": "Therapies aiming to restore MECP2 loss of function are in early development stages and are not approved for patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Therapies aiming to restore MECP2 loss of function are in early development stages and are not approved for patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current knowledge about therapeutic development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "0ae1802c-3368-47ab-b1e8-169ea43a0e78",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C19",
+      "claim": "Current gene therapy methods show limited transduction efficiency and are unable to modify all cells in the target tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, current gene therapy methods show limited transduction efficiency and are unable to modify all cells in the target tissue (Gadalla et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support about limitations of gene therapy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "558198d3-a7ef-4802-8844-4889e3ad531a",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C20",
+      "claim": "MECP2 overexpression is associated with severe neurological phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting factors downstream of MECP2 offers a promising avenue which could allow for partial amelioration of Rett symptoms, without the severe neurological phenotypes associates with MECP2 overexpression (Chao and Zoghbi, 2012; Ramocki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "d54ef02d-aa04-465f-a60e-de9a8946a8d0",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C21",
+      "claim": "BDNF is a major downstream target of MECP2.",
+      "claim_type": "EXPLICIT",
+      "source": "One major downstream target of MECP2 is brain-derived neurotrophic factor (BDNF) (Chen et al., 2003), a key modulator of neuronal development and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "fabaed39-5dd5-4ed7-ba3e-a924b26c7d6d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C22",
+      "claim": "BDNF is a key modulator of neuronal development and function.",
+      "claim_type": "EXPLICIT",
+      "source": "One major downstream target of MECP2 is brain-derived neurotrophic factor (BDNF) (Chen et al., 2003), a key modulator of neuronal development and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "f38d01e4-326e-4474-9f5c-6769269567a9",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C23",
+      "claim": "BDNF levels are reduced in symptomatic MECP2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "BDNF levels are reduced in symptomatic MECP2 KO mice (Kline et al., 2010) and experimental interventions that increase BDNF levels improve RTT-like phenotypes (Chang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c0c828eb-e21b-4b26-b287-9d1ff43b4ede",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C24",
+      "claim": "Experimental interventions that increase BDNF levels improve RTT-like phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "BDNF levels are reduced in symptomatic MECP2 KO mice (Kline et al., 2010) and experimental interventions that increase BDNF levels improve RTT-like phenotypes (Chang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "e42bbdf6-4bfd-42df-8aed-4548b2050fd0",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C25",
+      "claim": "IGF-1 protein potentiates BDNF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The IGF-1 protein potentiates BDNF activity, and treatments with recombinant human IGF-1 and its analogs have led to improvement in several clinical measurements (Khwaja et al., 2014; Glaze et al., 2019), with a trial of an IGF-1 synthetic analog currently in Phase 3 (NCT04181723).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "1ca5cd79-a322-4fc0-8e08-cf2835da91b6",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C26",
+      "claim": "Treatments with recombinant human IGF-1 and its analogs have led to improvement in several clinical measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The IGF-1 protein potentiates BDNF activity, and treatments with recombinant human IGF-1 and its analogs have led to improvement in several clinical measurements (Khwaja et al., 2014; Glaze et al., 2019), with a trial of an IGF-1 synthetic analog currently in Phase 3 (NCT04181723).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c660ec87-887d-4c46-9930-eaa0316e5093",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C27",
+      "claim": "A trial of an IGF-1 synthetic analog is currently in Phase 3.",
+      "claim_type": "EXPLICIT",
+      "source": "The IGF-1 protein potentiates BDNF activity, and treatments with recombinant human IGF-1 and its analogs have led to improvement in several clinical measurements (Khwaja et al., 2014; Glaze et al., 2019), with a trial of an IGF-1 synthetic analog currently in Phase 3 (NCT04181723).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current clinical trial information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "1a113ee2-9082-4c9e-b999-20a43065f1d6",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C28",
+      "claim": "Phylogenetic profiling analyzes gene conservation patterns across an evolutionary related set of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A well-tested approach for gene functional prediction and identification of functional gene networks is phylogenetic profiling (PP), which analyzes gene conservation patterns across an evolutionary related set of organisms (Pellegrini et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as a methodological description.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "b4d5a58b-7d35-443d-8707-f7fe4e809caa",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C29",
+      "claim": "Genes with similar evolutionary patterns are functionally coupled, irrespective of sequence homology.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with similar evolutionary patterns are functionally coupled, irrespective of sequence homology (Date and Marcotte, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as a principle of phylogenetic profiling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "3be435f6-2f10-44f3-849c-26a30b866f7e",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C30",
+      "claim": "PP was used successfully to predict protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "PP was used successfully to predict protein function (Enault et al., 2004; Eisen and Wu, 2002; Jiang, 2008; Merchant et al., 2007), protein interactions (Kim and Subramaniam, 2006; Sun et al., 2005) and protein localization within the cell (Marcotte et al., 2000; Pagliarini et al., 2008; Avidor-Reiss et al., 2004; Hodges et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "87eb20a6-4685-483c-b0d1-e52fdb5cc1d7",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C31",
+      "claim": "PP was used successfully to predict protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "PP was used successfully to predict protein function (Enault et al., 2004; Eisen and Wu, 2002; Jiang, 2008; Merchant et al., 2007), protein interactions (Kim and Subramaniam, 2006; Sun et al., 2005) and protein localization within the cell (Marcotte et al., 2000; Pagliarini et al., 2008; Avidor-Reiss et al., 2004; Hodges et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a324ea77-9ddc-496f-bddb-b5a7b0ba9e63",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C32",
+      "claim": "PP was used successfully to predict protein localization within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "PP was used successfully to predict protein function (Enault et al., 2004; Eisen and Wu, 2002; Jiang, 2008; Merchant et al., 2007), protein interactions (Kim and Subramaniam, 2006; Sun et al., 2005) and protein localization within the cell (Marcotte et al., 2000; Pagliarini et al., 2008; Avidor-Reiss et al., 2004; Hodges et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "cbc1e38c-8e93-4508-8bbd-54c1f257a144",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C33",
+      "claim": "The top 200 genes most correlated with MECP2 across eukaryotes showed high correlation (R>0.47).",
+      "claim_type": "EXPLICIT",
+      "source": "We selected the top 200 genes (the 'E200' set), which showed high correlation (R>0.47) with MECP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the phylogenetic profiling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "033e5162-e620-4b98-ac93-17bb5b21510d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C34",
+      "claim": "The top 200 genes most correlated with MECP2 within mammals showed high correlation (R>0.49).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we used NPP scores within the mammalian clade (Figure 1B and Figure 1\u2014figure supplement 1B) to select the top 200 mammal-centric genes (the 'M200' set), which also showed high MECP2 correlations (R>0.49) (Supplementary file 1) [code is available on GitHub (Unterman et al., 2021; copy archived at swh:1:rev:14063b44a40688a8024a06347b63cfdac74b96ad)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the phylogenetic profiling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "f826f094-5dbd-4aa8-b4ab-fda348a13823",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C35",
+      "claim": "E200 and M200 had 10 genes in common.",
+      "claim_type": "EXPLICIT",
+      "source": "The E200 and M200 lists had 10 genes in common (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "5fb8d02a-6d02-4511-b0f5-8b259d3c68e1",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C36",
+      "claim": "The 390 gene union set was enriched with genes expressed in the brain (p-value < 0.00024).",
+      "claim_type": "EXPLICIT",
+      "source": "A GeneAnalytics query of the 390 gene union set revealed it was enriched with genes expressed in the brain (p-value < 0.00024), with 79 genes linked to the cerebral cortex and 54 to the cerebellum (Figure 1\u2014figure supplement 1C; Ben-Ari Fuchs et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with statistical support and reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "0b43f959-e8a2-447f-bf43-d97864db4ff3",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C37",
+      "claim": "79 genes from the 390 gene union set were linked to the cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A GeneAnalytics query of the 390 gene union set revealed it was enriched with genes expressed in the brain (p-value < 0.00024), with 79 genes linked to the cerebral cortex and 54 to the cerebellum (Figure 1\u2014figure supplement 1C; Ben-Ari Fuchs et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of GeneAnalytics query.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "09f9e5d1-c7ba-471d-ab06-718dbb58ce6f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C38",
+      "claim": "54 genes from the 390 gene union set were linked to the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "A GeneAnalytics query of the 390 gene union set revealed it was enriched with genes expressed in the brain (p-value < 0.00024), with 79 genes linked to the cerebral cortex and 54 to the cerebellum (Figure 1\u2014figure supplement 1C; Ben-Ari Fuchs et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of GeneAnalytics query.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "da676c9c-30fe-485a-9ed5-3ce06de57774",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C39",
+      "claim": "Only 24 of the 390 gene list were overlapping with a length-matched list of MECP2 interactions from STRING.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 24 of the 390 gene list were overlapping with a length-matched list of MECP2 interactions from STRING (Figure 1\u2014figure supplement 1D,E), highlighting the complementary role phylogenetic analysis to other measurements and predictions of protein interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a comparison result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "2592fe04-885f-4d92-be6b-4ab8539896c2",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C40",
+      "claim": "Open Targets identified protein-compound interactions for 11 proteins from the 390 candidate gene list.",
+      "claim_type": "EXPLICIT",
+      "source": "Open Targets identified such protein-compound interactions for 11 proteins from our list, and DGIdb identified an additional 22, resulting in 33 druggable proteins in the MECP2 phylogenetic network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c34015b8-3649-4447-8d25-6a58c428063f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C41",
+      "claim": "DGIdb identified protein-compound interactions for an additional 22 proteins from the 390 candidate gene list.",
+      "claim_type": "EXPLICIT",
+      "source": "Open Targets identified such protein-compound interactions for 11 proteins from our list, and DGIdb identified an additional 22, resulting in 33 druggable proteins in the MECP2 phylogenetic network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "df61a1a3-a738-422c-8731-5a88b364037a",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C42",
+      "claim": "33 druggable proteins were identified in the MECP2 phylogenetic network.",
+      "claim_type": "EXPLICIT",
+      "source": "Open Targets identified such protein-compound interactions for 11 proteins from our list, and DGIdb identified an additional 22, resulting in 33 druggable proteins in the MECP2 phylogenetic network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "3fc2e130-9ee6-4cb3-953b-2846b62bbaf3",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C43",
+      "claim": "IRAK1 and EPOR were found in both the eukaryotic E200 and the mammalian M200 lists.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the 33 druggable NPP-linked proteins (IRAK1 and EPOR) were found in both the eukaryotic E200 and the mammalian M200 lists, and were targeted by compounds with clinical efficacy and acceptable safety profiles (Pacritinib and EPI), making these immediately attractive for further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "3e88efce-c5d8-4884-883f-00443220c46d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C44",
+      "claim": "IRAK1 was one of the six proteins functionally linked to MECP2 in a STRING functional interaction map.",
+      "claim_type": "EXPLICIT",
+      "source": "In a STRING (Szklarczyk et al., 2019) functional interaction map, which is based on independent data types, IRAK1 was one of the six proteins functionally linked to MECP2, whereas EPOR had no known functional links (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to STRING database and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "11382074-2efe-4355-bc3a-74787716cf5d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C45",
+      "claim": "EPOR had no known functional links to MECP2 in a STRING functional interaction map.",
+      "claim_type": "EXPLICIT",
+      "source": "In a STRING (Szklarczyk et al., 2019) functional interaction map, which is based on independent data types, IRAK1 was one of the six proteins functionally linked to MECP2, whereas EPOR had no known functional links (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to STRING database and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "fdef5679-0149-432d-b5b4-c06f573b32c2",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C46",
+      "claim": "IRAK1 is directly adjacent to MECP2 on an evolutionary conserved chromosomal band on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, IRAK1 is directly adjacent to MECP2 on an evolutionary conserved chromosomal band on the X chromosome (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to figures showing chromosomal location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "7b4a1218-c022-4d20-8199-2ea45af2e6e8",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C47",
+      "claim": "The chr19p13.2 band contained more MECP2 co-evolved genes than any other in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In a chromosomal clustering analysis of all MECP2-linked genes, the chr19p13.2 band contained more MECP2 co-evolved genes than any other in the genome (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of chromosomal clustering analysis with reference to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "1c0c5969-6642-4651-841f-f52225686036",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C48",
+      "claim": "The chr19p13.2 domain contained 5 of the 33 druggable MECP2 coevolved genes: EPOR, DNMT1, ICAM1, ICAM3, and KEAP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, this 5.6 Mb domain contained 5 of the 33 druggable MECP2 coevolved genes - EPOR, DNMT1, ICAM1, ICAM3, and KEAP1 (Figure 2D), making this the most strongly enriched band in the genome (p<1E-5, Figure 2D and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with statistical support and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "7eecc56c-026c-4b6c-a95d-e2317b85554d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C49",
+      "claim": "The chr19p13.2 band is the most strongly enriched band in the genome for druggable MECP2 coevolved genes (p<1E-5).",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, this 5.6 Mb domain contained 5 of the 33 druggable MECP2 coevolved genes - EPOR, DNMT1, ICAM1, ICAM3, and KEAP1 (Figure 2D), making this the most strongly enriched band in the genome (p<1E-5, Figure 2D and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "35f19677-7774-4f70-b427-5dcb9eb106b4",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C50",
+      "claim": "The entire chr19p13.2 gene cluster defines a single TAD based on high-resolution Hi-C mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Topologically Associated Domains (TADs) define the 3D organization of functionally co-regulated gene clusters (Fritz et al., 2019), and the entire chr19p13.2 gene cluster defines a single TAD-based high-resolution Hi-C mapping (Rao et al., 2014; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation support and reference to Figure 2E.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "f2232850-24ad-4571-9295-f95807fe2774",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C51",
+      "claim": "The chr19p13.2 region has been shown to be bound by MECP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this region has been shown to be bound by MECP2 (Yasui et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "9b2d875f-6945-4abe-8cbf-4d402af5c3c8",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C52",
+      "claim": "IRAK1 has been identified as a key intermediary in NF-\u03baB signaling in RTT.",
+      "claim_type": "EXPLICIT",
+      "source": "IRAK1 has been identified as a key intermediary in NF-\u03baB signaling in RTT, with MECP2 directly binding the IRAK1 promoter to regulate its expression in MECP2-null mouse brains and NF\u039aB1 dramatically increasing lifespan in MECP2 null mice (Kishi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "5bf50a12-e400-4443-b65c-b1e0fdb36790",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C53",
+      "claim": "MECP2 directly binds the IRAK1 promoter to regulate its expression in MECP2-null mouse brains.",
+      "claim_type": "EXPLICIT",
+      "source": "IRAK1 has been identified as a key intermediary in NF-\u03baB signaling in RTT, with MECP2 directly binding the IRAK1 promoter to regulate its expression in MECP2-null mouse brains and NF\u039aB1 dramatically increasing lifespan in MECP2 null mice (Kishi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "f76c777d-57da-4c63-86bb-5bef40507199",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C54",
+      "claim": "NF\u039aB1 dramatically increases lifespan in MECP2 null mice.",
+      "claim_type": "EXPLICIT",
+      "source": "IRAK1 has been identified as a key intermediary in NF-\u03baB signaling in RTT, with MECP2 directly binding the IRAK1 promoter to regulate its expression in MECP2-null mouse brains and NF\u039aB1 dramatically increasing lifespan in MECP2 null mice (Kishi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "29f78a01-dce9-47fb-9945-6cedde2188be",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C55",
+      "claim": "Pacritinib is a JAK2/FLT3 inhibitor with IRAK1 inhibiting capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Pacritinib is a JAK2/FLT3 inhibitor with IRAK1 inhibiting capabilities (Jensen et al., 2017), presently under clinical investigation for myelofibrosis and glioblastoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "916022bb-98ab-45c4-91d8-2a30106976ca",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C56",
+      "claim": "Pacritinib is presently under clinical investigation for myelofibrosis and glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Pacritinib is a JAK2/FLT3 inhibitor with IRAK1 inhibiting capabilities (Jensen et al., 2017), presently under clinical investigation for myelofibrosis and glioblastoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current clinical information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "80a1f7d6-631a-4e70-b2fd-4c9e5197efe8",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C57",
+      "claim": "Pacritinib is currently the only clinical stage IRAK1 inhibitor with known clinical efficacy and acceptable safety even after prolonged administration.",
+      "claim_type": "EXPLICIT",
+      "source": "As it is currently the only clinical stage IRAK1 inhibitor with known clinical efficacy and acceptable safety even after prolonged administration (Singer et al., 2018), we chose this compound for our functional studies to target IRAK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "4ace7085-c1dd-4230-856b-f81354180444",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C58",
+      "claim": "EPOR forms a heterodimer with \u03b2 common receptor (\u03b2CR), also known as the Tissue-Protective Receptor (TPR).",
+      "claim_type": "EXPLICIT",
+      "source": "EPOR forms a heterodimer with \u03b2 common receptor (\u03b2CR), also known as the Tissue-Protective Receptor (TPR) (Brines et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "b8bb2114-2922-4787-bcb0-cc246627a1e4",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C59",
+      "claim": "The endogenous hormone EPO binds the TPR activating signaling cascades with roles in neuroprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "The endogenous hormone EPO binds the TPR activating signaling cascades with roles in neuroprotection (Rey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "0cbac2ff-1755-40ae-a7cf-090dc0dcdf74",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C60",
+      "claim": "Several variants of erythropoietin lacking hematopoietic effects have been developed and shown to preserve the neuroprotective effects of EPO administration.",
+      "claim_type": "EXPLICIT",
+      "source": "EPO has a very well understood pharmacological profile, and several variants of erythropoietin lacking hematopoietic effects have been developed and shown to preserve the neuroprotective effects of EPO administration (Chen et al., 2015; Patel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "ab8a95fd-fabf-4e79-8e3f-808bfbb46064",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C61",
+      "claim": "KEAP1 is the key repressor of the transcription factor NFE2L2.",
+      "claim_type": "EXPLICIT",
+      "source": "KEAP1 is the key repressor of the transcription factor nuclear factor erythroid 2-related factor 2 (NFE2L2), which is involved in response to antioxidants through its transcriptional regulation of inflammatory pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "0612667b-b2b2-4d3c-bb1b-e173d7b62e21",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C62",
+      "claim": "NFE2L2 is involved in response to antioxidants through its transcriptional regulation of inflammatory pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "KEAP1 is the key repressor of the transcription factor nuclear factor erythroid 2-related factor 2 (NFE2L2), which is involved in response to antioxidants through its transcriptional regulation of inflammatory pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c2719a43-27e2-4d02-b686-696052f966fc",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C63",
+      "claim": "Dimethyl fumarate (DMF) is an approved treatment for both multiple sclerosis and psoriasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimethyl fumarate (DMF) is an approved treatment for both multiple sclerosis and psoriasis (Torkildsen et al., 2016; Blair, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "3278df90-c573-4801-ab4a-9e170a57938d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C64",
+      "claim": "DMF administration decreases KEAP1 levels, increases NFE2L2 levels and causes dissociation and nuclear transport of NFE2L2.",
+      "claim_type": "EXPLICIT",
+      "source": "Its administration decreases KEAP1 levels, increases NFE2L2 levels and causes dissociation and nuclear transport of NFE2L2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mechanism of DMF action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "b308e5f2-2cc5-4894-b9c0-5e3deacd06d6",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C65",
+      "claim": "DMF treatment has proven to be effective and safe in conferring neuroprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "DMF treatment has proven to be effective and safe in conferring neuroprotection (Montes Diaz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "ac6887a6-18b1-433d-8e09-98695f36222f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C66",
+      "claim": "MECP2 silencing by lentivirus vectors reduced MECP2 expression by over 80% in neural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of MECP2 was silenced by over 80% in these cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to a figure showing western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "308781ff-e38a-4d92-acbb-0d10ae08402e",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C67",
+      "claim": "MECP2 silencing induced a relative increase in the expression of M1 markers (IL1, and CD86) in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "MECP2 silencing induced a relative increase in the expression of M1 markers (IL1, and CD86) and a relative decrease of M2 markers (CD206 and IL-13) (Figure 3A), suggesting an increase in neuroinflammation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 3A showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "ae03cf2d-fe7d-45ef-bbfa-cbcf8968afff",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C68",
+      "claim": "MECP2 silencing induced a relative decrease of M2 markers (CD206 and IL-13) in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "MECP2 silencing induced a relative increase in the expression of M1 markers (IL1, and CD86) and a relative decrease of M2 markers (CD206 and IL-13) (Figure 3A), suggesting an increase in neuroinflammation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 3A showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "7cb514d5-12ef-408a-b086-a3cf463ad784",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C69",
+      "claim": "MECP2 silencing decreased the phagocytosis of microglia cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that MECP2 silencing decreased the phagocytosis of the microglia cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 3B showing phagocytosis assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "29eedd42-5778-4aca-8829-36272176c2ba",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C70",
+      "claim": "MECP2 silenced NSCs displayed preferential expression of the glial differentiation marker (GFAP) with a concomitant decrease in expression of the neuronal differentiation marker (MAP2).",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous reports (Andoh-Noda et al., 2015; Mok et al., 2020), we found that MECP2 silenced NSCs displayed preferential expression of the glial differentiation marker (GFAP) with a concomitant decrease in expression of the neuronal differentiation marker (MAP2) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation support and reference to Figure 3C showing luciferase activity data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "8706dcdc-cded-4862-b195-7a6b51117dbe",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C71",
+      "claim": "MECP2 silenced astrocytes expressed lower levels of EAAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "The MECP2 silenced astrocytes expressed lower levels of Excitatory Amino Acid Transporter 2 (EAAT2), indicating impaired function of these cells, as was suggested for mouse astrocytes (Okabe et al., 2012; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation support and reference to Figure 3D showing western blot data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "7c9b914d-0dcb-456b-8506-0f293365fc81",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C72",
+      "claim": "MECP2 silencing decreased the expression of BDNF mRNA in both astrocyte and neuronal cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "We finally examined the effects of MECP2 silencing on the expression of BDNF in human neurons and astrocytes and found that, as reported for mouse cells (Chang et al., 2006; Li et al., 2012), MECP2 silencing decreased the expression of BDNF mRNA in both astrocyte and neuronal cultures (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation support and reference to Figure 3E showing RT-PCR data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "5250f361-e578-4d21-ae12-6e3afce4dd1d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C73",
+      "claim": "DMF, EPO, and pacritinib did not exert a toxic effect on microglia cells, astrocytes, primary neuronal cells or NSCs in the concentration ranges used.",
+      "claim_type": "EXPLICIT",
+      "source": "We first demonstrated that in the concentrations range we used, none of these compounds exerted a toxic effect on neither microglia cells, astrocytes, primary neuronal cells nor NSCs (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 3\u2014figure supplement 2 showing LDH assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "e07ad842-ac98-41c2-a1ed-4ef58a42f65f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C74",
+      "claim": "EPO abrogated the effects of MECP2 silencing in all five marker genes (CD206, IL-13, CD86, IL-1, TNF-\u03b1) in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "EPO exerted the most significant effect, abrogating the effects of MECP2 silencing in all five marker genes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 4A showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "975fd1f1-dd03-4108-8fcd-d34fcecd3da2",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C75",
+      "claim": "DMF abrogated the effects of MECP2 silencing in CD206, CD86, and IL-1, but failed to abrogate the effects on IL-13 and TNF-\u03b1 in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both DMF and pacritinib exerted only partial effects, abrogating the effects of MECP2 silencing in CD206, CD86, and IL-1, but failing to abrogate the effects on IL-13 and TNF-\u03b1 (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figures 4B-C showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "d899abad-488f-4ad9-a9b5-eea9f3254b13",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C76",
+      "claim": "Pacritinib abrogated the effects of MECP2 silencing in CD206, CD86, and IL-1, but failed to abrogate the effects on IL-13 and TNF-\u03b1 in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both DMF and pacritinib exerted only partial effects, abrogating the effects of MECP2 silencing in CD206, CD86, and IL-1, but failing to abrogate the effects on IL-13 and TNF-\u03b1 (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figures 4B-C showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "1eee512a-9959-4775-9ebe-9ffbad38efb9",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C77",
+      "claim": "Treatment of MECP2 silenced microglia cells with DMF exerted a significant increase in phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of MECP2 silenced cells with DMF exerted a significant increase in the phagocytosis of the silenced cells, whereas EPO and pacritinib did not (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 4D showing phagocytosis assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "1c3bccbb-b9ac-4246-8f0c-0324851408cf",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C78",
+      "claim": "EPO and pacritinib did not significantly increase phagocytosis in MECP2 silenced microglia cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of MECP2 silenced cells with DMF exerted a significant increase in the phagocytosis of the silenced cells, whereas EPO and pacritinib did not (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 4D showing phagocytosis assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "8b83b13a-c7fa-4b99-954c-2618a55dab69",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C79",
+      "claim": "Knockdown of MECP2 leads to increased NF-\u03baB activity in neuronal and myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of MECP2 has been reported to lead to increased NF-\u03baB activity in neuronal and myeloid cells (O'Driscoll et al., 2015) and this deregulated activity has been associated with neuroinflammation and decreased dendritic arborization and spine density in a mouse model of RTT (Kishi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "5e1e5697-17a4-4041-9066-d967c8871013",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C80",
+      "claim": "Deregulated NF-\u03baB activity has been associated with neuroinflammation and decreased dendritic arborization and spine density in a mouse model of RTT.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of MECP2 has been reported to lead to increased NF-\u03baB activity in neuronal and myeloid cells (O'Driscoll et al., 2015) and this deregulated activity has been associated with neuroinflammation and decreased dendritic arborization and spine density in a mouse model of RTT (Kishi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c9c74698-1360-4a4b-ad42-413bf1108291",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C81",
+      "claim": "EPO and DMF significantly downregulated the increased NF-\u03baB activation in MECP2-silenced microglia cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase in NF-\u03baB-dependent luciferase activation was observed for EPO and DMF in the MECP2-silenced cells (Figure 4E), indicating that EPO and DMF were able to downregulate the increased NF-\u03baB activation in MECP2 KD cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 4E showing luciferase assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "e2950258-21f8-4313-842f-4dcb34995ff5",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C82",
+      "claim": "Loss or impaired function of MECP2 affects the functions of glial cells and these changes have been implicated in the pathogenesis of RTT.",
+      "claim_type": "EXPLICIT",
+      "source": "Since all three selected compounds were associated with changes in neuroinflammation, we first focused on microglia and astrocytes. Loss or impaired function of MECP2 has been reported to affect the functions of glial cells and these changes have been implicated in the pathogenesis of RTT (Kahanovitch et al., 2019; Jin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "255ef390-e687-4c68-9fcc-cc58869ac73b",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C83",
+      "claim": "Treatment of MECP2-silenced NSCs with pacritinib or DMF did not have significant effects on markers of neuronal (\u03b2III tubulin) or astrocytic (GFAP) differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the silenced NSCs with pacritinib or DMF did not have significant effects on markers of neuronal (\u03b2III tubulin) or astrocytic (GFAP) differentiation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5A showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c962cb18-d735-4266-aafa-6c1d1014249a",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C84",
+      "claim": "EPO abrogated the impaired NSC differentiation as reflected by an increase of \u03b2III tubulin and a decrease of GFAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, EPO abrogated the impaired NSC differentiation as reflected by an increase of \u03b2III tubulin and a decrease of GFAP (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5A showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "7de63a3a-3825-45a3-9c4b-fc11ef6052bb",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C85",
+      "claim": "Treatment of MECP2-silenced astrocytes with EPO inhibited the decreased EAAT2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of these cells with EPO inhibited the decreased EAAT2 expression, whereas pacritinib and DMF did not have a significant effect (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5B showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c1ce1304-2642-4c13-b5af-04a7de8c21c8",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C86",
+      "claim": "Pacritinib and DMF did not have a significant effect on EAAT2 expression in MECP2-silenced astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of these cells with EPO inhibited the decreased EAAT2 expression, whereas pacritinib and DMF did not have a significant effect (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5B showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "db1fb1f5-4952-4c7f-8a68-91904ee74ffd",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C87",
+      "claim": "DMF and EPO induced an increase in BDNF mRNA in MECP2-silenced neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "DMF and EPO induced an increase in BDNF mRNA in the silenced neurons (Figure 6A) and in the silenced astrocytes (Figure 6B), whereas pacritinib did not exert a significant effect in either.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 6A showing RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a52e0363-6bc8-4154-b369-9d23dee5c63a",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C88",
+      "claim": "DMF and EPO induced an increase in BDNF mRNA in MECP2-silenced astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "DMF and EPO induced an increase in BDNF mRNA in the silenced neurons (Figure 6A) and in the silenced astrocytes (Figure 6B), whereas pacritinib did not exert a significant effect in either.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 6B showing ELISA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "7080fd6a-0b51-4550-85e8-92fab8efe9f6",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C89",
+      "claim": "Pacritinib did not exert a significant effect on BDNF expression in MECP2-silenced neurons or astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "DMF and EPO induced an increase in BDNF mRNA in the silenced neurons (Figure 6A) and in the silenced astrocytes (Figure 6B), whereas pacritinib did not exert a significant effect in either.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "0e997e1d-e362-4e28-aab3-21c17bd011fc",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C90",
+      "claim": "Combined treatment with DMF and EPO showed a modest increase in the level of BDNF in astrocytes compared to individual treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "We replicated this experiment in astrocytes, testing DMF and EPI both individually and in combination (Figure 6C). This showed a modest increase in the level of BDNF in the in the combined treatment, suggesting potentially independent modes of action.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 6C showing ELISA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "da33e136-cd52-4052-afb8-4b375fefd21f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C91",
+      "claim": "Rett syndrome is a neurodevelopmental disease without evidence of degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Rett syndrome is a neurodevelopmental disease without evidence of degeneration and thus rescuing MECP2 downstream activity might improve disease pathophysiology even in adulthood (Faundez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "e7c4552d-acc5-4dd0-b843-a8a8eb239705",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C92",
+      "claim": "Rescuing MECP2 downstream activity might improve disease pathophysiology even in adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Rett syndrome is a neurodevelopmental disease without evidence of degeneration and thus rescuing MECP2 downstream activity might improve disease pathophysiology even in adulthood (Faundez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as a speculation about therapeutic potential.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "bb543690-dd2e-4b17-8b6f-1120012b5bb3",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C93",
+      "claim": "Reintroduction of MECP2 to adult mice led to vast phenotypic improvements.",
+      "claim_type": "EXPLICIT",
+      "source": "In murine models, reintroduction of MECP2 to adult animals led to vast phenotypic improvements (Guy et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "6aaf517d-68b0-4638-b98e-ef5c59fc1d78",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C94",
+      "claim": "Activation of microglia cells has been reported in MECP2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of microglia cells has been reported in MECP2 KO mice (Zhao et al., 2017) and has been associated with pathological process in RTT (Kahanovitch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "9dcc6052-27b1-4c98-af30-006c74b2ba77",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C95",
+      "claim": "Activation of microglia cells has been associated with pathological process in RTT.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of microglia cells has been reported in MECP2 KO mice (Zhao et al., 2017) and has been associated with pathological process in RTT (Kahanovitch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "51a163f4-9801-4347-ade4-7448a7bb68f8",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C96",
+      "claim": "The endogenous hormone EPO binds the TPR to suppress inflammatory cytokines in immune cells through inhibition of the NF-\u03baB pathway through GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The endogenous hormone EPO binds the TPR to suppresses inflammatory cytokines in immune cells, a process which involves inhibition of the NF-\u03baB pathway through GSK3\u03b2 (Patel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "4ae16f4a-baef-4494-a265-2258fd451bac",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C97",
+      "claim": "NFE2L2 has a direct cytoplasmic role in modulating NF-\u03baB signaling through degradation of I\u03baB and nuclear translocation of NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "NFE2L2, usually bound by KEAP1, also has a direct cytoplasmic role in modulating NF-\u03baB signaling through degradation of I\u03baB and nuclear translocation of NF-\u03baB (Ganesh Yerra et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "44cb4f92-0859-4b05-902a-f1b3375a13eb",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C98",
+      "claim": "All three compounds tested (pacritinib, DMF, EPO) inhibited NF-\u03baB-dependent luciferase activation in microglia cells to a certain extent.",
+      "claim_type": "EXPLICIT",
+      "source": "The three compounds tested all inhibited NF-\u03baB-dependent luciferase activation in microglia cells to a certain extent, validating their involvement in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the luciferase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "2afe517b-b6d1-4ff4-9ca1-2dd23de3e510",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C99",
+      "claim": "MECP2 silencing decreased the neuronal while increasing the astrocytic differentiation of NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the inflammatory effect, we found that MECP2 silencing decreased the neuronal while increasing the astrocytic differentiation of NSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the differentiation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "36fc27ee-6b3f-45db-876e-3d54d95bfd5d",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C100",
+      "claim": "Human astrocyte function was impaired in the MECP2 silenced cells and these cells expressed lower levels of the glutamate transporter EAAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, human astrocyte function was impaired in the MECP2 silenced cells and these cells expressed lower levels of the glutamate transporter EAAT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "b7273798-5896-41b5-b9db-5d5b3e12559e",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C101",
+      "claim": "NF-\u03baB has been recently reported to regulate EAAT2 expression in astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The signaling pathways involved in these effects of EPO are not fully characterized; however, NF-\u03baB has been recently reported to regulate EAAT2 expression in astrocytes (Wei et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "b31f077d-7cf9-490a-b983-6d967bfa6d8a",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C102",
+      "claim": "Both NF-\u03baB and NFE2L2 pathways have been reported to be associated with the regulation of BDNF expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both NF-\u03baB and NFE2L2 pathways have been reported to be associated with the regulation of BDNF expression (Caviedes et al., 2017; Nair and Wong-Riley, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "bc301d55-784a-4be1-acfb-178d3719d53c",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C103",
+      "claim": "DMF can increase BDNF levels through an increase in NFE2L2, which binds the BDNF promotor and acts as a transcriptional activator.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DMF can increase BDNF levels through an increase in NFE2L2, which binds the BDNF promotor and acts as a transcriptional activator (Nair and Wong-Riley, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as a mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "27ac6de2-c2d4-4e93-a0a1-ffca04bcfae8",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C104",
+      "claim": "EPO administration activates the STAT3 signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "EPO administration activates the STAT3 signaling pathway (Rey et al., 2019), which can in turn elevate BDNF expression (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c2c5f3cd-6726-4005-bfee-99f70df1b26e",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C105",
+      "claim": "STAT3 signaling can elevate BDNF expression.",
+      "claim_type": "EXPLICIT",
+      "source": "EPO administration activates the STAT3 signaling pathway (Rey et al., 2019), which can in turn elevate BDNF expression (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "322b9c0e-4ff2-463f-b28c-e94c7305f1ee",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C106",
+      "claim": "HDACs play a crucial role in neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "A good example of this are the HDAC chromatin modifiers, a group of genes which did not come up as specifically linked to MECP2 in our evolutionary analysis but are well-known interactors. HDACs play a crucial role in neuronal development, and MECP2-mediated gene repression occurs mainly through HDAC recruitment via the Sin3a and NCoR complexes (Lyst et al., 2013; Ebert et al., 2013; Nan et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "f67f35f8-7192-40cd-92f8-8e801164344c",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C107",
+      "claim": "MECP2-mediated gene repression occurs mainly through HDAC recruitment via the Sin3a and NCoR complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "A good example of this are the HDAC chromatin modifiers, a group of genes which did not come up as specifically linked to MECP2 in our evolutionary analysis but are well-known interactors. HDACs play a crucial role in neuronal development, and MECP2-mediated gene repression occurs mainly through HDAC recruitment via the Sin3a and NCoR complexes (Lyst et al., 2013; Ebert et al., 2013; Nan et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "114e60c6-09cd-41e3-8333-e15308c8beed",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C108",
+      "claim": "HDACs have been suggested as therapeutic targets for Rett Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs have been suggested as therapeutic targets for Rett Syndrome (Shukla and Tekwani, 2020) and HDAC6 inhibition has been linked to improved BDNF trafficking in a Rett mouse model (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "09cd446c-1de9-4ac0-a384-c0c59a216c2f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C109",
+      "claim": "HDAC6 inhibition has been linked to improved BDNF trafficking in a Rett mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs have been suggested as therapeutic targets for Rett Syndrome (Shukla and Tekwani, 2020) and HDAC6 inhibition has been linked to improved BDNF trafficking in a Rett mouse model (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "adee690b-9897-4d01-92fc-60a68de7f1f7",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C110",
+      "claim": "DMF can reduce HDAC1/2/4 expression in rat astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, one of the compounds we examined, DMF, can reduce HDAC1/2/4 expression in rat astrocytes (Kalinin et al., 2013), and EPO can promote phosphorylation of HDAC5 in rat hippocampal neurons (Jo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "afa9b41f-e392-4c22-bedf-ea2dd40799ce",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C111",
+      "claim": "EPO can promote phosphorylation of HDAC5 in rat hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, one of the compounds we examined, DMF, can reduce HDAC1/2/4 expression in rat astrocytes (Kalinin et al., 2013), and EPO can promote phosphorylation of HDAC5 in rat hippocampal neurons (Jo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "25248264-7867-47b1-b072-3a69601374bc",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C112",
+      "claim": "The effects on HDAC activity are not the principal mechanisms of action of DMF and EPO.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effects on HDAC activity are not the principal mechanisms of action of either of the proposed compounds (Kalinin et al., 2013; Jo et al., 2016), nor do they have established interactions with the HDAC most implicated in RTT biology (HDAC6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "aa79d9c9-a230-44b0-968b-b68a4d3e3aa3",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C113",
+      "claim": "DMF and EPO do not have established interactions with HDAC6.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effects on HDAC activity are not the principal mechanisms of action of either of the proposed compounds (Kalinin et al., 2013; Jo et al., 2016), nor do they have established interactions with the HDAC most implicated in RTT biology (HDAC6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a2ba8c44-e14c-46ca-ba0d-8254f86300de",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C114",
+      "claim": "EPO, DMF and pacritinib act differentially on MECP2-silenced NSCs, microglia and astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, EPO, DMF and pacritinib act differentially on MECP2-silenced NSCs, microglia and astrocytes, providing a preliminary validation of our approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "636f5e95-aa8d-40eb-b7cc-b6e90821a0ca",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C115",
+      "claim": "BLASTP was used to compare the MECP2 protein to the proteomes of 1028 eukaryotic species.",
+      "claim_type": "EXPLICIT",
+      "source": "To trace the evolutionary history of MECP2, we used BLASTP (Camacho et al., 2009) to compare the MECP2 protein to the proteomes of 1028 eukaryotic species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "ff593c7f-79ea-4430-8cf7-c8d48223826c",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C116",
+      "claim": "20,192 human proteins were downloaded from UniProt reference proteomes (June 2018 release).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 20,192 human proteins (one representative protein sequence per gene) were downloaded from UniProt reference proteomes (June 2018 release) (Bateman and UniProt Consortium, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c5977ade-513c-403c-a42f-adfc42e1f7d5",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C117",
+      "claim": "A bit-score of 20.4, corresponding to a BLAST e-value of 0.05, was set as a minimal similarity threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "A bit-score of 20.4, corresponding to a BLAST e-value of 0.05, was set as a minimal similarity threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "633a7729-e3fc-4a4a-9cfe-ee666ab75910",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C118",
+      "claim": "Immortalized human microglial cells and astrocytes were obtained from Applied Biological Material.",
+      "claim_type": "EXPLICIT",
+      "source": "Immortalized human microglial cells and astrocytes were obtained from Applied Biological Material (Richmond, BC, Canada).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a26c8615-2a7d-401b-8434-dc7ced3a8649",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C119",
+      "claim": "Human NSCs (H9, hESC-derived) (ReNcell) were obtained from Invitrogen, Merck.",
+      "claim_type": "EXPLICIT",
+      "source": "Human NSCs (H9, hESC-derived) (ReNcell) were obtained from Invitrogen, Merck (Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "c10f9bbe-882a-4b0c-8aad-f0506c8121cd",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C120",
+      "claim": "Human neurons were obtained from ScienCell.",
+      "claim_type": "EXPLICIT",
+      "source": "Human neurons were obtained from ScienCell (Carlsbad, CA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "bf487ee9-578f-4d41-9403-d146e55cf119",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C121",
+      "claim": "All cells employed in this study were tested for mycoplasma contamination and found negative.",
+      "claim_type": "EXPLICIT",
+      "source": "All cells employed in this study were tested for mycoplasma contamination (Mycoplasma PCR Detection Kit) and found negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a quality control measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "450aa3c7-bf26-4da4-a5c4-6e3f1558646e",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C122",
+      "claim": "The immortalized human cells employed in this study represent a reliable model for studying MECP2-related pathways and potential treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these finding indicate that the immortalized human cells employed in this study represent a reliable model for studying MECP2-related pathways and potential treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the validation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "6e356a90-2a11-4276-a28c-d60ec295bee1",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C123",
+      "claim": "Recent studies reported the use of iPSCs and immortalized glial cells as reliable human models for analyzing specific therapeutic targets for various diseases including autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies reported the use of iPSCs and immortalized glial cells as reliable human models for analyzing specific therapeutic targets for various diseases including autism (Tsilioni et al., 2020), neuroinflammation (Chiavari et al., 2019; Timmerman et al., 2018) and for analyzing the crosstalk of glioma with glial cells (Henrik Heiland et al., 2019; Zeng et al., 2020; Bier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "d271e049-4f41-47ab-824c-7f4384b2c790",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "claim_id": "C124",
+      "claim": "There are significant differences in the phenotypes and functions of mouse and human neural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to use a human in vitro model system for preliminary validation due to the significant differences in the phenotypes and functions of mouse and human neural cells (Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as justification for the model choice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Phylogenetic profiling across 1028 eukaryotic genomes and within 51 mammalian species identified 200 genes highly correlated with MECP2 in each analysis (E200 and M200), with 10 genes overlapping between the two lists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The phylogenetic profiling methodology is well-established (C28-C32) and appropriately applied here (C3, C115-C117). The correlation thresholds (R>0.47 for eukaryotes, R>0.49 for mammals) are clearly stated (C33-C34), and the overlap of 10 genes between E200 and M200 is documented (C35). The approach is methodologically sound and the results are clearly presented with appropriate statistical measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "77c253bc-e7b2-4ae5-8170-171aa19af815",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The 390-gene union set (E200 + M200) was significantly enriched for brain-expressed genes (p<0.00024), with 79 genes linked to cerebral cortex and 54 to cerebellum, showing minimal overlap with STRING MECP2 interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The enrichment analysis provides statistical support (p<0.00024) for brain expression (C36), with specific counts for cerebral cortex and cerebellum (C37-C38). The comparison with STRING showing only 24/390 overlapping genes (C39) demonstrates the complementary nature of phylogenetic profiling. The statistical significance and tissue specificity support the biological relevance of the identified gene network.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "0dfca568-6712-4ee5-82ac-d08d980a22ed",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Database searches identified 33 druggable proteins in the MECP2 network, including IRAK1 and EPOR which appeared in both E200 and M200 lists, with IRAK1 showing functional links to MECP2 in STRING while EPOR did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of druggable targets through Open Targets (11 proteins) and DGIdb (22 additional proteins) is clearly documented (C40-C42). The prioritization of IRAK1 and EPOR based on their presence in both lists is logical (C43), and the differential STRING connectivity (C44-C45) provides orthogonal validation for IRAK1 while highlighting EPOR as a novel candidate. The approach is systematic and well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "06cca835-49c9-4ac2-a6dd-244c4b7da4dd",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chromosomal clustering analysis revealed that chr19p13.2 contained 5 druggable MECP2-coevolved genes (EPOR, DNMT1, ICAM1, ICAM3, KEAP1), representing the most enriched genomic band (p<1E-5), forming a single TAD, and bound by MECP2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The chromosomal enrichment is statistically significant (p<1E-5, C49) and supported by multiple lines of evidence: clustering analysis (C47), specific gene identification (C48), TAD structure from Hi-C data (C50), and MECP2 binding (C51). The convergence of evolutionary, structural, and functional evidence strongly supports this genomic region as functionally important for MECP2 biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a59edb12-5841-4356-a8b4-11c4fdaa01cc",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IRAK1 was selected as a drug target based on its role as a key intermediary in NF-\u03baB signaling in RTT, with MECP2 directly binding the IRAK1 promoter, and pacritinib identified as the only clinical-stage IRAK1 inhibitor with acceptable safety profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The selection of IRAK1 is well-justified by prior literature showing its role in RTT (C52-C54) and the availability of pacritinib as a clinically validated IRAK1 inhibitor (C55-C57). The rationale combines evolutionary evidence with mechanistic understanding and drug availability. However, the claims rely heavily on cited prior work rather than new experimental validation in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "996b425d-1833-4887-baab-47926414ad3e",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EPOR was selected as a drug target based on its role in the tissue-protective receptor complex, with EPO activating neuroprotective signaling cascades, and non-hematopoietic EPO variants available that preserve neuroprotective effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The selection of EPOR is supported by established knowledge of EPO/TPR biology (C58-C59) and the availability of modified EPO variants (C60). The rationale is sound, though EPOR represents a novel MECP2-linked target without prior direct connection. The claims are well-cited but represent background justification rather than new findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "5293a865-caf5-478e-974b-057fc793600e",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "KEAP1 was selected as a drug target based on its role as the key repressor of NFE2L2, which regulates inflammatory pathways, with DMF identified as an approved treatment that decreases KEAP1 and increases NFE2L2 with proven neuroprotective effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The selection of KEAP1/NFE2L2 pathway is well-justified by established biology (C61-C62) and the availability of DMF as an approved drug (C63-C65). The mechanism of action is clearly described and supported by citations. Like the other targets, this represents a well-reasoned selection based on prior knowledge rather than new experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "85c656a0-40e0-4b5c-b923-c46988d86897",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MECP2 silencing (>80% reduction) in human neural cells recapitulated multiple RTT phenotypes including M1 microglia polarization, decreased phagocytosis, impaired NSC differentiation toward glia, reduced astrocyte EAAT2 expression, and decreased BDNF in neurons and astrocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The MECP2 knockdown model is well-characterized with >80% reduction confirmed by Western blot (C66). Multiple phenotypes are documented with appropriate assays and statistical significance: microglia polarization (C67-C68), phagocytosis (C69), NSC differentiation (C70), astrocyte function (C71), and BDNF expression (C72). The use of immortalized human cells is justified (C118-C124) and quality-controlled (C121). The model successfully recapitulates known RTT phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "3d74bd6b-240c-40d5-b445-974bda11190f",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DMF, EPO, and pacritinib showed no toxicity to microglia, astrocytes, neurons, or NSCs at the concentrations tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Cytotoxicity was assessed using LDH assay across multiple cell types and drug concentrations (C73, Figure 3\u2014figure supplement 2). This is an essential control for interpreting subsequent rescue experiments. The claim is clearly stated and supported by data, though the specific concentration ranges and statistical analyses are not detailed in the claim text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "286df107-4642-4543-8f83-6ee4dec91873",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "EPO, DMF, and pacritinib differentially rescued microglia phenotypes in MECP2-silenced cells, with EPO showing complete rescue of all five M1/M2 markers, while DMF and pacritinib showed partial rescue; only DMF significantly increased phagocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differential effects of the three drugs on microglia are clearly documented with RT-PCR data (C74-C76) and phagocytosis assays (C77-C78). EPO shows the most comprehensive rescue of polarization markers, while DMF uniquely rescues phagocytosis. The data demonstrate cell-type and phenotype-specific drug effects with appropriate statistical testing. The results support the hypothesis that these drugs can ameliorate MECP2-deficiency phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a10a0047-8ce9-45b1-946c-e7bffae11334",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "EPO and DMF significantly reduced NF-\u03baB hyperactivation in MECP2-silenced microglia, with all three compounds showing some inhibitory effect on NF-\u03baB-dependent luciferase activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The NF-\u03baB pathway involvement is supported by prior literature (C79-C80) and demonstrated experimentally using luciferase reporter assays (C81, C98). EPO and DMF show significant effects, consistent with their known mechanisms of action. The convergence on NF-\u03baB signaling provides a mechanistic framework for understanding drug effects. However, the claim about pacritinib's effect is less clear\u2014C81 mentions only EPO and DMF as significant, while C98 states all three compounds inhibited to \"a certain extent.\"",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "43c5dc5d-5a9d-4d92-91b2-44a0460dade7",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "EPO uniquely rescued impaired NSC differentiation (increasing \u03b2III tubulin, decreasing GFAP) and restored EAAT2 expression in MECP2-silenced astrocytes, while pacritinib and DMF had no significant effects on these phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cell-type specific effects are clearly demonstrated with RT-PCR data showing EPO's unique ability to rescue NSC differentiation (C84) and astrocyte EAAT2 expression (C85), while DMF and pacritinib lack these effects (C83, C86). This demonstrates important differences in drug mechanisms and suggests EPO may have broader therapeutic potential. The statistical significance is indicated in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "571263c2-ac48-4aac-b4c0-b18a17c2c3e0",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "DMF and EPO increased BDNF expression in MECP2-silenced neurons and astrocytes, while pacritinib had no effect; combined DMF+EPO treatment showed modest additive effects in astrocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "BDNF rescue is demonstrated by both RT-PCR and ELISA in neurons (C87) and astrocytes (C88), with pacritinib showing no effect (C89). The combination experiment (C90) suggests potentially independent mechanisms of action, though the additive effect is described as \"modest.\" BDNF is a well-established MECP2 target, making this a particularly relevant phenotype. The data support therapeutic potential for DMF and EPO.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "a4c5e15a-e668-4352-9139-4c52d35ac168",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The three drugs converge on NF-\u03baB signaling through distinct mechanisms: EPO via GSK3\u03b2 inhibition, DMF via NFE2L2 activation, and both pathways regulate BDNF expression and EAAT2 in astrocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the mechanistic connections are supported by literature citations (C96-C97, C101-C105), these represent proposed mechanisms based on prior work rather than direct experimental validation in this study. The authors appropriately cite relevant literature but do not experimentally confirm these specific pathways in their MECP2-silenced cells. The mechanistic model is plausible and well-reasoned but remains somewhat speculative without direct pathway validation (e.g., Western blots for pathway components, pathway inhibitor experiments).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "HDACs, particularly HDAC6, represent alternative therapeutic targets for RTT; DMF and EPO can affect HDAC activity but this is not their primary mechanism and they lack established HDAC6 interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discussion of HDACs is appropriately cautious and well-cited (C106-C113). The authors acknowledge that while DMF and EPO can affect some HDACs (C110-C111), this is not their primary mechanism (C112) and they don't target HDAC6 specifically (C113). This represents an honest assessment of alternative mechanisms and limitations. The claims are properly qualified and supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "67c0bd7f-937e-4087-a872-efc0827f8cae",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "EPO, DMF, and pacritinib act differentially on MECP2-silenced NSCs, microglia, and astrocytes, providing preliminary validation of the phylogenetic profiling approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary claim (C114) is well-supported by the collective experimental results showing cell-type and phenotype-specific drug effects. The characterization as \"preliminary validation\" is appropriately cautious, acknowledging that in vitro human cell studies represent an early stage of validation. The differential effects across cell types and drugs support the utility of the computational approach for identifying therapeutic targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on Rett syndrome: RTT is an X-linked dominant disorder caused by MECP2 mutations, characterized by developmental regression and intellectual disability, with no approved treatments despite extensive research and ongoing clinical trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide well-established background knowledge about RTT, MECP2 function, and current therapeutic landscape (C1-C27). All claims are appropriately cited and represent accurate summaries of the field. This background contextualizes the study's rationale but does not constitute new findings. The information is accurate and well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "966a03cf-701d-4cdc-a6e3-4a85cc49fd9b",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on RTT pathophysiology: RTT is a neurodevelopmental disease without degeneration where glial dysfunction contributes to pathogenesis, and rescuing MECP2 downstream activity may improve symptoms even in adulthood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide relevant background on RTT pathophysiology and therapeutic rationale (C82, C91-C95). The information is well-cited and contextualizes the study's focus on downstream targets and glial cells. Claim C92 about adult intervention is appropriately qualified as speculative (\"might improve\"). This represents established knowledge that motivates the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    },
+    {
+      "id": "1accecc0-d0aa-43bd-926b-c34d82dbc78a",
+      "content_id": "f3881bb9-5c4f-4fe8-b194-6a7cfe48a56b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Summary of main findings: Three drug targets (IRAK, KEAP1, EPOR) were identified through phylogenetic profiling, with corresponding drugs (Pacritinib, DMF, EPO) rescuing MECP2-inactivation phenotypes and converging on NF-\u03baB signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These abstract claims (C4-C8) accurately summarize the study's main findings. The identification of three targets (C4), their prior connection status (C5-C6), phenotypic rescue (C7), and convergence on NF-\u03baB (C8) are all supported by the detailed results. The characterization of EPOR as not previously linked to MECP2 (C6) is validated by STRING analysis (C45). These summary claims are well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:37:46.811518Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "264a4403-1c97-43a6-9bc0-34d074bedf15",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "1a113ee2-9082-4c9e-b999-20a43065f1d6",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "b4d5a58b-7d35-443d-8707-f7fe4e809caa",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "3be435f6-2f10-44f3-849c-26a30b866f7e",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "87eb20a6-4685-483c-b0d1-e52fdb5cc1d7",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "a324ea77-9ddc-496f-bddb-b5a7b0ba9e63",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "cbc1e38c-8e93-4508-8bbd-54c1f257a144",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "033e5162-e620-4b98-ac93-17bb5b21510d",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "f826f094-5dbd-4aa8-b4ab-fda348a13823",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "636f5e95-aa8d-40eb-b7cc-b6e90821a0ca",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "ff593c7f-79ea-4430-8cf7-c8d48223826c",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "c5977ade-513c-403c-a42f-adfc42e1f7d5",
+      "result_id": "c2de19b5-9a16-49b8-9aa0-f2ed660782a2"
+    },
+    {
+      "claim_id": "5fb8d02a-6d02-4511-b0f5-8b259d3c68e1",
+      "result_id": "77c253bc-e7b2-4ae5-8170-171aa19af815"
+    },
+    {
+      "claim_id": "0b43f959-e8a2-447f-bf43-d97864db4ff3",
+      "result_id": "77c253bc-e7b2-4ae5-8170-171aa19af815"
+    },
+    {
+      "claim_id": "09f9e5d1-c7ba-471d-ab06-718dbb58ce6f",
+      "result_id": "77c253bc-e7b2-4ae5-8170-171aa19af815"
+    },
+    {
+      "claim_id": "da676c9c-30fe-485a-9ed5-3ce06de57774",
+      "result_id": "77c253bc-e7b2-4ae5-8170-171aa19af815"
+    },
+    {
+      "claim_id": "2592fe04-885f-4d92-be6b-4ab8539896c2",
+      "result_id": "0dfca568-6712-4ee5-82ac-d08d980a22ed"
+    },
+    {
+      "claim_id": "c34015b8-3649-4447-8d25-6a58c428063f",
+      "result_id": "0dfca568-6712-4ee5-82ac-d08d980a22ed"
+    },
+    {
+      "claim_id": "df61a1a3-a738-422c-8731-5a88b364037a",
+      "result_id": "0dfca568-6712-4ee5-82ac-d08d980a22ed"
+    },
+    {
+      "claim_id": "3fc2e130-9ee6-4cb3-953b-2846b62bbaf3",
+      "result_id": "0dfca568-6712-4ee5-82ac-d08d980a22ed"
+    },
+    {
+      "claim_id": "3e88efce-c5d8-4884-883f-00443220c46d",
+      "result_id": "0dfca568-6712-4ee5-82ac-d08d980a22ed"
+    },
+    {
+      "claim_id": "11382074-2efe-4355-bc3a-74787716cf5d",
+      "result_id": "0dfca568-6712-4ee5-82ac-d08d980a22ed"
+    },
+    {
+      "claim_id": "fdef5679-0149-432d-b5b4-c06f573b32c2",
+      "result_id": "06cca835-49c9-4ac2-a6dd-244c4b7da4dd"
+    },
+    {
+      "claim_id": "7b4a1218-c022-4d20-8199-2ea45af2e6e8",
+      "result_id": "06cca835-49c9-4ac2-a6dd-244c4b7da4dd"
+    },
+    {
+      "claim_id": "1c0c5969-6642-4651-841f-f52225686036",
+      "result_id": "06cca835-49c9-4ac2-a6dd-244c4b7da4dd"
+    },
+    {
+      "claim_id": "7eecc56c-026c-4b6c-a95d-e2317b85554d",
+      "result_id": "06cca835-49c9-4ac2-a6dd-244c4b7da4dd"
+    },
+    {
+      "claim_id": "35f19677-7774-4f70-b427-5dcb9eb106b4",
+      "result_id": "06cca835-49c9-4ac2-a6dd-244c4b7da4dd"
+    },
+    {
+      "claim_id": "f2232850-24ad-4571-9295-f95807fe2774",
+      "result_id": "06cca835-49c9-4ac2-a6dd-244c4b7da4dd"
+    },
+    {
+      "claim_id": "9b2d875f-6945-4abe-8cbf-4d402af5c3c8",
+      "result_id": "a59edb12-5841-4356-a8b4-11c4fdaa01cc"
+    },
+    {
+      "claim_id": "5bf50a12-e400-4443-b65c-b1e0fdb36790",
+      "result_id": "a59edb12-5841-4356-a8b4-11c4fdaa01cc"
+    },
+    {
+      "claim_id": "f76c777d-57da-4c63-86bb-5bef40507199",
+      "result_id": "a59edb12-5841-4356-a8b4-11c4fdaa01cc"
+    },
+    {
+      "claim_id": "29f78a01-dce9-47fb-9945-6cedde2188be",
+      "result_id": "a59edb12-5841-4356-a8b4-11c4fdaa01cc"
+    },
+    {
+      "claim_id": "916022bb-98ab-45c4-91d8-2a30106976ca",
+      "result_id": "a59edb12-5841-4356-a8b4-11c4fdaa01cc"
+    },
+    {
+      "claim_id": "80a1f7d6-631a-4e70-b2fd-4c9e5197efe8",
+      "result_id": "a59edb12-5841-4356-a8b4-11c4fdaa01cc"
+    },
+    {
+      "claim_id": "4ace7085-c1dd-4230-856b-f81354180444",
+      "result_id": "996b425d-1833-4887-baab-47926414ad3e"
+    },
+    {
+      "claim_id": "b8bb2114-2922-4787-bcb0-cc246627a1e4",
+      "result_id": "996b425d-1833-4887-baab-47926414ad3e"
+    },
+    {
+      "claim_id": "0cbac2ff-1755-40ae-a7cf-090dc0dcdf74",
+      "result_id": "996b425d-1833-4887-baab-47926414ad3e"
+    },
+    {
+      "claim_id": "ab8a95fd-fabf-4e79-8e3f-808bfbb46064",
+      "result_id": "5293a865-caf5-478e-974b-057fc793600e"
+    },
+    {
+      "claim_id": "0612667b-b2b2-4d3c-bb1b-e173d7b62e21",
+      "result_id": "5293a865-caf5-478e-974b-057fc793600e"
+    },
+    {
+      "claim_id": "c2719a43-27e2-4d02-b686-696052f966fc",
+      "result_id": "5293a865-caf5-478e-974b-057fc793600e"
+    },
+    {
+      "claim_id": "3278df90-c573-4801-ab4a-9e170a57938d",
+      "result_id": "5293a865-caf5-478e-974b-057fc793600e"
+    },
+    {
+      "claim_id": "b308e5f2-2cc5-4894-b9c0-5e3deacd06d6",
+      "result_id": "5293a865-caf5-478e-974b-057fc793600e"
+    },
+    {
+      "claim_id": "ac6887a6-18b1-433d-8e09-98695f36222f",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "308781ff-e38a-4d92-acbb-0d10ae08402e",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "ae03cf2d-fe7d-45ef-bbfa-cbcf8968afff",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "7cb514d5-12ef-408a-b086-a3cf463ad784",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "29eedd42-5778-4aca-8829-36272176c2ba",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "8706dcdc-cded-4862-b195-7a6b51117dbe",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "7c9b914d-0dcb-456b-8506-0f293365fc81",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "633a7729-e3fc-4a4a-9cfe-ee666ab75910",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "a26c8615-2a7d-401b-8434-dc7ced3a8649",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "c10f9bbe-882a-4b0c-8aad-f0506c8121cd",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "bf487ee9-578f-4d41-9403-d146e55cf119",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "450aa3c7-bf26-4da4-a5c4-6e3f1558646e",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "6e356a90-2a11-4276-a28c-d60ec295bee1",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "d271e049-4f41-47ab-824c-7f4384b2c790",
+      "result_id": "85c656a0-40e0-4b5c-b923-c46988d86897"
+    },
+    {
+      "claim_id": "5250f361-e578-4d21-ae12-6e3afce4dd1d",
+      "result_id": "3d74bd6b-240c-40d5-b445-974bda11190f"
+    },
+    {
+      "claim_id": "e07ad842-ac98-41c2-a1ed-4ef58a42f65f",
+      "result_id": "286df107-4642-4543-8f83-6ee4dec91873"
+    },
+    {
+      "claim_id": "975fd1f1-dd03-4108-8fcd-d34fcecd3da2",
+      "result_id": "286df107-4642-4543-8f83-6ee4dec91873"
+    },
+    {
+      "claim_id": "d899abad-488f-4ad9-a9b5-eea9f3254b13",
+      "result_id": "286df107-4642-4543-8f83-6ee4dec91873"
+    },
+    {
+      "claim_id": "1eee512a-9959-4775-9ebe-9ffbad38efb9",
+      "result_id": "286df107-4642-4543-8f83-6ee4dec91873"
+    },
+    {
+      "claim_id": "1c3bccbb-b9ac-4246-8f0c-0324851408cf",
+      "result_id": "286df107-4642-4543-8f83-6ee4dec91873"
+    },
+    {
+      "claim_id": "8b83b13a-c7fa-4b99-954c-2618a55dab69",
+      "result_id": "a10a0047-8ce9-45b1-946c-e7bffae11334"
+    },
+    {
+      "claim_id": "5e1e5697-17a4-4041-9066-d967c8871013",
+      "result_id": "a10a0047-8ce9-45b1-946c-e7bffae11334"
+    },
+    {
+      "claim_id": "c9c74698-1360-4a4b-ad42-413bf1108291",
+      "result_id": "a10a0047-8ce9-45b1-946c-e7bffae11334"
+    },
+    {
+      "claim_id": "44cb4f92-0859-4b05-902a-f1b3375a13eb",
+      "result_id": "a10a0047-8ce9-45b1-946c-e7bffae11334"
+    },
+    {
+      "claim_id": "255ef390-e687-4c68-9fcc-cc58869ac73b",
+      "result_id": "43c5dc5d-5a9d-4d92-91b2-44a0460dade7"
+    },
+    {
+      "claim_id": "c962cb18-d735-4266-aafa-6c1d1014249a",
+      "result_id": "43c5dc5d-5a9d-4d92-91b2-44a0460dade7"
+    },
+    {
+      "claim_id": "7de63a3a-3825-45a3-9c4b-fc11ef6052bb",
+      "result_id": "43c5dc5d-5a9d-4d92-91b2-44a0460dade7"
+    },
+    {
+      "claim_id": "c1ce1304-2642-4c13-b5af-04a7de8c21c8",
+      "result_id": "43c5dc5d-5a9d-4d92-91b2-44a0460dade7"
+    },
+    {
+      "claim_id": "db1fb1f5-4952-4c7f-8a68-91904ee74ffd",
+      "result_id": "571263c2-ac48-4aac-b4c0-b18a17c2c3e0"
+    },
+    {
+      "claim_id": "a52e0363-6bc8-4154-b369-9d23dee5c63a",
+      "result_id": "571263c2-ac48-4aac-b4c0-b18a17c2c3e0"
+    },
+    {
+      "claim_id": "7080fd6a-0b51-4550-85e8-92fab8efe9f6",
+      "result_id": "571263c2-ac48-4aac-b4c0-b18a17c2c3e0"
+    },
+    {
+      "claim_id": "0e997e1d-e362-4e28-aab3-21c17bd011fc",
+      "result_id": "571263c2-ac48-4aac-b4c0-b18a17c2c3e0"
+    },
+    {
+      "claim_id": "51a163f4-9801-4347-ade4-7448a7bb68f8",
+      "result_id": "a4c5e15a-e668-4352-9139-4c52d35ac168"
+    },
+    {
+      "claim_id": "4ae16f4a-baef-4494-a265-2258fd451bac",
+      "result_id": "a4c5e15a-e668-4352-9139-4c52d35ac168"
+    },
+    {
+      "claim_id": "b7273798-5896-41b5-b9db-5d5b3e12559e",
+      "result_id": "a4c5e15a-e668-4352-9139-4c52d35ac168"
+    },
+    {
+      "claim_id": "b31f077d-7cf9-490a-b983-6d967bfa6d8a",
+      "result_id": "a4c5e15a-e668-4352-9139-4c52d35ac168"
+    },
+    {
+      "claim_id": "bc301d55-784a-4be1-acfb-178d3719d53c",
+      "result_id": "a4c5e15a-e668-4352-9139-4c52d35ac168"
+    },
+    {
+      "claim_id": "27ac6de2-c2d4-4e93-a0a1-ffca04bcfae8",
+      "result_id": "a4c5e15a-e668-4352-9139-4c52d35ac168"
+    },
+    {
+      "claim_id": "c2c5f3cd-6726-4005-bfee-99f70df1b26e",
+      "result_id": "a4c5e15a-e668-4352-9139-4c52d35ac168"
+    },
+    {
+      "claim_id": "322b9c0e-4ff2-463f-b28c-e94c7305f1ee",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "f67f35f8-7192-40cd-92f8-8e801164344c",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "114e60c6-09cd-41e3-8333-e15308c8beed",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "09cd446c-1de9-4ac0-a384-c0c59a216c2f",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "adee690b-9897-4d01-92fc-60a68de7f1f7",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "afa9b41f-e392-4c22-bedf-ea2dd40799ce",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "25248264-7867-47b1-b072-3a69601374bc",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "aa79d9c9-a230-44b0-968b-b68a4d3e3aa3",
+      "result_id": "4ed1555b-6fa2-43dd-af9a-44e4358cade6"
+    },
+    {
+      "claim_id": "a2ba8c44-e14c-46ca-ba0d-8254f86300de",
+      "result_id": "67c0bd7f-937e-4087-a872-efc0827f8cae"
+    },
+    {
+      "claim_id": "e9c4469f-a359-4fe8-8ba4-adc2f4f5d8a5",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "e3a5f432-b8dd-4562-993b-5974f97f3844",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "a4c403df-4bac-416a-b6d6-0d328f4e858b",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "80ead21b-068a-4f3c-b28c-f1d7e24ab2e4",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "5492c9dd-5316-4111-a3dd-b35428745c3d",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "ada03cae-4b85-470e-b160-5b33ff81a929",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "1e4086e3-8a6e-4dda-b89f-7873d74e4f63",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "9c36f92a-59e7-4a84-be76-55d200bcc73a",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "cafa23c2-210c-4e47-9817-e8ccb4139c41",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "432ad686-9c58-40e4-bf24-687c5da71443",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "289f644f-c7d4-4348-b1e8-3db84c2e4e96",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "f4605351-f96e-46ee-8c72-4c00333e889f",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "0ae1802c-3368-47ab-b1e8-169ea43a0e78",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "558198d3-a7ef-4802-8844-4889e3ad531a",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "d54ef02d-aa04-465f-a60e-de9a8946a8d0",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "fabaed39-5dd5-4ed7-ba3e-a924b26c7d6d",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "f38d01e4-326e-4474-9f5c-6769269567a9",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "c0c828eb-e21b-4b26-b287-9d1ff43b4ede",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "e42bbdf6-4bfd-42df-8aed-4548b2050fd0",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "1ca5cd79-a322-4fc0-8e08-cf2835da91b6",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "c660ec87-887d-4c46-9930-eaa0316e5093",
+      "result_id": "3b8a9327-db9a-4487-990e-bf21cf3cc6af"
+    },
+    {
+      "claim_id": "e2950258-21f8-4313-842f-4dcb34995ff5",
+      "result_id": "966a03cf-701d-4cdc-a6e3-4a85cc49fd9b"
+    },
+    {
+      "claim_id": "da33e136-cd52-4052-afb8-4b375fefd21f",
+      "result_id": "966a03cf-701d-4cdc-a6e3-4a85cc49fd9b"
+    },
+    {
+      "claim_id": "e7c4552d-acc5-4dd0-b843-a8a8eb239705",
+      "result_id": "966a03cf-701d-4cdc-a6e3-4a85cc49fd9b"
+    },
+    {
+      "claim_id": "bb543690-dd2e-4b17-8b6f-1120012b5bb3",
+      "result_id": "966a03cf-701d-4cdc-a6e3-4a85cc49fd9b"
+    },
+    {
+      "claim_id": "6aaf517d-68b0-4638-b98e-ef5c59fc1d78",
+      "result_id": "966a03cf-701d-4cdc-a6e3-4a85cc49fd9b"
+    },
+    {
+      "claim_id": "9dcc6052-27b1-4c98-af30-006c74b2ba77",
+      "result_id": "966a03cf-701d-4cdc-a6e3-4a85cc49fd9b"
+    },
+    {
+      "claim_id": "180d9584-5937-4b9a-9480-ad8d82450cb2",
+      "result_id": "1accecc0-d0aa-43bd-926b-c34d82dbc78a"
+    },
+    {
+      "claim_id": "0d61aaf5-7def-4b6b-8197-ce3ae43a2096",
+      "result_id": "1accecc0-d0aa-43bd-926b-c34d82dbc78a"
+    },
+    {
+      "claim_id": "fcbb4067-35f6-4496-a283-35b74093677c",
+      "result_id": "1accecc0-d0aa-43bd-926b-c34d82dbc78a"
+    },
+    {
+      "claim_id": "8ff7612b-a390-4f0d-b109-408f0b8c31ee",
+      "result_id": "1accecc0-d0aa-43bd-926b-c34d82dbc78a"
+    },
+    {
+      "claim_id": "8db250f0-5ff9-48bb-b861-45de44a664d2",
+      "result_id": "1accecc0-d0aa-43bd-926b-c34d82dbc78a"
+    }
+  ],
+  "comparisons": []
+}

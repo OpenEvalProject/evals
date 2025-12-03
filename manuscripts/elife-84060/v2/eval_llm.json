@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C37",
+      "C40",
+      "C65"
+    ],
+    "result": "Early-life exposure to female odors (FU) from 3-60 days of age significantly extends lifespan in female mice, with an 8% increase in median lifespan (621 vs 576 days) and 9% increase in 90th percentile age compared to water controls (ZU). This effect was statistically significant by log-rank test (p=0.01 for FU vs ZU, p=0.04 overall), Cox regression (p=0.015 unadjusted, p=0.045 with Sidak adjustment), and Wang-Allison test (p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent statistical tests (log-rank, Cox regression, Wang-Allison) consistently demonstrate significant lifespan extension in FU-treated females (C27-C30, C37, C40). The effect size is modest but meaningful (8-9% increase), with appropriate sample sizes (n=57-59 per group) and proper statistical corrections applied. The preliminary experiment (C93-C95) validates the odor exposure protocol by showing expected effects on sexual maturity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C66"
+    ],
+    "result": "Male odors (MU) did not significantly affect female lifespan compared to water controls (ZU), with p=0.6 by log-rank test. This negative result contrasts with the lifespan extension observed with female odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of effect of male odors on female lifespan is clearly demonstrated with appropriate statistical testing (C31). This negative control strengthens the specificity of the female odor effect and is consistent across multiple analyses (C5, C66). The sample sizes are adequate to detect effects of similar magnitude to the FU treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C42",
+      "C69"
+    ],
+    "result": "Male mice showed no lifespan changes in response to odors from either sex, with log-rank p=0.8 for all treatment groups and no significant pairwise comparisons. This demonstrates sex-specific effects of olfactory cues on longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of odor effects in males is well-documented across multiple statistical tests (C32, C42) with adequate sample sizes (n=59-60 per group). This sex-specificity is a key finding that distinguishes the female response and suggests distinct developmental programming mechanisms between sexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "Conditional deletion of G\u03b1o in the olfactory system (cG\u03b1o-/-) did not modify the lifespan effects of female odors. Cox regression showed no significant genotype \u00d7 treatment interaction in either sex, and genotype alone had no independent effect on survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of genotype effect is demonstrated through appropriate Cox regression analysis with interaction terms (C33-C36). The non-significant interaction (p=0.9 in females, p=0.5 in males) indicates the odor effect is independent of G\u03b1o-mediated VNO signaling. However, this negative result limits mechanistic interpretation and suggests alternative pathways (C78-C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C67"
+    ],
+    "result": "Female mice exposed to female odors (FU) maintained significantly higher core body temperature at 22 months compared to controls (p=0.007), suggesting resistance to age-related decline in thermoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The body temperature difference is statistically significant (C43) and represents a functional correlate of the lifespan extension (C67). This physiological measure provides evidence that FU treatment affects healthspan, not just lifespan. However, the biological significance of this modest temperature difference requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C68"
+    ],
+    "result": "Most functional measures at 22 months showed no treatment effects: body temperature in males, grip strength, and rotarod performance were unaffected by odor exposure in either sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These negative results are clearly reported with appropriate statistical testing (C44-C46, C48). The lack of effects on grip strength and rotarod performance (C68) suggests the lifespan extension may not be accompanied by broad improvements in physical function, or that these particular assays lack sensitivity for detecting relevant changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Male control mice (ZU) had significantly lower glucose levels at 12 months than odor-exposed males (FU or MU), with p=0.004 for ANOVA and p=0.01 for each pairwise comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While statistically significant (C47), this glucose finding in males is difficult to interpret given that odor exposure had no effect on male lifespan (C32). The direction of effect (lower glucose in controls) is counterintuitive if lower glucose were beneficial. This may represent a spurious finding or an effect unrelated to longevity. The biological significance and mechanism remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Body weight trajectories were largely unaffected by odor treatment across the lifespan in both sexes. A marginal difference at 6 months in females (p=0.03-0.04) is likely a chance effect due to multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately interpret the single significant timepoint (C49) as likely spurious given lack of correction for multiple comparisons and absence of effects at other ages (C50). The overall lack of body weight effects (C51-C52) suggests the lifespan extension occurs through mechanisms independent of growth or metabolic rate changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "In a preliminary experiment, female mice exposed to male odors showed earlier vaginal patency (p=0.005 vs controls), while those exposed to female odors showed delayed vaginal patency (p=0.008 vs controls), with overall ANOVA p<0.001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The preliminary experiment successfully validates the odor exposure protocol by replicating known effects on sexual maturation (C93-C95). The statistical significance is strong and consistent with prior literature (C18-C19). This provides important validation that the odor exposure regimen is biologically active and supports the rationale for the lifespan study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Prior research demonstrates that early-life interventions (GH injections, litter size manipulation, genetic selection) during a critical developmental window can have lasting effects on mouse lifespan and age-related phenotypes, establishing precedent for developmental programming of longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize well-established prior work (C10-C15, C54, C56-C63) that provides the conceptual framework for the current study. The citations appear appropriate and the synthesis is accurate. This background establishes that early-life interventions can durably affect lifespan, supporting the plausibility of the olfactory manipulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C64"
+    ],
+    "result": "Prior research shows that age at sexual maturity correlates with lifespan across mouse strains, and that olfactory cues from conspecifics can accelerate (opposite-sex odors) or delay (same-sex odors) sexual maturation in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established literature (C16-C21) linking sexual maturation timing to longevity and documenting olfactory effects on development. The citations appear appropriate. This background provides the rationale for hypothesizing that odors affecting maturation might also affect lifespan (C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C75",
+      "C76",
+      "C77",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The vomeronasal organ (VNO) and specifically G\u03b1o-expressing vomeronasal sensory neurons mediate olfactory effects on sexual maturation. The cG\u03b1o-/- mouse model shows impaired VNO function and blunted reproductive responses to male odors while maintaining normal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the VNO system and the cG\u03b1o-/- model (C22-C26, C75-C77, C96-C102) based on appropriate citations. The characterization of the genetic model is thorough and establishes its validity for testing VNO involvement. However, the model's failure to affect the lifespan phenotype (C8) suggests the mechanism may involve different VSN populations or other sensory systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose that female odor effects on female survival may be mediated by apical VSNs (using different G proteins than G\u03b1o), the main olfactory system, or potentially microbiota transfer, representing a female-specific secreted factor active during the first 60 days of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable speculations (C79-C81) given the negative G\u03b1o results, supported by prior work showing female odors activate different VSN populations (C78). However, these remain untested hypotheses. The inference about a female-specific factor (C82) is logical given the sex-specificity of effects, but the actual mechanism remains unknown. Future experiments with different genetic models or purified odorants are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study used odors from UM-HET3 mice (genetically heterogeneous) to expose test mice of a different genetic background (C57BL/6J \u00d7 S129 mixed). While different strains produce different olfactory signals and receptors, VNO responses to same- vs. different-strain odors are reportedly similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge this methodological consideration (C70) and provide relevant context about strain differences in olfactory signals (C71-C72) and receptors, while noting that VNO activation appears broadly similar across strains (C73). The speculation about potential strain-specific effects (C74) is reasonable but untested. This design choice may actually strengthen generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Prior work in invertebrates (C. elegans, Drosophila) has established that sensory perception, including olfaction of food and conspecific pheromones, can modulate aging and lifespan through conserved pathways including insulin signaling and NPF/NPY neuropeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the invertebrate literature on sensory modulation of aging (C85-C90) with appropriate citations. This provides important comparative context suggesting evolutionary conservation of mechanisms linking sensory perception to longevity, though the authors appropriately note that mammalian mechanisms may differ.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C55",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors conclude that very young mice are susceptible to environmental influences with lasting effects on health and lifespan, representing the first demonstration of mammalian lifespan extension by olfactory signals, potentially reflecting adaptive developmental plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion about early-life susceptibility (C9) is well-supported by the data. The claim of novelty (C91) appears accurate based on the literature review. However, the mechanistic speculation about epigenetic modulation (C55) and the adaptive interpretation (C92) are reasonable but unproven hypotheses. The acknowledgment that the critical window timing is unknown (C53) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C83",
+      "C84"
+    ],
+    "result": "Established knowledge indicates that olfactory cues can influence developmental pace in mice, with same-sex odors delaying maturation in some circumstances, and that brief post-weaning exposure can affect sexual maturity while pre-weaning exposure has longer-term effects on body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge about olfactory effects on mouse development (C2-C3, C83-C84). The citations appear appropriate and provide rationale for the experimental design starting odor exposure at 3 days of age and continuing through 60 days.",
+    "result_type": "MINOR"
+  }
+]

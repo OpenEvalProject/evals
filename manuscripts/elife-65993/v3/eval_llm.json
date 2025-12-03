@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C55",
+      "C57"
+    ],
+    "result": "A synthetic GRN with fixed topology displays both quantitatively and qualitatively different phenotypes depending solely on the local genetic context (relative TU order) of its components. Of 37 tested TU permutations, more than half (20) showed qualitatively different phenotypes than predicted ab initio, and quantitative differences were observed within phenotype classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C25, C26, C55, and C57 collectively demonstrate that local genetic context significantly influences GRN phenotypes. The experimental data from 37 plasmid-based TU permutations (Figures 1C-D, Figure 1\u2014figure supplements 2-3) provide strong evidence for both qualitative and quantitative phenotypic variation despite identical network topology and genetic components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The dependency of GRN phenotype on relative TU order is independent of plasmid localization. Chromosomally integrated GRNs with varying TU order showed phenotype dependency on TU order, while GRNs with components at separate chromosomal loci showed the predicted phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 are supported by experimental data from chromosomally integrated networks (Figure 2B-C). The observation that separated components yield predicted phenotypes while adjacent components show context-dependent phenotypes provides strong evidence that transcription of neighboring genes, not plasmid effects, drives phenotypic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Transcriptional read-through is the main molecular mechanism underlying context-dependent GRN phenotypes. Multiple lines of evidence support this: (1) cI expression differences correlate with phenotypic differences, (2) Ptet activity does not change with IPTG, indicating local rather than global effects, (3) Ptet promoter mutations do not affect IPTG responsiveness, (4) terminator strength variations predictably alter phenotypes, and (5) Northern blots directly detect read-through transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C31-C45 provide converging experimental evidence for transcriptional read-through as the mechanism. RT-qPCR (Figure 3A), promoter mutation experiments (Figure 4), terminator strength variations (Figure 5A-B), and Northern blot detection of read-through transcripts (Figure 5\u2014figure supplement 1) collectively provide strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "A mathematical model incorporating transcriptional read-through successfully predicts phenotypes for 20 out of 26 network pairs showing consistent orientation-independent phenotypes, while a null model without read-through fails to predict observed differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 are supported by the modeling results shown in Figure 1\u2014figure supplements 1-2. The model incorporating transcriptional read-through agrees with experimental data for 20/26 networks (77%), demonstrating that this mechanism can quantitatively account for most observed phenotypic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59"
+    ],
+    "result": "Local genetic context effects, specifically transcriptional read-through, occur at native chromosomal locations. When lacI is inserted at different chromosomal loci after terminators of varying strength, Plac activity varies in an IPTG concentration-dependent manner, with statistical significance at five IPTG concentrations tested. PCR detection of read-through transcripts confirms the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C59 are supported by experimental data from chromosomally integrated lacI at three different loci (Figure 6). ANOVA analysis shows significant effects of genomic localization (Figure 6\u2014figure supplement 1), RT-qPCR confirms transcript level differences (Figure 6C), and PCR detects read-through transcripts (Figure 6D), demonstrating that context effects occur genome-wide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C74"
+    ],
+    "result": "Not all phenotypes can be explained by transcriptional read-through alone. Eight network pairs showed orientation-dependent phenotypes, with plasmid backbone elements (kanR, repA) and potentially supercoiling effects contributing to phenotypic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 and C74 acknowledge limitations of the transcriptional read-through model. The observation that 8/37 networks show orientation-dependent effects (Figure 1\u2014figure supplement 3A) and that Ptet repression varies with plasmid orientation (Figure 1\u2014figure supplement 4B) indicates additional mechanisms contribute to phenotypic variation, demonstrating appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C58",
+      "C77",
+      "C78"
+    ],
+    "result": "The relative order of individual TUs plays an important role in shaping GRN phenotypes, and changes in local genetic context can alter regulatory connections between regulons without requiring complex regulatory elements or changes in promoter sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56, C58, C77, and C78 represent the primary conceptual conclusions of the study. These are well-supported by the comprehensive experimental evidence showing that TU order alone determines phenotype (Figures 1-6), and that transcriptional read-through provides a simple mechanism for creating regulatory connections without evolving new transcription factor binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C83",
+      "C88"
+    ],
+    "result": "The synthetic GRN system consists of three well-characterized repressors (LacI, TetR, lambda CI) with defined network topology, where each TU is separated by the strong T1 terminator, the output (yfp) is chromosomally located at a transcriptionally insulated site, and repressors are tagged with ssrA degradation tags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23, C83, and C88 describe the experimental system design. These are straightforward descriptions of the constructed system with appropriate citations for established components (T1 terminator, ssrA tag, promoter variants), and the system design is clearly illustrated in Figure 1A-B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "In four out of six strains with different TU orders (LCT, LTC, TCL, TLC), IPTG induction shifted yfp expression to the OFF state, and these population-level findings were confirmed at the single-cell level by flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 are supported by experimental data in Figure 2A showing both population-level fluorescence measurements and flow cytometry histograms. This provides evidence for the robustness of the phenotypic observations across different measurement scales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Of 48 possible TU permutations, 37 were successfully cloned, with 11 failing despite multiple attempts. Eight failed in both orientations, and cloning difficulties were greater for networks where TUs were not oriented in one direction, possibly due to highly homologous sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 describe experimental challenges and outcomes. The quantitative summary of cloning success (37/48) and the categorization of network pairs by phenotype consistency (Figure 1\u2014figure supplements 2-3) are clearly documented, providing transparency about experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background and motivation: Gene expression is influenced by multiple mechanisms, predicting GRN phenotypes remains challenging, and while local genetic context is known to affect expression, GRN phenotypes are often assumed to depend solely on network topology and promoter sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C16 establish the scientific context and motivation for the study. These are appropriately supported by citations to relevant literature and represent accurate characterizations of the field's current understanding and challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Local genetic context can change through genomic rearrangements (deletions, duplications, insertions, inversions, translocations) mediated by mobile genetic elements, occurring at rates (10\u207b\u00b3 to 10\u207b\u2078 per cell per generation) typically orders of magnitude higher than point mutations. Such rearrangements have been found to significantly change expression patterns in multiple bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are well-supported by citations to relevant literature documenting genomic rearrangement rates and their effects on gene expression. These claims appropriately contextualize the experimental findings within broader evolutionary and genomic perspectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Transcriptional read-through is widespread, can be condition-dependent, and terminators vary widely in efficiency. Changes in terminator strength can occur through single point mutations. Despite using a strong terminator (T1) designed to prevent read-through, the synthetic GRN accessed multiple phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by citations to relevant literature and by the experimental observation (C70) that even with the strong T1 terminator, phenotypic variation was observed. This appropriately contextualizes the findings and acknowledges both the prevalence and functional significance of transcriptional read-through.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Most studies on chromosomal position effects explicitly avoid transcriptional read-through by using strong terminators, but given that endogenous terminators vary widely in efficiency, transcriptional read-through from neighboring genes is an inherent component of chromosomal position effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 are supported by citations documenting how position effect studies typically use strong terminators, and the argument that read-through is an inherent component of position effects logically follows from the experimental findings and knowledge about terminator efficiency variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Transcriptional read-through is rarely included in GRN modeling, but its effect can be readily added to any modeling framework, as demonstrated by the mathematical model developed in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C76 are supported by the successful development and application of a mathematical model incorporating transcriptional read-through (Figure 1\u2014figure supplement 1). The model's ability to predict 20/26 network phenotypes demonstrates the feasibility of incorporating this mechanism into modeling frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Transcriptional read-through may be one mechanism shaping bacterial genome evolution by enabling diverse expression profiles through TU shuffling. Physical proximity alone can increase co-expression without requiring changes in promoter sequences or transcription factor specificity, with implications for operon evolution and comparative genomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 represent speculative extensions of the experimental findings to evolutionary implications. While the experimental data support the mechanism of transcriptional read-through, the evolutionary significance and role in operon evolution remain hypothetical. Claim C81 provides some support through citations, but direct experimental evidence for these evolutionary implications is not provided in this study.",
+    "result_type": "MINOR"
+  }
+]

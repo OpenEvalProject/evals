@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors identified a previously unannotated lncRNA termed T-REX17 located approximately 230 kb upstream of SOX17 within the same topologically associating domain. This 22 kb transcribed region was identified through histone modification patterns (H3K4me3 and H3K36me3), RNA-seq data, and sequence conservation analysis, with modest conservation to mouse but presence detected in multiple vertebrate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 collectively demonstrate the discovery of T-REX17 through multiple converging lines of evidence including epigenetic marks (C25), RNA-seq (C26), sequence conservation (C27-C29), and genomic context (C24). The data shown in Figure 1A-B and supplementary figures provide strong support for this novel lncRNA identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors characterized the regulatory architecture of the T-REX17 locus, identifying distinct promoter and enhancer elements (eSOX17) with endoderm-specific activity. The enhancer eSOX17.2 showed strong activity in luciferase assays, and its deletion resulted in delayed SOX17 activation and reduced CXCR4 expression. 4C-seq demonstrated physical interaction between the SOX17 promoter and the distal enhancer eSOX17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are well-supported by multiple experimental approaches including ChIP-seq, ATAC-seq, ChromHMM analysis (C30-C31), luciferase assays (C32-C33), CRISPR deletion experiments (C34), and 4C-seq (C35). The data in Figures 1B-E and supplementary figures provide converging evidence for the regulatory architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C49"
+    ],
+    "result": "T-REX17 exhibits highly restricted, transient expression specifically in early definitive endoderm. Expression follows SOX17 kinetics with approximately 24-hour delay, is absent during mesoderm and ectoderm formation, and is uncoupled from the broader SOX17 expression pattern in other endoderm-derived tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C49 are strongly supported by time-resolved qRT-PCR (C37, Figure 2A), RNA-seq across multiple tissues (C38-C39, Figure 2B and supplements), and scRNA-seq from human gastrulating embryos (C40). The tissue specificity is remarkably well-documented across multiple datasets and experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C50"
+    ],
+    "result": "T-REX17 is a nuclear-localized lncRNA that forms multiple distinct foci within the nuclear compartment (median 40 foci/cell). Nuclear localization and chromatin association were confirmed by smRNA-FISH and cell fractionation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C50 are supported by smRNA-FISH showing nuclear foci (Figure 2C-D) and cell fractionation experiments (Figure 2\u2014figure supplement 1F). The multiple nuclear foci pattern is characteristic of trans-acting lncRNAs and is well-documented with quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "T-REX17 has minimal coding potential with 37 of 40 predicted ORFs unlikely to produce functional proteins according to PhyloCSF analysis. The transcript exhibits 'sloppy splicing' with 76.7% of reads inconsistently spliced and only 23.3% representing two prevalent isoforms, as determined by Nanopore sequencing and RACE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are well-supported by PhyloCSF computational analysis (C43-C45, Figure 2E), long-read Nanopore sequencing (C46-C47, Figure 2F), and RACE experiments (C48). The sloppy splicing pattern is appropriately contextualized with citations to similar observations in other lncRNAs, strengthening the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C64"
+    ],
+    "result": "Loss of T-REX17 through dCas9-KRAB-MeCP2 silencing does not affect SOX17 expression or genome-wide localization. Despite strong T-REX17 repression and H3K9me3 enrichment at the promoter, SOX17 transcriptional activation, expression levels, and ChIP-seq occupancy patterns remain largely unchanged, with only marginal effects on enhancer-promoter interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 and C64 are supported by multiple orthogonal approaches including qRT-PCR (C51, Figure 3B), smRNA-FISH (C51, Figure 3C), H3K9me3 ChIP-qPCR (C52), Capture Hi-C (C53-C54, Figure 3D), RNA-seq (C55-C56), and SOX17 ChIP-seq (C57, Figure 3F). The conclusion that T-REX17 does not regulate SOX17 is robustly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "T-REX17 induction is dependent on SOX17. SOX17 ChIP-seq shows enrichment at the T-REX17 promoter, consistent with the delayed timing of T-REX17 expression. Homozygous SOX17 knockout cells fail to activate T-REX17 or induce GATA4 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C63 are supported by SOX17 ChIP-seq data (C58, Figures 3D, G) and SOX17 knockout experiments (C59-C60, Figure 3\u2014figure supplement 1J). The temporal relationship and ChIP-seq enrichment provide strong evidence for SOX17-dependent T-REX17 activation, establishing a regulatory hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C94"
+    ],
+    "result": "Using an orthogonal early termination approach (T-REX17p(A)/p(A)), the authors demonstrate that the T-REX17 transcript itself, rather than the act of transcription, is dispensable for SOX17 regulation. The mRuby cassette is actively transcribed while T-REX17 expression is abolished, yet SOX17 levels remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C94 are supported by qRT-PCR data from the early termination cell line (Figure 3\u2014figure supplement 1N). This orthogonal approach strengthens the conclusion that T-REX17 does not regulate SOX17 in cis, distinguishing between transcriptional activity and transcript function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C70"
+    ],
+    "result": "T-REX17 interacts with HNRNPU and other hnRNP family members. RNA-pulldown followed by mass spectrometry identified these proteins, and HNRNPU RIP-qPCR confirmed T-REX17 enrichment to levels comparable to known HNRNPU interactors XIST and NEAT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C70 are supported by mass spectrometry data (Figure 3\u2014figure supplement 2A-C) and validated by RIP-qPCR (Figure 3\u2014figure supplement 2D-F). The comparison to known HNRNPU-interacting lncRNAs provides appropriate context, though the functional significance of this interaction requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "T-REX17-depleted cells show a substantial reduction in CXCR4+ cell population during endoderm differentiation, while SOX17 protein levels remain unaffected. This phenotype is recapitulated in T-REX17p(A)/p(A) cells and is specific to endoderm, with no effect on mesoderm or ectoderm differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by FACS analysis (Figure 4A, Figure 4\u2014figure supplement 1A-B) and immunofluorescence (Figure 4A). The consistency between two independent loss-of-function approaches (CRISPRi and early termination) and the lineage specificity strengthen the conclusion that T-REX17 is specifically required for endoderm differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Time-resolved RNA-seq reveals progressive transcriptional divergence in T-REX17-depleted cells, with marginal variance by day 3 but substantial differences by day 5. Differential expression analysis identified 584 downregulated and 590 upregulated genes, including upregulation of pluripotency genes (POU5F1, NANOG) and downregulation of endoderm/WNT-related genes (EOMES, GATA3, CXCR4, FZD5/7/8, DKK1, NOTUM, ROR1, CXXC4, SFRP5). qPCR confirmed lack of key endoderm marker activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are well-supported by RNA-seq with appropriate statistical analysis (Figure 4B, Figure 4\u2014figure supplement 1D-E) and validated by time-resolved qPCR (Figure 4\u2014figure supplement 1F-H). The transcriptional signature is consistent across both CRISPRi and early termination approaches, indicating a robust phenotype. The sample size (n=3 replicates) and statistical thresholds (Log2FC \u22651, p<0.05) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "T-REX17-depleted cells show enrichment of JUN (AP-1) pathway target genes and increased pJNK levels, indicating JNK pathway hyperactivity. Pharmacological inhibition of JNK from day 3 partially rescued the endoderm specification defect, suggesting JNK hyperactivity contributes to the differentiation failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by RNA-seq showing enrichment of JUN target genes (Figure 4B), Western blot demonstrating increased pJNK (Figure 4C, Figure 4\u2014figure supplement 2A), and JNK inhibitor rescue experiments (Figure 4\u2014figure supplement 2B-C). The partial rescue provides functional validation, though the mechanism linking T-REX17 loss to JNK hyperactivity remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "T-REX17-depleted endoderm cells retain an epithelial signature with altered expression of ECAD, NCAD, and VIM. VIM signal distribution is altered, indicating a potential cellular polarization defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by immunofluorescence staining and quantification (Figure 4D-E, Figure 4\u2014figure supplement 2D-E). The quantitative analysis of VIM signal distribution provides objective evidence for the polarization defect. However, the functional significance of this phenotype and its relationship to the differentiation defect could be more clearly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C103",
+      "C104"
+    ],
+    "result": "T-REX17 is essential for definitive endoderm specification, and its loss limits downstream differentiation potential. T-REX17-depleted cells show notably reduced PDX1+ pancreatic progenitor populations after 9 days of directed differentiation, with substantial gene expression differences including downregulation of pancreatic progenitor marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C103-C104 are supported by immunofluorescence quantification showing reduced PDX1+ cells (Figure 4F-G, Figure 4\u2014figure supplement 2F) and RNA-seq demonstrating downregulation of pancreatic markers (Figure 4H, Figure 4\u2014figure supplement 2G). The large sample size for IF quantification (sgCtrl n=17,657, sgT-REX17 n=5,279 cells) provides robust statistical power. This demonstrates that the early endoderm defect has lasting consequences for lineage commitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "T-REX17 appears distinct from other endodermal lncRNAs as it does not regulate the adjacent SOX17 gene. The authors speculate that T-REX17 may regulate distant loci, as evidenced by multiple nuclear foci, contrasting with typical cis-acting lncRNAs that show accumulation at nascent transcription sites. The interaction with HNRNP complex may link T-REX17 to various nuclear functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C97 mix supported observations (C93-C94, C96) with speculation (C95, C97). While the lack of SOX17 regulation is well-demonstrated and the multiple nuclear foci are observed, the proposed trans-acting mechanism and functional significance of HNRNPU interaction remain speculative. The authors appropriately acknowledge this uncertainty, but definitive evidence for the regulatory targets and mechanism is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction provides comprehensive background on lncRNAs, including their prevalence in the human genome (~28,000 identified, <1% functionally characterized), classification, mechanisms of gene regulation, roles in development, and specific examples of endoderm-related lncRNAs. This contextualizes the discovery of T-REX17 within the broader field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 are all supported by appropriate citations to published literature. These background claims establish the scientific context and are not novel findings of this study. The citations appear appropriate and the claims accurately represent established knowledge in the field, though verification of each cited claim would require examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C91",
+      "C92",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The discussion contextualizes T-REX17 within existing knowledge about lncRNA mechanisms, HNRNPU functions, and SOX gene regulation. The authors note that most lncRNAs act locally in cis, that developmental transcription factors are often regulated by lncRNAs in the same topological domain, and that other SOX loci contain lncRNAs that regulate the associated SOX gene in cis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C91-C92, C98-C101 are supported by appropriate citations to published literature. These discussion points accurately represent prior work and provide appropriate context for interpreting the T-REX17 findings. The comparison to other SOX-associated lncRNAs (C101) effectively highlights what makes T-REX17 distinct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors propose that T-REX17's transient, stage-specific expression pattern makes it an intriguing regulator compared to endodermal transcription factors that are expressed longer and more broadly. They suggest that lncRNAs near paralogous genes may evolve distinct regulatory mechanisms, and that the tightly controlled gene regulatory network governing rapid endoderm development could involve lncRNAs like T-REX17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102, C105-C108 represent interpretations and speculation based on the findings. While C105-C107 are supported by data and citations, C102 and C108 are speculative inferences. The proposal that T-REX17 participates in the endoderm GRN is reasonable given the data, but remains a hypothesis requiring further mechanistic investigation. The evolutionary speculation (C102) is interesting but not directly tested.",
+    "result_type": "MINOR"
+  }
+]

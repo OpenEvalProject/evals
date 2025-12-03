@@ -1,0 +1,1243 @@
+{
+  "submission": {
+    "id": "92d12c97-6bb5-4c5d-8ed8-43033a343b55",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:11:36.769048Z",
+    "updated_at": "2025-12-03T17:11:36.769048Z"
+  },
+  "content": [
+    {
+      "id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "submission_id": "92d12c97-6bb5-4c5d-8ed8-43033a343b55",
+      "content_type": "manuscript",
+      "content_text": "# Patterns of interdivision time correlations reveal hidden cell cycle factors\n\n## Authors\n\n- Fern A Hughes<sup>1</sup> ([ORCID: 0000-0002-4599-5027](https://orcid.org/0000-0002-4599-5027))\n- Alexis R Barr<sup>2</sup> ([ORCID: 0000-0002-6684-8114](https://orcid.org/0000-0002-6684-8114)) \u2020\n- Philipp Thomas<sup>1</sup> ([ORCID: 0000-0003-4919-8452](https://orcid.org/0000-0003-4919-8452)) \u2020\n\n### Affiliations\n\n1. Department of Mathematics, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n2. MRC London Institute of Medical Sciences London United Kingdom ([ROR:05p1n6x86](https://ror.org/05p1n6x86))\n3. Institute of Clinical Sciences, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe time taken for cells to complete a round of cell division is a stochastic process controlled, in part, by intracellular factors. These factors can be inherited across cellular generations which gives rise to, often non-intuitive, correlation patterns in cell cycle timing between cells of different family relationships on lineage trees. Here, we formulate a framework of hidden inherited factors affecting the cell cycle that unifies known cell cycle control models and reveals three distinct interdivision time correlation patterns: aperiodic, alternator, and oscillator. We use Bayesian inference with single-cell datasets of cell division in bacteria, mammalian and cancer cells, to identify the inheritance motifs that underlie these datasets. From our inference, we find that interdivision time correlation patterns do not identify a single cell cycle model but generally admit a broad posterior distribution of possible mechanisms. Despite this unidentifiability, we observe that the inferred patterns reveal interpretable inheritance dynamics and hidden rhythmicity of cell cycle factors. This reveals that cell cycle factors are commonly driven by circadian rhythms, but their period may differ in cancer. Our quantitative analysis thus reveals that correlation patterns are an emergent phenomenon that impact cell proliferation and these patterns may be altered in disease.\n\n## Introduction\n\nCell proliferation, the process of repeated rounds of DNA replication and cell division, is driven by multiple cell extrinsic and intrinsic factors (Matson and Cook, 2017; Darzynkiewicz et al., 1982). Stochasticity in any or all of these factors therefore influences the time taken for a cell to divide, generating heterogeneity in cell cycle length, even in genetically identical populations. For example, stochastic gene expression (Elowitz et al., 2002) can lead to heterogeneity in cell cycle length (Kiviet et al., 2014; Ghusinga et al., 2016; Thomas et al., 2018) as these fluctuations can be propagated by concerted cellular cues (Co et al., 2017). These cues can exhibit reproducible stochastic patterns that are important in development, homeostasis and ultimately, for cell survival (Raser and O\u2019Shea, 2005).\n\nSingle-cell technologies illuminate a world of cellular variation by replacing bulk-average information with single-cell distributions. A key challenge is to exploit cell-to-cell variability to identify the mechanisms of cellular regulation and responses (Raser and O\u2019Shea, 2005; Martins and Locke, 2015). Time-lapse microscopy allows us to resolve cell dynamics such as division timing, growth and protein expression (Locke and Elowitz, 2009, Figure 1a, left). This has led to many discoveries in cell cycle dynamics in bacteria (Taheri-Araghi et al., 2015; Martins et al., 2016; Martins et al., 2018; Kohram et al., 2021) and mammalian cells (Barr et al., 2017; Arora et al., 2017; Ryl et al., 2017; Chakrabarti and Michor, 2020). Early advances included measuring the distribution of division times across single cells (Powell, 1956) and the correlations between cellular variables leading to cell size homeostasis (Taheri-Araghi et al., 2015), while more recent applications of time-lapse microscopy have captured multiple generations of proliferating cells, making lineage tracing possible (Errington et al., 2013; Cooper and Bakal, 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80927/elife-80927-fig1-v2.jpg)\n\n**Figure 1.:** (a) Time lapse observations. Cartoon demonstrating how time-lapse microscopy allows single cells to be tracked temporally as they go through the cell cycle to division. Multiple different factors affect the rate at which cells progress through the cell cycle from birth to subsequent division. Interdivision time data. Example lineage tree structure with possible \u2018family relations\u2019 of a cell between which correlations in interdivision time can be calculated. (b) Lineage correlation pattern. Plot of mother-daughter interdivision time correlation against cousin-cousin interdivision time correlation for the six publicly available datasets used in this work (Appendix 1\u2014table 1, Martins et al., 2018; Priestman et al., 2017; Chakrabarti et al., 2018; Kuchen et al., 2020; Mura et al., 2019). The shaded red area indicates the region where the cousin-mother inequality is satisfied. (c) Identifying hidden cell cycle factors. Schematic showing the model motivation and process. We produce a generative model that describes the inheritance of multiple hidden \u2018cell cycle factors\u2019 that affect the interdivision time. The model is fitted to lineage tree data of interdivision time, and we analyse the model output to reveal the possible biological factors that affect the interdivision time correlation patterns of cells.\n\nWhile single-cell distributions measure variation between cellular variables, they ignore both temporal signals and variations propagating across generations to entire lineage trees (Ulicna et al., 2021; Kuchen et al., 2020; Sandler et al., 2015; Cowan and Staudte, 1986). These lineage tree correlation patterns can be robust and steady, similar to what is known in spatio-temporal pattern formation (Turing, 1990; Chaplain et al., 1999). Common examples of lineage tree correlation patterns concern the mother-daughter and the sister correlations that have been used to study cell size homeostasis in E. coli (Taheri-Araghi et al., 2015; Ho et al., 2018) and other mechanisms generating correlated interdivision times such as population growth rate (Powell, 1956) and initiation of DNA synthesis (Cooper, 1982).\n\nA counter-intuitive correlation pattern presented by many cell types is the \u2018cousin-mother inequality\u2019 (Sandler et al., 2015), where the interdivision times of cousin cells are more correlated than those of mother-daughter pairs. This inequality can be observed both in bacteria and mammalian cells (Figure 1b). More generally, lineage tree data gives rise to correlation patterns by comparing a single cell to any other cell on the tree (Figure 1a, right). Family relations \u2013 such as daughter, grandmother, cousin cells etc. \u2013 encode inheritance patterns, and correlations between these related cells have been used to understand the dynamics of cell populations (Mohammadi et al., 2021; Nakashima et al., 2020, Figure 1c). Several stochastic models have been proposed to explain interdivision time correlation patterns. Most of them make prior assumptions on the underlying mechanism controlling cell division such as those focusing on cell size control (Ho et al., 2018), DNA replication (Cooper and Helmstetter, 1968; Cooper, 1982) or underlying oscillators (Kohram et al., 2021). For example, inheritance of DNA content can explain the correlation in interdivision time between sister cells in bacteria (Cooper, 1982). Similarly, it has been shown that a simple model with interdivision time correlations (Cowan and Staudte, 1986) cannot satisfy the \u2018cousin-mother inequality\u2019 (Sandler et al., 2015), but a more complex kicked cell cycle model does (Mosheiff et al., 2018). It is presently unclear what information correlation patterns carry about the underlying mechanisms that generate them. This is because a unified and systematic framework to generate any desired interdivision time correlation pattern is lacking.\n\nHere, we propose a stochastic model to investigate how cell cycle factors \u2013 which we define in this work as hidden properties that affect interdivision time \u2013 shape the lineage tree correlation patterns of cells. These could include physiological factors, such as cell size, growth rate and cell cycle checkpoints, or specific cell cycle drivers such as CDKs, mitogens and division proteins. We will only focus on data describing patterns of interdivision time in bacterial and mammalian cell types, which circumvents intricate measurements of cell volume, mass, and DNA replication. This also avoids dealing with fluorescent reporter strains that may be difficult to engineer depending on cell type. We propose a generative model of correlation patterns that involves a number of hidden cell cycle factors and reduces to common mechanistic cell cycle models for specific parameter choices. Our theory predicts three distinct lineage correlation patterns; aperiodic, alternator and oscillator. We demonstrate how the model can be used to identify these patterns using Bayesian inference in bacteria and mammalian cells. Our analysis reveals several dynamical signatures of cell cycle factors hidden in lineage tree interdivision time data.\n\n## Results\n\n### A general inheritance matrix model provides a unified framework for lineage tree correlation patterns\n\nPrevious studies (Cowan and Staudte, 1986; Sandler et al., 2015) found that simple inheritance rules, where interdivision times are correlated from one generation to another through a single parameter, cannot explain the lineage correlation patterns seen in experimental single-cell data. To address this issue, we propose a unified framework where the interdivision time is determined by a number of cell cycle factors that represent hidden variables such as cell cycle phase lengths, protein levels, cell growth rate or other unknowns (Figure 1c), that each have their own inheritance pattern.\n\nThe states of the cell cycle factors is assumed to be a vector $y_{p}=(y_{p,1},y_{p,1},\u2026,y_{p,N})^{\u22a4}$ that determine the interdivision time of a cell with index $p$ via\n\n$$\n\\tau_{p}=f(y_{p}).\n$$\n\nInheritance from mother to daughter of the $N$ cell cycle factors is described by a nonlinear stochastic Markov model on a lineage tree:\n\n$$\ny_{2m}=g(y_{m})+e_{2m},y_{2m+1}=g(y_{m})+e_{2m+1},\n$$\n\nwhere $m\u2062in\u2062\u2115$ denotes the mother cell index and $2\u2062m$ and $2\u2062m+1$ the daughter cell indices. $f:\u211d_{+}^{N}\u2192\u211d_{+}$ and $g:\u211d_{+}^{N}\u2192\u211d_{+}^{N}$ are possibly nonlinear functions that model the dependence of the interdivision time on cell cycle factors and the inheritance process. $e_{p}=(e_{p,1},e_{p,2},\u2026,e_{p,N})^{\u22a4}$ is a noise vector for which the pair $e_{2\u2062m},e_{2\u2062m+1}$ are identically distributed random vectors with covariance matrix independent of $m$. A non-zero covariance between these noise vectors can account for correlated noise of sister cells. We implicitly assume symmetric cell division such that the deterministic part of the inheritance dynamics $g$ is identical between the daughter cells. Note that we choose Equation 1a to be deterministic since division noise can be modelled by adding one more cell cycle factor that does not affect inheritance dynamics $g$.\n\nThe general model (Equation 1a and b) includes many known cell cycle models as a special case. For example, the interactions between cell cycle factors could model cell size control mechanisms (Appendix 1 - Section A6.1), the coordination of cell cycle phases (Appendix 1 - Section A6.3), or deterministic cues, such as periodic forcing of the cell cycle (Appendix 1 - Section A7.1), or coupling of the circadian clock to cell size control (Appendix 1 - Section A7.2).\n\nThe full model can only be solved for specific choices of $f$ and $g$, and these functions are generally unknown in inference problems. To overcome this limitation, we assume small fluctuations resulting in an approximate linear stochastic system (see Appendix 1 - Section A1 for a derivation) involving the interdivision time\n\n$$\n\\tau_{p}=\\tau\u00af+\\alpha^{\u22a4}x_{p}.\n$$\n\nThe vector of cell cycle factor fluctuations $x_{p}=(x_{p,1},x_{p,2},\u22ef,x_{p,N})^{\u22a4}$ obeys\n\n$$\nx_{2m}=\\thetax_{m}+z_{2m},x_{2m+1}=\\thetax_{m}+z_{2m+1}.\n$$\n\nHere, $\\tau\u00af$ is the stationary mean interdivision time, $\\theta$ is the $N\\timesN$inheritance matrix and $z_{2\u2062m}$ and $z_{2\u2062m+1}$ are two noise vectors of length $N$ that capture the stochasticity of inheritance dynamics and differentiate the sister cells (Figure 2a). We denote the $N\\timesN$ covariance matrices $S_{1}=Var\u2062(z_{2\u2062m})=Var\u2062(z_{2\u2062m+1})$ and $S_{2}=Cov\u2062(z_{2\u2062m},z_{2\u2062m+1}),for all\u2062m\u2062in\u2062\u2115$ of the noise terms $z$ (and $e$) in individual cells and between sister cells, respectively. The noise terms are independent for all other family relations. The cell cycle factor fluctuations are scaled such that $\\alpha=(\\alpha_{1},\\alpha_{2},\u2026,\\alpha_{N})^{\u22a4}$ is a binary vector of length $N$ made up of 1 s and 0 s depending on whether the function $f$ determining the interdivision time has dependence on a given cell cycle factor (see Appendix 1 - Section A1 for details). Under this scaling each cell cycle factor has a positive effect on the interdivision time, and hence we do not distinguish between factors with positive or negative effects on interdivision time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80927/elife-80927-fig2-v2.jpg)\n\n**Figure 2.:** (a) Diagram illustrating the inheritance matrix model with two cell cycle factors which affect the interdivision time of a cell. Each factor in the mother exerts an influence on a factor in the daughter through the inheritance matrix $\\theta$. (b,c) Schematics showing how the coordinate $(k,l)$ introduced in \u2018The inheritance matrix model reveals three distinct interdivision time correlation patterns\u2019 is determined. This coordinate describes the distance to the most recent common ancestor for chosen pair of cells. Examples shown are (b) sister pairs with $(k,l)=(1,1)$, and (c), aunt-niece pairs with $(k,l)=(2,1)$. (d-o) Panels demonstrating the three correlation patterns that arise from the inheritance matrix model with two cell cycle factors. (d-f) Example inheritance matrices $\\theta$ that produce the desired patterns: (d) aperiodic, (e) alternator and (f) oscillator correlation patterns. (g\u2013i) Three-dimensional plot of the generalised tree correlation function (Equation M3) demonstrating each of the three patterns. On each plot we highlight the lineage generation correlation function ($k=0$ or $l=0$) (red line) and the cross-branch generation correlation function ($k=l$) (blue line). The shading of the 3D plot indicates the correlation coefficient at that point on the surface. (j\u2013l) The lineage and cross-branch generation correlation functions plotted individually, showing the different dynamics for each pattern. (m\u2013o) Region plots showing parameter values where the relevant pattern is obtained (orange) and where the cousin-mother inequality is satisfied (blue) for the $\\theta$ matrices given in panels (d-f). White bands on (o) indicate where $P=\\frac{2}{k}$ which results in real eigenvalues and therefore does not produce an oscillator pattern. Within the parameter region that both produces the desired pattern and also satisfied the cousin-mother inequality, we choose a parameter set (red cross) which is used for the corresponding plots in the panels above. In all panels we fix $\\alpha=(1,1)^{T}$ and the noise vector $z$ to have covariance equal to the identity matrix.\n\nWhen the special case of a single cell cycle factor ($N=1$) is considered, the inheritance matrix model system reduces to a well-known model with correlated division times (Cowan and Staudte, 1986; Staudte et al., 1984; Staudte, 1992; Staudte et al., 1997), and we will refer to this case as simple inheritance rules (see also Appendix 1 - Section A5). In the following, we will explore the correlation patterns generated by multiple cell cycle factors.\n\n### The inheritance matrix model reveals three distinct interdivision time correlation patterns\n\nHere, we define a correlation pattern to be the correlation coefficients of pairs of cells on a lineage tree. Here we introduce a function $\u03c1\u2062(k,l)$ which we call the generalised tree correlation function:\n\n$$\n\u03c1(k,l)=\\frac{Cov(\\tau_{k},\\tau_{l})}{s_{\\tau}},\n$$\n\nwhere $\\tau_{k}$ and $\\tau_{l}$ are the interdivision times of cells in the pair $(k,l)$, and $s_{\\tau}$ is the interdivision time variance. The coordinate $(k,l)$ describes the distance in generations from each cell in the pair to their shared nearest common ancestor (Figure 2b and c). We have derived a closed-form formula for $\u03c1\u2062(k,l)$ (Equation M3) in Materials and Methods - \u2018Analytical solution of the inheritance matrix model\u2019; (see Appendix 1 - Section A3 for a full derivation) as a weighted sum of powers of the inheritance matrix eigenvalues $\\lambda$:\n\n$$\n\u03c1(k,l)=\\sumi,j=1Nw_{ij}\\lambda_{i}^{k}\\lambda_{j}^{l},\n$$\n\nwith\n\n$$\nw_{ij}=\\frac{\\alpha^_{i}\\alpha^_{j}}{\\alpha^^{\u22a4}\u03a3^\\alpha^}(\\frac{(S^_{1})_{ij}}{1\u2212\\lambda_{i}\\lambda_{j}}+\\delta_{k\\geq1}\\delta_{l\\geq1}\\frac{(S^_{2})_{ij}}{\\lambda_{i}\\lambda_{j}}).\n$$\n\nWe observe that the eigenvalues determine the dependence of the tree correlation function on $k$ and $l$, while the noise matrices $S_{1}$ and $S_{2}$ determine their relative weights $w_{i\u2062j}$ (see Equation 5).\n\nOur theoretical analysis reveals three distinct correlation patterns that can be generated by the inheritance matrix model (further details in Materials and methods - \u2018Analysis of tree correlation patterns\u2019). These can be classified by the eigenvalues of the inheritance matrix $\\theta$: (i) if the inheritance matrix exhibits real positive eigenvalues, we observe an aperiodic pattern (Figure 2d); (ii) if the inheritance matrix has real eigenvalues with at least one negative eigenvalue, we observe an alternator pattern (Figure 2e); and (iii) if there is a pair of complex eigenvalues we observe an oscillator pattern (Figure 2f). An intuitive interpretation of the eigenvalue decomposition is that it transforms the cell cycle factors into effective factors inherited independently. Hence, the inheritance matrix is diagonal in this basis. However, the analogy is limited to the case where the inheritance matrix is symmetric and the eigenvalues are real. For simplicity, we will focus on models with two cell cycle factors and note that in higher dimensions ($N\\geq3$), the correlation patterns involve a mixture of the three patterns discussed in detail in this section (Appendix 1\u2014figure 6c, d and g,h).\n\nTo demonstrate the aperiodic correlation pattern, we utilise an inheritance matrix with positive real eigenvalues (Figure 2d). Characteristically, the modelled interdivision time correlations decay to zero as the distance to the most recent ancestor increases (Figure 2g) since the eigenvalues in Equation 4 are bounded between 0 and 1. To look more closely at the patterns on the tree, we utilise two reductions of the generalised tree correlation function. These are the lineage correlation function ($\u03c1\u2062(k,l)$ for $k$ or $l=0$) and the cross-branch correlation function ($\u03c1\u2062(k,l)$ for $k=l$). We look at these functions for continuous $k,l$ to visualise better the patterns that occur down the lineage and across the branches of the tree. The lineage correlation function gives the correlation dynamics as you go down the lineage tree, whereas the cross-branch correlation function gives the correlation dynamics as you move across neighbouring branches of the lineage tree. We observe that the interdivision time correlations decrease as we move both across generations and branches (Figure 2j).\n\nIn contrast, the alternator pattern generates oscillations with a fixed period of two generations in the lineage correlation function. The behaviour is typically observed for cell cycle factors with negative mother-daughter correlations (Appendix 1 - Section A6.1). In this case, we have at least one negative eigenvalue and thus Equation 4 will alternate between positive and negative values for successive generations, producing the period two oscillation. We demonstrate this correlation pattern for the generalised tree correlation function (Figure 2h) using a diagonal $\\theta$ matrix (Figure 2e). We observe alternating correlations across generations in the lineage correlation function, and the continuous interpolation of the cross-branch correlation function (Figure 2k). Although the period is fixed to two generations, the amplitude of the correlation oscillation varies with the absolute magnitude of the eigenvalues (Materials and methods - \u2018Analysis of tree correlation patterns\u2019).\n\nTo investigate the oscillator correlation pattern, we propose a hypothetical inheritance matrix $\\theta$ with eigenvalues $\\lambda=(D\u2062e^{+i\u2062\\frac{2\u2062\\pi}{P}},D\u2062e^{-i\u2062\\frac{2\u2062\\pi}{P}})$ which are complex for $D,P\\neq0$ and $P\\neq\\frac{2}{k},k\u2062in\u2062\u2124$ (Figure 2f). The parameters $P$ and $D$ control the period and the respective damping of an underlying oscillator, i.e., the limit $D\u21921$ leads to an undamped oscillation and $D\u21920$ corresponds to an overdamped oscillation (see Materials and methods - \u2018Determining the period of correlation oscillations from the eigenvalues\u2019 for details). Correspondingly, the graph of the generalised tree correlation function (Figure 2i) shows clear oscillations across generations. These correlation oscillations are also evident in the lineage correlation function but are absent in the cross-branch correlation function (Figure 2l). However, oscillations are possible in the cross branch correlation function for other choices of $\\theta$ with complex eigenvalues (see model fits in Figure 3 and Methods - \u2018Analysis of tree correlation patterns\u2018). In summary, the qualitative behaviour of the interdivision time correlation patterns can be studied using the eigenvalue decomposition of the inheritance matrix $\\theta$.\n\n### The cousin-mother inequality is not required to generate complex correlation patterns\n\nOur analysis shows that of the three specified patterns, only the oscillator pattern cannot arise from simple inheritance rules. This is because it requires at least two inherited cell cycle factors ($N\\geq2$) for the inheritance matrix to possess complex eigenvalues. We therefore asked whether the oscillator pattern is necessary for the cousin-mother inequality to be satisfied. We find that this is not the case, but instead, all three correlation patterns can be compatible with the cousin-mother inequality if $N\\geq2$. To demonstrate this, we choose three specific two-dimensional inheritance matrices $\\theta$ that produce the required eigenvalue structure (Figure 2d\u2013f). We then use these matrices with our analytical solution for the generalised tree correlation function (Materials and methods - \u2018Analytical solution of the inheritance matrix model\u2019) to map the regions where the cousin-mother inequality can be satisfied (Figure 2m\u2013o). Interestingly, we find that oscillations can arise even in parameter regions that violate the cousin-mother inequality (Figure 2o). We conclude that both the cousin-mother inequality and the oscillator pattern are sufficient but not necessary conditions to rule out simple inheritance rules.\n\nTo understand which datasets can be explained by simple inheritance rules, we fit the one-dimensional model ($N=1$) to six publicly available lineage tree datasets (Appendix 1\u2014table 1) using Bayesian methods (Materials and methods - \u2018Data analysis and Bayesian inference of the inheritance matrix model\u2019). These datasets were chosen as they each had a sufficient number of cells for correlation analysis and covered a broad range of cell types. We found that the model fit is poor for the datasets that display the cousin-mother inequality, which is the case for cyanobacteria, clock-deleted cyanobacteria, neuroblastoma and human colorectal cancer cells (Appendix 1\u2014figure 1a\u2013f). Despite not obeying the cousin-mother inequality, the fit is also poor for mouse embryonic fibroblasts (Appendix 1\u2014figure 1f) as the median inferred correlation lies outside the 95% confidence intervals for both the grandmother and cousin correlations which are included in the model fit, and the confidence intervals for the data vs the credible intervals from the inference show minimal overlap (Appendix 1\u2014figure 2f). Another inequality may be violated in this dataset that cannot be explained using the one-dimensional model, suggesting that the absence of the cousin-mother inequality cannot rule out more complex division rules. The only cell type that has a good fit for the one-dimensional model is mycobacteria (Appendix 1\u2014figure 1c). We thus conclude that the majority of the datasets must be described by higher dimensional inheritance dynamics of multiple cell cycle factors.\n\n### The two-dimensional inheritance matrix model fits interdivision time correlation patterns from a range of cell types\n\nWe asked whether the correlation patterns are better described by a two-dimensional inheritance matrix model. Bayesian inference (Materials and methods - \u2018Data analysis and Bayesian inference of the inheritance matrix model\u2019) produced a good model fit for all six datasets (Figure 3a\u2013f) for the two-factor inheritance matrix model, within relatively narrow error bars of mother, grandmother, sister and cousin correlations (Appendix 1\u2014table 1). The credible intervals from the Bayesian inference matched the confidence intervals of correlations used for fitting (Appendix 1\u2014figure 2). We quantified the quality of our fits using the Akaike information criterion (AIC) (Materials and methods - \u2018Data analysis and Bayesian inference of the inheritance matrix model\u2019, (Equation M11)) for each dataset and compared these to the one-dimensional model (Appendix 1\u2014table 1). The AIC estimates the goodness of fit with a penalty for model complexity allowing us to select the simplest model that explains the data. The AIC values indicate that the inheritance matrix model with two cell cycle factors provides the simplest fit for all cell types used here, except for the mycobacteria data where simple inheritance rules provided an equally good fit with a significant reduction in the number of model parameters. We expected the AIC to select the two dimensional model where the cousin-mother inequality was satisfied such as in cyanobacteria, clock-deleted cyanobacteria, neuroblastoma, and human colorectal cancer cells. The match with the two-factor inheritance matrix model in fibroblasts was less obvious.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80927/elife-80927-fig3-v2.jpg)\n\n**Figure 3.:** Posterior correlation functions based on fitting to mother-daughter, grandmother-granddaughter, sister-sister and cousin-cousin correlations for three bacterial (left) and three mammalian (right) datasets: (a) cyanobacteria, (b) clock-deleted cyanobacteria, (c) mycobacteria, (d) human colorectal cancer, (e) neuroblastoma, and (f) mouse embryonic fibroblasts. Pearson correlation coefficients (white circles) and 95% bootstrapped confidence intervals (error bars) obtained through re-sampling with replacement of the original data (10,000 re-samples). Posterior distribution samples were clustered into aperiodic, alternator, and oscillator patterns (bar charts). We show multiple representative samples (solid and shaded lines) drawn from the posterior distribution Appendix 1\u2014figure 2 without clustering. Where correlations appear missing, this is in cases where the lineage trees in the data were not deep enough for the correlations to be calculated. Only lineage and cross branch generations 1 and 2 were used in model fitting. Here all panels assume $\\alpha=(1,1)^{\u22a4}$, but taking $\\alpha=(1,0)^{\u22a4}$ produces similar results (Appendix 1\u2014figure 4).\n\nCrucially, we find that the model has a good predictive capacity for correlations further down the lineage tree. For each pattern, we show several samples from the conditional posterior distribution (solid and shaded lines) to illustrate fits of the lineage correlation and cross-branch correlation function (Figure 3a\u2013f). For all datasets except neuroblastoma, the curves also intercept the great-grandmother and great-great-grandmother correlations that were not used for fitting (Figure 3a\u2013d and f), and bootstrapped confidence intervals from the data overlapped with the credible intervals obtained from Bayesian inference (Appendix 1\u2014figure 2). We then asked which correlation patterns underlie the data. To assess this, we calculated the eigenvalues of each posterior sample of the inheritance matrix to categorise the aperiodic, alternator and oscillator patterns (Figure 3a\u2013f, bar charts). We found that in every dataset, the dominant correlation pattern was identifiable with probabilities well above 50%, except for mycobacteria (Figure 3c) that was better described by simple inheritance rules (Appendix 1\u2014figure 1c).\n\nCyanobacteria, (Figure 3a), human colorectal cancer (Figure 3d), and mouse embryonic fibroblasts (Figure 3f) display a dominant oscillator pattern, but we see that their lineage correlation functions exhibit widely different periodicities. For example, the posterior lineage correlation for cyanobacteria displays a higher frequency oscillation than those in human colorectal cancer cells and fibroblasts. Clock-deleted cyanobacteria (Figure 3b) and mycobacteria (Figure 3c) display a dominant alternator pattern which could be induced by strong sister correlations. We see that clock-deleted cyanobacteria (Figure 3b) has a 100% alternator pattern in contrast to the 100% oscillator pattern seen for wild type cyanobacteria, suggesting that the deletion of the clock gene has completely transformed the correlation pattern and has abolished the underlying oscillation. Neuroblastoma (Figure 3e) displays a dominant aperiodic pattern. The predictive capacity for this cell type is weaker than for the other datasets, which we assume is due to the tight confidence interval in the correlations. Despite this discrepancy, we find that the inheritance matrix model produces excellent fits and has good predictive capacity for all other cell types studied in this work.\n\n### Bayesian inference reveals that individual inheritance parameters are not identifiable\n\nWe next ask which mechanisms are responsible for generating the observed correlation patterns. The Bayesian inference used for model fitting (Materials and methods - \u2018Data analysis and Bayesian inference of the inheritance matrix model\u2019) samples parameters using a MCMC Gibbs sampler. The Gibbs sampler can be thought of as a random walk in parameter space that settles around parameter regions with high likelihood. We found that the explorations of the Gibbs sampler did not settle in a particular parameter subspace but meandered off to explore vast areas of the parameter space without improving the likelihood values (Appendix 1\u2014figure 3a and b). Such behaviour is expected when model parameters are not identifiable and the posterior distribution of parameters cannot be efficiently sampled (Rannala, 2002; Raue et al., 2013).\n\nTo provide further evidence of unidentifiablity, we obtained four histograms of a single parameter of the inheritance matrix for different initialisations. The four distributions are very different (Figure 4a), showing that the random walk does not settle to a stationary distribution. We further observe that the mean squared displacement increases without bound (Figure 4b) showing that the sampling does not settle in a particular subset of the parameter space. In contrast to the individual parameters, the sampled posterior distribution of the eigenvalues is consistent across the averages (Figure 4c) and their mean squared displacement converges rapidly (Figure 4d). We note that unidentifiability arises for the inheritance matrix model with multiple cell cycle factors and does not feature for simple inheritance rules (Appendix 1 - Section A5). This ultimately demonstrates that the interdivision time correlation patterns do not identify a single set of inheritance parameters, but rather need to be described by a distribution of inheritance mechanisms.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80927/elife-80927-fig4-v2.jpg)\n\n**Figure 4.:** (a) Posterior distribution histograms for $\\theta_{11}$ depend on the realisations of a Gibbs sampler and do not settle to a stationary distribution. (b) A log-log plot of mean squared displacement for the four $\\theta$ variables that make up the inheritance matrix $\\theta$. The mean squared displacement for all four parameters increases linearly, meaning the sampling does not settle in any particular region of parameter space. (c) Sampled posterior distribution histograms for the eigenvalue $\\lambda_{1}$ for each realisation. The histograms are almost identical across the four averages, showing the distribution has converged. (d) Mean squared displacement for the eigenvalues of the inheritance matrix $\\theta$ settles to a finite value. Plots (a) - (d) utilise sampling from the inference for the clock-deleted cyanobacteria dataset. (e) Density histogram of the real eigenvalue pairs for clock-deleted cyanobacteria (pink) and neuroblastoma (brown) demonstrating where the eigenvalues lie in the aperiodic (yellow) and alternator (red) regions. (f) Density histogram of same-factor against alternate-factor mother-daughter correlation for clock-deleted cyanobacteria (pink) and neuroblastoma (brown). We take a minimum threshold of 0.3 for the probability density to remove irrelevant samples. (g\u2013h) Influence diagrams for same factor vs alternate factor correlations for (g) clock-deleted cyanobacteria and (h) neuroblastoma.\n\n### The inheritance matrix model predicts the hidden dynamical correlations of cell cycle factors\n\nClock-deleted cyanobacteria and neuroblastoma both satisfy the cousin-mother inequality (Figure 1b), which indicates that at least two cell cycle factors are responsible for the corresponding correlation patterns. The eigenvalues of the inheritance matrix concentrate in different regions of the admissible parameter space (Figure 4e), suggesting the correlation patterns that generate the cousin-mother inequality are distinct. For the clock-deleted cyanobacteria dataset, we found that all posterior samples were consistent with an alternator correlation pattern, while most posterior samples presented aperiodic correlation patterns in neuroblastoma (Figure 3b and e bar charts).\n\nWe hypothesised that different inheritance models generate these patterns. To verify this hypothesis and since we cannot identify the cell cycle factors directly, we computed the mother-daughter correlations between the two hidden cell cycle factors. Since the order of factors is interchangeable, we only distinguish between mother-daughter correlations between the same ($corr\u2062(x_{m,i},x_{2\u2062m,i})$ and $corr\u2062(x_{m,i},x_{2\u2062m+1,i})$ for $i=1,2$) and alternate factors ($corr\u2062(x_{m,i},x_{2\u2062m+1,j})$ and $corr\u2062(x_{m,i},x_{2\u2062m,j})$ for $i\\neqj=1,2$). The resulting posterior distributions revealed distinct correlation patterns of cell cycle factor correlations for clock-deleted cyanobacteria and neuroblastoma (Figure 4f). For clock-deleted cyanobacteria, we predict that at least one factor has a negative mother-daughter correlation while its cross-correlation with the other factor must be positive; while the correlations are of opposite sign for neuroblastoma (Figure 4f). We sketch influence diagrams that summarise these relationships between factors (Figure 4g and h). Thus, the different interdivision time correlation patterns observed for clock-deleted cyanobacteria and neuroblastoma stem from distinct hidden correlation patterns of cell cycle factor fluctuations.\n\n### The inheritance matrix model reveals biological rhythms underlying the cell cycle\n\nWe observe that the lineage correlation functions of cyanobacteria, human colorectal cancer cells, and fibroblasts exhibit vastly different correlation oscillation periods (Figure 3). Next, we are interested to see whether the oscillations seen in these datasets are compatible with biological oscillators known to affect cell cycle control.\n\n#### Correlation oscillations and underlying rhythms can exhibit vastly different periods\n\nThe period of the correlation oscillation is related to the location of the eigenvalues of the inheritance matrix on the complex plane. We consider an eigenvalue $\\lambda$ of the inheritance matrix. In terms of the mean interdivision time $\\tau\u00af$, the correlation period $T_{0}$ is:\n\n$$\nT_{0}=\\tau\u00af\\frac{2\\pi}{|Arg(\\lambda)|}\\geq2\\tau\u00af,\n$$\n\nand the inequality means that the period $T_{0}$ is always greater than twice the mean interdivision time $\\tau\u00af$. More generally, there is an oscillation period associated with each eigenmode of the inheritance matrix, but the period is infinite for real eigenvalues, and thus only complex eigenvalues generate correlation oscillations. This inequality follows from Equation 6 using $|Arg\u2062(\\lambda)|\\leq\\pi$. However, known biological oscillators that influence cell cycle control often have periods less than twice the mean interdivision time, such as stress response regulators (Harper et al., 2018; Stewart-Ornstein et al., 2017) and gene expression oscillations (William et al., 2007; Gao et al., 2014; Whitfield et al., 2002). How can relatively slow observed correlation oscillations be compatible with much faster biological oscillators underlying the cell cycle?\n\nThe resolution to this issue is that the period of the correlation oscillation does not always match the frequency of the underlying oscillator. Instead there are a number of possible oscillator periods $T_{n}$ compatible with the correlation oscillation period $T_{0}$ (Appendix 1 - Section A4) given by:\n\n$$\nT_{n}=\\frac{\\tau\u00afT_{0}}{|\\tau\u00af+nT_{0}|},\n$$\n\nfor $n\u2062in\u2062\u2124$. This phenomenon, that the same correlation oscillation can be explained by multiple underlying oscillators, can be understood using the intuition in Figure 5a.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80927/elife-80927-fig5-v2.jpg)\n\n**Figure 5.:** (a) Schematic showing how sampling a high frequency rhythm at each cell division could result in a lower frequency oscillator being constructed. (b) Possible oscillator periods (Equation 7) indexed by $n$ for a correlation oscillation period $T_{0}=3\u2062\\tau\u00af$. (c) Density plot of the complex eigenvalue output from the model sampling for cyanobacteria (purple) and mouse embryonic fibroblasts (orange). (d) Posterior distributions of the correlation oscillation period $T_{0}$ in cyanobacteria (purple) and mouse embryonic fibroblasts (orange). (e) Posterior distributions of the oscillator period $T_{-1}$ in cyanobacteria (purple) and mouse embryonic fibroblasts (orange). Arbitrary units in (d) and (e) are used to compare histograms, the density values are not normalised in relation to each other in order to display both histograms clearly on the same plot. (f) Density plot of complex eigenvalues for human colorectal cancer. (g) Posterior distributions of the correlation oscillation period in human colorectal cancer (shaded area) and oscillator clusters corresponding to positive (cluster A, orange) and negative real parts (cluster B, blue). The bar chart shows the posterior mass of the clusters. (h) Posterior distributions of the oscillator periods $T_{-1}$ corresponding to (g). (i) Model fit and 95% credible intervals for human colorectal cancer (cf. legend of Figure 3). Red area indicates the grandmother granddaughter correlation explored in (j). (j) Posterior distribution of oscillator vs alternator clusters give grandmother correlations with opposite signs. (k) Lineage and cross-branch correlation functions of oscillator clusters A (orange) and B (blue) in human colorectal cancer. Red area indicates the great-grandmother great-granddaughter correlation explored in (l). (l) Posterior distributions of oscillator clusters A (orange) and B (blue) have great-grandmother correlations of opposite signs.\n\n#### Circadian oscillations in cyanobacteria and fibroblasts support coupling of the circadian clock and the cell cycle\n\nCyanobacteria and fibroblasts both exhibit correlation patterns consistent with an oscillator underlying cell divisions (Figure 3e, bar chart). We observe that the posterior distribution of the eigenvalues is confined to a region with negative real parts for cyanobacteria and positive real parts for fibroblasts (Figure 5c). Using these distributions, we estimate the median period of the correlation oscillations (using Equation 6) to be 41.7 hr for cyanobacteria and 144.3 hr for fibroblasts (Figure 5d). We wondered whether the stark difference in the periods of the correlation oscillations indicates a different underlying rhythm. Conversely, we found this was not the case, but both correlation patterns were consistent with an approximate circadian rhythm. The posterior of the oscillator period $T_{-1}$, which is closest to the period of correlation oscillation $T_{0}$, suggests a median period of 24.6 hr for cyanobacteria and a median period of 23.8 hr for fibroblasts (Figure 5e). We also validated the inference result using simulated data (Appendix 1\u2014figure 9). This finding supports a strong coupling of circadian rhythms to the cell cycle, as reported previously for both cyanobacteria (Yang et al., 2010; Martins et al., 2018) and fibroblasts (Nagoshi et al., 2004; Menger et al., 2007; Nagoshi et al., 2005). Notably, we see that clock-deleted cyanobacteria displays 100% alternator pattern (Figure 3b) and therefore has a lineage tree correlation pattern that cannot be described by an approximate 24 hr oscillator, in contrast to wild type cyanobacteria.\n\n#### Bimodal posterior distribution of underlying oscillations in human colon cancer\n\nFinally, we turn to the analysis of cancer cell data. The dominant correlation pattern was oscillatory (78% posterior probability, Figure 3d, bar chart). The posterior distribution of complex eigenvalues for the oscillator pattern has support in a large region of the parameter space. It has two distribution modes depending on whether the eigenvalues have positive or negative real parts (Figure 5f). Similarly, the posterior of the correlation oscillation period is bimodal, too (Figure 5g), which means that two competing oscillator patterns are compatible with the data.\n\nTo disentangle these alternative hypotheses, we cluster the posterior samples by the real part of the eigenvalues. We label cluster A for negative real parts and cluster B for positive ones. The correlation periods of the individual clusters do not provide us with immediate clues about the underlying oscillators. Cluster A has a median correlation oscillation period of 51.2 hr while cluster B has a median period of 100.6 hr (Figure 5g). We therefore inspected the oscillator periods $T_{-1}$ for each cluster, which are closest to the observed correlation period (Figure 5h). The median of the predicted oscillator period of cluster A has an oscillator period $T_{-1}$ of 24.1 hr, which hints at a circadian oscillator underlying the cell cycle in agreement with a previous model (Chakrabarti et al., 2018). However, only about 33% of posterior samples with complex eigenvalues were assigned to this cluster. The majority of posterior samples, cluster B, had a different predicted period with a median of 19.6 hr (Figure 5h). A possible explanation is that the circadian period is shortened in cancer cells.\n\nA strength of the Bayesian framework is that it allows us to express our confidence in this prediction. We find that our analysis is not conclusive about the correlation pattern as 78% of posterior samples showed an oscillator pattern. As a result, about 52% of all the posterior samples favour a 19.6 hr oscillator and 26% for the 24.1 hr oscillator, matching approximately circadian rhythm. 16% of the samples demonstrate alternator correlation patterns, and the remaining 6% samples are aperiodic (compare bar charts in Figures 3d and 5g). We therefore ask whether these competing models make predictions that translate into testable hypotheses. We found that the oscillator correlation pattern predicts a negative grandmother correlation while the alternator pattern predicts a positive grandmother correlation (Figure 5i and j). Thus, measuring the grandmother correlation with higher precision, for example, via increasing sample size, would tighten the confidence intervals of measured correlations (Figure 5i), and improve our ability to narrow down the true pattern. On the contrary, predicting the great-grandmother correlation allows us to distinguish between the 19.6 hr and 24.1 hr rhythms (Figure 5h). Posterior samples in cluster A predicted a positive interdivision time correlation between a cell and its great-grandmother, while cluster B predicted a negative correlation (Figure 5k and l). While the great-grandmother correlation could not be estimated using the present data, deeper lineage trees could be used to discriminate the period of the biological oscillator and help reveal whether the circadian period is altered in cancer cells, or not. In summary, our theory helps to predict the hidden periodicities of biological oscillators from lineage tree interdivision time data.\n\n## Discussion\n\nWe propose a Bayesian approach to predict hidden cell cycle factor dynamics from interdivision time correlation patterns. Our underlying model fits the lineage tree data for a range of bacterial and mammalian cell types and allows us to classify different correlation patterns. Our inference demonstrates that these patterns are identifiable, but the individual inheritance parameters are not. This finding suggests that interdivision time correlations alone are insufficient to gain mechanistic insights into cell cycle control mechanisms. The identified correlation patterns, however, reveal the dynamics of the underlying cell cycle factors.\n\nWe focused on a data-driven approach without any prior assumptions of the division mechanism, allowing the interdivision time data to speak for itself. Other studies used a model similar to the inheritance matrix model proposed here, and linked latent factors to the interplay between cell cycle progression and growth (Kuchen et al., 2020). Auto-regressive models have also been used in bacteria to discriminate between different mechanisms of cell size control (Kohram et al., 2021). Additionally, they have been used to combine growth and cell cycle reporters to explain interdivision time dynamics in fibroblasts (Mura et al., 2019). In principle, the inheritance matrix model can be used to model the inheritance dynamics of any factor affecting the interdivision time of a cell. In fact, it comprises many mechanistic models as special cases, such as those based on DNA replication, cell size control or cell cycle phases (Appendix 1 - Section A6 and Appendix 1\u2014figures 5 and 6). In future work, it will be useful to improve the identifiability of the model parameters. This could be accomplished either through including knowledge of inheritance mechanisms through prior distributions, or by including additional data on measured cell cycle factor dynamics \u2013 such as cell cycle phases, cell size, protein expression etc. \u2013 in the inference.\n\nAnother limitation of our inference is that we computed the interdivision time variance $s_{\\tau}$ in Equation M2 of the model assuming that trees have equal number of generations in each branch. The advantage of this estimator is that it does not assume any particular noise distribution but this may lead to a statistical bias compared to the sample variance of tree-structured data with branches of varying length (Powell, 1956; Hashimoto et al., 2016; Thomas, 2017; Jafarpour et al., 2018; Kuchen et al., 2020; Sandler et al., 2015). However, the approximation does not change the identified correlation patterns and the conclusion of this work, since any variance bias can be compensated by multiplying the noise matrices ($S_{1,2}$ in Equation 5) with a constant, and, for the data analysed, the interdivision time variance estimators cannot be distinguished within the 95% confidence intervals (Appendix 1\u2014table 3). Developing a theory correcting for such biases in lineage tree data will be the subject of future work.\n\nAn important result of the present analysis is that lineage tree correlation patterns of very different cell types \u2013 cyanobacteria, mouse embryonic fibroblasts and human colorectal cancer \u2013 can be explained through an underlying circadian oscillator coupled to cell division. While the coupling between the cell cycle and circadian clock is well established both in cyanobacteria and mouse embryonic fibroblasts, it is less well studied in cancer (Shostak, 2017; Kiessling et al., 2017). Our method robustly reconstructs the circadian rhythms from the interdivision time correlation patterns despite the lack of the cousin-mother inequality for fibroblasts, demonstrating the cousin-mother inequality is not required for complex correlation patterns (\u2018The cousin-mother inequality is not required togenerate complex correlation patterns\u2019). It is interesting to observe the differences in the oscillatory correlation patterns in these organisms. They are characterised by complex eigenvalues with negative real parts in cyanobacteria, but positive real parts in fibroblasts (Figure 5c), resulting in opposite mother-daughter correlations for these datasets (Figure 3a and f).\n\nIt would be interesting to explore what mechanisms underlie these different patterns. While the circadian clock in fibroblasts relies on transcriptional mechanisms (Hughes et al., 2009; Menger et al., 2007; Takahashi, 2017), the origin of the clock is non-transcriptional in cyanobacteria (Cohen and Golden, 2015; Tomita et al., 2005; Nakajima et al., 2005). The negative mother-daughter correlation in cyanobacteria likely stems from size control mechanisms that are modulated by the circadian clock (Martins et al., 2018). However, the mechanisms that generate positive mother-daughter correlations in fibroblasts are still to be explored. Interestingly, in human colorectal cancer, two oscillatory correlation patterns divide the posterior distributions into two distinct clusters with positive and negative mother-daughter correlations. If the circadian clock was to generate a positive mother-daughter correlation, as it does in fibroblasts which have a structurally related clock, the period corresponds to a 20 hr rhythm. This finding thus suggests that the circadian period is altered in cancerous cells. Indeed, several studies report similar periods of 18 hr and 20 hr for gene expressions in the human colorectal cancer core-clock (Fuhr et al., 2019; Parascandolo et al., 2020).\n\nOur theory predicts that an oscillator\u2019s period does not always match the period of the observed correlation oscillations. We describe a lower bound on the correlation period that is reminiscent of the Nyquist-Shannon sampling theorem. This theorem describes temporal aliasing in digital audio processing, where a high-frequency signal produces low-frequency oscillations when sampled at a frequency less than twice the sampling frequency. Similarly, spatial aliasing is observed in digital image processing as a moire pattern. In our analogy, the high-frequency signal is a biological oscillator that couples to cell division and is sampled at the cell division frequency (Figure 5a). Our result thus extends the Nyquist-Shannon sampling theorem to lineage trees. Our finding has fundamental implications for the reconstruction of oscillator periods from interdivision time data, revealing that there exists a number of oscillators that can all explain the same correlation pattern.\n\nHere, we concentrated on the oscillator periods $T_{-1}$ that are closest to the correlation oscillation periods $T_{0}$. In principle, we cannot exclude that oscillators with shorter physiological periods are contributing to the observed lineage tree correlation patterns. For example, HES1 expression oscillates with a period of around 5 h in human colon cancer cells (William et al., 2007; Gao et al., 2014). The stress response regulators NF-\u03baB and p53, which are critical for tumour development, oscillate with periods of approximately 100 min and 5 hr, respectively (Harper et al., 2018; Stewart-Ornstein et al., 2017). The posterior distributions for periods in this region are not well separated (Appendix 1\u2014figure 7c), which makes it challenging to identify factors that oscillate significantly faster than the cell cycle using interdivision time data. It is, however, unknown whether such hypothetical factors couple to cell division specifically in a manner to induce oscillatory interdivision time correlation patterns.\n\nGoing forward, there is a need to go beyond the Nyquist-Shannon limit and develop methods that have increased sensitivity to discriminate a broader range of oscillator periods. One way to circumvent the limitation would be to employ fluorescent reporters of the circadian clock that could be correlated directly with cell division timing. Another way, would be to provide parallel readouts of the underlying rhythm through events that sub-sample the cell cycle, such as DNA replication, or the timing of individual cell cycle phases. Not only would we be able to look at the correlation in interdivision time between cells on a lineage tree, but we would also be able to analyse the correlations between individual phases and family members, to reveal specific phase control mechanisms. Our main findings result from the the inheritance matrix model with two cell cycle factors, as this was sufficient to explain the correlation patterns of the chosen data. In principle, increasing the number of interacting cell cycle factors can lead to more complex composite patterns that involve combinations of the three patterns discussed in this paper, such as the alternator-oscillator (Appendix 1\u2014figure 6c and d), aperiodic-oscillator (Appendix 1\u2014figure 6g and h), or birhythmic correlation patterns. Such composite patterns could also arise as the result of nonlinear fluctuations that, within our framework, can be described by adding complexes of cell cycle factors to the inheritance matrix model (Appendix 1 - Section A2). The presence of such complexes induces higher-order harmonics in the correlation oscillations, similar to those observed in the cyanobacterial and mammalian circadian clock (Martins et al., 2016; Thomas et al., 2013), and detecting such complexes could provide an alternative route to increase the sensitivity of our inference method.\n\nIn summary, our findings highlight the predictive power of Bayesian inference on single-cell data and how it can be leveraged to draw testable hypotheses for the design of future experiments. This was exemplified for human colorectal cancer cells, where various patterns were compatible with the data, something that non-probabilistic approaches cannot accomplish as they fit only a single correlation pattern. In the future, it will be crucial to understand why different cell types have evolved specific lineage correlation patterns and how these patterns affect cell proliferation and disease. It would be interesting to understand whether specific correlation patterns give or reveal some fitness advantage and whether we can use them to predict cell survival. We anticipate that identifying hidden cell cycle factors and their rhythmicity using non-invasive methods such as interdivision time measurements will be instrumental in answering these questions and may benefit other fields where cell proliferation plays a pivotal role.\n\n### Code availability\n\nCode available at https://github.com/pthomaslab/Lineage-tree-correlation-pattern-inference (copy archived at swh:1:rev:dc69bbce5ce909813d7d4356c9fd2da045e02c79; Hughes, 2022).\n\n## Materials and methods\n\n### Analytical solution of the inheritance matrix model\n\nFrom Equation 2b and $IE\u2062[z_{p}]=0,for all\u2062p\u2062in\u2062\u2115$, we see that the vector of cell cycle factors has zero mean $IE\u2062[x_{p}]=0$. Its $N\\timesN$ covariance matrix $\u2211=Cov\u2062(x_{p},x_{p})$ satisfies a discrete-time Lyapunov equation:\n\n$$\nS_{1}=\u03a3\u2212\\theta\u03a3\\theta^{\u22a4}.\n$$\n\nFrom the solution of Equation M1, we compute the variance of the interdivision time\n\n$$\ns_{\\tau}=\\alpha^{\u22a4}\u03a3\\alpha,\n$$\n\nand the generalised tree correlation function $\u03c1\u2062(k,l)$ (see Appendix 1 - Section A3 for a detailed derivation) given by:\n\n$$\n\u03c1(k,l)=\\frac{\\alpha^{\u22a4}\\omega(k,l)\\alpha}{\\alpha^{\u22a4}\u03a3\\alpha},\n$$\n\nwhere $\\omega\u2062(k,l)=\\theta^{k}\u2062\u2211\u2062(\\theta^{l})^{\u22a4}+\\delta_{k\\geq1}\u2062\\delta_{l\\geq1}\u2062\\theta^{k-1}\u2062S_{2}\u2062(\\theta^{l-1})^{\u22a4}$ with\n\n$$\n\\delta_{i\\geq1}={1ifi\\geq10otherwisefori=k,l.\n$$\n\nTo ensure that the lineage tree correlation pattern is stationary, we require $SR(\\theta)<1$ where $SR\u2062(\\theta)=max\u2062(\\lambda_{1},\\lambda_{2},\u2026,\\lambda_{N})$ is the spectral radius of $\\theta$. This also ensures that the solutions to Equation M1; $\u2211$, $S_{1}$ and the function Equation M3 are unique and independent of the initial conditions.\n\n### Analysis of tree correlation patterns\n\nThe patterns of the generalised tree correlation function can be characterised through its eigendecomposition. The general decomposition proceeds through finding the matrix of eigenvectors $U$ of $\\theta$ such that\n\n$$\nU\u2062\\theta\u2062U^{-1}=diag\u2062(\\lambda_{1},\\lambda_{2},\u2026,\\lambda_{N})\n$$\n\nis the diagonal matrix of eigenvalues. Defining $S^_{1,2}=U\u2062S_{1,2}\u2062U^{\u22a4}$ and $\\alpha^=(U^{-1})^{\u22a4}\u2062\\alpha$, the solution to Equation M1 is given by\n\n$$\n\u03a3_{ij}=\\sumk,l=1NU_{ik}^{\u22121}U_{jl}^{\u22121}\\frac{(S^_{1})_{kl}}{(1\u2212\\lambda_{k}\\lambda_{l})}.\n$$\n\nThis result can then be used to find an explicit expression for the generalised tree correlation function:\n\n$$\n\u03c1(k,l)=\\sumi,j=1N\\frac{\\alpha^_{i}\\alpha^_{j}}{\\alpha^^{\u22a4}\u03a3^\\alpha^}\\omega^_{ij}(k,l),\n$$\n\nwhere\n\n$$\n\\omega^_{i\u2062j}\u2062(k,l)=\\frac{(S^_{1})_{i\u2062j}\u2062\\lambda_{i}^{k}\u2062\\lambda_{j}^{l}}{(1-\\lambda_{i}\u2062\\lambda_{j})}+\\delta_{k\\geq1}\u2062\\delta_{l\\geq1}\u2062(S^_{2})_{i\u2062j}\u2062\\lambda_{i}^{k-1}\u2062\\lambda_{j}^{l-1}.\n$$\n\nEquation M7 can be rewritten as a superposition of patterns Equation 4 with weights given by Equation 5.\n\nThe pattern of the tree correlation function is thus governed by the eigenvalues of the inheritance matrix $\\theta$: (i) if one eigenvalue, say $\\lambda_{1}$, is positive then the factor $\\omega^_{11}\u2062(k,0)=\\omega^_{11}\u2062(0,k)\u221d\\lambda_{1}^{k}$ contributing to lineage correlation decays monotonically. The factor $\\omega^_{11}\u2062(k,k)\u221d\\lambda_{1}^{2\u2062k}$ contributing to the cross-branch correlation decays twice as fast; (ii) if there is a negative eigenvalue, the factor $\\omega^_{11}\u2062(k,0)=\\omega^_{11}\u2062(0,k)\u221d(-1)^{k}\u2062|\\lambda_{1}|^{k}$ alternates between negative and positive values with an envelope of $|\\lambda_{1}|^{k}$, while the corresponding contribution to the cross-branch correlation decays monotonically with rate as $|\\lambda_{1}|^{2\u2062k}$. Finally, if we have a pair of complex eigenvalues $\\lambda_{1}=\\lambda_{2}^{\u2217}=D\u2062e^{i\u2062\u03a9}$ then the factors $\\omega^_{i,j}\u2062(k,0)=\\omega^_{i,j}\u2062(0,k)$ contributing to the lineage correlation function display damped oscillations with frequency $\u03a9$ and envelope $D^{k}$, while the factor $\\omega^_{12}\u2062(k,k)=\\omega^_{12}^{\u2217}\u2062(k,k)\u221dD^{2\u2062k}$ and the factor $\\omega^_{11}\u2062(k,k)=\\omega^_{22}^{\u2217}\u2062(k,k)\u221dD^{2\u2062k}\u2062e^{i\u20622\u2062\u03a9\u2062k}$ oscillate with frequency $2\u2062\u03a9$.\n\n### Determining the period of correlation oscillations from the eigenvalues\n\nWe consider the case where the inheritance matrix $\\theta$ has a pair of complex conjugate eigenvalues $\\lambda^{\\pm}=D\u2062e^{\\pmi\u20622\u2062\\pi/P}$. The lineage correlation function then oscillates whenever $D\\neq{0,1}$ and $P\\neq\\frac{2}{k},k\u2062in\u2062\u2124$. The period of correlation oscillations per generation is given by\n\n$$\n\\frac{T_{0}}{\\tau\u00af}=\\frac{2\\pi}{|ln\u2061(e^{i2\\pi/P})|}=\\frac{2}{1\u2212|2(\\frac{1}{P}mod1)\u22121|},\n$$\n\nwhere $Arg(\\lambda)in(\u2212\\pi,\\pi]$ is the argument of the eigenvalue and $ln\u2061(\u22c5)$ is the complex logarithm. The former is the angle made between the line joining the origin and the eigenvalue $\\lambda$ on the complex plane with the real axis. This means that $T_{0}/\\tau\u00af=P$ if and only if $P>2$. Otherwise, $T_{0}$ is calculated in terms of $P$ by Equation M9, (Appendix 1\u2014figure 8).\n\n### Data analysis and Bayesian inference of the inheritance matrix model\n\nWe determined all pairs of cells in a lineage tree, sorted them by family relations $(k,l)$ and calculated the sample correlation coefficient of interdivision times (Equation 3). To maximise the number of samples used to calculate these correlations, an individual cell can appear in more than one pair. For example, if a cell had two cousins, it would be counted in two separate cousin pairs in the cousin-cousin correlation coefficient calculation. For training, we focus on the sample statistics $X^=(s^_{\\tau},{\u03c1^_{(k,l)}}_{(k,l)\u2062in\u2062C})$ with $C={(1,0),(2,0),(1,1),(2,2)}$ comprised of the interdivision time sample variance and four interdivision time sample correlation coefficients given by the mother-daughter, grandmother-granddaughter, sister-sister and cousin-cousin relations (Figure 2a). Note that $s^_{\\tau}$ is computed across all interdivision times used to calculate the correlation coefficients in each dataset. Errors are estimated using bootstrapping by re-sampling cell pairs with replacement 10,000 times. The resulting variances and correlation coefficients are given in Appendix 1\u2014table 1.\n\nThe vector of inferred model parameters for the two-dimensional model is $\u0398=(\\theta,S_{1})$, where we fix $\\alpha=(1,1)^{\u22a4}$ and $S_{2}=0$ for simplicity. A different choice of $\\alpha$ did not affect our results (Appendix 1\u2014figure 4). Since $S_{1}$ is symmetric, it consists of the $N$ variances and $N\u2062(N-1)/2$ correlation coefficients between the components of $z$. Thus for $N=2$ the inheritance matrix model has seven free parameters to be estimated. We assumed that the log-likelihood for these statistics is the sum of square errors:\n\n$$\n\u2212ln\u2061L(\u0398|X^)=\\frac{(s^_{\\tau}\u2212s_{\\tau}(\u0398))^{2}}{\\sigma^_{s^_{\\tau}}^{2}}+\\sum(k,l)inC\\frac{(\u03c1^_{(k,l)}\u2212\u03c1_{(k,l)}(\u0398))^{2}}{\\sigma^_{\u03c1^_{(k,l)}}^{2}},\n$$\n\nwhich is equivalent to assuming that the sample variance and correlation coefficients are normally distributed for large sample sizes. We calculate the interdivision time variance $s_{\\tau}$ and the generalised tree correlation function $\u03c1\u2062(k,l)$ from Equation M2 and Equation M3. Note that Equation M2 is the interdivision time variance from a tree where all lineages have the same number of generations, which approximates the variance across all cells in the observed trees (Appendix 1\u2014table 3). For simplicity, we neglected possible correlations between the sample statistics in $X^$ and used bootstrapped estimates for the standard deviation of the sample statistics $\\sigma^_{s^_{\\tau}}$ and $\\sigma^_{\u03c1^_{(k,l)}}$ (Appendix 1\u2014table 1). Note that the likelihood is independent of the mean since it is irrelevant for the correlation pattern. We assumed a flat prior with support restricted to $SR(\\theta)<1$ and $S_{1}$ positive semi-definite to guarantee the existence of a stationary correlation pattern.\n\nThe numerical implementation uses the adaptive Gibbs\u2010sampler implemented in the Julia library Mamba.jl (Smith, 2018). For each dataset, we sample 11 million parameter sets which include a burn-in transient of 1 million samples. These samples are removed before analysis of the output.\n\nFor model comparison we use the AIC (Akaike, 1974) given by\n\n$$\nAIC=2\u2062k-2\u2062ln\u2061(\u2112^),\n$$\n\nwhere $k$ is the number of model parameters and $ln\u2061(\u2112^)$ is the maximum value of the log-likelihood function given by Equation M10. For $S_{2}\\neq0$, the inheritance matrix model has $k=d\u2062(1+2\u2062d)$ parameters where $d$ is the number of cell cycle factors in the model. For $S_{2}=0$ the number of parameters reduces to $k=\\frac{1}{2}\u2062d\u2062(1+3\u2062d)$.\n",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "0c266192-448d-4b2c-addc-dc6cdb2dcc7b",
+      "submission_id": "92d12c97-6bb5-4c5d-8ed8-43033a343b55",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arvind Murugan, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80927.sa0](https://doi.org/10.7554/eLife.80927.sa0)\n\nThis work makes an important contribution to the study of the cell cycle and inferring mechanisms by studying correlations in division timing between single cells. By treating the problem in a general way and computing over lineage trees, the authors can infer timescales in the underlying mechanism. The method is validated on data sets from bacterial and mammalian cells and can suggest when additional measurements are needed to distinguish competing models.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Arvind Murugan, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80927.sa1](https://doi.org/10.7554/eLife.80927.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Patterns of interdivision time correlations reveal hidden cell cycle factors\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Michael J Rust (Reviewer #1); Farshid Jafarpour (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) As suggested by reviewer 1, please include mechanistic details for circadian rhythm models (e.g., showing the inheritance matrix). Also, explain why whether leading order approximations are valid for oscillatory models as suggested by the same reviewer.\n\n2) As suggested by reviewer 2, more intuition is needed for some of the results. E.g., intuition why only eigenvalues of the inheritance matrix matter + intuition for the alternator pattern.\n\nReviewer #1 (Recommendations for the authors):\n\nConcretely, while section 4 of the supplement shows how some simple mechanistic models map onto this formalism, none of these include an explicit circadian rhythm. Since the authors did develop a model like this in Martins et al., it would be valuable to show what the inheritance matrix, etc. are for this kind of model, and indeed whether going to leading order in fluctuations works satisfactorily.\n\nReviewer #2 (Recommendations for the authors):\n\nThe paper is well-written, scientifically sound, and easy to follow. I only have a few minor suggestions/comments:\n\n1) It is not clear what the variance in Equation 4 is. Is it the variance of generation times across a single lineage or across the whole tree or the population variance? If I understand it correctly from the derivation in SI, it should be a lineage variance, which may not be immediately obvious given that rho is a tree variable. So it would be nice to specify which one it is.\n\n2) I find it very surprising that only the eigenvalues of the inheritance matrix determine the correlation patterns, while all the other parameters, including how noises are correlated (anticorrelated) and whether growth factors have a positive or negative effect on the inter-division times, are irrelevant. It would be nice if the authors could provide an intuition for why that is the case.\n\n3) The authors have used the AIC method for the goodness of fit. Initially, without being familiar with the method, I found it surprising that in the case of mycobacteria, a more general model could have a worse fit than its special case. I think a one-sentence explanation of this method could prevent such potential confusion for readers not familiar with this method.\n\n4) What is the intuition behind the alternator pattern, i.e. why is there a period 2 oscillation in a model with real eigenvalues?\n\n5) In the model, the inter-division time is a deterministic function of the cell-cycle factors (Equations 1 and 3a). The noise is only allowed in the inheritance of these factors, not in the division itself. This puts a constraint on what variables of a given model can be used as cell-cycle factors. I think this would be worth mentioning in the paper.\n",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1ed771d-cd23-4222-bc98-046488caba0f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C1",
+      "claim": "Intracellular factors can be inherited across cellular generations, giving rise to correlation patterns in cell cycle timing between cells of different family relationships on lineage trees.",
+      "claim_type": "EXPLICIT",
+      "source": "These factors can be inherited across cellular generations which gives rise to, often non-intuitive, correlation patterns in cell cycle timing between cells of different family relationships on lineage trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a key premise of the work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "21137cee-c515-46d4-ad75-13cec69b00f0",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C2",
+      "claim": "The framework reveals three distinct interdivision time correlation patterns: aperiodic, alternator, and oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we formulate a framework of hidden inherited factors affecting the cell cycle that unifies known cell cycle control models and reveals three distinct interdivision time correlation patterns: aperiodic, alternator, and oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated throughout the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "b30f3d56-071b-44ae-a7d7-bbecb272033f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C3",
+      "claim": "Interdivision time correlation patterns do not identify a single cell cycle model but generally admit a broad posterior distribution of possible mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "From our inference, we find that interdivision time correlation patterns do not identify a single cell cycle model but generally admit a broad posterior distribution of possible mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the Bayesian inference analysis presented in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "a4349f4b-328d-43bf-9ad2-9d772f6f2758",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C4",
+      "claim": "Cell cycle factors are commonly driven by circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals that cell cycle factors are commonly driven by circadian rhythms, but their period may differ in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the analysis of multiple datasets showing oscillatory patterns consistent with circadian periods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "93db2d7e-582f-473d-85d9-a849d96f2f6a",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C5",
+      "claim": "The period of cell cycle factors may differ in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals that cell cycle factors are commonly driven by circadian rhythms, but their period may differ in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of human colorectal cancer data showing different oscillator periods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "92a8a71d-88bc-4ed3-bd10-6aa6c2ed2a57",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C6",
+      "claim": "Stochastic gene expression can lead to heterogeneity in cell cycle length.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, stochastic gene expression (Elowitz et al., 2002) can lead to heterogeneity in cell cycle length (Kiviet et al., 2014; Ghusinga et al., 2016; Thomas et al., 2018) as these fluctuations can be propagated by concerted cellular cues (Co et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "7b1eeb37-0047-4e12-bd84-2c1b6a91fc6f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C7",
+      "claim": "The cousin-mother inequality describes a correlation pattern where interdivision times of cousin cells are more correlated than those of mother-daughter pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "A counter-intuitive correlation pattern presented by many cell types is the 'cousin-mother inequality' (Sandler et al., 2015), where the interdivision times of cousin cells are more correlated than those of mother-daughter pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a known phenomenon with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "3ec3de20-a09b-4866-8ca1-62ee8334d85d",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C8",
+      "claim": "The cousin-mother inequality can be observed both in bacteria and mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This inequality can be observed both in bacteria and mammalian cells (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "e7912c6f-7ef8-4752-9f22-e298b4386cf5",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C9",
+      "claim": "Simple inheritance rules with a single parameter cannot explain the lineage correlation patterns seen in experimental single-cell data.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies (Cowan and Staudte, 1986; Sandler et al., 2015) found that simple inheritance rules, where interdivision times are correlated from one generation to another through a single parameter, cannot explain the lineage correlation patterns seen in experimental single-cell data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "5f3fdfc8-9b1a-4d7d-8818-af27f2ed0ed4",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C10",
+      "claim": "The interdivision time is determined by a number of cell cycle factors that represent hidden variables.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this issue, we propose a unified framework where the interdivision time is determined by a number of cell cycle factors that represent hidden variables such as cell cycle phase lengths, protein levels, cell growth rate or other unknowns (Figure 1c), that each have their own inheritance pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the core model proposed in the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "37ec0607-b77c-462c-bc43-36b49e080f82",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C11",
+      "claim": "The inheritance matrix model includes many known cell cycle models as a special case.",
+      "claim_type": "EXPLICIT",
+      "source": "The general model (Equation 1a and b) includes many known cell cycle models as a special case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the proposed model with examples given in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "57c47cd1-c7a7-4836-8e77-e23303dffaab",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C12",
+      "claim": "The aperiodic pattern is characterized by real positive eigenvalues of the inheritance matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "These can be classified by the eigenvalues of the inheritance matrix \u03b8: (i) if the inheritance matrix exhibits real positive eigenvalues, we observe an aperiodic pattern (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result derived from the model and demonstrated in Figure 2d.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "7037c461-c859-4256-985e-64cc115c5cfd",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C13",
+      "claim": "The alternator pattern is characterized by real eigenvalues with at least one negative eigenvalue.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) if the inheritance matrix has real eigenvalues with at least one negative eigenvalue, we observe an alternator pattern (Figure 2e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result derived from the model and demonstrated in Figure 2e.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "e568c26f-212f-4ee4-bbfd-7a540184feb2",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C14",
+      "claim": "The oscillator pattern is characterized by a pair of complex eigenvalues.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) if there is a pair of complex eigenvalues we observe an oscillator pattern (Figure 2f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result derived from the model and demonstrated in Figure 2f.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "55088201-8e4d-4293-9812-5ee52674c776",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C15",
+      "claim": "All three correlation patterns can be compatible with the cousin-mother inequality if N\u22652.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that this is not the case, but instead, all three correlation patterns can be compatible with the cousin-mother inequality if N\u22652.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through theoretical analysis shown in Figure 2m-o.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "7d12da26-fad2-4076-9af3-34976d36dc19",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C16",
+      "claim": "Oscillations can arise even in parameter regions that violate the cousin-mother inequality.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that oscillations can arise even in parameter regions that violate the cousin-mother inequality (Figure 2o).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2o.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "09ab0fe9-1c85-411b-9bde-edf7c287688f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C17",
+      "claim": "The one-dimensional model (N=1) provides a poor fit for datasets that display the cousin-mother inequality.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model fit is poor for the datasets that display the cousin-mother inequality, which is the case for cyanobacteria, clock-deleted cyanobacteria, neuroblastoma and human colorectal cancer cells (Appendix 1\u2014figure 1a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Bayesian inference results shown in Appendix 1\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "4c2dc7be-b9df-4adb-a568-5940103cc540",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C18",
+      "claim": "Mycobacteria is the only cell type that has a good fit for the one-dimensional model.",
+      "claim_type": "EXPLICIT",
+      "source": "The only cell type that has a good fit for the one-dimensional model is mycobacteria (Appendix 1\u2014figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through model fitting results in Appendix 1\u2014figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "6d3d3ce3-4f25-4416-a03e-35afc09fedb5",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C19",
+      "claim": "The two-dimensional inheritance matrix model provides a good fit for all six datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian inference (Materials and methods - 'Data analysis and Bayesian inference of the inheritance matrix model') produced a good model fit for all six datasets (Figure 3a\u2013f) for the two-factor inheritance matrix model, within relatively narrow error bars of mother, grandmother, sister and cousin correlations (Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the fitting results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "5674890b-7e4c-4f46-a1a0-efcb6d176ba1",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C20",
+      "claim": "The AIC values indicate that the inheritance matrix model with two cell cycle factors provides the simplest fit for all cell types except mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The AIC values indicate that the inheritance matrix model with two cell cycle factors provides the simplest fit for all cell types used here, except for the mycobacteria data where simple inheritance rules provided an equally good fit with a significant reduction in the number of model parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on AIC calculations shown in Appendix 1\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "6c7d6fa0-4dbe-4eab-85e5-708629fdaa23",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C21",
+      "claim": "The model has good predictive capacity for correlations further down the lineage tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, we find that the model has a good predictive capacity for correlations further down the lineage tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the model's ability to predict great-grandmother and great-great-grandmother correlations not used in fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "397262e9-afee-4e58-91eb-97f37522e891",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C22",
+      "claim": "Cyanobacteria display a dominant oscillator pattern with 100% posterior probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria, (Figure 3a), human colorectal cancer (Figure 3d), and mouse embryonic fibroblasts (Figure 3f) display a dominant oscillator pattern",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the bar chart in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "88bb9d5d-b1ac-439e-ab7a-4da469bc1e59",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C23",
+      "claim": "Clock-deleted cyanobacteria display a 100% alternator pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that clock-deleted cyanobacteria (Figure 3b) has a 100% alternator pattern in contrast to the 100% oscillator pattern seen for wild type cyanobacteria",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the bar chart in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "a40f2d4b-6ca7-4ed0-9469-c25ccef5d1b7",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C24",
+      "claim": "Deletion of the clock gene has completely transformed the correlation pattern and abolished the underlying oscillation in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the deletion of the clock gene has completely transformed the correlation pattern and has abolished the underlying oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing wild type and clock-deleted cyanobacteria patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "5491cf88-8605-491d-bb93-3f00fee1f1e7",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C25",
+      "claim": "Neuroblastoma displays a dominant aperiodic pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuroblastoma (Figure 3e) displays a dominant aperiodic pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the bar chart in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "dc12ff40-80ef-41ad-ad61-de0c4ec317fc",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C26",
+      "claim": "Individual inheritance parameters are not identifiable from interdivision time correlation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the explorations of the Gibbs sampler did not settle in a particular parameter subspace but meandered off to explore vast areas of the parameter space without improving the likelihood values (Appendix 1\u2014figure 3a and b). Such behaviour is expected when model parameters are not identifiable",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through MCMC sampling behavior shown in Appendix 1\u2014figure 3 and Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "32aa74cf-2203-4c0c-ae51-2a307a9adf7f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C27",
+      "claim": "The eigenvalues of the inheritance matrix are identifiable while individual parameters are not.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the individual parameters, the sampled posterior distribution of the eigenvalues is consistent across the averages (Figure 4c) and their mean squared displacement converges rapidly (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4c and 4d comparing parameter vs eigenvalue sampling behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "1e06550d-2718-4ce1-a1aa-b15814241421",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C28",
+      "claim": "Interdivision time correlations alone are insufficient to gain mechanistic insights into cell cycle control mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that interdivision time correlations alone are insufficient to gain mechanistic insights into cell cycle control mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the unidentifiability of individual parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "cc45caa1-1455-4a22-89a3-de649045db60",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C29",
+      "claim": "Clock-deleted cyanobacteria and neuroblastoma have distinct hidden correlation patterns of cell cycle factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the different interdivision time correlation patterns observed for clock-deleted cyanobacteria and neuroblastoma stem from distinct hidden correlation patterns of cell cycle factor fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis shown in Figure 4f-h.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "19a8d728-83d7-4047-8713-4da028b1eef5",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C31",
+      "claim": "The period of the correlation oscillation does not always match the frequency of the underlying oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution to this issue is that the period of the correlation oscillation does not always match the frequency of the underlying oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical finding explained through Equation 7 and Figure 5a.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "5da912a2-1929-45a8-b7ae-52d33f61f56b",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C32",
+      "claim": "There exists a number of oscillators that can all explain the same correlation pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding has fundamental implications for the reconstruction of oscillator periods from interdivision time data, revealing that there exists a number of oscillators that can all explain the same correlation pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the theoretical analysis of Equation 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "a61e65dc-e8ef-4764-adf7-16d46bdec987",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C33",
+      "claim": "The median period of correlation oscillations is 41.7 hr for cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these distributions, we estimate the median period of the correlation oscillations (using Equation 6) to be 41.7 hr for cyanobacteria",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the posterior distribution shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "9ea4ca01-12ca-430b-bcbd-5cf650c6736c",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C34",
+      "claim": "The median period of correlation oscillations is 144.3 hr for fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "we estimate the median period of the correlation oscillations (using Equation 6) to be 41.7 hr for cyanobacteria and 144.3 hr for fibroblasts (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the posterior distribution shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "d1e90881-3f52-4a59-8136-2ecbc427c842",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C37",
+      "claim": "The finding of circadian periods supports a strong coupling of circadian rhythms to the cell cycle in cyanobacteria and fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding supports a strong coupling of circadian rhythms to the cell cycle, as reported previously for both cyanobacteria (Yang et al., 2010; Martins et al., 2018) and fibroblasts (Nagoshi et al., 2004; Menger et al., 2007; Nagoshi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the inferred oscillator periods and previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "2fad84c6-707f-49d4-84fb-e6d4090f45c1",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C38",
+      "claim": "The dominant correlation pattern in human colorectal cancer was oscillatory with 78% posterior probability.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant correlation pattern was oscillatory (78% posterior probability, Figure 3d, bar chart).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the bar chart in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "cea9a8d6-b237-4e38-ac25-232d75da2851",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C39",
+      "claim": "The posterior distribution of complex eigenvalues for human colorectal cancer has two distribution modes depending on whether the eigenvalues have positive or negative real parts.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior distribution of complex eigenvalues for the oscillator pattern has support in a large region of the parameter space. It has two distribution modes depending on whether the eigenvalues have positive or negative real parts (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "69580e6f-83ef-4762-b766-4cb8bce892b3",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C40",
+      "claim": "Cluster A in human colorectal cancer has a median correlation oscillation period of 51.2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster A has a median correlation oscillation period of 51.2 hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the posterior distribution shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "7a809ad0-e5dc-4b94-9905-5d0d9a30e89c",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C41",
+      "claim": "Cluster B in human colorectal cancer has a median correlation oscillation period of 100.6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "while cluster B has a median period of 100.6 hr (Figure 5g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the posterior distribution shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "776e6971-d510-439c-bd01-42ba11288443",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C43",
+      "claim": "Cluster B in human colorectal cancer has a median oscillator period T\u208b\u2081 of 19.6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of posterior samples, cluster B, had a different predicted period with a median of 19.6 hr (Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the posterior distribution shown in Figure 5h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "f05aecea-fc5d-493a-a695-8a093d23820a",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C44",
+      "claim": "About 33% of posterior samples with complex eigenvalues in human colorectal cancer were assigned to cluster A.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only about 33% of posterior samples with complex eigenvalues were assigned to this cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the clustering analysis shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "b4227fa4-3293-4824-9d01-7807d126d033",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C45",
+      "claim": "The circadian period may be shortened in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible explanation is that the circadian period is shortened in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the 19.6 hr oscillator period found in cluster B.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "1b81153b-3b24-4b53-944a-6ceb95d18ae7",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C46",
+      "claim": "Several studies report periods of 18 hr and 20 hr for gene expressions in the human colorectal cancer core-clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies report similar periods of 18 hr and 20 hr for gene expressions in the human colorectal cancer core-clock (Fuhr et al., 2019; Parascandolo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "c04b80fc-fcee-451d-8398-ba0336558d5f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C47",
+      "claim": "The oscillator correlation pattern predicts a negative grandmother correlation while the alternator pattern predicts a positive grandmother correlation in human colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the oscillator correlation pattern predicts a negative grandmother correlation while the alternator pattern predicts a positive grandmother correlation (Figure 5i and j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5i and j.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "bb6fff6a-ba99-4970-989e-7974e270dac5",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C48",
+      "claim": "Posterior samples in cluster A predicted a positive interdivision time correlation between a cell and its great-grandmother, while cluster B predicted a negative correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior samples in cluster A predicted a positive interdivision time correlation between a cell and its great-grandmother, while cluster B predicted a negative correlation (Figure 5k and l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5k and l.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "fe2708f8-3d3b-4448-843a-0bbfefafd88f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C49",
+      "claim": "Lineage tree correlation patterns of cyanobacteria, mouse embryonic fibroblasts and human colorectal cancer can be explained through an underlying circadian oscillator coupled to cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "An important result of the present analysis is that lineage tree correlation patterns of very different cell types \u2013 cyanobacteria, mouse embryonic fibroblasts and human colorectal cancer \u2013 can be explained through an underlying circadian oscillator coupled to cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion drawn from the analysis of oscillator periods in these datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "eb9f9fd5-e168-43ce-bd95-a252989d888d",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C50",
+      "claim": "The method robustly reconstructs the circadian rhythms from the interdivision time correlation patterns despite the lack of the cousin-mother inequality for fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method robustly reconstructs the circadian rhythms from the interdivision time correlation patterns despite the lack of the cousin-mother inequality for fibroblasts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the method's capability shown in the fibroblast analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "6a403b08-fc41-4bc3-b4ad-530d528d4961",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C51",
+      "claim": "Cyanobacteria are characterized by complex eigenvalues with negative real parts.",
+      "claim_type": "EXPLICIT",
+      "source": "They are characterised by complex eigenvalues with negative real parts in cyanobacteria, but positive real parts in fibroblasts (Figure 5c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "44bfcce6-ffce-4e73-9dab-293754e96c8d",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C52",
+      "claim": "Fibroblasts are characterized by complex eigenvalues with positive real parts.",
+      "claim_type": "EXPLICIT",
+      "source": "They are characterised by complex eigenvalues with negative real parts in cyanobacteria, but positive real parts in fibroblasts (Figure 5c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "6b4b0cae-1396-425e-8f11-85eabec1c029",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C53",
+      "claim": "The circadian clock in fibroblasts relies on transcriptional mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "While the circadian clock in fibroblasts relies on transcriptional mechanisms (Hughes et al., 2009; Menger et al., 2007; Takahashi, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "fd41dd04-0d99-4e8d-9446-5fa393a7f1dd",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C54",
+      "claim": "The origin of the clock is non-transcriptional in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "the origin of the clock is non-transcriptional in cyanobacteria (Cohen and Golden, 2015; Tomita et al., 2005; Nakajima et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "9592be46-8fdc-4eaa-ab9f-8fdec6097007",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C55",
+      "claim": "The negative mother-daughter correlation in cyanobacteria likely stems from size control mechanisms that are modulated by the circadian clock.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative mother-daughter correlation in cyanobacteria likely stems from size control mechanisms that are modulated by the circadian clock (Martins et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "3128eae7-957a-493a-bfb2-5e02b4a4badc",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C56",
+      "claim": "The result extends the Nyquist-Shannon sampling theorem to lineage trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result thus extends the Nyquist-Shannon sampling theorem to lineage trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical contribution connecting the findings to signal processing theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "5d1af2a2-d221-4bea-9fcf-3a9927d4fe94",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C57",
+      "claim": "HES1 expression oscillates with a period of around 5 h in human colon cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HES1 expression oscillates with a period of around 5 h in human colon cancer cells (William et al., 2007; Gao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "332c3c80-2e90-4f6c-b18b-2804e122889c",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C58",
+      "claim": "NF-\u03baB oscillates with a period of approximately 100 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The stress response regulators NF-\u03baB and p53, which are critical for tumour development, oscillate with periods of approximately 100 min and 5 hr, respectively (Harper et al., 2018; Stewart-Ornstein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "24a4ac1f-b692-43a5-8ece-1795551c993c",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C59",
+      "claim": "p53 oscillates with a period of approximately 5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The stress response regulators NF-\u03baB and p53, which are critical for tumour development, oscillate with periods of approximately 100 min and 5 hr, respectively (Harper et al., 2018; Stewart-Ornstein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "ca4e04d7-0eb7-47fb-b04d-2f1a401f62f3",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C60",
+      "claim": "Correlation patterns are an emergent phenomenon that impact cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantitative analysis thus reveals that correlation patterns are an emergent phenomenon that impact cell proliferation and these patterns may be altered in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "41ab58fa-a258-4d47-98a7-22108593ac89",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "claim_id": "C61",
+      "claim": "Correlation patterns may be altered in disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantitative analysis thus reveals that correlation patterns are an emergent phenomenon that impact cell proliferation and these patterns may be altered in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is suggested by the differences observed in cancer cell data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "19f340b6-178c-493e-83bb-fdef3d97ad8e",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The inheritance matrix model reveals three distinct interdivision time correlation patterns (aperiodic, alternator, and oscillator) characterized by the eigenvalues of the inheritance matrix: real positive eigenvalues produce aperiodic patterns, real eigenvalues with at least one negative eigenvalue produce alternator patterns, and complex eigenvalues produce oscillator patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12-C14 collectively establish the three correlation patterns through theoretical derivation and demonstration in Figures 2d-f. The mathematical framework linking eigenvalue structure to pattern type is rigorously derived from Equations 4-5, and the patterns are visually demonstrated in the corresponding figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "ed9e0f45-4ea3-4248-851c-85ebe0622dfc",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose a unified inheritance matrix framework where interdivision time is determined by multiple hidden cell cycle factors, and this framework includes many known cell cycle models as special cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 describe the core theoretical contribution. The model is mathematically formulated in Equations 1a-b and 2a-b, with the generality demonstrated through examples in the appendix. The framework successfully unifies existing models while enabling new predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "1e9c1b63-fb8d-4395-a441-af248eeeeaf8",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "All three correlation patterns can be compatible with the cousin-mother inequality when N\u22652, and oscillations can arise even in parameter regions that violate this inequality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 demonstrate that the cousin-mother inequality is neither necessary nor sufficient for complex patterns. This is rigorously shown through theoretical analysis and parameter space mapping in Figure 2m-o, challenging previous assumptions about this inequality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "de7d8211-d4de-4b82-a3fd-8890c16f8e63",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The two-dimensional inheritance matrix model provides good fits for all six datasets with strong predictive capacity, while the one-dimensional model only fits mycobacteria data adequately, as determined by Bayesian inference and AIC model comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are supported by comprehensive Bayesian inference results shown in Figure 3 and Appendix 1. The model fits are quantified with narrow error bars, AIC values support model selection, and predictive capacity is demonstrated for correlations not used in fitting. The statistical framework is appropriate and well-executed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "b9aa7234-0841-4de4-bcc7-86591a188bae",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pattern classification reveals that cyanobacteria display 100% oscillator pattern, clock-deleted cyanobacteria display 100% alternator pattern (suggesting clock gene deletion abolished the oscillation), and neuroblastoma displays dominant aperiodic pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are directly supported by the bar charts in Figure 3a, b, and e showing posterior probabilities. The comparison between wild-type and clock-deleted cyanobacteria provides strong evidence for the role of the clock gene, though the mechanistic interpretation (C24) is inferential rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "25ea9c3b-e6a8-4940-b14b-b2233351df83",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual inheritance matrix parameters are not identifiable from interdivision time correlation patterns, while eigenvalues are identifiable, suggesting that correlation data alone are insufficient for mechanistic insights into cell cycle control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are well-supported by MCMC sampling diagnostics in Figure 4a-d and Appendix 1\u2014figure 3. The mean squared displacement analysis clearly distinguishes non-convergent parameter sampling from convergent eigenvalue sampling. This is a critical finding about the limitations of the approach, though the conclusion (C28) may be overstated\u2014eigenvalues do provide some mechanistic information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "a68b2c2a-4644-4835-a244-9db99165b22f",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Clock-deleted cyanobacteria and neuroblastoma have distinct hidden correlation patterns of cell cycle factors, as revealed by analysis of same-factor versus alternate-factor mother-daughter correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by the posterior distributions shown in Figure 4f-h. The distinct clustering of correlation patterns between these datasets provides evidence for different underlying inheritance mechanisms, though the specific factors remain unidentified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "8b8065ec-48d7-43fb-9c13-4e3b9daf151d",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The period of correlation oscillation does not always match the underlying oscillator frequency, with multiple oscillator periods compatible with the same correlation pattern, extending the Nyquist-Shannon sampling theorem to lineage trees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32, C56 present an important theoretical result derived from Equation 7 and illustrated in Figure 5a-b. The mathematical derivation is sound and the analogy to Nyquist-Shannon sampling is appropriate. This explains how fast biological oscillators can produce slow correlation oscillations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cyanobacteria and fibroblasts both exhibit oscillator patterns with inferred median oscillator periods of ~24.6 hr and ~23.8 hr respectively, supporting strong coupling of circadian rhythms to the cell cycle in these organisms, with distinct eigenvalue signatures (negative vs. positive real parts).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34, C4, C37, C49-C52 are supported by posterior distributions in Figure 5c-e and prior literature. The inference successfully recovers circadian periods from correlation data, validated against known biology. The method works even without the cousin-mother inequality (C50), demonstrating robustness. The distinct eigenvalue signatures (C51-C52) suggest different coupling mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "064c5b3a-eac3-4d3c-8578-b04de1f79501",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Human colorectal cancer displays a dominant oscillatory pattern (78% posterior probability) with bimodal eigenvalue distribution, yielding two clusters with median oscillator periods of ~24.1 hr (cluster A, 33% of samples) and ~19.6 hr (cluster B, majority), suggesting the circadian period may be shortened in cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C46 present intriguing findings about cancer cells shown in Figure 5f-h. While the bimodal distribution is clearly demonstrated, the interpretation remains uncertain: only 78% of samples show oscillator pattern, and within those, the majority (cluster B) suggests a shortened period. The speculation about shortened circadian period (C45) is supported by citations (C46) but requires experimental validation. The posterior probability distribution indicates substantial uncertainty about which mechanism is correct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "58fa040b-4582-4b7c-8dca-db61f53eff92",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The oscillator and alternator patterns in human colorectal cancer make distinct predictions: oscillator predicts negative grandmother correlation while alternator predicts positive; clusters A and B predict opposite great-grandmother correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 demonstrate the predictive power of the Bayesian framework, shown in Figure 5i-l. These predictions provide testable hypotheses for future experiments, though they have not yet been validated. The predictions are mathematically sound given the model structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "38723aee-e7d0-4d89-b0c1-3baa770d62e7",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Interdivision time correlation patterns do not identify a single cell cycle model but generally admit a broad posterior distribution of possible mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is a key finding supported by the parameter unidentifiability analysis (C26-C27) and the broad posterior distributions shown throughout Figure 4 and Figure 5. This represents an important limitation of the approach but is honestly reported and thoroughly characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "eb999b59-2b45-4561-ae62-150cf7cb0030",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The circadian clock in fibroblasts relies on transcriptional mechanisms while in cyanobacteria it is non-transcriptional, and the negative mother-daughter correlation in cyanobacteria likely stems from size control mechanisms modulated by the circadian clock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by appropriate citations to prior work. These claims provide biological context for interpreting the different eigenvalue signatures observed between cyanobacteria and fibroblasts, though the specific mechanistic link (C55) is inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "0883ddae-5d5d-4e21-a51b-1ed95eeaaeef",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Intracellular factors can be inherited across generations giving rise to correlation patterns including the cousin-mother inequality observed in bacteria and mammalian cells, which cannot be explained by simple single-parameter inheritance rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C9 establish the biological context and motivation. The cousin-mother inequality is demonstrated in Figure 1b across multiple datasets, and the inadequacy of simple inheritance rules is supported by citations (C9) and demonstrated empirically (C17). These provide essential background for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "0f1880bd-a7f0-4c69-b741-303ae124c945",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Various biological oscillators in cancer cells have been reported with different periods: HES1 (~5 hr), NF-\u03baB (~100 min), and p53 (~5 hr).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by appropriate citations and provide biological context for discussing possible oscillators underlying the observed correlation patterns. These are factual claims about prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    },
+    {
+      "id": "1daeefdd-53e4-49bb-9ac9-f90f2eaf992a",
+      "content_id": "18f2c8c9-1127-489a-90d4-20336c717d3c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Correlation patterns are an emergent phenomenon that impact cell proliferation and may be altered in disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 represent broad conclusions drawn from the analysis. While the work demonstrates that correlation patterns exist and differ between cell types (including cancer), the claims that patterns 'impact cell proliferation' and 'may be altered in disease' are speculative. The causal relationship between correlation patterns and proliferation is not established, only correlation. The observation of different patterns in cancer (C61) is suggestive but requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:36.769048Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21137cee-c515-46d4-ad75-13cec69b00f0",
+      "result_id": "19f340b6-178c-493e-83bb-fdef3d97ad8e"
+    },
+    {
+      "claim_id": "57c47cd1-c7a7-4836-8e77-e23303dffaab",
+      "result_id": "19f340b6-178c-493e-83bb-fdef3d97ad8e"
+    },
+    {
+      "claim_id": "7037c461-c859-4256-985e-64cc115c5cfd",
+      "result_id": "19f340b6-178c-493e-83bb-fdef3d97ad8e"
+    },
+    {
+      "claim_id": "e568c26f-212f-4ee4-bbfd-7a540184feb2",
+      "result_id": "19f340b6-178c-493e-83bb-fdef3d97ad8e"
+    },
+    {
+      "claim_id": "5f3fdfc8-9b1a-4d7d-8818-af27f2ed0ed4",
+      "result_id": "ed9e0f45-4ea3-4248-851c-85ebe0622dfc"
+    },
+    {
+      "claim_id": "37ec0607-b77c-462c-bc43-36b49e080f82",
+      "result_id": "ed9e0f45-4ea3-4248-851c-85ebe0622dfc"
+    },
+    {
+      "claim_id": "55088201-8e4d-4293-9812-5ee52674c776",
+      "result_id": "1e9c1b63-fb8d-4395-a441-af248eeeeaf8"
+    },
+    {
+      "claim_id": "7d12da26-fad2-4076-9af3-34976d36dc19",
+      "result_id": "1e9c1b63-fb8d-4395-a441-af248eeeeaf8"
+    },
+    {
+      "claim_id": "09ab0fe9-1c85-411b-9bde-edf7c287688f",
+      "result_id": "de7d8211-d4de-4b82-a3fd-8890c16f8e63"
+    },
+    {
+      "claim_id": "4c2dc7be-b9df-4adb-a568-5940103cc540",
+      "result_id": "de7d8211-d4de-4b82-a3fd-8890c16f8e63"
+    },
+    {
+      "claim_id": "6d3d3ce3-4f25-4416-a03e-35afc09fedb5",
+      "result_id": "de7d8211-d4de-4b82-a3fd-8890c16f8e63"
+    },
+    {
+      "claim_id": "5674890b-7e4c-4f46-a1a0-efcb6d176ba1",
+      "result_id": "de7d8211-d4de-4b82-a3fd-8890c16f8e63"
+    },
+    {
+      "claim_id": "6c7d6fa0-4dbe-4eab-85e5-708629fdaa23",
+      "result_id": "de7d8211-d4de-4b82-a3fd-8890c16f8e63"
+    },
+    {
+      "claim_id": "397262e9-afee-4e58-91eb-97f37522e891",
+      "result_id": "b9aa7234-0841-4de4-bcc7-86591a188bae"
+    },
+    {
+      "claim_id": "88bb9d5d-b1ac-439e-ab7a-4da469bc1e59",
+      "result_id": "b9aa7234-0841-4de4-bcc7-86591a188bae"
+    },
+    {
+      "claim_id": "a40f2d4b-6ca7-4ed0-9469-c25ccef5d1b7",
+      "result_id": "b9aa7234-0841-4de4-bcc7-86591a188bae"
+    },
+    {
+      "claim_id": "5491cf88-8605-491d-bb93-3f00fee1f1e7",
+      "result_id": "b9aa7234-0841-4de4-bcc7-86591a188bae"
+    },
+    {
+      "claim_id": "dc12ff40-80ef-41ad-ad61-de0c4ec317fc",
+      "result_id": "25ea9c3b-e6a8-4940-b14b-b2233351df83"
+    },
+    {
+      "claim_id": "32aa74cf-2203-4c0c-ae51-2a307a9adf7f",
+      "result_id": "25ea9c3b-e6a8-4940-b14b-b2233351df83"
+    },
+    {
+      "claim_id": "1e06550d-2718-4ce1-a1aa-b15814241421",
+      "result_id": "25ea9c3b-e6a8-4940-b14b-b2233351df83"
+    },
+    {
+      "claim_id": "cc45caa1-1455-4a22-89a3-de649045db60",
+      "result_id": "a68b2c2a-4644-4835-a244-9db99165b22f"
+    },
+    {
+      "claim_id": "19a8d728-83d7-4047-8713-4da028b1eef5",
+      "result_id": "8b8065ec-48d7-43fb-9c13-4e3b9daf151d"
+    },
+    {
+      "claim_id": "5da912a2-1929-45a8-b7ae-52d33f61f56b",
+      "result_id": "8b8065ec-48d7-43fb-9c13-4e3b9daf151d"
+    },
+    {
+      "claim_id": "3128eae7-957a-493a-bfb2-5e02b4a4badc",
+      "result_id": "8b8065ec-48d7-43fb-9c13-4e3b9daf151d"
+    },
+    {
+      "claim_id": "a61e65dc-e8ef-4764-adf7-16d46bdec987",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "9ea4ca01-12ca-430b-bcbd-5cf650c6736c",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "a4349f4b-328d-43bf-9ad2-9d772f6f2758",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "d1e90881-3f52-4a59-8136-2ecbc427c842",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "fe2708f8-3d3b-4448-843a-0bbfefafd88f",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "eb9f9fd5-e168-43ce-bd95-a252989d888d",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "6a403b08-fc41-4bc3-b4ad-530d528d4961",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "44bfcce6-ffce-4e73-9dab-293754e96c8d",
+      "result_id": "1e8cbbce-01a5-4718-a69c-78f46942e4ee"
+    },
+    {
+      "claim_id": "2fad84c6-707f-49d4-84fb-e6d4090f45c1",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "cea9a8d6-b237-4e38-ac25-232d75da2851",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "69580e6f-83ef-4762-b766-4cb8bce892b3",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "7a809ad0-e5dc-4b94-9905-5d0d9a30e89c",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "776e6971-d510-439c-bd01-42ba11288443",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "f05aecea-fc5d-493a-a695-8a093d23820a",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "93db2d7e-582f-473d-85d9-a849d96f2f6a",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "b4227fa4-3293-4824-9d01-7807d126d033",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "1b81153b-3b24-4b53-944a-6ceb95d18ae7",
+      "result_id": "064c5b3a-eac3-4d3c-8578-b04de1f79501"
+    },
+    {
+      "claim_id": "c04b80fc-fcee-451d-8398-ba0336558d5f",
+      "result_id": "58fa040b-4582-4b7c-8dca-db61f53eff92"
+    },
+    {
+      "claim_id": "bb6fff6a-ba99-4970-989e-7974e270dac5",
+      "result_id": "58fa040b-4582-4b7c-8dca-db61f53eff92"
+    },
+    {
+      "claim_id": "b30f3d56-071b-44ae-a7d7-bbecb272033f",
+      "result_id": "38723aee-e7d0-4d89-b0c1-3baa770d62e7"
+    },
+    {
+      "claim_id": "6b4b0cae-1396-425e-8f11-85eabec1c029",
+      "result_id": "eb999b59-2b45-4561-ae62-150cf7cb0030"
+    },
+    {
+      "claim_id": "fd41dd04-0d99-4e8d-9446-5fa393a7f1dd",
+      "result_id": "eb999b59-2b45-4561-ae62-150cf7cb0030"
+    },
+    {
+      "claim_id": "9592be46-8fdc-4eaa-ab9f-8fdec6097007",
+      "result_id": "eb999b59-2b45-4561-ae62-150cf7cb0030"
+    },
+    {
+      "claim_id": "d1ed771d-cd23-4222-bc98-046488caba0f",
+      "result_id": "0883ddae-5d5d-4e21-a51b-1ed95eeaaeef"
+    },
+    {
+      "claim_id": "92a8a71d-88bc-4ed3-bd10-6aa6c2ed2a57",
+      "result_id": "0883ddae-5d5d-4e21-a51b-1ed95eeaaeef"
+    },
+    {
+      "claim_id": "7b1eeb37-0047-4e12-bd84-2c1b6a91fc6f",
+      "result_id": "0883ddae-5d5d-4e21-a51b-1ed95eeaaeef"
+    },
+    {
+      "claim_id": "3ec3de20-a09b-4866-8ca1-62ee8334d85d",
+      "result_id": "0883ddae-5d5d-4e21-a51b-1ed95eeaaeef"
+    },
+    {
+      "claim_id": "e7912c6f-7ef8-4752-9f22-e298b4386cf5",
+      "result_id": "0883ddae-5d5d-4e21-a51b-1ed95eeaaeef"
+    },
+    {
+      "claim_id": "5d1af2a2-d221-4bea-9fcf-3a9927d4fe94",
+      "result_id": "0f1880bd-a7f0-4c69-b741-303ae124c945"
+    },
+    {
+      "claim_id": "332c3c80-2e90-4f6c-b18b-2804e122889c",
+      "result_id": "0f1880bd-a7f0-4c69-b741-303ae124c945"
+    },
+    {
+      "claim_id": "24a4ac1f-b692-43a5-8ece-1795551c993c",
+      "result_id": "0f1880bd-a7f0-4c69-b741-303ae124c945"
+    },
+    {
+      "claim_id": "ca4e04d7-0eb7-47fb-b04d-2f1a401f62f3",
+      "result_id": "1daeefdd-53e4-49bb-9ac9-f90f2eaf992a"
+    },
+    {
+      "claim_id": "41ab58fa-a258-4d47-98a7-22108593ac89",
+      "result_id": "1daeefdd-53e4-49bb-9ac9-f90f2eaf992a"
+    }
+  ],
+  "comparisons": []
+}

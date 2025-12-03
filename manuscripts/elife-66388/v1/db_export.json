@@ -1,0 +1,1583 @@
+{
+  "submission": {
+    "id": "61f95d14-28e1-40ce-a23b-abaff03ae398",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:38:31.133343Z",
+    "updated_at": "2025-12-03T13:38:31.133343Z"
+  },
+  "content": [
+    {
+      "id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "submission_id": "61f95d14-28e1-40ce-a23b-abaff03ae398",
+      "content_type": "manuscript",
+      "content_text": "# Lessons from a catalogue of 6674 brain recordings\n\n## Authors\n\n- Alexis DJ Makin<sup>1</sup> ([ORCID: 0000-0002-4490-7400](https://orcid.org/0000-0002-4490-7400)) \u2020\n- John Tyson-Carr<sup>1</sup> ([ORCID: 0000-0003-3364-2184](https://orcid.org/0000-0003-3364-2184))\n- Giulia Rampone<sup>1</sup> ([ORCID: 0000-0002-2710-688X](https://orcid.org/0000-0002-2710-688X))\n- Yiovanna Derpsch<sup>1</sup>\n- Damien Wright<sup>3</sup> ([ORCID: 0000-0002-9105-3559](https://orcid.org/0000-0002-9105-3559))\n- Marco Bertamini<sup>1</sup> ([ORCID: 0000-0001-8617-6864](https://orcid.org/0000-0001-8617-6864))\n\n### Affiliations\n\n1. Department of Psychological Sciences, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))\n2. School of Psychology, University of East Anglia Norwich United Kingdom ([ROR:026k5mg93](https://ror.org/026k5mg93))\n3. Patrick Wild Centre, Division of Psychiatry, Royal Edinburgh Hospital, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n4. Dipartimento di Psicologia Generale, Universit\u00e0 di Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is now possible for scientists to publicly catalogue all the data they have ever collected on one phenomenon. For a decade, we have been measuring a brain response to visual symmetry called the sustained posterior negativity (SPN). Here we report how we have made a total of 6674 individual SPNs from 2215 participants publicly available, along with data extraction and visualization tools (https://osf.io/2sncj/). We also report how re-analysis of the SPN catalogue has shed light on aspects of the scientific process, such as statistical power and publication bias, and revealed new scientific insights.\n\n## Introduction\n\nMany natural and man-made objects are symmetrical, and humans can detect visual symmetry very efficiently (Bertamini et al., 2018; Treder, 2010; Tyler, 1995; Wagemans, 1995). Visual symmetry has been a topic of research within experimental psychology for more than a century. In recent decades, two techniques \u2013 functional magnetic resonance imaging (fMRI) and electroencephalography (EEG) \u2013 have been used to investigate the impact of visual symmetry on a region of the brain called the extrastriate cortex. Since 2011, we have been using EEG in experiments at the University of Liverpool to measure a brain response to visual symmetry called the sustained posterior negativity (SPN; see Box 1 and Figure 1). By October 2020 we had completed 40 SPN projects: 17 of these had been published, and the remaining 23 were either unpublished or under review.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig1-v1.jpg)\n\n**Figure 1.:** The grand-average ERPs are shown in the upper left panel and difference waves (reflection-random) are shown in the lower left panel. A large SPN is a difference wave that falls a long way below zero. Topographic difference maps are shown on the right, aligned with the representative stimuli (black background). The difference maps depict a head from above, and the SPN appears as blue at the back. Purple labels indicate electrodes used for ERP waves [PO7, O1, O2 and PO8]. Note that SPN amplitude increases (that is, becomes more negative) with the proportion of symmetry in the image. In this experiment, the SPN increased from ~0 to \u20133.5 microvolts as symmetry increased from 20% to 100%. Adapted from Figures 1, 3 and 4 in Makin et al., 2020c.\n\nThe COVID pandemic stopped all our EEG testing in March 2020, and we used this crisis/opportunity to organize and catalogue our existing data. The data from all 40 of our SPN projects are now available in a public repository called \u201cThe complete Liverpool SPN catalogue\u201d (available at https://osf.io/2sncj/; see Box 2 and Figure 2). The catalogue allows us to draw conclusions that could not be gleaned from a single experiment. It can also support meta-scientific evaluation of our data and practices, as reported in the current article.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig2-v1.jpg)\n\n**Figure 2.:** (A) Examples of stimuli. (B). Grand-average ERP waves from electrodes PO7 and PO8 (upper panel), and the SPN as a reflection-random difference wave (with 95% CI; lower panel). The typical 300\u20131000ms SPN window is highlighted in yellow. Mean amplitude during this window was \u20132.503 microvolts (horizontal blue line). (C) SPN as a topographic difference map. (D) Violin plot showing SPN amplitude for each participant plus descriptive and inferential statistics. The file \u201cOne SPN Gallery.pdf\u201d (https://osf.io/eqhd5/) contains a figure like this for all 249 SPNs. The analysis details shown at the top of the figure are also explained in this file.\n\n## Meta-scientific lessons from the complete Liverpool SPN catalogue\n\nThere is growing anxiety about the trustworthiness of published science (Munaf\u00f2 et al., 2017; Open Science Collaboration, 2015; Errington et al., 2021). Many have argued that we should build cumulative research programs, where effects are measured reliably, and the truth becomes clearer over time. However, common practice often falls far short of this ideal. And although there has been a positive response to the replication crisis in psychology (Nelson et al., 2018), there is still \u2013 according to the cognitive neuroscientist Dorothy Bishop \u2013 room for improvement: \u201cmany researchers persist in working in a way almost guaranteed not to deliver meaningful results. They ride what I refer to as the four horsemen of the irreproducibility apocalypse\u201d (Bishop, 2019). The four horsemen are: (i) publication bias; (ii) low statistical power; (iii) p value hacking; (iv) HARKing (hypothesizing after results known).\n\nThe \u201cmanifesto for reproducible science\u201d includes these four items and two more: poor quality control in data collection and analysis, and the failure to control for bias (Munaf\u00f2 et al., 2017). Such critiques challenge all scientists to answer a simple question: are you practicing cumulative science, or is your research is undermined by the four horsemen of the irreproducibility apocalypse? Indeed, before compiling the SPN catalogue, we were unable to answer this question for our own research program.\n\nOne problem with replication attempts is their potentially adversarial nature. Claiming that other people\u2019s published effects are unreliable insinuates bad practice, while solutions such as \u201cadversarial collaboration\u201d are still rare (Cowan et al., 2020). In this context and heeding the call to make research in psychology auditable (Nelson et al., 2018), we decided to take an exhaustive and critical look at the complete SPN catalogue in terms of the four horsemen of irreproducibility.\n\n## Horseman one: publication bias\n\nMost scientists are familiar with the phrase \u201cpublish or perish\u201d and know it is easier to publish a statistically significant effect (P<.05). Null results accumulate in the proverbial file drawer, while false positives enter the literature. This publication bias leads to systematic overestimation of effect sizes in meta-analysis (Brysbaert, 2019; Button et al., 2013).\n\nThe cumulative distribution of the 249 SPN amplitudes is shown in Figure 3A (top panel), along with the cumulative distributions for those in the literature and those in the file drawer (middle panel). The unpublished SPNs were weaker than the published SPNs (mean difference = 0.354 microvolts [95% CI=0.162\u20130.546], t (218.003)=3.640, P<.001, equal variance not assumed). Furthermore, the published SPNs came from experiments with smaller sample sizes (mean sample sizes = 23.40 vs 29.49, P<.001, Mann-Whitney U test).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig3-v1.jpg)\n\n**Figure 3.:** (A) The top panel shows the cumulative distribution of all 249 grand-average SPNs. The smallest SPN is at the left-most end of the x-axis, and the largest SPN is at the right-most end. The blue line is comprised 249 data points, and the black lines show 95% confidence intervals. If the upper confidence interval does not rise above zero, we have a significant SPN (P<.05, two-tailed). The middle panel shows that the 134 unpublished SPNs in the file drawer (red) are smaller (i.e., less negative) than the 115 published SPNs in the literature (green). The bottom panel shows a funnel plot of 249 grand-average SPNs arranged by mean (x-axis) and standard error (y-axis). Red dots are unpublished SPNs, green dots are published SPNs. Dots to the left of the blue central triangle represent significant SPNs (inner edge, P<.05, outer edge, P<.01); if dots are inside the blue triangle, the effect is non-significant. (B) Equivalent set of plots for the peak amplitude P1 on regular trials. (C) Equivalent set of plots for the trough amplitude N1 on regular trials.\n\nTo further explore these effects, we ran three meta-analyses (using the metamean function from the dmetar library in R). Full results are described in supplementary materials (https://osf.io/q4jfw/). The weighted mean amplitude of the published SPNs was \u20131.138 microvolts [95% CI = \u20131.290; \u20130.986]. This was reduced to \u20130.801 microvolts [\u20130.914; \u20130.689] for the unpublished SPNs, and to \u20130.954 microvolts [\u20131.049; \u20130.860] for all SPNs. The funnel plot for the published SPNs (Figure 3A; bottom panel) is not symmetrically tapered (less accurate measures near the base of the funnel are skewed leftwards). This is a textbook fingerprint of publication bias. However, the funnel asymmetry was still significant for the unpublished SPNs and for all SPNs, so publication bias cannot be the explanation (see Zwetsloot et al., 2017 for detailed analysis of funnel asymmetry).\n\nThe amplitudes of the P1 peak and the N1 trough from the same trials provide an instructive comparison. Our SPN papers do not need large P1 and N1 components, so these are unlikely to have a systematic effect on publication. P1 peak was essentially identical in published and unpublished work (4.672 vs 4.686, t (195.11) = \u20130.067, P=.946; Figure 3B). This is potentially an interesting counterpoint to the SPN. However, the N1 trough was larger in published work (\u20138.736 vs. \u20137.155. t (183.61) = \u20135.636, P<.001; Figure 3C). The funnel asymmetry was also significant for both P1 and N1.\n\n### Summary for horseman one: publication bias\n\nThis analysis suggests a tendency for large SPNs to make it into the literature, and small ones to linger in the file drawer. In contrast, the P1 was essentially identical in published and unpublished work. However, we do not think publication bias is a problem in our SPN research. The published and unpublished SPNs are from heterogenous studies, with different stimuli and tasks. We would not necessarily expect them to have the same mean amplitude. In other words, the SPN varies across studies not only due to neural noise and measurement noise, but also due to experimental manipulations affecting the neural signal (although W-load and Task were similar in published and unpublished work, see Box 2). Furthermore, it is not the case that our published papers selectively report one side of a distribution with a mean close to zero. Our best estimate of mean SPN amplitude (\u20130.954 microvolts) is far below zero [95% CI = \u20131.049; \u20130.860]. The file drawer has no embarrassing preponderance of sustained posterior positivity.\n\nSome theoretically important effects can appear robust in meta-analysis of published studies, but then disappear once the file drawer studies are incorporated. Fortunately, this does not apply to the SPN. We suggest that assessment of publication bias is a feasible first step for other researchers undertaking a catalogue-evaluate exercise.\n\n## Horseman two: low statistical power\n\nAccording to Brysbaert, 2019, many cognitive psychologists have overly sunny intuitions about power analysis and fail to understand it properly. The first misunderstanding is that an effect on the cusp of significance (P=.05) has a 95% chance of successful replication, when in fact the probability of successful replication is only 50% (power = 0.5). Researchers often work on the cusp of significance, where power is barely more than 0.5. Indeed, one influential analysis estimated that median statistical power in cognitive neuroscience is just 0.21 (Button et al., 2013). In stark contrast, the conventional threshold for adequate power is 0.8. Although things may be improving, many labs still conduct underpowered experiments without sufficient awareness of the problem.\n\nTo estimate statistical power, one needs a reliable estimate of effect size, and this is rarely available a priori. In the words of Brysbaert, 2019, \u201cyou need an estimate of effect size to get started, and it is very difficult to get a useful estimate\u201d. It is well known that effect size estimates from published work will be exaggerated because of the file drawer problem (as described previously). It is less well known that one pilot experiment does not provide a reliable estimate of effect size (especially when the pilot itself has a small sample; Albers and Lakens, 2018). Fortunately, we can estimate SPN effect size from many experiments, published and unpublished, and this allows informative power analysis.\n\nFor a single SPN, the relevant effect size metric is Cohen\u2019s dz (mean amplitude difference/SD of amplitude differences). Figure 4A shows the relationship between SPN amplitude and effect size dz. The larger (more negative) the SPN in microvolts, the larger dz. The curve tails off for strong SPNs, resulting in a nonlinear relationship. The second order polynomial trendline was a better fit than the first order linear trendline (see the supplementary polynomial regression analysis at https://osf.io/f2659/). The same relationship is found whether regularity is task relevant or not (Figure 4B) and in published and unpublished work (Figure 4C). Crucially, we can now estimate typical effect size for an SPN with a given amplitude using this polynomial regression equation (see the SPN effect size calculator at https://osf.io/gm734/).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) The nonlinear relationship between SPN amplitude and effect size. The equation for the second order polynomial trendline is shown in panel A (y = 0.13x2+0.95 x - 0.03). This explains 86% of variance in effect size (R2=0.86). Using the equation, we can estimate effect size for an SPN of a given amplitude. Dashed lines highlight \u20130.5 microvolt SPNs, with average effect size dz of \u20130.469. For an 80% chance of finding this effect, an experiment requires 38 participants. The relationships were similar whether regularity was task relevant or not (B), and in published and unpublished work (C). (D\u2013F) How many participants show the SPN? The larger (more negative) the SPN, the more individual participants show the effect (regular < random). Dashed lines highlight \u20130.5 microvolt SPNs, which are quite often present in 2/3 but not 3/4 of the participants. The relationships were similar whether regularity was task relevant or not (E), and in published and unpublished work (F). (G) Table of required N for 80% chance of obtaining an SPN of a given amplitude. (H) Observed power and effect size of 40 SPN modulations. 15/40 do not reach the 0.8 threshold (red line).\n\nThis approach can be illustrated with 0.5 microvolt SPNs. Although these are at the low end of the distribution (Figure 4A), they can be interpreted and published (e.g., Makin et al., 2020a). The average dz for a 0.5 microvolt SPN is \u20130.469. Power analysis shows that to have an 80% chance of finding an effect of this size (P<.05, two tailed) we need a sample of 38 participants. In contrast, our median sample size is 24, which gives us an observed power of just 60%. In other words, if we were to choose a significant 0.5 microvolt SPN and rerun the exact same experiment, there is a 100%\u201360%=40% chance we would not find the significant SPN again. This is not a solid foundation for cumulative research.\n\nOnly a third of the 249 SPNs are 0.5 microvolts or less. However, many papers do not merely report the presence of a significant SPN. Instead, the headline effect is usually a within-subjects difference between experimental conditions. As a first approximation, we can assume the same power analysis applies to pairwise SPN modulations. We thus need 38 participants for an 80% chance of detecting an ~0.5 microvolt SPN difference between two regular conditions (and more participants for between-subject designs).\n\nThe table in Figure 4G gives required sample size (N) for 80% chance of obtaining SPNs of a particular amplitude (power = 0.8, alpha = 0.05, two-tailed). This suggests relatively large 1.5 microvolt SPNs could be obtained with just 9 participants. However, estimates of effect size are less precise at the high end (see the supplementary polynomial regression analysis at https://osf.io/f2659). A conservative yet feasible approach is to collect at least 20 participants even when confident of obtaining a large SPN or SPN modulation. Alternatively, researchers may require a sample that allows them to find the minimum effect that would still be of theoretical interest. Brysbaert, 2019, suggests this may often be ~0.4 in experimental psychology, and this requires 52 participants. Indeed, the theoretically interesting effect of Task on SPN amplitude could be in this range.\n\n### Power of nonparametric tests\n\nOf the 249 SPNs, 9.2% were not normally distributed about the mean according to the Shapiro-Wilk test (8.4% according to Kolmogorov-Smirnov test). Non-parametric statistics could thus be appropriate for some SPN analyses. For a non-parametric SPN, significantly more than half of the participants must have lower amplitude in the regular condition. We can examine this with a binomial test. Consider a typical 24 participant SPN: For a significant binomial test (P<.05, two tailed), we need at least 18/24=3/4 participants in the sample to show the directional effect (regular < random). Next, consider doubling sample size to 48: We now need only 32/48=2/3 participants in the sample to show the directional effect. Figure 4D\u2013F illustrates the proportion of participants showing the directional effect as a function of SPN amplitude. Only 146 of the 249 grand-average SPNs (59%) were computed from a sample where at least 3/4 of the participants showed the directional effect. Meanwhile, 183 (73%) were from a sample where at least 2/3 of the participants showed the directional effect (blue horizontals in Figure 4D). This analysis recommends increasing sample size to 48 in future experiments.\n\n### Power of SPN modulation effects\n\nWhen there are more than two conditions, mean SPN differences may be tested with ANOVA. To assess statistical power, we reran 40 representative ANOVAs from published and unpublished work. This includes all those which support important theoretical conclusions (Makin et al., 2015; Makin et al., 2016; Makin et al., 2020c; see https://osf.io/hgncs/ for a full list of the experiments used in this analysis). Observed power was less than the desired 0.8 in 15 of 40 (Figure 4H). We note that several underpowered analyses are from Project 7 (Makin et al., 2015). This is still an active research area, and we will increase sample size in future experiments.\n\n### Increasing the number of trials\n\nAnother line of attack is to increase the number of trials per participant. Boudewyn et al., 2018 argue that adding trials is alternative way to increase statistical power in ERP research, even when split-half reliability is apparently near ceiling (as it is in SPN research: Makin et al., 2020b). In one highly relevant analysis, Boudewyn et al., 2018 examined a within-participant 0.5 microvolt ERP modulation with a sample of 24 (our median sample). Increasing the number of trials from 45 to 90 increased the probability of achieving a significant effect from ~.54 to~.89 (see figure eight in Boudewyn et al., 2018). These authors caution that simulations of other ERP components are required to establish generalizability. We typically include at least 60 trials in each condition. However, going up to 100 trials per condition could increase SPN effect size, and this may mitigate the need to increase sample size (Baker et al., 2021). Of course, too many trials could introduce participant fatigue and a consequent drop in data quality. There is likely a sample size X trial number \u2018sweet spot\u2019 and are unlikely to have hit it already by luck.\n\n### Typical sample sizes in other EEG research\n\nWhen planning our experiments, we have often assumed that 24 is a typical sample size in EEG research. This can be checked objectively. We searched open-access EEG articles within the PubMed Central database using a text-mining algorithm. A total of 1,442 sample sizes were obtained. Mean sample size was 35 (\u00b122.97) and a median was 28. The most commonly occurring sample size was 20. We also extracted sample sizes from 74 EEG datasets on the OpenNeuro BIDS compliant repository. The mean sample size was 39.34 (\u00b138.56), the median was 24, and the mode was again 20. Our SPN experiments do indeed have typical sample sizes, as we had assumed.\n\n### Summary for horseman two: low statistical power\n\nLow statistical power is an obstacle to cumulative SPN research. Before the COVID pandemic stopped all EEG research, we were completing around 10 EEG experiments per year with a median sample of 24. When EEG research starts again, we may reprioritize, and complete fewer experiments per year with more participants in each. Furthermore, one can tentatively assume that other ERPs have comparable signal/noise properties to the SPN. If so, we can plausibly infer that many ERP experiments are underpowered for detecting 0.5 microvolt effects. Figure 4G thus provides a rough sample size guide for ERP researchers, although we stress that more ERP-specific estimates of effect size should always be treated as superior. We also stress that our sample size recommendations do not directly apply to multi-level or multivariate analyses, which are increasingly common in many research fields. Nevertheless, this investigation has strengthened our conviction that EEG researchers should collect larger samples by default. Several benefits more than make up for the extra time spent on data collection. Amongst other things, larger samples reduce Type 2 error, give more accurate estimates of effect size, and facilitate additional exploratory analyses on the same data sets.\n\n## Horseman three: P-hacking\n\nSensitivity of an effect to arbitrary analytical options is called the \u2018vibration of the effect\u2019 (Button et al., 2013). An effect that vibrates substantially is vulnerable to \u2018P-hacking\u2019: that is, exploiting flexibility in the analysis pipeline to nudge effects over the threshold for statistical significance (for example, P=.06 conveniently becomes P=.04, and the result is publishable). \u201cDouble dipping\u201d is one particularly tempting type of P-hacking for cognitive neuroscientists because we typically have such large, multi-dimensional data sets (Kriegeskorte et al., 2009). Researchers can dip into a large dataset, observe where something is happening, then run statistical analysis on this data selection alone. For example, in one early SPN paper, H\u00f6fel and Jacobsen, 2007a state that \"Time windows were chosen after inspection of difference waves\" (page 25, section 2.8.3). It is commendable that H\u00f6fel and Jacobsen were so explicit: often double dipping is spread across months where researchers alternate between \u2018preliminary\u2019 data visualization and \u2018preliminary\u2019 statistical analysis so many times that they lose track of which came first. Double dipping beautifies results sections, but without appropriate correction, it inflates Type 1 error rate. We thus attempted to estimate the extent of P-hacking in our SPN research, with a special focus on double dipping.\n\n### Electrode choice\n\nPost hoc electrode choice can sometimes be justified: Why analyse an electrode cluster that misses the ERP of interest? Post hoc electrode choice could be classed as a questionable research practice rather than flagrant malpractice (Agnoli et al., 2017; Fiedler and Schwarz, 2015; John et al., 2012). Nevertheless, we must at least assess the consequences of this flexibility. What would have happened if we had dogmatically stuck with the same electrodes for every analysis, without granting ourselves any flexibility at all?\n\nTo estimate this, we chose three a priori bilateral posterior electrode clusters and recomputed all 249 SPNs (Cluster 1 = [PO7 O1, O2 PO8], Cluster 2 = [PO7, PO8], Cluster 3 = [P1 P3 P5 P7 P9 PO7 PO3 O1, P2 P4 P6 P8 P10 PO8 PO4 O2]). The first two clusters were chosen because we have used them often in published research (Cluster 1: Makin et al., 2020c; Cluster 2: Makin et al., 2016). Cluster 3 was chosen because the 16 electrodes cover the whole bilateral posterior region. These three clusters are labelled on a typical SPN topoplot in Figure 5A. Reassuringly, we found that SPN amplitude is highly correlated across clusters (Pearson\u2019s r ranged from .946 to .982, P<.001; Figure 5B). This suggests vibration is low, and flexible electrode choice has not greatly influenced our SPN findings. In fact, mean SPN amplitude would have been slightly higher if we had used Cluster 2 for all projects. Average SPN amplitude was \u20130.98 microvolts [95% CI = \u20131.08 to \u20130.88] with the original cluster, \u20130.961 [\u20131.05; \u20130.87] microvolts for Cluster 1,\u20131.12 [\u20131.22; \u20131.01] microvolts for Cluster 2, and \u20130.61 [ \u20130.66; \u20130.55] microvolts for Cluster 3.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig5-v1.jpg)\n\n**Figure 5.:** (A) Typical SPN topographic difference map with labels colour coded to show three alternative electrode clusters, which could have been used dogmatically in all analyses, whatever the observed topography. (B) Scatterplots show SPNs from the original cluster and the three alternatives, which are highly correlated. (C) One-sample t-tests were used to establish whether each SPN is significant. The cumulative distribution of p values is shown here. The smallest p value (from the most significant SPN) is at the left-most end of the x axis, and the largest p value (from the least significant SPN) is at the right-most end. The p values from the original cluster and the three alternatives were very similar. There was a similar number of significant SPNs (169\u2013177). (D) ANOVAs are used to assess SPN modulations. The p values from 40 representative ANOVA effects do not overlap completely. There were more significant SPN modulations when the original electrode cluster was used than any alternative (38 vs 35\u201329).\n\nNext, we ran one-sample t-tests on the SPN as measured at the 4 alternative clusters. The resulting p values are shown cumulatively in Figure 5C. Crucially, the area under the curve is similar for all cases. The significant SPN count varies only slightly, between 169 and 177 (\u03c72 (3)=0.779, P=.854). We conclude that flexible electrode choice has not substantially inflated the number of significant SPNs in our research.\n\nTo illustrate this in another way, Figure 6 shows a colour-coded table of p values, sorted by original cluster. At the top there are many rows which are significant whichever cluster is used (green rows). At the bottom there are many rows which are non-significant whichever cluster is used (red rows). The interesting rows are in the middle, where there is some disagreement indicating that the original effect was a false positive (some green and some red cells on each row). We can zoom in on the central portion: where, exactly, are the disagreements? Two cases come from Wright et al., 2017 however, this project reported a contralateral SPN, and these are inevitably more sensitive to electrode choice because they only cover half the scalp surface area.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig6-v1.jpg)\n\n**Figure 6.:** The left column shows a table of all 249 SPNs, colour coded (green, significant; red, non-significant), and sorted by p value obtained using the original cluster. The important part of the table is the centre, where significance thresholds are crossed by some clusters but not others. The central part is expanded, so text is now readable. The important cases are published SPNs that are not significant when either Cluster 1 or 2 is used instead. These 4 cases are all labelled (red boxes).\n\nWe applied the same reanalysis to our 40 representative ANOVA main effects and interactions. Here there is more cause for concern: 38 of the 40 effects were significant using the original electrode cluster, however this goes down to 33 with Cluster 1, 35 with Cluster 2, and to just 29 with Cluster 3 (Figure 5D). Flexible electrode choice has thus significantly increased the number of significant SPN modulations (\u03c72 (3)=8.107, P=.044).\n\n### Spatio-temporal clustering\n\nThe above analysis examines consequences of choosing different electrode clusters a priori, while holding time window constant. Next, we used a spatio-temporal clustering technique (Maris and Oostenveld, 2007) to identify both electrodes and timepoints where the difference between regular and irregular conditions is maximal. Does this purely data driven approach lead to the same conclusions as the original analysis from a priori electrode clusters?\n\nAfter obtaining all negative electrode clusters with significant effect (P<.05, two tailed) the single most significant cluster was extracted for each SPN. The proportion of times that each electrode appeared in this cluster is illustrated in Figure 7A (electrodes present in less than 10% of cases are excluded). Findings indicate that electrodes O1 and PO7 are most likely to capture the SPN over the left hemisphere, and O2 and PO8 are most likely to capture the SPN over the right hemisphere. This is consistent with our typical a priori electrode selections. Figure 7B shows activity was mostly confined to the 200 to 1000ms window, extending somewhat to 1500ms. This is consistent with our typical a priori time window selections. Apparently there were no effects at electrodes or at time windows we had previously neglected.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig7-v1.jpg)\n\n**Figure 7.:** The upper image illustrates the proportion of times each electrode appeared in the most significant negative cluster. Electrodes appearing in less than 10% of cases are excluded. The topoplot inset shows proportions on a colour scale for all electrodes. The lower image illustrates the time course over which the same negative clusters were active, ranked by SPN magnitude.\n\nTo quantify these consistencies, SPNs were recomputed using the electrode cluster and time window obtained with spatiotemporal cluster analysis. There was a strong correlation between this and SPN from each a priori cluster (Pearson\u2019s r ranged from .719 to .746, P<.001; Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig8-v1.jpg)\n\n**Figure 8.:** Red data points indicate no significant negative cluster was found for that SPN. For these points, the mean SPN cluster is plotted as zero and does not influence the green least-squares regression line.\n\nThere are two further noteworthy results from spatiotemporal clustering analysis. First, 74% of published data sets yielded a significant cluster, while the figure was only 57% for unpublished data (as of May 2022). This is another estimate of publication bias. Second, we can explain some of the amplitude variation shown in Figure 8. As described in Box 2, 33% of variance in grand-average SPN amplitude can be predicted by two factors called W and Task (SPN (microvolts) = \u20131.669 W \u2013 0.416Task + 0.071). We also ran this regression analysis on the spatiotemporal cluster SPNs (i.e., the blue data points in Figure 8). The two predictors now explained just 16.8% of variance in grand-average SPN amplitude (SPN (microvolts) = \u20130.557 W \u2013 0.170Task \u2013 0.939). The reduced R2, shallower slopes and lower intercept are largely caused by the fact that many data sets had to be excluded because they did not yield a cluster (i.e., the red data points in Figure 8). This highlights one disadvantage of spatiotemporal clustering: For many purposes we want to include small and non-significant SPNs in pooled analysis of the whole catalogue. However, these relevant data points are missing or artificially set at zero if SPNs are extracted by spatiotemporal clustering.\n\n### Pre-processing pipelines\n\nThere are many pre-processing stages in EEG analysis (Pernet et al., 2020). For example, our data is often re-referenced to a scalp average, low pass filtered at 25 Hz, down-sampled to 128 Hz and baseline corrected using a \u2013200 to 0ms pre-stimulus interval. We then remove some blink and other large artifacts with independent components analysis (Jung et al., 2000). We sometimes remove noisy electrodes with spherical interpolation. We then exclude trials where amplitude exceeds +/-100 microvolts at any electrode.\n\nTo examine whether these pre-processing norms are consequential, we reanalysed data from 5 experiments from Project 13 in BESA instead of Matlab and EEGLAB, using different cleaning and artifact removal conventions. When using BESA, we employed the recommended pipelines and parameters. Specifically, we used a template matching algorithm to identify eye-blinks and used spatial filtering to correct eye-blinks within the continuous data. Trials were removed that exceeded an amplitude of \u00b1120 microvolts or a gradient of \u00b175 (with the gradient being defined as the difference in amplitude between two neighbouring samples). Although this trial exclusion takes place on filtered data, remaining trials are averaged across pre-filtered data. High and low pass filters were set to 0.1 and 25 Hz in both EEGLAB and BESA. While EEGLAB used zero-phase filters, filtering in BESA used a forward-filter for the high-pass filter but used a zero-phase filter for the low-pass. As seen in Figure 9, similar grand-average SPNs fall out at the end of these disparate pipelines.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/66388/elife-66388-fig9-v1.jpg)\n\n**Figure 9.:** Panels show SPN waves for each of the 5 experiments in project 13. EEGLAB waves are the solid lines; the BESA waves are the dashed lines. 20%\u2013100% refers to the proportion of symmetry in the stimulus (see Figure 1 for example stimuli).\n\nWe conclude that post-hoc selection of electrodes and time windows are weak points that can be exploited by unscrupulous P-hackers. Earlier points in the pipeline are less susceptible to P-hacking because changing them does not predictably increase or decrease the desired ERP effect.\n\n### Summary for horseman three: P-hacking\n\nIt is easier to publish a simple story with a beautiful procession of significant effects. This stark reality may have swayed our practice in subtle ways. However, our assessment is that P-hacking is not a pervasive problem in SPN research, although some effects rely too heavily on post hoc data selection.\n\nReassuringly, we found most effects could be recreated with a variety of justifiable analysis pipelines: Data-driven and a priori approaches gave similar results, as did different EEGLAB and BESA pipelines. This was not a foregone conclusion \u2013 related analysis in fMRI has revealed troubling inconsistencies (Lindquist, 2020; Botvinik-Nezer et al., 2020). It is advisable that all researchers compare multiple analysis pipelines to assess vibration of effects and calibrate their confidence accordingly.\n\n## Horseman four: HARKing\n\nHypothesizing After Results Known or HARKing (Kerr, 1998; Rubin, 2017), is a potential problem in EEG research. Specifically, it is possible to conduct an exploratory analysis, find something unexpected, then describe the results as if they were predicted a priori. At worst, a combination of P-hacking and HARKing can turn noise into theory, which is then cited in the literature for decades. Even without overt HARKing, one can beautify an introduction section after the results are known, so that papers present a simple narrative (maybe this post hoc beautification could be called BARKing). Unlike the other horses, HARKing and BARKing are difficult to diagnose with reanalysis, which is why this section is shorter than the previous sections.\n\nThe main tool to fight HARKing is online pre-registration of hypotheses (for example, on aspredicted.org or osf.io). We have started using pre-registration routinely in the last four years, but we could have done so earlier. An even stricter approach is to use registered reports, where the introductions and methods are peer reviewed before data collection. This can abolish both HARKing and BARKing (Chambers, 2013; Munaf\u00f2 et al., 2017), but we have only just started with this. Our recommendation is to use heavy pre-registration to combat HARKing. Perhaps unregistered EEG experiments will be considered unpublishable in the not-too-distant future.\n\n## Discussion\n\nOne of the most worrisome aspects of the replication crisis is that problems might be systemic, and not caused by a few corrupt individuals. It seems that the average researcher publishes somewhat biased research, without sufficient self-awareness. So, what did we find when we looked at our own research?\n\nAs regards publication bias \u2013 the first horseman of irreproducibility \u2013 we found that the 115 published SPNs were slightly stronger than the 134 unpublished ones. However, we are confident that there is no strong file drawer problem here. Even the unpublished SPNs are in the right direction (regular < random not random < regular). Furthermore, a complete SPN catalogue itself fights the consequences of publication bias by placing everything that was in the file drawer into the public domain.\n\nWe are more troubled by the second horseman: low statistical power. Our most negative conclusion is that reliable SPN research programs require larger samples than those we typically obtain (38 participants are required to reliably measure \u20130.5 microvolt SPNs and our median sample size is 24). This analysis has lessons for all researchers: It is evidently possible to \u2018get by\u2019 while routinely conducting underpowered experiments. One never notices a glaring problem: after all, underpowered research will often yield a lucky experiment with significant results, and this may support a new publication before moving on to the next topic. However, this common practice is not a strong foundation for cumulative research.\n\nThe costs of underpowered research might be masked by the third horseman: P-hacking. Researchers often exploit flexibility in the analysis pipeline to make borderline effects appear significant (Simmons et al., 2011). In EEG research, this often involves post-hoc selection of electrodes and time windows. Although some post-hoc adjustment is arguably appropriate, this double dipping certainly inflates false positive rate and requires scrutiny. We found that the same basic story would have emerged if we had rigidly used the same a priori electrode clusters in all projects or used a spatio-temporal clustering algorithm for selection. However, some of our SPN modulations were not so robust, and we have relied on post hoc time windows.\n\nThe fourth horseman, HARKing, is the most difficult dimension to evaluate because it cannot be diagnosed with reanalysis. Nevertheless, pre-registration is the best anti-HARKing tool, and we could have engaged with this earlier. We are just beginning with pre-registered reports.\n\nTo summarize these evaluations, we would tentatively self-award a grade of A- for publication bias (75%, or lower first class, in the UK system), C+ for statistical power (58%), B+ for P-Hacking (68%), and B for Harking (65%). While some readers may not be interested in the validity of SPN research per se, they may be interested in this meta-scientific exercise, and we would encourage other groups to perform similar exercises on their own data. In fact, such exercises may be essential for cumulative science. It has been argued that research should be auditable (Nelson et al., 2018), but Researcher A will rarely be motivated to audit a repository uploaded by Researcher B, even if the datasets are FAIR. To fight the replication crisis, we must actively look in the mirror, not just passively let others snoop through the window.\n\nKlapwijk et al., 2021 have performed a similar meta-scientific evaluation in the field of developmental neuroimaging and made many practical recommendations. All our themes are evident in their article. We also draw attention to international efforts to estimate the replicability of influential EEG experiments (Pavlov et al., 2020). These mass replication projects provide a broad overview. Here we provide depth, by examining all the data and practices from one representative EEG lab. We see these approaches as complementary: they both provide insight into whether a field is working in a way that generates meaningful results.\n\nThe focus on a single lab inevitably introduces some biases and limitations. Other labs may use different EEG apparatus with more channels. This would inevitably have some effect on the recordings. More subtle differences may also matter: For instance, other labs may use more practice trials or put more stress on the importance of blink suppression. However, the heterogeneity of studies and pipelines explored here ensures reasonable generalizability. We are confident that our conclusions are relevant for SPN researchers with different apparatus and conventions.\n\nCurated databases are an extremely valuable resource, even if they are not used for meta-scientific evaluation. Public catalogues are an example of large-scale neuroscience, the benefits of which have been summarized by the neuroscientist Jeremy Freeman as follows: \u201cUnderstanding the brain has always been a shared endeavour. But thus far, most efforts have remained individuated: labs pursuing independent research goals, slowly disseminating information via journal publications, and when analyzing their data, repeatedly reinventing the wheel\u201d (Freeman, 2015). We tried to make some headway here with the SPN catalogue.\n\nPerhaps future researchers will see their role as akin to expert museum curators, who oversee and update their public catalogues. They will obsessively tidy and perfect the analysis scripts, databases and metafiles. They will add new project folders every year, and judiciously determine when previous theories are no longer tenable. Of course, many researchers already dump raw data in online repositories, but this is not so useful. Instead, we need FAIR archives which are actively maintained, organized, and promoted by curators. The development of software, tools and shared repositories within the open science movement is making this feasible for most labs. We are grateful to everyone who is contributing to this enterprise.\n\nIt took more than a year to find all the SPN data, organize it, reformat it, produce uniform scripts, conduct rigorous double checks, and upload material to public databases. However, we anticipate that it will save far more than a year in terms of improved research efficiency. It is also satisfying that unpublished data sets are not merely lost. Instead, they are now contributing to more reliable estimates of SPN effect size and power. It is unlikely that any alternative activity could have been more beneficial for SPN research.\n",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "a31c4aef-e9ee-459b-a0f2-5f49ebb89e19",
+      "submission_id": "61f95d14-28e1-40ce-a23b-abaff03ae398",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66388.sa1](https://doi.org/10.7554/eLife.66388.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Meta-Research: Lessons from a catalogue of 6674 brain recordings\" to eLife for consideration as a Feature Article. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by the eLife Features Editor (Peter Rodgers). The following individuals involved in review of your submission have agreed to reveal their identity: Peter Kohler (Reviewer #1); Cyril Pernet (Reviewer #3).\n\nThe reviewers and editor have discussed the reviews and drafted this decision letter to help you prepare a revised submission. While the reviewers were largely positive about your manuscript, there are quite a few important points that need to be addressed to make the article suitable for publication.\n\nSummary\n\nThis manuscript comes from a group in Liverpool who for the last decade have used event-related electroencephalography (EEG) to measure a brain response known as the sustained posterior negativity (SPN). The SPN provides a readout of processing of symmetry and other types of visual regularity. The goal of the current paper is not to offer new information about the role of symmetry in visual perception, but rather to provide a meta-analysis of scientific practice based on the thousands of studies, published and unpublished, accumulated by the authors over the years. The authors use this rare dataset to evaluate their own performance on four key concerns that are known to lead to irreproducible results. The conclusions the authors make about their own scientific practice are largely supported by the data, and the findings offer some recommendations on how to best measure the SPN in future studies. The authors succeed in providing an even-handed estimate of the reproducibility of their research over the last 10 years but are less successful in generalizing their conclusions.\n\nThe main strength of the manuscript is the data set, which contains every SPN study ever recorded at the University of Liverpool \u2013 more than 6000 recordings of the SPN from more than 2000 participants. The authors have obviously put substantial effort into cleaning up and organizing the data and have made the dataset publicly available along with analysis tools. As such, the data represents a herculean exercise in data sharing and open science and should inspire EEG researchers who are interested in following best practices in those domains. Another strength of the paper are the analyses of publication bias and statistical power, which are quite well-done and fairly unique, at least for EEG research.\n\nThe dataset clearly has value in itself, but the potential broader interest of the manuscript depends critically on what the authors do with the data and to what extent their findings can provide general recommendations. The main weakness is that the findings are fairly specific to the measurement modality and brain response (SPN) measured by the authors. In my reading there is generally little attempt to relate the conclusions to other event-related EEG signals, much less to other EEG approaches or other measurement modalities. The sections on Publication Bias and Low Statistical Power are arguably inherently difficult to generalize beyond the SPN. The section on P-hacking, however, is directly limited in impact by analyses that are either very simplistic or missing entirely. The electrode choice section attempts to evaluate the impact of that particular approach to dimensionality reduction, but that is only one of many approaches regularly used in EEG research. The authors discuss that the selection of time window is an important parameter that can influence the results, but there is no actual analysis of the effect of time window selection across the many studies in the dataset. Finally, the analysis of the effect of pre-processing in the same section is also fairly limited in impact, because only one experiment is reanalysed, rather than the whole dataset.\n\nIn conclusion, the manuscript will clearly be of interest for the relatively narrow range of researchers who study the SPN using event-related EEG. In addition, the dataset will serve as a useful example of large-scale curated sharing of EEG data. Beyond that, I think the impact and utility of the manuscript in its current from will be relatively limited.\n\nEssential Revisions\n\n1 Data sharing\n\nWe encourage the authors to make their data available in a way that is FAIR. As it stands the data are Findable and Accessible, but not much Interoperable or Reusable. For example, using BIDS elecrophysiological derivatives and given the authors experience with EEGLAB, they could use the.set format along with a flat structure and proper metadata (particiants.tsv, data_description.json, channels.tsv, electrodes.tsv, etc.) For more detail, see: https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw/edit; Pernet et al., 2019; bids.neuroimaging.io.\n\nMany of these can be done using matlab tools to generate data (https://github.com/bids-standard/bids-starter-kit and https://github.com/sccn/bids-matlab-tools).\n\nhttps://github.com/bids-standard/bids-matlab could be used to make analysis scripts more general.\n\nDo reach out to the BIDS community and/or myself [Cyril Pernet] if you need help.\n\nA classification of experiments could also be useful (using, say, the cognitive atlas ontology [https://www.cognitiveatlas.org/]).\n\n2 Introduction\n\na) The introduction needs to better explain the SPN \u2013 how it is generated, what it is suppose to reflect/measure, how the potential is summarized in a single mean, etc.\n\nb) Please add a paragraph at the end of the introduction telling readers more about the data, how they can get access to them, how they can reproduce your analyses, and what else it is possible to do with the data.\n\n3 Figures\n\na) Related to the previous point, figures 1-3 are of limited usefulness to the reader. Please replace them with a single figure that includes a small number of illustrative SPN waves and a small number of illustrative topographic difference maps to clarify the explanation of the SPN (see previous point). Please include no more than four panels in reach row of the figure, and please ensure that the caption for the new figure 1 adequately explains all the panels in the figure.\n\nb) The present figure 1 can then become Figure 1\u2014figure supplement 1, and likewise for the present figures 2 and 3.\n\nc) Please consider grouping the panels within each of these three figure supplements according to, say, a cognitive atlas ontology [https://www.cognitiveatlas.org/] (or similar).\n\nd) Also, for the difference maps, please consider avoiding jet and using instead a linear luminance scale (eg, https://github.com/CPernet/brain_colours).\n\ne) Figure 4b. Please delete the bar graph in the inset and give the three mean values (and confidence intervals) in the figure caption.\n\nf) Figure 6. Please delete the bar graph (panel C) and give the four mean values (and confidence intervals) in the figure caption.\n\n4 More complete reporting\n\na) Please include a table (as a Supplementary file) that provides information about the electrodes and time windows used in each of the studies. If the electrodes and/or time windows varied across the SPN waves within a study, please explain why.\n\nb) Along similar lines, what stimulus types and tasks were used for what fraction of the SPNs in the dataset? SPNs can be measured for many types of regularity and varies with both stimulus parameters and task (as noted by the authors). This means that the SPN varies across studies not just by neural noise and measurement noise, but also by differences in neural signal. This is not necessarily a weakness of the analyses reported here, but it should be noted, so please include a table (as a Supplementary file) that provides information about the stimulus types and tasks used in the studies.\n\n5 Further analyses\n\na) The Electrode Choice analysis estimates the effect of a priori selection of electrode ROIs, by comparing three such ROIs, each a smaller subset of the other. Perhaps not surprisingly the responses are highly correlated, and the overall effects change little. I would recommend considering more data-driven approaches to spatial filtering and dimensionality reduction. There are many such approaches, but two that come to mind are reliable components analysis (Dmochowski et al., 2012; Dmochowski et al., 2014; Dmochowski and Norcia, 2015) and non-parametric spatiotemporal clustering (Maris and Oostenveld, 2007). It would be interesting to see if approaches such as these would produce different effect sizes or identified a different set of electrodes across the many studies in the dataset. This could also serve as an assessment of the ability of these methods to identify the same spatial filters / clusters of electrodes across a large dataset. Given that these methods are widely used in the EEG/MEG-community, this would considerably enhance the impact of the manuscript. The spatiotemporal approach could also help address the time window selection issue, as outlined in my next point.\n\nb) The authors acknowledge that the selection of time window is an important parameter that can influence the results, but do not include any analysis of this. Please include an analysis of the effect of time window selection across the many datasets. Also, please comment on how it is possible to measure and separate early and late effects using event-related EEG.\n\nc) The analysis of the effect of pre-processing is also of potential broad interest to researchers doing EEG, but it is limited in impact, because only one study is re-analyzed. I understand that it may be impractical to re-analyze every study in the dataset 12 different ways, but re-analyzing a single dataset seems to have limited utility in the context of the current manuscript. Please either extend this analysis or remove it from the manuscript.\n\nd) Re pre-processing pipelines, please consider discussing some of the recommendations in Pernet et al. [doi.org/10.1038/s41593-020-00709-0]\n\n6 Limitations associated with using data from just one group.\n\nThe overall approach to the cumulative research program and the specific suggestions to reduce the experimental bias and improve researchers' self-awareness is indeed helpful but in line with the previously known findings on reproducibility limitations. Furthermore, a re-analysis, which specifically relies on single site single group acquisitions, poses additional issues or specific bias (e.g., data acquisition, methodology, experimental design, data pre-processing, etc.) to the generalizability of the results that the authors should have considered. A comparison with an independent sample of data would make the analysis less autoreferential and methodologically stronger. If possible, please include a comparison with an independent sample of data: if such a comparison is not possible, please discuss the limitations and potential biases associated with using data from just one group.\n\n7 Awarding grades\n\nThe authors grading their work does not bring anything to our understanding of reproducibility; please remove.\n\n8 Advice for other researchers\n\nThe manuscript currently has a strong focus on SPN research and in places almost reads like a 10-year report on scientific practice within a specific research group. This is undoubtedly valuable, but of limited general interest. So, I hope the authors will forgive an open-ended suggestion. Namely that they carefully consider the ways in which their findings might be valuable to researchers outside their own sphere of interest. I have suggested a few ways above, but perhaps the authors can think of others. What recommendations would the authors make to scientists working in other domains of brain imaging, based on the findings?\n\n9 Publication bias\n\na) Line 145. \"A meta-analysis based on the published SPNs along would overestimate...\". It is essential that you perform such a meta-analysis. What you have done is compare the means computed from all vs. published, but not set-up a meta-analysis in which the mean is estimated from the means and variances of published studies alone (I suggest dmetar which is super easy to use even if you never used R / R-studio before; https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). That extra analysis will be very useful because, people do not have access to the data to compute the mean and thus use this meta-analytical approach (how much this will differ from -1.17uV?; in theory it should bring the results closer to -0.94uV)\n\n10 Low statistical power\n\n\u2013 Power analysis: You need to explain better the analysis. It is also essential that you demonstrate that a 2nd order polynomial fits better than a 1st order using AIC and RMSE. A second aspect is that you cannot predict effect size from amplitude because the polynome you have was obtained for the entire dataset. This is a typical machine learning regression setting: you need to cross-validate to produce an equation than generalizes -- given the goal is to generalize across experiments, a natural cross validation scheme would be the experimental belonging (fit all data but one experiment, test \u2013 iterate to optimize parameters).\n\n\u2013 Nonlinearity: to further look into that question you need the complementary plot Cohens'd vs. variance (or 3d plot d, variance, amplitude but sometimes it's hard to see). Given that d = mean/std, the nonlinearity arises because there is a 'spot' where variance behave strangely (likely for the midrange amplitude values). This also relates to your discussion on the number of trials because the number of trials increases precision and in principle reduce between subject variance; depending on expected amplitude the number of trials should therefore be adjusted to reduce variance bias.\n\n11 Miscellaneous\n\na) Please provide links to the code for the analysis presented in the paper.\n\nb) Please consider making the data-viewing app agnostic wrt operating system.\n\nc) Re the headline effects reported in figure 5: the explanation of these effects in the in the repository needs to be more detailed.\n\nd) Line 148. Please say more about the reasons why 68 SPNs \"will likely in the file drawer forever\".\n\ne) Line 191 onwards. When talking about pilot studies please add references (for instance Lakens (doi.org/10.1016/j.jesp.2017.09.004). Also, please consider discussing the smallest effect size of interest instead of absolute effect size.\n",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "33a90245-52eb-4019-8e6e-2f21d76b7507",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C1",
+      "claim": "The complete Liverpool SPN catalogue contains 6674 individual SPNs from 2215 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report how we have made a total of 6674 individual SPNs from 2215 participants publicly available, along with data extraction and visualization tools (https://osf.io/2sncj/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the number of recordings and participants in the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "19cd0c34-f4e7-40db-8080-008770575185",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C2",
+      "claim": "Humans can detect visual symmetry very efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Many natural and man-made objects are symmetrical, and humans can detect visual symmetry very efficiently (Bertamini et al., 2018; Treder, 2010; Tyler, 1995; Wagemans, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "c1f09409-3d06-4a80-9ba8-78091b0bffe8",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C3",
+      "claim": "The sustained posterior negativity (SPN) is a brain response to visual symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 2011, we have been using EEG in experiments at the University of Liverpool to measure a brain response to visual symmetry called the sustained posterior negativity (SPN; see Box 1 and Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text defines the SPN as a brain response to visual symmetry based on the authors' research program.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "14e93125-7158-4486-bf5d-393db7fa342f",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C4",
+      "claim": "By October 2020, 40 SPN projects had been completed, with 17 published and 23 unpublished or under review.",
+      "claim_type": "EXPLICIT",
+      "source": "By October 2020 we had completed 40 SPN projects: 17 of these had been published, and the remaining 23 were either unpublished or under review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the number of projects and their publication status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "bbf961a4-873c-40f3-92b7-6afbd63e533b",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C5",
+      "claim": "SPN amplitude increases with the proportion of symmetry in the image.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that SPN amplitude increases (that is, becomes more negative) with the proportion of symmetry in the image. In this experiment, the SPN increased from ~0 to \u20133.5 microvolts as symmetry increased from 20% to 100%. Adapted from Figures 1, 3 and 4 in Makin et al., 2020c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from a specific experiment and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "e46fc1e6-98b4-4261-94e0-2e98b44b42c4",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C6",
+      "claim": "The COVID pandemic stopped all EEG testing in March 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID pandemic stopped all our EEG testing in March 2020, and we used this crisis/opportunity to organize and catalogue our existing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states when testing stopped due to the pandemic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "26a77834-4cdf-44cf-9f96-1bb6ad1b9662",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C7",
+      "claim": "The complete Liverpool SPN catalogue is publicly available at https://osf.io/2sncj/.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from all 40 of our SPN projects are now available in a public repository called \"The complete Liverpool SPN catalogue\" (available at https://osf.io/2sncj/; see Box 2 and Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the URL for the public repository.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "702be6b4-700c-4238-85f6-e234e933d2a2",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C8",
+      "claim": "Publication bias leads to systematic overestimation of effect sizes in meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This publication bias leads to systematic overestimation of effect sizes in meta-analysis (Brysbaert, 2019; Button et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on publication bias.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "3986a2c4-e395-48cd-b620-ea01e667621b",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C9",
+      "claim": "Unpublished SPNs were weaker than published SPNs by a mean difference of 0.354 microvolts.",
+      "claim_type": "EXPLICIT",
+      "source": "The unpublished SPNs were weaker than the published SPNs (mean difference = 0.354 microvolts [95% CI=0.162\u20130.546], t (218.003)=3.640, P<.001, equal variance not assumed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the catalogue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "a9a55075-188e-4212-a4b4-b090e4a49937",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C10",
+      "claim": "Published SPNs came from experiments with smaller sample sizes than unpublished SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the published SPNs came from experiments with smaller sample sizes (mean sample sizes = 23.40 vs 29.49, P<.001, Mann-Whitney U test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of sample sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "dbe5b137-a297-4860-a3e9-bd9106c2facc",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C11",
+      "claim": "The weighted mean amplitude of published SPNs was \u20131.138 microvolts.",
+      "claim_type": "EXPLICIT",
+      "source": "The weighted mean amplitude of the published SPNs was \u20131.138 microvolts [95% CI = \u20131.290; \u20130.986].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on meta-analysis of published SPNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "1ab4d3b0-4dc7-4af2-970b-3335a180c6d9",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C12",
+      "claim": "The weighted mean amplitude of unpublished SPNs was \u20130.801 microvolts.",
+      "claim_type": "EXPLICIT",
+      "source": "This was reduced to \u20130.801 microvolts [\u20130.914; \u20130.689] for the unpublished SPNs, and to \u20130.954 microvolts [\u20131.049; \u20130.860] for all SPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on meta-analysis of unpublished SPNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "d091ecce-2aaf-484f-bfce-3ce33b4ab60d",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C13",
+      "claim": "The weighted mean amplitude of all SPNs was \u20130.954 microvolts.",
+      "claim_type": "EXPLICIT",
+      "source": "This was reduced to \u20130.801 microvolts [\u20130.914; \u20130.689] for the unpublished SPNs, and to \u20130.954 microvolts [\u20131.049; \u20130.860] for all SPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on meta-analysis of all SPNs in the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "c7fb2942-a9ff-4c6f-8a40-4305d453c69c",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C14",
+      "claim": "The funnel plot for published SPNs shows asymmetry, which is a fingerprint of publication bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The funnel plot for the published SPNs (Figure 3A; bottom panel) is not symmetrically tapered (less accurate measures near the base of the funnel are skewed leftwards). This is a textbook fingerprint of publication bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on visual inspection of the funnel plot and comparison to known patterns of publication bias.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "205c1716-88f2-4eb6-8eca-70e7fd46f95d",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C15",
+      "claim": "Funnel asymmetry was significant for unpublished SPNs and all SPNs, indicating publication bias cannot be the sole explanation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the funnel asymmetry was still significant for the unpublished SPNs and for all SPNs, so publication bias cannot be the explanation (see Zwetsloot et al., 2017 for detailed analysis of funnel asymmetry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of funnel plots and cited research on funnel asymmetry.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "4d5760f7-7491-46e0-bd54-82a044d418d8",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C16",
+      "claim": "P1 peak amplitude was essentially identical in published and unpublished work.",
+      "claim_type": "EXPLICIT",
+      "source": "P1 peak was essentially identical in published and unpublished work (4.672 vs 4.686, t (195.11) = \u20130.067, P=.946; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical comparison of P1 amplitudes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "bd009da0-47d1-453e-9c3b-97bd993e9fa8",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C17",
+      "claim": "N1 trough was larger in published work than unpublished work.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the N1 trough was larger in published work (\u20138.736 vs. \u20137.155. t (183.61) = \u20135.636, P<.001; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical comparison of N1 amplitudes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "6f3b4166-a18d-4209-8162-8684820d3716",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C18",
+      "claim": "Publication bias is not a problem in the authors' SPN research.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do not think publication bias is a problem in our SPN research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors interpret their findings and conclude publication bias is not problematic for their work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "280b9c80-a5cb-45f7-8fa0-d8fe6391293f",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C19",
+      "claim": "Published and unpublished SPNs are from heterogeneous studies with different stimuli and tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The published and unpublished SPNs are from heterogenous studies, with different stimuli and tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the nature of their dataset.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "6061697a-ab00-415e-964e-942e5a2c882e",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C20",
+      "claim": "The best estimate of mean SPN amplitude is \u20130.954 microvolts, which is far below zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Our best estimate of mean SPN amplitude (\u20130.954 microvolts) is far below zero [95% CI = \u20131.049; \u20130.860].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on meta-analysis of all SPNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "076ae02a-5eb4-4972-a255-48b9f478bc1e",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C21",
+      "claim": "An effect on the cusp of significance (P=.05) has only a 50% chance of successful replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The first misunderstanding is that an effect on the cusp of significance (P=.05) has a 95% chance of successful replication, when in fact the probability of successful replication is only 50% (power = 0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical principles of power analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "b210d659-da08-4d27-8e83-26769344eab5",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C22",
+      "claim": "Median statistical power in cognitive neuroscience is estimated to be 0.21.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, one influential analysis estimated that median statistical power in cognitive neuroscience is just 0.21 (Button et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "3611aa26-2435-49fe-85df-62a83a7a3ee2",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C23",
+      "claim": "The conventional threshold for adequate statistical power is 0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, the conventional threshold for adequate power is 0.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established statistical conventions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "80c5ff82-62a1-4a7c-8cdb-42a603d5c6cd",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C24",
+      "claim": "There is a nonlinear relationship between SPN amplitude and effect size dz.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4A shows the relationship between SPN amplitude and effect size dz. The larger (more negative) the SPN in microvolts, the larger dz. The curve tails off for strong SPNs, resulting in a nonlinear relationship.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of the catalogue data and illustrated in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "62bd97d4-fa18-4644-a6a5-fd74a773ba28",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C25",
+      "claim": "A second order polynomial trendline fits the SPN amplitude-effect size relationship better than a first order linear trendline.",
+      "claim_type": "EXPLICIT",
+      "source": "The second order polynomial trendline was a better fit than the first order linear trendline (see the supplementary polynomial regression analysis at https://osf.io/f2659/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on regression analysis comparing model fits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "56314d67-6e66-4f45-9598-3e22398a67a2",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C26",
+      "claim": "The average effect size dz for a 0.5 microvolt SPN is \u20130.469.",
+      "claim_type": "EXPLICIT",
+      "source": "The average dz for a 0.5 microvolt SPN is \u20130.469.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the polynomial regression equation applied to the catalogue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "3fc3ea54-f406-42d2-a0b0-978e84674dc1",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C27",
+      "claim": "To have an 80% chance of finding a 0.5 microvolt SPN effect, a sample of 38 participants is needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Power analysis shows that to have an 80% chance of finding an effect of this size (P<.05, two tailed) we need a sample of 38 participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on power analysis using the estimated effect size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "73cea874-a715-4cb0-8ba7-35fd969cf3d4",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C28",
+      "claim": "The median sample size in the SPN catalogue is 24 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our median sample size is 24, which gives us an observed power of just 60%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on descriptive statistics of the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "0e2516ee-36e1-4efc-8b9a-5c44eaff5b8a",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C29",
+      "claim": "A median sample size of 24 gives an observed power of 60% for detecting a 0.5 microvolt SPN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our median sample size is 24, which gives us an observed power of just 60%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on power analysis using the median sample size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "4db3c0a2-46bd-495e-a9d8-eb361f8d301b",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C30",
+      "claim": "If a significant 0.5 microvolt SPN were replicated with the same sample size, there is a 40% chance of not finding the significant SPN again.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, if we were to choose a significant 0.5 microvolt SPN and rerun the exact same experiment, there is a 100%\u201360%=40% chance we would not find the significant SPN again.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed power calculation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "a4c0fa99-f137-4a2f-a736-fc54834edeae",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C31",
+      "claim": "Only a third of the 249 SPNs are 0.5 microvolts or less.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a third of the 249 SPNs are 0.5 microvolts or less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on descriptive statistics of the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "26a6e6aa-7720-45ca-8581-5fa30b955ec7",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C32",
+      "claim": "9.2% of the 249 SPNs were not normally distributed according to the Shapiro-Wilk test.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 249 SPNs, 9.2% were not normally distributed about the mean according to the Shapiro-Wilk test (8.4% according to Kolmogorov-Smirnov test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical testing of normality in the catalogue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "535652c6-464c-4798-9030-0ca6bdcf96f5",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C33",
+      "claim": "For a significant binomial test with 24 participants, at least 18/24 (3/4) participants must show the directional effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Consider a typical 24 participant SPN: For a significant binomial test (P<.05, two tailed), we need at least 18/24=3/4 participants in the sample to show the directional effect (regular < random).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on binomial test requirements.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "31980dd6-d663-46b1-adfb-4ed9abe38885",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C34",
+      "claim": "With 48 participants, only 32/48 (2/3) participants need to show the directional effect for a significant binomial test.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, consider doubling sample size to 48: We now need only 32/48=2/3 participants in the sample to show the directional effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on binomial test requirements with larger sample size.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "775bfcc1-3993-47c9-ae02-b7226d7295ab",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C35",
+      "claim": "Only 59% of grand-average SPNs were computed from samples where at least 3/4 of participants showed the directional effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 146 of the 249 grand-average SPNs (59%) were computed from a sample where at least 3/4 of the participants showed the directional effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of individual participant data in the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "da921afc-9758-4bd9-9b44-0ab47154f4fe",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C36",
+      "claim": "73% of grand-average SPNs were from samples where at least 2/3 of participants showed the directional effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, 183 (73%) were from a sample where at least 2/3 of the participants showed the directional effect (blue horizontals in Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of individual participant data in the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "08bed441-fbe0-412f-9721-59568fe07026",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C37",
+      "claim": "Observed power was less than 0.8 in 15 of 40 representative ANOVA analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed power was less than the desired 0.8 in 15 of 40 (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on power analysis of ANOVA effects from the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "7ea25f15-3ed6-4d3e-bee9-e932dbb8dc3c",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C38",
+      "claim": "Adding trials is an alternative way to increase statistical power in ERP research.",
+      "claim_type": "EXPLICIT",
+      "source": "Another line of attack is to increase the number of trials per participant. Boudewyn et al., 2018 argue that adding trials is alternative way to increase statistical power in ERP research, even when split-half reliability is apparently near ceiling (as it is in SPN research: Makin et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research and reference to SPN reliability data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "6df92c41-11b2-41db-b7b8-ef88918e6544",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C39",
+      "claim": "Increasing trials from 45 to 90 increased the probability of achieving a significant 0.5 microvolt ERP modulation from ~.54 to ~.89 in a sample of 24.",
+      "claim_type": "EXPLICIT",
+      "source": "In one highly relevant analysis, Boudewyn et al., 2018 examined a within-participant 0.5 microvolt ERP modulation with a sample of 24 (our median sample). Increasing the number of trials from 45 to 90 increased the probability of achieving a significant effect from ~.54 to~.89 (see figure eight in Boudewyn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "d6e07b18-a781-4936-91dc-891da6f34736",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C40",
+      "claim": "The mean sample size in 1,442 EEG articles from PubMed Central was 35.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1,442 sample sizes were obtained. Mean sample size was 35 (\u00b122.97) and a median was 28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on text-mining analysis of published EEG research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "b2f896d3-5a1d-4238-9ab0-7fc70d1f5e47",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C41",
+      "claim": "The median sample size in 1,442 EEG articles from PubMed Central was 28.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1,442 sample sizes were obtained. Mean sample size was 35 (\u00b122.97) and a median was 28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on text-mining analysis of published EEG research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "193b9a16-6b4a-45e4-8f90-8a3a2b140de5",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C42",
+      "claim": "The most commonly occurring sample size in EEG articles from PubMed Central was 20.",
+      "claim_type": "EXPLICIT",
+      "source": "The most commonly occurring sample size was 20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on text-mining analysis of published EEG research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "50c25b53-162c-475d-969f-c223a78590ae",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C43",
+      "claim": "The mean sample size in 74 EEG datasets on OpenNeuro was 39.34.",
+      "claim_type": "EXPLICIT",
+      "source": "We also extracted sample sizes from 74 EEG datasets on the OpenNeuro BIDS compliant repository. The mean sample size was 39.34 (\u00b138.56), the median was 24, and the mode was again 20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of publicly available EEG datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "1c7cc44c-f9cd-4810-ae46-39372917db04",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C44",
+      "claim": "The median sample size in 74 EEG datasets on OpenNeuro was 24.",
+      "claim_type": "EXPLICIT",
+      "source": "We also extracted sample sizes from 74 EEG datasets on the OpenNeuro BIDS compliant repository. The mean sample size was 39.34 (\u00b138.56), the median was 24, and the mode was again 20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of publicly available EEG datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "9634a406-3428-444e-8470-dac76a21f6f3",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C45",
+      "claim": "Low statistical power is an obstacle to cumulative SPN research.",
+      "claim_type": "EXPLICIT",
+      "source": "Low statistical power is an obstacle to cumulative SPN research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors conclude based on their power analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "6b7bb826-8d44-4e80-8112-9fca9f3dbfbe",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C46",
+      "claim": "P-hacking involves exploiting flexibility in the analysis pipeline to nudge effects over the threshold for statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "An effect that vibrates substantially is vulnerable to 'P-hacking': that is, exploiting flexibility in the analysis pipeline to nudge effects over the threshold for statistical significance (for example, P=.06 conveniently becomes P=.04, and the result is publishable).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text defines P-hacking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "754c6343-9f0b-4e57-90f7-6317863a4441",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C47",
+      "claim": "Double dipping is a type of P-hacking where researchers select data after observing where something is happening, then run statistical analysis on this selection alone.",
+      "claim_type": "EXPLICIT",
+      "source": "\"Double dipping\" is one particularly tempting type of P-hacking for cognitive neuroscientists because we typically have such large, multi-dimensional data sets (Kriegeskorte et al., 2009). Researchers can dip into a large dataset, observe where something is happening, then run statistical analysis on this data selection alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text defines double dipping with citation to prior research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "e24f0e85-1b65-4da7-a451-6bb606922141",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C48",
+      "claim": "SPN amplitude is highly correlated across three alternative electrode clusters (Pearson's r ranged from .946 to .982).",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, we found that SPN amplitude is highly correlated across clusters (Pearson's r ranged from .946 to .982, P<.001; Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on correlation analysis of SPNs computed with different electrode clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "8f464138-3935-4942-9e37-86a2c6b8d1d8",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C49",
+      "claim": "Vibration of SPN amplitude due to electrode choice is low.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests vibration is low, and flexible electrode choice has not greatly influenced our SPN findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors infer from the high correlations across electrode clusters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "e3d65e45-3678-46f6-b114-3d91ca8a9e8a",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C50",
+      "claim": "The number of significant SPNs varies only slightly (169-177) across different electrode clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant SPN count varies only slightly, between 169 and 177 (\u03c72 (3)=0.779, P=.854).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical testing of SPNs across different electrode clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "a5842b01-5b92-4df3-8270-cbb1d8c4aced",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C51",
+      "claim": "Flexible electrode choice has not substantially inflated the number of significant SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that flexible electrode choice has not substantially inflated the number of significant SPNs in our research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors conclude based on the similar significant SPN counts across clusters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "bed7d70e-0b45-4c20-a4bb-1478b4960099",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C52",
+      "claim": "38 of 40 ANOVA effects were significant using the original electrode cluster, but this decreased with alternative clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the same reanalysis to our 40 representative ANOVA main effects and interactions. Here there is more cause for concern: 38 of the 40 effects were significant using the original electrode cluster, however this goes down to 33 with Cluster 1, 35 with Cluster 2, and to just 29 with Cluster 3 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on reanalysis of ANOVA effects with different electrode clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "aa0420aa-2eae-47d9-b119-c43661f3f12a",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C53",
+      "claim": "Flexible electrode choice has significantly increased the number of significant SPN modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexible electrode choice has thus significantly increased the number of significant SPN modulations (\u03c72 (3)=8.107, P=.044).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical testing of ANOVA effects across electrode clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "7c4f23e0-9614-42b3-84d3-4d2e36b9d898",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C54",
+      "claim": "Electrodes O1 and PO7 are most likely to capture the SPN over the left hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings indicate that electrodes O1 and PO7 are most likely to capture the SPN over the left hemisphere, and O2 and PO8 are most likely to capture the SPN over the right hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on spatiotemporal clustering analysis of the catalogue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "478e9d8e-254c-4f14-9727-caf516071507",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C55",
+      "claim": "Electrodes O2 and PO8 are most likely to capture the SPN over the right hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings indicate that electrodes O1 and PO7 are most likely to capture the SPN over the left hemisphere, and O2 and PO8 are most likely to capture the SPN over the right hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on spatiotemporal clustering analysis of the catalogue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "6f21c760-efc2-4221-b7a9-23def68b1cc6",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C56",
+      "claim": "SPN activity was mostly confined to the 200 to 1000ms window, extending somewhat to 1500ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7B shows activity was mostly confined to the 200 to 1000ms window, extending somewhat to 1500ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on spatiotemporal clustering analysis illustrated in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "2d5a38f9-1f7d-4cda-a7f2-6a48aa50829f",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C57",
+      "claim": "There is a strong correlation between SPNs computed using spatiotemporal clustering and a priori electrode clusters (Pearson's r ranged from .719 to .746).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a strong correlation between this and SPN from each a priori cluster (Pearson's r ranged from .719 to .746, P<.001; Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on correlation analysis comparing spatiotemporal clustering results to a priori selections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "512aecc5-1e46-4f8f-88c0-06781e48ecaa",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C58",
+      "claim": "74% of published datasets yielded a significant spatiotemporal cluster, while only 57% of unpublished datasets did.",
+      "claim_type": "EXPLICIT",
+      "source": "First, 74% of published data sets yielded a significant cluster, while the figure was only 57% for unpublished data (as of May 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on spatiotemporal clustering analysis of published vs unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "86ac544c-ecfd-4113-ba7e-ec334ec6fc29",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C59",
+      "claim": "Similar grand-average SPNs result from disparate EEGLAB and BESA preprocessing pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 9, similar grand-average SPNs fall out at the end of these disparate pipelines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of SPNs from 5 experiments processed with different software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "54491d72-3ec7-4648-b983-38d6a6bced86",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C60",
+      "claim": "Post-hoc selection of electrodes and time windows are weak points that can be exploited by P-hackers.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that post-hoc selection of electrodes and time windows are weak points that can be exploited by unscrupulous P-hackers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors conclude based on their analyses of analytical flexibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "a5d4e564-592a-4f2d-b4f0-63a8ea27ec00",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C61",
+      "claim": "Earlier points in the preprocessing pipeline are less susceptible to P-hacking because changing them does not predictably increase or decrease the desired ERP effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier points in the pipeline are less susceptible to P-hacking because changing them does not predictably increase or decrease the desired ERP effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors infer based on their pipeline comparison analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "75b5da2c-1a44-4669-90ba-b40f2722b09d",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C62",
+      "claim": "P-hacking is not a pervasive problem in SPN research, although some effects rely too heavily on post hoc data selection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our assessment is that P-hacking is not a pervasive problem in SPN research, although some effects rely too heavily on post hoc data selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors conclude based on their comprehensive analysis of analytical flexibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "6979c3ff-ce3c-4eeb-8faf-6a7a7b7ce066",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C63",
+      "claim": "Most SPN effects could be recreated with a variety of justifiable analysis pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, we found most effects could be recreated with a variety of justifiable analysis pipelines: Data-driven and a priori approaches gave similar results, as did different EEGLAB and BESA pipelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors summarize their findings from multiple reanalysis approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "c0c383ec-87f6-418d-a1d5-1680a91a27df",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C64",
+      "claim": "HARKing is difficult to diagnose with reanalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the other horses, HARKing and BARKing are difficult to diagnose with reanalysis, which is why this section is shorter than the previous sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explain the limitation of their meta-scientific approach for assessing HARKing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "521a65a1-dc2b-4083-b413-b54f6bf22009",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C65",
+      "claim": "Pre-registration of hypotheses is the main tool to fight HARKing.",
+      "claim_type": "EXPLICIT",
+      "source": "The main tool to fight HARKing is online pre-registration of hypotheses (for example, on aspredicted.org or osf.io).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors recommend pre-registration based on established open science practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "89128cac-3e2d-4204-932c-7003df65bb07",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C66",
+      "claim": "Registered reports can abolish both HARKing and BARKing.",
+      "claim_type": "EXPLICIT",
+      "source": "An even stricter approach is to use registered reports, where the introductions and methods are peer reviewed before data collection. This can abolish both HARKing and BARKing (Chambers, 2013; Munaf\u00f2 et al., 2017), but we have only just started with this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on registered reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "79e2806a-9241-42a7-b7fe-36195f964e03",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C67",
+      "claim": "The 115 published SPNs were slightly stronger than the 134 unpublished ones.",
+      "claim_type": "EXPLICIT",
+      "source": "As regards publication bias \u2013 the first horseman of irreproducibility \u2013 we found that the 115 published SPNs were slightly stronger than the 134 unpublished ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors summarize their findings on publication bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "07722709-d72c-414e-b008-ae107f6cd3d2",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C68",
+      "claim": "There is no strong file drawer problem in the SPN research.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we are confident that there is no strong file drawer problem here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors conclude based on their analysis of published vs unpublished SPNs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "1e58a327-da46-4470-be94-e0e46c98f741",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C69",
+      "claim": "Reliable SPN research programs require larger samples than the typical sample size of 24.",
+      "claim_type": "EXPLICIT",
+      "source": "Our most negative conclusion is that reliable SPN research programs require larger samples than those we typically obtain (38 participants are required to reliably measure \u20130.5 microvolt SPNs and our median sample size is 24).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors conclude based on their power analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "ff8efbeb-c8fe-4594-8709-a9a47bbd5ea9",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C70",
+      "claim": "It is possible to 'get by' while routinely conducting underpowered experiments without noticing a glaring problem.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evidently possible to 'get by' while routinely conducting underpowered experiments. One never notices a glaring problem: after all, underpowered research will often yield a lucky experiment with significant results, and this may support a new publication before moving on to the next topic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors reflect on the implications of their power analysis findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "0b73841b-582f-410f-87bb-59858261dc6a",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C71",
+      "claim": "The costs of underpowered research might be masked by P-hacking.",
+      "claim_type": "EXPLICIT",
+      "source": "The costs of underpowered research might be masked by the third horseman: P-hacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors speculate on the relationship between low power and P-hacking.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "ab85deb0-3229-4606-ab7d-dcc825553d85",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C72",
+      "claim": "Some SPN modulations were not robust to alternative electrode cluster selections.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some of our SPN modulations were not so robust, and we have relied on post hoc time windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors acknowledge limitations in their P-hacking analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "b93d47fe-12d1-4c20-aed2-71c11199b7a5",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C73",
+      "claim": "Pre-registration is the best anti-HARKing tool.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, pre-registration is the best anti-HARKing tool, and we could have engaged with this earlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors recommend pre-registration based on established practices.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "2052a557-c820-4329-a70f-cd3d029192d7",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C74",
+      "claim": "It took more than a year to organize and catalogue all the SPN data.",
+      "claim_type": "EXPLICIT",
+      "source": "It took more than a year to find all the SPN data, organize it, reformat it, produce uniform scripts, conduct rigorous double checks, and upload material to public databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the effort required to create the catalogue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "5398f0ea-c842-4259-b74d-870846a7c453",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C75",
+      "claim": "Creating the catalogue is anticipated to save far more than a year in terms of improved research efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we anticipate that it will save far more than a year in terms of improved research efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors speculate on the future benefits of the catalogue.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "1baf6f46-cfab-419f-9c94-d3a6bee4acb6",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C76",
+      "claim": "Unpublished datasets now contribute to more reliable estimates of SPN effect size and power.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also satisfying that unpublished data sets are not merely lost. Instead, they are now contributing to more reliable estimates of SPN effect size and power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe a benefit of the catalogue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "dde130b9-61eb-43bb-b0ee-2c1adbda3d87",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "claim_id": "C77",
+      "claim": "No alternative activity could have been more beneficial for SPN research than creating the catalogue.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely that any alternative activity could have been more beneficial for SPN research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors express their opinion on the value of the catalogue.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "78791de5-0f65-43f1-9cc1-bcfce5ba6b94",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors created a comprehensive public catalogue of 6674 individual SPN recordings from 2215 participants across 40 projects (17 published, 23 unpublished), made available at https://osf.io/2sncj/. This cataloguing effort took over a year to complete following the COVID-19 pandemic shutdown of EEG testing in March 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4, C6, C7, and C74 provide consistent, explicit documentation of the catalogue's scope and creation. The numbers are specific and verifiable, and the public availability is confirmed with a URL. This represents a straightforward descriptive result about the dataset itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Published SPNs were slightly stronger than unpublished SPNs (mean difference 0.354 microvolts, p<.001), with published work having smaller sample sizes (23.40 vs 29.49, p<.001). However, the authors conclude publication bias is not a strong problem because: (1) studies are heterogeneous with different stimuli/tasks, (2) the overall mean SPN amplitude (-0.954 microvolts) is far below zero with confidence intervals excluding zero, and (3) funnel asymmetry persists even in unpublished data, suggesting factors beyond publication bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the statistical comparisons (C9, C10) are well-documented, the authors' conclusion that publication bias is not problematic (C18, C68) relies heavily on interpretation. The evidence shows classic signs of publication bias (funnel asymmetry C14, stronger published effects C9, smaller samples in published work C10), but the authors argue heterogeneity explains differences. The P1 control analysis (C16) supports their interpretation, but the N1 result (C17) contradicts it. Alternative explanations for funnel asymmetry are not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors established a nonlinear relationship between SPN amplitude and effect size (dz), best fit by a second-order polynomial (R\u00b2=0.86). Using this relationship, they determined that detecting a 0.5 microvolt SPN with 80% power requires 38 participants, but their median sample size is only 24, yielding just 60% power and a 40% chance of replication failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 form a coherent power analysis based on the catalogue data. The polynomial regression is documented (C25), effect size estimates are derived systematically (C26), and power calculations follow standard methods (C27, C29). The conclusion about replication risk (C30) follows logically from the observed power. The analysis is internally consistent and uses appropriate statistical methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "85a3fca0-23f7-4221-9d0d-45d0d122d841",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For nonparametric analysis, only 59% of SPNs had at least 3/4 of participants showing the directional effect (required for significance with n=24), while 73% had at least 2/3 showing the effect (required for n=48). This suggests that increasing sample size to 48 would improve the reliability of nonparametric tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 provide a complementary power analysis for nonparametric tests. The binomial test requirements are correctly stated (C33, C34), and the empirical proportions from the catalogue (C35, C36) are clearly reported. The logic connecting sample size requirements to observed participant-level consistency is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "bb740b84-dae7-403a-b2a6-86bfa70c2f02",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Power analysis of 40 representative ANOVA effects revealed that 15/40 (37.5%) had observed power below 0.8. The authors conclude that low statistical power is a major obstacle to cumulative SPN research, requiring larger samples (38+ participants) than their typical sample of 24. They note that underpowered research can persist unnoticed because occasional significant results still support publications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 provides empirical evidence from ANOVA reanalysis, while C45, C69, and C70 draw reasonable conclusions from the power analyses. The recommendation for n=38 (C69) follows directly from the effect size analysis (C27). The observation about 'getting by' with underpowered studies (C70) is a valid inference about research practices, though somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "9c37f3a9-5e5a-4596-8b43-b7faacd58b5d",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Increasing trial numbers per participant is an alternative approach to improving power. Cited research (Boudewyn et al., 2018) showed that increasing trials from 45 to 90 improved detection probability for a 0.5 microvolt effect from ~0.54 to ~0.89 in samples of 24.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 accurately cite prior research on the relationship between trial number and power. However, the authors appropriately note this is based on simulations from other ERP components and may not generalize perfectly to SPNs. This represents a reasonable recommendation based on external evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "f5f28449-2010-437c-a774-2bb02429f0c4",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Text-mining of 1,442 EEG articles from PubMed Central revealed mean sample size of 35 (median 28, mode 20). Analysis of 74 OpenNeuro datasets showed mean 39.34 (median 24, mode 20). These confirm that the authors' typical sample sizes are representative of the field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 provide straightforward descriptive statistics from two independent sources. The consistency between sources (mode of 20 in both) and similarity to the authors' practices (median 24) supports the conclusion. However, no details are provided about the text-mining algorithm's accuracy or potential biases in dataset selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "8a80f2a4-8bb8-43d1-97ec-d557c1e76f90",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SPN amplitudes computed from three alternative a priori electrode clusters were highly correlated with original selections (Pearson's r = 0.946-0.982, p<.001). The number of significant SPNs varied only slightly across clusters (169-177, \u03c7\u00b2=0.779, p=.854), indicating that flexible electrode choice has not substantially inflated significant SPN counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 present a systematic robustness check with strong correlations and non-significant differences in detection rates. The statistical tests are appropriate, and the conclusion (C51) is well-supported by the data. This provides evidence against systematic p-hacking via electrode selection for basic SPN detection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "f881ae78-3d00-4358-91dc-047c8c6202bd",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For ANOVA effects testing SPN modulations, 38/40 effects were significant with original electrode clusters, but this decreased to 29-35 with alternative clusters. Flexible electrode choice significantly increased the number of significant SPN modulations (\u03c7\u00b2=8.107, p=.044), indicating some effects are not robust to electrode selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C53 show that while basic SPN detection is robust (previous result), more complex modulation effects are sensitive to electrode choice. The statistical test (C53) demonstrates this is significant. The authors' acknowledgment (C72) that some effects are not robust is consistent with the data and represents appropriate self-criticism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "8272f3ec-d802-4509-b962-216e71302115",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spatiotemporal clustering analysis identified O1/PO7 (left) and O2/PO8 (right) as most likely to capture SPNs, with activity confined to 200-1000ms (extending to 1500ms). SPNs from spatiotemporal clustering correlated strongly with a priori clusters (r=0.719-0.746, p<.001). However, 74% of published vs. only 57% of unpublished datasets yielded significant clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 demonstrate convergence between data-driven and a priori approaches, supporting the validity of typical electrode/time window selections. The correlations (C57) are strong though somewhat lower than for a priori comparisons (C48). Claim C58 provides another estimate of publication bias using a different method, consistent with earlier findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "73b4fd3a-00e6-40c0-9d00-8ae205e2a0eb",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Comparison of EEGLAB and BESA preprocessing pipelines for 5 experiments from Project 13 showed similar grand-average SPNs despite different cleaning and filtering conventions. The authors conclude that earlier preprocessing steps are less susceptible to p-hacking because changes don't predictably affect the desired ERP, and most effects can be recreated with various justifiable pipelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 provides empirical evidence from pipeline comparison, supported by Figure 9. The inference (C61) about early pipeline steps being less manipulable is logical. However, only 5 experiments from one project were tested, limiting generalizability. The broader conclusion (C63) is reasonable but somewhat overstated given the limited scope of pipeline testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "e586f32b-18c0-4233-bd17-edc2421828bf",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude that post-hoc selection of electrodes and time windows are weak points exploitable by p-hackers, but p-hacking is not a pervasive problem in their SPN research, though some effects rely too heavily on post-hoc data selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C62 represent the authors' overall assessment of p-hacking risk. This is supported by the mixed findings: basic SPNs are robust (C48-C51), but ANOVA effects show sensitivity (C52-C53). The nuanced conclusion acknowledging both strengths and weaknesses is appropriate given the evidence. However, the assessment relies partly on subjective judgment about what constitutes 'pervasive' problems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "84f15c37-bf70-4a98-a505-3a540bb8d136",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HARKing is difficult to diagnose through reanalysis. The authors identify pre-registration as the main tool to combat HARKing, with registered reports being even more effective as they can abolish both HARKing and BARKing. They acknowledge they could have engaged with pre-registration earlier.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 and C73 accurately describe limitations of retrospective analysis for detecting HARKing and cite appropriate solutions from the open science literature. The authors' self-assessment (C73) is honest. However, this result is primarily methodological commentary rather than empirical findings from the catalogue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "8f58df2e-9188-4209-91bb-9536554f6cb9",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors anticipate the catalogue will save more than a year in improved research efficiency, unpublished datasets now contribute to reliable effect size estimates, and no alternative activity could have been more beneficial for SPN research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 are speculative statements about future benefits and value judgments. While the catalogue clearly has value (demonstrated by the analyses it enabled), quantitative predictions about time savings (C75) and absolute claims about optimal resource allocation (C77) cannot be evaluated empirically. These represent the authors' opinions rather than supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "77049dfd-6319-49db-87fc-9e4c1d0b71ca",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Humans detect visual symmetry efficiently, and the sustained posterior negativity (SPN) is a brain response to visual symmetry that increases in amplitude (becomes more negative) with increasing proportion of symmetry in images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C2 is supported by multiple citations to established literature. Claim C3 defines the SPN based on the authors' decade-long research program. Claim C5 is demonstrated with specific data showing SPN increasing from ~0 to -3.5 microvolts as symmetry increased from 20% to 100%, illustrated in Figure 1. These provide the scientific context for the catalogue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    },
+    {
+      "id": "821f5750-08c2-48c3-a4b9-597b16179246",
+      "content_id": "5791ba2d-e48b-4155-afff-61d5e2230690",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript provides background on common statistical and methodological issues in research: publication bias leads to overestimation of effect sizes (C8), effects at p=.05 have only 50% replication probability (C21), median power in cognitive neuroscience is 0.21 vs. the 0.8 standard (C22-C23), and p-hacking involves exploiting analytical flexibility including 'double dipping' in large datasets (C46-C47).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C21-C23, C46-C47 accurately summarize established knowledge from cited literature about research quality issues. These provide the conceptual framework for the meta-scientific evaluation but are not novel findings from this study. They represent accurate citations and definitions of key concepts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:38:31.133343Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "33a90245-52eb-4019-8e6e-2f21d76b7507",
+      "result_id": "78791de5-0f65-43f1-9cc1-bcfce5ba6b94"
+    },
+    {
+      "claim_id": "14e93125-7158-4486-bf5d-393db7fa342f",
+      "result_id": "78791de5-0f65-43f1-9cc1-bcfce5ba6b94"
+    },
+    {
+      "claim_id": "e46fc1e6-98b4-4261-94e0-2e98b44b42c4",
+      "result_id": "78791de5-0f65-43f1-9cc1-bcfce5ba6b94"
+    },
+    {
+      "claim_id": "26a77834-4cdf-44cf-9f96-1bb6ad1b9662",
+      "result_id": "78791de5-0f65-43f1-9cc1-bcfce5ba6b94"
+    },
+    {
+      "claim_id": "2052a557-c820-4329-a70f-cd3d029192d7",
+      "result_id": "78791de5-0f65-43f1-9cc1-bcfce5ba6b94"
+    },
+    {
+      "claim_id": "3986a2c4-e395-48cd-b620-ea01e667621b",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "a9a55075-188e-4212-a4b4-b090e4a49937",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "dbe5b137-a297-4860-a3e9-bd9106c2facc",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "1ab4d3b0-4dc7-4af2-970b-3335a180c6d9",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "d091ecce-2aaf-484f-bfce-3ce33b4ab60d",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "c7fb2942-a9ff-4c6f-8a40-4305d453c69c",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "205c1716-88f2-4eb6-8eca-70e7fd46f95d",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "4d5760f7-7491-46e0-bd54-82a044d418d8",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "bd009da0-47d1-453e-9c3b-97bd993e9fa8",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "6f3b4166-a18d-4209-8162-8684820d3716",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "280b9c80-a5cb-45f7-8fa0-d8fe6391293f",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "6061697a-ab00-415e-964e-942e5a2c882e",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "79e2806a-9241-42a7-b7fe-36195f964e03",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "07722709-d72c-414e-b008-ae107f6cd3d2",
+      "result_id": "d222cb11-82cb-4a18-8be5-8e7a34dd4e10"
+    },
+    {
+      "claim_id": "80c5ff82-62a1-4a7c-8cdb-42a603d5c6cd",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "62bd97d4-fa18-4644-a6a5-fd74a773ba28",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "56314d67-6e66-4f45-9598-3e22398a67a2",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "3fc3ea54-f406-42d2-a0b0-978e84674dc1",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "73cea874-a715-4cb0-8ba7-35fd969cf3d4",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "0e2516ee-36e1-4efc-8b9a-5c44eaff5b8a",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "4db3c0a2-46bd-495e-a9d8-eb361f8d301b",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "a4c0fa99-f137-4a2f-a736-fc54834edeae",
+      "result_id": "247f9d77-5cc9-4dbd-b030-0e0e5f5460dd"
+    },
+    {
+      "claim_id": "26a6e6aa-7720-45ca-8581-5fa30b955ec7",
+      "result_id": "85a3fca0-23f7-4221-9d0d-45d0d122d841"
+    },
+    {
+      "claim_id": "535652c6-464c-4798-9030-0ca6bdcf96f5",
+      "result_id": "85a3fca0-23f7-4221-9d0d-45d0d122d841"
+    },
+    {
+      "claim_id": "31980dd6-d663-46b1-adfb-4ed9abe38885",
+      "result_id": "85a3fca0-23f7-4221-9d0d-45d0d122d841"
+    },
+    {
+      "claim_id": "775bfcc1-3993-47c9-ae02-b7226d7295ab",
+      "result_id": "85a3fca0-23f7-4221-9d0d-45d0d122d841"
+    },
+    {
+      "claim_id": "da921afc-9758-4bd9-9b44-0ab47154f4fe",
+      "result_id": "85a3fca0-23f7-4221-9d0d-45d0d122d841"
+    },
+    {
+      "claim_id": "08bed441-fbe0-412f-9721-59568fe07026",
+      "result_id": "bb740b84-dae7-403a-b2a6-86bfa70c2f02"
+    },
+    {
+      "claim_id": "9634a406-3428-444e-8470-dac76a21f6f3",
+      "result_id": "bb740b84-dae7-403a-b2a6-86bfa70c2f02"
+    },
+    {
+      "claim_id": "1e58a327-da46-4470-be94-e0e46c98f741",
+      "result_id": "bb740b84-dae7-403a-b2a6-86bfa70c2f02"
+    },
+    {
+      "claim_id": "ff8efbeb-c8fe-4594-8709-a9a47bbd5ea9",
+      "result_id": "bb740b84-dae7-403a-b2a6-86bfa70c2f02"
+    },
+    {
+      "claim_id": "0b73841b-582f-410f-87bb-59858261dc6a",
+      "result_id": "bb740b84-dae7-403a-b2a6-86bfa70c2f02"
+    },
+    {
+      "claim_id": "7ea25f15-3ed6-4d3e-bee9-e932dbb8dc3c",
+      "result_id": "9c37f3a9-5e5a-4596-8b43-b7faacd58b5d"
+    },
+    {
+      "claim_id": "6df92c41-11b2-41db-b7b8-ef88918e6544",
+      "result_id": "9c37f3a9-5e5a-4596-8b43-b7faacd58b5d"
+    },
+    {
+      "claim_id": "d6e07b18-a781-4936-91dc-891da6f34736",
+      "result_id": "f5f28449-2010-437c-a774-2bb02429f0c4"
+    },
+    {
+      "claim_id": "b2f896d3-5a1d-4238-9ab0-7fc70d1f5e47",
+      "result_id": "f5f28449-2010-437c-a774-2bb02429f0c4"
+    },
+    {
+      "claim_id": "193b9a16-6b4a-45e4-8f90-8a3a2b140de5",
+      "result_id": "f5f28449-2010-437c-a774-2bb02429f0c4"
+    },
+    {
+      "claim_id": "50c25b53-162c-475d-969f-c223a78590ae",
+      "result_id": "f5f28449-2010-437c-a774-2bb02429f0c4"
+    },
+    {
+      "claim_id": "1c7cc44c-f9cd-4810-ae46-39372917db04",
+      "result_id": "f5f28449-2010-437c-a774-2bb02429f0c4"
+    },
+    {
+      "claim_id": "e24f0e85-1b65-4da7-a451-6bb606922141",
+      "result_id": "8a80f2a4-8bb8-43d1-97ec-d557c1e76f90"
+    },
+    {
+      "claim_id": "8f464138-3935-4942-9e37-86a2c6b8d1d8",
+      "result_id": "8a80f2a4-8bb8-43d1-97ec-d557c1e76f90"
+    },
+    {
+      "claim_id": "e3d65e45-3678-46f6-b114-3d91ca8a9e8a",
+      "result_id": "8a80f2a4-8bb8-43d1-97ec-d557c1e76f90"
+    },
+    {
+      "claim_id": "a5842b01-5b92-4df3-8270-cbb1d8c4aced",
+      "result_id": "8a80f2a4-8bb8-43d1-97ec-d557c1e76f90"
+    },
+    {
+      "claim_id": "bed7d70e-0b45-4c20-a4bb-1478b4960099",
+      "result_id": "f881ae78-3d00-4358-91dc-047c8c6202bd"
+    },
+    {
+      "claim_id": "aa0420aa-2eae-47d9-b119-c43661f3f12a",
+      "result_id": "f881ae78-3d00-4358-91dc-047c8c6202bd"
+    },
+    {
+      "claim_id": "ab85deb0-3229-4606-ab7d-dcc825553d85",
+      "result_id": "f881ae78-3d00-4358-91dc-047c8c6202bd"
+    },
+    {
+      "claim_id": "7c4f23e0-9614-42b3-84d3-4d2e36b9d898",
+      "result_id": "8272f3ec-d802-4509-b962-216e71302115"
+    },
+    {
+      "claim_id": "478e9d8e-254c-4f14-9727-caf516071507",
+      "result_id": "8272f3ec-d802-4509-b962-216e71302115"
+    },
+    {
+      "claim_id": "6f21c760-efc2-4221-b7a9-23def68b1cc6",
+      "result_id": "8272f3ec-d802-4509-b962-216e71302115"
+    },
+    {
+      "claim_id": "2d5a38f9-1f7d-4cda-a7f2-6a48aa50829f",
+      "result_id": "8272f3ec-d802-4509-b962-216e71302115"
+    },
+    {
+      "claim_id": "512aecc5-1e46-4f8f-88c0-06781e48ecaa",
+      "result_id": "8272f3ec-d802-4509-b962-216e71302115"
+    },
+    {
+      "claim_id": "86ac544c-ecfd-4113-ba7e-ec334ec6fc29",
+      "result_id": "73b4fd3a-00e6-40c0-9d00-8ae205e2a0eb"
+    },
+    {
+      "claim_id": "a5d4e564-592a-4f2d-b4f0-63a8ea27ec00",
+      "result_id": "73b4fd3a-00e6-40c0-9d00-8ae205e2a0eb"
+    },
+    {
+      "claim_id": "6979c3ff-ce3c-4eeb-8faf-6a7a7b7ce066",
+      "result_id": "73b4fd3a-00e6-40c0-9d00-8ae205e2a0eb"
+    },
+    {
+      "claim_id": "54491d72-3ec7-4648-b983-38d6a6bced86",
+      "result_id": "e586f32b-18c0-4233-bd17-edc2421828bf"
+    },
+    {
+      "claim_id": "75b5da2c-1a44-4669-90ba-b40f2722b09d",
+      "result_id": "e586f32b-18c0-4233-bd17-edc2421828bf"
+    },
+    {
+      "claim_id": "c0c383ec-87f6-418d-a1d5-1680a91a27df",
+      "result_id": "84f15c37-bf70-4a98-a505-3a540bb8d136"
+    },
+    {
+      "claim_id": "521a65a1-dc2b-4083-b413-b54f6bf22009",
+      "result_id": "84f15c37-bf70-4a98-a505-3a540bb8d136"
+    },
+    {
+      "claim_id": "89128cac-3e2d-4204-932c-7003df65bb07",
+      "result_id": "84f15c37-bf70-4a98-a505-3a540bb8d136"
+    },
+    {
+      "claim_id": "b93d47fe-12d1-4c20-aed2-71c11199b7a5",
+      "result_id": "84f15c37-bf70-4a98-a505-3a540bb8d136"
+    },
+    {
+      "claim_id": "5398f0ea-c842-4259-b74d-870846a7c453",
+      "result_id": "8f58df2e-9188-4209-91bb-9536554f6cb9"
+    },
+    {
+      "claim_id": "1baf6f46-cfab-419f-9c94-d3a6bee4acb6",
+      "result_id": "8f58df2e-9188-4209-91bb-9536554f6cb9"
+    },
+    {
+      "claim_id": "dde130b9-61eb-43bb-b0ee-2c1adbda3d87",
+      "result_id": "8f58df2e-9188-4209-91bb-9536554f6cb9"
+    },
+    {
+      "claim_id": "19cd0c34-f4e7-40db-8080-008770575185",
+      "result_id": "77049dfd-6319-49db-87fc-9e4c1d0b71ca"
+    },
+    {
+      "claim_id": "c1f09409-3d06-4a80-9ba8-78091b0bffe8",
+      "result_id": "77049dfd-6319-49db-87fc-9e4c1d0b71ca"
+    },
+    {
+      "claim_id": "bbf961a4-873c-40f3-92b7-6afbd63e533b",
+      "result_id": "77049dfd-6319-49db-87fc-9e4c1d0b71ca"
+    },
+    {
+      "claim_id": "702be6b4-700c-4238-85f6-e234e933d2a2",
+      "result_id": "821f5750-08c2-48c3-a4b9-597b16179246"
+    },
+    {
+      "claim_id": "076ae02a-5eb4-4972-a255-48b9f478bc1e",
+      "result_id": "821f5750-08c2-48c3-a4b9-597b16179246"
+    },
+    {
+      "claim_id": "b210d659-da08-4d27-8e83-26769344eab5",
+      "result_id": "821f5750-08c2-48c3-a4b9-597b16179246"
+    },
+    {
+      "claim_id": "3611aa26-2435-49fe-85df-62a83a7a3ee2",
+      "result_id": "821f5750-08c2-48c3-a4b9-597b16179246"
+    },
+    {
+      "claim_id": "6b7bb826-8d44-4e80-8112-9fca9f3dbfbe",
+      "result_id": "821f5750-08c2-48c3-a4b9-597b16179246"
+    },
+    {
+      "claim_id": "754c6343-9f0b-4e57-90f7-6317863a4441",
+      "result_id": "821f5750-08c2-48c3-a4b9-597b16179246"
+    }
+  ],
+  "comparisons": []
+}

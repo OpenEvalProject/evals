@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "TRACC is a GPCR-based transcriptional recorder that detects cell-cell contacts through an 'AND' logic gate requiring both ligand-GPCR interaction and blue light activation. The tool comprises four components: a ligand-pre-mGRASP sender construct, a GPCR-LOV-TEVcs-TF receiver construct, an arrestin-TEVp construct, and a reporter construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 provide a clear mechanistic description supported by Figure 1A-B. The design builds logically on prior SPARK tools (C2) with the addition of LOV domain light-gating (C3-C4). The experimental data throughout the manuscript consistently demonstrate both light- and sender-dependent activation, validating the AND gate logic (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Screening of six GPCR-ligand pairs in HEK293T cells identified CCR6-CCL20 as optimal, showing 2.6-fold \u00b1light and 3.2-fold \u00b1ligand signal ratios. A control construct lacking the LOV domain showed high background (1.1-fold \u00b1ligand ratio), demonstrating that light-gating is crucial for reducing background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are directly supported by Figure 1C data showing quantitative luciferase measurements. The comparison with the no-LOV control is particularly important for validating the design principle. However, the modest signal ratios (2.6-3.2 fold) in the initial screen suggest room for optimization, which is addressed in later experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C51"
+    ],
+    "result": "In trans assays with separately transfected HEK293T sender and receiver cells, TRACC showed 5.6-fold \u00b1light and \u00b1sender signal ratios, with 80.0% specificity (mCherry+ cells in contact with sender) and 80.2% sensitivity (contacting cells showing reporter expression above background).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are well-supported by quantitative data in Figures 2B-E, with clear statistical analysis (n=94-108 cells from 50 FOVs). The 20% false positive rate (C43) is acknowledged and potential explanations provided (C44, C50). The consistency of V5 intensity across mCherry-high and -low populations (C45-C46) strengthens the conclusion of sender-dependence. Lentiviral delivery validation (C51) extends applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C71"
+    ],
+    "result": "TRACC components properly localize in primary rat cortical neurons, with the sender construct targeting pre-synaptic terminals via the neurexin domain. In neuronal systems, TRACC showed robust activation with 11.4-fold \u00b1light and 7.5-fold \u00b1ligand ratios in cis, and 4.2-fold \u00b1light and 3.2-fold \u00b1sender ratios in neuron-HEK293T co-culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by Figure 3 and supplements showing proper localization and functional activation. The colocalization analysis with synapsin (C54) and the demonstration that neurexin domain deletion disrupts targeting (C55) provide important validation. The higher signal ratios in neurons (C56) compared to initial HEK293T screens suggest cell-type optimization, though the trans configuration shows reduced performance (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "TRACC was optimized for patient-derived DIPG glioma cells through screening LOV and TEVp variants, with eLOV-uTEV2 showing highest sensitivity while maintaining specificity. In neuron-DIPG co-culture, robust mCherry activation occurred only with both light and sender expression, demonstrating potential for mapping neuron-glioma interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by Figure 4 data showing systematic optimization and successful application. The initial low sensitivity (C64) and subsequent improvement through variant screening (C65) demonstrates rigorous optimization. The maintained specificity despite increased sensitivity (C66) is important. However, C68's claim about 'potential' is appropriately cautious given this is proof-of-concept data in culture, not in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "TRACC provides advantages over existing tools: compared to direct labeling methods (LIPSTIC, split-HRP, mGRASP), it enables genetic access to contacting cells; compared to other transcriptional tools (synNotch, trans-Tango), the LOV domain substantially reduces background and provides temporal specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 make comparative statements but lack direct head-to-head experimental validation. While C70 is partially supported by the no-LOV control data (C39-C40) showing background reduction, the claim of 'substantial' reduction versus synNotch/trans-Tango specifically is not directly tested. C69's advantage is conceptually valid but not experimentally demonstrated. These are reasonable inferences but would benefit from direct comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C50"
+    ],
+    "result": "Background activation in 20% of non-contacting cells may result from high arrestin-TEVp expression causing GPCR-independent TF release, or from incomplete co-transfection of all three receiver components required for TRACC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44 and C50 are speculative explanations for observed false positives. C44 cites prior work (Sanchez et al., 2020) but doesn't directly test this mechanism. C50 is a reasonable hypothesis about transfection efficiency but lacks experimental validation. Neither explanation is definitively supported, though both are plausible. Additional experiments (e.g., measuring arrestin-TEVp levels in false positive cells, or using stable cell lines) would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TRACC may be useful for anterograde synapse-specific tracing and neuron-glioma circuit mapping in future studies, but will require in vivo validation of component localization, specificity, and sensitivity in well-characterized circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 are explicitly speculative about future applications. C73 correctly identifies a gap in available tools, but C72's potential utility is unproven. C74 appropriately acknowledges that in vivo validation is required before these applications can be realized. These are reasonable future directions but represent proposed rather than demonstrated capabilities. The current work is limited to in vitro culture systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establish that cell-cell interactions are fundamental to biological processes and describe existing tools for detecting contacts, including enzymatic labeling methods (LIPSTIC, BirA/LplA, split-HRP, split-TurboID, mGRASP, SynView) and transcriptional reporters (synNotch, TRACT, trans-Tango, BAcTrace, G-baToN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C21 provide literature context supported by appropriate citations. These accurately describe the field and motivate the development of TRACC. C16 provides the key rationale for transcriptional reporters over direct labeling. The descriptions of existing tools appear accurate based on the cited literature, though I cannot independently verify all cited work without access to those papers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Background claims establish that high-grade gliomas are lethal brain cancers, that neuronal interactions drive glioma progression through functional neuron-to-glioma synapses, and that synaptic signaling promotes glioma proliferation via membrane voltage-sensitive mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 provide biological context for the glioma application, supported by appropriate citations to recent literature. These claims accurately represent current understanding of neuron-glioma interactions and motivate the application of TRACC to this system. The citations appear appropriate and recent (2015-2021), reflecting active research in this area.",
+    "result_type": "MINOR"
+  }
+]

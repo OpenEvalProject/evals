@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study measured binding affinities (KD,app) for all 32,768 possible combinations of 15 RBD mutations between Wuhan Hu-1 and BA.1 to four monoclonal antibodies using Tite-seq on a yeast display library. The measurements were validated through biological replicates and isogenic flow cytometry measurements, with data obtained for at least ~30,000 variants per antibody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24, C31-C36 collectively describe the experimental design and validation. The combinatorially complete library (2^15 = 32,768 variants), yeast display system, Tite-seq methodology, and validation through biological replicates and flow cytometry are well-documented. The data quality metrics (r\u00b2>0.8, coverage >30,000 variants per antibody) support the robustness of measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C25",
+      "C26"
+    ],
+    "result": "The study found that 51% of variants fully escape LY-CoV016, 65% escape LY-CoV555, 36% escape REGN10987, and no variants fully escape S309. The first three antibodies are fully escaped by BA.1, while S309 shows reduced but not abolished affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C25-C26 report quantitative escape frequencies directly from the binding affinity measurements shown in Figure 1A. The definition of escape (KD,app above detection limit of 1 \u03bcM) is clearly stated, and the distinct patterns for S309 versus the other three antibodies are consistently reported across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C27",
+      "C28"
+    ],
+    "result": "Escape from LY-CoV016, LY-CoV555, and REGN10987 is mediated by one or a few strong-effect mutations that make substantial contact with the corresponding antibody. These strong-effect mutations are largely distinct for each antibody, reflecting their non-overlapping footprints on the RBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C27-C28 are supported by Figure 1B showing mean mutational effects and Figure 1C showing structural footprints. The correlation between strong-effect mutations and antibody contact surface area, along with the largely orthogonal sets of mutations for different antibodies, is consistent with structural data and previous studies cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "K417N is sufficient for complete escape from LY-CoV016. LY-CoV555 requires both E484A (1000-fold reduction) and Q493R (100-fold reduction) for complete escape. REGN10987 requires N440K (5-fold reduction) and G446S (10-fold reduction) for complete escape. These mutations are highly enriched among non-binding variants for their respective antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C71 describe specific escape mutations with quantitative effects shown in Figures 1D-F and enrichment analysis in Figure 2A. The fold-change values are directly measured from binding affinity data. The decision tree analysis (Figure 2C-E) confirms these mutation combinations are necessary and sufficient for escape, with K417N showing 100% escape for LY-CoV016.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Alternative pathways to antibody escape exist that do not include every large-effect mutation. For example, REGN10987 can be escaped by G446S+N440K (100%) or S375F+G446S (89%). Some mutations like G446S and S375F can affect multiple antibodies, showing partial overlap in escape pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C72-C81 are supported by decision tree analysis (Figure 2C-E) showing multiple pathways to escape and enrichment analysis (Figure 2A-B) showing cross-antibody effects. The quantitative percentages for alternative escape pathways are derived from the decision tree models. However, the 89% value for S375F+G446S notes that additional mutations may be required, indicating some uncertainty in this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C63",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "For S309, ~17% of variants have lower affinity than BA.1, and differences are not attributable to one or two strong-effect mutations. Four neighboring mutations (G339D, S371L, S373P, S375F) interact non-additively to reduce S309 affinity, with complex epistatic patterns where S371L can increase or decrease affinity depending on genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C63, C87-C92 describe the complex S309 escape pattern shown in Figures 1G and 3C. The 17% quantification is from the data, and the epistatic interactions among the four mutations are demonstrated through the fourth-order epistatic model. The context-dependent effect of S371L is directly shown in Figure 3C, and the observation about BA.2/BA.3 (C93) provides independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C29",
+      "C30",
+      "C85",
+      "C86"
+    ],
+    "result": "Epistatic interactions improve model predictive power for all antibodies and ACE2, with optimal order varying (2nd order for REGN10987, 3rd for LY-CoV555, 4th+ for LY-CoV016, S309, and ACE2). Higher-order epistasis plays a much stronger role for ACE2 than for the three fully-escaped antibodies, indicating antibody escape is more additive while ACE2 binding involves complex epistatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86, C29-C30 are supported by the epistatic modeling results in Figure 3A-B. The cross-validation analysis shows clear improvement with higher-order terms, and the optimal orders are determined by correlation coefficients. The distinction between antibody escape (more additive) and ACE2 binding (more epistatic) is quantitatively demonstrated in Figure 3B showing R\u00b2 values and model performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C119",
+      "C125",
+      "C126"
+    ],
+    "result": "The reduction in S309 affinity is attributable to a fourth-order epistatic interaction among G339D, S371L, S373P, and S375F. This epistasis results in an affinity threshold beyond which additional mutations do not reduce affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C125-C126 are supported by the fourth-order epistatic model for S309 (Figure 3A) and the detailed analysis in Figure 3C. The complex epistatic interactions are demonstrated by showing that all four mutations together produce less affinity reduction than some three-mutation combinations, and the context-dependent effects are quantified. This resolves the previous ambiguity noted in C118/C23.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C11"
+    ],
+    "result": "Antibody escape mutations typically reduce ACE2 affinity, but as additional BA.1 mutations accumulate, ACE2 affinity increases to exceed Wuhan Hu-1 levels. Compensatory mutations Q498R and N501Y mitigate the negative effects of escape mutations on ACE2 binding, with this compensation being critical for escape from LY-CoV016 and LY-CoV555 but less so for REGN10987.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101, C11 describe the ACE2-antibody tradeoff shown in Figure 4A-B. The data clearly show that variants escaping antibodies have reduced ACE2 affinity without compensatory mutations, but this is restored with Q498R and N501Y. The antibody-specific patterns (strong effect for LY-CoV016/LY-CoV555, weak for REGN10987) are quantitatively demonstrated. This is consistent with previous work cited in C94.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The frequency of most escape mutations (G446S, E484A, Q493R) is higher across the SARS-CoV-2 phylogeny in the presence of compensatory mutations Q498R and N501Y, though this is not universal (N440K shows slight increase, K417N shows decrease).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by phylogenetic analysis shown in Figure 4D. The enrichment scores quantify the frequency of escape mutations conditional on compensatory mutations being present. The exceptions (N440K, K417N) are explicitly noted and shown in the data, demonstrating that the compensatory effect is not universal across all escape mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Antibody binding affinity is not strongly correlated with ACE2 affinity overall. For LY-CoV016 and LY-CoV555, there is weak positive correlation dominated by variants lacking Q498R/N501Y. For REGN10987 and S309, weak positive correlation exists independent of Q498R/N501Y. These compensatory mutations drive ACE2 affinity variance but minimally impact antibody binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are supported by correlation analysis in Figure 4C-D. The weak correlations (r values provided) and the differential dependence on compensatory mutations are quantitatively shown. The observation that Q498R/N501Y strongly affect ACE2 but not antibody binding (Figure 4D) explains the complex correlation patterns and supports the compensatory mutation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "BA.1 escape from LY-CoV016, LY-CoV555, and REGN10987 is driven by small sets of largely orthogonal mutations (K417N; E484A/Q493R; N440K/G446S respectively). However, limited trade-offs exist with four mutations (S375F, T478K, E484A, N501Y) improving affinity to one antibody while reducing it to another. Strong-effect mutations substantially reduce ACE2 affinity, creating stronger trade-offs between ACE2 binding and antibody escape than between different antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 synthesize findings from multiple analyses. The orthogonality of escape mutations is shown in Figures 1B-C and 2A, the limited trade-offs are demonstrated in the mutational effect data, and the ACE2 trade-offs are shown in Figure 4. The conclusion that ACE2-antibody trade-offs are stronger than inter-antibody trade-offs is supported by the magnitude of effects and the requirement for compensatory mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Three mutations have small positive effects on antibody affinity: S375F for LY-CoV016, and E484A and N501Y for REGN10987. Each of these mutations reduces affinity to at least one other antibody, and N501Y significantly improves ACE2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by Figure 1B showing mean mutational effects. The positive effects are small but measurable, and the trade-offs with other antibodies are documented in the same figure. The N501Y effect on ACE2 is well-established from previous work and confirmed in this dataset (Figure 4D).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "For each antibody, binding affinities generally decrease as the number of mutations increases. For LY-CoV016, LY-CoV555, and REGN10987, this trend is observed among variants with and without large-effect escape mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe the general trend shown in Figures 1D-G. The boxplots clearly show decreasing median affinity with increasing mutation number, and the color-coding demonstrates this trend holds both for variants with and without key escape mutations. This supports the additive model for these three antibodies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study acknowledges that binding affinities may not perfectly reflect viral neutralization escape, but argues measurements are relevant because neutralization requires affinity. The binding affinity landscapes reveal BA.1 can escape antibodies through few large-effect mutations or multiple small-effect mutations, with one or two mutations sufficient for total escape from the first three antibodies, though additional mutations can sometimes restore or further reduce affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 represent the authors' interpretation and limitations discussion. C121-C122 appropriately acknowledge the limitation while providing logical justification for relevance. C123-C124 summarize key findings that are well-supported by the data throughout the manuscript. This represents a balanced assessment of the study's scope and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The RBD ACE2 affinity landscape is defined by several epistatic interactions (from previous work), while escape from antibody binding can often be driven by individual mutations. The authors speculate this difference may result from the long evolutionary history of ACE2 binding versus recent antibody escape evolution, or because escape mutations disrupt rather than maintain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 are supported (C127 by citation to previous work, C128 by current data). However, C129-C130 are explicitly speculative explanations marked by phrases like \"one possibility\" and \"alternatively.\" These hypotheses are reasonable but untested, and the authors acknowledge they are not mutually exclusive and require further investigation. The speculation is appropriate for a Discussion section but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C68"
+    ],
+    "result": "Background claims establishing that Omicron BA.1 emerged in November 2021, escapes antibodies effective against earlier strains through RBD mutations, and that previous studies identified escape mutations on single backgrounds but did not comprehensively characterize epistatic interactions or multi-antibody escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C23, C68 provide background context supported by multiple citations to prior literature. These establish the scientific context and motivation for the current study. The claims about BA.1 emergence, immune escape, and limitations of previous single-mutation studies are well-documented in the cited literature and represent accurate summaries of the field's knowledge prior to this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Summary claims that BA.1 can lose affinity to antibodies through few large-effect or several small-effect mutations, that epistatic interactions constrain S309 affinity decline but only modestly shape other antibody landscapes, and that escape of each antibody is mediated by distinct mutation groups with ACE2 effects compensated by Q498R and N501Y.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C8-C10 are high-level summary statements of the main findings. These are well-supported by the detailed results described in other claim groups. C5-C6 summarize the escape mechanisms (supported by C41-C71), C8-C9 summarize the epistasis findings (supported by C82-C92), and C10 synthesizes the antibody-ACE2 tradeoff findings (supported by C94-C117). These represent accurate summaries of supported results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C120"
+    ],
+    "result": "Prior to this work, S309's reduced affinity to Omicron could not be attributed to specific mutations. The finding of fourth-order epistasis suggests future SARS-CoV-2 lineages' ability to escape S309 and similar antibodies could depend on epistatic interactions between emerging mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by citations to previous studies that could not identify specific S309 escape mutations. Claim C120 is a reasonable inference from the fourth-order epistasis finding (C119), though it is somewhat speculative about future evolution. The inference is logical given the demonstrated importance of epistasis for S309, but represents a prediction rather than a direct observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "S371L is absent in BA.2 and BA.3 Omicron sublineages and replaced by S371F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is a factual observation about other Omicron sublineages that provides independent validation of the finding that variants lacking S371L can evade S309 more effectively than BA.1 (C92). This is verifiable from sequence databases and supports the epistatic interpretation of S371L's role.",
+    "result_type": "MINOR"
+  }
+]

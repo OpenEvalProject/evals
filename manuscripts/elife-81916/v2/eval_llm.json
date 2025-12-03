@@ -1,0 +1,454 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The European COVID-19 Forecast Hub collected weekly forecasts from 48 unique models for COVID-19 cases and deaths across 32 European countries over 52 weeks (March 2021-March 2022), using standardized quantile-based probabilistic forecasts. The infrastructure was compatible with US and German/Polish hubs, included automated validation, and made all data publicly accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C50 collectively describe the data collection methodology, infrastructure, and scope of the European Forecast Hub. These are well-documented operational details supported by the study design, with clear specifications of targets, locations, time periods, validation procedures, and data accessibility. The infrastructure compatibility and public accessibility are verifiable features of the project.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C48"
+    ],
+    "result": "The ensemble forecast was created weekly by calculating each predictive quantile as an equally-weighted average of all individual models' quantiles, initially using the arithmetic mean (March-July 2021) then switching to the median (from July 26, 2021 onwards) to mitigate the effect of anomalous forecasts producing extremely wide uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C48 describe the ensemble methodology and the mid-study change from mean to median. This methodological change is clearly documented with rationale (addressing anomalous forecasts). The switch represents an important methodological decision that affects interpretation of results, as performance before and after the change may differ.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Forecast performance was evaluated using calibration (coverage) and the Weighted Interval Score (WIS), a strictly proper scoring rule. Relative WIS was calculated using pairwise comparisons to handle missing data, scaled against a baseline model that assumes constant case/death counts with expanding uncertainty. Forecasts surrounding anomalous data points (>5% revision) were excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C67 describe the evaluation methodology. The use of WIS and relative WIS is appropriate for comparing probabilistic forecasts with missing data. The baseline model and anomaly exclusion criteria are clearly defined. The mathematical properties of WIS (proper scoring rule) are correctly stated. However, the 5% threshold for anomalies appears arbitrary and lacks justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The ensemble outperformed 83% of participating models for case forecasts (N=886 predictions from 23 models) and 91% for death forecasts (N=763 predictions from 20 models) across all horizons and locations, with median relative WIS of 0.71 (IQR 0.61-0.88) compared to 1.04 (IQR 0.82-1.36) for individual models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C89-C92 present the main performance results with specific quantitative metrics. The percentages and sample sizes are clearly stated. The relative WIS values show the ensemble consistently outperforming the baseline (score <1) and most individual models. These results are supported by the data collection and evaluation methodology described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Ensemble performance for case forecasts declined with longer horizons (median relative WIS: 0.62 at 1-week to 0.9 at 4-weeks), while death forecast performance remained stable (0.69 to 0.76 across 1-4 weeks). At each horizon, the ensemble outperformed both the baseline and aggregated component models, though with wide variation between individual models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C93-C96 describe horizon-dependent performance patterns with specific quantitative values. The differential performance between cases and deaths across horizons is clearly documented. The observation of wide variation between models is important context. These patterns are consistent with the data presented in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The case ensemble was well-calibrated at 1-week ahead (50% and 95% nominal coverage) but became increasingly over-confident at longer horizons. Death forecasts were well-calibrated at the 95% level across all horizons, with 50% level calibration improving at longer horizons from being initially underconfident.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe calibration results showing differential patterns for cases versus deaths. The deteriorating calibration for case forecasts at longer horizons is concerning and suggests systematic overconfidence. The better calibration of death forecasts is consistent with their more stable performance. These results are supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Across 32 countries, the ensemble outperformed 75% of component models in 22 countries for cases and 30 countries for deaths (all horizons combined), and outperformed all models in 3 and 8 countries respectively. At the 2-week horizon specifically, the ensemble outperformed 75% of models in 25 countries for cases and 30 countries for deaths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C101-C108 present country-level performance results with specific counts. The ensemble's consistent superiority across most countries supports its robustness. However, the fact that it didn't outperform all models in all countries (C133) is important context. These results are supported by Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Among ensemble methods tested retrospectively, using the median instead of the mean was the most influential choice for improving performance, regardless of weighting method. The median outperformed the mean across all horizons for both targets (except 1-week case forecasts), whether weighted or unweighted. Weighting by past performance made little difference for median ensembles but appeared to improve mean ensembles for death forecasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C16, C109-C112 present results from the retrospective ensemble comparison. The superiority of median over mean is clearly demonstrated in Table 1 with specific performance ratios. The finding that weighting provides minimal benefit is important for practical implementation. However, the claim about mean ensemble improvement for deaths (C112) uses weaker language ('appeared to improve'), suggesting less certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Alternative ensemble methods were retrospectively explored, including inverse score weighting (which showed mixed results in prior US and German/Polish studies) and weighted median ensembles using Harrel-Davis quantile estimation. The performance of weighted and unweighted mean and median ensembles was compared against the baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 describe the retrospective analysis methodology and cite relevant prior work. The methods are clearly described with appropriate citations. The acknowledgment of mixed prior evidence (C71, C72) provides important context. The mathematical approach using Harrel-Davis estimation is appropriate for weighted medians.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study created 2139 forecasting scores from 48 models. Participation varied by target: Germany received the most forecasts (29 models for 1-week cases), while Liechtenstein received the fewest (12 models for 4-week forecasts). Most models (41) provided full probabilistic quantiles, while only 3 provided point forecasts. For evaluation, 29 models were included, with 5 excluded from ensemble creation for incomplete quantiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 provide descriptive statistics about data collection and model participation. The numbers are specific and internally consistent. The variation in participation across targets and the exclusion criteria for ensemble creation are clearly documented. These details are important for understanding the scope and limitations of the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Visual comparison showed forecasts predicted well during stable epidemic periods but struggled at longer horizons around inflection points (e.g., during rapid behavioral or surveillance changes). Models varied widely in their ability to predict and account for new variant introductions, resulting in high ensemble uncertainty during these periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 describe qualitative observations from visual inspection of forecasts. While these are subjective assessments, they are consistent with the quantitative results showing declining performance at longer horizons and the contextual factors described (C114-C118). Figure 2 provides visual evidence supporting these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Forecasting trend changes in real time was particularly challenging across all models. The study period included fundamental changes in COVID-19 transmission factors (vaccination introduction, Delta emergence, Omicron spread with waning immunity) that varied in extent and timing across European countries, requiring models to adapt quickly to new conditions for each forecast target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 provide epidemiological context for the forecasting challenges. The major events (vaccination, variants) are well-documented with appropriate citations (C115-C117). The inference that model performance depended on adaptation ability (C119) is reasonable given the observed heterogeneity. This context is essential for interpreting the performance results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The differential performance between case and death forecasts can be explained by COVID-19 epidemiology: the short serial interval (<1 week) means case forecasts >2 weeks require stable transmission/detection, which was violated by rapid epidemic changes. Death forecasts benefited from longer-tailed reporting distributions creating lower fluctuation magnitude, more consistent surveillance data, and potentially slower trend changes due to vaccination. These features allow easier incorporation of transmission changes when forecasting deaths versus cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C130 provide mechanistic explanations for the observed performance differences, supported by citations to relevant epidemiological literature (C120-C122, C125, C128). The reasoning about serial intervals, reporting lags, and data quality is sound. However, C129 is speculative ('may have benefited'), appropriately qualified. The overall explanation is coherent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The results support using ensemble forecasts to improve predictive performance across epidemiological targets and populations during infectious disease epidemics. The ensemble continued to outperform other models and the baseline at up to 4 weeks ahead, consistent with previous findings. However, the ensemble was not strictly dominant across all targets, suggesting its usefulness as a robust summary without replacing the importance of communicating the full range of model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C131-C136 present the main conclusions about ensemble utility. The support for ensemble use is well-justified by the performance results (C8-C9, C89-C92). The acknowledgment that the ensemble wasn't strictly dominant (C133) is important honesty, supported by citations to similar findings (C134). The recommendation to communicate full prediction ranges (C136) is a reasonable practical conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C190"
+    ],
+    "result": "Forecast consumers should place more weight on incident death forecasts than incident case forecasts at horizons greater than 2 weeks. Issues with the predictability of short-term case forecasts have been linked to underlying COVID-19 epidemiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C190 present practical recommendations based on the observed performance differences. The recommendation is justified by the quantitative results showing stable death forecast performance versus declining case forecast performance at longer horizons (C10-C11, C95-C96), combined with the epidemiological explanations (C122-C130). This is a reasonable evidence-based recommendation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The finding that median outperforms mean is supported by prior work but may depend on forecast submission quality. Weighting by past performance did not consistently improve performance, consistent with mixed evidence for optimal ensemble methods in infectious disease forecasting. Prior US studies showed varied results (mean/weighted sometimes better, sometimes similar to median), potentially explained by differences in outcome type, count level, disease dynamics, and team quality/quantity over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 contextualize the ensemble method findings within existing literature. The citations to prior work (C137, C141-C142) support the mixed evidence. The speculation about factors affecting method performance (C143) is appropriately qualified and reasonable. The acknowledgment of quality-dependence (C138) is an important caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The study did not use formal statistical tests (e.g., Diebold-Mariano) for comparing forecast scores, recognizing uncertainty about best practices across many models. Results depend on the specific performance metric and baseline choice, which affects absolute scores. The baseline model used is supported by previous work, but prior research suggests baseline choice affects relative performance generally, indicating need for future research on optimal baseline selection for infectious disease epidemics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C150 acknowledge important methodological limitations. The lack of formal statistical testing (C144) is a limitation but the rationale is reasonable. The acknowledgment that results depend on metric and baseline choice (C145-C146) is important transparency. The citations supporting and questioning the baseline choice (C148-C149) show balanced consideration. The call for future research (C150) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Forecast performance assessment may have been inaccurate due to observed data limitations. Using a globally aggregated database (JHU) for compatibility across 32 countries made it difficult to identify origins of lags and inconsistencies. Real-time data was sometimes revised retrospectively, introducing bias. Mitigation included automated revision detection and excluding forecasts during unreliable data periods. Alternative approaches (evaluating against updated data) exist, and whether forecasts should anticipate revisions remains unclear, requiring end-user research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C158 acknowledge data quality limitations with appropriate transparency. The trade-off between standardization and data quality (C152-C153) is honestly presented. The observation of retrospective revisions (C154) is documented, with mitigation efforts described (C155). The acknowledgment of alternative approaches (C156) and open questions (C157-C158) shows appropriate scientific humility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The study has little insight into individual methods and assumptions modellers used. While modellers provided short method descriptions, no rigorous framework was created, and changes to methods over time were not documented. The content and variation in modelling methods and assumptions are likely critical to explaining (not just describing) performance, making this an important area for future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 acknowledge a significant limitation in understanding why models performed differently. The lack of systematic method documentation (C160-C161) limits explanatory power. The speculation that methods are critical to explaining performance (C162) is reasonable and appropriately qualified. The call for future work (C163) is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The European Forecast Hub created a unique open-access, cross-country modelling network connecting to public health policy across Europe. Unlike previous European efforts using single models, the Hub enabled robust ensemble forecasts through broad participation and real-time like-for-like comparisons. The Hub supported policy outputs including weekly ECDC reports, helped modellers identify strengths/weaknesses, ensured true out-of-sample testing, and informed decision-maker communication about forecast limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C174 describe the Hub's contributions and impact. The comparison to prior single-model efforts (C165) is supported by citations. The policy impact (C170, C174) is documented with specific examples. The benefits for modellers (C171) and methodological advantages (C172) are reasonable inferences. The overall contribution claims are well-supported by the project's scope and outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The Hub dataset is an openly accessible, standardised, extensively documented catalogue of real-time forecasting work, recommended for further research. Code with worked examples is provided. Future research could explore impacts of changing epidemiology on forecast models, methods for improving ensemble performance (inclusion criteria, trimming, alternative weighting like quantile regression averaging), which would enhance understanding of real-time performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C183 describe the data resource and suggest future research directions. The dataset description (C175) is verifiable. The provision of code examples (C177) supports reproducibility. The future research suggestions (C178-C182) are reasonable extensions, appropriately cited where relevant. These represent appropriate forward-looking statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The Hub infrastructure has been extended to include short-term hospitalisation forecasts (challenging due to limited data) and is investigating longer-term scenario models (similar to US work) as policy focus shifts from immediate response to anticipating vaccination and variant impacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C187 describe ongoing and planned extensions of the Hub. The hospitalisation extension (C185) is stated as completed work. The acknowledgment of data challenges (C186) is appropriate. The scenario modelling work (C187) is described as ongoing with appropriate citation to similar US efforts. These represent reasonable project evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C191",
+      "C192"
+    ],
+    "result": "During a rapidly evolving epidemic across multiple populations, the ensemble forecast performed highly consistently across forecast targets, typically outperforming most component models and a naive baseline. Ensemble methods based on past model performance were unable to reliably improve forecast performance. This work constitutes a step towards unifying and improving understanding of COVID-19 forecasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188, C189, C191, C192 present the main summary conclusions. These are well-supported by the quantitative results throughout the paper (C8-C9, C89-C92, C93, C101-C108 for ensemble performance; C109-C112, C139 for weighting results). The characterization as a 'step towards' (C192) is appropriately modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Short-term infectious disease forecasts contribute to situational awareness and capacity planning, with performance maximized by combining multiple models into ensembles (based on best practices from other fields and recent infectious disease insights). Forecasters use varied methods, making comparison difficult. Forecast hubs standardize and collate forecasts from independent teams, an approach pioneered in climate modelling and adapted for dengue and influenza in the USA, with evidence supporting ensemble superiority.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18-C26 provide background context and motivation, all supported by appropriate citations to prior work. These represent established knowledge in the field (C1, C2, C22) and documented prior efforts (C18-C21, C23-C26). The claims accurately represent the state of knowledge and prior work that motivated this study.",
+    "result_type": "MINOR"
+  }
+]

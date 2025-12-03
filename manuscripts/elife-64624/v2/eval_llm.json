@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C114"
+    ],
+    "result": "At physiological GTP:GDP ratios (10:1), ARL13B alone weakly activates ARL3, with the majority of ARL3 remaining GDP-bound at equilibrium. ARL13B accelerates GDP dissociation only 8.5-fold with excess GDP and 25-fold with excess GppNHp, and GppNHp cannot fully displace GDP even at 75-fold excess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C44-C46, C48, and C114 are directly supported by fluorescence polarization data in Figure 1A-B showing weak ARL3 activation by ARL13B alone under physiological nucleotide ratios. The quantitative rate measurements and equilibrium binding data provide strong experimental evidence for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ARL3 has a 50-fold higher binding affinity for GDP (0.06 nM) compared to GppNHp (3 nM), which nullifies the physiological 10-fold GTP:GDP ratio and explains why ARL3 remains predominantly GDP-bound even in the presence of GEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 cites prior work (Veltel et al., 2008) for the binding affinity values, while C43 is a logical inference from these values. Claims C39-C41 provide the physiological context. The reasoning is sound and consistent with the experimental observations in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C56"
+    ],
+    "result": "The N-terminal amphipathic helix of ARL3 acts as an autoinhibitory 'hasp' that prevents nucleotide exchange. N-terminally truncated ARL3\u0394N undergoes significant nucleotide exchange with ARL13B, while full-length ARL3 does not, and structural comparison shows ARL3 undergoes similar conformational changes to ARF proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are directly supported by nucleotide exchange data comparing full-length and truncated ARL3 in Figure 2B. Claim C56 is supported by structural analysis in Figure 2A. The data clearly demonstrate the inhibitory role of the N-terminal helix.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "ARL3 is not myristoylated in vitro and shows only weak binding to liposomes. Liposomes do not enhance ARL13B-mediated nucleotide exchange of ARL3, indicating that membrane binding does not release the N-terminal helix autoinhibition under the experimental conditions tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C64, C66-C67 are supported by experimental data in Figures 2C-G including myristoylation attempts, liposome binding assays, and nucleotide exchange experiments with various liposome compositions. The negative results are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C72"
+    ],
+    "result": "BART binds to nucleotide-free ARL3 with weak but consistent affinity (approximately 1:10 compared to ARL3GppNHp binding), identifying it as a potential GEF component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, and C72 are directly supported by pull-down assay data in Figure 3A showing BART binding to nucleotide-free ARL3. The quantification shows weak but reproducible binding, distinguishing BART from typical effectors like UNC119A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "BART and ARL13B together efficiently activate ARL3, achieving over 500-fold acceleration of GDP dissociation compared to the intrinsic rate. BART alone with ARL13B accelerates exchange approximately 70-fold even with excess GDP, demonstrating bona fide co-GEF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33, C75-C79 are strongly supported by nucleotide exchange assays in Figures 3B-C showing dramatic rate enhancement when both BART and ARL13B are present. The quantitative measurements and controls (GDP vs GppNHp) provide robust evidence for the co-GEF mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "BART functions as a co-GEF by releasing two layers of ARL3 autoinhibition: the N-terminal helix and the interswitch \u03b2-hairpin. BART is the only ARL3 interactor that can simultaneously bind both the N-terminal helix and the switch regions, and it accelerates exchange even of ARL3\u0394N lacking the helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C86, C89-C90 are supported by structural analysis in Figure 3E comparing multiple ARL3 complexes, and by nucleotide exchange data in Figure 3F showing BART effects on ARL3\u0394N. The mechanistic model is well-supported by the data, though the precise molecular details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C107"
+    ],
+    "result": "BART binds to ARL3GTP and inhibits GTP dissociation, thereby stabilizing the active G-protein state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, and C107 are directly supported by fluorescence polarization data in Figure 5B showing that BART prevents dissociation of the otherwise rapidly dissociating GTP from ARL3. The data clearly demonstrate BART's role in stabilizing ARL3GTP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C35",
+      "C97",
+      "C98",
+      "C102",
+      "C103"
+    ],
+    "result": "ARL3 effectors (UNC119A and PDE\u03b4) displace BART from the ARL3GTP-BART complex and accelerate BART recycling. Addition of UNC119A to limiting GEF/co-GEF reactions enhances ARL3 exchange, and PDE\u03b4 accelerates ARL3 displacement from immobilized BART by twofold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C35, C97-C98, C102-C103 are supported by nucleotide exchange data in Figure 4B and SPR data in Figure 4C. The experiments demonstrate that effectors not only compete with BART but actively accelerate the recycling process, supporting the proposed catalytic cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Under multiple turnover conditions with limiting BART, excess GppNHp causes rapid reaction quenching due to product inhibition by the ARL3GTP-BART complex, while excess GDP does not cause the same inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by multiple turnover experiment data in Figure 4A. The differential effects of GDP vs GppNHp clearly demonstrate product inhibition by the ARL3GTP-BART complex, consistent with BART's high affinity for ARL3GTP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C31",
+      "C106"
+    ],
+    "result": "BART accesses the primary cilium and colocalizes with ARL13B in both NIH/3T3 and RPE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C31, and C106 are directly supported by live cell imaging data in Figure 5A showing clear colocalization of fluorescently tagged BART and ARL13B in cilia. The imaging was performed in two different cell types, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C29",
+      "C111",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors propose a model wherein BART functions as a bona fide co-GEF for ARL3, maintaining active ARL3GTP by masking the N-terminal helix and stabilizing the interswitch region until ARL3 is recycled by effectors. This represents a novel two-component GEF system comprising ARL13B and BART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C29, C111, C119-C121 represent the integrated model supported by multiple lines of evidence: nucleotide exchange kinetics, structural analysis, binding studies, and cellular localization. While the model is well-supported, some mechanistic details (e.g., precise order of events, ternary complex structure) remain to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "BART binds to ARL2GTP and inhibits GTP dissociation, suggesting BART can maintain an active pool of both ARL3GTP and ARL2GTP in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by fluorescence polarization data in Figure 5C showing BART inhibits GTP dissociation from ARL2. This extends the findings from ARL3 to its homolog ARL2, though the physiological significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Structural superimposition reveals no steric clashes between ARL13B-ARL3 and ARL3-BART complexes, indicating a ternary complex is structurally feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by structural modeling shown in Figure 3E. While the modeling suggests feasibility, direct experimental evidence of a ternary complex (e.g., co-immunoprecipitation, crystal structure) would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The authors argue that using physiological GTP:GDP ratios in GEF assays is crucial for fully characterizing activation mechanisms, particularly for G-proteins with non-equivalent nucleotide binding affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is a methodological recommendation well-supported by the study's findings. The data clearly show that standard GEF assays using only GTP analogs would miss the weak activation of ARL3 by ARL13B alone, highlighting the importance of this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims establishing the biological context: ARL3 is a ciliopathy G-protein regulating ciliary trafficking; it is activated by ARL13B via an unresolved mechanism; BART is an ARL3 effector implicated in ciliopathies; and both the GEF (ARL13B) and GAP (RP2) for ARL3 are linked to ciliopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C28 are background knowledge claims supported by appropriate citations to prior literature. These establish the context and motivation for the study but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C82",
+      "C83",
+      "C84",
+      "C112",
+      "C113",
+      "C116",
+      "C117"
+    ],
+    "result": "General mechanistic principles of GEF function, nucleotide ratios in cells, and ARF/ARL protein structure and regulation, drawn from established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41, C49-C55, C82-C84, C112-C113, C116-C117 represent established knowledge about GTPase regulation and ARF/ARL protein mechanisms, appropriately cited from the literature. These provide the conceptual framework for interpreting the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C96",
+      "C128",
+      "C129",
+      "C132"
+    ],
+    "result": "Speculative claims and hypotheses: ARL3 activation may require a non-lipid component; the N-terminal helix release may be carried out by an interactor; effectors may relieve BART product inhibition; ARL3-membrane interactions may be transient; and IFT27 may require a co-GEF like ARL3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69, C96, C128-C129, C132 are explicitly speculative or represent hypotheses for future investigation. While reasonable based on the data, they lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C100",
+      "C104",
+      "C122",
+      "C123",
+      "C125"
+    ],
+    "result": "Supporting structural and functional information from prior studies: ARL2-BART and ARL3-BARTL1 structures show N-terminal helix interactions; BART localizes to photoreceptor cilia; BART-ARL2 requires both binding sites for high affinity; and the ARL3 N-terminal helix acts as a 'pocket opener' for UNC119A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C100, C104, C122-C123, C125 cite prior structural and functional studies that support the current work's interpretations. These are appropriately referenced and provide important context.",
+    "result_type": "MINOR"
+  }
+]

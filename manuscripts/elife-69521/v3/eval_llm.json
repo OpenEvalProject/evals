@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "PRKACA and PRKAR1A alterations occur at varying frequencies across multiple cancer types in TCGA data. PRKACA amplification occurs at 0.3-11.3%, activating mutations at 0.2-2.7%, while PRKAR1A inactivating mutations occur at 0.2-5.3% and deep deletions at 0.4-4%, predominantly in adrenocortical carcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 are directly supported by TCGA Pan Cancer Atlas analysis shown in Figure 1B. The frequency ranges are explicitly stated and visualized, providing clear quantitative evidence for the distribution of these alterations across cancer types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Engineered cell models with inducible PRKACA or PRKAR1AG325D show expected changes in PKA activity as measured by phosphoproteomics. VASP pS239 phosphorylation increased with PRKACA induction and decreased with PRKAR1AG325D induction, and PKAc was upregulated with both Phosfate and MIBs platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by phosphoproteomics data in Figures 2A-B, demonstrating that the engineered cell models behave as expected. This validates the experimental system for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Integrated proteomics analysis identified specific kinases whose activities change with PKA modulation. YES, LYN, EPHB4, LIMK1, LIMK2, CDK5, and CDK7 were reduced by PKAc overexpression and increased by PKA inhibition. ROCK1 showed opposite regulation, while pro-proliferative kinases AURKA, BRAF, and AKT2 were upregulated and tumor suppressor STK11 was downregulated by PKA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by integrated Phosfate and MIBs data shown in Figures 2C-D. The consistent directional changes across multiple cell lines and platforms provide strong evidence for these PKA-regulated kinase activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Network propagation analysis identified two PKA-dependent signaling clusters: one characterized by growth factor signaling effectors (BRAF, MAPKs, AKT, PKCs, ERBB2) and another involving cell cycle kinases regulating G2/M transition (AURKA, PLK1, GSK3A/B, casein kinases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by network analysis shown in Figure 2E. The use of ReactomeFI network and network propagation provides a systematic approach to identify functionally related kinase clusters, though the specific composition of clusters involves some computational inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FSK/IBMX treatment produced differential effects on MAPK1/3 and GSK3B in Colo741 versus FLX1 cells. Strong MAPK1/3 activation occurred in Colo741 with mild reduction in FLX1, while marked GSK3B inhibition (via pS9) occurred in FLX1 with smaller, transient effects in Colo741.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by western blot data in Figure 2F. The cell line-specific differences in signaling responses are clearly demonstrated, though the mechanistic basis for these differences is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PKA activation by FSK/IBMX treatment led to progressive increases in c-MYC protein levels in both FLX1 and Colo741 cells, with time-dependent correlation to PKA substrate phosphorylation. Low levels of n-MYC in FLX1 also increased. Sustained PKAc activation resulted in mildly elevated MYC mRNA in FLX1 but not Colo741.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by western blot data (Figure 3A) and qRT-PCR data (Figure 3B). The time course and cell line-specific differences are clearly documented, establishing PKA effects on MYC at both protein and mRNA levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Multiple genetic and pharmacological approaches confirm PKA regulation of c-MYC. PRKAR1AG325D induction reduced PKA activity and c-MYC/n-MYC levels in FLX1. An engineered FLC clone showed increased basal PKA activation and c-MYC expression versus AML12 wild type. The PKA inhibitor H89 reduced c-MYC levels in FLX1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by western blot data in Figures 3C-E. Multiple orthogonal approaches (genetic inhibition, engineered model, pharmacological inhibition) consistently demonstrate PKA regulation of c-MYC, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Expression of the DNAJ-PKAc fusion protein correlated with increased c-MYC and n-MYC protein levels in human FLC tumor specimens compared to adjacent normal liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by western blot analysis of human FLC specimens shown in Figure 3F. The correlation is demonstrated across four patient samples, providing clinical validation of the cell line findings, though the sample size is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "GSEA of TCGA data revealed upregulation of MYC target gene sets in tumors with PKA-activating alterations. In adrenocortical carcinoma, MYC Targets V1 and V2 were among multiple upregulated Hallmark Gene Sets. In ovarian cancer, MYC Targets V2 was the only significantly upregulated gene set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by GSEA analysis shown in Figure 3G. The analysis provides independent validation in human tumors that PKA activation correlates with MYC pathway activity, though causality cannot be definitively established from correlative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "PRKACA knockdown in FLX1 caused dramatic transcriptome alterations including downregulation of MYC target gene sets and upregulation of inflammatory/tumor suppressive gene sets. Both PRKACA and MYC knockdown reduced expression of the c-MYC target ODC. FSK/IBMX treatment caused time-dependent increases in ODC and CCND1 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by RNASeq data (Figures 4A-B) and qRT-PCR data (Figures 4C-D). The convergence of PRKACA and MYC effects on downstream targets provides strong evidence for a PKA\u2192MYC signaling axis, though minor inconsistencies in MYC mRNA changes are noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MYC knockdown suppressed proliferation in FLX1 cells and to a lesser extent in Colo741 cells. Individual siRNAs confirmed significant proliferation decreases versus NTC in FLX1. Conversely, ectopic MYC expression increased FLX1 proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by cell proliferation data in Figures 4E-G and supplement 1B. The bidirectional manipulation of MYC levels with corresponding proliferation changes provides strong evidence for MYC's functional role, though the differential effects between cell lines suggest context-dependent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A screen of 352 kinase inhibitors identified Aurora kinase inhibitors as particularly potent in FLX1 cells. Blocking PKA activity with PRKAR1AG325D induction increased potency of RTK, RAS/MAPK, and Aurora kinase inhibitors while diminishing PI3K/mTOR pathway inhibitor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by drug screening data in Figures 5A-B. The differential drug sensitivities upon PKA inhibition provide insight into PKA-dependent vulnerabilities, though the mechanisms underlying these changes require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Testing of AURKA and PIM inhibitors revealed complex effects on c-MYC. The conformation-disrupting AURKA inhibitor CD532 had the strongest effect on viability and reduced c-MYC, but showed off-target PKA inhibition. MLN-8237 reduced c-MYC in Colo741 but not FLX1. PIM inhibitors CX6258 and SGI1776 reduced c-MYC but were overwhelmed by chronic cAMP stimulation. Combinations showed only mild cooperative effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 are supported by drug sensitivity data (Figures 5D-G) and western blots. The results demonstrate that while AURKA, PIM, and GSK3 can influence c-MYC, their inhibition alone or in combination is insufficient to overcome PKA-driven c-MYC induction, suggesting alternative mechanisms are more important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Multiple lines of evidence suggest PKA effects on c-MYC are not primarily mediated by altered protein stability. GSK3 inhibition with CHIR99021 augmented PKA effects on c-MYC. Proteasome inhibitor MG132 augmented FSK/IBMX effects but did not rescue c-MYC when PKA was inhibited. FSK/IBMX had no significant effect on c-MYC half-life in cycloheximide chase experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by western blot data (Figure 5 supplements 1C, 2A-C). The convergent evidence from multiple experimental approaches strongly argues against protein stability as the primary mechanism, redirecting focus toward translational control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "GSEA of phosphoproteomic datasets revealed statistically significant enrichment of translation initiation proteins following PKA activation. eIF4B, a direct PKA target, showed increased S422 phosphorylation with FSK/IBMX treatment and reduced phosphorylation with PRKAR1AG325D induction or PRKACA knockdown in both Colo741 and FLX1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by GSEA analysis (Figure 6A) and western blot data (Figures 6B-D). The consistent regulation of eIF4B phosphorylation across multiple experimental conditions provides strong evidence for PKA effects on translation initiation machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "eIF4A inhibitors rocaglamide and zotatifin markedly attenuated FSK/IBMX-induced c-MYC to near baseline levels, with rocaglamide showing limited additive effect with PRKAR1AG325D. The eIF4E inhibitor napabucasin had little effect. Critically, exogenously introduced c-MYC lacking a 5'UTR was not reduced by PRKACA knockdown or zotatifin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by western blot data (Figures 7A-C and supplement 1A-B). The 5'UTR deletion experiment provides particularly strong mechanistic evidence that PKA effects on c-MYC are mediated through translational control requiring the 5'UTR, rather than transcriptional or stability mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Zotatifin potently reduced FLX1 and Colo741 viability with EC50 values of 7 nM and 22 nM respectively. The impact of zotatifin was significantly blunted by PRKAR1AG325D induction in FLX1, and siRNA knockdown of PRKACA and MYC largely abrogated zotatifin effects on FLX1 proliferation. Zotatifin treatment reduced expression of c-MYC targets CCND1 and ODC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by cell viability data (Figures 7D-F) and qRT-PCR data (Figure 7G). The genetic epistasis experiments demonstrating reduced zotatifin sensitivity upon PKA or MYC inhibition provide strong evidence that zotatifin's effects are mediated through the PKA\u2192translation\u2192MYC axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors conclude that the primary mechanism of PKA effects on MYC in their cell models is translation, which can be blocked with the eIF4A inhibitor zotatifin. This compound dramatically reduced c-MYC expression and inhibited FLC cell line growth in vitro, suggesting that targeting PKA effects on translation is a potential treatment strategy for FLC and other PKA-driven cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 represent the main conclusions but require qualification. While the in vitro evidence for translational control is strong (C110-C111), the therapeutic potential (C112) remains speculative without in vivo validation. The authors acknowledge this limitation in the Discussion, noting that 'in vivo validation in multiple models' is required. The conclusion is well-supported by cell culture data but premature for clinical translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "PKA-activating genetic alterations are found in many tumor types, including GNAS/PRKACA mutations in endocrine tumors, PRKACA L205R in Cushing's syndrome, germline PRKAR1A mutations in Carney Complex, and DNAJB1-PRKACA fusions predominantly in FLC (79-100% of cases) but also in small subsets of other liver cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15 are literature review claims supported by appropriate citations. These establish the clinical context and prior knowledge foundation for the study. The claims are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The PKA holoenzyme consists of two catalytic and two regulatory subunits. In the inactive state, R subunits form a homodimer that binds and inhibits C subunits. cAMP, generated by GPCR/G\u03b1s-mediated adenylyl cyclase stimulation, binds R subunits causing conformational changes that allow C subunit mobility and activity. AKAPs (60 human proteins) provide spatiotemporal specificity by sequestering PKA at subcellular locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe established PKA biology supported by appropriate citations. These provide necessary background knowledge for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior literature has established various PKA signaling mechanisms in cancer including ERK activation via AKAP-Lbc in FLC, SIK1-3 suppression in GNAS-mutant pancreatic tumors, G2/M transition control, and glucose starvation survival. PKA also has context-specific tumor suppressive functions and is mutationally inactivated in some cancers. Direct PKA inhibition is challenging due to its ubiquitous physiological role and intolerable side effects of selective inhibitors, particularly problematic for FLC which has limited treatment options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C32 are literature review claims establishing the rationale for the study. All are supported by appropriate citations and provide context for why downstream PKA targets are more tractable therapeutic approaches than direct PKA inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C93",
+      "C94",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Prior literature and current data establish connections between PKA, AURKA, GSK3, and MYC. AURKA and GSK3 have been previously described as PKA targets that can regulate MYC family proteins. eIF4B phosphorylation at S422 increases eIF4A activity, which unwinds complex 5'UTRs of pro-growth genes including MYC. The current study presents data that PKA stimulation can inhibit GSK3B, and others have shown PKA phosphorylation of AURKA. Colo741 has an activating BRAF mutation that may maintain proliferation when c-MYC is blocked, while FLCs rarely harbor additional oncogenic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C93-C94, C104-C109 combine literature citations with current experimental observations. The cited prior work is appropriately referenced. The speculation about BRAF maintaining Colo741 proliferation (C107) is reasonable but unproven. The observation about GSK3B inhibition by PKA (C108) is supported by the western blot data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The cell line models used in this study have specific genetic characteristics: FLX1 is a novel patient-derived xenograft FLC line containing a DNAJ-PKAc fusion with biochemical gain-of-function that may have distinct signaling effects. Colo741 was derived from a colon cancer patient but is thought to be melanoma. 639V has PRKACA copy number gain, while Colo741 and ML1 have PRKAR1A frameshift mutations. Colo741 is highly dependent on PRKACA per Cancer Dependency Map. PRKAR1AG325D is a dominant PKAc inhibitor with impaired cAMP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 describe the cell line models and genetic tools used in the study. These are supported by appropriate citations and characterization data shown in Figure 1C-D. The speculation about distinct signaling effects of the DNAJ-PKAc fusion (C115) is appropriately qualified as uncertain.",
+    "result_type": "MINOR"
+  }
+]

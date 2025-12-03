@@ -1,0 +1,1344 @@
+{
+  "submission": {
+    "id": "2ef488d0-8942-4771-b532-5184f19bd46c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:36:24.832389Z",
+    "updated_at": "2025-12-03T17:36:24.832389Z"
+  },
+  "content": [
+    {
+      "id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "submission_id": "2ef488d0-8942-4771-b532-5184f19bd46c",
+      "content_type": "manuscript",
+      "content_text": "# Uncertainty alters the balance between incremental learning and episodic memory\n\n## Authors\n\n- Jonathan Nicholas<sup>1</sup> ([ORCID: 0000-0002-2314-0765](https://orcid.org/0000-0002-2314-0765)) \u2020\n- Nathaniel D Daw<sup>3</sup> ([ORCID: 0000-0001-5029-1430](https://orcid.org/0000-0001-5029-1430))\n- Daphna Shohamy<sup>1</sup>\n\n### Affiliations\n\n1. Department of Psychology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Mortimer B. Zuckerman Mind, Brain, Behavior Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n3. Department of Psychology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n4. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n5. The Kavli Institute for Brain Science, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA key question in decision-making is how humans arbitrate between competing learning and memory systems to maximize reward. We address this question by probing the balance between the effects, on choice, of incremental trial-and-error learning versus episodic memories of individual events. Although a rich literature has studied incremental learning in isolation, the role of episodic memory in decision-making has only recently drawn focus, and little research disentangles their separate contributions. We hypothesized that the brain arbitrates rationally between these two systems, relying on each in circumstances to which it is most suited, as indicated by uncertainty. We tested this hypothesis by directly contrasting contributions of episodic and incremental influence to decisions, while manipulating the relative uncertainty of incremental learning using a well-established manipulation of reward volatility. Across two large, independent samples of young adults, participants traded these influences off rationally, depending more on episodic information when incremental summaries were more uncertain. These results support the proposal that the brain optimizes the balance between different forms of learning and memory according to their relative uncertainties and elucidate the circumstances under which episodic memory informs decisions.\n\n## Introduction\n\nEffective decision-making depends on using memories of past experiences to inform choices in the present. This process has been extensively studied using models of learning from trial-and-error, many of which rely on error-driven learning rules that in effect summarize experiences using a running average (Sutton and Barto, 1998; Rescorla and Wagner, 1972; Houk et al., 1995). This sort of incremental learning provides a simple mechanism for evaluating actions without maintaining memory traces of each individual experience along the way and has rich links to conditioning behavior and putative neural mechanisms for error-driven learning (Schultz et al., 1997). However, recent findings indicate that decisions may also be guided by the retrieval of individual events, a process often assumed to be supported by episodic memory (Bakkour et al., 2019; Plonsky et al., 2015; Mason et al., 2020; Bornstein et al., 2017; Collins and Frank, 2012; Bornstein and Norman, 2017; Duncan et al., 2019; Duncan and Shohamy, 2016; Lee et al., 2015; Wimmer and B\u00fcchel, 2020). Although theoretical work has suggested a role for episodic memory in initial task acquisition, when experience is sparse (Gershman and Daw, 2017; Lengyel and Dayan, 2007), the use of episodes may be much more pervasive as its influence has been detected empirically even in decision tasks that are well-trained and can be solved normatively using incremental learning alone (Plonsky et al., 2015; Bornstein et al., 2017; Bornstein and Norman, 2017). The apparent ubiquity of episodic memory as a substrate for decision-making raises questions about the circumstances under which it is recruited and the implications for behavior.\n\nHow and when episodic memory is used for decisions relates to a more general challenge in cognitive control: understanding how the brain balances competing systems for decision-making. An overarching hypothesis is that the brain judiciously adopts different decision strategies in circumstances for which they are most suited; for example, by determining which system is likely to produce the most rewarding choices at the least cost. This general idea has been invoked to explain how the brain arbitrates between deliberative versus habitual decisions and previous work has suggested a key role for uncertainty in achieving a balance that maximizes reward (Daw et al., 2005; Lee et al., 2014). Moreover, imbalances in arbitration have been implicated in dysfunction such as compulsion (Gillan et al., 2011; Voon et al., 2015), addiction (Ersche et al., 2016; Everitt and Robbins, 2005), and rumination (Hunter et al., 2022; Dayan and Huys, 2008; Huys et al., 2012).\n\nHere, we hypothesized that uncertainty is used for effective arbitration between decision systems and tested this hypothesis by investigating the tradeoff between incremental learning and episodic memory. This is a particularly favorable setting in which to examine this hypothesis due to a rich prior literature theoretically analyzing, and experimentally manipulating, the efficacy of incremental learning in isolation. Studies of this sort typically manipulate the volatility, or frequency of change, of the environment, as a way of affecting uncertainty about incrementally learned quantities. In line with predictions made by statistical learning models, these experiments demonstrate that when the reward associated with an action is more volatile, people adapt by increasing their incremental learning rates (Behrens et al., 2007; Mathys et al., 2011; O\u2019Reilly, 2013; Nassar et al., 2012; Nassar et al., 2010; Browning et al., 2015; Piray and Daw, 2020; Kakade and Dayan, 2002; Yu and Dayan, 2005). In this case, incrementally constructed estimates reflect a running average over fewer experiences, yielding both less accurate and more uncertain estimates of expected reward. We, therefore, reasoned that the benefits of incremental learning are most pronounced when incremental estimation can leverage many experiences or, in other words, when volatility is low. By contrast, when the environment is either changing frequently or has recently changed, estimating reward episodically by retrieving a single, well-matched experience should be relatively more favorable.\n\nWe tested this hypothesis using a choice task that directly pits these decision systems against one another (Duncan et al., 2019), while manipulating volatility. In particular, we (i) independently measured the contributions of episodic memory vs. incremental learning to choice and (ii) altered the uncertainty about incremental estimates using different levels of volatility. Two large online samples of healthy young adults completed three tasks. Results from the primary sample (n = 254) are reported in the main text; results from a replication sample (n = 223) are reported in the appendices (Appendix 1).\n\nThe main task of interest combined incremental learning and episodic memory, referred to throughout as the deck learning and card memory task (Figure 1A, middle panel). On each trial of this task, participants chose between two cards of a different color and received feedback following their choice. The cards appeared on each trial throughout the task, but their relative value changed over time (Figure 1B). In addition to the color of the card, each card also displayed an object. Critically, objects appeared on a card at most twice throughout the task, such that a chosen object could reappear between 9 and 30 trials after it was chosen the first time, and would deliver the same reward. Thus, participants could make decisions based on incremental learning of the average value of the decks or based on episodic memory for the specific value of an object which they only saw once before. Additionally, participants made choices across two environments: a high-volatility and a low-volatility environment. The environments differed in how often reversals in deck value occurred.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig1-v2.jpg)\n\n**Figure 1.:** (A) Participants completed three tasks in succession. The first was the deck learning task that consisted of choosing between two colored cards and receiving an outcome following each choice. One color was worth more on average at any given timepoint, and this mapping changed periodically. Second was the main task of interest, the deck learning and card memory task, which followed the same structure as the deck learning task but each card also displayed a trial-unique object. Cards that were chosen could appear a second time in the task after 9\u201330 trials and, if they reappeared, were worth the same amount, thereby allowing participants to use episodic memory for individual cards in addition to learning deck value from feedback. Outcomes ranged from $0 to $1 in increments of 20\u00a2 in both of these tasks. Lastly, participants completed a subsequent memory task for objects that may have been seen in the deck learning and card memory task. Participants had to indicate whether they recognized an object and, if they did, whether they chose that object. If they responded that they had chosen the object, they were then asked if they remembered the value of that object. (B) Uncertainty manipulation within and across environments. Uncertainty was manipulated by varying the volatility of the relationship between cue and reward over time. Participants completed the task in two counterbalanced environments that differed in their relative volatility. The low-volatility environment featured half as many reversals in deck luckiness as the high-volatility environment. Top: the true value of the purple deck is drawn in gray for an example trial sequence. In purple and orange are estimated deck values from the reduced Bayesian model (Nassar et al., 2010). Trials featuring objects appeared only in the deck learning and card memory task. Bottom: uncertainty about deck value as estimated by the model is shown in gray. This plot shows relative uncertainty, which is the model\u2019s imprecision in its estimate of deck value.\n\nIn addition to the main task, participants also completed two other tasks in the experiment. First, participants completed a simple deck learning task (Figure 1A, left panel) to acclimate them to each environment and quantify the effects of uncertainty. This task included choices between two diamonds of a different color on each trial, without any trial-unique objects. Second, after the main task, participants completed a standard subsequent memory task (Figure 1A, right panel) designed to assess later episodic memory for objects encountered in the main task.\n\nWe predicted that greater uncertainty about incremental values would be related to increased use of episodic memory. The experimental design provided two opportunities to measure the impact of uncertainty: across conditions, by comparing between the high- and the low-volatility environments, and within condition, by examining how learning and choices were impacted by each reversal.\n\n## Results\n\n### Episodic memory is used more under conditions of greater volatility\n\nAs noted above, participants completed two decision-making tasks. The deck learning task familiarized them with the underlying incremental learning task and established an independent measure of sensitivity to the volatility manipulation. The separate deck learning and card memory task measured the additional influence of episodic memory on decisions (Figure 1). In the deck learning task, participants chose between two decks with expected value ($V$) that reversed periodically across two environments, with one more volatile (reversals every 10 trials on average) and the other less volatile (reversals every 20 trials on average).\n\nParticipants were told that at any point in the experiment one of the two decks was \u2018lucky,\u2019 meaning that its expected value ($V_{lucky}$ = 63\u00a2) was higher than the other \u2018unlucky\u2019 deck ($V_{unlucky}$ = 37\u00a2). They were also told that which deck was currently lucky could reverse at any time, and that they would be completing the task in two environments that differed in how often these reversals occurred. We reasoned that, following each reversal, participants should be more uncertain about deck value and that this uncertainty should reduce with experience. Because the more volatile environment featured more reversals, in this condition subjects should have greater uncertainty about the deck value overall.\n\nIn the second deck learning and card memory task, each deck featured cards with trial-unique objects that could reappear once after being chosen and were worth an identical amount at each appearance. Here, participants were told that they could use their memory for the value of objects they recognized to guide their choices. They were also told that the relative level of volatility in each environment during the card learning task would be identical in this task. We predicted that decisions would be based more on object value when deck value was more volatile. Our logic was that episodic memory should be relied upon more strongly when incremental learning is less accurate and reliable due to frequent change. This, in turn, is because episodic memory is itself imperfect in practice, so participants face a nontrivial tradeoff between attempting episodic recall vs. relying on incremental learning when an object recurs. We, therefore, expected choices to be more reliant on episodic memory in the high- compared to the low-volatility environment.\n\nWe first examined whether participants were separately sensitive to each source of value in the deck learning and card memory task: the value of the objects (episodic) and of the decks (incremental). Controlling for average deck value, we found that participants used episodic memory for object value, evidenced by a greater tendency to choose high-valued old objects than low-valued old objects ($\\beta_{OldValue}=0.621,\u200595%\u2005CI=[0.527,\u20050.713]$; Figure 2A). Likewise, controlling for object value, we also found that participants used incrementally learned value for the decks, evidenced by the fact that the higher-valued (lucky) deck was chosen more frequently on trials immediately preceding a reversal ($\\beta_{t\u22124}=0.038,95%$ $CI=[\u22120.038,0.113]$; $\\beta_{t\u22123}=0.056,95%$ $CI=[\u22120.02,0.134]$; $\\beta_{t\u22122}=0.088,95%$ $CI=[0.009,0.166]$; $\\beta_{t\u22121}=0.136,95%$ $CI=[0.052,0.219]$; Figure 2B), that this tendency was disrupted by the reversals ($\\beta_{t=0}=-0.382,\u200595%\u2005CI=[-0.465,\u2005-0.296]$), and by the quick recovery of performance on the trials following a reversal ($\\beta_{t+1}=-0.175,\u200595%\u2005CI=[-0.258,\u2005-0.095]$; $\\beta_{t+2}=-0.106,\u200595%\u2005CI=[-0.18,\u2005-0.029]$; $\\beta_{t+3}=\u22120.084,\u200595%\u2005CI=[\u22120.158,\u2005\u22120.006]$; $\\beta_{t+4}=0.129,\u200595%\u2005CI=[0.071,\u20050.184]$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig2-v2.jpg)\n\n**Figure 2.:** (A) Participants\u2019 (n = 254) choices demonstrate sensitivity to the value of old objects. Group-level averages are shown as points and lines represent 95% confidence intervals. (B) Reversals in deck luckiness altered choice such that the currently lucky deck was chosen less following a reversal. The line represents the group-level average, and the band represents the 95% confidence interval. (C) On incongruent trials, choices were more likely to be based on episodic memory (e.g., high-valued objects chosen and low-valued objects avoided) in the high- compared to the low-volatility environment. Averages for individual subjects are shown as points, and lines represent the group-level average with a 95% confidence interval. (D) Median reaction time was longer for incongruent choices based on episodic memory compared to those based on incremental learning.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Participants\u2019 (n = 223) choices demonstrate sensitivity to the value of old objects. (B) Reversals in deck luckiness altered choice such that the currently lucky deck was chosen less following a reversal. (C) On incongruent trials, choices were more likely to be based on episodic memory in the high- compared to the low-volatility environment. (D) Reaction time was longer for incongruent choices based on episodic memory compared to those based on incremental learning.\n\nHaving established that both episodic memory and incremental learning guided choices, we next sought to determine the impact of volatility on episodic memory for object value by isolating trials on which episodic memory was most likely to be used. To identify reliance on object value, we first focused on trials where the two sources of value information were incongruent: that is, trials for which the high-value deck featured an old object that was of low value (<50\u00a2) or the low-value deck featured an old object that was of high value (>50\u00a2). We then defined an episodic-based choice index (EBCI) by considering a choice as episodic if the old object was, in the first case, avoided or, in the second case, chosen. Consistent with our hypothesis, we found greater evidence for episodic choices in the high-volatility environment compared to the low-volatility environment ($\\beta_{Env}=0.092,\u200595%\u2005CI=[0.018, 0.164]$; Figure 2C). Finally, this analysis also gave us the opportunity to test differences in reaction time between incremental and episodic decisions. Decisions based on episodic value took longer ($\\beta_{EBCI}=37.629,\u200595%\u2005CI=[28.488,\u200546.585]$; Figure 2D), perhaps reflecting that episodic retrieval may take more time than retrieval of cached incremental value.\n\n### Uncertainty about incremental values increases sensitivity to episodic value\n\nThe effects of environment described above provide a coarse index of overall differences in learning across conditions. To capture uncertainty about deck value on a trial-by-trial basis, we adopted a computational model that tracks uncertainty during learning. We then used this model to test our central hypothesis: that episodic memory is used more when posterior uncertainty about deck value is high. Our reasoning was that episodic memory should not only be deployed more when incremental learning is overall inaccurate due to frequent change, but also within either condition following recent change. We, therefore, predicted that, across both environments, participants would be more likely to recruit episodic memory following reversals in deck value, when uncertainty is at its highest.\n\nWe began by hierarchically fitting two classes of incremental learning models to the behavior on the deck learning task: a baseline model with a Rescorla\u2013Wagner (Rescorla and Wagner, 1972) style update (RW) and a reduced Bayesian model (Nassar et al., 2010) (RB) that augments the RW learner with a variable learning rate, which it modulates by tracking ongoing uncertainty about deck value. This approach \u2013 which builds on a line of work applying Bayesian learning models to capture trial-by-trial modulation in uncertainty and learning rates in volatile environments (Behrens et al., 2007; Mathys et al., 2011; Nassar et al., 2010; Piray and Daw, 2020; Kakade and Dayan, 2002; Yu and Dayan, 2005) \u2013 allowed us to first assess incremental learning free of any contamination due to competition with episodic memory. We then used the parameters fit to this task for each participant to generate estimates of subjective deck value and uncertainty around deck value, out of sample, in the deck learning and card memory task. These estimates were then used alongside episodic value to predict choices on incongruent trials in the deck learning and card memory task.\n\nWe first tested whether participants adjusted their rates of learning in response to uncertainty, both between environments and due to trial-wise fluctuations in uncertainty about deck value. We did this by comparing the ability of each combined choice model to predict participants\u2019 decisions out of sample. To test for effects between environments, we compared models that controlled learning with either a single free parameter (for RW, a learning rate $\\alpha$; for RB, a hazard rate H capturing the expected frequency of reversals) shared across both environments or models with a separate free parameter for each environment. To test for trial-wise effects within environments, we compared between RB and RW models: while RW updates deck value with a constant learning rate, RB tracks ongoing posterior uncertainty about deck value (called relative uncertainty, RU) and increases its learning rate when this quantity is high.\n\nWe also included two other models in our comparison to control for alternative learning strategies. The first was a contextual inference model (CI), which modeled deck value as arising from two switching contexts (either that one deck was lucky and the other unlucky or vice versa) rather than from incremental learning. The second was a Rescorla\u2013Wagner model that, like the RB model but unlike the RW models described above, learned only a single-value estimate (RW1Q). The details for all models can be found in Appendix 3.\n\nParticipants were sensitive to the volatility manipulation and also incorporated uncertainty into updating their beliefs about deck value. This is indicated by the fact that the RB combined choice model that included a separate hazard rate for each environment (RB2H) outperformed both RW models, the RB model with a single hazard rate, as well as other alternative learning models (Figure 3A). Further, across the entire sample, participants detected higher levels of volatility in the high-volatility environment, as indicated by the generally larger hazard rates recovered from this model in the high- compared to the low-volatility environment ($H_{Low}=0.04,95%CI=[0.033,0.048]$; $H_{High}=0.081,95%CI=[0.067,0.097]$; Figure 3B). Next, we examined the model\u2019s ability to estimate uncertainty as a function of reversals in deck luckiness. Compared to an average of the four trials prior to a reversal, RU increased immediately following a reversal and stabilized over time ($\\beta_{t=0}=0.014,95%CI=[\u22120.019,0.048]$; $\\beta_{t+1}=\u22120.242,95%CI=[\u22120.276,\u22120.209]$; $\\beta_{t+2}=\u22120.145,95%CI=[\u22120.178,\u22120.112]$; $\\beta_{t+3}=\u22120.1,95%CI=[\u22120.131,\u22120.07]$; $\\beta_{t+4}=\u22120.079$, $95%CI=[\u22120.108,\u22120.048]$; Figure 3C). As expected, RU was also, on average, greater in the high- compared to the low-volatility environment ($\\beta_{Env}=0.015$, $95%CI=[0.012,0.018]$). Lastly, we were interested in assessing the relationship between reaction time and RU as we expected that higher uncertainty may be reflected in more time needed to resolve decisions. In line with this idea, RU was strongly related to reaction time such that choices made under more uncertain conditions took longer ($\\beta_{RU}=1.685,\u200595%\u2005CI=[0.823,\u20052.528]$).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig3-v2.jpg)\n\n**Figure 3.:** (A) Expected log pointwise predictive density (ELPD) from each model was calculated from a 20-fold leave-N-subjects-out cross-validation procedure and is shown here subtracted from the best-fitting model. The best-fitting model was the reduced Bayesian (RB) model with two hazard rates (2H) and sensitivity to the interaction between old object value and relative uncertainty (RU) in the choice function. Error bars represent standard error around ELPD estimates. (B) Participants (n = 254) were sensitive to the relative level of volatility in each environment as measured by the hazard rate. Group-level parameters are superimposed on individual subject parameters. Error bars represent 95% posterior intervals. The true hazard rate for each environment is shown on the interior of the plot. (C) RU peaks on the trial following a reversal and is greater in the high- compared to the low-volatility environment. Lines represent group means, and bands represent 95% confidence intervals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The best-fitting model was again the reduced Bayesian (RB) model with two hazard rates (2H) and sensitivity to the interaction between old object value and relative uncertainty (RU) in the choice function. (B) Participants (n = 223) were affected by the relative level of volatility in each environment as measured by the hazard rate. Group-level parameters are superimposed on individual subject parameters. (C) RU peaks on the trial following a reversal and is greater in the high- compared to the low-volatility environment.\n\nHaving established that participants were affected by uncertainty around beliefs about deck value, we turned to examine our primary question: whether this uncertainty alters the use of episodic memory in choices. We first examined effects of RU on the episodic choice index, which measures choices consistent with episodic value on trials when it disagrees with incremental learning. This analysis verified that episodic memory was used more on incongruent trial decisions made under conditions of high RU ($\\beta_{RU}=2.133,\u200595%\u2005CI=[0.7,\u20053.535]$; Figure 4A). To more directly test the prediction that participants would use episodic memory when uncertainty is high, we included trial-by-trial estimates of RU in the RB2H combined choice model, which was augmented with an additional free parameter to capture any change with RU in the effect of episodic value on choice. Formally, this parameter measured an effect of the interaction between these two factors, and the more positive this term the greater the impact of increased uncertainty on the use of episodic memory. This new combined choice model further improved out-of-sample predictions (RB2H+RU, Figure 3A). As predicted, while both incremental and episodic value were used overall ($\\beta_{DeckValue}=0.502,\u200595%\u2005CI=[0.428,\u20050.583]$; $\\beta_{OldValue}=0.150,\u200595%\u2005CI=[0.101,  0.20]$), episodic value impacted choices more when RU was high ($\\beta_{OldValue:RU}=0.067,\u200595%\u2005CI=[0.026,\u20050.11]$; Figure 4B) and more generally in the high- compared to the low-volatility environment ($\\beta_{OldValue:Env}=0.06,\u200595%\u2005CI=[0.02,\u20050.1]$). This is consistent with the hypothesis that episodic value was relied on more when beliefs about incremental value were uncertain.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig4-v2.jpg)\n\n**Figure 4.:** (A) Participants\u2019 (n = 254) degree of episodic-based choice increased with greater relative uncertainty (RU) as predicted by the combined choice model. Points are group means, and error bars are 95% confidence intervals. (B) Estimates from the combined choice model. Participants were biased to choose previously seen objects regardless of their value and were additionally sensitive to their value. As hypothesized, this sensitivity was increased when RU was higher, as well as in the high- compared to the low-volatility environment. There was no bias to choose one deck color over the other, and participants were highly sensitive to estimated deck value. Group-level parameters are superimposed as bars on individual subject parameters represented as points. Error bars represent 95% posterior intervals around group-level parameters. Estimates are shown in standard units.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Participants\u2019 (n = 223) degree of episodic-based choice increases with greater relative uncertainty (RU). (B) Estimates from the combined choice model. Participants were biased to choose previously seen objects regardless of their value and were additionally sensitive to their value. As hypothesized, this sensitivity was increased when RU was higher as well as in the high- compared to the low-volatility environment. There was no bias to choose one deck color over the other, and participants were highly sensitive to estimated deck value.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) There was no relationship between RU at encoding and the degree to which participants (n = 254) based decisions on episodic value. (B) Estimates from the combined choice model including both effects of RU at retrieval time and RU at encoding time. Relative to the effect of the interaction between RU at retrieval time and old object value, the equivalent effect for RU at encoding time was small in the main sample. (C) Expected log pointwise predictive density for the combined choice model including only an effect of the interaction between RU at retrieval time and old object value (presented in the text) and the model also including the interaction between RU at encoding time and old object value. Including RU at encoding time did not improve model performance. (D) There was again no relationship between RU at encoding and episodic-based choice in the replication sample (n = 223). (E) In the replication sample, there was no effect of the interaction between RU at encoding and old object value on choice behavior. (F) Including RU at encoding time again did not improve model performance in the replication sample.\n\nThe analyses above focus on uncertainty present at the time of retrieving episodic value because this is what we hypothesized would drive competition in the reliance on either system at choice time. However, in principle, reward uncertainty at the time an object is first encountered might also affect its encoding, and hence its subsequent use in episodic choice when later retrieved (Rouhani et al., 2018). To address this possibility, we looked at the impact of RU resulting from the first time an old object\u2019s value was revealed on whether that object was later retrieved for a decision. Using our EBCI, there was no relationship between the use of episodic memory on incongruent trial decisions and RU at encoding ($\\beta_{RU}=0.622,\u200595%\u2005CI=[-0.832,\u20052.044]$; Figure 4\u2014figure supplement 2A). Similarly, we also examined effects of trial-by-trial estimates of RU at encoding time in the combined choice model by adding another free parameter that captured change with RU at encoding time in the effect of episodic value on choice. This parameter was added alongside the effect of RU at retrieval time (from the previous analysis). There was no effect on choice in either sample (main: $\\beta_{OldValue:RU}=0.028,\u200595%\u2005CI=[-0.011,\u20050.067]$; replication: $\\beta_{OldValue:RU}=-0.003,\u200595%\u2005CI=-0.046,\u20050.037$ ; Figure 4\u2014figure supplement 2B) and the inclusion of this parameter did not provide a better fit to subjects\u2019 choices than the combined choice model with only increased sensitivity due to RU at retrieval time (Figure 4\u2014figure supplement 2C).\n\n### Episodic and incremental value sensitivity predicts subsequent memory performance\n\nHaving determined that decisions depended on episodic memory more when uncertainty about incremental value was higher, we next sought evidence for similar effects on the quality of episodic memory. Episodic memory is, of course, imperfect, and value estimates derived from episodic memory are therefore also uncertain. More uncertain episodic memory should then be disfavored while the influence of incremental value on choice is promoted instead. Although in this study we did not experimentally manipulate the strength of episodic memory, as our volatility manipulation was designed to affect the uncertainty of incremental estimates, we did measure memory strength in a subsequent memory test. Thus, we predicted that participants who base fewer decisions on object value and more decisions on deck value should have poorer subsequent memory for objects from the deck learning and card memory task.\n\nWe first assessed subsequent memory performance. Participants\u2019 recognition memory was well above chance ($\\beta_{0}=1.887,\u200595%\u2005CI=[1.782,\u20051.989]$), indicating a general ability to discriminate objects seen in the main task from those that were new. Recall for the value of previously seen objects was also well predicted by their true value ($\\beta_{TrueValue}=0.174,\u200595%\u2005CI=[0.160,\u20050.188]$), providing further support that episodic memory was used to encode object value. To underscore this point, we sorted subsequent memory trials according to whether an object was seen on an episodic- or incremental-based choice, as estimated according to our EBCI, during the deck learning and card memory task. Not only were objects from episodic-based choices better remembered than those from incremental-based choices ($\\beta_{EBCI}=0.192,\u200595%\u2005CI=[0.072,\u20050.322]$; Figure 5A), but value recall was also improved for these objects ($\\beta_{EBCI:TrueValue}=0.047,\u200595%\u2005CI=[0.030,\u20050.065]$; Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig5-v2.jpg)\n\n**Figure 5.:** (A) Objects originally seen during episodic-based choices were better remembered than objects seen during incremental-based choices. Average hit rates for individual subjects (n = 254) are shown as points, bars represent the group-level average, and lines represent 95% confidence intervals. (B) The value of objects originally seen during episodic-based choices was better recalled than objects seen during incremental-based choices. Points represent average value memory for each possible object value, and error bars represent 95% confidence intervals. Lines are linear fits, and bands are 95% confidence intervals. (C) Participants with greater sensitivity to episodic value as measured by random effects in the combined choice model tended to better remember objects seen originally in the card learning and deck memory task. (D) Participants with greater sensitivity to incremental value tended to have worse memory for objects from the card learning and deck memory task. Points represent individual participants, lines are linear fits, and bands are 95% confidence intervals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Objects seen during episodic-based choices were better remembered than objects seen during incremental-based choices. (B) The value of objects originally seen during episodic-based choices was better recalled than objects seen during incremental-based choices. (C) Participants (n = 223) with greater sensitivity to episodic value tended to better remember objects from the deck learning and card memory task. (D) Participants with greater sensitivity to incremental value tended to have worse memory for objects from the card learning and deck memory task.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81679/elife-81679-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Relationship between RU, CPP, and APE at encoding on recognition memory in the main sample (n = 254). RU outperformed both of these variables at predicting recognition memory (right). (B) Relationship between RU, CPP, and APE at encoding on value memory in the main sample. RU outperformed both of these variables at predicting value memory (right). (C) Relationship between RU, CPP, and APE at encoding on recognition memory in the replication sample (n = 223). Neither of these variables performed better than RU at predicting recognition memory (right). (D) Relationship between RU, CPP, and APE at encoding on value memory in the main sample. RU outperformed both of these variables at predicting value memory (right). Note that here value memory is visualized as a hit rate (where 1 is accurate value memory and 0 is inaccurate value memory) in order to show x-axis variables on a continuous scale, but analyses were conducted using the true value responses. Points are group means binned by x-axis variables at encoding, and error bars are 95% confidence intervals.\n\nWe next leveraged the finer-grained estimates of sensitivity to episodic value from the learning model to ask whether, across participants, individuals who were estimated to deploy episodic value more during the deck learning and card memory task also performed better on the subsequent memory test. In line with the idea that episodic memory quality also impacts the relationship between incremental learning and episodic memory, participants with better subsequent recognition memory were more sensitive to episodic value ($\\beta_{EpSensitivity}=0.373,\u200595%\u2005CI=[0.273,\u20050.478]$; Figure 5C), and these same participants were less sensitive to incremental value ($\\beta_{IncSensitivity}=-0.276,\u200595%\u2005CI=[-0.383,\u2005-0.17]$; Figure 5D). This result provides further evidence for a tradeoff between episodic memory and incremental learning. It also provides preliminary support for a broader version of our hypothesis, which is that uncertainty about value provided by either memory system arbitrates the balance between them.\n\nLastly, the subsequent memory task also provided us with the opportunity to replicate other studies that have found that prediction error and its related quantities enhance episodic memory across a variety of tasks and paradigms (Rouhani et al., 2018; Rouhani and Niv, 2021; Antony et al., 2021; Ben-Yakov et al., 2022). We predicted that participants should have better subsequent memory for objects encoded under conditions of greater uncertainty. While not our primary focus, we found support for this prediction across both samples (see Appendix 2, Figure 5\u2014figure supplement 2).\n\n### Replication of the main results in a separate sample\n\nWe repeated the tasks described above in an independent online sample of healthy young adults (n = 223) to test the replicability and robustness of our findings. We replicated all effects of environment and RU on episodic-based choice and subsequent memory (see Appendix 1 and figure supplements for details).\n\n## Discussion\n\nResearch on learning and value-based decision-making has focused on how the brain summarizes experiences by error-driven incremental learning rules that, in effect, maintain the running average of many experiences. While recent work has demonstrated that episodic memory also contributes to value-based decisions (Bakkour et al., 2019; Plonsky et al., 2015; Mason et al., 2020; Bornstein et al., 2017; Collins and Frank, 2012; Bornstein and Norman, 2017; Duncan et al., 2019; Duncan and Shohamy, 2016; Lee et al., 2015; Wimmer and B\u00fcchel, 2020), many open questions remain about the circumstances under which episodic memory is used. We used a task that directly contrasts episodic and incremental influences on decisions and found that participants traded these influences off rationally, relying more on episodic information when incremental summaries were less reliable, that is, more uncertain and based on fewer experiences. We also found evidence for a complementary modulation of this episodic-incremental balance by episodic memory quality, suggesting that more uncertain episodic-derived estimates may reduce reliance on episodic value. Together, these results indicate that reward uncertainty modulates the use of episodic memory in decisions, suggesting that the brain optimizes the balance between different forms of learning according to volatility in the environment.\n\nOur findings add empirical data to previous theoretical and computational work, which has suggested that decision-making can greatly benefit from episodic memory for individual estimates when available data are sparse. This most obviously arises early in learning a new task, but also in task transfer, high-dimensional or non-Markovian environments, and (as demonstrated in this work) during conditions of rapid change (Lengyel and Dayan, 2007; Blundell, 2016; Santoro et al., 2016). We investigate these theoretical predictions in the context of human decision-making, testing whether humans rely more heavily on episodic memory when incremental summaries comprising multiple experiences are relatively poor. We operationalize this tradeoff in terms of uncertainty, exemplifying a more general statistical scheme for arbitrating between different decision systems by treating them as estimators of action value.\n\nThere is precedent for this type of uncertainty-based arbitration in the brain, with the most well-known being the tradeoff between model-free learning and model-based learning (Daw et al., 2005; Keramati et al., 2011). Control over decision-making by model-free and model-based systems has been found to shift in accordance with the accuracy of their respective predictions (Lee et al., 2014), and humans adjust their reliance on either system in response to external conditions that provide a relative advantage to one over the other (Simon and Daw, 2011; Kool et al., 2016; Otto et al., 2013). Tracking uncertainty provides useful information about when inaccuracy is expected and helps to maximize utility by deploying whichever system is best at a given time. Our results add to these findings and expand their principles to include episodic memory in this tradeoff. This may be especially important given that human memory is resource limited and prone to distortion (Schacter et al., 2011) and forgetting (Ebbinghaus, 2013). Notably, in our task, an observer equipped with perfect episodic memory would always benefit from using it to make decisions. Yet, as our findings show, participants vary in their episodic memory abilities, and this memory capacity is related to the extent to which episodic memory is used to guide decisions.\n\nOne intriguing possibility is that there is more than just an analogy between the incremental-episodic balance studied here and previous work on model-free versus model-based competition. Incremental error-driven learning coincides closely with model-free learning in other settings (Schultz et al., 1997; Daw et al., 2005) and, although it has been proposed that episodic control constitutes a \u2018third way\u2019 (Lengyel and Dayan, 2007), it is possible that behavioral signatures of model-based learning might instead arise from episodic control via covert retrieval of individual episodes (Gershman and Daw, 2017; Hassabis and Maguire, 2009; Schacter et al., 2012; Vikbladh et al., 2017), which contain much of the same information as a cognitive map or world model. While this study assesses single-event episodic retrieval more overtly, an open question for future work is whether the extent to which these same processes, and ultimately the same episodic-incremental tradeoff, might also explain model-based choice as it has been operationalized in other decision tasks. A related line of work has emphasized a similar role for working memory in maintaining representations of individual trials for choice (Collins and Frank, 2012; Yoo and Collins, 2022; Collins, 2018; Collins and Frank, 2018). Given the capacity constraints of working memory, we think it unlikely that working memory can account for the effects shown here, which involve memory for dozens of trial-unique stimuli maintained over tens of trials.\n\nOur findings also help clarify the impacts of uncertainty, novelty, and prediction error on episodic memory. Recent studies found that new episodes are more likely to be encoded under novel circumstances while prior experiences are more likely to be retrieved when conditions are familiar (Duncan et al., 2019; Duncan and Shohamy, 2016; Duncan et al., 2012; Hasselmo, 2006). Shifts between these states of memory are thought to be modulated by one\u2019s focus on internal or external sources of information (Decker and Duncan, 2020; Tarder-Stoll et al., 2020) and signaled by prediction errors based in episodic memory (Bein et al., 2020; Chen et al., 2015; Sinclair and Barense, 2018; Greve et al., 2017). Relatedly, unsigned prediction errors, which are a marker of surprise, improve later episodic memory (Rouhani et al., 2018; Rouhani and Niv, 2021; Antony et al., 2021; Ben-Yakov et al., 2022). Findings have even suggested that states of familiarity and novelty can bias decisions toward the use of single past experiences or not (Duncan et al., 2019; Duncan and Shohamy, 2016).\n\nOne alternative hypothesis that emerges from this work is that change-induced uncertainty and novelty could exert similar effects on memory, such that novelty signaled by expectancy violations increases encoding in a protracted manner that dwindles as uncertainty is resolved, or the state of the environment becomes familiar. Our results provide mixed support for this interpretation. While subsequent memory was improved by the presence of uncertainty at encoding, as would be predicted by this work, there was little effect of uncertainty at encoding time on the extent to which decisions were guided by individual memories. It, therefore, seems likely that uncertainty and novelty operate in concert but exert different effects over decision-making, an interpretation supported by recent evidence (Xu et al., 2021).\n\nThis work raises further questions about the neurobiological basis of memory-based decisions and the role of neuromodulation in signaling uncertainty and aiding memory. In particular, studies have revealed unique functions for norepinephrine (NE) and acetylcholine (ACh) on uncertainty and learning. These findings suggest that volatility, as defined here, is likely to impact the noradrenergic modulatory system, which has been found to signal unexpected changes throughout learning (Nassar et al., 2012; Yu and Dayan, 2005; Yu and Dayan, 2002; Zhao et al., 2019). Noradrenergic terminals densely innervate the hippocampus (Schroeter et al., 2000), and a role for NE in both explicit memory formation (Grella et al., 2019) and retrieval (Murchison et al., 2004) has been posited. Future studies involving a direct investigation of NE or an indirect investigation using pupillometry (Nassar et al., 2012) may help to isolate its contributions to the interaction between incremental learning and episodic memory in decision-making. ACh is also important for learning and memory as memory formation is facilitated by ACh in the hippocampus, which may contribute to its role in separating and storing new experiences (Hasselmo, 2006; Decker and Duncan, 2020). In addition to this role, ACh is heavily involved in incremental learning and has been widely implicated in signaling expected uncertainty (Yu and Dayan, 2002; Bland and Schaefer, 2012). ACh may therefore play an important part in managing the tradeoff between incremental learning and episodic memory.\n\nIndeed, while in this work we investigated the impact of uncertainty on learning using a well-established manipulation of environmental volatility, in general (and even in this task) uncertainty also arises from many other parameters of the environment, such as stochasticity (trial-wise outcome variance) (Piray and Daw, 2021). It remains to be seen whether similar results would be observed using other types of manipulations targeting uncertainty. In our task, the outcome variance was held constant, making it difficult to isolate the effects of stochasticity on participants\u2019 subjective experience of uncertainty. The decision to focus on volatility was based on a rich prior literature demonstrating that volatility manipulations are a reliable means to modulate uncertainty in incremental learning (Behrens et al., 2007; Mathys et al., 2011; O\u2019Reilly, 2013; Nassar et al., 2012; Nassar et al., 2010; Browning et al., 2015; Piray and Daw, 2020). Nonetheless, altering outcome variance to capture effects of stochasticity on episodic memory remains a critical avenue for further study. Still other attributes of the learning environment, like valence, have been shown to impact both uncertainty estimation (Aylward et al., 2019; Pulcu and Browning, 2019) and subsequent memory (Rosenbaum et al., 2022; Kensinger, 2004). It remains an open question how the valence of outcomes may impact the effects we observed here.\n\nFurther, another interpretation of this work is that, rather than capturing a tradeoff between multiple memory systems, our task could possibly be accomplished by a single system learning about, and dynamically weighting, independent features. Specifically, here we operationalized incremental learning as learning about a feature shared across multiple events (deck color) and episodic memory as learning about a trial-unique feature (an object that could be repeated once). Shifting attention between these independent features whenever one is less reliable could then yield similar behavior to arbitrating between incremental learning and episodic memory as we have posited here. While a scheme like this is possible, much prior work (Duncan et al., 2019; Lee et al., 2015; Poldrack et al., 2001; Packard and McGaugh, 1996; McDonald and White, 1994; Wimmer et al., 2014) indicates that multiple memory systems (differentiated by numerous other behavioral and neural signatures) are involved in the types of repeated vs. one-shot learning measured here. Further, our subsequent memory findings that individual objects and their associated value were better remembered from putatively episodic choices lend further support to the idea that episodic memory is used throughout the task. Nevertheless, more work is needed to distinguish between these alternatives and verify the connection between our task and other signatures of incremental vs. episodic memory.\n\nFor example, while in this study we disadvantaged incremental learning relative to episodic memory, similar predictions about their balance could be made by instead preferentially manipulating episodic memory, for example, through effects such as interference or recency and primacy. Another direction would be to look to the computational literature for additional task circumstances in which there are theoretical benefits to deploying episodic memory, and where incremental learning is generally ill suited, such as in environments that are high dimensional or require planning far into the future (Gershman and Daw, 2017). In principle, the brain can use episodic memory to precisely target individual past experiences in these situations depending on the relevance of their features to decisions in the present. Recent advances in computational neuroscience have, for example, demonstrated that artificial agents endowed with episodic memory are able to exploit its rich representation of past experience to make faster, more effective decisions (Lengyel and Dayan, 2007; Blundell, 2016; Santoro et al., 2016). While here we provided episodic memory as an alternative source of value to be used in the presence of uncertainty about incremental estimates, future studies making use of paradigms tailored more directly toward episodic memory\u2019s assets will help to further elucidate how and when the human brain recruits episodic memory for decisions.\n\nFinally, it is worth noting that many individuals, in both the main and replication samples, failed to meet our baseline performance criterion of altering the incremental learning rate between the low- and high-volatility environments (see \u2018Materials and methods\u2019). It is unclear whether this insensitivity to volatility was due to the limitations of online data collection, such as inattentiveness, or whether it is a more general feature of human behavior. While the low-volatility environment used here had half as many reversals as the high-volatility environment, it was still much more volatile than some environments used previously to study the effects of volatility on incremental learning (e.g., in entirely stable environments; Behrens et al., 2007). Thus, the relatively subtle difference between environments may also have contributed to some participants\u2019 volatility insensitivity.\n\nIn conclusion, we have demonstrated that uncertainty induced by volatile environments impacts whether incremental learning or episodic memory is recruited for decisions. Greater uncertainty increased the likelihood that single experiences were retrieved for decision-making. This effect suggests that episodic memory aids decision-making when simpler sources of value are less accurate. By focusing on uncertainty, our results shed light on the exact circumstances under which episodic memory is used for decision-making.\n\n## Materials and methods\n\n### Experimental tasks\n\nThe primary experimental task used here builds upon a paradigm previously developed by our lab (Duncan et al., 2019) to successfully measure the relative contribution of incremental and episodic memory to decisions (Figure 1A). Participants were told that they would be playing a card game where their goal was to win as much money as possible. Each trial consisted of a choice between two decks of cards that differed based on their color (shown in Figure 1 as purple and orange). Participants had 2 s to decide between the decks and, upon making their choice, a green box was displayed around their choice until the full 2 s had passed. The outcome of each decision was then immediately displayed for 1 s. Following each decision, participants were shown a fixation cross during the intertrial interval period that varied in length (mean = 1.5 s, min = 1 s, max = 2 s). Decks were equally likely to appear on either side of the screen (left or right) on each trial and screen side was not predictive of outcomes. Participants completed a total of 320 trials and were given a 30 s break every 80 trials.\n\nParticipants were made aware that there were two ways they could earn bonus money throughout the task, which allowed for the use of incremental and episodic memory, respectively. First, at any point in the experiment one of the two decks was \u2018lucky,\u2019 meaning that the expected value ($V$) of one deck color was higher than the other ($V_{lucky}$ = 63\u00a2, $V_{unlucky}$ = 37\u00a2). Outcomes ranged from $0 to $1 in increments of 20\u00a2. Critically, the mapping from $V$ to deck color underwent an unsignaled reversal periodically throughout the experiment (Figure 1B), which incentivized participants to utilize each deck\u2019s recent reward history in order to determine the identity of the currently lucky deck. Each participant completed the task over two environments (with 160 trials in each) that differed in their relative volatility: a low-volatility environment with 8 $V$ reversals, occurring every 20 trials on average, and a high-volatility environment with 16 $V$ reversals, occurring every 10 trials on average. Reversal trials in each environment were determined by generating a list of bout lengths (high volatility: 16 bouts between 6 trials minimum and 14 trials maximum; low volatility: 8 bouts between 15 trials minimum and 24 trials maximum) at the beginning of the task and then randomizing this list for each participant. Participants were told that they would be playing in two different casinos and that in one casino deck luckiness changed less frequently while in the other deck luckiness changed more frequently. Participants were also made aware of which casino they were currently in by a border on the screen, with a solid black line indicating the low-volatility casino and a dashed black line indicating the high-volatility casino. The order in which the environments were seen was counterbalanced across participants.\n\nSecond, in order to allow us to assess the use of episodic memory throughout the task, each card within a deck featured an image of a trial-unique object that could reappear once throughout the experiment after initially being chosen. Participants were told that if they encountered a card a second time it would be worth the same amount as when it was first chosen, regardless of whether its deck color was currently lucky or not. On a given trial $t$, cards chosen once from trials $t-9$ through $t-30$ had a 60% chance of reappearing following a sampling procedure designed to prevent each deck\u2019s expected value from becoming skewed by choice, minimize the correlation between the expected value of previously seen cards and deck expected value, and ensure that choosing a previously selected card remained close to 50\u00a2. Specifically, outcomes for each deck were drawn from a pseudorandom list of deck values that was generated at the start of the task, sampled without replacement, and repopulated after each reversal. Previously seen cards were then sampled using the following procedure: (i) a list of objects from the past 9\u201330 trials equal to an outcome left in the current list of potential deck outcomes was generated; (ii) the list was narrowed down to objects whose value was incongruent with the current expected value of their associated deck if such objects were available; and (iii) if the average value of objects shown to a participant was greater than 50\u00a2, the object with the lowest value was shown, otherwise an object was randomly sampled without replacement. This sampling procedure is identical to that used previously in Duncan et al., 2019.\n\nParticipants also completed a separate decision-making task prior to the combined deck learning and card memory task that was identical in design but lacked trial-unique objects on each card. This task, the deck learning task, was designed to isolate the sole contribution of incremental learning to decisions and to allow participants to gain prior experience with each environment\u2019s volatility level. In this task, all participants first saw the low-volatility environment followed by the high-volatility environment in order to emphasize the relative increase in the high-volatility environment. Participants completed the combined deck learning and card memory task immediately following completion of the deck learning task and were told that the likelihood of deck luckiness reversals in each environment would be identical for both the deck learning task and the deck learning and card memory task. Instructions were presented immediately prior to each task, and participants completed five practice trials and a comprehension quiz prior to starting each.\n\nFollowing completion of the combined deck learning and card memory task, we tested participants\u2019 memory for the trial-unique objects. Participants completed 80 (up to) three-part memory trials. An object was first displayed on the screen, and participants were asked whether or not they had previously seen the object and were given five response options: Definitely New, Probably New, Don\u2019t Know, Probably Old, and Definitely Old. If the participant indicated that they had not seen the object before or did not know, they moved on to the next trial. If, however, they indicated that they had seen the object before, they were then asked if they had chosen the object or not. Lastly, if they responded that they had chosen the object, they were asked what the value of that object was (with options spanning each of the six possible object values between $0 and $1). Of the 80 trials, 48 were previously seen objects and 32 were new objects that had not been seen before. Of the 48 previously seen objects, half were sampled from each environment (24 each) and, of these, an equal number were taken from each possible object value (with 4 from each value in each environment). As with the decision-making tasks, participants were required to pass a comprehension quiz prior to starting the memory task.\n\nAll tasks were programmed using the jsPsych JavaScript library (de Leeuw, 2015) and hosted on a Google Cloud server running Apache and the Ubuntu operating system. Object images were selected from publicly available stimulus sets (Konkle and Oliva, 2012; Brady et al., 2008) for a total of 665 unique objects that could appear in each run of the experiment.\n\n### Participants\n\nA total of 418 participants between the ages of 18\u201335 were recruited for our main sample through Amazon Mechanical Turk using the Cloud Research Approved Participants feature (Litman et al., 2017). Recruitment was restricted to the United States, and $9 compensation was provided following completion of the 50 min experiment. Participants were also paid a bonus in proportion to their final combined earnings on both the training task and the combined deck learning and card memory task (total earnings/100). Before starting each task, all participants were required to score 100% on a quiz that tested their comprehension of the instructions and were made to repeat the instructions until this score was achieved. Informed consent was obtained with approval from the Columbia University Institutional Review Board.\n\nFrom the initial pool, participants were excluded from analysis on the deck learning and card memory task if they (i) responded to fewer trials than the group average minus 1 standard deviation on the deck learning and card memory task, (ii) responded faster than the group average minus 1 standard deviation on this task, or (iii) did not demonstrate faster learning in the high- compared to the low-volatility environment on the independent deck learning task. Our reasoning for this latter decision was that it is only possible to test for effects of volatility on episodic memory recruitment in participants who were sensitive to the difference in volatility between the environments, and it is well-established that a higher learning rate should be used in more volatile conditions (Behrens et al., 2007). Further, our independent assessment of deck learning was designed to avoid issues of selection bias in this procedure. We measured the effect of environment on learning by fitting a mixed-effects logistic regression model to predict if subjects chose the lucky deck up to five trials after a reversal event in the deck learning task. For each subject $s$ and trial $t$, this model predicts the probability that the lucky deck was chosen:\n\n$$\np(ChooseLucky)=\\sigma(\\beta_{0}+b_{0,s[t]}+TSinceRev_{t}\\timesEnv_{t}(\\beta_{1}+b_{1,s[t]}))\n$$\n\n\n\n$$\n\\sigma(x)=\\frac{1}{1+e^{-x}}\n$$\n\nwhere \u03b2s are fixed effects, $b$ s are random effects, $TSinceRev$ is the trial number coded as distance from a reversal event (1\u20135), and $Env$ is the environment a choice was made in coded as \u20130.5 and 0.5 for the low- and high-volatility environments, respectively. Participants with positive values of $b_{1}$ can be said to have chosen the lucky deck more quickly following a reversal in the high- compared to the low-volatility environment, and we included only these participants in the rest of our analyses. A total of 254 participants survived after applying these criteria, with 120 participants failing to respond to the volatility manipulation (criteria iii) and 44 participants responding to too few trials (criteria i) or too quickly (criteria ii).\n\n### Deck learning and card memory task behavioral analysis\n\nFor regression models described here as well as those in the following sections, fixed effects are reported in the text as the median of each parameter\u2019s marginal posterior distribution alongside 95% credible intervals, which indicate where 95% of the posterior density falls. Parameter values outside of this range are unlikely given the model, data, and priors. Thus, if the range of likely values does not include zero, we conclude that a meaningful effect was observed.\n\nWe first analyzed the extent to which previously seen (old) objects were used in the combined deck learning and card memory task by fitting the following mixed-effects regression model to predict whether an old object was chosen:\n\n$$\np(ChooseOld)=\\sigma(\\beta_{0}+b_{0,s[t]}+OldVal_{t}(\\beta_{1}+b_{1,s[t]})+TrueDeckVal_{t}(\\beta_{2}+b_{2,s[t]}))\n$$\n\nwhere $OldVal$ is the centered value (between \u20130.5 and 0.5) of an old object. We additionally controlled for the influence of deck value on this analysis by adding a regressor, $TrueDeckVal$, which is the centered true average value of the deck on which each object was shown. Trials not featuring old objects were dropped from this analysis.\n\nWe then similarly assessed the extent to which participants engaged in incremental learning overall by looking at the impact of reversals on incremental accuracy directly. To do this, we grouped trials according to their distance from a reversal, up to four trials prior to ($t=-4:-1$), during ($t=0$), and after ($t=1:4$) a reversal occurred. We then dummy coded them to measure their effects on incremental accuracy separately. We also controlled for the influence of old object value in this analysis by including in this regression the coded value of a previously seen object (ranging from 0.5 if the value was $1 on the lucky deck or $0 on the lucky deck to \u20130.5 if the value was $0 on the lucky deck and $1 on the unlucky deck), for a total of 18 estimated effects:\n\n$$\np(ChooseLucky)=\\sigma(T_{-4:4}(\\beta_{1:9}+b_{1:9,s[t]})+T_{-4:4}\\timesOldVal_{t}(\\beta_{10:18}+b_{10:18,s[t]}))\n$$\n\nTo next focus on whether there was an effect of environment on the extent to which the value of old objects was used for decisions, we restricted all further analyses involving old objects to \u2018incongruent\u2019 trials, which were defined as trials on which either the old object was high valued (>50\u00a2) and on the unlucky deck or low valued (<50\u00a2) and on the lucky deck. To better capture participants\u2019 beliefs, deck luckiness was determined by the best-fitting incremental learning model (see next section) rather than using the experimenter-controlled ground truth: whichever deck had the higher model-derived value estimate on a given trial was labeled the lucky deck. Our logic in using only incongruent trials was that choices that stray from choosing whichever deck is more valuable should reflect choices that were based on the episodic value for an object. Lastly, we defined our outcome measure of EBCI to equal 1 on trials where the \u2018correct\u2019 episodic response was given (i.e., high-valued objects were chosen and low-valued object were avoided), and 0 on trials where the \u2018correct\u2019 incremental response was given (i.e., the opposite was true). A single mixed-effects logistic regression was then used to assess the possible effects of environment $Env$ on EBCI:\n\n$$\np(EBCI)=\\sigma(\\beta_{0}+b_{0,st}+EnvNoise_{t}\\beta_{1}+ Env_{t}(\\beta_{2}+b_{2,s[t]}))\n$$\n\nwhere $Env$ was coded identically to the above analyses. We included a covariate $EnvNoise$ in this analysis to account for the possibility that participants are likely to make noisier incremental value-based decisions in the high-volatility compared to the low-volatility environment, which may contribute to the effects of environment on EBCI. To calculate this index, we fit the following mixed-effects logistic regression model to capture an interaction effect of environment and RB model-estimated deck value (see \u2018Deck learning computational models\u2019 section below) on whether the orange deck was chosen:\n\n$$\np(ChooseOrange)=\\sigma(\\beta_{0}+b_{0,s[t]}+DeckVal_{t}(\\beta_{1}+b_{1,s[t]})+Env_{t}(\\beta_{2}+b_{2,s[t]})+DeckVal_{t}\\timesEnv_{t}(\\beta_{3}+b_{3,s[t]}))\n$$\n\nWe fit this model only to trials without the presence of a previously seen object in order to achieve a measure of noise specific to incremental learning. Each participant\u2019s random effect of the interaction between deck value and environment, $b_{3}$ , was then used as the $EnvNoise$ covariate in the logistic regression testing for an effect of environment on EBCI.\n\nTo assess the effect of episodic-based choices on reaction time (RT), we used the following mixed-effects linear regression model:\n\n$$\nRT_{t}=\\beta_{0}+b_{0,s[t]}+ EBCI_{t}(\\beta_{1}+b_{1,s[t]})+Switch_{t}(\\beta_{2}+b_{2,s[t]})+ChosenVal_{t}\\beta_{3}+b_{3,st}+RU_{t}\\beta_{4}+b_{4,st}\n$$\n\nwhere $EBCI$ was coded as \u20130.5 for incremental-based trials and 0.5 for episodic-based trials. We also included covariates to control for three other possible effects on RT. The first, $Switch$, captured possible RT slowing due to exploratory decisions, which in the present task required participants to switch from choosing one deck to the other. This variable was coded as \u20130.5 if a stay occurred and 0.5 if a switch occurred. The second, $ChosenVal$, captured any effects due to the value of the option that may have guided choice, and was set to be the value of the previously seen object on episodic-based trials and the running average true value on incremental-based trials. Finally, the third, $RU$, captured effects due to possible slowing when choices occurred under conditions of greater uncertainty as estimated by the reduced Bayesian model (see below).\n\n### Deck learning computational models\n\nWe next assessed the performance of several computational learning models on our task in order to best capture incremental learning. A detailed description of each model can be found in the \u2018Supplementary methods.\u2019 In brief, these included one model that performed (\"Rescorla-Wagner style updating [Rescorla and Wagner, 1972]\u201d) with both a single (RW1\u03b1) and a separate (RW2\u03b1) fixed learning rate for each environment, two reduced Bayesian (RB) models (Nassar et al., 2010) with both a single (RB1H) and a separate hazard rate for each environment (RB1H), a contextual inference model (CI), and a Rescorla\u2013Wagner model that learned only a single-value estimate (RW1Q). Models were fit to the deck learning task (see \u2018Posterior inference\u2019 and Appendix 3) and used to generate subject-wise estimates of deck value, and where applicable, uncertainty in the combined deck learning and card memory task.\n\n### Combined choice models\n\nAfter fitting the above models to the deck learning task, parameter estimates for each subject were then used to generate trial-by-trial time series for deck value and uncertainty (where applicable) throughout performance on the combined deck learning and card memory task. Mixed-effects Bayesian logistic regressions for each deck learning model were then used to capture the effects of multiple memory-based sources of value on incongruent trial choices in this task. For each subject $s$ and trial $t$, these models can be written as\n\n$$\np(ChooseOrange)=\\sigma(\\beta_{0}+b_{0,s[t]}+DeckVal_{t}(\\beta_{1}+b_{1,s[t]})+Old_{t}(\\beta_{2}+b_{2,s[t]})+OldVal_{t}(\\beta_{3}+b_{3,s[t]})\u00a0+OldVal_{t}\\timesEnv_{t}(\\beta_{4}+b_{4,s[t]}))\n$$\n\nwhere the intercept captures a bias toward choosing either of the decks regardless of outcome, $DeckVal$ is the deck value estimated from each model, the effect of $Old$ captures a bias toward choosing a previously seen card regardless of its value, and $OldVal$ is the coded value of a previously seen object (ranging from 0.5 if the value was $1 on the orange deck or $0 on the purple deck to \u20130.5 if the value was $0 on the orange deck and $1 on the purple deck). To capture variations in sensitivity to old object value due to volatility (represented here by a categorical environment variable, $Env$, coded as \u20130.5 for the low- and 0.5 for the high-volatility environment), we also included an interaction term between old object value and environment in each model. An additional seventh regression that also incorporated our hypothesized effect of increased sensitivity to old object value when uncertainty about deck value is higher was also fit. This regression was identical to the others but included an additional interaction effect of uncertainty and old object value: $OldVal_{t}\\timesUnc_{t}(\\beta_{5}+b_{5,s[t]})$ and used the RB2H model\u2019s $DeckVal$ estimate alongside its estimate of RU to estimate the effect of $OldVal\\timesUnc$. RU was chosen over CPP because it captures the reducible uncertainty about deck value, which is the quantity we were interested in for this study. Prior to fitting the model, all predictors were z scored in order to report effects in standard units.\n\n### Relative uncertainty analyses\n\nWe conducted several other analyses that tested effects on or of RU throughout the combined deck learning and card memory task. RU was mean-centered in each of these analyses. First, we assessed separately the effect of RU at retrieval time on EBCI using a mixed-effects logistic regression:\n\n$$\np(EBCI)=\\sigma(\\beta_{0}+b_{0,s[t]}+RU_{t}(\\beta_{1}+b_{1,s[t]})+RU_{t}^{2}(\\beta_{2}+b_{2,s[t]}))\n$$\n\nAn additional binomial term was included in this model to allow for the possibility that the effect of RU is nonlinear, although this term was found to have no effect. The effect of RU at encoding time was assessed using an identical model but with RU at encoding included instead of RU at retrieval.\n\nNext, to ensure that the RB model captured uncertainty related to changes in deck luckiness, we tested for an effect of environment on RU using a mixed-effects linear regression:\n\n$$\nRU_{t}=\\beta_{0}+b_{0,s[t]}+Env_{t}(\\beta_{1}+b_{1,s[t]})\n$$\n\nWe then also looked at the impact of reversals on RU. To do this, we calculated the difference in RU on reversal trials and up to four trials following a reversal from the average RU on the four trials immediately preceding a reversal. Then, using a dummy coded approach similar to that used for the model testing effects of reversals on incremental accuracy, we fit the following mixed-effects linear regression with five effects:\n\n$$\nRUDifference_{t}=T_{0:4}(\\beta_{1:5}+b_{1:5,s[t]})\n$$\n\nWe also assessed the effect of RU on reaction time using another mixed-effects linear regression:\n\n$$\nRT_{t}=\\beta_{0}+b_{0,s[t]}+RU_{t}(\\beta_{1}+b_{1,s[t]})\n$$\n\n### Subsequent memory task behavioral analysis\n\nPerformance on the subsequent memory task was analyzed in several ways across recognition memory and value memory trials. We first assessed participants\u2019 recognition memory accuracy in general by computing the signal detection metric d prime for each participant adjusted for extreme proportions using a log-linear rule (Hautus, 1995). The relationship with d prime and sensitivity to both episodic value and incremental value was then determined using simple linear regressions of the form $dprime_{s}=\\beta_{0}+Sensitivity_{s}(\\beta_{1})$, where $Sensitivity$ was either the random effect of episodic value from the combined choice model for each participant or the random effect of incremental value from the combined choice value for each participant. We additionally assessed the difference in recognition memory performance between environments by computing d prime for each environment separately, with the false alarm rate shared across environments and hit rate differing between environments, using the following mixed-effects linear regression:\n\n$$\ndprime=\\beta_{0}+b_{0,s}+Env(\\beta_{1}+b_{1,s})\n$$\n\nWe next determined the extent to which participants\u2019 memory for previously seen objects was impacted by whether an object was seen initially on either an episodic- or incremental-based choice using the following mixed-effects logistic regression model:\n\n$$\np(Hit_{t})=\\sigma(\\beta_{0}+b_{0,s[t]}+EBCI_{t}(\\beta_{1}+b_{1,st}))\n$$\n\nwhere $Hit$ was 0 if an object was incorrectly labeled as new and 1 if it was accurately identified as old. The final recognition memory analysis we performed was focused on assessing the impact of variables (RU, changepoint probability [CPP], and the absolute value of prediction error [APE]) extracted from the RB model at encoding time on future subsequent memory. Because these variables are, by definition, highly correlated with one another (see \u2018Supplementary methods\u2019), we fit separate simple mixed-effects logistic regression models predicting recognition memory from each variable separately and then compared the predictive performance of each model (see below) to determine which best accounted for subsequent memory performance. The models additionally controlled for potential recognition memory enhancements due to the absolute magnitude of an object\u2019s true value by including this quantity as a covariate in each of these models.\n\nIn addition to the analyses of recognition memory, analogous effects were assessed for performance on memory for value. General value memory accuracy and a potential effect of environment on remembered value were assessed using the following mixed-effect linear regression:\n\n$$\nValue_{t}=\\beta_{0}+b_{0,s[t]}+TrueVal_{t}(\\beta_{1}+b_{1,s[t]})+Env_{t}(\\beta_{2}+b_{2,s[t]})+Env_{t}\\timesTrueVal_{t}(\\beta_{3}+b_{3,s[t]})\n$$\n\nwhere $Value$ is the remembered value of an object on each memory trial (between $0 and $1), and $TrueVal$ is an object\u2019s true value. We next assessed whether value memory was similarly impacted by whether an object was seen initially on either ran episodic- or incremental-based choice using a similar model for objects from incongruent trials only with $EBCI$ as a predictor rather than $Env$. Lastly, as with the recognition memory analyses, we determined the extent to which trial-wise variables from the RB model (RU, CPP, and APE) at encoding impacted subsequent value memory by using each of these as a predictor instead in similar models and then comparing the predictive performance of each in an identical manner to the recognition memory models.\n\n### Posterior inference and model comparison\n\nParameters for all incremental learning models were estimated using hierarchical Bayesian inference such that group-level priors were used to regularize subject-level estimates. This approach to fitting reinforcement learning models improves parameter identifiability and predictive accuracy (van Geen and Gerraty, 2021). The joint posterior was approximated using No-U-Turn Sampling (Ho\ufb00man and Gelman, 2011) as implemented in Stan (Team SD, 2020). Four chains with 2000 samples (1000 discarded as burn-in) were run for a total of 4000 posterior samples per model. Chain convergence was determined by ensuring that the Gelman\u2013Rubin statistic $R^$ was close to 1. A full description of the parameterization and choice of priors for each model can be found in Appendix 3. All regression models were fit using No-U-Turn Sampling in Stan with the same number of chains and samples. Default weakly informative priors implemented in the rstanarm package (Rstanarm, 2022) were used for each regression model. Model fit for the combined choice models and the models measuring trial-wise effects of encoding on subsequent memory was assessed by separating each dataset into 20-folds and performing a cross-validation procedure by leaving out N/20 subjects per fold, where N is the number of subjects in each sample. The expected log pointwise predictive density (ELPD) was then computed and used as a measure of out-of-sample predictive fit for each model.\n\n### Replication\n\nWe identically repeated all procedures and analyses applied to the main sample on an independently collected replication sample. A total of 401 participants were again recruited through Amazon Mechanical Turk, and 223 survived exclusion procedures carried out identically to those used for the main sample, with 124 participants failing to respond to the volatility manipulation (criteria iii) and 54 participants responding to too few trials (criteria i) or too quickly (criteria ii).\n\n### Citation race and gender diversity statement\n\nThe gender balance of papers cited within this work was quantified using databases that store the probability of a first name being carried by a woman. Excluding self-citations to the first and last authors of this article, the gender breakdown of our references is 12.16% woman (first)/woman (last), 6.76% man/woman, 23.44% woman/man, and 57.64% man/man. This method is limited in that (i) names, pronouns, and social media profiles used to construct the databases may not, in every case, be indicative of gender identity and (b) it cannot account for intersex, nonbinary, or transgender people. Second, we obtained predicted racial/ethnic category of the first and last authors of each reference using databases that store the probability of a first and last name being carried by an author of color. By this measure (and excluding self-citations), our references contain 9.55% author of color (first)/author of color(last), 19.97% white author/author of color, 22.7% author of color/white author, and 47.78% white author/white author. This method is limited in that (i) using names and Florida Voter Data to make the predictions may not be indicative of racial/ethnic identity, and (ii) it cannot account for indigenous and mixed-race authors, or those who may face differential biases due to the ambiguous racialization or ethnicization of their names.\n",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "993a81aa-ce04-4504-918e-e1ec0ffde718",
+      "submission_id": "2ef488d0-8942-4771-b532-5184f19bd46c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael J Frank, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81679.sa0](https://doi.org/10.7554/eLife.81679.sa0)\n\nThis paper posits that higher uncertainty environments should lead to more reliance on episodic memory, finding compelling evidence for this idea across several analysis approaches and across two independent samples. This is an important paper that will be of interest to a broad group of learning, memory, and decision-making researchers.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael J Frank, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81679.sa1](https://doi.org/10.7554/eLife.81679.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Uncertainty alters the balance between incremental learning and episodic memory\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor. The reviewers have opted to remain anonymous.\n\nAll of the reviewers felt that this was a promising paper with compelling results, but they also raised a number of questions about the methodology and interpretation of the results that should be addressed in a revision, as detailed below.\n\nReviewer #1 (Recommendations for the authors):\n\nThe wide vs. skinny error bars are very difficult to visually differentiate. I recommend a more obvious difference.\n\nReviewer #2 (Recommendations for the authors):\n\n1. 40-45% of the participants are excluded from the analysis in the main and replication samples. The authors should clarify how many were excluded for each criterion. Was the main culprit whether people responded to the volatility manipulation in the original deck learning task? If so, what does this mean about the generality of the effects of uncertainty in incremental learning? I suspect this may be due to the relative attentiveness of online participants, but the authors should address the caveat in the text. Some aspects of these excluded data may still be relevant. For example, if these participants do not register any differences in uncertainty between the two environments, wouldn't the prediction be that their use of episodic memory also does not differ?\n\n2. Some aspects of the methods were not clear.\n\na. Was the order of the high and low volatility blocks counterbalanced across participants? Was the order the same in the first deck learning and second deck learning + card memory tasks? Were participants told explicitly that the environments would carry over between the two tasks? (The last point would further support using estimates fit to the first task out of the sample in the second.)\n\nb. How individual objects were re-sampled was described in the overview (lines 435-439), but I imagine the details will matter a lot to people interested in replicating and extending this work. It would help to point the interested reader to where these could be found (eg, is the code provided, or is it based on a previous study described in detail, etc.).\n\n3. Given that the results precede the methods, there are some aspects of the task that would be helpful to explain at the outset (around Figure 1). I was initially confused because the outcome in Figure 1 is $1 but the value memory was on a scale of 0-100, but this could be cleared up with a sentence about the possible outcomes. It would also be helpful to mention the mean outcome on the lucky versus unlucky deck, how frequently the lucky deck changes, and what participants are told explicitly about the volatility manipulation. This could be done in the text or with a revision to Figure 1. I was also confused about how the two samples were used until the end of the Results section (are they being analyzed together or separately? What am I looking at in Figures 2-5?). Again, a well-placed sentence at the top of the Results section would clear this up.\n\n4. In Figure 3, I think a slightly different comparison would be useful, in addition to or instead of the two Rescorla-Wagner models. One difference between the reduced Bayesian and RW models is that the learning rate is dynamic in the RB model but not the RW model. But another difference between the way the two models are implemented is that the RB model assumes the value of the two decks are perfectly anti-correlated (ie, it is learning only one value estimate), while the RW model does not (ie, it is learning about the two decks independently). Thus, the RB model assumes a critical aspect of the structure of the task that the RW model does not. I doubt this difference completely accounts for its better performance, but this should be tested. A \u03b4-rule model with a fixed learning rate that learns a single value estimate (like the RB model) would be the needed comparison. This comparison would also isolate the effect of including the dynamic learning rate (according to RU and CPP) in the model.\n\n5. The discussion goes into the different effects of novelty, surprise, and uncertainty on subsequent memory (lines 349-364), in the context of the lack of effect of uncertainty (RU from the reduced Bayesian model) at encoding. But have the authors looked at the effect of surprise (changepoint probability in the reduced Bayesian model) at encoding? The previous studies discussed here would predict that surprise at encoding should enhance subsequent memory (and perhaps the use of episodic memory in choice). This point is not central to the manuscript, of course, but the authors have additional data relevant to the distinctions they are raising here.\n\nReviewer #3 (Recommendations for the authors):\n\nAs mentioned in the public review, I thought this was a very interesting study and the results were clearly communicated. However, I have a number of questions/recommendations for the authors to strengthen the results and interpretation.\n\nRegarding the points made in the public review about uncertainty v volatility and context, I'd make the following recommendations:\n\n(1) Uncertainty vs. volatility (described in public review): it would make sense to reframe results around volatility rather than uncertainty, or strengthen the trial-wise RU analyses to look at trial-wise RU only at trials far away from reversals. At least there should be some discussion of where uncertainty arises besides volatility.\n\n(2) Context: I think the analyses would be strengthened with an additional model using context inference rather than incremental learning. A natural choice might be Gershman and Niv 2012, although you could possibly get away with something simpler if you assume 2 contexts.\n\n(3) The focus on incongruent trials seems potentially thorny. It is intuitive why the authors do this: trials in which episodic and incremental values disagree are informative about which normative strategy the subjects are using. However, in the high volatility condition, if subjects are using incremental value, they may be more likely to have an outdated incremental value which would look consistent with the episodic choice. I would propose the authors look at congruent trials as well to confirm that they are indeed less likely to make errors on these trials in the high volatility condition than they are in the low volatility condition.\n\n(4) Another question relates to the interpretation of competing for episodic v. incremental strategies, as opposed to just learning about independent features. One could argue that the subjects are doing instrumental learning over objects and colors separately, and when the reliability of one feature (color) is decremented, the other feature is relatively up-weighted. This also seems consistent with the fact that episodic and incremental learning tradeoff -- attending more to the object feature would perhaps compete with color.\n\n(5) The authors show that uncertainty at encoding time does not have a discernible effect on the episodic index. This is evidence that volatility is modulating episodic contribution to decision-making, rather than encoding strength, which is a pretty fundamental part of the results (and in contrast to eg Sun et al. 2021, where unpredictability modulates episodic consolidation). One key thing to look at is if subjects show any difference in their ability to recall familiarity/value of objects from the different conditions. This would also speak to the question of if volatility is affecting encoding rather than just recall during decision-making. It would also make sense to look at the role of other variables at encoding time (eg prediction error) to see if these predict future use. It would also be interesting to see if subjects are storing the object value or the incremental value at the time the object was first shown -- this would be easy to check (when subjects rate the value in the last block, are they more likely to err in the direction of the incremental value at the time of encoding (eg like Figure 2A but with x-axis = incremental value at the time estimated with RW)). This would shed insight into exactly what kind of episodic strategy the subjects are deploying.\n\n(6) The analysis showing that subjects that were better at recall in block 3 also had higher episodic index was a useful sanity check. It seems it would also be possible to perform this analysis within-subject (eg does episodic choice correlate with accurate value memory) and that would bear more on the question of whether it was uncertainty or simply a subjective preference for one strategy or another.\n",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7c4362b1-88ee-4e88-8410-c1e73f11ea22",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C1",
+      "claim": "Participants traded episodic and incremental influences off rationally, depending more on episodic information when incremental summaries were more uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "Across two large, independent samples of young adults, participants traded these influences off rationally, depending more on episodic information when incremental summaries were more uncertain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from two independent samples showing the relationship between uncertainty and episodic memory use.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "4b81e415-623d-4f10-b815-842ae5f48f13",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C2",
+      "claim": "Incremental learning provides a simple mechanism for evaluating actions without maintaining memory traces of each individual experience.",
+      "claim_type": "EXPLICIT",
+      "source": "This sort of incremental learning provides a simple mechanism for evaluating actions without maintaining memory traces of each individual experience along the way and has rich links to conditioning behavior and putative neural mechanisms for error-driven learning (Schultz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on neural mechanisms and is based on established knowledge about incremental learning systems.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "d1439fa0-e348-407f-9824-3a10679179cf",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C3",
+      "claim": "Decisions may be guided by the retrieval of individual events, a process often assumed to be supported by episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent findings indicate that decisions may also be guided by the retrieval of individual events, a process often assumed to be supported by episodic memory (Bakkour et al., 2019; Plonsky et al., 2015; Mason et al., 2020; Bornstein et al., 2017; Collins and Frank, 2012; Bornstein and Norman, 2017; Duncan et al., 2019; Duncan and Shohamy, 2016; Lee et al., 2015; Wimmer and B\u00fcchel, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to recent empirical findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "70484901-18c5-488d-9ab0-e5b9e63673b5",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C4",
+      "claim": "The use of episodes has been detected empirically even in decision tasks that are well-trained and can be solved normatively using incremental learning alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Although theoretical work has suggested a role for episodic memory in initial task acquisition, when experience is sparse (Gershman and Daw, 2017; Lengyel and Dayan, 2007), the use of episodes may be much more pervasive as its influence has been detected empirically even in decision tasks that are well-trained and can be solved normatively using incremental learning alone (Plonsky et al., 2015; Bornstein et al., 2017; Bornstein and Norman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to empirical studies demonstrating episodic memory use in well-trained tasks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "930d7ef3-9320-4e90-be2d-0ec2eb5cdd36",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C5",
+      "claim": "The brain judiciously adopts different decision strategies in circumstances for which they are most suited.",
+      "claim_type": "EXPLICIT",
+      "source": "An overarching hypothesis is that the brain judiciously adopts different decision strategies in circumstances for which they are most suited; for example, by determining which system is likely to produce the most rewarding choices at the least cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis statement based on theoretical reasoning about optimal decision-making.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "346fff46-3344-458d-b33a-70c7a7c80b29",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C6",
+      "claim": "Uncertainty plays a key role in achieving a balance between deliberative versus habitual decisions that maximizes reward.",
+      "claim_type": "EXPLICIT",
+      "source": "This general idea has been invoked to explain how the brain arbitrates between deliberative versus habitual decisions and previous work has suggested a key role for uncertainty in achieving a balance that maximizes reward (Daw et al., 2005; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work on uncertainty and decision-making.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "bc390083-a9c7-466c-9c89-a0b3ffc33379",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C7",
+      "claim": "Imbalances in arbitration have been implicated in dysfunction such as compulsion, addiction, and rumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, imbalances in arbitration have been implicated in dysfunction such as compulsion (Gillan et al., 2011; Voon et al., 2015), addiction (Ersche et al., 2016; Everitt and Robbins, 2005), and rumination (Hunter et al., 2022; Dayan and Huys, 2008; Huys et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies on clinical dysfunction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "92df9516-0c4f-4f77-8866-62e46590ba70",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C8",
+      "claim": "When reward associated with an action is more volatile, people adapt by increasing their incremental learning rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of this sort typically manipulate the volatility, or frequency of change, of the environment, as a way of affecting uncertainty about incrementally learned quantities. In line with predictions made by statistical learning models, these experiments demonstrate that when the reward associated with an action is more volatile, people adapt by increasing their incremental learning rates (Behrens et al., 2007; Mathys et al., 2011; O'Reilly, 2013; Nassar et al., 2012; Nassar et al., 2010; Browning et al., 2015; Piray and Daw, 2020; Kakade and Dayan, 2002; Yu and Dayan, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple experimental studies demonstrating this effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "9d8a3719-ca73-4b3f-81cc-237d81cdd128",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C9",
+      "claim": "The benefits of incremental learning are most pronounced when incremental estimation can leverage many experiences or when volatility is low.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, reasoned that the benefits of incremental learning are most pronounced when incremental estimation can leverage many experiences or, in other words, when volatility is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the logic of how incremental learning operates under different volatility conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "68d6ae13-0574-49dc-8983-19c852e0b5f4",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C10",
+      "claim": "When the environment is either changing frequently or has recently changed, estimating reward episodically by retrieving a single, well-matched experience should be relatively more favorable.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when the environment is either changing frequently or has recently changed, estimating reward episodically by retrieving a single, well-matched experience should be relatively more favorable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on logical inference about when episodic memory would be advantageous.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "66f3b3b5-24b8-4877-8381-ec97943c0b9a",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C11",
+      "claim": "254 participants survived after applying exclusion criteria in the main sample.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 254 participants survived after applying these criteria, with 120 participants failing to respond to the volatility manipulation (criteria iii) and 44 participants responding to too few trials (criteria i) or too quickly (criteria ii).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data from the study's participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "a433671c-2251-4f25-9cba-75b358f75071",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C19",
+      "claim": "The RB combined choice model that included a separate hazard rate for each environment (RB2H) outperformed both RW models, the RB model with a single hazard rate, as well as other alternative learning models.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were sensitive to the volatility manipulation and also incorporated uncertainty into updating their beliefs about deck value. This is indicated by the fact that the RB combined choice model that included a separate hazard rate for each environment (RB2H) outperformed both RW models, the RB model with a single hazard rate, as well as other alternative learning models (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "63c14962-bf3e-46c6-8198-ce5f1cf341df",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C28",
+      "claim": "Episodic value was relied on more when beliefs about incremental value were uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the hypothesis that episodic value was relied on more when beliefs about incremental value were uncertain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data supporting the main hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "44005fe7-04ec-4216-ba4c-fc275ba22844",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C31",
+      "claim": "The inclusion of RU at encoding time did not provide a better fit to subjects' choices than the combined choice model with only increased sensitivity due to RU at retrieval time.",
+      "claim_type": "EXPLICIT",
+      "source": "and the inclusion of this parameter did not provide a better fit to subjects' choices than the combined choice model with only increased sensitivity due to RU at retrieval time (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison analysis shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "8fd57b01-6292-49ce-97ba-59c83d32afec",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C38",
+      "claim": "This result provides further evidence for a tradeoff between episodic memory and incremental learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This result provides further evidence for a tradeoff between episodic memory and incremental learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the relationship between episodic and incremental sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "5cae84b4-171a-4770-a007-64c9728e1c70",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C39",
+      "claim": "Uncertainty about value provided by either memory system arbitrates the balance between them.",
+      "claim_type": "EXPLICIT",
+      "source": "It also provides preliminary support for a broader version of our hypothesis, which is that uncertainty about value provided by either memory system arbitrates the balance between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broader hypothesis supported by the pattern of results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "ee3aa8af-00aa-4ecf-bd01-6ca54ed221bb",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C40",
+      "claim": "All effects of environment and RU on episodic-based choice and subsequent memory were replicated in an independent sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated the tasks described above in an independent online sample of healthy young adults (n = 223) to test the replicability and robustness of our findings. We replicated all effects of environment and RU on episodic-based choice and subsequent memory (see Appendix 1 and figure supplements for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by replication data from an independent sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "173b3df9-9bda-4b79-8ff2-42be5cca6d50",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C41",
+      "claim": "Participants relied more on episodic information when incremental summaries were less reliable, that is, more uncertain and based on fewer experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a task that directly contrasts episodic and incremental influences on decisions and found that participants traded these influences off rationally, relying more on episodic information when incremental summaries were less reliable, that is, more uncertain and based on fewer experiences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "53461040-b378-43a1-bc88-31f68fdcf62a",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C42",
+      "claim": "More uncertain episodic-derived estimates may reduce reliance on episodic value.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found evidence for a complementary modulation of this episodic-incremental balance by episodic memory quality, suggesting that more uncertain episodic-derived estimates may reduce reliance on episodic value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the relationship between episodic memory quality and reliance on episodic value.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "bba11880-8687-46be-89de-ef3d2b578629",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C43",
+      "claim": "The brain optimizes the balance between different forms of learning according to volatility in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that reward uncertainty modulates the use of episodic memory in decisions, suggesting that the brain optimizes the balance between different forms of learning according to volatility in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "0c76f13a-5b18-430f-a11c-f268c91f7056",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C44",
+      "claim": "Decision-making can greatly benefit from episodic memory for individual estimates when available data are sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings add empirical data to previous theoretical and computational work, which has suggested that decision-making can greatly benefit from episodic memory for individual estimates when available data are sparse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references theoretical work and is supported by the current empirical findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "bbd89df1-c70d-4846-93df-33d3ea9a88b4",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C45",
+      "claim": "Sparse data arises early in learning a new task, but also in task transfer, high-dimensional or non-Markovian environments, and during conditions of rapid change.",
+      "claim_type": "EXPLICIT",
+      "source": "This most obviously arises early in learning a new task, but also in task transfer, high-dimensional or non-Markovian environments, and (as demonstrated in this work) during conditions of rapid change (Lengyel and Dayan, 2007; Blundell, 2016; Santoro et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical work and the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "7bdde70f-3fe0-4fd7-bc30-f94bbf2ead6c",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C46",
+      "claim": "Control over decision-making by model-free and model-based systems has been found to shift in accordance with the accuracy of their respective predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Control over decision-making by model-free and model-based systems has been found to shift in accordance with the accuracy of their respective predictions (Lee et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "60d41b1a-78c3-4dce-983f-473143bd33e0",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C47",
+      "claim": "Humans adjust their reliance on model-free or model-based systems in response to external conditions that provide a relative advantage to one over the other.",
+      "claim_type": "EXPLICIT",
+      "source": "and humans adjust their reliance on either system in response to external conditions that provide a relative advantage to one over the other (Simon and Daw, 2011; Kool et al., 2016; Otto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "81db0edf-0488-429b-835c-d23850e87f5f",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C48",
+      "claim": "Tracking uncertainty provides useful information about when inaccuracy is expected and helps to maximize utility by deploying whichever system is best at a given time.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking uncertainty provides useful information about when inaccuracy is expected and helps to maximize utility by deploying whichever system is best at a given time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle about uncertainty-based arbitration based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "61f0fe46-3709-4ff1-94c8-02dc0684cf2b",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C49",
+      "claim": "Human memory is resource limited and prone to distortion and forgetting.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be especially important given that human memory is resource limited and prone to distortion (Schacter et al., 2011) and forgetting (Ebbinghaus, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established work on memory limitations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "3e5a5644-f193-4518-895b-a86637f5c3c8",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C50",
+      "claim": "An observer equipped with perfect episodic memory would always benefit from using it to make decisions in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in our task, an observer equipped with perfect episodic memory would always benefit from using it to make decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about optimal behavior in the task design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "5d3a25e5-8db8-4662-a018-f993757b38c7",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C51",
+      "claim": "Participants vary in their episodic memory abilities, and this memory capacity is related to the extent to which episodic memory is used to guide decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, as our findings show, participants vary in their episodic memory abilities, and this memory capacity is related to the extent to which episodic memory is used to guide decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental findings on individual differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "61bc36b0-a564-49f2-b78a-d7744cef2242",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C52",
+      "claim": "Behavioral signatures of model-based learning might arise from episodic control via covert retrieval of individual episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "it is possible that behavioral signatures of model-based learning might instead arise from episodic control via covert retrieval of individual episodes (Gershman and Daw, 2017; Hassabis and Maguire, 2009; Schacter et al., 2012; Vikbladh et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations to theoretical work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "4efd0eb9-addc-4311-8acf-8f57d08bf7ca",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C53",
+      "claim": "Working memory plays a role in maintaining representations of individual trials for choice.",
+      "claim_type": "EXPLICIT",
+      "source": "A related line of work has emphasized a similar role for working memory in maintaining representations of individual trials for choice (Collins and Frank, 2012; Yoo and Collins, 2022; Collins, 2018; Collins and Frank, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on working memory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "fb42acdf-b68b-49a7-baee-e5a7e7fd1585",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C54",
+      "claim": "Working memory is unlikely to account for the effects shown in this study due to capacity constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the capacity constraints of working memory, we think it unlikely that working memory can account for the effects shown here, which involve memory for dozens of trial-unique stimuli maintained over tens of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known working memory limitations and the task design.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "560a6193-3e42-4f71-890d-15dde1989699",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C55",
+      "claim": "New episodes are more likely to be encoded under novel circumstances while prior experiences are more likely to be retrieved when conditions are familiar.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies found that new episodes are more likely to be encoded under novel circumstances while prior experiences are more likely to be retrieved when conditions are familiar (Duncan et al., 2019; Duncan and Shohamy, 2016; Duncan et al., 2012; Hasselmo, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "5aab4b30-6f21-4ed5-bf3e-c547a3d0b1c0",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C56",
+      "claim": "Shifts between encoding and retrieval states of memory are thought to be modulated by one's focus on internal or external sources of information.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts between these states of memory are thought to be modulated by one's focus on internal or external sources of information (Decker and Duncan, 2020; Tarder-Stoll et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "fc962ccf-e273-4030-9c51-cc949ed758cd",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C57",
+      "claim": "Shifts between encoding and retrieval are signaled by prediction errors based in episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "and signaled by prediction errors based in episodic memory (Bein et al., 2020; Chen et al., 2015; Sinclair and Barense, 2018; Greve et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "b1d7206a-c3dd-4711-98f8-ad3544244cc8",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C58",
+      "claim": "Unsigned prediction errors, which are a marker of surprise, improve later episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedly, unsigned prediction errors, which are a marker of surprise, improve later episodic memory (Rouhani et al., 2018; Rouhani and Niv, 2021; Antony et al., 2021; Ben-Yakov et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "5649e745-1b72-4e2d-868b-1c6745de468e",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C59",
+      "claim": "States of familiarity and novelty can bias decisions toward the use of single past experiences or not.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings have even suggested that states of familiarity and novelty can bias decisions toward the use of single past experiences or not (Duncan et al., 2019; Duncan and Shohamy, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "d39e6472-c38b-4017-a267-643f3f1d8636",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C60",
+      "claim": "Subsequent memory was improved by the presence of uncertainty at encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "While subsequent memory was improved by the presence of uncertainty at encoding, as would be predicted by this work, there was little effect of uncertainty at encoding time on the extent to which decisions were guided by individual memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's findings on subsequent memory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "48837651-73a1-4e1e-a155-53408973d7dc",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C61",
+      "claim": "There was little effect of uncertainty at encoding time on the extent to which decisions were guided by individual memories.",
+      "claim_type": "EXPLICIT",
+      "source": "While subsequent memory was improved by the presence of uncertainty at encoding, as would be predicted by this work, there was little effect of uncertainty at encoding time on the extent to which decisions were guided by individual memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "40c447e3-69bc-44d4-9793-e74e80a9a87b",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C62",
+      "claim": "Uncertainty and novelty likely operate in concert but exert different effects over decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "It, therefore, seems likely that uncertainty and novelty operate in concert but exert different effects over decision-making, an interpretation supported by recent evidence (Xu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by the current findings and a citation to recent work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "c487e913-7bd2-41c6-bae2-4f660bab4b46",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C63",
+      "claim": "Volatility is likely to impact the noradrenergic modulatory system, which has been found to signal unexpected changes throughout learning.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that volatility, as defined here, is likely to impact the noradrenergic modulatory system, which has been found to signal unexpected changes throughout learning (Nassar et al., 2012; Yu and Dayan, 2005; Yu and Dayan, 2002; Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on citations to prior work on norepinephrine.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "1e4f0fa7-8abc-46f8-a2da-773eb5bfd632",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C64",
+      "claim": "Noradrenergic terminals densely innervate the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Noradrenergic terminals densely innervate the hippocampus (Schroeter et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to anatomical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "3b05010b-24c0-4e9b-8ee8-88c010789b64",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C65",
+      "claim": "A role for NE in both explicit memory formation and retrieval has been posited.",
+      "claim_type": "EXPLICIT",
+      "source": "and a role for NE in both explicit memory formation (Grella et al., 2019) and retrieval (Murchison et al., 2004) has been posited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "91abdc89-2db5-49ba-96cb-be5e94f5507e",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C66",
+      "claim": "Memory formation is facilitated by ACh in the hippocampus, which may contribute to its role in separating and storing new experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "ACh is also important for learning and memory as memory formation is facilitated by ACh in the hippocampus, which may contribute to its role in separating and storing new experiences (Hasselmo, 2006; Decker and Duncan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on acetylcholine.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "0c90fe8a-a2f6-4727-ac87-811ca0e21661",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C67",
+      "claim": "ACh is heavily involved in incremental learning and has been widely implicated in signaling expected uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this role, ACh is heavily involved in incremental learning and has been widely implicated in signaling expected uncertainty (Yu and Dayan, 2002; Bland and Schaefer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "76901de0-7177-4ae9-a4aa-6dc82fe7f28d",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C68",
+      "claim": "ACh may play an important part in managing the tradeoff between incremental learning and episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "ACh may therefore play an important part in managing the tradeoff between incremental learning and episodic memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the known roles of ACh.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "2ab7090b-500d-42bd-b65e-a498e7744537",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C69",
+      "claim": "Uncertainty arises from many parameters of the environment, such as stochasticity (trial-wise outcome variance).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while in this work we investigated the impact of uncertainty on learning using a well-established manipulation of environmental volatility, in general (and even in this task) uncertainty also arises from many other parameters of the environment, such as stochasticity (trial-wise outcome variance) (Piray and Daw, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about sources of uncertainty supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "241bb177-857e-462b-9410-1402b5e78872",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C70",
+      "claim": "Volatility manipulations are a reliable means to modulate uncertainty in incremental learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The decision to focus on volatility was based on a rich prior literature demonstrating that volatility manipulations are a reliable means to modulate uncertainty in incremental learning (Behrens et al., 2007; Mathys et al., 2011; O'Reilly, 2013; Nassar et al., 2012; Nassar et al., 2010; Browning et al., 2015; Piray and Daw, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "e502cff4-d8d0-4428-aba6-9118b7a45a34",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C71",
+      "claim": "Valence has been shown to impact both uncertainty estimation and subsequent memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Still other attributes of the learning environment, like valence, have been shown to impact both uncertainty estimation (Aylward et al., 2019; Pulcu and Browning, 2019) and subsequent memory (Rosenbaum et al., 2022; Kensinger, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "eded3efd-bc4a-4923-b9b9-6e347058224a",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C72",
+      "claim": "Multiple memory systems (differentiated by numerous behavioral and neural signatures) are involved in the types of repeated vs. one-shot learning measured in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "While a scheme like this is possible, much prior work (Duncan et al., 2019; Lee et al., 2015; Poldrack et al., 2001; Packard and McGaugh, 1996; McDonald and White, 1994; Wimmer et al., 2014) indicates that multiple memory systems (differentiated by numerous other behavioral and neural signatures) are involved in the types of repeated vs. one-shot learning measured here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on multiple memory systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "71db46c3-50ee-4312-bf22-c9da3b341cc3",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C73",
+      "claim": "Individual objects and their associated value were better remembered from putatively episodic choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our subsequent memory findings that individual objects and their associated value were better remembered from putatively episodic choices lend further support to the idea that episodic memory is used throughout the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the subsequent memory findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "406ec556-8e3d-4446-ab60-1e3933969835",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C74",
+      "claim": "Artificial agents endowed with episodic memory are able to exploit its rich representation of past experience to make faster, more effective decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in computational neuroscience have, for example, demonstrated that artificial agents endowed with episodic memory are able to exploit its rich representation of past experience to make faster, more effective decisions (Lengyel and Dayan, 2007; Blundell, 2016; Santoro et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "e9bffdf9-c464-45b5-98d4-066864ff090f",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C75",
+      "claim": "Many individuals in both the main and replication samples failed to meet the baseline performance criterion of altering the incremental learning rate between the low- and high-volatility environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is worth noting that many individuals, in both the main and replication samples, failed to meet our baseline performance criterion of altering the incremental learning rate between the low- and high-volatility environments (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the exclusion data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "292052d6-03a0-413a-bf7f-7a73c557f419",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C76",
+      "claim": "The relatively subtle difference between environments may have contributed to some participants' volatility insensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the relatively subtle difference between environments may also have contributed to some participants' volatility insensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about why some participants failed to detect volatility differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "d014b6f0-7b2f-4216-96e9-e1ac844fc866",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C77",
+      "claim": "Uncertainty induced by volatile environments impacts whether incremental learning or episodic memory is recruited for decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have demonstrated that uncertainty induced by volatile environments impacts whether incremental learning or episodic memory is recruited for decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main conclusion supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "d7fecbf8-a3e0-4e27-9444-cc511f8a07c2",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C78",
+      "claim": "Greater uncertainty increased the likelihood that single experiences were retrieved for decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater uncertainty increased the likelihood that single experiences were retrieved for decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "3985d650-9451-47f8-8492-2bff79a2061c",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C79",
+      "claim": "Episodic memory aids decision-making when simpler sources of value are less accurate.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect suggests that episodic memory aids decision-making when simpler sources of value are less accurate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "f759c9e4-ed1b-4eba-bd51-2b7e7737da20",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C80",
+      "claim": "The results shed light on the exact circumstances under which episodic memory is used for decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "By focusing on uncertainty, our results shed light on the exact circumstances under which episodic memory is used for decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contribution of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "ecefdcff-39a7-4c28-89a1-7cd035c4fcd9",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C81",
+      "claim": "Participants completed a total of 320 trials in the deck learning and card memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants completed a total of 320 trials and were given a 30 s break every 80 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "310c51ab-1ba8-4ca2-9f07-dbd2eafc34cc",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C85",
+      "claim": "Each card within a deck featured an image of a trial-unique object that could reappear once throughout the experiment after initially being chosen.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in order to allow us to assess the use of episodic memory throughout the task, each card within a deck featured an image of a trial-unique object that could reappear once throughout the experiment after initially being chosen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "0bdba292-ab91-4f9c-90a5-8fd5b24533a6",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C86",
+      "claim": "If participants encountered a card a second time it would be worth the same amount as when it was first chosen, regardless of whether its deck color was currently lucky or not.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were told that if they encountered a card a second time it would be worth the same amount as when it was first chosen, regardless of whether its deck color was currently lucky or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design and instructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "09370e65-9d33-42eb-9cf0-8c21cd4f0977",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C87",
+      "claim": "A total of 418 participants between the ages of 18\u201335 were recruited for the main sample through Amazon Mechanical Turk.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 418 participants between the ages of 18\u201335 were recruited for our main sample through Amazon Mechanical Turk using the Cloud Research Approved Participants feature (Litman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the recruitment procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "f17bc591-c871-473f-a8dd-2fb6c2d34434",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C88",
+      "claim": "120 participants failed to respond to the volatility manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 254 participants survived after applying these criteria, with 120 participants failing to respond to the volatility manipulation (criteria iii) and 44 participants responding to too few trials (criteria i) or too quickly (criteria ii).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the exclusion data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "9ce512ad-04d7-411a-89d3-3399f6dcdccc",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C89",
+      "claim": "44 participants responded to too few trials or too quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 254 participants survived after applying these criteria, with 120 participants failing to respond to the volatility manipulation (criteria iii) and 44 participants responding to too few trials (criteria i) or too quickly (criteria ii).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the exclusion data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "6991549b-b1e3-461d-838a-91fbcec64bc5",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "claim_id": "C90",
+      "claim": "223 participants survived exclusion procedures in the replication sample.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 401 participants were again recruited through Amazon Mechanical Turk, and 223 survived exclusion procedures carried out identically to those used for the main sample, with 124 participants failing to respond to the volatility manipulation (criteria iii) and 54 participants responding to too few trials (criteria i) or too quickly (criteria ii).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the replication sample data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "edc3a760-17a1-4c95-8279-99e0006404a0",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Participants relied more on episodic memory when incremental learning estimates were more uncertain due to environmental volatility. This effect was demonstrated across two independent samples (n=254 and n=223) using a novel task that directly contrasted episodic and incremental influences on decision-making. The primary finding shows that greater relative uncertainty (RU) about incrementally learned deck values increased the likelihood that participants retrieved individual episodic memories to guide choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C28, C40, C41, C77, C78 are strongly supported by converging evidence from behavioral analyses (EBCI), computational modeling (RB2H+RU model outperformed alternatives), and successful replication in an independent sample. The model comparison (C19) and trial-by-trial uncertainty analyses provide rigorous quantitative support. The interpretation (C79, C80) follows logically from the data, though the causal mechanism remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "8932a6ac-430f-4f1d-94be-accc2056a494",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The reduced Bayesian model with separate hazard rates for each environment (RB2H) and sensitivity to uncertainty at retrieval time best predicted participant choices. Model comparison using cross-validation showed this model outperformed simpler alternatives, and including uncertainty at encoding time did not improve model fit beyond uncertainty at retrieval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C31 are supported by rigorous model comparison using 20-fold cross-validation and ELPD metrics (Figure 3A, Figure 4\u2014supplement 2C). The hierarchical Bayesian inference approach with convergence diagnostics (R-hat) strengthens confidence. However, the manuscript lacks details on whether alternative model architectures were considered, and the appendix references suggest additional models exist but are not fully described in the main text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "84399fcb-3972-423a-9c42-b531296bc9c9",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Individual differences in episodic memory quality modulated the balance between episodic and incremental learning systems. Participants with better subsequent memory performance showed greater sensitivity to episodic value and reduced sensitivity to incremental value during decision-making. Objects from putatively episodic-based choices were better remembered than those from incremental-based choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C51, C73 are well-supported by subsequent memory data (Figure 5) showing correlations between memory performance and model-estimated sensitivities. However, C39 and C42 represent broader interpretations that extend beyond the data. The directionality of causation is unclear\u2014does better memory cause more episodic reliance, or does episodic reliance during encoding improve memory? The correlational nature limits causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "f71174aa-41be-478f-a390-6b3e974bcbd4",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Uncertainty at encoding improved subsequent memory for objects, but had little effect on whether episodic memory was used to guide decisions at retrieval. This dissociation suggests uncertainty and novelty may operate through different mechanisms, with uncertainty affecting encoding strength but not retrieval-based decision strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 are supported by the data showing improved subsequent memory with encoding uncertainty but no effect on EBCI or model fit (Figure 4\u2014supplement 2). However, C62's interpretation about uncertainty and novelty operating in concert is speculative and relies heavily on a single citation (Xu et al., 2021). The dissociation is interesting but the mechanistic interpretation requires additional experimental manipulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "00a128d7-8220-4486-92ed-52bd8768921d",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A substantial proportion of participants (120/418 in main sample, 124/401 in replication) failed to show sensitivity to the volatility manipulation and were excluded from analysis. The authors note this may reflect limitations of online data collection or the relatively subtle difference between volatility conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C87-C90, C75 are straightforward reports of exclusion data. However, C76 is speculative about causes. The high exclusion rate (~29-31%) raises concerns about generalizability and whether the included sample represents typical behavior. The exclusion criterion (requiring faster learning in high vs. low volatility) may introduce selection bias by only including participants who show the predicted effect, potentially inflating effect sizes in the remaining sample.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "70aebe37-c58d-40f4-9d2a-b2f987e9e4f5",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior work has established that incremental learning and episodic memory both contribute to decision-making, that uncertainty plays a role in arbitrating between decision systems, and that people adapt learning rates in response to environmental volatility. Imbalances in such arbitration have been linked to clinical dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C6-C8 are well-supported by extensive citations to established literature. These represent accurate summaries of prior work that motivate the current study. The citations appear appropriate and the characterizations are consistent with the cited work. However, the manuscript does not critically evaluate potential limitations or controversies in this prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "92d60d30-92d7-4147-9bb3-5b093c4ac3d7",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors hypothesize that incremental learning is most beneficial when volatility is low and many experiences can be leveraged, while episodic memory should be favored when environments change frequently. This reflects a broader hypothesis that the brain judiciously adopts different decision strategies based on their relative suitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C10 represent logical predictions that follow from the properties of each learning system and are supported by the experimental results. However, C5 is a general hypothesis statement that, while plausible and supported by the current findings, represents a broader theoretical claim that extends beyond what can be definitively concluded from this single study. The hypothesis is well-motivated but remains partially speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "eb40a1ca-8a44-4511-850d-db85cae4ed85",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings align with theoretical and computational work suggesting episodic memory benefits decision-making when data are sparse, and extend principles of uncertainty-based arbitration previously demonstrated for model-free/model-based systems. Artificial agents with episodic memory show similar advantages in computational studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48, C74 appropriately contextualize the current findings within prior theoretical and computational work. The citations are relevant and the connections are logical. However, the direct comparison to model-free/model-based arbitration (C46-C48) may be somewhat oversimplified, as the computational and neural mechanisms may differ substantially between these frameworks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "a47a3f91-b9c4-43ac-b291-af7bedcd37d3",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that behavioral signatures attributed to model-based learning might arise from episodic retrieval, though they argue working memory is unlikely to account for their effects due to capacity constraints given the task demands (dozens of trial-unique stimuli over tens of trials).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is explicitly speculative and supported only by citations to theoretical work. C54's argument against working memory is logical given known capacity limits (~4 items), but the task involves recognition of previously seen items rather than active maintenance, which could engage different memory systems. The manuscript provides no direct evidence (e.g., working memory load manipulations) to rule out working memory contributions. This remains an open question requiring additional experimentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "b0f50009-7171-4600-986d-81fedc5d28cc",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has shown that novelty and familiarity modulate encoding and retrieval states, with prediction errors and surprise enhancing episodic memory. These states can bias decisions toward or away from using single past experiences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 accurately summarize relevant prior work with appropriate citations. These provide important context for interpreting the current findings, particularly the dissociation between encoding and retrieval effects of uncertainty. The characterizations appear accurate based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "b6a00cd9-cb41-4a97-84c1-fdd49091d763",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that norepinephrine and acetylcholine may play important roles in managing the tradeoff between incremental learning and episodic memory, given their known involvement in uncertainty signaling, learning, and memory formation. Both neuromodulators have anatomical connections to the hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C67 accurately cite established anatomical and functional knowledge about NE and ACh. However, C63 and C68 are speculative extensions without direct evidence from the current study. The manuscript provides no measurements of neuromodulatory function (e.g., pupillometry, pharmacological manipulations). While the speculation is plausible and well-motivated, it remains untested and represents a direction for future work rather than a supported finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "dba7caca-13e0-4fcb-bc40-10ce1bd5e367",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors acknowledge that uncertainty arises from multiple environmental parameters beyond volatility (e.g., stochasticity, valence), and that volatility manipulations are a well-established but not exclusive means of modulating uncertainty. Other factors like valence also affect uncertainty estimation and memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 appropriately acknowledge limitations and contextualize the choice to focus on volatility. The citations supporting volatility manipulations (C70) are extensive and appropriate. The acknowledgment of other sources of uncertainty (C69, C71) demonstrates appropriate scientific caution. However, the manuscript does not empirically test whether the effects generalize to other forms of uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "0c03ceed-4d66-41df-aeaa-6b84b459aa1b",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors argue that multiple memory systems (rather than a single system with feature-based attention) are involved in their task, citing extensive prior work. They note that an observer with perfect episodic memory would always benefit from using it in their task design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is well-supported by extensive citations to prior work demonstrating behavioral and neural dissociations between memory systems. C50 is a logical inference about optimal behavior given the task structure (objects maintain constant value across appearances). However, the manuscript does not provide direct neural evidence (e.g., fMRI) to definitively demonstrate that separate systems are engaged. The subsequent memory findings (C73) provide supporting behavioral evidence but do not conclusively rule out alternative single-system accounts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "c1267c6e-7216-42d4-9bc9-1b6c917f90ae",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The experimental design involved 320 trials with trial-unique objects that could reappear once after 9-30 trials with the same value, regardless of current deck luckiness. This design allowed independent assessment of episodic and incremental influences on choice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C85, C86 are straightforward descriptions of the experimental design that are clearly documented in the methods and Figure 1. The design is well-suited to the research question and allows for the intended dissociation between episodic and incremental influences. The sampling procedure for old objects is described in detail and appears appropriately controlled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    },
+    {
+      "id": "a10ae503-3e41-46a0-a9dd-76f994707303",
+      "content_id": "0d3aadc3-c7b6-477f-8785-b284998ae0a5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The brain optimizes the balance between different forms of learning according to volatility in the environment, as indicated by the modulation of episodic memory use by reward uncertainty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 represents the main conclusion of the paper and is supported by the convergence of behavioral, modeling, and replication evidence (C1, C19, C28, C40, C41). However, the term 'optimizes' implies a normative claim about optimality that is not directly tested. The study shows that participants adjust their strategy in a manner consistent with rational arbitration, but does not demonstrate that this adjustment is truly optimal (e.g., by comparing to an ideal observer model or showing that the strategy maximizes reward).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:36:24.832389Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7c4362b1-88ee-4e88-8410-c1e73f11ea22",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "63c14962-bf3e-46c6-8198-ce5f1cf341df",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "ee3aa8af-00aa-4ecf-bd01-6ca54ed221bb",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "173b3df9-9bda-4b79-8ff2-42be5cca6d50",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "d014b6f0-7b2f-4216-96e9-e1ac844fc866",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "d7fecbf8-a3e0-4e27-9444-cc511f8a07c2",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "3985d650-9451-47f8-8492-2bff79a2061c",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "f759c9e4-ed1b-4eba-bd51-2b7e7737da20",
+      "result_id": "edc3a760-17a1-4c95-8279-99e0006404a0"
+    },
+    {
+      "claim_id": "a433671c-2251-4f25-9cba-75b358f75071",
+      "result_id": "8932a6ac-430f-4f1d-94be-accc2056a494"
+    },
+    {
+      "claim_id": "44005fe7-04ec-4216-ba4c-fc275ba22844",
+      "result_id": "8932a6ac-430f-4f1d-94be-accc2056a494"
+    },
+    {
+      "claim_id": "8fd57b01-6292-49ce-97ba-59c83d32afec",
+      "result_id": "84399fcb-3972-423a-9c42-b531296bc9c9"
+    },
+    {
+      "claim_id": "5cae84b4-171a-4770-a007-64c9728e1c70",
+      "result_id": "84399fcb-3972-423a-9c42-b531296bc9c9"
+    },
+    {
+      "claim_id": "53461040-b378-43a1-bc88-31f68fdcf62a",
+      "result_id": "84399fcb-3972-423a-9c42-b531296bc9c9"
+    },
+    {
+      "claim_id": "5d3a25e5-8db8-4662-a018-f993757b38c7",
+      "result_id": "84399fcb-3972-423a-9c42-b531296bc9c9"
+    },
+    {
+      "claim_id": "71db46c3-50ee-4312-bf22-c9da3b341cc3",
+      "result_id": "84399fcb-3972-423a-9c42-b531296bc9c9"
+    },
+    {
+      "claim_id": "d39e6472-c38b-4017-a267-643f3f1d8636",
+      "result_id": "f71174aa-41be-478f-a390-6b3e974bcbd4"
+    },
+    {
+      "claim_id": "48837651-73a1-4e1e-a155-53408973d7dc",
+      "result_id": "f71174aa-41be-478f-a390-6b3e974bcbd4"
+    },
+    {
+      "claim_id": "40c447e3-69bc-44d4-9793-e74e80a9a87b",
+      "result_id": "f71174aa-41be-478f-a390-6b3e974bcbd4"
+    },
+    {
+      "claim_id": "66f3b3b5-24b8-4877-8381-ec97943c0b9a",
+      "result_id": "00a128d7-8220-4486-92ed-52bd8768921d"
+    },
+    {
+      "claim_id": "09370e65-9d33-42eb-9cf0-8c21cd4f0977",
+      "result_id": "00a128d7-8220-4486-92ed-52bd8768921d"
+    },
+    {
+      "claim_id": "f17bc591-c871-473f-a8dd-2fb6c2d34434",
+      "result_id": "00a128d7-8220-4486-92ed-52bd8768921d"
+    },
+    {
+      "claim_id": "9ce512ad-04d7-411a-89d3-3399f6dcdccc",
+      "result_id": "00a128d7-8220-4486-92ed-52bd8768921d"
+    },
+    {
+      "claim_id": "6991549b-b1e3-461d-838a-91fbcec64bc5",
+      "result_id": "00a128d7-8220-4486-92ed-52bd8768921d"
+    },
+    {
+      "claim_id": "e9bffdf9-c464-45b5-98d4-066864ff090f",
+      "result_id": "00a128d7-8220-4486-92ed-52bd8768921d"
+    },
+    {
+      "claim_id": "292052d6-03a0-413a-bf7f-7a73c557f419",
+      "result_id": "00a128d7-8220-4486-92ed-52bd8768921d"
+    },
+    {
+      "claim_id": "4b81e415-623d-4f10-b815-842ae5f48f13",
+      "result_id": "70aebe37-c58d-40f4-9d2a-b2f987e9e4f5"
+    },
+    {
+      "claim_id": "d1439fa0-e348-407f-9824-3a10679179cf",
+      "result_id": "70aebe37-c58d-40f4-9d2a-b2f987e9e4f5"
+    },
+    {
+      "claim_id": "70484901-18c5-488d-9ab0-e5b9e63673b5",
+      "result_id": "70aebe37-c58d-40f4-9d2a-b2f987e9e4f5"
+    },
+    {
+      "claim_id": "346fff46-3344-458d-b33a-70c7a7c80b29",
+      "result_id": "70aebe37-c58d-40f4-9d2a-b2f987e9e4f5"
+    },
+    {
+      "claim_id": "bc390083-a9c7-466c-9c89-a0b3ffc33379",
+      "result_id": "70aebe37-c58d-40f4-9d2a-b2f987e9e4f5"
+    },
+    {
+      "claim_id": "92df9516-0c4f-4f77-8866-62e46590ba70",
+      "result_id": "70aebe37-c58d-40f4-9d2a-b2f987e9e4f5"
+    },
+    {
+      "claim_id": "9d8a3719-ca73-4b3f-81cc-237d81cdd128",
+      "result_id": "92d60d30-92d7-4147-9bb3-5b093c4ac3d7"
+    },
+    {
+      "claim_id": "68d6ae13-0574-49dc-8983-19c852e0b5f4",
+      "result_id": "92d60d30-92d7-4147-9bb3-5b093c4ac3d7"
+    },
+    {
+      "claim_id": "930d7ef3-9320-4e90-be2d-0ec2eb5cdd36",
+      "result_id": "92d60d30-92d7-4147-9bb3-5b093c4ac3d7"
+    },
+    {
+      "claim_id": "0c76f13a-5b18-430f-a11c-f268c91f7056",
+      "result_id": "eb40a1ca-8a44-4511-850d-db85cae4ed85"
+    },
+    {
+      "claim_id": "bbd89df1-c70d-4846-93df-33d3ea9a88b4",
+      "result_id": "eb40a1ca-8a44-4511-850d-db85cae4ed85"
+    },
+    {
+      "claim_id": "7bdde70f-3fe0-4fd7-bc30-f94bbf2ead6c",
+      "result_id": "eb40a1ca-8a44-4511-850d-db85cae4ed85"
+    },
+    {
+      "claim_id": "60d41b1a-78c3-4dce-983f-473143bd33e0",
+      "result_id": "eb40a1ca-8a44-4511-850d-db85cae4ed85"
+    },
+    {
+      "claim_id": "81db0edf-0488-429b-835c-d23850e87f5f",
+      "result_id": "eb40a1ca-8a44-4511-850d-db85cae4ed85"
+    },
+    {
+      "claim_id": "406ec556-8e3d-4446-ab60-1e3933969835",
+      "result_id": "eb40a1ca-8a44-4511-850d-db85cae4ed85"
+    },
+    {
+      "claim_id": "61bc36b0-a564-49f2-b78a-d7744cef2242",
+      "result_id": "a47a3f91-b9c4-43ac-b291-af7bedcd37d3"
+    },
+    {
+      "claim_id": "4efd0eb9-addc-4311-8acf-8f57d08bf7ca",
+      "result_id": "a47a3f91-b9c4-43ac-b291-af7bedcd37d3"
+    },
+    {
+      "claim_id": "fb42acdf-b68b-49a7-baee-e5a7e7fd1585",
+      "result_id": "a47a3f91-b9c4-43ac-b291-af7bedcd37d3"
+    },
+    {
+      "claim_id": "560a6193-3e42-4f71-890d-15dde1989699",
+      "result_id": "b0f50009-7171-4600-986d-81fedc5d28cc"
+    },
+    {
+      "claim_id": "5aab4b30-6f21-4ed5-bf3e-c547a3d0b1c0",
+      "result_id": "b0f50009-7171-4600-986d-81fedc5d28cc"
+    },
+    {
+      "claim_id": "fc962ccf-e273-4030-9c51-cc949ed758cd",
+      "result_id": "b0f50009-7171-4600-986d-81fedc5d28cc"
+    },
+    {
+      "claim_id": "b1d7206a-c3dd-4711-98f8-ad3544244cc8",
+      "result_id": "b0f50009-7171-4600-986d-81fedc5d28cc"
+    },
+    {
+      "claim_id": "5649e745-1b72-4e2d-868b-1c6745de468e",
+      "result_id": "b0f50009-7171-4600-986d-81fedc5d28cc"
+    },
+    {
+      "claim_id": "c487e913-7bd2-41c6-bae2-4f660bab4b46",
+      "result_id": "b6a00cd9-cb41-4a97-84c1-fdd49091d763"
+    },
+    {
+      "claim_id": "1e4f0fa7-8abc-46f8-a2da-773eb5bfd632",
+      "result_id": "b6a00cd9-cb41-4a97-84c1-fdd49091d763"
+    },
+    {
+      "claim_id": "3b05010b-24c0-4e9b-8ee8-88c010789b64",
+      "result_id": "b6a00cd9-cb41-4a97-84c1-fdd49091d763"
+    },
+    {
+      "claim_id": "91abdc89-2db5-49ba-96cb-be5e94f5507e",
+      "result_id": "b6a00cd9-cb41-4a97-84c1-fdd49091d763"
+    },
+    {
+      "claim_id": "0c90fe8a-a2f6-4727-ac87-811ca0e21661",
+      "result_id": "b6a00cd9-cb41-4a97-84c1-fdd49091d763"
+    },
+    {
+      "claim_id": "76901de0-7177-4ae9-a4aa-6dc82fe7f28d",
+      "result_id": "b6a00cd9-cb41-4a97-84c1-fdd49091d763"
+    },
+    {
+      "claim_id": "2ab7090b-500d-42bd-b65e-a498e7744537",
+      "result_id": "dba7caca-13e0-4fcb-bc40-10ce1bd5e367"
+    },
+    {
+      "claim_id": "241bb177-857e-462b-9410-1402b5e78872",
+      "result_id": "dba7caca-13e0-4fcb-bc40-10ce1bd5e367"
+    },
+    {
+      "claim_id": "e502cff4-d8d0-4428-aba6-9118b7a45a34",
+      "result_id": "dba7caca-13e0-4fcb-bc40-10ce1bd5e367"
+    },
+    {
+      "claim_id": "eded3efd-bc4a-4923-b9b9-6e347058224a",
+      "result_id": "0c03ceed-4d66-41df-aeaa-6b84b459aa1b"
+    },
+    {
+      "claim_id": "3e5a5644-f193-4518-895b-a86637f5c3c8",
+      "result_id": "0c03ceed-4d66-41df-aeaa-6b84b459aa1b"
+    },
+    {
+      "claim_id": "ecefdcff-39a7-4c28-89a1-7cd035c4fcd9",
+      "result_id": "c1267c6e-7216-42d4-9bc9-1b6c917f90ae"
+    },
+    {
+      "claim_id": "310c51ab-1ba8-4ca2-9f07-dbd2eafc34cc",
+      "result_id": "c1267c6e-7216-42d4-9bc9-1b6c917f90ae"
+    },
+    {
+      "claim_id": "0bdba292-ab91-4f9c-90a5-8fd5b24533a6",
+      "result_id": "c1267c6e-7216-42d4-9bc9-1b6c917f90ae"
+    },
+    {
+      "claim_id": "bba11880-8687-46be-89de-ef3d2b578629",
+      "result_id": "a10ae503-3e41-46a0-a9dd-76f994707303"
+    }
+  ],
+  "comparisons": []
+}

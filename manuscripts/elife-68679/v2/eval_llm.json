@@ -1,0 +1,187 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors develop a mode-based computational framework that translates single-cell trajectory data on curved surfaces into quantitative hydrodynamic models. This framework leverages mode representations (spherical harmonics) that are powerful tools in physics and engineering but have not been widely applied to cell tracking data or dynamic model inference in developmental biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 establish the novelty and utility of the approach. The framework is demonstrated on both synthetic ABP data (C27, C31) and experimental zebrafish data (C46), showing it can successfully compress high-dimensional data and infer predictive models. The citations in C4 support the utility of mode representations in other fields, while C5 correctly identifies the gap this work fills.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The authors adopt a thin film approximation where cellular motion during early zebrafish gastrulation is represented on an effective spherical mid-surface, justified by the approximately two-dimensional nature of the observed cell motions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 describe a key modeling assumption. C6 is supported by citation to Shah et al., 2019 and the observation that the yolk cell radius is much larger than average height changes. The authors acknowledge in C7 that this is an approximation and that future models should account for full 3D dynamics, demonstrating appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Cell divisions cause total cell numbers to vary over time during early zebrafish gastrulation, which is essential to most developmental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 state established biological facts supported by citation to Kobitski et al., 2015. These claims provide biological context for the methodological choices made in handling cell number variations in the coarse-graining approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Mode-based analysis provides robust signatures of developmental symmetry breaking, with the time point around 300 min marking the completion of epiboly when density fluctuations become minimal across all modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by data shown in Figure 2B and Figure 2\u2014figure supplement 1B,D. The robustness is demonstrated by analyzing a second experimental dataset. The correlation between mode signatures and known developmental stages (epiboly completion) provides biological validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C26"
+    ],
+    "result": "The total topological charge of defects in the cell flux on a sphere always sums to +2, and the appearance of additional defects at the end of epiboly may signal the start of formation of more complex 3D structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is a well-established topological constraint (supported by Kamien, 2002) that is verified in the data. Claim C26 is appropriately presented as speculative (\"could signal\") and represents a reasonable interpretation of the correlation between defect formation and the developmental transition to 3D extrusion. The speculation is clearly marked and supported by the observed data patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C31"
+    ],
+    "result": "The inference framework correctly recovers the hydrodynamic equations for active Brownian particle (ABP) dynamics on curved surfaces, with direct simulation of the learned model agreeing very well with coarse-grained input data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C31 describe validation of the framework using synthetic ABP data where analytical predictions are available. Figure 3C shows good quantitative agreement between analytically predicted and inferred matrices M. Figure 3D-E demonstrates that simulations of the learned model match the coarse-grained input data, providing strong validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C47"
+    ],
+    "result": "The learned model for zebrafish gastrulation shows similar patterns to ABP dynamics, suggesting that random but persistent cell movement akin to ABPs on a sphere partially contributes to early zebrafish gastrulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C47 are supported by visual comparison of learned matrices (Figures 3C and 4B) and analysis of interaction kernels (Figure 4D). The similarity is consistent with prior single-cell trajectory analysis (Shah et al., 2019). The authors appropriately state this as a partial contribution, acknowledging that off-diagonal terms in the zebrafish matrix represent additional interactions not present in non-interacting ABPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Simulations with modified initial conditions still exhibit characteristic symmetry breaking and lead to emergence of density and flux patterns similar to those in the original data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is demonstrated in Figure 4\u2014figure supplement 1, which shows simulations with different initial conditions (different experimental sample, rotated initial condition, locally depleted density) all producing similar symmetry-breaking patterns. This demonstrates robustness of the learned model and suggests the symmetry breaking is encoded in the interaction matrix M.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Real-space analysis reveals effectively non-local coupling between density and flux dynamics in zebrafish data, which could result from unresolved morphogens, mechanical interactions, or other degrees of freedom not captured in the linear model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by analysis of the kernel m^\u03c1(r,r') shown in Figure 4D. Claim C45 appropriately presents speculative interpretations with supporting citations (Hannezo and Heisenberg, 2019; M\u00fcnster et al., 2019). The non-local coupling is a data-driven observation, while the mechanistic explanations are clearly marked as possibilities requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The learned linear minimal model for cell migration during early zebrafish morphogenesis quantitatively recapitulates the spatiotemporal dynamics of the developmental process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is demonstrated by comparing model predictions with experimental data in Figure 4F-G and Video 4. The model successfully reproduces density patterns, flux dynamics, and topological defect formation over the entire developmental period. The quantitative agreement validates that the linear model captures essential features of the collective cell dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "The framework can be extended to nonlinear models, generalized to spherical shells of finite height, and is directly applicable to other species with similar spherical cell organization during gastrulation once tracking data becomes available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 and C51 describe potential future extensions and applications. While the statements are reasonable based on the demonstrated framework, they represent untested possibilities rather than demonstrated results. C49 is supported by citation to Barrera et al., 1985 for the mathematical basis, and C51 is supported by citation to Gilbert and Barresi, 2016 regarding similar developmental patterns in other species, but actual implementation and validation remain future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The experimental data from Shah et al., 2019 was preprocessed using wavelet denoising, Tikhonov-regularized differentiation for velocity computation, and outlier removal of cells in the 95th percentile or above for speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 describe the data preprocessing pipeline with appropriate citations and methodological details. The steps are standard and well-justified: denoising addresses measurement noise, regularized differentiation handles numerical differentiation of noisy trajectories, and outlier removal eliminates aberrant tracking. The authors verified that outlier removal only removes aberrant cells (C57).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Embryogenesis is a multiscale process involving developmental symmetry breaking, and recent advances in high-resolution live-cell microscopy provide unprecedented insights into collective cell dynamics during embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 provide general background context supported by established knowledge and citations in the Introduction. These are well-accepted statements in developmental biology that motivate the study but do not represent novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The essentially spherical organization of cells during gastrulation observed in zebrafish is shared by many species whose early development occurs through discoidal cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by citation to Gilbert and Barresi, 2016, a standard developmental biology textbook. This establishes the broader applicability of the spherical geometry framework beyond zebrafish, though actual application to other species remains future work.",
+    "result_type": "MINOR"
+  }
+]

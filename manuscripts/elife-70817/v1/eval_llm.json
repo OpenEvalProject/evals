@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors analyzed 147 articles published in 2019 across nine biological disciplines, drawn from a curated list by Woitowich et al., 2020. The methodology involved collaborative coding with 93% interrater reliability, and the sample included studies on humans (35%) and rodents (31%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C105-C112 describe the study methodology and sample characteristics with clear quantitative data. The interrater reliability of 93% and detailed description of the coding process support the rigor of the analysis. The sample composition is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In the 147 articles analyzed, 80% compared the sexes and 57% reported a sex difference. However, in more than a quarter of articles reporting sex differences (24/83), the sexes were never actually compared statistically. Variation across disciplines was substantial, with Endocrinology comparing sexes most frequently (93%) and Neuroscience least frequently (33%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C33 provide consistent quantitative findings with specific percentages and counts. The data reveal a critical gap: sex differences were claimed without statistical comparison in 29% of cases (24/83 articles). The discipline-specific variation is well-documented in Figure 1B, supporting the robustness of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C75",
+      "C76"
+    ],
+    "result": "Of 92 articles with factorial designs involving sex, only 29% tested for sex \u00d7 treatment interactions. Among 53 articles claiming sex-specific effects, only 30% presented statistical evidence of a significant interaction. In 45% of these articles, authors inappropriately inferred sex-specific effects by comparing p-values within each sex separately, a well-documented statistical error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43, C75-C76 document a major methodological flaw: 70% of articles claiming sex-specific effects lacked appropriate statistical evidence. The finding that 45% used the inappropriate 'difference between significant and not significant' approach is particularly concerning. This is supported by established statistical principles (C75-C76) and quantitative data from the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Authors who failed to test for interactions were significantly more likely to claim sex-specific effects than those who did test (88% vs. 63%, \u03c7\u00b2=5.84, p=0.016). This pattern suggests a systematic bias toward reporting sex differences in the absence of appropriate statistical evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C83-C87 provide strong statistical evidence (p=0.016) for publication bias. The finding that 88% of claims without interaction tests favored sex differences (vs. 12% claiming similarity) is compelling. The chi-square test appropriately addresses the hypothesis of bias, and the effect size is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The error of comparing p-values across groups (claiming sex-specific effects based on p<0.05 in one sex but not the other) persists at the same frequency in Neuroscience as documented a decade earlier by Nieuwenhuis et al., 2011 (~50% of factorial designs), despite being widely recognized as a statistical mistake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 document the persistence of a well-known statistical error over a decade. The comparison to Nieuwenhuis et al., 2011 provides historical context, and the finding is supported by multiple authoritative citations (C77-C79). Figure 2D corroborates this temporal comparison, making this a robust finding about lack of methodological improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In 37% of articles, sexes were pooled for at least some analyses. Among these, 48% pooled without testing for sex differences, and 17% pooled despite finding a significant difference. When p-values were reported before pooling (11/19 articles), they ranged from 0.15 to >0.999, but effect sizes were never reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C64 document problematic pooling practices with clear quantitative data. The finding that 48% pooled without testing and 17% pooled despite significant differences is concerning. The absence of effect size reporting (C57) is a critical omission. The discipline-specific variation (C58-C64) is well-documented in Figure 3, supporting these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The term 'sex' was used exclusively in 69% of articles, while 'gender' was used exclusively in 9%, and both terms in 19%. In 20% of articles using 'gender', the term referred to non-human animals, which conflicts with current recommendations that 'gender' should refer to socially constructed identities rather than biological attributes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71, C94-C96 provide clear quantitative data on terminology usage. The finding that 'gender' was used for non-human animals in 20% of cases is well-documented. The conflict with current recommendations (C94) is supported by multiple citations. The observation that operational definitions are rarely provided (C96) is a valid methodological concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Authors who complied with NIH guidelines to disaggregate data by sex usually went beyond guidelines to explicitly compare the sexes (80% of cases). However, this finding must be contextualized: the majority of articles that included both sexes did not analyze data by sex at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide important context about the study sample. The inference in C72 is supported by the 80% comparison rate (C23). The contextualization in C74, citing Will et al., 2017 and Woitowich et al., 2020, appropriately limits the generalizability of the findings to the subset of articles that already disaggregate by sex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The field of Behavior had the lowest rate of claiming sex-specific effects (18%) but the highest rate of providing statistical evidence for such claims (71%). In contrast, Reproduction had the highest rate of claims (67%) but never provided statistical evidence (0%), along with Physiology and Pharmacology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 reveal striking disciplinary differences in statistical rigor. The inverse relationship between claim frequency and evidence quality is particularly notable. The data are clearly presented in Figure 2F. However, the authors acknowledge small sample sizes within disciplines as a limitation, which should temper strong conclusions about discipline-specific practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Comparing multiple dependent variables across sex without correcting for multiple comparisons increases the risk of false positives and likely contributes to over-reporting of sex differences across disciplines. The authors observed this practice frequently, including cases with 90 comparisons yielding 5 significant results (exactly the number expected by chance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 identify an important statistical issue supported by citation to Makin and Orban de Xivry, 2019. The example of 90 comparisons yielding 5 significant results (5% false positive rate) is compelling evidence. However, the claim that this is 'likely contributing' (C93) is somewhat speculative, as the authors did not systematically quantify the prevalence of this practice across all articles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C82",
+      "C98",
+      "C100"
+    ],
+    "result": "Statistical evidence supporting claimed sex differences was often missing, particularly for sex-specific effects of manipulations. This pattern suggests that sex-specific effects may be over-reported, and when data are reported by sex, critical statistical analyses are often missing, leading to potentially misleading interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C82, C98, C100 synthesize the main findings about inadequate statistical support. The inference of over-reporting (C5) is justified by the quantitative data showing 70% of sex-specific effect claims lacked statistical evidence (C42). The conclusion about misleading interpretations (C100) is a reasonable inference from the documented methodological flaws.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Pooling sexes without testing for differences could mask true sex differences, while bias toward finding differences could artificially inflate their importance. Given that sex \u00d7 treatment interactions are rare in clinical literature with false positives outnumbering false negatives, and that sex differences influence media and policy, solid statistical evidence is especially important in preclinical research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C88-C91 provide important context about the consequences of methodological flaws. The citation to Wallach et al., 2016 (C89) about false positives in clinical literature and to Maney, 2014 (C90) about media influence support the importance of rigor. However, C88 is somewhat speculative about 'artificially inflating' importance, as this consequence was not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The findings emphasize the need for resources and training in study designs and statistical analyses for detecting sex differences. Such training would benefit researchers, reviewers, editors, and program officers. Without better awareness, SABV implementation may reduce rather than enhance rigor and reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 present reasonable recommendations based on the documented methodological deficiencies. The call for training is well-justified by the high frequency of statistical errors. However, C104's claim that SABV 'may reduce' rigor is somewhat speculative, as the study documents problems but does not directly compare rigor before and after SABV implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The authors clarify that their findings do not necessarily indicate that the conclusions in the analyzed articles were inaccurate; the conclusions may have been supported by appropriate statistical analyses that were not reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 provides an important caveat about the interpretation of the findings. This is a reasonable qualification, as the study assessed what was reported rather than conducting independent reanalysis of the underlying data. This limitation is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C97",
+      "C99"
+    ],
+    "result": "The NIH implemented a 2016 policy requiring consideration of sex as a biological variable (SABV) in preclinical research to improve rigor and reproducibility. While the proportion of articles including both sexes increased between 2011-2019, the proportion treating sex as a variable did not. SABV has been characterized as game-changing, but barriers to implementation include lack of training, and haphazard implementation could decrease rigor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C19, C97, C99 provide background context supported by appropriate citations to NIH policy documents and prior literature. The contrast between increased inclusion of both sexes (C15) and lack of increase in treating sex as a variable (C16) is well-documented by Woitowich et al., 2020. The concerns about implementation barriers (C17-C19) are reasonable inferences that motivate the current study.",
+    "result_type": "MINOR"
+  }
+]

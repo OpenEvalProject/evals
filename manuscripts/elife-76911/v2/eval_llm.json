@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C129",
+      "C130"
+    ],
+    "result": "The study used RERconverge to perform a genome-wide scan across 62 mammal species using 19,149 genes and 343,598 conserved noncoding regions to identify genetic elements evolving at different rates in hairless versus hairy mammals. Ten extant and one ancestral hairless species were identified based on hair density, including rhinoceros, elephant, naked mole-rat, human, pig, armadillo, walrus, manatee, dolphin, orca, and the cetacean ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C52-C55, C129-C130 describe the methodological approach and phenotype assignment, which are clearly documented with specific numbers and species lists. The data sources (UCSC 100-way alignment, phastCons scores) are properly cited and the scope of analysis is well-defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Q-Q plots showed enrichment of significant permulation p-values for both coding and noncoding regions, with noncoding regions showing stronger deviation from uniformity. Hair-related MGI category genes and skin/hair-expressed genes showed significant evolutionary rate acceleration in hairless species, with strong enrichment for hair follicle genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C62-C65 are supported by Figure 1B showing Q-Q plots and Figures 1C-D showing enrichment statistics. The observation that noncoding regions show stronger deviation (C57) is visible in the data, though the interpretation that this is due to regulatory changes (C58) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Tests for positive selection using PAML showed that out of 199 genes tested, 27 genes demonstrated hairless acceleration, but all also showed tree-wide positive selection, suggesting positive selection was not hairless-specific. Over half of top genes showed evidence of pseudogenization in one or more hairless species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by data in Figure 1\u2014source data 4 and Table 1. The PAML analysis methodology is described in Methods, and the finding that accelerated genes show tree-wide rather than hairless-specific positive selection is clearly stated with specific numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Hair-related pathways remained enriched among rapidly evolving genes even when KRTs and KRTAPs were removed, implying that hairless-related genetic changes are broadly driven by many genes related to the hair cycle. No individual hairless species had undue impact on enrichment of known hair-related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by Figure 1\u2014source data 6 and Figure 4. The robustness analyses (removing KRTs/KRTAPs and individual species) strengthen the conclusion that the signal is not driven by a single gene family or species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Significantly accelerated genes were primarily within the hair shaft for coding sequence, while noncoding regions near genes related to the hair shaft, matrix, and dermal papilla showed patterns of accelerated and decelerated evolution. This suggests regulatory sequence evolution may drive changes in hair follicle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by Figure 5, which shows compartment-specific enrichment patterns. The data clearly show differential patterns between coding and noncoding regions across hair follicle compartments. The interpretation (C73) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Top-ranked genes for coding sequence acceleration included known hair/skin genes (KRT2, KRT35, PKP1, PTPRM) that showed no signals of evolutionary rate shifts in nearby noncoding regions, and novel candidates like FGF11 (top-ranked gene with no known hair role but high skin expression) and GLRA4, ANXA11, and MYH4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C74-C77, C81-C89 are supported by Table 1 and Figure 1\u2014figure supplements 4-11. The identification of known genes validates the method, while novel candidates are supported by expression data and literature citations. The lack of noncoding signal for these genes (C12) is shown in Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Accelerated noncoding regions are most strongly enriched near regulatory hair-related genes and microRNAs (mir205, ELF3, FOXC1) that do not show rate shifts in their protein-coding sequences. These regulatory proteins have pleiotropic functions, suggesting changes to regulatory regions drive hairlessness evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C96-C102 are supported by Figure 6C and citations documenting the known functions of FOXC1 and ELF3. The lack of coding sequence acceleration (C99) is shown in the data, and the interpretation about pleiotropy (C100-C101) is well-supported by literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "There is a global correlation (Pearson's rho = 0.177) between evolutionary rate shift statistics for protein-coding regions and enrichment statistics for nearby noncoding regions. KRTs and KRTAPs show particularly strong concordance (66 of 69 showed acceleration in both), but many genes with accelerated nearby noncoding regions show little evidence of coding sequence rate shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by Figure 6A-B showing the correlation and the specific pattern for KRTs/KRTAPs. The observation of variable coding sequence acceleration despite strong noncoding signals (C93-C94) is clearly shown, and the interpretation about constraint (C95) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C124"
+    ],
+    "result": "mir205 was the top-enriched microRNA with rapidly evolving nearby noncoding regions. mir205 is known to be associated with skin and hair development, and its host gene shows read pileups in hair follicle RNA-seq data, serving as validation that convergent evolution signals successfully identify hair-related elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107, C124 are supported by Figure 7A showing enrichment statistics, Figure 7C-D showing RNA-seq data, and citations documenting mir205's known hair-related functions. The identification of a known hair-related microRNA validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Body size was regressed from relative evolutionary rates to control for confounding. Bayes factors were used to distinguish hairless from marine phenotype signals, with a ratio \u22655 indicating strong support for hairlessness. Many hair-related pathways showed signal driven by hairlessness rather than marine phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 describe methodological approaches to handle confounders, which are clearly documented in Methods. Figure 2 shows the Bayes factor analysis results supporting that the signal is driven by hairlessness rather than marine phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The strength of enrichment for hair follicle genes increases as more hairless species share rate shifts, demonstrating the power of convergent signal. Single-species analyses only showed enrichment in 2 of 10 hairless species (armadillo and pig), demonstrating the importance of testing for convergent evolutionary rate shifts across all hairless mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 are supported by Figure 3 and Figure 3\u2014figure supplement 1. The data clearly show that convergent analysis is more powerful than single-species analysis, and that every hairless species has thousands of genes with rate shifts (C138), making convergent analysis necessary to identify hair-related elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C15",
+      "C109",
+      "C110"
+    ],
+    "result": "Genes and their associated noncoding regions show different evolutionary patterns and influence different aspects of hair growth. Coding regions primarily showed acceleration in genes related to hair shaft structure, while noncoding regions showed accelerated evolution near genes related to the dermal papilla and matrix, highlighting the interplay between protein and regulatory sequence evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C15, C109-C110 summarize the main finding about differential evolution of coding vs. noncoding regions. This is supported by multiple figures (Figures 5, 6) and represents a key conclusion of the study about the complementary roles of coding and regulatory evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C118",
+      "C119",
+      "C122",
+      "C123"
+    ],
+    "result": "Since all mammals can grow hair, function of genes related to the dermal papilla must be preserved, and spatial/temporal changes in hair growth may be driven by noncoding regions. Many hair-related genes may have pleiotropy preventing accelerated evolution of coding sequence, so plasticity of gene regulation through accelerated evolution of noncoding regions may allow for evolution of hairlessness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114, C118-C119, C122-C123 represent interpretations and inferences from the data. While speculative, these interpretations are well-supported by the observed patterns of coding vs. noncoding evolution and the known pleiotropic functions of regulatory genes. The logic is sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "GLRA4, the second-ranked gene, is a glycine receptor subunit that is generally conserved across mammals but is a pseudogene in humans. Based on glycine receptors' involvement in motor reflex circuits, GLRA4 may contribute to regulating the reflexive piloerection response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 describe GLRA4 and propose a hypothesis about its function. While C78-C79 are factual statements supported by citations, C80 is explicitly stated as a hypothesis with no experimental validation. The connection to piloerection is speculative and requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C108",
+      "C125"
+    ],
+    "result": "MicroRNAs are known to be important players in stem cell regulation and are likely key players in hair follicle cycling. Numerous microRNAs have been implicated in hair- and skin-related functions, and the microRNAs identified in this work serve as valuable candidates for further inquiry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C108, C125 are supported by citations to prior work establishing the role of microRNAs in stem cell regulation and hair/skin functions. The identification of specific microRNAs with accelerated nearby noncoding regions provides candidates for future study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "This study avoids identifying species-specific genetic changes and instead looks for general hair-related genomic elements relevant across many species, representing a step toward fully understanding hair growth and the evolution of hair across all mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 accurately describe the study's approach and significance. The convergent evolution framework is clearly designed to identify shared genetic changes rather than species-specific adaptations, as demonstrated by the methodological choices and validation analyses.",
+    "result_type": "MINOR"
+  }
+]

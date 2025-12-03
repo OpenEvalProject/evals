@@ -1,0 +1,1881 @@
+{
+  "submission": {
+    "id": "3f845f15-dee1-45da-832e-11297c27dad6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:49:26.118238Z",
+    "updated_at": "2025-12-03T07:49:26.118238Z"
+  },
+  "content": [
+    {
+      "id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "submission_id": "3f845f15-dee1-45da-832e-11297c27dad6",
+      "content_type": "manuscript",
+      "content_text": "# Mechanically transduced immunosorbent assay to measure protein-protein interactions\n\n## Authors\n\n- Christopher J Petell<sup>1</sup>\n- Kathyrn Randene<sup>3</sup>\n- Michael Pappas<sup>4</sup>\n- Diego Sandoval<sup>4</sup>\n- Brian D Strahl<sup>1</sup> ([ORCID: 0000-0002-4947-6259](https://orcid.org/0000-0002-4947-6259))\n- Joseph S Harrison<sup>3</sup> ([ORCID: 0000-0002-2118-6524](https://orcid.org/0000-0002-2118-6524)) \u2020\n- Joshua P Steimel<sup>5</sup> ([ORCID: 0000-0003-2437-8545](https://orcid.org/0000-0003-2437-8545)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics, The University of North Carolina School of Medicine Chapel Hill United States\n2. UNC Lineberger Comprehensive Cancer Center, University of North Carolina Chapel Hill United States\n3. Department of Chemistry, University of the Pacific Stockton United States\n4. Department of Biological Engineering, University of the Pacific Stockton United States\n5. Department of Mechanical Engineering, University of the Pacific Stockton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMeasuring protein-protein interaction (PPI) affinities is fundamental to biochemistry. Yet, conventional methods rely upon the law of mass action and cannot measure many PPIs due to a scarcity of reagents and limitations in the measurable affinity ranges. Here, we present a novel technique that leverages the fundamental concept of friction to produce a mechanical signal that correlates to binding potential. The mechanically transduced immunosorbent (METRIS) assay utilizes rolling magnetic probes to measure PPI interaction affinities. METRIS measures the translational displacement of protein-coated particles on a protein-functionalized substrate. The translational displacement scales with the effective friction induced by a PPI, thus producing a mechanical signal when a binding event occurs. The METRIS assay uses as little as 20 pmols of reagents to measure a wide range of affinities while exhibiting a high resolution and sensitivity. We use METRIS to measure several PPIs that were previously inaccessible using traditional methods, providing new insights into epigenetic recognition.\n\n## Introduction\n\nProtein-protein interactions (PPIs) are essential to cellular biology and both high- and low-affinity interactions are required to maintain robust and dynamic responses in biological circuits (Nooren and Thornton, 2003; Kastritis and Bonvin, 2013; Evans, 2001). Low-affinity interactions are commonly leveraged, as is seen for multivalent recognition (Markin et al., 2010), readers of highly abundant proteins, and in protein allostery (Daily and Gray, 2009). In particular, recognition of the epigenome is recognized to rely on the interplay between post-translational modifications (PTMs), like methylation, phosphorylation, and ubiquitination (Yau et al., 2017; McGinty and Tan, 2016; Patel, 2016). Furthermore, multidomain-containing proteins are often regulated by allostery through weak interdomain interactions (Gladkova et al., 2018; Peng, 2015). Increasingly, the importance of weak interactions or relatively small changes in PPI affinity has been realized.\n\nDespite the increasing sophistication of studying PPIs, biochemical characterization of these weaker and similar strength interactions remain a significant hurdle. Many techniques are useful for examining protein-binding strength, each with its own set of limitations (Rowe, 2011; Syafrizayanti et al., 2014; Pollard, 2010). However, virtually all the commonly used techniques to measure biological interactions, for example, like ELISA, FP, SPR, NMR, BLI, AUC, and ITC, rely on the law of mass action, and to measure protein binding affinities in the \u03bcM range and above, highly concentrated proteins or ligands are required (Xing et al., 2016). For many systems, obtaining such large quantities of materials can be unattainable. Furthermore, high protein concentrations leads to thermodynamic non-ideality and proteins can aggregate, self-associate, and non-specific interactions occur, thus obfuscating the binding signal (White et al., 2010; Saluja and Kalonia, 2008). NMR is the gold standard method to measure weak interactions; however, in addition to requiring copious amounts of materials, the proteins must also be isotopically labeled, a single affinity measurement requires substantial instrument time and complex data analysis, and of all the methods mentioned is the lowest throughput. BLI and SPR are methods that can measure interactions while using a small quantity of the immobilized partner, however, binding is still governed by mass action and the soluble analyte must be at concentrations above the Kd; for weak binders, this can still use large quantities of materials (Helmerhorst et al., 2012; Weeramange et al., 2020). Additionally, the signal is highly dependent on the mass change of the interaction, and for smaller ligands, binding to larger molecules this signal could be small. Moreover, discerning between background binding and specific binding can be difficult, especially for weak interactions which requires the analyte to be at a high concentration.\n\nAnother difficulty in determining the binding affinity of PPIs arises when measuring similar strength interactions, for\u00a0example, two-\u00a0to\u00a0fivefold differences. Several factors contribute to this limitation, but determining the active fraction of protein is significant because, for most fitting techniques, the calculated affinity is a dependent variable of the protein concentration (Jarmoskaite et al., 2020; Hulme and Trevethick, 2010). Moreover, to achieve accurate fitting of a protein binding isotherm requires accurate determination of the end point of the saturation curve, which for weak interactions necessitates high concentrations of ligand. Another factor in differentiating similar strength interactions is that most binding measurements have low statistical power due to the resource intensiveness of performing multiple replicates. A method where binding strength can be measured independent of protein concentration, that uses small amounts of reagents, and that has high statistical power would be valuable.\n\nHere, we present a novel approach to measuring the strength of biological interactions that is moderately high-throughput, requires a minimal amount of protein material, and can measure a wide range of Kd values from 10-2\u00a0to\u00a010-15\u00a0M. This technique was initially inspired by the rolling of biological cells, like neutrophils exhibiting haptotaxis on endothelial cells. Neutrophil motion is driven by chemical or ligand gradients (Voisin and Nourshargh, 2013). The neutrophils roll on the endothelial cells due to PPIs between the cell surface receptors. The PPIs increase the effective friction between the two cells, allowing the rotational motion to be converted into translational displacement. We aimed to create a single particle biomimetic technique that leveraged this fundamental physical concept of friction to produce a mechanical signal to indicate binding events, the Mechanically Transduced Immunosorbent assay (METRIS). METRIS utilizes protein functionalized ferromagnetic particles to mimic the rolling cells. These ferromagnetic particles are made active via actuation of an externally applied rotating magnetic field and the particles proceed to roll, henceforth referred to as rollers, and translate across the surface using a similar mode of locomotion as the neutrophils. When the rollers are placed on a functionalized surface, the amount of rotational motion converted into translational motion depends on the effective friction between the rollers and the substrate. That effective friction scales with the strength of the binding interaction. Thus, a higher affinity PPI between the roller and the substrate will result in a larger translational displacement of the roller. Since both the roller and surface have immobilized proteins, the method is not dependent on mass action and requires approximately 20 pmols to measure PPIs regardless of their strength.\n\nUsing the METRIS assay, we reproduced well-characterized binding preferences for two different methyllysine histone reader domains (Gatchalian et al., 2013; Kuo et al., 2012) and weak interactions between the E2 Ube2D (Buetow et al., 2015) and UBL-domains (DaRosa et al., 2018). These affinities range between 10-4\u00a0and\u00a010-6\u00a0M. However, we were also able to measure several weaker interactions between unmodified histone peptides, which allowed us to measure the \u0394\u0394Gs for the phospho/methyl switch phenomenon in DIDO1-PHD (Andrews et al., 2016). Finally, we also show that this method can be used to measure a weak interdomain interaction between the isolated UHRF1-UBL domain and SRA domain, which is known to control the E3 ligase specificity and epigenetic DNA methylation inheritance (Foster et al., 2018; DaRosa et al., 2018). Collectively, our results show that the METRIS assay can be a very powerful technique which has the potential to provide additional insight into PPI interactions that were difficult to measure using other methods.\n\n## Results\n\n### Rolling parameter scales with interaction affinity of PPI\n\nIn the METRIS assay, rollers are placed in a Helmholtz coil inspired apparatus (see Figure 1A and Figure 1\u2014figure supplement 1) where an externally rotating magnetic field is applied at a constant frequency, $\\omega$. The permanent magnetic moment of the roller, couples with the applied magnetic field, producing a magnetic torque and subsequent rotation of the ferromagnetic bead (Steimel et al., 2014; Sing et al., 2015). In the absence of effective friction, the rollers would rotate mostly in place with the frequency of the applied magnetic field; however, effective friction induced by binding between the rollers and the substrate will convert some of that rotational motion into translational displacement, $\u0394\u2062x$, thus indirectly measuring the effective friction between the substrate and the rollers. Since the magnetic field is many orders of magnitude stronger than the strength of noncovalent interactions, in this system the higher the effective friction between the rollers and the surface corresponds to larger translational displacement. The effective friction is determined by the strength and density of PPIs between the roller and the coated substrate. Thus, the translational displacement will scale with the density and affinity of the PPIs being measured, such that a higher $\u0394\u2062x$ corresponds to a higher affinity. However, the displacement is also a function of several other parameters, specifically the diameter of the roller, $D$, and the frequency of rotation of the applied magnetic field, $\\omega$. Here we define a dimensionless parameter, which is the ratio of the observed translational displacement of the roller to the maximum theoretical translational displacement of a sphere that we refer to as the rolling parameter, RP (Figure 1B)\n\n$$\nR\u2062P=\\frac{\u0394\u2062x}{\\pi\u2062D\u2062\\tau\u2062\\omega}\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig1-v1.jpg)\n\n**Figure 1.:** (A) General schematic of roller and surface functionalization. Both binder A and binder B are attached to the roller or the surface by biotin-streptavidin interactions. The direction of the rotating magnetic field is indicated by the curved arrow. (B) The rolling parameter (RP) is a dimensionless parameter that measures rolling. The RP is calculated by taking the ratio between the observed displacement of a roller, $\u0394\u2062x$, and the maximum theoretic rolling of a sphere, which is calculated from the circumference of each spherical particle \u03a0D, the frequency of the rotation of the magnetic field $\\omega$, and the actuation time $\\tau$. In the schematic three scenarios are depicted: (top) a RP of 1 where the roller moves the maximum theoretical displacement, (middle) a RP less than 1, and (bottom) a RP near 0 where the particle does not move. (C) Representative microscopy images of streptavidin rollers (black points) on an avidin (left) or a biotin surface (right). The scale bar in black is 100\u00a0\u03bcm and the images size are 1.28 mm \u00d7\u00a00.96 mm. The position of the rollers prior to magnetic field actuation are indicated by the transparent spots and after actuation is opaque. The top panels are after a CW actuation and the bottom is after a CCW actuation. The magnification illustrates the difference between the null (streptavidin-avidin) and biotin-streptavidin interaction translational displacement. (D) Plot of a single roller from a streptavidin-biotin (black) and an avidin-streptavidin (red) experiment. The y-axis (X) represents the position of each roller in the field of view. The magnification above shows how \u0394x is calculated for each roller by subtracting the preactuation position from the postactuation position. CW and CCW actuations are repeated as described in the methods. Translational displacement is calculated as a vector. (E) The distribution of rolling parameters (RPs) from the streptavidin-avidin (N=8 rollers) and biotin-streptavidin (N=9 rollers) experiments. RP is calculated using the equation in (B) for each actuation period for each roller so the distributions contain N\u00a0\u00d7\u00a036 points. See Figure 1\u2014source data 1 for the rolling parameter for each actuation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Three pairs of Helmholtz coils were mounted on an aluminum T-slot assembly. Two sinusoidal signals are generated in Matlab, passed through a DAQ, amplifier, and then to the Helmholtz coils. Visualization is accomplished using a lens tube, 10X objective, and CCD camera. A 10 mT field was utilized.\n\nwhere \u0394x is the translational displacement of the roller, D is the diameter of the roller, $\\tau$ is the actuation period of the magnetic field, and $\\omega$ is the rotational frequency of the magnetic field. The RP is a dimensionless parameter that varies from 0 to 1 where 0 is no translational displacement and one being a sphere perfectly rolling at a single hinge point and translating a distance equivalent to its circumference. Here, the sphere also undergoes a number of rotations given by product of the rotational frequency of the magnetic field and actuation time. The density of the interactions between the roller and the substrate are kept as constant as possible from experiment to experiment by fully saturating both the rollers and the substrate with proteins and peptides. As described in the Materials\u00a0and\u00a0methods, both the rollers and substrate are coated 50\u00d7 the theoretical number of binding sites, so virtually all the sites should be occupied. Additionally, a series of washing steps are carried out to make sure no unbound protein or peptide remains on the surface. If the surface was not uniformly functionalized, the roller\u2019s displacement in these regions would be detected by correlations to either the individual roller or areas on the substrate. However, no such anomalies were observed in these experiments.\n\nTo measure the translation displacement $\u0394\u2062x$ and to calculate the RP of the rollers, a clockwise (CW) field was actuated at $\\omega=1\u2062H\u2062z$ for $\\tau=5$ s. The field was then turned off for $\\tau=5$ s. A counter-clockwise (CCW) field was actuated at $\\omega=1\u2062H\u2062z$ for $\\tau=5$ s and then the field was turned off for $\\tau=5$ s again. This process was repeated 18 times, and several example images of rollers and roller trajectories can be seen in Figure 1C and Figure 1D and in the supplemental videos. Appropriate parameters for the magnetic field strength and frequency were previously determined (Steimel, 2017). The rolling parameter is calculated from the observed roller translational displacement divided by the maximum theoretical translational displacement of a rolling sphere where all the rotational torque is converted into translation, so the rolling parameter varies from 0 to 1. A rolling parameter of 0 corresponds to a surface with no effective friction. Experimentally, a rolling parameter of 0 is never observed due to hydrodynamic friction between the roller and the substrate. A rolling parameter of 1 corresponds to the maximum theoretical rolling of a sphere.\n\nWe first measured the rolling of streptavidin rollers on an avidin surface or a biotin surface. Still images of a CW (top) and CCW (bottom) actuation (Figure 1C) show that on the streptavidin surface the rollers hardly move, while on the biotin surface the rollers translate well over 100 \u03bcm. A full trajectory for a roller on the biotin and streptavidin surfaces (Figure 1D) show the $\u0394x$ for each roller remains relatively constant through each actuation (see Figure 1\u2014video 1 and Figure 1\u2014video 2 for movies of the experiment). $\u0394\u2062x$ is calculated for each actuation for each roller and then converted to a rolling parameter (RP) (Figure 1D). The RPs have a gaussian distribution (Figure 1E) and the average RP on the avidin surface is 0.081 \u00b1 0.004 while on biotin we observed a RP of 0.918 \u00b1 0.002. The interaction between biotin and streptavidin is reported to be Kd=10-15\u00a0M. While it is impossible to know the true Kd value for a null interaction, the weakest PPI measured are in the 10-2\u00a0M range (Yoo et al., 2016) and enzymes with Kd values in the 10\u00b0\u00a0M range have been reported (Bar-Even et al., 2011), so we assume that null interaction must be between 10\u00b0\u00a0M and the concentration of water 5.5\u00a0\u00d7\u00a0102M, and we settled on 10\u00b0M as an estimation of the null interaction, which based on our subsequent fitting seems like a suitable assumption. These two values provide an idea about the range of affinities that can be measured with METRIS.\n\n### DIDO1-PHD phospho/methyl switch characterized by METRIS\n\nNext, we wanted to determine whether we can quantitatively correlate the measured RP to binding affinities for known PPIs and test the robustness of the METRIS assay as an experimental approach to measure PPIs. We focused our attention on weak interactions and interactions between several protein pairs that are similar in binding strength, given that these PPIs are typically difficult to accurately measure. We first examined the well-established interaction between DIDO1-PHD and H3K4 methylation. DIDO1 is responsible for interchanging between active and silent chromatin states in embryonic stem cells, and its chromatin localization is regulated through a phospho/methyl switch, where phosphorylation of H3T3 evicts DIDO1 from chromatin during mitosis (F\u00fctterer et al., 2017; Di Lorenzo and Bedford, 2011; Liu et al., 2014). The affinities for mono-, di-, and trimethylated peptides are well described in the literature (Gatchalian et al., 2013) and interactions with the unmodified peptide and H3T3pK4me3 were too weak to be measured in the experiment setup. H3K4 peptides and DIDO1-PHD were both immobilized to the rollers and substrate through biotin-streptavidin interactions. The H3 N-terminus (a.a. 1\u201320) was biotinylated and immobilized on the roller, and biotinylated avi-tagged GST-DIDO1-PHD was attached to the substrate. DIDO1 has a preference for H3K4me3 > H3K4me2 > H3K4me1 (Gatchalian et al., 2013). The measured $\u0394\u2062x$ and RP match this preference, with the largest rolling parameter for H3K4me3 (0.233 \u00b1 0.012) > H3K4me2 (0.213 \u00b1 0.010) > H3K4me1 (0.176 \u00b1 0.005) and H3 and H3T3pK4me3 being the lowest, although still above the baseline rolling parameter value of 0.081 (Figure 2A and B). While the overall change to the RPs is small, these differences are all statistically significant because the data set has good statistical power and small percentage errors (<5%) (Figure 2\u2014source data 2). Additionally, the distribution of rolling parameters can be found in Figure 2\u2014figure supplement 1A, Figure 2\u2014video 1 and 2, and Figure 2\u2014animation 3, show the rolling for this family of interactions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig2-v1.jpg)\n\n**Figure 2.:** (A) Plot showing the average translational displacement per actuation for the rollers coated with the indicated H3K4 methylated peptide on a DIDO1-PHD surface.\u00a0Streptavidin-biotin and streptavidin-avidin (PBS) are included for references. See Figure 2\u2014source data 2 for results of statistical analysis; all comparisons are statistically significant (p<0.0001). (B) Plot showing the calculated average rolling parameter per interaction. (C) Log-Log plot of the rolling parameters (RP) from panel B with the reported Kds. Extrapolated points for the unknown interactions are represented by unfilled markers, and the 95% confident interval for the fitting is depicted. (D) Table of rolling parameters and associated Kd estimates for the DIDO1-PHD interactions. Fold change is calculated as the ratio between the Kd values for the indicated peptide and for H3K4me3. These ratios are used to calculate $\u0394\u0394G$ at T=298K. The published values are from Gatchalian et al., 2013 using NMR (me1) and tryptophan fluorescence (me2/3); *ND\u00a0= Not determined. (E) Image of the DIDO1-PHD crystal structure with H3K4me3 peptide, with the PHD surface electrostatic potentials shown (red = negative, blue = positive), the $\u0394\u0394G$ for K4me3, and the estimated $\u0394\u0394G$ for the rest of the peptide. The PTM reader sites are shown with greater detail to the right. Here, $\u0394\u0394G$ is calculated between the sequential methyl states, and the ratio of H3T3pK4me3 and H3K4me3 give the $\u0394\u0394G$ for T3p. (F) Results of the DIDO1-PHD histone peptide microarray assay against the indicated peptides (see Figure 1\u2014figure supplement 1B for results of all peptides). Only H3K4me3 is statistically significant (P<0.05). (see Figure 2\u2014source data 2 for results of statistical analysis). While these results indicate general binding trends, they cannot provide Kd estimates and do not have high enough resolution to distinguish between weaker binding interactions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Histogram showing the distribution of RPs for the indicated beads on the DIDO1-PHD-coated surface.\u00a0See Figure 2\u2014source data 1 for the rolling parameter for each actuation. (B) Normalized array signal intensities for the DIDO1-PHD, with the \u2018others\u2019 group including all other peptides. Each point represents the average value for an individual peptide. (C) Experiments where we tested either Avi-tagging or Biotin-PEG-maleimide tagging of GST-DIDO1-PHD. In the reverse experiment the bead was coated with Avi-tagged DIDO-PHD and the surface contains the peptide.\n\nIn order to correlate binding affinity to RP, we developed an empirical fitting method based on available data. We noticed that the log-log plot of Kd vs. RP showed a linear relationship between the three known DIDO1-PHD binding interactions to the methylated peptides (R2=0.995). We also included a no-binding avidin-streptavidin interaction (RP=0.081) estimated to have a Kd = 1M and the streptavidin-biotin interaction where Kd = 10-15\u00a0M (DeChancie and Houk, 2007; Figure 2C). Overall, this experiment suggests that there is a linear dependence of the log of the RP to the log of Kd that spans roughly fifteen-orders of magnitude.\n\nThere is a clear correlation between RP and the measured Kd, the equilibrium constant for interactions, despite METRIS being a non-equilibrium technique. Kd is a ratio between the first-order dissociation rate (Koff) and the second-order association rate (Kon) (Sanders, 2004). For most PPIs, the Kon rates are very similar, and thus the Kd constant is mostly dependent on Koff. However, kinetic constants for binding interactions are rarely reported since few techniques can access this information, so for many interactions, only Kd is known. Since we do not have a theoretical model that relates RP to Kd, we sought to use an empirical fitting method based on the excellent correlation we observed between RP and Kd (Figure 2C). Using this fitting method, we could reproduce the literature Kd values with high accuracy; all of the predicted Kd values were roughly twofold tighter than the published values (Gatchalian et al., 2013) and the fold difference between the different methylation states is similar (Figure 2D). Remarkably, we were also able to estimate METRIS-Kd values for the weak interaction between the H3T3pK4me3 peptide (340\u00a0\u03bcM \u00b1 90) and the unmodified H3 tail (1200\u00a0\u03bcM \u00b1 440). While these are empirically derived estimates for Kd, it is clear from the RP measurements that these interactions are statistically distinct, and they represent a missing piece of data that is fundamental to a quantitative understanding of epigenetic recognition.\n\nThe utility of the METRIS data is exemplified when evaluating the $\u0394\u0394G$$^{o}$ ($\u0394\u0394G$) values, a common way to report the energetic contributions of individual amino acids for a set of related PPIs. $\u0394\u0394G$ is calculated by taking the natural log of the ratio of two Kd values (Kd1 and Kd2 in equation 2) in the Gibbs free energy equation, where R is the gas constant and T is the temperature in Kelvin (Sidhu and Koide, 2007).\n\n$$\n\u0394\u2062\u0394\u2062G^{o}\u2062(\u0394\u2062\u0394\u2062G)=R\u2062T\u2062ln\u2061\\frac{K_{d\u20621}}{K_{d\u20622}}\n$$\n\nThis analysis allows for calculating the energetic contributions of the individual PTMs for binding to the DIDO1-PHD domain. For example, K4me3 is worth \u22124.2 $\\frac{k\u2062c\u2062a\u2062l\u2062s}{m\u2062o\u2062l}$ while T3p is worth +3.4 $\\frac{k\u2062c\u2062a\u2062l\u2062s}{m\u2062o\u2062l}$ (Figure 2D). To our knowledge, this is the first energetic analysis of the DIDO1 phospho/methyl switch. These values have more context when viewed with the crystal structure of DIDO1-PHD (Figure 2E; Gatchalian et al., 2013). The hydrophobic trimethyl-lysine binding site accounts for a significant amount of the total binding to the peptide, however, there are clearly other residues on H3 that interact with DIDO1-PHD, such as the N-terminus, R2, and T3, and therefore, it is not surprising that unmodified H3 can still bind and account for roughly \u22124 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$ when using 1 M Kd as the null reference. The deleterious effect of T3p is also resolved, since residue E308 of the PHD domain would clash and repel a T3p modified histone tail. Furthermore, this analysis also provides new insights into discrimination of methylation states by the DIDO1-PHD. For example, the greatest change in $\u0394\u0394G$ occurs between H3 from H3K4me1 (\u22121.9\u00a0$\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$), then H3K4me1 versus H3K4me2 (\u22121.6 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$), and H3K4me2 from H3K4me3 is the weakest (\u22120.7 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$). Thus, despite the DIDO1-PHD having the highest affinity for H3K4me3, it has the greatest discrimination between non-methylated H3K4 versus H3K4me1. The structure agrees with this observation, where two of the methyl binding sites are the most buried and the third is the most exposed one.\n\nOne of the significant advantages of the METRIS assay is that only 10 \u03bcl of 2 \u03bcM (20 pmol) is required to load the substrate and less is needed for the rollers, which is significantly less than any conventional method to measure PPI affinities. We compared METRIS to histone peptide microarrays, which is another methodology that can produce binding data with a minimal amount of protein (e.g. 500 \u03bcl of 0.5 \u03bcM [250 pmol] protein). While microarrays offer high-throughput screening, they lack the sensitivity to determine weak binding and small affinity differences. For DIDO1-PHD, we could observe a statistically significant difference between H3K4me3 and the other methylation states, but there were no other statistically significant differences (Figure 2F, Figure 2\u2014figure supplement 1B, and Figure 2\u2014source data 2). Given this result, METRIS is significantly more sensitive and quantitative than other common methods to measure protein affinities that use comparable amounts of reagents at low concentrations (i.e. ELISA and microarrays).\n\n### Determining ORC1-BAH methyl preferences using METRIS analysis\n\nWe further validated the METRIS assay using another methyllysine reader, the BAH domain of ORC1. ORC1 functions in licensing origins of replication by discriminating H4K20me2 from H4K20me1, a PTM on active chromatin, and H4K20me3 a repressive PTM (Bicknell et al., 2011a; Bicknell et al., 2011b; Kuo et al., 2012). We selected ORC1 because the reported affinities are within an order of magnitude, with a twofold difference reported between H4K20me1 and H4K20me3. The \u0394x and RP values we obtained matched the published binding preferences (Kuo et al., 2012) H4K20me2 ($0.263\\pm0.011$) > H4K20me1 (0.226 \u00b1 0.008) >H4K20me3 (0.215 \u00b1 0.005)> H4 (0.202 \u00b1 0.005) (Figure 3A, Figure 3B, Figure 3\u2014figure supplement 1A, Figure 3\u2014video 1, Figure 3\u2014video 2, and Figure 3\u2014animation 1). Using the same fitting method, we observe a linear log-log dependence (R2 = 0.967) and the METRIS calculated Kd values were between four-\u00a0and\u00a0eightfold tighter than the published values, yet there was good agreement between the fold-change and accordingly the $\u0394\u0394Gs$. (Figure 3C and Figure 3D). Thus, the METRIS assay is sensitive enough to measure changes that are 0.4 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig3-v1.jpg)\n\n**Figure 3.:** (A) Plot showing the average translational displacement per actuation for the rollers immobilized with the H4K20 methylated peptide on a ORC1-BAH domain surface. Streptavidin-Biotin and Streptavidin-avidin (PBS) are included for references. See Figure 3\u2014source data 2 for results of statistical analysis; all comparisons are significant (p<0.0001). (B) Plot showing the calculated RP for the indicated interactions (C) Log-Log plot of the rolling parameters, RP, from panel A. Extrapolated point markers are unfilled and the 95% Kd confident interval for the fitting is depicted. (D) Table of rolling parameters and associated Kd estimates for the ORC1-BAH. Fold change is calculated as the ratio between the Kd for the indicated peptide and the Kd for H4K20me2. These ratios are used to calculate $\u0394\u0394G$ at T=298K. The published values are from Kuo et al., 2012 using ITC; *ND\u00a0= Not determined. (E) Image of the ORC1-BAH crystal structure with H4K20me2 peptide, with the BAH surface electrostatic potentials shown (red = negative, blue = positive) as well as the $\u0394\u0394G$ for K20me2 and the estimate for the rest of the peptide. The PTM reader site is shown with greater detail to the right. Here the $\u0394\u0394G$ is calculated between the sequential methyl states. (F) Results of the ORC1-BAH histone peptide microarray assay against the indicated peptides from panel A (see Figure 3\u2014figure supplement 1B for complete peptide plot). Only H4K20me2 is statistically significantly different (p<0.05) from the other H4 peptides (Figure 3\u2014source data 2). Again, we see that microarrays can indicate general binding trends but they cannot provide Kd estimates and do not have high enough resolution to distinguish between weaker binding interactions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Histogram showing the distribution of RPs for the indicated beads on the ORC1-BAH-coated surface.\u00a0See Figure 3\u2014source data 1 for the rolling parameter for each actuation. (B) Normalized array signal intensities for the ORC1-BAH, with the \u2018others\u2019 group including all other peptides. Each point represents the average value for an individual peptide.\n\nUsing the METRIS assay, we could also measure binding to the unmodified H4, which has previously not been detected. H4 unmodified binding was measured to be 44-fold weaker than H4K20me2 binding. With this value we could calculate that the $\u0394\u0394G$ for K20me2 is worth \u22122.2 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$. When comparing this to the DIDO1-PHD, we find that DIDO1-PHD has a stronger interaction with the PTM (\u22124.2 versus \u22122.2 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$) however the ORC1-BAH domain has a stronger interaction with the unmodified histone than the DIDO1-PHD (\u22126 versus \u22124 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$). Examining the structure of ORC1-BAH domain bound to H4K20me2 (Kuo et al., 2012) shows the methyllysine binding pocket is more charged than DIDO1-PHD, and likely, in part, contributes to the higher affinity to the unmodified peptide (Figure 3D). The METRIS analysis also furthers our understanding of ORC1-BAH discrimination amongst methyl states. We find the greatest differentiation between H4K20me2 and H4K20me3 (1.6\u00a0$\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$) consistent with the biological role of ORC1 and this methyl sensing occurs through residue E93 (Figure 3E).\n\nWe also performed histone peptide microarrays on ORC1-BAH for comparison against the METRIS assay. The only statistically significant difference is between H4K20me2 and the other peptides (Figure 3F and Figure 3\u2014figure supplement 1B), although the trends do match the literature and METRIS values, including the signal for the unmodified peptide when compared to the other peptides on the array, which support our findings with METRIS. However, due to the large standard deviation observed on the microarray, the assay would need to be repeated multiple times to achieve statistical significance. This highlights another advantage of METRIS assay, since it is a single particle method and the RP measurements are taken 36 times for each particle, this method has high statistical power.\n\n### Investigating noncovalent interactions between Ubiquitin-like domains and Ube2D1 utilizing METRIS\n\nWe next used METRIS to investigate interactions with the protein post-translational modification ubiquitin. Ubiquitin has an expansive cellular regulatory role that is controlled by weaker interactions with effectors (Oh et al., 2018; Cohen et al., 2017) including non-covalent interactions with E2s and E3 ligases (Brzovic et al., 2006; Zhang et al., 2016). Ubiquitin binding is wide-spread, and there are hundreds of UBLs in the human genome for these readers to discriminate amongst (Harrison et al., 2016b). For example, the E2 Ube2D1 binds to ubiquitin noncovalently with an affinity of 206 \u00b1\u00a06 and we have shown that a ubiquitin-like domain (UBL) on the E3 UHRF1 can bind with higher affinity (15 \u00b1\u00a01 \u03bcM with NMR or 29.0\u03bcM \u00b11 with ITC) (DaRosa et al., 2018). To probe this interaction with METRIS, both ubiquitin and the UHRF1-UBL domain were labeled using biotin-PEG-maleimide at an N-terminal cysteine installed for labeling, and Ube2D1 was labeled at native cysteines. The \u0394x and RP data match the affinity trend UHRF1-UBL (0.131 \u00b1 0.005) > ubiquitin (0.108 \u00b1 0.004) (Figure 4A, Figure 4B, Figure 4\u2014figure supplement 1A, and Figure 4\u2014animation 1) and fitting METRIS-Kds produced values that were 5-fold weaker than the published values, but were in exact agreement with the 13-fold difference (1.4 $\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}\u0394\u2062\u0394$\u00a0G) reported in the literature (Figure 4C). Therefore we have demonstrated that METRIS can measure and distinguish interactions in the 10-4\u00a0M range without utilizing highly concentrated protein solutions, providing a simple method to measure weak interactions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig4-v1.jpg)\n\n**Figure 4.:** (A) Plot showing the average translational displacement per actuation for the rollers coated with the indicated proteins on a surface containing UbeD21 (E2) or the UHRF1-SRA domain. Streptavidin-Biotin and Streptavidin-avidin (PBS) are included for references. All comparisons are statistically significant (See Figure 4\u2014source data 2 for results of statistical analysis.) (B) Plot showing the calculated RP for the indicated rollers (C) Log-Log plot of the rolling parameters, RP, from panel A. Extrapolated point markers are unfilled and the 95% confident interval for the fitting is depicted. (D) Table of all rolling parameters and associated METRIS-Kd estimates. Fold change is calculated as the ratio between the indicated protein and the UHRF1-UBL domain and the $\u0394\u0394G$ is calculated using these ratios at T=298K. Kd values for ubiquitin are taken from Buetow et al., 2015 and UHRF1-UBL value taken from DaRosa et al., 2018. (E) Image of the UHRF1-UBL binding surface for the UHRF1-SRA and Ube2D1 shown with electrostatic surface potentials (red = negative, blue = positive) with insets highlighting the change of the UBL surface with the W2V mutation and the associated $\u0394\u0394G$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Histogram showing the distribution of RPs for the indicated beads on the Ube2D1-coated surface. (B) Histogram showing the distribution of RPs for the indicated beads on the UHRF1-SRA-coated surface. See Figure 4\u2014source data 1 for the rolling parameter for each actuation.\n\n### Direct measurement of an interdomain interaction between UBL and SRA domains of UHRF1 using METRIS\n\nFor epigenetic readers/writers, there is an abundance of examples where interdomains interactions within a single polypeptide chain control allostery (Worden et al., 2019; Ruthenburg et al., 2007). For example, the role of UHRF1 in controlling DNA methylation requires interactions between its domains\u00a0(Harrison et al., 2016a; Gao et al., 2018; Gelato et al., 2014), and specifically, our previous study provided evidence for an interaction between the UHRF1-UBL and the UHRF1-SRA domain, which is required for ubiquitylation of histone H3 (DaRosa et al., 2018). Studying interdomain interactions can be difficult, given the weak and transient nature of these interactions. We therefore thought METRIS is well-suited to measure this type of interaction. Accordingly, we tested the SRA and UBL interaction with METRIS by attaching biotinylated SRA to the substrate. For the SRA-UBL interaction, we measured an RP of 0.119 \u00b1 0.004 for the particles, significantly higher than the 0.081 for an unmodified surface and the 0.085 we obtain with ubiquitin on the roller (Figure 4A and Figure 4B). This represents the first direct measurement of the interaction between the SRA and UBL domains of UHRF1. We also tested a mutation to the UBL (W2V) that previous biochemical assays suggested is critical for the interaction (DaRosa et al., 2018; Foster et al., 2018), and W2V had a significantly reduced RP to 0.098 \u00b1 0.002 (Figure 4A, Figure 4B, and Figure 4\u2014figure supplement 1A). Fitting METRIS-Kd shows the $\u0394\u0394G$ of the W2V variant is worth 1.5\u00a0$\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$ (Figure 4D) due to replacing the aromatic sidechain with the short aliphatic side chain (Figure 4E). This highlights another strength of METRIS; it is rare to assign $\u0394\u0394G$ values to mutations at binding hotspots because the mutated variant binds weakly (P\u00e1l et al., 2006). Therefore, we expect that METRIS will greatly enhance our understanding of PPIs.\n\n### Global fit of METRIS analysis\n\nWe sought to generate a global fit for all of the measurements from the three independent data sets. Overall, the log-log fit of the data remained linear ($R^{2}=0.89$) (Figure 5A), and even using this global fit, we observe agreement between fold changes and $\u0394\u0394G$ within a given set of PPIs (Figure 5B). However, the METRIS-Kd values were less accurate than with the individual fitting and we could not discriminate between similar strength binders in different sets of PPIs (e.g. between DIDO1 and ORC1). These results indicating that we cannot directly compare RP values obtained for different types of PPIs and that there is likely some structural difference in each system that is not yet accounted for. However, given that each set of values had similar systematic deviations from the experimentally determined values, which is why the $\u0394\u0394G$ remained accurate, we realized we could apply a simple scaling factor to the METRIS-Kd values to obtain measurements that matched the experimentally determined Kd. To determine the scaling factors for each interaction, we divided the published value against the METRIS-Kd, and averaged them, and then multiplied the METRIS-Kd by the scaling factor and could reproduce the literature values (Figure 5B). Indeed, this scaling can be applied to each of the individual fits to reproduce the literature values. It also provides a simple way to scale METRIS-Kd values to any experimentally determined Kd values.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67525/elife-67525-fig5-v1.jpg)\n\n**Figure 5.:** (A) Global Log-Log plot showing linearity between rolling parameter and dissociation constant for all interactions measured. (B) Table of binding constants of tested interaction partners when determined from the global fit. Fold change and $\u0394\u0394G$ are calculated in the same way as the previous example and the $\u0394\u0394G$ are similar to the previous reported value. Scaling factors are calculated by averaging the fold difference between METRIS-Kd and the published Kd for all interactions of the same type. Then the METRIS-Kd is multiplied by the scaling factor yielding the corrected Kds, which match the published values.\n\n## Discussion\n\nMETRIS, which measures the effective mechanical friction induced by PPIs, is fundamentally different than current methodologies. Here, we have shown that METRIS can be advantageous to other approaches when measuring weak interactions, since both binding partners are immobilized. Thus, METRIS uses a very low concentration of proteins while maintaining high precision. These characteristics allow for the characterization of a vast array of PPIs, many of which were previously very laborious to measure. In this study, we demonstrate how METRIS can contribute to the study of epigenetics, by allowing us to assign $\u0394\u0394G$ for PTMs individually and in combination, including a phospho/methyl switch in DIDO1. These values are significant because they provide a quantitative measure for the interplay between concurrent PTMs, a central premise of the epigenetic code (Rothbart and Strahl, 2014). Furthermore, this study shows that even applying METRIS to characterized interactions can provide new insights into PPIs.\n\nAnother area where better characterization of weak interactions will contribute significantly to understanding is in studying interdomain interactions. These types of interactions can be difficult to quantify without very resource-intensive processes, and limitations with the proteins themselves (yield or solubility) may make these interactions unmeasurable. Currently, pulldown assays, chemical crosslinking, and proximity ligation are qualitative, rarely produce quantitative data, and require mass spectrometry (Richards et al., 2021). Here, we have measured a direct interaction between the UHRF1-UBL and SRA domains that we estimate to have a Kd\u00a060\u03bcM (Figure 5B), however, the biological context for this interaction is between two tethered domains, so an absolute value is only partially relevant. More generally, we show that METRIS can be used to measure $\u0394\u0394G$ for hotspot mutations, which to our understanding, could previously only be measured indirectly using high-throughput selection strategies (P\u00e1l et al., 2006). Thus, METRIS will provide additional new data to the field of protein biochemistry and could aid in the parametrization of computational binding score functions.\n\nMETRIS can be conceptualized as a measure of the ability of converting rotational motion into translation motion. To translate, there must be sufficient magnetic torque applied to the rollers such that the PPI or other interactions between the roller and the substrate can be broken as they translate across the surface. Previous studies using force spectroscopy methods have measured the force of the biotin-streptavidin interaction to be 160pN (Florin et al., 1994). However, while there are some similarities with these techniques and METRIS (e.g. single particles in both cases Neuman and Nagy, 2008), there are distinct differences, particularly with the use of magnetic torque to impart this rolling motion in this nonequilibrium active system. Still, the effective friction is due to these intermolecular forces, but currently we do not have a model for how to relate the force directly to the rolling.\n\nAn essential advantage of METRIS is resolution, precision, and sensitivity, which allows for the differentiation of $\u0394\u0394G$ values as small as 0.4\u00a0$\\frac{k\u2062c\u2062a\u2062l}{m\u2062o\u2062l}$. Several factors likely contribute to this robustness: (1) the rolling parameter is not inherently dependent on the protein concentration, so long as the rollers and surface are saturated. (2) The measurements have high statistical power (\u224810 particles each with 36 RP measurements) and very low percentage error, given the high accuracy of the measurement and low uncertainty of many of the variables in the rolling parameter calculation. (3) Multiple interactions between the bead and the surface amplify the friction, which may be necessary to measure weak interactions, and likely limits the impacts of inactive proteins on the roller and substrate. However, METRIS does have limitations, such as the reliance on literature values for extrapolating and scaling the METRIS-Kd and the need to biotinylate the binding proteins. We envision with future development, we will derive a better mathematical model that describes the relationship between protein affinity and rolling parameter as many factors will contribute to the friction, such as the number of interactions per bead or the size of the protein interaction. Despite these limitations, we expect that METRIS will be of great use to researchers studying PPIs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>BirA-GST-Orc1-BAH; Orc1-BAH</td>\n      <td>This Study</td>\n      <td></td>\n      <td>Strahl Lab, pGEX vector, Figure 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>BirA-GST-DIDO1-PHD; DIDO1-PHD</td>\n      <td>This Study</td>\n      <td></td>\n      <td>Strahl Lab, pGEX vector, Figure 3</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>N-cys Ubiquitin; ubiquitin</td>\n      <td>Kamadurai, Hari B et al. \u2018Insights into ubiquitin transfer cascades from a structure of a UbcH5B approximately ubiquitin-HECT(NEDD4L) complex.\u2019 Molecular cell vol. 36,6 (2009): 1095\u2013102.</td>\n      <td></td>\n      <td>pGEX vector,</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ube2D1</td>\n      <td>DaRosa, Paul A et al. \u2018A Bifunctional Role for the UHRF1 UBL Domain in the Control of Hemi-methylated DNA-Dependent Histone Ubiquitylation.\u2019 Molecular cell vol. 72,4 (2018): 753\u2013765.e6.</td>\n      <td></td>\n      <td>Pet15 vector,</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>UHRF1-SRA</td>\n      <td>This study</td>\n      <td></td>\n      <td>Harrison Lab, MBP-pQ80L, Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>N-cys-UHRF1-UBL W2V</td>\n      <td>This study</td>\n      <td></td>\n      <td>Harrison Lab, MBP-pQ80L, Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>N-cys-UHRF1-UBL</td>\n      <td>This study</td>\n      <td></td>\n      <td>Harrison Lab, MBP-pQ80L, Figure 4</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Able Particle Tracker</td>\n      <td>Mu Labs</td>\n      <td>Full Version</td>\n      <td>http://apt.mulabs.com/</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Mathematica</td>\n      <td>Steimel Labs</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>OGG Video Converter</td>\n      <td>Ogg-converter.net</td>\n      <td>Version 6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Pymol</td>\n      <td>Schr\u00f6dinger</td>\n      <td>V2.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Streptavidin Coated Ferromagnetic Beads</td>\n      <td>Spherotech</td>\n      <td>SVFM-100\u20134</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Avidin Coated Slides</td>\n      <td>ArrayIt</td>\n      <td>SMV</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Histone peptide array</td>\n      <td>Petell, Christopher J et al. \u2018Improved methods for the detection of histone interactions with peptide microarrays.\u2019 Scientific reports vol. 9,1 6265. 18 Apr. 2019</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GST (rabbit polyclonal)</td>\n      <td>Epicypher</td>\n      <td>13\u20130022</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rabbit AlexaFluor-647 (goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>A21244</td>\n      <td>(1:10,000)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Magnetic probe and substrate functionalization\n\nThe streptavidin-coated ferromagnetic particles, provided by Spherotech with a nominal diameter of 10\u00a0\u03bcm, are composed of a core of polystyrene and CrO2. 10\u00a0\u03bcL of the stock solution, 1.0% w/v, was extracted inserted into a micro-centrifuge tube. Biotinylated peptides were then inserted into the tube with the streptavidin-coated ferromagnetic particles. The amount of peptides was such to coach each bead 50\u00d7 the theoretical limit, 1 mg of beads binds 0.18\u00a0nmole of biotin, to ensure all binding sites on the beads were covered. The bead and peptide solution was left to react at room temperature for at least 2 hr. The density of biotin binding sites per roller is on the order of 6\u00a0\u00d7\u00a0108 biotin molecules per roller which corresponds to a density of biotin binding sites on the order of 5\u00a0\u00d7\u00a01010 binding sites per mm2. Assuming the footprint of the sphere on the substrate to be approximately 1% of the projected area that would result in approximately 105 potential binding sites per bead, although the actual number of binders is likely much lower due to steric hindrance and other effects. The substrates are avidin-coated glass slides, provided by Arrayit, with a ligand density of 1.1\u00a0\u00d7\u00a01010 ligands per mm2. Microfluidic channels were created on this substrate using two pieces of double-sided tape, provided by 3M. The pieces of double-sided tape were cut to a width of several mms and a length of at least 25 mm. The pieces of tape were placed parallel to each other and at a distance of approximately 3\u20134 mm apart. Then a glass coverslip was placed on top of the tape to create channels approximately 22\u00a0\u00d7\u00a05 mm. A solution of biotinylated proteins was then inserted into the channel. The amount of proteins inserted was enough to coat the channel surface 50\u00d7 the theoretical limit to ensure that all of the sites on the substrate were coated. The substrate and solution was left in a container for 2 hr to allow the proteins time to bind to the substrate. After 2 hr, the solution was washed from the channel to remove any excess protein that was not attached to the substrate. Then the solution of peptide coated ferromagnetic beads was diluted approximately 2000\u00d7 to reduce the probability of two ferromagnetic beads forming a magnetic dimer which cannot be analyzed in the rolling parameter analysis and dimer particles are excluded. The channel was sealed with epoxy and magnetized by an external permanent neodymium magnet. The substrate was placed in the slide holder at the center of the Helmholtz Coil Inspired Experimental Apparatus.\n\n### Helmholtz coil inspired experimental apparatus\n\nThe Helmholtz Coil Inspired Apparatus consists of three pairs of coils were secured in an apparatus, made of aluminum T-slots, and attached to an optical breadboard. The coils have an inner diameter of 7 cm and an outer diameter of 13 cm, as seen in Figure 1\u2014figure supplement 1. Two sinusoidal signals, phase shifted by 90 degrees, were generated in Matlab. Those signals were sent to a National Instruments USB X Series DAQ and then passed through a 300W amplifier (150W/channel) before being sent through each pair of coils. The magnetic field is large enough (approximately 10mT) to ensure alignment of the rotational frequency of the particles with the frequency, $\\omega$, of the magnetic field. The signal from the amplifier was routed to a Rigol Oscilloscope to measure the frequency and the voltage. The sample holder is made from 6061 aluminum and attached to a OMAX binocular microscope which functions as our 3D optical stage. Data acquisition was accomplished via a CMOS camera mounted on a C-mount DIN objective tube assembly. The camera was connected to a computer for visualization, video capture, and subsequent analysis. As mentioned, the magnetic field strength (B) Is approximately 10mT and the ferromagnetic particles exhibit a magnetic moment (m) on the order of 10-11\u00a0Am2. This combination of magnetic field strength and magnetic moment allows for sufficient magnetic torque, $\\tau$ to be applied to break the strongest non-covalent interaction, biotin and streptavidin.\n\n$$\n\\tau=m\\timesB\n$$\n\nFor these experiments, once the sample was in the apparatus the actuation protocol was as follows: a five second actuation period, $\\tau$ in the RP equation, where the field rotates clockwise at a rotational frequency, $\\omega$, of 1 Hz. The field is then shut off for 5 s to allow the particle to settle and bonds to equilibrate, and then the field rotated counter-clockwise for the same actuation period and at the same rotational frequency, and then the field is shut off again for 5 s. After this the process repeats 18 times, after which the video is post-processed and the particles are tracked.\n\n### Particle tracking\n\nTo analyze particle motion, we converted the video captured from the CMOS camera and converted it into an .avi file using ArcSoft Media Converter eight and then converted the .avi into a sequence of .jpeg images. To analyze the motion of the active particles we used Able Particle Tracker. The data was then imported into Mathematica for subsequent analysis. Particles that stick together, due to attraction between the ferromagnetic beads, are omitted from the analysis. The custom Mathmatica scripts measures the diameter of each roller and the distance that the particle travels per actuation period and calculates the rolling parameter according. The recorded images have a resolution of approximately 1\u00a0\u03bcm per pixel, and our image analysis software has subpixel resolution so we can measure differences in displacement on the order of 0.1 \u03bcm.\n\n### Protein purification and biotinylation\n\nGST-[DIDO1-PHD/ORC1-BAH]-avi recombinant proteins we cloned into the pGEX-4T1 vector (GE, 27458001) to generate GST-[DIDO1-PHD/ORC1-BAH]-avi recombinant proteins. Recombinant proteins were purified as described in previous work . Briefly, the recombinant proteins were induced to express in SoluBL21 cells (Fisher, C700200) after reaching an OD600 of 0.4 with 0.2 mM IPTG and by shifting to 16\u00b0C for overnight growth. After induction, the cells were pelleted and resuspended in Lysis Buffer (50 mM HEPES, 150 mM NaCl, 1 mM DTT, 10% glycerol, pH 7.5) supplemented with protease inhibitors, then incubated in the presence of lysozyme (Sigma, L6876) and nuclease (ThermoFisher, PI88700) for 30 min. After this the cells were sonicated for six rounds consisting of 10 s continuous sonication at 50% intensity, 50% duty cycle followed by 60 s on ice. Lysates were centrifuged for 10 min at 10,000 rpm and the clarified lysates loaded onto a glutathione resin and purified by batch purification according to the manufacturer\u2019s protocol (ThermoFisher, PI16101). Purified proteins were then dialyzed against Lysis Buffer to remove GSH and quantified using a Bradford assay per the manufacturer instructions (BioRad, 5000006) prior to being stored at \u221280\u00b0C. Ube2D1 is a his-tagged protein that was purified according to previous publications through standard Ni-NTA purification. The UHRF1-UBL, W2V-mutant, and UHRF1-SRA domain were cloned into a modified version of His-MBP-pQE80L vector that we have previously described. For the UHRF1-UBL domain and W2V mutant an N-terminal cystine was added using PCR for chemical conjugation with maleimide. These proteins were grown to O.D. 0.6 and induced with 0.6 mM IPTG. MBP was cleaved using TEV purified in house and removed using anion exchange. The ubiquitin with an N-terminal cystine was purified using a pGEX-4T1 expression system described previously. The ubiquitin was removed from the resin by cleavage with TEV. Purified proteins with an avi-tag were biotinylated by using BirA following the BirA500 kit\u2019s protocol (Avidity, BirA500). Biotinylation was confirmed by performing a Coomassie gel shift assay according to Fairhead and Howarth, 2015. Cysteine Biotinylation was carried out using Poly(ethylene glycol) [N-(2-maleimidoethyl)carbamoyl]methyl ether 2-(biotinylamino)ethane (Sigma 757748) (Biotin-maleimide). Typically, small volumes were biotinylated such that very little biotin-malamide was needed (below a mg) so we added some powder and confirmed biotinaylation with SDS-page gel. For UHRF1-UBL variants and ubiquitin there is only a single engineered cysteine available for modification. For the Ube2D, UHRF1-SRA domain, and GST-PHD-DIDO1, we labeled native cysteines which resulted in heterogenous labeling. Excess biotin-maleimide was removed using size-exclusion or anion exchange for the UHRF1-UBL and ubiquitin, and dialysis for the SRA and GST-PHD-DIDO1. Proteins were typically aliquoted and frozen before METRIS analysis. Both labeling methods (N-terminal BirA tag versus biotin-maleimide) were evaluated for their ability to return RP values within error, which is shown in Figure 2\u2014figure supplement 1C.\n\n### Histone peptide microarrays\n\nHistone peptide microarrays were performed and analyzed as described in Petell et al., 2019. In brief, 500 nM of the avi- and GST-tagged DIDO1-PHD or ORC1-BAH constructs in 1% milk 1x PBST (10 mM Na2HPO4, 1.8 mM KH2PO4, 2.7 mM KCl, 137 mM NaCl, pH 7.6, 0.1% Tween-20) were incubated overnight at 4\u00b0C with shaking. The following day, the arrays were washed by submerging in 1x PBS briefly, then submerged in 0.1% formaldehyde in 1x PBS for 15 s to cross-link, formaldehyde was then quenched by submerging in 1 M glycine in 1x PBS for 1 min, after which the arrays were submerged in 1x PBS and inverted five times to remove remaining glycine. Next, the arrays were washed three times with high-salt 1 X PBS (1x PBS with 497 mM NaCl rather than 137 mM NaCl) for 5 min each at 4\u00b0C with shaking. Then, the arrays were incubated with a 1:1000 dilution of anti-GST (EpiCypher, 13\u20130022) in 1% milk 1x PBST for two hours at 4\u00b0C with shaking. After incubation with anti-GST antibody the arrays were washed with 1x PBS, three times for five minutes at 4\u00b0C with shaking. Next, they were exposed to a 1:10,000 dilution of anti-Rabbit AlexaFluor-647 (Invitrogen, A21244) for 30 min at 4\u00b0 with shaking. Lastly, the arrays were washed three times for 5 min with 1x PBS as in the previous wash step, then submerged in 0.1x PBS prior to imaging. The arrays were imaged using a Typhoon (GE) and quantification was carried out using ImageQuant TL software. Analysis of the data was done by first averaging the triplicate intensities for a given peptide on the array; the values for an arrays\u2019 dataset were then linearly scaled from 0 to 1 by applying a min-max formula such that the minimum value became 0 and the maximum 1. After, this all the scaled array values were combined to derive a single average and standard deviation for each peptide and the averages used for the graphs; see plots for what peptide modification states are shown. Results for the DIDO1-PHD and ORC1-BAH domains showing all peptides carrying the specified modifications, alone and in combination with other PTMs is shown in Figure 2\u2014figure supplement 1C and Figure 3\u2014figure supplement 1B.\n\n### Data collection and statistical analysis\n\nAll experiments for METRIS measured at least 10 different rollers that were rolled 36 times and all array data consist of at least three replicates, and averages with standard deviation are shown in the tables for each figure. All statistical analyses were done by using the Student\u2019s T-Test (unpaired, two-tailed distribution) using Graphpad Prism. The results of this statistical analysis are reported in Figure 2\u2014source data 2, Figure 3\u2014source data 2, and Figure 4\u2014source data 2.\n",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "77e19a4d-c42d-423c-b700-d2743e34c71e",
+      "submission_id": "3f845f15-dee1-45da-832e-11297c27dad6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67525.sa1](https://doi.org/10.7554/eLife.67525.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis article introduces a new experimental method that enables the direct measurements of weak interactions between proteins. It is based on densely attaching one type of protein (antigen) to a ferromagnetic microsphere, which can then bind to another protein that has been attached to a flat surface, and applying an external, rotating magnetic field to force the particle to roll across the surface, where its motion is slowed by binding and unbinding of antigens. The sensitivity of the method suggests that it may prove useful in the study of weak protein-protein interactions.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Mechanically Transduced Immunosorbent Assay To Measure Protein-Protein Interactions\" for peer review at eLife. Your article is being evaluated by 2 peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Cynthia Wolberger as the Senior Editor. The following individual involved in reviewer of your submission has agreed to reveal their identity: Erika Eiser (Reviewer #3).\n\nAs you can see from the reviews below, the reviewers agree that the method you have described has interesting potential, particularly in the small amount of material needed for the assay. However, there are concerns about the fact that the method itself has been published already some time ago, lessening the novelty of the publication. Focusing on the applications of the method would in principle be acceptable, but the concerns about the dynamic range of the method, and the important need for validation need to be addressed (perhaps requiring new experiments to do so) before we can reach a decision on your paper.\n\nReviewer #1:\n\nThe authors are seeking to develop a method for measuring the binding affinities between biomolecules using low amounts of material. The method described in this manuscript uses a magnetic field to cause a ferromagnetic particle to roll along a surface. When the particle is modified with one biomolecule and the surface is modified with another, there is an increase in friction if the two molecules interact. The degree of interaction is proportional to the amount of friction.\n\nStrengths\n\n\u2013 The method requires a minimal amount of material.\n\n\u2013 The rolling parameter can be measured for many ferromagnetic particles simultaneously, leading to robust statistical analyses.\n\nWeaknesses\n\n\u2013 The method itself has already been described in a paper published by one of the corresponding authors in 2014.\n\n\u2013 Insufficient detail is provided on the method and output. Raw data showing that the rolling particle is displaced in the presence of a binding partner on the surface is missing.\n\n\u2013 The Kd cannot be directly obtained from the rolling parameter.\n\n\u2013 Unlike methods such as surface plasmon resonance and biolayer interferometry, which use a comparably low amount of material, this method requires both binding partners to be affinity-tagged. The tags and the immobilization could obscure native interactions.\n\n\u2013 Biomolecular interactions have a wide range of affinities that span over 15 orders of magnitude (1 M to 10-15 M). Yet, the dynamic range of the rolling parameter is only one order of magnitude (0.081 for Kd of 1 M and 0.918 for Kd of 10-15M). As a result, the rolling parameter values cluster together when correlated with Kds on a logarithmic scale. Subtle differences in binding affinity can therefore be lost.\n\n\u2013 For any given system, the Kd must be measured using an orthogonal technique in order to establish binding affinities that can be correlated with the measured rolling parameter. More specifically, the rolling parameter values are not generalizable from system to system.\n\n\u2013 The schemes presented in Figure 1 are difficult to interpret. Perhaps it would be better show a video of the particles rolling along a surface with no binding partner and another video when there is a binding partner. In the absence of these raw data for each system, the binding measurements are not compelling.\n\n\u2013 The authors spend a great deal of time comparing their method to NMR, why? Other measurements such as SPR and BLI would be more appropriate comparisons.\n\n\u2013 In general, I found the way in which the manuscript was written to be very misleading. After reading the Intro, I was expecting the rest of the paper would focus on the development of the method. Then, in lines 184-185 on page 6, it becomes clear that the method was already published 7 years ago by one of the corresponding authors. Thus, the paper is less about the method and more about the application.\n\n\u2013 Please remove sentences like \"It is difficult to overstate how transformative this will be for the study of PPIs.\" The method is not a direct measurement of binding affinity. The dynamic range of the measurement does not correlate with the range of biomolecular binding affinities. Multiple affinity tags must be used and orthogonal binding measurements must be made in order to interpret the rolling parameter values.\n\nReviewer #3:\n\nIn this article the authors introduce a new experimental method, named mechanically transduced immunosorbent (METRIS) assay, enabling the direct measurements of weak interactions between proteins. Such protein-protein interactions (PPT) are typically very weak (on the order of a fraction of the thermal energy, kBT). This new technique is based on densely attaching one type of protein (antigen) to a ferromagnetic micron bead, which can then bind to another protein, that has been attached to a flat surface. By applying an external, rotating magnetic field, the probe particles will be driven to perform a rolling motion on the flat surface. In order to see any displacement of the probe particle the antigens need to detach on one side and bind on the opposing side in the direction of the motion induced by the magnetic field. This apparent friction informs us on the strength of the PPT. The authors have tested a number of important PPT's \u2013 the non-covalent Interactions between Ubiquitin-like Domains and Ube2D1 is one example.\n\nAn important strength of the new technique the authors introduce is the sensitivity of their new method \u2013 it exceeds that of common methods by far, as they were able to measure protein-protein interactions at much lower concentrations (2 orders of magnitude) than is typically done. This allows a systematic determination of many interaction potentials between the complex configurations of proteins as function of solvent parameters and I guess also as function of temperature, which could be interesting new the denaturation region. In addition, the affinity or attractive interactions between specific proteins or RNA and proteins may change as function of concentration: As the reaction constant or KD value depends directly on the total concentration in the system the up- and down regulation processes of proteins may be better understood. The authors demonstrate that they can achieve such a sensitivity, which is well explained in the results and discussion.\n\nThe only point that needs to be addressed is the interpretation of the data. While the systems and references are very well presented and researched it would be helpful to the reader to explain in more detail the actual measurements and in particular their interpretation and relation between the displacements measured and the KD and Gibbs free energy differences.\n\nMy main suggestions are of technical nature concerning the interpretation of the results and the underlying theory.\n\nIn the present description (line 1567) the authors relate the displacement of the probe bead to a parameter they introduce as rolling parameter RP: zeta = \u03b4 x/(pi times the diameter of the bead times the frequency of the oscillating magnetic field). First I would call RP = zeta, or only RP unless I have not understood the difference. However, my main questions is how did the authors derive this expression in equation 1. It is clear that zeta must be dimensionless, hence it is presented as displacement divided a velocity that is multiplied with the actuation time. This velocity is the rolling velocity = angular velocity times the radius of the probe colloid. It is confusing what \u03c0 is doing there. The authors should double check the equation and also explain to the reader why you introduce this parameter. Moreover, the radius of the colloids sured here should be given.\n\nIf I understand right, this zeta or rolling parameter is at the same time normalised against the streptavidin-biotin binding, which is known to be the strongest non-covalent binding in the system. If the probe particle is brought in contact and assuming that there is full coverage of avidin and biotin on the opposing surfaces, the effective contact area will depend on the size of the particle, and the binding strength with be more than 100 kBT. This means there is full traction and now slip or friction between the probe particle and the support surface. But with such strong binding energies, this means the fields applied must be very large and as the particle roller over the surface the biotin or avidin on one of the surfaces must be ripped off. Such behaviour was observed previously in AFM contact experiments, e.g. by the group of Herman Gaup in the 90's. First, the authors need to give details about the reproducibility of these reference measurements, in particular, the applied Forces (e.g. Magnetic field) grafting density and effective number of bonds in the contact area (which also may be influenced by the roughness of the colloidal bead surface) need to be detailed. Secondly, the authors do not discuss or present any calibration of the friction or rolling parameter. It is not necessarily a linear function between zero (no interaction and thus no friction) and one (full sticking/traction like when riding a bicycle).\n\nIn this context, it is important to look also into the displacement velocity. In these measurements the friction relies on the fact whether the protein-protein interactions are easily pealed off on one side and possibly re-established on the front of the rolling motion. But this will depend on how fast the rolling motion is. Again, AFM work by Gaup and in particular by Evan Evans (Annu. Rev. Biophys. Biomol. Struct. 2001. 30:105-28 \u2013 which should be referenced) showed that the force or interactions measured depend on how fast one pulls on the protein-protein link. Hence, the authors should give much more experimental detail and relation to known measurements. The numbers presented here for the Binding energies and their relation to the rolling parameters must be clarified as well, so that it would be possible for others to reproduce these measurements.\n\nTo summarise, the technique and the measured parameters need better elucidation and validation to be useful to others. In Particular friction is not necessarily the right terminology used in these measurements.\n",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5fdf3853-8692-49c9-b441-5bc9252372a1",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C1",
+      "claim": "Conventional methods to measure protein-protein interactions rely upon the law of mass action.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, conventional methods rely upon the law of mass action and cannot measure many PPIs due to a scarcity of reagents and limitations in the measurable affinity ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "41b16fb0-efb4-447a-b4e2-b195a4ae4b79",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C2",
+      "claim": "Conventional methods cannot measure many PPIs due to a scarcity of reagents and limitations in the measurable affinity ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, conventional methods rely upon the law of mass action and cannot measure many PPIs due to a scarcity of reagents and limitations in the measurable affinity ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "a57d76ab-e635-4936-ad99-dd5a6f29ceda",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C3",
+      "claim": "The METRIS assay utilizes rolling magnetic probes to measure PPI interaction affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanically transduced immunosorbent (METRIS) assay utilizes rolling magnetic probes to measure PPI interaction affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the core methodological description of METRIS in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "89a38aef-ef9d-40a9-b1be-acaf9c047d93",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C4",
+      "claim": "METRIS measures the translational displacement of protein-coated particles on a protein-functionalized substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "METRIS measures the translational displacement of protein-coated particles on a protein-functionalized substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement principle of METRIS in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "8b4b7a5c-1f52-4c71-8288-0390ac9198e1",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C5",
+      "claim": "The translational displacement scales with the effective friction induced by a PPI.",
+      "claim_type": "EXPLICIT",
+      "source": "The translational displacement scales with the effective friction induced by a PPI, thus producing a mechanical signal when a binding event occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical principle underlying METRIS measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "40499a77-1745-4768-bd2f-6a8e2ab24afa",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C6",
+      "claim": "The METRIS assay uses as little as 20 pmols of reagents to measure a wide range of affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "The METRIS assay uses as little as 20 pmols of reagents to measure a wide range of affinities while exhibiting a high resolution and sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of METRIS in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "72f4b3a3-730a-418f-96a4-f28f4c939a92",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C7",
+      "claim": "METRIS exhibits high resolution and sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The METRIS assay uses as little as 20 pmols of reagents to measure a wide range of affinities while exhibiting a high resolution and sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of METRIS in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "cde5889d-6d7d-4750-a475-72a740b38584",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C8",
+      "claim": "Low-affinity interactions are commonly leveraged in biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-affinity interactions are commonly leveraged, as is seen for multivalent recognition (Markin et al., 2010), readers of highly abundant proteins, and in protein allostery (Daily and Gray, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "c1c26d99-0051-4c74-81d8-a028c5a2161f",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C9",
+      "claim": "Recognition of the epigenome relies on the interplay between post-translational modifications like methylation, phosphorylation, and ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, recognition of the epigenome is recognized to rely on the interplay between post-translational modifications (PTMs), like methylation, phosphorylation, and ubiquitination (Yau et al., 2017; McGinty and Tan, 2016; Patel, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "79788f92-64fe-4ffb-984c-d61f311106c5",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C10",
+      "claim": "Multidomain-containing proteins are often regulated by allostery through weak interdomain interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, multidomain-containing proteins are often regulated by allostery through weak interdomain interactions (Gladkova et al., 2018; Peng, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "dd773ec1-10a5-478a-81ed-a54133211cff",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C11",
+      "claim": "Virtually all commonly used techniques to measure biological interactions rely on the law of mass action.",
+      "claim_type": "EXPLICIT",
+      "source": "However, virtually all the commonly used techniques to measure biological interactions, for example, like ELISA, FP, SPR, NMR, BLI, AUC, and ITC, rely on the law of mass action, and to measure protein binding affinities in the \u03bcM range and above, highly concentrated proteins or ligands are required (Xing et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "0f65e709-7355-4d6e-be7c-5d003627606c",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C12",
+      "claim": "To measure protein binding affinities in the \u03bcM range and above using conventional techniques, highly concentrated proteins or ligands are required.",
+      "claim_type": "EXPLICIT",
+      "source": "However, virtually all the commonly used techniques to measure biological interactions, for example, like ELISA, FP, SPR, NMR, BLI, AUC, and ITC, rely on the law of mass action, and to measure protein binding affinities in the \u03bcM range and above, highly concentrated proteins or ligands are required (Xing et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d4d76d53-9ef1-4f6a-991b-81c681273169",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C13",
+      "claim": "High protein concentrations lead to thermodynamic non-ideality and proteins can aggregate, self-associate, and non-specific interactions occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, high protein concentrations leads to thermodynamic non-ideality and proteins can aggregate, self-associate, and non-specific interactions occur, thus obfuscating the binding signal (White et al., 2010; Saluja and Kalonia, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d0d6cb7d-0fc8-4eef-950e-5d406971e7ab",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C14",
+      "claim": "NMR is the gold standard method to measure weak interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR is the gold standard method to measure weak interactions; however, in addition to requiring copious amounts of materials, the proteins must also be isotopically labeled, a single affinity measurement requires substantial instrument time and complex data analysis, and of all the methods mentioned is the lowest throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about NMR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "530403fe-9299-4421-ae07-4be72593801c",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C15",
+      "claim": "NMR requires copious amounts of materials and isotopic labeling of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR is the gold standard method to measure weak interactions; however, in addition to requiring copious amounts of materials, the proteins must also be isotopically labeled, a single affinity measurement requires substantial instrument time and complex data analysis, and of all the methods mentioned is the lowest throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of NMR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "6075bcc4-a1c3-48a5-95f3-2446e0704da6",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C16",
+      "claim": "BLI and SPR can measure interactions while using a small quantity of the immobilized partner, but the soluble analyte must be at concentrations above the Kd.",
+      "claim_type": "EXPLICIT",
+      "source": "BLI and SPR are methods that can measure interactions while using a small quantity of the immobilized partner, however, binding is still governed by mass action and the soluble analyte must be at concentrations above the Kd; for weak binders, this can still use large quantities of materials (Helmerhorst et al., 2012; Weeramange et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of BLI and SPR with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d0bf237a-ca19-483c-b738-f1e8d898872b",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C17",
+      "claim": "Determining the active fraction of protein is significant because the calculated affinity is a dependent variable of the protein concentration for most fitting techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Several factors contribute to this limitation, but determining the active fraction of protein is significant because, for most fitting techniques, the calculated affinity is a dependent variable of the protein concentration (Jarmoskaite et al., 2020; Hulme and Trevethick, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "f2b59150-91ac-4cd0-8a36-0fbe5438099a",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C18",
+      "claim": "METRIS can measure a wide range of Kd values from 10-2 to 10-15 M.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a novel approach to measuring the strength of biological interactions that is moderately high-throughput, requires a minimal amount of protein material, and can measure a wide range of Kd values from 10-2 to 10-15 M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of METRIS in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "a1394709-deb5-43ff-833a-310c286147ed",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C19",
+      "claim": "METRIS was inspired by the rolling of biological cells, like neutrophils exhibiting haptotaxis on endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique was initially inspired by the rolling of biological cells, like neutrophils exhibiting haptotaxis on endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the biological inspiration for METRIS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "cc8bbc4b-6bf0-48ca-a893-dbc688ecbbbc",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C20",
+      "claim": "Neutrophil motion is driven by chemical or ligand gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophil motion is driven by chemical or ligand gradients (Voisin and Nourshargh, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "6dc2063e-49fb-48de-a32c-299af36eef35",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C21",
+      "claim": "The PPIs between neutrophils and endothelial cells increase the effective friction between the two cells, allowing rotational motion to be converted into translational displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "The PPIs increase the effective friction between the two cells, allowing the rotational motion to be converted into translational displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical mechanism of neutrophil rolling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "b2cd5131-736b-48e8-a21d-0f25bbec3c85",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C22",
+      "claim": "A higher affinity PPI between the roller and the substrate results in a larger translational displacement of the roller.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a higher affinity PPI between the roller and the substrate will result in a larger translational displacement of the roller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between affinity and displacement in METRIS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "1f72df68-c906-43d4-b773-a27ef2c998ab",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C23",
+      "claim": "METRIS is not dependent on mass action because both the roller and surface have immobilized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both the roller and surface have immobilized proteins, the method is not dependent on mass action and requires approximately 20 pmols to measure PPIs regardless of their strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why METRIS differs from conventional methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "b32991cd-824e-44fa-8dde-478c363fed3f",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C24",
+      "claim": "METRIS requires approximately 20 pmols to measure PPIs regardless of their strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both the roller and surface have immobilized proteins, the method is not dependent on mass action and requires approximately 20 pmols to measure PPIs regardless of their strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "24066197-2bb7-4603-82d6-16c6eb91a0dc",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C25",
+      "claim": "METRIS reproduced well-characterized binding preferences for DIDO1-PHD and ORC1-BAH methyllysine histone reader domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the METRIS assay, we reproduced well-characterized binding preferences for two different methyllysine histone reader domains (Gatchalian et al., 2013; Kuo et al., 2012) and weak interactions between the E2 Ube2D (Buetow et al., 2015) and UBL-domains (DaRosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation result with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "5c4fe67d-8a4b-455c-99e0-c8da4160000d",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C26",
+      "claim": "METRIS measured weak interactions between the E2 Ube2D and UBL-domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the METRIS assay, we reproduced well-characterized binding preferences for two different methyllysine histone reader domains (Gatchalian et al., 2013; Kuo et al., 2012) and weak interactions between the E2 Ube2D (Buetow et al., 2015) and UBL-domains (DaRosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "5d4c19c3-8a14-421a-9ebd-22349ff8ecf1",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C27",
+      "claim": "The affinities measured by METRIS range between 10-4 and 10-6 M for the characterized interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These affinities range between 10-4 and 10-6 M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the range of affinities measured in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "e2419b3b-b6f5-4097-ac20-abba627b401f",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C28",
+      "claim": "METRIS measured the \u0394\u0394Gs for the phospho/methyl switch phenomenon in DIDO1-PHD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were also able to measure several weaker interactions between unmodified histone peptides, which allowed us to measure the \u0394\u0394Gs for the phospho/methyl switch phenomenon in DIDO1-PHD (Andrews et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel result enabled by METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "951c4864-3234-4273-ad23-407f9c4269f0",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C29",
+      "claim": "METRIS measured a weak interdomain interaction between the isolated UHRF1-UBL domain and SRA domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also show that this method can be used to measure a weak interdomain interaction between the isolated UHRF1-UBL domain and SRA domain, which is known to control the E3 ligase specificity and epigenetic DNA methylation inheritance (Foster et al., 2018; DaRosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "06f53a5f-0372-42e1-9098-34ada5c1d6bd",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C30",
+      "claim": "The UHRF1-UBL and SRA domain interaction controls E3 ligase specificity and epigenetic DNA methylation inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also show that this method can be used to measure a weak interdomain interaction between the isolated UHRF1-UBL domain and SRA domain, which is known to control the E3 ligase specificity and epigenetic DNA methylation inheritance (Foster et al., 2018; DaRosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "40ca4355-34ce-442c-9c1a-0ac0b76c3bf6",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C32",
+      "claim": "The permanent magnetic moment of the roller couples with the applied magnetic field, producing a magnetic torque and subsequent rotation of the ferromagnetic bead.",
+      "claim_type": "EXPLICIT",
+      "source": "The permanent magnetic moment of the roller, couples with the applied magnetic field, producing a magnetic torque and subsequent rotation of the ferromagnetic bead (Steimel et al., 2014; Sing et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical mechanism with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "7b2b1daa-9152-42cd-b1a9-b200ef0cdf18",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C34",
+      "claim": "The magnetic field is many orders of magnitude stronger than the strength of noncovalent interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the magnetic field is many orders of magnitude stronger than the strength of noncovalent interactions, in this system the higher the effective friction between the rollers and the surface corresponds to larger translational displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why higher friction leads to more displacement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "ec98f688-1527-4bea-92ad-d74895794619",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C35",
+      "claim": "The effective friction is determined by the strength and density of PPIs between the roller and the coated substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The effective friction is determined by the strength and density of PPIs between the roller and the coated substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes what determines effective friction in METRIS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d74faa52-9e2f-4743-8752-970677d42d86",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C36",
+      "claim": "The rolling parameter (RP) is a dimensionless parameter that varies from 0 to 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The RP is a dimensionless parameter that varies from 0 to 1 where 0 is no translational displacement and one being a sphere perfectly rolling at a single hinge point and translating a distance equivalent to its circumference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the rolling parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "e240bb39-18f1-4f87-8da2-835477215fb5",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C37",
+      "claim": "A rolling parameter of 0 corresponds to no translational displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "The RP is a dimensionless parameter that varies from 0 to 1 where 0 is no translational displacement and one being a sphere perfectly rolling at a single hinge point and translating a distance equivalent to its circumference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the meaning of RP=0.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "5901e8ea-2960-499c-be25-b72a1aa32d7b",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C38",
+      "claim": "A rolling parameter of 1 corresponds to a sphere perfectly rolling at a single hinge point and translating a distance equivalent to its circumference.",
+      "claim_type": "EXPLICIT",
+      "source": "The RP is a dimensionless parameter that varies from 0 to 1 where 0 is no translational displacement and one being a sphere perfectly rolling at a single hinge point and translating a distance equivalent to its circumference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the meaning of RP=1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "db4188b8-0bf5-4923-849c-2e596713656c",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C39",
+      "claim": "Both the rollers and substrate are coated 50\u00d7 the theoretical number of binding sites to ensure virtually all sites are occupied.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in the Materials and methods, both the rollers and substrate are coated 50\u00d7 the theoretical number of binding sites, so virtually all the sites should be occupied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol to ensure saturation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "f6121518-8f89-4a87-9a3c-2161e3198c8f",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C40",
+      "claim": "The average RP on the avidin surface is 0.081 \u00b1 0.004.",
+      "claim_type": "EXPLICIT",
+      "source": "The RPs have a gaussian distribution (Figure 1E) and the average RP on the avidin surface is 0.081 \u00b1 0.004 while on biotin we observed a RP of 0.918 \u00b1 0.002.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured result shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "1fd31be2-6f54-49a5-8b7d-07e4c6d92430",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C41",
+      "claim": "The average RP on the biotin surface is 0.918 \u00b1 0.002.",
+      "claim_type": "EXPLICIT",
+      "source": "The RPs have a gaussian distribution (Figure 1E) and the average RP on the avidin surface is 0.081 \u00b1 0.004 while on biotin we observed a RP of 0.918 \u00b1 0.002.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured result shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "17aef16e-c5f8-4ff3-8750-8e231ec2ec11",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C42",
+      "claim": "The interaction between biotin and streptavidin has a Kd of 10-15 M.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between biotin and streptavidin is reported to be Kd=10-15 M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known value from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "02736fca-f8ba-400b-9a22-ff690e719036",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C43",
+      "claim": "The weakest PPIs measured are in the 10-2 M range.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is impossible to know the true Kd value for a null interaction, the weakest PPI measured are in the 10-2 M range (Yoo et al., 2016) and enzymes with Kd values in the 10\u00b0 M range have been reported (Bar-Even et al., 2011), so we assume that null interaction must be between 10\u00b0 M and the concentration of water 5.5 \u00d7 102M, and we settled on 10\u00b0M as an estimation of the null interaction, which based on our subsequent fitting seems like a suitable assumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "f1b07bc4-b717-4956-9120-bde86f38fdf4",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C44",
+      "claim": "DIDO1 is responsible for interchanging between active and silent chromatin states in embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DIDO1 is responsible for interchanging between active and silent chromatin states in embryonic stem cells, and its chromatin localization is regulated through a phospho/methyl switch, where phosphorylation of H3T3 evicts DIDO1 from chromatin during mitosis (F\u00fctterer et al., 2017; Di Lorenzo and Bedford, 2011; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "5ad4552b-c752-4490-8185-e2ec254a67a3",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C45",
+      "claim": "DIDO1 chromatin localization is regulated through a phospho/methyl switch, where phosphorylation of H3T3 evicts DIDO1 from chromatin during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "DIDO1 is responsible for interchanging between active and silent chromatin states in embryonic stem cells, and its chromatin localization is regulated through a phospho/methyl switch, where phosphorylation of H3T3 evicts DIDO1 from chromatin during mitosis (F\u00fctterer et al., 2017; Di Lorenzo and Bedford, 2011; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "7d232e37-dfae-4139-9154-8151f0faa11f",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C46",
+      "claim": "DIDO1-PHD has a preference for H3K4me3 > H3K4me2 > H3K4me1.",
+      "claim_type": "EXPLICIT",
+      "source": "DIDO1 has a preference for H3K4me3 > H3K4me2 > H3K4me1 (Gatchalian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "0c2bea30-6cca-4fdc-a9b9-afe3c9dcb299",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C48",
+      "claim": "The differences in rolling parameters for DIDO1-PHD interactions are all statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "While the overall change to the RPs is small, these differences are all statistically significant because the data set has good statistical power and small percentage errors (<5%) (Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "360d3905-cd32-4b09-8ca7-ba05f02c3078",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C49",
+      "claim": "The log-log plot of Kd vs. RP showed a linear relationship between the three known DIDO1-PHD binding interactions to the methylated peptides (R2=0.995).",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that the log-log plot of Kd vs. RP showed a linear relationship between the three known DIDO1-PHD binding interactions to the methylated peptides (R2=0.995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "3fe5245e-dc59-499d-b9d5-55ac6bbfa835",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C50",
+      "claim": "There is a linear dependence of the log of the RP to the log of Kd that spans roughly fifteen-orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this experiment suggests that there is a linear dependence of the log of the RP to the log of Kd that spans roughly fifteen-orders of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "dc8a8009-8222-449f-af6b-4521eef8a5fd",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C51",
+      "claim": "For most PPIs, the Kon rates are very similar, and thus the Kd constant is mostly dependent on Koff.",
+      "claim_type": "EXPLICIT",
+      "source": "For most PPIs, the Kon rates are very similar, and thus the Kd constant is mostly dependent on Koff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about PPIs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "5f6fa995-bc0c-40a2-9d8f-e176f99dabc3",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C52",
+      "claim": "METRIS predicted Kd values for DIDO1-PHD were roughly twofold tighter than the published values.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this fitting method, we could reproduce the literature Kd values with high accuracy; all of the predicted Kd values were roughly twofold tighter than the published values (Gatchalian et al., 2013) and the fold difference between the different methylation states is similar (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of METRIS results to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "b9cd7e5e-5c2c-4356-9e92-85ca985e070a",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C53",
+      "claim": "METRIS estimated the Kd for H3T3pK4me3 peptide binding to DIDO1-PHD as 340 \u03bcM \u00b1 90.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we were also able to estimate METRIS-Kd values for the weak interaction between the H3T3pK4me3 peptide (340 \u03bcM \u00b1 90) and the unmodified H3 tail (1200 \u03bcM \u00b1 440).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured result from METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "684669eb-26ea-415b-8d09-fad65963728d",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C54",
+      "claim": "METRIS estimated the Kd for unmodified H3 tail binding to DIDO1-PHD as 1200 \u03bcM \u00b1 440.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we were also able to estimate METRIS-Kd values for the weak interaction between the H3T3pK4me3 peptide (340 \u03bcM \u00b1 90) and the unmodified H3 tail (1200 \u03bcM \u00b1 440).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured result from METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "8b60a62c-1b9c-445d-9926-00b46150fbf7",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C57",
+      "claim": "This is the first energetic analysis of the DIDO1 phospho/methyl switch.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first energetic analysis of the DIDO1 phospho/methyl switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "c97ad40d-d842-430e-8772-6c95e5bee007",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C60",
+      "claim": "DIDO1-PHD has the greatest discrimination between non-methylated H3K4 versus H3K4me1 despite having the highest affinity for H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite the DIDO1-PHD having the highest affinity for H3K4me3, it has the greatest discrimination between non-methylated H3K4 versus H3K4me1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the \u0394\u0394G analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "aca3b938-78c6-4112-bb15-c025ee2697d2",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C61",
+      "claim": "Only 10 \u03bcl of 2 \u03bcM (20 pmol) is required to load the substrate in METRIS.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the significant advantages of the METRIS assay is that only 10 \u03bcl of 2 \u03bcM (20 pmol) is required to load the substrate and less is needed for the rollers, which is significantly less than any conventional method to measure PPI affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reagent requirements of METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "e273229b-4f43-4d91-bee3-0dc45221d935",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C62",
+      "claim": "Histone peptide microarrays require 500 \u03bcl of 0.5 \u03bcM (250 pmol) protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared METRIS to histone peptide microarrays, which is another methodology that can produce binding data with a minimal amount of protein (e.g. 500 \u03bcl of 0.5 \u03bcM [250 pmol] protein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reagent requirements of microarrays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "53c517f4-9c0d-402c-b05e-8185cc1dfb06",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C63",
+      "claim": "For DIDO1-PHD, microarrays could observe a statistically significant difference between H3K4me3 and the other methylation states, but there were no other statistically significant differences.",
+      "claim_type": "EXPLICIT",
+      "source": "For DIDO1-PHD, we could observe a statistically significant difference between H3K4me3 and the other methylation states, but there were no other statistically significant differences (Figure 2F, Figure 2\u2014figure supplement 1B, and Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of microarray results to METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "a879548f-e767-41ad-8c57-0482050c9a7b",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C64",
+      "claim": "METRIS is significantly more sensitive and quantitative than other common methods to measure protein affinities that use comparable amounts of reagents at low concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this result, METRIS is significantly more sensitive and quantitative than other common methods to measure protein affinities that use comparable amounts of reagents at low concentrations (i.e. ELISA and microarrays).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the comparison with microarrays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "12ff277c-8c89-4147-bb83-3ac8abc20626",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C65",
+      "claim": "ORC1 functions in licensing origins of replication by discriminating H4K20me2 from H4K20me1 and H4K20me3.",
+      "claim_type": "EXPLICIT",
+      "source": "ORC1 functions in licensing origins of replication by discriminating H4K20me2 from H4K20me1, a PTM on active chromatin, and H4K20me3 a repressive PTM (Bicknell et al., 2011a; Bicknell et al., 2011b; Kuo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "11367bc4-1563-4eea-aa16-1b1fb5acb63e",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C70",
+      "claim": "METRIS measured binding of ORC1-BAH to unmodified H4, which has previously not been detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the METRIS assay, we could also measure binding to the unmodified H4, which has previously not been detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "1f660a55-53c8-4d03-823c-8841556c435e",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C71",
+      "claim": "H4 unmodified binding to ORC1-BAH was measured to be 44-fold weaker than H4K20me2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "H4 unmodified binding was measured to be 44-fold weaker than H4K20me2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured result from METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "468737d2-cfde-4dd2-9f28-871477d5ec59",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C76",
+      "claim": "For ORC1-BAH microarrays, the only statistically significant difference is between H4K20me2 and the other peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The only statistically significant difference is between H4K20me2 and the other peptides (Figure 3F and Figure 3\u2014figure supplement 1B), although the trends do match the literature and METRIS values, including the signal for the unmodified peptide when compared to the other peptides on the array, which support our findings with METRIS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of microarray results to METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "7c93ef96-8ffa-44cc-8ae9-15c40bb76214",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C77",
+      "claim": "METRIS is a single particle method and the RP measurements are taken 36 times for each particle, giving it high statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights another advantage of METRIS assay, since it is a single particle method and the RP measurements are taken 36 times for each particle, this method has high statistical power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why METRIS has high statistical power.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "6a29a17a-344d-4b7e-96de-09a200d4062d",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C78",
+      "claim": "The E2 Ube2D1 binds to ubiquitin noncovalently with an affinity of 206 \u00b1 6 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the E2 Ube2D1 binds to ubiquitin noncovalently with an affinity of 206 \u00b1 6 and we have shown that a ubiquitin-like domain (UBL) on the E3 UHRF1 can bind with higher affinity (15 \u00b1 1 \u03bcM with NMR or 29.0\u03bcM \u00b11 with ITC) (DaRosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "0291366d-f4b3-43c1-894e-d8be466cccb0",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C79",
+      "claim": "The UHRF1-UBL domain binds to Ube2D1 with an affinity of 15 \u00b1 1 \u03bcM with NMR or 29.0 \u03bcM \u00b11 with ITC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the E2 Ube2D1 binds to ubiquitin noncovalently with an affinity of 206 \u00b1 6 and we have shown that a ubiquitin-like domain (UBL) on the E3 UHRF1 can bind with higher affinity (15 \u00b1 1 \u03bcM with NMR or 29.0\u03bcM \u00b11 with ITC) (DaRosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "b37dcf0f-62f0-4f1d-aa31-1df37ca52123",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C82",
+      "claim": "METRIS can measure and distinguish interactions in the 10-4 M range without utilizing highly concentrated protein solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore we have demonstrated that METRIS can measure and distinguish interactions in the 10-4 M range without utilizing highly concentrated protein solutions, providing a simple method to measure weak interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about METRIS capabilities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "376221b5-8c8c-4c0e-a2e1-e65f07de9664",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C83",
+      "claim": "Previous studies provided evidence for an interaction between the UHRF1-UBL and the UHRF1-SRA domain, which is required for ubiquitylation of histone H3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the role of UHRF1 in controlling DNA methylation requires interactions between its domains (Harrison et al., 2016a; Gao et al., 2018; Gelato et al., 2014), and specifically, our previous study provided evidence for an interaction between the UHRF1-UBL and the UHRF1-SRA domain, which is required for ubiquitylation of histone H3 (DaRosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "fd067cb4-ff82-441a-aa45-32733b0074ef",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C84",
+      "claim": "For the SRA-UBL interaction, METRIS measured an RP of 0.119 \u00b1 0.004, significantly higher than 0.081 for an unmodified surface and 0.085 for ubiquitin on the roller.",
+      "claim_type": "EXPLICIT",
+      "source": "For the SRA-UBL interaction, we measured an RP of 0.119 \u00b1 0.004 for the particles, significantly higher than the 0.081 for an unmodified surface and the 0.085 we obtain with ubiquitin on the roller (Figure 4A and Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured result shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "5d40b3f6-52d3-45fe-b2e0-1e7de3f5dabd",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C85",
+      "claim": "This represents the first direct measurement of the interaction between the SRA and UBL domains of UHRF1.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents the first direct measurement of the interaction between the SRA and UBL domains of UHRF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "2ea93287-8791-4bd0-8ce4-1f0b9114e736",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C86",
+      "claim": "The W2V mutation to the UBL had a significantly reduced RP to 0.098 \u00b1 0.002.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested a mutation to the UBL (W2V) that previous biochemical assays suggested is critical for the interaction (DaRosa et al., 2018; Foster et al., 2018), and W2V had a significantly reduced RP to 0.098 \u00b1 0.002 (Figure 4A, Figure 4B, and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured result shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "388e438d-09a9-4c6c-8cef-b15c878ce599",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C91",
+      "claim": "The METRIS-Kd values were less accurate with the global fit than with individual fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the METRIS-Kd values were less accurate than with the individual fitting and we could not discriminate between similar strength binders in different sets of PPIs (e.g. between DIDO1 and ORC1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of fitting methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "82818c31-0d4c-46de-8384-c7450f458dc7",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C92",
+      "claim": "RP values obtained for different types of PPIs cannot be directly compared.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicating that we cannot directly compare RP values obtained for different types of PPIs and that there is likely some structural difference in each system that is not yet accounted for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the global fit analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "9e709ce1-b0dd-49d1-8ab3-b7399596e632",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C93",
+      "claim": "There is likely some structural difference in each system that is not yet accounted for in the METRIS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicating that we cannot directly compare RP values obtained for different types of PPIs and that there is likely some structural difference in each system that is not yet accounted for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about limitations of the current model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "e6523950-1ecd-4e0a-b970-8bb8e7b266ed",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C95",
+      "claim": "METRIS measures the effective mechanical friction induced by PPIs, which is fundamentally different than current methodologies.",
+      "claim_type": "EXPLICIT",
+      "source": "METRIS, which measures the effective mechanical friction induced by PPIs, is fundamentally different than current methodologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key distinction of METRIS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "fd987a94-d7a4-4564-ac0f-a0951a3daa4b",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C96",
+      "claim": "METRIS can be advantageous to other approaches when measuring weak interactions because both binding partners are immobilized.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that METRIS can be advantageous to other approaches when measuring weak interactions, since both binding partners are immobilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of METRIS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "ba5c04ac-d45a-48ca-a1f5-c5e9651d683f",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C97",
+      "claim": "METRIS uses a very low concentration of proteins while maintaining high precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, METRIS uses a very low concentration of proteins while maintaining high precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "82c213ab-31af-4d5f-aaa3-55178a1866dc",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C99",
+      "claim": "\u0394\u0394G values provide a quantitative measure for the interplay between concurrent PTMs, a central premise of the epigenetic code.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are significant because they provide a quantitative measure for the interplay between concurrent PTMs, a central premise of the epigenetic code (Rothbart and Strahl, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "304d2562-c41e-4a80-8f5c-455d8db8e8c0",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C100",
+      "claim": "Interdomain interactions can be difficult to quantify without very resource-intensive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These types of interactions can be difficult to quantify without very resource-intensive processes, and limitations with the proteins themselves (yield or solubility) may make these interactions unmeasurable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a challenge in studying interdomain interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "ed803345-93e9-4fe5-bf0d-11cf84955efe",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C101",
+      "claim": "Pulldown assays, chemical crosslinking, and proximity ligation are qualitative, rarely produce quantitative data, and require mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, pulldown assays, chemical crosslinking, and proximity ligation are qualitative, rarely produce quantitative data, and require mass spectrometry (Richards et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "4c222f26-f789-4a6e-91da-3d97b06fc9aa",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C102",
+      "claim": "METRIS estimated the Kd for the UHRF1-UBL and SRA domain interaction to be 60 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have measured a direct interaction between the UHRF1-UBL and SRA domains that we estimate to have a Kd 60\u03bcM (Figure 5B), however, the biological context for this interaction is between two tethered domains, so an absolute value is only partially relevant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured result shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "aebcae6e-4516-4c55-818e-f75b3df0e26a",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C104",
+      "claim": "METRIS will provide additional new data to the field of protein biochemistry and could aid in the parametrization of computational binding score functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, METRIS will provide additional new data to the field of protein biochemistry and could aid in the parametrization of computational binding score functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of METRIS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "0d2a1c12-850a-43d8-98fc-3f84d1084700",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C105",
+      "claim": "To translate, there must be sufficient magnetic torque applied to the rollers such that the PPI or other interactions between the roller and the substrate can be broken as they translate across the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "To translate, there must be sufficient magnetic torque applied to the rollers such that the PPI or other interactions between the roller and the substrate can be broken as they translate across the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical mechanism of METRIS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "777b0624-f7a0-41c5-bf6c-a964aee4517f",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C106",
+      "claim": "Force spectroscopy methods have measured the force of the biotin-streptavidin interaction to be 160pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using force spectroscopy methods have measured the force of the biotin-streptavidin interaction to be 160pN (Florin et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "ae09eb5f-403f-43bd-abdc-233bee34219b",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C107",
+      "claim": "The effective friction is due to intermolecular forces, but currently there is no model for how to relate the force directly to the rolling.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the effective friction is due to these intermolecular forces, but currently we do not have a model for how to relate the force directly to the rolling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current understanding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "1d8f49a1-b353-4bac-a4d2-0d4bf5435d26",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C108",
+      "claim": "The rolling parameter is not inherently dependent on the protein concentration, so long as the rollers and surface are saturated.",
+      "claim_type": "EXPLICIT",
+      "source": "Several factors likely contribute to this robustness: (1) the rolling parameter is not inherently dependent on the protein concentration, so long as the rollers and surface are saturated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why METRIS is robust.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "1df36982-c2d7-4255-bc1c-58fc3b89998a",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C109",
+      "claim": "The measurements have high statistical power (\u224810 particles each with 36 RP measurements) and very low percentage error.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The measurements have high statistical power (\u224810 particles each with 36 RP measurements) and very low percentage error, given the high accuracy of the measurement and low uncertainty of many of the variables in the rolling parameter calculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why METRIS has high statistical power.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "eafe6a30-a51b-4656-a880-48ce5099569b",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C110",
+      "claim": "Multiple interactions between the bead and the surface amplify the friction, which may be necessary to measure weak interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Multiple interactions between the bead and the surface amplify the friction, which may be necessary to measure weak interactions, and likely limits the impacts of inactive proteins on the roller and substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of METRIS.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "c7b04c9b-9fe1-4eca-8a7d-bc73699ff645",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C111",
+      "claim": "METRIS has limitations, such as the reliance on literature values for extrapolating and scaling the METRIS-Kd and the need to biotinylate the binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, METRIS does have limitations, such as the reliance on literature values for extrapolating and scaling the METRIS-Kd and the need to biotinylate the binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as limitations of METRIS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "23719916-4523-4023-8a3f-787a9453f333",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C112",
+      "claim": "With future development, a better mathematical model will be derived that describes the relationship between protein affinity and rolling parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision with future development, we will derive a better mathematical model that describes the relationship between protein affinity and rolling parameter as many factors will contribute to the friction, such as the number of interactions per bead or the size of the protein interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future improvements to METRIS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d8c75f88-35ee-467c-a612-f95db1795b69",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C113",
+      "claim": "METRIS is expected to be of great use to researchers studying PPIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these limitations, we expect that METRIS will be of great use to researchers studying PPIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the future impact of METRIS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "0c838bbf-2b19-4802-82a0-45b13f3b9a61",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C114",
+      "claim": "The streptavidin-coated ferromagnetic particles have a nominal diameter of 10 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The streptavidin-coated ferromagnetic particles, provided by Spherotech with a nominal diameter of 10 \u03bcm, are composed of a core of polystyrene and CrO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials used in METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "c66d7cd9-7ee5-44a7-be97-19ae5a3af476",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C115",
+      "claim": "The density of biotin binding sites per roller is on the order of 6 \u00d7 10^8 biotin molecules per roller.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of biotin binding sites per roller is on the order of 6 \u00d7 108 biotin molecules per roller which corresponds to a density of biotin binding sites on the order of 5 \u00d7 1010 binding sites per mm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surface density of binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "fb8cfe25-6408-4f45-81d5-64ddc2dedfbb",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C116",
+      "claim": "The substrates are avidin-coated glass slides with a ligand density of 1.1 \u00d7 10^10 ligands per mm^2.",
+      "claim_type": "EXPLICIT",
+      "source": "The substrates are avidin-coated glass slides, provided by Arrayit, with a ligand density of 1.1 \u00d7 1010 ligands per mm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials used in METRIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "0228e4fd-7cc1-4283-bb7c-db1e00097cfe",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C118",
+      "claim": "The ferromagnetic particles exhibit a magnetic moment (m) on the order of 10^-11 Am^2.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned, the magnetic field strength (B) Is approximately 10mT and the ferromagnetic particles exhibit a magnetic moment (m) on the order of 10-11 Am2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the properties of the ferromagnetic particles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "a6c7c8e5-f4f0-4da2-8d68-c4b660cca5e8",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C120",
+      "claim": "The recorded images have a resolution of approximately 1 \u03bcm per pixel.",
+      "claim_type": "EXPLICIT",
+      "source": "The recorded images have a resolution of approximately 1 \u03bcm per pixel, and our image analysis software has subpixel resolution so we can measure differences in displacement on the order of 0.1 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement precision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "3f3d79df-7085-4a0c-93af-6fb82b606211",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C121",
+      "claim": "The image analysis software has subpixel resolution so differences in displacement on the order of 0.1 \u03bcm can be measured.",
+      "claim_type": "EXPLICIT",
+      "source": "The recorded images have a resolution of approximately 1 \u03bcm per pixel, and our image analysis software has subpixel resolution so we can measure differences in displacement on the order of 0.1 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement precision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "48810aae-5330-466f-b679-5a27cf50bbbe",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C122",
+      "claim": "All experiments for METRIS measured at least 10 different rollers that were rolled 36 times.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments for METRIS measured at least 10 different rollers that were rolled 36 times and all array data consist of at least three replicates, and averages with standard deviation are shown in the tables for each figure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "a7cb52ba-617f-4586-ac67-84400999b7dc",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "claim_id": "C123",
+      "claim": "All statistical analyses were done using the Student's T-Test (unpaired, two-tailed distribution).",
+      "claim_type": "EXPLICIT",
+      "source": "All statistical analyses were done by using the Student's T-Test (unpaired, two-tailed distribution) using Graphpad Prism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Conventional methods for measuring protein-protein interactions have significant limitations including reliance on mass action, requirement for high protein concentrations, and inability to measure weak interactions effectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C11-C17 collectively establish well-documented limitations of existing PPI measurement techniques through citations and general knowledge. These claims accurately describe constraints of methods like NMR, SPR, BLI, and others, providing appropriate context for the need for METRIS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "97cd22e7-a11c-4e75-8be9-6078746eef43",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "METRIS is a novel method that measures PPI affinity by converting rotational motion of magnetic particles into translational displacement, with displacement scaling with effective friction induced by PPIs. The method is not dependent on mass action and requires only ~20 pmols of reagent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C19-C24, C32-C35, and C95-C96 describe the fundamental principle and advantages of METRIS with internal consistency. The biological inspiration (neutrophil rolling) and physical mechanism (magnetic torque converting rotation to translation via friction) are clearly articulated. However, C107 acknowledges lack of a theoretical model relating force to rolling, indicating the mechanism is empirically rather than theoretically grounded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d038ac09-6b48-4693-89e5-9effa2d65cf0",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The rolling parameter (RP) is defined as a dimensionless metric (0-1) calculated from translational displacement normalized by theoretical maximum displacement. METRIS achieves high measurement precision with subpixel resolution (~0.1 \u03bcm) and uses streptavidin-coated 10 \u03bcm ferromagnetic beads on avidin-coated substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43 and C114-C123 provide clear operational definitions and technical specifications. The RP metric is well-defined mathematically, calibration points are established (avidin-streptavidin as null, biotin-streptavidin as strong binding), and experimental parameters are specified. Statistical methods and sample sizes are appropriate (\u226510 particles, 36 measurements each).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "METRIS successfully measured DIDO1-PHD binding to H3K4 methylation states, reproducing known preferences (H3K4me3 > me2 > me1) and additionally measuring weak interactions with unmodified H3 and H3T3pK4me3. A log-log linear relationship (R\u00b2=0.995) between RP and Kd was observed spanning 15 orders of magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C54 demonstrate successful validation against known interactions with appropriate statistical significance (C48). The linear log-log relationship (C49-C50) provides an empirical calibration, though METRIS-Kd values were ~2-fold tighter than published values (C52). Novel measurements of weak interactions (C53-C54) represent new data, and the \u0394\u0394G analysis (C57, C60) provides quantitative energetic insights into the phospho/methyl switch.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "METRIS requires significantly less protein (20 pmol) compared to microarrays (250 pmol) and demonstrates superior sensitivity and quantitative resolution. The method has high statistical power due to single-particle measurements with 36 RP measurements per particle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 and C77 provide direct experimental comparison showing METRIS can distinguish interactions that microarrays cannot resolve statistically. The advantage stems from high statistical power (C109) with multiple measurements per particle and low percentage error (<5%). This represents a clear technical advantage over comparable low-reagent methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d7dc3802-c447-40ce-a674-3c6f34200f00",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "METRIS measured ORC1-BAH binding preferences for H4K20 methylation states, reproducing known preferences (H4K20me2 > me1 > me3) and detecting previously unmeasured binding to unmodified H4 (44-fold weaker than H4K20me2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 demonstrate successful validation with a second protein system. The measured preferences match literature values, and detection of unmodified H4 binding (C70-C71) represents novel data. Comparison with microarrays (C76) again shows superior resolution. This provides independent validation of the METRIS approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "METRIS measured weak interactions between ubiquitin/UBL domains and Ube2D1 in the 10\u207b\u2074 M range, and provided the first direct measurement of the UHRF1 UBL-SRA interdomain interaction. The W2V mutation significantly reduced binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 establish literature values for comparison. C82-C86 demonstrate METRIS can measure weak interactions (100-200 \u03bcM range) and interdomain interactions. The SRA-UBL measurement (C84-C85) represents novel data, and the W2V mutation effect (C86) validates the interaction specificity. METRIS-Kd values were 5-fold weaker than published but maintained correct fold-differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "d507e5a3-5caa-4c8e-8b5e-16af67377df8",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "METRIS has limitations including inability to directly compare RP values across different PPI types, reliance on literature values for Kd calibration, and requirement for protein biotinylation. Global fitting was less accurate than individual fitting for each protein system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 and C111 honestly acknowledge methodological limitations. The inability to use a single global calibration (C91-C92) indicates system-specific factors affect the RP-Kd relationship. The need for scaling factors and literature values (C111) limits absolute Kd determination. These are appropriately recognized constraints that do not invalidate the method's utility for relative measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "f14c1348-56fd-4637-a435-0a3477705d15",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "METRIS can measure Kd values ranging from 10\u207b\u00b2 to 10\u207b\u00b9\u2075 M using as little as 20 pmols of reagent with high resolution and sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C18 claims a 10\u207b\u00b2 to 10\u207b\u00b9\u2075 M range, the actual experimental data spans from ~10\u207b\u2074 M (weak interactions) to 10\u207b\u00b9\u2075 M (biotin-streptavidin). The 10\u207b\u00b2 M endpoint is based on assumptions about null interactions (C43) rather than direct measurement. The claimed range may be overstated, though the method clearly covers a wide dynamic range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "45f820e6-59d3-4ea1-a183-5c3dbb7ea459",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "METRIS reproduced well-characterized binding preferences for DIDO1-PHD and ORC1-BAH reader domains, measured weak E2-UBL interactions (10\u207b\u2074 to 10\u207b\u2076 M range), quantified \u0394\u0394Gs for the DIDO1 phospho/methyl switch, and measured the UHRF1 UBL-SRA interdomain interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 summarize the main experimental validations. These are supported by detailed results in subsequent claims and figures. The validation strategy appropriately uses known interactions to establish method validity before measuring novel interactions. Citations support the characterization of known interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "f64fbf67-afdd-42c9-a964-0bedaf79c584",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "METRIS enables quantitative \u0394\u0394G measurements for PTM interplay (central to the epigenetic code) and can measure difficult interdomain interactions. The method could aid computational binding score function parametrization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 establish the biological significance of the measurements enabled by METRIS. The ability to measure \u0394\u0394G values for weak interactions and interdomain contacts addresses recognized gaps (C100-C101). C104 is speculative about future applications but reasonable given the data generated. The UHRF1 UBL-SRA Kd estimate of 60 \u03bcM (C102) is acknowledged as having limited biological relevance for tethered domains.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "46feeaa6-65e0-4d22-91f8-6172fd7492a6",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "METRIS robustness derives from independence of protein concentration (at saturation), high statistical power, and amplification through multiple bead-surface interactions. Future development aims to derive better mathematical models relating affinity to rolling parameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C110 provide reasonable explanations for method robustness, though some are speculative (C110). C108 correctly identifies that RP is independent of concentration at saturation, a key advantage. C112-C113 acknowledge need for better theoretical understanding while maintaining the method's current utility. The lack of a mechanistic model (C107) is a limitation but doesn't invalidate the empirical approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    },
+    {
+      "id": "64d64f6b-13a2-4bbe-b2e1-9d5e893ff056",
+      "content_id": "ebe03ccf-f87f-468d-b9f4-f3fa36c8f401",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Low-affinity interactions are commonly leveraged in biological systems including multivalent recognition, epigenetic PTM interplay, and allosteric regulation through weak interdomain interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 establish biological context through appropriate citations. These are well-established concepts in the field that motivate the need for methods to measure weak interactions. The claims accurately represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:49:26.118238Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5fdf3853-8692-49c9-b441-5bc9252372a1",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "41b16fb0-efb4-447a-b4e2-b195a4ae4b79",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "dd773ec1-10a5-478a-81ed-a54133211cff",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "0f65e709-7355-4d6e-be7c-5d003627606c",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "d4d76d53-9ef1-4f6a-991b-81c681273169",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "d0d6cb7d-0fc8-4eef-950e-5d406971e7ab",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "530403fe-9299-4421-ae07-4be72593801c",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "6075bcc4-a1c3-48a5-95f3-2446e0704da6",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "d0bf237a-ca19-483c-b738-f1e8d898872b",
+      "result_id": "7a9e1d4f-8af9-4c2e-907a-0ca45ef1495a"
+    },
+    {
+      "claim_id": "a57d76ab-e635-4936-ad99-dd5a6f29ceda",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "89a38aef-ef9d-40a9-b1be-acaf9c047d93",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "8b4b7a5c-1f52-4c71-8288-0390ac9198e1",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "a1394709-deb5-43ff-833a-310c286147ed",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "cc8bbc4b-6bf0-48ca-a893-dbc688ecbbbc",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "6dc2063e-49fb-48de-a32c-299af36eef35",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "b2cd5131-736b-48e8-a21d-0f25bbec3c85",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "1f72df68-c906-43d4-b773-a27ef2c998ab",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "b32991cd-824e-44fa-8dde-478c363fed3f",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "40ca4355-34ce-442c-9c1a-0ac0b76c3bf6",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "7b2b1daa-9152-42cd-b1a9-b200ef0cdf18",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "ec98f688-1527-4bea-92ad-d74895794619",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "e6523950-1ecd-4e0a-b970-8bb8e7b266ed",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "fd987a94-d7a4-4564-ac0f-a0951a3daa4b",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "0d2a1c12-850a-43d8-98fc-3f84d1084700",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "ae09eb5f-403f-43bd-abdc-233bee34219b",
+      "result_id": "97cd22e7-a11c-4e75-8be9-6078746eef43"
+    },
+    {
+      "claim_id": "d74faa52-9e2f-4743-8752-970677d42d86",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "e240bb39-18f1-4f87-8da2-835477215fb5",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "5901e8ea-2960-499c-be25-b72a1aa32d7b",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "db4188b8-0bf5-4923-849c-2e596713656c",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "f6121518-8f89-4a87-9a3c-2161e3198c8f",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "1fd31be2-6f54-49a5-8b7d-07e4c6d92430",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "17aef16e-c5f8-4ff3-8750-8e231ec2ec11",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "02736fca-f8ba-400b-9a22-ff690e719036",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "0c838bbf-2b19-4802-82a0-45b13f3b9a61",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "c66d7cd9-7ee5-44a7-be97-19ae5a3af476",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "fb8cfe25-6408-4f45-81d5-64ddc2dedfbb",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "0228e4fd-7cc1-4283-bb7c-db1e00097cfe",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "a6c7c8e5-f4f0-4da2-8d68-c4b660cca5e8",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "3f3d79df-7085-4a0c-93af-6fb82b606211",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "48810aae-5330-466f-b679-5a27cf50bbbe",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "a7cb52ba-617f-4586-ac67-84400999b7dc",
+      "result_id": "d038ac09-6b48-4693-89e5-9effa2d65cf0"
+    },
+    {
+      "claim_id": "f1b07bc4-b717-4956-9120-bde86f38fdf4",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "5ad4552b-c752-4490-8185-e2ec254a67a3",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "7d232e37-dfae-4139-9154-8151f0faa11f",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "0c2bea30-6cca-4fdc-a9b9-afe3c9dcb299",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "360d3905-cd32-4b09-8ca7-ba05f02c3078",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "3fe5245e-dc59-499d-b9d5-55ac6bbfa835",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "dc8a8009-8222-449f-af6b-4521eef8a5fd",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "5f6fa995-bc0c-40a2-9d8f-e176f99dabc3",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "b9cd7e5e-5c2c-4356-9e92-85ca985e070a",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "684669eb-26ea-415b-8d09-fad65963728d",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "8b60a62c-1b9c-445d-9926-00b46150fbf7",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "c97ad40d-d842-430e-8772-6c95e5bee007",
+      "result_id": "9df3dc71-fdcf-4197-8a7e-6c537c99d93e"
+    },
+    {
+      "claim_id": "aca3b938-78c6-4112-bb15-c025ee2697d2",
+      "result_id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6"
+    },
+    {
+      "claim_id": "e273229b-4f43-4d91-bee3-0dc45221d935",
+      "result_id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6"
+    },
+    {
+      "claim_id": "53c517f4-9c0d-402c-b05e-8185cc1dfb06",
+      "result_id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6"
+    },
+    {
+      "claim_id": "a879548f-e767-41ad-8c57-0482050c9a7b",
+      "result_id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6"
+    },
+    {
+      "claim_id": "7c93ef96-8ffa-44cc-8ae9-15c40bb76214",
+      "result_id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6"
+    },
+    {
+      "claim_id": "ba5c04ac-d45a-48ca-a1f5-c5e9651d683f",
+      "result_id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6"
+    },
+    {
+      "claim_id": "1df36982-c2d7-4255-bc1c-58fc3b89998a",
+      "result_id": "f2df6b7d-8cd1-4b38-bccf-54d07bd036d6"
+    },
+    {
+      "claim_id": "12ff277c-8c89-4147-bb83-3ac8abc20626",
+      "result_id": "d7dc3802-c447-40ce-a674-3c6f34200f00"
+    },
+    {
+      "claim_id": "11367bc4-1563-4eea-aa16-1b1fb5acb63e",
+      "result_id": "d7dc3802-c447-40ce-a674-3c6f34200f00"
+    },
+    {
+      "claim_id": "1f660a55-53c8-4d03-823c-8841556c435e",
+      "result_id": "d7dc3802-c447-40ce-a674-3c6f34200f00"
+    },
+    {
+      "claim_id": "468737d2-cfde-4dd2-9f28-871477d5ec59",
+      "result_id": "d7dc3802-c447-40ce-a674-3c6f34200f00"
+    },
+    {
+      "claim_id": "6a29a17a-344d-4b7e-96de-09a200d4062d",
+      "result_id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a"
+    },
+    {
+      "claim_id": "0291366d-f4b3-43c1-894e-d8be466cccb0",
+      "result_id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a"
+    },
+    {
+      "claim_id": "b37dcf0f-62f0-4f1d-aa31-1df37ca52123",
+      "result_id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a"
+    },
+    {
+      "claim_id": "376221b5-8c8c-4c0e-a2e1-e65f07de9664",
+      "result_id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a"
+    },
+    {
+      "claim_id": "fd067cb4-ff82-441a-aa45-32733b0074ef",
+      "result_id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a"
+    },
+    {
+      "claim_id": "5d40b3f6-52d3-45fe-b2e0-1e7de3f5dabd",
+      "result_id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a"
+    },
+    {
+      "claim_id": "2ea93287-8791-4bd0-8ce4-1f0b9114e736",
+      "result_id": "da7bd22f-5dfb-42ff-a801-7661eadb7a5a"
+    },
+    {
+      "claim_id": "388e438d-09a9-4c6c-8cef-b15c878ce599",
+      "result_id": "d507e5a3-5caa-4c8e-8b5e-16af67377df8"
+    },
+    {
+      "claim_id": "82818c31-0d4c-46de-8384-c7450f458dc7",
+      "result_id": "d507e5a3-5caa-4c8e-8b5e-16af67377df8"
+    },
+    {
+      "claim_id": "9e709ce1-b0dd-49d1-8ab3-b7399596e632",
+      "result_id": "d507e5a3-5caa-4c8e-8b5e-16af67377df8"
+    },
+    {
+      "claim_id": "c7b04c9b-9fe1-4eca-8a7d-bc73699ff645",
+      "result_id": "d507e5a3-5caa-4c8e-8b5e-16af67377df8"
+    },
+    {
+      "claim_id": "f2b59150-91ac-4cd0-8a36-0fbe5438099a",
+      "result_id": "f14c1348-56fd-4637-a435-0a3477705d15"
+    },
+    {
+      "claim_id": "40499a77-1745-4768-bd2f-6a8e2ab24afa",
+      "result_id": "f14c1348-56fd-4637-a435-0a3477705d15"
+    },
+    {
+      "claim_id": "72f4b3a3-730a-418f-96a4-f28f4c939a92",
+      "result_id": "f14c1348-56fd-4637-a435-0a3477705d15"
+    },
+    {
+      "claim_id": "24066197-2bb7-4603-82d6-16c6eb91a0dc",
+      "result_id": "45f820e6-59d3-4ea1-a183-5c3dbb7ea459"
+    },
+    {
+      "claim_id": "5c4fe67d-8a4b-455c-99e0-c8da4160000d",
+      "result_id": "45f820e6-59d3-4ea1-a183-5c3dbb7ea459"
+    },
+    {
+      "claim_id": "5d4c19c3-8a14-421a-9ebd-22349ff8ecf1",
+      "result_id": "45f820e6-59d3-4ea1-a183-5c3dbb7ea459"
+    },
+    {
+      "claim_id": "e2419b3b-b6f5-4097-ac20-abba627b401f",
+      "result_id": "45f820e6-59d3-4ea1-a183-5c3dbb7ea459"
+    },
+    {
+      "claim_id": "951c4864-3234-4273-ad23-407f9c4269f0",
+      "result_id": "45f820e6-59d3-4ea1-a183-5c3dbb7ea459"
+    },
+    {
+      "claim_id": "06f53a5f-0372-42e1-9098-34ada5c1d6bd",
+      "result_id": "45f820e6-59d3-4ea1-a183-5c3dbb7ea459"
+    },
+    {
+      "claim_id": "82c213ab-31af-4d5f-aaa3-55178a1866dc",
+      "result_id": "f64fbf67-afdd-42c9-a964-0bedaf79c584"
+    },
+    {
+      "claim_id": "304d2562-c41e-4a80-8f5c-455d8db8e8c0",
+      "result_id": "f64fbf67-afdd-42c9-a964-0bedaf79c584"
+    },
+    {
+      "claim_id": "ed803345-93e9-4fe5-bf0d-11cf84955efe",
+      "result_id": "f64fbf67-afdd-42c9-a964-0bedaf79c584"
+    },
+    {
+      "claim_id": "4c222f26-f789-4a6e-91da-3d97b06fc9aa",
+      "result_id": "f64fbf67-afdd-42c9-a964-0bedaf79c584"
+    },
+    {
+      "claim_id": "aebcae6e-4516-4c55-818e-f75b3df0e26a",
+      "result_id": "f64fbf67-afdd-42c9-a964-0bedaf79c584"
+    },
+    {
+      "claim_id": "777b0624-f7a0-41c5-bf6c-a964aee4517f",
+      "result_id": "46feeaa6-65e0-4d22-91f8-6172fd7492a6"
+    },
+    {
+      "claim_id": "1d8f49a1-b353-4bac-a4d2-0d4bf5435d26",
+      "result_id": "46feeaa6-65e0-4d22-91f8-6172fd7492a6"
+    },
+    {
+      "claim_id": "eafe6a30-a51b-4656-a880-48ce5099569b",
+      "result_id": "46feeaa6-65e0-4d22-91f8-6172fd7492a6"
+    },
+    {
+      "claim_id": "23719916-4523-4023-8a3f-787a9453f333",
+      "result_id": "46feeaa6-65e0-4d22-91f8-6172fd7492a6"
+    },
+    {
+      "claim_id": "d8c75f88-35ee-467c-a612-f95db1795b69",
+      "result_id": "46feeaa6-65e0-4d22-91f8-6172fd7492a6"
+    },
+    {
+      "claim_id": "cde5889d-6d7d-4750-a475-72a740b38584",
+      "result_id": "64d64f6b-13a2-4bbe-b2e1-9d5e893ff056"
+    },
+    {
+      "claim_id": "c1c26d99-0051-4c74-81d8-a028c5a2161f",
+      "result_id": "64d64f6b-13a2-4bbe-b2e1-9d5e893ff056"
+    },
+    {
+      "claim_id": "79788f92-64fe-4ffb-984c-d61f311106c5",
+      "result_id": "64d64f6b-13a2-4bbe-b2e1-9d5e893ff056"
+    }
+  ],
+  "comparisons": []
+}

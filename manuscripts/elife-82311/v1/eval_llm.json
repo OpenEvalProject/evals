@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C99",
+      "C100"
+    ],
+    "result": "Intermittent fasting (IF) induces rapid, transient, and spatially-restricted hepatocyte proliferation. Ki67 staining shows a 2-fold increase in total proliferating hepatocytes at 1 week IF compared to ad libitum (AL) feeding, with a 120% increase specifically in pericentral hepatocytes. This proliferation returns to baseline by 3 weeks. Multiple lineage tracing systems (Rosa26-Confetti and Axin2-rtTA; TetO-H2BGFP) confirm pericentral hepatocyte expansion during IF. Single-cell RNA sequencing shows the proportion of pericentral hepatocytes doubles from ~9% in AL to ~20% in IF-treated animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C33, C99-C100 provide converging evidence from multiple independent methods (Ki67 immunofluorescence, two different lineage tracing systems, and scRNA-seq) all demonstrating IF-induced pericentral hepatocyte proliferation. The quantitative data are consistent across methods, with appropriate statistical analyses (N=3-5, one-way ANOVA). The temporal dynamics (transient at 1 week, returning to baseline by 3 weeks) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "Endocrine FGF15-\u03b2-KLOTHO signaling is required for IF-induced pericentral hepatocyte proliferation. Upon re-feeding during IF, intestinal Fgf15 expression peaks within 30 minutes, and downstream FGF pathway components (KLB, PHOSPHO-TYROSINE, PHOSPHO-C-JUN) are elevated and concentrated in the pericentral region. Genetic deletion of Klb reduces pericentral hepatocyte expansion by 53% during IF without affecting WNT target gene expression or ploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C49 demonstrate the functional requirement for FGF15-KLB signaling through temporal kinetics (qPCR), spatial localization (immunofluorescence), and genetic loss-of-function experiments. The Klb knockout shows a specific 53% reduction in pericentral proliferation (C45) without affecting WNT signaling (C46) or ploidy (C48), establishing pathway specificity. The data are quantitative with appropriate controls and statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C101"
+    ],
+    "result": "WNT signaling and the WNT target gene Tbx3 are required for IF-induced pericentral hepatocyte division. Ectopic WNT activation (via Apc deletion) in midlobular/periportal hepatocytes enables clonal expansion under IF but not AL conditions. Loss of Tbx3 reduces pericentral hepatocyte expansion by 51% and increases nuclear ploidy, indicating cells undergo endoreplication rather than division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55, C101 provide genetic gain-of-function (Apc deletion) and loss-of-function (Tbx3 deletion) evidence for WNT/TBX3 requirement. The Apc deletion experiment elegantly shows WNT is permissive but not sufficient (requires IF signal). The Tbx3 knockout phenotype (reduced division, increased ploidy) is consistent with a role in completing mitosis. Data include appropriate quantification and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "FGF15 and WNT signaling are co-required for pericentral hepatocyte proliferation, with FGF15 initiating S-phase and WNT/TBX3 enabling M-phase completion. Fgf15 overexpression under AL conditions increases pericentral hepatocyte nuclei by 102%, but this effect is abolished by Tbx3 loss. Fgf15 overexpression increases nuclear area (S-phase marker) regardless of Tbx3 status, but cell division requires Tbx3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60, C89, C91-C92 provide epistasis analysis demonstrating pathway integration. The key experiment (Fgf15 OE \u00b1 Tbx3 KO) shows FGF15 is sufficient to drive S-phase (nuclear area increase) but requires TBX3 for division (cell number increase). This mechanistic model is well-supported by the genetic data, though the S-phase/M-phase interpretation (C59, C92) is inferential and would benefit from direct cell cycle markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Hepatocyte proliferation during IF maintains the hepatostat (liver-to-body weight ratio). Early IF (2-6 days) shows fluctuating liver-to-body ratios, but this stabilizes by 3 weeks. Loss of Klb during IF significantly reduces liver-to-body ratio, while Tbx3 loss maintains the ratio through compensatory polyploidization of hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C64-C71 demonstrate that IF-induced proliferation serves a homeostatic function. The temporal dynamics (C64-C65) and genetic perturbations (C66-C69) provide strong evidence. The Tbx3 KO phenotype (maintained liver mass via polyploidy) is particularly compelling, showing alternative mechanisms to maintain hepatostat. Data include appropriate measurements and statistics (N=3-5, one-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Loss of compensatory hepatocyte proliferation during IF (via Klb deletion) causes liver pathology including elevated serum transaminases (>3-fold increase in AST/ALT) and increased pericentral hepatocyte senescence, without increased fibrosis or apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 document the functional consequences of blocking IF-induced proliferation. The Klb KO IF phenotype shows specific markers of liver injury (transaminases, senescence) without overt tissue damage (fibrosis, apoptosis). The 2-fold elevation in Klb KO IF vs. Klb KO AL (C77) demonstrates IF-specific pathology. Data are quantitative with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Loss of Klb during IF disrupts liver zonation and metabolism. Klb KO IF livers show altered zonation patterns, changed metabolite profiles, and loss of metabolic differences between IF and AL states. The pericentral gene Cyp7a1 is dysregulated 3-fold in Klb KO IF livers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 use RNAscope, metabolomics, and qPCR to demonstrate metabolic consequences of blocked proliferation. The metabolomics analysis (C80-C82) showing loss of IF-specific metabolic signature in Klb KO is compelling. However, the mechanistic link between proliferation and metabolism (C82) is inferential. The Cyp7a1 dysregulation (C84) provides a specific molecular readout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "This study provides the first example of dietary influence on adult hepatocyte proliferation and challenges the view that liver is mostly quiescent except during injury. The authors claim no prior study examined hepatocyte turnover during fasting/re-feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C5, C21, C86-C88 make strong novelty claims about being 'first' and 'overturning' existing views. While the IF-induced proliferation data are solid, the novelty claims depend on the authors' literature review. The statement that 'no study has looked at hepatocyte turnover during periods of fasting and re-feeding' (C21) is difficult to verify comprehensively. The claim of 'overturning' the quiescence view (C87) may be overstated given that some basal proliferation was already known (C19-C20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Pericentral hepatocytes in IF-treated livers show increased expression of de novo lipogenesis genes (Fasn, Scd1, Acyl) compared to AL livers, providing a cellular mechanism for IF-induced hepatic lipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by scRNA-seq data (Figure 1\u2014figure supplement 2C) and citation to prior work showing IF induces lipogenesis. The scRNA-seq provides cell-type resolution linking pericentral hepatocyte expansion to lipogenic gene expression. This is a secondary finding supporting the metabolic consequences of IF-induced proliferation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "FGF and WNT signaling are conjointly required for tissue growth in other developmental contexts. The authors note that timing of re-feeding and dosage of FGF15, WNT, and TBX3 remain important questions for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by citations to prior work in other systems. Claim C94 appropriately identifies limitations and future directions. These are contextual/discussion points rather than primary findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C47",
+      "C50",
+      "C51",
+      "C61",
+      "C62",
+      "C63",
+      "C75",
+      "C83",
+      "C95",
+      "C96"
+    ],
+    "result": "Background and established knowledge claims about fasting/re-feeding effects in other tissues, liver anatomy, hepatocyte zonation, FGF signaling, WNT signaling, and the hepatostat concept.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C22, C36-C40, C47, C50-C51, C61-C63, C75, C83, C95-C96 are background knowledge supported by appropriate citations to prior literature. These establish context but are not primary findings of the current study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors speculate that tissues currently thought to have slow turnover may have more proliferative capacity than appreciated, with implications for understanding stem and non-stem cell regulation in other organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 are speculative extrapolations from the liver findings to other tissues. While the logic is reasonable, these claims are not directly tested in the manuscript. The speculation is appropriately qualified ('perhaps', 'would have implications') but represents future hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Methodological details: experiments used 8-12 week old male mice, IF was implemented as 24-hour fasting/feeding cycles, and samples were collected at 1200 hr to control for circadian effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are methodological details clearly stated in the Materials and Methods. The use of only male mice (C102) is a limitation not discussed. The timing control (C104) is appropriate for minimizing circadian confounds. These are important experimental design details.",
+    "result_type": "MINOR"
+  }
+]

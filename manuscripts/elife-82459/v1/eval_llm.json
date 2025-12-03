@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study measured cardiac performance in 167 DGRP lines (1956 individuals total) for seven cardiac traits and found significant genetic variation for all traits with broad sense heritability ranging from 0.30 to 0.56. Most traits were poorly correlated except for EDD/ESD and HP/DI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 describe the experimental design and quantitative genetic findings. The sample sizes are clearly reported (C8, C10), the number of traits analyzed is specified (C11), and heritability estimates with statistical support are provided (C12, C13). The correlation analysis (C14) is supported by supplementary figures. These claims form a coherent and well-supported characterization of natural variation in cardiac traits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "GWAS analysis using a linear mixed model identified 530 unique variants across seven traits, with 417 variants mapped to 332 genes. None reached Bonferroni significance threshold, but the top 100 variants per trait were selected for analysis. Variants were enriched in regions within 1 kb upstream of gene TSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe the GWAS methodology and results. The statistical approach is clearly described (C15), the lack of genome-wide significant hits is acknowledged (C16), and the rationale for selecting top 100 variants is provided (C17). The variant counts (C18, C19) and genomic enrichment analysis (C20) are supported by chi-squared tests. The approach is transparent about limitations while providing a reasonable strategy for hypothesis generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Epistasis analysis identified 288 unique SNPs mapped to 261 genes, with significant overlap (n=31, FC=6, p=6.8\u00d710\u207b\u00b9\u2076) between genes from single marker GWAS and epistasis analysis. Combined analyses identified 562 genes associated with natural variations in heart performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe epistasis analysis results with clear statistical support. The significant overlap between single marker and epistasis genes (C22) is supported by hypergeometric testing with a highly significant p-value. The total gene count (C23) represents the union of both approaches. The statistical rigor and biological interpretation are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "GO enrichment analysis revealed over-representation of genes encoding signaling receptors, transcription factors, cell adhesion molecules, plasma membrane proteins, ion channels, and contractile fiber components. Genes from traditional genetic screens were not enriched, suggesting GWAS identifies distinct gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe functional enrichment with appropriate statistical support (p-values and fold changes reported). The lack of enrichment for previously identified genes (C26) is properly tested and interpreted (C27). The enrichment analyses provide biological context for the GWAS findings and are methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Network analysis showed 148 GWAS genes were directly connected in the fly interactome. Functional validation by heart-specific RNAi knockdown showed 38 of 42 tested genes caused cardiac phenotypes, significantly more than randomly selected genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide strong validation of GWAS results through network analysis and experimental testing. The network connectivity (C28) suggests functional relationships. The high validation rate (90%, C29) and significant enrichment compared to random genes (C30) provide compelling experimental support for the GWAS findings. This represents rigorous validation of computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Genetic interaction experiments demonstrated non-additive effects between BMP and activin pathway components. Double heterozygotes for snoo/sog, babo/tkv, and mad/smox showed non-additive phenotypes for multiple cardiac traits, suggesting coordinated pathway activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe genetic interactions with appropriate statistical testing (two-way ANOVA). The non-additive effects support epistatic interactions between pathways. However, the manuscript acknowledges complexity in interpreting these results due to systemic vs. tissue-specific effects, and some results from tissue-specific knockdowns show different patterns. The evidence supports genetic interactions but the mechanistic interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "95% of variants were in non-coding regions enriched near gene TSS. Motif analysis identified enriched transcription factor binding sites, including motifs for TFs themselves identified by GWAS. Heart-specific knockdown of predicted TFs (luna, lola, srp, mirr, mad, klu, HLH3B) affected multiple cardiac traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe regulatory variant analysis with computational predictions validated experimentally. The enrichment of non-coding variants (C34, C35) is statistically supported. The motif analysis (C36, C37) uses appropriate methods, and the experimental validation (C38) provides strong support for the predictions. This represents a comprehensive analysis linking non-coding variants to regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Levene test revealed significant heterogeneity in within-line variance for all cardiac traits. Significant genetic variation was found for all CVe traits, which were poorly correlated with each other and showed weak to moderate correlation with trait means.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe analysis of phenotypic variability with appropriate statistical methods. The Levene test (C39) properly tests for heterogeneity of variance. The genetic variation in CVe (C40) and correlation analyses (C41, C42) are well-supported by data. This represents a novel analysis of genetic control of phenotypic variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "GWAS on CVe traits identified 887 variants and 566 genes. Only three variants were associated with both trait means and CVe, but 92 genes were associated with both (FC=5, p=2.2\u00d710\u207b\u00b3\u2079), indicating distinct variants in the same genes affect means and variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe CVe GWAS results with clear statistical support. The minimal variant overlap (C44) contrasts with significant gene overlap (C46), supported by hypergeometric testing. This finding is biologically interesting and statistically robust, suggesting different regulatory variants in the same genes affect mean and variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CVe-associated genes showed over-representation of cell adhesion, transmembrane signaling, and ion channel activity. Genes causing stress-induced lethality were under-represented. Variants were enriched in proximal gene regions (0-1 kb upstream of TSS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe functional characteristics of CVe genes with appropriate statistical support. The GO enrichment (C47) and under-representation of stress-response genes (C48) are properly tested. The genomic location enrichment (C49) parallels findings for trait means. These analyses provide biological context for CVe genetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "GWAS-associated genes (both trait means and CVe) were significantly enriched for genes with human orthologues and for genes whose human orthologues are associated with cardiac disorders (FC=1.66 for means, 1.7 for CVe, p=7\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate evolutionary conservation with appropriate statistical testing. The enrichment for human orthologues (C50) and cardiac disorder genes (C51) is well-supported by hypergeometric tests. This provides strong evidence for translational relevance of the fly findings to human cardiac genetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Heart-specific knockdown of poxm/PAX9 and sr/EGR2 increased heart rate in flies. In hiPSC-CMs, PAX9 and EGR2 knockdown shortened action potential duration. PAX9 knockdown specifically affected repolarization, increased ion channel expression, upregulated hypertrophic genes, and increased cardiomyocyte size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe cross-species validation with comprehensive phenotypic characterization. The fly phenotypes (C52) and human cell phenotypes (C53-C57) are well-documented with appropriate statistical testing. The mechanistic insights from gene expression (C55, C56) and morphological analysis (C57) support the functional interpretations. This represents strong translational validation of GWAS findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The introduction establishes that heart disease is a major cause of mortality, hundreds of genetic variants have been identified by human GWAS, cardiac genes are evolutionarily conserved, Drosophila is a suitable model system, and the DGRP is an appropriate resource for studying natural variation in cardiac traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background context supported by appropriate citations. These claims establish the rationale for the study and are well-supported by prior literature. They represent standard background information rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Fly cardiac function parameters are highly influenced by sex, which is why the study focused on female flies only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by citation and provides methodological justification for analyzing only females. This is a minor methodological detail that appropriately constrains the study design.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1294 @@
+{
+  "submission": {
+    "id": "188a5f2c-a5ff-4571-a7ce-cfbc7f0b2777",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:45:58.007558Z",
+    "updated_at": "2025-12-03T08:45:58.007558Z"
+  },
+  "content": [
+    {
+      "id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "submission_id": "188a5f2c-a5ff-4571-a7ce-cfbc7f0b2777",
+      "content_type": "manuscript",
+      "content_text": "# Spatial alanine metabolism determines local growth dynamics of Escherichia coli colonies\n\n## Authors\n\n- Francisco D\u00edaz-Pascual<sup>1</sup> ([ORCID: 0000-0001-8947-682X](https://orcid.org/0000-0001-8947-682X))\n- Martin Lempp<sup>1</sup>\n- Kazuki Nosho<sup>1</sup> ([ORCID: 0000-0002-4811-1397](https://orcid.org/0000-0002-4811-1397))\n- Hannah Jeckel<sup>1</sup> ([ORCID: 0000-0002-7080-4907](https://orcid.org/0000-0002-7080-4907))\n- Jeanyoung K Jo<sup>4</sup> ([ORCID: 0000-0003-1543-1148](https://orcid.org/0000-0003-1543-1148))\n- Konstantin Neuhaus<sup>1</sup> ([ORCID: 0000-0002-9877-5765](https://orcid.org/0000-0002-9877-5765))\n- Raimo Hartmann<sup>1</sup> ([ORCID: 0000-0002-4924-6402](https://orcid.org/0000-0002-4924-6402))\n- Eric Jelli<sup>1</sup> ([ORCID: 0000-0001-6202-2449](https://orcid.org/0000-0001-6202-2449))\n- Mads Frederik Hansen<sup>1</sup> ([ORCID: 0000-0001-9283-304X](https://orcid.org/0000-0001-9283-304X))\n- Alexa Price-Whelan<sup>4</sup> ([ORCID: 0000-0001-7587-7534](https://orcid.org/0000-0001-7587-7534))\n- Lars EP Dietrich<sup>4</sup> ([ORCID: 0000-0003-2049-1137](https://orcid.org/0000-0003-2049-1137))\n- Hannes Link<sup>1</sup>\n- Knut Drescher<sup>1</sup> ([ORCID: 0000-0002-7340-2444](https://orcid.org/0000-0002-7340-2444)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Terrestrial Microbiology Marburg Germany\n2. Department of Physics, Philipps-Universit\u00e4t Marburg Marburg Germany\n3. Biozentrum, University of Basel Basel Switzerland\n4. Department of Biological Sciences, Columbia University New York United States\n5. Interfaculty Institute for Microbiology and Infection Medicine, Eberhard Karls Universit\u00e4t T\u00fcbingen T\u00fcbingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteria commonly live in spatially structured biofilm assemblages, which are encased by an extracellular matrix. Metabolic activity of the cells inside biofilms causes gradients in local environmental conditions, which leads to the emergence of physiologically differentiated subpopulations. Information about the properties and spatial arrangement of such metabolic subpopulations, as well as their interaction strength and interaction length scales are lacking, even for model systems like Escherichia coli colony biofilms grown on agar-solidified media. Here, we use an unbiased approach, based on temporal and spatial transcriptome and metabolome data acquired during E. coli colony biofilm growth, to study the spatial organization of metabolism. We discovered that alanine displays a unique pattern among amino acids and that alanine metabolism is spatially and temporally heterogeneous. At the anoxic base of the colony, where carbon and nitrogen sources are abundant, cells secrete alanine via the transporter AlaE. In contrast, cells utilize alanine as a carbon and nitrogen source in the oxic nutrient-deprived region at the colony mid-height, via the enzymes DadA and DadX. This spatially structured alanine cross-feeding influences cellular viability and growth in the cross-feeding-dependent region, which shapes the overall colony morphology. More generally, our results on this precisely controllable biofilm model system demonstrate a remarkable spatiotemporal complexity of metabolism in biofilms. A better characterization of the spatiotemporal metabolic heterogeneities and dependencies is essential for understanding the physiology, architecture, and function of biofilms.\n\n## Introduction\n\nAfter bacterial cell division on surfaces, daughter cells often remain in close proximity to their mother cells. This process can yield closely packed populations with spatial structure, which are often held together by an extracellular matrix. Such spatially structured assemblages, called biofilms (Flemming et al., 2016), are estimated to be the most abundant form of microbial life on Earth (Flemming and Wuertz, 2019). The metabolic activity of cells inside these dense populations leads to spatial gradients of oxygen, carbon, and nitrogen sources, as well as many other nutrients and waste products (Ackermann, 2015; Evans et al., 2020; Pacheco et al., 2019; Stewart and Franklin, 2008). Cells in different locations within biofilms therefore inhabit distinct microenvironments. The physiological responses to these microenvironmental conditions result in spatially segregated subpopulations of cells with different metabolism (Barroso-Batista et al., 2020; D\u2019Souza et al., 2018; Stewart and Franklin, 2008). Bacterial growth into densely packed spatially structured communities, and metabolic activity of the constituent cells, therefore naturally lead to physiological differentiation (Evans et al., 2020; R\u00f8der et al., 2020; Serra et al., 2013a; Stewart and Franklin, 2008).\n\nMetabolic and phenotypic heterogeneities are frequently observed in multi-species communities (Garg et al., 2016; Henson et al., 2019; Kim et al., 2020; Pacheco et al., 2021; Serra and Hengge, 2021) and in single-species biofilm populations (Cole et al., 2015; Dal Co et al., 2019; Lin et al., 2018; Moree et al., 2012; Rani et al., 2007; Serra et al., 2013b; Teal et al., 2006). Identifying the origins of these heterogeneous subpopulations, and how they interact with each other, is important for understanding the development and function of biofilms (Cole et al., 2015; Lin et al., 2018; Liu et al., 2015; Prindle et al., 2015). Multi-species biofilms predominate in the environment, yet they are highly complex and feature many concurrent intra-species and inter-species interaction processes, which may be organized in space and time (Brislawn et al., 2019; Garg et al., 2016; Kim et al., 2020). Due to this complexity of multi-species biofilms, it is often difficult to disentangle whether spatiotemporal physiological differentiation or a particular interaction between subpopulations is caused by the relative position of the species, or the position of each species in the context of the entire community, or the mutual response of different species to each other. In contrast, single-species biofilms offer precisely controllable model systems with reduced complexity for understanding basic mechanisms of metabolic differentiation and the interaction of subpopulations. Investigations of phenotypic heterogeneity in single-species assemblages have already revealed fundamental insights into metabolic interactions of subpopulations with consequences for the overall fitness and growth dynamics of the assemblages (Arjes et al., 2021; Cole et al., 2015; Evans et al., 2020; Lin et al., 2018; Liu et al., 2017; Liu et al., 2015; Wolfsberg et al., 2018). However, even for single-species biofilms, the extent of metabolic heterogeneity and metabolic dependencies of subpopulations are unclear.\n\nTo obtain an unbiased insight into the spatial organization of metabolism inside biofilms, we measured metabolome and transcriptome dynamics during the development of E. coli colony biofilms on a defined minimal medium that was solidified with agar. Our model system enabled highly reproducible colony growth and precise control of environmental conditions, which allowed us to detect phenotypic signatures of subpopulations. The temporally and spatially resolved data revealed that alanine metabolism displays a unique pattern during colony growth. We determined that secretion of alanine occurs in a part of the anoxic region of the colony, where the carbon and nitrogen sources are abundant. The secreted alanine is then consumed in a part of the oxic region of the colony, where glucose and ammonium from the minimal medium are lacking. This spatially organized alanine cross-feeding interaction occurs over a distance of tens of microns, and has important consequences for the viability and growth of the localized cross-feeding-dependent subpopulation, and for the global colony morphology.\n\n## Results\n\n### Colony growth transitions and global metabolic changes\n\nTo investigate the spatiotemporal organization of metabolism inside E. coli colonies, we first characterized the basic colony growth dynamics and morphology on solid M9 minimal medium, which contained glucose and ammonium as the sole carbon and nitrogen sources, respectively (Figure 1A). For all measurements performed with colonies, including microscopy-based measurements, the colonies were grown on top of filter membranes that were placed on M9 agar (Figure 1\u2014figure supplement 1A). These membranes enabled rapid transfer of the colonies into extraction buffers, for downstream transcriptome and metabolome analyses. When we grew E. coli wild-type colonies in these conditions, we observed motility on the filter membranes on M9 agar, which led to heterogeneous colony development and an asymmetric colony morphology (Figure 1\u2014figure supplement 1B). However, to study the spatiotemporal metabolism in E. coli colonies as precisely as possible, and to resolve even small phenotypic differences between strains and conditions, we required a colony growth behavior that is as reproducible as possible. Therefore, a strain lacking flagella due to the deletion of the flagellin (\u0394fliC) was used as the parental strain for all following experiments, which resulted in highly reproducible and axially symmetric colony morphologies (Figure 1\u2014figure supplement 1C). Colonies generally displayed two growth phases: colonies showed exponential growth in volume, height, and diameter for up to ~24 hr, followed by linear growth (Figure 1A and B). This transition in colony growth dynamics has previously been observed, and was hypothesized to be caused by a change in metabolism due to altered nutrient penetration and consumption for colonies above a certain size (Pirt, 1967; Warren et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cross-sectional profiles of representative E. coli colonies grown on membrane filters placed on solid M9 agar at different time points. (B) Volume (top panel), radius and height (bottom panel) of colonies as a function of time indicate a growth rate transition around 24\u201332 hr. All replicates are shown as individual data points, with a line connecting the mean values, n = 3 biological replicates. (C) Dynamics of expression profiles of 4231 genes during colony growth reveal physiological transition between 24 and 32 hr, n = 3 biological replicates. (D) Mean expression fold-changes of known amino acid exporters during colony growth, calculated in comparison to 12 hr colonies, n = 3 biological replicates. (E) Comparison of amino acid profiles in whole colonies, measured with mass spectrometry during colony growth; n = 3 biological replicates. Levels of amino acids are shown in Figure 1\u2014figure supplement 5.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Experimental arrangement for investigating colony growth using an inverted confocal microscope. Dimensions are not drawn to scale. (B, C) Confocal microscopy images of xy-planes of colonies on filter membranes on M9 agar, made by the wild type strain (panel B) or a strain lacking the flagellin gene fliC (panel C) grown for 24 hr. The \u0394fliC strain produces no flagella and is incapable of swimming motility.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Principal component analysis of the transcriptomic data presented in Figure 1C. The axes represent the 1st principal component (PC1) and the 2nd principal component (PC2). (B) Principal component analysis of amino acid data presented in Figure 1E. Each circle represents a different independent transcriptome or metabolome biological replicate. Replicates for the same colony growth timepoint have the same color and are enclosed by an ellipse with a dashed line.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** E. coli extracellular matrix is composed of cellulose, curli, colanic acid, \u03b2\u20131,6-N-acetyl-D-glucosamine (PGA) and flagella (Hobley et al., 2015). Here, transcripts per million (TPM) of genes involved in the production of cellulose (A), curli (B), colonic acid (C) and PGA (D) are shown for colonies of the parental strain (KDE722) grown for 18, 24, 32, 42, 48, 60, or 72 hr, measured using RNA-seq. Flagellar genes are not shown here, because the flagellin gene fliC is deleted in the parental strain. Data are mean \u00b1 standard deviation (s.d.), n = 3 biological replicates.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A, B) Heatmaps show genes involved in mixed acid fermentation. (A) Fold-changes of genes from whole-colony measurements at different growth stages, normalized to transcriptomes of 12 hr colonies. (B) Fold-changes of genes from spatially-resolved transcriptomes, measured for 72 hr colonies. The inner region corresponds to non-fluorescent cells, the outer region corresponds to those cells with mRuby2 fluorescence. (C, D) Heatmaps show genes involved in the TCA cycle. (C) Fold-changes of genes from whole-colony measurements at different growth stages, normalized to transcriptomes of 12 hr colonies. (D) Fold-changes of genes from spatially-resolved transcriptomes, measured for 72 hr colonies. Non-significant differences are labeled \u2018ns\u2019. p-Values correspond to FDR-adjusted p-values: * p < 0.05, ** p< 0.01, **** p < 0.0001. For panels A and C, n = 3 biological replicates; for B and D, n = 4 biological replicates. The genes mdh, fumABCDE, and maeA are involved in the mixed acid fermentation and the TCA cycle pathways, and are therefore displayed in all heatmaps.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Fold-changes of amino acid levels as a function of time during colony development on M9 agar, normalized to amino acid levels from 18 hr colonies. Measurements were performed using mass spectrometry. Data are mean values \u00b1 s.d., n = 3 biological replicates.\n\nTo further characterize the phenotypic changes that occur during colony growth, we performed time-resolved whole-colony transcriptome measurements (Figure 1C and Figure 1\u2014figure supplement 2A). The transcriptomes revealed a major change after 24 hr of growth (Figure 1C), which reflects the change in growth dynamics that was apparent in the morphological parameters (Figure 1B). After 72 hr of growth, 966 out of 4231 detected genes were differentially expressed in comparison to the 12 hr time point (log2-fold-changes > 1 or <-1, and FDR-adjusted p-value < 0.05). The whole-colony transcriptomes also showed that biofilm matrix biosynthesis genes are expressed continuously during colony growth (Figure 1\u2014figure supplement 3). Furthermore, the transcriptomes confirmed that well-known pathways such as mixed acid fermentation and tricarboxylic acid (TCA) cycle were differentially regulated after 24 hr of growth (Figure 1\u2014figure supplement 4A,C). These results are consistent with the hypothesis that above a certain colony size, which is reached between 24 and 32 hr in our conditions, the consumption of oxygen by cells in the outer region of the colony causes a large anoxic region inside the colony.\n\nAlthough it is commonly assumed that E. coli subpopulations cross-feed acetate (Cole et al., 2015; Dal Co et al., 2019; San Roman and Wagner, 2020; Wolfsberg et al., 2018), the temporal transcriptomes did not reveal strong regulation of acetate metabolism transcripts during the major transition in colony metabolism described above (Figure 1\u2014figure supplement 4A). However, transcripts of the lactate, formate, and succinate biosynthesis pathways displayed differential regulation during colony growth (Figure 1\u2014figure supplement 4A). Apart from these metabolites, we noticed peculiar patterns in the expression of amino acid pathways. The gene expression levels for some amino acid transporters remained unchanged during colony growth, while a few amino acid transporters were >2 fold up- or down-regulated after 24 hr or 32 hr of growth (Figure 1D). Interestingly, the gene coding for the alanine exporter AlaE (Hori et al., 2011b) showed strong expression changes (~50 fold increase) in 72-hr-colonies relative to 12-hr-colonies (Figure 1D).\n\nTo further characterize the observed metabolic transition between 24 and 32 hr of colony growth, we measured the amino acid profiles of the colonies using mass spectrometry and normalized them by the colony biomass. To obtain sufficient biomass for these measurements, the colonies needed to be grown for at least 18 hr. All amino acid abundances decreased during colony growth \u2013 except for alanine, which remained relatively constant with a peak abundance at 32 hr (Figure 1E, Figure 1\u2014figure supplement 2B, and Figure 1\u2014figure supplement 5). Thus, both transcriptome and metabolome data suggest a unique change of alanine metabolism during E. coli colony growth, which led us to investigate the role of alanine metabolism in colony morphogenesis.\n\n### Spatial regulation of alanine transport and degradation\n\nBiofilms are expected to be metabolically heterogeneous so that we hypothesized that alanine metabolism is spatially organized inside biofilms. To test this hypothesis, we developed a method to measure transcriptomes with spatial resolution in the colonies. The method is based on the oxygen-dependence of chromophore maturation of the fluorescent protein mRuby2 (Lam et al., 2012; Tsien, 1998). Using a strain that constitutively expresses mRuby2 from a chromosomal locus, so that all cells in the colony produce mRuby2, we observed that only the air-facing region of the colony was fluorescent in colonies that had grown for 72 hr. Quantification of the mRuby2 fluorescence showed a similar, but slightly steeper decrease of fluorescence in the horizontal xy-direction into the colony, compared with the vertical z-direction (Figure 2A). By using an oxygen microsensor to directly measure oxygen levels inside the colony in the z-direction (Jo et al., 2017), we determined that the mRuby2 fluorescence was a reliable indicator of oxygen levels (Figure 2A). During colony growth, the fraction of fluorescent cells in the colony decreased (inset in Figure 2B), and the majority of the colony became non-fluorescent (i.e. anoxic) around 24 hr, which coincides with the time at which the whole-colony transcriptome shifted towards anaerobic metabolism (Figure 1C). This decrease in the mRuby2-fluorescent population during colony growth ultimately led to a thin layer of fluorescent cells in the air-facing part of the colony (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig2-v1.jpg)\n\n**Figure 2.:** (A) Measurement of oxygen penetration into colonies grown for 72 hr on filter membranes on M9 agar using two different methods (for strain KDE722). Left axis (red): Intensity of mRuby2 fluorescence within a vertical cylinder of radius 3.3 \u00b5m in the center of the colony (filled circles), and intensity of mRuby2 fluorescence within a horizontal plane at the base of the colony (open circles, mean \u00b1 s.d., n = 3 biological replicates). Right axis (blue): Direct measurement of oxygen levels acquired by vertical scanning of an oxygen microsensor at the center of the colony (blue triangles, mean \u00b1 s.d., n = 10 replicates). (B) Confocal image of a representative 72 hr colony of a strain that constitutively expresses mRuby2 (KDE722). Insert: Fraction of fluorescent biovolume inside colonies grown for different times. Data are mean \u00b1 s.d., n = 3 biological replicates. (C) Scheme of the sorting procedure: Cells from a 72 hr colony are separated, fixed using formaldehyde, and sorted according to their mRuby2 fluorescence, followed by RNA-seq, as described in the methods section. (D) Heatmaps showing the mean fold-change (n = 3 biological replicates) of expression levels of genes involved in alanine metabolism, from whole-colony measurements. Fold-changes are computed relative to the 12 hr timepoint. (E) Spatial transcriptome results, quantified as fold-changes between the inner region (no mRuby2 fluorescence) and outer region (high mRuby2 fluorescence) regions of colonies grown for 72 hr. Blue color in the heatmap indicates genes with higher transcript levels in the inner region of the colony, red color indicates higher transcripts in the outer region of the colony. Data are means, n = 4 biological replicates. Non-significant differences between spatial regions are labeled \u2018ns\u2019. The p-values correspond to false discovery rate (FDR)-adjusted p-values: * p < 0.05, ** p < 0.01, *** p < 0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Images of cells from a 72 hr colony that was resuspended in PBS. Some cells are fluorescent, others display less or no fluorescence. (B) Confocal images of a xy-plane of a 72 hr colony acquired at z = 60 \u00b5m above the filter membrane on M9 agar. At 72 hr + 0 hr the filter membrane carrying the colony was moved from M9 agar to an agar plate with the same medium, but lacking glucose. As a consequence, cells stop growth and strongly reduce the consumption of molecular oxygen, allowing oxygen to penetrate into the colony. Penetration of oxygen allows the mRuby2 protein to fold into the fluorescent conformation. The square pattern in the images results from the fact that colony images were stitched together from 7 \u00d7 7 image tiles. (C) Confocal images of a xz-plane of the same 72 hr colony as in panel B, following the same experimental procedure. (D) Quantification of panels B, C: mRuby2 fluorescent intensity profiles at different times after transferring the colony to M9 agar without glucose (different colored lines), as a function of distance to the outer surface of the colony.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Flow cytometry results for fluorescence of E. coli constitutively expressing mRuby2 (strain KDE722) with or without 2 hr of fixation using 4 % formaldehyde. For the two panels on the left (enclosed by green box), the cells were grown in liquid shaking M9 medium. For the two panels on the right (enclosed by orange box), the cells were grown as a colony on M9 agar. (B) Principal component analysis of the transcriptomes of colonies grown for 72 hr, which were either fixed with 4 % formaldehyde (FA) for 0 hr or 2 hr, or without fixation. As a control, the transcriptome of cells from an exponentially growing M9 liquid shaking culture without fixation was also analyzed. Each data point corresponds to an independent biological replicate (n = 3). The table on the right indicates the number of differentially expressed genes in colonies, in comparison to the colonies without fixation, using as threshold for differentially expressed genes either a FDR-adjusted p-value < 0.05, or a FDR-adjusted p-value < 0.05 and an absolute log2 fold-change (log2 FC) > 1.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Representative sorting results of a colony grown for 72 hr, using the mRuby2 fluorescence signal and the side scatter (SSC) signal. Cells were sorted into two separate bins (red, black). (B) Principal component analysis of RNA-seq results of the two separated bins, or the entire population, from colonies that were grown for 72 hr, showing the 1st (PC1) and 2nd (PC2) principal component axes. Each data point corresponds to an independent replicate (n = 4 biological replicates).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Alanine biosynthesis pathways. (B) Alanine degradation and export pathways. Cells are drawn with a schematic rod shape.\n\nTo eliminate the possibility that the observed mRuby2 fluorescence profile was due to imaging artefacts, such as insufficient laser penetration into the colony, we disrupted 72-hr-colonies and imaged the resulting, well-separated single cells. The time between colony disruption and imaging for this control experiment was less than 2 min, which is substantially shorter than the mRuby2 fluorophore maturation time (~150 min Lam et al., 2012). In these images, only some cells displayed fluorescence (Figure 2\u2014figure supplement 1A), indicating that the fluorescence gradient we observed in Figure 2B is not an imaging artefact. In an additional control experiment, we sought to test if the fluorescence gradient was caused by the oxygen gradient. If the oxygen gradient in the colony is created by oxygen consumption by cells in the air-facing region (Klementiev et al., 2020; Stewart and Franklin, 2008), the oxygen gradient (and therefore the mRuby2 fluorescence gradient) should disappear when metabolic processes that consume oxygen are prevented. To test this, we starved the colonies by transferring the filter membrane carrying the colonies to an M9 agar plate lacking glucose, which strongly decreases the colony capacity to consume oxygen. We observed that in this case, mRuby2 proteins that are located in the formerly dark anoxic region of the colony became fluorescent (Figure 2\u2014figure supplement 1B,C,D). The oxygen in the fresh agar plate is not able to cause the entire colony to become fluorescent without the reduced oxygen consumption in the colony caused by the lack of glucose. The finding that the entire colony becomes fluorescent after the transfer is consistent with the interpretation that in the absence of glucose, cells consume less oxygen so that molecular oxygen can penetrate into the colony to enable chromophore maturation of mRuby2 in the formerly anoxic region (Figure 2\u2014figure supplement 1B,C,D). Together, these control experiments and the direct measurements of oxygen levels inside the colonies show that the difference in fluorescence levels in our system reflect the spatial position of the cells in the colony.\n\nTo obtain spatial transcriptomes, we then separated colonies grown for 72 hr into individual cells, immediately fixed them with formaldehyde (which prevents mRuby2 fluorophore maturation in the presence of oxygen without altering the transcriptomes; Figure 2\u2014figure supplement 2), and subjected them to fluorescence-activated cell sorting (FACS) to separate the oxic (fluorescent) and anoxic (not fluorescent) populations (Figure 2C and Figure 2\u2014figure supplement 3). The resulting two cell populations were then analyzed using RNA-seq. The spatial transcriptome comparison showed that, as expected, genes involved in the TCA cycle and mixed acid fermentation were differentially expressed between the inner and outer regions of the colony (Figure 1\u2014figure supplement 4B,D). This result demonstrates that the method successfully separated the fermenting population inside the colonies from the respiring population in the outer layer, which serves as a qualitative verification of the experimental methodology.\n\nIn both the spatially and temporally resolved transcriptomes, we observed changes in alanine transport and degradation, but not in alanine biosynthesis (Figure 2D and E; a schematic diagram of alanine metabolism pathways is shown in Figure 2\u2014figure supplement 4). In particular, the spatial transcriptomes showed that the expression of the alanine exporter gene alaE was significantly upregulated in the inner (non-fluorescent) region of the colony, compared with the outer (fluorescent) region (Figure 2E). Alanine conversion into pyruvate and ammonium was also spatially regulated. Two pathways for converting alanine to pyruvate are known: The reversible conversion by enzymes involved in the alanine biosynthetic pathways, and the irreversible conversion mediated by the dadAX operon (Figure 2\u2014figure supplement 4B). The latter encodes a racemase (dadX) and a dehydrogenase (dadA) (Lobocka et al., 1994). In colonies grown for 72 hr, the dadAX operon was down-regulated in the inner region, compared with the outer region (Figure 2E). Interestingly, in the whole-colony temporal transcriptomes, the dadAX operon and the gene alaE were the only strongly upregulated alanine-related genes (sixfold for dadA, fivefold for dadX, and 50-fold for alaE), when comparing 72-hr-colonies to 12-hr-colonies (Figure 2D). These results indicate that colonies globally upregulate alanine export and degradation during development and that the anoxic region of the colony likely exports alanine, while the oxic region likely converts alanine into pyruvate and ammonium.\n\n### Alanine is exported in anoxic conditions and can be used as a carbon and nitrogen source in oxic conditions\n\nThe spatial transcriptomes suggest that alanine is primarily secreted in the anoxic region of the biofilm. To test this, we explored under which combination of carbon/nitrogen/oxygen availability E. coli secretes alanine in shaking liquid conditions. Mass spectrometry measurements from culture supernatants clearly showed that alanine is only secreted under anoxic conditions with glucose and ammonium (Figure 3A), which is an environment that corresponds to the anoxic base of the colony, where cells are in contact with the glucose- and ammonium-rich M9 agar. Oxic conditions with abundant glucose and ammonium did not result in significant alanine secretion. This finding suggests that alanine is secreted in the anoxic base of the colony, which is consistent with the spatial transcriptome results.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig3-v1.jpg)\n\n**Figure 3.:** (A) Extracellular alanine concentration in the supernatant of liquid cultures grown in presence or absence (indicated by+ or -) of glucose (glc), ammonium (NH4+), and molecular oxygen (O2). Data are mean \u00b1 s.d., n = 3 biological replicates. (B) Growth curves using M9 minimal salts medium with ammonium as nitrogen source and different carbon sources: Either glucose (5 g/L, as in our standard M9 medium), alanine (10 mM), or no carbon source. (C) Growth curves using M9 minimal salts medium with glucose as a carbon source and different nitrogen sources: Either ammonium (22.6 mM, as in our standard M9 medium), alanine (5 mM) or no nitrogen source. For panels B and C, continuous middle lines correspond to the mean and the dotted lines to the standard deviation, n = 3 biological replicates. The growth curves shown for alanine in panels B and C correspond to the alanine concentrations that resulted in the highest final optical density at 600 nm (OD600) in each condition. (D) E. coli cultures starting with OD600 = 0.03 were incubated for 96 hr in different anoxic media. The medium contained combinations of glucose, NH4+, and alanine as indicated. Alanine was provided either as the sole nitrogen source (middle bar) or sole carbon source (right bar) with a concentration of 5 mM and 10 mM, respectively. The final OD600 after 96 hr of incubation is shown, corresponding to a time point when the culture without alanine reached stationary phase. Continuous measurements of OD600 in anoxic conditions was not possible in our laboratory due to technical limitations. Data are mean \u00b1 s.d., n = 4 biological replicates.\n\nThe spatial transcriptomes also suggest that alanine is primarily consumed in the oxic region of the colony. It is well-known that E. coli can use extracellular alanine as a carbon or nitrogen source in oxic conditions (Franklin and Venables, 1976; Kornberg, 1965), which we confirmed for our strain and growth conditions by replacing either glucose or ammonium with alanine in the liquid shaking M9 medium (Figure 3B and C). We found that exogenous alanine can be utilized as a poor carbon source, but as a good nitrogen source in oxic conditions. Interestingly, we observed that under anoxic conditions, E. coli cannot utilize alanine as a carbon or nitrogen source (Figure 3D). Together, these results suggest that the alanine secreted in the glucose- and ammonium-rich anoxic region of the colony can be consumed in the oxic region of the colony as a cross-fed metabolite.\n\n### Bacterial survival in the oxic region of the colony is influenced by alanine export and consumption\n\nTo determine how interference with alanine export and consumption affects colony growth, we created individual and combinatorial deletions of known alanine transport and degradation genes. None of these deletions affected the cellular growth rates in liquid culture (Figure 4\u2014figure supplement 1A). These deletions also did not cause clear phenotypes in colony height or diameter after 72 hr of incubation on M9 agar (Figure 4\u2014figure supplement 1B,C), indicating that alanine export and consumption do not have large effects on global colony size. However, the mutants displayed substantial differences when we measured the fraction of dead cells in the oxic region (Figure 4A and Figure 4\u2014figure supplement 2), using a fluorescent nucleic acid stain that can only penetrate the disrupted membranes of dead cells (SYTOX Green). We limited our measurements to the air-facing oxic region of the colony, because in this region the SYTOX Green fluorescence can be reliably quantified without microscopy artefacts that may occur deeper inside the colony due to poor laser penetration. We observed that the colonies displayed only a low fraction of dead cells at the bottom edges of the colony, but cell death increased towards the top of the colony. Interestingly, the oxic region at around 50 % of the maximum colony height displayed increased cell death when cells carried the \u0394alaE\u0394dadAX deletion (Figure 4A), which is a strain that should have a strongly reduced capability for secreting and consuming alanine.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig4-v1.jpg)\n\n**Figure 4.:** (A) Measurement of the fraction of dead cells as a function of height in colonies grown for 72 hr on M9 agar. These measurements were performed only for cells located within 30 \u00b5m from the outer colony surface, which is a conservative measurement of the oxic region (Figure 2A). The table designates the genotype of strains that were investigated: \u2018\u2713\u2019 indicates that the gene is intact and \u2018\u0394\u2019 that the gene was deleted. Data in the heatmaps shows means, n = 3 biological replicates. Errors are shown in Figure 4\u2014figure supplement 2. (B) Extracellular alanine levels measured from colonies (mean \u00b1 s.d., n = 3 biological replicates). (C) Maximum liquid culture growth rate (in presence of glucose and ammonium) for different strains, as a function of the concentration of exogenously added alanine. Data are mean \u00b1 s.d., n = 3 biological replicates. (D) Fraction of dead cells, measured using SYTOX Green fluorescence normalized by OD600, in cultures grown with glucose and ammonium in presence or absence of 5 mM alanine. Fold-changes are calculated relative to the parental strain in exponential phase without alanine. Measurements were performed when cultures reached half of the maximum OD600 (for exponential phase measurements) or when they reached their maximum OD600 (for stationary phase measurements). Bars indicate mean \u00b1 s.d., n = 4 biological replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Maximum growth rate in liquid shaking cultures in M9 medium. Colony diameter (B) and height (C) after 72 hr of growth on M9 agar for different mutants in alanine transport and degradation, compared to the parental E. coli strain. The parental and \u0394dadAX\u0394alaE colonies do not show significant differences in colony diameter and height. Data are mean values \u00b1 s.d., each biological replicate is shown as a gray circle.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Heatmap shows the coefficient of variation for the data shown in Figure 4A.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The maximum liquid culture growth rate as function of the concentration of exogenically added serine in M9 medium is the same for all strains. Data are mean values \u00b1 s.d., n = 3 biological replicates.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Confocal images of a xy-plane of representative 72-hr-old colonies grown by inoculating a 1:1 mixture of two strains onto a membrane filter placed on solid M9 agar. The strains in red and green express the fluorescent proteins mRuby2 and sfGFP respectively, from the same chromosomal locus, using the same promoter. Left image: Outcome of a control experiment in which the red and green strains are isogenic except for the fluorescent protein, showing that the mRuby2 expression results in a slight fitness cost compared to the sfGFP expression. Center left, center right, and right images: Outcome of two-strain competition experiments, which should be compared to the outcome shown in the image on the far left. The color and genotype of each strain is indicated above each image. (B) Quantification of the fold change between the frequency of the red strain at 350 \u00b5m from the edge of the inoculation region and the frequency of the red strain in the inoculation suspension measured by flow cytometry. Data are mean values \u00b1 s.d., n = 3\u201315 biological replicates. Statistical significances were calculated using one-way ANOVA with Dunnett\u2019s correction. Non-significant differences are labeled \u2018ns\u2019 and the p-value is shown in brackets. **p < 0.01, ****p < 0.0001.\n\nTo determine if the increased cell death displayed by the \u0394alaE\u0394dadAX mutants could be caused by an impaired alanine cross-feeding, we first measured the extracellular alanine concentration in colonies of the relevant mutants using mass spectrometry (Figure 4B). As expected, mutants incapable of the major alanine degradation pathway (\u0394dadAX) displayed substantially higher extracellular alanine than cells that are impaired for alanine secretion as well (\u0394alaE\u0394dadAX). Amino acid transporters can often function as both importers and exporters, yet the higher extracellular alanine levels of the \u0394dadAX strain compared with the \u0394alaE\u0394dadAX strain (Figure 4B) indicate that AlaE acts as an alanine exporter inside colonies. Previous measurements have shown that AlaE also acts as an exporter in liquid cultures (Hori et al., 2011b). The high extracellular alanine levels of the \u0394dadAX colonies are unlikely to be caused by permeable or lysed cells, as the \u0394dadAX colonies do not display elevated levels of cell death (Figure 4A). The parental strain and the \u0394alaE mutant displayed similarly low extracellular alanine levels, close to the detection limit of our mass spectrometry technique. Interestingly, and consistent with the results of Hori et al. in liquid cultures (Hori et al., 2011a; Hori et al., 2011b), our detection of extracellular alanine in colonies of the \u0394alaE and \u0394alaE\u0394dadAX mutants indicates that another mechanism for alanine export might exist that is currently unknown. Together, our measurements of extracellular alanine levels in colonies of different mutant show that alanine is primarily secreted via AlaE.\n\nFor cells that lack both the major alanine exporter AlaE and the major alanine degradation pathway via DadA and DadX, we hypothesized that the presence of extracellular alanine might lead to an accumulation of intracellular alanine to toxic levels. It has previously been shown that excess levels of intracellular alanine can inhibit growth (Katsube et al., 2019), yet the molecular mechanism underlying this process is still unclear. Indeed, we observed that all strains show a decreased growth rate in liquid media containing high levels of alanine, yet strains carrying the \u0394alaE\u0394dadAX mutation were much more sensitive to exogenously added alanine than the parental strain (Figure 4C). This result was not due to unspecific effects of alanine (such as osmolarity changes), because no significant differences between the mutants and the parental strain were observed when serine was added exogenously instead of alanine (Figure 4\u2014figure supplement 3). Therefore, extracellular alanine can modulate bacterial growth rates, particularly for strains that are deficient in alanine cross-feeding (\u0394alaE\u0394dadAX).\n\nSince colonies can accumulate alanine in their extracellular space (Figure 4B) and the cellular growth rate can be reduced by extracellular alanine (Figure 4C), we hypothesized that the increased cell death in the oxic region of the \u0394alaE\u0394dadAX colonies (Figure 4A) is due to the accumulation of toxic extracellular alanine levels in this region, which arise from the impaired cross-feeding of this strain. To test this hypothesis, we measured cell viability for the parental strain and mutants in liquid cultures with and without exogenous alanine during mid-exponential phase and in stationary phase. We found that even though the parental strain displayed a reduced growth rate when exposed to extracellular alanine (Figure 4C), the parental strain did not display increased levels of cell death in such conditions (Figure 4D) \u2013 likely due to their ability to secrete and consume alanine, allowing them to control their intracellular levels of alanine. In contrast, we found that in the presence of high extracellular alanine concentrations, \u0394alaE\u0394dadAX mutants displayed higher cell death levels than the parental strain, which was particularly strong in stationary phase conditions (Figure 4D). The increased cell death of the \u0394alaE\u0394dadAX mutants was not accompanied by a reduction in optical density, indicating these cells did not lyse. If cells can still export alanine (\u0394dadAX), cell viability in liquid cultures is significantly improved in the presence of extracellular alanine, compared with the \u0394alaE\u0394dadAX mutant (Figure 4D). If cells can still degrade alanine (\u0394alaE), cell viability is only slightly improved under stationary phase conditions, compared with the \u0394alaE\u0394dadAX mutant (Figure 4D). These cell viability measurements are consistent with the effect of extracellular alanine on the growth rate of \u0394alaE\u0394dadAX and \u0394alaE mutants (Figure 4C). We speculate that the exponentially growing cultures resembled the aerobic periphery at the base of the colony that is in contact with glucose and ammonium, whereas the stationary phase cultures resemble the oxic region above, which is nutrient depleted if no cross-feeding is present.\n\nTogether, these results support the hypothesis that in \u0394alaE\u0394dadAX mutant colonies, extracellular alanine accumulates due to impaired cross-feeding, which causes the increased cell death compared with the parental strain. Alanine cross-feeding should therefore have an important effect for the oxic region above the nutrient-rich base of the colony.\n\n### Strains impaired in alanine cross-feeding display a reduced fitness in colonies\n\nIf alanine cross-feeding has a significant impact on colony growth, we would expect that cross-feeding-impaired cells also have a fitness disadvantage compared to the parental strain during colony growth. To test if this is the case, we generated pairwise mixtures of different strains and inoculated these mixtures onto a membrane filter placed on M9 agar. It is important to note that this inoculation procedure using a liquid drop (leading to colonies that were inoculated by hundreds of cells) creates different colony morphologies compared to colonies grown from a single bacterium (which was the growth condition for all other experiments with colonies in this article). After 72 hr of incubation of the mixed-strain colonies, we compared the frequency of each strain at the growing front of the colony to the inoculation frequency (Figure 4\u2014figure supplement 4). In a control experiment, we observed that for strains that were isogenic except for the fluorescent protein they express, the superfolder GFP (sfGFP) expressing strain slightly outcompeted the mRuby2 expressing strain \u2013 likely due to a difference in the energetic cost of the biosynthesis of each fluorescent protein. We also observed that the \u0394alaE\u0394dadAX mutant was consistently strongly outcompeted by the parental strain (Figure 4\u2014figure supplement 4B), despite having no liquid culture grow differences (Figure 4\u2014figure supplement 1) and regardless of the fluorescent protein that they were carrying. These experiments indicate that cells capable of alanine cross-feeding have a fitness advantage during colony growth.\n\n### Alanine cross-feeding influences colony morphology\n\nIf the alanine molecules that are secreted in the anaerobic base of the colony are consumed in the oxic higher regions of the colony, alanine could serve as a carbon and nitrogen source and support growth in this region. From measurements of the colony height and diameter for mutants impaired in cross-feeding, we know that alanine cross-feeding does not have a major influence on colony size (Figure 4\u2014figure supplement 1). These measurements of colony height and diameter also show that alanine cross-feeding does not contribute to aerobic growth at the very top of the colony or at the outer edge of the base. We therefore investigated effects of alanine cross-feeding on cellular growth in the oxic region at mid-height, where the fraction of dead cells was highest for the \u0394alaE\u0394dadAX mutants (Figure 4A). Measurements of the colony morphology showed that \u0394alaE\u0394dadAX and \u0394alaE mutants displayed a significantly decreased colony curvature in the relevant region, in comparison to the parental strain (Figure 5A and B). The detection of this phenotypic difference in colony morphology was enabled by the high reproducibility of our E. coli colony biofilm growth assay. The \u2018bulge\u2019 of the parental colonies suggests that this region grows due to alanine cross-feeding. This interpretation is consistent with recent simulations of colony growth without cross-feeding, which resulted in nearly conical colony shapes with triangular xz-cross sections (Warren et al., 2019) that lacked the \u2018bulge\u2019 morphology we observed for the cross-feeding capable strains.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig5-v1.jpg)\n\n**Figure 5.:** (A) Colony height as a function of the colony radius, for colonies grown for 72 hr. Central lines correspond to the mean and the shaded area to the s.d., n = 3 biological replicates. (B) Slope of curves in panel A at height 100 \u00b5m. Data are mean \u00b1 s.d., n = 3 biological replicates. (C) Fluorescence ratio of constitutively expressed unstable GFP and stable mRuby2, which is a measure for the cellular growth rate, as shown in Figure 5\u2014figure supplement 1. The unstable GFP was constructed by adding the ASV-tag to superfolder GFP. The fold-change of this fluorescent protein ratio was calculated for the oxic colony region between the heights 100 \u00b5m and 0 \u00b5m. The fluorescent protein ratio was only measured for cells located within 30 \u00b5m from the outer colony surface, as a conservative measure of the oxic region. Data are mean \u00b1 s.d., n = 5\u20136 biological replicates. Statistical significances were calculated using one-way ANOVA with Dunnett\u2019s correction. Non-significant differences are labeled \u2018ns\u2019 and the p-value is shown in brackets; **p < 0.01, ****p < 0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Optical density at 600 nm (OD600; shown in red, left y-axis) and the ratio between unstable GFP (with the ASV-tag) and mRuby2 (shown in blue, right y-axis) as a function of time for a liquid culture of strain KDE2937.\n\nTo further experimentally investigate the effect of alanine cross-feeding on cellular growth in the mid-height oxic region, we measured the fluorescence ratio of an unstable version of the superfolder GFP (Andersen et al., 1998) and the long-lived mRuby2, both of which were expressed constitutively using a Ptac promoter. The ratio of these fluorescent proteins serves as a measure of the cellular growth rate (Figure 5\u2014figure supplement 1). These measurements showed that the parental strain grows faster in the mid-height oxic region than the cross-feeding impaired \u0394alaE\u0394dadAX mutant (Figure 5C), which further supports the hypothesis that this region of the colony relies on alanine as a carbon and nitrogen source.\n\n## Discussion\n\nWe showed that alanine metabolism is spatiotemporally regulated inside E. coli colony biofilms. The high degree of control and reproducibility of our model system enabled us to determine that interference with the export and consumption of alanine causes phenotypes in cell viability and cell growth rate. These viability and growth rate phenotypes are localized in the region of the colony that depends on alanine as a nutrient source, but they affect the global morphology of the colony.\n\nBased on our results, we propose the following model for the spatial organization of alanine metabolism in colonies that have grown for 72 hr (Figure 6A): Cells at the bottom periphery of the colony (red region in Figure 6A) have access to oxygen, glucose, and ammonium, and perform either aerobic respiration or fermentation by overflow metabolism (Basan et al., 2015; Cole et al., 2015) \u2013 these two possible metabolic states cannot be distinguished with our current approaches. Cells at the bottom center of the colony (orange region in Figure 6A) are anaerobic yet they have access to glucose and ammonium from the agar-solidified medium. These cells ferment glucose and secrete alanine, primarily via AlaE. Although many amino acid exporters have been described for E. coli (Pacheco et al., 2021; Prindle et al., 2015; Rani et al., 2007), their functions have remained elusive under regular physiological conditions. Our data now reveal a function for the alanine exporter AlaE during biofilm growth. Secreted alanine diffuses through the colony and can only be utilized by oxic nutrient-deprived cells (blue region in Figure 6A). Alanine consumption in the mid-height oxic region also has a detoxification effect, by reducing otherwise inhibitory levels of extracellular alanine. Alanine consumption at the oxic top of the colony is not significant, perhaps because the extracellular alanine is consumed before it reaches this region.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70794/elife-70794-fig6-v1.jpg)\n\n**Figure 6.:** This model applies to colonies grown for 72 hr on solid M9 agar containing glucose and ammonium. (A) In cross-feeding capable colonies, cells in the bottom layer of the biofilm have access to glucose and ammonium. Only cells in the outer periphery of the biofilm (green dashed line) have access to oxygen. Cells in the red region can use ammonium, glucose, and oxygen to perform aerobic respiration or fermentation by overflow metabolism. Cells in the orange region have access to glucose and ammonium, but no oxygen. These cells secrete alanine. The secreted alanine can be consumed by cells in the oxic region above this layer (depicted as blue), which perform aerobic respiration and convert alanine into pyruvate and ammonium that can be used for growth and to maintain cell viability. (B) Colonies of \u0394alaE\u0394dadAX cells have a reduced ability to consume and export alanine. These colonies have a region performing aerobic respiration or overflow metabolism (red), similar to the parental strain. These colonies also have an anoxic fermentation region (orange), yet this region displays significantly less alanine secretion compared to the parental strain. Furthermore, these colonies lack an alanine consuming population in the oxic region. Due to the limited alanine secretion and alanine consumption of this strain, \u0394alaE\u0394dadAX colonies display higher cell death and less growth in the otherwise cross-feeding-dependent oxic region, resulting in a more conical colony shape in comparison to parental colonies.\n\nColonies that are impaired in alanine cross-feeding because of a reduced ability to secrete and consume alanine display less growth and more cell death in the oxic glucose-deprived region, leading to a conical-shaped colony (Figure 6B). Furthermore, cross-feeding impaired cells are more susceptible to growth inhibition by high extracellular alanine levels (Figure 4C) and are outcompeted by the parental strain during colony growth.\n\nThe spatiotemporal organization of alanine metabolism during colony growth is unique among amino acids (Figure 1D and E), and is based on the secretion of alanine in the anaerobic, glucose-rich, and ammonium-rich base of the colony. Why is alanine secreted in this region? We speculate that this is not an altruistic trait evolved to support a starving oxic subpopulation at a different location, because such a trait would be highly susceptible to social cheaters in a multi-species community. Instead, alanine secretion in this region may be a necessity to avoid high intracellular alanine levels that presumably result from anaerobic fermentation of glucose in the presence of ammonium. High alanine levels are inhibitory (Figure 4C), so that secretion of alanine and transport of alanine away from this population is beneficial to this population.\n\nOn the other side of the cross-feeding interaction, the alanine-consuming subpopulation in the aerobic mid-height region of the colony strongly benefits from the secreted alanine originating from the base of the colony. We note that the alanine consumption in the aerobic mid-height region of the colony necessarily causes a steeper alanine concentration gradient between the two interacting subpopulations, compared with a case in which no alanine is consumed. Due to Fick\u2019s law of diffusion, a steeper concentration gradient causes a higher diffusive flux. Therefore, the presence of the alanine-consuming subpopulation results in a benefit for the alanine-secreting subpopulation, by causing a higher diffusive flux of alanine away from the alanine-secreting population. It is unclear whether this benefit for the alanine-secreting subpopulation is significant, as it is not possible for us to measure local growth rates or cell viability in the anoxic base of the colony due to optical limitations of confocal fluorescence microscopy in this region. In summary, the interaction between the two cross-feeding subpopulations is likely mutualistic.\n\nThe spatial organization of alanine cross-feeding between two subpopulations we described in this study is analogous to the carbon cross-feeding in E. coli colonies via acetate, because it involves metabolite secretion in the anaerobic population and consumption in the carbon-starved oxic population (Cole et al., 2015; Dal Co et al., 2019; Wolfsberg et al., 2018). However, the location of the population that is proposed to consume acetate as a carbon source spans most of the oxic region of the colony (Cole et al., 2015), whereas alanine is primarily consumed only in the oxic mid-height region of the colony. Interestingly, our spatial transcriptomes did not reveal a signature for acetate cross-feeding between the anaerobic and oxic regions of the colony (Figure 1\u2014figure supplement 4B), yet transcripts coding for enzymes involved in lactate, formate, and succinate metabolism display patterns that are indicative of spatially organized metabolism that could be the basis of carbon cross-feeding. Whether acetate, lactate, formate, and succinate are in fact cross-fed in our system remains to be tested in future work. In contrast to these metabolites, alanine can not only be used as carbon source, but also as a nitrogen source in the cross-feeding-dependent region, and we note that it is currently not clear what limits growth in the higher regions of the colony \u2013 whether it is carbon, nitrogen, or other elements such as iron, sulfur, or phosphorous. Very recently, it was shown that alanine can be shared in colonies of the Gram-positive bacterium Bacillus subtilis, and that this effect required three-dimensional colonies for unknown reasons (Arjes et al., 2021). In our E. coli model system, three-dimensional growth is required to create an anoxic region replete with carbon and nitrogen sources that causes alanine secretion, and we speculate that this effect may also be required in B. subtilis, and in other species.\n\nSeveral cross-feeding interactions have been described in detail for multi-species communities (Henson et al., 2019; Kim et al., 2017; Moree et al., 2012; Pande et al., 2016; R\u00f8der et al., 2020; Smith et al., 2019; Watrous et al., 2013; Yang et al., 2009). Even though cross-feeding interactions are likely a ubiquitous process in single-species bacterial multicellular structures (San Roman and Wagner, 2018), only a few metabolic interactions between subpopulations have been documented for single-species biofilms (Arjes et al., 2021; Cole et al., 2015; Evans et al., 2020; Lin et al., 2018; Liu et al., 2015). For E. coli colonies grown on agar-solidified medium, and for bacterial communities in general, it is still unclear how many subpopulations interact metabolically, and on which length and time scales these interactions take place, and how significant these many interactions are for the community growth and stability.\n\n### Conclusion\n\nIn this study, we employed an unbiased approach based on temporal and spatial transcriptomes and metabolomes to reveal that a multitude of amino acids and mixed acid fermentation pathways display profiles that are consistent with cross-feeding. Particularly strong regulation was displayed by alanine metabolism, and we showed that alanine is a cross-fed metabolite inside E. coli colonies, between two spatially segregated subpopulations, with an interaction length scale of tens of microns. Alanine consumption supports growth in the cross-feeding-dependent region of the colony as a carbon and nitrogen source. Although many aspects of metabolism in biofilms are still unknown, methods for improved spatial and temporal analyses of metabolite profiles and transcriptome data promise the possibility to discover new metabolic interactions, and more generally understand the stability and functions of microbial communities.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE261</td>\n      <td>Drescher lab stock</td>\n      <td>Strain carrying plasmid pCP20</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE262</td>\n      <td>Drescher lab stock</td>\n      <td>Strain carrying plasmid pKD46</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE264</td>\n      <td>Drescher lab stock</td>\n      <td>Strain carrying plasmid pKD3</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE265</td>\n      <td>Drescher lab stock</td>\n      <td>Strain carrying plasmid pKD4</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE1361</td>\n      <td>Drescher lab stock</td>\n      <td>Strain carrying plasmid pNUT1361</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2338</td>\n      <td>Drescher lab stock</td>\n      <td>Strain carrying plasmid pNUT2338</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2658</td>\n      <td>Drescher lab stock, Addgene #64,969</td>\n      <td>Strain carrying plasmid pUC18R6KT-mini-Tn7-Km</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2659</td>\n      <td>Drescher lab stock, Addgene #64,968</td>\n      <td>Strain carrying plasmid pTNS2</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2674</td>\n      <td>This study</td>\n      <td>Strain carrying plasmid pNUT2674</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2787</td>\n      <td>This study</td>\n      <td>Strain carrying plasmid pNUT2787</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2838</td>\n      <td>This study</td>\n      <td>Strain carrying plasmid pNUT2838</td>\n      <td>Plasmid information listed in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE474</td>\n      <td>Serra et al., 2013a</td>\n      <td>E. coli AR3110 wild-type</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE679</td>\n      <td>Vidakovic et al., 2018</td>\n      <td>KDE474 (E. coli AR3110), Ptac-mRuby2-mRuby2 and KanR inserted at attB site (Ptac without operator).</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE722</td>\n      <td>Vidakovic et al., 2018</td>\n      <td>KDE679 with \u0394fliC::scar.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE1899</td>\n      <td>This study</td>\n      <td>KDE474 (E. coli AR3110) with \u0394fliC::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2007</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394alaE::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2009</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394dadAX::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2086</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394alaE::scar, \u0394dadAX::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2183</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394cycA::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2185</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394livG::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2438</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394yaaJ::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2242</td>\n      <td>This study</td>\n      <td>AR3110, Ptac-sfgfp-sfgfp and KanR inserted at attB site (Ptac without operator), with \u0394fliC::scar, \u0394alaE::scar, \u0394dadAX::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2445</td>\n      <td>This study</td>\n      <td>AR3110, Ptac-sfgfp-sfgfp and KanR inserted at attB site (Ptac without operator), with \u0394fliC::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2533</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar \u0394cycA::scar, \u0394livG::scar, \u0394alaE::scar, \u0394yaaJ::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2564</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394cycA::scar, \u0394dadAX::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2607</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394yaaJ::scar, \u0394dadAX::scar.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2937</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, Ptac-sfgfp(ASV) at the Tn7 insertion site, coding for an unstable superfolder GFP with an AANDENYAASV-tag.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2938</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394alaE::scar, Ptac-sfgfp(ASV) at the Tn7 insertion site.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2939</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394dadAX::scar, Ptac-sfgfp(ASV) at the Tn7 insertion site.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>KDE2940</td>\n      <td>This study</td>\n      <td>KDE679 with \u0394fliC::scar, \u0394alaE \u0394dadAX, Ptac-sfgfp(ASV) at the Tn7 insertion site.</td>\n      <td>This strain can be obtained from the Drescher lab upon request</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO834</td>\n      <td>This study</td>\n      <td>Insertions at the attB site</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO894</td>\n      <td>This study</td>\n      <td>fliC deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO895</td>\n      <td>This study</td>\n      <td>fliC deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO1662</td>\n      <td>This study</td>\n      <td>Insertions at the attB site</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2562</td>\n      <td>This study</td>\n      <td>alaE deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2563</td>\n      <td>This study</td>\n      <td>alaE deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2566</td>\n      <td>This study</td>\n      <td>dadAX deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2567</td>\n      <td>This study</td>\n      <td>dadAX deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2845</td>\n      <td>This study</td>\n      <td>cycA deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2846</td>\n      <td>This study</td>\n      <td>cycA deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2841</td>\n      <td>This study</td>\n      <td>livG deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO2842</td>\n      <td>This study</td>\n      <td>livG deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3481</td>\n      <td>This study</td>\n      <td>yaaJ deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3482</td>\n      <td>This study</td>\n      <td>yaaJ deletion</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3256</td>\n      <td>This study</td>\n      <td>pNUT2338 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3257</td>\n      <td>This study</td>\n      <td>pNUT2338 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3817</td>\n      <td>This study</td>\n      <td>pNUT2838 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3818</td>\n      <td>This study</td>\n      <td>pNUT2838 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3785</td>\n      <td>This study</td>\n      <td>pNUT2674 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO3786</td>\n      <td>This study</td>\n      <td>pNUT2674 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO4121</td>\n      <td>This study</td>\n      <td>pNUT2787 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO4121</td>\n      <td>This study</td>\n      <td>pNUT2787 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KDO4127</td>\n      <td>This study</td>\n      <td>pNUT2838 construction</td>\n      <td>The sequence of this oligonucleotide can be found in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>MathWorks</td>\n      <td>Version R2019b</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad Software</td>\n      <td>Version 9.2.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NIS-Elements</td>\n      <td>Nikon</td>\n      <td>Version 4.5.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Inkscape</td>\n      <td>Inkscape</td>\n      <td>Version 1.0.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CLC Genomics Workbench</td>\n      <td>Qiagen</td>\n      <td>Version 11.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Na2HPO4</td>\n      <td>Carl Roth</td>\n      <td>P030.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CoCl2</td>\n      <td>Carl Roth</td>\n      <td>7095.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MnSO4</td>\n      <td>Sigma-Aldrich</td>\n      <td>M8179</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CuCl2</td>\n      <td>Sigma-Aldrich</td>\n      <td>307,483</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ZnSO4</td>\n      <td>Sigma-Aldrich</td>\n      <td>Z0251</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>thiamine-HCl</td>\n      <td>Sigma-Aldrich</td>\n      <td>T4625</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FeCl3</td>\n      <td>Sigma-Aldrich</td>\n      <td>31,332</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MgSO4,</td>\n      <td>Sigma-Aldrich</td>\n      <td>M2643</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CaCl2</td>\n      <td>Sigma-Aldrich</td>\n      <td>C5670</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NaCl</td>\n      <td>Carl Roth</td>\n      <td>HN00.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(NH4)2SO4</td>\n      <td>Carl Roth</td>\n      <td>3746.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>KH2PO4</td>\n      <td>Carl Roth</td>\n      <td>3904.1</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains, strain construction, and media\n\nAll E. coli strains used in this study are derivatives of the E. coli K-12 AR3110 strain (Serra et al., 2013a). For the construction of plasmids and bacterial strains, standard molecular biology techniques were applied (Sambrook et al., 1989), using enzymes purchased from New England Biolabs or Takara Bio. All AR3110 derivatives carried a constitutively expressed fluorescent protein expression system (based on the Ptac promoter without the lac operator) inserted in the chromosome at the attB site. To generate chromosomal deletions, the lambda red system was used to replace the target region with an antibiotic cassette flanked by FRT sites (Datsenko and Wanner, 2000). Then, the Flp-FRT recombination system was utilized to remove the antibiotic resistance cassette (Cherepanov and Wackernagel, 1995). To insert the unstable fluorescent protein sfGFP(ASV) (Andersen et al., 1998) expressed under the control of the Ptac promoter (without the lac operator) and a chloramphenicol cassette flanked by FRT sites into the Tn7 insertion site, we used the protocol described by Choi et al., 2005. After the fragment was inserted, the chloramphenicol resistance cassette was removed using the Flp-FRT recombination system. All strains, plasmids, and oligonucleotides that were used in this study are listed in Supplementary files 1-3, respectively.\n\nCultures were grown in LB-Miller medium (10\u00a0g L\u20131 NaCl, 10\u00a0g L\u20131 tryptone, 5\u00a0g L\u20131 yeast extract) for routine culture and cloning, or in M9 minimal salts medium supplemented with 5\u00a0g L\u20131 D-glucose (which we refer to as \u201cM9 medium\u201d throughout the article for simplicity). The M9 minimal salts medium consisted of the following components: 42.3 mM Na2HPO4 (Carl Roth P030.2), 22 mM KH2PO4 (Carl Roth 3904.1), 11.3 mM (NH4)2SO4 (Carl Roth 3746.2), 8.56 mM NaCl (Carl Roth HN00.2), 0.1 mM CaCl2 (Sigma-Aldrich C5670), 1 mM MgSO4, (Sigma-Aldrich M2643), 60 \u03bcM FeCl3 (Sigma-Aldrich 31332), 2.8 \u03bcM thiamine-HCl (Sigma-Aldrich T4625), 6.3 \u00b5M ZnSO4 (Sigma-Aldrich Z0251), 7 \u00b5M CuCl2 (Sigma-Aldrich 307483), 7.1 \u00b5M MnSO4 (Sigma-Aldrich M8179), 7.6 \u00b5M CoCl2 (Carl Roth 7095.1). M9 agar plates were made using 8 mL of M9 medium (as defined above) with 1.5 % w/v agar-agar, aliquoted into petri dishes with 35 mm diameter and 10 mm height (Sarstedt 82.1135.500).\n\n### Colony biofilm growth\n\nSamples from -80 \u00b0C frozen stocks were used to inoculate LB-Miller medium with kanamycin (50 \u00b5g mL\u20131) followed by incubation for 5 hr at 37 \u00b0C with shaking at 220 rpm. At this point, 1 \u00b5L of the culture was used to inoculate 5 mL of M9 medium inside a 100-mL-Erlenmeyer flask and grown at 37 \u00b0C with shaking at 220 rpm for 16\u201322 hr. The cultures were continuously kept in exponential phase by regular back-dilutions, with optical density at 600 nm (OD600) always below 0.6. Aliquots from these cultures were passed through a sterile 0.45 \u00b5m pore size polyvinylidene fluoride membrane filter of diameter 5 mm, unless stated otherwise. High-resolution confocal fluorescence microscopy showed that this treatment resulted in spatially well-separated single cells on the filter membrane. Using clean and sterile stainless-steel tweezers, these filter membranes carrying the cells were immediately placed directly onto M9 agar plates and incubated at 37 \u00b0C for up to 72 hr.\n\n### Microscopy\n\nAll imaging was performed using a Yokogawa spinning disk confocal unit mounted on a Nikon Ti-E inverted microscope. A Nikon 40 x air extra-long working distance objective with numerical aperture (NA) 0.60 was used for all imaging, except for mutant screening (Figure 4\u2014figure supplement 1) and competition experiments (Figure 4\u2014figure supplement 4) where a 4 x air objective (NA 0.13, Nikon) was used, and single-cell imaging (Figure 2\u2014figure supplement 1A) were a 100 x oil objective (NA 1.45, Nikon) was used. All imaging was done inside a microscope incubator kept at 37 \u00b0C. Instead of imaging through the filter, colonies were imaged facing down and the Petri dish lid was removed (Figure 1\u2014figure supplement 1A). To maintain a high humidity and avoid evaporation of the M9 agar, the space between the microscope objective and the petri dish was sealed with flexible plastic foil. To avoid condensation on the objective, the objective was heated using an objective heater at 37 \u00b0C.\n\n### Colony detection and biovolume measurements with adaptive microscopy\n\nIn preliminary experiments, we observed that colony growth of the wild-type E. coli strain AR3110 resulted in heterogeneous shapes (Figure 1\u2014figure supplement 1B) that were caused by flagella-based motility of cells on the filter membranes in the very early stages of incubation. To avoid the effects caused by cellular motility during early colony growth, all subsequently experiments were performed using a strain that lacks the flagellin FliC (\u2206fliC), which we used as parental strain in this study. This strain was incapable of swimming motility, and the resulting colonies were highly reproducible in shape and highly symmetric (Figure 1B and Figure 1\u2014figure supplement 1C).\n\nTo determine the biomass of colonies, the colonies were grown on filter membranes on M9 agar as explained above, but with the addition of 0.2 \u00b5m dark red fluorescent beads (Invitrogen, F8807) to the bacterial suspension prior to filtering. This resulted in far-red fluorescent beads being located on the filter in addition to the red fluorescent cells. Using adaptive microscopy (Jeckel and Drescher, 2021) these beads were used to find the correct focal plane for imaging of the bacterial cells (or base of the colonies). After 12, 18, 24, 32, 42, 48, 60, and 72 hr of colony growth, the colonies were imaged in 3D using confocal microscopy. All colonies on the membrane filter were imaged using an adaptive microscopy approach (Jeckel and Drescher, 2021) as follows: The whole filter was scanned using 2D imaging, followed by an identification of all colonies on the filter, followed by a high-resolution 3D imaging of each colony. From the scans of the whole filter, the number of colonies was determined. From the 3D images of the colonies, the biovolume was calculated. To obtain the biovolume, the outline of the colony was identified by thresholding the image gradient in each z-slice. The convex area of this binary image was then used as a measure for the biomass present in this plane such that summation over all slices followed by multiplication with the appropriate \u00b5m\u00b3/voxel calibration yielded the biovolume of each colony. The code used for image analysis is available on Github, https://github.com/knutdrescher/colonymetabolism.\n\n### Quantification of mRuby2 fluorescence in colonies from images\n\nThe colonies were grown for 72 hr and then imaged using the microscopy conditions described above, and colonies were detected in the images as described above. The colony surface was defined as the interface between the colony and the air. Measurements of fluorescence levels inside the colony at different locations was performed analogous to methods that are available within the BiofilmQ software (Hartmann et al., 2021), yet some modifications were performed as described below, which made it more convenient to use separate functions (available on Github, https://github.com/knutdrescher/colonymetabolism).\n\nTo measure the vertical and horizontal fold changes in mRuby2 fluorescence as a function of the distance to the colony surface (Figure 2A) two different approaches were applied. To measure the fluorescence in a vertical direction inside the colony, a vertical cylinder of radius 3.3 \u00b5m was defined in the center of the colony. The fluorescence in that cylinder was quantified and the values obtained were normalized to the fluorescence at the colony surface. To measure the fold change in fluorescence horizontally within the colony, a xy-horizontal plane at the base of the colony was selected. The mRuby2 fluorescence was quantified in the plane and normalized to the fluorescence at the colony-air interface within the same plane.\n\nThe fold-change in mRuby2 fluorescence as a function of the distance to the colony surface in whole colonies was also measured irrespective of the orientation of the measurement axis (Figure 2\u2014figure supplement 1D). For this, the mRuby2 fluorescence intensity values of all locations inside the colony with a similar distance to the colony surface (see definition above) were averaged.\n\nTo determine the total fraction of fluorescent fraction of cells in a colony (insert of Figure 2B), colonies were grown as described above for either 12 h, 18h, 24 h, 32 h, 42 h, 48h, 60 h, or 72 h. Then, the mRuby2 fluorescence in the colonies was imaged using confocal microscopy, using the microscopy conditions described above. Inside the colony, 3D regions that were fluorescent in the mRuby2 channels were identified via thresholding. The fluorescent fraction was calculated as the fluorescent volume divided by the total volume of the colony.\n\n### Liquid growth assays\n\nSamples from -80 \u00b0C frozen stocks were used to inoculate LB-Miller medium, followed by incubation for 5 hr at 37 \u00b0C with shaking at 220 rpm. Each culture was back-diluted 5,000-fold into 5 mL of M9 medium inside a 100-mL-Erlenmeyer flask, and grown at 37 \u00b0C with shaking at 220 rpm. At an OD600 of 0.3 each culture was washed three times in M9 minimal salts medium (lacking glucose and ammonium sulfate) and resuspended in the same volume of the medium of interest. These bacterial suspensions were diluted 10-fold and transferred into a 96-well plate (Sarstedt, 82.1581.001), and incubated at 37 \u00b0C with shaking in a microtiter plate reader (Epoch2, Biotek). The resulting growth curve data was analyzed using Matlab (version R2019b, Mathworks).\n\nTo simultaneously measure OD600 and the ratio between unstable GFP (with the ASV-tag) and mRuby2 as a function of time (Figure 5\u2014figure supplement 1), a glycerol stock of the strain KDE2937 was used to inoculate LB-Miller medium, followed by incubation for 5 hr at 37 \u00b0C with shaking at 220 rpm. The culture was then back-diluted 5000-fold into 5 mL of M9 medium inside a 100 mL Erlenmeyer flask and grown for 16 hr. This culture was used to inoculate 75 mL of M9 medium inside a 1 L Erlenmeyer flask with an adjusted OD600 of 0.05. This culture was grown at 37 \u00b0C with shaking at 220 rpm. Aliquots of the culture were taken every 30 min, to measure the OD600 and to determine the ratio between unstable GFP (with the ASV-tag) and mRuby2 using microscopy. To image the aliquots, they were placed between a cover slip and a M9 agar pad and imaged as described in the microscopy methods section.\n\n### Anoxic liquid growth assays\n\nSamples from -80 \u00b0C frozen stocks were used to inoculate LB-Miller medium, followed by incubation for 5 hr at 37 \u00b0C with shaking at 220 rpm. Each culture was then back-diluted 5000-fold into 5 mL of M9 medium inside a 100 mL Erlenmeyer flask, and grown at 37 \u00b0C with shaking at 220 rpm. At OD600 = 0.7 each culture was washed three times in M9 minimal salts medium (lacking glucose and ammonium sulfate) and resuspended in 300 \u00b5L. These bacterial suspensions were used to inoculate 20 mL of the particular medium under investigation with a starting OD600 of 0.03, which was placed into a 50 mL bottle that was closed with a gas-tight lid containing a rubber septum (Duran, 292062803). Immediately after inoculation, the bottle and the culture were made anoxic using the following protocol: A needle connected to a system that can switch between applying a vacuum and gaseous N2 was introduced through the rubber septum. Then, vacuum was applied to remove the gas in the bottle for 1 min, followed by flushing the bottle with N2 at 1 bar for 1 min, while the medium in the bottle was continuously mixed using a magnetic stirrer. This process was repeated for 15 cycles. After this process, the needle was slowly removed from the bottle and the cultures were incubated at 37 \u00b0C with shaking at 220 rpm. After 96 hr of incubation, the OD600 was measured (Figure 3D).\n\n### Liquid culture conditions for measurements of extracellular alanine in supernatants\n\nSamples from -80 \u00b0C frozen stocks were used to inoculate LB-Miller medium with kanamycin (50 \u00b5g mL\u20131), followed by incubation for 5 hr at 37 \u00b0C with shaking at 220 rpm. The cultures were then back-diluted 5000-fold into 5 mL of M9 medium inside a 100-mL-Erlenmeyer flask and incubated at 37 \u00b0C with shaking at 220 rpm. These cultures were kept in exponential phase by regular back-dilutions, with optical density at 600 nm (OD600) always below 0.6. At an OD600 of 0.3, the cultures were centrifuged at 14000 g for 2 min and the supernatant was removed. To investigate aerobic growth conditions, the pellets were suspended in M9 minimal salts medium supplemented with glucose and the OD600 was adjusted to 0.1 by dilution. For oxic starvation conditions, the pellets were suspended in same volume of M9 medium lacking ammonium sulfate but including glucose, M9 medium lacking glucose but including ammonium sulfate, or M9 medium lacking both glucose and ammonium sulfate. The cultures were then placed into 100-mL-Erlenmeyer flasks at 37 \u00b0C with shaking at 220 rpm as before. To investigate anoxic conditions, the pellets were suspended in the same media as described above, but the resulting cultures were transferred into a closed 15-mL-conical centrifuge tube (Sarstedt, 62.554.100) filled to the top. The tubes were oriented horizontally and incubated at 37 \u00b0C with shaking at 100 rpm. For the oxic and anoxic starvation conditions, the samples were taken after 2 hr of incubation. For aerobic and anaerobic conditions that permitted growth, samples were taken during exponential growth phase. Samples were processed and analysed using mass spectrometry as described below.\n\n### Sample processing for mass spectrometry-based metabolomics\n\nTo measure metabolites in whole colonies over time, filter membranes that carried colonies were transferred into 150 \u00b5L of a mixture of 40:40:20 (v/v) acetonitrile:methanol:water at \u201320 \u00b0C for metabolite extraction. This suspension was vortexed with a glass bead to disrupt the colonies.\n\nTo measure extracellular metabolites from colonies, the filter membranes carrying the colonies were resuspended in 1 mL phosphate-buffered saline (PBS; 8\u00a0g l\u20131 NaCl, 0.2\u00a0g l-1 KCl, 1.44\u00a0g l\u20131 Na2HPO4, 0.24\u00a0g l\u20131 KH2PO4, pH 7.4) at 37 \u00b0C. In this case, no glass bead vortexing was needed, as the colonies readily dissolved. The suspension was immediately vacuum-filtered using a 0.45 \u00b5m pore size filter (HVLP02500, Merck Millipore) and 100 \u00b5L of the flow-through were mixed with 400 \u00b5L of a mixture of 50:50 (v/v) acetonitrile:methanol at \u201320 \u00b0C.\n\nTo measure extracellular metabolites from liquid cultures, 1 mL of grown cultures were filtered on a 0.45 \u00b5m pore size filter (HVLP02500, Merck Millipore) and 100 \u00b5L of the flow through were mixed with 400 \u00b5L of a mixture of 50:50 (v/v) acetonitrile:methanol at \u201320 \u00b0C.\n\nAll extracts were centrifuged for 15 min at 11000 g at \u20139 \u00b0C and stored at \u201380 \u00b0C until mass spectrometry analysis.\n\n### Mass spectrometry measurements\n\nFor metabolomics, centrifuged extracts were mixed with 13C-labeled internal standards. Chromatographic separation was performed on an Agilent 1290 Infinity II LC System (Agilent Technologies) equipped with an Acquity UPLC BEH Amide column (2.1 \u00d7 30 mm, particle size 1.8 \u00b5m, Waters) for acidic conditions and an iHilic-Fusion (P) HPLC column (2.1 \u00d7 50 mm, particle size 5 \u00b5m, Hilicon) for basic conditions. The following binary gradients with a flow rate of 400 \u00b5l min\u20131 were applied. Acidic condition: 0\u20131.3 min isocratic 10% A (water with 0.1% v/v formic acid, 10 mM ammonium formate), 90% B (acetonitrile with 0.1% v/v formic acid), 1.3\u20131.5 min linear from 90% to 40% B; 1.5\u20131.7 min linear from 40% to 90% B, 1.7\u20132 min isocratic 90% B. Basic condition: 0\u20131.3 min isocratic 10% A (water with formic acid 0.2% (v/v), 10 mM ammonium carbonate), 90% B (acetonitrile); 1.3\u20131.5 min linear from 90% to 40% B; 1.5\u20131.7 min linear from 40% to 90% B, 1.7\u20132 min isocratic 90% B. The injection volume was 3.0 \u00b5l (full loop injection).\n\nIons were detected using an Agilent 6495 triple quadrupole mass spectrometer (Agilent Technologies) equipped with an Agilent Jet Stream electrospray ion source in positive and negative ion mode. The source gas temperature was set to 200 \u00b0C, with 14 L min\u20131 drying gas and a nebulizer pressure of 24 psi. Sheath gas temperature was set to 300 \u00b0C and the flow to 11 L min\u20131. Electrospray nozzle and capillary voltages were set to 500 and 2500 V, respectively. Metabolites were identified by multiple reaction monitoring (MRM). MRM parameters were optimized and validated with authentic standards (Guder et al., 2017). Metabolites were measured in 12C and 13C isoforms, and the data was analysed with a published Matlab code (Guder et al., 2017).\n\n### Data analysis for metabolomics\n\nFor whole-colony metabolite measurements, the mass spectrometry measurements were normalized by the total biovolume measured with confocal microscopy. For measurements of the extracellular metabolites in colonies (Figure 4B), the mass spectrometry measurements were normalized by colony number and average colony volume determined by confocal microscopy. To create heatmaps of the metabolite dynamics, the Genesis software (Sturn et al., 2002) was used.\n\n### Whole-colony transcriptomes\n\nColonies were grown on filter membranes as described above. After 12, 18, 24, 32, 42, 48, 60, and 72 hr of growth,the filters carrying the colonies were picked up using plastic forceps and transferred into 1.5 mL Eppendorf tubes, which were immediately placed into liquid nitrogen, followed by storage at \u201380 \u00b0C until further processing. To extract the RNA, a glass bead and 600 \u03bcL of cell lysis buffer were added during thawing of the sample at room temperature. Cell lysis buffer consisted of TE (10 mM Tris, adjusted to pH 8.0 with HCl, 1 mM EDTA) and 1 mg/mL of chicken egg lysozyme (Sigma, L6876). The colonies were disrupted by vortexing and the cell suspension was moved to a new 1.5 mL Eppendorf tube. Then, total RNA was extracted using the hot SDS/phenol method (Jahn et al., 2008) with some modifications as follows. Cells were lysed at 65 \u00b0C for 2 min in the presence of 1% (w/v) SDS, and the lysate was incubated with 750 \u00b5L of Roti-Aqua-Phenol (Carl Roth, A980) at 65 \u00b0C for 8 min, followed by the addition of 750 \u00b5L chloroform (Sigma, C2432) to the aqueous phase and centrifugation using a phase lock gel tube (VWR, 733\u20132478). RNA was purified from this suspension by ethanol precipitation and dissolved in 60 \u00b5L of RNase-free water. Samples were then treated with TURBO DNase (Thermo Fisher, AM2238) and rRNA depletion was performed using Ribo-Zero rRNA Removal Kit for bacteria (Illumina, MRZB12424). Sequencing library preparation was carried out using NEBNext Ultra II Directional RNA Library Prep with Sample Purification Beads (NEB, E7765S). Sequencing was carried out at the Max Planck Genome Centre (Cologne, Germany) using an Illumina HiSeq3000 with 150 bp single reads. All transcriptomic analyses were performed using the software CLC Genomics Workbench v11.0 (Qiagen). The E. coli K-12 W3310 genome (Hayashi et al., 2006), parental strain of E. coli AR3110 (Serra et al., 2013a), was used as reference for annotation. For creating heatmaps, clustering of transcripts was performed using the software Genesis (Sturn et al., 2002).\n\n### Spatial transcriptomes\n\nFilter membranes carrying colonies that were grown for 72 hr were transferred into 2 mL Eppendorf tubes (one filter per tube). Cells from the colonies on a filter were then quickly suspended in 1 mL PBS by vortexing and pipetting, followed by removal of the filter from the tube, and fixation of the cells by adding formaldehyde (Sigma, F8775) to a final concentration of 4%, for 10 min at room temperature. Formaldehyde fixation did not affect the transcriptomic profile or the fluorescence intensity (Figure 2\u2014figure supplement 2). Then, the fixed cells were washed three times with PBS and the cell suspension was filtered with a 5 \u00b5m pore size filter (Sartorius, 17594) to remove aggregates. Cells were separated using fluorescence-activated cell sorting (BD FACSAria Fusion), using the mRuby2 fluorescence as a signal. After sorting, approximately 106 cells were collected in 10 mL of PBS for each bin. To concentrate the samples, they were vacuum-filtered using a 0.45 \u00b5m membrane filter (Millipore, HVLP02500). The filters containing the cells were suspended in 400 \u03bcL of the cell lysis buffer (same composition as above). The suspension was frozen in liquid nitrogen and stored at \u201380 \u00b0C until RNA extraction.\n\nTotal RNA was extracted using the same protocol as described above (based on the hot SDS/phenol method), but with the following modifications to minimize the number of steps and loss of RNA: after treatment with phenol, the aqueous and organic phases were both directly transferred to a phase lock gel tube (VWR, 733\u20132478) without centrifugation. Chloroform was added and centrifuged at 15000 rpm for 15 min at 12 \u00b0C. After centrifugation, RNA in the aqueous phase was purified and collected in 10 \u00b5L of RNase-free water using Agencourt RNAClean XP (Beckman Coulter, A63987) according to the manufacturer\u2019s recommendations. Samples were then treated with TURBO DNase (Thermo Fisher, AM2238) and rRNA depletion was performed using Ribo-Zero rRNA Removal Kit for bacteria (Illumina, MRZB12424). Library preparation was carried out using NEBNext Ultra II Directional RNA Library Prep with Sample Purification Beads (NEB, E7765S). Sequencing was carried out at the Max Planck Genome Centre (Cologne, Germany) using an Illumina HiSeq3000 with 150 bp single reads.\n\nSpatial and temporal transcriptomic data were uploaded to the Gene Expression Omnibus (GEO) repository with the accession code GSE175768.\n\n### Measurements of the fraction of dead cells\n\nTo measure the fraction of dead cells within the oxic region of the colonies, the colonies were grown on filter membranes on M9 agar as described above, but with the exception that SYTOX Green (Thermofisher, S7020) with a final concentration of 2.5 \u00b5M was added to the M9 agar plates. SYTOX Green is a nucleic acid stain that can only diffuse into dead cells with a compromised cell membrane. After incubation for 72 hr, the mRuby2 fluorescence and the SYTOX Green fluorescence in the colonies was imaged using confocal microscopy. Inside the colony, 3D regions that were fluorescent in both the mRuby2 and SYTOX Green channels were identified via thresholding. The fraction of dead cells was calculated as the thresholded volume present in both the mRuby2 and SYTOX Green channels, divided by the thresholded volume of the mRuby2 channel. For the quantification of the fraction of dead cells in the oxic region of the colony, only cells located within 30 \u00b5m from the outer surface of the colony were considered, because only in this region oxygen penetration was high enough to generate a sufficiently strong mRuby2 signal.\n\nTo measure the fraction of dead cells in liquid cultures, cultures were grown in M9 medium, which was supplemented with SYTOX Green (2.5 \u00b5M), incubated at 37 \u00b0C inside 96-well plates with continuous shaking. The OD600 and SYTOX Green fluorescence were measured in a microtiter plater reader (Spark 10 M, Tecan). The fraction of dead cells was calculated as the SYTOX Green fluorescence normalized by the OD600.\n\n### Strain competition experiments\n\nSamples from -80 \u00b0C frozen stocks were used to inoculate LB-Miller medium with kanamycin (50 \u00b5g mL\u20131), followed by incubation for 5 hr at 37 \u00b0C with shaking at 220 rpm. The cultures were then back-diluted 5000-fold into 5 mL of M9 medium inside a 100-mL-Erlenmeyer flask and incubated at 37 \u00b0C with shaking at 220 rpm until exponential phase. Then, the cultures were adjusted to an OD600 of 0.05 and two strains were mixed in a 1:1 ratio and the solution was diluted 100-fold. For each experiment, one strain expressed the fluorescent protein mRuby2 and the other strain the fluorescent protein sfGFP. The exact ratio of the strains in the inoculation suspension was measured using flow cytometry. Then, 1 \u00b5L of this mixture was filtered on a membrane filter, which it was placed on solid M9 agar and incubated at 37 \u00b0C. After 72 hr, the colonies were imaged and the ratio of each strain was measured in a ring with a width of 35 \u00b5m and at a distance of 350 \u00b5m from the edge of the inoculation spot using basic image analysis and image thresholding.\n\n### Oxygen measurements\n\nOxygen concentrations were measured in 72-hr-old colonies (grown on M9 agar as described above) using a 25-\u00b5m-tip oxygen microsensor (Unisense OX-25) according to the manufacturer\u2019s instructions. Briefly, the oxygen microsensor was calibrated using a two-point calibration. The microsensor was first calibrated to atmospheric oxygen using a calibration chamber (Unisense CAL300) containing water continuously bubbled with air. The microsensor was then calibrated to a \u2018zero\u2019 oxygen point using an anoxic solution of 0.1 M sodium ascorbate and 0.1 M sodium hydroxide in water. Oxygen measurements were then taken through the top \u2265100 \u00b5m of the colony biofilm in 5-\u00b5m-steps using a measurement time of 3 s at each position, and a wait time between measurements of 5 s. A micromanipulator (Unisense MM33) was used to move the microsensor within the colony. Profiles were recorded using a multimeter (Unisense) and the SensorTrace Profiling software (Unisense).\n\n### Image analysis scripts\n\nAll Matlab scripts used for image analysis are available on Github, https://github.com/knutdrescher/colonymetabolism (copy archived at swh:1:rev:cfc8d212071e634b6b7aa8462b745a14761193e9, Drescher, 2021).\n\n### Statistical analysis\n\nStatistical analysis was carried out using GraphPad Prism v8 (GraphPad Software), except for the statistical analysis for transcriptomic data, which was performed using the software CLC Genomics Workbench 11.0 (Qiagen). All statistical tests performed and sample sizes are reported in the corresponding figure legend. Each biological replicate was performed on a different day.\n",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "5e231ef9-d184-438f-9151-677ce3f54cb8",
+      "submission_id": "188a5f2c-a5ff-4571-a7ce-cfbc7f0b2777",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karina B Xavier, Instituto Gulbenkian de Ci\u00eancia Portugal\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70794.sa0](https://doi.org/10.7554/eLife.70794.sa0)\n\nIn this manuscript the authors characterize the temporal and spatial distribution of cells with different metabolic states within colony of biofilms of the model bacterium Escherichia coli using a combination of transcriptomics, metabolomics, and quantitative measurements of growth. They show that within the biofilm cells performing different metabolic functions are distributed in different regions of the colonies, and propose a model where nutrient cross-feeding through the amino acid alanine explains the phenotypic heterogeneity observed within the biofilm. Interestingly, they show that mutants impaired in cross-feeding have a fitness disadvantage. The finding reported and the innovative technical approaches used, can potentially be applied to identify novel metabolic interactions between communities of bacteria and understand how bacterial subpopulations interact spatially and metabolically within biofilms.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karina B Xavier, Instituto Gulbenkian de Ci\u00eancia Portugal\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70794.sa1](https://doi.org/10.7554/eLife.70794.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spatial alanine metabolism determines local growth dynamics of Escherichia coli colonies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Karina B Xavier as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nIn general, all three reviewers found the work technical very sound with potential impact for thinking about the spatial structure of bacterial species in biofilm in all bacterial species. While they recognize the interest of the proposed nutrient cross-feeding model for explaining the observed phenotypic spatial heterogeneity within the biofilm the reviewers think that additional experiments or arguments are needed to support the proposed model. Additionally, the reviewers also propose a couple of additional simple experiments which could help improve the significance of the finding reported in the paper.\n\nThe major points to be addressed are listed in the 3 essential revisions below. Additionally, you can also find in the end of this letter the sperate \"recommendations for the authors\" written by each of the reviewers which should help you to improve the manuscript and to better understand the rationale used by each of the reviewers that support for the proposed essential reviews. We recommend that you take the recommendations written by each of the reviewers into consideration while preparing the revised version, but you do not need to reply to each of the individual comments from the reviewers, you will only need to reply the essential points summarized here by the reviewing editor:\n\n1) We propose that the authors revise the model considering the following point: Specifically, we are concern about the fact that the authors are assuming that the cells are respiring, or fermenting based on whether they are in aerobic (oxygen expose) or anaerobic areas of the biofilm or not. In liquid cultures it is well known that bacteria use fermentative metabolism to promote fast growth, irrespective of oxygen levels, if the glucose levels in the medium are high enough. This could happen at the edge of the biofilm; cells are in close contact to the glucose of the agar medium. Thus, we question that the fast-growing bacteria at the edge of the biofilm are probably fermenting cells and not respiring cells.\n\nTherefore, we recommend that the authors revisit their model or include data that support the correlation between oxygen/respiration. One possibility that we recommend to the authors is to correlate the fermenting or respiring biofilm regions to glucose (and or alanine) levels instead of oxygen levels (this point is discussed in more detail in the specific recommendation of reviewer #3).\n\n2) Also related to the cross-feeding model, we recommend that the model described in Figure 6 also addresses what happens with the alaE dadAX mutant (which is impaired in cross-feeding), as this could help in understanding the overall proposed model (see major comment 1 from reviewer 1).\n\n3) To improve the broader relevance and overall implication of the findings described in the paper the reviewers propose the following two set of experiments: A) to determine if there are potential fitness advantages of the proposed alanine cross-feeding mechanism the authors could ask if there is a fitness advantage for the WT versus the mutant impaired in cross-feeding within the biofilm (see major comment 2 from reviewer 1), B) to shed some light on potential selective pressures related to alanine metabolism the authors could look at biofilms in colonies composed of a mixtures of WT and the alaE dadAX mutant (which is impaired in cross-feeding) and look for potential spatial sorting of the two strains within the biofilm community (see major comment 4 of reviewer 2).\n\nReviewer #1 (Recommendations for the authors):\n\nI have a couple major comments/questions that could be important for strengthening the model proposed in the paper:\n\n1 \u2013 The authors present a cross-feeding model in Figure 6 based on alanine cross-feeding explaining with the proposed model for the WT biofilm colonies. But, I think that the discussion about what happens in the alaE dadAX mutant is also important. I think it is important to also discuss what happens with the mutant, namely regarding cell death within the biofilm. Perhaps also have a scheme for the mutant, but at least to address it in the discussion.\n\n2 \u2013 I think it is not clearly demonstrated that there is a benefit for the overall fitness of the population within colony biofilm for having the proposed cross-feeding mechanism. But because there is more cell death in the alaE dadAX mutant it is likely that there is a fitness benefit. This could be tested by scrapping WT and mutant biofilms, disaggregating them and then determine colony forming units. This experiment should allow to address this question.\n\n3 \u2013 Alanine secretion under high nitrogen and high carbon conditions resemble what happens with acetate secretion, namely also because both metabolites are then consumed by starved cells. The authors mention this in the discussion. I think that the fact that cells are secreting alanine and not acetate is interesting. Perhaps it is relevant to comment on the fact that the cells secreting alanine in the biofilm have an excess of both Carbon and Nitrogen, as opposed to carbon only. Perhaps cells secrete acetate when Carbon is in excess but Nitrogen and secrete alanine when both are in excess, no?\n\nReviewer #2 (Recommendations for the authors):\n\nMost of my suggestions focus on the broader relevance of these findings, which I think the authors could extend quite substantially with a few more experiments.\n\n1. Line 100: the study suggests that the shift in the transcriptome after 24 h is due to oxygen depletion, but the authors don't actually show this (I don't think). They could monitor oxygen directly over time to address this point directly, e.g. through oxygen-sensitive nanoparticles.\n\n2. Line 154: I'm confused: couldn't the mRuby2 fluorescence increase due to moving the colony, which would expose it to more oxygen? Also, there's a typo: \"in for formerly\".\n\n3. In terms of why the mutant cells are dying (line 207), the authors suggest that it is due to the accumulation of alanine, which they can recapitulate through live/dead staining in liquid culture. It could be fascinating to track cells at the single-cell level \u2013 do the cells lyse? (if so, this could impact surrounding cells in a colony, by releasing more alanine and thereby increasing the local concentration) Or do the cells simply halt growth and become permeable?\n\n4. In a colony that is made up of a mixture of wild-type and \u2206alaE\u2206dadAX cells, do the two strains spatially sort based on their differential ability to grow in aerobic regions of the colony? This simple experiment could shed some light on the selective pressures on alanine metabolism.\n\n5. Line 229: can it simply be cell death that is providing the exogenous alanine?\n\n6. Figure 4D: why is there not increased cell death in the parent at high concentrations (5 mM) since the growth rate is lower at this concentration? And more generally, is the reduction in growth rate in the mutant quantitatively explained by the death rate, or do you have to invoke a second mechanism?\n\n7. Line 275: For the bulge morphology, can this be restored in a mixed colony of wild-type and the mutant? Or do you get an intermediate phenotype?\n\n8. How is the spatial patterning that they see affected by the ability of cells to produce matrix?\n\n9. Their model seems to predict what you would see in a more two-dimensional text, when colonies are sandwiched between a cover glass. This could be a neat means to further investigate the significance of alanine export for growth rate of the colony.\n\n10. What about the presence of another species that consumes alanine, will it colocalize preferentially at the aerobic region?\n\nReviewer #3 (Recommendations for the authors):\n\nI recommend the authors to revisit the idea of linking oxic/anoxic regions with alanine producers/consumers. Maybe is true but it needs stronger evidence-support because is different from what is described in liquid cultures. In the light of the data presented, I think is better idea to link alanine metabolism to glucose availability; it makes a stronger case,\n\n1) The authors equate the aerobic or anaerobic areas of the biofilm with respiring (fast-growing) or fermenting (slow-growing) cells, respectively. Is this already known? I am confused because, in liquid cultures, cells use fermentation to grow when carbohydrates are abundant and rely on respiration when the concentration of carbohydrates decreases. Hence, the regions with fast cell growth should show fermentative growth (alanine production) whereas the regions with slow growth undergo respiration and consume alanine as a non-preferred catabolite. Notice that these two biofilm areas are equally exposed to oxygen. This does not really fit with the model in figure 6 in which fast growing cells respire at high carbohydrate concentration. I can see a correlation between alanine metabolism and glucose abundance but the connection to oxygen levels is not clear to me.\n\n2) I am not convinced that maturation of the fluorescent protein mRuby2 is indicative of respiring bacteria. I think it is a very elegant way to identify the aerobic areas of the biofilm but again, bacteria can ferment even in the presence of oxygen, if the concentration of carbohydrates is high enough (i.e. crabtree effect in yeast, overflow metabolism in bacteria or Warburg effect in cancer cells). The subpopulation of fluorescence cells likely combine fermenting (closer edge to the agar) and respiring (middle-height edge of the colony) bacteria. Moreover, the authors removed glucose from the medium to alter the metabolic processes that consume oxygen (line 151) but this will severely impact fermentative growth as well.\n\n3) I do not understand how these extracellular alanine concentrations are toxic to the cells. The paper cited is about intracellular alanine (Katsube et al., 2019). Is there anything known about how extracellular alanine levels are toxic to the cells?\n\nLine 114: \"Lactate, formate and succinate biosynthesis, however, displayed interesting dynamics during colony growth\". This sentence has no meaning as it does not describe the data. In what way are these dynamics interesting?\n\nLine 125: \"All amino acid abundances decreased during colony growth, except for alanine, which remained relatively constant with a peak abundance at 32 h\". Several aminoacids derive from alanine metabolism. I wonder how the level of these aminoacids did not remain closer to that of alanine\n\nLine 129: I do not understand how the transcriptomic or metabolomic data invited the authors to explore whether alanine metabolism is spatially heterogeneous during biofilm growth.\n\nLines 217-260: these two paragraphs describing the phenotypes of different mutants in alanine metabolism are hard to digest. I read them several times and I do not think I understood.\n",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b40cb341-684b-44dd-9cc0-f323f5d499ab",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C1",
+      "claim": "E. coli colonies grown on M9 minimal medium display two growth phases: exponential growth in volume, height, and diameter for up to ~24 hr, followed by linear growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonies generally displayed two growth phases: colonies showed exponential growth in volume, height, and diameter for up to ~24 hr, followed by linear growth (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental measurements of colony morphology over time shown in Figure 1A and B, which display cross-sectional profiles and quantitative measurements of volume, radius, and height.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "8dfbea73-8a63-4aef-988b-74b1db0a24a3",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C2",
+      "claim": "The transition in colony growth dynamics around 24 hr has previously been hypothesized to be caused by a change in metabolism due to altered nutrient penetration and consumption for colonies above a certain size.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition in colony growth dynamics has previously been observed, and was hypothesized to be caused by a change in metabolism due to altered nutrient penetration and consumption for colonies above a certain size (Pirt, 1967; Warren et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous work by Pirt (1967) and Warren et al. (2019) that proposed this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "38325551-d143-4c8e-b1bd-71729f5ef19e",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C3",
+      "claim": "Whole-colony transcriptomes revealed a major change after 24 hr of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptomes revealed a major change after 24 hr of growth (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transcriptomic data shown in Figure 1C, which displays expression profiles of 4231 genes during colony growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "ab3d3ccc-7e7f-426b-bc9c-06394e5d7aa6",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C4",
+      "claim": "After 72 hr of growth, 966 out of 4231 detected genes were differentially expressed in comparison to the 12 hr time point.",
+      "claim_type": "EXPLICIT",
+      "source": "After 72 hr of growth, 966 out of 4231 detected genes were differentially expressed in comparison to the 12 hr time point (log2-fold-changes > 1 or <-1, and FDR-adjusted p-value < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis with specific statistical thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "3e408042-3814-46f8-bf15-33e50200f0e9",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C5",
+      "claim": "Biofilm matrix biosynthesis genes are expressed continuously during colony growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole-colony transcriptomes also showed that biofilm matrix biosynthesis genes are expressed continuously during colony growth (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transcriptomic data shown in Figure 1\u2014figure supplement 3, which displays expression of genes involved in cellulose, curli, colanic acid, and PGA production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "1e1561e8-4bb0-4e73-8308-131beaaf6645",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C6",
+      "claim": "E. coli extracellular matrix is composed of cellulose, curli, colanic acid, \u03b2\u20131,6-N-acetyl-D-glucosamine (PGA) and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli extracellular matrix is composed of cellulose, curli, colanic acid, \u03b2\u20131,6-N-acetyl-D-glucosamine (PGA) and flagella (Hobley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Hobley et al., 2015 as the source of this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "5649d1c2-81ed-41fc-b397-1dc40f10786d",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C7",
+      "claim": "Mixed acid fermentation and tricarboxylic acid (TCA) cycle pathways were differentially regulated after 24 hr of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transcriptomes confirmed that well-known pathways such as mixed acid fermentation and tricarboxylic acid (TCA) cycle were differentially regulated after 24 hr of growth (Figure 1\u2014figure supplement 4A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transcriptomic data shown in Figure 1\u2014figure supplement 4A,C, which displays fold-changes of genes involved in these pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "ff1bd613-f184-4521-862e-6112ed6aa6b3",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C8",
+      "claim": "Above a certain colony size, which is reached between 24 and 32 hr, the consumption of oxygen by cells in the outer region of the colony causes a large anoxic region inside the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the hypothesis that above a certain colony size, which is reached between 24 and 32 hr in our conditions, the consumption of oxygen by cells in the outer region of the colony causes a large anoxic region inside the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from transcriptomic data showing differential regulation of anaerobic and aerobic pathways, and is consistent with the observed growth transition.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "615ecf18-8bce-47d5-97b5-e74ca2e94edb",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C9",
+      "claim": "The gene coding for the alanine exporter AlaE showed strong expression changes (~50 fold increase) in 72-hr-colonies relative to 12-hr-colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the gene coding for the alanine exporter AlaE (Hori et al., 2011b) showed strong expression changes (~50 fold increase) in 72-hr-colonies relative to 12-hr-colonies (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transcriptomic data shown in Figure 1D, which displays mean expression fold-changes of amino acid exporters during colony growth.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "7bc4dfe3-14a9-447d-a218-d584d115a684",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C10",
+      "claim": "All amino acid abundances decreased during colony growth except for alanine, which remained relatively constant with a peak abundance at 32 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "All amino acid abundances decreased during colony growth \u2013 except for alanine, which remained relatively constant with a peak abundance at 32 hr (Figure 1E, Figure 1\u2014figure supplement 2B, and Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry measurements of amino acid profiles shown in Figure 1E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "07ac0750-3cb7-4d0b-9a38-0136facf4129",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C11",
+      "claim": "mRuby2 fluorescence is a reliable indicator of oxygen levels in E. coli colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "By using an oxygen microsensor to directly measure oxygen levels inside the colony in the z-direction (Jo et al., 2017), we determined that the mRuby2 fluorescence was a reliable indicator of oxygen levels (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by direct comparison of mRuby2 fluorescence measurements with oxygen microsensor measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "1748f174-74ba-4785-b231-c5e3a5e8c9ee",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C12",
+      "claim": "The majority of the colony became non-fluorescent (i.e. anoxic) around 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "During colony growth, the fraction of fluorescent cells in the colony decreased (inset in Figure 2B), and the majority of the colony became non-fluorescent (i.e. anoxic) around 24 hr, which coincides with the time at which the whole-colony transcriptome shifted towards anaerobic metabolism (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of mRuby2 fluorescence over time shown in the inset of Figure 2B, and is consistent with transcriptomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "d3b7de07-63fb-4954-8e16-0767b49a14d3",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C13",
+      "claim": "Chromophore maturation of mRuby2 is oxygen-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The method is based on the oxygen-dependence of chromophore maturation of the fluorescent protein mRuby2 (Lam et al., 2012; Tsien, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Lam et al., 2012 and Tsien, 1998 as sources for the oxygen-dependence of mRuby2 chromophore maturation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "02b28ea5-e88b-4a60-a56c-bf1e2f6bbf3e",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C14",
+      "claim": "The expression of the alanine exporter gene alaE was significantly upregulated in the inner (non-fluorescent) region of the colony, compared with the outer (fluorescent) region.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the spatial transcriptomes showed that the expression of the alanine exporter gene alaE was significantly upregulated in the inner (non-fluorescent) region of the colony, compared with the outer (fluorescent) region (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spatial transcriptome data shown in Figure 2E, which displays fold-changes between inner and outer regions of 72 hr colonies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "45433ad4-c63b-48a0-9cbb-792bb49fb134",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C15",
+      "claim": "The dadAX operon was down-regulated in the inner region, compared with the outer region in colonies grown for 72 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In colonies grown for 72 hr, the dadAX operon was down-regulated in the inner region, compared with the outer region (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spatial transcriptome data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "83954f63-cbf6-46d4-aea6-9ea1955a9c9d",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C16",
+      "claim": "The dadAX operon encodes a racemase (dadX) and a dehydrogenase (dadA).",
+      "claim_type": "EXPLICIT",
+      "source": "The latter encodes a racemase (dadX) and a dehydrogenase (dadA) (Lobocka et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Lobocka et al., 1994 as the source for the function of dadAX operon genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "c79d02ce-7fff-41fe-8193-8dbf9e3222d2",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C17",
+      "claim": "Alanine is only secreted under anoxic conditions with glucose and ammonium.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry measurements from culture supernatants clearly showed that alanine is only secreted under anoxic conditions with glucose and ammonium (Figure 3A), which is an environment that corresponds to the anoxic base of the colony, where cells are in contact with the glucose- and ammonium-rich M9 agar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry measurements of extracellular alanine in different growth conditions shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "a8767bd2-7059-438c-aca8-19d123f47ed5",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C18",
+      "claim": "Oxic conditions with abundant glucose and ammonium did not result in significant alanine secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxic conditions with abundant glucose and ammonium did not result in significant alanine secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "d5db5c27-8645-44a6-9fba-85e87837f282",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C19",
+      "claim": "E. coli can use extracellular alanine as a carbon or nitrogen source in oxic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well-known that E. coli can use extracellular alanine as a carbon or nitrogen source in oxic conditions (Franklin and Venables, 1976; Kornberg, 1965), which we confirmed for our strain and growth conditions by replacing either glucose or ammonium with alanine in the liquid shaking M9 medium (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Franklin and Venables, 1976 and Kornberg, 1965, and confirmed by growth curve data shown in Figure 3B and C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "95d43faf-16cc-407b-94b5-d13ed5279624",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C20",
+      "claim": "Exogenous alanine can be utilized as a poor carbon source, but as a good nitrogen source in oxic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that exogenous alanine can be utilized as a poor carbon source, but as a good nitrogen source in oxic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by growth curve data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "f886c875-5f78-43fd-b344-ec1a16fe7069",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C21",
+      "claim": "Under anoxic conditions, E. coli cannot utilize alanine as a carbon or nitrogen source.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that under anoxic conditions, E. coli cannot utilize alanine as a carbon or nitrogen source (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by optical density measurements after 96 hr of incubation in anoxic conditions shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "d3ee2de3-0eb0-4e54-ae0d-084e9a7399a4",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C22",
+      "claim": "None of the deletions of alanine transport and degradation genes affected the cellular growth rates in liquid culture.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these deletions affected the cellular growth rates in liquid culture (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth rate measurements shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "8b521bf4-9ffc-4164-ac56-d3aa91d9050e",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C23",
+      "claim": "Deletions of alanine transport and degradation genes did not cause clear phenotypes in colony height or diameter after 72 hr of incubation on M9 agar.",
+      "claim_type": "EXPLICIT",
+      "source": "These deletions also did not cause clear phenotypes in colony height or diameter after 72 hr of incubation on M9 agar (Figure 4\u2014figure supplement 1B,C), indicating that alanine export and consumption do not have large effects on global colony size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements of colony diameter and height shown in Figure 4\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "ef555a55-9f2f-4f1f-999d-fa536da1ea28",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C24",
+      "claim": "Colonies carrying the \u0394alaE\u0394dadAX deletion displayed increased cell death in the oxic region at around 50% of the maximum colony height.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the colonies displayed only a low fraction of dead cells at the bottom edges of the colony, but cell death increased towards the top of the colony. Interestingly, the oxic region at around 50 % of the maximum colony height displayed increased cell death when cells carried the \u0394alaE\u0394dadAX deletion (Figure 4A), which is a strain that should have a strongly reduced capability for secreting and consuming alanine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SYTOX Green fluorescence measurements shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "7eebbaa0-d290-427f-813d-1f5afbc2b0ee",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C25",
+      "claim": "Mutants incapable of the major alanine degradation pathway (\u0394dadAX) displayed substantially higher extracellular alanine than cells that are impaired for alanine secretion as well (\u0394alaE\u0394dadAX).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mutants incapable of the major alanine degradation pathway (\u0394dadAX) displayed substantially higher extracellular alanine than cells that are impaired for alanine secretion as well (\u0394alaE\u0394dadAX).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry measurements of extracellular alanine shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "046b91cb-9426-461b-80c9-efae1cc7cbe2",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C26",
+      "claim": "AlaE acts as an alanine exporter inside colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acid transporters can often function as both importers and exporters, yet the higher extracellular alanine levels of the \u0394dadAX strain compared with the \u0394alaE\u0394dadAX strain (Figure 4B) indicate that AlaE acts as an alanine exporter inside colonies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from mass spectrometry data comparing extracellular alanine levels in different mutants shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "40d31d0a-4515-4f3b-a2e6-ca9d876caedc",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C27",
+      "claim": "AlaE acts as an exporter in liquid cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous measurements have shown that AlaE also acts as an exporter in liquid cultures (Hori et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Hori et al., 2011b as the source for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "f597a2d1-0bfe-41bb-a843-dd72a4eb1f4d",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C28",
+      "claim": "Another mechanism for alanine export might exist that is currently unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, and consistent with the results of Hori et al. in liquid cultures (Hori et al., 2011a; Hori et al., 2011b), our detection of extracellular alanine in colonies of the \u0394alaE and \u0394alaE\u0394dadAX mutants indicates that another mechanism for alanine export might exist that is currently unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from mass spectrometry data showing extracellular alanine in \u0394alaE mutants, and is consistent with previous work by Hori et al.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "78541905-59fa-4c26-bbf6-4e8afad6bffc",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C29",
+      "claim": "Excess levels of intracellular alanine can inhibit growth.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been shown that excess levels of intracellular alanine can inhibit growth (Katsube et al., 2019), yet the molecular mechanism underlying this process is still unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Katsube et al., 2019 as the source for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "5118fe80-3ae6-401e-a271-4ddd3d7f70b7",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C30",
+      "claim": "All strains show a decreased growth rate in liquid media containing high levels of alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that all strains show a decreased growth rate in liquid media containing high levels of alanine, yet strains carrying the \u0394alaE\u0394dadAX mutation were much more sensitive to exogenously added alanine than the parental strain (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth rate measurements as a function of alanine concentration shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "a670d27a-35dd-45b6-a656-61339dc3d176",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C31",
+      "claim": "Strains carrying the \u0394alaE\u0394dadAX mutation were much more sensitive to exogenously added alanine than the parental strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that all strains show a decreased growth rate in liquid media containing high levels of alanine, yet strains carrying the \u0394alaE\u0394dadAX mutation were much more sensitive to exogenously added alanine than the parental strain (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth rate measurements shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "48af4e10-9df1-4bf5-9ab6-7269cb0136c7",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C32",
+      "claim": "The parental strain did not display increased levels of cell death when exposed to extracellular alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that even though the parental strain displayed a reduced growth rate when exposed to extracellular alanine (Figure 4C), the parental strain did not display increased levels of cell death in such conditions (Figure 4D) \u2013 likely due to their ability to secrete and consume alanine, allowing them to control their intracellular levels of alanine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell viability measurements shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "abb94200-63ee-4273-9b32-74448866c705",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C33",
+      "claim": "In the presence of high extracellular alanine concentrations, \u0394alaE\u0394dadAX mutants displayed higher cell death levels than the parental strain, which was particularly strong in stationary phase conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that in the presence of high extracellular alanine concentrations, \u0394alaE\u0394dadAX mutants displayed higher cell death levels than the parental strain, which was particularly strong in stationary phase conditions (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell viability measurements shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "dae8f4af-826f-4c0c-a21b-3188a4fdd720",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C34",
+      "claim": "The \u0394alaE\u0394dadAX mutant was consistently strongly outcompeted by the parental strain during colony growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the \u0394alaE\u0394dadAX mutant was consistently strongly outcompeted by the parental strain (Figure 4\u2014figure supplement 4B), despite having no liquid culture grow differences (Figure 4\u2014figure supplement 1) and regardless of the fluorescent protein that they were carrying.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by competition experiment data shown in Figure 4\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "232f809b-276f-47ac-8cd0-c8b50a5c8d73",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C35",
+      "claim": "Cells capable of alanine cross-feeding have a fitness advantage during colony growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments indicate that cells capable of alanine cross-feeding have a fitness advantage during colony growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from competition experiment data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "0c228432-e4a5-455a-87e6-480c88922772",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C36",
+      "claim": "\u0394alaE\u0394dadAX and \u0394alaE mutants displayed a significantly decreased colony curvature in the mid-height region, in comparison to the parental strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of the colony morphology showed that \u0394alaE\u0394dadAX and \u0394alaE mutants displayed a significantly decreased colony curvature in the relevant region, in comparison to the parental strain (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony morphology measurements shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "26933dc3-9c73-4004-b298-af97913eff4e",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C37",
+      "claim": "The parental strain grows faster in the mid-height oxic region than the cross-feeding impaired \u0394alaE\u0394dadAX mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements showed that the parental strain grows faster in the mid-height oxic region than the cross-feeding impaired \u0394alaE\u0394dadAX mutant (Figure 5C), which further supports the hypothesis that this region of the colony relies on alanine as a carbon and nitrogen source.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements of the fluorescence ratio of unstable GFP and mRuby2 shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "33b15acf-bc4b-4be6-9cbf-cb9c8a1a70eb",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C38",
+      "claim": "Cells at the bottom periphery of 72 hr colonies have access to oxygen, glucose, and ammonium, and perform either aerobic respiration or fermentation by overflow metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells at the bottom periphery of the colony (red region in Figure 6A) have access to oxygen, glucose, and ammonium, and perform either aerobic respiration or fermentation by overflow metabolism (Basan et al., 2015; Cole et al., 2015) \u2013 these two possible metabolic states cannot be distinguished with our current approaches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from spatial transcriptome and metabolome data, and cites Basan et al., 2015 and Cole et al., 2015 for the concept of overflow metabolism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "9bec0761-69d1-423d-96ec-00b8da683996",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C39",
+      "claim": "Cells at the bottom center of 72 hr colonies are anaerobic yet they have access to glucose and ammonium from the agar-solidified medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells at the bottom center of the colony (orange region in Figure 6A) are anaerobic yet they have access to glucose and ammonium from the agar-solidified medium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from spatial transcriptome data and oxygen measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "672cc162-ba19-4399-be1a-ca20b9acece1",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C40",
+      "claim": "Cells at the bottom center of 72 hr colonies ferment glucose and secrete alanine, primarily via AlaE.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells ferment glucose and secrete alanine, primarily via AlaE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from spatial transcriptome data showing upregulation of alaE in the inner region, and mass spectrometry data showing alanine secretion under anoxic conditions with glucose and ammonium.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "51f0c2c3-0917-4e5e-a3b1-ecd466305e55",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C41",
+      "claim": "Secreted alanine diffuses through the colony and can only be utilized by oxic nutrient-deprived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted alanine diffuses through the colony and can only be utilized by oxic nutrient-deprived cells (blue region in Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from spatial transcriptome data showing upregulation of dadAX in the outer region, and growth experiments showing alanine can only be utilized as a carbon/nitrogen source in oxic conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "f951759e-f47b-4eec-98f7-682e9916d018",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C42",
+      "claim": "Alanine consumption in the mid-height oxic region has a detoxification effect, by reducing otherwise inhibitory levels of extracellular alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine consumption in the mid-height oxic region also has a detoxification effect, by reducing otherwise inhibitory levels of extracellular alanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data showing that high extracellular alanine inhibits growth and increases cell death in \u0394alaE\u0394dadAX mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "e994dda7-0c32-4a38-b864-edcf86cfd36b",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C43",
+      "claim": "Alanine secretion in the anaerobic base of the colony may be a necessity to avoid high intracellular alanine levels that presumably result from anaerobic fermentation of glucose in the presence of ammonium.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this is not an altruistic trait evolved to support a starving oxic subpopulation at a different location, because such a trait would be highly susceptible to social cheaters in a multi-species community. Instead, alanine secretion in this region may be a necessity to avoid high intracellular alanine levels that presumably result from anaerobic fermentation of glucose in the presence of ammonium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observation that high alanine levels are inhibitory.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "8b54005e-efb2-484a-8898-0aa28e7affa2",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C44",
+      "claim": "The presence of the alanine-consuming subpopulation results in a benefit for the alanine-secreting subpopulation, by causing a higher diffusive flux of alanine away from the alanine-secreting population.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side of the cross-feeding interaction, the alanine-consuming subpopulation in the aerobic mid-height region of the colony strongly benefits from the secreted alanine originating from the base of the colony. We note that the alanine consumption in the aerobic mid-height region of the colony necessarily causes a steeper alanine concentration gradient between the two interacting subpopulations, compared with a case in which no alanine is consumed. Due to Fick's law of diffusion, a steeper concentration gradient causes a higher diffusive flux. Therefore, the presence of the alanine-consuming subpopulation results in a benefit for the alanine-secreting subpopulation, by causing a higher diffusive flux of alanine away from the alanine-secreting population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from established physical principles (Fick's law of diffusion) applied to the observed alanine cross-feeding.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "d6927f1f-177e-43a7-8144-2aa4757643d1",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C45",
+      "claim": "The interaction between the two cross-feeding subpopulations is likely mutualistic.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the interaction between the two cross-feeding subpopulations is likely mutualistic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observation that both subpopulations benefit from the cross-feeding interaction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "62241bde-f999-4e96-af41-920555f9ea72",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C46",
+      "claim": "The spatial organization of alanine cross-feeding between two subpopulations is analogous to the carbon cross-feeding in E. coli colonies via acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial organization of alanine cross-feeding between two subpopulations we described in this study is analogous to the carbon cross-feeding in E. coli colonies via acetate, because it involves metabolite secretion in the anaerobic population and consumption in the carbon-starved oxic population (Cole et al., 2015; Dal Co et al., 2019; Wolfsberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the observed alanine cross-feeding to previously described acetate cross-feeding, citing Cole et al., 2015, Dal Co et al., 2019, and Wolfsberg et al., 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "f9ba56ea-bf1f-4bea-b525-b50b8aefeb31",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C47",
+      "claim": "The location of the population that is proposed to consume acetate as a carbon source spans most of the oxic region of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the location of the population that is proposed to consume acetate as a carbon source spans most of the oxic region of the colony (Cole et al., 2015), whereas alanine is primarily consumed only in the oxic mid-height region of the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Cole et al., 2015 for the location of acetate consumption, and contrasts it with the observed location of alanine consumption.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "d2e3cb18-226b-4804-8dc3-6700e91e5d93",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C48",
+      "claim": "Spatial transcriptomes did not reveal a signature for acetate cross-feeding between the anaerobic and oxic regions of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our spatial transcriptomes did not reveal a signature for acetate cross-feeding between the anaerobic and oxic regions of the colony (Figure 1\u2014figure supplement 4B), yet transcripts coding for enzymes involved in lactate, formate, and succinate metabolism display patterns that are indicative of spatially organized metabolism that could be the basis of carbon cross-feeding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of spatial transcriptome data shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "cbddedc4-e190-4ad1-8c4e-e2196aedec77",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C49",
+      "claim": "Alanine can be shared in colonies of the Gram-positive bacterium Bacillus subtilis, and this effect required three-dimensional colonies for unknown reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, it was shown that alanine can be shared in colonies of the Gram-positive bacterium Bacillus subtilis, and that this effect required three-dimensional colonies for unknown reasons (Arjes et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Arjes et al., 2021 as the source for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "32da30bb-eb5b-454f-91ac-d060f081a131",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C50",
+      "claim": "In E. coli, three-dimensional growth is required to create an anoxic region replete with carbon and nitrogen sources that causes alanine secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "In our E. coli model system, three-dimensional growth is required to create an anoxic region replete with carbon and nitrogen sources that causes alanine secretion, and we speculate that this effect may also be required in B. subtilis, and in other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed requirement for anoxic conditions with glucose and ammonium for alanine secretion, and speculation about other species.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "5159d30c-527d-4b70-8114-d193973d379b",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C51",
+      "claim": "Biofilms are estimated to be the most abundant form of microbial life on Earth.",
+      "claim_type": "EXPLICIT",
+      "source": "Such spatially structured assemblages, called biofilms (Flemming et al., 2016), are estimated to be the most abundant form of microbial life on Earth (Flemming and Wuertz, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Flemming and Wuertz, 2019 as the source for this estimate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "8b500cc8-b46f-4156-87b2-bfa3f06ab26b",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C52",
+      "claim": "The metabolic activity of cells inside biofilms leads to spatial gradients of oxygen, carbon, and nitrogen sources, as well as many other nutrients and waste products.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabolic activity of cells inside these dense populations leads to spatial gradients of oxygen, carbon, and nitrogen sources, as well as many other nutrients and waste products (Ackermann, 2015; Evans et al., 2020; Pacheco et al., 2019; Stewart and Franklin, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Ackermann, 2015, Evans et al., 2020, Pacheco et al., 2019, and Stewart and Franklin, 2008 as sources for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "8d56575c-db3a-4cda-86a5-884745930dee",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C53",
+      "claim": "Bacterial growth into densely packed spatially structured communities, and metabolic activity of the constituent cells, naturally lead to physiological differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial growth into densely packed spatially structured communities, and metabolic activity of the constituent cells, therefore naturally lead to physiological differentiation (Evans et al., 2020; R\u00f8der et al., 2020; Serra et al., 2013a; Stewart and Franklin, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Evans et al., 2020, R\u00f8der et al., 2020, Serra et al., 2013a, and Stewart and Franklin, 2008 as sources for this information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "9ab590c9-6880-4a19-9193-27b4c375d33e",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C54",
+      "claim": "Metabolic and phenotypic heterogeneities are frequently observed in multi-species communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic and phenotypic heterogeneities are frequently observed in multi-species communities (Garg et al., 2016; Henson et al., 2019; Kim et al., 2020; Pacheco et al., 2021; Serra and Hengge, 2021) and in single-species biofilm populations (Cole et al., 2015; Dal Co et al., 2019; Lin et al., 2018; Moree et al., 2012; Rani et al., 2007; Serra et al., 2013b; Teal et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites multiple sources for observations of heterogeneity in both multi-species and single-species communities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "753ebfc6-31b7-4341-a637-3acca12f4144",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C55",
+      "claim": "Single-species biofilms offer precisely controllable model systems with reduced complexity for understanding basic mechanisms of metabolic differentiation and the interaction of subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, single-species biofilms offer precisely controllable model systems with reduced complexity for understanding basic mechanisms of metabolic differentiation and the interaction of subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reasoning about the advantages of single-species systems compared to multi-species systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "a5f33f06-f43b-4895-9834-3652d289bbbe",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C56",
+      "claim": "Investigations of phenotypic heterogeneity in single-species assemblages have revealed fundamental insights into metabolic interactions of subpopulations with consequences for the overall fitness and growth dynamics of the assemblages.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigations of phenotypic heterogeneity in single-species assemblages have already revealed fundamental insights into metabolic interactions of subpopulations with consequences for the overall fitness and growth dynamics of the assemblages (Arjes et al., 2021; Cole et al., 2015; Evans et al., 2020; Lin et al., 2018; Liu et al., 2017; Liu et al., 2015; Wolfsberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites multiple sources for previous insights from single-species biofilm studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "d0ce0464-d148-426c-be07-816646606119",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C57",
+      "claim": "The mRuby2 fluorophore maturation time is approximately 150 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The time between colony disruption and imaging for this control experiment was less than 2 min, which is substantially shorter than the mRuby2 fluorophore maturation time (~150 min Lam et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Lam et al., 2012 as the source for the mRuby2 maturation time.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "b47eed09-e8ec-4ca8-bb68-84e5c218e21f",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C58",
+      "claim": "Formaldehyde fixation prevents mRuby2 fluorophore maturation in the presence of oxygen without altering the transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain spatial transcriptomes, we then separated colonies grown for 72 hr into individual cells, immediately fixed them with formaldehyde (which prevents mRuby2 fluorophore maturation in the presence of oxygen without altering the transcriptomes; Figure 2\u2014figure supplement 2), and subjected them to fluorescence-activated cell sorting (FACS) to separate the oxic (fluorescent) and anoxic (not fluorescent) populations (Figure 2C and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "5b23c2a7-daa7-4419-a2d2-edc3c6a0d8fa",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C59",
+      "claim": "The strain lacking flagella due to the deletion of the flagellin (\u0394fliC) resulted in highly reproducible and axially symmetric colony morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a strain lacking flagella due to the deletion of the flagellin (\u0394fliC) was used as the parental strain for all following experiments, which resulted in highly reproducible and axially symmetric colony morphologies (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy images shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "35ff9463-05e3-42bf-9424-bd96c8af7a06",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "claim_id": "C60",
+      "claim": "The wild-type E. coli strain AR3110 displayed motility on filter membranes on M9 agar, which led to heterogeneous colony development and an asymmetric colony morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "When we grew E. coli wild-type colonies in these conditions, we observed motility on the filter membranes on M9 agar, which led to heterogeneous colony development and an asymmetric colony morphology (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy images shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fbd9485e-485f-4c86-a3d0-47f8ba3f1a4b",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "E. coli colonies grown on M9 minimal medium display a major metabolic transition around 24 hr, characterized by a shift from exponential to linear growth and differential expression of 966 genes, consistent with the formation of a large anoxic region inside the colony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C7-C8 collectively demonstrate a well-characterized metabolic transition at 24 hr. The morphological data (C1), transcriptomic data showing 966 differentially expressed genes (C3-C4), and differential regulation of fermentation/TCA pathways (C7) provide converging evidence. The inference about anoxic region formation (C8) is well-supported by the transcriptomic shift toward anaerobic metabolism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "bb5c0ae1-ba76-4c04-b3c7-fc8d11f23451",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Alanine metabolism displays unique spatiotemporal regulation during colony growth, with the alanine exporter gene alaE showing ~50-fold upregulation in 72-hr colonies and spatial segregation of alanine export (inner region) and degradation (outer region) genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C14-C15 provide strong evidence for unique alanine metabolism patterns. The temporal transcriptomics (C9), metabolomics showing alanine as the only amino acid not decreasing (C10), and spatial transcriptomics showing differential expression of alaE and dadAX between colony regions (C14-C15) provide multiple lines of converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "b4dc5aba-c8fa-441e-937d-8d4c2762dee3",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "mRuby2 fluorescence serves as a reliable oxygen indicator in E. coli colonies, validated by direct oxygen microsensor measurements, with the majority of the colony becoming anoxic around 24 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C57-C58 establish the validity of the mRuby2-based oxygen measurement method. Direct validation with oxygen microsensor (C11), proper controls for formaldehyde fixation (C58), and appropriate citations for the oxygen-dependent chromophore maturation (C13, C57) provide strong methodological support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "e015ef02-b984-4848-9650-517e14a88e98",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Alanine secretion occurs specifically under anoxic conditions with glucose and ammonium, while alanine can be utilized as a carbon or nitrogen source only under oxic conditions, establishing the environmental requirements for alanine cross-feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 provide clear experimental evidence from mass spectrometry and growth assays. The specificity of alanine secretion to anoxic conditions with nutrients (C17-C18) and the oxygen-dependent utilization (C19-C21) are well-demonstrated with appropriate controls and multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Deletion of alanine export and degradation genes (\u0394alaE\u0394dadAX) results in increased cell death in the oxic mid-height region of colonies and increased sensitivity to extracellular alanine, demonstrating that AlaE functions as an alanine exporter and that alanine cross-feeding is important for cell viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C30-C33 provide strong evidence for the functional role of alanine cross-feeding. The increased cell death in \u0394alaE\u0394dadAX mutants (C24), extracellular alanine measurements (C25), inference of AlaE function (C26), and differential sensitivity to exogenous alanine (C30-C33) provide converging lines of evidence with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "07c20e43-b702-4479-9078-7ba1ad809ca9",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cells capable of alanine cross-feeding have a fitness advantage during colony growth, as demonstrated by competition experiments and altered colony morphology in cross-feeding impaired mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 demonstrate fitness consequences of alanine cross-feeding. The competition experiments (C34), morphological changes in mutants (C36), and growth rate measurements using fluorescent protein ratios (C37) provide multiple lines of evidence. The inference about fitness advantage (C35) is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "fa291ec9-ddb1-440a-9d9d-36c6907b1030",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a spatial model of alanine metabolism in 72 hr colonies where anaerobic cells at the colony base secrete alanine via AlaE, which diffuses to and is consumed by oxic nutrient-deprived cells in the mid-height region, with consumption also serving a detoxification function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 synthesize the experimental findings into a coherent spatial model. While these claims involve inference, they are well-supported by the combination of spatial transcriptomics, oxygen measurements, metabolite measurements, and mutant phenotypes described in earlier claims. The model is consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "e791a0c0-5849-4784-8856-d498a705ab15",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that alanine secretion in the anaerobic base is a necessity to avoid toxic intracellular alanine accumulation rather than an altruistic trait, and that the cross-feeding interaction is likely mutualistic due to enhanced diffusive flux away from the secreting population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C45 involve significant speculation about evolutionary mechanisms and the nature of the interaction. While C43 is explicitly labeled as speculation and C44 applies Fick's law appropriately, the claims about whether this is altruistic vs. necessary (C43) and whether the interaction is truly mutualistic (C45) require additional experimental validation that is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "c70f9b85-fc53-48de-b676-1e4fc378c971",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Deletions of alanine transport and degradation genes do not affect cellular growth rates in liquid culture or global colony size (height and diameter) after 72 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by direct measurements shown in supplementary figures. These negative results are important controls demonstrating that the effects of these deletions are specific to localized regions within colonies rather than global growth defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "13b30f12-b2f1-4fc3-9c2e-9bbd54c5166b",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The spatial organization of alanine cross-feeding is analogous to previously described acetate cross-feeding but differs in the spatial location of consumption, and the current spatial transcriptomes did not reveal a signature for acetate cross-feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 appropriately compare the current findings to prior work. The comparison to acetate cross-feeding (C46-C47) is supported by appropriate citations, and the negative result for acetate cross-feeding signatures (C48) is supported by the spatial transcriptome data, though this negative result should be interpreted cautiously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "a2a05115-f920-4edd-8baa-8ee429f84464",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Biofilm matrix biosynthesis genes are expressed continuously during colony growth, with the E. coli extracellular matrix composed of cellulose, curli, colanic acid, PGA, and flagella.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are supported by transcriptomic data (C5) and appropriate citation (C6). This provides important context about biofilm formation during colony growth, though it is not central to the main findings about alanine metabolism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "ab8075a1-3485-46bd-b451-8c4f85cc463c",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The \u0394fliC strain lacking flagella produces highly reproducible and axially symmetric colony morphologies, unlike the wild-type strain which displays motility-induced heterogeneous colony development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by microscopy images. This methodological choice is well-justified and important for the reproducibility of the experimental system, though it represents a methodological detail rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "406886f5-e5e6-4865-af35-72bd51e2d13e",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Another mechanism for alanine export might exist beyond AlaE, as extracellular alanine was detected in \u0394alaE mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by mass spectrometry data showing extracellular alanine in \u0394alaE mutants and is consistent with prior work by Hori et al. This suggests incomplete understanding of alanine export mechanisms, though it does not undermine the main conclusions about AlaE's role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "248093de-6066-4d96-b033-99df0be055a4",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The dadAX operon encodes alanine racemase and dehydrogenase enzymes, AlaE acts as an exporter in liquid cultures, and excess intracellular alanine can inhibit growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C27, C29 are all supported by appropriate citations to prior work. These claims establish important background knowledge from the literature that contextualizes the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "75109972-ddd5-48ac-bfae-5710d7245495",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Alanine sharing has been observed in Bacillus subtilis colonies requiring three-dimensional growth, and the authors speculate this may be due to similar requirements for creating anoxic nutrient-rich regions as observed in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 appropriately cites recent work on B. subtilis, but C50 involves speculation about mechanisms in other species that extends beyond the experimental data. While the speculation is reasonable, it requires experimental validation in other species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    },
+    {
+      "id": "25a452d8-4df8-4e13-bd0e-ee48dd2ae615",
+      "content_id": "5938613d-d2b8-4bb4-91f2-0364b25d339c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors provide background context on biofilms as the most abundant form of microbial life, the metabolic gradients that develop in biofilms, and the advantages of single-species biofilm model systems for understanding metabolic differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are all supported by appropriate citations to prior work. These claims establish the broader context and motivation for the study but do not represent novel findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:45:58.007558Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b40cb341-684b-44dd-9cc0-f323f5d499ab",
+      "result_id": "fbd9485e-485f-4c86-a3d0-47f8ba3f1a4b"
+    },
+    {
+      "claim_id": "8dfbea73-8a63-4aef-988b-74b1db0a24a3",
+      "result_id": "fbd9485e-485f-4c86-a3d0-47f8ba3f1a4b"
+    },
+    {
+      "claim_id": "38325551-d143-4c8e-b1bd-71729f5ef19e",
+      "result_id": "fbd9485e-485f-4c86-a3d0-47f8ba3f1a4b"
+    },
+    {
+      "claim_id": "ab3d3ccc-7e7f-426b-bc9c-06394e5d7aa6",
+      "result_id": "fbd9485e-485f-4c86-a3d0-47f8ba3f1a4b"
+    },
+    {
+      "claim_id": "5649d1c2-81ed-41fc-b397-1dc40f10786d",
+      "result_id": "fbd9485e-485f-4c86-a3d0-47f8ba3f1a4b"
+    },
+    {
+      "claim_id": "ff1bd613-f184-4521-862e-6112ed6aa6b3",
+      "result_id": "fbd9485e-485f-4c86-a3d0-47f8ba3f1a4b"
+    },
+    {
+      "claim_id": "615ecf18-8bce-47d5-97b5-e74ca2e94edb",
+      "result_id": "bb5c0ae1-ba76-4c04-b3c7-fc8d11f23451"
+    },
+    {
+      "claim_id": "7bc4dfe3-14a9-447d-a218-d584d115a684",
+      "result_id": "bb5c0ae1-ba76-4c04-b3c7-fc8d11f23451"
+    },
+    {
+      "claim_id": "02b28ea5-e88b-4a60-a56c-bf1e2f6bbf3e",
+      "result_id": "bb5c0ae1-ba76-4c04-b3c7-fc8d11f23451"
+    },
+    {
+      "claim_id": "45433ad4-c63b-48a0-9cbb-792bb49fb134",
+      "result_id": "bb5c0ae1-ba76-4c04-b3c7-fc8d11f23451"
+    },
+    {
+      "claim_id": "07ac0750-3cb7-4d0b-9a38-0136facf4129",
+      "result_id": "b4dc5aba-c8fa-441e-937d-8d4c2762dee3"
+    },
+    {
+      "claim_id": "1748f174-74ba-4785-b231-c5e3a5e8c9ee",
+      "result_id": "b4dc5aba-c8fa-441e-937d-8d4c2762dee3"
+    },
+    {
+      "claim_id": "d3b7de07-63fb-4954-8e16-0767b49a14d3",
+      "result_id": "b4dc5aba-c8fa-441e-937d-8d4c2762dee3"
+    },
+    {
+      "claim_id": "d0ce0464-d148-426c-be07-816646606119",
+      "result_id": "b4dc5aba-c8fa-441e-937d-8d4c2762dee3"
+    },
+    {
+      "claim_id": "b47eed09-e8ec-4ca8-bb68-84e5c218e21f",
+      "result_id": "b4dc5aba-c8fa-441e-937d-8d4c2762dee3"
+    },
+    {
+      "claim_id": "c79d02ce-7fff-41fe-8193-8dbf9e3222d2",
+      "result_id": "e015ef02-b984-4848-9650-517e14a88e98"
+    },
+    {
+      "claim_id": "a8767bd2-7059-438c-aca8-19d123f47ed5",
+      "result_id": "e015ef02-b984-4848-9650-517e14a88e98"
+    },
+    {
+      "claim_id": "d5db5c27-8645-44a6-9fba-85e87837f282",
+      "result_id": "e015ef02-b984-4848-9650-517e14a88e98"
+    },
+    {
+      "claim_id": "95d43faf-16cc-407b-94b5-d13ed5279624",
+      "result_id": "e015ef02-b984-4848-9650-517e14a88e98"
+    },
+    {
+      "claim_id": "f886c875-5f78-43fd-b344-ec1a16fe7069",
+      "result_id": "e015ef02-b984-4848-9650-517e14a88e98"
+    },
+    {
+      "claim_id": "ef555a55-9f2f-4f1f-999d-fa536da1ea28",
+      "result_id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed"
+    },
+    {
+      "claim_id": "7eebbaa0-d290-427f-813d-1f5afbc2b0ee",
+      "result_id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed"
+    },
+    {
+      "claim_id": "046b91cb-9426-461b-80c9-efae1cc7cbe2",
+      "result_id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed"
+    },
+    {
+      "claim_id": "5118fe80-3ae6-401e-a271-4ddd3d7f70b7",
+      "result_id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed"
+    },
+    {
+      "claim_id": "a670d27a-35dd-45b6-a656-61339dc3d176",
+      "result_id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed"
+    },
+    {
+      "claim_id": "48af4e10-9df1-4bf5-9ab6-7269cb0136c7",
+      "result_id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed"
+    },
+    {
+      "claim_id": "abb94200-63ee-4273-9b32-74448866c705",
+      "result_id": "ea3b5f2d-68a6-4dad-8927-bf19bcf3f6ed"
+    },
+    {
+      "claim_id": "dae8f4af-826f-4c0c-a21b-3188a4fdd720",
+      "result_id": "07c20e43-b702-4479-9078-7ba1ad809ca9"
+    },
+    {
+      "claim_id": "232f809b-276f-47ac-8cd0-c8b50a5c8d73",
+      "result_id": "07c20e43-b702-4479-9078-7ba1ad809ca9"
+    },
+    {
+      "claim_id": "0c228432-e4a5-455a-87e6-480c88922772",
+      "result_id": "07c20e43-b702-4479-9078-7ba1ad809ca9"
+    },
+    {
+      "claim_id": "26933dc3-9c73-4004-b298-af97913eff4e",
+      "result_id": "07c20e43-b702-4479-9078-7ba1ad809ca9"
+    },
+    {
+      "claim_id": "33b15acf-bc4b-4be6-9cbf-cb9c8a1a70eb",
+      "result_id": "fa291ec9-ddb1-440a-9d9d-36c6907b1030"
+    },
+    {
+      "claim_id": "9bec0761-69d1-423d-96ec-00b8da683996",
+      "result_id": "fa291ec9-ddb1-440a-9d9d-36c6907b1030"
+    },
+    {
+      "claim_id": "672cc162-ba19-4399-be1a-ca20b9acece1",
+      "result_id": "fa291ec9-ddb1-440a-9d9d-36c6907b1030"
+    },
+    {
+      "claim_id": "51f0c2c3-0917-4e5e-a3b1-ecd466305e55",
+      "result_id": "fa291ec9-ddb1-440a-9d9d-36c6907b1030"
+    },
+    {
+      "claim_id": "f951759e-f47b-4eec-98f7-682e9916d018",
+      "result_id": "fa291ec9-ddb1-440a-9d9d-36c6907b1030"
+    },
+    {
+      "claim_id": "e994dda7-0c32-4a38-b864-edcf86cfd36b",
+      "result_id": "e791a0c0-5849-4784-8856-d498a705ab15"
+    },
+    {
+      "claim_id": "8b54005e-efb2-484a-8898-0aa28e7affa2",
+      "result_id": "e791a0c0-5849-4784-8856-d498a705ab15"
+    },
+    {
+      "claim_id": "d6927f1f-177e-43a7-8144-2aa4757643d1",
+      "result_id": "e791a0c0-5849-4784-8856-d498a705ab15"
+    },
+    {
+      "claim_id": "d3ee2de3-0eb0-4e54-ae0d-084e9a7399a4",
+      "result_id": "c70f9b85-fc53-48de-b676-1e4fc378c971"
+    },
+    {
+      "claim_id": "8b521bf4-9ffc-4164-ac56-d3aa91d9050e",
+      "result_id": "c70f9b85-fc53-48de-b676-1e4fc378c971"
+    },
+    {
+      "claim_id": "62241bde-f999-4e96-af41-920555f9ea72",
+      "result_id": "13b30f12-b2f1-4fc3-9c2e-9bbd54c5166b"
+    },
+    {
+      "claim_id": "f9ba56ea-bf1f-4bea-b525-b50b8aefeb31",
+      "result_id": "13b30f12-b2f1-4fc3-9c2e-9bbd54c5166b"
+    },
+    {
+      "claim_id": "d2e3cb18-226b-4804-8dc3-6700e91e5d93",
+      "result_id": "13b30f12-b2f1-4fc3-9c2e-9bbd54c5166b"
+    },
+    {
+      "claim_id": "3e408042-3814-46f8-bf15-33e50200f0e9",
+      "result_id": "a2a05115-f920-4edd-8baa-8ee429f84464"
+    },
+    {
+      "claim_id": "1e1561e8-4bb0-4e73-8308-131beaaf6645",
+      "result_id": "a2a05115-f920-4edd-8baa-8ee429f84464"
+    },
+    {
+      "claim_id": "5b23c2a7-daa7-4419-a2d2-edc3c6a0d8fa",
+      "result_id": "ab8075a1-3485-46bd-b451-8c4f85cc463c"
+    },
+    {
+      "claim_id": "35ff9463-05e3-42bf-9424-bd96c8af7a06",
+      "result_id": "ab8075a1-3485-46bd-b451-8c4f85cc463c"
+    },
+    {
+      "claim_id": "f597a2d1-0bfe-41bb-a843-dd72a4eb1f4d",
+      "result_id": "406886f5-e5e6-4865-af35-72bd51e2d13e"
+    },
+    {
+      "claim_id": "83954f63-cbf6-46d4-aea6-9ea1955a9c9d",
+      "result_id": "248093de-6066-4d96-b033-99df0be055a4"
+    },
+    {
+      "claim_id": "40d31d0a-4515-4f3b-a2e6-ca9d876caedc",
+      "result_id": "248093de-6066-4d96-b033-99df0be055a4"
+    },
+    {
+      "claim_id": "78541905-59fa-4c26-bbf6-4e8afad6bffc",
+      "result_id": "248093de-6066-4d96-b033-99df0be055a4"
+    },
+    {
+      "claim_id": "cbddedc4-e190-4ad1-8c4e-e2196aedec77",
+      "result_id": "75109972-ddd5-48ac-bfae-5710d7245495"
+    },
+    {
+      "claim_id": "32da30bb-eb5b-454f-91ac-d060f081a131",
+      "result_id": "75109972-ddd5-48ac-bfae-5710d7245495"
+    },
+    {
+      "claim_id": "5159d30c-527d-4b70-8114-d193973d379b",
+      "result_id": "25a452d8-4df8-4e13-bd0e-ee48dd2ae615"
+    },
+    {
+      "claim_id": "8b500cc8-b46f-4156-87b2-bfa3f06ab26b",
+      "result_id": "25a452d8-4df8-4e13-bd0e-ee48dd2ae615"
+    },
+    {
+      "claim_id": "8d56575c-db3a-4cda-86a5-884745930dee",
+      "result_id": "25a452d8-4df8-4e13-bd0e-ee48dd2ae615"
+    },
+    {
+      "claim_id": "9ab590c9-6880-4a19-9193-27b4c375d33e",
+      "result_id": "25a452d8-4df8-4e13-bd0e-ee48dd2ae615"
+    },
+    {
+      "claim_id": "753ebfc6-31b7-4341-a637-3acca12f4144",
+      "result_id": "25a452d8-4df8-4e13-bd0e-ee48dd2ae615"
+    },
+    {
+      "claim_id": "a5f33f06-f43b-4895-9834-3652d289bbbe",
+      "result_id": "25a452d8-4df8-4e13-bd0e-ee48dd2ae615"
+    }
+  ],
+  "comparisons": []
+}

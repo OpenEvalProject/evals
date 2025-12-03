@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work using the urgent antisaccade task established that an exogenous signal arrives ~80 ms after cue onset and accelerates the motor plan toward the cue, while an endogenous signal arrives ~25 ms later to favor the correct plan away from the cue. The CAS model quantitatively replicated these psychophysical results, including the characteristic performance drop to nearly 0% correct between 90-130 ms processing time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C15-C18 consistently describe prior findings from Salinas et al., 2019 that are well-documented with both empirical data and modeling results. These claims establish the foundation for the current study's hypothesis testing and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C62",
+      "C63"
+    ],
+    "result": "The exogenous and endogenous signals act independently, with the exogenous response being largely impervious to task instructions and simply flipping its sign relative to the correct choice between pro- and antisaccade tasks. This independence explains the drastic performance differences between tasks and demonstrates that saccadic choices are strongly dictated by the alignment between salience and behavioral goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C62-C63 represent the central hypothesis and main conclusion of the study. The experimental data (C24-C45) provide strong converging evidence for this independence hypothesis through multiple complementary analyses including timing comparisons, luminance manipulations, and motor bias effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The CPS model predicts that the upswing in prosaccade performance should follow the same timecourse as the downswing in antisaccade performance, and that motor bias effects should differ between tasks: in antisaccades, the rise toward asymptotic performance should occur later when bias aligns with the cue, while in prosaccades the rise should be similar regardless of bias direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe clear, testable predictions derived from the independence hypothesis. These predictions are logically derived from the model framework and are subsequently tested with experimental data (C24-C45), making them well-supported as theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Experimental data confirmed that prosaccade performance rose steeply and early as predicted, with the exogenous response manifesting only ~3 ms earlier (95% CI: [1, 5] ms) in prosaccade versus antisaccade trials. Individual participants showed optimal shifts in the [-1, 10] ms range, demonstrating remarkable consistency in exogenous response timing across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 present the first major experimental test of the model predictions with appropriate statistical analysis including confidence intervals. The 3 ms difference is very small relative to the predicted 0 ms, strongly supporting the independence hypothesis. The data are shown in Figure 4a-d with adequate sample sizes (24,638 pro trials, 22,608 anti trials).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A luminance manipulation experiment confirmed that lower cue luminance produced comparable rightward shifts in tachometric curves for both tasks: 35 ms ([33, 38] ms 95% CI) for antisaccades and 30 ms ([26, 34] ms 95% CI) for prosaccades, demonstrating that the same exogenous signal drives both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe a well-designed control experiment testing whether the exogenous response shows the same luminance dependence across tasks. The overlapping confidence intervals for the two shifts (35 ms vs 30 ms) provide strong evidence for a common exogenous mechanism. Data are shown in Figure 4e with three participants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Motor bias analysis revealed that participants' guesses tended toward the previous trial's target location, creating systematic deviations from chance. In antisaccades, the rise toward asymptotic performance occurred later when bias aligned with the cue location (rise point: 154 ms for AB trials vs 143 ms for AA trials), while in prosaccades the rise was similar regardless of bias direction. The experimental change in rise point over the full chance range matched the model prediction of ~40 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe the second major experimental test, examining how motor bias interacts with exogenous and endogenous signals. The data strongly support the model predictions (C20-C22), with quantitative agreement between observed and predicted rise point changes. The cumulative effect across trial history (Figure 5) and consistency with model simulations (C39, Figure 5\u2014figure supplement 1b) provide robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C45"
+    ],
+    "result": "Individual participant analysis showed that drop points in antisaccades (87-98 ms) and rise points in prosaccades (82-95 ms) were significantly correlated (\u03c1=0.73, p=0.004), while antisaccade drop points and rise points were not correlated (p=0.6), consistent with a common exogenous mechanism that is independent of the endogenous process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C43, C45 present correlation analyses across individual participants that provide additional support for the independence hypothesis. The significant correlation between early responses across tasks (Figure 6d) and lack of correlation between early and late responses within the antisaccade task (Figure 6c) are logically consistent with the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The mechanistic interpretation is that cue onset accelerates ramping neural activity past threshold before top-down information can influence choice, producing captured saccades after 75-100 ms of viewing time. This exogenous capture mechanism potentially encompasses multiple oculomotor phenomena including oculomotor capture, express saccades, exogenous attention, and attentional capture, becoming particularly strong and reliable when motor plans are already underway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 provide theoretical interpretation and broader context for the findings. While speculative in connecting to other phenomena, the interpretations are appropriately qualified and well-supported by citations. The mechanistic explanation (C46-C47) follows logically from the race-to-threshold model framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The results challenge the traditional inhibitory control conceptualization of antisaccade performance. Multiple factors determine success (preparatory activity strength, motor plan congruence, cue salience), but there appears to be no mechanism for preventing the exogenous burst itself. The endogenous signal does involve inhibition to decelerate the incorrect plan, but this applies equally to any urgent perceptually-informed saccadic choice and complements excitation of the correct plan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 present an important reinterpretation of antisaccade mechanisms. The argument is well-supported by the experimental data (C59 cites Figure 4 and multiple prior studies) and logically follows from the independence of the exogenous response. The claim that inhibition is not specific to antisaccades is appropriately supported by modeling citations (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The experimental methods involved 10 participants (6 female, 4 male) performing urgent pro- and antisaccade tasks with carefully controlled stimuli (1.5\u00b0 diameter cues, matched luminance of 48 cd m\u207b\u00b2), eye tracking at 1000 Hz, and analysis based on raw processing time (rPT = RT - gap) for urgent trials only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C64-C77 describe the experimental methods in appropriate detail. The sample size (n=10) is reasonable for psychophysical studies, stimulus parameters are well-specified, and the analysis approach is clearly defined. The counterbalancing of color assignments (C70-C71) and luminance matching (C72) demonstrate good experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The CAS model implements exogenous and endogenous signals as specific modulations of competing motor plans: during the exogenous response interval, the plan toward the cue is briefly halted then accelerated while the anti plan is halted; after the interval, the cue plan is decelerated and the anti plan is accelerated based on task rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe the specific computational implementation of the model mechanisms. These are clearly illustrated in Figure 2b-c and represent the formal instantiation of the theoretical framework. The descriptions are consistent with the prior publication (Salinas et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background knowledge establishes that oculomotor circuits integrate physical salience and behavioral goals, with exogenous mechanisms responding to salience and endogenous mechanisms prioritizing goal-relevant objects. The antisaccade task is ideal for studying this distinction as it decouples stimulus encoding and response preparation, requiring endogenous control to override the natural tendency to look at the cue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C14 present established background knowledge appropriately supported by citations to the relevant literature. These claims provide necessary context for the study but do not represent new findings. The characterizations are accurate and well-documented in the cited sources.",
+    "result_type": "MINOR"
+  }
+]

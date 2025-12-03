@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A reciprocal transplant experiment was conducted with three A. lyrata populations (J1, J3, GER) grown at low-altitude (300 m) and high-altitude (1100 m) field sites in Norway. The altitudinal difference created substantial environmental differences between sites, and multi-year fitness data showed home-site advantage for Norwegian populations while the GER population performed poorly at both sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C39-C44 provide comprehensive experimental design details including site locations, altitudes, populations used, and fitness outcomes. The experimental setup is well-documented with appropriate controls (reciprocal design) and the fitness data from prior work (C42-C43) validates the environmental relevance of the field sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C64"
+    ],
+    "result": "Gene expression is highly plastic in response to environment, with many more genes differentially expressed between field sites (3456 DEGs) than between populations (1675 DEGs between GER and Norwegian populations, only 31 between J1 and J3). The first principal component of gene expression variation corresponded to field site differences, and 18% of expressed genes were classified as environmentally responsive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C45-C53, C61, C64 collectively demonstrate strong environmental plasticity in gene expression through multiple lines of evidence: PCA showing field site as primary source of variation, differential expression analysis with clear quantification of DEGs, and consistent patterns across populations. The statistical analyses (DESeq2 with appropriate corrections) support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "DNA methylation patterns were primarily influenced by population structure rather than environment. CG methylation showed clear population differences (J1 and J3 higher than GER) but minimal field site effects, while non-CG methylation (CHG and CHH) showed some environmental response, particularly in Norwegian populations at high altitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C59, C62-C63 provide consistent evidence from PCA, methylation quantification across contexts, and statistical tests showing population as the primary driver of methylation variation. The differential responses between CG and non-CG contexts are well-documented with appropriate statistical support (p<2\u00d710^-16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C65",
+      "C66",
+      "C67",
+      "C114"
+    ],
+    "result": "DNA methylation at genic regions is largely insensitive to the environment, and plastic methylation changes are not associated with differential gene expression between field sites. While methylation and expression levels are correlated, DEG~field genes shared fewer than expected overlap with differentially methylated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C65-C67, C114 demonstrate through multiple analyses (correlation, overlap analysis, Fisher's exact tests) that genic methylation does not drive environmentally-induced expression changes. The lack of association between plastic methylation and differential expression is well-supported, though C67 shows some association for population-level differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Environmentally responsive genes (DEG~field and DEG~field:population) evolve under strong selective constraint with high purifying selection on coding sequences, low rates of adaptive evolution (reduced \u03b1), high sequence conservation across eudicots, and enrichment of conserved noncoding sequences in promoters. DEG~field genes show a deficit of selective sweeps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C78-C79, C81-C85 provide convergent evidence from multiple evolutionary analyses (DFE, \u03b1 estimation, GERP scores, CNS enrichment, selective sweep detection) all pointing to strong constraint on environmentally responsive genes. The statistical support is robust (p<0.006 for various tests) and multiple independent methods yield consistent conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Positive selection on cis-regulatory variants has contributed to genetically variable environmental responses (DEG~field:population), but such variants segregate primarily between distantly related populations (Norwegian vs. GER). These genes show enrichment of selective sweeps, particularly in promoter regions, with low genetic diversity and high differentiation at promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C73-C76, C86-C88 demonstrate through selective sweep analysis, genetic diversity/differentiation patterns, and population comparisons that adaptive evolution at regulatory regions occurs over long timescales. The enrichment of sweeps in DEG~field:population (p<0.002) and localization of selection signals upstream of TSS provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Different gene sets show distinct functional enrichments: DEG~field genes are enriched for photosynthesis, cold response, and light intensity response; DEG~population genes are enriched for defense responses; and non-CG DMGs are enriched for cellular signaling and transport functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 report GO enrichment results that are biologically coherent with the experimental design (altitude differences affecting photosynthesis and temperature response, population differences in pathogen defense). The enrichment analyses appear appropriately conducted with multiple testing correction (Q-values).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C80"
+    ],
+    "result": "Non-CG differentially methylated genes (DMGs) harbor higher than average genetic diversity and show elevated rates of adaptive evolution (higher \u03b1 in all three populations), suggesting relaxed selective constraint and long-term adaptive evolution at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C80 provide evidence from genetic diversity analysis and \u03b1 estimation (p<0.0002) showing that DMGs evolve differently from environmentally responsive genes. The pattern is consistent across populations and supported by multiple evolutionary metrics, contrasting with the strong constraint on DEGs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C118"
+    ],
+    "result": "Transposable elements at the high-altitude field site show both higher expression and higher methylation levels (particularly CHH methylation), with Norwegian populations showing clearer responses than GER. This pattern suggests broad-scale TE activation at high altitude, with hypermethylation occurring as a response to increased TE activity rather than proactive suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C89-C94, C118 provide consistent evidence from TE expression quantification, methylation analysis across contexts, and correlation analyses. The counterintuitive finding of simultaneous increased expression and methylation is well-explained as a reactive response. Statistical support is strong (p<2\u00d710^-16) and the interpretation is supported by citations to relevant literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The alpine population (J3) harbors an excess of recent TE insertions compared to the lowland population (J1), with enrichment of LTR retrotransposons and deficit of DNA transposons. Tajima's D analysis shows TEs segregate at lower frequencies in J3, consistent with recent TE proliferation rather than stronger selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C97-C100 use Tajima's D, TE insertion polymorphism data, and TE class composition to infer recent TE activity in the alpine population. The interpretation that low-frequency TEs reflect recent insertion rather than strong purifying selection is supported by SNP-based selection efficacy estimates showing J3 has equal or weaker selection than J1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Specific TE families, particularly Ty3 retrotransposons, are enriched within environmentally responsive genes, especially in the DEG~field:population group in the J3 population. DMGs are also TE insertion hotspots, suggesting non-CG methylation changes may arise from TE methylation spreading to genic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C101-C103 demonstrate through Fisher's exact tests (p=1.3\u00d710^-6 for Ty3 enrichment) that TEs are non-randomly distributed relative to environmentally responsive genes. The enrichment is statistically significant and the interpretation regarding DMG methylation origins is reasonable given the spatial association with TEs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C124"
+    ],
+    "result": "Plastic responses at TEs can rapidly create novel heritable variation in stressful conditions, with TEs integrating into gene bodies of environmentally responsive genes potentially generating adaptive variation, though functional validation is needed to determine phenotypic and fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15 and C124 make speculative inferences about the adaptive potential of TE insertions based on their enrichment patterns. While the enrichment data are solid, the claims about rapid creation of heritable variation and adaptive potential are not directly tested. The authors appropriately acknowledge (C124) that functional validation is required, making this an uncertain result pending further work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C119"
+    ],
+    "result": "Genes whose promoters lie close to methylated TEs have reduced expression levels, demonstrating that TE-directed methylation can silence nearby genes. However, this mechanism does not explain the expression differences between field sites, as DEG~field genes are further from differentially methylated TEs than other genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C119 show through distance-expression association analysis that TE methylation affects nearby gene expression, but statistical testing (p=3.9\u00d710^-8) demonstrates this is not the mechanism underlying field site expression differences. The evidence clearly distinguishes between general TE effects and field-specific responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C116",
+      "C117"
+    ],
+    "result": "The two Norwegian populations (J1 and J3) show highly similar transcriptional responses despite evidence of local adaptation, likely due to their recent divergence (~1700 years ago). Expression differentiation occurs primarily between Norwegian populations and GER (diverged ~150,000 years ago), with much of GER's expression differentiation likely maladaptive in Norway given poor fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108, C116-C117 integrate expression data with population genetic history and fitness outcomes to explain patterns of transcriptional similarity and divergence. The interpretation is well-supported by the data (only 31 DEGs between J1 and J3 vs. 1675 between Norwegian and GER) and consistent with divergence times from cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The DNA methylome in Arabidopsis species is largely insensitive to environmental factors based on multiple studies in A. thaliana showing weak methylation responses to temperature, nutrient stress, salt, drought, and light. However, methylation changes accumulated over generations may influence gene expression patterns between populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 synthesize findings from the current study with extensive prior literature on A. thaliana to reach a general conclusion about methylation plasticity in Arabidopsis. The current study's findings are consistent with cited work, and the distinction between within-generation plasticity and transgenerational accumulation (C115) is supported by overlap analysis between DEG~population and DMGs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C132",
+      "C133"
+    ],
+    "result": "Environmentally responsive genes (both DEG~field:population and DEG~field) are enriched for H2A.Z binding sites, with Ty3 retrotransposons showing greater enrichment than Copia elements. This integration is likely mediated by H2A.Z, which is found in temperature-sensing genes, providing a mechanism for TE accumulation in the J3 population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122, C132-C133 use H2A.Z binding site analysis (OR=3.10 and 2.93, p<2\u00d710^-16) to connect TE integration patterns with chromatin structure. The mechanistic explanation is supported by cited literature on H2A.Z function and Copia integration preferences in A. thaliana, though the analysis relies on cross-species mapping of binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The strong selective constraint and low genetic diversity at environmentally responsive genes could pose a risk to adaptation when environmental perturbations exceed the buffering capacity of phenotypic plasticity, as adaptation to rapidly shifting fitness optima can be limited by lack of standing genetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 makes a speculative inference about future adaptive potential based on observed patterns of constraint and diversity. While the underlying data on constraint are solid, the claim about risk is speculative and depends on assumptions about future environmental change, the sufficiency of plasticity, and the genetic architecture of adaptation that are not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study generated high-quality sequencing data with 1.036 billion RNA-seq read pairs (average 29 million per individual) and 768 million WGBS read pairs (average 32 million per individual), with bisulfite conversion efficiency >99% across all cytosine contexts based on chloroplast DNA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 report sequencing depth and quality control metrics that are appropriate for the analyses conducted. The conversion efficiency estimates based on unmethylated chloroplast DNA are a standard quality control approach, and the reported values (>99%) indicate high-quality WGBS data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The introduction establishes theoretical and empirical context from prior literature on plasticity vs. genetic adaptation, gene expression as the basis of plasticity, conserved vs. variable expression responses, selective constraint patterns, TE biology and stress responses, and DNA methylation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C38 accurately represent established knowledge from cited literature, providing appropriate context for the study. These are background claims supported by citations to relevant primary literature and reviews. The claims accurately characterize prior work on evolutionary theory, gene regulation, TE biology, and epigenetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "A. lyrata is a predominantly outcrossing, perennial herb with circumpolar distribution that is closely related to the model species A. thaliana but differs in key life history traits (outcrossing vs. selfing, perennial vs. annual), making it a useful system for ecological and evolutionary studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 accurately describe the study organism based on cited literature. These are factual statements about species characteristics that are well-established in the literature and relevant for contextualizing the experimental system.",
+    "result_type": "MINOR"
+  }
+]

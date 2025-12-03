@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study cohort comprised 97 PWH from the COCOMO cohort with comprehensive multi-omics data (877 metabolites, 977 lipids, 241 ASVs) and 42 clinical features, plus 20 HIV-negative controls. The PWH were predominantly male (86%), Caucasian (81%), with median age 54 years, on ART for median 15 years, with viral suppression and median CD4 count of 713 cells/\u00b5L. Controls had similar demographics but slightly higher BMI (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide comprehensive cohort characterization with explicit sample sizes, demographic data, and clinical parameters. The data are clearly stated with appropriate statistical measures (medians, IQRs, percentages) and one statistical comparison (BMI difference). This represents standard cohort description for a multi-omics study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Similarity Network Fusion (SNF) identified three distinct clusters of PWH (SNF-1: N=19, SNF-2: N=44, SNF-3: N=34). Lipids had the strongest influence on cluster formation (NMI=0.6), followed by metabolites (NMI=0.4) and microbiome (NMI=0.3). Clear cluster segregation was observed in PCA plots for the fused network and for lipidomics and metabolomics individually, but not for microbiome alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe the SNF clustering results with explicit cluster sizes, NMI scores quantifying each omics layer's contribution, and PCA visualization confirming segregation. The methodology is appropriate for multi-omics integration, and results are clearly presented with supporting figures. The finding that microbiome shows weaker clustering is acknowledged and consistent with the lower NMI score.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The three SNF clusters were classified as HC-like (SNF-1, healthiest), mild at-risk (SNF-3, intermediate), and severe at-risk (SNF-2, most severe metabolic perturbations). The severe at-risk group (45% of cohort) showed significantly elevated BMI, VAT, SAT, MetS incidence, and central obesity (all p<0.05), but paradoxically had higher CD4+ T-cell counts and more MSM transmission compared to other clusters. No associations were found with liver or kidney function. Clusters did not differ by age, gender, ART duration, or ART type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C40 provide comprehensive clinical characterization of the three clusters with appropriate statistical testing (p<0.05 threshold). The classification scheme (HC-like, mild, severe at-risk) is clearly defined based on metabolic parameters. The paradoxical finding of higher CD4 counts in the severe at-risk group is explicitly noted and MSM status is identified as a confounding factor. Statistical comparisons are appropriate for the data types (continuous and categorical variables).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Lipidomics analysis revealed that HC-like and mild at-risk groups had similar lipid profiles to HIV-negative controls, while the severe at-risk group showed significant increases in diglycerides (DAG) and triglycerides (TAG) compared to all other groups (FDR <0.1). These lipid differences remained significant after adjusting for HIV transmission mode and CD4 count. No significant relationship was found between cluster assignment and ART class (\u03c7\u00b2, FDR=0.45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe differential lipid abundance with appropriate statistical testing (FDR correction) and adjustment for identified confounders. The finding that lipid trends persist after confounder adjustment strengthens the result. The lack of ART class association is appropriately tested and reported. However, the authors note substantial missing data for ART class (16-29%), which is a limitation but is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Metabolomics analysis identified 159 metabolites with highly differential abundance among groups (FDR <0.005). The HC-like group differed most from HIV-negative controls (124/159 metabolites), while mild at-risk and controls differed in only 9 metabolites. Both HC-like and severe at-risk groups showed up-regulation of xenobiotics, nucleotides, and amino acid metabolism compared to controls. After adjusting for confounders, 217 metabolites differed between PWH groups, but only 15 metabolites differed between HC-like and severe at-risk groups (mostly lipid metabolism). Modest associations were found with age, BMI (50 metabolites), and gender (51 metabolites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 present comprehensive metabolomics results with stringent statistical thresholds (FDR <0.005 for initial analysis, <0.05 for adjusted analysis). The finding that HC-like PWH differ substantially from controls despite having healthy clinical profiles is important and well-supported. The similarity between HC-like and severe at-risk groups in metabolomics (only 15 differing metabolites) contrasts with their clinical and lipidomics differences, suggesting complex multi-omics relationships. Confounder adjustment is appropriately performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Microbiome analysis revealed that the HC-like group had lower \u03b1-diversity than the severe at-risk group (FDR <0.05) and was enriched in Bacteroides and Lachnospira, while at-risk groups were enriched in Prevotella, Veillonella, and Succinivibrio. However, microbiome composition was more strongly influenced by HIV transmission mode (MSM status) than by cluster assignment. The severe at-risk group had 81% MSM, while HC-like had 47% MSM. After correction for transmission mode and CD4 count, \u03b1-diversity differences between clusters disappeared. PERMANOVA showed significant differences between HC-like and both at-risk groups (FDR <0.001 and 0.0054), but no difference between severe and mild at-risk groups (FDR=0.38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C68 provide thorough microbiome characterization with appropriate statistical methods (Mann-Whitney, PERMANOVA, LEfSe). The critical finding that MSM status is a major confounder for microbiome differences is well-supported by the data showing \u03b1-diversity differences disappear after correction. The enrichment of specific bacterial families is confirmed by multiple statistical approaches. This result appropriately acknowledges the confounding effect of sexual behavior on microbiome composition, which is consistent with prior literature cited in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Multi-Omics Factor Analysis (MOFA) using 173 ASVs, 676 metabolites, and 709 lipids identified 15 uncorrelated latent factors. Variance was explained predominantly by lipidome (80%), followed by metabolome (22%) and microbiome (2%), consistent with SNF results. Among 396 top-weighted features selected, three microbiome-associated metabolites (MAMs) were identified in the top 20 metabolite features. Consensus co-expression network analysis revealed 1324 nodes with eight multi-omic communities, with eight MAMs found predominantly in community c6 (5/21), suggesting MAMs are highly intercorrelated and may play a role in shaping systemic metabolic and lipid profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 describe complementary integrative analyses (MOFA and network analysis) that corroborate the SNF findings regarding the relative importance of different omics layers. The identification of MAMs as highly intercorrelated features is supported by network topology. However, the claim that MAMs 'could have a potential role' (C76) is appropriately cautious speculation based on correlation, not causation. The methods are appropriate for multi-omics integration, though the low microbiome contribution (2% variance) is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Analysis of 69 microbiome-associated metabolites (MAMs) - including 22 from secondary bile acid metabolism and 47 host-produced but bacteria-modified - revealed that 19 MAMs differed between HIV-negative controls and PWH regardless of cluster, with 30 differing in at least one comparison. Propionate and indole derivatives were significantly increased in PWH (FDR <0.05). The mild at-risk group had MAM profiles more similar to controls than HC-like or severe at-risk groups, which had identical MAM profiles. Lithocholate sulfate was associated with obesity-related comorbidities, while lifestyle factors (diet, smoking, alcohol) and antihypertensive medication impacted MAMs. SNF clusters were linked to lithocholate sulfate, 3-ureidopropionate, and imidazole propionate. Metabolomics co-expression network analysis showed secondary bile acids clustered in community c4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 provide detailed MAM characterization with appropriate statistical testing and association analyses. The definition of MAMs is based on cited literature (C77). The finding that HC-like and severe at-risk groups have identical MAM profiles despite different clinical phenotypes is intriguing and well-supported. Associations with clinical parameters are appropriately analyzed using univariate linear regression. However, the causal relationships between MAMs and clinical outcomes cannot be established from these cross-sectional correlational data, which the authors appropriately acknowledge as a limitation elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Despite having the healthiest clinical profile, the HC-like group showed a metabolic profile similar to the severe at-risk group, both differing from HIV-negative controls with dysregulation of amino acid metabolism. The HC-like group had lower \u03b1-diversity, lower proportion of MSM, and enrichment in Bacteroides, while at-risk groups showed increased Prevotella with high MSM proportion, which could potentially lead to higher systemic inflammation and increased cardiometabolic risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C33 describe key findings but contain both well-supported observations and speculative interpretations. The metabolic similarity between HC-like and severe at-risk groups is supported by the data (C27, C54). The microbiome differences are documented (C28-C32), but the causal claim that increased Prevotella 'could potentially lead to' inflammation and cardiometabolic risk (C33) is speculation not directly tested in this study. The cross-sectional design cannot establish whether microbiome differences are cause or consequence of metabolic states, and MSM status is a major confounder.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge about HIV, ART, metabolic complications, and microbiome-metabolite interactions. Key background includes: ART improves outcomes but causes metabolic perturbations; long-term HIV infection associates with premature aging and comorbidities; microbiome composition relates to HIV status and sexual behavior; previous metabolomics studies showed amino acid dysregulation in PWH; dyslipidemia is common in PWH; and various microbiome-associated metabolites (bile acids, SCFAs, indole derivatives) play roles in host metabolism and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C118 represent background knowledge and literature context, all supported by appropriate citations. These claims establish the scientific foundation for the study but are not novel findings. The authors appropriately cite prior work and accurately represent the state of knowledge in the field. One claim (C97) asserts novelty ('no integrative omics studies'), which may be difficult to verify comprehensively but appears reasonable given the specific context (prolonged suppressive ART with multi-omics integration).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The complete cohort was predominantly MSM (65%, 63/97), with 81% of MSM in the severe at-risk group. The mild at-risk group had the same proportion of MSM as the HC-like group, despite showing no difference from the severe at-risk group in PERMANOVA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 provide additional demographic details about MSM distribution across clusters. The data are explicitly stated and help explain the microbiome findings. The observation that mild at-risk has similar MSM proportion to HC-like despite intermediate clinical phenotype adds nuance to the interpretation of microbiome-clinical relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The study has several acknowledged limitations: cross-sectional design restricts causal inference about dynamic omics interactions; 16S microbiome methodology has high missing data at genus/species level; sample size is relatively low despite being the largest integrative omics study in PWH to date; and microbiome/metabolomics are highly dependent on individual genetics, environment, and diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 represent appropriate acknowledgment of study limitations. The cross-sectional design (C122) is a fundamental limitation for causal inference, which affects interpretation of many results. The 16S limitation (C123) is relevant given the modest microbiome contribution to clustering. The sample size concern (C124) is valid though the authors note this is still the largest such study. These limitations are honestly reported and appropriately contextualize the findings.",
+    "result_type": "MINOR"
+  }
+]

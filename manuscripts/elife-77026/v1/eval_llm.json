@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C40"
+    ],
+    "result": "SpTx1 does not affect blood glucose levels, insulin secretion, or membrane potential in wild-type mice. At doses up to 1 mg/kg (estimated 3 \u00b5M in blood, ~200\u00d7 the Kd for hKir6.2), SpTx1 had no discernible effect on blood glucose levels in wild-type mice. At concentrations of 0.2-1 \u00b5M, SpTx1 failed to alter glucose-stimulated insulin secretion from isolated wild-type mouse islets, and at 0.2 \u00b5M (>10\u00d7 the Kd for hKir6.2), SpTx1 did not depolarize membrane potential in wild-type \u03b2 cells despite glucose and glibenclamide causing dramatic depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C37, and C40 collectively demonstrate through in vivo blood glucose measurements (Figure 1B), ex vivo insulin secretion assays (Figure 1C), and electrophysiological recordings (Figure 2) that SpTx1 has no functional effect on wild-type mouse pancreatic \u03b2 cells. This is consistent with the subsequent finding that mKir6.2 has much lower affinity for SpTx1 than hKir6.2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SpTx1 inhibits human and mouse KATP channels with markedly different affinities due to differences in Kir6.2 subunits, not SUR1. SpTx1 inhibits hKATP (hKir6.2+hSUR1) with Kd=15 nM but mKATP (mKir6.2+mSUR1) with Kd=673 nM, a ~45-fold difference. Swapping experiments show that SpTx1 affinity depends on the Kir6.2 ortholog (high affinity with hKir6.2, low with mKir6.2) regardless of which SUR1 variant is present, demonstrating that differences in Kir6.2 itself, not SUR1, underlie the differential SpTx1 affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are well-supported by systematic electrophysiological measurements in Xenopus oocytes (Figure 3) showing concentration-response curves with fitted Kd values. The subunit-swapping experiments provide strong evidence that Kir6.2 orthologs, not SUR1 variants, determine SpTx1 affinity. The data are internally consistent and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A single amino acid difference at position 108 (valine in mKir6.2 vs. glutamate in hKir6.2) accounts for the differential SpTx1 affinity between mouse and human channels. Triple mutations (S103G+A107N+E108V) in hKir6.2bgd reduced SpTx1 affinity to mKir6.2bgd levels, but the E108V mutation alone was sufficient to confer low affinity. Conversely, the V108E mutation in mKir6.2bgd or mKir6.2+mSUR1 conferred high SpTx1 affinity comparable to human channels, while E108V in hKir6.2+hSUR1 conferred low affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 describe a systematic mutagenesis study (Figures 4-5) that identifies position 108 as the critical determinant of SpTx1 affinity. The bidirectional mutagenesis (human\u2192mouse and mouse\u2192human) provides strong evidence. The data are consistent across multiple channel constructs (background mutants and full KATP complexes), supporting the conclusion that residue 108 is the key determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C80",
+      "C82"
+    ],
+    "result": "SpTx1 depolarizes \u03b2 cells and elicits action potentials in EndomKir6.2V108E mice in a glucose-dependent manner. In nominal glucose-free conditions, 0.2 \u00b5M SpTx1 caused only small depolarization insufficient to elicit action potentials. With 5 mM glucose, SpTx1 caused variable depolarization without action potentials. However, with 8 mM glucose, SpTx1 strongly depolarized membrane potential and elicited action potentials. Thus, SpTx1's impact on membrane potential depends on glucose concentration, and it does not impactfully depolarize \u03b2 cells in glucose concentrations less than 5 mM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C80, and C82 are supported by perforated whole-cell patch-clamp recordings from \u03b2 cells in isolated islets (Figure 6). The glucose-dependence of SpTx1's effect is clearly demonstrated across three glucose concentrations (0, 5, and 8 mM), with quantified membrane potential values from multiple cells. This result is critical for understanding SpTx1's mechanism as a secondary but not primary secretagogue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "SpTx1 acts as an effective secondary secretagogue but not as an effective primary secretagogue in EndomKir6.2V108E mice. SpTx1 (0.5-2 \u00b5M) potentiated glucose-stimulated insulin secretion in 10-16.7 mM glucose to levels comparable to glibenclamide when used at sufficiently high concentrations. However, in nonstimulating 3 mM glucose, SpTx1 caused no detectable insulin secretion above baseline, whereas glibenclamide triggered sizable insulin secretion. The potentiating effect was reversible upon washout and did not require preincubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68, C81, C83-C84 are supported by perifusion experiments (Figure 7A-D) showing insulin secretion profiles under various conditions. The distinction between primary and secondary secretagogue effects is clearly demonstrated by comparing responses in 3 mM vs. 10-16.7 mM glucose. The dose-response relationship and comparison with glibenclamide provide strong evidence for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "SpTx1 counteracts the inhibitory effect of diazoxide on glucose-stimulated insulin secretion. Diazoxide (100 \u00b5M) lowered insulin secretion in 16.7 mM glucose to baseline levels, but SpTx1 at 1 \u00b5M (but not 0.02 \u00b5M) effectively boosted insulin secretion in the presence of diazoxide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by static insulin secretion assays (Figure 7E) showing that SpTx1 can overcome the KATP channel-opening effect of diazoxide in a concentration-dependent manner. This provides additional evidence that SpTx1 acts by blocking Kir6.2 channels and supports the specificity of its mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C89"
+    ],
+    "result": "SpTx1 selectively lowers blood glucose and triggers insulin secretion in diabetic Rosa26mKir6.2NDM-V108E mice but not in wild-type or non-diabetic EndomKir6.2V108E mice. In diabetic Rosa26mKir6.2NDM-V108E mice, IV injection of SpTx1 (1 mg/kg) caused blood glucose to drop markedly over 30 min and remain lowered, accompanied by a transient but sizable rise in plasma insulin. In contrast, SpTx1 had no effect on blood glucose or insulin levels in wild-type or EndomKir6.2V108E mice. Glibenclamide was ineffective in Rosa26mKir6.2NDM-V108E mice, consistent with prior reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 and C89 are supported by in vivo blood glucose and plasma insulin measurements (Figure 8) in multiple mouse genotypes. The selective effect in diabetic mice with elevated baseline glucose demonstrates the glucose-dependent action of SpTx1. The lack of effect in non-diabetic mice supports the safety profile. Statistical significance is reported (p=0.011 for plasma insulin comparison). This is the key proof-of-concept result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C88",
+      "C101"
+    ],
+    "result": "SpTx1 represents a proof-of-concept for Kir6.2 blockade as a potential treatment for diabetes with KATP hyperactivity. The study demonstrates that SpTx1 acts as a strong secondary but not strong primary secretagogue, triggering transient insulin secretion and lowering blood glucose in diabetic mice overexpressing Kir6.2 without affecting non-diabetic mice. This glucose-dependent action suggests blocking Kir6.2 may be effective for diabetes stemming from KATP hyperactivity that cannot be adequately suppressed with sulfonylureas, with a desirable safety profile unlikely to cause hyperinsulinemia and hypoglycemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C88, and C101 represent the main conclusions of the study, supported by the collective evidence from in vitro, ex vivo, and in vivo experiments. The proof-of-concept is well-demonstrated through the engineered mouse models and SpTx1's selective effects. However, C101 includes speculative elements about future therapeutic applications that extend beyond the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Glibenclamide may have additional effective targets beyond cell surface KATP channels. Glibenclamide causes additional insulin secretion even when membrane potential is clamped at depolarized levels (30 mM K+), and multiple studies show glibenclamide interacts with other proteins including syntaxin-1A and Epac2. This explains why SpTx1, which blocks Kir6.2 from the extracellular side, cannot fully mimic all actions of glibenclamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by cited literature (Geng et al., 2007 and multiple other references). This provides context for interpreting the differences between SpTx1 and glibenclamide observed in the current study. The inference that glibenclamide has additional targets is reasonable given the cited evidence and the observed differences in primary secretagogue activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The inhibitory mechanisms of SpTx1 and sulfonylureas differ in their dependence on cellular metabolic state. Sulfonylureas inhibit KATP channels by antagonizing MgADP activation through SUR1 binding, and without ATP can only inhibit ~2/3 of channel current, making their effect dependent on metabolic state. In contrast, SpTx1 blocks the Kir6.2 pore directly and its inhibitory effect is not expected to depend on metabolic state, as demonstrated by comparable blockade of constitutively active mutant Kir6.2 and azide-activated KATP channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by cited literature for sulfonylurea mechanisms and by experimental data (Figures 3-5) showing SpTx1 blocks channels under different metabolic conditions. This mechanistic distinction is important for understanding the different pharmacological profiles of the two inhibitor classes and is well-supported by the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "SpTx1 and sulfonylureas have distinct molecular properties and limitations as KATP channel inhibitors. Mutations in SUR1 can disrupt nucleotide-dependent gating such that substantial KATP current remains even with saturating sulfonylureas. KATP complexes with SUR2 have low sulfonylurea sensitivity. SpTx1 is not membrane permeable and acts from the extracellular side, whereas sulfonylureas are membrane permeable and lodge into transmembrane segments of SUR proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by cited literature and known properties of the molecules. These distinctions are important for understanding the complementary utility of SpTx1 as an experimental tool and potential therapeutic. The claims accurately represent established knowledge about these inhibitor classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C38",
+      "C39",
+      "C41",
+      "C100"
+    ],
+    "result": "Background knowledge and context about KATP channels, neonatal diabetes mellitus, and sulfonylureas. These claims establish the scientific foundation for the study, including the composition and function of KATP channels, the role of Kir6.2 and SUR1 mutations in NDM, the mechanism of glucose-stimulated insulin secretion, the pharmacology of sulfonylureas, and the properties of SpTx1 as a Kir6.2 inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C31, C38-C39, C41, and C100 represent established knowledge supported by appropriate citations to the literature. These provide essential context for understanding the rationale and significance of the current study. The claims accurately represent the cited work and established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Validation of experimental system using glibenclamide as positive control in wild-type mice. Overnight-fasted wild-type mice had blood glucose of 173\u00b13.18 mg/dL. Glibenclamide (40 mg/kg IP) lowered blood glucose by half over 2 hours while DMSO vehicle had no effect. The SpTx1 dose of 1 mg/kg is calculated to be ~3 \u00b5M in blood, approximately 200\u00d7 the Kd for hKir6.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C36 are supported by experimental data in Figure 1A and straightforward calculations. These establish appropriate positive controls and dosing rationale for the study. The glibenclamide response validates the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C56"
+    ],
+    "result": "SpTx1 inhibits KATP channels by blocking the Kir6.2 ion-conduction pore. This mechanism is supported by the finding that differences in Kir6.2 orthologs (not SUR1) determine SpTx1 affinity, and that a single residue (position 108) in the extracellular vestibule of the pore is the critical determinant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C56 represent mechanistic conclusions supported by the mutagenesis data (Figures 3-5) and prior structural/functional studies (cited as Ramu et al., 2018; Ramu and Lu, 2019). The identification of position 108 in the pore vestibule as the key determinant strongly supports the pore-blocking mechanism.",
+    "result_type": "MAJOR"
+  }
+]

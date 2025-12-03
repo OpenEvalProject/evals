@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C59",
+      "C60",
+      "C61",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A biophysical polymer model of homologous chromosomes with specifically interacting 'buttons' can produce chromosome-wide pairing through a stochastic 'zippering' mechanism driven by random encounters, without requiring active processes. The model demonstrates that pairing efficiency depends on button density, interaction strength, initial chromosome distance, and specificity of button interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C15, C22-C30, C59-C61 collectively demonstrate through simulation data that the button model can achieve chromosome-wide pairing via a zippering mechanism. The model parameters (C97-C104) are clearly specified, and systematic exploration of parameter space (C23, C25-C28) shows how button density, interaction strength, and initial conditions affect pairing. The requirement for specificity (C29-C30) is demonstrated by comparison with non-specific models. This is a core computational result with extensive supporting simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Live imaging using MS2/PP7 nascent RNA labeling systems reveals that paired homologous loci remain stably associated with mean distance ~0.4 \u03bcm and SD ~0.3 \u03bcm, while unpaired loci show larger separations (~2.2 \u03bcm) with greater variability. Once paired, loci never transition back to unpaired state over >8 hours of observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 describe the experimental approach and key observations, supported by quantitative measurements from multiple nuclei (n=25 paired, n=30 unpaired, n=38 total for stability). The methodological details (C105-C114) provide transparency about image acquisition and analysis. The stability observation (C37) is particularly strong with >8 hours combined observation time. The quantitative definition of pairing (C39) is data-driven and validated against older embryos (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Pairing dynamics during embryonic development show a steady increase in the proportion of paired nuclei from 2.5 to 6 hours after fertilization. Initial inter-homolog distances measured by chromosome painting follow a Gaussian distribution with mean ~1.9 \u03bcm for distances >1 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe developmental progression supported by time-course data from multiple embryos (n=3 per locus). The chromosome painting measurements (C44-C45, C118-C121) provide independent validation of initial distances with adequate sample size (n=48 nuclei per chromosome arm). The systematic lower pairing percentage compared to DNA-FISH (C43) is acknowledged and explained by methodological differences. This provides crucial parameter constraints for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C67",
+      "C77"
+    ],
+    "result": "Model fitting to experimental pairing dynamics constrains button parameters: goodness of fit is largely independent of button density, with denser buttons requiring weaker interaction energies. For button density of 60-70% (from Hi-C studies), the model predicts interaction energy of ~1-2 kBT, consistent with protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 describe parameter fitting results showing the model can recapitulate experimental observations across a range of parameters. The constraint on interaction energy (C77) is derived from combining model predictions with Hi-C-based button density estimates from prior work, yielding biophysically plausible values. Claim C67 correctly states that measurements constrain the parameter range. The chi-squared fitting approach is appropriate and the independence of fit quality from button density (C46) is an interesting emergent property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Individual pairing events occur rapidly over 10-20 minutes, consistent with model predictions of zippering dynamics. Experimental observations of 14 pairing events show rapid transitions matching simulations, and post-pairing distances (~0.5 \u03bcm) agree quantitatively with model predictions using parameters fit to developmental dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe experimental capture of 14 pairing events with dynamics matching model predictions (C48). The agreement spans both pre-pairing approach (C56) and post-pairing stability (C57, C65). Claim C58 appropriately summarizes the multi-scale validation. The sample size (n=14) is modest but adequate given the difficulty of capturing rare pairing events. The quantitative agreement between predicted and observed post-pairing distances (C57) using independently fit parameters is particularly compelling evidence for model validity (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The button model is consistent with prior experimental findings including DNA-FISH observations of independent pairing initiation, Hi-C identification of tight-pairing regions at 60-70% density, requirements for ~100 kbp segments for ectopic pairing, and enrichment of architectural/insulator proteins at pairing sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 relate the model to prior work on somatic and meiotic pairing. Claims C76, C78, C80-C82 cite multiple independent studies supporting button-like features in the genome. Claim C79 shows the model prediction is consistent with the experimental requirement for large segments. This represents appropriate integration of the current work with existing literature, though the cited studies were not directly designed to test the button model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The experimental approach has limitations: it relies on nascent RNA visualization rather than direct DNA observation, limiting analysis to transcriptionally active loci, and the simulations do not account for cell-cycle progression, chromatin state establishment, or other developmental complexities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 appropriately acknowledge methodological limitations. The nascent RNA approach (C68-C70) is validated by prior work (C69) but may not represent all chromatin states. The simulation limitations (C71) are clearly stated with appropriate citations. These are honest assessments of scope and potential caveats that do not undermine the main conclusions but appropriately bound their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The embryo transitions from an early state where pairing is unstable (prior to cellularization) to stable pairing at later developmental stages, likely mediated by modulation of button activity during the maternal-to-zygotic transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 cites prior work showing instability at blastoderm stage. Claims C73-C75 propose that developmental changes modulate button activity, but this is largely inferential (C75). While the interpretation is reasonable given the data, direct evidence for button modulation during the maternal-to-zygotic transition is not provided. This represents a plausible hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model requires specificity between homologous buttons, potentially achieved through combinatorial codes of insulator/architectural protein interactions or through formation of large self-interacting pairing units overlapping with TADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is supported by simulation data comparing specific vs. non-specific models. However, claims C84-C85 are explicitly speculative (marked as SPECULATION in evidence_type), proposing molecular mechanisms without direct experimental validation. These represent reasonable hypotheses based on prior Hi-C studies and model constraints, but require future experimental testing to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Somatic homolog pairing appears unique to Dipterans, possibly due to unique button sequences/proteins or absence of pairing antagonists present in other species. Multiple molecular mechanisms may accomplish homolog alignment in different cellular contexts (somatic vs. meiotic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 state established knowledge about the phylogenetic distribution of somatic pairing. Claims C88-C89 present alternative speculative explanations with appropriate citations. Claims C90-C93 discuss meiotic pairing differences with citations to prior work. This represents appropriate contextualization of the findings within broader biology, acknowledging both what is known and what remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The integrated biophysical modeling and live-cell imaging framework establishes a foundation for identifying button loci and characterizing how button parameters are modulated in mutant backgrounds, significantly advancing understanding of somatic homolog pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 appropriately summarizes the contribution of combining modeling with quantitative imaging. Claim C95 is forward-looking speculation about future applications. Claim C96 provides appropriate context about significance. These summary claims are supported by the body of work presented, though C95's future applications remain to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Missing frames in tracking data have minimal impact on conclusions: for paired loci, only 3/339 frames were missing due to transcription loss; for unpaired loci, even assuming maximum 5 \u03bcm separation in all missing frames increases mean distance by only ~12.5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 describe a systematic analysis of potential bias from missing data. The approach of testing worst-case scenarios (C117) is appropriate and shows the effect is modest. This represents good practice in assessing data quality and potential systematic errors, though the sample size for this analysis (n=6 traces per condition) is small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background context: Somatic homolog pairing in Drosophila involves intimate end-to-end association of homologous chromosomes, recently proposed to be driven by 'buttons,' though the molecular nature of buttons remains unclear. This phenomenon appears unique to Dipterans and can affect gene expression through transvection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide established background knowledge supported by appropriate citations to prior literature. These contextual claims accurately represent the state of the field and motivate the current study. They are primarily knowledge claims rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17"
+    ],
+    "result": "The button model predictions show solid agreement with experiments in pairing dynamics, including the stability of paired loci and dynamics through early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C16-C17) are high-level summary statements that are supported by the detailed results in other claim groups. They accurately represent the overall findings but are redundant with more specific claims already evaluated. The agreement is demonstrated through multiple lines of evidence in the detailed results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The zippering process produces large-scale correlations between pairing probabilities of distant loci, spreading over megabase genomic distances as pairing progresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 describes an emergent property of the model shown in simulation data (Figure 2\u2014figure supplement 3). This represents a testable prediction that could be validated with multi-locus imaging experiments, though such experiments are not presented in the current work. The prediction is a logical consequence of the zippering mechanism.",
+    "result_type": "MINOR"
+  }
+]

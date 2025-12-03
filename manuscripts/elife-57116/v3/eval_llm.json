@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CRISPR and shRNA methods show moderate correlation (Pearson 0.456, Spearman 0.201) but exhibit distinct biases: CRISPR detects weak-to-moderate gene deletion effects more sensitively, while 958 genes were claimed essential only by CRISPR and 20 only by shRNA, with pathway enrichment analysis revealing method-specific biases affecting different gene classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide convergent evidence from correlation analysis (C11), visual inspection of joint distributions (C12), Fisher's exact test results (C13-C14), and pathway enrichment analysis (C15-C16) that collectively support the conclusion of method-specific biases (C17). The statistical measures, specific gene counts, and biological pathway associations provide robust support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose that combining CRISPR and shRNA dependency scores would compensate for each method's artifacts and provide more robust scores, citing that recent studies have shown such approaches are practical and noting specific examples like EIF5B where only shRNA detected essentiality despite the gene's high conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 establish the rationale and precedent for combining methods, while C18-C20 provide a concrete example (EIF5B) demonstrating the practical need for integration. The combination of prior work citations (C94) and empirical observations (C19-C20) supports the proposed approach, though the actual validation of the combined score's superiority requires additional results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C26",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors developed a combined dependency score by integrating CRISPR (normalized with CERES) and shRNA (normalized with DEMETER2) data using a weighted average with mixing ratio \u03b8=0.6, imputing missing values via local polynomial regression (loess) where needed, and defining essential genes using X=1 (1st percentile), which resulted in only 56% overlap between CRISPR-only and shRNA-only essential gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24, C84-C88 describe the methodological approach with specific technical details (normalization algorithms, imputation method, parameter choices), while C26 provides empirical validation showing the limited overlap between methods. The technical implementation is clearly documented, though the justification for specific parameter choices (\u03b8=0.6, X=1) relies on subsequent comparative analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Genes with strongly negative efficacy tend to be less selective, while selectively essential genes tend to have only moderate efficacy, with pathway enrichment analysis revealing that chromatin regulation is overrepresented among genes that are both selective and essential, nuclear metabolism and translation among essential-only genes, and regulation of kinase activity and tissue development among selective-only genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 establish the inverse relationship between efficacy and selectivity, supported by Figure 3C, while C32-C34 provide pathway enrichment results that characterize distinct functional categories. The convergence of quantitative relationship analysis and biological pathway associations provides strong support for these patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Lower selectivity and more negative efficacy are associated with greater numbers of dependent cell lines and lineages, with 1050 genes commonly essential across all lineages, 670 genes essential in at least one lineage, and 2581 essential genes not lineage-dependent, showing strong association between dependent cell lines and dependent lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 establish the quantitative relationships supported by Figure 4A-B, while C37-C40 provide specific counts and associations. The convergence of multiple measures (cell lines, lineages, selectivity, efficacy) and their documented relationships provides robust support, though the statistical significance of these associations is not explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Most genes with high selectivity scores were identified as lineage-specific targets in prior work (Behan et al.), but lineage specificity is not the only cause of high selectivity, as demonstrated by examples of genes showing broad lineage-specific dependence (CTNNB1 in colorectal cancer, MYB in leukemia, IRF4 in multiple myeloma, KRAS in pancreatic cancer, SOX10 in skin cancer) and genes like CDK4 that are selectively essential across many lineages without being commonly essential in any single lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 provide both validation against independent data (C41) and mechanistic insight into selectivity patterns (C42-C48). The specific examples (C43-C48) illustrate distinct patterns of selectivity, supporting the nuanced interpretation in C42. The convergence of external validation and detailed case studies provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors developed ECHODOTS, a clustering algorithm that combines t-SNE and DBSCAN with ensemble clustering across 200 runs to identify functionally related genes with similar dependency profiles, addressing the stochastic nature of t-SNE by seeking genes consistently clustered together and performing soft clustering that assigns probability scores to cluster membership.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 and C90-C91 describe the rationale, implementation, and advantages of ECHODOTS. The approach addresses a known limitation of t-SNE (C53) with an empirically motivated solution (C54), and the technical implementation is clearly described (C55, C91). The claim that ECHODOTS produces more reliable clusters (C56) is supported by the ensemble approach but lacks quantitative validation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ECHODOTS clustering revealed that genes in the same cluster tend to be proximal on t-SNE maps and enriched for known biological pathways or complexes, including subtle functional relationships such as KEAP1 and KCTD10 both correlating with CUL3 (0.387 and 0.29 respectively) but not with each other (-0.002), reflecting their mutually exclusive interaction with CUL3 as adaptor proteins that degrade distinct targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 establish general clustering performance, while C60-C61 provide a specific mechanistic example with quantitative correlation values and biological interpretation supported by citations. The convergence of computational clustering results with known protein interaction mechanisms provides strong validation of the approach's biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cluster L119 comprises three small clusters containing MAPK pathway proteins (KRAS, RAF1, BRAF, MAPK1) and Wnt signaling components (CTNNB1, TCF7L2), suggesting functional relationship between these pathways, and includes SHOC2 which correlates with MAPK pathway genes and was recently shown to be a vulnerability in KRAS-mutant cancers with MEK inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 provide cluster composition (C62), biological context for components (C63), functional interpretation (C64), and validation through recent independent findings (C66). The convergence of clustering results with known pathway biology and recent experimental validation provides strong support, though the functional relationship claim (C64) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C99",
+      "C100"
+    ],
+    "result": "Cluster L91 contains selenoproteins GPX4 and TXNRD1 along with selenoprotein synthesis genes (SEPHS2, SEPSECS, PSTK, EFFSEC), suggesting these synthesis genes primarily function to produce GPX4 in dependent cell lines, with the overall cluster representing genes related to ferroptosis sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C99-C100 describe cluster composition with biological interpretation supported by citations. The inference that selenoprotein synthesis genes primarily function to produce GPX4 (C69) is reasonable given the clustering but somewhat speculative. The ferroptosis connection (C70) is supported by citations but represents a broader interpretation of the cluster's biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "Comparison across different mixing ratios (\u03b8) revealed that larger \u03b8 (more CRISPR weight) increased the number of dependent cell lines, dependent lineages, and genes with high selectivity, but \u03b8 < 0.5 failed to identify pathway associations with selective genes, leading to the conclusion that \u03b8 = 0.6 was optimal as it weights CRISPR more heavily while retaining shRNA contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide systematic comparison results across parameter values, while C76 synthesizes these findings into a justified parameter choice. The empirical comparison is thorough, though the optimality claim relies on pathway enrichment as the primary validation metric, and alternative validation approaches are not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C92"
+    ],
+    "result": "shinyDepMap is an interactive web tool written in R using the shiny package and additional visualization packages, consisting of two apps ('Gene essentiality' and 'Gene cluster'), accessible via web deployment, GitHub download, or Docker container.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 and C92 provide clear technical implementation details including programming language, framework, structure, dependencies, and deployment options. These are straightforward factual claims about the tool's implementation that are directly verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors acknowledge important limitations of DepMap data: it characterizes cells in culture rather than in vivo tumor environments, genetic perturbations may not correspond to chemical inhibition effects, and the absence of wild-type cell lines means highly selective genes are not guaranteed to be less toxic to normal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 articulate well-recognized limitations of the DepMap dataset and the analysis approach, supported by citation (C81). These are appropriate caveats that acknowledge the gap between the experimental system and therapeutic applications. The limitations are clearly stated and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript provides background on cancer genomics, the DepMap project, and targeted therapies, noting that DepMap identifies essential genes using CRISPR and shRNA screens and has been used to discover genetic vulnerabilities, but the existing DepMap portal lacks tools to integrate both screening methods or examine functional relationships beyond pairwise comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C9 provide established background information supported by appropriate citations. These claims establish context and motivation for the work. C9 identifies a specific gap in existing tools that motivates the development of shinyDepMap. All claims are well-supported by citations or represent accurate descriptions of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "shinyDepMap clusters genes with similar dependencies to reveal functional relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is a high-level description of one of the tool's main features, which is substantiated by the detailed clustering methodology (ECHODOTS) and results presented in claims C49-C70. This represents an accurate summary of a key capability.",
+    "result_type": "MINOR"
+  }
+]

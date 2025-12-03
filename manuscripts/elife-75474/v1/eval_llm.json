@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C30",
+      "C32"
+    ],
+    "result": "The study employed a within-participant design with 291 participants aged 8\u201330 years completing three reinforcement learning tasks (Tasks A, B, and C) in a single experimental session. The tasks varied systematically on dimensions including feedback stochasticity, task volatility, and memory demands, and have been previously used to study RL processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C25, C27, C28, C30, and C32 collectively describe the experimental design, sample characteristics, and task features. The within-participant design is well-documented with clear sample size (n=291), age range (8\u201330 years), and detailed task descriptions supported by Figure 1. The systematic variation in task characteristics provides a strong foundation for testing parameter generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C60"
+    ],
+    "result": "Absolute parameter values differed significantly between all three tasks for all parameters (learning rates, decision noise/exploration, and forgetting), with task demands playing a larger role in determining parameter values than individual participant characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36\u2013C39 and C60 are supported by statistical analyses (Table 1, Figure 2A\u2013B) showing significant task effects on all parameters via repeated-measures ANOVAs and post-hoc t-tests. The finding that between-task variance exceeded within-task variance is clearly demonstrated in the data, though the interpretation about task demands versus participant characteristics (C61) requires caution as it's inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Parameter differences between tasks echoed specific task demands: learning rates and noise/exploration were highest in Task B (requiring quick updating and exploration due to frequent switches), while forgetting was highest in Task C (posing the largest memory demands).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 provide interpretations linking observed parameter differences to task characteristics. While the parameter differences are empirically supported (C38\u2013C39), the causal interpretation that these differences 'echo' task demands is inferential. However, the interpretation is reasonable given the task design features (Figure 1E) and is consistent with the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Both \u03b1+ and noise/exploration parameters showed significant positive correlations between Tasks A and B, and between Tasks A and C, but not between Tasks B and C, suggesting generalization only when tasks were sufficiently similar. Noise parameters generalized despite differences in parameterization (\u03b5 vs. 1/\u03b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42\u2013C45 are supported by correlation analyses (Appendix 8\u2014figure 1) showing selective parameter correlations between task pairs. The pattern of correlations aligns with task similarity (Figure 1E), where Task A shared more features with Tasks B and C than they shared with each other. The robustness of noise parameter generalization across different parameterizations (C45) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C62",
+      "C63"
+    ],
+    "result": "Age trajectory analyses revealed that noise/exploration, forgetting, and \u03b1+ showed similar developmental trajectories across tasks (no significant task effects), while \u03b1\u2212 showed opposite trajectories between Tasks B and C. However, only noise/exploration and \u03b1+ trajectories were predictive between tasks, and only when tasks were sufficiently similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48\u2013C54 and C62\u2013C63 are supported by mixed-effects regression analyses (Tables 2\u20133, Figure 2C). The statistical approach appropriately tests for task effects on age trajectories. The finding that \u03b1\u2212 showed opposite patterns between tasks (C48) is particularly striking and well-supported by significant interaction terms. The limitation that predictability only occurred between similar tasks (C63) is supported by Table 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C57"
+    ],
+    "result": "Regression analyses predicting parameters between tasks showed that for \u03b1+ and noise/exploration, Task A predicted Tasks B and C (and vice versa), but Tasks B and C did not predict each other. For forgetting, Tasks A and C were not predictive of each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C57 are supported by regression analyses controlling for age (Table 4, Figure 2D). The asymmetric predictability pattern (Task A as a hub) is consistent with task similarity structure. However, the lack of predictability for forgetting (C57) suggests that the absence of significant differences in age trajectories (C52, C54) may reflect noise rather than true generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C66",
+      "C67"
+    ],
+    "result": "Comparison with simulated agents having perfect generalization revealed that human parameter generalizability was significantly below the methodological ceiling for most task combinations and parameters, except for \u03b1+ between Tasks A and B, and \u03b5/1/\u03b2 between Tasks A and C. Parameters that showed generalization replicated literature patterns (noise/exploration decreasing, \u03b1+ increasing with age).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4\u2013C5, C66\u2013C67 are supported by simulation analyses (Appendix 5) establishing a generalizability ceiling. The bootstrapped confidence interval comparisons (Appendix 5\u2014figure 1C) provide statistical evidence that human generalization was below ceiling for most parameters. This validation is critical for ruling out methodological limitations as the cause of low generalization. The replication of literature patterns (C67) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C81",
+      "C82"
+    ],
+    "result": "Principal component analysis revealed that PC1 (25.1% variance) captured task engagement/decision acuity, with noise/exploration and forgetting loading negatively and \u03b1+ loading positively across all tasks. This role was consistent across tasks for noise/exploration, forgetting, and \u03b1+, but not for \u03b1\u2212.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68\u2013C72, C81\u2013C82 are supported by PCA results (Figure 3A, Appendix 8\u2014figure 4). The interpretation of PC1 as decision acuity is reasonable given the loading patterns and is supported by comparison to prior literature (Moutoussis et al., 2021). The consistency of parameter roles across tasks for three of four parameters supports partial interpretability, while the inconsistency for \u03b1\u2212 highlights context-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "PC2 (8.9% variance) and PC3 (6.2% variance) encoded task contrasts, with PC2 contrasting Task B versus C, and PC3 contrasting Task A versus Tasks B and C. Noise/exploration, \u03b1+, and \u03b1\u2212 parameters showed sufficient task-specific variance to indicate which task they were measured in, demonstrating they did not capture the same processes across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76\u2013C77, C79\u2013C80 are supported by PCA results (Figure 3B\u2013C). The task contrast interpretation is clear from the loading patterns. The finding that parameters captured task-specific variance (C80) is a strong indicator of limited interpretability. The ordering of PC2 before PC3 aligning with task similarity (C77) provides additional validation of the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Ridge regression analyses revealed that all significant coefficients connected Tasks A and B or Tasks A and C, but never Tasks B and C, indicating no parameter had a specific core extending across all three tasks. For noise/exploration, prediction was asymmetric: Tasks B and C predicted Task A, but not vice versa, suggesting these parameters captured additional processes in Tasks B and C not present in Task A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85\u2013C89 are supported by Ridge regression results (Figure 4A, Table 5). The asymmetric prediction pattern for noise/exploration is particularly informative about parameter specificity. The finding that combining Tasks B and C improved prediction of Task A (C89) demonstrates that these tasks captured non-overlapping aspects of noise/exploration, indicating limited specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "For learning rates, \u03b1+ in Task B could not be predicted by any parameters from other tasks, revealing it captured fundamentally different cognitive processes. In contrast, \u03b1+ in Task A was predicted by all Task B parameters except \u03b1+ itself, and by Task C's working memory parameters (\u03c1 and K), suggesting \u03b1+ captured a conglomerate of RL and working memory processes in Task A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92\u2013C93, C95, C98\u2013C101 are supported by Ridge regression results (Figure 4A\u2013B, Table 5). The complete lack of predictability for Task B's \u03b1+ (C92) is striking and well-documented. The non-specific prediction of Task A's \u03b1+ by multiple Task B parameters (C98) and working memory parameters from Task C (C100) demonstrates low distinctiveness and supports the interpretation of parameter entanglement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Task C's working memory parameters could not be explained by any other parameters, suggesting they captured unique working memory processes. In contrast, Task C's RL parameters could be explained by parameters in other tasks, suggesting overlapping RL processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102\u2013C104 are supported by Ridge regression results (Figure 4B). The inability to predict working memory parameters (C102) contrasts with the predictability of RL parameters (C104), suggesting that working memory parameters were more specific and distinct. This pattern makes theoretical sense given that only Task C included explicit working memory demands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Summary of parameter specificity and distinctiveness: noise/exploration showed evidence for both specificity and lack thereof (mutual prediction between some but not all parameters) and was not perfectly distinct. Learning rates showed some specificity between Tasks A and C but not Task B, with particularly low distinctiveness (variance shared widely between multiple parameters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105\u2013C108 provide accurate summaries of the Ridge regression findings. These summary claims are well-supported by the detailed results in C85\u2013C104. The characterization of mixed evidence for specificity and low distinctiveness is consistent with the data patterns shown in Figure 4 and Tables 5\u20136.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Different tasks elicited different behaviors, and because each behavior was captured by the same parameter across tasks, parameters necessarily differed between tasks, providing a succinct explanation for lack of generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 provides an integrative interpretation linking behavioral differences (Appendix 3\u2014figure 1B) to parameter differences through the consistency of parameter-behavior relationships (Figure 4C). This interpretation is logical and supported by the data, though it represents an inference about causal mechanisms rather than a direct empirical finding. The explanation is parsimonious and consistent with all presented results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Summary of main findings: Exploration/noise parameters showed considerable generalizability (correlated variance, similar age trajectories consistent with prior literature) but low interpretability (lack of specificity and distinctiveness). Learning rates from negative feedback showed substantial lack of generalizability (inconsistent within participants, opposite age trajectories), while learning rates from positive feedback showed some generalization. The same participants showed different parameters across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6\u2013C7, C115\u2013C122 provide accurate summaries of the main findings. These are well-supported by the detailed analyses in earlier sections. The distinction between generalizability and interpretability is clearly demonstrated. The finding that the same participants show different parameters across tasks (C122) is a key strength of the within-participant design and directly addresses the central hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C131",
+      "C132"
+    ],
+    "result": "The study concludes that many contradictions in the RL literature arise from invalid assumptions about parameter generalizability and interpretability. Parameters are more context-dependent than typically appreciated, and we cannot measure 'intrinsic' learning rates. Discrepancies are expected even with rigorous methods due to context variations. Analysis of parameters alone does not permit unequivocal conclusions about cognitive processes when context varies, requiring careful contextualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8, C123\u2013C124, C126\u2013C127, C131\u2013C132 represent the main conclusions and interpretations. These are well-supported by the empirical findings, though they represent inferences about the field and implications rather than direct empirical results. The conclusion that parameters are context-dependent (C2, C132) is strongly supported by the data. The recommendation for contextualization (C127) is a reasonable implication, though the specific guidance for how to contextualize requires future research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C133"
+    ],
+    "result": "Future research recommendations: Systematic investigation of context factors (task characteristics, model parameterization) is necessary to characterize generalizability and interpretability. The MDP framework may be useful for determining task distance. Real-life environments and developmental changes may also modulate cognitive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128\u2013C130, C133 represent recommendations for future research and speculation about broader implications. While these are reasonable suggestions based on the findings, they are inherently speculative (evidence_type: SPECULATION). The specific utility of the MDP framework (C130) and the extension to real-life environments (C133) are plausible but untested hypotheses. These represent important directions but lack empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background and definitions: RL models can explain behavior from simple to complex processes and have been widely applied. Current research practices implicitly assume parameter generalizability (consistency across contexts) and interpretability (isolation of specific cognitive elements). These assumptions underlie common practices like comparing parameters between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9\u2013C18 provide background context and definitions. The claims about RL model capabilities (C1, C9\u2013C15) are supported by extensive citations to prior literature. The definitions of generalizability (C17) and interpretability (C18) are clearly stated and appropriate for the study. The observation about implicit assumptions in research practices (C16) is reasonable though somewhat inferential. These claims provide necessary context but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior literature on learning rate development shows contradictory patterns: some studies show increases with age, others show decreases, U-shaped trajectories (peaks or troughs in adolescence), or stability within the adolescent age range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C23 accurately summarize contradictions in prior literature, supported by appropriate citations. These claims establish the motivation for the study by documenting existing inconsistencies. However, these are summaries of prior work rather than findings of the current study. The accuracy of these characterizations depends on the cited papers, which are not evaluated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The tasks likely engaged other cognitive processes besides RL, such as working memory and reasoning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is an acknowledgment of task complexity and is supported by the task designs (particularly Task C, which explicitly includes working memory components). This is an important caveat for interpretation but represents an inference about task demands rather than an empirical finding. The claim is reasonable given the task characteristics but could benefit from more direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Absolute parameter values varied more between tasks than between participants within tasks, suggesting that task demands played a larger role in determining parameter values than participants' individual characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 makes a strong interpretive claim about the relative importance of task demands versus individual characteristics. While the observation that between-task variance exceeded within-task variance is supported by the data (C60), the causal interpretation about 'task demands playing a larger role' is inferential. The claim doesn't account for potential interactions or the possibility that individual differences manifest differently across contexts. More rigorous variance decomposition would strengthen this claim.",
+    "result_type": "MAJOR"
+  }
+]

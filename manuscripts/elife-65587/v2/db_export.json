@@ -1,0 +1,1958 @@
+{
+  "submission": {
+    "id": "2088588b-6ffd-44cc-89b2-239920dc66c9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:46:26.879058Z",
+    "updated_at": "2025-12-03T02:46:26.879058Z"
+  },
+  "content": [
+    {
+      "id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "submission_id": "2088588b-6ffd-44cc-89b2-239920dc66c9",
+      "content_type": "manuscript",
+      "content_text": "# Archaeal chromatin \u2018slinkies\u2019 are inherently dynamic complexes with deflected DNA wrapping pathways\n\n## Authors\n\n- Samuel Bowerman<sup>1</sup> ([ORCID: 0000-0003-0753-4294](https://orcid.org/0000-0003-0753-4294))\n- Jeff Wereszczynski<sup>2</sup> ([ORCID: 0000-0002-2218-3827](https://orcid.org/0000-0002-2218-3827))\n- Karolin Luger<sup>1</sup> ([ORCID: 0000-0001-5136-5331](https://orcid.org/0000-0001-5136-5331)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Howard Hughes Medical Institute, University of Colorado Boulder Boulder United States\n2. Department of Physics and Center for the Molecular Study of Condensed Soft Matter, Illinois Institute of Technology Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotes and many archaea package their DNA with histones. While the four eukaryotic histones wrap ~147 DNA base pairs into nucleosomes, archaeal histones form \u2018nucleosome-like\u2019 complexes that continuously wind between 60 and 500 base pairs of DNA (\u2018archaeasomes\u2019), suggested by crystal contacts and analysis of cellular chromatin. Solution structures of large archaeasomes (>90 DNA base pairs) have never been directly observed. Here, we utilize molecular dynamics simulations, analytical ultracentrifugation, and cryoEM to structurally characterize the solution state of archaeasomes on longer DNA. Simulations reveal dynamics of increased accessibility without disruption of DNA-binding or tetramerization interfaces. Mg2+ concentration influences compaction, and cryoEM densities illustrate that DNA is wrapped in consecutive substates arranged 90o out-of-plane with one another. Without ATP-dependent remodelers, archaea may leverage these inherent dynamics to balance chromatin packing and accessibility.\n\n## Introduction\n\nEukaryotic genomes are orders of magnitude larger and more complex than those of archaea or bacteria. They manage their massive genomes through a hierarchical packaging scheme that utilizes histones to form nucleosomes, a complex that contains two H2A-H2B histone heterodimers flanking a central (H3-H4)2 heterotetramer and stably wraps\u00a0~147 base pairs of DNA (Figure 1A;\u00a0Luger et al., 1997). While all eukaryotes invariably contain histones, genes encoding putative \u2018minimalist\u2019 histone proteins have been identified in most archaea (Henneman et al., 2018), but so far not in bacteria. While still a subject of debate, the presence of histones in the two domains of life has supported theories that eukaryotes evolved directly from an archaeon (Heinicke et al., 2004; Malik and Henikoff, 2003; Brunk and Martin, 2019; Watson, 2019; Eme et al., 2017; Spang et al., 2018; Sandman and Reeve, 2006).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig1-v2.jpg)\n\n**Figure 1.:** (A) The eukaryotic nucleosome (PDB 1AOI) containing two copies of H3, H4, H2A, and H2B (blue, green, gold, and red, respectively) arranged as H2A-H2B dimers flanking the (H3\u2013H4)2 tetramer and binding 147 base pairs of DNA (gray and light blue). (B) The model Arc120 system, derived from the Arc90 crystal structure (PDB 5T5K), with four HMfB homodimers participating in L1-L1 stacking interactions shown in pink. (C) Enhanced views of both the wild type and G17D mutant interfaces simulated in this study.\n\nArchaeal histones share many features with their eukaryotic equivalents, such as the three-helix histone fold motif (\u03b11-L1-\u03b12-L2-\u03b13) (Decanniere et al., 2000), as well as obligate dimerization and transient tetramer formation (Marc et al., 2002). In both archaea and eukaryotes, histones have a preference for occupying particular sites in the genome (Ammar et al., 2012; Nalabothula et al., 2013). Eukaryotic histones utilize highly disordered cationic N-terminal tails to regulate gene transcription and chromosome compaction via post-translational modifications (PTMs) (Luger and Richmond, 1998; Musselman et al., 2012; Bowman and Poirier, 2015), whereas most archaeal histones do not contain tail sequences, with the exception of some sequences found within the Asgard clade (Henneman et al., 2018). Additionally, histones in eukaryotes have evolved histone fold \u2018extensions\u2019, unique secondary structure elements that define the outer surface of the nucleosome as well as stabilize the histone core and the final turn of nucleosomal DNA. No such diversification has yet been identified in any of the archaeal histones.\n\nRecently, we determined the crystal structure of Methanothermus fervidus histone HMfB bound to\u00a0~90 base pairs of DNA (Mattiroli et al., 2017; Bhattacharyya et al., 2018). HMfB is a typical representative of most archaeal histones, as it contains no tails and no histone fold extensions, and it exists as either a homodimer or heterodimer with the closely related HMfA histone (Sandman et al., 1994). Nevertheless, striking similarities to the eukaryotic nucleosome were observed, including a superhelical DNA path around a histone core that is nearly identical to that in nucleosomes, promoted by conserved DNA contacts with histones, and by dimer-dimer interactions through \u2018four-helix bundles\u2019 of \u03b1-helices. However, unlike nucleosomes, which are defined octameric particles that arrange as 10 nm \u2018beads on a string\u2019 on long DNA fragments, crystal contacts in the archaeal system promote an extended superhelical winding of DNA around a histone core that consists of more than the canonical four histone dimers. This arrangement, which is consistent with in vivo footprinting results (Mattiroli et al., 2017), places the L1 loops of every nth and (n+3)th dimer in close proximity to one another (Figure 1C). The importance of the L1-L1 interaction in stabilizing this arrangement in vitro and in vivo was established by substituting the highly conserved G17 residue with bulkier amino acids (e.g. G17D), resulting in transcription regulation defects.\n\nHere, we show that archaeal histones, when assembled on long segments of DNA (>200 base pairs), experience disparate solution dynamics compared to eukaryotic nucleosomes, and we present cryo-EM structures of two classes of particles arranged on a 207 base pair DNA fragment with deflections of the wrapping pathway. Despite many nucleosome-like properties, we refer to these constructs as \u2018archaeasomes\u2019, rather than \u2018archaeal nucleosomes\u2019, because of their inherent differences in higher\u00a0order structures and solution behaviors, including the ability to form histone cores with more than four dimers. We classify archaeasomes by the length of bound DNA (i.e. shorthand of \u2018Arc120\u2019 for \u2018archaeasome with 120 base pairs of DNA\u2019). We use molecular dynamics (MD) simulations to show that archaeasomes can expand, like the stretching of a \u2018slinky\u2019, to increase overall accessibility without sacrificing histone-histone or histone-DNA interactions. Simulations also reinforce the importance of L1-L1 histone stacking interactions in regulating this dynamic equilibrium. Sedimentation velocity analytical ultracentrifugation (SV-AUC) and cryoEM highlight two distinct accessibility dynamics at play in archaeasome systems, and cryoEM analysis identifies archaeasomal states that continually wrap DNA but deflect the wrapping pathway 90o out-of-plane. The intrinsic dynamic behavior of archaeasome slinkies stands in contrast to eukaryotic nucleosomes, which are compact and highly stable and require modifications and elaborate machinery to efficiently regulate chromatin accessibility, whereas archaea may utilize this inherent stochastic behavior in order to access their DNA.\n\n## Results\n\n### Archaeasomes are highly dynamic but maintain robust dimer-dimer and dimer-DNA interactions in simulations\n\nWe applied molecular dynamics (MD) simulations to model the stability and solution dynamics of archaeasomes assembled on DNA of increasing lengths. Three system sizes were studied: an archaeasome with 90 base pairs of DNA (\u2018Arc90\u2019, Video 1), one with 120 base pairs of DNA (\u2018Arc120\u2019, Video 2), and one with 180 base pairs of DNA (\u2018Arc180\u2019, Video 3). In T. kodakarensis, the G17D (G16D in HMfB) mutation in the L1 loop was previously shown to abolish the characteristic footprint of histone-based chromatin in the cell (Mattiroli et al., 2017), and we simulated this system at the archaeasome level (\u2018Arc120-G17D\u2019) to elucidate the atomistic mechanisms for this observed behavior.\n\n![Video 1.](https://cdn.elifesciences.org/articles/65587/elife-65587-video1.mp4.jpg)\n\n**Video 1.:** This system contains three histone dimers and no stacking interactions.\n\n![Video 2.](https://cdn.elifesciences.org/articles/65587/elife-65587-video2.mp4.jpg)\n\n**Video 2.:** This system contains four histone dimers and one L1-L1 stacking interaction. Both the wild-type and G17D mutant of this system were simulated.\n\n![Video 3.](https://cdn.elifesciences.org/articles/65587/elife-65587-video3.mp4.jpg)\n\n**Video 3.:** This system contains six histone dimers and three L1-L1 stacking interactions.\n\nIn each system, the DNA footprint of\u00a0~30 base pairs per dimer was maintained on the hundreds of nanoseconds timescale. Nevertheless, the Arc90 system experienced a high degree of global dynamics. RMSD calculations of backbone atom positions showed a maximum deviation of\u00a0~6 \u00c5 from the initial Arc90 coordinates, with trough-to-peak heights of\u00a0~4 \u00c5 throughout the time course (Figure 2A,B). RMSF calculations identify regions of highest flexibility where the DNA binds to the terminal dimers (Figure 2\u2014figure supplement 1), and visual inspection of Arc90 trajectories revealed that the system samples a \u2018clamshell\u2019 motion, where terminal dimers and associated DNA fluctuate to create \u2018closed\u2019 and \u2018open\u2019 accessibility states (Videos 4 and 5). The equilibrium between closed and open forms was quantitated by measuring the center-of-mass distance between each DNA end and the neighboring superhelical turn of DNA, where separations of\u00a0~16 \u00c5 and\u00a0~30 \u00c5 are indicative of closed and open states, respectively (Figure 2C, Figure 2\u2014figure supplement 2). Over the clamshell motion, the four-helix bundle interfaces that bind consecutive dimers to one another was maintained, and only small rearrangements of the local contact network were observed. Together, these data show that archaeasomes retain protein-protein contacts while still allowing for significant molecular motion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative timeseries from each system demonstrating the largest change in structure from the initial states. The Arc90 trajectory (black) exhibits both a large peak value, as well as wide variances across the timeseries. Arc120 (gold) and Arc180 (teal) systems are significantly less dynamic, and the Arc120-G17D mutant (orange) shows an increased divergence from the initial state when compared to the wild-type Arc120 system. (B) Distribution of RMSD values sampled across all three independent trajectories of each system, post-equilibration (100 ns). Arc90 displays a sampling of two different states, while each of the larger systems are unimodal. (C) Distribution curves for center-of-mass separations between DNA ends and the neighboring superhelical gyre. Representative conformations of fully closed (~10 \u00c5) and open (~30 \u00c5) states identified in the Arc120-G17D simulations are shown. Arc90 simulations (black) show a bimodal distribution between these values, but Arc120 (gold) and Arc180 (teal) systems, containing one and three L1-L1 interactions each, sample unimodal values around the closed state. The Arc120-G17D mutant (orange) samples a unimodal distribution, but indicative of a more open archaeasome than the wild type.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Average values across the three independent systems are traced by solid lines, and error ranges are calculaged by the standard error of the mean across the three simulations and outlined with shaded regions. RMSF values of the 5\u2019 (top) and 3\u2019 (bottom) leading strands are shown separately. Periodicity in each plot coincides with DNA turns transitioning between solvent- and protein-facing residues.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The Arc90 system (black) shows both the largest maximum separation, as well as the widest variance in values. The next largest separations and fluctuations are observed in the Arc120-G17D mutant (orange), with the Arc120 wild-type (gold) and Arc180 (teal) systems exhibiting the tightest DNA wrapping.\n\n![Video 4.](https://cdn.elifesciences.org/articles/65587/elife-65587-video4.mp4.jpg)\n\n**Video 4.:** While the terminal dimers exhibit large fluctuations around the central histones, four-helix bundle interactions are maintained.\n\n![Video 5.](https://cdn.elifesciences.org/articles/65587/elife-65587-video5.mp4.jpg)\n\n**Video 5.:** The dynamics of the terminal dimers creates \u2018open\u2019 and \u2018closed\u2019 states in a \u2018clamshell-like\u2019 motion.\n\nSimulations of Arc120 and Arc180 systems showed that L1-L1 interactions drastically reduced the population of the accessible state. Both the maximum observed RMSD and variance in the timeseries were dampened in these systems (Figure 2A,B), and RMSF calculations showed that DNA bound to the terminal dimers were less dynamic than in Arc90 trajectories (Figure 2\u2014figure supplement 1). Similarly, the distance between DNA entry and exit sites and the neighboring DNA gyre in Arc120 and Arc180 were unimodal around closed-state values (Figure 2C), with average separations of 17.4\u00a0\u00b1\u00a00.2 \u00c5 and 16.1\u00a0\u00b1\u00a00.2 \u00c5, respectively.\n\nWhile the Arc120-G17D system has the proper number of dimers to form L1-L1 stacking interactions, the G17D mutation was designed to disfavor interactions, and this system experienced increased dynamics relative to the wild-type Arc120 trajectories. RMSD measurements showed a unimodal distribution, as was seen in the Arc120 and Arc180 simulations, but the maximum observed RMSD values were more similar to the Arc90 trajectories (Figure 2). Similarly, local fluctuations in Arc120-G17D DNA positions were increased relative to the Arc120 trajectories (Figure 2\u2014figure supplement 1), and separation of the superhelical gyres was significantly larger than the Arc120 values (21.0\u00a0\u00b1\u00a00.4 \u00c5, p-value<0.0001). This also increased the solvent-accessible surface area by over 1,000 \u00c52 (57,316\u00a0\u00b1\u00a034 \u00c52 vs 58,422\u00a0\u00b1\u00a073 \u00c52, p-value<0.001; Figure 3). Similar to the Arc90 system, the four-helix bundle interactions of consecutive dimers were maintained in these systems, despite the increase in DNA separation and surface accessibility.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig3-v2.jpg)\n\n**Figure 3.:** The G17D mutation at the key L1-L1 interaction between stacking dimers significantly increases the surface area by\u00a0~1000 \u00c52.\n\nHistone-DNA interactions were largely unchanged by these dynamics. Molecular Mechanics-Generalized Born Surface Area (MM-GBSA) calculations were used to estimate histone-DNA binding energies (Table 1). MM-GBSA values should not be interpreted literally, but can be used to identify qualitative and robust changes in DNA binding interactions in nucleosomes as a result of histone modifications\u00a0(Bowerman and Wereszczynski, 2016; Bowerman et al., 2019; Morrison et al., 2018). In agreement with previous computational studies (Rojec et al., 2019), raw MM-GBSA values suggest that DNA-binding strength increases as additional dimers are added to an archaeasome stack (\u0394GArc90 < \u0394GArc120 < \u0394GArc180). However, this may be an artifact of molecular mechanics forcefields, which are additive and thereby affected by the total number of interactions in a system. When MM-GBSA values were normalized to the number of dimers in each system, there was no net change in DNA binding ability as a function of archaeosome size. Additionally, the G17D point mutation slightly reduced the dimer-DNA interaction strength, but this difference was not statistically significant when compared to the wild-type Arc120 system (p-value of 0.157). These data, in conjunction with maintained four-helix bundle interactions, show that archaeasomes can sample open and accessible conformations without histone dissociation. Thus, the loss of the 30 base pair ladder pattern in MNase digestion of chromatin isolated from cells carrying the G17D mutation as their only source of histones may be due to increased archaeasome dynamics (Figure 3), rather than frequent histone dissociation (Mattiroli et al., 2017).\n\n**Table 1.**\n MM-GBSA calculations for DNA binding strength, both as raw values and normalized to the number of dimers in each system.All values are given in kcal/mol, and results are intended to be interpreted comparatively, rather than as absolute values. When normalized according to dimer count, no significant differences are observed between the wild-type histone systems of varying sizes. The G17D mutation yields a slight reduction in average calculated binding strength, but this difference is not statistically significant (p-value of 0.157). Statistical significance was calculated via t-test, and quoted error values are the standard error of the mean calculated across the three independent trajectories.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>System</th>\n      <th>\u0394GDNA</th>\n      <th>\u0394GDNA (per dimer)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Arc90</td>\n      <td>\u2212459.4\u00a0\u00b1\u00a04.7</td>\n      <td>\u2212153.1\u00a0\u00b1\u00a01.6</td>\n    </tr>\n    <tr>\n      <td>Arc120</td>\n      <td>\u2212610.5\u00a0\u00b1\u00a05.3</td>\n      <td>\u2212152.6\u00a0\u00b1\u00a01.3</td>\n    </tr>\n    <tr>\n      <td>Arc120-G17D</td>\n      <td>\u2212580.2\u00a0\u00b1\u00a015.5</td>\n      <td>\u2212145.0\u00a0\u00b1\u00a06.7</td>\n    </tr>\n    <tr>\n      <td>Arc180</td>\n      <td>\u2212906.0\u00a0\u00b1\u00a05.6</td>\n      <td>\u2212151.0\u00a0\u00b1\u00a00.9</td>\n    </tr>\n  </tbody>\n</table>\n\n### Archaeasomes are inherently dynamic and accessible in solution\n\nOur simulations provide in silico confirmation for the notion that archaeasomes indeed wrap several DNA turns, with more than four histone dimers, as a bona\u00a0fide solution-state. The Arc90 and Arc120-G17D simulations suggest that archaeasomes may sample extended conformations without even partial dissociation of histones from either DNA or their histone partners. To structurally characterize these assemblies in solution, we reconstituted archaeasomes on 207 base pairs of Widom 601 DNA (Arc207) with saturating amounts of recombinant HTkA histones from Thermococcus kodakarensis, which are very similar to HMfB histones (overall 59% identity, 81% similarity, with higher conservation in sequences involved in histone-histone and histone-DNA interactions) (Mattiroli et al., 2017). The solution behavior of the Arc207 construct was then analyzed by single particle cryoEM and sedimentation velocity analytical ultracentrifugation (SV-AUC). As controls, we also collected SV-AUC traces from eukaryotic (Xenopus laevis) nucleosomes reconstituted on 147 base pairs of Widom 601 DNA (Lowary and Widom, 1998).\n\nGel shift assays showed that full complex saturation occurs when DNA and histones are mixed at the previously reported stoichiometric limit (~30 bp per dimer; Figure 4\u2014figure supplement 1;\u00a0Mattiroli et al., 2017). SV-AUC traces show that the Arc207 complex sediments homogeneously at\u00a0~10.6 s (Figure 4, circles), and the Nuc147 control sediments more rapidly than the Arc207 system at\u00a0~11.2 s (Figure 4, squares). As sedimentation is dependent on both molar mass (higher mass yields faster sedimentation) and shape anisotropy (higher anisotropy yields increased drag and slower sedimentation), the relatively lower sedimentation rate of the Arc207 sample has one of two interpretations: either its mass is less than that of a nucleosome, or the particle is more extended in solution, exhibiting higher shape anisotropy and drag.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig4-v2.jpg)\n\n**Figure 4.:** (A) van Holde-Weischet plots of Arc207 (circles) and Nuc147 (squares) samples. While Arc207 has a larger mass than the eukaryotic Nuc147, it sediments more slowly, indicative of increased drag caused by extended particle configurations. (B) Representative de-noised cryoEM micrograph of Arc207 sample. Particles are observed with DNA wrapped in a nucleosome-like pattern, but a significant separation between neighboring DNA turns is observed. (C) Two-dimensional classifications of particles extracted from these micrographs. No tightly wrapped DNA is identified, in agreement with our SV-AUC inferences of an extended Arc207 particle shape in comparison to compact Nuc147.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** M: Marker; 1: Widom 207 DNA fragment (100 ng); Lanes 2\u20137: 3, 5, 7, 9, 11, and 13 molar equivalents of HTkA histone dimers. Full saturation is observed at the stoichiometric ratio of 7 histone dimers per DNA fragment (lane 4).\n\nThe mass and anisotropy of each molecule were modeled from SV-AUC traces using the Monte-Carlo-coupled Genetic Algorithm (GA-MC) module of Ultrascan III (Table 2). The molecular weight for both particles was slightly overestimated, consistent with a systematic error in specific volume estimation for protein-DNA complexes, which can propagate to modest errors in molecular weight estimation (Demeler et al., 2014). Nevertheless, these data show that the Arc207 complex is fully saturated with histones, that the total mass is consistent with seven histone dimers assembled on 207 bp of DNA, and that its mass is greater than that of Nuc147. This suggests that the Arc207 system is more anisotropic than Nuc147 in order to satisfy the decrease in sedimentation rate, which is confirmed by the frictional ratios (f/fo) estimated from GA-MC calculations (1.94 and 1.55 for Arc207 and Nuc147, respectively). For reference, the f/fo value of free 207 DNA is 3.14 so the Arc207 complex is more compact than free DNA but not as compact as the eukaryotic nucleosome.\n\n**Table 2.**\n SV-AUC properties of Arc207 and Nuc147 molecules.Despite the higher mass of the Arc207 complex, it sediments slower than the Nuc147 system due to increased particle elongation (frictional ratio, \u2018f/fo\u2019). \u2018MWthe\u2019 denotes the theoretical molecular weight, and \u2018MWGA-MC\u2019 corresponds to the molecular weight derived via GA-MC analysis. Parenthetical values outline the 95% confidence interval of each GA-MC value.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Nuc147</th>\n      <th>Arc207</th>\n      <th>207 DNA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MWthe (kDa)</td>\n      <td>200.3</td>\n      <td>231.4</td>\n      <td>127.8</td>\n    </tr>\n    <tr>\n      <td>MWGA-MC (kDa)</td>\n      <td>218.6 (207.2, 229.9)</td>\n      <td>266.5 (256.9, 276.1)</td>\n      <td>156.6 (152.4, 160.1)</td>\n    </tr>\n    <tr>\n      <td>f/fo</td>\n      <td>1.55 (1.49, 1.61)</td>\n      <td>1.94 (1.89, 1.99)</td>\n      <td>3.14 (3.08, 3.20)</td>\n    </tr>\n    <tr>\n      <td>Sedimentation Coefficient (S)</td>\n      <td>11.2 (11.1, 11.2)</td>\n      <td>10.6 (10.6, 10.7)</td>\n      <td>6.1 (6.1, 6.1)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe next utilized single particle cryoEM to capture the three-dimensional structure of the Arc207 complex. Our simulations of the similarly sized Arc180 system predicted that the complex would be compact, but SV-AUC modeling conversely suggests that Arc207 forms an extended conformation. CryoEM data shows that the Arc207 system is indeed open, as it exhibits nucleosome-like particle dimensions with increased spacing between neighboring DNA gyres (Figure 4B), in agreement with SV-AUC data. This is also apparent in the two-dimensional classifications (Figure 4C). Because of the apparent structural heterogeneity of this assembly, we were unable to extract three-dimensional conformations from the dataset, even at low resolution.\n\n### Archaeasomes compact but do not oligomerize in the presence of Mg2+\n\nEukaryotic chromatin fibers can be compacted in vitro through the addition of divalent cations such as Mg2+ (Schwarz et al., 1996). To test whether this also applies to archaeal chromatin, we analyzed Arc207 samples in the presence of 0, 1, 2, 5, 7, 8, and 10 mM MgCl2 by SV-AUC, and we observed changes in both sedimentation coefficient and frictional ratio (Figure 5). Arc207 samples exhibit an increase in sedimentation rate with increased Mg2+ concentration from 0 to 5 mM, with no additional increase between 5 and 10 mM MgCl2 (Figure 5A, top). In comparison, the nucleosome system shows little to no change in sedimentation from 0 to 2 mM MgCl2 (Figure 5A, bottom), and start to self-associate (aggregate) at concentrations above 2 mM Mg2+.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig5-v2.jpg)\n\n**Figure 5.:** (A) van Holde-Weischet plots of (top) Arc207 and (bottom) Nuc147 samples. Increases from 0 to 5 mM MgCl2 results in an increase in Arc207 sedimentation rate, but little change in Nuc147 sedimentation. (B) Effects of MgCl2 concentration on (top) frictional ratio and (bottom) absorbance at 260 nm for Arc207 (circles) and Nuc147 (squares). Frictional ratios of Arc207 samples follow the same profile as sedimentation rate, where samples compact from 0 to 5 mM MgCl2 but with little change from 5 to 10 mM MgCl2. Similarly, Nuc147 samples showed very modest changes in compaction. OD260nm measurements show Nuc147 particles aggregating as a result of increased MgCl2 concentration, but Arc207 samples compact without losses to aggregation.\n\nGA-MC analysis of the Arc207 traces shows the same correlation between f/fo and MgCl2 concentration that is observed for the sedimentation rate, with apparent compaction from 1 to 5 mM MgCl2 and no further reduction beyond 5 mM MgCl2 (Figure 5B, top). A modest reduction in f/fo is observed for the Nuc147 sample, but the most notable differences between the archaeasome and nucleosome systems is the loss of nucleosome sample due to aggregation. For Nuc147, OD260 values rapidly decline with increased Mg2+, and no appreciable sample remains at 5 mM MgCl2 and above (Figure 5B, bottom). In contrast, the Arc207 complex displays no significant losses, even at 10 mM MgCl2. This shows that, unlike eukaryotic chromatin, divalent cations compact archaeasomes without promoting fiber-fiber association.\n\n### Archaeasomes exist in several structural states\n\nSingle particle cryoEM was utilized to determine the three-dimensional structure of archaeasomes in the presence of 5 mM MgCl2. Particles appeared more defined than without MgCl2, and individual particles with tightly wrapped DNA conformations are distinguishable from other states where density is visible as perpendicular extensions to the wrapping plane (Figure 6A, blue and gold boxes). A total of 1,879,294 particles were identified according to a neural network trained on manual particle selections and then classified. The two-dimensional classification of this dataset identify two different populations of Arc207: Class I, which upon first inspection has the classical \u2018nucleosome-like\u2019 fold (Figure 6B), and Class II, in which two perpendicular DNA wrappings are clearly observed (Figure 6C). We separated these particles into independent 3D classes and refinement schemes, which yielded 80,609 particles in Class I and 5959 particles in Class II. Many more particles could have been included in each class, especially Class II, but we were conservative to ensure that no interactions with neighboring particles affected their configuration. Refinement of these densities yielded maps at 9.5 \u00c5 and 11.5 \u00c5 resolution for Class I and Class II, respectively (Figure 6D,E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative denoised micrograph. Particles are observed with both \u2018nucleosome-like\u2019 wrappings of the 207 base pair DNA fragment (blue boxes, Class I) as well as particles showing out-of-plane \u2018lid\u2019 extensions of DNA from similarly wrapped \u2018cores\u2019 (gold boxes, Class II). Also shown are two-dimensional classes (B, Class I) and (C, Class II). Three-dimensional densities from these classes are shown in (D) and (E), respectively. Class I particles were fit by rigid-body docking of Arc150 coordinates extracted from Arc180 simulations, and Class II particles were fit by rigid-body docking separate Arc90 and Arc120 components and bridging the connecting DNA through energy minimization.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The linker segment is highlighted in blue in the accompanying structure, and blue shaded regions in the plot outline the standard deviation of values across the trajectory, whereas the average values are shown by a dark blue line. Horizontal dotted lines define the 2\u03c3 range of values observed in the eukaryotic nucleosome (PDB 1aoi).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65587/elife-65587-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (top) The density shown with no docked model. (bottom) The same density, but with the addition of Arc150 and Arc60 model structures docked within the density. The Arc60 conformation was selected to mimic the complete Arc207 density solved previously (Figure 6E), and this conformation is centered well in the Arc60 extension despite having no a priori information regarding the observed conformation in this classification.\n\nAt 9.5 \u00c5 resolution, secondary structure and side chain assignment is not possible for Class II, which has the higher resolution and larger particle count of the two classes. However, key features of the archaeasome previously seen in the crystal structure are clearly discernible from the density, such as DNA wrapping around a core of five histone dimers and periodic, overlapping densities that we associate with \u03b12, the longest of the core \u03b1-helices in each histone (Video 6). Even though Arc207 (207 base pairs of DNA bound to seven histone dimers) were deposited on the grid, refined density of state Class II describes only 150 base pairs of DNA and five histone dimers (Video 7). As such, we trimmed the final frame from one of our MD simulations of the Arc180 complex down to an Arc150 complex and docked it to the map using the \u2018fit in map\u2019 function of Chimera. We simulated density at 8 \u00c5 resolution for the MD-derived structure, which yields a correlation coefficient of 0.85 with the empirical map. This shows that our MD simulations describe with high fidelity a compact archaeasome composed of five histone dimers wrapping\u00a0~150 bp of DNA.\n\n![Video 6.](https://cdn.elifesciences.org/articles/65587/elife-65587-video6.mp4.jpg)\n\n**Video 6.:** By varying the contour levels of the density, we find that the strongest contributors to the EM volume are around the outside of the molecule (attributed to DNA), as well as overlapping periodic densities in the histone core (attributed to each histone\u2019s \u03b12 helix).\n\n![Video 7.](https://cdn.elifesciences.org/articles/65587/elife-65587-video7.mp4.jpg)\n\n**Video 7.:** Docking of the Arc150 construct shows that this density cannot capture the full complex deposited on the grid but only\u00a0~150 base pairs of DNA and five histone dimers. Additional density can be seen to extend along the DNA path beyond the bound core, suggesting a possible continuation of linker DNA that could extend to the potential tetramers observed in the 2D classes (Video 10, see main text for details).\n\nThe density for Class II has sufficient volume to be fit with the full 207 base pair DNA and seven histone dimers (Video 8). The larger portion of the volume is best described by four histone dimers binding\u00a0~120 base pairs of DNA in a nucleosome-like structure, and the smaller portion can be fit with three histone dimers binding\u00a0~90 base pairs. While the connecting density suggests only moderate bends in the helical axis, the wrapping pathways of the subunits result in the two faces being arranged at a near 90\u00b0 angle. The continuity of the DNA between the two moieties was confirmed by modulating the electron density contours (Video 9). Structural models were generated by rigid-body docking separate Arc120 and Arc90 subunits into the associated density, and the connecting DNA was energy minimized and subjected to a short MD simulation to confirm that the connecting DNA segment is reconcilable with B-form DNA parameters (Figure 6\u2014figure supplement 1).\n\n![Video 8.](https://cdn.elifesciences.org/articles/65587/elife-65587-video8.mp4.jpg)\n\n**Video 8.:** The ~Arc90 complex is bent ~90o out of plane of the core Arc117 complex.\n\n![Video 9.](https://cdn.elifesciences.org/articles/65587/elife-65587-video9.mp4.jpg)\n\nTo confirm that the structures described by the EM densities also exist in solution, and to correlate these findings with our SV-AUC analyses of particle compaction, we utilized the SoMo plugin of UltraScan to calculate sedimentation properties from our derived models. For the fully resolved Arc207 model, with the Arc90 \u2018lid\u2019 bending ~90o from the Arc120 \u2018core\u2019, we calculate a frictional ratio of 1.53, in close agreement with the 1.55 value extracted from the experimental traces. For the particles that can be fit with five histone dimers and 150 bp DNA (Class I), we surmised that the remaining 60 base pairs of DNA (and two histone dimers) extend from the observed density but assume variable orientations with respect to the main particle resulting in very weak density. Close inspection of the two-dimensional classes in this category indeed shows additional out-of-plane density that is consistent with the missing two dimers and\u00a0~60 base pairs of DNA, albeit at low contrast relative to background (Figure 6B). Further three-dimensional classifications of the 9.5 \u00c5 density reduced the overall resolution but yielded indications of the missing volume, albeit at low fidelity (Figure 6\u2014figure supplement 2 and Video 10). To further model this particle, we extended the Arc150 structure with an additional Arc60 subunit positioned 90o out-of-plane, similar to the model derived for the fully observed Arc207 density. This model predicted a similar value for the frictional coefficient of 1.50. In contrast, models with continuous wrapping and no deflections in the DNA pathway (as observed in the crystal structure, but not populated significantly in the cryo EM images) yield a frictional coefficient of 1.36. These data together show that archaeasomes on an extended DNA fragment can be viewed as a distribution of archaeasome subunits that can open to a ~90o angle.\n\n![Video 10.](https://cdn.elifesciences.org/articles/65587/elife-65587-video10.mp4.jpg)\n\n## Discussion\n\nUsing in silico and in vitro approaches, we investigated the structure and dynamics of the \u2018slinky-like\u2019 architecture of histone-based archaeal chromatin. SV-AUC and cryoEM both show that the archaeasome, containing more than the characteristic four histone fold dimers observed in nucleosomes, is inherently dynamic and exists in a variety of open states while maintaining DNA-histone interactions. Archaeasomes can be stabilized with divalent cations. In apparent absence of archaeal ATP-dependent chromatin remodeling factors (large machines that regulate chromatin access in eukaryotes), this architecture provides an alternative mechanism for compacting chromatin and maintaining genome accessibility.\n\nOur cryoEM structures show that archaeosomes are metastable and extended in the absence of divalent cations. Even in the presence of 5 mM Mg2+, archaeasomes exhibit at least two configurations. Indeed, our structures contain a maximum of four to five histone dimers arranged in a continuous helical ramp. Beyond that, the helical histone ramp is disrupted at the four-helix bundle interface by an outward rotation of the remaining two to three histone dimers and attached DNA. The existence of these structures in solution is supported by analysis of the hydrodynamic parameters of archaeosomes obtained from SV-AUC. Extending this arrangement to even longer DNA, one could picture particles that wrap anywhere from\u00a0~90 to~150 base pairs (using three to five histone fold dimers) arranged at\u00a0~90 degree angles with respect to each other, connected by minimal linker DNA. This arrangement may leave the major groove of the connecting DNA susceptible to nuclear factors, such as micrococcal nuclease or transcription factors, and explains the\u00a0~30 bp MNase digestion ladder observed in native archaeal chromatin.\n\nConsistent with this interpretation, molecular dynamics simulations of Arc90 assemblies (with three histone fold dimers) displayed dynamic breathing at terminal sites of the complex, while histone-histone and histone-DNA contacts are maintained. Models constructed from repeats of this conformation agree with particle conformations extracted from SV-AUC hydrodynamic parameters, as well as direct images and two-dimensional class averages from cryoEM data gathered in the absence of Mg2+. There, multiple turns of DNA, fully saturated with histones, were observed but with considerable flexibility and distance between neighboring gyres. In contrast, Arc120 and Arc180 simulations (containing four and five histone dimers, respectively) did not exhibit this degree of dynamic behavior. However, these simulations may have been artificially biased for the closed configuration, because the starting structures had intact L1-L1 interactions. Separation of these contacts may require more than several hundred nanoseconds of computational sampling, and simulations of the Arc120-G17D system indeed show appreciable separation between DNA turns by weakening this interface while maintaining four-helix bundle interactions.\n\nIn eukaryotes, chromatin structure can be further modulated by the incorporation of histone variants (B\u00f6nisch and Hake, 2012). While in vivo studies have identified disparate roles of variant histones in archaea (\u010cubo\u0148ov\u00e1a et al., 2012), very little is known about the structural modifications that they invoke. In a recent study by Stevens et al., 2020, molecular dynamics trajectories showed that substituting major type histones in Methanosphaera stadtmanae with a \u2018capstone\u2019 paralog, a histone variant with sequence modifications at the four-helix bundle, disrupts the tetramer interface and separates histone dimers on a continuous DNA fragment, thereby limiting archaeasome size. In the context of the capstone model, our EM-derived structures suggest that destabilizing the four-helix bundle interface may yield a subtle increase in DNA accessibility through increased exposure of the major groove, and without the need to fully displace the archaeasome subunit. As we have shown, this dynamic behavior is already sampled by major-type archaeal histones deposited on a continuous DNA fragment, and substitution of terminal histones with capstone-containing dimers will further bias the assembly toward the open configuration. In this way, lengths of DNA that would typically contain a single archaeasome unit of considerable length would instead be segmented in to several sub-archaeasomes configured in repeat perpendicular arrangements that modestly expose bridging DNA segments. Additionally, high rigidity in certain DNA sequences may inherently poise these segments as linker sequences, and the frequency of these less flexible regions would similarly influence the number of 90o-oriented subunits present along the genome.\n\nOur SV-AUC traces show that Arc207 assemblies exhibit no signs of self-association upon the addition of up to 10 mM MgCl2, unlike eukaryotic nucleosomes and nucleosome arrays, where this favors extensive inter-nucleosome and inter-array interactions and aggregation (Schwarz et al., 1996). Instead, these conditions bias individual archaeasomes toward more compact states without promoting inter-archaeasome interactions. Interestingly, estimates of Mg2+ concentration within T. kodakarensis cells have been quoted at\u00a0~120 mM (Nagata et al., 2017), much higher than measurements of Mg2+ in mammalian nuclei (16\u201318 mM) (Romani, 2013). Per dimer, archaeal histones provide weaker electrostatic screening of DNA than eukaryotic histones, due to their relatively lower isoelectric points (pI of\u00a0~8 vs~11), and the greater overall negative charge of archaeasomes may encourage rapid sequestering of any free Mg2+ ions in the cell. This would induce a gradient-based mechanism for rapid and excessive uptake of cations to prevent chromatin compaction from monopolizing the Mg2+ necessary for enzyme action. On the other hand, the ability of T. kodakarensis archaeasomes to compact but not aggregate as a result of elevated Mg2+ concentration may be a direct result of evolving in high-salt environments, as regulating between internal and external concentrations may have been more energetically demanding than simply adapting their chromatin structure. More specific measures of local Mg2+ concentration in archaeal chromatin may help differentiate these two mechanisms.\n\nArchaeal histones were successfully expressed in E. coli cells and were found to coat bacterial DNA (Rojec et al., 2019). Surprisingly, this resulted in only minor perturbations of cell growth, despite E. coli lacking the evolutionary machinery to handle histones. Furthermore, in vitro assays have shown that transcription through archaeasomes is slowed but not altogether stopped (Xie and Reeve, 2004). In eukaryotes, navigation of polymerases through chromatin is assisted by histone chaperones and ATP-dependent remodeling factors (Hammond et al., 2017; Clapier et al., 2017; Markert and Luger, 2021), but no known homologs to these complexes have been identified as yet in archaea. In absence of remodelers, the inherent dynamics of archaeasome-based chromatin may thereby allow limited access to chromatin by the sporadic (and possibly stochastic) appearance of near-zero linker DNA and Arc60 or Arc90 substates. On the other hand, it is possible that sequences encoding chromatin remodelers are yet to be found. On a related note, the \u2018SMC-like\u2019 coalescin proteins was recently identified in the histone-less Sulfolobus archaea (Takemata and Bell, 2021), and the access of these yet unidentified \u2018hidden agents\u2019 would similarly be tuned by the dynamics of the archaeasome. The degree to which DNA rigidity, variant histones, or unknown histone- and DNA-binding proteins regulate chromatin accessibility is an exciting future area of research\u2019.\n\n## Materials and methods\n\n### Molecular dynamics simulations\n\nArchaeasome systems of varying sizes were constructed from the crystal structure containing\u00a0~90 bp of DNA bound to histone HMfB (PDB 5T5K). Systems containing\u00a0~90 base pairs of DNA and three histone dimers (Arc90),\u00a0~120 base pairs of DNA and four histone dimers (Arc120), and\u00a0~180 base pairs of DNA and six histone dimers (Arc180) were created as prescribed by the crystal lattice. The Arc90 system is intended to represent the \u2018fundamental unit\u2019 of archaeasome-based chromatin, as it is the crystallographic unit of the solved structure as well as the smallest DNA protection footprint observed by MNase digestion (Mattiroli et al., 2017). The Arc120 and Arc180 complexes provide systems in which to study the contribution of stacking histone-histone interactions, as well as the wrapping of additional DNA superhelical turns, in stabilizing or destabilizing the proposed archaeasome. Additionally, an Arc120 system with the G17D mutation was also generated (Arc120-G17D), in analogy to the destabilizing G17D mutation that was previously studied in vivo. The overhanging DNA bases that formed crystallographic contacts were removed in our simulations. Each system was neutralized and solvated in a TIP3P box of 100 mM NaCl (Jorgensen et al., 1983), and masses were repartitioned from heavy atoms to covalently bonded hydrogen atoms to allow for the use of a four fs timestep (Hopkins et al., 2015). Parameters for protein atoms were taken from the Amber FF14SB forcefield (Maier et al., 2015), DNA parameters were taken from the Amber bsc1 forcefield (Ivani et al., 2016), and ions were parameterized according to the modifications of Joung and Cheatham, 2008.\n\nSystems were then energy minimized for 5000 steps while constraining solute heavy atoms with a 10 kcal/mol/\u00c52 harmonic potential, followed by 5000 steps without restraints. After energy minimization, three independent simulations of each system were conducted according to the following protocol: simulations were heated from 10 K to 300 K over the course of 50 ps in the NVT ensemble with heavy atom restraints applied, system densities were equilibrated and positional restraints were slowly released over the course of 200 ps in the NPT ensemble (target pressure of 1 atm), and simulations were extended for 300 ns without positional restraints in the NPT ensemble. During these production simulations, terminal base pair fraying was removed from the simulation by reinforcing hydrogen bonding in the terminal base pairs. No restraints were applied when participating atoms were within 3.5 \u00c5 of one another, but a harmonic potential was applied when participating atoms spread beyond this cutoff (force constant\u00a0=\u00a05.0 kcal/mol/\u00c52). Minimization and MD simulations were conducted in the pmemd engine (v18), with CUDA acceleration utilized for the simulations (Salomon-Ferrer et al., 2013).\n\n### Simulation analysis\n\nSystem equilibration was monitored through RMSD calculations of backbone atom positions, and local flexibility was measured via the root mean-squared fluctuation (RMSF) of the backbone. DNA breathing dynamics were quantified using the center of mass distance between the terminal base pairs and the neighboring superhelical turn. Complex stabilities were assessed using the MM-GBSA method with the igb5 solvent parameters and mbondi2 atomic radii (Onufriev et al., 2004). Trajectories and single frames were rendered using VMD, and structural analyses (RMSF, RMSD, DNA breathing) were calculated using cpptraj. Statistical significance between populations were determined by unpaired t-test.\n\n### In vitro sample preparation\n\nHTkA histones were provided by the Histone Source (CSU Fort Collins, CO), and the 207 base pair, Widom 601-derived sequence was purified as described (Mattiroli et al., 2017; Dyer et al., 2003). Archaeasome complexes (Arc207) were formed by mixing 207 bp DNA with HTkA histones at a 1:7 molar ratio of DNA to histone dimer in a buffer containing 100 mM KCl and 50 mM Tris (pH 8.0) and incubated for 20 min at room temperature. Samples were then dialyzed in buffers containing 0, 2, 5, 7, or 10 mM MgCl2 at a volume ratio of 1:1000 two times, first for 2 hr and then overnight, as preparation for subsequent measurements. As histone stocks are suspended in high glycerol, the dialysis process simultaneously served to effectively remove glycerol.\n\n### SV-AUC\n\nSedimentation velocity analytical ultracentifugation (SV-AUC) measurements were conducted in absorbance mode (\u03bb\u00a0=\u00a0260 nm). Samples were loaded in to an An60Ti rotor in 400 \u00b5L cells with two-channel Epon centerpieces and then spun at 35,000 rpm at 20\u00b0C in a Beckman XL-A ultracentrifuge. Partial specific volumes of the samples were determined using UltraScan3 (v4.0)\u00a0(Demeler, 2005). Time and radially invariant noises were subtracted through two-dimensional sediment analysis (2DSA), and the final 2DSA model parameters were used to initialize genetic algorithm and Monte Carlo analyses. Sedimentation coefficients were determined using van Holde-Weischet analysis (in Svedberg units, corrected to solvent conditions of water at 20\u00b0C), and molecular weights and frictional ratios (f/fo - the degree of elongation/flexibility in comparison to ideal spherical particles) were determined from genetic algorithm analysis of SV-AUC traces. Theoretical f/fo values for modeled structures were derived using the SoMo plugin of UltraScan, where bead models were created through the \u2018SoMo Overlap\u2019 scheme and hydrodynamics were calculated with the ZENO algorithm (Brookes et al., 2010; Douglas et al., 1994).\n\n### CryoEM grid preparation and collection\n\nAfter overnight dialysis (100 mM KCl, 50 mM Tris pH 8, 5 mM MgCl2), Arc207 samples were concentrated to 0.9 mg of DNA per mL, and 4 \u00b5L of sample was deposited onto glow-discharged grids (40 mA for 45 s). Samples were screened on copper Cflat (1.2/1.3) grids, and formaldehyde-cleaned Quantifoil (2/2) grids were used for final data collection in order to increase image acquisition speed through a \u20182 \u00d7 2\u2019 collection scheme, where a single defocus level is used for a cluster of four grid holes. Each grid was manually plunge frozen in liquid ethane and stored in liquid nitrogen. Datasets were collected on a FEI Tecnai F20 equipped with a Gatan K3 camera at 29,000x magnification in counting mode (yielding 1.291 \u00c5 per pixel), 200 kV accelerating voltage, dosage rate of\u00a0~1 e-/\u00c52 per frame, and 50 frames per micrograph stack (total dose of 50 e-/\u00c52). A total of 5388 image stacks were collected for subsequent three-dimensional analysis. An Elsa Cryo-Transfer Holder (Gatan, Inc) and defocus range of \u22121.2 to \u22122.6 \u03bcm was used.\n\n### Single particle analysis of CryoEM data\n\nUsing the Relion interface (v3.0) (Zivanov et al., 2018), micrographs were motion corrected using MotionCorr2 (Zheng et al., 2017), and CTF parameters were estimated from gCTF (Zhang, 2016). Ten micrographs were then randomly selected from a collection of motion-corrected micrographs and denoised using the janni_denoise.py function of the SPHIRE-crYOLO particle-picking pipeline (Wagner, 2019). Particles were manually picked from these denoised micrographs and used to train a neural network through crYOLO for picking particle coordinates across all micrographs, where the final particle predictions utilized the same denoising process (Wagner et al., 2019).\n\nDensities shown here are the result of refinements to the largest dataset, collected in the 2 \u00d7 2 scheme. In total, 1,879,294 particles were predicted by crYOLO and extracted from the motion-corrected (non-denoised) micrographs using Relion and imported to CryoSparc (v2.12.4) for two-dimesional (2D) classification (Punjani et al., 2017). 2D classes were manually filtered to remove particles containing primarily noise or interactions with overlapping neighbor particles. Subsequent 2D classifications showed two predominant particle types: the \u2018Class I\u2019 archaeasome state characterized by tightly wound DNA, and the \u2018Class II\u2019 archaeasome state showing nucleosome-like DNA arrangements with distinct out-of-plane densities, forming \u2018base\u2019 and \u2018lid\u2019 subunits. These classes were then separated from one another for three-dimensional (3D) classification and refinement by CryoSparc. Class I density was refined through Bayesian Polishing of the contributing particles in Relion, but the Class II density saw no benefit from polishing and the CryoSparc-derived density is reported. Reconstructed volumes were deposited to the Electron Microscopy Data Bank (EMD-23403, EMD-23404). Figures and videos were generated with VMD (v1.9.3) (Humphrey et al., 1996).\n\n### Modeling of EM densities\n\nClass I density (containing volume of five histone dimers and\u00a0~150 bp of DNA) was modeled by extracting five dimers and\u00a0~150 bp of DNA from the end state of a randomly selected Arc180 simulation. Simulation coordinates were fit to the EM-derived density through rigid body docking in Chimera. The Class II density was modeled by first docking Arc90 and Arc117 constructs in the smaller and larger volumes, respectively. Then, the bridging DNA segments were ligated via tleap and energy-minimized via pmemd in implicit solvent (Amber FF14SB protein forcefield, DNA bsc1 parameters, and igb5 implicit solvent model with mbondi2 atomic radii modifications and a 100 mM monovalent salt environment). Calculation of nucleic acid geometry parameters was conducted with cpptraj.\n",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "92a79873-f210-4575-8e1b-4d89e91c0171",
+      "submission_id": "2088588b-6ffd-44cc-89b2-239920dc66c9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sebastian Deindl, Uppsala University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65587.sa1](https://doi.org/10.7554/eLife.65587.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe authors present an elegant combination of cryo-EM, analytical ultracentrifugation and molecular dynamics simulations to investigate the structure and dynamics of archaeal histone \u2013 DNA complexes, termed archaeasomes to distinguish them from eukaryotic nucleosomes. This rigorous biophysical study provides important new insights into archaeal genome biology and will no doubt be of interest to the archaeal research community as well as the chromatin biology field in general.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Archaeal chromatin 'slinkies' are inherently dynamic complexes with deflected DNA wrapping pathways\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Sebastian Deindl as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Cynthia Wolberger as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yamini Dalal (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nThis is a very strong manuscript. Please consider the reviewers' recommendations and suggestions below by making the appropriate textual changes. No additional experiments are required.\n\nReviewer #1 (Recommendations for the authors):\n\nIt is not completely clear why the authors chose histones from Thermococcuskodakarensis for the experimental part of the work, while the previously published crystal structure and the simulations presented in this study used histones from Methanothermus fervidus. Can the authors comment more on this choice? Are the histones from one species are easier to express and purify than those from the other species? The text would benefit from a brief explanation, although this is not a concern for the validity of the study, given the high degree of sequence identity between these histones.\n\n\"consistent with a systemic error\"\n\nDo the authors mean \"systematic\" (as opposed to random) error?\n\nIn Table 2, is there a 95% confidence interval to report for sedimentation coefficients? If not, can the authors explain why?\n\n\"A total of 1,879,294 particles were identified and classified according to a neural network trained on manual particle selections\"\n\nThis statement is a bit unclear. Is it particle picking that was performed using a neural network (crYOLO, as the Materials and methods section indicates), or is it the selection of good 2D class averages (which is also possible, using the program Cindirella from the same authors who make crYOLO)? If the former, I suggest mentioning the neural network before the classification procedure; this sentence as written now could be understood as if a neural network was used to select good 2D class averages (which is not what the Materials and methods section explains).\n\n\"Refinement of these densities yielded maps at 9.5 \u00c5 and 11.5 \u00c5 resolution for the closed and open forms, respectively (Figure 6E, F).\"\n\nThere is no panel F in Figure 6. Earlier references to Figure 6 in the same paragraph also seem to be off by one panel.\n\n\"Even though Arc207 (207 base pairs of DNA bound to 7 histone dimers) were deposited on the grid, our refined density of the closed state describes only 150 base pairs of DNA and 5 histone dimers\"\n\nIs it possible that what the authors call the closed conformation is in fact the \"base\" of an open conformation, and that this reconstruction was obtained from truly open particles in which the \"lid\" was more dynamic and therefore not resolved? This would explain the missing molecular weight in this reconstruction. This possibility does not change the main conclusion that archaeasomes are dynamic, but it could change the way the 90 degrees open state is seen: it could correspond to an intermediate between the fully open and fully closed conformations, with the \"lid\" resolved because it is more stable than in the majority of the particles, that are fully open states in which the \"lid\" cannot be resolved, and the dataset may not contain many (any?) truly closed particles (which one would expect to yield a reconstruction showing all 207 base pairs of DNA and 7 copies of the histone dimer). The authors should comment on this.\n\n\"Close inspection of the \"closed state\" two-dimensional classes indeed shows additional out-of-plane density that is consistent with the missing two dimers and ~60 base pairs of DNA, albeit at low contrast relative to background (Figure 7C)\"\n\nThere is no Figure 7. This statement likely refers to Figure 6C.\n\n\"Archaeasome compaction can be stabilized with divalent cations. In absence of archaeal ATP-dependent chromatin remodeling factors (large machines that regulate chromatin access in eukaryotes), this architecture provides an alternative mechanism for compacting chromatin and adjusting genome accessibility\"\n\nThere are several examples of regulatory mechanisms for chromatin remodeling in eukaryotes that involve domains which bind to specific histone post-translational modifications as a way to target remodeling activity, making it a mostly deterministic process (presence of a PTM causes recruitment of a remodeler). It is difficult to envision that any regulation mechanism in archaea could emerge from random conformational changes in their chromatin only. Is it definitely established from whole-genome sequencing that archaea do not have chromatin remodelers? Or could they have them, but these proteins have yet to be identified? Could the compaction induced by divalent cations be the main regulatory mechanism in vivo? (in which case membrane ion channels would also indirectly act as chromatin remodelers on a genome-wide scale by regulating intracellular concentrations of these ions?). The authors should consider discussing these points to enrich the Discussion section and potentially strengthen the connection between the their biophysical results and archaeal genome biology.\n\nMaterials and methods section, cryoEM grid preparation\n\nThe glow discharge conditions should be indicated.\n\n\"a Gatan K3 camera at 29,000x magnification in non-super resolution mode\"\n\nThis mode can be called \"counting mode\".\n\n\"dosage rate of ~1 e/\u00c5, and 50 frames per micrograph stack\"\n\nThe dose rate's unit is e/\u00c52/s, unless the authors are referring to the dose per frame (in which case it should be clarified). In addition, the total dose accumulated over the entire exposure time should be indicated.\n\nWhen first mentioning the Widom 601 sequence, the authors should cite (Lowary and Widom, 1998).\n\n\"Gel shift assays showed that full complex saturation occurs when DNA and histones are mixed at the previously reported stoichiometric limit\"\n\nThis statement should cite an adequate reference.\n\nReviewer #2 (Recommendations for the authors):\n\nIt would be nice if they could include the rationale to study dimer-dimer and dimer-DNA interactions by MD using 90 bp, 120 bp and 180 bp.\n\nA MNase ladder is mentioned, but no citation or figure is referenced, please add the MNase ladder.\n\nThe authors very nicely show that Mg2+ does not impact archaeasome oligomerization, how does salt concentration impact oligomerization?\n\nThe authors mention that particles that interacted with neighboring particles were not used in the analysis. We are curious whether these particles would more closely resemble what would happen in cells where this is higher density (one presumes) of chromatin?\n\nWhat was the distribution of the angle of the open conformation found for the archaeasome?\n\nIt would be interesting and timely if the authors could discuss their results in light of the recent publication of the archaea genome organization by Takemata and Bell, 2020.\n",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4ab765d6-3755-4b8c-b47d-0584be1fdf24",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C1",
+      "claim": "Eukaryotic histones wrap ~147 DNA base pairs into nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the four eukaryotic histones wrap ~147 DNA base pairs into nucleosomes, archaeal histones form 'nucleosome-like' complexes that continuously wind between 60 and 500 base pairs of DNA ('archaeasomes'), suggested by crystal contacts and analysis of cellular chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of chromatin biology, supported by the citation to Luger et al., 1997 in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "e7883b09-076f-43b8-943d-9f3a5b219afd",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C2",
+      "claim": "Archaeal histones form 'nucleosome-like' complexes that continuously wind between 60 and 500 base pairs of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While the four eukaryotic histones wrap ~147 DNA base pairs into nucleosomes, archaeal histones form 'nucleosome-like' complexes that continuously wind between 60 and 500 base pairs of DNA ('archaeasomes'), suggested by crystal contacts and analysis of cellular chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by crystal contacts and analysis of cellular chromatin as stated in the text, and is further supported by citations in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "c4dcbfd1-458d-4178-ad59-c97f0750379f",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C3",
+      "claim": "Solution structures of large archaeasomes (>90 DNA base pairs) have never been directly observed prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Solution structures of large archaeasomes (>90 DNA base pairs) have never been directly observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to the current work, establishing the novelty of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "3025b17c-2aae-4c0c-96bc-a66df9fd4953",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C4",
+      "claim": "Simulations reveal dynamics of increased accessibility without disruption of DNA-binding or tetramerization interfaces in archaeasomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations reveal dynamics of increased accessibility without disruption of DNA-binding or tetramerization interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the molecular dynamics simulations presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "4e95f09b-a49e-417d-8fdd-a5b339bc6ac9",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C5",
+      "claim": "Mg2+ concentration influences archaeasome compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+ concentration influences compaction, and cryoEM densities illustrate that DNA is wrapped in consecutive substates arranged 90o out-of-plane with one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SV-AUC data showing changes in sedimentation and frictional ratio with varying Mg2+ concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "395b5058-ae34-4b3c-924a-1e6a9e595b97",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C6",
+      "claim": "CryoEM densities illustrate that DNA is wrapped in consecutive substates arranged 90\u00b0 out-of-plane with one another in archaeasomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+ concentration influences compaction, and cryoEM densities illustrate that DNA is wrapped in consecutive substates arranged 90o out-of-plane with one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the cryoEM structures presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "4d1577c8-733c-4121-bcea-7e6c9aa4d6c9",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C7",
+      "claim": "Archaea may leverage inherent archaeasome dynamics to balance chromatin packing and accessibility without ATP-dependent remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "Without ATP-dependent remodelers, archaea may leverage these inherent dynamics to balance chromatin packing and accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the observed dynamics and the apparent absence of ATP-dependent remodelers in archaea.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "0749f3e0-7a62-4e07-b5f6-65ce14a3c6ac",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C8",
+      "claim": "Eukaryotic genomes are orders of magnitude larger and more complex than those of archaea or bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic genomes are orders of magnitude larger and more complex than those of archaea or bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in genomics and cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "252176e3-3146-4b97-9e18-2cc46059f33b",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C9",
+      "claim": "Eukaryotic nucleosomes contain two H2A-H2B histone heterodimers flanking a central (H3-H4)2 heterotetramer and stably wrap ~147 base pairs of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "They manage their massive genomes through a hierarchical packaging scheme that utilizes histones to form nucleosomes, a complex that contains two H2A-H2B histone heterodimers flanking a central (H3-H4)2 heterotetramer and stably wraps ~147 base pairs of DNA (Figure 1A; Luger et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the citation to Luger et al., 1997 and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "3257f4dc-d4bc-4068-b3f9-10ddffd06773",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C10",
+      "claim": "All eukaryotes invariably contain histones.",
+      "claim_type": "EXPLICIT",
+      "source": "While all eukaryotes invariably contain histones, genes encoding putative 'minimalist' histone proteins have been identified in most archaea (Henneman et al., 2018), but so far not in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "1f9ecaa2-27ef-4f6b-bf48-2ea577318642",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C11",
+      "claim": "Genes encoding putative 'minimalist' histone proteins have been identified in most archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "While all eukaryotes invariably contain histones, genes encoding putative 'minimalist' histone proteins have been identified in most archaea (Henneman et al., 2018), but so far not in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Henneman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "f3b6b117-7325-4911-8972-def47d976f10",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C12",
+      "claim": "Histone genes have not been identified in bacteria so far.",
+      "claim_type": "EXPLICIT",
+      "source": "While all eukaryotes invariably contain histones, genes encoding putative 'minimalist' histone proteins have been identified in most archaea (Henneman et al., 2018), but so far not in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "e4f37ef9-1c41-4898-81b1-ffbb8c4698b9",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C13",
+      "claim": "The presence of histones in eukaryotes and archaea has supported theories that eukaryotes evolved directly from an archaeon.",
+      "claim_type": "EXPLICIT",
+      "source": "While still a subject of debate, the presence of histones in the two domains of life has supported theories that eukaryotes evolved directly from an archaeon (Heinicke et al., 2004; Malik and Henikoff, 2003; Brunk and Martin, 2019; Watson, 2019; Eme et al., 2017; Spang et al., 2018; Sandman and Reeve, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to evolutionary biology literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "c1cfc169-201b-4d5c-91da-4ed070cc6de2",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C14",
+      "claim": "Archaeal histones share the three-helix histone fold motif (\u03b11-L1-\u03b12-L2-\u03b13) with eukaryotic histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histones share many features with their eukaryotic equivalents, such as the three-helix histone fold motif (\u03b11-L1-\u03b12-L2-\u03b13) (Decanniere et al., 2000), as well as obligate dimerization and transient tetramer formation (Marc et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Decanniere et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "772dce85-36b8-4ad0-9a57-e5405feeaba0",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C15",
+      "claim": "Archaeal histones exhibit obligate dimerization and transient tetramer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histones share many features with their eukaryotic equivalents, such as the three-helix histone fold motif (\u03b11-L1-\u03b12-L2-\u03b13) (Decanniere et al., 2000), as well as obligate dimerization and transient tetramer formation (Marc et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Marc et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "9a2518b8-90cf-4911-a54a-32a089e825e1",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C16",
+      "claim": "In both archaea and eukaryotes, histones have a preference for occupying particular sites in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In both archaea and eukaryotes, histones have a preference for occupying particular sites in the genome (Ammar et al., 2012; Nalabothula et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ammar et al., 2012 and Nalabothula et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "5295bf7b-6630-42d1-bf43-e4888e2b30b6",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C17",
+      "claim": "Eukaryotic histones utilize highly disordered cationic N-terminal tails to regulate gene transcription and chromosome compaction via post-translational modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic histones utilize highly disordered cationic N-terminal tails to regulate gene transcription and chromosome compaction via post-translational modifications (PTMs) (Luger and Richmond, 1998; Musselman et al., 2012; Bowman and Poirier, 2015), whereas most archaeal histones do not contain tail sequences, with the exception of some sequences found within the Asgard clade (Henneman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature on histone modifications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "15287a2d-df48-4e7d-9266-2577850db759",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C18",
+      "claim": "Most archaeal histones do not contain tail sequences, with the exception of some sequences found within the Asgard clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic histones utilize highly disordered cationic N-terminal tails to regulate gene transcription and chromosome compaction via post-translational modifications (PTMs) (Luger and Richmond, 1998; Musselman et al., 2012; Bowman and Poirier, 2015), whereas most archaeal histones do not contain tail sequences, with the exception of some sequences found within the Asgard clade (Henneman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Henneman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "701b675f-0af3-45e5-a5b4-4e3df42e85e9",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C19",
+      "claim": "Eukaryotic histones have evolved histone fold 'extensions', unique secondary structure elements that define the outer surface of the nucleosome and stabilize the histone core and the final turn of nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, histones in eukaryotes have evolved histone fold 'extensions', unique secondary structure elements that define the outer surface of the nucleosome as well as stabilize the histone core and the final turn of nucleosomal DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleosome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "754eaa85-4dd2-4028-9bf1-f44f27af527e",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C20",
+      "claim": "No histone fold extensions have been identified in any of the archaeal histones.",
+      "claim_type": "EXPLICIT",
+      "source": "No such diversification has yet been identified in any of the archaeal histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding archaeal histone structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "3546ce4f-03ed-4de0-9ba4-c233c10945e0",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C21",
+      "claim": "The crystal structure of Methanothermus fervidus histone HMfB bound to ~90 base pairs of DNA was determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we determined the crystal structure of Methanothermus fervidus histone HMfB bound to ~90 base pairs of DNA (Mattiroli et al., 2017; Bhattacharyya et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mattiroli et al., 2017 and Bhattacharyya et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "23150ffc-e448-42c2-a7f1-7591efa4849f",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C22",
+      "claim": "HMfB is a typical representative of most archaeal histones, containing no tails and no histone fold extensions.",
+      "claim_type": "EXPLICIT",
+      "source": "HMfB is a typical representative of most archaeal histones, as it contains no tails and no histone fold extensions, and it exists as either a homodimer or heterodimer with the closely related HMfA histone (Sandman et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Sandman et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "b9bf5031-91c2-487b-a0ed-f3cb4f641810",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C23",
+      "claim": "HMfB exists as either a homodimer or heterodimer with the closely related HMfA histone.",
+      "claim_type": "EXPLICIT",
+      "source": "HMfB is a typical representative of most archaeal histones, as it contains no tails and no histone fold extensions, and it exists as either a homodimer or heterodimer with the closely related HMfA histone (Sandman et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Sandman et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "dce5c376-9532-4cd7-b114-db1c23953dcd",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C24",
+      "claim": "The HMfB-DNA crystal structure shows striking similarities to the eukaryotic nucleosome, including a superhelical DNA path around a histone core nearly identical to that in nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, striking similarities to the eukaryotic nucleosome were observed, including a superhelical DNA path around a histone core that is nearly identical to that in nucleosomes, promoted by conserved DNA contacts with histones, and by dimer-dimer interactions through 'four-helix bundles' of \u03b1-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "9c536e84-39a2-4a29-9726-ab70822b8218",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C25",
+      "claim": "Crystal contacts in the archaeal histone-DNA system promote an extended superhelical winding of DNA around a histone core consisting of more than the canonical four histone dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike nucleosomes, which are defined octameric particles that arrange as 10 nm 'beads on a string' on long DNA fragments, crystal contacts in the archaeal system promote an extended superhelical winding of DNA around a histone core that consists of more than the canonical four histone dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "808699ca-c5bf-41f1-a565-09733cb1bdff",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C26",
+      "claim": "The crystal structure arrangement is consistent with in vivo footprinting results.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement, which is consistent with in vivo footprinting results (Mattiroli et al., 2017), places the L1 loops of every nth and (n+3)th dimer in close proximity to one another (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Mattiroli et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "33c3de5d-66a3-46fd-bb7c-f163d9382b77",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C27",
+      "claim": "The L1-L1 interaction is important in stabilizing the archaeasome arrangement in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the L1-L1 interaction in stabilizing this arrangement in vitro and in vivo was established by substituting the highly conserved G17 residue with bulkier amino acids (e.g. G17D), resulting in transcription regulation defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "608bccda-ccf4-46c3-8b78-41a58ae1852f",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C28",
+      "claim": "Substituting the highly conserved G17 residue with bulkier amino acids (e.g. G17D) results in transcription regulation defects.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the L1-L1 interaction in stabilizing this arrangement in vitro and in vivo was established by substituting the highly conserved G17 residue with bulkier amino acids (e.g. G17D), resulting in transcription regulation defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "9cb0b0b2-e13b-4cfc-94a4-2055be56e34a",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C29",
+      "claim": "Archaeal histones, when assembled on long segments of DNA (>200 base pairs), experience disparate solution dynamics compared to eukaryotic nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that archaeal histones, when assembled on long segments of DNA (>200 base pairs), experience disparate solution dynamics compared to eukaryotic nucleosomes, and we present cryo-EM structures of two classes of particles arranged on a 207 base pair DNA fragment with deflections of the wrapping pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on MD simulations, SV-AUC, and cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "850b13ff-0c67-4457-aeba-491b6df8e000",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C30",
+      "claim": "Two classes of archaeasome particles arranged on a 207 base pair DNA fragment show deflections of the wrapping pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that archaeal histones, when assembled on long segments of DNA (>200 base pairs), experience disparate solution dynamics compared to eukaryotic nucleosomes, and we present cryo-EM structures of two classes of particles arranged on a 207 base pair DNA fragment with deflections of the wrapping pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cryoEM structural data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "f9c5e6b5-2f6b-48f5-a685-68fb4ac59576",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C31",
+      "claim": "Archaeasomes can expand, like the stretching of a 'slinky', to increase overall accessibility without sacrificing histone-histone or histone-DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We use molecular dynamics (MD) simulations to show that archaeasomes can expand, like the stretching of a 'slinky', to increase overall accessibility without sacrificing histone-histone or histone-DNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on MD simulation data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "5addbcde-2801-4337-bcff-a38df64da3b4",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C32",
+      "claim": "L1-L1 histone stacking interactions regulate the dynamic equilibrium of archaeasomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations also reinforce the importance of L1-L1 histone stacking interactions in regulating this dynamic equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on MD simulation data comparing wild-type and G17D mutant systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "fc6fd8fe-50ef-49ea-a322-61d48f0f10aa",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C33",
+      "claim": "SV-AUC and cryoEM highlight two distinct accessibility dynamics at play in archaeasome systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Sedimentation velocity analytical ultracentrifugation (SV-AUC) and cryoEM highlight two distinct accessibility dynamics at play in archaeasome systems, and cryoEM analysis identifies archaeasomal states that continually wrap DNA but deflect the wrapping pathway 90o out-of-plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SV-AUC and cryoEM data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "a8671de0-63c3-476e-a080-63dc77d09e37",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C34",
+      "claim": "CryoEM analysis identifies archaeasomal states that continually wrap DNA but deflect the wrapping pathway 90\u00b0 out-of-plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Sedimentation velocity analytical ultracentrifugation (SV-AUC) and cryoEM highlight two distinct accessibility dynamics at play in archaeasome systems, and cryoEM analysis identifies archaeasomal states that continually wrap DNA but deflect the wrapping pathway 90o out-of-plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cryoEM structural data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "78607cef-c905-4fbe-93cd-83a58a778af7",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C35",
+      "claim": "The intrinsic dynamic behavior of archaeasome slinkies stands in contrast to eukaryotic nucleosomes, which are compact and highly stable.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic dynamic behavior of archaeasome slinkies stands in contrast to eukaryotic nucleosomes, which are compact and highly stable and require modifications and elaborate machinery to efficiently regulate chromatin accessibility, whereas archaea may utilize this inherent stochastic behavior in order to access their DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the archaeasome data with known properties of eukaryotic nucleosomes.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "6ffc170c-8c22-4c96-aac4-a15cb25d5833",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C36",
+      "claim": "Eukaryotic nucleosomes require modifications and elaborate machinery to efficiently regulate chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic dynamic behavior of archaeasome slinkies stands in contrast to eukaryotic nucleosomes, which are compact and highly stable and require modifications and elaborate machinery to efficiently regulate chromatin accessibility, whereas archaea may utilize this inherent stochastic behavior in order to access their DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic chromatin regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "33de7070-5bbe-4f93-8bf9-781ef82bfc15",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C37",
+      "claim": "In each simulated archaeasome system, the DNA footprint of ~30 base pairs per dimer was maintained on the hundreds of nanoseconds timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "In each system, the DNA footprint of ~30 base pairs per dimer was maintained on the hundreds of nanoseconds timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of MD simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "860208ec-c0a8-4ccf-9677-59bf90294c1c",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C38",
+      "claim": "The Arc90 system experienced a high degree of global dynamics with a maximum RMSD deviation of ~6 \u00c5 from the initial coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the Arc90 system experienced a high degree of global dynamics. RMSD calculations of backbone atom positions showed a maximum deviation of ~6 \u00c5 from the initial Arc90 coordinates, with trough-to-peak heights of ~4 \u00c5 throughout the time course (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RMSD calculations from MD simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "841e5f87-2f42-4912-a499-d8c7873e72f0",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C39",
+      "claim": "RMSF calculations identify regions of highest flexibility where the DNA binds to the terminal dimers in Arc90.",
+      "claim_type": "EXPLICIT",
+      "source": "RMSF calculations identify regions of highest flexibility where the DNA binds to the terminal dimers (Figure 2\u2014figure supplement 1), and visual inspection of Arc90 trajectories revealed that the system samples a 'clamshell' motion, where terminal dimers and associated DNA fluctuate to create 'closed' and 'open' accessibility states (Videos 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RMSF analysis of MD simulations shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "87a4565e-e6b6-4b1d-86dd-61c94ea787b5",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C40",
+      "claim": "Arc90 trajectories show that the system samples a 'clamshell' motion, where terminal dimers and associated DNA fluctuate to create 'closed' and 'open' accessibility states.",
+      "claim_type": "EXPLICIT",
+      "source": "RMSF calculations identify regions of highest flexibility where the DNA binds to the terminal dimers (Figure 2\u2014figure supplement 1), and visual inspection of Arc90 trajectories revealed that the system samples a 'clamshell' motion, where terminal dimers and associated DNA fluctuate to create 'closed' and 'open' accessibility states (Videos 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual inspection of MD simulation trajectories shown in Videos 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "bee59deb-e747-46ee-be8f-86c5c1239cff",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C41",
+      "claim": "Over the clamshell motion in Arc90, the four-helix bundle interfaces that bind consecutive dimers to one another were maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the clamshell motion, the four-helix bundle interfaces that bind consecutive dimers to one another was maintained, and only small rearrangements of the local contact network were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of MD simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "cf799d37-887d-420e-a467-1aec604309f8",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C42",
+      "claim": "Archaeasomes retain protein-protein contacts while allowing for significant molecular motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that archaeasomes retain protein-protein contacts while still allowing for significant molecular motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MD simulation data showing maintained four-helix bundle interfaces despite large-scale dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "677ed7b6-6273-4aa4-80c1-3763e68ec293",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C43",
+      "claim": "L1-L1 interactions drastically reduced the population of the accessible state in Arc120 and Arc180 simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of Arc120 and Arc180 systems showed that L1-L1 interactions drastically reduced the population of the accessible state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of RMSD, RMSF, and DNA separation measurements between Arc90 (no L1-L1 interactions) and Arc120/Arc180 (with L1-L1 interactions).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "69e93a6b-81bd-42b8-a306-08f6076f738b",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C44",
+      "claim": "Both the maximum observed RMSD and variance in the timeseries were dampened in Arc120 and Arc180 systems compared to Arc90.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the maximum observed RMSD and variance in the timeseries were dampened in these systems (Figure 2A,B), and RMSF calculations showed that DNA bound to the terminal dimers were less dynamic than in Arc90 trajectories (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RMSD and RMSF analysis of MD simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "c1774e16-3099-41eb-a8ba-a845f57d9f58",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C45",
+      "claim": "The Arc120-G17D system experienced increased dynamics relative to the wild-type Arc120 trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Arc120-G17D system has the proper number of dimers to form L1-L1 stacking interactions, the G17D mutation was designed to disfavor interactions, and this system experienced increased dynamics relative to the wild-type Arc120 trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RMSD, RMSF, and DNA separation measurements comparing Arc120-G17D to wild-type Arc120.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "4488a7a2-c6cc-4bfb-a601-0acef0794ef7",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C46",
+      "claim": "The G17D mutation increased the solvent-accessible surface area by over 1,000 \u00c5\u00b2 compared to wild-type Arc120.",
+      "claim_type": "EXPLICIT",
+      "source": "This also increased the solvent-accessible surface area by over 1,000 \u00c52 (57,316 \u00b1 34 \u00c52 vs 58,422 \u00b1 73 \u00c52, p-value<0.001; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on solvent-accessible surface area calculations from MD simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "50c14d11-a0ba-40d2-b543-417285ac5d4c",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C47",
+      "claim": "The four-helix bundle interactions of consecutive dimers were maintained in Arc120-G17D systems despite the increase in DNA separation and surface accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the Arc90 system, the four-helix bundle interactions of consecutive dimers were maintained in these systems, despite the increase in DNA separation and surface accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of MD simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "7a310668-5bee-486d-94f3-e124a40b5844",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C48",
+      "claim": "Histone-DNA interactions were largely unchanged by the dynamics observed in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone-DNA interactions were largely unchanged by these dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on MM-GBSA calculations of DNA binding energies from MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "4d6a6f52-6336-4604-b014-0c01a3cbcbfe",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C49",
+      "claim": "Raw MM-GBSA values suggest that DNA-binding strength increases as additional dimers are added to an archaeasome stack.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous computational studies (Rojec et al., 2019), raw MM-GBSA values suggest that DNA-binding strength increases as additional dimers are added to an archaeasome stack (\u0394GArc90 < \u0394GArc120 < \u0394GArc180).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on MM-GBSA calculations from MD simulations and is consistent with previous computational studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "c0b0f075-1cd5-4a9e-bcba-e1e18509ce9e",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C50",
+      "claim": "When MM-GBSA values were normalized to the number of dimers in each system, there was no net change in DNA binding ability as a function of archaeasome size.",
+      "claim_type": "EXPLICIT",
+      "source": "When MM-GBSA values were normalized to the number of dimers in each system, there was no net change in DNA binding ability as a function of archaeosome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on normalized MM-GBSA calculations from MD simulations shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "c1097300-27f7-406e-a267-226e938876c1",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C51",
+      "claim": "The G17D point mutation slightly reduced the dimer-DNA interaction strength, but this difference was not statistically significant when compared to the wild-type Arc120 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the G17D point mutation slightly reduced the dimer-DNA interaction strength, but this difference was not statistically significant when compared to the wild-type Arc120 system (p-value of 0.157).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on MM-GBSA calculations and statistical analysis from MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "d284fa4f-cfaa-4b9f-a09a-8f05a7b46632",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C52",
+      "claim": "Archaeasomes can sample open and accessible conformations without histone dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, in conjunction with maintained four-helix bundle interactions, show that archaeasomes can sample open and accessible conformations without histone dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MD simulation data showing maintained histone-histone and histone-DNA interactions despite increased accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "a8de819b-be40-4874-b704-49a582738f99",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C53",
+      "claim": "The loss of the 30 base pair ladder pattern in MNase digestion of chromatin from cells carrying the G17D mutation may be due to increased archaeasome dynamics rather than frequent histone dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the loss of the 30 base pair ladder pattern in MNase digestion of chromatin isolated from cells carrying the G17D mutation as their only source of histones may be due to increased archaeasome dynamics (Figure 3), rather than frequent histone dissociation (Mattiroli et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the MD simulation data and comparison with previous experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "b570b6a5-bd0c-4abf-b745-bff90fea9331",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C54",
+      "claim": "Full complex saturation of Arc207 occurs when DNA and histones are mixed at the stoichiometric limit of ~30 bp per dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Gel shift assays showed that full complex saturation occurs when DNA and histones are mixed at the previously reported stoichiometric limit (~30 bp per dimer; Figure 4\u2014figure supplement 1; Mattiroli et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gel shift assay data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "0fcd25af-b062-4517-92a7-44f2a1f09b82",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C55",
+      "claim": "The Arc207 complex sediments homogeneously at ~10.6 s.",
+      "claim_type": "EXPLICIT",
+      "source": "SV-AUC traces show that the Arc207 complex sediments homogeneously at ~10.6 s (Figure 4, circles), and the Nuc147 control sediments more rapidly than the Arc207 system at ~11.2 s (Figure 4, squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SV-AUC data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "06563b45-3a8e-4161-a4eb-85ded6b569dd",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C56",
+      "claim": "The Nuc147 control sediments at ~11.2 s, more rapidly than the Arc207 system.",
+      "claim_type": "EXPLICIT",
+      "source": "SV-AUC traces show that the Arc207 complex sediments homogeneously at ~10.6 s (Figure 4, circles), and the Nuc147 control sediments more rapidly than the Arc207 system at ~11.2 s (Figure 4, squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SV-AUC data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "7bfeb8ca-20da-4491-954d-23cef4cfa6b9",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C57",
+      "claim": "The Arc207 complex is fully saturated with histones and has a total mass consistent with seven histone dimers assembled on 207 bp of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these data show that the Arc207 complex is fully saturated with histones, that the total mass is consistent with seven histone dimers assembled on 207 bp of DNA, and that its mass is greater than that of Nuc147.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GA-MC analysis of SV-AUC data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "4aa91e14-06c7-4f14-8d9c-88461624a158",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C58",
+      "claim": "The Arc207 system is more anisotropic than Nuc147, as confirmed by frictional ratios (f/fo) of 1.94 and 1.55 for Arc207 and Nuc147, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the Arc207 system is more anisotropic than Nuc147 in order to satisfy the decrease in sedimentation rate, which is confirmed by the frictional ratios (f/fo) estimated from GA-MC calculations (1.94 and 1.55 for Arc207 and Nuc147, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GA-MC analysis of SV-AUC data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "98dcaa3a-9dec-4570-aea2-8dfad7bb52d7",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C59",
+      "claim": "The Arc207 complex is more compact than free DNA but not as compact as the eukaryotic nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "For reference, the f/fo value of free 207 DNA is 3.14 so the Arc207 complex is more compact than free DNA but not as compact as the eukaryotic nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of frictional ratios from SV-AUC data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "75e6ac20-38a4-415a-87fd-aa04b65a928b",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C60",
+      "claim": "CryoEM data shows that the Arc207 system is open, exhibiting nucleosome-like particle dimensions with increased spacing between neighboring DNA gyres.",
+      "claim_type": "EXPLICIT",
+      "source": "CryoEM data shows that the Arc207 system is indeed open, as it exhibits nucleosome-like particle dimensions with increased spacing between neighboring DNA gyres (Figure 4B), in agreement with SV-AUC data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cryoEM micrographs and 2D classifications shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "6553dc18-f9c0-423e-9842-f6d76fef1d47",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C61",
+      "claim": "Arc207 samples exhibit an increase in sedimentation rate with increased Mg2+ concentration from 0 to 5 mM, with no additional increase between 5 and 10 mM MgCl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Arc207 samples exhibit an increase in sedimentation rate with increased Mg2+ concentration from 0 to 5 mM, with no additional increase between 5 and 10 mM MgCl2 (Figure 5A, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SV-AUC data at varying Mg2+ concentrations shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "092a1b43-0475-495c-9846-16334cb1c1ce",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C62",
+      "claim": "The nucleosome system shows little to no change in sedimentation from 0 to 2 mM MgCl2 and starts to self-associate (aggregate) at concentrations above 2 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the nucleosome system shows little to no change in sedimentation from 0 to 2 mM MgCl2 (Figure 5A, bottom), and start to self-associate (aggregate) at concentrations above 2 mM Mg2+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SV-AUC data at varying Mg2+ concentrations shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "2971f180-175e-4cda-99e2-853c22cc95b1",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C63",
+      "claim": "Unlike eukaryotic chromatin, divalent cations compact archaeasomes without promoting fiber-fiber association.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that, unlike eukaryotic chromatin, divalent cations compact archaeasomes without promoting fiber-fiber association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of SV-AUC data for Arc207 and Nuc147 at varying Mg2+ concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "82c7905c-d642-43fd-8488-dc3f63c3e3d5",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C64",
+      "claim": "Estimates of Mg2+ concentration within T. kodakarensis cells have been quoted at ~120 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, estimates of Mg2+ concentration within T. kodakarensis cells have been quoted at ~120 mM (Nagata et al., 2017), much higher than measurements of Mg2+ in mammalian nuclei (16\u201318 mM) (Romani, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nagata et al., 2017 and Romani, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "3a277ffd-d085-4d55-9b0d-763a7fa2b090",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C65",
+      "claim": "Measurements of Mg2+ in mammalian nuclei are 16\u201318 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, estimates of Mg2+ concentration within T. kodakarensis cells have been quoted at ~120 mM (Nagata et al., 2017), much higher than measurements of Mg2+ in mammalian nuclei (16\u201318 mM) (Romani, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Romani, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "8ed7ed40-a314-42b5-9fbf-a46f475dda86",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C66",
+      "claim": "Per dimer, archaeal histones provide weaker electrostatic screening of DNA than eukaryotic histones, due to their relatively lower isoelectric points (pI of ~8 vs ~11).",
+      "claim_type": "EXPLICIT",
+      "source": "Per dimer, archaeal histones provide weaker electrostatic screening of DNA than eukaryotic histones, due to their relatively lower isoelectric points (pI of ~8 vs~11), and the greater overall negative charge of archaeasomes may encourage rapid sequestering of any free Mg2+ ions in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of histone properties and inference about electrostatic interactions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "75210672-232e-4150-ae62-3a63e80d3dca",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C67",
+      "claim": "Two different populations of Arc207 were identified: Class I, which has the classical 'nucleosome-like' fold, and Class II, in which two perpendicular DNA wrappings are clearly observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The two-dimensional classification of this dataset identify two different populations of Arc207: Class I, which upon first inspection has the classical 'nucleosome-like' fold (Figure 6B), and Class II, in which two perpendicular DNA wrappings are clearly observed (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on 2D classification of cryoEM data shown in Figure 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "e1a39af7-6aea-4209-8689-577811731b68",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C68",
+      "claim": "Refinement of Class I and Class II particles yielded maps at 9.5 \u00c5 and 11.5 \u00c5 resolution, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Refinement of these densities yielded maps at 9.5 \u00c5 and 11.5 \u00c5 resolution for Class I and Class II, respectively (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on 3D refinement of cryoEM data shown in Figure 6D and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "d05c050a-a3d2-4ba0-96fc-cf6b774abb92",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C69",
+      "claim": "The Class II density describes only 150 base pairs of DNA and five histone dimers, even though Arc207 (207 base pairs of DNA bound to seven histone dimers) were deposited on the grid.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though Arc207 (207 base pairs of DNA bound to seven histone dimers) were deposited on the grid, refined density of state Class II describes only 150 base pairs of DNA and five histone dimers (Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the Class II cryoEM density shown in Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "13c03bc4-8aca-45d1-8476-8bd283291f35",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C70",
+      "claim": "MD simulations describe with high fidelity a compact archaeasome composed of five histone dimers wrapping ~150 bp of DNA, as shown by a correlation coefficient of 0.85 between simulated and empirical density.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated density at 8 \u00c5 resolution for the MD-derived structure, which yields a correlation coefficient of 0.85 with the empirical map. This shows that our MD simulations describe with high fidelity a compact archaeasome composed of five histone dimers wrapping ~150 bp of DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of simulated density from MD structures with the empirical cryoEM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "958697a5-e46a-4924-8ded-f1f8163f7632",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C71",
+      "claim": "The Class I density has sufficient volume to be fit with the full 207 base pair DNA and seven histone dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The density for Class II has sufficient volume to be fit with the full 207 base pair DNA and seven histone dimers (Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the Class I cryoEM density shown in Video 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "8966e412-69cd-4564-8d64-d96678508df9",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C72",
+      "claim": "In the Class I structure, the larger portion of the volume is best described by four histone dimers binding ~120 base pairs of DNA in a nucleosome-like structure, and the smaller portion can be fit with three histone dimers binding ~90 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The larger portion of the volume is best described by four histone dimers binding ~120 base pairs of DNA in a nucleosome-like structure, and the smaller portion can be fit with three histone dimers binding ~90 base pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on rigid-body docking of structural models into the Class I cryoEM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "170b8ce3-03ff-40a0-b323-b7ebfc84528b",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C73",
+      "claim": "In the Class I structure, the wrapping pathways of the subunits result in the two faces being arranged at a near 90\u00b0 angle.",
+      "claim_type": "EXPLICIT",
+      "source": "While the connecting density suggests only moderate bends in the helical axis, the wrapping pathways of the subunits result in the two faces being arranged at a near 90\u00b0 angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the Class I cryoEM density and fitted models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "4694c542-b988-4355-8ccd-d1736616c8c8",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C74",
+      "claim": "The connecting DNA segment between Arc120 and Arc90 subunits in the Class I structure is reconcilable with B-form DNA parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural models were generated by rigid-body docking separate Arc120 and Arc90 subunits into the associated density, and the connecting DNA was energy minimized and subjected to a short MD simulation to confirm that the connecting DNA segment is reconcilable with B-form DNA parameters (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on energy minimization and MD simulation of the connecting DNA shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "04c782a2-5b2a-4f24-a955-bb3870eb4507",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C75",
+      "claim": "For the fully resolved Arc207 model with the Arc90 'lid' bending ~90\u00b0 from the Arc120 'core', the calculated frictional ratio is 1.53, in close agreement with the 1.55 value extracted from experimental SV-AUC traces.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fully resolved Arc207 model, with the Arc90 'lid' bending ~90o from the Arc120 'core', we calculate a frictional ratio of 1.53, in close agreement with the 1.55 value extracted from the experimental traces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on hydrodynamic calculations using the SoMo plugin and comparison with experimental SV-AUC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "2a286403-d991-4f9f-b97d-437eca153161",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C76",
+      "claim": "Models with continuous wrapping and no deflections in the DNA pathway yield a frictional coefficient of 1.36.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, models with continuous wrapping and no deflections in the DNA pathway (as observed in the crystal structure, but not populated significantly in the cryo EM images) yield a frictional coefficient of 1.36.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on hydrodynamic calculations using the SoMo plugin for alternative structural models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "58b827f4-01a0-4bd4-b73e-ad66cff0fc77",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C77",
+      "claim": "Archaeasomes on an extended DNA fragment can be viewed as a distribution of archaeasome subunits that can open to a ~90\u00b0 angle.",
+      "claim_type": "EXPLICIT",
+      "source": "These data together show that archaeasomes on an extended DNA fragment can be viewed as a distribution of archaeasome subunits that can open to a ~90o angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined cryoEM, SV-AUC, and hydrodynamic modeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "3d58df14-2789-4b54-83de-fd6c6d70dd7d",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C78",
+      "claim": "Archaeasomes are metastable and extended in the absence of divalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryoEM structures show that archaeosomes are metastable and extended in the absence of divalent cations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cryoEM data collected in the absence of Mg2+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "3fd54943-ceb7-4214-81b9-286ff6fd22f4",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C79",
+      "claim": "Even in the presence of 5 mM Mg2+, archaeasomes exhibit at least two configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the presence of 5 mM Mg2+, archaeasomes exhibit at least two configurations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cryoEM data showing two distinct classes of particles in the presence of 5 mM Mg2+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "0a6e893d-7206-44b6-a0c9-aaaf313bd46b",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C80",
+      "claim": "Archaeasome structures contain a maximum of four to five histone dimers arranged in a continuous helical ramp, beyond which the helical histone ramp is disrupted at the four-helix bundle interface by an outward rotation of the remaining two to three histone dimers and attached DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our structures contain a maximum of four to five histone dimers arranged in a continuous helical ramp. Beyond that, the helical histone ramp is disrupted at the four-helix bundle interface by an outward rotation of the remaining two to three histone dimers and attached DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the cryoEM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "eaf05946-2488-4c7e-84b0-4859e7ab00dc",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C81",
+      "claim": "The arrangement of archaeasome subunits at ~90 degree angles may leave the major groove of the connecting DNA susceptible to nuclear factors, such as micrococcal nuclease or transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement may leave the major groove of the connecting DNA susceptible to nuclear factors, such as micrococcal nuclease or transcription factors, and explains the ~30 bp MNase digestion ladder observed in native archaeal chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and comparison with MNase digestion patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "a46d7a1e-b489-4466-9dfe-7b7264eb5f86",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C82",
+      "claim": "The arrangement of archaeasome subunits at ~90 degree angles explains the ~30 bp MNase digestion ladder observed in native archaeal chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement may leave the major groove of the connecting DNA susceptible to nuclear factors, such as micrococcal nuclease or transcription factors, and explains the ~30 bp MNase digestion ladder observed in native archaeal chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural findings to previous experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "d88e0c07-b71e-43e9-934f-fdbd4d4dd9bc",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C83",
+      "claim": "Models constructed from repeats of the Arc90 conformation agree with particle conformations extracted from SV-AUC hydrodynamic parameters and direct images from cryoEM data gathered in the absence of Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Models constructed from repeats of this conformation agree with particle conformations extracted from SV-AUC hydrodynamic parameters, as well as direct images and two-dimensional class averages from cryoEM data gathered in the absence of Mg2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of MD simulation models with SV-AUC and cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "8b6b393b-3615-4faf-873c-290a6551bf8f",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C84",
+      "claim": "Arc120 and Arc180 simulations may have been artificially biased for the closed configuration because the starting structures had intact L1-L1 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these simulations may have been artificially biased for the closed configuration, because the starting structures had intact L1-L1 interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential limitations of the MD simulations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "58a0243a-6571-4057-9416-2f73806e44e1",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C85",
+      "claim": "Separation of L1-L1 contacts may require more than several hundred nanoseconds of computational sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Separation of these contacts may require more than several hundred nanoseconds of computational sampling, and simulations of the Arc120-G17D system indeed show appreciable separation between DNA turns by weakening this interface while maintaining four-helix bundle interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the timescales observed in the simulations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "8343f9af-a06c-4675-ba50-e13da29a2805",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C86",
+      "claim": "Substituting major type histones in Methanosphaera stadtmanae with a 'capstone' paralog disrupts the tetramer interface and separates histone dimers on a continuous DNA fragment, thereby limiting archaeasome size.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study by Stevens et al., 2020, molecular dynamics trajectories showed that substituting major type histones in Methanosphaera stadtmanae with a 'capstone' paralog, a histone variant with sequence modifications at the four-helix bundle, disrupts the tetramer interface and separates histone dimers on a continuous DNA fragment, thereby limiting archaeasome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Stevens et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "a4867619-8187-4a50-b141-39936df45886",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C87",
+      "claim": "Destabilizing the four-helix bundle interface may yield a subtle increase in DNA accessibility through increased exposure of the major groove without the need to fully displace the archaeasome subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of the capstone model, our EM-derived structures suggest that destabilizing the four-helix bundle interface may yield a subtle increase in DNA accessibility through increased exposure of the major groove, and without the need to fully displace the archaeasome subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and the capstone model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "be27922b-956d-411d-8899-b6715029028b",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C88",
+      "claim": "Arc207 assemblies exhibit no signs of self-association upon the addition of up to 10 mM MgCl2, unlike eukaryotic nucleosomes and nucleosome arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Our SV-AUC traces show that Arc207 assemblies exhibit no signs of self-association upon the addition of up to 10 mM MgCl2, unlike eukaryotic nucleosomes and nucleosome arrays, where this favors extensive inter-nucleosome and inter-array interactions and aggregation (Schwarz et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SV-AUC data and comparison with known behavior of eukaryotic nucleosomes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "e5afbcfd-f0ce-41dd-9f05-b86efb3367e7",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C89",
+      "claim": "Divalent cations bias individual archaeasomes toward more compact states without promoting inter-archaeasome interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, these conditions bias individual archaeasomes toward more compact states without promoting inter-archaeasome interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SV-AUC data showing compaction without aggregation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "acc0bdc8-f0bf-41c6-aad2-7a61c08a3bf5",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C90",
+      "claim": "The ability of T. kodakarensis archaeasomes to compact but not aggregate as a result of elevated Mg2+ concentration may be a direct result of evolving in high-salt environments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the ability of T. kodakarensis archaeasomes to compact but not aggregate as a result of elevated Mg2+ concentration may be a direct result of evolving in high-salt environments, as regulating between internal and external concentrations may have been more energetically demanding than simply adapting their chromatin structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary adaptation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "2cf43310-5d5d-4bfb-aaa8-2bd727e2acee",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C91",
+      "claim": "Archaeal histones were successfully expressed in E. coli cells and were found to coat bacterial DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeal histones were successfully expressed in E. coli cells and were found to coat bacterial DNA (Rojec et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Rojec et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "7932176d-9179-42cc-a492-980add2a4737",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C92",
+      "claim": "Expression of archaeal histones in E. coli resulted in only minor perturbations of cell growth, despite E. coli lacking the evolutionary machinery to handle histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this resulted in only minor perturbations of cell growth, despite E. coli lacking the evolutionary machinery to handle histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the citation to Rojec et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "3d108b16-5a1b-4936-aaf7-d81d9b5260db",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C93",
+      "claim": "In vitro assays have shown that transcription through archaeasomes is slowed but not altogether stopped.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in vitro assays have shown that transcription through archaeasomes is slowed but not altogether stopped (Xie and Reeve, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Xie and Reeve, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "a872a5c8-c95d-4141-9ae0-d329d1a9489d",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C94",
+      "claim": "In eukaryotes, navigation of polymerases through chromatin is assisted by histone chaperones and ATP-dependent remodeling factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, navigation of polymerases through chromatin is assisted by histone chaperones and ATP-dependent remodeling factors (Hammond et al., 2017; Clapier et al., 2017; Markert and Luger, 2021), but no known homologs to these complexes have been identified as yet in archaea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature on chromatin remodeling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "16e90a46-6a81-469f-a027-df95daa48887",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C95",
+      "claim": "No known homologs to histone chaperones and ATP-dependent remodeling factors have been identified as yet in archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, navigation of polymerases through chromatin is assisted by histone chaperones and ATP-dependent remodeling factors (Hammond et al., 2017; Clapier et al., 2017; Markert and Luger, 2021), but no known homologs to these complexes have been identified as yet in archaea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "6e45f841-bbbb-494b-a780-1e307afb42e2",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C96",
+      "claim": "In absence of remodelers, the inherent dynamics of archaeasome-based chromatin may allow limited access to chromatin by the sporadic appearance of near-zero linker DNA and Arc60 or Arc90 substates.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of remodelers, the inherent dynamics of archaeasome-based chromatin may thereby allow limited access to chromatin by the sporadic (and possibly stochastic) appearance of near-zero linker DNA and Arc60 or Arc90 substates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural and dynamic findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "39a6f7e0-0c6b-41d2-857c-346347901496",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C97",
+      "claim": "The 'SMC-like' coalescin protein was recently identified in the histone-less Sulfolobus archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "On a related note, the 'SMC-like' coalescin proteins was recently identified in the histone-less Sulfolobus archaea (Takemata and Bell, 2021), and the access of these yet unidentified 'hidden agents' would similarly be tuned by the dynamics of the archaeasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Takemata and Bell, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "2ec7cf3d-fce2-4b37-8669-cf8f50248398",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C98",
+      "claim": "HTkA histones from Thermococcus kodakarensis are very similar to HMfB histones (overall 59% identity, 81% similarity, with higher conservation in sequences involved in histone-histone and histone-DNA interactions).",
+      "claim_type": "EXPLICIT",
+      "source": "We reconstituted archaeasomes on 207 base pairs of Widom 601 DNA (Arc207) with saturating amounts of recombinant HTkA histones from Thermococcus kodakarensis, which are very similar to HMfB histones (overall 59% identity, 81% similarity, with higher conservation in sequences involved in histone-histone and histone-DNA interactions) (Mattiroli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Mattiroli et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "72f573f2-3085-4e94-afca-92a4230e50a2",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C99",
+      "claim": "Three independent simulations of each archaeasome system were conducted for 300 ns in the NPT ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "After energy minimization, three independent simulations of each system were conducted according to the following protocol: simulations were heated from 10 K to 300 K over the course of 50 ps in the NVT ensemble with heavy atom restraints applied, system densities were equilibrated and positional restraints were slowly released over the course of 200 ps in the NPT ensemble (target pressure of 1 atm), and simulations were extended for 300 ns without positional restraints in the NPT ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MD simulation protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "2e58c04c-3659-4a71-884a-b64d7be211bc",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "claim_id": "C100",
+      "claim": "Reconstructed cryoEM volumes were deposited to the Electron Microscopy Data Bank (EMD-23403, EMD-23404).",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstructed volumes were deposited to the Electron Microscopy Data Bank (EMD-23403, EMD-23404).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study presents the first direct observation of solution structures of large archaeasomes (>90 bp DNA) using cryoEM, revealing two distinct structural classes with DNA wrapping pathways deflected 90\u00b0 out-of-plane. Class I contains the full Arc207 complex with Arc120 and Arc90 subunits arranged perpendicular to each other, while Class II shows a compact Arc150 structure. These structures are validated by agreement between cryoEM densities, MD simulations, and SV-AUC hydrodynamic parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cryoEM structures at 9.5 \u00c5 and 11.5 \u00c5 resolution (C68) directly demonstrate the 90\u00b0 deflection architecture (C6, C30, C34, C67, C73, C80), which is independently supported by SV-AUC frictional ratios (C75, C76) and MD simulations showing correlation coefficient of 0.85 with empirical density (C70). The multi-method convergence provides strong evidence for these novel structural states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "76d3425a-3cbd-459c-a370-f31da4f532a1",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MD simulations reveal that archaeasomes exhibit 'clamshell' dynamics where terminal regions fluctuate between open and closed states while maintaining histone-histone four-helix bundle interfaces and histone-DNA interactions. The Arc90 system shows the highest dynamics (RMSD ~6 \u00c5), while L1-L1 interactions in Arc120 and Arc180 systems dampen this motion. The G17D mutation increases dynamics and accessibility without causing histone dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The MD simulation data (C37-C52) provides comprehensive quantitative evidence including RMSD, RMSF, DNA separation distances, and MM-GBSA binding energies across multiple systems and replicates (C99). The maintained four-helix bundle interfaces (C41, C47) and DNA binding energies (C48, C50, C51) despite large-scale dynamics (C38, C40) directly support the conclusion that accessibility increases without dissociation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "86648bf6-660f-4f6c-b5ad-bf331cda690f",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SV-AUC analysis demonstrates that Arc207 complexes are fully saturated with seven histone dimers but adopt extended conformations in solution, as evidenced by slower sedimentation (10.6 s vs 11.2 s for Nuc147) despite higher mass, and increased frictional ratio (1.94 vs 1.55 for Nuc147). These hydrodynamic properties agree with MD simulation models of extended Arc90-based structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SV-AUC data (C55-C58) combined with GA-MC analysis (C57, C58) provides direct experimental evidence for extended archaeasome conformations. The agreement between experimental frictional ratios and those calculated from MD-derived models (C83) validates both the experimental measurements and computational predictions. The comparison with Nuc147 controls strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "139775bd-f1df-4ab1-a53d-519e55454381",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mg2+ concentration influences archaeasome compaction without promoting aggregation. Arc207 shows progressive compaction from 0-5 mM Mg2+ (measured by increased sedimentation and decreased frictional ratio) with no further change at higher concentrations, while Nuc147 aggregates above 2 mM Mg2+. This demonstrates that divalent cations compact individual archaeasomes without promoting inter-particle interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SV-AUC data across multiple Mg2+ concentrations (C61, C62) directly demonstrates differential behavior between Arc207 and Nuc147. The maintained OD260 values for Arc207 versus loss for Nuc147 at high Mg2+ provides clear evidence against aggregation (C88). The frictional ratio changes confirm compaction of individual particles (C5, C89).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "555b368b-701e-4c86-8007-3d4ba8bccadb",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "L1-L1 stacking interactions between histone dimers regulate archaeasome dynamics and accessibility. The G17D mutation, which disrupts L1-L1 interactions, increases dynamics, DNA separation, and solvent-accessible surface area by >1000 \u00c5\u00b2 compared to wild-type, explaining the loss of MNase digestion patterns observed in vivo without requiring histone dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The MD simulation data comparing wild-type and G17D systems (C43-C46) provides quantitative evidence for the regulatory role of L1-L1 interactions. The statistically significant increase in surface area (C46, p<0.001) and maintained four-helix bundles (C47) support the mechanism. The reinterpretation of previous MNase data (C53) is a logical inference from the simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "2c13415a-03e7-439f-a38a-08f43fcf111c",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 90\u00b0 deflection architecture of archaeasome subunits exposes the major groove of connecting DNA to nuclear factors, providing a structural explanation for the ~30 bp MNase digestion ladder observed in native archaeal chromatin and suggesting a mechanism for DNA accessibility without complete archaeasome displacement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations from cryoEM (C80) combined with the 90\u00b0 arrangement (C73, C77) provide a clear structural basis for the inference about major groove accessibility (C81). The connection to MNase digestion patterns (C82) is a reasonable interpretation linking structure to previous experimental observations, though it remains an inference rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "0496fe16-1c1e-4b5d-be62-326731905f47",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Archaea may leverage inherent archaeasome dynamics to balance chromatin packing and accessibility without ATP-dependent remodelers. This contrasts with eukaryotic nucleosomes, which are compact and stable and require elaborate machinery for chromatin regulation. The intrinsic dynamics may allow sporadic DNA access through appearance of extended substates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the structural and dynamic data (C29-C34, C78-C80) clearly demonstrate inherent archaeasome flexibility, the functional interpretation (C7, C96) remains speculative. The absence of known remodelers in archaea (C95) and evidence that transcription through archaeasomes is slowed but not stopped (C93) are consistent with this model, but direct functional validation is lacking. This represents a reasonable hypothesis requiring future experimental testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "a4f9072c-905c-40c0-8a5d-54c037b060d1",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ability of archaeasomes to compact without aggregating at high Mg2+ concentrations may reflect evolutionary adaptation to high-salt environments, as T. kodakarensis cells contain ~120 mM Mg2+ (much higher than mammalian nuclei at 16-18 mM). Archaeal histones provide weaker electrostatic screening than eukaryotic histones due to lower isoelectric points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The cited Mg2+ concentrations (C64, C65) and histone pI differences (C66) are factual, but the evolutionary interpretation (C90) is speculative. While the non-aggregating behavior at high Mg2+ is experimentally demonstrated (C88, C89), the mechanistic connection to evolutionary adaptation versus other biochemical factors remains unproven. The hypothesis is plausible but requires additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Archaeal and eukaryotic histones share fundamental features including the histone fold motif, dimerization, and DNA wrapping, but differ in key aspects: archaeal histones lack N-terminal tails and histone fold extensions, form variable-length archaeasomes (60-500 bp) rather than defined octamers, and are found in archaea but not bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent well-established knowledge in the field, supported by appropriate citations (C1, C9, C11, C14-C18). The comparisons between archaeal and eukaryotic systems are accurate and provide essential context for understanding the novelty of the current work. These are background claims rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "8ee2963f-51db-4461-ae14-742606d8e0c7",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous crystal structure work on HMfB histone bound to ~90 bp DNA revealed nucleosome-like features including superhelical DNA wrapping and four-helix bundle interactions, but also showed extended superhelical winding with more than four histone dimers, consistent with in vivo footprinting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately describe prior work by the authors (C21, C26) and establish the foundation for the current study. The structural features described (C24, C25) are from published crystal structures and provide essential context. These are appropriately cited background claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "48222d52-e424-4964-8bfd-dedee22d62ad",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous work showed that 'capstone' histone variants in Methanosphaera stadtmanae disrupt the tetramer interface and limit archaeasome size. The current EM structures suggest this may increase DNA accessibility through major groove exposure without complete subunit displacement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The capstone work (C86) is appropriately cited to Stevens et al., 2020. The connection to the current structural findings (C87) is a reasonable inference that integrates prior work with new data, though it remains interpretive rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "d9985397-e3ee-4ccd-99ac-8cfdf03e301e",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Archaeal histones can be expressed in E. coli and coat bacterial DNA with minimal growth perturbations, and SMC-like coalescin proteins were recently identified in histone-less Sulfolobus archaea, suggesting diverse chromatin organization strategies across archaea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are appropriately cited to published work (C91, C92 to Rojec et al., 2019; C97 to Takemata and Bell, 2021) and provide relevant context for understanding archaeal chromatin biology. They are background information rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "32865043-e3b5-4010-9a4b-7b4fa67f44f6",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study used HTkA histones from Thermococcus kodakarensis (59% identical, 81% similar to HMfB) for reconstitution experiments, conducted three independent 300 ns MD simulations for each system, and deposited cryoEM structures to EMDB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological details are clearly stated and appropriate. The similarity between HTkA and HMfB (C98) justifies the experimental design. The simulation protocol (C99) and data deposition (C100) meet standard practices for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    },
+    {
+      "id": "b3aeb982-1324-4916-b088-ed9b2dbcdfd7",
+      "content_id": "3f42b236-0898-42db-9657-507a5f592a61",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Arc120 and Arc180 simulations may have been artificially biased toward closed configurations because starting structures had intact L1-L1 interactions, and separation of these contacts may require longer than several hundred nanoseconds of sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge potential limitations of their MD simulations (C84, C85). This self-critical assessment strengthens rather than weakens the overall work by identifying areas where longer simulations or alternative starting structures might provide additional insights.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:46:26.879058Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c4dcbfd1-458d-4178-ad59-c97f0750379f",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "9cb0b0b2-e13b-4cfc-94a4-2055be56e34a",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "850b13ff-0c67-4457-aeba-491b6df8e000",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "f9c5e6b5-2f6b-48f5-a685-68fb4ac59576",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "5addbcde-2801-4337-bcff-a38df64da3b4",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "fc6fd8fe-50ef-49ea-a322-61d48f0f10aa",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "a8671de0-63c3-476e-a080-63dc77d09e37",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "75e6ac20-38a4-415a-87fd-aa04b65a928b",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "75210672-232e-4150-ae62-3a63e80d3dca",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "e1a39af7-6aea-4209-8689-577811731b68",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "d05c050a-a3d2-4ba0-96fc-cf6b774abb92",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "13c03bc4-8aca-45d1-8476-8bd283291f35",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "958697a5-e46a-4924-8ded-f1f8163f7632",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "8966e412-69cd-4564-8d64-d96678508df9",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "170b8ce3-03ff-40a0-b323-b7ebfc84528b",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "4694c542-b988-4355-8ccd-d1736616c8c8",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "04c782a2-5b2a-4f24-a955-bb3870eb4507",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "2a286403-d991-4f9f-b97d-437eca153161",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "58b827f4-01a0-4bd4-b73e-ad66cff0fc77",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "3d58df14-2789-4b54-83de-fd6c6d70dd7d",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "3fd54943-ceb7-4214-81b9-286ff6fd22f4",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "0a6e893d-7206-44b6-a0c9-aaaf313bd46b",
+      "result_id": "02dfe68b-ec58-472a-a5a1-6fee9d4e9433"
+    },
+    {
+      "claim_id": "33de7070-5bbe-4f93-8bf9-781ef82bfc15",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "860208ec-c0a8-4ccf-9677-59bf90294c1c",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "841e5f87-2f42-4912-a499-d8c7873e72f0",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "87a4565e-e6b6-4b1d-86dd-61c94ea787b5",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "bee59deb-e747-46ee-be8f-86c5c1239cff",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "cf799d37-887d-420e-a467-1aec604309f8",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "677ed7b6-6273-4aa4-80c1-3763e68ec293",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "69e93a6b-81bd-42b8-a306-08f6076f738b",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "c1774e16-3099-41eb-a8ba-a845f57d9f58",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "4488a7a2-c6cc-4bfb-a601-0acef0794ef7",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "50c14d11-a0ba-40d2-b543-417285ac5d4c",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "7a310668-5bee-486d-94f3-e124a40b5844",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "4d6a6f52-6336-4604-b014-0c01a3cbcbfe",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "c0b0f075-1cd5-4a9e-bcba-e1e18509ce9e",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "c1097300-27f7-406e-a267-226e938876c1",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "d284fa4f-cfaa-4b9f-a09a-8f05a7b46632",
+      "result_id": "76d3425a-3cbd-459c-a370-f31da4f532a1"
+    },
+    {
+      "claim_id": "b570b6a5-bd0c-4abf-b745-bff90fea9331",
+      "result_id": "86648bf6-660f-4f6c-b5ad-bf331cda690f"
+    },
+    {
+      "claim_id": "0fcd25af-b062-4517-92a7-44f2a1f09b82",
+      "result_id": "86648bf6-660f-4f6c-b5ad-bf331cda690f"
+    },
+    {
+      "claim_id": "06563b45-3a8e-4161-a4eb-85ded6b569dd",
+      "result_id": "86648bf6-660f-4f6c-b5ad-bf331cda690f"
+    },
+    {
+      "claim_id": "7bfeb8ca-20da-4491-954d-23cef4cfa6b9",
+      "result_id": "86648bf6-660f-4f6c-b5ad-bf331cda690f"
+    },
+    {
+      "claim_id": "4aa91e14-06c7-4f14-8d9c-88461624a158",
+      "result_id": "86648bf6-660f-4f6c-b5ad-bf331cda690f"
+    },
+    {
+      "claim_id": "98dcaa3a-9dec-4570-aea2-8dfad7bb52d7",
+      "result_id": "86648bf6-660f-4f6c-b5ad-bf331cda690f"
+    },
+    {
+      "claim_id": "d88e0c07-b71e-43e9-934f-fdbd4d4dd9bc",
+      "result_id": "86648bf6-660f-4f6c-b5ad-bf331cda690f"
+    },
+    {
+      "claim_id": "4e95f09b-a49e-417d-8fdd-a5b339bc6ac9",
+      "result_id": "139775bd-f1df-4ab1-a53d-519e55454381"
+    },
+    {
+      "claim_id": "6553dc18-f9c0-423e-9842-f6d76fef1d47",
+      "result_id": "139775bd-f1df-4ab1-a53d-519e55454381"
+    },
+    {
+      "claim_id": "092a1b43-0475-495c-9846-16334cb1c1ce",
+      "result_id": "139775bd-f1df-4ab1-a53d-519e55454381"
+    },
+    {
+      "claim_id": "2971f180-175e-4cda-99e2-853c22cc95b1",
+      "result_id": "139775bd-f1df-4ab1-a53d-519e55454381"
+    },
+    {
+      "claim_id": "be27922b-956d-411d-8899-b6715029028b",
+      "result_id": "139775bd-f1df-4ab1-a53d-519e55454381"
+    },
+    {
+      "claim_id": "e5afbcfd-f0ce-41dd-9f05-b86efb3367e7",
+      "result_id": "139775bd-f1df-4ab1-a53d-519e55454381"
+    },
+    {
+      "claim_id": "33c3de5d-66a3-46fd-bb7c-f163d9382b77",
+      "result_id": "555b368b-701e-4c86-8007-3d4ba8bccadb"
+    },
+    {
+      "claim_id": "608bccda-ccf4-46c3-8b78-41a58ae1852f",
+      "result_id": "555b368b-701e-4c86-8007-3d4ba8bccadb"
+    },
+    {
+      "claim_id": "5addbcde-2801-4337-bcff-a38df64da3b4",
+      "result_id": "555b368b-701e-4c86-8007-3d4ba8bccadb"
+    },
+    {
+      "claim_id": "677ed7b6-6273-4aa4-80c1-3763e68ec293",
+      "result_id": "555b368b-701e-4c86-8007-3d4ba8bccadb"
+    },
+    {
+      "claim_id": "c1774e16-3099-41eb-a8ba-a845f57d9f58",
+      "result_id": "555b368b-701e-4c86-8007-3d4ba8bccadb"
+    },
+    {
+      "claim_id": "4488a7a2-c6cc-4bfb-a601-0acef0794ef7",
+      "result_id": "555b368b-701e-4c86-8007-3d4ba8bccadb"
+    },
+    {
+      "claim_id": "a8de819b-be40-4874-b704-49a582738f99",
+      "result_id": "555b368b-701e-4c86-8007-3d4ba8bccadb"
+    },
+    {
+      "claim_id": "eaf05946-2488-4c7e-84b0-4859e7ab00dc",
+      "result_id": "2c13415a-03e7-439f-a38a-08f43fcf111c"
+    },
+    {
+      "claim_id": "a46d7a1e-b489-4466-9dfe-7b7264eb5f86",
+      "result_id": "2c13415a-03e7-439f-a38a-08f43fcf111c"
+    },
+    {
+      "claim_id": "a4867619-8187-4a50-b141-39936df45886",
+      "result_id": "2c13415a-03e7-439f-a38a-08f43fcf111c"
+    },
+    {
+      "claim_id": "4d1577c8-733c-4121-bcea-7e6c9aa4d6c9",
+      "result_id": "0496fe16-1c1e-4b5d-be62-326731905f47"
+    },
+    {
+      "claim_id": "78607cef-c905-4fbe-93cd-83a58a778af7",
+      "result_id": "0496fe16-1c1e-4b5d-be62-326731905f47"
+    },
+    {
+      "claim_id": "6ffc170c-8c22-4c96-aac4-a15cb25d5833",
+      "result_id": "0496fe16-1c1e-4b5d-be62-326731905f47"
+    },
+    {
+      "claim_id": "3d108b16-5a1b-4936-aaf7-d81d9b5260db",
+      "result_id": "0496fe16-1c1e-4b5d-be62-326731905f47"
+    },
+    {
+      "claim_id": "a872a5c8-c95d-4141-9ae0-d329d1a9489d",
+      "result_id": "0496fe16-1c1e-4b5d-be62-326731905f47"
+    },
+    {
+      "claim_id": "16e90a46-6a81-469f-a027-df95daa48887",
+      "result_id": "0496fe16-1c1e-4b5d-be62-326731905f47"
+    },
+    {
+      "claim_id": "6e45f841-bbbb-494b-a780-1e307afb42e2",
+      "result_id": "0496fe16-1c1e-4b5d-be62-326731905f47"
+    },
+    {
+      "claim_id": "82c7905c-d642-43fd-8488-dc3f63c3e3d5",
+      "result_id": "a4f9072c-905c-40c0-8a5d-54c037b060d1"
+    },
+    {
+      "claim_id": "3a277ffd-d085-4d55-9b0d-763a7fa2b090",
+      "result_id": "a4f9072c-905c-40c0-8a5d-54c037b060d1"
+    },
+    {
+      "claim_id": "8ed7ed40-a314-42b5-9fbf-a46f475dda86",
+      "result_id": "a4f9072c-905c-40c0-8a5d-54c037b060d1"
+    },
+    {
+      "claim_id": "acc0bdc8-f0bf-41c6-aad2-7a61c08a3bf5",
+      "result_id": "a4f9072c-905c-40c0-8a5d-54c037b060d1"
+    },
+    {
+      "claim_id": "4ab765d6-3755-4b8c-b47d-0584be1fdf24",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "e7883b09-076f-43b8-943d-9f3a5b219afd",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "0749f3e0-7a62-4e07-b5f6-65ce14a3c6ac",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "252176e3-3146-4b97-9e18-2cc46059f33b",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "3257f4dc-d4bc-4068-b3f9-10ddffd06773",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "1f9ecaa2-27ef-4f6b-bf48-2ea577318642",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "f3b6b117-7325-4911-8972-def47d976f10",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "e4f37ef9-1c41-4898-81b1-ffbb8c4698b9",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "c1cfc169-201b-4d5c-91da-4ed070cc6de2",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "772dce85-36b8-4ad0-9a57-e5405feeaba0",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "9a2518b8-90cf-4911-a54a-32a089e825e1",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "5295bf7b-6630-42d1-bf43-e4888e2b30b6",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "15287a2d-df48-4e7d-9266-2577850db759",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "701b675f-0af3-45e5-a5b4-4e3df42e85e9",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "754eaa85-4dd2-4028-9bf1-f44f27af527e",
+      "result_id": "9cf7ce02-7e29-413c-8b19-e0090bf69c39"
+    },
+    {
+      "claim_id": "3546ce4f-03ed-4de0-9ba4-c233c10945e0",
+      "result_id": "8ee2963f-51db-4461-ae14-742606d8e0c7"
+    },
+    {
+      "claim_id": "23150ffc-e448-42c2-a7f1-7591efa4849f",
+      "result_id": "8ee2963f-51db-4461-ae14-742606d8e0c7"
+    },
+    {
+      "claim_id": "b9bf5031-91c2-487b-a0ed-f3cb4f641810",
+      "result_id": "8ee2963f-51db-4461-ae14-742606d8e0c7"
+    },
+    {
+      "claim_id": "dce5c376-9532-4cd7-b114-db1c23953dcd",
+      "result_id": "8ee2963f-51db-4461-ae14-742606d8e0c7"
+    },
+    {
+      "claim_id": "9c536e84-39a2-4a29-9726-ab70822b8218",
+      "result_id": "8ee2963f-51db-4461-ae14-742606d8e0c7"
+    },
+    {
+      "claim_id": "808699ca-c5bf-41f1-a565-09733cb1bdff",
+      "result_id": "8ee2963f-51db-4461-ae14-742606d8e0c7"
+    },
+    {
+      "claim_id": "8343f9af-a06c-4675-ba50-e13da29a2805",
+      "result_id": "48222d52-e424-4964-8bfd-dedee22d62ad"
+    },
+    {
+      "claim_id": "a4867619-8187-4a50-b141-39936df45886",
+      "result_id": "48222d52-e424-4964-8bfd-dedee22d62ad"
+    },
+    {
+      "claim_id": "2cf43310-5d5d-4bfb-aaa8-2bd727e2acee",
+      "result_id": "d9985397-e3ee-4ccd-99ac-8cfdf03e301e"
+    },
+    {
+      "claim_id": "7932176d-9179-42cc-a492-980add2a4737",
+      "result_id": "d9985397-e3ee-4ccd-99ac-8cfdf03e301e"
+    },
+    {
+      "claim_id": "39a6f7e0-0c6b-41d2-857c-346347901496",
+      "result_id": "d9985397-e3ee-4ccd-99ac-8cfdf03e301e"
+    },
+    {
+      "claim_id": "2ec7cf3d-fce2-4b37-8669-cf8f50248398",
+      "result_id": "32865043-e3b5-4010-9a4b-7b4fa67f44f6"
+    },
+    {
+      "claim_id": "72f573f2-3085-4e94-afca-92a4230e50a2",
+      "result_id": "32865043-e3b5-4010-9a4b-7b4fa67f44f6"
+    },
+    {
+      "claim_id": "2e58c04c-3659-4a71-884a-b64d7be211bc",
+      "result_id": "32865043-e3b5-4010-9a4b-7b4fa67f44f6"
+    },
+    {
+      "claim_id": "8b6b393b-3615-4faf-873c-290a6551bf8f",
+      "result_id": "b3aeb982-1324-4916-b088-ed9b2dbcdfd7"
+    },
+    {
+      "claim_id": "58a0243a-6571-4057-9416-2f73806e44e1",
+      "result_id": "b3aeb982-1324-4916-b088-ed9b2dbcdfd7"
+    }
+  ],
+  "comparisons": []
+}

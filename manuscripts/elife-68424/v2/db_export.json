@@ -1,0 +1,1433 @@
+{
+  "submission": {
+    "id": "d99e34d3-6707-4da2-a4e6-3bbef5d298d1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:07:46.877293Z",
+    "updated_at": "2025-12-03T05:07:46.877293Z"
+  },
+  "content": [
+    {
+      "id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "submission_id": "d99e34d3-6707-4da2-a4e6-3bbef5d298d1",
+      "content_type": "manuscript",
+      "content_text": "# Scaling of subcellular actin structures with cell length through decelerated growth\n\n## Authors\n\n- Shane G McInally<sup>1</sup> ([ORCID: 0000-0001-6145-4581](https://orcid.org/0000-0001-6145-4581))\n- Jane Kondev<sup>2</sup> ([ORCID: 0000-0001-7522-7144](https://orcid.org/0000-0001-7522-7144)) \u2020\n- Bruce L Goode<sup>1</sup> ([ORCID: 0000-0002-6443-5893](https://orcid.org/0000-0002-6443-5893)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Brandeis University Waltham United States\n2. Department of Physics, Brandeis University Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow cells tune the size of their subcellular parts to scale with cell size is a fundamental question in cell biology. Until now, most studies on the size control of organelles and other subcellular structures have focused on scaling relationships with cell volume, which can be explained by limiting pool mechanisms. Here, we uncover a distinct scaling relationship with cell length rather than volume, revealed by mathematical modeling and quantitative imaging of yeast actin cables. The extension rate of cables decelerates as they approach the rear of the cell, until cable length matches cell length. Further, the deceleration rate scales with cell length. These observations are quantitatively explained by a \u2018balance-point\u2019 model, which stands in contrast to limiting pool mechanisms, and describes a distinct mode of self-assembly that senses the linear dimensions of the cell.\n\n## Introduction\n\nThe size of a cell\u2019s internal parts are scaled to its overall size. This size-scaling behavior has been demonstrated for organelles as well as large macromolecular assemblies, illustrating the broad importance of adapting the size of internal structures to the geometric dimensions of the cell (Rafelski et al., 2012; Levy and Heald, 2010; Hazel et al., 2013; Good et al., 2013; Weber and Brangwynne, 2015; Greenan et al., 2010; Jorgensen et al., 2007; Decker et al., 2011; Neumann and Nurse, 2007; Lacroix et al., 2018). A popular model of cellular scaling is the limiting pool mechanism, wherein maintaining a constant concentration of molecular components enables the subcellular structure to increase in size proportionally with cell volume (Goehring and Hyman, 2012;\u00a0de Godoy et al., 2008) This allows larger cells to assemble larger structures, since the total number of molecular building blocks increases proportionally with cell volume. Additionally, this mechanism is biochemically simple because it does not require active processes that dynamically tune concentrations or activity levels of proteins involved in the construction . Indeed, cells appear to use a limiting pool mechanism to scale the size of their nucleoli, centrosomes, and mitotic spindles (Hazel et al., 2013; Good et al., 2013; Weber and Brangwynne, 2015; Greenan et al., 2010; Decker et al., 2011; Lacroix et al., 2018). However, limiting pool models cannot explain how the size of a linear subcellular structure scales with the linear dimensions of a cell, rather than its volume. Namely, these mechanisms predict that a two\u00a0fold increase in the radius of a spherical cell will increase the length of a linear structure eight\u00a0fold, following the eight\u00a0fold increase in cell volume. This suggests that other mechanisms must account for how some subcellular structures are scaled with the linear dimensions of a cell.\n\nPolarized actin cables in S. cerevisiae are an example of a linear structure that appear to grow to match the linear dimensions of the cell in order to effectively deliver secretory vesicles (Moseley and Goode, 2006). These cables are linear bundles of crosslinked actin filaments assembled by formins, which extend along the cell cortex and serve as tracks for intracellular transport of cargo from the mother cell to the growing bud, or daughter cell. Complementary sets of cables are assembled by two formins, Bni1 at the bud tip and Bnr1 at the bud neck (Pruyne et al., 2004). Throughout the cell cycle, cables are continuously polymerized, turn over at high rates, and appear to grow until they reach the back of the mother cell (Yu et al., 2011; Yang and Pon, 2002; Eskin et al., 2016). This prompted us to more rigorously investigate the relationship between cable length and cell size.\n\nWe started by comparing cable lengths to the lengths of the mother cells in which they grew. Cables were imaged in fixed wild-type haploid cells using super-resolution microscopy. Cable lengths were measured from their site of assembly (the bud neck) to their distal tip in the mother cell (note that mother cell and cell are synonymous and used interchangeably from this point on) (Figure 1\u2014figure supplement 1A). Average cable length and average cell length were remarkably similar (4.5\u00a0\u00b1\u00a00.3 \u00b5m and 4.5\u00a0\u00b1\u00a00.2 \u00b5m, respectively), suggesting a scaling relationship. However, we note that there was a wider range in cable lengths (2.0\u20138.7 \u00b5m) compared to cell lengths (3.7\u20135.5 \u00b5m), presumably because cables in fixed cells are at different stages of growth. Further, because cables grow along the cortex of an ellipsoid shaped cell, their length can exceed the length of the cell while not growing past the back of the cell. Therefore, a cable that grows from the bud neck to the back of the cell is expected to be slightly longer than the direct distance between these two points.\n\nThe observations above led us to ask whether the relationship between cable length and cell length is maintained as cell size increases. To address this, we compared cable lengths in haploid and diploid cells, and cdc28-13ts temperature-sensitive mutants that grow abnormally large. Diploid mother cells had an\u00a0~2-fold increase in volume compared to haploid mother cells (81.8\u00a0\u00b1\u00a06.3 \u00b5m3 and 44.9\u00a0\u00b1\u00a04.7 \u00b5m3, respectively) (Figure 1A,B and E), consistent with previous studies (Jorgensen et al., 2002). The cdc28-13ts strain exhibited a normal haploid mother cell size at the permissive temperature. However, this strain displayed a\u00a0~\u00a05-fold increase in volume (198.3\u00a0\u00b1\u00a05.5 \u00b5m3 versus 40.9\u00a0\u00b1\u00a02.3 \u00b5m3) after growth at the restrictive temperature (37\u00b0C) for 8 hr, followed by 1 hr of growth at the permissive temperature (25\u00b0C) to allow cell polarization and bud growth (Figure 1C,D and E; and Figure 1\u2014figure supplement 1B and C;\u00a0Allard et al., 2018). Accordingly, cell length increased with cell volume (Figure 1F). Cable length was greater in diploids (6.3\u00a0\u00b1\u00a00.7 \u00b5m) compared to haploids (4.5\u00a0\u00b1\u00a00.3 \u00b5m), and greater in induced (8.2\u00a0\u00b1\u00a00.4 \u00b5m) compared to uninduced (4.3\u00a0\u00b1\u00a00.1 \u00b5m) cdc28-13ts cells (Figure 1G). However, the distribution of cable lengths for all strains collapsed when we divided the lengths of cables by the lengths of the cells in which they grew (Figure 1H and I). These results strongly suggest that cables grow to a length that matches cell length.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013D) Representative images of haploid (A), diploid (B), uninduced cdc28-13ts (C), and induced cdc28-13ts (D) cells fixed and stained with labeled-phalloidin. Lengths of single actin cables are indicated (dashed lines) in maximum intensity projections (left, color) and single Z planes (right, inverted). Scale bar, 2 \u00b5m. (E\u2013F) Mother cell volume (E) and length (F) measured in three independent experiments (\u226530 cells/strain). Each data point is from an individual cell. Larger symbols represent the mean from each experiment. (G\u2013H) Cable length (G) and ratio of cable length/cell length (H) measured from the same cells as in E and F (\u2265200 cables/strain). Each data point represents an individual cable. Larger symbols represent the mean from each experiment. Error bars, 95% confidence intervals. Statistical significance determined by students t-test. Significant differences (p\u22640.05) indicated for comparisons with haploid (\u2018a\u2019), diploid (\u2018b\u2019), uninduced cdc28-13ts (\u2018c\u2019), and induced cdc28-13ts (\u2018d\u2019). Complete statistical results in Figure 1\u2014source data 1. (I) Probability density functions for ratios in H. (J\u2013K) Cable lengths plotted against mother cell length (J) or volume (K) on double-logarithmic plots and fit using the power-law. Hypothetical isometric scaling (dashed line) is compared to experimentally measured scaling exponent (solid line).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative images uninduced cdc28-13ts (left), and induced cdc28-13ts (right) cells fixed and stained with labeled-phalloidin. Lengths of all actin cables measured in each are indicated (yellow line). Scale bar, 2 \u00b5m. (B\u2013C) Changes in mother cell length (B) and cell volume (C) of cdc28-13ts cells after growth at the restrictive temperature for the indicated times (\u226520 cells/strain). Dashed line indicates results from linear regression. (C\u2013D) End-to-end cable distance (C) and length/distance, or tortuosity (D) measured in three independent experiments (\u2265200 cables/strain). Each data point represents an individual cable. Larger symbols, mean from each experiment. Error bars, 95% confidence intervals. Statistical significance determined by students t-test. Significant differences (p\u22640.05) indicated for comparisons with haploid (\u2018a\u2019), diploid (\u2018b\u2019), uninduced cdc28-13ts (\u2018c\u2019), and induced cdc28-13ts (\u2018d\u2019). Complete statistical results in Figure 1\u2014source data 1. (E) Cable lengths plotted against mother width on a double-logarithmic plot, and fit using the power-law. This analysis indicated that scaling between cable length and cell width is hypoallometric ($a_{W}=0.77\\pm0.03,R^{2}=0.40)$, in contrast with the observed isometric scaling between cell length and cable length (Figure 1J) Hypothetical isometric scaling (dashed line) is compared to experimentally\u00a0measured scaling exponent (solid line). (F\u2013H) Binned data (black squares, mean\u00a0\u00b1\u00a0standard deviation) from Figure 1J and K and E.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative images of uninduced cdc28-13ts cells fixed and stained with labeled-phalloidin. The aspect ratio for each cell is indicated, and example actin cables that reach the rear of the mother cell are highlighted (yellow arrow). Colored bars beneath each image indicate the corresponding bin used for subsequent analyses. Scale bar, 2 \u00b5m. (B) Probability density functions for the aspect ratios of cells within each bin. (C) Probability density functions for the ratio of average cable length/cell length for each bin. Aspect ratio (B) and ratio of average cable length/cell length (C) measured from the same cells and cables as in Figure 1. (D\u2013G) Average length of cables in a cell plotted against cell length, for each cell in each bin. Data are presented on double-logarithmic plots and fit using the power-law. Experimentally measured scaling exponent is indicated (solid line).\n\nNext, we used a power law analysis to rigorously test the scaling relationships of cable length with cell length and volume (Figure 1J and K). Generally, scaling relations can be described by the power law\u00a0$y=Ax^{a}$, where $a$\u00a0is the scaling exponent that reflects the relationship between the two measured quantities, $x$\u00a0and $y$\u00a0(Reber and Goehring, 2015). This analysis revealed isometric scaling ($a_{L}=0.91\\pm0.03,R^{2}=0.50$)\u00a0between cable length and cell length (Figure 1J), whereas scaling between cable length and cell volume was hypoallometric ($a_{V}=0.36\\pm0.01,R^{2}=0.46$)\u00a0(Figure 1K).\n\nTo uncouple cell length from cell volume, we compared the length of cables in cells of different morphology. We computed the aspect ratio (the ratio of cell length to cell width) for the same cells analyzed above. This revealed that while some cells had nearly spherical morphologies, others had highly elongated morphologies (Figure 1\u2014figure supplement 2A and B). Despite these differences in cell shape, the ratio of cable length to cell length, and the scaling exponents were similar for all cells (Figure 1\u2014figure supplement 2C\u2013G). Therefore, in cells of vastly different size and shape, the cable length directly scales with cell length, rather than with other dimensions such as cell surface area or volume.\n\nWe considered two distinct models to explain the control of cable length. In both models, the length of a cable is determined by competing rates of actin assembly\u00a0$(k_{+})$ at the barbed ends of cables and disassembly\u00a0$(k_{-})$ at the pointed ends of cables (Figure 2A and B). Therefore, at any given time, the extension rate of a cable is determined by the difference in its assembly and disassembly rates (Figure 2B). In the boundary-sensing model, the assembly rate is greater than the disassembly rate until the extending cable physically encounters the rear of the cell, causing one or both rates to abruptly change (Figure 2C, and Figure 2\u2014figure supplement 1A;\u00a0Reber and Goehring, 2015). This model predicts that the cable extension rate will be constant until the cable tip encounters the back of the cell. In contrast, the balance-point model requires that either the assembly rate, the disassembly rate, or both rates are length-dependent, and defines steady state cable length as the point at which these two rates are balanced (Figure 2D, and Figure 2\u2014figure supplement 1B;\u00a0Mohapatra et al., 2016). In clear contrast to the boundary-sensing model, this model predicts that the cable extension rate will steadily decrease as the cable lengthens.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig2-v2.jpg)\n\n**Figure 2.:** (A) Actin staining in haploid cell (left) and cable traces (right). (B) Relevant parameters and equation for cable extension, where assembly ($k_{+}$) and disassembly ($k_{-}$) rates change as a function of cable length. Cables are polymerized by formins (orange) from actin monomers (gray), bundled by crosslinkers (blue), and disassembled by factors not shown. Cable extension rate is the difference in assembly and disassembly rates. (C\u2013D) Two models for cable length control. Additional information in Figure 2\u2014figure supplement 1. (E) Maximum intensity projection of haploid cells expressing cable marker (Abp140-GFPEnvy) shown in color (top panels) and inverted gray scale (bottom panels). Yellow circle highlights tip of elongating cable over time. Scale bar, 5 \u00b5m. (F\u2013G) Extension rate (F) and length (G) measured in five independent experiments (n\u00a0= 82 cables). Symbols at each time point represents mean for individual experiment. Solid lines and shading, mean and 95% confidence interval for all five experiments. Dashed yellow lines, predictions of boundary-sensing model in C.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The boundary-sensing model proposes that cable length scales with mother cell length due to the growing tip of the cable physically encountering the rear of the mother cell (cell boundary). In this model, cable assembly and disassembly rates are length-independent until the boundary is reached. As the cable is growing (extending), the assembly rate must be greater than the disassembly rate. When the cable encounters the boundary, there is an abrupt shift in rates to prevent further growth of the cable: the assembly rate rapidly decreases (left panel), the disassembly rate rapidly increases (middle panel), or both rates change (right panel). Based on these changes to the assembly and/or disassembly rates, the boundary-sensing model predicts that the rate of cable extension remains constant until the cable physically encounters the rear of the mother cell, and then it abruptly decreases (Figure 2C). This behavior results in a cable that grows linearly with time until it reaches the boundary (Figure 2C). (B) In contrast, in balance-point model, the assembly rate (left panel), the disassembly rate (middle panel), or both rates (right panel) are length-dependent, and the intersection of these two rates (rate balance) produces a steady-state cable length (dashed line). Therefore, the balance-point model predicts that the cable extension rate will decelerate as a cable grows longer (Figure 2D). In the balance-point model, changes in cable length are expected to be greater during initial time points in a cable\u2019s growth, and gradually decline until the steady-state length is reached (Figure 2D, dashed line). (C) Cartoon of yeast cell with actin cables (gray) extending from formins (orange) at the bud neck. Relevant parameters and mathematical form for the derived balance-point model are indicated, where the change in cable length as a function of time is controlled by the feedback function, $f$\u00a0(additional details in Materials\u00a0and\u00a0methods). (D) Cartoon depiction of a mechanism where actin cable length is scaled with cell length by a constant rate of cable assembly ($k_{+}$), and a variable rate of disassembly ($k_{-}$) controlled by a gradient of depolymerizing activity (red shading). The gradient is highest at the back of the mother cell, which leads to the disassembly rate (red line, lower plot) increasing as the cable lengthens. By this mechanism, the cable length will scale with cell length.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Yeast cells grown to early log-phase were mounted onto 1.2% agarose pads made with synthetic complete media and imaged on a spinning disk confocal microscope. 3D stacks were acquired at 0.3 \u03bcm intervals for approximately half of the cell height with no time delay for 2 min (approximately 0.30\u20130.43 frames per second). Images were processed using custom ImageJ macros to generate maximum intensity projections for each stack and apply a Gaussian blur (sigma\u00a0=\u00a01) to facilitate manual tracking of cable tips from the point where they emerged from the bud neck until they ceased extending. Individual trajectories were analyzed using custom Python scripts to compute the distance of cable tip extension between each frame, the rate of cable extension between each frame, and the total extension distance starting from initial growth at the bud neck. (B) Tracking the entire lifetime of a single cable was made possible by capturing 3D timeseries images in conjunction with our image analysis pipeline. Representative images of a single time point of a cell expressing the cable marker Abp140-GFPEnvy (integrated) show that 2D timeseries images do not have sufficient signal-to-noise ratio for long term cable tracking (upper right panel). Application of a Gaussian blur to the timeseries images helps enable reliable tracking of cables (bottom panels). Scale bar, 5 \u00b5m. (C) Maximum intensity projection of haploid cells expressing a cable marker (Abp140-GFPEnvy) shown in color (top panels) and inverted gray scale (bottom panels). Yellow circle highlights tip of an elongating cable over time. Scale bar, 5 \u00b5m. (D\u2013E) Mean cable extension rates (D) and mean cable lengths (E) for the five independent experiments shown in Figure 2F and G (n\u00a0=\u00a082 cables). Line color indicates the mean of each replicate.\n\nTo directly test the predictions of the two models, we used live imaging to track the tips of cables as they grew from the bud neck into the mother cell (Figure 2E, Video 1, and Figure 2\u2014figure supplement 2A\u2013C). Initially cables extended at 0.36\u00a0\u00b1\u00a00.02 \u00b5m s\u22121, and as they grew longer their extension rates steadily decreased (Figure 2F, Figure 2\u2014figure supplement 2D). Accordingly, we observed greater changes in cable length during earlier phases of cable growth (Figure 2G, Figure 2\u2014figure supplement 2E). Thus, as cables lengthen their growth rate decelerates.\n\n![Video 1.](https://cdn.elifesciences.org/articles/68424/elife-68424-video1.mp4.jpg)\n\n**Video 1.:** Yellow circle highlights tip of an elongating cable over time. Video is played at 7 frames per second and time (seconds) is indicated in the top left corner. Scale bar, 5 \u00b5m.\n\nNote that we detected cables that were very short (<2 \u00b5m) by live imaging, which were not seen in our analysis of fixed cells. We expect that this is because shorter cables extend at a faster rate compared to longer cables and are therefore less prevalent in fixed cell populations.\n\nOur experimental observations above support a balance-point model in which steady state cable length is reached when the assembly and disassembly rates are balanced. In this model, the rate of cable extension at any given time is given by the difference between the assembly and disassembly rates, which we call the feedback function, $f=k_{+}-k_{-}.$\u00a0To account for the observed scaling of cable length with cell length (Figure 1H and I), we assume that $f$\u00a0depends on the cable length ($L_{cable}$) scaled by the cell length ($L_{cell}$), that\u00a0is $fL_{cable},L_{cell}=f(L_{cable}/L_{cell})$. The steady state cable length $(L_{cable}^{*})$ is reached when the feedback function equals zero,\u00a0$f(L_{cable}^{*}/L_{cell})=0$. Therefore, the scale-invariant feedback function leads to the scaling of $L_{cable}^{*}$ with $L_{cell}$ seen in Figure 1J. (Further mathematical details in Materials\u00a0and\u00a0methods.)\n\nSmy1 is a factor implicated in cable length control, and therefore we considered whether it might be required for cable deceleration. It has been reported that cables are longer in smy1\u2206 compared to wildtype cells, and that Smy1 directly inhibits Bnr1-mediated actin assembly (Eskin et al., 2016; Chesarone-Cataldo et al., 2011). Further, Smy1 is transported by myosin along cables to the bud neck where Bnr1 is anchored. Based on these observations, an \u2018antenna mechanism\u2019 has been proposed in which longer cables deliver more Smy1 to slow cable extension and limit cable length (Mohapatra et al., 2015). We confirmed the increase in cable length in smy1\u2206 cells (Figure 3A, and Figure 3\u2014figure supplement 1A and B;\u00a0Eskin et al., 2016), but found that cables continued to decelerate in the absence of Smy1\u00a0(Figure 3B and C). Furthermore, we observed an increase in the initial cable extension rate in smy1\u0394 (0.42\u00a0\u00b1\u00a00.04 \u00b5m s\u22121) compared to wild-type cells (0.35\u00a0\u00b1\u00a00.02 \u00b5m s\u22121) (Figure 3D and E). Interestingly, the initial extension rate in smy1\u0394 cells increased by the same magnitude (1.2-fold\u00a0\u00b1\u00a00.2) as the measured increase in cable length (1.2-fold\u00a0\u00b1\u00a00.1). Thus, Smy1 affects cable length by limiting the initial cable growth rate (Figure 3F) but does not provide the feedback that results in cable deceleration. Importantly, this does not rule out the possibility of other cellular factors acting through an antenna mechanism to control cable growth in a length-dependent manner.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig3-v2.jpg)\n\n**Figure 3.:** All data are from three independent experiments. (A) Cable lengths (\u2265130 cables/strain). Each data point represents an individual cable. Larger symbols, mean from each experiment. Error bars, 95% confidence intervals. Statistical significance determined by students t-test. (B\u2013C) Cable extension rates for wildtype (B) and smy1\u2206 (C) yeast (\u226547 cables/strain). Symbols, mean from each experiment. Solid lines and shading, mean and 95% confidence interval for all experiments. Deceleration rates were derived from the slopes (\u00b195% CI) of the dashed lines, which were determined by linear regression using the first\u00a0~10 s of extension. (D) Average extension rate as a function of cable length. Solid lines and shading, mean and 95% confidence interval for all experiments. Dashed box highlights region of no overlap in confidence intervals. (E) Initial cable extension rate for each strain. Small symbols, individual cables. Larger symbols, mean from each experiment. Error bars, 95% confidence intervals. Statistical significance determined by students t-test. (F) Cartoon comparing cable extension in wildtype and smy1\u2206 cells.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Representative images of fixed haploid wild-type (A) and smy1\u0394 (B) cells stained with fluorescent phalloidin to label F-actin. Actin cables in wildtype cells grow to reach the back of the mother cell and have a relatively straight appearance (yellow arrows in A), whereas cables in smy1\u0394 are abnormally long and have a \u2018wavy\u2019 appearance (yellow arrows in B), in agreement with previous studies (Eskin et al., 2016; Chesarone-Cataldo et al., 2011). Scale bar, 2 \u00b5m.\n\nOur model makes an interesting quantitative prediction for cables that have abnormally fast initial extension rates, such as those measured in smy1\u0394 cells above. Specifically, our model predicts that this increase in initial extension rate will lead to a proportional increase in the initial deceleration (see Equation 7 in Materials\u00a0and\u00a0methods). Thus, the measured 1.2-fold increase in initial extension rate seen in smy1\u2206 cells is expected to lead to a 1.2-fold increase in initial deceleration of cables, shortly after they emerge from the bud neck. Indeed, linear fits to the cable extension rate, as a function of time over the first 10 s (i.e. the first few microns of cable extension), yield, $d_{o}^{smy1\u0394}=-0.018\\pm0.010\\mum/s^{2}$\u00a0and\u00a0$d_{o}^{wt}=-0.015\\pm0.005\\mum/s^{2}$, for smy1\u2206 and wild-type cells, respectively (Figure 3B and C). The ratio of these two, $d_{0}^{smy1\u0394}/d_{0}^{wt}=1.2\\pm0.7$, matches the ratio of the initial extension rates,\u00a0$f0^{smy1\u0394}/f0^{wt}=1.2\\pm0.2$. Therefore, these data lend additional quantitative support for our model.\n\nA key prediction of our balance-point model is that cable extension rates should depend on cell length, that\u00a0is a cable of a given length should grow faster (or slow down more gradually) in longer cells compared to shorter cells (Figure 4A, top). Further, it predicts that the cable extension rate profiles from cells of different lengths will collapse when cable length is normalized to cell length (Figure 4A, bottom; predictions of model derived in Materials and methods). To test these predictions, we compared cable extension dynamics in uninduced and induced cdc28-13ts cells (Figure 4B and C, Figure 4\u2014figure supplement 1A and B, and Videos 2, 3, 4). When cables began to grow, they extended at similar rates in shorter and longer cells (Figure 4\u2014figure supplement 1C). However, as the cables grew longer, they decelerated more gradually in the longer cells (Figure 4D\u2013F). This led to longer cables in longer cells (Figure 4\u2014figure supplement 1D). Linear regression analysis revealed that there is a nearly 2-fold greater initial deceleration in the shorter, uninduced cdc28-13ts cells ($d_{0}^{uninduced}=-0.019\\pm0.005\\mum/s^{2}$) compared to the longer, induced cdc28-13ts cells ($d_{0}^{induced}=-0.010\\pm0.003\\mum/s^{2}$). To determine how deceleration changes with respect to cell length, we compared the ratio of initial deceleration and cell length in induced $(L_{induced}=8.2\\pm0.4\\mum)$\u00a0and uninduced $(L_{uninduced}=4.3\\pm0.1\\mum)$\u00a0cdc28-13ts cells. We found that the initial deceleration rate is inversely proportional to cell length ($d_{0}^{uninduced}/d_{0}^{induced}=2\\pm1$;\u00a0$(L_{uninduced}/L_{induced})^{-1}=1.9\\pm0.1$), consistent with the predictions of our balance-point model (Figure 4D and E and Equation 7 in Materials\u00a0and\u00a0methods). Further, once cable length was normalized to cell length, cables extended with similar dynamics (Figure 4G), as predicted by our model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig4-v2.jpg)\n\n**Figure 4.:** (A) Predictions of balance-point model comparing how cable deceleration\u00a0$(d_{0})$ changes as a function of cable length (top graph) in shorter (green curve) and longer (yellow curve) cells. This difference in the deceleration profiles is eliminated when cable length is normalized to cell length (bottom graph). (B\u2013C) Maximum intensity projections of uninduced (B) and induced cdc28-13ts (C) cells expressing cable marker (Abp140-GFPEnvy). Yellow circle highlights tip of elongating cable over time. Scale bar, 5 \u00b5m. (D\u2013E) Cable extension rates for uninduced (D) and induced cdc28-13ts (E) cells, from at least three independent experiments (\u226557 cables/strain). Symbols and shading, mean and 95% confidence intervals for all experiments. Deceleration rates were derived from the slopes (\u00b195% CI) of the dashed lines, which were determined by linear regression using the first\u00a0~10 s of extension. (F\u2013G) Average extension rates in uninduced and induced cdc28-13ts cells (data from experiments in D and E) plotted as a function of cable length (F), or the ratio of cable length/cell length (G). Solid lines and shading, mean and 95% confidence interval for all experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68424/elife-68424-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) Maximum intensity projections of uninduced (A) and induced cdc28-13ts (B) cells expressing cable marker (Abp140-GFPEnvy) shown in color (top panels) and inverted gray scale (bottom panels). Yellow circle highlights tip of elongating cable over time. Scale bar, 5 \u00b5m. (C) Initial cable extension rate for uninduced (green) and induced cdc28-13ts (yellow) cells. Data are from live-cell imaging experiments as in Figure 4. Small symbols, individual cables. Larger symbols, mean from at least three independent experiments (\u226557 cables/strain). Error bars, 95% confidence intervals. Statistical significance determined by students t-test. (D) Analysis of data from C, showing changes in actin cable length (D) plotted versus extension time. Symbols, mean from each experiment. Solid lines and shading, mean and 95% confidence interval for all experiments.\n\n![Video 2.](https://cdn.elifesciences.org/articles/68424/elife-68424-video2.mp4.jpg)\n\n**Video 2.:** Yellow circle highlights tip of elongating cable over time. Video is played at 7 frames per second and time (s) is indicated in the top left corner. Scale bar, 5 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/68424/elife-68424-video3.mp4.jpg)\n\n**Video 3.:** Yellow circle highlights tip of elongating cable over time. Video is played at 7 frames per second and time (s) is indicated in the top left corner. Scale bar, 5 \u00b5m.\n\n![Video 4.](https://cdn.elifesciences.org/articles/68424/elife-68424-video4.mp4.jpg)\n\n**Video 4.:** Yellow circle highlights tip of elongating cable over time. Video is played at 7 frames per second and time (s) is indicated in the top left corner. Scale bar, 5 \u00b5m.\n\nCollectively, our observations demonstrate that cables grow until their length matches the length of the cell, and that this is achieved by length-dependent deceleration of cable extension. The precise mechanism providing the feedback to enable cable deceleration is not yet clear. One possibility is that it is controlled by a gradient of actin disassembly-promoting activity that is highest at the rear of the cell. Such a gradient could be established by the retrograde transport of disassembly factors on cables, leading to their release at the rear of the cell. This would produce a higher concentration of disassembly factors, and greater disassembly rate for cables, at the back of the cell. An alternative possibility is a reaction-diffusion mechanism, achieved by anchoring an activator of disassembly factors (such as a kinase) at the rear of the cell while having an inhibitor (such as a phosphatase) in the cytosol. This would be similar conceptually to how Ran GTPase gradients form around chromatin (Kalab et al., 2002), although it would require additional features to produce the scaling that we observe (Ben-Zvi et al., 2011). Either of these two mechanisms (retrograde transport or modified reaction-diffusion) has the potential to create a gradient that is shallower in longer cells compared to shorter cells, accounting for the cell-length-sensitive cable deceleration (Figure 2\u2014figure supplement 1D). This mechanism also would allow cables to sense the rear of the cell without requiring physical interactions with that boundary. A third possibility, which is not mutually exclusive with either mechanism above, would be length-dependent inhibition of cable assembly, that\u00a0is an antenna mechanism, albeit one that is dependent on cellular factors other than Smy1 (Mohapatra et al., 2015).\n\nIt has recently been shown for other subcellular structures (e.g. nucleus, spindle, centrosome, and nucleolus) that their sizes scale with cell volume, and this scaling is explained by limiting pool models (Hazel et al., 2013; Good et al., 2013; Weber and Brangwynne, 2015; Decker et al., 2011; Neumann and Nurse, 2007; Lacroix et al., 2018). However, we found that polarized actin cables scale with cell length rather than volume. This length control cannot be explained by a limiting pool mechanism, and instead is explained, both theoretically and experimentally, by a balance-point model. These results reveal a new strategy by which cells solve engineering challenges, enabling them to scale internal structures with the linear dimensions of the cell (Kirschner et al., 2000). Similar principles may underlie the length control of other polarized, linear actin structures, such as filopodia and stereocilia. Further, related strategies may be used to control the growth of radial microtubule arrays that reach the cell periphery (Lacroix et al., 2016; W\u00fchr et al., 2010), and may explain the scaling relationships observed between flagellar length and cell length (Bauer et al., 2021) and between contractile ring diameter and cell diameter (Kukhtevich et al., 2020). Ultimately, the model of size control that we have presented here expands our understanding of the mechanisms used by cells to sense specific aspects of their geometry, including length, surface area, and volume, to assemble structures that scale with these different dimensions (Rieckhoff et al., 2020; Brownlee and Heald, 2019).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>See: Supplementary file 1</td>\n      <td>This paper</td>\n      <td>NCBITaxon:4932</td>\n      <td>Strains maintained in the Goode lab</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 488- phalloidin</td>\n      <td>Life Technologies</td>\n      <td>A12379</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 568-phalloidin</td>\n      <td>Life Technologies</td>\n      <td>A12380</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFA6a-link-GFPEnvy-SpHis5</td>\n      <td>PMID:25612242</td>\n      <td>RRID:Addgene_60782</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFA6a-TRP1</td>\n      <td>PMID:9717241</td>\n      <td>RRID:Addgene_41603</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids and yeast strains\n\nAll strains (see Supplementary file 1) were constructed using standard methods. To integrate a bright GFP variant (GFPEnvy) at the C-terminus of the endogenous ABP140 gene, primers were designed with complementarity to the 3\u2019 end of the GFPEnvy cassette and the C-terminal coding region of ABP140. PCR was used to generate amplicons from the pFA6a-link-GFPEnvy-SpHis5 (Slubowski et al., 2015) template that allow for selection of transformants using media lacking histidine. The parent strains, BGY12 (haploid) and cdc28-13ts, were transformed with PCR products, and transformants were selected by growth on synthetic media lacking histidine. Similarly, smy1\u0394 strains were generated by replacement of SMY1 with the TRP1 auxotrophic marker by designing primers with complementarity to regions 40 base-pairs immediately up-stream and down-stream of the SMY1 coding region (Longtine et al., 1998). Deletion of SMY1 was confirmed by genomic PCR with primers specific to the TRP1 promoter and the 5\u2019UTR region of SMY1. The cdc28-13ts strain was a generous gift from Brian Graziano (UCSF). pFA6a-link-GFPEnvy-SpHis5 was a gift from Linda Huang (UMass Boston) (Addgene plasmid # 60782; http://n2t.net/addgene:60782; RRID:Addgene_60782).\n\n### Induction of cell size changes\n\nTo induce enlargement of mother cells, cdc28-13ts\u00a0cells were grown at the permissive temperature (25\u00b0C) overnight in synthetic complete media (SCM), then 10\u03bcL of overnight culture was diluted into\u00a05mL\u00a0of fresh SCM. Cultures were then shifted to the restrictive temperature (37\u00b0C) for 8 hr (except for the experiments in Figure 1\u2014figure supplement 1B and C, where cultures were also shifted for only 4 hr). After this induction, cells were returned to the permissive temperature (25\u00b0C) for 1 hr of growth to allow cell polarization and bud growth, and then fixed or mounted for live-cell imaging.\n\n### Quantitative analysis of actin cable length and architecture in fixed cells\n\nStrains were grown at 25\u00b0C to mid-log phase (OD600\u00a0~0.3) in yeast extract/peptone/dextrose (YEPD), or were first induced for cell size changes as indicated above. Then cells were fixed in 4.4% formaldehyde for 45 min, washed three times in phosphate-buffered saline (PBS), and stained with Alexa Fluor 488- phalloidin or Alexa Fluor 568-phalloidin (Life Technologies, Grand Island, NY) for\u00a0\u226524 hr at 4\u00b0C. Next, cells were washed three times in PBS and imaged in mounting media (20 mM Tris, pH 8.0, 90% glycerol). 3D stacks were collected at 0.22 \u03bcm intervals on a Zeiss LSM 880 using Airyscan super-resolution imaging equipped with 63\u00a0\u00d7\u00a01.4 Plan-Apochromat Oil objective lens. 3D stacks were acquired for the entire height of the cell. Airyscan image processing was performed using Zen Black software (Carl Zeiss). ImageJ was used to generate inverted greyscale and maximum projection images for analysis. Next ImageJ was used to manually trace each individual cable, from the bud neck to their terminus in the mother cell. The 3D stack was used to differentiate between cables that overlapped and to precisely determine both the origins and distal tips of the cables. For length analysis, we included every discernable cable in the cell that extended from the bud neck to some endpoint in the mother cell; the only cables excluded were the minority that became closely intertwined with other cables making it impossible to resolve their individual lengths. Then the xy-coordinates for each cable trace were exported into custom written Python scripts to compute cable length. Cell length was determined by measuring the distance from the bud neck to the distal end of the mother cell. Cell width was determined by measuring the widest point perpendicular to the cell length axis. Cell height was determined from the number of slices in the 3D stack and the interval size between slices. These values were recorded and imported into custom Python scripts to compute the ratio of cable length to mother cell length, the cell volume (using the ellipsoid formula), the aspect ratio (cell length/cell width), and to fit the scaling exponent for cable length versus mother cell length, width, and volume. For cell shape analysis, cells were binned based on their aspect ratio rounded to the nearest quarter value.\n\n### Live-cell imaging and quantitative analysis of actin cable extension rate\n\nStrains were grown at 25\u00b0C to mid-log phase (OD600\u00a0~0.3) in either YEPD, or were first induced for cell size changes as indicated above, then harvested by centrifugation (30 s, 9000 x g). Media was decanted and cells were resuspended in 50 \u03bcL fresh media. Cells (~5 \u03bcL) were mounted onto 1.2% agarose pads made with SCM, and images were acquired on a Nikon i-E upright confocal microscope equipped with a CSU-W1 spinning-disk head (Yokogawa, Tokyo, Japan) and an Andor Ixon 897 Ultra CCD camera controlled by Nikon NIS-Elements Advanced Research software using a 100x, 1.45 NA objective. 3D stacks were acquired at 0.3 \u03bcm intervals for approximately half of the cell height with no time delay for 2 min (approximately 0.30\u20130.43 frames per second). Images were processed in ImageJ by generating maximum intensity projections of each stack and applying a Gaussian blur (sigma\u00a0=\u00a01) to facilitate manual tracking of cable tips. Cables included for analysis were those whose tips could be resolved in every frame, from when they emerged from the bud neck and until they stopped extending. Cables that could not be reliably tracked (e.g. dim cables, overlapping cables that prevented tracking of their tips, or cables that grew into regions not captured in the 3D stack) were excluded from the analysis. Individual cable trajectories were imported into custom Python scripts to compute the distance the cable tip travelled between each frame, the rate of extension between each frame, and the total distance travelled. The boundary-sensing model prediction depicted in Figure 2F was determined by plotting the mean initial cable extension rate as a function of time. The boundary-sensing model prediction depicted in Figure 2G was determined by using linear regression to measure the slope from the first\u00a0~10 s of cable extension. Initial cable extension rates (Figure 3C and Figure 4\u2014figure supplement 1C) were determined by computing the extension rate measured during the first time interval.\n\n### Mathematics of the balance point model\n\nThe rate of change of the cable length with time is given by the difference between the assembly ($k_{+}$) and disassembly ($k_{-}$) rates,\n\n$$\n\\frac{dL_{cable}}{dt}=k_{+}(L_{cable},L_{cell})\u2212k_{\u2212}(L_{cable},L_{cell}).\n$$\n\nwhere we have made explicit the possibility that one or both rates depend on the length of the extending cable ($L_{cable}$) and the cell length ($L_{cell}$). The steady state length $L_{cable}^{*}$ is the cable length at which the assembly and disassembly rates are the same.\n\nTo account for the scaling of the steady state length with the cell length (as observed in Figure 1H,I and J), we make an additional assumption, namely that the feedback function, $f\u2261k_{+}-k_{-}$, which determines the rate of cable extension, is a function of the ratio of the cable length to the cell length, that\u00a0is\u00a0$fL_{cable},L_{cell}=f(L_{cable}/L_{cell}).$\u00a0Thus, our mathematical model of cable length control is described by the differential equation:\n\n$$\n\\frac{dL_{cable}}{dt}=f(L_{cable}/L_{cell}),\n$$\n\nwhich is graphically summarized in Figure 2\u2014figure supplement 1C.\n\nAt the molecular scale, this feedback could be accomplished with a constant rate of cable assembly and a variable rate of disassembly controlled by a gradient of depolymerizing activity that is highest at the back of the cell; see Figure 2\u2014figure supplement 1C. In this mechanism, as the cable lengthens its distal end is subject to increasingly stronger depolymerizing activity. Further, the profile or decay-length of the depolymerizing gradient needs to scale with cell length. Such scaling of a cellular gradient with the linear distance between the two poles of the cell has been observed for the protein Bicoid in different size embryos, from different species of flies (Gregor et al., 2005). Other experimental observations and theoretical models of such scale-invariant gradients are reviewed in Ben-Zvi et al., 2011.\n\nFigure 4F and G are a direct test of our model. In Figure 4F, we observe that the cable extension rate is dependent on cell length, consistent with Equation 1. In Figure 4G, we see that the two feedback functions, from cells of different size, collapse to a single function when the cable lengths are scaled by the cell length.\n\nThe scaling property of the feedback function immediately leads to scaling of steady state cable length with cell length. Namely, in steady state, the right-hand side of Equation 1 is zero, which implies\u00a0$f(L_{cable}^{*}/L_{cell})=0$. If the zero of the feedback function is $x^{*}$\u00a0(i.e.,$fx^{*}=0$), then the steady state length\u00a0$L_{cable}^{*}=x^{*}L_{cell}$, which is the scaling relation we observe in Figure 1H and J between the steady state length and the cell length.\n\nThe scaling property of the feedback function also makes a prediction for the initial rate of cable extension in cells of different size. Namely, for small cable lengths, when\u00a0$L_{cable}\u226aL_{cell}$, we can expand Equation 2 into a Taylor series\n\n$$\n\\frac{dL_{cable}}{dt}=f(\\frac{L_{cable}}{L_{cell}})\u2248f(0)+f^{\u2032}(0)\\frac{L_{cable}}{L_{cell}},\n$$\n\nwhich states that the initial cable extension decreases linearly with the cable length (since $f^{'}0$\u00a0is negative) and is inversely proportional to cell length,\u00a0$L_{cell}$.\n\nEquation 3, with the initial condition $L_{cable}t=0=0$, can be solved for the cable length as a function of time,\n\n$$\nL_{cable}(t)=L_{cell}\\frac{f(0)}{f^{\u2032}(0)}[e^{\\frac{f^{\u2032}(0)}{L_{cell}}t}\u22121],\n$$\n\nwhich in turn yields, by differentiation, an exponentially decreasing in time extension rate:\n\n$$\n\\frac{dL_{cable}}{dt}=f(0)e^{\\frac{f^{\u2032}(0)}{L_{cell}}t}.\n$$\n\nSince Equations 4 and 5 only hold at early times when the cable length is much smaller than the cell length (roughly, first 10 s of cable extension; see Figure 2G), we can further simplify Equation 5 by expanding it into a Taylor series:\n\n$$\n\\frac{dL_{cable}}{dt}=f(0)+\\frac{f(0)f^{\u2032}(0)}{L_{cell}}t.\n$$\n\nEquation 6 makes very specific predictions about the initial deceleration of cable extension, in particular our model (Equation 2) predicts that the initial deceleration\n\n$$\nd_{0}=\\frac{d^{2}L_{cable}}{dt^{2}}|_{t=0}=\\frac{f(0)f^{\u2032}(0)}{L_{cell}}\n$$\n\nscales inversely with the cell length, and proportionally with initial cable extension rate. Indeed, these predictions are supported in two independent experimental tests of this model. Our analysis of smy1\u0394 cells indicates that increasing\u00a0$f0$,\u00a0while $f'0$\u00a0and $L_{cell}$ are fixed, leads to a proportional increase in initial deceleration rate. Additionally, our analysis of induced and uninduced cdc28-13ts cells, where $L_{cell}$ increases ~2-fold, while $f0$\u00a0and $f'0$\u00a0are fixed, leads to a two\u00a0fold difference in initial deceleration.\n\nFinally, our model also makes a qualitative prediction about the probability distribution of cable lengths at steady state. Namely, the feedback function near the steady state cable length, $L_{cable}^{*}=x^{*}L_{cell}$\u00a0can be Taylor expanded to\n\n$$\n\\frac{dL_{cable}}{dt}\u2248f(x^{\u2217})+f^{\u2032}(x^{\u2217})\\frac{L_{cable}\u2212L_{cable}^{\u2217}}{L_{cell}}=f^{\u2032}(x^{\u2217})\\frac{L_{cable}\u2212L_{cable}^{\u2217}}{L_{cell}},\n$$\n\nwhich shows that the strength of the feedback diminishes with cell length. This in turn implies that the steady state fluctuations of cable length will be larger in longer cells, which is consistent with data in Figure 1G. It is important to note that the above arguments pertain to cable length fluctuations over time, whereas the data in Figure 1G show cell-to-cell fluctuations in cable length, which could be influenced by cell-to-cell heterogeneity in some of the factors that affect cable assembly. Further experiments that carefully delineate between different sources of cable length fluctuations could provide more detailed tests of our model.\n\n### Data and materials availability\n\nData are available in the main text or in the supplementary material. All images (McInally et al., 2021b) and source code (McInally, 2021a) are archived at Zenodo.\n",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "60061a4b-1e75-450a-af02-97d5a5be1b09",
+      "submission_id": "d99e34d3-6707-4da2-a4e6-3bbef5d298d1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mohan K Balasubramanian, University of Warwick United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68424.sa1](https://doi.org/10.7554/eLife.68424.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript will be of interest to researchers in the fields of cell size control and the cytoskeleton. A combination of modelling and experimental data show that actin cables, which extend in budding yeast cells from the bud tip and bud neck, display an average length similar to the length of the cell, likely due to progressive decrease in their extension rate up to cell length. The distinct scaling relationship with cell length rather than volume may be a new paradigm that drives new investigations in related phenomena in other organisms.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Scaling of subcellular structures with cell length through decelerated growth\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Arjun Raj (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. The vast majority of points raised can be addressed by rewriting and reanalyzing data already generated. However, a single new experiment has been sought by one of the referees, which I agree will further sharpen the models you are trying to advance.\n\nEssential Revisions:\n\n1. I'm not as familiar with the details of the models, but it seems that a key assumption is that f(Lcable,Lcell) = f(Lcable/Lcell), which allows for the cells to scale length appropriately. Can the authors speculate on potential mechanisms underlying this length scaling? If there is a gradient, what could form it with such a property?\n\n2. The effect of Smy1 KO on initial elongation rate is modest. I think it would be useful to quantify the effect size and put it in the main text. Also, does the degree of increase quantitatively match the increased cable length observed? If not, can the authors speculate on the source of the discrepancy?\n\n3. To uncouple cell length and cell volume, the authors could use mutants with abnormal cell shape (for instance using more ellipsoid or more rounded cells). Many such mutants have been described over the years in S. cerevisiae, so this should be a technically straightforward approach to take. This would allow to probe whether actin cable length indeed correlates better with cell length than the cubic root of volume (or other shape measurements).\n\n4. An indication of how cables were selected for tracking and their number amongst how many cells would help better explain the extension rate measurements and increase confidence in the data. Extending this comparison to other mutants with altered cell shape as suggested above would also strengthen the conclusions.\n\n5. Measurement of cable length and steady state length. The study depends heavily on the ability to measure actin cable length. But how cable length was measured in 3D is not presented with sufficient detail. I think it is essential to show convincing 3D images of cable end identification for the majority of actin cables in a cell. I am suggesting this since cables that reach the cell back may \"turn around\" and/or form bundles or unbundle through interactions with other cables.\n\n6. The extension rate of actin cables that grow from the bud neck to the cell back is shown in movies and quantified in the figures. However, it's not clear if these cables eventually *stop* elongating. For example, in Figure 4D the extension rate does not decay to zero at the longest times. That seems to me to be an essential point since I would expect that if one is able to measure the length of most actin cables in the cell, then one should be able to see most of these cables stop extending.\n\n7. I found the contrast between the two models, \"boundary-sensing\" and \"balance-point\" was not so sharp: the difference is on whether the extension rate decays more or less abruptly with distance along the cell. I also don't see if either of these models as presented is excluded by the data. The authors convincingly show that the cable extension rate decays with cable length, as would be expected from a balance-point model. However, as mentioned in comment 1, it is not clear where the extension rate decays to zero in graphs such as Figure 1F, 3B, 4D. If cable elongation ends abruptly at the longest time in these graphs, then this would indicate a boundary-sensing mechanism (so overall a combination/intermediate model).\n\n8. I feel that the mechanism by which the actin cable system reaches a steady state needs to be clarified. We see a few cables that start from the bud neck and grow to the whole cell. Is this typical or are these rare cases? If rare, are they still representative? Do cables disappear to allow for new cable growth? Such processes change cable length so they are linked to the central theme of cable length regulation.\n\n9. There is a lack of discussion and experimentation of known regulators of actin assembly and disassembly. Perhaps it's ok to leave the precise mechanism providing the feedback of cable deceleration for future work, however I feel that at least some discussion should be provided. For example, cofilin might sever filaments in age-dependent manner and cofilin-decorated filaments might be prone to breaking when buckled. Myosin motors are also known to regulate the extension rate of cables.\n\n10. The authors don't measure cables shorter than 2 microns in Figure 1G, yet such cables should exist from the movies of cable growth versus time. I wonder if their measurement was biased towards the longest cables. In Figure 1D (cdc28-13 induced) there may be several short cables in addition to the long one. Perhaps a plot of total actin cable intensity vs distance would help.\n\nReviewer #1:\n\nIn this manuscript, the authors evaluate models for length determination of actin cables in yeast. The problem they pose is that actin cables must scale with the length of a cell, but given that length is a one dimensional measure, it cannot use \"limiting pool\" or \"limiting factor\" mechanisms in order to achieve such scaling. They first show that actin cables do indeed scale with cell length over a variety of cell cycle stages and perturbations. They then propose two models: a boundary sensing model and a balance-point model, the latter of which they show to be more consistent with the data. In line with their model, the rate of cable extension scaled with distance scaled by total cell length.\n\nI found this manuscript to be a really nice example of quantitative cell biology. I think the problem of scaling of various cell components is fundamental and of great interest, and this work has framed an interesting example of the 1D scaling required for a linear component (actin cables). The paper is well written, the data is very solid with strong image analysis, and the claims are well supported.\n\nReviewer #2:\n\nThis is an interesting manuscript examining how the length of actin cables is set in budding yeast cells. The authors show that the average length of actin cables from bud neck to the distal pole of the mother cell is very similar to the length of the cell. The cable length appears to scale linearly with cell length in cells of diverse sizes (haploid, diploid, and cells artificially enlarged by a cell-cycle block), but cable length also scales with cell volume (with a power law \u2013 roughly with the cubic root of volume). The authors then propose a couple of possible models that would account for this scaling behaviour and show data that is in agreement with the idea that either assembly or disassembly rates are dependent on cable length, leading to a balance point at length equal that of the cell. The underlying molecular mechanism of this balance-point model is not examined, except for the finding that Smy1, which the authors previously proposed serves to limit cable length in an \"antenna model\" (Mohapatra et al., PLoS Comput Biol 2015), is not involved.\n\nThe correlation between cable length and cell length is very intriguing and suggestive that cell length is the relevant measure used by cells to set the length of their actin cytoskeleton. However, the presented data do not exclude that the relevant measure may be cell volume, with which actin cable length scales with cell volume using a more complex hypoallometric power law. To rigorously test whether cell length rather than cell volume is the relevant parameter, it would be necessary to decouple length from volume and test how actin cables length scales with these measurements.\n\nThe authors propose a balance-point model in which cable assembly and disassembly rates are balanced when the cable has the length of the cell due to either rate being cable length-dependent. They contrast this to a boundary model in which cable growth would abruptly stop when reaching the model cell distal pole. The experimental data to discriminate between these model focuses on measured cable extension rates in WT haploids, and normal-sized and enlarged cdc28-13 mutants. These measurements of actin cable extension by fluorescence microscopy are very challenging, and the authors should be commended for attempting it. However, they also raise uncertainty. Looking at the movies and the time-lapses, there are clearly many actin cables that do not behave as a simple birth at the neck followed by extension towards the opposite cell pole. Some of the tracking is also not certain \u2013 see for instance 17 to 18 s in movie 2: it looks like a big jump to a structure that was actually already present in the first of these two timepoints. This reduces somewhat the confidence in the conclusion that rate extension deceleration scales with cell length.\n\nIn summary, the finding of linear scaling between actin cable length and cell length is interesting, but whether cell length is the relevant parameter for this scaling is not fully established. There is a significant degree of uncertainty associated with the measurements of cable extension. While the current data is in agreement with a model in which cable extension diminishes with cable length, the mechanism of how this may be coupled to cell length is unknown.\n\nReviewer #3:\n\nIn this paper the authors find that the length of yeast actin cables scales with cell length. Cable length is studied using haploid, diploid, and cdc28-13 cells that grow abnormally large. Cable length extension rate is found to decrease with extension distance, at a different rate depending on cell size, supporting a \"balance-point\" mechanism of length regulation. The ratio between the shortest and longest cables in this work is a factor of order 2 (Figure 1F). This factor is significant to make this work interesting in the context of size regulation (though one can also be somewhat skeptical if a factor of 2 is large enough to unambiguously determine scaling mechanisms, given the multitude of actin regulators in cells that can provide such a change). Overall, this is a nicely written paper. However, I have several concerns as described below.\n\n1) Measurement of cable length and steady state length. The study depends heavily on the ability to measure actin cable length. But how cable length was measured in 3D is not presented with sufficient detail. I think it is essential to show convincing 3D images of cable end identification for the majority of actin cables in a cell. I am suggesting this since cables that reach the cell back may \"turn around\" and/or form bundles or unbundle through interactions with other cables.\n\nThe extension rate of actin cables that grow from the bud neck to the cell back is shown in movies and quantified in the figures. However, it's not clear if these cables eventually *stop* elongating. For example, in Figure 4D the extension rate does not decay to zero at the longest times. That seems to me to be an essential point since I would expect that if one is able to measure the length of most actin cables in the cell, then one should be able to see most of these cables stop extending.\n\n2) I found the contrast between the two models, \"boundary-sensing\" and \"balance-point\" was not so sharp: the difference is on whether the extension rate decays more or less abruptly with distance along the cell. I also don't see if either of these models as presented is excluded by the data. The authors convincingly show that the cable extension rate decays with cable length, as would be expected from a balance-point model. However, as mentioned in comment 1, it is not clear where the extension rate decays to zero in graphs such as Figure 1F, 3B, 4D. If cable elongation ends abruptly at the longest time in these graphs, then this would indicate a boundary-sensing mechanism (so overall a combination/intermediate model).\n\n3) I feel that the mechanism by which the actin cable system reaches a steady state needs to be clarified. We see a few cables that start from the bud neck and grow to the whole cell. Is this typical or are these rare cases? If rare, are they still representative? Do cables disappear to allow for new cable growth? Such processes change cable length so they are linked to the central theme of cable length regulation.\n\n4) There is a lack of discussion and experimentation of known regulators of actin assembly and disassembly. Perhaps it's ok to leave the precise mechanism providing the feedback of cable deceleration for future work, however I feel that at least some discussion would need to be provided. For example, cofilin might sever filaments in age-dependent manner and cofilin-decorated filaments might be prone to breaking when buckled. Myosin motors are also known to regulate the extension rate of cables.\n",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dedd4292-8b4c-4e31-9099-2c0523c735d7",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C1",
+      "claim": "Average cable length in wild-type haploid cells is 4.5 \u00b1 0.3 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Average cable length and average cell length were remarkably similar (4.5 \u00b1 0.3 \u00b5m and 4.5 \u00b1 0.2 \u00b5m, respectively), suggesting a scaling relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement from experimental data on cable lengths in fixed cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "d4a9ce63-1353-43f3-8d5f-afe6ffb0b34c",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C2",
+      "claim": "Average cell length in wild-type haploid cells is 4.5 \u00b1 0.2 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Average cable length and average cell length were remarkably similar (4.5 \u00b1 0.3 \u00b5m and 4.5 \u00b1 0.2 \u00b5m, respectively), suggesting a scaling relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement from experimental data on cell lengths in fixed cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "73631003-7701-4978-919c-ece16ffe1996",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C3",
+      "claim": "Cable lengths range from 2.0\u20138.7 \u00b5m in wild-type haploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that there was a wider range in cable lengths (2.0\u20138.7 \u00b5m) compared to cell lengths (3.7\u20135.5 \u00b5m), presumably because cables in fixed cells are at different stages of growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement range from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "6cd40eef-ce92-4025-9f10-48878d8eeb19",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C4",
+      "claim": "Cell lengths range from 3.7\u20135.5 \u00b5m in wild-type haploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that there was a wider range in cable lengths (2.0\u20138.7 \u00b5m) compared to cell lengths (3.7\u20135.5 \u00b5m), presumably because cables in fixed cells are at different stages of growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement range from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "285609cf-9264-4d26-82e1-0f1517e38532",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C5",
+      "claim": "Cables in fixed cells are at different stages of growth, which explains the wider range in cable lengths compared to cell lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that there was a wider range in cable lengths (2.0\u20138.7 \u00b5m) compared to cell lengths (3.7\u20135.5 \u00b5m), presumably because cables in fixed cells are at different stages of growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors provide an interpretation of their data based on the observation of different cable length ranges.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "e9a72e98-7d5a-451d-a51b-67342a243ff3",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C6",
+      "claim": "Cables that grow along the cortex of an ellipsoid shaped cell can exceed the length of the cell while not growing past the back of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, because cables grow along the cortex of an ellipsoid shaped cell, their length can exceed the length of the cell while not growing past the back of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference based on the geometry of cable growth along a curved surface.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "87cc7045-a126-4dfd-a9dc-6f87bcac172c",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C7",
+      "claim": "A cable that grows from the bud neck to the back of the cell is expected to be slightly longer than the direct distance between these two points.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a cable that grows from the bud neck to the back of the cell is expected to be slightly longer than the direct distance between these two points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference based on the geometry of cable growth along a curved surface.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "77b51578-5018-4a53-a52c-3f5ee8df1acf",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C8",
+      "claim": "Diploid mother cells have an ~2-fold increase in volume compared to haploid mother cells (81.8 \u00b1 6.3 \u00b5m\u00b3 versus 44.9 \u00b1 4.7 \u00b5m\u00b3).",
+      "claim_type": "EXPLICIT",
+      "source": "Diploid mother cells had an ~2-fold increase in volume compared to haploid mother cells (81.8 \u00b1 6.3 \u00b5m3 and 44.9 \u00b1 4.7 \u00b5m3, respectively) (Figure 1A,B and E), consistent with previous studies (Jorgensen et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement from experimental data, supported by reference to Figure 1E and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "00d3cfbe-02a4-4c97-9c32-ea94d8bbe7b8",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C9",
+      "claim": "The cdc28-13ts strain exhibits a ~5-fold increase in volume (198.3 \u00b1 5.5 \u00b5m\u00b3 versus 40.9 \u00b1 2.3 \u00b5m\u00b3) after growth at the restrictive temperature for 8 hr followed by 1 hr at the permissive temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this strain displayed a ~ 5-fold increase in volume (198.3 \u00b1 5.5 \u00b5m3 versus 40.9 \u00b1 2.3 \u00b5m3) after growth at the restrictive temperature (37\u00b0C) for 8 hr, followed by 1 hr of growth at the permissive temperature (25\u00b0C) to allow cell polarization and bud growth (Figure 1C,D and E; and Figure 1\u2014figure supplement 1B and C; Allard et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement from experimental data, supported by reference to figures and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "5a601e20-7d85-49bc-b3d5-f1feffd8d8df",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C10",
+      "claim": "Cell length increases with cell volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, cell length increased with cell volume (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated relationship supported by reference to Figure 1F showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "b5ff801d-0070-42ac-b114-3971dcd8460c",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C11",
+      "claim": "Cable length is greater in diploids (6.3 \u00b1 0.7 \u00b5m) compared to haploids (4.5 \u00b1 0.3 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "Cable length was greater in diploids (6.3 \u00b1 0.7 \u00b5m) compared to haploids (4.5 \u00b1 0.3 \u00b5m), and greater in induced (8.2 \u00b1 0.4 \u00b5m) compared to uninduced (4.3 \u00b1 0.1 \u00b5m) cdc28-13ts cells (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement from experimental data, supported by reference to Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "24c9e521-29cf-4ab0-9c52-df3501bd704c",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C12",
+      "claim": "Cable length is greater in induced cdc28-13ts cells (8.2 \u00b1 0.4 \u00b5m) compared to uninduced cdc28-13ts cells (4.3 \u00b1 0.1 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "Cable length was greater in diploids (6.3 \u00b1 0.7 \u00b5m) compared to haploids (4.5 \u00b1 0.3 \u00b5m), and greater in induced (8.2 \u00b1 0.4 \u00b5m) compared to uninduced (4.3 \u00b1 0.1 \u00b5m) cdc28-13ts cells (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement from experimental data, supported by reference to Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "bf26d889-ea11-4ed7-a569-5c9b7b768ffe",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C13",
+      "claim": "The distribution of cable lengths for all strains collapses when cable lengths are divided by the lengths of the cells in which they grew.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distribution of cable lengths for all strains collapsed when we divided the lengths of cables by the lengths of the cells in which they grew (Figure 1H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from data analysis, supported by reference to Figures 1H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "559f162e-ae23-409b-b3d1-4853138e188b",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C14",
+      "claim": "Cables grow to a length that matches cell length.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that cables grow to a length that matches cell length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the collapsed distribution of cable length/cell length ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "5407aaf7-8fea-4d7a-ad37-f8aabb71da2d",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C17",
+      "claim": "The ratio of cable length to cell length and the scaling exponents are similar for cells of different morphologies (different aspect ratios).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these differences in cell shape, the ratio of cable length to cell length, and the scaling exponents were similar for all cells (Figure 1\u2014figure supplement 2C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated observation from analysis of cells with different aspect ratios, supported by Figure 1\u2014figure supplement 2C\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "0c046e0c-2353-4035-b30f-e8bf67ad32ee",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C18",
+      "claim": "In cells of vastly different size and shape, cable length directly scales with cell length rather than with cell surface area or volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in cells of vastly different size and shape, the cable length directly scales with cell length, rather than with other dimensions such as cell surface area or volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the analysis of cells with different aspect ratios showing consistent scaling with length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "8ecb260e-daff-4f16-b33d-3960499eda32",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C19",
+      "claim": "Initially, cables extend at 0.36 \u00b1 0.02 \u00b5m s\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially cables extended at 0.36 \u00b1 0.02 \u00b5m s\u22121, and as they grew longer their extension rates steadily decreased (Figure 2F, Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement from live imaging experiments, supported by Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "a261300c-c05a-4d2d-98f9-6e9fe1822dff",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C20",
+      "claim": "As cables grow longer, their extension rates steadily decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially cables extended at 0.36 \u00b1 0.02 \u00b5m s\u22121, and as they grew longer their extension rates steadily decreased (Figure 2F, Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from live imaging experiments, supported by Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "4b859f6f-6430-437d-affc-0036f79fb7d4",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C21",
+      "claim": "Greater changes in cable length occur during earlier phases of cable growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we observed greater changes in cable length during earlier phases of cable growth (Figure 2G, Figure 2\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from live imaging experiments, supported by Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "5a986a0b-de72-4866-8b77-2c89e63d2b10",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C22",
+      "claim": "Cables decelerate as they lengthen.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as cables lengthen their growth rate decelerates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observation that extension rates decrease as cables grow longer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "15243fb9-f382-4bb3-ad46-0133c532feef",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C23",
+      "claim": "Very short cables (<2 \u00b5m) detected by live imaging were not seen in analysis of fixed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that we detected cables that were very short (<2 \u00b5m) by live imaging, which were not seen in our analysis of fixed cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation comparing live imaging and fixed cell data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "5db16b11-3d5f-43da-b304-fe237424b745",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C24",
+      "claim": "Shorter cables extend at a faster rate compared to longer cables and are therefore less prevalent in fixed cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that this is because shorter cables extend at a faster rate compared to longer cables and are therefore less prevalent in fixed cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation provided by authors for why short cables are not seen in fixed cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "94799cbc-efcf-4150-b6c8-4ffebb449c9d",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C25",
+      "claim": "Cables are longer in smy1\u2206 compared to wildtype cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the increase in cable length in smy1\u2206 cells (Figure 3A, and Figure 3\u2014figure supplement 1A and B; Eskin et al., 2016), but found that cables continued to decelerate in the absence of Smy1 (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated observation from experimental data, supported by Figure 3A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "09adb8f3-cc5e-4edd-bd39-222fda775856",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C26",
+      "claim": "Cables continue to decelerate in the absence of Smy1.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the increase in cable length in smy1\u2206 cells (Figure 3A, and Figure 3\u2014figure supplement 1A and B; Eskin et al., 2016), but found that cables continued to decelerate in the absence of Smy1 (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from live imaging experiments, supported by Figures 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "5327404b-8fcc-4d9d-8c8e-60b27aecc578",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C27",
+      "claim": "The initial cable extension rate in smy1\u0394 cells (0.42 \u00b1 0.04 \u00b5m s\u207b\u00b9) is increased compared to wild-type cells (0.35 \u00b1 0.02 \u00b5m s\u207b\u00b9).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed an increase in the initial cable extension rate in smy1\u0394 (0.42 \u00b1 0.04 \u00b5m s\u22121) compared to wild-type cells (0.35 \u00b1 0.02 \u00b5m s\u22121) (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated measurement from live imaging experiments, supported by Figures 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "d7ada942-e9b1-4570-8f36-a181c026ba3d",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C28",
+      "claim": "The initial extension rate in smy1\u0394 cells increases by 1.2-fold \u00b1 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the initial extension rate in smy1\u0394 cells increased by the same magnitude (1.2-fold \u00b1 0.2) as the measured increase in cable length (1.2-fold \u00b1 0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated calculation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "ecc4f8ba-bfd1-4e18-8fe1-d17d93e1e85d",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C29",
+      "claim": "The measured increase in cable length in smy1\u0394 cells is 1.2-fold \u00b1 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the initial extension rate in smy1\u0394 cells increased by the same magnitude (1.2-fold \u00b1 0.2) as the measured increase in cable length (1.2-fold \u00b1 0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated calculation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "8d1d302e-51f2-4830-85ed-a304b4d5b1b7",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C30",
+      "claim": "Smy1 affects cable length by limiting the initial cable growth rate but does not provide the feedback that results in cable deceleration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Smy1 affects cable length by limiting the initial cable growth rate (Figure 3F) but does not provide the feedback that results in cable deceleration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from the observation that cables still decelerate in smy1\u0394 cells despite increased initial extension rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "9a9967f5-cf02-4ebe-b15c-8a17fc2c3446",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C31",
+      "claim": "The 1.2-fold increase in initial extension rate in smy1\u2206 cells leads to a 1.2-fold increase in initial deceleration of cables.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the measured 1.2-fold increase in initial extension rate seen in smy1\u2206 cells is expected to lead to a 1.2-fold increase in initial deceleration of cables, shortly after they emerge from the bud neck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from the balance-point model that is then tested with experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "0d1d7e8d-4ae9-4d58-b595-f99f22485372",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C35",
+      "claim": "Cables begin to grow at similar rates in shorter and longer cdc28-13ts cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When cables began to grow, they extended at similar rates in shorter and longer cells (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from live imaging experiments, supported by Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "2d55efde-112a-445d-b83d-63c0c9418a4f",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C36",
+      "claim": "As cables grow longer, they decelerate more gradually in longer cells compared to shorter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the cables grew longer, they decelerated more gradually in the longer cells (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from live imaging experiments, supported by Figures 4D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "674aefde-96c8-46c0-9366-b0e1349efe1c",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C37",
+      "claim": "Cables are longer in longer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to longer cables in longer cells (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from live imaging experiments, supported by Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "db854529-78a0-424f-9911-851e06249fed",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C41",
+      "claim": "Once cable length is normalized to cell length, cables extend with similar dynamics in cells of different lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, once cable length was normalized to cell length, cables extended with similar dynamics (Figure 4G), as predicted by our model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation from data analysis, supported by Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "d18c3189-23b7-4cbf-8ec5-20df0e0f05f5",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C42",
+      "claim": "Cables grow until their length matches the length of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our observations demonstrate that cables grow until their length matches the length of the cell, and that this is achieved by length-dependent deceleration of cable extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion drawn from multiple experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "39cd9c6e-38bd-46a9-bc1e-3ca633e3e0d7",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C43",
+      "claim": "Cable length matching is achieved by length-dependent deceleration of cable extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our observations demonstrate that cables grow until their length matches the length of the cell, and that this is achieved by length-dependent deceleration of cable extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion drawn from multiple experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "bd92455e-505d-42b4-8d11-daf2be164995",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C44",
+      "claim": "Polarized actin cables in S. cerevisiae are linear bundles of crosslinked actin filaments assembled by formins.",
+      "claim_type": "EXPLICIT",
+      "source": "These cables are linear bundles of crosslinked actin filaments assembled by formins, which extend along the cell cortex and serve as tracks for intracellular transport of cargo from the mother cell to the growing bud, or daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about actin cable structure and function in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "41e515e1-a808-4dfb-8109-8792c608c9bf",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C45",
+      "claim": "Actin cables extend along the cell cortex and serve as tracks for intracellular transport of cargo from the mother cell to the growing bud.",
+      "claim_type": "EXPLICIT",
+      "source": "These cables are linear bundles of crosslinked actin filaments assembled by formins, which extend along the cell cortex and serve as tracks for intracellular transport of cargo from the mother cell to the growing bud, or daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about actin cable function in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "0d4b10b2-0b81-4e1d-bc42-1ad921526f56",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C46",
+      "claim": "Complementary sets of cables are assembled by two formins, Bni1 at the bud tip and Bnr1 at the bud neck.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementary sets of cables are assembled by two formins, Bni1 at the bud tip and Bnr1 at the bud neck (Pruyne et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about formin localization and cable assembly, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "4f7451b6-0d47-41fe-8bf4-cd9124fd9290",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C47",
+      "claim": "Throughout the cell cycle, cables are continuously polymerized, turn over at high rates, and appear to grow until they reach the back of the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the cell cycle, cables are continuously polymerized, turn over at high rates, and appear to grow until they reach the back of the mother cell (Yu et al., 2011; Yang and Pon, 2002; Eskin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about cable dynamics, supported by citations to previous work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "68d1e64e-62f7-49e2-81c5-fea0113f496b",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C48",
+      "claim": "Smy1 directly inhibits Bnr1-mediated actin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that cables are longer in smy1\u2206 compared to wildtype cells, and that Smy1 directly inhibits Bnr1-mediated actin assembly (Eskin et al., 2016; Chesarone-Cataldo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "99229829-0b6f-4746-b2e6-34cbc74ad1e9",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C49",
+      "claim": "Smy1 is transported by myosin along cables to the bud neck where Bnr1 is anchored.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, Smy1 is transported by myosin along cables to the bud neck where Bnr1 is anchored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about Smy1 transport mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "16caf2d6-71ac-4d3e-a288-690505d8f016",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C50",
+      "claim": "An 'antenna mechanism' has been proposed in which longer cables deliver more Smy1 to slow cable extension and limit cable length.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, an 'antenna mechanism' has been proposed in which longer cables deliver more Smy1 to slow cable extension and limit cable length (Mohapatra et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to a previously proposed model, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "13ee53a5-db7b-4512-8922-b6d7acc24908",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C51",
+      "claim": "The size of a cell's internal parts are scaled to its overall size.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of a cell's internal parts are scaled to its overall size. This size-scaling behavior has been demonstrated for organelles as well as large macromolecular assemblies, illustrating the broad importance of adapting the size of internal structures to the geometric dimensions of the cell (Rafelski et al., 2012; Levy and Heald, 2010; Hazel et al., 2013; Good et al., 2013; Weber and Brangwynne, 2015; Greenan et al., 2010; Jorgensen et al., 2007; Decker et al., 2011; Neumann and Nurse, 2007; Lacroix et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General principle supported by multiple citations to previous work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "f29fd624-d6c8-488f-9643-5955afa5ed9d",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C52",
+      "claim": "A limiting pool mechanism maintains a constant concentration of molecular components, enabling subcellular structures to increase in size proportionally with cell volume.",
+      "claim_type": "EXPLICIT",
+      "source": "A popular model of cellular scaling is the limiting pool mechanism, wherein maintaining a constant concentration of molecular components enables the subcellular structure to increase in size proportionally with cell volume (Goehring and Hyman, 2012; de Godoy et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of an established model, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "2053a22c-b389-476d-ae0b-c38c285ce33b",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C53",
+      "claim": "Cells use a limiting pool mechanism to scale the size of their nucleoli, centrosomes, and mitotic spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cells appear to use a limiting pool mechanism to scale the size of their nucleoli, centrosomes, and mitotic spindles (Hazel et al., 2013; Good et al., 2013; Weber and Brangwynne, 2015; Greenan et al., 2010; Decker et al., 2011; Lacroix et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about scaling mechanisms for specific organelles, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "9a854cfc-001f-4bf8-a7e9-347528d48d72",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C54",
+      "claim": "Limiting pool models cannot explain how the size of a linear subcellular structure scales with the linear dimensions of a cell rather than its volume.",
+      "claim_type": "EXPLICIT",
+      "source": "However, limiting pool models cannot explain how the size of a linear subcellular structure scales with the linear dimensions of a cell, rather than its volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about the limitations of limiting pool models based on their mathematical properties.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "ad8fb769-1ddf-46f7-9258-048c9736f1f1",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C55",
+      "claim": "Limiting pool mechanisms predict that a two-fold increase in the radius of a spherical cell will increase the length of a linear structure eight-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, these mechanisms predict that a two fold increase in the radius of a spherical cell will increase the length of a linear structure eight fold, following the eight fold increase in cell volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical prediction based on the properties of limiting pool models and volume scaling.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "a38f2f78-6438-4353-bfa8-baa4f3f30547",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C56",
+      "claim": "The boundary-sensing model predicts that the cable extension rate will be constant until the cable physically encounters the rear of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicts that the cable extension rate will be constant until the cable tip encounters the back of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction derived from the boundary-sensing model as described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "bed3d4fa-18d0-4900-840c-570c23cbf127",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C57",
+      "claim": "The balance-point model predicts that the cable extension rate will steadily decrease as the cable lengthens.",
+      "claim_type": "EXPLICIT",
+      "source": "In clear contrast to the boundary-sensing model, this model predicts that the cable extension rate will steadily decrease as the cable lengthens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction derived from the balance-point model as described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "cc5732b6-aef0-41be-a692-547830b4425a",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C58",
+      "claim": "The balance-point model predicts that cable extension rates should depend on cell length.",
+      "claim_type": "EXPLICIT",
+      "source": "A key prediction of our balance-point model is that cable extension rates should depend on cell length, that is a cable of a given length should grow faster (or slow down more gradually) in longer cells compared to shorter cells (Figure 4A, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Prediction derived from the balance-point model as described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "7d235e1c-ebad-4d2f-a1a1-1da5d94b4d5d",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C59",
+      "claim": "The balance-point model predicts that cable extension rate profiles from cells of different lengths will collapse when cable length is normalized to cell length.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, it predicts that the cable extension rate profiles from cells of different lengths will collapse when cable length is normalized to cell length (Figure 4A, bottom; predictions of model derived in Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Prediction derived from the balance-point model as described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "4c01b326-ef7d-4f99-b040-de6471e1bb60",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C60",
+      "claim": "One possible mechanism for cable deceleration is a gradient of actin disassembly-promoting activity that is highest at the rear of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that it is controlled by a gradient of actin disassembly-promoting activity that is highest at the rear of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism proposed by authors to explain their observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "5e320bde-7489-4423-9dc0-fb8d957b8ac8",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C61",
+      "claim": "A gradient of disassembly factors could be established by retrograde transport of disassembly factors on cables, leading to their release at the rear of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a gradient could be established by the retrograde transport of disassembly factors on cables, leading to their release at the rear of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism proposed by authors to explain how a gradient could be established.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "2b57e894-7170-4c87-b8f4-aafcb6c37d79",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C62",
+      "claim": "An alternative mechanism for establishing a gradient is a reaction-diffusion mechanism with an activator of disassembly factors anchored at the rear of the cell and an inhibitor in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative possibility is a reaction-diffusion mechanism, achieved by anchoring an activator of disassembly factors (such as a kinase) at the rear of the cell while having an inhibitor (such as a phosphatase) in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism proposed by authors as an alternative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "2c57a5bc-0227-45e0-8ce6-4758ebdb79e8",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C63",
+      "claim": "A reaction-diffusion mechanism would be similar conceptually to how Ran GTPase gradients form around chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be similar conceptually to how Ran GTPase gradients form around chromatin (Kalab et al., 2002), although it would require additional features to produce the scaling that we observe (Ben-Zvi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to an established biological mechanism, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "7d61258d-ee67-4b04-bf7a-209ca44d80b2",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C64",
+      "claim": "A third possibility for cable deceleration is length-dependent inhibition of cable assembly (an antenna mechanism) dependent on cellular factors other than Smy1.",
+      "claim_type": "EXPLICIT",
+      "source": "A third possibility, which is not mutually exclusive with either mechanism above, would be length-dependent inhibition of cable assembly, that is an antenna mechanism, albeit one that is dependent on cellular factors other than Smy1 (Mohapatra et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism proposed by authors, with reference to a previous model.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "dc29df46-9f69-42b0-953f-0f4c9c0205d5",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C65",
+      "claim": "For other subcellular structures (nucleus, spindle, centrosome, and nucleolus), their sizes scale with cell volume, explained by limiting pool models.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been shown for other subcellular structures (e.g. nucleus, spindle, centrosome, and nucleolus) that their sizes scale with cell volume, and this scaling is explained by limiting pool models (Hazel et al., 2013; Good et al., 2013; Weber and Brangwynne, 2015; Decker et al., 2011; Neumann and Nurse, 2007; Lacroix et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of established knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "c33a03dd-9d10-45c0-9e46-c47bab83feb4",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C66",
+      "claim": "Polarized actin cables scale with cell length rather than volume.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that polarized actin cables scale with cell length rather than volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "feb48e39-1bca-44a2-a31a-8ab9d93fd8fc",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C67",
+      "claim": "Cable length control cannot be explained by a limiting pool mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This length control cannot be explained by a limiting pool mechanism, and instead is explained, both theoretically and experimentally, by a balance-point model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental data and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "d4524cde-f65e-431a-bf3b-4d1061424105",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C68",
+      "claim": "Cable length control is explained by a balance-point model.",
+      "claim_type": "EXPLICIT",
+      "source": "This length control cannot be explained by a limiting pool mechanism, and instead is explained, both theoretically and experimentally, by a balance-point model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental data and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "691303cc-bb54-4f66-bb04-ec6dbc2fab3a",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C69",
+      "claim": "The results reveal a new strategy by which cells solve engineering challenges, enabling them to scale internal structures with the linear dimensions of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal a new strategy by which cells solve engineering challenges, enabling them to scale internal structures with the linear dimensions of the cell (Kirschner et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the significance of the findings, with citation to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "0537f5df-a971-4a88-a32d-3a0310758f91",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C70",
+      "claim": "Similar principles may underlie the length control of other polarized, linear actin structures, such as filopodia and stereocilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar principles may underlie the length control of other polarized, linear actin structures, such as filopodia and stereocilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the broader applicability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "fa87b82e-3a57-4913-a238-34dd6ab78ccf",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C71",
+      "claim": "Related strategies may be used to control the growth of radial microtubule arrays that reach the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, related strategies may be used to control the growth of radial microtubule arrays that reach the cell periphery (Lacroix et al., 2016; W\u00fchr et al., 2010), and may explain the scaling relationships observed between flagellar length and cell length (Bauer et al., 2021) and between contractile ring diameter and cell diameter (Kukhtevich et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the broader applicability of the findings, with citations to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "f5501068-1cf7-42ab-a39e-e450c9217c57",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C72",
+      "claim": "The balance-point model may explain the scaling relationships observed between flagellar length and cell length.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, related strategies may be used to control the growth of radial microtubule arrays that reach the cell periphery (Lacroix et al., 2016; W\u00fchr et al., 2010), and may explain the scaling relationships observed between flagellar length and cell length (Bauer et al., 2021) and between contractile ring diameter and cell diameter (Kukhtevich et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the broader applicability of the findings, with citation to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "fe99d9b5-091a-4e2c-a15a-c1d452c57e00",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C73",
+      "claim": "The balance-point model may explain the scaling relationships observed between contractile ring diameter and cell diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, related strategies may be used to control the growth of radial microtubule arrays that reach the cell periphery (Lacroix et al., 2016; W\u00fchr et al., 2010), and may explain the scaling relationships observed between flagellar length and cell length (Bauer et al., 2021) and between contractile ring diameter and cell diameter (Kukhtevich et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the broader applicability of the findings, with citation to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "f1b617d5-262e-4b63-a201-1f1f0d24f130",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C75",
+      "claim": "At any given time, the extension rate of a cable is determined by the difference in its assembly and disassembly rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, at any given time, the extension rate of a cable is determined by the difference in its assembly and disassembly rates (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mathematical relationship defined in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "af79ef77-2ac8-4523-bab1-ba518782b4e7",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C76",
+      "claim": "In the boundary-sensing model, the assembly rate is greater than the disassembly rate until the extending cable physically encounters the rear of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In the boundary-sensing model, the assembly rate is greater than the disassembly rate until the extending cable physically encounters the rear of the cell, causing one or both rates to abruptly change (Figure 2C, and Figure 2\u2014figure supplement 1A; Reber and Goehring, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the boundary-sensing model with citation to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "f6fb5b3d-03e7-42e4-b09c-6696031ad4c0",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C77",
+      "claim": "In the balance-point model, either the assembly rate, the disassembly rate, or both rates are length-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the balance-point model requires that either the assembly rate, the disassembly rate, or both rates are length-dependent, and defines steady state cable length as the point at which these two rates are balanced (Figure 2D, and Figure 2\u2014figure supplement 1B; Mohapatra et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the balance-point model with citation to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "21747014-dd39-486c-ac94-9233735dc185",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "claim_id": "C78",
+      "claim": "In the balance-point model, steady state cable length is defined as the point at which assembly and disassembly rates are balanced.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the balance-point model requires that either the assembly rate, the disassembly rate, or both rates are length-dependent, and defines steady state cable length as the point at which these two rates are balanced (Figure 2D, and Figure 2\u2014figure supplement 1B; Mohapatra et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the balance-point model with citation to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In wild-type haploid yeast cells, average cable length (4.5 \u00b1 0.3 \u00b5m) matches average cell length (4.5 \u00b1 0.2 \u00b5m), though cable lengths show a wider range (2.0\u20138.7 \u00b5m) than cell lengths (3.7\u20135.5 \u00b5m). The wider cable length range is attributed to cables being at different growth stages in fixed cells, and cables can exceed cell length due to growth along the curved cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide consistent measurements from fixed cell imaging with appropriate error estimates. The geometric explanation for why cables can exceed cell length (C6-C7) is logically sound. The interpretation that cable length variability reflects different growth stages (C5) is reasonable given the snapshot nature of fixed cell imaging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "3cd331e3-b716-4406-8e87-93381b53945f",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cable length scales with cell length across different cell sizes: diploid cells show ~2-fold volume increase with correspondingly longer cables (6.3 \u00b1 0.7 \u00b5m vs 4.5 \u00b1 0.3 \u00b5m in haploids), and cdc28-13ts mutants show ~5-fold volume increase with even longer cables (8.2 \u00b1 0.4 \u00b5m induced vs 4.3 \u00b1 0.1 \u00b5m uninduced). When cable lengths are normalized by cell length, the distributions collapse across all strains, demonstrating that cables grow to match cell length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14 present a systematic analysis across multiple cell types with quantitative measurements and appropriate statistical comparisons (referenced in Figure 1). The normalization analysis (C13) provides strong evidence for the scaling relationship. The conclusion (C14) is well-supported by the collapsed distributions shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "9416300e-a300-4d39-b47e-176cac3514c6",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cable length scales with cell length rather than cell volume or surface area, as demonstrated by analysis of cells with different aspect ratios showing similar cable length/cell length ratios and scaling exponents despite varying morphologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 provide critical evidence distinguishing length-based from volume-based scaling by analyzing cells with different shapes. The consistency of scaling exponents across different aspect ratios (Figure 1\u2014figure supplement 2C\u2013G) strongly supports that cable length specifically tracks cell length, not other geometric parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "98ce6087-e1e6-47f3-bef3-d21d38cdb8db",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Live imaging reveals that cables initially extend at 0.36 \u00b1 0.02 \u00b5m s\u207b\u00b9 and their extension rates steadily decrease as they lengthen, with greater length changes occurring during early growth phases. Very short cables (<2 \u00b5m) detected by live imaging were not observed in fixed cells, likely because faster-growing short cables are less prevalent in fixed populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 present live imaging data that directly tests model predictions. The measurements are quantitative with error estimates, and the observation of cable deceleration (C20-C22) is supported by multiple figures (2F, 2G). The explanation for why short cables are absent in fixed cells (C23-C24) is logical given the relationship between growth rate and prevalence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "e0366dd2-7a07-43f2-9770-426c51475828",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Deletion of Smy1 increases cable length (1.2-fold \u00b1 0.1) and initial extension rate (0.42 \u00b1 0.04 \u00b5m s\u207b\u00b9 vs 0.35 \u00b1 0.02 \u00b5m s\u207b\u00b9 in wild-type), with the magnitude of increase being identical (1.2-fold \u00b1 0.2). However, cables still decelerate in smy1\u0394 cells, indicating that Smy1 limits initial cable growth rate but does not provide the feedback mechanism for deceleration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 provide quantitative analysis of the Smy1 deletion phenotype with appropriate measurements and error estimates. The key observation that cables still decelerate in smy1\u0394 (C26) rules out Smy1 as the sole feedback mechanism. The quantitative match between fold-increases in initial rate and final length (C28-C29) provides strong support for the balance-point model prediction (C31).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "c540faf7-3dac-438e-9c77-63e45ec9e6e1",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In cdc28-13ts cells of different lengths, cables begin growing at similar rates but decelerate more gradually in longer cells, resulting in longer cables in longer cells. When cable length is normalized to cell length, extension dynamics collapse to similar profiles across different cell lengths, as predicted by the balance-point model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37, C41 provide a critical test of the balance-point model's prediction that deceleration rate depends on cell length. The observation that initial rates are similar (C35) but deceleration differs (C36) is supported by Figures 4D-F. The collapse of normalized extension profiles (C41, Figure 4G) provides strong quantitative support for the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "e4a5f500-9486-431f-8342-7921e5bc60f0",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cables grow until their length matches cell length, achieved through length-dependent deceleration of cable extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 represent the main conclusions synthesizing multiple lines of evidence from fixed cell measurements (C1-C18), live imaging dynamics (C19-C24), genetic perturbations (C25-C31), and cell size manipulations (C35-C37, C41). The conclusion is well-supported by converging evidence from multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "38da52d1-2f53-47ec-a2f4-e60d5edac7c1",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two mathematical models are proposed for cable length control: a boundary-sensing model where assembly exceeds disassembly until the cable encounters the cell rear (predicting constant extension rate), and a balance-point model where rates are length-dependent and steady-state occurs when rates balance (predicting steadily decreasing extension rate).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78, C56-C57 clearly define two alternative models with distinct predictions. The mathematical framework is logically consistent and appropriately cited (Reber and Goehring, 2015; Mohapatra et al., 2016). The models make testable predictions that are subsequently evaluated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "438da036-7ff1-4702-beb7-c671bfee4d78",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The balance-point model predicts that cable extension rates depend on cell length (cables grow faster in longer cells) and that extension rate profiles from different cell lengths will collapse when cable length is normalized to cell length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 state specific, testable predictions derived from the balance-point model. These predictions are mathematically derived in the Materials and methods section and are subsequently tested experimentally (C35-C37, C41), providing a clear hypothesis-testing framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "e29e44dc-0c65-48c7-8580-6729351c2474",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "While cellular scaling is well-established for organelles using limiting pool mechanisms that maintain constant component concentrations and enable volume-proportional growth, such mechanisms cannot explain scaling of linear structures with cell length rather than volume, as they predict eight-fold length increase for two-fold radius increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 accurately summarize established knowledge about cellular scaling with appropriate citations. The mathematical argument (C55) correctly identifies the limitation of limiting pool models for linear scaling. This provides important context for why the observed cable scaling requires a different mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "15fe647e-29eb-4723-968b-3ce92e53ba99",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Actin cables in S. cerevisiae are linear bundles of crosslinked filaments assembled by formins (Bni1 at bud tip, Bnr1 at bud neck) that extend along the cell cortex, serve as tracks for cargo transport, and continuously polymerize and turn over throughout the cell cycle, appearing to grow until reaching the cell rear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 provide accurate background on actin cable biology with appropriate citations to established literature (Pruyne et al., 2004; Yu et al., 2011; Yang and Pon, 2002; Eskin et al., 2016). This contextual information is well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "f454beeb-8309-4ecd-a8d5-9f7d11cd231b",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous work established that Smy1 directly inhibits Bnr1-mediated actin assembly, is transported by myosin along cables to the bud neck, and an 'antenna mechanism' was proposed where longer cables deliver more Smy1 to limit cable length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 accurately cite prior work (Eskin et al., 2016; Chesarone-Cataldo et al., 2011; Mohapatra et al., 2015) establishing the antenna mechanism hypothesis. This provides important context for the Smy1 experiments that test whether this mechanism explains cable deceleration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "ea132180-db0e-4444-a3c2-edb3058b91d1",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While other subcellular structures (nucleus, spindle, centrosome, nucleolus) scale with cell volume via limiting pool mechanisms, polarized actin cables scale with cell length rather than volume, requiring a balance-point model rather than limiting pool mechanism, revealing a new cellular strategy for scaling structures with linear dimensions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 synthesize the main findings in context of prior work with appropriate citations. The contrast between volume-scaling organelles and length-scaling cables is well-supported by the experimental data. The conclusion about a new scaling strategy (C69) is justified by the demonstrated inadequacy of limiting pool models and support for the balance-point model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "879c5be8-c97b-4024-b10e-e3f01d3c42ce",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Three possible mechanisms are proposed for cable deceleration: (1) a gradient of disassembly-promoting activity established by retrograde transport, (2) a reaction-diffusion mechanism with activators at the cell rear and cytosolic inhibitors (similar to Ran gradients but requiring additional scaling features), or (3) length-dependent assembly inhibition via an antenna mechanism involving factors other than Smy1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C64 present speculative mechanisms for the observed deceleration. While these are reasonable hypotheses with appropriate citations (Kalab et al., 2002; Ben-Zvi et al., 2011; Mohapatra et al., 2015), they remain untested. The authors appropriately present these as possibilities rather than conclusions, but no experimental evidence is provided to distinguish among them.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    },
+    {
+      "id": "cf2216aa-507f-4778-9ea9-0d701ff342af",
+      "content_id": "746945b7-a027-492a-8b6a-e52d5817226c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Similar balance-point principles may underlie length control of other polarized linear actin structures (filopodia, stereocilia), radial microtubule arrays, and may explain scaling relationships between flagellar length and cell length, and between contractile ring diameter and cell diameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C73 speculate about broader applicability of the balance-point model to other cellular structures. While these are reasonable hypotheses supported by citations to relevant systems (Lacroix et al., 2016; W\u00fchr et al., 2010; Bauer et al., 2021; Kukhtevich et al., 2020), no experimental evidence is provided to test whether these systems actually use similar mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:46.877293Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dedd4292-8b4c-4e31-9099-2c0523c735d7",
+      "result_id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209"
+    },
+    {
+      "claim_id": "d4a9ce63-1353-43f3-8d5f-afe6ffb0b34c",
+      "result_id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209"
+    },
+    {
+      "claim_id": "73631003-7701-4978-919c-ece16ffe1996",
+      "result_id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209"
+    },
+    {
+      "claim_id": "6cd40eef-ce92-4025-9f10-48878d8eeb19",
+      "result_id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209"
+    },
+    {
+      "claim_id": "285609cf-9264-4d26-82e1-0f1517e38532",
+      "result_id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209"
+    },
+    {
+      "claim_id": "e9a72e98-7d5a-451d-a51b-67342a243ff3",
+      "result_id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209"
+    },
+    {
+      "claim_id": "87cc7045-a126-4dfd-a9dc-6f87bcac172c",
+      "result_id": "cb3bb2eb-e5fe-4eb4-b5ce-89f7fe88a209"
+    },
+    {
+      "claim_id": "77b51578-5018-4a53-a52c-3f5ee8df1acf",
+      "result_id": "3cd331e3-b716-4406-8e87-93381b53945f"
+    },
+    {
+      "claim_id": "00d3cfbe-02a4-4c97-9c32-ea94d8bbe7b8",
+      "result_id": "3cd331e3-b716-4406-8e87-93381b53945f"
+    },
+    {
+      "claim_id": "5a601e20-7d85-49bc-b3d5-f1feffd8d8df",
+      "result_id": "3cd331e3-b716-4406-8e87-93381b53945f"
+    },
+    {
+      "claim_id": "b5ff801d-0070-42ac-b114-3971dcd8460c",
+      "result_id": "3cd331e3-b716-4406-8e87-93381b53945f"
+    },
+    {
+      "claim_id": "24c9e521-29cf-4ab0-9c52-df3501bd704c",
+      "result_id": "3cd331e3-b716-4406-8e87-93381b53945f"
+    },
+    {
+      "claim_id": "bf26d889-ea11-4ed7-a569-5c9b7b768ffe",
+      "result_id": "3cd331e3-b716-4406-8e87-93381b53945f"
+    },
+    {
+      "claim_id": "559f162e-ae23-409b-b3d1-4853138e188b",
+      "result_id": "3cd331e3-b716-4406-8e87-93381b53945f"
+    },
+    {
+      "claim_id": "5407aaf7-8fea-4d7a-ad37-f8aabb71da2d",
+      "result_id": "9416300e-a300-4d39-b47e-176cac3514c6"
+    },
+    {
+      "claim_id": "0c046e0c-2353-4035-b30f-e8bf67ad32ee",
+      "result_id": "9416300e-a300-4d39-b47e-176cac3514c6"
+    },
+    {
+      "claim_id": "8ecb260e-daff-4f16-b33d-3960499eda32",
+      "result_id": "98ce6087-e1e6-47f3-bef3-d21d38cdb8db"
+    },
+    {
+      "claim_id": "a261300c-c05a-4d2d-98f9-6e9fe1822dff",
+      "result_id": "98ce6087-e1e6-47f3-bef3-d21d38cdb8db"
+    },
+    {
+      "claim_id": "4b859f6f-6430-437d-affc-0036f79fb7d4",
+      "result_id": "98ce6087-e1e6-47f3-bef3-d21d38cdb8db"
+    },
+    {
+      "claim_id": "5a986a0b-de72-4866-8b77-2c89e63d2b10",
+      "result_id": "98ce6087-e1e6-47f3-bef3-d21d38cdb8db"
+    },
+    {
+      "claim_id": "15243fb9-f382-4bb3-ad46-0133c532feef",
+      "result_id": "98ce6087-e1e6-47f3-bef3-d21d38cdb8db"
+    },
+    {
+      "claim_id": "5db16b11-3d5f-43da-b304-fe237424b745",
+      "result_id": "98ce6087-e1e6-47f3-bef3-d21d38cdb8db"
+    },
+    {
+      "claim_id": "94799cbc-efcf-4150-b6c8-4ffebb449c9d",
+      "result_id": "e0366dd2-7a07-43f2-9770-426c51475828"
+    },
+    {
+      "claim_id": "09adb8f3-cc5e-4edd-bd39-222fda775856",
+      "result_id": "e0366dd2-7a07-43f2-9770-426c51475828"
+    },
+    {
+      "claim_id": "5327404b-8fcc-4d9d-8c8e-60b27aecc578",
+      "result_id": "e0366dd2-7a07-43f2-9770-426c51475828"
+    },
+    {
+      "claim_id": "d7ada942-e9b1-4570-8f36-a181c026ba3d",
+      "result_id": "e0366dd2-7a07-43f2-9770-426c51475828"
+    },
+    {
+      "claim_id": "ecc4f8ba-bfd1-4e18-8fe1-d17d93e1e85d",
+      "result_id": "e0366dd2-7a07-43f2-9770-426c51475828"
+    },
+    {
+      "claim_id": "8d1d302e-51f2-4830-85ed-a304b4d5b1b7",
+      "result_id": "e0366dd2-7a07-43f2-9770-426c51475828"
+    },
+    {
+      "claim_id": "9a9967f5-cf02-4ebe-b15c-8a17fc2c3446",
+      "result_id": "e0366dd2-7a07-43f2-9770-426c51475828"
+    },
+    {
+      "claim_id": "0d1d7e8d-4ae9-4d58-b595-f99f22485372",
+      "result_id": "c540faf7-3dac-438e-9c77-63e45ec9e6e1"
+    },
+    {
+      "claim_id": "2d55efde-112a-445d-b83d-63c0c9418a4f",
+      "result_id": "c540faf7-3dac-438e-9c77-63e45ec9e6e1"
+    },
+    {
+      "claim_id": "674aefde-96c8-46c0-9366-b0e1349efe1c",
+      "result_id": "c540faf7-3dac-438e-9c77-63e45ec9e6e1"
+    },
+    {
+      "claim_id": "db854529-78a0-424f-9911-851e06249fed",
+      "result_id": "c540faf7-3dac-438e-9c77-63e45ec9e6e1"
+    },
+    {
+      "claim_id": "d18c3189-23b7-4cbf-8ec5-20df0e0f05f5",
+      "result_id": "e4a5f500-9486-431f-8342-7921e5bc60f0"
+    },
+    {
+      "claim_id": "39cd9c6e-38bd-46a9-bc1e-3ca633e3e0d7",
+      "result_id": "e4a5f500-9486-431f-8342-7921e5bc60f0"
+    },
+    {
+      "claim_id": "f1b617d5-262e-4b63-a201-1f1f0d24f130",
+      "result_id": "38da52d1-2f53-47ec-a2f4-e60d5edac7c1"
+    },
+    {
+      "claim_id": "af79ef77-2ac8-4523-bab1-ba518782b4e7",
+      "result_id": "38da52d1-2f53-47ec-a2f4-e60d5edac7c1"
+    },
+    {
+      "claim_id": "f6fb5b3d-03e7-42e4-b09c-6696031ad4c0",
+      "result_id": "38da52d1-2f53-47ec-a2f4-e60d5edac7c1"
+    },
+    {
+      "claim_id": "21747014-dd39-486c-ac94-9233735dc185",
+      "result_id": "38da52d1-2f53-47ec-a2f4-e60d5edac7c1"
+    },
+    {
+      "claim_id": "a38f2f78-6438-4353-bfa8-baa4f3f30547",
+      "result_id": "38da52d1-2f53-47ec-a2f4-e60d5edac7c1"
+    },
+    {
+      "claim_id": "bed3d4fa-18d0-4900-840c-570c23cbf127",
+      "result_id": "38da52d1-2f53-47ec-a2f4-e60d5edac7c1"
+    },
+    {
+      "claim_id": "cc5732b6-aef0-41be-a692-547830b4425a",
+      "result_id": "438da036-7ff1-4702-beb7-c671bfee4d78"
+    },
+    {
+      "claim_id": "7d235e1c-ebad-4d2f-a1a1-1da5d94b4d5d",
+      "result_id": "438da036-7ff1-4702-beb7-c671bfee4d78"
+    },
+    {
+      "claim_id": "13ee53a5-db7b-4512-8922-b6d7acc24908",
+      "result_id": "e29e44dc-0c65-48c7-8580-6729351c2474"
+    },
+    {
+      "claim_id": "f29fd624-d6c8-488f-9643-5955afa5ed9d",
+      "result_id": "e29e44dc-0c65-48c7-8580-6729351c2474"
+    },
+    {
+      "claim_id": "2053a22c-b389-476d-ae0b-c38c285ce33b",
+      "result_id": "e29e44dc-0c65-48c7-8580-6729351c2474"
+    },
+    {
+      "claim_id": "9a854cfc-001f-4bf8-a7e9-347528d48d72",
+      "result_id": "e29e44dc-0c65-48c7-8580-6729351c2474"
+    },
+    {
+      "claim_id": "ad8fb769-1ddf-46f7-9258-048c9736f1f1",
+      "result_id": "e29e44dc-0c65-48c7-8580-6729351c2474"
+    },
+    {
+      "claim_id": "bd92455e-505d-42b4-8d11-daf2be164995",
+      "result_id": "15fe647e-29eb-4723-968b-3ce92e53ba99"
+    },
+    {
+      "claim_id": "41e515e1-a808-4dfb-8109-8792c608c9bf",
+      "result_id": "15fe647e-29eb-4723-968b-3ce92e53ba99"
+    },
+    {
+      "claim_id": "0d4b10b2-0b81-4e1d-bc42-1ad921526f56",
+      "result_id": "15fe647e-29eb-4723-968b-3ce92e53ba99"
+    },
+    {
+      "claim_id": "4f7451b6-0d47-41fe-8bf4-cd9124fd9290",
+      "result_id": "15fe647e-29eb-4723-968b-3ce92e53ba99"
+    },
+    {
+      "claim_id": "68d1e64e-62f7-49e2-81c5-fea0113f496b",
+      "result_id": "f454beeb-8309-4ecd-a8d5-9f7d11cd231b"
+    },
+    {
+      "claim_id": "99229829-0b6f-4746-b2e6-34cbc74ad1e9",
+      "result_id": "f454beeb-8309-4ecd-a8d5-9f7d11cd231b"
+    },
+    {
+      "claim_id": "16caf2d6-71ac-4d3e-a288-690505d8f016",
+      "result_id": "f454beeb-8309-4ecd-a8d5-9f7d11cd231b"
+    },
+    {
+      "claim_id": "dc29df46-9f69-42b0-953f-0f4c9c0205d5",
+      "result_id": "ea132180-db0e-4444-a3c2-edb3058b91d1"
+    },
+    {
+      "claim_id": "c33a03dd-9d10-45c0-9e46-c47bab83feb4",
+      "result_id": "ea132180-db0e-4444-a3c2-edb3058b91d1"
+    },
+    {
+      "claim_id": "feb48e39-1bca-44a2-a31a-8ab9d93fd8fc",
+      "result_id": "ea132180-db0e-4444-a3c2-edb3058b91d1"
+    },
+    {
+      "claim_id": "d4524cde-f65e-431a-bf3b-4d1061424105",
+      "result_id": "ea132180-db0e-4444-a3c2-edb3058b91d1"
+    },
+    {
+      "claim_id": "691303cc-bb54-4f66-bb04-ec6dbc2fab3a",
+      "result_id": "ea132180-db0e-4444-a3c2-edb3058b91d1"
+    },
+    {
+      "claim_id": "4c01b326-ef7d-4f99-b040-de6471e1bb60",
+      "result_id": "879c5be8-c97b-4024-b10e-e3f01d3c42ce"
+    },
+    {
+      "claim_id": "5e320bde-7489-4423-9dc0-fb8d957b8ac8",
+      "result_id": "879c5be8-c97b-4024-b10e-e3f01d3c42ce"
+    },
+    {
+      "claim_id": "2b57e894-7170-4c87-b8f4-aafcb6c37d79",
+      "result_id": "879c5be8-c97b-4024-b10e-e3f01d3c42ce"
+    },
+    {
+      "claim_id": "2c57a5bc-0227-45e0-8ce6-4758ebdb79e8",
+      "result_id": "879c5be8-c97b-4024-b10e-e3f01d3c42ce"
+    },
+    {
+      "claim_id": "7d61258d-ee67-4b04-bf7a-209ca44d80b2",
+      "result_id": "879c5be8-c97b-4024-b10e-e3f01d3c42ce"
+    },
+    {
+      "claim_id": "0537f5df-a971-4a88-a32d-3a0310758f91",
+      "result_id": "cf2216aa-507f-4778-9ea9-0d701ff342af"
+    },
+    {
+      "claim_id": "fa87b82e-3a57-4913-a238-34dd6ab78ccf",
+      "result_id": "cf2216aa-507f-4778-9ea9-0d701ff342af"
+    },
+    {
+      "claim_id": "f5501068-1cf7-42ab-a39e-e450c9217c57",
+      "result_id": "cf2216aa-507f-4778-9ea9-0d701ff342af"
+    },
+    {
+      "claim_id": "fe99d9b5-091a-4e2c-a15a-c1d452c57e00",
+      "result_id": "cf2216aa-507f-4778-9ea9-0d701ff342af"
+    }
+  ],
+  "comparisons": []
+}

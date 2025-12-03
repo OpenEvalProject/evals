@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study cohort comprised 482,914 Danish patients (60.4% female) hospitalized between 2006-2018 with ABO/RhD blood group determination, covering ~45% of the Danish population. The cohort had wide age distribution (birth years 1901-2015), median follow-up of 40.8 years, and blood group distribution similar to a reference population of 2.2 million Danes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C108 provide comprehensive descriptive statistics of the cohort that are internally consistent and well-documented in Table 1. The cohort characteristics (size, demographics, blood group distribution, follow-up time) are clearly stated with appropriate summary statistics and match between text and tabular data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C42",
+      "C43"
+    ],
+    "result": "After FDR adjustment for multiple testing across 1,312 phecodes, 101 statistically significant associations were found for ABO blood groups (50 for A, 38 for B, 11 for AB, 53 for O) and 28 for RhD blood group. ABO groups showed 75 positive and 67 inverse associations spanning cardiovascular, digestive, infectious, metabolic, and musculoskeletal diseases. RhD associations included cancers, infectious diseases, and pregnancy complications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C43 report the primary findings with appropriate multiple testing correction (FDR, accounting for 5 blood groups \u00d7 1312 phecodes). The counts of significant associations are clearly stated and disease categories are well-documented in Table 2 and Figures 2-6. The statistical approach using quasi-Poisson regression with appropriate adjustments (C45-C55) supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study used log-linear quasi-Poisson regression to estimate incidence rate ratios for each ABO blood group relative to all other ABO groups (not just O as reference), utilizing the phecode disease classification system specifically developed for disease-wide analyses. Models were adjusted for sex, birth year, attained age (both with restricted cubic splines), and mutual adjustment between ABO and RhD systems, with FDR correction for 6,560 tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C75 describe a methodologically sound analytical approach. The use of each blood group vs. all others (C38) is a valid alternative to the traditional O-reference approach. The phecode system (C73-C75) is appropriately cited and designed for phenome-wide analyses. Statistical adjustments (C45-C55) are appropriate for the retrospective cohort design with proper control for confounders and overdispersion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C40",
+      "C44",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C93"
+    ],
+    "result": "Age at first diagnosis analyses found only a few statistically significant associations: blood group B with later viral infection diagnosis, blood group O with later phlebitis/thrombophlebitis diagnosis, and RhD-positive with later tonsillitis diagnosis. The authors conclude blood group involvement in disease onset timing is marginal, though they acknowledge the linearity assumption may not hold for all diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21-C93 report limited findings for age at diagnosis (Table 3 shows only 5 significant associations). However, the analytical approach assumed linear relationships (C71) which the authors acknowledge may be inappropriate (C72). The negative findings could reflect either true lack of association or methodological limitations. The conclusion of 'marginal involvement' (C70) is reasonable but uncertain given the analytical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C80"
+    ],
+    "result": "The study replicated several previously reported associations including: non-O blood groups with prothrombotic circulatory diseases, gastroduodenal ulcers, and pancreatic cancer; blood group O with lower type 2 diabetes risk; blood group B with tuberculosis; and RhD-positive with HIV infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C80 appropriately contextualize findings within prior literature with proper citations. The replication of known associations (e.g., non-O groups with thrombotic diseases, pancreatic cancer) provides validation of the study methodology. The authors appropriately note controversy regarding ABO and HIV (C61) while reporting their RhD finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Blood group B showed positive associations with three pregnancy complications (ectopic pregnancy, excessive vomiting, pelvic organ abnormalities), while blood group A associated with cervical polyps and AB with cervicitis. The authors infer these findings may indicate ABO blood groups are associated with female reproductive system diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 report specific associations from Table 2 with appropriate statistical significance. The inference that ABO groups may be associated with female reproductive diseases (C68) is reasonable given multiple independent associations, though the authors appropriately note the retrospective design limits causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study has important limitations including potential immortal time bias from retrospective inclusion (conditioning on survival to enrollment), restriction to hospitalized patients with blood group determination, inability to examine non-hospitalized diseases, and lack of adjustment for ethnicity/geography. However, the authors argue bias may be limited given: blood groups not associated with mortality, cohort blood group distribution matches reference population, replication of known severe disease associations, Danish population homogeneity (~94% European ancestry), and birth year adjustment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C90 provide a thorough and honest assessment of study limitations. The immortal time bias concern (C76-C77) is valid and well-explained with appropriate citation. The authors provide reasonable arguments for why bias may be limited (C78-C81, C89-C90) but appropriately acknowledge these cannot be definitively tested. The restriction to hospitalized patients (C83-C84) and inability to adjust for ethnicity (C85-C88) are clearly stated limitations that affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The manuscript contextualizes the study within existing knowledge of blood group-disease associations, noting that ABO has been linked to cardiovascular, gastrointestinal diseases, and cancers through mechanisms potentially involving FVIII/vWF levels and endothelial cell adhesion, while RhD associations (beyond hemolytic disease of newborn) are sparser. A recent Swedish study conducted similar disease-wide analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 appropriately summarize prior literature with proper citations. The mechanistic hypotheses (C31-C33) are presented as suggestions from literature, not established facts. The acknowledgment of sparse RhD associations (C36) and citation of the comparable Swedish study (C37) provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors conclude that ABO/RhD blood groups are associated with a wide spectrum of diseases including cardiovascular, infectious, gastrointestinal, and musculoskeletal diseases, suggesting some selective pressure on blood groups may be attributed to disease susceptibility differences. Few associations were found with age of first diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 provide appropriate summary conclusions supported by the data presented. The suggestion about selective pressure (C92) is appropriately tentative ('may indicate') and represents reasonable speculation based on the breadth of associations found. The conclusion about age at diagnosis (C93) accurately reflects the limited findings in that analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The median follow-up time for all phecode analyses was 17,555,322 person-years (Q1-Q3: 17,324,597\u201317,615,142).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C5 reports person-years as 'follow-up time' which is incorrect terminology. Person-years represents the total observation time across all patients (sum of individual follow-up times), not the median follow-up time per patient. The correct median follow-up per patient is 40.8 years (C100). This appears to be a reporting error in the manuscript text.",
+    "result_type": "MINOR"
+  }
+]

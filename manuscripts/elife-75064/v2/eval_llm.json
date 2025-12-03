@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript establishes the biological context for HIF isoforms, citing that HIF-1\u03b1 and HIF-2\u03b1 recognize the same DNA motif (HRE) in vitro but have distinct target gene sets and contrasting functions in vivo, particularly in cancer contexts such as ccRCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C10-C22) are well-supported by citations to established literature and provide the necessary background for the study. The authors appropriately cite prior work (e.g., Smythies et al., 2019; Keith et al., 2012; Raval et al., 2005) to establish the paradox of HIF isoform specificity that motivates their investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors successfully generated homozygous knock-in cell lines with Halo-tagged HIF-2\u03b1 and HIF-1\u03b2 in 786-O cells, validated by western blot, confocal imaging, ChIP-seq, and RNA-seq showing that tagged proteins behave similarly to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by multiple orthogonal validation methods (western blot in Figure 1B, confocal imaging in Figure 1C, ChIP-seq in Figure 1\u2014figure supplement 3A, and RNA-seq in Figure 1\u2014figure supplement 3B-C). The comprehensive validation demonstrates that the tagged proteins maintain endogenous-like expression, localization, binding, and gene expression profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Using fSPT, the authors found that HIF-2\u03b1 exhibits a higher bound fraction (~40%) compared to HIF-1\u03b2 (~70% freely diffusing), with HIF-1\u03b2 showing a larger diffusion coefficient. This difference is attributed to HIF-1\u03b2 being expressed at much higher levels than HIF-2\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by fSPT data in Figure 2C and western blot data in Figure 1\u2014figure supplement 2C. The measurements were replicated in multiple clones (Figure 2\u2014figure supplement 2B). The interpretation that stoichiometry explains the difference is reasonable given the expression level data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Overexpression of HIF-2\u03b1 in HIF-1\u03b2 knock-in cells increases HIF-1\u03b2 bound fraction and decreases its diffusion coefficient in a dimerization-dependent manner, as demonstrated by the lack of effect with a dimerization mutant (HIF-2\u03b1 DM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by fSPT data in Figure 2E showing that WT HIF-2\u03b1 overexpression increases HIF-1\u03b2 binding while the dimerization mutant does not. The use of the dimerization mutant as a negative control strengthens the conclusion that the effects are dimerization-dependent. However, the mutant may have residual activity that is not fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Belzutifan, a HIF-2\u03b1-specific dimerization inhibitor, reduces HIF-2\u03b1 transcriptional activity and bound fraction in a dose-dependent manner, validating fSPT as a tool to measure functional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by luciferase assay data (Figure 3\u2014figure supplement 1B) and fSPT data (Figure 3\u2014figure supplement 1C-E). The dose-dependent effects on both transcription and binding provide strong evidence for the specificity and mechanism of Belzutifan. The parallel between functional and dynamic readouts validates the fSPT approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Domain-swap experiments reveal that the HIF-\u03b1 IDR, rather than the DBD, primarily determines HIF-1\u03b2 binding dynamics. Variants with HIF-2\u03b1 IDR increase HIF-1\u03b2 binding more than those with HIF-1\u03b1 IDR, and this effect is sensitive to Belzutifan only for variants containing the HIF-2\u03b1 structured domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by fSPT data in Figure 3B-C showing differential effects of domain-swapped variants on HIF-1\u03b2 dynamics. The Belzutifan sensitivity experiments provide additional validation of the domain assignments. However, the conclusion that IDR 'determines' binding (C43) may overstate the case, as the DBD is still necessary (shown later in C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Truncated HIF-\u03b1 variants lacking the IDR/AD minimally affect HIF-1\u03b2 bound fraction and diffusion coefficient, demonstrating that dimerization alone is insufficient and that the extended IDR is necessary to influence HIF-1\u03b2 behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by fSPT data in Figure 3\u2014figure supplement 2. The truncation experiments provide strong evidence that the IDR is necessary for the observed effects on HIF-1\u03b2 dynamics. However, the authors should clarify whether these truncated proteins can still dimerize effectively, as this is assumed but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Direct tracking of HIF-\u03b1 variants shows that proteins with the same IDR behave similarly regardless of their DBD, with HIF-2\u03b1 IDR variants showing higher bound fractions than HIF-1\u03b1 IDR variants. This demonstrates that the IDR determines HIF binding and diffusion in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by fSPT data in Figure 4B-C showing that IDR identity, not DBD identity, determines binding and diffusion characteristics. The use of the L30 weak overexpression system with expression level controls (Figure 4\u2014figure supplement 1) strengthens these conclusions. The validation that L30-expressed HIF-2\u03b1 behaves like endogenous HIF-2\u03b1 (Figure 4\u2014figure supplement 2) is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DBD mutations reduce the bound fraction without significantly changing the diffusion coefficient of the moving population, demonstrating that while the IDR is the major modulator of binding differences, the DBD is also important for binding, likely representing chromatin/DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by fSPT data in Figure 5B-C. The DBD mutation experiments provide important evidence that the DBD contributes to binding, complementing the IDR findings. The lack of effect on diffusion coefficient is consistent with the mutations affecting DNA binding but not protein-protein interactions. However, the inference that bound fraction 'likely represents chromatin/DNA binding' (C55) could be strengthened with additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HIF-\u03b1 dimerization mutants exhibit significantly decreased bound fractions, demonstrating that HIF-\u03b1 requires HIF-1\u03b2 for effective DNA/chromatin binding and that the IDR alone is not sufficient\u2014both the IDR and the DBD/dimerization domains are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by fSPT data in Figure 5E-F. The dimerization mutant experiments provide strong evidence that heterodimerization is required for effective chromatin binding. The conclusion that IDR, DBD, and dimerization are all necessary (C58) is well-supported by the combined mutation and domain-swap experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HIF-\u03b1 dimerization mutants show no change in diffusion coefficient despite reduced binding, indicating that intrinsic properties of HIF-\u03b1 molecules (likely the IDR), rather than molecular weight, determine diffusion rate. HIF-1\u03b2 alone diffuses fast while HIF-\u03b1 and HIF-\u03b1/\u03b2 dimers diffuse slowly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by fSPT data in Figure 5E-F and the combined analysis across experiments. The observation that dimerization status doesn't affect diffusion coefficient (C59-C60) is surprising and important, supporting the conclusion that IDR properties determine diffusion (C61-C63). However, the mechanism by which IDRs affect diffusion remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Computational analysis reveals that HIF-1\u03b1, -2\u03b1, and -1\u03b2 disordered regions have very different amino acid composition biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by computational analysis shown in Figure 1\u2014figure supplement 1B. This provides a molecular basis for the differential behavior of the IDRs observed in the fSPT experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cut&Run experiments show that while overall genome-wide binding profiles are similar for all HIF-\u03b1 variants, with most endogenous HIF-2\u03b1 sites bound by all variants, significant differential binding preferences dictated by the IDR exist at a subset of HIF target sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by Cut&Run data in Figure 6\u2014figure supplement 1 and Figure 6A-B. The finding that most sites are bound by all variants but a subset shows IDR-specific binding is important and consistent with the fSPT data. However, the manuscript would benefit from more quantitative analysis of what fraction of sites show differential binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Specific examples demonstrate IDR-dependent differential binding and gene activation: HIF-2\u03b1 responsive genes (HSD3B7, PLXNA2) show increased binding with HIF-2\u03b1 and HIF-1\u03b1/2\u03b1 but not HIF-1\u03b1 or HIF-2\u03b1/1\u03b1, while HIF-1\u03b1 responsive genes (PPFIA4, PTPRN) show the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by Cut&Run and RNA-seq data in Figure 6A-B and Figure 6\u2014figure supplement 2. The specific examples provide strong evidence for IDR-guided differential gene activation. The concordance between binding (Cut&Run) and expression (RNA-seq) strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Genome-wide analysis of differentially regulated sites shows that for HIF-1\u03b1 responsive regions, both DBD and IDR contribute to binding, while for HIF-2\u03b1 responsive regions, the HIF-2\u03b1 IDR appears to dominate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by Cut&Run data in Figure 6C. The genome-wide analysis of differential binding provides important quantitative support for the IDR's role in site selection. However, the conclusion that HIF-2\u03b1 IDR 'dominates' (C73) is somewhat tentative ('tended to be', 'suggesting') and could be strengthened with statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "RNA-seq analysis shows that cells overexpressing HIF variants with the same IDR have similar gene expression profiles, with genes activated by HIF-1\u03b1 also activated by HIF-2\u03b1/1\u03b1 but not HIF-1\u03b1/2\u03b1, confirming that HIF-\u03b1 IDR contributes significantly to isoform-specific target gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by RNA-seq data in Figure 7. The PCA and clustering analyses clearly show that IDR identity determines gene expression patterns. This provides strong functional validation of the IDR's role in determining transcriptional outcomes, complementing the binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The manuscript describes the 786-O cell line model system and cites prior characterization of mutations and inhibitors used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are appropriately cited to the literature and describe the cell line and reagents used. These are methodological details that provide context for the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The manuscript describes the domain organization of HIF proteins, noting that they belong to the bHLH-PAS family with structured N-terminal domains (bHLH and PAS) and C-terminal IDRs containing activation domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by established knowledge and illustrated in Figure 1A. This provides essential background for understanding the domain-swap experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript describes the fSPT methodology and state array analysis approach used to quantify protein dynamics, including the definition of bound versus free molecules using a 0.1 \u03bcm\u00b2/s cutoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe the methodological approach. The state array method is appropriately cited (Heckert et al., 2022) and the 0.1 \u03bcm\u00b2/s cutoff is defined. However, the justification for this specific cutoff value could be more thoroughly explained, and the sources of variation are discussed in supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Validation experiments show that weak overexpression with the L30 promoter can recapitulate endogenous protein behavior when controlling for similar expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by fSPT data in Figure 4\u2014figure supplement 2 comparing L30-expressed and endogenous HIF-2\u03b1. This validation is important for justifying the use of the overexpression system for the domain-swap experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The discussion proposes potential mechanisms by which IDRs might influence binding, including charge-based interactions with chromatin, interactions with chromatin-bound proteins, and selective IDR-IDR interactions with other transcription factors or co-regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C99 are largely speculative (C93-C94, C96) or cite prior work (C95, C97-C99). While these are reasonable hypotheses based on the data and literature, they are not directly tested in this study. Claim C92 about HIF-2\u03b1 IDR being more positively charged is inferred from Figure 1\u2014figure supplement 1B but could be stated more explicitly. These mechanistic proposals would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose a revised model of TF-chromatin engagement comprising both DBD-mediated and IDR-mediated interactions, suggesting that 'chromatin binding preferences' is a more appropriate term than 'DNA-binding specificity' for describing in vivo TF behavior. For HIFs, most sites show similar binding for both isoforms, but IDR-mediated interactions dominate at a subset of differentially regulated sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 represent the main conceptual conclusions of the paper. These are well-supported by the combined fSPT, Cut&Run, and RNA-seq data showing that IDRs influence both dynamics and site-specific binding/activation. The proposal for new terminology (C102) is reasonable given the findings. The distinction between shared and differential sites (C103-C104) is supported by the genomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The authors compare their findings to Myc, which shows predominantly DBD-mediated chromatin engagement, suggesting that different TFs may exploit DBD- and IDR-mediated interactions to different degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 appropriately cite prior work on Myc (Pellanda et al., 2021) and use it to contextualize their findings. This comparison supports the broader conclusion that different TFs may use different mechanisms for chromatin engagement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The discussion proposes two possible temporal models for IDR-mediated chromatin engagement: IDRs could either recruit TFs to protein hubs before DNA binding, or stabilize binding after initial DBD-DNA interaction. In either case, distinct IDRs can create isoform-specific binding at selected sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C110 are speculative about the temporal order of events (C107-C109), though C108 cites recent proposals in the literature. The conclusion about isoform-specific binding (C110) is supported by the data, but the mechanistic models (C107-C109) are not directly tested and represent hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors conclude that fSPT provides a powerful tool for resolving in vivo protein dynamics and propose its potential applications for drug screening and targeting 'undruggable' protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is well-supported by the demonstrated sensitivity of fSPT to concentration, stoichiometry, and perturbations throughout the manuscript. Claim C114 is supported by the Belzutifan experiments. However, claims C115-C117 about future applications are more speculative and represent proposed rather than demonstrated capabilities. These would require additional validation in high-throughput formats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors cite literature showing that the EPO gene responds to HIF-2\u03b1 but not HIF-1\u03b1 in certain contexts, while a luciferase reporter responds to both, illustrating potential pitfalls of reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 appropriately cite prior work (Warnecke et al., 2004; Rankin et al., 2007; Varma and Cohen, 1997) to illustrate the importance of studying TFs in native chromatin contexts rather than with artificial reporters.",
+    "result_type": "MINOR"
+  }
+]

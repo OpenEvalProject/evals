@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Place cells exhibit single firing fields in small familiar environments but generate multiple fields in large environments and across multiple environments. Field locations within large spaces appear random, and place-cell codes across spaces appear independent or orthogonal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by multiple citations to established experimental literature (O'Keefe and Dostrovsky 1971; Wilson and McNaughton 1993; Fenton et al. 2008; Park et al. 2011; Rich et al. 2014; Muller et al. 1987; Colgin et al. 2008; Alme et al. 2014; Aronov et al. 2017; Cheng and Frank 2011). These are established empirical findings that form the biological motivation for the theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Grid cells provide critical spatially tuned inputs to place cells, have unique codes over large ranges due to their modular multi-periodic structure, integrate motion cues to generate fields even without external cues, and thus may strongly influence spatially reliable place fields in the absence of external cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are well-supported by citations to established literature (Hafting et al. 2005; Fiete et al. 2008; Sreenivasan and Fiete 2011; Mathis et al. 2012; McNaughton et al. 2006; Burak and Fiete 2006, 2009). Claim C9 is explicitly stated as a hypothesis/speculation but follows logically from C6-C8 and forms the central motivation for the theoretical investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The total number of grid-cell modules is estimated to be 5-8, and each local patch of hippocampus likely receives inputs from 2-3 grid modules due to spatial topography in grid-to-hippocampus projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by multiple citations to anatomical studies (C10: Stensola et al. 2012; C11: Witter and Groenewegen 1984; Amaral and Witter 1989; Witter and Amaral 1991; Honda et al. 2012; Witter et al. 2000). These biological constraints are important for the theoretical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C25",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The repertoire of place field arrangements with grid-like inputs is very large and noise-robust, growing exponentially with the number of modules, but is a vanishing fraction of all possible arrangements. Capacity scales only as the sum of grid periods, so field arrangements are constrained over larger distances. Place cells can form many field arrangements that seem unrestricted, but individual cells have little freedom in where to place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the core theoretical findings of the paper. They are supported by rigorous mathematical derivations (analytical formulas for counting realizable arrangements, capacity calculations) and numerical simulations. The mathematical results are stated to be proven in Appendix 1. The scaling relationships (exponential growth with modules, vanishing fraction of total, capacity scaling as sum of periods) are derived analytically and verified numerically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "For modular-one-hot codes, any separating hyperplane can be specified using only non-negative weights and an appropriate threshold. Projections from entorhinal cortex to hippocampus are excitatory, but this does not further constrain realizable field arrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is a mathematical result derived in the manuscript for modular-one-hot codes. Claim C19 is supported by citations (Steward and Scoville 1976; Witter et al. 2000; Shepard 1998). Claim C20 follows logically from C18 and C19: since any hyperplane can be realized with non-negative weights, the biological constraint of excitatory projections does not reduce the set of realizable arrangements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "For M\u22653 modules, counting Young diagrams yields an upper bound but not an exact count of realizable arrangements. The enumeration problem is at least as hard as counting Boolean functions, which is NP-hard. However, exact counts can be provided for small K (K=1,2,3,4) with arbitrarily many modules M, which is biologically relevant since place fields fire sparsely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are mathematical results derived in the manuscript (with proofs in Appendix 3). The NP-hardness claim (C28) is supported by citations (Peled and Simeone 1985; Heged\u00fcs and Megiddo 1996). Claim C30 about sparse firing is based on established knowledge. The analytical tractability for small K is an important contribution that addresses a biologically relevant regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C40",
+      "C46",
+      "C49",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Comparison across codes with different modularity shows that one-hot codes realize all arrangements, binary codes have NP-hard counting problems, and modular-one-hot/grid-like codes are intermediate. Grid-like codes enable far more realizable K-field arrangements than one-hot codes and require comparable input cell numbers to random codes to achieve the same number of realizable arrangements. The more modular a code, the larger the set of realizable arrangements, but these are increasingly special subsets strongly structured by inputs. Grid-driven place-cell responses occupy a middle ground between pattern richness and constrained structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims compare grid-like codes to alternative codes (one-hot, binary, random). The comparisons are based on analytical derivations (Table 1) and established results from perceptron theory and combinatorics (C35, C49 supported by citations). The conclusion that grid-like codes are intermediate in modularity and occupy a middle ground (C56-C58) follows logically from the mathematical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "For grid-structured inputs, the separating capacity l* equals the rank R of the input matrix. This is demonstrated numerically (periods {3,4}: L=12, l*=6) and proven analytically. The separating capacity with grid inputs is not much smaller than with random inputs and is actually larger when weights are constrained to be non-negative, though random inputs with unrestricted weights have larger capacity at the cost of smaller margins. The grid-like code has special properties: all codewords can be generated by iterated application of a linear operator, and the separating capacity saturates its bound by equaling the rank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish a key theoretical result: separating capacity equals rank for grid-like inputs. This is demonstrated numerically (C62, Figure 6A) and proven analytically (C59, C71-C73, C75). The comparison with random inputs (C63-C65) is shown in Figure 6B. Claims C66-C70 establish background from perceptron theory (supported by knowledge/citations). The result that capacity equals rank (rather than being merely upper-bounded by it) is a significant finding that depends on the special structure of grid-like codes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The rank of the grid-like input matrix can be computed using an inclusion-exclusion formula for integer periods. For large periods, the rank approaches \u03a3 (the sum of module periods) because large integers tend not to have large common factors. The separating capacity does not depend sensitively on the precision of grid periods or phase resolution and equals \u03a3 for real-valued periods with high-resolution phase representations. Since each hippocampal region receives 2-3 modules, the range over which any field arrangement is realizable is at most 2-3 times the typical grid period, much smaller than the total range L (product of periods). Once field arrangements are chosen in a small region, they impose strong constraints on larger regions and across environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the analytical formula for rank and its convergence to \u03a3. The inclusion-exclusion formula (C78) is derived analytically. The convergence for large periods (C80-C82) is supported by number-theoretic arguments (C81 cites Cesaro 1881). The insensitivity to precision and resolution (C88-C90) is demonstrated numerically (Figure 6D). The biological implications (C94-C98) follow logically from the mathematical results combined with anatomical constraints (C95 supported by citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The contiguous-separating capacity results generalize to real-valued grid periods with dense phase encodings within each module and to graded tuning curves, because convolution with appropriate smoothing kernels preserves the geometric arrangement of codewords and the modular structure of the code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish important generalizations of the main results beyond the simplified binary code model. The argument (C99) is based on mathematical properties of convolution operations and their preservation of code structure. This addresses a potential concern that the results might be artifacts of the binary simplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The robustness of realizable dichotomies is given by their margin. Grid-like codes produce much larger-margin field arrangements than shuffled or random codes due to their structured geometry and modular nature. After adding dense noise, previously realizable grid-driven arrangements remain realizable with relatively large margins, while newly realizable arrangements have small margins and won't persist across trials. Grid-driven place field arrangements are robust to small, dense, spatially unreliable inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the robustness of grid-driven place field arrangements. Claims C102-C104 define margin (standard machine learning concepts). The comparison across codes (C105-C106) is demonstrated in Figure 7A using numerical simulations with support vector machines. The noise robustness results (C108-C114) are demonstrated in Figure 7B. The interpretations (C106, C107, C109) follow logically from the margin results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Adding sparse spatial inputs leaves previous field arrangements largely unchanged with margins substantially unmodified, while allowing a few more arrangements with large margins to become realizable. Sufficiently sparse spatial cues can drive additional stable place fields that augment the grid-driven scaffold without substantially modifying its structure, and plasticity in sparse cue inputs can drive learning of new fields without destabilizing existing arrangements. Grid-driven place arrangements are highly robust to noise, and combining grid-cell drive with cue-driven inputs can produce robust maps combining internal scaffolds with external cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish how sparse spatial cues interact with the grid-driven scaffold. The results (C115-C116) are demonstrated in Figure 7C using numerical simulations. The interpretations (C117-C120) follow logically from the simulation results and provide important insights into how place cells might combine internal (grid-driven) and external (cue-driven) inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Place cells have highly restricted flexibility in laying down place fields over distances greater than \u03a3. Selecting field arrangements over range \u03a3 constrains choices over all remaining space and across environments. Changing field arrangements by altering grid-place weights affects arrangements everywhere. Inserting even a single field through Hebbian plasticity tends to produce new fields at uncontrolled locations and leads to disappearance of existing fields, but does not produce local horizontal displacements\u2014fields retain their locations or disappear entirely. Field locations are well-predicted by the autocorrelation structure of grid inputs. Quantitatively, inserting one field results in ~0.2 uncontrolled field changes per meter; inserting four fields results in ~1 uncontrolled field per meter. Learning by modifying grid-place weights is extremely likely to alter the original scaffold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the volatility of place field arrangements when grid-place weights are modified. Claims C121-C123 are interpretations of the capacity results. Claims C124-C132 are demonstrated through numerical simulations shown in Figure 8A-E. The finding that fields disappear rather than shift (C126-C127) is consistent with experimental data (Ziv et al. 2013). The explanation based on autocorrelation structure (C128-C130) provides mechanistic insight. The quantitative results (C131-C132) are from simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Adding fields driven by spatially specific external cues through plasticity in cue-to-place synapses may not affect field arrangements elsewhere if cues are sufficiently sparse; such fields would be 'sensory' rather than 'mnemonic'. The small separating capacity may explain high volatility of the place code across tens of days if grid-place weights are plastic. Alternatively, to account for stability over shorter timescales, external cue-driven inputs can be plastic but grid-place weights may be fixed. In field induction experiments, induced fields might only form where underlying grid scaffold peaks exist, and long plasticity windows could enable association with nearby scaffold peaks. This alternative is consistent with findings that entorhinal-hippocampal connections stabilize long-term memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims present speculative interpretations and alternative hypotheses about plasticity. Claims C134-C135 are interpretations based on the robustness results with sparse cues. Claims C136-C137 present two competing hypotheses about plasticity that could explain different experimental observations. Claims C138-C139 are speculative interpretations of experimental findings (Bittner et al. 2015). Claim C140 is supported by citations (Brun et al. 2008, 2002; Suh et al. 2011). While these interpretations are logical and consistent with the theoretical results, they remain speculative predictions that require experimental validation. The paper presents two competing hypotheses without definitively resolving which is correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The robustness of place field arrangements to noise is not inconsistent with volatility to field addition/deletion through grid-place weight plasticity. Grid-driven arrangements are robust to random i.i.d. noise and sparse inputs, but volatility involves associative plasticity inducing highly nonrandom weight changes large enough to drive constructive interference to add a field at a specific location. This nonrandom perturbation applied to distributed, globally active grid inputs results in global output changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims reconcile the seemingly contradictory findings of robustness and volatility. The explanation (C141-C144) distinguishes between random noise (which arrangements are robust to) and structured, nonrandom weight changes from associative plasticity (which cause volatility). This distinction is logical and consistent with the simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "When driven by grid-like inputs, place cells generate a spatial response scaffold influenced by structural constraints of grid inputs. Individual place cells can generate a large library of spatial responses due to richness of grid inputs, but realizable responses are a vanishingly small fraction of all responses over the range where grid inputs are unique. However, realizable arrangements are robust, and place cells can 'hang' external sensory cues onto the spatial scaffold by associative learning to form distinct maps for multiple environments. The results apply equally to motion through arbitrary Euclidean spaces, not just spatial ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the main findings of the paper. Claims C145-C148 synthesize the counting, capacity, and robustness results. Claim C149 provides the functional interpretation of how the scaffold can be used. Claim C150 generalizes the results beyond spatial navigation (supported by citations: Killian et al. 2012; Constantinescu et al. 2016; Aronov et al. 2017; Klukas et al. 2020). This summary accurately reflects the supported findings.",
+    "result_type": "MAJOR"
+  }
+]

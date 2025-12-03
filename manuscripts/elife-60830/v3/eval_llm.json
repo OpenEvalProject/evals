@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Inferior temporal (IT) cortex is the primary neural substrate for core object recognition in primates. IT neuronal population activity can predict object recognition performance, direct IT suppression disrupts recognition behavior, and individual IT neurons show tolerance to object transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the foundational role of IT cortex in object recognition through converging evidence from multiple prior studies. The claims are well-supported by appropriate citations to neurophysiology, behavior, and causal manipulation studies, providing a solid empirical foundation for the manuscript's framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Artificial neural networks (ANNs) can approximate ventral stream processing but rely on biologically implausible supervised training with millions of labeled images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 correctly characterize the state of ANN models and identify a key limitation. C5 is supported by appropriate citations, and C6 makes a reasonable inference about biological plausibility that is widely accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Temporal contiguity of object identity has been proposed as an unsupervised learning signal, and prior work shows that manipulating temporal statistics reshapes tolerance in both human behavior and monkey IT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 establish the theoretical framework and prior empirical support for temporal contiguity learning. Each claim is appropriately supported by citations to relevant prior work in both human psychophysics and monkey neurophysiology, providing strong motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Human psychophysical experiments (n=174 subjects) demonstrate that unsupervised temporal contiguity exposure can both break and build size tolerance in object discrimination, with effects plateauing after ~800 exposure events and showing reversibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 present the core behavioral findings with appropriate sample sizes, controls, and statistical analyses. The results show specificity (no spillover to control objects or non-exposed sizes), bidirectionality (both breaking and building), and reversibility. The data presentation in Figure 2 supports these claims with error bars and significance testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A generative multi-dimensional Gaussian (MDG) model of IT population responses accurately captures the IT representation space, with 81.25% of object response distributions passing normality tests and simulated responses correlating highly (r=0.93\u00b10.01) with actual IT data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 establish the validity of the generative IT model through statistical validation and comparison to real neural data. The normality test (C21) provides quantitative support for the Gaussian assumption, and the high correlation (C22) demonstrates that the model captures key aspects of IT population structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The IT-to-behavior linking model requires 260\u00b123 simulated IT sites with 20 training images to match human performance across 24 discrimination tasks, achieving r=0.83\u00b10.05 correlation with human performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 establish the parameters of the linking model through systematic comparison to human performance. The consistency across multiple tasks and similarity to prior work (Majaj et al., 2015) supports the validity of these parameter choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "An unsupervised IT plasticity rule based on temporal contiguity (\u0394FR = \u03b1(FR_lagging - FR_leading)) with plasticity rate \u03b1=0.0016 nru per exposure event best matches prior monkey IT neurophysiology data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 define the plasticity rule and establish its key parameter through fitting to prior neural data (Li and DiCarlo, 2010). The rule is conceptually motivated and the parameter is empirically constrained, though the simplicity of the rule is acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C27",
+      "C28"
+    ],
+    "result": "The overall model (generative IT + linking + plasticity) accurately predicts the direction, magnitude, and time course of human behavioral changes across three unsupervised learning experiments, with predictions critically dependent on the biologically-matched plasticity rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C27-C28 present the central result of the study. The model predictions match human data without parameter tuning (Figure 5), and sensitivity analyses (C28) demonstrate that deviations from the biology-matched plasticity rate produce clearly different predictions. This is strong evidence for quantitative consistency between neural and behavioral effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Learning effects depend on initial task difficulty, with smaller effects for very easy (d'>2.5) and very hard (d'<0.5) tasks. This dependency is explained by incorporating a ~10% lapse rate into the model, consistent with the estimated lapse rate of the subject pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C29-C33 identify a novel dependency and provide a mechanistic explanation. The lapse rate estimate (~10%) is derived from multiple analyses of the data (C30-C32) and is consistent with prior literature. The model with lapse rate (C33) reasonably explains the observed pattern, though the authors acknowledge this limits their ability to test predictions in the high d' regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The model's predictive accuracy supports the hypothesis that temporal contiguity learning shapes tolerant object recognition, though the model makes strong assumptions about monkey-human IT equivalence and generalization across task difficulty regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 interpret the results in light of the model's assumptions. The authors appropriately acknowledge the assumptions (C35) and note the non-trivial generalization across d' regimes (C36). The interpretation is reasonable given the quantitative match between predictions and data, though alternative explanations (coincidental error cancellation) are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Discrepancies between model and data at long exposure durations likely reflect more complex neural mechanisms not captured by the simplified plasticity rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 is speculative and acknowledges model limitations. While the speculation is reasonable, no additional data or analyses are provided to test specific alternative mechanisms (e.g., fatigue, renormalization, homeostatic adjustment).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Lapse rate imposes a ceiling on measured performance that masks learning effects in the high d' regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is well-supported by both model simulations and citations to prior work on lapse rates. This is a standard psychophysical principle that appropriately explains the observed pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Prior theoretical and empirical work has established temporal contiguity as a potential learning mechanism for building tolerance, with effects observed in human psychophysics, monkey IT neurophysiology, and rodent visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide appropriate context by reviewing relevant prior work. Each claim is supported by appropriate citations and accurately represents the cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "This study demonstrates quantitative consistency between IT neural effects and behavioral learning effects, going beyond prior qualitative observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 appropriately summarizes the key contribution of the study. The quantitative linking of neural and behavioral effects through a constrained model is indeed a significant advance over prior qualitative consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Some prior studies report null results or alternative mechanisms for tolerance learning, suggesting boundary conditions or species/region differences in temporal contiguity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 appropriately acknowledge conflicting or null results in the literature. The authors provide reasonable interpretations for discrepancies (e.g., different brain regions, developmental timing) while noting that further work is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Multi-electrode array recordings from two macaque monkeys provided 168 IT neural sites responding to 64 objects across 8 categories for model development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe the neural dataset used for model development. These are straightforward methodological details appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The plasticity rate of 0.0016 nru corresponds to approximately 0.035 spk/s change per exposure event, meaning ~30 exposures produce 1 spk/s change in selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 provides a biologically interpretable conversion of the model parameter. The calculation is straightforward given the stated IT population statistics, providing useful intuition about the magnitude of plasticity.",
+    "result_type": "MINOR"
+  }
+]

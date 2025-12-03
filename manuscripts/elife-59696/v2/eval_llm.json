@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C61",
+      "C62",
+      "C81"
+    ],
+    "result": "RKIP negatively regulates a clinically relevant set of motility genes in breast cancer through transcriptional control mediated by BACH1. RKIP expression inversely correlates with motility genes and BACH1 in patient samples, and RKIP downregulates these genes in xenograft tumors. BACH1 directly binds to and transcriptionally activates motility gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C61-C62, and C81 provide converging evidence from TCGA patient data (C1, C2), RNA-seq of xenograft tumors (C3), BACH1 knockdown experiments (C4), and ChIP assays (C5, C62) demonstrating that RKIP regulates motility genes through BACH1. The multi-level validation across patient samples, in vivo models, and mechanistic studies strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C58",
+      "C65",
+      "C67"
+    ],
+    "result": "RKIP targets multiple kinases within the stress MAPK network, including 23 inhibited and 7 enhanced kinases distributed across the kinome. The core network comprises JNK, p38, ERK and their upstream regulators (TAOKs, MLKs) and downstream effectors, with extensive crosstalk between pathways involving both positive and negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 are supported by MIB-MS analysis identifying 30 RKIP-targeted kinases (C6-C7), pathway enrichment analysis (C9-C11), and functional validation with inhibitors and siRNAs (C12-C16). The characterization of network topology and crosstalk is experimentally demonstrated. However, the mechanistic details of how RKIP inhibits upstream kinases like TAOKs and MLKs (C65) remain somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C57",
+      "C66",
+      "C80"
+    ],
+    "result": "RKIP functions as a metastasis suppressor by moderately reducing (<30%) the activity of multiple kinases within the stress MAPK driver network rather than completely inhibiting individual kinases, and this complex network cannot be effectively mimicked by targeting individual MAPKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 demonstrate that RKIP targets show <30% activity reduction and activity level doesn't correlate with metastatic potential, supported by MIB-MS quantification. Claims C57, C66, and C80 synthesize these observations into a mechanistic principle. The conclusion is well-supported by the kinase activity data and network complexity analysis, though the sufficiency of this mechanism for metastasis suppression could benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C68"
+    ],
+    "result": "A four-drug combination (4D-MAPKi: p38i, JNKi, MEKi, MLKi) at minimal dosages blocks invasion without affecting proliferation in TNBC cell lines and is non-toxic to normal mammary epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by high-throughput invasion assays, western blot analysis across multiple cell lines (C20), and proliferation assays in normal cells (C21). The systematic screening approach and validation across multiple cell types provides strong evidence. However, the in vitro conditions may not fully recapitulate in vivo complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C69"
+    ],
+    "result": "4D-MAPKi suppresses TNBC metastasis in vivo, inhibits primary tumor growth in a dose-dependent manner, blocks metastatic colonization in both syngeneic and xenograft models, and improves survival. The treatment reduces expression of BACH1 and motility genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide comprehensive in vivo evidence from multiple mouse models (LMB syngeneic and BM1 xenograft), different metastasis assays (tail-vein, intracardiac), and survival analysis. The short-term treatment experiment (C24) suggests effects on early metastatic steps. Gene expression analysis (C27) links back to the proposed mechanism. The convergence of evidence across models and endpoints strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C70"
+    ],
+    "result": "Different TNBC cell lines have unique MAPK network topologies that vary with stimulus, and 4D-MAPKi effectively reduces BACH1 expression across all cell lines tested while single high-dose MAPK inhibitors fail to do so consistently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 demonstrate network topology differences through systematic inhibitor studies in multiple cell lines and conditions. Claims C30-C31 show that single inhibitors are ineffective across cell lines while 4D-MAPKi works universally, supported by qRT-PCR and western blot data. The in vivo validation (C32) strengthens the conclusion. The experimental design appropriately tests the hypothesis about network heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C71",
+      "C72",
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "Mathematical network flow modeling demonstrates that limited inhibition of multiple kinases (as in 4D-MAPKi) is more effective than maximal single-kinase inhibition because it reduces signaling output across different network topologies while dissipating surplus signal below the threshold for compensatory network activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C71-C72 present modeling predictions that are conceptually sound and consistent with network theory. The model provides a mechanistic rationale for the multi-drug low-dose approach. However, the model makes simplifying assumptions (steady-state, linear regime, neglecting spatial effects) that may not fully capture biological complexity. The model's predictions align with experimental observations but remain somewhat theoretical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C73",
+      "C74"
+    ],
+    "result": "AKT activation by MEK inhibition exhibits a threshold effect at ~30% ERK inhibition. 4D-MAPKi avoids triggering compensatory AKT activation in serum-stimulated cells and in vivo tumors by restricting ERK inhibition to ~40%, while EGF stimulation leads to maximal AKT activation with ~75% ERK inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by dose-response experiments and western blot analysis in different stimulation conditions and in vivo tumors. The threshold effect is experimentally demonstrated (C35), and the context-dependent response (C36-C37) is well-documented. The in vivo validation (C38) is critical for clinical relevance. However, the mechanism underlying the threshold and stimulus-dependent differences could be better explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C76",
+      "C77"
+    ],
+    "result": "The RKIP/BACH1/motility gene axis is clinically relevant across multiple cancer types. In ~60% of breast cancer patients, RKIP inversely correlates with BACH1 and motility genes. This pattern extends to other solid tumors and is associated with multiple metastasis suppressors, identifying patients who may benefit from 4D-MAPKi treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by comprehensive TCGA analysis across multiple cancer types showing consistent inverse correlations. The identification of ~60% of patients with this signature (C39) provides a potential biomarker for patient stratification (C76). The association with other metastasis suppressors (C41) suggests a common mechanism. However, the clinical utility claim (C76) is inferential and would require prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C60"
+    ],
+    "result": "RKIP upregulates genes related to mitochondrial metabolism and oxidative phosphorylation in BM1 tumors, which positively correlate with RKIP and negatively correlate with BACH1 in breast cancer patients. This mirrors the effect of BACH1 knockdown on mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by RNA-seq data and TCGA correlation analysis. The connection to BACH1's role in mitochondrial metabolism (C60) is supported by cited previous work. This represents a secondary phenotype of RKIP/BACH1 regulation beyond motility genes, though it is not the primary focus of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59"
+    ],
+    "result": "Background and context claims about RKIP, metastasis suppressors, cancer biology, and therapeutic challenges are established from literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C42-C56, C59) provide established background knowledge supported by appropriate citations. They set the context for the study but do not represent novel findings. The characterization of BM1 cells (C49) and BACH1 (C50) are factual descriptions supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Short-term (2-day) treatment with 4D-MAPKi after tail vein injection suppressed metastatic growth, suggesting effects on early metastatic steps such as extravasation, invasion, or colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by the short-term treatment experiment showing reduced metastatic burden 5 weeks after only 2 days of treatment. The interpretation that this affects early metastatic steps is reasonable but somewhat inferential, as the experiment doesn't directly distinguish between extravasation, invasion, and colonization. Additional mechanistic studies would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "Summary and synthesis claims about the overall study findings and their implications for anti-metastatic treatment strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 and C83-C85 appropriately synthesize the study's findings. Claims C88-C89 make broader interpretive statements about clinical relevance and paradigm shifts. While the experimental data support the core findings, the transformative clinical impact (C88) remains to be demonstrated in clinical trials. These represent reasonable conclusions from the data but include some speculative elements about future clinical application.",
+    "result_type": "MAJOR"
+  }
+]

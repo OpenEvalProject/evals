@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors developed and validated a two-photon calcium imaging method in non-anesthetized mouse pups (P5-P12) using viral GCaMP6s expression and cranial window implants. The method minimally disrupted sleep-wake cycles and electrophysiological patterns, enabling imaging of 33,412 cells across 62 sessions from 35 pups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C43 collectively establish the technical validity of the imaging approach. The surgical procedure preserved normal sleep-wake behavior (C32-C34), electrophysiological patterns including eSW frequency and synchronization were largely maintained (C35-C42), and the method yielded substantial data (C43). These methodological validations support the reliability of subsequent experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CA1 neuronal dynamics progressively evolve from discontinuous to continuous during the first two postnatal weeks. The proportion of calcium transients occurring during synchronous calcium events (SCEs) decreased linearly from 55% at P5-6 to 33% at P12 (r\u00b2=0.78, p<0.0001), with a nonlinear evolution in cell activation frequency showing a local minimum around P10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe a well-quantified developmental progression with strong statistical support (r\u00b2=0.78, p<0.0001 for linear decrease in SCE proportion). The findings are consistent with prior electrophysiological studies (C48), providing convergent evidence. Sample sizes appear adequate (N=32 pups across ages).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The relationship between spontaneous movement and CA1 activity undergoes an abrupt reversal at P9. Before P9, movements were followed by significant increases in CA1 activity (median post-movement activity >50%), while after P9, movements were followed by significant decreases (median <50%). This transition follows a sigmoid function (V50=9.015, r\u00b2=0.75), with the proportion of 'inhibiting' movements increasing from ~15% before P9 to ~55% after P10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C63 provide robust quantitative evidence for an abrupt developmental switch. The sigmoid fit (r\u00b2=0.75) and consistent quantitative measurements across ages support the conclusion. The use of surrogate data for statistical comparison (C51-C52) strengthens the findings. The sudden drop at P10 (-13.5% between P9-P10, C55) contrasts with gradual changes before (3.1\u00b10.7% per day, C54), supporting the 'abrupt' characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Pyramidal cells and GABAergic interneurons show divergent developmental responses to movement. Both cell types were activated by movement before P9, but after P9, pyramidal cells became inhibited (baseline 1.3%, trough 0.4%) while interneurons remained activated (baseline 3.9%, peak 10%). A machine learning classifier identified interneurons with 91% precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 demonstrate cell-type-specific developmental changes using genetic labeling (tdTomato in GAD1Cre/+ mice) and a validated classifier (91% precision, C65). The divergent responses are well-quantified and statistically significant. However, C70 is speculative about the mechanism (direct inhibition by interneurons) and should be tested with additional experiments such as optogenetic manipulation or pharmacological blockade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C102",
+      "C103"
+    ],
+    "result": "Retrograde tracing experiments revealed no major changes in extra-hippocampal inputs to CA1 neurons around the developmental switch. Both GABAergic and glutamatergic CA1 neurons received inputs from entorhinal cortex, medial septum, and contralateral CA3 before and after P9, with no direct brainstem connections detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C102-C103 provide anatomical evidence that the developmental switch is not due to rewiring of long-range inputs. The retrograde tracing used appropriate controls (early vs. late groups, GAD1Cre/+ vs. EmxCre/+ mice). However, the method cannot assess quantitative changes in input strength or functional maturation of existing connections, which the authors acknowledge (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Perisomatic GABAergic innervation, measured by Synaptotagmin-2 (Syt2) labeling, remained stable from P3-P7 (median 0.34-0.57%) but increased sharply after P9 (P9: 1.03%; P11: 1.48%). Functional imaging of GABAergic axons at P9-10 confirmed increased activity following movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide converging anatomical (Syt2 immunohistochemistry) and functional (axonal GCaMP imaging) evidence for the emergence of perisomatic GABAergic innervation. The quantification used a custom plugin (RINGO) and the results are consistent with prior literature (C75). The timing coincides with the behavioral switch, supporting a causal relationship, though C77 remains speculative without direct manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Computational modeling (rate model and leaky integrate-and-fire model) demonstrates that increasing perisomatic inhibitory connections alone can account for the observed developmental switch. The models reproduced key experimental features including movement-induced inhibition, post-movement undershoots, and cross-correlogram patterns between interneurons and pyramidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 show that the modeling results match experimental observations across multiple metrics (PMTHs, cross-correlograms). The use of two independent models (rate and LIF) strengthens the conclusions. The cross-correlogram analysis during immobility periods (C84) provides evidence for recurrent rather than feedforward inhibition. However, the models make simplifying assumptions about network architecture and synaptic properties that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The surgical procedure (cortical aspiration for optical access) had modest effects on CA1 responses. The contralateral limb response was slightly reduced (C89), eSW frequency was slightly diminished ipsilaterally (C90), and power spectra showed small increases below 20 Hz (C91). Despite these effects, both REM and wake-associated movements activated CA1 neurons in one P5 pup (C92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 acknowledge important methodological limitations. The authors transparently report the effects of cortical removal, which may damage temporoammonic inputs (C88). The quantitative assessments (C89-C91) show the effects are modest and the main findings (movement-activity relationships) are preserved. However, the single-animal EMG experiment (C92) is insufficient to fully characterize differences between movement types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The developmental switch in pyramidal cell responses to movement occurs abruptly within 2 days (P8-P10). At P12, a small increase in active cells was observed ~1 second before movement onset, suggesting anticipatory activity similar to that reported in adult cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 reiterate the abrupt nature of the switch with appropriate temporal resolution. The anticipatory activity (C95) is an interesting observation supported by prior work in adults (C96), though the mechanism remains unclear. The comparison to barrel cortex (C97) provides broader developmental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The developmental switch most likely relies on local CA1 circuit changes rather than long-range connectivity rewiring. While Schaffer collaterals reach CA1 around P9 and SWRs emerge at this time, the entorhinal cortex and CA3 exert only mild influence on intrinsic CA1 dynamics. The computational model indicates that increased perisomatic inhibition alone can fully explain the observed changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 synthesize multiple lines of evidence (retrograde tracing, modeling, literature) to support a local circuit mechanism. The argument is logical and well-supported, though the authors acknowledge they cannot fully exclude contributions from CA3 maturation (C104-C105) or functional changes in existing inputs. The conclusion is appropriately cautious given the available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The observed rise in somatic GABAergic inhibition is more abrupt (within 2 days) than previously expected from anatomical studies, though consistent with recent connectomic data from barrel cortex showing a threefold increase in perisomatic GABAergic targeting between P7-P9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 place the findings in the context of prior anatomical work. The comparison to barrel cortex connectomics (C111) provides strong supporting evidence for the abrupt developmental timeline. The authors appropriately note that their findings refine rather than contradict previous work (C108-C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The differential responses of pyramidal cells (inhibited) and interneurons (activated) after P9 suggest a net inhibitory effect of GABAergic transmission, consistent with the earlier shift from excitatory to inhibitory GABA signaling reported in vivo. The lack of somatic GABAergic inputs before P7 indicates that early excitatory GABAergic drive likely originates from non-somatic interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 provide a logical interpretation of the cell-type-specific responses, supported by prior work on the GABA excitatory-to-inhibitory shift (C114). The inference about non-somatic sources of early GABAergic drive (C115) is reasonable given the anatomical data. The comparison to somatosensory cortex (C116) provides broader developmental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The movement-induced inhibition observed after P9 likely represents a transient developmental period, as adult hippocampal neurons typically increase activity during movement. This developmental window probably closes with the emergence of perineuronal nets and cell activation sequences at the end of the third postnatal week.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 are largely speculative about the transient nature of the inhibitory period and when it closes. While the comparison to adult function (C118) is well-supported by citations, the proposed closure of the window (C119) lacks direct experimental evidence from this study. Longitudinal recordings beyond P12 would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose that the early postnatal period, where the hippocampus learns body statistics before the rise of recurrent inhibition, is critical for developing self-referenced representations. Miswiring of somatic inhibition could contribute to neurodevelopmental disorders like autism and schizophrenia, which are associated with aberrant PV interneuron maturation. The mouse developmental period studied corresponds to the third trimester of human gestation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C124 present an interesting theoretical framework linking the findings to cognitive development and disease, supported by relevant citations (C122-C123). However, these are speculative proposals without direct experimental support from the current study. The translational relevance to human development (C124) is reasonable but approximate. Testing these hypotheses would require additional experiments in disease models or human studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes the developmental context: early brain oscillations are initially driven by bottom-up sensorimotor inputs and later detach from external inputs, a hallmark of developing brain areas including hippocampus. The adult hippocampus integrates external inputs onto internal dynamics for cognitive functions. Despite the importance of this developmental transition, its timeline and circuit basis remain unknown, though GABAergic perisomatic interneurons are candidates given their delayed maturation and role in shaping CA1 dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 provide appropriate background and rationale for the study, drawing on established literature (multiple citations throughout). The knowledge gaps (C5-C6, C22, C29) are clearly identified and motivate the experimental approach. The logic connecting GABAergic interneuron maturation to the developmental switch (C25-C29) is well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "When combining all mouse pups and separately analyzing twitches (REM/active sleep) versus complex movements (wakefulness), the two movement types did not significantly differ in their impact on CA1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 reports a negative finding that contrasts with some prior literature (mentioned in Discussion). The analysis appears appropriate, though the lack of difference could reflect limitations in temporal resolution of calcium imaging versus electrophysiology, as the authors acknowledge. The finding is adequately supported by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The authors propose that the observed developmental changes are consistent with a two-population model undergoing strengthening of inhibition, and that this abrupt transition inaugurates the emergence of internal hippocampal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 represent the main interpretive conclusions of the study. C11 is well-supported by the modeling results (detailed in C78-C85). C12 is a broader interpretation that is reasonable given the data showing detachment from movement and emergence of activity during immobility, though direct evidence for 'internal dynamics' (e.g., replay, planning-related activity) is not provided. The conclusion is appropriately framed as a proposal.",
+    "result_type": "MAJOR"
+  }
+]

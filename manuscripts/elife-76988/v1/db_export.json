@@ -1,0 +1,1116 @@
+{
+  "submission": {
+    "id": "189f9ad9-fe25-4b4d-867a-6a85f7b6b604",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:06:16.114082Z",
+    "updated_at": "2025-12-03T15:06:16.114082Z"
+  },
+  "content": [
+    {
+      "id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "submission_id": "189f9ad9-fe25-4b4d-867a-6a85f7b6b604",
+      "content_type": "manuscript",
+      "content_text": "# Global variation in force-of-infection trends for human Taenia solium taeniasis/cysticercosis\n\n## Authors\n\n- Matthew A Dixon<sup>1</sup> ([ORCID: 0000-0002-1710-6237](https://orcid.org/0000-0002-1710-6237)) \u2020\n- Peter Winskill<sup>2</sup>\n- Wendy E Harrison<sup>3</sup>\n- Charles Whittaker<sup>1</sup>\n- Veronika Schmidt<sup>4</sup>\n- Astrid Carolina Fl\u00f3rez S\u00e1nchez<sup>6</sup>\n- Zulma M Cucunuba<sup>1</sup> ([ORCID: 0000-0002-8165-3198](https://orcid.org/0000-0002-8165-3198))\n- Agnes U Edia-Asuke<sup>7</sup>\n- Martin Walker<sup>8</sup>\n- Mar\u00eda-Gloria Bas\u00e1\u00f1ez<sup>1</sup>\n\n### Affiliations\n\n1. Department of Infectious Disease Epidemiology and London Centre for Neglected Tropical Disease Research (LCNTDR), Faculty of Medicine, School of Public Health, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n2. MRC Centre for Global Infectious Disease Analysis, Department of Infectious Disease Epidemiology Faculty of Medicine, School of Public Health, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n3. SCI Foundation, Edinburgh House London United Kingdom\n4. Department of Neurology, Center for Global Health, Technical University Munich (TUM) Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))\n5. Centre for Global Health, Institute of Health and Society, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))\n6. Grupo de Parasitolog\u00eda, Instituto Nacional de Salud Bogot\u00e1 Colombia ([ROR:03yxg7206](https://ror.org/03yxg7206))\n7. Ahmadu Bello University Zaria Nigeria ([ROR:019apvn83](https://ror.org/019apvn83))\n8. Department of Pathobiology and Population Sciences and London Centre for Neglected Tropical Disease Research (LCNTDR), Royal Veterinary College Hatfield United Kingdom ([ROR:01wka8n18](https://ror.org/01wka8n18))\n\n\u2020 Corresponding author\n\n## Abstract\n\nInfection by Taenia solium poses a major burden across endemic countries. The World Health Organization (WHO) 2021\u20132030 Neglected Tropical Diseases roadmap has proposed that 30% of endemic countries achieve intensified T. solium control in hyperendemic areas by 2030. Understanding geographical variation in age-prevalence profiles and force-of-infection (FoI) estimates will inform intervention designs across settings. Human taeniasis (HTT) and human cysticercosis (HCC) age-prevalence data from 16 studies in Latin America, Africa, and Asia were extracted through a systematic review. Catalytic models, incorporating diagnostic performance uncertainty, were fitted to the data using Bayesian methods, to estimate rates of antibody (Ab)-seroconversion, infection acquisition and Ab-seroreversion or infection loss. HCC FoI and Ab-seroreversion rates were also estimated across 23 departments in Colombia from 28,100 individuals. Across settings, there was extensive variation in all-ages seroprevalence. Evidence for Ab-seroreversion or infection loss was found in most settings for both HTT and HCC and for HCC Ab-seroreversion in Colombia. The average duration until humans became Ab-seropositive/infected decreased as all-age (sero)prevalence increased. There was no clear relationship between the average duration humans remain Ab-seropositive and all-age seroprevalence. Marked geographical heterogeneity in T. solium transmission rates indicate the need for setting-specific intervention strategies to achieve the WHO goals.\n\n## Introduction\n\nThe zoonotic cestode Taenia solium poses a substantial public health and economic challenge. Globally, T. solium is ranked as the foodborne parasitic infection contributing the highest number of disability-adjusted life-years (DALYs), an estimated 2.78 million DALYs in 2010 (Havelaar et al., 2015). Control and elimination of T. solium requires a One Health approach (Thomas et al., 2019; Braae et al., 2019) due to its complex multi-host life-cycle, involving infection with larval-stage cysticerci in the intermediate pig host (porcine cysticercosis, or PCC), infective stages (eggs) in the environment, and taeniasis (infection with the adult worm) in the definitive human host (human taeniasis, or HTT). When humans ingest T. solium eggs, establishment of cysticerci (human cysticercosis, or HCC) in the central nervous system results in neurocysticercosis. Neurocysticercosis is responsible for the major health burden associated with T. solium, causing approximately one third of epilepsy/seizure disorders in endemic settings (Gripper and Welburn, 2017).\n\nCurrent interventions target PCC through mass treatment of pigs with oxfendazole and their vaccination with TSOL18, and HTT through mass treatment of humans with praziquantel or niclosamide. These control strategies have proven efficacious in field studies (de Coster et al., 2018; Dixon et al., 2021), but to date no large-scale interventions have been rolled out as part of national Neglected Tropical Disease (NTD) programmes, and therefore their impact alone or in combination in different epidemiological settings remains poorly understood and/or modelled (CystiTeam Group for Epidemiology and Modelling of Taenia solium Taeniasis/Cysticercosis, 2019). The milestones proposed in the new World Health Organization (WHO) NTD 2021\u20132030 roadmap (Havelaar et al., 2015; World Health Organization, 2020) focus on achieving intensified control in hyperendemic areas of 17 (27%) endemic countries. However, endemicity levels for T. solium have not been defined in terms of infection indicators and there exist limited data on the geographical distribution of T. solium prevalence at national scales. For other NTDs, pre-intervention levels of endemicity (according to infection prevalence, intensity, incidence or morbi-mortality) determine the magnitude, duration and likely success of control efforts (NTD Modelling Consortium Onchocerciasis Group, 2019). Therefore, successful T. solium intervention strategies will require tailoring to local epidemiological and socio-economic conditions that determine the intensity of transmission and will likely be informed by age- and/or sex-dependent contact rates and mixing patterns in endemic settings (Dixon et al., 2021; CystiTeam Group for Epidemiology and Modelling of Taenia solium Taeniasis/Cysticercosis, 2019; Welburn et al., 2015).\n\nGlobal patterns in transmission rates have recently been explored for PCC by assessing the force-of-infection (FoI; the per-capita rate of infection acquisition) according to proposed endemicity levels (overall (sero)prevalence) and geography (Dixon et al., 2020). Estimates of antibody (Ab) and antigen (Ag) seroconversion (and seroreversion rates) for HCC have also been estimated from a small number of longitudinal surveys in Burkina Faso (Dermauw et al., 2018), Peru (Garcia et al., 2001), Ecuador (Coral-Almeida et al., 2014), and Zambia (Mwape et al., 2013), demonstrating substantial geographic variation.\n\nAge-prevalence profiles are not only useful for estimating FoI and (sero)reversion rates, but also to provide insight into processes driving epidemiological dynamics, such as immunological responses or heterogeneity in exposure which may explain abrupt changes in HCC seropositivity in older individuals or distinct prevalence peaks in younger ages for HTT prevalence, as observed in the Democratic Republic of the Congo (DRC) (Kanobana et al., 2011; Madinga et al., 2017). Specific age-prevalence profiles may also provide insight into whether age-targeted interventions may be appropriate in certain settings. This study, therefore, and for the first time systematically collates and reviews all HTT and HCC age-(sero)prevalence data available from the literature and from collaborators, and uses simple and reversible catalytic models to estimate the FoI and Ab-seroreversion/infection loss rates from cross-sectional surveys. The results improve our understanding of global variation in the epidemiology of T. solium and provide estimates of transmission rates, crucial for guiding the design of interventions. In addition, a country profile of FoI estimates is presented at the sub-national level for Colombia to exemplify how detailed FoI analyses can help understand local epidemiological patterns.\n\n## Results\n\n### Systematic review and study selection\n\nAfter title, abstract and full-text eligibility screening of 236 studies initially identified (01/11/2014 to 02/10/2019), and 11 studies included in the Coral-Almeida et al., 2015 literature review, a total of 16 studies were included in the analysis (PRISMA flowchart; Figure 1), originating from South America (n=4), Africa (n=8) and Asia (n=4) (Figure 1\u2014figure supplement 1) and split by n=4 HTT and n=15 HCC surveys (full details in Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig1-v1.jpg)\n\n**Figure 1.:** Additional studies identified from the Coral-Almeida et al., 2015 review also shown. LILAC: Latin American and Caribbean Health Sciences Literature; AJOL: African Journals Online.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** There are 19 indicators in total, as three studies provided more than one indicator (Gomes et al., 2002; Mwape et al., 2012; Holt et al., 2016).\n\nTotal sample sizes were 6,653 individuals (range 576\u20134599; with individual age range of <1\u201396 years) across HTT surveys, which included three copro-Ag-based surveys and one Ab-based survey; 34,124 (125\u201329,360; cross-study age range of <1\u201395 years) across HCC-Ab surveys, and 12,934 (708\u20134993; cross-study age range of <1\u201396 years) across HCC-Ag surveys. Observed (sero)prevalence ranged from 4.5% to 23.4% (95% confidence interval (CI) range: 3.0\u201324.6%) for HTT surveys, 0.5\u201338.7% (0.1\u201341.6%) across HCC-Ab surveys, and 0.7\u201321.7% (0.5\u201324.5%) across HCC-Ag surveys.\n\nCatalytic models (Figure 2; full details in Materials and methods) were fitted to the thus extracted (sero)prevalence data using a Bayesian framework that integrates uncertainty in diagnostic sensitivity and specificity from prior (published) information (Supplementary file 1). The FoI parameters of acquisition (\u03bb) and reversion/loss (\u03c1) (for antibody datasets, a marker of exposure: \u03bbsero and \u03c1sero; for antigen datasets, a marker of active infection: \u03bbinf and \u03c1inf) were estimated for each dataset. The deviance information criterion (DIC) (Spiegelhalter et al., 2002) was used to compare individually- and jointly-fitted catalytic models.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig2-v1.jpg)\n\n**Figure 2.:** The general mathematical form of the catalytic models (equations 1a to 1d) fitted to the human taeniasis (HTT)/human cysticercosis (HCC) Ab, HCC Ag and HTT copro-Ag prevalence datasets to estimate the prevalence (p) at human age (a). The saturating (sero)prevalence is given by \u03bb/(\u03bb + \u03c1) which for the simple model is 100%, if the humans lived sufficiently long. The accompanying tables provide information on the definitions of the catalytic model parameters depending on the diagnostic method. Presence of adult tapeworm excretory-secretory products indicative of active or past HTT infection, as outlined by Lightowlers et al., 2016a.\n\nWe defined hyperendemic transmission settings as those with all-age observed HTT (sero)prevalence of \u22653% and all-age observed HCC (sero)prevalence of \u22656%. Studies with (sero)prevalence values below these were defined as endemic transmission settings. These putative endemicity definitions were defined following a literature review of studies referring to \u2018hyper\u2019 or \u2018highly\u2019 endemic settings (Supplementary file 2 with additional explanatory text in Appendix 1).\n\n### Global human taeniasis (HTT) copro-antigen and antibody seroprevalence\n\nTable 1 compares models fitted either including (reversible model) or excluding (simple model) HTT infection loss (when fitted to copro-Ag ELISA using the Allan et al., 1990 protocol datasets, except in Gomes et al., 2002 where a protocol is not specified) or Ab-seroreversion. For the copro-Ag ELISA datasets (to which models were jointly fitted to yield a single sensitivity and specificity posterior), DIC scores were similar (within one unit) between models with and without infection loss (Table 1 and Figure 3a), indicating limited information to differentiate between model fits.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig3-v1.jpg)\n\n**Figure 3.:** Human taeniasis (HTT) infection acquisition (simple) or acquisition with infection loss (reversible) catalytic models jointly fitted to multiple datasets (where single diagnostic sensitivity and specificity values were estimated; dataset-specific \u03bb and \u03c1 estimates were obtained) in a; HTT antibody (Ab)-seroconversion (simple) or Ab-seroconversion with Ab-seroreversion to a single dataset in b. 95% confidence intervals associated with observed (sero)prevalence point estimates are also presented. Bayesian Markov chain Monte Carlo methods were used to fit the models to data, with the parameter posterior distributions used to construct predicted (all age) (sero)prevalence curves and associated 95% Bayesian credible intervals (BCIs). Best-fitting model selected by deviance information criterion (DIC); both models presented if difference between DIC < 2 (both models have similar support based on the data); a difference > 10 units indicates that the models are significantly different and therefore only superior fitting model (lowest DIC) is presented. The non-zero predicted (sero)prevalence at age 0 is due to less than 100% specificity for all tests. The 95% confidence intervals (95% CI) for age-(sero)prevalence data-points are calculated by the Clopper-Pearson exact method.\n\n**Table 1.**\n Parameter posterior estimates for the best-fit catalytic models fitted to human taeniasis age-(sero)prevalence datasets (ordered by decreasing all-age (sero)prevalence).Parameters estimated from antibody-based datasets measure exposure dynamics, with seroconversion \u03bbsero and seroreversion \u03c1sero rates. Parameters estimated from antigen-based datasets measure active infection dynamics, with infection acquisition \u03bbinf and infection loss \u03c1inf rates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset; Country</th>\n      <th>All-age observed (sero)- prevalence (%)(95% CI)*</th>\n      <th>Catalytic model</th>\n      <th>Diagnostic sensitivity(95% BCI)</th>\n      <th>Diagnostic specificity(95% BCI)</th>\n      <th>\u03bb=infection acquisition (\u03bbinf) or Ab-seroconversion (\u03bbsero) rate, year\u20131(95% BCI)\u2020</th>\n      <th>\u03c1=infection loss (\u03c1inf) orAb-seroreversion (\u03c1sero) rate, year\u20131(95% BCI)\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">Models jointly fitted to multiple datasets (Copro-Ag ELISA) \u2021</td>\n    </tr>\n    <tr>\n      <td>Mwape et al., 2012; ZambiaAntigen \u00a7</td>\n      <td>6.32(4.65\u20138.37)</td>\n      <td rowspan=\"2\">Reversible \u00b6</td>\n      <td rowspan=\"2\">0.824(0.533\u20130.972)</td>\n      <td rowspan=\"2\">0.959(0.941\u20130.976)</td>\n      <td>0.021(0.0038\u20130.062)</td>\n      <td>0.768(0.362\u20130.991)</td>\n    </tr>\n    <tr>\n      <td>Gomes et al., 2002;BrazilAntigen**</td>\n      <td>4.51(2.97\u20136.54)</td>\n      <td>0.0096(0.00072\u20130.032)</td>\n      <td>0.731(0.379\u20130.978)</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Models independently fitted to single datasets (rES33-immunoblot)\u2020\u2020</td>\n    </tr>\n    <tr>\n      <td>Holt et al., 2016;Lao PDRAntibody</td>\n      <td>2.49(1.51\u20133.87)</td>\n      <td>Simple \u2021 \u2021</td>\n      <td>0.982(0.959\u20130.996)</td>\n      <td>0.992(0.978\u20130.999)</td>\n      <td>0.00044(0.000103\u20130.00082)</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Observed (sero)prevalence data are accompanied by 95% confidence intervals (95% CI) calculated by the Clopper-Pearson exact method.\u2020Parameter median posterior estimates are presented with 95% Bayesian credible intervals (95% BCI).\u2021Diagnostic sensitivity and specificity jointly fitted for the Copro-Ag ELISA (Allan et al., 1990) across age-prevalence datasets; model parameters interpreted in terms of representing infection, with infection acquisition (\u03bbinf) and infection loss (\u03c1inf) rates.\u00a7Based on the Allan et al., 1990 protocol.\u00b6Best-fitting model determined by DIC (models jointly fitted to multiple dataset).**no protocol specified (assumed to be the Allan et al., 1990 protocol). NA = Not applicable;, PDR: People\u2019s Democratic Republic.\u2020\u2020Model parameters for antibody-based age-seroprevalence data (based on the rES33-immunoblot Wilkins et al., 1999), interpreted in terms of exposure, with Ab-seroconversion (\u03bbsero) and Ab-seroreversion (\u03c1sero) rates.\u2021 \u2021Best-fitting model determined by DIC (models independently fitted to single dataset)._\n\nThe copro-Ag ELISA datasets (Gomes et al., 2002; Mwape et al., 2012) were found in hyperendemic settings (all-age HTT (sero)prevalence \u22653%) in Zambia (6.3%) (Mwape et al., 2012) and Brazil (4.5%) (Gomes et al., 2002). For the models independently fitted to the single dataset in Lao People\u2019s Democratic Republic (Lao PDR) (Holt et al., 2016) using the rES33-immunoblot (Wilkins et al., 1999) and found in an endemic setting (all-age HTT antibody seroprevalence of 2.5%), there was also limited information to differentiate between model fits, with DIC scores similar (within one unit) between the model with and without Ab-seroconversion (Table 1 and Figure 3b). The FoI (\u03bbsero) for the best-fit model to the rES33-immunoblot antibody dataset in Lao PDR (Holt et al., 2016), suggested a very low HTT Ab-seroconversion rate of 0.00046 year\u20131 (all model fits and DIC scores in Supplementary file 3). The Madinga et al., 2017 dataset in the DRC was omitted from the models jointly fitted across copro-Ag ELISA datasets, due to difficulty fitting catalytic models to such a distinct age-prevalence profile with a marked peak in early ages (see Discussion).\n\n### Global human cysticercosis (HCC) antibody seroprevalence\n\nHCC Ab-seroconversion with Ab-seroreversion (reversible model) provided an improved joint fit to the multiple datasets based on the antibody lentil lectin-purified glycoprotein enzyme-linked immunoelectrotransfer blot (LLGP-EITB) assay (Tsang et al., 1989; Table 2 and Figure 4a). These fits were found in the proposed hyperendemic settings (\u22656% HCC seroprevalence; with all-age seroprevalence from 12.7% to 24.7%) in Peru (Lescano et al., 2009; Moro et al., 2003), India (Jayaraman et al., 2011), and Bali (Theis et al., 1994), and an endemic setting in Brazil (1.6%) (Gomes et al., 2002). For the models jointly fitted to multiple datasets based on the IgG Ab-ELISA (DiagAutom, 2016) hyperendemic setting: all-age seroprevalence from 9.6% to 14.5% in Nigeria (Edia-Asuke et al., 2015; Weka et al., 2013), and the models independently fitted to the single dataset from Lao PDR (endemic setting: 3.0% all-age seroprevalence) (Holt et al., 2016) based on the rT24H-immunoblot (Hancock et al., 2006), the (simple) model without Ab-seroreversion provided an improved fit (Table 2 and Figure 4b and c). Supplementary file 4 presents all model fits and DIC scores.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig4-v1.jpg)\n\n**Figure 4.:** Ab-seroconversion (simple) or Ab-seroconversion with Ab-seroreversion (reversible) catalytic models (a & b) jointly fitted to multiple datasets (single diagnostic sensitivity and specificity values estimated; dataset-specific $\\lambda_{sero}$ and $\u03c1_{sero}$ estimates obtained) and (c) models independently fitted to a single dataset, including 95% confidence intervals associated with observed Ab-seroprevalence point estimates. Bayesian Markov chain Monte Carlo methods were used to fit the models to data, with the estimated parameter posterior distributions used to construct predicted (all age) seroprevalence curves and associated 95% Bayesian credible intervals (BCIs). Best-fitting models were selected using the deviance information criterion (DIC); both models presented if difference between DIC < 2 (both models have similar support based on the data); a difference > 10 units indicates that the models are significantly different and therefore only superior fitting model (lowest DIC) is presented. The non-zero predicted seroprevalence at age 0 is due to less than 100% specificity for all tests. The 95% confidence intervals (95% CIs) for age-seroprevalence data-points are calculated by the Clopper-Pearson exact method.\n\n**Table 2.**\n Antibody seroprevalence and parameter estimates for the best-fit catalytic models fitted to each observed human cysticercosis (antibody) age-seroprevalence dataset (ordered by decreasing all-age seroprevalence).Antibody seroconversion and seroreversion rates represent markers of exposure.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset;Country</th>\n      <th>All-age observed sero- prevalence (%)(95% CI)*</th>\n      <th>Catalytic model</th>\n      <th>Diagnostic sensitivity(95% BCI)</th>\n      <th>Diagnostic specificity(95% BCI)</th>\n      <th>\u03bbserosero seroconversion rate, year\u20131(95% BCI)\u2020</th>\n      <th>\u03c1serosero seroreversion rate, year\u20131(95% BCI)\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">Models jointly fitted to multiple datasets (LLGP-EITB assay) \u2021</td>\n    </tr>\n    <tr>\n      <td>Lescano et al., 2009;Peru</td>\n      <td>24.66(21.59\u201327.94)</td>\n      <td rowspan=\"5\">Reversible\u00a7</td>\n      <td rowspan=\"5\">0.976(0.937\u20130.994)</td>\n      <td rowspan=\"5\">0.980(0.967\u20130.988)</td>\n      <td>0.12(0.067\u20130.19)</td>\n      <td>0.38(0.21\u20130.62)</td>\n    </tr>\n    <tr>\n      <td>Moro et al., 2003;Peru</td>\n      <td>20.82(16.48\u201325.71)</td>\n      <td>0.11(0.0504\u20130.21)</td>\n      <td>0.501(0.23\u20130.92)</td>\n    </tr>\n    <tr>\n      <td>Jayaraman et al., 2011;India</td>\n      <td>15.81(13.66\u201318.16)</td>\n      <td>0.019(0.0095\u20130.093)</td>\n      <td>0.105(0.042\u20130.56)</td>\n    </tr>\n    <tr>\n      <td>Theis et al., 1994;Bali</td>\n      <td>12.68(10.48\u201315.16)</td>\n      <td>0.024(0.011\u20130.052)</td>\n      <td>0.16(0.054\u20130.38)</td>\n    </tr>\n    <tr>\n      <td>Gomes et al., 2002;Brazil</td>\n      <td>1.64(0.82\u20132.93)</td>\n      <td>0.000086 (0.000011\u20130.00066)</td>\n      <td>0.43(0.098\u20131.49)</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Models jointly fitted to multiple datasets (IgG Ab-ELISA) \u00b6</td>\n    </tr>\n    <tr>\n      <td>Edia-Asuke et al., 2015;Nigeria</td>\n      <td>14.53(10.72\u201319.06)</td>\n      <td rowspan=\"2\">Simple\u00a7</td>\n      <td rowspan=\"2\">0.872(0.784\u20130.942)</td>\n      <td rowspan=\"2\">0.974(0.916\u20130.998)</td>\n      <td>0.0044(0.0018\u20130.0064)</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Weka et al., 2013;Nigeria</td>\n      <td>9.60(5.06\u201316.17)</td>\n      <td>0.0023(0.00053\u20130.0046)</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Models independently fitted to an single dataset (rT24H-immunoblot)**</td>\n    </tr>\n    <tr>\n      <td>Holt et al., 2016;Lao PDR</td>\n      <td>2.96(1.86\u20134.44)</td>\n      <td>Simple\u2020\u2020</td>\n      <td>0.964(0.914\u20130.988)</td>\n      <td>0.986(0.969\u20130.997)</td>\n      <td>0.00044(0.000049\u20130.00090)</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Observed seroprevalence data are accompanied by 95% confidence intervals (95% CI) calculated by the Clopper-Pearson exact method.\u2020Parameter median posterior estimates are presented with 95% Bayesian credible intervals (95% BCI). NA = Not applicable; PDR: People\u2019s Democratic Republic.\u2021Diagnostic sensitivity and specificity jointly fitted for the LLGP-EITB assay (Tsang et al., 1989) across datasets.\u00a7Best-fitting model determined by DIC (models jointly fitted to multiple datasets).\u00b6Diagnostic sensitivity and specificity jointly fitted for the IgG Ab-ELISA (DiagnosticAutomation/CortezDiagnostic, Inc, 2016) across datasets.**Best-fitting model determined by DIC (models independently fitted to a single dataset).\u2020\u2020Based on the rT24H-immunoblot (Hancock et al., 2006)._\n\n### Global human cysticercosis (HCC) antigen seroprevalence\n\nHCC infection acquisition with infection loss (reversible model) provided an improved fit for models fitted jointly to multiple datasets based on B158/B60 Ag-ELISA (Brandt et al., 1992; Dorny et al., 2000; Table 3 and Figure 5a), found in one hyperendemic setting (all-age HCC seroprevalence of 21.7%) in the DRC (Kanobana et al., 2011), and endemic settings in Zambia (Mwape et al., 2012), Burkina Faso (Sahlu et al., 2019), Lao PDR (Conlan et al., 2012) and Cameroon (Nguekam et al., 2003; all-age HCC seroprevalences from 0.7% to 5.8%). For models fitted to the single dataset from a hyperendemic setting in Kenya (6.61%) (Wardrop et al., 2015), using the HP10 Ag-ELISA (Harrison et al., 1989), the (simple) model without infection loss provided an improved fit (Table 3 and Figure 5b). Supplementary file 5 presents all model fits and DIC scores.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig5-v1.jpg)\n\n**Figure 5.:** Infection acquisition (simple) or infection acquisition and loss (reversible) catalytic models (a) jointly fitted to multiple datasets (single diagnostic sensitivity and specificity values estimated; dataset-specific \u03bbinf and \u03c1inf estimates obtained) and (b) models independently fitted to a single dataset, including 95% confidence intervals associated with observed Ag-seroprevalence point estimates. Bayesian Markov chain Monte Carlo methods were used to fit the models to data, with the parameter posterior distributions used to construct predicted (all age) seroprevalence curves and associated 95% Bayesian credible intervals (BCIs). Best-fitting model selected by deviance information criterion (DIC); both models presented if difference between DIC < 2 (both models have similar support based on the data); a difference > 10 units indicates that the models are significantly different and therefore only superior fitting model (lowest DIC) is presented. The non-zero predicted seroprevalence at age 0 is due to less than 100% specificity for all tests. The 95% confidence intervals (95% CI) for age-seroprevalence data-points are calculated by the Clopper-Pearson exact method.\n\n**Table 3.**\n Antigen seroprevalence and parameter estimates for the best-fit catalytic models fitted to each observed human cysticercosis (antigen) age-seroprevalence dataset (ordered by decreasing all-age seroprevalence).Antigen-based infection acquisition and infection loss rates represent markers of active infection.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset;Country</th>\n      <th>All-age observed seroprevalence (%) (95% CI)*</th>\n      <th>Catalytic model</th>\n      <th>Diagnostic sensitivity(95% BCI)</th>\n      <th>Diagnostic specificity(95% BCI)</th>\n      <th>\u03bbinfinf infection acquisition rate, year\u20131(95% BCI)\u2020</th>\n      <th>\u03c1infinf infection loss rate, year\u20131(95% BCI)\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">Models jointly fitted to multiple datasets (the B158/B60 Ag-ELISA) \u2021</td>\n    </tr>\n    <tr>\n      <td>Kanobana et al., 2011;DRC</td>\n      <td>21.66(19.01\u201324.49)</td>\n      <td rowspan=\"5\">Reversible \u00a7</td>\n      <td rowspan=\"5\">0.909(0.810\u20130.967)</td>\n      <td rowspan=\"5\">0.999(0.995\u20130.999)</td>\n      <td>0.11(0.077\u20130.17)</td>\n      <td>0.330(0.246\u20130.464)</td>\n    </tr>\n    <tr>\n      <td>Mwape et al., 2012;Zambia</td>\n      <td>5.79(4.19\u20137.77)</td>\n      <td>0.0044(0.0027\u20130.0088)</td>\n      <td>0.023(0.001\u20130.085)</td>\n    </tr>\n    <tr>\n      <td>Sahlu et al., 2019;Burkina Faso</td>\n      <td>2.45(1.93\u20133.08)</td>\n      <td>0.0016(0.00091\u20130.0032)</td>\n      <td>0.029(0.0016\u20130.11)</td>\n    </tr>\n    <tr>\n      <td>Conlan et al., 2012;Lao PDR</td>\n      <td>2.22(1.49\u20133.17)</td>\n      <td>0.0018(0.00073\u20130.0034)</td>\n      <td>0.063(0.0076\u20130.12)</td>\n    </tr>\n    <tr>\n      <td>Nguekam et al., 2003;Cameroon</td>\n      <td>0.68(0.47\u20130.95)</td>\n      <td>0.00017(0.000077\u20130.00030)</td>\n      <td>0.004(0.00018\u20130.026)</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Models independently fitted to a single dataset (the HP10 Ag-ELISA) \u00b6</td>\n    </tr>\n    <tr>\n      <td>Wardrop et al., 2015;Kenya</td>\n      <td>6.61(5.57\u20137.76)</td>\n      <td>Simple**</td>\n      <td>0.850(0.735\u20130.927)</td>\n      <td>0.944(0.930\u20130.959)</td>\n      <td>0.00054(0.000053\u20130.0013)</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\"></td>\n    </tr>\n  </tbody>\n</table>\n\n_NA = Not applicable;.DRC: Democratic Republic of the Congo; PDR: People\u2019s Democratic Republic.**Observed seroprevalence data are accompanied by 95% confidence intervals (95% CI) calculated by the Clopper-Pearson exact method.\u2020Parameter median posterior estimates are presented with 95% Bayesian credible intervals (95% BCI).\u2021Diagnostic sensitivity and specificity jointly fitted for the B158/B60 Ag-ELISA (Brandt et al., 1992; Dorny et al., 2000).\u00a7Best-fitting model determined by DIC (models jointly fitted to multiple datasets).\u00b6Based on the HP10 Ag-ELISA (Harrison et al., 1989).**Best-fitting model determined by DIC (models independently fitted to a single dataset)._\n\n### Country-wide analysis of human cysticercosis antibody seroprevalence trends in Colombia\n\nHCC Ab-seroconversion with Ab-seroreversion (reversible model), fitted to multiple datasets using an IgG Ab-ELISA (L\u00f3pez et al., 1988), provided an improved fit across the 23 (out of a total of 24) departments of Colombia (Fl\u00f3rez S\u00e1nchez et al., 2013) included in the analysis. Supplementary file 6 presents parameter estimates from the best-fit reversible model by department (parameter estimates for the simple model fits by department can also be found in Supplementary file 7). Figure 6 presents the best-fit Ab-seroconversion with Ab-seroreversion (reversible) model fit to each age-seroprevalence dataset across departments (Figure 6\u2014figure supplement 1 zooms into model fits in medium to lower all-age seroprevalence departments for improved resolution). One department (Bol\u00edvar) was omitted due to difficultly fitting to such a distinct age-seroprevalence profile (prevalence peak in early ages).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig6-v1.jpg)\n\n**Figure 6.:** Each graph shows observed human cysticercosis Ab age-seroprevalence data (black points) and fitted reversible model (Ab-seroconversion with Ab-seroreversion; best-fitting model). Y-axis units are from 0 to 1 (HCC Ab-seroprevalence), with major y-axis gridlines at 0, 0.2, 0.4, and 0.6 seroprevalence. X-axis units are from 0 to 80 years (human age), with major x-axis gridlines at 0, 20, 40, 60, and 80 years of age.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** For (a) and (b), Departments are arranged in order of highest to lowest overall Department Ab-seroprevalence. Note the different y-axis scale for (a) medium all-age Ab-seroprevalence Departments (0\u20130.3) and (b) low all-age Ab-seroprevalence Departments (0\u20130.15).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Blue departments are those included in the model fitting for this chapter. Bolivar* was not included in the model fitting (hence the Department is coloured in grey) - a full assessment is provided in the Results/Discussion of the main text regarding the exclusion of Bolivar. Data from Fl\u00f3rez S\u00e1nchez et al., 2013 and the Instituto National de Salud (INS).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig6-figsupp3-v1.jpg)\n\nFigure 7 highlights the geographical variation in a HCC Ab-seroconversion or FoI, (b) HCC Ab-seroreversion rate and c the HCC antibody all-age seroprevalence, across the 23 departments. In addition, Figure 7 presents substantial geographical variation in risk factors, including: (d) the proportion of individuals owning pigs, and (e) the proportion of individuals reporting open defecation practices by department (Figure 7\u2014figure supplement 1 highlights variation in the proportion of pigs being kept under free-ranging management practices and the proportion of pigs being kept under free-ranging/mixed practices in those owning pigs (n=3157)).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig7-v1.jpg)\n\n**Figure 7.:** The FoI (\u03bbsero) and Ab-seroreversion (\u03c1sero) rates are parameter estimates obtained from the best-fit model with HCC Ab-seroconversion and Ab-seroreversion (reversible model). Note that San Andr\u00e9s department is not clearly shown because of its size (small islands located in the top-left of a-c maps). For context, an all-age HCC Ab-seroprevalence=0.126, HCC Ab-seroconversion rate (FoI or \u03bbsero)=0.023 year-1, and HCC Ab-seroreversion rate (\u03c1sero)=0.19 year-1 was obtained in San Andr\u00e9s.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** These proportions are for a subset of the total dataset, only analysing those owning pigs (n=3,157).\n\n### Force-of-infection across settings\n\nA more intuitive approach to understanding the FoI (\u03bb) is to consider its reciprocal, which here corresponds to the average time until humans become Ab-seropositive (1/\u03bbsero) or infected (1/\u03bbinf) as inferred through Ag-seropositivity. Equally, the reciprocal of \u03c1 relates to the average duration that humans remain Ab-seropositive (1/\u03c1sero) or infected (1/\u03c1inf). Given the large number of estimates obtained for HCC, parameter estimates from best-fit models were compared across settings (by all-age (sero)prevalence of each dataset and by country). Figure 8 shows an overall decline in the average time (in years) until humans become HCC Ab-seropositive or infected with increasing all-age HCC (sero)prevalence, noting 18 studies identified in endemic settings (0.48\u20135.71% all-age HCC (sero)prevalence), and 19 estimates in hyperendemic settings (6.33\u201338.68% all-age HCC seroprevalence). Within countries, there was significant variation in times until humans become HCC Ab-seropositive or infected (Figure 8\u2014figure supplement 1a).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig8-v1.jpg)\n\n**Figure 8.:** The plot is stratified by proposed endemicity levels defined as endemic (>0% and<6% all-age HCC seroprevalence), and hyperendemic (\u22656% all-age HCC seroprevalence).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Marker colour denotes: red = Ab-seroprevalence; blue = antigen seroprevalence. Solid diamonds denote the use of the reversible catalytic model; circles are for the simple (Ab-seroconversion-only) model. Error bars are 95% Bayesian Credible Intervals around estimates. Colombia department error-bars are translucid to improve visibility of median estimates.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** The bottom panels show whether the magnitude in difference between \u03c1: \u03bb with increasing (sero)prevalence (as a proxy for transmission intensity).\n\nFigure 8b presents strong evidence for similar average durations of remaining Ab-seropositive (1/\u03c1sero) across different endemicity settings and countries (Figure 8\u2014figure supplement 1b). However, there was evidence for a trend of decreasing duration of humans remaining infected (1/\u03c1inf) with increasing all-age prevalence (antigen-based studies; n=5). Figure 8\u2014figure supplement 2 shows the relationship between Ab-seroconversion and Ab-seroreversion rates, and the relationship between infection acquisition rates and infection loss rates.\n\n## Discussion\n\nThis paper presents the first global FoI estimates for T. solium HTT and HCC, identifying geographical heterogeneity that supports calls to implement both locally-adapted control efforts (Johansen et al., 2017Gabri\u00ebl et al., 2017), and setting-specific parameterisations of T. solium transmission models to support such efforts (Dixon et al., 2019). We have also placed our HTT FoI estimates in the context of (putative) endemic or hyperendemic settings, with 0.44 per 1,000 people per year for a (single) endemic setting, and from 9.6 to 21 per 1000 per year for two hyperendemic settings. HCC FoI estimates ranged from 0.086 to 21 per 1000 per year in (18, including Colombian departments) endemic settings (0.086\u201321 for Ab-based surveys; 0.17\u20134.4 for Ag-based surveys), and from 0.54 to 120 per 1000 per year in (19) hyperendemic settings (2.3\u2013120 for Ab-based surveys; 0.54\u2013110 for Ag-based surveys). Further work will be required to refine the proposed (and preliminary) characterisation of endemicity levels, perhaps linked to severity/morbidity as in other NTDs (Prost et al., 1979; Smith et al., 2013). This will be relevant to inform what constitutes a hyperendemic setting in need of intensified control interventions, as proposed in the WHO 2021\u20132030 goals for T. solium (Havelaar et al., 2015; World Health Organization, 2020). Our work also follows the five principles distilled by Behrend et al., 2020 for communicating policy-relevant NTD modelling to stakeholders and implementation partners (Supplementary file 8).\n\nAcross epidemiological settings, there was a clear trend of decreasing average time until humans become HCC Ab-seropositive or infected as inferred through Ag-seropositivity (the reciprocal of \u03bbsero or \u03bbinf) with increasing all-age seroprevalence. This makes intuitive sense as the FoI increases in settings with more intense transmission (reflected by a higher all-age seroprevalence). It was not possible to discern whether such trends exist for HTT given the limited availability of HTT datasets with age-stratified prevalence data. Infection loss with infection acquisition was indicated for two HTT copro-Ag-ELISA-based surveys, and five of six HCC antigen-based surveys, supporting inclusion of parameters representing recovery from HTT and HCC in T. solium transmission models (Dixon et al., 2019). Our infection loss rates for HTT indicate that the duration of adult tapeworm infection (the reciprocal of \u03c1inf) ranges from 1.3 to 1.4 years (with uncertainty bounds from 1.0 to 2.8 years), aligning with literature estimates suggesting that adult tapeworms live for less than 5 years (Garcia et al., 2014), although our values are only based on two studies. In addition, reinfection of individuals with the adult tapeworm is also likely to occur, particularly in high-endemicity settings; therefore, the persistence of antibodies against the adult worm is likely to complicate the measurement of reinfection rates (where antibody seroconversion is equated to infection, although we take care to differentiate between these two processes when interpreting the \u03bbsero and \u03bbinf parameters). However, with the limited number of HTT-based surveys available to estimate antibody seroconversion and duration of antibody parameters, it is difficult to determine to what extent this is an issue. Understanding antibody kinetics in relation to spontaneous death and elimination of the adult tapeworm (either naturally or following treatment) is therefore an important area for further consideration, especially towards understanding whether seroreversion rates are related to baseline antibody levels. HCC Ab-seroreversion rates (or infection loss rates) from this analysis are also consistently larger than HCC Ab-seroconversion rates (or infection acquisition rates), in agreement with comparisons of HCC Ab-seroreversion to Ab-seroconversion (or Ag-seroreversion to Ag-seroconversion) estimates in the literature, which are generally based on cumulative seroconversion and seroreversion proportions, or rule-based modelling approaches (Dermauw et al., 2018; Garcia et al., 2001; Coral-Almeida et al., 2015; Mwape et al., 2013).\n\nSome of the modelled estimates presented here indicate large differences between FoI and Ab-seroreversion/infection loss rates. These differences are particularly evident in datasets, such as Brazil (Gomes et al., 2002) and Risaralda Department in Colombia (Fl\u00f3rez S\u00e1nchez et al., 2013), where the reversible model was selected for flat age-(sero)prevalence profiles in low (sero)prevalence settings, where the seroreversion parameter provided minimal information with large uncertainty. The flat age-(sero)prevalence in these settings may also be likely explained by false-positives generated given the slightly sub-optimal performance of the serological antibody diagnostic used e.g. posterior median specificity estimates of 98% in Brazil (Gomes et al., 2002) for the antibody LLGP-EITB test (Tsang et al., 1989), highlighting issues with imperfect specificity of diagnostics in settings with very low transmission intensity.\n\nThe high cysticercosis Ab-seroreversion rates indicated across datasets are likely indicative of substantial transient responses generated from exposure without establishment of infection. This may also explain the high all-age Ab-seroprevalence estimates observed in field studies (Garcia et al., 2001). Even with Ag-based surveys, a marker of infection rather than exposure, Ag-positivity may still indicate some degree of transient responses due to partial establishment of (immature) cysts or establishment followed by rapid degeneration of (mature) cysts (Mwape et al., 2012). One expectation was that Ab-seroreversion and infection loss rates are fundamentally biological processes so would be fairly consistent across settings. Since Ab-seroreversion or infection loss parameters were allowed to vary among settings, the consistency of the posterior estimates for these parameters indicates that rates of HCC Ab-seroreversion are stable (i.e. no relationship between all-age Ab-seroprevalence and the average duration humans remain Ab-seropositive, Figure 8b; no relationship between the Ab-seroconversion and Ab-seroreversion rates, Figure 8\u2014figure supplement 2), confirming this a priori expectation. The average duration humans remain infected (i.e., the reciprocal of the HCC infection loss rate), however, decreases with increasing seroprevalence (and a positive relationship between infection acquisition rates and infection loss rates, Figure 8\u2014figure supplement 2). Such a signal seen for Ag-based estimates, albeit with only 5 observations, may indicate increased transient responses in higher transmission settings due to more partial establishment of infection. There is however an absence of wider literature to support the hypothesis of exposure intensity affecting probability of successful parasite establishment, but such (transmission intensity-dependent) parasite establishment processed have been incorporated into transmission models for other NTDs (Hamley et al., 2019), highlighting an area of future research with implications for control efforts. In the case of Ab-seroreversion rates, where more data are available compared to infection loss rates, it may be suitable in future work to jointly fit the \u03c1sero parameter for reversible models across settings.\n\nThis analysis also provides, for the first time, a detailed country-level analysis, focused on Colombia, exploring the geographical variation of key epidemiological metrics (FoI and antibody seroreversion) alongside understanding potential drivers of these trends, using a rich dataset generated by Fl\u00f3rez S\u00e1nchez et al., 2013. Our results identify substantial subnational variation in HCC FoI (measured by Ab-seroconversion) and Ab-seroreversion rates. There appears to be only a limited relationship between these epidemiological quantities, Ab-seroprevalence and other risk factors, including open defecation and pig ownership at the department level, highlighting the complex nature of exposure drivers for HCC. For example, the southeastern rural departments of Vaup\u00e9s and Amazonas show the highest all-age seroprevalence and FoI estimates. But while Vaup\u00e9s has one of the highest reported proportions of open defecation, pig ownership is low in both departments. Notwithstanding, substantial subnational variation indicates the need for tailored subnational approaches to control. Spatial variation has been explored formally for this dataset by including spatial structure (i.e. spatial correlation in seropositivity estimated up to approximately 140 km at the Municipality level) into a risk factor analysis, and identifying hot spots of unexplained residual clustering in northern and southern municipalities in Colombia (Galip\u00f3 et al., 2021). The findings from this study further supports the requirement for designing subnational and targeted interventions (risk groups such as those with low education levels and displaced persons), alongside the need to understand epidemiological dynamics at the subnational level.\n\nA potential limitation of this study is the assumption that diagnostic sensitivity and specificity for a single diagnostic test do not vary substantially among settings (implied by estimating a single posterior for specificity and sensitivity using data from multiple surveys that used the same diagnostic). In reality, there may be some variation in diagnostic performance between settings, particularly for HTT serological diagnostics. For example, the widely used copro-Ag ELISA for detecting adult tapeworm infection is not species specific (Ng-Nguyen et al., 2017). Literature estimates indicate high specificity of HCC diagnostics; however, a proportion of positive results by both HCC Ag- and Ab- diagnostics may be due to transient responses and cross-reactions following exposure to the eggs of other other helminths including Taenia saginata, Echinoccous granulosus and Schistosomia species (Lightowlers et al., 2016b; Noh et al., 2014; Kojic and White, 2003; Furrows et al., 2006). Limited information exists on the co-distribution and prevalence of potentially cross-reactive Taenia species (such as Taenia saginata) and other helminths to determine the relative contribution of within- and between-location variability in the performance of specific diagnostic tests.\n\nThe prevailing (and most parsimonious) assumption governing the behaviour of the catalytic models fitted in this analysis is of a constant FoI with respect to age. Collated age-(sero)prevalence profiles presented here largely reveal increasing (sero)prevalence with age, or saturation with age through Ab-seroreversion/infection loss, but this behaviour can also be observed with age-dependent infection rates (Grenfell and Anderson, 1985). However, the available data limit the testing of more complex FoI functions. A few datasets appeared indeed to deviate from the basic assumption, for example for HTT dynamics in the DRC (Madinga et al., 2017) and Bol\u00edvar in Colombia (Fl\u00f3rez S\u00e1nchez et al., 2013). While it was not possible to fit the current formulation of catalytic models to these datasets, the specific age-prevalence peaks in younger ages may indicate other drivers such as heterogeneity in exposure (by age) or age-related immunity mechanisms. The observations of HTT copro-Ag-ELISA age-prevalence peaks/odds of infection in children from Peru, Guatemala and Zambia (Falcon et al., 2003; Allan et al., 1996; Mwape et al., 2015) suggest that these trends might be more widespread. Age peaks in HTT prevalence could indicate the need for targeted mass drug administration (MDA) programmes, such as delivery of anthelminthics (praziquantel) to school-age children, an approach that could be integrated into existing schistosomiasis control programmes where HTT and schistosomiasis are co-endemic. Should more age-prevalence data become available, especially for HTT, fitting models with age-varying FoI may become relevant as indicated in other NTDs (Gambhir et al., 2009).\n\nThe results presented here, particularly for HCC, where many datasets were available, suggest marked geographical heterogeneity in FoI and associated all-age (sero)prevalence estimates. This indicates substantial variation in the intensity of T. solium transmission among endemic settings. There is strong evidence for both HCC Ab-seroreversion and infection loss, likely due to transient dynamics which highlights the need for careful interpretation of cross-sectional (sero)prevalence survey estimates. Catalytic models provide useful tools for interpreting such data, which are far more abundant than a few longitudinal surveys reported in the literature. We also quantify, for the first time, the presence of substantial subnational variation in exposure to HCC, highlighting the need for tailored, sub-national control strategies. More work is also required to understand whether age-prevalence peaks (as observed for HTT) are more commonplace, and whether age-targeted control strategies may be required under specific epidemiological and socioeconomic conditions.\n\n## Methods\n\n### Identifying relevant literature, data sources and data extraction\n\nPublished articles with HTT and HCC age-(sero)prevalence or age-infection data suitable for constructing age-stratified profiles were identified through two routes. Firstly, by extracting eligible studies from a systematic review of T. solium HTT and HCC (sero)prevalence global ranges (Coral-Almeida et al., 2015), and secondly, by updating the Coral-Almeida et al., 2015 review, using the same strategy (see Appendix 1), for the period 01/11/2014 to 02/10/2019.\n\n### Sub-national dataset for Colombia\n\nFl\u00f3rez S\u00e1nchez et al., 2013 conducted a country-level survey of HCC antibody seroprevalence across 24 of Colombia\u2019s 32 administrative departments, sampling 29,360 individuals. Permission was granted from Instituto National de Salud to analyse these data to construct age-seroprevalence profiles. The study collected human cysticercosis Ab-seroprevalence data in the period 2008\u20132010,, alongside risk-factor data using a three-stage clustered random sampling framework. To maintain suitable sample sizes for model fitting, age-seroprevalence profiles were constructed at the department level (n=850\u20131291; Figure 6\u2014figure supplement 2), rather than at municipality level (n=40\u20131140). Age-seroprevalence profiles stratified by sex in each department revealed no clear differences (Figure 6\u2014figure supplement 3), therefore age-seroprevalence data were not stratified by sex for further analysis (but see Galip\u00f3 et al., 2021). Due to difficulty fitting the specific catalytic models to data from the department of Bol\u00edvar, only 23 of 24 departments were assessed (n=28,100).\n\n### Force-of-infection modelling for human taeniasis and human cysticercosis\n\nThe FoI, which describes the average (per capita) rate at which susceptible individuals seroconvert (become Ab-positive) or become infected, was estimated for HTT and HCC for each dataset. Simple and reversible catalytic models (Figure 2), originally proposed for fitting to epidemiological data by Muench, 1934, were fitted to HTT and HCC age-(sero)prevalence profiles. Model parameters fitted to Ab-datasets were interpreted as Ab-seroconversion (\u03bbsero) and Ab-seroreversion (\u03c1sero) rates, while (copro-) Ag-datasets were interpreted as infection acquisition (\u03bbinf) and infection loss (\u03c1inf) rates (Figure 2 provides further details of model structure and parameter interpretation). Like the FoI, the infection loss/ seroreversion parameter (\u03c1) was also permitted to vary across settings (Dermauw et al., 2018). These two model configurations represent fundamentally different processes (i.e. presence or absence of Ab-seroreversion or infection loss). Therefore, it was the intention of this analysis to explore which of these processes best captures available age-(sero)prevalence data across different epidemiological settings, given the current knowledge gaps in the literature. In particular, there is minimal knowledge relating to how long taeniasis and cysticercosis infections and seropositivity persist in human hosts, on average (estimated here by the reciprocal of infection loss and Ab-seroreversion rates). This enabled us to consider the possibility that transmission intensity drives the presence and extent of infection loss and Ab-seroreversion rates (due to transient antigen responses and/or partial parasite establishment, as explored in the Discussion).\n\nThe true prevalence p(a) at age a is given for the simple model by,\n\n$$\np(a)=1\u2212\u00a0e^{\u2212\\lambda(a)}\n$$\n\n\n\n$$\np(a)=\\frac{\\lambda}{\\lambda+\u03c1}[1\u2212\u00a0e^{\u2212(\\lambda+\u03c1)(a)}]\n$$\n\n### Model fitting and comparison\n\nAnalyses were performed in (R Development Core Team, 2021), following Dixon et al., 2020. A likelihood was constructed assuming that the observed data (representing a binary presence/absence of markers related to exposure or infection) are a realization of an underlying binomial distribution with probability p(a), given by the catalytic model, and adjusted to give the observed prevalence, p\u2019(a), by the sensitivity (se) and specificity (sp) of the diagnostic adopted in the respective datasets (Diggle, 2011),\n\n$$\np^{\u2032}(a)=(1\u2212sp)+(se+sp)\u22121\\timesp(a)\n$$\n\nTherefore, the likelihood of the data on the number of observed Ab-seropositive or infected humans of age a, r(a), from n(a) humans is,\n\n$$\nL(r,n|\\theta)=\u03a0_{a}p^{\u2032}(a)^{r(a)}[1\u2212p^{\u2032}(a)]^{n(a)\u2212r(a)}\n$$\n\nwhere \u03b8 denotes, generically, the catalytic model (i.e. FoI, seroreversion/infection loss) and diagnostic performance (i.e. sensitivity and specificity) parameters. When the same diagnostic was used across surveys, sensitivity and specificity were assumed to be the same among surveys, yielding a single posterior distribution for the diagnostic performance (sensitivity, specificity) for each test (whilst retaining dataset-specific estimates of \u03bb and \u03c1). The approach captures uncertainty in diagnostic sensitivity and specificity, but does not permit variation in performance across settings.\n\nA Bayesian Markov chain Monte Carlo (MCMC) Metropolis\u2013Hastings sampling algorithm was implemented to estimate the parameter posterior distribution f(\u03b8|r, n), assuming uniform prior distributions for \u03bb and \u03c1 (Table 4). A weakly informative prior for \u03bb, assuming a lognormal distribution (mean informed by the median estimate from the simple model fit, and a standard deviation of 1), was used for reversible model fits to prevent \u03bb chains drifting to flat posterior space and failing to converge.\n\n**Table 4.**\n Range for force-of-infection (FoI), \u03bb, and seroreversion / infection loss, \u03c1, uniform priors.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>T.T. solium indicator</th>\n      <th>\u03bb: limits on uniform prior (year\u20131)</th>\n      <th>\u03c1: limits on uniform prior (year\u20131)</th>\n      <th>Rationale</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HTT (copro-antigen (Ag) and antibody (Ab))</td>\n      <td>Minimum: 0Maximum: 12</td>\n      <td>Minimum: 0.333Maximum: 1</td>\n      <td>\u03bb: maximum seroconversion rate of 12 year\u20131=1 month\u20131 (1/\u03bb), representing the lower limit before humans become copro-Ag positive (i.e., infected) or Ab-seropositive of 1 month\u03c1: minimum Ab-seroreversion or infection loss rate of 0.333 year\u20131=0.0277 month\u20131, or 36 month duration (1/\u03c1) for humans to remain copro-Ag (i.e. infected) or Ab- seropositive, reflecting the upper average limit assumed for the life- expectancy of adult Taenia solium of 3 years (Gonzalez and Rosenheck, 2002); a maximum of 0.0833 month\u20131 represents the minimum time humans remain copro-Ag (i.e., infected) or Ab-seropositive reflecting the minimum life-expectancy of the adult worm of 12 months (Garc\u00eda et al., 2003) (1/ \u03c1)</td>\n    </tr>\n    <tr>\n      <td>HCC (antigen and antibody)</td>\n      <td>Minimum: 0Maximum: 12</td>\n      <td>Minimum: 0Maximum: 12</td>\n      <td>Both \u03bb and \u03c1: maximum infection acquisition/loss or Ab-seroconversion / Ab-seroreversion rate of 12 year\u20131=1 month\u20131 represents the lower limit before humans acquire infection or become Ab-seropositive (1/\u03bb), or remain HCC antigen (i.e., infected) or Ab-seropositivity (1/\u03c1) of 1 month.</td>\n    </tr>\n  </tbody>\n</table>\n\n_N.B. The reciprocal of the rates of \u03bb and \u03c1 give the duration of susceptibility (1/\u03bb; 1/\u03bbsero for Ab-based, or 1/\u03bbinf for Ag-based) or of remaining infected or Ab-seropositive (1/\u03c1; 1/\u03c1sero for Ab-based, or 1/\u03c1inf for Ag-based). HTT: human taeniasis; Ab: antibody; Ag: antigen; HCC: human cysticercosis._\n\nInformative beta distribution priors for the diagnostic sensitivity and specificity were defined to capture literature estimates of the mean and 95%CIs for these parameters; Figure 9 and Figure 10 with Supplementary file 1, provide more detail.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig9-v1.jpg)\n\n**Figure 9.:** \u03b2 prior distributions for: (a) sensitivity (se) (left-hand column plots); (b) specificity (sp) (right-hand column plots) of each diagnostic, constructed with \u03b1 and \u03b2 shape parameters provided in Supplementary file 1. The \u03b2 distribution provides a more flexible alternative to the uniform distribution, where the parameters of interest are constrained between 0 and 1. The shape parameters were chosen based on the literature estimates of se and sp (whereby \u03b1/(\u03b1+\u03b2)) equals the mean of the distribution (Lambert, 2018), and adapted where required to ensure that the spread of the prior distribution included the 95% confidence intervals identified in the literature. Ag: antigen; ELISA: enzyme-linked immunosorbent assay; Ab: antibody; EITB: enzyme-linked immunoelectrotransfer blot.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/76988/elife-76988-fig10-v1.jpg)\n\n**Figure 10.:** \u03b2 prior distributions for: (a) sensitivity (se) and (b) specificity (sp) of each diagnostic, constructed with \u03b1 and \u03b2 shape parameters provided in Supplementary file 1. The \u03b2 distribution provides a more flexible alternative to the uniform distribution where the parameters of interest are constrained between 0 and 1 (Lambert, 2018). The shape parameters were chosen based on the literature estimates of se and sp (whereby \u03b1/(\u03b1+\u03b2)) equals the mean of the distribution (Lambert, 2018), and adapted where required to ensure that the spread of the prior distribution included the 95% confidence intervals identified in the literature. Ab: antibody; ELISA: enzyme-linked immunosorbent assay; EITB: enzyme-linked immunoelectrotransfer blot; LLGP: lentil lectin-purified glycoprotein; Ig: immunoglobulin; Ag: antigen.\n\nA maximum of 20,000,000 iterations were run for models fitted simultaneously to multiple datasets (2,000,000 for models fitted to single datasets) to obtain a sufficient sample to reduce autocorrelation through substantial subsampling, with the first 25% of runs being discarded as burn-in. The parameter posterior distributions, used to generate fitted prevalence curves and associated uncertainties for each model fit, were summarised using the median and 95% Bayesian credible intervals (95% BCIs). Simple and reversible model fits, after being fitted to all datasets, were compared using the deviance information criterion (DIC) (Spiegelhalter et al., 2002), with the model yielding the smallest DIC score being selected (Supplementary files 3\u20135).\n\n### Data and code availability\n\nCode to replicate the analysis is provided at https://github.com/mrc-ide/human_tsol_FoI_modelling, (copy archived at swh:1:rev:b3eb4c05a42a882c13fb755c3e50dfda0f3e4ef3; Dixon, 2022). All age-(sero)prevalence data are available in the following data repository: http://doi.org/10.14469/hpc/10047. Original data for two datasets available (under the Creative Commons Attribution License; CC BY 4.0) from the International Livestock Research Institute open-access repository (http://data.ilri.org/portal/dataset/ecozd) referenced in Holt et al., 2016 and University of Liverpool open-access repository (http://datacat.liverpool.ac.uk/352/) referenced in F\u00e8vre et al., 2017.\n",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "bbb91b31-f683-4304-8717-6874179d8ce0",
+      "submission_id": "189f9ad9-fe25-4b4d-867a-6a85f7b6b604",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marcelo U Ferreira, https://ror.org/036rp1748 University of S\u00e3o Paulo Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76988.sa0](https://doi.org/10.7554/eLife.76988.sa0)\n\nDixon and colleagues have collated published \"age-prevalence\" data from 16 studies (4 from South America, 8 from Africa, and 4 from Asia) to estimate the force of infection of taeniasis/human cysticercosis across diverse endemic settings. This study addresses a major knowledge gap, as little is currently known regarding the extent of current/recent Taenia solium transmission worldwide. The main limitation of this interesting study originates from the very nature of the primary data analyzed. Authors examine how the prevalence of (genus- but not species-specific) antigens shed in the stools or in the plasma and (more or less stage- and species-specific) antibodies changes across age groups and fit simple catalytic models to these very heterogeneous datasets.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marcelo U Ferreira, https://ror.org/036rp1748 University of S\u00e3o Paulo Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76988.sa1](https://doi.org/10.7554/eLife.76988.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Global Force-of-Infection Trends for Human Taenia solium Taeniasis/Cysticercosis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Marcelo U Ferreira as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Miles Davenport as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please add a more detailed discussion about the limitations of the dataset analyzed (reviewer #1). Address the potential differences between antigen and antibody detection, the differences between laboratory methods used in each primary study (e.g., species-specificity, sensitivity) and openly discuss how these differences may affect the current analysis.\n\n2) Please specifically address why the reversible catalytic model has been used to fit some data, while the simple (non-reversible) version has been used to fit other datasets. What is the rationale for using such models with such different assumptions (reviewer #2)?\n\n3) Please correct the typos listed by reviewers #2 and #3.\n\nReviewer #1 (Recommendations for the authors):\n\nSome suggestions are listed below. Given that no new data are to be generated by the authors, I primarily focus on ways of acknowledging the limitations of available data and discussing how can they impact this study.\n\n1. I would like to see a much more comprehensive discussion on \"seroreversion\" in human taeniasis and cysticercosis. The basic question is: how quickly antibodies become undetectable after treatment or following spontaneous worm death and elimination? Do seroreversion rates depend on average levels of antibodies at baseline, before treatment (i.e., are individuals heavily exposed to infection within the past few years more likely to remain seropositive long after treatment even in the absence of reinfection)?\n\n2. If antibodies are not quickly cleared, then seroconversion rates are not synonymous with \"infection rates\". In a population with heterogeneous exposure to infection, individuals more frequent exposed to infection may remain seropositive for longer (even if treated) because of memory responses and their antibody status will not change upon reinfection (i.e., they will remain positive). There is a potential bias towards underestimating infection rates from seroconversion data -- especially among individuals who are most likely to be (re)infected..\n\n3. If the antibody-detection assay used in the Colombian study (described in a local publication, not available to this reviewer) is not strictly species- and stage-specific, and also short-lived (i.e., if only individuals currently exposed to T. solium cysticerci are positive), the age-related prevalence of \"cysticercosis\" may have been grossly overestimated in this country.\n\n4. If prevalence data from selected study sites in a dozen countries cannot be taken as representative of the countries/regions of origin, the study is far from being able to estimate \"global force-of-infection trends\". Please provide further information regarding the primary studies, in addition to those in Table S1, to help the reader decide whether or not some extrapolation is possible.\n\nReviewer #2 (Recommendations for the authors):\n\nAlthough the work is well written and very organized, I have some concerns about the model and assumptions used in the analysis.\n\nEquation 3 is different than the one reported by Diggle, 2011. One essential set of parentheses is missing. Please, clarify it.\n\nThe methods section would be improved by presenting the motivations for the models' choice and a brief description of them, including assumptions and limitations. Although the reversible catalytic model (rho>0) is a generalization of the simple form (rho=0), there are two mutually exclusive assumptions: either only conversion or conversion and reversion. Because of it, unless well justified, it seems unlike that a particular pattern of an infectious disease could be described considering two fundamentally different biological processes. As observed in Figures 2, 3 and 4, the data sometimes support the simple model, sometimes support the reversible, and sometimes it is not possible to decide. It means to me that it is not possible to decide between both designs which encapsulates the mechanism driving the disease age-prevalence presented by the data. Please, clarify it.\n\nAnother concern is regarding to the saturation of the reversible model. The current formulation assumes that all individuals are exposed/susceptible to the disease and, therefore, its saturation is controlled by the reversion rate parameter (rho). The greater rho, the lower the saturation. Hypothetically, one can think of a situation in which just a fraction of the population is exposed/susceptible to an underlined disease. In this scenario, the greater the fraction of individuals not exposed/susceptible, the greater the interference bias of the reversion rate. I wonder whether the authors believe that this is a reasonable possibility and, in the affirmative case, please acknowledge the limitation of the methodology.\n",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "95088182-8620-404f-a090-2cfc478a9390",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C1",
+      "claim": "Taenia solium is ranked as the foodborne parasitic infection contributing the highest number of disability-adjusted life-years (DALYs), an estimated 2.78 million DALYs in 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, T. solium is ranked as the foodborne parasitic infection contributing the highest number of disability-adjusted life-years (DALYs), an estimated 2.78 million DALYs in 2010 (Havelaar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Havelaar et al., 2015, which provides the specific DALY estimate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "c51d5fce-14e5-45da-9826-cd988e212786",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C2",
+      "claim": "Neurocysticercosis causes approximately one third of epilepsy/seizure disorders in endemic settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurocysticercosis is responsible for the major health burden associated with T. solium, causing approximately one third of epilepsy/seizure disorders in endemic settings (Gripper and Welburn, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gripper and Welburn, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "be65ae67-dfb2-4f28-8a4a-cd70a1149ca2",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C3",
+      "claim": "The WHO 2021\u20132030 NTD roadmap proposes that 30% of endemic countries achieve intensified T. solium control in hyperendemic areas by 2030.",
+      "claim_type": "EXPLICIT",
+      "source": "The World Health Organization (WHO) 2021\u20132030 Neglected Tropical Diseases roadmap has proposed that 30% of endemic countries achieve intensified T. solium control in hyperendemic areas by 2030.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and references the WHO roadmap.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "7592baf1-95d7-4ec2-b047-24af98b427f7",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C4",
+      "claim": "Control strategies for T. solium have proven efficacious in field studies but no large-scale interventions have been rolled out as part of national NTD programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "These control strategies have proven efficacious in field studies (de Coster et al., 2018; Dixon et al., 2021), but to date no large-scale interventions have been rolled out as part of national Neglected Tropical Disease (NTD) programmes, and therefore their impact alone or in combination in different epidemiological settings remains poorly understood and/or modelled (CystiTeam Group for Epidemiology and Modelling of Taenia solium Taeniasis/Cysticercosis, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to field studies (de Coster et al., 2018; Dixon et al., 2021) and a modeling group report (CystiTeam Group, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "47d0961b-692b-42b5-8c23-66f227b5a10d",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C5",
+      "claim": "The WHO NTD 2021\u20132030 roadmap focuses on achieving intensified control in hyperendemic areas of 17 (27%) endemic countries.",
+      "claim_type": "EXPLICIT",
+      "source": "The milestones proposed in the new World Health Organization (WHO) NTD 2021\u20132030 roadmap (Havelaar et al., 2015; World Health Organization, 2020) focus on achieving intensified control in hyperendemic areas of 17 (27%) endemic countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to the WHO roadmap documents (Havelaar et al., 2015; World Health Organization, 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "294eae4e-f7b9-4d32-8f3d-6cfaedb109d0",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C6",
+      "claim": "Endemicity levels for T. solium have not been defined in terms of infection indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "However, endemicity levels for T. solium have not been defined in terms of infection indicators and there exist limited data on the geographical distribution of T. solium prevalence at national scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "817af52e-0873-46be-b793-3dc48a5a9b6b",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C7",
+      "claim": "After systematic review screening, a total of 16 studies were included in the analysis, originating from South America (n=4), Africa (n=8) and Asia (n=4).",
+      "claim_type": "EXPLICIT",
+      "source": "After title, abstract and full-text eligibility screening of 236 studies initially identified (01/11/2014 to 02/10/2019), and 11 studies included in the Coral-Almeida et al., 2015 literature review, a total of 16 studies were included in the analysis (PRISMA flowchart; Figure 1), originating from South America (n=4), Africa (n=8) and Asia (n=4) (Figure 1\u2014figure supplement 1) and split by n=4 HTT and n=15 HCC surveys (full details in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the systematic review process described in the text and illustrated in Figure 1 (PRISMA flowchart).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "128e00fd-0551-44f5-9dbf-5303084448cd",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C8",
+      "claim": "Total sample sizes were 6,653 individuals across HTT surveys with individual age range of <1\u201396 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Total sample sizes were 6,653 individuals (range 576\u20134599; with individual age range of <1\u201396 years) across HTT surveys, which included three copro-Ag-based surveys and one Ab-based survey",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with specific sample size data from the included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "cd6ca731-339f-41a2-9ec3-2983a7291785",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C9",
+      "claim": "Observed seroprevalence ranged from 4.5% to 23.4% for HTT surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed (sero)prevalence ranged from 4.5% to 23.4% (95% confidence interval (CI) range: 3.0\u201324.6%) for HTT surveys",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with specific prevalence ranges from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "7c96f948-9a8a-46a5-bc78-08b94cf571e8",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C10",
+      "claim": "Hyperendemic transmission settings are defined as those with all-age observed HTT (sero)prevalence of \u22653% and all-age observed HCC (sero)prevalence of \u22656%.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined hyperendemic transmission settings as those with all-age observed HTT (sero)prevalence of \u22653% and all-age observed HCC (sero)prevalence of \u22656%. Studies with (sero)prevalence values below these were defined as endemic transmission settings. These putative endemicity definitions were defined following a literature review of studies referring to 'hyper' or 'highly' endemic settings (Supplementary file 2 with additional explanatory text in Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a definition developed by the authors based on a literature review.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "12a6ffca-be8b-4c0c-af20-ecb66ac86555",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C11",
+      "claim": "For the copro-Ag ELISA datasets, DIC scores were similar (within one unit) between models with and without infection loss.",
+      "claim_type": "EXPLICIT",
+      "source": "For the copro-Ag ELISA datasets (to which models were jointly fitted to yield a single sensitivity and specificity posterior), DIC scores were similar (within one unit) between models with and without infection loss (Table 1 and Figure 3a), indicating limited information to differentiate between model fits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DIC scores presented in Table 1 and Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "5b7d726c-1e08-4658-977a-6e56fb8c94c7",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C12",
+      "claim": "The copro-Ag ELISA datasets were found in hyperendemic settings in Zambia (6.3%) and Brazil (4.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "The copro-Ag ELISA datasets (Gomes et al., 2002; Mwape et al., 2012) were found in hyperendemic settings (all-age HTT (sero)prevalence \u22653%) in Zambia (6.3%) (Mwape et al., 2012) and Brazil (4.5%) (Gomes et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with specific prevalence values and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "0cc7a96b-7bc5-4571-8831-e5ba6cd8144d",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C13",
+      "claim": "HCC Ab-seroconversion with Ab-seroreversion (reversible model) provided an improved joint fit to the multiple datasets based on the LLGP-EITB assay.",
+      "claim_type": "EXPLICIT",
+      "source": "HCC Ab-seroconversion with Ab-seroreversion (reversible model) provided an improved joint fit to the multiple datasets based on the antibody lentil lectin-purified glycoprotein enzyme-linked immunoelectrotransfer blot (LLGP-EITB) assay (Tsang et al., 1989; Table 2 and Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model comparison results presented in Table 2 and Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "74dc7542-3168-44b1-a425-03c9d0302f46",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C14",
+      "claim": "HCC infection acquisition with infection loss (reversible model) provided an improved fit for models fitted jointly to multiple datasets based on B158/B60 Ag-ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "HCC infection acquisition with infection loss (reversible model) provided an improved fit for models fitted jointly to multiple datasets based on B158/B60 Ag-ELISA (Brandt et al., 1992; Dorny et al., 2000; Table 3 and Figure 5a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model comparison results presented in Table 3 and Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "49db74e0-44f9-45cf-a2a0-b605f1f6f7e8",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C15",
+      "claim": "HCC Ab-seroconversion with Ab-seroreversion (reversible model) provided an improved fit across 23 departments of Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "HCC Ab-seroconversion with Ab-seroreversion (reversible model), fitted to multiple datasets using an IgG Ab-ELISA (L\u00f3pez et al., 1988), provided an improved fit across the 23 (out of a total of 24) departments of Colombia (Fl\u00f3rez S\u00e1nchez et al., 2013) included in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with citation to the diagnostic method and data source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "45c6d6a1-8851-46cc-af5d-80c887cddb1d",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C16",
+      "claim": "One department (Bol\u00edvar) was omitted from the Colombia analysis due to difficulty fitting to such a distinct age-seroprevalence profile.",
+      "claim_type": "EXPLICIT",
+      "source": "One department (Bol\u00edvar) was omitted due to difficultly fitting to such a distinct age-seroprevalence profile (prevalence peak in early ages).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a methodological decision.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "4127d62b-5154-496c-8523-b1caffc40e08",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C17",
+      "claim": "There was substantial geographical variation in HCC FoI, Ab-seroreversion rate, and all-age seroprevalence across the 23 departments of Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7 highlights the geographical variation in a HCC Ab-seroconversion or FoI, (b) HCC Ab-seroreversion rate and c the HCC antibody all-age seroprevalence, across the 23 departments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the geographical variation shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "e7d551f0-b768-41f2-a7bd-1eae3b813a0f",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C18",
+      "claim": "There was an overall decline in the average time until humans become HCC Ab-seropositive or infected with increasing all-age HCC (sero)prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 8 shows an overall decline in the average time (in years) until humans become HCC Ab-seropositive or infected with increasing all-age HCC (sero)prevalence, noting 18 studies identified in endemic settings (0.48\u20135.71% all-age HCC (sero)prevalence), and 19 estimates in hyperendemic settings (6.33\u201338.68% all-age HCC seroprevalence).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the trend shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "416d4668-e064-43f5-baec-c5215b20b74c",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C19",
+      "claim": "There was strong evidence for similar average durations of remaining Ab-seropositive across different endemicity settings and countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 8b presents strong evidence for similar average durations of remaining Ab-seropositive (1/\u03c1sero) across different endemicity settings and countries (Figure 8\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data presented in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "2c85607e-635a-409c-908a-06150301775b",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C20",
+      "claim": "There was evidence for a trend of decreasing duration of humans remaining infected with increasing all-age prevalence in antigen-based studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was evidence for a trend of decreasing duration of humans remaining infected (1/\u03c1inf) with increasing all-age prevalence (antigen-based studies; n=5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated based on analysis of antigen-based studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "85356d60-3be6-4231-8c6f-60b61887bc36",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C21",
+      "claim": "HTT FoI estimates ranged from 0.44 per 1,000 people per year for an endemic setting to 9.6-21 per 1000 per year for two hyperendemic settings.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also placed our HTT FoI estimates in the context of (putative) endemic or hyperendemic settings, with 0.44 per 1,000 people per year for a (single) endemic setting, and from 9.6 to 21 per 1000 per year for two hyperendemic settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with specific FoI estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "1a28651a-84a3-42a5-88fa-a84bcd595cff",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C22",
+      "claim": "HCC FoI estimates ranged from 0.086 to 21 per 1000 per year in endemic settings.",
+      "claim_type": "EXPLICIT",
+      "source": "HCC FoI estimates ranged from 0.086 to 21 per 1000 per year in (18, including Colombian departments) endemic settings (0.086\u201321 for Ab-based surveys; 0.17\u20134.4 for Ag-based surveys)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with specific FoI ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "c332257d-20a6-473f-b965-f4762dbaedb5",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C23",
+      "claim": "HCC FoI estimates ranged from 0.54 to 120 per 1000 per year in hyperendemic settings.",
+      "claim_type": "EXPLICIT",
+      "source": "and from 0.54 to 120 per 1000 per year in (19) hyperendemic settings (2.3\u2013120 for Ab-based surveys; 0.54\u2013110 for Ag-based surveys).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with specific FoI ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "be1a8659-1a85-4339-9371-278a05eb2269",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C24",
+      "claim": "Infection loss with infection acquisition was indicated for two HTT copro-Ag-ELISA-based surveys and five of six HCC antigen-based surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection loss with infection acquisition was indicated for two HTT copro-Ag-ELISA-based surveys, and five of six HCC antigen-based surveys, supporting inclusion of parameters representing recovery from HTT and HCC in T. solium transmission models (Dixon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated based on model fitting results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "94e46950-7084-40d5-a137-778386b76082",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C25",
+      "claim": "The duration of adult tapeworm infection ranges from 1.3 to 1.4 years with uncertainty bounds from 1.0 to 2.8 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Our infection loss rates for HTT indicate that the duration of adult tapeworm infection (the reciprocal of \u03c1inf) ranges from 1.3 to 1.4 years (with uncertainty bounds from 1.0 to 2.8 years), aligning with literature estimates suggesting that adult tapeworms live for less than 5 years (Garcia et al., 2014), although our values are only based on two studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculated reciprocals of infection loss rates from the study data, with comparison to literature estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "6b949371-f415-4ccd-bd30-85ad72c2fc56",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C26",
+      "claim": "HCC Ab-seroreversion rates are consistently larger than HCC Ab-seroconversion rates across settings.",
+      "claim_type": "EXPLICIT",
+      "source": "HCC Ab-seroreversion rates (or infection loss rates) from this analysis are also consistently larger than HCC Ab-seroconversion rates (or infection acquisition rates), in agreement with comparisons of HCC Ab-seroreversion to Ab-seroconversion (or Ag-seroreversion to Ag-seroconversion) estimates in the literature, which are generally based on cumulative seroconversion and seroreversion proportions, or rule-based modelling approaches (Dermauw et al., 2018; Garcia et al., 2001; Coral-Almeida et al., 2015; Mwape et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the study's data analysis and comparison with literature estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "d052e209-3a1d-44f8-ad7c-8e82ec670ebf",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C27",
+      "claim": "High cysticercosis Ab-seroreversion rates are likely indicative of substantial transient responses generated from exposure without establishment of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The high cysticercosis Ab-seroreversion rates indicated across datasets are likely indicative of substantial transient responses generated from exposure without establishment of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the observed high seroreversion rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "0fd4e437-be57-4979-a27d-4c7a3140f50c",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C28",
+      "claim": "There is no relationship between all-age Ab-seroprevalence and the average duration humans remain Ab-seropositive.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Ab-seroreversion or infection loss parameters were allowed to vary among settings, the consistency of the posterior estimates for these parameters indicates that rates of HCC Ab-seroreversion are stable (i.e. no relationship between all-age Ab-seroprevalence and the average duration humans remain Ab-seropositive, Figure 8b; no relationship between the Ab-seroconversion and Ab-seroreversion rates, Figure 8\u2014figure supplement 2), confirming this a priori expectation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis results shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "5852ccc5-f619-4683-ae68-959d15a27348",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C29",
+      "claim": "The average duration humans remain infected decreases with increasing seroprevalence in antigen-based studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The average duration humans remain infected (i.e., the reciprocal of the HCC infection loss rate), however, decreases with increasing seroprevalence (and a positive relationship between infection acquisition rates and infection loss rates, Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis results shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "55ac6207-585e-4be3-9ff4-622585c3cfba",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C30",
+      "claim": "There is substantial subnational variation in HCC FoI and Ab-seroreversion rates in Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identify substantial subnational variation in HCC FoI (measured by Ab-seroconversion) and Ab-seroreversion rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated based on the Colombia analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "0e9cf985-a7eb-4a20-8e44-fb8da707908f",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C31",
+      "claim": "There is only a limited relationship between HCC epidemiological quantities, Ab-seroprevalence and risk factors at the department level in Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "There appears to be only a limited relationship between these epidemiological quantities, Ab-seroprevalence and other risk factors, including open defecation and pig ownership at the department level, highlighting the complex nature of exposure drivers for HCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated based on the Colombia analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "e06b3020-f8bd-4519-a7da-150a8d77c3c1",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C32",
+      "claim": "The southeastern rural departments of Vaup\u00e9s and Amazonas in Colombia show the highest all-age seroprevalence and FoI estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the southeastern rural departments of Vaup\u00e9s and Amazonas show the highest all-age seroprevalence and FoI estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an example from the Colombia analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "a95259af-94aa-4941-aca7-901b65f408f8",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C33",
+      "claim": "Spatial correlation in seropositivity was estimated up to approximately 140 km at the Municipality level in Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial variation has been explored formally for this dataset by including spatial structure (i.e. spatial correlation in seropositivity estimated up to approximately 140 km at the Municipality level) into a risk factor analysis, and identifying hot spots of unexplained residual clustering in northern and southern municipalities in Colombia (Galip\u00f3 et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Galip\u00f3 et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "69771154-b77d-4c5d-8faa-73d07211cc97",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C34",
+      "claim": "The copro-Ag ELISA for detecting adult tapeworm infection is not species specific.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the widely used copro-Ag ELISA for detecting adult tapeworm infection is not species specific (Ng-Nguyen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ng-Nguyen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "ac90bbbe-6f80-4686-8f19-afb5e6586b8d",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C35",
+      "claim": "A proportion of positive results by both HCC Ag- and Ab- diagnostics may be due to transient responses and cross-reactions following exposure to eggs of other helminths.",
+      "claim_type": "EXPLICIT",
+      "source": "Literature estimates indicate high specificity of HCC diagnostics; however, a proportion of positive results by both HCC Ag- and Ab- diagnostics may be due to transient responses and cross-reactions following exposure to the eggs of other other helminths including Taenia saginata, Echinoccous granulosus and Schistosomia species (Lightowlers et al., 2016b; Noh et al., 2014; Kojic and White, 2003; Furrows et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to literature on diagnostic cross-reactivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "a1dce0a8-5266-4f31-8c0f-ebc76686cf67",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C36",
+      "claim": "The prevailing assumption governing the catalytic models is of a constant FoI with respect to age.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing (and most parsimonious) assumption governing the behaviour of the catalytic models fitted in this analysis is of a constant FoI with respect to age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a methodological assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "6e59af23-f104-4f09-a011-531c59a19db7",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C37",
+      "claim": "HTT copro-Ag-ELISA age-prevalence peaks in children have been observed in Peru, Guatemala and Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations of HTT copro-Ag-ELISA age-prevalence peaks/odds of infection in children from Peru, Guatemala and Zambia (Falcon et al., 2003; Allan et al., 1996; Mwape et al., 2015) suggest that these trends might be more widespread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies in Peru, Guatemala and Zambia.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "20ccc024-be5c-4939-a455-bf27cbe24cc2",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C38",
+      "claim": "Age peaks in HTT prevalence could indicate the need for targeted mass drug administration programmes to school-age children.",
+      "claim_type": "EXPLICIT",
+      "source": "Age peaks in HTT prevalence could indicate the need for targeted mass drug administration (MDA) programmes, such as delivery of anthelminthics (praziquantel) to school-age children, an approach that could be integrated into existing schistosomiasis control programmes where HTT and schistosomiasis are co-endemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference about potential intervention strategies based on observed age patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "73170ce7-cd79-4059-abb8-784d417c11da",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C39",
+      "claim": "There is marked geographical heterogeneity in FoI and associated all-age (sero)prevalence estimates for HCC.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here, particularly for HCC, where many datasets were available, suggest marked geographical heterogeneity in FoI and associated all-age (sero)prevalence estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a summary of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "f820f875-7aa9-497b-b0f6-736f7cbc79cc",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C40",
+      "claim": "There is strong evidence for both HCC Ab-seroreversion and infection loss.",
+      "claim_type": "EXPLICIT",
+      "source": "There is strong evidence for both HCC Ab-seroreversion and infection loss, likely due to transient dynamics which highlights the need for careful interpretation of cross-sectional (sero)prevalence survey estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a summary of the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "d71bcd2a-a5f9-4e8c-bb44-0efa37600aab",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C41",
+      "claim": "Catalytic models provide useful tools for interpreting cross-sectional seroprevalence data.",
+      "claim_type": "EXPLICIT",
+      "source": "Catalytic models provide useful tools for interpreting such data, which are far more abundant than a few longitudinal surveys reported in the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a conclusion about the utility of the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "5fdf3fa8-439b-46b3-bd79-f6f9478a56cc",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C42",
+      "claim": "There is substantial subnational variation in exposure to HCC in Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantify, for the first time, the presence of substantial subnational variation in exposure to HCC, highlighting the need for tailored, sub-national control strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a key finding from the Colombia analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "006b547e-f859-4c6a-b73a-d7585c500422",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C43",
+      "claim": "Fl\u00f3rez S\u00e1nchez et al., 2013 conducted a country-level survey of HCC antibody seroprevalence across 24 of Colombia's 32 administrative departments, sampling 29,360 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Fl\u00f3rez S\u00e1nchez et al., 2013 conducted a country-level survey of HCC antibody seroprevalence across 24 of Colombia's 32 administrative departments, sampling 29,360 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with citation to the data source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "a7d3d386-0a5b-47dd-bed7-0023991e2a20",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C44",
+      "claim": "Age-seroprevalence profiles stratified by sex in each department of Colombia revealed no clear differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-seroprevalence profiles stratified by sex in each department revealed no clear differences (Figure 6\u2014figure supplement 3), therefore age-seroprevalence data were not stratified by sex for further analysis (but see Galip\u00f3 et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "748f9f13-1b68-4fa1-9fe6-b2e27eb6f087",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C45",
+      "claim": "Simple and reversible catalytic models were originally proposed for fitting to epidemiological data by Muench, 1934.",
+      "claim_type": "EXPLICIT",
+      "source": "Simple and reversible catalytic models (Figure 2), originally proposed for fitting to epidemiological data by Muench, 1934, were fitted to HTT and HCC age-(sero)prevalence profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Muench, 1934.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "fb517415-e918-4c2b-8cf0-b703e798926a",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C46",
+      "claim": "A weakly informative prior for \u03bb was used for reversible model fits to prevent \u03bb chains drifting to flat posterior space and failing to converge.",
+      "claim_type": "EXPLICIT",
+      "source": "A weakly informative prior for \u03bb, assuming a lognormal distribution (mean informed by the median estimate from the simple model fit, and a standard deviation of 1), was used for reversible model fits to prevent \u03bb chains drifting to flat posterior space and failing to converge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a methodological decision.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "9730a169-81e1-4336-8a64-282746b570eb",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C47",
+      "claim": "The deviance information criterion (DIC) was used to compare individually- and jointly-fitted catalytic models.",
+      "claim_type": "EXPLICIT",
+      "source": "The deviance information criterion (DIC) (Spiegelhalter et al., 2002) was used to compare individually- and jointly-fitted catalytic models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with citation to the DIC method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "1ffb2b80-b4be-4b8c-8836-fecc95561fec",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C48",
+      "claim": "Bayesian Markov chain Monte Carlo Metropolis\u2013Hastings sampling algorithm was implemented to estimate the parameter posterior distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "A Bayesian Markov chain Monte Carlo (MCMC) Metropolis\u2013Hastings sampling algorithm was implemented to estimate the parameter posterior distribution f(\u03b8|r, n), assuming uniform prior distributions for \u03bb and \u03c1 (Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as the statistical method used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "e22356b6-2cf4-496e-8409-ad09a34adeb7",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C49",
+      "claim": "A maximum of 20,000,000 iterations were run for models fitted simultaneously to multiple datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "A maximum of 20,000,000 iterations were run for models fitted simultaneously to multiple datasets (2,000,000 for models fitted to single datasets) to obtain a sufficient sample to reduce autocorrelation through substantial subsampling, with the first 25% of runs being discarded as burn-in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "b708d1b5-b2a7-4ef8-811f-7a3889bf5667",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C50",
+      "claim": "The Madinga et al., 2017 dataset in the DRC was omitted from the models jointly fitted across copro-Ag ELISA datasets due to difficulty fitting catalytic models to such a distinct age-prevalence profile with a marked peak in early ages.",
+      "claim_type": "EXPLICIT",
+      "source": "The Madinga et al., 2017 dataset in the DRC was omitted from the models jointly fitted across copro-Ag ELISA datasets, due to difficulty fitting catalytic models to such a distinct age-prevalence profile with a marked peak in early ages (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a methodological decision.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "ed8ecb19-02b0-44d2-a70a-8d632c8475ec",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C51",
+      "claim": "The FoI for the best-fit model to the rES33-immunoblot antibody dataset in Lao PDR suggested a very low HTT Ab-seroconversion rate of 0.00046 year\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The FoI (\u03bbsero) for the best-fit model to the rES33-immunoblot antibody dataset in Lao PDR (Holt et al., 2016), suggested a very low HTT Ab-seroconversion rate of 0.00046 year\u20131",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated with specific rate estimate from the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "ac5eb8cc-f23c-469e-9dc9-42f42d3bc157",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "claim_id": "C52",
+      "claim": "For models independently fitted to the single dataset from a hyperendemic setting in Kenya using the HP10 Ag-ELISA, the simple model without infection loss provided an improved fit.",
+      "claim_type": "EXPLICIT",
+      "source": "For models fitted to the single dataset from a hyperendemic setting in Kenya (6.61%) (Wardrop et al., 2015), using the HP10 Ag-ELISA (Harrison et al., 1989), the (simple) model without infection loss provided an improved fit (Table 3 and Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model comparison results in Table 3 and Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c10bc11-9d41-4ea7-a7f6-356f399d2d78",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study establishes the public health burden of T. solium and identifies gaps in current control efforts. T. solium causes 2.78 million DALYs globally and approximately one-third of epilepsy cases in endemic settings. The WHO 2021-2030 roadmap targets intensified control in hyperendemic areas of 30% of endemic countries, but endemicity levels have not been formally defined and no large-scale national interventions have been implemented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by citations to authoritative sources (Havelaar et al. 2015, Gripper and Welburn 2017, WHO documents). The claims accurately represent prior work and establish the rationale for the study. The identification of knowledge gaps (C6) regarding endemicity definitions is appropriately stated and motivates the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "f8cdecdb-73d9-4252-b995-110e6e55c908",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A systematic review identified 16 studies with age-stratified prevalence data from South America (n=4), Africa (n=8), and Asia (n=4), comprising 6,653 individuals for HTT surveys with observed seroprevalence ranging from 4.5% to 23.4%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 describe the systematic review methodology and results, supported by the PRISMA flowchart (Figure 1) and detailed sample size data. The screening process is transparent and the data extraction is clearly documented with specific prevalence ranges and confidence intervals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "b2de5c5e-f71d-47df-ad17-bf183f3630e2",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors propose defining hyperendemic transmission settings as those with all-age HTT seroprevalence \u22653% and HCC seroprevalence \u22656%, with endemic settings below these thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C10 presents a novel endemicity classification developed by the authors based on a literature review. However, the manuscript acknowledges these are 'putative' definitions requiring further refinement. The thresholds appear somewhat arbitrary and lack validation against clinical outcomes or transmission dynamics. The authors appropriately note this limitation in the Discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "cc36e08d-c0d2-4eb6-8afc-b3b9bc766bb5",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For HTT copro-Ag ELISA datasets from hyperendemic settings in Zambia and Brazil, catalytic models with and without infection loss showed similar fit (DIC within one unit). The estimated duration of adult tapeworm infection ranges from 1.3-1.4 years (uncertainty: 1.0-2.8 years), consistent with literature estimates of <5 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C24-C25 are supported by model comparison results in Table 1 and Figure 3a. The DIC scores indicate limited ability to distinguish between models, which is appropriately interpreted. The infection duration estimates align with prior literature (Garcia et al. 2014), though the authors correctly note these are based on only two studies, limiting generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "df7b7120-1b8c-4131-bdde-415349875ab1",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For HCC antibody-based surveys using LLGP-EITB, the reversible model (with Ab-seroreversion) provided improved fit. Ab-seroreversion rates consistently exceeded Ab-seroconversion rates across settings, likely indicating substantial transient responses from exposure without infection establishment. The average duration of remaining Ab-seropositive showed no relationship with all-age seroprevalence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C26-C28 are well-supported by model comparison results (Table 2, Figure 4a) and analysis of parameter relationships (Figure 8b). The interpretation of high seroreversion rates as transient responses (C27) is reasonable given the data patterns, though it remains somewhat speculative. The consistency of seroreversion rates across settings (C28) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "f7cec1a9-32ea-4072-aca7-43839f67a640",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For HCC antigen-based surveys using B158/B60 Ag-ELISA, the reversible model (with infection loss) provided improved fit. The average duration of remaining infected decreased with increasing seroprevalence, suggesting increased transient responses in higher transmission settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C20, C29 are supported by model comparison results (Table 3, Figure 5a) and trend analysis (Figure 8\u2014figure supplement 2). However, the interpretation of decreasing infection duration with increasing prevalence is based on only 5 antigen-based observations, limiting confidence. The authors appropriately acknowledge the absence of wider literature supporting this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "812cbc84-007d-4061-86ae-975bcc95b99b",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of 28,100 individuals across 23 departments in Colombia revealed substantial subnational variation in HCC FoI, Ab-seroreversion rates, and seroprevalence. The reversible model provided improved fit across departments. Limited relationships were observed between epidemiological quantities and risk factors (pig ownership, open defecation) at the department level. The southeastern departments of Vaup\u00e9s and Amazonas showed the highest seroprevalence and FoI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17, C30-C32, C42-C44 are well-supported by the Colombia dataset analysis (Figures 6-7, Supplementary file 6). The exclusion of Bol\u00edvar department (C16) is justified by model fitting difficulties. The finding of limited relationships with risk factors (C31) is appropriately interpreted as highlighting complex exposure drivers. Sex-stratified analysis (C44) appropriately found no differences, justifying pooled analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "279d39d3-4e33-46d5-afad-bfd863c82d62",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Across settings, the average time until humans become HCC Ab-seropositive or infected decreased with increasing all-age seroprevalence, demonstrating marked geographical heterogeneity in transmission. HTT FoI ranged from 0.44 per 1,000/year (endemic) to 9.6-21 per 1,000/year (hyperendemic). HCC FoI ranged from 0.086-21 per 1,000/year (endemic) to 0.54-120 per 1,000/year (hyperendemic).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19, C21-C23, C39 are supported by comprehensive analysis across multiple datasets (Figure 8, Tables 1-3). The inverse relationship between time to seropositivity/infection and prevalence (C18) is intuitive and clearly demonstrated. The wide ranges in FoI estimates across settings (C21-C23) convincingly demonstrate geographical heterogeneity. The consistency of Ab-seroreversion duration across settings (C19) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "5a2bb40a-40f1-422f-bdd7-1eb3e134798b",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Diagnostic limitations include lack of species specificity for copro-Ag ELISA and potential cross-reactivity of HCC diagnostics with other helminths. Spatial correlation in seropositivity in Colombia was estimated up to approximately 140 km at the municipality level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 appropriately acknowledge diagnostic limitations based on cited literature (Ng-Nguyen et al. 2017, Lightowlers et al. 2016b, and others). These are important caveats for interpretation. Claim C33 correctly cites Galip\u00f3 et al. 2021 for spatial correlation findings. These limitations are appropriately discussed as potential sources of uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "f2a48970-b05b-42ab-b890-1c8b74d97373",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The catalytic models assume constant FoI with respect to age. However, age-prevalence peaks in children have been observed in HTT copro-Ag-ELISA surveys in Peru, Guatemala, and Zambia, suggesting age-dependent exposure. The Madinga et al. 2017 dataset from DRC was omitted due to difficulty fitting models to the distinct age-prevalence profile with early-age peaks. Age peaks could indicate the need for targeted interventions in school-age children.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C50 are appropriately stated. The constant FoI assumption (C36) is acknowledged as a limitation. The observation of age-prevalence peaks (C37) is supported by citations. The exclusion of the DRC dataset (C50) is justified by model fitting difficulties. However, claim C38 regarding targeted MDA is speculative and appropriately presented as a possibility rather than a conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "7ec33a17-4a3c-44bd-8ca7-e2c639a9c4bb",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There is strong evidence for both HCC Ab-seroreversion and infection loss, likely due to transient dynamics. Catalytic models provide useful tools for interpreting cross-sectional seroprevalence data, which are more abundant than longitudinal surveys.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 appropriately summarize key findings and methodological contributions. The evidence for seroreversion/infection loss is well-demonstrated across multiple datasets. The utility of catalytic models for cross-sectional data (C41) is a valid methodological contribution, though the constant FoI assumption limits applicability in some settings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "1cd9a8eb-28d0-4726-90d3-c3e0137d2062",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study employed Bayesian MCMC methods to fit simple and reversible catalytic models (originally proposed by Muench, 1934) to age-prevalence data. A weakly informative lognormal prior was used for \u03bb in reversible models to prevent convergence issues. Model comparison used the deviance information criterion (DIC). Up to 20 million iterations were run for multi-dataset models with 25% burn-in.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 accurately describe the statistical methodology. The use of catalytic models is appropriately attributed to Muench (1934). The weakly informative prior (C46) is a reasonable methodological choice to address convergence issues. DIC for model comparison (C47) is standard practice. The computational details (C48-C49) are adequately specified for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    },
+    {
+      "id": "50f97f31-a7c5-49b3-9cad-a949070e6919",
+      "content_id": "7d1f81e5-26f9-4d68-9627-6b612cd9767b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For the rES33-immunoblot antibody dataset in Lao PDR, the best-fit model suggested a very low HTT Ab-seroconversion rate of 0.00046 year\u207b\u00b9. For the HP10 Ag-ELISA dataset from Kenya, the simple model without infection loss provided improved fit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 report specific model fitting results for individual datasets, supported by Tables 1 and 3 and Figures 3b and 5b. These are straightforward data reporting claims with appropriate statistical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:06:16.114082Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95088182-8620-404f-a090-2cfc478a9390",
+      "result_id": "0c10bc11-9d41-4ea7-a7f6-356f399d2d78"
+    },
+    {
+      "claim_id": "c51d5fce-14e5-45da-9826-cd988e212786",
+      "result_id": "0c10bc11-9d41-4ea7-a7f6-356f399d2d78"
+    },
+    {
+      "claim_id": "be65ae67-dfb2-4f28-8a4a-cd70a1149ca2",
+      "result_id": "0c10bc11-9d41-4ea7-a7f6-356f399d2d78"
+    },
+    {
+      "claim_id": "7592baf1-95d7-4ec2-b047-24af98b427f7",
+      "result_id": "0c10bc11-9d41-4ea7-a7f6-356f399d2d78"
+    },
+    {
+      "claim_id": "47d0961b-692b-42b5-8c23-66f227b5a10d",
+      "result_id": "0c10bc11-9d41-4ea7-a7f6-356f399d2d78"
+    },
+    {
+      "claim_id": "294eae4e-f7b9-4d32-8f3d-6cfaedb109d0",
+      "result_id": "0c10bc11-9d41-4ea7-a7f6-356f399d2d78"
+    },
+    {
+      "claim_id": "817af52e-0873-46be-b793-3dc48a5a9b6b",
+      "result_id": "f8cdecdb-73d9-4252-b995-110e6e55c908"
+    },
+    {
+      "claim_id": "128e00fd-0551-44f5-9dbf-5303084448cd",
+      "result_id": "f8cdecdb-73d9-4252-b995-110e6e55c908"
+    },
+    {
+      "claim_id": "cd6ca731-339f-41a2-9ec3-2983a7291785",
+      "result_id": "f8cdecdb-73d9-4252-b995-110e6e55c908"
+    },
+    {
+      "claim_id": "7c96f948-9a8a-46a5-bc78-08b94cf571e8",
+      "result_id": "b2de5c5e-f71d-47df-ad17-bf183f3630e2"
+    },
+    {
+      "claim_id": "12a6ffca-be8b-4c0c-af20-ecb66ac86555",
+      "result_id": "cc36e08d-c0d2-4eb6-8afc-b3b9bc766bb5"
+    },
+    {
+      "claim_id": "5b7d726c-1e08-4658-977a-6e56fb8c94c7",
+      "result_id": "cc36e08d-c0d2-4eb6-8afc-b3b9bc766bb5"
+    },
+    {
+      "claim_id": "be1a8659-1a85-4339-9371-278a05eb2269",
+      "result_id": "cc36e08d-c0d2-4eb6-8afc-b3b9bc766bb5"
+    },
+    {
+      "claim_id": "94e46950-7084-40d5-a137-778386b76082",
+      "result_id": "cc36e08d-c0d2-4eb6-8afc-b3b9bc766bb5"
+    },
+    {
+      "claim_id": "0cc7a96b-7bc5-4571-8831-e5ba6cd8144d",
+      "result_id": "df7b7120-1b8c-4131-bdde-415349875ab1"
+    },
+    {
+      "claim_id": "6b949371-f415-4ccd-bd30-85ad72c2fc56",
+      "result_id": "df7b7120-1b8c-4131-bdde-415349875ab1"
+    },
+    {
+      "claim_id": "d052e209-3a1d-44f8-ad7c-8e82ec670ebf",
+      "result_id": "df7b7120-1b8c-4131-bdde-415349875ab1"
+    },
+    {
+      "claim_id": "0fd4e437-be57-4979-a27d-4c7a3140f50c",
+      "result_id": "df7b7120-1b8c-4131-bdde-415349875ab1"
+    },
+    {
+      "claim_id": "74dc7542-3168-44b1-a425-03c9d0302f46",
+      "result_id": "f7cec1a9-32ea-4072-aca7-43839f67a640"
+    },
+    {
+      "claim_id": "2c85607e-635a-409c-908a-06150301775b",
+      "result_id": "f7cec1a9-32ea-4072-aca7-43839f67a640"
+    },
+    {
+      "claim_id": "5852ccc5-f619-4683-ae68-959d15a27348",
+      "result_id": "f7cec1a9-32ea-4072-aca7-43839f67a640"
+    },
+    {
+      "claim_id": "49db74e0-44f9-45cf-a2a0-b605f1f6f7e8",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "45c6d6a1-8851-46cc-af5d-80c887cddb1d",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "4127d62b-5154-496c-8523-b1caffc40e08",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "55ac6207-585e-4be3-9ff4-622585c3cfba",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "0e9cf985-a7eb-4a20-8e44-fb8da707908f",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "e06b3020-f8bd-4519-a7da-150a8d77c3c1",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "5fdf3fa8-439b-46b3-bd79-f6f9478a56cc",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "006b547e-f859-4c6a-b73a-d7585c500422",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "a7d3d386-0a5b-47dd-bed7-0023991e2a20",
+      "result_id": "812cbc84-007d-4061-86ae-975bcc95b99b"
+    },
+    {
+      "claim_id": "e7d551f0-b768-41f2-a7bd-1eae3b813a0f",
+      "result_id": "279d39d3-4e33-46d5-afad-bfd863c82d62"
+    },
+    {
+      "claim_id": "416d4668-e064-43f5-baec-c5215b20b74c",
+      "result_id": "279d39d3-4e33-46d5-afad-bfd863c82d62"
+    },
+    {
+      "claim_id": "85356d60-3be6-4231-8c6f-60b61887bc36",
+      "result_id": "279d39d3-4e33-46d5-afad-bfd863c82d62"
+    },
+    {
+      "claim_id": "1a28651a-84a3-42a5-88fa-a84bcd595cff",
+      "result_id": "279d39d3-4e33-46d5-afad-bfd863c82d62"
+    },
+    {
+      "claim_id": "c332257d-20a6-473f-b965-f4762dbaedb5",
+      "result_id": "279d39d3-4e33-46d5-afad-bfd863c82d62"
+    },
+    {
+      "claim_id": "73170ce7-cd79-4059-abb8-784d417c11da",
+      "result_id": "279d39d3-4e33-46d5-afad-bfd863c82d62"
+    },
+    {
+      "claim_id": "a95259af-94aa-4941-aca7-901b65f408f8",
+      "result_id": "5a2bb40a-40f1-422f-bdd7-1eb3e134798b"
+    },
+    {
+      "claim_id": "69771154-b77d-4c5d-8faa-73d07211cc97",
+      "result_id": "5a2bb40a-40f1-422f-bdd7-1eb3e134798b"
+    },
+    {
+      "claim_id": "ac90bbbe-6f80-4686-8f19-afb5e6586b8d",
+      "result_id": "5a2bb40a-40f1-422f-bdd7-1eb3e134798b"
+    },
+    {
+      "claim_id": "a1dce0a8-5266-4f31-8c0f-ebc76686cf67",
+      "result_id": "f2a48970-b05b-42ab-b890-1c8b74d97373"
+    },
+    {
+      "claim_id": "6e59af23-f104-4f09-a011-531c59a19db7",
+      "result_id": "f2a48970-b05b-42ab-b890-1c8b74d97373"
+    },
+    {
+      "claim_id": "20ccc024-be5c-4939-a455-bf27cbe24cc2",
+      "result_id": "f2a48970-b05b-42ab-b890-1c8b74d97373"
+    },
+    {
+      "claim_id": "b708d1b5-b2a7-4ef8-811f-7a3889bf5667",
+      "result_id": "f2a48970-b05b-42ab-b890-1c8b74d97373"
+    },
+    {
+      "claim_id": "f820f875-7aa9-497b-b0f6-736f7cbc79cc",
+      "result_id": "7ec33a17-4a3c-44bd-8ca7-e2c639a9c4bb"
+    },
+    {
+      "claim_id": "d71bcd2a-a5f9-4e8c-bb44-0efa37600aab",
+      "result_id": "7ec33a17-4a3c-44bd-8ca7-e2c639a9c4bb"
+    },
+    {
+      "claim_id": "748f9f13-1b68-4fa1-9fe6-b2e27eb6f087",
+      "result_id": "1cd9a8eb-28d0-4726-90d3-c3e0137d2062"
+    },
+    {
+      "claim_id": "fb517415-e918-4c2b-8cf0-b703e798926a",
+      "result_id": "1cd9a8eb-28d0-4726-90d3-c3e0137d2062"
+    },
+    {
+      "claim_id": "9730a169-81e1-4336-8a64-282746b570eb",
+      "result_id": "1cd9a8eb-28d0-4726-90d3-c3e0137d2062"
+    },
+    {
+      "claim_id": "1ffb2b80-b4be-4b8c-8836-fecc95561fec",
+      "result_id": "1cd9a8eb-28d0-4726-90d3-c3e0137d2062"
+    },
+    {
+      "claim_id": "e22356b6-2cf4-496e-8409-ad09a34adeb7",
+      "result_id": "1cd9a8eb-28d0-4726-90d3-c3e0137d2062"
+    },
+    {
+      "claim_id": "ed8ecb19-02b0-44d2-a70a-8d632c8475ec",
+      "result_id": "50f97f31-a7c5-49b3-9cad-a949070e6919"
+    },
+    {
+      "claim_id": "ac5eb8cc-f23c-469e-9dc9-42f42d3bc157",
+      "result_id": "50f97f31-a7c5-49b3-9cad-a949070e6919"
+    }
+  ],
+  "comparisons": []
+}

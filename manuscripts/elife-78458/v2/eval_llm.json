@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study generated a ChRO-seq atlas from reciprocal F1 hybrids of C57BL/6 and Castaneus mice across eight organs, obtaining 376 million uniquely mapped reads. Hierarchical clustering grouped samples by organ and functional similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe the experimental design, sample collection, sequencing depth, and validation through clustering analysis. The clustering results (C4, C5) are supported by Figure 1B and align with expectations from prior studies, providing strong evidence for the quality and validity of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The study identified widespread allelic differences in transcription, with 1374 genes showing allele-specific expression (mostly organ-specific) and 51 imprinted genes. Using AlleleHMM, 3494 domains with allelic imbalance were identified, including 3466 strain-effect and 28 imprinted domains spanning 10-1000 kb and affecting multiple transcription units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15 collectively demonstrate organ-specific allelic transcription patterns and domain-level organization. Statistical tests (C10: Fisher's exact test p<2.2e-16) support clustering of allelic changes. The identification and characterization of domains using AlleleHMM is well-documented with specific numbers and supported by figures, though the biological mechanisms remain interpretive (C12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "ChRO-seq 5' ends accurately identify transcription start sites (TSSs), validated by enrichment of initiator elements. Allelic changes in TSSs were common (16-34% of TSCs) and enriched in strain-effect domains (odds ratios 3.5-5.4, p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 establish the technical validity of TSS identification using ChRO-seq and demonstrate widespread allelic TSS variation. The validation through initiator motif enrichment (C17) and statistical enrichment in strain-effect domains (C19) provide strong support. The method is grounded in prior work (C16).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Analysis of initiator dinucleotides revealed a hierarchy of Pol II initiation preference: CA > TA > TG > CG. This hierarchy differs from yeast but aligns with mammalian mutagenesis studies emphasizing the importance of adenine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 describe a clear hierarchy of initiator preferences supported by Figure 2B. The comparison to yeast (C22) is appropriately cited. While the hierarchy is interpretive (C21), it is directly supported by the magnitude of ChRO-seq signal changes between different dinucleotide substitutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study identified changes in TSS distribution shape within transcription start clusters (1006 brain, 1389 liver TSCs). Single-position changes showed focal SNP enrichment near the TSS, with the adenine at position 0 being most important. Multiple-position changes showed broader SNP enrichment. Higher AT content downstream of the initiator correlated with increased TSS usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 systematically dissect genetic determinants of TSS position. The Kolmogorov-Smirnov test (FDR\u22640.1) provides statistical rigor. SNP enrichment patterns (C25-C28) and AT content analysis (C29-C30) are supported by multiple figures. The conclusion (C31) appropriately integrates findings about both sequence motifs and DNA melting energetics. Only ~10-20% overlap with strain-effect domains (C24) supports these being distinct from expression-level changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "When a CA initiator is mutated to a non-CA dinucleotide, initiation increases at nearby sites both upstream and downstream within ~20 bp. The authors propose a Brownian motion model where Pol II stochastically scans bidirectionally for favorable initiator sites after DNA melting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C36 present a novel mechanistic model. While the bidirectional redistribution of initiation signal (C33-C34) is clearly demonstrated in Figure 4C and the ~20 bp constraint (C36) is shown in Figure 4F, the Brownian motion model (C35) is speculative. The data are inconsistent with both the yeast scanning model and the prevailing mammalian independent PIC model, but alternative explanations (e.g., overlapping PICs with different motif preferences) are not definitively ruled out. The model is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study identified 2260 sites with allelic differences in Pol II pause position. While pause and initiation positions often changed together, 111 cases showed pause position unchanged despite TSS shifts, and 575 cases showed pause changes with identical TSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 demonstrate both coupling and independence between initiation and pause positions. Specific numbers and percentages are provided with statistical criteria (KS test, FDR\u22640.1). Figure 5A-B supports these findings. The identification of cases where pause and initiation change independently (C39-C40) is particularly important for establishing pause-specific genetic determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Genetic determinants of pause position include: (1) indels between TSS and pause (21% of changes, p<1e-5), correlated with pause shift magnitude; (2) a C nucleotide at the pause site following a G-rich stretch; (3) SNPs at positions 0, -2, and -3 relative to pause. Together, indels and SNPs explain 49% of allelic pause differences. DNA changes occur at the short pause position on the long allele, with SNPs causing smaller shifts (<10 bp) than indels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 systematically identify genetic determinants of pause position with strong statistical support (Fisher's exact test, p<1e-5). The 49% explanatory power (C45) is substantial. Sequence analysis (C43-C44) is supported by Figure 5D-G. The model distinguishing effects of SNPs versus indels (C46-C48) is well-supported by Figures 5H-I. The analysis appropriately uses control sets to account for ascertainment bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study identified 3,450 allelic termination windows (median ~10 kb) across eight organs. These windows were associated with adjacent transcript expression changes (liver OR=1.65, p=1.83e-15), with higher expression on the early-terminating allele (liver OR=4.97, p=2.2e-16). 21-41% showed changes in mRNA primary structure, which correlated with increased mRNA stability differences (brain p=4.28e-4, liver p=2.69e-08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 characterize allelic termination comprehensively with strong statistical support. The association with adjacent transcript expression (C51-C52) and mRNA structure changes (C53-C54) are well-documented with appropriate statistical tests. The consistency across organs supports a DNA sequence-based mechanism. However, the functional interpretation of these associations requires caution as the novel isoforms are noted to be minor components of total mRNA (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Background claims establishing that Pol II transcription is cyclic (initiation, pause, elongation, termination), that Pol II pauses near TSS in metazoans, that DNA motifs (TATA, BRE, initiator) bind PIC components, and that these motifs are weak and degenerate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 represent established knowledge from prior literature, appropriately cited. These provide necessary context for interpreting the study's findings but are not novel results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Interpretive claims about mechanisms: the ~20 bp scanning limit reflects structural constraints (C60), G-rich sequences stabilize the RNA-DNA hybrid during pause (C61), termination is controlled by a conserved DNA sequence code across organs (C62), and novel isoforms from alternative termination are minor mRNA components (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C63 are mechanistic interpretations of the data. While plausible and consistent with observations, they are speculative (C60-C61) or require additional validation (C62-C63). The consistency of termination across organs (C62) is supported by heatmaps but the underlying sequence code is not fully characterized. The claim about minor isoform abundance (C63) is stated to explain limited mRNA stability effects but lacks direct quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The F1 hybrid system reduces artifacts from DNA sequence composition on sequencing libraries and controls for batch effects since both alleles are processed identically from the same nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe methodological advantages of the F1 hybrid approach. These are logical inferences about the experimental design that are well-established in the allele-specific analysis literature. The claims appropriately acknowledge the system's strengths for controlling technical variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Pol II dynamics at each genomic position can influence mRNA production rates and may impact organism phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is a broad concluding statement about the potential biological significance of the findings. While speculative regarding phenotypic impacts, it is a reasonable inference given the demonstrated effects on transcription and mRNA stability. This represents appropriate framing of the work's implications rather than a specific testable result.",
+    "result_type": "MINOR"
+  }
+]

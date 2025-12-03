@@ -1,0 +1,2303 @@
+{
+  "submission": {
+    "id": "9aeeb608-5cea-40c2-a763-48023de7c0dc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:42:33.037476Z",
+    "updated_at": "2025-12-03T18:42:33.037476Z"
+  },
+  "content": [
+    {
+      "id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "submission_id": "9aeeb608-5cea-40c2-a763-48023de7c0dc",
+      "content_type": "manuscript",
+      "content_text": "# Recruitment of Polo-like kinase couples synapsis to meiotic progression via inactivation of CHK-2\n\n## Authors\n\n- Liangyu Zhang<sup>1</sup> ([ORCID: 0000-0002-2701-0773](https://orcid.org/0000-0002-2701-0773))\n- Weston T Stauffer<sup>3</sup> ([ORCID: 0000-0001-8998-5077](https://orcid.org/0000-0001-8998-5077))\n- John S Wang<sup>1</sup>\n- Fan Wu<sup>1</sup>\n- Zhouliang Yu<sup>1</sup>\n- Chenshu Liu<sup>2</sup>\n- Hyung Jun Kim<sup>1</sup>\n- Abby F Dernburg<sup>1</sup> ([ORCID: 0000-0001-8037-1079](https://orcid.org/0000-0001-8037-1079)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. California Institute for Quantitative Biosciences Berkeley United States ([ROR:04n1n3n22](https://ror.org/04n1n3n22))\n3. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))\n4. Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))\n5. Department of Integrative Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMeiotic chromosome segregation relies on synapsis and crossover (CO) recombination between homologous chromosomes. These processes require multiple steps that are coordinated by the meiotic cell cycle and monitored by surveillance mechanisms. In diverse species, failures in chromosome synapsis can trigger a cell cycle delay and/or lead to apoptosis. How this key step in \u2018homolog engagement\u2019 is sensed and transduced by meiotic cells is unknown. Here we report that in C. elegans, recruitment of the Polo-like kinase PLK-2 to the synaptonemal complex triggers phosphorylation and inactivation of CHK-2, an early meiotic kinase required for pairing, synapsis, and double-strand break (DSB) induction. Inactivation of CHK-2 terminates DSB formation and enables CO designation and cell cycle progression. These findings illuminate how meiotic cells ensure CO formation and accurate chromosome segregation.\n\n## Introduction\n\nMeiotic progression differs in many ways from a mitotic cell cycle. A single round of DNA replication at meiotic entry is followed by two nuclear divisions. Between replication and the first division is an extended period known as meiotic prophase, during which chromosomes pair, align through the process of synapsis, and recombine to establish physical links (chiasmata) between each pair of homologs. Together with sister chromatid cohesion, chiasmata direct bipolar orientation and segregation of homologous chromosomes during Meiosis I (Hillers et al., 2017; Hunter, 2015; Ur and Corbett, 2021). Synapsis and recombination are monitored by meiotic checkpoints that can delay cell cycle progression and/or lead to apoptosis when these processes are impaired (Subramanian and Hochwagen, 2014).\n\nDuring early meiosis, double-strand breaks (DSBs) are induced and resected. These recombination intermediates undergo strand invasion to establish joint molecules between homologs, which recruit a set of factors collectively known as \u2018pro-crossover\u2019 or \u2018ZMM\u2019 proteins. Many of these intermediates eventually lose the ZMM proteins and are resolved as non-crossovers, while the subset that retains these factors is \u2018designated\u2019 to be resolved as crossovers (COs) (Hunter, 2015; Pyatnitskaya et al., 2019).\n\nIn C. elegans, formation and initial processing of DSBs requires the activity of CHK-2, a meiosis-specific homolog of the DNA damage transducing kinase Chk2/CHEK2 (MacQueen and Villeneuve, 2001; Oishi et al., 2001). CHK-2 is eventually inactivated at mid-pachytene; based on cytological markers, this roughly coincides with cessation of DSB formation and the resolution of many intermediates through a \u2018generic\u2019 (as opposed to meiosis-specific) homologous recombination pathway. A similar transition during mid-prophase has been described in budding yeast and mammals. In each case, this progression depends on assembly of the synaptonemal complex (SC), a meiosis-specific protein scaffold that assembles between homologous chromosomes (Enguita-Marruedo et al., 2019; Hayashi et al., 2007; Kauppi et al., 2013; Lee et al., 2021; Mu et al., 2020; Murakami et al., 2020; Nadarajan et al., 2017; Thacker et al., 2014; Wojtasz et al., 2009).\n\nCHK-2 is inactive in proliferating germline stem cells and becomes active upon meiotic entry. The mechanism of activation has not been fully established, but it is promoted by targeted degradation of a CHK-2 inhibitor, PPM-1.D/Wip1 (Baudrimont et al., 2022). Work in budding yeast has shown that a CHK-2 ortholog, Mek1, undergoes trans-autophosphorylation of its activation loop (Carballo et al., 2008; Niu et al., 2007); this mechanism is likely conserved in C. elegans since the activation loop of CHK-2 also contains a CHK-2 consensus phosphorylation motif (R-x-x-S/T) (O\u2019Neill et al., 2002). Like all Chk2 homologs, CHK-2 contains a forkhead-associated (FHA) domain and thus recognizes phosphorylated motifs of the consensus (pT-X-X-[I/L/V]) (Durocher and Jackson, 2002; Li et al., 2000). While mammalian Chk2 undergoes homodimerization through binding of its FHA domain to N-terminal motifs phosphorylated by ATM (Oliver et al., 2006), the meiosis-specific Mek1 (S. cerevisiae and S. pombe) and CHK-2 (C. elegans) kinases lack this regulatory domain. Activation is likely promoted by binding of these kinases to target motifs on other proteins, such as Hop1 in budding yeast (Carballo et al., 2008), resulting in high local concentrations that enable intermolecular trans-phosphorylation. In C. elegans, the Pairing Center proteins HIM-8 and ZIM-1, -2, -3 contain FHA-binding motifs that recruit CHK-2 during early meiotic prophase. By phosphorylating a Polo box interacting motif on these proteins, CHK-2 primes the recruitment of the Polo-like kinase PLK-2 (Harper et al., 2011; Kim et al., 2015). Together, CHK-2 and PLK-2 at Pairing Centers modify NE proteins including lamin (LMN-1) and the LINC protein SUN-1, which promotes chromosome pairing and synapsis (Link et al., 2018; Penkner et al., 2009; Sato et al., 2009; Woglar et al., 2013). Thus, CHK-2 is required for chromosome pairing as well as for DSB induction.\n\nDuring early pachytene, recombination intermediates are established along chromosomes and can be detected as foci by immunofluorescence. By mid-pachytene, most of these recombination intermediates disappear, while six \u2018designated crossover\u2019 foci, which show strong localization of the cyclin homolog COSA-1 and other pro-CO factors, are detected in each nucleus, one per chromosome pair (Woglar and Villeneuve, 2018; Yokoo et al., 2012; Zhang et al., 2018). This accumulation of pro-CO proteins at the sites that will eventually become crossovers is termed \u2018crossover designation\u2019. Collectively, pro-CO factors are thought to prevent non-CO resolution and eventually promote the resolution of these late intermediates as COs. The mechanism and timing of CO resolution in C. elegans remain somewhat unclear.\n\nDefects in synapsis or establishment of CO intermediates result in activation of a \u2018crossover assurance checkpoint\u2019 and a delay in cell cycle progression (reviewed in Yu et al., 2016). Activation of the checkpoint is detected cytologically as an extended region of CHK-2 activity. Based on nuclear morphology and cytological reporters of CHK-2 activity, defects in synapsis prolong the \u2018transition zone\u2019 (leptotene/zygotene) stage of meiosis, which is characterized by clustering of chromosomes and high CHK-2 activity, while defects in recombination result in a prolonged \u2018early pachytene\u2019 stage, with more dispersed chromosomes and intermediate level of CHK-2 activity (Kim et al., 2015). In mutants that are competent to form some COs despite defects in synapsis or recombination, the region of nuclei displaying a limited number of \u2018designated\u2019 CO sites is also shifted proximally within the germline (Kim et al., 2015; Rosu et al., 2013; Stamper et al., 2013; Woglar and Villeneuve, 2018; Zhang et al., 2018). This feedback regulation requires a family of HORMA domain proteins that bind to the chromosome axis (Kim et al., 2015), but how cells detect defects in synapsis or CO intermediates and how CHK-2 activity is prolonged remain unknown.\n\n## Results\n\n### CHK-2 inhibits CO designation\n\nTo monitor the activity of CHK-2 in C. elegans oocytes (Figure 1A), we used a phospho-specific antibody that recognizes CHK-2-dependent phosphorylation sites on the four paralogous Pairing Center proteins HIM-8 and ZIM-1, -2, and -3 (Kim et al., 2015). Co-staining of pHIM-8/ZIMs and GFP::COSA-1 confirmed that CO designation occurs concomitantly with loss of CHK-2 activity (Figure 1B\u2013D). Since CHK-2 inactivation and CO designation are both delayed in mutants that activate the CO assurance checkpoint (Kim et al., 2015; Zhang et al., 2018), we wondered whether CHK-2 activity inhibits CO designation. Because CHK-2 activity during early meiotic prophase is essential for DSB formation and synapsis (MacQueen and Villeneuve, 2001; Oishi et al., 2001), and thus for the establishment of recombination intermediates that are prerequisite for CO designation, we exploited the auxin-inducible degradation (AID) system to deplete the CHK-2 protein (Nishimura et al., 2009; Zhang et al., 2015). Activity of degron-tagged CHK-2 became undetectable in meiotic nuclei within 3 hr of auxin treatment (Figure 2\u2014figure supplement 1A, B). Depletion of CHK-2 shifted the appearance of nuclei containing bright COSA-1 foci to a more distal (earlier) position in the germline, indicative of accelerated CO designation and cell cycle progression (Figure 2A, C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of meiotic prophase in the C. elegans hermaphrodite germline. The distal tip of the gonad is oriented on the left side in this schematic and in all other figures. Meiotic progression is readily visualized due to the simple organization of the germline. Cells exit proliferation and enter meiosis in the distal \u2018arms\u2019 of the gonad and move proximally toward the spermatheca and uterus at a velocity of about one cell row per hour (Deshong et al., 2014). Homolog pairing and synapsis and double-strand break (DSB) induction normally occur during the first few hours following meiotic entry, in the \u2018transition zone\u2019 region corresponding to leptotene and zygotene. DSBs are then processed to form recombination intermediates, which increase in abundance during early pachytene. At mid-pachytene, a transition occurs that leads to disappearance of most intermediates. One recombination intermediate on each pair of chromosomes becomes \u2018designated\u2019 as an eventual crossover site. (B) Images of representative prophase nuclei from meiotic onset, labeled with markers for crossover intermediates (GFP::COSA-1, green) and CHK-2 activity (phospho-HIM-8 and ZIM-1/-2/-3, magenta). Bright GFP::COSA-1 foci are detected following inactivation of CHK-2. White arrow indicates meiotic onset. Scale bars, 5 \u00b5m. (C) Enlargement of the mid-pachytene nuclei shown in (B). phospho-HIM/ZIMs was pseudo colored to white for easy observation. Scale bars, 5 \u00b5m. (D) Line profiles indicating the relative fluorescence intensity of staining for phospho-HIM-8/ZIMs immunofluorescence (upper) and GFP::COSA-1 (lower) in the boxed region indicated in (C). Accumulation of pro-CO proteins can be stratified into three stages: an early stage with high CHK-2 activity and variable numbers of dim GFP::COSA-1; an intermediate stage with brighter and more abundant GFP::COSA-1 foci, and a post-designation stage, with a single CO-designated site per chromosome pair marked by bright GFP::COSA-1 fluorescence. The intensity of GFP::COSA-1 foci remains fairly constant throughout this last stage. In this work, we use the appearance of bright COSA-1 foci as a proxy for crossover designation and the mid-pachytene cell cycle transition.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative hermaphrodite gonads stained for GFP::COSA-1 (green), SYP-1 (magenta), and DNA (blue). Nuclei with bright COSA-1 foci are observed at a more distal position following CHK-2 depletion. Worms were exposed to 1 mM auxin (or 0.25% ethanol lacking auxin) for 5 hr before fixation. Dashed green lines on the left and right indicate the earliest nuclei with bright COSA-1 foci and the end of pachytene, respectively. White arrow indicates meiotic onset. The average number of bright COSA-1 foci per nucleus in each row is indicated below each image in green. Scale bars, 5 \u00b5m. (B) Germline from a him-8 mutant hermaphrodite stained for GFP::COSA-1 (green), and DNA (blue), showing early appearance of bright COSA-1 foci upon CHK-2 depletion. Worms were treated with 1 mM auxin or solvent (0.25% ethanol) control for 5 hr before analysis. Scale bars, 5 \u00b5m. Note: the same image with RAD-51 is shown in Figure 2\u2014figure supplement 1C. (C) CO designation occurs earlier upon CHK-2 depletion, as described in (A). Worms were exposed to auxin (or solvent control) for 2, 3, 5, or 7 hr before analysis. We define the \u2018Bright GFP::COSA-1 zone\u2019 as the length of the region from where bright GFP::COSA-1 foci appear to the end of pachytene, before oocytes form a single row of cells. Since the length of each meiotic stage region varies among individual animals, while the ratio between stages is relatively constant. We used the ratio of the length of \u2018Bright GFP::COSA-1 zone\u2019 to the length of the region from meiotic onset to the end of pachytene to reflect the timing of bright GFP::COSA-1 foci appearance and crossover designation. To simplify, we hereafter use \u2018bright GFP::COSA-1 (%)\u2019 in graphs to indicate this ratio. Meiotic onset was determined by the staining of meiosis-specific proteins SYP-1 and/or HTP-3. n = number of gonads scored for each condition. *p = 0.0161 and ***p = 0.0003, or <0.0001, respectively, two-sided Student\u2019s t-test. (D) Quantitative comparison of the timing of CO designation in worms as described in (B). Worms were treated with or without 1 mM auxin for 3, 5, or 7 hr before analysis. Quantification was performed as described in (C). ***p < 0.0001, two-sided Student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative leptotene/zygotene and mid-pachytene nuclei stained for HA::AID::CHK-2 (anti-HA) and DNA, showing efficient depletion of CHK-2 following auxin treatment. Worms were incubated with 1 mM auxin (or 0.25% ethanol lacking auxin) for 1, 3, or 5 hr before analysis. CHK-2 was undetectable within 3 hr of auxin exposure. Scale bars, 5 \u00b5m. (B) Representative leptotene/zygotene and mid-pachytene nuclei stained for phosphorylated HIM-8/ZIMs and DNA, showing efficient depletion of CHK-2 activity within 3 hr of auxin treatment. Scale bars, 5 \u00b5m. Representative germlines from him-8 (C) and him-5 (D) mutant hermaphrodites stained for GFP::COSA-1 (green), RAD-51 (magenta), and DNA (blue), revealing earlier appearance of bright COSA-1 foci upon CHK-2 depletion. Worms were transferred to plates prepared with 1 mM auxin (or 0.25% ethanol as a control) for 5 hr before fixation. Dashed green lines indicate where bright COSA-1 foci start to appear and where pachytene ends. Dashed red lines in (C) indicate RAD-51-positive zone. Note: the same image in (C) without RAD-51 is shown in Figure 2B. The average number of bright COSA-1 foci per nucleus in each row is indicated below each image in green in (D). Scale bars, 5 \u00b5m. (E, F) Quantitative comparison of the RAD-51-positive zone upon CHK-2 depletion in him-8 mutants and the timing of appearance of bright COSA-1 foci upon CHK-2 depletion in him-5 mutants. Worms were exposed to auxin for 3, 5, or 7 hr before fixation and analysis. The bright GFP::COSA-1 zone was defined as a region from where bright COSA-1 foci start to appear to the end of pachytene, before oocytes form a single row. The \u2018bright GFP::COSA-1 (%)\u2019 in the graph was defined as the ratio of the length of bright GFP::COSA-1 zone to the length of the region from meiotic onset to the end of pachytene. Meiotic onset was determined by the localization of meiosis-specific proteins SYP-1 and/or HTP-3. The RAD-51 zone and the region of overlap between the RAD-51 and bright COSA-1 zones were measured and expressed in the same way. See \u2018Materials and methods\u2019 for details. **p = 0.001 and ***p < 0.0001 in (E), *p = 0.0114, **p = 0.0032 and 0.0012 in (F), respectively, two-sided Student\u2019s t-test.\n\nWe reasoned that if CO designation is inhibited by CHK-2, then depletion of CHK-2 should be sufficient to restore earlier designation in mutants that disrupt establishment of CO intermediates on a subset of chromosomes. We depleted CHK-2 in him-8 and him-5 mutants, which specifically affect synapsis or DSB induction on the X chromosomes, respectively, but do not impair CO formation on autosomes (Hodgkin et al., 1979; Broverman and Meneely, 1994; Phillips et al., 2005; Meneely et al., 2012). In each case, we observed a shift in the appearance of bright COSA-1 foci toward the distal region of meiotic prophase following CHK-2 depletion (Figure 2B, D; Figure 2\u2014figure supplement 1C\u2013F). This result reinforces evidence described above that CHK-2 activity is required to delay CO designation in response to feedback regulation.\n\nWe observed some differences between the two mutants: in him-8 mutants RAD-51 foci were far more abundant in the extended region of CHK-2 activity, and persisted even after CHK-2 was depleted, resulting in the appearance of nuclei with both RAD-51 foci and bright COSA-1 foci. In contrast, RAD-51 foci were sparser in him-5 and mostly disappeared upon CHK-2 depletion (Figure 2\u2014figure supplement 1C\u2013E). These differences may reflect the different arrest points of the two mutants: him-8 oocytes are defective in synapsis (Phillips et al., 2005), and thus arrest at a zygotene-like state with high CHK-2 activity, while him-5 mutants are deficient in DSB initiation on the X chromosome (Meneely et al., 2012), and thus arrest at early pachytene with an intermediate level of CHK-2 activity. We speculate that progression to early pachytene and the associated reduction in CHK-2 activity in him-5 mutants may attenuate break formation and/or allow breaks to progress to a more advanced stage of repair, so that upon CHK-2 depletion they are more rapidly resolved. Alternatively, the lower number of RAD-51 foci in him-5 mutants may reflect a direct role for HIM-5 in promoting DSB formation (Meneely et al., 2012).\n\n### Relocalization of Polo-like kinases to SCs promotes timely CHK-2 inactivation and CO designation\n\nA key unanswered question is how CHK-2 is normally inactivated at mid-prophase to terminate DSB induction and promote CO designation. Prior work on inactivation of DNA damage response (DDR) signaling in proliferating cells revealed that the Polo-like kinase Plk1 enables mammalian cells to enter mitosis following DDR activation by phosphorylating the FHA domain of Chk2, which inhibits substrate binding (van Vugt et al., 2010). We wondered whether a similar mechanism might regulate CHK-2 in meiosis.\n\nC. elegans expresses multiple homologs of mammalian Plk1, including PLK-1, which is essential for mitosis and thus for viability, and PLK-2, which is dispensable for development but plays important roles in meiosis (Chase et al., 2000; Harper et al., 2011; Labella et al., 2011). Loss-of-function mutations in plk-2 perturb pairing and synapsis, and also cause a pronounced delay in CO designation and subsequent chromosome remodeling during late prophase (Harper et al., 2011; Labella et al., 2011). To test whether CHK-2 might be a substrate of PLK-2, we performed in vitro phosphorylation assays using purified PLK-2. We used purified kinase-dead CHK-2KD as a substrate to avoid potential autophosphorylation of CHK-2. Mass spectrometry identified threonine 120 of CHK-2 as an in vitro target of PLK-2 (Figure 3\u2014figure supplement 1A). This highly conserved residue lies within the FHA substrate recognition domain (Figure 3A, B), close to serine 116, which corresponds to a site phosphorylated by Plk1 in human cells during DNA damage checkpoint adaptation (van Vugt et al., 2010). S116 and T120 both conform to a consensus motif for Plk1 substrates (Figure 3A; Santamaria et al., 2011). These results indicated that PLK-2 might phosphorylate and inactivate CHK-2 during meiosis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sequence alignment of CHK-2 orthologs from various eukaryotes generated with T-Coffee (Notredame et al., 2000), showing the conservation of Ser116 and Thr120 (asterisks). Thr120 is a direct target of PLK-2; Ser116 corresponds to a Plk1 site identified in mammlian cells (van Vugt et al., 2010). Black and gray shading indicate identical and similar residues, respectively. Both Ser116 and Thr120 match the Plk1 consensus motif [D/E/N]-X-[S/T] (Santamaria et al., 2011). (B) Schematic showing the domain organization of CHK-2 protein and the positions of two phosphorylation sites, Ser116 and Thr120. FHA: forkhead-associated domain. Numbers indicate amino acid positions. C. elegans CHK-2 and budding yeast Mek1 are meiosis-specific kinases that share the FHA and serine/threonine kinase domains of mammalian Chk2 and yeast Rad53, but lack the N-terminal SQ/TQ cluster that regulates activation of Chk2 by ATM. (C) Depletion of PLK-2 delays both CHK-2 inactivation and the appearance of bright COSA-1 foci. Worms were treated with 1 mM auxin for 24 hr and stained for pHIM-8/ZIMs (magenta), GFP::COSA-1 (green), and DNA (blue). Dashed magenta lines indicate the CHK-2-active zone. Green lines indicate the bright COSA-1 zone. The average number of bright COSA-1 foci per nuclei in each row is indicated in green below each image. Scale bars, 5 \u00b5m. (D) Depletion of CHK-2 restores early appearance of bright COSA-1 foci in plk-2 mutants. Worms were treated with or without 1 mM auxin for 3 or 5 hr. Scale bars, 5 \u00b5m. (E, F) Quantification of the extension of the CHK-2-active zone and delay in appearance of bright COSA-1 foci in worms depleted for PLK-2, as described in (C) and of bright COSA-1 foci appearance in plk-2 mutants upon depletion of CHK-2 as described in (D), respectively. n = number of gonads scored for each condition. **p = 0.0018 and ***p < 0.0001, two-sided Student\u2019s t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Recombinant kinase-dead CHK-2 protein (CHK-2KD) was phosphorylated in vitro by PLK-2 kinase and then subjected to mass spectrometry analysis for phosphorylation site identification. CHK-2 Thr120 was identified as a target of PLK-2. (B) Representative hermaphrodite gonads stained for PAS-1::AID::3xFLAG (anti-3xFLAG) and DNA, showing efficient depletion of PAS-1 in the germline upon 1 mM auxin treatment for 6 hr. PAS-1 is a subunit of the 20S proteasome and is essential for the proteasome activity. Scale bars, 5 \u00b5m. (C) A western blot shows increased abundance of ALFA::CHK-2 following depletion of proteasome subunit PAS-1. Worms were transferred to media containing 1 mM auxin for 6 hr before analysis. ALFA::CHK-2 was blotted using anti-ALFA nanobody. HTP-3 and tubulin were blotted as loading controls. The two right lanes are biological replicates. (D) ALFA::CHK-2 was immunoprecipitated from adult hermaphrodites following depletion of PAS-1 for 6 hr. Mass spectrometry identified CHK-2 Thr120 as a phosphorylated site in vivo.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Worm strains expressing the indicated HA-tagged wild-type and mutant CHK-2 proteins were compared by western blot: HA::CHK-2 WT, S116A, S116D, T120A, and T120D were all measured in heterozygotes as these point mutations result in very few viable progeny and cannot be readily balanced. HA::CHK-2 WT and S116A were readily detected, while other mutant proteins were near or below the limit of detection. HA::CHK-2 was blotted using anti-HA antibody. Tubulin was probed as a loading control. (B) Representative leptotene/zygotene and diakinesis nuclei stained for phosphorylated HIM-8/ZIMs and DNA, showing CHK-2 activity and chiasma formation in CHK-2 WT, S116A, S116D, T120A, T120D, and CHK-2 depleted homozygotes. For auxin treatment, worms were incubated with 1 mM auxin (or 0.25% ethanol lacking auxin) for 48 hr before analysis. Like CHK-2 depleted worms, CHK-2 activity and bivalents were not detected in CHK-2 S116D, T120A, and T120D mutants. Scale bars, 5 \u00b5m.\n\nTo determine whether CHK-2 is phosphorylated at Thr120 in vivo, we immunoprecipitated epitope-tagged CHK-2 from C. elegans. Transcriptome and proteome analyses have indicated that CHK-2 is very low in abundance (Wang et al., 2015; Gr\u00fcn et al., 2014). Consistent with this, tagged CHK-2 was difficult to detect on western blots from wild-type animals, even following immunoprecipitation. Based on other evidence (see below) we suspected that phosphorylation of CHK-2 might lead to its degradation. We thus exploited the AID system to deplete PAS-1, a subunit of the 20S proteasome, as a potential way to increase the abundance of CHK-2. Under conditions in which PAS-1 was efficiently depleted, CHK-2 was clearly enriched (Figure 3\u2014figure supplement 1B, C). Mass spectrometry analyses of the immunoprecipitates revealed that CHK-2 is indeed phosphorylated on Thr120 (Figure 3\u2014figure supplement 1D). To test the role of phosphorylation on the corresponding serine (S116) and/or T120 of CHK-2, we mutated each of these sites to nonphosphorylatable and phosphomimetic residues. Surprisingly, the abundance of all these mutant CHK-2 proteins was much lower than the wild-type protein; only S116A was detectable (Figure 3\u2014figure supplement 2A). Consistent with the reduced abundance of CHK-2 protein, mutation of these residues led to loss of CHK-2 function: phopsho-HIM-8/ZIMs was not detectable and bivalent formation was defective; only S116A was partially functional (Figure 3\u2014figure supplement 2B). These observations suggest that these mutations destabilize CHK-2 in addition to potentially inhibiting substrate binding.\n\nTo determine whether PLK-2 is important for meiotic progression independent of its role in homolog pairing and synapsis (Harper et al., 2011; Labella et al., 2011; Sato-Carlton et al., 2017), we used a degron-tagged allele (Zhang et al., 2018). Depletion of PLK-2 significantly delayed CHK-2 inactivation and CO designation (Figure 3C, E). We reasoned that if PLK-2 promotes timely CO designation primarily by inactivating CHK-2, then the delay observed in plk-2 mutants should be rescued by depletion of CHK-2. Indeed, we found that AID-mediated depletion of CHK-2 restored earlier CO designation in plk-2 mutants (Figure 3D, F).\n\nAs the SC assembles, PLK-2 is recruited to this structure by binding to a Polo box interacting motif on SYP-1 (Sato-Carlton et al., 2017; Brandt et al., 2020). Following CO designation at mid-pachytene, PLK-2 activity becomes restricted to the \u2018short arms\u2019 of each bivalent (Sato-Carlton et al., 2017). We speculated that recruitment of PLK-2 to the SC may promote its ability to inactivate CHK-2. To test this idea, we examined CHK-2 activity in syp-1T452A mutants, which lack the Polo box-binding motif (S-pT-P) that recruits Polo kinases to the SC (Sato-Carlton et al., 2017; Figure 4A). Consistent with prior analysis, this single-point mutation markedly delayed the appearance of bright COSA-1 foci (Sato-Carlton et al., 2017; Figure 4B, D). We found that CHK-2 activity was similarly extended in syp-1T452A mutants (Figure 4B, D). Depletion of CHK-2 restored earlier CO designation in syp-1T452A mutants (Figure 4C, E), as in plk-2 mutants. Thus, binding of PLK-2 to the SC is important for downregulation of CHK-2, and conversely, the delay in CO designation in syp-1T452A mutants is a direct consequence of persistent CHK-2 activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative leptotene/zygotene or late pachytene nuclei in wild-type or syp-1T452A hermaphrodite gonads stained for PLK-2::mRuby (red), DNA (cyan), GFP::COSA-1 (green), and SYP-2 (blue). A conserved Polo box recruitment motif on the SC is absent in syp-1T452A mutants. PLK-2 localized to pairing centers in leptotene/zygotene nuclei but failed to localize to SC in pachytene nuclei in syp-1T452A mutants. (B) Representative hermaphrodite gonads stained for pHIM-8/ZIMs (magenta), GFP::COSA-1 (green), and DNA (blue), showing extension of CHK-2-active zone and delayed appearance of bright COSA-1 foci in syp-1T452A mutants. Dashed magenta lines indicate the CHK-2-active zone, while green lines indicate the bright COSA-1 zone. The average number of bright COSA-1 foci per nuclei in each row is indicated in green below each image. Scale bars, 5 \u00b5m. (C) Representative hermaphrodite gonads stained for GFP::COSA-1 (yellow) and DNA (blue), showing that depletion of CHK-2 in syp-1T452A mutants leads to early appearance of bright COSA-1 foci. Worms were treated with or without 1 mM auxin for 5 or 7 hr. Dash lines indicate the zone with bright COSA-1 foci. Scale bars, 5 \u00b5m. (D) Quantification of the extension of CHK-2-active zone and the delay in appearance of bright COSA-1 foci in worms as described in (B). n = number of gonads scored for each condition. ***p < 0.0001, two-sided Student\u2019s t-test. (E) Quantification of bright COSA-1 zone in worms maintained and treated as in (C). Wild-type worms were used as control. n = number of gonads scored for each condition. ***p < 0.0001, two-sided Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative nuclei at different stages showing efficient co-depletion of PLK-1 and PLK-2 in the germline. One hour of auxin treatment was sufficient to eliminate detectable PLK-1/PLK-2 in the germline except at Pairing Centers in early meiotic nuclei, where full depletion required 5 hr. Scale bars, 5 \u00b5m. (B) Images of representative hermaphrodite gonads stained for pHIM-8/ZIMs (magenta), 3xFLAG-COSA-1 (green), and DNA (blue), showing inactivation of CHK-2 and appearance of bright COSA-1 foci in the absence of PLK-1 and PLK-2. Dashed magenta lines indicate CHK-2-active zone, while green lines indicate the region of nuclei with bright COSA-1 foci. When PLK-1 and PLK-2 were co-depleted for longer than 16 hr, COSA-1 foci were greatly diminished (in most nuclei, only one bright 3xFLAG::COSA-1 focus can be detected). This likely reflects defects in pairing and synapsis, which prevent the formation of crossover precursors. However, bright COSA-1 foci were still observed when both PLK-1 and PLK-2 were depleted. Since COSA-1 appears only after inactivation of crossover assurance checkpoint, this suggested that crossover assurance checkpoint can still be overridden in the absence of PLK-1 and PLK-2. The average number of bright COSA-1 foci per nucleus in each row was indicated below each image in green. Since the signal in pre-meiotic nuclei depleted of PLK-1/2 was extremely high due to mitotic arrest, the brightness of pHIM-8/ZIMs was adjusted in order to see the signal in meiotic nuclei, but the background intensity outside of meiotic nuclei was kept the same among different conditions. Scale bars, 5 \u00b5m. (C) Graphs showing extension of CHK-2-active zone and delay in appearance of bright COSA-1 foci in worms co-depleted for PLK-1 and PLK-2. The bright COSA-1 zones and CHK-2-active zones were measured and presented as described in Figure 2\u2014figure supplement 1E. n = 9, 6, 7, 6, 7, and 6 gonads, respectively. ***p = 0.0007 and 0.0009, respectively, two-sided Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84492/elife-84492-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative hermaphrodite gonads showing efficient, germline-specific depletion of MPK-1. Asterisks indicate the somatic distal tip and seam cells, where MPK-1 persists following degradation since TIR1 is expressed only in germ cells. Scale bars, 5 \u00b5m. (B) Representative hermaphrodite gonads stained for pHIM-8/ZIMs (magenta), GFP::COSA-1 (green), and DNA (blue), showing inactivation of CHK-2 and appearance of bright COSA-1 foci in the absence of MPK-1. Magenta dashed lines indicate CHK-2-active zone, while green lines indicate bight COSA-1 zone. The number of bright COSA-1 foci per nucleus in each row was indicated at the bottom of each image in green. Scale bars, 5 \u00b5m. (C) Graphs showing CHK-2-active zone and bright COSA-1 zone in worms depleted for MPK-1 for various length of time. In this case, the bright GFP::COSA-1 zones and CHK-2-active zones were measured and presented as a fraction of the region from meiotic onset to the turn of the gonad instead of the end of pachytene, because MPK-1 depletion perturbs pachytene exit and formation of a single line of oocytes. n = 6, 6, 4, 5, and 5 gonads, respectively. (D) Images of representative hermaphrodite gonads stained for pHIM-8/ZIMs (magenta), GFP::COSA-1 (green), and DNA (blue), showing inactivation of CHK-2 and bright COSA-1 foci formation in the syp-1T452A worms depleted for MPK-1. Scale bars, 5 \u00b5m. (E) Quantification of the CHK-2-active zone and bright COSA-1 zone in syp-1T452A hermaphrodites depleted for MPK-1 for various lengths of time. \u2018bright GFP::COSA-1 zone\u2019 and \u2018CHK-2-active zone\u2019 were measured and presented as described in (C). n = 8, 6, 7, 8, and 8 gonads, respectively.\n\nWe observed that CO designation was delayed to different extents by plk-2 null mutations, induced depletion of PLK-2, and syp-1T452A. We scored the timing of CO designation as the fraction of the length of the region of the gonad spanning meiotic prophase (prior to diplotene\u2013diakinesis) in which nuclei display bright COSA-1 foci, since this ratio is fairly consistent for a given genotype/condition, more so than the absolute length of this zone or number of nuclei. The \u2018bright COSA-1 zone\u2019 was reduced from 55% of prophase in wild-type hermaphrodites to 44% in plk-2 null mutants, 37% in PLK-2::AID+auxin, and 20% in syp-1(T452A) (Figure 3C\u2013F; Figure 4B, D). The delay in plk-2 null mutants is likely due in part to earlier prophase defects, including delayed pairing and synapsis (Harper et al., 2011; Labella et al., 2011). Depletion of PLK-2 caused less disruption of these early events (Figure 4\u2014figure supplement 1A). SYP-1T452A caused even milder defects in pairing and synapsis (Brandt et al., 2020; Sato-Carlton et al., 2017), but a more dramatic delay in CHK-2 inactivation and CO designation (Figures 3C\u2013F\u20134B, D). These differences are likely due to the ability of PLK-1 to partially substitute for PLK-2 in inactivating CHK-2 (see below), while SYP-1T452A cannot recruit either PLK-1 or PLK-2. This supports the conclusion that recruitment of Polo-like kinase to SCs is important for CHK-2 inactivation and CO designation.\n\nAlthough mutation or depletion of PLK-2 or failure to recruit it to the SC delayed inactivation of CHK-2, markers for CHK-2 activity eventually disappeared and CO designation was detected in all these strains. We thus wondered how CHK-2 is inactivated in the absence of PLK-2. In plk-2 null mutants, PLK-1 can partially substitute at Pairing Centers to promote pairing and synapsis (Harper et al., 2011; Labella et al., 2011). We tested whether PLK-1 might compensate for loss of PLK-2 in late prophase, as it does during early meiosis, by co-depleting both paralogs (Figure 4\u2014figure supplement 1A). Compared to PLK-2 depletion alone, CO designation was further delayed when PLK-1 and PLK-2 were both depleted, indicating that PLK-1 can indeed contribute to CHK-2 inactivation during late prophase (Figure 3C, E; Figure 4\u2014figure supplement 1B, C). However, CHK-2 was still eventually inactivated in the absence of both paralogs. We also tested whether the nonessential Plk1 homolog plk-3 can promote CO designation. As previously reported (Harper et al., 2011), plk-3 mutants showed no apparent meiotic defects, and we observed no further delay when we combined a plk-3 deletion with depletion of PLK-1 and PLK-2 (data not shown). Thus, PLK-3 does not contribute to inactivating CHK-2, even in the absence of PLK-1 and PLK-2.\n\nThe ERK kinase MPK-1 promotes pachytene exit and has been proposed to be important for CO designation (Church et al., 1995; Hayashi et al., 2007; Lee et al., 2007; Nadarajan et al., 2016). We used the AID system to test whether MPK-1 promotes CHK-2 inactivation or CO designation. MPK-1::AID was undetectable in germ cells following 1 hr of auxin treatment (Figure 4\u2014figure supplement 2A). Although depletion of MPK-1 led to a disordered appearance of the proximal germline, it did not cause any apparent delay in CO designation, either alone or in combination with syp-1T452A (Figure 4\u2014figure supplement 2B\u2013E). We thus conclude that MPK-1 activity does not play a role in CO designation. We speculate that a rise in CDK activity and/or other spatially regulated signals in the proximal gonad may lead to CHK-2 inactivation even when Polo-like kinase activity is absent.\n\n## Discussion\n\nIn summary, we find that CHK-2 activity is required to inhibit CO designation. CHK-2 is normally inactivated at mid-pachytene through the recruitment of PLK-2 to the SC and the formation of CO precursors, but delays in synapsis prevent the activation of PLK-2 and thereby prolong CHK-2 activity. Notably, delays in the establishment of CO intermediates also prolong CHK-2 activity, and thus full activation of PLK-2 may depend on the formation of CO intermediates on all chromosomes. Consistent with this idea, PLK-2-dependent phosphorylation of the central region protein SYP-4 (Nadarajan et al., 2017) increase markedly starting at mid-pachytene, concomitant with CO designation. How the formation of CO precursors promotes PLK-2 activity remains unclear, but the kinase does appear to associate with designated CO sites even when it cannot be recruited to the SC (Zhang et al., 2018).\n\nOur data support the idea that PLK-2 directly regulates CHK-2 via inhibitory phosphorylation, but do not rule out the possibility that recruitment of PLK-2 to the SC leads indirectly to CHK-2 inactivation. A recent study reported that CHK-2 inactivation is reversible through mid-pachytene (Castellano-Pozo et al., 2020), consistent with the idea that it occurs through phosphorylation, which can be reversed by phosphatase activity (Kar and Hochwagen, 2021). We speculate that phosphorylated CHK-2 may be degraded after mid-pachytene, resulting in irreversible inactivation.\n\nIntriguingly, both CHK-2 and PLK-2 are active during leptotene/zygotene, when both kinases are bound to Pairing Centers (Kim et al., 2015; Link et al., 2018; Penkner et al., 2009; Sato et al., 2009; Woglar et al., 2013), implying that in this context PLK-2 does not inactivate CHK-2. We speculate that the configuration of CHK-2 and PLK-2 recruitment motifs on the Pairing Center proteins may make the target site(s) in the FHA domain of CHK-2 inaccessible to the active site of PLK-2. However, the activity of CHK-2 in early prophase also depends on an enigmatic meiotic regulator of PLK-2 activity, a heterodimeric complex of HAL-2 and HAL-3 (Roelens et al., 2019; Zhang et al., 2012). This may inhibit or antagonize phosphorylation of CHK-2. Further work will be needed to clarify how CHK-2 and PLK-2 work in concert at pairing centers during early meiosis, while PLK-2 antagonizes CHK-2 later in meiotic prophase.\n\nIn C. elegans, synapsis can occur normally in the absence of DSBs or recombination intermediates (Dernburg et al., 1998), and meiocytes surveil both synapsis and CO precursors to ensure chiasma formation and faithful segregation (reviewed by ). In organisms where synapsis depends on the stabilization of interhomolog joint molecules through the \u2018ZMM\u2019 pathway (Pyatnitskaya et al., 2019), cells may monitor synapsis as a proxy for the presence of CO-competent intermediates. However, in either case, SC assembly is essential for the surveillance. In mouse spermatocytes, PLK-1 localizes along SCs and promotes pachytene exit (Jordan et al., 2012). Thus, similar mechanisms may coordinate synapsis with meiotic progression in other organisms.\n\n## Materials and methods\n\n### Worm strains\n\nAll C. elegans strains were maintained on standard nematode growth medium (NGM) plates seeded with OP50 bacteria at 20\u00b0C. All epitope- and degron-tagged alleles analyzed in this study were fully functional, as indicating by their ability to support normal meiosis and development (Supplementary file 1a). Unless otherwise indicated, new alleles used in this study were generated by CRISPR/Cas9-mediated genome editing following a modified protocol as previously described (Arribere et al., 2014; Paix et al., 2015; Zhang et al., 2018).\n\nSee Supplementary file 1b for a list of new alleles generated in this study and Supplementary file 1c for reagents used to make these alleles. A list of worm strains used in this study is shown in Supplementary file 1d. Unless otherwise indicated, young adults (20\u201324 hr post-L4) were used for both immunofluorescence and western blot assays.\n\n### Worm viability and fertility\n\nTo quantify brood sizes, male self-progeny, and embryonic viability, L4 hermaphrodites were picked onto individual seeded plates and transferred to new plates daily over 4 days. Eggs were counted daily. Viable progeny and males were scored when they reached the L4 or adult stages.\n\n### Auxin-mediated protein depletion in worms\n\nAuxin-mediated protein depletion was performed as previously described (Guo et al., 2022; Zhang et al., 2015). Briefly, worms were transferred to bacteria-seeded plates containing 1 mM indole-3-acetic acid (Acros Organics, Cat #122160250) and incubated for the indicated time periods before analysis.\n\n### In vitro phosphorylation assay\n\nRecombinant kinase-dead CHK-2 (CHK-2KD, K199->R) was expressed and purified as described previously (Kim et al., 2015). For PLK-2, the full-length open reading frame was amplified from a C. elegans cDNA library and cloned into pFastBac1 (Life Technologies) with a GST tag at its N-terminus. GST-PLK-2 was expressed in insect Sf9 cells using the standard Bac-to-Bac system (Life Technologies) and then purified using glutathione Sepharose (GE Life Sciences).\n\nIn vitro kinase assays were performed in a buffer comprised of 25 mM HEPES pH 7.4, 50 mM NaCl, 2 mM EGTA, 5 mM MgSO4, 1 mM DTT, and 0.5 mM NaF, supplemented with 0.5 mM Mg-ATP. 2 \u00b5M of GST-CHK-2KD were incubated with or without 0.2 \u00b5M of GST-PLK-2 at room temperature for 1 hr. Kinase reactions were terminated by either quick freezing in liquid nitrogen or addition of sodium dodecyl sulfate (SDS) sample buffer. Proteins in SDS buffer were electrophoresed using gradient polyacrylamide gels (Genscript, #M00652). CHK-2 bands were excised and stored at 4\u00b0C. Proteins were then subjected to either in-solution or in-gel trypsin digestion, and phosphorylation sites were identified using mass spectrometry analyses (UC Davis).\n\n### Mass spectrometry\n\nAn Xevo G2 QTof coupled to a nanoAcquity UPLC system (Waters, Milford, MA) was used for phosphorylation site identification. Briefly, samples were loaded onto a C18 Waters Trizaic nanotile of 85 \u00b5m \u00d7 100 mm; 1.7 \u03bcm (Waters, Milford, MA). The column temperature was set to 45\u00b0C with a flow rate of 0.45 ml/min. The mobile phase consisted of A (water containing 0.1% formic acid) and B (acetonitrile containing 0.1% formic acid). A linear gradient elution program was used: 0\u201340 min, 3\u201340% (B); 40\u201342 min, 40\u201385% (B); 42\u201346 min, 85% (B); 46\u201348 min, 85\u20133% (B); 48\u201360 min, 3% (B).\n\nMass spectrometry data were recorded for 60 min for each run and controlled by MassLynx 4.2 (Waters, Milford, MA). Acquisition mode was set to positive polarity under resolution mode. Mass range was set from 50 to 2000 Da. Capillary voltage was 3.5 kV, sampling cone at 25 V, and extraction cone at 2.5 V. Source temperature was held at 110\u00b0C. Cone gas was set to 25 l/hr, nano flow gas at 0.10 bar, and desolvation gas at 1200 l/hr. Leucine\u2013enkephalin at 720 pmol/\u00b5l (Waters, Milford, MA) was used as the lock mass ion at m/z 556.2771 and introduced at 1 \u00b5l/min at 45-s intervals with a 3 scan average and mass window of \u00b10.5 Da. The Mse data were acquired using two scan functions, corresponding to low energy for function 1 and high energy for function 2. Function 1 had collision energy at 6 V and function 2 had a collision energy ramp of 18\u201342 V.\n\nRAW Mse files were processed using Protein Lynx Global Server (PLGS) version 3.0.3 (Waters, Milford, MA). Processing parameters consisted of a low energy threshold set at 200.0 counts, an elevated energy threshold set at 25.0 counts, and an intensity threshold set at 1500 counts. The databank used corresponded to C. elegans and was downloaded from uniprot.org and then randomized. Searches were performed with trypsin specificity and allowed for two missed cleavages. Possible structure modifications included for consideration were methionine oxidation, carbamidomethylation of cysteine, deamidiation of asparagine or glutamine, dehydration of serine or threonine, and phosphorylation of serine, threonine, or tyrosine.\n\n### ALFA::CHK-2 immunoprecipitation\n\nTo obtain synchronized young adults, five to six L4 larvae animals were picked onto standard 60-mm culture plate spread with OP50 bacteria. Animals were grown at 20\u00b0C for 5 days until starved. 90 plates of L1 larvae for each genotype or condition were washed into 1.5-l liquid culture supplemented with HB101 bacteria. Worms were then grown with aeration at 200 rpm at 20\u00b0C for 3 days to reach adulthood. Six hours prior to harvest, 1 mM auxin or 0.25% ethanol (solvent control) was added to the liquid culture. Harvested worms were frozen in liquid nitrogen and stored at \u221280\u00b0C. The frozen worms were then processed using a prechilled Retsch mixer mill to break the cuticle, thawed on ice in cold lysis buffer (25 mM HEPES pH 7.4, 100 mM NaCl, 1 mM MgCl2, 1 mM EGTA, 0.1% Triton X-100, 1 mM DTT, cOmplete protease inhibitors [Sigma #4693159001] and phosSTOP [Sigma #4906837001]). Lysates were processed using a Dounce homogenizer and sonicated using a Branson Digital Sonifier on ice and then centrifuged at 20,000 RCF for 25 min at 4\u00b0C. The supernatant was incubated with anti-ALFA selector (Nanotag Biotechnologies, #N1511) for 3 hr at 4\u00b0C. Beads were then washed six times with lysis buffer and three times with milli-Q water. Proteins on beads were then processed for phosphorylation site identification using mass spectrometry (UC Davis).\n\nBriefly, beads were spun in a 10K MWCO filter (VWR, Radnor, PA) at room temperature for 10 min at 10,000 \u00d7 g and then washed with 50 mM ammonium bicarbonate. Beads were then subjected to reduction at 56\u00b0C for 45 min in 5.5 mM DTT followed by alkylation for 1 hr in the dark with iodoacetamide added to a final concentration of 10 mM. The beads were again washed with 50 mM ammonium bicarbonate followed by addition of sequencing grade trypsin to a final enzyme:substrate mass ratio of 1:50 and digested overnight at 37\u00b0C. Resultant peptides were then collected in a fresh clean centrifuge tube during a final spin of 16,000 \u00d7 g for 20 min. Peptides were dried down in a speed-vac and stored at \u221280\u00b0C. Prior to analysis, samples were reconstituted in 2% acetonitrile with 0.1% TFA. Samples were then loaded and analyzed as described above.\n\n### Microscopy\n\nImmunofluorescence experiments for C. elegans were performed as previously described (Zhang et al., 2018). Images shown in Figure 4\u2014figure supplement 2A were obtained from worms dissected and fixed in the absence of Tween-20 to retain soluble proteins. Primary antibodies were obtained from commercial sources or have been previously described, and were diluted as follows: Rabbit anti-RAD-51 (1:5000, Novus Biologicals, #29480002), Rabbit anti-pHIM-8/ZIMs (1:500, Kim et al., 2015), Goat anti-SYP-1 (1:300, Harper et al., 2011), Rabbit anti-SYP-2 (1::500, Colai\u00e1covo et al., 2003), Chicken anti-HTP-3 (1:500, MacQueen et al., 2005), Mouse anti-HA (1:400, Thermo Fisher, #26183), Mouse anti-GFP (1:500, Millipore Sigma, #11814460001), Mouse anti-FLAG (1:500, Sigma, #F1804), anti-ALFA-At647N (1:500, Nanotag Biotechnologies, N1502-At647N). Secondary antibodies labeled with Alexa 488, Cy3, or Cy5 were purchased from Jackson ImmunoResearch (WestGrove, PA) and used at 1:500. All images were acquired as z-stacks through 8\u201312 \u00b5m depth at z-intervals of 0.2 \u00b5m using a DeltaVision Elite microscope (GE) with a \u00d7100, 1.4 N.A. or \u00d760, 1.42 N.A. oil-immersion objective. Iterative 3D deconvolution, image projection, and colorization were carried out using the softWoRx package and Adobe Photoshop CC 2021.\n\n### Western blotting\n\nAdult worms were picked into S-basal buffer and lysed by addition of SDS sample buffer, followed by boiling for 15 min with occasional vortexing. Whole worm lysates were then separated on 4\u201312% polyacrylamide gradient gels (GenScript, #M00654), transferred to membranes, and blotted with mouse anti-HA (1:1000, Thermo Fisher, #26183), Guinea pig anti-HTP-3 (1:1500, MacQueen et al., 2005), mouse anti-\u03b1-tubulin (1:5000, Millipore Sigma, #05-829), rabbit anti-\u03b2-tubulin (1:2000, Abcam, ab6046), or HRP-conjugated anti-ALFA sdAb (1:1000, Nanotag Biotechnologies, N1505-HRP), HRP-conjugated anti-mouse secondary antibodies (Jackson Immunoresearch #115-035-068), HRP-conjugated anti-Rabbit secondary antibodies (Jackson Immunoresearch #111-035-144), HRP-conjugated anti-Guinea pig secondary antibodies (Jackson Immunoresearch #106-035-003). SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Fisher, #34095) was used for detection.\n\n### Timing of CHK-2 inactivation and CO designation\n\nThe CHK-2-active zone was determined by immunofluorescence with an antibody recognizing phosphorylated HIM-8 and ZIM proteins (Kim et al., 2015). Designated COs were detected using GFP::COSA-1. The lengths of regions corresponding to each meiotic stage vary among individual animals, but the length ratios of these regions are relatively consistent (Kim et al., 2015; Stamper et al., 2013). Thus, unless otherwise indicated, we quantified the CHK-2-active zone or bright COSA-1 zone as a ratio of the region showing positive staining to the total length of the region from meiotic onset to the end of pachytene. Meiotic onset was determined by the staining of meiosis-specific proteins SYP-1 and/or HTP-3.\n\nBright GFP::COSA-1 foci were identified using the intensity profile of GFP::COSA-1 throughout pachytene, as shown in Figure 1D. While early GFP::COSA-1 foci are relatively dim and sensitive to fixation and antibody staining conditions, COSA-1 foci at designated CO sites are relatively constant in intensity from their appearance until the end of pachytene. The absolute intensity of GFP::COSA-1 varied between samples, so it was not possible to identify designated CO sites using a fixed intensity threshold.\n\n### Quantification and statistical analysis\n\nQuantification methods and statistical parameters are described in the legend of each figure, including sample sizes, error calculations (standard deviation or standard error of the mean), statistical tests, and p values. p < 0.05 was considered to be significant.\n",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "e0dae31f-2e8d-4982-9fae-63ed562790b6",
+      "submission_id": "9aeeb608-5cea-40c2-a763-48023de7c0dc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Federico Pelisch, https://ror.org/03h2bxq36 University of Dundee United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84492.sa0](https://doi.org/10.7554/eLife.84492.sa0)\n\nZhang et al. present convincing data describing a role for Polo-like kinase PLK-2 in restricting the activity of Chk2 kinase and coordinating synapsis of homologous chromosomes with the progression of meiotic prophase in C. elegans. By revealing PLK-2-dependent and -independent mechanisms of CHK-2 activity, this work provides a valuable understanding of the major regulators of meiotic progression.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Federico Pelisch, https://ror.org/03h2bxq36 University of Dundee United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84492.sa1](https://doi.org/10.7554/eLife.84492.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Recruitment of Polo-like kinase couples synapsis to meiotic progression via inactivation of CHK-2\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Jeff Sekelsky (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe two main points highlighted below relate to the CHK-2 phospho-mutants and to the effect of the presence of the kinases as opposed to the requirement of their kinase activity. Most experiments we discussed presented complications and we therefore will not require them for publication. We would in turn 'suggest' them as a means to enhance the significance of the findings, if possible.\n\n1) Did you consider expressing the different CHK-2 mutants from heterologous loci, all in the background of endogenous AID::CHK-2? Alternatively, providing wild-type AID::CHK-2 from an alternative locus could be an option. We do appreciate that given the stability effect of the phospho-mutants, any of these strategies might not be helpful.\n\n2) Some attempts to differentiate between the requirement of the kinases vs the requirement of their kinase activity would be highly beneficial for the manuscript. Once again, given that these kinases play roles earlier in meiosis, the use of kinase-dead alleles might not be possible. Have the authors tried an analog-sensitive strategy to inhibit kinase activity?\n\nAdditionally, please go over the reviewers' comments carefully as some of them point out that some claims might need rewording.\n\nReviewer #1 (Recommendations for the authors):\n\nIt is worth clarifying in the Results section how long it takes for a nucleus to progress through prophase I (i.e., was the protein depleted for the entirety of meiosis up to the point that the nuclei were imaged, or was the protein only depleted for part of prophase I?).\n\n1:4 \u2013 \"CHK-2-dependent phosphorylation sites on HIM-8 and ZIM-1/2/3 at Pairing Centers\" \u2013 I'm assuming this means this happens exclusively at pairing centers and not that the antibody only works at pairing centers, but the wording could imply the latter.\n\n11:1 \u2013 Typo (\"paring\" should be \"pairing\").\n\nFigure 1:\n\nThe meaning of the axis label \"% of bright GFP::COSA-1 zone\" is unclear before carefully reading the figure legend. It would be best to additionally state what this metric represents in the actual body of the text.\n\nIn Figure 1D, the bright green of GFP::COSA-1 in the graph is a bit challenging to read.\n\nFigure 2\n\nThe color of SYP-1 (or at least the color of the text-the pseudocoloring of the microscopy appears to be magenta) should be changed to magenta to make the figure accessible to colorblind readers.\n\nFigure 2-S1:\n\nChange the color of RAD-51 to magenta.\n\nFigure 3-S1:\n\nThe text size of the axes and labels of the mass spec graph could be increased to improve legibility.\n\nFigure 4-S1 and associated Methods text:\n\nWere the gain and/or brightness and contrast modified to account for the intense pHIM-8/ZIMs staining? If so, it would be informative to include this in the Microscopy methods.\n\nReviewer #3 (Recommendations for the authors):\n\nFigure 2 legend: \"Dashed green lines indicate the earliest nuclei with bright COSA-1 foci and the end of pachytene, respectively.\" \u2013 please clarify that the \"respectively\" refers to the left line and the right line.\n\np7 lines 14,16: Is there a reference for high versus intermediate levels of CHK-2 activity in these backgrounds? (The Kim et al. 2015 paper shows similar lengths of CHK-2 active zones in him-8 and him-5 mutants.) Otherwise, this should be marked as speculation.\n\np. 9 line 5: The authors speculate that phosphorylation of CHK-2 T120 leads to CHK-2 degradation, which is plausible given their results; the unexpected finding that blocking this phosphorylation with mutation to alanine (Figure 3 sup. 2) also apparently leads to instability should be discussed.\n\np. 9: the non-phosphorylatable alleles of CHK-2 turned out to be loss-of-function alleles, so the specific questions of whether phosphorylation of T120 or S116 leads to inactivation could not be asked in this work. Have the authors considered providing wild-type AID:chk-2 at a heterologous locus in these mutant backgrounds, to assess these alleles after depletion (after CHK-2 has performed its earlier function)?\n\np. 10, lines 20-21: the quantitative difference in CHK-2 activity between the depletion of PLK-2 and SYP-1(T452A) mutants is striking and somewhat counterintuitive since PLK-2 presumably at least exists in the SYP-1 phosphomutant. Is it possible that the difference lies in wild-type SYP-1's ability to recruit PLK-1? This could be experimentally addressed or discussed.\n\np. 12, line 19: The reference Sato-Carlton et al. 2020 shows that HIM-3 is phosphorylated independently of PLK-2 and PLK-1; this is opposite to what is stated here.\n\np. 11, line 3: SYP-2 should be corrected to SYP-1.\n\np. 17, line 4: correct \"uniport\" \u2192 \"uniprot\".\n",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4e03ae86-aa77-4a42-a099-c7113bc9e880",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C1",
+      "claim": "Meiotic chromosome segregation relies on synapsis and crossover (CO) recombination between homologous chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic chromosome segregation relies on synapsis and crossover (CO) recombination between homologous chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about meiotic processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "542fcf62-bdc3-41ab-9a8c-71280b5baa9c",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C2",
+      "claim": "Failures in chromosome synapsis can trigger a cell cycle delay and/or lead to apoptosis in diverse species.",
+      "claim_type": "EXPLICIT",
+      "source": "In diverse species, failures in chromosome synapsis can trigger a cell cycle delay and/or lead to apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about meiotic surveillance mechanisms across species, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3f176a4d-b1c8-4034-be6f-54f683436cf8",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C3",
+      "claim": "In C. elegans, recruitment of PLK-2 to the synaptonemal complex triggers phosphorylation and inactivation of CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that in C. elegans, recruitment of the Polo-like kinase PLK-2 to the synaptonemal complex triggers phosphorylation and inactivation of CHK-2, an early meiotic kinase required for pairing, synapsis, and double-strand break (DSB) induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data including in vitro phosphorylation assays, mass spectrometry, and genetic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "ff69ba5b-bfbf-4eef-98b1-1c03c1ecd965",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C4",
+      "claim": "CHK-2 is an early meiotic kinase required for pairing, synapsis, and double-strand break (DSB) induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that in C. elegans, recruitment of the Polo-like kinase PLK-2 to the synaptonemal complex triggers phosphorylation and inactivation of CHK-2, an early meiotic kinase required for pairing, synapsis, and double-strand break (DSB) induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior literature citations and experimental data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "6722c129-856a-47ce-a04f-9dffa563f1bb",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C5",
+      "claim": "Inactivation of CHK-2 terminates DSB formation and enables CO designation and cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of CHK-2 terminates DSB formation and enables CO designation and cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that CHK-2 depletion leads to earlier CO designation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "5b17015a-0508-492a-b63d-9d3fdfd2c235",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C6",
+      "claim": "A single round of DNA replication at meiotic entry is followed by two nuclear divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "A single round of DNA replication at meiotic entry is followed by two nuclear divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the meiotic cell cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "34e53c9a-7e61-46db-acc3-456e9d86b784",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C7",
+      "claim": "Chiasmata direct bipolar orientation and segregation of homologous chromosomes during Meiosis I together with sister chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with sister chromatid cohesion, chiasmata direct bipolar orientation and segregation of homologous chromosomes during Meiosis I (Hillers et al., 2017; Hunter, 2015; Ur and Corbett, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "8e0dd51e-56dc-4552-91d0-165c7125e6e2",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C8",
+      "claim": "Synapsis and recombination are monitored by meiotic checkpoints that can delay cell cycle progression and/or lead to apoptosis when these processes are impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapsis and recombination are monitored by meiotic checkpoints that can delay cell cycle progression and/or lead to apoptosis when these processes are impaired (Subramanian and Hochwagen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "03cf90e7-7c61-4c50-a1d2-48722d9e01dc",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C9",
+      "claim": "Formation and initial processing of DSBs in C. elegans requires the activity of CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, formation and initial processing of DSBs requires the activity of CHK-2, a meiosis-specific homolog of the DNA damage transducing kinase Chk2/CHEK2 (MacQueen and Villeneuve, 2001; Oishi et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "ab857416-373b-4aaa-b401-4792b920f238",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C10",
+      "claim": "CHK-2 is a meiosis-specific homolog of the DNA damage transducing kinase Chk2/CHEK2.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, formation and initial processing of DSBs requires the activity of CHK-2, a meiosis-specific homolog of the DNA damage transducing kinase Chk2/CHEK2 (MacQueen and Villeneuve, 2001; Oishi et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "7b401d48-1469-478e-b8c8-80c36f450f5d",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C11",
+      "claim": "CHK-2 is eventually inactivated at mid-pachytene.",
+      "claim_type": "EXPLICIT",
+      "source": "CHK-2 is eventually inactivated at mid-pachytene; based on cytological markers, this roughly coincides with cessation of DSB formation and the resolution of many intermediates through a 'generic' (as opposed to meiosis-specific) homologous recombination pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3b52b8e4-7152-43f7-a456-d0ef72ee3f7e",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C12",
+      "claim": "CHK-2 inactivation at mid-pachytene roughly coincides with cessation of DSB formation.",
+      "claim_type": "EXPLICIT",
+      "source": "CHK-2 is eventually inactivated at mid-pachytene; based on cytological markers, this roughly coincides with cessation of DSB formation and the resolution of many intermediates through a 'generic' (as opposed to meiosis-specific) homologous recombination pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cytological observations and inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "5a678d62-b066-4179-b15f-442eb5da6904",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C13",
+      "claim": "A similar mid-prophase transition has been described in budding yeast and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar transition during mid-prophase has been described in budding yeast and mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "c8205f72-3115-434e-995e-759ff78b0919",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C14",
+      "claim": "Mid-prophase progression depends on assembly of the synaptonemal complex (SC).",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, this progression depends on assembly of the synaptonemal complex (SC), a meiosis-specific protein scaffold that assembles between homologous chromosomes (Enguita-Marruedo et al., 2019; Hayashi et al., 2007; Kauppi et al., 2013; Lee et al., 2021; Mu et al., 2020; Murakami et al., 2020; Nadarajan et al., 2017; Thacker et al., 2014; Wojtasz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "0263bb97-0b9d-4443-9468-6cfb524f28e8",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C15",
+      "claim": "The synaptonemal complex is a meiosis-specific protein scaffold that assembles between homologous chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, this progression depends on assembly of the synaptonemal complex (SC), a meiosis-specific protein scaffold that assembles between homologous chromosomes (Enguita-Marruedo et al., 2019; Hayashi et al., 2007; Kauppi et al., 2013; Lee et al., 2021; Mu et al., 2020; Murakami et al., 2020; Nadarajan et al., 2017; Thacker et al., 2014; Wojtasz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "f0d06fc9-4743-474c-8a9b-e90906c5de00",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C16",
+      "claim": "CHK-2 is inactive in proliferating germline stem cells and becomes active upon meiotic entry.",
+      "claim_type": "EXPLICIT",
+      "source": "CHK-2 is inactive in proliferating germline stem cells and becomes active upon meiotic entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "8478fb6c-0d87-43a8-9ded-bf87a9946aeb",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C17",
+      "claim": "CHK-2 activation is promoted by targeted degradation of a CHK-2 inhibitor, PPM-1.D/Wip1.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of activation has not been fully established, but it is promoted by targeted degradation of a CHK-2 inhibitor, PPM-1.D/Wip1 (Baudrimont et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "888ca3ad-2afd-4009-9f6f-b0e1f7e89406",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C18",
+      "claim": "A CHK-2 ortholog in budding yeast, Mek1, undergoes trans-autophosphorylation of its activation loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Work in budding yeast has shown that a CHK-2 ortholog, Mek1, undergoes trans-autophosphorylation of its activation loop (Carballo et al., 2008; Niu et al., 2007); this mechanism is likely conserved in C. elegans since the activation loop of CHK-2 also contains a CHK-2 consensus phosphorylation motif (R-x-x-S/T) (O'Neill et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "f9608cc9-5bf6-462d-ac45-351787cdd8f4",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C19",
+      "claim": "The trans-autophosphorylation mechanism is likely conserved in C. elegans CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Work in budding yeast has shown that a CHK-2 ortholog, Mek1, undergoes trans-autophosphorylation of its activation loop (Carballo et al., 2008; Niu et al., 2007); this mechanism is likely conserved in C. elegans since the activation loop of CHK-2 also contains a CHK-2 consensus phosphorylation motif (R-x-x-S/T) (O'Neill et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from sequence conservation and prior knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "fefc1313-963c-4952-a3b4-7f59c3f203cf",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C20",
+      "claim": "CHK-2 contains a forkhead-associated (FHA) domain that recognizes phosphorylated motifs of the consensus (pT-X-X-[I/L/V]).",
+      "claim_type": "EXPLICIT",
+      "source": "Like all Chk2 homologs, CHK-2 contains a forkhead-associated (FHA) domain and thus recognizes phosphorylated motifs of the consensus (pT-X-X-[I/L/V]) (Durocher and Jackson, 2002; Li et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "413bdefb-8abd-4b19-a35e-15eb3c4b9471",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C21",
+      "claim": "Mammalian Chk2 undergoes homodimerization through binding of its FHA domain to N-terminal motifs phosphorylated by ATM.",
+      "claim_type": "EXPLICIT",
+      "source": "While mammalian Chk2 undergoes homodimerization through binding of its FHA domain to N-terminal motifs phosphorylated by ATM (Oliver et al., 2006), the meiosis-specific Mek1 (S. cerevisiae and S. pombe) and CHK-2 (C. elegans) kinases lack this regulatory domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "5625df97-e72b-4b40-b393-98dd03f64058",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C22",
+      "claim": "The meiosis-specific Mek1 and CHK-2 kinases lack the N-terminal regulatory domain present in mammalian Chk2.",
+      "claim_type": "EXPLICIT",
+      "source": "While mammalian Chk2 undergoes homodimerization through binding of its FHA domain to N-terminal motifs phosphorylated by ATM (Oliver et al., 2006), the meiosis-specific Mek1 (S. cerevisiae and S. pombe) and CHK-2 (C. elegans) kinases lack this regulatory domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3647ecda-6ed1-403f-b49c-541408e4a03f",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C23",
+      "claim": "Activation of meiotic CHK-2/Mek1 kinases is likely promoted by binding to target motifs on other proteins, resulting in high local concentrations that enable intermolecular trans-phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation is likely promoted by binding of these kinases to target motifs on other proteins, such as Hop1 in budding yeast (Carballo et al., 2008), resulting in high local concentrations that enable intermolecular trans-phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prior work and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "26aaa13f-7530-48f3-9d08-424483737e7f",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C24",
+      "claim": "The Pairing Center proteins HIM-8 and ZIM-1, -2, -3 contain FHA-binding motifs that recruit CHK-2 during early meiotic prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the Pairing Center proteins HIM-8 and ZIM-1, -2, -3 contain FHA-binding motifs that recruit CHK-2 during early meiotic prophase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and prior knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "c9ddf8c1-fdb4-468b-a58e-39b1529ca4a1",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C25",
+      "claim": "CHK-2 phosphorylates a Polo box interacting motif on Pairing Center proteins, which primes the recruitment of PLK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "By phosphorylating a Polo box interacting motif on these proteins, CHK-2 primes the recruitment of the Polo-like kinase PLK-2 (Harper et al., 2011; Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "0758cebc-177d-42f9-852e-6f949d6a592e",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C26",
+      "claim": "CHK-2 and PLK-2 at Pairing Centers modify NE proteins including lamin (LMN-1) and the LINC protein SUN-1, which promotes chromosome pairing and synapsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, CHK-2 and PLK-2 at Pairing Centers modify NE proteins including lamin (LMN-1) and the LINC protein SUN-1, which promotes chromosome pairing and synapsis (Link et al., 2018; Penkner et al., 2009; Sato et al., 2009; Woglar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "2f103c0a-ff16-4d08-a7ad-7bedb106f34f",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C27",
+      "claim": "CHK-2 is required for chromosome pairing as well as for DSB induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CHK-2 is required for chromosome pairing as well as for DSB induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior literature and experimental data.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "586c8891-0f3a-4973-9c54-0dc6011c3703",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C28",
+      "claim": "By mid-pachytene, most recombination intermediates disappear, while six 'designated crossover' foci are detected in each nucleus, one per chromosome pair.",
+      "claim_type": "EXPLICIT",
+      "source": "By mid-pachytene, most of these recombination intermediates disappear, while six 'designated crossover' foci, which show strong localization of the cyclin homolog COSA-1 and other pro-CO factors, are detected in each nucleus, one per chromosome pair (Woglar and Villeneuve, 2018; Yokoo et al., 2012; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "95ee3c30-0836-4a76-b4ae-29d435858964",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C29",
+      "claim": "Designated crossover foci show strong localization of the cyclin homolog COSA-1 and other pro-CO factors.",
+      "claim_type": "EXPLICIT",
+      "source": "By mid-pachytene, most of these recombination intermediates disappear, while six 'designated crossover' foci, which show strong localization of the cyclin homolog COSA-1 and other pro-CO factors, are detected in each nucleus, one per chromosome pair (Woglar and Villeneuve, 2018; Yokoo et al., 2012; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "23d07e12-26eb-457c-9e41-20e9778af624",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C30",
+      "claim": "Pro-CO factors are thought to prevent non-CO resolution and eventually promote the resolution of late intermediates as COs.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, pro-CO factors are thought to prevent non-CO resolution and eventually promote the resolution of these late intermediates as COs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and inference from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "077ba400-b929-44cf-9350-86345f3c3783",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C31",
+      "claim": "Defects in synapsis or establishment of CO intermediates result in activation of a 'crossover assurance checkpoint' and a delay in cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in synapsis or establishment of CO intermediates result in activation of a 'crossover assurance checkpoint' and a delay in cell cycle progression (reviewed in Yu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "45c2075c-a32a-4fe4-af61-2823681ba919",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C32",
+      "claim": "Activation of the crossover assurance checkpoint is detected cytologically as an extended region of CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the checkpoint is detected cytologically as an extended region of CHK-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "ebfafc46-e2e7-4c9e-87ed-8d10f29a52ee",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C33",
+      "claim": "Defects in synapsis prolong the 'transition zone' (leptotene/zygotene) stage of meiosis, which is characterized by clustering of chromosomes and high CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on nuclear morphology and cytological reporters of CHK-2 activity, defects in synapsis prolong the 'transition zone' (leptotene/zygotene) stage of meiosis, which is characterized by clustering of chromosomes and high CHK-2 activity, while defects in recombination result in a prolonged 'early pachytene' stage, with more dispersed chromosomes and intermediate level of CHK-2 activity (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "65c5ee8a-254f-4220-8c9a-ba0e816dabee",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C34",
+      "claim": "Defects in recombination result in a prolonged 'early pachytene' stage, with more dispersed chromosomes and intermediate level of CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on nuclear morphology and cytological reporters of CHK-2 activity, defects in synapsis prolong the 'transition zone' (leptotene/zygotene) stage of meiosis, which is characterized by clustering of chromosomes and high CHK-2 activity, while defects in recombination result in a prolonged 'early pachytene' stage, with more dispersed chromosomes and intermediate level of CHK-2 activity (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "2b6e50e8-486b-44a6-a4ee-f51c6bb2d444",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C35",
+      "claim": "In mutants competent to form some COs despite defects in synapsis or recombination, the region of nuclei displaying designated CO sites is shifted proximally within the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "In mutants that are competent to form some COs despite defects in synapsis or recombination, the region of nuclei displaying a limited number of 'designated' CO sites is also shifted proximally within the germline (Kim et al., 2015; Rosu et al., 2013; Stamper et al., 2013; Woglar and Villeneuve, 2018; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "369dd112-4851-47f6-a52e-da65845bbb11",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C36",
+      "claim": "Feedback regulation of CHK-2 requires a family of HORMA domain proteins that bind to the chromosome axis.",
+      "claim_type": "EXPLICIT",
+      "source": "This feedback regulation requires a family of HORMA domain proteins that bind to the chromosome axis (Kim et al., 2015), but how cells detect defects in synapsis or CO intermediates and how CHK-2 activity is prolonged remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "7e30967a-1c8c-42e9-ae92-8f5c083e335c",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C37",
+      "claim": "CO designation occurs concomitantly with loss of CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-staining of pHIM-8/ZIMs and GFP::COSA-1 confirmed that CO designation occurs concomitantly with loss of CHK-2 activity (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "1faec0b5-7213-4bc9-bff9-339de6565c24",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C38",
+      "claim": "CHK-2 inactivation and CO designation are both delayed in mutants that activate the CO assurance checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Since CHK-2 inactivation and CO designation are both delayed in mutants that activate the CO assurance checkpoint (Kim et al., 2015; Zhang et al., 2018), we wondered whether CHK-2 activity inhibits CO designation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "9df9cb63-84e7-41bc-bbab-7e9acf888c6e",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C39",
+      "claim": "CHK-2 activity during early meiotic prophase is essential for DSB formation and synapsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Because CHK-2 activity during early meiotic prophase is essential for DSB formation and synapsis (MacQueen and Villeneuve, 2001; Oishi et al., 2001), and thus for the establishment of recombination intermediates that are prerequisite for CO designation, we exploited the auxin-inducible degradation (AID) system to deplete the CHK-2 protein (Nishimura et al., 2009; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "d33512f1-18f5-4167-8191-ca423f7c54e4",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C40",
+      "claim": "Activity of degron-tagged CHK-2 became undetectable in meiotic nuclei within 3 hr of auxin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of degron-tagged CHK-2 became undetectable in meiotic nuclei within 3 hr of auxin treatment (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "d2fe5824-d612-4371-a000-53104a7f2168",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C41",
+      "claim": "Depletion of CHK-2 shifted the appearance of nuclei containing bright COSA-1 foci to a more distal (earlier) position in the germline, indicative of accelerated CO designation and cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of CHK-2 shifted the appearance of nuclei containing bright COSA-1 foci to a more distal (earlier) position in the germline, indicative of accelerated CO designation and cell cycle progression (Figure 2A, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "772b2c08-6949-48b1-ac45-517743666ba3",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C42",
+      "claim": "Depletion of CHK-2 restores earlier CO designation in him-8 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We depleted CHK-2 in him-8 and him-5 mutants, which specifically affect synapsis or DSB induction on the X chromosomes, respectively, but do not impair CO formation on autosomes (Hodgkin et al., 1979; Broverman and Meneely, 1994; Phillips et al., 2005; Meneely et al., 2012). In each case, we observed a shift in the appearance of bright COSA-1 foci toward the distal region of meiotic prophase following CHK-2 depletion (Figure 2B, D; Figure 2\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B, D and Figure 2\u2014figure supplement 1C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "1bd1d344-a460-45e6-96c3-e05b7f4656e7",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C43",
+      "claim": "Depletion of CHK-2 restores earlier CO designation in him-5 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We depleted CHK-2 in him-8 and him-5 mutants, which specifically affect synapsis or DSB induction on the X chromosomes, respectively, but do not impair CO formation on autosomes (Hodgkin et al., 1979; Broverman and Meneely, 1994; Phillips et al., 2005; Meneely et al., 2012). In each case, we observed a shift in the appearance of bright COSA-1 foci toward the distal region of meiotic prophase following CHK-2 depletion (Figure 2B, D; Figure 2\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B, D and Figure 2\u2014figure supplement 1C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "d4def236-a168-4219-b991-53ee486b955d",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C44",
+      "claim": "him-8 mutants specifically affect synapsis on the X chromosomes but do not impair CO formation on autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We depleted CHK-2 in him-8 and him-5 mutants, which specifically affect synapsis or DSB induction on the X chromosomes, respectively, but do not impair CO formation on autosomes (Hodgkin et al., 1979; Broverman and Meneely, 1994; Phillips et al., 2005; Meneely et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3b254e76-937e-4355-87b6-ee92f2fd870f",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C45",
+      "claim": "him-5 mutants specifically affect DSB induction on the X chromosomes but do not impair CO formation on autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We depleted CHK-2 in him-8 and him-5 mutants, which specifically affect synapsis or DSB induction on the X chromosomes, respectively, but do not impair CO formation on autosomes (Hodgkin et al., 1979; Broverman and Meneely, 1994; Phillips et al., 2005; Meneely et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3dbb1d37-ae22-41d1-8d5a-ee620a000fd4",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C46",
+      "claim": "CHK-2 activity is required to delay CO designation in response to feedback regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result reinforces evidence described above that CHK-2 activity is required to delay CO designation in response to feedback regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing that CHK-2 depletion restores earlier CO designation in checkpoint-activated mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "1a7f3cce-e59a-4871-bbc5-3045c925c03b",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C47",
+      "claim": "In him-8 mutants, RAD-51 foci were far more abundant in the extended region of CHK-2 activity and persisted even after CHK-2 was depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed some differences between the two mutants: in him-8 mutants RAD-51 foci were far more abundant in the extended region of CHK-2 activity, and persisted even after CHK-2 was depleted, resulting in the appearance of nuclei with both RAD-51 foci and bright COSA-1 foci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "47284103-b12e-4061-8c79-5bc708b01525",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C48",
+      "claim": "In him-5 mutants, RAD-51 foci were sparser and mostly disappeared upon CHK-2 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RAD-51 foci were sparser in him-5 and mostly disappeared upon CHK-2 depletion (Figure 2\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental observations shown in Figure 2\u2014figure supplement 1C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "fc37c04f-2d6b-40be-99a6-0810f93398f4",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C49",
+      "claim": "him-8 oocytes are defective in synapsis and arrest at a zygotene-like state with high CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences may reflect the different arrest points of the two mutants: him-8 oocytes are defective in synapsis (Phillips et al., 2005), and thus arrest at a zygotene-like state with high CHK-2 activity, while him-5 mutants are deficient in DSB initiation on the X chromosome (Meneely et al., 2012), and thus arrest at early pachytene with an intermediate level of CHK-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "bc21e228-8043-4937-9e87-fd75e5306564",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C50",
+      "claim": "him-5 mutants are deficient in DSB initiation on the X chromosome and arrest at early pachytene with an intermediate level of CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences may reflect the different arrest points of the two mutants: him-8 oocytes are defective in synapsis (Phillips et al., 2005), and thus arrest at a zygotene-like state with high CHK-2 activity, while him-5 mutants are deficient in DSB initiation on the X chromosome (Meneely et al., 2012), and thus arrest at early pachytene with an intermediate level of CHK-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "f05117ff-1266-499a-9062-8e24592d451a",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C51",
+      "claim": "The Polo-like kinase Plk1 enables mammalian cells to enter mitosis following DDR activation by phosphorylating the FHA domain of Chk2, which inhibits substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work on inactivation of DNA damage response (DDR) signaling in proliferating cells revealed that the Polo-like kinase Plk1 enables mammalian cells to enter mitosis following DDR activation by phosphorylating the FHA domain of Chk2, which inhibits substrate binding (van Vugt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3e7b0d01-572b-4ec8-8b3c-10c9f020abd0",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C52",
+      "claim": "C. elegans expresses multiple homologs of mammalian Plk1, including PLK-1 and PLK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans expresses multiple homologs of mammalian Plk1, including PLK-1, which is essential for mitosis and thus for viability, and PLK-2, which is dispensable for development but plays important roles in meiosis (Chase et al., 2000; Harper et al., 2011; Labella et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "2d988b80-be5a-45b6-895e-c07828a92ddd",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C53",
+      "claim": "PLK-1 is essential for mitosis and thus for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans expresses multiple homologs of mammalian Plk1, including PLK-1, which is essential for mitosis and thus for viability, and PLK-2, which is dispensable for development but plays important roles in meiosis (Chase et al., 2000; Harper et al., 2011; Labella et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "ad8ea990-df69-49b5-9b17-8eaf8a682083",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C54",
+      "claim": "PLK-2 is dispensable for development but plays important roles in meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans expresses multiple homologs of mammalian Plk1, including PLK-1, which is essential for mitosis and thus for viability, and PLK-2, which is dispensable for development but plays important roles in meiosis (Chase et al., 2000; Harper et al., 2011; Labella et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "c2614357-85d7-4327-b7c6-6202c3aa5328",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C55",
+      "claim": "Loss-of-function mutations in plk-2 perturb pairing and synapsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in plk-2 perturb pairing and synapsis, and also cause a pronounced delay in CO designation and subsequent chromosome remodeling during late prophase (Harper et al., 2011; Labella et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "43f187ae-95bb-4ac5-a34f-90467c5e0355",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C56",
+      "claim": "Loss-of-function mutations in plk-2 cause a pronounced delay in CO designation and subsequent chromosome remodeling during late prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in plk-2 perturb pairing and synapsis, and also cause a pronounced delay in CO designation and subsequent chromosome remodeling during late prophase (Harper et al., 2011; Labella et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "d279efc4-4133-4648-bb5c-44a063d301ee",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C57",
+      "claim": "Mass spectrometry identified threonine 120 of CHK-2 as an in vitro target of PLK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry identified threonine 120 of CHK-2 as an in vitro target of PLK-2 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "6591bece-48bc-4b58-9002-e6cb4f65aa52",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C58",
+      "claim": "Threonine 120 of CHK-2 is a highly conserved residue that lies within the FHA substrate recognition domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This highly conserved residue lies within the FHA substrate recognition domain (Figure 3A, B), close to serine 116, which corresponds to a site phosphorylated by Plk1 in human cells during DNA damage checkpoint adaptation (van Vugt et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 3A, B and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "935ef2f2-a00f-47d7-8085-8d3df3007379",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C59",
+      "claim": "Serine 116 of CHK-2 corresponds to a site phosphorylated by Plk1 in human cells during DNA damage checkpoint adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "This highly conserved residue lies within the FHA substrate recognition domain (Figure 3A, B), close to serine 116, which corresponds to a site phosphorylated by Plk1 in human cells during DNA damage checkpoint adaptation (van Vugt et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "11754b48-ea70-4b76-a7cc-7a3c5c531155",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C60",
+      "claim": "S116 and T120 of CHK-2 both conform to a consensus motif for Plk1 substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "S116 and T120 both conform to a consensus motif for Plk1 substrates (Figure 3A; Santamaria et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 3A and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "e9cad89b-f803-490d-acd2-0362642281ed",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C61",
+      "claim": "CHK-2 is phosphorylated on Thr120 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analyses of the immunoprecipitates revealed that CHK-2 is indeed phosphorylated on Thr120 (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "209a07f0-026b-4507-ab0a-31c96b0480e6",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C62",
+      "claim": "Phosphorylation of CHK-2 might lead to its degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on other evidence (see below) we suspected that phosphorylation of CHK-2 might lead to its degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "4a58bc3d-8195-4b5f-8a68-80ebfd74e741",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C63",
+      "claim": "Depletion of proteasome subunit PAS-1 increases the abundance of CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions in which PAS-1 was efficiently depleted, CHK-2 was clearly enriched (Figure 3\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "92dff561-5ffc-4238-9a0e-6f190b57c82d",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C64",
+      "claim": "Mutation of S116 or T120 to nonphosphorylatable and phosphomimetic residues reduces the abundance of CHK-2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the abundance of all these mutant CHK-2 proteins was much lower than the wild-type protein; only S116A was detectable (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "803c806c-e6fe-4c49-841b-b43df17d95c7",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C65",
+      "claim": "Mutation of S116 or T120 leads to loss of CHK-2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the reduced abundance of CHK-2 protein, mutation of these residues led to loss of CHK-2 function: phopsho-HIM-8/ZIMs was not detectable and bivalent formation was defective; only S116A was partially functional (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "79a716cd-8706-48f7-bbb5-e85beb73e97c",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C66",
+      "claim": "Mutations of S116 or T120 destabilize CHK-2 in addition to potentially inhibiting substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that these mutations destabilize CHK-2 in addition to potentially inhibiting substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations of reduced protein abundance and loss of function.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "12174139-0c1e-45dd-9ddc-c16e645d0e04",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C67",
+      "claim": "Depletion of PLK-2 significantly delayed CHK-2 inactivation and CO designation.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of PLK-2 significantly delayed CHK-2 inactivation and CO designation (Figure 3C, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "169fb5ba-8230-484b-8d90-bf5c815c4410",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C68",
+      "claim": "AID-mediated depletion of CHK-2 restored earlier CO designation in plk-2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that AID-mediated depletion of CHK-2 restored earlier CO designation in plk-2 mutants (Figure 3D, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "048399eb-e690-4fd4-ae14-273da733097f",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C69",
+      "claim": "PLK-2 is recruited to the SC by binding to a Polo box interacting motif on SYP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "As the SC assembles, PLK-2 is recruited to this structure by binding to a Polo box interacting motif on SYP-1 (Sato-Carlton et al., 2017; Brandt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "89c4518e-4837-4f9e-b3e3-96b394420e88",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C70",
+      "claim": "Following CO designation at mid-pachytene, PLK-2 activity becomes restricted to the 'short arms' of each bivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Following CO designation at mid-pachytene, PLK-2 activity becomes restricted to the 'short arms' of each bivalent (Sato-Carlton et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "8fa645df-717f-472f-bf54-4f9075a583f4",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C71",
+      "claim": "syp-1T452A mutants lack the Polo box-binding motif that recruits Polo kinases to the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this idea, we examined CHK-2 activity in syp-1T452A mutants, which lack the Polo box-binding motif (S-pT-P) that recruits Polo kinases to the SC (Sato-Carlton et al., 2017; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior literature and data shown in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "141be3c5-8bc5-4f85-9770-fb25392e72de",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C72",
+      "claim": "The syp-1T452A mutation markedly delayed the appearance of bright COSA-1 foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior analysis, this single-point mutation markedly delayed the appearance of bright COSA-1 foci (Sato-Carlton et al., 2017; Figure 4B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior literature and experimental data shown in Figure 4B, D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "73bf9223-b944-49e8-975d-fbf08fd22d1b",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C73",
+      "claim": "CHK-2 activity was extended in syp-1T452A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CHK-2 activity was similarly extended in syp-1T452A mutants (Figure 4B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "071d00ad-7fb9-4606-bce1-9d29e3f4f5d1",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C74",
+      "claim": "Depletion of CHK-2 restored earlier CO designation in syp-1T452A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of CHK-2 restored earlier CO designation in syp-1T452A mutants (Figure 4C, E), as in plk-2 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "0c4a4e4c-a7aa-4be4-9ef8-ab544a8985f7",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C75",
+      "claim": "Binding of PLK-2 to the SC is important for downregulation of CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, binding of PLK-2 to the SC is important for downregulation of CHK-2, and conversely, the delay in CO designation in syp-1T452A mutants is a direct consequence of persistent CHK-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing that syp-1T452A mutants have extended CHK-2 activity and delayed CO designation, which is rescued by CHK-2 depletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "f8892e88-7fe7-4ced-a7f8-3f9d669c509a",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C76",
+      "claim": "The delay in CO designation in syp-1T452A mutants is a direct consequence of persistent CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, binding of PLK-2 to the SC is important for downregulation of CHK-2, and conversely, the delay in CO designation in syp-1T452A mutants is a direct consequence of persistent CHK-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing that CHK-2 depletion rescues the CO designation delay in syp-1T452A mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "6a6c5dbb-964a-41f2-b85f-8773ed8c1344",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C77",
+      "claim": "Compared to PLK-2 depletion alone, CO designation was further delayed when PLK-1 and PLK-2 were both depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to PLK-2 depletion alone, CO designation was further delayed when PLK-1 and PLK-2 were both depleted, indicating that PLK-1 can indeed contribute to CHK-2 inactivation during late prophase (Figure 3C, E; Figure 4\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C, E and Figure 4\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "94867a58-e294-48c8-aee7-a018c08d6237",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C78",
+      "claim": "PLK-1 can contribute to CHK-2 inactivation during late prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to PLK-2 depletion alone, CO designation was further delayed when PLK-1 and PLK-2 were both depleted, indicating that PLK-1 can indeed contribute to CHK-2 inactivation during late prophase (Figure 3C, E; Figure 4\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental observation that co-depletion of PLK-1 and PLK-2 causes a greater delay than PLK-2 depletion alone.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "0cc0b284-8dfc-4fcf-b58d-d868c77dc5cf",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C79",
+      "claim": "CHK-2 was still eventually inactivated in the absence of both PLK-1 and PLK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CHK-2 was still eventually inactivated in the absence of both paralogs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "9ca38774-c696-4529-b6fb-e83d6e2812e6",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C80",
+      "claim": "plk-3 mutants showed no apparent meiotic defects.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Harper et al., 2011), plk-3 mutants showed no apparent meiotic defects, and we observed no further delay when we combined a plk-3 deletion with depletion of PLK-1 and PLK-2 (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "8404c859-07e3-423b-8648-00f53e4afc25",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C81",
+      "claim": "PLK-3 does not contribute to inactivating CHK-2, even in the absence of PLK-1 and PLK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PLK-3 does not contribute to inactivating CHK-2, even in the absence of PLK-1 and PLK-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that plk-3 deletion does not cause additional delay when combined with PLK-1 and PLK-2 depletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "2d6ec78f-baa3-4365-acce-54d96290904d",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C82",
+      "claim": "The ERK kinase MPK-1 promotes pachytene exit.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERK kinase MPK-1 promotes pachytene exit and has been proposed to be important for CO designation (Church et al., 1995; Hayashi et al., 2007; Lee et al., 2007; Nadarajan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "30c6bfdd-a851-4a70-920b-b8e944fe02e2",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C83",
+      "claim": "MPK-1 has been proposed to be important for CO designation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERK kinase MPK-1 promotes pachytene exit and has been proposed to be important for CO designation (Church et al., 1995; Hayashi et al., 2007; Lee et al., 2007; Nadarajan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "8e94ab21-d340-4c34-ae8b-0b3faa1e0577",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C84",
+      "claim": "MPK-1::AID was undetectable in germ cells following 1 hr of auxin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "MPK-1::AID was undetectable in germ cells following 1 hr of auxin treatment (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "bf28c893-0af7-4797-a172-097fdab412d4",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C85",
+      "claim": "Depletion of MPK-1 did not cause any apparent delay in CO designation, either alone or in combination with syp-1T452A.",
+      "claim_type": "EXPLICIT",
+      "source": "Although depletion of MPK-1 led to a disordered appearance of the proximal germline, it did not cause any apparent delay in CO designation, either alone or in combination with syp-1T452A (Figure 4\u2014figure supplement 2B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2B\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "f8942806-97a7-48fc-b242-c9e0ff10c9f4",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C86",
+      "claim": "MPK-1 activity does not play a role in CO designation.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that MPK-1 activity does not play a role in CO designation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observation that MPK-1 depletion does not delay CO designation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "9869ecc3-8aac-4555-8c90-0470efb7d0cf",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C87",
+      "claim": "A rise in CDK activity and/or other spatially regulated signals in the proximal gonad may lead to CHK-2 inactivation even when Polo-like kinase activity is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that a rise in CDK activity and/or other spatially regulated signals in the proximal gonad may lead to CHK-2 inactivation even when Polo-like kinase activity is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observation that CHK-2 is eventually inactivated even without PLK-1 and PLK-2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "dc85906d-780c-4c3f-987c-3f610c400af8",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C88",
+      "claim": "CHK-2 is normally inactivated at mid-pachytene through the recruitment of PLK-2 to the SC and the formation of CO precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we find that CHK-2 activity is required to inhibit CO designation. CHK-2 is normally inactivated at mid-pachytene through the recruitment of PLK-2 to the SC and the formation of CO precursors, but delays in synapsis prevent the activation of PLK-2 and thereby prolong CHK-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "90ac5f61-658e-4db2-9efb-c6e674f6542b",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C89",
+      "claim": "Delays in synapsis prevent the activation of PLK-2 and thereby prolong CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we find that CHK-2 activity is required to inhibit CO designation. CHK-2 is normally inactivated at mid-pachytene through the recruitment of PLK-2 to the SC and the formation of CO precursors, but delays in synapsis prevent the activation of PLK-2 and thereby prolong CHK-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "19867aa6-5bcc-43a5-9800-7ab2f7c59777",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C90",
+      "claim": "Delays in the establishment of CO intermediates also prolong CHK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, delays in the establishment of CO intermediates also prolong CHK-2 activity, and thus full activation of PLK-2 may depend on the formation of CO intermediates on all chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "becb02c0-2e63-41af-b951-6a7864f72670",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C91",
+      "claim": "Full activation of PLK-2 may depend on the formation of CO intermediates on all chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, delays in the establishment of CO intermediates also prolong CHK-2 activity, and thus full activation of PLK-2 may depend on the formation of CO intermediates on all chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that delays in CO intermediate formation prolong CHK-2 activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "4059995b-36fc-4fbb-845f-345e28833d3c",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C92",
+      "claim": "PLK-2-dependent phosphorylation of the central region protein SYP-4 increases markedly starting at mid-pachytene, concomitant with CO designation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, PLK-2-dependent phosphorylation of the central region protein SYP-4 (Nadarajan et al., 2017) increase markedly starting at mid-pachytene, concomitant with CO designation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "de1c9d03-47fa-4173-a4e5-3e65055a7e2e",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C93",
+      "claim": "PLK-2 appears to associate with designated CO sites even when it cannot be recruited to the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "How the formation of CO precursors promotes PLK-2 activity remains unclear, but the kinase does appear to associate with designated CO sites even when it cannot be recruited to the SC (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "f45555aa-da79-4ff7-88da-d60c58f1bf5e",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C94",
+      "claim": "The data support the idea that PLK-2 directly regulates CHK-2 via inhibitory phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support the idea that PLK-2 directly regulates CHK-2 via inhibitory phosphorylation, but do not rule out the possibility that recruitment of PLK-2 to the SC leads indirectly to CHK-2 inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing PLK-2 phosphorylates CHK-2 in vitro and in vivo.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "9d0ce1dc-eb5b-42d4-83f0-24e566f1ad5b",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C95",
+      "claim": "CHK-2 inactivation is reversible through mid-pachytene.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study reported that CHK-2 inactivation is reversible through mid-pachytene (Castellano-Pozo et al., 2020), consistent with the idea that it occurs through phosphorylation, which can be reversed by phosphatase activity (Kar and Hochwagen, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "23e4c098-3c80-41e0-9d56-1163093d4bc0",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C96",
+      "claim": "Phosphorylated CHK-2 may be degraded after mid-pachytene, resulting in irreversible inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that phosphorylated CHK-2 may be degraded after mid-pachytene, resulting in irreversible inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "40d2f282-1017-4568-9591-2d3b41c41f71",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C97",
+      "claim": "Both CHK-2 and PLK-2 are active during leptotene/zygotene, when both kinases are bound to Pairing Centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, both CHK-2 and PLK-2 are active during leptotene/zygotene, when both kinases are bound to Pairing Centers (Kim et al., 2015; Link et al., 2018; Penkner et al., 2009; Sato et al., 2009; Woglar et al., 2013), implying that in this context PLK-2 does not inactivate CHK-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "0e8b6a79-e752-4754-9cb0-80aec15b16ee",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C98",
+      "claim": "In the context of Pairing Centers during leptotene/zygotene, PLK-2 does not inactivate CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, both CHK-2 and PLK-2 are active during leptotene/zygotene, when both kinases are bound to Pairing Centers (Kim et al., 2015; Link et al., 2018; Penkner et al., 2009; Sato et al., 2009; Woglar et al., 2013), implying that in this context PLK-2 does not inactivate CHK-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both kinases are active simultaneously at Pairing Centers.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3ef77721-34fb-4244-9af4-a1acac177a45",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C99",
+      "claim": "The configuration of CHK-2 and PLK-2 recruitment motifs on the Pairing Center proteins may make the target site(s) in the FHA domain of CHK-2 inaccessible to the active site of PLK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the configuration of CHK-2 and PLK-2 recruitment motifs on the Pairing Center proteins may make the target site(s) in the FHA domain of CHK-2 inaccessible to the active site of PLK-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning to explain why PLK-2 does not inactivate CHK-2 at Pairing Centers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "65aa24b7-7922-4a33-96df-43c5a7ef27bf",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C100",
+      "claim": "The activity of CHK-2 in early prophase depends on a heterodimeric complex of HAL-2 and HAL-3, which is a meiotic regulator of PLK-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the activity of CHK-2 in early prophase also depends on an enigmatic meiotic regulator of PLK-2 activity, a heterodimeric complex of HAL-2 and HAL-3 (Roelens et al., 2019; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "ad93c249-ccd5-40c9-82c0-f93ebbf67b61",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C101",
+      "claim": "HAL-2/HAL-3 may inhibit or antagonize phosphorylation of CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This may inhibit or antagonize phosphorylation of CHK-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the role of HAL-2/HAL-3.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "b77de26d-edb8-4b0a-b58a-3238dd76c9a0",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C102",
+      "claim": "In C. elegans, synapsis can occur normally in the absence of DSBs or recombination intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, synapsis can occur normally in the absence of DSBs or recombination intermediates (Dernburg et al., 1998), and meiocytes surveil both synapsis and CO precursors to ensure chiasma formation and faithful segregation (reviewed by ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "06e29a0e-053a-4244-a883-5957051a29a1",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C103",
+      "claim": "Meiocytes surveil both synapsis and CO precursors to ensure chiasma formation and faithful segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, synapsis can occur normally in the absence of DSBs or recombination intermediates (Dernburg et al., 1998), and meiocytes surveil both synapsis and CO precursors to ensure chiasma formation and faithful segregation (reviewed by ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about meiotic surveillance mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "8c709ceb-4bb0-455f-8f82-bc9968e6c607",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C104",
+      "claim": "In organisms where synapsis depends on the stabilization of interhomolog joint molecules through the 'ZMM' pathway, cells may monitor synapsis as a proxy for the presence of CO-competent intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "In organisms where synapsis depends on the stabilization of interhomolog joint molecules through the 'ZMM' pathway (Pyatnitskaya et al., 2019), cells may monitor synapsis as a proxy for the presence of CO-competent intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about surveillance mechanisms in other organisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "c70de737-e9a8-4fa5-b23d-bdab96d93496",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C105",
+      "claim": "SC assembly is essential for the surveillance of CO formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in either case, SC assembly is essential for the surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "ec69d78f-1342-4330-9805-cd310e184439",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C106",
+      "claim": "In mouse spermatocytes, PLK-1 localizes along SCs and promotes pachytene exit.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse spermatocytes, PLK-1 localizes along SCs and promotes pachytene exit (Jordan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "4a0ef8e9-b331-409e-99af-609130f5ced9",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C107",
+      "claim": "Similar mechanisms may coordinate synapsis with meiotic progression in other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, similar mechanisms may coordinate synapsis with meiotic progression in other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the findings in C. elegans and mice.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "9aab5478-fa0b-4aaf-9c02-fa25e85b706d",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C108",
+      "claim": "Cells exit proliferation and enter meiosis in the distal 'arms' of the C. elegans gonad and move proximally toward the spermatheca and uterus at a velocity of about one cell row per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells exit proliferation and enter meiosis in the distal 'arms' of the gonad and move proximally toward the spermatheca and uterus at a velocity of about one cell row per hour (Deshong et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior literature and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "18afdf08-e989-4182-8302-597d296ce851",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C109",
+      "claim": "Homolog pairing and synapsis and double-strand break (DSB) induction normally occur during the first few hours following meiotic entry, in the 'transition zone' region corresponding to leptotene and zygotene.",
+      "claim_type": "EXPLICIT",
+      "source": "Homolog pairing and synapsis and double-strand break (DSB) induction normally occur during the first few hours following meiotic entry, in the 'transition zone' region corresponding to leptotene and zygotene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about C. elegans meiosis shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "d01e36e5-cff8-4546-8c77-1ed1482aa423",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C110",
+      "claim": "DSBs are processed to form recombination intermediates, which increase in abundance during early pachytene.",
+      "claim_type": "EXPLICIT",
+      "source": "DSBs are then processed to form recombination intermediates, which increase in abundance during early pachytene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about C. elegans meiosis shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "0bf0125c-0360-4f3c-a798-071573e27510",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C111",
+      "claim": "At mid-pachytene, a transition occurs that leads to disappearance of most intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "At mid-pachytene, a transition occurs that leads to disappearance of most intermediates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about C. elegans meiosis shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "d5ba3f6b-1f47-429f-b23e-96207deec6ed",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C112",
+      "claim": "One recombination intermediate on each pair of chromosomes becomes 'designated' as an eventual crossover site.",
+      "claim_type": "EXPLICIT",
+      "source": "One recombination intermediate on each pair of chromosomes becomes 'designated' as an eventual crossover site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about C. elegans meiosis shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "b3f22041-9920-4af2-add3-dd23d2cc2eb3",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C113",
+      "claim": "Bright GFP::COSA-1 foci are detected following inactivation of CHK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Bright GFP::COSA-1 foci are detected following inactivation of CHK-2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "90f518e8-7167-4294-b17c-f230cf3154a2",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C114",
+      "claim": "Accumulation of pro-CO proteins can be stratified into three stages: an early stage with high CHK-2 activity and variable numbers of dim GFP::COSA-1; an intermediate stage with brighter and more abundant GFP::COSA-1 foci, and a post-designation stage, with a single CO-designated site per chromosome pair marked by bright GFP::COSA-1 fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of pro-CO proteins can be stratified into three stages: an early stage with high CHK-2 activity and variable numbers of dim GFP::COSA-1; an intermediate stage with brighter and more abundant GFP::COSA-1 foci, and a post-designation stage, with a single CO-designated site per chromosome pair marked by bright GFP::COSA-1 fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental observations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "7dcdbf02-6a97-4578-9f8d-c2bfdcd5172c",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C115",
+      "claim": "The intensity of GFP::COSA-1 foci remains fairly constant throughout the post-designation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity of GFP::COSA-1 foci remains fairly constant throughout this last stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental observations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "6770f2e5-9c9d-4a94-959e-0e007ed081e0",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C116",
+      "claim": "The appearance of bright COSA-1 foci is used as a proxy for crossover designation and the mid-pachytene cell cycle transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we use the appearance of bright COSA-1 foci as a proxy for crossover designation and the mid-pachytene cell cycle transition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about how the authors interpret their data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "1b39c832-f895-4db2-9d0f-e8401e2a4d83",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "claim_id": "C117",
+      "claim": "PLK-2 localizes to pairing centers in leptotene/zygotene nuclei but fails to localize to SC in pachytene nuclei in syp-1T452A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "PLK-2 localized to pairing centers in leptotene/zygotene nuclei but failed to localize to SC in pachytene nuclei in syp-1T452A mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4e088056-771f-41f1-85f0-dfd1aade2b9c",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CHK-2 activity inhibits crossover designation, and its inactivation by PLK-2 recruitment to the synaptonemal complex enables CO designation and cell cycle progression. Depletion of CHK-2 accelerates CO designation in wild-type and checkpoint-activated mutants, while depletion of PLK-2 delays CHK-2 inactivation and CO designation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5, C37, C41-43, C46, C67-68, C74, and C88 collectively demonstrate through multiple experimental approaches (auxin-induced degradation, genetic mutants, cytological markers) that CHK-2 inhibits CO designation and that PLK-2 recruitment to the SC inactivates CHK-2. The data from wild-type and mutant backgrounds (him-8, him-5, plk-2, syp-1T452A) consistently support this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "890df434-7af4-4b06-994c-cefcad6b5619",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PLK-2 directly phosphorylates CHK-2 at threonine 120 within the FHA domain, a site conserved with mammalian Plk1 targets. This phosphorylation was demonstrated both in vitro and in vivo through mass spectrometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-61 and C94 provide converging evidence from in vitro kinase assays, mass spectrometry of in vitro reactions, sequence conservation analysis, and in vivo immunoprecipitation followed by mass spectrometry. The identification of T120 as a PLK-2 target is well-supported by multiple independent experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "2933ebbb-daf4-483a-bc1c-60835dab82e9",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Recruitment of PLK-2 to the synaptonemal complex via the SYP-1 Polo box-binding motif is essential for CHK-2 inactivation. The syp-1T452A mutation, which prevents PLK-2 recruitment to the SC, extends CHK-2 activity and delays CO designation, and this delay is rescued by CHK-2 depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C71-73, C75-76, and C117 demonstrate through genetic analysis and cytological observations that the SYP-1 T452A mutation prevents PLK-2 localization to the SC, extends CHK-2 activity, delays CO designation, and that CHK-2 depletion rescues this phenotype. This establishes a clear mechanistic link between PLK-2 recruitment and CHK-2 inactivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "53cb4996-940d-4dfc-b2d0-6311b53987ab",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PLK-1 can partially compensate for PLK-2 in CHK-2 inactivation during late prophase, but CHK-2 is eventually inactivated even in the absence of both PLK-1 and PLK-2. PLK-3 does not contribute to CHK-2 inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-79 and C81 show through co-depletion experiments that PLK-1 contributes to CHK-2 inactivation (as evidenced by further delay when both PLK-1 and PLK-2 are depleted), but that CHK-2 is eventually inactivated even without both kinases. The lack of PLK-3 involvement is supported by the absence of additional delay when plk-3 is deleted in the double depletion background.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "249a914d-1fec-4e43-9eaf-4f38bf7dd18d",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MPK-1 does not play a role in crossover designation, despite prior proposals. Depletion of MPK-1 did not delay CO designation either alone or in combination with syp-1T452A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-86 demonstrate through auxin-mediated depletion experiments that MPK-1, while previously proposed to be important for CO designation, does not delay CO designation when depleted. The efficient depletion (C84) and lack of phenotype in both wild-type and syp-1T452A backgrounds (C85) provide strong evidence against a role for MPK-1 in CO designation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3672829b-cb5a-4c02-825d-157e4be1663a",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Delays in synapsis or establishment of CO intermediates prolong CHK-2 activity by preventing PLK-2 activation, and full PLK-2 activation may depend on CO intermediate formation on all chromosomes. SC assembly is essential for this surveillance mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-91 and C105 are supported by observations in him-8 and him-5 mutants showing that defects in either synapsis or CO intermediate formation prolong CHK-2 activity. The inference that full PLK-2 activation depends on CO intermediates on all chromosomes (C91) is reasonable given the data, though somewhat speculative. The essential role of SC assembly (C105) is well-supported by the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "71609490-0e2a-4598-8035-7c4daacbee02",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Phosphorylation of CHK-2 may lead to its degradation, as evidenced by increased CHK-2 abundance upon proteasome inhibition. Mutations of S116 or T120 destabilize CHK-2 and lead to loss of function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-66 show that proteasome depletion increases CHK-2 abundance (C63) and that mutations at S116/T120 reduce protein levels and function (C64-66). However, the interpretation that phosphorylation leads to degradation (C62) remains speculative. The mutations may destabilize the protein through mechanisms independent of phosphorylation. The connection between phosphorylation and degradation is inferred but not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "16148a4e-6d47-40fc-bf49-70613e333faa",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During early prophase at Pairing Centers, both CHK-2 and PLK-2 are active simultaneously, suggesting that PLK-2 does not inactivate CHK-2 in this context. This may be due to spatial constraints or regulation by the HAL-2/HAL-3 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-98 are supported by prior literature showing both kinases are active at Pairing Centers. However, the explanations for why PLK-2 doesn't inactivate CHK-2 in this context (C99, C101) are speculative. The role of HAL-2/HAL-3 (C100-101) is based on prior work but the mechanism by which it might prevent CHK-2 phosphorylation is not demonstrated. This represents an interesting observation requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "64d57c69-9d51-4ce3-b6e2-98ee1bb101de",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Meiotic chromosome segregation relies on synapsis and crossover recombination between homologous chromosomes. The synaptonemal complex is a meiosis-specific protein scaffold that assembles between homologs, and failures in synapsis can trigger cell cycle delays or apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6, C7, C8, and C15 represent well-established background knowledge about meiosis, supported by extensive prior literature. These claims provide essential context for the study but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CHK-2 is a meiosis-specific kinase required for DSB formation, pairing, and synapsis. It is inactive in proliferating cells, becomes active upon meiotic entry, and is inactivated at mid-pachytene coincident with cessation of DSB formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-12, C16, C27, and C39 describe the established role and regulation of CHK-2 based on prior literature and observations in this study. These claims provide important background and are supported by citations and experimental observations, but represent known biology rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Crossover designation is marked by the appearance of bright COSA-1 foci at mid-pachytene, with six designated sites per nucleus (one per chromosome pair). The accumulation of COSA-1 can be stratified into three stages, and bright COSA-1 foci serve as a proxy for CO designation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-30, C37, and C113-116 describe the cytological markers used to monitor CO designation. These observations are well-supported by the imaging data and prior literature. The stratification into three stages (C114) and the use of bright COSA-1 as a proxy for CO designation (C116) are methodologically sound and clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "383c18b3-66aa-4551-96fd-03834d144856",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Defects in synapsis or CO intermediate establishment activate a crossover assurance checkpoint that prolongs CHK-2 activity and delays CO designation. This feedback regulation requires HORMA domain proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-36 and C38 describe the crossover assurance checkpoint based on prior literature and observations. The checkpoint mechanism is well-established, and the observations in this study (C38) are consistent with prior work. These claims provide important context for understanding how CHK-2 activity is regulated in response to meiotic defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "27604964-c7de-4449-9250-1b2a87fc096b",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "him-8 and him-5 mutants show different patterns of RAD-51 foci persistence upon CHK-2 depletion, reflecting their different arrest points (zygotene-like vs. early pachytene).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-50 describe differences in RAD-51 foci behavior between him-8 and him-5 mutants upon CHK-2 depletion. The observations are supported by experimental data, and the interpretation that these differences reflect different arrest points is reasonable and supported by prior literature on these mutants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "a9a80d69-639d-475e-8e0d-78b3785c17e1",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "C. elegans expresses multiple Plk1 homologs including PLK-1 (essential for mitosis) and PLK-2 (important for meiosis). Loss of plk-2 perturbs pairing, synapsis, and delays CO designation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-56 provide background on Polo-like kinases in C. elegans and mammals, supported by prior literature. These claims establish the rationale for investigating PLK-2's role in CHK-2 inactivation but represent known biology rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "795d5bd1-0563-4642-9718-635527236dcc",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PLK-2-dependent phosphorylation of SYP-4 increases at mid-pachytene concomitant with CO designation, and PLK-2 associates with designated CO sites even when it cannot be recruited to the SC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-93 are supported by citations to prior literature. These observations provide additional context for understanding PLK-2 activation and localization during meiotic prophase, but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "7364851e-1832-4b45-9b69-b4511a898200",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CHK-2 inactivation is reversible through mid-pachytene, consistent with regulation by phosphorylation. Phosphorylated CHK-2 may be degraded after mid-pachytene, resulting in irreversible inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C95 is supported by prior literature showing reversibility of CHK-2 inactivation. However, claim C96 regarding degradation of phosphorylated CHK-2 after mid-pachytene is speculative and not directly demonstrated. While consistent with the proteasome depletion data, the timing and mechanism of degradation require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "5e127220-3570-4ea2-9e72-8241997eaaa6",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In C. elegans, synapsis can occur without DSBs, and meiocytes surveil both synapsis and CO precursors. Similar mechanisms coordinating synapsis with meiotic progression may exist in other organisms including mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-103 and C106 are supported by prior literature. Claims C104 and C107 are speculative but reasonable extrapolations based on the findings in C. elegans and observations in mice. These claims provide broader context for the significance of the findings but are not central results of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "e2f563f1-43ca-4877-bd97-7832c0526bfd",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Mid-prophase transitions similar to that in C. elegans occur in yeast and mammals and depend on SC assembly. CHK-2 activation involves trans-autophosphorylation and recruitment to Pairing Centers, where it works with PLK-2 to promote pairing and synapsis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-14 and C17-26 provide background on CHK-2 activation mechanisms and early meiotic functions based on prior literature and established knowledge. These claims are well-supported but represent known biology that provides context for the novel findings rather than new discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "116f7bd4-280e-4187-807e-18e56fcded24",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The C. elegans germline provides a spatial-temporal map of meiotic progression, with cells moving proximally through defined stages. CHK-2 depletion is efficient within 3 hours of auxin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C108-112 describe the organization of the C. elegans germline and the efficiency of the auxin-inducible degradation system. These are methodological details and established features of the C. elegans system that enable the experimental approaches used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    },
+    {
+      "id": "d7862099-e576-44d1-9851-32c7506aee2d",
+      "content_id": "5942b0bd-a682-441d-b31d-3c9c63addf19",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "CDK activity and/or other spatially regulated signals in the proximal gonad may lead to CHK-2 inactivation even when Polo-like kinase activity is absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is purely speculative, proposed to explain the observation that CHK-2 is eventually inactivated even without PLK-1 and PLK-2. While this is a reasonable hypothesis, it is not tested or supported by experimental data in this study. This represents a direction for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:42:33.037476Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f176a4d-b1c8-4034-be6f-54f683436cf8",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "6722c129-856a-47ce-a04f-9dffa563f1bb",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "7e30967a-1c8c-42e9-ae92-8f5c083e335c",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "d2fe5824-d612-4371-a000-53104a7f2168",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "772b2c08-6949-48b1-ac45-517743666ba3",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "1bd1d344-a460-45e6-96c3-e05b7f4656e7",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "3dbb1d37-ae22-41d1-8d5a-ee620a000fd4",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "12174139-0c1e-45dd-9ddc-c16e645d0e04",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "169fb5ba-8230-484b-8d90-bf5c815c4410",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "071d00ad-7fb9-4606-bce1-9d29e3f4f5d1",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "dc85906d-780c-4c3f-987c-3f610c400af8",
+      "result_id": "4e088056-771f-41f1-85f0-dfd1aade2b9c"
+    },
+    {
+      "claim_id": "d279efc4-4133-4648-bb5c-44a063d301ee",
+      "result_id": "890df434-7af4-4b06-994c-cefcad6b5619"
+    },
+    {
+      "claim_id": "6591bece-48bc-4b58-9002-e6cb4f65aa52",
+      "result_id": "890df434-7af4-4b06-994c-cefcad6b5619"
+    },
+    {
+      "claim_id": "935ef2f2-a00f-47d7-8085-8d3df3007379",
+      "result_id": "890df434-7af4-4b06-994c-cefcad6b5619"
+    },
+    {
+      "claim_id": "11754b48-ea70-4b76-a7cc-7a3c5c531155",
+      "result_id": "890df434-7af4-4b06-994c-cefcad6b5619"
+    },
+    {
+      "claim_id": "e9cad89b-f803-490d-acd2-0362642281ed",
+      "result_id": "890df434-7af4-4b06-994c-cefcad6b5619"
+    },
+    {
+      "claim_id": "f45555aa-da79-4ff7-88da-d60c58f1bf5e",
+      "result_id": "890df434-7af4-4b06-994c-cefcad6b5619"
+    },
+    {
+      "claim_id": "048399eb-e690-4fd4-ae14-273da733097f",
+      "result_id": "2933ebbb-daf4-483a-bc1c-60835dab82e9"
+    },
+    {
+      "claim_id": "8fa645df-717f-472f-bf54-4f9075a583f4",
+      "result_id": "2933ebbb-daf4-483a-bc1c-60835dab82e9"
+    },
+    {
+      "claim_id": "141be3c5-8bc5-4f85-9770-fb25392e72de",
+      "result_id": "2933ebbb-daf4-483a-bc1c-60835dab82e9"
+    },
+    {
+      "claim_id": "73bf9223-b944-49e8-975d-fbf08fd22d1b",
+      "result_id": "2933ebbb-daf4-483a-bc1c-60835dab82e9"
+    },
+    {
+      "claim_id": "0c4a4e4c-a7aa-4be4-9ef8-ab544a8985f7",
+      "result_id": "2933ebbb-daf4-483a-bc1c-60835dab82e9"
+    },
+    {
+      "claim_id": "f8892e88-7fe7-4ced-a7f8-3f9d669c509a",
+      "result_id": "2933ebbb-daf4-483a-bc1c-60835dab82e9"
+    },
+    {
+      "claim_id": "1b39c832-f895-4db2-9d0f-e8401e2a4d83",
+      "result_id": "2933ebbb-daf4-483a-bc1c-60835dab82e9"
+    },
+    {
+      "claim_id": "6a6c5dbb-964a-41f2-b85f-8773ed8c1344",
+      "result_id": "53cb4996-940d-4dfc-b2d0-6311b53987ab"
+    },
+    {
+      "claim_id": "94867a58-e294-48c8-aee7-a018c08d6237",
+      "result_id": "53cb4996-940d-4dfc-b2d0-6311b53987ab"
+    },
+    {
+      "claim_id": "0cc0b284-8dfc-4fcf-b58d-d868c77dc5cf",
+      "result_id": "53cb4996-940d-4dfc-b2d0-6311b53987ab"
+    },
+    {
+      "claim_id": "8404c859-07e3-423b-8648-00f53e4afc25",
+      "result_id": "53cb4996-940d-4dfc-b2d0-6311b53987ab"
+    },
+    {
+      "claim_id": "2d6ec78f-baa3-4365-acce-54d96290904d",
+      "result_id": "249a914d-1fec-4e43-9eaf-4f38bf7dd18d"
+    },
+    {
+      "claim_id": "30c6bfdd-a851-4a70-920b-b8e944fe02e2",
+      "result_id": "249a914d-1fec-4e43-9eaf-4f38bf7dd18d"
+    },
+    {
+      "claim_id": "8e94ab21-d340-4c34-ae8b-0b3faa1e0577",
+      "result_id": "249a914d-1fec-4e43-9eaf-4f38bf7dd18d"
+    },
+    {
+      "claim_id": "bf28c893-0af7-4797-a172-097fdab412d4",
+      "result_id": "249a914d-1fec-4e43-9eaf-4f38bf7dd18d"
+    },
+    {
+      "claim_id": "f8942806-97a7-48fc-b242-c9e0ff10c9f4",
+      "result_id": "249a914d-1fec-4e43-9eaf-4f38bf7dd18d"
+    },
+    {
+      "claim_id": "90ac5f61-658e-4db2-9efb-c6e674f6542b",
+      "result_id": "3672829b-cb5a-4c02-825d-157e4be1663a"
+    },
+    {
+      "claim_id": "19867aa6-5bcc-43a5-9800-7ab2f7c59777",
+      "result_id": "3672829b-cb5a-4c02-825d-157e4be1663a"
+    },
+    {
+      "claim_id": "becb02c0-2e63-41af-b951-6a7864f72670",
+      "result_id": "3672829b-cb5a-4c02-825d-157e4be1663a"
+    },
+    {
+      "claim_id": "c70de737-e9a8-4fa5-b23d-bdab96d93496",
+      "result_id": "3672829b-cb5a-4c02-825d-157e4be1663a"
+    },
+    {
+      "claim_id": "209a07f0-026b-4507-ab0a-31c96b0480e6",
+      "result_id": "71609490-0e2a-4598-8035-7c4daacbee02"
+    },
+    {
+      "claim_id": "4a58bc3d-8195-4b5f-8a68-80ebfd74e741",
+      "result_id": "71609490-0e2a-4598-8035-7c4daacbee02"
+    },
+    {
+      "claim_id": "92dff561-5ffc-4238-9a0e-6f190b57c82d",
+      "result_id": "71609490-0e2a-4598-8035-7c4daacbee02"
+    },
+    {
+      "claim_id": "803c806c-e6fe-4c49-841b-b43df17d95c7",
+      "result_id": "71609490-0e2a-4598-8035-7c4daacbee02"
+    },
+    {
+      "claim_id": "79a716cd-8706-48f7-bbb5-e85beb73e97c",
+      "result_id": "71609490-0e2a-4598-8035-7c4daacbee02"
+    },
+    {
+      "claim_id": "40d2f282-1017-4568-9591-2d3b41c41f71",
+      "result_id": "16148a4e-6d47-40fc-bf49-70613e333faa"
+    },
+    {
+      "claim_id": "0e8b6a79-e752-4754-9cb0-80aec15b16ee",
+      "result_id": "16148a4e-6d47-40fc-bf49-70613e333faa"
+    },
+    {
+      "claim_id": "3ef77721-34fb-4244-9af4-a1acac177a45",
+      "result_id": "16148a4e-6d47-40fc-bf49-70613e333faa"
+    },
+    {
+      "claim_id": "65aa24b7-7922-4a33-96df-43c5a7ef27bf",
+      "result_id": "16148a4e-6d47-40fc-bf49-70613e333faa"
+    },
+    {
+      "claim_id": "ad93c249-ccd5-40c9-82c0-f93ebbf67b61",
+      "result_id": "16148a4e-6d47-40fc-bf49-70613e333faa"
+    },
+    {
+      "claim_id": "4e03ae86-aa77-4a42-a099-c7113bc9e880",
+      "result_id": "64d57c69-9d51-4ce3-b6e2-98ee1bb101de"
+    },
+    {
+      "claim_id": "542fcf62-bdc3-41ab-9a8c-71280b5baa9c",
+      "result_id": "64d57c69-9d51-4ce3-b6e2-98ee1bb101de"
+    },
+    {
+      "claim_id": "5b17015a-0508-492a-b63d-9d3fdfd2c235",
+      "result_id": "64d57c69-9d51-4ce3-b6e2-98ee1bb101de"
+    },
+    {
+      "claim_id": "34e53c9a-7e61-46db-acc3-456e9d86b784",
+      "result_id": "64d57c69-9d51-4ce3-b6e2-98ee1bb101de"
+    },
+    {
+      "claim_id": "8e0dd51e-56dc-4552-91d0-165c7125e6e2",
+      "result_id": "64d57c69-9d51-4ce3-b6e2-98ee1bb101de"
+    },
+    {
+      "claim_id": "0263bb97-0b9d-4443-9468-6cfb524f28e8",
+      "result_id": "64d57c69-9d51-4ce3-b6e2-98ee1bb101de"
+    },
+    {
+      "claim_id": "03cf90e7-7c61-4c50-a1d2-48722d9e01dc",
+      "result_id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063"
+    },
+    {
+      "claim_id": "ab857416-373b-4aaa-b401-4792b920f238",
+      "result_id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063"
+    },
+    {
+      "claim_id": "7b401d48-1469-478e-b8c8-80c36f450f5d",
+      "result_id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063"
+    },
+    {
+      "claim_id": "3b52b8e4-7152-43f7-a456-d0ef72ee3f7e",
+      "result_id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063"
+    },
+    {
+      "claim_id": "f0d06fc9-4743-474c-8a9b-e90906c5de00",
+      "result_id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063"
+    },
+    {
+      "claim_id": "2f103c0a-ff16-4d08-a7ad-7bedb106f34f",
+      "result_id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063"
+    },
+    {
+      "claim_id": "9df9cb63-84e7-41bc-bbab-7e9acf888c6e",
+      "result_id": "3cb42bd7-e16d-4886-9caa-37d2fc35b063"
+    },
+    {
+      "claim_id": "586c8891-0f3a-4973-9c54-0dc6011c3703",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "95ee3c30-0836-4a76-b4ae-29d435858964",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "23d07e12-26eb-457c-9e41-20e9778af624",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "7e30967a-1c8c-42e9-ae92-8f5c083e335c",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "b3f22041-9920-4af2-add3-dd23d2cc2eb3",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "90f518e8-7167-4294-b17c-f230cf3154a2",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "7dcdbf02-6a97-4578-9f8d-c2bfdcd5172c",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "6770f2e5-9c9d-4a94-959e-0e007ed081e0",
+      "result_id": "824ae4bb-05b3-417e-b8fd-d58b3f8383ca"
+    },
+    {
+      "claim_id": "077ba400-b929-44cf-9350-86345f3c3783",
+      "result_id": "383c18b3-66aa-4551-96fd-03834d144856"
+    },
+    {
+      "claim_id": "45c2075c-a32a-4fe4-af61-2823681ba919",
+      "result_id": "383c18b3-66aa-4551-96fd-03834d144856"
+    },
+    {
+      "claim_id": "ebfafc46-e2e7-4c9e-87ed-8d10f29a52ee",
+      "result_id": "383c18b3-66aa-4551-96fd-03834d144856"
+    },
+    {
+      "claim_id": "65c5ee8a-254f-4220-8c9a-ba0e816dabee",
+      "result_id": "383c18b3-66aa-4551-96fd-03834d144856"
+    },
+    {
+      "claim_id": "2b6e50e8-486b-44a6-a4ee-f51c6bb2d444",
+      "result_id": "383c18b3-66aa-4551-96fd-03834d144856"
+    },
+    {
+      "claim_id": "369dd112-4851-47f6-a52e-da65845bbb11",
+      "result_id": "383c18b3-66aa-4551-96fd-03834d144856"
+    },
+    {
+      "claim_id": "1faec0b5-7213-4bc9-bff9-339de6565c24",
+      "result_id": "383c18b3-66aa-4551-96fd-03834d144856"
+    },
+    {
+      "claim_id": "1a7f3cce-e59a-4871-bbc5-3045c925c03b",
+      "result_id": "27604964-c7de-4449-9250-1b2a87fc096b"
+    },
+    {
+      "claim_id": "47284103-b12e-4061-8c79-5bc708b01525",
+      "result_id": "27604964-c7de-4449-9250-1b2a87fc096b"
+    },
+    {
+      "claim_id": "fc37c04f-2d6b-40be-99a6-0810f93398f4",
+      "result_id": "27604964-c7de-4449-9250-1b2a87fc096b"
+    },
+    {
+      "claim_id": "bc21e228-8043-4937-9e87-fd75e5306564",
+      "result_id": "27604964-c7de-4449-9250-1b2a87fc096b"
+    },
+    {
+      "claim_id": "f05117ff-1266-499a-9062-8e24592d451a",
+      "result_id": "a9a80d69-639d-475e-8e0d-78b3785c17e1"
+    },
+    {
+      "claim_id": "3e7b0d01-572b-4ec8-8b3c-10c9f020abd0",
+      "result_id": "a9a80d69-639d-475e-8e0d-78b3785c17e1"
+    },
+    {
+      "claim_id": "2d988b80-be5a-45b6-895e-c07828a92ddd",
+      "result_id": "a9a80d69-639d-475e-8e0d-78b3785c17e1"
+    },
+    {
+      "claim_id": "ad8ea990-df69-49b5-9b17-8eaf8a682083",
+      "result_id": "a9a80d69-639d-475e-8e0d-78b3785c17e1"
+    },
+    {
+      "claim_id": "c2614357-85d7-4327-b7c6-6202c3aa5328",
+      "result_id": "a9a80d69-639d-475e-8e0d-78b3785c17e1"
+    },
+    {
+      "claim_id": "43f187ae-95bb-4ac5-a34f-90467c5e0355",
+      "result_id": "a9a80d69-639d-475e-8e0d-78b3785c17e1"
+    },
+    {
+      "claim_id": "4059995b-36fc-4fbb-845f-345e28833d3c",
+      "result_id": "795d5bd1-0563-4642-9718-635527236dcc"
+    },
+    {
+      "claim_id": "de1c9d03-47fa-4173-a4e5-3e65055a7e2e",
+      "result_id": "795d5bd1-0563-4642-9718-635527236dcc"
+    },
+    {
+      "claim_id": "9d0ce1dc-eb5b-42d4-83f0-24e566f1ad5b",
+      "result_id": "7364851e-1832-4b45-9b69-b4511a898200"
+    },
+    {
+      "claim_id": "23e4c098-3c80-41e0-9d56-1163093d4bc0",
+      "result_id": "7364851e-1832-4b45-9b69-b4511a898200"
+    },
+    {
+      "claim_id": "b77de26d-edb8-4b0a-b58a-3238dd76c9a0",
+      "result_id": "5e127220-3570-4ea2-9e72-8241997eaaa6"
+    },
+    {
+      "claim_id": "06e29a0e-053a-4244-a883-5957051a29a1",
+      "result_id": "5e127220-3570-4ea2-9e72-8241997eaaa6"
+    },
+    {
+      "claim_id": "8c709ceb-4bb0-455f-8f82-bc9968e6c607",
+      "result_id": "5e127220-3570-4ea2-9e72-8241997eaaa6"
+    },
+    {
+      "claim_id": "ec69d78f-1342-4330-9805-cd310e184439",
+      "result_id": "5e127220-3570-4ea2-9e72-8241997eaaa6"
+    },
+    {
+      "claim_id": "4a0ef8e9-b331-409e-99af-609130f5ced9",
+      "result_id": "5e127220-3570-4ea2-9e72-8241997eaaa6"
+    },
+    {
+      "claim_id": "5a678d62-b066-4179-b15f-442eb5da6904",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "c8205f72-3115-434e-995e-759ff78b0919",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "8478fb6c-0d87-43a8-9ded-bf87a9946aeb",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "888ca3ad-2afd-4009-9f6f-b0e1f7e89406",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "f9608cc9-5bf6-462d-ac45-351787cdd8f4",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "fefc1313-963c-4952-a3b4-7f59c3f203cf",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "413bdefb-8abd-4b19-a35e-15eb3c4b9471",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "5625df97-e72b-4b40-b393-98dd03f64058",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "3647ecda-6ed1-403f-b49c-541408e4a03f",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "26aaa13f-7530-48f3-9d08-424483737e7f",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "c9ddf8c1-fdb4-468b-a58e-39b1529ca4a1",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "0758cebc-177d-42f9-852e-6f949d6a592e",
+      "result_id": "e2f563f1-43ca-4877-bd97-7832c0526bfd"
+    },
+    {
+      "claim_id": "d33512f1-18f5-4167-8191-ca423f7c54e4",
+      "result_id": "116f7bd4-280e-4187-807e-18e56fcded24"
+    },
+    {
+      "claim_id": "9aab5478-fa0b-4aaf-9c02-fa25e85b706d",
+      "result_id": "116f7bd4-280e-4187-807e-18e56fcded24"
+    },
+    {
+      "claim_id": "18afdf08-e989-4182-8302-597d296ce851",
+      "result_id": "116f7bd4-280e-4187-807e-18e56fcded24"
+    },
+    {
+      "claim_id": "d01e36e5-cff8-4546-8c77-1ed1482aa423",
+      "result_id": "116f7bd4-280e-4187-807e-18e56fcded24"
+    },
+    {
+      "claim_id": "0bf0125c-0360-4f3c-a798-071573e27510",
+      "result_id": "116f7bd4-280e-4187-807e-18e56fcded24"
+    },
+    {
+      "claim_id": "d5ba3f6b-1f47-429f-b23e-96207deec6ed",
+      "result_id": "116f7bd4-280e-4187-807e-18e56fcded24"
+    },
+    {
+      "claim_id": "9869ecc3-8aac-4555-8c90-0470efb7d0cf",
+      "result_id": "d7862099-e576-44d1-9851-32c7506aee2d"
+    }
+  ],
+  "comparisons": []
+}

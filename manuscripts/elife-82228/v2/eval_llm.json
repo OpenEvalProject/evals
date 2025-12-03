@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Bidirectional cargo transport in neurons involves kinesin and dynein motors moving in opposite directions on microtubules, with both motors simultaneously present on axonal vesicles. Disrupted transport is linked to neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13 establish well-supported background knowledge about bidirectional transport. These claims are supported by multiple citations to established literature and represent accepted understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior work established that kinesin-1 overpowers DDB with slow movement, while kinesin-2 and -3 families show higher load sensitivity and are predicted to be overpowered by dynein. However, kinesin-2 and -3 also show faster reattachment rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C21-C30 accurately summarize prior work on motor properties and interactions, supported by appropriate citations. These establish the context and predictions that the current study tests experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The tug-of-war model posits that the strongest motor determines cargo directionality, but experimental evidence including the 'paradox of codependence' suggests this model is insufficient to explain bidirectional transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 accurately describe the tug-of-war model and its limitations based on cited literature. The paradox of codependence (C17) is well-documented and provides strong evidence against simple mechanical competition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational modeling by Ohashi et al. (2019) predicted that load-dependent detachment sensitivity, rather than stall force, is the strongest determinant of cargo velocity in DDB-kinesin pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 accurately summarize prior computational work that motivated the current experimental study. The hypothesis in C35 explicitly states it requires experimental confirmation, which the current study provides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C103"
+    ],
+    "result": "DDB-Kin1 pairs showed median trace velocity of 290 nm/s (50% decrease from unloaded), while DDB-Kin2 and -3 showed dramatically slower velocities of -28 and -6.3 nm/s. 75% of DDB-Kin1 pairs moved toward plus-end versus 44% and 49% for Kin2 and Kin3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40, C103 present experimental velocity and directionality data supported by Figure 2A-B. The measurements are clearly quantified with appropriate statistics. The comparison to previous studies (C103) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C104",
+      "C105"
+    ],
+    "result": "Trace velocity distributions showed two populations: a slow population near zero and a fast population near unloaded kinesin speeds. Velocity thresholds (250 nm/s for Kin1/3, 125 nm/s for Kin2) separated these populations, with 52%, 29%, and 25% of events above threshold for Kin1, 2, and 3 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C104-C105 describe bimodal velocity distributions supported by Figure 2C. The threshold selection is justified by clear peak separation and >95% of unloaded data above threshold. The interpretation that Kin1 more readily pulls DDB off is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Fast DDB-Kin traces showed enhanced run lengths (~180% for Kin1/2) and modest velocity reductions (14% for Kin1, 25% for Kin2/3), consistent with DDB in a diffusive/weakly bound state. Slow traces had durations of 20-22 s, substantially longer than fast traces or unloaded motors, indicating both motors engaged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are well-supported by Figure 3 data. The run length enhancement and velocity reduction patterns support the interpretation of DDB states. The duration analysis (C50-C52) provides strong evidence for distinguishing engaged versus weakly-bound populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "All motor pairs spent similar time paused (26-27%), independent of kinesin type, matching isolated DDB (24%). Pause durations were longer for motor pairs (4.3-5.1 s) than unloaded DDB (2.8 s), and pauses during plus-end events were 22% longer than during minus-end events, indicating pauses result from DDB switching to a strongly-bound stuck state that kinesin cannot overcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61, C81-C84 present comprehensive pause analysis supported by Figure 4. The similar pause fractions across motor pairs, comparison to isolated DDB, and directional differences in pause duration provide strong converging evidence for the DDB stuck state interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C106"
+    ],
+    "result": "Instantaneous velocity analysis of non-paused segments showed DDB-Kin1 had median speed of -6 nm/s centered near zero, while DDB-Kin2 (-41 nm/s) and DDB-Kin3 (-26 nm/s) were shifted toward minus-end. DDB-Kin1 spent ~20% more time moving toward plus-end. All three kinesins effectively compete with DDB, with Kin1 having slight advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C106 present instantaneous velocity analysis supported by Figure 5. The quantitative differences are clearly shown, and the conclusion that all three kinesins effectively compete (C65) is well-supported by the data showing velocities near zero for all pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74"
+    ],
+    "result": "When both motors are engaged and stepping, kinesin-1, -2, and -3 motors can all effectively withstand hindering loads from DDB, with Kin1 only slightly more resistant to detachment than Kin2 or Kin3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73-C74 state the primary experimental finding. This is strongly supported by the instantaneous velocity analysis (Figure 5) showing all three kinesins achieve near-zero median velocities when engaged with DDB, contradicting predictions based on load sensitivity alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C7",
+      "C72"
+    ],
+    "result": "Stochastic stepping simulations closely matched experimental velocity distributions when using fast reattachment rates (100-990 s\u207b\u00b9). With slower reattachment (5 s\u207b\u00b9), simulations showed strong minus-end bias conflicting with data. Kin2 and -3 compensate for higher load sensitivity with faster reattachment kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72, C7 present simulation results supported by Figure 6. The model successfully reproduces experimental distributions with fast reattachment rates but fails with slow rates, providing strong computational support for the fast reattachment mechanism. The parameter choices are justified by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "Fast kinesin reattachment rates (100-1000 s\u207b\u00b9) used in simulations are supported by first principles calculations and recent three-bead optical tweezer measurements. Fast reattachment compensates for fast detachment under load, explaining how force-sensitive kinesins can be robust transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C79-C80 provide mechanistic explanation supported by calculations and cited experimental work. The first principles calculation (kon \u00d7 [tubulin] = 137 s\u207b\u00b9) and optical tweezer data provide independent validation of the fast reattachment rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C95",
+      "C96"
+    ],
+    "result": "Motor kinetics play critical roles in balancing forces between kinesin and dynein. Motors do not simply regulate themselves via mechanical competition, emphasizing the importance of regulation by cargo adaptors, regulatory proteins, and microtubule track for tuning transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C95-C96 present the main conceptual conclusions. These are well-supported by the experimental and simulation results showing that kinetic parameters (attachment/detachment) rather than force alone determine outcomes, and that all three kinesins perform similarly despite different properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Complex vesicle motility in vivo may result from dynein state switching rather than tug-of-war. Studies with DNA-linked motors show slow smooth motility with rare switching, while cargo adaptor-linked motors show fast unidirectional motility, suggesting adaptors regulate direction via selective activation rather than mechanical competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 synthesize current results with prior work to propose regulatory mechanisms. The comparison between DNA-linked and adaptor-linked systems is well-supported by citations, and the selective activation hypothesis is a reasonable inference from the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Cargo adaptors provide mechanisms for balanced motor recruitment and can regulate transport through phosphorylation (JIP1) or binding partners (HAP1). Microtubule-associated proteins and cargo stiffness may also regulate motor binding and transport dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 discuss regulatory mechanisms supported by cited literature (C91-C93). C90 is a reasonable inference about adaptor function. C94 is appropriately presented as speculation about a factor requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The experimental system used constitutively active kinesin constructs (Kin1: D. melanogaster KHC 1-559; Kin2: M. musculus KIF3A 1-342 with KHC neck coil; Kin3: R. norvegicus KIF1A 1-393 with GCN4 zipper) with C-terminal SNAP tags, and DDB complex with full-length dynein, purified dynactin, and truncated BicD2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe the experimental constructs. These are clearly documented in the Methods section with appropriate citations to source plasmids. The construct designs are standard for the field and appropriate for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Directional switches occurred with a frequency of 0.01 s\u207b\u00b9 for all motor pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 reports a specific measurement supported by Figure 1\u2014figure supplement 4G-I. The low frequency of directional switching is an important observation that argues against simple tug-of-war dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Simulation parameters for load-dependent detachment (Fdetach: 6.8, 3, 1.3 pN for Kin1/2/3) and reattachment rates (100, 300, 990 s\u207b\u00b9 for Kin1/2/3) were based on published optical tweezer and stopped-flow studies. DDB detachment was modeled as load-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 document simulation parameters with appropriate citations to source studies. The parameter choices are well-justified, particularly the use of three-bead optical tweezer data that minimizes artifacts from vertical forces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Traditional single-bead optical trap experiments impose non-negligible vertical forces that may accelerate motor detachment under load. Three-bead trap assays minimize vertical forces and provide more physiologically relevant measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 describe important methodological considerations supported by recent citations. This provides context for why the authors chose certain parameter values and highlights the importance of experimental geometry in force measurements.",
+    "result_type": "MINOR"
+  }
+]

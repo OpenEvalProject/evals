@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Entorhinal input to the dentate gyrus exhibits UP and DOWN dynamics during quiet wakefulness, with ripples occurring exclusively in UP states. DG CSD activity is bimodally distributed, coherent with pupil diameter, and correlates with eyeblinks (DOWN state) and ripples (UP state). UP and DOWN epoch durations are exponentially distributed with means around 3 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C45-C54 collectively demonstrate that EC input to DG exhibits UP-DOWN dynamics in awake mice. The bimodal distribution of DG CSD (C45), exclusive occurrence of ripples in UP states (C3, C49), correlation with pupil dynamics (C48, C50, C51), and exponential state duration distributions (C52) provide converging evidence. The data are supported by multiple figures (Figure 2 and supplements) showing CSD analysis, HMM state detection, and behavioral correlates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Elevated cortical input in UP states generates depolarization in DG and CA1 neurons but produces persistent hyperpolarization in the majority of CA3 neurons. The majority of DG cells (21/22) show positive correlation to EC inputs, the majority of CA3 neurons (26/32) show negative correlation, while CA1 neurons are split. The lag structure is inconsistent with simple feedforward activation along the trisynaptic circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C55-C63 demonstrate subfield-specific modulation by EC inputs with strong experimental support. The cross-covariance analysis (Figure 3) shows clear positive correlation in DG, negative correlation in CA3, and mixed responses in CA1. The lag analysis (C60-C62) reveals CA1 leads DG CSD activity while CA3 lags, contradicting simple feedforward models (C63). Sample sizes are adequate (22 DG, 32 CA3, 32 CA1 cells) and the findings are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Linear transfer models reveal that DG granule cells have causal responses to EC input with persistent depolarization, CA3 exhibits persistent hyperpolarization with non-causal components, and CA1 shows transient depolarizing responses that decay within 1 second. Many CA3 and CA1 cells show positive filter values at negative lags indicating non-causal relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 describe transfer model results (Figure 4) that characterize the input-output relationship between DG CSD and neuronal Vm. The impulse and step response analyses provide mechanistic insight into how EC inputs affect each subfield. The non-causal components in CA3 and CA1 (C65) suggest feedback loops or alternative input sources. The modeling approach is appropriate and results are consistent with the correlation analyses (C55-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DG granule cells show homogeneous sustained depolarization in UP states and hyperpolarization in DOWN states. About one-third of CA3 neurons exhibit sustained hyperpolarization in UP states, while the remainder show transient depolarization near UP transitions. CA1 neurons show more transient responses. Two-thirds of DG and CA1 neurons show increased firing in UP states, while about half of CA3 neurons show increased firing in DOWN states. CA3 neurons are maximally hyperpolarized at the end of UP phase when ripple rate is highest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 describe UDS phase-dependent modulation of Vm and firing across hippocampal subfields (Figure 5). The findings are well-supported by population data showing distinct patterns: DG follows EC inputs, CA3 shows opposite modulation, and CA1 shows intermediate behavior. The observation that CA3 is maximally hyperpolarized when ripples are most frequent (C82) is a key finding linking state modulation to ripple generation. Statistical testing is described in methods and supplement figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Fast ripple-triggered Vm analysis reveals that CA1 neurons show sharp depolarization followed by hyperpolarization, while the majority of CA3 neurons show prominent hyperpolarization starting 150ms before ripple onset and reaching a trough ~100ms after onset. DG granule cells show depolarization peaks both ~100ms before and immediately after ripple onset. These pre-ripple responses are not due to ripple bursts and indicate coordinated activity across DG, CA3, and CA1 preceding ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C95 describe fast Vm dynamics around ripples (Figure 6). The CA3 hyperpolarization (C85-C87) contrasts with the prevailing excitatory buildup model and is a major finding. The pre-ripple depolarization in DG and CA1 (C89-C91) suggests orchestrated initiation. The control analysis excluding ripple doublets (C93) strengthens the interpretation. The findings are supported by population averages and individual cell data, though the mechanisms remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The magnitude of CA3 hyperpolarization scales with CA3 population burst size (quantified by sharp wave amplitude), pointing to feedback inhibition as its source. Larger CA3 events are associated with more sustained pre-ripple depolarization and deeper post-ripple hyperpolarization in CA3, and increased post-ripple hyperpolarization in CA1, suggesting feedforward inhibition from CA3 to CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 describe the relationship between CA3 burst size and Vm responses (Figure 7). The scaling of hyperpolarization with burst size (C97-C99) provides strong evidence for feedback inhibition in CA3 (C100) and feedforward inhibition to CA1 (C101). The analysis comparing small vs. large ripples is appropriate and the conclusions are well-supported by the data. The interpretation is consistent with known circuit anatomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C88",
+      "C100",
+      "C108",
+      "C146",
+      "C147",
+      "C148",
+      "C152",
+      "C153",
+      "C160"
+    ],
+    "result": "CA3 inhibition is important for ripple generation. Growing inhibition is evident in CA3 throughout the ripple buildup, and increased inhibition in CA3 may be a prerequisite for ripple initiation. Feedback inhibition is a consistent feature of the buildup process and provides a mechanism for ripple termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C88, C100, C108, C146-C148, C152-C153, C160 collectively argue for the importance of CA3 inhibition in ripple generation. The evidence includes: (1) CA3 hyperpolarization during ripples (C88), (2) scaling with burst size indicating feedback inhibition (C100, C152), (3) consistency with in vitro studies showing GABAA blockade abolishes ripples (C147), and (4) growing inhibition providing termination mechanism (C160). The interpretation is well-supported though some aspects remain speculative (C148).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C136",
+      "C137"
+    ],
+    "result": "The Vm modulation of CA3 pyramidal neurons by entorhinal input and ripples is largely opposite to that of DG granule cells and CA1 pyramidal neurons. On the timescale of seconds, slow Vm shifts in CA3 are negatively correlated with UP-DOWN transitions in EC input. On sub-second timescales, DG and CA1 show depolarization transients ~100ms before and after ripple onset, while CA3 shows prominent hyperpolarization. The slow Vm responses near ripples can be qualitatively accounted for by UDS influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107, C136-C137 summarize the main findings regarding opposite modulation of CA3 compared to DG and CA1. These summary claims are well-supported by the detailed analyses in earlier claim groups. The multi-timescale analysis (seconds for UDS, sub-second for ripples) provides a comprehensive picture. The transfer model simulations (C137) confirm that UDS influence accounts for slow Vm trends near ripples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "DG molecular layer currents exhibit UP-DOWN dynamics in quiet wakefulness, modulating activity across hippocampal subfields. Observations are largely consistent with findings in NREM sleep and anesthesia, but with notable differences: CA3 shows 50% firing rate increase before DOWN\u2192UP transition, ripples occur exclusively (not just preferentially) in UP states throughout the UP state (not concentrated near transitions), and most CA1 neurons are depolarized in UP states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 compare current findings to prior work in sleep and anesthesia. The claim that UDS occur in quiet wakefulness (C112) is supported by the DG CSD analysis. The comparisons to prior work (C113-C117) are appropriately cited and highlight important differences between awake and other states. The differences are well-documented in the data (Figures 2, 5) and strengthen the novelty of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "DG granule cells follow EC inputs with sustained depolarization and firing increase in UP states. CA1 pyramidal neurons also depolarize and fire more on DOWN\u2192UP transition but with more transient responses, and CA1 population starts depolarizing before the transition and before DG. The majority of CA3 pyramidal neurons are negatively correlated to DG molecular layer currents, with peak depolarization and firing before DOWN\u2192UP transition, leading both CA1 and DG. The modulation of CA3 firing by UDS is consistent with CA3 being responsible for CA1 lead over DG activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 describe the temporal dynamics of subfield responses to UDS transitions. The findings are supported by the lag analysis (Figure 3 supplement 1) and UDS-triggered responses (Figure 5 supplement 1). The observation that CA3 leads despite being downstream of EC and DG (C123) is surprising and well-documented. The interpretation that CA3 drives CA1 lead (C125) is reasonable given the data and circuit anatomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "DG and/or EC inputs may provide powerful feedforward inhibition to CA3 pyramidal neurons. Mossy fibers contact interneurons via filopodial extensions providing anatomical substrate for feedforward inhibition. Low frequency mossy fiber activation results in powerful slow inhibition of CA3 pyramidal neurons. Elevated DG activity in UP state may induce suppression in CA3, while in DOWN state CA3 is released from feedforward inhibition and recurrent connections may support sustained activity. CA3 may play a role in ushering the subsequent UP state by providing excitation to EC via CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C132 propose mechanisms to explain the observed CA3 hyperpolarization in UP states. While the anatomical substrate (C127) and physiological properties (C128) are supported by citations, the specific mechanisms proposed (C129-C131) are speculative hypotheses not directly tested in this study. The observations are inconsistent with simple feedforward activation (C132), but the proposed alternative mechanisms require additional experimental validation. The speculation is reasonable but not definitively supported by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "A computational model demonstrates that UDS modify hippocampal network excitability, preventing ripple occurrence in DOWN states. In the model, EC influences CA3 by providing net inhibitory input and modulating CA3 recurrent excitation strength (possibly via cholinergic tone). CA3 network excitability is restricted to UP state when mean CA3 rate is lower, creating a state where CA3 is inhibited but excitable in UP state and disinhibited but not excitable in DOWN state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 describe a computational model (Figure 8) that explains how UDS restrict ripples to UP states despite lower CA3 firing. The model is conceptually sound and demonstrates that the counterintuitive finding (ripples when CA3 is inhibited) can be explained by bifurcation dynamics. The model parameters are motivated by experimental observations and prior work (C140-C142). However, the model is relatively simple and some parameter choices (e.g., cholinergic modulation) are speculative. The model provides a plausible mechanistic explanation but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C159"
+    ],
+    "result": "Membrane hyperpolarization in CA3 may influence ripple initiation by affecting voltage-gated conductances and changing excitability. Changes in inhibition across the CA3 network may shift the region of ripple initiation, allowing reactivation of diverse memory traces. This may reflect a winner-take-all mechanism for controlling sparsity and specificity of neuronal sequences activated during ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149, C150, C159 propose functional implications of CA3 hyperpolarization for ripple initiation and memory reactivation. These are reasonable hypotheses based on the observed data, but they are speculative and not directly tested. The winner-take-all mechanism (C159) is an interesting interpretation of the feedback inhibition findings, but requires additional experimental evidence such as simultaneous recordings from multiple CA3 neurons or manipulation of inhibition patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The majority of CA3 neurons exhibit brief (~300ms) hyperpolarization locked to ripple onset that scales with CA3 burst size, pointing to feedback inhibition as its source. Feedback inhibition is a consistent feature of the buildup process in CA3, likely arising from interneurons that fire during ripples. Inhibition is tuned differently in CA3 (net hyperpolarization) versus CA1 (oscillatory patterning on depolarization). The relative gain of feedback inhibition exceeds recurrent excitation in most CA3 neurons, so population bursts build by recruiting neurons most strongly connected to a sparse active subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C158 describe the fast timescale inhibition in CA3 during ripples. The scaling with burst size (C152) provides strong evidence for feedback inhibition (C153). The comparison to CA1 (C155-C156) highlights important differences in inhibitory tuning. The interpretation about relative gain of inhibition vs. excitation (C157-C158) is reasonable given the net hyperpolarization despite recurrent excitation. The interneuron source (C154) is supported by citations but not directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "DG granule cells exhibit two transient depolarizations ~100ms before and immediately after ripple onset. Similar features are present in CA1 Vm, with both depolarizations associated with sharp waves in stratum radiatum implicating CA3 as the source. The DG activation is consistent with CA3\u2192DG backprojection and indicates a long and orchestrated ripple initiation process in awake state, extending beyond the ~50ms buildup seen in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C165 describe pre-ripple and post-ripple depolarization in DG and CA1. The two-peak structure (C161-C162) is clearly shown in Figure 6. The association with sharp waves (C163) and consistency with CA3\u2192DG backprojection (C164) provide mechanistic insight. The comparison to in vitro findings (C165) highlights the extended timescale of ripple initiation in awake animals. The interpretation is well-supported though the exact mechanisms require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Whole-cell recordings were obtained from 22 DG granule cells, 32 CA3 pyramidal cells, and 32 CA1 pyramidal cells in awake head-fixed mice on a spherical treadmill. Multisite LFP recordings were performed simultaneously. Recordings used blind-patch approach with specific internal solution and equipment. Controls included recordings 3 days after dura resection in 2 mice to control for same-day anesthesia effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C166-C177 describe the experimental methods. The sample sizes (22 DG, 32 CA3, 32 CA1) are reasonable for whole-cell recordings in awake animals, which are technically challenging. The methods are described in sufficient detail including internal solution composition, equipment, and recording parameters. The control for anesthesia effects (C171) is appropriate. The blind-patch approach in awake animals is well-established (citations provided). Cell identification was confirmed histologically (Figure 1 supplements).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Data analysis methods included spike detection with specific criteria, ripple detection from CA1 LFP, CSD estimation using inverse spline method, DG CSD activity computation, linear transfer model estimation, UDS identification using HMM, and pupil analysis using DeepLabCut. Cells with spike thresholds exceeding -37mV were excluded as potentially damaged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C188 describe data analysis methods. The approaches are appropriate and well-established: spike detection criteria (C181), quality control (C182), ripple detection (C183), CSD analysis with citations (C184), DG CSD computation (C185), transfer modeling (C186), HMM for state detection (C187), and DeepLabCut for pupil tracking (C188). The methods are described in sufficient detail for reproducibility. The exclusion criterion for damaged cells (C182) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background knowledge and literature review establishing the importance of hippocampal ripples for memory consolidation, their occurrence during LIA and quiet wakefulness, the presence of neocortical UP-DOWN states, the role of entorhinal cortex as gateway to hippocampus, and the knowledge gaps regarding cortical UDS influence on hippocampal dynamics and CA3 subthreshold dynamics around ripples in awake animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C38 provide background knowledge and identify knowledge gaps. These claims are appropriately cited to prior literature and accurately represent the state of the field. The knowledge gaps (C26, C37, C38) motivate the current study. The background establishes the importance of the research questions and provides context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Prior work has established that neocortical dynamics during NREM sleep and anesthesia show UP-DOWN state alternation, entorhinal cortex exhibits UDS with bimodal Vm distributions, hippocampal neurons are modulated by cortical UDS in subfield-specific manner, CA3 recurrent circuit functions as autoassociative memory network supporting ripple generation, and acute silencing of Schaffer collaterals abolishes ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C133-C135 summarize relevant prior work with appropriate citations. These claims provide context for the current findings and are accurately represented. The citations support the statements made. This background is essential for understanding the novelty and significance of the current findings in awake animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The membrane potential of CA3 neurons is modulated by brain state and ripples in a way largely opposite to DG and CA1 neurons. This divergent modulation is surprising given that hippocampal subfields are interconnected and all receive EC inputs, and offers insights into ripple initiation, buildup, and termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are high-level summary statements of the main findings. These are well-supported by the detailed analyses described in other claim groups. The statement that the findings are surprising (C40) is justified given the anatomical connectivity and prevailing models. The claim that findings offer insights into ripple processes is supported by the data and modeling, though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  }
+]

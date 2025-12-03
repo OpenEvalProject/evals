@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CquiOR10 and CquiOR2 are narrowly tuned odorant receptors from Culex quinquefasciatus that detect the oviposition attractants skatole and indole with reciprocal specificity. CquiOR10 is highly specific to skatole (the more potent attractant), while CquiOR2 preferentially responds to indole. These receptors and their ligand specificities are conserved across mosquito species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C23-C26 are well-supported by dose-response data in Figure 1 showing clear reciprocal specificity, with CquiOR10 responding preferentially to skatole (EC50 3.6 \u00b5M) and CquiOR2 to indole (EC50 7.7 \u00b5M). The conservation across species is supported by citations to functional studies in multiple mosquito species and the housefly. The behavioral relevance is established through citations to oviposition studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Through systematic transmembrane domain swapping experiments, TM2 was identified as the primary specificity determinant for skatole/indole discrimination. Of 36 chimeric receptors tested, CquiOR10M2,7 showed reversed specificity to indole. Further dissection of TM2 into outer, middle, and inner segments revealed that the inner segment contains critical specificity determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C37 are supported by extensive chimeric receptor data (36 constructs tested, documented in Supplementary Table 2 and Figure 1\u2014supplement 1). The systematic approach of testing TM domain swaps, followed by segmental analysis of TM2, provides strong evidence. The validation of TM predictions using the AbakOrco structure (C93) strengthens confidence in the approach. The progression from CquiOR10M2,7 to segmental mutants logically narrows the critical region to the inner TM2 segment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Within the inner segment of TM2, position 73 was identified as the critical specificity determinant through single-point mutations in chimeric receptors. Mutation of Ala-73 to Leu in the chimeric receptor CquiOR10M2,5,6,7 reversed specificity from indole back to skatole, while the reciprocal mutation at position 78 had no effect on specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by dose-response data in Figure 3F-H showing that CquiOR10M2,5,6,7T78I retained indole specificity while CquiOR10M2,5,6,7L73A reverted to skatole specificity. The single-point mutation in CquiOR10M7 (A73L) also reversed specificity to indole. This systematic mutagenesis approach provides strong evidence that position 73 is the key determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C14"
+    ],
+    "result": "Single amino acid substitutions at position 73/74 in wildtype receptors completely reverse ligand specificity. CquiOR10A73L switches from skatole-specific (EC50 3.6 \u00b5M) to indole-specific (EC50 3.4 \u00b5M), while CquiOR2L74A switches from indole-specific (EC50 7.7 \u00b5M) to skatole-specific (EC50 8.5 \u00b5M), demonstrating reciprocal control of specificity by a single residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C14, C43-C47 are strongly supported by dose-response data in Figure 3I-J showing complete reversal of specificity with single point mutations in wildtype receptors. The EC50 values are quantitatively determined from curve fitting. The reciprocal nature of the effect (A73L in OR10 mimics OR2, L74A in OR2 mimics OR10) provides compelling evidence that this single residue mediates specificity. This is a major finding demonstrating how subtle sequence differences control ligand discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The single amino acid at position 73/74 determines receptor specificity not only for the primary ligands skatole and indole, but also for structurally related compounds including phenolic derivatives and methylindoles. CquiOR10 responds to 3,5-dimethylphenol, 1-methylindole, and 5-methylindole, while CquiOR2 does not; the A73L/L74A mutations reverse these response profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by response data in Figure 5 showing differential responses to phenolic compounds and methylindoles. The single-point mutations reverse these response profiles, demonstrating that position 73/74 controls specificity broadly across structurally related ligands, not just the primary ligands. This extends the significance of the finding beyond skatole/indole to a broader class of indolic compounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Structural models of CquiOR10, CquiOR10A73L, CquiOR2, and CquiOR2L74A were generated using RoseTTAFold and AlphaFold. The models show high structural similarity (transmembrane helix RMSD <1 \u00c5 among RoseTTAFold models, 1.7 \u00c5 between RoseTTAFold and AlphaFold for CquiOR10), suggesting that the homologous receptors have similar overall structures and that single-point mutations do not cause major structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56-C59 are supported by structural analysis shown in Figure 6. The low RMSD values indicate high confidence in the models and structural similarity between receptors. However, these are computational predictions without experimental validation. The models are used as a basis for subsequent docking studies, so their quality is important for interpreting the mechanistic hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RosettaLigand docking paired with hdbscan clustering was validated using the experimentally determined MhraOR5-eugenol structure. The method produced models with RMSD values ranging from 0.5-5.0 \u00c5 relative to the experimental structure, with the largest cluster at 0.75 \u00c5 RMSD and the lowest interface-energy model at 2.4 \u00c5 RMSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by validation studies documented in Supplementary Table 3 and Figure 6\u2014supplement 3. The RMSD values demonstrate that the docking method can recapitulate experimental structures with reasonable accuracy (0.75-2.4 \u00c5 for top models). This validation is important for establishing confidence in the subsequent docking studies with CquiOR10/CquiOR2, though it should be noted that MhraOR5 is evolutionarily distant from mosquito ORs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Molecular docking studies suggest that skatole and indole bind in a membrane-embedded pore flanked by transmembrane helices S2, S4, S5, and S6, at similar depths near residue 73. The ligands show positional overlap in both CquiOR10 and CquiOR10A73L and can reorient in a similar plane through rotation and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by docking models shown in Figure 7 and supplements. The models consistently position ligands in the same general region across multiple clusters. PLIP analysis (Figure 7\u2014supplement 6) identifies the binding pocket residues. However, these are computational predictions that require experimental validation. The consistency across multiple docking runs and clustering approaches provides some confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Docking studies reveal that skatole and indole do not form direct contacts with Ala-73 in CquiOR10 models, but in CquiOR10A73L models, skatole forms hydrophobic contacts with Leu-73 in 5 of 10 representative models and indole in 2 of 10 models. This suggests that position 73 indirectly affects specificity by modulating binding pocket volume rather than through direct ligand contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C72 are based on contact analysis from computational docking (Supplementary Tables 6-14). The observation that A73 does not directly contact ligands while L73 does in some models is interesting, but the interpretation that this reflects volumetric modulation (C72) is speculative. The inconsistency in contacts across models (5/10 for skatole, 2/10 for indole with L73) suggests uncertainty in the binding poses. This hypothesis requires experimental validation through additional mutagenesis or structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Structural alignment of CquiOR10 and CquiOR10A73L models reveals an approximately 1 \u00c5 outward shift of the \u03b1-carbon at position 73 in the mutant, suggesting a tightly constrained space in wildtype CquiOR10 and an expanded space in CquiOR10A73L. This difference exists in apo structures and is independent of ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by structural analysis shown in Figure 8 and documented in Supplementary Tables 15-16. The 1 \u00c5 shift is quantified from model alignments. The observation that this difference exists in apo structures (C75) is important for the volumetric hypothesis. However, these are computational models without experimental validation, and a 1 \u00c5 shift is at the limit of model accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Consistent with a space-filling constraint hypothesis, CquiOR10 mutants with bulkier residues at position 73 (Ile, Val) are completely insensitive to skatole and indole, despite being functionally expressed as demonstrated by robust responses to the Orco agonist OLC12. This suggests that bulkier residues prevent ligand binding by occluding the binding pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C76-C79 are supported by data in Figure 8\u2014supplement 1A-B showing no response to skatole/indole but strong responses to OLC12. The functional expression confirmed by OLC12 responses (C78, C79) is critical for interpreting the lack of ligand response as loss of binding rather than loss of expression. This provides strong experimental support for the space constraint hypothesis, as bulkier residues would be expected to reduce pocket volume.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "CquiOR10A73G retains skatole specificity but shows significantly more robust responses than wildtype CquiOR10, consistent with the hypothesis that reducing steric constraints (Gly is smaller than Ala) increases binding pocket volume and enhances ligand binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C80-C82 are supported by dose-response data in Figure 8\u2014supplements 1C and 2 showing that the Gly mutation enhances skatole responses while maintaining specificity. This is consistent with the volumetric hypothesis: Gly (no side chain) provides more space than Ala (methyl side chain), potentially allowing better ligand accommodation. The enhanced response suggests improved binding, though direct binding measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The space constraint hypothesis extends to CquiOR2: CquiOR2L74I retains indole specificity, CquiOR2L74G reverses specificity to skatole, and CquiOR2L74V shows nearly equal responses to both ligands. This demonstrates that the volumetric control mechanism operates in both receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C83-C86 are supported by data in Figure 8\u2014supplement 1D-F. The graded effect of residue size (Ile>Leu>Val>Ala>Gly) on specificity provides strong support for volumetric control. The intermediate phenotype of Val (equal responses to both ligands, C86) is particularly informative, suggesting a binding pocket volume that accommodates both ligands equally. Statistical analysis confirms no significant difference between skatole and indole responses for L74V (p>0.9999).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Testing with the bulkier non-natural ligand 3-ethylindole provides further support for the space constraint hypothesis. Receptors with bulkier residues (CquiOR10A73L, CquiOR2, CquiOR2L74I) do not respond to 3-ethylindole, while receptors with smaller residues (CquiOR2L74A, CquiOR2L74G, CquiOR10A73G) gain or enhance activity toward this larger ligand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C87-C92 are supported by dose-response data in Figure 9 and Figure 9\u2014supplement 1. The pattern is consistent with volumetric control: larger binding pockets (smaller residues) accommodate the bulkier 3-ethylindole, while constrained pockets (larger residues) cannot. The enhanced response of CquiOR10A73G to 3-ethylindole compared to wildtype (C13, C87, C91) is particularly compelling. This use of a non-natural ligand to test the hypothesis is a strength of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Background information on insect odorant receptors: they have inverse topology compared to GPCRs, form heteromeric cation channels with Orco, and are key components of the insect olfactory system. Cryo-EM structures have been determined for AbakOrco and MhraOR5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C97-C99 are well-established facts from the literature, supported by appropriate citations to primary research and reviews. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background information on Culex quinquefasciatus: it transmits pathogens causing filariasis and encephalitis, is a bridge vector for West Nile virus, and has the most extensive OR gene repertoire (180 genes, 177 transcripts) among sequenced mosquito species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are established facts from the literature, supported by citations to genomic and epidemiological studies. These provide context for the biological significance of studying Culex ORs but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CquiOR10 and CquiOR2 share 49.5% overall amino acid identity and 61.9% identity in predicted transmembrane domains. CquiOR10 is the second most sensitive Culex quinquefasciatus OR after CquiOR36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by sequence alignment data (Supplementary Table 1) and citation to sensitivity measurements (Choo et al., 2018). These provide important context for understanding the relationship between the two receptors and the rationale for using CquiOR10 as the acceptor in chimeric receptor experiments.",
+    "result_type": "MINOR"
+  }
+]

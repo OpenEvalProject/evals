@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C73",
+      "C74",
+      "C90"
+    ],
+    "result": "The intercellular distribution of secreted proteins depends on interactions with cell-surface molecules such as HSPGs. mV-Wnt8 and mV-Frzb are visible along cell boundaries, while sec-mV is not, unless heparin-binding peptides are added.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 demonstrate that mV-Wnt8/Frzb are visible at cell boundaries while sec-mV is not (C31), and that adding heparin-binding peptides to sec-mV increases visibility (C32). This supports the conclusion that cell-surface binding is required for visualization (C33). The biological activity data (C30) validates the tagged proteins. Claims C73-C74 and C90 provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Tethered-anti-HA antibody and morphotrap experiments demonstrate that secreted proteins can disperse long distances (>15 cell diameters/200 \u03bcm) when trapped by distant cell-surface binding sites, and that diffusing proteins are not readily visible without such trapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 show that sec-mV-2HA is invisible near source cells but visible when trapped by distant tethered antibodies, demonstrating long-range dispersal and the requirement for surface binding for visualization. Claims C38-C41 extend this with morphotrap experiments showing mV-Wnt8 and mV-Frzb can be trapped at distances >200 \u03bcm, providing strong evidence for long-distance dispersal of a freely diffusing population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C99"
+    ],
+    "result": "FCS measurements reveal that mV-Wnt8 and mV-Frzb have both fast-diffusing (free, Dfast >10 \u03bcm\u00b2/s) and slow-diffusing components, with the fast component representing a small freely diffusing population even at endogenous-equivalent levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 present FCS data showing two-component diffusion with fast components consistent with free diffusion (10-100 \u03bcm\u00b2/s range). The AIC analysis (C99) supports the two-component model. Claims C47-C48 note that FCS-detected molecules don't contribute significantly to confocal imaging photon counts, explaining the discrepancy between imaging and FCS. The data are internally consistent and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Heparinase III digestion experiments show that HS chains contribute to the slow diffusing component of mV-Wnt8, while sec-mV shows hindered diffusion without direct HS interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 show that HepIII treatment increases NoP and Ffast for mV-Wnt8, indicating release from HS binding. Claims C51-C53 show that sec-mV has a slight increase in Ffast with HepIII but no membrane interaction (FCCS, C52), supporting hindered diffusion (C54). The HepIII validation data (C100-C103) confirm the enzyme is functional. The interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "FDAP experiments demonstrate that mK-Wnt8 and mK-Frzb are predominantly bound (large C values) but undergo dynamic exchange with unbound molecules, with significantly different dissociation rates (koff) between the two proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 validate the mK-tagged proteins (distribution, activity, stability). Claims C58-C64 present FDAP data showing faster decay than fixed controls (C58-C59), good fits to the dissociation model (C60), high C values indicating mostly immobile populations (C61), and different koff values (C62-C64). The biological activity validation (C104-C105) and photobleaching control (C106) strengthen the conclusions. The spatial analysis (C107) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Mathematical modeling based on dynamic exchange between bound and free states recapitulates graded distributions of bound (but not free) Wnt ligands, with dissociation from the bound state contributing to long-range distribution and rapid gradient formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 state the main modeling result. Claims C77-C80 show that dissociation contributes to gradient range and that the model reaches steady state quickly. Claims C81-C89 demonstrate the model's ability to reproduce various experimental observations including atypical distributions (C81), HS-deficient regions (C82), random binding site distributions (C87), and effects of internalization rates (C84-C86). The model is well-grounded in the experimental data and provides a coherent framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C9",
+      "C65"
+    ],
+    "result": "The main conclusion that Wnt8 distribution is controlled by dynamic exchange between abundant cell-surface-bound and rare freely diffusing populations, with most Wnt8 bound to cell surfaces and only a small proportion diffusing freely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes findings from imaging (C1-C2), FCS (C3-C4), FDAP (C5-C6), and modeling (C9). Claim C65 restates this conclusion. The multiple independent lines of evidence (visualization, quantitative FCS, FDAP dynamics, mathematical modeling) converge to support this model. Each component has been validated through appropriate controls and statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The apparent diffusion coefficients calculated from FDAP data (0.042 and 0.059 \u03bcm\u00b2/s for mKikGR-Wnt8 and mKikGR-Frzb) are similar to previously reported FRAP values for Wg (0.05 \u03bcm\u00b2/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 present calculated apparent diffusion coefficients from curve-fitting and compare them to literature values. The similarity to published Wg FRAP data provides external validation. However, the authors appropriately note that these apparent values reflect interaction with cell surfaces rather than true free diffusion, which is an important conceptual distinction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Photoconverted mK-Wnt8 shows no lateral diffusion even when nearby puncta exist, while mK-Frzb shows some lateral dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe spatial FDAP observations showing different lateral mobility patterns for Wnt8 vs Frzb. This is supported by the video data and spatial intensity profiles. The observation is consistent with the different koff values measured for these proteins and provides mechanistic insight into their different behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Validation of endogenous-equivalent dosing and biological activity of mV-tagged proteins shows that 20 pg mV-wnt8 mRNA approximates endogenous levels, with activity 1/3 to 1/2 of wild-type, while mV-frzb retains full activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 present validation data for the tagged constructs. The immunostaining comparison (C91) and TOP-FLASH assays (C92-C94) provide quantitative assessment of expression levels and biological activity. This validation is essential for interpreting the FCS and FDAP experiments at physiologically relevant concentrations. The reduced activity of mV-Wnt8 is acknowledged and discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Control experiments show that autofluorescence from pigment and yolk granules can be observed in uninjected embryos, but little intercellular fluorescence is present, while sec-mV injection produces detectable intercellular signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 present negative and positive controls for the imaging experiments. These controls are important for establishing that the observed signals are specific to the injected proteins and not due to autofluorescence or other artifacts. The data support the validity of the imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "IgG generated in Xenopus embryos from injected mRNAs functions properly, similar to monoclonal antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 validates the tethered antibody system used in the dispersal experiments. The co-immunoprecipitation data demonstrate that the embryo-generated antibodies are functional, which is essential for interpreting the tethered-anti-HA Ab experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C66",
+      "C67",
+      "C68",
+      "C75"
+    ],
+    "result": "Literature review establishing prior knowledge about Wnt dispersal, HSPG involvement, and conflicting evidence from different model systems and measurement techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C28 and C66-C68, C75 summarize relevant prior work from the literature. These are appropriately cited and provide context for the current study. The citations appear accurate based on the references provided. This background establishes the rationale for the current investigation and positions the work within the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Cell-boundary FDAP suggests that cell-surface-bound and diffusing populations are exchangeable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is an inference from the FDAP data showing exponential decay of bound molecules. This is supported by the curve-fitting to the dissociation model (C60) and is consistent with the overall model of dynamic exchange. The claim is appropriately qualified as a suggestion based on the data.",
+    "result_type": "MINOR"
+  }
+]

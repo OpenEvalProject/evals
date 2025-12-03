@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C55",
+      "C56"
+    ],
+    "result": "The study enrolled 7 OCR-treated MS patients, 6 MTX-treated RA patients, and 15 healthy controls who had prior SARS-CoV-2 infection and received mRNA-1273 vaccination. The groups were comparable in age, sex, and time since infection, with vaccination occurring on average 210 days post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C55-C56 provide clear cohort composition, demographic comparability, and study design details supported by direct data statements and ethical approval documentation. The study design is well-documented with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "RA-MTX patients showed delayed antibody responses with significantly lower IgG levels at day 7 post-first vaccination compared to healthy controls, but reached comparable levels by day 42. MS-OCR patients showed no increase in antibody titers following vaccination and lacked all three antibody isotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 are supported by ELISA data shown in Figure 2 with statistical comparisons. The delayed kinetics in RA-MTX and absent response in MS-OCR are clearly demonstrated with appropriate time points and controls. Sample sizes are small (n=6-7 patients) but trends are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "MS-OCR patients had almost absent B cells due to OCR treatment, while RA-MTX patients showed reduced memory B cells compared to healthy controls. Neither patient group showed significant increases in plasmablasts/plasma cells upon vaccination, unlike healthy controls who showed increases after first vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by flow cytometry data in Figure 2d-h showing B cell populations. The absence of B cells in MS-OCR is consistent with OCR's mechanism of action. The lack of plasmablast response correlates with impaired antibody responses, providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "RA-MTX and MS-OCR patients had significantly smaller Tfh1 cell populations before vaccination compared to healthy controls. Healthy controls showed significant increases in cTfh1 cells after first vaccination, while patient groups did not. MS-OCR patients showed slightly higher quality responses (co-expression of dynamic markers) on cTfh1 cells compared to healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by flow cytometry data in Figure 3 showing Tfh cell dynamics and activation marker expression. The preserved quality of response in MS-OCR despite reduced cell numbers is an interesting finding, though the biological significance of 'slightly higher' co-expression requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Vaccination promoted Th1 cell expansion only in healthy controls, not in patient groups. MS-OCR patients showed a greater proportion of Th1 and Th1-like cells co-expressing three dynamic markers compared to healthy controls, indicating higher quality responses despite lower cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by data in Figure 4 showing Th1 cell dynamics and activation profiles. The finding that MS-OCR patients have higher quality Th1 responses (more co-expression of activation markers) despite impaired B cell responses is notable and mechanistically interesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RA-MTX patients had significantly lower total CD8+ T cells driven by fewer na\u00efve cells. MS-OCR patients showed substantial increases in CD8+ Tcm cells after first vaccination with higher proportions expressing activation markers (CD38, HLA-DR, TIGIT) and more cells co-expressing 3-4 dynamic markers compared to healthy controls. RA-MTX patients showed delayed CD8+ T cell responses primarily after second vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are supported by extensive flow cytometry data in Figure 5 showing CD8+ T cell subsets and activation profiles. The preserved and enhanced CD8+ Tcm response in MS-OCR patients is a key finding. The delayed response in RA-MTX patients is consistent with the delayed antibody kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "OCR-treated MS patients exhibit preserved CD8+ T central memory cell recall responses and similar CD4+ Tfh1/Th1 dynamics despite impaired humoral immunity. MTX treatment delayed antibody and B cell responses after first vaccination with sustained inhibition of T cell activation marker dynamics. MS-OCR patients may benefit from vaccination through CD8+ T cell responses associated with milder disease, while RA-MTX patients face increased risk after first vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 summarize findings supported by the data. However, C45-C46 make clinical inferences about disease outcomes and risk that extend beyond the data presented. The study did not measure clinical outcomes, viral clearance, or protection from infection. These claims require prospective clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study used fresh whole blood analyzed by high-dimensional flow cytometry with 38 unique markers combined with computational analysis (Spectre R package, rPCA, FlowSOM, Flt-SNE) to identify 42 different immune cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe the methodology with appropriate citations. The use of fresh whole blood is justified for studying plasmablasts/plasma cells. The computational pipeline is well-established, though reproducibility would require access to code and parameters. The identification of 42 populations is supported by Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Plasmablasts and plasma cells were observed in MS-OCR patients consistent with lack of CD20 expression on these cells. Vaccination affected innate immune cells with reduced non-classical monocytes in RA-MTX and reduced neutrophils/classical monocytes in healthy controls. CD38 expression increased on NK cells in all groups after vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by data in Figure 1 and supplements. The observation of plasmablasts/plasma cells in MS-OCR patients despite B cell depletion is mechanistically sound. The innate immune changes are documented but may have been missed at peak response (1-2 days post-vaccination as authors note).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C17"
+    ],
+    "result": "Prior studies showed that anti-CD20 therapy impairs antibody responses to SARS-CoV-2 infection and vaccination, with low antibody titers correlating with reduced B cells and low Tfh cells. However, patients with lowest antibody titers showed highest CD8+ T cell activation. OCR eliminates CD20+ B cells for prolonged periods, and CD8+ T cells are essential for viral clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C17 accurately summarize prior literature with appropriate citations. These provide important context for the current study's findings. The citations appear relevant and support the claims made about prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C47",
+      "C64"
+    ],
+    "result": "Prior studies showed MTX reduces antibody titers after SARS-CoV-2 vaccination in na\u00efve patients and did not induce activated CD8+ T cells. MTX has broad immunomodulating functions affecting multiple immune system components and is known to hamper lymphocyte proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C47, and C64 accurately summarize prior literature on MTX effects with appropriate citations (Cronstein and Aune 2020, Haberman et al. 2020, etc.). These provide important mechanistic context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "B cells play a critical role in protective humoral immunity during viral infections. With help from Tfh cells, B cells differentiate into memory B cells and antibody-secreting cells. Both B and Tfh cells are important for protective humoral immunity in SARS-CoV-2 infection, with Tfh cells playing critical roles in B cell activation, antibody production, and class switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 accurately describe established immunological principles supported by appropriate citations. These provide necessary background for understanding the study's focus on B and Tfh cell responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Robust CD8+ T cell immunity results in milder symptoms in SARS-CoV-2 patients. CD8+ T cells recognize conserved epitopes allowing cross-reactivity between variants. High proportions of CD8+ T cells are associated with clinically favorable outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 accurately summarize prior literature on CD8+ T cell responses with multiple supporting citations. These provide important context for interpreting the preserved CD8+ responses in MS-OCR patients as potentially beneficial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "OCR treatment may have mainly eradicated circulating CD20+ B cell populations while B cells in secondary lymphoid organs may have been less affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is explicitly speculative ('One possibility is...') and based on a single citation. The study did not examine lymphoid organs, so this remains an untested hypothesis that could explain the observed seroconversion in MS-OCR patients after initial infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims about SARS-CoV-2 pandemic impact, vaccine efficacy, autoimmune disease prevalence, COVID-19 severity in immunosuppressed patients, and hybrid immunity from infection plus vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide general background supported by appropriate citations to published literature. These establish the context and rationale for the study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

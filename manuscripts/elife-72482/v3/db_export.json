@@ -1,0 +1,1716 @@
+{
+  "submission": {
+    "id": "e02be97d-96b9-473d-a007-967e5619f56f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:45:35.586380Z",
+    "updated_at": "2025-12-03T12:45:35.586380Z"
+  },
+  "content": [
+    {
+      "id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "submission_id": "e02be97d-96b9-473d-a007-967e5619f56f",
+      "content_type": "manuscript",
+      "content_text": "# Functional and structural segregation of overlapping helices in HIV-1\n\n## Authors\n\n- Maliheh Safari<sup>1</sup> ([ORCID: 0000-0002-9511-6481](https://orcid.org/0000-0002-9511-6481))\n- Bhargavi Jayaraman<sup>1</sup> ([ORCID: 0000-0002-5071-6117](https://orcid.org/0000-0002-5071-6117))\n- Henni Zommer<sup>1</sup>\n- Shumin Yang<sup>1</sup>\n- Cynthia Smith<sup>1</sup>\n- Jason D Fernandes<sup>1</sup> ([ORCID: 0000-0002-8625-1796](https://orcid.org/0000-0002-8625-1796)) \u2020\n- Alan D Frankel<sup>1</sup> ([ORCID: 0000-0002-2525-9508](https://orcid.org/0000-0002-2525-9508)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. School of Medicine, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOverlapping coding regions balance selective forces between multiple genes. One possible division of nucleotide sequence is that the predominant selective force on a particular nucleotide can be attributed to just one gene. While this arrangement has been observed in regions in which one gene is structured and the other is disordered, we sought to explore how overlapping genes balance constraints when both protein products are structured over the same sequence. We use a combination of sequence analysis, functional assays, and selection experiments to examine an overlapped region in HIV-1 that encodes helical regions in both Env and Rev. We find that functional segregation occurs even in this overlap, with each protein spacing its functional residues in a manner that allows a mutable non-binding face of one helix to encode important functional residues on a charged face in the other helix. Additionally, our experiments reveal novel and critical functional residues in Env and have implications for the therapeutic targeting of HIV-1.\n\n## Introduction\n\nHIV-1 contains nine genes encoded within a relatively short genome of 10,000 nucleotides (Frankel and Young, 1998). Eight of these nine genes overlap with another on the DNA level and consequently encode protein products in different reading frames. HIV-1 Env overlaps with Vpu, Rev, and Tat, and some parts of Env overlap with both Rev and Tat. Despite the prevalence of overlapping genes, the evolution and function of overlapping genes remains understudied. However, evidence establishing the importance of overlaps continues to grow: the SARS-CoV-2 pandemic has demonstrated the importance of identifying and studying overlapping reading frames, as many immune epitopes targeting canonical and non-canonical overlapping ORFs (open reading frames) have been identified in patients (Nelson et al., 2020; Weingarten-Gabbay et al., 2020;; Finkel et al., 2021).\n\nWe previously showed that, in the case of the essential regulatory genes tat and rev, HIV-1 dedicates the nucleotide sequence to one protein or the other so that critical functional residues do not overlap with one another (Fernandes et al., 2016). For tat and rev, this arrangement is possible because both proteins consist of functional motifs spaced by disordered linkers, and thus functional motifs of one protein can be encoded in regions that overlap with disordered linkers in the other. Although the vast majority of overlapped proteins are predicted to be disordered (Rancurel et al., 2009) and thus have the potential for this arrangement, it is possible that some overlapped regions have more stringent structure and function requirements. Indeed, HIV-1 contains an intriguing overlapping region, between the Rev and Env genes (Figure 1A), in which both protein segments are structured and functionally important. This region might represent a viral Achilles\u2019 heel, vulnerable to therapeutic targeting, as the mutational landscape for escape mutations would be constrained by the simultaneous requirements of both proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig1-v3.jpg)\n\n**Figure 1.:** (A) Genetic organization of the rev/env overlap. (Top) The full genome organization of HIV-1 (HXB2 numbering) demonstrates that the second exon of rev overlaps tat (second exon) and env. A detailed annotation of this overlap depicts the overlap between the quasi-helical NES of Rev with the helical LLP-2 of Env. The ARM (arginine-rich motif, nuclear localization sequence), OD (oligomerization domain), and NES (nuclear export sequence) are other functional domains of Rev that overlap with Env-gp41 (cytoplasmic tail), including the KE (Kennedy epitope) and two lentiviral lytic peptide motifs (LLP-3 in addition to LLP-2). (B) The structure of the Rev NES (red: binding residues, white: non-binding residues) bound to Crm1 (yellow) (PDB: 3nc0). A helical wheel diagram demonstrates how the arrangement of the 2D amino acid sequence creates a distinct binding surface in 3D. (C) Composite modeled structure (PDB: 6ujv) of the Env C-terminus trimer, including the first 21 residues of the LLP-2. The LLP-2 is labeled with the hydrophobic face in gray and the charged surface (positively charged residues in red and negative in blue). A corresponding helical wheel diagram derived from Murphy et al., 2017, for the Env LLP-2 is also shown with charged residues colored. Functionally important residues of Rev are labeled in red.\n\nRev is required for the nuclear export of partially spliced and un-spliced viral RNAs that encode necessary late stage viral proteins as well as the genomic RNA for encapsidation (Malim and Cullen, 1991; Pollard and Malim, 1998; Rausch and Le Grice, 2015). Notably, Rev contains a quasi-helical nuclear export sequence (NES), that binds to the NES-binding groove of the host nuclear export factor Crm1 (Fornerod et al., 1997; Booth et al., 2014). Env is expressed as a polyprotein, composed of the gp120 surface and gp41 transmembrane proteins, which forms a trimeric viral envelope that mediates viral particle binding to cell entry receptors (Checkley et al., 2011; Murphy et al., 2017). The cytoplasmic tail of gp41 is the most C-terminal portion of Env and is highly variable in size (Tedbury and Freed, 2015). In contrast to other retroviruses, lentiviruses such as HIV-1 have an extended cytoplasmic tail containing the Kennedy epitope (KE) followed by three membrane associated lentiviral lytic peptide motifs (LLP-1, LLP-2, and LLP-3) (Steckbeck et al., 2013; Figure 1A). HIV-1 LLP-1, and LLP-2 contain highly conserved arginine and lysine residues that are involved in cation-\u03c0 interactions and have been suggested to stabilize the cytoplasmic tail \u03b1-helical structure (Murphy et al., 2017). LLPs are amphipathic \u03b1 helices that embed in the virus membranes (Kalia et al., 2003; Steckbeck et al., 2011; Murphy et al., 2017). LLP-2 may be transiently exposed on the virus surface to interact with the gp41 core and regulate virus-cell membrane fusion (Lu et al., 2008; Murphy et al., 2017; Piai et al., 2020). A recent nuclear magnetic resonance spectroscopy study revealed that LLP-2 forms two amphipathic helices that wrap around the transmembrane domain of Env, arranging a \u2018baseplate\u2019 that supports the transmembrane domain and the rest of the Env trimer (Piai et al., 2020). Additional evidence suggests that the C-terminal tail makes critical contacts with the matrix protein (Alfadhli et al., 2019) to facilitate Env incorporation into virions.\n\nThe Rev NES and a portion of the Env LLP-2 are encoded by the same nucleotides in the viral genome, with Env encoded in the +1 reading frame relative to Rev (Figure 1A). As both these domains have important functions in viral replication and are structured, they provide an ideal system to examine how viruses balance the evolution of these two genes with critical, overlapping structured motifs. Here, we perform conservation analyses, functional assays, and selection experiments to examine how the virus balances selection pressures within the Rev-Env overlap. Surprisingly, we find that functional residues are also segregated at the nucleotide level, as for the Rev-Tat overlap. In Rev-Env case, the two-dimensional segregation of nucleotides in the genome is mirrored in the three-dimensional functional surfaces of the proteins such that the nucleotides encoding a functional surface in the helix of one protein encode residues on the non-binding face of the overlapping helix. Furthermore, our analyses reveal three important charged residues on the charged surface of LLP-2 that are required for Env function.\n\n## Results\n\n### Conservation of chemical properties in the Rev NES and Env LLP-2\n\nThe Rev NES (residues 75\u201383) binds to Crm1 using several critical hydrophobic residues and non-canonical prolines that change the helical register and position hydrophobic side chains on one face of the helix to fit within the NES recognition groove (Dong et al., 2009; G\u00fcttler et al., 2010; Figure 1B). The Env LLP-2 forms an amphipathic helix of about 33 amino acids long (Eisenberg and Wesson, 1990; Kalia et al., 2003; Murphy et al., 2017) that spans residues 767\u2013788 of Env (242\u2013274 of gp41) (Figure 1A). Nine of the LLP-2 residues (767\u2013776) overlap with the quasi-helical Rev NES (Figure 1B). Mutating charged residues within LLP-2 or hydrophobic residues in the Rev NES negatively impacts viral replication (Kalia et al., 2003; Newman et al., 2007; G\u00fcttler et al., 2010; Fernandes et al., 2016), prompting us to examine in detail the selective forces that guide the evolution of this overlapping region.\n\nIn order to measure the relative conservation of these regions within HIV patient sequences, we first downloaded curated alignments of the Los Alamos Database (hiv.lanl.org) (Foley, 2013) and calculated Shannon entropies for each amino acid in both proteins within the NES/LLP-2 overlap (Pan and Deem, 2011; Fernandes et al., 2016). Sites with low entropy (0=perfect conservation) indicate strong conservation of the amino acid in that particular protein, but it is impossible to determine if the observed conservation is simply driven by codon constraints imposed by the alternative frame. To compare the amino acid conservation of corresponding sites in both proteins, we grouped amino acids that share two nucleotides in the genome and plotted their entropies against one another (Fernandes et al., 2016; Figure 2A). Notably, the one site that contributes to both functional surfaces (H769 in Env and P76 in Rev) is relatively well conserved in both proteins whereas the one site that contributes to neither interface (L755 in Env and T82 in Rev) is weakly conserved (Figure 2A). Unexpectedly, two known essential Crm1-binding residues (L78 and L83) displayed low conservation (high entropy) in the Rev reading frame, but the consensus sequence (Figure 2B) indicates that chemically conservative isoleucine substitutions are frequently found, thus explaining the high entropy. Moreover, entropy analysis using a reduced amino acid alphabet in which the chemically similar amino acids I/L/V are grouped produced low entropy values for all Crm1-binding residues (Figure 2C). The use of chemically conservative side chains to form critical contacts drastically increases the number of \u2018synonymous\u2019 codons (e.g. the six leucine codons can substitute with the three isoleucine codons with essentially equal fitness) and may reflect the kinds of interaction motifs that are most suited to evolve in constrained overlapping regions. The three charged residues (Figure 2C; green dots) in LLP-2 were relatively strongly conserved (Figure 2B) but showed lower conservation (high entropy) than the Rev NES-binding residues, suggesting that Rev may more greatly influence the selection of amino acids in the overlapping region.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig2-v3.jpg)\n\n**Figure 2.:** (A) Shannon entropies (low entropy = high conservation) from alignments of patient sequences (see panel B). Residues in Rev and Env are grouped by positions that share two nucleotides of overlap. Red points contain Crm1 contact residues, green points are charged LLP-2 residues, and yellow points contain both. (B) Sequence logos of Rev NES and Env LLP-2 showing sequence conservation at each position computed from a sequence alignment of patient data from the Los Alamos Database (https://www.hiv.lanl.gov/content/index; 2018). Positively charged residues (KRH) are in blue; negatively charged residues (DE) are in red. Functionally important residues of Rev are marked with a star. (C) Shannon entropies recomputed for a simplified amino acid alphabet (D=E, R=K, I=L and V, M, F=W & Y, N=Q, S=T). Coloring is as in 2A.\n\n### Deep mutational scanning of non-overlapped viruses selects for important LLP-2 and NES residues\n\nIn order to deconvolute the functional constraints for every residue in both proteins absent the overlap, we created libraries of viruses in which Rev and Env were decoupled from one another. Although HIV-1 env has been exposed to deep mutational scanning previously, the overlap with rev has prevented exploration of the LLP-2 (Haddox et al., 2016; Haddox et al., 2018). Briefly, we used the NL4-3 rev-in-nef virus in which rev is moved to the non-essential, single-frame nef locus (Fernandes et al., 2016), and the endogenous rev locus is ablated, thus allowing the endogenous Env LLP-2 region and the rev-in-nef NES region to evolve independently from one another. We individually randomized each of the LLP-2 residues in the endogenous env locus, creating 10 Env libraries that each represent 64 alleles (every possible codon). Next, we infected SupT1 cells at low MOI (multiplicity of infection) with each library individually and measured the change in allele frequencies after approximately six generations of viral spread (Figure 3A). We then combined analyses of these libraries with previously generated deep mutational scanning data produced for the Rev NES from a rev-in-nef virus (Fernandes et al., 2016). These fitness landscapes (Figure 3B and C) represent the amino acid preference of each gene when the overlap is removed. We note that, as these DMS datasets were performed independently of one another and display different strengths of selection as demonstrated in the difference in stop codon fitness, comparisons between Rev and Env enrichment ratios require normalization. To this end we provide rescaled enrichment ratios as described in Gray et al., 2017, and plot both the standard enrichments and rescaled data (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic of the experiment. Non-overlapped viruses with rev inserted in the nef locus were created and the endogenous LLP-2 region randomized to NNN to create 10 independent libraries. These libraries were then arrayed and allowed to spread (~6 generations of viral spread) and next-generation sequencing was used to determine frequencies of each variant in a replication competition experiment and to calculate experimental fitness. (B) Fitness (blue = unfit, white = neutral, and gold = fit) for every allele in the region of the Env LLP-2 that overlaps the Rev NES. Row headers denote the reference sequence while column headers specify the allele. (C) Fitness for every allele in the region of the Rev NES that overlaps the Env LLP-2. Functionally important residues of Rev are labeled in red.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig3-figsupp1-v3.jpg)\n\nThe LLP-2 fitness landscape shows that while LLP-2 is generally highly mutable, it has a strong preference for a negatively charged side chain (D or E) at residue 773 (Figure 3B). Although the importance of positive charges in LLP-2 has been suggested previously (Kalia et al., 2003; Steckbeck et al., 2011), our experiment is the first to identify strong selection for a negative charge. The data also show strong selection against the \u2018helix-breaker\u2019 proline (Li et al., 1996) at all positions, further underscoring the importance of its helical structure. Stop codons are robustly selected against as well, demonstrating the importance of the cytoplasmic tail in HIV-1 replication. Additionally, L771, which is surrounded by two positively charged arginines, displays a strong preference against charged residues. The Rev NES fitness landscape is consistent with many mutational studies, showing selection for large hydrophobic side chains (ILV) at each Crm1 contacting residue. The patient isolates do not show such a striking preference (Figure 2B), perhaps reflecting constraints imposed by overlapping gene mutational paths (e.g. any transitional mutation from L to V would have to be fit in Rev and also in Env) or the existence of other in vivo pressures not captured in our experiments (e.g. immune or cell-type-specific responses). Unlike LLP-2, we do not observe selection against proline in the semi-helical Rev NES, consistent with the presence of prolines in its reference sequence.\n\n### Functional assays confirm the importance of Rev NES hydrophobic residues and LLP-2 charged residues\n\nTo confirm that our selection data reflect Rev functional requirements, we assayed individual alanine mutants at the nine NES residues in a p24 Rev-dependent RRE reporter assay (Smith et al., 1990). Mutation of any of the leucines (positions 75, 78, 81, and 83) or proline at position 76 resulted in loss of function (Figure 4A; high p24=active Rev), consistent with previous data of Crm1-binding residues (Figure 1C; Fornerod et al., 1997; G\u00fcttler et al., 2010; Booth et al., 2014; Jayaraman et al., 2019). Consistent with our selection data, mutation of the NES non-binding face had limited impact on Rev function.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig4-v3.jpg)\n\n**Figure 4.:** (A) Schematic of the Rev reporter assay and activities of individual NES alanine mutants. To monitor Rev export activity, an RRE-containing gag-pol reporter system that produces viral capsid (p24) in a Rev-dependent manner was used. Data are mean \u00b1 standard deviation (s.d.) of three biological replicates. Western blot shows expression levels of Strep-tagged Rev variants and GAPDH as loading controls. Functionally important residues of Rev are labeled in red. (B) Schematic of the Env reporter assay in the TZM-bL system and results with individual Env LLP-2 alanine mutants. Data are mean \u00b1 s.d. of three biological replicates. Western blots show Env incorporation (gp120 antibody) into pseudoviruses and p24 as loading controls. For these experiments, we ablated the env reading frame by mutating the start codon and introducing multiple downstream stop codons. Plasmids were co-transfected into 293T cells with each alanine mutant to generate Env pseudotyped viruses. The resulting virions were used to infect TZM-bL reporter cells which express the HIV-1 surface receptors CD4, CCR5, CXCR4, and produce luciferase under the control of the tat-dependent HIV-1 LTR (Sarzotti-Kelsoe et al., 2014). A functional Env protein permits binding and entry and expression of Tat and thus reflects the number of infectious viral particles in a single round of infection, but the integrated virus lacks the env gene and cannot initiate additional rounds of replication. Incorporation of Env mutants into virions was also measured by Western blot.\n\nTo confirm that our selection data reflect LLP-2 functional requirements, we measured the infectivity of virions generated from pseudotyped env-deficient viruses complemented with Env LLP-2 alanine mutants in trans. The D773A mutation produced the most drastic phenotype (15% of wild-type Env), consistent with our selection data (Figure 4B). Previous work noted the conservation of arginines within the LLPs (Kalia et al., 2005; Steckbeck et al., 2011) and our data confirms that the first arginine in LLP-2 (R770) is also important for Env function, in addition to D773.\n\n### Charged LLP-2 residues facilitate Env function in virus replication assays\n\nAs D773 in LLP-2 is clearly an important residue based on the selection and reporter data, we examined the effects of several substitutions at this position on viral replication. D773E, a conservative change predicted to maintain function based on our fitness data, showed ~50% of wild-type activity in the reporter assay, but substantially higher than the non-conservative D773A and D773N substitutions (Figure 5A). These results correlated well with the replication of rev-in-nef viruses engineered with the mutations (Figure 5A). It is interesting that D773A viruses still can replicate, albeit poorly, despite its very low activity; these results suggest that the virus can partially compensate for the loss of function, particularly when not competing with the wild-type sequence. The weakly active D773N allele is observed in ~2.6% of patient isolates (Figure 2B), further suggesting that the virus has alternative mechanisms to achieve the function normally performed by the negative charge at this position.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig5-v3.jpg)\n\n**Figure 5.:** (A) Left: Env functional assays as described in Figure 4 with different D773 mutations. Right: Viral replication kinetics in spreading assays using NL4-3 rev-in-nef proviral plasmids (Fernandes et al., 2016) engineered with Env D773 mutations. (B) Left: Env functional assays showing the role of three charged residues. Western blots show incorporation of Env mutants in virions (dark boxes represent a break in the lane loading presentation, with all samples loaded on a single gel). Right: Viral replication kinetics of viruses engineered with the mutations. R1D\u2192 AA is a double mutant with R770/D773 changed to alanine, R2D\u2192 AA is a double mutant with R772/D773 changed to alanine, and RRD\u2192 AAA a triple mutant R770/R772/D773 changed to alanine. (C) Left: Env functional assays showing effects of positive charge mutations with corresponding Western blots of Env incorporation in virions. Right: Viral replication kinetics of viruses engineered with the mutations. Replication assays are represented on a log scale. All data are mean \u00b1 standard deviation (s.d.) of biological triplicates.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig6-v3.jpg)\n\n**Figure 6.:** (A) Left: Env functional assays as described in Figure 4 when LLP-2 helical structure was disrupted by replacing 10 residues (767\u2013776) with alternating glycine/serine residues (10GS) to create a flexible region. Western blots show expression of Env mutants (dark boxes represent a break in the lane loading presentation, with all samples loaded on a single gel). Right: Viral replication kinetics of wild-type (WT), 10GS, and 10GS + D262 viruses. (B) Left: Env functional assays with charge mutants within a 10-alanine (10A) context designed to maintain a helical structure with corresponding Western blots of Env incorporation in virions. Right: Viral replication kinetics with helical structure mutant viruses. Data points in both panels are mean \u00b1 s.d. of biological triplicates. Replication assays are represented on a log scale.\n\nGiven the importance of D773 and the neighboring positively charged R770 and R772 (Figure 4B), we sought to establish the importance of charge and spacing along the LLP-2 helix, with the goal of understanding what evolutionary constraints \u2013 absent the overlap \u2013 affect this region. We generated two double mutants with D773/R770 or D773/R772 changed to alanine (R1D\u2192AA or R2D\u2192AA) as well as the triple mutant (RRD\u2192AAA) and found that mutation of R770 was particularly detrimental, in combination with D773 which is about one helical turn away (Figure 5B). Both of the double mutants showed significantly decreased virus replication (Figure 5B), again suggesting loss of function can be partially compensated in the viral context for the loss of function. The triple mutant was highly defective in both reporter and replication assays indicating the importance of these charged residues. Western blots of these virions indicated decreased Env protein stability for R1D.\n\nWe constructed a set of additional charged residue mutants, including H769 as well as substitutions with lysine, to determine if their contributions could be attributed solely to charge. The results show no functional phenotype for H769K mutant in both reporter and replication assays and RR\u2192KK outcomes confirm the importance of R770 and R773 (Figure 5C). While we did not examine the mutations of R770K and R773K independently out, deep mutational scanning of Env LLP-2 (Figure 3B) reveals selection against negative charged residues (D and E) and even K for both arginines, a bias is not observed in H769, suggesting that H769 is less constrained than the two arginines. It is interesting that substitution of both arginine with lysine is insufficient to maintain function or replication, and indeed the (RR\u2192KK) mutant showed the most severe replication defect. It is possible that lysine substitutions might serve as a target for host restriction factors (Zhang et al., 2021) or introduce ubiquitination sites leading to protein turnover. Regardless of the mechanism, the data suggest that these particular residues are subject to significant evolutionary constraints. The results are also consistent with analyses of the Env cytoplasmic tail, which has shown enrichment for arginine and depletion for lysine when compared to the rest of Env and all other proteins found in the Uniprot database (Steckbeck et al., 2011).\n\n### Helical requirement for LLP-2 function\n\nLLP-2 forms two helices (Murphy et al., 2017) and our deep mutational scanning data suggest strong selection against helix-breaking prolines, implying a structural constraint during evolution. To better understand the extent of this constraint, we replaced residues 767\u2013776 with glycines and serines (10GS) to create a flexible linker. As anticipated, the 10GS variant had no activity in the reporter assay and was unable to replicate even when D773 was reintroduced (Figure 6A). We next replaced residues 767\u2013776 with alanines (10A) which are often used to form rigid helical linkers (Chen et al., 2013). This 10A variant was similarly defective (Figure 6B). However, in this case, reintroducing important charged residues (R770 or D773 or the five-residue HRLRD segment) resulted in substantial restoration of activity and rescue of virus replication, particularly in the cases where D773 was present (Figure 6B). These data further confirm the importance of charge and helical structure in LLP-2 function (Kalia et al., 2005; Boscia et al., 2013; Steckbeck et al., 2014).\n\n### Functional segregation of residues in overlapping structured segments\n\nOur experiments establish the functional restrictions in Env LLP-2 without competing selection pressure from Rev, permitting us to map the constraints of each reading frame onto the nucleotide sequence of the virus (Figure 7). Specifically, our analysis showed that in Env, D773 has a strong preference for negative charge, R770 and R772 have an intermediate preference for arginine side chains, H769 has a weak preference for a positive charge, and L771 selects against charged side chains. When combined with the preferences of the Rev NES Crm1-binding residues (Fernandes et al., 2016), it is apparent that the functional surfaces of each domain are positioned so as to minimize negative consequences of the overlap. The non-binding face of the Rev NES largely corresponds to the charged surface of the Env LLP-2 and the hydrophobic surface of the LLP-2 corresponds to the binding residues of the Rev NES (Figure 7). The majority of overlaps between opposing critical residues mostly involve mutable wobble bases, with the sole exception being the Env H769/Rev P76 overlap. However, in this case Rev appears to be the major driver of evolution as mutation of P76 results in a severe loss of function whereas H769 appears to play a minor, supporting role in the function of the charged surface of LLP-2. Env L771 also overlaps Rev L78, but contributes relatively minor constraints at the nucleotide level, as its selection against polar residues, rather than for a particular side chain, permits multiple codons with high fitness in LLP-2.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig7-v3.jpg)\n\n**Figure 7.:** Functionally important residues of the Rev NES (red, CRM1-binding residues) and Env LLP-2 (green, charged residues) are highlighted in their respective structures (PDB: 3nc0 and PDB: 6ujv) and shown with the corresponding nucleotide sequence.\n\n### LLP-2/NES overlaps in other lentiviruses\n\nThe segregation of functional residues in LLP-2 and NES prompted us to examine the Env/Rev overlap among primate lentiviruses. The Env cytoplasmic tail is moderately conserved between HIV-1 clades and the extent of their sequence variation is similar in regions that do or do not overlap with Rev (Steckbeck et al., 2011). This observation is consistent with our finding of functional segregation, where the overlapping region essentially acts like two single reading frames. The four distinct HIV-1 lineage groups (M, N, O, P) share similarity with other primate lentiviruses that originated from two different simian immunodeficiency viruses (SIV) and all have overlapping LLP-2/NES regions (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/72482/elife-72482-fig8-v3.jpg)\n\n**Figure 8.:** Phylogenetic relationship of different primate lentiviruses, including four HIV-1 groups (M, N, O, P), SIVcpzPts (from eastern chimpazees), SIVgor (from gorillas), SIVcpzPtt (from central chimpanzees), HIV-2, SIVsmm (from sooty mangabeys), SIVmac (from macaques), and SIVrcm (from red-capped mangabey). Sequence logos showing conservation of the corresponding Rev NES and Env LLP-2 regions of each virus computed from their sequence alignments (extracted from 2018 curated amino acid alignments of HIV-1/SIVcpz, HIV-2/SIVsmm, and other SIV from the Los Alamos Database (hiv.lanl.org)). Positively charged residues (KRH) are indicated in blue and negatively charged residues (DE) in red. NES, nuclear export sequence.\n\nTo explore these regions in depth, we extracted Rev NES and Env LLP-2 sequences from curated amino acid alignments of HIV-1/SIVcpz, HIV-2/SIVsmm, and other SIVs in the Los Alamos Database (2018; hiv.lanl.org) and compared sequence logos for each virus (Crooks et al., 2004; Foley, 2013; Figure 8). The sequence alignment and number of sequences used for each sequence logo is provided in Supplementary file 1, Supplementary file 2. The hydrophobic Crm1-binding residues of the NES are highly conserved across different HIV-1, HIV-2, and SIVs (Figure 8) but the NESs can be broadly grouped into two categories: one contains the hydrophobic/proline arrangement observed in HIV-1 and the other contains HIV-2-like characteristics that preserve the spaced hydrophobic contacts but lack consecutive prolines and instead are glutamine-rich. LLP-2 is more varied and viruses fall into three groupings: (1) HIV-1 M, N, and SIVcpzPtt conserve the charge cluster dissected in our assays; (2) HIV-1 O, HIV-1 P, SIVgor, and SIVcpzPts have minimal charge; and (3) SIVmac, HIV-2, SIVsmm, and SIVrcm conserve R772 and occasionally D773. The high conservation of hydrophobic Crm1 contacts appears to dominate selection for the NES while maintaining sufficient sequence flexibility for LLP-2 to retain its structure. Indeed, the size of the Env cytoplasmic tail varies among different retroviruses (Tedbury and Freed, 2015), and the loss of the tail is commonly observed when SIV is propagated in human cells, suggesting that both host and viral determinants influence the function and variability of this region (Kodama et al., 1989; Shimizu et al., 1992; Shacklett et al., 2000).\n\n## Discussion\n\nWe previously found that overlapped genes (rev and tat) can segregate functionally important residues by having a disordered segment of one protein overlapped with an ordered segment of the other (Fernandes et al., 2016). The present study shows that residues can functionally segregate even when both overlapping segments are structured. We probed residues in the Env gp41 LLP-2 that overlap with the Rev NES and compared the limits to which this domain can tolerate mutation to the already well-established mutational limits of Rev (Jayaraman et al., 2019). Interestingly, we observed that critical residues in both proteins are located on one face of a helix such that they are spaced periodically in alternative reading frames (Figure 7). This arrangement is a consequence of the genetic code where the wobble bases of functionally critical codons in one reading frame can be chosen to accommodate critical residues in the alternative frame, while the first two codon bases overlap with more mutation-tolerant residues located on a non-binding surface of the overlapped protein (Figure 7). Specifically, the important hydrophobic residues of the Rev NES are oriented on one surface toward the Crm1-binding groove, with consecutive prolines altering the helical register compared to other Crm1 cargoes (Booth et al., 2014; Jayaraman et al., 2019). The non-binding face of the NES helix is highly mutable and capable of sampling nearly every amino acid with roughly equal fitness. These highly mutable residues correspond to nucleotides that encode critical charged residues on the functional surface of gp41 LLP-2 in the alternative frame. Correspondingly, residues on the non-charged face of the LLP-2 helix minimally constrain codon usage of important Rev NES contact residues.\n\nThe striking segregation of function we observe for Env LLP-2/Rev NES is made possible by the atypical proline-rich NES and partially redundant function of the LLP-2 positive charges. This manner of segregation in HIV-1 is not necessarily the case for similarly overlapped regions in other lentiviruses, which appear to have different functional requirements based on their sequence conservation (Figure 8). The findings are another indication of how efficiently HIV-1 makes use of its limited coding capacity.\n\nOur results show that Env D773 is under strong selective pressure although the precise function of this residue is not known. In addition to this negative charge, positive charges positioned on the same face of the helix are also important. Previous studies have suggested several possible functions for the LLP-2, including maintaining Env in a prefusogenic state (Lu et al., 2008; Postler and Desrosiers, 2013; Murphy et al., 2017), regulating viral assembly and egress (Snetkov et al., 2021), or mediating matrix-Env interactions (Alfadhli et al., 2019). The function of these charged residues in viral fusion or assembly remains to be determined.\n\nWe note that even in our model of functional segregation, two sites in Env overlapping portions of the Rev NES (Y768; overlapping Rev L75 and P76, and L771; overlapping Rev L78) do have mild amino acid preferences (Y768 for large hydrophobic/aromatic residues and L771 for non-polar residues). In our model, in which we weigh both the selection and reporter data together, we view these mild constraints as selection against disruptive interactions or sites which contribute (but are not essential to) overall protein stability. However, it is important to note that this assumption is based on data from a single genetic background and in other genomic contexts or selection backgrounds these mild selective pressures may in fact be more stringent (Canale et al., 2018).\n\nHIV-1 has evolved in an elegant manner to balance the functions of overlapped proteins, however the strategy may also expose a weakness whereby immune targeting of the LLP-2 could provide a fruitful therapeutic route. The LLP-2 is transiently surface exposed on the cell membrane during infection (Kalia et al., 2005; Lu et al., 2008; Murphy et al., 2017), and the cytoplasmic tail can modulate the antigenic properties of Env as a whole (Piai et al., 2020). Targeting of the LLP-2 surface with combinations of rationally designed immunotherapies may force the virus to mutate in ways that break the segregation between Env and Rev. Although our analysis of other lentiviruses suggests that HIV-1 might evolve other ways to establish Rev function under such pressure, it is likely that escape would still require multiple mutations and may be less likely in combination with other therapies. Deep mutational scanning has proven effective at mapping probable mutational escape pathways from immune pressures such as neutralizing antibodies (Starr et al., 2020; Greaney et al., 2021) and the Env cytoplasmic tail has proven to be a viable target in primate animal models Wang et al., 2020; for HIV-1 the combined knowledge of both functional constraints in the proteins and coding constraints in the genome may allow targeted immune therapies that drastically limit (or prevent altogether) escape mutations. Indeed, immune targeting of overlapped reading frames in in vivo models has been shown to drive predictable synonymous mutations in the alternative, non-targeted frame (Hughes et al., 2001). Similar approaches in this region of dual structure and function may provide a novel way of limiting HIV\u2019s otherwise unpredictable mutational escape patterns.\n\n## Materials and methods\n\n### Cells\n\nHEK 293 (obtained from ATCC) and TZM-bL cells (obtained from the NIH AIDS Reagent Program) were maintained in humidified incubators at 37\u00b0C and 5% CO2 in DMEM, high glucose (with 10% heat-inactivated fetal bovine serum [FBS], and 1% penicillin/streptomycin). SupT1 human T-cell lines (obtained from ATCC) were maintained in RPMI (supplemented with 25 mM HEPES pH 7.4, 10% heat-inactivated FBS, and 1% penicillin/streptomycin) at 37\u00b0C and 5% CO2. All cell lines had their identity confirmed by STR profiling at the UC Berkeley Cell Culture facility and tested negative for mycoplasma.\n\n### Plasmids\n\nDifferent mutants were constructed using primers (synthesized by IDT) harboring the appropriate mutations, and then used in a two-step PCR and inserted into pcDNA4/TO-2xStrep vector (described in Fernandes et al., 2016) by Gibson Assembly for testing in export assays. Viral mutants were created by the same strategy in pNL4-3 rev-in-nef construct (Fernandes et al., 2016).\n\n### Rev and Env reporter assays\n\nNine residues of Rev and 10 residues of Env, overlapping region of Rev NES and Env LLP-2, were mutated to alanine in independent site directed mutagenesis reactions in mammalian expression vectors. For the Rev reporter assays, 293T cells in a 24-well plate were transfected with 250 ng of pCMV gagPol-RRE and 25 ng of a pcDNA4/TO 2xStrep NL4-3 Rev using PolyJet (SignaGen) reagent. Cells were lysed in Tris-buffered saline containing 1% Triton X-100 and protease inhibitors, 48 hr after transfection, and intracellular p24 levels were measured by ELISA. The assay was performed in biological triplicate. For all mutants, activity was normalized to the unmutated reference activity. Rev expression levels were verified by Western blot using HRP-conjugated anti-StrepTagII antibody (IBA Biosciences) with GAPDH used as a loading control.\n\nFor Env reporter assays, the relative infectivity of Env pseudoviruses of LLP-2 mutants was measured in TZM-bl cells assay. To prepare HIV-1 Env pseudoviruses of LLP-2 mutants, 293T cells were co-transfected with pNL4-3 \u0394Env and an envelope expressing plasmid pcDNA4/TO Env. Pseudovirus containing culture supernatant was harvested 48 hr after transfection and concentrated by PEG purification (the final concentrations for PEG-6000 and NaCl were 8.5% (w/v) and 0.3 M, respectively) (Kutner et al., 2009). The infectivity of mutants was determined by infecting TZM-bl cells with p24-normalized pseudoviruses. Forty-eight hours post-infection, luciferase activity of the reporter gene was quantified using Bright-Glo luciferase reagent (Promega, Madison, WI). Experiments were done in biological triplicate and relative infectivity was normalized to the unmutated reference infectivity. The incorporation of Env LLP-2 mutants into the pseudovirus was measured by Western blot using gp120 antibody and p24 as loading control.\n\n### Viral replication assays\n\nNL4-3 rev-in-nef proviral constructs (Fernandes et al., 2016) were used to introduce mutations in the Rev NES or Env LLP-2 in non-overlapped contexts. For generation of each virus, HEK 293T cells in six-well plates were transfected with 1000 ng of NL4-3 proviral plasmid and complemented with reference Rev or Env using PolyJet (SignaGen) reagent at a 1:3 ratio of the DNA:Polyjet. Viral supernatants were harvested 48 hr after transfection, stored at \u221280\u00b0C, and then virus titer quantified by p24 capsid ELISA. One million SupT1 cells were incubated with 5 ng of p24 virus in 250 \u00b5l media containing 1 \u00b5g/ml PEI and 8 \u00b5g/ml polybrene and centrifuged 1200 g for 2 hr at 37\u00b0C. Input virus was removed and then washed cells with 250 \u00b5l of PBS. Cells were resuspended in 250 \u00b5l of media and placed in an incubator at 37\u00b0C, 5% CO2. Every 48\u201372 hr for 20 days, 100 \u00b5l of virus-containing supernatants were collected for quantification by p24 ELISA and added 100 \u00b5l of fresh media to cells. Viral p24 levels below 10 pg/ml are shown as 10 pg/ml in the plots.\n\n### Competitive deep mutational scanning analysis\n\nThe Rev NES fitness values were extracted from previous work (Fernandes et al., 2016). Env LLP-2 proviral libraries were created as described (Fernandes et al., 2016). Briefly, each of the 10 individual residues of Env LLP-2 that overlap with the Rev NES was randomized. For this purpose, this region was amplified using 10 separate pools of 33 nt primers containing NNN in the middle of the primer and using Gibson Assembly Master Mix (NEB) was cloned into pNL4-3 rev-in-nef after digesting by BamHI and XhoI. The proviral library of each residue was generated by scraping together at least 1000 colonies of each primer pool for plasmid purification. High codon diversity of each randomized proviral library (10 total) was confirmed by deep sequencing. Virus generation for each proviral plasmid library was done as described above in 293T cells. Selection assays were performed via spinoculation of one million SupT1 cells as above. The infections were examined by IFA for cellular HIV antigen synthesis and also by quantification of progeny virion release into supernatant using p24 ELISA. Once the infection reference or defective viral pools reach their peak, 150 \u00b5L of viral supernatant was collected and centrifuged to remove cells, and then RNA was extracted from virions by ZR-96 Viral RNA extraction kits (Zymo) and eluted in 15 \u00b5l water. cDNA was amplified from 5 \u00b5L of extracted RNA using the iScript Advanced (BioRad) cDNA synthesis. The selection experiment was performed in biological duplicate for each pool/residue. Samples were sequenced on an Illumina MiSeq with PE100 and demultiplexed on instrument. Raw fastqs were aligned to the reference sequence with bowtie2 and the flags --fast-local --rdg 100,3 --rfg 100,3. Codon and amino acid counts were generated via the countDMS program available on GitHub. These counts were then log2 normalized by fractions calculated from sequencing the input proviral plasmids to generate experimental fitness scores. The resulting fitness matrices were then processed and plotted using the ComplexHeatmap package in R.\n\n### Entropy\n\nEntropy values were calculated using hiv.lanl.gov \u2018Entropy One\u2019 tool and the 2018 filtered web alignments (amino acid) for Rev and Env, discounting ambiguous characters. The \u2018amino acid equivalents\u2019 setting was used to analyze chemically conservative changes with the addition that I, L, and V were all treated equivalently.\n\n### LLP-2/NES overlap in primate lentiviruses\n\nThe 2018 curated amino acid alignments of HIV-1/SIVcpz, HIV-2/SIVsmm, and other SIV were downloaded from the Los Alamos Database (hiv.lanl.org). The corresponding Rev NES and Env LLP-2 region of each virus was extracted and modified as needed in Geneious Prime v2019.1.1. The sequence conservation for each domain of each virus was generated using WebLogo3.\n\n### Data and code availability\n\nRequests for additional data or alternative formats should be addressed to the lead contacts. Sequencing data has been deposited in GEO: accession GSE179046; code is available on https://github.com/jferna10/EnvPaper, (copy archived at swh:1:rev:152ada7da67b08f3e04ac95b284e45999c90341c; Fernandas, 2021) All graphs were generated in Rstudio with associated files available on GitHub.\n",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "8ab8abd6-d362-4537-821a-631060cfeb9c",
+      "submission_id": "e02be97d-96b9-473d-a007-967e5619f56f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karla Kirkegaard, https://ror.org/00f54p054 Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72482.sa0](https://doi.org/10.7554/eLife.72482.sa0)\n\nFernandes et al., ask the question: \"What are the evolutionary constraints on genomic sequence that encode two different proteins?\" To this end, they compare the functional constraints on mutations in HIV Rev and Env, which are encoded in different reading frames from the same region of the viral genome. Interestingly, residues that are functionally constrained in one protein are, for the most part, not as constrained in the other. The elegance of this solution is attractive and will be of interest to the protein evolution and structure communities.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karla Kirkegaard, https://ror.org/00f54p054 Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72482.sa1](https://doi.org/10.7554/eLife.72482.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Functional and Structural Segregation of Overlapping Helices in HIV-1\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Marie-Louise Hammarskj\u00f6ld (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Please see the two points in the Public Review.\n\n2. The weak selection against stop codons for HIV Rev (Figure 3C) suggests that selection was weaker in that experiment. Because the authors compare the Env and Rev DMS datasets, they should provide rescaled data (potentially as a figure supplement), as described in Haddox et al., 2018.\n\n3. The authors should clarify how many patient sequences were compared and whether isolates from all HIV-1 subtypes were included. It would be of interest to see a comparison between subtypes in the analysis.\n\n4. To better support the statement that amino acid preferences are different in patients than in the deep mutational scan (page 9), the authors should calculate an entropy score from the DMS data and plot it against the patient entropy scores.\n",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dab41d6f-b70d-4525-b059-ea1270bf14d7",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C1",
+      "claim": "HIV-1 contains nine genes encoded within a genome of approximately 10,000 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 contains nine genes encoded within a relatively short genome of 10,000 nucleotides (Frankel and Young, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Frankel and Young, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "e81cae91-32ac-4091-b252-a1238bffd10a",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C2",
+      "claim": "Eight of the nine HIV-1 genes overlap with another gene on the DNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight of these nine genes overlap with another on the DNA level and consequently encode protein products in different reading frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established fact in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "96a22f7f-d5f5-4d3b-8b6d-8883ec9d3b1a",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C3",
+      "claim": "HIV-1 Env overlaps with Vpu, Rev, and Tat genes.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 Env overlaps with Vpu, Rev, and Tat, and some parts of Env overlap with both Rev and Tat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established fact in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "5b12f2fd-1f38-4204-be35-2605974e00b4",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C4",
+      "claim": "Many immune epitopes targeting canonical and non-canonical overlapping ORFs have been identified in SARS-CoV-2 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "the SARS-CoV-2 pandemic has demonstrated the importance of identifying and studying overlapping reading frames, as many immune epitopes targeting canonical and non-canonical overlapping ORFs (open reading frames) have been identified in patients (Nelson et al., 2020; Weingarten-Gabbay et al., 2020;; Finkel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nelson et al., 2020; Weingarten-Gabbay et al., 2020; Finkel et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "839a27ef-65ab-4236-853c-0f280c35f486",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C5",
+      "claim": "In HIV-1 tat and rev genes, critical functional residues do not overlap with one another.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that, in the case of the essential regulatory genes tat and rev, HIV-1 dedicates the nucleotide sequence to one protein or the other so that critical functional residues do not overlap with one another (Fernandes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by Fernandes et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "49550c7e-56e4-40d2-bdf4-0b48b5a5eaeb",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C6",
+      "claim": "For tat and rev, functional motifs of one protein can be encoded in regions that overlap with disordered linkers in the other.",
+      "claim_type": "EXPLICIT",
+      "source": "For tat and rev, this arrangement is possible because both proteins consist of functional motifs spaced by disordered linkers, and thus functional motifs of one protein can be encoded in regions that overlap with disordered linkers in the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical explanation based on structural properties of the proteins",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "ae5e2c3a-1626-424c-a7cc-e5a7767119f6",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C7",
+      "claim": "The vast majority of overlapped proteins are predicted to be disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the vast majority of overlapped proteins are predicted to be disordered (Rancurel et al., 2009) and thus have the potential for this arrangement, it is possible that some overlapped regions have more stringent structure and function requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rancurel et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "9eaac306-d42a-40ab-bd69-e97b4d8a7d0b",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C8",
+      "claim": "HIV-1 contains an overlapping region between Rev and Env genes in which both protein segments are structured and functionally important.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, HIV-1 contains an intriguing overlapping region, between the Rev and Env genes (Figure 1A), in which both protein segments are structured and functionally important.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and illustrated in Figure 1A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "3b9b9636-376f-4d00-b956-cbb546308dd5",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C9",
+      "claim": "Rev is required for the nuclear export of partially spliced and un-spliced viral RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Rev is required for the nuclear export of partially spliced and un-spliced viral RNAs that encode necessary late stage viral proteins as well as the genomic RNA for encapsidation (Malim and Cullen, 1991; Pollard and Malim, 1998; Rausch and Le Grice, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Malim and Cullen, 1991; Pollard and Malim, 1998; Rausch and Le Grice, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "78458db7-79d1-45d2-8e6c-a9eef9ffe061",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C10",
+      "claim": "Rev contains a quasi-helical nuclear export sequence (NES) that binds to the NES-binding groove of Crm1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Rev contains a quasi-helical nuclear export sequence (NES), that binds to the NES-binding groove of the host nuclear export factor Crm1 (Fornerod et al., 1997; Booth et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fornerod et al., 1997; Booth et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "42946610-6ba2-46c5-bca6-85b9e6c701a8",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C11",
+      "claim": "Env is expressed as a polyprotein composed of gp120 surface and gp41 transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Env is expressed as a polyprotein, composed of the gp120 surface and gp41 transmembrane proteins, which forms a trimeric viral envelope that mediates viral particle binding to cell entry receptors (Checkley et al., 2011; Murphy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Checkley et al., 2011; Murphy et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "601b3e29-8f5a-443f-aaa6-5840d45432c3",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C12",
+      "claim": "The cytoplasmic tail of gp41 is highly variable in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoplasmic tail of gp41 is the most C-terminal portion of Env and is highly variable in size (Tedbury and Freed, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tedbury and Freed, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "c5286575-9367-426a-b0ab-b2b258c792c5",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C13",
+      "claim": "Lentiviruses such as HIV-1 have an extended cytoplasmic tail containing the Kennedy epitope (KE) followed by three lentiviral lytic peptide motifs (LLP-1, LLP-2, and LLP-3).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other retroviruses, lentiviruses such as HIV-1 have an extended cytoplasmic tail containing the Kennedy epitope (KE) followed by three membrane associated lentiviral lytic peptide motifs (LLP-1, LLP-2, and LLP-3) (Steckbeck et al., 2013; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Steckbeck et al., 2013 and illustrated in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "06d25f3c-c18b-4475-8cd1-7d10fd3cd7b4",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C14",
+      "claim": "HIV-1 LLP-1 and LLP-2 contain highly conserved arginine and lysine residues involved in cation-\u03c0 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 LLP-1, and LLP-2 contain highly conserved arginine and lysine residues that are involved in cation-\u03c0 interactions and have been suggested to stabilize the cytoplasmic tail \u03b1-helical structure (Murphy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Murphy et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "6c723915-a7a9-46dc-87c0-0bcca8f2b261",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C15",
+      "claim": "LLPs are amphipathic \u03b1 helices that embed in virus membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "LLPs are amphipathic \u03b1 helices that embed in the virus membranes (Kalia et al., 2003; Steckbeck et al., 2011; Murphy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kalia et al., 2003; Steckbeck et al., 2011; Murphy et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "664c471a-6934-4eea-9adb-1d9f4cb907cc",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C16",
+      "claim": "LLP-2 may be transiently exposed on the virus surface to interact with the gp41 core and regulate virus-cell membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "LLP-2 may be transiently exposed on the virus surface to interact with the gp41 core and regulate virus-cell membrane fusion (Lu et al., 2008; Murphy et al., 2017; Piai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lu et al., 2008; Murphy et al., 2017; Piai et al., 2020",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "3413bdd5-42ab-442c-bf67-fab1d5a145cf",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C17",
+      "claim": "LLP-2 forms two amphipathic helices that wrap around the transmembrane domain of Env, forming a 'baseplate' that supports the transmembrane domain and the rest of the Env trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent nuclear magnetic resonance spectroscopy study revealed that LLP-2 forms two amphipathic helices that wrap around the transmembrane domain of Env, arranging a 'baseplate' that supports the transmembrane domain and the rest of the Env trimer (Piai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Piai et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "c44bc4f2-fbaa-4b15-be1d-d08f75c78c36",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C18",
+      "claim": "The C-terminal tail of Env makes critical contacts with the matrix protein to facilitate Env incorporation into virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional evidence suggests that the C-terminal tail makes critical contacts with the matrix protein (Alfadhli et al., 2019) to facilitate Env incorporation into virions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alfadhli et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "d26fd780-a9a3-4342-92b0-66aae2eed49c",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C19",
+      "claim": "The Rev NES (residues 75\u201383) and a portion of the Env LLP-2 are encoded by the same nucleotides in the viral genome, with Env encoded in the +1 reading frame relative to Rev.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rev NES and a portion of the Env LLP-2 are encoded by the same nucleotides in the viral genome, with Env encoded in the +1 reading frame relative to Rev (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and illustrated in Figure 1A",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "b086bdb5-b826-4f55-bb0b-ba6fee39f169",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C20",
+      "claim": "The Rev NES binds to Crm1 using several critical hydrophobic residues and non-canonical prolines that change the helical register.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rev NES (residues 75\u201383) binds to Crm1 using several critical hydrophobic residues and non-canonical prolines that change the helical register and position hydrophobic side chains on one face of the helix to fit within the NES recognition groove (Dong et al., 2009; G\u00fcttler et al., 2010; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Dong et al., 2009; G\u00fcttler et al., 2010 and illustrated in Figure 1B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "5468f9ce-2b0e-446e-81c5-40e54691689d",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C21",
+      "claim": "The Env LLP-2 forms an amphipathic helix of about 33 amino acids long spanning residues 767\u2013788 of Env.",
+      "claim_type": "EXPLICIT",
+      "source": "The Env LLP-2 forms an amphipathic helix of about 33 amino acids long (Eisenberg and Wesson, 1990; Kalia et al., 2003; Murphy et al., 2017) that spans residues 767\u2013788 of Env (242\u2013274 of gp41) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Eisenberg and Wesson, 1990; Kalia et al., 2003; Murphy et al., 2017 and illustrated in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "2fcdfd36-447f-4479-9cff-ccd917f4c22b",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C22",
+      "claim": "Nine of the LLP-2 residues (767\u2013776) overlap with the quasi-helical Rev NES.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine of the LLP-2 residues (767\u2013776) overlap with the quasi-helical Rev NES (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and illustrated in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "a5150dfe-4686-4f4e-b338-fd279dbf4e76",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C23",
+      "claim": "Mutating charged residues within LLP-2 or hydrophobic residues in the Rev NES negatively impacts viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating charged residues within LLP-2 or hydrophobic residues in the Rev NES negatively impacts viral replication (Kalia et al., 2003; Newman et al., 2007; G\u00fcttler et al., 2010; Fernandes et al., 2016), prompting us to examine in detail the selective forces that guide the evolution of this overlapping region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kalia et al., 2003; Newman et al., 2007; G\u00fcttler et al., 2010; Fernandes et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "fbcbaa89-0d69-4336-a084-bb8b2b53b2cf",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C24",
+      "claim": "The site containing H769 in Env and P76 in Rev is relatively well conserved in both proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the one site that contributes to both functional surfaces (H769 in Env and P76 in Rev) is relatively well conserved in both proteins whereas the one site that contributes to neither interface (L755 in Env and T82 in Rev) is weakly conserved (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on entropy analysis shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "b2216572-d47f-4241-832f-805c4d675ed0",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C25",
+      "claim": "The site containing L755 in Env and T82 in Rev is weakly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the one site that contributes to both functional surfaces (H769 in Env and P76 in Rev) is relatively well conserved in both proteins whereas the one site that contributes to neither interface (L755 in Env and T82 in Rev) is weakly conserved (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on entropy analysis shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "832e074e-5cad-4155-8e9d-e81cb14d6afd",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C26",
+      "claim": "Two known essential Crm1-binding residues (L78 and L83) displayed low conservation (high entropy) in the Rev reading frame, but chemically conservative isoleucine substitutions are frequently found.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, two known essential Crm1-binding residues (L78 and L83) displayed low conservation (high entropy) in the Rev reading frame, but the consensus sequence (Figure 2B) indicates that chemically conservative isoleucine substitutions are frequently found, thus explaining the high entropy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on entropy analysis and sequence logos shown in Figure 2A and 2B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "2be01816-3aa4-4a23-b781-2687af517450",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C27",
+      "claim": "Entropy analysis using a reduced amino acid alphabet in which chemically similar amino acids I/L/V are grouped produced low entropy values for all Crm1-binding residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, entropy analysis using a reduced amino acid alphabet in which the chemically similar amino acids I/L/V are grouped produced low entropy values for all Crm1-binding residues (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on reduced alphabet entropy analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "4fa2922b-060f-4b56-acc3-12448fe70f96",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C28",
+      "claim": "The use of chemically conservative side chains to form critical contacts drastically increases the number of 'synonymous' codons.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of chemically conservative side chains to form critical contacts drastically increases the number of 'synonymous' codons (e.g. the six leucine codons can substitute with the three isoleucine codons with essentially equal fitness) and may reflect the kinds of interaction motifs that are most suited to evolve in constrained overlapping regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the observation of chemically conservative substitutions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "0ce4ba33-680e-406c-a366-b7edc7dc9be9",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C29",
+      "claim": "Three charged residues in LLP-2 were relatively strongly conserved but showed lower conservation than the Rev NES-binding residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The three charged residues (Figure 2C; green dots) in LLP-2 were relatively strongly conserved (Figure 2B) but showed lower conservation (high entropy) than the Rev NES-binding residues, suggesting that Rev may more greatly influence the selection of amino acids in the overlapping region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on entropy analysis shown in Figure 2B and 2C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "446d6dc7-f201-42b4-bd27-228ddd87f382",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C30",
+      "claim": "The LLP-2 fitness landscape shows that LLP-2 is generally highly mutable but has a strong preference for a negatively charged side chain (D or E) at residue 773.",
+      "claim_type": "EXPLICIT",
+      "source": "The LLP-2 fitness landscape shows that while LLP-2 is generally highly mutable, it has a strong preference for a negatively charged side chain (D or E) at residue 773 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on deep mutational scanning data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "5a8670a7-629f-4e37-b9a5-07848183f841",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C31",
+      "claim": "The LLP-2 fitness landscape shows strong selection against the 'helix-breaker' proline at all positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The data also show strong selection against the 'helix-breaker' proline (Li et al., 1996) at all positions, further underscoring the importance of its helical structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning data and citation to Li et al., 1996",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "21c1f66d-d1bf-402c-9bbd-640e65ae5e01",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C32",
+      "claim": "Stop codons in LLP-2 are robustly selected against, demonstrating the importance of the cytoplasmic tail in HIV-1 replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Stop codons are robustly selected against as well, demonstrating the importance of the cytoplasmic tail in HIV-1 replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "918d7bdc-e61b-4584-b525-0090b544ed21",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C33",
+      "claim": "L771 in LLP-2 displays a strong preference against charged residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, L771, which is surrounded by two positively charged arginines, displays a strong preference against charged residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "6df16db4-b7de-4b78-aad8-0af977d07188",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C34",
+      "claim": "The Rev NES fitness landscape shows selection for large hydrophobic side chains (ILV) at each Crm1 contacting residue.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rev NES fitness landscape is consistent with many mutational studies, showing selection for large hydrophobic side chains (ILV) at each Crm1 contacting residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "68b1fc85-ad7d-4663-84ad-f872e7cea306",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C35",
+      "claim": "Unlike LLP-2, there is no selection against proline in the semi-helical Rev NES, consistent with the presence of prolines in its reference sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike LLP-2, we do not observe selection against proline in the semi-helical Rev NES, consistent with the presence of prolines in its reference sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "b0727be2-af97-4a68-a5b0-186d3eeeb962",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C36",
+      "claim": "Mutation of any of the leucines (positions 75, 78, 81, and 83) or proline at position 76 in the Rev NES resulted in loss of function.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of any of the leucines (positions 75, 78, 81, and 83) or proline at position 76 resulted in loss of function (Figure 4A; high p24=active Rev), consistent with previous data of Crm1-binding residues (Figure 1C; Fornerod et al., 1997; G\u00fcttler et al., 2010; Booth et al., 2014; Jayaraman et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Rev reporter assay data shown in Figure 4A and supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "1214ac7c-2778-4185-8c7a-bb593d23cabf",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C37",
+      "claim": "Mutation of the NES non-binding face had limited impact on Rev function.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our selection data, mutation of the NES non-binding face had limited impact on Rev function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Rev reporter assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "2249101e-238e-4383-acac-ab3d928d60fc",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C38",
+      "claim": "The D773A mutation in Env LLP-2 produced the most drastic phenotype (15% of wild-type Env).",
+      "claim_type": "EXPLICIT",
+      "source": "The D773A mutation produced the most drastic phenotype (15% of wild-type Env), consistent with our selection data (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Env reporter assay data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "00789fd4-3eba-4f35-8ed4-2f3aebfd551b",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C39",
+      "claim": "The first arginine in LLP-2 (R770) is important for Env function.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work noted the conservation of arginines within the LLPs (Kalia et al., 2005; Steckbeck et al., 2011) and our data confirms that the first arginine in LLP-2 (R770) is also important for Env function, in addition to D773.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Env reporter assay data and supported by citations to Kalia et al., 2005; Steckbeck et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "83d4caaf-1c3b-474e-8d12-b0699777b244",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C40",
+      "claim": "D773E, a conservative change, showed ~50% of wild-type activity in the reporter assay.",
+      "claim_type": "EXPLICIT",
+      "source": "D773E, a conservative change predicted to maintain function based on our fitness data, showed ~50% of wild-type activity in the reporter assay, but substantially higher than the non-conservative D773A and D773N substitutions (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Env reporter assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "42f2cdff-af39-40e2-9b9d-165cfb88ebac",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C41",
+      "claim": "D773A viruses can replicate, albeit poorly, despite very low activity in reporter assays.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that D773A viruses still can replicate, albeit poorly, despite its very low activity; these results suggest that the virus can partially compensate for the loss of function, particularly when not competing with the wild-type sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on viral replication assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "c9491898-24f9-4e6d-a0c8-f691ed13a19c",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C42",
+      "claim": "The weakly active D773N allele is observed in ~2.6% of patient isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The weakly active D773N allele is observed in ~2.6% of patient isolates (Figure 2B), further suggesting that the virus has alternative mechanisms to achieve the function normally performed by the negative charge at this position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on patient sequence data shown in Figure 2B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "222d911d-2a4f-4fe7-b75f-61db6ccd77ca",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C43",
+      "claim": "Mutation of R770 was particularly detrimental in combination with D773.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated two double mutants with D773/R770 or D773/R772 changed to alanine (R1D\u2192AA or R2D\u2192AA) as well as the triple mutant (RRD\u2192AAA) and found that mutation of R770 was particularly detrimental, in combination with D773 which is about one helical turn away (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Env reporter assay and viral replication data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "ad6fbb8e-7630-4e95-a33c-84054441e1b0",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C44",
+      "claim": "Both double mutants (R1D\u2192AA and R2D\u2192AA) showed significantly decreased virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of the double mutants showed significantly decreased virus replication (Figure 5B), again suggesting loss of function can be partially compensated in the viral context for the loss of function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on viral replication data shown in Figure 5B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "69bc7c7a-b95b-48ad-aca5-c0c64fe9dd56",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C45",
+      "claim": "The triple mutant (RRD\u2192AAA) was highly defective in both reporter and replication assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The triple mutant was highly defective in both reporter and replication assays indicating the importance of these charged residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Env reporter assay and viral replication data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "ec30f17b-d67f-4b2e-aa98-3a408bbfc2f7",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C46",
+      "claim": "Western blots of R1D mutant virions indicated decreased Env protein stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blots of these virions indicated decreased Env protein stability for R1D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Western blot data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "0fe9eee4-4b5c-4628-9b82-ae8eb1f55bb1",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C47",
+      "claim": "The H769K mutant showed no functional phenotype in both reporter and replication assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show no functional phenotype for H769K mutant in both reporter and replication assays and RR\u2192KK outcomes confirm the importance of R770 and R773 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Env reporter assay and viral replication data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "51893f34-0f49-4fb5-a815-06523cdd5f22",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C48",
+      "claim": "Deep mutational scanning of Env LLP-2 reveals selection against negative charged residues (D and E) and even K for both R770 and R772.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not examine the mutations of R770K and R773K independently out, deep mutational scanning of Env LLP-2 (Figure 3B) reveals selection against negative charged residues (D and E) and even K for both arginines, a bias is not observed in H769, suggesting that H769 is less constrained than the two arginines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on deep mutational scanning data shown in Figure 3B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "d8c55f25-2a34-472b-b76c-cc64d8059ffb",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C49",
+      "claim": "Substitution of both arginines with lysine (RR\u2192KK) is insufficient to maintain function or replication.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that substitution of both arginine with lysine is insufficient to maintain function or replication, and indeed the (RR\u2192KK) mutant showed the most severe replication defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Env reporter assay and viral replication data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "59d36823-d07d-4f81-91c7-e86f13168b40",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C50",
+      "claim": "The Env cytoplasmic tail shows enrichment for arginine and depletion for lysine when compared to the rest of Env and all other proteins in the Uniprot database.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the mechanism, the data suggest that these particular residues are subject to significant evolutionary constraints. The results are also consistent with analyses of the Env cytoplasmic tail, which has shown enrichment for arginine and depletion for lysine when compared to the rest of Env and all other proteins found in the Uniprot database (Steckbeck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Steckbeck et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "424b9b86-b254-4015-86cc-7f8a4361705c",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C51",
+      "claim": "LLP-2 forms two helices.",
+      "claim_type": "EXPLICIT",
+      "source": "LLP-2 forms two helices (Murphy et al., 2017) and our deep mutational scanning data suggest strong selection against helix-breaking prolines, implying a structural constraint during evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Murphy et al., 2017 and deep mutational scanning data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "9b265915-81b8-4ac6-bf72-10e544bf26c9",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C52",
+      "claim": "The 10GS variant (residues 767\u2013776 replaced with glycines and serines) had no activity in the reporter assay and was unable to replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "To better understand the extent of this constraint, we replaced residues 767\u2013776 with glycines and serines (10GS) to create a flexible linker. As anticipated, the 10GS variant had no activity in the reporter assay and was unable to replicate even when D773 was reintroduced (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Env reporter assay and viral replication data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "656c78af-cead-40f4-b5a0-2fba096e612e",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C53",
+      "claim": "The 10A variant (residues 767\u2013776 replaced with alanines) was defective.",
+      "claim_type": "EXPLICIT",
+      "source": "We next replaced residues 767\u2013776 with alanines (10A) which are often used to form rigid helical linkers (Chen et al., 2013). This 10A variant was similarly defective (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Env reporter assay data shown in Figure 6B and citation to Chen et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "4d873a05-d737-4f16-833b-5b09a9b4e406",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C54",
+      "claim": "Reintroducing important charged residues (R770 or D773 or the five-residue HRLRD segment) into the 10A variant resulted in substantial restoration of activity and rescue of virus replication, particularly when D773 was present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this case, reintroducing important charged residues (R770 or D773 or the five-residue HRLRD segment) resulted in substantial restoration of activity and rescue of virus replication, particularly in the cases where D773 was present (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Env reporter assay and viral replication data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "e7ad1d12-f26a-46b8-b676-53da8ea82f40",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C55",
+      "claim": "The functional surfaces of Rev NES and Env LLP-2 are positioned to minimize negative consequences of the overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our analysis showed that in Env, D773 has a strong preference for negative charge, R770 and R772 have an intermediate preference for arginine side chains, H769 has a weak preference for a positive charge, and L771 selects against charged side chains. When combined with the preferences of the Rev NES Crm1-binding residues (Fernandes et al., 2016), it is apparent that the functional surfaces of each domain are positioned so as to minimize negative consequences of the overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of deep mutational scanning data and previous work",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "a24076fd-dbb5-4cfb-b7e4-d893a1b49e5b",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C56",
+      "claim": "The non-binding face of the Rev NES largely corresponds to the charged surface of the Env LLP-2 and the hydrophobic surface of the LLP-2 corresponds to the binding residues of the Rev NES.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-binding face of the Rev NES largely corresponds to the charged surface of the Env LLP-2 and the hydrophobic surface of the LLP-2 corresponds to the binding residues of the Rev NES (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural analysis shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "6e6f121b-515f-4914-bd6a-f304ab797fb4",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C57",
+      "claim": "The majority of overlaps between opposing critical residues mostly involve mutable wobble bases, with the sole exception being the Env H769/Rev P76 overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of overlaps between opposing critical residues mostly involve mutable wobble bases, with the sole exception being the Env H769/Rev P76 overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of nucleotide sequence and functional constraints",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "e4cdd2f6-4641-44f1-b26f-8164aac1cffa",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C58",
+      "claim": "Rev appears to be the major driver of evolution at the H769/P76 overlap as mutation of P76 results in severe loss of function whereas H769 appears to play a minor, supporting role.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this case Rev appears to be the major driver of evolution as mutation of P76 results in a severe loss of function whereas H769 appears to play a minor, supporting role in the function of the charged surface of LLP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on functional assay data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "eef41c94-fff4-423e-9a88-4c56837045d1",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C59",
+      "claim": "Env L771 overlaps Rev L78 but contributes relatively minor constraints at the nucleotide level, as its selection against polar residues permits multiple codons with high fitness in LLP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Env L771 also overlaps Rev L78, but contributes relatively minor constraints at the nucleotide level, as its selection against polar residues, rather than for a particular side chain, permits multiple codons with high fitness in LLP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning data and analysis of codon constraints",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "2d1c18a6-0c10-41b1-8035-a95c449c8890",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C60",
+      "claim": "The Env cytoplasmic tail is moderately conserved between HIV-1 clades and the extent of sequence variation is similar in regions that do or do not overlap with Rev.",
+      "claim_type": "EXPLICIT",
+      "source": "The Env cytoplasmic tail is moderately conserved between HIV-1 clades and the extent of their sequence variation is similar in regions that do or do not overlap with Rev (Steckbeck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Steckbeck et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "55341326-bf26-476b-b04a-afa3140b9565",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C61",
+      "claim": "The four distinct HIV-1 lineage groups (M, N, O, P) share similarity with other primate lentiviruses that originated from two different simian immunodeficiency viruses (SIV) and all have overlapping LLP-2/NES regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The four distinct HIV-1 lineage groups (M, N, O, P) share similarity with other primate lentiviruses that originated from two different simian immunodeficiency viruses (SIV) and all have overlapping LLP-2/NES regions (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and illustrated in Figure 8",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "9d1c42cd-466f-4fec-8368-8bb423631095",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C62",
+      "claim": "The hydrophobic Crm1-binding residues of the NES are highly conserved across different HIV-1, HIV-2, and SIVs.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrophobic Crm1-binding residues of the NES are highly conserved across different HIV-1, HIV-2, and SIVs (Figure 8) but the NESs can be broadly grouped into two categories: one contains the hydrophobic/proline arrangement observed in HIV-1 and the other contains HIV-2-like characteristics that preserve the spaced hydrophobic contacts but lack consecutive prolines and instead are glutamine-rich.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on sequence logo analysis shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "6a9210e4-9812-425d-abc9-a7c71e7b1a65",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C63",
+      "claim": "LLP-2 sequences in primate lentiviruses fall into three groupings: (1) HIV-1 M, N, and SIVcpzPtt conserve the charge cluster; (2) HIV-1 O, HIV-1 P, SIVgor, and SIVcpzPts have minimal charge; and (3) SIVmac, HIV-2, SIVsmm, and SIVrcm conserve R772 and occasionally D773.",
+      "claim_type": "EXPLICIT",
+      "source": "LLP-2 is more varied and viruses fall into three groupings: (1) HIV-1 M, N, and SIVcpzPtt conserve the charge cluster dissected in our assays; (2) HIV-1 O, HIV-1 P, SIVgor, and SIVcpzPts have minimal charge; and (3) SIVmac, HIV-2, SIVsmm, and SIVrcm conserve R772 and occasionally D773.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence logo analysis shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "ad7b1be1-5112-4488-b032-632036351246",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C64",
+      "claim": "The high conservation of hydrophobic Crm1 contacts appears to dominate selection for the NES while maintaining sufficient sequence flexibility for LLP-2 to retain its structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The high conservation of hydrophobic Crm1 contacts appears to dominate selection for the NES while maintaining sufficient sequence flexibility for LLP-2 to retain its structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative sequence analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "992f716c-6221-4907-b1f2-fec5ada131fe",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C65",
+      "claim": "The size of the Env cytoplasmic tail varies among different retroviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the size of the Env cytoplasmic tail varies among different retroviruses (Tedbury and Freed, 2015), and the loss of the tail is commonly observed when SIV is propagated in human cells, suggesting that both host and viral determinants influence the function and variability of this region (Kodama et al., 1989; Shimizu et al., 1992; Shacklett et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tedbury and Freed, 2015; Kodama et al., 1989; Shimizu et al., 1992; Shacklett et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "c55ec067-8ba1-4269-bda8-a02b19d05bf0",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C66",
+      "claim": "Loss of the Env cytoplasmic tail is commonly observed when SIV is propagated in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the size of the Env cytoplasmic tail varies among different retroviruses (Tedbury and Freed, 2015), and the loss of the tail is commonly observed when SIV is propagated in human cells, suggesting that both host and viral determinants influence the function and variability of this region (Kodama et al., 1989; Shimizu et al., 1992; Shacklett et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kodama et al., 1989; Shimizu et al., 1992; Shacklett et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "f10fe3ec-d1f5-4071-9b34-ea45feb8581d",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C67",
+      "claim": "Residues can functionally segregate even when both overlapping segments are structured.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study shows that residues can functionally segregate even when both overlapping segments are structured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "213abe4d-abe2-4d21-b3a5-c8d81e59f224",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C68",
+      "claim": "Critical residues in both Rev and Env proteins are located on one face of a helix such that they are spaced periodically in alternative reading frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that critical residues in both proteins are located on one face of a helix such that they are spaced periodically in alternative reading frames (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural and functional analysis shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "89b96913-7511-4b9e-a057-59aa4133e06f",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C69",
+      "claim": "The wobble bases of functionally critical codons in one reading frame can be chosen to accommodate critical residues in the alternative frame, while the first two codon bases overlap with more mutation-tolerant residues located on a non-binding surface of the overlapped protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement is a consequence of the genetic code where the wobble bases of functionally critical codons in one reading frame can be chosen to accommodate critical residues in the alternative frame, while the first two codon bases overlap with more mutation-tolerant residues located on a non-binding surface of the overlapped protein (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of genetic code constraints and functional data shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "2d07f89a-4be9-4f41-aeb4-94e50540d7ff",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C70",
+      "claim": "The non-binding face of the Rev NES helix is highly mutable and capable of sampling nearly every amino acid with roughly equal fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-binding face of the NES helix is highly mutable and capable of sampling nearly every amino acid with roughly equal fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "16dfc16a-0df5-4632-9135-959e4d74e662",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C71",
+      "claim": "The striking segregation of function observed for Env LLP-2/Rev NES is made possible by the atypical proline-rich NES and partially redundant function of the LLP-2 positive charges.",
+      "claim_type": "EXPLICIT",
+      "source": "The striking segregation of function we observe for Env LLP-2/Rev NES is made possible by the atypical proline-rich NES and partially redundant function of the LLP-2 positive charges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of structural and functional data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "69a6e762-c7bf-4800-a3e2-6049586f2284",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C72",
+      "claim": "The manner of functional segregation in HIV-1 is not necessarily the case for similarly overlapped regions in other lentiviruses, which appear to have different functional requirements based on their sequence conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "This manner of segregation in HIV-1 is not necessarily the case for similarly overlapped regions in other lentiviruses, which appear to have different functional requirements based on their sequence conservation (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparative sequence analysis shown in Figure 8",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "2de77001-540d-460d-ac16-89513a43f73b",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C73",
+      "claim": "Env D773 is under strong selective pressure although the precise function of this residue is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Env D773 is under strong selective pressure although the precise function of this residue is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning and functional assay data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "21132716-fc1a-4dc4-86c0-317b5d0f265a",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C74",
+      "claim": "The LLP-2 is transiently surface exposed on the cell membrane during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The LLP-2 is transiently surface exposed on the cell membrane during infection (Kalia et al., 2005; Lu et al., 2008; Murphy et al., 2017), and the cytoplasmic tail can modulate the antigenic properties of Env as a whole (Piai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kalia et al., 2005; Lu et al., 2008; Murphy et al., 2017; Piai et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "ef325520-fd60-4504-8957-e6b979d02c81",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C75",
+      "claim": "The cytoplasmic tail of Env can modulate the antigenic properties of Env as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "The LLP-2 is transiently surface exposed on the cell membrane during infection (Kalia et al., 2005; Lu et al., 2008; Murphy et al., 2017), and the cytoplasmic tail can modulate the antigenic properties of Env as a whole (Piai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Piai et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "466b01eb-9153-42a0-bfee-dd55de03db97",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C76",
+      "claim": "Targeting of the LLP-2 surface with combinations of rationally designed immunotherapies may force the virus to mutate in ways that break the segregation between Env and Rev.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of the LLP-2 surface with combinations of rationally designed immunotherapies may force the virus to mutate in ways that break the segregation between Env and Rev.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative proposal based on the findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "c0cee5b9-e9cb-496c-a717-1f4a5e6068ee",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C77",
+      "claim": "Deep mutational scanning has proven effective at mapping probable mutational escape pathways from immune pressures such as neutralizing antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep mutational scanning has proven effective at mapping probable mutational escape pathways from immune pressures such as neutralizing antibodies (Starr et al., 2020; Greaney et al., 2021) and the Env cytoplasmic tail has proven to be a viable target in primate animal models Wang et al., 2020; for HIV-1 the combined knowledge of both functional constraints in the proteins and coding constraints in the genome may allow targeted immune therapies that drastically limit (or prevent altogether) escape mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Starr et al., 2020; Greaney et al., 2021; Wang et al., 2020",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "3039e258-4c2f-4d41-ac72-2e44e554312e",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C78",
+      "claim": "The Env cytoplasmic tail has proven to be a viable target in primate animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep mutational scanning has proven effective at mapping probable mutational escape pathways from immune pressures such as neutralizing antibodies (Starr et al., 2020; Greaney et al., 2021) and the Env cytoplasmic tail has proven to be a viable target in primate animal models Wang et al., 2020; for HIV-1 the combined knowledge of both functional constraints in the proteins and coding constraints in the genome may allow targeted immune therapies that drastically limit (or prevent altogether) escape mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "fed289d9-22e7-46e7-94d2-68574e267753",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C79",
+      "claim": "Immune targeting of overlapped reading frames in in vivo models has been shown to drive predictable synonymous mutations in the alternative, non-targeted frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, immune targeting of overlapped reading frames in in vivo models has been shown to drive predictable synonymous mutations in the alternative, non-targeted frame (Hughes et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hughes et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "b0c17ab5-0616-4f0e-96b4-8aed3a3678ad",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C80",
+      "claim": "Functional segregation occurs in the Rev-Env overlap, with each protein spacing its functional residues in a manner that allows a mutable non-binding face of one helix to encode important functional residues on a charged face in the other helix.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that functional segregation occurs even in this overlap, with each protein spacing its functional residues in a manner that allows a mutable non-binding face of one helix to encode important functional residues on a charged face in the other helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "258301e7-8d2d-478b-82d0-4268c121c282",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C81",
+      "claim": "The experiments reveal novel and critical functional residues in Env.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our experiments reveal novel and critical functional residues in Env and have implications for the therapeutic targeting of HIV-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on deep mutational scanning and functional assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "6d29a673-911f-4b5d-9b8d-a3a02602607a",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C82",
+      "claim": "The NL4-3 rev-in-nef virus has rev moved to the non-essential, single-frame nef locus and the endogenous rev locus is ablated.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, we used the NL4-3 rev-in-nef virus in which rev is moved to the non-essential, single-frame nef locus (Fernandes et al., 2016), and the endogenous rev locus is ablated, thus allowing the endogenous Env LLP-2 region and the rev-in-nef NES region to evolve independently from one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental system with citation to Fernandes et al., 2016",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "b7c6514e-758b-46e9-8246-8a0e7fe9610b",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C83",
+      "claim": "Each of the LLP-2 residues in the endogenous env locus was individually randomized, creating 10 Env libraries that each represent 64 alleles (every possible codon).",
+      "claim_type": "EXPLICIT",
+      "source": "We individually randomized each of the LLP-2 residues in the endogenous env locus, creating 10 Env libraries that each represent 64 alleles (every possible codon).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "aacb41b6-e38b-45cd-8e49-f5f2a7c4182f",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "claim_id": "C84",
+      "claim": "SupT1 cells were infected at low MOI with each library individually and the change in allele frequencies was measured after approximately six generations of viral spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we infected SupT1 cells at low MOI (multiplicity of infection) with each library individually and measured the change in allele frequencies after approximately six generations of viral spread (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental method shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2cf0cb59-51dc-437c-b258-90c113b1e25f",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HIV-1 contains overlapping genes, including a structured overlap between Rev NES and Env LLP-2 where nine LLP-2 residues (767-776) overlap with the Rev NES (residues 75-83) in a +1 reading frame.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8, C19, and C22 establish the genomic organization and identify the specific overlapping region between Rev and Env. These claims are well-supported by citations to prior work and are illustrated in Figure 1A, providing clear structural context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "f51794b8-ba53-436f-8479-533ffec56b84",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Rev NES is a quasi-helical structure that binds Crm1 using hydrophobic residues and prolines, while Env LLP-2 forms amphipathic helices with conserved charged residues that embed in viral membranes and support the Env trimer structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C21 describe the structural and functional properties of Rev NES and Env LLP-2, supported by multiple citations to prior structural and functional studies. The claims are consistent with established knowledge and provide necessary background for understanding the overlap.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "24fd5a4b-83db-41d9-b24b-35e6b1624cd2",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Conservation analysis reveals that sites contributing to functional surfaces in both proteins show higher conservation, while chemically conservative substitutions (I/L/V) at Crm1-binding residues increase codon flexibility in the overlapping region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 present entropy analysis of patient sequences showing differential conservation patterns. The use of reduced amino acid alphabets (C27) appropriately accounts for chemically conservative substitutions. The analysis is well-documented in Figure 2 and provides quantitative support for functional segregation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "d8b3cda6-20e9-447f-9438-8d304614812d",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Deep mutational scanning of non-overlapped viruses reveals that LLP-2 strongly selects for negative charge at D773 and against helix-breaking prolines, while Rev NES selects for large hydrophobic residues (ILV) at Crm1-binding positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 and C82-C84 describe the deep mutational scanning methodology and results. The experimental design using rev-in-nef viruses (C82) appropriately decouples the overlap. The fitness landscapes in Figure 3 provide clear quantitative data supporting the amino acid preferences. The methodology is sound with biological replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "8dcfe121-3e5f-4fbb-b3c3-48c0255528a2",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Functional assays confirm that mutation of Rev NES Crm1-binding residues (L75, P76, L78, L81, L83) abolishes Rev function, while mutation of the non-binding face has minimal impact. In Env, D773A shows the most severe defect (15% activity) and R770 is also important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 present reporter assay data validating the deep mutational scanning results. The Rev assays (Figure 4A) show clear loss of function for known Crm1-binding residues with appropriate controls (Western blots). The Env assays (Figure 4B) identify D773 and R770 as critical residues with biological triplicates and proper normalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "bc85433f-10e7-440a-bb5b-48315ce06e92",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Conservative substitution D773E retains ~50% activity while D773A and D773N are severely defective. D773A viruses can replicate poorly despite low reporter activity, and the weakly active D773N allele is found in ~2.6% of patient isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 examine D773 substitutions in detail using both reporter assays and viral replication (Figure 5A). The data show appropriate correlation between reporter activity and replication fitness. The observation of D773N in patient sequences (C42) provides evolutionary validation, though the mechanism of compensation remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "fef1370d-2074-4167-a468-26c9aadcb3c7",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Double mutants R1D\u2192AA (R770A/D773A) and R2D\u2192AA (R772A/D773A) show decreased replication, with R770 being particularly important. The triple mutant RRD\u2192AAA is highly defective, and Western blots indicate decreased Env stability for R1D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 systematically test combinations of charged residues (Figure 5B). The data demonstrate epistatic effects and identify R770 as particularly critical when combined with D773. Western blot analysis (C46) provides mechanistic insight into the R1D defect. The experiments include appropriate controls and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "f115c09a-e822-4501-b6df-bae696a807d7",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H769K shows no functional defect, but substituting both arginines with lysine (RR\u2192KK) causes severe replication defects despite maintaining positive charge. Deep mutational scanning reveals selection against lysine at R770 and R772 positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 test charge substitutions (Figure 5C) and reveal that arginine cannot be functionally replaced by lysine at these positions. The deep mutational scanning data (C48) supports this observation. Citation to prior work (C50) showing arginine enrichment in the cytoplasmic tail provides evolutionary context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "fb5ea439-b586-42b3-8504-1e967872a704",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Replacing LLP-2 residues 767-776 with flexible glycine/serine linkers (10GS) abolishes function, while replacement with alanines (10A) is also defective but can be partially rescued by reintroducing charged residues, particularly D773.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 test the structural requirements of LLP-2 (Figure 6). The 10GS experiment (C52) demonstrates the necessity of helical structure, while the 10A experiments (C53-C54) show that a helical scaffold alone is insufficient but can support function when key charged residues are restored. The experimental design is logical and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "86721e97-d56d-4205-b727-b8ca903bced4",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Functional segregation occurs in the Rev-Env overlap, with critical residues positioned on one face of each helix such that the non-binding face of Rev NES encodes the charged surface of LLP-2, and vice versa. This arrangement exploits wobble base degeneracy to minimize constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59, C67-C70, and C80 present the central finding of functional segregation. The integration of conservation analysis, deep mutational scanning, and functional assays provides strong converging evidence. Figure 7 clearly illustrates the spatial arrangement. The mechanistic explanation invoking wobble base flexibility (C69) is well-reasoned and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "0d9b1156-ba76-4651-8cdb-1d6025673aad",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Comparative analysis of primate lentiviruses shows that hydrophobic Crm1-binding residues in the NES are highly conserved across HIV-1, HIV-2, and SIVs, while LLP-2 sequences vary more, falling into three distinct groupings with different charge conservation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 and C72 present phylogenetic analysis (Figure 8) showing conservation patterns across lentiviruses. The sequence logo analysis is appropriate and reveals that the specific functional segregation observed in HIV-1 M is not universal. This provides important evolutionary context, though the functional implications of the different patterns remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "773e5f8d-1817-4c1a-bda7-ffee1e6917c4",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The functional segregation in HIV-1 Env LLP-2/Rev NES is enabled by the atypical proline-rich NES and partially redundant function of LLP-2 positive charges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 synthesizes the findings to explain the mechanism of segregation. The claim is supported by the collective experimental data showing that the proline-rich NES creates a non-canonical helical structure and that multiple charged residues in LLP-2 contribute to function with some redundancy (as shown in the double mutant experiments).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "a36863ed-a5d4-424b-8ff4-93cb1547ecf7",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The experiments reveal that Env D773 is under strong selective pressure, though its precise molecular function remains unknown, along with other critical functional residues in LLP-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C81 acknowledge that while strong selection for D773 is demonstrated through multiple approaches (conservation, DMS, functional assays), the molecular mechanism remains unclear. This is an honest assessment of the limitations of the current work and appropriately identifies areas for future investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "f1f4364d-646d-4373-84b0-8fa3425d53e3",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work showed that in HIV-1 tat and rev genes, functional residues do not overlap because functional motifs in one protein are encoded in regions overlapping with disordered linkers in the other, an arrangement possible because most overlapped proteins are predicted to be disordered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 accurately describe prior work on the tat-rev overlap (Fernandes et al., 2016) and general properties of overlapping genes (Rancurel et al., 2009). These claims provide appropriate context for the current study's focus on structured overlaps. The citations are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "0a7471e6-58db-498f-8ed5-a4b2ea6d2de8",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Overlapping reading frames are functionally important in viruses, as demonstrated by immune epitopes in SARS-CoV-2 and the negative impact of mutations in HIV-1 LLP-2 and Rev NES on viral replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C23 establish the biological importance of overlapping genes through citations to SARS-CoV-2 studies and prior HIV-1 mutational work. These claims provide motivation for the study and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "66ad4984-7e52-4224-affa-13e65eaf514a",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The size of the Env cytoplasmic tail varies among retroviruses, and loss of the tail is commonly observed when SIV is propagated in human cells, suggesting host and viral determinants influence this region's function and variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 describe evolutionary plasticity of the Env cytoplasmic tail based on cited literature. These observations provide context for understanding why different lentiviruses show different conservation patterns in the LLP-2 region. The claims are appropriately supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    },
+    {
+      "id": "2af0114a-d480-4c24-a703-42cb6ed5f749",
+      "content_id": "cd920571-093c-490a-95d6-a3e2cf3ec6bb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "LLP-2 is transiently surface-exposed during infection and can modulate Env antigenic properties. Targeting LLP-2 with immunotherapies may force escape mutations that break Rev-Env segregation, and deep mutational scanning can map escape pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 are supported by citations describing LLP-2 exposure and function. However, claims C76-C79 are largely speculative regarding therapeutic applications. While the logic is sound and supported by citations to DMS studies in other systems (C77) and immune targeting studies (C79), no experimental validation of this therapeutic strategy is provided in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:45:35.586380Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dab41d6f-b70d-4525-b059-ea1270bf14d7",
+      "result_id": "2cf0cb59-51dc-437c-b258-90c113b1e25f"
+    },
+    {
+      "claim_id": "e81cae91-32ac-4091-b252-a1238bffd10a",
+      "result_id": "2cf0cb59-51dc-437c-b258-90c113b1e25f"
+    },
+    {
+      "claim_id": "96a22f7f-d5f5-4d3b-8b6d-8883ec9d3b1a",
+      "result_id": "2cf0cb59-51dc-437c-b258-90c113b1e25f"
+    },
+    {
+      "claim_id": "9eaac306-d42a-40ab-bd69-e97b4d8a7d0b",
+      "result_id": "2cf0cb59-51dc-437c-b258-90c113b1e25f"
+    },
+    {
+      "claim_id": "d26fd780-a9a3-4342-92b0-66aae2eed49c",
+      "result_id": "2cf0cb59-51dc-437c-b258-90c113b1e25f"
+    },
+    {
+      "claim_id": "2fcdfd36-447f-4479-9cff-ccd917f4c22b",
+      "result_id": "2cf0cb59-51dc-437c-b258-90c113b1e25f"
+    },
+    {
+      "claim_id": "3b9b9636-376f-4d00-b956-cbb546308dd5",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "78458db7-79d1-45d2-8e6c-a9eef9ffe061",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "42946610-6ba2-46c5-bca6-85b9e6c701a8",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "601b3e29-8f5a-443f-aaa6-5840d45432c3",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "c5286575-9367-426a-b0ab-b2b258c792c5",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "06d25f3c-c18b-4475-8cd1-7d10fd3cd7b4",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "6c723915-a7a9-46dc-87c0-0bcca8f2b261",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "664c471a-6934-4eea-9adb-1d9f4cb907cc",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "3413bdd5-42ab-442c-bf67-fab1d5a145cf",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "c44bc4f2-fbaa-4b15-be1d-d08f75c78c36",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "b086bdb5-b826-4f55-bb0b-ba6fee39f169",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "5468f9ce-2b0e-446e-81c5-40e54691689d",
+      "result_id": "f51794b8-ba53-436f-8479-533ffec56b84"
+    },
+    {
+      "claim_id": "fbcbaa89-0d69-4336-a084-bb8b2b53b2cf",
+      "result_id": "24fd5a4b-83db-41d9-b24b-35e6b1624cd2"
+    },
+    {
+      "claim_id": "b2216572-d47f-4241-832f-805c4d675ed0",
+      "result_id": "24fd5a4b-83db-41d9-b24b-35e6b1624cd2"
+    },
+    {
+      "claim_id": "832e074e-5cad-4155-8e9d-e81cb14d6afd",
+      "result_id": "24fd5a4b-83db-41d9-b24b-35e6b1624cd2"
+    },
+    {
+      "claim_id": "2be01816-3aa4-4a23-b781-2687af517450",
+      "result_id": "24fd5a4b-83db-41d9-b24b-35e6b1624cd2"
+    },
+    {
+      "claim_id": "4fa2922b-060f-4b56-acc3-12448fe70f96",
+      "result_id": "24fd5a4b-83db-41d9-b24b-35e6b1624cd2"
+    },
+    {
+      "claim_id": "0ce4ba33-680e-406c-a366-b7edc7dc9be9",
+      "result_id": "24fd5a4b-83db-41d9-b24b-35e6b1624cd2"
+    },
+    {
+      "claim_id": "446d6dc7-f201-42b4-bd27-228ddd87f382",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "5a8670a7-629f-4e37-b9a5-07848183f841",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "21c1f66d-d1bf-402c-9bbd-640e65ae5e01",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "918d7bdc-e61b-4584-b525-0090b544ed21",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "6df16db4-b7de-4b78-aad8-0af977d07188",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "68b1fc85-ad7d-4663-84ad-f872e7cea306",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "6d29a673-911f-4b5d-9b8d-a3a02602607a",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "b7c6514e-758b-46e9-8246-8a0e7fe9610b",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "aacb41b6-e38b-45cd-8e49-f5f2a7c4182f",
+      "result_id": "d8b3cda6-20e9-447f-9438-8d304614812d"
+    },
+    {
+      "claim_id": "b0727be2-af97-4a68-a5b0-186d3eeeb962",
+      "result_id": "8dcfe121-3e5f-4fbb-b3c3-48c0255528a2"
+    },
+    {
+      "claim_id": "1214ac7c-2778-4185-8c7a-bb593d23cabf",
+      "result_id": "8dcfe121-3e5f-4fbb-b3c3-48c0255528a2"
+    },
+    {
+      "claim_id": "2249101e-238e-4383-acac-ab3d928d60fc",
+      "result_id": "8dcfe121-3e5f-4fbb-b3c3-48c0255528a2"
+    },
+    {
+      "claim_id": "00789fd4-3eba-4f35-8ed4-2f3aebfd551b",
+      "result_id": "8dcfe121-3e5f-4fbb-b3c3-48c0255528a2"
+    },
+    {
+      "claim_id": "83d4caaf-1c3b-474e-8d12-b0699777b244",
+      "result_id": "bc85433f-10e7-440a-bb5b-48315ce06e92"
+    },
+    {
+      "claim_id": "42f2cdff-af39-40e2-9b9d-165cfb88ebac",
+      "result_id": "bc85433f-10e7-440a-bb5b-48315ce06e92"
+    },
+    {
+      "claim_id": "c9491898-24f9-4e6d-a0c8-f691ed13a19c",
+      "result_id": "bc85433f-10e7-440a-bb5b-48315ce06e92"
+    },
+    {
+      "claim_id": "222d911d-2a4f-4fe7-b75f-61db6ccd77ca",
+      "result_id": "fef1370d-2074-4167-a468-26c9aadcb3c7"
+    },
+    {
+      "claim_id": "ad6fbb8e-7630-4e95-a33c-84054441e1b0",
+      "result_id": "fef1370d-2074-4167-a468-26c9aadcb3c7"
+    },
+    {
+      "claim_id": "69bc7c7a-b95b-48ad-aca5-c0c64fe9dd56",
+      "result_id": "fef1370d-2074-4167-a468-26c9aadcb3c7"
+    },
+    {
+      "claim_id": "ec30f17b-d67f-4b2e-aa98-3a408bbfc2f7",
+      "result_id": "fef1370d-2074-4167-a468-26c9aadcb3c7"
+    },
+    {
+      "claim_id": "0fe9eee4-4b5c-4628-9b82-ae8eb1f55bb1",
+      "result_id": "f115c09a-e822-4501-b6df-bae696a807d7"
+    },
+    {
+      "claim_id": "51893f34-0f49-4fb5-a815-06523cdd5f22",
+      "result_id": "f115c09a-e822-4501-b6df-bae696a807d7"
+    },
+    {
+      "claim_id": "d8c55f25-2a34-472b-b76c-cc64d8059ffb",
+      "result_id": "f115c09a-e822-4501-b6df-bae696a807d7"
+    },
+    {
+      "claim_id": "59d36823-d07d-4f81-91c7-e86f13168b40",
+      "result_id": "f115c09a-e822-4501-b6df-bae696a807d7"
+    },
+    {
+      "claim_id": "424b9b86-b254-4015-86cc-7f8a4361705c",
+      "result_id": "fb5ea439-b586-42b3-8504-1e967872a704"
+    },
+    {
+      "claim_id": "9b265915-81b8-4ac6-bf72-10e544bf26c9",
+      "result_id": "fb5ea439-b586-42b3-8504-1e967872a704"
+    },
+    {
+      "claim_id": "656c78af-cead-40f4-b5a0-2fba096e612e",
+      "result_id": "fb5ea439-b586-42b3-8504-1e967872a704"
+    },
+    {
+      "claim_id": "4d873a05-d737-4f16-833b-5b09a9b4e406",
+      "result_id": "fb5ea439-b586-42b3-8504-1e967872a704"
+    },
+    {
+      "claim_id": "e7ad1d12-f26a-46b8-b676-53da8ea82f40",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "a24076fd-dbb5-4cfb-b7e4-d893a1b49e5b",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "6e6f121b-515f-4914-bd6a-f304ab797fb4",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "e4cdd2f6-4641-44f1-b26f-8164aac1cffa",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "eef41c94-fff4-423e-9a88-4c56837045d1",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "f10fe3ec-d1f5-4071-9b34-ea45feb8581d",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "213abe4d-abe2-4d21-b3a5-c8d81e59f224",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "89b96913-7511-4b9e-a057-59aa4133e06f",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "2d07f89a-4be9-4f41-aeb4-94e50540d7ff",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "b0c17ab5-0616-4f0e-96b4-8aed3a3678ad",
+      "result_id": "86721e97-d56d-4205-b727-b8ca903bced4"
+    },
+    {
+      "claim_id": "2d1c18a6-0c10-41b1-8035-a95c449c8890",
+      "result_id": "0d9b1156-ba76-4651-8cdb-1d6025673aad"
+    },
+    {
+      "claim_id": "55341326-bf26-476b-b04a-afa3140b9565",
+      "result_id": "0d9b1156-ba76-4651-8cdb-1d6025673aad"
+    },
+    {
+      "claim_id": "9d1c42cd-466f-4fec-8368-8bb423631095",
+      "result_id": "0d9b1156-ba76-4651-8cdb-1d6025673aad"
+    },
+    {
+      "claim_id": "6a9210e4-9812-425d-abc9-a7c71e7b1a65",
+      "result_id": "0d9b1156-ba76-4651-8cdb-1d6025673aad"
+    },
+    {
+      "claim_id": "ad7b1be1-5112-4488-b032-632036351246",
+      "result_id": "0d9b1156-ba76-4651-8cdb-1d6025673aad"
+    },
+    {
+      "claim_id": "69a6e762-c7bf-4800-a3e2-6049586f2284",
+      "result_id": "0d9b1156-ba76-4651-8cdb-1d6025673aad"
+    },
+    {
+      "claim_id": "16dfc16a-0df5-4632-9135-959e4d74e662",
+      "result_id": "773e5f8d-1817-4c1a-bda7-ffee1e6917c4"
+    },
+    {
+      "claim_id": "2de77001-540d-460d-ac16-89513a43f73b",
+      "result_id": "a36863ed-a5d4-424b-8ff4-93cb1547ecf7"
+    },
+    {
+      "claim_id": "258301e7-8d2d-478b-82d0-4268c121c282",
+      "result_id": "a36863ed-a5d4-424b-8ff4-93cb1547ecf7"
+    },
+    {
+      "claim_id": "839a27ef-65ab-4236-853c-0f280c35f486",
+      "result_id": "f1f4364d-646d-4373-84b0-8fa3425d53e3"
+    },
+    {
+      "claim_id": "49550c7e-56e4-40d2-bdf4-0b48b5a5eaeb",
+      "result_id": "f1f4364d-646d-4373-84b0-8fa3425d53e3"
+    },
+    {
+      "claim_id": "ae5e2c3a-1626-424c-a7cc-e5a7767119f6",
+      "result_id": "f1f4364d-646d-4373-84b0-8fa3425d53e3"
+    },
+    {
+      "claim_id": "5b12f2fd-1f38-4204-be35-2605974e00b4",
+      "result_id": "0a7471e6-58db-498f-8ed5-a4b2ea6d2de8"
+    },
+    {
+      "claim_id": "a5150dfe-4686-4f4e-b338-fd279dbf4e76",
+      "result_id": "0a7471e6-58db-498f-8ed5-a4b2ea6d2de8"
+    },
+    {
+      "claim_id": "992f716c-6221-4907-b1f2-fec5ada131fe",
+      "result_id": "66ad4984-7e52-4224-affa-13e65eaf514a"
+    },
+    {
+      "claim_id": "c55ec067-8ba1-4269-bda8-a02b19d05bf0",
+      "result_id": "66ad4984-7e52-4224-affa-13e65eaf514a"
+    },
+    {
+      "claim_id": "21132716-fc1a-4dc4-86c0-317b5d0f265a",
+      "result_id": "2af0114a-d480-4c24-a703-42cb6ed5f749"
+    },
+    {
+      "claim_id": "ef325520-fd60-4504-8957-e6b979d02c81",
+      "result_id": "2af0114a-d480-4c24-a703-42cb6ed5f749"
+    },
+    {
+      "claim_id": "466b01eb-9153-42a0-bfee-dd55de03db97",
+      "result_id": "2af0114a-d480-4c24-a703-42cb6ed5f749"
+    },
+    {
+      "claim_id": "c0cee5b9-e9cb-496c-a717-1f4a5e6068ee",
+      "result_id": "2af0114a-d480-4c24-a703-42cb6ed5f749"
+    },
+    {
+      "claim_id": "3039e258-4c2f-4d41-ac72-2e44e554312e",
+      "result_id": "2af0114a-d480-4c24-a703-42cb6ed5f749"
+    },
+    {
+      "claim_id": "fed289d9-22e7-46e7-94d2-68574e267753",
+      "result_id": "2af0114a-d480-4c24-a703-42cb6ed5f749"
+    }
+  ],
+  "comparisons": []
+}

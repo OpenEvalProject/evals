@@ -1,0 +1,2048 @@
+{
+  "submission": {
+    "id": "5e980f9b-be6c-43f5-a80a-4f832123d900",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:13:29.864079Z",
+    "updated_at": "2025-12-03T19:13:29.864079Z"
+  },
+  "content": [
+    {
+      "id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "submission_id": "5e980f9b-be6c-43f5-a80a-4f832123d900",
+      "content_type": "manuscript",
+      "content_text": "# Information transfer in mammalian glycan-based communication\n\n## Authors\n\n- Felix F Fuchsberger<sup>1</sup> ([ORCID: 0000-0002-9379-9792](https://orcid.org/0000-0002-9379-9792))\n- Dongyoon Kim<sup>1</sup> ([ORCID: 0000-0001-9162-8730](https://orcid.org/0000-0001-9162-8730))\n- Natalia Baranova<sup>1</sup> ([ORCID: 0000-0002-3086-9124](https://orcid.org/0000-0002-3086-9124))\n- Hanka Vrban<sup>1</sup>\n- Marten Kagelmacher<sup>2</sup>\n- Robert Wawrzinek<sup>1</sup>\n- Christoph Rademacher<sup>1</sup> ([ORCID: 0000-0001-7082-7239](https://orcid.org/0000-0001-7082-7239)) \u2020\n\n### Affiliations\n\n1. Department of Pharmaceutical Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))\n2. Department of Biomolecular Systems, Max Planck Institute of Colloids and Interfaces Potsdam Germany ([ROR:00pwgnh47](https://ror.org/00pwgnh47))\n3. Department of Microbiology, Immunology and Genetics University of Vienna, Max F. Perutz Labs Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGlycan-binding proteins, so-called lectins, are exposed on mammalian cell surfaces and decipher the information encoded within glycans translating it into biochemical signal transduction pathways in the cell. These glycan-lectin communication pathways are complex and difficult to analyze. However, quantitative data with single-cell resolution provide means to disentangle the associated signaling cascades. We chose C-type lectin receptors (CTLs) expressed on immune cells as a model system to study their capacity to transmit information encoded in glycans of incoming particles. In particular, we used nuclear factor kappa-B-reporter cell lines expressing DC-specific ICAM-3\u2013grabbing nonintegrin (DC-SIGN), macrophage C-type lectin (MCL), dectin-1, dectin-2, and macrophage-inducible C-type lectin (MINCLE), as well as TNF\u03b1R and TLR-1&2 in monocytic cell lines and compared their transmission of glycan-encoded information. All receptors transmit information with similar signaling capacity, except dectin-2. This lectin was identified to be less efficient in information transmission compared to the other CTLs, and even when the sensitivity of the dectin-2 pathway was enhanced by overexpression of its co-receptor FcR\u03b3, its transmitted information was not. Next, we expanded our investigation toward the integration of multiple signal transduction pathways including synergistic lectins, which is crucial during pathogen recognition. We show how the signaling capacity of lectin receptors using a similar signal transduction pathway (dectin-1 and dectin-2) is being integrated by compromising between the lectins. In contrast, co-expression of MCL synergistically enhanced the dectin-2 signaling capacity, particularly at low-glycan stimulant concentration. By using dectin-2 and other lectins as examples, we demonstrate how signaling capacity of dectin-2 is modulated in the presence of other lectins, and therefore, the findings provide insight into how immune cells translate glycan information using multivalent interactions.\n\n## Introduction\n\nGlycans are present in all living cells and play a key role in many essential biological processes including development, differentiation, and immunity. Being surface exposed, glycans often encode for information in cellular communication such as self-/non-self-discrimination, cellular identity, and homing as well as apoptosis markers (Bode et al., 2019; Maverakis et al., 2015; Williams, 2017). Other than linear biopolymers, such as proteins and nucleic acids, glycans are branched structures, where subtle changes in the glycosidic bonds between each monomer can carry essential pieces of information. Adding to this complexity, glycans are products of large cellular machinery and are therefore not directly encoded by the genome (Cummings, 2009). Besides their composition, the recognition of glycans by their receptors is complicated, particularly due to the lack of specificity. Glycans are recognized by lectins, yet no glycan is recognized by a single receptor, and no individual lectin is highly specific for only one glycan. Additionally, affinities are low, and interactions often depend on the multivalency of both the receptor and the ligand. Overall, since alterations of the glycocalyx do not function as a deterministic on/off switch but rather a progressive tuning of the cellular response, glycan lectin communication should be considered as a stochastically behaving system, rather than a deterministic one (Dennis, 2015).\n\nMany lectin receptors serve as triggers for multiple immunological signaling pathways, often funneling down to NF-\u03baB (nuclear factor kappa-B) as a transcription factor. In this work, we focus on C-type lectin receptors (CTLs). MINCLE (macrophage-inducible C-type lectin), for example, is a CTL involved in the recognition of pathogens as well as self-damage (Miyake et al., 2015; Williams, 2017). MINCLE and its close relative dectin-2 (dendritic cell-associated C-type lectin-2) signal via the FcR\u03b3 gamma chain (Miyake et al., 2015; Ostrop et al., 2015; Sato et al., 2006), leading to CARD9-BCL-10-Malt1 activation (Figure 1A). This in turn results in the activation of NF-\u03baB, eventually triggering cytokine release. Importantly, these two receptors share the same signal transduction pathway, while having different functions (Thompson et al., 2021). Therefore, both dectin-2 and MINCLE can be compared of whether these related proteins differently transmit glycan information from the receptor level. In contrast, dectin-1 and dectin-2 have different signal transduction pathways but are both involved in the detection of \u03b2-glucans and mannan, respectively (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69415/elife-69415-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic representation of dectin-1, dectin-2, and macrophage-inducible C-type lectin (MINCLE) signaling pathway with GFP under control of nuclear factor kappa-B (NF-\u03baB; left) and the dose dependence of the GFP expression of the cells (right). The input and output distribution of single-cell resolution data are divided by indexed (i.e. $i$ and $j$) rectangular grids to estimate the joint and marginal probability of the distribution. $N_{i,j}$ and $N_{t}$ are the number of cells in the index $(i,j)$ and the total number of cells, respectively. (B) Estimated joint probability distribution between the input glycan concentration and GFP expression using the procedures described in (A). The joint entropy ($H_{xy}$) and marginal entropies ($H_{x}$ and $H_{y}$) and therefore mutual information ($I_{xy}$) can be calculated from the estimated distribution. The channel capacity of the distribution can be further found by maximizing the mutual information with various trial input distributions (see also Appendix 2\u2014figure 3). Experimental data for FurFurMan stimulation is shown. (C\u2013D) Monoclonal reporter cells expressing dectin-1, dectin-2, MINCLE, or wild type (WT) were stimulated with (C) invertase or (D) FurFurMan (n=3). (E) Dose response of the dectin-2 reporter cells is shown both as geometric mean with SD and boxplot with the whiskers representing the 1 percentile of the cellular population (n=6).\n\nUpon fungal infection, combination of these and other cell surface receptors expressed by antigen presenting cells then leads to a defined immune reaction via signal integration processes (Snarr et al., 2017). Such signal integration can result in synergism between the receptors triggering an effect greater than their individual contributions (Ostrop and Lang, 2017). For example, MCL (macrophage C-type lectin), another CTL present on cells of the innate immune system, is known to synergistically work with dectin-2 (Ostrop et al., 2015; Zhu et al., 2013). Additionally, to this type of synergism, other members of the CTL family, e.g., DC-specific ICAM-3\u2013grabbing nonintegrin (DC-SIGN) and Langerin, rather modulate a response instead of initiating it by themselves (Geijtenbeek and Gringhuis, 2016; Osorio and Reis e Sousa, 2011). Therefore, it is important to quantitatively account for the resulting signaling to describe the complexity of how these cell surface receptors can modulate each other to translate a glycan-encoded information into a biological response.\n\nAccounting for the stochastic behavior of cellular signaling, information theory provides robust and quantitative tools to analyze complex communication channels. A fundamental metric of information theory is entropy, which determines the amount of disorder or uncertainty of variables. In this respect, cellular signaling pathways having high variability of the initiating input signals (e.g. stimulants) and the corresponding highly variable output response (i.e. cellular signaling) can be characterized as a high entropy. Importantly, input and output can have mutual dependence, and therefore, knowing the input distribution can partly provide the information of output distribution. If noise is present in the communication channel, input and output have reduced mutual dependence. This mutual dependence between input and output is called mutual information. Mutual information is, therefore, a function of input distribution, and the upper bound of mutual information is called channel capacity (Appendix 2; Cover and Thomas, 2012).\n\nIn this report, a communication channel describes signal transduction pathway of CTL, which ultimately lead to NF-\u03baB translocation and finally GFP expression in the reporter model (Figure 1A). To quantify the signaling information of the communication channels, we used channel capacity. Importantly, the channel capacity is not merely describing the resulting maximum intensity of the reporter cells. The channel capacity takes cellular variation and activation across a whole range of incoming stimulus of single-cell resolved data into account and quantifies all of that data into a single number.\n\nHerein, we studied dectin-2, dectin-1, MINCLE, DC-SIGN, MCL, TNF\u03b1R (TNF alpha receptor), and TLR-1&2 in NF-\u03baB reporter cells using single-cell resolved flow cytometry (Figure 1A, see also Appendix 2). To accurately quantify the information transmission in the receptors\u2019 signaling pathways in response to exogenous glycans, we use the channel capacity as a metric (Figure 1B). By employing channel capacity measurements, we found dectin-2 channel has relatively low signaling capacity, which in turn is synergistically increased in the presence of co-expressed MCL receptor. Furthermore, the channel capacity of dectin-1 and dectin-2 channel for the same glycan ligand was compromised when both receptors are expressed by the cell while increasing the binding sensitivity (EC50) to the ligand. Overall, our findings and approach provide a quantitative description of glycan lectin communication and signal integration of CTLs and other receptors, which may lead to a better understanding of key phenomena such as pathogen recognition and autoimmunity.\n\n## Results\n\n### Quantifying signal transduction in glycan-based communication\n\nWe employed a single-cell resolved reporter system to monitor CTL activity by GFP expression under control of the transcription factor NF-\u03baB in human monocytic U937 cells (Figure 1A). Dectin-2 was expressed in these reporter cells, and stimulation was conducted using various ligands (Figure 1C\u2013E). FurFurMan, an extract of Malassezia furfur, as well as the polysaccharide mannan and invertase, both from Saccharomyces cerevisiae, initiated dectin-2 signaling. In contrast, owing to the lack of multivalency, mannose itself could not initiate signaling but was able to inhibit dectin-2 function (Figure 1C and D, and also Appendix 1\u2014figure 1 A; Ishikawa et al., 2013). In parallel, the invertase treated with \u03b1-mannosidase does not activate the NF-\u03baB signaling, indicating the glycosylation-dependent dectin-2 activity (Appendix 1\u2014figure 1 B). The activation of human dectin-2 receptor is in line with previous reports on its murine homolog, which is triggered by Man-\u03b11\u20132 Man moieties presented on scaffolds like proteins, glycans, or polystyrene beads (Ishikawa et al., 2013; Yonekawa et al., 2014; Zhou et al., 2018). Analogously, introduction of dectin-1 into the reporter cells enabled detection of NF-\u03baB-based GFP expression after stimulation. However, while FurFurMan could also stimulate dectin-1 cells, this was not inhibited by the addition of mannose, which is expected for this \u03b2-glucan receptor (Figure 1D).\n\nNext, we studied the dose-response behavior of dectin-2 reporter cells stimulated with FurFurMan over a wide range of input concentrations (Figure 1E). The cellular population revealed an overlap between the unstimulated and the maximally stimulated population, demonstrating the absence of a clear two-state behavior on a population level (Figure 1E, Appendix 1\u2014figure 1 C). To ensure that change in the reporter level is not affected by protein expression rate, we confirmed that GFP expression required at least 16 hr of stimulation to reach its maximum in steady-state protein expression, while short stimulation with for 2\u20136 hr does not lead the maximum level of GFP production (Appendix 1\u2014figure 1 D). We also ruled out any influence of the selection process for the cellular clones, by sorting dectin-2 expressing cells according to their GFP expression level. When re-stimulated, both populations again showed the same broad GFP expression, confirming the wide range of the response to be independent of genetic differences between individual cells (Appendix 1\u2014figure 1 E). Taken together, observing noisy dectin-2 signaling on a single-cell level in relevant model cell lines reveals a broad population distribution when stimulated.\n\n### Dectin-2 transmits less information than other receptors\n\nTo investigate whether other receptors with similar signaling pathways follow the same principle, we analyzed the dose response of dectin-1, MINCLE, and the non-CTLs TNF\u03b1R and TLR-1 and -2 (Bode et al., 2019; Holbrook et al., 2019; Ishikawa et al., 2009; Ozinsky et al., 2000). To quantify the underlying signal transmission in a cellular population, the channel capacity was used as a metric. Note that we choose the stimulation time, the period of incubation time of the cell with the input ligands, as the time point when GFP response and channel capacity reach the maximum and steady-state value (Appendix 1\u2014figure 2 A and B). And therefore, the stimulation was 13 and 16 hr for TNF-\u03b1 and the rest of the ligands, respectively. Previous work on TNF-\u03b1 signaling found the TNF-\u03b1 channel to have a channel capacity of about 1 bit in particular 1.64 bits when a reporter cell system was used (Cheong et al., 2011). In addition, this channel capacity can be further increased if one can measure the temporal evolution of output dynamics instead of static output dataset (Selimkhanov et al., 2014). Such channel capacity suggests that a cellular population can use a receptor to distinguish between two states: on/off or presence/absence of a stimulant. For U937 cells, we found the TNF\u03b1R transmits 1.34 bits of channel capacity for TNF-\u03b1 stimulant (Figure 2A and B), which was not influenced by the introduction of additional lectins (i.e. MINCLE, dectin-2, and DC-SIGN, see Appendix 1\u2014figure 2 C). In the case of dectin-1 expressing U937 cells, the channel capacities were 1.20 and 1.09 bits for depleted zymosan (DZ) and FurFurMan input, respectively, while both MINCLE and TLR1&2 had a channel capacity of 0.98 and 0.99 bits, respectively. Since these receptors signal via NF-\u03baB, these differences can be explained by receptor expression levels and downstream pathways. In contrast, dectin-2 stimulation resulted in a channel capacity of 0.70 bits using FurFurMan as a ligand. Stimulation using heat inactivated invertase or mannan had 0.80 and 0.49 bits, respectively (Figure 2B). Also, in THP-1 cells, a similar trend of lower GFP expression upon stimulation is observed, further supporting the notion that dectin-2 has a lower signal transmission capacity compared to the other receptors such as TNF\u03b1R (Appendix 1\u2014figure 2 D-F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69415/elife-69415-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative histograms of U937 reporter cells dose response, stimulated specifically with invertase for dectin-2, TNF\u03b1 for the TNF\u03b1R, trehalose-6,6-dibehenate (TDB) for macrophage-inducible C-type lectin (MINCLE), Pam3-Cys-Ser-Lys4 (Pam3CSK4) for TLR1&2, and depleted zymosan (DZ) for dectin-1. The number in each histogram is the channel capacity of the corresponding signals. Top right panel shows a schematic representation of the five analyzed receptor channels. (B) Estimated channel capacities between various pairs of ligand and receptor (*p<0.05, Wilcoxon rank-sum test). (C) Monoclonal reporter cells either expressing dectin-2 (n=3), FcR\u03b3 (n=2), or dectin-2 and FcR\u03b3 (n=4) were stimulated for 16 hr with various concentrations of invertase, labeled with Atto647 dye. The error bars indicate the SDs. (D) Channel capacities from stimulation with invertase and FurFurMan (data also seen in B) and FurFurMan stimulation of U937 reporter cells (**p<0.01, Wilcoxon rank-sum test). (E) Unstimulated reporter cells (mock stimulated) 16 hr after cultivation with 25 mM galactose, or mannose, or under normal conditions for 48 hr (n=3, *p<0.05 and ***p<0.001, Student\u2019s t-test), suggesting that dectin-2 mediated self-recognition leads to a high basal level of cellular activation in FcR\u03b3 overexpression cells.\n\nThe most striking difference was found between MINCLE and dectin-2, as both lectins use the same signaling pathway via FcR\u03b3 (Ishikawa et al., 2013), suggesting that the substantial differences between the channel capacities rely on very early ligand recognition events. We hypothesized overexpression of the signaling protein FcR\u03b3 might increase the information transmitted via dectin-2. The overexpression of FcR\u03b3 resulted in at least twofold increase of NF-\u03baB controlled GFP expression (Figure 2C). Overexpression of both dectin-2 and FcR\u03b3 yielded a high-basal NF-\u03baB activation of the cells while the sensitivity for its ligand (EC50) increased about 50-fold. While the maximal GFP signal of dectin-2 (MFI, mean fluorescence intensity) was increased in the presence of FcR\u03b3 overexpression, the channel capacity however decreased simultaneously (0.41 bits; Figure 2 C\u2013E). Since competition with mannose reduced this effect, we speculate that decreased channel capacity might originate from self-recognition of dectin-2 of ligands being present either on the same cell or those in close proximity during the culture conditions (Figure 2E). From this, we concluded the channel capacity of a glycan-based communication channel is not necessarily coupled to its sensitivity. Also, the ability of a communication channel to transmit information is not well described by its maximal signal alone (i.e. MFI), but rather by the channel capacity. Next, we quantified the number of receptors and excluded that the difference in MINCLE and dectin-2 channel capacities is due to differences in receptor expression levels (Appendix 1\u2014figure 2 G). Taken together, dectin-2 has relatively less channel capacity, and while its sensitivity (EC50) can be modulated with FcR\u03b3, the transmitted information does not increase. Additionally, the number of receptors has little influence on the channel capacity or amplitude.\n\n### Signal integration compromises between dectin-1 and dectin-2 receptors when both are engaged\n\nTo expand our insight from isolated cell surface receptors to the interplay between multiple lectins, we prepared reporter cells expressing dectin-2 and dectin-1 simultaneously. FurFurMan served as a stimulant since it interacts with both dectin-1 and dectin-2. First of all, we found that the level of receptor expression did not change upon expression of an additional lectin (Figure 3A). Dectin-1 expressing cells gave a higher maximal signal (i.e. maximal MFI) and channel capacity than dectin-2 expressing cells; however, the latter channel showed higher sensitivity (EC50) to FurFurMan. We found that the double positive cells did compromise between the two receptors, displaying the values corresponding to the intermediate values of the EC50 and channel capacity of dectin-1 and dectin-2 (Figure 3B and C). Additionally, mannose could be used to interfere with dectin-2 signaling, thus U937 dectin-1 dectin-2 expressing cells showed the same dose-response curve as dectin-1 expressing cells (Figure 3D). When DZ, a dectin-1 specific stimulants, was used, dectin-2 expression did not significantly influence the response of the double positive cells. Hence, dectin-2 specific signaling was not influenced by dectin-1 expression (Appendix 1\u2014figure 3 A-C). Moreover, inhibition of dectin-2 signaling initiated by FurFurMan by the addition of 25 mM mannose resulted a response that was not a compromise. Taken together, we see that the simultaneous stimulation of dectin-1 and dectin-2 resulted in a compromise between their channels, which demonstrates how these two channels integrate glycan signal into response.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69415/elife-69415-fig3-v3.jpg)\n\n**Figure 3.:** (A) Quantitation of surface expression of U937 dectin-1, dectin-2, and dectin-1 dectin-2 U937 reporter cells. Fluorescence intensity (FI) values were transformed into the number of proteins expressed using a PE-quantitation. Graph shows geometric mean \u00b1 robust SD of the cellular population. (B) Monoclonal reporter cells either expressing macrophage-inducible C-type lectin (MINCLE), dectin-2, dectin-1, or both dectin-2 and dectin-1 were stimulated for 16 hr with various concentrations of FurFurMan (n\u22653). The error bars indicate the SDs. (C) Channel capacities of U937 reporter cells expressing either dectin-1, dectin-2, or both stimulated with FurFurMan (*p<0.05 and **p<0.01, Wilcoxon rank-sum test). (D) Monoclonal reporter cells either expressing dectin-2, dectin-1, or both dectin-2 and dectin-1, stimulated with various concentrations of FurFurMan (n=3). Dectin-1 expressing cells were stimulated either with or without 25 mM of mannose. The error bars indicate the SDs.\n\n### Macrophage C-type lectin (MCL) increases the channel capacity of dectin-2\n\nTo further expand our insights into signal transmission through multiple lectins, we wondered whether co-expression of other lectins would synergistically increase the channel capacity of dectin-2 signaling. For this, we included DC-SIGN and MCL (Figure 4A). Although DC-SIGN does not elicit NF-\u03baB signaling by itself in U937 cells, it is known to recognize high-mannose structures present on invertase (Gringhuis et al., 2009). As expected, U937 dectin-2 DC-SIGN cells experience significantly increased ligand binding (Appendix 1\u2014figure 4 A and B). We then speculated that this would either (a) promote the ligand recognition by pre-concentration of the stimulants on the cell surface or (b) sequester the input signal from dectin-2, reducing the cellular response. In fact, DC-SIGN-mediated ligand binding did not alter the dectin-2 channel capacity for FurFurMan or invertase stimulation or did DC-SIGN expression itself modulate TLR4 signaling (Figure 4B, Appendix 1\u2014figure 4 C). However, the sensitivity, as assessed by EC50, increased for dectin-2 DC-SIGN expressing cells (Figure 4A). The increased sensitivity due to DC-SIGN co-expression might increase the channel capacity if the allowed dose range spans low-concentration region. Therefore, we calculated the channel capacity by increasing the maximum input concentration. However, this was not the case (Figure 4C). Contrary to DC-SIGN, overexpression of MCL significantly increased the channel capacity of dectin-2 expressing cells, particularly when limiting our dataset to low-maximum invertase concentrations (Figure 4B and D, Appendix 1\u2014figure 4 D and E). This indicates that MCL enhances the fidelity of invertase information transmission of dectin-2 channel, providing quantitative measurement of synergistic effect of MCL (Ostrop et al., 2015; Zhu et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69415/elife-69415-fig4-v3.jpg)\n\n**Figure 4.:** (A) Representative dose response of invertase stimulation of U937 cells expressing dectin-2, MCL, or dectin-2 co-expressed with either DC-SIGN or MCL. (B) Channel capacities of dectin-2 in combination with DC-SIGN and MCL after stimulation with either FurFurMan or invertase (*p<0.05, Wilcoxon rank-sum test). (C and D) Channel capacities calculated from different maximum invertase concentrations of dectin-2 expressing cells compared with either DC-SIGN (C) or MCL (D) co-expression. The shaded regions represent the 95% CI of the channel capacity. The right side of the dashed line in (D) is the region that shows statistical significance between dectin-2 and MCL co-expressed dectin-2 (*p<0.05, Wilcoxon rank-sum test).\n\nWe then wondered whether the difference in channel capacity between dectin-2 and TNF\u03b1R could simply be a result of affinity. Since TNF\u03b1R has a nanomolar affinity for its ligand (Grell et al., 1998), we applied an anti-dectin-2 antibody to stimulate dectin-2 cells. Even under these conditions, we did not monitor an increase in channel capacity (Appendix 1\u2014figure 4 F). Therefore, we found that MCL but not DC-SIGN significantly increase the dectin-2 channel capacity, while both MCL and DC-SIGN enhance cellular binding of the stimulants and the resulting cellular sensitivity to invertase.\n\n### Dectin-2 channel has a low signal-to-noise ratio\n\nThe relatively low channel capacity of dectin-2 could be a result of its limited maximum GFP expression even at high-stimulant concentrations compared to the other channels (Figure 2B). For this, we define the signal power as the variation of the mean GFP expression under individual stimulant dose (Figure 5A). In addition, the level of background noise (i.e. noise power) of the channel can be defined as the average of the variance of GFP expression at a given stimulant dose. These definitions allow to decompose signal and noise power (Appendix 3) and analyze them separately to infer how those two parameters shape the channel capacity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69415/elife-69415-fig5-v3.jpg)\n\n**Figure 5.:** (A) Schematic description of signal and noise power. meani and vari are the average and variance of the output at ith dose, respectively. (B) Decomposed signal power (red) and noise power (blue) of the individual signaling channel. (C) The ratio between signal power and noise power (i.e. signal-to-noise ratio) of individual channel given in (A) (*p<0.05, Wilcoxon rank-sum test).\n\nTNFaR, MINCLE, and dectin-1 have a similar level of noise power. Amongst the three receptors, TNFaR shows the highest signal power and consequently the highest signal-to-noise ratio (Figure 5B and C). All three channels have a signal-to-noise ratio higher than one. For dectin-2, both signal and noise power are low compared to the other receptors; however, the noise power exceeds the signal power, resulting in a significantly lower signal-to-noise ratio. Since the signal power is independent of the noise power, our data indicate that the lower variation of the mean GFP expression (i.e. signal power) of dectin-2 dictates the reduced channel capacity compared to the other receptors. A similar conclusion cannot be drawn for the noise power since it is inherently coupled to the signal power (see Appendix 3).\n\nWe further employed the decomposition method to dectin-2 signaling in the presence of either dectin-1 co-expression or FcR\u03b3 overexpression (Appendix 1\u2014figure 5). Analogous to the compromised channel capacity when dectin-1 and dectin-2 were co-expressed (Figure 3C), the analysis revealed that both the signal and the noise power were compromised as well (Appendix 1\u2014figure 5 A and B). In case of FcR\u03b3 overexpression, dectin-2 signaling after invertase stimulation is characterized by increased noise power, resulting in decreased signal-to-noise ratio (Appendix 1\u2014figure 5 C-E). Therefore, despite the high-GFP expression at high-stimulant concentrations (Figure 2C), the overexpression of FcR\u03b3, as additional signaling hubs, involved in the dectin-2/NF-\u03baB cascade did not increase the signal power but instead elevated the noise power, leading to reduced channel capacity. Taken together, the relatively low-channel capacity of dectin-2 is directly related to its low-signal power, and the overexpression of FcR\u03b3 further decreases the channel capacity through increasing the noise power.\n\n## Discussion\n\nWe set out to better understand how glycan-encoded information is read in cellular communication. We established a glycan-responsive in vitro model and exploited the channel capacity as a quantitative metric. For the receptors other than dectin-2, the channel capacities were around 1 bit or higher, similar values that have been reported for other systems previously (Suderman et al., 2017). In particular, TNF-\u03b1 receptor has a channel capacity of 1.64\u00b10.36 bits, which was found in a comparable reporter cell system (Cheong et al., 2011). Interestingly, the number of receptors expressed on the cell surface did not determine the channel capacity of a signaling channel (Appendix 1\u2014figure 2 G). Our results exemplify that lectin signaling pathways and especially the dectin-2 pathway should not be viewed as a deterministic on/off-switch, but rather as difference in the probability of cells to be active at a certain dose. This is in line with previous reports strengthening a quantitative view of cellular signaling and taking the cellular microheterogeneity into account (Levchenko and Nemenman, 2014; Zhang et al., 2017). We found that the mannose binding CTL dectin-2 to transmits less information compared to other receptors of the same family (Figure 2B).\n\nTo understand how these insights could be expanded on the interplay between multiple receptors like the CTLs occur on innate immune cells rather than isolated lectins, we employed combinations of CTLs on our model cells. Dectin-2 and dectin-1 recognize different epitopes on FurFurMan, and we found that the effects were not additive, but a compromise between the two receptors, showing intermediate sensitivity (EC50) and channel capacity between dectin-2 and dectin-1 (Figure 3A and B). This effect implies at high concentrations of FurFurMan the dectin-2 channel is actively inhibiting dectin-1 signaling, resulting in a lower cellular NF-\u03baB activation. It is well known that lectins are able to modulate the signals of other receptors (Geijtenbeek and Gringhuis, 2009; Gringhuis et al., 2009; Miyake et al., 2015). Yet this compromise is an exciting discovery since to the best of our knowledge previous studies have not quantified lectin signal integration. Hence, it is likely that during a fungal infection, exposing multiple epitopes of pathogens are recognized by the precise arsenal of immune receptors, and their underlying signaling pathways are integrating the information contained within the epitopes. This in turn leads to a compromise of all activated receptors and results in a specifically tailored biochemical response of the given immune cell (Ostrop and Lang, 2017).\n\nDectin-2 itself we found to have relatively less channel capacity when compared to the closely related MINCLE that uses the same pathway with more signal power (Figure 2A and B). It is therefore likely the receptor itself determines very early on the information flow into the cell. This could be a result of MINCLE being stimulated with crystalline insoluble ligands which could result in larger signaling clusters at the cellular surface. Alternatively, dectin-2 signaling could be influenced by mannose structures that are present on the cellular surface by giving rise to background signaling and selection for reducing signaling power in an in vitro setting of high-cellular density. Additionally, since dectin-2 binds high-mannose structures of eukaryotic origin (McGreal et al., 2006), a too sensitive reaction might lead to permanent self-recognition of human Man9 structures for example and hence potential autoimmune reactions. This hypothesis is supported by the dectin-2-dependent high-basal activity of FcR\u03b3 overexpressing dectin-2 cells, which in turn is responsible for a lower channel capacity in dectin-2 FcR\u03b3 cells (Figure 2C\u2013E). Hence, dectin-2 could have evolved to use the CARD9-BCL-10-Malt1 pathway to NF-\u03baB less effective. Along the same lines, recent reports show that CTLs are in general becoming more important in autoimmunity, dectin-2 in particular is known to be responsible for the development of allergic reactions (Dambuza and Brown, 2015; Parsons et al., 2014).\n\nWe first thought a combination of multiple lectins might synergistically enhance signaling capacity of dectin-2. But while DC-SIGN greatly enhanced ligand binding to the cells, meaning the increased sensitivity (EC50), it did not significantly increase the channel capacity (Figure 4A\u2013C, Appendix 1\u2014figure 4A and B). In contrast to DC-SIGN, the closely related MCL to dectin-2 has a significant synergetic effect on dectin-2 channel capacity at particularly low-stimulant concentrations, potentially making double positive cells more discriminative, at earlier timepoints of infection compared to dectin-2 expressing cells, substantiating the importance of signal integration to understand an cellular innate immune response (Ostrop and Lang, 2017).\n\nFinally, it is important to take into consideration that our conclusions came from model cell lines, which were used as a surrogate for cell-type-specific lectin expression patterns of primary immune cells. Human monocytes and dectin-2 positive U937 cells have comparable receptor densities and respond similar to stimulation with zymosan particles (Appendix 1\u2014figure 6A and B). Importantly, since our channel capacity calculations are applicable regardless of the nature of signal and medium, one could use it to quantify cellular responses in similar assays in the future. Work is ongoing to address central questions of cellular communication based on glycan lectin interactions.\n\n## Materials and methods\n\nAll reagents were bought from Sigma Aldrich, if not stated otherwise.\n\n### Reporter cell generation and reporter cell assay\n\nU937 cells were transduced with an NF-\u03baB-GFP Cignal lentivirus (Qiagen) according to the manufacturer\u2019s instructions to generate NF-\u03baB reporter cells. 0.5 mL of 2e5 cells were mixed with the lentivirus at an MOI (multiplicity of infection) of 15 and spin transduced for 1.5 hr at 33\u00b0C and 900 g. After 48 hr of rest, cells were selected with puromycin (gibco) for three passages. Eight cultures from a single cell each were subsequently made and evaluated according to their GFP expression, clone #5 only monoclonal cells were used for all experiments of this paper.\n\n### Reporter cell assay\n\nU937 reporter cells were used in its log phase, and 100 \u00b5L were plated in a 96-well plate with 3e4 cells per well. Cells were challenged in complete media (RPMI with 10% FBS (fetal bovine serum), 1% Glutamax, 1% Pen/Strep, and all by gibco) with TNF-\u03b1 and various other ligands and at various concentrations for 13 hr and 16 hr, respectively. After incubation, cells were re-suspended once in DPBS (Dulbecco's phosphate-buffered saline) and the expressed GFPs fluorescent intensity was measured by flow cytometry (Attune Nxt, Thermo Fisher).\n\n### Cell culturing and passage\n\nU937 cells were kept between 1e5 and 1.5e6 cells/mL in complete media with passage 2\u20134 times a week. 293 F cells were adherently cultured in DMEM (Dulbecco's modified Eagle\u2019s medium) with 10% FBS, 1% Glutamax, 1% Pen/Strep (Gibco), and split 2\u20133 times per week. All cells were tested for mycoplasma contamination using Minerva biolabs VenorGeM Classic.\n\n### Antibody staining and quantitation\n\nFor the surface staining, cells were incubated in with the respective antibodies and isotype controls for 30 min at 4\u00b0C in DPBS, then washed once in DPBS +0.5% BSA and measured via flow cytometry. For perforated stains cells were first fixed in 4% PFA (Carl Roth) at 4\u00b0C for 20 min, then perforated in perforation solution (DPBS +0.5% BSA+0.1% Saponine) for 20 min at 4\u00b0C. The cells were then re-suspended in perforation solution containing the respective antibodies, incubated for 20 min at 4\u00b0C and measured via flow cytometry after being washed once. To quantify the fluorescent intensities, we used the BD PE quantitation kit, which allowed us to calibrate FI to the number of PE molecules present in a sample. A list of all used antibodies can be found in the Supplementary file 1.\n\n### Generation of lectin overexpressing cells\n\ncDNA of MINCLE, dectin-2, MCL, FcR\u03b3, dectin-1, and DC-SIGN were cloned into vector BIC-PGK-Zeo-T2a-mAmetrine:EF1a as previously reported (Wamhoff et al., 2019). This bicistronic vector expresses mAmetrine under the PGK promoter. To combine multiple GOI (gene of interest), we also used the lentiviral vector EF1a-Hygro/Neo a gift from Tobias Meyer (Addgene plasmid # 85134). Briefly, 293F cells were transfected with vectors coding for the lentivirus and GOI. Lentivirions were generated for 72 hr, and the supernatant was frozen to kill any remaining 293 F cells. This supernatant was used to transduce the GOI into U937 cells via spin infection at 900 g and 33\u00b0C in the presence of 0.8 \u00b5g/mL polybrene (van de Weijer et al., 2014). After 48 hr of rest, the U937 cells were selected with appropriate antibiotics (Zeocin 200 \u00b5g/mL, G418 500 \u00b5g/mL, or Hygromycin B 200 \u00b5g/mL; Thermo Fisher, Carl Roth, Thermo Fisher, respectively). A list of used primers can be found in the Supplementary file 2.\n\n### Labeling of proteins\n\nInvertase (5 mg in 1 mL) was heat inactivated for 40 min at 80\u00b0C and mixed with 3\u00d7molar excess of Atto647N-NHS dye (AttoTech) according to the manufacturer\u2019s protocol. The labeled protein was purified using Sephadex G-25 column, and aliquots were frozen at \u201380\u00b0C. Since we found the labeled invertase to contain less impurities, we used Atto647 labeled invertase for all experiments shown in this study. Human TNF-\u03b1 (Peprotech) was labeled with the same procedure, yet without heat inactivation. The degree of labeling was determined to be around 1 as determined with a labeled protein concentration measurement of a NanoPhotometer NP80 (Implen).\n\n### Channel capacity calculation\n\nCalculations of channel capacity were based on Cheong et al., 2011 and Suderman et al., 2017. See Appendix 2 on channel capacity calculation for details.\n\n### Data representation, software, and statistical analysis\n\nData is shown as mean \u00b1 SD. Statistical analysis of data was performed by unpaired two-tailed t-test, with significant different defined as (p<0.05). EC50 values were calculated in graph pad prism version 8.4.2 using four parametric dose vs. response function. When necessary statistical differences between EC50 values were compared using an extra-sum-of-squares F test. Detail of statistical tests and EC50 determinations can be found in the SI raw data file. FlowJo v.10 was used for analysis and export of flow cytometry data.\n\n### Data availability\n\nAll data is available at Dryad. The Jupyter notebook including the channel capacity calculation and noise analysis is available at: https://github.com/imaginationdykim/2022.CC, (copy archived at Fuchsberger, 2023).\n",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "eb806095-97a1-444f-9dc6-4b8fa2537476",
+      "submission_id": "5e980f9b-be6c-43f5-a80a-4f832123d900",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andre Levchenko, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69415.sa0](https://doi.org/10.7554/eLife.69415.sa0)\n\nThis manuscript lays out the framework for addressing an important challenge in our understanding of cellular signal transduction: how complex extracellular inputs can be detected and processed using multiple receptors. This problem is addressed in the context of glycan receptors lectins, mediating very common but still not completely understood cell-cell interactions. Using information capacity analysis, the study addresses the importance of glycan input measurement by multiple receptors on the immune cells, showing how the signal detection can benefit from receptor crosstalk.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andre Levchenko, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69415.sa1](https://doi.org/10.7554/eLife.69415.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Information transfer in mammalian glycan-based communication\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please, address the comments from Reviewer 1 regarding the physiological relevance of the cell model used in this study. In particular, it is imperative to relate the results to physiological levels of receptor expression and address the relevance of the signal processing in the cell type used in the experiments to cellular information transfer in vivo.\n\n2) Both reviewers raise the key issue of how the information transfer was assessed vs previously published studies. Please, expand on the description of the information analysis, put it more explicitly into the context of the prior studies, consider supplying further details and justification for the specific capacity calculation algorithm used in the study.\n\n3) It is important to expand on the discussion of the physiological relevance of having this complex receptor system, particularly in the context of different information transfer properties.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall, this is a fairly interesting piece of work, extending the framework of information theory to a new class of signaling networks that has not, at least to my knowledge, been considered before in this context. It is also quite interesting that there are significant differences in the information transmitted by dectin-2 and other, very closely related receptors; this suggests that even signaling systems with very similar downstream pathways can have very different noise properties. Understanding exactly why this happens mechanistically, and why these networks may have evolved this way, are very interesting future directions suggested by this work.\n\nAll of that being said, I have a number of important suggestions for the authors that I feel would need to be addressed before the manuscript could be considered for eLife. These are:\n\n1) I think the physiological relevance of the results are difficult to evaluate as the manuscript is currently written. The fundamental issue is that the U937 cells considered here are not evolved to sense the glycans considered as \"input\" signals by the authors. Since this is an artificial cell line, the cells in question have not even evolved to sense anything; they were developed from cancer cells and have likely adapted to growing in the lab. So, while these are derived from a (potentially?) relevant immune cell population, they are clearly not representative of the actual human cells that have evolved to sense and respond to potential fungal infections. As far as I can tell, these cells don't even express the relevant receptors, since the authors have to introduce those receptors exogenously.\n\nThe authors may argue that the cells in question are at least immunological in origin, and that cell line work of this type is common in the field due to the difficulty of engineering the appropriate reporters into, say, a mouse in order to do work in primary cells. That may be true, but it still does not alleviate a very critical set of concerns regarding these results. In particular, it is currently difficult to interpret the findings the authors have about dectin-2 having a lower 'channel capacity' than other receptors like dectin-1. As the authors (basically) state, there are two hypotheses regarding this particular result. It does not seem that the difference in channel capacity between dectin-2 and dectin-1 is due to differences in average expression levels or due to differences in the distribution of protein levels themselves. Indeed, compared to TNF-\u03b1, there actually seems to be less noise in dectin-2 binding vs. TNF-\u03b1 binding (more on that question below, see Figure 4A). So, the differences in channel capacity here are likely either due to fact that dectin-2 is somehow just more \"noisy\" as a receptor in and of itself, or the fact that there are differences in the downstream signaling network in between the receptor and NF\u03baB.\n\nThis second hypothesis seems far more likely, given that it is highly unclear that intrinsic differences in, say, the conformational changes that drive signaling processes downstream signaling could be that significantly different between dectin-1 and dectin-2. In other words, it seems extremely unlikely that an intrinsic, biophysical difference between the receptors could be sufficient to explain the difference in channel capacity. As such, it is likely that the real difference here is due to some difference in downstream interactions. The authors seem to imply that any such differences are currently unknown, since these two receptors seem to interact with the same downstream pathways. Regardless, it seems much more likely to me that differences in the signaling networks induced by these two receptors (or dectin-2 and any of the receptors studied here) are driving differences in the observed information transfer.\n\nIt has been shown that the channel capacity depends in a critical way on the distribution of the number of downstream signaling molecules present (see the Suderman et al. (2018) Interface Focus 8 (6), 20180039). In other words, if you have a network that signals through a molecule with low abundance, that will tend to increase noise levels and decrease channel capacity. Or, if there is a molecule in the signaling pathway with a particularly broad distribution across the cell population, that can also lead to low channel capacities.\n\nThe problem in this case is that the cells in question have not evolved to use dectin-2 to sense anything in the environment. So, a particular protein downstream of dectin-2 may be expressed at a low level, or expressed with a broad distribution, simply because there is no need for these cells to sense their environment efficiently. As a result, it is very difficult to interpret the physiological relevance of the results presented here.\n\nAs currently written, the authors seem to make the argument that their findings have revealed a fundamental difference between dectin-2 and the other signaling molecules considered here. I am not myself convinced of that fact, simply because the physiological relevance of exogenously expressing these receptors in an immortal cancer cell line is unclear. I would suggest the authors think about what their results truly mean for our understanding of the underlying biology. Currently, I think it is impossible to infer that the authors would see the same kind of results in primary cells that actually perform the job of sensing these molecules in the body. That being said, the results are still interesting-dectin-1 and dectin-2 are very closely related, and to have such different noise properties is really rather intriguing. It suggests that receptors can have very different dose-response distributions even if they are very similar and are thought to signal through (essentially) identical downstream systems. The fact that this can happen is surprising, I think, and sets up the two alternative hypotheses discussed above. But the authors need to acknowledge this and be more reasonable regarding the extent to which these results can be extrapolated into a more meaningful biological context.\n\n2) One of the most interesting aspects of this work is the fact that the authors consider not just the downstream signaling response, but also directly measure the statistical properties of the first step in the signaling process: namely, receptor binding. I think there is a significant opportunity to understand a critical aspect of cell signaling here in a new and interesting way, and so I have some suggestions for analyses the authors could do that would, I think, really increase the impact of the work.\n\nI would be really interested to see what the channel capacity would be for the information flow between ligand concentration and the level of bound receptor. In other words, the authors can calculate the channel capacity between the dose of the ligand that they give the cells, and the distribution of bound receptor that they observe on the cell surface.\n\nLooking at the data (e.g. Figure 4A), my intuitive sense is that the channel capacities will be relatively low for that calculation: maybe 2 bits or something like that. Interestingly, that is much, much lower than the theoretically possible value we would expect for receptors expressed at around 1000 copies per cell (which is around 3.2-4 bits, see the Suderman Interface Focus paper mentioned above). This may simply be because the receptors are being expressed exogenously and thus have lower absolute numbers, and broader distributions across the population, than would be observed in a more physiological context. That being said, this is to my knowledge the first actual measurement of the amount of bound receptor on the surface of individual cells. This is thus a great opportunity to calculate the information flow between ligand concentration and bound receptor levels.\n\nI should note here that it might be intuitive for the authors to see this as an \"upper bound\" on the channel capacity for their system; in other words, the channel capacity between the ligand concentration and the bound receptor concentration should set an upper bound for the channel capacity for the entire system. The data processing inequality from Shannon seems, at least on the face of it, to guarantee that. It is important to note, however, that the signaling networks in question do not form a Markov chain; the amount of reporter expression can easily average over the entire signaling history in a particular cell. So, whatever the authors find here, it is not technically an upper bound on the downstream information flow. That being said, it would still be very interesting to know!\n\nIt should be relatively easy for the authors to just make this calculation based on the data they already have. I do, however, have suggestions for a few experiments that would improve the rigor of this calculation and make the results even more interesting.\n\nFirstly, it is unclear how representative the bound protein numbers are of the actual number of binding events we would have in the cell culture when the cells are exposed to the ligand. This is because the authors have to wash the cells (at least I assume they do that) and then put them through the FACS instrument to measure the fluorescence. It would be really cool of the authors could do a time course to measure how fast the ligand \"falls off\" of the receptor. As long as the measurements made by the authors occur before significant unbinding has happened, the channel capacity they calculate should be very representative of what actually happened in the culture.\n\nThe other experiment that would be really interesting would be to repeat the experiment with labeled ligands but using whatever primary cells are known to express dectin-1, dectin-2, etc. In other words, the fluorescence here is coming from the ligand, so there is no need to engineer any reporters into the cell. If the authors see similar distributions of bound receptor on the surface of primary cells, and similar channel capacities between ligand concentration input and the bound receptor as output, that would be very intriguing. In any case, doing this experiment would I think begin to address some of the concerns with physiological relevance raised above. It would also be extremely interesting as a contribution to the field.\n\n3) As mentioned in my public comments, another issue in this work is the fact that the authors are relatively reticent about how their calculations are actually performed. While the authors present the relevant equations for calculating the Mutual Information and claim to follow the approach of Cheong et al., the methods are not sufficiently detailed to understand exactly what they have done here. This is particularly important because their approach is clearly not identical to that used by Cheong, since their algorithm for maximizing the MI across input distributions is different. Cheong et al. approach this problem by trying a limited set of possible input distributions and using the one that gives the highest MI, while the authors here use a built-in optimization algorithm in python. It is not clear if this is the only point at which the authors deviate from the approach laid out by Cheong et al., or if they have modified other aspects of the calculation.\n\nThe authors need to explain how they approach the problem of correcting for finite size effects. Do they use the approach of Cheong et al., bootstrapping the data at different levels and then using a linear extrapolation of MI vs. 1/N (where N is the number of data points/cells) to extrapolate to the case of an infinite population size (1/N \\to 0). Did they use the same approach to choosing the number of bins to calculate the probability distribution over outputs? Cheong et al. did this by visual inspection, if I recall correctly, looking for a \"plateau\" in bin numbers where the MI calculated from the data was non-zero but the MI calculated for randomized data was 0. Based on the statements made by the authors, and Figure S6, they seem to have performed both of these steps-otherwise it is completely unclear where the confidence intervals on their MI/channel capacity estimates come from, and how they chose the number of bins to use. Although it is important to note that the randomized controls seem to be missing from Figure S6. Regardless, since the authors have evidently re-implemented the code, they need to explain exactly what they have done.\n\nI would suggest that the authors also adopt several improvements to the Cheong et al. approach that have been developed in subsequent works. In particular, Suderman et al. (2017, PNAS 114 (22), 5755-60) implemented a broader range of bootstrap samples across which to do the linear extrapolation to infinite population size, automated the choice of bin sizes, and developed a bootstrap approach to estimating confidence intervals that is much more realistic (and statistically appropriate) than simply using the confidence intervals from the linear extrapolation step. The authors can refer to the Suderman paper on how this was done; it should be relatively easy to implement these improvements, if they have not been done already.\n\nI appreciate the author's innovation of using an optimizer in python to maximize the MI. I would expect this actually produces higher \"channel capacities\" than the previous approaches mentioned above. That being said, it is unclear how this optimization algorithm works. The authors may expect readers to go to the python documentation, but there are problems there. For one, the algorithm implanted in python might change, so the documentation may describe an approach that is different from the one the authors actually used to perform their calculations. How various packages are implemented in python can change from time to time, and something so generic as \"optimize\" may be changed as better optimization algorithms become available in the future. So the authors should describe exactly what they did. Also, readers are, in general, not going to go to python documentation to understand the methods of a paper like this, nor should they have to. The authors should describe what the algorithm is doing as currently implemented, in terms that readers can readily understand.\n\nFinally, the authors should also perform the calculation using the exact same distributions used by Cheong et al. and Suderman et al. This will allow us to compare their results more directly to the results from those previous authors, as well as allow us to determine if the approach that they used results in similar channel capacities to the optimization algorithm used here. While I expect the optimization algorithm employed by the authors will yield larger numbers for the channel capacity (and thus better estimates, since the channel capacity is formally a supremum), it would be extremely useful if the authors checked this.\n\n4) Another issue related to the calculation of the MI itself is the fact that the authors use logarithmically spaced bins, rather than linear bins, to perform the calculation. The authors describe this approach as if the matter of how to construct the bins is simply a matter of personal preference or convenience for the calculation, and choose logarithmic bins because they give somewhat larger values for the channel capacity. For one, this is not surprising; as is often the case, the FACS data obtained by the authors has a log-normal-like character; in other words, the authors see normal-ish distributions on a log scale (e.g. Figure 2A). As such, it is natural that using logarithmic bins will result in higher channel capacities, because it will tend to equalize (as much as possible) the effective number of observations within the bins.\n\nWhile this may seem reasonable at first, it is actually, in my view, hard to justify. The reason is that the choice of how to generate the bins is not arbitrary, but actually corresponds to a very strong statement regarding what the authors actually consider the relevant \"output\" of the system to be. Using logarithmic bins is obviously equivalent to first taking the log of the data, and then using linear bins on that log-transformed data (Figure S2A should make this fact abundantly clear). The authors are thus envisioning that the channel is not a channel whose input is ligand concentration and output is GFP level, but rather a channel where the input is the ligand concentration and the output is the log of the GFP level. This is not an arbitrary decision, but rather one that has real consequences for how we construe the calculation in a physiological context. If the output is the log of the GFP level, that means that the cell is sensitive not to linear changes in protein concentration, but rather fold-changes.\n\nFor certain transcription factors, authors have argued that it is actually this kind of relative, fold change that matters (see Lee et al. (2014) Mol Cell 53 (6) 867-79). I would argue, however, that the conclusions of that work are hardly so robust as to suggest that, for every input-output transcriptional regulatory system within cells, it is the fold change of the \"output\" protein, rather than its linear change, that matters to the cell. Certainly, if the output is an enzyme, a transporter, or a protein that performs a whole host of other functions, then it is natural to assume that the appropriate output is the protein concentration itself, not the fold change in protein concentration.\n\nIf the authors can argue that every single gene whose transcription is controlled by NF\u03baB has a fold-change impact on its downstream function, then I could see a strong argument being made for logarithmic bins. As it stands, however, I think the most natural way to interpret the output of the channel is on a linear scale, and I would say the authors should focus on that, rather than a logarithmic scale. If the authors want to include their logarithmic calculations in this work, I would suggest moving them to the supplement, and making clear the fact that such a calculation construes the output as having a fold-change impact on whatever is downstream of the protein level measured by the authors.\n\n5) In this work, the authors focus on the measurement of GFP levels at a certain time. As written, it is not clear if the authors are considering the steady-state response of the cells that they are treating, a peak response, or something else. As far as I can tell, the authors stimulate the cells for 16 or 13 hours, depending on the ligand in question. I am not sure how these numbers were chosen-did the authors look at the GFP expression dynamics and choose this number based on those measurements? From an information-theoretic standpoint, it is best if the results are based on steady-state protein levels, but the author's don't seem to explain their rationale for choosing the time points that they choose. If the GFP expression levels do not reach a steady-state, it would be great if the authors had a particular reason for choosing the times they choose. I would also suggest that the authors consider looking to see if their channel capacity estimates are robust to the time they choose by looking at other time points and calculating the channel capacities to see if they get similar results. I am not sure what times to choose, but perhaps 24 hours or 36? It is hard to say without looking at the average dynamics over time, so providing that kind of data would be extremely helpful.\n\nAlso, the authors should acknowledge that a large body of literature has emerged that makes the claim that it is not the individual time points that matter, but rather the entire time series of the response that should be construed as the output. The authors can refer to the Zhang et al. paper in Cell Systems, the paper by Selimkhanov et al. (Science (2014) 346 (6215) 1370-3), papers by the Hoffman group (notably Tang et al. (2020) Nat Commun 12 (1) 1272), and a host of others. I am not suggesting that the authors adopt this worldview; there are actually serious mathematical and conceptual issues with construing the output of a communication channel to be a function like a time series. But, this idea is out there in the literature, and the authors should address this point and discuss how looking at GFP time series, rather than individual time point measurements, might yield different (and undoubtedly higher) channel capacity estimates.\n\n5) As a final, rather important but also rather technical point, the authors in Figure 3C do statistical tests on their channel capacity estimates, comparing dectin-1 and dectin-2 cells to those that express dectin-1 and dectin-2 together. The issue here is that they use a t-test to estimate statistical significance, but it is really unclear where the dispersion (e.g. error bars or standard deviations) in the channel capacity estimates come from. I expect, since the authors day \"n = 9\" in the legend, that they split their data into 9 groups (maybe 9 sets of cells whose results were collected in different FACS runs or something?), performed the channel capacity estimate on each independently, then used the means and standard deviations in those estimates to do the t-test. That is completely made up by me, however; the authors really need to explain where these error estimates (and their +/- X values for channel capacity estimates in the various tables) actually come from.\n\nIn any case, the t-test of course only works if the data in question is drawn from actual Gaussian distributions. This does not mean that the distributions \"look Gaussian\" or \"seem okay;\" in the application of a t-test, you make extremely strong assumptions that only real honest-to-goodness Gaussian distributions actually satisfy. So the data really needs to actually be drawn from a Gaussian distribution for the results of the test to be interpreted appropriately.\n\nMy first suggestion here is that the authors need to use a non-parametric statistical test. That is, unless there is a true, theoretical reason to expect that the data will be drawn from a Gaussian (I know of no such reason, but perhaps the authors have one). The Wilcoxon rank-sum test was made for problems like this one, so I would suggest the authors use that.\n\nA larger problem here, however, is that taking n = 9 (however it was done in the end) is not going to give a great estimate of the uncertainty in the channel capacity estimate. I would instead suggest that the authors merge their data into one data set (unless there are some kind of batch effects that prevent them from doing that) and then using a bootstrap/resampling approach, as in the Suderman et al. PNAS paper, to estimate confidence intervals and generate distributions for statistical tests. These bootstraps can be done hundreds or thousands of times, allowing for even more non-parametric tests (like permutation tests) to be used to estimate statistical significance.\n\nThis is honestly a fairly minor point, because nothing terribly important in the conclusions of the paper rest on the statistical tests here. But, if the authors want to argue that there are real differences between dectin-1, dectin-2 and dectin-1+dectin-2 cells, they should do these statistics in a more non-parametric way.\n\nReviewer #2 (Recommendations for the authors):\n\nI think this paper would be greatly improved if the authors were more precise and detailed in the description of their capacity calculation. To address this, it's likely the authors were following the method from Cheong et al., but some of those details should be described here.\n",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc27a75e-46bd-4443-98f6-92e15df2f130",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C1",
+      "claim": "Glycan-binding proteins, called lectins, are exposed on mammalian cell surfaces and decipher the information encoded within glycans translating it into biochemical signal transduction pathways in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycan-binding proteins, so-called lectins, are exposed on mammalian cell surfaces and decipher the information encoded within glycans translating it into biochemical signal transduction pathways in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about lectin function in mammalian cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "8fcbfe60-b8a9-4b87-8658-9025e6aabef6",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C2",
+      "claim": "All receptors transmit information with similar signaling capacity, except dectin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "All receptors transmit information with similar signaling capacity, except dectin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing channel capacities across multiple receptors shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "1e630cfc-7072-441f-b70b-12184f3347d2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C3",
+      "claim": "Dectin-2 was identified to be less efficient in information transmission compared to the other CTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "This lectin was identified to be less efficient in information transmission compared to the other CTLs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by channel capacity measurements presented in the manuscript comparing dectin-2 to other CTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "0d5deae3-69f9-4246-afcc-e2649cf300bb",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C4",
+      "claim": "When the sensitivity of the dectin-2 pathway was enhanced by overexpression of its co-receptor FcR\u03b3, its transmitted information was not increased.",
+      "claim_type": "EXPLICIT",
+      "source": "even when the sensitivity of the dectin-2 pathway was enhanced by overexpression of its co-receptor FcR\u03b3, its transmitted information was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing FcR\u03b3 overexpression effects on dectin-2 signaling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "f385fc4e-6666-470a-bed2-b1ee5a776125",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C5",
+      "claim": "The signaling capacity of lectin receptors using a similar signal transduction pathway (dectin-1 and dectin-2) is integrated by compromising between the lectins.",
+      "claim_type": "EXPLICIT",
+      "source": "We show how the signaling capacity of lectin receptors using a similar signal transduction pathway (dectin-1 and dectin-2) is being integrated by compromising between the lectins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing intermediate channel capacity and EC50 values when both receptors are co-expressed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "51f027c5-bce1-4187-b845-aa33128cb4d2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C6",
+      "claim": "Co-expression of MCL synergistically enhanced the dectin-2 signaling capacity, particularly at low-glycan stimulant concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, co-expression of MCL synergistically enhanced the dectin-2 signaling capacity, particularly at low-glycan stimulant concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing increased channel capacity when MCL is co-expressed with dectin-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "34809460-082f-4155-bb13-65e5d8ae5695",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C7",
+      "claim": "Glycans are present in all living cells and play a key role in many essential biological processes including development, differentiation, and immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycans are present in all living cells and play a key role in many essential biological processes including development, differentiation, and immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature (Bode et al., 2019; Maverakis et al., 2015; Williams, 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "10df4c85-a460-4279-b54f-2bd3aa87187f",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C8",
+      "claim": "Glycans often encode for information in cellular communication such as self-/non-self-discrimination, cellular identity, and homing as well as apoptosis markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Being surface exposed, glycans often encode for information in cellular communication such as self-/non-self-discrimination, cellular identity, and homing as well as apoptosis markers (Bode et al., 2019; Maverakis et al., 2015; Williams, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "698707ec-c15b-4d92-9be0-1d4a36cd8d22",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C9",
+      "claim": "Glycans are branched structures, where subtle changes in the glycosidic bonds between each monomer can carry essential pieces of information.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than linear biopolymers, such as proteins and nucleic acids, glycans are branched structures, where subtle changes in the glycosidic bonds between each monomer can carry essential pieces of information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about glycan structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "9e13c373-b439-42f8-bf30-5321320e793c",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C10",
+      "claim": "Glycans are products of large cellular machinery and are therefore not directly encoded by the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding to this complexity, glycans are products of large cellular machinery and are therefore not directly encoded by the genome (Cummings, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "427473d6-45ba-4091-b49d-46e7950f31e4",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C11",
+      "claim": "No glycan is recognized by a single receptor, and no individual lectin is highly specific for only one glycan.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycans are recognized by lectins, yet no glycan is recognized by a single receptor, and no individual lectin is highly specific for only one glycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about glycan-lectin interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "67eba266-8e0c-4595-9ea8-2e169f44a97b",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C12",
+      "claim": "Glycan-lectin interactions often depend on the multivalency of both the receptor and the ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, affinities are low, and interactions often depend on the multivalency of both the receptor and the ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about glycan-lectin binding characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "db4caa2a-b364-444e-8490-c40bb28e25f1",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C13",
+      "claim": "Glycan lectin communication should be considered as a stochastically behaving system, rather than a deterministic one.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, since alterations of the glycocalyx do not function as a deterministic on/off switch but rather a progressive tuning of the cellular response, glycan lectin communication should be considered as a stochastically behaving system, rather than a deterministic one (Dennis, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents an inference about the nature of glycan-lectin communication.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "38118dd0-263b-4032-b8e9-cf027b739473",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C14",
+      "claim": "Many lectin receptors serve as triggers for multiple immunological signaling pathways, often funneling down to NF-\u03baB as a transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Many lectin receptors serve as triggers for multiple immunological signaling pathways, often funneling down to NF-\u03baB (nuclear factor kappa-B) as a transcription factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lectin receptor signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "7f364e4c-70fa-4318-b9e6-aee62a7cbabf",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C15",
+      "claim": "MINCLE is a CTL involved in the recognition of pathogens as well as self-damage.",
+      "claim_type": "EXPLICIT",
+      "source": "MINCLE (macrophage-inducible C-type lectin), for example, is a CTL involved in the recognition of pathogens as well as self-damage (Miyake et al., 2015; Williams, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "79d6419d-fec4-48e9-b9bc-0561fc34a5a7",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C16",
+      "claim": "MINCLE and dectin-2 signal via the FcR\u03b3 gamma chain.",
+      "claim_type": "EXPLICIT",
+      "source": "MINCLE and its close relative dectin-2 (dendritic cell-associated C-type lectin-2) signal via the FcR\u03b3 gamma chain (Miyake et al., 2015; Ostrop et al., 2015; Sato et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "97f8463b-c24f-421d-90d1-9166215d33d2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C17",
+      "claim": "MINCLE and dectin-2 signaling leads to CARD9-BCL-10-Malt1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "MINCLE and its close relative dectin-2 (dendritic cell-associated C-type lectin-2) signal via the FcR\u03b3 gamma chain (Miyake et al., 2015; Ostrop et al., 2015; Sato et al., 2006), leading to CARD9-BCL-10-Malt1 activation (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "c7100ea5-407a-4263-a09b-51d6443c55c8",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C18",
+      "claim": "CARD9-BCL-10-Malt1 activation results in the activation of NF-\u03baB, eventually triggering cytokine release.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn results in the activation of NF-\u03baB, eventually triggering cytokine release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the signaling cascade downstream of CARD9-BCL-10-Malt1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "1bbf5c4a-b96e-40dd-8efa-e5ad2aef2745",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C19",
+      "claim": "Dectin-2 and MINCLE share the same signal transduction pathway, while having different functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these two receptors share the same signal transduction pathway, while having different functions (Thompson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "97cb6f38-93c7-45e1-a630-cee00b2e4972",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C20",
+      "claim": "Dectin-1 and dectin-2 have different signal transduction pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dectin-1 and dectin-2 have different signal transduction pathways but are both involved in the detection of \u03b2-glucans and mannan, respectively (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1A and represents established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "c7bc0883-71b2-4ded-b59e-42fe9482c53b",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C21",
+      "claim": "Dectin-1 is involved in the detection of \u03b2-glucans.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dectin-1 and dectin-2 have different signal transduction pathways but are both involved in the detection of \u03b2-glucans and mannan, respectively (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about dectin-1 ligand specificity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "f7115928-3431-48fe-b633-eea1a607474b",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C22",
+      "claim": "Dectin-2 is involved in the detection of mannan.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dectin-1 and dectin-2 have different signal transduction pathways but are both involved in the detection of \u03b2-glucans and mannan, respectively (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about dectin-2 ligand specificity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "11b655f4-42ac-4cd4-bd5d-d50a053a4f04",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C23",
+      "claim": "FurFurMan, mannan, and invertase initiated dectin-2 signaling in reporter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "FurFurMan, an extract of Malassezia furfur, as well as the polysaccharide mannan and invertase, both from Saccharomyces cerevisiae, initiated dectin-2 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "df19fe48-a140-4a07-a979-c46cb0a17bb4",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C24",
+      "claim": "Mannose itself could not initiate dectin-2 signaling but was able to inhibit dectin-2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, owing to the lack of multivalency, mannose itself could not initiate signaling but was able to inhibit dectin-2 function (Figure 1C and D, and also Appendix 1\u2014figure 1 A; Ishikawa et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "83186008-e3e2-40f0-8cf8-28b42a127f56",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C25",
+      "claim": "Invertase treated with \u03b1-mannosidase does not activate the NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the invertase treated with \u03b1-mannosidase does not activate the NF-\u03baB signaling, indicating the glycosylation-dependent dectin-2 activity (Appendix 1\u2014figure 1 B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 1 B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "f7365ae1-e61e-45e1-b04c-985c96304210",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C26",
+      "claim": "The activation of human dectin-2 receptor is triggered by Man-\u03b11\u20132 Man moieties presented on scaffolds like proteins, glycans, or polystyrene beads.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of human dectin-2 receptor is in line with previous reports on its murine homolog, which is triggered by Man-\u03b11\u20132 Man moieties presented on scaffolds like proteins, glycans, or polystyrene beads (Ishikawa et al., 2013; Yonekawa et al., 2014; Zhou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "61b977f7-8adc-4a61-af9a-0b5e98d6e919",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C27",
+      "claim": "FurFurMan could stimulate dectin-1 cells, but this was not inhibited by the addition of mannose.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while FurFurMan could also stimulate dectin-1 cells, this was not inhibited by the addition of mannose, which is expected for this \u03b2-glucan receptor (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "576468b3-cf27-45ab-9da5-ecb406988885",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C28",
+      "claim": "The cellular population revealed an overlap between the unstimulated and the maximally stimulated population, demonstrating the absence of a clear two-state behavior on a population level.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular population revealed an overlap between the unstimulated and the maximally stimulated population, demonstrating the absence of a clear two-state behavior on a population level (Figure 1E, Appendix 1\u2014figure 1 C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E and Appendix 1\u2014figure 1 C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "fe30d822-9fbf-4eed-8555-10d92a2e43d6",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C29",
+      "claim": "GFP expression required at least 16 hr of stimulation to reach its maximum in steady-state protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that change in the reporter level is not affected by protein expression rate, we confirmed that GFP expression required at least 16 hr of stimulation to reach its maximum in steady-state protein expression, while short stimulation with for 2\u20136 hr does not lead the maximum level of GFP production (Appendix 1\u2014figure 1 D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 1 D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "38541b48-329b-442e-ae1d-bb36e679d1bc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C30",
+      "claim": "Short stimulation for 2\u20136 hr does not lead to the maximum level of GFP production.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that change in the reporter level is not affected by protein expression rate, we confirmed that GFP expression required at least 16 hr of stimulation to reach its maximum in steady-state protein expression, while short stimulation with for 2\u20136 hr does not lead the maximum level of GFP production (Appendix 1\u2014figure 1 D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 1 D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "0920ca72-ce08-45c0-b9bc-e0caee2386ed",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C31",
+      "claim": "When dectin-2 expressing cells sorted according to their GFP expression level were re-stimulated, both populations again showed the same broad GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We also ruled out any influence of the selection process for the cellular clones, by sorting dectin-2 expressing cells according to their GFP expression level. When re-stimulated, both populations again showed the same broad GFP expression, confirming the wide range of the response to be independent of genetic differences between individual cells (Appendix 1\u2014figure 1 E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 1 E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "f40c8057-f62a-48b9-9b00-73170827ddc2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C32",
+      "claim": "The wide range of the response is independent of genetic differences between individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When re-stimulated, both populations again showed the same broad GFP expression, confirming the wide range of the response to be independent of genetic differences between individual cells (Appendix 1\u2014figure 1 E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data showing similar broad GFP expression in sorted populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "7b672589-7494-4a1b-a977-aea10b82c8e2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C33",
+      "claim": "Previous work on TNF-\u03b1 signaling found the TNF-\u03b1 channel to have a channel capacity of about 1 bit, in particular 1.64 bits when a reporter cell system was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on TNF-\u03b1 signaling found the TNF-\u03b1 channel to have a channel capacity of about 1 bit in particular 1.64 bits when a reporter cell system was used (Cheong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "3462a74b-3fb3-4502-98fd-20ee9b4c0b7f",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C34",
+      "claim": "Channel capacity can be further increased if one can measure the temporal evolution of output dynamics instead of static output dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this channel capacity can be further increased if one can measure the temporal evolution of output dynamics instead of static output dataset (Selimkhanov et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "73d2f7de-06ee-44c8-b403-8f8476c015c0",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C35",
+      "claim": "For U937 cells, TNF\u03b1R transmits 1.34 bits of channel capacity for TNF-\u03b1 stimulant.",
+      "claim_type": "EXPLICIT",
+      "source": "For U937 cells, we found the TNF\u03b1R transmits 1.34 bits of channel capacity for TNF-\u03b1 stimulant (Figure 2A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "81ff231e-992e-4bb2-8846-1b531f50f2de",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C36",
+      "claim": "TNF\u03b1R channel capacity was not influenced by the introduction of additional lectins (i.e. MINCLE, dectin-2, and DC-SIGN).",
+      "claim_type": "EXPLICIT",
+      "source": "For U937 cells, we found the TNF\u03b1R transmits 1.34 bits of channel capacity for TNF-\u03b1 stimulant (Figure 2A and B), which was not influenced by the introduction of additional lectins (i.e. MINCLE, dectin-2, and DC-SIGN, see Appendix 1\u2014figure 2 C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 2 C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "8f329988-97b8-488c-bdac-37a5a658c9e2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C37",
+      "claim": "For dectin-1 expressing U937 cells, the channel capacities were 1.20 and 1.09 bits for depleted zymosan (DZ) and FurFurMan input, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of dectin-1 expressing U937 cells, the channel capacities were 1.20 and 1.09 bits for depleted zymosan (DZ) and FurFurMan input, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "13a7fc6a-160e-455a-999a-393535bd9c35",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C38",
+      "claim": "MINCLE had a channel capacity of 0.98 bits.",
+      "claim_type": "EXPLICIT",
+      "source": "while both MINCLE and TLR1&2 had a channel capacity of 0.98 and 0.99 bits, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "9be0206a-886e-4137-a95f-674002c6ce4b",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C39",
+      "claim": "TLR1&2 had a channel capacity of 0.99 bits.",
+      "claim_type": "EXPLICIT",
+      "source": "while both MINCLE and TLR1&2 had a channel capacity of 0.98 and 0.99 bits, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "8453cc88-0bf8-44f6-814c-d4035c815444",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C40",
+      "claim": "Dectin-2 stimulation resulted in a channel capacity of 0.70 bits using FurFurMan as a ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dectin-2 stimulation resulted in a channel capacity of 0.70 bits using FurFurMan as a ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "ca8a5d65-ebbc-4554-bc47-cf820eb1ebcc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C41",
+      "claim": "Stimulation using heat inactivated invertase had 0.80 bits channel capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation using heat inactivated invertase or mannan had 0.80 and 0.49 bits, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "3d635f80-cb7a-46b5-9cb9-9ed0836acbfc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C42",
+      "claim": "Stimulation using mannan had 0.49 bits channel capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation using heat inactivated invertase or mannan had 0.80 and 0.49 bits, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "5d94fca8-19ea-46e0-a8aa-fcd5cb5f8b97",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C43",
+      "claim": "In THP-1 cells, a similar trend of lower GFP expression upon stimulation is observed for dectin-2 compared to TNF\u03b1R.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, in THP-1 cells, a similar trend of lower GFP expression upon stimulation is observed, further supporting the notion that dectin-2 has a lower signal transmission capacity compared to the other receptors such as TNF\u03b1R (Appendix 1\u2014figure 2 D-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 2 D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "f9ca06d2-8431-44a2-8a0c-e6a6121a876f",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C44",
+      "claim": "The substantial differences between the channel capacities of MINCLE and dectin-2 rely on very early ligand recognition events.",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking difference was found between MINCLE and dectin-2, as both lectins use the same signaling pathway via FcR\u03b3 (Ishikawa et al., 2013), suggesting that the substantial differences between the channel capacities rely on very early ligand recognition events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that MINCLE and dectin-2 use the same signaling pathway but have different channel capacities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "cd2a67c6-edd4-4b8d-92f7-348b8766d8cc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C45",
+      "claim": "Overexpression of FcR\u03b3 resulted in at least twofold increase of NF-\u03baB controlled GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The overexpression of FcR\u03b3 resulted in at least twofold increase of NF-\u03baB controlled GFP expression (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "38d9faaf-4014-4200-a64b-2bb581d6374e",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C46",
+      "claim": "Overexpression of both dectin-2 and FcR\u03b3 yielded a high-basal NF-\u03baB activation of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of both dectin-2 and FcR\u03b3 yielded a high-basal NF-\u03baB activation of the cells while the sensitivity for its ligand (EC50) increased about 50-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "b5bbd989-01f9-4ac1-ba86-42486d93180c",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C47",
+      "claim": "Overexpression of both dectin-2 and FcR\u03b3 increased the sensitivity for its ligand (EC50) about 50-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of both dectin-2 and FcR\u03b3 yielded a high-basal NF-\u03baB activation of the cells while the sensitivity for its ligand (EC50) increased about 50-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "6ca55d3c-ad84-4969-9942-93d7f3149038",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C48",
+      "claim": "While the maximal GFP signal of dectin-2 (MFI) was increased in the presence of FcR\u03b3 overexpression, the channel capacity decreased simultaneously (0.41 bits).",
+      "claim_type": "EXPLICIT",
+      "source": "While the maximal GFP signal of dectin-2 (MFI, mean fluorescence intensity) was increased in the presence of FcR\u03b3 overexpression, the channel capacity however decreased simultaneously (0.41 bits; Figure 2 C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "a7d35fa6-7dd3-4b25-878c-4732bacdc280",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C49",
+      "claim": "Competition with mannose reduced the high-basal NF-\u03baB activation effect in FcR\u03b3 overexpressing dectin-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since competition with mannose reduced this effect, we speculate that decreased channel capacity might originate from self-recognition of dectin-2 of ligands being present either on the same cell or those in close proximity during the culture conditions (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "060d3244-fa59-42f1-9c00-d811e86f4ec9",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C50",
+      "claim": "Decreased channel capacity in FcR\u03b3 overexpressing dectin-2 cells might originate from self-recognition of dectin-2 of ligands being present either on the same cell or those in close proximity during the culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since competition with mannose reduced this effect, we speculate that decreased channel capacity might originate from self-recognition of dectin-2 of ligands being present either on the same cell or those in close proximity during the culture conditions (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation based on the observation that mannose competition reduces the effect.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "92314c69-be1f-4216-be74-886aebf67300",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C51",
+      "claim": "The channel capacity of a glycan-based communication channel is not necessarily coupled to its sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, we concluded the channel capacity of a glycan-based communication channel is not necessarily coupled to its sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing FcR\u03b3 overexpression increases sensitivity but decreases channel capacity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "d394402c-a8f1-4557-9fdf-043152948e81",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C52",
+      "claim": "The ability of a communication channel to transmit information is not well described by its maximal signal alone (i.e. MFI), but rather by the channel capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the ability of a communication channel to transmit information is not well described by its maximal signal alone (i.e. MFI), but rather by the channel capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "6b82010e-4bbe-4de0-82bc-520de8f18d6b",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C53",
+      "claim": "The difference in MINCLE and dectin-2 channel capacities is not due to differences in receptor expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we quantified the number of receptors and excluded that the difference in MINCLE and dectin-2 channel capacities is due to differences in receptor expression levels (Appendix 1\u2014figure 2 G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 2 G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "0c52f261-169c-4003-8ace-b67f3993243c",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C54",
+      "claim": "The number of receptors has little influence on the channel capacity or amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, dectin-2 has relatively less channel capacity, and while its sensitivity (EC50) can be modulated with FcR\u03b3, the transmitted information does not increase. Additionally, the number of receptors has little influence on the channel capacity or amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "de3d7d42-ab3d-4e48-959a-9dbaa48fcfe0",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C55",
+      "claim": "The level of receptor expression did not change upon expression of an additional lectin.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, we found that the level of receptor expression did not change upon expression of an additional lectin (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "434927b6-92cf-48ee-b987-240fdb1e0ab1",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C56",
+      "claim": "Dectin-1 expressing cells gave a higher maximal signal (i.e. maximal MFI) and channel capacity than dectin-2 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dectin-1 expressing cells gave a higher maximal signal (i.e. maximal MFI) and channel capacity than dectin-2 expressing cells; however, the latter channel showed higher sensitivity (EC50) to FurFurMan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "fa309f43-d01f-4b5a-a530-08148d1334fc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C57",
+      "claim": "Dectin-2 expressing cells showed higher sensitivity (EC50) to FurFurMan than dectin-1 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dectin-1 expressing cells gave a higher maximal signal (i.e. maximal MFI) and channel capacity than dectin-2 expressing cells; however, the latter channel showed higher sensitivity (EC50) to FurFurMan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "deced7a8-b027-4444-ad29-0865d4d01e62",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C58",
+      "claim": "The double positive cells (dectin-1 and dectin-2) did compromise between the two receptors, displaying the values corresponding to the intermediate values of the EC50 and channel capacity of dectin-1 and dectin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the double positive cells did compromise between the two receptors, displaying the values corresponding to the intermediate values of the EC50 and channel capacity of dectin-1 and dectin-2 (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "18288bab-e6bc-423b-9d7f-c36487e35511",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C59",
+      "claim": "U937 dectin-1 dectin-2 expressing cells showed the same dose-response curve as dectin-1 expressing cells when mannose was used to interfere with dectin-2 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mannose could be used to interfere with dectin-2 signaling, thus U937 dectin-1 dectin-2 expressing cells showed the same dose-response curve as dectin-1 expressing cells (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "346befbe-d941-4a75-bc56-fbfe29b88fc1",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C60",
+      "claim": "When DZ, a dectin-1 specific stimulant, was used, dectin-2 expression did not significantly influence the response of the double positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When DZ, a dectin-1 specific stimulants, was used, dectin-2 expression did not significantly influence the response of the double positive cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data mentioned in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "b34d8bdf-99c1-44e7-8d4f-a4a718e6e656",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C61",
+      "claim": "Dectin-2 specific signaling was not influenced by dectin-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, dectin-2 specific signaling was not influenced by dectin-1 expression (Appendix 1\u2014figure 3 A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 3 A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "bbcdde0e-826e-41c0-bc65-82bb53032842",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C62",
+      "claim": "Inhibition of dectin-2 signaling initiated by FurFurMan by the addition of 25 mM mannose resulted in a response that was not a compromise.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inhibition of dectin-2 signaling initiated by FurFurMan by the addition of 25 mM mannose resulted a response that was not a compromise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "cf7f5b11-b651-48a7-b15d-2740397b68a3",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C63",
+      "claim": "The simultaneous stimulation of dectin-1 and dectin-2 resulted in a compromise between their channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we see that the simultaneous stimulation of dectin-1 and dectin-2 resulted in a compromise between their channels, which demonstrates how these two channels integrate glycan signal into response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "1d7988a2-b323-4445-891d-a366fb551afe",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C64",
+      "claim": "DC-SIGN does not elicit NF-\u03baB signaling by itself in U937 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although DC-SIGN does not elicit NF-\u03baB signaling by itself in U937 cells, it is known to recognize high-mannose structures present on invertase (Gringhuis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "600bef5f-979a-4619-9099-53fdafeec4bb",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C65",
+      "claim": "DC-SIGN is known to recognize high-mannose structures present on invertase.",
+      "claim_type": "EXPLICIT",
+      "source": "Although DC-SIGN does not elicit NF-\u03baB signaling by itself in U937 cells, it is known to recognize high-mannose structures present on invertase (Gringhuis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "40b92def-0456-4c19-9e4d-d3ed45f0476c",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C66",
+      "claim": "U937 dectin-2 DC-SIGN cells experience significantly increased ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, U937 dectin-2 DC-SIGN cells experience significantly increased ligand binding (Appendix 1\u2014figure 4 A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 4 A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "48dc49d6-877b-4931-b103-f05114044f79",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C67",
+      "claim": "DC-SIGN-mediated ligand binding did not alter the dectin-2 channel capacity for FurFurMan or invertase stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, DC-SIGN-mediated ligand binding did not alter the dectin-2 channel capacity for FurFurMan or invertase stimulation or did DC-SIGN expression itself modulate TLR4 signaling (Figure 4B, Appendix 1\u2014figure 4 C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and Appendix 1\u2014figure 4 C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "7d954065-7265-4a07-ad2d-27c4e6361e0e",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C68",
+      "claim": "DC-SIGN expression itself did not modulate TLR4 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, DC-SIGN-mediated ligand binding did not alter the dectin-2 channel capacity for FurFurMan or invertase stimulation or did DC-SIGN expression itself modulate TLR4 signaling (Figure 4B, Appendix 1\u2014figure 4 C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 4 C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "8a0273a7-b4bf-4976-8bea-cac154f3686f",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C69",
+      "claim": "The sensitivity, as assessed by EC50, increased for dectin-2 DC-SIGN expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sensitivity, as assessed by EC50, increased for dectin-2 DC-SIGN expressing cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "0540ae9c-70c3-4181-a233-f7ef389bde0d",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C70",
+      "claim": "Overexpression of MCL significantly increased the channel capacity of dectin-2 expressing cells, particularly when limiting the dataset to low-maximum invertase concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to DC-SIGN, overexpression of MCL significantly increased the channel capacity of dectin-2 expressing cells, particularly when limiting our dataset to low-maximum invertase concentrations (Figure 4B and D, Appendix 1\u2014figure 4 D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and D, and Appendix 1\u2014figure 4 D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "352d2fe3-9197-4662-a9b5-535e59084498",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C71",
+      "claim": "MCL enhances the fidelity of invertase information transmission of dectin-2 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that MCL enhances the fidelity of invertase information transmission of dectin-2 channel, providing quantitative measurement of synergistic effect of MCL (Ostrop et al., 2015; Zhu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing increased channel capacity with MCL co-expression, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "dc0153fb-c66f-4a5a-b04f-71b246319ad1",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C72",
+      "claim": "TNF\u03b1R has a nanomolar affinity for its ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TNF\u03b1R has a nanomolar affinity for its ligand (Grell et al., 1998), we applied an anti-dectin-2 antibody to stimulate dectin-2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "299d3f78-2dac-494b-bfaa-6af142b60e25",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C73",
+      "claim": "Stimulation of dectin-2 cells with an anti-dectin-2 antibody did not result in an increase in channel capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TNF\u03b1R has a nanomolar affinity for its ligand (Grell et al., 1998), we applied an anti-dectin-2 antibody to stimulate dectin-2 cells. Even under these conditions, we did not monitor an increase in channel capacity (Appendix 1\u2014figure 4 F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 4 F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "63b5aac8-095b-4c5d-b01e-c6ef82a28f41",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C74",
+      "claim": "MCL but not DC-SIGN significantly increase the dectin-2 channel capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we found that MCL but not DC-SIGN significantly increase the dectin-2 channel capacity, while both MCL and DC-SIGN enhance cellular binding of the stimulants and the resulting cellular sensitivity to invertase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "eb5b29d6-73ef-42ac-8033-6f2d1e5f417c",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C75",
+      "claim": "Both MCL and DC-SIGN enhance cellular binding of the stimulants and the resulting cellular sensitivity to invertase.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we found that MCL but not DC-SIGN significantly increase the dectin-2 channel capacity, while both MCL and DC-SIGN enhance cellular binding of the stimulants and the resulting cellular sensitivity to invertase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "ab7fd324-c095-4bc9-a2a7-8013daa4774e",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C76",
+      "claim": "TNF\u03b1R, MINCLE, and dectin-1 have a similar level of noise power.",
+      "claim_type": "EXPLICIT",
+      "source": "TNFaR, MINCLE, and dectin-1 have a similar level of noise power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the signal and noise power analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "45e38661-29b5-4108-b63f-7bfa16fb92ae",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C77",
+      "claim": "TNF\u03b1R shows the highest signal power amongst TNF\u03b1R, MINCLE, and dectin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the three receptors, TNFaR shows the highest signal power and consequently the highest signal-to-noise ratio (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "de860051-df42-4516-9edb-ae81a97f6c20",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C78",
+      "claim": "TNF\u03b1R shows the highest signal-to-noise ratio amongst TNF\u03b1R, MINCLE, and dectin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the three receptors, TNFaR shows the highest signal power and consequently the highest signal-to-noise ratio (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "69283a2b-c1a0-49c3-bda7-35ccb579aa14",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C79",
+      "claim": "TNF\u03b1R, MINCLE, and dectin-1 have a signal-to-noise ratio higher than one.",
+      "claim_type": "EXPLICIT",
+      "source": "All three channels have a signal-to-noise ratio higher than one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "92140e33-6b9e-4f0e-8431-eabe24aa8090",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C80",
+      "claim": "For dectin-2, both signal and noise power are low compared to the other receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "For dectin-2, both signal and noise power are low compared to the other receptors; however, the noise power exceeds the signal power, resulting in a significantly lower signal-to-noise ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "da1e8517-0474-414d-b5ac-f0a5ef40c382",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C81",
+      "claim": "For dectin-2, the noise power exceeds the signal power, resulting in a significantly lower signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "For dectin-2, both signal and noise power are low compared to the other receptors; however, the noise power exceeds the signal power, resulting in a significantly lower signal-to-noise ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "77794af1-95ae-48ee-b3d8-911e29e4f7fa",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C82",
+      "claim": "The lower variation of the mean GFP expression (i.e. signal power) of dectin-2 dictates the reduced channel capacity compared to the other receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the signal power is independent of the noise power, our data indicate that the lower variation of the mean GFP expression (i.e. signal power) of dectin-2 dictates the reduced channel capacity compared to the other receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the signal and noise power analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "e5d3e989-110a-467b-8c03-c06b8805a733",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C83",
+      "claim": "When dectin-1 and dectin-2 were co-expressed, both the signal and the noise power were compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous to the compromised channel capacity when dectin-1 and dectin-2 were co-expressed (Figure 3C), the analysis revealed that both the signal and the noise power were compromised as well (Appendix 1\u2014figure 5 A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 5 A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "97e59b12-72cc-42ba-9171-f1e91ffb5bc4",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C84",
+      "claim": "In case of FcR\u03b3 overexpression, dectin-2 signaling after invertase stimulation is characterized by increased noise power, resulting in decreased signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of FcR\u03b3 overexpression, dectin-2 signaling after invertase stimulation is characterized by increased noise power, resulting in decreased signal-to-noise ratio (Appendix 1\u2014figure 5 C-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 5 C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "dc1b3ac1-54b4-4b4f-baf6-8510b72690ae",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C85",
+      "claim": "The overexpression of FcR\u03b3 did not increase the signal power but instead elevated the noise power, leading to reduced channel capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, despite the high-GFP expression at high-stimulant concentrations (Figure 2C), the overexpression of FcR\u03b3, as additional signaling hubs, involved in the dectin-2/NF-\u03baB cascade did not increase the signal power but instead elevated the noise power, leading to reduced channel capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the signal and noise power analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "8985f60d-c467-44c7-9926-0a43e2cff3f2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C86",
+      "claim": "The relatively low-channel capacity of dectin-2 is directly related to its low-signal power.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the relatively low-channel capacity of dectin-2 is directly related to its low-signal power, and the overexpression of FcR\u03b3 further decreases the channel capacity through increasing the noise power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the signal and noise power analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "f707fa7f-6b0a-48ab-bc27-5708fd52085d",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C87",
+      "claim": "For the receptors other than dectin-2, the channel capacities were around 1 bit or higher.",
+      "claim_type": "EXPLICIT",
+      "source": "For the receptors other than dectin-2, the channel capacities were around 1 bit or higher, similar values that have been reported for other systems previously (Suderman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "193cc3c5-2247-49c4-82a1-d8dae4b7301e",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C88",
+      "claim": "TNF-\u03b1 receptor has a channel capacity of 1.64\u00b10.36 bits in a comparable reporter cell system.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, TNF-\u03b1 receptor has a channel capacity of 1.64\u00b10.36 bits, which was found in a comparable reporter cell system (Cheong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "06bd49fb-69e6-43ac-a417-b72a91fe8e07",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C89",
+      "claim": "The number of receptors expressed on the cell surface did not determine the channel capacity of a signaling channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the number of receptors expressed on the cell surface did not determine the channel capacity of a signaling channel (Appendix 1\u2014figure 2 G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 2 G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "9311d23f-d450-4799-bbd9-35de0d13644e",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C90",
+      "claim": "Lectin signaling pathways and especially the dectin-2 pathway should not be viewed as a deterministic on/off-switch, but rather as difference in the probability of cells to be active at a certain dose.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results exemplify that lectin signaling pathways and especially the dectin-2 pathway should not be viewed as a deterministic on/off-switch, but rather as difference in the probability of cells to be active at a certain dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations of broad population distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "66683ad8-1231-4032-a7c7-b858aff9af51",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C91",
+      "claim": "Dectin-2 and dectin-1 recognize different epitopes on FurFurMan.",
+      "claim_type": "EXPLICIT",
+      "source": "Dectin-2 and dectin-1 recognize different epitopes on FurFurMan, and we found that the effects were not additive, but a compromise between the two receptors, showing intermediate sensitivity (EC50) and channel capacity between dectin-2 and dectin-1 (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and established knowledge about receptor specificities.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "e424a367-c85a-4574-82a1-9773a9017120",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C92",
+      "claim": "At high concentrations of FurFurMan the dectin-2 channel is actively inhibiting dectin-1 signaling, resulting in a lower cellular NF-\u03baB activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect implies at high concentrations of FurFurMan the dectin-2 channel is actively inhibiting dectin-1 signaling, resulting in a lower cellular NF-\u03baB activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of compromised signaling in double positive cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "3826f61d-4550-49bc-8771-a2d0b3e10dec",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C93",
+      "claim": "Lectins are able to modulate the signals of other receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that lectins are able to modulate the signals of other receptors (Geijtenbeek and Gringhuis, 2009; Gringhuis et al., 2009; Miyake et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "0dabd209-aa2f-4ddd-859c-0027aac1befc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C94",
+      "claim": "During a fungal infection, exposing multiple epitopes of pathogens are recognized by the precise arsenal of immune receptors, and their underlying signaling pathways are integrating the information contained within the epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is likely that during a fungal infection, exposing multiple epitopes of pathogens are recognized by the precise arsenal of immune receptors, and their underlying signaling pathways are integrating the information contained within the epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental findings about signal integration.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "e5b2e890-d7bf-42ed-852f-60336483bccc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C95",
+      "claim": "Signal integration leads to a compromise of all activated receptors and results in a specifically tailored biochemical response of the given immune cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn leads to a compromise of all activated receptors and results in a specifically tailored biochemical response of the given immune cell (Ostrop and Lang, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "8561f251-e3b8-4fe0-a555-85d8924fdec4",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C96",
+      "claim": "It is likely the receptor itself determines very early on the information flow into the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Dectin-2 itself we found to have relatively less channel capacity when compared to the closely related MINCLE that uses the same pathway with more signal power (Figure 2A and B). It is therefore likely the receptor itself determines very early on the information flow into the cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that MINCLE and dectin-2 have different channel capacities despite using the same pathway.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "60edfd43-b5f5-4013-949b-f1aeeeceed0f",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C97",
+      "claim": "The difference in channel capacity between MINCLE and dectin-2 could be a result of MINCLE being stimulated with crystalline insoluble ligands which could result in larger signaling clusters at the cellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be a result of MINCLE being stimulated with crystalline insoluble ligands which could result in larger signaling clusters at the cellular surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism underlying the difference in channel capacity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "4bc72c7c-b0b7-46a9-85a2-a226afc3bcb7",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C98",
+      "claim": "Dectin-2 signaling could be influenced by mannose structures that are present on the cellular surface by giving rise to background signaling and selection for reducing signaling power in an in vitro setting of high-cellular density.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, dectin-2 signaling could be influenced by mannose structures that are present on the cellular surface by giving rise to background signaling and selection for reducing signaling power in an in vitro setting of high-cellular density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism underlying the low channel capacity of dectin-2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "b50b2f8c-8196-4760-9f42-91a7eb5a5b4a",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C99",
+      "claim": "Since dectin-2 binds high-mannose structures of eukaryotic origin, a too sensitive reaction might lead to permanent self-recognition of human Man9 structures and hence potential autoimmune reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, since dectin-2 binds high-mannose structures of eukaryotic origin (McGreal et al., 2006), a too sensitive reaction might lead to permanent self-recognition of human Man9 structures for example and hence potential autoimmune reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation about dectin-2 ligand specificity.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "ee027da1-d1fd-4c2d-8ac4-c8b46dc3f499",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C100",
+      "claim": "The dectin-2-dependent high-basal activity of FcR\u03b3 overexpressing dectin-2 cells is responsible for a lower channel capacity in dectin-2 FcR\u03b3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by the dectin-2-dependent high-basal activity of FcR\u03b3 overexpressing dectin-2 cells, which in turn is responsible for a lower channel capacity in dectin-2 FcR\u03b3 cells (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "f70470ae-f69c-4714-bb64-0ce1047a414e",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C101",
+      "claim": "Dectin-2 could have evolved to use the CARD9-BCL-10-Malt1 pathway to NF-\u03baB less effectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, dectin-2 could have evolved to use the CARD9-BCL-10-Malt1 pathway to NF-\u03baB less effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "189c8928-e662-4fba-8365-5254a5762254",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C102",
+      "claim": "CTLs are in general becoming more important in autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the same lines, recent reports show that CTLs are in general becoming more important in autoimmunity, dectin-2 in particular is known to be responsible for the development of allergic reactions (Dambuza and Brown, 2015; Parsons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "cafe3905-8138-4abc-925a-713dac59428f",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C103",
+      "claim": "Dectin-2 in particular is known to be responsible for the development of allergic reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the same lines, recent reports show that CTLs are in general becoming more important in autoimmunity, dectin-2 in particular is known to be responsible for the development of allergic reactions (Dambuza and Brown, 2015; Parsons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "cbdca38f-3524-4cac-876d-d481a2619ec9",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C104",
+      "claim": "Human monocytes and dectin-2 positive U937 cells have comparable receptor densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Human monocytes and dectin-2 positive U937 cells have comparable receptor densities and respond similar to stimulation with zymosan particles (Appendix 1\u2014figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "c4d849c5-e658-490f-8b97-f90f9a3e6fc2",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C105",
+      "claim": "Human monocytes and dectin-2 positive U937 cells respond similarly to stimulation with zymosan particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Human monocytes and dectin-2 positive U937 cells have comparable receptor densities and respond similar to stimulation with zymosan particles (Appendix 1\u2014figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "359da33e-9ac9-496e-845c-120dd345adbf",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "claim_id": "C106",
+      "claim": "Channel capacity calculations are applicable regardless of the nature of signal and medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, since our channel capacity calculations are applicable regardless of the nature of signal and medium, one could use it to quantify cellular responses in similar assays in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the general applicability of the channel capacity metric.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f43ca2dc-2009-483b-afff-78be91649fa0",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Multiple C-type lectin receptors (CTLs) and other immune receptors were compared for their information transmission capacity using channel capacity as a metric. TNF\u03b1R, dectin-1, MINCLE, and TLR1&2 all showed channel capacities around 1 bit or higher (1.34, 1.20/1.09, 0.98, and 0.99 bits respectively), while dectin-2 consistently showed lower channel capacity (0.49-0.80 bits depending on ligand).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C35-C43, and C87 collectively demonstrate through experimental data (Figure 2A-B) that dectin-2 has significantly lower channel capacity compared to other receptors tested. The measurements are consistent across different ligands and cell types (U937 and THP-1), with appropriate controls and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FcR\u03b3 overexpression in dectin-2 cells increased sensitivity (EC50) by ~50-fold and increased maximal GFP expression, but paradoxically decreased channel capacity from 0.70 to 0.41 bits. This effect was partially reversed by mannose competition, suggesting self-recognition contributes to the reduced information transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C54 are well-supported by experimental data (Figure 2C-E, Appendix 1-figure 2G) showing the decoupling of sensitivity from channel capacity. The mannose competition experiment (C49) provides mechanistic insight, though the self-recognition hypothesis (C50) remains speculative. The conclusion that channel capacity is independent of sensitivity (C51) and receptor number (C53-C54) is appropriately drawn from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "1294b48a-5873-44bb-968e-5279ba2122d7",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Co-expression of dectin-1 and dectin-2 resulted in a compromise between the two receptors when stimulated with FurFurMan, showing intermediate EC50 and channel capacity values. Mannose inhibition of dectin-2 restored dectin-1-like responses, and dectin-1-specific stimulation (DZ) was unaffected by dectin-2 co-expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C63 and C91-C92 are supported by experimental data (Figure 3A-D, Appendix 1-figure 3A-C) demonstrating signal integration through compromise. The mannose competition and DZ-specific stimulation experiments provide appropriate controls. The inference that dectin-2 actively inhibits dectin-1 at high concentrations (C92) is reasonable but could benefit from additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "e191be87-60f0-4309-94cf-9149dd0c4cb1",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DC-SIGN co-expression with dectin-2 increased ligand binding and sensitivity (EC50) but did not significantly alter channel capacity for FurFurMan or invertase stimulation, nor did it modulate TLR4 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69, C74-C75 are supported by experimental data (Figure 4A-C, Appendix 1-figure 4A-C) showing that DC-SIGN enhances binding and sensitivity without affecting channel capacity. The controls for TLR4 signaling (C68) strengthen the specificity of the findings. The conclusion distinguishes between binding enhancement and information transmission capacity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "136035bc-e000-4e7a-b9fb-29fbb2c724aa",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MCL co-expression synergistically increased dectin-2 channel capacity, particularly at low invertase concentrations, enhancing the fidelity of information transmission. This contrasts with DC-SIGN, which only enhanced sensitivity without affecting channel capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C70-C71, and C74 are supported by experimental data (Figure 4B, D, Appendix 1-figure 4D-E) showing statistically significant increases in channel capacity with MCL co-expression, especially at low ligand concentrations. The concentration-dependent analysis (C70) strengthens the finding. The synergistic effect is appropriately quantified and compared to DC-SIGN.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "5a974495-5c7f-4cf9-a445-32daa568aac0",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Signal and noise power decomposition revealed that dectin-2's low channel capacity is primarily due to low signal power rather than high noise power. TNF\u03b1R, MINCLE, and dectin-1 showed signal-to-noise ratios >1, while dectin-2's noise power exceeded signal power. FcR\u03b3 overexpression increased noise power without increasing signal power, further reducing channel capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C86 are supported by signal/noise decomposition analysis (Figure 5, Appendix 1-figure 5). The mathematical framework for decomposing signal and noise power is appropriate, and the conclusions about dectin-2's low signal power (C82, C86) are well-justified. The analysis of FcR\u03b3 overexpression effects (C84-C85) and dectin-1/dectin-2 co-expression (C83) provides mechanistic insight into channel capacity modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dectin-2 reporter cells respond to multivalent mannose-containing ligands (FurFurMan, mannan, invertase) but not monomeric mannose, which acts as an inhibitor. The cellular response shows broad population distributions without clear two-state behavior, and this heterogeneity is independent of genetic differences between cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C32 are supported by experimental data (Figure 1C-E, Appendix 1-figure 1A-E) demonstrating ligand specificity, multivalency requirements, and population heterogeneity. The controls including mannose inhibition (C24), \u03b1-mannosidase treatment (C25), time-course experiments (C29-C30), and cell sorting/re-stimulation (C31-C32) appropriately validate the findings and rule out artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "6b988571-cbb6-479a-91fd-99a182d8b9f9",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work established that TNF-\u03b1 receptor has a channel capacity of approximately 1.64\u00b10.36 bits in reporter cell systems, and that channel capacity can be increased by measuring temporal dynamics rather than static outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 and C88 accurately cite prior literature (Cheong et al., 2011; Selimkhanov et al., 2014) and provide appropriate context for the current study's findings. The values are correctly attributed and the methodological considerations are relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "98858383-7298-4211-81bb-d9f0d60b42bc",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Despite TNF\u03b1R having nanomolar affinity for its ligand, stimulation of dectin-2 cells with high-affinity anti-dectin-2 antibody did not increase channel capacity, suggesting that affinity alone does not determine information transmission capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by citation (Grell et al., 1998) and experimental data (Appendix 1-figure 4F). This control experiment appropriately tests whether high-affinity binding can rescue dectin-2's low channel capacity, supporting the conclusion that other factors beyond affinity determine information transmission.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "fa1e5a6b-c00f-4508-be2d-4e736bf7b1c9",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The number of receptors expressed on the cell surface does not determine the channel capacity of a signaling channel, as demonstrated by quantification of receptor numbers across different CTLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C54 are supported by experimental data (Appendix 1-figure 2G) showing that receptor expression levels do not correlate with channel capacity. This finding is important for understanding that information transmission capacity is not simply a function of receptor abundance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "a7c44b98-ec6f-4e5f-9dc7-71ca955578f3",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Human monocytes and dectin-2 positive U937 cells have comparable receptor densities and respond similarly to zymosan particle stimulation, validating the U937 reporter system as a model for primary immune cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 are supported by experimental data (Appendix 1-figure 6A-B) comparing primary cells to the model system. This validation is important for establishing the physiological relevance of the findings, though more extensive characterization of primary cells would strengthen the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "ba67c0a9-e88a-4808-8800-e618b3f8177a",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that dectin-2's low channel capacity may result from early receptor-level events, potentially due to crystalline ligand clustering differences (for MINCLE), self-recognition of cellular mannose structures, or evolutionary pressure to avoid autoimmune reactions from recognizing eukaryotic high-mannose structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C101 are primarily speculative (C97-C99, C101) or inferential (C96, C100) interpretations of the data. While the speculation is reasonable and supported by some evidence (mannose competition in FcR\u03b3 overexpression), these mechanistic hypotheses require direct experimental validation. The evolutionary argument (C99, C101) is plausible but remains untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge claims about glycan biology, lectin function, and CTL signaling pathways, including the roles of MINCLE, dectin-1, and dectin-2 in immune recognition and their downstream signaling through NF-\u03baB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C22 represent established knowledge appropriately cited from prior literature. These provide necessary context for the study but are not novel findings. The citations appear accurate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    },
+    {
+      "id": "95fb341b-a4be-4eea-912a-c238bbd12f2b",
+      "content_id": "fc73dd4a-6476-4fc1-8537-f80094c9f398",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Interpretive claims about the stochastic nature of lectin signaling, signal integration during infection, and the broader applicability of channel capacity analysis to cellular communication systems. Also includes citations about CTL roles in autoimmunity and allergic reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90, C93-C95, C102-C103, and C106 represent reasonable interpretations and generalizations from the data, supported by appropriate citations. The stochastic interpretation (C90) is well-justified by the population distribution data. The speculation about pathogen recognition (C94) is reasonable but extends beyond the experimental data. The methodological claim (C106) about general applicability is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:13:29.864079Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8fcbfe60-b8a9-4b87-8658-9025e6aabef6",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "1e630cfc-7072-441f-b70b-12184f3347d2",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "73d2f7de-06ee-44c8-b403-8f8476c015c0",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "81ff231e-992e-4bb2-8846-1b531f50f2de",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "8f329988-97b8-488c-bdac-37a5a658c9e2",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "13a7fc6a-160e-455a-999a-393535bd9c35",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "9be0206a-886e-4137-a95f-674002c6ce4b",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "8453cc88-0bf8-44f6-814c-d4035c815444",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "ca8a5d65-ebbc-4554-bc47-cf820eb1ebcc",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "3d635f80-cb7a-46b5-9cb9-9ed0836acbfc",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "5d94fca8-19ea-46e0-a8aa-fcd5cb5f8b97",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "f707fa7f-6b0a-48ab-bc27-5708fd52085d",
+      "result_id": "f43ca2dc-2009-483b-afff-78be91649fa0"
+    },
+    {
+      "claim_id": "f9ca06d2-8431-44a2-8a0c-e6a6121a876f",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "cd2a67c6-edd4-4b8d-92f7-348b8766d8cc",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "38d9faaf-4014-4200-a64b-2bb581d6374e",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "b5bbd989-01f9-4ac1-ba86-42486d93180c",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "6ca55d3c-ad84-4969-9942-93d7f3149038",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "a7d35fa6-7dd3-4b25-878c-4732bacdc280",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "060d3244-fa59-42f1-9c00-d811e86f4ec9",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "92314c69-be1f-4216-be74-886aebf67300",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "d394402c-a8f1-4557-9fdf-043152948e81",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "6b82010e-4bbe-4de0-82bc-520de8f18d6b",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "0c52f261-169c-4003-8ace-b67f3993243c",
+      "result_id": "59f0d672-8b53-4e2d-a705-99b1d5d7380d"
+    },
+    {
+      "claim_id": "de3d7d42-ab3d-4e48-959a-9dbaa48fcfe0",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "434927b6-92cf-48ee-b987-240fdb1e0ab1",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "fa309f43-d01f-4b5a-a530-08148d1334fc",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "deced7a8-b027-4444-ad29-0865d4d01e62",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "18288bab-e6bc-423b-9d7f-c36487e35511",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "346befbe-d941-4a75-bc56-fbfe29b88fc1",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "b34d8bdf-99c1-44e7-8d4f-a4a718e6e656",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "bbcdde0e-826e-41c0-bc65-82bb53032842",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "cf7f5b11-b651-48a7-b15d-2740397b68a3",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "66683ad8-1231-4032-a7c7-b858aff9af51",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "e424a367-c85a-4574-82a1-9773a9017120",
+      "result_id": "1294b48a-5873-44bb-968e-5279ba2122d7"
+    },
+    {
+      "claim_id": "1d7988a2-b323-4445-891d-a366fb551afe",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "600bef5f-979a-4619-9099-53fdafeec4bb",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "40b92def-0456-4c19-9e4d-d3ed45f0476c",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "48dc49d6-877b-4931-b103-f05114044f79",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "7d954065-7265-4a07-ad2d-27c4e6361e0e",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "8a0273a7-b4bf-4976-8bea-cac154f3686f",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "63b5aac8-095b-4c5d-b01e-c6ef82a28f41",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "eb5b29d6-73ef-42ac-8033-6f2d1e5f417c",
+      "result_id": "e191be87-60f0-4309-94cf-9149dd0c4cb1"
+    },
+    {
+      "claim_id": "51f027c5-bce1-4187-b845-aa33128cb4d2",
+      "result_id": "136035bc-e000-4e7a-b9fb-29fbb2c724aa"
+    },
+    {
+      "claim_id": "0540ae9c-70c3-4181-a233-f7ef389bde0d",
+      "result_id": "136035bc-e000-4e7a-b9fb-29fbb2c724aa"
+    },
+    {
+      "claim_id": "352d2fe3-9197-4662-a9b5-535e59084498",
+      "result_id": "136035bc-e000-4e7a-b9fb-29fbb2c724aa"
+    },
+    {
+      "claim_id": "63b5aac8-095b-4c5d-b01e-c6ef82a28f41",
+      "result_id": "136035bc-e000-4e7a-b9fb-29fbb2c724aa"
+    },
+    {
+      "claim_id": "ab7fd324-c095-4bc9-a2a7-8013daa4774e",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "45e38661-29b5-4108-b63f-7bfa16fb92ae",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "de860051-df42-4516-9edb-ae81a97f6c20",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "69283a2b-c1a0-49c3-bda7-35ccb579aa14",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "92140e33-6b9e-4f0e-8431-eabe24aa8090",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "da1e8517-0474-414d-b5ac-f0a5ef40c382",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "77794af1-95ae-48ee-b3d8-911e29e4f7fa",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "e5d3e989-110a-467b-8c03-c06b8805a733",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "97e59b12-72cc-42ba-9171-f1e91ffb5bc4",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "dc1b3ac1-54b4-4b4f-baf6-8510b72690ae",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "8985f60d-c467-44c7-9926-0a43e2cff3f2",
+      "result_id": "5a974495-5c7f-4cf9-a445-32daa568aac0"
+    },
+    {
+      "claim_id": "11b655f4-42ac-4cd4-bd5d-d50a053a4f04",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "df19fe48-a140-4a07-a979-c46cb0a17bb4",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "83186008-e3e2-40f0-8cf8-28b42a127f56",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "f7365ae1-e61e-45e1-b04c-985c96304210",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "61b977f7-8adc-4a61-af9a-0b5e98d6e919",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "576468b3-cf27-45ab-9da5-ecb406988885",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "fe30d822-9fbf-4eed-8555-10d92a2e43d6",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "38541b48-329b-442e-ae1d-bb36e679d1bc",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "0920ca72-ce08-45c0-b9bc-e0caee2386ed",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "f40c8057-f62a-48b9-9b00-73170827ddc2",
+      "result_id": "bd9ac423-9f3a-4cf9-84f4-b4c854d3f896"
+    },
+    {
+      "claim_id": "7b672589-7494-4a1b-a977-aea10b82c8e2",
+      "result_id": "6b988571-cbb6-479a-91fd-99a182d8b9f9"
+    },
+    {
+      "claim_id": "3462a74b-3fb3-4502-98fd-20ee9b4c0b7f",
+      "result_id": "6b988571-cbb6-479a-91fd-99a182d8b9f9"
+    },
+    {
+      "claim_id": "193cc3c5-2247-49c4-82a1-d8dae4b7301e",
+      "result_id": "6b988571-cbb6-479a-91fd-99a182d8b9f9"
+    },
+    {
+      "claim_id": "dc0153fb-c66f-4a5a-b04f-71b246319ad1",
+      "result_id": "98858383-7298-4211-81bb-d9f0d60b42bc"
+    },
+    {
+      "claim_id": "299d3f78-2dac-494b-bfaa-6af142b60e25",
+      "result_id": "98858383-7298-4211-81bb-d9f0d60b42bc"
+    },
+    {
+      "claim_id": "06bd49fb-69e6-43ac-a417-b72a91fe8e07",
+      "result_id": "fa1e5a6b-c00f-4508-be2d-4e736bf7b1c9"
+    },
+    {
+      "claim_id": "0c52f261-169c-4003-8ace-b67f3993243c",
+      "result_id": "fa1e5a6b-c00f-4508-be2d-4e736bf7b1c9"
+    },
+    {
+      "claim_id": "cbdca38f-3524-4cac-876d-d481a2619ec9",
+      "result_id": "a7c44b98-ec6f-4e5f-9dc7-71ca955578f3"
+    },
+    {
+      "claim_id": "c4d849c5-e658-490f-8b97-f90f9a3e6fc2",
+      "result_id": "a7c44b98-ec6f-4e5f-9dc7-71ca955578f3"
+    },
+    {
+      "claim_id": "8561f251-e3b8-4fe0-a555-85d8924fdec4",
+      "result_id": "ba67c0a9-e88a-4808-8800-e618b3f8177a"
+    },
+    {
+      "claim_id": "60edfd43-b5f5-4013-949b-f1aeeeceed0f",
+      "result_id": "ba67c0a9-e88a-4808-8800-e618b3f8177a"
+    },
+    {
+      "claim_id": "4bc72c7c-b0b7-46a9-85a2-a226afc3bcb7",
+      "result_id": "ba67c0a9-e88a-4808-8800-e618b3f8177a"
+    },
+    {
+      "claim_id": "b50b2f8c-8196-4760-9f42-91a7eb5a5b4a",
+      "result_id": "ba67c0a9-e88a-4808-8800-e618b3f8177a"
+    },
+    {
+      "claim_id": "ee027da1-d1fd-4c2d-8ac4-c8b46dc3f499",
+      "result_id": "ba67c0a9-e88a-4808-8800-e618b3f8177a"
+    },
+    {
+      "claim_id": "f70470ae-f69c-4714-bb64-0ce1047a414e",
+      "result_id": "ba67c0a9-e88a-4808-8800-e618b3f8177a"
+    },
+    {
+      "claim_id": "bc27a75e-46bd-4443-98f6-92e15df2f130",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "34809460-082f-4155-bb13-65e5d8ae5695",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "10df4c85-a460-4279-b54f-2bd3aa87187f",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "698707ec-c15b-4d92-9be0-1d4a36cd8d22",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "9e13c373-b439-42f8-bf30-5321320e793c",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "427473d6-45ba-4091-b49d-46e7950f31e4",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "67eba266-8e0c-4595-9ea8-2e169f44a97b",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "db4caa2a-b364-444e-8490-c40bb28e25f1",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "38118dd0-263b-4032-b8e9-cf027b739473",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "7f364e4c-70fa-4318-b9e6-aee62a7cbabf",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "79d6419d-fec4-48e9-b9bc-0561fc34a5a7",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "97f8463b-c24f-421d-90d1-9166215d33d2",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "c7100ea5-407a-4263-a09b-51d6443c55c8",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "1bbf5c4a-b96e-40dd-8efa-e5ad2aef2745",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "97cb6f38-93c7-45e1-a630-cee00b2e4972",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "c7bc0883-71b2-4ded-b59e-42fe9482c53b",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "f7115928-3431-48fe-b633-eea1a607474b",
+      "result_id": "67dc00e0-d489-4368-b2d1-62932a0ec2e1"
+    },
+    {
+      "claim_id": "9311d23f-d450-4799-bbd9-35de0d13644e",
+      "result_id": "95fb341b-a4be-4eea-912a-c238bbd12f2b"
+    },
+    {
+      "claim_id": "3826f61d-4550-49bc-8771-a2d0b3e10dec",
+      "result_id": "95fb341b-a4be-4eea-912a-c238bbd12f2b"
+    },
+    {
+      "claim_id": "0dabd209-aa2f-4ddd-859c-0027aac1befc",
+      "result_id": "95fb341b-a4be-4eea-912a-c238bbd12f2b"
+    },
+    {
+      "claim_id": "e5b2e890-d7bf-42ed-852f-60336483bccc",
+      "result_id": "95fb341b-a4be-4eea-912a-c238bbd12f2b"
+    },
+    {
+      "claim_id": "189c8928-e662-4fba-8365-5254a5762254",
+      "result_id": "95fb341b-a4be-4eea-912a-c238bbd12f2b"
+    },
+    {
+      "claim_id": "cafe3905-8138-4abc-925a-713dac59428f",
+      "result_id": "95fb341b-a4be-4eea-912a-c238bbd12f2b"
+    },
+    {
+      "claim_id": "359da33e-9ac9-496e-845c-120dd345adbf",
+      "result_id": "95fb341b-a4be-4eea-912a-c238bbd12f2b"
+    }
+  ],
+  "comparisons": []
+}

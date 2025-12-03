@@ -1,0 +1,511 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The SSPE method avoids bandpass filtering, separately models signal and noise, accounts for rhythmic confounds, and provides credible intervals for phase estimates by tracking the analytic signal as a latent state using a state space harmonic oscillator model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C26-C30 collectively describe the core methodological features of SSPE. These capabilities are directly stated as properties of the method and are demonstrated through the model structure (state space framework with Kalman filtering) described in the Materials and Methods section. The theoretical foundation is sound and properly cited (Matsuda and Komaki, 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In simulations with narrowband and broadband rhythms, SSPE outperforms existing real-time phase estimation methods for broadband signals while performing comparably for narrowband signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by simulation data in Figure 2 showing that for narrowband rhythms (sine in white/pink noise), all methods perform well with filter-based approaches performing best, while for broadband rhythms (filtered pink noise and state space model), SSPE outperforms other causal methods and matches or exceeds acausal FIR performance. The simulations used 1000 repetitions with different noise instantiations (C82), providing adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "SSPE accurately tracks target rhythms in the presence of confounding rhythms with nearby frequencies by independently estimating parameters for both rhythms, outperforming existing methods that rely on bandpass filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 and C97-C99 are supported by simulation results in Figure 3 showing that SSPE maintains lower error across a range of confounding rhythm frequencies and amplitudes. The method's ability to model multiple oscillators simultaneously (C89-C90) provides a mechanistic explanation for superior performance. However, the simulations use sinusoids which may not fully represent the complexity of in vivo rhythms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114"
+    ],
+    "result": "SSPE accurately tracks phase immediately following phase resets (90-degree shifts), converging more rapidly than existing methods, with significantly lower error (p~0) across 4000 simulated phase resets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C108, and C110 are supported by simulation data in Figure 4 and Table 1. Statistical testing (two-sided t-test, p~0) demonstrates significant superiority of SSPE over other methods. The mechanistic explanation (C111, C113) that SSPE requires only a single-sample window while other methods use larger windows is plausible. However, the simulation uses idealized 90-degree phase shifts which may not represent all types of phase resets observed in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "SSPE error decreases more rapidly with increasing SNR than other methods, achieving performance comparable to acausal FIR at SNR=10, while credible interval width provides a more intuitive and accurate confidence metric than amplitude thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 are supported by simulation results in Figure 5 showing that SSPE error decreases with SNR while other real-time methods maintain high error even at SNR=10. The comparison of credible intervals versus amplitude thresholds (C121-C124) demonstrates that amplitude thresholds eliminate all data at SNR=1 but preserve all at SNR=2.5, while credible intervals allow identification of confident periods at both SNR values. The simulations used 1000 repetitions per SNR level, providing adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "In rodent LFP data, SSPE model parameters estimated from an initial 10s segment remain appropriate for hundreds of seconds without refitting, with phase error remaining consistent over time (no linear trend, p=0.53) and within expected bounds for real-time phase estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 and C135-C136 are supported by analysis in Figure 6A showing consistent error over time with no significant linear trend (p=0.53) and no significant difference between original and refit models (p=0.21 for 30s, p=0.35 for entire period, Wilcoxon rank sum test). However, this is a single case study from one electrode, limiting generalizability. The 'true phase' is estimated acausally using the same SSPE model, which may introduce circularity in the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "SSPE provides real-time credible intervals that directly represent confidence in phase estimates, offering advantages over amplitude-based thresholds which produce wide ranges of credible intervals (3.8-96.8 degrees at 65% amplitude threshold) and are not directly interpretable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147, C149, and C153-C154 are supported by analysis of rodent LFP data in Figure 7 showing that credible intervals expand when rhythms are weak and contract when strong, and that thresholding at 10 degrees CI width reduces error from 46.9 to 26.91 degrees while retaining 27% of data. The demonstration that fixed amplitude thresholds produce wide CI ranges (C153-C154) supports the superiority of CI-based confidence assessment. However, the optimal CI threshold may be data-dependent and requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "In human EEG data, SSPE model parameters estimated from an initial 10s segment produce phase estimation errors consistent with models refit at future times, with error dropping from 40.5 to 11.2 degrees when restricting to CI width <25 degrees while retaining 16.4% of data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163 and C168 are supported by analysis in Figure 8A showing consistent error between initial and refit models, and quantitative error reduction with CI thresholding. This provides independent validation of findings from rodent LFP data (C162). However, this is again a single case study, and the mu rhythm appears narrowband (C164), which may not test the method's advantages for broadband rhythms as thoroughly as the LFP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Pre-stimulus mu rhythm phase estimated by SSPE predicts 13% of MEP amplitude variance without CI thresholding, increasing to 30% with CI<50 degrees and 48% with CI<25 degrees, demonstrating that accurate phase estimation may enhance evoked motor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174, C176-C177 are supported by circular linear regression analysis shown in Figure 9, demonstrating progressive improvement in variance explained (R\u00b2) with stricter CI thresholds. This provides functional validation that SSPE phase estimates relate to behavioral outcomes. However, C179 is speculative about 'enhancing' responses - the data show correlation, not causation. The analysis uses model parameters from a different subject (C173), which is a strength for generalizability but should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The TORTE real-time implementation of SSPE produces phase estimates with mean circular difference of 2.06 degrees (SD 0.65) from MATLAB implementation, with processing time <0.35ms across buffer sizes, demonstrating feasibility for real-time applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182, C184, and C187 are supported by validation data in Figure 10 showing nearly identical parameters between implementations and processing times orders of magnitude faster than buffer sizes. The small phase difference (C184-C185) is attributed to filtering differences and can be corrected by online learning (C186). This demonstrates practical feasibility, though testing was limited to a simple 5 Hz sine wave without noise (C180), which may not represent the complexity of real neural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The SSPE method uses a linear state space model with Gaussian noise where state equations model oscillator dynamics and observation equations transform states into observed signals, enabling optimal phase estimation via Kalman filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C47 describe the mathematical framework of the SSPE method. The state space model structure is well-established (C46-C47 cite foundational work), and the specific implementation for phase estimation is properly attributed to Matsuda and Komaki, 2017 (C26). The linearity and Gaussianity assumptions (C44-C45) are clearly stated, enabling Kalman filtering. The model structure is internally consistent and theoretically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "SSPE parameters are estimated using expectation-maximization (EM) algorithm with convergence dependent on initial estimates and SNR, followed by Kalman filtering for real-time phase tracking, with credible intervals computed by sampling from the posterior distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 describe the parameter estimation and filtering procedures, properly citing foundational work (Shumway and Stoffer, 1982 for EM; Kalman, 1960 for Kalman filtering). The method for computing credible intervals (C62-C63) by sampling 10,000 points from the posterior is appropriate. The statement about convergence rate (C55) is reasonable but not empirically validated in the manuscript. The choice of 2s for parameter fitting (C56) appears somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The comparison methods (Zrenner, Blackwood, acausal FIR) are properly implemented and validated, with circular standard deviation used as the error metric following established practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 describe the implementation of comparison methods with appropriate citations. The verification that original and modified Blackwood methods produce consistent results (C68) strengthens validity. The choice of circular standard deviation as error metric (C73-C74) is appropriate for circular data and follows prior work (Zrenner et al., 2020). The acausal FIR serves as a reasonable lower bound for filter-based approaches (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Simulations use 10s signals at 1000 Hz sampling rate with 6 Hz central frequency, including four rhythm types (sine in white noise, sine in pink noise, filtered pink noise, state space model), repeated 1000 times with different noise instantiations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 describe the simulation methodology. The parameters are clearly specified and appropriate for testing phase estimation methods. The use of 1000 repetitions (C82) provides adequate statistical power. The inclusion of four different rhythm types with varying spectral characteristics (C76-C77, C80) enables comprehensive testing. The state space model is properly justified by citations to prior work (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Brain rhythms are typically broadband, but common phase estimation methods assume narrowband signals; SSPE's covariance structure allows flexibility in modeling different bandwidths without this assumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C199 are supported by citations to prior work and demonstrated by simulation results in Figure 2. Claim C201 accurately describes a key advantage of SSPE. However, C200 is speculative about potential improvements to other methods. The discussion appropriately contextualizes SSPE's advantages for broadband rhythms within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "SSPE explicitly separates signal and noise by modeling state noise (harmonic oscillators driven by white noise producing broadband peaks) and observation noise (additive white noise), with flexibility to model confounding rhythms and add model elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C207 describe the noise modeling approach in SSPE. The separation of state and observation noise is a fundamental feature of state space models. The spectral properties described (C204) are consistent with the model structure. The flexibility to model confounding rhythms (C205) is demonstrated in simulations. The citation to Matsuda and Komaki, 2017 for potential extensions (C207) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "SSPE represents rhythm presence/absence directly in credible intervals rather than requiring amplitude thresholds, providing a more intuitive and interpretable decision metric for phase-based interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C210 accurately describe limitations of amplitude-based detection methods with appropriate citations. Claims C211-C212 are supported by the in vivo data analyses showing that credible intervals expand when rhythms are weak. The advantage of direct interpretability (degrees vs. arbitrary amplitude units) is valid. However, the optimal CI threshold may still require empirical determination for specific applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C213",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "SSPE's stochastic instantaneous frequency allows flexibility in tracking rhythms with drifting central frequencies and phase resets, but requires identification of target and confounding rhythms for accurate estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C213 accurately describes a model property, and C214 is supported by simulation results (Figure 4). Claims C215-C216 appropriately acknowledge a limitation of SSPE and suggest alternative methods when rhythm characteristics are unknown, with proper citations. This represents a balanced assessment of the method's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "SSPE parameter estimation takes 1-2 minutes for 10s windows at 1 kHz sampling, while application stage is orders of magnitude faster than sampling rate, with parameter estimation being the computational bottleneck as in other real-time methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C219-C221 are supported by computational analysis, with C220 providing context from prior work. Claim C222 is supported by Figure 10C showing processing times <0.35ms. The comparison to other methods (C219) is appropriate with citations. However, the parameter estimation time (C221) may vary with data characteristics and is not systematically evaluated across conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "SSPE models rhythms as harmonic oscillators driven by noise, causing slightly worse performance than filter-based methods for pure sinusoids, though error remains small; removing state covariance Q would improve sinusoid tracking but not broadband rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C223-C225 accurately describe a limitation of SSPE, supported by simulation results in Figure 2. Claim C226 is speculative but theoretically sound - removing Q would create a deterministic oscillator better suited for sinusoids but unable to model broadband rhythms. This represents an honest assessment of trade-offs in the method's design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229"
+    ],
+    "result": "Slow baseline drifts (<0.1 Hz) can impair SSPE phase tracking; potential solutions include modeling drifts as additional oscillators (requiring >40s data), adding piecewise linear terms, or causally removing moving average trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C227 identifies a limitation but provides no empirical evidence of the extent of impairment. Claims C228-C229 propose potential solutions but are entirely speculative without testing. The 40s requirement (C228) appears to be an estimate without justification. While the limitation is plausible, the lack of systematic evaluation and the speculative nature of proposed solutions make this uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237"
+    ],
+    "result": "SSPE assumes spectral stationarity over experimental duration; while two case studies suggest this may be reasonable, non-stationary rhythms may require extensions such as extended Kalman filtering or switching models, though SSPE is robust to small frequency/bandwidth changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C231 appropriately acknowledge an assumption and its empirical support from case studies. Claim C234 is supported by simulation results (Figure 2). Claims C235-C237 appropriately discuss potential extensions with proper citations, acknowledging this as future work. The discussion balances the method's current capabilities with limitations and potential improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C238",
+      "C239",
+      "C240"
+    ],
+    "result": "High sampling rates reduce computational efficiency for SSPE parameter fitting; quasi-Newton optimization instead of EM may improve performance, but determining the optimal framework remains future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C238 identifies a limitation but provides no quantitative assessment of the impact. Claim C239 suggests an alternative with citation to Matsuda and Komaki, 2017, but this is speculative without testing. Claim C240 appropriately acknowledges this as future work. The lack of empirical evaluation of this limitation and proposed solution makes the claims uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Brain rhythms, particularly low-frequency phase, are important for neural function and behavior, but current real-time phase estimation methods have limitations including reliance on bandpass filtering, inability to track phase resets, coupling of signal and noise, buffered processing delays, and lack of confidence measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 provide background context supported by extensive citations to prior work. The limitations of existing methods (C20-C24) are accurately described and properly attributed. This background appropriately motivates the development of SSPE. All claims are either directly cited or represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C9",
+      "C195"
+    ],
+    "result": "The comparison is limited to Zrenner and Blackwood methods with readily available code, plus standard acausal FIR; the method is available as an Open Ephys plug-in for immediate use in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 clearly state the scope of comparison with appropriate justification (available code). Claim C9 and C195 state the availability of the method, which is verifiable through the provided code repositories. The limitation to two real-time comparison methods is reasonable given the need for reference implementations, though broader comparison would strengthen conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C196"
+    ],
+    "result": "SSPE is a new real-time phase estimation algorithm that addresses limitations of current methods, performs better in simulations, allows parameter estimation for hundreds of seconds without refitting, and provides credible intervals for confidence assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C194 accurately summarize the main findings of the manuscript, supported by the simulation and in vivo data results. Claim C196 is appropriately speculative about future impact. These summary claims are consistent with the detailed results presented throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

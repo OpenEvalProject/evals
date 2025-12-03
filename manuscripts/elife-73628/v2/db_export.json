@@ -1,0 +1,1948 @@
+{
+  "submission": {
+    "id": "4bbbdc3d-3f25-4219-9ab5-7a907dd1a5c4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:38:32.106948Z",
+    "updated_at": "2025-12-03T10:38:32.106948Z"
+  },
+  "content": [
+    {
+      "id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "submission_id": "4bbbdc3d-3f25-4219-9ab5-7a907dd1a5c4",
+      "content_type": "manuscript",
+      "content_text": "# m6A modifications regulate intestinal immunity and rotavirus infection\n\n## Authors\n\n- Anmin Wang<sup>1</sup> ([ORCID: 0000-0003-2239-9051](https://orcid.org/0000-0003-2239-9051))\n- Wanyiin Tao<sup>1</sup>\n- Jiyu Tong<sup>3</sup>\n- Juanzi Gao<sup>1</sup>\n- Jinghao Wang<sup>1</sup>\n- Gaopeng Hou<sup>4</sup>\n- Chen Qian<sup>1</sup>\n- Guorong Zhang<sup>1</sup>\n- Runzhi Li<sup>1</sup>\n- Decai Wang<sup>1</sup>\n- Xingxing Ren<sup>1</sup>\n- Kaiguang Zhang<sup>1</sup>\n- Siyuan Ding<sup>4</sup>\n- Richard A Flavell<sup>5</sup> ([ORCID: 0000-0003-4461-0778](https://orcid.org/0000-0003-4461-0778))\n- Huabing Li<sup>3</sup>\n- Wen Pan<sup>1</sup> \u2020\n- Shu Zhu<sup>1</sup> ([ORCID: 0000-0002-8163-0869](https://orcid.org/0000-0002-8163-0869)) \u2020\n\n### Affiliations\n\n1. Department of Digestive Disease, The First Affiliated Hospital of University of Science and Technology of China, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n2. Institute of Immunology, the Chinese Academy of Sciences Key Laboratory of Innate Immunity and Chronic Disease, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n3. Shanghai Institute of Immunology, Department of Microbiology and Immunology, Shanghai Jiao Tong University School of Medicine (SJTU-SM) Shanghai China\n4. Department of Molecular Microbiology, Washington University School of Medicine in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n5. Department of Immunobiology, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n6. Howard Hughes Medical Institute, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n7. School of Data Science, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n8. Institute of Health and Medicine, Hefei Comprehensive National Science Center, Hefei, China Hefei China\n\n\u2020 Corresponding author\n\n## Abstract\n\nN6-methyladenosine (m6A) is an abundant mRNA modification and affects many biological processes. However, how m6A levels are regulated during physiological or pathological processes such as virus infections, and the in vivo function of m6A in the intestinal immune defense against virus infections are largely unknown. Here, we uncover a novel antiviral function of m6A modification during rotavirus (RV) infection in small bowel intestinal epithelial cells (IECs). We found that rotavirus infection induced global m6A modifications on mRNA transcripts by down-regulating the m6a eraser ALKBH5. Mice lacking the m6A writer enzymes METTL3 in IECs (Mettl3\u0394IEC) were resistant to RV infection and showed increased expression of interferons (IFNs) and IFN-stimulated genes (ISGs). Using RNA-sequencing and m6A RNA immuno-precipitation (RIP)-sequencing, we identified IRF7, a master regulator of IFN responses, as one of the primary m6A targets during virus infection. In the absence of METTL3, IECs showed increased Irf7 mRNA stability and enhanced type I and III IFN expression. Deficiency in IRF7 attenuated the elevated expression of IFNs and ISGs and restored susceptibility to RV infection in Mettl3\u0394IEC mice. Moreover, the global m6A modification on mRNA transcripts declined with age in mice, with a significant drop from 2 weeks to 3 weeks post birth, which likely has broad implications for the development of intestinal immune system against enteric viruses early in life. Collectively, we demonstrated a novel host m6A-IRF7-IFN antiviral signaling cascade that restricts rotavirus infection in vivo.\n\n## Introduction\n\nN6-methyladenosine (m6A) is the most abundant internal mRNA modification and modulates diverse cellular functions through m6A-related writers, erasers, and readers (Roundtree et al., 2017; Xu et al., 2021; Chelmicki et al., 2021). The m6A modification directly recruits m6A-specific proteins of the YT521-B homology (YTH) domain family (Roundtree et al., 2017). These proteins mediate the m6A-dependent regulation of pre-mRNA processing, microRNA processing, translation initiation, and mRNA decay (Roundtree et al., 2017). In recent works, m6A modifications has been identified in the genomes of RNA viruses and the transcripts of DNA viruses with either a pro-viral or anti-viral role (Tsai et al., 2018; Li et al., 2017; Hesser et al., 2018; Imam et al., 2018; Ye et al., 2017). Furthermore, m6A RNA modification-mediated down-regulation of the \u03b1-ketoglutarate dehydrogenase (KGDH)-itaconate pathway inhibits viral replication independent of the innate immune response (Liu, 2019). According to Gao et al., 2020, m6A modification preserves the self-recognition of endogenous transcripts. Deletion of the m6A writer Mettl3 decreases the m6A modifications in endogenous retrovirus (ERV) transcripts. The accumulation of ERVs activates pattern recognition receptors (e.g. RIG-I) pathways, resulting in a detrimental interferon response in livers of fetal mice (Gao et al., 2020).\n\nThe m6A modification of the enterovirus 71 (EV71) RNA genome is important for viral propagation, and EV71 infection increases the expression of m6A writers in vitro (Hao et al., 2019). m6A methyltransferase METTL3 knockdown reduces whereas m6A demethylase FTO knockdown increases EV71 replication (Hao et al., 2019). In addition, human cytomegalovirus can upregulate the expression of m6A-related proteins (Rubio et al., 2018; Winkler et al., 2019). Despite the knowledges about m6A regulation and function during viral infection revealed by these in vitro studies, the regulation of m6A modifications and the specific role of m6A in the antiviral response in vivo, especially in the gastrointestinal tract, remains unclear.\n\nRotavirus (RV), a member of the family Reoviridae, is a nonenveloped icosahedral-structured virus with 11 segments of double-stranded RNA. Children under the age of five are at high risk of rotavirus infection, which causes severe diarrhea, dehydration, and death (Crawford et al., 2017). Rotaviruses encode multiple viral proteins to inhibit innate immune responses by degrading interferon regulatory factors (IRFs) and mitochondrial antiviral-signaling protein (MAVS), thus facilitating efficient virus infection and replication (Ding et al., 2018; Barro and Patton, 2007). The timely induction of an IFN response is key to the host successful control of invading viruses, including RV (Honda et al., 2005; Lin et al., 2016; Pott et al., 2011). Here, we found rotavirus infection induced global m6A modifications on mRNA transcripts by down-regulating the m6A eraser ALKBH5. Mice lacking the m6A writer enzymes METTL3 in IECs (Mettl3\u0394IEC) were resistant to RV infection. We identified IRF7, a master regulator of IFN responses (Honda et al., 2005), as one of the primary m6A targets during virus infection. In the absence of METTL3, IECs showed increased Irf7 mRNA stability and enhanced type I and III IFN expression. Deficiency in IRF7 attenuated the elevated expression of IFNs and ISGs and restored susceptibility to RV infection in Mettl3\u0394IEC mice. Collectively, we identified a novel regulation and function of m6A modifications in an enteric viral infection model in vivo.\n\n## Results\n\n### The regulation and function of mRNA m6A modifications during RV infection\n\nRV infections primarily take place in children under the age of five in humans and in neonatal mice younger than 2 weeks old (Crawford et al., 2017; Du et al., 2017). Intriguingly, total RNA m6A modifications in the mouse ileal tissues, revealed by a m6A dot blot and mass spectrum (MS) analysis, significantly declined from 2 weeks to 3 weeks post birth (Figure 1a, b and c), which caused by increased Alkbh5 expression (Figure 1d, Figure 1\u2014figure supplement 1a and Figure 1\u2014figure supplement 1b) and development of microbiota might be involved (Figure 1\u2014figure supplement 2). Indeed, overexpression of Alkbh5 in mouse IEC cell line caused decreased m6A level (Figure 1\u2014figure supplement 1c), supporting the role of Alkbh5 in regulating global m6A levels in intestine. These data indicating a potential link between the resistance to RV infection and the decline of m6A modification during early life development.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-v2.jpg)\n\n**Figure 1.:** (a) m6A dot blot analysis of total RNA in ileum tissues from mice with different ages. Methylene blue (MB) staining was the loading control. (b) Quantitative analysis of (a) (mean \u00b1 SEM), statistical significance was determined by Student\u2019s t-test (**p < 0.005, ***p < 0.001, NS., not significant). The quantitative m6A signals were normalized to quantitative MB staining signals. (c) mass spectrum (MS) analysis of m6A level in ileum tissue from mice with different ages. (mean \u00b1 SEM), Statistical significance was determined by Student\u2019s t-test (*p < 0.05, NS., not significant). (d) qPCR analysis of indicated genes in ileum tissues from mice with different ages (mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between groups (*p < 0.05, ***p < 0.001, NS., not significant). (e) WT and Mettl3\u0394IEC mice were infected by rotavirus EW strain at 8 days post birth. m6A dot blot analysis of total RNA in ileum IEC at 2 dpi. Methylene blue (MB) staining was the loading control. (f) Quantitative analysis of (e) (mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-test (*p < 0.05, ***p < 0.001, NS., not significant). The quantitative m6A signals were normalized to quantitative MB staining signals. (g\u2013h) Mettl3\u0394IEC mice and littermate controls were infected by rotavirus EW strain at 8 days post birth. qPCR analysis of RV viral loads in ileum tissue (g) or fecal samples (h) from Mettl3\u0394IEC mice and littermate controls at 4 days post infection (dpi) (littermate WT n = 4, Mettl3\u0394IEC n = 4, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between genotypes (*p < 0.05). (i) qPCR analysis of indicated genes in Rhesus rotavirus (RRV)-infected HT-29 cells transduced with Mettl3 sgRNA or control sgRNA, at indicated hours post infection (hpi) (mean \u00b1 SEM), statistical significance was determined by Student\u2019s t-test (*p < 0.05, ***p < 0.001, NS., not significant). Experiments in (a, d-f, and i) are repeated twice, (g and h) are repeated four times.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Immunoblotting with antibodies target ALKBH5 and TUBULIN in ileum tissues from mice with different ages. (b) Quantitative analysis of (a) (mean \u00b1 SEM), Statistical significance was determined by Student\u2019s t-test (*p < 0.05, NS., not significant). (c) Immunoblotting with antibodies target ALKBH5 and TUBULIN in MODE-K cells transfected with pSIN-EV or pSIN-mAlkbh5-3xFlag for 24 hr. m6A dot blot analysis of total RNA in indicated samples. Methylene blue (MB) staining was the loading control. Experiments in (a and b) are repeated twice, (c) are repeated three times.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) m6A dot blot analysis of total RNA in ileum tissues from germ free mice with different ages. Methylene blue (MB) staining was the loading control. (b) Quantitative analysis of (a) (mean \u00b1 SEM), statistical significance was determined by Student\u2019s t-test (NS., not significant). The quantitative m6A signals were normalized to quantitative MB staining signals.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) WT and Mettl3\u0394IEC mice were infected by rotavirus EW strain at 8 days post birth. MS analysis of m6A level in ileum tissue from mice at two dpi (mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-test (**p < 0.005).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig1-figsupp4-v2.jpg)\n\nBesides, the global m6A RNA modification levels increased in the ileum tissue of suckling mice post RV murine strain EW infection (Figure 1e and f and Figure 1\u2014figure supplement 3). As a control, the m6A modification can barely detected in IECs deficiency with m6A writer METTL3 (Mettl3fl/flVil1Cre, Mettl3\u0394IEC) (Figure 1e and f). Thus, we hypothesize that RV may induce an enriched cellular m6A modification environment and a weakened innate immune response to facilitate virus replication. To investigate the in vivo role of m6A in the anti-RV immunity, we infected Mettl3\u0394IEC mice and wild-type (WT) littermates with RV EW strain. The viral RNA load in Mettl3\u0394IEC mice ileum tissue was significantly lower than that in the WT mice (Figure 1g and Figure 1\u2014figure supplement 4). Fecal virus shedding was also significantly lower in Mettl3\u0394IEC mice (Figure 1h). Genetic knockdown of METTL3 in HT-29 cells, a human colonic epithelial cell line, by CRISPR-mediated gene silencing, also led to reduced RV replication (Figure 1i), further highlighting the resistance phenotype to RV infection by METTL3 deficiency.\n\n### METTL3 deficiency in IECs results in decreased m6A deposition on Irf7, and increased interferon responses\n\nTo dissect the underlying mechanism, we performed RNA-sequencing using the IECs from METTL3-deficient mice and littermate controls at steady state. Most of the differentially expressed genes in METTL3-deficient IECs vs WT IECs were enriched in the pathways of \u2018defense response to virus\u2019, \u2018response to interferon-beta\u2019, and \u2018positive regulation of innate immune response\u2019 by gene ontology analysis (Figure 2a). Heatmap also showed that a panel of interferon stimulate genes (ISGs) are upregulated in METTL3-deficient IECs compared to WT IECs (Figure 2b). To map potential m6A modification sites on mRNAs of these differential expressed genes in IECs, we conducted m6A RIP-sequencing based on a previously reported protocol (Li et al., 2017). Metagene plots showed the m6A peak is enriched near the stop codon and 3\u2019-UTR region, which is consistent with previously studies (Xuan et al., 2018; Dominissini et al., 2012; Figure 2\u2014figure supplement 1b). We found that m6A modified one of the master regulators of IFNs, Irf7 (Figure 2c), which played a key role in the network of these differential expressed genes in METTL3-deficient IECs compared to WT IECs, analyzed by STRING (Figure 2d). Of note, Irf7 was the only IRFs that highly expressed in METTL3-deficient IECs, and Irf7 was the prominently highest expressed Irf in IECs (Figure 2e), indicating Irf7 might be one of the key genes that are modulated by m6A modifications. We also validated our results by m6A RIP-qPCR to examine m6A modification sites in Irf7 mRNA based on our RIP-sequencing data in METTL3 knock-down MODE-K cells and predicted results from the database (http://rna.sysy.edu.cn) (Figure 2\u2014figure supplement 1a, Figure 2\u2014figure supplement 1c and Figure 2\u2014figure supplement 1d). It should be noted that our m6A-RIP-seq were performed at steady state. We did not identified previous reported Ifns (Rubio et al., 2018; Winkler et al., 2019), possibly due to the low expression level of Ifns in IECs at steady state.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-v2.jpg)\n\n**Figure 2.:** (a) Gene ontology (GO) analysis of differentially expressed genes in IECs from Mettl3\u0394IEC mice vs IECs from littermate WT mice. (b) Heat map of a subset of upregulated ISGs in IECs from Mettl3\u0394IEC mice vs IECs from littermate WT mice, as revealed by RNA-seq (normalized data). (c) m6A-RIP-seq analysis of Irf7 and Gapdh mRNA in the ileum of WT mice. (d) Gene regulation network of a subset of up-regulated genes including IRF7. (e) Heat map of Interferon regulatory factors (Irfs) in IECs from Mettl3\u0394IEC mice vs IECs from littermate WT mice, as revealed by RNA-seq (RPKM). (f) Mettl3\u0394IEC mice and littermate controls were infected by EW at 8 days post birth. qPCR analysis of the Irf7 expression in ileum and jejunum from Mettl3\u0394IEC mice and littermate control at 2 dpi (littermate WT n = 4, Mettl3\u0394IEC mice n = 3, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-test (*p < 0.05, **p < 0.005). (g) q-PCR analysis of Irf7 mRNA in METTL3 knockdown HT-29 cells or control cells in indicated time points post actinomycin D treatment (n = 3, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-test (*p < 0.05, ***p < 0.001, NS., not significant). (h) Relative luciferase activity of sgEV and sgMettl3 HEK293T cells transfected with pmirGLO-Irf7-3\u2019UTR (Irf7-WT) or pmirGLO-Irf7-3\u2019UTR containing mutated m6A modification sites (Irf7-MUT). The firefly luciferase activity was normalized to Renilla luciferase activity (n = 3, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between groups (*p < 0.05, NS., not significant). (i) Mettl3\u0394IEC mice and littermate control and were infected by EW at 8 days post birth. qPCR analysis of selected IFNs and ISGs in ileum tissue at two dpi (littermate WT, n = 4, Mettl3\u0394IEC mice, n = 3, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between genotypes (*p < 0.05, **p < 0.005). Experiments in (f, h and i) are repeated three times, (g) are repeated twice.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Putative m6A sites of mouse or human Irf7/IRF7 on the genomes. (b) Metagene plots of m6A-modified sites. (c) m6A-RIP-qPCR confirms Irf7 as an m6A-modified gene in IECs. RNA of sgEV and sgMettl3 MODE-K cells was incubated with an anti-m6A antibody (Sigma Aldrich, ABE572-I). The eluted RNA and input were processed as described in \u2018RT-qPCR\u2019 section, the data were normalized to the input samples (n = 3, mean \u00b1 SEM, Statistical significance was determined by Student\u2019s t-test (*p < 0.05, **p < 0.005, NS., not significant)). Tlr3 and Rps14 were measured with m6A sites specific qPCR primers as positive control and negative control, Irf7 was measured with predicted m6A sites specific qPCR primer. (d) Knock down efficiency of METTL3 in MODE-K cells. (e) Knock down efficiency of METTL3 in 293t cells used for luciferase assay. (f) Western blot analysis of sgEV and sgMettl3 MODE-K cells transfected with 2 \u00b5g/ml poly I:C at indicated hours, at least three replicate experiments were performed. Experiments in (c\u2013f) are repeated twice.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) qPCR analysis of IFN/ISGs in Rhesus rotavirus-infected METTL3 WT and KD HT-29 cells at indicated hours post infection (hpi) (mean \u00b1 SEM), statistical significance was determined by Student\u2019s t-test (*p < 0.05, **p < 0.005, ***p < 0.001, NS., not significant). (b) Knock down efficiency of METTL3 in HT-29 cells. Experiments in (a and b) are repeated three times.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) qPCR analysis of viral RNAs, IFNs, and ISGs in Rhesus rotavirus-infected METTL3 WT and KO MA104 cells at 24 hours post infection (hpi) (WT control n = 4, METTL3 ko n = 3, mean \u00b1 SEM), statistical significance was determined by Student\u2019s t-test (**p < 0.005, ***p < 0.001, NS., not significant). (b) Knock out efficiency of METTL3 in MA104 cells. Experiments in (a and b) are repeated three times.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) WT and Irf7-/- MEF cell were transduced with lentivirus expressing pLVX-EV-puro, pLVX-Irf7-WT-puro or pLVX-Irf7-Mut-puro containing mutated m6A modification sites. qPCR analysis of genes in different cells at indicated hours post infection (hpi) (mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between groups (*p < 0.05, **p < 0.005, ***p < 0.001, NS., not significant). (b) Western blot analysis of IRF7 expression level in different MEF cells. Experiments in (a and b) are repeated three times.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a) qPCR analysis of indicated genes in the ileum (mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between ages (*p < 0.05, **p < 0.005, NS., not significant). Experiments in (a) are repeated twice.\n\nIRF7 is a known master regulator of Type I interferon and Type III interferon-dependent immune responses in respond to virus infection (Barro and Patton, 2007; Honda et al., 2005; Ciancanelli et al., 2016). We reasoned that loss of m6A modification on Irf7 mRNA is responsible for the increased IFN response and subsequent resistance to RV infection. Thus, we first validated the regulation of Irf7 mRNA levels by m6A in mice and in cells. We found an increase of Irf7 mRNA in ileum tissue of Mettl3\u0394IEC mice compared to that in WT littermate control mice (Figure 2f). Consistently, the expression of IRF7 mRNA was also higher in METTL3 knockdown HT-29 and METTL3 knockout rhesus monkey MA104 cells, suggesting that the regulation of IRF7/Irf7 expression by m6A is likely conserved across species (Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). Furthermore, genetic knockdown of METTL3 in human or mice IEC cell lines also led to increased IRF7/Irf7 expression and IFN/Ifn responses (Figure 2\u2014figure supplement 1f, Figure 2\u2014figure supplement 2). As m6A is known to regulate the mRNA decay, we next sought to determine whether the stability of IRF7 mRNA is regulated by m6A. We used actinomycin D to block the de novo RNA synthesis in HT-29 cells to assess the RNA degradation by METTL3 knockdown. The IRF7 mRNA degraded significantly slower in METTL3-knockdown HT-29 cells than the control cell line (Figure 2g, Figure 2\u2014figure supplement 2b).\n\nTo directly evaluate the role of m6A in modulating the stability of Irf7 mRNA, luciferase reporter assays were conducted. In comparison with wild-type Irf7-3\u2019UTR (Irf7-WT) constructs, the ectopically expressed constructs harboring m6A mutant Irf7-3\u2019UTR (Irf7-MUT) showed significantly increased luciferase activity (Figure 2h, Figure 2\u2014figure supplement 1e). Further, mutation of m6A modification sites can directly increase the expression of Irf7 and enhance the antiviral function of Irf7 in MEF cells (Figure 2\u2014figure supplement 4a and Figure 2\u2014figure supplement 4b). These results suggest that the upregulation of Irf7 mRNA level in Mettl3\u0394IEC mice is caused by the loss of m6A modification mediated mRNA decay. To evaluate the potential influence of m6A on Irf7 transcriptional targets, we also measured the expressions of IFNs and ISGs in rotavirus infected ileum tissue from Mettl3\u0394IEC mice and littermate WT mice. We found the transcriptional targets of Irf7, were all upregulated in Mettl3\u0394IEC mice (Figure 2i). Furthermore, we found that the mRNAs of Irf7 and its transcriptional targets ISGs increased in the ileum of the mice from 1 to 4 weeks, with a dramatic upregulation from 2 to 3 weeks (Figure 2\u2014figure supplement 5), which was concomitant with the decrease of global m6A modifications (Figure 1a and b and Figure 1\u2014figure supplement 1a). These results demonstrated that METTL3 deficiency in IECs results in decreased m6A deposition on Irf7, and increased interferon response.\n\n### IRF7 deficiency attenuated the increased interferon response and resistance to RV infection in Mettl3\u0394IEC mice\n\nTo determine whether Irf7 plays a key role in the resistance phenotype to RV infection in METTL3-deficient mice in IECs, we crossed Irf7\u2212/\u2212 mice to Mettl3\u0394IEC mice. Following RV oral gavage, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were significantly lower than those from Mettl3\u0394IEC mice at 2dpi (Figure 3a\u2013c), and unlike the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice vs littermate WT controls, by deficiency of IRF7, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those from Irf7\u2212/\u2212 mice (Figure 3a\u2013c), suggesting that Irf7 mediates the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig3-v2.jpg)\n\n**Figure 3.:** (a\u2013c) WT control mice, Mettl3\u0394IEC mice, Irf7-/- mice and Mettl3\u0394IEC Irf7-/- mice are all littermates. They were infected by RV EW at 8 days post birth. qPCR analysis of selected IFNs (a), ISGs (b), or Irf7 (c) expression in ileum from indicated groups of mice at two dpi (littermate WT n = 7, Mettl3\u0394IEC n = 5, Irf7-/- n = 3, Mettl3\u0394IEC Irf7-/- n = 6, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between genotypes (*p < 0.05, **p < 0.005, ***p < 0.001, ****p < 0.0001, NS., not significant). (d) qPCR analysis of fecal rotaviral shedding in indicated groups of mice at four dpi (littermate WT n = 5, Mettl3\u0394IEC n = 5, Irf7-/- n = 3, Mettl3\u0394IEC Irf7-/- n = 4, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between genotypes (*p < 0.05, **p < 0.005, NS., not significant). (e\u2013f) qPCR analysis of RV proteins expression (e) or Mettl3 and Irf7 (f) in ileum from indicated groups of mice at four dpi (littermate WT n = 7, Mettl3\u0394IEC n = 5, Irf7-/- n = 3, Mettl3\u0394IEC Irf7-/- n = 6, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between genotypes and (*p < 0.05, **p < 0.005, ***p < 0.001, NS., not significant). Experiments in (a\u2013f) are repeated twice.\n\nMoreover, the Irf7\u2212/\u2212Mettl3\u0394IEC mice showed significantly higher viral loads in ileum tissue and higher fecal shedding of RV Mettl3\u0394IEC (Figure 3d\u2013f). Similarly, unlike the much lower fecal viral shedding in Mettl3\u0394IEC mice vs littermate WT controls, by deficiency of IRF7, the fecal viral shedding in Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those in Irf7\u2212/\u2212 mice (Figure 3d), suggesting that Irf7 mediates the resistant phenotype of rotavirus infection measured by fecal viral shedding in Mettl3\u0394IEC mice. Notably, the viral proteins expression difference in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice vs that from Irf7\u2212/\u2212 mice (9.7-fold lower for NSP2 and 9.3-fold lower for VP7), was much lower than the viral proteins expression difference in ileum from Mettl3\u0394IEC mice vs that from littermate mice (267.1-fold lower for NSP2 and 283.4-fold lower for VP7) (Figure 3e), suggesting that besides the contribution of Irf7 to the resistant phenotype of rotavirus infection in IECs from Mettl3\u0394IEC mice, other pathways (e.g. m6A modifications in RV RNA) may also play roles. Therefore, IRF7 is an important mediator of the increased IFNs and ISGs expression in Mettl3\u0394IEC mice and genetic deletion of IRF7 restored the resistant phenotype of Mettl3\u0394IEC mice to RV infection.\n\n### Rotavirus suppresses ALKBH5 expression through NSP1 to evade immune defense\n\nWe next sought to determine how RV regulates the m6A modifications in IECs. We first measured whether RV infection regulates the m6A-related writer and eraser proteins in the intestine. The protein levels of the methyltransferases METTL3 and METTL14 and demethylase FTO were not affected by RV infection in ileum tissue (Figure 4a and b). In contrast, the protein level of demethylase ALKBH5 was significantly down-regulated by RV infection in the ileum (Figure 4a and b). To determine whether ALKBH5 play a role in anti-RV infection since it\u2019s suppressed during RV infection, we generated the IEC-specific deletion of ALKBH5 in mice (Alkbh5fl/fl Vil1Cre, Alkbh5\u0394IEC). The depletion of ALKBH5 in IECs did not affected the anti-RV immune response (Figure 4c), the viral shedding in the feces (Figure 4d), or the viral protein expression in the ileum (Figure 4e), likely due to the suppressed ALKBH5 expression in ileum tissue of WT mice infected by RV.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-v2.jpg)\n\n**Figure 4.:** (a) WT mice were infected by RV EW at 8 days post birth. Immunoblotting with antibodies target ALKBH5, FTO, METTL14 and METTL3 in ileum tissue from mice infected with RV EW at two dpi or treated with PBS. (b) Quantitative analysis of (a) (mean \u00b1 SEM), Statistical significance was determined by Student\u2019s t-test (*p < 0.05). (c\u2013e) Alkbh5\u0394IEC mice and littermate controls were infected by RV EW at 8 days post birth. qPCR analysis of indicated genes expression in ileum (c), viral shedding in feces (d), and viral proteins expression in ileum (e), from Alkbh5\u0394IEC mice or littermate controls at 4 days post infection (littermate WT n = 6, Alkbh5\u0394IEC n = 5, mean \u00b1 SEM). Statistical significance was determined by Student\u2019s t-tests between genotypes (*p < 0.05, NS., not significant). (f) Immunoblotting with antibodies target ALKBH5, NSP1, VP6 and GAPDH in HEK293 cells infected by SA11-4F and SA11-NSP1null (MOI = 1) for 24 hr. (g) Graphical abstract illustrating the functions and molecular mechanisms of m6A modifications on Irf7 in anti-RV infection. Experiments in (a\u2013e) are repeated three time, (f) are repeated twice.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Relative expression level of ALKBH5/Alkbh5 and FTO/Fto in human intestinal enteroid, mice IEC and mice IEC cell MODE-K. (b) m6A dot blot analysis of total RNA in different MODE-K cells. Methylene blue (MB) staining was the loading control. Experiments in ( b) are repeated twice.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) MODE-K cells were transduced with Lentivirus (expressing pLVX-EV-puro or pLVX-mAlkbh5-puro). qPCR analysis of virus genes and IFNs/ISGs in Rhesus rotavirus-infected EV and mAlkbh5 over-expressing cells at indicated hours post infection (hpi) (mean \u00b1 SEM), statistical significance was determined by Student\u2019s t-test (*p < 0.05, **p < 0.005, NS., not significant). (b) Expression level of ALKBH5 in EV and mAlkbh5 over-expressed MODE-K cells at indicated hours post infection. Experiments in (a and b) are repeated twice.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) Total RNA was extracted from IECs from 1-week-old WT mice infected by RV for 2 days. Fragmented RNA was incubated with an anti-m6A antibody (Sigma Aldrich ABE572) and IgG IP Grade Rabbit polyclonal antibody (abcam, lot: 934197). The eluted RNA and input were processed as described in \u2018RT-qPCR\u2019 section, the data were normalized to the input samples (n = 2, mean \u00b1 SEM), Rps14 was chosen as a negative control.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73628/elife-73628-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a) IECs from 6-week-old Mettl3\u0394IEC mice as well as the WT littermate controls were isolated. Double-stranded RNA (dsRNA) was labeled by immunostaining with a mouse monoclonal antibody J2 (Scisons), cells nuclei were visualized with 4,6-diamidino-2-phenylindole (DAPI, Invitrogen). All fluorescence images were analyzed via confocal imaging using Zeiss LSM880. Experiments in (a) are repeated twice.\n\nWe next asked whether there is redundancy between m6A eraser ALKBH5 and FTO. We first checked the expression of Alkbh5/ALKBH5 and Fto/FTO in our RNA-seq data in mouse IECs, and also a previous reported RNA-seq data in human intestinal enteroid (Saxena et al., 2017). We found the Alkbh5/ALKBH5 expression is much higher than Fto/FTO in intestine (Figure 4\u2014figure supplement 1a). We did qPCR analysis in mouse epithelial cell line MODE-K and showed the similar results (Figure 4\u2014figure supplement 1a). Furthermore, we knock down METTL3, ALKBH5 and FTO in MODE-K cell. Through dot blot assay, we found ALKBH5 but not FTO is the dominant m6A eraser in IECs (Figure 4\u2014figure supplement 1). Furthermore, overexpressing of recombinant ALKBH5 increased the IFN/ISGs response and inhibit RRV infection in mouse IEC MODE-K cells (Figure 4\u2014figure supplement 2), suggesting re-expression of ALKBH5 might overcome the immune evasion of RV.\n\nNon-structural protein 1 (NSP1) is a well-established RV-encoded innate immune antagonist that are showed to degrade IRF3 and \u03b2-Trcp (Barro and Patton, 2005; Ding et al., 2016). To test the potential role of NSP1 in AlKBH5 inhibition, we used the recently developed reverse genetics system and rescued recombinant WT RV SA11 strain and a mutant virus that does not express NSP1 (NSP1-null) (Kanai et al., 2017). We infected HEK293 cells with WT and NSP1-null RVs, only WT RV reduced ALKBH5 protein levels (Figure 4f), suggesting that the down-regulation of ALKBH5 expression by RV is NSP1-dependent. These results suggest that RV might evades the antiviral immune response via downregulation of ALKBH5 expression by NSP1.\n\n## Discussion\n\nPrevious studies reported that m6A modifications on mRNA in mice embryonic fibroblasts or normal human dermal fibroblasts negatively regulate the IFN response by accelerating the mRNA degradation of type I IFNs (Rubio et al., 2018; Winkler et al., 2019). However, these studies were mainly conducted in vitro, leaving the relationship between m6A and IFN pathway in vivo an unexplored territory. Since type I and type III IFNs play a critical role in the antiviral immune response in the GI tract (Pott et al., 2011), we used an RV infection model, in which IECs are specifically infected, as well as conditional knockout mice with IECs-specific depletion of m6A writer METTL3 or m6A eraser ALKBH5, to study the role of m6A modification in regulating IFN response towards rotavirus in IECs. Using RNA-seq and m6A-seq techniques, we identified IRF7, a key transcription factor upstream of IFNs and ISGs, as one of the m6A modified targets during RV infection, and is essential to mediate the elevated anti-rotavirus immune response by METTL3 deficiency. These results identify Irf7 as an important m6A target, and characterize, for the first time, the regulation of IFN response during RV infection in intestine, enabling a better understanding of how m6A modifications on mRNA regulate antiviral innate immune responses.\n\nIn addition to directly regulating target genes that involved in innate immune pathways, m6A modification is also known to affect viral gene expression, replication, and generation of progeny virions (Roundtree et al., 2017; Brocard et al., 2017). Some viral RNA genomes are modified by m6A, such as simian virus 40 (Tsai et al., 2018; Lavi and Shatkin, 1975), influenza A virus (Krug et al., 1976), adenovirus (Sommer et al., 1976), avian sarcoma virus (Dimock and Stoltzfus, 1977), Rous Sarcoma virus (Kane and Beemon, 1985), hepatitis C virus (Gokhale et al., 2016) and Zika virus (Lichinchi et al., 2016). Through our m6A-RIP-qPCR, Rotavirus RNA was also found to have m6A modification (Figure 4\u2014figure supplement 3). Of note, genetic deletion of METTL3 in monkey kidney MA104 cell line, which has limited IFN responses (S\u00e1nchez-Tacuba et al., 2020), also led to reduced RV replication (Figure 2\u2014figure supplement 3). Further, IRF7 deficiency didn\u2019t fully restore the suppressed rotaviral infection in Mettl3\u0394IEC mice (Figure 3e). These results suggest that besides the contribution of Irf7 to the resistant phenotype of rotavirus infection in IECs from Mettl3\u0394IEC mice, other pathways (e.g. m6A modifications in RV RNA) may also play roles. The detailed mechanisms warrant further investigations in the future.\n\nIntriguingly, m6A modifications were shown to maintain the genomic stability of mice embryonic stem cells by promoting the degradation of endogenous retrovirus (ERV) mRNA, or by regulating ERV heterochromatin and inhibiting its transcription (Xu et al., 2021; Chelmicki et al., 2021). The absence of m6A results in the formation of abnormal endogenous dsRNA, which causes an aberrant immune response and necrosis in the hematopoietic system (Gao et al., 2020). In the intestine, through immunostaining with J2 antibody, we detected the increase of dsRNA levels in IECs of Mettl3\u0394IEC mice compare to the littermate WT mice (Figure 4\u2014figure supplement 4). In consistency, the aforementioned RNA-seq data showed that the expression of a set of ISGs including Irf7 was significantly upregulated in Mettl3 KO IECs. Our data suggest a dual activation model in steady state that in the absence of METTL3, the increase of dsRNA will induce the IFN responses, and the increased stability of Irf7 mRNA, which serves as a key transcription factor of IFN and ISG expression, will amplify this process. Furthermore, m6A modification of viral RNA genomes affect the activation of innate sensor-mediated signaling (Chen et al., 2021; Kim et al., 2020). Decreased m6A modification on RV genomes may activate innate sensors directly and induce higher IFN response, which will also be amplified by increase of Irf7 mRNA stability.\n\nAlthough m6A is involved in many important biological processes, the regulation of m6A modifications remain poorly understood. Here, we found RV infection down-regulates the level of m6A eraser ALKBH5 to induce m6A modifications, in an NSP1 dependent manner. The precise mechanism remains to be examined. As a result, ALKBH5 deficiency in IECs results in normal susceptibility to RV infection. In addition, the global m6A modification on mRNA transcripts declines by ages in the intestine, with a significant drop from 2 to 3 weeks post birth, which implicate the drop of RV infectivity in adult mice vs neonatal mice. The dual regulation of m6A levels during RV infection and development provide new insights into the choice of either RV or the host on regulation of m6A modification to achieve either immune evasion or immune surveillance, respectively.\n\nIn conclusion, our work shed light into a novel role of m6A modifications in RV infection in vivo, and reported a tissue specific regulation of m6A during RV infection or development (Figure 4g). Future studies on tissue-specific regulation of m6A modification by viral infections in other tissues and organs (e.g. lung, liver) will be of interest.\n\n## Materials and methods\n\n### Mice\n\nMETTL3 conditional knockout mice were generated by inserting two loxp sites into the intron after the first exon and the intron before the last exon of Mettl3 using CRISPR/cas9-based genome-editing system as previously described (Li et al., 2017). ALKBH5 conditional knockout mice were generated by inserting two loxp sites into the introns flanking the first exon of Alkbh5 using CRISPR/cas9-based genome-editing system as previously described (Zhou, 2021). Genotyping of Mettl3fl/fl mice, Alkbh5fl/fl mice, Vil1Cre mice (The Jackson Laboratory, Stock No: 021504), and Irf7-/- mice (RIKEN BRC, RBRC01420) were confirmed by PCR using primers as list below:\n\n#### Mettl3fl/fl mice\n\n#### Vil1Cre mice\n\n#### Irf7-/- mice\n\n#### Alkbh5fl/fl mice\n\nThe sex-, age-, and background-matched littermates of the knockout or conditional knockout mice were used as the controls in the present study. All mice were on the C57BL/6 background. Mice were maintained in SPF conditions under a strict 12 hr light cycle (lights on at 08:00 and off at 20:00). All animal studies were performed according to approved protocols by the Ethics Committee at the University of Science and Technology of China (USTCACUC202101016).\n\n### Cell culture\n\nThe MA104 cell line was obtained from the Cell Resource Center, Peking Union Medical College (which is the headquarter of National Infrastructure of Cell Line Resource). HEK293T (ATCC CRL-3216), HT-29 (ATCC HTB-38D) were obtained from the American Type Culture Collection (ATCC). MODE-K cell were obtained from Shanghai HonSun Biological Technology Co., Ltd.\n\nThe identity of these cell lines were authenticated with STR profiling (FBI, CODIS). All these cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) (Hyclone) supplemented with 10% fetal bovine serum (FBS) (Clark); All cells were cultured at 37 \u00b0C in 5% CO2. All cells were tested for eliminating the possibility of mycoplasma contamination.\n\n### Poly(I:C) transfection\n\nPoly(I:C) (OKA, A55994) was transfected at a concentration of 2 \u03bcg/ml using Lipofectamine 3,000 (Invitrogen) according to the manufacturer\u2019s protocol. Cells were analyzed at indicated hours.\n\n### Plasmids and SgRNAs\n\nAll gene silencing was done using a CRISPR\u2013cas9 system, with lentiCRISPR v2 plasmid (Addgene no. 52961). The following sgRNAs were cloned downstream of the U6 promoter:\n\nLentiviruses were generated by co-transfection of lentiCRISPR v2 constructs and packaging plasmids (psPAX2, Addgene no. 12,260 and pMD2.G, Addgene no. 12259), using PEI DNA transfection reagent (Shanghai maokang biotechnology), into HEK293T cells, according to the manufacturer\u2019s instructions. At 48 hr post transfection, supernatants were collected and filtered through a 0.22 \u03bcm polyvinylidene fluoride filter (Millex). To induce gene silencing, cells were transduced with lentivirus expressing sgRNA and were puromycin selected (2 \u03bcg/ml) for 4\u20135 days. The depletion of target proteins was confirmed by immunoblot analysis.\n\n### Virus infections\n\nRhesus and simian RV strains, including RRV (Rhesus), SA11-4F (simian), SA11-NSP1null (simian) were propagated in MA104 cells as previously described (Ding et al., 2016). Viruses were activated by trypsin (5 \u03bcg/ml) at 37 \u00b0C for 30 min prior to infection. Cells were washed with PBS three times and incubated with RV at different MOIs at 37 \u00b0C for 1 hr. After removal of RV inoculum, cells were washed with PBS, cultured in serum-free medium (SFM) and harvested for qPCR and western blot analysis at indicated time points.\n\nEW stock virus was prepared by infecting 5-day-old C57BL/6 J mice, and harvesting crude centrifugation-clarified intestinal homogenate as previously described (Ding et al., 2018).\n\nFor all rotavirus infection except indicated elsewhere, 8-day-old wild-type mice, or genetically deficient mice were orally inoculated by gavage with RV EW virus as previously described (Ding et al., 2018). Mice were sacrificed, stool and small intestinal tissue were collected at indicated time points post infection. Viral loads in intestinal tissues and feces were detected by RT\u2013qPCR.\n\n### Quantitative analysis of m6A level\n\nThe m6A analysis by LC-MS/MS was performed by Metware Biotechnology Co., Ltd (Wuhan, China). In brief, 1 \u00b5g purified RNA was digested into single nucleosides with 1 U nuclease P1 (Takara) and 1 U rSAP (Takara) and incubated at 37 \u00b0C. The digested RNA was injected into a LC-MS/MS which includes the ultra-performance liquid chromatography with a C18 column. The positive ion multiple reaction-monitoring (MRM) mode was adopted to detect m6A abundance. m6A levels were calculated from the standard curve which was generated from pure nucleoside standards.\n\n### RT-qPCR\n\nFor cells and tissues, total RNA was extracted with TRNzol Universal reagent (Tiangen) in accordance with the manufacturer\u2019s instructions. Real-time PCR was performed using SYBR Premix Ex Taq II (Tli RNaseH Plus) (Takara) and complementary DNA was synthesized with a PrimeScript RT reagent Kit with gDNA Eraser (Takara). The target genes were normalized to the housekeeping gene (Gapdh, HPRT) shown as 2\u2212\u0394Ct. The used primers are as follows:\n\n#### Primers detect mouse genes\n\n#### Primers detect human genes\n\n#### Primers detect rhesus genes\n\n#### Primers detect virus genes\n\n### m6A Dot blot assay\n\nTotal RNA was isolated from mice ileum using TRNzol Universal Reagent (Tiangen, Lot#U8825) according to the manufacturer\u2019s instructions. RNA samples were quantified using UV spectrophotometry and denatured at 95 \u00b0C for 3 min. The m6A-dot-blot was performed according to a published work (Shen et al., 2016). In brief, the primary rabbit anti-m6A antibody (1:5000, Synaptic System, #202003) or the primary rabbit anti-m6A antibody (1:1000, Sigma-Aldrich, ABE572-I-100UG) was applied to the Amersham Hybond-N+ membrane (GE Healthcare, USA) containing RNA samples. Dot blots were visualized by the imaging system after incubation with secondary antibody HRP-conjugated Goat anti-rabbit IgG (Beyotime, A0208).\n\n### Western blot\n\nBriefly, cells and tissue were lysed with RIPA buffer (Beyotime Biotechnology) supplemented with PMSF (Beyotime Biotechnology) and protease inhibitor cocktail (Roche). METTL3 (abcam, ab195352, 1:2000), METTL14 (sigma, HPA038002, 1:2000), ALKBH5 (sigma, HPA007196, 1:2000), FTO (abcam, ab92821), NSP1 and VP6 (gift from Harry B. Greenberg lab), GAPDH (proteintech), TUBULIN (proteintech), beta-ACTIN (proteintech), Phospho-IRF-7 (Ser437/438) (D6M2I) (CST), Phospho-TBK1/NAK (Ser172) (D52C2) (CST), TBK1/NAK (D1B4) (CST), and IRF-7 (D8V1J) (CST) antibodies were used in accordance with the manufacturer\u2019s instructions. After incubation with the primary antibody overnight, the blotted PVDF membranes (Immobilon, IPVH00010) were incubated with goat anti-rabbit IgG-HRP (Beyotime, A0208) or goat anti-mouse IgG-HRP (Beyotime, A0216) and exposed with BIO-RAD ChemiDocTM Imaging System for a proper exposure period.\n\n### RNA degradation assay\n\nThe stability of targeted mRNA was assessed as previously described (Li et al., 2017). In brief, METTL3 knock down HT-29 and control cell were plated on 24-well plate. Actinomycin-D (MCE, HY17559) was added to a final concentration of 5 \u03bcM, and cells were harvested by indicated time points after actinomycin-D treatment. The RNA samples are processed and qPCR was used to measure the mRNA transcripts, all data were normalized to that of t = 0 time point.\n\n### Dual-luciferase assay\n\npmirGLO (Firefly luciferase, hRluc) vector of the Dual-luciferase Reporter assay system (Promega, E1910) was used to determine the function of m6A modification within the 3\u2019UTR of Irf7 transcripts. The potential m6A modification sites (3446 A, 3475 A, 3491 A, 3590 A, and 3620 A of mice Irf7(NC_000073)) were predicted on SRAMP website. The mutants harbor the A to G mutations at these sites. The assay was performed according to the manufacture\u2019s instruction of Promega Dual-Luciferase Reporter Assay System(E1910): Briefly, 300 ng of pmirGLO vector containing Irf7-3\u2019UTR or m6A-mutant Irf7-3\u2019UTR were transfected into HEK293T cells in triplicate wells. The relative luciferase activity was accessed 36 hr post-transfection.\n\n### Isolation of IECs in the Intestine\n\nSmall intestines were excised and flushed thoroughly three times with PBS. They were turned inside out and cut into ~1 cm sections then transferred into RPMI with 2 mM EDTA, and shaken for 15 min at 37 \u00b0C. Supernatants were collected through a 100-mm cell strainer to get single-cell suspensions. Cells were collected as the IEC fraction which contains both epithelial cells (~90%) and lymphocytes (IEL, ~ 10%). Single-cell suspension was used for further analysis.\n\n### RNA-Seq\n\nIECs from Mettl3\u0394IEC mice as well as the wild-type littermate control mice were isolated as described in previous section. Total RNAs were extracted with TRNzol universal RNA Reagen kits. Berrygenomics (Beijing, China) processed the total RNA and constructed the mRNA libraries, and subject them to standard illumine sequencing on Novaseq 6,000 system, and obtained >40 million Pair-end 150 reads for each sample. Raw RNA-sequencing reads were aligned to the mouse genome (mm10, GRCm38) with STAR (v2.5.3a). Gene expression levels and differential analysis was performed with edgeR(v3.29.2). Genes were considered significantly differentially expressed if showing \u22651.5 fold change and FDR < 0.05. Gene set analysis was performed and enriched pathways were obtained through online bioinformatics tools (metascape) and GSEA (v4.0.3). Pathway plot were gene-rated with R package \u2018ggplot2\u2019 (Li et al., 2017).\n\n### m6A RNA-IP-qPCR and m6A RNA-IP-Seq\n\nm6A RNA-IP-Seq was carried out according to a previously published protocol (Li et al., 2017). In brief, total cellular RNA extracted from WT C57 mice IEC was fragmented by ZnCl2 followed by ethanol precipitation. Fragmented RNA was incubated with an anti-m6A antibody (Sigma Aldrich ABE572-I) or IgG IP Grade Rabbit polyclonal antibody (abcam, lot: 934197). The eluted RNA and input were subjected to high-throughput sequencing using standard protocols (Illumina, San Diego, CA, USA) or processed as described in \u2018RT-qPCR\u2019 section, except that the data were normalized to the input samples. The m6A RIP-Seq data were analyzed as described previously (Li et al., 2017).\n\nm6A sites on RV-EW RNA were predicted on http: //www.cuilab.cn/sramp website, and m6A-RIP-qPCR primer were designed on NCBI primer blast according to the predicted m6A sites.\n\n#### m6A-RIP-qPCR primer\n\n### J2 immunofluorescent staining\n\nIECs from Mettl3\u0394IEC mice as well as from the wild-type littermate control mice were isolated as described in previous section. Isolated IEC were centrifuged onto glass slides and fixed with 4% Paraformaldehyde for 30 min at room temperature. Subsequently, permeabilized and blocked with PBS containing 0.1% Triton-X-100% and 5% bovine serum albumin for 1 hr at room temperature. Double-stranded RNA (dsRNA) was labeled by a mouse monoclonal antibody J2 (Scisons) for 2 hr at room temperature, followed by incubation with anti-mouse IgG Alexa Fluor 594-conjugated antibody (Invitrogen) for 1 hr, and cells nuclei were visualized with 4,6-diamidino-2-phenylindole (DAPI, Invitrogen). All fluorescence images were analyzed via confocal imaging using Zeiss LSM880.\n\n### Statistical analysis\n\nStatistical analysis was performed with the GraphPad Prism 8.0 (GraphPad, Inc, USA). Experiments were independently repeated for indicated times listed in the figure legend. Representative data was exhibited as the means \u00b1 SEM. Quantitative data was compared using Student\u2019s t test. In addition, correlational analysis of gene expression was conducted with linear regression. p-values for every result were labeled on figures, and p < 0.05 was reckoned as statistically significant (*p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, NS., not significant).\n",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "0914b50c-a3aa-400a-b4d9-ece611bf9318",
+      "submission_id": "4bbbdc3d-3f25-4219-9ab5-7a907dd1a5c4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kiyoshi Takeda, Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73628.sa0](https://doi.org/10.7554/eLife.73628.sa0)\n\nThis study clearly shows that m6A modification on mRNA regulates immune responses in the intestine during rotavirus infection. The authors further show the mechanisms how m6A modification is regulated in the intestine. Thus, this study provides important insights into the regulation of anti-viral immunity in the intestine.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kiyoshi Takeda, Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73628.sa1](https://doi.org/10.7554/eLife.73628.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"m6A modifications regulate intestinal immunity and rotavirus infection\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The m6A dot blot used in Figure 1 is not a good measurement system of total m6A modification levels, because the antibody used here also detects other RNA modification, m6Am (PMID: 31676230). Therefore, it is unclear if the increase of m6A dot blot intensity is due to the increase of m6A in RNAs mediated by METTL3 in IECs. The authors should investigate the m6A levels in IECs, not BMDMs, under METTL3 deficiency. Ideally, this analysis should be done using mass spectrometry.\n\n2) The authors show that Alkbh5 expression is increased when the mice grow up to 3 weeks old. However, the ALKBH5 protein expression changes are missing.\n\n3) The decline in m6A levels during early life development is quite interesting. (Line 110).\n\n\u2013 It is not clear if the subtle increase in Alkbh5 mRNA leads to the change in global m6A levels. The authors can use ALKBH5-deficient mouse cells to confirm this point.\n\n\u2013 Is this related to microbiota changes during the same period of life (PMID: 32165618)?\n\n4) The authors should describe the overall phenotype of IEC-specific METTL3-deficient mice at the steady state. It is important to clarify if the augmented expression of ISG upon METTL3 deficiency is dependent on rotavirus infection. Also, the authors should describe any detectable abnormalities or changes without stimulation.\n\n5) The finding that Irf7 is targeted by METTL3 is not convincing.\n\n\u2013 The authors performed MeRIP-seq and -qPCR experiments only using RNAs from wild-type IECs not from METTL3-deficient cells. It is necessary to show that the modification levels on Irf7 mRNA is indeed reduced upon METTL3 deficiency.\n\n\u2013 It is unclear if MeRIP-seq is properly performed or not, because there is no quality checking figure shown. For instance, the authors can generate metagene plots or gene logos of m6A modified sites to see if there is any consistency with previous reports.\n\n\u2013 In Figure 2h, the authors should show that the change in luciferase activity between wild-type and mutant Irf7-3'UTR reporters is dependent on METTL3 activity by performing METTL3 knockdown or knockout. The authors should also describe how they mutagenize the sequences for clarification.\n\n\u2013 In Figures 2F and 3C, they showed that Irf7 is upregulated in METTL3-deficient IECs while in Figure 3F, Irf7 is conversely downregulated in METTL3-deficient IECs. This is apparently contradictory to each other.\n\n\u2013 As the authors mention in their discussion, m6A modification of RV RNA, endogenous retroviral elements, and IFN transcripts can all contribute to the decreased anti-viral response conferred by this modification. Can the authors provide stronger evidence ruling out these possibilities? IRF7 is an ISG itself and could mediate these other mechanisms.\n\n6) It is unclear if the augmented expression of IRF7 per se upregulates IFN and ISG expression. Since IRF7 exerts its transcriptional activity upon phosphorylation, the authors should examine IRF7 phosphorylation and total protein levels in METTL3-deficient IECs.\n\n7) In Figure 3, the authors utilized METTL3 and IRF7 deficient mice to show the contribution of METTL3-mediated IRF7 regulation in rotavirus infection.\n\n\u2013 If IRF7 is totally abrogated, IFN production should be greatly impaired as shown in Figure 3A. Thus, it is not surprising to see that the IFN response is diminished. The authors can use heterozygous IRF7 deficient mice instead to check if upregulation of IRF7 under METTL3 deficiency is critical to control rotavirus infection.\n\n\u2013 IRF7 deficient mice did not show increased susceptibility to RV, which is against previous publications (PMID: 30934842, PMID: 17301153). Can the authors explain why? One possibility is that the RV used here also shares the same NSP1 activity as SA11-4F NSP1 to directly target IRF7 for degradation (PMID: 17301153).\n\n8) Given no effect of ALKBH5 knockout on rotavirus infection as shown in Figure 4, it is questionable if ALKBH5 has a profound role in the regulation of m6A in IECs.\n\n\u2013 The authors should determine if m6A modification levels are increased in IECs under ALKBH5 deficiency.\n\n\u2013 Is it possible that the other m6A eraser FTO has a redundant role? Would it be possible to use in vitro experiments to show that overexpressing ALKBH5 overcomes this immune evasion mechanism?\n\nReviewer #1 (Recommendations for the authors):\n\n1) There are four listed corresponding authors in line 5, but two of them are not listed in line 29.\n\nReviewer #2 (Recommendations for the authors):\n\nThis manuscript sets out to determine the previously uncharacterized relationship between rotavirus (RV) infection and m6A modification during intestinal infection by using a collection of both in vivo and in vitro models. The authors found m6A modification inversely correlates with resistance to RV. The increased resistance to RV is due to elevated anti-viral IFN responses in a host with diminished m6A. They investigate mechanism by RNA-Seq and m6A-RIP-Seq and identified IRF7 as the proposed major mediator of this anti-viral response in the m6A deficient setting. During RV infection, the virus up-regulates m6A modifications to limit the IFN response, potentially targeting m6A eraser ALKBH5 for degradation by viral NSP1 protease.\n\nThe primary finding of this manuscript is novel and intriguing, as it broadens the role of this important type of RNA modification. However, there are concerns as to whether the mechanistic conclusions are sufficiently supported, and the manuscript may benefit from adding depth to certain aspects of the study prior to publication. These are detailed below.\n\nSpecific concerns:\n\n1. Given the central role of IRF7 in the interferon response, it is perhaps not surprising that removing IRF7 reverses the resistance to RV displayed by Mettl3 mutant mice. As the authors mention in their discussion, m6A modification of RV RNA, endogenous retroviral elements, and IFN transcripts can all contribute to the decreased anti-viral response conferred by this modification. Can the authors provide stronger evidence ruling out these possibilities? IRF7 is an ISG itself and could mediate these other mechanisms.\n\n2. The authors suggest the reason knocking out the eraser ALKBH5 has no effect is because it is downregulated by RV NSP1. Is it possible that the other m6A eraser FTO has a redundant role? Would it be possible to use in vitro experiments to show that overexpressing ALKBH5 overcomes this immune evasion mechanism?\n\n3. The decline in m6A levels during early life development is quite interesting and may represent a missed opportunity to broaden the impact of this manuscript. Is this related to microbiota changes during the same period of life (PMID: 32165618)?\n\n4. In the text line 143-144, \"the 5' UTR and 3' UTR of Irf7 in ileum IECs (Figure 2d)\", do they mean Figure 2c?\n\n5. In figure 2, it would be helpful to confirm that changes are reflected at the protein level, especially demonstrating an epithelial-specific increase in IRF7.\n\n6. In Figure 3 Irf7-/- mice did not show increased susceptibility to RV, which is against previous publications (PMID: 30934842, PMID: 17301153). Can the authors explain why? One possibility is that the RV used here also shares the same NSP1 activity as SA11-4F NSP1 to directly target IRF7 for degradation (PMID: 17301153).\n\n7. In Figure 3f right panel, Irf7 expression in Mettl3\u25b3IEC is lower than WT, which contradicts the data in Figure 2e, f. Figure 3f is not quoted anywhere in the manuscript.\n",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f5986789-b00f-4307-8b73-a77995f3c3a9",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C1",
+      "claim": "N6-methyladenosine (m6A) is an abundant mRNA modification and affects many biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyladenosine (m6A) is an abundant mRNA modification and affects many biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about m6A that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "4906f3ef-87c0-4c37-bf21-2b2c217cf99c",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C2",
+      "claim": "Rotavirus infection induced global m6A modifications on mRNA transcripts by down-regulating the m6a eraser ALKBH5.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rotavirus infection induced global m6A modifications on mRNA transcripts by down-regulating the m6a eraser ALKBH5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in the manuscript including dot blot, mass spectrometry, and Western blot analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "77bd3e03-acf3-4f8e-8204-bbb07058925e",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C3",
+      "claim": "Mice lacking the m6A writer enzymes METTL3 in IECs (Mettl3\u0394IEC) were resistant to RV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice lacking the m6A writer enzymes METTL3 in IECs (Mettl3\u0394IEC) were resistant to RV infection and showed increased expression of interferons (IFNs) and IFN-stimulated genes (ISGs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from in vivo mouse infection studies showing reduced viral loads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "eee6a1c9-a801-46d7-88da-9041ef69c49d",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C4",
+      "claim": "Mettl3\u0394IEC mice showed increased expression of interferons (IFNs) and IFN-stimulated genes (ISGs).",
+      "claim_type": "EXPLICIT",
+      "source": "Mice lacking the m6A writer enzymes METTL3 in IECs (Mettl3\u0394IEC) were resistant to RV infection and showed increased expression of interferons (IFNs) and IFN-stimulated genes (ISGs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data and RNA-sequencing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8dc2472a-61c8-47c0-ba59-e9d87fbde07e",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C5",
+      "claim": "IRF7 is one of the primary m6A targets during virus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNA-sequencing and m6A RNA immuno-precipitation (RIP)-sequencing, we identified IRF7, a master regulator of IFN responses, as one of the primary m6A targets during virus infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by m6A-RIP-sequencing and RNA-sequencing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "7e365e84-12ef-4a85-ac20-8fc2f88f69c4",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C6",
+      "claim": "IRF7 is a master regulator of IFN responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNA-sequencing and m6A RNA immuno-precipitation (RIP)-sequencing, we identified IRF7, a master regulator of IFN responses, as one of the primary m6A targets during virus infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "c7403448-238a-43ad-bd68-96a3550a70ac",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C7",
+      "claim": "In the absence of METTL3, IECs showed increased Irf7 mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of METTL3, IECs showed increased Irf7 mRNA stability and enhanced type I and III IFN expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA degradation assays using actinomycin D treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "b57a737e-d9cc-463f-bbab-42c4bfabc9d0",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C8",
+      "claim": "In the absence of METTL3, IECs showed enhanced type I and III IFN expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of METTL3, IECs showed increased Irf7 mRNA stability and enhanced type I and III IFN expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data measuring IFN expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "96479a45-eac0-4d78-8a5f-5c9d18acbc60",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C9",
+      "claim": "Deficiency in IRF7 attenuated the elevated expression of IFNs and ISGs in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency in IRF7 attenuated the elevated expression of IFNs and ISGs and restored susceptibility to RV infection in Mettl3\u0394IEC mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data from double knockout mice (Irf7\u2212/\u2212Mettl3\u0394IEC).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "54c2a5f4-f56f-40de-b06a-86b367dccfc4",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C10",
+      "claim": "Deficiency in IRF7 restored susceptibility to RV infection in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency in IRF7 attenuated the elevated expression of IFNs and ISGs and restored susceptibility to RV infection in Mettl3\u0394IEC mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by viral load measurements in double knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "6b74a66e-783e-499e-b870-f24d1864fcdb",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C11",
+      "claim": "The global m6A modification on mRNA transcripts declined with age in mice, with a significant drop from 2 weeks to 3 weeks post birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the global m6A modification on mRNA transcripts declined with age in mice, with a significant drop from 2 weeks to 3 weeks post birth, which likely has broad implications for the development of intestinal immune system against enteric viruses early in life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by m6A dot blot and mass spectrometry data from mice of different ages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "133b314b-d736-4768-88f9-5b2f69eb49ba",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C12",
+      "claim": "The decline in m6A modifications with age likely has broad implications for the development of intestinal immune system against enteric viruses early in life.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the global m6A modification on mRNA transcripts declined with age in mice, with a significant drop from 2 weeks to 3 weeks post birth, which likely has broad implications for the development of intestinal immune system against enteric viruses early in life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed age-dependent decline in m6A modifications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "d3475429-ec7f-4e6a-a4ac-ab516650f226",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C13",
+      "claim": "m6A is the most abundant internal mRNA modification.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyladenosine (m6A) is the most abundant internal mRNA modification and modulates diverse cellular functions through m6A-related writers, erasers, and readers (Roundtree et al., 2017; Xu et al., 2021; Chelmicki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8f4e30f1-4255-4692-a572-8a0e93fdea95",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C14",
+      "claim": "m6A modulates diverse cellular functions through m6A-related writers, erasers, and readers.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyladenosine (m6A) is the most abundant internal mRNA modification and modulates diverse cellular functions through m6A-related writers, erasers, and readers (Roundtree et al., 2017; Xu et al., 2021; Chelmicki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8537e934-ed44-4fdd-98be-922fae5c38b6",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C15",
+      "claim": "The m6A modification directly recruits m6A-specific proteins of the YT521-B homology (YTH) domain family.",
+      "claim_type": "EXPLICIT",
+      "source": "The m6A modification directly recruits m6A-specific proteins of the YT521-B homology (YTH) domain family (Roundtree et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "e540cc03-3bbf-49a7-82c3-006b92ed7c2f",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C16",
+      "claim": "YTH domain family proteins mediate the m6A-dependent regulation of pre-mRNA processing, microRNA processing, translation initiation, and mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins mediate the m6A-dependent regulation of pre-mRNA processing, microRNA processing, translation initiation, and mRNA decay (Roundtree et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "296bf8d5-a2fa-4ba9-bf09-bf1405517aff",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C17",
+      "claim": "m6A modifications have been identified in the genomes of RNA viruses and the transcripts of DNA viruses with either a pro-viral or anti-viral role.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent works, m6A modifications has been identified in the genomes of RNA viruses and the transcripts of DNA viruses with either a pro-viral or anti-viral role (Tsai et al., 2018; Li et al., 2017; Hesser et al., 2018; Imam et al., 2018; Ye et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "59ada764-e92d-41b8-8f78-fc19a43404b4",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C18",
+      "claim": "m6A RNA modification-mediated down-regulation of the \u03b1-ketoglutarate dehydrogenase (KGDH)-itaconate pathway inhibits viral replication independent of the innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, m6A RNA modification-mediated down-regulation of the \u03b1-ketoglutarate dehydrogenase (KGDH)-itaconate pathway inhibits viral replication independent of the innate immune response (Liu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "f6b48aa5-cb31-4e31-b064-fae1e2fcf1b0",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C19",
+      "claim": "m6A modification preserves the self-recognition of endogenous transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Gao et al., 2020, m6A modification preserves the self-recognition of endogenous transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "9ee58cf3-1423-4a1b-bd4d-4e3e8ea6fb94",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C20",
+      "claim": "Deletion of the m6A writer Mettl3 decreases the m6A modifications in endogenous retrovirus (ERV) transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the m6A writer Mettl3 decreases the m6A modifications in endogenous retrovirus (ERV) transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Gao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "cacdbaed-c421-471c-994c-6d3b870fbab1",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C21",
+      "claim": "The accumulation of ERVs activates pattern recognition receptors (e.g. RIG-I) pathways, resulting in a detrimental interferon response in livers of fetal mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of ERVs activates pattern recognition receptors (e.g. RIG-I) pathways, resulting in a detrimental interferon response in livers of fetal mice (Gao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "36673b18-cefe-4135-8dfa-605c6e9378ce",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C22",
+      "claim": "The m6A modification of the enterovirus 71 (EV71) RNA genome is important for viral propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "The m6A modification of the enterovirus 71 (EV71) RNA genome is important for viral propagation, and EV71 infection increases the expression of m6A writers in vitro (Hao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "2a96c67b-4527-47a0-a02d-c116c8e30a65",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C23",
+      "claim": "EV71 infection increases the expression of m6A writers in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The m6A modification of the enterovirus 71 (EV71) RNA genome is important for viral propagation, and EV71 infection increases the expression of m6A writers in vitro (Hao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "6388e9b2-9f7c-4ed7-8f29-5584ca481f7c",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C24",
+      "claim": "m6A methyltransferase METTL3 knockdown reduces EV71 replication.",
+      "claim_type": "EXPLICIT",
+      "source": "m6A methyltransferase METTL3 knockdown reduces whereas m6A demethylase FTO knockdown increases EV71 replication (Hao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "968aac70-576a-4f8c-b231-171a5640e593",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C25",
+      "claim": "m6A demethylase FTO knockdown increases EV71 replication.",
+      "claim_type": "EXPLICIT",
+      "source": "m6A methyltransferase METTL3 knockdown reduces whereas m6A demethylase FTO knockdown increases EV71 replication (Hao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "ec56c0d6-57d8-4026-8d32-fe4b0cbe6a96",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C26",
+      "claim": "Human cytomegalovirus can upregulate the expression of m6A-related proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, human cytomegalovirus can upregulate the expression of m6A-related proteins (Rubio et al., 2018; Winkler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "151b9d42-3b56-4954-a51b-75d127bc2d8a",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C27",
+      "claim": "The regulation of m6A modifications and the specific role of m6A in the antiviral response in vivo, especially in the gastrointestinal tract, remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the knowledges about m6A regulation and function during viral infection revealed by these in vitro studies, the regulation of m6A modifications and the specific role of m6A in the antiviral response in vivo, especially in the gastrointestinal tract, remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in knowledge that the current study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "95adce5c-76dd-448f-bf6a-79af336d0217",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C28",
+      "claim": "Rotavirus (RV) is a member of the family Reoviridae.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotavirus (RV), a member of the family Reoviridae, is a nonenveloped icosahedral-structured virus with 11 segments of double-stranded RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about rotavirus classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "630c8e49-4497-4a78-8445-e0e0084966c3",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C29",
+      "claim": "Rotavirus is a nonenveloped icosahedral-structured virus with 11 segments of double-stranded RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotavirus (RV), a member of the family Reoviridae, is a nonenveloped icosahedral-structured virus with 11 segments of double-stranded RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about rotavirus structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "878aeb15-5ce9-42d2-b344-d713aaf7dfac",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C30",
+      "claim": "Children under the age of five are at high risk of rotavirus infection, which causes severe diarrhea, dehydration, and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Children under the age of five are at high risk of rotavirus infection, which causes severe diarrhea, dehydration, and death (Crawford et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "7156325b-9d80-4ffc-8c2c-efec13576af2",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C31",
+      "claim": "Rotaviruses encode multiple viral proteins to inhibit innate immune responses by degrading interferon regulatory factors (IRFs) and mitochondrial antiviral-signaling protein (MAVS).",
+      "claim_type": "EXPLICIT",
+      "source": "Rotaviruses encode multiple viral proteins to inhibit innate immune responses by degrading interferon regulatory factors (IRFs) and mitochondrial antiviral-signaling protein (MAVS), thus facilitating efficient virus infection and replication (Ding et al., 2018; Barro and Patton, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "498509af-dcc3-4b79-9a39-5a696a392ddd",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C32",
+      "claim": "The timely induction of an IFN response is key to the host successful control of invading viruses, including RV.",
+      "claim_type": "EXPLICIT",
+      "source": "The timely induction of an IFN response is key to the host successful control of invading viruses, including RV (Honda et al., 2005; Lin et al., 2016; Pott et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "cd530911-548f-4060-baec-844722922072",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C33",
+      "claim": "RV infections primarily take place in children under the age of five in humans and in neonatal mice younger than 2 weeks old.",
+      "claim_type": "EXPLICIT",
+      "source": "RV infections primarily take place in children under the age of five in humans and in neonatal mice younger than 2 weeks old (Crawford et al., 2017; Du et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "1c1bedef-06e4-4bbb-b670-7bf51e25f306",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C34",
+      "claim": "Total RNA m6A modifications in the mouse ileal tissues significantly declined from 2 weeks to 3 weeks post birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, total RNA m6A modifications in the mouse ileal tissues, revealed by a m6A dot blot and mass spectrum (MS) analysis, significantly declined from 2 weeks to 3 weeks post birth (Figure 1a, b and c), which caused by increased Alkbh5 expression (Figure 1d, Figure 1\u2014figure supplement 1a and Figure 1\u2014figure supplement 1b) and development of microbiota might be involved (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by m6A dot blot and mass spectrometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "39ad56d1-db51-4d0d-b426-b70816367625",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C35",
+      "claim": "The decline in m6A modifications from 2 to 3 weeks post birth was caused by increased Alkbh5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, total RNA m6A modifications in the mouse ileal tissues, revealed by a m6A dot blot and mass spectrum (MS) analysis, significantly declined from 2 weeks to 3 weeks post birth (Figure 1a, b and c), which caused by increased Alkbh5 expression (Figure 1d, Figure 1\u2014figure supplement 1a and Figure 1\u2014figure supplement 1b) and development of microbiota might be involved (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR and Western blot data showing increased Alkbh5 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "c063d885-6bda-425e-8134-1753ffc107a3",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C36",
+      "claim": "Development of microbiota might be involved in the decline of m6A modifications with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, total RNA m6A modifications in the mouse ileal tissues, revealed by a m6A dot blot and mass spectrum (MS) analysis, significantly declined from 2 weeks to 3 weeks post birth (Figure 1a, b and c), which caused by increased Alkbh5 expression (Figure 1d, Figure 1\u2014figure supplement 1a and Figure 1\u2014figure supplement 1b) and development of microbiota might be involved (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement based on data from germ-free mice.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "13b66917-b2cb-4c8d-91a1-168cf9a7c98c",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C37",
+      "claim": "Overexpression of Alkbh5 in mouse IEC cell line caused decreased m6A level.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, overexpression of Alkbh5 in mouse IEC cell line caused decreased m6A level (Figure 1\u2014figure supplement 1c), supporting the role of Alkbh5 in regulating global m6A levels in intestine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "a85bd62e-efe4-425d-bf5a-d93c0abb430c",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C38",
+      "claim": "The global m6A RNA modification levels increased in the ileum tissue of suckling mice post RV murine strain EW infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the global m6A RNA modification levels increased in the ileum tissue of suckling mice post RV murine strain EW infection (Figure 1e and f and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by m6A dot blot and mass spectrometry data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "c9ff5b8e-45db-4438-ae1e-de8a2f7048e0",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C39",
+      "claim": "The m6A modification can barely be detected in IECs deficient with m6A writer METTL3 (Mettl3fl/flVil1Cre, Mettl3\u0394IEC).",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, the m6A modification can barely detected in IECs deficiency with m6A writer METTL3 (Mettl3fl/flVil1Cre, Mettl3\u0394IEC) (Figure 1e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by m6A dot blot data shown in Figure 1e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "63436786-e27e-4658-9e55-2e29a50a249f",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C40",
+      "claim": "The viral RNA load in Mettl3\u0394IEC mice ileum tissue was significantly lower than that in the WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The viral RNA load in Mettl3\u0394IEC mice ileum tissue was significantly lower than that in the WT mice (Figure 1g and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data measuring viral loads shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "1342398f-9506-4cd6-9867-a19eb6c917fe",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C41",
+      "claim": "Fecal virus shedding was significantly lower in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Fecal virus shedding was also significantly lower in Mettl3\u0394IEC mice (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data measuring fecal viral shedding shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "56ad7fa3-6f41-4eba-89da-695320de4ea6",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C42",
+      "claim": "Genetic knockdown of METTL3 in HT-29 cells by CRISPR-mediated gene silencing led to reduced RV replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic knockdown of METTL3 in HT-29 cells, a human colonic epithelial cell line, by CRISPR-mediated gene silencing, also led to reduced RV replication (Figure 1i), further highlighting the resistance phenotype to RV infection by METTL3 deficiency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from in vitro cell culture experiments shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "c3fae3d5-5eeb-49a0-a7e9-345301ed6c1d",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C43",
+      "claim": "Most of the differentially expressed genes in METTL3-deficient IECs vs WT IECs were enriched in the pathways of 'defense response to virus', 'response to interferon-beta', and 'positive regulation of innate immune response'.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the differentially expressed genes in METTL3-deficient IECs vs WT IECs were enriched in the pathways of 'defense response to virus', 'response to interferon-beta', and 'positive regulation of innate immune response' by gene ontology analysis (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis of RNA-seq data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "fcb7e9fe-4a9e-48e9-a608-4ca64b1054c9",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C44",
+      "claim": "A panel of interferon stimulate genes (ISGs) are upregulated in METTL3-deficient IECs compared to WT IECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Heatmap also showed that a panel of interferon stimulate genes (ISGs) are upregulated in METTL3-deficient IECs compared to WT IECs (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in a heatmap in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "be4c76b8-1eae-4cd9-b021-1560e151a205",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C45",
+      "claim": "m6A modified Irf7.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that m6A modified one of the master regulators of IFNs, Irf7 (Figure 2c), which played a key role in the network of these differential expressed genes in METTL3-deficient IECs compared to WT IECs, analyzed by STRING (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by m6A-RIP-seq data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "1d32ca8c-c0e4-4644-8ab3-c406da68fac9",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C46",
+      "claim": "Irf7 played a key role in the network of differentially expressed genes in METTL3-deficient IECs compared to WT IECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that m6A modified one of the master regulators of IFNs, Irf7 (Figure 2c), which played a key role in the network of these differential expressed genes in METTL3-deficient IECs compared to WT IECs, analyzed by STRING (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by STRING network analysis shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "ae6d45c2-744f-4801-930d-d4030098d777",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C47",
+      "claim": "Irf7 was the only IRF that was highly expressed in METTL3-deficient IECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, Irf7 was the only IRFs that highly expressed in METTL3-deficient IECs, and Irf7 was the prominently highest expressed Irf in IECs (Figure 2e), indicating Irf7 might be one of the key genes that are modulated by m6A modifications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "ac7d11a6-2286-4510-9dd3-f48b90bc6fa9",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C48",
+      "claim": "Irf7 was the prominently highest expressed Irf in IECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, Irf7 was the only IRFs that highly expressed in METTL3-deficient IECs, and Irf7 was the prominently highest expressed Irf in IECs (Figure 2e), indicating Irf7 might be one of the key genes that are modulated by m6A modifications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8d0b6e20-0b2c-4d0e-b4f8-c71a03c4e747",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C49",
+      "claim": "The m6A peak is enriched near the stop codon and 3'-UTR region.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagene plots showed the m6A peak is enriched near the stop codon and 3'-UTR region, which is consistent with previously studies (Xuan et al., 2018; Dominissini et al., 2012; Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by m6A-RIP-seq data and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "3a9273cf-cf9a-40b3-bc41-71fcf3539dfc",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C50",
+      "claim": "There was an increase of Irf7 mRNA in ileum tissue of Mettl3\u0394IEC mice compared to that in WT littermate control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increase of Irf7 mRNA in ileum tissue of Mettl3\u0394IEC mice compared to that in WT littermate control mice (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "e3ca34cf-4694-4b09-aea6-35e68d14d384",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C51",
+      "claim": "The expression of IRF7 mRNA was higher in METTL3 knockdown HT-29 and METTL3 knockout rhesus monkey MA104 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the expression of IRF7 mRNA was also higher in METTL3 knockdown HT-29 and METTL3 knockout rhesus monkey MA104 cells, suggesting that the regulation of IRF7/Irf7 expression by m6A is likely conserved across species (Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from cell culture experiments shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "780a3b92-bc6b-49a6-ae0c-d1f108c75e0a",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C52",
+      "claim": "The regulation of IRF7/Irf7 expression by m6A is likely conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the expression of IRF7 mRNA was also higher in METTL3 knockdown HT-29 and METTL3 knockout rhesus monkey MA104 cells, suggesting that the regulation of IRF7/Irf7 expression by m6A is likely conserved across species (Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on data from multiple species (mouse, human, rhesus monkey).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "65cffd9b-3318-43fe-8ffb-6cf4b628e56a",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C53",
+      "claim": "Genetic knockdown of METTL3 in human or mice IEC cell lines led to increased IRF7/Irf7 expression and IFN/Ifn responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, genetic knockdown of METTL3 in human or mice IEC cell lines also led to increased IRF7/Irf7 expression and IFN/Ifn responses (Figure 2\u2014figure supplement 1f, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot and qPCR data shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "f026b3d2-8117-4509-bd0f-28002b3cae59",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C54",
+      "claim": "The IRF7 mRNA degraded significantly slower in METTL3-knockdown HT-29 cells than the control cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "The IRF7 mRNA degraded significantly slower in METTL3-knockdown HT-29 cells than the control cell line (Figure 2g, Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA degradation assay data using actinomycin D shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "70e3349c-e149-41f6-b635-4acc5e97b4bc",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C55",
+      "claim": "The ectopically expressed constructs harboring m6A mutant Irf7-3'UTR (Irf7-MUT) showed significantly increased luciferase activity compared with wild-type Irf7-3'UTR (Irf7-WT) constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison with wild-type Irf7-3'UTR (Irf7-WT) constructs, the ectopically expressed constructs harboring m6A mutant Irf7-3'UTR (Irf7-MUT) showed significantly increased luciferase activity (Figure 2h, Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase reporter assay data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "955c3f83-2619-4bcb-9842-de89ac88ed3c",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C56",
+      "claim": "Mutation of m6A modification sites can directly increase the expression of Irf7 and enhance the antiviral function of Irf7 in MEF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mutation of m6A modification sites can directly increase the expression of Irf7 and enhance the antiviral function of Irf7 in MEF cells (Figure 2\u2014figure supplement 4a and Figure 2\u2014figure supplement 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR and Western blot data from MEF cells shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "351a7057-5ae3-46da-a838-3e769738abc0",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C57",
+      "claim": "The transcriptional targets of Irf7 were all upregulated in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the transcriptional targets of Irf7, were all upregulated in Mettl3\u0394IEC mice (Figure 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data measuring IFNs and ISGs shown in Figure 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "fb94d204-d67b-4b18-8f0f-e32b4095dbd2",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C58",
+      "claim": "The mRNAs of Irf7 and its transcriptional targets ISGs increased in the ileum of the mice from 1 to 4 weeks, with a dramatic upregulation from 2 to 3 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the mRNAs of Irf7 and its transcriptional targets ISGs increased in the ileum of the mice from 1 to 4 weeks, with a dramatic upregulation from 2 to 3 weeks (Figure 2\u2014figure supplement 5), which was concomitant with the decrease of global m6A modifications (Figure 1a and b and Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "65b2f27e-eccb-4f79-bf94-435bfe0cee59",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C59",
+      "claim": "The increase in Irf7 and ISG mRNAs from 2 to 3 weeks was concomitant with the decrease of global m6A modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the mRNAs of Irf7 and its transcriptional targets ISGs increased in the ileum of the mice from 1 to 4 weeks, with a dramatic upregulation from 2 to 3 weeks (Figure 2\u2014figure supplement 5), which was concomitant with the decrease of global m6A modifications (Figure 1a and b and Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the temporal correlation between two sets of data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "438691dd-43da-42e6-b7cc-e02ac546c13e",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C60",
+      "claim": "The expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were significantly lower than those from Mettl3\u0394IEC mice at 2dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Following RV oral gavage, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were significantly lower than those from Mettl3\u0394IEC mice at 2dpi (Figure 3a\u2013c), and unlike the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice vs littermate WT controls, by deficiency of IRF7, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those from Irf7\u2212/\u2212 mice (Figure 3a\u2013c), suggesting that Irf7 mediates the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from double knockout mice shown in Figure 3a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "6eee7eac-6859-487a-9cf7-3c891d8fb005",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C61",
+      "claim": "The expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those from Irf7\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Following RV oral gavage, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were significantly lower than those from Mettl3\u0394IEC mice at 2dpi (Figure 3a\u2013c), and unlike the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice vs littermate WT controls, by deficiency of IRF7, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those from Irf7\u2212/\u2212 mice (Figure 3a\u2013c), suggesting that Irf7 mediates the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from double knockout mice shown in Figure 3a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8495c32a-ea01-4017-bc63-c7884f9e0b3c",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C62",
+      "claim": "Irf7 mediates the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Following RV oral gavage, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were significantly lower than those from Mettl3\u0394IEC mice at 2dpi (Figure 3a\u2013c), and unlike the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice vs littermate WT controls, by deficiency of IRF7, the expression of IFNs and ISGs in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those from Irf7\u2212/\u2212 mice (Figure 3a\u2013c), suggesting that Irf7 mediates the increased expression of IFNs and ISGs in Mettl3\u0394IEC mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the genetic rescue experiment data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "87df340b-482f-4251-909d-1d472662698a",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C63",
+      "claim": "The Irf7\u2212/\u2212Mettl3\u0394IEC mice showed significantly higher viral loads in ileum tissue than Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the Irf7\u2212/\u2212Mettl3\u0394IEC mice showed significantly higher viral loads in ileum tissue and higher fecal shedding of RV Mettl3\u0394IEC (Figure 3d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data measuring viral loads shown in Figure 3d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "6bccc3cf-b8e9-4b9d-a9d8-d3e087f8fa49",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C64",
+      "claim": "The Irf7\u2212/\u2212Mettl3\u0394IEC mice showed higher fecal shedding of RV than Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the Irf7\u2212/\u2212Mettl3\u0394IEC mice showed significantly higher viral loads in ileum tissue and higher fecal shedding of RV Mettl3\u0394IEC (Figure 3d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data measuring fecal viral shedding shown in Figure 3d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "204411f6-0664-4076-8171-296ed1cd8d25",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C65",
+      "claim": "The fecal viral shedding in Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those in Irf7\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, unlike the much lower fecal viral shedding in Mettl3\u0394IEC mice vs littermate WT controls, by deficiency of IRF7, the fecal viral shedding in Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those in Irf7\u2212/\u2212 mice (Figure 3d), suggesting that Irf7 mediates the resistant phenotype of rotavirus infection measured by fecal viral shedding in Mettl3\u0394IEC mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "f0839778-f61d-40e0-91d5-c04de8f46d06",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C66",
+      "claim": "Irf7 mediates the resistant phenotype of rotavirus infection measured by fecal viral shedding in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, unlike the much lower fecal viral shedding in Mettl3\u0394IEC mice vs littermate WT controls, by deficiency of IRF7, the fecal viral shedding in Irf7\u2212/\u2212Mettl3\u0394IEC mice were not significantly different from those in Irf7\u2212/\u2212 mice (Figure 3d), suggesting that Irf7 mediates the resistant phenotype of rotavirus infection measured by fecal viral shedding in Mettl3\u0394IEC mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the genetic rescue experiment data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "dc4e244f-a0c6-4d32-a422-b5b1aab88391",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C67",
+      "claim": "Besides the contribution of Irf7 to the resistant phenotype of rotavirus infection in IECs from Mettl3\u0394IEC mice, other pathways (e.g. m6A modifications in RV RNA) may also play roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the viral proteins expression difference in ileum from Irf7\u2212/\u2212Mettl3\u0394IEC mice vs that from Irf7\u2212/\u2212 mice (9.7-fold lower for NSP2 and 9.3-fold lower for VP7), was much lower than the viral proteins expression difference in ileum from Mettl3\u0394IEC mice vs that from littermate mice (267.1-fold lower for NSP2 and 283.4-fold lower for VP7) (Figure 3e), suggesting that besides the contribution of Irf7 to the resistant phenotype of rotavirus infection in IECs from Mettl3\u0394IEC mice, other pathways (e.g. m6A modifications in RV RNA) may also play roles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the incomplete rescue of the phenotype by IRF7 deficiency.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "34ae8c9f-0927-426b-8aa1-0753f9cf4223",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C68",
+      "claim": "IRF7 is an important mediator of the increased IFNs and ISGs expression in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, IRF7 is an important mediator of the increased IFNs and ISGs expression in Mettl3\u0394IEC mice and genetic deletion of IRF7 restored the resistant phenotype of Mettl3\u0394IEC mice to RV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the genetic rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "9497497d-10e8-46f0-8eab-18a679fc4fd3",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C69",
+      "claim": "Genetic deletion of IRF7 restored the resistant phenotype of Mettl3\u0394IEC mice to RV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, IRF7 is an important mediator of the increased IFNs and ISGs expression in Mettl3\u0394IEC mice and genetic deletion of IRF7 restored the resistant phenotype of Mettl3\u0394IEC mice to RV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the genetic rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "dc922059-511d-4763-8d8d-3dac3f982b94",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C70",
+      "claim": "The protein levels of the methyltransferases METTL3 and METTL14 and demethylase FTO were not affected by RV infection in ileum tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein levels of the methyltransferases METTL3 and METTL14 and demethylase FTO were not affected by RV infection in ileum tissue (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "3b35e16d-96bb-4322-b517-aad46a128b8b",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C71",
+      "claim": "The protein level of demethylase ALKBH5 was significantly down-regulated by RV infection in the ileum.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the protein level of demethylase ALKBH5 was significantly down-regulated by RV infection in the ileum (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "c317cbfa-67dc-48a9-803c-654ebd920668",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C72",
+      "claim": "The depletion of ALKBH5 in IECs did not affect the anti-RV immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "The depletion of ALKBH5 in IECs did not affected the anti-RV immune response (Figure 4c), the viral shedding in the feces (Figure 4d), or the viral protein expression in the ileum (Figure 4e), likely due to the suppressed ALKBH5 expression in ileum tissue of WT mice infected by RV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from Alkbh5\u0394IEC mice shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "05ae2124-eb94-45d8-b0c6-df83bd516d34",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C73",
+      "claim": "The depletion of ALKBH5 in IECs did not affect the viral shedding in the feces.",
+      "claim_type": "EXPLICIT",
+      "source": "The depletion of ALKBH5 in IECs did not affected the anti-RV immune response (Figure 4c), the viral shedding in the feces (Figure 4d), or the viral protein expression in the ileum (Figure 4e), likely due to the suppressed ALKBH5 expression in ileum tissue of WT mice infected by RV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from Alkbh5\u0394IEC mice shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "2a38e6a3-c364-4c4d-9a3d-82ab117a7f6f",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C74",
+      "claim": "The depletion of ALKBH5 in IECs did not affect the viral protein expression in the ileum.",
+      "claim_type": "EXPLICIT",
+      "source": "The depletion of ALKBH5 in IECs did not affected the anti-RV immune response (Figure 4c), the viral shedding in the feces (Figure 4d), or the viral protein expression in the ileum (Figure 4e), likely due to the suppressed ALKBH5 expression in ileum tissue of WT mice infected by RV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from Alkbh5\u0394IEC mice shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "f290dcfc-fef9-49f9-aefd-64a22161f484",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C75",
+      "claim": "The lack of phenotype in Alkbh5\u0394IEC mice is likely due to the suppressed ALKBH5 expression in ileum tissue of WT mice infected by RV.",
+      "claim_type": "EXPLICIT",
+      "source": "The depletion of ALKBH5 in IECs did not affected the anti-RV immune response (Figure 4c), the viral shedding in the feces (Figure 4d), or the viral protein expression in the ileum (Figure 4e), likely due to the suppressed ALKBH5 expression in ileum tissue of WT mice infected by RV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference to explain the lack of phenotype in Alkbh5\u0394IEC mice.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "999d69b4-f00a-42fb-985a-e3668199a315",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C76",
+      "claim": "The Alkbh5 expression is much higher than Fto in intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the Alkbh5/ALKBH5 expression is much higher than Fto/FTO in intestine (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq and qPCR data shown in Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "b4f4fcf2-2531-4cef-8797-fb31bdde8f89",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C77",
+      "claim": "ALKBH5 but not FTO is the dominant m6A eraser in IECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Through dot blot assay, we found ALKBH5 but not FTO is the dominant m6A eraser in IECs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dot blot data from knockdown experiments shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "189fe9a5-9744-43bc-8965-573e649ff462",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C78",
+      "claim": "Overexpressing of recombinant ALKBH5 increased the IFN/ISGs response and inhibit RRV infection in mouse IEC MODE-K cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpressing of recombinant ALKBH5 increased the IFN/ISGs response and inhibit RRV infection in mouse IEC MODE-K cells (Figure 4\u2014figure supplement 2), suggesting re-expression of ALKBH5 might overcome the immune evasion of RV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from overexpression experiments shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "80f67e09-7409-40bf-b040-172a24c6c826",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C79",
+      "claim": "Re-expression of ALKBH5 might overcome the immune evasion of RV.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpressing of recombinant ALKBH5 increased the IFN/ISGs response and inhibit RRV infection in mouse IEC MODE-K cells (Figure 4\u2014figure supplement 2), suggesting re-expression of ALKBH5 might overcome the immune evasion of RV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the overexpression experiment results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "c4db89c3-4dbd-485c-a4e3-193892a46178",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C80",
+      "claim": "Non-structural protein 1 (NSP1) is a well-established RV-encoded innate immune antagonist that are showed to degrade IRF3 and \u03b2-Trcp.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-structural protein 1 (NSP1) is a well-established RV-encoded innate immune antagonist that are showed to degrade IRF3 and \u03b2-Trcp (Barro and Patton, 2005; Ding et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "959e62b6-2808-4605-aa68-f90de8733868",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C81",
+      "claim": "Only WT RV reduced ALKBH5 protein levels, not NSP1-null RV.",
+      "claim_type": "EXPLICIT",
+      "source": "We infected HEK293 cells with WT and NSP1-null RVs, only WT RV reduced ALKBH5 protein levels (Figure 4f), suggesting that the down-regulation of ALKBH5 expression by RV is NSP1-dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data comparing WT and NSP1-null RV shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8b9893a6-19ee-4fcf-9aa9-689c64fc3564",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C82",
+      "claim": "The down-regulation of ALKBH5 expression by RV is NSP1-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "We infected HEK293 cells with WT and NSP1-null RVs, only WT RV reduced ALKBH5 protein levels (Figure 4f), suggesting that the down-regulation of ALKBH5 expression by RV is NSP1-dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the comparison of WT and NSP1-null RV effects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "921e6096-240d-4e31-b8f0-b323038266d5",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C83",
+      "claim": "RV might evade the antiviral immune response via downregulation of ALKBH5 expression by NSP1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that RV might evades the antiviral immune response via downregulation of ALKBH5 expression by NSP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the NSP1-dependent ALKBH5 downregulation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "fcfffb95-a3a1-4962-b653-32b4884f34dd",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C84",
+      "claim": "Previous studies reported that m6A modifications on mRNA in mice embryonic fibroblasts or normal human dermal fibroblasts negatively regulate the IFN response by accelerating the mRNA degradation of type I IFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that m6A modifications on mRNA in mice embryonic fibroblasts or normal human dermal fibroblasts negatively regulate the IFN response by accelerating the mRNA degradation of type I IFNs (Rubio et al., 2018; Winkler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "05a352ed-4419-49bb-b2c9-fd37aeaa8d54",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C85",
+      "claim": "Type I and type III IFNs play a critical role in the antiviral immune response in the GI tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Since type I and type III IFNs play a critical role in the antiviral immune response in the GI tract (Pott et al., 2011), we used an RV infection model, in which IECs are specifically infected, as well as conditional knockout mice with IECs-specific depletion of m6A writer METTL3 or m6A eraser ALKBH5, to study the role of m6A modification in regulating IFN response towards rotavirus in IECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "37c62350-58c7-4150-a249-2f63a1f7e3c2",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C86",
+      "claim": "m6A modification is known to affect viral gene expression, replication, and generation of progeny virions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to directly regulating target genes that involved in innate immune pathways, m6A modification is also known to affect viral gene expression, replication, and generation of progeny virions (Roundtree et al., 2017; Brocard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "7542418a-b259-4223-b4eb-9ac7d38b2b98",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C87",
+      "claim": "Some viral RNA genomes are modified by m6A, such as simian virus 40, influenza A virus, adenovirus, avian sarcoma virus, Rous Sarcoma virus, hepatitis C virus and Zika virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Some viral RNA genomes are modified by m6A, such as simian virus 40 (Tsai et al., 2018; Lavi and Shatkin, 1975), influenza A virus (Krug et al., 1976), adenovirus (Sommer et al., 1976), avian sarcoma virus (Dimock and Stoltzfus, 1977), Rous Sarcoma virus (Kane and Beemon, 1985), hepatitis C virus (Gokhale et al., 2016) and Zika virus (Lichinchi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "f231e351-8431-4880-99d3-193d67c7934e",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C88",
+      "claim": "Rotavirus RNA has m6A modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Through our m6A-RIP-qPCR, Rotavirus RNA was also found to have m6A modification (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by m6A-RIP-qPCR data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "f5194ad8-acb6-42da-b0eb-f13ccc10a1f8",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C89",
+      "claim": "Genetic deletion of METTL3 in monkey kidney MA104 cell line led to reduced RV replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, genetic deletion of METTL3 in monkey kidney MA104 cell line, which has limited IFN responses (S\u00e1nchez-Tacuba et al., 2020), also led to reduced RV replication (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data from MA104 cells shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "6b6c8152-583b-4532-bd18-9da70b138556",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C90",
+      "claim": "MA104 cell line has limited IFN responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, genetic deletion of METTL3 in monkey kidney MA104 cell line, which has limited IFN responses (S\u00e1nchez-Tacuba et al., 2020), also led to reduced RV replication (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "83f87859-6671-4390-9588-f90b638ed947",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C91",
+      "claim": "IRF7 deficiency didn't fully restore the suppressed rotaviral infection in Mettl3\u0394IEC mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, IRF7 deficiency didn't fully restore the suppressed rotaviral infection in Mettl3\u0394IEC mice (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "22c86c21-2417-4912-8f9b-c8f93ef0b553",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C92",
+      "claim": "m6A modifications were shown to maintain the genomic stability of mice embryonic stem cells by promoting the degradation of endogenous retrovirus (ERV) mRNA, or by regulating ERV heterochromatin and inhibiting its transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, m6A modifications were shown to maintain the genomic stability of mice embryonic stem cells by promoting the degradation of endogenous retrovirus (ERV) mRNA, or by regulating ERV heterochromatin and inhibiting its transcription (Xu et al., 2021; Chelmicki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "f5f4a43b-8280-424c-86b6-765386a39433",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C93",
+      "claim": "The absence of m6A results in the formation of abnormal endogenous dsRNA, which causes an aberrant immune response and necrosis in the hematopoietic system.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of m6A results in the formation of abnormal endogenous dsRNA, which causes an aberrant immune response and necrosis in the hematopoietic system (Gao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "e99fb88a-cc3e-4380-a681-9281888d10e6",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C94",
+      "claim": "There is an increase of dsRNA levels in IECs of Mettl3\u0394IEC mice compared to the littermate WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the intestine, through immunostaining with J2 antibody, we detected the increase of dsRNA levels in IECs of Mettl3\u0394IEC mice compare to the littermate WT mice (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence staining data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "4b8e4b27-2e18-4a1b-b65f-cb4fb261b7bf",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C95",
+      "claim": "In the absence of METTL3, the increase of dsRNA will induce the IFN responses, and the increased stability of Irf7 mRNA will amplify this process.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a dual activation model in steady state that in the absence of METTL3, the increase of dsRNA will induce the IFN responses, and the increased stability of Irf7 mRNA, which serves as a key transcription factor of IFN and ISG expression, will amplify this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model proposed based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "421c454c-7c62-42e0-8916-11accf3c137f",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C96",
+      "claim": "m6A modification of viral RNA genomes affect the activation of innate sensor-mediated signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, m6A modification of viral RNA genomes affect the activation of innate sensor-mediated signaling (Chen et al., 2021; Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "1860045d-be27-4c66-a7c3-95254af6ac3a",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C97",
+      "claim": "Decreased m6A modification on RV genomes may activate innate sensors directly and induce higher IFN response, which will also be amplified by increase of Irf7 mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased m6A modification on RV genomes may activate innate sensors directly and induce higher IFN response, which will also be amplified by increase of Irf7 mRNA stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic explanation for the observed phenotypes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "897bfcaf-a419-4ffa-a355-28bf4eac2856",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C98",
+      "claim": "RV infection down-regulates the level of m6A eraser ALKBH5 to induce m6A modifications, in an NSP1 dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found RV infection down-regulates the level of m6A eraser ALKBH5 to induce m6A modifications, in an NSP1 dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "9041c4e0-5ad2-4e01-a4d8-e9ae2918bd01",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C99",
+      "claim": "ALKBH5 deficiency in IECs results in normal susceptibility to RV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, ALKBH5 deficiency in IECs results in normal susceptibility to RV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data from Alkbh5\u0394IEC mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "cb9f9d59-9090-4fad-b8ba-12ad998c7a95",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "claim_id": "C100",
+      "claim": "The dual regulation of m6A levels during RV infection and development provide new insights into the choice of either RV or the host on regulation of m6A modification to achieve either immune evasion or immune surveillance, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual regulation of m6A levels during RV infection and development provide new insights into the choice of either RV or the host on regulation of m6A modification to achieve either immune evasion or immune surveillance, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive statement about the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bb0afb80-5271-4f71-8187-3ea5c875d2d7",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Global m6A modifications in mouse ileal tissue decline with age, with a significant drop from 2 to 3 weeks post birth, which is associated with increased ALKBH5 expression and potentially influenced by microbiota development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C34, C35 are well-supported by m6A dot blot, mass spectrometry, qPCR, and Western blot data (Figure 1a-d). C36 is speculative but supported by germ-free mouse data (Figure 1\u2014figure supplement 2). The temporal correlation and mechanistic link through ALKBH5 are demonstrated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rotavirus infection induces global m6A modifications by down-regulating the m6A eraser ALKBH5 in an NSP1-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C38, C71 are supported by dot blot, mass spectrometry, and Western blot data (Figure 1e-f, Figure 4a-b). Claims C81-C82 demonstrate NSP1-dependence through comparison of WT and NSP1-null RV (Figure 4f). The mechanistic link is well-established through multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "fa889268-0ad9-4ae8-ae75-97e932b24f6f",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mice lacking METTL3 in intestinal epithelial cells (Mettl3\u0394IEC) are resistant to rotavirus infection and show reduced viral loads and fecal shedding, with increased expression of interferons and interferon-stimulated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C40, C41 are supported by in vivo infection studies with qPCR measurements of viral loads and IFN/ISG expression (Figure 1g-h, Figure 2i). C42 extends findings to human cells (Figure 1i). The phenotype is consistently demonstrated across multiple experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "5212dd9d-f81e-497d-bcfe-e50a2a8e5204",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IRF7 is identified as a primary m6A target during virus infection, with m6A modifications enriched near the stop codon and 3'-UTR region, and is the most highly expressed IRF in intestinal epithelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C45 are supported by m6A-RIP-seq data (Figure 2c). C47-C48 are supported by RNA-seq data (Figure 2e). C49 is supported by metagene plots consistent with previous literature (Figure 2\u2014figure supplement 1b). The identification of IRF7 as a key m6A target is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "6e45f139-13f0-42ed-944a-3ba8ff0efe9a",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of METTL3 increases IRF7 mRNA stability through reduced m6A-mediated mRNA decay, leading to increased IRF7 expression across multiple species and cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C54 are supported by actinomycin D RNA degradation assays (Figure 2g). C50-C51 show increased IRF7 expression in multiple systems (Figure 2f, Figure 2\u2014figure supplement 2-3). C55-C56 demonstrate direct effects of m6A site mutations on IRF7 expression through luciferase assays and MEF experiments (Figure 2h, Figure 2\u2014figure supplement 4). The mechanism is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "971c2913-e044-406b-97b8-401804fa05fa",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "METTL3 deficiency in IECs leads to enhanced type I and III IFN expression and upregulation of interferon-stimulated genes, with temporal correlation to m6A decline during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C43-C44, C57 are supported by qPCR and RNA-seq data showing increased IFN/ISG expression (Figure 2a-b, 2i). C58-C59 demonstrate temporal correlation between m6A decline and IFN/ISG upregulation (Figure 2\u2014figure supplement 5). The data consistently support the regulatory relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "8189143c-3da8-4c17-978f-42fa0a80f541",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IRF7 mediates the increased interferon response and resistance to rotavirus infection in Mettl3\u0394IEC mice, as demonstrated by genetic rescue experiments showing that IRF7 deficiency restores susceptibility to RV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C60-C66 are supported by comprehensive genetic rescue experiments using Irf7\u2212/\u2212Mettl3\u0394IEC double knockout mice (Figure 3a-f). The data show that IRF7 deficiency attenuates IFN/ISG expression and restores viral susceptibility. C68-C69 are well-supported summary conclusions. The genetic epistasis experiment is properly controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "c3077313-758e-4168-baf7-9790d362f36d",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Besides IRF7-mediated immunity, other pathways including m6A modifications on rotavirus RNA may contribute to the antiviral phenotype in Mettl3\u0394IEC mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67, C91 note incomplete rescue by IRF7 deficiency (Figure 3e), suggesting additional mechanisms. C88 shows RV RNA has m6A modifications (Figure 4\u2014figure supplement 3). C89 shows reduced RV replication in MA104 cells with limited IFN responses (Figure 2\u2014figure supplement 3). However, C97 is speculative. While suggestive, direct mechanistic evidence for RV RNA m6A effects is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "1ff7ca1b-a98d-411f-8c7f-ef6cb81063e9",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ALKBH5 deficiency in IECs does not affect rotavirus infection susceptibility, likely because ALKBH5 is already suppressed by RV infection in wild-type mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by data from Alkbh5\u0394IEC mice showing no phenotype (Figure 4c-e). C75, C99 provide a logical explanation based on RV-mediated ALKBH5 suppression (Figure 4a-b). The interpretation is reasonable given the experimental context, though the lack of phenotype limits mechanistic insight.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "9494e630-308d-4cca-b3c0-42754f1d32de",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ALKBH5, not FTO, is the dominant m6A eraser in intestinal epithelial cells, as demonstrated by expression analysis and functional assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by RNA-seq, qPCR, and dot blot data showing higher ALKBH5 expression and dominant eraser activity (Figure 4\u2014figure supplement 1). C37 demonstrates functional effects of ALKBH5 overexpression on m6A levels. The data consistently establish ALKBH5 as the primary eraser in this tissue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "6e8a5e0b-fe5c-4f91-ac95-aaa1a12a6c37",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overexpression of ALKBH5 increases IFN/ISG responses and inhibits RV infection, suggesting that re-expression of ALKBH5 might overcome viral immune evasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by qPCR data from ALKBH5 overexpression experiments (Figure 4\u2014figure supplement 2). C79 and C83 are speculative interpretations but are reasonable given the experimental data and the demonstrated NSP1-dependent ALKBH5 suppression. The gain-of-function experiment supports the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "b63eef63-70cd-4bf9-a51c-46b88d41e680",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The regulation of IRF7 expression by m6A is conserved across species (mouse, human, rhesus monkey).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by data from multiple species showing increased IRF7 expression upon METTL3 knockdown/knockout (Figure 2f, Figure 2\u2014figure supplement 2-3). The cross-species validation strengthens the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "991bad01-320c-47a5-b3ef-e45abd577284",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "METTL3 deficiency leads to increased dsRNA levels in IECs, which induces IFN responses that are amplified by increased IRF7 mRNA stability in a dual activation model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by J2 antibody immunofluorescence staining (Figure 4\u2014figure supplement 4). C95 proposes a mechanistic model integrating dsRNA accumulation and IRF7 stabilization. The model is well-supported by the experimental data, though it represents an interpretive synthesis rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "28b095b5-9ba0-417f-a020-0fa8e4b36f73",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The age-dependent decline in m6A modifications and dual regulation during RV infection and development have broad implications for intestinal immune system development and the balance between immune evasion and surveillance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12 and C100 are speculative interpretations of the experimental findings. While the observations about m6A decline with age and RV-induced m6A changes are well-supported, the broader implications for immune system development and host-pathogen interactions are not directly tested. These represent reasonable hypotheses for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    },
+    {
+      "id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83",
+      "content_id": "e2503564-c798-4aac-8377-9b79630911cb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge claims about m6A modifications, rotavirus biology, and interferon responses establish the scientific context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C13-C33, C80, C84-C87, C90, C92-C93, C96) represent established knowledge supported by citations to previous literature. They provide necessary background context but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:32.106948Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6b74a66e-783e-499e-b870-f24d1864fcdb",
+      "result_id": "bb0afb80-5271-4f71-8187-3ea5c875d2d7"
+    },
+    {
+      "claim_id": "1c1bedef-06e4-4bbb-b670-7bf51e25f306",
+      "result_id": "bb0afb80-5271-4f71-8187-3ea5c875d2d7"
+    },
+    {
+      "claim_id": "39ad56d1-db51-4d0d-b426-b70816367625",
+      "result_id": "bb0afb80-5271-4f71-8187-3ea5c875d2d7"
+    },
+    {
+      "claim_id": "c063d885-6bda-425e-8134-1753ffc107a3",
+      "result_id": "bb0afb80-5271-4f71-8187-3ea5c875d2d7"
+    },
+    {
+      "claim_id": "4906f3ef-87c0-4c37-bf21-2b2c217cf99c",
+      "result_id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd"
+    },
+    {
+      "claim_id": "a85bd62e-efe4-425d-bf5a-d93c0abb430c",
+      "result_id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd"
+    },
+    {
+      "claim_id": "dc922059-511d-4763-8d8d-3dac3f982b94",
+      "result_id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd"
+    },
+    {
+      "claim_id": "3b35e16d-96bb-4322-b517-aad46a128b8b",
+      "result_id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd"
+    },
+    {
+      "claim_id": "959e62b6-2808-4605-aa68-f90de8733868",
+      "result_id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd"
+    },
+    {
+      "claim_id": "8b9893a6-19ee-4fcf-9aa9-689c64fc3564",
+      "result_id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd"
+    },
+    {
+      "claim_id": "897bfcaf-a419-4ffa-a355-28bf4eac2856",
+      "result_id": "4470bc6f-1ebc-4843-a084-6ca4b29f42cd"
+    },
+    {
+      "claim_id": "77bd3e03-acf3-4f8e-8204-bbb07058925e",
+      "result_id": "fa889268-0ad9-4ae8-ae75-97e932b24f6f"
+    },
+    {
+      "claim_id": "eee6a1c9-a801-46d7-88da-9041ef69c49d",
+      "result_id": "fa889268-0ad9-4ae8-ae75-97e932b24f6f"
+    },
+    {
+      "claim_id": "63436786-e27e-4658-9e55-2e29a50a249f",
+      "result_id": "fa889268-0ad9-4ae8-ae75-97e932b24f6f"
+    },
+    {
+      "claim_id": "1342398f-9506-4cd6-9867-a19eb6c917fe",
+      "result_id": "fa889268-0ad9-4ae8-ae75-97e932b24f6f"
+    },
+    {
+      "claim_id": "56ad7fa3-6f41-4eba-89da-695320de4ea6",
+      "result_id": "fa889268-0ad9-4ae8-ae75-97e932b24f6f"
+    },
+    {
+      "claim_id": "8dc2472a-61c8-47c0-ba59-e9d87fbde07e",
+      "result_id": "5212dd9d-f81e-497d-bcfe-e50a2a8e5204"
+    },
+    {
+      "claim_id": "be4c76b8-1eae-4cd9-b021-1560e151a205",
+      "result_id": "5212dd9d-f81e-497d-bcfe-e50a2a8e5204"
+    },
+    {
+      "claim_id": "ae6d45c2-744f-4801-930d-d4030098d777",
+      "result_id": "5212dd9d-f81e-497d-bcfe-e50a2a8e5204"
+    },
+    {
+      "claim_id": "ac7d11a6-2286-4510-9dd3-f48b90bc6fa9",
+      "result_id": "5212dd9d-f81e-497d-bcfe-e50a2a8e5204"
+    },
+    {
+      "claim_id": "8d0b6e20-0b2c-4d0e-b4f8-c71a03c4e747",
+      "result_id": "5212dd9d-f81e-497d-bcfe-e50a2a8e5204"
+    },
+    {
+      "claim_id": "c7403448-238a-43ad-bd68-96a3550a70ac",
+      "result_id": "6e45f139-13f0-42ed-944a-3ba8ff0efe9a"
+    },
+    {
+      "claim_id": "3a9273cf-cf9a-40b3-bc41-71fcf3539dfc",
+      "result_id": "6e45f139-13f0-42ed-944a-3ba8ff0efe9a"
+    },
+    {
+      "claim_id": "e3ca34cf-4694-4b09-aea6-35e68d14d384",
+      "result_id": "6e45f139-13f0-42ed-944a-3ba8ff0efe9a"
+    },
+    {
+      "claim_id": "f026b3d2-8117-4509-bd0f-28002b3cae59",
+      "result_id": "6e45f139-13f0-42ed-944a-3ba8ff0efe9a"
+    },
+    {
+      "claim_id": "70e3349c-e149-41f6-b635-4acc5e97b4bc",
+      "result_id": "6e45f139-13f0-42ed-944a-3ba8ff0efe9a"
+    },
+    {
+      "claim_id": "955c3f83-2619-4bcb-9842-de89ac88ed3c",
+      "result_id": "6e45f139-13f0-42ed-944a-3ba8ff0efe9a"
+    },
+    {
+      "claim_id": "b57a737e-d9cc-463f-bbab-42c4bfabc9d0",
+      "result_id": "971c2913-e044-406b-97b8-401804fa05fa"
+    },
+    {
+      "claim_id": "c3fae3d5-5eeb-49a0-a7e9-345301ed6c1d",
+      "result_id": "971c2913-e044-406b-97b8-401804fa05fa"
+    },
+    {
+      "claim_id": "fcb7e9fe-4a9e-48e9-a608-4ca64b1054c9",
+      "result_id": "971c2913-e044-406b-97b8-401804fa05fa"
+    },
+    {
+      "claim_id": "351a7057-5ae3-46da-a838-3e769738abc0",
+      "result_id": "971c2913-e044-406b-97b8-401804fa05fa"
+    },
+    {
+      "claim_id": "fb94d204-d67b-4b18-8f0f-e32b4095dbd2",
+      "result_id": "971c2913-e044-406b-97b8-401804fa05fa"
+    },
+    {
+      "claim_id": "65b2f27e-eccb-4f79-bf94-435bfe0cee59",
+      "result_id": "971c2913-e044-406b-97b8-401804fa05fa"
+    },
+    {
+      "claim_id": "96479a45-eac0-4d78-8a5f-5c9d18acbc60",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "54c2a5f4-f56f-40de-b06a-86b367dccfc4",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "438691dd-43da-42e6-b7cc-e02ac546c13e",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "6eee7eac-6859-487a-9cf7-3c891d8fb005",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "8495c32a-ea01-4017-bc63-c7884f9e0b3c",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "87df340b-482f-4251-909d-1d472662698a",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "6bccc3cf-b8e9-4b9d-a9d8-d3e087f8fa49",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "204411f6-0664-4076-8171-296ed1cd8d25",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "f0839778-f61d-40e0-91d5-c04de8f46d06",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "34ae8c9f-0927-426b-8aa1-0753f9cf4223",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "9497497d-10e8-46f0-8eab-18a679fc4fd3",
+      "result_id": "8189143c-3da8-4c17-978f-42fa0a80f541"
+    },
+    {
+      "claim_id": "dc4e244f-a0c6-4d32-a422-b5b1aab88391",
+      "result_id": "c3077313-758e-4168-baf7-9790d362f36d"
+    },
+    {
+      "claim_id": "83f87859-6671-4390-9588-f90b638ed947",
+      "result_id": "c3077313-758e-4168-baf7-9790d362f36d"
+    },
+    {
+      "claim_id": "f231e351-8431-4880-99d3-193d67c7934e",
+      "result_id": "c3077313-758e-4168-baf7-9790d362f36d"
+    },
+    {
+      "claim_id": "f5194ad8-acb6-42da-b0eb-f13ccc10a1f8",
+      "result_id": "c3077313-758e-4168-baf7-9790d362f36d"
+    },
+    {
+      "claim_id": "1860045d-be27-4c66-a7c3-95254af6ac3a",
+      "result_id": "c3077313-758e-4168-baf7-9790d362f36d"
+    },
+    {
+      "claim_id": "c317cbfa-67dc-48a9-803c-654ebd920668",
+      "result_id": "1ff7ca1b-a98d-411f-8c7f-ef6cb81063e9"
+    },
+    {
+      "claim_id": "05ae2124-eb94-45d8-b0c6-df83bd516d34",
+      "result_id": "1ff7ca1b-a98d-411f-8c7f-ef6cb81063e9"
+    },
+    {
+      "claim_id": "2a38e6a3-c364-4c4d-9a3d-82ab117a7f6f",
+      "result_id": "1ff7ca1b-a98d-411f-8c7f-ef6cb81063e9"
+    },
+    {
+      "claim_id": "f290dcfc-fef9-49f9-aefd-64a22161f484",
+      "result_id": "1ff7ca1b-a98d-411f-8c7f-ef6cb81063e9"
+    },
+    {
+      "claim_id": "9041c4e0-5ad2-4e01-a4d8-e9ae2918bd01",
+      "result_id": "1ff7ca1b-a98d-411f-8c7f-ef6cb81063e9"
+    },
+    {
+      "claim_id": "999d69b4-f00a-42fb-985a-e3668199a315",
+      "result_id": "9494e630-308d-4cca-b3c0-42754f1d32de"
+    },
+    {
+      "claim_id": "b4f4fcf2-2531-4cef-8797-fb31bdde8f89",
+      "result_id": "9494e630-308d-4cca-b3c0-42754f1d32de"
+    },
+    {
+      "claim_id": "13b66917-b2cb-4c8d-91a1-168cf9a7c98c",
+      "result_id": "9494e630-308d-4cca-b3c0-42754f1d32de"
+    },
+    {
+      "claim_id": "189fe9a5-9744-43bc-8965-573e649ff462",
+      "result_id": "6e8a5e0b-fe5c-4f91-ac95-aaa1a12a6c37"
+    },
+    {
+      "claim_id": "80f67e09-7409-40bf-b040-172a24c6c826",
+      "result_id": "6e8a5e0b-fe5c-4f91-ac95-aaa1a12a6c37"
+    },
+    {
+      "claim_id": "921e6096-240d-4e31-b8f0-b323038266d5",
+      "result_id": "6e8a5e0b-fe5c-4f91-ac95-aaa1a12a6c37"
+    },
+    {
+      "claim_id": "780a3b92-bc6b-49a6-ae0c-d1f108c75e0a",
+      "result_id": "b63eef63-70cd-4bf9-a51c-46b88d41e680"
+    },
+    {
+      "claim_id": "65cffd9b-3318-43fe-8ffb-6cf4b628e56a",
+      "result_id": "b63eef63-70cd-4bf9-a51c-46b88d41e680"
+    },
+    {
+      "claim_id": "e99fb88a-cc3e-4380-a681-9281888d10e6",
+      "result_id": "991bad01-320c-47a5-b3ef-e45abd577284"
+    },
+    {
+      "claim_id": "4b8e4b27-2e18-4a1b-b65f-cb4fb261b7bf",
+      "result_id": "991bad01-320c-47a5-b3ef-e45abd577284"
+    },
+    {
+      "claim_id": "133b314b-d736-4768-88f9-5b2f69eb49ba",
+      "result_id": "28b095b5-9ba0-417f-a020-0fa8e4b36f73"
+    },
+    {
+      "claim_id": "cb9f9d59-9090-4fad-b8ba-12ad998c7a95",
+      "result_id": "28b095b5-9ba0-417f-a020-0fa8e4b36f73"
+    },
+    {
+      "claim_id": "f5986789-b00f-4307-8b73-a77995f3c3a9",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "d3475429-ec7f-4e6a-a4ac-ab516650f226",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "8f4e30f1-4255-4692-a572-8a0e93fdea95",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "8537e934-ed44-4fdd-98be-922fae5c38b6",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "e540cc03-3bbf-49a7-82c3-006b92ed7c2f",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "296bf8d5-a2fa-4ba9-bf09-bf1405517aff",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "59ada764-e92d-41b8-8f78-fc19a43404b4",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "f6b48aa5-cb31-4e31-b064-fae1e2fcf1b0",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "9ee58cf3-1423-4a1b-bd4d-4e3e8ea6fb94",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "cacdbaed-c421-471c-994c-6d3b870fbab1",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "36673b18-cefe-4135-8dfa-605c6e9378ce",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "2a96c67b-4527-47a0-a02d-c116c8e30a65",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "6388e9b2-9f7c-4ed7-8f29-5584ca481f7c",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "968aac70-576a-4f8c-b231-171a5640e593",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "ec56c0d6-57d8-4026-8d32-fe4b0cbe6a96",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "151b9d42-3b56-4954-a51b-75d127bc2d8a",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "95adce5c-76dd-448f-bf6a-79af336d0217",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "630c8e49-4497-4a78-8445-e0e0084966c3",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "878aeb15-5ce9-42d2-b344-d713aaf7dfac",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "7156325b-9d80-4ffc-8c2c-efec13576af2",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "498509af-dcc3-4b79-9a39-5a696a392ddd",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "cd530911-548f-4060-baec-844722922072",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "c4db89c3-4dbd-485c-a4e3-193892a46178",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "fcfffb95-a3a1-4962-b653-32b4884f34dd",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "05a352ed-4419-49bb-b2c9-fd37aeaa8d54",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "37c62350-58c7-4150-a249-2f63a1f7e3c2",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "7542418a-b259-4223-b4eb-9ac7d38b2b98",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "6b6c8152-583b-4532-bd18-9da70b138556",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "22c86c21-2417-4912-8f9b-c8f93ef0b553",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "f5f4a43b-8280-424c-86b6-765386a39433",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    },
+    {
+      "claim_id": "421c454c-7c62-42e0-8916-11accf3c137f",
+      "result_id": "65907bd2-d37f-4d71-8ffd-bbd893d0af83"
+    }
+  ],
+  "comparisons": []
+}

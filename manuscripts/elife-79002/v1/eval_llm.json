@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The systematic review identified 43 RCTs involving 7,382 subjects from 5,518 screened references. The trials used either dietary calcium sources (20 trials) or calcium supplements (23 trials), with median baseline calcium intake of 714 mg/day, and most trials (38/43) had durations \u22642 years and doses \u22641000 mg/day. Quality assessment categorized 23 trials as low risk, 16 as moderate risk, and 4 as high risk of bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C17-C23 provide comprehensive methodological details about study selection, characteristics, and quality assessment. The numbers are internally consistent (e.g., 20+23=43 trials), and the systematic search process is documented with a PRISMA flow diagram (Figure 1). The quality assessment using the Cochrane RoB 2 tool is appropriate for RCTs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Calcium supplementation significantly improved BMD and BMC at the femoral neck (BMD: SMD 0.627, 95% CI 0.338-0.915, p<0.001; BMC: SMD 0.364, 95% CI 0.134-0.595, p=0.002) and total body (BMD: SMD 0.330, 95% CI 0.163-0.496, p<0.001; BMC: SMD 0.149, 95% CI 0.006-0.291, p<0.001) with moderate certainty of evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C24-C27 report consistent effect sizes with appropriate statistical significance and confidence intervals. The moderate effect size at femoral neck (SMD 0.627) and small-to-moderate effects at total body are supported by forest plots (Figures 2-3). However, high heterogeneity (I\u00b2=86.28% for BMD, 79.28% for BMC per C56-C57) raises concerns about pooling diverse studies, though random-effects models were appropriately used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C28"
+    ],
+    "result": "Calcium supplementation had a slight but significant improvement effect on lumbar spine BMC (SMD 0.163, 95% CI 0.008-0.317, p=0.039).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C28 report a statistically significant but small effect on lumbar spine BMC. The confidence interval barely excludes zero (0.008-0.317), indicating marginal significance. This finding is consistent across claims but the clinical significance of such a small effect is questionable. Sensitivity analysis (C54) showed this effect was not significant when limited to low-risk trials, suggesting potential bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Calcium supplementation did not improve BMD at lumbar spine (SMD 0.090, 95% CI -0.044 to 0.224, p=0.190) or total hip (SMD 0.257, 95% CI -0.053 to 0.566, p=0.104), and did not improve BMC at total hip (SMD 0.116, 95% CI -0.382 to 0.614, p=0.648).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C29-C31 consistently report non-significant effects at lumbar spine and total hip sites with confidence intervals crossing zero and p-values >0.05. The lack of effect at these sites contrasts with significant effects at femoral neck and total body, suggesting site-specific responses to calcium supplementation. The statistical reporting is appropriate for null findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The improvement effect on femoral neck BMD and BMC was more pronounced in peripeak subjects (20-35 years: BMD SMD 0.852, 95% CI 0.257-1.446; BMC SMD 1.045, 95% CI 0.701-1.390) compared to prepeak subjects (<20 years: BMD SMD 0.600, 95% CI 0.292-0.909; BMC SMD 0.249, 95% CI 0.043-0.454).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16, C32-C36 report larger effect sizes in peripeak versus prepeak populations, which is the study's key novel finding. However, only 3 studies with 223 participants were in the peripeak group for BMD (per Table 2), and only 2 studies with 200 participants for BMC (per Table 3). The small number of peripeak studies (versus 21 prepeak studies for BMD) limits confidence in this comparison despite statistical significance. The wide confidence intervals for peripeak groups (e.g., 0.257-1.446 for BMD) reflect this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Subgroup analyses by duration showed that improvement effects on femoral neck BMD and BMC were stronger with <18 months supplementation than \u226518 months, while for total body BMD, the effect was slightly greater with \u226518 months duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 report duration-dependent effects that differ by anatomical site. Tables 2-3 provide the supporting data showing this pattern. However, the manuscript does not provide p-values for between-subgroup comparisons, making it unclear if these differences are statistically significant. The biological plausibility of stronger short-term effects at femoral neck but longer-term effects at total body is not explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "A stronger beneficial effect on femoral neck BMD and BMC was found in women-only trials compared to trials including both men and women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 reports sex-specific effects with supporting data in Tables 2-3. Women-only trials showed significant effects (BMD: 0.712, p=0.013; BMC: 0.742, p=0.002) while mixed-sex trials showed weaker or non-significant effects (BMC: 0.195, p=0.086). However, the authors acknowledge in limitations that they could not clearly compare males versus females due to merged data in some studies, limiting interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The improvement effects on femoral neck and total body BMD, and on femoral neck and lumbar spine BMC, were stronger in Western countries than in Asian countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 reports regional differences supported by subgroup analyses in Tables 2-3. Western populations showed larger effects at femoral neck BMD (1.078 vs 0.091 in Asians) and other sites. However, this could be confounded by baseline calcium intake differences between regions (acknowledged in C58), and the authors note this finding is counterintuitive and requires future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "For femoral neck and total body BMD, beneficial effects were significant or greater in the lower baseline calcium intake subgroup (<714 mg/day), while for total hip BMD and lumbar spine BMC, effects were significant only in the higher intake subgroup (\u2265714 mg/day).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 report baseline calcium intake-dependent effects with data in Tables 2-3. The finding that lower baseline intake shows greater benefit at some sites is intuitive, but the opposite pattern at total hip and lumbar spine is counterintuitive. The authors acknowledge this contradicts common sense and requires future confirmation, suggesting potential confounding or chance findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Calcium supplementation at doses <1000 mg/day showed statistically significant effects on femoral neck and total body BMD, but doses \u22651000 mg/day did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 reports dose-response findings suggesting a threshold effect, supported by data in Table 2. Lower doses (<1000 mg/day) showed significant effects (femoral neck: 0.717, p<0.001; total body: 0.392, p=0.001) while higher doses did not. This supports the threshold hypothesis (C68) but could also reflect confounding by study characteristics or publication bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Both dietary calcium and calcium supplements showed significant positive effects on femoral neck and total body BMD, but only calcium supplements (not dietary sources) significantly improved lumbar spine and femoral neck BMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 report source-specific effects with data in Tables 2-3. Both sources improved BMD at femoral neck and total body, but only supplements improved BMC at certain sites. This differential effect by outcome measure (BMD vs BMC) and source is interesting but the biological mechanism is unclear. The finding could reflect differences in calcium bioavailability or study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The beneficial effect of calcium supplementation on BMD was maintained for at least 1 year after intervention cessation (SMD 0.933, 95% CI 0.323-1.664, p=0.004) but appeared to disappear when follow-up exceeded 2 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 report persistence of effects post-intervention. However, the authors acknowledge only 2 studies examined follow-up >1 year (Lambert 2008 with 2-year follow-up and Chevalley 2005b with 7-year follow-up), which is insufficient to draw firm conclusions about long-term persistence. The wide confidence interval (0.323-1.664) reflects high uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Calcium supplementation with vitamin D showed greater beneficial effects on femoral neck BMD and BMC, while calcium alone (without vitamin D) showed significant effects on lumbar spine BMC, total body BMC, and total body BMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report vitamin D co-supplementation effects with data in Tables 2-3. The site-specific pattern (vitamin D beneficial at femoral neck but not other sites) is supported by the data but lacks clear biological explanation. The authors conclude calcium alone can improve bone outcomes, though vitamin D may provide additional benefit at femoral neck.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Sensitivity analyses restricted to low-risk trials showed that effects on femoral neck BMD and BMC, and total body BMD remained statistically significant and stable, but effects on lumbar spine and total body BMC were no longer significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 report sensitivity analyses that strengthen confidence in femoral neck and total body BMD findings but cast doubt on BMC findings at other sites. This suggests the primary BMD findings are robust to study quality, while some BMC findings may be influenced by bias in lower-quality studies. This is appropriate sensitivity testing for meta-analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The overall quality of evidence was graded as moderate for all anatomical sites using the GRADE system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 reports GRADE assessment as moderate quality. The manuscript states all outcomes were downgraded for inconsistency (due to high heterogeneity), and femoral neck BMD was downgraded for publication bias but upgraded for large effect size. Moderate quality evidence is appropriate given the high heterogeneity (I\u00b2>70%) and other limitations, though the specific GRADE decisions are not fully detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Substantial heterogeneity was observed between trials for BMD (I\u00b2=86.28%, p<0.001) and BMC (I\u00b2=79.28%, p<0.001), which was partially explained by differences in age, duration, calcium dosages, supplement types, vitamin D co-supplementation, baseline calcium intake, sex, and participant region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 appropriately report and address high heterogeneity. The I\u00b2 values >75% indicate considerable heterogeneity, which the authors appropriately addressed using random-effects models and extensive subgroup/meta-regression analyses. However, even after accounting for these factors, substantial unexplained heterogeneity remains, limiting confidence in pooled estimates. The authors should have been more cautious about drawing firm conclusions given this heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Publication bias was evident for femoral neck BMD but not detected for other outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 report publication bias assessment. The detection of bias for femoral neck BMD (the outcome with the largest effect size) is concerning and could inflate the reported effect. The authors used trim-and-fill adjustment and still found significant effects, but this remains a limitation. The lack of bias for other outcomes is reassuring but may reflect lower power to detect bias with fewer studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C67",
+      "C72"
+    ],
+    "result": "The authors conclude that young adulthood (20-35 years, the peripeak period) may be the best intervention window to optimize bone mass, and that calcium supplementation is more effective in this age group than in children, representing a shift in the intervention window for osteoporosis prevention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62, C67, and C72 represent the study's main conclusions but are based on limited evidence. Only 3-4 studies examined the peripeak population (20-35 years) versus 21+ studies in prepeak populations. While effect sizes were numerically larger in peripeak subjects, the small sample and wide confidence intervals limit confidence. The comparison to children relies on indirect evidence from prior meta-analyses (C64-C66). This conclusion requires validation in adequately powered studies specifically designed to compare age groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The findings suggest a threshold dose of calcium supplementation around 1000 mg/day, above which additional benefit does not occur, consistent with prior research showing no additional benefit above currently recommended doses at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 propose a threshold effect based on subgroup analyses showing effects only at <1000 mg/day doses. However, this could reflect confounding (e.g., studies using higher doses may differ in other characteristics), dose-response relationships are not formally tested, and the threshold concept assumes a step-function rather than continuous dose-response. The citation to Prentice 2002 (C69) provides some support but this requires formal dose-response meta-analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The authors conclude that calcium supplementation alone can improve BMD or BMC, although additional vitamin D supplementation may provide additional benefit at the femoral neck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 synthesizes findings from subgroup analyses (C50-C51) showing calcium alone has benefits but vitamin D co-supplementation enhances effects at femoral neck. This is a reasonable interpretation of the subgroup data, though the site-specific nature of vitamin D benefit is not fully explained. The conclusion appropriately acknowledges both independent calcium effects and potential synergy with vitamin D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C61",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The introduction and discussion cite prior literature establishing that: osteoporosis is a major public health problem in elderly women; calcium supplementation is ineffective in people >50 years; evidence in children is mixed; and peak bone mass is achieved around 20-30 years of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 and C61-C66 appropriately cite prior literature to establish context. The citations appear relevant and accurately represented. The authors correctly note conflicting evidence in children (C4-C6) and cite specific prior meta-analyses (Winzenberg 2006, Huncharek 2008) for comparison. The age of peak bone mass (C7-C8) is appropriately cited to justify the 35-year age cutoff, though this is based on cross-sectional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C63",
+      "C71"
+    ],
+    "result": "The authors claim this is the first systematic review focusing on people before and around peak bone mass achievement, representing a novel shift in the intervention window for osteoporosis prevention across the life cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C71 assert novelty in focusing on the pre- and peri-peak bone mass periods. While prior meta-analyses examined children (Winzenberg 2006, Huncharek 2008) or elderly populations, this appears to be the first to specifically target the 20-35 year age group and compare pre- versus peri-peak periods. The conceptual framework of shifting intervention windows is novel, though the limited data in the peripeak group limits the strength of conclusions.",
+    "result_type": "MAJOR"
+  }
+]

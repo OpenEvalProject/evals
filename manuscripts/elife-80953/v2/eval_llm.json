@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C61",
+      "C62",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "TCR stimulation alone induces alternative splicing changes in primary CD4+ T cells, but CD28 costimulation amplifies the extent of change for 10-20% of splicing events. At 8 hr, MAJIQ identifies 405 and 423 significant splicing changes for CD3 and CD3/CD28 conditions respectively, increasing to 1277 and 1195 at 48 hr. CD3/CD28- and CD3-induced splicing changes are generally correlative (R\u00b2 >0.5 at 8 hr, >0.75 at 48 hr), suggesting no broad requirement for costimulation in splicing regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C61-C62, and C81-C83 are well-supported by RNA-seq data and MAJIQ analysis showing splicing changes across conditions and timepoints. The correlation analysis (C82) provides quantitative evidence that CD3 alone is sufficient for most splicing changes, while CD28 enhances a subset. The 10% dPSI threshold (C63) is justified by citation to validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CD28 costimulation enhances specific splicing events rather than globally affecting all events. At 8 hr, 24% of splicing events show >2-fold enhancement by CD28, decreasing to ~7% at 48 hr. CD28-enhanced events are primarily those with minimal CD3-induced changes (1-25% dPSI). The spectrum of CD28-regulated events differs between 8 hr (mostly 'Early/Transient') and 48 hr (mostly 'Late Changing'), indicating CD28 does not simply accelerate splicing changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are supported by quantitative analysis of dPSI ratios (Figure 2E-F) and temporal profiling (Figure 2\u2014figure supplement 1). The data clearly demonstrate that CD28 selectively enhances specific events rather than uniformly affecting all splicing. The temporal distinction between 8 hr and 48 hr events is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C100",
+      "C103",
+      "C104",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CD28 costimulation enhances alternative splicing of apoptotic pathway genes including caspase-9, Bax, Bim, and caspase-1. RNA-seq reveals CD28-dependent skipping of caspase-9 exons 3-6 at 48 hr, validated by RT-PCR. Among 14 apoptotic genes analyzed, Bim, Bax, and caspase-1 show the largest splicing changes (>20% dPSI), with decreased expression of longer isoforms upon activation that is enhanced by CD28 costimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50, C100, C103-C104, and C107-C110 are well-supported by RNA-seq data (Figure 3D-F, Figure 4) and RT-PCR validation across multiple donors (Figure 4B-E). The identification of these specific genes is data-driven and the splicing changes are quantified with appropriate statistical thresholds. The validation by orthogonal methods strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C127",
+      "C128",
+      "C132"
+    ],
+    "result": "The shorter isoforms of caspase-9, Bax, and Bim induced by CD3/CD28 costimulation promote resistance to apoptosis. CRISPR-edited Jurkat cell lines with heterozygous deletions forcing expression of shorter isoforms (Casp9\u0394E3-6(-/+), Bim\u0394E2b-2c(-/+), Bax\u0394E3(-/+)) show increased survival upon treatment with etoposide and camptothecin. Casp9\u0394E3-6(-/+) exhibits the most robust resistance, while Bim and Bax mutants show smaller but significant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C127-C128, and C132 are supported by functional data from CRISPR-edited cell lines (Figure 5). The use of heterozygous deletions at endogenous expression levels is methodologically sound and avoids overexpression artifacts. Cell survival assays with multiple apoptotic inducers and complementary caspase-3/7 and MOMP activity measurements (Figure 5\u2014figure supplement 3) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Alternative splicing changes in caspase-9, Bax, and Bim function combinatorially to enhance cell survival. Antisense morpholino oligos (AMOs) targeting all three genes simultaneously produce significantly greater reduction in early dying cells compared to individual AMOs. Lower AMO doses achieving smaller splicing changes fail to produce individual or additive effects, demonstrating a threshold requirement. Coordinated and robust removal of critical domains in all three genes is required for combinatorial enhancement of cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C133-C146 are supported by AMO experiments (Figure 6) showing dose-dependent and combinatorial effects. The negative control (MKK7 AMO) and specificity controls (Figure 6\u2014figure supplement 1A) are appropriate. The threshold effect is demonstrated by the low-dose AMO experiment (C141, Figure 6\u2014figure supplement 1B). The conclusion about combinatorial function (C146) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C52",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C159"
+    ],
+    "result": "The JNK signaling pathway is required for CD28-enhanced splicing of caspase-9, Bax, and Bim. JNK inhibitors block alternative splicing of all three genes upon T cell activation, while other kinase inhibitors have weaker or inconsistent effects. This is consistent with prior findings that Bax splicing depends on JNK and that CD28 enhances JNK signaling. The three genes undergo splicing changes in the same temporal and JNK-dependent manner at 48 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C52, C147-C151, and C159 are supported by kinase inhibitor experiments (Figure 7A-C) and citations to prior work. The use of multiple inhibitors per kinase strengthens the conclusions. The coordinated regulation through JNK provides a mechanistic link between CD28 signaling and the observed splicing changes. The temporal concordance (C159) is supported by earlier data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C54",
+      "C160",
+      "C161",
+      "C169",
+      "C170"
+    ],
+    "result": "Alternative splicing is a key mechanism by which CD28 costimulation promotes viability of activated T cells. The splicing events in caspase-9, Bax, and Bim form a coordinated network that enhances T cell survival. CD28 costimulation increases cell survival not only through enhanced transcription of IL2 and Bcl-xL, but also through synergistic regulation of alternative splicing of apoptotic genes. These splicing changes promote T cell survival upon apoptosis induction and likely contribute to CD28-induced survival of primary CD4+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C54, C160-C161, C169-C170 represent the main conclusions of the study, supported by the collective evidence from RNA-seq, functional assays with CRISPR lines and AMOs, and mechanistic studies with kinase inhibitors. The integration of CD28-enhanced splicing with known transcriptional effects (C161) is well-justified. The conclusion is appropriately qualified as 'likely contribute' (C170) given the use of Jurkat cells for functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Primary human CD4+ CD45RO- T cells were isolated from three donors with high purity (>90% CD4+, >85% CD45RO-) and stimulated with anti-CD3 and/or anti-CD28 for 8 or 48 hr. CD69 was consistently upregulated across donors, and IL2 expression was enhanced by CD28 costimulation. Over 1600 and 2100 genes were differentially expressed by CD3 and CD3/CD28 at 48 hr, respectively, consistent with prior studies showing CD28 enhances expression of a subset of genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe the experimental setup and quality controls, supported by flow cytometry data (Figure 1B, Figure 1\u2014figure supplement 1A-C) and RNA-seq analysis (Figure 1C, Figure 1\u2014figure supplement 1D-E). The consistency across donors and agreement with prior literature (C59) validate the experimental system. Sample sizes (n=3 donors) are appropriate for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The 10% dPSI threshold for significant splicing changes is validated by prior studies and identifies changes with meaningful biological phenotypes. Unstimulated PSI distributions show no strong biases for stimulation-induced events. High correlation (Pearson >0.5) is observed for CD3 and CD3/CD28-induced splicing across donors, while CD28-alone changes are more variable. The predominant splicing pattern is cassette exon inclusion, with ~30% being complex events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe methodological validation and data quality metrics. The 10% dPSI threshold (C63) is justified by citation. The PSI distribution analysis (C64, Figure 1\u2014figure supplement 2) and correlation analysis (C65-C66, Figure 1E) demonstrate data quality and reproducibility. The splicing pattern distribution (C67-C68) is consistent with other MAJIQ studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Alternative splicing regulates a distinct set of genes from those regulated by differential expression, with minimal overlap. Splicing events show differential temporal patterns: 'Late Changes' are enriched for RNA metabolic processes, 'Early/Sustained Changes' for RNA splicing/processing, while 'Early/Transient' events lack specific GO enrichment. Over 80% of genes changing expression at 48 hr do not show increases at 8 hr, similar to the temporal pattern of splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by comparative analysis (Figure 1\u2014figure supplement 1I) and GO enrichment analysis (Figure 1\u2014figure supplement 1J-K). The minimal overlap between splicing and expression (C69-C70) is consistent with other transcriptome studies (citations provided). The temporal categorization and GO enrichment provide biological context for the splicing changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "Over 300 RBP-encoding genes exhibit differential expression following costimulation, including 60 that change rapidly. While motif analysis failed to identify enriched binding sites for most changing RBPs, SRSF1 and hnRNPA2B1 show enriched cognate binding motifs around CD28-enhanced splicing events at 48 hr. These RBPs are expressed at least twice as highly with CD28 costimulation and likely drive CD28-enhanced splicing changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77, C93-C94 are supported by differential expression analysis (Figure 1\u2014figure supplement 3, Figure 2G, Supplementary file 4). However, the causal role of these RBPs (C78, C97) remains speculative as acknowledged by the authors. The lack of motif enrichment for most RBPs (C79) and the complex regulatory network (C80) limit mechanistic conclusions. Direct functional validation of SRSF1 and hnRNPA2B1 is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "CD28 signaling impacts alternative splicing directly rather than as a secondary effect of transcriptional changes, since genes analyzed for splicing changes show no change in expression. CD28 signaling affects gene expression through both induced transcription and direct impact on alternative splicing, likely driven by increased activity of splicing regulators including SRSF1 and hnRNPA2B1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C96 are well-supported by the study design that specifically analyzes genes without expression changes. However, C95 is speculative and C97's attribution to specific RBPs is uncertain (as noted above). The conclusion that CD28 has direct effects on splicing (C96) is justified, but the specific mechanisms remain partially unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101",
+      "C102"
+    ],
+    "result": "CD28 costimulation increases production of full-length isoforms of BPTF, STRADA, and TAB3 at 8 hr, and affects splicing of IL12RB and MR1 at 48 hr. These proteins have potential roles in T cell function, NF-\u03baB activity, Th1 differentiation, and activation of invariant TCR T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C100 are supported by splicing data (Figure 3A-C, D-F). Claims C99, C101-C102 about protein functions are supported by citations to prior work. These represent additional examples of CD28-regulated splicing beyond the apoptotic genes, though their functional significance in T cells is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Caspase-9 exons 3-6 encode the catalytic domain for caspase-3 cleavage; their skipping produces a dominant negative form. Bim splicing generates three isoforms (EL, L, S) differing in N-terminal regions. Bax exon 3 encodes the BH3 domain required for oligomerization. Caspase-1 shows novel intron retention in the 3'UTR correlating with reduced protein expression. These genes are not regulated at the expression level, though FasLG, Fas, and Bcl-x show increased expression at 48 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C120 describe structural and functional features of the spliced genes, supported by diagrams (Figure 4A-E), Western blots (Figure 4F-G), and citations to prior work. The distinction between splicing and expression regulation (C115-C116) is important for interpretation. The uncertainty about Bax and caspase-1 protein changes (C118-C119) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "CRISPR/Cas9 was used to create heterozygous deletions in Jurkat cells, forcing increased expression of shorter isoforms of caspase-9, Bim, and Bax at endogenous levels. This approach mimics partial isoform changes induced by T cell stimulation better than overexpression or complete ablation. Deletions were validated by genomic PCR, Sanger sequencing, RT-PCR, and Western blot, with controls confirming no off-target effects on other apoptotic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 describe the methodological approach, well-documented in Figure 5 and Figure 5\u2014figure supplements 1-2. The rationale for heterozygous deletions (C123) is sound and addresses limitations of prior overexpression studies. The validation is thorough with multiple orthogonal methods. The off-target controls (C126) strengthen confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Bim\u0394E2b-2c(-/+) and Bax\u0394E3(-/+) show smaller effects on apoptosis resistance compared to Casp9\u0394E3-6(-/+). Caspase-3/7 activity and MOMP activity are decreased in all modified cell lines upon treatment with camptothecin and etoposide compared to wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are supported by quantitative comparison of survival data (Figure 5) and complementary assays (Figure 5\u2014figure supplement 3). The differential magnitude of effects (C129) is clearly shown in the data and may reflect differences in the functional importance of each gene or the kinetics of their splicing changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "MKK7 AMO was used as a negative control, characterized in prior work. No significant cross-regulation was observed between AMOs targeting different genes. MKK7 AMO transfection (10 or 30 nmol) did not significantly impact cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138, C140 describe appropriate negative and specificity controls for the AMO experiments, supported by data in Figure 6B-C and Figure 6\u2014figure supplement 1A. The use of a previously characterized control (C137) and testing for off-target effects (C138) are methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Regions around JNK-sensitive exons are enriched for CELF2, PTBP1, and SRSF5 binding motifs. CELF2 expression does not change upon stimulation, while PTBP1 increases 3-fold and SRSF5 decreases 2-fold with CD3 or CD3/CD28 stimulation. These motifs are enriched around CD28-enhanced exons at 48 hr, including caspase-9, Bim, and Bax, suggesting these RBPs coordinately control apoptotic splicing events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C156 are supported by prior work (C152), expression analysis (C153-C155, Supplementary file 1), and motif enrichment (C156, Supplementary file 4). However, C157 is a prediction lacking direct functional validation. The authors acknowledge they cannot deplete these RBPs in primary cells or use Jurkat cells (which don't recapitulate the splicing). Additional model systems are needed to confirm the predicted roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Multiple RBPs and mechanisms likely contribute to temporal and CD28-enhanced splicing regulation. Numerous RBPs show differential expression in temporal and/or CD28-dependent manner, with enriched binding motifs found around regulated splicing events for a subset. Future studies are needed to disentangle the complex regulatory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 appropriately summarize the complexity of splicing regulation and acknowledge limitations. C162 is a reasonable prediction given the combinatorial nature of splicing regulation. C163-C164 are supported by the data (Supplementary files 1 and 4). C165 correctly identifies the need for future mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The study identifies differential temporal trends in alternative splicing between early and late T cell activation, defines CD28-enhanced splicing events in apoptotic genes (caspase-9, Bax, Bim, Casp1), and identifies signaling pathways (JNK) and RBPs (SRSF1, hnRNPA2B1, CELF2, PTBP1, SRSF5) that may coordinate these events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C168 provide an accurate summary of the study's findings. The temporal analysis (C166) is well-documented. The identification of CD28-enhanced events (C167) is data-driven and validated. The signaling and RBP identification (C168) is supported, though mechanistic details remain incomplete as noted in other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Background claims establish that alternative splicing is widespread in human genes, regulates apoptotic pathway components (FAS, Bcl-x, caspase-9, Bax, Bim), and is critical for T cell development and function. CD28 costimulation enhances gene expression and prevents anergy, but its role in regulating alternative splicing and apoptosis control in T cells remains largely unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C47 provide established background knowledge supported by extensive citations to prior literature. These claims accurately represent the current state of knowledge and identify the gap that this study addresses (C41, C45-C47). The background is appropriate and well-documented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Dcp2 C-terminal domain contains distinct cis-regulatory binding motifs that control selective targeting of the decapping enzyme to different mRNA substrates. Two Upf1-binding motifs (U11 and U12) direct the enzyme to NMD substrates, a single Edc3-binding motif (E3-1) targets both Edc3 and Dhh1 substrates, and leucine-rich motifs (L1-L5) bind Pat1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C43 provide converging evidence from two-hybrid binding assays (Figures 1B, 2A) and northern blot analyses of mRNA levels (Figures 1C-D, 2B-C) demonstrating that specific Dcp2 motif deletions eliminate binding of cognate factors and cause selective stabilization of corresponding substrate mRNAs. The redundancy of Upf1-binding motifs and specificity of targeting are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In the absence of active recruitment via Dcp2 cis-elements, different decapping substrates are still degraded by decapping-dependent 5\u2032 to 3\u2032 decay rather than by the 3\u2032 to 5\u2032 exosome pathway. Decapping is not rate-limiting for NMD and Pat1/Lsm1 substrates, suggesting alternative decay routes exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are strongly supported by genetic epistasis experiments (Figure 3B-C) showing that XRN1 deletion, but not SKI2 or SKI7 deletion, causes additional stabilization in Dcp2 cis-element mutants. This demonstrates continued decapping-dependent decay. Claims C27-C28 and C45-C46 are logical inferences from the partial stabilization phenotypes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Pat1-mediated decapping serves as a backup system for Edc3 and Dhh1 substrates but not for NMD or Pat1/Lsm1 substrates. Combining deletions of Edc3- and Pat1-binding motifs causes synergistic stabilization of Edc3 and Dhh1 substrates, while Edc3-mediated decapping may provide limited backup for some NMD substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by systematic analysis of double and triple mutant combinations (Figure 4B-C). The synergistic effects on Edc3/Dhh1 substrates when both E3 and leucine-rich motifs are deleted (C51-C53) versus the lack of synergy for NMD substrates (C54-C55) provide clear evidence for substrate-specific backup mechanisms. The small effect on ade2-1 (C56) is appropriately qualified as tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Individual Dcp2 cis-binding motifs can function independently to promote specific mRNA decay activities. A single Edc3-binding motif or either Upf1-binding motif alone is sufficient for decay of their respective substrates when other binding motifs are deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by northern blot data (Figure 4C) showing that dcp2 alleles containing only a single Edc3-binding motif or a single Upf1-binding motif retain wild-type activity for their respective substrates. This demonstrates the sufficiency and independence of individual motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Edc3 carries out an additional function beyond recruiting the decapping enzyme in the decay of both Edc3 and Dhh1 substrates. Deletion of EDC3 causes additional stabilization of these substrates in cells where the Edc3-binding motif in Dcp2 is already deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by northern blot data (Figure 4D) showing that EDC3 deletion causes 7-8 fold additional stabilization of YRA1 pre-mRNA and additional stabilization of Dhh1 substrates in E3D or E3D1 cells. This genetic epistasis experiment clearly demonstrates that Edc3 has functions beyond simply recruiting the decapping enzyme via the E3 motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Dcp2 cis-binding elements promote assembly of distinct decapping complexes in vivo, with Edc3 functioning as a common component of multiple complexes. The Dcp2 E3 motif promotes assembly of Dcp1-Dcp2-Edc3-Dhh1 and Dcp1-Dcp2-Edc3-Upf1 complexes, while leucine-rich motifs promote Pat1-containing complexes. Dcp2 bridges interactions between Edc3 and Upf1 or Pat1 that are inhibited by endogenous Edc3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C80 are supported by extensive two-hybrid analyses (Figures 5A-E) examining bridged interactions in various genetic backgrounds and with different Dcp2 truncations. The requirement for specific Dcp2 motifs and the differential effects of EDC3 deletion on various interactions provide strong evidence for distinct complex assemblies. The observation that endogenous Edc3 inhibits bridged interactions (C74-C75, C79-C80) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Xrn1 has specific binding sites on Dcp2 and is directly recruited to decapping complexes by Dcp2, physically coupling decapping with 5\u2032 to 3\u2032 exoribonucleolytic decay. Xrn1 binds to an internal Dcp2 fragment (aa 316-575) and its interactions with Dcp1, Edc3, and Upf1 are bridged by Dcp2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 are supported by two-hybrid analyses (Figures 6A-E) showing Xrn1 interactions with multiple decapping factors and mapping of the Xrn1-binding region on Dcp2. The requirement for Dcp2 C-terminal domain and Edc3 for bridged interactions (C86-C88) is well-documented. The conclusion about physical coupling (C90-C91) is a reasonable inference from the binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Scd6 interacts with multiple decapping factors (Dcp1, Dcp2, Edc3, Pat1) and can exist in different decapping complexes depending on Edc3 status. Scd6 binds to multiple elements in Dcp2 including the Edc3-binding motifs (E3-1 and E3-2) and leucine-rich motifs (L3, L5, L8, L9), and may function redundantly with Edc3 in targeting the decapping enzyme to Dhh1 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C107 are supported by two-hybrid analyses (Figures 7A-F) showing Scd6 interactions with various factors and systematic mapping of Scd6-binding sites on Dcp2. The observation that Scd6:Dcp1 interaction requires Edc3 in wild-type cells but Pat1 in edc3\u0394 cells (C93-C96) demonstrates context-dependent complex formation. Claim C108 is appropriately qualified as a proposal based on the binding data and phenotypic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Upf1, Edc3, Scd6, and Pat1 function as regulatory subunits of the holo-decapping enzyme, controlling both its substrate specificity and enzymatic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is a summary conclusion supported by the collective findings of the study. The extensive genetic and biochemical evidence showing that these factors bind to specific Dcp2 motifs, control selective targeting to different substrates, and participate in distinct decapping complexes provides strong support for this overarching conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background knowledge claims about the yeast decapping system, including the role of decapping in various mRNA decay pathways, the composition of the Dcp1-Dcp2 enzyme, and the substrate specificities of various decapping activators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10-C18 are background knowledge statements supported by citations to previous literature. These establish the context for the current study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C44"
+    ],
+    "result": "Comparative phenotypic observations: Loss of UPF1 causes >10-fold increases in NMD substrates, while loss of Upf1-binding motifs causes only 2-3 fold increases. None of the leucine-rich element deletions altered levels of Pat1-regulated mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C44 are quantitative observations from northern blot data that provide important context for interpreting the relative contributions of different mechanisms. These comparisons are well-documented in the figures and support the conclusions about rate-limiting steps and backup mechanisms.",
+    "result_type": "MINOR"
+  }
+]

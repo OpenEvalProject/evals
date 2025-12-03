@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Phylogenetic profiling across 1028 eukaryotic genomes and within 51 mammalian species identified 200 genes highly correlated with MECP2 in each analysis (E200 and M200), with 10 genes overlapping between the two lists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic profiling methodology is well-established (C28-C32) and appropriately applied here (C3, C115-C117). The correlation thresholds (R>0.47 for eukaryotes, R>0.49 for mammals) are clearly stated (C33-C34), and the overlap of 10 genes between E200 and M200 is documented (C35). The approach is methodologically sound and the results are clearly presented with appropriate statistical measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The 390-gene union set (E200 + M200) was significantly enriched for brain-expressed genes (p<0.00024), with 79 genes linked to cerebral cortex and 54 to cerebellum, showing minimal overlap with STRING MECP2 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment analysis provides statistical support (p<0.00024) for brain expression (C36), with specific counts for cerebral cortex and cerebellum (C37-C38). The comparison with STRING showing only 24/390 overlapping genes (C39) demonstrates the complementary nature of phylogenetic profiling. The statistical significance and tissue specificity support the biological relevance of the identified gene network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Database searches identified 33 druggable proteins in the MECP2 network, including IRAK1 and EPOR which appeared in both E200 and M200 lists, with IRAK1 showing functional links to MECP2 in STRING while EPOR did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of druggable targets through Open Targets (11 proteins) and DGIdb (22 additional proteins) is clearly documented (C40-C42). The prioritization of IRAK1 and EPOR based on their presence in both lists is logical (C43), and the differential STRING connectivity (C44-C45) provides orthogonal validation for IRAK1 while highlighting EPOR as a novel candidate. The approach is systematic and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Chromosomal clustering analysis revealed that chr19p13.2 contained 5 druggable MECP2-coevolved genes (EPOR, DNMT1, ICAM1, ICAM3, KEAP1), representing the most enriched genomic band (p<1E-5), forming a single TAD, and bound by MECP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromosomal enrichment is statistically significant (p<1E-5, C49) and supported by multiple lines of evidence: clustering analysis (C47), specific gene identification (C48), TAD structure from Hi-C data (C50), and MECP2 binding (C51). The convergence of evolutionary, structural, and functional evidence strongly supports this genomic region as functionally important for MECP2 biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "IRAK1 was selected as a drug target based on its role as a key intermediary in NF-\u03baB signaling in RTT, with MECP2 directly binding the IRAK1 promoter, and pacritinib identified as the only clinical-stage IRAK1 inhibitor with acceptable safety profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selection of IRAK1 is well-justified by prior literature showing its role in RTT (C52-C54) and the availability of pacritinib as a clinically validated IRAK1 inhibitor (C55-C57). The rationale combines evolutionary evidence with mechanistic understanding and drug availability. However, the claims rely heavily on cited prior work rather than new experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "EPOR was selected as a drug target based on its role in the tissue-protective receptor complex, with EPO activating neuroprotective signaling cascades, and non-hematopoietic EPO variants available that preserve neuroprotective effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selection of EPOR is supported by established knowledge of EPO/TPR biology (C58-C59) and the availability of modified EPO variants (C60). The rationale is sound, though EPOR represents a novel MECP2-linked target without prior direct connection. The claims are well-cited but represent background justification rather than new findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "KEAP1 was selected as a drug target based on its role as the key repressor of NFE2L2, which regulates inflammatory pathways, with DMF identified as an approved treatment that decreases KEAP1 and increases NFE2L2 with proven neuroprotective effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selection of KEAP1/NFE2L2 pathway is well-justified by established biology (C61-C62) and the availability of DMF as an approved drug (C63-C65). The mechanism of action is clearly described and supported by citations. Like the other targets, this represents a well-reasoned selection based on prior knowledge rather than new experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "MECP2 silencing (>80% reduction) in human neural cells recapitulated multiple RTT phenotypes including M1 microglia polarization, decreased phagocytosis, impaired NSC differentiation toward glia, reduced astrocyte EAAT2 expression, and decreased BDNF in neurons and astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MECP2 knockdown model is well-characterized with >80% reduction confirmed by Western blot (C66). Multiple phenotypes are documented with appropriate assays and statistical significance: microglia polarization (C67-C68), phagocytosis (C69), NSC differentiation (C70), astrocyte function (C71), and BDNF expression (C72). The use of immortalized human cells is justified (C118-C124) and quality-controlled (C121). The model successfully recapitulates known RTT phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "DMF, EPO, and pacritinib showed no toxicity to microglia, astrocytes, neurons, or NSCs at the concentrations tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cytotoxicity was assessed using LDH assay across multiple cell types and drug concentrations (C73, Figure 3\u2014figure supplement 2). This is an essential control for interpreting subsequent rescue experiments. The claim is clearly stated and supported by data, though the specific concentration ranges and statistical analyses are not detailed in the claim text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "EPO, DMF, and pacritinib differentially rescued microglia phenotypes in MECP2-silenced cells, with EPO showing complete rescue of all five M1/M2 markers, while DMF and pacritinib showed partial rescue; only DMF significantly increased phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects of the three drugs on microglia are clearly documented with RT-PCR data (C74-C76) and phagocytosis assays (C77-C78). EPO shows the most comprehensive rescue of polarization markers, while DMF uniquely rescues phagocytosis. The data demonstrate cell-type and phenotype-specific drug effects with appropriate statistical testing. The results support the hypothesis that these drugs can ameliorate MECP2-deficiency phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C98"
+    ],
+    "result": "EPO and DMF significantly reduced NF-\u03baB hyperactivation in MECP2-silenced microglia, with all three compounds showing some inhibitory effect on NF-\u03baB-dependent luciferase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NF-\u03baB pathway involvement is supported by prior literature (C79-C80) and demonstrated experimentally using luciferase reporter assays (C81, C98). EPO and DMF show significant effects, consistent with their known mechanisms of action. The convergence on NF-\u03baB signaling provides a mechanistic framework for understanding drug effects. However, the claim about pacritinib's effect is less clear\u2014C81 mentions only EPO and DMF as significant, while C98 states all three compounds inhibited to \"a certain extent.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "EPO uniquely rescued impaired NSC differentiation (increasing \u03b2III tubulin, decreasing GFAP) and restored EAAT2 expression in MECP2-silenced astrocytes, while pacritinib and DMF had no significant effects on these phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specific effects are clearly demonstrated with RT-PCR data showing EPO's unique ability to rescue NSC differentiation (C84) and astrocyte EAAT2 expression (C85), while DMF and pacritinib lack these effects (C83, C86). This demonstrates important differences in drug mechanisms and suggests EPO may have broader therapeutic potential. The statistical significance is indicated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "DMF and EPO increased BDNF expression in MECP2-silenced neurons and astrocytes, while pacritinib had no effect; combined DMF+EPO treatment showed modest additive effects in astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BDNF rescue is demonstrated by both RT-PCR and ELISA in neurons (C87) and astrocytes (C88), with pacritinib showing no effect (C89). The combination experiment (C90) suggests potentially independent mechanisms of action, though the additive effect is described as \"modest.\" BDNF is a well-established MECP2 target, making this a particularly relevant phenotype. The data support therapeutic potential for DMF and EPO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The three drugs converge on NF-\u03baB signaling through distinct mechanisms: EPO via GSK3\u03b2 inhibition, DMF via NFE2L2 activation, and both pathways regulate BDNF expression and EAAT2 in astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the mechanistic connections are supported by literature citations (C96-C97, C101-C105), these represent proposed mechanisms based on prior work rather than direct experimental validation in this study. The authors appropriately cite relevant literature but do not experimentally confirm these specific pathways in their MECP2-silenced cells. The mechanistic model is plausible and well-reasoned but remains somewhat speculative without direct pathway validation (e.g., Western blots for pathway components, pathway inhibitor experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "HDACs, particularly HDAC6, represent alternative therapeutic targets for RTT; DMF and EPO can affect HDAC activity but this is not their primary mechanism and they lack established HDAC6 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of HDACs is appropriately cautious and well-cited (C106-C113). The authors acknowledge that while DMF and EPO can affect some HDACs (C110-C111), this is not their primary mechanism (C112) and they don't target HDAC6 specifically (C113). This represents an honest assessment of alternative mechanisms and limitations. The claims are properly qualified and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "EPO, DMF, and pacritinib act differentially on MECP2-silenced NSCs, microglia, and astrocytes, providing preliminary validation of the phylogenetic profiling approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C114) is well-supported by the collective experimental results showing cell-type and phenotype-specific drug effects. The characterization as \"preliminary validation\" is appropriately cautious, acknowledging that in vitro human cell studies represent an early stage of validation. The differential effects across cell types and drugs support the utility of the computational approach for identifying therapeutic targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on Rett syndrome: RTT is an X-linked dominant disorder caused by MECP2 mutations, characterized by developmental regression and intellectual disability, with no approved treatments despite extensive research and ongoing clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide well-established background knowledge about RTT, MECP2 function, and current therapeutic landscape (C1-C27). All claims are appropriately cited and represent accurate summaries of the field. This background contextualizes the study's rationale but does not constitute new findings. The information is accurate and well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Background on RTT pathophysiology: RTT is a neurodevelopmental disease without degeneration where glial dysfunction contributes to pathogenesis, and rescuing MECP2 downstream activity may improve symptoms even in adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide relevant background on RTT pathophysiology and therapeutic rationale (C82, C91-C95). The information is well-cited and contextualizes the study's focus on downstream targets and glial cells. Claim C92 about adult intervention is appropriately qualified as speculative (\"might improve\"). This represents established knowledge that motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Summary of main findings: Three drug targets (IRAK, KEAP1, EPOR) were identified through phylogenetic profiling, with corresponding drugs (Pacritinib, DMF, EPO) rescuing MECP2-inactivation phenotypes and converging on NF-\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims (C4-C8) accurately summarize the study's main findings. The identification of three targets (C4), their prior connection status (C5-C6), phenotypic rescue (C7), and convergence on NF-\u03baB (C8) are all supported by the detailed results. The characterization of EPOR as not previously linked to MECP2 (C6) is validated by STRING analysis (C45). These summary claims are well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  }
+]

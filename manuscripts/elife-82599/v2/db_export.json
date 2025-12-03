@@ -1,0 +1,2041 @@
+{
+  "submission": {
+    "id": "ed75fdcb-76b2-49a3-bea1-27239bd54c54",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:01:08.753636Z",
+    "updated_at": "2025-12-03T20:01:08.753636Z"
+  },
+  "content": [
+    {
+      "id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "submission_id": "ed75fdcb-76b2-49a3-bea1-27239bd54c54",
+      "content_type": "manuscript",
+      "content_text": "# Schema-based predictive eye movements support sequential memory encoding\n\n## Authors\n\n- Jiawen Huang<sup>1</sup> ([ORCID: 0000-0003-1362-0412](https://orcid.org/0000-0003-1362-0412)) \u2020\n- Isabel Velarde<sup>1</sup> ([ORCID: 0000-0001-5639-0907](https://orcid.org/0000-0001-5639-0907))\n- Wei Ji Ma<sup>2</sup> ([ORCID: 0000-0002-9835-9083](https://orcid.org/0000-0002-9835-9083))\n- Christopher Baldassano<sup>1</sup> ([ORCID: 0000-0003-3540-5019](https://orcid.org/0000-0003-3540-5019))\n\n### Affiliations\n\n1. Department of Psychology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Center for Neural Science and Department of Psychology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen forming a memory of an experience that is unfolding over time, we can use our schematic knowledge about the world (constructed based on many prior episodes) to predict what will transpire. We developed a novel paradigm to study how the development of a complex schema influences predictive processes during perception and impacts sequential memory. Participants learned to play a novel board game (\u2018four-in-a-row\u2019) across six training sessions and repeatedly performed a memory test in which they watched and recalled sequences of moves from the game. We found that participants gradually became better at remembering sequences from the game as their schema developed, driven by improved accuracy for schema-consistent moves. Eye tracking revealed that increased predictive eye movements during encoding, which were most prevalent in expert players, were associated with better memory. Our results identify prediction as a mechanism by which schematic knowledge can improve episodic memory.\n\n## Introduction\n\nA key benefit of having a memory system is that it enables us to use the past to make predictions about the future, which is adaptive for survival (Cowan et al., 2021). Prediction can be defined as a top-down process in which people generate expectations about what they will experience next, based on their previous experiences and the current context. A particularly important source of prediction is schemas, which are adaptable knowledge structures reflecting generalized information abstracted from multiple episodic experiences (Ghosh and Gilboa, 2014). For example, we may have schemas about the kinds of objects that tend to occur at a beach, the social norms for ordering food at different kinds of restaurants, or the typical stages of a chess game.\n\nPrevious research has shown that having a detailed and robust schema yields improvements in memory (Alba and Hasher, 1983). This memory improvement has been attributed in part to processes during recall since schemas provide cues that can be used to retrieve episodic details that would otherwise be forgotten (Anderson and Pichert, 1978; Watkins and Gardiner, 1979). Additionally, schemas could play a role during memory encoding, by helping people represent information more meaningfully (Bransford and Johnson, 1972; Chase and Simon, 1973).\n\nOne question that has been relatively unexplored in this literature is whether schemas improve episodic memory by enabling sophisticated predictions during encoding. In the past 20 years, there has been a growing recognition of the importance of prediction on how we perceive, understand, and interact with the world (Bar, 2009; Clark, 2013; Friston, 2010; Rao and Ballard, 1999). There is evidence that domain experts (i.e. people with a strong schema in a specific field) automatically engage these predictive processes; for example, basketball experts shown a clip from a game tended to remember the final positions of the players as being ahead of their actual positions (Gorman et al., 2012). These predictive processes are only possible with a pre-existing schema and might partially explain the large literature showing selective memory improvement for schema-consistent (i.e. predictable) information (Anderson, 1981) and highly unexpected information (i.e. prediction errors, Bonasia et al., 2018; Quent et al., 2021).\n\nPrevious prediction research has typically used two types of approaches. The first approach uses people\u2019s pre-existing real-world knowledge, such as the regularity of language structure (Goldstein et al., 2022; Shain et al., 2020) or event sequences in a familiar setting (Baldassano et al., 2018). Due to their complexity, however, it is difficult to build a ground-truth model for these schemas. These types of knowledge are also learned slowly, making it difficult to study their development in a lab setting. The second paradigm, commonly used in memory research, teaches participants simple and novel sequences of discrete stimuli like abstract shapes and pictures (e.g. Schapiro et al., 2012; Sherman and Turk-Browne, 2020). Due to their simplicity, it is possible for participants to learn these sequences in a short period of time and they are easy to model. However, the predictive processes examined in these studies might not engage the same mechanisms as when predictions are based on more complex schemas that generalize to new stimuli.\n\nIn this study, we investigate prediction as a potential mechanism for schema-related memory improvement, in a domain that avoids the issues with overly simplistic or poorly defined schemas. Specifically, we have participants remember sequences from a simple board game recently developed by van Opheusden et al., 2021 called four-in-a-row. In this two-player game, a generalization of tic-tac-toe, players compete to be the first to connect four pieces in a row on a 4 \u00d7 9 board. The schema of the game encompasses not just this rule (which is easily learned), but an understanding of what kinds of move sequences are typical, an emergent property of the game rules that requires playing experience to learn. Expertise in four-in-a-row has been shown to change how individual game boards are remembered, with experts better representing arrangements of pieces that are strategically important (van Opheusden et al., 2021). The game has a complexity far exceeding typical tasks in previous schema and prediction research, yet it is possible to capture near-optimal play with a linear model. The novelty and simplicity of the game ensure that participants start the experiment without a schema but can acquire the schema over several hours of practice, allowing us to tractably study how schema development is related to changes in prediction and memory longitudinally in a lab setting. The fact that possible moves correspond to different spatial locations allows us to use eye movements as an indication of people\u2019s predictive processes, as in previous paradigms with spatial actions (e.g. Tal et al., 2021).\n\nBased on findings in previous schema research, we hypothesized that people\u2019s memory for move sequences would improve over training sessions, alongside improvements in a schema, operationalized as improved gameplay ability. Although previous research has sometimes found novelty-driven memory improvements for schema-inconsistent information (reviewed in Frank and Kafkas, 2021), studies of memory for complex memoranda such as chess boards have shown an advantage for schema-consistent stimuli (e.g. board positions from actual chess games) (Gobet and Waters, 2003). Thus, we hypothesized that the memory improvement resulting from the development of schema in four-in-a-row should similarly be specific to moves that are schema-consistent. People\u2019s schema quality should also be related to their memory performance, such that people with stronger gameplay abilities will have better sequence memory. If the prediction is indeed a potential mechanism for schema-related improvement, we would expect people\u2019s eye movements to become more anticipatory as they gain more experience playing the game and can rely more on internal predictive models. The extent of predictive eye movements should also mediate the relationship between schema quality and memory performance, providing a mechanism through which schematic knowledge can impact episodic memory. Here, we find support for all these hypotheses.\n\n## Results\n\n### Memory and gameplay improvement\n\nOver six sessions (each separated by 2.15 days on average), participants performed two separate tasks (Figure 1). In the memory task, participants were presented with a novel gameplay sequence and asked to remember it. After a distractor task, they were shown the first board of the sequence and they were given an unlimited amount of time to reconstruct the rest of the sequence from memory. In the first session, participants were not told that these stimuli came from a game, and were only instructed to remember circles appearing on a grid. The first session therefore provided a no-schema baseline, since participants could not use a game model to make predictions about upcoming moves. In a post-task questionnaire, we confirmed that in session 1 most participants did not suspect that the stimuli were from a game or guess the rules of the game (14 out of 19 in the online study, and 13 out of 16 in the in-person study). In a separate gameplay task (occurring after the memory task on all but the last day), they were provided with the rules of the game and played the four-in-a-row game against an AI opponent, staircase to match the skill level of the player.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82599/elife-82599-fig1-v2.jpg)\n\n**Figure 1.:** (a) Task structure across six (non-consecutive) days. (b) Memory task. In each of the 30 trials, participants saw an initial board for 5 s, and then a move was added to the board every 5 s. After viewing a sequence of 4four to eight moves and completing a distractor task, participants were shown the initial board and asked to reconstruct the sequence by placing the pieces on the board. (c) Gameplay task. Participants played 40 games against an adaptive-difficulty AI agent.\n\nParticipants recall accuracy (combined across the online and in-lab data), calculated as the percent of moves they recalled at the right location in the right order, improved across training sessions, improving from 61.6% (SD = 18.1%) in session 1 to 69.5% (SD = 20.6%) in session 6 (Figure 2a). At the same time, participants\u2019 playing strength, measured with an Elo rating (Elo, 1978), increased (Figure 2b). Elo ratings are computed based on how often people win against opponents of varying skill levels, and we use Elo as a measure of schema quality \u2013 the better a player is, the better knowledge they have about the move probabilities during near-optimal gameplay. We fit mixed-effect models with a fixed effect of the session and a random slope for the participant to predict recall accuracy and Elo. The fixed effect of the session was significant in both models (for memory, \u03b2=0.015, t=3.215, p=0.003; for Elo, \u03b2=24.92, t=5.102, p<0.001), demonstrating improvement in both recall accuracy and gameplay over time. We also found that Elo\u2019s rating in a session was correlated with memory performance in the following session, Pearson r=0.298, p<0.001 (Figure 2c), showing that having a better schema for the game was associated with better episodic memory for move sequences. To understand whether this relationship was present within individual participants, we fit a linear mixed-effect model to predict memory performance from Elo with per-participant intercepts and slopes as random effects. We found that the relationship between Elo and memory accuracy was not significant in this model (\u03b2=0.012, t=1.196, p=0.242), suggesting that this effect was primarily driven by individual differences (people with better schema tend to have better memory) rather than across-session improvements in Elo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82599/elife-82599-fig2-v2.jpg)\n\n**Figure 2.:** (a) On average, Participants become better at remembering sequences over the course of the training (red line, N = 35). In each session, memory accuracy is much higher than the performance that would be achieved if people were simply guessing according to the gameplay model (green line, simulated, N = 100). (b) On average, participants become better at playing the game across sessions. Error bars represent the standard error of the mean. (c) There is a positive correlation between people\u2019s playing strength and their recall accuracy (each dot corresponds to one session of one participant).\n\nOut of the 30 sequences shown to participants in each session, 10 of them ended with one player successfully getting four pieces in a row (more details in Methods). After learning the rules of the game, the presence of such a win could be a salient event for the participant and could lead to changes in the memory performance. Indeed, we found that in sessions 2\u20136, memory for sequences that ended in a win state was significantly better (t=6.67, p<0.001). We did not observe this pattern in the first session (before participants were taught the game rules) and actually found a marginally significant effect in the opposite direction, with worse memory for winning sequences (t=\u20132.01, p=0.052). This result provides additional evidence that schema-related features of a sequence play a role in the memory performance.\n\n### Modeling schema-related memory improvement\n\nTo investigate how schema consistency is related to memory for individual moves and how this relationship evolves, we trained a model of the schema for the game on moves played by a near-optimal AI agent. The model identifies the features each move forms (such as three-in-a-row, a line of three pieces of the same color) and assigns a value to each feature based on the training data (described in more detail in the Method section). Given a current board position, the model outputs a probability distribution over the next move that would likely be played by a very strong player (Figure 3a). Using this model, we can measure the extent to which each move shown to participants is likely (schema-consistent) vs unlikely (schema-inconsistent), and how this is linked to recall accuracy. Here, schema consistency is used as an objective, the subject-independent measure of how good a move is. Each subject will exhibit different degrees of alignment to this \u2018ground-truth\u2019 schema.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82599/elife-82599-fig3-v2.jpg)\n\n**Figure 3.:** (a) An example of the model\u2019s evaluation of a board where the next player is black. Based on features that would be generated by each possible next move (e.g. creating three-in-a-row), the model generates a probability distribution over potential next moves. We apply this model to the stimuli in the memory task to estimate the probability of each move. (b) The effect of schema consistency of a move on the recall accuracy for the move. The x-axis is the log probability of a move, which reflects schema consistency. The y-axis is the probability that a participant will remember the move. In session 1, there is no relationship between the probability of moves and subsequent memory. In sessions 2\u20136, people are more likely to remember schema-consistent moves. The histogram at the top and bottom of the figure is the frequency of moves with certain log probabilities that are remembered and forgotten, respectively (c) The relationship between move probability and recall accuracy over the 6 sessions. (*** denotes p<0.001). (d) The relationship between move probability and reaction time at recall for correctly remembered moves. (*** denotes p<0001). (e) The proportion of times the first mistake in a sequence is a more probable move than the actual move that was observed. Error bars represent the standard error of the mean, and the sample size is 35 participants.\n\nSeparately for each session, we ran a mixed-effects logistic regression with subsequent memory (right or wrong) as the outcome variable, with the probability of the move as the fixed effect, and with a participant random intercept. As shown in Figure 3b, there was initially no relationship between the probability of a move and the probability that the move will be remembered in session 1 (\u03b2=\u20130.031, z=\u20131.813, p=0.07), but in sessions 2 through 6, schema-consistent moves were more likely to be remembered (all p<0.001). This effect emerged over the first four sessions of learning (Figure 3c) and then dropped slightly in sessions 5 and 6.\n\nTo see whether this increase in the relationship between move probability and recall accuracy over time is significant, we aggregated the data from all the sessions and ran a mixed-effects logistic regression with subsequent memory as the outcome variable, with the probability of the move, the session the move was in, and their interactions as fixed effects, and with a participant random slope of the session and move probability. We found a main effect of session on memory (\u03b2=0.164, z=5.763, p<0.001) but no main effect of move probability (\u03b2=\u20130.0046, z=\u20130.249, p=0.804). However, there was a significant interaction between move probability and session on memory (\u03b2=0.035, z=7.561, p<0.001), indicating that participants became better at remembering schema-consistent moves over the time.\n\nIn addition to recall accuracy, we looked at reaction time for placing moves at recall. We only looked at moves that were correctly recalled in each session and removed outliers with reaction times longer than 30 s (0.6% of all the correct moves were removed this way). Similar to accuracy, we found that reaction time during retrieval was initially not related to the probability of the move (\u03b2=\u201330.5, t=0.975, p=0.329) but consistently faster for more schema-consistent moves in sessions 2 through 6 (all p<0.001, Figure 3d). Running a mixed-effects model as for the accuracy (using linear rather than logistic regression), we found a main effect of session on reaction time (\u03b2=\u2013156.3, t=\u20132.39, p=0.017), such that participants were faster in later training sessions. There was no main effect of move probability (\u03b2=- 46.1, t=\u22120.440, p=0.660) but a significant interaction between move probability and the session on reaction time (\u03b2=\u221271.06, t=\u20132.593, p=0.010), with faster responses when remembering more schema-consistent moves.\n\nIf participants are using a schema as part of their recall process, we would expect a bias toward schema-consistent moves when participants make mistakes during sequence reconstruction. To test whether this is the case, we looked at the mistakes participants made in each sequence reconstruction, measuring the fraction of the time that their answer was more schema-consistent than the correct answer, indicating a bias toward schema-consistent moves during recall. We only considered the first mistake, since after that mistake, the encoding and retrieval boards are different, and therefore the likely moves are no longer comparable. As can be seen in Figure 3e, the proportion of schema-consistent mistakes increased over the first 4 training sessions. After that, there is a drop similar to the drop in accuracy in sessions 5 and 6. We ran a mixed-effects model with a participant random slope, the proportion of schema-consistent mistakes as the outcome variable, and session as a fixed-effect predictor, and found a significant effect of the session (\u03b2=0.032, t=5.413, p<0.001).\n\nAlthough an overall increase across sessions was observed in both schema-consistent mistakes and the relationship between recall accuracy and move probability, these effects were significantly weaker at session 5 (for schema-consistent mistakes, t=\u20132.51, p=0.02; for the relationship between recall accuracy and move probability, t=\u20133.24, p=0.001), and numerically weaker at session 6 (for schema consistent mistakes, t=\u20131.70, p=0.099; for the relationship between recall accuracy and move probability, t=\u20131.93, p=0.053). One potential explanation for this drop is that people developed new strategies in later sessions to remember schema-inconsistent moves. As can be seen in Figure 3b, the modeled recall accuracy for highly schema-inconsistent moves (low x values) increased from session 4\u20135 while the recall accuracy for schema-consistent moves remained relatively stable. This is consistent with the highest overall accuracy that occurred in session 6 (Figure 2a), suggesting that this decrease in slope does not come at a cost for memory accuracy. Note that reaction time did not show this weakening relationship with move probability in sessions 5 and 6, as its slope continues to decrease.\n\nThe results demonstrate that the memory benefit from gameplay training is driven in part by enhanced memory for schema-consistent moves. A possible alternative explanation of this effect is that rather than using generalized schematic knowledge, participants are in fact using episodic memories of specific move sequences that they have seen in past gameplay sessions. To test this possibility, we examined all the boards that participants saw during gameplay and the moves played on these boards, and found the repetition of exact move sequences to be very rare; out of over 1000 moves across 6 sessions there were on average 1.0 repeats (SD = 1.67) that participants experienced during gameplay and were later part of a memory sequence. Thus, the mere repetition of schema-consistent moves could not be driving the observed differences in memory. Another potential explanation could be a change in the participants\u2019 strategy. In the beginning, participants can only use their episodic memory, but over time participants could start to use a purely schema-based strategy in which they simply place moves as if they are playing the game from this board position. We simulated this strategy by drawing moves probabilistically from the gameplay (schema) model for each initial board that participants saw during the memory task in each session. We found that purely schema-based guessing can only achieve an average accuracy of 13.39% across the ix sessions (Figure 2a), which is much lower than participants\u2019 average recall accuracy of 65.91%. This low accuracy is due to the fact that, for most of the sequences, there are multiple plausible moves that could be played and it is therefore difficult to guess the sequence without episodic knowledge. Therefore, the improvement in performance after learning the schema is unlikely due to mere guessing of the boards.\n\n### Eye movements became more predictive over training\n\nA potential driver of memory improvements could be a change in encoding strategy. In particular, schemas allow people to make online predictions, which allows additional encoding time if moves are successfully predicted or generate prediction errors otherwise, both of which have been shown to be beneficial for memory (e.g. Quent et al., 2021). We used eye-tracking data to understand how participants\u2019 encoding strategies were related to schemas and later memory. We modeled fixations as a linear combination of six different possible strategies (Figure 4), including a \u2018prediction\u2019 strategy (regressor 3) in which fixation durations are related to the model-derived probabilities for the next move. The coefficient for each fitted regressor reflects the extent to which the strategy is used during encoding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82599/elife-82599-fig4-v2.jpg)\n\n**Figure 4.:** Left: A participant\u2019s fixation heatmaps over a 5 s encoding period. right: the 6 regressors that we consider as potential encoding strategies. 1: Participants could look at the last (most recent) move, which is what they need to remember. 2: Participants could look at occupied tiles that might be relevant to the most recent move, to try to see what features the move forms. 3: Participants could be anticipating the upcoming move, meaning they will look at the empty squares on the board that are likely to be the next move. 4: Participants could also look at current pieces that are relevant for predicting the next move, i.e., pieces related to empty squares that are likely to be the next moves. 5: Participants could be looking at moves that previously appeared, in order to rehearse the observed move sequence. 6: Participants might have an overall tendency to look at occupied or unoccupied tiles.\n\nTo look at whether the eye movements become more predictive over time, we first ran a linear mixed-effects model with prediction coefficient as the outcome variable, session as the predictor variable, and a participant random slope, to see if eye movements became more predictive over time. There was a significant fixed effect of session, \u03b2=0.009, t=4.261, p<0.001, providing evidence that people\u2019s eye movements became more predictive over training (Figure 5a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82599/elife-82599-fig5-v2.jpg)\n\n**Figure 5.:** (a) The extent to which eye movements on empty squares align with the gameplay model (prediction coefficient; see Figure 4) increases over training sessions. (b) Correlation between Elo (playing strength) and prediction coefficient in the 35 participants. (c) Correlation between prediction coefficient and recall accuracy. (d) Mediation analysis: the effect of playing strength on recall accuracy is mediated by the amount of prediction participants made during encoding. The values on the arrows represent regression coefficients for standardized measures of Elo, prediction coefficient, and recall accuracy (* denotes p<0.05, ** denotes p<0.01). (e) Move-level analysis on the effect of schema consistency on memory, predicting whether a move will be remembered based on the probability of the move (brighter colors are more schema-consistent) and prediction coefficient in the previous move. Error bars represent the standard error of the mean.\n\n### Better performance in better players is mediated by more schema-based predictions\n\nWe next sought to test whether this increase in predictive eye movements could serve as a mechanism through which expertise improves memory performance. We found that, on a session-by-session basis, more sophisticated gameplay (higher Elo) was associated with more prediction in the next memory session (Pearson r=0.33, p=0.002), demonstrating that better players predict more during encoding (Figure 5b). Memory sessions in which a player exhibited high levels of predictive eye movements also showed better reconstruction accuracy (Pearson r=0.40, p<0.001), despite there being no explicit demand to generate predictions during encoding (Figure 5c). A mediation analysis was performed to assess the mediating role of the prediction coefficient on the link between Elo and recall accuracy (Figure 5d). The total effect of Elo on recall accuracy was significant (\u03b2=0.35, t=3.26, p=0.002). The effect of Elo on the prediction coefficient was also significant, (\u03b2=0.33, t=3.13. p=0.002). The bootstrapped indirect effect was 0.10, 95% CI = [0.03, 0.19], p=0.006, suggesting that improved memory for better players is partially mediated by improved predictions during encoding. Significant mediation was not found for any of the other regressors (all p>0.3, except previously shown moves, p=0.056), suggesting that better prediction is uniquely important for driving the memory benefit from better gameplay. With the inclusion of the prediction coefficient, the impact of Elo on recall accuracy was reduced but remained significant (\u03b2=0.24, t=2.26, p=0.03), indicating that expertise also improves memory accuracy through additional mechanisms (at encoding and/or retrieval). We again tested whether these effects were present at the individual-participant level by running a linear mixed-effect model with participant random intercepts and slopes. Due to model convergence issues, we employed a Bayesian version of this model to regularize the coefficient estimates (see Methods). We found that the 95% credibility interval for the fixed effect of Elo on the prediction coefficient overlapped with 0 (\u03b2=0.007, 95% CI = [\u20130.003, 0.016]). The 95% credibility interval for the fixed effect of the prediction coefficient on recall accuracy also overlapped with 0 (\u03b2=0.164, 95% CI = [\u20130.54, 0.87]). Together with previous findings, these results suggest that the observed mediation effect is primarily driven by individual differences rather than within-subject development over time.\n\nThe above analysis demonstrated that making more schema-consistent predictions is correlated with better memory at the level of experimental sessions. We next constructed a logistic regression model to predict subsequent memory at the scale of individual moves, as a function of the move\u2019s probability and the prediction coefficient during the 5 s window before the move appeared with a subject random slope for the prediction coefficient (Figure 5e). There was a main effect of log probability of the move (\u03b2=0.083, z=5.882, p<0.001), consistent with our session-level results demonstrating a memory benefit for more likely moves. We also found a significant effect on the prediction coefficient (\u03b2=0.508, z=3.187, p=0.001). There is no interaction between the move probability and prediction coefficient (\u03b2=0.024, z=0.395, p=0.693). This result shows that making schema-consistent predictions before a move appears is correlated with better memory for the move, independent of the schema-consistency of the move.\n\n### Model-free measures of prediction confidence and surprise\n\nIn addition to the prediction coefficient, which measured the extent to which eye movements are consistent with next-move predictions from our gameplay model, we considered two model-free aspects of eye movements on empty squares (Figure 6a). The first is prediction confidence, measuring the extent to which a participant was attending to a specific empty square (vs. looking evenly at many empty squares or at occupied squares). We use this as a measure of whether participants have a specific expectation about the next move position. The second measure is surprise, which is the negative log of the proportion of fixation time spent looking at the correct next move position. A high level of surprise indicates that a participant spent very little time looking at the square where the next move ended up appearing, which indicates low prediction accuracy. We then conducted a move-level logistic regression similar to the one described above, to predict whether a move will be remembered or not based on both prediction confidence and surprise while looking at the previous board (Figure 6b), with the subject random slope for both prediction confidence and surprise. We found the main effects of both factors, indicating that (a) making confident predictions before a move is related to better memory for that move (\u03b2=0.375, z=4.372, p<0.001) and (b) unexpected (surprising) moves are more poorly remembered (\u03b2=\u20130.015, z=\u20132.448, p=0.014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82599/elife-82599-fig6-v2.jpg)\n\n**Figure 6.:** (a) Example fixation heatmaps (in red) of high and low prediction confidence and surprise. Confidence measures the extent to which fixations were focused on a small number of unoccupied squares, while surprise measures how well these fixations aligned with the actual next move (indicated with an empty circle). (b) Recall accuracy was best when prediction confidence was high and surprise was low. Error bars represent the standard error of the mean.\n\n## Discussion\n\nThe main goal of the current study was to look at how schema-based predictive processes support sequential memory encoding. Participants learned a novel schema (likely move sequences and board configurations in our-in-a-row) with much higher complexity than most artificial schemas learned in the lab. Developing a schema for moves in the game requires a significant amount of playing experience (reflected in the slow improvement in Elo ratings we observed across sessions), but can still be accomplished within a single experiment, unlike games like chess. We observed schema-related effects on sequence memory and found that these effects emerge over time as the schema develops. We also investigated the role predictions during encoding played in the relationship between schema and memory, finding that making schema-consistent predictions, making confident predictions, and making accurate predictions were all related to successful recall at the level of individual moves.\n\n### Schema-related memory effects and how they develop\n\nOur behavioral findings showed that previously-studied schema effects from previous studies extend to this more complex experimental paradigm, and demonstrated how these effects developed over time. First, memory gradually improved as people\u2019s schemas gradually improved. People with a better schema had better memory, consistent with the literature on how expertise influences memory (Chase and Simon, 1973; Gobet and Waters, 2003). Second, the memory benefit over the training session was driven by the improved recall for schema-consistent information, consistent with schema literature (e.g. Anderson, 1981). Previous work has also shown that in some situations, schema-inconsistent information is better remembered (Frank and Kafkas, 2021), which we did not observe in this study. All the sequences we used were generated by a gameplay agent, so highly schema-inconsistent moves were rare, and none of our stimuli exhibited the extreme kind of \u2018contextual novelty\u2019 (Ranganath and Rainer, 2003; Stark et al., 2018) that often drives these effects; for example, we never showed a move that broke the rules of the game or played an expected sound. Future work could test whether highly schema-inconsistent items exhibit memory benefits equal to or greater than highly schema-consistent items. Third, participants\u2019 mistakes became more schema-consistent across sessions. These errors could reflect false memories for schema-consistent sequences that never occurred, similar to false memories generated by naturalistic videos or stories conforming to schematic scripts (Lampinen et al., 2000; Neuschatz et al., 2002). Alternatively, participants may be guessing schema-consistent moves when they failed to encode or retrieve the sequence; in future work, confidence responses could be used to distinguish between these possibilities. Note that some of the overall accuracy increase in the memory task across sessions could be attributable to a practice effect, but general practice-related improvement does not explain the schema-related effects that we observed on individual trials.\n\nInterestingly, the relationship between recall accuracy and memory is attenuated in the last two sessions, driven by improved memory for schema-inconsistent moves. Expertise effects that partially extend to non-schematic situations have been previously observed; although chess experts\u2019 memory advantage was primarily driven by very high accuracy for schema-consistent (legitimate) boards in Gobet and Waters, 2003, experts also exhibited memory for random boards that was better than that of weaker players. One possibility is that experts may be able to devote fewer attentional resources to schematic moves, freeing up additional resources to handle more unusual moves. Participants in our study may have also developed an effortful strategy to remember schema-inconsistent moves (such as switching to a shape-based encoding for these moves), consistent with the longer reaction times observed for low-probability moves in later sessions.\n\nThere are other potential mechanisms for the schema-related memory improvement that were not explored in the current study. For example, the ways in which moves are represented in the brain may shift with schema learning, moving from a purely spatial system (e.g. remembering that a move occurred at row three, column two) to a more feature-based representation (e.g. remembered a move as \u2018blocking opponent\u2019s three-in-a-row\u2019), which makes remembering easier and more robust. Future neuroimaging work can use techniques such as representational similarity analysis (Kriegeskorte et al., 2008) to model the representational geometry of remembered board positions and track how it changes over sessions.\n\n### The development of predictions and their influences on memory\n\nThe eye-tracking study showed that participants spontaneously exhibited predictive eye movements consistent with the game schema, without any explicit prediction demands. This is consistent with earlier work showing automatic predictive representations in basketball experts (Didierjean and Marm\u00e8che, 2005). We also found that schema-based predictions were associated with improved memory (at the level of participants and the level of individual moves) and that these encoding-time predictions provide a mechanism for the impact of schema quality on memory performance. There are several reasons why within-participant increases in Elo across sessions were not predictive of improvements in prediction and memory. First, our estimate of Elo during each memory task was based on gameplay performance on the prior day, which may not be a precise measure of the participant\u2019s current schema. Second, the biggest increase in prediction occurred between sessions one and two, but the session one memory-task data cannot be included in this prediction model since participants have not yet played the game (and we therefore cannot estimate their Elo). Third, we may simply be underpowered to detect within-participant effects, since we only collected data from six sessions for each subject. Despite the lack of within-subject effect, the session-level analysis provided the novel insight that the memory advantage for more-expert players may be driven by superior predictive processes during encoding.\n\nDespite the numerous studies looking at how item novelty impacts memory (Greve et al., 2017; Quent et al., 2021; van Kesteren et al., 2012), relatively few studies have looked at the impact of temporal schematic prediction on memory for upcoming items. In a recent study, Sherman and Turk-Browne, 2020 showed that making predictions does not benefit memory for the upcoming item and impairs the encoding of the current item, which is inconsistent with our findings. One possibility is that their study (in which participants implicitly learned arbitrary statistical dependencies between image categories presented in a continuous stream) engages a predictive process that relies on the hippocampus (Schapiro et al., 2017), creating interference between prediction and encoding processes. On the other hand, the explicit schematic predictions in our study that are based on rules and progression toward goal states might rely on a different network such as the medial prefrontal cortex (Bonasia et al., 2018; Robin and Moscovitch, 2017; van Kesteren et al., 2012).\n\nOur eye movement data suggest that making high-confidence predictions is related to better memory, even when that prediction is inaccurate. This is in line with the generation effect (e.g. Potts and Shanks, 2014; Slamecka and Graf, 1978), which showed that people better remember unfamiliar study materials (meaning of foreign words) if they make a guess before seeing the correct answer. Potts and Shanks, 2014 demonstrated a benefit even for minimal predictions when predictions are based on random guessing and are wrong almost all the time. In our study, although participants never made explicit predictions, high-confidence fixations (even to the wrong square) could benefit memory through a similar predictive process.\n\nMemory is also best when predictions are most accurate (the observed move is the least surprising, coming exactly where participants anticipated it to be). Surprise or atypicality has sometimes been shown to improve memory since it attracts attention and can result in stronger encoding (Frank and Kafkas, 2021; Neuschatz et al., 2002; Quent et al., 2021). On the other hand, unexpected events can sometimes be difficult to retrieve at recall, since they are less connected to the schema (Bower et al., 1979; Frankenstein et al., 2020). It is possible that the degree of surprise makes a difference; as discussed above, we never presented invalid moves or unexpected categories of stimuli, which could have strongly driven attention. The type of task used might also matter, as it has been previously shown that schema-inconsistent object-location pairs are better recognized, but not better recalled when given only location as a cue (Lew and Howe, 2017).\n\nPrevious research has found a relationship between pupil dilation and surprise (Antony et al., 2021; Lav\u00edn et al., 2014; Preuschoff et al., 2011), but our study was not well-suited to measure subtle changes in pupil diameter. Studies of pupil dilation generally require tight control over the experimental stimuli, using either purely non-visual stimuli (Preuschoff et al., 2011), or by presenting luminance-controlled stimuli at fixation (Lav\u00edn et al., 2014). In our study, the luminance at fixation is highly variable since eye movements are not controlled and squares can be unoccupied (gray) or occupied by white or black pieces. Future work could attempt to study pupil dilation in this paradigm using models to control for local and global luminance (Antony et al., 2021) or by modifying the stimuli to ensure that all board spaces are isoluminant.\n\nTo conclude, we showed that people spontaneously engage in more sophisticated predictive processes as their schemas develop, which are beneficial for memory. The current study adds to the literature showing the adaptive values of making predictions for perception and action, and extends its benefit into the memory domain. It also provides a novel mechanism for the benefit of schemas on memory. Our paradigm uses a complex temporal schema that is much more complicated than most artificial schemas (e.g. Tompary et al., 2020; van Buuren et al., 2014) but does not take years to develop, like a chess schema (e.g. Chase and Simon, 1973; Gobet and Waters, 2003). This makes four-in-a-row an exciting testbed for future studies of the cognitive and neural mechanisms of schema development and its impact on episodic memory.\n\n## Methods\n\nThe study used a longitudinal design, in which participants completed six sessions over a period of about one to two weeks (Figure 1a). The mean interval between sessions was 2.15 days. In sessions 1\u20135, participants completed 2 (practice) + 30 (formal) trials of the memory task, followed by playing 40 games against an AI opponent. The gameplay task was designed to both develop participants\u2019 schema and measure their playing strength in each session. On day six, participants completed 30 trials of the memory task only. Both the memory task and the gameplay were built on Psiturk (Gureckis et al., 2016) and hosted on Heroku (https://www.heroku.com/).\n\n### Participants\n\nThe first set of 19 participants (12 female, six male, and two non-binary) completed the task online on their home computers (and were instructed to maximize their browser windows during the task). The online study participants had a mean age of 20.95 years (SD = 2.84). Participants were paid $70 upon completion of the study. A second set of 16 participants (nine female, six male, and one declined to answer) performed an identical task in the lab while eye-tracking data was collected. The eye-tracking study participants had a mean age of 21.81 years (SD = 3.21). Participants were paid $100, plus up to $20 performance-based bonus. For both versions of the study, we recruited participants via online ads and personal contacts. All participants were over 18 years of age with normal or corrected-to-normal vision and gave informed consent for the study. The experimental protocol was approved by the Institutional Review Board of Columbia University (AAAS0252). One participant from the online study did not complete the last session of the study, and we have included their data for the first five sessions. All the other participants completed all six sessions of the study. Two in-person participants experienced technical issues in one of their sessions, resulting in the loss of data from one game for one participant and 15 games for the other participant. The same technical issues during the eye-tracking study resulted in a small number of trials being shown more than once to several participants; we included only data from the first presentation of each trial in the dataset.\n\n### Experimental design\n\nThe memory task (Figure 1b) required participants to watch a sequence of moves and then recall the moves from memory. In each trial, participants saw an initial board for 5 s. Then one move was added to the board every 5 s. After all moves in the sequence had been added, participants completed 14 s of simple distractor math problems asking them to judge whether an equation is true or false. They had 6 s to respond to each question. After the distractor, they were shown the initial board and instructed to reconstruct the sequence in the right locations and in the right order. To account for motor mistakes, they could undo the most recent move they placed.\n\nThe first two memory trials on each day were always practice trials that had four-move sequences, and participants were given feedback on whether a move they just placed was correct or not during retrieval. Participants needed to get all moves correct in the practice trials to proceed to the formal study. The practice trials made sure participants understood the task and followed the instruction. No one was excluded from the study for failing to follow the instructions. Participants then completed 30 trials of the main memory task where they did not receive feedback during the retrieval.\n\nThe sequences of moves were generated using an AI agent from van Opheusden et al., 2021 with an relatively weak Elo rating similar to participants\u2019 average playing strengths during their first session. We sampled from 180 unique games, each longer than 16 moves and shorter than 36 moves (i.e. the game did not end with a draw). For each session, 30 game segments with lengths ranging from four to eight moves were extracted from unique games. To ensure that meaningful schematic predictions were always possible, the first move of the sequence was always after the fifth move of the game. For example, if a game was 30 moves long and the sequence length was four, the beginning of the sequence could be anywhere between the 5th move and the 26th move of the game. Of the 30 sequences in each session, 10 sequences (two of each length) ended with one player winning (i.e. the last move created a four-in-a-row). This single set of 30 sequences for this session was shown to all participants in a randomized order (with a different set for each session). The whole memory task takes about 50 min.\n\nAt the beginning of day one, the participants were told that the stimuli were \u2018circles appearing on a grid.\u2019 After the memory tasks, they were told that the stimuli were actually drawn from a game that they were about to play. They were then shown the rules of the game and played 40 games against an AI agent (Figure 1c), which takes about 40 min. We used a staircasing procedure, such that the agent became stronger if the participant won and weaker if the participant lost. We used the Elo rating to measure participants\u2019 playing strength (Elo, 1978). The ratings were computed using BayesElo (Hunter, 2004) to measure participants\u2019 playing strength in each session based on their performance against the AI agents. After they finished playing the games, they were asked whether they had guessed the stimuli in the memory tasks were from a game, and if so, whether they guessed the rules of the game. We did not include a control group that completed six memory sessions without being told the rules of the game or playing against the AI agent. Ensuring that participants never develop a game schema would be difficult since even without explicit instruction they could still learn the schema through implicit statistical learning or by guessing the (simple) rules of the game. Due to these challenges, we instead used the first-session performance of each participant as our no-schema control.\n\nFrom Day two onwards, they were reminded of the rules of the four-in-a-row game at the beginning of the memory task. On Day six, after completing the memory task, participants completed a questionnaire asking them what strategies they used for the memory and whether their strategies changed over the course of the training.\n\n### Gameplay model\n\nThe original model in van Opheusden et al., 2021 used a tree search model. However, obtaining accurate move probabilities from this model would require extensive sampling. Instead, we used a feature-based myopic model of gameplay. We first defined features relevant for gameplay, which represent the relationship between the potential next move and the current board state:\n\nWe then used a very strong AI agent to generate 800 games. This agent has an Elo of 365, a level similar to the best players in our study, so its move decisions can be considered an approximation of the schema of a very strong player. To fit the model, for each board state in the 800 games, we represented every possible move $x_{i}$ as a feature vector $F$ based on the features described above. Each move was assigned a value V that is a weighted combination of the features it forms, with weights defined by a vector $w$:\n\n$$\nV(x_{i})=w\u22c5F(x_{i})\n$$\n\nWe then applied a softmax function to get the probability distribution over possible moves, $px_{i}=e^{Vx_{i}}/\\sum_{i}e^{Vx_{i}}$ . We used Pytorch (Paszke et al., 2019) backpropagation to learn the feature weights $w$ that minimized the cross-entropy loss of the moves actually made by the agent. We trained eight models using the data from 100 of the 800 games for each model and averaged the weight vectors across models to obtain a final weight vector $w$.\n\nWe use the model\u2019s evaluation of each move as a measure of the schema consistency of a move, assuming that stronger and weaker players have qualitatively the same schema for what makes a good move. An alternative possibility is that individuals develop schemas that are qualitatively distinct from the gameplay model, which will be reflected in some people playing moves that have a very low probability in our gameplay model. We did not find evidence for this possibility in our dataset; during the gameplay sessions, all participants tended to play moves with relatively high probability under the gameplay model (M=0.213, range=0.143\u20130.297, compared to a random-move baseline of 0.040). We also observed a strong correlation between Elo and this move probability measure (r=0.40, p<0.001), showing that stronger players are more aligned with our model. Future work (with more extensive gameplay sessions) could attempt to model unique feature weights for each specific individual.\n\nWe evaluated each move in the stimulus set with this model to determine the probability of each move under a very good strategy. Note that the stimuli were generated by a non-optimal AI agent, and, therefore, move quality varies over a wide range; the moves participants observe are often not the optimal move for a given board configuration. We also used this model to measure the probability of the move participants recalled during retrieval when they made a mistake.\n\n### Eye-tracking\n\nFor the in-lab subset of participants, eye-tracking data was collected during the memory task on each day. The design was otherwise identical to the online experiment. Participants were seated 100 centimeters in front of a monitor and placed their heads in a chin rest 45 centimeters away from the eye-tracker. They were instructed to remain as still as possible while the eye-tracker was running and were told that they could take breaks during the experiment in between trials. Before beginning the experiment and when the participants returned from their breaks, the eye-tracker calibration and subsequent validation were done using a nine-point grid. We recorded binocular eye movement using EyeLink 1000 plus at 1000 Hz recording frequency. Light levels remained constant for the duration of the 50 min memory portion of the study. The stimuli were displayed on a 24-inch LED monitor, with a resolution of 1920 by 1080 pixels and a refresh rate of 60 Hz. The outputted EDF files were converted to asc files and parsed with PyGaze (Dalmaijer et al., 2014).\n\nFixation maps were created for each 5 s period during which an initial board was shown or a move was shown. To handle uncertainty in assigning gaze to squares, we performed a soft assignment to board locations based on distance. For a fixation at the position $x_{F}$ with duration $t_{F}$ the square with center coordinate $x_{i}$ was assigned a fixation weight of\n\n$$\nt_{F}\u22c5\\frac{e^{\u2212\u2016x_{F}\u2212x_{i}\u2016_{2}/25}}{\\sumje^{\u2212\u2016x_{F}\u2212x_{j}\u2016_{2}/25}}\n$$\n\nHere, distance is in the unit of pixels. Since the length of the square is 136 pixels, the smoothing temperature of 25 is approximately 1/5 the length of a square and, therefore, is only relevant for fixations close to square boundaries. The weights for all fixations during the 5 s window were summed to obtain a final map of fixation weights for all board squares.\n\n### Eye movement regression model\n\nWe modeled fixation maps as a linear combination of six potential strategies that could be used during memory encoding. For each board, the regressors, described below, are length-36 vectors that correspond to the 36 tiles in the game.\n\nEach regressor and the eye movement fixation maps were z-scored within each board. We concatenated each of these across all the boards that each participant saw during a session and ran a multiple linear regression (with the fixation maps as the outcome variable, and the six regressors as the predictor variables). The coefficient for each regressor reflects the extent to which this participant used this eye movement strategy when encoding boards in this session. We also ran this regression separately for each individual board (for each move shown during encoding) to obtain trial-level estimates of eye movement strategy.\n\n### Regression models\n\nFor each model, we started with the most complex frequentist model, including a subject slope for all of the predictors. In case they did not converge, we used simpler models with either fewer random slopes or just a random intercept. If this happens, we also checked whether the effect holds with a more complex model using a Bayesian model. The reported effects with more simpler frequentist models have been shown to hold with a more complex Bayesian model. If a different result was obtained, we report the results of the more complex Bayesian model. For frequentist models, we use lme4 pacakge (Bates et al., 2015). For the Bayesian models, we used the default settings of rstanarm package (Goodrich et al., 2022).\n\n### Mediation analysis\n\nThe total effect was calculated by running a linear regression predicting recall accuracy from Elo. Next, we calculated the effect of Elo on the prediction coefficient and the effect of Elo and the prediction coefficient on recall accuracy. The significance of the mediation was computed with the package mediation (Tingley et al., 2014) that used a bootstrapping procedure. Standardized indirect effects were computed for each of the 10,000 bootstrapped samples, and the 95% CI was computed by determining the indirect effects at the 2.5th and 97.5th percentiles.\n\n### Estimating trial-level prediction confidence and surprise\n\nWe constructed two trial-level measures of fixation statistics which allowed us to describe eye movement strategies at a finer scale and in a model-free way (without assuming that participants were making predictions according to our schema model). The first is prediction confidence, which measured the extent to which a participant spent time focused on specific empty squares. High values of confidence indicate that a participant spent a large fraction of the trial looking at only a small number of empty squares, indicating a strong prediction about the upcoming move. We compute this as the expected information gain between a uniform distribution over all empty squares and the fixation distribution. Given the fixation time $Tx_{i}$ for each square $x_{i}$ , we define $Pempty$ as the fraction of the 5 s window spent fixating on empty squares, and $Px_{i}=Tx_{i}/Pempty$ as the normalized fixation distribution over empty squares. The information gained from a fixation is 0 for fixations on occupied squares, and for fixations on empty squares reflects the entropy difference between a uniform distribution and the fixation distribution. Therefore, we define:\n\n$$\nPredictionconfidence=P(empty)\u22c5(log(N_{empty})\u2212\\sumiNP(x_{i})logP(x_{i}))\n$$\n\nThe second is prediction surprise, indicating the extent to which a participant failed to look at the location where the next move was going to appear. High values of surprise indicate that the move appeared in a location that the participant spent very little time looking at. This is defined as the negative log of the percentage of time participants looked at the correct upcoming move position $x_{next}$ :\n\n$$\nPredictionsurprise=\u2212log(P(x_{next}))\n$$\n",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "526453f0-e3af-46b9-a1e4-c3f457b5a82b",
+      "submission_id": "ed75fdcb-76b2-49a3-bea1-27239bd54c54",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Huan Luo, https://ror.org/02v51f717 Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82599.sa0](https://doi.org/10.7554/eLife.82599.sa0)\n\nThis work designed a novel board game paradigm (4-in-a-row, a sort of tic-tack-toe expansion) in combination with eye movement recordings to examine how schemas gradually learned in the game influence memory. They provide impressive evidence that, in both behavior and eye movements, schema indeed guides the encoding of sequential events and facilitates memory performance. This paper would be of great interest to many fields, such as memory, learning, and decision-making.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Huan Luo, https://ror.org/02v51f717 Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82599.sa1](https://doi.org/10.7554/eLife.82599.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Schema-based predictive eye movements support sequential memory encoding\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Zachariah M. Reagh (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. All the reviewers agree that it is an impressive and well-done study to explore a very important question, i.e., the nature and origins of schema-based effect on memory. The clever experimental paradigm strikes a nice balance between complexity in capturing elements of naturalistic human behavior and simplicity in terms of analyses. Meanwhile, the reviewers also raised several critical concerns that need further control experiments and analyses to support the conclusion.\n\nEssential revisions:\n\n1) Instead of memorizing the board positions, subjects might simply consider how they play from that position, a strategy that could account for all the observations. To decouple the schema-based and purely-memory-based influences, a further control study needs to be conducted (see details in Reviewer 3's comments);\n\n2) There lacks a control group who neither knows the rule nor play the game before. The prediction is that the control group will show (1) worse memory; (2) their error patterns are different and unrelated to p (move);\n\n3) Reanalyzing the data to address the potential mixture of session-level and participant-level variability (see Reviewer 1's 2nd concern)\uff1b\n\n4) Further clarifications are needed, such as the drop-off in late sessions, reasons for not looking at pupil dilation, the rationale for schema-based memory facilitation hypothesis, and presentation of RT data (see Reviewer 2's comments)\n\nReviewer #1 (Recommendations for the authors):\n\nThis paper develops an interesting and new experimental paradigm to investigate how schema participates in memory and helps to generate predictions, using behavioral measurements, eye movement recordings, and computational modeling. The results show the correlation between memory accuracy, game performance, and predictive eye movements, supporting that schema significantly boosts memory and guide prediction. This paper would be of potential interest to many fields, such as memory, learning, and decision-making.\n\nWe see two major strengths in the paper. First, although schema-based memory is crucial, it is very hard to study it in a natural and also controllable way in the lab. This work develops a complex game paradigm with proper difficulty levels, enabling the examination of the characteristics of the process. Second, the combination of memory behavior, eye movement, and game playing provides a comprehensive framework to tackle the question.\n\nThe major weakness of the work mainly lies in its lack of a control group, that is, subjects who neither know the rule nor play the game before. This would be important evidence to support the advantage of schema-based memory boosting. Moreover, the source of the effects needs to be further clarified using additional analyses.\n\nConcerns:\n\n1. Schema-based boost in memory and predictive eye movement lacks a control group who neither know the rule nor play the game before. The prediction is that the control group will show (1) worse memory; (2) their error patterns are different and unrelated to p (move).\n\n2. Most of the correlation analyses mixed the variability levels and thus confused the source of the memory boosting effects. For example, when calculating the correlation results (Figure 2C), each data point represents a session of a participant. In this case, the source of the effect could come from either session-level variability that is due to training or participant-level variability. In fact, all the linear mixed-effect models have the same problem and need to be fixed. I would not suggest excluding the random effect for slopes since that would increase the probability of Type I error and as a consequence, the observed effect might arise from individual differences rather than experimental manipulation (see Brauer and Curtin, Psychol Methods, 2018 and Bates, arXiv, 2018 for guides). It is important to include individual-level random effects in the analysis.\n\nReviewer #2 (Recommendations for the authors):\n\nThis paper by Huang and colleagues uses a simple board game, \"4-in-a-row,\" to test the relationship between schemas and episodic memory. Specifically, the goal here was to examine the way schemas can guide encoding of sequential events as the game unfolded. In sum, the authors report that memory for move sequences in the game improved with player skill, and that memory was particularly improved for schema-consistent sequences. Further, eye movements during encoding were associated with stronger memory for move sequences, which was most prevalent in expert players.\n\nWe think this study does a fine job of answering how the development of schema aid in prediction and thereby memory through use of a stimulus that is at once naturalistic but learnable by participants in laboratory time. This is a difficult set of boxes to check. While 4-in-a-row is certainly a simplistic way of testing encoding and retrieval of \"events,\" it nonetheless tests memory in a fairly rich and meaningful way compared to much existing research, especially with regard to sequential order. The approach itself strikes a really nice balance between complexity in capturing elements of naturalistic human behavior, and simplicity in terms of analyses. Overall we think this experiment is sound, and the paper is well-written.\n\nWe have some requests for expansion/clarification and a few suggestions for strengthening the paper.\n\n1. Looking at Figure 3c and 3d, it struck us that the slope of recall accuracy increases linearly across sessions 1-4, but then drops pretty markedly to sessions 5 and 6. If things simply leveled-off or dropped slightly, it would seem less important or interesting, but the drop-off is quite stark. What could be happening here? What do the authors make of this?\n\n2. It was actually a bit surprising to us that the authors didn't use pupillometry when evaluating surprise. Pupil dilation has been strongly linked to the constructs of surprise and prediction error, more so than gaze. We are not necessarily suggesting that the authors rerun their model using pupillometry, but some rationale for why gaze rather than pupil dilation was optimal for testing surprise in this context would help. As it stands, we felt that this disconnect left the reasoning behind the surprise model feeling unclear, and we think a more explicit discussion of this would be helpful.\n\n3. As the authors themselves flesh out in the Discussion, there is a fair amount of inconsistency in the literature as to whether schema-consistent (or \"congruent,\" as others often say) or schema-inconsistent information provides relative a boost to episodic memory. And although we think their points related to this in the Discussion are fine, we think it would be worth laying out the reasoning for the prediction that schema-consistency should benefit memory in the Introduction. Our reasoning here is that, from our point of view, it could have easily gone either way. And we think that the field can benefit at this point from clear logic laying out predictions related to schema and memory.\n\n4. Did the authors analyze reaction time data at all? To be clear, we are not making a strong suggestion to do so, but given links between surprise and response time variability, and the logical relationship between increasing experience and time taken to do something, it seems a logical thing to do in characterizing performance.\n\nReviewer #3 (Recommendations for the authors):\n\nThis paper presents a series of analyses of the relationship between predictive schemas \u2013 representations that allow people to form predictions about events in their environment \u2013 and performance in a memory task. Participants in the experiments learned to play a novel board game over a period of several days, and also performed a memory task in which they had to recall sequences of board positions. The first time they performed the memory task they had no experience with the game, so these just looked like random configurations of black and white circles. As players became more familiar with the game, the memory performance also improved.\n\nSeveral analyses dig deeper into this phenomenon, examining how participants' memory for specific board positions are related to the probability of the corresponding moves in the game, as estimated by an AI agent. This analysis shows that people have better memory for higher probability moves. By bringing another group of participants into the laboratory and performing eye tracking, it was shown that people's eyes movements also seem to be influenced by the probability of moves. Further analyses that express confidence and surprise in terms of these eye movements \u2013 how focused people seem to be on a specific position and how long they spend looking at the correct position \u2013 show that these quantities are also related to memory.\n\nOverall, I think this is an impressive piece of work that does a nice job of exploring several questions about the nature and origins of schema-based effects on memory performance through the clever use of a novel task. However, I do think there is one substantial potential confound. As people are getting better at playing the game, it seems like one potential strategy they might use is to worry less about memorizing the board positions and instead to simply consider how they would play from that position. People following this strategy would seem to account for all of the results that are presented: it would result in a higher probability of being correct on higher probability moves, and potentially produce the associated effects involving eye-movements since those eye-movements tend to be concentrated on the high probability moves as well.\n\nThis kind of confound is likely to arise in studies looking at schema effects on memory, because if people have a schema they can use that schema to make informed guesses that are more likely to be right for schema-consistent items. However, in this setting it seems like there is actually an opportunity to address this confound directly. I think this could be done by conducting a further study in which people play from the same board positions that are used to initiate the memory recall sequences \u2013 perhaps doing so on different days so as to remove concerns about interference. By measuring the actual play sequences that people generate, it would be possible to focus the analyses on cases where the memory sequences differ from these play sequences. In fact, if the play sequences are generated the day before the memory test, the memory test could include two kinds of trials: one set where the memory sequence corresponds to that produced by the participant on the previous day, and one where it diverges. If the reported effects are observed in both of these conditions, that helps to decouple simulated play from generic schema use (that is, if a move in a memory sequence that has high probability but wasn't played by the participant the previous day is still remembered well, it provides strong support for a schema effect rather than a play-based strategy).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Schema-based predictive eye movements support sequential memory encoding\" for further consideration by eLife. Your revised article has been evaluated by Timothy Behrens (Senior Editor) and a Reviewing Editor.\n\nSince the original two reviewers were not available to review the revised version, we have invited Reviewer 4 to evaluate the revision.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n1) Providing the learning curve of the control group (first session here) instead of the averaged results;\n\n2) Please see detailed comments by Reviewer 4.\n\nReviewer #1 (Recommendations for the authors):\n\nAbout the two major comments or experiments I raised, the authors have done a fine job addressing them. They have performed a simulation analysis to exclude the alternative explanation raised in the first question. They chose to use the first session of the data as the control group to answer the second question.\n\nTheir answers are fine but I would like to clarify my original point that may have been unclear. That is, showing the learning curve rather than a single point of the control group's performance, i.e., the first session, as a control.\n\nReviewer #4 (Recommendations for the authors):\n\nHuang et al. examined the influence of schemas on prediction and sequence memory for a novel board game. Participants' memory for sequences of moves was tested across several sessions as they learned the game and improved. Over the sessions, and accompanied by a skill increase, participants' memory for the sequences improved. This learning was also related to eye-movements during encoding which were predictive of memory for the sequences.\n\nThis study does an excellent job of linking schema development to prediction/attention and memory.\n\nComments:\n\nIn the first paragraph of the Results section, it was unclear whether during the game play task participants were provided instructions or whether they had to learn the game through some kind of trial and error. It should be specified that they were provided with rules since early in the paragraph it notes that the participants were naive to the fact that a game was being shown in the initial memory test phase.\n\n\"Modeling schema-related memory improvement\" In this section a model is trained based on moves from a near optimal AI. A probability distribution is made for upcoming moves based on the likelihood a move would be made by a near optimal AI. This probability is interpreted to be related to the schema consistency of a move. This may be true for an expert player. However, a near optimal move may not be schema-consistent for a new player or maybe even an average player. The participant's internal schema when they are beginners and progress may not map on to the near optimal AI moves. This is an interesting analysis, but calling the near optimal AI move schema consistent just slightly seems like a miswording for me.\n\nDiscussion \"One possibility is that their study (in which participants implicitly learned statistical dependencies between image categories presented in a continuous stream) engages a predictive process that relies on the hippocampus (Schapiro et al., 2017), creating interference between prediction and encoding processes, while the explicit schematic predictions in our study could rely on a different network such as the medial prefrontal cortex \" While this is a compelling assertion, can you describe anything that psychologically varies between these tasks? For example, Shapiro et al. had participants learn arbitrary statistical sequences, but here the sequences could be understood in the context of rules, goals, and progression towards goal states.\n\nMethods: During the memory task, 10 out of the 30 sequences ended in a win state. Since a win-state caps off a sequence this could be thought of as an event boundary. Was there any effect of these 10 sequences that differed from the other 20 or interacted with other effects? For example, if a win-state is an event boundary, is particularly salient, and is better remembered, then a participant merely has to reconstruct the sequence from probe to win-state, rather than remembering each move.\n\nModeling schema-related memory improvement\" In this section the authors missed a period in \"near- optimal AI agent The model identifies\".\n",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bddf9f86-5301-46e5-856a-498e01aa69e2",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C1",
+      "claim": "Participants learned to play a novel board game ('four-in-a-row') across six training sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants learned to play a novel board game ('four-in-a-row') across six training sessions and repeatedly performed a memory test in which they watched and recalled sequences of moves from the game.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract describing the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f0e1acda-1fb3-483d-92e6-dc69a8fc27d6",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C2",
+      "claim": "Participants gradually became better at remembering sequences from the game as their schema developed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that participants gradually became better at remembering sequences from the game as their schema developed, driven by improved accuracy for schema-consistent moves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "03094a93-83d2-47d6-8250-87f154c2c193",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C3",
+      "claim": "Memory improvement was driven by improved accuracy for schema-consistent moves.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that participants gradually became better at remembering sequences from the game as their schema developed, driven by improved accuracy for schema-consistent moves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "ae5e46b5-4016-473b-ba75-12430efd2878",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C4",
+      "claim": "Increased predictive eye movements during encoding were associated with better memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye tracking revealed that increased predictive eye movements during encoding, which were most prevalent in expert players, were associated with better memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by eye-tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f4e2715d-78e3-4924-a1b4-0cc7591c6a02",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C5",
+      "claim": "Predictive eye movements were most prevalent in expert players.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye tracking revealed that increased predictive eye movements during encoding, which were most prevalent in expert players, were associated with better memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by correlation between Elo ratings and prediction coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f2d9efc6-21d4-4408-9153-9023c1929903",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C6",
+      "claim": "Prediction is a mechanism by which schematic knowledge can improve episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identify prediction as a mechanism by which schematic knowledge can improve episodic memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by mediation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "8dc70557-00cb-4f54-bd95-0ed858798998",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C7",
+      "claim": "Prediction can be defined as a top-down process in which people generate expectations about what they will experience next, based on their previous experiences and the current context.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction can be defined as a top-down process in which people generate expectations about what they will experience next, based on their previous experiences and the current context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f0c06636-cdf6-4305-be4e-293129c18904",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C8",
+      "claim": "Schemas are adaptable knowledge structures reflecting generalized information abstracted from multiple episodic experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularly important source of prediction is schemas, which are adaptable knowledge structures reflecting generalized information abstracted from multiple episodic experiences (Ghosh and Gilboa, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "ad15933d-9162-456c-abbc-e9a04034b5ca",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C9",
+      "claim": "Having a detailed and robust schema yields improvements in memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has shown that having a detailed and robust schema yields improvements in memory (Alba and Hasher, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "676b08da-7a94-48c9-bf1e-6b966c618d1c",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C10",
+      "claim": "Memory improvement from schemas has been attributed in part to processes during recall since schemas provide cues that can be used to retrieve episodic details that would otherwise be forgotten.",
+      "claim_type": "EXPLICIT",
+      "source": "This memory improvement has been attributed in part to processes during recall since schemas provide cues that can be used to retrieve episodic details that would otherwise be forgotten (Anderson and Pichert, 1978; Watkins and Gardiner, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "e1f8f41c-8f51-4807-abb5-a24949b0ca69",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C11",
+      "claim": "Schemas could play a role during memory encoding, by helping people represent information more meaningfully.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, schemas could play a role during memory encoding, by helping people represent information more meaningfully (Bransford and Johnson, 1972; Chase and Simon, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "d4a30d79-abf0-47f5-9f37-628b46038a72",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C12",
+      "claim": "Domain experts automatically engage predictive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that domain experts (i.e. people with a strong schema in a specific field) automatically engage these predictive processes; for example, basketball experts shown a clip from a game tended to remember the final positions of the players as being ahead of their actual positions (Gorman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research on basketball experts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "0b8a3d7d-2dc2-4679-ba2f-8bdaa92fe4d5",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C13",
+      "claim": "Basketball experts shown a clip from a game tended to remember the final positions of the players as being ahead of their actual positions.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that domain experts (i.e. people with a strong schema in a specific field) automatically engage these predictive processes; for example, basketball experts shown a clip from a game tended to remember the final positions of the players as being ahead of their actual positions (Gorman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "79943f64-030f-43bc-9daa-327d1c028770",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C14",
+      "claim": "Predictive processes are only possible with a pre-existing schema.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictive processes are only possible with a pre-existing schema and might partially explain the large literature showing selective memory improvement for schema-consistent (i.e. predictable) information (Anderson, 1981) and highly unexpected information (i.e. prediction errors, Bonasia et al., 2018; Quent et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference based on the nature of prediction and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "98d2f95c-0035-4e27-80a8-a4874ee25981",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C15",
+      "claim": "There is selective memory improvement for schema-consistent (i.e. predictable) information.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictive processes are only possible with a pre-existing schema and might partially explain the large literature showing selective memory improvement for schema-consistent (i.e. predictable) information (Anderson, 1981) and highly unexpected information (i.e. prediction errors, Bonasia et al., 2018; Quent et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "fe646736-7f50-4d01-968a-6be53fa09786",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C16",
+      "claim": "There is selective memory improvement for highly unexpected information (i.e. prediction errors).",
+      "claim_type": "EXPLICIT",
+      "source": "These predictive processes are only possible with a pre-existing schema and might partially explain the large literature showing selective memory improvement for schema-consistent (i.e. predictable) information (Anderson, 1981) and highly unexpected information (i.e. prediction errors, Bonasia et al., 2018; Quent et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b10cfffe-279f-4b72-8446-afe9c444a2b5",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C17",
+      "claim": "Four-in-a-row is a two-player game where players compete to be the first to connect four pieces in a row on a 4 \u00d7 9 board.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we have participants remember sequences from a simple board game recently developed by van Opheusden et al., 2021 called four-in-a-row. In this two-player game, a generalization of tic-tac-toe, players compete to be the first to connect four pieces in a row on a 4 \u00d7 9 board.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the game used in the study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f090cd46-7d28-4d6b-9af7-2c9023d41963",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C18",
+      "claim": "Four-in-a-row is a generalization of tic-tac-toe.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we have participants remember sequences from a simple board game recently developed by van Opheusden et al., 2021 called four-in-a-row. In this two-player game, a generalization of tic-tac-toe, players compete to be the first to connect four pieces in a row on a 4 \u00d7 9 board.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the description of the game.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "33e4eaaf-a964-449c-b0e8-12c3dc725398",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C19",
+      "claim": "Expertise in four-in-a-row has been shown to change how individual game boards are remembered, with experts better representing arrangements of pieces that are strategically important.",
+      "claim_type": "EXPLICIT",
+      "source": "Expertise in four-in-a-row has been shown to change how individual game boards are remembered, with experts better representing arrangements of pieces that are strategically important (van Opheusden et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b6a35309-a274-4ae3-9f40-cb539033f563",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C20",
+      "claim": "Near-optimal play in four-in-a-row can be captured with a linear model.",
+      "claim_type": "EXPLICIT",
+      "source": "The game has a complexity far exceeding typical tasks in previous schema and prediction research, yet it is possible to capture near-optimal play with a linear model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the game and is demonstrated by the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "9a938539-13ce-4b83-bbb3-85ceb8dca468",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C21",
+      "claim": "Participants start the experiment without a schema for four-in-a-row.",
+      "claim_type": "EXPLICIT",
+      "source": "The novelty and simplicity of the game ensure that participants start the experiment without a schema but can acquire the schema over several hours of practice, allowing us to tractably study how schema development is related to changes in prediction and memory longitudinally in a lab setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design feature of the experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "47d607d8-8eac-45df-8bd0-11cc3c8c203b",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C22",
+      "claim": "Participants can acquire the schema for four-in-a-row over several hours of practice.",
+      "claim_type": "EXPLICIT",
+      "source": "The novelty and simplicity of the game ensure that participants start the experiment without a schema but can acquire the schema over several hours of practice, allowing us to tractably study how schema development is related to changes in prediction and memory longitudinally in a lab setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design feature and supported by the observed improvements in gameplay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "1712604c-5275-4921-a882-b6d333b039d2",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C23",
+      "claim": "Possible moves in four-in-a-row correspond to different spatial locations, allowing eye movements to be used as an indication of people's predictive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that possible moves correspond to different spatial locations allows us to use eye movements as an indication of people's predictive processes, as in previous paradigms with spatial actions (e.g. Tal et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological advantage and supported by citation to similar approaches.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b2874295-f511-48db-8a2c-baff3d065ce3",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C24",
+      "claim": "Studies of memory for complex memoranda such as chess boards have shown an advantage for schema-consistent stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Although previous research has sometimes found novelty-driven memory improvements for schema-inconsistent information (reviewed in Frank and Kafkas, 2021), studies of memory for complex memoranda such as chess boards have shown an advantage for schema-consistent stimuli (e.g. board positions from actual chess games) (Gobet and Waters, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research on chess.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "9a71ec08-d098-4048-b0fb-bf2aa8361b2e",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C25",
+      "claim": "People's schema quality should be related to their memory performance, such that people with stronger gameplay abilities will have better sequence memory.",
+      "claim_type": "EXPLICIT",
+      "source": "People's schema quality should also be related to their memory performance, such that people with stronger gameplay abilities will have better sequence memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "cd40e23f-39c2-47c9-b8f2-d02de53c0309",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C26",
+      "claim": "People's eye movements should become more anticipatory as they gain more experience playing the game.",
+      "claim_type": "EXPLICIT",
+      "source": "If the prediction is indeed a potential mechanism for schema-related improvement, we would expect people's eye movements to become more anticipatory as they gain more experience playing the game and can rely more on internal predictive models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "84d78318-9b50-464d-9cf5-c1f10546bb19",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C27",
+      "claim": "The extent of predictive eye movements should mediate the relationship between schema quality and memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of predictive eye movements should also mediate the relationship between schema quality and memory performance, providing a mechanism through which schematic knowledge can impact episodic memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "db3d10c6-7991-4998-8903-83392360f205",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C28",
+      "claim": "Participants' recall accuracy improved from 61.6% (SD = 18.1%) in session 1 to 69.5% (SD = 20.6%) in session 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants recall accuracy (combined across the online and in-lab data), calculated as the percent of moves they recalled at the right location in the right order, improved across training sessions, improving from 61.6% (SD = 18.1%) in session 1 to 69.5% (SD = 20.6%) in session 6 (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "0b428667-dc11-4ca6-a172-bd9d859b22c1",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C29",
+      "claim": "Participants' playing strength, measured with an Elo rating, increased across sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, participants' playing strength, measured with an Elo rating (Elo, 1978), increased (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "be3cea8d-e7f6-4e84-bbc8-538bd41c2bc9",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C30",
+      "claim": "The fixed effect of session was significant in predicting recall accuracy (\u03b2=0.015, t=3.215, p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "The fixed effect of the session was significant in both models (for memory, \u03b2=0.015, t=3.215, p=0.003; for Elo, \u03b2=24.92, t=5.102, p<0.001), demonstrating improvement in both recall accuracy and gameplay over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "bce38da2-fa6d-4287-a5f8-519446016d99",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C31",
+      "claim": "The fixed effect of session was significant in predicting Elo (\u03b2=24.92, t=5.102, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The fixed effect of the session was significant in both models (for memory, \u03b2=0.015, t=3.215, p=0.003; for Elo, \u03b2=24.92, t=5.102, p<0.001), demonstrating improvement in both recall accuracy and gameplay over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "db5dcb52-10dd-466d-b451-d1b322c438c8",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C32",
+      "claim": "Elo rating in a session was correlated with memory performance in the following session (Pearson r=0.298, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Elo's rating in a session was correlated with memory performance in the following session, Pearson r=0.298, p<0.001 (Figure 2c), showing that having a better schema for the game was associated with better episodic memory for move sequences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "8dc4bb85-38fa-4c50-82d9-9320f2b645a1",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C33",
+      "claim": "The relationship between Elo and memory accuracy was not significant within individual participants (\u03b2=0.012, t=1.196, p=0.242).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relationship between Elo and memory accuracy was not significant in this model (\u03b2=0.012, t=1.196, p=0.242), suggesting that this effect was primarily driven by individual differences (people with better schema tend to have better memory) rather than across-session improvements in Elo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects modeling with per-participant slopes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "e9e1fba3-0483-49ce-91e9-19d871141d85",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C34",
+      "claim": "The effect of Elo on memory was primarily driven by individual differences rather than across-session improvements.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relationship between Elo and memory accuracy was not significant in this model (\u03b2=0.012, t=1.196, p=0.242), suggesting that this effect was primarily driven by individual differences (people with better schema tend to have better memory) rather than across-session improvements in Elo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "eb07fb72-5e76-4270-be8a-574d6305f46f",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C35",
+      "claim": "In sessions 2\u20136, memory for sequences that ended in a win state was significantly better (t=6.67, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that in sessions 2\u20136, memory for sequences that ended in a win state was significantly better (t=6.67, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "cc4e84ca-36cc-4ebd-b34a-8a215348973d",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C36",
+      "claim": "In session 1, memory for winning sequences was marginally worse (t=\u20132.01, p=0.052).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe this pattern in the first session (before participants were taught the game rules) and actually found a marginally significant effect in the opposite direction, with worse memory for winning sequences (t=\u20132.01, p=0.052).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "c24c5f4d-673e-4e4a-baf1-e5bf21749f01",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C37",
+      "claim": "There was initially no relationship between the probability of a move and the probability that the move will be remembered in session 1 (\u03b2=\u20130.031, z=\u20131.813, p=0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3b, there was initially no relationship between the probability of a move and the probability that the move will be remembered in session 1 (\u03b2=\u20130.031, z=\u20131.813, p=0.07), but in sessions 2 through 6, schema-consistent moves were more likely to be remembered (all p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "62b041ff-f132-4abf-8f6f-f9707dd8e1e5",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C38",
+      "claim": "In sessions 2 through 6, schema-consistent moves were more likely to be remembered (all p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3b, there was initially no relationship between the probability of a move and the probability that the move will be remembered in session 1 (\u03b2=\u20130.031, z=\u20131.813, p=0.07), but in sessions 2 through 6, schema-consistent moves were more likely to be remembered (all p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "2e9b841c-696e-4ab5-abfe-8344713a5c66",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C39",
+      "claim": "There was a main effect of session on memory (\u03b2=0.164, z=5.763, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a main effect of session on memory (\u03b2=0.164, z=5.763, p<0.001) but no main effect of move probability (\u03b2=\u20130.0046, z=\u20130.249, p=0.804).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects logistic regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "bc205e8c-cf06-45e1-b480-bf58b47edfe0",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C40",
+      "claim": "There was no main effect of move probability on memory (\u03b2=\u20130.0046, z=\u20130.249, p=0.804).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a main effect of session on memory (\u03b2=0.164, z=5.763, p<0.001) but no main effect of move probability (\u03b2=\u20130.0046, z=\u20130.249, p=0.804).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects logistic regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "10a776b3-0963-484a-83c4-876c10d9b66e",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C41",
+      "claim": "There was a significant interaction between move probability and session on memory (\u03b2=0.035, z=7.561, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was a significant interaction between move probability and session on memory (\u03b2=0.035, z=7.561, p<0.001), indicating that participants became better at remembering schema-consistent moves over the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects logistic regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "dd5570ff-6f89-4bd3-ba7e-71be53f02c52",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C42",
+      "claim": "Participants became better at remembering schema-consistent moves over time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was a significant interaction between move probability and session on memory (\u03b2=0.035, z=7.561, p<0.001), indicating that participants became better at remembering schema-consistent moves over the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the interaction effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "96eb8eab-33ec-43f5-8fbb-e1ca41198ab8",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C43",
+      "claim": "Reaction time during retrieval was initially not related to the probability of the move (\u03b2=\u201330.5, t=0.975, p=0.329).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to accuracy, we found that reaction time during retrieval was initially not related to the probability of the move (\u03b2=\u201330.5, t=0.975, p=0.329) but consistently faster for more schema-consistent moves in sessions 2 through 6 (all p<0.001, Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "55daa002-5034-4e98-85f1-92b37209a20d",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C44",
+      "claim": "Reaction time was consistently faster for more schema-consistent moves in sessions 2 through 6 (all p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to accuracy, we found that reaction time during retrieval was initially not related to the probability of the move (\u03b2=\u201330.5, t=0.975, p=0.329) but consistently faster for more schema-consistent moves in sessions 2 through 6 (all p<0.001, Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "fd800dfd-3606-4c31-9004-bbf27b307ecd",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C45",
+      "claim": "There was a main effect of session on reaction time (\u03b2=\u2013156.3, t=\u20132.39, p=0.017).",
+      "claim_type": "EXPLICIT",
+      "source": "Running a mixed-effects model as for the accuracy (using linear rather than logistic regression), we found a main effect of session on reaction time (\u03b2=\u2013156.3, t=\u20132.39, p=0.017), such that participants were faster in later training sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects linear regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f5c8b690-2431-47d8-b6a5-18edd32e942f",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C46",
+      "claim": "There was no main effect of move probability on reaction time (\u03b2=- 46.1, t=\u22120.440, p=0.660).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no main effect of move probability (\u03b2=- 46.1, t=\u22120.440, p=0.660) but a significant interaction between move probability and the session on reaction time (\u03b2=\u221271.06, t=\u20132.593, p=0.010), with faster responses when remembering more schema-consistent moves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects linear regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "5f0df866-0362-452b-86ac-e7cc44aa59b5",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C47",
+      "claim": "There was a significant interaction between move probability and session on reaction time (\u03b2=\u221271.06, t=\u20132.593, p=0.010).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no main effect of move probability (\u03b2=- 46.1, t=\u22120.440, p=0.660) but a significant interaction between move probability and the session on reaction time (\u03b2=\u221271.06, t=\u20132.593, p=0.010), with faster responses when remembering more schema-consistent moves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects linear regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "9133a97f-cb76-4268-b264-ebbf0fdb6e39",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C48",
+      "claim": "The proportion of schema-consistent mistakes increased over the first 4 training sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 3e, the proportion of schema-consistent mistakes increased over the first 4 training sessions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "88e375de-cc80-4b04-a83b-b0484f491a1d",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C49",
+      "claim": "There was a significant effect of session on the proportion of schema-consistent mistakes (\u03b2=0.032, t=5.413, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We ran a mixed-effects model with a participant random slope, the proportion of schema-consistent mistakes as the outcome variable, and session as a fixed-effect predictor, and found a significant effect of the session (\u03b2=0.032, t=5.413, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mixed-effects modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "e01cef15-5b06-468e-83a7-0fc5fdb73842",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C50",
+      "claim": "The relationship between recall accuracy and move probability was significantly weaker at session 5 (t=\u20133.24, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Although an overall increase across sessions was observed in both schema-consistent mistakes and the relationship between recall accuracy and move probability, these effects were significantly weaker at session 5 (for schema-consistent mistakes, t=\u20132.51, p=0.02; for the relationship between recall accuracy and move probability, t=\u20133.24, p=0.001), and numerically weaker at session 6 (for schema consistent mistakes, t=\u20131.70, p=0.099; for the relationship between recall accuracy and move probability, t=\u20131.93, p=0.053).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "a850b6b4-f83b-4eac-867e-b6497883a69f",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C51",
+      "claim": "Schema-consistent mistakes were significantly weaker at session 5 (t=\u20132.51, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Although an overall increase across sessions was observed in both schema-consistent mistakes and the relationship between recall accuracy and move probability, these effects were significantly weaker at session 5 (for schema-consistent mistakes, t=\u20132.51, p=0.02; for the relationship between recall accuracy and move probability, t=\u20133.24, p=0.001), and numerically weaker at session 6 (for schema consistent mistakes, t=\u20131.70, p=0.099; for the relationship between recall accuracy and move probability, t=\u20131.93, p=0.053).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "aef75fba-3506-4de4-a60a-dbd52c197ed6",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C52",
+      "claim": "Out of over 1000 moves across 6 sessions there were on average 1.0 repeats (SD = 1.67) that participants experienced during gameplay and were later part of a memory sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this possibility, we examined all the boards that participants saw during gameplay and the moves played on these boards, and found the repetition of exact move sequences to be very rare; out of over 1000 moves across 6 sessions there were on average 1.0 repeats (SD = 1.67) that participants experienced during gameplay and were later part of a memory sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analyzing the overlap between gameplay and memory sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "d85112dd-0e6b-476e-a8b4-cb7141c891f6",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C53",
+      "claim": "Purely schema-based guessing can only achieve an average accuracy of 13.39% across the six sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated this strategy by drawing moves probabilistically from the gameplay (schema) model for each initial board that participants saw during the memory task in each session. We found that purely schema-based guessing can only achieve an average accuracy of 13.39% across the ix sessions (Figure 2a), which is much lower than participants' average recall accuracy of 65.91%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from simulation shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b4bf6772-0b9e-4136-8c36-6c81b3e7ca2b",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C54",
+      "claim": "Participants' average recall accuracy was 65.91%.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that purely schema-based guessing can only achieve an average accuracy of 13.39% across the ix sessions (Figure 2a), which is much lower than participants' average recall accuracy of 65.91%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statistic from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "09af680c-d038-4d20-8d5b-9685a3905308",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C55",
+      "claim": "There was a significant fixed effect of session on prediction coefficient (\u03b2=0.009, t=4.261, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant fixed effect of session, \u03b2=0.009, t=4.261, p<0.001, providing evidence that people's eye movements became more predictive over training (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "430ab166-3140-4583-a6d7-8e91b4a4cced",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C56",
+      "claim": "People's eye movements became more predictive over training.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant fixed effect of session, \u03b2=0.009, t=4.261, p<0.001, providing evidence that people's eye movements became more predictive over training (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the statistical result shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f252786a-79ef-41c1-b116-c2a42b470253",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C57",
+      "claim": "More sophisticated gameplay (higher Elo) was associated with more prediction in the next memory session (Pearson r=0.33, p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, on a session-by-session basis, more sophisticated gameplay (higher Elo) was associated with more prediction in the next memory session (Pearson r=0.33, p=0.002), demonstrating that better players predict more during encoding (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "df82006a-1ab2-4566-83bd-c6f0574dac56",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C58",
+      "claim": "Memory sessions in which a player exhibited high levels of predictive eye movements showed better reconstruction accuracy (Pearson r=0.40, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Memory sessions in which a player exhibited high levels of predictive eye movements also showed better reconstruction accuracy (Pearson r=0.40, p<0.001), despite there being no explicit demand to generate predictions during encoding (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b79f59b2-331f-42e5-95c7-aca092b92f66",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C59",
+      "claim": "The total effect of Elo on recall accuracy was significant (\u03b2=0.35, t=3.26, p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "The total effect of Elo on recall accuracy was significant (\u03b2=0.35, t=3.26, p=0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "fd42e6bd-896a-45f8-955d-a01add725157",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C60",
+      "claim": "The effect of Elo on the prediction coefficient was significant (\u03b2=0.33, t=3.13. p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of Elo on the prediction coefficient was also significant, (\u03b2=0.33, t=3.13. p=0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "64bfc5e4-de2a-4d22-b4ef-e9dda248e180",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C61",
+      "claim": "The bootstrapped indirect effect was 0.10, 95% CI = [0.03, 0.19], p=0.006.",
+      "claim_type": "EXPLICIT",
+      "source": "The bootstrapped indirect effect was 0.10, 95% CI = [0.03, 0.19], p=0.006, suggesting that improved memory for better players is partially mediated by improved predictions during encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "a8bf9c5e-50b1-45bf-b300-6cebb9813e28",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C62",
+      "claim": "Improved memory for better players is partially mediated by improved predictions during encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "The bootstrapped indirect effect was 0.10, 95% CI = [0.03, 0.19], p=0.006, suggesting that improved memory for better players is partially mediated by improved predictions during encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mediation analysis result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "7a207e4e-3f52-411e-a912-b91ec7b4ec7a",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C63",
+      "claim": "With the inclusion of the prediction coefficient, the impact of Elo on recall accuracy was reduced but remained significant (\u03b2=0.24, t=2.26, p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "With the inclusion of the prediction coefficient, the impact of Elo on recall accuracy was reduced but remained significant (\u03b2=0.24, t=2.26, p=0.03), indicating that expertise also improves memory accuracy through additional mechanisms (at encoding and/or retrieval).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "3a212885-5d35-43a5-9c61-37dd81d0417a",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C64",
+      "claim": "Expertise improves memory accuracy through additional mechanisms beyond prediction (at encoding and/or retrieval).",
+      "claim_type": "EXPLICIT",
+      "source": "With the inclusion of the prediction coefficient, the impact of Elo on recall accuracy was reduced but remained significant (\u03b2=0.24, t=2.26, p=0.03), indicating that expertise also improves memory accuracy through additional mechanisms (at encoding and/or retrieval).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mediation analysis result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "aeafeeec-a960-4b42-b7a0-35cf17873644",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C65",
+      "claim": "There was a main effect of log probability of the move on subsequent memory (\u03b2=0.083, z=5.882, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a main effect of log probability of the move (\u03b2=0.083, z=5.882, p<0.001), consistent with our session-level results demonstrating a memory benefit for more likely moves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from move-level logistic regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f2bc869a-ad97-4a09-b170-396e130bc92c",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C66",
+      "claim": "There was a significant effect of prediction coefficient on subsequent memory (\u03b2=0.508, z=3.187, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a significant effect on the prediction coefficient (\u03b2=0.508, z=3.187, p=0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from move-level logistic regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "fcb8ef4d-3cb7-409f-9bcd-ca59f2efc3a0",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C67",
+      "claim": "There is no interaction between the move probability and prediction coefficient (\u03b2=0.024, z=0.395, p=0.693).",
+      "claim_type": "EXPLICIT",
+      "source": "There is no interaction between the move probability and prediction coefficient (\u03b2=0.024, z=0.395, p=0.693).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from move-level logistic regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "7deb0b00-b279-45ad-bed9-f92ecc97d182",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C68",
+      "claim": "Making schema-consistent predictions before a move appears is correlated with better memory for the move, independent of the schema-consistency of the move.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that making schema-consistent predictions before a move appears is correlated with better memory for the move, independent of the schema-consistency of the move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the move-level regression results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b59c5dbd-6cbb-4b51-8c9e-c27f8e0a1150",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C69",
+      "claim": "Making confident predictions before a move is related to better memory for that move (\u03b2=0.375, z=4.372, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found the main effects of both factors, indicating that (a) making confident predictions before a move is related to better memory for that move (\u03b2=0.375, z=4.372, p<0.001) and (b) unexpected (surprising) moves are more poorly remembered (\u03b2=\u20130.015, z=\u20132.448, p=0.014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from move-level logistic regression using model-free measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b35f1020-a0fd-4621-a97a-20d1ef99e4a8",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C70",
+      "claim": "Unexpected (surprising) moves are more poorly remembered (\u03b2=\u20130.015, z=\u20132.448, p=0.014).",
+      "claim_type": "EXPLICIT",
+      "source": "We found the main effects of both factors, indicating that (a) making confident predictions before a move is related to better memory for that move (\u03b2=0.375, z=4.372, p<0.001) and (b) unexpected (surprising) moves are more poorly remembered (\u03b2=\u20130.015, z=\u20132.448, p=0.014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from move-level logistic regression using model-free measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "b5728f75-1a0a-401d-80c0-690248240ded",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C71",
+      "claim": "The mean interval between sessions was 2.15 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The study used a longitudinal design, in which participants completed six sessions over a period of about one to two weeks (Figure 1a). The mean interval between sessions was 2.15 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "d01ba05c-466b-4747-8890-3073e6c49ab0",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C72",
+      "claim": "The first set of 19 participants completed the task online on their home computers.",
+      "claim_type": "EXPLICIT",
+      "source": "The first set of 19 participants (12 female, six male, and two non-binary) completed the task online on their home computers (and were instructed to maximize their browser windows during the task).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "6a718fc5-e477-41be-bfb5-30be6c22b41c",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C73",
+      "claim": "The online study participants had a mean age of 20.95 years (SD = 2.84).",
+      "claim_type": "EXPLICIT",
+      "source": "The online study participants had a mean age of 20.95 years (SD = 2.84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demographic characteristic of the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "cc84a4e6-f15e-40a2-b614-89362b3ec566",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C74",
+      "claim": "A second set of 16 participants performed an identical task in the lab while eye-tracking data was collected.",
+      "claim_type": "EXPLICIT",
+      "source": "A second set of 16 participants (nine female, six male, and one declined to answer) performed an identical task in the lab while eye-tracking data was collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "30d90a6c-05f3-43d3-aec3-5054c7f08484",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C75",
+      "claim": "The eye-tracking study participants had a mean age of 21.81 years (SD = 3.21).",
+      "claim_type": "EXPLICIT",
+      "source": "The eye-tracking study participants had a mean age of 21.81 years (SD = 3.21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demographic characteristic of the participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "bb6a53ff-4c80-4daf-b67a-0e2581391859",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C76",
+      "claim": "In the first session, most participants did not suspect that the stimuli were from a game or guess the rules of the game (14 out of 19 in the online study, and 13 out of 16 in the in-person study).",
+      "claim_type": "EXPLICIT",
+      "source": "In a post-task questionnaire, we confirmed that in session 1 most participants did not suspect that the stimuli were from a game or guess the rules of the game (14 out of 19 in the online study, and 13 out of 16 in the in-person study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a post-task questionnaire.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "8d7741e7-7b4a-47b6-a69a-c2fb6f16cd74",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C77",
+      "claim": "The sequences of moves were generated using an AI agent from van Opheusden et al., 2021 with a relatively weak Elo rating similar to participants' average playing strengths during their first session.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequences of moves were generated using an AI agent from van Opheusden et al., 2021 with an relatively weak Elo rating similar to participants' average playing strengths during their first session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how stimuli were generated.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "67a8bc29-fca4-41c2-84f1-88a704c63e91",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C78",
+      "claim": "Of the 30 sequences in each session, 10 sequences (two of each length) ended with one player winning.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 30 sequences in each session, 10 sequences (two of each length) ended with one player winning (i.e. the last move created a four-in-a-row).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the stimulus design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "7019d184-3e6e-4df1-9da8-d3feb71fe9e7",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C79",
+      "claim": "During the gameplay sessions, all participants tended to play moves with relatively high probability under the gameplay model (M=0.213, range=0.143\u20130.297, compared to a random-move baseline of 0.040).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find evidence for this possibility in our dataset; during the gameplay sessions, all participants tended to play moves with relatively high probability under the gameplay model (M=0.213, range=0.143\u20130.297, compared to a random-move baseline of 0.040).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analyzing participants' gameplay moves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "547991e5-ed49-4ef5-be21-83138b9218ae",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C80",
+      "claim": "There was a strong correlation between Elo and move probability measure (r=0.40, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a strong correlation between Elo and this move probability measure (r=0.40, p<0.001), showing that stronger players are more aligned with our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analyzing gameplay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "a1ee26a5-bae7-4dc7-a0aa-e42e9253db13",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C81",
+      "claim": "Stronger players are more aligned with the gameplay model.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a strong correlation between Elo and this move probability measure (r=0.40, p<0.001), showing that stronger players are more aligned with our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "2d543885-4cb2-482e-af9a-12cb8f702e5b",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C82",
+      "claim": "Eye-tracking data was collected during the memory task on each day for the in-lab subset of participants.",
+      "claim_type": "EXPLICIT",
+      "source": "For the in-lab subset of participants, eye-tracking data was collected during the memory task on each day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "5669d97c-a0cf-4ac6-b3b8-202972b918bd",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C83",
+      "claim": "Binocular eye movement was recorded using EyeLink 1000 plus at 1000 Hz recording frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded binocular eye movement using EyeLink 1000 plus at 1000 Hz recording frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the eye-tracking equipment and settings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "7f98279c-feda-4a45-b5a3-a5ec025c9606",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C84",
+      "claim": "The observed mediation effect is primarily driven by individual differences rather than within-subject development over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with previous findings, these results suggest that the observed mediation effect is primarily driven by individual differences rather than within-subject development over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Bayesian mixed-effects model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "3258a595-bd75-491f-966a-84b67024b7bf",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C85",
+      "claim": "Sherman and Turk-Browne, 2020 showed that making predictions does not benefit memory for the upcoming item and impairs the encoding of the current item.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, Sherman and Turk-Browne, 2020 showed that making predictions does not benefit memory for the upcoming item and impairs the encoding of the current item, which is inconsistent with our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "971eb337-bf43-4d60-bc30-3f03924635d3",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C86",
+      "claim": "The explicit schematic predictions in the current study that are based on rules and progression toward goal states might rely on a different network such as the medial prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the explicit schematic predictions in our study that are based on rules and progression toward goal states might rely on a different network such as the medial prefrontal cortex (Bonasia et al., 2018; Robin and Moscovitch, 2017; van Kesteren et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to prior research on neural mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "641763c1-4902-47ad-be04-20dd87a4d858",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C87",
+      "claim": "Potts and Shanks, 2014 demonstrated a benefit even for minimal predictions when predictions are based on random guessing and are wrong almost all the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Potts and Shanks, 2014 demonstrated a benefit even for minimal predictions when predictions are based on random guessing and are wrong almost all the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "59bc9f20-ed82-463e-8d42-211aff4be46b",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C88",
+      "claim": "Chess experts' memory advantage was primarily driven by very high accuracy for schema-consistent (legitimate) boards.",
+      "claim_type": "EXPLICIT",
+      "source": "Expertise effects that partially extend to non-schematic situations have been previously observed; although chess experts' memory advantage was primarily driven by very high accuracy for schema-consistent (legitimate) boards in Gobet and Waters, 2003, experts also exhibited memory for random boards that was better than that of weaker players.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research on chess expertise.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "336b1837-9b8e-449b-8ab2-a5516b6cc41e",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C89",
+      "claim": "Chess experts exhibited memory for random boards that was better than that of weaker players.",
+      "claim_type": "EXPLICIT",
+      "source": "Expertise effects that partially extend to non-schematic situations have been previously observed; although chess experts' memory advantage was primarily driven by very high accuracy for schema-consistent (legitimate) boards in Gobet and Waters, 2003, experts also exhibited memory for random boards that was better than that of weaker players.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research on chess expertise.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "22c173cc-430e-444d-bf57-80cd24e10dd7",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C90",
+      "claim": "Experts may be able to devote fewer attentional resources to schematic moves, freeing up additional resources to handle more unusual moves.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that experts may be able to devote fewer attentional resources to schematic moves, freeing up additional resources to handle more unusual moves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "297fcc8a-65bb-48b0-9068-517ead5327ea",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C91",
+      "claim": "Participants in the study may have developed an effortful strategy to remember schema-inconsistent moves (such as switching to a shape-based encoding for these moves).",
+      "claim_type": "EXPLICIT",
+      "source": "Participants in our study may have also developed an effortful strategy to remember schema-inconsistent moves (such as switching to a shape-based encoding for these moves), consistent with the longer reaction times observed for low-probability moves in later sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about participant strategies, supported by observed reaction time patterns.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "4203269d-fa87-4a88-9fff-ba4d7908acfe",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C92",
+      "claim": "Participants spontaneously exhibited predictive eye movements consistent with the game schema, without any explicit prediction demands.",
+      "claim_type": "EXPLICIT",
+      "source": "The eye-tracking study showed that participants spontaneously exhibited predictive eye movements consistent with the game schema, without any explicit prediction demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the eye-tracking findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "e1d55f34-df76-476c-835e-89e571a52d9c",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C93",
+      "claim": "Didierjean and Marm\u00e8che, 2005 showed automatic predictive representations in basketball experts.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with earlier work showing automatic predictive representations in basketball experts (Didierjean and Marm\u00e8che, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "c0d88b7d-e00c-4da5-8939-058323115ae3",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C94",
+      "claim": "Schema-based predictions were associated with improved memory at the level of participants and the level of individual moves.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that schema-based predictions were associated with improved memory (at the level of participants and the level of individual moves) and that these encoding-time predictions provide a mechanism for the impact of schema quality on memory performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings from the eye-tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "9aabe762-1e60-47d4-822b-2679fe1f5826",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C95",
+      "claim": "Encoding-time predictions provide a mechanism for the impact of schema quality on memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that schema-based predictions were associated with improved memory (at the level of participants and the level of individual moves) and that these encoding-time predictions provide a mechanism for the impact of schema quality on memory performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mediation analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "925c753f-7103-42af-b00f-7624187d5409",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C96",
+      "claim": "The biggest increase in prediction occurred between sessions one and two.",
+      "claim_type": "IMPLICIT",
+      "source": "Second, the biggest increase in prediction occurred between sessions one and two, but the session one memory-task data cannot be included in this prediction model since participants have not yet played the game (and we therefore cannot estimate their Elo).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discussion of why within-participant effects were not detected.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "a5878f8f-2426-4454-8b0a-108633c63003",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C97",
+      "claim": "The session-level analysis provided the novel insight that the memory advantage for more-expert players may be driven by superior predictive processes during encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the lack of within-subject effect, the session-level analysis provided the novel insight that the memory advantage for more-expert players may be driven by superior predictive processes during encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key insight from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f3f3ea30-0630-4400-af9d-a1774f8628c4",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C98",
+      "claim": "The implicit learning of arbitrary statistical dependencies between image categories in Sherman and Turk-Browne, 2020 engages a predictive process that relies on the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that their study (in which participants implicitly learned arbitrary statistical dependencies between image categories presented in a continuous stream) engages a predictive process that relies on the hippocampus (Schapiro et al., 2017), creating interference between prediction and encoding processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about neural mechanisms supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "18d0fc9d-b7f3-4139-82c5-87e916b61f66",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "claim_id": "C99",
+      "claim": "Four-in-a-row is an exciting testbed for future studies of the cognitive and neural mechanisms of schema development and its impact on episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes four-in-a-row an exciting testbed for future studies of the cognitive and neural mechanisms of schema development and its impact on episodic memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion about the value of the paradigm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "03b29382-72c3-4226-84da-0d525dbcc6c5",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Participants' memory recall accuracy and gameplay ability (measured by Elo rating) both improved significantly across six training sessions. Recall accuracy increased from 61.6% in session 1 to 69.5% in session 6 (\u03b2=0.015, p=0.003), while Elo ratings also showed significant improvement (\u03b2=24.92, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 provide converging statistical evidence from mixed-effects models demonstrating significant improvements in both memory and gameplay over sessions. The data are appropriately analyzed with random slopes for participants, and the reported statistics support the conclusion of improvement over time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "f3669633-8af3-476e-9bf7-b099c5b742a5",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Memory improvement was driven by enhanced recall of schema-consistent moves. Initially (session 1), there was no relationship between move probability and recall (\u03b2=-0.031, p=0.07), but in sessions 2-6, schema-consistent moves were significantly more likely to be remembered (all p<0.001), with a significant interaction between move probability and session (\u03b2=0.035, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 provide robust statistical evidence from mixed-effects logistic regression showing the emergence of schema-based memory benefits. The progression from no effect in session 1 to significant effects in later sessions, combined with the significant interaction term, strongly supports the interpretation that schema development drives selective memory improvement for schema-consistent information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "e0ad5a6b-7f24-4a75-81aa-592eb667577b",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Higher Elo ratings were correlated with better memory performance in the following session (r=0.298, p<0.001), but this relationship was driven by individual differences rather than within-participant improvements, as the within-participant effect was not significant (\u03b2=0.012, p=0.242).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 appropriately distinguish between-participant and within-participant effects using mixed-effects modeling with per-participant slopes. The statistical evidence clearly shows that the Elo-memory relationship reflects stable individual differences in schema quality rather than dynamic within-person changes, which is an important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "38a62d05-7c12-485e-8944-7abf37732d60",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Reaction times during recall showed a similar pattern to accuracy: initially no relationship with move probability (\u03b2=-30.5, p=0.329), but faster responses for schema-consistent moves in sessions 2-6 (all p<0.001), with a significant interaction between move probability and session (\u03b2=-71.06, p=0.010).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 provide converging evidence from reaction time data that parallels the accuracy findings. The mixed-effects linear regression appropriately models the data, and the significant interaction term demonstrates that schema development affects both the accuracy and speed of memory retrieval for schema-consistent information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "481eba48-7d85-4bb0-add6-452f4d4fed8d",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The proportion of schema-consistent mistakes increased significantly over the first 4 sessions (\u03b2=0.032, p<0.001), but this effect weakened in sessions 5-6, with significantly weaker effects at session 5 for both schema-consistent mistakes (t=-2.51, p=0.02) and the relationship between recall accuracy and move probability (t=-3.24, p=0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 document an interesting non-monotonic pattern where schema-based biases in errors increase initially but then plateau or decrease. The statistical evidence supports this pattern, though the interpretation (C90-C91) that participants may develop compensatory strategies for schema-inconsistent moves remains speculative and would benefit from additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "2bbe8ab0-8bd2-4cbb-bae3-baaa66c7fd16",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Memory for sequences ending in a win state was significantly better in sessions 2-6 (t=6.67, p<0.001), but in session 1 (before learning game rules), memory for winning sequences was marginally worse (t=-2.01, p=0.052).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 provide evidence that schema-related features (winning states) affect memory only after schema acquisition. The reversal from session 1 to later sessions supports the interpretation that this is a schema-driven effect rather than a low-level perceptual effect, though the session 1 effect is only marginally significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "7d90006d-9c43-4cc6-aad0-533507ae2886",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Exact move sequence repetition between gameplay and memory tasks was very rare (mean=1.0 repeats, SD=1.67 out of >1000 moves), and purely schema-based guessing achieved only 13.39% accuracy compared to participants' 65.91% average accuracy, ruling out simple episodic repetition or pure guessing strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 provide important control analyses demonstrating that the observed effects cannot be explained by simple repetition priming or schema-based guessing alone. The simulation showing that schema-based guessing achieves much lower accuracy than participants effectively rules out this alternative explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "3796ca02-1651-4929-907f-cb72bf690648",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Predictive eye movements (measured by the prediction coefficient) increased significantly across training sessions (\u03b2=0.009, p<0.001), indicating that participants' eye movements became more aligned with schema-based predictions of upcoming moves as their schema developed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide clear statistical evidence from mixed-effects modeling that predictive eye movements increase with training. The eye movement regression model (described in methods and Figure 4) appropriately decomposes fixations into different strategic components, and the prediction coefficient specifically captures schema-based anticipatory looking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "a87c281f-1017-4d8c-943c-36005be3afd6",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Better players (higher Elo) exhibited more predictive eye movements in the subsequent memory session (r=0.33, p=0.002), demonstrating that expertise is associated with increased schema-based prediction during encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 provides clear correlational evidence linking gameplay expertise to predictive eye movements. The session-by-session analysis appropriately accounts for temporal structure, and the significant correlation supports the interpretation that better schemas enable more sophisticated predictive processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "299c8994-b176-4a49-b695-c5390081fade",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Memory sessions with higher levels of predictive eye movements showed better reconstruction accuracy (r=0.40, p<0.001), despite no explicit instruction to make predictions during encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 establishes a key link between spontaneous predictive eye movements and memory performance. The correlation is robust and the observation that predictions occur without explicit instruction strengthens the interpretation that schema-based prediction is an automatic encoding mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "26199c06-cde5-4467-ba90-d7087de2bfdf",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mediation analysis revealed that the effect of expertise (Elo) on memory accuracy is partially mediated by predictive eye movements during encoding (indirect effect=0.10, 95% CI=[0.03, 0.19], p=0.006). The direct effect of Elo on memory remained significant after including prediction (\u03b2=0.24, p=0.03), indicating additional mechanisms. This mediation effect was driven by individual differences rather than within-subject changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 provide a complete mediation analysis with appropriate bootstrapping procedures. The partial mediation (significant indirect and direct effects) is appropriately interpreted as indicating that prediction is one mechanism among others. Claim C84's finding that effects are driven by individual differences rather than within-subject changes is supported by Bayesian mixed-effects modeling, though this limits causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "7fa71b61-f408-48e9-b952-705d4363c395",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Move-level analysis showed that both move probability (\u03b2=0.083, p<0.001) and prediction coefficient before the move (\u03b2=0.508, p=0.001) independently predicted subsequent memory, with no interaction (\u03b2=0.024, p=0.693), indicating that making schema-consistent predictions benefits memory independent of the move's schema-consistency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 provide fine-grained move-level evidence that prediction during encoding benefits memory beyond the schema-consistency of the material itself. The logistic regression appropriately models binary memory outcomes, and the lack of interaction supports the interpretation that prediction and schema-consistency have independent effects on memory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "929c6df5-47d8-44b4-9017-5b09d413a227",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Model-free measures showed that making confident predictions (focused fixations on specific empty squares) was associated with better memory (\u03b2=0.375, p<0.001), while unexpected/surprising moves (where the actual move appeared in a location with little fixation) were more poorly remembered (\u03b2=-0.015, p=0.014).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 provide converging evidence using model-free measures that do not depend on the gameplay model. The prediction confidence and surprise measures are well-defined and the statistical evidence supports both effects, strengthening the overall conclusion about the role of prediction in memory encoding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "85411404-0edb-4152-9fdd-7f12da9945c1",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The linear feature-based gameplay model successfully captured near-optimal play, with all participants playing moves with relatively high probability under the model (M=0.213, range=0.143-0.297 vs. random baseline=0.040), and stronger players showing greater alignment with the model (r=0.40, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 validate the gameplay model by showing that participants' actual moves align with model predictions, and this alignment increases with expertise. This is crucial for justifying the use of model-derived move probabilities as measures of schema-consistency throughout the paper. The validation is appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "8a470db8-198d-4ac9-b638-2a201157da3a",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The experimental design successfully ensured participants started without a schema, as confirmed by post-task questionnaires showing most participants did not suspect the stimuli were from a game in session 1 (14/19 online, 13/16 in-person), and participants acquired the schema over several hours of practice as evidenced by gameplay improvements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C76 establish the critical baseline condition for studying schema development. The questionnaire data support that participants lacked initial schema knowledge, and the observed improvements in gameplay (C29-C31) demonstrate schema acquisition. This design feature is essential for the longitudinal interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study employed a longitudinal design with 35 participants (19 online, 16 in-lab with eye-tracking) completing six sessions over ~2 weeks (mean interval=2.15 days). Eye-tracking data were collected at 1000 Hz using EyeLink 1000 plus for the in-lab subset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 and C82-C83 describe the methodological details of the study. The sample size is adequate for the analyses performed, the longitudinal design is appropriate for studying schema development, and the eye-tracking methodology is standard and well-described. The combination of online and in-lab samples strengthens generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "314b7a5a-b546-42ce-a2fb-8e001497d838",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Four-in-a-row is a two-player game (generalization of tic-tac-toe) on a 4\u00d79 board where players compete to connect four pieces in a row. The game's spatial structure allows eye movements to index predictions, and stimuli were generated using an AI agent with Elo similar to participants' initial playing strength, with 10/30 sequences per session ending in wins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19, C23, C77-C78 describe the task and stimulus properties. The game choice is well-justified for studying schema development (complex enough to require learning, simple enough to model), and the stimulus generation procedure is appropriate. The spatial structure enabling eye-tracking of predictions is a key methodological advantage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The introduction establishes theoretical background from prior literature: prediction is a top-down process generating expectations based on prior experience; schemas are knowledge structures abstracted from multiple episodes; schemas improve memory through both encoding and retrieval processes; and domain experts automatically engage predictive processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C16 and C24 accurately summarize established findings from prior literature with appropriate citations. These background claims provide the theoretical foundation for the current study's hypotheses and are well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "9fa8ef25-f490-42bc-a34f-ff0e951a862c",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study tested three main hypotheses: (1) schema quality should relate to memory performance, (2) eye movements should become more anticipatory with experience, and (3) predictive eye movements should mediate the relationship between schema quality and memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 state the study's a priori hypotheses, all of which were subsequently supported by the data (as documented in other result groups). The hypotheses are clearly stated, theoretically motivated, and appropriately tested with the experimental design and analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "9801a003-8ed2-4842-ad56-f2e38dbe2085",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings relative to prior work, noting apparent inconsistencies with Sherman & Turk-Browne (2020) who found prediction impairs encoding, and proposing that different neural mechanisms (hippocampus vs. mPFC) may underlie implicit statistical learning versus explicit schema-based prediction. The discussion also addresses expertise effects extending to non-schematic situations and potential compensatory strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C91, C93, and C98 provide theoretical interpretations and comparisons to prior work. While the citations are accurate and the proposed mechanistic distinctions are plausible, these remain speculative explanations for observed discrepancies. The neural mechanism proposals (C86, C98) are reasonable hypotheses but lack direct empirical support in the current study. The compensatory strategy explanation (C90-C91) for the session 5-6 attenuation is plausible but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "88f8e8ba-785c-42d1-93f3-dcb1ee1c7d15",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study demonstrates that participants spontaneously exhibited schema-consistent predictive eye movements without explicit instruction, and these predictions provide a mechanism linking schema quality to memory performance. The effects were primarily driven by individual differences, with the largest prediction increase occurring between sessions 1-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C97 summarize key findings and their interpretation. The evidence for spontaneous predictive eye movements (C92) is well-documented in the eye-tracking data. The mechanistic interpretation (C94-C95) is supported by the mediation analysis. The observation about individual differences (C96-C97) appropriately acknowledges limitations in detecting within-subject effects while emphasizing the novel insight about expertise-related differences in encoding strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    },
+    {
+      "id": "20c4b78b-446a-418c-87e9-1ff2fe2d61a3",
+      "content_id": "e160639c-64e2-409c-b0e6-605ca8da20f3",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The authors conclude that four-in-a-row is a valuable paradigm for future studies of schema development and episodic memory, offering complexity beyond typical artificial schemas while remaining tractable for laboratory study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is a reasonable conclusion given the successful demonstration of schema development effects, the ability to model the schema quantitatively, and the integration of behavioral and eye-tracking measures. The paradigm successfully bridges the gap between overly simple artificial sequences and intractably complex real-world schemas.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:01:08.753636Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bddf9f86-5301-46e5-856a-498e01aa69e2",
+      "result_id": "03b29382-72c3-4226-84da-0d525dbcc6c5"
+    },
+    {
+      "claim_id": "db3d10c6-7991-4998-8903-83392360f205",
+      "result_id": "03b29382-72c3-4226-84da-0d525dbcc6c5"
+    },
+    {
+      "claim_id": "0b428667-dc11-4ca6-a172-bd9d859b22c1",
+      "result_id": "03b29382-72c3-4226-84da-0d525dbcc6c5"
+    },
+    {
+      "claim_id": "be3cea8d-e7f6-4e84-bbc8-538bd41c2bc9",
+      "result_id": "03b29382-72c3-4226-84da-0d525dbcc6c5"
+    },
+    {
+      "claim_id": "bce38da2-fa6d-4287-a5f8-519446016d99",
+      "result_id": "03b29382-72c3-4226-84da-0d525dbcc6c5"
+    },
+    {
+      "claim_id": "f0e1acda-1fb3-483d-92e6-dc69a8fc27d6",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "03094a93-83d2-47d6-8250-87f154c2c193",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "c24c5f4d-673e-4e4a-baf1-e5bf21749f01",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "62b041ff-f132-4abf-8f6f-f9707dd8e1e5",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "2e9b841c-696e-4ab5-abfe-8344713a5c66",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "bc205e8c-cf06-45e1-b480-bf58b47edfe0",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "10a776b3-0963-484a-83c4-876c10d9b66e",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "dd5570ff-6f89-4bd3-ba7e-71be53f02c52",
+      "result_id": "f3669633-8af3-476e-9bf7-b099c5b742a5"
+    },
+    {
+      "claim_id": "db5dcb52-10dd-466d-b451-d1b322c438c8",
+      "result_id": "e0ad5a6b-7f24-4a75-81aa-592eb667577b"
+    },
+    {
+      "claim_id": "8dc4bb85-38fa-4c50-82d9-9320f2b645a1",
+      "result_id": "e0ad5a6b-7f24-4a75-81aa-592eb667577b"
+    },
+    {
+      "claim_id": "e9e1fba3-0483-49ce-91e9-19d871141d85",
+      "result_id": "e0ad5a6b-7f24-4a75-81aa-592eb667577b"
+    },
+    {
+      "claim_id": "96eb8eab-33ec-43f5-8fbb-e1ca41198ab8",
+      "result_id": "38a62d05-7c12-485e-8944-7abf37732d60"
+    },
+    {
+      "claim_id": "55daa002-5034-4e98-85f1-92b37209a20d",
+      "result_id": "38a62d05-7c12-485e-8944-7abf37732d60"
+    },
+    {
+      "claim_id": "fd800dfd-3606-4c31-9004-bbf27b307ecd",
+      "result_id": "38a62d05-7c12-485e-8944-7abf37732d60"
+    },
+    {
+      "claim_id": "f5c8b690-2431-47d8-b6a5-18edd32e942f",
+      "result_id": "38a62d05-7c12-485e-8944-7abf37732d60"
+    },
+    {
+      "claim_id": "5f0df866-0362-452b-86ac-e7cc44aa59b5",
+      "result_id": "38a62d05-7c12-485e-8944-7abf37732d60"
+    },
+    {
+      "claim_id": "9133a97f-cb76-4268-b264-ebbf0fdb6e39",
+      "result_id": "481eba48-7d85-4bb0-add6-452f4d4fed8d"
+    },
+    {
+      "claim_id": "88e375de-cc80-4b04-a83b-b0484f491a1d",
+      "result_id": "481eba48-7d85-4bb0-add6-452f4d4fed8d"
+    },
+    {
+      "claim_id": "e01cef15-5b06-468e-83a7-0fc5fdb73842",
+      "result_id": "481eba48-7d85-4bb0-add6-452f4d4fed8d"
+    },
+    {
+      "claim_id": "a850b6b4-f83b-4eac-867e-b6497883a69f",
+      "result_id": "481eba48-7d85-4bb0-add6-452f4d4fed8d"
+    },
+    {
+      "claim_id": "eb07fb72-5e76-4270-be8a-574d6305f46f",
+      "result_id": "2bbe8ab0-8bd2-4cbb-bae3-baaa66c7fd16"
+    },
+    {
+      "claim_id": "cc4e84ca-36cc-4ebd-b34a-8a215348973d",
+      "result_id": "2bbe8ab0-8bd2-4cbb-bae3-baaa66c7fd16"
+    },
+    {
+      "claim_id": "aef75fba-3506-4de4-a60a-dbd52c197ed6",
+      "result_id": "7d90006d-9c43-4cc6-aad0-533507ae2886"
+    },
+    {
+      "claim_id": "d85112dd-0e6b-476e-a8b4-cb7141c891f6",
+      "result_id": "7d90006d-9c43-4cc6-aad0-533507ae2886"
+    },
+    {
+      "claim_id": "b4bf6772-0b9e-4136-8c36-6c81b3e7ca2b",
+      "result_id": "7d90006d-9c43-4cc6-aad0-533507ae2886"
+    },
+    {
+      "claim_id": "ae5e46b5-4016-473b-ba75-12430efd2878",
+      "result_id": "3796ca02-1651-4929-907f-cb72bf690648"
+    },
+    {
+      "claim_id": "09af680c-d038-4d20-8d5b-9685a3905308",
+      "result_id": "3796ca02-1651-4929-907f-cb72bf690648"
+    },
+    {
+      "claim_id": "430ab166-3140-4583-a6d7-8e91b4a4cced",
+      "result_id": "3796ca02-1651-4929-907f-cb72bf690648"
+    },
+    {
+      "claim_id": "f4e2715d-78e3-4924-a1b4-0cc7591c6a02",
+      "result_id": "a87c281f-1017-4d8c-943c-36005be3afd6"
+    },
+    {
+      "claim_id": "f252786a-79ef-41c1-b116-c2a42b470253",
+      "result_id": "a87c281f-1017-4d8c-943c-36005be3afd6"
+    },
+    {
+      "claim_id": "df82006a-1ab2-4566-83bd-c6f0574dac56",
+      "result_id": "299c8994-b176-4a49-b695-c5390081fade"
+    },
+    {
+      "claim_id": "f2d9efc6-21d4-4408-9153-9023c1929903",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "b79f59b2-331f-42e5-95c7-aca092b92f66",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "fd42e6bd-896a-45f8-955d-a01add725157",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "64bfc5e4-de2a-4d22-b4ef-e9dda248e180",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "a8bf9c5e-50b1-45bf-b300-6cebb9813e28",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "7a207e4e-3f52-411e-a912-b91ec7b4ec7a",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "3a212885-5d35-43a5-9c61-37dd81d0417a",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "7f98279c-feda-4a45-b5a3-a5ec025c9606",
+      "result_id": "26199c06-cde5-4467-ba90-d7087de2bfdf"
+    },
+    {
+      "claim_id": "aeafeeec-a960-4b42-b7a0-35cf17873644",
+      "result_id": "7fa71b61-f408-48e9-b952-705d4363c395"
+    },
+    {
+      "claim_id": "f2bc869a-ad97-4a09-b170-396e130bc92c",
+      "result_id": "7fa71b61-f408-48e9-b952-705d4363c395"
+    },
+    {
+      "claim_id": "fcb8ef4d-3cb7-409f-9bcd-ca59f2efc3a0",
+      "result_id": "7fa71b61-f408-48e9-b952-705d4363c395"
+    },
+    {
+      "claim_id": "7deb0b00-b279-45ad-bed9-f92ecc97d182",
+      "result_id": "7fa71b61-f408-48e9-b952-705d4363c395"
+    },
+    {
+      "claim_id": "b59c5dbd-6cbb-4b51-8c9e-c27f8e0a1150",
+      "result_id": "929c6df5-47d8-44b4-9017-5b09d413a227"
+    },
+    {
+      "claim_id": "b35f1020-a0fd-4621-a97a-20d1ef99e4a8",
+      "result_id": "929c6df5-47d8-44b4-9017-5b09d413a227"
+    },
+    {
+      "claim_id": "b6a35309-a274-4ae3-9f40-cb539033f563",
+      "result_id": "85411404-0edb-4152-9fdd-7f12da9945c1"
+    },
+    {
+      "claim_id": "7019d184-3e6e-4df1-9da8-d3feb71fe9e7",
+      "result_id": "85411404-0edb-4152-9fdd-7f12da9945c1"
+    },
+    {
+      "claim_id": "547991e5-ed49-4ef5-be21-83138b9218ae",
+      "result_id": "85411404-0edb-4152-9fdd-7f12da9945c1"
+    },
+    {
+      "claim_id": "a1ee26a5-bae7-4dc7-a0aa-e42e9253db13",
+      "result_id": "85411404-0edb-4152-9fdd-7f12da9945c1"
+    },
+    {
+      "claim_id": "9a938539-13ce-4b83-bbb3-85ceb8dca468",
+      "result_id": "8a470db8-198d-4ac9-b638-2a201157da3a"
+    },
+    {
+      "claim_id": "47d607d8-8eac-45df-8bd0-11cc3c8c203b",
+      "result_id": "8a470db8-198d-4ac9-b638-2a201157da3a"
+    },
+    {
+      "claim_id": "bb6a53ff-4c80-4daf-b67a-0e2581391859",
+      "result_id": "8a470db8-198d-4ac9-b638-2a201157da3a"
+    },
+    {
+      "claim_id": "b5728f75-1a0a-401d-80c0-690248240ded",
+      "result_id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f"
+    },
+    {
+      "claim_id": "d01ba05c-466b-4747-8890-3073e6c49ab0",
+      "result_id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f"
+    },
+    {
+      "claim_id": "6a718fc5-e477-41be-bfb5-30be6c22b41c",
+      "result_id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f"
+    },
+    {
+      "claim_id": "cc84a4e6-f15e-40a2-b614-89362b3ec566",
+      "result_id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f"
+    },
+    {
+      "claim_id": "30d90a6c-05f3-43d3-aec3-5054c7f08484",
+      "result_id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f"
+    },
+    {
+      "claim_id": "2d543885-4cb2-482e-af9a-12cb8f702e5b",
+      "result_id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f"
+    },
+    {
+      "claim_id": "5669d97c-a0cf-4ac6-b3b8-202972b918bd",
+      "result_id": "056d0e43-e03a-46f2-b2e4-a0fcdc9a690f"
+    },
+    {
+      "claim_id": "b10cfffe-279f-4b72-8446-afe9c444a2b5",
+      "result_id": "314b7a5a-b546-42ce-a2fb-8e001497d838"
+    },
+    {
+      "claim_id": "f090cd46-7d28-4d6b-9af7-2c9023d41963",
+      "result_id": "314b7a5a-b546-42ce-a2fb-8e001497d838"
+    },
+    {
+      "claim_id": "33e4eaaf-a964-449c-b0e8-12c3dc725398",
+      "result_id": "314b7a5a-b546-42ce-a2fb-8e001497d838"
+    },
+    {
+      "claim_id": "1712604c-5275-4921-a882-b6d333b039d2",
+      "result_id": "314b7a5a-b546-42ce-a2fb-8e001497d838"
+    },
+    {
+      "claim_id": "8d7741e7-7b4a-47b6-a69a-c2fb6f16cd74",
+      "result_id": "314b7a5a-b546-42ce-a2fb-8e001497d838"
+    },
+    {
+      "claim_id": "67a8bc29-fca4-41c2-84f1-88a704c63e91",
+      "result_id": "314b7a5a-b546-42ce-a2fb-8e001497d838"
+    },
+    {
+      "claim_id": "8dc70557-00cb-4f54-bd95-0ed858798998",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "f0c06636-cdf6-4305-be4e-293129c18904",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "ad15933d-9162-456c-abbc-e9a04034b5ca",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "676b08da-7a94-48c9-bf1e-6b966c618d1c",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "e1f8f41c-8f51-4807-abb5-a24949b0ca69",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "d4a30d79-abf0-47f5-9f37-628b46038a72",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "0b8a3d7d-2dc2-4679-ba2f-8bdaa92fe4d5",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "79943f64-030f-43bc-9daa-327d1c028770",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "98d2f95c-0035-4e27-80a8-a4874ee25981",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "fe646736-7f50-4d01-968a-6be53fa09786",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "b2874295-f511-48db-8a2c-baff3d065ce3",
+      "result_id": "14b50c0e-122f-44ed-9fd6-7e21ee4d6f1f"
+    },
+    {
+      "claim_id": "9a71ec08-d098-4048-b0fb-bf2aa8361b2e",
+      "result_id": "9fa8ef25-f490-42bc-a34f-ff0e951a862c"
+    },
+    {
+      "claim_id": "cd40e23f-39c2-47c9-b8f2-d02de53c0309",
+      "result_id": "9fa8ef25-f490-42bc-a34f-ff0e951a862c"
+    },
+    {
+      "claim_id": "84d78318-9b50-464d-9cf5-c1f10546bb19",
+      "result_id": "9fa8ef25-f490-42bc-a34f-ff0e951a862c"
+    },
+    {
+      "claim_id": "3258a595-bd75-491f-966a-84b67024b7bf",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "971eb337-bf43-4d60-bc30-3f03924635d3",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "641763c1-4902-47ad-be04-20dd87a4d858",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "59bc9f20-ed82-463e-8d42-211aff4be46b",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "336b1837-9b8e-449b-8ab2-a5516b6cc41e",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "22c173cc-430e-444d-bf57-80cd24e10dd7",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "297fcc8a-65bb-48b0-9068-517ead5327ea",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "e1d55f34-df76-476c-835e-89e571a52d9c",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "f3f3ea30-0630-4400-af9d-a1774f8628c4",
+      "result_id": "9801a003-8ed2-4842-ad56-f2e38dbe2085"
+    },
+    {
+      "claim_id": "4203269d-fa87-4a88-9fff-ba4d7908acfe",
+      "result_id": "88f8e8ba-785c-42d1-93f3-dcb1ee1c7d15"
+    },
+    {
+      "claim_id": "c0d88b7d-e00c-4da5-8939-058323115ae3",
+      "result_id": "88f8e8ba-785c-42d1-93f3-dcb1ee1c7d15"
+    },
+    {
+      "claim_id": "9aabe762-1e60-47d4-822b-2679fe1f5826",
+      "result_id": "88f8e8ba-785c-42d1-93f3-dcb1ee1c7d15"
+    },
+    {
+      "claim_id": "925c753f-7103-42af-b00f-7624187d5409",
+      "result_id": "88f8e8ba-785c-42d1-93f3-dcb1ee1c7d15"
+    },
+    {
+      "claim_id": "a5878f8f-2426-4454-8b0a-108633c63003",
+      "result_id": "88f8e8ba-785c-42d1-93f3-dcb1ee1c7d15"
+    },
+    {
+      "claim_id": "18d0fc9d-b7f3-4139-82c5-87e916b61f66",
+      "result_id": "20c4b78b-446a-418c-87e9-1ff2fe2d61a3"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C89"
+    ],
+    "result": "CD55-null cultured red blood cells (cRBCs) were successfully generated from primary human HSPCs using CRISPR-Cas9 genome editing with ribonucleoprotein (RNP) complexes. A single sgRNA targeting exon 1 resulted in ~70% CD55-null cRBCs, while dual sgRNAs targeting exons 1 and 2 increased knockout efficiency to ~90%. The CD55-null cells proliferated ~10,000-fold with >90% enucleation rate, demonstrating that CD55 is not required for erythroid differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C89 are well-supported by experimental data shown in Figure 1A-B and Figure 1\u2014figure supplement 1. The CRISPR-Cas9 methodology is appropriately cited (Hendel et al., 2015), knockout efficiency is quantified by flow cytometry, and differentiation metrics (proliferation and enucleation) are documented. The conclusion that CD55 is not required for differentiation is appropriately inferred from equivalent differentiation in knockout and control cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C90",
+      "C91"
+    ],
+    "result": "CD55 is critical for P. falciparum invasion of fully mature erythrocytes, with the requirement for CD55 increasing significantly as cRBCs mature. Invasion into day 18 CD55-CRISPR cRBCs was reduced by ~40%, but when CD71-negative (mature) cRBCs were isolated, invasion was reduced by ~75%. Immunofluorescence confirmed that invasion was restricted to CD55-positive cells (22.5% parasitemia) versus CD55-null cells (<0.5% parasitemia). This demonstrates that terminal red cell maturation modifies the requirement for CD55 during invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 and C90-C91 are strongly supported by experimental data in Figure 1C-G and Figure 1D. The maturation-dependent phenotype is well-documented with CD71 expression analysis and reticulocyte staining. The invasion restriction to CD55-positive cells provides compelling evidence. The hypothesis about maturation effects (C39, C90) is appropriately supported by citations about protein expression changes during reticulocyte maturation. Statistical significance is demonstrated with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C92",
+      "C93"
+    ],
+    "result": "Anti-CD55 antibodies inhibit P. falciparum invasion in a dose-dependent manner. Combined monoclonal antibodies (BRIC 230, BRIC 110, BRIC 216) and polyclonal anti-CD55 antibody both reduced parasitemia by ~40% at maximum concentrations. Importantly, anti-CD55 antibody blocked both sialic-acid-dependent and -independent invasion pathways, demonstrating that CD55 acts distinctly from CR1 and other strain-specific receptors. Monovalent Fab fragments recapitulated the inhibitory activity, confirming the effect is not due to antibody crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 and C92-C93 are well-supported by experimental data in Figure 2A-D and Figure 2\u2014figure supplement 1. The dose-response relationships are clearly demonstrated, and the use of neuraminidase-treated cells provides strong evidence for CD55's role in both sialic-acid-dependent and -independent pathways. The Fab fragment experiment (C47) effectively controls for crosslinking artifacts. The comparison to CR1 is appropriately cited (Spadafora et al., 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C94"
+    ],
+    "result": "Live cell imaging revealed that anti-CD55 antibody specifically inhibits merozoite internalization without preventing initial contact. In the presence of isotype control, 15% of merozoites that contacted RBCs invaded successfully (53/345), compared to only 6.7% (21/312) with anti-CD55 antibody. The number of invasion events per schizont rupture was reduced by half, but the efficiency of merozoite-RBC contact was similar between conditions, demonstrating that CD55 is specifically required for parasite entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C94 are strongly supported by live cell imaging data in Figure 3A-D and Videos 1-2. The quantification of invasion efficiency, invasion events per egress, and contact efficiency provides clear evidence that CD55 blockade inhibits entry but not initial contact. Sample sizes are adequate (>300 merozoites per condition), and the statistical significance is appropriately assessed. This represents a novel finding demonstrating CD55's specific role in internalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "For merozoites that successfully invaded in the presence of anti-CD55 antibody, there was no difference in pre-invasion time, internalization time, or time to echinocytosis compared to isotype control. This indicates that blocking CD55 does not impact pre-invasion kinetics for merozoites that manage to invade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by data in Figure 3E-G showing no significant differences in invasion kinetics. However, this result should be interpreted cautiously as it only applies to the subset of merozoites that successfully invaded despite CD55 blockade, which may represent a biased population. The authors appropriately acknowledge this limitation in their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C95"
+    ],
+    "result": "Blocking CD55 with antibody does not substantially influence merozoite-induced RBC deformation. Deformation efficiency was slightly higher with anti-CD55 (67%) versus control (60%), but deformation duration was similar. Almost all successfully invading merozoites induced strong deformation (scores 2-3) regardless of antibody, while non-invading merozoites had lower scores. This demonstrates that CD55 exerts its effect on invasion at a downstream step after RBC deformation, functioning distinctly from receptors required for apical reorientation and deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 and C95 are well-supported by data in Figure 4A-D. The deformation scoring system is appropriately applied, and the statistical analyses are sound. The conclusion that CD55 acts downstream of deformation is appropriately inferred from the observation that deformation is not impaired by CD55 blockade while invasion is inhibited. The comparison to glycophorins and CR1 is appropriately cited (Weiss et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Live cell imaging with natural CD55-null RBCs from an Inab donor confirmed that CD55 is essential for invasion. No successful invasion events were observed in CD55-null RBCs (0/310 merozoites), compared to ~11% invasion efficiency in control RBCs (25/197). However, merozoite-RBC contact efficiency and deformation efficiency were similar between CD55-null and control RBCs, confirming that CD55 influences invasion by acting after erythrocyte deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are strongly supported by live imaging data in Figure 5A-D and Videos 6-7, as well as traditional invasion assays in Figure 5\u2014figure supplement 1. The use of natural CD55-null RBCs provides independent validation of the CRISPR results. The complete absence of invasion in CD55-null cells (0/310) is striking and well-documented. The findings are consistent with the antibody inhibition experiments, strengthening the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CD55 acts downstream of rhoptry discharge. In cytochalasin-D treated cells, ~60% of attached merozoites triggered echinocytosis in both anti-CD55 and control conditions. Merozoites also induced echinocytosis in CD55-null RBCs (17% overall frequency vs 33% in WT). RAP1 immunofluorescence showed donut or C-shape staining in merozoites attached to both WT and CD55-null cells, indicating rhoptry discharge had occurred. This demonstrates that CD55 acts after release of rhoptry organelles, downstream of the PfRH5-basigin interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 and C96-C101 are well-supported by experimental data in Figure 6A-E and Videos 8-10. The echinocytosis assays with cytochalasin-D provide strong evidence that CD55 is not required for rhoptry discharge. The RAP1 immunofluorescence provides direct evidence of rhoptry secretion in CD55-null cells. The integration with prior knowledge about echinocytosis timing (C96-C101) is appropriately cited and logically sound. The lower overall echinocytosis frequency in CD55-null cells (C73) is noted but appropriately attributed to variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "CD55 is required for stability or progression of the moving junction, acting downstream of junction formation. Merozoite attachment to CD55-null RBCs was reduced by ~50%, and PfAMA1/PfRON4 colocalization at the cellular interface occurred in only ~40% of attached merozoites (vs ~85% in WT). Among merozoites with colocalized AMA1/RON4, none in CD55-null cells showed indentation indicating mid-invasion, unlike ~50% in WT cells. In contrast, the R1 peptide (which blocks junction formation) completely prevented attachment, while CD55 absence only moderately reduced it, suggesting CD55 acts after junction formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 and C102-C105 are supported by data in Figure 7A-E. The immunofluorescence analysis of AMA1/RON4 colocalization provides strong evidence for CD55's role in moving junction stability/progression. The comparison with R1 peptide is particularly informative, showing distinct phenotypes that support the proposed mechanism. However, the interpretation requires some caution as the reduced colocalization could reflect either impaired junction formation or rapid junction disassembly. The observation of RAP1 spreading in CD55-null cells (mentioned in C105) is noted but based on rare instances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "CD55 plays a critical and unique role during P. falciparum invasion of mature erythrocytes, specifically required for parasite internalization. As a host factor that acts after discharge of the parasite's rhoptry contents, CD55 plays a unique role relative to other receptors required for invasion, providing a crucial link between ligand-receptor interactions important for adhesion/deformation and effective internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 represent appropriate summary conclusions based on the collective experimental evidence from multiple approaches (CRISPR knockout, antibody inhibition, live imaging, immunofluorescence). The characterization of CD55's unique role is well-justified by demonstrating it acts after rhoptry discharge but before/during moving junction progression, which is distinct from all other known invasion receptors. The integration of findings across different experimental systems strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "High levels of other receptors important for invasion, such as basigin, may explain the reduced requirement for CD55 for P. falciparum invasion of younger, CD71-positive reticulocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 is explicitly stated as a hypothesis by the authors and is based on prior observations about protein expression changes during reticulocyte maturation (appropriately cited to Chu et al., 2018 and Malleret et al., 2013). However, no direct experimental evidence is provided to test this hypothesis, such as measuring basigin levels in CD71+ vs CD71- cells or testing invasion in cells with manipulated basigin expression. This remains speculative and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "CD55 or its interacting partners may hold potential as therapeutic targets for malaria, given that the requirement for CD55 is strain-transcendent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is speculative and represents a future direction rather than a demonstrated result. While the strain-transcendent requirement for CD55 (C27) is supported by prior work (Egan et al., 2015), no therapeutic validation experiments are presented. The potential as a therapeutic target would require additional studies including identification of CD55's parasite interaction partners, assessment of whether CD55 blockade is feasible in vivo, and evaluation of potential side effects from disrupting CD55's normal complement regulatory function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background information on malaria epidemiology, P. falciparum invasion biology, and prior identification of CD55 as a host factor. This includes the three-phase invasion model (pre-invasion, active invasion, echinocytosis), key ligand-receptor interactions (EBAs/Rhs with glycophorins/CR1, PfRH5 with basigin, PfAMA1 with RON complex), and previous findings that CD55-knockdown and CD55-null cells show reduced invasion in a strain-transcendent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 represent established background knowledge appropriately cited from the literature. These claims provide necessary context for the current study but do not represent new findings. The citations appear appropriate and the descriptions of invasion biology are consistent with the current understanding in the field. The prior identification of CD55 (C21, C25-C27) is appropriately attributed to Egan et al., 2015.",
+    "result_type": "MINOR"
+  }
+]

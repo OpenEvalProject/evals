@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SpoIVFB inhibition requires specific conserved residues (N48, N61, T64) in and near the predicted transmembrane segment 2 (TMS2) of BofA. Alanine substitutions at these positions strongly impair inhibition in both E. coli and B. subtilis sporulation systems, with N48A and N61A causing premature Pro-\u03c3K cleavage and mislocalization of BofA variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C66-C72 provide convergent experimental evidence from both E. coli cleavage assays (Figure 2) and B. subtilis sporulation experiments (Figure 3A) demonstrating that N48A, N61A, and T64A substitutions impair inhibition. The localization data (C74-C78, Figure 3B) provides mechanistic insight showing that N61A fails to localize properly, explaining its loss of function. The sequence conservation analysis (C55-C56) and functional data with GFP\u039427BofA (C57-C58) support the importance of TMS2 over TMS1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "BofA TMS2 occupies the SpoIVFB active site cleft based on disulfide cross-linking experiments. BofA C46 (near the middle of TMS2) forms cross-links with SpoIVFB E44C at the active site and P135C in a nearby loop, but not with V70C in the membrane-reentrant loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 present direct experimental evidence from disulfide cross-linking (Figure 4) showing specific, reversible cross-link formation between BofA C46 and SpoIVFB E44C/P135C but not V70C. The pattern of cross-linking is consistent with the hypothesis (C79) that BofA TMS2 occupies the active site cleft. The use of appropriate negative controls (Cys-less variants, DTT reversal) and testing with both MBP\u039427BofA and full-length BofA strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SpoIVFB inhibition requires both BofA and SpoIVFA in E. coli and during B. subtilis sporulation. Either inhibitory protein alone is insufficient for inhibition of Pro-\u03c3K cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 provide clear experimental evidence from pET Triplet experiments (Figure 1C) showing that either BofA or SpoIVFA alone fails to inhibit cytTM-SpoIVFB. This is supported by prior work in B. subtilis (C49, citations provided). The requirement for both proteins is demonstrated consistently across different experimental systems (truncated and full-length substrates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C100",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Inhibitory proteins block access of the substrate N-terminal Proregion to the SpoIVFB active site. Cross-linking between substrate residues near the cleavage site (V20C, K24C) and the SpoIVFB active site (E44C) or membrane-reentrant loop (V70C) is substantially reduced in the presence of BofA and SpoIVFA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104 provide time-course cross-linking data (Figure 6) showing that inhibitory proteins dramatically reduce cross-link formation between substrate N-terminal residues and SpoIVFB active site/membrane-reentrant loop. The experiments include appropriate controls (Cys-less variants) and test multiple substrate positions. The comparison between full-length BofA and MBP\u039427BofA (C98, C103-C104) provides insight into the differential roles of BofA TMS1 and TMS2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Inhibitory proteins do not prevent interaction between the substrate C-terminal region and the SpoIVFB CBS domain. Pull-down assays show co-purification of all four proteins, and cross-linking between the CBS domain (A231C) and substrate C-terminal region (A97C) is unaffected by inhibitory proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 present convergent evidence from pull-down assays (Figure 5A, Figure 5\u2014figure supplements 1-2) and cross-linking experiments (Figure 5B, Figure 5\u2014figure supplement 3) showing that inhibitory proteins do not block substrate-CBS domain interaction. While co-purification is inefficient (C88), all four proteins are detected in bound samples. The cross-linking time courses show no effect of inhibitory proteins on CBS-substrate interaction, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C124",
+      "C128",
+      "C129"
+    ],
+    "result": "A structural model of the SpoIVFB-BofA-SpoIVFA inhibition complex was built using partial homology, cross-linking constraints, and co-evolutionary coupling analysis. The model predicts that conserved BofA residues (N48, N61, T64) stabilize TMS2 and a membrane-embedded C-terminal region, and that SpoIVFA bridges BofA and SpoIVFB TMS4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C9 and C110-C113 describe a computational model constrained by experimental data. While the modeling approach is reasonable and incorporates cross-linking and co-evolutionary data, the model represents predictions (C8, C9, C113) rather than experimentally validated structures. The proposals about residue interactions (C124, C129) are speculative and require experimental validation through additional cross-linking or mutagenesis. The model is useful for hypothesis generation but its accuracy cannot be fully assessed without structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Production of BofA and SpoIVFA from pET Quartet plasmids in E. coli strongly inhibits cytTM-SpoIVFB cleavage of Pro-\u03c3K(1-127), with full-length BofA providing slightly better inhibition than GFP\u039427BofA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present quantitative cleavage data (Figure 1B) showing that pET Quartet systems with either GFP\u039427BofA or full-length BofA exhibit very little Pro-\u03c3K(1-127) cleavage compared to ~80% cleavage without inhibitory proteins. The longer exposure revealing slightly better inhibition by full-length BofA (C44) is a subtle but reproducible observation supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The E. coli heterologous system mimics aspects of the endogenous B. subtilis pathway. Addition of SpoIVB partially relieves inhibition, and an F66A substitution in cytTM-SpoIVFB partially overcomes inhibition, similar to effects observed during sporulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate that the E. coli system recapitulates key regulatory features of the B. subtilis system. The SpoIVB data (C51, Figure 1\u2014figure supplement 3) shows partial relief with active SpoIVB compared to inactive S378A variant. The F66A data (C53, Figure 1\u2014figure supplement 4) shows partial relief consistent with B. subtilis results (C52). These validations support the use of the E. coli system for mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C127"
+    ],
+    "result": "The C-terminal three residues of BofA are important for inhibition. Deletion or triple-Ala substitution of residues 85-87 in GFP\u039427BofA causes loss of SpoIVFB inhibition in E. coli, consistent with prior B. subtilis results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 provides new experimental data (Figure 2\u2014figure supplement 3A) showing that deletion or triple-Ala substitution of the C-terminal three residues impairs inhibition in E. coli. This is consistent with prior B. subtilis data (C64). The model prediction (C128) that these residues interact with SpoIVFA and SpoIVFB provides a structural rationale, though this remains to be experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "BofA TMS1 plays a minor role in inhibition by providing additional steric hindrance. Full-length BofA inhibits slightly better than GFP\u039427BofA (lacking TMS1) and forms slightly more cross-linked complex with SpoIVFB over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 present cross-linking time-course data (Figure 6\u2014figure supplement 4) showing that full-length BofA forms slightly more complex over time compared to MBP\u039427BofA. This is consistent with cleavage assays (C105) showing slightly better inhibition by full-length BofA. The interpretation that TMS1 provides additional steric hindrance (C131) is reasonable given the cross-linking data with substrate N-terminal residues and the membrane-reentrant loop. The minor role is appropriately characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C108"
+    ],
+    "result": "Full-length BofA hinders cross-linking between the cytTM-SpoIVFB interdomain linker (Y214C) and substrate N-terminal region (L41C) more than MBP\u039427BofA, suggesting BofA TMS1 interferes with substrate-linker interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 present cross-linking data (Figure 6I, Figure 6\u2014figure supplement 5) showing differential effects of full-length BofA versus MBP\u039427BofA on linker-substrate cross-linking. The pattern is similar to that observed for membrane-reentrant loop interactions, supporting the interpretation that BofA TMS1 provides additional interference with substrate positioning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The mechanism of SpoIVFB inhibition by BofA and SpoIVFA is novel compared to previously known IP regulation mechanisms, which typically involve substrate localization, initial extramembrane cleavage, or adapter proteins rather than direct active site blockade by inhibitory proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 and C35-C38 provide context from the literature showing that known IP regulation mechanisms differ from the SpoIVFB system. The comparison with S2P (C115-C116), RseP (C37), and other IPs establishes that direct active site blockade by inhibitory proteins has not been reported for IPs, though it is known for soluble proteases (C117). The novelty claim is well-supported by the experimental evidence and literature comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Activation of SpoIVFB during sporulation likely requires removal or substantial movement of inhibitory proteins to allow substrate access. The authors propose that SpoIVB cleavage of SpoIVFA initiates destabilization of the inhibition complex, followed by CtpB cleavage of BofA and eventual degradation or conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 are supported by prior literature and the current results showing that inhibitory proteins block substrate access. However, claims C138-C140 are speculative proposals about the activation mechanism that are not directly tested in this study. While the proposals are reasonable based on the structural model and known cleavage events, they require experimental validation. The distinction between degradation versus conformational change (C136, C140) remains unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The mechanisms of SpoIVFB inhibition and activation likely apply to orthologs in spore-forming bacilli that encode BofA, SpoIVFA, SpoIVB, and CtpB. Many clostridia lack recognizable BofA genes, suggesting unregulated SpoIVFB activity in these organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 are based on genomic and phylogenomic analyses from cited literature (Galperin et al., 2012; Ramos-Silva et al., 2019) combined with the mechanistic insights from this study. The inference that organisms lacking BofA have unregulated SpoIVFB (C144) is logical given the demonstrated requirement for BofA in inhibition. The evolutionary context (C146) is supported by phylogenomic analysis. However, experimental validation in other organisms would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors favor a simple steric hindrance mechanism of inhibition not involving a BofA residue acting as a zinc ligand, despite BofA C46 being a potential zinc ligand. Most BofA orthologs lack Cys at this position but have conserved Asn at position 48, whose side chain points away from the zinc ion in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 present a reasoned interpretation based on sequence conservation (C120-C121) and the structural model (C122). The argument that N48 points away from the zinc ion and is conserved across orthologs that lack C46 supports the steric hindrance mechanism over zinc coordination. However, this interpretation is based on the computational model rather than direct experimental evidence ruling out zinc coordination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Ala substitutions for N48, N61, and T64 in GFP\u039427BofA accumulate normally in E. coli alone but cause altered complex formation and protein instability when coproduced with other proteins, suggesting these residues are important for complex assembly rather than BofA folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 present data (Figure 2\u2014figure supplement 2, Figure 2) showing that the variants fold normally in isolation but exhibit reduced stability and altered complex formation when coproduced with SpoIVFB and SpoIVFA. This supports the interpretation that these residues are important for complex formation rather than intrinsic BofA stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The findings have implications for IP inhibitor design. The authors discuss how BofA-based peptides, potentially as cyclic peptides or linked to SpoIVFA sequences, could serve as selective inhibitors of SpoIVFB and potentially other metallo IPs, drawing parallels to prodomain inhibitors of ADAM proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C165 provide extensive discussion of therapeutic implications and potential inhibitor design strategies. While the discussion is well-informed by the literature on rhomboid, \u03b3-secretase, and MMP inhibitors (C147-C154, C157-C158, C164), the specific proposals for BofA-based peptides (C159-C160, C163, C165) are speculative and untested. The feasibility of in vitro testing is noted (C161), but no inhibitor data are presented. This represents future directions rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C39"
+    ],
+    "result": "Background claims establishing the importance of intramembrane proteases, the role of SpoIVFB in B. subtilis sporulation, and the known regulation by BofA and SpoIVFA based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C39 provide background context from established literature with appropriate citations. These claims describe the general importance of IPs (C1, C10-C19), the specific role of SpoIVFB in sporulation (C20-C34), and the known regulation by inhibitory proteins (C25-C34). All claims are supported by cited literature and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

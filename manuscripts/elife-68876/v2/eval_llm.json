@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors conducted three independent evolution experiments with 756 replicate P. aeruginosa populations exposed to sequential antibiotic treatments at IC75 concentrations over 96 transfers (~500 generations), monitoring growth every 15 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C117-C124 provide comprehensive methodological details that are internally consistent and well-documented. The experimental design is clearly described with appropriate replication (12 populations per treatment from 6 biological \u00d7 2 technical replicates), standardized conditions, and systematic monitoring.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Fast-switching \u03b2-lactam sequential treatments (CAR-CEF-DOR and TIC-AZL-CEZ) caused high bacterial population extinction (27.2% and 13.3% respectively), comparable to heterogeneous antibiotic combinations, with most extinctions occurring early in the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 are well-supported by quantitative data presented in Figure 1C-E. The extinction frequencies are explicitly stated with percentages, the comparison to previous work (CAR-CIP-GEN at 15%) provides context, and the control (CIP-DOR-STR with 0% extinction) demonstrates specificity. The temporal pattern and switching rate effects are documented with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Fast-regular \u03b2-lactam treatments significantly decelerated early adaptation compared to monotherapy and slow-regular treatments (p<0.037), but all treatment groups converged to similar final adaptation levels (~90% relative yield) by the plateau phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by GLM statistical analysis with appropriate post-hoc testing and multiple comparison corrections. The three-phase growth dynamics are clearly defined and analyzed separately, fulfilling model assumptions. The convergence to similar final levels is documented with statistical support (Supplementary file 1B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "In fast sequential treatments, bacterial growth during DOR exposure was consistently lower than during CAR or CEF exposure, suggesting an evolutionary constraint specific to DOR that may result from lower spontaneous resistance rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by growth data (Figure 2\u2014figure supplement 1) and the authors appropriately rule out alternative explanations (dosage variation, stochastic effects) by referencing IC75 standardization. However, C15 is explicitly stated as a hypothesis, appropriately reflecting the inferential nature of the mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Resistance evolution to \u03b2-lactams was treatment-dependent, with most treatment types showing significantly different multidrug resistance profiles in both early and middle phases, constrained primarily by DOR susceptibility. Population diversity increased significantly from transfer 12 to 48 (p=0.01893).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by comprehensive resistance profiling of 640 isolates (20 per population \u00d7 16 populations \u00d7 2 timepoints) with appropriate statistical analysis (GLM, ANOVA). The hierarchical clustering approach for identifying subpopulations is methodologically sound, and the temporal increase in diversity is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Whole-genome sequencing of 33 isolates revealed mutations in known resistance genes (ftsI, pepA, nalD, phoQ) and non-canonical targets, with DOR resistance mutations appearing only at transfer 48, consistent with delayed DOR resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 and C127-C130 are supported by systematic genomic analysis with appropriate methodology (Illumina sequencing, standard bioinformatics pipeline). The sequencing strategy (3 isolates per population representing phenotypic subpopulations) is well-justified. The correlation between genomic and phenotypic data strengthens the conclusions. Data availability is documented (NCBI BioProject PRJNA704789).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Negative hysteresis was observed for multiple \u03b2-lactam switches, including asymmetric bidirectional negative hysteresis between DOR and CAR, with only one case of weak positive hysteresis detected despite P. aeruginosa producing AmpC \u03b2-lactamase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C131-C134 are supported by systematic hysteresis testing using an established protocol with appropriate controls and replication (3 biological \u00d7 4 technical replicates). The unexpected finding of predominantly negative hysteresis is appropriately contextualized with reference to known bacterial characteristics (AmpC production). The methodology is clearly described and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "DOR had significantly lower spontaneous resistance rates than CAR and CEF (p<0.0001 and p<0.01), and the lowest overall cross-resistance (36-50% vs 71-93% for other antibiotics, p<0.0004), measured using fluctuation assays with 30 parallel cultures and cross-resistance testing of 60 mutants per antibiotic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 and C137-C141 are supported by rigorous fluctuation assay methodology (classic Luria-Delbr\u00fcck design) with appropriate sample sizes (n=30 cultures for resistance rates, n=60 mutants for cross-resistance). Statistical analysis using likelihood ratio tests and Fisher's exact test is appropriate. The use of rSalvador package for resistance rate estimation is standard. The findings converge with genomic and phenotypic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GLM analysis revealed that extinction was significantly associated with switching rate (F=14.44, p=0.0042) and temporal irregularity (F=10.53, p=0.0101), with cumulative cross-resistance showing the strongest association (F=10.42, p=0.0121), while hysteresis had no significant effect (F=0.16, p=0.7015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 are supported by comprehensive GLM analysis examining both experimental and biological predictors. The statistical approach is appropriate, with separate models for different predictors and responses. The focus on the early phase (transfers 1-12) is well-justified given the timing of extinctions. The correlation analyses (Figure 5B, Figure 5\u2014figure supplement 1) support the mechanistic interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C62"
+    ],
+    "result": "Contrary to conventional wisdom that avoids multiple \u03b2-lactam treatments due to cross-resistance concerns, sequential treatments with three \u03b2-lactams effectively constrained bacterial adaptation through population extinction, with efficacy determined by spontaneous resistance rates and collateral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 and C62 represent the main conclusions of the study, supported by convergent evidence from extinction data, resistance profiling, genomics, and mechanistic experiments. The challenge to conventional practice is appropriately framed and supported by the experimental results. The conclusion is strengthened by comparison to heterogeneous antibiotic combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Previous studies have demonstrated efficacy of multiple \u03b2-lactam combinations in vitro, in animal models, and in clinical settings across various bacterial pathogens including P. aeruginosa, Enterobacteriaceae, MRSA, and S. enterica.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 appropriately cite relevant prior work supporting the potential of multi-\u03b2-lactam treatments. The citations span different experimental systems (in vitro, animal models, clinical trials) and pathogens, providing appropriate context for the current findings. However, these are literature claims rather than results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Spontaneous resistance rates played a critical role in treatment success, with DOR showing the lowest rate among the three \u03b2-lactams, extending previous concepts about resistance rate variation to demonstrate that including antibiotics with low spontaneous resistance can enhance sequential treatment potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 synthesize the study's findings on resistance rates with appropriate contextualization from prior literature. The extension of existing concepts to sequential treatment design is a valid inference supported by the experimental data. The citations to prior work on resistance rate variation and mechanisms are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DOR's unique properties as a carbapenem\u2014including broad activity, resistance to \u03b2-lactamase hydrolysis, binding to more PBPs than CAR or CEF, and consistently low resistance rates across P. aeruginosa strains\u2014likely explain its constraining effect on resistance evolution, though the mechanisms are multifactorial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C83 appropriately synthesize literature on DOR properties with extensive citations. The mechanistic speculation about PBP binding (C80-C81) is appropriately qualified. The acknowledgment of complexity (C82) based on meropenem comparison is scientifically sound. However, C81 is speculative and the causal mechanisms remain incompletely understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Reduced spontaneous cross-resistance was a key determinant of treatment potency, revealing beneficial collateral effects between same-class antibiotics. Spontaneous mutants showed different collateral profiles than lines adapted over many generations, suggesting their relevance for fast-switching sequential treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 are supported by the cross-resistance data and appropriately contextualized with prior literature on collateral sensitivity. The distinction between spontaneous and evolved cross-resistance profiles (C91) is a valid inference from comparing current results with prior work (Barbosa et al., 2017). The support from other studies (C93-C94) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Almost all treatments evolved collateral sensitivity to gentamicin but not ciprofloxacin, potentially indicating an alternative treatment option if triple \u03b2-lactam protocols fail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by the resistance profiling data (Figure 2B, C) showing consistent patterns across treatments. However, the suggestion of this as a treatment option is speculative and would require validation. This is appropriately framed as a side observation rather than a main conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Temporal irregularity in antibiotic application constrained bacterial adaptation by increasing extinction and reducing multidrug resistance, consistent with prior findings that stochastic environmental changes impede anticipatory evolution in microorganisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are supported by the GLM analysis showing significant effects of temporal irregularity and appropriately contextualized with literature on environmental change anticipation. The mechanistic explanation is plausible and supported by prior work in bacteria and viruses. The conclusion (C102) is appropriately qualified as showing \"potential.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "While negative hysteresis was detected between \u03b2-lactams, cumulative hysteresis levels did not significantly associate with evolutionary responses, contrasting with previous findings where hysteresis influenced outcomes, suggesting that spontaneous resistance and cross-resistance effects dominated over hysteresis in this system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 appropriately report the negative finding regarding hysteresis impact while acknowledging the positive detection of hysteresis itself. The comparison with prior work (C105-C106) provides context. The interpretation (C108) is reasonable given the statistical results. The speculative explanation (C109) and call for future research (C110) are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study demonstrates that available antibiotics offer unexplored treatment options, emphasizing the importance of evolutionary trade-offs (reduced cross-resistance) and introducing spontaneous resistance rates as guiding principles for sequential treatment design, though underlying molecular mechanisms remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 represent the study's main conclusions and implications, appropriately synthesizing the experimental findings. The acknowledgment of knowledge gaps (C115) is scientifically appropriate. The recommendations (C116) are well-supported by the data. The irony noted in C114 effectively highlights the counterintuitive nature of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C135",
+      "C136"
+    ],
+    "result": "Resistance characterization focused on transfers 12 and 48 representing early and late phases, with 20 randomly selected colonies per population tested using modified EUCAST MIC protocols accounting for inoculum effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 and C135-C136 describe methodological choices that are well-justified (early vs. late phase comparison) and appropriately documented. The modification of EUCAST protocol to account for inoculum effects is appropriate given the fluctuation assay setup. The sample size (20 colonies per population) is reasonable for capturing population diversity.",
+    "result_type": "MINOR"
+  }
+]

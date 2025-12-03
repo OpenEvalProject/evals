@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "22bf801a-5139-4c16-8da7-4982f9bbd4a1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:57:08.706376Z",
+    "updated_at": "2025-12-03T05:57:08.706376Z"
+  },
+  "content": [
+    {
+      "id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "submission_id": "22bf801a-5139-4c16-8da7-4982f9bbd4a1",
+      "content_type": "manuscript",
+      "content_text": "# Structural insights into hormone recognition by the human glucose-dependent insulinotropic polypeptide receptor\n\n## Authors\n\n- Fenghui Zhao<sup>1</sup>\n- Chao Zhang<sup>3</sup>\n- Qingtong Zhou<sup>5</sup> ([ORCID: 0000-0001-8124-3079](https://orcid.org/0000-0001-8124-3079))\n- Kaini Hang<sup>3</sup>\n- Xinyu Zou<sup>6</sup>\n- Yan Chen<sup>1</sup>\n- Fan Wu<sup>3</sup>\n- Qidi Rao<sup>3</sup>\n- Antao Dai<sup>7</sup>\n- Wanchao Yin<sup>2</sup>\n- Dan-Dan Shen<sup>8</sup>\n- Yan Zhang<sup>8</sup>\n- Tian Xia<sup>6</sup>\n- Raymond C Stevens<sup>3</sup>\n- H Eric Xu<sup>2</sup> \u2020\n- Dehua Yang<sup>2</sup> ([ORCID: 0000-0003-3028-3243](https://orcid.org/0000-0003-3028-3243)) \u2020\n- Lihua Zhao<sup>2</sup> \u2020\n- Ming-Wei Wang<sup>1</sup> ([ORCID: 0000-0001-6550-9017](https://orcid.org/0000-0001-6550-9017)) \u2020\n\n### Affiliations\n\n1. School of Pharmacy, Fudan University Shanghai China\n2. The CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences Shanghai China\n3. School of Life Science and Technology, ShanghaiTech University Shanghai China\n4. University of Chinese Academy of Sciences Beijing China\n5. Department of Pharmacology, School of Basic Medical Sciences, Fudan University Shanghai China\n6. School of Artificial Intelligence and Automation, Huazhong University of Science and Technology Wuhan China\n7. The National Center for Drug Screening, Shanghai Institute of Materia Medica, Chinese Academy of Sciences Shanghai China\n8. Department of Biophysics and Department of Pathology of Sir Run Run Shaw Hospital, Zhejiang University School of Medicine Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nGlucose-dependent insulinotropic polypeptide (GIP) is a peptide hormone that exerts crucial metabolic functions by binding and activating its cognate receptor, GIPR. As an important therapeutic target, GIPR has been subjected to intensive structural studies without success. Here, we report the cryo-EM structure of the human GIPR in complex with GIP and a Gs heterotrimer at a global resolution of 2.9 \u00c5. GIP adopts a single straight helix with its N terminus dipped into the receptor transmembrane domain (TMD), while the C terminus is closely associated with the extracellular domain and extracellular loop 1. GIPR employs conserved residues in the lower half of the TMD pocket to recognize the common segments shared by GIP homologous peptides, while uses non-conserved residues in the upper half of the TMD pocket to interact with residues specific for GIP. These results provide a structural framework of hormone recognition and GIPR activation.\n\n## Introduction\n\nGlucose-dependent insulinotropic polypeptide (GIP) is a 42-amino acid peptide hormone that plays crucial role in glucose regulation and fatty acid metabolism. In response to food intake, GIP is secreted by intestinal K cells to enhance insulin secretion and peripheral fatty acid uptake (Kim et al., 2007), as well as a number of neuronal effects (Faivre and H\u00f6lscher, 2013). The pleiotropic functions of GIP is mediated by its cognate receptor (GIPR), a member of class B1 G protein-coupled receptors (GPCRs) that also include glucagon receptor (GCGR) and glucagon-like peptide-1 receptor\u00a0(GLP-1R). GIPR, together with GCGR and GLP-1R, forms the central endocrine network in regulating insulin sensitivity and energy homeostasis, and they are validated drug targets (Lagerstr\u00f6m and Schi\u00f6th, 2008; Finan et al., 2016; Longuet et al., 2008). Intensive efforts were made in drug discovery targeting these receptors (Yang et al., 2021). A number of GLP-1R selective ligands have been developed successfully to treat type 2 diabetes and obesity. Encouragingly, peptide ligands that bind both GIPR and GLP-1R show better clinical efficacy than the GLP-1R agonist alone. As such, GIPR has emerged as a hot target pursued by pharmaceutical research community.\n\nGIPR contains a large extracellular domain (ECD) and a 7-transmembrane domain (TMD). Both are involved in ligand recognition and receptor activation (Parthier et al., 2009; Koth et al., 2012; Yang et al., 2015). Cryo-electron microscopy (cryo-EM) structures of GCGR and GLP-1R, as well as several other class B1 GPCRs have been solved, providing a general mechanism of two-domain model for peptide recognition and receptor activation. However, GIP displays an exquisite sequence specificity towards GIPR as it does not bind to other class B1 GPCRs. However, the efforts to understand the ligand selectivity by GIPR have been hampered by technical difficulties in expression and stabilization of the ligand-GIPR complexes for structural studies. We have overcome such challenges and determined a high-resolution (2.9 \u00c5) structure of the human GIPR in complex with the stimulatory G protein (Gs) using single-particle cryo-EM approach in conjunction with NanoBiT strategy (Duan et al., 2020). Together with functional studies, our results demonstrate several unique structural features that distinguish GIPR from other members of the glucagon subfamily of class B1 GPCRs and provide an important template for rational design of GIPR agonists for therapeutic development.\n\n## Results\n\n### Structure determination\n\nTo prepare a high-quality human GIPR\u2013Gs complex, we overcame several technical obstacles to enhance the expression level and protein stability by adding a double tag of maltose binding protein at the C\u00a0terminus and a BRIL fusion protein at the N\u00a0terminus (Figure 1\u2014figure supplement 1A), as well as employing the NanoBiT tethering strategy (Duan et al., 2020; Zhou et al., 2020; Sun et al., 2020;\u00a0Figure 1\u2014figure supplement 1A,B). To solve the GIP1-42\u2013GIPR\u2013Gs structure, we further introduced one mutation (T345F) to stabilize the assembly of complex (Figure 1\u2014figure supplement 1C,D). This mutation does not affect the ligand binding or potency of GIP1-42 in cAMP accumulation assay (Figure 1\u2014figure supplement 1G,H). Large-scale purification was followed and the GIP1-42\u2013GIPR\u2013Gs complexes were collected by size-exclusion chromatography (SEC) for cryo-EM studies (Figure 1\u2014figure supplement 1E,F). The activity of the modified GIPR construct was confirmed by cAMP accumulation assay showing a response similar\u00a0to that of the wild-type (WT; Figure 1\u2014figure supplement 1G).\n\nThe GIP1-42\u2013GIPR\u2013Gs complexes were imaged using a Titan Krios equipped with a Gatan K3 Summit direct electron detector (Figure 1\u2014figure supplement 2). 2D classification showed a clear secondary structure feature and random distribution of the particles. Different directions of the particles enabled a high-resolution cryo-EM map reconstruction (Figure 1\u2014figure supplement 2B). A total of 295,021 particles were selected after 3D refinement and polishing, leading to an overall resolution of 2.9 \u00c5 (Figure 1\u2014figure supplement 2C,D and Table 1).\n\n**Table 1.**\n Cryo-EM data collection, refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>GIP\u2013GIPR\u2013Gs\u2013Nb35 complex</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>46,685</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e\u2013/\u00c52)</td>\n      <td>80</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u22121.2 to \u22122.2</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.071</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C1</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td>4,895,399</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>295,021</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5) FSC threshold</td>\n      <td>2.9 0.143</td>\n    </tr>\n    <tr>\n      <td>Map resolution range (\u00c5)</td>\n      <td>2.7\u20135.0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB code)</td>\n      <td>PDB codes 6WPW and 2QKH</td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5) FSC threshold</td>\n      <td>2.9 0.5</td>\n    </tr>\n    <tr>\n      <td>Model resolution range (\u00c5)</td>\n      <td>2.7\u20135.0</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u221286.3</td>\n    </tr>\n    <tr>\n      <td>Model composition Non-hydrogen atoms Protein residues Lipids</td>\n      <td>9409 1156 6</td>\n    </tr>\n    <tr>\n      <td>B factors (\u00c52) Protein Ligand Lipids</td>\n      <td>133 143 121</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations Bond lengths (\u00c5) Bond angles (\u00c5)</td>\n      <td>0.005 1.036</td>\n    </tr>\n    <tr>\n      <td>Validation MolProbity score Clash score Poor rotamers (%)</td>\n      <td>1.21 4.23 0.00</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>\n      <td>98.15 1.85 0.00</td>\n    </tr>\n  </tbody>\n</table>\n\n### Overall structure\n\nApart from the \u03b1-helical domain (AHD) of G\u03b1s which is flexible in most cryo-EM GPCR\u2013G protein complex structures, the bound GIP1-42, GIPR, and Gs were well defined in the EM density maps (Figure 1, Figure 1\u2014figure supplement 3). Except for the ECD, side\u00a0chains of the majority of amino acid residues are well resolved in all protein components. The final model contains 30 GIP1-42 residues, the G\u03b1\u03b2\u03b3 subunits of Gs, and the GIPR residues from Q30ECD to S4158.66b (class B GPCR numbering in superscript) (Wootten et al., 2013), with six amino acid residues missing at helix 8. As a general feature in most reported class B1 GPCR\u2013Gs complex structures (Qiao et al., 2020; Zhang et al., 2017a; Zhao et al., 2019; Ma et al., 2020), the density of ECD is relatively poor owning to its intrinsic flexibility, which limited the accuracy in model building for the GIPR ECD region compared to other regions of the complex structure. Given a low resolution of the density map, the ECD structure is model based on the crystal structure of GIPR ECD (PDB code: 2QKH). Notable conformation difference from GCGR (Qiao et al., 2020) or GLP-1R (Zhang et al., 2017a) was observed in the extracellular loop 1 (ECL1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cut-through view of the cryo-EM density map that illustrates the GIP1-42\u2013GIPR\u2013Gs complex and the disc-shaped micelle. The unsharpened cryo-EM density map at the 0.07 threshold shown as light gray surface indicates a micelle diameter of 11 nm. The colored cryo-EM density map is shown at the 0.16 threshold. (B) Model of the complex as a cartoon, with GIP1-42 as helix in orange. The receptor is shown in light sky blue, G\u03b1s in yellow, G\u03b2 subunit in cyan, G\u03b3 subunit in navy blue, and Nb35 in gray.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Human GIPR constructs used for structure determination. The signal peptide of the GIPR was replaced by the HA signal peptide (blue). A BRIL fusion protein was added at the N terminus of the receptor, followed by a TEV protease site between them. GIPR was truncated at R421, followed by a 15 amino acid linker (15AA, dark blue) and LgBiT (green). The C terminus was modified with a TEV protease site and an OMBP-MBP (light green) tag. The mutation site at T345 was highlighted in red. (B) G\u03b21 constructs used for structure determination. Rat G\u03b21 (orange) was attached to peptide 86 (orange) with a 15AA linker (dark blue) between them. (C) Size-exclusion chromatography results of the GIP1-42\u2013GIPR(22-421)\u2013Gs\u2013Nb35 (black line) and GIP1-42\u2013GIPR(22-421)(T345F)\u2013Gs\u2013Nb35 (red line) complexes on Superose 6 Increase 10/300GL. (D) SDS-PAGE of the GIP1-42\u2013GIPR(22-421)\u2013Gs\u2013Nb35 and GIP1-42\u2013GIPR(22-421)(T345F)\u2013Gs\u2013Nb35 complexes. (E) Size-exclusion chromatography results on Superose 6 Increase 10/300GL. (F) SDS\u2013PAGE of the GIP1-42\u2013GIPR\u2013Gs\u2013Nb35 complex. (G) cAMP responses following GIP1-42 stimulation in HEK 293T cells transfected with wild-type (WT, HA-Flag-3GSA-GIPR(22-466)) or truncated GIPR constructs (HA-Flag-3GSA-BRIL-TEV-2GSA-GIPR(22-421)T345F-15AA-LgBiT-TEV-2MBP). Signals were normalized to the maximum response of WT and dose\u2013response curves were analyzed using a three-parameter logistic equation. (H) Binding of GIP1-42 to the full\u00a0length (residues 22-466) or truncated (residues 22-421) GIPR in CHO-K1 cells in competition with [125I]-GIP1-42.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative cryo-EM micrograph (scale bar: 50 nm) and two-dimensional class averages (scale bar: 5 nm). (B) Flow chart of cryo-EM data processing. Details are described in Materials\u00a0and\u00a0methods. (C) Local resolution distribution map of the GIP1-42\u2013GIPR\u2013Gs complex. (D) Gold-standard Fourier shell correlation (FSC) curves of overall refined receptor.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** EM density map and model are shown for all seven transmembrane \u03b1-helices (A), ECD, helix eight, and all extracellular loops of GIPR, the \u03b15-helix of the G\u03b1s Ras-like domain and GIP1-42 (B). Insert in (A) is the close-up of the density of F3456.44b.\n\nSimilar to other class B1 GPCR\u2013Gs complexes, the TM6 of GIPR shows a sharp kink in the middle and TM7 displays an outward movement. Like parathyroid hormone receptor-1 (PTH1R)\u2013Gs and corticotropin-releasing factor receptor type 1 (CRF1R)\u2013Gs cryo-EM structures (Zhao et al., 2019; Ma et al., 2020), the TMD of GIPR is surrounded by annular detergent micelle, with a diameter of 12 nm thereby mimicking the lipid bilayer morphology (Figure 1). In addition, we also observed several cholesterols molecules in the cryo-EM map.\n\n### Ligand recognition\n\nIn the complex, GIP adopts a single continuous helix that penetrates into the TMD core through its N-terminal half (residues 1\u201315), while the C-terminal half (residues 16\u201330) is recognized by the ECD and ECL1 (Figure 2A\u2013C). Y1P (P indicates that the residue belongs to the peptide ligand) of GIP points to TMs 2\u20133, forms hydrogen bonds with R1902.67b and Q2243.37b, and makes hydrophobic contacts with V2273.40b and W2965.36b. This observation received support of the mutagenesis study, where mutant W296A decreased the potency of GIP-induced cAMP signaling by 50-fold (Figure 2D), and the reductions in mutants R190A and Q224A were 71- and 5-fold, respectively, as reported in a previous report (Yaqub et al., 2010). N-terminal truncation of either Y1P or both Y1P and A2P led to reduced efficacy or loss of activity (Kerr et al., 2011; Gabe et al., 2020), highlighting a crucial role of Y1P. E3P, D9P, and D15P are three negatively charged residues in the N-terminal half of GIP and form salt bridges with R1832.60b, R3707.35b, and R289ECL2, respectively. Removal of these salt bridges by alanine substitution at either R1832.60b (Yaqub et al., 2010) or R3707.35b (Figure 2D) greatly reduced GIP potency (by 76- and 55-fold, respectively), whereas the effect on mutant R289A was mild (6-fold, Figure 2D). Polar interactions also occurred between S8P and N290ECL2 as well as Y10P and Q1381.40b. The GIP\u2013TMD interface was further stabilized by a complementary nonpolar network involving TM1 (L1341.36b, L1371.39b, and Y1411.43b) and TM7 (L3747.39b and I3787.43b) via A2P, F6P, and Y10P of GIP (Figure 2C), in line with decreased ligand potencies observed in Y141A (by 103-fold), L374A (by 41-fold), and I378A (by 8-fold) mutants (Figure 2D). These mutants also caused significant potency decreases in GIP1-42-induced \u03b2-arrestin2 recruitment (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig2-v2.jpg)\n\n**Figure 2.:** (A) The binding mode of GIP (orange) with GIPR (light sky blue), showing that the N-terminal half of GIP penetrates into a pocket formed by all TM helices except TM4, ECL2, and ECL3, whereas the C-terminal half is recognized by ECD, ECL1, and TM1. (B,\u00a0C) Close-up views of the interactions between GIP and GIPR. The residues and side\u00a0chains that could not be modelled in the ECD are colored in red. (D) Signaling profiles of GIPR mutants. cAMP accumulation in wild-type (WT) and single-point mutated GIPR expressing in HEK 293T cells. Signals were normalized to the maximum response of the WT and dose\u2013response curves were analyzed using a three-parameter logistic equation. All data were generated and graphed as means \u00b1 S.E.M. of at least three independent experiments, conducted in quadruplicate. \u0394, truncated residues.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** GIP1-42 induced \u03b2-arrestin2 recruitment. HEK 293 T cells were transiently co-transfected with GIPR-Rluc8 and Venus-\u03b2-arrestin2 (\u03b2-arr2). Data presented are AUC of BRET signals measured for 10 min post-stimulation. For quantification of concentration-responses, data were corrected for the vehicle control and then normalized to the maximal response of wild-type (WT) GIPR. Data were fitted to non-linear regression three-parameter logistic curves. \u0394, truncated residues.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Comparison of active GIPR with inactive, agonist-bound, and both agonist-bound and G protein-coupled active GCGR (Zhang et al., 2020). G proteins are omitted for clarity.\n\nThe C-terminal half of GIP was clasped by the GIPR ECD, closely resembling the crystal structure of GIP\u2013GIPR ECD (PDB code: 2QKH) (Parthier et al., 2007). Consistent with the interaction patterns observed in other class B1 GPCRs (Parthier et al., 2007), the hydrophobic residues (F22P, V23P, L26P, and L27P) in the C-terminal half of GIP occupy a complementary binding groove of the GIPR ECD, consisting of a series of hydrophobic residues (L35, Y36, W39, M67, Y68, Y87, L88, P89, and W90). Alanine substitutions in W39, D66, and Y68 significantly reduced the potency of GIP (Figure 2D). Besides, several polar contacts including H18P-Y36 and Q20P-N124 were observed. Notably, the cryo-EM map suggests that the ECL1 stands upwards to approach the N-terminal \u03b1-helix of ECD and forms hydrogen bonds with the side\u00a0chain of Y36 (Figure 2A,B), resulting in a close contact between TMD and ECD for GIP-bound GIPR (interface area = 571 \u00c52), significantly larger than that of GLP-1-bound GLP-1R (362 \u00c52), reinforcing the importance of ECD in GIP recognition.\n\n### Receptor activation\n\nGIPR shares ~50% sequence similarity with GCGR, especially in the TMD region (75%); thus, GCGR structures published previously provide a good template for the present study (Figure 2\u2014figure supplement 2;\u00a0Qiao et al., 2020; Hilger et al., 2020; Jazayeri et al., 2016; Zhang et al., 2018; Chang et al., 2020). It was found the TMD of activated GIPR exhibits a conformation similar to that of GCGR activated by glucagon or ZP3780 (C\u03b1 RMSD = 1.2 and 0.7 \u00c5, respectively) (Qiao et al., 2020; Hilger et al., 2020) and distinct from that of GCGR bound by the negative allosteric modulator NNC0640 or partial agonist NNC1702 (C\u03b1 RMSD = 4.0 and 3.9 \u00c5, respectively) (Zhang et al., 2017b). Facilitated by Gly7.50b located in the middle of TM7, the extracellular half of TM7 bends towards TM6 by 8.0 \u00c5 (measured by C\u03b1 atom of Gly7.32b)\u00a0(Figure 2\u2014figure supplement 2). This feature and the outward movement of ECL3 expanded the ligand binding pocket. Meanwhile, the extracellular tip of TM1 was extended by one turn and moved inward by 8.0 \u00c5 (measured by C\u03b1 atom of the residues at 1.30b)\u00a0(Figure 2\u2014figure supplement 2). Together with the raised ECL1, these conformational changes stabilized ligand binding.\n\nIn the intracellular side, the sharp kink in the middle of TM6 led to an outward movement of its intracellular portion measured by C\u03b1 atom of R3366.35b (18.9 \u00c5, similar to that of other Gs-coupled class B1 receptors). This was accompanied by the movement of the intracellular tip of TM5 toward TM6 by 7.6 \u00c5 (measured by C\u03b1 atom of the residues at 5.67b), thereby creating an intracellular cavity for G protein coupling (Figure 2\u2014figure supplement 2).\n\n### G protein coupling\n\nIn our model, Gs protein is anchored by the \u03b15 helix of G\u03b1s (G\u03b1H5), thereby fitting to the cytoplasmic cavity formed by TMs 3, 5, and 6, intracellular loops (ICLs) 1\u20132 and H8 (Figure 3). In general, the GIPR\u2013Gs complex shows a similar receptor\u2013G protein interface as other reported class B1 receptor structures such as GLP-1R (Zhang et al., 2020), GLP-2R\u00a0(glucagon-like peptide-2 receptor) (Sun et al., 2020), GCGR (Qiao et al., 2020), PTH1R (Zhao et al., 2019), SCTR (secretin receptor) (Dong et al., 2020), and GHRHR\u00a0(growth hormone-releasing hormone receptor) (Zhou et al., 2020), suggesting a common G protein signaling mechanism (Figure 3A). The hydrophobic residues at the C-terminal of G\u03b1H5 (L388G\u03b1H5, Y391G\u03b1H5, L393G\u03b1H5, and L394G\u03b1H5) insert into a small hydrophobic pocket formed by Y2403.53b, L2413.54b, L2443.57b, L2453.58b, I3175.58b, I3205.60b, L3215.61b, and L3255.65b (Figure 3B). The side\u00a0chain of R3386.37b points to G\u03b1s and makes one hydrogen bond with L394G\u03b1H5. Of note is that\u00a0the interaction between R380G\u03b1H5 and ICL2 results in five hydrogen bonds with the backbone atoms of L2453.58b, V2463.59b, L2473.60b, and V248ICL2, significantly more than that observed in GLP-1R, SCTR, or GCGR (Figure 3C). The polar residues in ICL2 (S251ICL2 and E253ICL2) produce two hydrogen bonds with K34 and Q35 of G\u03b1s, while H8 forms several hydrogen bonds with ICL1, then contacts with G\u03b2 (E3988.49b-R164ICL1-D312G\u03b2, E4028.53b-R164ICL1-D312G\u03b2) (Figure 3D). Together, these specific interactions contribute to the Gs coupling specificity of GIPR.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig3-v2.jpg)\n\n**Figure 3.:** (A) Comparison of G protein coupling among GIPR, GLP-1R (Zhang et al., 2020), GCGR (Qiao et al., 2020), and SCTR (Dong et al., 2020). The G\u03b1s \u03b15-helix of the G\u03b1s Ras-like domain inserts into an intracellular crevice of GIPR TMD. (B) Interaction between GIPR and the C\u00a0terminus of G\u03b1s. (C) Polar interactions between ICL2 and G\u03b1s. (D) Polar interactions between H8 and ICL1 of the GIPR and G\u03b2. The GIP1-42\u2013GIPR\u2013G\u03b1s structure is colored light sky blue (GIPR), gold (G\u03b1s), and cyan (G\u03b2). Residues involved in interactions are shown as sticks. Polar interactions are shown as black dashed lines.\n\n### Ligand specificity\n\nGIP, GLP-1, and glucagon are three important metabolic hormones exerting distinct functions in glucose homeostasis, in spite of high degrees of sequence similarity. Superimposing the TMD of GIP-bound GIPR with that of GLP-1-bound GLP-1R (Zhang et al., 2020) or glucagon-bound GCGR (Qiao et al., 2020) displays a similar ligand-binding pocket and the three peptides all adopt a single continuous helix, with the N\u00a0terminus penetrating to the TMD core to the same depth, while the C\u00a0terminus anchors the ECD and ECL1 in a receptor-specific manner (Figure 4). Notably, the ECL1 of GIPR stands upwards in line with TMs 2 and 3 and moves towards the TMD core by 5~7 \u00c5. Such a movement, together with a \u03b1-helical extension in TM1 by six residues, allows GIP to shift to TM1 by 2.7 and 3.3 \u00c5 (measured by C\u03b1 atom of L27P) relative to GLP-1 (Zhang et al., 2020) and glucagon (Qiao et al., 2020), respectively (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-v2.jpg)\n\n**Figure 4.:** (A) Comparison of the overall structures of GIP1-42\u2013GIPR\u2013Gs, GLP-1\u2013GLP-1R\u2013Gs (Zhang et al., 2020) and glucagon\u2013GCGR\u2013Gs complexes (Qiao et al., 2020). G proteins are omitted for clarity. (B\u2013D) Close-up views of the interaction between TMD and peptide. Based on sequence similarity, the peptides are divided into four segments: N\u00a0terminus (residues 1\u20133, B), segment 2 (residues 4\u201311, C), segment 3 (residues 12\u201320, D), and the C\u00a0terminus (residues 21 to the end, E\u2013G), where segments 2 and 4 are highly conserved among GIP, GLP-1, and glucagon. Residues are numbered based on GIP for peptides, and labeled with class B GPCR numbering in superscript for receptors (Wootten et al., 2013). (E\u2013G) Close-up views of the interface between GIPR ECD and GIP C\u00a0terminus (E), between GLP-1R and GLP-1 C\u00a0terminus (F), and between GCGR and glucagon C\u00a0terminus (G). The ECD is shown in surface representation and colored from dodger blue for the most hydrophilic region, to white, to orange red for the most hydrophobic region. (H) Comparison of peptide recognition modes for three receptors, described by fingerprint strings encoding different interaction types of the surrounding residues in each receptor. Peptide residue numbers on the top are shown based on GIP. The ligand-binding pocket residues that are identical or similar across three receptors are highlighted in dark gray and light gray, respectively. Color codes are listed on the bottom.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The ECL1 conformation of GIP-bound GIPR is compared with that of GLP-1-bound GLP-1R (PDB code: 6X18) (Zhang et al., 2020) and glucagon-bound GCGR (PDB code: 6LMK) (Zhang et al., 2020). All structures are superimposed on the GIP-bound GIPR using the C\u03b1 carbons of the residues in the TM2\u20133\u20134. Receptor ECD and G protein are omitted for clarity.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Left, comparison of peptide binding between simulation snapshots of GLP-1\u2013GIPR and the cryo-EM structure of GIP\u2013GIPR\u2013Gs complex. ECD and G protein are omitted for clarity. Right top, extracellular view of the interaction between peptide and TMD. Right bottom, the buried surface area between GLP-1 and GIPR. (B) Left, comparison of peptide binding between simulation snapshots of glucagon\u2013GIPR and the cryo-EM structure of GIP\u2013GIPR\u2013Gs complex. ECD and G protein are omitted for clarity. Right top, extracellular view of the interaction between peptide and TMD. Right bottom, the buried surface area between glucagon and GIPR. Interface areas were calculated using freeSASA (Zhang et al., 2020).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) The glucagon subfamily of GPCRs (Zhou et al., 2020; Sun et al., 2020; Qiao et al., 2020; Zhang et al., 2017a; Dong et al., 2020); (B) calcitonin subfamily (Liang et al., 2018a); (C) corticotropin-releasing factor (CRF) subfamily (Ma et al., 2020; Liang et al., 2020); (D) pituitary adenylate-cyclase-activating peptide (PACAP) and vasoactive intestinal polypeptide (VIP) receptor subfamily (Duan et al., 2020; Liang et al., 2020; Wang et al., 2020); (E) parathyroid hormone subfamily (Zhao et al., 2019).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp4-v2.jpg)\n\nBased on the sequence similarity, the three peptides can be divided into four segments: two common segments (residues 4\u201311 and 21\u201330 in GIP) and two unique segments (residues 1\u20133 and 12\u201320 in GIP) (Figure 4H). The N\u00a0terminus (residues 1\u20133) makes massive contacts with the conserved central polar network of class B1 GPCRs including one hydrogen bond with Q3.37b stabilized by the hydrophobic residue at 3.40b; one hydrogen bond with Y1.47b made by the third peptide residue (Figure 4B,H); residues 4\u201311 interact with salt bridges of R7.35b, pi-stacking of Y1.43b, hydrophobic L2.71b, W5.36b, and L7.39b, as well as several hydrogen bonds in ECL2 (Figure 4C,H); residues 12\u201320 are divergent and mainly interact with ECLs 1\u20132 and TMs 1\u20132 (Figure 4D,H).\n\nTo accommodate varying lengths of side\u00a0chains at A13P/Y/Y, I17P/Q/R, Q19P/A/A, and Q20P/K/Q, both TM1 and ECL1 adjusted their conformations to avoid clashes (Figure 4D, Figure 4\u2014figure supplement 1). For example, ECL1 of GLP-1R is more distant from GLP-1 than that of GIPR from GIP, whereas repulsion of the side\u00a0chain of R18P was seen between GCGR and glucagon. Therefore, receptor-specific interaction may reside in this region, which precludes the binding of GLP-1 or glucagon to GIPR revealed by MD simulations (Figure 4\u2014figure supplement 2). As far as C\u00a0terminus is concerned, all three peptides form extensive hydrophobic contacts with the ECD, resulting from the hydrophobic composition of amino acids in both sides (Figure 4E\u2013H). It appears that GIPR, GLP-1R, and GCGR employ conserved residues to recognize the common segments of their endogenous peptides and use non-conserved residues to make specific interaction that govern the ligand selectivity.\n\n## Discussion\n\nAs one of the incretin hormones, GIP modulates glucose metabolism by stimulating the \u03b2-cells to release insulin (Seino et al., 2010). Unlike GLP-1, it does not suppress gastric emptying and appetite, while exerting opposite actions on pancreatic \u03b1-cells as well as adipocytes leading to glucagon secretion and lipogenesis (Seino et al., 2010). Coupled with reduced sensitivity in type 2 diabetic patients, development of GIPR-based therapeutics met little success (Coskun et al., 2018).\n\nComparison of the full-length structures of six glucagon subfamily of GPCRs demonstrates that bound peptides (GLP-1, exendin-P5, glucagon, ZP3780, secretin, GHRH, GLP-2, and GIP) all adopt a single straight helix with their N\u00a0terminus inserted into the TMD core, while the C-terminal is recognized by the ECD (Zhou et al., 2020; Sun et al., 2020; Qiao et al., 2020; Zhang et al., 2017a; Dong et al., 2020). For parathyroid hormone subfamily of GPCRs, the long-acting PTH analog (LA-PTH) predominantly exhibits an extended helix with its N\u00a0terminus inserted deeply into the TMD, where the peptide C\u00a0terminus may bend occasionally (Zhao et al., 2019). In the case of CRF subfamily of GPCRs, the N\u00a0terminus (first seven residues) of urocortin 1 (UCN1) and CRF1 present an extended loop conformation, and its C-terminal residues (8\u201340) adopt a single extended helix (Ma et al., 2020; Liang et al., 2020). As far as calcitonin subfamily of GPCRs is concerned, calcitonin gene-related peptide (CGRP) has an unstructured loop in both N- and C-terminal regions (Liang et al., 2018a). Looking at pituitary adenylate-cyclase-activating peptide (PACAP) and vasoactive intestinal polypeptide (VIP) receptor subfamily, PACAP displays an extended \u03b1-helix, while maxadilan, a natural PAC1R agonist (61-amino acid long), forms the N- and C-terminal helices that are linked as a loop (Duan et al., 2020; Liang et al., 2020; Wang et al., 2020). These observations highlight diversified peptide binding modes among class B1 GPCRs (Figure 4\u2014figure supplement 3).\n\nSpecies differences in class B1 receptor responsiveness are diversified and receptor\u00a0specific, which is tolerable for some receptors such as GLP-1R and GCGR, but leads to concerns for others like GIPR and parathyroid hormone receptor-2 (PTH2R) (Sparre-Ulrich et al., 2016; Hoare et al., 1999). Interestingly, the sequence identities between human and mouse at both ligand and receptor levels are more conserved between GLP-1 and GLP-1R (100% and 93%) than that between GIP and GIPR (92% and 81%)\u00a0(Sparre-Ulrich et al., 2016). Such a divergence is not caused by changes in peptide potency, but resides in the biological property of either GIP or the receptor (Sparre-Ulrich et al., 2016; Bailey, 2020). However, it may affect GIP-related pharmacology markedly (Sparre-Ulrich et al., 2016). Indeed, a previous study found that human GIP is a comparatively weak partial agonist in rodent models (Sparre-Ulrich et al., 2016). Human (Pro3)GIP is a full agonist with identical maximum response as human GIP, whereas both rat and mouse (Pro3)GIPs are partial agonists (Sparre-Ulrich et al., 2016; Bailey, 2020). Of note is that among rat, mouse, and human GIPs, the only residue change (from His to Arg) occurs at the 18th position (Sparre-Ulrich et al., 2016). From a structural biology perspective, the variation in the sequences of both GIP (H18P/R/R for human, rat, and mouse) and GIPR, and the consequent alterations in either peptide-binding or G protein-coupling may offer an explanation. Nonetheless, it may also complicate knowledge transfer from rodents to humans for clinical development of GIPR-based therapeutics.\n\nThe interactions between the three receptors (GIPR, GLP-1R, and GCGR) and their endogenous peptides transduce precise cellular signals responsible for glucose control. While GIP1-42, GLP-1, and glucagon each binds to the cognate receptor with high affinity (pIC50 = 8.07, 8.25 and 7.31, respectively), glucagon also cross-reacts with GLP-1R with a pIC50 value of 6.19 (Yuliantie et al., 2020; Darbalaei et al., 2020). This property is consistent with their behavior in inducing cAMP responses: GIP1-42 and GLP-1 specifically activate GIPR and GLP-1R, respectively, whereas glucagon can elicit cAMP accumulation mediated by both GCGR and GLP-1R (EC50 = 1.14 nM; Figure 4\u2014figure supplement 4), highlighting the complexity of their interactive functionalities. Our studies show that the recognition pattern among these three peptide\u2013receptor\u00a0pairs is instituted by a common and closely related mechanism where the extracellular portion of the receptor mainly binds to a cognate ligand, while the TMD activates a cascade of signaling events. The upper half of the TMD pocket composed of the top parts of ECL1, TM1, and TM2 interacts with unique residues in the peptide through flexible movement of ECL1 and complementary shape formation by TM1 and TM2, thereby conferring selectively and discriminating unrelated ligands. The lower half of the TMD pocket composed of TMs 3, 6, and 7 displays conserved sequences for recognition of common residues in the peptide. Its key function is to converge external signal into the cytoplasm and executes transduction with high efficiency. This mechanistic design reflects evolutionary advantages because multiple polypeptides could be accurately recognized via different sequences in the upper half of the TMD pocket.\n\nFinally, GIPR, combined with GLP-1R and GCGR, have been intensively studied as targets of dual- or tri- agonists (Skow et al., 2016; Alexiadou et al., 2019). Combined activation of GLP-1R and GIPR by dual agonists would provide synergistic and improved effects in glycemic and body weight control (Bastin and Andreelli, 2019). The GLP-1R/GIPR dual-agonists LY3298176 (developed by Eli Lilly) and NN9709 (developed by Novo Nordisk/Marcadia) as well as GLP-1R/GCGR/GIPR tri-agonist HM15211 (developed by Hamni Pharmaceuticals) are undergoing phase II or III clinical trials (Yang et al., 2021). The detailed structural information on GIPR reported here will certainly be of value to better understand the mode of actions of these therapeutic peptides.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene</td>\n      <td>GIPR_human</td>\n      <td>NCBI</td>\n      <td>NM_000164.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(Escherichia coli)</td>\n      <td>BL21\u00a0(DE3)</td>\n      <td>TIANGEN</td>\n      <td>Cat\u00a0#\u00a0CB105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK 293T</td>\n      <td>ATCC</td>\n      <td>Cat\u00a0#\u00a0CRL-3216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (hamster)</td>\n      <td>CHO-K1</td>\n      <td>ATCC</td>\n      <td>Cat\u00a0#\u00a0CCL-61</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (insect)</td>\n      <td>Sf9</td>\n      <td>Invitrogen</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (insect)</td>\n      <td>High-Five insect cells</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat\u00a0#\u00a0B85502</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastBac-HA-BRIL-TEV-2GSA-GIPR(22-421)T345F-15AA-LgBiT-TEV-OMBP-MBP</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastBac-HA-BRIL-TEV-2GSA-GIPR(22-421)\u221215AA-LgBiT-TEV-OMBP-MBP</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastBac-DNG\u03b1s</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastBac-G\u03b21-peptide 86</td>\n      <td>https://doi.org/10.1038/s41422-020-00442-0</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastBac-G\u03b32</td>\n      <td>https://doi.org/10.1038/s41422-020-00442-0</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PMESy4-Nb35</td>\n      <td>https://doi.org/10.1016/j.molcel.2020.01.013</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-GIPR (WT and mutants)\u22123Flag</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>GIP1-42</td>\n      <td>GenScript</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Protease Inhibitor Cocktail, EDTA-Free</td>\n      <td>TragetMol</td>\n      <td>Cat\u00a0#\u00a0C0001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Apyrase</td>\n      <td>Sigma-Aldrich (Merck)</td>\n      <td>Cat\u00a0# A6132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TCEP</td>\n      <td>Sigma-Aldrich (Merck)</td>\n      <td>Cat\u00a0# C4706</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lauryl maltose neopentylglycol (LMNG)</td>\n      <td>Anatrace</td>\n      <td>Cat\u00a0# NG310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholesterol hemisuccinate (CHS)</td>\n      <td>Anatrace</td>\n      <td>Cat\u00a0# CH210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glyco-diosgenin (GDN)</td>\n      <td>Anatrace</td>\n      <td>Cat\u00a0# GDN101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Amylose resin</td>\n      <td>NEB</td>\n      <td>Cat\u00a0# E8021L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ESF 921 culture medium</td>\n      <td>Expression Systems</td>\n      <td>Cat\u00a0# 96-00-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fetal bovine serum (FBS)</td>\n      <td>Gibco</td>\n      <td>Cat\u00a0# 10099\u2013141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM</td>\n      <td>Gibco</td>\n      <td>Cat\u00a0#\u00a012430\u2013054</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>X-tremeGHNE HP DNA Transfection Reagent</td>\n      <td>Sigma-Aldrich (Roche)</td>\n      <td>Cat\u00a0# 6366236001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Digitonin</td>\n      <td>Biosynth</td>\n      <td>Cat\u00a0# D-3203</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Salt active nuclease</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat\u00a0# SRE0015-5KU</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium pyruvate</td>\n      <td>Gibco</td>\n      <td>Cat\u00a0#\u00a011360\u20130\u201970</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine 2000 transfection reagent</td>\n      <td>Invitrogen</td>\n      <td>Cat\u00a0#\u00a011668\u2013019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>125I-GIP</td>\n      <td>PerkinElmer</td>\n      <td>Cat\u00a0#\u00a0NEX402010UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BSA</td>\n      <td>ABCONE</td>\n      <td>Cat\u00a0#\u00a0A23088-100G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Flag primary antibody</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat\u00a0#\u00a0F3165</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse Alexa Fluor 488 conjugated secondary antibody</td>\n      <td>Invitrogen</td>\n      <td>Cat\u00a0# A-21202</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>LANCE Ultra cAMP kit</td>\n      <td>PerkinElmer</td>\n      <td>Cat\u00a0#\u00a02675984</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2.1</td>\n      <td>doi:10.1126/science.aav7942</td>\n      <td>N/A</td>\n      <td>https://msg.ucsf.edu/em/software/motioncor2.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gctf v1.06</td>\n      <td>https://doi.org/10.1016/j.jsb.2015.11.003</td>\n      <td>N/A</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION-3.0-beta2</td>\n      <td>https://doi.org/10.1016/j.jsb.2012.09.006</td>\n      <td>N/A</td>\n      <td>https://www3.mrc-lmb.cam.ac.uk/relion/index.php/Download_%26_install</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>https://doi.org/10.1107/S0907444904019158</td>\n      <td>N/A</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>https://doi.org/10.1107/S0907444909052925</td>\n      <td>N/A</td>\n      <td>http://www.phenix-online.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>https://doi.org/10.1002/jcc.20084</td>\n      <td>N/A</td>\n      <td>https://www.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>Schr\u00f6dinger</td>\n      <td>N/A</td>\n      <td>https://pymol.org/2/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism v7.0</td>\n      <td>GraphPad Software</td>\n      <td>N/A</td>\n      <td>https://www.graphpad.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FreeSASA</td>\n      <td>doi:10.12688/f1000research.7931.1</td>\n      <td>N/A</td>\n      <td>http://freesasa.github.io/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gromacs 2018.5</td>\n      <td>doi:10.1016/j.softx.2015.06.001</td>\n      <td>N/A</td>\n      <td>https://manual.gromacs.org/2018.5/download.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Protein Preparation Wizard</td>\n      <td>Schr\u00f6dinger</td>\n      <td>N/A</td>\n      <td>https://www.schrodinger.com/products/protein-preparation-wizard</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CHARMM-GUI Membrane Builder</td>\n      <td>https://doi.org/10.1002/jcc.23702</td>\n      <td>N/A</td>\n      <td>https://charmm-gui.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CHARMM36-CAMP</td>\n      <td>https://doi.org/10.1021/ct200328p</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LINCS algorithm</td>\n      <td>https://doi.org/10.1021/ct700200b</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Semi-isotropic Parrinello-Rahman barostat</td>\n      <td>https://doi.org/10.1016/0022-3093(93)90111-A</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nSpodoptera frugiperda (Sf9) (Invitrogen) and High-Five insect cells (ThermoFisher Scientific) were cultured in ESF 921 serum-free medium (Expression Systems) at 27\u00b0C and 120 rpm.\n\n### Constructs\n\nThe human GIPR DNA (Genewiz) with one mutation (T345F) was cloned into a modified pFastBac vector (Invitrogen). The native signal peptide was replaced by the hemagglutinin signal peptide (HA) to enhance receptor expression. A BRIL fusion protein was added at the N-terminal of the ECD with a TEV protease site and 2GSA linker between them. Forty-five amino acids (Q422-C466) were truncated at the C\u00a0terminus where LgBiT was added with a 15-amino acid (15AA) polypeptide linker in between, followed by a TEV protease cleavage site and an optimized maltose binding protein\u2013maltose binding protein tag (OMBP-MBP). A dominant-negative bovine G\u03b1s (DNG\u03b1s)\u00a0(S54N, G226A, E268A, N271K, K274D, R280K, T284D, and I285T) construct was used to stabilize the complex (Zhou et al., 2020; Liang et al., 2018b). SmBiT34 (peptide 86, Promega) subunit was added to the C\u00a0terminus of rat G\u03b21 with a 15AA polypeptide linker between them. The modified rat G\u03b21 and bovine G\u03b32 were both cloned into a pFastBac vector.\n\n### Protein expression\n\nBaculoviruses containing the above complex construct were prepared by the Bac-to-Bac system (Invitrogen). GIPR and Gs heterotrimer were co-expressed in High-Five cells. Briefly, insect cells were grown in ESF 921 culture medium (Expression Systems) to a density of 3.2 \u00d7 106 cells/mL, and then cells were infected with four kinds of viral preparations: BRIL-TEV-2GSA-GIPR(22-421)T345F-15AA-LgBiT-TEV-OMBP-MBP, G\u03b1s, G\u03b21-peptide 86, and G\u03b32 at a ratio of 1:3:3:3. After 48 hr incubation at 27\u00b0C, the cells were collected by centrifugation and stored at \u221280\u00b0C until use.\n\n### Nb35 expression and purification\n\nNanobody-35 (Nb35) with a 6\u00d7 his tag at the C\u00a0terminus was expressed in the periplasm of E. coli BL21 (DE3) cells. Briefly, Nb35 target gene was transformed in the bacterium and amplified in TB culture medium with 100 \u03bcg/mL ampicillin, 2 mM MgCl2, 0.1% (w/v) glucose at 37\u00b0C, 180 rpm. When OD600 reached 0.7\u20131.2, 1 mM IPTG was added to induce expression followed by overnight incubation at 28\u00b0C. The cell pellet was then collected at 3000 rpm under 4\u00b0C and stored at \u221280\u00b0C. Nb35 was purified as by size-exclusion chromatography using a HiLoad 16/600 Superdex 75 column (GE Healthcare) with running buffer containing 20 mM HEPES, 100 mM NaCl, pH 7.4. Fractions of Nb35 were concentrated to ~3 mg/mL and quickly frozen in the liquid nitrogen with 10% glycerol and stored in \u221280\u00b0C.\n\n### Complex formation and purification\n\nCell pellets were lysed in a buffer consisting of 20 mM HEPES, 100 mM NaCl, pH 7.4, 10 mM MgCl2, 1 mM MnCl2, and 10% glycerol supplemented with protease inhibitor cocktail, EDTA-free (TragetMol). Subsequently, cell membranes were collected by ultracentrifugation at 4\u00b0C, 90,000 g for 35 min. The membranes were resuspended with a buffer containing 20 mM HEPES, 100 mM NaCl, pH 7.4, 10 mM MgCl2, 1 mM MnCl2, and 10% glycerol. The complex of GIPR-Gs was assembled by adding 15 \u03bcM GIP1-42 (GenScript), 100 \u03bcM TCEP, 25 mU/mL Apyrase (Sigma-Aldrich), 15 \u03bcg/mL Nb35, and 100 U salt active nuclease (Sigma-Aldrich) supplemented with protease inhibitor cocktail for 1.5 hr incubation at room temperature (RT). The preparation was then solubilized with 0.5% (w/v) lauryl maltose neopentylglycol (LMNG, Anatrace) and 0.1% (w/v) cholesterol hemisuccinate (CHS, Anatrace) with additional 1 \u03bcM GIP1-42 for 3 hr at 4\u00b0C. The supernatant was isolated by centrifugation at 90,000 g for 35 min, and the solubilized complex was incubated with amylose resin (NEB) for 2.5 hr at 4\u00b0C. After batch binding, the resin was collected by centrifugation at 550 g and loaded onto a gravity flow column. The resin in column was firstly washed with five column volumes of buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10% (v/v) glycerol, 5 mM MgCl2, 1 mM MnCl2, 25 \u03bcM TCEP, 3 \u03bcM GIP1-42, 0.1% (w/v) LMNG, and 0.02% (w/v) CHS. Subsequently, the resin was washed with 25 column volumes of buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10% (v/v) glycerol, 5 mM MgCl2, 1 mM MnCl2, 25 \u03bcM TCEP, 3 \u03bcM GIP1-42, 0.03% (w/v) LMNG, 0.01% (w/v) glyco-diosgenin (GDN, Anatrace),\u00a0and 0.008% (w/v) CHS. The protein was then incubated with a buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10% (v/v) glycerol, 5 mM MgCl2, 1 mM MnCl2, 25 \u03bcM TCEP, 50 \u03bcM GIP1-42, 10 \u03bcg/mL Nb35, 0.03% (w/v) LMNG, 0.01% (w/v) glyco-diosgenin, 0.008% (w/v) CHS, and 30 \u03bcg/mL His-tagged TEV protease on the column overnight at 4\u00b0C. The flow through was collected and concentrated to 500 \u03bcL using a 100 kDa filter (Merck Millipore). Size-exclusion chromatography was performed by loading the protein onto Superose 6 Increase 10/300 GL (GE Healthcare) column with running buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10 mM MgCl2, 100 \u03bcM TCEP, 5 \u03bcM GIP1-42, 0.00075% (w/v) LMNG, 0.00025% (w/v) glyco-diosgenin, 0.0002% (w/v) CHS, and 0.00025% digitonin (Anatrace). Monomeric GIPR-Gs complexes were collected and concentrated for cryo-EM analysis.\n\n### Data acquisition and image processing\n\nThe purified GIP1-42\u2013GIPR\u2013Gs\u2013Nb35 complex at a concentration of 6\u20137 mg/mL was mixed with 100 \u03bcM GIP1-42 at 4\u00b0C and applied to glow-discharged holey carbon grids (Quantifoil R1.2/1.3, Au 300 mesh) that were subsequently vitrified by plunging into liquid ethane using a Vitrobot Mark IV (ThermoFisher Scientific). A Titan Krios equipped with a Gatan K3 Summit direct electron detector was used to acquire Cryo-EM images. The microscope was operated at 300 kV accelerating voltage, at a nominal magnification of 46,685\u00d7 in counting mode, corresponding to a pixel size of 1.071 \u00c5. Totally, 8023 movies were obtained with a defocus range of \u22121.2 to \u22122.2 \u03bcm. An accumulated dose of 80 electrons per \u00c52 was fractionated into a movie stack of 36 frames.\n\nDose-fractionated image stacks were subjected to beam-induced motion correction using MotionCor2.1. A sum of all frames, filtered according to the exposure dose, in each image stack was used for further processing. Contrast transfer function parameters for each micrograph were determined by Gctf v1.06. Particle selection, 2D and 3D classifications were performed on a binned dataset with a pixel size of 2.142 \u00c5 using RELION-3.0-beta2. Auto-picking yielded 4,895,399 particle projections that were subjected to reference-free 2D classification to discard false-positive particles or particles categorized in poorly defined classes, producing 2,754,623 particle projections for further processing. This subset of particle projections was subjected to a round of maximum-likelihood-based three dimensional classifications with a pixel size of 2.142 \u00c5, resulting in one well-defined subset with 1,395,031 projections. Further 3D classifications with mask on the receptor produced one good subset accounting for 565,239 particles, which were subjected to another round of 3D classifications with mask on the ECD. A selected subset containing 295,021 projections was then subjected to 3D refinement and Bayesian polishing with a pixel size of 1.071 \u00c5. After the last round of refinement, the final map has an indicated global resolution of 2.94 \u00c5 at a Fourier shell correlation (FSC) of 0.143. Local resolution was determined using the Bsoft package with half maps as input maps.\n\n### Model building and refinement\n\nThe cryo-EM structure of GCGR\u2013Gs\u2013Nb35 complex (PDB code 6WPW)\u00a0(Qiao et al., 2020) and the crystal structure\u00a0of GIPR ECD (PDB code 2QKH) (Parthier et al., 2007) were used as the start for model building and refinement against the EM map. The model was docked into the EM density map using Chimera (Pettersen et al., 2004), followed by iterative manual adjustment and rebuilding in COOT (Emsley and Cowtan, 2004). Real space refinement was performed using Phenix (Adams et al., 2010). The model statistics were validated using MolProbity (Chen et al., 2010). Structural figures were prepared in Chimera and PyMOL (https://pymol.org/2/). The final refinement statistics are provided in Table 1.\n\n### cAMP accumulation assay\n\nGIP1-42-stimulated cAMP accumulation was measured by a LANCE Ultra cAMP kit (PerkinElmer). Briefly, HEK 293T cells were cultured in DMEM (Gibco) supplemented with 10% (v/v) fetal bovine serum (FBS, Gibco) and 1% (v/v) sodium pyruvate (Gibco) at 37\u00b0C, 5% CO2. Cells were seeded onto six-well cell culture plates and transiently transfected with different GIPR constructs using Lipofectamine 2000 transfection reagent (Invitrogen). All the mutant constructs were modified by single-point mutation in the setting of the WT construct (HA-Flag-3GSA-GIPR(22-466)). After 24 hr culture, the transfected cells were seeded onto 384-well microtiter plates at a density of 3000 cells per well in HBSS supplemented with 5 mM HEPES, 0.1% (w/v) bovine serum albumin (BSA), and 0.5 mM 3-isobutyl-1- methylxanthine. The cells were stimulated with different concentrations of GIP1-42 for 40 min at RT. Eu and Ulight were then diluted by cAMP detection buffer and added to the plates separately to terminate the reaction. Plates were incubated at RT for 40 min and the fluorescence intensity measured at 620 nm and 650 nm by an EnVision multilabel plate reader (PerkinElmer).\n\n### Whole-cell binding assay\n\nCHO-K1 cells were cultured in F12 medium with 10% FBS and seeded at a density of 30,000 cells/well in Isoplate-96 plates (PerkinElmer). The WT (HA-Flag-3GSA-GIPR(22-466)) or mutant GIPR were transiently transfected using Lipofectamine 2000 transfection reagent. The mutant construct was modified by single-point mutation in the setting of the WT construct. Twenty-four hours after transfection, cells were washed twice, and incubated with blocking buffer (F12 supplemented with 33 mM HEPES and 0.1% BSA, pH 7.4) for 2 hr at 37\u00b0C. For homogeneous binding, cells were incubated in binding buffer with a constant concentration of 125I-GIP (40 pM, PerkinElmer) and increasing concentrations of unlabeled GIP1-42 (3.57 pM\u20131 \u03bcM) at RT for 3 hr. Following incubation, cells were washed three times with ice-cold PBS and lysed by addition of 50 \u03bcL lysis buffer (PBS supplemented with 20 mM Tris\u2013HCl, 1% Triton X-100, pH 7.4). Fifty microliters of scintillation cocktail (OptiPhase SuperMix, PerkinElmer) was added, and the plates were subsequently counted for radioactivity (counts per minute, CPM) in a scintillation counter (MicroBeta2 Plate Counter, PerkinElmer).\n\n### \u03b2-Arrestin2 recruitment\n\nHEK 293T cells (3\u00a0\u00d7\u00a0106 cells/10 cm plate) were grown for 24 hr before transfection with 10.6 \u03bcg plasmid containing GIPR tagged with Rluc8 and \u03b2-arrestin with a Venus-tag in the N\u00a0terminus at a ratio of 1:9. Transiently transfected cells were then seeded onto poly-d-lysine coated 96-well culture plates (50,000 cells/well) in DMEM with 10% FBS. Cells were grown overnight before incubation in assay buffer (HBSS supplemented with 10 mM HEPES and 0.1% BSA, pH 7.4) for 30 min at 37\u00b0C. Coelentrazine-h (Yeasen Biotech) was added to a final concentration of 5 \u03bcM for 5 min before bioluminescence resonance energy transfer (BRET) readings were made using an EnVision plate reader (PerkinElmer). BRET baseline measurements were collected for 10 cycles prior to ligand addition. Following peptide addition, BRET was measured for 50 cycles. The BRET signal (ratio of 535 nm over 470 nm emission) was corrected to the baseline and then vehicle-treated condition to determine ligand-induced changes in BRET response. Concentration\u2013response values were obtained from the area-under-the-curve (AUC) of the responses elicited by GIP1-42.\n\n### Receptor surface expression\n\nCell surface expression was determined by flow cytometry to the N-terminal Flag tag on the WT GIPR (HA-Flag-3GSA-GIPR(22-466)) and its mutants transiently expressed in HEK 293T cells. All the mutant constructs were modified by single-point mutation in the setting of the WT construct. Briefly, approximately 2 \u00d7 105 cells were blocked with PBS containing 5% BSA (w/v) at RT for 15 min and then incubated with 1:300 anti-Flag primary antibody (diluted with PBS containing 5% BSA, Sigma-Aldrich) at RT for 1 hr. The cells were then washed three times with PBS containing 1% BSA (w/v) followed by 1 hr incubation with 1:1000 anti-mouse Alexa Fluor 488 conjugated secondary antibody (diluted with PBS containing 5% BSA, Invitrogen) at RT in the dark. After washing three times, cells were re-suspended in 200 \u03bcL PBS containing 1% BSA for detection by NovoCyte (Agilent) utilizing laser excitation and emission wavelengths of 488 nm and 530 nm, respectively. For each sample, 20,000 cellular events were collected, and the total fluorescence intensity of positive expression cell population was calculated. Data were normalized to the WT receptor.\n\n### Molecular dynamics simulations\n\nMolecular dynamic simulations were performed by Gromacs 2018.5. The peptide\u2013GIPR complexes were built based on the cryo-EM GIP\u2013GIPR\u2013Gs complex and prepared by the Protein Preparation Wizard (Schrodinger 2017\u20134) with the G protein and Nb35 nanobody removed. The receptor chain termini were capped with acetyl and methylamide, and the titratable residues were left in their dominant state at pH 7.0. The complexes were embedded in a bilayer composed of 200 POPC lipids and solvated with 0.15 M NaCl in explicitly TIP3P waters using CHARMM-GUI Membrane Builder (Wu et al., 2014). The CHARMM36-CAMP force filed (Guvench et al., 2011) was adopted for protein, peptides, lipids, and salt ions. The Particle Mesh Ewald (PME) method was used to treat all electrostatic interactions beyond a cut-off of 10 \u00c5, and the bonds involving hydrogen atoms were constrained using LINCS algorithm (Hess, 2008). The complex system was firstly relaxed using the steepest descent energy minimization, followed by slow heating of the system to 310 K with restraints. The restraints were reduced gradually over 50 ns. Finally, restrain-free production run was carried out for each simulation, with a time step of 2 fs in the NPT ensemble at 310 K and 1 bar using the Nose\u2013Hoover thermostat and the semi-isotropic Parrinello\u2013Rahman barostat (Aoki and Yonezawa, 1992), respectively. The buried interface areas were calculated with FreeSASA (Mitternacht, 2016) using the Sharke\u2013Rupley algorithm with a probe radius of 1.2 \u00c5. The last 700 ns trajectory of each simulation was used to root mean square fluctuation (RMSF) calculation.\n\n### Statistical analysis\n\nAll functional data were presented as means \u00b1 standard error of the mean (S.E.M.). Statistical analysis was performed using GraphPad Prism 7 (GraphPad Software). Concentration\u2013response curves were evaluated with a three-parameter logistic equation. The significance was determined with either two-tailed Student\u2019s t-test or one-way ANOVA. Significant difference is accepted at p<0.001.\n",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "9d73f1ad-753b-4c4c-b5d1-bade35aecfe1",
+      "submission_id": "22bf801a-5139-4c16-8da7-4982f9bbd4a1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Drew, Stockholm University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68719.sa1](https://doi.org/10.7554/eLife.68719.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper describes the cryo-EM structure of the class B receptor glucose-dependent insulinotropic polypeptide (GIP)-receptor in complex with the Gs heterotrimer and the 42 amino acid hormone GIP, which is an incretin and stimulates insulin secretion in a glucose-dependent manner. The complex structure provides important insights into ligand recognition, receptor activation and transducer coupling. In particular, the interaction of GIP with GIPR reveals previously unresolved details of how the hormone is recognized by the receptor, and the structural differences compared to the previously obtained structure of the incretin glucagon-like peptide 1-Gs complex.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural insights into hormone recognition by the human glucose-dependent insulinotropic polypeptide receptor\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Arun Shukla (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) As the authors have pointed out that map density for some of the ECD was poor. Currently the structure for the ECD has been modelled from previously determined structures of closely related GLP/GCGR. However, after inspection in Coot these models actually do not fit part of the ECD density that is present, indicating some differences here. Furthermore, detailed interactions are discussed in the paper between the ECD and GIP peptide that cannot be validated by the present maps as the location of some the side-chains are ambiguous. It is essential that the authors either I) improve the current cryo EM maps and/or re-model the structure to more faithfully fit the map density. In this regard, some further experimental and/or computational support might be needed if it is not possible to improve the map quality. The text should be appropriately adjusted.\n\n2) It would be helpful to clarify how significant is the ambiguity in the C-terminal end of the modelled GIP peptide? This raises an important point since only 30 out of the 42 GIP residues could be modelled. Is 30aa of the GIP peptide enough for full activation? The GLP-1 is only 30 or 31 amino acids long. Is it known why the GIP peptide is longer as is the length of this peptide important for specificity, if so, then the poorly modelled region at the end of the peptide might be significant and should be clarified.\n",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7562a59a-1616-4039-a9b7-3cc6b87c98fa",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C1",
+      "claim": "Glucose-dependent insulinotropic polypeptide (GIP) is a 42-amino acid peptide hormone that plays crucial role in glucose regulation and fatty acid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose-dependent insulinotropic polypeptide (GIP) is a 42-amino acid peptide hormone that plays crucial role in glucose regulation and fatty acid metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about GIP supported by scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "68f491cd-4766-4831-88cb-d29771c21d3e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C2",
+      "claim": "In response to food intake, GIP is secreted by intestinal K cells to enhance insulin secretion and peripheral fatty acid uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to food intake, GIP is secreted by intestinal K cells to enhance insulin secretion and peripheral fatty acid uptake (Kim et al., 2007), as well as a number of neuronal effects (Faivre and H\u00f6lscher, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2007 and Faivre and H\u00f6lscher, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3068a4b9-6605-47f7-a786-e7a29299096e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C3",
+      "claim": "GIP has neuronal effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to food intake, GIP is secreted by intestinal K cells to enhance insulin secretion and peripheral fatty acid uptake (Kim et al., 2007), as well as a number of neuronal effects (Faivre and H\u00f6lscher, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Faivre and H\u00f6lscher, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "eb7dd90f-b64a-4603-9880-0a2aa2443594",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C4",
+      "claim": "The pleiotropic functions of GIP are mediated by its cognate receptor (GIPR), a member of class B1 G protein-coupled receptors (GPCRs).",
+      "claim_type": "EXPLICIT",
+      "source": "The pleiotropic functions of GIP is mediated by its cognate receptor (GIPR), a member of class B1 G protein-coupled receptors (GPCRs) that also include glucagon receptor (GCGR) and glucagon-like peptide-1 receptor (GLP-1R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GIPR classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3263a2b1-55fa-4ef7-ae9f-e8972b7bf7e7",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C5",
+      "claim": "Class B1 GPCRs include glucagon receptor (GCGR) and glucagon-like peptide-1 receptor (GLP-1R).",
+      "claim_type": "EXPLICIT",
+      "source": "The pleiotropic functions of GIP is mediated by its cognate receptor (GIPR), a member of class B1 G protein-coupled receptors (GPCRs) that also include glucagon receptor (GCGR) and glucagon-like peptide-1 receptor (GLP-1R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about class B1 GPCR classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4597bcf0-3499-4061-8475-feb95de5762b",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C6",
+      "claim": "GIPR, together with GCGR and GLP-1R, forms the central endocrine network in regulating insulin sensitivity and energy homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "GIPR, together with GCGR and GLP-1R, forms the central endocrine network in regulating insulin sensitivity and energy homeostasis, and they are validated drug targets (Lagerstr\u00f6m and Schi\u00f6th, 2008; Finan et al., 2016; Longuet et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lagerstr\u00f6m and Schi\u00f6th, 2008; Finan et al., 2016; Longuet et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "8ffed774-c6ab-4622-a04e-316a1386670d",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C7",
+      "claim": "GIPR, GCGR, and GLP-1R are validated drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "GIPR, together with GCGR and GLP-1R, forms the central endocrine network in regulating insulin sensitivity and energy homeostasis, and they are validated drug targets (Lagerstr\u00f6m and Schi\u00f6th, 2008; Finan et al., 2016; Longuet et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lagerstr\u00f6m and Schi\u00f6th, 2008; Finan et al., 2016; Longuet et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "99d76a02-87da-4bc3-823c-627abd22581a",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C8",
+      "claim": "A number of GLP-1R selective ligands have been developed successfully to treat type 2 diabetes and obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of GLP-1R selective ligands have been developed successfully to treat type 2 diabetes and obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GLP-1R drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "360073cf-48a9-4f8d-b305-aed3c32483cd",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C9",
+      "claim": "Peptide ligands that bind both GIPR and GLP-1R show better clinical efficacy than the GLP-1R agonist alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouragingly, peptide ligands that bind both GIPR and GLP-1R show better clinical efficacy than the GLP-1R agonist alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact based on clinical observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4e9aadf1-9e1e-4198-abb4-cb33b2bbe296",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C10",
+      "claim": "GIPR contains a large extracellular domain (ECD) and a 7-transmembrane domain (TMD).",
+      "claim_type": "EXPLICIT",
+      "source": "GIPR contains a large extracellular domain (ECD) and a 7-transmembrane domain (TMD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about GIPR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "74e11ffa-cbe5-4695-92a4-e49d8413e7c6",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C11",
+      "claim": "Both the ECD and TMD of GIPR are involved in ligand recognition and receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are involved in ligand recognition and receptor activation (Parthier et al., 2009; Koth et al., 2012; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Parthier et al., 2009; Koth et al., 2012; Yang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "143884eb-5aec-42b2-929a-758e167e7966",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C12",
+      "claim": "Cryo-electron microscopy (cryo-EM) structures of GCGR and GLP-1R have been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron microscopy (cryo-EM) structures of GCGR and GLP-1R, as well as several other class B1 GPCRs have been solved, providing a general mechanism of two-domain model for peptide recognition and receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "ab4ce272-d54f-455f-842c-ea9e65e391ea",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C13",
+      "claim": "Cryo-EM structures of class B1 GPCRs provide a general mechanism of two-domain model for peptide recognition and receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron microscopy (cryo-EM) structures of GCGR and GLP-1R, as well as several other class B1 GPCRs have been solved, providing a general mechanism of two-domain model for peptide recognition and receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the solved structures of multiple class B1 GPCRs.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "2dc2b78c-fa79-452a-a664-01e9274ecc01",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C14",
+      "claim": "GIP displays an exquisite sequence specificity towards GIPR as it does not bind to other class B1 GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GIP displays an exquisite sequence specificity towards GIPR as it does not bind to other class B1 GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact about GIP binding specificity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "693d0431-7eaa-4266-8233-2d44b86ff2f9",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C15",
+      "claim": "The cryo-EM structure of the human GIPR in complex with GIP and a Gs heterotrimer was determined at a global resolution of 2.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the cryo-EM structure of the human GIPR in complex with GIP and a Gs heterotrimer at a global resolution of 2.9 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental result of the study, supported by the cryo-EM data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "861d8453-d497-4083-9226-ed4f6c56905b",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C16",
+      "claim": "GIP adopts a single straight helix with its N terminus dipped into the receptor transmembrane domain (TMD).",
+      "claim_type": "EXPLICIT",
+      "source": "GIP adopts a single straight helix with its N terminus dipped into the receptor transmembrane domain (TMD), while the C terminus is closely associated with the extracellular domain and extracellular loop 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e60e5002-6485-4685-a0c4-334b42f8109e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C17",
+      "claim": "The C terminus of GIP is closely associated with the extracellular domain and extracellular loop 1 of GIPR.",
+      "claim_type": "EXPLICIT",
+      "source": "GIP adopts a single straight helix with its N terminus dipped into the receptor transmembrane domain (TMD), while the C terminus is closely associated with the extracellular domain and extracellular loop 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "df560487-35e8-4c56-b297-3a7adcf12c8e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C18",
+      "claim": "GIPR employs conserved residues in the lower half of the TMD pocket to recognize the common segments shared by GIP homologous peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "GIPR employs conserved residues in the lower half of the TMD pocket to recognize the common segments shared by GIP homologous peptides, while uses non-conserved residues in the upper half of the TMD pocket to interact with residues specific for GIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis and comparison with homologous receptors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "2ba9628f-1584-41b0-b5f3-72f88ef1022e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C19",
+      "claim": "GIPR uses non-conserved residues in the upper half of the TMD pocket to interact with residues specific for GIP.",
+      "claim_type": "EXPLICIT",
+      "source": "GIPR employs conserved residues in the lower half of the TMD pocket to recognize the common segments shared by GIP homologous peptides, while uses non-conserved residues in the upper half of the TMD pocket to interact with residues specific for GIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis and comparison with homologous receptors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "1745746e-e122-4b2d-a7d1-4443cd4b8047",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C20",
+      "claim": "The T345F mutation does not affect the ligand binding or potency of GIP1-42 in cAMP accumulation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation does not affect the ligand binding or potency of GIP1-42 in cAMP accumulation assay (Figure 1\u2014figure supplement 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "6279cc31-f5a1-468b-bb64-7a49a2a1b217",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C21",
+      "claim": "The activity of the modified GIPR construct was confirmed by cAMP accumulation assay showing a response similar to that of the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of the modified GIPR construct was confirmed by cAMP accumulation assay showing a response similar to that of the wild-type (WT; Figure 1\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "686b8f79-e49c-4670-a4a7-7b82d7623e51",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C22",
+      "claim": "A total of 295,021 particles were selected after 3D refinement and polishing, leading to an overall resolution of 2.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 295,021 particles were selected after 3D refinement and polishing, leading to an overall resolution of 2.9 \u00c5 (Figure 1\u2014figure supplement 2C,D and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the result of cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "9147bfca-e7d7-48fb-b89a-c17abcc42f96",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C23",
+      "claim": "Apart from the \u03b1-helical domain (AHD) of G\u03b1s which is flexible in most cryo-EM GPCR\u2013G protein complex structures, the bound GIP1-42, GIPR, and Gs were well defined in the EM density maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the \u03b1-helical domain (AHD) of G\u03b1s which is flexible in most cryo-EM GPCR\u2013G protein complex structures, the bound GIP1-42, GIPR, and Gs were well defined in the EM density maps (Figure 1, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM density maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4a5b210c-4f28-471c-959c-7954c21687d1",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C24",
+      "claim": "The final model contains 30 GIP1-42 residues, the G\u03b1\u03b2\u03b3 subunits of Gs, and the GIPR residues from Q30ECD to S4158.66b.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model contains 30 GIP1-42 residues, the G\u03b1\u03b2\u03b3 subunits of Gs, and the GIPR residues from Q30ECD to S4158.66b (class B GPCR numbering in superscript) (Wootten et al., 2013), with six amino acid residues missing at helix 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the content of the final structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "7b595e8d-7527-46f3-9c1e-6c9a2f75e493",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C25",
+      "claim": "Six amino acid residues are missing at helix 8 in the final model.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model contains 30 GIP1-42 residues, the G\u03b1\u03b2\u03b3 subunits of Gs, and the GIPR residues from Q30ECD to S4158.66b (class B GPCR numbering in superscript) (Wootten et al., 2013), with six amino acid residues missing at helix 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the content of the final structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "a0725fa7-253c-461e-8142-44c6b3b3437e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C26",
+      "claim": "The density of ECD is relatively poor owing to its intrinsic flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "As a general feature in most reported class B1 GPCR\u2013Gs complex structures (Qiao et al., 2020; Zhang et al., 2017a; Zhao et al., 2019; Ma et al., 2020), the density of ECD is relatively poor owning to its intrinsic flexibility, which limited the accuracy in model building for the GIPR ECD region compared to other regions of the complex structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a common observation in class B1 GPCR structures, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e84d7718-ccd2-4e80-88fa-d3548f51373e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C27",
+      "claim": "Notable conformation difference from GCGR or GLP-1R was observed in the extracellular loop 1 (ECL1).",
+      "claim_type": "EXPLICIT",
+      "source": "Notable conformation difference from GCGR (Qiao et al., 2020) or GLP-1R (Zhang et al., 2017a) was observed in the extracellular loop 1 (ECL1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed through structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3605f3dc-5792-40c9-93b4-33d5f5e845bd",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C28",
+      "claim": "Y1P of GIP points to TMs 2\u20133 and forms hydrogen bonds with R1902.67b and Q2243.37b.",
+      "claim_type": "EXPLICIT",
+      "source": "Y1P (P indicates that the residue belongs to the peptide ligand) of GIP points to TMs 2\u20133, forms hydrogen bonds with R1902.67b and Q2243.37b, and makes hydrophobic contacts with V2273.40b and W2965.36b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "874aef13-991f-48ae-9aca-684d00ef5e91",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C29",
+      "claim": "Y1P of GIP makes hydrophobic contacts with V2273.40b and W2965.36b.",
+      "claim_type": "EXPLICIT",
+      "source": "Y1P (P indicates that the residue belongs to the peptide ligand) of GIP points to TMs 2\u20133, forms hydrogen bonds with R1902.67b and Q2243.37b, and makes hydrophobic contacts with V2273.40b and W2965.36b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "742ebeae-82ef-4e28-942e-4de0eacdf958",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C30",
+      "claim": "Mutant W296A decreased the potency of GIP-induced cAMP signaling by 50-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation received support of the mutagenesis study, where mutant W296A decreased the potency of GIP-induced cAMP signaling by 50-fold (Figure 2D), and the reductions in mutants R190A and Q224A were 71- and 5-fold, respectively, as reported in a previous report (Yaqub et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "ea914611-328d-44ae-a7d2-8eabb2398066",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C31",
+      "claim": "Mutant R190A decreased the potency of GIP-induced cAMP signaling by 71-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation received support of the mutagenesis study, where mutant W296A decreased the potency of GIP-induced cAMP signaling by 50-fold (Figure 2D), and the reductions in mutants R190A and Q224A were 71- and 5-fold, respectively, as reported in a previous report (Yaqub et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yaqub et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e2662e36-696e-4b4c-a8b4-d553f988e35d",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C32",
+      "claim": "Mutant Q224A decreased the potency of GIP-induced cAMP signaling by 5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation received support of the mutagenesis study, where mutant W296A decreased the potency of GIP-induced cAMP signaling by 50-fold (Figure 2D), and the reductions in mutants R190A and Q224A were 71- and 5-fold, respectively, as reported in a previous report (Yaqub et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yaqub et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "fa5a376b-6e04-4ae3-9c2b-75d1bcf57979",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C33",
+      "claim": "N-terminal truncation of either Y1P or both Y1P and A2P led to reduced efficacy or loss of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "N-terminal truncation of either Y1P or both Y1P and A2P led to reduced efficacy or loss of activity (Kerr et al., 2011; Gabe et al., 2020), highlighting a crucial role of Y1P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kerr et al., 2011; Gabe et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "f08f84de-dc42-4f41-b812-a24da3256c0c",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C34",
+      "claim": "E3P, D9P, and D15P are three negatively charged residues in the N-terminal half of GIP and form salt bridges with R1832.60b, R3707.35b, and R289ECL2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "E3P, D9P, and D15P are three negatively charged residues in the N-terminal half of GIP and form salt bridges with R1832.60b, R3707.35b, and R289ECL2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "fa889b02-eb86-44a7-bb01-6f8224e36ace",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C35",
+      "claim": "Removal of salt bridges by alanine substitution at R1832.60b greatly reduced GIP potency by 76-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of these salt bridges by alanine substitution at either R1832.60b (Yaqub et al., 2010) or R3707.35b (Figure 2D) greatly reduced GIP potency (by 76- and 55-fold, respectively), whereas the effect on mutant R289A was mild (6-fold, Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yaqub et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3d81efd5-863b-47d4-8875-8d630c33bada",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C36",
+      "claim": "Removal of salt bridges by alanine substitution at R3707.35b greatly reduced GIP potency by 55-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of these salt bridges by alanine substitution at either R1832.60b (Yaqub et al., 2010) or R3707.35b (Figure 2D) greatly reduced GIP potency (by 76- and 55-fold, respectively), whereas the effect on mutant R289A was mild (6-fold, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "5c99593b-5ae3-4c09-a776-1bea8fa0869f",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C37",
+      "claim": "The effect on mutant R289A was mild (6-fold reduction in GIP potency).",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of these salt bridges by alanine substitution at either R1832.60b (Yaqub et al., 2010) or R3707.35b (Figure 2D) greatly reduced GIP potency (by 76- and 55-fold, respectively), whereas the effect on mutant R289A was mild (6-fold, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "d57b2af6-9bec-4e18-ab7f-e665b1970260",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C38",
+      "claim": "Polar interactions occurred between S8P and N290ECL2 as well as Y10P and Q1381.40b.",
+      "claim_type": "EXPLICIT",
+      "source": "Polar interactions also occurred between S8P and N290ECL2 as well as Y10P and Q1381.40b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4db81b89-b414-44fa-be83-68a13d3beb05",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C39",
+      "claim": "The GIP\u2013TMD interface was stabilized by a complementary nonpolar network involving TM1 (L1341.36b, L1371.39b, and Y1411.43b) and TM7 (L3747.39b and I3787.43b) via A2P, F6P, and Y10P of GIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The GIP\u2013TMD interface was further stabilized by a complementary nonpolar network involving TM1 (L1341.36b, L1371.39b, and Y1411.43b) and TM7 (L3747.39b and I3787.43b) via A2P, F6P, and Y10P of GIP (Figure 2C), in line with decreased ligand potencies observed in Y141A (by 103-fold), L374A (by 41-fold), and I378A (by 8-fold) mutants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and supported by mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "af29f6e7-6acf-4b7e-b6fc-e856b3675761",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C40",
+      "claim": "Mutant Y141A decreased ligand potency by 103-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The GIP\u2013TMD interface was further stabilized by a complementary nonpolar network involving TM1 (L1341.36b, L1371.39b, and Y1411.43b) and TM7 (L3747.39b and I3787.43b) via A2P, F6P, and Y10P of GIP (Figure 2C), in line with decreased ligand potencies observed in Y141A (by 103-fold), L374A (by 41-fold), and I378A (by 8-fold) mutants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "1aa1dccc-0f50-4518-8ad0-aee1162333a4",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C41",
+      "claim": "Mutant L374A decreased ligand potency by 41-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The GIP\u2013TMD interface was further stabilized by a complementary nonpolar network involving TM1 (L1341.36b, L1371.39b, and Y1411.43b) and TM7 (L3747.39b and I3787.43b) via A2P, F6P, and Y10P of GIP (Figure 2C), in line with decreased ligand potencies observed in Y141A (by 103-fold), L374A (by 41-fold), and I378A (by 8-fold) mutants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "b708aa7f-7b17-40f1-af54-b1d3cd7a7a82",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C42",
+      "claim": "Mutant I378A decreased ligand potency by 8-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The GIP\u2013TMD interface was further stabilized by a complementary nonpolar network involving TM1 (L1341.36b, L1371.39b, and Y1411.43b) and TM7 (L3747.39b and I3787.43b) via A2P, F6P, and Y10P of GIP (Figure 2C), in line with decreased ligand potencies observed in Y141A (by 103-fold), L374A (by 41-fold), and I378A (by 8-fold) mutants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "36c38fdd-1193-4b6a-9a47-f3395d6fc70c",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C43",
+      "claim": "The C-terminal half of GIP was clasped by the GIPR ECD, closely resembling the crystal structure of GIP\u2013GIPR ECD (PDB code: 2QKH).",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal half of GIP was clasped by the GIPR ECD, closely resembling the crystal structure of GIP\u2013GIPR ECD (PDB code: 2QKH) (Parthier et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed through structural comparison with the crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "0cff9c4f-6310-4e0b-b2e2-aee40bf76ea4",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C44",
+      "claim": "The hydrophobic residues (F22P, V23P, L26P, and L27P) in the C-terminal half of GIP occupy a complementary binding groove of the GIPR ECD, consisting of a series of hydrophobic residues (L35, Y36, W39, M67, Y68, Y87, L88, P89, and W90).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the interaction patterns observed in other class B1 GPCRs (Parthier et al., 2007), the hydrophobic residues (F22P, V23P, L26P, and L27P) in the C-terminal half of GIP occupy a complementary binding groove of the GIPR ECD, consisting of a series of hydrophobic residues (L35, Y36, W39, M67, Y68, Y87, L88, P89, and W90).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4afe0513-5890-4bc6-8ec3-ef38e9460e37",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C45",
+      "claim": "Alanine substitutions in W39, D66, and Y68 significantly reduced the potency of GIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitutions in W39, D66, and Y68 significantly reduced the potency of GIP (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mutagenesis data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "586b8638-44fa-4bc8-9930-01f1d6a8c3e8",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C46",
+      "claim": "Several polar contacts including H18P-Y36 and Q20P-N124 were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, several polar contacts including H18P-Y36 and Q20P-N124 were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "a58fda05-a995-4054-a296-58204785ceec",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C47",
+      "claim": "The ECL1 stands upwards to approach the N-terminal \u03b1-helix of ECD and forms hydrogen bonds with the side chain of Y36.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the cryo-EM map suggests that the ECL1 stands upwards to approach the N-terminal \u03b1-helix of ECD and forms hydrogen bonds with the side chain of Y36 (Figure 2A,B), resulting in a close contact between TMD and ECD for GIP-bound GIPR (interface area = 571 \u00c52), significantly larger than that of GLP-1-bound GLP-1R (362 \u00c52), reinforcing the importance of ECD in GIP recognition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "ace61fc5-8073-437c-8bf1-b94dc579fdd0",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C48",
+      "claim": "The interface area between TMD and ECD for GIP-bound GIPR is 571 \u00c52, significantly larger than that of GLP-1-bound GLP-1R (362 \u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the cryo-EM map suggests that the ECL1 stands upwards to approach the N-terminal \u03b1-helix of ECD and forms hydrogen bonds with the side chain of Y36 (Figure 2A,B), resulting in a close contact between TMD and ECD for GIP-bound GIPR (interface area = 571 \u00c52), significantly larger than that of GLP-1-bound GLP-1R (362 \u00c52), reinforcing the importance of ECD in GIP recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "ff67c54a-5d18-4762-a0e5-38f1f5c7db77",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C49",
+      "claim": "GIPR shares ~50% sequence similarity with GCGR, especially in the TMD region (75%).",
+      "claim_type": "EXPLICIT",
+      "source": "GIPR shares ~50% sequence similarity with GCGR, especially in the TMD region (75%); thus, GCGR structures published previously provide a good template for the present study (Figure 2\u2014figure supplement 2; Qiao et al., 2020; Hilger et al., 2020; Jazayeri et al., 2016; Zhang et al., 2018; Chang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "79b2be1a-52b2-43db-ba9f-1f5e20fd3eb9",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C50",
+      "claim": "The TMD of activated GIPR exhibits a conformation similar to that of GCGR activated by glucagon or ZP3780 (C\u03b1 RMSD = 1.2 and 0.7 \u00c5, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "It was found the TMD of activated GIPR exhibits a conformation similar to that of GCGR activated by glucagon or ZP3780 (C\u03b1 RMSD = 1.2 and 0.7 \u00c5, respectively) (Qiao et al., 2020; Hilger et al., 2020) and distinct from that of GCGR bound by the negative allosteric modulator NNC0640 or partial agonist NNC1702 (C\u03b1 RMSD = 4.0 and 3.9 \u00c5, respectively) (Zhang et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with GCGR structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "5a8840ca-3de9-41cb-ba40-3c26b51e6d42",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C51",
+      "claim": "The TMD of activated GIPR is distinct from that of GCGR bound by the negative allosteric modulator NNC0640 or partial agonist NNC1702 (C\u03b1 RMSD = 4.0 and 3.9 \u00c5, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "It was found the TMD of activated GIPR exhibits a conformation similar to that of GCGR activated by glucagon or ZP3780 (C\u03b1 RMSD = 1.2 and 0.7 \u00c5, respectively) (Qiao et al., 2020; Hilger et al., 2020) and distinct from that of GCGR bound by the negative allosteric modulator NNC0640 or partial agonist NNC1702 (C\u03b1 RMSD = 4.0 and 3.9 \u00c5, respectively) (Zhang et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with GCGR structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "075761dd-1ab9-4523-8283-6024ac23c4eb",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C52",
+      "claim": "Facilitated by Gly7.50b located in the middle of TM7, the extracellular half of TM7 bends towards TM6 by 8.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Facilitated by Gly7.50b located in the middle of TM7, the extracellular half of TM7 bends towards TM6 by 8.0 \u00c5 (measured by C\u03b1 atom of Gly7.32b) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3dd8d1bc-0a98-493d-b022-f775f9539e1b",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C53",
+      "claim": "The extracellular tip of TM1 was extended by one turn and moved inward by 8.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the extracellular tip of TM1 was extended by one turn and moved inward by 8.0 \u00c5 (measured by C\u03b1 atom of the residues at 1.30b) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "7db30c28-5737-4192-84ec-8faa2d1737cc",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C54",
+      "claim": "The sharp kink in the middle of TM6 led to an outward movement of its intracellular portion measured by C\u03b1 atom of R3366.35b (18.9 \u00c5, similar to that of other Gs-coupled class B1 receptors).",
+      "claim_type": "EXPLICIT",
+      "source": "In the intracellular side, the sharp kink in the middle of TM6 led to an outward movement of its intracellular portion measured by C\u03b1 atom of R3366.35b (18.9 \u00c5, similar to that of other Gs-coupled class B1 receptors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure and compared with other structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "5b729fe8-0f34-48ae-9803-15a74f0d967a",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C55",
+      "claim": "The outward movement of TM6 was accompanied by the movement of the intracellular tip of TM5 toward TM6 by 7.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "This was accompanied by the movement of the intracellular tip of TM5 toward TM6 by 7.6 \u00c5 (measured by C\u03b1 atom of the residues at 5.67b), thereby creating an intracellular cavity for G protein coupling (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "ab0c114f-2718-4db9-9b9f-019b9cdec649",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C56",
+      "claim": "Gs protein is anchored by the \u03b15 helix of G\u03b1s (G\u03b1H5), thereby fitting to the cytoplasmic cavity formed by TMs 3, 5, and 6, intracellular loops (ICLs) 1\u20132 and H8.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, Gs protein is anchored by the \u03b15 helix of G\u03b1s (G\u03b1H5), thereby fitting to the cytoplasmic cavity formed by TMs 3, 5, and 6, intracellular loops (ICLs) 1\u20132 and H8 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "0950ca57-c0f1-4f8b-808b-21c3a2ba09ec",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C57",
+      "claim": "The GIPR\u2013Gs complex shows a similar receptor\u2013G protein interface as other reported class B1 receptor structures such as GLP-1R, GLP-2R, GCGR, PTH1R, SCTR, and GHRHR, suggesting a common G protein signaling mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the GIPR\u2013Gs complex shows a similar receptor\u2013G protein interface as other reported class B1 receptor structures such as GLP-1R (Zhang et al., 2020), GLP-2R (glucagon-like peptide-2 receptor) (Sun et al., 2020), GCGR (Qiao et al., 2020), PTH1R (Zhao et al., 2019), SCTR (secretin receptor) (Dong et al., 2020), and GHRHR (growth hormone-releasing hormone receptor) (Zhou et al., 2020), suggesting a common G protein signaling mechanism (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural comparison with other class B1 receptor structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "14478b4e-0906-4db6-a907-a94d240380af",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C58",
+      "claim": "The hydrophobic residues at the C-terminal of G\u03b1H5 (L388G\u03b1H5, Y391G\u03b1H5, L393G\u03b1H5, and L394G\u03b1H5) insert into a small hydrophobic pocket formed by Y2403.53b, L2413.54b, L2443.57b, L2453.58b, I3175.58b, I3205.60b, L3215.61b, and L3255.65b.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrophobic residues at the C-terminal of G\u03b1H5 (L388G\u03b1H5, Y391G\u03b1H5, L393G\u03b1H5, and L394G\u03b1H5) insert into a small hydrophobic pocket formed by Y2403.53b, L2413.54b, L2443.57b, L2453.58b, I3175.58b, I3205.60b, L3215.61b, and L3255.65b (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4c310f56-6985-40e2-8a7e-787fbe920c16",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C59",
+      "claim": "The side chain of R3386.37b points to G\u03b1s and makes one hydrogen bond with L394G\u03b1H5.",
+      "claim_type": "EXPLICIT",
+      "source": "The side chain of R3386.37b points to G\u03b1s and makes one hydrogen bond with L394G\u03b1H5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "2f2702d5-910b-4019-8ba2-48dd30abb3ae",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C60",
+      "claim": "The interaction between R380G\u03b1H5 and ICL2 results in five hydrogen bonds with the backbone atoms of L2453.58b, V2463.59b, L2473.60b, and V248ICL2, significantly more than that observed in GLP-1R, SCTR, or GCGR.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note is that the interaction between R380G\u03b1H5 and ICL2 results in five hydrogen bonds with the backbone atoms of L2453.58b, V2463.59b, L2473.60b, and V248ICL2, significantly more than that observed in GLP-1R, SCTR, or GCGR (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure and compared with other structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3ad2921c-8a3b-4245-bd8b-337d67aee559",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C61",
+      "claim": "The polar residues in ICL2 (S251ICL2 and E253ICL2) produce two hydrogen bonds with K34 and Q35 of G\u03b1s.",
+      "claim_type": "EXPLICIT",
+      "source": "The polar residues in ICL2 (S251ICL2 and E253ICL2) produce two hydrogen bonds with K34 and Q35 of G\u03b1s, while H8 forms several hydrogen bonds with ICL1, then contacts with G\u03b2 (E3988.49b-R164ICL1-D312G\u03b2, E4028.53b-R164ICL1-D312G\u03b2) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "0f0f3840-9b07-4299-9bc1-c6d542fbfc1f",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C62",
+      "claim": "H8 forms several hydrogen bonds with ICL1, then contacts with G\u03b2 (E3988.49b-R164ICL1-D312G\u03b2, E4028.53b-R164ICL1-D312G\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "The polar residues in ICL2 (S251ICL2 and E253ICL2) produce two hydrogen bonds with K34 and Q35 of G\u03b1s, while H8 forms several hydrogen bonds with ICL1, then contacts with G\u03b2 (E3988.49b-R164ICL1-D312G\u03b2, E4028.53b-R164ICL1-D312G\u03b2) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4f19c79d-9aa0-4cfe-a545-ccf8910e2250",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C63",
+      "claim": "GIP, GLP-1, and glucagon all adopt a single continuous helix, with the N terminus penetrating to the TMD core to the same depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposing the TMD of GIP-bound GIPR with that of GLP-1-bound GLP-1R (Zhang et al., 2020) or glucagon-bound GCGR (Qiao et al., 2020) displays a similar ligand-binding pocket and the three peptides all adopt a single continuous helix, with the N terminus penetrating to the TMD core to the same depth, while the C terminus anchors the ECD and ECL1 in a receptor-specific manner (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed through structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "d1451c71-27d1-4fcc-b1cd-b0586fd82ae4",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C64",
+      "claim": "The C terminus of GIP, GLP-1, and glucagon anchors the ECD and ECL1 in a receptor-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposing the TMD of GIP-bound GIPR with that of GLP-1-bound GLP-1R (Zhang et al., 2020) or glucagon-bound GCGR (Qiao et al., 2020) displays a similar ligand-binding pocket and the three peptides all adopt a single continuous helix, with the N terminus penetrating to the TMD core to the same depth, while the C terminus anchors the ECD and ECL1 in a receptor-specific manner (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed through structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "b4f80c57-db0f-468f-af09-5e0b8df73de8",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C65",
+      "claim": "The ECL1 of GIPR stands upwards in line with TMs 2 and 3 and moves towards the TMD core by 5~7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the ECL1 of GIPR stands upwards in line with TMs 2 and 3 and moves towards the TMD core by 5~7 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "38e6b172-ad7c-4bf0-b191-f9062045c139",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C66",
+      "claim": "The movement of ECL1, together with a \u03b1-helical extension in TM1 by six residues, allows GIP to shift to TM1 by 2.7 and 3.3 \u00c5 relative to GLP-1 and glucagon, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a movement, together with a \u03b1-helical extension in TM1 by six residues, allows GIP to shift to TM1 by 2.7 and 3.3 \u00c5 (measured by C\u03b1 atom of L27P) relative to GLP-1 (Zhang et al., 2020) and glucagon (Qiao et al., 2020), respectively (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed through structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "2b851102-7c98-4231-a03a-0e4d2ccb8b3c",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C67",
+      "claim": "Based on sequence similarity, GIP, GLP-1, and glucagon can be divided into four segments: N terminus (residues 1\u20133), segment 2 (residues 4\u201311), segment 3 (residues 12\u201320), and the C terminus (residues 21 to the end), where segments 2 and 4 are highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the sequence similarity, the three peptides can be divided into four segments: two common segments (residues 4\u201311 and 21\u201330 in GIP) and two unique segments (residues 1\u20133 and 12\u201320 in GIP) (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e026df98-2e2a-443c-8c11-62dfd6a94273",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C68",
+      "claim": "GIPR, GLP-1R, and GCGR employ conserved residues to recognize the common segments of their endogenous peptides and use non-conserved residues to make specific interaction that govern the ligand selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that GIPR, GLP-1R, and GCGR employ conserved residues to recognize the common segments of their endogenous peptides and use non-conserved residues to make specific interaction that govern the ligand selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis and comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "f0e41721-8ed2-44ba-98b1-8ffcee6ddc71",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C69",
+      "claim": "GIP modulates glucose metabolism by stimulating the \u03b2-cells to release insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "As one of the incretin hormones, GIP modulates glucose metabolism by stimulating the \u03b2-cells to release insulin (Seino et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Seino et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "5818ce24-ffec-418b-a33b-8f3fe71b87bb",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C70",
+      "claim": "Unlike GLP-1, GIP does not suppress gastric emptying and appetite.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike GLP-1, it does not suppress gastric emptying and appetite, while exerting opposite actions on pancreatic \u03b1-cells as well as adipocytes leading to glucagon secretion and lipogenesis (Seino et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Seino et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "51813158-c692-4367-93df-df832cc95217",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C71",
+      "claim": "GIP exerts opposite actions on pancreatic \u03b1-cells as well as adipocytes leading to glucagon secretion and lipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike GLP-1, it does not suppress gastric emptying and appetite, while exerting opposite actions on pancreatic \u03b1-cells as well as adipocytes leading to glucagon secretion and lipogenesis (Seino et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Seino et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "90993bbb-b213-4222-b685-29f6f76ba493",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C72",
+      "claim": "Development of GIPR-based therapeutics met little success due to reduced sensitivity in type 2 diabetic patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with reduced sensitivity in type 2 diabetic patients, development of GIPR-based therapeutics met little success (Coskun et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Coskun et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "90a67fce-5c17-4518-bf54-661a820ccd13",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C73",
+      "claim": "Bound peptides (GLP-1, exendin-P5, glucagon, ZP3780, secretin, GHRH, GLP-2, and GIP) in the glucagon subfamily of GPCRs all adopt a single straight helix with their N terminus inserted into the TMD core, while the C-terminal is recognized by the ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the full-length structures of six glucagon subfamily of GPCRs demonstrates that bound peptides (GLP-1, exendin-P5, glucagon, ZP3780, secretin, GHRH, GLP-2, and GIP) all adopt a single straight helix with their N terminus inserted into the TMD core, while the C-terminal is recognized by the ECD (Zhou et al., 2020; Sun et al., 2020; Qiao et al., 2020; Zhang et al., 2017a; Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of multiple structures, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "4995218d-4e90-4a29-b119-4c7aa8260c01",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C74",
+      "claim": "For parathyroid hormone subfamily of GPCRs, the long-acting PTH analog (LA-PTH) predominantly exhibits an extended helix with its N terminus inserted deeply into the TMD, where the peptide C terminus may bend occasionally.",
+      "claim_type": "EXPLICIT",
+      "source": "For parathyroid hormone subfamily of GPCRs, the long-acting PTH analog (LA-PTH) predominantly exhibits an extended helix with its N terminus inserted deeply into the TMD, where the peptide C terminus may bend occasionally (Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "c5ed9a35-e8df-49aa-8e88-929d1b668c91",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C75",
+      "claim": "In the case of CRF subfamily of GPCRs, the N terminus (first seven residues) of urocortin 1 (UCN1) and CRF1 present an extended loop conformation, and its C-terminal residues (8\u201340) adopt a single extended helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of CRF subfamily of GPCRs, the N terminus (first seven residues) of urocortin 1 (UCN1) and CRF1 present an extended loop conformation, and its C-terminal residues (8\u201340) adopt a single extended helix (Ma et al., 2020; Liang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ma et al., 2020; Liang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "298429a4-50fd-4e7b-9afb-3fa08d7185cc",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C76",
+      "claim": "For calcitonin subfamily of GPCRs, calcitonin gene-related peptide (CGRP) has an unstructured loop in both N- and C-terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as calcitonin subfamily of GPCRs is concerned, calcitonin gene-related peptide (CGRP) has an unstructured loop in both N- and C-terminal regions (Liang et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liang et al., 2018a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "1bec1a93-93f5-4fad-a621-eaddcaab2924",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C77",
+      "claim": "For PACAP and VIP receptor subfamily, PACAP displays an extended \u03b1-helix, while maxadilan, a natural PAC1R agonist (61-amino acid long), forms the N- and C-terminal helices that are linked as a loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at pituitary adenylate-cyclase-activating peptide (PACAP) and vasoactive intestinal polypeptide (VIP) receptor subfamily, PACAP displays an extended \u03b1-helix, while maxadilan, a natural PAC1R agonist (61-amino acid long), forms the N- and C-terminal helices that are linked as a loop (Duan et al., 2020; Liang et al., 2020; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Duan et al., 2020; Liang et al., 2020; Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3418612c-81ae-49b9-98d6-986ea38a73d1",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C79",
+      "claim": "Human GIP is a comparatively weak partial agonist in rodent models.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a previous study found that human GIP is a comparatively weak partial agonist in rodent models (Sparre-Ulrich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sparre-Ulrich et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e9b5685c-a550-4d22-bc9e-a153db59bb45",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C80",
+      "claim": "Human (Pro3)GIP is a full agonist with identical maximum response as human GIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Human (Pro3)GIP is a full agonist with identical maximum response as human GIP, whereas both rat and mouse (Pro3)GIPs are partial agonists (Sparre-Ulrich et al., 2016; Bailey, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sparre-Ulrich et al., 2016; Bailey, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "cc6b1023-311d-4efe-8947-b75024c058d4",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C81",
+      "claim": "Both rat and mouse (Pro3)GIPs are partial agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Human (Pro3)GIP is a full agonist with identical maximum response as human GIP, whereas both rat and mouse (Pro3)GIPs are partial agonists (Sparre-Ulrich et al., 2016; Bailey, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sparre-Ulrich et al., 2016; Bailey, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "6abde9a5-d653-4c3c-8330-25ab525648a2",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C82",
+      "claim": "Among rat, mouse, and human GIPs, the only residue change (from His to Arg) occurs at the 18th position.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note is that among rat, mouse, and human GIPs, the only residue change (from His to Arg) occurs at the 18th position (Sparre-Ulrich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sparre-Ulrich et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "f09c41a2-5a29-4899-82ad-a7fdaa39cc5c",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C83",
+      "claim": "GIP1-42 and GLP-1 specifically activate GIPR and GLP-1R, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This property is consistent with their behavior in inducing cAMP responses: GIP1-42 and GLP-1 specifically activate GIPR and GLP-1R, respectively, whereas glucagon can elicit cAMP accumulation mediated by both GCGR and GLP-1R (EC50 = 1.14 nM; Figure 4\u2014figure supplement 4), highlighting the complexity of their interactive functionalities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in functional assays shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "c5b02d73-340d-4d34-b9d7-213ea53be82c",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C84",
+      "claim": "Glucagon can elicit cAMP accumulation mediated by both GCGR and GLP-1R (EC50 = 1.14 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "This property is consistent with their behavior in inducing cAMP responses: GIP1-42 and GLP-1 specifically activate GIPR and GLP-1R, respectively, whereas glucagon can elicit cAMP accumulation mediated by both GCGR and GLP-1R (EC50 = 1.14 nM; Figure 4\u2014figure supplement 4), highlighting the complexity of their interactive functionalities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in functional assays shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "ff77979f-fa56-4428-9098-793af1527ab7",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C85",
+      "claim": "The upper half of the TMD pocket composed of the top parts of ECL1, TM1, and TM2 interacts with unique residues in the peptide through flexible movement of ECL1 and complementary shape formation by TM1 and TM2, thereby conferring selectivity and discriminating unrelated ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper half of the TMD pocket composed of the top parts of ECL1, TM1, and TM2 interacts with unique residues in the peptide through flexible movement of ECL1 and complementary shape formation by TM1 and TM2, thereby conferring selectively and discriminating unrelated ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e1b1ac2f-6f38-4b36-990a-325cf0aeca97",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C86",
+      "claim": "The lower half of the TMD pocket composed of TMs 3, 6, and 7 displays conserved sequences for recognition of common residues in the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower half of the TMD pocket composed of TMs 3, 6, and 7 displays conserved sequences for recognition of common residues in the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "5a82357d-687d-4d3d-80f8-7a5f7f4cd904",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C87",
+      "claim": "Combined activation of GLP-1R and GIPR by dual agonists would provide synergistic and improved effects in glycemic and body weight control.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined activation of GLP-1R and GIPR by dual agonists would provide synergistic and improved effects in glycemic and body weight control (Bastin and Andreelli, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bastin and Andreelli, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "73ebb01e-5d57-42bb-94eb-a7439813523c",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C88",
+      "claim": "The GLP-1R/GIPR dual-agonists LY3298176 (developed by Eli Lilly) and NN9709 (developed by Novo Nordisk/Marcadia) are undergoing phase II or III clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLP-1R/GIPR dual-agonists LY3298176 (developed by Eli Lilly) and NN9709 (developed by Novo Nordisk/Marcadia) as well as GLP-1R/GCGR/GIPR tri-agonist HM15211 (developed by Hamni Pharmaceuticals) are undergoing phase II or III clinical trials (Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "64ce0da0-1f2b-49ce-96d3-42b198a67bb2",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C89",
+      "claim": "The GLP-1R/GCGR/GIPR tri-agonist HM15211 (developed by Hamni Pharmaceuticals) is undergoing phase II or III clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLP-1R/GIPR dual-agonists LY3298176 (developed by Eli Lilly) and NN9709 (developed by Novo Nordisk/Marcadia) as well as GLP-1R/GCGR/GIPR tri-agonist HM15211 (developed by Hamni Pharmaceuticals) are undergoing phase II or III clinical trials (Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e901c8e3-556e-4536-86c4-301390ad9547",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C90",
+      "claim": "The TMD of GIPR is surrounded by annular detergent micelle, with a diameter of 12 nm thereby mimicking the lipid bilayer morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Like parathyroid hormone receptor-1 (PTH1R)\u2013Gs and corticotropin-releasing factor receptor type 1 (CRF1R)\u2013Gs cryo-EM structures (Zhao et al., 2019; Ma et al., 2020), the TMD of GIPR is surrounded by annular detergent micelle, with a diameter of 12 nm thereby mimicking the lipid bilayer morphology (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "3c2bdc47-c255-4d11-864d-fad9d3c11543",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "claim_id": "C91",
+      "claim": "Several cholesterol molecules were observed in the cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also observed several cholesterols molecules in the cryo-EM map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7820ae35-9120-4108-81d8-9338b7f14f00",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a cryo-EM structure of the human GIPR in complex with GIP and Gs at 2.9 \u00c5 resolution. The final model contains 30 GIP residues, Gs subunits, and GIPR residues from Q30 to S415, with six residues missing at helix 8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C22-C25 collectively describe the primary structural result. The 2.9 \u00c5 resolution is supported by cryo-EM data processing (C22), and the model composition is clearly defined (C23-C25). The structure quality is appropriate for the stated resolution, though ECD flexibility limits accuracy in that region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GIP adopts a single straight helix with its N-terminus inserted into the TMD and C-terminus associated with the ECD and ECL1. The N-terminal half forms specific interactions including hydrogen bonds (Y1P with R190 and Q224) and hydrophobic contacts (Y1P with V227 and W296), salt bridges (E3P-R183, D9P-R370, D15P-R289), and a nonpolar network involving TM1 and TM7 residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C28-C29, C34, C38-C39 describe the GIP binding mode observed in the cryo-EM structure. These structural observations are directly supported by the density maps and are consistent with the reported resolution. The binding mode represents a key finding for understanding GIPR activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutagenesis studies validate key GIP-GIPR interactions. Mutations at residues involved in GIP binding (W296A: 50-fold, R190A: 71-fold, R183A: 76-fold, R370A: 55-fold, Y141A: 103-fold, L374A: 41-fold) significantly reduced GIP potency, while R289A showed mild effects (6-fold). ECD mutations (W39A, D66A, Y68A) also reduced potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C35-C37, C40-C42, C45 present mutagenesis data that validate structural observations. The functional data (cAMP assays) show consistent effects matching predicted interaction importance. Some data are from current work (C30, C36-C37, C40-C42, C45) while others cite prior work (C31-C32, C35), providing convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "ecee4bc1-dbd3-47f7-afaa-722bd0cbbf57",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The C-terminal half of GIP is clasped by the GIPR ECD through hydrophobic interactions (F22P, V23P, L26P, L27P with ECD hydrophobic groove) and polar contacts (H18P-Y36, Q20P-N124). ECL1 forms hydrogen bonds with Y36, resulting in a larger TMD-ECD interface (571 \u00c5\u00b2) compared to GLP-1R (362 \u00c5\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 describe GIP C-terminus recognition by GIPR ECD. The structural observations are supported by cryo-EM data and comparison with the crystal structure (C43). The interface area calculation (C48) provides quantitative support for the importance of ECD in GIP recognition. Mutagenesis data (C45) validates key interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "e67581bd-7e88-4947-bc3d-7cfd0d5b3840",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GIPR employs a dual recognition strategy: conserved residues in the lower TMD pocket recognize common peptide segments, while non-conserved residues in the upper TMD pocket (ECL1, TM1, TM2) interact with GIP-specific residues to confer selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19, C68, C85-C86 describe the mechanistic basis for ligand selectivity. This conclusion is inferred from structural analysis and comparison with homologous receptors (C18-C19, C68) and is consistent with the observed binding mode. The dual recognition model explains both promiscuity and selectivity in this receptor family.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "f945f304-32a1-4693-9901-69c9c8e96223",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The activated GIPR TMD exhibits conformational changes similar to other activated class B1 GPCRs: TM7 bends toward TM6 by 8.0 \u00c5, TM1 extends and moves inward by 8.0 \u00c5, TM6 shows an outward movement of 18.9 \u00c5, and TM5 moves toward TM6 by 7.6 \u00c5, creating a cavity for G protein coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 describe receptor activation conformational changes. These observations are based on structural comparison with GCGR (C50-C51) and direct measurements from the cryo-EM structure (C52-C55). The conformational changes are consistent with the general activation mechanism of class B1 GPCRs and are well-supported by the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "1c9bb741-763b-4ed8-91b3-d03e26da561d",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gs protein couples to GIPR through the \u03b15 helix of G\u03b1s inserting into the intracellular cavity. The interface shows conserved features with other class B1 receptors, including hydrophobic interactions (L388, Y391, L393, L394 with TM3/5 residues) and extensive hydrogen bonding, particularly between R380 and ICL2 (five hydrogen bonds).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 describe G protein coupling. The structural observations (C56, C58-C62) are directly supported by the cryo-EM structure. Comparison with other class B1 receptors (C57) validates the common mechanism while highlighting GIPR-specific features (C60). The detailed interaction network is consistent with the resolution and density quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "c16fa2d2-e297-4f3c-844d-ef028eb6cff9",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structural comparison reveals that GIP, GLP-1, and glucagon adopt similar helical conformations with N-termini penetrating to the same depth, but differ in C-terminal anchoring. GIPR's ECL1 stands upward and moves 5-7 \u00c5 toward the TMD core, causing GIP to shift 2.7-3.3 \u00c5 toward TM1 relative to GLP-1 and glucagon. The peptides can be divided into four segments based on sequence similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 describe comparative structural analysis. The observations are based on superposition of multiple structures (C63-C66) and sequence analysis (C67). The measurements are quantitative and specific, and the structural differences explain receptor selectivity. The comparison is well-supported by the available structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "7a4c2bc2-e984-4ced-84f0-87b7e004ea42",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Functional assays demonstrate ligand selectivity: GIP1-42 and GLP-1 specifically activate GIPR and GLP-1R respectively, while glucagon activates both GCGR and GLP-1R (EC50 = 1.14 nM for GLP-1R).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 present functional data supporting ligand selectivity. The cAMP accumulation assays (Figure 4\u2014figure supplement 4) provide direct experimental evidence. The data are consistent with the structural observations regarding receptor-ligand specificity and cross-reactivity patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "5f7ca087-ddb6-428d-867b-9a2aafc09357",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The T345F mutation introduced for structural studies does not affect GIP1-42 binding or potency in cAMP accumulation assays, and the modified GIPR construct shows activity similar to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 validate the construct used for structural studies. The functional data (Figure 1\u2014figure supplement 1G,H) demonstrate that the modifications do not significantly alter receptor function, supporting the biological relevance of the structure. This is important for interpreting the structural results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "7103a68d-b0f9-4943-a579-f3d24eb54a91",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ECD density is relatively poor due to intrinsic flexibility, limiting model accuracy in this region. Notable conformational differences from GCGR and GLP-1R were observed in ECL1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 acknowledge limitations and describe structural features. The poor ECD density is a common observation in class B1 GPCR structures (C26, supported by citations). The ECL1 conformational difference (C27) is a key distinguishing feature of GIPR. These observations are appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "603344c6-e4b4-4ce8-8d51-7b5682723019",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GIPR shares ~50% sequence similarity with GCGR overall, with 75% similarity in the TMD region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 presents sequence comparison data. This is straightforward bioinformatics analysis that can be verified from sequence databases. The similarity values justify using GCGR structures as templates for comparison and analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "687381a1-e3ed-4ef7-9f73-27e0e9b02843",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The TMD of GIPR is surrounded by an annular detergent micelle with a diameter of 12 nm, mimicking lipid bilayer morphology. Several cholesterol molecules were observed in the cryo-EM map.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 describe the membrane environment in the structure. These observations are directly visible in the cryo-EM map (Figure 1) and are consistent with similar structures (PTH1R-Gs, CRF1R-Gs). The micelle and cholesterol presence are expected features of detergent-solubilized GPCR structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "b59bf0d5-55d4-4cf5-b1c6-ce684d680444",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Comparison of glucagon subfamily GPCR structures shows that all bound peptides (GLP-1, exendin-P5, glucagon, ZP3780, secretin, GHRH, GLP-2, and GIP) adopt a single straight helix with N-terminus in the TMD core and C-terminus recognized by the ECD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 summarizes a general structural principle from multiple structures. This is supported by citations to the relevant structures and represents a valid generalization about the glucagon subfamily binding mode. The conclusion is appropriately supported by the comparative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "01fa7cda-5743-47de-a63a-715f3561ad1e",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on GIP and GIPR: GIP is a 42-amino acid peptide hormone secreted by intestinal K cells that regulates glucose metabolism and fatty acid uptake. GIPR is a class B1 GPCR that, together with GCGR and GLP-1R, forms the central endocrine network regulating insulin sensitivity. GIP shows exquisite specificity for GIPR. GLP-1R/GIPR dual agonists show better clinical efficacy than GLP-1R agonists alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 provide established background knowledge supported by citations and general scientific consensus. These claims establish the biological and therapeutic context for the structural study. The information is well-established in the field and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "cdc205fa-9a28-4f11-b5a4-e9266b6dda42",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "GIP modulates glucose metabolism by stimulating insulin release from \u03b2-cells. Unlike GLP-1, GIP does not suppress gastric emptying and appetite, and exerts opposite actions on \u03b1-cells and adipocytes. Development of GIPR-based therapeutics has met limited success due to reduced sensitivity in type 2 diabetic patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 provide biological context for GIPR as a therapeutic target. These are established facts supported by citations (Seino et al., 2010; Coskun et al., 2018). The information contextualizes the importance of understanding GIPR structure and function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "361a468c-c311-4773-afdb-560d6b03d7b4",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Different class B1 GPCR subfamilies show diverse peptide binding modes: PTH subfamily shows extended helices with occasional C-terminal bending; CRF subfamily has N-terminal loops and C-terminal helices; calcitonin subfamily has unstructured loops at both termini; PACAP/VIP subfamily shows extended helices or N- and C-terminal helices linked by loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 describe structural diversity across class B1 GPCR subfamilies. Each claim is supported by specific citations to relevant structures. This comparative analysis contextualizes the GIPR structure within the broader class B1 GPCR family and highlights the diversity of peptide recognition modes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "70f0eee6-9a25-4e17-a5da-a514bb7557cb",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Species differences exist in GIP/GIPR pharmacology: human GIP is a weak partial agonist in rodent models, human (Pro3)GIP is a full agonist while rodent (Pro3)GIPs are partial agonists. The only sequence difference among rat, mouse, and human GIPs occurs at position 18 (His to Arg).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 describe species-specific pharmacological differences supported by citations (Sparre-Ulrich et al., 2016; Bailey, 2020). These observations are important for translating findings from rodent models to humans and are appropriately documented with references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "132b1271-626b-4bda-bab5-15780d1282ba",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Combined activation of GLP-1R and GIPR by dual agonists provides synergistic effects in glycemic and body weight control. GLP-1R/GIPR dual-agonists (LY3298176, NN9709) and GLP-1R/GCGR/GIPR tri-agonist (HM15211) are in phase II or III clinical trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 describe the therapeutic rationale and clinical development status of multi-agonists. These are factual statements about clinical trials supported by citations (Bastin and Andreelli, 2019; Yang et al., 2021). This information contextualizes the therapeutic importance of understanding GIPR structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    },
+    {
+      "id": "df3cdbd6-d838-4e9c-9495-09b62a95437d",
+      "content_id": "e00d5666-5878-468f-8917-8fa205b24b4c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "N-terminal truncation of Y1P or both Y1P and A2P in GIP leads to reduced efficacy or loss of activity, highlighting the crucial role of Y1P.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 describes the functional importance of GIP N-terminal residues, supported by citations (Kerr et al., 2011; Gabe et al., 2020). This prior work validates the structural observations regarding Y1P interactions and is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:08.706376Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "693d0431-7eaa-4266-8233-2d44b86ff2f9",
+      "result_id": "7820ae35-9120-4108-81d8-9338b7f14f00"
+    },
+    {
+      "claim_id": "686b8f79-e49c-4670-a4a7-7b82d7623e51",
+      "result_id": "7820ae35-9120-4108-81d8-9338b7f14f00"
+    },
+    {
+      "claim_id": "9147bfca-e7d7-48fb-b89a-c17abcc42f96",
+      "result_id": "7820ae35-9120-4108-81d8-9338b7f14f00"
+    },
+    {
+      "claim_id": "4a5b210c-4f28-471c-959c-7954c21687d1",
+      "result_id": "7820ae35-9120-4108-81d8-9338b7f14f00"
+    },
+    {
+      "claim_id": "7b595e8d-7527-46f3-9c1e-6c9a2f75e493",
+      "result_id": "7820ae35-9120-4108-81d8-9338b7f14f00"
+    },
+    {
+      "claim_id": "861d8453-d497-4083-9226-ed4f6c56905b",
+      "result_id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a"
+    },
+    {
+      "claim_id": "e60e5002-6485-4685-a0c4-334b42f8109e",
+      "result_id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a"
+    },
+    {
+      "claim_id": "3605f3dc-5792-40c9-93b4-33d5f5e845bd",
+      "result_id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a"
+    },
+    {
+      "claim_id": "874aef13-991f-48ae-9aca-684d00ef5e91",
+      "result_id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a"
+    },
+    {
+      "claim_id": "f08f84de-dc42-4f41-b812-a24da3256c0c",
+      "result_id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a"
+    },
+    {
+      "claim_id": "d57b2af6-9bec-4e18-ab7f-e665b1970260",
+      "result_id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a"
+    },
+    {
+      "claim_id": "4db81b89-b414-44fa-be83-68a13d3beb05",
+      "result_id": "6abe6458-5fd2-4c10-a7c1-5f48306eb27a"
+    },
+    {
+      "claim_id": "742ebeae-82ef-4e28-942e-4de0eacdf958",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "ea914611-328d-44ae-a7d2-8eabb2398066",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "e2662e36-696e-4b4c-a8b4-d553f988e35d",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "fa889b02-eb86-44a7-bb01-6f8224e36ace",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "3d81efd5-863b-47d4-8875-8d630c33bada",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "5c99593b-5ae3-4c09-a776-1bea8fa0869f",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "af29f6e7-6acf-4b7e-b6fc-e856b3675761",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "1aa1dccc-0f50-4518-8ad0-aee1162333a4",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "b708aa7f-7b17-40f1-af54-b1d3cd7a7a82",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "4afe0513-5890-4bc6-8ec3-ef38e9460e37",
+      "result_id": "293e1551-2e58-4a1c-87dd-b1bd9e35049a"
+    },
+    {
+      "claim_id": "36c38fdd-1193-4b6a-9a47-f3395d6fc70c",
+      "result_id": "ecee4bc1-dbd3-47f7-afaa-722bd0cbbf57"
+    },
+    {
+      "claim_id": "0cff9c4f-6310-4e0b-b2e2-aee40bf76ea4",
+      "result_id": "ecee4bc1-dbd3-47f7-afaa-722bd0cbbf57"
+    },
+    {
+      "claim_id": "586b8638-44fa-4bc8-9930-01f1d6a8c3e8",
+      "result_id": "ecee4bc1-dbd3-47f7-afaa-722bd0cbbf57"
+    },
+    {
+      "claim_id": "a58fda05-a995-4054-a296-58204785ceec",
+      "result_id": "ecee4bc1-dbd3-47f7-afaa-722bd0cbbf57"
+    },
+    {
+      "claim_id": "ace61fc5-8073-437c-8bf1-b94dc579fdd0",
+      "result_id": "ecee4bc1-dbd3-47f7-afaa-722bd0cbbf57"
+    },
+    {
+      "claim_id": "df560487-35e8-4c56-b297-3a7adcf12c8e",
+      "result_id": "e67581bd-7e88-4947-bc3d-7cfd0d5b3840"
+    },
+    {
+      "claim_id": "2ba9628f-1584-41b0-b5f3-72f88ef1022e",
+      "result_id": "e67581bd-7e88-4947-bc3d-7cfd0d5b3840"
+    },
+    {
+      "claim_id": "e026df98-2e2a-443c-8c11-62dfd6a94273",
+      "result_id": "e67581bd-7e88-4947-bc3d-7cfd0d5b3840"
+    },
+    {
+      "claim_id": "ff77979f-fa56-4428-9098-793af1527ab7",
+      "result_id": "e67581bd-7e88-4947-bc3d-7cfd0d5b3840"
+    },
+    {
+      "claim_id": "e1b1ac2f-6f38-4b36-990a-325cf0aeca97",
+      "result_id": "e67581bd-7e88-4947-bc3d-7cfd0d5b3840"
+    },
+    {
+      "claim_id": "79b2be1a-52b2-43db-ba9f-1f5e20fd3eb9",
+      "result_id": "f945f304-32a1-4693-9901-69c9c8e96223"
+    },
+    {
+      "claim_id": "5a8840ca-3de9-41cb-ba40-3c26b51e6d42",
+      "result_id": "f945f304-32a1-4693-9901-69c9c8e96223"
+    },
+    {
+      "claim_id": "075761dd-1ab9-4523-8283-6024ac23c4eb",
+      "result_id": "f945f304-32a1-4693-9901-69c9c8e96223"
+    },
+    {
+      "claim_id": "3dd8d1bc-0a98-493d-b022-f775f9539e1b",
+      "result_id": "f945f304-32a1-4693-9901-69c9c8e96223"
+    },
+    {
+      "claim_id": "7db30c28-5737-4192-84ec-8faa2d1737cc",
+      "result_id": "f945f304-32a1-4693-9901-69c9c8e96223"
+    },
+    {
+      "claim_id": "5b729fe8-0f34-48ae-9803-15a74f0d967a",
+      "result_id": "f945f304-32a1-4693-9901-69c9c8e96223"
+    },
+    {
+      "claim_id": "ab0c114f-2718-4db9-9b9f-019b9cdec649",
+      "result_id": "1c9bb741-763b-4ed8-91b3-d03e26da561d"
+    },
+    {
+      "claim_id": "0950ca57-c0f1-4f8b-808b-21c3a2ba09ec",
+      "result_id": "1c9bb741-763b-4ed8-91b3-d03e26da561d"
+    },
+    {
+      "claim_id": "14478b4e-0906-4db6-a907-a94d240380af",
+      "result_id": "1c9bb741-763b-4ed8-91b3-d03e26da561d"
+    },
+    {
+      "claim_id": "4c310f56-6985-40e2-8a7e-787fbe920c16",
+      "result_id": "1c9bb741-763b-4ed8-91b3-d03e26da561d"
+    },
+    {
+      "claim_id": "2f2702d5-910b-4019-8ba2-48dd30abb3ae",
+      "result_id": "1c9bb741-763b-4ed8-91b3-d03e26da561d"
+    },
+    {
+      "claim_id": "3ad2921c-8a3b-4245-bd8b-337d67aee559",
+      "result_id": "1c9bb741-763b-4ed8-91b3-d03e26da561d"
+    },
+    {
+      "claim_id": "0f0f3840-9b07-4299-9bc1-c6d542fbfc1f",
+      "result_id": "1c9bb741-763b-4ed8-91b3-d03e26da561d"
+    },
+    {
+      "claim_id": "4f19c79d-9aa0-4cfe-a545-ccf8910e2250",
+      "result_id": "c16fa2d2-e297-4f3c-844d-ef028eb6cff9"
+    },
+    {
+      "claim_id": "d1451c71-27d1-4fcc-b1cd-b0586fd82ae4",
+      "result_id": "c16fa2d2-e297-4f3c-844d-ef028eb6cff9"
+    },
+    {
+      "claim_id": "b4f80c57-db0f-468f-af09-5e0b8df73de8",
+      "result_id": "c16fa2d2-e297-4f3c-844d-ef028eb6cff9"
+    },
+    {
+      "claim_id": "38e6b172-ad7c-4bf0-b191-f9062045c139",
+      "result_id": "c16fa2d2-e297-4f3c-844d-ef028eb6cff9"
+    },
+    {
+      "claim_id": "2b851102-7c98-4231-a03a-0e4d2ccb8b3c",
+      "result_id": "c16fa2d2-e297-4f3c-844d-ef028eb6cff9"
+    },
+    {
+      "claim_id": "f09c41a2-5a29-4899-82ad-a7fdaa39cc5c",
+      "result_id": "7a4c2bc2-e984-4ced-84f0-87b7e004ea42"
+    },
+    {
+      "claim_id": "c5b02d73-340d-4d34-b9d7-213ea53be82c",
+      "result_id": "7a4c2bc2-e984-4ced-84f0-87b7e004ea42"
+    },
+    {
+      "claim_id": "1745746e-e122-4b2d-a7d1-4443cd4b8047",
+      "result_id": "5f7ca087-ddb6-428d-867b-9a2aafc09357"
+    },
+    {
+      "claim_id": "6279cc31-f5a1-468b-bb64-7a49a2a1b217",
+      "result_id": "5f7ca087-ddb6-428d-867b-9a2aafc09357"
+    },
+    {
+      "claim_id": "a0725fa7-253c-461e-8142-44c6b3b3437e",
+      "result_id": "7103a68d-b0f9-4943-a579-f3d24eb54a91"
+    },
+    {
+      "claim_id": "e84d7718-ccd2-4e80-88fa-d3548f51373e",
+      "result_id": "7103a68d-b0f9-4943-a579-f3d24eb54a91"
+    },
+    {
+      "claim_id": "ff67c54a-5d18-4762-a0e5-38f1f5c7db77",
+      "result_id": "603344c6-e4b4-4ce8-8d51-7b5682723019"
+    },
+    {
+      "claim_id": "e901c8e3-556e-4536-86c4-301390ad9547",
+      "result_id": "687381a1-e3ed-4ef7-9f73-27e0e9b02843"
+    },
+    {
+      "claim_id": "3c2bdc47-c255-4d11-864d-fad9d3c11543",
+      "result_id": "687381a1-e3ed-4ef7-9f73-27e0e9b02843"
+    },
+    {
+      "claim_id": "90a67fce-5c17-4518-bf54-661a820ccd13",
+      "result_id": "b59bf0d5-55d4-4cf5-b1c6-ce684d680444"
+    },
+    {
+      "claim_id": "7562a59a-1616-4039-a9b7-3cc6b87c98fa",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "68f491cd-4766-4831-88cb-d29771c21d3e",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "3068a4b9-6605-47f7-a786-e7a29299096e",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "eb7dd90f-b64a-4603-9880-0a2aa2443594",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "3263a2b1-55fa-4ef7-ae9f-e8972b7bf7e7",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "4597bcf0-3499-4061-8475-feb95de5762b",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "8ffed774-c6ab-4622-a04e-316a1386670d",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "99d76a02-87da-4bc3-823c-627abd22581a",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "360073cf-48a9-4f8d-b305-aed3c32483cd",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "4e9aadf1-9e1e-4198-abb4-cb33b2bbe296",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "74e11ffa-cbe5-4695-92a4-e49d8413e7c6",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "143884eb-5aec-42b2-929a-758e167e7966",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "ab4ce272-d54f-455f-842c-ea9e65e391ea",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "2dc2b78c-fa79-452a-a664-01e9274ecc01",
+      "result_id": "01fa7cda-5743-47de-a63a-715f3561ad1e"
+    },
+    {
+      "claim_id": "f0e41721-8ed2-44ba-98b1-8ffcee6ddc71",
+      "result_id": "cdc205fa-9a28-4f11-b5a4-e9266b6dda42"
+    },
+    {
+      "claim_id": "5818ce24-ffec-418b-a33b-8f3fe71b87bb",
+      "result_id": "cdc205fa-9a28-4f11-b5a4-e9266b6dda42"
+    },
+    {
+      "claim_id": "51813158-c692-4367-93df-df832cc95217",
+      "result_id": "cdc205fa-9a28-4f11-b5a4-e9266b6dda42"
+    },
+    {
+      "claim_id": "90993bbb-b213-4222-b685-29f6f76ba493",
+      "result_id": "cdc205fa-9a28-4f11-b5a4-e9266b6dda42"
+    },
+    {
+      "claim_id": "4995218d-4e90-4a29-b119-4c7aa8260c01",
+      "result_id": "361a468c-c311-4773-afdb-560d6b03d7b4"
+    },
+    {
+      "claim_id": "c5ed9a35-e8df-49aa-8e88-929d1b668c91",
+      "result_id": "361a468c-c311-4773-afdb-560d6b03d7b4"
+    },
+    {
+      "claim_id": "298429a4-50fd-4e7b-9afb-3fa08d7185cc",
+      "result_id": "361a468c-c311-4773-afdb-560d6b03d7b4"
+    },
+    {
+      "claim_id": "1bec1a93-93f5-4fad-a621-eaddcaab2924",
+      "result_id": "361a468c-c311-4773-afdb-560d6b03d7b4"
+    },
+    {
+      "claim_id": "3418612c-81ae-49b9-98d6-986ea38a73d1",
+      "result_id": "70f0eee6-9a25-4e17-a5da-a514bb7557cb"
+    },
+    {
+      "claim_id": "e9b5685c-a550-4d22-bc9e-a153db59bb45",
+      "result_id": "70f0eee6-9a25-4e17-a5da-a514bb7557cb"
+    },
+    {
+      "claim_id": "cc6b1023-311d-4efe-8947-b75024c058d4",
+      "result_id": "70f0eee6-9a25-4e17-a5da-a514bb7557cb"
+    },
+    {
+      "claim_id": "6abde9a5-d653-4c3c-8330-25ab525648a2",
+      "result_id": "70f0eee6-9a25-4e17-a5da-a514bb7557cb"
+    },
+    {
+      "claim_id": "5a82357d-687d-4d3d-80f8-7a5f7f4cd904",
+      "result_id": "132b1271-626b-4bda-bab5-15780d1282ba"
+    },
+    {
+      "claim_id": "73ebb01e-5d57-42bb-94eb-a7439813523c",
+      "result_id": "132b1271-626b-4bda-bab5-15780d1282ba"
+    },
+    {
+      "claim_id": "64ce0da0-1f2b-49ce-96d3-42b198a67bb2",
+      "result_id": "132b1271-626b-4bda-bab5-15780d1282ba"
+    },
+    {
+      "claim_id": "fa5a376b-6e04-4ae3-9c2b-75d1bcf57979",
+      "result_id": "df3cdbd6-d838-4e9c-9495-09b62a95437d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C59"
+    ],
+    "result": "A meta-analysis of 75 studies across 56 species found that high within-group relatedness increases mortality when pathogens are present (Zr = -0.29, pMCMC = 0.002), with similar but weaker effects on pathogen abundance. The overall effect of relatedness on mortality did not differ from zero due to contrasting effects in the presence versus absence of pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, C40, C41, and C42 provide converging statistical evidence from the meta-analysis showing increased mortality in related groups when pathogens are present. The methodology (C33) and statistical results are clearly documented with appropriate effect sizes, credible intervals, and p-values. The phylogenetic independence (C37) strengthens the generalizability of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C48",
+      "C50",
+      "C51",
+      "C60"
+    ],
+    "result": "When pathogens were rare or absent, mortality decreased with relatedness, particularly in species that typically live with kin (Zr = -0.57, pMCMC = 0.03 for kin vs non-kin comparison). This suggests that kin-selected benefits of living with relatives mask the harm caused by pathogens in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, and C51 provide statistical support for reduced mortality in related groups when pathogens are absent, especially in kin species. The inference that benefits mask pathogen costs (C43) is logically supported by the contrasting effects observed. The statistical evidence includes appropriate effect sizes and significance tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46",
+      "C61",
+      "C84"
+    ],
+    "result": "The effects of within-group relatedness on mortality were only evident when pathogens were experimentally manipulated, not in observational studies. Experimental pathogen manipulation was more important than relatedness manipulation for detecting these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41, C44, and C84 consistently show that experimental manipulation of pathogens revealed effects not seen in observational studies. Statistical comparisons (C45, C46) support that pathogen manipulation was more critical than relatedness manipulation. This is a well-supported methodological finding with clear statistical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C75",
+      "C76"
+    ],
+    "result": "When pathogens were present, species that typically live with kin did not show reduced mortality compared to species that live with non-kin (Zr = 0.09, pMCMC = 0.79), suggesting that kin-living species have not generally evolved enhanced mechanisms to limit pathogen harm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C75, and C76 provide consistent evidence from statistical analysis and Figure 3 that kin-living species do not show enhanced resistance to pathogens. The non-significant difference between kin and non-kin species when pathogens are present is clearly documented with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C81"
+    ],
+    "result": "High relatedness increased variance in mortality across groups when pathogens were present (LnCVR = 0.88, pMCMC = 0.02) but decreased variance in pathogen abundance. These effects were only evident in experimental studies, not observational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C55, C57, and C81 provide statistical evidence for opposing effects of relatedness on variance in mortality versus pathogen abundance. The requirement for experimental manipulation (C53, C54) is well-documented. The use of LnCVR as a variance metric accounting for mean differences is methodologically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "A systematic literature review identified 75 studies across 56 species, yielding 210 effect sizes for correlation analysis (Pearson's r) and variance analysis (LnCVR) of the relationship between within-group relatedness and mortality/pathogen abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C113 comprehensively describe the systematic review methodology, inclusion/exclusion criteria, and analytical approaches. The methods are transparent and appropriate for meta-analysis. The use of standardized effect sizes (Pearson's r and LnCVR) is well-justified and properly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Data were analyzed using Bayesian Phylogenetic Multi-level Meta-regressions (BPMM) with appropriate weighting, random effects for study and phylogeny, and tests for publication bias showed no evidence of bias (Egger's regression: Zr CI = -0.03 to 0.01, LnCVR CI = -0.04 to 0.12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 describe rigorous statistical methods appropriate for phylogenetic meta-analysis. The inclusion of phylogenetic controls (C117), proper weighting (C115), and publication bias assessment (C119, C120) demonstrate methodological rigor. The lack of publication bias is supported by both statistical tests and funnel plots.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The interaction between kin-selected benefits and pathogen-induced mortality may explain why cooperative species inhabit hot, dry environments where pathogen costs are lower, and why sterile castes evolved in pathogen-protected environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C69 present speculative interpretations about ecological distributions and evolutionary origins. While supported by citations to prior work (C64, C65, C67, C68), these are not directly tested by the current meta-analysis. The speculation (C66, C69) extends beyond what the data demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The lack of relatedness effects in observational studies may be due to sampling biases, higher pathogen diversity in natural populations, or differences in pathogen abundance between experimental and natural conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C92 offer multiple speculative explanations for differences between experimental and observational studies. While C91 provides one empirical example from Daphnia, most explanations (C85, C86, C87, C90) are speculative and not directly tested. These remain plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Individuals may respond to pathogen pressure by forming more genetically diverse groups through increased mating promiscuity, which could reduce disease spread but weaken selection for other pathogen-limiting adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C80 present speculative mechanisms for behavioral responses to pathogens, supported by citations (C77, C78) but not directly tested in this study. The relative costs of different pathogen-mitigation strategies (C80) are acknowledged as unclear, indicating this is hypothesis-generating rather than hypothesis-testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The differential effects of relatedness on mortality variance versus pathogen abundance variance may arise because pathogen abundance is weakly related to virulence, or because genotypes vary in infection clearance ability rather than susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C83 offer speculative explanations for observed variance patterns, supported by citations to prior work but not directly tested in the current study. These are plausible mechanistic hypotheses that could explain the data but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Experiments manipulating pathogen presence, abundance, and diversity across species with different social systems remain limited, and comparative analyses of ancestral versus derived relatedness levels are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 accurately identify limitations in the current literature and suggest directions for future research. These are appropriate acknowledgments of data gaps that constrain the scope of conclusions, particularly for non-kin species.",
+    "result_type": "MINOR"
+  }
+]

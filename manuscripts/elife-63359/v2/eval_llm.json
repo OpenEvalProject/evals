@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors developed stCoChR, a soma-targeted variant of the large-conductance blue-light-sensitive opsin CoChR, using the Kv2.1 targeting sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, and C23 describe the development and design of stCoChR. The construct is clearly described with appropriate citations for the parent opsin (CoChR) and targeting sequence (Kv2.1), and the development is a primary experimental contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In vitro characterization shows that stCoChR maintains high photocurrents similar to CoChR under both two-photon and one-photon illumination, while achieving superior soma restriction compared to both CoChR and soCoChR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 present quantitative in vitro electrophysiology data with appropriate statistical tests (Kruskal-Wallis with post hoc comparisons), adequate sample sizes (n=10-14 cells), and figure references. The photocurrent ratio and decay length constant measurements provide converging evidence for soma restriction. The conclusion that stCoChR maintains CoChR's photocurrent while improving soma targeting is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In vivo two-photon holographic stimulation of stCoChR-expressing neurons demonstrates high-efficiency neuronal activation with significantly better performance than stChR2, temporal precision, and spatial resolution in the radial (4.4 \u03bcm) and axial (17.8-23.8 \u03bcm) directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 present in vivo electrophysiology data with appropriate statistical tests, figure references, and comparisons to previous work (stChR2). The temporal precision (AP probability, latency, jitter) and spatial resolution measurements are quantitative with clear methodology. The >10-fold improvement claim is supported by the comparison to stChR2 (C35) with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C94"
+    ],
+    "result": "Low repetition rate laser stimulation (1 MHz) significantly increases neuronal response efficiency per mW of delivered power compared to high repetition rate (80 MHz) stimulation in both principal neurons and SST interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C94 present comparative data from the same neurons stimulated at different repetition rates with appropriate statistical tests (Wilcoxon signed rank test, p=0.031 for principal cells; paired t-test, p=2E-4 for interneurons). The finding is validated across cell types and supported by figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C95"
+    ],
+    "result": "Further decreasing laser repetition rate below 1 MHz (down to 50 kHz) maintains high-efficiency stimulation while reducing average power to <1 mW per cell, more than 10-fold lower than previously published blue-light-sensitive soma-targeted opsins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C95 present systematic data on repetition rate optimization with quantitative measurements of AP probability at different rates. The non-linear relationship between repetition rate and response is documented (C47), and the comparison showing similar AP probability at different power/energy combinations (C48) supports the conclusion. The >10-fold improvement claim (C95) is supported by citation to previous work (Forli et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Imaging at 1100 nm with 30-35 mW average power does not significantly activate stCoChR-expressing neurons (both principal cells and interneurons), while imaging at 920 nm causes significant activation, demonstrating minimal crosstalk at appropriate imaging wavelengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 present systematic crosstalk measurements in multiple cell types (principal neurons, interneurons) and conditions (stCoChR alone, stCoChR+jRCaMP1a co-expression) with appropriate statistical tests (Wilcoxon signed rank test). The control experiment at 920 nm (C51, C53, C56) validates that the opsin is functional and the lack of response at 1100 nm is due to spectral separation. The verification that imaging power is sufficient to detect calcium transients (C54) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Simultaneous two-photon imaging of jRCaMP1a and holographic stimulation of stCoChR demonstrates reliable all-optical interrogation with low power (0.7 mW at 0.1 MHz), with evoked responses corresponding to 6.7\u00b11.9 APs and no off-target activation of jRCaMP1a-only expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 present all-optical experimental data combining imaging and stimulation. The quantitative measurements of fluorescence transients at different repetition rates (C59-C60), correlation with electrophysiology (C61, n=5 cells), and critical control showing no activation in jRCaMP1a-only cells (C62) provide strong evidence. The conclusion (C63) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C64",
+      "C65",
+      "C98"
+    ],
+    "result": "The combination of stCoChR with tuned amplified laser stimulation and red-shifted functional indicators enables high-efficiency all-optical neural circuit interrogation with >10-fold lower average power and minimal crosstalk compared to previously characterized blue-light-sensitive soma-targeted opsins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C64, C65, and C98 represent the main conclusions of the study, synthesizing results from multiple experimental approaches. The >10-fold power reduction is supported by direct comparisons to stChR2 (C35) and previous work (C95). The minimal crosstalk claim is supported by the systematic crosstalk experiments (C50-C57). These are summary claims well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The overall expression level and plasma membrane targeting efficiency are similar for CoChR and stCoChR, but stCoChR molecules are better retained at the proximal membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are inferences based on the photocurrent data (C25-C32). The similar full-field photocurrents (C27) suggest similar total expression, while the higher 2P/1P ratio (C29) and shorter decay length (C31) support better proximal retention. This is a reasonable interpretation of the data, though the molecular mechanisms are not investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The soma-restriction method increases spatial resolution in the radial direction but axial spread of illumination combined with high stCoChR sensitivity may cause off-target activation, which could be addressed using temporal focusing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 present a limitation of the approach with supporting data (spatial resolution measurements, C38-C40) and a potential solution from the literature (C84). The axial half-response distances (17.8-23.8 \u03bcm) are substantially larger than the radial distance (4.4 \u03bcm), supporting the concern about off-target activation. The suggestion of temporal focusing is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "All-optical methods combining two-photon imaging and optogenetics are fundamental for studying neural circuits, but require high-efficiency opsins and minimal crosstalk to avoid photodamage and unwanted neuronal activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 establish the scientific context and motivation for the study. These are well-supported by multiple citations to previous work and represent established knowledge in the field. They appropriately frame the technical challenges that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Crosstalk between imaging and stimulation is due to spectral overlap and is particularly problematic for red-shifted opsins with blue indicators; blue-shifted opsins with red indicators reduce crosstalk but ChR2's limited photocurrent prevents efficient multi-neuron stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe the crosstalk problem and previous solutions, all supported by appropriate citations. This establishes the specific gap that stCoChR addresses: combining the advantages of blue-shifted opsins (minimal crosstalk) with high photocurrent (efficient stimulation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Previous work by Shemesh et al. developed soCoChR using KA2 targeting, which showed decreased photocurrents; the authors' previous work showed that Kv2.1 targeting is more efficient in vivo than in culture, potentially explaining the different outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 appropriately cite and discuss previous work, including the authors' own prior findings. This provides important context for why the current study used Kv2.1 targeting despite Shemesh et al. finding it less effective in culture. The explanation is reasonable and supported by citation to the authors' previous work (Mahn et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Despite stCoChR having much larger photocurrent than ChR2, suprathreshold activation during imaging at red-shifted wavelengths is not significant at <35 mW, validating the blue opsin/red indicator strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 discuss the crosstalk issue and validate the approach. The comparison to ChR2 (C74) is supported by citation and the crosstalk data (Figure 5). This addresses a potential concern that higher photocurrent might increase crosstalk susceptibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Recent availability of optical parametric amplifiers enables efficient blue opsin stimulation at 920 nm with reduced tissue heating; previous work shows thermal effects dominate at the energy levels used (\u22647 nJ), and energies up to 60-200 nJ are safe, suggesting further optimization is possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 discuss the technological context and safety considerations, all appropriately supported by citations. The speculation about further increasing energy (C81) is reasonable given the cited safety thresholds, though it remains to be tested. This provides useful context for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Red-shifted indicators like jRCaMP1a have lower accuracy for detecting single APs than green indicators but offer advantages including reduced crosstalk, better deep imaging, stable long-term expression, and reduced tissue heating during stimulation at 920 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 discuss trade-offs in indicator choice, all supported by appropriate citations. This provides balanced discussion of the limitations and advantages of the red indicator approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The extended illumination approach distributes energy across the cell body, reducing instantaneous energy density and photodamage risk compared to diffraction-limited scanning; combining low repetition rate lasers with optical parametric amplifiers enables efficient blue opsin stimulation at 920 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe the illumination strategy and its advantages, with appropriate citations to previous work using different approaches. The comparison to scanning methods (C89) and the explanation of the novel combination (C93) are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Two-photon holographic stimulation is effective across different cell types (principal cells and SST interneurons), and stCoChR allows photoexcitation with 1-5 mW at 1 MHz (potentially less at lower repetition rates), lower than other opsins including ST-ChroME, Chronos, and non-targeted CoChR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 summarize the generalizability and comparative performance of the approach. The validation across cell types is supported by the SST interneuron data (Figure 3\u2014figure supplement 2), and the comparison to other opsins is supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The extended illumination approach spreads laser pulse energy across the cell body volume, decreasing energy density and photodamage risk, allowing higher energy per pulse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 describe a property and advantage of the illumination method. While C42 is a straightforward description, C43 is an inference about the consequences. This is a reasonable inference supported by general principles of photodamage, though direct photodamage measurements were not performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C24"
+    ],
+    "result": "The experimental approach combined holographic two-photon stimulation of stCoChR with amplified laser tuned at 920 nm and two-photon imaging of jRCaMP1a at 1100 nm in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C24 describe the experimental approach used in the study. This is clearly documented in the methods and results sections with detailed descriptions of the optical setup and experimental parameters.",
+    "result_type": "MINOR"
+  }
+]

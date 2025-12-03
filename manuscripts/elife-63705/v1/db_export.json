@@ -1,0 +1,1653 @@
+{
+  "submission": {
+    "id": "025f85f6-372f-4241-8937-9c133c0b3bff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:06:55.427157Z",
+    "updated_at": "2025-12-03T02:06:55.427157Z"
+  },
+  "content": [
+    {
+      "id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "submission_id": "025f85f6-372f-4241-8937-9c133c0b3bff",
+      "content_type": "manuscript",
+      "content_text": "# Spatial modulation of visual responses arises in cortex with active navigation\n\n## Authors\n\n- E Mika Diamanti<sup>1</sup> ([ORCID: 0000-0003-1199-3362](https://orcid.org/0000-0003-1199-3362)) \u2020\n- Charu Bai Reddy<sup>1</sup> ([ORCID: 0000-0002-8195-3326](https://orcid.org/0000-0002-8195-3326))\n- Sylvia Schr\u00f6der<sup>1</sup> ([ORCID: 0000-0002-9938-3931](https://orcid.org/0000-0002-9938-3931))\n- Tomaso Muzzu<sup>3</sup> ([ORCID: 0000-0002-0018-8416](https://orcid.org/0000-0002-0018-8416))\n- Kenneth D Harris<sup>4</sup> ([ORCID: 0000-0002-5930-6456](https://orcid.org/0000-0002-5930-6456))\n- Aman B Saleem<sup>3</sup> ([ORCID: 0000-0002-7100-1954](https://orcid.org/0000-0002-7100-1954)) \u2020\n- Matteo Carandini<sup>1</sup> ([ORCID: 0000-0003-4880-7682](https://orcid.org/0000-0003-4880-7682))\n\n### Affiliations\n\n1. UCL Institute of Ophthalmology, University College London London United Kingdom\n2. CoMPLEX, Department of Computer Science, University College London London United Kingdom\n3. UCL Institute of Behavioural Neuroscience, University College London London United Kingdom\n4. UCL Queen Square Institute of Neurology, University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring navigation, the visual responses of neurons in mouse primary visual cortex (V1) are modulated by the animal\u2019s spatial position. Here we show that this spatial modulation is similarly present across multiple higher visual areas but negligible in the main thalamic pathway into V1. Similar to hippocampus, spatial modulation in visual cortex strengthens with experience and with active behavior. Active navigation in a familiar environment, therefore, enhances the spatial modulation of visual signals starting in the cortex.\n\n## Introduction\n\nThere is increasing evidence that the activity of the mouse primary visual cortex (V1) is influenced by navigational signals (Fiser et al., 2016; Flossmann and Rochefort, 2021; Fournier et al., 2020; Haggerty and Ji, 2015; Ji and Wilson, 2007; Pakan et al., 2018; Saleem et al., 2018). During navigation, indeed, the visual responses of V1 neurons are modulated by the animal\u2019s estimate of spatial position (Saleem et al., 2018). The underlying spatial signals covary with those in hippocampus and are affected similarly by idiothetic cues (Fournier et al., 2020; Saleem et al., 2018).\n\nIt is not known, however, how this spatial modulation varies along the visual pathway. Spatial signals might enter the visual pathway upstream of V1, in the lateral geniculate nucleus (LGN). Indeed, spatial signals have been seen elsewhere in thalamus (Jankowski et al., 2015; Taube, 1995) and possibly also in LGN itself (Hok et al., 2018). Spatial signals might also become stronger downstream of V1, in higher visual areas\u00a0(HVAs). For instance, they might be stronger in parietal areas such as A and AM (Hovde et al., 2018), because many neurons in parietal cortex are associated with spatial coding (Krumin et al., 2018; McNaughton et al., 1994; Nitz, 2006; Save and Poucet, 2009; Whitlock et al., 2012; Wilber et al., 2014).\n\nMoreover, it is not known if the spatial modulation of visual responses varies with experience in the environment or active navigation. In the navigational system, spatial encoding is stronger in active navigation than during passive viewing, when most hippocampal place cells lose their place fields (Chen et al., 2013; Song et al., 2005; Terrazas et al., 2005). In addition, both hippocampal place fields and entorhinal grid patterns grow stronger when an environment becomes familiar (Barry et al., 2012; Frank et al., 2004; Karlsson and Frank, 2008). If spatial modulation signals reach visual cortex from the navigational system, therefore, they should grow with active navigation and with experience of the environment.\n\n## Results\n\nTo characterize the influence of spatial position on visual responses, we used a virtual reality (VR) corridor with two visually matching segments (Saleem et al., 2018; Figure 1). We used two-photon microscopy to record activity across the visual pathway, from neurons in layer 2/3 of multiple visual areas, and from LGN afferents in layer 4 of area V1. To estimate activity, the calcium traces were deconvolved, yielding inferred firing rates (Pachitariu et al., 2016a; Pachitariu et al., 2018). Mice were head-fixed and ran on a treadmill to traverse a one-dimensional virtual corridor made of two visually\u00a0matching 40 cm segments each containing the same two visual patterns (Figure 1b, top). A purely visual neuron would respond to visual patterns similarly in both segments, while a neuron modulated by spatial position could respond more strongly in one segment.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig1-v1.jpg)\n\n**Figure 1.:** (a) Example retinotopic map (colors) showing borders between visual areas (contours) and imaging sessions targeting V1 fully or partly (squares, field of view: 500 \u00d7 500 \u00b5m). (b) Normalized responses of three example V1 neurons, as a function of position in the virtual corridor. The corridor had two landmarks that repeated after 40 cm, creating visually matching segments (top). Dotted lines are predictions assuming identical responses in the two segments. (c) Responses of 4602 V1 neurons (out of 16,238) whose activity was modulated along the corridor (\u22655% explained variance), ordered by the position of their peak response. The ordering was based on separate data (odd-numbered trials). (d) Cumulative distribution of the spatial modulation index (SMI) for the V1 neurons. Only neurons responding within the visually\u00a0matching segments are included (2992/4602). Crosses mark the 25th, 50th, and 75th percentiles and indicate the three example cells in (b). (e\u2013g) Response profiles obtained from the same field of view in V1 across the first days of experience of the virtual corridor (days 1, 3, and 5 are shown) in two mice. (h) Cumulative distribution of SMI for those 3 days, showing median SMI growing from 0.24 to 0.38 to 0.45 across days.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Two-photon imaging of cell bodies in visual cortex layer 2/3 across multiple days: example retinotopic map with single-session fields of view (black squares). Combination of Figure 1a and Figure 2e. (b) Distribution along the corridor of preferred positions within the visually matching segments for all V1 neurons (bin size: 2 cm). (c) Same as in (b) for V1 neurons with S.M.I.\u00a0>0.5 (n\u00a0=\u00a01322/2992). (d) Example image showing viral expression of GCaMP (green) in the visual thalamus of the right hemisphere (stained with Nissl in blue). Inset: zoomed-in image showing GCaMP expression in LGN and the surrounding nuclei. (e) Distribution of preferred positions along the corridor within the visually matching segments for all 840 LGN boutons (bin size: 2 cm). (f) Same as in (e) for LGN boutons with spatial modulation index\u00a0(SMI)\u00a0>0.5 (n\u00a0=\u00a037/840).\n\nAs we previously reported, spatial position powerfully modulated the visual responses of V1 neurons (Figure 1a\u2013d). V1 neurons tended to respond to the visual patterns more strongly at a single location (Fournier et al., 2020; Saleem et al., 2018; Figure 1b) and their preferred locations were broadly distributed along the corridor (Figure 1c, Figure 1\u2014figure supplement 1a\u2013c). To quantify this spatial modulation of visual responses, we defined a spatial modulation index (SMI) as the normalized difference of responses at the two visually matching positions (preferred minus non\u2013preferred, divided by their sum, with the preferred position defined on held-out data). The distribution of SMIs across V1 neurons heavily skewed toward positive values (Figure 1d), which correspond to a single peak as a function of spatial position. The median SMI for responsive V1 neurons was 0.39\u00a0\u00b1\u00a00.19 (n\u00a0=\u00a039 sessions) and 44% of V1 neurons (1322/2992) had SMI\u00a0>\u00a00.5.\n\nSpatial modulation in V1 grew with experience (Figure 1e\u2013h). In two mice, we measured spatial modulation across the first 5 days of exposure to the virtual corridor, imaging the same V1 field of view across days. Response profiles on day 1 showed many responses with two pronounced peaks (Figure 1e). By day 5, response profiles were more single-peaked and resembled those recorded in experienced mice (Figure 1c,f,g). Indeed, the spatial modulation increased with experience and was significantly larger on day 5 compared to day 1 (Figure 1h, median SMI: 0.45 on day 5 vs. 0.24 on day 1; p<10\u221212, two-sided Wilcoxon rank sum test).\n\nIn contrast to V1 neurons, spatial position barely affected the visual responses of LGN afferents in experienced mice (Figure 2a\u2013d). LGN boutons in layer 4 gave mostly similar visual responses in the two segments of the corridor (Figure 2b,c) and the locations where they fired clustered around the landmarks as expected from purely visual responses (Figure 1\u2014figure supplement 1e). The spatial modulation in LGN boutons was small (Figure 2d), with a median SMI barely above zero (median \u00b1 m.a.d.: 0.07\u00a0\u00b1\u00a00.05, n\u00a0=\u00a019 sessions). It was slightly positive (p=0.002, right-tailed Wilcoxon signed rank test), but markedly smaller than the SMIs of V1 neurons (p=10\u22126, left-tailed Wilcoxon rank sum test). Only 4% of LGN boutons (37/840) had SMI\u00a0>\u00a00.5, compared to 44% in V1. Moreover, among these few neurons, most (28/37) fired more strongly in the first half of the corridor (Figure 1\u2014figure supplement 1f), as might be expected from contrast adaptation mechanisms (Dhruv and Carandini, 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig2-v1.jpg)\n\n**Figure 2.:** (a)\u00a0Confocal image of lateral geniculate nucleus\u00a0(LGN) boutons expressing GCaMP (GFP; green) among V1 neurons (Nissl stain; blue). GCaMP expression is densest in layer 4 (L4). (b) Normalized activity of three example LGN boutons, as a function of position in the virtual corridor. Dotted lines are predictions assuming identical responses in the two segments. (c) Activities of 1140 LGN boutons (out of 3182) whose activity was modulated along the corridor (\u22655% explained variance), ordered by the position of their peak response. The ordering was based on separate data (odd-numbered trials). (d). Cumulative distribution of the spatial modulation index (SMI) for the LGN boutons. Only boutons responding within the visually\u00a0matching segments are included (LGN: 840/1140). Crosses mark the 25th, 50th, and 75th percentiles and indicate the three example cells in (b).\u00a0(e) Same as in Figure 1a, showing imaging sessions targeting six higher visual areas (HVA) fully or partly. (f\u2013h) Same as (b\u2013d), showing response profiles of HVA neurons ((g) 4381 of 18,142 HVA neurons; (h) 2453 of those neurons).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a)\u00a0Example reconstructed electrode tracks terminating in LGN (red: DiI; brain image stained with DAPI). (b) Response profile patterns of example LGN units recorded using extracellular multi-electrode arrays. Responses are from even trials, ordered, and normalized from odd trials. Dotted lines are predictions assuming identical responses in the two segments. (c) Cumulative distribution of the spatial modulation index in even trials for LGN units (black), LGN boutons (dotted gray line, similar to Figure 2d), and V1 (gray line, similar to Figure 1d) (79 units from two animals).\n\nSimilar results were seen in recordings from LGN neurons (Figure 2\u2014figure supplement 1). We performed extracellular electrophysiology recordings in LGN (two mice, five sessions). LGN units gave responses and SMI similar to LGN boutons (median \u00b1 m.a.d.: 0.06\u00a0\u00b1\u00a00.02, p=0.78, Wilcoxon rank sum test). Median SMI was slightly positive (p=0.03, right-tailed Wilcoxon signed rank test), but again markedly smaller than in V1 (p=0.002, left-tailed Wilcoxon rank sum test).\n\nSpatial modulation was broadly similar across HVAs and not significantly larger than in V1 (Figure 2e\u2013h, Figure 3). We measured activity in six visual areas that surround V1 (LM, AL, RL, A, AM, and PM) and found strong modulation by spatial position (Figure 2f,g). Pooling across these areas, the median SMI across sessions was 0.40\u00a0\u00b1\u00a00.12, significantly larger than zero (n\u00a0=\u00a052 sessions, p=10\u221210, right-tailed Wilcoxon signed rank test, Figure 2h) and not significantly different from V1 (Wilcoxon rank sum test: p=0.88). Spatial modulation was present in each of the six areas (Figure 3) and, as in V1, was not affected by reward protocol or mouse line (Figure 3\u2014figure supplement 3). In addition, spatial modulation could not be explained by other factors such as running speed, reward events, pupil size, and eye position (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig3-v1.jpg)\n\n**Figure 3.:** (a) Response profile patterns obtained from even trials (ordered and normalized based on odd trials) for six visual areas. Only response profiles with variance explained\u00a0\u22655% are included (LM: 629/1503 AL: 443/1774 RL: 866/5192 A: 997/4126 AM: 982/3278 PM: 519/2509). (b). Cumulative distribution of the spatial modulation index in even trials for each HVA\u00a0(purple). Dotted line: lateral geniculate nucleus\u00a0(LGN; same as in Figure 2d), Gray: V1 (same as in Figure 1d).\u00a0(c). Violin plots showing the spatial modulation index\u00a0(SMI) distribution and median SMI (white vertical line) for each visual area (median \u00b1 m.a.d. LGN: 0.07\u00a0\u00b1\u00a00.11; V1: 0.43\u00a0\u00b1\u00a00.31; LM: 0.37\u00a0\u00b1\u00a00.25; AL: 0.34\u00a0\u00b1\u00a00.28; RL: 0.44\u00a0\u00b1\u00a00.31; A: 0.37\u00a0\u00b1\u00a00.34; AM: 0.27\u00a0\u00b1\u00a00.26; PM: 0.32\u00a0\u00b1\u00a00.32).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We constructed three models to predict the activity of individual neurons from successively larger sets of predictor variables (Saleem et al., 2018) (a, b) Measured spatial modulation index\u00a0(SMI) for each visual area versus predictions of the simplest model (\u2018purely visual model\u2019). The \u2018purely visual model\u2019 considers only the repetitions of the visual scenes, trial onset and offset, and as expected, fails to predict the SMIs estimated from the data. Each point represents a neuron. (c, d) Measured SMI\u00a0for each cortical visual area versus predictions of the \u2018non-spatial\u2019 model. The \u2018non-spatial\u2019 model also includes the contribution by behavioral factors that can differ within and across trials: speed, reward times, pupil size, and eye position. Adding these factors improves predictions compared to the \u2018purely visual\u2019 model but fails to match the measured SMIs. Therefore, the joint contribution of all task-related and visual factors is not sufficient to explain the observed spatial modulation (e, f) Measured SMI for each visual area versus predictions of the \u2018spatial\u2019 model. The spatial model allows the peaks in the visually matching segments to vary independently. It provides a much better match to the data.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Cartoon of the virtual reality scenes layout. (b) Response profile patterns obtained from even trials (ordered and normalized based on odd trials) for portions of V1 with average receptive fields in the center (\u2018V1 center\u2019;<40\u00b0\u00a0azimuth angle; left) or in the periphery (\u2018V1 periphery\u2019; right). (c) Cumulative distribution of the spatial modulation index in even trials for \u2018V1 center\u2019 (purple) or \u2018V1 periphery\u2019 (orange); dotted line: Distribution of lateral geniculate nucleus\u00a0(LGN) boutons (same as in Figure 2d).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Cumulative distribution of the spatial modulation index\u00a0(SMI) in even trials for V1 split by Ca2+ indicator, GCaMP6f or GCaMP6s (median \u00b1 m.a.d. of SMI: 0.43\u00a0\u00b1\u00a00.34 vs. 0.43\u00a0\u00b1\u00a00.29). (b) As in (a) for V1 neurons with central receptive fields (median SMI: 0.53\u00a0\u00b1\u00a00.31 vs 0.64\u00a0\u00b1\u00a00.25). (c) As in (a) for V1 neurons with peripheral receptive fields (median SMI: 0.31\u00a0\u00b1\u00a00.31 vs. 0.29\u00a0\u00b1\u00a00.24). (d) As in (a) for all higher visual areas\u00a0(HVAs) combined (median SMI: 0.40\u00a0\u00b1\u00a00.37 vs. 0.34\u00a0\u00b1\u00a00.24). (e) Cumulative distribution of the SMI in even trials for V1 split by reward condition, no reward, fixed reward at the end of corridor, and reward delivered at random locations (median \u00b1 m.a.d. of SMI: 0.42\u00a0\u00b1\u00a00.37, 0.43\u00a0\u00b1\u00a00.29, 0.44\u00a0\u00b1\u00a00.30 respectively). (f) As in (e) for \u2018V1 center\u2019 (median SMI: 0.53\u00a0\u00b1\u00a00.34, 0.63\u00a0\u00b1\u00a00.25, 0.52\u00a0\u00b1\u00a00.25;). (g) As in (e) for \u2018V1 periphery\u2019 (median SMI: 0.20\u00a0\u00b1\u00a00.34, 0.29\u00a0\u00b1\u00a00.24, 0.36\u00a0\u00b1\u00a00.29). (h) As in (e) for all HVAs (median SMI: 0.33\u00a0\u00b1\u00a00.40, 0.35\u00a0\u00b1\u00a00.24, 0.48\u00a0\u00b1\u00a00.27).\n\nWe observed small differences in spatial modulation between areas, which may arise from biases in retinotopy combined with the layout of the visual scene. Visual patterns in the central visual field were further away in the corridor, and thus were likely less effective in driving responses than patterns in the periphery, which were closer to the animal and thus larger. In V1, spatial modulation was larger in neurons with central rather than peripheral receptive fields (Figure 3\u2014figure supplement 2) irrespective of mouse line or reward protocol (Figure 3\u2014figure supplement 3). A similar trend was seen across higher areas, with slightly lower SMI in areas biased toward the periphery (AM, PM) (Garrett et al., 2014; Wang and Burkhalter, 2007; Zhuang et al., 2017) than in areas biased toward the central visual field (LM, RL, Figure 3c).\n\nWe next asked whether visual responses would be similarly modulated when animals passively viewed the environment. After recordings in \u2018VR\u2019, we played back the same video regardless of the mouse\u2019s movements (\u2018replay\u2019). We separated data taken during running (running speed\u00a0>1 cm/s in at least 10 trials, \u2018running replay\u2019), and rest (\u2018stationary replay\u2019) periods.\n\nPassive viewing affected the baseline activity of LGN boutons but not their spatial modulation, which remained negligible in all conditions (Figure 4a\u2013d). During \u2018running replay\u2019 the baseline activity of LGN boutons decreased slightly (Figure 4a,b, Figure 4\u2014figure supplement 1a, p=0.003, paired-sample right-tailed t-test). However, the median SMI in \u2018running replay\u2019 remained a mere 0.05\u00a0\u00b1\u00a00.06 (n\u00a0=\u00a018 sessions), not significantly different from the 0.08\u00a0\u00b1\u00a00.05 measured in VR (Figure 4b, p=0.29, Wilcoxon signed rank test). Similar results were obtained during stationary replay (Figure 4c,d): baseline activity decreased markedly (Erisken et al., 2014) (p=10\u221265 paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1b), but the median SMI remained negligible at 0.03\u00a0\u00b1\u00a00.04 and not different from the 0.07\u00a0\u00b1\u00a00.04 measured in VR (n\u00a0=\u00a018 sessions, p=0.053, Wilcoxon signed rank test, Figure 4d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig4-v1.jpg)\n\n**Figure 4.:** (a)\u00a0Response profiles of lateral geniculate nucleus\u00a0(LGN) boutons in virtual reality (VR;\u00a0left) that also met the conditions for running replay (right; at least 10 running trials per recording session), estimated as in Figure 1c. Response profiles of LGN boutons during running replay were ordered by the position of their maximum response estimated from odd trials in VR (same order and normalization as in left panel). (b) Median spatial modulation index (SMI) per recording session in VR versus running replay for LGN (each circle corresponds to a single session; p-values from Wilcoxon signed rank test). (c, d) Same as (a,\u00a0b) for stationary replay.\u00a0(e\u2013h). Same as in (a\u2013d) for V1 neurons. (i\u2013l) Same as in (a\u2013d) for neurons in higher visual areas.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63705/elife-63705-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a)\u00a0Comparison of the mean activity between VR and running replay for all probed visual areas, split into 10 percentile bins. (b) Same as in (a) for stationary replay. Mean activity was similar between VR and running replay but decreased significantly during stationary replay in many areas (paired-sample right-tailed t-test: running replay: lateral geniculate nucleus\u00a0(LGN): p=0.003; p>0.05 in all cortical areas; stationary replay: LGN: 10\u221265, V1: 10\u221224, LM: 0.93, AL: 0.15, RL: 0.06, A: 0.56, AM: 0.03, PM: 10\u221209).\n\nMany V1 neurons showed weaker modulation by spatial position during replay than in VR, particularly during stationary replay (Figure 4e\u2013h). In V1, \u2018running replay\u2019 reduced median SMI\u00a0by ~10%, from 0.42\u00a0\u00b1\u00a00.15 in VR to 0.38\u00a0\u00b1\u00a00.14 (n\u00a0=\u00a032 sessions, p=0.01, right-tailed Wilcoxon signed rank test, Figure 4e,f). This decrease in spatial modulation was not associated with mean activity differences (p>0.05, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1a). Therefore, running without matched visual feedback did not result in the same spatial modulation as active navigation. The decrease in spatial modulation was greater during rest (\u2018stationary replay\u2019, Figure 4g,h). As expected in mice that are not running (Keller et al., 2012; Saleem et al., 2013), activity decreased markedly (p=10\u221224, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1b). In addition, the median SMI halved from 0.38\u00a0\u00b1\u00a00.21 in VR to 0.18\u00a0\u00b1\u00a00.12 in stationary replay, a significant decrease (n\u00a0=\u00a024 sessions, p=0.005, right-tailed Wilcoxon signed rank test).\n\nThese effects were especially marked in HVAs (Figure 4i\u2013l). Here, \u2018running replay\u2019 reduced median SMI by\u00a0~33%, from 0.40\u00a0\u00b1\u00a00.10 in VR to 0.27\u00a0\u00b1\u00a00.10 (n\u00a0=\u00a041 sessions, p=10\u22126, right-tailed Wilcoxon signed rank test, Figure 4i,j), without affecting overall activity (p>0.05 in all areas, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1a). Even stronger effects were seen during stationary replay (Figure 4k,l), where the median SMI decreased\u00a0~68%, from 0.34\u00a0\u00b1\u00a00.15 in VR to 0.11\u00a0\u00b1\u00a00.11 (n\u00a0=\u00a033 sessions, p=10\u22126, right-tailed Wilcoxon signed rank test, Figure 4k,l). This effect was accompanied by decreased firing in some areas, notably AM (p=0.03) and PM (p=10\u22129, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1b).\n\n## Discussion\n\nTaken together, these results indicate that upon experience active navigation modulates the amplitude of visual responses along the visual pathway and does so primarily in the cortex.\n\nThis spatial modulation of V1 visual responses strengthened across the first days of experience, perhaps more slowly than the development of navigational signals in hippocampus (Frank et al., 2004; Karlsson and Frank, 2008) but similar to retrosplenial cortex (Mao et al., 2018). Similar results have been observed when decoding spatial position from V1 across days of exposure to a slightly changing environment (Fiser et al., 2016).\n\nThe spatial modulation of V1 responses is unlikely to be inherited from LGN, because this modulation was negligible in LGN inputs to layer 4 and in LGN neurons themselves (regardless of what layer they project to Cruz-Mart\u00edn et al., 2014). However, our mice were head restrained and hence lacked vestibular inputs, which may be relevant (Ravassard et al., 2013; Russell et al., 2006). Perhaps when mice freely move, LGN does show some spatial modulation (Hok et al., 2018), which is possibly amplified in V1 by nonlinear mechanisms (Chariker et al., 2016; Lien and Scanziani, 2013).\n\nSpatial modulation affected all cortical visual areas approximately equally, consistent with the widespread neural coding of task-related information across the posterior cortex (Koay et al., 2021; Minderer et al., 2019). In addition, all areas gave stronger visual responses during active behavior than during passive viewing.\n\nNavigational signals may reach visual cortex through retrosplenial cortex (Makino and Komiyama, 2015), an area that contains experience-dependent spatial signals (Mao et al., 2017; Mao et al., 2018), and is more strongly modulated by active navigation than V1 (Fischer et al., 2020). Another candidate is anterior cingulate cortex (Zhang et al., 2014), whose dense projections to V1 carry signals related to locomotion (Leinweber et al., 2017). The route that navigational signals take across the cortex is yet to be charted.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>WT, C57BL/6J</td>\n      <td>Jackson Labs</td>\n      <td>RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Ai93, C57BL/6J</td>\n      <td>Jackson Labs; Madisen et al., 2015</td>\n      <td>B6;129S6-Igs7tm93.1(tetO-GCaMP6f)Hze/J RRID:IMSR_JAX:024103</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Emx1-Cre, C57BL/6J</td>\n      <td>Jackson Labs; Madisen et al., 2015</td>\n      <td>B6.129S2-Emx1(tm1(cre))Krj/J RRID:IMSR_JAX:005628</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Camk2a-tTA, C57BL/6J</td>\n      <td>Jackson Labs</td>\n      <td>B6.Cg-Tg(Camk2a-tTA) 1Mmay/DboJ RRID:IMSR_JAX:007004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>tetO-G6s, C57BL/6J</td>\n      <td>Jackson Labs; Wekselblatt et al., 2016</td>\n      <td>B6;DBA-Tg(tetO-GCaMP6s) 2Niell/J RRID:IMSR_JAX:024742</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV9.CamkII. GCamp6f.WPRE.SV40</td>\n      <td>Addgene</td>\n      <td>Catalogue #: 100834-AAV9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Suite2p</td>\n      <td>Pachitariu et al., 2016a; https://github.com/cortex-lab/Suite2P</td>\n      <td>RRID:SCR_016434</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>KiloSort</td>\n      <td>Pachitariu et al., 2016b; https://github.com/cortex-lab/Kilosort</td>\n      <td>RRID:SCR_016422</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nAll experimental procedures were conducted under personal and project licenses issued by the Home Office, in accordance with the UK Animals (Scientific Procedures) Act 1986.\n\nFor calcium imaging experiments in visual cortex, we used double or triple transgenic mice expressing GCaMP6 in excitatory neurons (five females, one male, implanted at 4\u201310 weeks). The triple transgenics expressed GCaMP6 fast (Madisen et al., 2015) (Emx1- Cre;Camk2a-tTA;Ai93, three mice). The double transgenic expressed GCaMP6 slow (Wekselblatt et al., 2016) (Camk2a-tTA;tetO-G6s, three mice). Because Ai93 mice may exhibit aberrant cortical activity (Steinmetz et al., 2017), we used the GCamp6 slow mice to validate the results obtained from the GCaMP6 fast mice. For calcium imaging experiments of LGN boutons, we used three C57BL/6 mice (three females, implanted at 6\u20139 weeks).\n\n### Surgical procedures\n\nTo image activity in visual cortex, 4\u201310-week-old mice were implanted with an 8 mm circular chamber and a 4 mm craniotomy was performed over the left or right visual cortex as previously described (Saleem et al., 2018). The craniotomy was performed by repeatedly rotating a biopsy punch and it was shielded with a double coverslip (4 mm inner diameter; 5 mm outer diameter).\n\nTo image activity of LGN boutons, after the craniotomy was performed over the right hemisphere, we injected 253 nL (2.3 nL pulses separated by 5 s, 110 pulses) of virus AAV9.CamkII.GCamp6f.WPRE.SV40 (5.0 \u00d7 1012 GC/mL) into the right visual thalamus. To target LGN the pipette was directed at 2.6 mm below the brain surface, 2.3 mm posterior, and 2.25 mm lateral from bregma. To prevent backflow, the pipette was kept in place for 5 min after the end of the injection. In addition to dorsal LGN, the virus could infect neighboring thalamic nuclei, including the higher-order visual thalamic nucleus LP, which projects to layer 1 of visual cortex (Roth et al., 2016). Therefore, we imaged boutons only in layer 4, the main recipient of dorsal LGN inputs.\n\n### Widefield calcium imaging\n\nTo obtain retinotopic maps we used widefield calcium imaging, as previously described (Saleem et al., 2018). Briefly, we used a standard epi-illumination imaging system (Carandini et al., 2015; Ratzlaff and Grinvald, 1991) together with an SCMOS camera (pco.edge, PCO AG). A 14o-wide vertical window containing a vertical grating (spatial frequency 0.15 cycles\u00a0per\u00a0degree), swept (Kalatsky and Stryker, 2003; Yang et al., 2007) across 135o of azimuth angle (horizontal position), at a frequency of 2 Hz. To obtain maps for preferred azimuth we combined responses to the two stimuli moving in opposite direction (Kalatsky and Stryker, 2003).\n\n### Two-photon imaging\n\nTwo-photon imaging was performed with a standard multiphoton imaging system (Bergamo II; Thorlabs Inc) controlled by ScanImage4 (Pologruto et al., 2003). A 970 nm or 920 nm laser beam, emitted by a Ti:Sapphire Laser (Chameleon Vision, Coherent), was targeted onto L2/3 neurons or L4 LGN boutons through a 16\u00d7 water-immersion objective (0.8 NA, Nikon). Fluorescence signal was transmitted by a dichroic beam splitter and amplified by photomultiplier tubes (GaAsP, Hamamatsu). The emission light path between the focal plane and the objective was shielded with a custom-made plastic cone to prevent contamination from the monitors\u2019 light. Multiple-plane imaging was enabled by a piezo focusing device (P-725.4CA PIFOC, Physik Instrumente) and an electro-optical modulator (M350-80LA, Conoptics Inc) which allowed adjustment of the laser power with depth.\n\nFor experiments monitoring activity in visual cortex, we imaged four planes in layer 2/3 set apart by 40 \u03bcm. Images of 512 \u00d7 512 pixels, corresponding to a field of view of 500 \u00d7 500 \u03bcm, were acquired at a frame rate of 30 Hz (7.5 Hz per plane). For experiments monitoring activity of LGN boutons, we imaged 7\u201310 planes set apart by 1.8 \u03bcm at a depth of at least 270 \u03bcm (two to three of these planes were fly-back). Images of 256 \u00d7 256 pixels, corresponding to a field of view of 100 \u00d7 100 \u03bcm, were acquired at a frame rate of 58.8 Hz.\n\nFor experiments in na\u00efve mice (Figure 1e\u2013h) we targeted the same field of view based on vasculature and recorded from similar depths. We did not attempt to track the same neurons across days.\n\n### Neuropil receptive fields\n\nTo obtain neuropil receptive fields, on each two-photon imaging session we presented sparse uncorrelated noise for 5 min. The screen was divided into a grid of squares 4 \u00d7 4\u00b0. Each square was turned on and off randomly at a 10 Hz rate. At each moment, 2% of the squares were on. To compute the neuropil receptive fields, the two-photon field of view was segmented into 5 \u00d7 5 patches (100 \u00b5m x 100 \u00b5m surface per patch). For each patch, we averaged the fluorescence across the pixels and computed its stimulus-triggered average. The response was further smoothed in space and its peak was defined as the patch\u2019s receptive field center.\n\n### Virtual Reality\n\nMice were head-restrained in the center of three LCD monitors (IIyama ProLite E1980SD 19\u2033) or three 10-inch LCD screens (LP097Q \u00d7 1 SPAV 9.7\u2033, XiongYi Technology Co., Ltd.) placed at 90o angle to each other. The distance from each screen was 19 cm for the LCD monitors, or 11 cm for the LCD screen, so that visual scenes covered the visual field by 135o in azimuth and 42o in elevation.\n\nThe VR environment was a corridor with two visually matching segments (Saleem et al., 2018). Briefly, the corridor was 8 cm wide and 100 cm long. A vertical grating or a plaid, 8 cm wide each, alternated in the sequence grating-plaid-grating-plaid at 20, 40, 60, and 80 cm from the start of the corridor.\n\nIn VR mode, animals traversed the virtual environment by walking on a polystyrene cylindrical wheel (15 cm wide, 18 cm diameter) which allowed movement along a single dimension (forward or backward). Running speed was measured online with a rotary encoder (2400 pulses/rotation, K\u00fcbler, Germany) and was used to update the visual scene. Upon reaching the 100th cm of the corridor, mice were presented with a gray screen for an inter-trial period of 3\u20135 s (chosen randomly), after which they were placed at the beginning of the virtual corridor for the next trial. The duration of each trial depended on how long it took the mouse to traverse the corridor, typically\u00a0<8 s. Trials in which animals did not reach the end of the corridor within 30 s were timed-out and excluded from further analysis. A typical session included\u00a0>50 trials.\n\nIn the replay mode, mice were presented with a previous closed-loop session, while still free to run on the wheel.\n\n### Electrophysiology\n\nMice were implanted with a custom-built stainless-steel metal plate on the skull under isoflurane anesthesia. The area above the right LGN was kept accessible for electrophysiological recordings. Mice were acclimatized to the VR environment for\u00a0>5 days. The virtual corridor was projected onto a truncated spherical screen, and the mice traversed it by running on a 10 cm radius polystyrene ball (Schmidt-Hieber and H\u00e4usser, 2013). Twelve to twenty-four hours before the first recording, a\u00a0~1 mm craniotomy was performed over the LGN (1.9 mm lateral and 2.4 mm anterior from lambda). On the recording session, a multi-shank electrode (ASSY-37 E-1, 32-channels, Cambridge Neurotech Ltd., Cambridge, UK) was advanced to a depth of\u00a0~3 mm until visual responses to flashing stimuli were observed. Electrophysiology data were acquired with an OpenEphys acquisition board (Siegle et al., 2017) and units were isolated using Kilosort (Pachitariu et al., 2016b).\n\n### Behavior and training\n\nMice ran through the corridor with no specific task (n\u00a0=\u00a04 animals, 65 sessions recording cortical activity; n\u00a0=\u00a03 animals, 19 sessions recording activity of LGN boutons). Prior to recording sessions, mice were placed in the virtual environment, typically for 3 days and for up to 1 week, until they were able to run for at least 80% of the time within a single session. For our experiments in cortex, mice ran most of the time without rewards (34/65 sessions). If mice became slower in subsequent sessions, they were motivated to run with rewards, receiving\u00a0~2.5 \u03bcL of water (two mice) or of 10% sucrose (one mouse) through a solenoid valve (161T010; Neptune Research, USA). In 12/65 sessions, rewards were placed at random positions along the corridor. In 19/65 sessions rewards were placed at the end of the corridor. We chose various reward protocols to control for the possible effect of reward and of stereotyped running speeds that might be observed with rewards at the end of the corridor. Our results were the same regardless of whether animals received rewards or not (Figure 3\u2014figure supplement 3). Therefore, rewards were placed at the end of the virtual corridor for subsequent recordings from LGN boutons.\n\nFor experiments in na\u00efve animals (n\u00a0=\u00a02, Camk2a-tTA;tetO-G6s, Figure 1e\u2013h) mice were placed on the treadmill for 4\u20135 days, until they were able to run at speeds higher than 10 cm/s for at least 20 min. Only after animals reached this criterion we turned the VR on and started recording from the same field of view in V1 across multiple days.\n\nWe tracked the eye of the animal using an infrared camera (DMK 21BU04.H, Imaging Source) and custom software, as previously described (Saleem et al., 2018).\n\n### Perfusion and histology\n\nMice were perfused with 4% paraformaldehyde (PFA) and the brain was extracted and fixed for 24 hr at 4\u00b0C in 4% PFA, then transferred to 30% sucrose in PBS at 4\u00b0C. The brain was mounted on a benchtop microtome and sectioned at 60 \u00b5m slice thickness. Free-floating sections were washed in PBS, mounted on glass adhesion slides, stained with DAPI (Vector Laboratories, H-1500), and covered with a glass-slip. In brains used for two-photon imaging we obtained anatomical images in blue for DAPI and in green for GCaMP. In brains used for electrophysiology we obtained anatomical images in blue for DAPI and red for DiI (the electrode had been dipped in DiI before insertion). The LGN border on these images was determined using SHARP-Track (Shamash et al., 2018).\n\n### Processing of two-photon imaging data\n\nImage registration in the horizontal plane (x\u2013y), cell detection, and spike deconvolution were performed with Suite2p\u00a0(Pachitariu et al., 2016a; Pachitariu et al., 2018). All subsequent analyses were performed on each neuron\u2019s activity inferred from spike deconvolution. To account for the different dynamics of the calcium indicators, the decay timescale used for deconvolution was set to 0.5 s for GCaMP6f and to 2.0 s for GCaMP6s.\n\nFor the LGN boutons data, we additionally used the method of Schr\u00f6der et al., 2020 to align image frames in the z-direction (cortical depth). By using a stack of closely spaced planes (1.8 \u00b5m inter-plane distance), we were able to detect small boutons across multiple planes, which could have otherwise moved outside a given plane due to brain movement in the z-direction. In brief, for each imaging stack, the algorithm estimates the optimal shift that maximizes the similarity of each plane to their corresponding target image (with target images across planes having been aligned to each other in x and y). After assigning the shifted planes to their corresponding target image, a moving average across two\u00a0to\u00a0three neighboring planes was applied, resulting in a smooth image, and consequently in smooth calcium traces from boutons sampled from multiple, closely spaced planes.\n\nRegions of interest (cell bodies or boutons) were detected from the aligned frames and were manually curated with the Suite2p graphical user interface, as described by Saleem et al., 2018. Data from V1 neurons with receptive fields in the periphery (>40\u00b0) are the same as in Saleem et al., 2018. These data were deconvolved and pooled together with data from V1 neurons with receptive fields in the central visual field.\n\n### Analysis of responses in VR\n\nTo obtain response profiles as a function of position along the corridor, we first smoothed the deconvolved traces in time with a 250 ms Gaussian window and considered only time points with running speeds greater than 1 cm/s. We then discretized the position of the animal in 1 cm bins (100 bins) and estimated each neuron\u2019s spike count and the occupancy map, that\u00a0is the total time spent in each bin. Both maps were smoothed in space with a fixed Gaussian window of 5 cm. Finally, each unit\u2019s response profile was defined as the ratio of the smoothed spike count map over the smoothed occupancy map. We assessed the reliability of the response profiles based on a measure of variance explained and selected those with variance explained higher than 5%.\n\nTo predict the responses that would be observed if cells were purely visual (dotted curves in Figure 1b), we fit (using least squares) a smooth function to the response profile along the visually\u00a0matching segment where the cell peaked. The smooth function was the sum of two Gaussians that meet at the peak. To obtain a prediction along the whole corridor, we then duplicated the fitted response at\u00a0\u00b140 cm away from the maximum.\n\nTo cross-validate the response profile patterns in VR, we divided each session\u2019s trials in two halves (odd vs. even) and obtained a pair of response profiles for each unit. Odd trials were used as the train set to determine the position at which cells or boutons preferred to fire maximally. Odd trials were subsequently excluded from further analysis.\n\nThe same splitting into odd and even trials was used to estimate each unit\u2019s SMI. For each neuron or bouton, the position of the peak response was measured from the response profile averaged across odd trials (\u2018preferred position\u2019). We then obtained the response, $R_{p.}$, at the preferred position and the visually identical position 40 cm away (\u2018non-preferred position\u2019: $R_{n}$), using the response profile averaged across even trials. Units with maximal response close to the start or end of the corridor (0\u201315 cm or 85\u2013100 cm) were excluded, because their preferred position fell outside the visually matching segments. SMI was defined as:\n\n$$\nSMI=\u00a0\\frac{R_{p}\u2212\u00a0R_{n}}{R_{p}+\u00a0R_{n}}\n$$\n\nTherefore, a response with two equal peaks would have $SMI=0$, whereas a response with one peak would have $SMI=1$. SMI would be negative if there was no consistent preference, that\u00a0is, the larger response was in one half of the corridor in odd trials and in the other half in even trials.\n\nTo cross-validate the response profile patterns and to estimate SMIs in passive viewing, we used the same odd trials from VR as a train set. Based on those we obtained response profile patterns and SMIs from all trials during passive viewing. To isolate periods when the animal was stationary during passive viewing, we considered only times when the speed of the animal was\u00a0<5 cm/s. Response profiles during stationary viewing were estimated only in sessions where the animal was stationary in at least 10 trials. To isolate periods when the animal was running during passive viewing, we considered only times when the speed of the animal was\u00a0>1 cm/s. Response profiles in running during replay were estimated only in sessions where the animal was running in at least 10 trials.\n\nThe reliability of a neuron\u2019s or bouton\u2019s activity was defined as the variance in activity explained by the cross-validated response profile. To predict activity, data were divided into fivefolds (fivefold cross-validation) and activity for each fold was predicted from the responses profile estimated from all other folds (training data). Reliability was defined as:\n\n$$\nReliability=1\u2212\\frac{\\sumt(y(t)\u2212y^{\u2032}(t))^{2}}{\\sumt(y(t)\u2212\\mu)^{2}}\n$$\n\nwhere $yt$ is the actual, smoothed activity at time t between the beginning and end of the experiment, $y^{'}t$ is the predicted activity for the same time bin, and \u03bc\u00a0is the mean activity of the training data. The response reliability reported was obtained from the mean reliability across folds. Only neurons or boutons with response reliability > 5% were considered for further analysis.\n\n### General linear models\n\nTo assess the joint contribution of all visual and behavioral factors in VR we fitted the V1 deconvolved responses to three multilinear regression models similar to Saleem et al., 2018. The models had the form: $y^=X\\beta,^$ where $X$ is a T-by-M matrix with T time points and M predictors and $y^$ is the predicted calcium trace (T-by-1 array). Optimal coefficient estimates $\\beta^$ (M-by-1 array) that minimize the sum-squared error were obtained using:\n\n$$\n\\beta^=(X^{T}X+\\lambdaI)^{\u22121}X^{T}y,\n$$\n\nwhere $\\lambda$\u00a0is the ridge-regression coefficient.\n\nThe simplest model, the visual model, relied only on \u2018trial onset\u2019 (first 10 cm in the corridor), \u2018trial offset\u2019 (last 10 cm in the corridor), and the repetition of visual scenes within the visually matching segments (from 10 to 90 cm in the corridor). The basis functions for all predictors were square functions with width of 2 cm and height equal to unity. To model the repetition of visual scenes, a predictor within the visually matching segments comprised of two square functions placed 40 cm apart. Thus, the visual model\u2019s design matrix had 30 predictors plus a constant: five predictors for trial onset, five predictors for trial offset, and 20 predictors within the visually matching segments.\n\nThe second model, the non-spatial model, extended the visual model to assess the influence of all the behavioral factors we measured: running speed, reward events, pupil size, and the horizontal and vertical pupil position. These factors were added as predictors to the design matrix of the visual model, as follows: running speed was shifted backward and forward in time twice, in 500 ms steps, thus contributing five continuous predictors; pupil size and horizontal and vertical pupil position contributed one continuous predictor each; each reward event contributed one binary predictor at the time of the reward. The continuous predictors of running speed and pupil size were normalized between 0 and 1, whereas pupil position was normalized between \u22121 and 1 to account for movements in opposite directions.\n\nThe third model, the spatial model, extended the non-spatial model by allowing for an independent scaling of the two visually\u00a0matching segments in the corridor. For each predictor within the visually\u00a0matching segments, the two square functions were allowed to have different heights. The height of the two square functions was parameterized by a parameter \u03b1, such that the two functions had unit norm. An \u03b1 = 0.5 corresponded to a purely visual representation with SMI ~ 0, while $\\alpha=1$ or $\\alpha=0$ would correspond to a response only in the first or second segment, and an SMI ~ 1.\n\nTo choose the best model, we used the ridge regression coefficient, \u03bb, that maximized the variance explained using fivefold cross-validation, searching the values $\\lambda=$\u00a00.01, 0.05, 0.1, 0.5, or 1. In the spatial model, we performed multiple ridge regression fits, searching for the optimal value of $\\alpha$ using a step size of 0.1, for each \u03bb.\n\nThe predictions obtained were subsequently processed similarly as the original deconvolved traces to obtain predicted response profiles and SMI.\n",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "1f70692a-2df8-4eb3-8b88-c6a860386f3d",
+      "submission_id": "025f85f6-372f-4241-8937-9c133c0b3bff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lisa Giocomo, Stanford School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63705.sa1](https://doi.org/10.7554/eLife.63705.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper investigates the modulation of spatial signals in higher order visual areas in mice navigating virtual reality environments. While previous work demonstrated that the spatial position of an animal modulates neural activity in primary visual cortex (V1), the authors demonstrate that this spatial modulation is not a general feature of the visual circuit. Rather, spatial modulation of the visual circuit only occurs in higher visual areas, not in lower visual areas, and reflects the animal's experience in a particular environment and active engagement in navigation. Together, this work reveals that spatial modulation of neurons in the visual system is likely generated within the visual cortex itself, rather than inherited in a bottom-up manner from the thalamus.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spatial modulation of visual signals arises in cortex with active navigation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis paper investigates the modulation of spatial signals in higher order visual areas in mice navigating virtual reality environments. Previous work demonstrated that the spatial position of an animal modulates neural activity in primary visual cortex (V1). Here, the authors demonstrate that this spatial modulation however, is not a general feature of the visual circuit. Similar spatial modulation occurs in higher visual areas but not in lower visual areas, such as the lateral geniculate nucleus. Moreover, this work finds that spatial modulation was stronger when animals had more experience on the track and when the animals were actively performing a task, rather than when the animal was passively viewing the same virtual track. Since the first reports that visual neurons show modulation by spatial position during spatial navigation tasks, similar to that observed in hippocampal place cells, the source of this modulation has been an open question. This work adds new insight regarding this question, suggested that it is likely either generated within the visual cortex itself of propagated in a top-down manner from higher brain areas, rather than in a bottom-up manner from the thalamus.\n\nRevisions:\n\n1) The imaging data is from mice with different genetic backgrounds, as well as a mixture of gcamp6f and 6s. In addition, different reward protocols were used for different mice. Although the authors state in the Materials and methods that none of these factors impact their results, please include some quantifications to support this statement (e.g. the distribution of SMI for 6f data vs 6s data).\n\nThese differences could affect portions of the results where the dataset is split up \u2013 for example in the comparison between different higher visual areas, and the observation that spatial modulation appears to vary with receptive field location.\n\n2) The authors state that it is to be expected that LGN neurons respond more strongly in the first half of the corridor due to contrast adaption mechanisms. Please provide a quantification that supports this statement.\n\n3) For the spatial modulation index, it appears that the reported values switch between median (e.g. Figure 1 and 2) and mean (Figure 4), t-test and rank-sum \u2013 and sometimes there is missing information regarding which (mean or median) is being reported. Please include more detail regarding when/why each value was reported and which value is reported.\n\n4) It was not clear if imaging was only performed on layer 2/3 neurons or if it includes deeper layers.\n\n5) Throughout the paper, the authors use \u201cfiring rate\u201d to refer to deconvolved calcium signal. Although this is stated in the Materials and methods, this wording may be confusing, especially since the paper also contains extracellular recordings of spiking activity.\n\n6) It was not clear how the dotted lines (e.g. Figure 1B) were calculated.\n\n7) Because experience and task engagement enhanced spatial modulation, the authors concluded in the Abstract that \"Active navigation in a familiar environment, therefore, determines spatial modulation\u2026\". However, this conclusion is too strong and not well-supported by the data. First, spatial modulation on Day 1, when the task was novel, was lower than on later days, but it was already much higher than 0 (Figure 1H). In addition, the individual neuron data (Figure 1E) displays clear spatial modulation on Day 1. Therefore, \"familiar environment\" is not a requirement. Second, spatial modulation during passive viewing was much higher than 0 and was correlated with that during active navigation, as shown in Figure 4E \u2013 Figure 4L. Therefore, \"active navigation\" is not a requirement either. It is true that both active navigation and familiar environment enhanced spatial modulation. They did not however, \"determine\" spatial modulation.\n\n8) Related to the point above, the presence of spatial modulation in passive viewing indicates that these cells in the visual system were still mainly driven by visual stimuli. The data in Figure 4E,F are especially telling: the modulation in V1 was similar and highly correlated between active navigation and running replay. In addition, it is clear from all the raw traces in Figure 1 and Figure 2 that these cells did respond to the two segments with identical stimuli reliably with two peaks. The spatial modulation was just a change in one of the peaks. So the nature of the modulation is a \"rate remapping\" of the expected, classical visual responses. In order to maintain the big picture of what drives the activity of these neurons, it would be beneficial to clarify that the \"spatial modulation\" is a modulation on top of the expected visual responses. This message is not explicitly conveyed in the current manuscript.\n\n9) The authors stated that spatial modulation is \"largely absent in the main thalamic pathway into V1\". This was based on the significantly weaker SMIs in LGN than those in V1 and HVAs. However, it is unclear whether the SMIs in LGN were still significant. The SMI values for both LGN buttons and LGN units might be statistically significant from zero. The statistical comparison p-values should be given in both cases. Second, Figure 3\u2014figure supplement 1B,F show that the SMI values in LGN could be predicted by spatial modulation, but not by visual stimuli alone or behavioral variations, just like those in V1 and HVAs. This seems to be good evidence for the presence of spatial modulation in LGN. Therefore, it seems the data do not support the complete lack of spatial modulation in LGN, but do clearly demonstrate weaker spatial modulation in LGN than in V1 and HVAs.\n",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3741533a-6e97-4eb7-a17b-cbf2fa322ac9",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C1",
+      "claim": "During navigation, the visual responses of neurons in mouse primary visual cortex (V1) are modulated by the animal's spatial position.",
+      "claim_type": "EXPLICIT",
+      "source": "During navigation, the visual responses of neurons in mouse primary visual cortex (V1) are modulated by the animal's spatial position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figures 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "9e8324ee-ef16-454d-a01b-fa681231c9fe",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C2",
+      "claim": "Spatial modulation is similarly present across multiple higher visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that this spatial modulation is similarly present across multiple higher visual areas but negligible in the main thalamic pathway into V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from six higher visual areas shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "a3d1fa87-5571-4903-913a-162ffcd3e446",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C3",
+      "claim": "Spatial modulation is negligible in the main thalamic pathway into V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that this spatial modulation is similarly present across multiple higher visual areas but negligible in the main thalamic pathway into V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LGN boutons and neurons shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "b75b2472-65e0-46fd-bfaf-05daf6427e5e",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C4",
+      "claim": "Similar to hippocampus, spatial modulation in visual cortex strengthens with experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to hippocampus, spatial modulation in visual cortex strengthens with experience and with active behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data across days shown in Figure 1e-h, and comparison to hippocampal literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "ef4d58b6-9797-484d-8402-765194be24a7",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C5",
+      "claim": "Spatial modulation in visual cortex strengthens with active behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to hippocampus, spatial modulation in visual cortex strengthens with experience and with active behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing VR to replay conditions shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "415d33b2-be13-4599-bd52-fd87b6fdf48a",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C6",
+      "claim": "Active navigation in a familiar environment enhances the spatial modulation of visual signals starting in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Active navigation in a familiar environment, therefore, enhances the spatial modulation of visual signals starting in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the combined findings about experience, active behavior, and cortical vs. thalamic modulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "0844f643-e4dd-421f-9d72-82c41abe2adb",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C7",
+      "claim": "The activity of mouse primary visual cortex (V1) is influenced by navigational signals.",
+      "claim_type": "EXPLICIT",
+      "source": "There is increasing evidence that the activity of the mouse primary visual cortex (V1) is influenced by navigational signals (Fiser et al., 2016; Flossmann and Rochefort, 2021; Fournier et al., 2020; Haggerty and Ji, 2015; Ji and Wilson, 2007; Pakan et al., 2018; Saleem et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "af03cb14-fc8a-4480-a593-67fb4c31de8b",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C8",
+      "claim": "During navigation, the visual responses of V1 neurons are modulated by the animal's estimate of spatial position.",
+      "claim_type": "EXPLICIT",
+      "source": "During navigation, indeed, the visual responses of V1 neurons are modulated by the animal's estimate of spatial position (Saleem et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "e4914667-33d9-4500-a99a-622f26ea8442",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C9",
+      "claim": "The underlying spatial signals in V1 covary with those in hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying spatial signals covary with those in hippocampus and are affected similarly by idiothetic cues (Fournier et al., 2020; Saleem et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "f25cc229-b515-4bd2-bc6e-d6ffe02e2990",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C10",
+      "claim": "Spatial signals in V1 are affected similarly to hippocampus by idiothetic cues.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying spatial signals covary with those in hippocampus and are affected similarly by idiothetic cues (Fournier et al., 2020; Saleem et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "3f59c31e-21dc-48c8-a497-954932e6a7a0",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C11",
+      "claim": "Spatial signals have been seen in thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, spatial signals have been seen elsewhere in thalamus (Jankowski et al., 2015; Taube, 1995) and possibly also in LGN itself (Hok et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "7e9e9606-0943-4857-a396-048139051eb3",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C12",
+      "claim": "Spatial signals have possibly been seen in LGN itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, spatial signals have been seen elsewhere in thalamus (Jankowski et al., 2015; Taube, 1995) and possibly also in LGN itself (Hok et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work, with qualification 'possibly'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "70e13ef3-50bc-4f16-a5fa-2c28331d2f5b",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C13",
+      "claim": "Many neurons in parietal cortex are associated with spatial coding.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, they might be stronger in parietal areas such as A and AM (Hovde et al., 2018), because many neurons in parietal cortex are associated with spatial coding (Krumin et al., 2018; McNaughton et al., 1994; Nitz, 2006; Save and Poucet, 2009; Whitlock et al., 2012; Wilber et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "c24a7d43-161c-42d9-95a5-01f497a7e3c4",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C14",
+      "claim": "In the navigational system, spatial encoding is stronger in active navigation than during passive viewing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the navigational system, spatial encoding is stronger in active navigation than during passive viewing, when most hippocampal place cells lose their place fields (Chen et al., 2013; Song et al., 2005; Terrazas et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work on hippocampus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "88f121fa-1b20-447d-8c43-50d11fe6f2ca",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C15",
+      "claim": "Most hippocampal place cells lose their place fields during passive viewing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the navigational system, spatial encoding is stronger in active navigation than during passive viewing, when most hippocampal place cells lose their place fields (Chen et al., 2013; Song et al., 2005; Terrazas et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "94a0a19f-19da-407a-96b6-f24fdb59f509",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C16",
+      "claim": "Hippocampal place fields grow stronger when an environment becomes familiar.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both hippocampal place fields and entorhinal grid patterns grow stronger when an environment becomes familiar (Barry et al., 2012; Frank et al., 2004; Karlsson and Frank, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "0c999b65-7466-4bcb-b246-397435a5376b",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C17",
+      "claim": "Entorhinal grid patterns grow stronger when an environment becomes familiar.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both hippocampal place fields and entorhinal grid patterns grow stronger when an environment becomes familiar (Barry et al., 2012; Frank et al., 2004; Karlsson and Frank, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "fb0facfa-0bc6-4934-acc1-dd4890d7810c",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C18",
+      "claim": "V1 neurons tended to respond to the visual patterns more strongly at a single location.",
+      "claim_type": "EXPLICIT",
+      "source": "V1 neurons tended to respond to the visual patterns more strongly at a single location (Fournier et al., 2020; Saleem et al., 2018; Figure 1b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1b and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "62d2fe0c-3701-4e5a-bfdf-f8308cc9af29",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C19",
+      "claim": "The preferred locations of V1 neurons were broadly distributed along the corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "and their preferred locations were broadly distributed along the corridor (Figure 1c, Figure 1\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1c and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "aa7188ba-2447-403b-b5f4-57d8fcc52691",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C20",
+      "claim": "The median SMI for responsive V1 neurons was 0.39 \u00b1 0.19.",
+      "claim_type": "EXPLICIT",
+      "source": "The median SMI for responsive V1 neurons was 0.39 \u00b1 0.19 (n = 39 sessions)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "adb69dff-763a-40b6-89df-a873b82c9ee3",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C21",
+      "claim": "44% of V1 neurons had SMI > 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "and 44% of V1 neurons (1322/2992) had SMI > 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "737a52e2-bdc1-4e7a-8dfe-b4fafd394afa",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C22",
+      "claim": "Spatial modulation in V1 grew with experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial modulation in V1 grew with experience (Figure 1e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "2b2dc962-c39e-4fd9-80c5-02e045f7ea1b",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C23",
+      "claim": "The spatial modulation increased with experience and was significantly larger on day 5 compared to day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the spatial modulation increased with experience and was significantly larger on day 5 compared to day 1 (Figure 1h, median SMI: 0.45 on day 5 vs. 0.24 on day 1; p<10\u221212, two-sided Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical testing shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "9b0107ce-4e3f-41f1-8073-6d21d713ac60",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C24",
+      "claim": "Spatial position barely affected the visual responses of LGN afferents in experienced mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to V1 neurons, spatial position barely affected the visual responses of LGN afferents in experienced mice (Figure 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "b342a3c0-a120-452d-9f51-24014878c67d",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C25",
+      "claim": "LGN boutons in layer 4 gave mostly similar visual responses in the two segments of the corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "LGN boutons in layer 4 gave mostly similar visual responses in the two segments of the corridor (Figure 2b,c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "d9a5aa89-abdb-4132-a648-ee5d199e1153",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C26",
+      "claim": "The locations where LGN boutons fired clustered around the landmarks as expected from purely visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "and the locations where they fired clustered around the landmarks as expected from purely visual responses (Figure 1\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "76690311-3f46-47d5-9cc4-036935bee6df",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C27",
+      "claim": "The spatial modulation in LGN boutons was small.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial modulation in LGN boutons was small (Figure 2d), with a median SMI barely above zero (median \u00b1 m.a.d.: 0.07 \u00b1 0.05, n = 19 sessions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6ff0b7f2-95a9-478d-98a6-021802fbadf6",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C28",
+      "claim": "The median SMI of LGN boutons was slightly positive.",
+      "claim_type": "EXPLICIT",
+      "source": "It was slightly positive (p=0.002, right-tailed Wilcoxon signed rank test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical testing of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "465e0a40-e6e3-48ec-9680-21d17eb342ec",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C29",
+      "claim": "The SMI of LGN boutons was markedly smaller than the SMIs of V1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "but markedly smaller than the SMIs of V1 neurons (p=10\u22126, left-tailed Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "59a4035d-c911-40cf-a896-6da93d35ec68",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C30",
+      "claim": "Only 4% of LGN boutons had SMI > 0.5, compared to 44% in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 4% of LGN boutons (37/840) had SMI > 0.5, compared to 44% in V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quantitative comparison from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "e13a0637-5f19-4567-99f1-0bfc5c35ce49",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C31",
+      "claim": "Among LGN boutons with SMI > 0.5, most (28/37) fired more strongly in the first half of the corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, among these few neurons, most (28/37) fired more strongly in the first half of the corridor (Figure 1\u2014figure supplement 1f), as might be expected from contrast adaptation mechanisms (Dhruv and Carandini, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in supplementary figure and citation to contrast adaptation literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "5bff5c3a-e023-40f7-bc11-dff53aee3a11",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C32",
+      "claim": "LGN units gave responses and SMI similar to LGN boutons.",
+      "claim_type": "EXPLICIT",
+      "source": "LGN units gave responses and SMI similar to LGN boutons (median \u00b1 m.a.d.: 0.06 \u00b1 0.02, p=0.78, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from electrophysiology recordings with statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "ec028159-8ebd-4e1d-9e55-0039b7175997",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C33",
+      "claim": "The median SMI of LGN units was slightly positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Median SMI was slightly positive (p=0.03, right-tailed Wilcoxon signed rank test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical testing of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "ea132e82-b52f-4858-a5da-e60ddfa217c8",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C34",
+      "claim": "The median SMI of LGN units was markedly smaller than in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "but again markedly smaller than in V1 (p=0.002, left-tailed Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "64b84368-5079-4742-8b91-8ad4baaf7c01",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C35",
+      "claim": "Spatial modulation was broadly similar across HVAs and not significantly larger than in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial modulation was broadly similar across HVAs and not significantly larger than in V1 (Figure 2e\u2013h, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "db7f3cd4-8a4f-4c08-a3d8-528dc90cb7f5",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C36",
+      "claim": "Pooling across six higher visual areas, the median SMI across sessions was 0.40 \u00b1 0.12.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling across these areas, the median SMI across sessions was 0.40 \u00b1 0.12, significantly larger than zero (n = 52 sessions, p=10\u221210, right-tailed Wilcoxon signed rank test, Figure 2h)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative measurement from experimental data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6b8c0f8a-d023-48e6-8873-406ea27bcc67",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C37",
+      "claim": "The median SMI of HVAs was not significantly different from V1.",
+      "claim_type": "EXPLICIT",
+      "source": "and not significantly different from V1 (Wilcoxon rank sum test: p=0.88).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "1afcb411-b6c9-4747-aaa5-b28265e7e24d",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C38",
+      "claim": "Spatial modulation was present in each of the six higher visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial modulation was present in each of the six areas (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "a3d899ef-4292-4523-984b-f6c28fbd5f56",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C39",
+      "claim": "Spatial modulation in visual areas was not affected by reward protocol or mouse line.",
+      "claim_type": "EXPLICIT",
+      "source": "and, as in V1, was not affected by reward protocol or mouse line (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "025c1413-00bd-4a46-a2cf-43b76ded0741",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C40",
+      "claim": "Spatial modulation could not be explained by other factors such as running speed, reward events, pupil size, and eye position.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, spatial modulation could not be explained by other factors such as running speed, reward events, pupil size, and eye position (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling analysis shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "ca878206-dbb7-47cf-8243-42d60818c8db",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C41",
+      "claim": "In V1, spatial modulation was larger in neurons with central rather than peripheral receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "In V1, spatial modulation was larger in neurons with central rather than peripheral receptive fields (Figure 3\u2014figure supplement 2) irrespective of mouse line or reward protocol (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "cbc783f7-1e7a-47c4-8519-36bdbe350c97",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C42",
+      "claim": "A similar trend of lower SMI in periphery-biased areas was seen across higher areas.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar trend was seen across higher areas, with slightly lower SMI in areas biased toward the periphery (AM, PM) (Garrett et al., 2014; Wang and Burkhalter, 2007; Zhuang et al., 2017) than in areas biased toward the central visual field (LM, RL, Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3c and citations to retinotopic organization literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "e12f0974-6ef9-4b0e-b8cf-e75943a42aeb",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C43",
+      "claim": "During 'running replay' the baseline activity of LGN boutons decreased slightly.",
+      "claim_type": "EXPLICIT",
+      "source": "During 'running replay' the baseline activity of LGN boutons decreased slightly (Figure 4a,b, Figure 4\u2014figure supplement 1a, p=0.003, paired-sample right-tailed t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical testing shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "746e65a0-446a-45f2-9f79-834ced87e662",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C44",
+      "claim": "The median SMI of LGN boutons in 'running replay' remained a mere 0.05 \u00b1 0.06.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the median SMI in 'running replay' remained a mere 0.05 \u00b1 0.06 (n = 18 sessions), not significantly different from the 0.08 \u00b1 0.05 measured in VR (Figure 4b, p=0.29, Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative measurement from experimental data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6a848da3-8859-4bb7-9ea3-b03d2221f68c",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C45",
+      "claim": "During stationary replay, baseline activity of LGN boutons decreased markedly.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained during stationary replay (Figure 4c,d): baseline activity decreased markedly (Erisken et al., 2014) (p=10\u221265 paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical testing and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "bc9b287d-7a10-4c5e-84b9-bf7cb4c02a02",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C46",
+      "claim": "The median SMI of LGN boutons during stationary replay remained negligible at 0.03 \u00b1 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "but the median SMI remained negligible at 0.03 \u00b1 0.04 and not different from the 0.07 \u00b1 0.04 measured in VR (n = 18 sessions, p=0.053, Wilcoxon signed rank test, Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative measurement from experimental data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "8b286596-3102-4c95-b876-932540562ad1",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C47",
+      "claim": "Many V1 neurons showed weaker modulation by spatial position during replay than in VR, particularly during stationary replay.",
+      "claim_type": "EXPLICIT",
+      "source": "Many V1 neurons showed weaker modulation by spatial position during replay than in VR, particularly during stationary replay (Figure 4e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "48a15e79-3a27-4716-8430-96f928cf2dea",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C48",
+      "claim": "In V1, 'running replay' reduced median SMI by ~10%, from 0.42 \u00b1 0.15 in VR to 0.38 \u00b1 0.14.",
+      "claim_type": "EXPLICIT",
+      "source": "In V1, 'running replay' reduced median SMI by ~10%, from 0.42 \u00b1 0.15 in VR to 0.38 \u00b1 0.14 (n = 32 sessions, p=0.01, right-tailed Wilcoxon signed rank test, Figure 4e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative measurement from experimental data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "73712bcd-fd9b-4a1e-907b-7b059a2fdfb9",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C49",
+      "claim": "The decrease in spatial modulation during running replay was not associated with mean activity differences in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease in spatial modulation was not associated with mean activity differences (p>0.05, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical testing of experimental data shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "4282886d-ff95-44c3-82e5-005839d1e19b",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C50",
+      "claim": "Running without matched visual feedback did not result in the same spatial modulation as active navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, running without matched visual feedback did not result in the same spatial modulation as active navigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the comparison of VR and running replay conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "b05ec5d0-f18c-41d2-a8fb-3e0d6b097954",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C51",
+      "claim": "During stationary replay in V1, activity decreased markedly.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected in mice that are not running (Keller et al., 2012; Saleem et al., 2013), activity decreased markedly (p=10\u221224, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical testing and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "dc995f9b-64ba-4fc6-b118-d605400daeda",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C52",
+      "claim": "In V1, the median SMI halved from 0.38 \u00b1 0.21 in VR to 0.18 \u00b1 0.12 in stationary replay.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the median SMI halved from 0.38 \u00b1 0.21 in VR to 0.18 \u00b1 0.12 in stationary replay, a significant decrease (n = 24 sessions, p=0.005, right-tailed Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quantitative measurement from experimental data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "4698735e-a12b-4355-8b7b-6196bf03f445",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C53",
+      "claim": "In HVAs, 'running replay' reduced median SMI by ~33%, from 0.40 \u00b1 0.10 in VR to 0.27 \u00b1 0.10.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 'running replay' reduced median SMI by ~33%, from 0.40 \u00b1 0.10 in VR to 0.27 \u00b1 0.10 (n = 41 sessions, p=10\u22126, right-tailed Wilcoxon signed rank test, Figure 4i,j)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative measurement from experimental data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "5880f1da-51a5-4a91-84cf-78bcc1819299",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C54",
+      "claim": "The decrease in SMI during running replay in HVAs was without affecting overall activity.",
+      "claim_type": "EXPLICIT",
+      "source": "without affecting overall activity (p>0.05 in all areas, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical testing of experimental data shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "80ca25ec-6494-4520-8526-9be9aff99e4a",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C55",
+      "claim": "In HVAs during stationary replay, the median SMI decreased ~68%, from 0.34 \u00b1 0.15 in VR to 0.11 \u00b1 0.11.",
+      "claim_type": "EXPLICIT",
+      "source": "Even stronger effects were seen during stationary replay (Figure 4k,l), where the median SMI decreased ~68%, from 0.34 \u00b1 0.15 in VR to 0.11 \u00b1 0.11 (n = 33 sessions, p=10\u22126, right-tailed Wilcoxon signed rank test, Figure 4k,l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative measurement from experimental data with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "c4fd9c9b-b1bc-4033-906f-5251101f2df2",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C56",
+      "claim": "The decrease in SMI during stationary replay in HVAs was accompanied by decreased firing in some areas, notably AM and PM.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was accompanied by decreased firing in some areas, notably AM (p=0.03) and PM (p=10\u22129, paired-sample right-tailed t-test, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical testing of experimental data shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "cd0e932d-00b3-4ec7-a299-5d8074c8217f",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C57",
+      "claim": "Upon experience active navigation modulates the amplitude of visual responses along the visual pathway and does so primarily in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that upon experience active navigation modulates the amplitude of visual responses along the visual pathway and does so primarily in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "35272f91-cab2-4d2c-bb65-069d2aba1b50",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C58",
+      "claim": "The spatial modulation of V1 visual responses strengthened across the first days of experience.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial modulation of V1 visual responses strengthened across the first days of experience, perhaps more slowly than the development of navigational signals in hippocampus (Frank et al., 2004; Karlsson and Frank, 2008) but similar to retrosplenial cortex (Mao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and comparison to cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "3cc88e3c-9a72-43af-b762-1fc09712615e",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C59",
+      "claim": "Similar results have been observed when decoding spatial position from V1 across days of exposure to a slightly changing environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results have been observed when decoding spatial position from V1 across days of exposure to a slightly changing environment (Fiser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "8f481b4d-0249-451d-8e10-cb1cc291b8ed",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C60",
+      "claim": "The spatial modulation of V1 responses is unlikely to be inherited from LGN.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial modulation of V1 responses is unlikely to be inherited from LGN, because this modulation was negligible in LGN inputs to layer 4 and in LGN neurons themselves (regardless of what layer they project to Cruz-Mart\u00edn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from experimental data showing negligible LGN modulation, with citation to LGN projection literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "16cf99d4-df5b-44ed-b0d3-e76dbb3cbe18",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C61",
+      "claim": "The mice were head restrained and hence lacked vestibular inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our mice were head restrained and hence lacked vestibular inputs, which may be relevant (Ravassard et al., 2013; Russell et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental conditions with citations to vestibular input literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "2ba3c70b-3a34-48e4-b98d-971af3fe15d6",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C62",
+      "claim": "Perhaps when mice freely move, LGN does show some spatial modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps when mice freely move, LGN does show some spatial modulation (Hok et al., 2018), which is possibly amplified in V1 by nonlinear mechanisms (Chariker et al., 2016; Lien and Scanziani, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement with citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "88e80553-6688-4d05-a22d-b74917d680d6",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C63",
+      "claim": "Spatial modulation affected all cortical visual areas approximately equally.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial modulation affected all cortical visual areas approximately equally, consistent with the widespread neural coding of task-related information across the posterior cortex (Koay et al., 2021; Minderer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations to literature on task-related coding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "60af7fe4-d95e-45c4-9360-559471b36ea7",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C64",
+      "claim": "All cortical visual areas gave stronger visual responses during active behavior than during passive viewing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all areas gave stronger visual responses during active behavior than during passive viewing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing VR to replay conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6f6cca8f-7e6d-44d6-9ca0-3523d7224749",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C65",
+      "claim": "Navigational signals may reach visual cortex through retrosplenial cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Navigational signals may reach visual cortex through retrosplenial cortex (Makino and Komiyama, 2015), an area that contains experience-dependent spatial signals (Mao et al., 2017; Mao et al., 2018), and is more strongly modulated by active navigation than V1 (Fischer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement with citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "3d7aed26-06a3-49e1-8fb7-03ebed3471ea",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C66",
+      "claim": "Another candidate source of navigational signals is anterior cingulate cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Another candidate is anterior cingulate cortex (Zhang et al., 2014), whose dense projections to V1 carry signals related to locomotion (Leinweber et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement with citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "79045916-223c-4e01-bce1-38fa65aa79f2",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C67",
+      "claim": "The route that navigational signals take across the cortex is yet to be charted.",
+      "claim_type": "EXPLICIT",
+      "source": "The route that navigational signals take across the cortex is yet to be charted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "57c3330e-a5b8-43f4-b9eb-ab7fb3e8db04",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C68",
+      "claim": "The virtual corridor was 8 cm wide and 100 cm long.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the corridor was 8 cm wide and 100 cm long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "bb30efe6-f390-42bc-a7ef-70995beab7b6",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C69",
+      "claim": "A vertical grating or a plaid, 8 cm wide each, alternated in the sequence grating-plaid-grating-plaid at 20, 40, 60, and 80 cm from the start of the corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "A vertical grating or a plaid, 8 cm wide each, alternated in the sequence grating-plaid-grating-plaid at 20, 40, 60, and 80 cm from the start of the corridor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "a767d2b7-2a52-459e-9f58-9f52c535bf38",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C70",
+      "claim": "The virus could infect neighboring thalamic nuclei, including the higher-order visual thalamic nucleus LP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to dorsal LGN, the virus could infect neighboring thalamic nuclei, including the higher-order visual thalamic nucleus LP, which projects to layer 1 of visual cortex (Roth et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about potential experimental confound with citation to projection literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "38c9c640-63f3-4f20-b281-b5eb43d53f3a",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C71",
+      "claim": "Boutons were imaged only in layer 4, the main recipient of dorsal LGN inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we imaged boutons only in layer 4, the main recipient of dorsal LGN inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about experimental design based on anatomical knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "3bd836e8-1cf1-4b35-b62e-ea1306a560e8",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C72",
+      "claim": "Calcium traces were deconvolved, yielding inferred firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate activity, the calcium traces were deconvolved, yielding inferred firing rates (Pachitariu et al., 2016a; Pachitariu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "42c1cb69-0be2-4f81-b45a-823a6d38a78d",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C73",
+      "claim": "A purely visual neuron would respond to visual patterns similarly in both segments.",
+      "claim_type": "EXPLICIT",
+      "source": "A purely visual neuron would respond to visual patterns similarly in both segments, while a neuron modulated by spatial position could respond more strongly in one segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about expected neural responses based on experimental design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "e4d108bb-db4b-4606-b237-a074d08c65a6",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C74",
+      "claim": "A neuron modulated by spatial position could respond more strongly in one segment.",
+      "claim_type": "EXPLICIT",
+      "source": "A purely visual neuron would respond to visual patterns similarly in both segments, while a neuron modulated by spatial position could respond more strongly in one segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about expected neural responses based on experimental design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "33d1ba14-cf7c-45cd-8520-5c4b70af490e",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C75",
+      "claim": "Visual patterns in the central visual field were further away in the corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual patterns in the central visual field were further away in the corridor, and thus were likely less effective in driving responses than patterns in the periphery, which were closer to the animal and thus larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about visual stimulus effectiveness based on experimental setup.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6eca8178-bebb-4b83-95a4-c89803a9d27e",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C76",
+      "claim": "Visual patterns in the periphery were closer to the animal and thus larger.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual patterns in the central visual field were further away in the corridor, and thus were likely less effective in driving responses than patterns in the periphery, which were closer to the animal and thus larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about visual stimulus properties based on experimental setup.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "2eb518b8-e8d5-4478-9a85-e5d871f7d09e",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "claim_id": "C77",
+      "claim": "If spatial modulation signals reach visual cortex from the navigational system, they should grow with active navigation and with experience of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "If spatial modulation signals reach visual cortex from the navigational system, therefore, they should grow with active navigation and with experience of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical prediction based on known properties of the navigational system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "71127161-a2ac-4d07-ad86-0ce8c5f0fafb",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "V1 neurons show strong spatial modulation during navigation in a virtual corridor with visually matching segments. Neurons respond more strongly to visual patterns at single locations, with preferred locations distributed along the corridor. The median SMI is 0.39\u00b10.19, with 44% of neurons having SMI>0.5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C18-C21 provide converging quantitative evidence from two-photon calcium imaging showing robust spatial modulation in V1. The experimental design with visually matching segments effectively isolates spatial from purely visual responses, and the SMI metric is well-defined and cross-validated using odd/even trial splits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "17413b25-488b-41a3-a520-b29a8b3726df",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spatial modulation in V1 strengthens with experience in the virtual environment. Across the first 5 days of exposure, median SMI increases significantly from 0.24 on day 1 to 0.45 on day 5 (p<10\u207b\u00b9\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22-C23 demonstrate experience-dependent strengthening through longitudinal imaging of the same V1 field of view across days. The statistical comparison is appropriate and the effect size is substantial. However, the study only tracked two mice for this analysis, which limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "ced41d30-bcfe-499d-a523-2ea626bb72bd",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Spatial modulation is negligible in LGN inputs to V1. LGN boutons in layer 4 show minimal spatial modulation (median SMI 0.07\u00b10.05), with responses clustering around visual landmarks as expected from purely visual responses. Only 4% of LGN boutons have SMI>0.5 compared to 44% in V1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24-C30 provide strong evidence that spatial modulation arises in cortex rather than being inherited from thalamus. The viral labeling approach specifically targets LGN boutons in layer 4, though potential contamination from LP nucleus is acknowledged and controlled by restricting imaging to layer 4. The quantitative comparison to V1 is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6718aa00-891f-4b80-9cfa-ccf1491cab23",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Among the few LGN boutons with high spatial modulation (SMI>0.5), most (28/37) fire more strongly in the first half of the corridor, consistent with contrast adaptation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 provides a mechanistic interpretation for the small fraction of LGN boutons showing spatial modulation. The explanation via contrast adaptation is plausible and supported by citation, though the small sample size (37 boutons) limits confidence in this interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "7cbfa18e-6366-4a76-a4d5-94e906808a63",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Electrophysiological recordings from LGN neurons confirm minimal spatial modulation (median SMI 0.06\u00b10.02), similar to LGN boutons and significantly smaller than V1 (p=0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide independent validation of the calcium imaging results using electrophysiology. The convergence of two methods strengthens the conclusion that LGN shows minimal spatial modulation. However, the electrophysiology data come from only two mice with five sessions, limiting statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "a8b8ccf6-eb9c-4403-923e-8d3b07f29759",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Spatial modulation is broadly similar across six higher visual areas (LM, AL, RL, A, AM, PM) with median SMI of 0.40\u00b10.12, not significantly different from V1 (p=0.88). Spatial modulation is present in each individual area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C35-C38 demonstrate widespread spatial modulation across the visual hierarchy. The statistical comparisons are appropriate and sample sizes are adequate (52 sessions across six areas). The finding that HVAs show similar modulation to V1 is somewhat surprising but well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6d15f836-e8f7-4ac9-a3bd-e8f5db69d1a5",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spatial modulation in visual areas is not explained by reward protocol, mouse line, or other behavioral factors including running speed, reward events, pupil size, and eye position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 address important confounds through control experiments and GLM modeling. The modeling approach systematically tests alternative explanations, and the supplementary data show consistency across different reward protocols and mouse lines. This strengthens the interpretation that spatial modulation reflects genuine navigational signals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "0035f640-297b-4144-99e2-5a48651ac03e",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Spatial modulation is larger in neurons with central versus peripheral receptive fields in V1, with a similar trend across higher visual areas. This pattern may reflect differences in visual stimulus effectiveness based on distance in the virtual corridor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C75-C76 identify a systematic relationship between retinotopy and spatial modulation. The interpretation that central visual patterns are further away and thus less effective is reasonable given the experimental setup. However, this could also reflect genuine differences in how spatial signals are integrated across the visual field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "2c6144e5-68e6-4c86-b02f-073cc3af8e07",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spatial modulation in V1 is reduced during passive replay compared to active navigation. Running replay reduces median SMI by ~10% (from 0.42\u00b10.15 to 0.38\u00b10.14, p=0.01) without affecting mean activity, indicating that running alone without matched visual feedback is insufficient for full spatial modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C47-C50 demonstrate that active navigation enhances spatial modulation beyond motor activity alone. The experimental design comparing VR to running replay is well-controlled, and the statistical analysis is appropriate. The modest effect size (10% reduction) suggests that motor signals contribute but are not the sole driver of spatial modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "ead1ee61-3897-4c54-bb50-2cd30abccf69",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "During stationary replay in V1, activity decreases markedly (p=10\u207b\u00b2\u2074) and median SMI is halved from 0.38\u00b10.21 to 0.18\u00b10.12 (p=0.005), showing that spatial modulation is strongly dependent on active behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 show that removing motor activity substantially reduces spatial modulation. The large effect size (50% reduction) and highly significant statistics support the conclusion. The decrease in overall activity during rest is expected based on prior literature and does not confound the SMI measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "9ccf58bd-88aa-4007-8a43-565b15398add",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LGN boutons show changes in baseline activity during replay conditions but maintain negligible spatial modulation in both running replay (SMI 0.05\u00b10.06) and stationary replay (SMI 0.03\u00b10.04), not significantly different from VR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 demonstrate that LGN spatial modulation remains minimal across behavioral conditions, contrasting with cortical changes. This strengthens the conclusion that spatial modulation arises in cortex. The statistical tests are appropriate, though the p=0.053 for stationary replay is marginally non-significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "6bbf3374-b9f0-4f49-a954-049e5a59b0b2",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Higher visual areas show even stronger dependence on active behavior than V1. Running replay reduces median SMI by ~33% (from 0.40\u00b10.10 to 0.27\u00b10.10, p=10\u207b\u2076), and stationary replay reduces it by ~68% (from 0.34\u00b10.15 to 0.11\u00b10.11, p=10\u207b\u2076), with some areas showing decreased firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 reveal that HVAs are more strongly modulated by active behavior than V1. The large effect sizes and highly significant statistics support this conclusion. The area-specific decreases in firing (AM, PM) during stationary replay add nuance but do not undermine the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "a865e4ba-86de-4491-b7d8-34b51e04a6a2",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Active navigation in a familiar environment enhances spatial modulation of visual signals starting in the cortex. All cortical visual areas show stronger visual responses during active behavior than passive viewing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C57, C64 represent the main integrative conclusion of the study. This is well-supported by the convergence of findings showing: (1) minimal LGN modulation, (2) strong cortical modulation, (3) experience-dependence, and (4) active behavior-dependence. The conclusion logically follows from the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "caedafb4-0bb3-43b1-a88f-87c5432eb52a",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The spatial modulation of V1 visual responses strengthens across the first days of experience, perhaps more slowly than hippocampal development but similar to retrosplenial cortex. Similar results have been observed in prior work decoding spatial position from V1 across days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 contextualize the experience-dependent findings within the broader literature on spatial learning. The comparison to hippocampus and retrosplenial cortex is appropriate, though the qualifier 'perhaps' acknowledges uncertainty in the relative timescales. The citation to Fiser et al. 2016 provides independent support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "741d6f31-adc7-48cc-b6c1-fd8068c90840",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The spatial modulation of V1 responses is unlikely to be inherited from LGN because modulation was negligible in LGN inputs to layer 4 and in LGN neurons themselves. Imaging was restricted to layer 4 to avoid contamination from LP nucleus projections to layer 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C70-C71 provide a mechanistic interpretation supported by the experimental data. The methodological precaution of imaging only layer 4 to avoid LP contamination is appropriate. However, the conclusion relies on the assumption that layer 4 inputs are representative of all LGN inputs to V1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "89034c5b-3b3c-4a95-8d06-f824de195063",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mice were head-restrained and lacked vestibular inputs, which may be relevant. Perhaps when mice freely move, LGN shows some spatial modulation that is amplified in V1 by nonlinear mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62 acknowledge an important limitation and offer speculation about freely moving conditions. While the limitation is valid, the speculation about LGN modulation in freely moving mice is not tested in this study. The citations provide some support but do not resolve the uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "746d644b-1d82-41cc-ae93-485e00250122",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Spatial modulation affects all cortical visual areas approximately equally, consistent with widespread neural coding of task-related information across posterior cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 synthesizes the findings across visual areas and relates them to broader principles of cortical organization. The data support the claim of approximately equal modulation, and the citations to Koay et al. 2021 and Minderer et al. 2019 provide relevant context about task-related coding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "65fefeed-d3ef-474f-8e08-72f73a4d9b92",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Navigational signals may reach visual cortex through retrosplenial cortex or anterior cingulate cortex, but the route that navigational signals take across the cortex is yet to be charted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C67 offer plausible hypotheses about the source of navigational signals but acknowledge that the actual pathways are unknown. The citations provide support for the candidate regions, but no direct evidence is presented in this study to test these hypotheses. This represents an important direction for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "64a87f0e-7986-4e2a-bd30-4fd695718379",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The experimental design uses a virtual corridor with visually matching segments to distinguish spatial from purely visual responses. Calcium traces were deconvolved to infer firing rates, and neurons were classified based on whether they respond similarly or differently in the two matching segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C72-C74 describe the core experimental design and analysis approach. The design is elegant and well-suited to the research question. The deconvolution method is standard and appropriately cited. The logic for distinguishing spatial from visual responses is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior work has established that V1 is influenced by navigational signals that covary with hippocampus and are affected by idiothetic cues. Spatial signals have been observed in thalamus and possibly LGN. In the navigational system, spatial encoding strengthens with familiarity and is stronger during active navigation than passive viewing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C17 summarize relevant prior literature to motivate the study. The citations appear appropriate and the characterization of prior work is accurate. These claims establish the context for the current findings but do not represent new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    },
+    {
+      "id": "c17ac8e1-2fc4-4b18-b2a9-4c296195b60b",
+      "content_id": "75a48b8d-11cb-4005-8573-4e4871edc205",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "If spatial modulation signals reach visual cortex from the navigational system, they should grow with active navigation and with experience of the environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 presents a logical prediction based on known properties of the navigational system. This prediction is well-motivated by the cited literature and provides a clear hypothesis that is subsequently tested in the study. The prediction is confirmed by the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:06:55.427157Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3741533a-6e97-4eb7-a17b-cbf2fa322ac9",
+      "result_id": "71127161-a2ac-4d07-ad86-0ce8c5f0fafb"
+    },
+    {
+      "claim_id": "fb0facfa-0bc6-4934-acc1-dd4890d7810c",
+      "result_id": "71127161-a2ac-4d07-ad86-0ce8c5f0fafb"
+    },
+    {
+      "claim_id": "62d2fe0c-3701-4e5a-bfdf-f8308cc9af29",
+      "result_id": "71127161-a2ac-4d07-ad86-0ce8c5f0fafb"
+    },
+    {
+      "claim_id": "aa7188ba-2447-403b-b5f4-57d8fcc52691",
+      "result_id": "71127161-a2ac-4d07-ad86-0ce8c5f0fafb"
+    },
+    {
+      "claim_id": "adb69dff-763a-40b6-89df-a873b82c9ee3",
+      "result_id": "71127161-a2ac-4d07-ad86-0ce8c5f0fafb"
+    },
+    {
+      "claim_id": "b75b2472-65e0-46fd-bfaf-05daf6427e5e",
+      "result_id": "17413b25-488b-41a3-a520-b29a8b3726df"
+    },
+    {
+      "claim_id": "737a52e2-bdc1-4e7a-8dfe-b4fafd394afa",
+      "result_id": "17413b25-488b-41a3-a520-b29a8b3726df"
+    },
+    {
+      "claim_id": "2b2dc962-c39e-4fd9-80c5-02e045f7ea1b",
+      "result_id": "17413b25-488b-41a3-a520-b29a8b3726df"
+    },
+    {
+      "claim_id": "a3d1fa87-5571-4903-913a-162ffcd3e446",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "9b0107ce-4e3f-41f1-8073-6d21d713ac60",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "b342a3c0-a120-452d-9f51-24014878c67d",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "d9a5aa89-abdb-4132-a648-ee5d199e1153",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "76690311-3f46-47d5-9cc4-036935bee6df",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "6ff0b7f2-95a9-478d-98a6-021802fbadf6",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "465e0a40-e6e3-48ec-9680-21d17eb342ec",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "59a4035d-c911-40cf-a896-6da93d35ec68",
+      "result_id": "ced41d30-bcfe-499d-a523-2ea626bb72bd"
+    },
+    {
+      "claim_id": "e13a0637-5f19-4567-99f1-0bfc5c35ce49",
+      "result_id": "6718aa00-891f-4b80-9cfa-ccf1491cab23"
+    },
+    {
+      "claim_id": "5bff5c3a-e023-40f7-bc11-dff53aee3a11",
+      "result_id": "7cbfa18e-6366-4a76-a4d5-94e906808a63"
+    },
+    {
+      "claim_id": "ec028159-8ebd-4e1d-9e55-0039b7175997",
+      "result_id": "7cbfa18e-6366-4a76-a4d5-94e906808a63"
+    },
+    {
+      "claim_id": "ea132e82-b52f-4858-a5da-e60ddfa217c8",
+      "result_id": "7cbfa18e-6366-4a76-a4d5-94e906808a63"
+    },
+    {
+      "claim_id": "9e8324ee-ef16-454d-a01b-fa681231c9fe",
+      "result_id": "a8b8ccf6-eb9c-4403-923e-8d3b07f29759"
+    },
+    {
+      "claim_id": "64b84368-5079-4742-8b91-8ad4baaf7c01",
+      "result_id": "a8b8ccf6-eb9c-4403-923e-8d3b07f29759"
+    },
+    {
+      "claim_id": "db7f3cd4-8a4f-4c08-a3d8-528dc90cb7f5",
+      "result_id": "a8b8ccf6-eb9c-4403-923e-8d3b07f29759"
+    },
+    {
+      "claim_id": "6b8c0f8a-d023-48e6-8873-406ea27bcc67",
+      "result_id": "a8b8ccf6-eb9c-4403-923e-8d3b07f29759"
+    },
+    {
+      "claim_id": "1afcb411-b6c9-4747-aaa5-b28265e7e24d",
+      "result_id": "a8b8ccf6-eb9c-4403-923e-8d3b07f29759"
+    },
+    {
+      "claim_id": "a3d899ef-4292-4523-984b-f6c28fbd5f56",
+      "result_id": "6d15f836-e8f7-4ac9-a3bd-e8f5db69d1a5"
+    },
+    {
+      "claim_id": "025c1413-00bd-4a46-a2cf-43b76ded0741",
+      "result_id": "6d15f836-e8f7-4ac9-a3bd-e8f5db69d1a5"
+    },
+    {
+      "claim_id": "ca878206-dbb7-47cf-8243-42d60818c8db",
+      "result_id": "0035f640-297b-4144-99e2-5a48651ac03e"
+    },
+    {
+      "claim_id": "cbc783f7-1e7a-47c4-8519-36bdbe350c97",
+      "result_id": "0035f640-297b-4144-99e2-5a48651ac03e"
+    },
+    {
+      "claim_id": "33d1ba14-cf7c-45cd-8520-5c4b70af490e",
+      "result_id": "0035f640-297b-4144-99e2-5a48651ac03e"
+    },
+    {
+      "claim_id": "6eca8178-bebb-4b83-95a4-c89803a9d27e",
+      "result_id": "0035f640-297b-4144-99e2-5a48651ac03e"
+    },
+    {
+      "claim_id": "ef4d58b6-9797-484d-8402-765194be24a7",
+      "result_id": "2c6144e5-68e6-4c86-b02f-073cc3af8e07"
+    },
+    {
+      "claim_id": "8b286596-3102-4c95-b876-932540562ad1",
+      "result_id": "2c6144e5-68e6-4c86-b02f-073cc3af8e07"
+    },
+    {
+      "claim_id": "48a15e79-3a27-4716-8430-96f928cf2dea",
+      "result_id": "2c6144e5-68e6-4c86-b02f-073cc3af8e07"
+    },
+    {
+      "claim_id": "73712bcd-fd9b-4a1e-907b-7b059a2fdfb9",
+      "result_id": "2c6144e5-68e6-4c86-b02f-073cc3af8e07"
+    },
+    {
+      "claim_id": "4282886d-ff95-44c3-82e5-005839d1e19b",
+      "result_id": "2c6144e5-68e6-4c86-b02f-073cc3af8e07"
+    },
+    {
+      "claim_id": "b05ec5d0-f18c-41d2-a8fb-3e0d6b097954",
+      "result_id": "ead1ee61-3897-4c54-bb50-2cd30abccf69"
+    },
+    {
+      "claim_id": "dc995f9b-64ba-4fc6-b118-d605400daeda",
+      "result_id": "ead1ee61-3897-4c54-bb50-2cd30abccf69"
+    },
+    {
+      "claim_id": "e12f0974-6ef9-4b0e-b8cf-e75943a42aeb",
+      "result_id": "9ccf58bd-88aa-4007-8a43-565b15398add"
+    },
+    {
+      "claim_id": "746e65a0-446a-45f2-9f79-834ced87e662",
+      "result_id": "9ccf58bd-88aa-4007-8a43-565b15398add"
+    },
+    {
+      "claim_id": "6a848da3-8859-4bb7-9ea3-b03d2221f68c",
+      "result_id": "9ccf58bd-88aa-4007-8a43-565b15398add"
+    },
+    {
+      "claim_id": "bc9b287d-7a10-4c5e-84b9-bf7cb4c02a02",
+      "result_id": "9ccf58bd-88aa-4007-8a43-565b15398add"
+    },
+    {
+      "claim_id": "4698735e-a12b-4355-8b7b-6196bf03f445",
+      "result_id": "6bbf3374-b9f0-4f49-a954-049e5a59b0b2"
+    },
+    {
+      "claim_id": "5880f1da-51a5-4a91-84cf-78bcc1819299",
+      "result_id": "6bbf3374-b9f0-4f49-a954-049e5a59b0b2"
+    },
+    {
+      "claim_id": "80ca25ec-6494-4520-8526-9be9aff99e4a",
+      "result_id": "6bbf3374-b9f0-4f49-a954-049e5a59b0b2"
+    },
+    {
+      "claim_id": "c4fd9c9b-b1bc-4033-906f-5251101f2df2",
+      "result_id": "6bbf3374-b9f0-4f49-a954-049e5a59b0b2"
+    },
+    {
+      "claim_id": "415d33b2-be13-4599-bd52-fd87b6fdf48a",
+      "result_id": "a865e4ba-86de-4491-b7d8-34b51e04a6a2"
+    },
+    {
+      "claim_id": "cd0e932d-00b3-4ec7-a299-5d8074c8217f",
+      "result_id": "a865e4ba-86de-4491-b7d8-34b51e04a6a2"
+    },
+    {
+      "claim_id": "60af7fe4-d95e-45c4-9360-559471b36ea7",
+      "result_id": "a865e4ba-86de-4491-b7d8-34b51e04a6a2"
+    },
+    {
+      "claim_id": "35272f91-cab2-4d2c-bb65-069d2aba1b50",
+      "result_id": "caedafb4-0bb3-43b1-a88f-87c5432eb52a"
+    },
+    {
+      "claim_id": "3cc88e3c-9a72-43af-b762-1fc09712615e",
+      "result_id": "caedafb4-0bb3-43b1-a88f-87c5432eb52a"
+    },
+    {
+      "claim_id": "8f481b4d-0249-451d-8e10-cb1cc291b8ed",
+      "result_id": "741d6f31-adc7-48cc-b6c1-fd8068c90840"
+    },
+    {
+      "claim_id": "a767d2b7-2a52-459e-9f58-9f52c535bf38",
+      "result_id": "741d6f31-adc7-48cc-b6c1-fd8068c90840"
+    },
+    {
+      "claim_id": "38c9c640-63f3-4f20-b281-b5eb43d53f3a",
+      "result_id": "741d6f31-adc7-48cc-b6c1-fd8068c90840"
+    },
+    {
+      "claim_id": "16cf99d4-df5b-44ed-b0d3-e76dbb3cbe18",
+      "result_id": "89034c5b-3b3c-4a95-8d06-f824de195063"
+    },
+    {
+      "claim_id": "2ba3c70b-3a34-48e4-b98d-971af3fe15d6",
+      "result_id": "89034c5b-3b3c-4a95-8d06-f824de195063"
+    },
+    {
+      "claim_id": "88e80553-6688-4d05-a22d-b74917d680d6",
+      "result_id": "746d644b-1d82-41cc-ae93-485e00250122"
+    },
+    {
+      "claim_id": "6f6cca8f-7e6d-44d6-9ca0-3523d7224749",
+      "result_id": "65fefeed-d3ef-474f-8e08-72f73a4d9b92"
+    },
+    {
+      "claim_id": "3d7aed26-06a3-49e1-8fb7-03ebed3471ea",
+      "result_id": "65fefeed-d3ef-474f-8e08-72f73a4d9b92"
+    },
+    {
+      "claim_id": "79045916-223c-4e01-bce1-38fa65aa79f2",
+      "result_id": "65fefeed-d3ef-474f-8e08-72f73a4d9b92"
+    },
+    {
+      "claim_id": "57c3330e-a5b8-43f4-b9eb-ab7fb3e8db04",
+      "result_id": "64a87f0e-7986-4e2a-bd30-4fd695718379"
+    },
+    {
+      "claim_id": "bb30efe6-f390-42bc-a7ef-70995beab7b6",
+      "result_id": "64a87f0e-7986-4e2a-bd30-4fd695718379"
+    },
+    {
+      "claim_id": "3bd836e8-1cf1-4b35-b62e-ea1306a560e8",
+      "result_id": "64a87f0e-7986-4e2a-bd30-4fd695718379"
+    },
+    {
+      "claim_id": "42c1cb69-0be2-4f81-b45a-823a6d38a78d",
+      "result_id": "64a87f0e-7986-4e2a-bd30-4fd695718379"
+    },
+    {
+      "claim_id": "e4d108bb-db4b-4606-b237-a074d08c65a6",
+      "result_id": "64a87f0e-7986-4e2a-bd30-4fd695718379"
+    },
+    {
+      "claim_id": "0844f643-e4dd-421f-9d72-82c41abe2adb",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "af03cb14-fc8a-4480-a593-67fb4c31de8b",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "e4914667-33d9-4500-a99a-622f26ea8442",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "f25cc229-b515-4bd2-bc6e-d6ffe02e2990",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "3f59c31e-21dc-48c8-a497-954932e6a7a0",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "7e9e9606-0943-4857-a396-048139051eb3",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "70e13ef3-50bc-4f16-a5fa-2c28331d2f5b",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "c24a7d43-161c-42d9-95a5-01f497a7e3c4",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "88f121fa-1b20-447d-8c43-50d11fe6f2ca",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "94a0a19f-19da-407a-96b6-f24fdb59f509",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "0c999b65-7466-4bcb-b246-397435a5376b",
+      "result_id": "c11a51bb-9aee-45b5-a2fe-5c924cbea694"
+    },
+    {
+      "claim_id": "2eb518b8-e8d5-4478-9a85-e5d871f7d09e",
+      "result_id": "c17ac8e1-2fc4-4b18-b2a9-4c296195b60b"
+    }
+  ],
+  "comparisons": []
+}

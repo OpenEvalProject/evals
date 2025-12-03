@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "\u03bcATACseq analysis of zebrafish facial chondrocytes at 72 hpf identified 33,679 distal accessible elements, with 5,736 elements over-enriched in chondrocytes. De novo motif analysis revealed enrichment for Sox, Fox, Nfat, Zfx, and Nkx transcription factor binding motifs, with high similarity to mouse chondrocyte motifs. GO analysis linked these elements to cartilage development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 and C69-C72 describe the experimental approach and results from \u03bcATACseq analysis. The methodology is clearly described with appropriate controls (double-negative cells), and the results are presented with specific numbers and statistical support. The validation using the known R2 enhancer (C17) provides internal quality control. The motif and GO analyses are standard bioinformatic approaches appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C37",
+      "C38",
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cartilage-associated chromatin accessibility is dynamically established during neural crest cell differentiation, with the majority of chondrocyte-specific elements (94%) gaining accessibility after 36 hpf. Three temporal groups were identified with distinct transcription factor binding motif enrichments: Group I (6%, peak at 36 hpf) enriched for neural crest migration-associated motifs; Group II (48%, increasing 36-48 hpf) and Group III (46%, increasing 48-72 hpf) enriched for cartilage-associated Sox, Fox, and Nfat motifs with stage-specific differences in Nkx, Egr, and Tead motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C30, C37-C38 establish the temporal dynamics of accessibility, while C25-C27, C31-C36 characterize the motif enrichments in each group. The data are internally consistent, with clear temporal progression shown in Figure 2B and motif analysis in Figures 2C-G. The percentages sum correctly (6% + 48% + 46% = 100%), and the biological interpretation linking Group I to neural crest migration and Groups II/III to chondrogenesis is well-supported by the motif and GO analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C42",
+      "C39",
+      "C40",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In Foxc1 double mutants, 10% of Group I elements and 41% of Group II elements showed reduced chromatin accessibility in dorsal CNCCs. The Foxc1 expression domain overlaps with pou3f3b>GFP+ dorsal CNCCs, and cartilage reductions were observed specifically in this domain at 6 dpf. Comparison of dorsal versus pan-CNCCs revealed that cartilage-specific elements show decreased accessibility in dorsal CNCCs at 48 hpf, consistent with delayed dorsal chondrocyte development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41-C42 present the key quantitative findings on accessibility changes in Foxc1 mutants, supported by \u03bcATACseq data in Figures 3E and 3\u2014figure supplement 4. Claims C39-C40, C82-C87 provide essential context about the spatial expression domain and phenotype. The experimental design appropriately uses the pou3f3b>GFP line to isolate the affected cell population, and the correlation between accessibility changes and cartilage loss is well-documented. The comparison between dorsal and pan-CNCCs (C83-C87) provides important developmental context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C88",
+      "C89"
+    ],
+    "result": "Foxc1-dependent and Foxc1-independent elements show distinct transcription factor motif enrichments. Foxc1-dependent Group I elements are enriched for Foxa2 and Foxd3 motifs, while Foxc1-independent Group I elements are enriched for Foxo1 motifs. In Group II, Foxc1-dependent elements are enriched for Foxa1 motifs (consistent with Foxc1 binding specificity), while Foxc1-independent elements are enriched for Foxh1, Foxp1, and Nkx motifs. 33% of Foxc1-dependent Group II elements contain both Sox and Fox motifs versus 16% of Foxc1-independent elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 present motif analysis results with specific p-values and percentages, shown in Figures 3F-G. The differential motif enrichment between Foxc1-dependent and -independent elements is clearly demonstrated. Claim C47 appropriately cites prior work (Wang et al., 2016) to explain why Foxa1/2 motifs serve as proxies for Foxc1 binding. Claims C88-C89 provide reasonable interpretations of these findings, suggesting differential co-factor usage. The statistical support is strong with highly significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Transgenic reporter assays validated that 59% (13/22) of tested Foxc1-dependent Group II elements function as cartilage enhancers with region- and stage-specific activity patterns. Most enhancers drove expression in specific cartilage sub-regions or differentiation stages rather than uniform expression. Three enhancers with diverse patterns (sox10, ucmab, epyc) all showed reduced activity in dorsal cartilage regions of Foxc1 mutants. Testing of Foxc1-independent Group II elements revealed similar cartilage-driving capability (2/4 elements).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C54, C90-C94 describe the transgenic validation experiments shown in Figure 4. The 59% success rate (13/22) is reasonable for enhancer prediction from accessibility data. The spatial specificity of enhancer activity (C51-C52, C92) is well-documented with confocal images. The key validation that enhancers show reduced activity in Foxc1 mutants (C53-C54) directly links accessibility to function. The comparison with Foxc1-independent elements (C93-C94) provides an important control showing that accessibility changes don't simply reflect general cartilage competence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Foxc1 promotes chondrogenesis in the zebrafish face by establishing chromatin accessibility at cartilage-associated gene enhancers. Foxc1 function is required for accessibility of close to half (41%) of chondrocyte enhancers. The co-enrichment of Sox and Fox binding sites in 33% of Foxc1-dependent enhancers suggests a model where Foxc1 promotes Sox9 binding by increasing chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C55 represent the main conclusions, which are well-supported by the accessibility and transgenic data (C4, C41-C42, C50-C54). However, claim C58 proposes a mechanistic model that Foxc1 promotes Sox9 binding through increased accessibility. The authors themselves acknowledge this 'would require direct Sox9 binding studies to validate' (C58). Without Sox9 ChIP-seq data in wild-type versus Foxc1 mutants, the proposed mechanism remains speculative. The correlation between Foxc1-dependent accessibility and Sox/Fox motif co-enrichment (C57) is suggestive but not definitive proof of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Group I elements tested in transgenic assays showed arch CNCC expression at 36 hpf but minimal cartilage expression at 6 dpf, consistent with their role in neural crest migration rather than cartilage differentiation. In contrast, Group II cartilage enhancers showed no 36 hpf expression but drove cartilage expression at 6 dpf. This indicates that most cartilage enhancers gain accessibility after 36 hpf, and global cartilage expression patterns are achieved through summation of enhancers with restricted spatial activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 describe transgenic validation of Group I versus Group II elements shown in Figure 4\u2014figure supplement 2. The temporal and spatial specificity differences between groups are clearly demonstrated. The interpretation that Group I elements represent decommissioning neural crest enhancers (C97) is reasonable given their decreasing accessibility and early expression patterns. The conclusion about modular enhancer architecture (C99) is well-supported by the diverse spatial patterns observed for individual Group II enhancers (C51-C52, C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C19",
+      "C73"
+    ],
+    "result": "Motif sequences for Sox, Fox, and Nfat are highly similar between zebrafish facial chondrocytes and mouse rib chondrocytes, indicating strong conservation of the cartilage gene regulatory network between fish and mammals, and between facial and axial cartilages. This suggests that identified chondrocyte-specific accessible regions in zebrafish likely function as chondrocyte enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 draw comparative conclusions based on motif similarity data (C19) shown in Figure 1\u2014figure supplement 1B and prior mouse data (C73). The comparison is appropriate despite differences in experimental approach (whole accessibility in zebrafish vs. Sox9 ChIP-seq in mouse). The conservation argument is strengthened by the functional validation of enhancers in transgenic assays (C50-C54). The inference that accessible regions function as enhancers (C77) is well-supported by both the motif conservation and the 59% validation rate in transgenic assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C68"
+    ],
+    "result": "The authors speculate that Foxc1 likely has similar functions in chondrocyte enhancer accessibility throughout the body in mouse, that other Fox family members (Foxf1/2, Foxa2/3) or co-factors (Nkx3.2) may compensate for Foxc1 in some contexts, that Foxc1 could act to maintain rather than establish open chromatin, and that additional factors may restrict Foxc1/Sox9 activity to chondrocyte enhancers within skeletogenic mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C61-C63, C66, C68 are explicitly speculative statements about future research directions and alternative mechanisms. While these speculations are reasonable given the data (e.g., C61-C62 cite relevant prior work; C63 is motivated by Nkx motif enrichment in Foxc1-independent elements), they are not tested in this study. These represent hypotheses for future investigation rather than supported conclusions. The speculation about Foxc1 maintaining versus establishing accessibility (C66) is particularly important mechanistically but completely untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The manuscript establishes relevant background knowledge from prior literature, including Sox9's essential role in chondrogenesis across vertebrates but dispensability for chromatin accessibility, Fox transcription factors' roles in establishing chromatin accessibility in other lineages, Foxc1's requirement for cartilage development in mouse and zebrafish, developmental timing of zebrafish CNCCs, and molecular properties of Foxc1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15, C21-C24, C64-C65, C67 represent background knowledge appropriately cited from prior literature. These claims establish the rationale for the study and provide essential context. The citations appear appropriate and the claims are consistent with established knowledge in the field. Claim C10 (Sox9 dispensability for accessibility) is particularly important as it motivates the search for other factors like Foxc1. Claim C64 (Foxc1 lacks chromatin modifying domain) is relevant for mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Not all Foxc1-dependent enhancers have predicted Fox binding motifs (only 33% have both Sox and Fox motifs), suggesting possible indirect regulation in some cases. Additionally, 59% of Group II elements do not require Foxc1 activity, indicating alternative regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 acknowledge important limitations and complexities in the data. C59 correctly notes that only 33% of Foxc1-dependent elements have both Sox and Fox motifs (from C48), suggesting indirect mechanisms may operate. C60 accurately reflects that the majority (59%) of Group II elements are Foxc1-independent (from C42: 920/1556 = 59%). These observations are important for a balanced interpretation and appropriately temper the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors interpret that GO terms for neural crest migration and dorsal/ventral patterning in chondrocyte-enriched elements reflect retention of enhancer accessibility from earlier developmental stages, that Nkx motif enrichment in Group II may reflect Nkx3.2's role in limiting maturation and promoting joint formation, and that Tead motif enrichment in Group III may reflect later proliferative expansion via Hippo signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide biological interpretations of the motif and GO analysis results. C78 reasonably interprets the presence of neural crest-associated GO terms (C20, C32) as reflecting developmental history. C79 and C80 connect specific motif enrichments (C34, C36) to known biological functions of the corresponding transcription factors, appropriately citing relevant literature. These interpretations are plausible and help explain the temporal dynamics observed, though they remain correlative rather than mechanistically proven.",
+    "result_type": "MINOR"
+  }
+]

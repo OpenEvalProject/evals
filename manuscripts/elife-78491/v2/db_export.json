@@ -1,0 +1,1955 @@
+{
+  "submission": {
+    "id": "baa00fa3-7f13-47ac-9efc-3510de1fb5b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:13:14.050877Z",
+    "updated_at": "2025-12-03T18:13:14.050877Z"
+  },
+  "content": [
+    {
+      "id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "submission_id": "baa00fa3-7f13-47ac-9efc-3510de1fb5b6",
+      "content_type": "manuscript",
+      "content_text": "# Derivation and external validation of clinical prediction rules identifying children at risk of linear growth faltering\n\n## Authors\n\n- Sharia M Ahmed<sup>1</sup> ([ORCID: 0000-0002-4060-5712](https://orcid.org/0000-0002-4060-5712)) \u2020\n- Ben J Brintz<sup>2</sup> ([ORCID: 0000-0003-4695-0290](https://orcid.org/0000-0003-4695-0290))\n- Patricia B Pavlinac<sup>3</sup>\n- Lubaba Shahrin<sup>4</sup>\n- Sayeeda Huq<sup>4</sup>\n- Adam C Levine<sup>5</sup>\n- Eric J Nelson<sup>6</sup>\n- James A Platts-Mills<sup>7</sup>\n- Karen L Kotloff<sup>8</sup>\n- Daniel T Leung<sup>1</sup> ([ORCID: 0000-0001-8401-0801](https://orcid.org/0000-0001-8401-0801)) \u2020\n\n### Affiliations\n\n1. Division of Infectious Diseases, University of Utah School of Medicine Salt lake City United States\n2. Division of Epidemiology, University of Utah School of Medicine Salt Lake City United States\n3. Department of Global Health, Global Center for Integrated Health of Women, Adolescents and Children (Global WACh), University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n4. International Centre for Diarrhoeal Disease Research Dhaka Bangladesh ([ROR:04vsvr128](https://ror.org/04vsvr128))\n5. Department of Emergency Medicine, Warren Alpert Medical School of Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))\n6. Department of Pediatrics and Environmental and Global Health, Emerging Pathogens Institute, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n7. Division of Infectious Diseases and International Health, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))\n8. Department of Pediatrics, Center for Vaccine Development, University of Maryland School of Medicine Baltimore United States ([ROR:04rq5mt64](https://ror.org/04rq5mt64))\n9. Division of Microbiology & Immunology, University of Utah School of Medicine Salt Lake City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Nearly 150 million children under-5 years of age were stunted in 2020. We aimed to develop a clinical prediction rule (CPR) to identify children likely to experience additional stunting following acute diarrhea, to enable targeted approaches to prevent this irreversible outcome.Methods:We used clinical and demographic data from the Global Enteric Multicenter Study (GEMS) to build predictive models of linear growth faltering (decrease of \u22650.5 or \u22651.0 in height-for-age z-score [HAZ] at 60-day follow-up) in children \u226459 months presenting with moderate-to-severe diarrhea, and community controls, in Africa and Asia. We screened variables using random forests, and assessed predictive performance with random forest regression and logistic regression using fivefold cross-validation. We used the Etiology, Risk Factors, and Interactions of Enteric Infections and Malnutrition and the Consequences for Child Health and Development (MAL-ED) study to (1) re-derive, and (2) externally validate our GEMS-derived CPR.Results:Of 7639 children in GEMS, 1744 (22.8%) experienced severe growth faltering (\u22650.5 decrease in HAZ). In MAL-ED, we analyzed 5683 diarrhea episodes from 1322 children, of which 961 (16.9%) episodes experienced severe growth faltering. Top predictors of growth faltering in GEMS were: age, HAZ at enrollment, respiratory rate, temperature, and number of people living in the household. The maximum area under the curve (AUC) was 0.75 (95% confidence interval [CI]: 0.75, 0.75) with 20 predictors, while 2 predictors yielded an AUC of 0.71 (95% CI: 0.71, 0.72). Results were similar in the MAL-ED re-derivation. A 2-variable CPR derived from children 0\u201323 months in GEMS had an AUC = 0.63 (95% CI: 0.62, 0.65), and AUC = 0.68 (95% CI: 0.63, 0.74) when externally validated in MAL-ED.Conclusions:Our findings indicate that use of prediction rules could help identify children at risk of poor outcomes after an episode of diarrheal illness. They may also be generalizable to all children, regardless of diarrhea status.Funding:This work was supported by the National Institutes of Health under Ruth L. Kirschstein National Research Service Award NIH T32AI055434 and by the National Institute of Allergy and Infectious Diseases (R01AI135114).\n\n## Introduction\n\nDespite recent advances in the prevention and treatment of childhood malnutrition, nearly 150 million children under-5 years of age were stunted in 2020 (UNICEF et al., 2021). Stunting is defined as a length- or height-for-age z-score (HAZ) 2 or more standard deviations below the population median (de Onis et al., 2013), and is considered both an indicator of underlying deficits (i.e., chronic malnutrition, The World Bank, 2021), as well as a potential contributor to future health problems (e.g., through poor immune system maturation, Rytter et al., 2014; Bourke et al., 2016). Furthermore, stunting has been consistently associated with increased risk of morbidity and mortality, delayed or deficient cognitive development, and reduced educational attainment (McDonald et al., 2013; Black et al., 2013; Olofin et al., 2013; Adair et al., 2013; de Onis and Branca, 2016; Black et al., 2008; Bhaskaram, 2002). Timely and accurate identification of children most likely to experience stunting offers an opportunity to prevent such negative health outcomes.\n\nStunting has been linked with diarrheal diseases across many settings (Checkley et al., 2008). An estimated 10.9% of global stunting is attributable to diarrhea (Danaei et al., 2016), and a child with diarrhea is more likely to have a lower HAZ or to die than age-matched controls (Kotloff et al., 2013). Given the 1.1 billion episodes of childhood diarrhea that occur globally every year (Collaborators GBDDD, 2018), assessment of children seeking healthcare for diarrhea treatment provides an opportunity to identify those at increased risk for negative outcomes, including stunting and death. Once identified, these children could be specifically targeted for intensive interventions, thereby more efficiently allocating public health resources.\n\nIn this study, we aimed to develop parsimonious, easy to implement clinical prediction rules (CPRs) to identify children under-5 most likely to experience linear growth faltering among community-dwelling children presenting to care for acute diarrhea. CPRs are algorithms that aid clinicians in interpreting clinical findings and making clinical decisions (Reilly and Evans, 2006). Linear growth faltering, or falling below standardized height/length growth trajectory projections, captures children whose growth has slowed precipitously and is a precursor of stunting. A number of prior studies have identified risk factors for linear growth faltering (Danaei et al., 2016; Prado et al., 2019; Sofiatin et al., 2019; Naylor et al., 2015; Zhang et al., 2017; Richter et al., 2018; Schott et al., 2013; Richard et al., 2019; Rogawski et al., 2017; Rogawski et al., 2018), but many of these were single-site studies using traditional model building approaches, some of which lacked appropriate assessments of model discrimination and calibration. Building on this body of literature, we used machine learning methods on data from two large multicenter studies to derive and externally validate prognostic prediction models for growth faltering, with the hopes of reliably identifying children that would most benefit from additional nutritional intervention after care for acute diarrhea.\n\n## Methods\n\n### Study population for derivation cohort 1 (GEMS)\n\nWe used data from The Global Enteric Multicenter Study (GEMS) to derive CPRs for growth faltering. The GEMS study has been described elsewhere in-depth (Kotloff et al., 2013; Kotloff et al., 2012). Briefly, GEMS was a prospective case\u2013control study of acute moderate-to-severe diarrhea (MSD) in children 0\u201359 months of age. Data were collected in December 2007\u2013March 2011 from seven sites in Africa and Asia, including those in Mali, The Gambia, Kenya, Mozambique, Bangladesh, India, and Pakistan. MSD was defined as diarrhea accompanied by one or more of the following: dysentery, dehydration, or hospital admission. Diarrhea was defined as new onset (after \u22657 days diarrhea-free) of three or more looser than normal stools in the previous 24 hr lasting 7 days or less. Cases were enrolled at initial presentation to a sentinel hospital or health center, and matched within 14 days to one to three controls without diarrhea enrolled from the community. Demographics, epidemiological, and clinical information were collected from caregivers of both cases and controls via standardized questionnaires, and clinic staff conducted physical examinations and collected stool samples which have undergone conventional and molecular testing to ascertain the pathogen that caused the diarrhea. Approximately 60 days (up to 91) after enrollment, fieldworkers visited the homes of both cases and controls to collect standardized clinical and epidemiological information and repeat anthropometry.\n\nChildren were excluded if follow-up observations occurred <49 or >91 days after enrollment, or if HAZ measurements were implausible (Brander et al., 2019), defined as: (1) HAZ >6 or HAZ <\u22126; (2) change in HAZ >3; (3) >1.5 cm loss of height from enrollment to follow-up; (4) growth of >8 or >4 cm at 49- to 60-day follow-up for children \u22646 and >6 months old, respectively; (5) growth >10 or >6 cm at 61- to 91-day follow-up for children \u22646 and >6 months old, respectively.\n\nParents or caregivers of participants provided informed consent, either in writing or witnessed if parents or caregivers were illiterate. The GEMS study protocol was approved by ethical review boards at each field site and the University of Maryland, Baltimore, USA. This analysis utilized publicly available data, see Data Availability statement, and as such is non-human subjects research.\n\n### Study population for derivation and validation cohort 2 (MAL-ED)\n\nWe used the Etiology, Risk Factors, and Interactions of Enteric Infections and Malnutrition and the Consequences for Child Health and Development (MAL-ED) study to (1) re-derive the best full model, and (2) externally validate a 2-variable parsimonious version of our GEMS-derived CPR for growth faltering. MAL-ED is a longitudinal birth cohort study, and study details have been described elsewhere (MAL-ED Network Investigators, 2014; Platts-Mills et al., 2014; Platts-Mills et al., 2015; Richard et al., 2014). In brief, healthy children were enrolled within 17 days of birth and followed prospectively through 24 months of age. Children were enrolled from October 2009 to March 2012 from eight countries in Asia, Africa, and South America, including Tanzania, South Africa, Pakistan, India, Nepal, Bangladesh, Peru, and Brazil. Information on household, demographic, and clinical data from mother and child were collected at enrollment and reassessed periodically, and illness and feeding information was collected at twice-weekly household visits.\n\nIn MAL-ED, diarrhea was defined as maternal report of three or more loose stools in a 24-hr period, or one loose stool with blood. Each diarrhea episode had to be separated by at least 2 days without diarrhea in order to qualify as distinct diarrhea episodes. To match MAL-ED longitudinal cohort active surveillance data to GEMS, in which children were enrolled upon presentation to clinic with acute diarrhea, we linked anthropometric measurements and other predictor variables with diarrhea episodes in MAL-ED using the following methods (https://github.com/LeungLab/CPRgrowthfaltering): First, each episode of diarrhea was linked to the closest HAZ measurement from before the onset of diarrhea symptoms, but no more than 31 days beforehand. Each diarrhea episode was also linked with the HAZ measurement closest to 75 days after the onset of diarrhea symptoms, but within 49 and 91 days inclusive. Second, each diarrhea episode was linked to the closest observation of each potential predictor variable. Each dietary intake variable had to be observed within 90 days of the diarrhea episode, and each household descriptor variable had to be observed within 6 months of the onset of diarrhea in order to be eligible, otherwise those predictors were considered missing for that specific diarrhea episode. Finally, data were split into age categories, and only one diarrhea episode per enrolled child per model was randomly selected without replacement for analysis.\n\nThe same inclusion/exclusion criteria were applied as listed above for the GEMS growth faltering analysis, with the exception that the allowed follow-up period extended up to and including 95 days.\n\nParents or caregivers of participants provided informed consent. The MAL-ED study protocol was approved by ethical review boards at each field site and the Johns Hopkins Institutional Review Board, Baltimore, USA. This analysis utilized publicly available data, see Data Availability statement, and as such is non-human subjects research.\n\n### Outcomes\n\nWe defined growth faltering as a decrease in HAZ of \u22650.5 HAZ within 49\u201391 days of enrollment in GEMS, or within 49\u201395 days in MAL-ED.\n\n### Predictive variables\n\nIn GEMS, potential predictors included over 130 descriptors of the child, household, and community, collected at enrollment (Supplementary file 1). Collinear or conceptually similar predictors were removed from consideration to maximize model utility (e.g., HAZ, but not MUAC was considered in the main model). We considered individual components of household wealth, but did not explore the composite wealth variable used in other reports (Brander et al., 2019) since its utilization in a CPR would require collecting multiple parameters that were already being considered individually.\n\nIn MAL-ED, we considered 60 potential predictors of growth faltering (Supplementary file 1). We limited possible predictor variables to those that would be easily assessable upon presentation to clinic in a low-resource setting (i.e., did not consider characteristics that required diagnostic testing), and again only considered individual components of combination indicators (e.g., wealth index, Vesikari score).\n\n### Statistical analysis\n\nIn our complete-case analysis, we screened variables using variable importance measures from random forests to identify the most predictive variables. Random forests are an ensemble learning method whereby multiple decision trees (1000 throughout this analysis) are built on bootstrapped samples of the data with only a random sample of potential predictors considered at each split, thereby decorrelating the trees and reducing variability (James et al., 2013). Throughout this analysis, the number of variables considered at each split was equal to the square root of the total number of potential variables, rounded down. Variables were ranked by predictive importance based on the reduction in mean squared prediction error achieved by including the variable in the predictive model on out-of-bag samples (i.e., observations not in the bootstrapped sample).\n\nGeneralizable performance was assessed using fivefold repeated cross-validation. In each of 100 iterations, random forests were fit to a training dataset (random 80% sample of analytic dataset), and variable were ranked using the random forest importance measure as above. Separate logistic regression and random forest regression models were then fit to a subset of the top predictive variables in the training dataset. Subsets examined were the top 1\u201310, 15, 20, 30, 40, and 50 predictors. Each of these models was then used to predict the outcome (growth faltering) on the test dataset. Model performance was assessed using the receiver operating characteristic (ROC) curves and the cross-validated C-statistic (area under the ROC curve, AUC). The AUC describes how well a model can discriminate between a binary outcome in the test data from the cross-validated folds.\n\nCalibration refers to a model\u2019s ability to correctly estimate the risk of the outcome (Steyerberg and Vergouwe, 2014). We assessed model calibration both quantitatively and graphically (\u2018weak\u2019 and \u2018moderate\u2019 calibration, respectively, Van Calster et al., 2019). First, we assessed calibration-in-the-large, or calibration intercept, by using logistic regression to estimate the mean while subtracting out the estimate (model the log-odds of the true status, offset by the CPR-predicted log-odds). Next, we used calibration slope to assess the spread of the estimated probabilities, whereby we fit a logistic regression model with log-odds of the true status as the dependent variable and CPR-predicted log-odds as the independent variable. Finally, we assessed moderate calibration graphically, whereby we calculated the predicted probability of growth faltering for each child in a given analysis using each iteration of each n-variable model fit. These predicted probabilities were then binned into deciles, and the proportion of each decile who truly experienced the outcome was calculated for each iteration of each n-variable model. The mean predicted probability and observed proportion were calculated for each decile across iterations. These average observed proportions were then plotted against averaged deciles for each n-variable model fit (see https://github.com/LeungLab/CPRgrowthfaltering for full analytic code).\n\nBased on top predictors available in both GEMS and MAL-ED (see Results), the 2-variable GEMS-derived CPR of growth faltering was externally validated in MAL-ED data. A logistic regression was fit to all diarrhea cases age 0\u201323 months in GEMS data, with predictors chosen based on random forest. This model was then used to predict growth faltering in diarrhea cases in MAL-ED (age in MAL-ED converted from days to months), and discrimination and calibration were assessed as described above.\n\n### Sensitivity and subgroup analyses\n\nWe undertook additional sensitivity and subgroup analyses to explore if our ability to predict growth faltering improved in specific patient populations or with additional predictors within GEMS data. First, we explored age-strata specific CPRs for children 0\u201311, 12\u201323, 0\u201323, and 24\u201359 months. Second, we explored the predictive ability of MUAC instead of and in addition to HAZ. Third, we attempted to account for potential seasonal variation by adding a predictor for month of diarrhea. Fourth, we added indicator variables for the use of antibiotics before presentation (enrollment), while at clinic, prescription to take home after care, and ever. Fifth, we limited our outcome to only very severe growth faltering, defined as a decrease \u22651.0 HAZ (as opposed to \u22650.5 HAZ in the main analysis). Sixth, we explored the impact diarrhea etiology had on growth faltering prediction. We added variables for the presence/absence of Shigella, Cryptosporidium, Shigella + Cryptosporidium infections, and any viral etiology (defined as infection of any of the following: astrovirus, norovirus GII, rotavirus, sapovirus, and adenovirus 40/41). Etiology-specific infection were defined as an episode-specific attributable fraction (AFe) greater than or equal to a given cutoff (0.3, 0.5, and 0.7 were considered) (Kotloff et al., 2013). Seventh, we explored the prevalence of growth faltering in healthy controls, and identified top predictors and their ability to predict growth faltering in controls. Potential predictors related to diarrhea were not considered amongst controls (e.g., number of days with diarrhea at presentation). Eighth, we explored the role of stunting at presentation on growth faltering by limiting the CPR to only those who were not already stunted at presentation (HAZ \u2265\u22122). Ninth, we fit a CPR predicting any stunting at follow-up, both among all presenting patients as well as limited to those NOT stunted at presentation. Finally, we conducted a quasi-external validation within the GEMS data by fitting a model to one continent and validating it on the other. All analysis was conducted in R 4.0.2 using the packages \u2018ranger\u2019, \u2018cvAUC\u2019, and \u2018pROC\u2019.\n\n## Results\n\n### Growth faltering in children following acute diarrhea in GEMS and MAL-ED\n\nThere were 9439 children with acute diarrhea enrolled in GEMS. In the analysis of the primary outcome (growth faltering), 110 observations were dropped for having follow-up measurements taken <49 or >91 days after enrollment, and 1276 were dropped for having implausible HAZ measurements, leaving an analytic sample of 8053. An addition 414 observations were dropped for having missing predictor data, as random forest analysis requires complete cases. Of the remaining 7639 children, 1744 (22.8%) experienced severe growth faltering (\u22650.5 decrease in HAZ), and 357 (4.7%) experienced very severe growth faltering (\u22651.0 decrease in HAZ) (Figure 1). Growth faltering rates differed by country, with Mozambique and The Gambia having the highest rates of growth faltering (34.5% and 31.9% experienced severe growth faltering, respectively) and Mali having the lowest rate (14.9%, Supplementary file 1). Growth faltering rates also varied by child\u2019s age, with a higher proportion of younger children experiencing growth faltering than older children (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig1-v2.jpg)\n\nIn the analysis of MAL-ED data, we started with 6617 diarrhea episodes from 1390 children. In order to align with GEMS inclusion criteria and limit to acute onset diarrhea, 566 diarrhea episodes were dropped for having prolonged or persistent diarrhea (>7 days duration). An additional 125 episodes were dropped for having missing HAZ measurements or an HAZ follow-up measurement <49 or >95 days from diarrhea onset, and 138 episodes were dropped for having implausible HAZ measurements, leaving 5788 diarrhea episodes from 1350 children. An additional 105 observations were dropped for having missing predictor data. Of the remaining 5683 observations from 1322 children, 961 (16.9%) episodes experienced severe growth faltering (\u22650.5 decrease in HAZ) and 161 (2.8%) episodes experienced very severe growth faltering (\u22651.0 decrease in HAZ, Figure 1).\n\n### Derivation of a CPR to identify children who went on to severe growth faltering following acute diarrhea using GEMS data\n\nAfter random forest screening of variables, logistic regression models consistently had higher AUCs than random forest regression models (Figure 2), therefore we only present the easier to interpret logistic regression results moving forward. In Table 1, we show the top 10 most predictive variables ranked from most to least important, for severe growth faltering (\u22650.5 decrease in HAZ). The top predictive variables for severe growth faltering were: age, HAZ at enrollment, respiratory rate, temperature, number of people living in the household, number of people sleeping in the household, number of days of diarrhea at presentation, number of other households that share same fecal waste disposal facility (e.g., latrine), whether the child was currently breastfed at time of diarrhea, and the number of children <60 months old living in the household. The maximum AUC attained with the model was 0.75 (95% confidence interval [CI]: 0.75, 0.75) with a model of 20 variables, while an AUC of 0.71 (95% CI: 0.71, 0.72), 0.72 (95% CI: 0.72, 0.72), and 0.72 (95% CI: 0.72, 0.72) could be obtained with a CPR of 2, 5, and 10 variables, respectively (Figure 2). When limited to children 0\u201323 months of age, AUC decreased to 0.64 (95% CI: 0.64, 0.64) for 10 variables. In the full 10-variable model, we achieved a specificity of 0.47 at a sensitivity of 0.80 (Figure 2\u2014figure supplement 1). The average predicted probability of growth faltering was consistently close to the average observed probability (calibration-in-the-large, or intercept), and the spread of predicted probabilities was similar to the spread of observed probabilities (calibration slope) for models including 1\u201310 predictor variables (Table 2, Figure 3, Figure 3\u2014figure supplement 1).\n\n**Table 1.**\n Growth faltering.Variable importance ordering and cross-validated average overall area under the curve (AUC) and AUC by patient subset and 95% confidence intervals for a 5 (bold) and 10 (italicized) variable logistic regression model for predicting growth faltering in children in 7 LMICs(Low- and middle-income countries) derived from Global Enteric Multicenter Study (GEMS) data (\u22650.5 decrease in height-for-age z-score [HAZ] in children with acute diarrhea).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"5\">GEMS</th>\n      <th>MAL-ED</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Patient subset</td>\n      <td>0\u201359 months (main text model)</td>\n      <td>0\u201359 months(limit to only those NOT stunted at beginning (HAZ \u2265\u22122)5659/7639 (74.1%))</td>\n      <td>0\u201359 monthslimited to only those NOT stunted at beginningoutcome is ANY stunting at follow-up (HAZ &lt;\u22122)</td>\n      <td>0\u201323 months (for external validation)</td>\n      <td>Healthy controls</td>\n      <td>0\u201323 months</td>\n    </tr>\n    <tr>\n      <td>AUCs</td>\n      <td>0.72 (0.72, 0.72)</td>\n      <td>0.71 (0.70, 0.72)</td>\n      <td>0.90 (0.89, 0.91)</td>\n      <td>0.64 (0.63, 0.65)</td>\n      <td>0.79 (0.78, 0.79)</td>\n      <td>0.67 (0.67, 0.68)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>0.72 (0.72, 0.72)</td>\n      <td>0.71 (0.70, 0.72)</td>\n      <td>0.90 (0.89, 0.90)</td>\n      <td>0.64 (0.64, 0.64)</td>\n      <td>0.79 (0.79, 0.79)</td>\n      <td>0.68 (0.67, 0.69)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>Age (months)</td>\n      <td>Age (months)</td>\n      <td>HAZ</td>\n      <td>HAZ</td>\n      <td>Age (months)</td>\n      <td>HAZ</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>HAZ</td>\n      <td>HAZ</td>\n      <td>Age</td>\n      <td>Age (months)</td>\n      <td>HAZ</td>\n      <td>Age (days)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Respiratory rate</td>\n      <td>Respiratory rate</td>\n      <td>Respiratory rate</td>\n      <td>Temperature</td>\n      <td>Respiratory rate</td>\n      <td>Total days breastfeeding</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Temperature</td>\n      <td>Temperature</td>\n      <td>Temperature</td>\n      <td>Respiratory rate</td>\n      <td>Temperature</td>\n      <td>Total days in all diarrheal episodes to date</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>Num. people living in household</td>\n      <td>Num. people living in household</td>\n      <td>Num. people living in household</td>\n      <td>Num. people living in household</td>\n      <td>Num. people living in household</td>\n      <td>Mean number of people per room</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Num. rooms used for sleeping</td>\n      <td>Num. rooms used for sleeping</td>\n      <td>Num. days of diarrhea at presentation</td>\n      <td>Num. rooms used for sleeping</td>\n      <td>Breastfed</td>\n      <td>Days with diarrhea so far in this episode</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>Num. days of diarrhea at presentation</td>\n      <td>Num. days of diarrhea at presentation</td>\n      <td>Num. other households that share same fecal waste facility</td>\n      <td>Num. days of diarrhea at presentation</td>\n      <td>Num. rooms used for sleeping</td>\n      <td>Maternal education (years)</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>Num. other households that share same fecal waste facility</td>\n      <td>Breastfed</td>\n      <td>Num. rooms used for sleeping</td>\n      <td>Num. other households that share same fecal waste facility</td>\n      <td>Num. children &lt;60 months live in household</td>\n      <td>Days since last diarrhea episode</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>Breastfed</td>\n      <td>Num. other households that share same fecal waste facility</td>\n      <td>Num. children &lt;60 months live in household</td>\n      <td>Num. children &lt;60 months live in household</td>\n      <td>Caregiver education</td>\n      <td>People sleeping in house</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>Num. children &lt;60 months live in household</td>\n      <td>Num. children &lt;60 months live in household</td>\n      <td>Caregiver education</td>\n      <td>Caregiver education</td>\n      <td>Num. other households share latrine</td>\n      <td>Max loose stools in this episode</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Calibration intercept and slope.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Number of predictor variables</th>\n      <th>GEMS 0\u201359 monthsIntercept (95% CI)</th>\n      <th>Slope (95% CI)</th>\n      <th>GEMS 0\u201323 months (for external validation)Intercept (95% CI)</th>\n      <th>Slope (95% CI)</th>\n      <th>MAL-ED 0\u201323 months Rederivationintercept (95% CI)</th>\n      <th>Slope (95% CI)</th>\n      <th>GEMS-derived model applied to MAL-ED dataIntercept (95% CI)</th>\n      <th>Slope (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>2.9 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.82, 1.2)</td>\n      <td>\u22121.0 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.97(0.62, 1.3)</td>\n      <td>9.6 \u00d7 10\u22123(\u22120.32, 0.32)</td>\n      <td>1.0(0.35, 1.7)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>3.6 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.84, 1.2)</td>\n      <td>\u22121.1 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.98(0.70, 1.3)</td>\n      <td>1.1 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>1.0(0.51, 1.5)</td>\n      <td>\u22120.32(\u22120.54, \u22120.11)</td>\n      <td>1.5(1.0, 2.1)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>3.6 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.84, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.97(0.70, 1.2)</td>\n      <td>1.1 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.99(0.51, 1.5)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>4.1 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.84, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.97(0.71, 1.2)</td>\n      <td>1.1 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.97(0.49, 1.5)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>4.2 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.83, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.96(0.70, 1.2)</td>\n      <td>1.1 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.95(0.48, 1.5)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>4.2 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.83, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.96(0.70, 1.2)</td>\n      <td>1.2 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.94(0.47, 1.5)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>4.3 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.83, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.96(0.70, 1.2)</td>\n      <td>1.2 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.92(0.47, 1.4)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>4.4 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.83, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.95(0.69, 1.2)</td>\n      <td>1.2 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.92(0.47, 1.4)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>4.7 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.83, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.95(0.69, 1.2)</td>\n      <td>1.2 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.91(0.47, 1.4)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>4.8 \u00d7 10\u22123(\u22121.2 \u00d7 10\u22121,1.3 \u00d7 10\u22121)</td>\n      <td>1.0(0.83, 1.2)</td>\n      <td>\u22121.2 \u00d7 10\u22122(\u22120.14, 0.12)</td>\n      <td>0.93(0.69, 1.2)</td>\n      <td>1.2 \u00d7 10\u22122(\u22120.33, 0.33)</td>\n      <td>0.89(0.46, 1.4)</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig2-v2.jpg)\n\n**Figure 2.:** Cross-validated AUC achieved by number of predictive variables included in random forest regression and logistic regression models predicting growth faltering (\u22650.5 decrease in height-for-age z-score [HAZ]) in children 0\u201359 months of age presenting with diarrhea in the Global Enteric Multicenter Study (GEMS).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The faded dashed lines represent specificity (1 \u2212 false positive rate) achievable with a sensitivity (true positive rate) of 0.80 for prediction of the outcome.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig3-v2.jpg)\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig3-figsupp4-v2.jpg)\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/78491/elife-78491-fig3-figsupp5-v2.jpg)\n\n### Rederivation and external validation of a CPR to identify children who went on to severe growth faltering following acute diarrhea using MAL-ED data\n\nWe then derived a CPR for growth faltering using MAL-ED data, and found that the top predictors were similar to those identified using GEMS data, with age and HAZ at diarrhea being the top 2 predictors. Other top predictors in MAL-ED included breastfeeding, total days in all diarrhea episodes, mean number of people per room of home, days with diarrhea so far in this episode, number of years of maternal education, days since last diarrhea episode, number of people sleeping in house, and loose stools in this diarrhea episode (Table 1). The discriminative performance of the full model was similar to that found with GEMS (0.72 [95% CI: 0.72, 0.72] in GEMS, 0.68 [95% CI: 0.67, 0.69] in MAL-ED). The average predicted probability of growth faltering was consistently close to the average observed probability (calibration-in-the-large, or intercept). The spread of predicted probabilities (calibration slope) was slightly more extreme than observed probabilities, but there was no evidence they were different than 1.0 for models including 1\u201310 predictor variables (slope point estimates all 95% CI include 1.0, see Table 2, Figure 3\u2014figure supplement 2).\n\nDue to a lack of overlap in variables between datasets, we were unable to externally validate the 10-variable version of our growth faltering CPR. However, the top 2 predictors were available in both the GEMS and MAL-ED datasets. Therefore, we took the 2-variable CPR of growth faltering derived from children 0\u201323 months of age in GEMS, including HAZ at enrollment and age (the top 2 predictors), and externally validated it in MAL-ED data. The CPR had marginal discrimination in the GEMS data (AUC = 0.64, 95% CI: 0.64, 0.64), and a slight increase in discriminative ability at external validation in MAL-ED data (AUC = 0.68, 95% CI: 0.63, 0.74). On average, the CPR overestimated probability of growth faltering (calibration intercept \u22120.32, 95% CI: \u22120.54, \u22120.11), and predictions tended to be too moderate (calibration slope 1.5, 95% CI: 1.0, 2.1) (Table 2, Figure 3, Figure 3\u2014figure supplement 3). Odds ratios for the 10-variable model predicting severe growth faltering in MAL-ED are shown in Supplementary file 1.\n\n### Addition of MUAC, diarrhea etiology, and antibiotic use did not meaningfully impact discriminative performance of CPR to identify children who went on to severe growth faltering following acute diarrhea in GEMS\n\nTable 1 and Supplementary file 1 present the results of the growth faltering sensitivity analyses. Top predictor variables were highly consistent across models and included patient demographics, patient symptoms, and indicators of household wealth. CPRs of higher age strata had higher AUCs (0.76 [95% CI: 0.75, 0.77] in 24\u201359 months in GEMS vs. 0.60 [95% CI: 0.59, 0.60] in 0\u201311 months in GEMS).\n\nWhen MUAC was considered as a potential predictor (instead of HAZ), MUAC replaced HAZ as a top predictor, all other top 10 predictors remained the same, and AUC decreased (down to 0.70, 95% CI: 0.70, 0.70). When both HAZ and MUAC were considered as potential predictors, both were top predictors, but AUC remained unchanged compared to the main model that considered only HAZ (0.72, 95% CI: 0.72, 0.73). The predictors of very severe growth faltering (\u22651.0 decrease in HAZ) were similar to the predictors of severe growth faltering (\u22650.5 decrease in HAZ), though predictive ability was better (AUC 0.80 [95% CI: 0.79, 0.80] for \u22651.0 vs. 0.72 [95% CI: 0.71, 0.73] for \u22650.5).\n\nAccounting for seasonality did not meaningfully improve the CPR, and antibiotic use and diarrhea etiology were consistently not ranked as top predictors of growth faltering (Supplementary file 1). The addition of more predictor variables only marginally improved AUCs. When data were limited to only those children not already stunted at initially presentation, top predictors and AUC of growth faltering were similar (0.71, 95% CI: 0.70, 0.72). While the top predictor variables were similar, the CPR predicting any stunting at follow-up was noticeably higher, AUC = 0.90 (95% CI: 0.90, 0.91).\n\n### Derivation of a CPR to identify children without diarrhea (controls) who went on to severe growth faltering using GEMS data\n\nTop predictors of growth faltering were similar in non-diarrhea controls compared to cases in GEMS (Table 1), but predictive ability was higher (AUC 0.79 [95% CI: 0.78, 0.79] in controls vs. 0.72 [95% CI: 0.72, 0.72] in cases). Again, top predictors were consistent with previous models and included age, HAZ at enrollment, respiratory rate, temperature, number of people living in household, breastfed, number of rooms used for sleeping, number of children under 60 months old who live in household, education level of primary caregiver, and number of other households that share same fecal waste disposal facility (e.g., latrine). The maximum AUC attained with the model was 0.79 (95% CI: 0.79, 0.80) with a model of 15 variables, while an AUC of 0.79 (95% CI: 0.78, 0.79) and 0.79 (95% CI: 0.79, 0.79) could be obtained with a CPR of 5 and 10 variables, respectively (Figure 3\u2014figure supplement 4).\n\n## Discussion\n\nBy utilizing data from two large multicenter clinical studies of pediatric diarrhea, we used a combination of machine learning and conventional regression methods to derive and validate CPRs for linear growth faltering. The discriminative performance of our CPR for growth faltering was remarkably similar between the two datasets (AUC = 0.72, 95% CI: 0.72, 0.72, based on GEMS 0\u201359 months; 0.68, 95% CI: 0.67, 0.69 based on MAL-ED 0\u201324 months). We were then able to externally validate a 2-variable version, which also had similar discriminative ability between the datasets (AUC 0.64\u20130.68 for 0\u201323 and 0\u201324 months in GEMS and MAL-ED, respectively). Our findings suggest the potential for a parsimonious prediction rule-guided algorithm to identify young children with acute diarrhea for appropriate triage and follow-up.\n\nThe limited number of studies that aim to identify children most likely to growth falter after acute diarrhea have resulted in CPRs with varying discriminative and generalizability. Our full CPRs were better at identifying growth faltering than (Brander et al., 2019) (AUC = 0.67, 95% CI: 0.64, 0.69), which was not externally validated, and worse than (Hanieh et al., 2019) (AUC = 0.85, 95% CI: 0.80, 0.90), which only used data from a single country. The top predictors of growth faltering identified by random forests in our analysis were consistent with existing knowledge of the drivers of growth faltering \u2013 child demographics, child symptoms, and indicators of household wealth. The top 2 variables (used in our parsimonious externally validated CPR) were age and baseline HAZ. However, despite the inclusion of markers of disease severity (temperature, respiratory rate, number of days of diarrhea), overall ability to predict growth faltering was moderate, and consideration of additional factors related to nature of disease (etiology, antibiotics) did not improve discriminative ability. This is consistent with previous analysis in GEMS data that found treating diarrhea with antibiotics generally did not prevent growth faltering (except for Shigella infections, Nasrin et al., 2021).\n\nFurthermore, the similar incidence of growth faltering in diarrhea cases and matched controls (particularly in the youngest children), as well as the almost identical predictive variables and similar AUCs, suggests that the impact of a single episode of acute diarrhea on growth trajectory may be relatively low. It is possible that the entire diarrheal history of a child (e.g., frequency and severity of acute diarrhea), or subclinical enteric infections that do not result in diarrhea, are more important to their growth trajectory than a single diarrheal episode, though evidence is mixed (Checkley et al., 2008; Rogawski et al., 2018; Deichsel et al., 2020). Indeed, while the design of GEMS does not allow for the exploration of this hypothesis, MAL-ED does. Total days in all diarrheal episodes, days with diarrhea so far this episode, and days since last diarrhea episode were all top 10 predictors of growth faltering in MAL-ED. Furthermore in GEMS, the average baseline HAZ at enrollment was 0.5 HAZ lower in children who did not experience growth faltering than in children who did (Figure 3\u2014figure supplement 5), suggesting the possibility that children need to have high enough HAZ in order to have the potential to falter. In contrast, children enrolled in Mali had the highest median HAZ at enrollment, and also had the lowest proportion of children who experienced growth faltering (Supplementary file 1). It is also possible that the underlying cause(s) of stunting are complex and interrelated, and relatively simple predictive models are not able to accurately parse apart which children do and do not experience sufficient causes. In sensitivity analyses, we demonstrated our ability to predict any stunting at follow-up with high accuracy (Table 1, Supplementary file 1). However, this represents a related but distinct outcome from our original aim, namely a slowing down of growth as opposed to stunting, and may warrant different clinical intervention.\n\nWhile effective interventions exist for treating acute malnutrition (e.g., exclusive breastfeeding for the first 6 months of life, inpatient- and community-based management of acute malnutrition using corn-soy blend or ready-to-use therapeutic food; WHO, 2013; Bergeron and Castleman, 2012; Keats et al., 2021), there are few evidence-based guidance on how to reverse the effects of chronic malnutrition once a child is stunted (Bergeron and Castleman, 2012; Leroy et al., 2015; Reinhardt and Fanzo, 2014; Pavlinac et al., 2018; WHO, 2015). We found that approximately one in five children experience severe growth faltering subsequent to acute diarrhea, that is, an additional \u22650.5 decrease in HAZ in the 2\u20133 months after acute diarrhea. Currently, presenting to care for an acute illness, such as diarrhea, offers an opportunity for medical personnel to assess and treat children for acute malnutrition through intensive feeding programs. Our CPR provides a tool for identifying patients likely to experience additional growth faltering after acute diarrhea. Current malnutrition recommendations are based on patient presentation \u2013 whether a child is underweight when they present to the clinic. Our CPR could be used to identify children not currently stunted and therefore not currently recommended for nutritional interventions, but who are likely to slow down in growth and therefore at higher risk of incident stunting. Identifying these children would allow clinicians to connect patients with community-based nutrition interventions (e.g., maternal support for safe introduction of weening foods, small quantity lipid nutrient supplements, etc.; Bhutta et al., 2013; Bhutta et al., 2008; Cole, 2020; Zhang et al., 2021) to prevent additional effects of chronic malnutrition, namely irreversible stunting. Given our ability to predict growth faltering in healthy controls in GEMS, community screening for those at risk of growth faltering (not just those presenting with acute diarrhea) may also be prudent. This would represent a different potential intervention strategy and future research should explore this possibility further.\n\nOur study has a number of strengths and limitations. We derived CPRs for growth faltering from two multisite, prospective studies that included longitudinal follow-up with extensive etiologic testing. Unlike previous work in this area, we used random forests for variable selection which do not require assumptions about relationships between the underlying variables and generally outperform (Singal et al., 2013) conventional model building techniques. While our complete-case analysis strategy could introduce bias due to missing data, we were able to re-derive the 10-variable version in two distinct datasets with similar results. While we were only able to externally validate a 2-variable version of our growth faltering CPR, its discriminative performance was similar to the full 10-variable version, and was robust to external validation. Furthermore, while the observation windows were large for many variables in the MAL-ED dataset used for external validation (up to 90 days for dietary variables, and up to 6 months for household descriptors), the variables of interest in the 2-variable CPR were observed no more than 31 days from the start of diarrhea. In addition, we considered all diarrhea as an outcome of interest in MAL-ED, whereas the analysis in GEMS was limited to MSD. When limiting the MAL-ED analysis to MSD as defined in GEMS, the top predictors and discriminative ability were very similar. The quasi-external validation between continents within GEMS data, as well as the country-specific models within GEMS, all had similar top predictors and discriminative performance, further supporting the overall validity of our CPR. Finally, we explored a range of AFe cutoffs for etiology, with consistent results.\n\nOur study can also serve as a guide for future CPR development. We used a prediction-based approach for variable selection, and compared multiple model fitting strategies. We assessed model calibration as well as discrimination, and reported the results from numerous sensitivity analyses. Finally, we designed our study a priori to incorporate external validation, lending additional confidence to the generalizability of our results.\n\nIn conclusion, we used data from two large multi-country studies to derive and validate a CPR for growth faltering in children presenting for diarrhea treatment. Our findings indicate that use of prediction rules, potentially applied as clinical decision support tools, could help to identify additional children at risk of poor outcomes after an episode of diarrheal illness, that is not currently stunted but likely to decelerate growth. In settings with high mortality and morbidity in early childhood, such tools could represent a cost-effective way to target resources toward those who need it most.\n\n### Data availability\n\nGEMS and MAL-ED data are available to the public by request through the following website https://clinepidb.org/ce/app/. Data cleaning and statistical code needed to reproduce all parts of this analysis are available from the corresponding author\u2019s GitHub page: https://github.com/LeungLab/CPRgrowthfaltering, (copy archived at swh:1:rev:f3fd53b5713ef787d3ae2cd4a81f3286f52f2746, Ahmed, 2022).\n",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "7769bfaf-4a7c-4ff8-a7e5-bf58000e678c",
+      "submission_id": "baa00fa3-7f13-47ac-9efc-3510de1fb5b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78491.sa0](https://doi.org/10.7554/eLife.78491.sa0)\n\nThis work would be valuable to global health scientists, particularly in low- and middle-income countries where childhood stunting is an ongoing challenge, and to statisticians interested in building clinical prediction rules. The authors' solid methodology leveraged large, rich datasets from multi-center studies to build and validate predictive models.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Eduardo Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78491.sa1](https://doi.org/10.7554/eLife.78491.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Derivation and external validation of clinical prediction rules identifying children at risk of linear growth faltering (stunting) presenting for diarrheal care\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by me in my joint role as Reviewing Editor and Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andrew N Mertens (Reviewer #2).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another and with the Editors, and I prepared this decision letter to help you prepare a revised submission. Given the extent of the suggestions, I prefer to provide you with a compilation of the relevant suggestions in the two critiques to assist you in preparing the revisions for an eventual resubmission.\n\nEssential revisions:\n\nAlthough we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you amend or expand the text to clarify the narrative accordingly.\n\nThe outcome used for prediction in a binary indicatory for a decrease in height-for-age Z-score >= 0.5. A child who fails to gain height by future measurements is of concern, but this outcome also misses children who are already experiencing growth failure, and is vulnerable to regression to the mean effect. The two most important predictors were age and current size, with current size having a positive association with risk of growth faltering. As mentioned in the discussion, there is \"the possibility that children need to have high enough HAZ in order to have the potential to falter.\" Additionally, there may be children with erroneously high height measurements at the first measurement, so that the HAZ change >= 0.5 associated with high baseline HAZ is from measurement-error regression to the mean. I recommend also predicting absolute HAZ (or stunting status) as a secondary outcome and comparing if the important predictors change. Were alternative specifications (e.g., quantitative decrease in HAZ, incident stunting) considered?\n\nIn its current form, the results and conclusions from the results have problematic implications for the treatment of child malnutrition. The conclusion states: \"In settings with high mortality and morbidity in early childhood, such tools could represent a cost-effective way to target resources towards those who need it most.\" If the current CPR was used in a resource-constrained setting, it would recommend that larger children should be prioritized for nutritional supplementation over already stunted children who may have reached their growth faltering floor. In addition, with a sensitivity of 80%, the tool would miss treating a large number of children who would experience growth faltering. The results of the clinical prediction tool need to be presented with care in how it could be used to prioritize treatment without missing treating children who would benefit from nutritional supplementation. Including absolute HAZ as an outcome will help, along with additional discussion of how the CPR fits alongside current treatment recommendations. For example, does this rule indicate treating children who aren't currently treated, or are there children who don't need treatment given current guidelines and the created CPR.\n\nThe results from these datasets may not have identified novel and strong predictors of growth faltering, as the current results indicate that additional predictors beyond current size and age don't help with predictions, but the analysis could be reframed as a template for developing a CPR, using this data as a case study. If age and current size are the only important predictors, then a simple rule based on age and a current HAZ cutoff could be created, negating the need for a more complicated model, but this manuscript also provides a good template for other clinical prediction analyses. Could you comment more on the methods and performance metrics used in the discussion, and make a recommendation for future analyses?\n\nWhy use the MAL-ED data to externally validate the CPR developed using GEMS data, given the different study designs, definitions of diarrheal disease, and predictors measured. Because GEMS is a multisite study, wouldn't it be easier, and allow more complex models to be validated, if the model was fit using data from some countries, then validated in populations from other countries?\n\nIn addition to the coefficients for the 10-variable model, it would be helpful to present coefficients for the final 2-variable model that was assessed in both GEMS and MAL-ED.\n\nAlthough the authors opted to use logistic regression based on AUC, the AUC values for random forest models were only slightly lower (Figure S2), and random forest may provide simpler clinical prediction rules. It may be interesting to also describe the rules that were developed by the random forest models. The last panel in Figure S2 may be mislabeled (0-23 mo for MAL-ED instead of 0-59 mo).\n\nI am not very familiar with the variable importance calculated from random forest models. What is the implication of certain features having high variable importance, but also having coefficient estimates that are indistinguishable from the null (e.g., age in MAL-ED, respiratory rate in GEMS in Table S4)?\n\nIn the Discussion (p.20), the authors note that the entire diarrheal history of a child may be a more important indicator of linear growth faltering than a single episode. These datasets seem potentially well-suited to directly explore this question \u00ac- were frequency/number of prior diarrheal episodes investigated as predictors in GEMS / MAL-ED?\n\nFor reproducibility, please specify the software and key packages with corresponding versions that were used for this analysis.\n\nThe best performing model was logistic regressions fit with variables chosen by random forest models. Any idea why this would be? Is it because they are simpler and the random forest models are overfit to the training data? I would expect them to perform worse because they don't allow for nonlinearity and interactions like a RF model. If generalized linear models perform better than random forest for prediction in this situation, penalized logistic regression models may also improve predictive performance by incorporating variable selection with prediction in a simpler model than random forests.\n\nThe conclusion in the abstract is \"Our findings indicate that use of prediction rules could help identify children at risk of poor outcomes after an episode of diarrheal illness\", but prediction performance is the same in control children, so while its important to retain the discussion of lack of association between diarrhea and growth, the framing of the paper could be expanded around all children in LMIC, rather than just children with acute diarrhea. This could just be a slight reframing in the writing, or you could expand the MAL-ED prediction model to use all children in addition to the prediction on the subset of children with diarrhea.\n\nWhat is the rationale for comparing HAZ and MUAC as separate and combined predictors of growth? On one hand, it's interesting to compare which current measures of anthropometry are most associated with future measures of anthropometry, in which case you'd want to include other outcomes such as WHZ, WAZ, and MUAC. But if the goal is to develop the best clinical prediction tool, it makes more sense to include all measures of growth that can be easily clinically collected as predictors to see if performance increases by including WHZ, WAZ, and MUAC on top of HAZ.\n\nLine 125-128: \"Model performance was assessed using the receiver operating characteristic (ROC) curves and the cross-validated C-statistic (area under the ROC curve (AUC)), a measures which describes how well a model can discriminate between the two outcomes, from the cross-validation.\" Confusingly worded\u2026 do you mean \"AUC is a measure which describes how well a model can predict a binary outcome in test data from the cross-validated folds.\"\n\nLine 129-142: Model calibration performance metrics: these were new to me, and I wasn't sure what to be looking for or what story they could tell us about model performance beyond the AUC. What is the reader looking for? Can they tell us something different than the AUC?\n\nLine 173: separately report missing versus implausible values, because the percent implausible gives an indication of data quality.\n\nLines 177-182: Report mean HAZ by country as well to show if it there is lower growth faltering in some countries because of high existing stunting by the age of first measurement.\n\nLine 199: This is the first mention of death as an outcome (and the results of the CPR for death are not discussed).\n\nPage 20: \"It is possible that the entire diarrheal history of a child (e.g. frequency and severity of acute diarrhea), or subclinical enteric infections that do not result in diarrhea, are more important to their growth trajectory than a single diarrheal episode, though evidence is mixed.\" As you have longitudinal data from MAL-ED, can't you explicitly check this by using diarrhea history as a predictor?\n\nPage 21: \"Unlike previous work in this area, we used random forests for variable selection which do not require assumptions about the underlying variables and generally outperform(49) conventional model building techniques.\"\n\n\u2013 Need to clarify that random forests have no assumptions about the relationship between variables, not about the variables themselves, which still have assumptions around how they are coded/categorized.\n\nTables S4- Age is the most important predictor, but the OR is 1 with 1,1 confidence intervals. Can you convert the predictor to age in months or report more decimal places so direction of effect can be seen?\n",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c9d44500-e729-4764-8be2-dc20be02518d",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C1",
+      "claim": "Nearly 150 million children under-5 years of age were stunted in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite recent advances in the prevention and treatment of childhood malnutrition, nearly 150 million children under-5 years of age were stunted in 2020 (UNICEF et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to UNICEF et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "764b1852-12dc-4939-872c-51aba10ca083",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C2",
+      "claim": "Stunting is defined as a length- or height-for-age z-score (HAZ) 2 or more standard deviations below the population median.",
+      "claim_type": "EXPLICIT",
+      "source": "Stunting is defined as a length- or height-for-age z-score (HAZ) 2 or more standard deviations below the population median (de Onis et al., 2013), and is considered both an indicator of underlying deficits (i.e., chronic malnutrition, The World Bank, 2021), as well as a potential contributor to future health problems (e.g., through poor immune system maturation, Rytter et al., 2014; Bourke et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to de Onis et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "0d43ea7d-f169-4bb7-b8de-8b03a39b2200",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C3",
+      "claim": "Stunting is considered an indicator of underlying deficits such as chronic malnutrition.",
+      "claim_type": "EXPLICIT",
+      "source": "Stunting is defined as a length- or height-for-age z-score (HAZ) 2 or more standard deviations below the population median (de Onis et al., 2013), and is considered both an indicator of underlying deficits (i.e., chronic malnutrition, The World Bank, 2021), as well as a potential contributor to future health problems (e.g., through poor immune system maturation, Rytter et al., 2014; Bourke et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to The World Bank, 2021",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "34f9edd2-0be5-4707-b7d1-887511f5fa29",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C4",
+      "claim": "Stunting is a potential contributor to future health problems such as poor immune system maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stunting is defined as a length- or height-for-age z-score (HAZ) 2 or more standard deviations below the population median (de Onis et al., 2013), and is considered both an indicator of underlying deficits (i.e., chronic malnutrition, The World Bank, 2021), as well as a potential contributor to future health problems (e.g., through poor immune system maturation, Rytter et al., 2014; Bourke et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rytter et al., 2014 and Bourke et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "764fbdf7-522a-4a2b-a0f4-68edd5559433",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C5",
+      "claim": "Stunting has been consistently associated with increased risk of morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, stunting has been consistently associated with increased risk of morbidity and mortality, delayed or deficient cognitive development, and reduced educational attainment (McDonald et al., 2013; Black et al., 2013; Olofin et al., 2013; Adair et al., 2013; de Onis and Branca, 2016; Black et al., 2008; Bhaskaram, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including McDonald et al., 2013; Black et al., 2013; Olofin et al., 2013; Adair et al., 2013; de Onis and Branca, 2016; Black et al., 2008; Bhaskaram, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "5c9500f7-d711-4d86-9fe8-728fb3aac216",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C6",
+      "claim": "Stunting has been consistently associated with delayed or deficient cognitive development.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, stunting has been consistently associated with increased risk of morbidity and mortality, delayed or deficient cognitive development, and reduced educational attainment (McDonald et al., 2013; Black et al., 2013; Olofin et al., 2013; Adair et al., 2013; de Onis and Branca, 2016; Black et al., 2008; Bhaskaram, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including McDonald et al., 2013; Black et al., 2013; Olofin et al., 2013; Adair et al., 2013; de Onis and Branca, 2016; Black et al., 2008; Bhaskaram, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "42f4e31a-0684-4f87-9c79-981a183f8b46",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C7",
+      "claim": "Stunting has been consistently associated with reduced educational attainment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, stunting has been consistently associated with increased risk of morbidity and mortality, delayed or deficient cognitive development, and reduced educational attainment (McDonald et al., 2013; Black et al., 2013; Olofin et al., 2013; Adair et al., 2013; de Onis and Branca, 2016; Black et al., 2008; Bhaskaram, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including McDonald et al., 2013; Black et al., 2013; Olofin et al., 2013; Adair et al., 2013; de Onis and Branca, 2016; Black et al., 2008; Bhaskaram, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "6d711200-1ba8-4313-bbfc-47d0f83c4855",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C8",
+      "claim": "Stunting has been linked with diarrheal diseases across many settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Stunting has been linked with diarrheal diseases across many settings (Checkley et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Checkley et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "18d7cbb0-8ff6-48f4-85b5-865b7103dd55",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C9",
+      "claim": "An estimated 10.9% of global stunting is attributable to diarrhea.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 10.9% of global stunting is attributable to diarrhea (Danaei et al., 2016), and a child with diarrhea is more likely to have a lower HAZ or to die than age-matched controls (Kotloff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Danaei et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "65a2a7c3-2924-4da1-a3ad-78936b35aff5",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C10",
+      "claim": "A child with diarrhea is more likely to have a lower HAZ or to die than age-matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 10.9% of global stunting is attributable to diarrhea (Danaei et al., 2016), and a child with diarrhea is more likely to have a lower HAZ or to die than age-matched controls (Kotloff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kotloff et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "45cbf256-7086-4f18-8c06-35304f5cc85a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C11",
+      "claim": "There are 1.1 billion episodes of childhood diarrhea that occur globally every year.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the 1.1 billion episodes of childhood diarrhea that occur globally every year (Collaborators GBDDD, 2018), assessment of children seeking healthcare for diarrhea treatment provides an opportunity to identify those at increased risk for negative outcomes, including stunting and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collaborators GBDDD, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "940272f2-45e4-460f-b2d7-7023abbb56d6",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C12",
+      "claim": "Clinical prediction rules (CPRs) are algorithms that aid clinicians in interpreting clinical findings and making clinical decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "CPRs are algorithms that aid clinicians in interpreting clinical findings and making clinical decisions (Reilly and Evans, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reilly and Evans, 2006",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "0cf6fff6-22b3-4cf7-ac8a-5206fd270c1c",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C13",
+      "claim": "Linear growth faltering captures children whose growth has slowed precipitously and is a precursor of stunting.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear growth faltering, or falling below standardized height/length growth trajectory projections, captures children whose growth has slowed precipitously and is a precursor of stunting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the definition provided in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "c1a85783-78a4-4960-8bbb-4ab986c845b8",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C14",
+      "claim": "GEMS was a prospective case\u2013control study of acute moderate-to-severe diarrhea (MSD) in children 0\u201359 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, GEMS was a prospective case\u2013control study of acute moderate-to-severe diarrhea (MSD) in children 0\u201359 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the GEMS study design",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "fa3fc514-e236-4cf5-bcde-14583d0d052c",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C15",
+      "claim": "GEMS data were collected in December 2007\u2013March 2011 from seven sites in Africa and Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were collected in December 2007\u2013March 2011 from seven sites in Africa and Asia, including those in Mali, The Gambia, Kenya, Mozambique, Bangladesh, India, and Pakistan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of GEMS data collection period and locations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "068cc1a3-7aa8-4960-b036-444311be4ed5",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C16",
+      "claim": "In GEMS, MSD was defined as diarrhea accompanied by one or more of the following: dysentery, dehydration, or hospital admission.",
+      "claim_type": "EXPLICIT",
+      "source": "MSD was defined as diarrhea accompanied by one or more of the following: dysentery, dehydration, or hospital admission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition provided in the GEMS study description",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "1cd38222-789c-4c52-b4ce-9dbae6cc7f18",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C17",
+      "claim": "In GEMS, diarrhea was defined as new onset (after \u22657 days diarrhea-free) of three or more looser than normal stools in the previous 24 hr lasting 7 days or less.",
+      "claim_type": "EXPLICIT",
+      "source": "Diarrhea was defined as new onset (after \u22657 days diarrhea-free) of three or more looser than normal stools in the previous 24 hr lasting 7 days or less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition provided in the GEMS study description",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "e9f0c536-2606-4f37-acac-256ce562e46e",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C18",
+      "claim": "MAL-ED is a longitudinal birth cohort study.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Etiology, Risk Factors, and Interactions of Enteric Infections and Malnutrition and the Consequences for Child Health and Development (MAL-ED) study to (1) re-derive the best full model, and (2) externally validate a 2-variable parsimonious version of our GEMS-derived CPR for growth faltering. MAL-ED is a longitudinal birth cohort study, and study details have been described elsewhere (MAL-ED Network Investigators, 2014; Platts-Mills et al., 2014; Platts-Mills et al., 2015; Richard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MAL-ED study design with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "be31d61a-9903-4dad-a6ea-b9c0fe61ae4a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C19",
+      "claim": "In MAL-ED, healthy children were enrolled within 17 days of birth and followed prospectively through 24 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, healthy children were enrolled within 17 days of birth and followed prospectively through 24 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MAL-ED enrollment and follow-up",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "1b49d8f8-1670-479a-b7c6-e38886d18efc",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C20",
+      "claim": "MAL-ED children were enrolled from October 2009 to March 2012 from eight countries in Asia, Africa, and South America.",
+      "claim_type": "EXPLICIT",
+      "source": "Children were enrolled from October 2009 to March 2012 from eight countries in Asia, Africa, and South America, including Tanzania, South Africa, Pakistan, India, Nepal, Bangladesh, Peru, and Brazil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MAL-ED enrollment period and locations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "fc727adf-6a1e-4924-a64d-83c51d53a457",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C21",
+      "claim": "In MAL-ED, diarrhea was defined as maternal report of three or more loose stools in a 24-hr period, or one loose stool with blood.",
+      "claim_type": "EXPLICIT",
+      "source": "In MAL-ED, diarrhea was defined as maternal report of three or more loose stools in a 24-hr period, or one loose stool with blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition provided in the MAL-ED study description",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "f2d59019-e1f2-485e-be80-08b26560e3a9",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C22",
+      "claim": "Growth faltering was defined as a decrease in HAZ of \u22650.5 HAZ within 49\u201391 days of enrollment in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined growth faltering as a decrease in HAZ of \u22650.5 HAZ within 49\u201391 days of enrollment in GEMS, or within 49\u201395 days in MAL-ED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of the outcome measure in GEMS",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "36923cb9-504a-4f69-95fd-0e2dd1d7c75c",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C23",
+      "claim": "Growth faltering was defined as a decrease in HAZ of \u22650.5 HAZ within 49\u201395 days in MAL-ED.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined growth faltering as a decrease in HAZ of \u22650.5 HAZ within 49\u201391 days of enrollment in GEMS, or within 49\u201395 days in MAL-ED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of the outcome measure in MAL-ED",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "8db77ff9-224d-4c7c-bcc0-34e414752bfe",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C24",
+      "claim": "Of 7639 children in GEMS, 1744 (22.8%) experienced severe growth faltering (\u22650.5 decrease in HAZ).",
+      "claim_type": "EXPLICIT",
+      "source": "Of 7639 children in GEMS, 1744 (22.8%) experienced severe growth faltering (\u22650.5 decrease in HAZ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in the Abstract and Results sections with data from GEMS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "f9ad7bf5-d4be-4b01-a47f-a9dfe79fa16e",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C25",
+      "claim": "In MAL-ED, 961 (16.9%) episodes experienced severe growth faltering out of 5683 diarrhea episodes from 1322 children.",
+      "claim_type": "EXPLICIT",
+      "source": "In MAL-ED, we analyzed 5683 diarrhea episodes from 1322 children, of which 961 (16.9%) episodes experienced severe growth faltering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in the Abstract with data from MAL-ED analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "ff692867-3bc7-43ba-99e9-67dee428b1fc",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C26",
+      "claim": "Top predictors of growth faltering in GEMS were: age, HAZ at enrollment, respiratory rate, temperature, and number of people living in the household.",
+      "claim_type": "EXPLICIT",
+      "source": "Top predictors of growth faltering in GEMS were: age, HAZ at enrollment, respiratory rate, temperature, and number of people living in the household.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in the Abstract based on random forest variable importance analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "497d3594-4c38-43c4-866a-0fb2bc5f02a6",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C27",
+      "claim": "The maximum area under the curve (AUC) was 0.75 (95% confidence interval [CI]: 0.75, 0.75) with 20 predictors in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum area under the curve (AUC) was 0.75 (95% confidence interval [CI]: 0.75, 0.75) with 20 predictors, while 2 predictors yielded an AUC of 0.71 (95% CI: 0.71, 0.72).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in the Abstract based on cross-validated model performance in GEMS",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "d9a77099-5541-4279-ac9e-eaee878d25aa",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C28",
+      "claim": "A 2-predictor model yielded an AUC of 0.71 (95% CI: 0.71, 0.72) in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum area under the curve (AUC) was 0.75 (95% confidence interval [CI]: 0.75, 0.75) with 20 predictors, while 2 predictors yielded an AUC of 0.71 (95% CI: 0.71, 0.72).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in the Abstract based on cross-validated model performance in GEMS",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "01458154-6cfa-4996-a2bf-3679132ca450",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C29",
+      "claim": "A 2-variable CPR derived from children 0\u201323 months in GEMS had an AUC = 0.63 (95% CI: 0.62, 0.65).",
+      "claim_type": "EXPLICIT",
+      "source": "A 2-variable CPR derived from children 0\u201323 months in GEMS had an AUC = 0.63 (95% CI: 0.62, 0.65), and AUC = 0.68 (95% CI: 0.63, 0.74) when externally validated in MAL-ED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in the Abstract based on model performance in GEMS subset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "2ecaa5b3-065b-4b33-a1f1-63d86e35f9cb",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C30",
+      "claim": "The 2-variable CPR had an AUC = 0.68 (95% CI: 0.63, 0.74) when externally validated in MAL-ED.",
+      "claim_type": "EXPLICIT",
+      "source": "A 2-variable CPR derived from children 0\u201323 months in GEMS had an AUC = 0.63 (95% CI: 0.62, 0.65), and AUC = 0.68 (95% CI: 0.63, 0.74) when externally validated in MAL-ED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in the Abstract based on external validation in MAL-ED",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "42306b3f-c0b0-4b4c-b69e-0ab668ff77d7",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C31",
+      "claim": "357 (4.7%) children in GEMS experienced very severe growth faltering (\u22651.0 decrease in HAZ).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the remaining 7639 children, 1744 (22.8%) experienced severe growth faltering (\u22650.5 decrease in HAZ), and 357 (4.7%) experienced very severe growth faltering (\u22651.0 decrease in HAZ) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with data from GEMS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "f2dc7426-9eec-40f8-a15b-f9e6e15aba3b",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C32",
+      "claim": "Growth faltering rates differed by country in GEMS, with Mozambique and The Gambia having the highest rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth faltering rates differed by country, with Mozambique and The Gambia having the highest rates of growth faltering (34.5% and 31.9% experienced severe growth faltering, respectively) and Mali having the lowest rate (14.9%, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with data from GEMS analysis by country",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "7f7553c5-9363-4f27-9262-83900f481e75",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C33",
+      "claim": "Mozambique had a growth faltering rate of 34.5% in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth faltering rates differed by country, with Mozambique and The Gambia having the highest rates of growth faltering (34.5% and 31.9% experienced severe growth faltering, respectively) and Mali having the lowest rate (14.9%, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with data from GEMS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "f0b10140-a968-449a-9ab0-628b3ef40a03",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C34",
+      "claim": "The Gambia had a growth faltering rate of 31.9% in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth faltering rates differed by country, with Mozambique and The Gambia having the highest rates of growth faltering (34.5% and 31.9% experienced severe growth faltering, respectively) and Mali having the lowest rate (14.9%, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with data from GEMS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "7140e4db-0ada-4019-96ef-60bde72da85e",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C35",
+      "claim": "Mali had the lowest growth faltering rate of 14.9% in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth faltering rates differed by country, with Mozambique and The Gambia having the highest rates of growth faltering (34.5% and 31.9% experienced severe growth faltering, respectively) and Mali having the lowest rate (14.9%, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with data from GEMS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "265117ce-56a7-4761-a86d-b3d910a89d2d",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C36",
+      "claim": "Growth faltering rates varied by child's age in GEMS, with a higher proportion of younger children experiencing growth faltering than older children.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth faltering rates also varied by child's age, with a higher proportion of younger children experiencing growth faltering than older children (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with data from GEMS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "dfd03f91-dd2b-412e-822c-06a4e54a4b80",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C37",
+      "claim": "In MAL-ED, 161 (2.8%) episodes experienced very severe growth faltering (\u22651.0 decrease in HAZ).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the remaining 5683 observations from 1322 children, 961 (16.9%) episodes experienced severe growth faltering (\u22650.5 decrease in HAZ) and 161 (2.8%) episodes experienced very severe growth faltering (\u22651.0 decrease in HAZ, Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with data from MAL-ED analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "e3cdba5b-1909-4cac-ab8d-feec7ba5f3f1",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C38",
+      "claim": "Logistic regression models consistently had higher AUCs than random forest regression models in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "After random forest screening of variables, logistic regression models consistently had higher AUCs than random forest regression models (Figure 2), therefore we only present the easier to interpret logistic regression results moving forward.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section based on comparison of model types, with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "7ebee311-23d5-4c20-9554-809366b67f0d",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C39",
+      "claim": "The top 10 most predictive variables for severe growth faltering in GEMS included age, HAZ at enrollment, respiratory rate, temperature, number of people living in the household, number of people sleeping in the household, number of days of diarrhea at presentation, number of other households that share same fecal waste disposal facility, whether the child was currently breastfed at time of diarrhea, and the number of children <60 months old living in the household.",
+      "claim_type": "EXPLICIT",
+      "source": "In Table 1, we show the top 10 most predictive variables ranked from most to least important, for severe growth faltering (\u22650.5 decrease in HAZ). The top predictive variables for severe growth faltering were: age, HAZ at enrollment, respiratory rate, temperature, number of people living in the household, number of people sleeping in the household, number of days of diarrhea at presentation, number of other households that share same fecal waste disposal facility (e.g., latrine), whether the child was currently breastfed at time of diarrhea, and the number of children <60 months old living in the household.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section with reference to Table 1, based on random forest variable importance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "d0a2c86d-9b7a-4757-b9e2-df0dd346f3b8",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C40",
+      "claim": "An AUC of 0.72 (95% CI: 0.72, 0.72) could be obtained with a CPR of 5 variables in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum AUC attained with the model was 0.75 (95% confidence interval [CI]: 0.75, 0.75) with a model of 20 variables, while an AUC of 0.71 (95% CI: 0.71, 0.72), 0.72 (95% CI: 0.72, 0.72), and 0.72 (95% CI: 0.72, 0.72) could be obtained with a CPR of 2, 5, and 10 variables, respectively (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section with reference to Figure 2, based on cross-validated model performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "ab3a3162-9cc9-4473-9f73-571f7d0d3f66",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C41",
+      "claim": "An AUC of 0.72 (95% CI: 0.72, 0.72) could be obtained with a CPR of 10 variables in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum AUC attained with the model was 0.75 (95% confidence interval [CI]: 0.75, 0.75) with a model of 20 variables, while an AUC of 0.71 (95% CI: 0.71, 0.72), 0.72 (95% CI: 0.72, 0.72), and 0.72 (95% CI: 0.72, 0.72) could be obtained with a CPR of 2, 5, and 10 variables, respectively (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section with reference to Figure 2, based on cross-validated model performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "d4c8a31d-d2ad-48e7-a05b-9103462b817a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C42",
+      "claim": "When limited to children 0\u201323 months of age in GEMS, AUC decreased to 0.64 (95% CI: 0.64, 0.64) for 10 variables.",
+      "claim_type": "EXPLICIT",
+      "source": "When limited to children 0\u201323 months of age, AUC decreased to 0.64 (95% CI: 0.64, 0.64) for 10 variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on age-stratified analysis in GEMS",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "2af0f88a-6c49-43ba-9044-5c340a79605a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C43",
+      "claim": "In the full 10-variable model in GEMS, a specificity of 0.47 was achieved at a sensitivity of 0.80.",
+      "claim_type": "EXPLICIT",
+      "source": "In the full 10-variable model, we achieved a specificity of 0.47 at a sensitivity of 0.80 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section with reference to Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "84d947a4-b9eb-463c-a646-c18ddc7a48b9",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C44",
+      "claim": "The discriminative performance of the full CPR for growth faltering was similar between GEMS and MAL-ED datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "By utilizing data from two large multicenter clinical studies of pediatric diarrhea, we used a combination of machine learning and conventional regression methods to derive and validate CPRs for linear growth faltering. The discriminative performance of our CPR for growth faltering was remarkably similar between the two datasets (AUC = 0.72, 95% CI: 0.72, 0.72, based on GEMS 0\u201359 months; 0.68, 95% CI: 0.67, 0.69 based on MAL-ED 0\u201324 months).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on comparison of model performance across datasets",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "69dde300-9c13-4a94-be05-e6eb30eadb9e",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C45",
+      "claim": "The full CPR in GEMS had better discriminative ability than the CPR developed by Brander et al., 2019 (AUC = 0.67, 95% CI: 0.64, 0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "Our full CPRs were better at identifying growth faltering than (Brander et al., 2019) (AUC = 0.67, 95% CI: 0.64, 0.69), which was not externally validated, and worse than (Hanieh et al., 2019) (AUC = 0.85, 95% CI: 0.80, 0.90), which only used data from a single country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section comparing performance to prior studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "b8487bd8-716a-4237-bb20-b43a19141df6",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C46",
+      "claim": "The full CPR in GEMS had worse discriminative ability than the CPR developed by Hanieh et al., 2019 (AUC = 0.85, 95% CI: 0.80, 0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "Our full CPRs were better at identifying growth faltering than (Brander et al., 2019) (AUC = 0.67, 95% CI: 0.64, 0.69), which was not externally validated, and worse than (Hanieh et al., 2019) (AUC = 0.85, 95% CI: 0.80, 0.90), which only used data from a single country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section comparing performance to prior studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "c838f675-7bb0-4f6c-8569-5c053d6c5615",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C47",
+      "claim": "The top predictors of growth faltering identified by random forests were consistent with existing knowledge of the drivers of growth faltering.",
+      "claim_type": "EXPLICIT",
+      "source": "The top predictors of growth faltering identified by random forests in our analysis were consistent with existing knowledge of the drivers of growth faltering \u2013 child demographics, child symptoms, and indicators of household wealth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on comparison with existing literature",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "07e976a0-1e29-4607-9c54-b5808aa34974",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C48",
+      "claim": "The top 2 variables used in the parsimonious externally validated CPR were age and baseline HAZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 2 variables (used in our parsimonious externally validated CPR) were age and baseline HAZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on variable importance analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "39d8319f-d9ea-451d-acc9-23c4d0729871",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C49",
+      "claim": "Consideration of additional factors related to nature of disease (etiology, antibiotics) did not improve discriminative ability of the CPR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite the inclusion of markers of disease severity (temperature, respiratory rate, number of days of diarrhea), overall ability to predict growth faltering was moderate, and consideration of additional factors related to nature of disease (etiology, antibiotics) did not improve discriminative ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on sensitivity analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "ccb7b9be-4393-4798-81e7-5fef5733af35",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C50",
+      "claim": "Treating diarrhea with antibiotics generally did not prevent growth faltering except for Shigella infections.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous analysis in GEMS data that found treating diarrhea with antibiotics generally did not prevent growth faltering (except for Shigella infections, Nasrin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nasrin et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "abfeb6fe-6e09-41a4-a79f-52116f3bb3f6",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C51",
+      "claim": "The incidence of growth faltering was similar in diarrhea cases and matched controls in GEMS, particularly in the youngest children.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the similar incidence of growth faltering in diarrhea cases and matched controls (particularly in the youngest children), as well as the almost identical predictive variables and similar AUCs, suggests that the impact of a single episode of acute diarrhea on growth trajectory may be relatively low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on comparison of cases and controls",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "ab0370a2-7bd1-42bd-a9bc-bf357692a697",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C52",
+      "claim": "The impact of a single episode of acute diarrhea on growth trajectory may be relatively low.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the similar incidence of growth faltering in diarrhea cases and matched controls (particularly in the youngest children), as well as the almost identical predictive variables and similar AUCs, suggests that the impact of a single episode of acute diarrhea on growth trajectory may be relatively low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of cases and controls in Discussion section",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "29464dd3-429e-40dd-b451-541eec5c9f5e",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C53",
+      "claim": "Total days in all diarrheal episodes, days with diarrhea so far this episode, and days since last diarrhea episode were all top 10 predictors of growth faltering in MAL-ED.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while the design of GEMS does not allow for the exploration of this hypothesis, MAL-ED does. Total days in all diarrheal episodes, days with diarrhea so far this episode, and days since last diarrhea episode were all top 10 predictors of growth faltering in MAL-ED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on MAL-ED analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "f08058a8-0116-4c5e-923a-3fc42c1bfe4c",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C54",
+      "claim": "In GEMS, the average baseline HAZ at enrollment was 0.5 HAZ lower in children who did not experience growth faltering than in children who did.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore in GEMS, the average baseline HAZ at enrollment was 0.5 HAZ lower in children who did not experience growth faltering than in children who did (Figure 3\u2014figure supplement 5), suggesting the possibility that children need to have high enough HAZ in order to have the potential to falter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Discussion section with reference to Figure 3\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "0c348990-13c8-4312-a6ce-5a85ef6abd85",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C55",
+      "claim": "Children enrolled in Mali had the highest median HAZ at enrollment in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, children enrolled in Mali had the highest median HAZ at enrollment, and also had the lowest proportion of children who experienced growth faltering (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section with reference to Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "81dbe467-b9cd-4b94-ba06-73242e902292",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C56",
+      "claim": "Children enrolled in Mali had the lowest proportion of children who experienced growth faltering in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, children enrolled in Mali had the highest median HAZ at enrollment, and also had the lowest proportion of children who experienced growth faltering (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section with reference to Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "a3c9ac1d-44a4-477a-8b62-b6d728580bd7",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C57",
+      "claim": "The CPR predicting any stunting at follow-up had high accuracy with AUC = 0.90 (95% CI: 0.90, 0.91).",
+      "claim_type": "EXPLICIT",
+      "source": "In sensitivity analyses, we demonstrated our ability to predict any stunting at follow-up with high accuracy (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "fbe3eedf-af6d-4b7c-b089-99b1734b6b49",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C58",
+      "claim": "Effective interventions exist for treating acute malnutrition, including exclusive breastfeeding for the first 6 months of life.",
+      "claim_type": "EXPLICIT",
+      "source": "While effective interventions exist for treating acute malnutrition (e.g., exclusive breastfeeding for the first 6 months of life, inpatient- and community-based management of acute malnutrition using corn-soy blend or ready-to-use therapeutic food; WHO, 2013; Bergeron and Castleman, 2012; Keats et al., 2021), there are few evidence-based guidance on how to reverse the effects of chronic malnutrition once a child is stunted (Bergeron and Castleman, 2012; Leroy et al., 2015; Reinhardt and Fanzo, 2014; Pavlinac et al., 2018; WHO, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to WHO, 2013; Bergeron and Castleman, 2012; Keats et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "6633ec63-8ccd-4736-adc7-9f437f2e90e1",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C59",
+      "claim": "There are few evidence-based guidance on how to reverse the effects of chronic malnutrition once a child is stunted.",
+      "claim_type": "EXPLICIT",
+      "source": "While effective interventions exist for treating acute malnutrition (e.g., exclusive breastfeeding for the first 6 months of life, inpatient- and community-based management of acute malnutrition using corn-soy blend or ready-to-use therapeutic food; WHO, 2013; Bergeron and Castleman, 2012; Keats et al., 2021), there are few evidence-based guidance on how to reverse the effects of chronic malnutrition once a child is stunted (Bergeron and Castleman, 2012; Leroy et al., 2015; Reinhardt and Fanzo, 2014; Pavlinac et al., 2018; WHO, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bergeron and Castleman, 2012; Leroy et al., 2015; Reinhardt and Fanzo, 2014; Pavlinac et al., 2018; WHO, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "5ba52154-63d3-475b-9276-1f0bf258252d",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C60",
+      "claim": "Approximately one in five children experience severe growth faltering subsequent to acute diarrhea.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that approximately one in five children experience severe growth faltering subsequent to acute diarrhea, that is, an additional \u22650.5 decrease in HAZ in the 2\u20133 months after acute diarrhea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Discussion section based on GEMS data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "359a963c-c268-4229-b1ef-83d50f6d4354",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C61",
+      "claim": "Random forests are an ensemble learning method whereby multiple decision trees are built on bootstrapped samples of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Random forests are an ensemble learning method whereby multiple decision trees (1000 throughout this analysis) are built on bootstrapped samples of the data with only a random sample of potential predictors considered at each split, thereby decorrelating the trees and reducing variability (James et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to James et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "d5590fd1-9a4f-4529-9fab-6820a5b32d3a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C62",
+      "claim": "1000 decision trees were used in the random forest analysis throughout this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Random forests are an ensemble learning method whereby multiple decision trees (1000 throughout this analysis) are built on bootstrapped samples of the data with only a random sample of potential predictors considered at each split, thereby decorrelating the trees and reducing variability (James et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Methods section describing the random forest approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "21121861-9355-4f4d-97b8-a43f1099d0e2",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C63",
+      "claim": "Generalizable performance was assessed using fivefold repeated cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalizable performance was assessed using fivefold repeated cross-validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Methods section describing model validation approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "b914e075-8188-45f7-ad43-77c4afcb0295",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C64",
+      "claim": "When MUAC was considered as a potential predictor instead of HAZ, AUC decreased to 0.70 (95% CI: 0.70, 0.70).",
+      "claim_type": "EXPLICIT",
+      "source": "When MUAC was considered as a potential predictor (instead of HAZ), MUAC replaced HAZ as a top predictor, all other top 10 predictors remained the same, and AUC decreased (down to 0.70, 95% CI: 0.70, 0.70).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "592db82c-5bc4-4069-8da7-44c133d793a4",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C65",
+      "claim": "When both HAZ and MUAC were considered as potential predictors, AUC remained unchanged compared to the main model that considered only HAZ (0.72, 95% CI: 0.72, 0.73).",
+      "claim_type": "EXPLICIT",
+      "source": "When both HAZ and MUAC were considered as potential predictors, both were top predictors, but AUC remained unchanged compared to the main model that considered only HAZ (0.72, 95% CI: 0.72, 0.73).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "fca992e1-907b-4375-85e6-56c2dc11d58b",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C66",
+      "claim": "The predictors of very severe growth faltering (\u22651.0 decrease in HAZ) were similar to the predictors of severe growth faltering (\u22650.5 decrease in HAZ).",
+      "claim_type": "EXPLICIT",
+      "source": "The predictors of very severe growth faltering (\u22651.0 decrease in HAZ) were similar to the predictors of severe growth faltering (\u22650.5 decrease in HAZ), though predictive ability was better (AUC 0.80 [95% CI: 0.79, 0.80] for \u22651.0 vs. 0.72 [95% CI: 0.71, 0.73] for \u22650.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "4c7ac87f-73b9-4933-a34f-6a50367312bc",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C67",
+      "claim": "Predictive ability for very severe growth faltering (\u22651.0 decrease in HAZ) was better than for severe growth faltering (\u22650.5 decrease in HAZ), with AUC 0.80 vs. 0.72.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictors of very severe growth faltering (\u22651.0 decrease in HAZ) were similar to the predictors of severe growth faltering (\u22650.5 decrease in HAZ), though predictive ability was better (AUC 0.80 [95% CI: 0.79, 0.80] for \u22651.0 vs. 0.72 [95% CI: 0.71, 0.73] for \u22650.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "13800e95-a97a-458e-a08f-64dbd6fabdfb",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C68",
+      "claim": "Accounting for seasonality did not meaningfully improve the CPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for seasonality did not meaningfully improve the CPR, and antibiotic use and diarrhea etiology were consistently not ranked as top predictors of growth faltering (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "39429ea2-0a70-441c-b296-e04fbe4979d4",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C69",
+      "claim": "Antibiotic use and diarrhea etiology were consistently not ranked as top predictors of growth faltering.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for seasonality did not meaningfully improve the CPR, and antibiotic use and diarrhea etiology were consistently not ranked as top predictors of growth faltering (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "51463013-7eba-4392-9973-269e0ce6c018",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C70",
+      "claim": "When data were limited to only those children not already stunted at initial presentation, top predictors and AUC of growth faltering were similar (0.71, 95% CI: 0.70, 0.72).",
+      "claim_type": "EXPLICIT",
+      "source": "When data were limited to only those children not already stunted at initially presentation, top predictors and AUC of growth faltering were similar (0.71, 95% CI: 0.70, 0.72).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "148426f9-90f2-426b-8cda-7f36fc3550f7",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C71",
+      "claim": "Top predictors of growth faltering were similar in non-diarrhea controls compared to cases in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Top predictors of growth faltering were similar in non-diarrhea controls compared to cases in GEMS (Table 1), but predictive ability was higher (AUC 0.79 [95% CI: 0.78, 0.79] in controls vs. 0.72 [95% CI: 0.72, 0.72] in cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on analysis of controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "87c280a0-7ea9-4aaa-b8d6-137fd6c84376",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C72",
+      "claim": "Predictive ability for growth faltering was higher in non-diarrhea controls than in cases in GEMS (AUC 0.79 vs. 0.72).",
+      "claim_type": "EXPLICIT",
+      "source": "Top predictors of growth faltering were similar in non-diarrhea controls compared to cases in GEMS (Table 1), but predictive ability was higher (AUC 0.79 [95% CI: 0.78, 0.79] in controls vs. 0.72 [95% CI: 0.72, 0.72] in cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on analysis of controls",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "8c0e4e39-0f34-4ebd-8a13-bafccaaec957",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C73",
+      "claim": "The maximum AUC attained with the model in controls was 0.79 (95% CI: 0.79, 0.80) with a model of 15 variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum AUC attained with the model was 0.79 (95% CI: 0.79, 0.80) with a model of 15 variables, while an AUC of 0.79 (95% CI: 0.78, 0.79) and 0.79 (95% CI: 0.79, 0.79) could be obtained with a CPR of 5 and 10 variables, respectively (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section for controls analysis with reference to Figure 3\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "11110bbc-73e5-4b75-b849-4b8fab022020",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C74",
+      "claim": "CPRs of higher age strata had higher AUCs (0.76 in 24\u201359 months vs. 0.60 in 0\u201311 months in GEMS).",
+      "claim_type": "EXPLICIT",
+      "source": "CPRs of higher age strata had higher AUCs (0.76 [95% CI: 0.75, 0.77] in 24\u201359 months in GEMS vs. 0.60 [95% CI: 0.59, 0.60] in 0\u201311 months in GEMS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on age-stratified sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "f424bd8a-0dcb-494e-8533-c87dcaf79773",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C75",
+      "claim": "There were 9439 children with acute diarrhea enrolled in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 9439 children with acute diarrhea enrolled in GEMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "7e96428a-c755-4e2d-9318-5c2663d005d1",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C76",
+      "claim": "110 observations were dropped from GEMS for having follow-up measurements taken <49 or >91 days after enrollment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analysis of the primary outcome (growth faltering), 110 observations were dropped for having follow-up measurements taken <49 or >91 days after enrollment, and 1276 were dropped for having implausible HAZ measurements, leaving an analytic sample of 8053.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing exclusions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "2628f861-1816-4cc9-b6d4-2bd88077cc31",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C77",
+      "claim": "1276 observations were dropped from GEMS for having implausible HAZ measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analysis of the primary outcome (growth faltering), 110 observations were dropped for having follow-up measurements taken <49 or >91 days after enrollment, and 1276 were dropped for having implausible HAZ measurements, leaving an analytic sample of 8053.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing exclusions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "368ab8d6-c2f5-465a-b4d5-4d2234f269d9",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C78",
+      "claim": "414 observations were dropped from GEMS for having missing predictor data.",
+      "claim_type": "EXPLICIT",
+      "source": "An addition 414 observations were dropped for having missing predictor data, as random forest analysis requires complete cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing exclusions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "313f059b-6db6-47a8-84ea-436e3ea1572a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C79",
+      "claim": "There were 6617 diarrhea episodes from 1390 children in the initial MAL-ED analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analysis of MAL-ED data, we started with 6617 diarrhea episodes from 1390 children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing the MAL-ED study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "02f58bb5-780a-4024-ae08-e297d1e99db2",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C80",
+      "claim": "566 diarrhea episodes were dropped from MAL-ED for having prolonged or persistent diarrhea (>7 days duration).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to align with GEMS inclusion criteria and limit to acute onset diarrhea, 566 diarrhea episodes were dropped for having prolonged or persistent diarrhea (>7 days duration).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing MAL-ED exclusions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "cd8b0672-6690-4f91-a0d1-81e7a86b95cc",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C81",
+      "claim": "125 episodes were dropped from MAL-ED for having missing HAZ measurements or an HAZ follow-up measurement <49 or >95 days from diarrhea onset.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional 125 episodes were dropped for having missing HAZ measurements or an HAZ follow-up measurement <49 or >95 days from diarrhea onset, and 138 episodes were dropped for having implausible HAZ measurements, leaving 5788 diarrhea episodes from 1350 children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing MAL-ED exclusions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "c649ce2b-bfae-4763-9864-7087c8da1c4a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C82",
+      "claim": "138 episodes were dropped from MAL-ED for having implausible HAZ measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional 125 episodes were dropped for having missing HAZ measurements or an HAZ follow-up measurement <49 or >95 days from diarrhea onset, and 138 episodes were dropped for having implausible HAZ measurements, leaving 5788 diarrhea episodes from 1350 children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing MAL-ED exclusions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "25c0c184-d73d-4bd3-a5a5-0e8bd740f496",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C83",
+      "claim": "105 observations were dropped from MAL-ED for having missing predictor data.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional 105 observations were dropped for having missing predictor data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section describing MAL-ED exclusions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "92795194-904b-42f1-88b7-fc019207f94d",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C84",
+      "claim": "The average predicted probability of growth faltering was consistently close to the average observed probability (calibration-in-the-large) for models including 1\u201310 predictor variables in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The average predicted probability of growth faltering was consistently close to the average observed probability (calibration-in-the-large, or intercept), and the spread of predicted probabilities was similar to the spread of observed probabilities (calibration slope) for models including 1\u201310 predictor variables (Table 2, Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section with references to Table 2 and figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "4cdf4f8b-81af-4919-a171-9f16e1583956",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C85",
+      "claim": "The spread of predicted probabilities was similar to the spread of observed probabilities (calibration slope) for models including 1\u201310 predictor variables in GEMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The average predicted probability of growth faltering was consistently close to the average observed probability (calibration-in-the-large, or intercept), and the spread of predicted probabilities was similar to the spread of observed probabilities (calibration slope) for models including 1\u201310 predictor variables (Table 2, Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section with references to Table 2 and figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "8232c268-9dc4-452f-9d7b-f35b861836c2",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C86",
+      "claim": "The top predictors in MAL-ED were similar to those identified using GEMS data, with age and HAZ at diarrhea being the top 2 predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "We then derived a CPR for growth faltering using MAL-ED data, and found that the top predictors were similar to those identified using GEMS data, with age and HAZ at diarrhea being the top 2 predictors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on MAL-ED re-derivation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "5fb2ba9b-f796-4705-81fd-c18ed14d7680",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C87",
+      "claim": "The discriminative performance of the full model in MAL-ED was 0.68 (95% CI: 0.67, 0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "The discriminative performance of the full model was similar to that found with GEMS (0.72 [95% CI: 0.72, 0.72] in GEMS, 0.68 [95% CI: 0.67, 0.69] in MAL-ED).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported in Results section based on MAL-ED re-derivation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "eddea7ed-4540-451d-ab49-7ab750d1b1a5",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C88",
+      "claim": "On average, the 2-variable CPR overestimated probability of growth faltering when validated in MAL-ED (calibration intercept \u22120.32, 95% CI: \u22120.54, \u22120.11).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the CPR overestimated probability of growth faltering (calibration intercept \u22120.32, 95% CI: \u22120.54, \u22120.11), and predictions tended to be too moderate (calibration slope 1.5, 95% CI: 1.0, 2.1) (Table 2, Figure 3, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section for external validation with references to Table 2 and figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "de951f6d-71b4-4989-b978-65b4f7985d48",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C89",
+      "claim": "The 2-variable CPR predictions tended to be too moderate when validated in MAL-ED (calibration slope 1.5, 95% CI: 1.0, 2.1).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the CPR overestimated probability of growth faltering (calibration intercept \u22120.32, 95% CI: \u22120.54, \u22120.11), and predictions tended to be too moderate (calibration slope 1.5, 95% CI: 1.0, 2.1) (Table 2, Figure 3, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported in Results section for external validation with references to Table 2 and figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "d292804e-64fe-4e8b-a302-d95c3783b656",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C90",
+      "claim": "The work was supported by the National Institutes of Health under Ruth L. Kirschstein National Research Service Award NIH T32AI055434.",
+      "claim_type": "EXPLICIT",
+      "source": "This work was supported by the National Institutes of Health under Ruth L. Kirschstein National Research Service Award NIH T32AI055434 and by the National Institute of Allergy and Infectious Diseases (R01AI135114).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Funding section of the Abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "038a9bdb-7b04-4c6b-ab07-d247a2de0494",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C91",
+      "claim": "The work was supported by the National Institute of Allergy and Infectious Diseases (R01AI135114).",
+      "claim_type": "EXPLICIT",
+      "source": "This work was supported by the National Institutes of Health under Ruth L. Kirschstein National Research Service Award NIH T32AI055434 and by the National Institute of Allergy and Infectious Diseases (R01AI135114).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Funding section of the Abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "4a45803c-7c06-452d-9602-35841836c3bb",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C92",
+      "claim": "GEMS and MAL-ED data are available to the public by request through https://clinepidb.org/ce/app/.",
+      "claim_type": "EXPLICIT",
+      "source": "GEMS and MAL-ED data are available to the public by request through the following website https://clinepidb.org/ce/app/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Data availability section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "39ead665-0769-49c9-b58c-0b874c7cd71e",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C93",
+      "claim": "Data cleaning and statistical code needed to reproduce all parts of this analysis are available from the corresponding author's GitHub page.",
+      "claim_type": "EXPLICIT",
+      "source": "Data cleaning and statistical code needed to reproduce all parts of this analysis are available from the corresponding author's GitHub page: https://github.com/LeungLab/CPRgrowthfaltering, (copy archived at swh:1:rev:f3fd53b5713ef787d3ae2cd4a81f3286f52f2746, Ahmed, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Data availability section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "37ee62d0-0ec9-44f4-954a-3fbda9a81128",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C94",
+      "claim": "The CPR could be used to identify children not currently stunted but who are likely to slow down in growth and therefore at higher risk of incident stunting.",
+      "claim_type": "EXPLICIT",
+      "source": "Our CPR could be used to identify children not currently stunted and therefore not currently recommended for nutritional interventions, but who are likely to slow down in growth and therefore at higher risk of incident stunting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Discussion section as a potential application of the CPR",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "decfb581-0c16-4261-a5bf-79f6a49a38e5",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "claim_id": "C95",
+      "claim": "Community screening for those at risk of growth faltering (not just those presenting with acute diarrhea) may be prudent.",
+      "claim_type": "EXPLICIT",
+      "source": "Given our ability to predict growth faltering in healthy controls in GEMS, community screening for those at risk of growth faltering (not just those presenting with acute diarrhea) may also be prudent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Discussion section as a potential application based on findings in controls",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the public health context for childhood stunting and growth faltering, including prevalence, definitions, health consequences, and association with diarrheal disease. Nearly 150 million children were stunted in 2020, stunting is associated with multiple adverse health outcomes, and approximately 10.9% of global stunting is attributable to diarrhea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 are all supported by appropriate citations to prior literature and represent well-established epidemiological knowledge. These background claims provide the rationale for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "52be6eda-de1d-4718-858f-472279f0271c",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study utilized two large multi-country datasets: GEMS (9,439 children with acute diarrhea from 7 sites in Africa and Asia, 2007-2011) and MAL-ED (6,617 diarrhea episodes from 1,390 children from 8 countries, 2009-2012). After applying exclusion criteria, the final analytic samples were 7,639 children in GEMS and 5,683 episodes from 1,322 children in MAL-ED.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 and C75-C83 provide clear descriptions of the study populations, data collection periods, definitions, and sample sizes with appropriate exclusions documented. The data flow and exclusion criteria are transparently reported and appropriate for the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Growth faltering (\u22650.5 decrease in HAZ within 49-91/95 days) occurred in 22.8% of children in GEMS and 16.9% of episodes in MAL-ED. Very severe growth faltering (\u22651.0 decrease in HAZ) occurred in 4.7% of GEMS children and 2.8% of MAL-ED episodes. Approximately one in five children experience severe growth faltering subsequent to acute diarrhea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25, C31, C37, and C60 report the prevalence of the primary outcome with clear definitions and appropriate sample sizes. The outcome definition is reasonable and consistently applied across both datasets, though the slightly different follow-up windows (91 vs 95 days) are noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "1933ce22-52ab-42f8-bf87-a26631c1fe52",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Growth faltering rates varied substantially by country and age in GEMS. Mozambique (34.5%) and The Gambia (31.9%) had the highest rates while Mali had the lowest (14.9%). Younger children experienced higher rates of growth faltering than older children. Mali also had the highest median baseline HAZ and lowest proportion experiencing growth faltering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 and C55-C56 report descriptive epidemiological findings with specific percentages by country and age. These findings are internally consistent and suggest important heterogeneity in the outcome across settings and age groups.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "d6b83d0d-249b-4e4d-9bb7-37016da681a6",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The top predictors of growth faltering identified by random forest variable importance in GEMS were age, HAZ at enrollment, respiratory rate, temperature, and number of people living in the household. The top 10 predictors included additional household and clinical variables. These predictors were consistent with existing knowledge of growth faltering drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C39, C48, and C47 report the variable importance rankings from the random forest analysis. The predictors are biologically plausible and consistent with prior literature. However, the manuscript does not provide quantitative importance measures or statistical significance tests for these rankings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "ab80d071-946a-4068-8887-8845747a7fec",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using random forest variable screening followed by logistic regression with fivefold cross-validation in GEMS (ages 0-59 months), the maximum AUC was 0.75 (95% CI: 0.75, 0.75) with 20 predictors. Parsimonious models achieved AUC of 0.71 with 2 predictors and 0.72 with 5 or 10 predictors. Logistic regression consistently outperformed random forest regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28, C40-C41, C61-C63, and C38 describe the model development approach and discrimination performance. The methodology is appropriate with proper cross-validation. The extremely narrow confidence intervals (e.g., 0.75, 0.75) suggest these may be point estimates from repeated cross-validation rather than true confidence intervals, which should be clarified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "9daf0f4b-646b-48b5-9a2d-9e01d20394f0",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "When the GEMS model was limited to children 0-23 months of age to enable external validation, the 2-variable CPR (age and HAZ) achieved AUC of 0.63 (95% CI: 0.62, 0.65) in GEMS, with performance decreasing to 0.64 for the 10-variable model in this age-restricted subset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C42 report the performance of age-restricted models in GEMS. The decrease in AUC when restricting to younger children is expected given the age-dependent nature of growth faltering noted in C36. The narrow confidence intervals again suggest these may be cross-validation estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "5728e84f-50cd-4ad5-8770-e326a5427261",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The 2-variable CPR derived from GEMS (0-23 months) was externally validated in MAL-ED, achieving AUC of 0.68 (95% CI: 0.63, 0.74). When the full model was re-derived in MAL-ED, top predictors were similar to GEMS with AUC of 0.68 (95% CI: 0.67, 0.69). The externally validated model showed calibration issues, overestimating probability (intercept -0.32) with predictions too moderate (slope 1.5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C86-C89, and C44 report the external validation results. The similar AUC between derivation and validation datasets (0.63-0.68) suggests reasonable generalizability. However, the calibration issues (C88-C89) indicate the model may not be well-calibrated for absolute risk prediction in new settings, limiting clinical utility. The wider confidence interval for C30 (0.63, 0.74) compared to internal validation is appropriate for external validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "8f995dde-05ff-4193-9071-a15fd4c8effd",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Models with 1-10 predictor variables in GEMS showed good calibration, with average predicted probabilities close to observed probabilities (calibration-in-the-large) and appropriate spread of predictions (calibration slope).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 report calibration metrics for the GEMS-derived models. Table 2 shows calibration intercepts near 0 and slopes near 1.0 with confidence intervals including these ideal values, indicating good calibration in the derivation dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "791bb28f-f29a-4579-922c-756464f95171",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 10-variable model in GEMS achieved specificity of 0.47 at sensitivity of 0.80. Model performance varied by age stratum, with higher AUCs in older children (0.76 in 24-59 months) compared to younger children (0.60 in 0-11 months).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C74 report operating characteristics and age-stratified performance. The low specificity at 80% sensitivity indicates many false positives, which may limit clinical utility. The age-dependent performance is consistent with the higher growth faltering rates in younger children (C36).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "61ca81b5-5c21-49f5-870c-5ba76b69a226",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sensitivity analyses examining MUAC as a predictor showed that when MUAC replaced HAZ, AUC decreased to 0.70. When both HAZ and MUAC were included, AUC remained unchanged at 0.72 compared to HAZ alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 report sensitivity analyses comparing anthropometric predictors. The results suggest HAZ is a better predictor than MUAC for growth faltering, and MUAC provides no additional predictive value beyond HAZ. This is biologically plausible as the outcome is defined by change in HAZ.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "2de37f83-42ae-4870-832c-b05ba36e2279",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Predictors of very severe growth faltering (\u22651.0 decrease in HAZ) were similar to those for severe growth faltering (\u22650.5 decrease), but predictive ability was better for very severe growth faltering (AUC 0.80 vs. 0.72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 report sensitivity analyses for a more extreme outcome. The higher AUC for more severe outcomes is expected as extreme outcomes are typically easier to predict. The similar predictors suggest a common underlying mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "c77f2b61-29be-4a69-bdab-c77d485424e0",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Accounting for seasonality did not meaningfully improve the CPR. Antibiotic use and diarrhea etiology were not ranked as top predictors of growth faltering. Additional factors related to disease nature (etiology, antibiotics) did not improve discriminative ability, consistent with prior findings that antibiotics generally do not prevent growth faltering except for Shigella infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C49-C50 report negative findings from sensitivity analyses. These are important null results suggesting that acute disease characteristics are less important than baseline child and household factors. The consistency with prior literature (C50) strengthens these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "82ba661e-ffea-4e42-86e5-8f6c5360db8c",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "When limited to children not already stunted at presentation (HAZ \u2265-2), top predictors and AUC for growth faltering were similar (0.71). However, the CPR predicting any stunting at follow-up had high accuracy (AUC 0.90).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70 and C57 report sensitivity analyses for different populations and outcomes. The high AUC for predicting stunting status (0.90) versus growth faltering (0.71) suggests baseline HAZ is highly predictive of future stunting status, but this represents a different clinical question than predicting growth deceleration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "9b7ab669-827d-436a-99ba-212e70deed02",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In GEMS controls without diarrhea, top predictors of growth faltering were similar to cases, but predictive ability was higher (AUC 0.79 vs. 0.72). The incidence of growth faltering was similar between cases and controls, particularly in younger children, suggesting the impact of a single episode of acute diarrhea on growth trajectory may be relatively low.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73, C51-C52 report findings from the control group analysis. The similar predictors and incidence between cases and controls is a critical finding suggesting acute diarrhea may not be the primary driver of growth faltering. However, the inference in C52 is somewhat speculative as the study was not designed to directly test the causal impact of diarrhea on growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "bdda5b3b-c0c5-4b57-9e88-bc1ef08cee57",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In MAL-ED, cumulative diarrhea burden variables (total days in all diarrheal episodes, days with diarrhea so far this episode, and days since last diarrhea episode) were all top 10 predictors of growth faltering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 reports findings unique to the MAL-ED longitudinal cohort. These results suggest that cumulative diarrhea burden, rather than single episodes, may be more important for growth faltering. This provides important context for interpreting the case-control findings in GEMS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "3970a5d2-f382-483e-9610-627787a2b629",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In GEMS, the average baseline HAZ at enrollment was 0.5 HAZ lower in children who did not experience growth faltering compared to those who did, suggesting children may need sufficiently high HAZ to have potential to falter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 reports an interesting observation but the interpretation is speculative. The finding could alternatively reflect regression to the mean, measurement error, or selection bias. The claim requires more rigorous statistical analysis to determine if this represents a true biological phenomenon or an artifact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "c300a5d3-6277-41ea-b71b-5da040cb063f",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The full CPR developed in this study had better discriminative ability than a prior CPR by Brander et al. (AUC 0.67) which was not externally validated, but worse performance than Hanieh et al. (AUC 0.85) which used single-country data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 compare the current study's performance to prior literature. The comparisons are appropriate and contextualize the findings. The better performance of the single-country model (Hanieh) versus multi-country models suggests potential heterogeneity across settings that limits generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "7cd7d850-029b-4253-bfa6-049e050530de",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Effective interventions exist for treating acute malnutrition, but there is limited evidence-based guidance on reversing chronic malnutrition once a child is stunted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by appropriate citations and represent established knowledge in the field. These claims provide important context for the clinical relevance of identifying children at risk of growth faltering before they become stunted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "8ebdbbae-c6d6-4419-a42f-8c9000e45688",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The CPR could be used to identify children not currently stunted but at risk of incident stunting for targeted interventions. Community screening for growth faltering risk (not just those with acute diarrhea) may be prudent given the ability to predict growth faltering in healthy controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C95 propose potential applications of the CPR but are speculative. While the moderate discrimination (AUC 0.63-0.72) and calibration issues in external validation raise questions about clinical utility, the similar performance in controls suggests broader applicability. However, implementation studies would be needed to determine if CPR-guided interventions actually improve outcomes and are cost-effective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    },
+    {
+      "id": "0a9c330d-0256-4ee5-a84b-18c248cb31e9",
+      "content_id": "13616604-a31b-4145-9c5e-c6daaeee3f86",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study was funded by NIH grants T32AI055434 and R01AI135114. Data and code are publicly available through specified repositories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 provide funding and data availability information. The public availability of data and code supports reproducibility, which is a strength of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:13:14.050877Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c9d44500-e729-4764-8be2-dc20be02518d",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "764b1852-12dc-4939-872c-51aba10ca083",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "0d43ea7d-f169-4bb7-b8de-8b03a39b2200",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "34f9edd2-0be5-4707-b7d1-887511f5fa29",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "764fbdf7-522a-4a2b-a0f4-68edd5559433",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "5c9500f7-d711-4d86-9fe8-728fb3aac216",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "42f4e31a-0684-4f87-9c79-981a183f8b46",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "6d711200-1ba8-4313-bbfc-47d0f83c4855",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "18d7cbb0-8ff6-48f4-85b5-865b7103dd55",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "65a2a7c3-2924-4da1-a3ad-78936b35aff5",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "45cbf256-7086-4f18-8c06-35304f5cc85a",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "0cf6fff6-22b3-4cf7-ac8a-5206fd270c1c",
+      "result_id": "9f54c7cd-e38d-4945-a5f7-2302b37490fd"
+    },
+    {
+      "claim_id": "c1a85783-78a4-4960-8bbb-4ab986c845b8",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "fa3fc514-e236-4cf5-bcde-14583d0d052c",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "068cc1a3-7aa8-4960-b036-444311be4ed5",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "1cd38222-789c-4c52-b4ce-9dbae6cc7f18",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "e9f0c536-2606-4f37-acac-256ce562e46e",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "be31d61a-9903-4dad-a6ea-b9c0fe61ae4a",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "1b49d8f8-1670-479a-b7c6-e38886d18efc",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "fc727adf-6a1e-4924-a64d-83c51d53a457",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "f424bd8a-0dcb-494e-8533-c87dcaf79773",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "7e96428a-c755-4e2d-9318-5c2663d005d1",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "2628f861-1816-4cc9-b6d4-2bd88077cc31",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "368ab8d6-c2f5-465a-b4d5-4d2234f269d9",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "313f059b-6db6-47a8-84ea-436e3ea1572a",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "02f58bb5-780a-4024-ae08-e297d1e99db2",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "cd8b0672-6690-4f91-a0d1-81e7a86b95cc",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "c649ce2b-bfae-4763-9864-7087c8da1c4a",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "25c0c184-d73d-4bd3-a5a5-0e8bd740f496",
+      "result_id": "52be6eda-de1d-4718-858f-472279f0271c"
+    },
+    {
+      "claim_id": "f2d59019-e1f2-485e-be80-08b26560e3a9",
+      "result_id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a"
+    },
+    {
+      "claim_id": "36923cb9-504a-4f69-95fd-0e2dd1d7c75c",
+      "result_id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a"
+    },
+    {
+      "claim_id": "8db77ff9-224d-4c7c-bcc0-34e414752bfe",
+      "result_id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a"
+    },
+    {
+      "claim_id": "f9ad7bf5-d4be-4b01-a47f-a9dfe79fa16e",
+      "result_id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a"
+    },
+    {
+      "claim_id": "42306b3f-c0b0-4b4c-b69e-0ab668ff77d7",
+      "result_id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a"
+    },
+    {
+      "claim_id": "dfd03f91-dd2b-412e-822c-06a4e54a4b80",
+      "result_id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a"
+    },
+    {
+      "claim_id": "5ba52154-63d3-475b-9276-1f0bf258252d",
+      "result_id": "999c91f6-d0a1-4608-982d-ee7e09f5d26a"
+    },
+    {
+      "claim_id": "f2dc7426-9eec-40f8-a15b-f9e6e15aba3b",
+      "result_id": "1933ce22-52ab-42f8-bf87-a26631c1fe52"
+    },
+    {
+      "claim_id": "7f7553c5-9363-4f27-9262-83900f481e75",
+      "result_id": "1933ce22-52ab-42f8-bf87-a26631c1fe52"
+    },
+    {
+      "claim_id": "f0b10140-a968-449a-9ab0-628b3ef40a03",
+      "result_id": "1933ce22-52ab-42f8-bf87-a26631c1fe52"
+    },
+    {
+      "claim_id": "7140e4db-0ada-4019-96ef-60bde72da85e",
+      "result_id": "1933ce22-52ab-42f8-bf87-a26631c1fe52"
+    },
+    {
+      "claim_id": "265117ce-56a7-4761-a86d-b3d910a89d2d",
+      "result_id": "1933ce22-52ab-42f8-bf87-a26631c1fe52"
+    },
+    {
+      "claim_id": "0c348990-13c8-4312-a6ce-5a85ef6abd85",
+      "result_id": "1933ce22-52ab-42f8-bf87-a26631c1fe52"
+    },
+    {
+      "claim_id": "81dbe467-b9cd-4b94-ba06-73242e902292",
+      "result_id": "1933ce22-52ab-42f8-bf87-a26631c1fe52"
+    },
+    {
+      "claim_id": "ff692867-3bc7-43ba-99e9-67dee428b1fc",
+      "result_id": "d6b83d0d-249b-4e4d-9bb7-37016da681a6"
+    },
+    {
+      "claim_id": "7ebee311-23d5-4c20-9554-809366b67f0d",
+      "result_id": "d6b83d0d-249b-4e4d-9bb7-37016da681a6"
+    },
+    {
+      "claim_id": "07e976a0-1e29-4607-9c54-b5808aa34974",
+      "result_id": "d6b83d0d-249b-4e4d-9bb7-37016da681a6"
+    },
+    {
+      "claim_id": "c838f675-7bb0-4f6c-8569-5c053d6c5615",
+      "result_id": "d6b83d0d-249b-4e4d-9bb7-37016da681a6"
+    },
+    {
+      "claim_id": "497d3594-4c38-43c4-866a-0fb2bc5f02a6",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "d9a77099-5541-4279-ac9e-eaee878d25aa",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "d0a2c86d-9b7a-4757-b9e2-df0dd346f3b8",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "ab3a3162-9cc9-4473-9f73-571f7d0d3f66",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "359a963c-c268-4229-b1ef-83d50f6d4354",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "d5590fd1-9a4f-4529-9fab-6820a5b32d3a",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "21121861-9355-4f4d-97b8-a43f1099d0e2",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "e3cdba5b-1909-4cac-ab8d-feec7ba5f3f1",
+      "result_id": "ab80d071-946a-4068-8887-8845747a7fec"
+    },
+    {
+      "claim_id": "01458154-6cfa-4996-a2bf-3679132ca450",
+      "result_id": "9daf0f4b-646b-48b5-9a2d-9e01d20394f0"
+    },
+    {
+      "claim_id": "d4c8a31d-d2ad-48e7-a05b-9103462b817a",
+      "result_id": "9daf0f4b-646b-48b5-9a2d-9e01d20394f0"
+    },
+    {
+      "claim_id": "2ecaa5b3-065b-4b33-a1f1-63d86e35f9cb",
+      "result_id": "5728e84f-50cd-4ad5-8770-e326a5427261"
+    },
+    {
+      "claim_id": "8232c268-9dc4-452f-9d7b-f35b861836c2",
+      "result_id": "5728e84f-50cd-4ad5-8770-e326a5427261"
+    },
+    {
+      "claim_id": "5fb2ba9b-f796-4705-81fd-c18ed14d7680",
+      "result_id": "5728e84f-50cd-4ad5-8770-e326a5427261"
+    },
+    {
+      "claim_id": "eddea7ed-4540-451d-ab49-7ab750d1b1a5",
+      "result_id": "5728e84f-50cd-4ad5-8770-e326a5427261"
+    },
+    {
+      "claim_id": "de951f6d-71b4-4989-b978-65b4f7985d48",
+      "result_id": "5728e84f-50cd-4ad5-8770-e326a5427261"
+    },
+    {
+      "claim_id": "84d947a4-b9eb-463c-a646-c18ddc7a48b9",
+      "result_id": "5728e84f-50cd-4ad5-8770-e326a5427261"
+    },
+    {
+      "claim_id": "92795194-904b-42f1-88b7-fc019207f94d",
+      "result_id": "8f995dde-05ff-4193-9071-a15fd4c8effd"
+    },
+    {
+      "claim_id": "4cdf4f8b-81af-4919-a171-9f16e1583956",
+      "result_id": "8f995dde-05ff-4193-9071-a15fd4c8effd"
+    },
+    {
+      "claim_id": "2af0f88a-6c49-43ba-9044-5c340a79605a",
+      "result_id": "791bb28f-f29a-4579-922c-756464f95171"
+    },
+    {
+      "claim_id": "11110bbc-73e5-4b75-b849-4b8fab022020",
+      "result_id": "791bb28f-f29a-4579-922c-756464f95171"
+    },
+    {
+      "claim_id": "b914e075-8188-45f7-ad43-77c4afcb0295",
+      "result_id": "61ca81b5-5c21-49f5-870c-5ba76b69a226"
+    },
+    {
+      "claim_id": "592db82c-5bc4-4069-8da7-44c133d793a4",
+      "result_id": "61ca81b5-5c21-49f5-870c-5ba76b69a226"
+    },
+    {
+      "claim_id": "fca992e1-907b-4375-85e6-56c2dc11d58b",
+      "result_id": "2de37f83-42ae-4870-832c-b05ba36e2279"
+    },
+    {
+      "claim_id": "4c7ac87f-73b9-4933-a34f-6a50367312bc",
+      "result_id": "2de37f83-42ae-4870-832c-b05ba36e2279"
+    },
+    {
+      "claim_id": "13800e95-a97a-458e-a08f-64dbd6fabdfb",
+      "result_id": "c77f2b61-29be-4a69-bdab-c77d485424e0"
+    },
+    {
+      "claim_id": "39429ea2-0a70-441c-b296-e04fbe4979d4",
+      "result_id": "c77f2b61-29be-4a69-bdab-c77d485424e0"
+    },
+    {
+      "claim_id": "39d8319f-d9ea-451d-acc9-23c4d0729871",
+      "result_id": "c77f2b61-29be-4a69-bdab-c77d485424e0"
+    },
+    {
+      "claim_id": "ccb7b9be-4393-4798-81e7-5fef5733af35",
+      "result_id": "c77f2b61-29be-4a69-bdab-c77d485424e0"
+    },
+    {
+      "claim_id": "51463013-7eba-4392-9973-269e0ce6c018",
+      "result_id": "82ba661e-ffea-4e42-86e5-8f6c5360db8c"
+    },
+    {
+      "claim_id": "a3c9ac1d-44a4-477a-8b62-b6d728580bd7",
+      "result_id": "82ba661e-ffea-4e42-86e5-8f6c5360db8c"
+    },
+    {
+      "claim_id": "148426f9-90f2-426b-8cda-7f36fc3550f7",
+      "result_id": "9b7ab669-827d-436a-99ba-212e70deed02"
+    },
+    {
+      "claim_id": "87c280a0-7ea9-4aaa-b8d6-137fd6c84376",
+      "result_id": "9b7ab669-827d-436a-99ba-212e70deed02"
+    },
+    {
+      "claim_id": "8c0e4e39-0f34-4ebd-8a13-bafccaaec957",
+      "result_id": "9b7ab669-827d-436a-99ba-212e70deed02"
+    },
+    {
+      "claim_id": "abfeb6fe-6e09-41a4-a79f-52116f3bb3f6",
+      "result_id": "9b7ab669-827d-436a-99ba-212e70deed02"
+    },
+    {
+      "claim_id": "ab0370a2-7bd1-42bd-a9bc-bf357692a697",
+      "result_id": "9b7ab669-827d-436a-99ba-212e70deed02"
+    },
+    {
+      "claim_id": "29464dd3-429e-40dd-b451-541eec5c9f5e",
+      "result_id": "bdda5b3b-c0c5-4b57-9e88-bc1ef08cee57"
+    },
+    {
+      "claim_id": "f08058a8-0116-4c5e-923a-3fc42c1bfe4c",
+      "result_id": "3970a5d2-f382-483e-9610-627787a2b629"
+    },
+    {
+      "claim_id": "69dde300-9c13-4a94-be05-e6eb30eadb9e",
+      "result_id": "c300a5d3-6277-41ea-b71b-5da040cb063f"
+    },
+    {
+      "claim_id": "b8487bd8-716a-4237-bb20-b43a19141df6",
+      "result_id": "c300a5d3-6277-41ea-b71b-5da040cb063f"
+    },
+    {
+      "claim_id": "fbe3eedf-af6d-4b7c-b089-99b1734b6b49",
+      "result_id": "7cd7d850-029b-4253-bfa6-049e050530de"
+    },
+    {
+      "claim_id": "6633ec63-8ccd-4736-adc7-9f437f2e90e1",
+      "result_id": "7cd7d850-029b-4253-bfa6-049e050530de"
+    },
+    {
+      "claim_id": "37ee62d0-0ec9-44f4-954a-3fbda9a81128",
+      "result_id": "8ebdbbae-c6d6-4419-a42f-8c9000e45688"
+    },
+    {
+      "claim_id": "decfb581-0c16-4261-a5bf-79f6a49a38e5",
+      "result_id": "8ebdbbae-c6d6-4419-a42f-8c9000e45688"
+    },
+    {
+      "claim_id": "d292804e-64fe-4e8b-a302-d95c3783b656",
+      "result_id": "0a9c330d-0256-4ee5-a84b-18c248cb31e9"
+    },
+    {
+      "claim_id": "038a9bdb-7b04-4c6b-ab07-d247a2de0494",
+      "result_id": "0a9c330d-0256-4ee5-a84b-18c248cb31e9"
+    },
+    {
+      "claim_id": "4a45803c-7c06-452d-9602-35841836c3bb",
+      "result_id": "0a9c330d-0256-4ee5-a84b-18c248cb31e9"
+    },
+    {
+      "claim_id": "39ead665-0769-49c9-b58c-0b874c7cd71e",
+      "result_id": "0a9c330d-0256-4ee5-a84b-18c248cb31e9"
+    }
+  ],
+  "comparisons": []
+}

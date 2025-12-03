@@ -1,0 +1,2093 @@
+{
+  "submission": {
+    "id": "0d851558-ccd8-4dbe-b966-fcd033b0c617",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:44:52.302999Z",
+    "updated_at": "2025-12-03T18:44:52.302999Z"
+  },
+  "content": [
+    {
+      "id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "submission_id": "0d851558-ccd8-4dbe-b966-fcd033b0c617",
+      "content_type": "manuscript",
+      "content_text": "# Ecdysone acts through cortex glia to regulate sleep in Drosophila\n\n## Authors\n\n- Yongjun Li<sup>1</sup> ([ORCID: 0000-0002-3618-6041](https://orcid.org/0000-0002-3618-6041))\n- Paula Haynes<sup>1</sup>\n- Shirley L Zhang<sup>1</sup> ([ORCID: 0000-0002-6672-2044](https://orcid.org/0000-0002-6672-2044))\n- Zhifeng Yue<sup>1</sup>\n- Amita Sehgal<sup>1</sup> ([ORCID: 0000-0001-7354-9641](https://orcid.org/0000-0001-7354-9641)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute and Chronobiology and Sleep Institute, Perelman School of Medicine at the University of Pennsylvania Philadelphia United States ([ROR:006w34k90](https://ror.org/006w34k90))\n2. Department of Biology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n3. Department of Pharmacology, Perelman School of Medicine at the University of Pennsylvania Philadelphia United States ([ROR:00wd70b02](https://ror.org/00wd70b02))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSteroid hormones are attractive candidates for transmitting long-range signals to affect behavior. These lipid-soluble molecules derived from dietary cholesterol easily penetrate the brain and act through nuclear hormone receptors (NHRs) that function as transcription factors. To determine the extent to which NHRs affect sleep:wake cycles, we knocked down each of the 18 highly conserved NHRs found in Drosophila adults and report that the ecdysone receptor (EcR) and its direct downstream NHR Eip75B (E75) act in glia to regulate the rhythm and amount of sleep. Given that ecdysone synthesis genes have little to no expression in the fly brain, ecdysone appears to act as a long-distance signal and our data suggest that it enters the brain more at night. Anti-EcR staining localizes to the cortex glia in the brain and functional screening of glial subtypes revealed that EcR functions in adult cortex glia to affect sleep. Cortex glia are implicated in lipid metabolism, which appears to be relevant for actions of ecdysone as ecdysone treatment mobilizes lipid droplets (LDs), and knockdown of glial EcR results in more LDs. In addition, sleep-promoting effects of exogenous ecdysone are diminished in lsd-2 mutant flies, which are lean and deficient in lipid accumulation. We propose that ecdysone is a systemic secreted factor that modulates sleep by stimulating lipid metabolism in cortex glia.\n\n## Introduction\n\nSleep is a resting state that alternates with awake and is broadly conserved in animals (Anafi et al., 2018). With recent advances in our understanding of sleep regulation and function, much of it from small animal models, it is becoming increasing apparent that sleep is more than a brain-regulated process that only serves the brain (Borb\u00e9ly et al., 2016; Dubowy and Sehgal, 2017; Harbison et al., 2009; Hobson, 2005; Shaw et al., 2000). Loss of sleep has systemic effects and is associated with molecular changes in the periphery (Anafi et al., 2013; Chua et al., 2015). In addition, some sleep-promoting effects have been mapped to tissues outside the brain, although the nature of the sleep-regulating signals and their mode of transmission to relevant cells in the brain are poorly understood (Borniger and de Lecea, 2021; Ehlen et al., 2017; Toda et al., 2019).\n\nAs a major communication system of the body, endocrine signaling is a promising candidate for mediating long-range effects on sleep (Mong et al., 2011; Morgan and Tsai, 2015; Roller, 2021). Glands of the endocrine system make and release chemical messengers called steroid hormones, which circulate in the blood until they reach their target cells and bind to specific steroid nuclear hormone receptors (NHRs) in the cytosol (Bonora and DeFronzo, 2018; Zubeldia-Brenner et al., 2016). Given that circulating steroid hormones are lipophilic and can easily enter the brain, together with the broad expression of NHRs in the central nervous system, it is reasonable to infer that NHR signaling is a significant contributor to brain function (Yang et al., 2007; King-Jones and Thummel, 2005; Kininis and Kraus, 2008). However, the response mediated by the endocrine system is modulatory, in that it is slower and more long term than fast, synaptic neurotransmission (Morgan and Tsai, 2015). Thus, the endocrine system drives responses to environmental cues and innate signals critical for development, growth, and metabolism (Kannangara et al., 2021; Oostra et al., 2014). Sleep is a chronic behavior regulated over a relatively long timeframe (a daily cycle), so one might expect it also to be sensitive to endocrine signaling. Indeed, endocrine dysfunction affects sleep, and conversely, sleep and sleep loss affect hormone production and hormonal function, but the specificity and mechanisms underlying these interactions remain to be elucidated (Aldabal and Bahammam, 2011; Kim et al., 2015; Ter\u00e1n-P\u00e9rez et al., 2012).\n\nTo explore the impact of endocrine signaling on sleep, we used a Drosophila model and knocked down each of the known Drosophila NHRs in neurons and glia. We found that the ecdysone receptor (EcR) and Eip75B (E75) function in both cell types to modulate sleep but have more potent effects in glia. EcR knockdown in glia significantly decreases sleep and disrupts circadian rhythms, as does the knockdown of the newly identified ecdysone importer (EcI). EcR functions in cortex glia to affect sleep, and it appears to do so by regulating lipid metabolism. Together these studies identify a long-range signal that modulates sleep in adult Drosophila.\n\n## Results\n\n### Effects of pan-neuronal and pan-glial knockdown of EcR and E75 on sleep\n\nTo identify NHRs that affect sleep in adult Drosophila, we conducted a systematic genetic knockdown screen of all known NHRs. To avoid developmental effects, which are prominent for most NHRs, we sought to address their role in sleep by knocking them down specifically at the adult stage (Nicholson et al., 2008). Based upon single-cell RNAseq data showing that nearly half of known NHRs are highly expressed in adult fly brain both neurons and glia, we used pan-neuronal and pan-glial GeneSwitch (GS) drivers induced in adults with RU486 (nSyb-GS and Repo-GS, respectively) to knock down individual NHRs (Davie et al., 2018; Nicholson et al., 2008). All NHRs were targeted either by two separate RNAi lines or UAS-miRNA transgenic fly lines that polycistronically express two independent miRNAs in the same line (Lin et al., 2009). Surprisingly, we found that knockdown of most NHRs in neurons and glial cells reduced adult sleep by varying levels compared with their GS controls and UAS controls, suggesting that the endocrine system in general plays a positive role in sleep regulation (Figure 1B,C). Among them, knockdown of EcR, the receptor of the primary steroid hormone ecdysone, and its direct downstream targeting gene Eip75B (E75) had the greatest effects on total sleep. Because we noticed that Repo-GS control flies have variable daytime sleep and RU486 induction further reduces daytime sleep, we also analyzed all flies\u2019 nighttime sleep, which is quite stable in all conditions. Importantly, EcR and E75 knockdown affect primarily nighttime sleep and phenotypes are stronger when they are knocked down in glia.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig1-v2.jpg)\n\n**Figure 1.:** (A) Flies carrying a pan-neuronal driver nSyb-GS or pan-glial driver Repo-GS were crossed with different UAS lines carrying RNAi constructs against NHRs, and their 5- to 7-day-old F1 female progeny were loaded into DAM monitors to record their activity under 12:12 hr light:dark cycles. GeneSwitch remains inactive during developmental stages and is activated by RU486 in the food in DAM monitors. Behavior data were collected by the DAM system. (B, C) Mean total and nighttime sleep for each group were calculated by Pysolo. Differences between experimental flies and GS and RNAi controls were calculated separately in each independent experiment, and the average values comparing each experimental to its GeneSwitch control (X-axis) and RNAi control (Y-axis) are shown in the plots. The exact numbers of flies used per line are provided in Figure 1\u2014source data 1. While knockdown of most NHRs reduces sleep, effects of EcR RNAi #1, EcR RNAi #2, E75 RNAi #1 predominate, especially in glial knockdown experiments.\n\nAcross multiple experiments, we found that flies with glial knockdown of EcR slept on average ~460 min, much less than those with neuronal knockdown that slept ~707 min. In addition, the total sleep amount of nSyb-GS>EcR RNAi flies was not significantly reduced compared with nSyb-GS control flies, suggesting that glial EcR has a larger role in determining sleep amount (Figure 2A\u2013D). Knockdown of E75 in either neurons or glia led to severe sleep loss, with ~419 and ~461 min of daily sleep, respectively (Figure 2\u2014figure supplement 1A\u2013D). Because ecdysone is the most common steroid hormone in Drosophila, it directly or indirectly affects multiple NHRs (King-Jones and Thummel, 2005). Indeed, we found that knockdown of ecdysone responsive NHRs reduced sleep more than knockdown of non-ecdysone responsive NHRs, and from the screen of neuronal and glial knockdown, top hits were known ecdysone relevant NHRs (Figure 1\u2014source data 1). If we use 200-min sleep loss compared with both control groups as a cutoff, then two out of three top hits with neuronal knockdown and five out of seven top hits with glial knockdown are ecdysone relevant NHRs. Genes showing the most dramatic sleep loss when knocked down in glia were EcR, E75, Ftz-f1, and Hr3, all directly relevant to the ecdysone signaling pathway. The efficacy of our screen was supported by the identification of non-ecdysone responsive NHR Hr51 (unfulfilled) as a hit affecting circadian rhythms. We found that neuronal, but not glial, knockdown of Hr51 (unfulfilled), previously shown to exert circadian effects by acting in central clock neurons (Beuchle et al., 2012), resulted in an arrhythmic phenotype, with no sleep amount change under 12:12 hr light:dark conditions (Figure 2\u2014figure supplement 2A\u2013D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Show representative sleep traces of nSyb-GS>EcR RNAi #1 and Repo-GS>EcR RNAi #1. N = 14\u201316 per genotype. Data are based on at least three independent experiments. Representative sleep traces are showed because Pysolo we used does not allow combining data from repeated experiments. Total sleep of the nSyb-GS>EcR RNAi #1 and Repo-GS>EcR RNAi #1 flies for three replicates, N = 43\u201363, one-way analysis of variance (ANOVA) with Tukey post hoc test was used for (C), and Kruskal\u2013Wallis test with Dunn\u2019s multiple comparisons test was used for (D). (E\u2013H) The average sleep bout number and average sleep bout length of the nSyb-GS>EcR RNAi #1 and Repo-GS>EcR RNAi #1 flies for all three replicates. Daytime sleep data are quantified in the left panels, and nighttime sleep is quantified in the right panels of each group. One-way ANOVA analysis with Tukey post hoc test was used for (E, F) and Kruskal\u2013Wallis test with Dunn\u2019s multiple comparisons test was used for (G, H). (I\u2013K) The rhythmicity, period, and relative Fast Fourier Transform (FFT) power analysis of nSyb-GS>EcR RNAi #1 and Repo-GS>EcR RNAi #1 flies and controls assayed for locomotor activity rhythms in constant darkness. (I) shows the percentage rhythmic in each genotype from all three independent replicates. Flies used for analysis in (J, K) are rhythmic flies from (I), and experimental files are compared with their GeneSwitch and RNAi control flies. Bar graphs show mean + standard error of the mean (SEM), and p values for each comparison were calculated using the Kruskal\u2013Wallis test with Dunn\u2019s multiple comparisons test. ns = not significant, p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. See also Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) show representative sleep traces of nSyb-GS>E75 RNAi #1 and Repo-GS>E75 RNAi #1. N = 12\u201316 per genotype per experiment. Experiments were independently repeated at least two times, and one experiment is shown here. (C, D) Total sleep of the nSyb-GS>EcR RNAi #1 and Repo-GS>EcR RNAi #1 flies shown in (A, B), p values for each comparison were calculated by one-way analysis of variance (ANOVA) with the Tukey post hoc test. (E\u2013H) The average sleep bout number and average sleep bout length of the nSyb-GS>E75 RNAi #1 and Repo-GS>E75 RNAi #1 flies. Daytime sleep data are quantified in the left panels, and nighttime sleep is quantified in the right panels of each group. p values for each comparison in (E\u2013H) were calculated by Kruskal\u2013Wallis test with Dunn\u2019s multiple comparisons test. Bar graphs show mean + standard error of the mean (SEM). ns = not significant, p > 0.05, *p < 0.05, ***p < 0.001, ****p < 0.0001. See also Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A, B) show representative sleep traces of nSyb-GS>Hr51 RNAi and Repo-GS>Hr51 RNAi. N = 26\u201332 per genotype. Experiments were independently repeated two times, and one experiment is shown here. (C, D) Total sleep of the nSyb-GS>Hr51 RNAi and Repo-GS>Hr51 RNAi flies shown in (A, B), p values for each comparison were calculated by one-way analysis of variance (ANOVA) with the post hoc test. (E, F) show representative sleep traces of nSyb-GS>EcR RNAi #1 and Repo-GS>EcR RNAi #1 female flies with vehicle control or RU486; experiments were independently repeated at least two times. (G, H) Total sleep of the nSyb-GS>EcR RNAi #1 RNAi and Repo-GS>EcR RNAi #1 female flies with vehicle control or RU486, N = 28\u201340 per genotype. Bar graphs show mean + standard error of the mean (SEM), and ns = not significant, p > 0.05, *p < 0.05, ***p < 0.001, ****p < 0.0001. The comparison was calculated with an unpaired parametric Student\u2019s t-test for Repo-GS groups and Mann\u2013Whitney test for nSyb-GS groups. See also Figure 2\u2014source data 3.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Sleep traces resulting from pan-glial adult-specific EcR knockdown by using Repo-Gal4; TubulinGal80ts crossed with UAS-EcR RNAi #1. Five-day-old F1 progeny flies were maintained at 18 degrees for 1 day, then switched to 31 degrees to inactivate Gal80ts, resulting in EcR knockdown over the next 2 days. Subsequently, the temperature dropped to 18 degrees in the last day. (B) Quantification of total sleep in pan-glial EcR knockdown flies using Repo-Gal4/TubulinGal80ts, N = 38\u201359 per genotype and experiments were independently repeated at least two times. Total sleep amount was calculated for each genotype and compared to the control group for four different days. p values for each comparison were calculated by one-way analysis of variance (ANOVA) using Tukey\u2019s post hoc test. (C\u2013E) Total sleep quantification of EcR RNAi knockdown using three different EcR RNAi lines BDSC #9328, #9329, and #9452. N = 16\u201332 per genotype and experiments were independently repeated two times, p values for each comparison were calculated by one-way analysis of variance (ANOVA) with the Tukey post hoc test. Black bars are Repo-GS control flies, gray bars are UAS-RNAi control flies, and green bars are different Repo-GS>EcR RNAi flies, indicated by their titles. Bar graphs show mean + standard error of the mean (SEM), ns = not significant, p > 0.05, *p < 0.05, ***p < 0.001, ****p < 0.0001. See also Figure 2\u2014source data 4.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A, B) show representative sleep traces of nSyb-GS>EcI RNAi #1 and Repo-GS>EcI RNAi #1 flies, (C, D) Total sleep quantification of the nSyb-GS>EcI RNAi #1 and Repo-GS>EcI RNAi #1 flies and their controls. N = 25\u201330; data are based on two independent experiments. (E, F) show representative sleep traces of nSyb-GS>EcR_c and Repo-GS>EcR_c flies, N = 35\u201348 per genotype; data are based on three independent experiments. (G, H) Total sleep of the nSyb-GS>EcR_c and Repo-GS>EcR_c flies. p values for each comparison were calculated by one-way analysis of variance (ANOVA) with Tukey post hoc test. Bar graphs show mean + standard error of the mean (SEM); ns = not significant, p > 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. See also Figure 2\u2014source data 5.\n\nSleep architecture analysis showed that neuronal or glial-specific knockdown of EcR or E75 reduces sleep amount by fragmenting sleep, with larger effects seen with the glial-specific knockdown (Figure 2E\u2013H, Figure 2\u2014figure supplement 1E\u2013H). Glial EcR and E75 knockdown flies had shorter average sleep bout lengths during the day and night and more sleep bouts at night, indicating that their sleep is fragmented (Figure 2F, H and Figure 2\u2014figure supplement 1F, H). Comparison of RU486-treated flies with vehicle-treated controls confirmed that adult-specific knockdown of EcR is sufficient to reduce sleep in both neuronal and glial populations (Figure 2\u2014figure supplement 2E\u2013H). To confirm effects of adult-specific knockdown, we used the temporal and regional gene expression targeting (TARGET) system in which expression of Repo-Gal4 can be restricted to adults by using a temperature-sensitive allele of a Gal4 suppressor, Gal80 (McGuire et al., 2003). The results show that Repo-Gal4; TubGal80ts>EcR RNAi #1 flies sleep a similar amount at permissive temperature (18 degrees) as control flies, but their sleep is significantly less at restricted temperature (31 degrees), confirming that EcR acts in adult glia to regulate daily sleep (Figure 2\u2014figure supplement 3A,B).\n\nSince EcR RNAi #1 and #2 used in the initial screening are two independent P-element transgenic lines but were generated using the same construct, we also tested three other EcR RNAi lines with Repo-GS, all of which produced reduced sleep phenotypes, further confirming that EcR RNAi knockdown in glial cells reduces sleep (Figure 2\u2014figure supplement 3C\u2013E). Furthermore, we tested the function of the recently identified ecdysone membrane transporter EcI, whose expression is necessary for ecdysone uptake by cells (Okamoto et al., 2018). As with EcR, glial knockdown of EcI reduced overall sleep levels and led to more fragmented sleep (Figure 2\u2014figure supplement 4A\u2013D). In general, all these data strongly indicate that ecdysone signaling acts in the brain, particularly in glia, to modulate sleep.\n\nTo assay flies for free-running circadian rhythms, we monitored them under constant darkness (DD) conditions. In DD, half of the nSyb-GS EcR knockdown flies and 90% of Repo-GS EcR knockdown flies became arrhythmic, but the remaining rhythmic flies showed no difference from controls in their period or FFT (Fast Fourier Transform) values that are a measure of rhythm strength (Figure 2I\u2013K). Our finding that EcR functions are required in glia to promote circadian locomotor rhythms and sleep is novel and consistent with previous work showing that E75 or EcR knockdown in central clock cells causes some locomotor arrhythmicity, but more dramatic phenotypes result from knockdown with drivers such as tim27-Gal4 that additionally express in glia (Kumar et al., 2014).\n\nNext, we overexpressed EcR and found that, in contrast to our knockdown experiments, overexpression in neurons and glia had no effect on total sleep, but Repo-GS>EcR_c flies showed a consistent phase shift at dusk (Figure 2\u2014figure supplement 4E\u2013H). Thus, effects of EcR on sleep and rhythms are largely through glia, and not neurons. Regarding the lack of sleep phenotypes from overexpression, it is possible that sleep-relevant ecdysone signaling is saturating in both neurons and glia and increasing EcR does not confer new sleep-promoting functions. However, since exogenous ecdysone feeding promotes sleep (Ishimoto and Kitamoto, 2010), it is also possible that the EcR ligand ecdysone is rate limiting when EcR is overexpressed.\n\n### Starvation and glial ecdysone signaling act independently to regulate sleep amount\n\nSleep changes under stress conditions, and ecdysone is implicated in stress responses (Hill et al., 2018; Ishimoto and Kitamoto, 2011; Williams, 2019), raising the possibility that ecdysone mediates the effects of stressors on sleep. Starvation is an example of a stressor that raises ecdysone levels in female flies (Terashima et al., 2005). Although its effect on sleep goes in the opposite direction, that is, starvation reduces sleep, we asked whether ecdysone is relevant for effects of starvation (Keene et al., 2010) for instance, does downregulation of ecdysone signaling in specific cells (despite overall increased ecdysone) account for decreased sleep during starvation? As shown by Ishimoto and Kitamoto, 2010 , we also found that feeding of the exogenous bioactive form of ecdysone, 20E, promotes sleep in fed wild-type flies (Figure 3 A, E); we then asked if starved flies respond to 20E as well. Exogenous ecdysone abrogated sleep loss caused by starvation, indicating that EcRs are functional in sleep-relevant cells under these conditions (Figure 3B, E). Consistent with this, we found that mRNA levels of ecdysone responsive genes\u2014EcR, EcI, E75, and E74\u2014in the fly brain are not altered after 1 day of starvation (Figure 3\u2014figure supplement 2D). Interestingly, starved flies fed 20E showed rebound sleep when they were returned to food, even though these flies did not lose sleep during starvation, indicating that 20E does not rescue the need for sleep that builds up during starvation (Regalado et al., 2017).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig3-v2.jpg)\n\n**Figure 3.:** Sleep was monitored for 3 days either under continuous feeding with and without 0.2 mM ecdysone (A) or under each of the following three conditions\u2014continuous feeding for 3 days or with an intervention on the second day, which consisted of either starvation or starvation accompanied with the feeding of 0.2 mM ecdysone (B). The assay was conducted in (A, B) wild-type flies (wCS) and (C, D) nSyb-GS and Repo-GS EcR RNAi #1 flies. N = 15\u201332 for each genotype, and the experiment was repeated two times. Quantification of sleep nomalized to vehicle control group for the average daily sleep for (A) and ZT0\u2013ZT23h interval of the second day for (B\u2013D) is shown in (E). ZT0\u2013ZT23 sleep data are shown as flies were flipped back to locomotor tubes with food during the last hour (ZT23\u201324). Bar graphs show mean \u00b1 standard error of the mean (SEM) and ns = not significant, p > 0.05, ***p <0 .001, ****p < 0.0001. p values for comparisons between two groups were based on the Mann\u2013Whitney test, and p values for comparison between three groups were calculated by one-way analysis of variance (ANOVA) with Tukey post hoc test. See also Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Total sleep of EcR RNAi #1 knockdown flies in both neurons and glia and their genetic control flies after 0.1 mM 20E feeding, N = 29\u201346, and experiments were repeated two or three times independently. (B) The last 4 hours\u2019 sleep between ZT20 and ZT24 after heat shock for an hour at ZT18 of EcR RNAi #1 knockdown flies in neurons or glia and their genetic control flies, N = 16. Bar graphs show mean + standard error of the mean (SEM); ns = not significant, p > 0.05, *p < 0.05, **p <0 .01, ****p < 0.0001. p values for each comparison were calculated by one-way analysis of variance (ANOVA) with Tukey post hoc test. See also Figure 3\u2014source data 2.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Ecdysone level was measured in the fly\u2019s whole body or brain using an ELISA (enzyme-linked immunosorbent assay) kit. 20E levels are higher at ZT14 than ZT2 in the periphery. (B) A and B isoforms of the direct downstream target gene of ecdysone, E75, were measured by qPCR in fly heads or fly bodies at four different time points. Data indicate a significant rhythm with a mid-afternoon\u2013evening peak in heads (JTK values, which are measures of cycling, are below the x-axis). (C) E75 isoform A and B mRNA levels in the fly brain following 20E/Vehicle injection at ZT6 or ZT18. The mRNA levels were measured 1 hr after flies were injected with 20E or vehicle control and changes seen with 20E (relative to vehicle control) in the brain at different time points were normalized to the changes in the body to control for inconsistency of the injection. (D) mRNA levels of EcR, EcI, E75, and E74 in the fly brains do not respond to 1 day of starvation. All comparisons\u2019 p > 0.05 in (C); thus, these are not shown. Bar graphs show mean + standard error of the mean (SEM), and ns = not significant, p > 0.05, *p < 0.05. p values for each comparison are calculated by unpaired parametric Student\u2019s t-test. See also Figure 3\u2014source data 3.\n\nTo determine whether increased sleep after 20E feeding is mediated by neurons or glia, we knocked down EcR in each of those two cell types. Sleep increased following 20E administration in nSyb-GS>EcR RNAi flies, but not Repo-GS>EcR RNAi flies (Figure 3\u2014figure supplement 1A). As the Repo-GS control flies also did not respond to 20E feeding, we cannot draw conclusions about the necessity of EcR expression in glia for effects of exogenous ecdysone. However, neuronal ecdysone signaling appears to be dispensable for this purpose.\n\nWe next asked how knockdown of EcR in neurons versus glia effects the response to starvation and found that while starvation reduced sleep in flies in which EcR was knocked down in neurons, the effects was not significant (Figure 3C, E). Although this could suggest a role of neuronal ecdysone signaling in the response to starvation, it could also be due to variability in the data. On the other hand, robust sleep loss was seen with starvation when EcR was knockdown in glia even though baseline sleep is already quite low in these flies (Figure 3D, E). Although the percentage of sleep loss was higher in Repo-GS>EcR RNAi flies than in controls (68% vs. 30%), because the baseline was lower, the absolute amount of sleep loss was about the same. These data indicate that starvation and ecdysone signaling in glia independently regulate sleep and a large part of sleep remaining in starved flies derives from ecdysone signaling in glia. We also examined the response to a stressor that increases sleep, heat shock, and found that sleep induced by heat shock was not affected by EcR knockdown in neurons or glia (Figure 3\u2014figure supplement 1B).\n\n### Ecdysone cycles in the periphery and has higher action on the brain at night\n\nGiven that ecdysone modulates rhythmic behavior, the question arises whether it is under circadian regulation. We used multiple methods, including a genetic reporter (hs-Gal4-EcR.LBD), mass spectrometry, and an ecdysone ELISA (enzyme-linked immunosorbent assay) kit, to determine if 20E cycles in the brain over a day\u2013night cycle (Ishimoto and Kitamoto, 2010). However, ELISA analysis indicated that 20E level is significantly higher at ZT14 than ZT2 in the fly periphery but not in the fly brain (Figure 3\u2014figure supplement 2A). In the fly brain, even genetic reporters and mass spectrometry approaches failed to detect any significant differences in 20E levels. Our inability to detect a cycle in the brain, despite a previously reported peak at ZT12 in the fly head (Ishimoto and Kitamoto, 2010), could reflect the rapid metabolism of 20E following its action on brain tissues. Alternatively, changes of 20E levels in the fly brain may be too small to be detected (Vafopoulou and Steel, 2012). In support of circadian regulation of ecdysone signaling, mRNA levels of ecdysone responsive E75 isoforms cycle with a peak at ZT12 in the fly head, suggesting that ecdysone acts rhythmically in the fly brain (Figure 3\u2014figure supplement 2B), though this rhythmicity could also be contributed by direct clock regulation of E75 as suggested by Abruzzi et al., 2011. Given that E75 isoforms do not peak at ZT12 in the fly periphery, we suggest that elevated ecdysone at this time enters the brain instead of acting on peripheral tissues. To determine whether ecdysone enters the brain more efficiently at night, we examined whether E75 isoforms show differential responses to peripheral injection of 20E at ZT 6 versus ZT18. We normalized the change in E75 expression in the brain to the change in the body to account for inconsistency of injection and found that the mRNA levels of both E75A and E75B increased more at ZT18, compared to ZT6, after 20E injection, E75A increased 1.67-fold at ZT6, and 3.91 at ZT18, while E75B increased 17-fold at ZT6, and 51.92-fold at ZT18 (Figure 3\u2014figure supplement 2C). This result indicates that peripheral ecdysone has higher action in the brain at night.\n\n### EcR functions in cortex glia to affect sleep\n\nGiven the relevance of glia to EcR effects on sleep, we focused on uncovering its function in glial cells. We first assayed the expression of EcR in adult brains. Consistent with previous reports, antibody staining in the adult fly brain showed that EcR is broadly expressed, but largely in the cortex glia. To confirm the localization to cortex glia, we used two separate cortex glia drivers, GMR77A03-Gal4 and Np2222-Gal4, to drive the expression of mCD8-RFP. Co-staining these brains with an antibody against EcR confirmed that EcR is expressed primarily in the cortex glia (Figure 4A). When EcR was knocked down in glia with Repo-GS, EcR antibody staining was greatly diminished. However, signals were preserved when EcR was knocked down in neurons, leading us to infer that glia, in particular cortex glia, are the major site of expression (Figure 4B). Although not evident in these images, EcR expression was also detected in surface glia of the blood\u2013brain barrier (BBB) (data not shown).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig4-v2.jpg)\n\n**Figure 4.:** (A) EcR antibody DDA2.7 staining overlaps with reporter expression driven by cortex glia drivers (GMR77A03>mCD8 RFP and Np2222>mCD8 RFP), indicating that EcR is expressed in the cortex glia. EcR antibody DDA2.7 staining also shows that EcR can be nuclear or cytoplasmic. (B) EcR antibody DDA2.7 staining is preserved and still observed in the nSyb-GS>EcR RNAi flies but is almost eliminated in the Repo-GS>EcR RNAi flies compared with the vehicle control flies. N = 10 per group. Scale bar: 100 \u00b5m. (C) Quantification of antibody staining in the fly brains\u2019 cortex glia layer, see also Figure 4\u2014source data 1. Signal strength was scored manually based on the fluorescence intensity in the cortex glia region. Repo-GS>EcR RNAi #1 flies have significantly reduced staining based on an unpaired parametric Student\u2019s t-test. Bar graphs show mean \u00b1 standard error of the mean (SEM) and ns = not significant, p > 0.05, **p < 0.01.\n\nTo determine whether sleep phenotypes correlate with the expression pattern of EcR, we then knocked down EcR constitutively in different glial subpopulations by crossing subglial Gal4 lines with the EcR RNAi #1 line that targets all EcR isoforms. However, EcR knockdown with most of these Gal4 lines caused failure of eclosion, indicating the importance of EcR in glial cells during development. Three Gal4 lines produced viable adult flies: one cortex glia-specific driver GMR77A03, one astrocyte-like glia-specific driver Eaat-1, and one ensheathing glia-specific driver GMR56F03. Of these three Gal4 lines, sleep was only reduced when EcR was knocked down using the cortex glia-specific driver (Figure 5A, C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig5-v2.jpg)\n\n**Figure 5.:** (A) Multiple constitutive Gal4 drivers labeling different subglial populations were crossed to EcR RNAi flies. Only GMR77A03 for cortex glia (CG), Eaat-1 for astrocyte-like glia (ALG), and GMR56F03 for ensheathing glia (EG) drivers produced viable adult progeny flies, and only GMR77A03>EcR RNAi #1 flies showed reduced total sleep compared with control flies. Green chart columns are experimental groups, and neighboring black and gray columns are Gal4 and UAS flies controls, respectively. N = 16\u201320 per genotype. (B) Overexpression of EcR by subglial Gal4 drivers\u20149-137 Gal4 to drive expression in the surface glia (SG), Moody-Gal4 for subperineurial glia (SPG), GMR85G01 for perineurial glia (PG), MZ008-Gal4 for ensheathing glia (EG), GMR77A03 for cortex glia (CG), and Eaat-1 for astrocyte-like glia (ALG). Only overexpression of EcR in the surface glia promotes sleep. N = 16\u201324 per genotype. (C) Representative sleep traces of the cortex glia GMR77A03>EcR RNAi #1 flies. (D) Gal4/Tubulin-gal80ts was used to achieve adult-specific knockdown of EcR in different subglial populations. Under permissive temperature, Gal80ts inhibits Gal4 activation of UAS, but under restrictive temperature, Gal80ts is inactivated, and genes under the regulation of UAS are expressed. (E, F) Sleep traces resulting from EcR knockdown in the cortex glia using NP2222-Gal4/tubulinGal80ts and surface glia using 9-137 Gal4/tubulinGal80ts. F1 progeny flies were kept at 18 degrees for 1 day, and then the temperature was switched to 31 degrees to inactivate the Gal80ts and thus achieve knockdown of EcR over the following 2 days. Subsequently, temperatures were decreased back to 18 degrees. (G, H) show quantification of total sleep of all EcR knockdown flies in the cortex glia using NP2222-Gal4/tubulinGal80ts and surface glia using 9-137 Gal4/tubulinGal80ts, N = 34\u201377 per genotype. Total sleep of each genotype was calculated and compared to controls for the above 4 days. Bar graphs show mean \u00b1 standard error of the mean (SEM), ns = not significant, p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. p values for each comparison were calculated by one-way analysis of variance (ANOVA) with Tukey post hoc test. See also Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Temperature-sensitive tubulin-Gal80ts were used to restrict the expression of Gal4 to adults. Sleep was monitored for 1 day at the permissive temperature of 18 degrees, then 2 days at the restrictive temperature of 31 degrees data, and then for another day at 18 degrees. EcR knockdown (RNAi) and overexpression (OE) were driven by: (A, B) a cortex glia driver (NP2222>EcR RNAi #1 and NP2222>EcR OE); (C, D) a surface glia driver (9-137>EcR RNAi #1 and 9-137>EcR OE). (E, F) An astrocyte-like glia driver (Eaat-1>EcR RNAi #1 and Eaat-1>EcR OE). (G, H) An ensheathing glia driver (MZ0709>EcR RNAi #1 and MZ0709>EcR OE). Bar graphs show mean + standard error of the mean (SEM); ns = not significant, p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. p values for each comparison were calculated by one-way analysis of variance (ANOVA) with the Tukey post hoc test. See also Figure 5\u2014source data 2.\n\nTo avoid issues of lethality and to distinguish between developmental and adult-specific roles, we used the TARGET system to repress Gal4 transcription in the developmental stage, after which the flies were transferred to a (restrictive) elevated temperature to degrade temperature-sensitive GAL80ts and allow expression of Gal4 (Figure 5D, McGuire et al., 2004). At the (permissive) low temperature, when TUB-GAL80ts blocks Gal4 expression, flies expressing EcR RNAi flies with the cortex glia driver NP2222 trended toward reduced sleep but sleep decreased significantly at the restrictive temperature when RNAi expression was activated to knock down EcR in cortex glia (Figure 5E, G). Knockdown of EcR with the 9-137 Gal4 driver, which targets all glia of the BBB, did not affect sleep (Figure 5F, H), and nor did knockdown of EcR in ensheathing or astrocyte glia (Figure 5\u2014figure supplement 1), suggesting that effects of EcR on sleep are restricted to specific glia, with cortex glia being the primary physiological site of action.\n\nWe also overexpressed EcR using the same set of subglia drivers and found that only flies expressing EcR with the 9-137 Gal4 driver had elevated sleep (Figure 5B). These flies were also resistant to sleep deprivation, indicating enhanced sleep need. Restricting overexpression to the adult stage with TubGal80 did not affect sleep, suggesting that the sleep-promoting effect observed in 9-137 Gal4 flies is developmental (Figure 5\u2014figure supplement 1D).\n\n### Ecdysone modulates sleep by mobilizing lipid droplets in glial cells\n\nThe cortex glia, especially the superficial cortex glial cells, are enriched in lipid droplets (LDs) in the third instar larval stage, and ecdysone signaling can mobilize these lipids when needed (Kis et al., 2015). To determine whether ecdysone in adult flies has a similar effect on lipids, we assayed LDs in glial cells of flies fed ecdysone. We measured LDs in the fly brain by BODIPY staining and found that LDs, which accumulate mostly in the cortex and ensheathing glia, were significantly smaller in flies fed ecdysone, relative to control groups, at Zeitgeber Time (ZT)12. At the same time, the total count was not affected (Figure 6A\u2013D). Given that ecdysone feeding mobilizes LDs, we speculated that glial EcR knockdown might cause flies to accumulate more lipids. We performed lipid staining, comparing vehicle controls and RU486-induced groups of Repo-GS>EcR RNAi flies (Figure 6\u2014figure supplement 1A\u2013D), and found that EcR knockdown in glial cells resulted in more LDs, RU treatment of UAS control flies had no effect, together suggesting that ecdysone signaling bidirectionally affects LDs in glial cells. Increased sleep with ecdysone feeding reduces LDs while reduced sleep with loss of ecdysone signaling increases LDs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig6-v2.jpg)\n\n**Figure 6.:** (A, B) Lipid droplet (LD) staining of representative brains from flies treated with vehicle or 0.5 mM 20E. A z-stack slice that shows the maximal structure of the cortex glia was selected, and brightness and contrast were auto-adjusted by ImageJ for better visualization. LDs are stained by the lipophilic dye BODIPY 493. (C, D) 0.5 mM 20E treatment does not significantly affect the total count of LDs but likely mobilizes lipids to lead to smaller LDs. LD count and size were analyzed and calculated using ImageJ as detailed in the Materials and methods. N = 16 per group from two independent repeats. Statistical comparisons used unpaired parametric Student\u2019s t-test. Bar graphs show mean \u00b1 standard error of the mean (SEM) and ns = not significant, p > 0.05, ****p < 0.0001. (E) A representative sleep trace of lsd2 mutant flies with vehicle control or 0.2 mM ecdysone. As previously reported, total sleep increases with 20E treatment in wCS,but the sleep-promoting effect of the 20E is lost in the lsd2 mutant flies, N = 16 per group from two separate experiments. Statistical comparisons used unpaired parametric Student\u2019s t-test. See also Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A, B) Lipid droplet (LD) staining of representative brains from UAS-EcR RNAi #1 control flies and Repo-GS>EcR RNAi #1 flies treated with vehicle or RU486. A z-stack slice that shows the maximal structure of the cortex glia was selected, and brightness and contrast were auto-adjusted by ImageJ for better visualization. LDs are stained by the lipophilic dye BODIPY 493. (C, D) Both LDs count and size are not significantly different between vehicle- and RU486-treated UAS-EcR RNAi #1 control flies, but LDs counts are significantly higher in the RU+Repo-GS>EcR RNAi #1 flies compared with RU\u2212 control group. N = 14\u201316 per group from two independent repeats. Statistical comparisons used unpaired parametric Student\u2019s t-test. Bar graphs show mean + standard error of the mean (SEM) and ns = not significant, p > 0.05, ****p < 0.0001. See also Figure 6\u2014source data 2.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** A representative sleep trace of lsd-2 mutant flies with vehicle control or 0.1 mg/ml gaboxadol is shown in the left panel and quantification of all data points are shown on the right. N = 37\u201338 per group from three separate experiments. Statistical comparisons used unpaired parametric Student\u2019s t-test. Bar graphs show mean + standard error of the mean (SEM) and ns = not significant, p > 0.05, ****p < 0.0001. See also Figure 6\u2014source data 3.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81723/elife-81723-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** This schematic shows how ecdysone acts as a long-distance signal to affect sleep in cortex glia. Ecdysone synthesis genes are not expressed in the fly brain, suggesting that glial ecdysone comes from the periphery. Glial knockdown of ecdysone receptor (EcR) and its downstream target E75 reduces sleep. Ecdysone promotes sleep by mobilizing lipid droplets stored mainly in glia, and knockdown of glial EcR results in more lipid droplets.\n\nWe next asked if this effect on lipids was relevant for sleep induction by ecdysone by measuring the ecdysone response of a lipid storage mutant (Kamoshida et al., 2012). The lipid storage droplet 2 (LSD2) protein modulates lipid accumulation and response to starvation, so lsd2 mutants are lean and sensitive to starvation (Thimgan et al., 2010). We found that ecdysone does not promote sleep in lsd2 mutants (Figure 6E). However, feeding lsd-2 mutant flies gaboxadol, a GABA agonist known to induce deep sleep, significantly increased sleep (Figure 6\u2014figure supplement 2), indicating that non-responsiveness to ecdysone was not due to an inability of lsd-2 flies to respond to sleep-promoting interventions. Lack of a sleep-promoting effect of ecdysone on lsd-2 mutants, together with bidirectional effects of ecdysone on LDs, indicate strongly that ecdysone affects sleep in large part by modulating LDs in glial cells, especially cortex glia (Figure 6\u2014figure supplement 3).\n\n## Discussion\n\nWhile sleep traditionally has been regarded as a neuronally driven behavior, glial cells can regulate sleep by affecting neuronal activity and possibly even mediate functions attributed to sleep, such as waste clearance, nutrient transfer, and repair (Cai et al., 2021; Donlea et al., 2014; Keene et al., 2010; Chi-Casta\u00f1eda and Ortega, 2016; Seidner et al., 2015; Singh and Donlea, 2020; Stanhope et al., 2020; Yildirim et al., 2019). We show here that glia are also a major target of steroid hormone signaling to regulate sleep. In addition, our data support an important role for lipid metabolism in controlling sleep.\n\nIn Drosophila, ecdysone is the major steroid hormone, and it plays an essential role in regulating metamorphosis and molting (Yamanaka et al., 2013). Ecdysone also affects the development of the nervous system and neuronal remodeling, processes that may involve glial function (Yu and Schuldiner, 2014). During development, ecdysone is synthesized from dietary cholesterol in the prothoracic gland and in other peripheral tissues that control molting and eclosion in larvae and pupae, but it declines during pupa-adult transitions and remains low in adults (Yamanaka et al., 2013; Kannangara et al., 2021). Nevertheless, it is implicated in adult functions such as memory formation and stress resistance (Ishimoto and Kitamoto, 2011). Ecdysone was also shown to affect sleep (Ishimoto and Kitamoto, 2011), raising questions of the mechanism by which it does so and the cells on which it acts in adults. Our finding that ecdysone regulates sleep through metabolic mechanisms in glia is consistent with other metabolic functions attributed to it; for instance, it controls developmental transitions in response to nutrient signals (Christensen et al., 2020; Lee et al., 2000; Uyehara and McKay, 2019; Xu et al., 2020; Yamanaka et al., 2013). Indeed, ecdysone may affect the whole-body lipid profile to modulate physiology and behavior (Sieber and Spradling, 2015).\n\nThe gonads, in particular the ovaries in females, are thought to be the major source of the ecdysone in adults (Ahmed et al., 2020). However, several other tissues also express ecdysone biosynthesis genes (Li et al., 2022), so multiple peripheral tissues could contribute to circulating ecdysone levels. Consistent with this notion, our efforts to observe sleep changes by disrupting the synthesis of ecdysone in any one of the following peripheral tissues\u2014gut, fat body, and ovary\u2014failed (data not shown). We speculate that knockdown of biosynthetic enzymes in any one peripheral tissue does not have a significant effect because ecdysone can still be derived from other tissues. Notably, knockdown in the brain did not have any effect either. Also, Halloween genes have very little to no expression in the fly brain based on fly brain single-cell sequencing (Davie et al., 2018), suggesting that ecdysone or 20E derives from the periphery to modulate sleep via glia.\n\nIn Drosophila, around 10\u201315% of cells in the brain are glial cells belonging to one of five distinct groups: cortex glia, astrocyte-like glia, ensheathing glia, perineurial, and subperineural glia (Edwards and Meinertzhagen, 2010; Yildirim et al., 2019). Perineurial and subperineural glia together serve as the BBB regulating permeability, controlled by the circadian system (Zhang et al., 2018). BBB glia also have a role in sleep, such that endocytosis in these cells increases during sleep and depends upon the prior duration of wakefulness (Artiushin et al., 2018). Astrocyte-like glia have a distinctive shape that allows remarkably close physical contact with synapses and is thought to be important for the clearance of neurotransmitters in the synaptic space (Freeman, 2015). In support of this, arylalkylamine N-acetyltransferase 1 (AANAT1), which acetylates and inactivates monoamines, acts in astrocytes to affect sleep (Davla et al., 2020). Also, calcium signaling in astrocytes appears to contribute to sleep need (Blum et al., 2021), and astrocytic GABA transporter maintains proper GABA tone in specific wake-promoting circadian neurons (Chaturvedi et al., 2022). Cortex glia cells encapsulate neuronal cell bodies and provide nutrients to neurons (Doherty et al., 2009). Cortex and ensheathing glia accumulate most LDs in the brain, and fatty acid-binding protein (Fabp), which promotes sleep, is expressed in both glial populations (Gerstner et al., 2011). In addition, ensheathing glia regulate both sleep and metabolic rate via the taurine transporter (Stahl et al., 2018). Thus, roles of cortex and ensheathing glia in sleep are likely linked to their function in metabolic, which includes nutrient transfer and balance between neurons and glia (Bittern et al., 2021). We note though that the effects of Amyloid precursor protein (App), which regulates the production and deposition of toxic amyloid peptides, on sleep are mediated by cortex glia (Farca Luna et al., 2017).\n\nWe show here that the ecdysone signaling pathway functions in adult cortex glia and neurons to affect circadian locomotor rhythms and sleep. The specific cellular targets through which ecdysone regulates sleep were previously not known. Additionally, while ecdysone can regulate circadian rhythms through neuronally expressed receptors (Kumar et al., 2014), we find that knockdown of glial EcRs results in more severe behavioral arrhythmicity than neuronal knockdown (Figure 2I\u2013K). As Drosophila astrocytes regulate circadian locomotor rhythms (Ng et al., 2011), they are attractive candidates for mediating the effects of ecdysone on rhythms. Our finding that EcR in specific subglial cells is also vital to the development of flies is surprising even though NHRs have well-documented roles in development. Ecdysone treatment upregulates the gene glial cell missing (gcm), while knockdown of EcR reduces the expression of gcm in vitro, suggesting that ecdysone influences the development and morphology of glial cells by regulating gcm, which determines the fate of the lateral glial cells (Wang et al., 2014). Thus, glia are an important target for biological actions of ecdysone on development and adult behavior.\n\nWe show that exogenous ecdysone mobilizes lipids accumulated in cortex glia to promote sleep, and glial EcR knockdown results in the accumulation of LDs. Since cortex glia cells surround and compartmentalize neuronal cell bodies, they may modulate neuronal activity by facilitating metabolite transfer to neurons. Aside from cortex glia, the only glial type to yield a phenotype with manipulations of ecdysone signaling is the surface glia. The sleep phenotype by EcR overexpression in surface glia may be non-physiological as a strong Gal4 line produces it, but it nevertheless suggests that the surface glia can support ecdysone signaling.\n\nOur finding that lipid metabolism is important for ecdysone-induced sleep fits with increasing evidence of interactions between sleep and lipids. Loss of sleep alters the lipid profile across species, including in human peripheral blood (Davies et al., 2014; Hinard et al., 2012; Weljie et al., 2015). Conversely, lipids have been shown to regulate sleep; for instance, the lsd2 mutant we used here, as well as a mutant lacking a lipase, affect rebound after sleep deprivation in Drosophila (Thimgan et al., 2010). Interestingly, specific lipids are also implicated as secreted sleep inducers (somnogens) that promote sleep following deprivation in mammals (Cravatt et al., 1995). Studies in worm also showed that sleep is associated with fat mobilization, and deficits in energy mobilization in sensory neuroendocrine cells cause sleep defects (Grubbs et al., 2020).\n\nHow ecdysone synthesis is regulated and how its function is integrated with innate and environmental changes needs further study. Juvenile hormone (JH), which works together with ecdysone during developmental stages, differentially affects sleep in male and female flies (Leinwand and Scott, 2021; Schwedes and Carney, 2012; Wu et al., 2018); it is reasonable to hypothesize that JH interacts with ecdysone in the context of sleep. The human ortholog of E75 is Reverb, which has broad effects on metabolism in peripheral tissues based on work in mice and humans, so the functions of EcR/E75 in peripheral tissues may also be linked to metabolism (Ding et al., 2021; Zhang et al., 2017). In addition, Reverb has high expression in mouse brain glial cells, where it could function to affect mouse sleep (Chi-Casta\u00f1eda and Ortega, 2017).\n\nIn summary, the endocrine system and the circuitry underlying circadian rhythms and sleep are intertwined during developmental stages (Aldabal and Bahammam, 2011; Gamble et al., 2014; Morgan and Tsai, 2015), and we now find that ecdysone acts through specific glial cells to affect circadian rhythms and sleep in adults. Similar effects of the ecdysone downstream target E75 and the ecdysone importer implicate canonical nuclear hormone signaling in sleep regulation. The mechanism involves LD mobilization, emphasizing the importance of glia and lipid metabolism in sleep regulation. Our findings are likely just the tip of the iceberg concerning endocrine regulation of sleep. We expect this to be a rich area of investigation in the future, as peripheral effects on brain function are increasingly recognized.\n\n## Materials and methods\n\nSee Appendix 1.\n\n### Contact for reagent and resource sharing\n\nFurther information and requests for resources and reagents should be directed to lead contact Amita Sehgal (amita@pennmedicine.upenn.edu).\n\n### Experimental model and subject details\n\n#### Fly stock and maintenance\n\nDrosophila stocks were obtained from our lab stock, Bloomington Drosophila stock center (BDSC), or the Vienna Drosophila Resource Center (VDRC). The white-CantonS (wCS) strain was used as wild-type unless specified. The genotype information of the flies used in each experiment is listed in the Key resource table. Strains used from the lab stocks include nSyb-GeneSwitch, Repo-GeneSwitch, all the subglial lines, and four subglial tubGal80ts lines. nSyb-GeneSwitch, Repo-GeneSwitch experiments were conducted with UAS-Dcr2 to promote RNAi efficiency. EcR RNAi lines are from the lab stock originally purchased from VDRC. The lsd-2 flies were gifts from Dr. Michael Welts lab, and EcI lines were gifts from Dr. Naoki Yamanaka lab.\n\n### Behavior measurement in Drosophila\n\nFlies were raised on cornmeal-molasses medium under 12:12 hr light:dark cycle at 25\u00b0C unless specified otherwise. Twelve female virgins and four male flies were usually crossed together to generate different flies of genotypes. Parental flies were cleared after seven days, and F1 progeny collected after 12 days. On day17, 5- to 7-day-old female flies were loaded into locomotor tubes for behavior tests as previously described (Davla et al., 2020). Locomotor tubes were 60-mm glass tubes, waxed and loaded with 2% agar containing 5% sucrose as fly food on one side, and yarn on the other side to restrain the behavior of flies inside the glass tubes. For GeneSwitch experiments, 0.5 mM RU-486 (mifepristone) was added to the fly food to activate the GeneSwitch. Three constitutive days\u2019 data were used for sleep analysis by Pysolo (https://www.pysolo.net/) (Gilestro and Cirelli, 2009), and seven constitutive days\u2019 data under constant dark were used for circadian rhythm analysis by ClockLab (https://actimetrics.com/products/clocklab/).\n\nFor starvation assay, starvation tubes were made with only 2% agarose as fly food. Five- to seven-day-old flies were first loaded into normal locomotor tubes for days 0 and 1, then they were transferred to starvation tubes between ZT23 and ZT0 on day 2. Flies were monitored for sleep in starvation tubes for 1 or 2 days and then transferred back to normal tubes at ZT23\u2013ZT0. Post-starvation sleep was measured for 1 day.\n\n### Ecdysone treatment, immunohistochemistry, and imaging\n\nEcdysone was purchased in powder form and was dissolved in ethanol. Then it was mixed with 2% agarose containing 5% sucrose to make the different doses of ecdysone tubes, and the same amount of ethanol as in the ecdysone solution was used to make the vehicle control tubes. Only 2% agarose and ecdysone were used to make ecdysone starvation tubes. Five- to seven-day-old flies were loaded into locomotor tubes for ecdysone treatment and behavior recording to verify that ecdysone promotes sleep in ecdysone-treated flies. For ecdysone feeding/starvation assay, all flies were kept in normal tube on days 0, 1, and 2. Flies were then transferred to either starvation tubes, or ecdysone starvation tubes between ZT23 and ZT0 on day 2. Flies were kept in these ecdysone/starvation tubes for 1 day and transferred back to normal tubes again between ZT23 and ZT0 on day 3 and recorded for another day. Data from days 2 to 4 were used for sleep analysis. For gaboxadol hydrochloride treatment, it was dissolved in water and diluted to 0.1 mg/ml as final concentration for locomotor tube experiments. Sleep was measurement from days 2 to 4, after flies were loaded into gaboxadol tubes at day 0. For TARGET system experiments, flies were raised at permissive temperature 18\u00b0C, and 5- to 7-day-old adult flies were used to loaded and were kept at 18\u00b0C from days 0 to 2, 31\u00b0C from days 3 to 4, and 18\u00b0C for day 5. Data from days 2 to 5 were collected for sleep analysis.\n\nBODIPY493 was used for brain LD staining. Flies were loaded into locomotor tubes and subjected to 0.5 mM ecdysone treatment for 12 or 36 hr. Both control and ecdysone-treated flies were then dissected in the phosphate-buffered saline (PBS), fixed in 4% Paraformaldehyde (PFA) solution for 20 min, and washed three times with PBS + 0.3% Triton (PBT). Then brains were left in PBT at 4 degrees overnight and transferred to 1 \u00b5g/ml BODIPY493 in PBT for 20 min. Later they were mounted for imaging.\n\nBrains were imaged with the oil-immersion \u00d740 lens of a confocal microscope at a resolution of 1024 \u00d7 1024. Raw images were processed with FIJI ImageJ. The first step was to remove non-lipid trash and exclude artificial signals or signals outside the brain area. The second step was to quantify the LD count, area, and total brain tissue area. Later, the LDs count will be normalized by the brain tissue area, and LD size calculated by LD area divided by total count. Quantifications were conducted by using ImageJ Macro.\n\n### Ecdysone assay and real-time PCR\n\n20E measurement was performed with the 20-hydroxyecdysone EIA kit (Cayman, item No. 501390). 5\u201310 fly bodies or 10\u201315 brains were dissected and homogenized in 70% methanol. The homogenates were then dried by the evaporator, redissolved in the kit\u2019s buffer, and measured based on the manufacturer\u2019s protocol. Adult fly brains (usually 10) or fly bodies (usually 5) were subjected to RNeasy Plus Mini Kit for RNA extraction, followed by cDNA reverse transcription using random hexamers and Superscript II (Invitrogen) to generate cDNA. The cDNA was then amplified using SYBR Green PCR mix (Cat# 4364346) and oligonucleotides listed in the Key resource table with the Applied Biosystems ViiA7 qPCR machine. Relative transcript levels were calculated by ddCT.\n\n### Statistical analysis\n\nGraphPad Prism was used for all statistical tests. Data were tested for normality using the D\u2019Agostino\u2013Pearson test and Shapiro\u2013Wilk test. Normally distributed data were then tested with an unpaired parametric Student\u2019s t-test for two independent groups and a one-way analysis of variance with Tukey post hoc test for multiple independent groups. Non-normally distributed data, such as sleep bout numbers, which are usually non-normally distributed, were analyzed with a nonparametric test like the Mann\u2013Whitney test for two samples and the Kruskal\u2013Wallis test with Dunn\u2019s multiple comparisons test for three samples or above. Statistic tests used for each experiment are indicated in the figure legends, and data are presented as means and standard error of the mean.\n",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ff6f945a-b1bc-4bc3-82ab-adc274c4c225",
+      "submission_id": "0d851558-ccd8-4dbe-b966-fcd033b0c617",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81723.sa0](https://doi.org/10.7554/eLife.81723.sa0)\n\nThis is a strong manuscript that identified a role for ecdysone signaling and cortex glia in sleep regulation. The manuscript is important because it opens up new avenues of study for examining how hormone signaling and glia regulate sleep and circadian rhythms.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81723.sa1](https://doi.org/10.7554/eLife.81723.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Ecdysone acts through cortex glia to regulate sleep in Drosophila\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Mani Ramaswami as Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Alex C Keene (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please provide the necessary details requested regarding background controls and how they may influence conclusions reached. The specific issues pertaining to the RepoGS driver be addressed better by additional experiments using repo-GAL4 combined with GAL80ts, which would provide independent confirmation of the conclusions reached, which would be useful given concerns with the background strains.\n\n2) The effect of Ecdysone perturbations should be shown separately for starved flies and fed flies for reasons explained in Reviewer 2's comment 2.\n\n3) Please make necessary clarifications in the Methods section pertaining to point 2 above.\n\n4) There is. concern that evidence for \"mobilization of lipid droplets being the mechanism linking steroid signaling to sleep\" is currently quite weak. Additional experiments to strengthen this connection would be valuable, but if these cannot be done, then please qualify the conclusions and modify the discussion to acknowledge the remaining ambiguities in the mechanism by which ecdysone affects sleep.\n\nReviewer #1 (Recommendations for the authors):\n\nI have described a number of concerns, primarily related to interpretations.\n\n1. For the targeted screen in Figure 1, it is surprising that almost all of the genes result in reduced sleep. Is there concern that this may result from background differences? If not, it would seem to deserve additional commentary that all NHRs impact sleep in both neurons and glia.\n\n2. Again, for Figure 1, I very much appreciate the data presentation because it allows all data to be depicted on simple graphs. I do think it would be beneficial to include a Supplemental Figure depicting data with the mean and variance (rather than the differences compared to controls).\n\n3. Line 136: The statement 'perhaps because EcI is one of the most highly expressed genes in glia and may be insufficiently knocked down by RNAi' is very speculative. Suggest directly testing this, or removing the statement. It could also be moved to the discussion.\n\n4. Line 146 states EcR functions specifically in glia to regulate circadian rhythms, but the data also suggest a role in neurons. Suggest changing to 'is required in glia.'\n\n5. Why is the number of arrhythmic flies so high in the repo-GS control?\n\n6. Suggest changing 2I to %, rather than N to allow direct comparisons between groups.\n\n7. I cannot see the blue and green experimental data points in figures 3B and 3C.\n\n8. Is the conclusion from 3E that ecdysone is specifically involved in sleep during starvation, or that glial ecdysone promotes sleep, and the observed sleep loss is cumulative but separate from starvation?\n\n9. Is it possible to change the contract of Figure 5A?\n\n10. Line 282: Since EcR has an effect on neurons, I have some concerns about the interpretations that 'ecdysone affects sleep in LDs \u2026especially in cortex glia'.\n",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8582562b-261b-4d10-8937-8c38656eda40",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C1",
+      "claim": "Steroid hormones are lipid-soluble molecules derived from dietary cholesterol that easily penetrate the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These lipid-soluble molecules derived from dietary cholesterol easily penetrate the brain and act through nuclear hormone receptors (NHRs) that function as transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about steroid hormone properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "e578be58-d55d-4e77-a8c1-39fe92ce7113",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C2",
+      "claim": "The ecdysone receptor (EcR) and Eip75B (E75) act in glia to regulate the rhythm and amount of sleep in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "we knocked down each of the 18 highly conserved NHRs found in Drosophila adults and report that the ecdysone receptor (EcR) and its direct downstream NHR Eip75B (E75) act in glia to regulate the rhythm and amount of sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the systematic knockdown screen described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "706242af-e445-4958-b45a-6fdd88fdca49",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C3",
+      "claim": "Ecdysone synthesis genes have little to no expression in the fly brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ecdysone synthesis genes have little to no expression in the fly brain, ecdysone appears to act as a long-distance signal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to single-cell sequencing data mentioned in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "61aa6e36-36bc-44af-88f5-4898cd463f38",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C4",
+      "claim": "Ecdysone enters the brain more at night.",
+      "claim_type": "EXPLICIT",
+      "source": "ecdysone appears to act as a long-distance signal and our data suggest that it enters the brain more at night.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing differential E75 response to ecdysone injection at different times.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "8cf6375a-4805-4d72-a7c8-14c6e2f9d79c",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C5",
+      "claim": "EcR localizes to cortex glia in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-EcR staining localizes to the cortex glia in the brain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "3a5b6c81-621a-4116-ae79-f1d66026473e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C6",
+      "claim": "EcR functions in adult cortex glia to affect sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "functional screening of glial subtypes revealed that EcR functions in adult cortex glia to affect sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic manipulation experiments using subglial drivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "02f47874-4597-47c1-8c5e-0a5b0c2f83a4",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C7",
+      "claim": "Cortex glia are implicated in lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortex glia are implicated in lipid metabolism, which appears to be relevant for actions of ecdysone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature and the experimental findings in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "8bb75e24-414b-485d-9fcb-4804196b25c2",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C8",
+      "claim": "Ecdysone treatment mobilizes lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "ecdysone treatment mobilizes lipid droplets (LDs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by BODIPY staining experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "cfe52faa-a56b-4137-a388-94ddbff1d5e5",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C9",
+      "claim": "Knockdown of glial EcR results in more lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "knockdown of glial EcR results in more LDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by BODIPY staining in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "e89c0d36-e38e-4943-a291-61faef5f39a5",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C10",
+      "claim": "Sleep-promoting effects of exogenous ecdysone are diminished in lsd-2 mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "sleep-promoting effects of exogenous ecdysone are diminished in lsd-2 mutant flies, which are lean and deficient in lipid accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by behavioral experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "df56c518-4aaa-472d-855e-76406bbb0b79",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C11",
+      "claim": "Ecdysone is a systemic secreted factor that modulates sleep by stimulating lipid metabolism in cortex glia.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that ecdysone is a systemic secreted factor that modulates sleep by stimulating lipid metabolism in cortex glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion synthesized from multiple experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "1688650e-952b-431c-8cc9-f750e202479e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C12",
+      "claim": "Sleep is broadly conserved in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep is a resting state that alternates with awake and is broadly conserved in animals (Anafi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Anafi et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "03fcf2d2-a632-4211-95d7-5b50954978bd",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C13",
+      "claim": "Loss of sleep has systemic effects and is associated with molecular changes in the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of sleep has systemic effects and is associated with molecular changes in the periphery (Anafi et al., 2013; Chua et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Anafi et al., 2013 and Chua et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "3da89462-3771-4b4f-9ae1-ad9d3f2b239b",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C14",
+      "claim": "Circulating steroid hormones are lipophilic and can easily enter the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that circulating steroid hormones are lipophilic and can easily enter the brain, together with the broad expression of NHRs in the central nervous system, it is reasonable to infer that NHR signaling is a significant contributor to brain function (Yang et al., 2007; King-Jones and Thummel, 2005; Kininis and Kraus, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yang et al., 2007; King-Jones and Thummel, 2005; Kininis and Kraus, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5680770f-4382-4b02-af1f-376180c36d1a",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C15",
+      "claim": "Nearly half of known NHRs are highly expressed in adult fly brain both neurons and glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Based upon single-cell RNAseq data showing that nearly half of known NHRs are highly expressed in adult fly brain both neurons and glia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single-cell RNAseq data cited from Davie et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "15163aa6-ed96-4399-a584-5f3bb0297441",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C16",
+      "claim": "Knockdown of most NHRs in neurons and glial cells reduced adult sleep compared with controls.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that knockdown of most NHRs in neurons and glial cells reduced adult sleep by varying levels compared with their GS controls and UAS controls, suggesting that the endocrine system in general plays a positive role in sleep regulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B,C from the systematic screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "0dc585da-c1ad-426d-b024-c98cd7a6575d",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C17",
+      "claim": "Knockdown of EcR and E75 had the greatest effects on total sleep among all NHRs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, knockdown of EcR, the receptor of the primary steroid hormone ecdysone, and its direct downstream targeting gene Eip75B (E75) had the greatest effects on total sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is evident from the screening data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "fb306b51-f31f-4325-91a4-9cdccfb9b616",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C18",
+      "claim": "EcR and E75 knockdown affect primarily nighttime sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, EcR and E75 knockdown affect primarily nighttime sleep and phenotypes are stronger when they are knocked down in glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the sleep analysis data in Figure 1 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "e626f4e4-b608-4e91-b6b7-000643a4a00b",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C19",
+      "claim": "Flies with glial knockdown of EcR slept on average ~460 min, much less than those with neuronal knockdown that slept ~707 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Across multiple experiments, we found that flies with glial knockdown of EcR slept on average ~460 min, much less than those with neuronal knockdown that slept ~707 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from multiple experiments shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "fa427e90-d032-42ad-9ed1-0ad9bd3f6857",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C20",
+      "claim": "The total sleep amount of nSyb-GS>EcR RNAi flies was not significantly reduced compared with nSyb-GS control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the total sleep amount of nSyb-GS>EcR RNAi flies was not significantly reduced compared with nSyb-GS control flies, suggesting that glial EcR has a larger role in determining sleep amount",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "c6c836f1-a1b5-4ce8-bff6-3894a5741cce",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C21",
+      "claim": "Knockdown of E75 in either neurons or glia led to severe sleep loss, with ~419 and ~461 min of daily sleep, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of E75 in either neurons or glia led to severe sleep loss, with ~419 and ~461 min of daily sleep, respectively (Figure 2\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "2a44d65f-4b4b-4004-8293-16434650ffc7",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C22",
+      "claim": "Ecdysone directly or indirectly affects multiple NHRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ecdysone is the most common steroid hormone in Drosophila, it directly or indirectly affects multiple NHRs (King-Jones and Thummel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to King-Jones and Thummel, 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "4952c275-d7ad-42f2-a4e4-2711d618bcc7",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C23",
+      "claim": "Knockdown of ecdysone responsive NHRs reduced sleep more than knockdown of non-ecdysone responsive NHRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that knockdown of ecdysone responsive NHRs reduced sleep more than knockdown of non-ecdysone responsive NHRs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the screening data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "a9c4cafb-7e5d-4caa-915d-37d740fe049e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C24",
+      "claim": "Two out of three top hits with neuronal knockdown and five out of seven top hits with glial knockdown are ecdysone relevant NHRs.",
+      "claim_type": "EXPLICIT",
+      "source": "If we use 200-min sleep loss compared with both control groups as a cutoff, then two out of three top hits with neuronal knockdown and five out of seven top hits with glial knockdown are ecdysone relevant NHRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of the screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "de5497a0-f183-4390-9c6e-1cf9a88fdd64",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C25",
+      "claim": "Genes showing the most dramatic sleep loss when knocked down in glia were EcR, E75, Ftz-f1, and Hr3, all directly relevant to the ecdysone signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes showing the most dramatic sleep loss when knocked down in glia were EcR, E75, Ftz-f1, and Hr3, all directly relevant to the ecdysone signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the screening results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "a3608afa-ed91-491f-80c6-eec4f831c415",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C26",
+      "claim": "Neuronal, but not glial, knockdown of Hr51 (unfulfilled) resulted in an arrhythmic phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neuronal, but not glial, knockdown of Hr51 (unfulfilled), previously shown to exert circadian effects by acting in central clock neurons (Beuchle et al., 2012), resulted in an arrhythmic phenotype, with no sleep amount change under 12:12 hr light:dark conditions (Figure 2\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2A\u2013D and supported by citation to Beuchle et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "3ce40726-14df-451b-ae75-2ff9faf88ba3",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C27",
+      "claim": "Neuronal or glial-specific knockdown of EcR or E75 reduces sleep amount by fragmenting sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep architecture analysis showed that neuronal or glial-specific knockdown of EcR or E75 reduces sleep amount by fragmenting sleep, with larger effects seen with the glial-specific knockdown (Figure 2E\u2013H, Figure 2\u2014figure supplement 1E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2E\u2013H and Figure 2\u2014figure supplement 1E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "99253511-6b30-4c6f-b004-f1803a4ed1cf",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C28",
+      "claim": "Glial EcR and E75 knockdown flies had shorter average sleep bout lengths during the day and night and more sleep bouts at night.",
+      "claim_type": "EXPLICIT",
+      "source": "Glial EcR and E75 knockdown flies had shorter average sleep bout lengths during the day and night and more sleep bouts at night, indicating that their sleep is fragmented (Figure 2F, H and Figure 2\u2014figure supplement 1F, H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2F, H and Figure 2\u2014figure supplement 1F, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "49052fa6-34b8-4865-9c02-5a2b3c78ba35",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C29",
+      "claim": "Adult-specific knockdown of EcR is sufficient to reduce sleep in both neuronal and glial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of RU486-treated flies with vehicle-treated controls confirmed that adult-specific knockdown of EcR is sufficient to reduce sleep in both neuronal and glial populations (Figure 2\u2014figure supplement 2E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2E\u2013H using the GeneSwitch system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "456061ec-6433-4f6e-9c00-e9ced825f246",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C30",
+      "claim": "Repo-Gal4; TubGal80ts>EcR RNAi #1 flies sleep a similar amount at permissive temperature (18 degrees) as control flies, but their sleep is significantly less at restricted temperature (31 degrees).",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that Repo-Gal4; TubGal80ts>EcR RNAi #1 flies sleep a similar amount at permissive temperature (18 degrees) as control flies, but their sleep is significantly less at restricted temperature (31 degrees), confirming that EcR acts in adult glia to regulate daily sleep (Figure 2\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 3A,B using the TARGET system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "b6a6564b-45f7-4336-863c-f1849e9637b9",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C31",
+      "claim": "Three other EcR RNAi lines tested with Repo-GS all produced reduced sleep phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "we also tested three other EcR RNAi lines with Repo-GS, all of which produced reduced sleep phenotypes, further confirming that EcR RNAi knockdown in glial cells reduces sleep (Figure 2\u2014figure supplement 3C\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 3C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5bc78efe-9d5f-4670-b1c8-a2c5b4b42c39",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C32",
+      "claim": "Glial knockdown of EcI reduced overall sleep levels and led to more fragmented sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "As with EcR, glial knockdown of EcI reduced overall sleep levels and led to more fragmented sleep (Figure 2\u2014figure supplement 4A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5955f47f-29cf-45eb-9194-8211114ddbbb",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C33",
+      "claim": "In constant darkness, half of the nSyb-GS EcR knockdown flies and 90% of Repo-GS EcR knockdown flies became arrhythmic.",
+      "claim_type": "EXPLICIT",
+      "source": "In DD, half of the nSyb-GS EcR knockdown flies and 90% of Repo-GS EcR knockdown flies became arrhythmic, but the remaining rhythmic flies showed no difference from controls in their period or FFT (Fast Fourier Transform) values that are a measure of rhythm strength (Figure 2I\u2013K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2I\u2013K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "0cd4ef5d-fff3-42fd-945b-448a2029e96e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C34",
+      "claim": "EcR functions are required in glia to promote circadian locomotor rhythms and sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that EcR functions are required in glia to promote circadian locomotor rhythms and sleep is novel and consistent with previous work showing that E75 or EcR knockdown in central clock cells causes some locomotor arrhythmicity, but more dramatic phenotypes result from knockdown with drivers such as tim27-Gal4 that additionally express in glia (Kumar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data and citation to Kumar et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "a4a09f77-7a04-4922-9def-264b6126df83",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C35",
+      "claim": "Overexpression of EcR in neurons and glia had no effect on total sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we overexpressed EcR and found that, in contrast to our knockdown experiments, overexpression in neurons and glia had no effect on total sleep",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "165f7a3f-662c-4d1b-b8e4-5a2518e1d01a",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C36",
+      "claim": "Repo-GS>EcR_c flies showed a consistent phase shift at dusk.",
+      "claim_type": "EXPLICIT",
+      "source": "overexpression in neurons and glia had no effect on total sleep, but Repo-GS>EcR_c flies showed a consistent phase shift at dusk (Figure 2\u2014figure supplement 4E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "abfc173a-6815-42e8-87c5-e8a99dff029d",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C37",
+      "claim": "Effects of EcR on sleep and rhythms are largely through glia, and not neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, effects of EcR on sleep and rhythms are largely through glia, and not neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparative effects of neuronal vs. glial manipulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "4e7c98e5-1057-4df1-91df-e89e9a4f9a67",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C38",
+      "claim": "Starvation raises ecdysone levels in female flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation is an example of a stressor that raises ecdysone levels in female flies (Terashima et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Terashima et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "cd52a4ee-a259-451b-b033-1fe692285fbb",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C39",
+      "claim": "Feeding of exogenous 20E promotes sleep in fed wild-type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by Ishimoto and Kitamoto, 2010 , we also found that feeding of the exogenous bioactive form of ecdysone, 20E, promotes sleep in fed wild-type flies (Figure 3 A, E)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A, E and supported by citation to Ishimoto and Kitamoto, 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "63dc7f6a-d61b-4b87-9f2f-6873e019faad",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C40",
+      "claim": "Exogenous ecdysone abrogated sleep loss caused by starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenous ecdysone abrogated sleep loss caused by starvation, indicating that EcRs are functional in sleep-relevant cells under these conditions (Figure 3B, E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "d92bb904-5df6-4d86-9f72-c94c93cf3a05",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C41",
+      "claim": "mRNA levels of ecdysone responsive genes\u2014EcR, EcI, E75, and E74\u2014in the fly brain are not altered after 1 day of starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we found that mRNA levels of ecdysone responsive genes\u2014EcR, EcI, E75, and E74\u2014in the fly brain are not altered after 1 day of starvation (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "63dd09dc-5831-438c-82ed-775ffe5c2c47",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C42",
+      "claim": "Starved flies fed 20E showed rebound sleep when they were returned to food.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, starved flies fed 20E showed rebound sleep when they were returned to food, even though these flies did not lose sleep during starvation, indicating that 20E does not rescue the need for sleep that builds up during starvation (Regalado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the experimental data and supported by citation to Regalado et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ffa68e72-25e0-4d6d-8fb1-469d42922ab7",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C43",
+      "claim": "Sleep increased following 20E administration in nSyb-GS>EcR RNAi flies, but not Repo-GS>EcR RNAi flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep increased following 20E administration in nSyb-GS>EcR RNAi flies, but not Repo-GS>EcR RNAi flies (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5588b208-732d-4f68-9ef3-0b96a357b559",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C44",
+      "claim": "Neuronal ecdysone signaling appears to be dispensable for sleep-promoting effects of exogenous ecdysone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neuronal ecdysone signaling appears to be dispensable for this purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that neuronal EcR knockdown does not block 20E effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "d2e1f397-58a7-45d4-b6b4-1fa43a4acd90",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C45",
+      "claim": "Robust sleep loss was seen with starvation when EcR was knockdown in glia even though baseline sleep is already quite low in these flies.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, robust sleep loss was seen with starvation when EcR was knockdown in glia even though baseline sleep is already quite low in these flies (Figure 3D, E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "c1b51577-f0c2-4ab7-b4ac-bddf2b61cbe4",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C46",
+      "claim": "Starvation and ecdysone signaling in glia independently regulate sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that starvation and ecdysone signaling in glia independently regulate sleep and a large part of sleep remaining in starved flies derives from ecdysone signaling in glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the additive effects of starvation and EcR knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "eed2272b-c1d1-48b4-ae3d-c1b015e0a788",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C47",
+      "claim": "Sleep induced by heat shock was not affected by EcR knockdown in neurons or glia.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the response to a stressor that increases sleep, heat shock, and found that sleep induced by heat shock was not affected by EcR knockdown in neurons or glia (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "1c88d039-5555-4860-9552-bd913f1e612b",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C48",
+      "claim": "20E level is significantly higher at ZT14 than ZT2 in the fly periphery but not in the fly brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ELISA analysis indicated that 20E level is significantly higher at ZT14 than ZT2 in the fly periphery but not in the fly brain (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2A using ELISA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "fad702ba-ba99-4fb5-a0ed-07fd53620335",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C49",
+      "claim": "mRNA levels of ecdysone responsive E75 isoforms cycle with a peak at ZT12 in the fly head.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of circadian regulation of ecdysone signaling, mRNA levels of ecdysone responsive E75 isoforms cycle with a peak at ZT12 in the fly head, suggesting that ecdysone acts rhythmically in the fly brain (Figure 3\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2B by qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5d536c30-c1e7-41e3-91d7-7c1a8f8bcfdd",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C50",
+      "claim": "E75 isoforms do not peak at ZT12 in the fly periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that E75 isoforms do not peak at ZT12 in the fly periphery, we suggest that elevated ecdysone at this time enters the brain instead of acting on peripheral tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "6d0f6c15-46c1-4f24-be85-1da530b8cdf1",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C51",
+      "claim": "The mRNA levels of both E75A and E75B increased more at ZT18, compared to ZT6, after 20E injection.",
+      "claim_type": "EXPLICIT",
+      "source": "We normalized the change in E75 expression in the brain to the change in the body to account for inconsistency of injection and found that the mRNA levels of both E75A and E75B increased more at ZT18, compared to ZT6, after 20E injection, E75A increased 1.67-fold at ZT6, and 3.91 at ZT18, while E75B increased 17-fold at ZT6, and 51.92-fold at ZT18 (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "6f159d1a-9106-42cf-9f99-392967f5ccd7",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C52",
+      "claim": "Peripheral ecdysone has higher action in the brain at night.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that peripheral ecdysone has higher action in the brain at night.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential E75 response to 20E injection at different times.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "0f330564-e1ea-4be7-af14-60fa1babd6ac",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C53",
+      "claim": "EcR is broadly expressed in the adult fly brain, but largely in the cortex glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, antibody staining in the adult fly brain showed that EcR is broadly expressed, but largely in the cortex glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by immunohistochemistry in Figure 4A,B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "cbaabe01-756f-4886-8a55-9b378fcc64ec",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C54",
+      "claim": "EcR antibody staining was greatly diminished when EcR was knocked down in glia with Repo-GS.",
+      "claim_type": "EXPLICIT",
+      "source": "When EcR was knocked down in glia with Repo-GS, EcR antibody staining was greatly diminished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "1ee8f599-da52-42c6-ae1e-671366b29c6c",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C55",
+      "claim": "EcR expression signals were preserved when EcR was knocked down in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, signals were preserved when EcR was knocked down in neurons, leading us to infer that glia, in particular cortex glia, are the major site of expression (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "342b043d-7962-4791-81f0-0ebf200b38f5",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C56",
+      "claim": "EcR expression was also detected in surface glia of the blood\u2013brain barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not evident in these images, EcR expression was also detected in surface glia of the blood\u2013brain barrier (BBB) (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned but data not shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "7f5db291-a2bd-4a6e-8601-878cac556c1f",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C57",
+      "claim": "EcR knockdown with most subglial Gal4 lines caused failure of eclosion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, EcR knockdown with most of these Gal4 lines caused failure of eclosion, indicating the importance of EcR in glial cells during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the genetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "e386052d-3a0b-4293-a1f3-f5b221e00f0e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C58",
+      "claim": "Three Gal4 lines produced viable adult flies: GMR77A03 (cortex glia), Eaat-1 (astrocyte-like glia), and GMR56F03 (ensheathing glia).",
+      "claim_type": "EXPLICIT",
+      "source": "Three Gal4 lines produced viable adult flies: one cortex glia-specific driver GMR77A03, one astrocyte-like glia-specific driver Eaat-1, and one ensheathing glia-specific driver GMR56F03.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ba703e09-1707-4323-b25c-f4e581457e90",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C59",
+      "claim": "Sleep was only reduced when EcR was knocked down using the cortex glia-specific driver GMR77A03.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these three Gal4 lines, sleep was only reduced when EcR was knocked down using the cortex glia-specific driver (Figure 5A, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5A, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "6cb4c87b-55d3-40d2-a2f6-bdb9963711bb",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C60",
+      "claim": "Sleep decreased significantly at the restrictive temperature when RNAi expression was activated to knock down EcR in cortex glia using NP2222-Gal4/tubulinGal80ts.",
+      "claim_type": "EXPLICIT",
+      "source": "At the (permissive) low temperature, when TUB-GAL80ts blocks Gal4 expression, flies expressing EcR RNAi flies with the cortex glia driver NP2222 trended toward reduced sleep but sleep decreased significantly at the restrictive temperature when RNAi expression was activated to knock down EcR in cortex glia (Figure 5E, G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5E, G using the TARGET system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "2897d15e-2fc4-4529-bacc-1873e4de3bd2",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C61",
+      "claim": "Knockdown of EcR with the 9-137 Gal4 driver, which targets all glia of the BBB, did not affect sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of EcR with the 9-137 Gal4 driver, which targets all glia of the BBB, did not affect sleep (Figure 5F, H)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5F, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5ac4ffc8-e4ad-4499-abd2-f6454155a661",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C62",
+      "claim": "Knockdown of EcR in ensheathing or astrocyte glia did not affect sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "and nor did knockdown of EcR in ensheathing or astrocyte glia (Figure 5\u2014figure supplement 1), suggesting that effects of EcR on sleep are restricted to specific glia, with cortex glia being the primary physiological site of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "fd41796f-973a-4f3a-81d7-db72ff94cf56",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C63",
+      "claim": "Only flies expressing EcR with the 9-137 Gal4 driver had elevated sleep when EcR was overexpressed using subglia drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "We also overexpressed EcR using the same set of subglia drivers and found that only flies expressing EcR with the 9-137 Gal4 driver had elevated sleep (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ae93770a-193c-4a3a-bb2a-3b0e5e8a64f3",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C64",
+      "claim": "Flies overexpressing EcR with 9-137 Gal4 were resistant to sleep deprivation, indicating enhanced sleep need.",
+      "claim_type": "EXPLICIT",
+      "source": "These flies were also resistant to sleep deprivation, indicating enhanced sleep need.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned in the results but specific data not shown in main figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "32b62f43-bd74-4a7c-9415-87f4ce2f50c8",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C65",
+      "claim": "Restricting EcR overexpression to the adult stage with TubGal80 did not affect sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Restricting overexpression to the adult stage with TubGal80 did not affect sleep, suggesting that the sleep-promoting effect observed in 9-137 Gal4 flies is developmental (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ac7e744e-06ae-4635-88cf-d33b56afd235",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C66",
+      "claim": "The cortex glia, especially the superficial cortex glial cells, are enriched in lipid droplets in the third instar larval stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortex glia, especially the superficial cortex glial cells, are enriched in lipid droplets (LDs) in the third instar larval stage, and ecdysone signaling can mobilize these lipids when needed (Kis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kis et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "c41d3db7-c1c3-45ec-9208-a8ce13374b78",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C67",
+      "claim": "LDs accumulate mostly in the cortex and ensheathing glia.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured LDs in the fly brain by BODIPY staining and found that LDs, which accumulate mostly in the cortex and ensheathing glia, were significantly smaller in flies fed ecdysone, relative to control groups, at Zeitgeber Time (ZT)12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "b7a87435-ae2b-40e7-99b6-1c50715b6fd1",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C68",
+      "claim": "LDs were significantly smaller in flies fed ecdysone at ZT12, while the total count was not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured LDs in the fly brain by BODIPY staining and found that LDs, which accumulate mostly in the cortex and ensheathing glia, were significantly smaller in flies fed ecdysone, relative to control groups, at Zeitgeber Time (ZT)12. At the same time, the total count was not affected (Figure 6A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "15581bad-cd34-4b3a-8940-182008157334",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C69",
+      "claim": "EcR knockdown in glial cells resulted in more LDs.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed lipid staining, comparing vehicle controls and RU486-induced groups of Repo-GS>EcR RNAi flies (Figure 6\u2014figure supplement 1A\u2013D), and found that EcR knockdown in glial cells resulted in more LDs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "71983fd8-2afa-43c4-a20c-dbc153f1868c",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C70",
+      "claim": "Ecdysone signaling bidirectionally affects LDs in glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RU treatment of UAS control flies had no effect, together suggesting that ecdysone signaling bidirectionally affects LDs in glial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the opposite effects of ecdysone feeding and EcR knockdown on LDs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "1f5d86c4-c9b5-427e-94a8-3144d7de98e7",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C71",
+      "claim": "Ecdysone does not promote sleep in lsd2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ecdysone does not promote sleep in lsd2 mutants (Figure 6E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "f5137e8e-2c9f-496f-be9e-d7ddb403f293",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C72",
+      "claim": "Feeding lsd-2 mutant flies gaboxadol, a GABA agonist, significantly increased sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "However, feeding lsd-2 mutant flies gaboxadol, a GABA agonist known to induce deep sleep, significantly increased sleep (Figure 6\u2014figure supplement 2), indicating that non-responsiveness to ecdysone was not due to an inability of lsd-2 flies to respond to sleep-promoting interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "bde619d1-d6a3-445d-8299-e6e946e13faf",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C73",
+      "claim": "Ecdysone affects sleep in large part by modulating LDs in glial cells, especially cortex glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Lack of a sleep-promoting effect of ecdysone on lsd-2 mutants, together with bidirectional effects of ecdysone on LDs, indicate strongly that ecdysone affects sleep in large part by modulating LDs in glial cells, especially cortex glia (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple lines of evidence including lsd-2 mutant response and LD measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "497e74d7-839b-418c-b904-06b98116ff44",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C74",
+      "claim": "Glia are a major target of steroid hormone signaling to regulate sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that glia are also a major target of steroid hormone signaling to regulate sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "a6deda6b-b4a4-4b7e-a657-38aa9d8f63a4",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C75",
+      "claim": "Ecdysone is the major steroid hormone in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, ecdysone is the major steroid hormone, and it plays an essential role in regulating metamorphosis and molting (Yamanaka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yamanaka et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "24cd8b0c-7349-4099-86c9-738265d8588f",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C76",
+      "claim": "Ecdysone affects the development of the nervous system and neuronal remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecdysone also affects the development of the nervous system and neuronal remodeling, processes that may involve glial function (Yu and Schuldiner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yu and Schuldiner, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "23595f4d-fcd7-4b9e-b621-2ca48e0fb712",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C77",
+      "claim": "During development, ecdysone is synthesized from dietary cholesterol in the prothoracic gland and in other peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, ecdysone is synthesized from dietary cholesterol in the prothoracic gland and in other peripheral tissues that control molting and eclosion in larvae and pupae, but it declines during pupa-adult transitions and remains low in adults (Yamanaka et al., 2013; Kannangara et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yamanaka et al., 2013 and Kannangara et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "31e4e3a1-f6fc-48a9-bd21-80c3f03bf67e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C78",
+      "claim": "Ecdysone is implicated in adult functions such as memory formation and stress resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it is implicated in adult functions such as memory formation and stress resistance (Ishimoto and Kitamoto, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ishimoto and Kitamoto, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "cc76db62-afa3-426a-bbef-296040bb1010",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C79",
+      "claim": "Ecdysone controls developmental transitions in response to nutrient signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that ecdysone regulates sleep through metabolic mechanisms in glia is consistent with other metabolic functions attributed to it; for instance, it controls developmental transitions in response to nutrient signals (Christensen et al., 2020; Lee et al., 2000; Uyehara and McKay, 2019; Xu et al., 2020; Yamanaka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "f3298dad-679a-43db-8181-b5c674a6710e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C80",
+      "claim": "Ecdysone may affect the whole-body lipid profile to modulate physiology and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ecdysone may affect the whole-body lipid profile to modulate physiology and behavior (Sieber and Spradling, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sieber and Spradling, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "0c6e88e4-ee78-4692-9a61-6828b5716258",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C81",
+      "claim": "The gonads, in particular the ovaries in females, are thought to be the major source of ecdysone in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The gonads, in particular the ovaries in females, are thought to be the major source of the ecdysone in adults (Ahmed et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ahmed et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "43a7e0d4-9817-4d6b-a9b8-e306f1afc459",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C82",
+      "claim": "Several peripheral tissues express ecdysone biosynthesis genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several other tissues also express ecdysone biosynthesis genes (Li et al., 2022), so multiple peripheral tissues could contribute to circulating ecdysone levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "00f55111-35cd-478f-b16b-c6e9e4ba6f97",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C83",
+      "claim": "Halloween genes have very little to no expression in the fly brain based on fly brain single-cell sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, Halloween genes have very little to no expression in the fly brain based on fly brain single-cell sequencing (Davie et al., 2018), suggesting that ecdysone or 20E derives from the periphery to modulate sleep via glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davie et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "20aacc47-429e-4944-8317-ae838c0bf355",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C84",
+      "claim": "Around 10\u201315% of cells in the Drosophila brain are glial cells belonging to one of five distinct groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, around 10\u201315% of cells in the brain are glial cells belonging to one of five distinct groups: cortex glia, astrocyte-like glia, ensheathing glia, perineurial, and subperineural glia (Edwards and Meinertzhagen, 2010; Yildirim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Edwards and Meinertzhagen, 2010 and Yildirim et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "411ab0e8-da2f-4aaf-ae68-b6989792e3f8",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C85",
+      "claim": "Perineurial and subperineural glia together serve as the BBB regulating permeability, controlled by the circadian system.",
+      "claim_type": "EXPLICIT",
+      "source": "Perineurial and subperineural glia together serve as the BBB regulating permeability, controlled by the circadian system (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5654e629-8dce-457d-85f6-0d1e5e623147",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C86",
+      "claim": "BBB glia have a role in sleep, such that endocytosis in these cells increases during sleep and depends upon the prior duration of wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "BBB glia also have a role in sleep, such that endocytosis in these cells increases during sleep and depends upon the prior duration of wakefulness (Artiushin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Artiushin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "d0c1e532-f9c1-45c9-9066-16244b536c9c",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C87",
+      "claim": "Astrocyte-like glia have a distinctive shape that allows remarkably close physical contact with synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Astrocyte-like glia have a distinctive shape that allows remarkably close physical contact with synapses and is thought to be important for the clearance of neurotransmitters in the synaptic space (Freeman, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Freeman, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ae5d1fa2-af72-4696-8a34-be56a4b4bef1",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C88",
+      "claim": "Arylalkylamine N-acetyltransferase 1 (AANAT1), which acetylates and inactivates monoamines, acts in astrocytes to affect sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, arylalkylamine N-acetyltransferase 1 (AANAT1), which acetylates and inactivates monoamines, acts in astrocytes to affect sleep (Davla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davla et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "2cdfe733-864a-4a6b-992b-676c5113ab84",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C89",
+      "claim": "Calcium signaling in astrocytes appears to contribute to sleep need.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, calcium signaling in astrocytes appears to contribute to sleep need (Blum et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Blum et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "44d6555c-b0e6-4385-807f-c0f85d85c527",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C90",
+      "claim": "Astrocytic GABA transporter maintains proper GABA tone in specific wake-promoting circadian neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and astrocytic GABA transporter maintains proper GABA tone in specific wake-promoting circadian neurons (Chaturvedi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chaturvedi et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "0fd388ce-23a4-4085-a8f3-91e242e0f722",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C91",
+      "claim": "Cortex glia cells encapsulate neuronal cell bodies and provide nutrients to neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortex glia cells encapsulate neuronal cell bodies and provide nutrients to neurons (Doherty et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Doherty et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "35bdb010-c21c-49d7-99be-2275589f3698",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C92",
+      "claim": "Cortex and ensheathing glia accumulate most LDs in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortex and ensheathing glia accumulate most LDs in the brain, and fatty acid-binding protein (Fabp), which promotes sleep, is expressed in both glial populations (Gerstner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gerstner et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "035b1eac-aa65-49d0-97f8-e38c40955e7f",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C93",
+      "claim": "Ensheathing glia regulate both sleep and metabolic rate via the taurine transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ensheathing glia regulate both sleep and metabolic rate via the taurine transporter (Stahl et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Stahl et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "3581d74f-0104-443a-85c9-cf84d9c05b3a",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C94",
+      "claim": "Roles of cortex and ensheathing glia in sleep are likely linked to their function in metabolism, which includes nutrient transfer and balance between neurons and glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, roles of cortex and ensheathing glia in sleep are likely linked to their function in metabolic, which includes nutrient transfer and balance between neurons and glia (Bittern et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bittern et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "426d99de-29bc-4c93-8e92-31899532502e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C95",
+      "claim": "The effects of Amyloid precursor protein (App) on sleep are mediated by cortex glia.",
+      "claim_type": "EXPLICIT",
+      "source": "We note though that the effects of Amyloid precursor protein (App), which regulates the production and deposition of toxic amyloid peptides, on sleep are mediated by cortex glia (Farca Luna et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Farca Luna et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "2a684a17-50cf-43c4-afbb-468357fc6d5e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C96",
+      "claim": "Ecdysone can regulate circadian rhythms through neuronally expressed receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while ecdysone can regulate circadian rhythms through neuronally expressed receptors (Kumar et al., 2014), we find that knockdown of glial EcRs results in more severe behavioral arrhythmicity than neuronal knockdown (Figure 2I\u2013K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kumar et al., 2014 and data in Figure 2I\u2013K.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "21bf1900-ca10-4ace-923c-b47c16c9209d",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C97",
+      "claim": "Drosophila astrocytes regulate circadian locomotor rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "As Drosophila astrocytes regulate circadian locomotor rhythms (Ng et al., 2011), they are attractive candidates for mediating the effects of ecdysone on rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ng et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "2e61c593-d2c0-4969-bc4f-a6e381d73284",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C98",
+      "claim": "Ecdysone treatment upregulates the gene glial cell missing (gcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Ecdysone treatment upregulates the gene glial cell missing (gcm), while knockdown of EcR reduces the expression of gcm in vitro, suggesting that ecdysone influences the development and morphology of glial cells by regulating gcm, which determines the fate of the lateral glial cells (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "99795ef1-e60b-461b-83fb-4a66156cf6c1",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C99",
+      "claim": "Loss of sleep alters the lipid profile across species, including in human peripheral blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of sleep alters the lipid profile across species, including in human peripheral blood (Davies et al., 2014; Hinard et al., 2012; Weljie et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Davies et al., 2014; Hinard et al., 2012; Weljie et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "42490e3b-2ce1-419d-8c8e-322e6f5f0457",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C100",
+      "claim": "The lsd2 mutant and a mutant lacking a lipase affect rebound after sleep deprivation in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, lipids have been shown to regulate sleep; for instance, the lsd2 mutant we used here, as well as a mutant lacking a lipase, affect rebound after sleep deprivation in Drosophila (Thimgan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Thimgan et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "a378769b-adb9-4f73-a394-296060727121",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C101",
+      "claim": "Specific lipids are implicated as secreted sleep inducers (somnogens) that promote sleep following deprivation in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, specific lipids are also implicated as secreted sleep inducers (somnogens) that promote sleep following deprivation in mammals (Cravatt et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cravatt et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5a9a86d0-f718-4871-809d-69d1a88c0f7e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C102",
+      "claim": "Sleep is associated with fat mobilization in worms, and deficits in energy mobilization in sensory neuroendocrine cells cause sleep defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in worm also showed that sleep is associated with fat mobilization, and deficits in energy mobilization in sensory neuroendocrine cells cause sleep defects (Grubbs et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Grubbs et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ecc1a91e-41a2-491f-89c0-727d906963df",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C103",
+      "claim": "Juvenile hormone (JH) differentially affects sleep in male and female flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Juvenile hormone (JH), which works together with ecdysone during developmental stages, differentially affects sleep in male and female flies (Leinwand and Scott, 2021; Schwedes and Carney, 2012; Wu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Leinwand and Scott, 2021; Schwedes and Carney, 2012; Wu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "0f1ad25e-d9f5-4655-84d3-6be048aebfc5",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C104",
+      "claim": "The human ortholog of E75 is Reverb, which has broad effects on metabolism in peripheral tissues based on work in mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The human ortholog of E75 is Reverb, which has broad effects on metabolism in peripheral tissues based on work in mice and humans, so the functions of EcR/E75 in peripheral tissues may also be linked to metabolism (Ding et al., 2021; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ding et al., 2021; Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "349f2dd0-033b-46ad-8f2a-fccd7abfef85",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C105",
+      "claim": "Reverb has high expression in mouse brain glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Reverb has high expression in mouse brain glial cells, where it could function to affect mouse sleep (Chi-Casta\u00f1eda and Ortega, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chi-Casta\u00f1eda and Ortega, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "8961b9ac-70f2-40ca-81e0-1b2f1df61e00",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C106",
+      "claim": "The endocrine system and the circuitry underlying circadian rhythms and sleep are intertwined during developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the endocrine system and the circuitry underlying circadian rhythms and sleep are intertwined during developmental stages (Aldabal and Bahammam, 2011; Gamble et al., 2014; Morgan and Tsai, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Aldabal and Bahammam, 2011; Gamble et al., 2014; Morgan and Tsai, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "3a73c045-afdf-41a5-8710-e45da31eeb7d",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "claim_id": "C107",
+      "claim": "The mechanism by which ecdysone affects sleep involves LD mobilization.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism involves LD mobilization, emphasizing the importance of glia and lipid metabolism in sleep regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion from the lipid droplet experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A systematic RNAi screen of 18 nuclear hormone receptors (NHRs) in adult Drosophila identified EcR and E75 as the most significant regulators of sleep, with knockdown reducing sleep more dramatically in glia than in neurons, and ecdysone-responsive NHRs showing greater sleep effects than non-responsive ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16-C21, C23-C25 collectively demonstrate a well-designed genetic screen with appropriate controls (GS and UAS controls), multiple RNAi lines, and quantitative sleep measurements. The data show consistent effects across replicates with statistical significance, and the finding that glial knockdown produces stronger phenotypes than neuronal knockdown is robustly supported by the quantitative data (C19: ~460 min vs ~707 min sleep).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "042add47-9785-4600-8dd3-694f967480d1",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Adult-specific knockdown of EcR or E75 in neurons or glia reduces sleep by fragmenting it (shorter bout lengths, more bouts), with effects confirmed using multiple temporal control systems (GeneSwitch, TARGET) and multiple independent RNAi lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 provide strong evidence through sleep architecture analysis and multiple genetic control systems. The use of both GeneSwitch (RU486-inducible) and TARGET (temperature-sensitive Gal80) systems to restrict knockdown to adults addresses developmental confounds. Multiple independent RNAi lines (C31) and the ecdysone importer EcI (C32) showing similar phenotypes strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "33ea36f4-9d12-4073-ac6c-55dc1ad2ee5c",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Glial EcR is required for circadian locomotor rhythms, with 90% of glial EcR knockdown flies becoming arrhythmic in constant darkness compared to 50% of neuronal knockdown flies, representing a more severe phenotype than previously reported for neuronal EcR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C34, and C96 demonstrate a clear circadian phenotype with quantitative assessment of rhythmicity. The comparison between neuronal and glial knockdown is direct and shows a substantial difference (50% vs 90% arrhythmic). The citation to Kumar et al., 2014 provides appropriate context, though the claim of novelty should be tempered by the acknowledgment that previous work hinted at glial involvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "4468fb4d-8247-4cc4-8f42-3a9c1b67e89e",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Overexpression of EcR in neurons or glia does not increase total sleep but causes a phase shift at dusk in glial overexpression, suggesting that EcR effects on sleep are primarily through glia and may be ligand-limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 show appropriate negative controls and suggest mechanistic insights. The lack of sleep increase with overexpression (C35) contrasts with the knockdown phenotype and is interpreted reasonably as potential ligand limitation. The phase shift in glial overexpression (C36) provides additional evidence for glial-specific effects. However, the interpretation of ligand limitation is speculative and would benefit from direct ecdysone measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Exogenous ecdysone (20E) promotes sleep and rescues starvation-induced sleep loss without affecting ecdysone-responsive gene expression in the brain. Glial, but not neuronal, EcR is required for the sleep-promoting effects of exogenous ecdysone, and starvation and glial ecdysone signaling independently regulate sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C46 present complex interactions between ecdysone, starvation, and sleep. While C39-C40 are well-supported by data and prior work (Ishimoto and Kitamoto, 2010), the interpretation of independent regulation (C46) is based on additive effects that could have alternative explanations. The claim that neuronal ecdysone signaling is dispensable (C44) is weakened by the authors' own acknowledgment that Repo-GS controls also don't respond to 20E, preventing definitive conclusions about glial necessity. The rebound sleep observation (C42) is interesting but complicates the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "166f2279-ec59-4e55-88c1-79f57dcda264",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Heat shock-induced sleep is not affected by EcR knockdown in neurons or glia, suggesting specificity of ecdysone signaling to certain stressors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 provides an important negative control showing that EcR is not required for all stress-induced sleep changes. This specificity strengthens the overall conclusions about ecdysone's role in sleep regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ecdysone synthesis genes have minimal expression in the fly brain, and peripheral ecdysone levels are higher at ZT14 than ZT2. E75 expression peaks at ZT12 in the head but not periphery, and the brain shows greater E75 response to injected 20E at night (ZT18) than day (ZT6), suggesting ecdysone enters the brain more at night.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3, C48-C52, C4, and C83 attempt to establish circadian regulation and peripheral origin of ecdysone. While the single-cell sequencing data (C3, C83) supports minimal brain synthesis, the ELISA data (C48) shows no significant cycling in the brain despite peripheral cycling. The differential E75 response to injection (C51-C52) is interesting but the normalization approach (brain change/body change) may not adequately control for injection variability or differential metabolism. The conclusion that ecdysone \"enters the brain more at night\" (C4, C52) is an inference that could have alternative explanations such as differential receptor sensitivity or E75 transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ded1e2a3-3b78-45bd-a9a5-6b7fdb18d76b",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EcR is broadly expressed in the adult fly brain but predominantly localizes to cortex glia, as demonstrated by antibody staining that is greatly diminished with glial but not neuronal EcR knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C53-C56 provide clear immunohistochemical evidence for EcR localization. The use of knockdown to validate antibody specificity (C54-C55) is appropriate, and co-staining with cortex glia markers (C53) strengthens the localization claim. The mention of BBB expression without shown data (C56) is a minor weakness but doesn't undermine the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "5de11bf9-751a-44e9-8ec5-7e11c737c819",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "EcR functions specifically in adult cortex glia to affect sleep, as demonstrated by subglial driver experiments showing sleep reduction only with cortex glia-specific knockdown (GMR77A03, NP2222) and not with BBB, ensheathing, or astrocyte glia drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C57-C62 systematically map EcR function to cortex glia using multiple drivers. The developmental lethality with most drivers (C57) is noted appropriately. The use of TARGET system (C60) to restrict knockdown to adults strengthens the conclusion. The negative results with other glial subtypes (C61-C62) provide important specificity controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "14744a1a-2a95-451f-9712-9b22e54ac6bd",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Overexpression of EcR in surface glia (9-137 Gal4) increases sleep and resistance to sleep deprivation, but this effect is developmental rather than adult-specific as shown by lack of phenotype when overexpression is restricted to adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 show an interesting developmental effect of EcR in surface glia. The use of TubGal80 to restrict expression to adults (C65) appropriately distinguishes developmental from adult effects. However, the authors correctly note this may be non-physiological due to the strong driver, limiting the biological interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "800228ad-3973-4980-a2fe-38098e8fe9f6",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ecdysone treatment mobilizes lipid droplets (LDs) in cortex and ensheathing glia, reducing LD size without affecting count, while glial EcR knockdown increases LD count, demonstrating bidirectional regulation of glial lipid metabolism by ecdysone signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C66-C70 provide clear evidence for ecdysone's effects on lipid metabolism using BODIPY staining. The bidirectional effects (ecdysone feeding reduces LD size, EcR knockdown increases LD count) strengthen the causal relationship. The appropriate controls (UAS flies with RU treatment showing no effect, C70) support specificity. The quantification methods are described in Materials and Methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "30484aeb-ac99-4141-bcb6-ec9a2e148aaa",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The sleep-promoting effects of exogenous ecdysone are abolished in lsd-2 mutant flies (which are deficient in lipid accumulation), while these flies remain responsive to the sleep-promoting drug gaboxadol, indicating that ecdysone modulates sleep through lipid metabolism in cortex glia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C71-C73, C11, and C107 provide strong genetic evidence linking ecdysone's sleep effects to lipid metabolism. The lsd-2 mutant experiment is well-controlled with the gaboxadol positive control (C72) demonstrating that the lack of ecdysone response is not due to general inability to sleep. This, combined with the bidirectional LD effects, strongly supports the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing that steroid hormones are lipophilic and can enter the brain, that ecdysone is the major steroid hormone in Drosophila with roles in development and adult functions, and that nearly half of NHRs are expressed in adult fly brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C15, C22, C75-C82 provide appropriate background context supported by citations to established literature. These are primarily knowledge claims that frame the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "26e3f1dc-9ffe-45c9-af37-46258ed48061",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Neuronal but not glial knockdown of Hr51 (unfulfilled) causes arrhythmicity without affecting sleep amount, validating the screen's ability to detect known circadian regulators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 provides important validation of the screening approach by recapitulating a known result (Beuchle et al., 2012) and showing appropriate cell-type specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about Drosophila glial cell types, their functions in sleep and metabolism, and their roles in circadian rhythms, providing context for why cortex glia are relevant for ecdysone's effects on sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C95, C97-C98 provide comprehensive background on glial biology supported by appropriate citations. These contextualize the findings within the broader literature on glia and sleep.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    },
+    {
+      "id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed",
+      "content_id": "0c8735da-51b4-4871-9f26-d9ea5b62bde4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion claims placing the findings in broader context: glia as targets of steroid hormone signaling for sleep regulation, bidirectional relationships between sleep and lipids across species, and potential conservation of mechanisms in mammals through Reverb (E75 ortholog).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C99-C106 appropriately discuss the implications and context of the findings with relevant citations. These are interpretive claims that connect the specific findings to broader biological principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:44:52.302999Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e578be58-d55d-4e77-a8c1-39fe92ce7113",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "15163aa6-ed96-4399-a584-5f3bb0297441",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "0dc585da-c1ad-426d-b024-c98cd7a6575d",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "fb306b51-f31f-4325-91a4-9cdccfb9b616",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "e626f4e4-b608-4e91-b6b7-000643a4a00b",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "fa427e90-d032-42ad-9ed1-0ad9bd3f6857",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "c6c836f1-a1b5-4ce8-bff6-3894a5741cce",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "4952c275-d7ad-42f2-a4e4-2711d618bcc7",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "a9c4cafb-7e5d-4caa-915d-37d740fe049e",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "de5497a0-f183-4390-9c6e-1cf9a88fdd64",
+      "result_id": "d70b7da1-1f76-4a73-a11f-ead7f0a61df0"
+    },
+    {
+      "claim_id": "3ce40726-14df-451b-ae75-2ff9faf88ba3",
+      "result_id": "042add47-9785-4600-8dd3-694f967480d1"
+    },
+    {
+      "claim_id": "99253511-6b30-4c6f-b004-f1803a4ed1cf",
+      "result_id": "042add47-9785-4600-8dd3-694f967480d1"
+    },
+    {
+      "claim_id": "49052fa6-34b8-4865-9c02-5a2b3c78ba35",
+      "result_id": "042add47-9785-4600-8dd3-694f967480d1"
+    },
+    {
+      "claim_id": "456061ec-6433-4f6e-9c00-e9ced825f246",
+      "result_id": "042add47-9785-4600-8dd3-694f967480d1"
+    },
+    {
+      "claim_id": "b6a6564b-45f7-4336-863c-f1849e9637b9",
+      "result_id": "042add47-9785-4600-8dd3-694f967480d1"
+    },
+    {
+      "claim_id": "5bc78efe-9d5f-4670-b1c8-a2c5b4b42c39",
+      "result_id": "042add47-9785-4600-8dd3-694f967480d1"
+    },
+    {
+      "claim_id": "5955f47f-29cf-45eb-9194-8211114ddbbb",
+      "result_id": "33ea36f4-9d12-4073-ac6c-55dc1ad2ee5c"
+    },
+    {
+      "claim_id": "0cd4ef5d-fff3-42fd-945b-448a2029e96e",
+      "result_id": "33ea36f4-9d12-4073-ac6c-55dc1ad2ee5c"
+    },
+    {
+      "claim_id": "2a684a17-50cf-43c4-afbb-468357fc6d5e",
+      "result_id": "33ea36f4-9d12-4073-ac6c-55dc1ad2ee5c"
+    },
+    {
+      "claim_id": "a4a09f77-7a04-4922-9def-264b6126df83",
+      "result_id": "4468fb4d-8247-4cc4-8f42-3a9c1b67e89e"
+    },
+    {
+      "claim_id": "165f7a3f-662c-4d1b-b8e4-5a2518e1d01a",
+      "result_id": "4468fb4d-8247-4cc4-8f42-3a9c1b67e89e"
+    },
+    {
+      "claim_id": "abfc173a-6815-42e8-87c5-e8a99dff029d",
+      "result_id": "4468fb4d-8247-4cc4-8f42-3a9c1b67e89e"
+    },
+    {
+      "claim_id": "4e7c98e5-1057-4df1-91df-e89e9a4f9a67",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "cd52a4ee-a259-451b-b033-1fe692285fbb",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "63dc7f6a-d61b-4b87-9f2f-6873e019faad",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "d92bb904-5df6-4d86-9f72-c94c93cf3a05",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "63dd09dc-5831-438c-82ed-775ffe5c2c47",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "ffa68e72-25e0-4d6d-8fb1-469d42922ab7",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "5588b208-732d-4f68-9ef3-0b96a357b559",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "d2e1f397-58a7-45d4-b6b4-1fa43a4acd90",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "c1b51577-f0c2-4ab7-b4ac-bddf2b61cbe4",
+      "result_id": "25901bd3-b2a7-4c46-bcae-f1e6b8a9b0be"
+    },
+    {
+      "claim_id": "eed2272b-c1d1-48b4-ae3d-c1b015e0a788",
+      "result_id": "166f2279-ec59-4e55-88c1-79f57dcda264"
+    },
+    {
+      "claim_id": "706242af-e445-4958-b45a-6fdd88fdca49",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "1c88d039-5555-4860-9552-bd913f1e612b",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "fad702ba-ba99-4fb5-a0ed-07fd53620335",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "5d536c30-c1e7-41e3-91d7-7c1a8f8bcfdd",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "6d0f6c15-46c1-4f24-be85-1da530b8cdf1",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "6f159d1a-9106-42cf-9f99-392967f5ccd7",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "61aa6e36-36bc-44af-88f5-4898cd463f38",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "00f55111-35cd-478f-b16b-c6e9e4ba6f97",
+      "result_id": "e7f45c4e-4d4c-4268-801e-e8b385a6c6a0"
+    },
+    {
+      "claim_id": "8cf6375a-4805-4d72-a7c8-14c6e2f9d79c",
+      "result_id": "ded1e2a3-3b78-45bd-a9a5-6b7fdb18d76b"
+    },
+    {
+      "claim_id": "0f330564-e1ea-4be7-af14-60fa1babd6ac",
+      "result_id": "ded1e2a3-3b78-45bd-a9a5-6b7fdb18d76b"
+    },
+    {
+      "claim_id": "cbaabe01-756f-4886-8a55-9b378fcc64ec",
+      "result_id": "ded1e2a3-3b78-45bd-a9a5-6b7fdb18d76b"
+    },
+    {
+      "claim_id": "1ee8f599-da52-42c6-ae1e-671366b29c6c",
+      "result_id": "ded1e2a3-3b78-45bd-a9a5-6b7fdb18d76b"
+    },
+    {
+      "claim_id": "342b043d-7962-4791-81f0-0ebf200b38f5",
+      "result_id": "ded1e2a3-3b78-45bd-a9a5-6b7fdb18d76b"
+    },
+    {
+      "claim_id": "3a5b6c81-621a-4116-ae79-f1d66026473e",
+      "result_id": "5de11bf9-751a-44e9-8ec5-7e11c737c819"
+    },
+    {
+      "claim_id": "7f5db291-a2bd-4a6e-8601-878cac556c1f",
+      "result_id": "5de11bf9-751a-44e9-8ec5-7e11c737c819"
+    },
+    {
+      "claim_id": "e386052d-3a0b-4293-a1f3-f5b221e00f0e",
+      "result_id": "5de11bf9-751a-44e9-8ec5-7e11c737c819"
+    },
+    {
+      "claim_id": "ba703e09-1707-4323-b25c-f4e581457e90",
+      "result_id": "5de11bf9-751a-44e9-8ec5-7e11c737c819"
+    },
+    {
+      "claim_id": "6cb4c87b-55d3-40d2-a2f6-bdb9963711bb",
+      "result_id": "5de11bf9-751a-44e9-8ec5-7e11c737c819"
+    },
+    {
+      "claim_id": "2897d15e-2fc4-4529-bacc-1873e4de3bd2",
+      "result_id": "5de11bf9-751a-44e9-8ec5-7e11c737c819"
+    },
+    {
+      "claim_id": "5ac4ffc8-e4ad-4499-abd2-f6454155a661",
+      "result_id": "5de11bf9-751a-44e9-8ec5-7e11c737c819"
+    },
+    {
+      "claim_id": "fd41796f-973a-4f3a-81d7-db72ff94cf56",
+      "result_id": "14744a1a-2a95-451f-9712-9b22e54ac6bd"
+    },
+    {
+      "claim_id": "ae93770a-193c-4a3a-bb2a-3b0e5e8a64f3",
+      "result_id": "14744a1a-2a95-451f-9712-9b22e54ac6bd"
+    },
+    {
+      "claim_id": "32b62f43-bd74-4a7c-9415-87f4ce2f50c8",
+      "result_id": "14744a1a-2a95-451f-9712-9b22e54ac6bd"
+    },
+    {
+      "claim_id": "02f47874-4597-47c1-8c5e-0a5b0c2f83a4",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "8bb75e24-414b-485d-9fcb-4804196b25c2",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "cfe52faa-a56b-4137-a388-94ddbff1d5e5",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "ac7e744e-06ae-4635-88cf-d33b56afd235",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "c41d3db7-c1c3-45ec-9208-a8ce13374b78",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "b7a87435-ae2b-40e7-99b6-1c50715b6fd1",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "15581bad-cd34-4b3a-8940-182008157334",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "71983fd8-2afa-43c4-a20c-dbc153f1868c",
+      "result_id": "800228ad-3973-4980-a2fe-38098e8fe9f6"
+    },
+    {
+      "claim_id": "e89c0d36-e38e-4943-a291-61faef5f39a5",
+      "result_id": "30484aeb-ac99-4141-bcb6-ec9a2e148aaa"
+    },
+    {
+      "claim_id": "1f5d86c4-c9b5-427e-94a8-3144d7de98e7",
+      "result_id": "30484aeb-ac99-4141-bcb6-ec9a2e148aaa"
+    },
+    {
+      "claim_id": "f5137e8e-2c9f-496f-be9e-d7ddb403f293",
+      "result_id": "30484aeb-ac99-4141-bcb6-ec9a2e148aaa"
+    },
+    {
+      "claim_id": "bde619d1-d6a3-445d-8299-e6e946e13faf",
+      "result_id": "30484aeb-ac99-4141-bcb6-ec9a2e148aaa"
+    },
+    {
+      "claim_id": "df56c518-4aaa-472d-855e-76406bbb0b79",
+      "result_id": "30484aeb-ac99-4141-bcb6-ec9a2e148aaa"
+    },
+    {
+      "claim_id": "3a73c045-afdf-41a5-8710-e45da31eeb7d",
+      "result_id": "30484aeb-ac99-4141-bcb6-ec9a2e148aaa"
+    },
+    {
+      "claim_id": "8582562b-261b-4d10-8937-8c38656eda40",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "1688650e-952b-431c-8cc9-f750e202479e",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "03fcf2d2-a632-4211-95d7-5b50954978bd",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "3da89462-3771-4b4f-9ae1-ad9d3f2b239b",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "5680770f-4382-4b02-af1f-376180c36d1a",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "2a44d65f-4b4b-4004-8293-16434650ffc7",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "a6deda6b-b4a4-4b7e-a657-38aa9d8f63a4",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "24cd8b0c-7349-4099-86c9-738265d8588f",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "23595f4d-fcd7-4b9e-b621-2ca48e0fb712",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "31e4e3a1-f6fc-48a9-bd21-80c3f03bf67e",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "cc76db62-afa3-426a-bbef-296040bb1010",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "f3298dad-679a-43db-8181-b5c674a6710e",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "0c6e88e4-ee78-4692-9a61-6828b5716258",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "43a7e0d4-9817-4d6b-a9b8-e306f1afc459",
+      "result_id": "3a2867b4-d652-47eb-8d5b-c4d1ce3dd692"
+    },
+    {
+      "claim_id": "a3608afa-ed91-491f-80c6-eec4f831c415",
+      "result_id": "26e3f1dc-9ffe-45c9-af37-46258ed48061"
+    },
+    {
+      "claim_id": "20aacc47-429e-4944-8317-ae838c0bf355",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "411ab0e8-da2f-4aaf-ae68-b6989792e3f8",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "5654e629-8dce-457d-85f6-0d1e5e623147",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "d0c1e532-f9c1-45c9-9066-16244b536c9c",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "ae5d1fa2-af72-4696-8a34-be56a4b4bef1",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "2cdfe733-864a-4a6b-992b-676c5113ab84",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "44d6555c-b0e6-4385-807f-c0f85d85c527",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "0fd388ce-23a4-4085-a8f3-91e242e0f722",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "35bdb010-c21c-49d7-99be-2275589f3698",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "035b1eac-aa65-49d0-97f8-e38c40955e7f",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "3581d74f-0104-443a-85c9-cf84d9c05b3a",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "426d99de-29bc-4c93-8e92-31899532502e",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "21bf1900-ca10-4ace-923c-b47c16c9209d",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "2e61c593-d2c0-4969-bc4f-a6e381d73284",
+      "result_id": "ed0de9f2-73ca-4a0a-8b45-1165b8b9ff95"
+    },
+    {
+      "claim_id": "497e74d7-839b-418c-b904-06b98116ff44",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "99795ef1-e60b-461b-83fb-4a66156cf6c1",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "42490e3b-2ce1-419d-8c8e-322e6f5f0457",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "a378769b-adb9-4f73-a394-296060727121",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "5a9a86d0-f718-4871-809d-69d1a88c0f7e",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "ecc1a91e-41a2-491f-89c0-727d906963df",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "0f1ad25e-d9f5-4655-84d3-6be048aebfc5",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "349f2dd0-033b-46ad-8f2a-fccd7abfef85",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    },
+    {
+      "claim_id": "8961b9ac-70f2-40ca-81e0-1b2f1df61e00",
+      "result_id": "0cec6c2e-3871-4d49-b59d-e0f863fc46ed"
+    }
+  ],
+  "comparisons": []
+}

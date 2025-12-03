@@ -1,0 +1,2365 @@
+{
+  "submission": {
+    "id": "c4e36cf2-c1b0-49f5-9cc0-ab7974d07275",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:02:25.503881Z",
+    "updated_at": "2025-12-03T16:02:25.503881Z"
+  },
+  "content": [
+    {
+      "id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "submission_id": "c4e36cf2-c1b0-49f5-9cc0-ab7974d07275",
+      "content_type": "manuscript",
+      "content_text": "# Distinct population and single-neuron selectivity for executive and episodic processing in human dorsal posterior cingulate\n\n## Authors\n\n- Lyndsey Aponik-Gremillion<sup>1</sup>\n- Yvonne Y Chen<sup>4</sup> ([ORCID: 0000-0001-8844-7891](https://orcid.org/0000-0001-8844-7891))\n- Eleonora Bartoli<sup>3</sup> ([ORCID: 0000-0002-5824-5065](https://orcid.org/0000-0002-5824-5065))\n- Seth R Koslov<sup>4</sup> ([ORCID: 0000-0001-7737-1377](https://orcid.org/0000-0001-7737-1377))\n- Hernan G Rey<sup>3</sup> ([ORCID: 0000-0002-6455-8463](https://orcid.org/0000-0002-6455-8463))\n- Kevin S Weiner<sup>7</sup> ([ORCID: 0000-0002-8734-5049](https://orcid.org/0000-0002-8734-5049))\n- Daniel Yoshor<sup>4</sup>\n- Benjamin Y Hayden<sup>8</sup>\n- Sameer A Sheth<sup>1</sup> ([ORCID: 0000-0001-8770-8965](https://orcid.org/0000-0001-8770-8965))\n- Brett L Foster<sup>4</sup> ([ORCID: 0000-0002-2621-5574](https://orcid.org/0000-0002-2621-5574)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n2. Department of Health Sciences, Dumke College for Health Professionals, Weber State University Ogden United States ([ROR:01epn2q93](https://ror.org/01epn2q93))\n3. Department of Neurosurgery, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n4. Department of Neurosurgery, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n5. Department of Neurosurgery, Medical College of Wisconsin Milwaukee United States ([ROR:00qqv6244](https://ror.org/00qqv6244))\n6. Joint Department of Biomedical Engineering, Medical College of Wisconsin Milwaukee United States ([ROR:00qqv6244](https://ror.org/00qqv6244))\n7. Department of Psychology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n8. Department of Neuroscience, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n9. Center for Magnetic Resonance Research, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n10. Center for Neural Engineering, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPosterior cingulate cortex (PCC) is an enigmatic region implicated in psychiatric and neurological disease, yet its role in cognition remains unclear. Human studies link PCC to episodic memory and default mode network (DMN), while findings from the non-human primate emphasize executive processes more associated with the cognitive control network (CCN) in humans. We hypothesized this difference reflects an important functional division between dorsal (executive) and ventral (episodic) PCC. To test this, we utilized human intracranial recordings of population and single unit activity targeting dorsal PCC during an alternated executive/episodic processing task. Dorsal PCC population responses were significantly enhanced for executive, compared to episodic, task conditions, consistent with the CCN. Single unit recordings, however, revealed four distinct functional types with unique executive (CCN) or episodic (DMN) response profiles. Our findings provide critical electrophysiological data from human PCC, bridging incongruent views within and across species, furthering our understanding of PCC function.\n\n## Introduction\n\nDespite being routinely observed in studies of human brain function, the posterior cingulate cortex (PCC) remains one of the least understood neocortical areas, with little consensus as to its role in cognition (Leech and Sharp, 2014; Leech and Smallwood, 2019). Anatomically, PCC reflects the caudal aspect of the cingulate cortex, wrapping around the posterior trunk and splenium of the corpus callosum (Vogt et al., 1995; Vogt et al., 2001; Margulies et al., 2009; Figure 1B). Physiologically, PCC displays high basal levels of metabolic activity (Raichle et al., 2001; Buckner et al., 2008). Clinically, a growing literature suggests PCC is implicated in the progression of neurodegenerative and psychiatric disease (Leech and Sharp, 2014; Vogt, 2019). However, the deep medial location and rich vascularization of PCC (Bernier et al., 2018) limit the occurrence of focal insult and corresponding neuropsychological findings, often foundational to understanding many other brain regions (Vaidya et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80722/elife-80722-fig1-v1.jpg)\n\n**Figure 1.:** (A) Anatomical locations, normalized to MNI space, of intracranial sEEG depth electrodes targeting the posterior aspect of the cingulate cortex, with the distal contact of probes containing microwires indicated in green. (B) Anatomy of human PCC, differentiating dorsal (dPCC) and ventral (vPCC) subregions and demarcating regional sulci following the most recent definitions in PCC (Petrides, 2018; Willbrand et al., 2022). (C) Attention/Memory Switch task procedure and example stimuli. The task included two executive attention conditions: search and add, two episodic memory conditions: past and future, and a rest condition. Each trial was proceeded by a cue indicating the forthcoming task condition and was followed by a trial response period, excluding rest (see Methods). (D) Schematic of the putative neural response profiles to the task conditions for episodic/DMN (default mode network) selectivity vs. executive/CCN (cognitive control network) selectivity.\n\nAt present, theorizing on the function of human PCC is typically limited to its role as a core node of the default mode network (DMN) (Raichle et al., 2001; Fox et al., 2005; Fransson, 2005; Fransson and Marrelec, 2008; Buckner and DiNicola, 2019). Whereby, a large functional neuroimaging literature shows that PCC, as part of the DMN, displays high basal levels of activity that are reduced during a variety of tasks, especially those requiring focused attention and cognitive control (Shulman et al., 1997; Raichle et al., 2001; Harrison et al., 2008; Anticevic et al., 2012). Consequently, the DMN is often reported as being anti-correlated or oppositional to other brain systems, such as the dorsal attention or cognitive control networks (DAN; CCN) that are engaged during attention demanding tasks (Fox et al., 2005; Fransson, 2005; Uddin et al., 2009). These findings led to the DMN, and in turn PCC, to be termed \u2018task-negative\u2019, as opposed to \u2018task-positive\u2019 regions (Fox et al., 2005; Uddin et al., 2019).\n\nHowever, hemodynamic activity in PCC is not decreased in all tasks (Spreng, 2012). In particular, it increases during episodic memory retrieval (Shannon and Buckner, 2004; Wagner et al., 2005; Vincent et al., 2006) and other internally focused cognitive tasks associated with self-referential thought and envisioning past or future scenarios (Svoboda et al., 2006; Hassabis and Maguire, 2007; Harrison et al., 2008; Spreng et al., 2009; Buckner and DiNicola, 2019). These findings highlight an alternate dichotomy where PCC/DMN function is associated with \u2018internally\u2019, versus \u2018externally\u2019, focused cognition (Buckner and Carroll, 2007; Andrews-Hanna et al., 2014). Supporting these neuroimaging findings, human intracranial recordings of PCC and surrounding posteromedial cortex (PMC) suggest clear electrophysiological evidence of activity suppression during external attention (Miller et al., 2009; Dastjerdi et al., 2011; Ossand\u00f3n et al., 2011; Foster et al., 2012; Foster et al., 2015) and activity enhancement during cued episodic thought (Foster et al., 2012; Foster et al., 2015; Fox et al., 2018).\n\nIn contrast, electrophysiological studies in the non-human primate have focused on the contributions of PCC to cognitive control (Hayden et al., 2010), decision making (McCoy et al., 2003; McCoy and Platt, 2005; Pearson et al., 2009), and value judgement (Hayden et al., 2008; Heilbronner et al., 2011) \u2013 conditions thought to anti-correlate with PCC engagement in humans. Together, single unit recordings in the macaque PCC during economic decisions have led to a hypothesized role in strategy selection (Pearson et al., 2009; Pearson et al., 2011; Heilbronner and Platt, 2013), further emphasizing a much more executive function, in apparent contrast to the common focus of human data. However, studies of human decision making and value judgements consistently observe PCC engagement (Bartra et al., 2013; Clithero and Rangel, 2014; Oldham et al., 2018), yet such findings have received limited attention (compared to anterior cingulate cortex) and therefore limited integration with studies of the DMN (Acikalin et al., 2017).\n\nWe hypothesized that these apparently contradictory findings reflect, in part, a failure to appreciate the specific anatomical organization of PCC. Contemporary studies of human brain network organization suggest that PCC contains putative subregions associated with multiple distinct functional systems (Andrews-Hanna et al., 2010; Yeo et al., 2011; Leech et al., 2012; Bzdok et al., 2015; Glasser et al., 2016; Braga and Buckner, 2017; Gordon et al., 2017b). For example, functional connectivity patterns are consistent with estimated structural connectivity, with prefrontal cingulum tracts entering primarily via the dorsal aspect of PCC, whereas medial temporal lobe tracts enter via its ventral aspect (Greicius et al., 2009). Evidence for PCC subregional organization also derives from homologous cytoarchitectural and connectivity data in humans and non-human primates (Vogt et al., 1995; Vogt et al., 2001; Vogt and Laureys, 2005; Parvizi et al., 2006; Vogt et al., 2006; Margulies et al., 2009). Together, these data convey a dissociation of the dorsal and ventral PCC (Figure 1B). Such a division suggests that dorsal PCC (dPCC) may be associated with executive control systems of the frontal lobe and ventral PCC (vPCC) may be associated with episodic memory systems of the medial-temporal lobe (Vincent et al., 2008; Spreng et al., 2010; Leech et al., 2011). This subregional perspective better reconciles functional views of PCC across species, as studies in the non-human primate have exclusively focused on the dPCC (often termed area CGp; McCoy et al., 2003).\n\nAs noted above, extant data from humans suggests executive attention demanding tasks typically suppress electrophysiological activity within human PCC, consistent with DMN function (Buckner and DiNicola, 2019). In contrast, electrophysiological evidence of PCC engagement during executive tasks, consistent with CCN function, is more limited (Daitch and Parvizi, 2018). Based on human neuroimaging and non-human primate electrophysiology, we hypothesized that subregions of PCC, specifically within its dorsal aspect, should be engaged during executive attention demanding tasks more than memory demanding tasks. Whereby, dPCC should reflect an electrophysiological response profile more consistent with the CCN rather than the DMN (Figure 1D).\n\nTo test this, we leveraged human intracranial electrophysiology via local field potential (LFP) and single neuron recordings targeting dPCC to capture neural activity during randomly alternating executive attention and episodic memory demanding tasks. We observed that neural populations within dPCC, as captured by the LFP, showed significantly greater responses (in broadband gamma, BBG; 70\u2013150 Hz) during executive compared to episodic conditions. Strikingly, functional clustering of single unit activity revealed multiple functional cell types within dPCC. A majority of single units responded selectively to only one of the two executive attention tasks (visual search or arithmetic), suggesting distinct populations underlie the observed CCN-like LFP response. However, a third functional cell type showed clear selectivity to both episodic memory conditions (past and future event scenarios) as well as suppression to both executive task conditions, highly consistent with DMN function. A final functional cell type displayed increased firing during cued rest periods, also a feature of the DMN. Together, these data provide clear electrophysiological evidence for executive processing within dPCC, consistent with the non-human primate, but also suggest a rich functional organization at the single unit level. These findings are discussed within the context of a growing literature examining the varied functional organization of associative cortices, like PCC, via precision neuroimaging. Careful consideration of this rich functional organization will be critical for better understanding the role of PCC in cognition and disease.\n\n## Results\n\n### Intracranial PCC recordings during an attention/memory switch task\n\nElectrophysiological activity in PCC was recorded by stereo-electroencephalography (sEEG) depth electrodes in 20 subjects undergoing invasive monitoring for epilepsy (female = 8; male = 12; see Methods). Across subjects, 35 electrodes were localized to the PCC region, 29 within dPCC and 6 within vPCC (Figure 1A and B). As the focus of this study, subsequent analyses concentrated on dPCC recording sites. Subjects performed an attention/memory switch task consisting of randomly alternating trials of executive attention conditions (search or add) and episodic construction conditions (past or future), engaging executive and episodic processes respectively (Figure 1C; see Methods). These conditions reflect tasks well known to differentially drive both CCN and DMN systems (Figure 1D) as observed via human neuroimaging and intracranial electrophysiology (Jerbi et al., 2010; Ossand\u00f3n et al., 2011; Foster et al., 2012; Ossand\u00f3n et al., 2012; Foster et al., 2015; Daitch and Parvizi, 2018; Fox et al., 2018). Task performance showed high accuracy for the executive conditions (mean accuracy: 86.47% for search; 92.59% for add) and robust vividness scores for the cued episodic conditions (modal vividness response: \u2018strong\u2019 for past; \u2018strong\u2019 for future).\n\n### Task selectivity of LFP in dorsal PCC\n\nFor macro-electrode sEEG recordings, activation of local neural populations can be captured by amplitude changes in the broadband gamma (BBG) frequency range (70\u2013150 Hz) of the recorded local field potential (LFP) (Ray and Maunsell, 2011; Bartoli et al., 2019). BBG activity is strongly correlated with both blood-oxygen-level-dependent (BOLD) fMRI and population firing rate, making it a useful marker for reconciling human neuroimaging and non-human primate electrophysiology findings (Miller, 2010). We found that dPCC displayed increased activity specifically within the BBG range during the cue and early task execution of the executive attention conditions, search and add. An example dPCC recording site and time-frequency response is shown in Figure 2A and B. Group data (nprobes = 29, nsubjects = 19) shows BBG activation within dPCC to be transient and peaked following the onset of search and add tasks (Figure 2C). During early task execution, from task onset to 1000 ms (1000\u20132000 ms post-cue), group mean BBG amplitude was greatest for the search condition, followed by the add condition, with low mean responses for past, future, and rest conditions. A mixed-effects model with task as a fixed effect and subject/electrode as random effects, revealed a significant main effect of task on BBG amplitude for the same task window. Specifically, mean BBG amplitude was significantly higher for the search task compared to add, past, future, and rest conditions (search-add: t(5093)=3.859, p=0.0011; search-past: t(5093)=8.092, p<0.0001; search-future: t(5093)=8.573, p<0.0001; search-rest: t(5093)=8.706, p<0.0001), and furthermore, was significantly higher for the add task compared to past, future, and rest conditions (add-past: t(5093)=4.236, p=0.0002; add-future: t(5093)=4.717, p<0.0001; add-rest: t(5093)=4.847, p<0.0001). These data provide clear support for an executive functional response profile within dPCC, which is highly consistent with the CCN and oppositional to that predicted for the DMN (Figure 1D). In contrast, sites within vPCC (nprobes = 6) showed the converse BBG response profile across conditions, consistent with the DMN and prior observations (Dastjerdi et al., 2011; Foster et al., 2012; Foster et al., 2015), where BBG responses were greater during late task execution (2000\u20133000 ms after task onset) for the episodic task conditions (see Figure 2\u2014figure supplement 1). A mixed effects model revealed a significant main effect of condition on BBG amplitude, with vPCC mean BBG amplitude being significantly higher for past than all other conditions (past-add: t(1253)=8.841, p<0.0001; past-search: t(1253)=5.151, p<0.0001; past-rest: t(1253)=3.978, p=0.0007; past-future: t(1253)=3.020, p=0.0216), and significantly lower for add than all other conditions (add-past: t(1253)=\u20138.841, p<0.0001; add-future: t(1253)=\u20135.811, p<0.0001; add-rest: t(1253)=\u20134.863, p<0.0001; add-search: t(1253)=\u20133.690, p=0.0022).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80722/elife-80722-fig2-v1.jpg)\n\n**Figure 2.:** (A) Location of a representative dPCC electrode in subject N9. (B) Time-frequency spectrogram for electrode in (A) depicting amplitude (% change) dynamics over time for each task condition. Amplitude in the BBG frequency range is increased during the cue and early task performance of attention conditions (search/add). (C) Group mean (nprobes = 29, nsubjects = 19) BBG amplitude (with s.e.m. shading) over time, aligned to trial onset, across conditions for all dPCC electrodes. Black vertical lines indicate time of cue and task onset. (D) Group mean BBG amplitude (with s.e.m.) during early task execution (task onset to 1000 ms) across conditions for all dPCC electrodes. Together, these data show increased activity of dPCC populations during early task execution of executive attention conditions, consistent with the CCN. See Figure 2\u2014figure supplement 1 for vPCC data.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80722/elife-80722-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Location of a representative vPCC electrode in subject N12. (B) Time-frequency spectrogram from electrode in (A) depicting amplitude (% change) dynamics over time for each task condition. Amplitude in the BBG frequency range is increased during the execution of episodic conditions (past/future). (C) Group mean (nprobes = 6) BBG amplitude (with s.e.m. shading) over time, aligned to trial onset, across conditions for all vPCC electrodes. Black vertical lines indicate time of cue and task onset. (D) Group mean BBG amplitude (with s.e.m.) during late task execution (2000\u20133000 ms after task onset) across conditions for all vPCC electrodes. Together, these data show sustained increased activity of vPCC populations during execution of episodic conditions, consistent with the DMN.\n\n### Anatomical organization of PCC activity\n\nTo examine the distribution of responses across PCC recording sites, all electrode locations were normalized to MNI space and depicted with their respective mean BBG amplitude for early and late time periods of task execution for the combined executive (search/add) and episodic (past/future) conditions (Figure 3; See Methods). As shown in Figure 3A, executive activity during an early time window (task onset to 1 s) was maximal for sites closer to the callosal sulcus within dPCC (i.e. inferior aspect of dPCC). When considering a later time period of task execution, 2\u20133 s after task onset, population selectivity appeared to follow a more dorsal/ventral gradient with executive activity more dorsal and mnemonic activity more ventral within PCC (Figure 3C/D). While PCC is often viewed as synonymous with DMN function, human neuroimaging often reports on executive control tasks engaging dPCC (Leech et al., 2011). Indeed, meta-analytic association of neuroimaging studies for the term \u2018cognitive control\u2019 identifies commonly reported activations within the inferior aspect of dPCC (Neurosynth association test; n studies = 598). The centroid of this cluster (threshold z>4) is shown in Figure 3 (green hexagon), proximal to many recording sites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80722/elife-80722-fig3-v1.jpg)\n\n**Figure 3.:** Mean LFP BBG response for each macro-electrode site within PCC averaged for the executive (search/add) (A/B) and episodic (past/future) (C/D) task conditions during early (task onset to 1000 ms; left) and late (2000\u20133000 ms into task; right) task execution. Electrode coordinates are shown in MNI voxel space, collapsed for the x-dimension (i.e. collapsed for left/right hemispheres). Green symbol indicates the centroid maxima of the association map for search term \u2018cognitive control\u2019 at z>4.0 from Neurosynth meta-analysis. BBG responses predominate for the executive task conditions during the early task window, specifically for electrodes more proximal to the callosal sulcus. However, BBG responses to the episodic task conditions emerge during the late task window, specifically for more ventral sites. Ventral PCC electrodes (n=6) are indicated with a dashed outline.\n\n### Task selectivity of single units in dorsal PCC\n\nMicrowires extending from the distal tip of a subset of sEEG probes allowed for recording, detecting, and sorting single unit spiking activity within dPCC (nprobes = 6; nunits = 91; See Methods). Overall, PCC neurons varied in their mean firing rate, but predominately displayed sparse firing properties, with a group mean spike rate of 1.7 Hz (across entire task). Initially, when averaging all units, group mean firing rates suggested limited task specific responses and wide variability (Figure 4\u2014figure supplement 1A). Inspection of individual firing rates indicated this was due to a diversity of opposing functional selectivity profiles across units. Therefore, we applied unsupervised hierarchical clustering of units based on the similarity of task response profiles to identify putative functional types (See Methods; Figure 4\u2014figure supplement 1). Strikingly, this clustering revealed four clear functional types, with several unique response features. Figure 4 shows example unit raster plots and instantaneous firing rates over time for each of the four identified cell types. Two functional types (1 and 2) showed increased firing rates to the executive task conditions, consistent with LFP findings. However, these units displayed a more specific level of selectivity than that of the population data. These two functional types showed condition-specific selectivity within the executive tasks, where Type 1 (nunits = 13) was selective for the search condition only, whereas Type 2 (nunits = 34) was selective for the add condition only. Similar to LFP BBG responses, Type 1 and 2 units showed increased activity beginning during the cue period and continuing to increase with task engagement. Overall, Type 1 and 2 unit groups are consistent with LFP evidence for CCN-like executive processing within dPCC but suggest distinct functional cell types underlie the observed LFP BBG responses. In contrast to the LFP data, two additional functional unit groups reliably showed response profiles consistent with the DMN. Whereby, Type 3 units (nunits = 26), displayed firing rates that were increased for both the past and future episodic conditions, weakly elevated for the rest condition, and suppressed for both executive task conditions (search/add; Figure 4C). Such a response profile is highly consistent with the DMN predicted responses (Figure 1D). Furthermore, unlike Type 1 and 2 units, Type 3 units showed a more delayed increase in firing rate, occurring well after the start of task engagement. Finally, Type 4 units (nunits = 18) primarily displayed increased firing rates to the rest condition, which is another related functional property often associated with the DMN (Dastjerdi et al., 2011). These units, which typically showed higher basal firing rates, increased firing after the cue was presented. Consistent with our observations, there was initially no significant main effect of task condition on firing rate (p=0.55) prior to considering cluster type. There was, however, a significant effect of cluster type on mean task firing rate (p=0.01) and a significant interaction between task condition and cluster type (p<0.0001). To quantify the consistency of cluster membership, we performed hierarchical clustering through a complete leave-one-out process, resulting in a 94% identical cluster rate. Importantly, each of the four functional cell types were observed on multiple microwire probes, indicating that none of the cluster types originated from a single subject or recording site. Furthermore, each microwire probe gave rise to units of different selectivity types, suggesting a more mixed organization at the single unit level. Together, these findings in part support LFP observations, but further suggest a richer and more complex array of functional organization within dPCC. These data provide the first single unit evidence of both CCN and DMN function within human PCC.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80722/elife-80722-fig4-v1.jpg)\n\n**Figure 4.:** (A) Example isolated single unit waveforms. (B) Raster plots and instantaneous firing rate traces for four example isolated single units shown in (A). Example units show distinct functional selectivity profiles across task conditions. (C) Mean instantaneous firing rates (with s.e.m. shading) across task conditions for the four functional single unit types identified based on unsupervised similarity clustering (See Methods & Figure 4\u2014figure supplement 1; Type 1 nunits = 13; Type 2 nunits = 34; Type 3 nunits = 26; Type 4 nunits = 18). (D) Mean firing rate (with s.e.m.) for the four functional single unit types (averaged over task onset to 2 s into task execution). In (B) and (C), black vertical lines indicate time of cue and task onset.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80722/elife-80722-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Group averaged firing rate (with s.e.m.) for all isolated units (nunits = 91) across task conditions. Overall, group data showed modest task modulation and condition selectivity. This initial observation led to the examination of individual unit response profiles, suggesting a diversity in task selectivity. Therefore, single unit data was grouped based on an unsupervised hierarchical clustering approach. To do so, a task response feature was constructed by concatenating mean firing rates for each task condition (window: cue +3 s) to capture the putative dynamics and selectivity of each unit, with seven example units depicted here (B). All unit response features were then correlated and clustered to identify putative functional response types. (C) Unsorted correlation matrix based on all unit response features. (D) Dendrogram showing agglomerative hierarchical clustering of all units (based on correlation distance, i.e. 1-r). Clustering revealed four distinct functional response types (See Methods).\n\n## Discussion\n\nIntracranial recordings targeting human dPCC revealed strong electrophysiological evidence of executive task engagement. Dorsal PCC neural populations, as captured by LFP broadband gamma activity, displayed executive processing activity profiles consistent with that of cognitive control regions, as opposed to the episodic/DMN activity commonly attributed to the entire PCC (Fox et al., 2018). Across-subject consideration of the spatial organization of population responses showed some clustering of executive selectivity inferior within dPCC near the callosal sulcus. The unique opportunity to record single neuron activity in human dPCC illuminated a far richer functional heterogeneity, beyond what could be discerned at the population level. Neurons in dPCC exhibited distinct selectivity profiles for specific executive attention tasks (search or add), consistent with, but more selective than, LFP data. In addition, while not observed in the LFP, a distinct set of neurons showed a clear DMN type of functional profile selective to either episodic processing (past and future) conditions or rest periods. Together, these findings allow for reconciliation of conflicting reports of PCC function between species and begin to unveil the complex functional contributions of single neurons in dPCC to executive and episodic processing.\n\n### Executive processing in human PCC\n\nHistorically, human PCC has been functionally considered within its role as a member of the DMN, active during internally focused cognition and memory retrieval and deactivated during attention demanding tasks (Buckner et al., 2008; Buckner and DiNicola, 2019). Such a functional role of PCC is in direct contrast to the functional view predominating from non-human primate electrophysiology studies, examining its contributions to executive processes including strategy selection and decision making (Pearson et al., 2011). Based on the common dorsal targeting of PCC recordings in these studies (termed area CGp), we sought to reconcile conflicting reports by focusing on the electrophysiology of human dPCC during a task that required performance of both executive and episodic processing. We found that neural populations in human dPCC showed significantly stronger BBG amplitude LFP responses during executive attention conditions (search/add) than episodic retrieval conditions, reflective of executive processing. Thus, when specifically examining dorsal PCC, population selectivity is more cohesive with the non-human primate electrophysiological data than the traditional DMN view of PCC in the human literature. By providing electrophysiological evidence of executive activity within human dPCC, these findings provide evidence of homology between the functions of macaque area CGp and human dPCC (i.e. area 23d in both species Vogt et al., 1987; Vogt et al., 1995). Further, they highlight the importance of considering subregional variation in PCC. Importantly, these findings are consistent with a selection of literature from human neuroimaging, typically unincorporated with the DMN/memory literature (Acikalin et al., 2017), which implicates specifically dPCC with executive control processes as well as certain aspects of value-based decisions (Bartra et al., 2013; Clithero and Rangel, 2014; Oldham et al., 2018).\n\n### Functional organization of PCC\n\nThe heterogeneity of functional responses in PCC prompts the question of the spatial organization of the region. As previously noted, cytoarchitecture, structural connectivity, and network parcellations suggest subregional distinctions between dorsal and ventral PCC (Vogt et al., 1995; Vincent et al., 2008; Greicius et al., 2009). Electrophysiology studies, though limited, have alternatively suggested a more mixed functional mosaic throughout PCC and posteromedial cortex more broadly (Daitch and Parvizi, 2018). Our findings reveal clustering of early executive selectivity inferiorly within dPCC along the callosal sulcus, adding to evidence for a dorsal/ventral gradient for executive and episodic responses. Electrodes with executive activity were observed proximal to voxels associated with \u2018cognitive control\u2019 in fMRI studies, linking our findings with dPCC activations appearing in neuroimaging data. These results begin to illuminate that there is some functional organization of heterogeneous activity on the population level, as opposed to a totally mixed mosaic. Population selectivity appears to vary by dorsal/ventral subregions, though the division between subregions is complex and likely subject to individual differences. Regarding the present study, we note that our focus was on dPCC, with vPCC being more sparsely sampled, limiting a full characterization of functional gradients. However, we also note that our vPCC findings are consistent with a number of intracranial studies showing DMN-like responses within PCC (Fox et al., 2018). Precision fMRI within individuals emphasizes the impact of individual variability, particularly in associative cortices and their putative networks (Braga and Buckner, 2017). Indeed, precision neuroimaging specifically highlights the dPCC as region of interest in assessing individual variability (Gordon et al., 2017a). A much larger spatial sampling of recording sites throughout dorsal and ventral PCC, in addition to further consideration of individual anatomy, will be required to determine this organization. As precision functional data might not always be available for individuals, how might functional organization within PCC be inferred? Our electrophysiological observations are broadly consistent with recent large-scale examination of PCC sulcal anatomy which identified a new tertiary sulcus (inframarginal sulcus) as a useful landmark for the transition from DMN to CCN within dPCC (Willbrand et al., 2022). Further integration of invasive electrophysiology and precision neuroimaging within subjects will be critical for elucidating key features of PCC functional neuroanatomy and its variability across individuals (Gordon et al., 2017b).\n\n### Single neuron executive and episodic selectivity\n\nAcquisition of single neuron spiking activity within human dPCC unveiled distinct functional profiles and organizational principles not observable through population recordings alone. Functional clustering of single unit responses during the attention/memory switch task revealed four unique functional cell types within dPCC. Interestingly, the majority of dPCC neurons displayed specific selectivity for different executive tasks, preferentially responding to one of the two attention conditions (search or add). This condition-specific differentiation is not apparent in the population data, where LFP responses were typically seen for both or neither of the attention conditions. A third type of dPCC neuron possessed episodic selectivity, with increased firing rates for both the past and future conditions, yet suppression for both executive conditions. This indicates that episodic/DMN activity, the focus of human neuroimaging work, does indeed exist in dPCC, though appears to be outweighed by executive activity when looking at the population level. Finally, a fourth type included neurons with high rest activity, fitting the original historical view of the DMN as task-negative, suggesting that the high basal activity of PCC during rest is potentially driven by a subset of neurons differentiable from those active during retrieval (Dastjerdi et al., 2011). Notably, differences between the LFP and single unit data result in varying interpretations of PCC organization. Each microwire probe gave rise to units of multiple functional selectivity types, revealing a more mixed organization on the single unit level. This considerable heterogeneity at the neuronal level likely contributes to the complex pattern of spatially overlapping yet functionally distinct subregions within dPCC, reflecting a convergence of multiple brain networks, as observed by data-driven functional connectivity maps within the region (Leech et al., 2011; Leech et al., 2012). Our findings provide the first single unit evidence of executive and episodic function within human PCC, and in turn the CCN and DMN. Further single-unit studies during cognitive control and decision-making tasks will be vital for more precise identification of PCC neural selectivity during executive behavior and improved understanding of the functional homology with the non-human primate.\n\nIn conclusion, our findings bridge previously incongruent views of PCC function between fields by targeting the dPCC subregion and identifying executive processing in human PCC populations. Further, this work represents the first human single neuron evidence of executive and episodic selectivity in PCC, revealing the complex functional contributions of dPCC neurons. Together, they inform a view of PCC as a heterogeneous region composed of dorsal and ventral subregions specializing in executive and episodic processing respectively. Careful consideration of this functional neuroanatomy and its further elucidation will be critical for better understanding the role of PCC in cognition and disease.\n\n## Methods\n\n### Human subjects\n\nIntracranial recordings from the human posterior cingulate cortex were obtained from 20 subjects (N1-N20; 8 female, 12 male; mean age 34.1 years., range 19\u201356 years) undergoing invasive monitoring as part of their treatment for refractory epilepsy at Baylor St. Luke\u2019s Medical Center (Houston, Texas, USA). Subject information is detailed in Supplementary file 1. All decisions regarding sEEG trajectories were made solely on the basis of clinical criteria. Experimental protocols were approved by the Institution Review Board at Baylor College of Medicine (IRB protocol number H-18112), with subjects providing verbal and written informed consent to participate in this study. We did not include patients with epileptic foci, anatomical abnormalities, or prior surgical resection in posteromedial regions.\n\n### Electrode arrays\n\nRecordings were performed using sEEG depth electrodes (PMT Corp., MN, USA) and Behnke-Fried macro-micro probes (Ad-Tech Medical Instrument Corp., WI, USA). Clinical depth electrodes consist of 8\u201312 macro contacts, each 1.3\u20132.0 mm in diameter, along the electrode shaft. In addition to macro contacts, Behnke-Fried electrodes also included a bundle of 8 shielded microwires and 1 unshielded reference microwire, 38\u201340 \u00b5m in diameter each, extending approximately 4 mm from the distal tip. We recorded from 35 PCC electrodes across subjects, 14 of which contained microwires.\n\n### Behavioral task\n\nSubjects performed an attention/memory switch task consisting of randomly alternating trials of executive attention and episodic memory conditions (see Figure 1C). The task included two attentional conditions (search and add), two episodic conditions (past and future), and a rest condition. At the onset of each trial, subjects were presented with a cue indicating the upcoming condition (e.g., \u2018SEARCH\u2019) for 500 ms. Next, for each trial excluding rest conditions, the task screen was presented until subjects provided a button press to indicate task completion or a maximum of 10 s was reached (mean duration 7.27 s). The rest period lasted for a fixed 4 s duration. Finally, subjects were asked to provide a condition-specific answer during a response period. During the search condition, subjects were presented with a matrix of multi-colored letters or numbers and asked to find the one letter/number that was slightly rotated, then respond correctly by indicting the color of the target from five alternative options. During the add condition, subjects were asked to calculate the sum of five single digit numerals and then respond correctly by indicating the correct sum from five alterative options. Prior to testing, subjects were instructed to perform the search and add conditions as quickly and accurately as possible. During the episodic conditions (past and future), subjects were presented with statements that either prompted them to recall a past event (e.g. \u2018Think about the last time you ate cake. What flavor was it?\u2019) or to imagine a future event (e.g. \u2018Imagine going to a baseball game.\u2019). Prior to testing, subjects were instructed to visualize specific past or future events in as much detail as possible. Subjects were required to rate their recall/imaginary experience on a vividness scale of five options: \u2018strong\u2019, \u2018moderately strong\u2019, \u2018neutral\u2019, \u2018moderately weak\u2019, or \u2018weak\u2019. During the rest condition, subjects fixated on a central cross for 4 s with no response period. There were 18 trials per condition, for a total of 90 trials per task run. Subjects typically performed 2 unique runs of the task, each approximately 15\u201320 min in duration. All data analyses combine block runs. The task was presented on an adjustable monitor (1920 x 1,080 resolution, 47.5 x 26.7 cm screen size) at a viewing distance of 57 cm. Psychtoolbox functions (v3.0.12) running in MATLAB (v2017a, MathWorks, MA, USA) were used to program the experiment. A total of 40 blocks of the task were completed across the 20 subjects.\n\n### Electrophysiological recording\n\nData was acquired at two electrophysiological scales: macroelectrode LFP and microwire single unit recordings. LFP data was acquired at a sampling rate of 2 kHz and bandpass of 0.3\u2013500 Hz using a Blackrock Cerebus (Blackrock Microsystems, UT, USA) system. Initial recordings were referenced to a selected depth electrode contact within the white matter, distant from grey matter or pathological zones. Single unit data was acquired at a sampling rate of 30 kHz using either a Blackrock Cerebus (nsubjects = 13; Blackrock Microsystems, UT, USA) system or Ripple Micro2 (nsubjects = 1; Ripple Neuro, UT, USA). For each Behnke-Fried probe, the 8 microwires were internally referenced to a 9th unshielded microwire. During all recordings, stimulus presentation was tracked using a photodiode sensor (attached to stimulus monitor) synchronously recorded at 30 kHz. All additional data processing was performed offline.\n\n### Electrode localization and selection\n\nTo identify electrodes located within the posterior cingulate cortex, a post-operative CT scan was co-registered to a pre-operative T1 anatomical MRI scan for each subject, using FSL and AFNI (Cox, 1996; Jenkinson et al., 2012). The volume location of each electrode was identified by clear hyperintensities on the aligned CT using AFNI and visualized using iELVis software functions in MATLAB (v2016a, MathWorks, MA, USA) (Groppe et al., 2017). Electrodes located within Brodmann areas 23 and 31, with boundaries defined by the marginal ramus of the cingulate sulcus, corpus callosum, parieto-occipital sulcus, and splenial sulcus, were identified and included in this study. To compare electrode locations across subjects, identified electrode coordinates were transformed to the standard Montreal Neurological Institute (MNI) 152 space (Evans et al., 2012). Transformation of electrodes to MNI space was performed using the ANTs function antsRegistrationSyN.sh (Avants et al., 2011; Tustison and Avants, 2013). After first aligning each subject\u2019s anatomical T1 scan to the MNI template, the resulting transform parameters for each subject were then used to perform the same alignment of electrode coordinates.\n\n### Macroelectrode signal preprocessing\n\nAll macro sEEG electrode signal processing was performed using custom scripts in MATLAB (v2018b, MathWorks, MA, USA). First, raw signals were inspected for line noise, recording artifacts, or interictal epileptic spikes. Electrodes with clear epileptic or artifactual activity were excluded from further analysis. Next, all electrode contacts were notch filtered (60 Hz and harmonics). Following a bipolar referencing scheme, each macro channel was re-referenced to its adjacent channel on the same probe. Finally, all signals were down sampled to 1 kHz.\n\n### Spectral decomposition of LFP activity\n\nFiltered, re-referenced, and down sampled LFP signals were spectrally decomposed using Morlet wavelets, with center frequencies spaced linearly from 2 to 200 Hz in 1 Hz steps (7 cycles). Broadband gamma (BBG) was defined as neural activity between 70 and 150 Hz (Bartoli et al., 2019). The instantaneous amplitude was normalized into a percent change signal by applying a baseline correction at each time-frequency point (baseline division, using the average pre-stimulus values \u2212500 ms to 0 ms for each trial). For group analysis, electrodes with multiple recording blocks were first averaged together for an electrode mean, after which electrodes were averaged together for a group mean.\n\n### Microwire signal preprocessing\n\nMicrowire signals were bandpass filtered between 300 and 3000 Hz prior to spike extraction. Spike detection and sorting was done with Wave_clus 3 (Chaure et al., 2018) in MATLAB (v2018b, MathWorks, MA, USA). The voltage threshold used for spike detection was a negative threshold of the signal mean plus 5 standard deviations. Isolated waveforms were segregated in a semi-automated manner. The times of threshold crossing for identified units were retained for further analysis. Based on previously used criterion (Rey et al., 2020), units were classified as single- or multi-units based on the spike shape and ISI distribution of the cluster (single-units with <1% of spikes with an ISI less than 3ms). Across the 14 Behnke-Fried probes implanted, 8 were excluded due to noise or failure to detect single unit activity, which included the single vPCC microwire probe. Across the remaining 6 Behnke-Fried probes, 95 single-units were isolated.\n\n### Functional grouping of single unit activity\n\nTo examine firing rate properties of single unit activity, spike times were convolved with a 10 ms (standard deviation) Gaussian kernel to create an instantaneous firing rate. The distribution of firing rates was then inspected, with three outlier units (>5 standard deviations) and one duplicate unit identified and removed. Averaging the event-related instantaneous firing rate of the remaining 91 units produced limited evidence of any robust condition responses and displayed wide variance (Figure 4\u2014figure supplement 1A). Subsequent inspection of the individual unit event-related activity revealed a diversity of functional response profiles and differing basal firing rates (effectively cancelling condition specific effects when averaged; see Figure 4\u2014figure supplement 1). We therefore normalized basal firing rate differences by converting instantaneous firing rate from Hz to percent change relative to the pre-cue period, as done for the LFP data. Next, we concatenated the mean instantaneous firing rate (% change) for each task condition (from cue to 3 s post-cue) to create a task response feature vector for each unit (i.e. for each unit a time series was constructed by concatenating the mean responses over the first 3 s of each condition). This vector captures both condition selectivity as well as response time course for each unit. To identify any putative similarity between the functional responses of units, we performed unsupervised hierarchical clustering, as follows. First, all concatenated unit task response vectors noted above were correlated with each other to create a correlation or similarity matrix. Next, correlation values were inverted (1 \u2013 r) to obtain a distance matrix that was then subject to agglomerative hierarchical clustering (via linkage function in MATLAB). The resulting cluster tree or dendrogram was then inspected and revealed four main cluster branches (based on 90% max distance cut-off; Figure 4\u2014figure supplement 1D). Units were then grouped in these clusters to define functional Types 1\u20134. It is important to note, this unsupervised approach does not require specification of cluster number. To assess the consistency of cluster membership across units, we repeated the above clustering while iterating through a complete leave-one-out process (90 iterations). This resulted in a 94% (84/90) identical cluster rate. In addition, across the four clusters identified, units from multiple subjects were present in each (Type 1=4/6; Type 2=6/6; Type 3=5/6; Type 4=4/6). Therefore, the resulting clusters did not simply reflect the task or sample structure.\n\n### Statistical analysis\n\nAnalysis of BBG was performed using mixed-effects models with subject and electrode as random effects to account for nesting of multiple electrodes within each subject. To test pairwise differences between task conditions, Tukey\u2019s method was used with p-values adjusted for comparing a family of 5 estimates. For single unit data, a two-way ANOVA was used to examine the effects of task condition and cluster type on mean firing rate, as well as the interaction between task and cluster type. Statistical analyses were carried out using R statistical software.\n",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "8eca60aa-a04c-455a-bbc1-521057111150",
+      "submission_id": "c4e36cf2-c1b0-49f5-9cc0-ab7974d07275",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Muireann Irish, https://ror.org/0384j8v12 University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80722.sa0](https://doi.org/10.7554/eLife.80722.sa0)\n\nThis is an exciting manuscript that provides fundamental new insights into one of the most enigmatic brain regions; the posterior cingulate cortex. Using electrophysiological recordings from dorsal and ventral PCC subregions, the authors provide compelling evidence for a dorsal-executive and ventral-episodic functional subdivision. This paper will be of high interest to a broad range of neuroscientists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Muireann Irish, https://ror.org/0384j8v12 University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80722.sa1](https://doi.org/10.7554/eLife.80722.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Distinct population and single-neuron selectivity for executive and episodic processing in human dorsal posterior cingulate\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Robert Leech (Reviewer #2); Xaver Funk (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Why was only broadband \u03b3 considered? I think this is fine, but in terms of relating to other datasets (especially extra-cranial) does limit the interpretation somewhat.\n\n2. With the clustering, I was slightly unsure how this was performed; it would be useful to have more detail in terms of how the similarity matrix was generated. Also, with the statistics, comparing tasks/clusters probably needs some cross-validation, since the clustering is performed on task features (I think) and will bias towards finding significant differences in the ANOVA.\n\n3. What is the spatial distribution of the different clusters? Is this something that can be plotted? If so, it would be potentially very interesting.\n\n4. The statistical analysis of BBG in the ventral electrodes should be reported and vPCC electrodes should be indicated in Figure 3.\n\n5. Please include an analysis of the vPCC microwire probe.\n\n6. In case the statistics and locations of vPCC electrodes do not support the above-mentioned conclusion, I recommend that it should be qualified accordingly to include a statement about the vPCC data not being completely conclusive and that further complementary research within this region is warranted.\n\n7. Participants were excluded if they presented with frank anatomical abnormalities, however, it is not clear how this decision was made. Even if gross anatomical abnormalities are not evident, subtle changes in structural and functional connectivity might be present in this group. I wonder if the authors might therefore comment on how representative these results are to inform the functional architecture of the PCC and its subdivisions in general.\n\nReviewer #1 (Recommendations for the authors):\n\nI thoroughly enjoyed reading this manuscript and believe it will make an important contribution to the literature on the DMN, as well as episodic memory more broadly.\n\nMy main query is in relation to the generalisability of the current findings given that these participants are undergoing invasive monitoring for refractory epilepsy. The authors mention that participants were excluded if they presented with frank anatomical abnormalities, however it is not clear how this decision was made. Even if gross anatomical abnormalities are not evident, subtle changes in structural and functional connectivity might be present in this group. I wonder if the authors might therefore comment on how representative these results are to inform the functional architecture of the PCC and its subdivisions in general.\n\nReviewer #2 (Recommendations for the authors):\n\nI have some suggestions that might improve (mainly the presentation) of the manuscript.\n\nWhy was only broadband \u03b3 considered? I think this is fine, but in terms of relating to other datasets (especially extra-cranial) does limit the interpretation somewhat.\n\nWith the clustering, I was slightly unsure how this was performed: it would be useful to have more detail in terms of how the similarity matrix was generated. Also, with the statistics, comparing tasks/clusters probably needs some cross-validation, since the clustering is performed on task features (I think) and will bias towards finding significant differences in the ANOVA.\n\nWhat is the spatial distribution of the different clusters? Is this something that can be plotted? If so, it would be potentially very interesting.\n\nI am not clear if the data and code are going to be made openly available if the paper is accepted. Could this be clarified?\n\nThe results indicating considerable heterogeneity at a neuronal level might be interesting to interpret in the context of our paper (Leech et al., 2012, Journal of Neuroscience) which used a data-driven approach to discover a puzzling heterogeneity of patterns (including both CCN and DMN) overlapping within the dorsal PCC, but which (unlike the current manuscript) we didn't have the temporal/spatial resolution to disentangle.\n\nReviewer #3 (Recommendations for the authors):\n\nConsidering the major concern raised in the public review, I have the following suggestions to increase transparency and possibly adjust conclusions about vPCC:\n\n1. The statistical analysis of BBG in the ventral electrodes should be reported and vPCC electrodes should be indicated in figure 3.\n\n2. Include an analysis of the vPCC microwire probe.\n\n3. In case the statistics and locations of vPCC electrodes do not support the above-mentioned conclusion, I recommend that it should be qualified accordingly to include a statement about the vPCC data not being completely conclusive and that further complementary research within this region is warranted.\n\nFurther, I want to express that this kind of research is crucial right now for neuroscience moving forward. I have read about similar anatomical subdivisions within the precuneus, which also gets thrown into the DMN-bucket often (at least in human fMRI), even though anatomical connections and functional connectivity with both CCN and sensory systems clearly suggest a more diverse set of functions. I also see that you have data from many more electrodes, possibly within the precuneus and I suggest you to take a look at those (in case you are not doing so already) with a similar hypothesis.\n",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fbdade29-16b2-4ad7-819a-3fe3009b2567",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C1",
+      "claim": "Posterior cingulate cortex (PCC) is implicated in psychiatric and neurological disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior cingulate cortex (PCC) is an enigmatic region implicated in psychiatric and neurological disease, yet its role in cognition remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to existing literature on PCC's role in disease.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "b825d5a4-0414-42d6-9167-662eb63986b5",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C2",
+      "claim": "The role of PCC in cognition remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior cingulate cortex (PCC) is an enigmatic region implicated in psychiatric and neurological disease, yet its role in cognition remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "53e33888-b315-4072-bd84-b4010c26ceef",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C3",
+      "claim": "Human studies link PCC to episodic memory and default mode network (DMN).",
+      "claim_type": "EXPLICIT",
+      "source": "Human studies link PCC to episodic memory and default mode network (DMN), while findings from the non-human primate emphasize executive processes more associated with the cognitive control network (CCN) in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references existing human studies linking PCC to episodic memory and DMN.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "2b95302d-48b9-4a60-9dee-729fa181539e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C4",
+      "claim": "Findings from the non-human primate emphasize executive processes in PCC more associated with the cognitive control network (CCN) in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Human studies link PCC to episodic memory and default mode network (DMN), while findings from the non-human primate emphasize executive processes more associated with the cognitive control network (CCN) in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references existing non-human primate studies showing executive processes in PCC.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "8ac16b2a-a634-4b4d-b5d6-7655ca604b08",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C5",
+      "claim": "The difference between human and non-human primate findings reflects an important functional division between dorsal (executive) and ventral (episodic) PCC.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized this difference reflects an important functional division between dorsal (executive) and ventral (episodic) PCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' hypothesis based on inference from existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "7fbae1e2-ca7b-4be1-9a01-a51417a6da5b",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C6",
+      "claim": "Dorsal PCC population responses were significantly enhanced for executive, compared to episodic, task conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsal PCC population responses were significantly enhanced for executive, compared to episodic, task conditions, consistent with the CCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "c2cc29a5-b882-424e-9de9-c9c83ae9f498",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C7",
+      "claim": "Single unit recordings revealed four distinct functional types with unique executive (CCN) or episodic (DMN) response profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Single unit recordings, however, revealed four distinct functional types with unique executive (CCN) or episodic (DMN) response profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "44d31e62-df7b-483e-ba64-9479a65f78b4",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C8",
+      "claim": "PCC remains one of the least understood neocortical areas, with little consensus as to its role in cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being routinely observed in studies of human brain function, the posterior cingulate cortex (PCC) remains one of the least understood neocortical areas, with little consensus as to its role in cognition (Leech and Sharp, 2014; Leech and Smallwood, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "944e5898-9b11-4b34-9a5c-082223f82149",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C9",
+      "claim": "PCC reflects the caudal aspect of the cingulate cortex, wrapping around the posterior trunk and splenium of the corpus callosum.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomically, PCC reflects the caudal aspect of the cingulate cortex, wrapping around the posterior trunk and splenium of the corpus callosum (Vogt et al., 1995; Vogt et al., 2001; Margulies et al., 2009; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This anatomical description is supported by citations and Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "4d0330f7-2869-4aa6-8dfc-07048c2ca0cc",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C10",
+      "claim": "PCC displays high basal levels of metabolic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, PCC displays high basal levels of metabolic activity (Raichle et al., 2001; Buckner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "8e3ba3eb-bbd0-4ea8-849a-da8cadd7a623",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C11",
+      "claim": "A growing literature suggests PCC is implicated in the progression of neurodegenerative and psychiatric disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, a growing literature suggests PCC is implicated in the progression of neurodegenerative and psychiatric disease (Leech and Sharp, 2014; Vogt, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "ca9a9ac4-7d1a-4548-8274-ee21be15808a",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C12",
+      "claim": "The deep medial location and rich vascularization of PCC limit the occurrence of focal insult and corresponding neuropsychological findings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the deep medial location and rich vascularization of PCC (Bernier et al., 2018) limit the occurrence of focal insult and corresponding neuropsychological findings, often foundational to understanding many other brain regions (Vaidya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations regarding PCC anatomy and neuropsychological methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "fa9c3e5e-5c25-488e-bf59-8df0f5e71a2f",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C13",
+      "claim": "Human PCC is typically theorized within its role as a core node of the default mode network (DMN).",
+      "claim_type": "EXPLICIT",
+      "source": "At present, theorizing on the function of human PCC is typically limited to its role as a core node of the default mode network (DMN) (Raichle et al., 2001; Fox et al., 2005; Fransson, 2005; Fransson and Marrelec, 2008; Buckner and DiNicola, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to DMN literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "a2f45f9c-57d2-4466-a07f-83de413f2816",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C14",
+      "claim": "PCC, as part of the DMN, displays high basal levels of activity that are reduced during a variety of tasks, especially those requiring focused attention and cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereby, a large functional neuroimaging literature shows that PCC, as part of the DMN, displays high basal levels of activity that are reduced during a variety of tasks, especially those requiring focused attention and cognitive control (Shulman et al., 1997; Raichle et al., 2001; Harrison et al., 2008; Anticevic et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to neuroimaging studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "70e89c6e-2d7f-4d5c-8452-0ba027013f67",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C15",
+      "claim": "The DMN is often reported as being anti-correlated or oppositional to other brain systems, such as the dorsal attention or cognitive control networks (DAN; CCN) that are engaged during attention demanding tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the DMN is often reported as being anti-correlated or oppositional to other brain systems, such as the dorsal attention or cognitive control networks (DAN; CCN) that are engaged during attention demanding tasks (Fox et al., 2005; Fransson, 2005; Uddin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to network neuroscience literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f074c369-de65-4e03-b7d4-74897717a2f7",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C16",
+      "claim": "The DMN, and in turn PCC, has been termed 'task-negative', as opposed to 'task-positive' regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings led to the DMN, and in turn PCC, to be termed 'task-negative', as opposed to 'task-positive' regions (Fox et al., 2005; Uddin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to literature defining task-negative networks.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "7a164546-180e-4fa3-83b1-002e7a83600e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C17",
+      "claim": "Hemodynamic activity in PCC is not decreased in all tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hemodynamic activity in PCC is not decreased in all tasks (Spreng, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "1ca1a070-fd38-4097-b53b-c2a22fe8bf65",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C18",
+      "claim": "PCC activity increases during episodic memory retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it increases during episodic memory retrieval (Shannon and Buckner, 2004; Wagner et al., 2005; Vincent et al., 2006) and other internally focused cognitive tasks associated with self-referential thought and envisioning past or future scenarios (Svoboda et al., 2006; Hassabis and Maguire, 2007; Harrison et al., 2008; Spreng et al., 2009; Buckner and DiNicola, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to neuroimaging studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "9c4dd013-5fdd-4a4b-b922-b6c6df7d49c3",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C19",
+      "claim": "PCC activity increases during other internally focused cognitive tasks associated with self-referential thought and envisioning past or future scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it increases during episodic memory retrieval (Shannon and Buckner, 2004; Wagner et al., 2005; Vincent et al., 2006) and other internally focused cognitive tasks associated with self-referential thought and envisioning past or future scenarios (Svoboda et al., 2006; Hassabis and Maguire, 2007; Harrison et al., 2008; Spreng et al., 2009; Buckner and DiNicola, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to neuroimaging studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "6674f985-676e-4620-94b7-212fb8ab0d0a",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C20",
+      "claim": "PCC/DMN function is associated with 'internally', versus 'externally', focused cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings highlight an alternate dichotomy where PCC/DMN function is associated with 'internally', versus 'externally', focused cognition (Buckner and Carroll, 2007; Andrews-Hanna et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical frameworks.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "b709d520-d8ab-461d-bd6e-8023f70fd1e3",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C21",
+      "claim": "Human intracranial recordings of PCC and surrounding posteromedial cortex (PMC) suggest clear electrophysiological evidence of activity suppression during external attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting these neuroimaging findings, human intracranial recordings of PCC and surrounding posteromedial cortex (PMC) suggest clear electrophysiological evidence of activity suppression during external attention (Miller et al., 2009; Dastjerdi et al., 2011; Ossand\u00f3n et al., 2011; Foster et al., 2012; Foster et al., 2015) and activity enhancement during cued episodic thought (Foster et al., 2012; Foster et al., 2015; Fox et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to intracranial recording studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "8808794f-bf8d-42a3-bbf7-5d6204036548",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C22",
+      "claim": "Human intracranial recordings of PCC and surrounding posteromedial cortex (PMC) suggest activity enhancement during cued episodic thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting these neuroimaging findings, human intracranial recordings of PCC and surrounding posteromedial cortex (PMC) suggest clear electrophysiological evidence of activity suppression during external attention (Miller et al., 2009; Dastjerdi et al., 2011; Ossand\u00f3n et al., 2011; Foster et al., 2012; Foster et al., 2015) and activity enhancement during cued episodic thought (Foster et al., 2012; Foster et al., 2015; Fox et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to intracranial recording studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "ccbbaabe-3f47-468a-969f-9afb5eb78af5",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C23",
+      "claim": "Electrophysiological studies in the non-human primate have focused on the contributions of PCC to cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, electrophysiological studies in the non-human primate have focused on the contributions of PCC to cognitive control (Hayden et al., 2010), decision making (McCoy et al., 2003; McCoy and Platt, 2005; Pearson et al., 2009), and value judgement (Hayden et al., 2008; Heilbronner et al., 2011) \u2013 conditions thought to anti-correlate with PCC engagement in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to non-human primate studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "e2013bfa-6c81-4df6-8215-decd2148c831",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C24",
+      "claim": "Electrophysiological studies in the non-human primate have focused on the contributions of PCC to decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, electrophysiological studies in the non-human primate have focused on the contributions of PCC to cognitive control (Hayden et al., 2010), decision making (McCoy et al., 2003; McCoy and Platt, 2005; Pearson et al., 2009), and value judgement (Hayden et al., 2008; Heilbronner et al., 2011) \u2013 conditions thought to anti-correlate with PCC engagement in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to non-human primate studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f6e3fa77-09a4-4413-ba99-6efce552791f",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C25",
+      "claim": "Electrophysiological studies in the non-human primate have focused on the contributions of PCC to value judgement.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, electrophysiological studies in the non-human primate have focused on the contributions of PCC to cognitive control (Hayden et al., 2010), decision making (McCoy et al., 2003; McCoy and Platt, 2005; Pearson et al., 2009), and value judgement (Hayden et al., 2008; Heilbronner et al., 2011) \u2013 conditions thought to anti-correlate with PCC engagement in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to non-human primate studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "88e73f74-482b-4d46-b794-b7efdae81103",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C26",
+      "claim": "Single unit recordings in the macaque PCC during economic decisions have led to a hypothesized role in strategy selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, single unit recordings in the macaque PCC during economic decisions have led to a hypothesized role in strategy selection (Pearson et al., 2009; Pearson et al., 2011; Heilbronner and Platt, 2013), further emphasizing a much more executive function, in apparent contrast to the common focus of human data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to macaque studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "40c75691-83ad-4e72-89e0-8cf48b6ac049",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C27",
+      "claim": "Studies of human decision making and value judgements consistently observe PCC engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, studies of human decision making and value judgements consistently observe PCC engagement (Bartra et al., 2013; Clithero and Rangel, 2014; Oldham et al., 2018), yet such findings have received limited attention (compared to anterior cingulate cortex) and therefore limited integration with studies of the DMN (Acikalin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to human neuroimaging studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "6edbc6fb-cdb5-4542-b1ec-47ef78f5f241",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C28",
+      "claim": "Contemporary studies of human brain network organization suggest that PCC contains putative subregions associated with multiple distinct functional systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Contemporary studies of human brain network organization suggest that PCC contains putative subregions associated with multiple distinct functional systems (Andrews-Hanna et al., 2010; Yeo et al., 2011; Leech et al., 2012; Bzdok et al., 2015; Glasser et al., 2016; Braga and Buckner, 2017; Gordon et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to network parcellation studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f20f4bbc-d80a-40dc-8fba-7a034998c689",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C29",
+      "claim": "Functional connectivity patterns are consistent with estimated structural connectivity, with prefrontal cingulum tracts entering primarily via the dorsal aspect of PCC, whereas medial temporal lobe tracts enter via its ventral aspect.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, functional connectivity patterns are consistent with estimated structural connectivity, with prefrontal cingulum tracts entering primarily via the dorsal aspect of PCC, whereas medial temporal lobe tracts enter via its ventral aspect (Greicius et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a connectivity study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "1eee16db-054f-4f5f-b895-762e530ce242",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C30",
+      "claim": "Evidence for PCC subregional organization derives from homologous cytoarchitectural and connectivity data in humans and non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for PCC subregional organization also derives from homologous cytoarchitectural and connectivity data in humans and non-human primates (Vogt et al., 1995; Vogt et al., 2001; Vogt and Laureys, 2005; Parvizi et al., 2006; Vogt et al., 2006; Margulies et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "d15b0210-c0f2-44e4-9012-57e2a7f478c8",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C31",
+      "claim": "Dorsal PCC (dPCC) may be associated with executive control systems of the frontal lobe and ventral PCC (vPCC) may be associated with episodic memory systems of the medial-temporal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a division suggests that dorsal PCC (dPCC) may be associated with executive control systems of the frontal lobe and ventral PCC (vPCC) may be associated with episodic memory systems of the medial-temporal lobe (Vincent et al., 2008; Spreng et al., 2010; Leech et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to connectivity studies and represents an inference about functional organization.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "4e4ebd7c-5e91-4f5e-83d4-8c1c3848c90d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C32",
+      "claim": "Studies in the non-human primate have exclusively focused on the dPCC (often termed area CGp).",
+      "claim_type": "EXPLICIT",
+      "source": "This subregional perspective better reconciles functional views of PCC across species, as studies in the non-human primate have exclusively focused on the dPCC (often termed area CGp; McCoy et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to non-human primate literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "a97c7293-784a-4d3e-bd37-0a28a688729d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C33",
+      "claim": "Executive attention demanding tasks typically suppress electrophysiological activity within human PCC, consistent with DMN function.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, extant data from humans suggests executive attention demanding tasks typically suppress electrophysiological activity within human PCC, consistent with DMN function (Buckner and DiNicola, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "c6ae81ec-2e0b-4191-ac95-37da4990cbb2",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C34",
+      "claim": "Electrophysiological evidence of PCC engagement during executive tasks, consistent with CCN function, is more limited.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, electrophysiological evidence of PCC engagement during executive tasks, consistent with CCN function, is more limited (Daitch and Parvizi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an electrophysiology study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "074dde83-1cdf-4a65-88b3-cf33eea4d2b5",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C35",
+      "claim": "Subregions of PCC, specifically within its dorsal aspect, should be engaged during executive attention demanding tasks more than memory demanding tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on human neuroimaging and non-human primate electrophysiology, we hypothesized that subregions of PCC, specifically within its dorsal aspect, should be engaged during executive attention demanding tasks more than memory demanding tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' hypothesis based on inference from prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "265b27df-06a1-4b03-9dce-172579557e67",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C36",
+      "claim": "dPCC should reflect an electrophysiological response profile more consistent with the CCN rather than the DMN.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereby, dPCC should reflect an electrophysiological response profile more consistent with the CCN rather than the DMN (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the authors' hypothesis, illustrated in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "4dca346c-1998-421f-8937-0983120a7217",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C37",
+      "claim": "Neural populations within dPCC showed significantly greater responses (in broadband gamma, BBG; 70\u2013150 Hz) during executive compared to episodic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that neural populations within dPCC, as captured by the LFP, showed significantly greater responses (in broadband gamma, BBG; 70\u2013150 Hz) during executive compared to episodic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f05bf1dd-80ed-4e3d-87a0-43a3b2fef463",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C38",
+      "claim": "A majority of single units responded selectively to only one of the two executive attention tasks (visual search or arithmetic).",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of single units responded selectively to only one of the two executive attention tasks (visual search or arithmetic), suggesting distinct populations underlie the observed CCN-like LFP response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "41d6f5bb-b9ec-4e7a-b92d-c590bb78cfad",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C39",
+      "claim": "A third functional cell type showed clear selectivity to both episodic memory conditions (past and future event scenarios) as well as suppression to both executive task conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a third functional cell type showed clear selectivity to both episodic memory conditions (past and future event scenarios) as well as suppression to both executive task conditions, highly consistent with DMN function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "126c258a-1baf-4af2-bb34-d5ddb735a6ee",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C40",
+      "claim": "A final functional cell type displayed increased firing during cued rest periods, also a feature of the DMN.",
+      "claim_type": "EXPLICIT",
+      "source": "A final functional cell type displayed increased firing during cued rest periods, also a feature of the DMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "b828416e-13d9-41bd-bb80-12eeb46a410d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C41",
+      "claim": "Electrophysiological activity in PCC was recorded by stereo-electroencephalography (sEEG) depth electrodes in 20 subjects undergoing invasive monitoring for epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological activity in PCC was recorded by stereo-electroencephalography (sEEG) depth electrodes in 20 subjects undergoing invasive monitoring for epilepsy (female = 8; male = 12; see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods and subject population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "111d9b33-ae65-4d3e-9086-7e9ec06c5069",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C42",
+      "claim": "Across subjects, 35 electrodes were localized to the PCC region, 29 within dPCC and 6 within vPCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Across subjects, 35 electrodes were localized to the PCC region, 29 within dPCC and 6 within vPCC (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the electrode localization data, shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "c24e6dc0-73d1-4fbe-95b0-5100d07cb72f",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C43",
+      "claim": "Task performance showed high accuracy for the executive conditions (mean accuracy: 86.47% for search; 92.59% for add).",
+      "claim_type": "EXPLICIT",
+      "source": "Task performance showed high accuracy for the executive conditions (mean accuracy: 86.47% for search; 92.59% for add) and robust vividness scores for the cued episodic conditions (modal vividness response: 'strong' for past; 'strong' for future).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes behavioral performance data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "45e907ef-2945-4ae0-8d5f-4793b10aded9",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C44",
+      "claim": "Task performance showed robust vividness scores for the cued episodic conditions (modal vividness response: 'strong' for past; 'strong' for future).",
+      "claim_type": "EXPLICIT",
+      "source": "Task performance showed high accuracy for the executive conditions (mean accuracy: 86.47% for search; 92.59% for add) and robust vividness scores for the cued episodic conditions (modal vividness response: 'strong' for past; 'strong' for future).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes behavioral performance data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "75d026aa-03bd-4b8e-9dbf-bc7fcd4df31a",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C45",
+      "claim": "BBG activity is strongly correlated with both blood-oxygen-level-dependent (BOLD) fMRI and population firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "BBG activity is strongly correlated with both blood-oxygen-level-dependent (BOLD) fMRI and population firing rate, making it a useful marker for reconciling human neuroimaging and non-human primate electrophysiology findings (Miller, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on BBG.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "d5bc1f04-cc64-42ac-8fbd-a1ec9c92dce3",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C46",
+      "claim": "dPCC displayed increased activity specifically within the BBG range during the cue and early task execution of the executive attention conditions, search and add.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that dPCC displayed increased activity specifically within the BBG range during the cue and early task execution of the executive attention conditions, search and add.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "9489ae04-6f2a-4e99-a408-4cfb878cece1",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C47",
+      "claim": "Group data shows BBG activation within dPCC to be transient and peaked following the onset of search and add tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Group data (nprobes = 29, nsubjects = 19) shows BBG activation within dPCC to be transient and peaked following the onset of search and add tasks (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by group-level data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "16ebfc04-2619-4107-bd4b-adc7cef2a156",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C48",
+      "claim": "During early task execution, from task onset to 1000 ms, group mean BBG amplitude was greatest for the search condition, followed by the add condition, with low mean responses for past, future, and rest conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "During early task execution, from task onset to 1000 ms (1000\u20132000 ms post-cue), group mean BBG amplitude was greatest for the search condition, followed by the add condition, with low mean responses for past, future, and rest conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "10b010e4-a592-442e-8e93-1490174c8385",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C49",
+      "claim": "Mean BBG amplitude was significantly higher for the search task compared to add, past, future, and rest conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mean BBG amplitude was significantly higher for the search task compared to add, past, future, and rest conditions (search-add: t(5093)=3.859, p=0.0011; search-past: t(5093)=8.092, p<0.0001; search-future: t(5093)=8.573, p<0.0001; search-rest: t(5093)=8.706, p<0.0001), and furthermore, was significantly higher for the add task compared to past, future, and rest conditions (add-past: t(5093)=4.236, p=0.0002; add-future: t(5093)=4.717, p<0.0001; add-rest: t(5093)=4.847, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "a3127b5d-001f-4fd1-a2b5-2a420cb73ca0",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C50",
+      "claim": "Mean BBG amplitude was significantly higher for the add task compared to past, future, and rest conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mean BBG amplitude was significantly higher for the search task compared to add, past, future, and rest conditions (search-add: t(5093)=3.859, p=0.0011; search-past: t(5093)=8.092, p<0.0001; search-future: t(5093)=8.573, p<0.0001; search-rest: t(5093)=8.706, p<0.0001), and furthermore, was significantly higher for the add task compared to past, future, and rest conditions (add-past: t(5093)=4.236, p=0.0002; add-future: t(5093)=4.717, p<0.0001; add-rest: t(5093)=4.847, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "0e9d9f07-d3df-4c01-9269-b9ffeabdfe64",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C51",
+      "claim": "Sites within vPCC showed the converse BBG response profile across conditions, consistent with the DMN and prior observations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, sites within vPCC (nprobes = 6) showed the converse BBG response profile across conditions, consistent with the DMN and prior observations (Dastjerdi et al., 2011; Foster et al., 2012; Foster et al., 2015), where BBG responses were greater during late task execution (2000\u20133000 ms after task onset) for the episodic task conditions (see Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1 and citations to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "46816f3c-a841-4f25-92c3-ac47e286261e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C52",
+      "claim": "vPCC mean BBG amplitude was significantly higher for past than all other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A mixed effects model revealed a significant main effect of condition on BBG amplitude, with vPCC mean BBG amplitude being significantly higher for past than all other conditions (past-add: t(1253)=8.841, p<0.0001; past-search: t(1253)=5.151, p<0.0001; past-rest: t(1253)=3.978, p=0.0007; past-future: t(1253)=3.020, p=0.0216), and significantly lower for add than all other conditions (add-past: t(1253)=\u20138.841, p<0.0001; add-future: t(1253)=\u20135.811, p<0.0001; add-rest: t(1253)=\u20134.863, p<0.0001; add-search: t(1253)=\u20133.690, p=0.0022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "a148fde8-20b7-4a43-a0cd-51c1283cd5a3",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C53",
+      "claim": "vPCC mean BBG amplitude was significantly lower for add than all other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A mixed effects model revealed a significant main effect of condition on BBG amplitude, with vPCC mean BBG amplitude being significantly higher for past than all other conditions (past-add: t(1253)=8.841, p<0.0001; past-search: t(1253)=5.151, p<0.0001; past-rest: t(1253)=3.978, p=0.0007; past-future: t(1253)=3.020, p=0.0216), and significantly lower for add than all other conditions (add-past: t(1253)=\u20138.841, p<0.0001; add-future: t(1253)=\u20135.811, p<0.0001; add-rest: t(1253)=\u20134.863, p<0.0001; add-search: t(1253)=\u20133.690, p=0.0022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "b22f88c2-3164-467e-995d-60bb6376798f",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C54",
+      "claim": "Executive activity during an early time window (task onset to 1 s) was maximal for sites closer to the callosal sulcus within dPCC (i.e. inferior aspect of dPCC).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, executive activity during an early time window (task onset to 1 s) was maximal for sites closer to the callosal sulcus within dPCC (i.e. inferior aspect of dPCC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spatial analysis of electrode data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "ce7ead62-7bc4-435a-ae73-8271c74edec4",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C55",
+      "claim": "When considering a later time period of task execution, 2\u20133 s after task onset, population selectivity appeared to follow a more dorsal/ventral gradient with executive activity more dorsal and mnemonic activity more ventral within PCC.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering a later time period of task execution, 2\u20133 s after task onset, population selectivity appeared to follow a more dorsal/ventral gradient with executive activity more dorsal and mnemonic activity more ventral within PCC (Figure 3C/D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spatial analysis of electrode data shown in Figure 3C/D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "d5b18c4e-51fb-41e1-a9f3-4747419d198f",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C56",
+      "claim": "Meta-analytic association of neuroimaging studies for the term 'cognitive control' identifies commonly reported activations within the inferior aspect of dPCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, meta-analytic association of neuroimaging studies for the term 'cognitive control' identifies commonly reported activations within the inferior aspect of dPCC (Neurosynth association test; n studies = 598).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by meta-analysis of neuroimaging data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "cce4a299-c8a1-4917-b9c0-710355af65d8",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C57",
+      "claim": "Microwires extending from the distal tip of a subset of sEEG probes allowed for recording, detecting, and sorting single unit spiking activity within dPCC (nprobes = 6; nunits = 91).",
+      "claim_type": "EXPLICIT",
+      "source": "Microwires extending from the distal tip of a subset of sEEG probes allowed for recording, detecting, and sorting single unit spiking activity within dPCC (nprobes = 6; nunits = 91; See Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the single unit recording methods and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "ef9fd914-27bb-4470-94ad-4451f7cb27bd",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C58",
+      "claim": "PCC neurons varied in their mean firing rate, but predominately displayed sparse firing properties, with a group mean spike rate of 1.7 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, PCC neurons varied in their mean firing rate, but predominately displayed sparse firing properties, with a group mean spike rate of 1.7 Hz (across entire task).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "055ba418-2929-48f2-8da9-f66318b22083",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C59",
+      "claim": "Unsupervised hierarchical clustering of units based on the similarity of task response profiles identified four putative functional types.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we applied unsupervised hierarchical clustering of units based on the similarity of task response profiles to identify putative functional types (See Methods; Figure 4\u2014figure supplement 1). Strikingly, this clustering revealed four clear functional types, with several unique response features.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by clustering analysis of single unit data, shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "99f8b841-2f96-4466-857b-53c6bb4029d4",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C60",
+      "claim": "Type 1 units (nunits = 13) were selective for the search condition only.",
+      "claim_type": "EXPLICIT",
+      "source": "These two functional types showed condition-specific selectivity within the executive tasks, where Type 1 (nunits = 13) was selective for the search condition only, whereas Type 2 (nunits = 34) was selective for the add condition only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "58172f47-a6a0-45ff-ae99-f1970582a673",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C61",
+      "claim": "Type 2 units (nunits = 34) were selective for the add condition only.",
+      "claim_type": "EXPLICIT",
+      "source": "These two functional types showed condition-specific selectivity within the executive tasks, where Type 1 (nunits = 13) was selective for the search condition only, whereas Type 2 (nunits = 34) was selective for the add condition only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "c2cec9d8-6586-4d74-baff-c7555f386ea8",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C62",
+      "claim": "Type 1 and 2 units showed increased activity beginning during the cue period and continuing to increase with task engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to LFP BBG responses, Type 1 and 2 units showed increased activity beginning during the cue period and continuing to increase with task engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "4c0d1a50-a313-415c-b744-1ab43820fe4a",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C63",
+      "claim": "Type 3 units (nunits = 26) displayed firing rates that were increased for both the past and future episodic conditions, weakly elevated for the rest condition, and suppressed for both executive task conditions (search/add).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereby, Type 3 units (nunits = 26), displayed firing rates that were increased for both the past and future episodic conditions, weakly elevated for the rest condition, and suppressed for both executive task conditions (search/add; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single unit recording data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "d64b4a41-85e2-4e5f-8209-fe0371eba830",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C64",
+      "claim": "Type 3 units showed a more delayed increase in firing rate, occurring well after the start of task engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, unlike Type 1 and 2 units, Type 3 units showed a more delayed increase in firing rate, occurring well after the start of task engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "35a5abc7-eabf-401f-9cc0-4e1697a265f4",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C65",
+      "claim": "Type 4 units (nunits = 18) primarily displayed increased firing rates to the rest condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Type 4 units (nunits = 18) primarily displayed increased firing rates to the rest condition, which is another related functional property often associated with the DMN (Dastjerdi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f8851c7e-d725-44d2-97e2-eaed08024f6b",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C66",
+      "claim": "Type 4 units, which typically showed higher basal firing rates, increased firing after the cue was presented.",
+      "claim_type": "EXPLICIT",
+      "source": "These units, which typically showed higher basal firing rates, increased firing after the cue was presented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "31a30bfd-aa40-417d-877a-e0e6addfddec",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C67",
+      "claim": "There was initially no significant main effect of task condition on firing rate (p=0.55) prior to considering cluster type.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observations, there was initially no significant main effect of task condition on firing rate (p=0.55) prior to considering cluster type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of single unit data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "44ed412d-0843-4cce-a16b-cae6f5cea890",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C68",
+      "claim": "There was a significant effect of cluster type on mean task firing rate (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "There was, however, a significant effect of cluster type on mean task firing rate (p=0.01) and a significant interaction between task condition and cluster type (p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of single unit data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "2a396103-5e8f-460d-9468-1c8ba1ded3a3",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C69",
+      "claim": "There was a significant interaction between task condition and cluster type (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "There was, however, a significant effect of cluster type on mean task firing rate (p=0.01) and a significant interaction between task condition and cluster type (p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of single unit data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "a2974287-509c-4125-b9cb-bf9636336fe2",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C70",
+      "claim": "Hierarchical clustering through a complete leave-one-out process resulted in a 94% identical cluster rate.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the consistency of cluster membership, we performed hierarchical clustering through a complete leave-one-out process, resulting in a 94% identical cluster rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by validation analysis of the clustering approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "9fbee012-d616-47a3-9adf-6c3c2537385e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C71",
+      "claim": "Each of the four functional cell types were observed on multiple microwire probes, indicating that none of the cluster types originated from a single subject or recording site.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, each of the four functional cell types were observed on multiple microwire probes, indicating that none of the cluster types originated from a single subject or recording site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the distribution of cell types across recording sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "9452c0be-b38e-4bd6-b246-b3f13c6b0135",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C72",
+      "claim": "Each microwire probe gave rise to units of different selectivity types, suggesting a more mixed organization at the single unit level.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, each microwire probe gave rise to units of different selectivity types, suggesting a more mixed organization at the single unit level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the distribution of cell types across recording sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "18eaa63a-093d-4059-acfd-d66f19feac1d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C73",
+      "claim": "Intracranial recordings targeting human dPCC revealed strong electrophysiological evidence of executive task engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracranial recordings targeting human dPCC revealed strong electrophysiological evidence of executive task engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "fd9b74ee-13f8-4c21-83bd-551acfed7c79",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C74",
+      "claim": "Dorsal PCC neural populations displayed executive processing activity profiles consistent with that of cognitive control regions, as opposed to the episodic/DMN activity commonly attributed to the entire PCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsal PCC neural populations, as captured by LFP broadband gamma activity, displayed executive processing activity profiles consistent with that of cognitive control regions, as opposed to the episodic/DMN activity commonly attributed to the entire PCC (Fox et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental data and contrasted with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "68c66239-f669-4f3a-9f67-63ad0a8c9a59",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C75",
+      "claim": "Across-subject consideration of the spatial organization of population responses showed some clustering of executive selectivity inferior within dPCC near the callosal sulcus.",
+      "claim_type": "EXPLICIT",
+      "source": "Across-subject consideration of the spatial organization of population responses showed some clustering of executive selectivity inferior within dPCC near the callosal sulcus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by spatial analysis of electrode data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "28d11a36-5cea-46a0-970c-3f334eab33d4",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C76",
+      "claim": "Neurons in dPCC exhibited distinct selectivity profiles for specific executive attention tasks (search or add), consistent with, but more selective than, LFP data.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in dPCC exhibited distinct selectivity profiles for specific executive attention tasks (search or add), consistent with, but more selective than, LFP data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "875bb3ec-3cfa-46b0-a621-512ce1a603d1",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C77",
+      "claim": "A distinct set of neurons showed a clear DMN type of functional profile selective to either episodic processing (past and future) conditions or rest periods.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while not observed in the LFP, a distinct set of neurons showed a clear DMN type of functional profile selective to either episodic processing (past and future) conditions or rest periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "47bd00d2-8139-41cb-9abb-ed84cf060b85",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C78",
+      "claim": "These findings allow for reconciliation of conflicting reports of PCC function between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings allow for reconciliation of conflicting reports of PCC function between species and begin to unveil the complex functional contributions of single neurons in dPCC to executive and episodic processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "3b64406a-597d-4208-8611-68f933ecc2a2",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C79",
+      "claim": "By providing electrophysiological evidence of executive activity within human dPCC, these findings provide evidence of homology between the functions of macaque area CGp and human dPCC (i.e. area 23d in both species).",
+      "claim_type": "EXPLICIT",
+      "source": "By providing electrophysiological evidence of executive activity within human dPCC, these findings provide evidence of homology between the functions of macaque area CGp and human dPCC (i.e. area 23d in both species Vogt et al., 1987; Vogt et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study's findings and citations to comparative anatomy.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "59c92d7f-9575-4f32-89da-2e20bfa9d9bc",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C80",
+      "claim": "These findings highlight the importance of considering subregional variation in PCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, they highlight the importance of considering subregional variation in PCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "82a39a69-8511-415e-b115-186e850a5eb2",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C81",
+      "claim": "These findings are consistent with a selection of literature from human neuroimaging which implicates specifically dPCC with executive control processes as well as certain aspects of value-based decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these findings are consistent with a selection of literature from human neuroimaging, typically unincorporated with the DMN/memory literature (Acikalin et al., 2017), which implicates specifically dPCC with executive control processes as well as certain aspects of value-based decisions (Bartra et al., 2013; Clithero and Rangel, 2014; Oldham et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim connecting the study's findings to prior neuroimaging literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "820d5f50-7cb3-4ce5-a098-6a6cc9db25f9",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C82",
+      "claim": "Cytoarchitecture, structural connectivity, and network parcellations suggest subregional distinctions between dorsal and ventral PCC.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously noted, cytoarchitecture, structural connectivity, and network parcellations suggest subregional distinctions between dorsal and ventral PCC (Vogt et al., 1995; Vincent et al., 2008; Greicius et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior anatomical and connectivity studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "737e7c3b-3fdd-4eff-92ff-83c3c269cc00",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C83",
+      "claim": "Electrophysiology studies have alternatively suggested a more mixed functional mosaic throughout PCC and posteromedial cortex more broadly.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiology studies, though limited, have alternatively suggested a more mixed functional mosaic throughout PCC and posteromedial cortex more broadly (Daitch and Parvizi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior electrophysiology literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "852a2909-28ae-457b-aacb-18eca8327f4c",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C84",
+      "claim": "Electrodes with executive activity were observed proximal to voxels associated with 'cognitive control' in fMRI studies, linking our findings with dPCC activations appearing in neuroimaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrodes with executive activity were observed proximal to voxels associated with 'cognitive control' in fMRI studies, linking our findings with dPCC activations appearing in neuroimaging data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the study's electrode data with meta-analytic neuroimaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "7681afa1-af2f-44fd-919e-3ee8d49066af",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C85",
+      "claim": "Population selectivity appears to vary by dorsal/ventral subregions, though the division between subregions is complex and likely subject to individual differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Population selectivity appears to vary by dorsal/ventral subregions, though the division between subregions is complex and likely subject to individual differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "18a67d1f-25b1-4ae9-b7ab-0e5b9cfd2392",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C86",
+      "claim": "Precision fMRI within individuals emphasizes the impact of individual variability, particularly in associative cortices and their putative networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Precision fMRI within individuals emphasizes the impact of individual variability, particularly in associative cortices and their putative networks (Braga and Buckner, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to precision neuroimaging literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "981b97c1-f1cc-4462-834c-de9a95b93f69",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C87",
+      "claim": "Precision neuroimaging specifically highlights the dPCC as region of interest in assessing individual variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, precision neuroimaging specifically highlights the dPCC as region of interest in assessing individual variability (Gordon et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to precision neuroimaging literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "6b94b0d1-7a0f-4177-a41a-fa02d3a013e9",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C88",
+      "claim": "Electrophysiological observations are broadly consistent with recent large-scale examination of PCC sulcal anatomy which identified a new tertiary sulcus (inframarginal sulcus) as a useful landmark for the transition from DMN to CCN within dPCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our electrophysiological observations are broadly consistent with recent large-scale examination of PCC sulcal anatomy which identified a new tertiary sulcus (inframarginal sulcus) as a useful landmark for the transition from DMN to CCN within dPCC (Willbrand et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the study's findings with recent anatomical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "13417d25-fb26-4fb2-a76c-9fc6e652c1fe",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C89",
+      "claim": "Further integration of invasive electrophysiology and precision neuroimaging within subjects will be critical for elucidating key features of PCC functional neuroanatomy and its variability across individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Further integration of invasive electrophysiology and precision neuroimaging within subjects will be critical for elucidating key features of PCC functional neuroanatomy and its variability across individuals (Gordon et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking claim about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "1c8e1264-e739-4e03-9854-7c3cbeda53c8",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C90",
+      "claim": "Functional clustering of single unit responses during the attention/memory switch task revealed four unique functional cell types within dPCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional clustering of single unit responses during the attention/memory switch task revealed four unique functional cell types within dPCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clustering analysis of single unit data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "3520bf4f-1892-4053-8248-b3983b9eda9b",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C91",
+      "claim": "The majority of dPCC neurons displayed specific selectivity for different executive tasks, preferentially responding to one of the two attention conditions (search or add).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the majority of dPCC neurons displayed specific selectivity for different executive tasks, preferentially responding to one of the two attention conditions (search or add).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "006bf8de-160d-4779-a515-2ea193da9ff0",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C92",
+      "claim": "This condition-specific differentiation is not apparent in the population data, where LFP responses were typically seen for both or neither of the attention conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This condition-specific differentiation is not apparent in the population data, where LFP responses were typically seen for both or neither of the attention conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares single unit and LFP data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "18bdbd0a-83bb-4871-b42a-6e23592b70ce",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C93",
+      "claim": "A third type of dPCC neuron possessed episodic selectivity, with increased firing rates for both the past and future conditions, yet suppression for both executive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A third type of dPCC neuron possessed episodic selectivity, with increased firing rates for both the past and future conditions, yet suppression for both executive conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "b7ca20d5-eddf-4e81-a6db-74a1eec204de",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C94",
+      "claim": "Episodic/DMN activity does indeed exist in dPCC, though appears to be outweighed by executive activity when looking at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that episodic/DMN activity, the focus of human neuroimaging work, does indeed exist in dPCC, though appears to be outweighed by executive activity when looking at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on comparison of single unit and LFP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "bc9e77e8-8f83-4865-a19e-acc6e34ba90d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C95",
+      "claim": "A fourth type included neurons with high rest activity, fitting the original historical view of the DMN as task-negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a fourth type included neurons with high rest activity, fitting the original historical view of the DMN as task-negative, suggesting that the high basal activity of PCC during rest is potentially driven by a subset of neurons differentiable from those active during retrieval (Dastjerdi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single unit recording data and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f7cec427-9521-45d6-86ab-66fdfd7ddc2e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C96",
+      "claim": "The high basal activity of PCC during rest is potentially driven by a subset of neurons differentiable from those active during retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a fourth type included neurons with high rest activity, fitting the original historical view of the DMN as task-negative, suggesting that the high basal activity of PCC during rest is potentially driven by a subset of neurons differentiable from those active during retrieval (Dastjerdi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on single unit data and prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "e25c9a44-6776-4498-bf33-066f86356c84",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C97",
+      "claim": "Differences between the LFP and single unit data result in varying interpretations of PCC organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, differences between the LFP and single unit data result in varying interpretations of PCC organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on comparison of LFP and single unit data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f16dc6de-2ec5-4845-ad20-181e12732a11",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C98",
+      "claim": "Each microwire probe gave rise to units of multiple functional selectivity types, revealing a more mixed organization on the single unit level.",
+      "claim_type": "EXPLICIT",
+      "source": "Each microwire probe gave rise to units of multiple functional selectivity types, revealing a more mixed organization on the single unit level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the distribution of cell types across recording sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "d848c0b7-1bb4-4e3b-b688-c655f6d8d182",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C99",
+      "claim": "This considerable heterogeneity at the neuronal level likely contributes to the complex pattern of spatially overlapping yet functionally distinct subregions within dPCC, reflecting a convergence of multiple brain networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This considerable heterogeneity at the neuronal level likely contributes to the complex pattern of spatially overlapping yet functionally distinct subregions within dPCC, reflecting a convergence of multiple brain networks, as observed by data-driven functional connectivity maps within the region (Leech et al., 2011; Leech et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim connecting the study's findings to prior connectivity literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "0739593f-633b-49b3-9423-eec4d9bf2493",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C100",
+      "claim": "Our findings provide the first single unit evidence of executive and episodic function within human PCC, and in turn the CCN and DMN.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide the first single unit evidence of executive and episodic function within human PCC, and in turn the CCN and DMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the novelty of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "7011b4ff-6565-420c-8248-6247d4f2d766",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C101",
+      "claim": "Further single-unit studies during cognitive control and decision-making tasks will be vital for more precise identification of PCC neural selectivity during executive behavior and improved understanding of the functional homology with the non-human primate.",
+      "claim_type": "EXPLICIT",
+      "source": "Further single-unit studies during cognitive control and decision-making tasks will be vital for more precise identification of PCC neural selectivity during executive behavior and improved understanding of the functional homology with the non-human primate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking claim about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "241b80c8-38b6-407c-a8d3-41368b4d6adb",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C102",
+      "claim": "Our findings bridge previously incongruent views of PCC function between fields by targeting the dPCC subregion and identifying executive processing in human PCC populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our findings bridge previously incongruent views of PCC function between fields by targeting the dPCC subregion and identifying executive processing in human PCC populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the study's contribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "95455d01-7812-4333-8ac0-14a51f01329a",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C103",
+      "claim": "This work represents the first human single neuron evidence of executive and episodic selectivity in PCC, revealing the complex functional contributions of dPCC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this work represents the first human single neuron evidence of executive and episodic selectivity in PCC, revealing the complex functional contributions of dPCC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the novelty and significance of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "dc293a6c-e047-4f85-8bcc-e9bb5ae9732e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C104",
+      "claim": "These findings inform a view of PCC as a heterogeneous region composed of dorsal and ventral subregions specializing in executive and episodic processing respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, they inform a view of PCC as a heterogeneous region composed of dorsal and ventral subregions specializing in executive and episodic processing respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretive claim based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "6c360ef9-2a30-4ef1-9c3e-72bc3aca2e56",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C105",
+      "claim": "Careful consideration of this functional neuroanatomy and its further elucidation will be critical for better understanding the role of PCC in cognition and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful consideration of this functional neuroanatomy and its further elucidation will be critical for better understanding the role of PCC in cognition and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking claim about the importance of the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "35d8de5f-f31b-4fa6-b978-b6748d2d32eb",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C106",
+      "claim": "Intracranial recordings from the human posterior cingulate cortex were obtained from 20 subjects undergoing invasive monitoring as part of their treatment for refractory epilepsy at Baylor St. Luke's Medical Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracranial recordings from the human posterior cingulate cortex were obtained from 20 subjects (N1-N20; 8 female, 12 male; mean age 34.1 years., range 19\u201356 years) undergoing invasive monitoring as part of their treatment for refractory epilepsy at Baylor St. Luke's Medical Center (Houston, Texas, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subject population and data collection site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f4582c96-32e7-47fa-ae0e-7559b93e4600",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C107",
+      "claim": "All decisions regarding sEEG trajectories were made solely on the basis of clinical criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "All decisions regarding sEEG trajectories were made solely on the basis of clinical criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical nature of electrode placement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "a13d8369-cad3-4d4b-aa19-006430e6139d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C108",
+      "claim": "Experimental protocols were approved by the Institution Review Board at Baylor College of Medicine (IRB protocol number H-18112), with subjects providing verbal and written informed consent to participate in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental protocols were approved by the Institution Review Board at Baylor College of Medicine (IRB protocol number H-18112), with subjects providing verbal and written informed consent to participate in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval and consent procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "70d828bb-7b67-42a0-af94-df232280b39a",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C109",
+      "claim": "We did not include patients with epileptic foci, anatomical abnormalities, or prior surgical resection in posteromedial regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not include patients with epileptic foci, anatomical abnormalities, or prior surgical resection in posteromedial regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "7d1ddf62-cb09-4569-8900-1ea5b98d09cb",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C110",
+      "claim": "Recordings were performed using sEEG depth electrodes (PMT Corp., MN, USA) and Behnke-Fried macro-micro probes (Ad-Tech Medical Instrument Corp., WI, USA).",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were performed using sEEG depth electrodes (PMT Corp., MN, USA) and Behnke-Fried macro-micro probes (Ad-Tech Medical Instrument Corp., WI, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "803d70aa-386a-43d9-a409-0192979118d6",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C111",
+      "claim": "Clinical depth electrodes consist of 8\u201312 macro contacts, each 1.3\u20132.0 mm in diameter, along the electrode shaft.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical depth electrodes consist of 8\u201312 macro contacts, each 1.3\u20132.0 mm in diameter, along the electrode shaft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the electrodes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "04b61ce2-62d2-407c-8b30-659ea2fc251c",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C112",
+      "claim": "Behnke-Fried electrodes included a bundle of 8 shielded microwires and 1 unshielded reference microwire, 38\u201340 \u00b5m in diameter each, extending approximately 4 mm from the distal tip.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to macro contacts, Behnke-Fried electrodes also included a bundle of 8 shielded microwires and 1 unshielded reference microwire, 38\u201340 \u00b5m in diameter each, extending approximately 4 mm from the distal tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the microwire electrodes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "73b94277-f6d8-45bc-9039-7c3f1ba14ca5",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C113",
+      "claim": "We recorded from 35 PCC electrodes across subjects, 14 of which contained microwires.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded from 35 PCC electrodes across subjects, 14 of which contained microwires.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of recording sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "22bd6b50-98d7-4024-a4c2-2d1b4a7961ff",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C114",
+      "claim": "There were 18 trials per condition, for a total of 90 trials per task run.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 18 trials per condition, for a total of 90 trials per task run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f90068a6-c742-4d1d-9b8e-a19e5bfa2175",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C115",
+      "claim": "Subjects typically performed 2 unique runs of the task, each approximately 15\u201320 min in duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects typically performed 2 unique runs of the task, each approximately 15\u201320 min in duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "0d2a98d3-a3c2-4b0b-882b-ca084beb11cd",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C116",
+      "claim": "A total of 40 blocks of the task were completed across the 20 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 40 blocks of the task were completed across the 20 subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the total amount of data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "b7809142-e1d0-4e59-b1d1-39ca71a0242b",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C117",
+      "claim": "LFP data was acquired at a sampling rate of 2 kHz and bandpass of 0.3\u2013500 Hz using a Blackrock Cerebus system.",
+      "claim_type": "EXPLICIT",
+      "source": "LFP data was acquired at a sampling rate of 2 kHz and bandpass of 0.3\u2013500 Hz using a Blackrock Cerebus (Blackrock Microsystems, UT, USA) system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LFP recording parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "99131d53-e5ab-4793-afa3-7aeaff3d2f1d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C118",
+      "claim": "Single unit data was acquired at a sampling rate of 30 kHz using either a Blackrock Cerebus system or Ripple Micro2.",
+      "claim_type": "EXPLICIT",
+      "source": "Single unit data was acquired at a sampling rate of 30 kHz using either a Blackrock Cerebus (nsubjects = 13; Blackrock Microsystems, UT, USA) system or Ripple Micro2 (nsubjects = 1; Ripple Neuro, UT, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the single unit recording parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "3a000a59-7c42-4a56-8747-b8c77be7b077",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C119",
+      "claim": "Across the 14 Behnke-Fried probes implanted, 8 were excluded due to noise or failure to detect single unit activity, which included the single vPCC microwire probe.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 14 Behnke-Fried probes implanted, 8 were excluded due to noise or failure to detect single unit activity, which included the single vPCC microwire probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "be1dd092-d0d6-41d9-98ed-07b4046f145f",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C120",
+      "claim": "Across the remaining 6 Behnke-Fried probes, 95 single-units were isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the remaining 6 Behnke-Fried probes, 95 single-units were isolated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of single units recorded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "a6b1af73-f35d-4622-8a08-cdad7e9345fe",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "claim_id": "C121",
+      "claim": "Three outlier units (>5 standard deviations) and one duplicate unit were identified and removed.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of firing rates was then inspected, with three outlier units (>5 standard deviations) and one duplicate unit identified and removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data quality control procedures for single units.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40465493-7c04-4746-94c0-847cbc2ed9a9",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PCC is implicated in psychiatric and neurological disease but remains poorly understood due to its deep medial location and rich vascularization, which limit focal lesion studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8, and C11 establish PCC's clinical relevance through citations to existing literature. Claim C12 provides anatomical explanation for why PCC remains understudied. These background claims are well-supported by appropriate citations and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "8f0651a6-aeca-4099-9f7c-b07398933aac",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior literature shows conflicting views of PCC function: human studies emphasize DMN/episodic memory roles with task-negative activity, while non-human primate studies emphasize executive/cognitive control functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This comprehensive set of claims accurately summarizes the existing literature through appropriate citations. The apparent contradiction between human and non-human primate findings is well-documented and forms the motivation for the current study. All claims are supported by citations to relevant prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "ce99e188-c2dc-449b-b145-69a6fe1cf2f0",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Contemporary neuroimaging and anatomical studies suggest PCC contains functionally distinct dorsal and ventral subregions, with dPCC potentially associated with executive control and vPCC with episodic memory systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 and C82 establish the anatomical and functional basis for PCC subregional organization through appropriate citations to connectivity, cytoarchitectural, and network parcellation studies. Claim C31 appropriately frames the functional association as inferential ('may be associated'). This provides the theoretical foundation for the study's hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "c4df5566-2889-4f44-86e6-3503d3acdf27",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors hypothesize that the difference between human and non-human primate findings reflects a functional division between dorsal (executive) and ventral (episodic) PCC, with dPCC showing CCN-like rather than DMN-like response profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35, and C36 clearly state the study's hypothesis, which is appropriately framed as speculative and based on inference from prior literature. The hypothesis logically follows from the established anatomical and functional distinctions described in prior claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f73daf97-e575-4c0b-b061-bf1559800849",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study recorded from 35 PCC electrodes (29 dPCC, 6 vPCC) across 20 epilepsy patients using sEEG depth electrodes and Behnke-Fried macro-micro probes, with appropriate ethical approval and exclusion criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 and C106-C113 provide clear methodological details about subject population, electrode types, localization, and ethical procedures. The methods are standard for intracranial recording studies in epilepsy patients. Sample sizes are clearly stated and appropriate exclusion criteria are described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "cb0eae8b-4544-454b-9e41-9f3bc88c7004",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Subjects performed an attention/memory switch task with high accuracy on executive conditions (86.47% search, 92.59% add) and robust vividness scores on episodic conditions, completing 40 task blocks across 20 subjects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 and C114-C116 document behavioral performance and task structure. The high accuracy rates and robust vividness scores indicate subjects successfully engaged with the task. The experimental design with 18 trials per condition across 5 conditions is clearly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "e03e4773-bbf7-4bac-9913-44d737d4744d",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "dPCC neural populations showed significantly enhanced broadband gamma (BBG) responses during executive attention tasks (search/add) compared to episodic memory tasks, with transient activation peaking during early task execution, consistent with CCN rather than DMN function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 provide detailed statistical evidence (mixed-effects model with specific t-values and p-values) showing significantly higher BBG amplitude for executive vs. episodic conditions. The analysis appropriately accounts for nested data structure (multiple electrodes per subject). Sample size (29 probes, 19 subjects) is adequate. This is a core finding supporting the hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "36cde923-af9d-4c5a-b1c3-0b2e0a7d834e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "vPCC sites showed the opposite BBG response profile from dPCC, with greater responses during late execution of episodic tasks, consistent with DMN function and prior observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 provide statistical evidence (mixed-effects model with specific t-values and p-values) for vPCC showing DMN-like responses. However, the small sample size (6 probes) limits generalizability. The finding is consistent with prior literature (appropriately cited) and provides important contrast to dPCC results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "1c69aed5-cda2-499a-9283-2099762b500a",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spatial analysis revealed executive activity clustered in the inferior aspect of dPCC near the callosal sulcus during early task execution, with a dorsal/ventral gradient emerging during late execution, consistent with meta-analytic fMRI data for cognitive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe spatial organization of responses with support from Figure 3 and meta-analytic neuroimaging data (Neurosynth, 598 studies). The spatial analysis appropriately normalizes electrode locations to MNI space for cross-subject comparison. The convergence with fMRI meta-analysis strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single unit recordings were obtained from 6 microwire probes in dPCC, yielding 91 units after quality control, with neurons displaying sparse firing properties (mean 1.7 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 and C117-C121 clearly document single unit recording methods, quality control procedures, and basic firing properties. The exclusion of 8/14 probes due to noise is transparently reported. The sparse firing rate is typical for cortical neurons and appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "1263092a-6bb4-450c-9509-e92b4af8978f",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Unsupervised hierarchical clustering identified four functional cell types in dPCC, with Type 1 (n=13) selective for visual search and Type 2 (n=34) selective for arithmetic tasks, showing increased activity during cue and task execution periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 describe the clustering methodology and identification of executive-selective cell types. The unsupervised approach is appropriate and validated with 94% consistency in leave-one-out analysis (C70). The condition-specific selectivity (search vs. add) is more refined than population LFP responses, representing an important finding. Sample sizes for each type are clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "09d726cf-fe5a-4152-9cf4-23f5322e323e",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Type 3 units (n=26) displayed increased firing for both episodic conditions (past/future) and suppression for executive conditions, with delayed activation compared to Type 1/2, consistent with DMN function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 describe a distinct functional cell type with DMN-like properties at the single unit level, which was not apparent in population LFP data. The temporal dynamics (delayed activation) and bidirectional modulation (increased for episodic, suppressed for executive) are clearly documented and represent a novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "819f7bae-a994-48f3-8639-28eaea8c45fb",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Type 4 units (n=18) showed increased firing during rest periods with higher basal firing rates, fitting the task-negative DMN profile and suggesting rest-related activity is driven by a distinct neuronal subset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 identify a fourth functional type with rest-selective activity. The interpretation that rest activity is driven by distinct neurons (C96) is appropriately framed as speculative ('potentially') and supported by citation to prior work. This adds nuance to understanding DMN function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "ffe89228-82f3-4d5e-b32b-a69d0d786c73",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Statistical analysis showed no main effect of task condition on firing rate initially (p=0.55), but significant effects of cluster type (p=0.01) and task\u00d7cluster interaction (p<0.0001), with each functional type observed across multiple probes and each probe containing multiple types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 provide appropriate statistical analysis demonstrating that functional heterogeneity is revealed only when considering cell types. Claims C70-C72 validate the clustering approach (94% consistency) and demonstrate that cell types are not artifacts of single subjects/sites. The mixed organization at single unit level is an important finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "01c8c648-a231-42dc-bdf1-588ca8345edc",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Single unit data revealed finer functional organization than LFP, with condition-specific executive selectivity and DMN-type episodic selectivity coexisting in a mixed organization within dPCC, likely contributing to spatially overlapping yet functionally distinct subregions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 and C92-C99 synthesize the key finding that single unit recordings reveal functional complexity not apparent in population data. The interpretation that neuronal heterogeneity contributes to complex subregional organization (C99) is appropriately supported by citations to connectivity studies and represents an important conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "2b6289b3-054b-4708-b41e-364118a20d8b",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "These findings reconcile conflicting views of PCC function across species by demonstrating executive processing in human dPCC (homologous to macaque area CGp) while highlighting the importance of considering subregional variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 and C102-C104 appropriately interpret the findings in the context of cross-species comparisons and prior literature. The claim of homology (C79) is supported by both the current data and citations to comparative anatomy. The integration with human neuroimaging literature on executive control (C81) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "96376dc9-590a-4a89-b087-c4acbda29782",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings are consistent with precision neuroimaging studies emphasizing individual variability in associative cortices and recent anatomical work identifying the inframarginal sulcus as a landmark for DMN-to-CCN transition in dPCC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 appropriately contextualize the findings within contemporary precision neuroimaging and anatomical literature. The connection to the inframarginal sulcus (C88) is appropriately framed as 'broadly consistent' and supported by recent citation. The acknowledgment of individual variability (C85-C87) is important for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "00fabf7e-37cd-4516-a1b0-4ce8584d0230",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "This work represents the first single unit evidence of executive and episodic function within human PCC and the CCN/DMN networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100 and C103 assert the novelty of the findings. While prior human intracranial studies have examined PCC (as cited), this appears to be the first to systematically compare executive vs. episodic processing at the single unit level in human PCC. The novelty claim is appropriately supported by the literature review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    },
+    {
+      "id": "f0b41d71-7be3-43b1-a8f7-e93532829d20",
+      "content_id": "af6b76b0-caac-4e81-bea2-c3a4b6aba3a4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Future work integrating invasive electrophysiology with precision neuroimaging and examining PCC during cognitive control and decision-making tasks will be critical for understanding PCC function in cognition and disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89, C101, and C105 appropriately identify future research directions based on the current findings and limitations. These forward-looking statements are reasonable and well-justified by the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:25.503881Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fbdade29-16b2-4ad7-819a-3fe3009b2567",
+      "result_id": "40465493-7c04-4746-94c0-847cbc2ed9a9"
+    },
+    {
+      "claim_id": "b825d5a4-0414-42d6-9167-662eb63986b5",
+      "result_id": "40465493-7c04-4746-94c0-847cbc2ed9a9"
+    },
+    {
+      "claim_id": "44d31e62-df7b-483e-ba64-9479a65f78b4",
+      "result_id": "40465493-7c04-4746-94c0-847cbc2ed9a9"
+    },
+    {
+      "claim_id": "8e3ba3eb-bbd0-4ea8-849a-da8cadd7a623",
+      "result_id": "40465493-7c04-4746-94c0-847cbc2ed9a9"
+    },
+    {
+      "claim_id": "ca9a9ac4-7d1a-4548-8274-ee21be15808a",
+      "result_id": "40465493-7c04-4746-94c0-847cbc2ed9a9"
+    },
+    {
+      "claim_id": "53e33888-b315-4072-bd84-b4010c26ceef",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "2b95302d-48b9-4a60-9dee-729fa181539e",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "fa9c3e5e-5c25-488e-bf59-8df0f5e71a2f",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "a2f45f9c-57d2-4466-a07f-83de413f2816",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "70e89c6e-2d7f-4d5c-8452-0ba027013f67",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "f074c369-de65-4e03-b7d4-74897717a2f7",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "7a164546-180e-4fa3-83b1-002e7a83600e",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "1ca1a070-fd38-4097-b53b-c2a22fe8bf65",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "9c4dd013-5fdd-4a4b-b922-b6c6df7d49c3",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "6674f985-676e-4620-94b7-212fb8ab0d0a",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "b709d520-d8ab-461d-bd6e-8023f70fd1e3",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "8808794f-bf8d-42a3-bbf7-5d6204036548",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "ccbbaabe-3f47-468a-969f-9afb5eb78af5",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "e2013bfa-6c81-4df6-8215-decd2148c831",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "f6e3fa77-09a4-4413-ba99-6efce552791f",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "88e73f74-482b-4d46-b794-b7efdae81103",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "40c75691-83ad-4e72-89e0-8cf48b6ac049",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "a97c7293-784a-4d3e-bd37-0a28a688729d",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "c6ae81ec-2e0b-4191-ac95-37da4990cbb2",
+      "result_id": "8f0651a6-aeca-4099-9f7c-b07398933aac"
+    },
+    {
+      "claim_id": "6edbc6fb-cdb5-4542-b1ec-47ef78f5f241",
+      "result_id": "ce99e188-c2dc-449b-b145-69a6fe1cf2f0"
+    },
+    {
+      "claim_id": "f20f4bbc-d80a-40dc-8fba-7a034998c689",
+      "result_id": "ce99e188-c2dc-449b-b145-69a6fe1cf2f0"
+    },
+    {
+      "claim_id": "1eee16db-054f-4f5f-b895-762e530ce242",
+      "result_id": "ce99e188-c2dc-449b-b145-69a6fe1cf2f0"
+    },
+    {
+      "claim_id": "d15b0210-c0f2-44e4-9012-57e2a7f478c8",
+      "result_id": "ce99e188-c2dc-449b-b145-69a6fe1cf2f0"
+    },
+    {
+      "claim_id": "4e4ebd7c-5e91-4f5e-83d4-8c1c3848c90d",
+      "result_id": "ce99e188-c2dc-449b-b145-69a6fe1cf2f0"
+    },
+    {
+      "claim_id": "820d5f50-7cb3-4ce5-a098-6a6cc9db25f9",
+      "result_id": "ce99e188-c2dc-449b-b145-69a6fe1cf2f0"
+    },
+    {
+      "claim_id": "8ac16b2a-a634-4b4d-b5d6-7655ca604b08",
+      "result_id": "c4df5566-2889-4f44-86e6-3503d3acdf27"
+    },
+    {
+      "claim_id": "074dde83-1cdf-4a65-88b3-cf33eea4d2b5",
+      "result_id": "c4df5566-2889-4f44-86e6-3503d3acdf27"
+    },
+    {
+      "claim_id": "265b27df-06a1-4b03-9dce-172579557e67",
+      "result_id": "c4df5566-2889-4f44-86e6-3503d3acdf27"
+    },
+    {
+      "claim_id": "b828416e-13d9-41bd-bb80-12eeb46a410d",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "111d9b33-ae65-4d3e-9086-7e9ec06c5069",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "35d8de5f-f31b-4fa6-b978-b6748d2d32eb",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "f4582c96-32e7-47fa-ae0e-7559b93e4600",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "a13d8369-cad3-4d4b-aa19-006430e6139d",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "70d828bb-7b67-42a0-af94-df232280b39a",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "7d1ddf62-cb09-4569-8900-1ea5b98d09cb",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "803d70aa-386a-43d9-a409-0192979118d6",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "04b61ce2-62d2-407c-8b30-659ea2fc251c",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "73b94277-f6d8-45bc-9039-7c3f1ba14ca5",
+      "result_id": "f73daf97-e575-4c0b-b061-bf1559800849"
+    },
+    {
+      "claim_id": "c24e6dc0-73d1-4fbe-95b0-5100d07cb72f",
+      "result_id": "cb0eae8b-4544-454b-9e41-9f3bc88c7004"
+    },
+    {
+      "claim_id": "45e907ef-2945-4ae0-8d5f-4793b10aded9",
+      "result_id": "cb0eae8b-4544-454b-9e41-9f3bc88c7004"
+    },
+    {
+      "claim_id": "22bd6b50-98d7-4024-a4c2-2d1b4a7961ff",
+      "result_id": "cb0eae8b-4544-454b-9e41-9f3bc88c7004"
+    },
+    {
+      "claim_id": "f90068a6-c742-4d1d-9b8e-a19e5bfa2175",
+      "result_id": "cb0eae8b-4544-454b-9e41-9f3bc88c7004"
+    },
+    {
+      "claim_id": "0d2a98d3-a3c2-4b0b-882b-ca084beb11cd",
+      "result_id": "cb0eae8b-4544-454b-9e41-9f3bc88c7004"
+    },
+    {
+      "claim_id": "75d026aa-03bd-4b8e-9dbf-bc7fcd4df31a",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "d5bc1f04-cc64-42ac-8fbd-a1ec9c92dce3",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "9489ae04-6f2a-4e99-a408-4cfb878cece1",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "16ebfc04-2619-4107-bd4b-adc7cef2a156",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "10b010e4-a592-442e-8e93-1490174c8385",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "a3127b5d-001f-4fd1-a2b5-2a420cb73ca0",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "7fbae1e2-ca7b-4be1-9a01-a51417a6da5b",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "4dca346c-1998-421f-8937-0983120a7217",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "18eaa63a-093d-4059-acfd-d66f19feac1d",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "fd9b74ee-13f8-4c21-83bd-551acfed7c79",
+      "result_id": "e03e4773-bbf7-4bac-9913-44d737d4744d"
+    },
+    {
+      "claim_id": "0e9d9f07-d3df-4c01-9269-b9ffeabdfe64",
+      "result_id": "36cde923-af9d-4c5a-b1c3-0b2e0a7d834e"
+    },
+    {
+      "claim_id": "46816f3c-a841-4f25-92c3-ac47e286261e",
+      "result_id": "36cde923-af9d-4c5a-b1c3-0b2e0a7d834e"
+    },
+    {
+      "claim_id": "a148fde8-20b7-4a43-a0cd-51c1283cd5a3",
+      "result_id": "36cde923-af9d-4c5a-b1c3-0b2e0a7d834e"
+    },
+    {
+      "claim_id": "b22f88c2-3164-467e-995d-60bb6376798f",
+      "result_id": "1c69aed5-cda2-499a-9283-2099762b500a"
+    },
+    {
+      "claim_id": "ce7ead62-7bc4-435a-ae73-8271c74edec4",
+      "result_id": "1c69aed5-cda2-499a-9283-2099762b500a"
+    },
+    {
+      "claim_id": "d5b18c4e-51fb-41e1-a9f3-4747419d198f",
+      "result_id": "1c69aed5-cda2-499a-9283-2099762b500a"
+    },
+    {
+      "claim_id": "68c66239-f669-4f3a-9f67-63ad0a8c9a59",
+      "result_id": "1c69aed5-cda2-499a-9283-2099762b500a"
+    },
+    {
+      "claim_id": "852a2909-28ae-457b-aacb-18eca8327f4c",
+      "result_id": "1c69aed5-cda2-499a-9283-2099762b500a"
+    },
+    {
+      "claim_id": "cce4a299-c8a1-4917-b9c0-710355af65d8",
+      "result_id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7"
+    },
+    {
+      "claim_id": "ef9fd914-27bb-4470-94ad-4451f7cb27bd",
+      "result_id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7"
+    },
+    {
+      "claim_id": "b7809142-e1d0-4e59-b1d1-39ca71a0242b",
+      "result_id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7"
+    },
+    {
+      "claim_id": "99131d53-e5ab-4793-afa3-7aeaff3d2f1d",
+      "result_id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7"
+    },
+    {
+      "claim_id": "3a000a59-7c42-4a56-8747-b8c77be7b077",
+      "result_id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7"
+    },
+    {
+      "claim_id": "be1dd092-d0d6-41d9-98ed-07b4046f145f",
+      "result_id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7"
+    },
+    {
+      "claim_id": "a6b1af73-f35d-4622-8a08-cdad7e9345fe",
+      "result_id": "7ffc1d07-8f57-4585-b3fc-e2ab8efef0b7"
+    },
+    {
+      "claim_id": "055ba418-2929-48f2-8da9-f66318b22083",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "99f8b841-2f96-4466-857b-53c6bb4029d4",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "58172f47-a6a0-45ff-ae99-f1970582a673",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "c2cec9d8-6586-4d74-baff-c7555f386ea8",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "c2cc29a5-b882-424e-9de9-c9c83ae9f498",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "f05bf1dd-80ed-4e3d-87a0-43a3b2fef463",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "1c8e1264-e739-4e03-9854-7c3cbeda53c8",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "3520bf4f-1892-4053-8248-b3983b9eda9b",
+      "result_id": "1263092a-6bb4-450c-9509-e92b4af8978f"
+    },
+    {
+      "claim_id": "4c0d1a50-a313-415c-b744-1ab43820fe4a",
+      "result_id": "09d726cf-fe5a-4152-9cf4-23f5322e323e"
+    },
+    {
+      "claim_id": "d64b4a41-85e2-4e5f-8209-fe0371eba830",
+      "result_id": "09d726cf-fe5a-4152-9cf4-23f5322e323e"
+    },
+    {
+      "claim_id": "41d6f5bb-b9ec-4e7a-b92d-c590bb78cfad",
+      "result_id": "09d726cf-fe5a-4152-9cf4-23f5322e323e"
+    },
+    {
+      "claim_id": "18bdbd0a-83bb-4871-b42a-6e23592b70ce",
+      "result_id": "09d726cf-fe5a-4152-9cf4-23f5322e323e"
+    },
+    {
+      "claim_id": "35a5abc7-eabf-401f-9cc0-4e1697a265f4",
+      "result_id": "819f7bae-a994-48f3-8639-28eaea8c45fb"
+    },
+    {
+      "claim_id": "f8851c7e-d725-44d2-97e2-eaed08024f6b",
+      "result_id": "819f7bae-a994-48f3-8639-28eaea8c45fb"
+    },
+    {
+      "claim_id": "126c258a-1baf-4af2-bb34-d5ddb735a6ee",
+      "result_id": "819f7bae-a994-48f3-8639-28eaea8c45fb"
+    },
+    {
+      "claim_id": "bc9e77e8-8f83-4865-a19e-acc6e34ba90d",
+      "result_id": "819f7bae-a994-48f3-8639-28eaea8c45fb"
+    },
+    {
+      "claim_id": "f7cec427-9521-45d6-86ab-66fdfd7ddc2e",
+      "result_id": "819f7bae-a994-48f3-8639-28eaea8c45fb"
+    },
+    {
+      "claim_id": "31a30bfd-aa40-417d-877a-e0e6addfddec",
+      "result_id": "ffe89228-82f3-4d5e-b32b-a69d0d786c73"
+    },
+    {
+      "claim_id": "44ed412d-0843-4cce-a16b-cae6f5cea890",
+      "result_id": "ffe89228-82f3-4d5e-b32b-a69d0d786c73"
+    },
+    {
+      "claim_id": "2a396103-5e8f-460d-9468-1c8ba1ded3a3",
+      "result_id": "ffe89228-82f3-4d5e-b32b-a69d0d786c73"
+    },
+    {
+      "claim_id": "a2974287-509c-4125-b9cb-bf9636336fe2",
+      "result_id": "ffe89228-82f3-4d5e-b32b-a69d0d786c73"
+    },
+    {
+      "claim_id": "9fbee012-d616-47a3-9adf-6c3c2537385e",
+      "result_id": "ffe89228-82f3-4d5e-b32b-a69d0d786c73"
+    },
+    {
+      "claim_id": "9452c0be-b38e-4bd6-b246-b3f13c6b0135",
+      "result_id": "ffe89228-82f3-4d5e-b32b-a69d0d786c73"
+    },
+    {
+      "claim_id": "28d11a36-5cea-46a0-970c-3f334eab33d4",
+      "result_id": "01c8c648-a231-42dc-bdf1-588ca8345edc"
+    },
+    {
+      "claim_id": "875bb3ec-3cfa-46b0-a621-512ce1a603d1",
+      "result_id": "01c8c648-a231-42dc-bdf1-588ca8345edc"
+    },
+    {
+      "claim_id": "006bf8de-160d-4779-a515-2ea193da9ff0",
+      "result_id": "01c8c648-a231-42dc-bdf1-588ca8345edc"
+    },
+    {
+      "claim_id": "b7ca20d5-eddf-4e81-a6db-74a1eec204de",
+      "result_id": "01c8c648-a231-42dc-bdf1-588ca8345edc"
+    },
+    {
+      "claim_id": "e25c9a44-6776-4498-bf33-066f86356c84",
+      "result_id": "01c8c648-a231-42dc-bdf1-588ca8345edc"
+    },
+    {
+      "claim_id": "f16dc6de-2ec5-4845-ad20-181e12732a11",
+      "result_id": "01c8c648-a231-42dc-bdf1-588ca8345edc"
+    },
+    {
+      "claim_id": "d848c0b7-1bb4-4e3b-b688-c655f6d8d182",
+      "result_id": "01c8c648-a231-42dc-bdf1-588ca8345edc"
+    },
+    {
+      "claim_id": "47bd00d2-8139-41cb-9abb-ed84cf060b85",
+      "result_id": "2b6289b3-054b-4708-b41e-364118a20d8b"
+    },
+    {
+      "claim_id": "3b64406a-597d-4208-8611-68f933ecc2a2",
+      "result_id": "2b6289b3-054b-4708-b41e-364118a20d8b"
+    },
+    {
+      "claim_id": "59c92d7f-9575-4f32-89da-2e20bfa9d9bc",
+      "result_id": "2b6289b3-054b-4708-b41e-364118a20d8b"
+    },
+    {
+      "claim_id": "82a39a69-8511-415e-b115-186e850a5eb2",
+      "result_id": "2b6289b3-054b-4708-b41e-364118a20d8b"
+    },
+    {
+      "claim_id": "241b80c8-38b6-407c-a8d3-41368b4d6adb",
+      "result_id": "2b6289b3-054b-4708-b41e-364118a20d8b"
+    },
+    {
+      "claim_id": "dc293a6c-e047-4f85-8bcc-e9bb5ae9732e",
+      "result_id": "2b6289b3-054b-4708-b41e-364118a20d8b"
+    },
+    {
+      "claim_id": "737e7c3b-3fdd-4eff-92ff-83c3c269cc00",
+      "result_id": "96376dc9-590a-4a89-b087-c4acbda29782"
+    },
+    {
+      "claim_id": "7681afa1-af2f-44fd-919e-3ee8d49066af",
+      "result_id": "96376dc9-590a-4a89-b087-c4acbda29782"
+    },
+    {
+      "claim_id": "18a67d1f-25b1-4ae9-b7ab-0e5b9cfd2392",
+      "result_id": "96376dc9-590a-4a89-b087-c4acbda29782"
+    },
+    {
+      "claim_id": "981b97c1-f1cc-4462-834c-de9a95b93f69",
+      "result_id": "96376dc9-590a-4a89-b087-c4acbda29782"
+    },
+    {
+      "claim_id": "6b94b0d1-7a0f-4177-a41a-fa02d3a013e9",
+      "result_id": "96376dc9-590a-4a89-b087-c4acbda29782"
+    },
+    {
+      "claim_id": "0739593f-633b-49b3-9423-eec4d9bf2493",
+      "result_id": "00fabf7e-37cd-4516-a1b0-4ce8584d0230"
+    },
+    {
+      "claim_id": "95455d01-7812-4333-8ac0-14a51f01329a",
+      "result_id": "00fabf7e-37cd-4516-a1b0-4ce8584d0230"
+    },
+    {
+      "claim_id": "13417d25-fb26-4fb2-a76c-9fc6e652c1fe",
+      "result_id": "f0b41d71-7be3-43b1-a8f7-e93532829d20"
+    },
+    {
+      "claim_id": "7011b4ff-6565-420c-8248-6247d4f2d766",
+      "result_id": "f0b41d71-7be3-43b1-a8f7-e93532829d20"
+    },
+    {
+      "claim_id": "6c360ef9-2a30-4ef1-9c3e-72bc3aca2e56",
+      "result_id": "f0b41d71-7be3-43b1-a8f7-e93532829d20"
+    }
+  ],
+  "comparisons": []
+}

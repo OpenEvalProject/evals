@@ -1,0 +1,1932 @@
+{
+  "submission": {
+    "id": "41d1af47-d3e7-43ac-858c-0b04e6d63062",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:07:53.005926Z",
+    "updated_at": "2025-12-03T18:07:53.005926Z"
+  },
+  "content": [
+    {
+      "id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "submission_id": "41d1af47-d3e7-43ac-858c-0b04e6d63062",
+      "content_type": "manuscript",
+      "content_text": "# Clonally related, Notch-differentiated spinal neurons integrate into distinct circuits\n\n## Authors\n\n- Saul Bello-Rojas<sup>1</sup> ([ORCID: 0000-0002-8090-9577](https://orcid.org/0000-0002-8090-9577))\n- Martha W Bagnall<sup>1</sup> ([ORCID: 0000-0003-2102-6165](https://orcid.org/0000-0003-2102-6165)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n\n\u2020 Corresponding author\n\n## Abstract\n\nShared lineage has diverse effects on patterns of neuronal connectivity. In mammalian cortex, excitatory sister neurons assemble into shared microcircuits. In Drosophila, in contrast, sister neurons with different levels of Notch expression (NotchON/NotchOFF) develop distinct identities and diverge into separate circuits. Notch-differentiated sister neurons have been observed in vertebrate spinal cord and cerebellum, but whether they integrate into shared or distinct circuits remains unknown. Here, we evaluate how sister V2a (NotchOFF)/V2b (NotchON) neurons in the zebrafish integrate into spinal circuits. Using an in vivo labeling approach, we identified pairs of sister V2a/b neurons born from individual Vsx1+ progenitors and observed that they have somata in close proximity to each other and similar axonal trajectories. However, paired whole-cell electrophysiology and optogenetics revealed that sister V2a/b neurons receive input from distinct presynaptic sources, do not communicate with each other, and connect to largely distinct targets. These results resemble the divergent connectivity in Drosophila and represent the first evidence of Notch-differentiated circuit integration in a vertebrate system.\n\n## Introduction\n\nHow does shared lineage affect neuronal circuitry? Neurons arising from common progenitors are more likely to exhibit stereotypic patterns of connectivity, in two models from vertebrate and invertebrate systems. In mouse cortex, clonally related excitatory sister neurons preferentially form connections within a shared microcircuit (Xu et al., 2014; Yu et al., 2009). In contrast, clonally related sister neurons in Drosophila form distinct NotchON and NotchOFF hemilineages which innervate distinct targets and often express different neurotransmitters (Artavanis-Tsakonas et al., 1999; Endo et al., 2007; Harris et al., 2015; Lacin et al., 2019; Lacin and Truman, 2016; Mark et al., 2021; Pinto-Teixeira and Desplan, 2014; Skeath and Doe, 1998).\n\nNotch-differentiated clonally related sister neurons have been observed in the vertebrate spinal cord and cerebellum (Kimura et al., 2008; Peng et al., 2007; Zhang et al., 2021), but it remains unknown whether these clonally related neurons integrate into shared circuits. In ventral spinal cord, motor neurons and interneurons develop from five progenitor domains (p0, p1, p2, pMN, and p3) (Goulding, 2009; Goulding and Lamar, 2000; Jessell, 2000). Progenitors in the p2 domain transiently express the transcription factor Vsx1 (Kimura et al., 2008; Passini et al., 1998). Each p2 progenitor makes a final paired division into an excitatory V2a (NotchOFF) and an inhibitory V2b (NotchON) neuron via asymmetric expression of Delta ligands and subsequent Notch-mediated lateral inhibition (Del Barrio et al., 2007; Francius et al., 2016; Kimura et al., 2008; Okigawa et al., 2014; Peng et al., 2007).\n\nAlthough both V2a and V2b neurons project axons ipsilaterally and caudally, these neuron classes differ in other aspects. V2a interneurons express vsx2 (referred to as chx10 in this paper for clarity) and provide glutamatergic drive onto motor populations (Kimura et al., 2006), whereas V2b interneurons express gata3 and provide glycinergic and GABAergic inhibition onto motor populations (Andrzejczuk et al., 2018; Callahan et al., 2019). V2b neurons also support flexor/extensor alternation through reciprocal inhibition in limb circuits (Britz et al., 2015; Zhang et al., 2014). Given their shared origin but divergent cellular identities, it remains unknown whether these V2a/b sister neurons integrate into shared or distinct functional spinal circuits.\n\nWe investigated whether V2a/b sister neurons in zebrafish spinal cord preferentially integrate into shared circuits, as with clonally related cortical neurons, or distinct circuits, as with Notch-differentiated hemilineages in Drosophila. Using a sparse labeling approach, we directly observed and identified individual pairs of sister V2a/b neurons arising from a single progenitor. Our morphological and electrophysiological analyses reveal that although sister V2a/b neurons share anatomical characteristics, these sister neurons diverge into separate circuits, with largely distinct presynaptic and postsynaptic partners. To the best of our knowledge, this is the first assessment of circuit integration of Notch-differentiated clonally related neurons in vertebrate models.\n\n## Results\n\n### Micro-injection of vsx1 plasmid allows for clonal pair tracking in vivo\n\nIn both zebrafish and mice, vsx1+ progenitors give rise to two distinct daughter populations, V2a and V2b neurons (Kimura et al., 2008; Peng et al., 2007). Using transgenic zebrafish, individual vsx1+ progenitors have been shown to undergo a final paired division into one V2a (NotchOFF) and one V2b neuron (NotchON) (Figure 1A; Kimura et al., 2008). We aimed to develop a protocol to label and identify individual clonal pairs resulting from this division in vivo. To label individual pairs, we micro-injected titrated amounts of a bacterial artificial chromosome (BAC) construct, vsx1:GFP, into fertilized zebrafish embryos at the single-cell stage (Figure 1B). At the 21-somite stage, larval zebrafish were screened for vsx1 GFP+ progenitors and then imaged every 5 min to capture the progenitor division (Figure 1C). Progenitors became elongated before dividing into two distinct cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83680/elife-83680-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of vsx1 GFP+ progenitor undergoing a final paired division into sister V2a/b neurons. (B) Schematic of fertilized embryo injection and screening for vsx1 GFP+ progenitors at the 21-somite stage. (C) Time-lapse single-plane confocal images taken every 5 min as a vsx1 GFP+ progenitor divides into two sister neurons, imaged at 24 hr post fertilization (hpf). (D) Confocal imaging of vsx1+ sister neuron pairs in the spinal cord of 4 dpf larvae. Left: vsx1 GFP+ sister pair in a chx10:Red larva. One sister neuron is co-labeled (white, V2a) while the other is a presumed V2b. Middle: vsx1 GFP+ sister pair in a gata3:Red larva showing an identified V2b with a presumed V2a or V2s. Right: vsx1 mCherry+ sister pair in a sox1:GFP larva, showing an identified V2s with a presumed V2b. Colors switched for label and image consistency. (E) Bar graph displaying the fraction of vsx1 GFP+ pairs in chx10:Red (n = 92), gata3:Red (n = 38), and sox1:GFP (n = 65) larvae in which either 0/2 sister neurons were co-labeled with the reporter (black), 1/2 sister neurons were co-labeled (green), or 2/2 sister neurons were co-labeled (gray). Source data for this figure are given in Figure 1\u2014source data 1.\n\nWhen the fish become free swimming at 4 days post fertilization (dpf), vsx1 GFP+ pairs were assessed for co-expression of known V2a/b transcription factors (chx10/gata3) to verify their neuronal identities, using transgenic fish Tg(chx10:lox-dsRed-lox:GFP) (Kimura et al., 2006) or Tg(gata3:lox-dsRed-lox:GFP) (Callahan et al., 2019; Figure 1D). For simplicity, these fish lines will be referred to as chx10:Red and gata3:Red. We assayed these in separate experiments due to overlap in fluorescence from reporter lines. Figure 1D presents example images of vsx1 GFP+ pairs in which one of the two neurons in the pair expresses the appropriate marker: a clonal pair (green) where one neuron co-expresses the V2a marker Chx10 (left), and a different clonal pair in which one neuron co-expresses the V2b marker Gata3 (middle). Based on previous work, we expected that every vsx1 GFP+ pair would consist of one V2a and one V2b neuron (Kimura et al., 2008). However, among clonal pairs imaged in the chx10:Red background, only 61/92 (66.3%) of vsx1 GFP+ pairs included one identified V2a neuron (Figure 1E). In contrast, in the gata3:Red background, 35/38 (92.1%) of vsx1 GFP+ pairs included one identified V2b neuron (Figure 1E). Rarely, both vsx1 GFP+ neurons in a pair expressed both Chx10 or Gata3 markers (<10%). However, in 25% of vsx1 GFP+ pairs in chx10:Red fish, neither neuron expressed the V2a marker.\n\nA possible explanation for the lower rate of V2a marker expression could be under-labeling in the fluorescent reporter line. Alternatively, there is at least one additional population of neurons to emerge from the V2 domain. In zebrafish, the V2s population is glycinergic and expresses Sox1a (Gerber et al., 2019). V2s neurons resemble V2c neurons in mice in that they both express Sox1a and arise after V2a/b development; however, V2c neurons are GABAergic while V2s neurons are purely glycinergic (Gerber et al., 2019; Panayi et al., 2010). Using the Tg(sox1a:dmrt3a-gata2a:EFP(ka705)) reporter line, here referred to as sox1:GFP, (Gerber et al., 2019), we assayed the presence of sox1+/vsx1+ neurons by injecting a vsx1:mCherry BAC in embryos at the single-cell stage. In 16/65 (24.6%) of vsx1 mCherry+ pairs, one of the two sister neurons co-labeled with sox1a (Figure 1D, right), and in 49/65 (75.4%) of vsx1 mCherry+ pairs, neither neuron co-labeled with sox1a (Figure 1E). These results suggest that not all vsx1+ progenitors differentiate into V2a/b pairs. Instead, approximately 75% of vsx1 progenitors divide into V2a/b pairs while the remainder divide into V2b/s pairs. We did not see any vsx1+ triplets or singlets in co-label experiments (0/195), suggesting that vsx1 progenitors only undergo a single, terminal division. Based on these results, we conclude that our stochastic labeling approach successfully labeled clonally related V2 neurons, but required a chx10 co-label to properly identify vsx1 pairs as V2a/b neurons in vivo.\n\n### Sister V2a/b neurons remain in close proximity to each other\n\nImmediately after progenitor division around 1 dpf, sister V2a/b neurons are located in close proximity to each other (Kimura et al., 2008), but they have not been followed out to 3\u20135 dpf when the spinal circuit transitions from spontaneous coiling during embryonic stages to the beat-and-glide locomotion at the larval stage. To assess somatic relationships between sister V2 neurons at larval stages, we measured inter-soma distances among sister and non-sister pairs. In an example fish (Figure 2A), the inter-soma distance between the GFP-only sister neuron (presumed V2b) to the GFP/Chx10:Red co-labeled V2a neuron (dark red arrow) was shorter than the distance between non-sister neurons (white arrows). Across animals, sister V2 neurons were usually closer neighbors than non-sister V2 neurons, whether measured in the V2a or V2b reporter lines (Figure 2B). Sister vsx1+ neurons remained in close proximity to each other throughout embryonic and larval development. Beginning at 24 hpf, we embedded embryos in low melting point agarose, imaged, and then re-imaged at 48 hpf. At 24 hpf, sister neuron centers were ~7 \u00b5m apart, or effectively adjacent. By 48 hpf, this inter-soma distance increased slightly to ~9 \u00b5m (Figure 2C). In a separate set of experiments, we tracked vsx1+ sister neurons from 48 to 96 hpf by embedding fish for imaging at 48 hpf, freeing from agarose after imaging, and re-embedding at 96 hpf. The distance between somata increased slightly, but still remained relatively short (Figure 2C). Because V2a/b somata are ~10 \u00b5m in size (Callahan et al., 2019; Kimura et al., 2006; Menelaou et al., 2014), our data suggest that sister V2 neurons usually remain adjacent. Lastly, restricting our analysis to sister V2a/b neurons using chx10:Red fish, we found that V2b neurons were typically positioned more dorsally than their sister V2a counterparts (Figure 2D), consistent with previous work showing inhibitory populations are located more dorsally than excitatory neurons in spinal cord (Kimura et al., 2006; McLean et al., 2007). Altogether, our data demonstrate that sister V2a/b neurons develop and remain close to each other during larval stages. As a result, in subsequent experiments we inferred that sparsely labeled vsx1 GFP+ neurons located close to each other at 3\u20134 dpf represented sister pairs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83680/elife-83680-fig2-v1.jpg)\n\n**Figure 2.:** (A) Maximum intensity projection (50 planes, 50 \u03bcm) of chx10:Red with a single vsx1 GFP+ clonal pair. The inter-soma distance between the GFP-only sister neuron to the GFP/Red co-labeled V2a neuron (dark red arrow) is smaller than the distance between non-sister neurons (white arrows). (B) For each clonal pair in either the Chx10 reporter line (n = 27) or the Gata3 reporter line (n = 24), the 3D distance between the two sister neurons (GFP-GFP, red) and the median 3D distance between one sister neuron and its non-sister neurons in the same segment (GFP-Red). Black dot indicates median and lines show 5th\u201395th percentiles. (C) Paired line plot of inter-soma distances of individual vsx1 GFP+ sister pairs first imaged at 24 hr post fertilization (hpf) and later reimaged at 48 hpf (left) (n = 14) or first imaged at 48 hpf and later reimaged at 96 hpf (right) (n = 66). Red values indicate median distances at each time point. (D) Scatterplot of normalized dorsal (1)-ventral (0) soma position for each of 27 sister V2a/b neurons. Dashed line indicates unity. Typically, the V2b neuron was located more dorsally than the V2a neuron. Black dot indicates the median V2a/b pair position. **Wilcoxon signed-rank test, p=5.2 \u00d7 10\u20134, paired t-test, n = 27 pairs. Source data for this figure are given in Figure 2\u2014source data 1.\n\n### Though V2a axons are consistently longer, sister V2a/b axons travel along similar trajectories\n\nAs V2a/b neurons both project descending, ipsilateral axons, we next assessed whether the axons of clonally related V2a/b neurons exhibited any consistent morphological characteristics. Vsx1 GFP+ pairs were labeled in chx10:Red fish using a vsx1:GFP plasmid and later imaged on a confocal microscope. V2a/b axons were reconstructed (Figure 3A), and the descending axon length of each clonal V2a/b neuron was measured. Sister V2a neurons exhibited axons that were on average 61% longer than their V2b counterparts (Figure 3B), consistent with work showing that Notch expression attenuates axon growth (Mark et al., 2021; Mizoguchi et al., 2020). There was no relationship between the length of the axons and their location along the rostral-caudal axis of the fish (Figure 3B). To measure axon proximity, the shortest distance between the V2b and V2a axon was calculated along each point of the V2b neuron, beginning at the axon hillock (Figure 3C, inset). The fraction of those inter-axon distances within 5 \u00b5m was calculated for each pair. Indeed, clonally related V2a/b neurons send axons along a similar trajectory, with a median of 37.1% of the V2b axon length within 5 \u00b5m of the V2a axon (Figure 3C). Because the axons follow similar paths, these results suggest a possibility for sister V2a/b neurons to contact shared synaptic targets.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83680/elife-83680-fig3-v1.jpg)\n\n**Figure 3.:** (A) Confocal image of chx10:Red larva exhibiting a single vsx1 GFP+ clonal pair with long axons in close proximity to each other. Stitched maximum intensity projection over 74 z-planes (74 \u03bcm). (B) Scatterplot of sister V2a axon length vs. sister V2b axon length (n = 27) for V2a/b pairs. Heat map depicts the muscle segment number where each clonal pair was located. Black line depicts Pearson correlation, r = 0.32, p=0.10. V2a axons were invariably longer than sister V2b axons, as seen by each pair\u2019s position relative to the unity line (dashed gray). ***Wilcoxon signed-rank test, p=1.9 \u00d7 10\u20135, paired t-test n = 27 pairs. (C) Histogram of clonal pairs showing the fraction of V2b axon that is within 5 \u03bcm of V2a axon. Inset schematic depicts how the distances were measured. Source data for this figure are given in Figure 3\u2014source data 1.\n\n### Sister V2a/b neurons receive input from distinct synaptic circuits\n\nWork in hippocampus has shown that sister neurons are more likely to receive synaptic input from shared presynaptic partners than non-sister neurons (Xu et al., 2014). In contrast, NotchON and NotchOFF sister neurons in Drosophila integrate into separate hemilineages that segregate spatially, although whether they receive shared input is not known (Harris et al., 2015). To evaluate whether sister V2a/b neurons receive input from shared or distinct presynaptic partners in vivo, we performed paired whole-cell electrophysiology in voltage clamp from clonally related pairs of V2a/b neurons identified as above (Figure 4A and B; Bagnall and McLean, 2014). Both sister neurons were held at \u201380 mV, the chloride reversal potential, to isolate excitatory postsynaptic currents (EPSCs), while a bright-field stimulus was used to elicit fictive swim (Figure 4C). The timing of EPSCs arriving in each neuron of the pair was asynchronous, as exemplified by an overlay of several hundred EPSCs from either a V2a/b and the associated EPSC-triggered average in its sister neuron (Figure 4D and E). A summary of the amplitudes of detected EPSCs and associated EPSC-triggered averages for this example neuron is shown in Figure 4F. Across recordings from 13 clonally related pairs in vivo, we consistently saw little to no synchronous synaptic input (Figure 4G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83680/elife-83680-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of larval zebrafish whole-cell paired recording (sister V2a in red and sister V2b in blue). (B) Two sister neurons labeled with vsx1:GFP (left), filled with dye during whole-cell recording (right). One neuron co-labels with V2a marker chx10:Red (middle). Red arrow and blue arrow indicate sister V2a and presumed sister V2b, respectively. (C) Example traces during swim of vsx1 GFP+ sister neurons from V2a/b pair in voltage-clamp configuration. Asterisks denote detected excitatory postsynaptic current (EPSC) events. (D) Overlaid detected EPSC events recorded from sister V2a neuron (top) and simultaneously recorded signal in the sister V2b neuron (bottom). Most detected EPSCs in the V2a do not occur synchronously with EPSCs in the V2b neuron. (E) Overlaid detected EPSCs in V2b neuron (top) and simultaneously recorded signal in sister V2a neuron (bottom), also showing very few synchronous EPSCs. Colored traces represent averages of individual traces in gray. (F) Data from one example sister V2a/b pair showing the EPSC amplitude of detected events and the amplitude of the simultaneously recorded signal in the other neuron (Trig). Boxes depict medians, 25th and 75th percentiles. Whiskers denote 10th and 90th percentiles. Open circles depict EPSC values above and below the 10th and 90th percentiles. ***Wilcoxon signed-rank test (V2a \u2013 V2b simul.) p=1.8 \u00d7 10\u2013206; (V2b \u2013 V2a simul.) p=6.7 \u00d7 10\u201315 paired t-test. (G) Summary data from all sister V2a/b pairs of recorded EPSC amplitudes and the EPSC-triggered simultaneously recorded signal in the other neuron. ***Wilcoxon signed-rank test, (V2a \u2013 V2b simul.) p=1.6 \u00d7 10\u20135; (V2b \u2013 V2a simul.) p=2.6 \u00d7 10\u20135 paired t-test, n = 13 pairs from 13 fish. (H) As in (F), for non-sister V2a/b paired recordings from the same spinal segment. ***Wilcoxon signed-rank test, (V2a \u2013 V2b simul.) p=1.6 \u00d7 10\u20135; (V2b \u2013 V2a simul.) p=1.3 \u00d7 10\u20134 paired t-test, n = 13 pairs from 13 fish. Source data for this figure are given in Figure 4\u2014source data 1.\n\nLastly, we wanted to compare whether this asynchrony in EPSC input was present in non-sister V2a/b neurons from the same segment. Using the same analysis, it appeared that non-sister V2a/b neurons from the same spinal segment receive input from distinct synaptic sources as well (Figure 4H). The asynchronous timing of these inputs suggests that they cannot be arriving from a shared presynaptic source, but rather, different presynaptic sources which fire at different times (Bagnall and McLean, 2014). Altogether, these data show that not only sister V2a/b neurons, but any V2a-V2b pair, clonal or non-clonal, from the same segment receives input from distinct presynaptic sources during light-evoked locomotion at slow to medium locomotor speeds. We cannot rule out the possibility that sister neurons receive shared inputs from circuits for fast locomotion or specialized behaviors.\n\n### Sister V2a/b neurons do not form synaptic connections with each other\n\nClonal pair analysis in cortex has shown that sister neurons preferentially form synapses onto each other (Yu et al., 2009; Zhang et al., 2017). To identify whether sister V2a/b neurons form synaptic connections with each other, paired in vivo whole-cell recordings were performed in chx10:Red fish as described above (Figure 5A). Spiking was elicited by depolarizing current steps in either the V2a or the V2b neuron while the other neuron was held in voltage clamp to measure synaptic responses (Vhold of \u201380 mV in V2b neurons to measure EPSCs, Vhold of 0 mV in V2a neurons to measure IPSCs). In both cases, there were no detectable evoked currents, showing that sister V2a/b neurons do not connect with each other (Figure 5C). Similarly, non-clonally related V2a/b neurons exhibited no interconnectivity (Figure 5D). Therefore, V2a/b neurons in the same segment do not form direct synapses with each other. Any connectivity among V2a and V2b neurons likely occurs between neurons in different segments (Sengupta and Bagnall, 2022).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83680/elife-83680-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of larval zebrafish whole-cell paired recording. (B) Simultaneous current-clamp and voltage-clamp recording of sister V2a/b neurons. Current step-evoked spiking in sister V2a neuron and simultaneous voltage-clamp recording in V2b (left). Current step-evoked spiking in sister V2b neuron and simultaneous voltage-clamp recording in V2a (right). No synaptic responses are seen in either case. (C) Bar graph showing the number of clonal V2a/b interconnected pairs detected (n = 10 pairs from 10 fish). (D) Bar graph showing the number of V2a/b interconnected pairs detected for non-sister pairs (n = 7 pairs from seven fish).\n\n### Sister V2a/b neurons provide asymmetric input onto downstream neurons in spinal cord\n\nResearch in cortex has shown that clonally related inhibitory interneurons form synaptic connections with shared downstream targets (Zhang et al., 2017), although this claim is disputed (Mayer et al., 2016). Given the proximity of sister V2a/b axons (Figure 3), it was plausible that they share common downstream targets. To address this question, we micro-injected a vsx1:Gal4 BAC and a UAS:CoChR2-tdTomato plasmid (Antinucci et al., 2020; Schild and Glauser, 2015) in embryos at the single-cell stage to drive stochastic expression of this channelrhodopsin variant in vsx1 sister neurons (Figure 6A) for selective optical stimulation of sister neurons. To distinguish presumed V2a/b pairs from V2b/s pairs, we screened CoChR2-tdTomato+ vsx1 sister pairs for morphological characteristics (\u2018Methods\u2019). We validated that the optical stimuli effectively elicited spiking in CoChR2-tdTomato+ vsx1 sister neurons by performing cell-attached recordings while providing a 10 ms light pulse (Figure 6B). All CoChR2-tdTomato+ vsx1 neurons fired action potentials in response to optical stimulation (Figure 6C, n = 13 neurons from 12 fish). Spiking was elicited in both V2a and V2b CoChR2-tdTomato+ neurons (Figure 6D). Similar experiments were performed on nearby CochR2-tdTomato(-) neurons to ensure that optical stimuli evoked spiking only in neurons expressing CoChR2-tdTomato. All CoChR2-tdTomato(-) neurons remained inactive during the light stimulus (Figure 6C, n = 22 neurons from 18 fish). In CoChR2-tdTomato+ neurons, most light-evoked spikes were observed throughout the duration of the stimulus, with some spiking following the stimulus window (Figure 6C and E). This prolonged activity is most likely due to the long inactivation kinetics of the CoChR2 variant (Antinucci et al., 2020). Altogether, our optogenetic approach is a feasible method for assessing downstream connectivity of sister V2a/b neurons.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83680/elife-83680-fig6-v1.jpg)\n\n**Figure 6.:** (A) Maximum intensity projection (79 planes, 79 \u03bcm) of WT larva with a single vsx1:Gal4;UAS:CoChR2-tdTomato+ clonal pair. (B) Schematic of cell-attached recording of vsx1:Gal4;UAS:CoChR2-tdTomato+ neurons using optical stimulation. (C) Cell-attached example trace of CoChR2+V2a neuron during optical stimulation (top, green) (n = 13 from 12 fish). Cell-attached example trace of nearby CoChR2- neuron during optical stimulation (bottom, black) (n = 22 from 18 fish). Both example traces are aligned to the start of the 10ms optical stimulus (light blue). (D) Averaged detected spike events recorded from an example CoChR2+ sister V2a neuron (top, red), CoChR2+ sister V2b neuron (middle, blue), and absence of response in nearby CoChR2- neuron (bottom, black). (E) Histogram showing the number of spikes relative to the optical stimulus. Blue bar indicates the duration of the optical stimulus. Source data for this figure are given in Figure 6\u2014source data 1.\n\nHaving validated our optogenetic approach, we proceeded to perform whole-cell patch-clamp recordings on known V2a/b neuron downstream spinal targets (i.e., motor neurons, V1, V2a, V2b neurons), which were located 1\u20134 segments caudal to the V2a/b sister pair in voltage-clamp mode using a cesium-based internal solution (Figure 7A; Bagnall and McLean, 2014; Callahan et al., 2019; Kimura et al., 2006; Menelaou and McLean, 2019). Because sister vsx1+ neurons are close to each other, our optogenetic stimulus would activate both neurons simultaneously. However, by clamping the target neuron at different reversal potentials, we could isolate either evoked EPSCs or inhibitory postsynaptic currents (IPSCs) (Figure 7B\u2013D). In most recorded neurons, optical stimuli evoked neither EPSCs nor IPSCs, consistent with sparse connectivity in the spinal cord (n = 85/99; Figure 7E and F). In six target neurons, we recorded evoked EPSCs (Vhold \u201380 mV) but not IPSCs, demonstrating that the target neuron received synaptic input from the CoChR2-labeled V2a neuron but not the V2b (Figure 7B and E). In another six target neurons, we detected evoked IPSCs (Vhold 0 mV) but no EPSCs, demonstrating that the target neuron received synaptic input from the V2b but not the V2a neuron (Figure 7C and E). In a subset of experiments, NBQX/APV or strychnine were used to block responses and confirm glutamatergic or glycinergic connections, respectively (Figure 7B, n = 2; Figure 7C, n = 4). In two instances, a target neuron received both evoked EPSCs and IPSCs, with the magnitude of IPSCs approximately fivefold larger than the magnitude of the EPSCs, suggesting an asymmetric connection from sister V2a/b neurons (Figure 7E).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/83680/elife-83680-fig7-v1.jpg)\n\n**Figure 7.:** (A) Schematic of whole-cell recording of downstream neuronal targets of vsx1:Gal4;UAS:CoChR2-tdTomato+ neurons using optical stimulation. (B) Example voltage-clamp traces from a target neuron held at Vhold \u201380 mV or 0 mV during optical stimulation of the upstream sister neuron pair. Optical stimulation evoked excitatory postsynaptic currents (EPSCs) onto the target neuron (top) but not inhibitory postsynaptic currents (IPSCs) (middle), indicating connectivity from the V2a but not the V2b. Bottom: application of glutamatergic antagonists blocks the evoked EPSCs. (C) As in (B) for another target neuron, this one showing evoked IPSCs but not EPSCs. IPSCs were abolished by application of strychnine (bottom). (D) Example voltage-clamp traces from a target neuron held at Vhold \u201380 mV or 0 mV. Trace showing a small, slow evoked EPSCs without any fast component. These are presumably due to indirect (polysynaptic) electrical connectivity from the optogenetically activated V2a neuron. (E) Mean evoked amplitude of optogenetically evoked EPSCs and IPSCs in each target neuron. 12/14 synaptically connected targets received only EPSCs or IPSCs, while 2/14 neurons received both EPSCs and IPSCs. (F) Bar graph depicting the number of EPSC only (n = 6), IPSC only (n = 6), both EPSC/IPSC (n = 2), and no responses (n = 75) (black) or only slow presumed polysynaptic (gray) (n = 10) detected across all target neurons recorded. (G) Scatterplot showing the distinction between mean evoked amplitude and 20\u201380% rise time for fast and slow evoked EPSC responses. (H) Schematic depicting the two presumed types of vsx1 GFP+ sister pairs observed. (I) Summary of circuit integration pattern observed among sister V2a/b pairs. Source data for this figure are given in Figure 7\u2014source data 1.\n\nIn 10 neurons, we detected a slow depolarizing current when target neurons were held at \u201380 mV (Figure 7D and F, gray), but not at 0 mV. This evoked current had a lower amplitude and longer rise time than fast evoked EPSCs (Figure 7G). This slow excitatory current may be caused by a weak disynaptic electrical connection (Menelaou and McLean, 2019), but we were not able to eliminate it with gap junction blockers (carbenoxylone and 18-\u03b2-glycyrrhetinic acid). We summarize the identities of target neurons receiving synaptic input from sister V2a/b neurons in Table 1. Target neurons were evenly divided between motor neurons (early and late born), and excitatory and inhibitory interneurons. Overall, these results demonstrate that clonally related V2a/b neurons do not preferentially form synaptic connections with shared targets.\n\n**Table 1.**\n Sister V2a/b identified postsynaptic targets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Target type</th>\n      <th>EPSC only</th>\n      <th>IPSC only</th>\n      <th>Both</th>\n      <th>Total</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Primary motor neuron</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Secondary motor neuron</td>\n      <td>2</td>\n      <td>1</td>\n      <td>0</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>V1</td>\n      <td>0</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>V2a</td>\n      <td>0</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>V2b</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Unidentified</td>\n      <td>2</td>\n      <td>0</td>\n      <td>1</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n_EPSC, excitatory postsynaptic current; IPSC, inhibitory postsynaptic current._\n\n## Discussion\n\nIn this study, we showed that clonally related V2a/b neurons exhibit similar morphological characteristics, but form synapses with and receive information from largely distinct neuronal partners. Through our use of plasmid injections and time-lapse imaging, we definitively identified individual pairs of clonally related V2a/b neurons born from a single vsx1+ progenitor cell in vivo (Figure 7H). Additionally, some vsx1+ progenitors appear to divide into V2b/s pairs. Within V2a/b pairs, we saw that sister neuron somata remain in close proximity to each other and send their axons along similar trajectories. However, our electrophysiological data showed that these sister neurons integrate into distinct circuits. Clonally related V2a/b neurons do not communicate with each other, do not receive input from similar sources, and infrequently connect to the same downstream target. This connectivity pattern resembles circuitry seen in Drosophila Notch-differentiated hemilineages (Figure 7I). Our results represent the first evidence of Notch-differentiated circuit integration in a vertebrate system, and may reflect a means of cell-type and circuit diversification in earlier evolved neural structures.\n\n### Notch determines cellular identity of vsx1+ sister neurons\n\nNotch is an important regulator in V2a/b differentiation, and during vsx1+ progenitor division, differences in Notch expression result in the onset of V2a (NotchOFF) or V2b (NotchON) programming (Batista et al., 2008; Debrulle et al., 2020; Kimura et al., 2008; Mizoguchi et al., 2020; Okigawa et al., 2014). However, it remains unknown whether Notch plays a role in sister V2a/b development beyond initiating cellular identity or whether it functions as an intermediary step before other molecular factors determine cellular morphology postmitotically (Kozak et al., 2020; Mizoguchi et al., 2020). Our morphological analysis showed differences in V2a/b axon lengths and dorsoventral position (Figures 2 and 3). Further experiments are needed to evaluate whether these differences are a result of Notch signaling or intrinsic to postmitotic cellular identity. Constitutive manipulation of Notch levels results in a skewing of V2a/b numbers (Mizoguchi et al., 2020). Therefore, a temporally controlled manipulation is needed to address the role of Notch in postmitotic morphological and functional development of sister V2a/b neurons.\n\nSimilarly, the recently discovered V2s population relies on Notch signaling for its development with Notch KO mutants showing a decrease in sox1a+ neurons (Gerber et al., 2019). We speculate that some vsx1+ progenitors give rise to V2b/s sister pairs in addition to the previously described V2a/b pairs. Our experiments in reporter lines (Figure 1) suggested that ~75% of vsx1 GFP+ progenitors divided into V2a/b sister neurons, whereas ~25% resulted in V2b/s neuron pairs. V2s neurons arise later than the initial wave of V2a/b pairs (Gerber et al., 2019). Because Notch has been shown to exhibit different effects on cellular identity during early and late development, we suggest that delayed Notch activity causes some later born vsx1+ sister neurons to adopt a V2b/s identity, which are both NotchON (Jacobs et al., 2022). Similarly, only early cerebellar progenitors appear to undergo Notch differentiation into distinct cell types, the Purkinje and granule cells (Zhang et al., 2021). Notch overexpression experiments could have biased differentiation in favor of V2b/s pairs earlier in development, accounting for the increase in V2b and decrease in V2a numbers (Mizoguchi et al., 2020). However, these experiments have not looked at changes to V2s numbers, so selective evaluation of later born V2 progenitors is needed to identify whether V2b/s clonal pairs exist and if so whether they are temporally delayed relative to V2a/b pairs.\n\n### Notch-mediated development influences circuit formation\n\nLineage pathfinding and innervation differences in Drosophila are well documented, and Notch-differentiated sister neurons in these organisms develop different axon trajectories, presumably connecting to different downstream targets (Harris et al., 2015; Truman et al., 2010). Our data show that vsx1+ sister neurons in spinal cord have similar descending trajectories albeit different axon lengths (Figure 3). Analysis of Notch-differentiated lineages in vertebrate cerebellum have shown that Notch mediates cerebellar progenitor differentiation into excitatory and inhibitory cerebellar cell types (Zhang et al., 2021), but it is not yet known whether the resulting neurons integrate into shared or distinct circuits. Our results are consistent with a framework in which the progeny of Notch-differentiated divisions preferentially integrate into distinct networks in both invertebrates and vertebrates. In contrast with cortical lineages, the divergent cellular identities of sister V2a/b neurons appear to determine that they participate in distinct circuits. We speculate that earlier evolved neural structures rely on Notch-differentiated divisions as a means to diversify neuronal populations during development. The presence of Notch-differentiated sister neurons in both cerebellum and spinal cord could represent an efficient mechanism to generate diverse cell types early in development, in contrast to cortical reliance on dedicated streams of excitatory and inhibitory neural progenitors (Goulding, 2009; Leto et al., 2016; Ma et al., 2018). This would allow for the development of several neuronal cell types, each governed by their own intrinsic molecular cues.\n\n### Shared vsx1+ progenitor birthdates do not lead to shared integration\n\nDevelopmental timing allows for proper integration of neurons into functional speed-dependent locomotor circuits. In zebrafish, motor neurons and interneurons born during similar developmental windows are active and recruited at similar speeds (McLean et al., 2007; McLean and Fetcho, 2009). These birthdate-dependent microcircuits emerge in larvae and persist into adulthood (Ampatzis et al., 2014). By definition, vsx1+ sister neurons share a birthdate, suggesting that both neurons are likely recruited at similar speeds and therefore might integrate into shared microcircuits. However, our work shows that vsx1 sister neurons neither synapse onto each other, receive similar inputs, nor frequently target the same neurons. One possible explanation is that sister V2a/b divergence in cellular identity may cause integration into different hemilineage temporal cohorts, similar to Drosophila, which then determine their neuronal connectivity (Mark et al., 2021). Additionally, V2b neurons, whose recruitment patterns have not yet been described, may participate in different behaviors than V2a neurons. This separation of pathways driving excitatory and inhibitory neurons would allow for independent activation (accelerator) or inactivation (brake) of movement (Callahan et al., 2019; Ekl\u00f6f-Ljunggren et al., 2012). It is worth noting that we measured synaptic inputs during fictive locomotion induced by bright-field stimuli, and that the possibility remains sister vsx1 neurons do receive similar inputs under different behavioral paradigms, such as turns or escapes.\n\nLastly, the sister vsx1 neurons infrequently connected to the same downstream targets (Figure 7). Because we saw two examples of targets receiving input from both the V2a and V2b neuron of a clonal pair, it is unclear whether sister neurons are explicitly discouraged from sharing downstream targets or whether it is simply random. In either case, the observed connectivity divergence might function to coordinate antagonistic components during locomotion. Spinal V1 interneurons target different populations of neurons along the rostral-caudal length of the spinal cord (Sengupta et al., 2021). Even if non-clonally related V2a and V2b neurons generally form synaptic contacts onto the same populations, such as motor neurons, they may exhibit different connectivity patterns in the longitudinal axis, preventing clonally related pairs from sharing downstream targets. Mapping the rostrocaudal connectivity of V2a and V2b populations would address this hypothesis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>chx10:loxP-dsRed-loxP:GFP (synonym: Tg(vsx2:LOXP-DsRed-LOXP-GFP))</td>\n      <td>Kimura et al., 2006</td>\n      <td>ZDB-ALT-061204-4</td>\n      <td>BAC line generation</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>gata3:loxP-dsRed-loxP:GFP (synonym: TgBAC(gata3: LOXP-DsRed-LOXP-GFP))</td>\n      <td>Callahan et al., 2019</td>\n      <td>ZDB-ALT-190724-4</td>\n      <td>BAC line generation</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>sox1a: EGFP(ka705) (synonym: Tg(nccr.dmrt3a-gata2a:EGFP))</td>\n      <td>Gerber et al., 2019</td>\n      <td>ZDB-ALT-191113-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>chx10:GFP (synonym: TgBAC(vsx2:EGFP))</td>\n      <td>Kimura et al., 2006</td>\n      <td>ZDB-ALT-061204-4</td>\n      <td>BAC line generation</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>UAS:CoChR2-tdTomato</td>\n      <td>Antinucci et al., 2020</td>\n      <td>Addgene Cat# 124233</td>\n      <td>Tol2 Plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>vsx1:GFP Plasmid</td>\n      <td>Kimura et al., 2008</td>\n      <td></td>\n      <td>BAC CH211-67N1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>vsx1:mCherry Plasmid</td>\n      <td>This paper</td>\n      <td></td>\n      <td>BAC CH211-67N1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>vsx1:Gal4 Plasmid</td>\n      <td>This paper</td>\n      <td></td>\n      <td>BAC CH211-67N1</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris 9.8</td>\n      <td>Bitplane</td>\n      <td>https://imaris.oxinst.com/versions/9-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ 1.53q</td>\n      <td>FIJI; Schindelin et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Igor Pro 6.37</td>\n      <td>Wavemetrics; Rothman and Silver, 2018</td>\n      <td>https://github.com/bagnall-lab/Event-detection; Liu et al., 2020</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental model and subject details\n\nAll fish used for experiments were 0 to 6 dpf, before the onset of sexual maturation. All experiments and procedures were approved by the Animal Studies Committee at Washington University and adhere to NIH guidelines. Adult zebrafish (Danio rerio) were maintained at 28.5\u00b0C with a 14:10 light:dark cycle in the Washington University Zebrafish Facility up to 1 year following standard care procedures. Larval zebrafish used for experiments were kept in Petri dishes in system water or housed with system water flow.\n\nTo target V2a and V2b neurons, the Tg(chx10:loxP-dsRed-loxP:GFP) (Kimura et al., 2006) (ZDB-ALT-061204-4) and Tg(gata3:loxP-dsRed-loxP:GFP) (Callahan et al., 2019) (ZDB-ALT-190724-4) lines were used. We visualized V2s neurons in Tg(sox1a:dmrt3a-gata2a:EFP(ka705)) (ZDB-ALT-191113-2) (Gerber et al., 2019), a gift from Dr. Uwe Str\u00e4hle.\n\n### Stochastic single-cell labeling by microinjections\n\nTg(chx10:loxP-dsRed-loxP:GFP) and Tg(gata3:loxP-dsRed-loxP:GFP) were injected with a vsx1:GFP bacterial artificial chromosome (BAC) at a final concentration of 5 ng/\u00b5L (a gift from Dr. Shin-ichi Higashijima). Tg(sox1a:dmrt3a-gata2a:EFP(ka705)) were injected with a vsx1:mCherry BAC at 15 ng/\u00b5L (generated from BAC CH211-67N1 by VectorBuilder, Inc). To label clonal pairs with an optogenetic activator, wild-type embryos were injected with a vsx1:Gal4 BAC (VectorBuilder) and UAS:CoChR2-tdTomato plasmid (Addgene Cat# 124233) at 20 ng/\u00b5L and 25 ng/\u00b5L, respectively. The embryos were transferred to system water to develop. Embryos were screened between 1 and 4 dpf for sparse expression of Red/GFP fluorophores and selected for confocal imaging and electrophysiology. In optogenetic experiments, it was not feasible to use Tg(chx10:Red) animals to identify V2a neurons because of fluorophore overlap. Instead, we screened CoChR2-tdTomato+ vsx1 sister neurons for distinguishable V2a morphology, specifically the presence of an ascending collateral, which is characteristic of V2a but not V2b or V2s neurons (Callahan et al., 2019; Gerber et al., 2019; Menelaou et al., 2014).\n\n### Confocal imaging\n\nAt 18\u201324 hpf, larvae were anesthetized in 0.02% MS-222 and embedded in low-melting point agarose (0.7%) in a 10 mm FluoroDish (WPI). Spinal segments with sparsely labeled progenitors were imaged with a time-lapse approach, consisting of one Z-stack every 5 min, under a spinning disk confocal microscope (Crest X-Light V2; laser line 470 nm; upright Scientifica microscope; 40\u00d7 objective; imaged with Photometrics BSI Prime camera). After progenitor division, larvae were kept in the FluoroDish inside of an incubator and reimaged at a higher-resolution at 2 dpf with a laser confocal (Olympus FV1200, 488 nm laser, XLUMPlanFl-20\u00d7 W/0.95 NA water immersion objective).\n\nLarvae imaged beginning at 2 dpf were anesthetized in 0.02% MS-222 and embedded in low melting point agarose (1.5%) in a 10 mm FluoroDish (WPI). Images were acquired on an Olympus FV1200 confocal microscope as above. A transmitted light image was obtained along with laser scanning fluorescent images to identify spinal segments. Sequential scanning used for multi-wavelength images. Fish were unembedded from the agarose and placed separately in labeled Petri dishes and later reimaged at 4 dpf as described above. In some cases, fish were only imaged at 4 dpf using the embedding methods described above. Transcription factor co-expression was evaluated visually.\n\n### Image analysis\n\nConfocal images were analyzed using Imaris (9.8, Bitplane) and ImageJ (1.53q, FIJI) (Schindelin et al., 2012). For axon tracing, stitched projection images were made with the Pairwise stitching (Preibisch et al., 2009) ImageJ plugin. The overlap of the fused image was smoothed with linear blending and was registered based on the fill channel or the average of all channels. Three-dimensional (3D) images were reconstructed and analyzed using Imaris. Axon length measurements of each reconstructed neuron were obtained using the Filament function to trace over the 3D rendering. Axon length includes only the descending branches of the neuron, starting at the axon hillock. 3D axon coordinates of descending projections were exported from Imaris, and separation of axon distances was calculated as the shortest distance between sister V2b to sister V2a axons. Muscle segment number was counted under differential interference contrast (DIC). Distances between soma centers were measured in three dimensions using the Points function in Imaris. Normalized dorsoventral soma position was calculated by measuring the distance of the soma from the notochord and dividing by the total height of the spinal cord, with 0 as the ventral-most point.\n\n### Electrophysiological recordings\n\nCell-attached recordings were targeted to stochastically labeled WT fish with vsx1:Gal4 BAC and UAS:CoChR2-tdTomato plasmids to calibrate firing of vsx1:Gal4;UAS:CoChR2-tdTomato vsx1+ pairs. Whole-cell patch-clamp recordings were performed in Tg(chx10:loxP-dsRed-loxP:GFP) injected with vsx1:GFP and Tg(chx10:GFP;gata3:loxP-dsRed-loxP:GFP) larvae at 4\u20136 dpf for paired clonal V2a/b and non-clonal V2a/b recordings, respectively. Additionally, whole-cell patch-clamp recordings were performed in stochastically labeled WT fish with vsx1:Gal4 BAC and UAS:CoChR2-tdTomato in downstream targets. Larvae were immobilized with 0.1% \u03b1-bungarotoxin and fixed to a Sylgard lined Petri dish with custom-sharpened tungsten pins. Each larva was then transferred to a microscope (Scientifica SliceScope Pro) equipped with infrared differential interface contrast optics, epifluorescence, and immersion objectives (Olympus: 40\u00d7, 0.8 NA). One muscle segment overlaying the spinal cord was removed (segments 7\u201317) using a blunt-end glass electrode and suction (Wen and Brehm, 2010). The bath solution consisted of (in mM) 134 NaCl, 2.9 KCl, 1.2 MgCl2, 10 HEPES, 10 glucose, and 2.1 CaCl2. Osmolarity was adjusted to ~295 mOsm and pH to 7.5.\n\nPatch pipettes (5\u201315 M\u2126) were filled with internal solution for voltage and current clamp and cell-attached composed of (in mM) 125 K gluconate, 2 MgCl2, 4 KCl, 10 HEPES, 10 EGTA, and 4 Na2ATP. Whole-cell optogenetic and some paired recordings were performed using internal solution composed of (in mM) 122 cesium methanesulfonate, 1 tetraethylammonium-Cl, 3 MgCl2, 1 QX-314 Cl, 10 HEPES, 10 EGTA, and 4 Na2ATP. Additionally, Alexa Fluor 647 hydrazide 0.05\u20130.1 mM or sulforhodamine (0.02%) was included to visualize morphology of recorded cells post hoc. Osmolarity was adjusted to ~285 mOsm and KOH or CsOH was used to bring the pH to 7.5. Patch recordings were made in whole-cell configuration using a Multiclamp 700B, filtered at 10 kHz (current clamp) or 2 kHz (voltage clamp). All recordings were digitized at 100 kHz with a Digidata 1440 (Molecular Devices) and acquired with pClamp 10 (Molecular Devices). The following drugs were bath applied where noted: strychnine (10 \u00b5M), NBQX (10 \u00b5M), APV (100 \u00b5M), 18-beta-glycyrrhetinic acid (150 \u00b5M), and carbenoxolone disodium salt (500 \u00b5M).\n\nDuring paired electrophysiology recordings, fictive swimming sometimes occurred spontaneously and in other instances was elicited by white light illumination of the animal. In optogenetic experiments examining channelrhodopsin firing and V2a/b targeting, light stimulation was provided with high-intensity epifluorescent illumination (CoolLED pE-300), 10% intensity with a 40\u00d7 (0.8 NA) water immersion objective for 10 ms. The objective was positioned over a single spinal segment prior to stimulus delivery.\n\nElectrophysiology data were imported into Igor Pro 6.37 (Wavemetrics) using NeuroMatic (Rothman and Silver, 2018). The detection algorithm was based on the event detection instantiated in the SpAcAn environment for Igor Pro (Rousseau et al., 2012) and as previously described (Bagnall and McLean, 2014). All events detected were additionally screened manually to exclude spurious noise artifacts. EPSCs were analyzed using custom-written codes in Igor and MATLAB. For synchronized input evaluation, recordings were excluded from analysis if we could not induce robust fictive locomotion.\n\n### Statistics\n\nStatistical tests were performed using MATLAB (R2018a, MathWorks). Due to the non-normal distribution of physiological results, we used nonparametric statistics and tests for representations and comparisons. Details of statistical tests, p-values used, and sample sizes are described in the corresponding figure legends.\n",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "ab928701-23d9-4b1f-9c29-a5c66c013241",
+      "submission_id": "41d1af47-d3e7-43ac-858c-0b04e6d63062",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chris Q Doe, Howard Hughes Medical Institute, University of Oregon United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83680.sa0](https://doi.org/10.7554/eLife.83680.sa0)\n\nThis is an important article that describes the connectivity of sibling neurons in the zebrafish spinal cord, where one sibling receives Notch signaling (Notch-ON) and the other does not (Notch-OFF). They find that V2a and V2b siblings have different morphology, inputs, outputs, and fail to connect to each other; this provides new insight into the role of lineage in specifying neuronal connectivity. The experiments are convincing and the conclusions are supported by the data presented.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Chris Q Doe, Howard Hughes Medical Institute, University of Oregon United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83680.sa1](https://doi.org/10.7554/eLife.83680.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Clonally related, Notch-differentiated spinal neurons integrate into distinct circuits\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Chris Q Doe as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Claude Desplan as the Senior Editor. The individuals involved in the review of your submission have agreed to reveal their identity: Bruce Appel (Reviewer #2); Kamal Sharma (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThere are no essential revisions or further experiments. The authors are encouraged to address the requested text changes noted by reviewers 1 and 2 prior to uploading a final version. There will be no re-review.\n\nReviewer #1 (Recommendations for the authors):\n\n1) Optional NOT required: co-express constitutively active Notch (or Notch knockdown constructs) in the vsx1+ siblings and determine if equalizing Notch levels generates similar morphology or connectivity. Right now the paper is strictly correlative, which is fine, but functional assays manipulating Notch activity would greatly strengthen the paper.\n\n2) It would be nice to discuss where the asymmetry in Notch arises; is it due to asymmetric partitioning of Numb during the terminal mitosis like in the fly, or is it due to localization of a Notch ligand such that only one sibling contacts the ligand?\n\n3) The description of how sibling neurons are identified is good in the legend to figure 2, but vague and confusing in the main text (page 6). Please clarify the text.\n\n4) The title \"Sister V2a/b neurons remain proximal to each other\" does not use the term proximal correctly. I suggest replacing \"proximal\" with \"adjacent\" or \"in proximity\".\n\n5) On Page 8, line 156 the term \"positioned in different clusters\" is unclear to me. Can you clarify?\n\n6) Page 9 line 177 what about at fast swim speeds?\n\n7) Page 10 line 210 most journals do not allow \"data not shown\" so either add it as a supplement or simply delete it.\n\n8) Figure 7H and I please use white letters on dark backgrounds.\n\n9) Figure 2A, the red arrow is hard to see; perhaps make it yellow?\n\nReviewer #2 (Recommendations for the authors):\n\n1. \"Notch-differentiated\" needs some additional introduction and context. Some people who read this manuscript will not be familiar with the role of Notch in the neuronal specification.\n\n2. Page 8, line 156: \"neurons\u2026.are positioned in different clusters\". This needs some additional explanation. Specifically, it is not clear what \"clusters\" means in this context.\n\n3. Figure 3, panel A. In this image, neither vsx1:EGFP+ interneuron appears to express chx10:Red.\n\n4. Figure 4, panel B. The sister neurons appear to be further apart than expected from the preceding descriptions. A scale bar would be helpful.\n\n5. An explicit explanation of how the authors are certain that they tested V2a/b pairs for the experiments shown in Figures 6 and 7 would be helpful.\n",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4b2c2410-9ed0-459f-abd8-7391fb834088",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C1",
+      "claim": "In mammalian cortex, excitatory sister neurons assemble into shared microcircuits.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cortex, excitatory sister neurons assemble into shared microcircuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Xu et al., 2014; Yu et al., 2009) as indicated in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "ec7415e9-c752-4a90-b907-a2ab08da62bf",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C2",
+      "claim": "In Drosophila, sister neurons with different levels of Notch expression (NotchON/NotchOFF) develop distinct identities and diverge into separate circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, in contrast, sister neurons with different levels of Notch expression (NotchON/NotchOFF) develop distinct identities and diverge into separate circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations (Artavanis-Tsakonas et al., 1999; Endo et al., 2007; Harris et al., 2015; Lacin et al., 2019; Lacin and Truman, 2016; Mark et al., 2021; Pinto-Teixeira and Desplan, 2014; Skeath and Doe, 1998) as indicated in the Introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "dba3f0b1-e673-4628-9946-2bd45db901df",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C4",
+      "claim": "It remains unknown whether Notch-differentiated clonally related neurons in vertebrates integrate into shared or distinct circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "but it remains unknown whether these clonally related neurons integrate into shared circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in knowledge that the study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "5af38e28-da72-45ab-b276-6c65e31fa37d",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C5",
+      "claim": "Each p2 progenitor makes a final paired division into an excitatory V2a (NotchOFF) and an inhibitory V2b (NotchON) neuron via asymmetric expression of Delta ligands and subsequent Notch-mediated lateral inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Each p2 progenitor makes a final paired division into an excitatory V2a (NotchOFF) and an inhibitory V2b (NotchON) neuron via asymmetric expression of Delta ligands and subsequent Notch-mediated lateral inhibition (Del Barrio et al., 2007; Francius et al., 2016; Kimura et al., 2008; Okigawa et al., 2014; Peng et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations (Del Barrio et al., 2007; Francius et al., 2016; Kimura et al., 2008; Okigawa et al., 2014; Peng et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "72edf755-3f4d-4a6c-a768-f735da34cccc",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C6",
+      "claim": "Both V2a and V2b neurons project axons ipsilaterally and caudally.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both V2a and V2b neurons project axons ipsilaterally and caudally, these neuron classes differ in other aspects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "4f29efaa-fa92-4e55-a266-986a0952e954",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C7",
+      "claim": "V2a interneurons express vsx2 (chx10) and provide glutamatergic drive onto motor populations.",
+      "claim_type": "EXPLICIT",
+      "source": "V2a interneurons express vsx2 (referred to as chx10 in this paper for clarity) and provide glutamatergic drive onto motor populations (Kimura et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Kimura et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "89a124fa-2226-4a96-a90e-2317da3fa4c4",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C8",
+      "claim": "V2b interneurons express gata3 and provide glycinergic and GABAergic inhibition onto motor populations.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas V2b interneurons express gata3 and provide glycinergic and GABAergic inhibition onto motor populations (Andrzejczuk et al., 2018; Callahan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Andrzejczuk et al., 2018; Callahan et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "682464cb-cc3f-4d1c-8695-3d4e1a4dc300",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C9",
+      "claim": "V2b neurons support flexor/extensor alternation through reciprocal inhibition in limb circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "V2b neurons also support flexor/extensor alternation through reciprocal inhibition in limb circuits (Britz et al., 2015; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Britz et al., 2015; Zhang et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "23904d23-9b4a-46cd-9208-58007c915b1e",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C10",
+      "claim": "Using a sparse labeling approach, individual pairs of sister V2a/b neurons arising from a single progenitor were directly observed and identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a sparse labeling approach, we directly observed and identified individual pairs of sister V2a/b neurons arising from a single progenitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim describing the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "25f6abed-9823-4b1a-9566-6ba24be9b1f0",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C11",
+      "claim": "Sister V2a/b neurons share anatomical characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our morphological and electrophysiological analyses reveal that although sister V2a/b neurons share anatomical characteristics, these sister neurons diverge into separate circuits, with largely distinct presynaptic and postsynaptic partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by morphological data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "36ee4b53-0691-46e6-8e8f-86bc3097da30",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C12",
+      "claim": "Sister V2a/b neurons diverge into separate circuits, with largely distinct presynaptic and postsynaptic partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Our morphological and electrophysiological analyses reveal that although sister V2a/b neurons share anatomical characteristics, these sister neurons diverge into separate circuits, with largely distinct presynaptic and postsynaptic partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by electrophysiological data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "e1bacfc8-7f16-4755-96ff-e4900890418b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C13",
+      "claim": "This is the first assessment of circuit integration of Notch-differentiated clonally related neurons in vertebrate models.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is the first assessment of circuit integration of Notch-differentiated clonally related neurons in vertebrate models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "177bd28a-a49e-421c-995b-a8de2e5d1e0f",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C14",
+      "claim": "In both zebrafish and mice, vsx1+ progenitors give rise to two distinct daughter populations, V2a and V2b neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In both zebrafish and mice, vsx1+ progenitors give rise to two distinct daughter populations, V2a and V2b neurons (Kimura et al., 2008; Peng et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Kimura et al., 2008; Peng et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "181c4aba-4be3-470d-9d6b-488b3de7265e",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C15",
+      "claim": "Individual vsx1+ progenitors undergo a final paired division into one V2a (NotchOFF) and one V2b neuron (NotchON).",
+      "claim_type": "EXPLICIT",
+      "source": "Using transgenic zebrafish, individual vsx1+ progenitors have been shown to undergo a final paired division into one V2a (NotchOFF) and one V2b neuron (NotchON) (Figure 1A; Kimura et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior work (Kimura et al., 2008) and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c9312380-700b-4bef-b807-345b36488d23",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C16",
+      "claim": "Progenitors became elongated before dividing into two distinct cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Progenitors became elongated before dividing into two distinct cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from time-lapse imaging described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "14c735a5-3666-4f6a-b935-aae16def9a14",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C17",
+      "claim": "In 61/92 (66.3%) of vsx1 GFP+ pairs in chx10:Red background, one identified V2a neuron was included.",
+      "claim_type": "EXPLICIT",
+      "source": "However, among clonal pairs imaged in the chx10:Red background, only 61/92 (66.3%) of vsx1 GFP+ pairs included one identified V2a neuron (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the imaging experiments, shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "478f8e01-c4e1-4308-a4bf-d6ebd2b01c61",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C18",
+      "claim": "In the gata3:Red background, 35/38 (92.1%) of vsx1 GFP+ pairs included one identified V2b neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the gata3:Red background, 35/38 (92.1%) of vsx1 GFP+ pairs included one identified V2b neuron (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the imaging experiments, shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "51b49f5a-3be0-4bf2-a44c-14107cbea2c9",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C19",
+      "claim": "Rarely, both vsx1 GFP+ neurons in a pair expressed both Chx10 or Gata3 markers (<10%).",
+      "claim_type": "EXPLICIT",
+      "source": "Rarely, both vsx1 GFP+ neurons in a pair expressed both Chx10 or Gata3 markers (<10%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "4c029b14-571b-4269-ba74-d327590b0e5b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C20",
+      "claim": "In 25% of vsx1 GFP+ pairs in chx10:Red fish, neither neuron expressed the V2a marker.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in 25% of vsx1 GFP+ pairs in chx10:Red fish, neither neuron expressed the V2a marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "3321e23a-4789-4d95-9f69-2520ebb6f48b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C21",
+      "claim": "There is at least one additional population of neurons to emerge from the V2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, there is at least one additional population of neurons to emerge from the V2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that not all vsx1+ pairs express V2a or V2b markers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "182d8e0b-d5b5-4e63-bec3-e2f76bc73388",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C22",
+      "claim": "In zebrafish, the V2s population is glycinergic and expresses Sox1a.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, the V2s population is glycinergic and expresses Sox1a (Gerber et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Gerber et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "ce0e49c7-4790-48ca-b825-6bd1ae5925fe",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C23",
+      "claim": "V2s neurons resemble V2c neurons in mice in that they both express Sox1a and arise after V2a/b development.",
+      "claim_type": "EXPLICIT",
+      "source": "V2s neurons resemble V2c neurons in mice in that they both express Sox1a and arise after V2a/b development; however, V2c neurons are GABAergic while V2s neurons are purely glycinergic (Gerber et al., 2019; Panayi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Gerber et al., 2019; Panayi et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "dbb2439e-0c1c-46c2-b788-930f2be47935",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C24",
+      "claim": "In 16/65 (24.6%) of vsx1 mCherry+ pairs, one of the two sister neurons co-labeled with sox1a.",
+      "claim_type": "EXPLICIT",
+      "source": "In 16/65 (24.6%) of vsx1 mCherry+ pairs, one of the two sister neurons co-labeled with sox1a (Figure 1D, right)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the imaging experiments, shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c12f9896-b57b-4d43-a06a-34b46cbe9a9b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C25",
+      "claim": "In 49/65 (75.4%) of vsx1 mCherry+ pairs, neither neuron co-labeled with sox1a.",
+      "claim_type": "EXPLICIT",
+      "source": "and in 49/65 (75.4%) of vsx1 mCherry+ pairs, neither neuron co-labeled with sox1a (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the imaging experiments, shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "dee31800-1314-4737-8ceb-f8e9c97bcc52",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C26",
+      "claim": "Not all vsx1+ progenitors differentiate into V2a/b pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that not all vsx1+ progenitors differentiate into V2a/b pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the co-labeling data showing that some vsx1+ pairs do not include V2a neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "253e8c6e-8175-4148-ad0d-1e7c01db4246",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C27",
+      "claim": "Approximately 75% of vsx1 progenitors divide into V2a/b pairs while the remainder divide into V2b/s pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, approximately 75% of vsx1 progenitors divide into V2a/b pairs while the remainder divide into V2b/s pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the quantitative co-labeling data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "4229497a-f156-463f-8b15-ac7a89c19c0a",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C28",
+      "claim": "No vsx1+ triplets or singlets were observed in co-label experiments (0/195).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see any vsx1+ triplets or singlets in co-label experiments (0/195)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "fe307261-e6e7-45b4-841f-09f69d2d71bf",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C29",
+      "claim": "vsx1 progenitors only undergo a single, terminal division.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that vsx1 progenitors only undergo a single, terminal division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that no triplets or singlets were observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "78fecf09-ca44-40c3-a723-83462a7c4d9c",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C30",
+      "claim": "The stochastic labeling approach successfully labeled clonally related V2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we conclude that our stochastic labeling approach successfully labeled clonally related V2 neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the imaging data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "5e18ece6-52fb-4451-b414-908b3de9ebfc",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C31",
+      "claim": "A chx10 co-label is required to properly identify vsx1 pairs as V2a/b neurons in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "but required a chx10 co-label to properly identify vsx1 pairs as V2a/b neurons in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion based on the co-labeling experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "e446f088-0c46-41fb-ab68-f74b66ecd884",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C32",
+      "claim": "Immediately after progenitor division around 1 dpf, sister V2a/b neurons are located in close proximity to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after progenitor division around 1 dpf, sister V2a/b neurons are located in close proximity to each other (Kimura et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Kimura et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c080227d-93de-4130-a380-b33aada791a3",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C33",
+      "claim": "Sister V2 neurons were usually closer neighbors than non-sister V2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Across animals, sister V2 neurons were usually closer neighbors than non-sister V2 neurons, whether measured in the V2a or V2b reporter lines (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from distance measurements, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "effa8b02-3a55-4635-9569-91376c73c6cc",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C34",
+      "claim": "At 24 hpf, sister neuron centers were ~7 \u00b5m apart.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hpf, sister neuron centers were ~7 \u00b5m apart, or effectively adjacent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "eb710a7b-4222-464d-aa60-fb42034990fa",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C35",
+      "claim": "By 48 hpf, the inter-soma distance increased slightly to ~9 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "By 48 hpf, this inter-soma distance increased slightly to ~9 \u00b5m (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from time-lapse imaging experiments, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "79ebc1c4-3d5d-462b-a7ef-4279280614eb",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C36",
+      "claim": "V2a/b somata are ~10 \u00b5m in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Because V2a/b somata are ~10 \u00b5m in size (Callahan et al., 2019; Kimura et al., 2006; Menelaou et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Callahan et al., 2019; Kimura et al., 2006; Menelaou et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "561230af-834c-46ad-a76a-8272d8d393df",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C37",
+      "claim": "Sister V2 neurons usually remain adjacent.",
+      "claim_type": "EXPLICIT",
+      "source": "our data suggest that sister V2 neurons usually remain adjacent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the inter-soma distance measurements relative to soma size.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c629579c-33e2-4c4f-b9ec-6d4e71c9d543",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C38",
+      "claim": "V2b neurons were typically positioned more dorsally than their sister V2a counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, restricting our analysis to sister V2a/b neurons using chx10:Red fish, we found that V2b neurons were typically positioned more dorsally than their sister V2a counterparts (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from position measurements, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "aab0a9e8-d451-475f-98e1-2194e0606ba0",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C39",
+      "claim": "Inhibitory populations are located more dorsally than excitatory neurons in spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with previous work showing inhibitory populations are located more dorsally than excitatory neurons in spinal cord (Kimura et al., 2006; McLean et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Kimura et al., 2006; McLean et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "a269785b-92bf-462f-98ee-4e01c67bcfd8",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C40",
+      "claim": "Sister V2a/b neurons develop and remain close to each other during larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data demonstrate that sister V2a/b neurons develop and remain close to each other during larval stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the distance measurements over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "25c48eaa-0774-48ea-83b7-9426a86f69f9",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C41",
+      "claim": "Sparsely labeled vsx1 GFP+ neurons located close to each other at 3\u20134 dpf represented sister pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, in subsequent experiments we inferred that sparsely labeled vsx1 GFP+ neurons located close to each other at 3\u20134 dpf represented sister pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological inference based on the proximity data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "05786b17-f0a3-4545-bd5b-f633a8cd9905",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C42",
+      "claim": "Sister V2a neurons exhibited axons that were on average 61% longer than their V2b counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Sister V2a neurons exhibited axons that were on average 61% longer than their V2b counterparts (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from axon length measurements, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "ce249df6-141a-4fbb-8c08-7cf0469ff2e1",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C43",
+      "claim": "Notch expression attenuates axon growth.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with work showing that Notch expression attenuates axon growth (Mark et al., 2021; Mizoguchi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Mark et al., 2021; Mizoguchi et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "cd9a7ebb-d636-4546-bd50-5e4d0ec5275f",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C44",
+      "claim": "There was no relationship between the length of the axons and their location along the rostral-caudal axis of the fish.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no relationship between the length of the axons and their location along the rostral-caudal axis of the fish (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from correlation analysis, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "dd1bbd12-35a3-4d24-a854-b852df7f718b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C45",
+      "claim": "Clonally related V2a/b neurons send axons along a similar trajectory, with a median of 37.1% of the V2b axon length within 5 \u00b5m of the V2a axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, clonally related V2a/b neurons send axons along a similar trajectory, with a median of 37.1% of the V2b axon length within 5 \u00b5m of the V2a axon (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from axon proximity measurements, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "dbfbd245-36e1-4520-86a8-add57d0d5410",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C46",
+      "claim": "The similar axon trajectories suggest a possibility for sister V2a/b neurons to contact shared synaptic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the axons follow similar paths, these results suggest a possibility for sister V2a/b neurons to contact shared synaptic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the axon proximity data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "4b9632b7-ffb4-4f17-aeec-709d45b456b9",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C47",
+      "claim": "Sister neurons in hippocampus are more likely to receive synaptic input from shared presynaptic partners than non-sister neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Work in hippocampus has shown that sister neurons are more likely to receive synaptic input from shared presynaptic partners than non-sister neurons (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "ac445639-d5b1-41a4-a10e-2d696ec86790",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C48",
+      "claim": "NotchON and NotchOFF sister neurons in Drosophila integrate into separate hemilineages that segregate spatially.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NotchON and NotchOFF sister neurons in Drosophila integrate into separate hemilineages that segregate spatially, although whether they receive shared input is not known (Harris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Harris et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "57e850f6-ba33-4000-a617-afa931fb3bc0",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C49",
+      "claim": "The timing of EPSCs arriving in each neuron of the sister pair was asynchronous.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of EPSCs arriving in each neuron of the pair was asynchronous, as exemplified by an overlay of several hundred EPSCs from either a V2a/b and the associated EPSC-triggered average in its sister neuron (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from paired electrophysiology recordings, shown in Figures 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "bbd424d4-1387-4ffb-956d-bcb59e53a3d0",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C50",
+      "claim": "Across recordings from 13 clonally related pairs in vivo, there was consistently little to no synchronous synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "Across recordings from 13 clonally related pairs in vivo, we consistently saw little to no synchronous synaptic input (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from paired electrophysiology recordings, shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "cefb0321-eeb5-4a32-93bd-051f56f6dd61",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C52",
+      "claim": "The asynchronous timing of inputs suggests that they cannot be arriving from a shared presynaptic source, but rather, different presynaptic sources which fire at different times.",
+      "claim_type": "EXPLICIT",
+      "source": "The asynchronous timing of these inputs suggests that they cannot be arriving from a shared presynaptic source, but rather, different presynaptic sources which fire at different times (Bagnall and McLean, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the asynchronous EPSC timing, with citation to prior work (Bagnall and McLean, 2014).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c1992ac5-a595-4eb3-a99e-159ddd1bdfbe",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C53",
+      "claim": "Sister V2a/b neurons, and any V2a-V2b pair from the same segment, receive input from distinct presynaptic sources during light-evoked locomotion at slow to medium locomotor speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data show that not only sister V2a/b neurons, but any V2a-V2b pair, clonal or non-clonal, from the same segment receives input from distinct presynaptic sources during light-evoked locomotion at slow to medium locomotor speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "20171837-ad02-458f-ad77-27aca146a315",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C54",
+      "claim": "The possibility remains that sister neurons receive shared inputs from circuits for fast locomotion or specialized behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot rule out the possibility that sister neurons receive shared inputs from circuits for fast locomotion or specialized behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "b596621e-b155-4cdd-93ae-06117ad2ecfa",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C55",
+      "claim": "Clonal pair analysis in cortex has shown that sister neurons preferentially form synapses onto each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal pair analysis in cortex has shown that sister neurons preferentially form synapses onto each other (Yu et al., 2009; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Yu et al., 2009; Zhang et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "aaf7b99a-61b4-49fe-9681-c37e87190fd9",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C56",
+      "claim": "Sister V2a/b neurons do not form synaptic connections with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, there were no detectable evoked currents, showing that sister V2a/b neurons do not connect with each other (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from paired electrophysiology recordings, shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "7852748b-7977-4878-8222-258ae558e96b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C57",
+      "claim": "Non-clonally related V2a/b neurons exhibited no interconnectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, non-clonally related V2a/b neurons exhibited no interconnectivity (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from paired electrophysiology recordings, shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "9bcaa24c-e5b1-421e-97e9-9b8a61b43213",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C58",
+      "claim": "V2a/b neurons in the same segment do not form direct synapses with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, V2a/b neurons in the same segment do not form direct synapses with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the paired recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "3fc00322-f09d-492f-8a0c-739373322180",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C59",
+      "claim": "Any connectivity among V2a and V2b neurons likely occurs between neurons in different segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Any connectivity among V2a and V2b neurons likely occurs between neurons in different segments (Sengupta and Bagnall, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference with citation to prior work (Sengupta and Bagnall, 2022).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "9629f65d-fe3b-44bc-ac5d-b74b034d3363",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C60",
+      "claim": "Clonally related inhibitory interneurons in cortex form synaptic connections with shared downstream targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Research in cortex has shown that clonally related inhibitory interneurons form synaptic connections with shared downstream targets (Zhang et al., 2017), although this claim is disputed (Mayer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Zhang et al., 2017), with a note that it is disputed (Mayer et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "27bc25ed-2560-483f-b7d2-1d66a739b60d",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C61",
+      "claim": "All CoChR2-tdTomato+ vsx1 neurons fired action potentials in response to optical stimulation (n = 13 neurons from 12 fish).",
+      "claim_type": "EXPLICIT",
+      "source": "All CoChR2-tdTomato+ vsx1 neurons fired action potentials in response to optical stimulation (Figure 6C, n = 13 neurons from 12 fish).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from cell-attached recordings with optogenetic stimulation, shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "6c2b0f14-ae42-42fa-868a-95b56bad6094",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C62",
+      "claim": "All CoChR2-tdTomato(-) neurons remained inactive during the light stimulus (n = 22 neurons from 18 fish).",
+      "claim_type": "EXPLICIT",
+      "source": "All CoChR2-tdTomato(-) neurons remained inactive during the light stimulus (Figure 6C, n = 22 neurons from 18 fish).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from cell-attached recordings with optogenetic stimulation, shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "2a20ca42-1a6c-48e5-871e-497471faf5d5",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C63",
+      "claim": "Most light-evoked spikes were observed throughout the duration of the stimulus, with some spiking following the stimulus window.",
+      "claim_type": "EXPLICIT",
+      "source": "In CoChR2-tdTomato+ neurons, most light-evoked spikes were observed throughout the duration of the stimulus, with some spiking following the stimulus window (Figure 6C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from cell-attached recordings with optogenetic stimulation, shown in Figures 6C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "5fcfeffd-5e40-4c60-8ae6-75bff05324a8",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C64",
+      "claim": "The prolonged activity is most likely due to the long inactivation kinetics of the CoChR2 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "This prolonged activity is most likely due to the long inactivation kinetics of the CoChR2 variant (Antinucci et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of CoChR2, with citation to prior work (Antinucci et al., 2020).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "cd131c79-19de-4e15-9c54-bb30ed69417b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C65",
+      "claim": "The optogenetic approach is a feasible method for assessing downstream connectivity of sister V2a/b neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our optogenetic approach is a feasible method for assessing downstream connectivity of sister V2a/b neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion based on the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "b0863227-d611-407e-a4d6-b7052e66d0d6",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C66",
+      "claim": "In most recorded neurons, optical stimuli evoked neither EPSCs nor IPSCs (n = 85/99).",
+      "claim_type": "EXPLICIT",
+      "source": "In most recorded neurons, optical stimuli evoked neither EPSCs nor IPSCs, consistent with sparse connectivity in the spinal cord (n = 85/99; Figure 7E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from optogenetic stimulation experiments, shown in Figures 7E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "b9fabe21-c554-49bd-b1ec-f65124158289",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C67",
+      "claim": "In six target neurons, evoked EPSCs but not IPSCs were recorded, demonstrating that the target neuron received synaptic input from the CoChR2-labeled V2a neuron but not the V2b.",
+      "claim_type": "EXPLICIT",
+      "source": "In six target neurons, we recorded evoked EPSCs (Vhold \u201380 mV) but not IPSCs, demonstrating that the target neuron received synaptic input from the CoChR2-labeled V2a neuron but not the V2b (Figure 7B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from optogenetic stimulation experiments, shown in Figures 7B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "7c44fea9-d063-4839-a76a-07a36bd1b2ce",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C68",
+      "claim": "In six target neurons, evoked IPSCs but no EPSCs were detected, demonstrating that the target neuron received synaptic input from the V2b but not the V2a neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In another six target neurons, we detected evoked IPSCs (Vhold 0 mV) but no EPSCs, demonstrating that the target neuron received synaptic input from the V2b but not the V2a neuron (Figure 7C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from optogenetic stimulation experiments, shown in Figures 7C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "8a5cf2b8-8575-4838-977b-0b47c147b4d6",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C69",
+      "claim": "In two instances, a target neuron received both evoked EPSCs and IPSCs, with the magnitude of IPSCs approximately fivefold larger than the magnitude of the EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In two instances, a target neuron received both evoked EPSCs and IPSCs, with the magnitude of IPSCs approximately fivefold larger than the magnitude of the EPSCs, suggesting an asymmetric connection from sister V2a/b neurons (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from optogenetic stimulation experiments, shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "7883fe1a-d4a6-4347-9d69-8635e24fcc74",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C70",
+      "claim": "In 10 neurons, a slow depolarizing current was detected when target neurons were held at \u201380 mV, but not at 0 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In 10 neurons, we detected a slow depolarizing current when target neurons were held at \u201380 mV (Figure 7D and F, gray), but not at 0 mV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from optogenetic stimulation experiments, shown in Figures 7D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c85636ec-ff3b-4365-89fd-d801e0a102d3",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C71",
+      "claim": "The slow evoked current had a lower amplitude and longer rise time than fast evoked EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This evoked current had a lower amplitude and longer rise time than fast evoked EPSCs (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from analysis of evoked currents, shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "ca67fa24-c0e4-4bcf-b28f-58601e8e95a7",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C72",
+      "claim": "The slow excitatory current may be caused by a weak disynaptic electrical connection.",
+      "claim_type": "EXPLICIT",
+      "source": "This slow excitatory current may be caused by a weak disynaptic electrical connection (Menelaou and McLean, 2019), but we were not able to eliminate it with gap junction blockers (carbenoxylone and 18-\u03b2-glycyrrhetinic acid).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference with citation to prior work (Menelaou and McLean, 2019), noting that gap junction blockers did not eliminate the current.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "2accd424-027b-47a1-b0f6-acf93d76da75",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C73",
+      "claim": "Target neurons were evenly divided between motor neurons (early and late born), and excitatory and inhibitory interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Target neurons were evenly divided between motor neurons (early and late born), and excitatory and inhibitory interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the target neuron identities from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "60344d69-af27-4915-addb-5a58dd62dbd2",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C74",
+      "claim": "Clonally related V2a/b neurons do not preferentially form synaptic connections with shared targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results demonstrate that clonally related V2a/b neurons do not preferentially form synaptic connections with shared targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the optogenetic stimulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "92d10f8b-4ac5-4cfc-8f08-57cd5b0952ee",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C75",
+      "claim": "Clonally related V2a/b neurons exhibit similar morphological characteristics, but form synapses with and receive information from largely distinct neuronal partners.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we showed that clonally related V2a/b neurons exhibit similar morphological characteristics, but form synapses with and receive information from largely distinct neuronal partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "b1a24117-2862-4c39-af56-b5ab1b9ba956",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C76",
+      "claim": "Sister neuron somata remain in close proximity to each other and send their axons along similar trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Within V2a/b pairs, we saw that sister neuron somata remain in close proximity to each other and send their axons along similar trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the morphological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "744ff1fa-570b-45ff-a3ef-63db58253231",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C77",
+      "claim": "Clonally related V2a/b neurons do not communicate with each other, do not receive input from similar sources, and infrequently connect to the same downstream target.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonally related V2a/b neurons do not communicate with each other, do not receive input from similar sources, and infrequently connect to the same downstream target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the electrophysiological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "24c26063-2ad3-4ba1-8e68-d1059fc7fd06",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C78",
+      "claim": "This connectivity pattern resembles circuitry seen in Drosophila Notch-differentiated hemilineages.",
+      "claim_type": "EXPLICIT",
+      "source": "This connectivity pattern resembles circuitry seen in Drosophila Notch-differentiated hemilineages (Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative inference based on the findings, illustrated in Figure 7I.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "6f80cea4-8685-48bd-9d36-33cc29f1cb41",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C79",
+      "claim": "These results represent the first evidence of Notch-differentiated circuit integration in a vertebrate system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results represent the first evidence of Notch-differentiated circuit integration in a vertebrate system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "3c50fef0-650f-46a5-9101-da969adf9c51",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C80",
+      "claim": "The findings may reflect a means of cell-type and circuit diversification in earlier evolved neural structures.",
+      "claim_type": "EXPLICIT",
+      "source": "and may reflect a means of cell-type and circuit diversification in earlier evolved neural structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c76b21b7-5bb7-4ab0-922e-9459f7344351",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C81",
+      "claim": "Notch is an important regulator in V2a/b differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notch is an important regulator in V2a/b differentiation, and during vsx1+ progenitor division, differences in Notch expression result in the onset of V2a (NotchOFF) or V2b (NotchON) programming (Batista et al., 2008; Debrulle et al., 2020; Kimura et al., 2008; Mizoguchi et al., 2020; Okigawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Batista et al., 2008; Debrulle et al., 2020; Kimura et al., 2008; Mizoguchi et al., 2020; Okigawa et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "358c1de7-801a-4835-80e8-ee1ff22020f9",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C82",
+      "claim": "It remains unknown whether Notch plays a role in sister V2a/b development beyond initiating cellular identity or whether it functions as an intermediary step before other molecular factors determine cellular morphology postmitotically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains unknown whether Notch plays a role in sister V2a/b development beyond initiating cellular identity or whether it functions as an intermediary step before other molecular factors determine cellular morphology postmitotically (Kozak et al., 2020; Mizoguchi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a gap in knowledge, with citations to prior work (Kozak et al., 2020; Mizoguchi et al., 2020).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "135f23dd-efd0-41eb-8dd9-b3dae9718b2a",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C83",
+      "claim": "Constitutive manipulation of Notch levels results in a skewing of V2a/b numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Constitutive manipulation of Notch levels results in a skewing of V2a/b numbers (Mizoguchi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Mizoguchi et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "1004c9e0-d676-4130-b82e-f444ec424692",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C84",
+      "claim": "The recently discovered V2s population relies on Notch signaling for its development with Notch KO mutants showing a decrease in sox1a+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the recently discovered V2s population relies on Notch signaling for its development with Notch KO mutants showing a decrease in sox1a+ neurons (Gerber et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Gerber et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "57b08c71-5a6e-4634-a086-2500d146c7b3",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C85",
+      "claim": "Some vsx1+ progenitors give rise to V2b/s sister pairs in addition to the previously described V2a/b pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that some vsx1+ progenitors give rise to V2b/s sister pairs in addition to the previously described V2a/b pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the co-labeling data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "4e6cd118-fc68-4e59-a7e7-6ca564306154",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C86",
+      "claim": "V2s neurons arise later than the initial wave of V2a/b pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "V2s neurons arise later than the initial wave of V2a/b pairs (Gerber et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Gerber et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "1415afb6-10d1-4825-b1fb-0798f093e7f4",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C87",
+      "claim": "Notch exhibits different effects on cellular identity during early and late development.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Notch has been shown to exhibit different effects on cellular identity during early and late development, we suggest that delayed Notch activity causes some later born vsx1+ sister neurons to adopt a V2b/s identity, which are both NotchON (Jacobs et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference with citation to prior work (Jacobs et al., 2022).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "3e8ca2f3-57ed-42f0-bb79-c61b37e25d50",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C88",
+      "claim": "Only early cerebellar progenitors appear to undergo Notch differentiation into distinct cell types, the Purkinje and granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only early cerebellar progenitors appear to undergo Notch differentiation into distinct cell types, the Purkinje and granule cells (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Zhang et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "b529c7bf-4beb-455d-b577-71d23cbf55d8",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C89",
+      "claim": "Lineage pathfinding and innervation differences in Drosophila are well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage pathfinding and innervation differences in Drosophila are well documented, and Notch-differentiated sister neurons in these organisms develop different axon trajectories, presumably connecting to different downstream targets (Harris et al., 2015; Truman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Harris et al., 2015; Truman et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "511f50a4-e4d7-44bd-a4e3-56de968d40b9",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C90",
+      "claim": "Notch mediates cerebellar progenitor differentiation into excitatory and inhibitory cerebellar cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Notch-differentiated lineages in vertebrate cerebellum have shown that Notch mediates cerebellar progenitor differentiation into excitatory and inhibitory cerebellar cell types (Zhang et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Zhang et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "4ec9263a-b907-44a1-ac3b-32777286606e",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C91",
+      "claim": "It is not yet known whether Notch-differentiated cerebellar neurons integrate into shared or distinct circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is not yet known whether the resulting neurons integrate into shared or distinct circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a gap in knowledge.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "b3299595-0a56-426e-87a2-ecc7d934df25",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C92",
+      "claim": "The results are consistent with a framework in which the progeny of Notch-differentiated divisions preferentially integrate into distinct networks in both invertebrates and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with a framework in which the progeny of Notch-differentiated divisions preferentially integrate into distinct networks in both invertebrates and vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive inference based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "3e659b9c-950c-4fbd-aa6e-d762c76b26d6",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C93",
+      "claim": "The divergent cellular identities of sister V2a/b neurons appear to determine that they participate in distinct circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with cortical lineages, the divergent cellular identities of sister V2a/b neurons appear to determine that they participate in distinct circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive inference based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "e7b01c7e-26fe-4d92-a585-aaca3888a3de",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C94",
+      "claim": "Earlier evolved neural structures rely on Notch-differentiated divisions as a means to diversify neuronal populations during development.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that earlier evolved neural structures rely on Notch-differentiated divisions as a means to diversify neuronal populations during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "87b61107-f464-440d-8645-4c26a607084c",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C95",
+      "claim": "The presence of Notch-differentiated sister neurons in both cerebellum and spinal cord could represent an efficient mechanism to generate diverse cell types early in development.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of Notch-differentiated sister neurons in both cerebellum and spinal cord could represent an efficient mechanism to generate diverse cell types early in development, in contrast to cortical reliance on dedicated streams of excitatory and inhibitory neural progenitors (Goulding, 2009; Leto et al., 2016; Ma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citations to prior work (Goulding, 2009; Leto et al., 2016; Ma et al., 2018).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "08baa87e-bef2-4855-a321-60312537608c",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C96",
+      "claim": "Developmental timing allows for proper integration of neurons into functional speed-dependent locomotor circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental timing allows for proper integration of neurons into functional speed-dependent locomotor circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "d8fd213a-5319-4948-a76f-4547c3bf9529",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C97",
+      "claim": "In zebrafish, motor neurons and interneurons born during similar developmental windows are active and recruited at similar speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, motor neurons and interneurons born during similar developmental windows are active and recruited at similar speeds (McLean et al., 2007; McLean and Fetcho, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (McLean et al., 2007; McLean and Fetcho, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "42d5f2eb-153c-40a4-92e0-92849008f069",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C98",
+      "claim": "Birthdate-dependent microcircuits emerge in larvae and persist into adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "These birthdate-dependent microcircuits emerge in larvae and persist into adulthood (Ampatzis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Ampatzis et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "d4a2c3a5-ba7e-4852-bd36-9177208f61cf",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C99",
+      "claim": "vsx1+ sister neurons share a birthdate.",
+      "claim_type": "EXPLICIT",
+      "source": "By definition, vsx1+ sister neurons share a birthdate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the definition of sister neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "eadef520-7dda-4bdc-bbb4-86e1b31b95e7",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C100",
+      "claim": "Sister V2a/b divergence in cellular identity may cause integration into different hemilineage temporal cohorts, similar to Drosophila, which then determine their neuronal connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is that sister V2a/b divergence in cellular identity may cause integration into different hemilineage temporal cohorts, similar to Drosophila, which then determine their neuronal connectivity (Mark et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citation to prior work (Mark et al., 2021).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "75ec0845-a73f-4d30-9c16-d64911e677d3",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C101",
+      "claim": "V2b neurons may participate in different behaviors than V2a neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, V2b neurons, whose recruitment patterns have not yet been described, may participate in different behaviors than V2a neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the lack of information about V2b recruitment patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "03f4c130-55ee-4cbd-87ab-00d033cd8451",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C102",
+      "claim": "Separation of pathways driving excitatory and inhibitory neurons would allow for independent activation (accelerator) or inactivation (brake) of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This separation of pathways driving excitatory and inhibitory neurons would allow for independent activation (accelerator) or inactivation (brake) of movement (Callahan et al., 2019; Ekl\u00f6f-Ljunggren et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citations to prior work (Callahan et al., 2019; Ekl\u00f6f-Ljunggren et al., 2012).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "d6237f49-ce0a-4e59-80ec-2b95642a8307",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C103",
+      "claim": "Synaptic inputs were measured during fictive locomotion induced by bright-field stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that we measured synaptic inputs during fictive locomotion induced by bright-field stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "616da42c-6f26-4a9a-b42e-bf881dc89658",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C104",
+      "claim": "The possibility remains that sister vsx1 neurons do receive similar inputs under different behavioral paradigms, such as turns or escapes.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the possibility remains sister vsx1 neurons do receive similar inputs under different behavioral paradigms, such as turns or escapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "92c168b1-883f-476d-ae5c-b74a7aa7f91d",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C105",
+      "claim": "It is unclear whether sister neurons are explicitly discouraged from sharing downstream targets or whether it is simply random.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we saw two examples of targets receiving input from both the V2a and V2b neuron of a clonal pair, it is unclear whether sister neurons are explicitly discouraged from sharing downstream targets or whether it is simply random.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "f7518627-8a16-4599-a60b-e152027b634a",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C106",
+      "claim": "The observed connectivity divergence might function to coordinate antagonistic components during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, the observed connectivity divergence might function to coordinate antagonistic components during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "08fdb808-78b9-4546-9c75-cd5b95f7dcdd",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C107",
+      "claim": "Spinal V1 interneurons target different populations of neurons along the rostral-caudal length of the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Spinal V1 interneurons target different populations of neurons along the rostral-caudal length of the spinal cord (Sengupta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Sengupta et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "66a85f6a-8fab-4d5b-81db-6c25a7d74b65",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "claim_id": "C108",
+      "claim": "Even if non-clonally related V2a and V2b neurons generally form synaptic contacts onto the same populations, such as motor neurons, they may exhibit different connectivity patterns in the longitudinal axis, preventing clonally related pairs from sharing downstream targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if non-clonally related V2a and V2b neurons generally form synaptic contacts onto the same populations, such as motor neurons, they may exhibit different connectivity patterns in the longitudinal axis, preventing clonally related pairs from sharing downstream targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c2a554f-8e19-4230-83ee-93fc5167f3dd",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a sparse labeling method using vsx1:GFP plasmid microinjection to identify and track individual sister V2a/b neuron pairs arising from single progenitor divisions in zebrafish. Time-lapse imaging confirmed progenitor elongation before division, and co-labeling with chx10 was required to properly identify V2a/b pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C15, C16, C30, and C31 collectively describe a validated methodological approach. The time-lapse imaging data (C16, Figure 1C), quantitative co-labeling results (C17-C20, Figure 1E), and the conclusion that chx10 co-label is required (C31) provide converging evidence that the sparse labeling approach successfully identifies clonal V2a/b pairs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "2c687914-4e76-46be-b27b-c36b9c238927",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Approximately 75% of vsx1+ progenitors divide into V2a/b pairs, while the remaining ~25% divide into V2b/s pairs. No triplets or singlets were observed, indicating vsx1 progenitors undergo a single terminal division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C29 present quantitative co-labeling data showing that 66.3% of vsx1+ pairs in chx10:Red background included one V2a neuron, 92.1% in gata3:Red included one V2b, and 24.6% in sox1:GFP included one V2s neuron. The absence of triplets/singlets (C28, 0/195) supports the single division conclusion. The inference that ~75% are V2a/b pairs and ~25% are V2b/s pairs (C27) is mathematically consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "e0122267-c9de-46b9-9838-948756ce6fcc",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sister V2a/b neurons remain in close proximity throughout development, with inter-soma distances of ~7 \u03bcm at 24 hpf and ~9 \u03bcm at 48 hpf. V2b neurons are typically positioned more dorsally than their V2a counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 present quantitative distance measurements from time-lapse imaging (Figure 2B-C) showing sister neurons remain closer than non-sister neurons and maintain proximity through development. The dorsoventral positioning data (C38, Figure 2D) is statistically significant (p=5.2\u00d710\u207b\u2074). The conclusion that sister neurons remain adjacent (C37, C40) is well-supported by comparing inter-soma distances (~9 \u03bcm) to soma size (~10 \u03bcm).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "9ab52264-efce-41ef-b71a-2db6aee7d295",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sister V2a neurons have axons 61% longer than their V2b counterparts, consistent with Notch-mediated attenuation of axon growth. Despite different lengths, sister V2a/b axons follow similar trajectories, with a median of 37.1% of V2b axon length within 5 \u03bcm of the V2a axon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 present quantitative morphological data from axon reconstructions (Figure 3B-C). The 61% length difference (C42) is statistically significant (p=1.9\u00d710\u207b\u2075), and the axon proximity measurement (C45, 37.1% within 5 \u03bcm) is clearly quantified. The interpretation that this is consistent with Notch effects (C43) is appropriately cited. However, C46 is speculative about shared targets and should not be considered definitively supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "e2f139c9-9fe4-4985-b424-720cf737d2cd",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sister V2a/b neurons receive asynchronous synaptic input from distinct presynaptic sources during light-evoked locomotion. This pattern extends to non-clonal V2a/b pairs in the same segment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 present paired electrophysiology data (n=13 pairs, Figure 4D-G) showing asynchronous EPSC timing between sister neurons. The EPSC-triggered averages show minimal synchronous input, and the statistical analysis (Figure 4G) demonstrates significant differences between detected EPSCs and simultaneously recorded signals. The inference that asynchronous timing indicates distinct presynaptic sources (C52) is appropriately cited and logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "a58814dc-fe37-4954-9d87-e7bcd36701d1",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sister V2a/b neurons do not form direct synaptic connections with each other. This lack of interconnectivity extends to non-clonal V2a/b pairs in the same segment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 present paired recording data (n=10 clonal pairs, n=7 non-clonal pairs, Figure 5C-D) showing no detectable evoked currents in either direction. The experimental design appropriately tested both directions of connectivity using current-clamp stimulation and voltage-clamp recording. The conclusion that V2a/b neurons in the same segment do not form direct synapses (C58) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "2acce96e-1269-45c3-a45a-351fc5b0407e",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation using CoChR2-tdTomato successfully and selectively activates vsx1+ neurons. All CoChR2+ neurons (n=13) fired action potentials in response to light, while all CoChR2- neurons (n=22) remained inactive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 present validation data for the optogenetic approach (Figure 6C-E). The 100% success rate for CoChR2+ neurons and 0% activation of CoChR2- neurons demonstrates specificity. The observation of prolonged spiking (C63) and its attribution to CoChR2 kinetics (C64) is appropriately cited. This establishes the method as feasible for downstream connectivity assessment (C65).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "92f3fe86-fba4-4559-8780-1e911cb5279c",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sister V2a/b neurons rarely share downstream synaptic targets. Of 99 recorded neurons, only 2 received input from both V2a and V2b of a clonal pair, while 6 received input only from V2a and 6 only from V2b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 and C73-C74 present optogenetic connectivity mapping data (Figure 7B-E, Table 1). The quantitative results show 85/99 neurons with no response, 6 with EPSC only, 6 with IPSC only, and 2 with both. The experimental design appropriately isolated EPSCs and IPSCs using different holding potentials, and pharmacological validation was performed in a subset (C67, C68). The conclusion that sister neurons do not preferentially share targets (C74) is well-supported by the low frequency (2/14) of shared connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "79d1b363-56ec-40a9-a8d7-7205749a6e8b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A subset of target neurons (10/99) exhibited slow depolarizing currents with lower amplitude and longer rise time than fast EPSCs, possibly due to weak disynaptic electrical connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C72 describe an additional observation of slow currents (Figure 7D, F-G). While the quantitative characterization (C71) is supported by data, the interpretation as disynaptic electrical connections (C72) is speculative and could not be confirmed with gap junction blockers. The mechanistic explanation remains uncertain, though the observation itself is valid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "8d513e43-39a0-41f4-971f-24afd201aaaf",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sister V2a/b neurons share anatomical characteristics (proximity, similar axon trajectories) but diverge into separate circuits with largely distinct presynaptic and postsynaptic partners. This represents the first evidence of Notch-differentiated circuit integration in vertebrates and resembles Drosophila hemilineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C75-C79 synthesize the major findings. The anatomical similarity (C11, C76) is supported by proximity data (Figure 2) and axon trajectory data (Figure 3). The circuit divergence (C12, C77) is supported by the electrophysiology data showing distinct inputs (Figure 4), no interconnectivity (Figure 5), and largely distinct targets (Figure 7). The novelty claim (C79) is reasonable given the comprehensive literature review. The comparison to Drosophila (C78) is appropriate and illustrated in Figure 7I.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "061ae633-ad9a-4080-ac61-cbe8e634bc43",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Some vsx1+ progenitors may give rise to V2b/s sister pairs in addition to V2a/b pairs, potentially due to delayed Notch activity causing later-born vsx1+ sister neurons to adopt V2b/s identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C87 are speculative interpretations of the co-labeling data. While the observation that ~25% of vsx1+ pairs lack V2a neurons is supported (C20, C24-C25), the inference that these are V2b/s pairs (C85) is not directly demonstrated. The temporal hypothesis (C87) is plausible but lacks direct experimental evidence. This requires additional experiments to confirm V2b/s pairing and temporal dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "59c4590b-40c5-4c33-b141-8aba35a31d3d",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The results suggest that Notch-differentiated divisions preferentially integrate into distinct networks in both invertebrates and vertebrates, potentially representing an efficient mechanism for generating diverse cell types in earlier-evolved neural structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C95 present broad evolutionary and mechanistic interpretations. While the comparison to invertebrates (C92) is supported by the data and literature, the broader claims about evolutionary mechanisms (C94-C95) are speculative. These interpretations go beyond what the zebrafish spinal cord data can definitively support and would require comparative studies across multiple systems and species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "8f45f064-dc0c-432d-b7b9-2fb11eacde2b",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Despite sharing a birthdate, sister V2a/b neurons may integrate into different temporal cohorts or participate in different behaviors, potentially allowing independent control of excitatory and inhibitory components of movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C102 present speculative interpretations about temporal cohorts and behavioral roles. While the observation that sister neurons share a birthdate (C99) is definitionally true, the mechanistic explanations (C100) and functional implications (C101-C102) are not directly tested. The study measured inputs during light-evoked locomotion at slow-medium speeds (C103), leaving open the possibility of shared inputs in other contexts (C54, C104).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    },
+    {
+      "id": "c79cc8a5-8cf7-4e72-8a05-7d11a9b79287",
+      "content_id": "a4dbe132-2e19-41ba-ab92-5256a30ae6d9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study has limitations: inputs were measured only during light-evoked locomotion at slow-medium speeds, and it remains unclear whether sister neurons are explicitly discouraged from sharing targets or if the pattern is random.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C103-C106, and C108 appropriately acknowledge experimental limitations. The restriction to specific behavioral conditions (C103) is clearly stated, and the authors appropriately note they cannot rule out shared inputs in other contexts (C54, C104). The uncertainty about mechanisms preventing shared targets (C105) is honest and appropriate given the observation of 2 cases with shared connectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:07:53.005926Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "23904d23-9b4a-46cd-9208-58007c915b1e",
+      "result_id": "0c2a554f-8e19-4230-83ee-93fc5167f3dd"
+    },
+    {
+      "claim_id": "181c4aba-4be3-470d-9d6b-488b3de7265e",
+      "result_id": "0c2a554f-8e19-4230-83ee-93fc5167f3dd"
+    },
+    {
+      "claim_id": "c9312380-700b-4bef-b807-345b36488d23",
+      "result_id": "0c2a554f-8e19-4230-83ee-93fc5167f3dd"
+    },
+    {
+      "claim_id": "78fecf09-ca44-40c3-a723-83462a7c4d9c",
+      "result_id": "0c2a554f-8e19-4230-83ee-93fc5167f3dd"
+    },
+    {
+      "claim_id": "5e18ece6-52fb-4451-b414-908b3de9ebfc",
+      "result_id": "0c2a554f-8e19-4230-83ee-93fc5167f3dd"
+    },
+    {
+      "claim_id": "14c735a5-3666-4f6a-b935-aae16def9a14",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "478f8e01-c4e1-4308-a4bf-d6ebd2b01c61",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "51b49f5a-3be0-4bf2-a44c-14107cbea2c9",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "4c029b14-571b-4269-ba74-d327590b0e5b",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "3321e23a-4789-4d95-9f69-2520ebb6f48b",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "dbb2439e-0c1c-46c2-b788-930f2be47935",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "c12f9896-b57b-4d43-a06a-34b46cbe9a9b",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "dee31800-1314-4737-8ceb-f8e9c97bcc52",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "253e8c6e-8175-4148-ad0d-1e7c01db4246",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "4229497a-f156-463f-8b15-ac7a89c19c0a",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "fe307261-e6e7-45b4-841f-09f69d2d71bf",
+      "result_id": "2c687914-4e76-46be-b27b-c36b9c238927"
+    },
+    {
+      "claim_id": "e446f088-0c46-41fb-ab68-f74b66ecd884",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "c080227d-93de-4130-a380-b33aada791a3",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "effa8b02-3a55-4635-9569-91376c73c6cc",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "eb710a7b-4222-464d-aa60-fb42034990fa",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "79ebc1c4-3d5d-462b-a7ef-4279280614eb",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "561230af-834c-46ad-a76a-8272d8d393df",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "c629579c-33e2-4c4f-b9ec-6d4e71c9d543",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "aab0a9e8-d451-475f-98e1-2194e0606ba0",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "a269785b-92bf-462f-98ee-4e01c67bcfd8",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "25c48eaa-0774-48ea-83b7-9426a86f69f9",
+      "result_id": "e0122267-c9de-46b9-9838-948756ce6fcc"
+    },
+    {
+      "claim_id": "05786b17-f0a3-4545-bd5b-f633a8cd9905",
+      "result_id": "9ab52264-efce-41ef-b71a-2db6aee7d295"
+    },
+    {
+      "claim_id": "ce249df6-141a-4fbb-8c08-7cf0469ff2e1",
+      "result_id": "9ab52264-efce-41ef-b71a-2db6aee7d295"
+    },
+    {
+      "claim_id": "cd9a7ebb-d636-4546-bd50-5e4d0ec5275f",
+      "result_id": "9ab52264-efce-41ef-b71a-2db6aee7d295"
+    },
+    {
+      "claim_id": "dd1bbd12-35a3-4d24-a854-b852df7f718b",
+      "result_id": "9ab52264-efce-41ef-b71a-2db6aee7d295"
+    },
+    {
+      "claim_id": "dbfbd245-36e1-4520-86a8-add57d0d5410",
+      "result_id": "9ab52264-efce-41ef-b71a-2db6aee7d295"
+    },
+    {
+      "claim_id": "57e850f6-ba33-4000-a617-afa931fb3bc0",
+      "result_id": "e2f139c9-9fe4-4985-b424-720cf737d2cd"
+    },
+    {
+      "claim_id": "bbd424d4-1387-4ffb-956d-bcb59e53a3d0",
+      "result_id": "e2f139c9-9fe4-4985-b424-720cf737d2cd"
+    },
+    {
+      "claim_id": "cefb0321-eeb5-4a32-93bd-051f56f6dd61",
+      "result_id": "e2f139c9-9fe4-4985-b424-720cf737d2cd"
+    },
+    {
+      "claim_id": "c1992ac5-a595-4eb3-a99e-159ddd1bdfbe",
+      "result_id": "e2f139c9-9fe4-4985-b424-720cf737d2cd"
+    },
+    {
+      "claim_id": "aaf7b99a-61b4-49fe-9681-c37e87190fd9",
+      "result_id": "a58814dc-fe37-4954-9d87-e7bcd36701d1"
+    },
+    {
+      "claim_id": "7852748b-7977-4878-8222-258ae558e96b",
+      "result_id": "a58814dc-fe37-4954-9d87-e7bcd36701d1"
+    },
+    {
+      "claim_id": "9bcaa24c-e5b1-421e-97e9-9b8a61b43213",
+      "result_id": "a58814dc-fe37-4954-9d87-e7bcd36701d1"
+    },
+    {
+      "claim_id": "3fc00322-f09d-492f-8a0c-739373322180",
+      "result_id": "a58814dc-fe37-4954-9d87-e7bcd36701d1"
+    },
+    {
+      "claim_id": "27bc25ed-2560-483f-b7d2-1d66a739b60d",
+      "result_id": "2acce96e-1269-45c3-a45a-351fc5b0407e"
+    },
+    {
+      "claim_id": "6c2b0f14-ae42-42fa-868a-95b56bad6094",
+      "result_id": "2acce96e-1269-45c3-a45a-351fc5b0407e"
+    },
+    {
+      "claim_id": "2a20ca42-1a6c-48e5-871e-497471faf5d5",
+      "result_id": "2acce96e-1269-45c3-a45a-351fc5b0407e"
+    },
+    {
+      "claim_id": "5fcfeffd-5e40-4c60-8ae6-75bff05324a8",
+      "result_id": "2acce96e-1269-45c3-a45a-351fc5b0407e"
+    },
+    {
+      "claim_id": "cd131c79-19de-4e15-9c54-bb30ed69417b",
+      "result_id": "2acce96e-1269-45c3-a45a-351fc5b0407e"
+    },
+    {
+      "claim_id": "b0863227-d611-407e-a4d6-b7052e66d0d6",
+      "result_id": "92f3fe86-fba4-4559-8780-1e911cb5279c"
+    },
+    {
+      "claim_id": "b9fabe21-c554-49bd-b1ec-f65124158289",
+      "result_id": "92f3fe86-fba4-4559-8780-1e911cb5279c"
+    },
+    {
+      "claim_id": "7c44fea9-d063-4839-a76a-07a36bd1b2ce",
+      "result_id": "92f3fe86-fba4-4559-8780-1e911cb5279c"
+    },
+    {
+      "claim_id": "8a5cf2b8-8575-4838-977b-0b47c147b4d6",
+      "result_id": "92f3fe86-fba4-4559-8780-1e911cb5279c"
+    },
+    {
+      "claim_id": "2accd424-027b-47a1-b0f6-acf93d76da75",
+      "result_id": "92f3fe86-fba4-4559-8780-1e911cb5279c"
+    },
+    {
+      "claim_id": "60344d69-af27-4915-addb-5a58dd62dbd2",
+      "result_id": "92f3fe86-fba4-4559-8780-1e911cb5279c"
+    },
+    {
+      "claim_id": "7883fe1a-d4a6-4347-9d69-8635e24fcc74",
+      "result_id": "79d1b363-56ec-40a9-a8d7-7205749a6e8b"
+    },
+    {
+      "claim_id": "c85636ec-ff3b-4365-89fd-d801e0a102d3",
+      "result_id": "79d1b363-56ec-40a9-a8d7-7205749a6e8b"
+    },
+    {
+      "claim_id": "ca67fa24-c0e4-4bcf-b28f-58601e8e95a7",
+      "result_id": "79d1b363-56ec-40a9-a8d7-7205749a6e8b"
+    },
+    {
+      "claim_id": "25f6abed-9823-4b1a-9566-6ba24be9b1f0",
+      "result_id": "8d513e43-39a0-41f4-971f-24afd201aaaf"
+    },
+    {
+      "claim_id": "36ee4b53-0691-46e6-8e8f-86bc3097da30",
+      "result_id": "8d513e43-39a0-41f4-971f-24afd201aaaf"
+    },
+    {
+      "claim_id": "92d10f8b-4ac5-4cfc-8f08-57cd5b0952ee",
+      "result_id": "8d513e43-39a0-41f4-971f-24afd201aaaf"
+    },
+    {
+      "claim_id": "b1a24117-2862-4c39-af56-b5ab1b9ba956",
+      "result_id": "8d513e43-39a0-41f4-971f-24afd201aaaf"
+    },
+    {
+      "claim_id": "744ff1fa-570b-45ff-a3ef-63db58253231",
+      "result_id": "8d513e43-39a0-41f4-971f-24afd201aaaf"
+    },
+    {
+      "claim_id": "24c26063-2ad3-4ba1-8e68-d1059fc7fd06",
+      "result_id": "8d513e43-39a0-41f4-971f-24afd201aaaf"
+    },
+    {
+      "claim_id": "6f80cea4-8685-48bd-9d36-33cc29f1cb41",
+      "result_id": "8d513e43-39a0-41f4-971f-24afd201aaaf"
+    },
+    {
+      "claim_id": "57b08c71-5a6e-4634-a086-2500d146c7b3",
+      "result_id": "061ae633-ad9a-4080-ac61-cbe8e634bc43"
+    },
+    {
+      "claim_id": "4e6cd118-fc68-4e59-a7e7-6ca564306154",
+      "result_id": "061ae633-ad9a-4080-ac61-cbe8e634bc43"
+    },
+    {
+      "claim_id": "1415afb6-10d1-4825-b1fb-0798f093e7f4",
+      "result_id": "061ae633-ad9a-4080-ac61-cbe8e634bc43"
+    },
+    {
+      "claim_id": "b3299595-0a56-426e-87a2-ecc7d934df25",
+      "result_id": "59c4590b-40c5-4c33-b141-8aba35a31d3d"
+    },
+    {
+      "claim_id": "3e659b9c-950c-4fbd-aa6e-d762c76b26d6",
+      "result_id": "59c4590b-40c5-4c33-b141-8aba35a31d3d"
+    },
+    {
+      "claim_id": "e7b01c7e-26fe-4d92-a585-aaca3888a3de",
+      "result_id": "59c4590b-40c5-4c33-b141-8aba35a31d3d"
+    },
+    {
+      "claim_id": "87b61107-f464-440d-8645-4c26a607084c",
+      "result_id": "59c4590b-40c5-4c33-b141-8aba35a31d3d"
+    },
+    {
+      "claim_id": "d4a2c3a5-ba7e-4852-bd36-9177208f61cf",
+      "result_id": "8f45f064-dc0c-432d-b7b9-2fb11eacde2b"
+    },
+    {
+      "claim_id": "eadef520-7dda-4bdc-bbb4-86e1b31b95e7",
+      "result_id": "8f45f064-dc0c-432d-b7b9-2fb11eacde2b"
+    },
+    {
+      "claim_id": "75ec0845-a73f-4d30-9c16-d64911e677d3",
+      "result_id": "8f45f064-dc0c-432d-b7b9-2fb11eacde2b"
+    },
+    {
+      "claim_id": "03f4c130-55ee-4cbd-87ab-00d033cd8451",
+      "result_id": "8f45f064-dc0c-432d-b7b9-2fb11eacde2b"
+    },
+    {
+      "claim_id": "20171837-ad02-458f-ad77-27aca146a315",
+      "result_id": "c79cc8a5-8cf7-4e72-8a05-7d11a9b79287"
+    },
+    {
+      "claim_id": "d6237f49-ce0a-4e59-80ec-2b95642a8307",
+      "result_id": "c79cc8a5-8cf7-4e72-8a05-7d11a9b79287"
+    },
+    {
+      "claim_id": "616da42c-6f26-4a9a-b42e-bf881dc89658",
+      "result_id": "c79cc8a5-8cf7-4e72-8a05-7d11a9b79287"
+    },
+    {
+      "claim_id": "92c168b1-883f-476d-ae5c-b74a7aa7f91d",
+      "result_id": "c79cc8a5-8cf7-4e72-8a05-7d11a9b79287"
+    },
+    {
+      "claim_id": "f7518627-8a16-4599-a60b-e152027b634a",
+      "result_id": "c79cc8a5-8cf7-4e72-8a05-7d11a9b79287"
+    },
+    {
+      "claim_id": "66a85f6a-8fab-4d5b-81db-6c25a7d74b65",
+      "result_id": "c79cc8a5-8cf7-4e72-8a05-7d11a9b79287"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MD simulations of the Munc13-1 C1C2BMUN fragment suggest two distinct membrane-binding modes: a perpendicular orientation in the absence of Ca2+ mediated by extensive polybasic face interactions, and a slanted orientation in the presence of Ca2+ involving DAG/Ca2+/PIP2-binding sites with hydrophobic insertion and Ca2+-phospholipid coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The MD simulations are limited in duration (86-100 ns) and biased by initial orientations, as explicitly acknowledged by the authors. While the simulations provide chemically reasonable binding modes and support the two-orientation hypothesis, they do not constitute definitive proof. The authors appropriately note that 'much more thorough analysis will be required to explore the possible binding modes.' The simulations serve as computational predictions requiring experimental validation rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Point mutations in the C1C2B polybasic region differentially impair Ca2+-independent liposome binding, with K603E and R769E causing the strongest disruption, K720E showing intermediate effects, and K706E exhibiting the weakest effects. Ca2+-dependent binding is preserved for single mutants but severely impaired by the quadruple mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The liposome co-sedimentation data in Figure 2 clearly demonstrate differential effects of mutations on Ca2+-independent binding, with quantification showing the hierarchy of effects. The preservation of Ca2+-dependent binding for most single mutants and its disruption by the quadruple mutation is well-documented. The experimental design is appropriate and the data support the conclusions about the polybasic face's role in membrane binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Dynamic light scattering assays demonstrate that K603E and R769E mutations severely impair Ca2+-independent liposome clustering, while K706E and K720E mutations retain robust clustering activity. In the presence of Ca2+, all mutants except the quadruple mutant support substantial clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DLS data in Figure 3 provide clear evidence for differential effects of mutations on liposome clustering in the absence and presence of Ca2+. The authors appropriately note that population-weighted average radii should be interpreted with caution due to limitations in calculating populations of large particles. The results correlate well with the binding data and support the two-binding-mode hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The Munc13-1 C2B domain is activated in liposome fusion assays at submicromolar Ca2+ concentrations (EC50 ~584-966 nM), comparable to physiological Ca2+ levels expected during repetitive stimulation in presynaptic active zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Ca2+ titration experiments in Figure 4 provide clear dose-response data with calculated EC50 values. The comparison to physiological Ca2+ concentrations is reasonable based on established knowledge of presynaptic Ca2+ dynamics. The use of Fluo-4 to measure free Ca2+ concentrations strengthens the quantitative analysis. This result validates the physiological relevance of the in vitro assay system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Ca2+-dependent liposome fusion is not impaired by single point mutations or the K603E/K720E double mutation, but is strongly disrupted by the K706E/R769E double mutation and abolished by the quadruple mutation. Using D326K Munc18-1 to assess Ca2+-independent fusion reveals that K603E and R769E mutations abolish this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lipid and content mixing data in Figure 5 clearly demonstrate the differential effects of mutations on Ca2+-dependent and Ca2+-independent fusion. The use of D326K Munc18-1 to enable Ca2+-independent fusion is a validated approach. The authors appropriately acknowledge limitations of the assay (high efficiency with WT masks some effects). The supplementary experiments with synaptotagmin-1 (Figure 5\u2014figure supplement 1) provide additional validation under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In hippocampal neurons, K603E and R769E mutations in Munc13-1 drastically reduce the readily releasable pool (RRP) of synaptic vesicles, while K720E and K706E mutations do not significantly affect RRP size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological data in Figure 6A using sucrose-evoked responses provide clear evidence for differential effects on vesicle priming. The use of Munc13-1/2 DKO neurons with lentiviral rescue is an appropriate experimental design that ensures observed effects are due to the introduced mutations. Statistical analysis with Mann-Whitney U test is appropriate for the non-normal distribution. The correlation with in vitro liposome binding/clustering data strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "K603E and R769E mutations decrease Ca2+-evoked release proportionally to their RRP defects without altering release probability (Pvr), while K706E decreases both EPSC amplitude and Pvr, and K720E increases both evoked release and Pvr, with corresponding changes in paired-pulse ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological data in Figure 6B-D demonstrate clear differential effects on evoked release and release probability. The calculation of Pvr from the ratio of EPSC to RRP is a standard approach. The paired-pulse ratio data provide independent confirmation of the Pvr changes. The finding that K720E causes a gain-of-function is particularly notable and well-supported by multiple measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Spontaneous release frequency (mEPSC) is decreased by K603E and R769E mutations, unaffected by K706E, and increased by K720E, correlating with their respective effects on priming and release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mEPSC data in Figure 6\u2014figure supplement 2A provide clear evidence for differential effects on spontaneous release. The correlation between mEPSC frequency and the effects on priming (for K603E/R769E) and Pvr (for K720E) is logical and strengthens the overall model. The use of kynurenic acid to subtract false-positive events is appropriate methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Double and quadruple mutant combinations show that K603E and R769E mutations dominate the phenotypes, with the K706E/R769E double mutant exhibiting stronger defects than K603E/K720E, and the quadruple mutant showing the most severe impairments across all measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data in Figure 7 clearly demonstrate epistatic relationships between mutations, with K603E and R769E showing dominant effects. The interpretation that K603E cancels the gain-of-function of K720E in the double mutant is well-supported by the data. The quadruple mutant's severe phenotype and low number of responsive cells is consistent with cumulative disruption of both binding modes. Statistical analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "During 10 Hz repetitive stimulation, mutations show distinct effects on short-term depression: R769E exhibits stronger depression than WT, K603E shows similar initial depression but higher amplitudes later in the train, K720E shows stronger normalized depression but reaches the same steady state as WT, and K706E maintains lower absolute amplitudes throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 10 Hz train data in Figure 8 provide clear evidence for differential effects on short-term plasticity. The use of both normalized and absolute EPSC amplitude plots is appropriate for distinguishing between different mechanisms. The authors appropriately acknowledge that 'interpretation of some of the data was not straightforward' and offer mechanistic explanations based on their two-state model. The data support the notion that different residues contribute to binding in different orientations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "PDBu-induced potentiation of release is enhanced for K603E and R769E mutants, reduced for K720E, similar to WT for K706E, and still observable for the quadruple mutant. Double mutants show potentiation patterns dominated by K603E and R769E.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PDBu potentiation data in Figure 10 demonstrate clear differential effects of mutations on phorbol ester-induced enhancement of release. The interpretation that PDBu partially compensates for priming defects in K603E/R769E mutants is reasonable. The surprising finding that K706E shows WT-like potentiation despite affecting Pvr suggests complex mechanisms. The observation of potentiation even in the severely impaired quadruple mutant is notable, though the authors appropriately note this should be interpreted with caution due to weak baseline EPSCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9"
+    ],
+    "result": "The C1-C2B region of Munc13-1 plays a central role in vesicle priming, and two distinct faces of this region control neurotransmitter release and short-term presynaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the comprehensive set of in vitro and in vivo experiments. The differential effects of mutations in the polybasic face versus the Ca2+-binding loops on priming, evoked release, and plasticity provide strong evidence for functionally distinct membrane-binding modes. The correlation between in vitro and cellular phenotypes strengthens the conclusions. This represents the main finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "A two-state model is proposed where Munc13-1 adopts perpendicular and slanted orientations that correspond to loosely and tightly primed states, with the equilibrium shifted by Ca2+ and DAG, explaining short-term presynaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a proposed mechanistic model that integrates the current findings with previous literature. While the data are consistent with this model and provide substantial support for two distinct binding modes, the model involves several speculative elements about SNARE complex assembly states and the dynamic equilibrium between orientations. The authors appropriately cite supporting literature (Neher and Brose, 2018) and acknowledge that 'other interpretations are possible.' The model is valuable as a framework but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "K603E and R769E mutations severely impair Ca2+-independent liposome bridging/fusion and synaptic vesicle priming, while K720E and K706E have milder effects in reconstitution assays, do not affect priming, but differentially modulate Ca2+-evoked release. Combined mutations are dominated by K603E and R769E effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrating in vitro and cellular data is well-supported by the comprehensive experimental evidence presented in Figures 2-7. The correlation between in vitro and in vivo phenotypes is strong for the priming-deficient mutants (K603E, R769E) and the differential effects on release probability (K706E, K720E) are clearly demonstrated. The epistatic relationships in double/quadruple mutants are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on neurotransmitter release machinery, Munc13-1 domain structure and functions, and previous evidence for membrane bridging activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established background knowledge appropriately cited from the literature. The structural information about Munc13-1 domains and their functions is well-documented in previous studies. The membrane bridging model and supporting evidence from C2C domain mutations are properly attributed to prior work (Liu et al., 2016; Quade et al., 2019; Xu et al., 2017). This provides necessary context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The proposed dual inhibitory and stimulatory roles of Munc13-1 membrane bridging are consistent with previous findings including effects of H567K mutation and C1/C2B domain deletions in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of current findings with previous literature is appropriate and well-cited. The H567K mutation data (Basu et al., 2007; Rhee et al., 2002) and C. elegans deletion studies (Michelassi et al., 2017) provide independent support for the dual-role model. The authors appropriately use these prior results to contextualize their findings rather than claiming them as new discoveries.",
+    "result_type": "MINOR"
+  }
+]

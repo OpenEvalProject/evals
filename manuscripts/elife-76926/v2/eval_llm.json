@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C63",
+      "C64",
+      "C71",
+      "C96",
+      "C100",
+      "C165"
+    ],
+    "result": "The study identifies a principal rostrocaudal gradient and a secondary dorsoventral gradient in the LPFC, with the rostrocaudal gradient explaining the most variance in meta-analytic connectivity. The rostrocaudal gradient is anchored by caudal LPFC regions at one end and rostral LPFC regions at the other, showing a clear posterior-to-anterior spatial layout. The dorsoventral gradient extends from ventral to dorsal LPFC regions and explains the second-most variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C63, C64, C71, C96, C100, and C165 collectively describe the identification and spatial characteristics of the two main gradients. The findings are supported by data from diffusion embedding analysis of 14,371 studies, with clear visualization in Figures 1 and 2. The rostrocaudal organization is demonstrated through systematic spatial positioning of quintile bins, and the variance explained by each gradient is quantified in the scree plots (Figures 1C and 1D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C116",
+      "C117"
+    ],
+    "result": "The principal LPFC gradient correlates with the global brain-wide resting-state connectivity gradient from Margulies et al., 2016, showing moderate positive correlation with gradient 1 and weak negative correlation with gradient 3. This indicates that the LPFC gradient fits within a more global gradient separating sensorimotor systems from higher-order association regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C67, C116, and C117 describe the relationship between the meta-analytic LPFC gradient and established resting-state gradients. The correlations are quantified and shown in Figure 2\u2014figure supplement 1, with statistical significance indicated (p<0.0001). This provides strong evidence that the LPFC gradient is part of a broader organizational principle in the brain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The principal LPFC gradient is robust to methodological choices including study selection and coactivation distance thresholds, and can be reproduced at the single-subject level with individual-specific variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, and C70 describe robustness analyses. The findings are supported by supplementary analyses shown in Figure 1\u2014figure supplements 1-5, including 5000 bootstrap resamples and analyses at different distance thresholds. Single-subject reproducibility is demonstrated in 11 subjects from the IBC dataset, though with acknowledged individual variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C74",
+      "C75",
+      "C97",
+      "C109",
+      "C110",
+      "C124"
+    ],
+    "result": "A unimodal-to-transmodal spectrum of coactivation patterns exists along the principal LPFC gradient, with caudal zones coactivating with sensorimotor/attention networks, middle zones with salience/control networks, and rostral zones increasingly with default mode network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C74, C75, C97, C109, C110, and C124 describe the network coactivation patterns along the gradient. The findings are supported by systematic analysis of coactivation patterns for each quintile bin (Figure 3), showing clear transitions from unimodal to transmodal networks. The log-odds ratio threshold of >0.5 provides quantitative evidence for the associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C85",
+      "C86",
+      "C87",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "A concrete-to-abstract axis of structure-function associations extends from caudal to rostral LPFC regions, with caudal-to-middle zones associated with sensorimotor/attention/language/executive topics and middle-to-rostral zones associated with memory/emotion/social cognition topics, supporting domain-general processing in mid-LPFC and domain-specificity at the extremities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C85, C86, C87, C112, C113, and C115 describe the functional topic associations along the gradient. The findings are supported by segregation query analysis shown in Figure 4, which demonstrates specific topic-bin associations using log-odds ratios. The pattern shows a systematic shift from concrete to abstract functions, with confidence intervals from 5000 bootstrap resamples indicating reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Segregation queries in NeuroLang enable inference of more specific structure-function associations compared to conventional non-segregation analyses, which show distributed associations across bins with no specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, C82, C126, C127, and C128 describe the methodological advantage of segregation queries. The comparison between segregation-based (Figure 4) and non-segregation-based (Figure 4\u2014figure supplement 1) analyses clearly demonstrates that conventional approaches yield either zero associations or associations covering the entire gradient, while segregation queries reveal specific localized associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98",
+      "C130",
+      "C136",
+      "C137",
+      "C144"
+    ],
+    "result": "Inter-hemispheric asymmetries exist along the principal LPFC gradient, with left LPFC showing preference for language and memory topics (lexical semantics, sentence comprehension, reading, memory retrieval, declarative memory) and right LPFC showing preference for sensory monitoring and inhibitory control topics (somatosensory processing, eye movements, response inhibition, feedback/error processing), with no systematic variation in asymmetry degree along the rostrocaudal axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C89-C95, C98, C130, C136, C137, and C144 describe hemispheric asymmetries. The findings are supported by inter-hemispheric segregation query analysis shown in Figure 5, with log-odds ratios and 95% confidence intervals from 5000 bootstrap resamples. The results are consistent with established literature on language and inhibitory control lateralization, though the lack of systematic variation along the gradient is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C167"
+    ],
+    "result": "The study adopts NeuroLang, a novel probabilistic first-order logic programming approach, to perform coordinate-based meta-analysis on 14,371 studies from Neurosynth, enabling more expressive queries and reproducible analyses that overcome limitations of previous meta-analytic tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C55, and C167 describe the methodological approach. The use of NeuroLang is well-documented in the Methods section with detailed code examples, and its advantages over conventional tools (like Neurosynth) are demonstrated through the segregation query analyses. The reproducibility claim is supported by public code availability and the ability to rerun analyses with the same queries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study uses a multi-step analytical pipeline involving projection of voxel data onto 1024 DiFuMo regions, computation of log-odds ratios for meta-analytic connectivity, and diffusion embedding to derive low-dimensional gradients representing axes of variation in connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe the core analytical methodology. The pipeline is clearly documented in the Methods section and illustrated in Figure 6B, with each step justified. The use of DiFuMo atlas is supported by citation to Dadi et al., 2020, and the diffusion embedding approach is supported by citations to Coifman et al., 2005 and Margulies et al., 2016. The methodology is standard for gradient mapping studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Meta-analysis may amplify spatial uncertainty and overly smooth gradients due to combining many datasets, and methodological choices (10mm smoothing, brain atlas use) may make LPFC organization appear more continuous than it actually is. Subject-level analysis shows more granular gradients than literature-based gradients, but the study makes no claims about ground truth spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 describe acknowledged limitations. The authors transparently discuss potential smoothing effects and show subject-level data (Figure 1\u2014figure supplement 4) demonstrating more granular patterns. The explicit statement that no claims are made about ground truth resolution shows appropriate scientific caution. This is a well-supported discussion of methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study makes simplifying assumptions including use of 1024 functional regions and 20-percentile bins, which may impose fixed dimensionality and ignore brain dynamics. Topics represent broad concepts that may not capture fine-grained cognitive constructs, though integrating ontologies like Cognitive Atlas could improve future analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C155 describe methodological limitations and future directions. The authors acknowledge that their choices (DiFuMo atlas, quintile bins, topic models) involve trade-offs between computational feasibility and granularity. The discussion of topics as 'bags of words' and the suggestion to integrate ontologies shows awareness of limitations and paths for improvement. These are appropriately framed as limitations rather than fatal flaws.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Small sample sizes per study and publication bias might impact reliability, though spatial smoothing priors and probabilistic atlases may alleviate some bias. Future meta-analyses should use complete data like unthresholded statistical images from repositories like NeuroVault for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 discuss data quality limitations and future directions. The authors acknowledge inherent limitations of coordinate-based meta-analysis (small samples, publication bias) while noting their methodological choices may partially mitigate these issues. The recommendation for future work using complete statistical images is reasonable and supported by citation to NeuroVault (Gorgolewski et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Current knowledge of task-dependent activations is limited by the quality of task paradigms. While nested hierarchical tasks can uncover functional gradients, they are uncommon and limited in scope. The Neurosynth dataset captures wider variety of brain states but at the expense of some specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 discuss fundamental limitations of the field and trade-offs in the data. The authors acknowledge that their meta-analysis is constrained by the quality of underlying studies and task designs. The comparison between hierarchical tasks (specific but narrow) and the Neurosynth dataset (broad but less specific) is a fair characterization supported by citations to Poldrack and Yarkoni, 2016.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Previous meta-analyses mapping the LPFC have been limited in scope (restricted to specific regions or functions) or specificity (assuming piece-wise constant coactivation, ignoring gradual transitions), partly due to limited expressiveness of commonly-used tools that cannot represent complex queries involving presence and absence of activation in multiple regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17, C43-C49 describe limitations of prior work. These claims are supported by citations to previous meta-analyses (Hartwigsen et al., 2019; Nee et al., 2013; de la Vega et al., 2018) and discussion of tool limitations (Neurosynth). The characterization of previous work as either narrow in scope or lacking specificity is reasonable and sets up the motivation for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The rostrocaudal gradient agrees with hypotheses from abstraction and hierarchical control studies. While early studies ascribed rostral LPFC with integrating concrete information, recent causal studies place mid-LPFC as the nexus. The current study finds mid-LPFC in intermediate gradient zones with overlapping coactivation profiles, though cannot infer integrative processing causally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C104-C108 discuss interpretation of findings in relation to prior theories. The agreement with rostrocaudal gradient hypotheses is supported by citations (Badre, 2008; Koechlin et al., 2003). The positioning of mid-LPFC in intermediate zones is a direct finding from the gradient analysis. The acknowledgment that causality cannot be inferred from meta-analysis is appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Relatively weak evidence is observed for right-hemispheric preference of attention-related topics (attention, cued attention, navigation), though these are often attributed to the right hemisphere. This may be due to topics being 'bags of words' that are not specific enough to capture fine-grained cognitive constructs, though topics are better than individual terms that risk being interpreted out of context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 discuss unexpected findings and their interpretation. The weak evidence for attention lateralization is shown in Figure 5 and acknowledged as inconsistent with some prior work (Bartolomeo and Seidel Malkinson, 2019). The explanation based on topic granularity is speculative but reasonable, and the authors appropriately acknowledge this as speculation rather than definitive explanation. The comparison to individual terms is supported by citation to Poldrack et al., 2012.",
+    "result_type": "MINOR"
+  }
+]

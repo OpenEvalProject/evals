@@ -1,0 +1,550 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C26",
+      "C67",
+      "C68"
+    ],
+    "result": "The study analyzed published single-cell sequencing data from 41,189 human sperm (969\u20133377 cells from each of 25 donors) with extremely low coverage of approximately 0.01\u00d7 per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C26, C67, and C68 consistently report the dataset characteristics with explicit citations to Bell et al., 2020 and Leung et al., 2021. The sample size, donor count, and coverage are clearly stated and verifiable from the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C99",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The rhapsodi method was developed to phase diploid donor genomes, impute missing gamete genotypes, and discover meiotic recombination breakpoints from sparse single-cell sequencing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C29-C31 explicitly describe the three main functions of rhapsodi with supporting methodological details (C137-C140). The method's approach using overlapping windows, HMM-based imputation, and recombination detection is clearly documented with Figure 1 providing visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "A generative model was developed to benchmark rhapsodi's performance across varying gamete sample sizes, sequencing depths, recombination rates, and genotyping error rates, producing 5713 simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C154-C166 provide comprehensive documentation of the simulation framework with explicit parameter ranges and performance metrics. Figure 2\u2014figure supplement 1 illustrates the generative model, and the reported simulation count (5713) is consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "For simulations matching Sperm-seq data characteristics (1000 gametes, 30,000 hetSNPs, 0.01\u00d7 coverage), rhapsodi achieved 99.993% phasing accuracy, 99.962% imputation accuracy, and 93.7% TPR for recombination discovery with 1.8% FDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 report specific performance metrics with standard deviations for conditions matching the empirical dataset. These results are explicitly stated with Figure 2 providing visual confirmation, and the metrics are appropriate for evaluating the three main tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Phasing performance improved with increasing data (gamete sample size and coverage), reaching a plateau at approximately 0.1\u00d7 coverage, though large sample sizes can compensate for lower coverages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe performance trends observed across the simulation study. The plateau at 0.1\u00d7 coverage and the compensatory effect of sample size are explicitly stated and consistent with the comprehensive benchmarking shown in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Meiotic recombination discovery exhibited the weakest relative performance among the three tasks, with resolution strongly associated with coverage depth. For Sperm-seq coverage (0.01\u00d7), median resolution was 167.5 kbp, with false negatives primarily from terminal crossovers or closely spaced events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 provide detailed analysis of recombination discovery performance with explicit metrics and error mode characterization. The resolution estimates are supported by citations (C42, C43) and Figure 2\u2014figure supplement 5 illustrates the error modes. The discussion of crossover interference (C45) appropriately contextualizes the conservative benchmarking approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Underestimating the genotyping error rate or recombination rate had a greater effect on performance than overestimating either parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 explicitly compares the effects of parameter misspecification with supporting figures (Figure 2\u2014figure supplements 6-9) showing the differential impacts. This demonstrates robustness analysis of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "rhapsodi can analyze datasets of 32,900 gametes (20\u00d7 larger than Bell et al., 2020) in under 24 hours on 48 CPU cores, with all runtime simulations completing in under 90 minutes of wall-clock time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C170-C172 demonstrate scalability with explicit runtime benchmarks. The 20\u00d7 scaling comparison to Bell et al., 2020 is clearly stated, and Figure 2\u2014figure supplement 10 provides supporting runtime data. The conservative benchmarking approach (using 100,000 hetSNPs) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C173",
+      "C174"
+    ],
+    "result": "Comparison to Hapi showed that rhapsodi and Hapi performed comparably under conditions of low gamete numbers and high coverage (>1\u00d7), but rhapsodi completed 94% of simulations versus 65% for Hapi, with superior completeness at low coverages (<0.1\u00d7) characterizing Sperm-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 and C173-C174 provide comprehensive comparison with appropriate modifications to Hapi for fair benchmarking. The completion rates (94% vs 65%) and performance trade-offs are explicitly stated with Figure 3 and supplements providing visual evidence. The modifications to Hapi (disabling filtering, matching HMM parameters) are appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C175",
+      "C176"
+    ],
+    "result": "Comparison to linkedSNPHapCUT2 showed it succeeded in 77% of simulations but failed in 21% due to computational constraints (3 days runtime, 185 GB memory). In data-limited scenarios, linkedSNPHapCUT2 achieved higher completeness than windowWardD2, but for larger datasets, windowWardD2 offered comparable completeness with much higher accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 and C175-C176 document the comparison with linkedSNPHapCUT2, including success/failure rates and performance trade-offs. The computational bottleneck (file conversion) is identified with Figure 3\u2014figure supplement 4 showing timing comparisons. The context-dependent performance (data-limited vs. larger datasets) is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The 25 sperm donors included 20 from a sperm bank with presumed normal fertility and 5 with known reproductive issues. Genetic ancestry analysis showed 16 donors clustered with European, 3 with East Asian, 2 with South Asian populations, with 3 showing admixed African American ancestry and 1 (NC26) showing African and East Asian similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 and C177-C179 describe donor characteristics with explicit citations to Bell et al., 2020 and Leung et al., 2021. The PCA-based ancestry inference methodology is clearly described with Figure 5\u2014figure supplement 2 providing visual confirmation. The consistency with self-reported ancestries supports the analysis validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Stringent filtering was performed to mitigate errors, including removing low-quality and aneuploid cells, excluding technically challenging regions (tandem repeats, low mappability, segmental duplications, extreme GC content), restricting to 1000 Genomes SNPs, and removing SNPs with excess coverage. This filtering removed 15,138,461 (~30%) SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 and C180-C185 comprehensively document the filtering strategy with explicit criteria and citations to quality control resources (Genome in a Bottle, ENCODE). The removal of 30% of SNPs is substantial but justified to avoid false TD signals. Figure 5\u2014figure supplement 3 illustrates the filtering effects, and the rationale for preserving true TD signals despite filtering is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Applying rhapsodi to filtered Sperm-seq data achieved 99.9% phasing completeness, 99.3% imputation completeness, and identified an average of 1.17 recombination events per gamete-chromosome (mean 25.75, mode 24 autosomal crossovers per gamete genome), consistent with male genetic maps. Crossover locations were concentrated near chromosome ends and strongly correlated (r=0.9) with the Halldorsson et al., 2019 male recombination map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 report empirical performance on Sperm-seq data with explicit metrics and standard deviations. The crossover counts are consistent with known male genetic maps (citations to Broman et al., 1998 and Halldorsson et al., 2019), and the strong correlation (r=0.9) with the Icelandic map provides external validation. Figures 5\u2014figure supplements 4-5 provide visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "With an average of 1711 gametes per donor, the study has statistical power of 0.681 to detect 7% deviations from Mendelian expectations (57% transmission) and 0.912 to detect 8% deviations, accounting for multiple testing (p-value threshold = 1.78 \u00d7 10\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide explicit power calculations for the average and minimum sample sizes with appropriate multiple testing correction. The power estimates are based on 1000 simulations (referenced in methods) and account for the Bonferroni-corrected significance threshold, demonstrating adequate power for moderate TD detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "A two-tailed binomial test was used to scan for transmission distortion at each hetSNP across 25 donors. After multiple testing correction using simpleM (effective tests = 281,368, p-value threshold = 1.78 \u00d7 10\u207b\u2077), no individual SNP exhibited genome-wide significant evidence of TD. The strongest signal occurred at chromosome 2 end for donor NC18 (56.2% transmission, p-value = 9.6\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 and C196-C199 document the TD scanning methodology with appropriate statistical testing and multiple testing correction. The use of simpleM to account for extreme LD is well-justified, and the strongest signal (C91-C93) falls just below the significance threshold. Figure 5 shows the Manhattan plot confirming no genome-wide significant hits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Tracts of apparent homozygosity were observed, including two donors with tracts exceeding 3.5 Mbp, but these are better explained by filtering of technically challenging regions, heterozygous deletions, or identity by descent, as no site within 1 Mbp of homozygosity windows yielded significant TD signal (minimum p-value = 0.072).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 address a potential concern about extreme TD manifesting as homozygosity. The lack of significant TD signal flanking homozygous regions (minimum p-value = 0.072) supports the interpretation that these tracts are technical artifacts rather than TD. The alternative explanations are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C200",
+      "C202",
+      "C203"
+    ],
+    "result": "The combined distribution of p-values closely mirrored the null hypothesis expectation. After LD pruning, the average proportion of shared alleles across all pairwise sperm comparisons was 0.499996, consistent with null simulations (n=500, p-value = 0.47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 and C200-C203 provide two complementary global tests for TD: QQ plot analysis and allele sharing. Both approaches show close concordance with null expectations. Figure 6 provides visual confirmation with the QQ plot and allele sharing distribution. The LD pruning methodology (C200) is appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C28",
+      "C89",
+      "C96",
+      "C101",
+      "C102",
+      "C119",
+      "C134"
+    ],
+    "result": "After stringent filtering and comprehensive analysis, results exhibited close concordance with binomial expectations under balanced transmission, both at individual loci and genome-wide, supporting a model of balanced transmission and adherence to Mendel's Law of Segregation in this sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C27-C28, C89, C96, C101-C102, C119, and C134 consistently report the main finding of no significant TD. The conclusion is supported by multiple lines of evidence: no genome-wide significant individual SNPs, QQ plot concordance, and global allele sharing consistent with null expectations. The stringent filtering and high statistical power strengthen this negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C185",
+      "C186"
+    ],
+    "result": "Stringent filtering is not expected to eliminate true TD signals, which should span large genomic intervals due to extreme LD within sperm samples from a given donor, as supported by simulations showing TD signatures are preserved despite filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C185-C186 address a critical concern about whether filtering could mask true TD. The reasoning that true TD should span large intervals due to extreme LD is sound, and Figure 4\u2014figure supplement 2 provides simulation evidence that TD signatures are preserved after filtering. This justifies the stringent filtering approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "A caveat is the inability to analyze highly repetitive and technically challenging regions (telomeres, centromeres), which have been implicated in TD in other species. Stringent filtering was necessary to avoid spurious TD signatures from mapping artifacts. The recent complete human reference genome offers promise for future comprehensive TD studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately acknowledge a significant limitation with citations to TD in other species (Brand et al., 2015; Axelsson et al., 2010). The justification for filtering (C106) and discussion of future opportunities with the complete reference genome (C107, citing Nurk et al., 2022) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Past TD studies in humans were limited by statistical power due to challenges in amassing large families and technical limitations of gamete genotyping. Single-gamete sequencing offers advantages over pedigree studies: the number of informative transmissions equals the number of gametes for all hetSNPs, whereas pedigree studies have variable informative transmissions depending on parental heterozygosity. Imputation of missing genotypes augments sample size ~100-fold, improving power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 provide a clear comparison of single-gamete versus pedigree-based approaches with appropriate reasoning. The Hardy-Weinberg calculation (C111) correctly illustrates the heterozygosity issue in pedigrees. The ~100-fold augmentation from imputation (C114) is consistent with the 0.01\u00d7 coverage. Figure 4\u2014figure supplement 4 illustrates the variable informative transmissions in pedigrees.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study has several limitations: (1) limited to 25 donors, missing rare/population-specific alleles; (2) TD alleles may rapidly fix, making detection during polymorphic phase unlikely; (3) only sensitive to TD operating before sperm sampling, blind to female meiosis, fertilization, or postzygotic mechanisms; (4) does not exclude biased gene conversion below study resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 provide a comprehensive and appropriately critical discussion of study limitations. Each limitation is clearly stated with supporting citations where relevant (C122: Greenberg Temin, 2020; C124: Clark and Akera, 2021; C125: Sutter and Immler, 2020; C126: Coop and Myers, 2007). The acknowledgment of these limitations is essential for proper interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C100"
+    ],
+    "result": "Simulations demonstrate that rhapsodi outperforms existing methods for phasing and imputation of single-gamete data while efficiently scaling to datasets 20-fold larger than analyzed in this study, with performance benchmarked across a wide range of study designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 and C100 summarize the benchmarking results. The comparison to Hapi (C56-C60) and linkedSNPHapCUT2 (C62-C66) supports the outperformance claim, and the scalability demonstration (C49-C50) supports the 20-fold scaling claim. The comprehensive benchmarking across parameter ranges is documented in C32-C36.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C167",
+      "C169"
+    ],
+    "result": "A beta regression model relating optimal phasing window size to input parameters (gametes, coverage, error rate, recombination rate) was fit on training data (n=647) and validated on held-out test data (n=213), achieving pseudo R\u00b2 = 0.32 with no obvious loss of generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167 and C169 document the automatic window size selection feature with appropriate train/test split and model evaluation. The pseudo R\u00b2 of 0.32 is modest but the lack of overfitting (no loss of generalization) is important. Figure 2\u2014figure supplement 4 provides visual confirmation of model performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mendel's Law of Segregation states equal allele transmission probability, but research in model organisms has uncovered numerous exceptions (transmission distortion). Evidence in humans remains equivocal due to underpowered studies. Previous human studies (Z\u00f6llner et al., 2004; Meyer et al., 2012; Paterson et al., 2009; Wang et al., 2012; Odenthal-Hesse et al., 2014) found tentative signals but could not exclude genotyping errors or achieve replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C25 provide appropriate background on TD with extensive citations. The definition of Mendel's Law (C6) is correct. The characterization of TD in other organisms (C13-C15) and the limitations of prior human studies (C16-C25) are well-documented with specific citations. This establishes the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Pooled sequencing of gametes offers an alternative approach that aggregates TD signal within genomic windows, improving power but sacrificing resolution and requiring external haplotype phasing. Applying this to human pooled sperm data would require additional phasing experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 appropriately discuss an alternative methodological approach with citations (Corbett-Detig et al., 2015, 2019; Wei et al., 2017; Breuss et al., 2020; Yang et al., 2021). The trade-offs (power vs. resolution) and requirements (external phasing) are clearly stated. This contextualizes the single-cell approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C136"
+    ],
+    "result": "rhapsodi enables future applications including sex-specific genetic maps for non-model species, personalized recombination maps to investigate fertility phenotypes, and population genetic analyses. Understanding TD could reveal novel genetic contributions to human infertility. rhapsodi offers a flexible toolkit for testing TD hypotheses in other cohorts and study systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133, C135-C136 discuss potential applications with appropriate citations (Lyu et al., 2021; Lamb et al., 2005; Li et al., 2020). These are reasonable extensions of the method's capabilities, though they represent future work rather than demonstrated results. The discussion appropriately frames these as opportunities rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "rhapsodi's methodology includes: (1) windowWardD2 phasing using overlapping windows with Ward's clustering and majority voting; (2) HMM-based imputation with emission probabilities from genotyping error and transition probabilities from recombination rate, using the Viterbi algorithm; (3) recombination breakpoint detection as haplotype transitions. Alternative linkedSNPHapCUT2 phasing is also available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C153 provide comprehensive methodological documentation with appropriate citations (Ward, 1963; Forney, 1973; Edge et al., 2017). The methods are clearly described with sufficient detail for reproduction. Figure 1 provides visual illustration of the workflow. The optional features (C146, C147, C151) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Power to detect extreme TD (k=0.99) was evaluated using 6600 simulations (100 per chromosome \u00d7 22 chromosomes \u00d7 3 donors). Power was computed as the proportion of lead hetSNPs with p-values below 1.78 \u00d7 10\u207b\u2077, with observed transmission rates ranging from 0.82 to 0.996.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C190 document the extreme TD power analysis with explicit simulation design and power calculation methodology. The range of observed transmission rates (0.82-0.996) demonstrates that even with extreme TD (k=0.99), the causal SNP may be filtered but flanking regions retain detectable signal, supporting the claim in C103.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Single-cell genotype calls were generated following Bell et al., 2020 methodology: variants were called using all sperm data per donor, heterozygous sites were selected, GenotypeSperm software determined which sites were captured per cell, and only single non-aneuploid cells with even coverage were included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C195 document the genotype calling pipeline with appropriate citation to Bell et al., 2020 and explicit software reference (GenotypeSperm). The quality control steps (removing doublets, aneuploid chromosomes) are clearly stated. This ensures consistency with the original data processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Data and code availability: Analysis scripts are at github.com/mccoy-lab/transmission-distortion, rhapsodi software at github.com/mccoy-lab/rhapsodi. Raw data from Bell et al., 2020 is at dbGaP (phs001887.v1.p1), Leung et al., 2021 data obtained by request. Metadata from Bell et al., 2020 at zenodo.org/record/3561081, Leung et al., 2021 metadata by request.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C210 provide comprehensive data and code availability information with specific URLs and accession numbers. The software is publicly available with documentation (vignette mentioned in C206). Raw data access is clearly described with appropriate citations. This supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

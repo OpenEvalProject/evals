@@ -1,0 +1,1981 @@
+{
+  "submission": {
+    "id": "ea98bba1-58ba-481a-afba-f610539d2c19",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:24:09.628601Z",
+    "updated_at": "2025-12-03T02:24:09.628601Z"
+  },
+  "content": [
+    {
+      "id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "submission_id": "ea98bba1-58ba-481a-afba-f610539d2c19",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis of Stu2 recruitment to yeast kinetochores\n\n## Authors\n\n- Jacob A Zahm<sup>1</sup> ([ORCID: 0000-0002-9600-5433](https://orcid.org/0000-0002-9600-5433))\n- Michael G Stewart<sup>2</sup> ([ORCID: 0000-0001-6581-6332](https://orcid.org/0000-0001-6581-6332))\n- Joseph S Carrier<sup>2</sup>\n- Stephen C Harrison<sup>1</sup> ([ORCID: 0000-0001-7215-9393](https://orcid.org/0000-0001-7215-9393)) \u2020\n- Matthew P Miller<sup>2</sup> ([ORCID: 0000-0003-2012-7546](https://orcid.org/0000-0003-2012-7546)) \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, and Howard Hughes Medical Institute Boston United States\n2. Department of Biochemistry, University of Utah School of Medicine Salt Lake City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nChromosome segregation during cell division requires engagement of kinetochores of sister chromatids with microtubules emanating from opposite poles. As the corresponding microtubules shorten, these \u2018bioriented\u2019 sister kinetochores experience tension-dependent stabilization of microtubule attachments. The yeast XMAP215 family member and microtubule polymerase, Stu2, associates with kinetochores and contributes to tension-dependent stabilization in vitro. We show here that a C-terminal segment of Stu2 binds the four-way junction of the Ndc80 complex (Ndc80c) and that residues conserved both in yeast Stu2 orthologs and in their metazoan counterparts make specific contacts with Ndc80 and Spc24. Mutations that perturb this interaction prevent association of Stu2 with kinetochores, impair cell viability, produce biorientation defects, and delay cell cycle progression. Ectopic tethering of the mutant Stu2 species to the Ndc80c junction restores wild-type function in vivo. These findings show that the role of Stu2 in tension-sensing depends on its association with kinetochores by binding with Ndc80c.\n\n## Introduction\n\nEqual partitioning of duplicated chromosomes during cell division preserves integrity of the genome in each of the two daughter cells. \u2018Bioriented attachment\u2019 of sister chromatids to opposite poles of the mitotic spindle in turn ensures that when a cell enters anaphase, each pair of sister chromatids segregates accurately (reviewed in Cheeseman, 2014). When correctly bioriented, a pair of cohesin-linked sister chromatids will be under tension, from forces exerted by the shortening of opposing microtubules and transmitted through the kinetochores that connect spindle microtubules to chromosome centromeres. \u2018Tension-sensing\u2019 and correction of erroneous attachments are thus critical mediators of genome integrity.\n\nThe Aurora B kinase (Ipl1 in budding yeast) is the immediate agent of error correction (Biggins and Murray, 2001; Biggins et al., 1999; Cheeseman et al., 2002; DeLuca et al., 2006; Hauf et al., 2003; Tanaka et al., 2002). In the absence of tension, Ipl1 phosphorylates Ndc80 (DeLuca et al., 2006; Hauf et al., 2003), an essential part of the microtubule-contacting apparatus of a yeast kinetochore, and several other kinetochore substrates, including critical targets within the Dam1 complex (Biggins et al., 1999; Cheeseman et al., 2002; Kang et al., 2001). Phosphorylation induces dissociation of a kinetochore from its associated microtubule, interrupting the incorrect attachment and allowing the attachment search to \u2018try again\u2019. Ndc80 is part of a rod-like assembly, the Ndc80 complex, a heterotetramer composed of two coiled-coil heterodimers, joined end-to-end in parallel orientations (Alushin et al., 2010; Ciferri et al., 2008; Wei et al., 2005; Wilson-Kubalek et al., 2008). The globular domain at the N-terminal end of Ndc80:Nuf2 contacts microtubules; the globular domain at the C-terminal end of Spc24:Spc25 interacts, through two distinct adaptors, with the chromatin-proximal inner kinetochore. The Ipl1 substrate residues of Ndc80 are in an N-terminal extension that contributes, along with a globular, calponin homology domain, to the microtubule interface (DeLuca et al., 2006; Umbreit et al., 2012).\n\nA further component of the response to erroneous attachment is the plus-end microtubule polymerase, Stu2 (the yeast ortholog of XMAP215/ch-TOG in metazoans). Its polymerization activity depends on plus-end binding, through a set of N-terminal TOG domains (Figure 1A; Al-Bassam et al., 2006; Ayaz et al., 2012; Ayaz et al., 2014; Fox et al., 2014), but its kinetochore association is independent of microtubules (Hsu and Toda, 2011; Kakui et al., 2013; Miller et al., 2016; Miller et al., 2019; Vasileva et al., 2017; Herman et al., 2020). In single-molecule experiments in vitro, kinetochores under low tension detach more frequently from microtubules than under higher tension (Akiyoshi et al., 2010), but only when Stu2 is present (Miller et al., 2016). Cells lacking Stu2 have error-correction defects, including detached kinetochores, loss of biorientation, and spindle-assembly checkpoint-dependent cell cycle delay, although previous work has been unable to separate these phenotypes from pleiotropic effects arising from loss of Stu2 microtubule polymerase activity (Al-Bassam et al., 2006; Humphrey et al., 2018; Kosco et al., 2001; Miller et al., 2016; Pearson et al., 2003; Severin et al., 2001; Wang and Huffaker, 1997).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the domain structure of Stu2, showing the tubulin-binding TOG domains, the dimeric coiled-coil, and the CTS. Molecular mass markers shown indicate molecular weight in kDa. (B) Association of full-length Ndc80c and Stu2. Dwarf and full-length Ndc80c were immobilized to saturation on Ni-NTA agarose and incubated with Stu2. After extensive washing, bound proteins were eluted with buffer containing 400 mM imidazole. (C) Multiple sequence alignment showing conservation of the CTS among budding and fission yeasts. Conservation calculated using T-Coffee Server (gray boxes) and percent identity calculated using Clustal Omega (purple boxes). The bars below the alignment correspond to the Saccharomyces cerevisiae sequence in the alignment and show the constructs used in the pulldown experiments in (D). The blank parts of each line represent deletions. (D) Binding of Ndc80cdwarf and Stu2 CTS. The Stu2 constructs used in this experiment consist of the Stu2 coiled-coil domain, followed by a glycine-serine linker, followed by the regions of the CTS indicated by the bars in (C). Ndc80cdwarf was immobilized on Co-NTA agarose and incubated with Stu2. After extensive washing, bound proteins were eluted with buffer containing 400 mM imidazole. (E) Affinity of Ndc80cdwarf and Stu2 CTS. Competition fluorescence polarization, showing displacement of Oregon-green labeled CTS peptide (50 nM) from Ndc80cdwarf (10 \u00b5M) with increasing concentrations of an unlabeled CTS peptide. Polarization (in milliP) is plotted against concentration of unlabeled peptide. Data fitted with a single-site saturation binding model implemented in GraphPad Prism 9.\n\nStu2 associates with Ndc80c (Miller et al., 2016; Miller et al., 2019). We describe experiments here in which we found that a C-terminal segment (CTS) of Stu2 bound specifically at the junction of the Ndc80:Nuf2 and Spc24:Spc25 heterodimers and that conserved features of the four-chain overlap at that junction were important for the interaction. Mutations in Stu2 that disrupted this interaction, blocked association of Stu2 with isolated kinetochores in vitro, impaired cell viability, and caused defects in chromosome biorientation and in timely cell cycle progression. Ectopic tethering of the mutant Stu2 to Ndc80c rescued these defects, allowing us to assign them to the interaction with Ndc80c rather than to interactions with other binding partners, such as Bik1 and Spc72 (Usui et al., 2003; Wolyniak et al., 2006). We conclude that Stu2 stably associates with the Ndc80c four-way junction and that this association is critical for establishing bioriented kinetochore attachments and for maintaining cell viability. These findings are consistent with the notion that kinetochore-associated Stu2 is a central component of the tension-sensing mechanism in budding yeast.\n\n## Results\n\n### Interaction of a conserved Stu2 CTS with Ndc80c\n\nTo specify interactions that stabilize a Stu2:Ndc80c complex, we determined which regions of Stu2 are both necessary and sufficient for binding to Ndc80c (Figure 1A). Initial pulldown experiments showed that recombinant full-length Stu2 bound directly to immobilized recombinant full-length Ndc80c (Figure 1B). Both the flexibility and elongated shape of Ndc80c would hinder structural studies of the full-length proteins. We instead used the \u2018dwarf\u2019 version of Ndc80c (Ndc80cdwarf) in which the coiled-coil shaft between the globular heads has been shortened to facilitate crystallization (Valverde et al., 2016). In pulldown experiments, we found that Stu2 binds Ndc80cdwarf as efficiently as it does full-length Ndc80c (Figure 1B). Subsequent pulldown experiments used immobilized Ndc80cdwarf and a construct comprising the Stu2 dimeric coiled-coil domain followed by a glycine-serine linker, joined in turn to the Stu2 CTS or fragments of it (Humphrey et al., 2018; Miller et al., 2019; Usui et al., 2003; Wang and Huffaker, 1997). We found that a segment at the C-terminus of Stu2, most of which is conserved among budding and fission yeast and referred to here as the \u2018CTS\u2019 (Figure 1A), is required for binding Ndc80c. Deletion of either an N-terminal portion of the CTS (residues 857\u2013867), a C-terminal portion of the CTS (residues 868\u2013888), or the stretch following the CTS that lacks conservation (residues 880\u2013888) resulted in loss of in vitro binding (Figure 1C,D). Fluorescence polarization binding experiments showed that the CTS binds dwarf Ndc80c with a dissociation constant of approximately 48 \u00b5M (Figure 1E). Together, these data show that the C-terminal 33 residues of Stu2 are sufficient for Ndc80c binding.\n\n### Structure of Stu2 bound with Ndc80cdwarf\n\nWe co-crystallized the Ndc80cdwarf with a 33-mer Stu2 peptide (Stu2 residues 855\u2013888) and determined the structure of the complex by molecular replacement using the published Ndc80cdwarf structure as a search model (Figure 2A). Clearly defined density in the resulting map corresponded to residues 862\u2013888; there was no density corresponding to the N-terminal seven residues (Figure 2B), and the C-terminal residues, 881\u2013888, were part of a crystal-packing contact with the Nuf2 globular head of an Ndc80c symmetry mate (Figure 2B). This lattice interaction may account for the somewhat different unit-cell dimensions in our crystals from those of the unliganded Ndc80cdwarf in the same space group (Valverde et al., 2016), as well as for the nearly full occupancy but slightly higher local thermal parameters, as determined by refinement, for the low affinity peptide, which did not diffuse out during the short soak in cryopreservative (see Materials\u00a0and\u00a0methods). To resolve a potential ambiguity in the sequence register of the model, we determined the structure of a complex with a peptide containing selenomethionine in place of the methionine at position 876. A strong anomalous difference peak confirmed that we had chosen the register correctly (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig2-v2.jpg)\n\n**Figure 2.:** (A) Stu2 CTS (residues 855\u2013888) bound to the Ndc80cdwarf. The peptide binds at the four-way junction of Ndc80, Nuf2, Spc24, and Spc25 in a groove between Ndc80 and Spc24. (B) Model of the Stu2 peptide built into the 2Fo-Fc map (gray mesh); anomalous difference map (green mesh), contoured at 8\u03c3, showing the position of SeMet in the peptide. (C) Conservation of residues at the contacts of Stu2 CTS, Ncd80, and Spc24, shaded from red (conserved) to blue (variable). Nuf2 and Spc25 are in gray. Ndc80c components in surface representation; Su2 in stick representation. The N- and C-termini of the Stu2 peptide are indicated. The expanded region depicted in (D) is shown as a black box. (D) Expanded view of the Ndc80-Spc24 surface corresponding to the boxed region in panel C, showing conserved pockets for the three hydrophobic residues of Stu2 discussed in the text. Coloring as in (C). (E\u00a0and\u00a0F) Detailed views of the contacts between the Stu2 peptide and Ndc80 and Spc24.\n\nThe peptide binds at the junction of the two heterodimeric subcomplexes, contributing a fifth \u03b1 helix, and packs at about 30\u00b0 to the main axis of the four overlapping helices from Ndc80, Nuf2, Spc24, and Spc25. Four conserved hydrophobic-residue side chains in the Stu2 CTS (V865, L869, I873, and M876) fit into hydrophobic pockets lined by conserved residues of Ndc80 and Spc24 (Figure 2A\u2013F), and in a conserved polar contact, the side chain of Stu2 R872 inserts between D651 and S654 on Ndc80 (Figure 2E).\n\nTo confirm the correspondence of the Stu2:Ndc80c interface in the crystal structure with binding in solution, we made point mutations in Stu2 and carried out pulldowns with immobilized Ndc80cdwarf, using the same Stu2 constructs described above, except for the point mutations. For the binding experiments we mutated L869, I873, and M876 to alanine. The immobilized Ndc80cdwarf did not bind any mutant version of the Stu2 C-terminus (Figure 3A). These experiments show that the details of interaction between Stu2 and Ndc80c in the crystal lattice occur in solution as well.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig3-v2.jpg)\n\n**Figure 3.:** (A) Effect of mutations at the binding interface. The Stu2 constructs contain the Stu2 coiled-coil domain, a glycine-serine linker, and either native or mutated C-terminal segment\u00a0(CTS). Ndc80cdwarf was immobilized on Co-NTA agarose, incubated with Stu2, washed, and eluted with 400 mM imidazole. (B) Exponentially growing STU2-AID cultures expressing an ectopic copy of STU2 (STU2WT, M622; stu2\u0394855-888, M653; stu2L869E,I873E,M876E or stu2EEE, M1444; stu2L869A,I873A,M876A or stu2AAA, M1576) and also expressing from the genomic locus DSN1-6His-3Flag were treated with auxin 30 min prior to harvesting. Kinetochore particles were purified from lysates by anti-Flag immunoprecipitation (IP) and analyzed by immunoblotting. (C) Exponentially growing STU2-AID CDC20-AID cultures with an ectopically expressed STU2-GFP allele (STU2WT-GFP, M1757; stu2EEE-GFP, M1985) that also contained SPC110-mCherry (spindle pole) were treated with auxin for 2.5 hr to arrest cells in metaphase. Left: Representative micrographs for each are shown. White bars represent 2 \u03bcm. Right: Line scan plots through spindle axis (encompassing maximum Stu2-GFP signal) show Stu2-GFP and Spc110-mCherry intensity from example cells shown on left. (D) Spindle-Proximal Stu2-GFP signal from cells (n\u00a0=\u00a0100) and line scan plots described in (C). Area under the curve for each line scan was measured using Fiji (p-value from a two-tailed unpaired t-test). (E) Spindle length (distance between Spc110-mCherry foci) was measured for cells (n\u00a0=\u00a0100) described in (C) (p-value from a two-tailed unpaired t-test; n.s. = not significant). (F) Wild-type (M3), STU2-AID (no covering allele, M619), and STU2-AID cells expressing various STU2-3V5 alleles from an ectopic locus (STU2WT, M622; stu2EEE, M1444; stu2AAA, M1576; stu2\u0394855-888, M653) were serially diluted (fivefold) and spotted on plates containing DMSO, 500 \u03bcM auxin, or 500 \u03bcM auxin + 5 \u03bcg/mL benomyl. (G) Exponentially growing STU2-AID fpr1\u0394 TOR1-1 cultures expressing an ectopic copy of STU2-FRB with wild-type NUF2 (STU2WT, M1513; stu2EEE, M1515) or with NUF2-FKBP12 (STU2WT, M1505; stu2EEE, M1507) were treated with rapamycin and auxin 30 min prior to harvesting. Protein lysates prepared, subjected to \u03b1-Flag IP, and analyzed as in (B). (H) fpr1\u0394 TOR1-1 cells (M1375), STU2-AID fpr1\u0394 TOR1-1 cells (no covering allele, M1476), and STU2-AID fpr1\u0394 TOR1-1 cells expressing STU2-FRB alleles at an ectopic locus with and without NUF2-FKBP12 (M1513; M1515; M1505; M1507 \u2013 same genotypes as in D) were serially diluted (fivefold) and spotted on benomyl plates containing DMSO, 50 ng/mL rapamycin, 500 \u03bcM auxin, or 500 \u03bcM auxin + 50 ng/mL rapamycin.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Note: small residual binding of Stu2EEE protein to purified kinetochore particles may explain observed difference between stu2EEE and no covering allele in percent biorientation shown in Figure 4B.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Exponentially growing cultures used in Figure 3C,D that contained an ectopically expressed\u00a0STU2-GFP allele (STU2WT-GFP, M1757; stu2EEE-GFP, M1985; stu2\u2206855-888-GFP, M1761) were harvested to examine Stu2-GFP expression levels and examined by immunoblotting. Pgk1 is shown as a loading control.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** STU2-AID cells expressing various STU2-3V5 alleles from an ectopic locus\u00a0(STU2WT, M622; stu2L869E, M1443; stu2I873E, M1442; stu2M876E, M1441; stu2EEE, M1444) were serially diluted (fivefold) and spotted on plates containing DMSO, 500 \u03bcM auxin, 5 \u03bcg/mL benomyl or 500 \u03bcM auxin + 5 \u03bcg/mL benomyl.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** STU2-AID cells expressing various STU2-3V5 alleles from an ectopic locus (STU2WT, M622; stu2L869A, M1576; stu2I873A, M1575; stu2M876A, M1574; stu2AAA, M1525) were serially diluted (fivefold) and spotted on plates containing DMSO, 500 \u03bcM auxin, 5 \u03bcg/mL benomyl, or 500 \u03bcM auxin + 5 \u03bcg/mL benomyl.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Diploid cells heterozygous for STU2/stu2\u2206::HIS3 at the endogenous\u00a0STU2 locus and homozygous for different STU2 alleles integrated at the LEU2 locus (STU2WT/STU2WT, M1718; stu2EEE/stu2EEE, M1714; stu2\u2206855-888/ stu2\u2206855-888, M1716) were sporulated and dissected on YPD plates. Spores scored positively for HIS3 are boxed in red. Spores harboring both deletion of endogenous STU2 and either stu2EEE or stu2\u2206855-888 have a viability defect. The stu2EEE strain shows a dominant meiotic phenotype in this assay as well, possibly resulting from aberrant meiotic chromosome segregation in STU2/stu2\u2206:HIS3 stu2EEE/stu2EEE diploid cells.\n\n### Kinetochore-associated Stu2 is required for cell viability\n\nWe generated strains containing point mutations at the positions tested in vitro, comprising three of the four conserved hydrophobic residues on Stu2 that contact Ndc80 and Spc24. For in vivo assays, we engineered an auxin-inducible degron\u00a0(AID) in which addition of auxin would induce degradation of endogenous Stu2-AID, uncovering the phenotype of an ectopic mutant allele (Miller et al., 2019). We assessed in these strains the effects of the several Stu2 mutations on Stu2-kinetochore association as well as on cell viability. Kinetochore co-immunoprecipitations from STU2-AID cells harboring either hydrophobic-to-charged or alanine mutations of these residues, stu2L869E,I873E,M876E (stu2EEE) or stu2L869A,I873A,M876A (stu2AAA), showed loss of Stu2-kinetochore binding (Figure 3B and Figure 3\u2014figure supplement 1). We also examined the localization of Stu2 in cells. In metaphase, Stu2 displays a characteristic bi-lobed distribution that largely overlaps with bioriented kinetochores clusters (Aravamudhan et al., 2014; He et al., 2001; Humphrey et al., 2018; Kosco et al., 2001). We examined STU2-AID cells arrested in metaphase (using a CDC20-AID allele) that carried either STU2WT- or stu2EEE-GFP fusion variants. Compared to STU2WT, the stu2EEE mutant showed a dramatic loss in kinetochore proximal signal (Figure 3C,D\u00a0and Figure 3\u2014figure supplement 2), while displaying similar metaphase spindle length (measured by distance between Spc110-mCherry foci; Figure 3E). These same hydrophobic-to-charged or alanine mutations also resulted in a severe cell viability defect in the presence of auxin, exacerbated by addition of low concentrations of the microtubule destabilizing drug benomyl (Figure 3F). The individual stu2 mutations also all had reduced cell viability (Figure 3\u2014figure supplements 3\u20135). Thus, the hydrophobic residues in the CTS of Stu2, which contact Ndc80c in the crystal structure, are required for Stu2-kinetochore binding and cell viability in vivo.\n\nThe observed growth defect resulting from disruption of Stu2-kinetochore binding could, in principle, be due to loss of microtubule polymerase activity or\u00a0due to association with other Stu2 CTS binding proteins (Gunzelmann et al., 2018; Usui et al., 2003; Wolyniak et al., 2006). To determine whether the viability defect of the most penetrant mutant, stu2EEE, was due solely to loss of kinetochore binding or whether other Stu2 activities were involved, we tested rescue of the kinetochore binding of stu2EEE by rapamycin in cells expressing suitably engineered FRB and FKBP12 fusion proteins. We generated strains containing STU2-AID with NUF2-FKBP12 at the endogenous NUF2 locus and STU2-FRB alleles at an ectopic locus (Figure 4\u2014figure supplements 1\u20134). We chose Nuf2 as the target for FKBP12 fusion because of the proximity of the C-termini of Nuf2 and Stu2 in the crystal structure. The cells also contained a mutant TOR1 allele (TOR1-1) and fpr1\u0394, to avoid inhibiting cell growth by the rapamycin treatment (Haruki et al., 2008). Cells expressing stu2EEE-FRB were deficient for Stu2-kinetochore binding as expected. Expressing NUF2-FKBP12 and adding rapamycin in culture rescued both the Stu2 binding defect (Figure 3G) and the cell viability defect of stu2EEE (Figure 3H). Because rapamycin addition rescued both defects, we infer that loss of kinetochore localization is the cause of viability loss. Thus, stu2EEE is a true separation of function mutation that allows us to assess the cellular consequences of disrupting Stu2-kinetochore association.\n\n### Proper chromosome biorientation and timely cell cycle progression require kinetochore-associated Stu2\n\nThe cellular phenotypes of the stu2EEE mutant are consistent with a role for kinetochore-associated Stu2 in error correction. If so, cells defective in Stu2-kinetochore binding should also have defective chromosome biorientation. We assessed chromosome biorientation by using a methionine-repressible CDC20 allele (pMET-CDC20) to arrest cells in metaphase that also carry a fluorescently marked centromere of chromosome III (Straight et al., 1996). Under these conditions, opposing spindle pulling forces cause bioriented sister chromatids to separate, appearing as two distinct GFP puncta (Pearson et al., 2001). The frequency of biorientation in STU2WT cells was at the level usually found in this assay (44 \u00b1 2%, Figure 4A,B), but it was significantly lower in stu2EEE cells (16 \u00b1 1%, p=0.0002). The presence of non-bioriented centromeres in the stu2EEE mutant could also result from a lack of pulling forces on bioriented sister chromatids caused by reduced microtubule dynamics reported in loss of function stu2 mutants (Kosco et al., 2001; Pearson et al., 2003). To examine this possibility, we monitored the axial position of the unseparated sister centromeres along the length of the metaphase spindle in stu2EEE expressing cells. Bipolar attached centromeres are more likely to be near the spindle equator, whereas monopolar/syntelic centromeres will remain close to the spindle pole to which they are attached (He et al., 2001; Huang and Huffaker, 2006; Skibbens et al., 1993). We found that most non-bioriented sister centromeres were found proximal to one of the two spindle poles in both STU2WT and stu2EEE cells (Figure 4\u2014figure supplement 5), suggesting that biorientation defects are caused by the persistence of monopolar/syntelic attachments and not by lack of microtubule pulling forces.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-v2.jpg)\n\n**Figure 4.:** (A) Exponentially growing STU2-AID pMET-CDC20 cultures with an ectopically expressed STU2 allele (STU2WT, M1154; stu2EEE, M1610) or no ectopic allele (no covering allele, M1153) and also containing CEN3 marked with GFP (CEN3::lacO LacI-GFP) were arrested in methionine + auxin containing media for 2.5 hr. Representative micrographs for bioriented and non-bioriented cells shown. (B) Percent bioriented cells were measured for cultures described in (A). Three replicates of n\u00a0=\u00a0200 cells shown; p-value determined with unpaired t-test. (C) Wild-type cells (M3), cells with spindle checkpoint mutation (mad3\u0394, M36), and STU2-AID cells expressing an ectopic copy of STU2 without and with a spindle checkpoint mutation (STU2WT, M622; STU2WT mad3\u0394, M1622; stu2EEE, M1444; stu2EEE mad3\u0394, M1541) were serially diluted (fivefold) and spotted on plates containing DMSO, 500 \u03bcM auxin, 5 \u03bcg/mL benomyl, or 500 \u03bcM auxin + 5 \u03bcg/mL benomyl. (D) STU2-AID cells expressing STU2-FRB alleles at an ectopic locus with NUF2 or NUF2-FKBP12 (STU2WT-FRB, M1513; stu2EEE-FRB, M1515; STU2WT-FRB NUF2-FKBP12, M1505; stu2EEE-FRB NUF2-FKBP12, M1507) were released from a G1 arrest into auxin and rapamycin containing media. Cell cycle progression determined by the accumulation of binucleate cells. (E) STU2-AID mad3\u2206 cells expressing STU2-FRB alleles at an ectopic locus with NUF2 or NUF2-FKBP12 (STU2WT-FRB, M2025; stu2EEE-FRB, M2024; STU2WT-FRB NUF2-FKBP12, M2027; stu2EEE-FRB NUF2-FKBP12, M2026) that also contained a fluorescently labeled centromere of chromosome III were released from G1 arrest into auxin- and rapamycin-containing medium. Quantification of chromosome mis-segregation in anaphase (percent of binucleate cells with a fluorescently labeled chromosome III signal in only one of the two nuclei). Shown is an average of three biological replicates, n\u00a0=\u00a0100 cells each. (F) Multiple sequence alignment of the Stu2 C-terminus and C-termini from Stu2 eukaryotic homologs. Histogram shows conservation score generated with Clustal Omega. Highly conserved residues, including hydrophobic amino acids important for Ndc80c binding, are boxed in purple.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In the presence of rapamycin, Stu2EEE-FRB binds to Nuf2-FKBP12, restoring Stu2EEE-Ndc80c interaction.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** fpr1\u0394 TOR1-1 cells (M1375), and fpr1\u0394 TOR1-1 cells expressing -FRB and/or -FKBP12 fusion alleles at the endogenous fusion-target locus\u00a0(NUF2-FKBP12, M1422; STU2-FRB, M1387; STU2-FRB NUF2-FKBP12, M1428; MPS1-FRB NUF2-FKBP12, M1461) were serially diluted (fivefold) and spotted on plates containing DMSO, 50 ng/mL rapamycin, 3.5 \u00b5g/mL benomyl, or 3.5 \u00b5g/mL benomyl + 50 ng/mL rapamycin. Note: tethering Stu2-FRB to Nuf2-FKBP12 does not affect cell viability, whereas tethering Mps1-FRB results in lethality, as previously reported (Aravamudhan et al., 2015).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** STU2-AID fpr1\u0394 TOR1-1 cells expressing\u00a0STU2-FRB alleles at an ectopic locus with and without NUF2-FKBP12 (STU2WT-FRB, M1513; stu2EEE-FRB, M1515; stu2\u2206855-888-FRB, M1587; STU2WT-FRB NUF2-FKBP12, M1505; stu2EEE-FRB NUF2-FKBP12, M1507; stu2\u2206855-888-FRB NUF2-FKBP12, M1554) were serially diluted (fivefold) and spotted on YPD plates containing DMSO, 50 ng/mL rapamycin, 500 \u03bcM auxin, or 500 \u03bcM auxin + 50 ng/mL rapamycin. Tethering Stu2\u2206855-888-FRB to Ndc80c restores viability to the same degree as does tethering Stu2EEE-FRB. Thus the essential function of the Stu2 C-terminal segment\u00a0(CTS) is kinetochore binding. These data also imply that the kinetochore function of Stu2 does not require its association with other factors that bind the CTS.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Exponentially growing\u00a0STU2-AID pMET-CDC20 cultures with an ectopically expressed STU2 allele (STU2WT, M2029; stu2EEE, M2030) and also containing SPC110-mCherry and CEN3 marked with GFP (CEN3::lacO LacI-GFP) were arrested in methionine- and auxin-containing medium for 2.5 hr and the axial position of unseparated sister centromeres along the length of the mitotic spindle (near spindle equator, proximal to one Spc110-mCherry foci, or outside of Spc110-mCherry foci) was determined. Schematic shows representative sister centromere positions illustrated as GFP/RFP dots. Graphs represent an average of three biological replicates, n\u00a0=\u00a050 cells each.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Cells with spindle checkpoint mutation (mad3\u0394, M36; mad2\u0394, M35) and STU2-AID cells expressing an ectopic copy of STU2 without and with a spindle checkpoint mutation\u00a0(STU2WT, M622; stu2EEE, M1444; stu2EEE mad3\u0394, M1541; stu2EEE mad2\u0394, M1933) were serially diluted (fivefold) and spotted on plates containing DMSO, 500 \u03bcM auxin, 5 \u03bcg/mL benomyl, or 500 \u03bcM auxin + 5 \u03bcg/mL benomyl.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/65389/elife-65389-fig4-figsupp7-v2.jpg)\n\nCells defective in error correction depend on the spindle checkpoint to prevent chromosome missegregation and have a delayed metaphase-anaphase transition (Biggins and Murray, 2001; Shonn et al., 2003; Stern and Murray, 2001). We indeed found a significant synthetic growth defect of stu2EEE with deletion of either of the spindle checkpoint components MAD2 (Figure 4\u2014figure supplement 6) or MAD3 in the presence of low concentrations of benomyl (Figure 4C), likely due to severe aneuploidy in stu2EEE mad2\u0394 and stu2EEE mad3\u0394 cells. To examine the timing of cell cycle progression, we released cells with a functional spindle checkpoint from a G1 arrest and monitored nuclear divisions. Consistent with error correction defects, cells expressing stu2EEE-FRB had greatly delayed anaphase onset, rescued by tethering Stu2EEE-FRB to the kinetochore with NUF2-FKBP12 and rapamycin (Figure 4D and Figure 4\u2014figure supplement 7). Finally, we employed a similar tethering strategy to examine chromosome segregation fidelity. Cells carrying a fluorescently marked centromere of chromosome III and a deletion of MAD3 (to ensure similar cell cycle progression) were released from a G1 arrest, and chromosome segregation was examined upon anaphase onset. Cells expressing stu2EEE-FRB had marked errors in segregating chromosome III (18 \u00b1 2%, Figure 4E), which were nearly always rescued by tethering Stu2EEE-FRB to Nuf2-FKBP12 (4 \u00b1 0.6%, Figure 4E). We conclude that correction of erroneous kinetochore-microtubule attachments in mitosis depends on kinetochore-bound Stu2. Moreover, rescue of the defect by ectopic tethering shows that CTS binding has a replaceable localization function and that the effector function for error correction lies elsewhere in the Stu2 molecule.\n\n## Discussion\n\nPrevious studies have shown that Stu2, a microtubule plus-end polymerase, associates with kinetochores during mitosis in yeast cells (He et al., 2001; Hsu and Toda, 2011; Kakui et al., 2013; Miller et al., 2016; Miller et al., 2019; Vasileva et al., 2017) and contributes to the response to tension of kinetochores in vitro (Miller et al., 2016). The findings reported here indicate that kinetochore-bound Stu2 indeed contributes to error correction in response to the absence of tension in vivo. We determined the structure of a C-terminal peptide from Stu2 bound with a shortened construct of Ndc80c that preserves the junction between the two heterodimers it comprises (Valverde et al., 2016). We then used information from that structure to generate mutant yeast strains harboring stu2 mutants defective in Ndc80c binding. Disrupting the Stu2:Ndc80c interaction led to diminished viability, aberrant chromosome biorientation, synthetic growth defects when combined with a spindle checkpoint mutant, and anaphase onset delays \u2013 all phenotypes consistent with defects in error correction. Chemically induced tethering of the mutant Stu2 to Ndc80c rescued all the defects we examined, including viability and cell cycle progression delays. Thus, the contributions of Stu2 to error correction in vivo depend on Ndc80c binding, not simply on its presence as a soluble factor or on its function as a microtubule polymerase. Our results do not rule out, however, that the required kinetochore localization of Stu2 couples its polymerase activity specifically with growth and shrinkage at the plus-ends of kinetochore microtubules during metaphase. Its polymerase activity might therefore also be essential. Stu2 association with Bik1 and Spc72 presumably couple this activity with other stages of spindle assembly or with other roles for microtubules in a yeast cell.\n\nA published study of Stu2 dynamics at kinetochores using fluorescence recovery after photobleaching showed relatively high turnover, and its authors suggested that Stu2 might not be a stably associated kinetochore factor (Aravamudhan et al., 2014). The bi-lobed clusters of Stu2 in metaphase cells (Goshima and Yanagida, 2000; He et al., 2001; Pearson et al., 2001) probably contain both kinetochore-bound and purely microtubule tip-associated Stu2 pools, however, making definitive interpretation difficult. Our current data show that regardless of its exchange rate, association of Stu2 with Ndc80c at the tetramer junction is necessary for its error correction function and that tethering Stu2 to the junction is sufficient to restore full activity of an association-defective mutant.\n\nConservation of the four-component organization of Ndc80c from yeast to mammals, despite no evidence for independent functions of either heterodimer, suggests a conserved role for the connection between them. The original plan when designing the Ndc80cdwarf construct was to provide a complex stiff enough to crystallize, while preserving the complete four-way junction. Several conserved features of the junction structure those crystals yielded, including exposed hydrophobic pockets and a skipped \u03b1-helical turn near the N-terminus of Spc24, indeed hinted that it might be a binding site for a conserved regulatory factor (Valverde et al., 2016). Stu2 is evidently at least one such factor. As now shown here, the Stu2 CTS adds a fifth helix to the four-helix bundle, without producing any conformational rearrangements, indicating that the role of the junction is simply to anchor Stu2 along the Ndc80c rod, rather than to receive an allosteric signal from it. That result does not rule out conformational switching by interactions between other parts of Stu2 thus anchored and other parts of the Ndc80c.\n\nBulky hydrophobic residues are present at key positions in the CTS of Stu2 orthologs from fungi to metazoans, and the entire CTS sequence has conserved features (Figure 4F). This conservation suggests that the orthologs also bind Ndc80c. Published work provides evidence for interaction of the S. pombe ortholog with the Ndc80 internal loop (Hsu and Toda, 2011; Kakui et al., 2013). The C-terminal position of the Ndc80c attachment segment of Stu2 and the length of the presumably flexible linker between it and the dimerizing coiled-coil would allow more distal parts of the protein to interact with almost any other site along the Ndc80c rod, including the Ndc80 internal loop and the globular head (Miller et al., 2019), and probably even allow the TOG domains to contact the curled plus-ends of an attached microtubule. These additional interactions are likely to be critical contributors to the mechanism by which Stu2 responds to tension or its absence and synergizes with the error-correcting detachment activity of Ipl1.\n\n## Materials and methods\n\n### Strain construction and microbial techniques\n\n#### Yeast strains and plasmids\n\nSaccharomyces cerevisiae strains used in this study, all derivatives of M3 (W303), are described in Supplementary file 1. Standard media and microbial techniques were used (Sherman et al., 1974). Yeast strains were constructed by standard genetic techniques. Construction of pCUP1-GFP-LacI and ipl1-321 are described in Biggins et al., 1999, CEN3::lacO:TRP1 is described in Shonn et al., 2003, mad3\u0394 in Pinsky et al., 2006, DSN1-6His-3Flag in Akiyoshi et al., 2010, stu2-3V5-IAA7 in Miller et al., 2016,\u00a0and\u00a0TOR1-1, fpr1\u2206, and MPS1-FRB:KanMX in Aravamudhan et al., 2015; Haruki et al., 2008. STU2-FRB:HisMX and NUF2-FKBP12:HisMX were constructed by PCR-based methods (Longtine et al., 1998). Strains containing the previously described pMET-CDC20 allele were provided by Frank Uhlmann. pGPD1-TIR1 integration plasmids (pM76 for integration at HIS3 or pM78 for integration at TRP1) were provided by Leon Chan. Construction of a 3HA-IAA7 tagging plasmid (pM69) was described previously (Miller et al., 2016). Construction of a LEU2 integrating plasmid containing wild-type pSTU2-STU2-3V5 (pM225) and pSTU2-stu2\u0394855\u2013888-3V5 (pM267) are described in Miller et al., 2016; Miller et al., 2019. STU2 variants were constructed by mutagenizing pM225 as described in Liu and Naismith, 2008; Tseng et al., 2008. Primers used in the construction of the above plasmids are listed in Supplementary file 2,\u00a0and further details of plasmid construction including plasmid maps\u00a0are available upon request.\n\n### Auxin inducible degradation\n\nThe AID system was used essentially as described (Nishimura et al., 2009). Briefly, cells expressed C-terminal fusions of the protein of interest to an auxin responsive protein (IAA7) at the endogenous locus. Cells also expressed TIR1, which is required for auxin-induced degradation. 500 \u03bcM IAA (indole-3-acetic acid dissolved in DMSO; Sigma) was added to media to induce degradation of the AID-tagged protein. Auxin was added for 30 min prior to harvesting cells or as is indicated in figure legends.\n\n### Spotting assay\n\nFor the spotting assay, the desired strains were grown for 2 days on plates containing yeast extract peptone plus 2% glucose (YPD) medium. Cells were then resuspended to OD600\u00a0~1.0 from which a serial 1:5 dilution series was made and spotted on YPD+DMSO, YPD+500 \u03bcM IAA (indole-3-acetic acid dissolved in DMSO) or plates containing 3.5\u20135.0 \u03bcg/mL benomyl or 0.05 \u03bcg/mL rapamycin as indicated. Plates were incubated at 23\u00b0C for 2\u20133 days unless otherwise noted.\n\n### Tetrad dissections\n\nDiploid cells were sporulated, treated with 0.5 mg/mL zymolyase in 1 M sorbitol for 12 min, and tetrads were dissected on YPD plates using standard yeast microbial techniques. Plates were incubated at 23\u00b0C for 2 days.\n\n### FRB/FKBP re-tethering\n\nFor re-tethering in culture, exponentially growing cultures were treated with 500 \u03bcM auxin and 0.05 \u03bcg/mL (55 nM rapamycin) 30 min prior to harvesting. For spotting assays on plates, 0.05 \u03bcg/mL rapamycin was used.\n\n### Biorientation assay\n\nIn metaphase, sister kinetochores become bioriented and are transiently stretched apart by opposing microtubule pulling forces (Goshima and Yanagida, 2000; He et al., 2001; Pearson et al., 2001); the transient separation can be visualized by fluorescent marking of the centromere of a single chromosome (Straight et al., 1996). Biorientation was examined in metaphase arrested cells as judged by the fluorescently marked centromeres appearing as two distinct foci. Cells were grown in media lacking methionine (for pMET-CDC20 containing strains). Exponentially growing cells were subsequently arrested in metaphase by the addition of 8 mM methionine each hour for 3 hr. An aliquot of cells was fixed with 3.7% formaldehyde in 100 mM phosphate buffer (pH 6.4) for 5 min. Cells were washed once with 100 mM phosphate (pH 6.4), resuspended in 100 mM phosphate, 1.2\u00a0M sorbitol buffer (pH 7.5) and permeabilized with 1% Triton X-100 stained with 1 \u03bcg/mL DAPI (4', 6-diamidino-2-phenylindole; Molecular Probes).\n\n### Fluorescence microscopy\n\nImages were collected with a DeltaVison Elite wide-field microscope system (GE Healthcare) equipped with a scientific CMOS camera, using 60\u00d7 objective (Olympus; NA\u00a0=\u00a01.42 PlanApoN) and immersion oil with a refractive index of n\u00a0=\u00a01.516. A Z-stack was acquired over a 2 \u00b5m width with 0.2 \u00b5m Z intervals. Images were deconvolved using the DeltaVision algorithm, maximally projected, and analyzed using the Fiji image processing package (ImageJ).\n\n### Cell cycle progression and chromosome segregation assays\n\nCells were grown in YPD medium. Exponentially growing MATa cells with or without a tandem array of lacO sequences integrated proximal to CEN3 (Shonn et al., 2003) and a LacI-GFP fusion (Biggins et al., 1999; Straight et al., 1996) were arrested in G1 with 1 \u03bcg/mL \u03b1-factor. When arrest was complete, cells were released into medium lacking \u03b1-factor pheromone and containing 500 \u03bcM IAA and 0.05 \u03bcg/mL rapamycin at 23\u00b0C. For determining cell cycle progression,~75 min after G1 release, 1 \u03bcg/mL \u03b1-factor was added to prevent a second cell division and samples were taken every 15 min after G1 release to determine cell cycle state (via nuclear morphology of DAPI stained nuclei). To assess chromosome segregation in cells containing GFP labeled CEN3, we sampled cells during anaphase and determined the percent of missegretated chromosomes.\n\n### Protein biochemistry\n\n#### Purification of native kinetochore particles\n\nNative kinetochore particles were purified from asynchronously growing S. cerevisiae cells as described below. Dsn1-6His-3Flag was immunoprecipitated with anti-Flag essentially as described in Akiyoshi et al., 2010. Cells were grown in yeast peptone dextrose (YPD)\u00a0rich medium. For strains containing STU2-AID, cells were treated with 500 \u03bcM auxin 30 min prior to harvesting. Protein lysates were prepared by mechanically disrupted in the presence of lysis buffer using glass beads and a beadbeater (Biospec Products). Lysed cells were resuspended in buffer H (BH) (25 mM HEPES pH 8.0), 2 mM MgCl2, 0.1 mM EDTA, 0.5 mM EGTA, 0.1% NP-40, 15% glycerol with 150 mM KCl containing protease inhibitors (at 20 \u03bcg/mL final concentration for each of leupeptin, pepstatin A, chymostatin, and 200 \u03bcM phenylmethylsulfonyl fluoride) and phosphatase inhibitors (0.1 mM Na-orthovanadate, 0.2 \u03bcM microcystin, 2 mM \u03b2-glycerophosphate, 1 mM Na pyrophosphate, 5 mM NaF) followed by centrifugation at 16,100 g for 30 min at 4\u00b0C to clarify lysate. Dynabeads conjugated with anti-Flag antibodies were incubated with extract for 3 hr with constant rotation, followed by three washes with BH containing protease inhibitors, phosphatase inhibitors, 2 mM dithiothreitol (DTT), and 150 mM KCl. Beads were further washed twice with BH containing 150 mM KCl and protease inhibitors. Associated proteins were eluted from the beads by boiling in 2\u00d7 SDS sample buffer.\n\n### Immunoblot analysis\n\nFor immunoblot analysis, cell lysates were prepared as described above or by pulverizing cells with glass beads in sodium dodecyl sulfate (SDS) buffer using a bead-beater (Biospec Products). Standard procedures for sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) and immunoblotting were followed as described in Burnette, 1981; Towbin et al., 1979. A nitrocellulose membrane (Bio-Rad) was used to transfer proteins from polyacrylamide gels. Commercial antibodies used for immunoblotting were as follows: \u03b1-Flag, M2 (Sigma-Aldrich) 1:3000; \u03b1-V5 (Invitrogen) 1:5000. Antibodies to Ndc80 were a kind gift from Arshad Desai and used at anti-Ndc80 (OD4) 1:10,000. The secondary antibodies used were a sheep anti-mouse antibody conjugated to horseradish peroxidase (HRP) (GE Biosciences) at a 1:10,000 dilution or a donkey anti-rabbit antibody conjugated to HRP (GE Biosciences) at a 1:10,000 dilution. Antibodies were detected using the SuperSignal West Dura Chemiluminescent Substrate (Thermo Scientific).\n\n### Recombinant protein expression and purification\n\nThe constructs used to express the Ndc80cdwarf are identical to those used previously (Valverde et al., 2016). Briefly, shortened versions of Ndc80/Nuf2 and Spc24/Spc25 were cloned into the orthogonal expression vectors pETduet1 and pRSFduet, respectively. Proteins were co-expressed in Rosetta 2(DE3) pLysS E. coli (Novagen). Cells were grown at 37\u00b0C in 2XYT media to an OD600 of 0.8, induced with 200 \u00b5M IPTG, and incubated overnight with shaking at 225 RPM at 18\u00b0C. Cell pellets from 6\u00a0L of culture were resuspended in 150 mL of buffer containing 50 mM Tris pH 8.0, 250 mM NaCl, 10 mM imidazole pH 8.0, 5 mM \u03b2-mercaptoethanol, 1 mM PMSF, 1 \u00b5g/mL pepstatin, 1 \u00b5g/mL aprotinin, 1 \u00b5g/mL leupeptin, 83 \u00b5g/mL lysozyme, and\u00a030 \u00b5g/mL DNase I. Cells were lysed by sonication, and the lysate was clarified by centrifugation and applied to Ni-NTA agarose equilibrated with buffer containing 20 mM Tris pH 8.0, 100 mM NaCl, 10 mM imidazole pH 8.0, and 5 mM \u03b2-mercaptoethanol (equilibration buffer). Bound material was washed with equilibration buffer containing 20 mM imidazole and 500 mM NaCl and then with equilibration buffer. Proteins were eluted with equilibration buffer containing 400 mM imidazole pH 8.0 and 50 mM NaCl. Eluates were treated overnight with TEV protease to remove the 6-His tag from the N-terminus of Ndc80 (except protein immobilized for pulldown experiments) and subjected to anion exchange chromatography using a Hi-trap Q HP (Cytiva), followed by size-exclusion chromatography using a Hi-load Superdex 200 16/60 column (Cytiva) equilibrated with 10 mM HEPES pH 7.0, 100 mM NaCl, and 2 mM tris(2-carboxyethyl)phosphine (TCEP).\n\nFull length Stu2 was expressed in SF9 cells using the Bac-To-Bac system. Following infection, protein expression was allowed to proceed for 72 hr at 27\u00b0C. Cells were resuspended in 50 mM Tris pH 7.2, 500 mM NaCl, 10 mM imidazole pH 7.2, 5 mM \u03b2-mercaptoethanol, 0.1% TWEEN-20, 0.1% IPGAL, 1 mM PMSF, 1 \u00b5g/mL pepstatin, 1 \u00b5g/mL aprotinin, 1 \u00b5g/mL leupeptin, and 30 \u00b5g/mL DNase I. Cells were lysed using a Dounce homogenizer. The lysate was clarified by centrifugation and applied to Ni-NTA agarose equilibrated with 20 mM HEPES pH 7.2, 100 mM NaCl, 10 mM imidazole pH 7.2, and 5 mM \u03b2-mercaptoethanol. Resin was washed with buffer containing 500 mM NaCl and 20 mM imidazole, washed again with equilibration buffer and eluted with buffer containing 400 mM imidazole and 50 mM NaCl. Eluates were then subjected to cation exchange chromatography using a 5 mL Hi-Trap SP HP column (Cytiva). Fractions containing full-length Stu2 were applied to a Superose 6 10/300 column (Cytiva) equilibrated with 10 mM tris pH 7.5, 150 mM NaCl, and 2 mM TCEP.\n\nThe C-terminal fragments of Stu2 used in the pulldown experiments were cloned into a pLIC vectors with a TEV-cleavable N-terminal 6-His tag and transformed into Bl-21 AI cells (Invitrogen). Cells were grown to an OD600 of 0.6 in TB media with 0.1% glucose and were induced by addition of IPTG and arabinose to 200 \u00b5M and 0.2%, respectively, incubated at 37\u00b0C for 4 hr to consume the glucose and then at 18\u00b0 overnight. Cells were harvested by centrifugation, resuspended in 50 mM Tris pH 7.2, 250 mM NaCl, 10 mM imidazole pH 8.0, 5 mM \u03b2-mercaptoethanol, 1 mM PMSF, 1 \u00b5g/mL pepstatin, 1 \u00b5g/mL aprotinin, 1 \u00b5g/mL leupeptin, 83 \u00b5g/mL lysozyme, 30 \u00b5g/mL DNase, and lysed by sonication. The lysates were clarified by centrifugation and applied to Ni-NTA agarose equilibrated with 20 mM HEPES pH 7.2, 100 mM NaCl, 10 mM imidazole pH 7.2, and 5 mM \u03b2-mercaptoethanol. Eluates were treated with TEV protease overnight\u00a0and then subjected to cation exchange chromatography on a 5 mL Hi-Trap SP HP column (Cytiva). Fractions containing Stu2 were then applied to a Superdex200 10/300 column (Cytiva) equilibrated with 10 mM HEPES pH 7.2, 150 mM NaCl, and 2 mM TCEP.\n\n### Peptide\n\nA 33-mer C-terminal Stu2 peptide, with a selenomethionine in place of the natural methionine at position 876 (EESYKRAAAVTSTLKARIEK(Mse)KAKSRREGTTRT), was synthesized at the Tufts University Core facility. The lyophilized peptide was resuspended to a final concentration of 10 mg/mL in a buffer containing 10 mM TRIS pH 7.0, 100 mM NaCl, and 2 mM TCEP.\n\n### Crystallization, diffraction data collection, and structure determination\n\nNdc80cdwarf was concentrated to 15 mg/mL in an Amicon centrifugal concentrator in buffer containing 10 mM HEPES pH 7.0, 100 mM NaCl, and 2 mM TCEP. The Se-Met Stu2 peptide was diluted to 2 mg/mL in the same buffer. The protein was crystallized using hanging-drop vapor diffusion with a well solution containing 1.3\u00a0M ammonium sulfate and 0.1 mM HEPES pH 7.3. The hanging drops contained 1 \u00b5L each of the Ndc80c, peptide, and well solutions, resulting in an\u00a0approximately\u00a0threefold molar excess of peptide over Ndc80cdwarf. Crystals were cryoprotected by a 3\u20135 min soak in well solution supplemented with 25% glucose and flash-frozen by plunging into liquid N2. The complex crystallized in space group C2221 (a\u00a0=\u00a0190.89 \u00c5, b\u00a0=\u00a0183.3 \u00c5, c\u00a0=\u00a0124.32 \u00c5). Data to a minimum Bragg spacing of 2.7 \u00c5 were recorded on the NE-CAT beamline 24-ID-C at the Advanced Photon Source, indexed and integrated using HKL2000, and scaled and merged using Scalepack as implemented in HKL2000 (Otwinowski and Minor, 1997; Supplementary file 3). The structure was determined by molecular replacement in Phenix (Adams et al., 2010), using the Ndc80cdwarf (PDB 5TCS) as a search model, yielding clear density for the Stu2 peptide. Model building was carried out in Coot (Emsley et al., 2010) and refinement, in Phenix (Adams et al., 2010 Supplementary file 3). We used the anomalous signal from a Se-methionine residue to calculate an anomalous difference map, confirming that the Se atom was at a position consistent with the chosen register. Coordinates and diffraction data have been deposited in the protein data bank, PDB ID: 7KDF.\n\n### Pulldown experiments\n\nFor the pulldowns in Figures 1D and 3A, Ndc80cdwarf with a 6-His affinity tag on the N-terminus of Ndc80 was immobilized to saturation on Co-NTA agarose by incubation with gentle agitation at 4\u00b0C. Beads were pelleted by centrifugation, washed three times in 20 mM HEPES pH 7.5, 200 mM NaCl, 2 mM imidazole pH 7.2, 2 mM \u03b2-mercaptoethanol, and 0.1% TWEEN-20 (wash buffer), and incubated with the relevant Stu2 construct for 30 min. Beads were again pelleted, washed three times with wash buffer, pelleted a final time, and the wash buffer aspirated from the tube. To elute bound proteins, 50 \u00b5L of wash buffer supplemented with 500 mM imidazole pH 7.5 was added to\u00a0~25 \u00b5L of beads. After an additional spin, the eluted proteins were visualized by SDS-PAGE. The pulldown in Figure 1B was carried out identically, with the exceptions that it used Ni-NTA agarose beads and that the wash buffer contained 150 mM instead of 200 mM NaCl.\n\n### Affinity of Stu2 CTS and Ndc80cdwarf\n\nA Stu2 CTS peptide (855-888) with a C-terminal cysteine, synthesized by the Tufts University Core Facility, was labeled with Oregon Green maleimide (Thermo Fisher) according to\u00a0the manufacturer's instructions. The labeled peptide was separated from unreacted dye, first by cation exchange chromatography with Source 15S resin (Cytiva), followed by gel filtration chromatography on a Superdex 75 column (Cytiva). Fluorescence polarization was measured with a SpectraMax plate reader (Molecular Devices) at 25\u00b0C with excitation and emission wavelengths set at\u00a0484 and 525 nm, respectively. Binding of 50 nM Oregon Green CTS to 10 \u00b5M Ndc80cdwarf was carried out in buffer containing 10 mM HEPES pH 7.0 and 100 mM NaCl, adding increasing concentrations of unlabeled Stu2 CTS peptide. Measurements were carried out in duplicate. Curve fitting used a single site saturation binding model implemented in GraphPad Prism 9.\n",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f0d984c3-c1dd-4ef9-9f71-f211e5b8d859",
+      "submission_id": "ea98bba1-58ba-481a-afba-f610539d2c19",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer G DeLuca, Colorado State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65389.sa1](https://doi.org/10.7554/eLife.65389.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this manuscript, Zahm and co-workers shed light on a binding mechanism of great relevance for chromosome bi-orientation and genomic stability. Using X-ray crystallography, the authors describe the structure of a binding interface between a conserved microtubule-binding protein, Stu2/chTOG/xMAP215, and the NDC80 complex, the primary kinetochore-microtubule attachment factor in eukaryotic cells. The authors unveil how Stu2 is recruited to kinetochores via the NDC80 complex, and they harness this structure to generate a separation of function mutant that demonstrates the absolute relevance of kinetochore-associated Stu2 for chromosome bi-orientation. The study provides a solid basis for further analyses of how tension sensing at the kinetochore promotes bi-orientation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural Basis of Stu2 Recruitment to Yeast Kinetochores\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrea Musacchio (Reviewer #1); Stefan Westermann (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions\n\nThe reviewers and editors discussed the following experimental revision that the authors should address before publication.\n\nFor the experiment in Figure 4A, a spindle pole marker should be included. The lower percentage of split signals could either be generated by monopolar/syntelic attachments or the lack of pulling forces on bioriented chromosomes. A spindle pole marker will be useful to determine if the signal lies between poles or at one of the two poles to distinguish between these models, and also to ensure that metaphase spindle length is not affected by the Stu2 mutant.\n\nThe two additional essential revisions listed below should be addressable with added discussion in the text:\n\n1) The authors should discuss the ramifications of addition of the peptide into the cryo-protectant solution. Reduction of peptide binding after the addition of the cryoprotectant could also explain \"the weak peptide features on the map\" if the peptide diffused away upon bringing the crystal into cryo-protectant solution.\n\n2) The authors should add some discussion regarding the finding that the C-terminal extension of the CTS domain has density in the structure even though it does not have secondary structure. Does this region contribute to a crystal contact, and if so, are the authors confident of this structure in the protein?\n",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "14adb512-62d8-4c13-9a67-655081803c2f",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C1",
+      "claim": "Chromosome segregation during cell division requires engagement of kinetochores of sister chromatids with microtubules emanating from opposite poles.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome segregation during cell division requires engagement of kinetochores of sister chromatids with microtubules emanating from opposite poles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biological knowledge about chromosome segregation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "20b9fb64-17d3-4e43-aed2-ca393a132e56",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C2",
+      "claim": "Bioriented sister kinetochores experience tension-dependent stabilization of microtubule attachments as the corresponding microtubules shorten.",
+      "claim_type": "EXPLICIT",
+      "source": "As the corresponding microtubules shorten, these 'bioriented' sister kinetochores experience tension-dependent stabilization of microtubule attachments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biological knowledge about kinetochore behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "980f4ca5-c4e7-4f1a-bee8-ef44f5902ee7",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C3",
+      "claim": "Stu2 is the yeast XMAP215 family member and microtubule polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast XMAP215 family member and microtubule polymerase, Stu2, associates with kinetochores and contributes to tension-dependent stabilization in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about Stu2 protein classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "2436983d-e748-455f-80f7-44d09db09333",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C4",
+      "claim": "Stu2 associates with kinetochores and contributes to tension-dependent stabilization in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast XMAP215 family member and microtubule polymerase, Stu2, associates with kinetochores and contributes to tension-dependent stabilization in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior experimental findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "caa9b273-a2f9-4ebb-91d4-f0ffa6e7553a",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C5",
+      "claim": "A C-terminal segment of Stu2 binds the four-way junction of the Ndc80 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that a C-terminal segment of Stu2 binds the four-way junction of the Ndc80 complex (Ndc80c) and that residues conserved both in yeast Stu2 orthologs and in their metazoan counterparts make specific contacts with Ndc80 and Spc24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "4e7f8a57-dc64-4edd-a04d-81df90e1c3a9",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C6",
+      "claim": "Residues conserved both in yeast Stu2 orthologs and in their metazoan counterparts make specific contacts with Ndc80 and Spc24.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that a C-terminal segment of Stu2 binds the four-way junction of the Ndc80 complex (Ndc80c) and that residues conserved both in yeast Stu2 orthologs and in their metazoan counterparts make specific contacts with Ndc80 and Spc24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by structural data and sequence conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "e35601b5-bde3-4644-b3ff-206da31b0c03",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C7",
+      "claim": "Mutations that perturb the Stu2-Ndc80c interaction prevent association of Stu2 with kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that perturb this interaction prevent association of Stu2 with kinetochores, impair cell viability, produce biorientation defects, and delay cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "79ca0aa4-77ce-461f-bdc5-9d6b70b64315",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C8",
+      "claim": "Mutations that perturb the Stu2-Ndc80c interaction impair cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that perturb this interaction prevent association of Stu2 with kinetochores, impair cell viability, produce biorientation defects, and delay cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f923afd5-2c8c-4363-8187-f05a212fcbd6",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C9",
+      "claim": "Mutations that perturb the Stu2-Ndc80c interaction produce biorientation defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that perturb this interaction prevent association of Stu2 with kinetochores, impair cell viability, produce biorientation defects, and delay cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "c5776a5f-c765-47cc-aa6e-71c5e37f3579",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C10",
+      "claim": "Mutations that perturb the Stu2-Ndc80c interaction delay cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that perturb this interaction prevent association of Stu2 with kinetochores, impair cell viability, produce biorientation defects, and delay cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "781ef6b2-44e3-48a8-a11b-9db82cefb45d",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C11",
+      "claim": "Ectopic tethering of mutant Stu2 species to the Ndc80c junction restores wild-type function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic tethering of the mutant Stu2 species to the Ndc80c junction restores wild-type function in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 3G-H and 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "8220ca0d-aaf0-4d7d-95eb-e1819580915f",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C12",
+      "claim": "The role of Stu2 in tension-sensing depends on its association with kinetochores by binding with Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that the role of Stu2 in tension-sensing depends on its association with kinetochores by binding with Ndc80c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "e75a5096-b562-4736-9c19-e6f750b7d2b4",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C13",
+      "claim": "Bioriented attachment of sister chromatids to opposite poles of the mitotic spindle ensures accurate segregation of sister chromatids when a cell enters anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "'Bioriented attachment' of sister chromatids to opposite poles of the mitotic spindle in turn ensures that when a cell enters anaphase, each pair of sister chromatids segregates accurately (reviewed in Cheeseman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "c17c0066-1514-4aaa-8860-960b881b00cf",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C14",
+      "claim": "When correctly bioriented, a pair of cohesin-linked sister chromatids will be under tension from forces exerted by the shortening of opposing microtubules transmitted through the kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "When correctly bioriented, a pair of cohesin-linked sister chromatids will be under tension, from forces exerted by the shortening of opposing microtubules and transmitted through the kinetochores that connect spindle microtubules to chromosome centromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about kinetochore mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "66de4997-db39-4e29-ba4e-5bc191c82c97",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C15",
+      "claim": "Tension-sensing and correction of erroneous attachments are critical mediators of genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "'Tension-sensing' and correction of erroneous attachments are thus critical mediators of genome integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the importance of tension-sensing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "ecf34266-dfaf-4c06-bdf2-9eb0d208d251",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C16",
+      "claim": "The Aurora B kinase (Ipl1 in budding yeast) is the immediate agent of error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "The Aurora B kinase (Ipl1 in budding yeast) is the immediate agent of error correction (Biggins and Murray, 2001; Biggins et al., 1999; Cheeseman et al., 2002; DeLuca et al., 2006; Hauf et al., 2003; Tanaka et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "ec8e7467-75c0-4ac4-bb88-f6b68568f158",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C17",
+      "claim": "In the absence of tension, Ipl1 phosphorylates Ndc80.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of tension, Ipl1 phosphorylates Ndc80 (DeLuca et al., 2006; Hauf et al., 2003), an essential part of the microtubule-contacting apparatus of a yeast kinetochore, and several other kinetochore substrates, including critical targets within the Dam1 complex (Biggins et al., 1999; Cheeseman et al., 2002; Kang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "63266443-ec0e-40e0-95bd-812cdf43f662",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C18",
+      "claim": "Phosphorylation by Ipl1 induces dissociation of a kinetochore from its associated microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation induces dissociation of a kinetochore from its associated microtubule, interrupting the incorrect attachment and allowing the attachment search to 'try again'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the mechanism of error correction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "12a45807-4482-48a1-aca8-a75f526a4e78",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C19",
+      "claim": "Ndc80 is part of a rod-like assembly, the Ndc80 complex, a heterotetramer composed of two coiled-coil heterodimers, joined end-to-end in parallel orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Ndc80 is part of a rod-like assembly, the Ndc80 complex, a heterotetramer composed of two coiled-coil heterodimers, joined end-to-end in parallel orientations (Alushin et al., 2010; Ciferri et al., 2008; Wei et al., 2005; Wilson-Kubalek et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established structural knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "d2b48664-8fd4-42d5-b7d7-c674cf629b57",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C20",
+      "claim": "The globular domain at the N-terminal end of Ndc80:Nuf2 contacts microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The globular domain at the N-terminal end of Ndc80:Nuf2 contacts microtubules; the globular domain at the C-terminal end of Spc24:Spc25 interacts, through two distinct adaptors, with the chromatin-proximal inner kinetochore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established structural and functional knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "69827f69-0798-4a14-9eb7-4a45fc20d942",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C21",
+      "claim": "The globular domain at the C-terminal end of Spc24:Spc25 interacts, through two distinct adaptors, with the chromatin-proximal inner kinetochore.",
+      "claim_type": "EXPLICIT",
+      "source": "The globular domain at the N-terminal end of Ndc80:Nuf2 contacts microtubules; the globular domain at the C-terminal end of Spc24:Spc25 interacts, through two distinct adaptors, with the chromatin-proximal inner kinetochore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established structural and functional knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "d685a0cd-19bb-47a1-bcec-dee4558ac621",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C22",
+      "claim": "The Ipl1 substrate residues of Ndc80 are in an N-terminal extension that contributes to the microtubule interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ipl1 substrate residues of Ndc80 are in an N-terminal extension that contributes, along with a globular, calponin homology domain, to the microtubule interface (DeLuca et al., 2006; Umbreit et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established structural knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f433567c-bce5-4b0b-b1b2-57f77e012173",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C23",
+      "claim": "Stu2 is the yeast ortholog of XMAP215/ch-TOG in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "A further component of the response to erroneous attachment is the plus-end microtubule polymerase, Stu2 (the yeast ortholog of XMAP215/ch-TOG in metazoans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about protein orthology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "1f13cea0-777f-47f6-99c9-630712bd2c26",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C24",
+      "claim": "Stu2's polymerization activity depends on plus-end binding through a set of N-terminal TOG domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Its polymerization activity depends on plus-end binding, through a set of N-terminal TOG domains (Figure 1A; Al-Bassam et al., 2006; Ayaz et al., 2012; Ayaz et al., 2014; Fox et al., 2014), but its kinetochore association is independent of microtubules (Hsu and Toda, 2011; Kakui et al., 2013; Miller et al., 2016; Miller et al., 2019; Vasileva et al., 2017; Herman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "44379230-65f3-48dd-8bb1-427848835564",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C25",
+      "claim": "Stu2's kinetochore association is independent of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Its polymerization activity depends on plus-end binding, through a set of N-terminal TOG domains (Figure 1A; Al-Bassam et al., 2006; Ayaz et al., 2012; Ayaz et al., 2014; Fox et al., 2014), but its kinetochore association is independent of microtubules (Hsu and Toda, 2011; Kakui et al., 2013; Miller et al., 2016; Miller et al., 2019; Vasileva et al., 2017; Herman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f7a03246-3142-4c01-8898-0b5c567dda2c",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C26",
+      "claim": "In single-molecule experiments in vitro, kinetochores under low tension detach more frequently from microtubules than under higher tension, but only when Stu2 is present.",
+      "claim_type": "EXPLICIT",
+      "source": "In single-molecule experiments in vitro, kinetochores under low tension detach more frequently from microtubules than under higher tension (Akiyoshi et al., 2010), but only when Stu2 is present (Miller et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior experimental findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "17f2c55f-5ab4-4db9-9962-303176743092",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C27",
+      "claim": "Cells lacking Stu2 have error-correction defects, including detached kinetochores, loss of biorientation, and spindle-assembly checkpoint-dependent cell cycle delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells lacking Stu2 have error-correction defects, including detached kinetochores, loss of biorientation, and spindle-assembly checkpoint-dependent cell cycle delay, although previous work has been unable to separate these phenotypes from pleiotropic effects arising from loss of Stu2 microtubule polymerase activity (Al-Bassam et al., 2006; Humphrey et al., 2018; Kosco et al., 2001; Miller et al., 2016; Pearson et al., 2003; Severin et al., 2001; Wang and Huffaker, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior experimental findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "24d39397-54db-4754-b08a-ae5ab6b72f29",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C28",
+      "claim": "Previous work has been unable to separate error-correction phenotypes from pleiotropic effects arising from loss of Stu2 microtubule polymerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells lacking Stu2 have error-correction defects, including detached kinetochores, loss of biorientation, and spindle-assembly checkpoint-dependent cell cycle delay, although previous work has been unable to separate these phenotypes from pleiotropic effects arising from loss of Stu2 microtubule polymerase activity (Al-Bassam et al., 2006; Humphrey et al., 2018; Kosco et al., 2001; Miller et al., 2016; Pearson et al., 2003; Severin et al., 2001; Wang and Huffaker, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of prior work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f5407d11-cab7-45fa-987d-3a97af517228",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C29",
+      "claim": "Stu2 associates with Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "Stu2 associates with Ndc80c (Miller et al., 2016; Miller et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior experimental findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "dcbdbc38-c595-4cf4-9084-24385878aae7",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C30",
+      "claim": "Recombinant full-length Stu2 binds directly to immobilized recombinant full-length Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial pulldown experiments showed that recombinant full-length Stu2 bound directly to immobilized recombinant full-length Ndc80c (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "be2d6e04-bd70-47c2-9cc9-3f53ce0584c5",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C31",
+      "claim": "Stu2 binds Ndc80cdwarf as efficiently as it does full-length Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "In pulldown experiments, we found that Stu2 binds Ndc80cdwarf as efficiently as it does full-length Ndc80c (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "0247de0b-0079-4895-a845-7c154efccce6",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C32",
+      "claim": "A segment at the C-terminus of Stu2 (the CTS) is required for binding Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a segment at the C-terminus of Stu2, most of which is conserved among budding and fission yeast and referred to here as the 'CTS' (Figure 1A), is required for binding Ndc80c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "2f0c11af-e4ae-4373-8403-1f185808f2c0",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C33",
+      "claim": "Deletion of residues 857\u2013867 of Stu2 results in loss of in vitro binding to Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of either an N-terminal portion of the CTS (residues 857\u2013867), a C-terminal portion of the CTS (residues 868\u2013888), or the stretch following the CTS that lacks conservation (residues 880\u2013888) resulted in loss of in vitro binding (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "b6d801e2-b19f-411a-92ca-3edb77891b2f",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C34",
+      "claim": "Deletion of residues 868\u2013888 of Stu2 results in loss of in vitro binding to Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of either an N-terminal portion of the CTS (residues 857\u2013867), a C-terminal portion of the CTS (residues 868\u2013888), or the stretch following the CTS that lacks conservation (residues 880\u2013888) resulted in loss of in vitro binding (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "9a1ed821-691f-425d-ad06-0413a1f1cbe0",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C35",
+      "claim": "Deletion of residues 880\u2013888 of Stu2 results in loss of in vitro binding to Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of either an N-terminal portion of the CTS (residues 857\u2013867), a C-terminal portion of the CTS (residues 868\u2013888), or the stretch following the CTS that lacks conservation (residues 880\u2013888) resulted in loss of in vitro binding (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "7b92a85f-c532-4ef6-b86a-75c91b3801a4",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C36",
+      "claim": "The CTS binds dwarf Ndc80c with a dissociation constant of approximately 48 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence polarization binding experiments showed that the CTS binds dwarf Ndc80c with a dissociation constant of approximately 48 \u00b5M (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "12ad69a8-eae1-4c06-8ea5-808de7ac4bef",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C37",
+      "claim": "The C-terminal 33 residues of Stu2 are sufficient for Ndc80c binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that the C-terminal 33 residues of Stu2 are sufficient for Ndc80c binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "9a503cc9-d02d-486c-9fe9-f29ea009197c",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C38",
+      "claim": "The structure of the Ndc80cdwarf-Stu2 peptide complex was determined by molecular replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "We co-crystallized the Ndc80cdwarf with a 33-mer Stu2 peptide (Stu2 residues 855\u2013888) and determined the structure of the complex by molecular replacement using the published Ndc80cdwarf structure as a search model (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding describing the structural determination method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "b14a2f29-9f06-418c-ab35-3fe639af0fdc",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C39",
+      "claim": "Clearly defined density in the electron density map corresponded to Stu2 residues 862\u2013888.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly defined density in the resulting map corresponded to residues 862\u2013888; there was no density corresponding to the N-terminal seven residues (Figure 2B), and the C-terminal residues, 881\u2013888, were part of a crystal-packing contact with the Nuf2 globular head of an Ndc80c symmetry mate (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "9ef0a441-dc45-415f-8aed-8aec675e618d",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C40",
+      "claim": "There was no density corresponding to the N-terminal seven residues of the Stu2 peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly defined density in the resulting map corresponded to residues 862\u2013888; there was no density corresponding to the N-terminal seven residues (Figure 2B), and the C-terminal residues, 881\u2013888, were part of a crystal-packing contact with the Nuf2 globular head of an Ndc80c symmetry mate (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "3e17000c-ab70-43c7-ac8a-3f44f08f419e",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C41",
+      "claim": "The C-terminal residues 881\u2013888 of the Stu2 peptide were part of a crystal-packing contact with the Nuf2 globular head of an Ndc80c symmetry mate.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly defined density in the resulting map corresponded to residues 862\u2013888; there was no density corresponding to the N-terminal seven residues (Figure 2B), and the C-terminal residues, 881\u2013888, were part of a crystal-packing contact with the Nuf2 globular head of an Ndc80c symmetry mate (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "633ef8d6-d281-4339-ae25-9c5e5d8395c1",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C42",
+      "claim": "A strong anomalous difference peak confirmed the correct sequence register of the Stu2 peptide model.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve a potential ambiguity in the sequence register of the model, we determined the structure of a complex with a peptide containing selenomethionine in place of the methionine at position 876. A strong anomalous difference peak confirmed that we had chosen the register correctly (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "b16294e1-7424-4306-8ad7-3606c6ff3ce6",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C43",
+      "claim": "The Stu2 peptide binds at the junction of the two heterodimeric subcomplexes of Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide binds at the junction of the two heterodimeric subcomplexes, contributing a fifth \u03b1 helix, and packs at about 30\u00b0 to the main axis of the four overlapping helices from Ndc80, Nuf2, Spc24, and Spc25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "10937c80-afb2-4630-83d4-14fea2aa6040",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C44",
+      "claim": "The Stu2 peptide contributes a fifth \u03b1 helix to the Ndc80c junction.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide binds at the junction of the two heterodimeric subcomplexes, contributing a fifth \u03b1 helix, and packs at about 30\u00b0 to the main axis of the four overlapping helices from Ndc80, Nuf2, Spc24, and Spc25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "5de1e9ad-2de9-4a61-a15b-14037c547833",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C45",
+      "claim": "The Stu2 peptide packs at about 30\u00b0 to the main axis of the four overlapping helices from Ndc80, Nuf2, Spc24, and Spc25.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide binds at the junction of the two heterodimeric subcomplexes, contributing a fifth \u03b1 helix, and packs at about 30\u00b0 to the main axis of the four overlapping helices from Ndc80, Nuf2, Spc24, and Spc25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "d4aa094e-9c03-4d6b-b3b0-62179036ffe6",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C46",
+      "claim": "Four conserved hydrophobic-residue side chains in the Stu2 CTS (V865, L869, I873, and M876) fit into hydrophobic pockets lined by conserved residues of Ndc80 and Spc24.",
+      "claim_type": "EXPLICIT",
+      "source": "Four conserved hydrophobic-residue side chains in the Stu2 CTS (V865, L869, I873, and M876) fit into hydrophobic pockets lined by conserved residues of Ndc80 and Spc24 (Figure 2A\u2013F), and in a conserved polar contact, the side chain of Stu2 R872 inserts between D651 and S654 on Ndc80 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "642ddbf0-6f7d-4088-b8c2-3ff16154d651",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C47",
+      "claim": "The side chain of Stu2 R872 inserts between D651 and S654 on Ndc80 in a conserved polar contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Four conserved hydrophobic-residue side chains in the Stu2 CTS (V865, L869, I873, and M876) fit into hydrophobic pockets lined by conserved residues of Ndc80 and Spc24 (Figure 2A\u2013F), and in a conserved polar contact, the side chain of Stu2 R872 inserts between D651 and S654 on Ndc80 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the structural analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "75da5dc0-b2a0-4a35-8c07-d99cc805cf52",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C48",
+      "claim": "Immobilized Ndc80cdwarf did not bind any mutant version of the Stu2 C-terminus with L869A, I873A, or M876A mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "For the binding experiments we mutated L869, I873, and M876 to alanine. The immobilized Ndc80cdwarf did not bind any mutant version of the Stu2 C-terminus (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "bfedfe6d-bf91-48bf-9aea-af5c31d574b6",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C49",
+      "claim": "The details of interaction between Stu2 and Ndc80c in the crystal lattice occur in solution as well.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments show that the details of interaction between Stu2 and Ndc80c in the crystal lattice occur in solution as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the pulldown experiments shown in Figure 3A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "9f044ad8-724f-40a2-aab1-f8ba87ef8100",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C50",
+      "claim": "Kinetochore co-immunoprecipitations from STU2-AID cells harboring stu2L869E,I873E,M876E (stu2EEE) mutations showed loss of Stu2-kinetochore binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochore co-immunoprecipitations from STU2-AID cells harboring either hydrophobic-to-charged or alanine mutations of these residues, stu2L869E,I873E,M876E (stu2EEE) or stu2L869A,I873A,M876A (stu2AAA), showed loss of Stu2-kinetochore binding (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "82d74168-f760-4194-8cbe-0fe10c4fee2a",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C51",
+      "claim": "Kinetochore co-immunoprecipitations from STU2-AID cells harboring stu2L869A,I873A,M876A (stu2AAA) mutations showed loss of Stu2-kinetochore binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochore co-immunoprecipitations from STU2-AID cells harboring either hydrophobic-to-charged or alanine mutations of these residues, stu2L869E,I873E,M876E (stu2EEE) or stu2L869A,I873A,M876A (stu2AAA), showed loss of Stu2-kinetochore binding (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "6db497a2-0d71-41c6-a797-f8e739beb2f4",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C52",
+      "claim": "The stu2EEE mutant showed a dramatic loss in kinetochore proximal signal compared to STU2WT.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined STU2-AID cells arrested in metaphase (using a CDC20-AID allele) that carried either STU2WT- or stu2EEE-GFP fusion variants. Compared to STU2WT, the stu2EEE mutant showed a dramatic loss in kinetochore proximal signal (Figure 3C,D and Figure 3\u2014figure supplement 2), while displaying similar metaphase spindle length (measured by distance between Spc110-mCherry foci; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "c77a0235-56bf-41a3-ae10-38f6f552a158",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C53",
+      "claim": "The stu2EEE mutant displayed similar metaphase spindle length to STU2WT.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined STU2-AID cells arrested in metaphase (using a CDC20-AID allele) that carried either STU2WT- or stu2EEE-GFP fusion variants. Compared to STU2WT, the stu2EEE mutant showed a dramatic loss in kinetochore proximal signal (Figure 3C,D and Figure 3\u2014figure supplement 2), while displaying similar metaphase spindle length (measured by distance between Spc110-mCherry foci; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f3355a0b-487d-4948-b82f-51fb1d434913",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C54",
+      "claim": "Hydrophobic-to-charged or alanine mutations in the CTS of Stu2 resulted in a severe cell viability defect in the presence of auxin.",
+      "claim_type": "EXPLICIT",
+      "source": "These same hydrophobic-to-charged or alanine mutations also resulted in a severe cell viability defect in the presence of auxin, exacerbated by addition of low concentrations of the microtubule destabilizing drug benomyl (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "e55c98d9-67a5-4299-878b-48d5630076bc",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C55",
+      "claim": "The cell viability defect of stu2 CTS mutations is exacerbated by addition of low concentrations of benomyl.",
+      "claim_type": "EXPLICIT",
+      "source": "These same hydrophobic-to-charged or alanine mutations also resulted in a severe cell viability defect in the presence of auxin, exacerbated by addition of low concentrations of the microtubule destabilizing drug benomyl (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "6577db65-b952-4b67-a557-bb70ba96615b",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C56",
+      "claim": "The individual stu2 mutations all had reduced cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "The individual stu2 mutations also all had reduced cell viability (Figure 3\u2014figure supplements 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3 supplements 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "576460ed-5700-4864-a954-3da391b04855",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C57",
+      "claim": "The hydrophobic residues in the CTS of Stu2, which contact Ndc80c in the crystal structure, are required for Stu2-kinetochore binding and cell viability in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the hydrophobic residues in the CTS of Stu2, which contact Ndc80c in the crystal structure, are required for Stu2-kinetochore binding and cell viability in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "ebfb36d4-7f3b-4ec4-8bc7-fc26175f23e4",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C58",
+      "claim": "Cells expressing stu2EEE-FRB were deficient for Stu2-kinetochore binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing stu2EEE-FRB were deficient for Stu2-kinetochore binding as expected. Expressing NUF2-FKBP12 and adding rapamycin in culture rescued both the Stu2 binding defect (Figure 3G) and the cell viability defect of stu2EEE (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "a24006ca-ce16-4f3b-9909-af2dea869d9e",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C59",
+      "claim": "Expressing NUF2-FKBP12 and adding rapamycin in culture rescued the Stu2 binding defect of stu2EEE.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing stu2EEE-FRB were deficient for Stu2-kinetochore binding as expected. Expressing NUF2-FKBP12 and adding rapamycin in culture rescued both the Stu2 binding defect (Figure 3G) and the cell viability defect of stu2EEE (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "fce37619-d5df-497d-ae7b-33515dba2f8f",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C60",
+      "claim": "Expressing NUF2-FKBP12 and adding rapamycin in culture rescued the cell viability defect of stu2EEE.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing stu2EEE-FRB were deficient for Stu2-kinetochore binding as expected. Expressing NUF2-FKBP12 and adding rapamycin in culture rescued both the Stu2 binding defect (Figure 3G) and the cell viability defect of stu2EEE (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "83afb90b-54f6-43cf-952b-826bcdf46994",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C61",
+      "claim": "Loss of kinetochore localization is the cause of viability loss in stu2EEE mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Because rapamycin addition rescued both defects, we infer that loss of kinetochore localization is the cause of viability loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the rescue experiments shown in Figure 3G-H.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "8d03d586-a752-46b0-9c11-7ae1b219e83a",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C62",
+      "claim": "stu2EEE is a true separation of function mutation that allows assessment of the cellular consequences of disrupting Stu2-kinetochore association.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, stu2EEE is a true separation of function mutation that allows us to assess the cellular consequences of disrupting Stu2-kinetochore association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the rescue experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "95b0e7f6-dfb4-434c-94ff-c13eac923ba4",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C63",
+      "claim": "The frequency of biorientation in STU2WT cells was 44 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of biorientation in STU2WT cells was at the level usually found in this assay (44 \u00b1 2%, Figure 4A,B), but it was significantly lower in stu2EEE cells (16 \u00b1 1%, p=0.0002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "082a5043-7d19-4695-8aff-f99114e3373d",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C64",
+      "claim": "The frequency of biorientation in stu2EEE cells was significantly lower (16 \u00b1 1%, p=0.0002) than in STU2WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of biorientation in STU2WT cells was at the level usually found in this assay (44 \u00b1 2%, Figure 4A,B), but it was significantly lower in stu2EEE cells (16 \u00b1 1%, p=0.0002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "2a413421-1d29-44c6-a17a-5003d631db8c",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C65",
+      "claim": "Most non-bioriented sister centromeres were found proximal to one of the two spindle poles in both STU2WT and stu2EEE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most non-bioriented sister centromeres were found proximal to one of the two spindle poles in both STU2WT and stu2EEE cells (Figure 4\u2014figure supplement 5), suggesting that biorientation defects are caused by the persistence of monopolar/syntelic attachments and not by lack of microtubule pulling forces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4 supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "3c9b25ba-49ce-43c8-b968-52a261568cd5",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C66",
+      "claim": "Biorientation defects in stu2EEE cells are caused by the persistence of monopolar/syntelic attachments and not by lack of microtubule pulling forces.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most non-bioriented sister centromeres were found proximal to one of the two spindle poles in both STU2WT and stu2EEE cells (Figure 4\u2014figure supplement 5), suggesting that biorientation defects are caused by the persistence of monopolar/syntelic attachments and not by lack of microtubule pulling forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 4 supplement 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "710ea355-ddc6-496f-bdb8-bd9151008d79",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C67",
+      "claim": "Cells defective in error correction depend on the spindle checkpoint to prevent chromosome missegregation and have a delayed metaphase-anaphase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells defective in error correction depend on the spindle checkpoint to prevent chromosome missegregation and have a delayed metaphase-anaphase transition (Biggins and Murray, 2001; Shonn et al., 2003; Stern and Murray, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "6256ed54-2b6a-4da0-9d68-7ddece602ff9",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C68",
+      "claim": "There is a significant synthetic growth defect of stu2EEE with deletion of MAD2 in the presence of low concentrations of benomyl.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found a significant synthetic growth defect of stu2EEE with deletion of either of the spindle checkpoint components MAD2 (Figure 4\u2014figure supplement 6) or MAD3 in the presence of low concentrations of benomyl (Figure 4C), likely due to severe aneuploidy in stu2EEE mad2\u0394 and stu2EEE mad3\u0394 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4 supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "1820c2d9-3b08-49d7-b352-bc4991489a5b",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C69",
+      "claim": "There is a significant synthetic growth defect of stu2EEE with deletion of MAD3 in the presence of low concentrations of benomyl.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found a significant synthetic growth defect of stu2EEE with deletion of either of the spindle checkpoint components MAD2 (Figure 4\u2014figure supplement 6) or MAD3 in the presence of low concentrations of benomyl (Figure 4C), likely due to severe aneuploidy in stu2EEE mad2\u0394 and stu2EEE mad3\u0394 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "d68efdd8-4a15-41a2-871e-178e7756be5f",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C70",
+      "claim": "The synthetic growth defect of stu2EEE with mad2\u0394 or mad3\u0394 is likely due to severe aneuploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found a significant synthetic growth defect of stu2EEE with deletion of either of the spindle checkpoint components MAD2 (Figure 4\u2014figure supplement 6) or MAD3 in the presence of low concentrations of benomyl (Figure 4C), likely due to severe aneuploidy in stu2EEE mad2\u0394 and stu2EEE mad3\u0394 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the cause of the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "a92b76a8-a8aa-4738-a330-8af80cb7b2a9",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C71",
+      "claim": "Cells expressing stu2EEE-FRB had greatly delayed anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with error correction defects, cells expressing stu2EEE-FRB had greatly delayed anaphase onset, rescued by tethering Stu2EEE-FRB to the kinetochore with NUF2-FKBP12 and rapamycin (Figure 4D and Figure 4\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "577d8884-2ff8-436c-a2b1-341074de5819",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C72",
+      "claim": "Tethering Stu2EEE-FRB to the kinetochore with NUF2-FKBP12 and rapamycin rescued the delayed anaphase onset of stu2EEE-FRB cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with error correction defects, cells expressing stu2EEE-FRB had greatly delayed anaphase onset, rescued by tethering Stu2EEE-FRB to the kinetochore with NUF2-FKBP12 and rapamycin (Figure 4D and Figure 4\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f9ac40f9-5e8a-4c07-a6e7-0deb5ed571ab",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C73",
+      "claim": "Cells expressing stu2EEE-FRB had marked errors in segregating chromosome III (18 \u00b1 2%).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing stu2EEE-FRB had marked errors in segregating chromosome III (18 \u00b1 2%, Figure 4E), which were nearly always rescued by tethering Stu2EEE-FRB to Nuf2-FKBP12 (4 \u00b1 0.6%, Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "99fbc004-42a9-47d6-a0f1-ee4df0ccf87c",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C74",
+      "claim": "Tethering Stu2EEE-FRB to Nuf2-FKBP12 nearly always rescued chromosome segregation errors (4 \u00b1 0.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing stu2EEE-FRB had marked errors in segregating chromosome III (18 \u00b1 2%, Figure 4E), which were nearly always rescued by tethering Stu2EEE-FRB to Nuf2-FKBP12 (4 \u00b1 0.6%, Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "b0238737-dec4-4889-883b-b83e5587ad57",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C75",
+      "claim": "Correction of erroneous kinetochore-microtubule attachments in mitosis depends on kinetochore-bound Stu2.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that correction of erroneous kinetochore-microtubule attachments in mitosis depends on kinetochore-bound Stu2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "28c0aaf2-8c6f-4378-942c-201070634f9c",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C76",
+      "claim": "Rescue of the stu2EEE defect by ectopic tethering shows that CTS binding has a replaceable localization function.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, rescue of the defect by ectopic tethering shows that CTS binding has a replaceable localization function and that the effector function for error correction lies elsewhere in the Stu2 molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the rescue experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "b0782c0a-f1b8-4a4f-8d34-6d567fa92930",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C77",
+      "claim": "The effector function for error correction lies elsewhere in the Stu2 molecule (not in the CTS).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, rescue of the defect by ectopic tethering shows that CTS binding has a replaceable localization function and that the effector function for error correction lies elsewhere in the Stu2 molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the rescue experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "7d41e3e5-24f4-4702-bf0b-2916caed039f",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C78",
+      "claim": "Previous studies have shown that Stu2 associates with kinetochores during mitosis in yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Stu2, a microtubule plus-end polymerase, associates with kinetochores during mitosis in yeast cells (He et al., 2001; Hsu and Toda, 2011; Kakui et al., 2013; Miller et al., 2016; Miller et al., 2019; Vasileva et al., 2017) and contributes to the response to tension of kinetochores in vitro (Miller et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "266ea1dd-212f-431e-8108-ced189844b7d",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C79",
+      "claim": "Stu2 contributes to the response to tension of kinetochores in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Stu2, a microtubule plus-end polymerase, associates with kinetochores during mitosis in yeast cells (He et al., 2001; Hsu and Toda, 2011; Kakui et al., 2013; Miller et al., 2016; Miller et al., 2019; Vasileva et al., 2017) and contributes to the response to tension of kinetochores in vitro (Miller et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "9e10ee77-c423-4f51-8736-7cf9f0003ebd",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C80",
+      "claim": "Kinetochore-bound Stu2 contributes to error correction in response to the absence of tension in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings reported here indicate that kinetochore-bound Stu2 indeed contributes to error correction in response to the absence of tension in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "06abe312-a86d-46c2-8cb4-ac667b6fb365",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C81",
+      "claim": "Disrupting the Stu2:Ndc80c interaction led to diminished viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting the Stu2:Ndc80c interaction led to diminished viability, aberrant chromosome biorientation, synthetic growth defects when combined with a spindle checkpoint mutant, and anaphase onset delays \u2013 all phenotypes consistent with defects in error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f69ba96e-421d-478f-8217-16a3cb0baa43",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C82",
+      "claim": "Disrupting the Stu2:Ndc80c interaction led to aberrant chromosome biorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting the Stu2:Ndc80c interaction led to diminished viability, aberrant chromosome biorientation, synthetic growth defects when combined with a spindle checkpoint mutant, and anaphase onset delays \u2013 all phenotypes consistent with defects in error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "9b7ef40a-3939-47f4-b18d-428d9a00e824",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C83",
+      "claim": "Disrupting the Stu2:Ndc80c interaction led to synthetic growth defects when combined with a spindle checkpoint mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting the Stu2:Ndc80c interaction led to diminished viability, aberrant chromosome biorientation, synthetic growth defects when combined with a spindle checkpoint mutant, and anaphase onset delays \u2013 all phenotypes consistent with defects in error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "ba04f1ee-68b1-4a3c-b693-e908b5f99588",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C84",
+      "claim": "Disrupting the Stu2:Ndc80c interaction led to anaphase onset delays.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting the Stu2:Ndc80c interaction led to diminished viability, aberrant chromosome biorientation, synthetic growth defects when combined with a spindle checkpoint mutant, and anaphase onset delays \u2013 all phenotypes consistent with defects in error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "4d22cbe2-0115-4404-a563-d439d694735b",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C85",
+      "claim": "Chemically induced tethering of the mutant Stu2 to Ndc80c rescued all the defects examined, including viability and cell cycle progression delays.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemically induced tethering of the mutant Stu2 to Ndc80c rescued all the defects we examined, including viability and cell cycle progression delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "c25df550-06c4-4539-92cf-afbef5996fd8",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C86",
+      "claim": "The contributions of Stu2 to error correction in vivo depend on Ndc80c binding, not simply on its presence as a soluble factor or on its function as a microtubule polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the contributions of Stu2 to error correction in vivo depend on Ndc80c binding, not simply on its presence as a soluble factor or on its function as a microtubule polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "ebb39637-1b94-44cc-8f4c-8b7682043b8b",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C87",
+      "claim": "The required kinetochore localization of Stu2 might couple its polymerase activity specifically with growth and shrinkage at the plus-ends of kinetochore microtubules during metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results do not rule out, however, that the required kinetochore localization of Stu2 couples its polymerase activity specifically with growth and shrinkage at the plus-ends of kinetochore microtubules during metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "e7a01457-f53a-4954-8d08-263c40489cdb",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C88",
+      "claim": "Stu2's polymerase activity might be essential.",
+      "claim_type": "EXPLICIT",
+      "source": "Its polymerase activity might therefore also be essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the previous statement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "c7758037-21c7-4197-aa5c-4eeb1a86c1f2",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C89",
+      "claim": "Stu2 association with Bik1 and Spc72 presumably couples its polymerase activity with other stages of spindle assembly or with other roles for microtubules in a yeast cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Stu2 association with Bik1 and Spc72 presumably couple this activity with other stages of spindle assembly or with other roles for microtubules in a yeast cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the function of other Stu2 interactions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "401cb83d-ede3-4046-b03e-d23bd8dd7c78",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C90",
+      "claim": "A published study of Stu2 dynamics at kinetochores using fluorescence recovery after photobleaching showed relatively high turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "A published study of Stu2 dynamics at kinetochores using fluorescence recovery after photobleaching showed relatively high turnover, and its authors suggested that Stu2 might not be a stably associated kinetochore factor (Aravamudhan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "9159a661-d787-4f78-a328-b094c8debb76",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C91",
+      "claim": "The bi-lobed clusters of Stu2 in metaphase cells probably contain both kinetochore-bound and purely microtubule tip-associated Stu2 pools.",
+      "claim_type": "EXPLICIT",
+      "source": "The bi-lobed clusters of Stu2 in metaphase cells (Goshima and Yanagida, 2000; He et al., 2001; Pearson et al., 2001) probably contain both kinetochore-bound and purely microtubule tip-associated Stu2 pools, however, making definitive interpretation difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the composition of Stu2 clusters.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "34d578fe-44ce-4b41-a45c-e5d02656887c",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C92",
+      "claim": "Association of Stu2 with Ndc80c at the tetramer junction is necessary for its error correction function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current data show that regardless of its exchange rate, association of Stu2 with Ndc80c at the tetramer junction is necessary for its error correction function and that tethering Stu2 to the junction is sufficient to restore full activity of an association-defective mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f94e3245-237c-4ec5-b2bc-0f62d504cde6",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C93",
+      "claim": "Tethering Stu2 to the Ndc80c junction is sufficient to restore full activity of an association-defective mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current data show that regardless of its exchange rate, association of Stu2 with Ndc80c at the tetramer junction is necessary for its error correction function and that tethering Stu2 to the junction is sufficient to restore full activity of an association-defective mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "71173f21-15f7-4689-bd1c-57e3dbe0de2b",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C94",
+      "claim": "Conservation of the four-component organization of Ndc80c from yeast to mammals suggests a conserved role for the connection between the two heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Conservation of the four-component organization of Ndc80c from yeast to mammals, despite no evidence for independent functions of either heterodimer, suggests a conserved role for the connection between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on evolutionary conservation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "fde0699c-c89e-4832-b78b-3efe31473799",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C95",
+      "claim": "Several conserved features of the Ndc80c junction structure, including exposed hydrophobic pockets and a skipped \u03b1-helical turn near the N-terminus of Spc24, hinted that it might be a binding site for a conserved regulatory factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Several conserved features of the junction structure those crystals yielded, including exposed hydrophobic pockets and a skipped \u03b1-helical turn near the N-terminus of Spc24, indeed hinted that it might be a binding site for a conserved regulatory factor (Valverde et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior observations supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "aae19908-02f8-43b6-8d41-6c1bbc3e7f06",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C96",
+      "claim": "Stu2 is at least one conserved regulatory factor that binds the Ndc80c junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Stu2 is evidently at least one such factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and functional findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "1219195e-0d04-42ec-b551-03ff26f16553",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C97",
+      "claim": "The Stu2 CTS adds a fifth helix to the four-helix bundle without producing any conformational rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "As now shown here, the Stu2 CTS adds a fifth helix to the four-helix bundle, without producing any conformational rearrangements, indicating that the role of the junction is simply to anchor Stu2 along the Ndc80c rod, rather than to receive an allosteric signal from it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "298d3437-823a-4376-b637-39aad9f0e6ad",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C98",
+      "claim": "The role of the Ndc80c junction is simply to anchor Stu2 along the Ndc80c rod, rather than to receive an allosteric signal from it.",
+      "claim_type": "EXPLICIT",
+      "source": "As now shown here, the Stu2 CTS adds a fifth helix to the four-helix bundle, without producing any conformational rearrangements, indicating that the role of the junction is simply to anchor Stu2 along the Ndc80c rod, rather than to receive an allosteric signal from it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "8e92f22c-72f5-4af3-adad-fc5560d81223",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C99",
+      "claim": "The structural findings do not rule out conformational switching by interactions between other parts of Stu2 and other parts of the Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "That result does not rule out conformational switching by interactions between other parts of Stu2 thus anchored and other parts of the Ndc80c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "6e75e9cd-7462-4607-962c-d9f64df1a270",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C100",
+      "claim": "Bulky hydrophobic residues are present at key positions in the CTS of Stu2 orthologs from fungi to metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulky hydrophobic residues are present at key positions in the CTS of Stu2 orthologs from fungi to metazoans, and the entire CTS sequence has conserved features (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from sequence conservation analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "2cc021ec-6b82-47f4-8b18-9c7338601212",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C101",
+      "claim": "The entire CTS sequence has conserved features.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulky hydrophobic residues are present at key positions in the CTS of Stu2 orthologs from fungi to metazoans, and the entire CTS sequence has conserved features (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from sequence conservation analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "3be71982-0d56-4cd7-a2b1-3cd368329115",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C102",
+      "claim": "The conservation of CTS features suggests that Stu2 orthologs also bind Ndc80c.",
+      "claim_type": "EXPLICIT",
+      "source": "This conservation suggests that the orthologs also bind Ndc80c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence conservation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f708de37-85c5-414d-ac6e-a9b47a5c2054",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C103",
+      "claim": "Published work provides evidence for interaction of the S. pombe Stu2 ortholog with the Ndc80 internal loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Published work provides evidence for interaction of the S. pombe ortholog with the Ndc80 internal loop (Hsu and Toda, 2011; Kakui et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "cb3ea364-d5f5-4dbd-b265-0182719c5ee3",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C104",
+      "claim": "The C-terminal position of the Ndc80c attachment segment of Stu2 and the length of the flexible linker would allow more distal parts of the protein to interact with almost any other site along the Ndc80c rod.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal position of the Ndc80c attachment segment of Stu2 and the length of the presumably flexible linker between it and the dimerizing coiled-coil would allow more distal parts of the protein to interact with almost any other site along the Ndc80c rod, including the Ndc80 internal loop and the globular head (Miller et al., 2019), and probably even allow the TOG domains to contact the curled plus-ends of an attached microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on structural considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "4a487b9c-483b-4f94-86c4-e802529fb7c6",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "claim_id": "C105",
+      "claim": "Additional interactions between Stu2 and Ndc80c are likely to be critical contributors to the mechanism by which Stu2 responds to tension or its absence and synergizes with the error-correcting detachment activity of Ipl1.",
+      "claim_type": "EXPLICIT",
+      "source": "These additional interactions are likely to be critical contributors to the mechanism by which Stu2 responds to tension or its absence and synergizes with the error-correcting detachment activity of Ipl1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional importance of additional interactions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7983427d-35e6-4688-909f-20569e4f7d34",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The C-terminal segment (CTS) of Stu2 binds directly to the four-way junction of the Ndc80 complex (Ndc80c). Structural analysis reveals that conserved hydrophobic residues (V865, L869, I873, M876) in the Stu2 CTS fit into hydrophobic pockets on Ndc80 and Spc24, and the CTS contributes a fifth \u03b1 helix to the junction. The binding affinity is approximately 48 \u00b5M, and mutations of key hydrophobic residues abolish binding both in vitro and in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C49 provide converging structural, biochemical, and mutational evidence for the Stu2-Ndc80c interaction. The crystal structure (C38-C47) is validated by anomalous diffraction (C42), pulldown assays confirm binding in solution (C30-C31, C48-C49), deletion analysis maps the binding region (C32-C35), and fluorescence polarization quantifies affinity (C36). The structural details are internally consistent and experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutations in the Stu2 CTS that disrupt Ndc80c binding (stu2EEE: L869E/I873E/M876E and stu2AAA: L869A/I873A/M876A) prevent Stu2 association with kinetochores in vivo and cause severe cell viability defects. The stu2EEE mutant shows dramatic loss of kinetochore-proximal signal while maintaining normal spindle length, and viability defects are exacerbated by the microtubule-destabilizing drug benomyl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C50-C57 demonstrate that mutations disrupting the Stu2-Ndc80c interface have clear in vivo consequences. Co-immunoprecipitation experiments (C50-C51) show loss of kinetochore binding, microscopy (C52-C53) shows loss of localization without affecting spindle structure, and viability assays (C54-C56) show functional defects. The consistency across multiple experimental approaches and the specificity of the phenotypes (loss of kinetochore binding without affecting spindle length) strongly support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "99519159-e064-4b70-afe0-d293cfa76777",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ectopic tethering of the stu2EEE mutant to Ndc80c using a rapamycin-inducible FRB-FKBP12 system rescues both the kinetochore binding defect and the cell viability defect. This demonstrates that loss of kinetochore localization is the primary cause of viability loss in stu2EEE mutants, and that stu2EEE represents a true separation-of-function mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C58-C62 provide strong evidence through a well-designed rescue experiment. The rapamycin-inducible tethering system specifically restores kinetochore localization (C59) and rescues viability (C60), establishing causality between loss of localization and loss of viability (C61). This elegant experiment demonstrates that the CTS functions primarily as a localization module (C62, C76), which is a key mechanistic insight. The rescue is specific and complete, supporting the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "28902a88-0eb0-4124-a91d-2315e4fce7df",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The stu2EEE mutation causes significant chromosome biorientation defects. Biorientation frequency drops from 44\u00b12% in wild-type cells to 16\u00b11% in stu2EEE cells (p=0.0002). Non-bioriented sister centromeres are found proximal to spindle poles rather than at the spindle equator, suggesting defects arise from persistent monopolar/syntelic attachments rather than lack of microtubule pulling forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C63-C66 demonstrate biorientation defects using a well-established assay. The quantification is rigorous with statistical significance (C64), and the positional analysis of non-bioriented centromeres (C65) provides mechanistic insight into the nature of the defect (C66). The interpretation that defects arise from persistent incorrect attachments rather than loss of pulling forces is supported by the observation that centromeres remain pole-proximal. This is consistent with an error correction defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "17fd3307-2e1f-4f52-a607-bf92de986059",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The stu2EEE mutation causes cell cycle progression delays and synthetic growth defects with spindle checkpoint mutations. Cells expressing stu2EEE-FRB show greatly delayed anaphase onset, which is rescued by tethering to Ndc80c. The stu2EEE mutation shows synthetic growth defects with mad2\u0394 or mad3\u0394 in the presence of benomyl, likely due to severe aneuploidy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C68-C72 demonstrate cell cycle defects consistent with error correction dysfunction. The anaphase delay (C71) and its rescue by tethering (C72) establish that kinetochore-localized Stu2 is required for timely progression. The synthetic lethality with checkpoint mutants (C68-C69) is a classic signature of error correction defects, as cells with both defects cannot prevent missegregation. While C70 is speculative about aneuploidy being the cause, the overall pattern strongly supports an error correction role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "74f869ba-7eb7-4547-801a-5f3019633db2",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The stu2EEE mutation causes chromosome missegregation errors (18\u00b12%), which are rescued by tethering Stu2EEE to Ndc80c (4\u00b10.6%). This demonstrates that correction of erroneous kinetochore-microtubule attachments depends on kinetochore-bound Stu2, and that the CTS serves as a replaceable localization module while the effector function for error correction lies elsewhere in Stu2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 provide the key functional evidence linking Stu2-Ndc80c binding to error correction. The chromosome segregation assay (C73-C74) directly measures the biological outcome, and the rescue by tethering demonstrates specificity. The conclusion that kinetochore-bound Stu2 is required for error correction (C75) is well-supported. The inference that the CTS is a localization module and the effector function lies elsewhere (C76-C77) is logical given that tethering rescues function, though this remains an inference about mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "dae95c12-716e-4acb-aa82-5bea063ceae2",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The role of Stu2 in tension-sensing and error correction depends on its association with kinetochores through binding to Ndc80c. Disrupting the Stu2:Ndc80c interaction leads to diminished viability, aberrant chromosome biorientation, synthetic growth defects with spindle checkpoint mutants, and anaphase onset delays. Chemically induced tethering rescues all examined defects, demonstrating that Stu2's contributions to error correction depend on Ndc80c binding rather than its presence as a soluble factor or its microtubule polymerase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C80-C86 represent the major conclusions synthesizing all experimental findings. The evidence from structural studies, binding assays, localization experiments, viability assays, biorientation assays, checkpoint interactions, cell cycle progression, and chromosome segregation collectively support these conclusions. The rescue experiments (C85) are particularly important for establishing that the phenotypes are specifically due to loss of kinetochore localization (C86). The conclusions are well-supported by the data, though some mechanistic details remain to be elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "ba351a25-4208-4e72-a6db-46a213d82616",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bulky hydrophobic residues are present at key positions in the CTS of Stu2 orthologs from fungi to metazoans, and the entire CTS sequence shows conserved features. This conservation suggests that Stu2 orthologs also bind Ndc80c.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 are supported by sequence conservation analysis shown in Figure 4F. The presence of conserved hydrophobic residues at positions corresponding to the binding interface (C100) and overall sequence conservation (C101) provide strong evidence for functional conservation. The inference that orthologs also bind Ndc80c (C102) is reasonable given the structural conservation of both Stu2 and Ndc80c across species, though direct experimental validation in other species would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "2a32f50b-3d0b-46ef-a5e6-323cdd33f154",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Association of Stu2 with Ndc80c at the tetramer junction is necessary for error correction function, and tethering Stu2 to the junction is sufficient to restore full activity. The Stu2 CTS adds a fifth helix to the four-helix bundle without producing conformational rearrangements, indicating that the junction serves to anchor Stu2 rather than to receive an allosteric signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 and C97-C98 integrate structural and functional findings. The necessity of junction binding (C92) is demonstrated by the mutant phenotypes, and sufficiency of tethering (C93) is shown by rescue experiments. The structural observation that no conformational changes occur upon binding (C97) supports the interpretation that the junction functions as an anchor (C98). However, C99 appropriately notes that conformational changes involving other regions cannot be ruled out, indicating appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "4c577b28-9427-4a7c-aa03-a83767e4406e",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript speculates about additional mechanisms and interactions. The required kinetochore localization might couple Stu2's polymerase activity with kinetochore microtubule dynamics, and this activity might be essential. The flexible linker could allow Stu2 to interact with other sites on Ndc80c or with microtubule plus-ends. Additional interactions are likely critical for the tension-sensing mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89, C99, C104-C105 are explicitly speculative (evidence_type: SPECULATION). While these speculations are reasonable given the structural and functional data, they represent hypotheses for future work rather than demonstrated findings. The manuscript appropriately presents these as possibilities rather than conclusions. These speculations are valuable for guiding future research but cannot be evaluated as supported or unsupported based on the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    },
+    {
+      "id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9",
+      "content_id": "3a4fd1a6-0e03-4eed-a613-82984af07f45",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on chromosome segregation, kinetochore structure and function, the role of Aurora B/Ipl1 in error correction, Stu2 properties, and prior work on Stu2-kinetochore association. This establishes the context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C13-C29, C78-C79, C90-C91, C94-C96, and C103 represent background knowledge and prior work (evidence_type: KNOWLEDGE, CITATION). These claims are appropriately cited and represent established findings in the field. They provide essential context for interpreting the current results. While not novel findings of this study, they are accurately presented and properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:24:09.628601Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "caa9b273-a2f9-4ebb-91d4-f0ffa6e7553a",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "4e7f8a57-dc64-4edd-a04d-81df90e1c3a9",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "dcbdbc38-c595-4cf4-9084-24385878aae7",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "be2d6e04-bd70-47c2-9cc9-3f53ce0584c5",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "0247de0b-0079-4895-a845-7c154efccce6",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "2f0c11af-e4ae-4373-8403-1f185808f2c0",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "b6d801e2-b19f-411a-92ca-3edb77891b2f",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "9a1ed821-691f-425d-ad06-0413a1f1cbe0",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "7b92a85f-c532-4ef6-b86a-75c91b3801a4",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "12ad69a8-eae1-4c06-8ea5-808de7ac4bef",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "9a503cc9-d02d-486c-9fe9-f29ea009197c",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "b14a2f29-9f06-418c-ab35-3fe639af0fdc",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "9ef0a441-dc45-415f-8aed-8aec675e618d",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "3e17000c-ab70-43c7-ac8a-3f44f08f419e",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "633ef8d6-d281-4339-ae25-9c5e5d8395c1",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "b16294e1-7424-4306-8ad7-3606c6ff3ce6",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "10937c80-afb2-4630-83d4-14fea2aa6040",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "5de1e9ad-2de9-4a61-a15b-14037c547833",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "d4aa094e-9c03-4d6b-b3b0-62179036ffe6",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "642ddbf0-6f7d-4088-b8c2-3ff16154d651",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "75da5dc0-b2a0-4a35-8c07-d99cc805cf52",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "bfedfe6d-bf91-48bf-9aea-af5c31d574b6",
+      "result_id": "7983427d-35e6-4688-909f-20569e4f7d34"
+    },
+    {
+      "claim_id": "e35601b5-bde3-4644-b3ff-206da31b0c03",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "9f044ad8-724f-40a2-aab1-f8ba87ef8100",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "82d74168-f760-4194-8cbe-0fe10c4fee2a",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "6db497a2-0d71-41c6-a797-f8e739beb2f4",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "c77a0235-56bf-41a3-ae10-38f6f552a158",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "f3355a0b-487d-4948-b82f-51fb1d434913",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "e55c98d9-67a5-4299-878b-48d5630076bc",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "6577db65-b952-4b67-a557-bb70ba96615b",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "576460ed-5700-4864-a954-3da391b04855",
+      "result_id": "1d2e0c20-ea1f-4498-917d-174ca2b1a000"
+    },
+    {
+      "claim_id": "781ef6b2-44e3-48a8-a11b-9db82cefb45d",
+      "result_id": "99519159-e064-4b70-afe0-d293cfa76777"
+    },
+    {
+      "claim_id": "ebfb36d4-7f3b-4ec4-8bc7-fc26175f23e4",
+      "result_id": "99519159-e064-4b70-afe0-d293cfa76777"
+    },
+    {
+      "claim_id": "a24006ca-ce16-4f3b-9909-af2dea869d9e",
+      "result_id": "99519159-e064-4b70-afe0-d293cfa76777"
+    },
+    {
+      "claim_id": "fce37619-d5df-497d-ae7b-33515dba2f8f",
+      "result_id": "99519159-e064-4b70-afe0-d293cfa76777"
+    },
+    {
+      "claim_id": "83afb90b-54f6-43cf-952b-826bcdf46994",
+      "result_id": "99519159-e064-4b70-afe0-d293cfa76777"
+    },
+    {
+      "claim_id": "8d03d586-a752-46b0-9c11-7ae1b219e83a",
+      "result_id": "99519159-e064-4b70-afe0-d293cfa76777"
+    },
+    {
+      "claim_id": "f923afd5-2c8c-4363-8187-f05a212fcbd6",
+      "result_id": "28902a88-0eb0-4124-a91d-2315e4fce7df"
+    },
+    {
+      "claim_id": "95b0e7f6-dfb4-434c-94ff-c13eac923ba4",
+      "result_id": "28902a88-0eb0-4124-a91d-2315e4fce7df"
+    },
+    {
+      "claim_id": "082a5043-7d19-4695-8aff-f99114e3373d",
+      "result_id": "28902a88-0eb0-4124-a91d-2315e4fce7df"
+    },
+    {
+      "claim_id": "2a413421-1d29-44c6-a17a-5003d631db8c",
+      "result_id": "28902a88-0eb0-4124-a91d-2315e4fce7df"
+    },
+    {
+      "claim_id": "3c9b25ba-49ce-43c8-b968-52a261568cd5",
+      "result_id": "28902a88-0eb0-4124-a91d-2315e4fce7df"
+    },
+    {
+      "claim_id": "c5776a5f-c765-47cc-aa6e-71c5e37f3579",
+      "result_id": "17fd3307-2e1f-4f52-a607-bf92de986059"
+    },
+    {
+      "claim_id": "6256ed54-2b6a-4da0-9d68-7ddece602ff9",
+      "result_id": "17fd3307-2e1f-4f52-a607-bf92de986059"
+    },
+    {
+      "claim_id": "1820c2d9-3b08-49d7-b352-bc4991489a5b",
+      "result_id": "17fd3307-2e1f-4f52-a607-bf92de986059"
+    },
+    {
+      "claim_id": "d68efdd8-4a15-41a2-871e-178e7756be5f",
+      "result_id": "17fd3307-2e1f-4f52-a607-bf92de986059"
+    },
+    {
+      "claim_id": "a92b76a8-a8aa-4738-a330-8af80cb7b2a9",
+      "result_id": "17fd3307-2e1f-4f52-a607-bf92de986059"
+    },
+    {
+      "claim_id": "577d8884-2ff8-436c-a2b1-341074de5819",
+      "result_id": "17fd3307-2e1f-4f52-a607-bf92de986059"
+    },
+    {
+      "claim_id": "f9ac40f9-5e8a-4c07-a6e7-0deb5ed571ab",
+      "result_id": "74f869ba-7eb7-4547-801a-5f3019633db2"
+    },
+    {
+      "claim_id": "99fbc004-42a9-47d6-a0f1-ee4df0ccf87c",
+      "result_id": "74f869ba-7eb7-4547-801a-5f3019633db2"
+    },
+    {
+      "claim_id": "b0238737-dec4-4889-883b-b83e5587ad57",
+      "result_id": "74f869ba-7eb7-4547-801a-5f3019633db2"
+    },
+    {
+      "claim_id": "28c0aaf2-8c6f-4378-942c-201070634f9c",
+      "result_id": "74f869ba-7eb7-4547-801a-5f3019633db2"
+    },
+    {
+      "claim_id": "b0782c0a-f1b8-4a4f-8d34-6d567fa92930",
+      "result_id": "74f869ba-7eb7-4547-801a-5f3019633db2"
+    },
+    {
+      "claim_id": "8220ca0d-aaf0-4d7d-95eb-e1819580915f",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "9e10ee77-c423-4f51-8736-7cf9f0003ebd",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "06abe312-a86d-46c2-8cb4-ac667b6fb365",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "f69ba96e-421d-478f-8217-16a3cb0baa43",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "9b7ef40a-3939-47f4-b18d-428d9a00e824",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "ba04f1ee-68b1-4a3c-b693-e908b5f99588",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "4d22cbe2-0115-4404-a563-d439d694735b",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "c25df550-06c4-4539-92cf-afbef5996fd8",
+      "result_id": "dae95c12-716e-4acb-aa82-5bea063ceae2"
+    },
+    {
+      "claim_id": "6e75e9cd-7462-4607-962c-d9f64df1a270",
+      "result_id": "ba351a25-4208-4e72-a6db-46a213d82616"
+    },
+    {
+      "claim_id": "2cc021ec-6b82-47f4-8b18-9c7338601212",
+      "result_id": "ba351a25-4208-4e72-a6db-46a213d82616"
+    },
+    {
+      "claim_id": "3be71982-0d56-4cd7-a2b1-3cd368329115",
+      "result_id": "ba351a25-4208-4e72-a6db-46a213d82616"
+    },
+    {
+      "claim_id": "34d578fe-44ce-4b41-a45c-e5d02656887c",
+      "result_id": "2a32f50b-3d0b-46ef-a5e6-323cdd33f154"
+    },
+    {
+      "claim_id": "f94e3245-237c-4ec5-b2bc-0f62d504cde6",
+      "result_id": "2a32f50b-3d0b-46ef-a5e6-323cdd33f154"
+    },
+    {
+      "claim_id": "1219195e-0d04-42ec-b551-03ff26f16553",
+      "result_id": "2a32f50b-3d0b-46ef-a5e6-323cdd33f154"
+    },
+    {
+      "claim_id": "298d3437-823a-4376-b637-39aad9f0e6ad",
+      "result_id": "2a32f50b-3d0b-46ef-a5e6-323cdd33f154"
+    },
+    {
+      "claim_id": "ebb39637-1b94-44cc-8f4c-8b7682043b8b",
+      "result_id": "4c577b28-9427-4a7c-aa03-a83767e4406e"
+    },
+    {
+      "claim_id": "e7a01457-f53a-4954-8d08-263c40489cdb",
+      "result_id": "4c577b28-9427-4a7c-aa03-a83767e4406e"
+    },
+    {
+      "claim_id": "c7758037-21c7-4197-aa5c-4eeb1a86c1f2",
+      "result_id": "4c577b28-9427-4a7c-aa03-a83767e4406e"
+    },
+    {
+      "claim_id": "8e92f22c-72f5-4af3-adad-fc5560d81223",
+      "result_id": "4c577b28-9427-4a7c-aa03-a83767e4406e"
+    },
+    {
+      "claim_id": "cb3ea364-d5f5-4dbd-b265-0182719c5ee3",
+      "result_id": "4c577b28-9427-4a7c-aa03-a83767e4406e"
+    },
+    {
+      "claim_id": "4a487b9c-483b-4f94-86c4-e802529fb7c6",
+      "result_id": "4c577b28-9427-4a7c-aa03-a83767e4406e"
+    },
+    {
+      "claim_id": "14adb512-62d8-4c13-9a67-655081803c2f",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "20b9fb64-17d3-4e43-aed2-ca393a132e56",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "980f4ca5-c4e7-4f1a-bee8-ef44f5902ee7",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "2436983d-e748-455f-80f7-44d09db09333",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "e75a5096-b562-4736-9c19-e6f750b7d2b4",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "c17c0066-1514-4aaa-8860-960b881b00cf",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "66de4997-db39-4e29-ba4e-5bc191c82c97",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "ecf34266-dfaf-4c06-bdf2-9eb0d208d251",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "ec8e7467-75c0-4ac4-bb88-f6b68568f158",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "63266443-ec0e-40e0-95bd-812cdf43f662",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "12a45807-4482-48a1-aca8-a75f526a4e78",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "d2b48664-8fd4-42d5-b7d7-c674cf629b57",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "69827f69-0798-4a14-9eb7-4a45fc20d942",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "d685a0cd-19bb-47a1-bcec-dee4558ac621",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "f433567c-bce5-4b0b-b1b2-57f77e012173",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "1f13cea0-777f-47f6-99c9-630712bd2c26",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "44379230-65f3-48dd-8bb1-427848835564",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "f7a03246-3142-4c01-8898-0b5c567dda2c",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "17f2c55f-5ab4-4db9-9962-303176743092",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "24d39397-54db-4754-b08a-ae5ab6b72f29",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "f5407d11-cab7-45fa-987d-3a97af517228",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "7d41e3e5-24f4-4702-bf0b-2916caed039f",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "266ea1dd-212f-431e-8108-ced189844b7d",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "401cb83d-ede3-4046-b03e-d23bd8dd7c78",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "9159a661-d787-4f78-a328-b094c8debb76",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "71173f21-15f7-4689-bd1c-57e3dbe0de2b",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "fde0699c-c89e-4832-b78b-3efe31473799",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "aae19908-02f8-43b6-8d41-6c1bbc3e7f06",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    },
+    {
+      "claim_id": "f708de37-85c5-414d-ac6e-a9b47a5c2054",
+      "result_id": "f7ac3acd-0bf1-4153-9424-02acee1c08f9"
+    }
+  ],
+  "comparisons": []
+}

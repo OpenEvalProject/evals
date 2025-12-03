@@ -1,0 +1,460 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Ribo-seq experiments in M. tuberculosis identified hundreds of actively translated leaderless sORFs. Ribosome occupancy profiles showed enrichment at start and stop codons of annotated leadered ORFs (15 nt and 12 nt downstream, respectively), but a different pattern for leaderless ORFs (enrichment spread across 25-35 nt downstream of start codons). Putative leaderless isoform and novel ORFs exhibited similar ribosome occupancy profiles to annotated leaderless ORFs, supporting active translation of 370 putative novel ORFs, of which 268 are sORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 provide converging evidence from Ribo-seq data showing characteristic ribosome enrichment patterns at start and stop codons for both annotated and novel leaderless ORFs. The observation that putative novel ORFs exhibit similar profiles to validated annotated ORFs (C58) strongly supports their active translation. The data are internally consistent across replicates and consistent with prior studies (C52, C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Ribo-RET experiments identified 1994 IERFs (Initiation-Enriched Ribosome Footprints) in both replicates, with strong enrichment of IERF 3' ends 15 nt downstream of start codons of annotated leadered genes. Analysis revealed >2-fold enrichment of start codons (ATG, GTG, TTG) 15 nt upstream of IERF 3' ends and enrichment of Shine-Dalgarno-like sequences (AGG, GGA) 22-31 nt upstream. 71% (1406) of IERFs were associated with potential start codons, far exceeding the 17% expected by chance, corresponding to putative ORFs with an estimated FDR of 9%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C80 describe a systematic analysis of Ribo-RET data with multiple lines of converging evidence: (1) enrichment of ribosome footprints at expected positions relative to start codons, (2) enrichment of start codon sequences and Shine-Dalgarno motifs at appropriate distances, and (3) statistical comparison to random expectation showing highly significant enrichment (71% vs 17% expected by chance, C79). The FDR calculation (C80) provides appropriate statistical rigor. However, the authors acknowledge potential bias from MNase sequence preference (C71, C76), which may lead to underrepresentation of G/C-rich sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Classification of the 1406 putative ORFs identified by Ribo-RET revealed: 34% (478) precisely match annotated ORFs, 27% (373) are isoform ORFs overlapping annotated genes in-frame, and 39% (555) are novel ORFs with no match to annotated stop codons. Of novel ORFs, 112 are in intergenic regions and 77% (430) are sORFs, including 48 consisting of only start and stop codons. These ORFs exhibit expected features of translation initiation sites including enrichment of Shine-Dalgarno-like sequences upstream and reduced predicted RNA secondary structure around start codons compared to random sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 provide a comprehensive characterization of identified ORFs with multiple supporting lines of evidence. The classification is clearly defined and quantified with FDR estimates for each category. The validation through sequence features (Shine-Dalgarno enrichment C87, reduced secondary structure C89-C90) provides independent support beyond the Ribo-RET signal itself. Statistical tests (Mann-Whitney U tests) appropriately demonstrate significance of secondary structure differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Ribo-seq data from untreated cells confirmed active translation of Ribo-RET-predicted ORFs. Annotated, novel, and isoform ORFs identified by Ribo-RET showed strong enrichment of Ribo-seq signal 15 nt downstream of start codons and 12 nt downstream of stop codons, while mock ORFs and RNA-seq data showed no such enrichment, ruling out library construction artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 provide critical validation that ORFs identified by Ribo-RET (with retapamulin treatment) are also actively translated in untreated cells. The inclusion of negative controls (mock ORFs C95, RNA-seq C96) strengthens the conclusion by ruling out technical artifacts. This independent validation using a different experimental approach (Ribo-seq without drug) strongly supports the biological relevance of the identified ORFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Analysis of 4216 IERFs found only in the first Ribo-RET replicate (lower-confidence dataset) revealed similar characteristics to higher-confidence ORFs: 66% associated with start codons (vs 17% by chance), yielding 2787 lower-confidence ORFs (22% annotated, 29% isoform, 49% novel). These lower-confidence ORFs exhibited enrichment of Shine-Dalgarno sequences, reduced secondary structure, and strong Ribo-seq enrichment at start/stop codons, indicating they represent actively translated regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 extend the analysis to a lower-confidence dataset with appropriate caveats about reproducibility. The similar proportions and characteristics compared to the higher-confidence dataset (C99, C103) support their validity. Multiple independent lines of evidence (sequence features C105, secondary structure C106-C107, Ribo-seq validation C108) converge to support active translation. The statistical analyses are appropriate, though the lack of replication in the second Ribo-RET dataset appropriately leads to designation as 'lower-confidence.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Novel ORFs have lower RNA levels and lower absolute ribosome occupancy than annotated ORFs, but similar ribosome occupancy per transcript (translation efficiency). Non-coding control transcripts have similar RNA levels to novel ORFs but markedly lower ribosome occupancy per transcript. This demonstrates that novel ORFs are translated with similar efficiency to annotated ORFs and are clearly distinct from non-coding transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 provide a rigorous quantitative analysis distinguishing novel ORFs from both annotated ORFs and non-coding controls. The key insight is the normalization to ribosome density per transcript (C112-C113), which reveals similar translation efficiency despite lower absolute expression. The inclusion of non-coding controls (C111) is essential for demonstrating that novel ORFs are genuinely translated rather than simply transcribed. The analysis appropriately uses both RNA-seq and Ribo-seq data from replicate experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Mass spectrometry identified proteins encoded by 44 novel ORFs (FDR ~1%), including 10 proteins <50 amino acids (shortest 23 amino acids). Small protein enrichment methods detected proteins with mean length 60 amino acids vs 86 amino acids for in-solution digestion. Three novel proteins were validated by comparing MS/MS spectra of synthetic peptides to native proteins, showing matching ion patterns and mass intensities, confirming they are translated as stable products matching Ribo-RET predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 provide direct proteomic evidence for novel ORF translation. The use of multiple sample preparation methods (C122-C123) addresses the technical challenge of detecting small proteins. The synthetic peptide validation (C124-C126) is particularly rigorous, providing unambiguous confirmation that the detected proteins match the predicted sequences. However, only 44 of ~2000 novel ORFs were detected (C118), likely reflecting technical limitations of MS for small/low-abundance proteins rather than false positives in the Ribo-RET data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Luciferase reporter assays for 20 novel ORFs (including 5 from the lower-confidence list) showed that mutation of the predicted start codon significantly reduced luciferase expression in all cases (p<0.05 or 0.01). Start codon mutation reduced but did not abolish expression, possibly due to low-level translation initiation from non-canonical start codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 provide genetic validation of predicted start codons through reporter assays. The significant reduction in expression upon start codon mutation (C127) supports the Ribo-RET predictions, though the incomplete abolition of expression (C128) introduces some ambiguity. The speculation about non-canonical start codons (C129) is reasonable given the citation to similar findings in E. coli, but this residual expression could also reflect experimental artifacts or alternative mechanisms. The validation of lower-confidence ORFs strengthens confidence in that dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Western blot analysis of FLAG-tagged constructs validated translation of selected novel and isoform ORFs. Two novel ORF proteins were detected and absent in start codon mutants. For two isoform ORFs, both the full-length annotated protein (unaffected by isoform start codon mutation) and a smaller isoform protein (absent in start codon mutants) were detected, supporting the existence of both translation products from the same gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 provide direct protein-level validation using western blots with epitope-tagged constructs. The detection of proteins at expected sizes that disappear upon start codon mutation provides strong evidence for translation from the predicted start sites. The isoform validation (C132-C133) is particularly compelling as it demonstrates co-expression of both the annotated and isoform proteins, with selective loss of only the isoform upon mutation of its start codon. This validates the concept of overlapping ORFs producing protein isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "G/C-skew analysis of novel ORFs revealed that as a group they have modest but significant positive G/C-skew (p<2.2e-16), but much smaller than annotated ORFs. Individual analysis identified 90 novel ORFs with significant positive G/C-skew (p<0.1), suggesting ~80 have been subject to purifying selection. However, the small size of novel ORFs limits this analysis, and the number of functional ORFs is likely substantially underestimated. Overall G/C-skew provides strong evidence that the majority of novel ORFs are not functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C143 provide a rigorous evolutionary analysis using G/C-skew as a proxy for purifying selection. The statistical analysis is appropriate (Fisher's exact test), and the authors appropriately acknowledge limitations (small ORF size C142, overlapping regions excluded). The conclusion that most novel ORFs lack evidence of purifying selection (C143) is well-supported, while identifying a subset of ~90 ORFs likely under selection (C140-C141). The caveat that this is likely an underestimate (C142) is important and appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study identified thousands of previously undescribed ORFs in M. tuberculosis, with annotated ORFs outnumbered by isoform and novel ORFs. Most newly described ORFs are short (many \u226450 amino acids). The conclusion of pervasive translation is supported by ribosome enrichment at start/stop codons in untreated cells and validation through multiple independent approaches (luciferase assays, western blots, mass spectrometry). Many genomic regions encode overlapping ORFs on opposite strands or same strand in different frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C41-C43, C144-C148 represent the main conclusions of the study, which are well-supported by the comprehensive experimental evidence described in other result groups. The identification of thousands of novel ORFs is supported by multiple orthogonal approaches (Ribo-RET, Ribo-seq, validation experiments). The characterization of these ORFs as predominantly short (C6) is directly supported by the data (77% are sORFs). The conclusion of pervasive translation (C5, C43) is justified by the sheer number and diversity of identified ORFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C143",
+      "C191",
+      "C192"
+    ],
+    "result": "Codon usage analysis suggests most newly discovered ORFs have not been subject to purifying selection and are unlikely to contribute to cell fitness. The G/C-skew analysis provides strong evidence that the majority of novel ORFs are not functional. The unprecedented extent of translation observed suggests much of it is biological 'noise.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C143, C191-C192 represent a major interpretive conclusion about the functional significance of the identified ORFs. This conclusion is well-supported by the G/C-skew analysis (detailed in another result group) showing that most novel ORFs lack evidence of purifying selection. The inference that ORFs without purifying selection are unlikely to be functional (C8) is reasonable but represents an interpretation rather than direct evidence. The characterization as 'biological noise' (C191) is appropriate given the evolutionary evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C44",
+      "C141",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Despite most novel ORFs lacking evidence of function, 90 novel ORFs (median length 52 codons) bear hallmarks of purifying selection based on G/C-skew analysis (p<0.1). Of these, 44 are \u226451 codons long, greatly expanding the set of likely functional small ORFs in M. tuberculosis. The 54 leadered functional ORFs have significantly higher Ribo-RET signal than other novel ORFs (p=1.8e-5), consistent with functional ORFs being more highly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C44, C141, C178-C182 identify a functionally important subset of novel ORFs showing evidence of purifying selection. The G/C-skew analysis is statistically rigorous, and the correlation with higher expression levels (C180) provides independent support for functionality. The identification of 44 likely functional sORFs (C181) represents a significant expansion of the known functional small protein repertoire in M. tuberculosis. The statistical significance of the expression difference (p=1.8e-5) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C34",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The data suggest pervasive translation of short ORFs in M. tuberculosis serves as a rich source for evolution of new functional proteins. This is analogous to 'proto-genes' described in eukaryotes, which can evolve into functional ORFs through de novo gene birth. Novel ORFs in M. tuberculosis share characteristics with proto-genes in yeast (less well expressed, less adapted codon usage, shorter than annotated genes). The fitness cost of pervasive translation may be balanced by benefits of having a large pool of proto-genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C34, C171-C177 represent an evolutionary interpretation of the findings. While the analogy to eukaryotic proto-genes is well-supported by citations (C171-C172, C175) and the characteristics of novel ORFs are consistent with proto-genes, this remains speculative regarding M. tuberculosis specifically. The evidence that some bacterial genes evolved from intergenic sequences (C173) supports the general concept, but direct evidence for de novo gene birth in M. tuberculosis would require evolutionary/comparative genomic analysis not presented here. The speculation about fitness costs and benefits (C177) is reasonable but unsupported by direct fitness measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study identified only 1669 of 3898 annotated M. tuberculosis ORFs. This undersampling is attributed to: (1) low expression levels (supported by 3.8-fold higher median Ribo-seq coverage for identified vs. non-identified ORFs, p<2.2e-16), (2) misannotated start codons that would be classified as isoforms, and (3) MNase sequence bias leading to exclusion of G/C-rich ORFs. This suggests many more isoform and novel ORFs remain to be discovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C155 provide an important assessment of the study's limitations and completeness. The explanations for incomplete detection are well-reasoned and supported by data (C152) or known technical limitations (C154). The conclusion that many more ORFs remain to be discovered (C155) is a logical inference from the incomplete detection of known ORFs. This honest assessment of limitations strengthens confidence in the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The abundance of novel start codons likely reflects pervasive translation due to limited sequence specificity of translation initiation. Primary determinants are: suitable start codon, upstream Shine-Dalgarno-like sequence, and low secondary structure. Limited specificity (multiple start codons, variable S-D positions, S-D not essential in E. coli) combined with transcriptional bias toward 5' purines and +2 pyrimidines creates many spurious translation initiation sites. This is analogous to pervasive transcription from intragenic promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C166 provide a mechanistic explanation for pervasive translation. The reasoning is well-supported by the data (enrichment of multiple start codons C157, S-D sequences at variable positions) and literature citations (C158-C161). The analogy to pervasive transcription (C165) is apt and supported by evidence of intragenic promoters in M. tuberculosis (C166). The proposal that limited sequence specificity leads to spurious translation (C162) is a logical inference from the observed features, though direct experimental evidence for 'spurious' vs. regulated translation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C167"
+    ],
+    "result": "Despite identifying many more novel ORFs than annotated ORFs, the total codon count in novel ORFs is only ~20% that of annotated ORFs due to their smaller size. Combined with lower expression levels, likely <10% of translation at any given time is of spurious ORFs, making pervasive translation unlikely to be overly detrimental. The protein products are speculated to be rapidly degraded, similar to spurious transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170 provide a quantitative assessment of the cellular burden of pervasive translation. The calculation is straightforward and well-reasoned, combining ORF size data (C168) with expression level data (C169) to estimate the proportion of cellular translation devoted to novel ORFs. The conclusion that <10% is unlikely to be overly detrimental (C170) is reasonable, though 'overly detrimental' is subjective. The speculation about rapid protein degradation (C167) is plausible by analogy to RNA degradation but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Some isoform ORFs likely represent mis-annotations of annotated ORFs. Evidence includes: 19% of isoform start codons are \u226410 codons from annotated start codons (3.4-fold more likely for leaderless isoforms lacking S-D sequences), and these have higher Ribo-RET occupancy and are less likely to overlap genes with identified start codons. However, most isoform ORFs start far from annotated starts, and for 43% the annotated start codon was also detected, suggesting genuine co-expression of isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C189 provide a nuanced analysis distinguishing mis-annotations from genuine isoforms. The statistical evidence for mis-annotations (C184-C186) is compelling, particularly the enrichment near annotated starts and higher expression. The evidence for genuine isoforms (C187-C188) is also strong, particularly the detection of both start codons by Ribo-RET. The speculation about functional relationships between isoforms (C189) is reasonable but unsupported by functional data. This careful analysis appropriately acknowledges both possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Bacterial ORFs are typically identified by automated prediction algorithms using criteria including ORF length and presence of Shine-Dalgarno sequences. These algorithms often fail to identify non-canonical ORFs including overlapping ORFs, leaderless ORFs, and short ORFs (sORFs encoding \u226450 amino acids), as most algorithms have a lower size limit of 50 codons. Recent studies have revealed hundreds of sORFs in diverse bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C21-C27 provide established background knowledge about ORF prediction and its limitations. These claims are well-supported by appropriate citations to ORF prediction algorithms and recent sORF discovery studies. This background appropriately motivates the need for experimental approaches like Ribo-seq/Ribo-RET to identify non-canonical ORFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on bacterial translation initiation mechanisms: canonical leadered translation involves 30S ribosomal subunit binding to Shine-Dalgarno sequences upstream of start codons (typically AUG, less frequently GUG/UUG, rarely other codons). Leaderless translation occurs when transcription start site and translation start codon coincide. While rare in E. coli, leaderless translation is prevalent in many species, with ~25% of mRNAs in M. smegmatis and M. tuberculosis being leaderless, and any RNA with 5' AUG or GUG efficiently translated by the leaderless mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 provide essential background on translation mechanisms, well-supported by appropriate citations. The information about leaderless translation prevalence in mycobacteria (C19-C20) is particularly relevant as it motivates the study's focus on both leadered and leaderless ORFs. This background is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on sORF functions and pervasive translation in eukaryotes: Some sORFs encode functional small proteins contributing to cell fitness, while others function as cis-acting regulators. Eukaryotes show pervasive translation of thousands of unannotated sORFs, likely due to imperfect specificity of translation machinery. Most are rarely subject to purifying selection, though some may contribute to cell fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide relevant background on sORF biology and pervasive translation in eukaryotes, appropriately cited. This background establishes the conceptual framework for interpreting pervasive translation in bacteria and the potential for both functional and non-functional translation products.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on ribosome profiling methods: Ribo-seq maps translated regions by sequencing ribosome-protected RNA fragments. Ribo-RET is a modified form where cells are treated with retapamulin, which traps ribosomes at translation initiation sites while allowing elongating ribosomes to complete translation, facilitating identification of overlapping ORFs. Ribo-RET in E. coli revealed many previously undescribed ORFs including sORFs and isoform ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide essential methodological background, well-supported by appropriate citations. The description of Ribo-RET's advantages for identifying overlapping ORFs (C38) appropriately motivates its use in this study. The E. coli precedent (C39) establishes that the approach has been successful in other bacteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Background on M. tuberculosis genome and previous TSS mapping: M. tuberculosis has a 4,411,532 bp genome with 3989 annotated protein-coding genes. Previous studies identified 1285 transcription start sites with 5' RUG sequences (suggesting leaderless mRNAs): 577 match annotated gene start codons, 338 correspond to putative isoform ORFs (unannotated start codons but matching annotated stop codons), and 370 correspond to putative novel ORFs (no match to annotated genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 provide essential background on the M. tuberculosis genome and prior TSS mapping studies that identified candidate leaderless ORFs. This information is factual and appropriately cited, establishing the foundation for the Ribo-seq validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C193"
+    ],
+    "result": "Future studies aimed at functional characterization of sORFs/small proteins will require prioritizing candidates with clear supporting evidence for function from codon usage patterns, phylogenetic conservation, or genetic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C193 provides a reasonable recommendation for future research based on the study's findings that most novel ORFs lack evidence of function. The suggestion to prioritize based on evolutionary evidence (codon usage, conservation) or genetic data is logical and practical given the large number of candidates identified.",
+    "result_type": "MINOR"
+  }
+]

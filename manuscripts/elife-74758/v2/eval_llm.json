@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C62"
+    ],
+    "result": "BA input to vH originates from both excitatory and inhibitory neurons distributed throughout multiple BA nuclei. Retrograde tracing revealed that neurons projecting to vH are widely dispersed across BA nuclei (BLA, BMA, MEA), with 3.7% being GABAergic. Inhibitory and excitatory projection neurons are anatomically intermingled without obvious spatial separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 and C62 are supported by retrograde tracing experiments using CTX\u03b2 in vGAT-cre mice (Figure 1, Figure 2, Figure 2\u2014figure supplement 1). The anatomical distribution is well-documented with whole-brain registration, and the proportion of GABAergic projections is quantified. The methodology is appropriate and the conclusions are directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "BA provides both direct excitatory and direct inhibitory functional connections to vH pyramidal neurons. Using CRACM, excitatory connections were mediated by AMPA receptors (~40% connectivity) and inhibitory connections by GABA-A receptors (~30% connectivity). Pharmacological dissection confirmed that inhibitory input includes both feedforward inhibition and direct long-range inhibitory projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C37 are well-supported by CRACM experiments with appropriate pharmacological controls (Figure 2). The use of CaMKii and vGAT promoters to isolate excitatory vs inhibitory projections is methodologically sound. Statistical tests show significant effects, and the distinction between feedforward and direct inhibition is convincingly demonstrated through NBQX sensitivity experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C55"
+    ],
+    "result": "Excitatory BA input selectively targets vH neurons projecting to NAc and BA, but avoids PFC-projecting neurons. Paired recordings showed equivalent excitatory input onto vHBA and vHNAc neurons, but almost complete absence of input onto vHPFC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C38, C39, and C55 are supported by paired electrophysiology recordings (Figure 4A-F). The paired recording approach appropriately controls for technical variability in CRACM. Statistical tests (Wilcoxon rank-sum) show significant differences, with p=0.43 for vHBA vs vHNAc (no difference) and p=0.0018 for vHBA vs vHPFC (strong difference). Sample sizes are adequate (n=8-9 pairs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C56"
+    ],
+    "result": "Inhibitory BA input preferentially targets BA-projecting vH neurons over NAc-projecting neurons, and avoids PFC-projecting neurons. Paired recordings showed marked bias of inhibitory input to vHBA neurons compared to neighboring vHNAc neurons, and essentially no connectivity to vHPFC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C41, and C56 are supported by paired recordings using vGAT-cre mice (Figure 4G-L). The methodology appropriately isolates inhibitory projections, and statistical tests show significant differences (p=0.016 for both comparisons). The pattern of connectivity is distinct from excitatory input, supporting the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "BA input interacts with local vH inhibitory circuitry through both feedforward and feedback mechanisms. Both excitatory and inhibitory BA input connect with local interneurons (~50% connectivity). Local inhibitory connectivity and feedforward inhibition are biased toward vHNAc neurons, with connections approximately twice as strong as those onto vHBA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by experiments mapping BA input to interneurons and local circuit connectivity (Figure 5). The use of AAVretro and cell-type-specific labeling is appropriate. Statistical tests show significant bias in local inhibition (p=0.006 for local inhibition, p=0.04 for feedforward inhibition). The findings are internally consistent and support the circuit model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C57",
+      "C71",
+      "C93"
+    ],
+    "result": "A computational integrate-and-fire model predicts that increasing inhibitory BA input switches vH output from vHBA to vHNAc neurons. Long-range inhibition removes feedforward and feedback inhibition onto vHNAc neurons by directly inhibiting interneurons and vHBA neurons. This prediction is robust across various circuit parameters and postsynaptic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C57, C71, and C93 are supported by computational modeling constrained by experimental data (Figure 6, supplements). The model appropriately incorporates measured connectivity patterns and is tested across multiple parameter ranges (Figure 6\u2014figure supplements 1-3). The predictions are logical given the circuit architecture and provide testable hypotheses for in vivo experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C58"
+    ],
+    "result": "Co-activation of excitatory and inhibitory BA input supports real-time place preference (RTPP) through vHNAc neuron activity. Optogenetic activation of both BA projections induced RTPP, which was abolished by pharmacogenetic inhibition of vHNAc neurons using KORD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C50, and C58 are supported by in vivo optogenetics combined with pharmacogenetics (Figure 7). The experimental design appropriately tests the circuit model predictions. Statistical tests show significant RTPP with ChR2 (p=0.041) and significant abolition with KORD+SalB (interaction p=0.016). Controls are appropriate, though sample sizes are modest (n=6-9 mice per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C59",
+      "C60"
+    ],
+    "result": "Excitatory BA input alone cannot support RTPP unless vHBA neurons are inhibited. CaMKii-restricted activation failed to induce RTPP, but RTPP was rescued by pharmacogenetic inhibition of vHBA neurons, mimicking the effect of long-range inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C59, and C60 are supported by experiments using CaMKii-ChR2 with KORD in vHBA neurons (Figure 8). The design directly tests the circuit model prediction. Statistical tests show no RTPP with excitation alone (p=0.70) but significant RTPP after vHBA inhibition (interaction p=0.005). This provides strong support for the proposed mechanism, though the interpretation relies on the computational model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C83",
+      "C84"
+    ],
+    "result": "A proportion of BA inhibitory projection neurons are somatostatin-positive, consistent with prior anatomical studies suggesting BA inhibitory projections arise from SOM+ and NPY+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C83, and C84 are supported by immunostaining experiments (Figure 2\u2014figure supplement 2) and citations to prior literature. The finding is consistent with previous anatomical characterizations and provides additional validation of the inhibitory projection identity. However, the proportion of SOM+ neurons is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The majority (80-90%) of vH neurons project to a single downstream region, though a proportion collateralize to multiple targets. This was confirmed by triple retrograde tracing showing minimal dual-labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 are supported by triple retrograde tracing experiments (Figure 3) and citations to prior literature. The data show that dual-labeled neurons represent a small proportion (<10-20%) of the total population, consistent with the parallel organization of vH outputs. The methodology is appropriate for addressing this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The CRACM technique has inherent limitations: light-evoked currents depend on the number of ChR2+ axons and expression levels, making absolute amplitude comparisons across experiments unreliable. The technique also cannot differentiate whether connectivity differences arise from connection probability or synaptic strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 accurately describe well-established limitations of the CRACM technique, supported by citations to methodological papers. The authors appropriately address these limitations by using paired recordings within slices to control for technical variability. This represents good experimental practice and transparent reporting of methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript establishes the background context for BA-vH connectivity, including the functional organization of the hippocampus along the dorsal-ventral axis, the role of BA nuclei in learning and behavior, the parallel organization of vH outputs, and the gap in knowledge regarding functional connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C27 represent background knowledge supported by extensive citations to prior literature. These claims appropriately contextualize the study and identify the knowledge gap being addressed. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The discussion contextualizes findings within the broader literature on long-range inhibitory projections, hippocampal functional organization, and anxiety-related circuits. It notes that BA inhibitory projections differ from other long-range inhibitory inputs by targeting both interneurons and pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63-C82, C85-C89 represent discussion points supported by citations to relevant literature. The comparisons to other long-range inhibitory projections (C66, C67) are supported by the current data and prior studies. Claim C81 is appropriately identified as speculative. The discussion appropriately places the findings in context.",
+    "result_type": "MINOR"
+  }
+]

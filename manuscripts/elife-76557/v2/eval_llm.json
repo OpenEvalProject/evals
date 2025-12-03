@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Long-read Nanopore sequencing successfully characterized mtDNA structures in yeast colonies. The authors sequenced 38 Petite and 10 Grande colonies, generating 8.5 Gbases with reads averaging 6 kbp (max 120 kbp). This revealed 84 breakpoints across Petite colonies versus only 3 in Grande colonies, with long reads directly showing concatemer structures composed of tandem repeats of sub-genomic fragments in Petites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32-C35, C37-C43, C82-C84 collectively demonstrate successful application of long-read sequencing to characterize mtDNA structures. The experimental design is clearly described, sequencing metrics are provided, and the structural observations (concatemers, breakpoints) are directly supported by the data shown in Figure 2. The high coverage (~700\u00d7) and long read lengths enabled direct visualization of complex repeat structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Breakpoints cluster near replication origins due to selection for origin-containing fragments rather than preferential excision at origins. Approximately 30% of breakpoints reside within origins, 20% within 275 bp of origin edges, and 50% from 275 bp to 3 kbp away. Modeling shows this distribution is explained by random excision followed by strong selection for small fragments containing origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are well-supported by quantitative data and modeling shown in Figure 3. The comparison of empirical breakpoint distributions to three different models (random excision, perfect repeats, and origin-conditioned selection) provides strong evidence that selection rather than preferential excision drives the observed clustering. The consistency across different clustering parameters (Appendix 1-figure 3) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Secondary excisions preferentially reuse primary excision sites, constraining subsequent fragmentation trajectories. In 16 Petite samples, alternate structures contributing 0.1-59% of mtDNA were detected. Type III repeats (sharing one edge with primary breakpoints) comprised 57% of alternate structures, with mean/median fractional distances of only 2%/1% between alternate and primary edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate a novel pattern of contingency in mtDNA fragmentation. The quantitative data on alternate structure frequencies (C49), Type III repeat abundance (C50), and proximity measurements (C51) directly support the inference of preferential reuse of excision sites (C52). Figure 4 provides clear visual and quantitative evidence. This pattern is consistent across multiple clustering parameters (Appendix 1-figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Non-periodic 'mixed' mtDNA structures exist in yeast and represent persistent heteroplasmy. Seven colonies in family 3 displayed non-tandemly duplicated structures with partial inverted duplications. Four alignments exist in equal proportions after correcting for sampling bias, with evidence of partially repeated structures. The persistence across seven colonies from one progenitor indicates these structures are not readily segregated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 resolve a long-standing controversy about non-periodic structures in yeast mtDNA. The observations are well-documented with coverage data (C53, Figure 1b), structural characterization (C54-C56, Figure 5), and the inference of heteroplasmy (C57-C58) is logically sound given the persistence across multiple colonies. The proposed crossover mechanism (Figure 5e-f) provides a plausible explanation, though direct mechanistic validation would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Both heteroplasmic and homoplasmic cells contribute to mtDNA diversity in colonies. In Grande colonies under non-fermentable conditions (YPG), Petite mtDNA must come from heteroplasmic cells since homoplasmic Petites cannot replicate. The increase in Petite mtDNA fraction upon switching to fermentable media (YPD) indicates homoplasmic contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 present logical inferences based on the biological constraints of respiration-deficient cells. The reasoning is sound: homoplasmic Petites cannot grow on non-fermentable media, so any Petite mtDNA detected in YPG must be from heteroplasmic cells (C59). The increased Petite fraction in YPD (C60, Figure 6b) logically indicates homoplasmic contributions. However, this is bulk sequencing data, so direct single-cell validation would strengthen these inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Replication origins and GC clusters drive mtDNA fragment fitness. Of 47 detected repeat structures, 32 have higher origin content than wild-type, and all primary structures contain at least part of an origin. Nine alternate structures lack origins entirely, but seven of these are enriched in GC clusters compared to wild-type mtDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by quantitative data in Figure 7. The observation that most structures are enriched in origins (C62-C63) confirms established theory. The novel finding of origin-free structures enriched in GC clusters (C64-C65) suggests alternative replication mechanisms. The data directly support these observations, though the functional significance of GC cluster enrichment could benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C7"
+    ],
+    "result": "A phenomenological model explains how mtDNA structure determines suppressivity. The model assumes independent competition of repeat units with exponential replication rates proportional to origin density and input fractions inversely proportional to repeat unit length. Suppressivities range from 10-90% and correlate with repeat unit lengths up to 70 kbp. Model testing confirmed that both exponential growth and inverse length-dependent input fractions are statistically important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C73, and C7 describe a well-supported phenomenological model. The fit to data (Figure 8b, R\u00b2=0.85) is good, and alternative models were tested (Appendix 1-figure 10) to validate model architecture choices. The fit parameters (\u03bd\u2090t* and \u03bd\u209at*) are biophysically reasonable when compared to known cell doubling times. However, notable outliers exist (e.g., family 2), and the model is phenomenological rather than mechanistic, limiting deeper biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C8"
+    ],
+    "result": "The mechanisms of mtDNA deletion in yeast are applicable to humans. Both systems involve recombination-mediated excision, selection for replication origins, and persistent instabilities. The human 'common deletion' retains both replication origins unlike less frequent deletions, suggesting similar intracellular selection. Persistent mtDNA instabilities in humans create recombination hotspots that colocalize with deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 and C8 draw parallels between yeast and human mtDNA dynamics, supported by multiple citations to human studies (C75-C77, C79, C81). The comparison is conceptually sound: both systems show recombination-mediated deletions, selection for origins, and persistent instabilities. The 'common deletion' example (C78-C80) provides specific evidence for origin-based selection in humans. However, this remains a comparative/inferential argument rather than direct experimental validation in human systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Two passages followed by culturing (~32 generations) was sufficient to homogenize mtDNA content in all cases except family 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is directly supported by the observation that colonies sharing second passage progenitors have similar mtDNA content (Figure 1b), with family 1 as the noted exception. This demonstrates the effectiveness of the passaging protocol for generating homogeneous populations, though the exception indicates some variability in mtDNA dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on mtDNA function and disease associations in humans, and rationale for using yeast as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C17 provide established background knowledge supported by appropriate citations. These claims establish the biological context and justify the experimental approach. They are well-supported by the literature but represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on yeast mtDNA biology, Petite phenotype, and historical context of mtDNA fragmentation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C18-C31 provide established background on yeast mtDNA biology and the Petite phenotype, supported by extensive citations to historical work. These claims establish the scientific context and identify open questions (C30-C31 regarding non-periodic structures) but represent prior knowledge rather than new experimental findings.",
+    "result_type": "MINOR"
+  }
+]
